@@ -4,10 +4,10 @@ description: Customer Journey Analytics-Funktionen im Vergleich zu Adobe Analyti
 exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: Basics
-source-git-commit: 15fbbf26b58b474f65e6585ac72bdf247fb1678d
-workflow-type: ht
-source-wordcount: '2135'
-ht-degree: 100%
+source-git-commit: 3482083fd5f99f133db79f682d3231cc75c969ff
+workflow-type: tm+mt
+source-wordcount: '2044'
+ht-degree: 96%
 
 ---
 
@@ -42,9 +42,9 @@ In den folgenden Tabellen ist aufgeführt, welche Adobe Analytics-Funktionen in 
 | Zugriff auf Reporting-API | Vollständige Unterstützung; verfügbar über die [Customer Journey Analytics-API](https://developer.adobe.com/cja-apis/docs/). |
 | Terminierte Berichte/Projekte | Vollständige Unterstützung |
 | Segmente | Vollständige Unterstützung. Jetzt „Filter“ genannt. Beachten Sie, dass keine vorhandenen Segmente im herkömmlichen Analysis Workspace nach Customer Journey Analytics portiert werden. |
-| Virtual Report Suites | Vollständige Unterstützung. Jetzt [Datenansichten](/help/data-views/create-dataview.md) genannt. |
+| Virtual Report Suites | Vollständige Unterstützung. Jetzt genannt [Datenansichten](/help/data-views/create-dataview.md). |
 | Kuratierung von Komponenten der Virtual Report Suite | Vollständige Unterstützung. Jetzt Teil der Datenansichten. |
-| Dimensionen: Gerät, Browser, Referrer, Technologie | Unterstützt sowohl für Datensätze, die auf dem [Analytics-Quell-Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=de) basieren, als auch für Datensätze, die vom Web SDK generiert werden. Weitere Informationen finden Sie in der [Dokumentation, welche Analytics-Variablen über ADC unterstützt werden](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/mapping/analytics.html?lang=de).Wenn Sie die Experience Platform Web SDK-Datenerfassung verwenden, werden Gerät und Dimensionen, die auf der Gerätesuche basieren, derzeit nicht unterstützt. Eine künftige Unterstützung ist geplant. Informationen zum Hinzufügen der Geräte- und Browser-Suche zu Ihrem Web SDK-Datenstrom finden Sie in [dieser Dokumentation](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html?lang=de) |
+| Dimensionen: Gerät, Browser, Referrer, Technologie | Unterstützt sowohl für Datensätze, die auf dem [Analytics-Quell-Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=de) basieren, als auch für Datensätze, die vom Web SDK generiert werden. Siehe Abschnitt [Dokumentation darüber, welche Analytics-Variablen über ADC unterstützt werden](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/mapping/analytics.html?lang=de).Wenn Sie die Experience Platform Web SDK-Datenerfassung verwenden, werden Gerät und Dimensionen, die auf der Gerätesuche basieren, derzeit nicht unterstützt. Eine künftige Unterstützung ist geplant. Informationen zum Hinzufügen der Geräte- und Browser-Suche zu Ihrem Web SDK-Datenstrom finden Sie in [dieser Dokumentation](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html?lang=de) |
 | Streamen von Media Analytics | Mediendaten sind über den Analytics-Quell-Connector als Teil des Bedienfelds „Gleichzeitige Medienbetrachter“ und des Bedienfelds „Bei Medienwiedergabe verbrachte Zeit“ in Workspace verfügbar. |
 
 {style="table-layout:auto"}
@@ -137,5 +137,6 @@ In der folgenden Tabelle sind Funktionen aufgeführt, die in Customer Journey An
 | Verbesserte Sicherheits- und Datenschutzoptionen – HIPAA-Fähigkeit | Customer Journey Analytics ist HIPAA-fähig und bietet zusätzliche Sicherheitsoptionen für die Einhaltung von Vorschriften. Adobe Analytics ist nicht HIPAA-fähig. |
 | Möglichkeit zur Kombination von Datensätzen (z. B. Report Suites von Adobe Analytics) | Mit Customer Journey Analytics können Sie Daten aus mehreren Report Suites so kombinieren, als wären sie eine einzige Report Suite in Adobe Analytics. |
 | Abgeleitete Felder | Abgeleitete Felder ermöglichen die Umwandlung zum Zeitpunkt der Berichtserstattung Ihren Daten. Daten können dynamisch kombiniert, korrigiert oder erstellt werden und gelten rückwirkend für alle Berichte. |
+| Geführte Analyse | Geführte Analyse ist ein Berichtsformat, das es Benutzern ermöglicht, schnell ihre Datenanforderungen selbst zu erfüllen, sodass sie schnell hochwertige Einblicke erhalten und datenbasierte Entscheidungen treffen können. Geführte Analysen sind Teil von Adobe Product Analytics, einem Add-on zu Customer Journey Analytics. |
 
 {style="table-layout:auto"}
