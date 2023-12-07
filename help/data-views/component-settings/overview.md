@@ -4,16 +4,16 @@ description: Anzeigen der wichtigsten Einstellungen für eine Datenansichtskompo
 exl-id: 6300d289-d308-476e-aa4e-05cdae361bb2
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+source-git-commit: 485160fe362330bafbc07f958c4ada51d4d30089
 workflow-type: tm+mt
-source-wordcount: '490'
-ht-degree: 69%
+source-wordcount: '491'
+ht-degree: 61%
 
 ---
 
 # Einstellungen der Komponente
 
-Wichtigste Einstellungen, die eine Datenansichtskomponente verwendet.
+Die folgenden Informationen beschreiben c-Einstellungen, die eine Datenansichtskomponente verwendet.
 
 ![Die in diesem Abschnitt beschriebenen Komponenteneinstellungen](../assets/component-settings.png)
 
@@ -27,7 +27,7 @@ Wichtigste Einstellungen, die eine Datenansichtskomponente verwendet.
 | [!UICONTROL Schemafeldname] | Der Name des Schemafelds. |
 | [!UICONTROL Typ des Datensatzes] | Erforderlich. Ein nicht bearbeitbares Feld, das anzeigt, von welchem Datensatztyp (Ereignis, Suche oder Profil) die Komponente stammt. |
 | [!UICONTROL Datensatz] | Ein nicht bearbeitbares Feld, das anzeigt, aus welchem Datensatz die Komponente stammt. Dieses Feld kann mehrere Datensätze enthalten. |
-| [!UICONTROL Schema-Typ] | Ein nicht bearbeitbares Feld, das den Datentyp der Komponente anzeigt. Sie können zwar einen beliebigen unterstützten Schemafeldtyp in Platform verwenden, jedoch werden in Customer Journey Analytics nicht alle Feldtypen unterstützt. Die folgenden Datentypen werden unterstützt: `Integer`, `Int`, `Long`, `Double`, `Float`, `Number`, `Short`, `Byte`, `String` und `Boolean`. Nur die `String` Der Schemadatyp ist derzeit in Lookup-Datensätzen zulässig. |
+| [!UICONTROL Schema-Typ] | Ein Feld, das den Datentyp der Komponente anzeigt. Sie können zwar einen beliebigen unterstützten Schemafeldtyp in Platform verwenden, jedoch werden in Customer Journey Analytics nicht alle Feldtypen unterstützt. Die folgenden Datentypen werden unterstützt: `Integer`, `Int`, `Long`, `Double`, `Float`, `Number`, `Short`, `Byte`, `String` und `Boolean`. Nur die `String` Der Schemadatyp ist derzeit in Lookup-Datensätzen zulässig. |
 | [!UICONTROL Komponenten-ID] | Erforderlich. Die [Customer Journey Analytics-API](https://adobe.io/cja-apis/docs) verwendet dieses Feld zum Verweisen auf die Komponente. Jede Komponente in einer Datenansicht muss eindeutig sein. Adobe generiert automatisch eine ID für jede Komponente. Sie können jedoch auf das Bearbeitungssymbol klicken und die Komponenten-ID ändern. Durch das Ändern der Komponenten-ID werden alle vorhandenen Workspace-Projekte, die diese Komponente enthalten, beschädigt. Während jede Komponente eine eindeutige ID in einer Datenansicht benötigt, können Sie dieselbe Komponenten-ID in anderen Datenansichten verwenden. Wenn Sie dieselbe Komponenten-ID in anderen Datenansichten verwenden, können Sie Workspace-Projekte über Datenansichten hinweg kompatibel machen. <br/>Bei profilbasierten und suchbasierten Komponenten verfügt die Komponenten-ID über ein ID-Präfix, das auf der Datensatz-ID basiert (z. B.: `642b28fcc1f0ee1c074265a0.person.name.firstName`). Wenn Sie eine Profil- oder Lookup-basierte Komponente wiederverwenden möchten, z. B. `person.name.firstName`müssen Sie in Ihrem Workspace-Projekt die Komponente in verschiedenen Datenansichten konfigurieren und sicherstellen, dass Sie die Komponenten-ID eindeutig umbenennen (z. B.: `myUniqueID.person.name.firstName`) in Ihren Datenansichten. |
 | [!UICONTROL Path] | Erforderlich. Ein nicht bearbeitbares Feld, das den Schema-Pfad anzeigt, von dem die Komponente stammt. |
 | [!UICONTROL Beschriftungen zur Datennutzung] | Alle Datennutzungsbezeichnungen, die dieser Komponente in Adobe Experience Platform zugewiesen wurden. [Weitere Informationen](/help/data-views/data-governance.md). |

@@ -4,16 +4,16 @@ description: Geben Sie an, wie sich eine Dimension oder Metrik beim Reporting ve
 exl-id: 170f445f-1eac-4b70-8956-1afb0cb2d611
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+source-git-commit: 485160fe362330bafbc07f958c4ada51d4d30089
 workflow-type: tm+mt
-source-wordcount: '309'
-ht-degree: 94%
+source-wordcount: '312'
+ht-degree: 90%
 
 ---
 
 # Verhaltens-Komponenteneinstellungen
 
-Verhaltenseinstellungen sind sowohl für Dimensionen als auch für Metriken verfügbar. Die verfügbaren Einstellungen hängen vom Komponententyp und Schemadatentyp ab.
+Verhaltenseinstellungen sind sowohl für Dimensionen als auch für Metriken verfügbar. Die Verfügbarkeit der Einstellungen hängt vom Komponententyp und Schemadatyp ab.
 
 ![Verhaltenseinstellungen](../assets/behavior-settings.png)
 
@@ -25,11 +25,11 @@ Verhaltenseinstellungen sind sowohl für Dimensionen als auch für Metriken verf
 
 {style="table-layout:auto"}
 
-![Dimension mit Berücksichtigung von Groß-/Kleinschreibung](../assets/case-sens-workspace.png)
-
 >[!NOTE]
 >
->Wenn Sie [!UICONTROL Kleinbuchstaben] für eine Such-Datensatzdimension aktivieren, können für dieselbe Kennung mehrere Suchwerte vorhanden sein. Wenn dieser Konflikt auftritt, verwendet Customer Journey Analytics den ersten gesammelten ASCII-Wert (Großbuchstaben vor Kleinbuchstaben). Adobe rät davon ab, Such-Datensätze zu verwenden, die denselben Wert enthalten, wenn [!UICONTROL Kleinbuchstaben] aktiviert ist.
+>Wenn Sie [!UICONTROL Kleinbuchstaben] für eine Such-Datensatzdimension aktivieren, können für dieselbe Kennung mehrere Suchwerte vorhanden sein. Wenn dieser Konflikt auftritt, verwendet Customer Journey Analytics den ersten von ASCII erfassten Wert (Werte in Großbuchstaben vor Kleinbuchstaben). Adobe rät davon ab, Such-Datensätze zu verwenden, die denselben Wert enthalten, wenn [!UICONTROL Kleinbuchstaben] aktiviert ist.
+
+![Dimension mit Berücksichtigung von Groß-/Kleinschreibung](../assets/case-sens-workspace.png)
 
 ## Einstellungen für das Metrikverhalten
 
