@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Use Cases
 hide: true
 hidefromtoc: true
-source-git-commit: a4d9272b1e813a34f11e4b42c3369129b57c6ef0
+source-git-commit: d5719dddfb4cefda761370951973d55b3904032f
 workflow-type: tm+mt
 source-wordcount: '2107'
 ht-degree: 4%
@@ -20,7 +20,7 @@ Adobe Analytics-Daten-Feeds sind eine leistungsstarke Methode, Rohdaten aus Adob
 
 Stellen Sie sicher, dass Sie alle folgenden Anforderungen erfüllen, bevor Sie die in diesem Anwendungsbeispiel beschriebene Funktion verwenden:
 
-* Eine funktionierende Implementierung, die Online- und Offline-Daten an Experience Platform Data Lake sendet.
+* Eine funktionierende Implementierung, die Online- und Offline-Daten an den Data Lake sendet.
 * Zugriff auf Query Service, der als Teil von plattformbasierten Anwendungen oder dem Data Distiller-Add-on gepackt wird. Siehe [Query Service-Verpackung](https://experienceleague.adobe.com/docs/experience-platform/query/packaging.html?lang=en) für weitere Informationen.
 * Zugriff auf die Funktion zum Exportieren von Datensätzen , die für Kunden verfügbar ist, die das Real-Time CDP Prime- oder Ultimate-Paket, Adobe Journey Optimizer oder Customer Journey Analytics erworben haben. Siehe [Exportieren von Datensätzen in Cloud-Speicher-Ziele](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/export-datasets.html?lang=de) für weitere Informationen.
 * Ein oder mehrere Ziele (z. B. Amazon S3, Google Cloud-Speicher), die für den Export der Rohdaten Ihres Daten-Feeds konfiguriert sind.
@@ -292,7 +292,7 @@ select explode(identityMap) from demosys_cja_ee_v1_website_global_v1_1 limit 15;
 Alternativ können Sie einzelne Elemente mit Punktnotation referenzieren. Zum Beispiel:
 
 ```sql
-select identityMap,ecid from demosys_cja_ee_v1_website_global_v1_1 limit 15;
+select identityMap.ecid from demosys_cja_ee_v1_website_global_v1_1 limit 15;
 ```
 
 Weitere Informationen finden Sie unter [Arbeiten mit verschachtelten Datenstrukturen im Abfrage-Service](https://experienceleague.adobe.com/docs/experience-platform/query/key-concepts/nested-data-structures.html?lang=en).
