@@ -9,10 +9,10 @@ index: true
 user-guide-title: Handbuch für Customer Journey Analytics
 user-guide-description: Hier erhalten Sie Informationen zu Adobe Customer Journey Analytics und Erläuterungen zur Nutzung von Analysis Workspace mit Daten aus Experience Platform.
 breadcrumb-title: Handbuch für Customer Journey Analytics
-source-git-commit: 689235eb0b982f4e572282f1c73e4606f9d82b12
+source-git-commit: 3d53fbcfea341f0cf9c1cf7da5296565eafff0f9
 workflow-type: tm+mt
-source-wordcount: '1046'
-ht-degree: 82%
+source-wordcount: '1045'
+ht-degree: 80%
 
 ---
 
@@ -162,7 +162,7 @@ ht-degree: 82%
       + [Freigeben von Projekten](../analysis-workspace/curate-share/share-projects.md)
       + [Erstellen von freigebbaren Links](../analysis-workspace/curate-share/shareable-links.md)
       + [Schreibgeschützte Projekte](../analysis-workspace/curate-share/view-only-projects.md)
-   + Exportieren {#export}
+   + Export {#export}
       + [Exportübersicht](../analysis-workspace/export/export-project-overview.md)
       + [Download](../analysis-workspace/export/download-send.md)
       + [An andere senden](../analysis-workspace/export/t-schedule-report.md)
@@ -201,7 +201,7 @@ ht-degree: 82%
       + [Versionsansicht](../guided-analysis/types/release.md)
       + [Ansicht &quot;Erste Verwendung&quot;](../guided-analysis/types/first-use.md)
    + Treue {#retention}
-      + [Retentionsquoten](../guided-analysis/types/retention-rates.md)
+      + [Bindungsrate](../guided-analysis/types/retention-rates.md)
    + [Anwendungsfälle für Branchen](../guided-analysis/industry-use-cases.md)
    + [Häufig gestellte Fragen](../guided-analysis/faq.md)
 
@@ -343,6 +343,7 @@ ht-degree: 82%
    + Adobe Analytics-Daten {#aa-data}
       + [Verwenden von Marketing-Kanal-Dimensionen](../use-cases/aa-data/marketing-channels.md)
       + [Kombinieren von Report Suites mit verschiedenen Schemata](../use-cases/aa-data/combine-report-suites.md)
+      + [Datenfeeds emulieren](../use-cases/emulating-data-feeds.md)
    + Komplexe Daten {#complex-data}
       + [Verwenden von Objekt-Arrays](../use-cases/object-arrays.md)
    + Abgeleitete Felder {#derived-fields}
