@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Use Cases
 hide: true
 hidefromtoc: true
-source-git-commit: e49ea37f36d105e428bc6d04a6ed42a47e2d75fc
+source-git-commit: b41adb3f3fa4abbfa7be491e5a1fbf81e1623598
 workflow-type: tm+mt
-source-wordcount: '2555'
+source-wordcount: '2556'
 ht-degree: 17%
 
 ---
@@ -96,7 +96,7 @@ Basierend auf der Implementierung werden traditionell in Adobe Analytics erfasst
 | cust_visid | identityMap | Objekt | Die Besucher-ID des Kunden |
 | cust_visid | endUserIDs._experience.aacustomid.id | Objekt | Die Besucher-ID des Kunden. |
 | cust_visid | endUserIDs._experience.aacustomid.primary | boolean | Der Namespace-Code der Besucher-ID des Kunden. |
-| cust_visid | endUserIDs._experience.aacustomid.namespace.code | Wird zusammen mit visid_low zur eindeutigen Identifizierung der Kunden-Besucher-ID verwendet. |
+| cust_visid | endUserIDs._experience.aacustomid.namespace.code | string | Wird zusammen mit visid_low zur eindeutigen Identifizierung der Kunden-Besucher-ID verwendet. |
 | geo\_* | placeContext.geo.* | Zeichenfolge, Zahl | Geolocation-Daten wie Land, Region, Stadt und andere |
 | visit_page_num | _experience.analytics.session.depth | number | Eine Variable, die in der Dimension „Treffertiefe“ verwendet wird. Der Wert erhöht sich bei jedem vom Benutzer generierten Treffer um 1 und wird nach jedem Besuch zurückgesetzt. |
 | event_list | commerce.purchases, commerce.productViews, commerce.productListOpens, commerce.checkouts, commerce.productListAdds, commerce.productListRemovals, commerce.productListViews, \_experience.analytics.event101bis200.*, ..., \_experience.analytics.event901_1000.\* | string | Standardmäßige Commerce- und benutzerspezifische Ereignisse, die beim Treffer ausgelöst werden. |
