@@ -4,10 +4,10 @@ description: Ein abgeleitetes Feld gibt die Berichtszeitbearbeitung von Schemafe
 solution: Customer Journey Analytics
 feature: Derived Fields
 exl-id: bcd172b2-cd13-421a-92c6-e8c53fa95936
-source-git-commit: 7a96c6b1f093a534e473de3bde8dc3044564c450
+source-git-commit: db61abfda71a26e4fae7134dfbb2f637b77e1e8c
 workflow-type: tm+mt
-source-wordcount: '5641'
-ht-degree: 14%
+source-wordcount: '5783'
+ht-degree: 13%
 
 ---
 
@@ -59,7 +59,7 @@ Wenn Sie eine Regel im Regel-Builder definieren, verwenden Sie die Regel-Oberfl�
 |  | Name | Beschreibung |
 |---------|----------|--------|
 | A  | **Regelname** | Standardmäßig lautet der Regelname **Regel X** (X bezieht sich auf eine Sequenznummer). Um den Namen einer Regel zu bearbeiten, wählen Sie deren Namen aus und geben Sie den neuen Namen ein, z. B. `Query Parameter`. |
-| B | **Name der Funktion** | Der ausgewählte Funktionsname für die Regel, z. B. [!UICONTROL URL PARSE]. Wenn die Funktion der letzte in der Funktionssequenz ist und die endgültigen Ausgabewerte bestimmt, folgt dem Funktionsnamen [!UICONTROL - ENDGÜLTIGE AUSGABE], beispielsweise [!UICONTROL URL-PARSE - ENDGÜLTIGE AUSGABE]. <br/>Um ein Popup mit weiteren Informationen zur Funktion anzuzeigen, wählen Sie ![Hilfesymbol](assets/Smock_HelpOutline_18_N.svg). |
+| B | **Funktionsname** | Der ausgewählte Funktionsname für die Regel, z. B. [!UICONTROL URL PARSE]. Wenn die Funktion der letzte in der Funktionssequenz ist und die endgültigen Ausgabewerte bestimmt, folgt dem Funktionsnamen [!UICONTROL - ENDGÜLTIGE AUSGABE], beispielsweise [!UICONTROL URL-PARSE - ENDGÜLTIGE AUSGABE]. <br/>Um ein Popup mit weiteren Informationen zur Funktion anzuzeigen, wählen Sie ![Hilfesymbol](assets/Smock_HelpOutline_18_N.svg). |
 | C  | **Regelbeschreibung** | Sie können optional einer Regel eine Beschreibung hinzufügen.<br/>Auswählen ![Weitere Symbole](assets/More.svg), wählen Sie **[!UICONTROL ** Beschreibung hinzufügen **]** , um eine Beschreibung hinzuzufügen, oder **[!UICONTROL ** Beschreibung bearbeiten **]** , um eine vorhandene Beschreibung zu bearbeiten.<br/>Geben Sie im Editor eine Beschreibung ein. Sie können die Symbolleiste verwenden, um den Text zu formatieren (mithilfe der Stilauswahl, fett, kursiv, unterstrichen, rechts, links, zentriert, Farbe, Nummernliste, Aufzählungsliste) und Links zu externen Informationen hinzuzufügen. <br/>Um die Bearbeitung der Beschreibung abzuschließen, klicken Sie außerhalb des Editors auf . |
 | D | **Funktionsbereich** | Definiert die Logik der Funktion. Die Benutzeroberfläche hängt vom Funktionstyp ab. Das Dropdown-Menü für [!UICONTROL Feld] oder [!UICONTROL Wert] zeigt alle verfügbaren Feldkategorien (Regeln, Standardfelder, Felder) basierend auf dem Typ der Eingabe an, die die Funktion erwartet. Alternativ können Sie ein Feld aus der Auswahl &quot;Schema&quot;und &quot;Standard-Felder&quot;per Drag-and-Drop in ein Feld oder einen Wert ziehen. Wenn dieses gezogene Feld aus einem Lookup-Datensatz stammt, wird vor der von Ihnen definierten Funktion automatisch eine Suchfunktion eingefügt. <br/>Siehe [Funktionsreferenz](#function-reference) Detaillierte Informationen zu den einzelnen unterstützten Funktionen. |
 
@@ -621,7 +621,7 @@ Der gewünschte Bericht sollte wie folgt aussehen:
 
 ### Daten vor {#concatenate-uc-databefore}
 
-| Herkunft | Ziel |
+| Origin | Ziel |
 |----|---:|
 | SLC | MCO |
 | SLC | LAX |
@@ -733,7 +733,7 @@ Sucht Werte mithilfe eines Felds aus einem Lookup-Datensatz und gibt einen Wert 
 
 | Eingabedatentyp | Eingabe | Einbezogene Operatoren | Limit | Ausgabe |
 |---|---|---|---|---|
-| <ul><li>Zeichenfolge</li><li>Numerisch</li><li>Datum</li></ul> | <ul><li>[!UICONTROL Feld für die Anwendung von Lookup]:</li><ul><li>Regeln</li><li>Standardfelder</li><li>Felder</li></ul><li>[!UICONTROL Lookup-Datensatz]</li><ul><li>Datensatz</li></ul><li>[!UICONTROL Passender Schlüssel]<ul><li>Regeln</li><li>Felder</li></ul></li><li>Zurückzugebende Werte<ul><li>Regeln</li><li>Felder</li></ul></li></ul> | <p>Nicht angegeben</p> | <p>3 Funktionen pro abgeleitetem Feld</p> | <p>Neues abgeleitetes Feld oder Wert für die weitere Verarbeitung in der nächsten Regel</p> |
+| <ul><li>Zeichenfolge</li><li>Numerisch</li><li>Datum</li></ul> | <ul><li>[!UICONTROL Feld zum Anwenden der Suche]:</li><ul><li>Regeln</li><li>Standardfelder</li><li>Felder</li></ul><li>[!UICONTROL Datensatz nachschlagen]</li><ul><li>Datensatz</li></ul><li>[!UICONTROL Passender Schlüssel]<ul><li>Regeln</li><li>Felder</li></ul></li><li>Zurückzugebende Werte<ul><li>Regeln</li><li>Felder</li></ul></li></ul> | <p>Nicht angegeben</p> | <p>3 Funktionen pro abgeleitetem Feld</p> | <p>Neues abgeleitetes Feld oder Wert für die weitere Verarbeitung in der nächsten Regel</p> |
 
 {style="table-layout:auto"}
 
@@ -846,7 +846,7 @@ Sie möchten eine Dimension erstellen, die sich aus dem Feld &quot;Seitenname&qu
 | Seitenname | Sitzung | Besucher |
 |---|--:|--:|
 | Hilfeseite | 250 | 200 |
-| homepage | 500 | 250 |
+| Startseite | 500 | 250 |
 | Produktdetailseite | 300 | 200 |
 
 {style="table-layout:auto"}
@@ -869,7 +869,7 @@ Sie definieren eine `Cross Channel Interactions` abgeleitetes Feld. Sie verwende
 
 | Kanalübergreifende Interaktionen | Sitzungen | Besucher |
 |---|--:|--:|
-| homepage | 500 | 250 |
+| Startseite | 500 | 250 |
 | Produktdetailseite | 300 | 200 |
 | Fragen zu meiner Bestellung | 275 | 250 |
 | Hilfeseite | 250 | 200 |
@@ -899,7 +899,7 @@ Ersetzt einen Wert aus einem Feld mithilfe eines regulären Ausdrucks in ein neu
 
 | Eingabedatentyp | Eingabe | Einbezogene Operatoren | Limit | Ausgabe |
 |---|---|---|---|---|
-| <ul><li>Zeichenfolge</li><li>Numerisch</li></ul> | <ul><li>[!UICONTROL Feld]:</li><ul><li>Regeln</li><li>Standardfelder</li><li>Felder</li></ul></ul><ul><li>[!UICONTROL Regex]:</li><ul><li>Zeichenfolge</li></ul></li><li>[!UICONTROL Ausgabeformat]:<ul><li>Zeichenfolge</li></ul></ul><ul><li>Von Schreibweise abhängig</li><ul><li>Boolesch</li></ul></li></ul></li> | <p>Nicht angegeben</p> | <p>1 Funktion pro abgeleitetem Feld</p> | <p>Neues abgeleitetes Feld</p> |
+| <ul><li>Zeichenfolge</li><li>Numerisch</li></ul> | <ul><li>[!UICONTROL Feld]:</li><ul><li>Regeln</li><li>Standardfelder</li><li>Felder</li></ul></ul><ul><li>[!UICONTROL Regex]:</li><ul><li>Zeichenfolge</li></ul></li><li>[!UICONTROL Ausgabeformat]:<ul><li>Zeichenfolge</li></ul></ul><ul><li>Groß-/Kleinschreibung beachten</li><ul><li>Boolesch</li></ul></li></ul></li> | <p>Nicht angegeben</p> | <p>1 Funktion pro abgeleitetem Feld</p> | <p>Neues abgeleitetes Feld</p> |
 
 {style="table-layout:auto"}
 
@@ -1129,11 +1129,11 @@ Ihre Daten zu den erfassten Seitennamen enthalten einige fehlerhafte Sonderzeich
 
 | Name | Ereignisse |
 |---|--:|
-| homepage# | 1 |
-| homepage? | 1 |
-| homepage% | 1 |
-| homepage&amp; | 1 |
-| homepage/ | 1 |
+| Startseite# | 1 |
+| Homepage? | 1 |
+| Homepage% | 1 |
+| Startseite&amp; | 1 |
+| Homepage/ | 1 |
 
 {style="table-layout:auto"}
 
@@ -1147,7 +1147,7 @@ Sie erstellen eine  `Page Name` abgeleitetes Feld. Sie verwenden die [!UICONTROL
 
 | Seitenname | Ereignisse |
 |---|--:|
-| homepage | 5 |
+| Startseite | 5 |
 
 {style="table-layout:auto"}
 
@@ -1165,7 +1165,7 @@ Sie erfassen Daten, einschließlich einer storeID. Die storeID enthält den abge
 | UT123418 | 1 |
 | UT189021 | 1 |
 | ID028930 | 1 |
-| OR234223 | 1 |
+| ODER234223 | 1 |
 | NV22342 | 1 |
 
 {style="table-layout:auto"}
@@ -1202,7 +1202,7 @@ Analysiert verschiedene Teile einer URL, einschließlich Protokoll-, Host-, Pfad
 
 | Eingabedatentyp | Eingabe | Einbezogene Operatoren | Limit | Ausgabe |
 |---|---|---|---|---|
-| <ul><li>Zeichenfolge</li></ul> | <ul><li>[!UICONTROL Feld]:</li><ul><li>Regeln</li><li>Standardfelder</li><li>Felder</li></ul><li>[!UICONTROL Option]:<ul><li>[!UICONTROL Protokoll abrufen]</li><li>[!UICONTROL Host abrufen]</li><li>[!UICONTROL  Pfad abrufen]</li><li>[!UICONTROL Wert der Abfragezeichenfolge abrufen]<ul><li>[!UICONTROL Abfrageparameter]:<ul><li>Zeichenfolge</li></ul></li></ul></li><li>[!UICONTROL Hash-Wert abrufen]</li></ul></li></ul></li></ul> | <p>Nicht angegeben</p> | <p>5 Funktionen pro abgeleitetem Feld</p> | <p>Neues abgeleitetes Feld</p> |
+| <ul><li>Zeichenfolge</li></ul> | <ul><li>[!UICONTROL Feld]:</li><ul><li>Regeln</li><li>Standardfelder</li><li>Felder</li></ul><li>[!UICONTROL Option]:<ul><li>[!UICONTROL Protokoll abrufen]</li><li>[!UICONTROL Hosting abrufen]</li><li>[!UICONTROL Pfad abrufen]</li><li>[!UICONTROL Abfragezeichenfolgenwert abrufen]<ul><li>[!UICONTROL Abfrageparameter]:<ul><li>Zeichenfolge</li></ul></li></ul></li><li>[!UICONTROL Hashwert abrufen]</li></ul></li></ul></li></ul> | <p>Nicht angegeben</p> | <p>5 Funktionen pro abgeleitetem Feld</p> | <p>Neues abgeleitetes Feld</p> |
 
 {style="table-layout:auto"}
 
@@ -1281,6 +1281,12 @@ Die folgenden Einschränkungen gelten für die Funktion für abgeleitete Felder 
 - Pro Customer Journey Analytics-Verbindung können maximal 100 abgeleitete Felder verwendet werden.
 
 ## Weitere Informationen
+
+[`Trim`](#trim) und [`Lowercase`](#lowercase) sind bereits in den Komponenteneinstellungen in verfügbar. [Datenansichten](../component-settings/overview.md). Mithilfe von abgeleiteten Feldern können Sie diese Funktionen kombinieren, um eine komplexere Datenumwandlung direkt im Customer Journey Analytics durchzuführen. Sie können beispielsweise `Lowercase` , um die Groß-/Kleinschreibung in einem Ereignisfeld zu entfernen, und verwenden Sie dann [`Lookup`](#lookup) , um das neue Feld in Kleinbuchstaben mit einem Lookup-Datensatz abzugleichen, der nur Suchschlüssel in Kleinbuchstaben enthält. Oder Sie können `Trim` zum Entfernen von Zeichen vor der Einrichtung `Lookup` im neuen Feld.
+
+Die Unterstützung von Lookup- und Profilfeldern in abgeleiteten Feldern ermöglicht es Ihnen, Daten basierend auf der Ereignissuche und den Profilattributen umzuwandeln. Dies kann besonders bei B2B-Szenarien mit Daten auf Kontoebene in Lookup- oder Profildatensätzen hilfreich sein. Darüber hinaus ist diese Unterstützung nützlich, um Daten in allgemeinen Feldern aus Suchdaten (wie Kampagneninformationen und Angebotstyp) oder aus Profildaten (wie Mitgliederebene und Kontotyp) zu bearbeiten.
+
+Weitere Hintergrundinformationen zu abgeleiteten Feldern finden Sie unter .
 
 - [Optimale Nutzung Ihrer Daten: Ein Framework für die Verwendung abgeleiteter Felder im Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/making-the-most-of-your-data-a-framework-for-using-derived/ba-p/601670)
 

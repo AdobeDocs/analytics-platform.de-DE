@@ -3,10 +3,11 @@ title: Häufig gestellte Fragen zur Zuordnung
 description: Häufig gestellte Fragen zum Stitching
 solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
-source-git-commit: d7dd5f4f0ef53e61755cf02c49c2f7f081ff4b39
+exl-id: f4115164-7263-40ad-9706-3b98d0bb7905
+source-git-commit: 53d394feb7d1132ad6339bae0e980f32bfe2ee6f
 workflow-type: tm+mt
-source-wordcount: '1299'
-ht-degree: 42%
+source-wordcount: '1269'
+ht-degree: 34%
 
 ---
 
@@ -33,7 +34,7 @@ Das Lookback-Fenster für die Neuzuweisung hängt von der gewünschten Häufigke
 
 +++
 
-+++**Wie werden freigegebene Geräte gehandhabt?**
++++**Wie werden gemeinsam genutzte Geräte gehandhabt?**
 
 In einigen Situationen ist es möglich, dass sich mehrere Personen von demselben Gerät aus anmelden. Beispiele dafür sind freigegebene Geräte zu Hause, freigegebene PCs in einer Bibliothek oder ein Terminal in einem Einzelhandelsgeschäft.
 
@@ -49,7 +50,7 @@ Die Anzahl der beständigen IDs ist für die vorübergehende ID irrelevant. Ein 
 
 +++
 
-+++**Wie lange dauert es, bis der neu zugewiesene Datensatz verfügbar ist, nachdem ich meinem Adobe-Accountteam die gewünschten Informationen mitgeteilt habe?**
++++**Wie lange dauert es, bis der neu zugewiesene Datensatz verfügbar ist, nachdem ich mein Adobe Account-Team mit den gewünschten Informationen kontaktiert habe?**
 
 Die Live-Stitching-Funktion ist ca. eine Woche nach der Adobe-Aktivierung verfügbar. Die Verfügbarkeit der Aufstockung hängt von der Menge der vorhandenen Daten ab. Bei kleinen Datensätzen (weniger als 1 Million Ereignisse pro Tag) dauert es in der Regel einige Tage, während große Datensätze (1 Milliarde Ereignisse pro Tag) eine Woche oder länger benötigen können.
 
@@ -63,13 +64,13 @@ Die kanalübergreifende Analyse ist ein für das Customer Journey Analytics spez
 
 +++
 
-+++**Wie verarbeitet die Zuordnung DSGVO- und CCPA-Anfragen?**
++++**Wie verarbeitet die Zuordnung Datenschutzanfragen?**
 
-Adobe bearbeitet DSGVO- und CCPA-Anfragen gemäß den nationalen und internationalen Gesetzen. Adobe bietet den [Adobe Experience Platform Privacy Service](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=de) für Datenzugriffs- und Löschanfragen. Die Anfragen gelten sowohl für die ursprünglichen als auch die neu zugewiesenen Datensätze.
+Adobe verarbeitet Datenschutzanfragen gemäß den nationalen und internationalen Gesetzen. Adobe bietet den [Adobe Experience Platform Privacy Service](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=de) für Datenzugriffs- und Löschanfragen. Die Anfragen gelten sowohl für die ursprünglichen als auch die neu zugewiesenen Datensätze.
 
 +++
 
-+++**Was passiert, wenn das Feld „Persistent ID“ in einem oder mehreren Ereignissen leer ist?**
++++**Was passiert, wenn das Feld &quot;Persistent ID&quot;in einem oder mehreren Ereignissen leer ist?**
 
 Wenn das Feld &quot;Persistente ID&quot;bei einem Ereignis in einem Datensatz, der zugeordnet wird, leer ist, wird die zugeordnete ID für dieses Ereignis auf zwei Arten ermittelt:
 
@@ -85,15 +86,15 @@ Seien Sie vorsichtig mit &quot;Personen reduzieren&quot;, was auftritt, wenn die
 
 | Ereignis-   | Zeitstempel | Beständige ID (Cookie-ID) | Verlaufs-ID (Anmelde-ID) | Zugeordnete ID (nach der Wiederholung) |
 |---|---|---|---|---|
-| 1 | 2023-05-12 12:01 | 123 | – | **Geschichte** |
+| 1 | 12.05.2023 12:01 | 123 | – | **Geschichte** |
 | 2 | 2023-05-12 12:02 | 123 | Geschichte | **Geschichte** |
-| 3 | 2023-05-12 12:03 | 456 | Nicht definiert | **Nicht definiert** |
-| 4 | 2023-05-12 12:04 | 456 | – | **Nicht definiert** |
-| 5 | 2023-05-12 12:05 | 789 | Nicht definiert | **Nicht definiert** |
-| 6 | 2023-05-12 12:06 | 012 | Nicht definiert | **Nicht definiert** |
-| 7 | 2023-05-12 12:07 | 012 | – | **Nicht definiert** |
-| 8 | 2023-05-12 12:03 | 789 | Nicht definiert | **Nicht definiert** |
-| 9 | 2023-05-12 12:09 | 456 | – | **Nicht definiert** |
+| 3 | 2023-05-12 12:03 | 456 | Nicht definiert | **Unbestimmt** |
+| 4 | 2023-05-12 12:04 | 456 | – | **Unbestimmt** |
+| 5 | 2023-05-12 12:05 | 789 | Nicht definiert | **Unbestimmt** |
+| 6 | 2023-05-12 12:06 | 012 | Nicht definiert | **Unbestimmt** |
+| 7 | 2023-05-12 12:07 | 012 | – | **Unbestimmt** |
+| 8 | 2023-05-12 12:03 | 789 | Nicht definiert | **Unbestimmt** |
+| 9 | 2023-05-12 12:09 | 456 | – | **Unbestimmt** |
 | 10 | 2023-05-12 12:02 | 123 | – | **Geschichte** |
 | | | **4 Geräte** | **2 Personen**:<br/>Ereignisse 1, 4, 7, 9, 10 verworfen | **2 Personen**:<br/>Melodie, Nicht authentifiziert (auf eine Person reduziert) |
 
