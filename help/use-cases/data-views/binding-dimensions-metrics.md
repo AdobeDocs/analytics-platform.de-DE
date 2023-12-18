@@ -3,10 +3,10 @@ title: Bindungsdimensionen und Metriken in Customer Journey Analytics verwenden
 description: Ordnen Sie den Objekt-Arrays Dimensionen für die komplexe Persistenzanalyse zu.
 exl-id: 5e7c71e9-3f22-4aa1-a428-0bea45efb394
 feature: Use Cases
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+source-git-commit: 15660e1560ef8b1be510c0103e0f4818f1019c3e
 workflow-type: tm+mt
-source-wordcount: '1343'
-ht-degree: 84%
+source-wordcount: '1342'
+ht-degree: 83%
 
 ---
 
@@ -78,7 +78,7 @@ Wenn Sie den Umsatz nach Farbe ohne eine gebundene Dimension betrachten wollten,
 | --- | --- |
 | Neonorange | 2099 |
 
-Sie können den Datenansichtsmanager aufrufen und die Produktfarbe an den Produktnamen binden:
+Anmelden **[!UICONTROL Datenansichten]** und binden die [!DNL Product Color] Dimension zu [!DNL Product Name]:
 
 ![Bindungsdimension](../assets/binding-dimension.png)
 
@@ -251,7 +251,7 @@ Wenn Sie [!UICONTROL Zuletzt verwendet] -Zuordnung mit der Suchbegriffdimension 
 
 Während dieses Beispiel nur eine Person umfasst, können viele Personen, die nach verschiedenen Elementen suchen, Suchbegriffe verschiedenen Produkten zuordnen, was es schwierig macht festzustellen, welche die besten Suchergebnisse tatsächlich sind.
 
-Sie können Suchbegriffe an den Produktnamen binden, wenn die Suchmetrik vorhanden ist, um Suchbegriffe korrekt dem Umsatz zuzuordnen.
+Sie können jetzt binden [!DNL Search Term] nach [!DNL Product Name] wann immer [!DNL Searches] -Metrik vorhanden ist, um Suchbegriffe korrekt dem Umsatz zuzuordnen.
 
 ![Bindungsmetrik](../assets/binding-metric.png)
 
@@ -342,7 +342,7 @@ Wenn Sie die Zuordnung „Zuletzt gesehen“ mit „Gültigkeit der Person“ ve
 
 Wenn Sie jedoch `search_term` an `ProfileID` binden, werden die Suchvorgänge jedes Profils auf sein eigenes Profil beschränkt und den richtigen Sendungen zugewiesen, nach denen es sucht.
 
-![Besucherbindung](../assets/binding-visitor.png)
+![Besucherbindung](../assets/binding-profileid.png)
 
 Analysis Workspace ordnet die zweite Folge von Orangey korrekt dem Suchbegriff `"kids show"` zu, ohne die Suche anderer Profile zu berücksichtigen.
 
@@ -435,3 +435,8 @@ Wenn Sie jedoch `product_finding_method` an die Metrik „Hinzufügen zum Warenk
 | --- | --- |
 | Suche | 399,99 |
 | Browsen | 19,99 |
+
+
+>[!MORELIKETHIS]
+>
+>[Binden von Dimensionen in Datenansichten](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/data-views/binding-dimensions-in-data-views.html?lang=de) Tutorial.
