@@ -4,7 +4,7 @@ description: Erfahren Sie mehr über die Limits für Customer Journey Analytics
 solution: Customer Journey Analytics
 feature: Administration
 role: Admin
-source-git-commit: 37cb4cc9ecb58f31fdcd53deaadbd124bf6e894c
+source-git-commit: affe7fe57ba59a15458263afabe2715d4c5da5fe
 workflow-type: tm+mt
 source-wordcount: '1467'
 ht-degree: 14%
@@ -191,7 +191,7 @@ Siehe auch Experience Platform [Limits für die Datenerfassung](https://experien
 
 | Name | Wert | Art von Limit | Beschreibung |
 |---|--:|---|---|
-| Zeilen pro Bericht | 3 Millionen - 150 Millionen | Systemerzwungene Limits | Maximale Anzahl an Berichtszeilen pro Bericht; Wert basierend auf dem lizenzierten Paket. |
+| Zeilen pro Bericht | 3 Millionen - 300 Millionen | Systemerzwungene Limits | Maximale Anzahl an Berichtszeilen pro Bericht; Wert basierend auf dem lizenzierten Paket. |
 | Aufschlüsselung nach Tabelle | 5 | Systemerzwungene Limits | Maximale Anzahl an Aufschlüsselungen pro Tabelle. |
 | Metriken pro Tabelle | 5 | Systemerzwungene Limits | Maximale Anzahl an Metriken pro Tabelle. |
 | Planfrequenz | 1 | Systemerzwungene Limits | Die Exporte können einmal (1) täglich oder länger geplant werden (z. B. einmal alle 2 Tage oder wöchentlich). |
