@@ -4,9 +4,9 @@ description: Häufig gestellte Fragen zur geführten Analyse.
 exl-id: b6f92d47-6c09-4338-9dc5-b30bbfbe9f7f
 feature: Guided Analysis
 keywords: Produktanalyse
-source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+source-git-commit: 2fe26bb906600a1987d9f4a07c5863030d52173a
 workflow-type: tm+mt
-source-wordcount: '425'
+source-wordcount: '434'
 ht-degree: 2%
 
 ---
@@ -17,7 +17,7 @@ Häufig gestellte Fragen zur geführten Analyse.
 
 +++**Wie kann meine Organisation für die geführte Analyse bereitgestellt werden?**
 
-Geführte Analyse ist ein kostenpflichtiges Add-on zu Customer Journey Analytics. Wenden Sie sich an Ihr Adobe-Account-Team, wenn Sie mit der Verwendung dieses Add-ons beginnen möchten.
+Geführte Analysen sind Teil von Adobe Product Analytics, einem kostenpflichtigen Add-on zu Customer Journey Analytics. Wenden Sie sich an Ihr Adobe-Account-Team, wenn Sie mit der Verwendung dieses Add-ons beginnen möchten.
 
 +++
 
@@ -46,7 +46,7 @@ Geführte Analyse verwendet Begriffe, die häufiger von Produktteams verwendet w
 | Ereignis-   | Metrik |
 | Benutzer | Personen |
 | Eigenschaft | Dimension |
-| Wert | Dimensionselement |
+| Wert | Dimension |
 | Segment | Filter |
 
 {style="table-layout:auto"}
@@ -59,7 +59,7 @@ while [Analysis Workspace](../analysis-workspace/home.md) und geführte Analysen
 
 * **Analysis Workspace ist ein dimensionszentriertes Erlebnis.** Tabellen bestehen normalerweise aus dimensionalen Zeilen, während Spalten normalerweise Metriken sind. Filter können sowohl in Zeilen als auch in Spalten angewendet werden, um die gewünschten Daten zu erhalten.
 
-* **Geführte Analyse ist ein ereigniszentriertes Erlebnis.** Jede Analyse beginnt mit der Auswahl von Ereignissen. Anschließend können Dimensionen und Filter hinzugefügt werden, um diese Ereignisdaten zu verfeinern.
+* **Geführte Analyse ist ein Ereignis und ein benutzerzentriertes Erlebnis.** Jede Analyse beginnt mit der Auswahl von Ereignissen. Anschließend können Dimensionen und Filter hinzugefügt werden, um diese Ereignisdaten zu verfeinern.
 
 ![Ansichten der Analysis Workspace- und Guided-Analyse](assets/structure.png)
 
@@ -69,7 +69,7 @@ Betrachten Sie das folgende Beispiel, in dem Sie sich auf Daten rund um die Star
 
   ![Dimension zentriert](assets/dimension-centered.png)
 
-* Ein typischer, ereigniszentrierter Ansatz der geführten Analyse wäre: &quot;Wie viele Benutzer haben die Homepage angesehen?&quot;
+* Ein typisches Ereignis und benutzerzentrierter Ansatz für die angeleitete Analyse wäre: &quot;Wie viele Benutzer haben unsere Homepage besucht?&quot;
 
   ![Ereignis zentriert](assets/event-centered.png)
 
