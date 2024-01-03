@@ -1,15 +1,15 @@
 ---
 title: Zeitliche Planung von Arbeitsmappen mithilfe von Report Builder in Customer Journey Analytics
 description: Erfahren Sie, wie Sie die Planungsfunktion in Report Builder verwenden
-role: Data Engineer, Data Architect, Admin, User
+role: User
 feature: Report Builder
 type: Documentation
 solution: Customer Journey Analytics
 exl-id: 7429d8f9-1e8f-4fbd-8b04-cbe7adbff3e2
-source-git-commit: 063fc71a9c0bbcadb1348aa4c41c64bed08a51f6
+source-git-commit: 48f5e9d6c5d3a33a5bae45e841eb8364b7172876
 workflow-type: tm+mt
-source-wordcount: '1166'
-ht-degree: 85%
+source-wordcount: '1170'
+ht-degree: 84%
 
 ---
 
@@ -69,7 +69,7 @@ Verwenden Sie im Report Builder-Hub die Schaltfläche „Aufgabe planen“, um s
 
 1. Nachdem Sie den Zeitplan festgelegt haben, klicken Sie auf **Planmäßig senden**.
 
-   ![Klicken Sie auf Planmäßig senden.](./assets/send-on-schedule.png){width="55%"}
+   ![Klicken Sie auf Planmäßig senden .](./assets/send-on-schedule.png){width="55%"}
 
    Im Report Builder-Abschnitt wird unten eine Bestätigungsmitteilung angezeigt, und die zeitlich geplante Arbeitsmappe wird auf der Registerkarte „Arbeitsmappen“ aufgeführt.
 

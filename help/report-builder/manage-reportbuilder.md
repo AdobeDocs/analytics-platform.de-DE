@@ -1,15 +1,15 @@
 ---
 title: Verwalten von Datenblöcken mithilfe von Report Builder in Customer Journey Analytics
 description: Beschreibt die Verwendung der Verwaltungsfunktion in Report Builder
-role: Data Engineer, Data Architect, Admin, User
+role: User
 feature: Report Builder
 type: Documentation
 solution: Customer Journey Analytics
 exl-id: 70103020-a4a9-43be-933c-bde5a6d088c8
-source-git-commit: 49a35a256758b259dfb2133658bae617315774e4
+source-git-commit: 48f5e9d6c5d3a33a5bae45e841eb8364b7172876
 workflow-type: tm+mt
 source-wordcount: '641'
-ht-degree: 75%
+ht-degree: 71%
 
 ---
 
@@ -68,7 +68,7 @@ Klicken Sie auf das Aktualisierungssymbol, um die Datenblöcke in der Liste zu a
 
 <img src="./assets/refresh-icon.png" width="15%" alt="Aktualisierungssymbol"/>
 
-Um zu überprüfen, ob ein Datenblock aktualisiert wurde, rufen Sie das Aktualisierungsstatus-Symbol auf.
+Um zu überprüfen, ob ein Datenblock aktualisiert wurde, rufen Sie das Symbol Aktualisierungsstatus auf.
 
 Ein erfolgreich aktualisierter Datenblock zeigt ein Häkchen in einem grünen Kreis an: <img src="./assets/refresh-success.png" width="5%" alt="Grüner Kreis mit Häkchensymbol"/>.
 

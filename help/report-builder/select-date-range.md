@@ -1,14 +1,14 @@
 ---
 title: Auswählen eines Datenbereichs in Report Builder unter Customer Journey Analytics
 description: Beschreibt die Verwendung des Kalenders, rollierender Datumsangaben und benutzerdefinierter Ausdrücke in Report Builder zum Customer Journey Analytics
-role: Data Engineer, Data Architect, Admin, User
+role: User
 feature: Report Builder
 type: Documentation
 exl-id: 7252214f-a7d6-451b-99c9-d39e8e47120b
 solution: Customer Journey Analytics
-source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+source-git-commit: 9efad7c7808a7a68bc25fc5f1700f4e4f8e18614
 workflow-type: tm+mt
-source-wordcount: '1087'
+source-wordcount: '1091'
 ht-degree: 89%
 
 ---
@@ -157,7 +157,7 @@ In der folgenden Tabelle sind Beispiele für Datumsausdrücke aufgeführt.
 | tm-1d | Letzter Tag des vorherigen Monats |
 | td-52w | Derselbe Tag vor 52 Wochen |
 | tm-11m-1d | Letzter Tag des gleichen Monats im letzten Jahr |
-| „2020-09-06“ | 9. Sept. 2020 |
+| &quot;2020-09-06&quot; | 9. Sept. 2020 |
 
 ## Datumsbereich aus Zelle
 
