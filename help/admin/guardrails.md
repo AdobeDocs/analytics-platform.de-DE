@@ -4,9 +4,9 @@ description: Erfahren Sie mehr über die Limits für Customer Journey Analytics
 solution: Customer Journey Analytics
 feature: Administration
 role: Admin
-source-git-commit: affe7fe57ba59a15458263afabe2715d4c5da5fe
+source-git-commit: f436084d71f19e9cf3dd67287e510e07586d58f6
 workflow-type: tm+mt
-source-wordcount: '1467'
+source-wordcount: '1478'
 ht-degree: 14%
 
 ---
@@ -210,8 +210,9 @@ Siehe auch Experience Platform [Limits für die Datenerfassung](https://experien
 | Adobe Analytics-Quell-Connector zum Echtzeit-Kundenprofil (A4T nicht aktiviert) | &lt; 2 Minuten |
 | Adobe Analytics-Quell-Connector zum Echtzeit-Kundenprofil (A4T aktiviert) | &lt; 30 Minuten |
 | Datenerfassung in den Data Lake von Edge Network oder Streaming-Erfassung | &lt; 60 Minuten |
-| Datenerfassung in den Data Lake über den Quell-Connector von Adobe Analytics | &lt; 90 Minuten |
+| Datenerfassung in den Data Lake über den Quell-Connector von Adobe Analytics | &lt; 2,25 Stunden |
 | Datenerfassung in Customer Journey Analytics aus dem Data Lake | &lt; 90 Minuten |
+| Stitching (optionale Funktion; siehe [Stitching-Übersicht](../stitching/overview.md) für weitere Informationen) | &lt; 3,25 Stunden |
 | Aufstockung des Adobe Analytics-Quell-Connectors bei weniger als 10 Milliarden Ereignissen (maximal 13 Monate historischer Daten) | &lt; 4 Wochen |
 | Zielgruppenveröffentlichung im Echtzeit-Kundenprofil, einschließlich der automatischen Erstellung des Streaming-Segments, sodass das Segment bereit für den Empfang der Daten ist. | ~ 60 Minuten |
 | Aktualisierungshäufigkeit für Zielgruppen | Einmalige Aktualisierung: Latenz von weniger als 5 Minuten.<br/>Aktualisieren Sie alle 4 Stunden, täglich, wöchentlich, monatlich (die Latenz geht mit der Aktualisierungsrate einher). |
