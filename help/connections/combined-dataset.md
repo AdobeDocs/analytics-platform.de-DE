@@ -4,10 +4,11 @@ description: Erfahren Sie, wie Customer Journey Analytics durch die Kombination 
 exl-id: 9f678225-a9f3-4134-be38-924b8de8d57f
 solution: Customer Journey Analytics
 feature: Connections
-source-git-commit: cf6da1f126933f17e05fb458f52dff93c1601891
+role: Admin
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '584'
-ht-degree: 61%
+source-wordcount: '581'
+ht-degree: 60%
 
 ---
 
@@ -58,7 +59,7 @@ Wenn Sie eine Verbindung mit diesen beiden Ereignis-Datensätzen erstellen, wird
 | `alternateid_656` | `2 Jan 8:58 PM` | `Red` | | `Square` | | `4.2` |
 | `alternateid_656` | `2 Jan 9:03 PM` | | | `Triangle` | | `3.1` |
 
-Dieser „kombinierte Ereignis-Datensatz“ wird für das Reporting verwendet. Es spielt keine Rolle, aus welchem Datensatz eine Zeile stammt. Customer Journey Analytics behandelt alle Daten so, als befänden sie sich im selben Datensatz. Wenn in beiden Datensätzen eine übereinstimmende Personen-ID angezeigt wird, werden sie als dieselbe eindeutige Person betrachtet. Wenn eine übereinstimmende Personen-ID mit einem Zeitstempel innerhalb von 30 Minuten in beiden Datasets erscheint, werden sie als Teil derselben Sitzung betrachtet.
+Dieser „kombinierte Ereignis-Datensatz“ wird für das Reporting verwendet. Es spielt keine Rolle, aus welchem Datensatz eine Zeile stammt. Customer Journey Analytics behandelt alle Daten so, als ob sie sich im selben Datensatz befinden. Wenn in beiden Datensätzen eine übereinstimmende Personen-ID angezeigt wird, werden sie als dieselbe eindeutige Person betrachtet. Wenn eine übereinstimmende Personen-ID mit einem Zeitstempel innerhalb von 30 Minuten in beiden Datasets erscheint, werden sie als Teil derselben Sitzung betrachtet.
 
 Dieses Konzept gilt auch für die Attribution. Es spielt keine Rolle, aus welchem Datensatz eine Zeile stammt. Die Attribution funktioniert genau so, als ob alle Ereignisse aus einem einzigen Datensatz stammen. Anhand dem Beispiel der oben stehenden Tabellen:
 

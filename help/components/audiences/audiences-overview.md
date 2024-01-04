@@ -3,10 +3,11 @@ title: Erfahren Sie mehr über die Customer Journey Analytics Audiences-Veröffe
 description: Erfahren Sie mehr über das Konzept der Zielgruppenveröffentlichung in Customer Journey Analytics
 exl-id: 30404bfc-0ee7-4f01-842c-7e6156dc0b45
 feature: Audiences
-source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+role: User
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '519'
-ht-degree: 54%
+source-wordcount: '493'
+ht-degree: 50%
 
 ---
 
@@ -20,7 +21,7 @@ Das Veröffentlichen von Zielgruppen bietet eine klare Möglichkeit, Einblicke, 
 * Exportieren der Zielgruppe zu einem Drittanbieter über ein Experience Platform-Ziel.
 * Anreicherung des Echtzeit-Kundenprofils mit nützlichen Attributen, die aus ereignisbasierten Daten in Customer Journey Analytics abgeleitet wurden.
 * Dies alles geschieht mit minimaler Latenz nach der Publikation der Zielgruppe. [Weitere Informationen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html?lang=de#latency)
-* Veröffentlichen einmaliger oder wiederkehrender Zielgruppen.
+* Veröffentlichen einmaliger oder wiederkehrender Zielgruppen
 
 Die Zielgruppen, die Sie in Customer Journey Analytics erstellen, müssen nicht auf für das Profil aktivierten Datensätzen basieren. Sie können historische Daten in Experience Platform erfassen, ohne verknüpfte Datensätze und Schemas für Profile zu aktivieren. Verwenden Sie dann diese Datensätze, um relevante Zielgruppen im Customer Journey Analytics zu ermitteln und diese Zielgruppen zum Zwecke der Aktivierung im Echtzeit-Kundenprofil in Experience Platform zu veröffentlichen.
 

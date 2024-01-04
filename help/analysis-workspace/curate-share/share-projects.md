@@ -4,10 +4,11 @@ keywords: Analysis Workspace-Freigabe
 title: Freigeben von Projekten
 feature: Curate and Share
 exl-id: ac4ed73a-e890-46cc-be08-4ccedf66b47d
-source-git-commit: 16f1a732260ace8393d7303134fc351740fd1661
+role: User
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '1980'
-ht-degree: 36%
+source-wordcount: '1966'
+ht-degree: 34%
 
 ---
 
@@ -50,7 +51,7 @@ Beachten Sie beim Freigeben einer bestimmten Projektrolle für Benutzende und Gr
 
 * Projektrollen (**[!UICONTROL Original bearbeiten]**, **[!UICONTROL Kopie bearbeiten]**, und **[!UICONTROL Schreibgeschützt]**) sind an den Benutzer und die spezifische Projekt-ID gebunden. Projektrollen sind unabhängig von Benutzerberechtigungen, die in der [Adobe Experience Cloud Admin Console](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/admin-getting-started.html?lang=de) verwaltet werden.
 
-* In Customer Journey Analytics werden Gruppen durch Produktprofile in der [Adobe Experience Cloud Admin Console](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/admin-getting-started.html?lang=de) definiert. Die von Administrierenden durchgeführte Freigabe ist für jede Gruppe möglich, einschließlich „Alle“. Nichtadministrierende können Freigaben für Gruppen durchführen, denen sie angehören (mit Ausnahme von „Alle“).
+* Unter Customer Journey Analytics werden Gruppen durch Produktprofile im [Adobe Experience Cloud Admin Console](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/admin-getting-started.html?lang=de). Die von Administrierenden durchgeführte Freigabe ist für jede Gruppe möglich, einschließlich „Alle“. Nichtadministrierende können Freigaben für Gruppen durchführen, denen sie angehören (mit Ausnahme von „Alle“).
 
 * Benutzende, denen mehrere Rollen zugewiesen sind, erhalten immer die maximale Berechtigung. Dies kann vorkommen, wenn Benutzende sowohl als Einzelpersonen als auch als Gruppenmitglieder hinzugefügt werden. Wenn einem Benutzer beispielsweise die Variable **[!UICONTROL Original bearbeiten]** Rolle als Einzelperson und **[!UICONTROL Schreibgeschützt]** Als Mitglied einer Gruppe erhalten sie eine **[!UICONTROL Original bearbeiten]** Projekterlebnis.
 
@@ -59,7 +60,7 @@ Beachten Sie beim Freigeben einer bestimmten Projektrolle für Benutzende und Gr
 So geben Sie eine bestimmte Projektrolle für Benutzende oder Gruppen in Ihrer Organisation frei:
 
 1. Wechseln Sie zu dem Projekt, das Sie freigeben möchten, und klicken Sie dann auf **[!UICONTROL Freigeben]** > **[!UICONTROL Freigeben für Workspace-Benutzer]**.
-Wenn es nicht gespeicherte Änderungen gibt, werden Sie aufgefordert, das Projekt zuerst zu speichern.
+Wenn nicht gespeicherte Änderungen vorhanden sind, werden Sie aufgefordert, Ihr Projekt zuerst zu speichern.
 
    ![Das Fenster Projekt freigeben .](assets/share-proj-modal.png)
 
@@ -149,7 +150,7 @@ So geben Sie ein Analysis Workspace-Projekt für andere frei:
 
 1. Wählen Sie aus, ob die folgende Sicherheitsoption aktiviert werden soll (diese Option kann von Ihrem Customer Journey Analytics-Administrator gesteuert werden):
 
-   * **[!UICONTROL Experience Cloud-Authentifizierung verlangen]:**
+   * **[!UICONTROL Experience Cloud-Authentifizierung erforderlich]:**
 
      Wenn diese Option aktiviert ist, können nur Benutzer auf das Projekt zugreifen, die sich bei der Adobe Experience Cloud-Organisation anmelden können, in der das freigegebene Projekt erstellt wurde. Für Benutzer, für die Sie freigeben, ist jedoch kein Zugriff auf Adobe Analytics erforderlich.
 

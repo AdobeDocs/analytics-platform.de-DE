@@ -3,9 +3,10 @@ title: Filter erstellen
 description: Machen Sie sich mit der Benutzeroberfläche zur Filtererstellung vertraut.
 exl-id: b6a921d5-7dd3-4230-88b8-5f1cd313b791
 feature: Filters
-source-git-commit: 202a726dc68853f55a24e566c656c92785e3b3f0
+role: User
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '312'
+source-wordcount: '308'
 ht-degree: 55%
 
 ---
@@ -30,4 +31,4 @@ Beim Anwenden von Filtern auf ein Freiformprojekt stehen auch mehrere andere Met
 | Filter aus Auswahl erstellen | Erstellen Sie einen Inline-Filter. Dieser Filter gilt nur für das geöffnete Projekt und wird nicht als Customer Journey Analytics-Filter gespeichert.<p> 1. Die Tabellenzeilen auswählen, die Teil des Filters sein sollen. 2. Rechtsklick auf die Auswahl.  3. Klick auf *Filter aus Auswahl erstellen*. |
 | Arbeitsbereich [!UICONTROL Komponenten] > [!UICONTROL Neuer Filter] | Zeigt den Filter Builder an. Weitere Informationen zur Filterung finden Sie unter [Filter Builder](/help/components/filters/filter-builder.md). |
 | „Freigeben“ > „Projekt freigeben“ oder „Freigeben“ > „Projektdaten kuratieren“ | In [Freigeben von Projekten](/help/analysis-workspace/curate-share/share-projects.md) oder [Kuratieren von Projekten](/help/analysis-workspace/curate-share/curate.md), erfahren Sie, wie Filter, die Sie auf das Projekt anwenden, in freigegebenen Analysen für den Empfänger verfügbar sind. |
-| Filter als Dimensionen verwenden | Das folgende Video zeigt, wie Filter als Dimensionen verwendet werden:  <p>[Verwenden von Filtern als Dimensionen in Analysis Workspace](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/components/filters/use-filters-as-dimensions.html?lang=de)</p> |
+| Verwenden von Filtern als Dimensionen | Das folgende Video zeigt, wie Filter als Dimensionen verwendet werden:  <p>[Verwenden von Filtern als Dimensionen in Analysis Workspace](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/components/filters/use-filters-as-dimensions.html?lang=de)</p> |

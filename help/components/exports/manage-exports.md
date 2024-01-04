@@ -4,10 +4,11 @@ keywords: Analysis Workspace
 title: Verwalten von Exporten
 feature: Components
 exl-id: 0c21802a-c46f-41be-9356-d836c038b174
-source-git-commit: 05cc65f3a463bc71db85d85292a172784c3d7c75
+role: User
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
 source-wordcount: '1029'
-ht-degree: 6%
+ht-degree: 4%
 
 ---
 

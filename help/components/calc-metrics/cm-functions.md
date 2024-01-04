@@ -3,10 +3,11 @@ title: Referenz – Grundfunktionen
 description: Mit dem Generator für berechnete Metriken können Sie statistische und mathematische Funktionen anwenden, um erweiterte berechnete Metriken zu erstellen.
 feature: Calculated Metrics
 exl-id: 63775753-337b-4dec-a3a2-a3a0ee9aac2e
-source-git-commit: 3348117a5a6007017735a95aec26e6a8c88ad248
-workflow-type: ht
-source-wordcount: '1044'
-ht-degree: 100%
+role: User
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+workflow-type: tm+mt
+source-wordcount: '1078'
+ht-degree: 98%
 
 ---
 
@@ -320,4 +321,4 @@ Beispiel: Sie haben eine Spalte mit drei Elementen:
 
 3
 
-Der Durchschnitt dieser Spalte ist 2. Die Varianz für die Spaltet lautet dann ((1 - 2)² + (2 - 2)² + (3 - 2)²/3 = 2/3.
+Der Durchschnitt dieser Spalte ist 2. Die Varianz für die Spalte lautet ((1 - 2)<sup>2</sup> + (2 - 2)<sup>2</sup> + (3 - 2)<sup>2</sup>/3 = 2/3.

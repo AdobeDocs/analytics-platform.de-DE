@@ -4,10 +4,11 @@ keywords: Analysis Workspace
 title: Übersicht über Projekte
 feature: Workspace Basics
 exl-id: 2eeb615c-57a1-4469-8d4a-8a61956bd6e6
-source-git-commit: 16f1a732260ace8393d7303134fc351740fd1661
+role: User
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '1371'
-ht-degree: 72%
+source-wordcount: '1336'
+ht-degree: 69%
 
 ---
 
@@ -29,7 +30,7 @@ Die Seite &quot;Projekte&quot;enthält die folgenden Informationen:
 
 | Element | Beschreibung |
 |---|---|
-| [Voreinstellungen bearbeiten](/help/analysis-workspace/user-preferences.md) | Verwalten Sie Einstellungen für Adobe Workspace und die zugehörigen Komponenten für alle neuen Projekte und Bedienfelder, die Sie erstellen. |
+| [Voreinstellungen bearbeiten](/help/analysis-workspace/user-preferences.md) | Verwalten Sie Einstellungen für Analysis Workspace und die zugehörigen Komponenten für alle neuen Projekte oder Bereiche, die Sie erstellen. |
 | [Ordner erstellen](/help/analysis-workspace/build-workspace-project/workspace-folders/create-folders.md) | Fügen Sie der Liste der Projekte und Ordner einen neuen Ordner oder Unterordner hinzu. |
 | [Projekt erstellen](/help/analysis-workspace/build-workspace-project/create-projects.md) | Beginnen Sie ein neues Projekt von Grund auf. |
 | Mehr zeigen | Zeigt Optionen zum Erstellen eines leeren Projekts oder einer mobilen Scorecard an, [Anzeigen von Tutorials](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/analysis-workspace-basics/analysis-workspace-introduction.html?lang=de)oder [Versionshinweise anzeigen](/help/release-notes/latest.md). |
@@ -69,7 +70,7 @@ Innerhalb eines Projekts bietet das Menü Optionen zum Verwalten Ihres Projekts,
 
 ### Projektinfo und Einstellungen {#info-settings}
 
-**[!UICONTROL Workspace]** > **[!UICONTROL Projekt]** > **[!UICONTROL Projektinfo und Einstellungen]**   enthält Informationen auf Projektebene zum derzeit aktiven Projekt.
+**[!UICONTROL Arbeitsbereich]** > **[!UICONTROL Projekt]** > **[!UICONTROL Projektinfo und Einstellungen]** liefert Informationen auf Projektebene zum derzeit aktiven Projekt.
 
 ![Das Fenster Projektinfo und Einstellungen .](assets/projectinfo.png)
 
@@ -77,7 +78,7 @@ Zu den Einstellungen gehören:
 
 | Einstellung | Beschreibung |
 |---|---|
-| Projekt   Name | Der Name des Projekts. Sie können auf den Namen doppelklicken, um ihn zu bearbeiten. |
+| Projektname | Der Name des Projekts. Sie können auf den Namen doppelklicken, um ihn zu bearbeiten. |
 | Erstellt von | Name des Projektinhabers. |
 | Zuletzt geändert | Das Datum, an dem die letzte Änderung an dem Projekt vorgenommen wurde. |
 | Tags | Zeigt eine Liste aller Tags an, die auf ein Projekt angewendet wurden, um die Kategorisierung zu vereinfachen. |

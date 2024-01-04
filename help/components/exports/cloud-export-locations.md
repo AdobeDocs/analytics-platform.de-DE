@@ -4,10 +4,11 @@ keywords: Analysis Workspace
 title: Konfigurieren von Cloud-Exportspeicherorten
 feature: Components
 exl-id: 93f1cca0-95da-41a0-a4f9-5ab620a5b9da
-source-git-commit: dbc0210936e8205fbe97b3c88e6c37597e7e43e3
+role: User, Admin
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '1510'
-ht-degree: 4%
+source-wordcount: '1477'
+ht-degree: 3%
 
 ---
 
@@ -57,7 +58,7 @@ Informationen zum Verwalten vorhandener Standorte, einschließlich Anzeigen, Bea
 
    | Feld | Funktion |
    |---------|----------|
-   | [!UICONTROL **Präfix**] | Der Ordner im Container, in den Sie die Daten ablegen möchten. Geben Sie einen Ordnernamen an und fügen Sie nach dem Namen einen Schrägstrich hinzu, um den Ordner zu erstellen. Zum Beispiel, `folder_name/` |
+   | [!UICONTROL **Präfix**] | Der Ordner im Container, in den Sie die Daten ablegen möchten. Geben Sie einen Ordnernamen an und fügen Sie nach dem Namen einen Schrägstrich hinzu, um den Ordner zu erstellen. Beispiel: `folder_name/` |
 
    {style="table-layout:auto"}
 
@@ -90,7 +91,7 @@ Informationen zum Verwalten vorhandener Standorte, einschließlich Anzeigen, Bea
 
    | Feld | Funktion |
    |---------|----------|
-   | [!UICONTROL **Behälter**] | Der Behälter in Ihrem Amazon S3-Konto, an den Adobe Analytics-Daten gesendet werden sollen. Stellen Sie sicher, dass die von Adobe bereitgestellte Benutzer-ARN Zugriff auf das Hochladen von Dateien in diesen Bucket hat. |
+   | [!UICONTROL **Bucket**] | Der Behälter in Ihrem Amazon S3-Konto, an den Adobe Analytics-Daten gesendet werden sollen. Stellen Sie sicher, dass die von Adobe bereitgestellte Benutzer-ARN Zugriff auf das Hochladen von Dateien in diesen Bucket hat. |
    | [!UICONTROL **Präfix**] | Der Ordner im Behälter, in den Sie die Daten ablegen möchten. Geben Sie einen Ordnernamen an und fügen Sie nach dem Namen einen Schrägstrich hinzu, um den Ordner zu erstellen. Beispiel: folder_name/ |
 
    {style="table-layout:auto"}
@@ -109,7 +110,7 @@ Informationen zum Verwalten vorhandener Standorte, einschließlich Anzeigen, Bea
 
    | Feld | Funktion |
    |---------|----------|
-   | [!UICONTROL **Behälter**] | Der Bucket in Ihrem GCP-Konto, an den Customer Journey Analytics-Daten gesendet werden sollen. Stellen Sie sicher, dass Sie dem von Adobe bereitgestellten Prinzipal die Berechtigung zum Hochladen von Dateien in diesen Bucket erteilt haben. (Der Prinzipal wird bereitgestellt, wenn [Konfigurieren des Google Cloud Platform-Kontos](/help/components/exports/cloud-export-accounts.md). Informationen zum Gewähren von Berechtigungen finden Sie unter [Einen Prinzipal zu einer Richtlinie auf Behälterebene hinzufügen](https://cloud.google.com/storage/docs/access-control/using-iam-permissions#bucket-add) in der Dokumentation zu Google Cloud. |
+   | [!UICONTROL **Bucket**] | Der Bucket in Ihrem GCP-Konto, an den Customer Journey Analytics-Daten gesendet werden sollen. Stellen Sie sicher, dass Sie dem von Adobe bereitgestellten Prinzipal die Berechtigung zum Hochladen von Dateien in diesen Bucket erteilt haben. (Der Prinzipal wird bereitgestellt, wenn [Konfigurieren des Google Cloud Platform-Kontos](/help/components/exports/cloud-export-accounts.md). Informationen zum Gewähren von Berechtigungen finden Sie unter [Einen Prinzipal zu einer Richtlinie auf Behälterebene hinzufügen](https://cloud.google.com/storage/docs/access-control/using-iam-permissions#bucket-add) in der Dokumentation zu Google Cloud. |
    | [!UICONTROL **Präfix**] | Der Ordner im Behälter, in den Sie die Daten ablegen möchten. Geben Sie einen Ordnernamen an und fügen Sie nach dem Namen einen Schrägstrich hinzu, um den Ordner zu erstellen. Beispiel: folder_name/ |
 
    {style="table-layout:auto"}
@@ -126,8 +127,8 @@ Informationen zum Verwalten vorhandener Standorte, einschließlich Anzeigen, Bea
 
    | Feld | Funktion |
    |---------|----------|
-   | [!UICONTROL **Container-Name**] | Der Container innerhalb des von Ihnen angegebenen Kontos, an den Customer Journey Analytics-Daten gesendet werden sollen. |
-   | [!UICONTROL **Präfix**] | Der Ordner im Container, in den Sie die Daten ablegen möchten. Geben Sie einen Ordnernamen an und fügen Sie nach dem Namen einen Schrägstrich hinzu, um den Ordner zu erstellen. Zum Beispiel, `folder_name/` |
+   | [!UICONTROL **Container name**] | Der Container innerhalb des von Ihnen angegebenen Kontos, an den Customer Journey Analytics-Daten gesendet werden sollen. |
+   | [!UICONTROL **Präfix**] | Der Ordner im Container, in den Sie die Daten ablegen möchten. Geben Sie einen Ordnernamen an und fügen Sie nach dem Namen einen Schrägstrich hinzu, um den Ordner zu erstellen. Beispiel: `folder_name/` |
 
    {style="table-layout:auto"}
 
@@ -144,7 +145,7 @@ Informationen zum Verwalten vorhandener Standorte, einschließlich Anzeigen, Bea
    | Feld | Funktion |
    |---------|----------|
    | [!UICONTROL **Container**] | Der Container innerhalb des von Ihnen angegebenen Kontos, an den Adobe Analytics-Daten gesendet werden sollen. Stellen Sie sicher, dass Sie Berechtigungen zum Hochladen von Dateien in die Azure-Anwendung erteilen, die Sie zuvor erstellt haben. |
-   | [!UICONTROL **Präfix**] | Der Ordner im Container, in den Sie die Daten ablegen möchten. Geben Sie einen Ordnernamen an und fügen Sie nach dem Namen einen Schrägstrich hinzu, um den Ordner zu erstellen. Zum Beispiel, `folder_name/` |
+   | [!UICONTROL **Präfix**] | Der Ordner im Container, in den Sie die Daten ablegen möchten. Geben Sie einen Ordnernamen an und fügen Sie nach dem Namen einen Schrägstrich hinzu, um den Ordner zu erstellen. Beispiel: `folder_name/` |
    | [!UICONTROL **Konto**] | Das Azure-Speicherkonto. |
 
    {style="table-layout:auto"}
@@ -163,8 +164,8 @@ Informationen zum Verwalten vorhandener Standorte, einschließlich Anzeigen, Bea
    |---------|----------|
    | [!UICONTROL **DB**] | Die angegebene Datenbank sollte eine bestehende Datenbank sein. Die von Ihnen erstellte Rolle muss über Berechtigungen für den Zugriff auf diese Datenbank verfügen.<p>Dies ist die Datenbank, die mit dem Staging-Namen verknüpft ist.</p><p>Sie können diese Rollenberechtigungen der Datenbank unter Snowflake mit dem folgenden Befehl gewähren: `GRANT USAGE ON DATABASE <your_database> TO ROLE <your_role>;`</p> <p>Weitere Informationen finden Sie unter [Seite &quot;Datenbank&quot;, &quot;Schema&quot;und &quot;Befehle freigeben&quot;in der Snowflake-Dokumentation](https://docs.snowflake.com/en/sql-reference/commands-database).</p> |
    | [!UICONTROL **Schema**] | Das angegebene Schema sollte ein vorhandenes Schema sein. Die von Ihnen erstellte Rolle muss über Berechtigungen für den Zugriff auf dieses Schema verfügen.<p>Dies ist das Schema, das mit dem Staging-Namen verknüpft ist.<p>Mit dem folgenden Befehl können Sie dem Schema in Snowflake die Rolle zuweisen, die Sie für das Schema erstellt haben: `GRANT USAGE ON SCHEMA <your_database>.<your_schema> TO ROLE <your_role>;`</p><p>Weitere Informationen finden Sie unter [Seite &quot;Datenbank&quot;, &quot;Schema&quot;und &quot;Befehle freigeben&quot;in der Snowflake-Dokumentation](https://docs.snowflake.com/en/sql-reference/commands-database).</p> |
-   | [!UICONTROL **Schrittname**] | Der Name der internen Phase, in der Datendateien im Snowflake gespeichert werden.<p>Stellen Sie sicher, dass die Rolle, die Sie im Konto angegeben haben, Lese- und Schreibzugriff auf diesen Staging-Namen hat. (Da Sie Lese- und Schreibzugriff gewähren, empfehlen wir die Verwendung einer Bühne, die nur von Adobe verwendet wird.)<p>Mit dem folgenden Befehl können Sie Lese- und Schreibzugriff auf den Staging-Namen im Snowflake gewähren: `GRANT READ, WRITE ON STAGE <your_database>.<your_schema>.<your_stage_name> TO ROLE <your_role>;`</p> <p>Informationen zum Gewähren von Berechtigungen für eine Rolle finden Sie unter [Gewähren von Berechtigungen in der Snowflake-Dokumentation](https://docs.snowflake.com/en/sql-reference/sql/grant-privilege). <p>Weitere Informationen zum Namen der Bühne finden Sie unter [Auswählen einer internen Phase für lokale Dateien in der Snowflake-Dokumentation](https://docs.snowflake.com/en/user-guide/data-load-local-file-system-create-stage).</p> |
-   | [!UICONTROL **Schrittpfad**] | Der Pfad zum Speicherort, an dem Datendateien unter Snowflake gespeichert werden. <p>Weitere Informationen finden Sie unter [Auswählen einer internen Phase für lokale Dateien in der Snowflake-Dokumentation](https://docs.snowflake.com/en/user-guide/data-load-local-file-system-create-stage).</p> |
+   | [!UICONTROL **Staging-Name**] | Der Name der internen Phase, in der Datendateien im Snowflake gespeichert werden.<p>Stellen Sie sicher, dass die Rolle, die Sie im Konto angegeben haben, Lese- und Schreibzugriff auf diesen Staging-Namen hat. (Da Sie Lese- und Schreibzugriff gewähren, empfehlen wir die Verwendung einer Bühne, die nur von Adobe verwendet wird.)<p>Mit dem folgenden Befehl können Sie Lese- und Schreibzugriff auf den Staging-Namen im Snowflake gewähren: `GRANT READ, WRITE ON STAGE <your_database>.<your_schema>.<your_stage_name> TO ROLE <your_role>;`</p> <p>Informationen zum Gewähren von Berechtigungen für eine Rolle finden Sie unter [Gewähren von Berechtigungen in der Snowflake-Dokumentation](https://docs.snowflake.com/en/sql-reference/sql/grant-privilege). <p>Weitere Informationen zum Namen der Bühne finden Sie unter [Auswählen einer internen Phase für lokale Dateien in der Snowflake-Dokumentation](https://docs.snowflake.com/en/user-guide/data-load-local-file-system-create-stage).</p> |
+   | [!UICONTROL **Staging-Pfad**] | Der Pfad zum Speicherort, an dem Datendateien unter Snowflake gespeichert werden. <p>Weitere Informationen finden Sie unter [Auswählen einer internen Phase für lokale Dateien in der Snowflake-Dokumentation](https://docs.snowflake.com/en/user-guide/data-load-local-file-system-create-stage).</p> |
 
    {style="table-layout:auto"}
 

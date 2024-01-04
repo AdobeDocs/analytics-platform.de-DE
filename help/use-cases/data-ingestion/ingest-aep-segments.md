@@ -4,23 +4,24 @@ description: Erläutert, wie Adobe Experience Platform-Zielgruppen für weitere 
 solution: Customer Journey Analytics
 feature: Use Cases
 exl-id: cb5a4f98-9869-4410-8df2-b2f2c1ee8c57
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+role: Admin
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '996'
-ht-degree: 52%
+source-wordcount: '968'
+ht-degree: 50%
 
 ---
 
 # Adobe Experience Platform-Zielgruppen in Adobe Customer Journey Analytics erfassen
 
-In diesem Anwendungsbeispiel wird eine vorläufige, manuelle Methode zur Einbindung von Adobe Experience Platform (Adobe Experience Platform)-Zielgruppen in den Customer Journey Analytics untersucht. Diese Zielgruppen wurden möglicherweise im Adobe Experience Platform Segment Builder, in Adobe Audience Manager oder anderen Tools erstellt und sind im Echtzeit-Kundenprofil (RTCP) gespeichert. Die Zielgruppen bestehen aus einer Reihe von Profil-IDs und den entsprechenden Attributen/Ereignissen/etc. und wir möchten sie zur Analyse in den Arbeitsbereich für Customer Journey Analytics bringen.
+In diesem Anwendungsbeispiel wird eine vorläufige, manuelle Methode zur Einbindung von Adobe Experience Platform (Adobe Experience Platform)-Zielgruppen in Customer Journey Analytics untersucht. Diese Zielgruppen wurden möglicherweise im Adobe Experience Platform Segment Builder, in Adobe Audience Manager oder anderen Tools erstellt und sind im Echtzeit-Kundenprofil (RTCP) gespeichert. Die Zielgruppen bestehen aus einer Reihe von Profil-IDs und den entsprechenden Attributen/Ereignissen/etc. und wir möchten sie zur Analyse in Customer Journey Analytics Workspace einbringen.
 
-## Voraussetzungen 
+## Voraussetzungen
 
 * Zugriff auf Adobe Experience Platform (Adobe Experience Platform), insbesondere Echtzeit-Kundenprofil.
 * Zugriff zum Erstellen/Verwalten von Adobe Experience Platform-Schemata und -Datensätzen.
 * Zugriff auf Adobe Experience Platform Query Service (und die Möglichkeit, SQL zu schreiben) oder ein anderes Tool, um einige leichte Umwandlungen durchzuführen.
-* Zugriff auf Customer Journey Analytics. Sie müssen Produktadministrator eines Customer Journey Analytics sein, um Customer Journey Analytics-Verbindungen und Datenansichten erstellen/ändern zu können.
+* Zugriff auf Customer Journey Analytics. Sie müssen ein Customer Journey Analytics-Produktadministrator sein, um Customer Journey Analytics-Verbindungen und Datenansichten erstellen/ändern zu können.
 * Möglichkeit zur Verwendung der Adobe-APIs (Segmentierung, optional andere)
 
 ## Schritt 1: Wählen Sie Zielgruppen im Echtzeit-Kundenprofil aus {#audience}
@@ -71,11 +72,11 @@ Folgende Datenelemente müssen vorhanden sein:
 
 * Fügen Sie bei Bedarf weitere Zielgruppen-Metadaten hinzu.
 
-## Schritt 5: Fügen Sie diesen Profildatensatz zu einer bestehenden Verbindung in Customer Journey Analytics hinzu.
+## Schritt 5: Diesen Profildatensatz zu einer bestehenden Verbindung in Customer Journey Analytics hinzufügen
 
-Sie könnten [eine neue Verbindung erstellen](/help/connections/create-connection.md), aber die meisten Kunden möchten den Profildatensatz zu einer vorhandenen Verbindung hinzufügen. Die Zielgruppen-IDs ergänzen die vorhandenen Daten in Customer Journey Analytics.
+Sie könnten [eine neue Verbindung erstellen](/help/connections/create-connection.md), aber die meisten Kunden möchten den Profildatensatz zu einer vorhandenen Verbindung hinzufügen. Die Zielgruppen-IDs &quot;ergänzen&quot;die vorhandenen Daten im Customer Journey Analytics.
 
-## Schritt 6: Datenansicht vorhandener (oder neuer) Customer Journey Analytics ändern
+## Schritt 6: Ändern der Datenansicht einer vorhandenen (oder neuen) Customer Journey Analytics
 
 Fügen Sie `audienceMembershipId`, `audienceMembershipIdName` und `personID` zur Datenansicht hinzu.
 
@@ -85,8 +86,8 @@ Sie können jetzt Berichte zu `audienceMembershipId`, `audienceMembershipIdName`
 
 ## Weitere Hinweise
 
-* Sie sollten diesen Vorgang regelmäßig durchführen, damit die Zielgruppendaten in Customer Journey Analytics ständig aktualisiert werden.
-* Sie können mehrere Zielgruppen in eine Customer Journey Analytics-Verbindung importieren. Dies erhöht zwar die Komplexität des Prozesses, es ist jedoch möglich. Damit dies funktioniert, müssen Sie einige Änderungen am obigen Prozess vornehmen:
+* Sie sollten diesen Vorgang regelmäßig durchführen, damit die Zielgruppendaten im Customer Journey Analytics ständig aktualisiert werden.
+* Sie können mehrere Zielgruppen in einer Customer Journey Analytics-Verbindung importieren. Dies erhöht zwar die Komplexität des Prozesses, es ist jedoch möglich. Damit dies funktioniert, müssen Sie einige Änderungen am obigen Prozess vornehmen:
    1. Führen Sie diesen Prozess für jede gewünschte Zielgruppe in Ihrer Zielgruppensammlung innerhalb des Echtzeit-Kundenprofis aus.
    1. Customer Journey Analytics unterstützt Arrays/Objekt-Arrays in Profildatensätzen. Es wird empfohlen, für audienceMembershipId oder audienceMembershipIdName ein [Array von Objekten](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/complex-data/object-arrays.html?lang=de) zu verwenden.
    1. Erstellen Sie in Ihrer Datenansicht eine neue Dimension mithilfe der Teilzeichenfolgenumwandlung des `audienceMembershipId`-Felds, um die Zeichenfolge mit kommagetrennten Werten in ein Array zu konvertieren. HINWEIS: Derzeit besteht für das Array eine Beschränkung von 10 Werten.

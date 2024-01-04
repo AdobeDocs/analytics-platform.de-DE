@@ -4,7 +4,7 @@ description: Listet Inhaltsaktualisierungen für Dokumentation zu Customer Journ
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 9f48c2870cff0aac392de9b50c6acea9763553d7
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
 source-wordcount: '2756'
 ht-degree: 91%
@@ -198,7 +198,7 @@ Die folgenden Aktualisierungen wurden seit der ersten Erstellung der Customer Jo
 
 | Datum | Beschreibung der Aktualisierung |
 | --- | --- |
-| 13. November 2020 | Neue Themen zur [Cross-Channel-Analyse](/help/cca/overview.md), mit denen Sie die Personen-ID eines Datensatzes neu zuweisen und eine nahtlose Kombination mehrerer Datensätze ermöglichen. |
+| 13. November 2020 | Neue Themen zu [Kanalübergreifende Analyse](/help/stitching/overview.md), mit dem Sie die Personen-ID eines Datensatzes neu zuweisen und eine nahtlose Kombination mehrerer Datensätze ermöglichen können. |
 | 13. November 2020 | Ein neues Anwendungsbeispiel für das [Importieren von Callcenter- und Web-Daten](/help/use-cases/cross-channel/call-center.md) wurde hinzugefügt. |
 | 10. November 2020 | Ein Abschnitt über die Auswirkungen des Löschens von Datenkomponenten wurde den [FAQ](/help/getting-started/cja-faq.md) hinzugefügt. |
 | 2. November 2020 | Aktualisierung der Seite [Funktions-Unterstützung für Customer Journey Analytics](/help/getting-started/aa-vs-cja/cja-aa.md). |

@@ -4,16 +4,17 @@ title: Übersicht über Kalender und Datumsbereiche
 feature: Calendar
 solution: Customer Journey Analytics
 exl-id: 4afdc68b-97f8-4d8a-9d13-e2f3986873f1
-source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+role: User
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '892'
-ht-degree: 76%
+source-wordcount: '895'
+ht-degree: 73%
 
 ---
 
 # Übersicht über Kalender und Datumsbereiche
 
-Mithilfe des Kalenders können Sie Daten und Datumsbereiche angeben oder eine Voreinstellung auswählen. Datumsbereiche sind eine Art von Komponenten, die Sie in Workspace-Projekten verwenden können. Damit können Sie Datentrends im Zeitverlauf anzeigen oder sehen, wann Ereignisse am häufigsten auftreten. Datumsbereiche sind violett farbcodiert. Benutzerdefinierte Datumsbereiche ermöglichen es Ihnen, die in Workspace-Projekten angezeigten Daten anzupassen.
+Mithilfe des Kalenders können Sie Daten und Datumsbereiche angeben oder eine Voreinstellung auswählen. Datumsbereiche sind eine Art von Komponenten, die Sie in Workspace-Projekten verwenden können. Damit können Sie Datentrends im Zeitverlauf anzeigen oder sehen, wann Ereignisse am häufigsten auftreten. Datumsbereiche sind violett farbkodiert. Benutzerdefinierte Datumsbereiche ermöglichen es Ihnen, die in Workspace-Projekten angezeigten Daten anzupassen.
 
 Wenn Sie im Kalender etwas auswählen, bezieht sich diese Auswahl auf das jeweilige Panel. Sie haben jedoch die Möglichkeit, die Auswahl auf sämtliche Panels anzuwenden. Wenn Sie in Workspace auf einen Datumsbereich klicken, zeigt die Benutzeroberfläche den aktuellen Kalendermonat und den vorherigen Kalendermonat an. Sie können diese beiden Kalender anpassen, indem Sie auf die Rechts- und Linkspfeile in den jeweiligen oberen Ecken klicken.
 

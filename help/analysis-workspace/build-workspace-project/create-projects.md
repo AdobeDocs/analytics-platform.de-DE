@@ -2,12 +2,12 @@
 description: Erfahren Sie, wie Sie ein Projekt in Analysis Workspace erstellen
 title: Projekte erstellen
 feature: Workspace Basics
-role: User, Admin
+role: User
 exl-id: cc3d3ac9-c31f-4a8d-999c-78590512b57c
-source-git-commit: 16f1a732260ace8393d7303134fc351740fd1661
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
 source-wordcount: '602'
-ht-degree: 14%
+ht-degree: 11%
 
 ---
 
@@ -30,7 +30,7 @@ In den folgenden Abschnitten wird beschrieben, wie Sie ein Projekt erstellen und
    * **Leeres Projekt** , wenn Sie Ihre Analyse über den Browser freigeben möchten
    * [**Leere mobile Scorecard**](/help/mobile-app/curator.md) , wenn Sie Ihre Analyse über die mobile Adobe Analytics-Dashboards-App freigeben möchten.
 
-1. Wählen Sie [!UICONTROL **Erstellen**].
+1. Wählen Sie [!UICONTROL **Erstellen**] aus.
 
 1. Als Nächstes müssen Sie Ihrem Projekt Bedienfelder, Visualisierungen und Komponenten hinzufügen. Fügen Sie zunächst Bedienfelder zu Ihrem Projekt in Analysis Workspace hinzu, wie unter [Hinzufügen von Bedienfeldern zum Projekt](#add-panels-to-the-project). Sie können dann allen Bedienfeldern Visualisierungen hinzufügen. Schließlich können Sie allen Bedienfeldern oder Visualisierungen Komponenten hinzufügen.
 
@@ -38,7 +38,7 @@ In den folgenden Abschnitten wird beschrieben, wie Sie ein Projekt erstellen und
 
 [Bedienfelder](/help/analysis-workspace/c-panels/panels.md) sind die Grundlage für jedes Projekt in Analysis Workspace. Bedienfelder dienen zum Organisieren der Inhalte (Visualisierungen und Komponenten) eines Projekts.
 
-Viele der in Analysis Workspace bereitgestellten Bedienfelder generieren einen vollständigen Satz von Analysen auf der Grundlage einiger Benutzereingaben.
+Viele der in Analysis Workspace bereitgestellten Bedienfelder generieren einen vollständigen Satz von Analysen basierend auf einigen Benutzereingaben.
 
 So fügen Sie einen Bereich hinzu:
 

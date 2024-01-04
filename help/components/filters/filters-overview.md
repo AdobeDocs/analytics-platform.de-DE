@@ -3,10 +3,11 @@ title: Filterübersicht
 description: Erfahren Sie, wofür Filter verwendet werden und wie Sie einen einfachen Filter erstellen.
 exl-id: 21183e98-6593-4b22-99c7-4a03231acfe9
 feature: Filters
-source-git-commit: 6b79243a2f12936208f6f04c249a81315ba8901b
+role: User
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '1171'
-ht-degree: 24%
+source-wordcount: '1172'
+ht-degree: 23%
 
 ---
 
@@ -83,7 +84,7 @@ Der Personen-Container enthält alle Besuche und Seitenansichten, mobile App-Bil
 Personen-Container können Werte enthalten, die auf dem Gesamtverlauf einer Person basieren:
 
 - Tage bis Erstkauf
-- Ursprüngliche Einstiegsseite oder Startseite der mobilen App
+- Ursprüngliche Entrypage oder Startbildschirm der mobilen App
 - Ursprünglich Referrerdomänen 
 
 ### Sitzungs-Container {#session}
@@ -101,7 +102,7 @@ Sitzungs-Container enthalten Werte, die auf dem Auftreten pro Sitzung basieren:
 - Beitragsmetriken
 - Linear zugeordnete Metriken
 
-Mithilfe von Datenansichten in Customer Journey Analytics können Sie festlegen, wie lange eine Sitzung dauert, aber auch, wann eine neue Sitzung erstellt werden soll. Sie können beispielsweise eine neue App-Sitzung definieren, die auf jedem Start der App durch einen Benutzer basiert. Siehe [Komponenteneinstellungen](/help/data-views/session-settings.md) für weitere Informationen.
+Mithilfe von Datenansichten in Customer Journey Analytics können Sie festlegen, wie lange eine Sitzung dauert, aber auch, wann eine neue Sitzung erstellt werden soll. Sie können beispielsweise eine neue App-Sitzung definieren, die auf jedem Start der App durch einen Benutzer basiert. Siehe [Sitzungseinstellungen](/help/data-views/session-settings.md) für weitere Informationen.
 
 ### Ereignis-Container {#event}
 

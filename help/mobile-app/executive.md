@@ -2,13 +2,13 @@
 description: Anleitung zur Verwendung der Dashboard-Scorecards.
 title: Handbuch zu Analytics-Dashboards
 feature: Analytics Dashboards
-role: User, Admin
+role: User
 exl-id: 12901a76-cb88-45a5-81e9-59fb310328be
 solution: Customer Journey Analytics
-source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '1307'
-ht-degree: 76%
+source-wordcount: '1294'
+ht-degree: 75%
 
 ---
 
@@ -115,7 +115,7 @@ So verwenden Sie Dashboards:
 
    * Je nachdem, auf welches Intervall Sie tippen (**Tag**, **Woche**, **Monat** oder **Jahr**), sehen Sie zwei Optionen für Datumsbereiche – entweder den aktuellen oder den unmittelbar vorhergehenden Zeitraum. Tippen Sie auf eine dieser beiden Optionen, um den ersten Bereich auszuwählen. Tippen Sie in der Liste unter **[!UICONTROL VERGLEICHEN MIT]** auf eine der angezeigten Optionen, um die Daten in diesem Zeitraum mit dem ersten von Ihnen ausgewählten Datumsbereich zu vergleichen. Tippen Sie oben rechts im Bildschirm auf **[!UICONTROL Fertig]**. Das Feld **[!UICONTROL Datumsbereiche]** und die Scorecard-Kacheln werden mit den neuen Vergleichsdaten aus den von Ihnen ausgewählten neuen Bereichen aktualisiert.
 
-1. Um einen Segmentfilter auf Ihre Scorecard anzuwenden, tippen Sie auf die Dropdown-Liste Filter und wählen Sie ein Segment aus, das von Ihrem Kurator konfiguriert wurde. [Filter](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html?lang=de) in der App funktionieren auf dieselbe Weise wie in Workspace.
+1. Um einen Segmentfilter auf Ihre Scorecard anzuwenden, tippen Sie auf die Dropdown-Liste Filter und wählen Sie ein Segment aus, das von Ihrem Kurator konfiguriert wurde. [Filter](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html?lang=de) in der App funktioniert genauso wie in Workspace.
 
    ![Segmentfilter](assets/segment_filter.png)
 

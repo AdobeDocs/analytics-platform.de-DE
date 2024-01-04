@@ -5,10 +5,10 @@ exl-id: 2ad78c19-4b13-495b-a0aa-44e0a3c95b5e
 solution: Customer Journey Analytics
 hide: true
 hidefromtoc: true
-source-git-commit: 4c6e968272b554188243b772bd159fe8174b3c3b
-workflow-type: ht
-source-wordcount: '1101'
-ht-degree: 100%
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+workflow-type: tm+mt
+source-wordcount: '1057'
+ht-degree: 97%
 
 ---
 
@@ -49,7 +49,7 @@ Die Echtzeit-Zuordnung ist etwa eine Woche nach der Aktivierung von Cross-Channe
 
 [Cross-Device Analytics](https://experienceleague.adobe.com/docs/analytics/components/cda/overview.html?lang=de) ist eine Funktion, die speziell für das herkömmliche Adobe Analytics entwickelt wurde und Ihnen hilft, zu verstehen, wie Benutzende geräteübergreifend arbeiten. Sie bietet zwei Workflows zum Verknüpfen von Gerätedaten: die feldbasierte Zuordnung und das Gerätediagramm.
 
-[Cross-Channel-Analyse](/help/cca/overview.md) ist eine Customer Journey Analytics-spezifische Funktion, mit der Sie verstehen können, wie Personen über Geräte und Kanäle hinweg agieren. Dabei wird die Personen-ID eines Datensatzes neu definiert, sodass dieser Datensatz nahtlos mit anderen Datensätzen kombiniert werden kann. Diese Funktion wirkt in Bezug auf das Design ähnlich wie die feldbasierte Zuordnung von CDA, aber die Implementierung ist aufgrund der unterschiedlichen Datenarchitektur von Adobe Analytics und Customer Journey Analytics anders.
+[Kanalübergreifende Analyse](/help/stitching/overview.md) ist eine Customer Journey Analytics-spezifische Funktion, mit der Sie verstehen können, wie Benutzer auf beiden Geräten und Kanälen arbeiten. Dabei wird die Personen-ID eines Datensatzes neu definiert, sodass dieser Datensatz nahtlos mit anderen Datensätzen kombiniert werden kann. Diese Funktion wirkt in Bezug auf das Design ähnlich wie die feldbasierte Zuordnung von CDA, aber die Implementierung ist aufgrund der unterschiedlichen Datenarchitektur von Adobe Analytics und Customer Journey Analytics anders.
 
 ## Wie handhabt Cross-Channel Analytics DSGVO- und CCPA-Anforderungen?
 

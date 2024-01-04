@@ -2,11 +2,11 @@
 description: Ermöglicht die einfache Visualisierung von Vergleichsdaten in Analysis Workspace, z. B. das Erstellen von Vergleichen mit dem letzten Monat, dem letzten Jahr usw.
 title: Visualisierung von Kombinationsdiagrammen
 feature: Visualizations
-role: User, Admin
 exl-id: 06faa997-3a4e-4c41-b64e-64a15ada6552
-source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+role: User
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '843'
+source-wordcount: '847'
 ht-degree: 85%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 85%
 
 Mit der Visualisierung [!UICONTROL Kombinationsdiagramm] können Sie schnell und einfach einen Vergleich darstellen, ohne zuerst eine Tabelle erstellen zu müssen. Die Entwicklung Ihrer Daten wird dabei durch eine Kombination aus Linien und Balken dargestellt.
 
-Sie können ein [!UICONTROL Kombinationsdiagramm] für Folgendes verwenden::
+Verwenden Sie eine [!UICONTROL Combo-Diagramm] an:
 
 * Vergleichen der Bestellungen dieser Woche mit denen im letzten Monat (und im letzten Jahr) – alles mit nur wenigen Klicks.
 * Schnelles Analysieren und Vergleichen mehrerer Metriken (z. B. [!UICONTROL Unique Visitors] und [!UICONTROL Umsatz]) im selben Diagramm.

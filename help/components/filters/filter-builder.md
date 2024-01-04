@@ -1,12 +1,13 @@
 ---
 description: Der Filter-Builder bietet eine Arbeitsfläche zum Ziehen und Ablegen von metrischen Dimensionen, Filtern und Ereignissen, um Personen basierend auf der Behälterhierarchielogik, den Regeln und Operatoren zu filtern. Mit diesem integrierten Entwicklungstool können Sie einfache oder komplexe Filter erstellen und speichern, mit denen Personenattribute und Aktionen bei Besuchen und Ereignissen identifiziert werden.
-title: Erstellen von Filtern
+title: Filter erstellen
 feature: Filters
 exl-id: 2107f301-4137-4e97-9aa7-07824b842e16
-source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+role: User
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '1261'
-ht-degree: 23%
+source-wordcount: '1255'
+ht-degree: 20%
 
 ---
 
@@ -36,16 +37,16 @@ Sie können Regeldefinitionen und Container hinzufügen, um Ihre Filter zu defin
 | **[!UICONTROL Beschreibung]** | Geben Sie eine detaillierte Beschreibung für den Filter ein. |
 | **[!UICONTROL Tags]** | [Filter taggen](/help/components/filters/manage-filters.md) Sie erstellen, indem Sie aus einer Liste vorhandener Tags wählen oder ein neues Tag erstellen. |
 | **[!UICONTROL Definitionen]** | Hier sind Sie [Filter erstellen und konfigurieren](/help/components/filters/filters-overview.md), fügen Sie Regeln hinzu und verschachteln und sequenzieren Sie Container. |
-| **[!UICONTROL Einschließlich]** | (Auswahl Oberster Behälter.) Ermöglicht die Auswahl der obersten Ebene [container](/help/components/filters/filters-overview.md) ( [!UICONTROL Person], [!UICONTROL Sitzung], [!UICONTROL Ereignis]). Der standardmäßige Container der obersten Ebene ist der Ereignis-Container. |
+| **[!UICONTROL Einschließlich]** | (Auswahl des obersten Containers.) Ermöglicht die Auswahl der obersten Ebene [container](/help/components/filters/filters-overview.md) ( [!UICONTROL Person], [!UICONTROL Sitzung], [!UICONTROL Ereignis]). Der standardmäßige Container der obersten Ebene ist der Ereignis-Container. |
 | **[!UICONTROL Optionen]** | Symbol (Zahnrad) | <ul><li>**[!UICONTROL Behälter hinzufügen]**: Hiermit können Sie der Filterdefinition einen neuen Behälter (unter dem obersten Behälter) hinzufügen.</li><li>**[!UICONTROL Ausschließen]**: Hiermit können Sie den Filter definieren, indem Sie eine oder mehrere Dimensionen, Filter oder Metriken ausschließen.</li></ul> |
 | **[!UICONTROL Dimensionen]** | Komponenten werden aus der Liste der Dimensionen (orangefarbene Seitenleiste) gezogen und abgelegt. |
 | **[!UICONTROL Operator]** | Sie können Werte mithilfe ausgewählter Operatoren vergleichen und beschränken. (gleich, ist nicht gleich, enthält, enthält alle usw.) |
 | **[!UICONTROL Wert]** | Der Wert, den Sie für die Dimension, den Filter oder die Metrik eingegeben oder ausgewählt haben. |
 | **[!UICONTROL Attributionsmodelle]** | Diese Modelle sind nur für Dimensionen verfügbar und bestimmen, nach welchen Werten in einer Dimension gefiltert werden soll. In sequenziellen Filtern sind Dimension-Modelle besonders nützlich.<ul><li>**[!UICONTROL Wiederholend]** (Standard): Umfasst Instanzen und beibehaltene Werte für die Dimension.</li><li>**[!UICONTROL Instanz]**: Umfasst Instanzen für die Dimension.</li><li>**[!UICONTROL Nicht wiederholende Instanz]**: Umfasst eindeutige Instanzen (nicht wiederholend) für die Dimension. Dies ist das im Fluss angewendete Modell, wenn Wiederholungsinstanzen ausgeschlossen werden.</li></ul>Ein Beispiel finden Sie unten im Abschnitt &quot;Attributionsmodelle&quot;. |
-| **[!UICONTROL Und/Oder/Dann]** | Weist die Operatoren [!UICONTROL UND/ODER/DANN] zwischen Behältern oder Regeln zu. Mit dem Operator DANN können Sie [sequenzielle Filter definieren](/help/components/filters/filters-overview.md). |
+| **[!UICONTROL Und/Oder/Dann]** | Weist die Operatoren [!UICONTROL UND/ODER/DANN] zwischen Behältern oder Regeln zu. Mit dem THEN -Operator können Sie [sequenzielle Filter definieren](/help/components/filters/filters-overview.md). |
 | **[!UICONTROL Metrik]** | (Grüne Seitenleiste) Metrik, die aus der Metrikliste gezogen und abgelegt wurde. |
 | **[!UICONTROL X]** | (Löschen) Hiermit können Sie diesen Teil der Filterdefinition löschen. |
-| **[!UICONTROL Zielgruppe aus Filter erstellen]** | Wenn Sie eine Audience aus einem Filter erstellen, können Sie den Filter zur Aktivierung für Adobe Experience Platform freigeben. [Weitere Informationen...](/help/components/audiences/audiences-overview.md) |
+| **[!UICONTROL Erstellen einer Zielgruppe aus Filter]** | Wenn Sie eine Audience aus einem Filter erstellen, können Sie den Filter zur Aktivierung für Adobe Experience Platform freigeben. [Weitere Informationen...](/help/components/audiences/audiences-overview.md) |
 | **[!UICONTROL Suchkomponente]** | Durchsucht die Liste der Dimensionen, Filter oder Metriken. |
 | **[!UICONTROL Dimensionen]** | (Liste) Die Liste der Dimensionen, die Sie in den Filter aufnehmen können. Klicken Sie auf die Kopfzeile zum Erweitern. |
 | **[!UICONTROL Metriken]** | Die Liste der Metriken, die Sie in den Filter aufnehmen können. Klicken Sie auf die Kopfzeile zum Erweitern. |
@@ -54,7 +55,7 @@ Sie können Regeldefinitionen und Container hinzufügen, um Ihre Filter zu defin
 | **[!UICONTROL Filtervorschau]** | Ermöglicht die Vorschau der Schlüsselmetriken, um festzustellen, ob ein gültiger Filter vorhanden ist und wie breit der Filter ist. Stellt die Aufschlüsselung des Datensatzes dar, den Sie erwarten können, wenn Sie diesen Filter anwenden. Zeigt 3 konzentrische Kreise und eine Liste mit der Anzahl und dem Prozentsatz der Übereinstimmungen für [!UICONTROL Personen], [!UICONTROL Sitzungen], und [!UICONTROL Berichtsausführung] für einen Filter, der mit einem Datensatz ausgeführt wird.<p>Dieses Diagramm wird sofort aktualisiert, nachdem Sie Ihre Filterdefinition erstellt oder geändert haben. |
 | **[!UICONTROL Speichern]** oder **[!UICONTROL Abbrechen]** | Speichert oder bricht den Filter ab. Nach dem Klicken **[!UICONTROL Speichern]**, gelangen Sie zum Filter-Manager, in dem Sie den Filter verwalten können. |
 
-## Erstellen eines Filters {#build-filters}
+## Filter erstellen {#build-filters}
 
 1. Ziehen Sie einfach eine Dimension, ein Filter- oder Metrikereignis aus dem linken Bereich in den [!UICONTROL Definitionen] -Feld.
 

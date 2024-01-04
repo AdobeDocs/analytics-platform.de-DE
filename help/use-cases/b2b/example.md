@@ -5,9 +5,11 @@ solution: Customer Journey Analytics
 feature: Use Cases
 hide: true
 hidefromtoc: true
-source-git-commit: ec2778396f5090fb2ce71a991aa7a7bcaa913762
+exl-id: e8ebf5e7-0b80-4d46-8a5f-b7ae832eda4f
+role: User
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '1822'
+source-wordcount: '1755'
 ht-degree: 17%
 
 ---
@@ -33,7 +35,7 @@ Datensätze, die Sie Ihrer Verbindung hinzufügen können:
 | Datensatz zu B2B-Chancen-Personenbeziehungen | B2B Opportunity Person Relationschema | Nachschlagen | XDM Business Opportunity Person Relation | XDM Business Opportunity Person Relation ist eine standardmäßige Experience-Datenmodell (XDM)-Klasse, die die erforderlichen Mindesteigenschaften einer Person erfasst, die mit einer Geschäftschance verknüpft ist. |
 | B2B-Kampagnensatz | B2B-Kampagnenschema | Nachschlagen | XDM Business Campaign | XDM Business Campaign ist eine standardmäßige Experience-Datenmodell (XDM)-Klasse, die die erforderlichen Mindesteigenschaften einer Geschäftskampagne erfasst. |
 | Datensatz der B2B-Marketingliste | B2B-Marketinglisten-Schema | Nachschlagen | XDM-Marketingliste | XDM Business Marketing List ist eine standardmäßige Experience-Datenmodell (XDM)-Klasse, die die erforderlichen Mindesteigenschaften einer Marketing-Liste erfasst. Marketinglisten ermöglichen es Ihnen, potenzielle Kunden zu priorisieren, die Ihr Produkt am ehesten kaufen. |
-| B2B Marketing List Members Datensatz | Schema der B2B-Marketinglisten-Mitglieder | Nachschlagen | XDM Marketing List Members | XDM Business Marketing List Members ist eine standardmäßige Experience-Datenmodell (XDM)-Klasse, die Mitglieder, Personen oder Kontakte beschreibt, die mit einer Marketingliste verknüpft sind. |
+| B2B Marketing List Members Datensatz | Schema der B2B-Marketinglisten-Mitglieder | Nachschlagen | XDM-Marketing-Listenmitglieder | XDM Business Marketing List Members ist eine standardmäßige Experience-Datenmodell (XDM)-Klasse, die Mitglieder, Personen oder Kontakte beschreibt, die mit einer Marketingliste verknüpft sind. |
 
 Die Beziehung zwischen den Lookup-Schemas, dem Profilschema und dem Ereignisschema wird in der B2B-Einrichtung innerhalb von Experience Platform definiert. Siehe Schemas in [Real-time Customer Data Platform B2B Edition](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/schemas/b2b.html?lang=en) und [Definieren einer 1:1-Beziehung zwischen zwei Schemas in Real-time Customer Data Platform B2B Edition](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/relationship-b2b.html?lang=en) für weitere Details.
 
@@ -175,7 +177,7 @@ Als Teil dieses Datensatzes werden keine Metrikkomponenten definiert.
 | Name der Komponente | Datentyp des Schemas | Pfad des Schemas | Konfiguration |
 |---|---|---|---|
 | Geschlossenes Flag | Boolesch | `isClosed` | |
-| Unternehmens-ID | Zeichenfolge | `opportunityID` | |
+| Firmen-ID | Zeichenfolge | `opportunityID` | |
 | Prognosekategorie | Zeichenfolge | `forecastCategoryName` | |
 | Letztes Aktivitätsdatum | Datum-Uhrzeit | `lastActivityDate` | Datum-Uhrzeit-Format: **[!UICONTROL Tag]** |
 | Lead-Quelle | Zeichenfolge | `leadSource` | |
@@ -307,4 +309,3 @@ Nachfolgend finden Sie ein Beispielprojekt, das auf der oben beschriebenen Verbi
 ![Visualisierungen](assets/visualizations.png)
 
 +++
-

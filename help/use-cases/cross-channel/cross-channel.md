@@ -4,10 +4,11 @@ description: Analysieren und extrahieren Sie Einblicke aus Kundeninteraktionen �
 exl-id: 285532b1-eb37-4984-9559-054a18515ddf
 solution: Customer Journey Analytics
 feature: Use Cases, Cross-Channel Analysis
-source-git-commit: a49ef8b35b9d5464df2c5409339b33eacb90cd9c
+role: User
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '528'
-ht-degree: 62%
+source-wordcount: '482'
+ht-degree: 61%
 
 ---
 
@@ -21,7 +22,7 @@ Die kanalübergreifende Analyse ermöglicht eine zentrale, konsolidierte Ansicht
 
 1. [Erstellen Sie Schemata](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=de) für aufzunehmende Daten.
 1. [Erstellen Sie Datensätze](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/create-datasets-and-ingest-data.html?lang=de) für aufzunehmende Daten.
-1. [Erfassen von Daten in Experience Platform](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/understanding-data-ingestion.html?lang=de):
+1. [Daten in Experience Platform erfassen](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/understanding-data-ingestion.html?lang=de):
    1. Ereignisbasierte Daten ![event](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Events_18_N.svg) von der Website oder App über den Quell-Connector von Edge Network oder Analytics.
    2. Profildaten ![profile](https://spectrum.adobe.com/static/icons/workflow_18/Smock_User_18_N.svg) (z. B. über ein CRM-System, Callcenter-Anwendung, Treueprogramm).
    3. Suchdaten ![Nachschlagen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) (z. B. Produktname, Kategorie aus einem Produktinformationssystem).
@@ -30,9 +31,9 @@ Die kanalübergreifende Analyse ermöglicht eine zentrale, konsolidierte Ansicht
 1. Führen Sie eine benutzerdefinierte Datenvorbereitung durch, um sicherzustellen, dass ein gemeinsamer Schlüssel aus Zeitreihendaten in Customer Journey Analytics aufgenommen werden kann.
 1. Weisen Sie Suchdaten eine primäre ID zu, die mit einem Feld in den Ereignisdaten verknüpft werden kann. Zählt bei der Lizenzierung als Zeilen.
 1. Legen Sie dieselbe primäre ID für Profildaten als primäre ID der Ereignisdaten fest.
-1. [Verbindung erstellen](../../connections/overview.md) , um die relevanten Datensätze von Experience Platform zu Customer Journey Analytics zu erfassen.
+1. [Verbindung erstellen](../../connections/overview.md) , um die relevanten Datensätze von Experience Platform auf Customer Journey Analytics zu erfassen.
 1. [Erstellen Sie eine Datenansicht](/help/data-views/create-dataview.md) für die Verbindung, um die spezifischen Dimensionen und Metriken auszuwählen, die in die Ansicht aufgenommen werden sollen. Die Einstellungen für Attribution und Zuordnung werden auch in der Datenansicht konfiguriert. Diese Einstellungen werden zur Berichtszeit berechnet.
-1. [Erstellen Sie ein Projekt, um Dashboards und Berichte in Analysis Workspace zu konfigurieren.](/help/analysis-workspace/home.md)
+1. [Projekt erstellen](/help/analysis-workspace/home.md) , um Dashboards und Berichte in Analysis Workspace zu konfigurieren.
 
 ## Zu beachten
 

@@ -3,18 +3,20 @@ title: Übersicht über die Berichterstellung in Activity Manager
 description: Erfahren Sie, wie Sie Kapazitätsprobleme bei Spitzen während der Berichterstellung mit Reporting Activity Manager diagnostizieren und beheben können.
 solution: Customer Journey Analytics
 feature: Basics
-source-git-commit: 252b9849b904754fcf5841df51d01510ba9df53f
+exl-id: c3964147-06f1-462a-aea1-e681c4ef15b1
+role: Admin
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
 source-wordcount: '276'
-ht-degree: 23%
+ht-degree: 15%
 
 ---
 
-# Reporting Activity Manager Übersicht
+# Übersicht über die Berichterstellung in Activity Manager
 
 Die [!UICONTROL Reporting Activity Manager] ist für Administratoren verfügbar.
 
-Wenn die Berichtsleistung Ihres Unternehmens während Spitzenzeiten bei der Berichterstellung beeinträchtigt wird, können Sie mit dem Reporting Activity Manager Kapazitätsprobleme selbstdiagnostizieren und beheben, ohne die Adobe-Kundenunterstützung zu kontaktieren. Sie können Berichtswarteschlangen einfach in einer einzigen Oberfläche verwalten und sofort handeln, um das Benutzererlebnis zu verbessern.
+Wenn die Berichtsleistung Ihres Unternehmens während Spitzenzeiten bei der Berichterstellung beeinträchtigt wird, können Sie mit dem Reporting Activity Manager Kapazitätsprobleme selbstdiagnostizieren und beheben, ohne die Adobe-Kundenunterstützung zu kontaktieren. Sie können einfach Berichtwarteschlangen in einer einzigen Oberfläche verwalten und sofort &#x200B; handeln, um das Benutzererlebnis zu verbessern.
 
 ## Vorteile
 

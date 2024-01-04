@@ -6,10 +6,11 @@ feature: Stitching, Cross-Channel Analysis
 hide: true
 hidefromtoc: true
 exl-id: 8820a093-e573-45f9-bcd2-0933e21c231b
-source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+role: Admin
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '717'
-ht-degree: 2%
+source-wordcount: '726'
+ht-degree: 0%
 
 ---
 
@@ -108,9 +109,9 @@ Sie können den Status des Stitching im [!UICONTROL Zugeordnete Datensätze] Lis
 
   | Wert | Erklärung |
   |-----|-----|
-  | **[!UICONTROL ** In die Warteschlange gestellt **]** | Die Anfrage wird empfangen und bald verarbeitet. |
-  | **[!UICONTROL ** Erstellung in Bearbeitung **]** | Ressourcen und neu zugeordnete Datensätze werden derzeit erstellt. |
-  | **[!UICONTROL ** Zusammenfügung in Bearbeitung **]** | Ressourcen und zugeordneter Datensatz sind vorhanden und die Zuordnung wird durchgeführt |
+  | **[!UICONTROL ** In Warteschlange **]** | Die Anfrage wird empfangen und bald verarbeitet. |
+  | **[!UICONTROL ** Erstellung **]** Gestartet | Ressourcen und neu zugeordnete Datensätze werden derzeit erstellt. |
+  | **[!UICONTROL ** Laufende Zuordnung **]** | Ressourcen und zugeordneter Datensatz sind vorhanden und die Zuordnung wird durchgeführt |
   | **[!UICONTROL ** Fehler **]** | Beim Stitching tritt ein Problem auf. Vielleicht hat sich ein Schema zwischen Quelldatensatz und zugeordnetem Datensatz geändert, das tägliche Volumen ist zu groß oder ... (_**Weitere Informationen finden Sie hier ...**_) |
 
   >[!INFO]

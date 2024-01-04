@@ -4,10 +4,11 @@ description: Erfahren Sie, welche Komponenten Customer Journey Analytics anbiete
 exl-id: f9b0b3c2-7c88-4bef-af33-0d309cafe799
 solution: Customer Journey Analytics
 feature: Components
-source-git-commit: dbc0210936e8205fbe97b3c88e6c37597e7e43e3
+role: User
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '1146'
-ht-degree: 78%
+source-wordcount: '1068'
+ht-degree: 75%
 
 ---
 
@@ -25,10 +26,10 @@ Sie können die folgenden Komponenten verwalten:
 * [**Filter**](filters/filters-overview.md): Erstellen, verwalten, teilen und wenden Sie leistungsstarke, fokussierte Zielgruppenfilter auf Ihre Berichte an. Mit Filtern können Sie Personengruppen anhand von Merkmalen oder Interaktionen identifizieren.
 * [**Berechnete Metriken:**](calc-metrics/calc-metr-overview.md) Verwenden Sie Metriken und Formeln als neue Komponenten für die Berichterstellung
 * [**Datenwörterbuch**](/help/components/data-dictionary/data-dictionary-overview.md): Hilft Benutzern und Administratoren, die Komponenten in ihrer Analytics-Umgebung zu verfolgen und besser zu verstehen.
-* [**Datumsbereiche:**](date-ranges/create.md) Passen Sie die von Analysis Workspace angebotenen Datumsbereiche an und präzisieren Sie diese.
+* [**Datumsbereiche**](date-ranges/create.md): Passen Sie die von Analysis Workspace angebotenen Datumsbereiche an und präzisieren Sie sie.
 * [**Dimensionen**](/help/components/dimensions/view-dimensions.md): Dimensionen sind Variablen, die normalerweise Zeichenfolgenwerte enthalten. Zu den gebräuchlichen Dimensionen gehören Seite und Referrer-Domäne.
 * [**Metriken**](/help/components/apply-create-metrics.md): Ermöglicht Ihnen die Quantifizierung von Datenpunkten in Analysis Workspace.
-* [**Projekte:**](/help/analysis-workspace/home.md) Organisieren und verwalten Sie Ihre Projekte in Analysis Workspace.
+* [**Projekte**](/help/analysis-workspace/home.md): Organisieren und verwalten Sie Ihre Projekte in Analysis Workspace.
 
 ## Analysis Workspace-Komponenten
 

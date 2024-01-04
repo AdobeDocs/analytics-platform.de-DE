@@ -4,9 +4,10 @@ description: Erläuterung der Aufnahme und Verwendung von Batch-Daten in Custome
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: dd46adee-821f-489c-9350-abcfffe7cc3c
-source-git-commit: caf2db9ae0b550ce47fa196a955fcceddf8bf2b7
+role: Admin
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '1977'
+source-wordcount: '1948'
 ht-degree: 87%
 
 ---
@@ -222,7 +223,7 @@ Siehe [CSV-Datei über einem vorhandenen XDM-Schema zuordnen](https://experience
 - Zuordnen von Daten, wenn Ihre eingehenden Daten nicht mit Ihrem XDM-Schema kompatibel sind.
 - Mapping-Vorlagen verwenden,
 - berechnete Felder verwenden, um sicherzustellen, dass Ihre Batch-Daten den Erwartungen des Schemas entsprechen,
-- und vieles mehr.
+- und mehr.
 
 
 ## Einrichten einer Verbindung

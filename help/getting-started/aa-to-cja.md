@@ -5,10 +5,10 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 5e3f0aa0-ba24-48c8-948c-ebb5c270f34d
-source-git-commit: a67c12a7b5244b7802eba2cbcbfdb320802d088b
-workflow-type: ht
-source-wordcount: '1488'
-ht-degree: 100%
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+workflow-type: tm+mt
+source-wordcount: '1394'
+ht-degree: 96%
 
 ---
 
@@ -30,7 +30,7 @@ Beispiele für Identitäten sind Kunden-ID, Konto-ID oder E-Mail-ID. Für jede I
 * Die ID enthält keine persönlich identifizierbare Informationen. Wenden Sie Hashing auf alle sensiblen Elemente an.
 * Die ID verwendet dasselbe Format für alle Quellen (gleiche Länge, gleiche Hashing-Methode usw.)
 
-In Datensätzen wie Adobe Analytics ist möglicherweise nicht in jeder Datenzeile eine Identität vorhanden, aber eine sekundäre Identität schon. In diesem Fall kann Cross-Channel-Analyse (früher als „feldbasierte Zuordnung“ bezeichnet) verwendet werden, um die Lücke zwischen Zeilen zu schließen, wenn ein Kunde nur durch seine ECID identifiziert wird und wenn eine Identität erfasst wird (z. B. bei der Authentifizierung eines Kunden). [Weitere Informationen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html?lang=de)
+In Datensätzen wie Adobe Analytics ist möglicherweise nicht in jeder Datenzeile eine Identität vorhanden, aber eine sekundäre Identität schon. In diesem Fall kann die kanalübergreifende Analyse (auch als &quot;Stitching&quot;bezeichnet) verwendet werden, um die Lücke zwischen den Zeilen zu schließen, wenn ein Kunde nur durch seine ECID identifiziert wird und wenn eine Identität erfasst wird (z. B. bei der Authentifizierung eines Kunden). [Weitere Informationen](../stitching/overview.md).
 
 ### 2. Variablen anpassen {#variables}
 
@@ -71,7 +71,7 @@ Diese Methode erweitert die Möglichkeiten für die Datenerfassung deutlich: Die
 * Flexibles Schema zur Definition von erforderlichen Feldern
 * Nicht von der Adobe Analytics-Nomenklatur abhängig (Prop, eVar, Ereignis usw.)
 * Keine Längenbeschränkung (100 Zeichen für Props)
-* Schnellere Datenverfügbarkeit in Adobe Experience Platform für [Anwendungsfälle der Echtzeit-Personalisierung](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/configure-personalization-destinations.html?lang=de)
+* Schnellere Datenverfügbarkeit in Adobe Experience Platform [Anwendungsfälle für die Echtzeit-Personalisierung](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/configure-personalization-destinations.html?lang=de)
 * [Erstanbieter-Geräte-IDs](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/first-party-device-ids.html?lang=de) für eine genauere Besucheridentifizierung
 
 **Nachteile der Verwendung von Experience Platform-SDKs**

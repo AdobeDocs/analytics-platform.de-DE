@@ -3,10 +3,11 @@ description: Mit dem Datumsvergleich in Analysis Workspace können Sie mit einer
 title: Datumsvergleich
 feature: Calendar
 exl-id: 08113536-658f-486b-ac56-6c531240c3c2
-source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+role: User
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '729'
-ht-degree: 87%
+source-wordcount: '740'
+ht-degree: 86%
 
 ---
 
@@ -55,7 +56,7 @@ Für Analysen wird Kontext benötigt, der oft durch einen vorherigen Zeitraum be
 
 Sie können jetzt Zeiträume zu allen Spalten in einer Tabelle hinzufügen. So können Sie einen Zeitraum hinzufügen, der von dem abweicht, auf den Ihr Kalender eingestellt ist. Dies ist eine weitere Möglichkeit, um Daten zu vergleichen.
 
-1. Rechtsklicken Sie auf eine Spalte in der Tabelle und wählen Sie **[!UICONTROL Spalte für Zeitraum hinzufügen]** aus ![Tabellenspaltenliste mit hervorgehobener Spalte &quot;Zeitraum hinzufügen&quot; ](assets/add-time-period-column.png)
+1. Klicken Sie mit der rechten Maustaste auf eine Spalte in der Tabelle und wählen Sie **[!UICONTROL Spalte &quot;Zeitraum hinzufügen&quot;]** ![Tabellenspaltenliste mit hervorgehobener Spalte &quot;Zeitraum hinzufügen&quot; ](assets/add-time-period-column.png)
 
 1. Je nachdem, wie Sie den Datumsbereich der Tabelle festgelegt haben, stehen die folgenden Optionen zum Vergleich zur Verfügung:
 

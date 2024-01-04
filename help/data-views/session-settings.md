@@ -3,13 +3,14 @@ title: Sitzungseinstellungen
 description: Mit den Einstellungen in einer Datenansicht können Sie die Sitzungslänge und den Trigger zum Initiieren einer neuen Sitzung festlegen
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: bb2061f9119b8391bf3cedce4029685537d1e239
+exl-id: 25710bf1-ec85-4a7d-a404-54549013cc2c
+role: Admin
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '422'
+source-wordcount: '424'
 ht-degree: 100%
 
 ---
-
 
 # Sitzungseinstellungen
 
@@ -45,4 +46,3 @@ So definieren Sie den Kontext einer Sitzung für eine Datenansicht:
 
 
 4. Wählen Sie **[!UICONTROL Speichern]** oder **[!UICONTROL Speichern und beenden]**, um die Definitionen der Sitzungseinstellungen zu speichern.
-

@@ -4,10 +4,11 @@ description: Mehrere Anwendungsfälle, die die Flexibilität und Leistungsfähig
 exl-id: 6ecbae45-9add-4554-8d83-b06ad016fea9
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+role: User
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '1382'
-ht-degree: 91%
+source-wordcount: '1360'
+ht-degree: 90%
 
 ---
 
@@ -132,5 +133,5 @@ Wir unterstützen derzeit Datumsangaben nach dem 1. Januar 1900 (mit Ausnahme de
 * Datum-Uhrzeit: Ein Einzelhandelsunternehmen erfasst die Uhrzeit für jeden seiner Einkäufe am Verkaufsort (POS Point-Of-Sale) im Geschäft. Sie möchten wissen, zu welchen Zeiten in einem bestimmten Monat am meisten eingekauft wird, und zwar nach [!UICONTROL Tageszeit].
 
 >[!MORELIKETHIS]
->[Datum und Datum-Uhrzeit in den Format-Komponenteneinstellungen](/help/data-views/component-settings/format.md)
+>[Datum und Uhrzeit in der Komponenteneinstellung &quot;Format&quot;](/help/data-views/component-settings/format.md)
 

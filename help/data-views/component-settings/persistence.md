@@ -4,9 +4,10 @@ description: Bestimmen, wie oder ob Dimensionswerte von einem Ereignis zum näch
 exl-id: b8b234c6-a7d9-40e9-8380-1db09610b941
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+role: Admin
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '865'
+source-wordcount: '884'
 ht-degree: 80%
 
 ---
@@ -61,7 +62,7 @@ Details zu den verfügbaren Zuordnungseinstellungen.
   | Dimension | Treffer 1 | Treffer 2 | Treffer 3 | Treffer 4 | Treffer 5 |
   | --- | --- | --- | --- | --- | --- |
   | Datensatzwerte | A | B | C |  | A |
-  | Zuordnung Alle | A | A,B | A,B,C | A,B,C | A,B,C |
+  | Zuordnung Alle | A  | A,B | A,B,C | A,B,C | A,B,C |
 
 * **[!UICONTROL Erster bekannter]** und **[!UICONTROL Letzter bekannter]**: (19. Januar 2022) Diese beiden Zuordnungsmodelle erfüllen die Anwendungsfälle der Dimensionen „Einstieg“ und „Ausstieg“. Sie wenden den ersten oder letzten beobachteten Wert für eine Dimension innerhalb eines bestimmten Persistenzbereichs (Sitzung, Person oder benutzerspezifischer Zeitraum mit Lookback) auf alle Ereignisse innerhalb des angegebenen Bereichs an. Beispiel:
 

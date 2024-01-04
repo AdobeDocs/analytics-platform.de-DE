@@ -4,10 +4,11 @@ description: Eine Methode zur Datenanalyse in Customer Journey Analytics, mit de
 keywords: Produktanalyse
 exl-id: 1ac8157f-87e8-4d98-a2ca-f6beb68d9d6b
 feature: Guided Analysis
-source-git-commit: f99d1ce1881cd1ed3262fa3d2b2a9e16f84aa288
+role: User
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
 source-wordcount: '1278'
-ht-degree: 7%
+ht-degree: 2%
 
 ---
 
@@ -23,14 +24,14 @@ Geführte Analyse kategorisiert Ansichtstypen in **Analysetypen**. Die folgenden
 
 | Analysetyp | Ansichtstyp | Beschreibung |
 | --- | --- | --- |
-| [!UICONTROL Wirkung] | [Version](types/release.md) | Leistung in gleichen Zeiträumen vor und nach Veröffentlichung vergleichen. |
-| [!UICONTROL Wirkung] | [Erstmalige Verwendung](types/first-use.md) | Messen der Auswirkung der erstmaligen Verwendung von Funktionen auf Schlüsselindikatoren. |
-| [!UICONTROL Trichter] | [Reibung](types/friction.md) | Konversionsraten zwischen den Schritten vergleichen. |
-| [!UICONTROL Trichter] | [Konversions-Trends](types/conversion-trends.md) | Verfolgen Sie Veränderungen der Konversionsraten im Laufe der Zeit. |
+| [!UICONTROL Auswirkung] | [Version](types/release.md) | Vergleichen Sie die Leistung über gleiche Zeiträume vor und nach der Veröffentlichung. |
+| [!UICONTROL Auswirkung] | [Erste Verwendung](types/first-use.md) | Messen Sie die Auswirkungen der erstmaligen Verwendung von Funktionen auf Schlüsselindikatoren. |
+| [!UICONTROL Trichter] | [Friktion](types/friction.md) | Vergleichen Sie die Konversionsraten zwischen Schritten. |
+| [!UICONTROL Trichter] | [Konversionstrends](types/conversion-trends.md) | Verfolgen Sie Änderungen der Konversionsraten im Zeitverlauf. |
 | [!UICONTROL Benutzerwachstum] | [Aktiv](types/active.md) | Identifizieren Sie, wer neu ist, beibehalten, zurückkehren oder ruhend ist. |
 | [!UICONTROL Benutzerwachstum] | [Nettowachstum](types/net-growth.md) | Gewinnen oder verlieren Sie Nutzende? |
-| [!UICONTROL Trends] | [Nutzung](types/usage.md) | Benutzerinteraktion im Lauf der Zeit messen. |
-| [!UICONTROL Trends] | [Häufigkeit](types/frequency.md) | Interaktion anhand der Nutzungshäufigkeit messen. |
+| [!UICONTROL Trends] | [Verwendung](types/usage.md) | Messen Sie die Benutzerinteraktion im Zeitverlauf. |
+| [!UICONTROL Trends] | [Häufigkeit](types/frequency.md) | Messen Sie die Interaktion nach Häufigkeit der Verwendung. |
 
 {style="table-layout:auto"}
 

@@ -4,10 +4,10 @@ description: Zeigt zwei Methoden zur Schätzung der Nutzung und eine Methode zur
 role: Admin
 feature: Basics
 exl-id: 7a5d1173-8d78-4360-a97a-1ab0a60af135
-source-git-commit: 16f1a732260ace8393d7303134fc351740fd1661
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '901'
-ht-degree: 74%
+source-wordcount: '881'
+ht-degree: 71%
 
 ---
 
@@ -15,7 +15,8 @@ ht-degree: 74%
 
 Um Ihre Customer Journey Analytics-Nutzung anzuzeigen, können Sie mehrere Methoden verwenden:
 
-* Addieren Sie die Ereignisdatenzeilen für jede Verbindung. Siehe unten [Schätzen der Verbindungsgröße](#estimated size). Dies ist eine einfache Methode, um Ihre Ereigniszeilendaten pro Verbindung für einen bestimmten Zeitstempel anzuzeigen.
+* Addieren Sie die Ereignisdatenzeilen für jede Verbindung. Siehe [Geschätzte Verbindungsgröße](#estimate-connection-size) unten. Dies ist eine einfache Methode, um Ihre Ereigniszeilendaten pro Verbindung für einen bestimmten Zeitstempel anzuzeigen.
+
 * Sie können Ihre Nutzung auf drei Arten anzeigen, von denen jede im Folgenden ausführlicher beschrieben wird:
    * Verwenden Sie Analysis Workspace, um Berichte zu den Ereignissen des letzten Monats zu erstellen.
    * Verwenden Sie Report Builder, um Berichte zu den Ereignissen des letzten Monats zu erstellen.
@@ -41,7 +42,7 @@ Möglicherweise benötigen Sie Informationen zur aktuellen Anzahl von Ereignisda
 
 1. Addieren Sie die **[!UICONTROL verfügbaren Sätze von Ereignisdaten]** für jede Verbindung, die Ihr Unternehmen erstellt hat. (Je nach Größe Ihrer Verbindung kann es eine Weile dauern, bis die Anzahl angezeigt wird.)
 
-   ![Verfügbare Datensätze von Ereignisdaten.](./assets/event-data.png)
+   ![Verfügbare Aufzeichnungen von Ereignisdaten.](./assets/event-data.png)
 
    >[!CAUTION]
    >
@@ -55,7 +56,7 @@ Möglicherweise benötigen Sie Informationen zur aktuellen Anzahl von Ereignisda
 
    * Ändern Sie Ihre [Datenspeicherungseinstellungen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/manage-connections.html?lang=de#set-rolling-window-for-connection-data-retention).
    * [Löschen Sie alle nicht verwendeten Verbindungen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=de#implications-of-deleting-data-components).
-   * [Löschen eines Datensatzes in Adobe Experience Platform](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=de#implications-of-deleting-data-components).
+   * [Datensatz in Adobe Experience Platform löschen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=de#implications-of-deleting-data-components).
    * Wenden Sie sich an Ihr Adobe Account Team, um zusätzliche Kapazitäten zu lizenzieren.
 
 ## Erstellen eines Analysis Workspace-Projekts mit allen Ereignisdaten {#workspace-event-data}

@@ -6,10 +6,10 @@ solution: Customer Journey Analytics
 exl-id: dd273c71-fb5b-459f-b593-1aa5f3e897d2
 feature: Troubleshooting
 keywords: Query Service;Query Service;SQL-Syntax
-source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '886'
-ht-degree: 68%
+source-wordcount: '839'
+ht-degree: 64%
 
 ---
 
@@ -49,7 +49,7 @@ Die Gesamtzahl der Datensätze nach Zeitstempeln sollten mit der der Vorfälle �
 
 >[!NOTE]
 >
->Dies funktioniert nur für normale Mittelwert-Datensätze, nicht für zugeordnete Datensätze (über die [Cross-Channel-Analyse](/help/cca/overview.md)). Bitte beachten Sie, dass die Berücksichtigung der Personen-ID, die in Customer Journey Analytics verwendet wird, für die Durchführung des Vergleichs von entscheidender Bedeutung ist. Dies ist in Adobe Analytics möglicherweise nicht immer einfach zu replizieren, insbesondere wenn Stitching aktiviert ist.
+>Dies funktioniert nur für normale Mid-Werte-Datensätze, nicht für zugeordnete Datensätze (über [Stitching](/help/stitching/overview.md)). Bitte beachten Sie, dass die Berücksichtigung der Personen-ID, die in Customer Journey Analytics verwendet wird, für die Durchführung des Vergleichs von entscheidender Bedeutung ist. Dies ist in Adobe Analytics möglicherweise nicht immer einfach zu replizieren, insbesondere wenn Stitching aktiviert ist.
 
 1. Führen Sie in [Abfrage-Services](https://experienceleague.adobe.com/docs/experience-platform/query/best-practices/adobe-analytics.html?lang=de) von Adobe Experience Platform die folgende Abfrage zu [!UICONTROL Datensätzen insgesamt nach Zeitstempeln] aus:
 

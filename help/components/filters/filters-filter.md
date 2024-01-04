@@ -3,10 +3,11 @@ description: Filtern Sie nach Tags, Inhabern und anderen Filtern (Alle anzeigen,
 title: Filtern der Filterliste
 feature: Filters
 exl-id: 25e617da-8249-4332-970a-c2ef00bf42e3
-source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+role: User
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '194'
-ht-degree: 30%
+source-wordcount: '187'
+ht-degree: 25%
 
 ---
 
@@ -31,5 +32,5 @@ Filter erleichtern die Suche nach Filtern.
    | Weitere Filter > Meine | Zeigt alle Filter an, deren Inhaber Sie sind. |
    | Weitere Filter > Für mich freigegeben | Zeigt alle anderen Filter an [shared](/help/components/filters/filters-share.md) mit Ihnen. |
    | Weitere Filter > Favoriten | Zeigt alle Filter an, die Sie als [Favoriten](/help/components/filters/filters-favorite.md). |
-   | Weitere Filter > Genehmigt | Zeigt alle offiziell  [genehmigten](/help/components/filters/filters-approve.md) Segmente an. |
+   | Weitere Filter > Genehmigt | Zeigt alle offiziell [genehmigt](/help/components/filters/filters-approve.md) Segmente. |
    | Segmente durchsuchen | Sucht Segmente nach Namen. |

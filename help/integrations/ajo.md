@@ -3,10 +3,11 @@ title: Integrieren von Adobe Journey Optimizer in Customer Journey Analytics
 description: Einbinden von Adobe Journey Optimizer generierter Daten und Analysieren mit Analysis Workspace im Customer Journey Analytics.
 exl-id: 9333ada2-b4d6-419e-9ee1-5c96f06a3bfd
 feature: Experience Platform Integration
-source-git-commit: 2429c60cab701017702e3312770232aa329e303c
+role: Admin
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '873'
-ht-degree: 68%
+source-wordcount: '862'
+ht-degree: 64%
 
 ---
 
@@ -75,7 +76,7 @@ Sie können die folgenden Metriken in einer Datenansicht erstellen, um eine unge
 
 | Metrik | Beschreibung | Schemaelement | Einstellungen der Komponente |
 | --- | --- | --- | --- |
-| Bounces | Die Anzahl der Nachrichten, die zurückgeschickt wurden, einschließlich sowohl sofortiger Rücksendungen als auch Rücksendungen nach dem Versand. | `_experience.customerJourneyManagement.`<br>`messageDeliveryfeedback.feedbackStatus` | Komponententyp: Metrik<br>Ausschlusswerte einschließen: Wenn ein Kriterium erfüllt ist<br>Gleich: `bounce`, Gleich: `denylist` |
+| Bounces | Die Anzahl der Bounce-Nachrichten, einschließlich der unmittelbaren Bounces und Bounces nach dem Versand. | `_experience.customerJourneyManagement.`<br>`messageDeliveryfeedback.feedbackStatus` | Komponententyp: Metrik<br>Ausschlusswerte einschließen: Wenn ein Kriterium erfüllt ist<br>Gleich: `bounce`, Gleich: `denylist` |
 | Bounces nach dem Versand | Einige E-Mail-Dienste melden zugestellte E-Mails und schicken sie dann später zurück. | `_experience.customerJourneyManagement.`<br>`messageDeliveryfeedback.messageFailure.category` | Komponententyp: Metrik<br>Ausschlusswerte einschließen: Gleich `async` |
 | E-Mail-Klicks | Anzahl der Klicks in Nachrichten. | `_experience.customerJourneyManagement.`<br>`messageInteraction.interactionType` | Komponententyp: Metrik<br>Ausschlusswerte einschließen: Gleich `click` |
 | E-Mail-Öffnungen | Anzahl geöffneter Nachrichten. | `_experience.customerJourneyManagement.`<br>`messageInteraction.interactionType` | Komponententyp: Metrik<br>Ausschlusswerte einschließen: Gleich `open` |
@@ -83,7 +84,7 @@ Sie können die folgenden Metriken in einer Datenansicht erstellen, um eine unge
 | Ausgeschlossen sind | Die Anzahl der ausgeschlossenen Nachrichten. | `_experience.customerJourneyManagement.`<br>`messageDeliveryfeedback.feedbackStatus` | Komponententyp: Metrik<br>Ausschlusswerte einschließen: Gleich `exclude` |
 | Sendungen | Die Anzahl der Nachrichten, die von E-Mail-Anbietern akzeptiert wurden. | `_experience.customerJourneyManagement.`<br>`messageDeliveryfeedback.feedbackStatus` | Komponententyp: Metrik<br>Ausschlusswerte einschließen: Gleich `sent` |
 | Spam-Beschwerden | Anzahl der Beschwerden wegen Spam. | `_experience.customerJourneyManagement.`<br>`messageInteraction.interactionType` | Komponententyp: Metrik<br>Ausschlusswerte einschließen: Gleich `spam_complaint` |
-| Abonnementkündigungen | Anzahl der Abmeldungen. | `_experience.customerJourneyManagement.`<br>`messageInteraction.interactionType` | Komponententyp: Metrik<br>Ausschlusswerte einschließen: Gleich `unsubscribe` |
+| Abonnementkündigungen | Die Anzahl der Abmeldungen. | `_experience.customerJourneyManagement.`<br>`messageInteraction.interactionType` | Komponententyp: Metrik<br>Ausschlusswerte einschließen: Gleich `unsubscribe` |
 | Edge-Sendungen | Die Häufigkeit, mit der das Edge-Netzwerk eine Nachricht entweder an das Web- oder Mobile-SDK sendet | Verwenden des Schemazeichenfolgenelements `_experience.decisioning.propositionEventType.send` |
 | Eingehende Anzeigen | Die Häufigkeit, mit der dem Benutzer eine Web- oder In-App-Nachricht angezeigt wird | Verwenden des Schemazeichenfolgenelements `_experience.decisioning.propositionEventType.display` |
 | Eingehende Klicks | Die Anzahl der Web- oder In-App-Nachrichtenklicks | Verwenden des Schemazeichenfolgenelements `_experience.decisioning.propositionEventType.interact` |

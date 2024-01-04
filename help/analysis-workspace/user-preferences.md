@@ -4,10 +4,11 @@ description: Sie können allgemeine Voreinstellungen und Projektvoreinstellungen
 feature: Workspace Basics
 exl-id: 6a934be7-0612-41ff-964e-77abc0b1efda
 solution: Customer Journey Analytics
-source-git-commit: 170737214fea4dbd4d90d33ebf770920c8344fb1
+role: User
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '3228'
-ht-degree: 87%
+source-wordcount: '3191'
+ht-degree: 86%
 
 ---
 
@@ -43,7 +44,7 @@ Die allgemeinen Voreinstellungen gelten für Ihr Customer Journey Analytics-Erle
 
 | Voreinstellung | Optionen |
 | --- | --- |
-| Landingpage | Wählen Sie aus, welche Seite beim Zugriff auf Adobe Analytics als Standardseite angezeigt werden soll: <ul><li>Projektliste (Standard)</li><li>Leeres Projekt</li><li>Spezifisches Projekt  ausgewählt aus einer Liste</li></ul> |
+| Landingpage | Wählen Sie aus, welche Seite beim Zugriff auf Adobe Analytics als Standardseite angezeigt werden soll: <ul><li>Projektliste (Standard)</li><li>Leeres Projekt</li><li>Bestimmtes Projekt aus einer Liste ausgewählt</li></ul> |
 | Tipps anzeigen | Zeigt Tipps in einem blauen Feld im rechten unteren Bereich von Analysis Workspace an. <p>Standardmäßig ist diese Option aktiviert.</p> |
 | Komponenten, die in Gruppen auf der linken Leiste angezeigt werden | Wählen Sie aus, wie viele Komponenten im Komponentenmenü in der linken Leiste angezeigt werden sollen. <p>Wenn Sie „0“ auswählen, kann die Komponente nicht mehr über die linke Leiste Ihrer Arbeitsbereiche aufgerufen werden.</p><p>Standardmäßig werden für jede der folgenden Objekte fünf Komponenten angezeigt:</p> <ul><li>Dimensionen</li><li>Metriken</li><li>Filter</li><li>Datumsbereiche</li></ul> <p>Weitere Informationen zu Komponenten in Analysis Workspace finden Sie unter [Komponentenübersicht](/help/components/overview.md).</p> |
 
@@ -71,14 +72,14 @@ Klicken Sie auf die verlinkten Voreinstellungstitel, um weitere Informationen un
 | --- | --- | --- |
 | **Anzeigen** | | |
 |  | [Dichte anzeigen](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/view-density.html?lang=de) | Wählen Sie aus, wie viel Inhalt auf dem Bildschirm angezeigt werden soll, indem Sie den vertikalen Abstand der linken Schiene, der Freiformtabellen und der Kohortentabellen verkleinern. <ul><li>Kompakt</li><li>Komfortabel</li><li>Erweitert (Standard)</li></ul> |
-| | [Farbpalette](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/color-palettes.html?lang=de) | Wählen Sie die Farbpaletten für die Visualisierung aus, die in Analysis Workspace und der geführten Analyse verwendet werden. <ul><li> Kategorische Palette: Wird auf viele Visualisierungen in Analysis Workspace und Geführte Analyse angewendet. Jede Farbe stellt einen bestimmten kategorischen Wert dar. Wählen Sie aus den von Adobe bereitgestellten Optionen oder geben Sie eine benutzerdefinierte Palette ein, die durch kommagetrennte Hexadezimalwerte definiert ist.</li><li> Divergente Palette: Wird auf die Kohortentabelle in Analysis Workspace angewendet und durch Benutzerwachstum gesteuerte Analyse. Diese Palette enthält eine numerische Bedeutung mit zwei Extremen und einer Grundlinie in der Mitte.<li> Sequenzielle Palette: Wird auf die geführte Analyse der Häufigkeits-Trends (gestapelter Balken) angewendet. Diese Palette hat eine numerische Bedeutung von hell bis dunkel.</li></ul> |
+| | [Farbpalette](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/color-palettes.html?lang=de) | Wählen Sie die Farbpaletten für die Visualisierung aus, die in Analysis Workspace und der geführten Analyse verwendet werden. <ul><li> Kategorische Palette: Wird auf viele Visualisierungen in Analysis Workspace und Geführte Analyse angewendet. Jede Farbe stellt einen bestimmten kategorischen Wert dar. Wählen Sie aus den von Adobe bereitgestellten Optionen oder geben Sie eine benutzerdefinierte Palette ein, die durch kommagetrennte Hexadezimalwerte definiert ist.</li><li> Divergente Palette: Wird auf die Kohortentabelle in Analysis Workspace angewendet und durch Benutzerwachstum gesteuerte Analyse. Diese Palette enthält eine numerische Bedeutung mit zwei Extremen und einer Grundlinie in der Mitte.<li> Sequenzielle Palette: Angewandt auf die geleitete Analyse &quot;Häufigkeitstrends&quot;(gestapelte Leiste). Diese Palette hat eine numerische Bedeutung von hell bis dunkel.</li></ul> |
 | **Daten** | | |
 |  | [Datenansicht](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/panels.html?lang=de#report-suite) | Wählen Sie aus, von wo Tabellen und Visualisierungen ihre Daten beziehen sollen. <ul><li>Zuletzt verwendet (Standard)</li><li>Ausgewählte Datenansicht aus einer Liste</li></ul> |
 |  | [Kalender](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/panels.html?lang=de#calendar) | Wählen Sie aus einer Liste, die Folgendes enthält: <ul><li>Von Adobe bereitgestellte Bereiche (Standard ist „Diesen Monat“)</li><li>Benutzerdefinierte Bereiche</li></ul> |
 |  | [Typ des Bedienfelds](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/panels.html?lang=de) | <ul><li>Freiform (Standard)</li><li>Leer</li><li>Quick Insights</li></ul> |
 |  | Wiederholte Instanzen zählen | Diese Einstellung legt fest, ob wiederholte Instanzen in Berichten gezählt werden sollen. Beispielsweise werden mit dieser Einstellung (wenn aktiviert) mehrere aufeinanderfolgende Aufrufe derselben Seite wie mehrere Seitenaufrufe gezählt. Ist diese Einstellung deaktiviert, werden sie als nur ein einziger Seitenaufruf gezählt. <p>**Hinweis:** Diese Einstellung wirkt sich nur auf bestimmte Metriken aus (z. B. Einzelseitenbesuche) und nicht auf Fluss- oder Fallout-Visualisierungen.</p> |
 |  | Zahlenformat | <ul><li>1.000,00 (Standard)</li><li>1.000,00</li><li>1 000,00</li></ul> |
-|  | CSV-Trennzeichen    Zeichen | <ul><li>Komma (Standard)</li><li>Semikolon</li><li>Doppelpunkt</li><li>Verkettungszeichen</li><li>Zeitraum</li><li>Leerzeichen</li><li>Tab</li></ul> |
+|  | CSV-Trennzeichen | <ul><li>Komma (Standard)</li><li>Semikolon</li><li>Doppelpunkt</li><li>Verkettungszeichen</li><li>Zeitraum</li><li>Leerzeichen</li><li>Tab</li></ul> |
 |  | Anmerkungen anzeigen | Wählen Sie aus, ob Anmerkungen in Ihren Projekten sichtbar sein sollen. Weitere Informationen zu Anmerkungen finden Sie unter [Anmerkungen – Überblick](/help/components/annotations/overview.md). |
 
 

@@ -2,10 +2,12 @@
 description: In Analysis Workspace gibt es zwei Möglichkeiten zur Verwendung von Metriken.
 title: Metriken
 feature: Components
-source-git-commit: 6f3ae14e4d34de17ed64ae30cee4611e4d6f3226
+exl-id: fa7c5a0f-4983-40ee-b9c1-3e10aab3fc28
+role: User
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
 source-wordcount: '395'
-ht-degree: 93%
+ht-degree: 92%
 
 ---
 
@@ -20,12 +22,12 @@ Im Manager für geplante Projekte können wiederkehrende Projektzeitpläne bearb
 | [!UICONTROL Favoriten] | Wenn Sie das Sternsymbol auswählen, wird dieser Zeitplan zu einem Favoriten. |
 | [!UICONTROL Zeitplan-ID] | Diese ID wird hauptsächlich zum Debugging verwendet. |
 | [!UICONTROL Titel und Beschreibung] | Titel und Beschreibung dieses Projekts. |
-| [!UICONTROL Inhaber] | Die Person, die das Projekt erstellt hat und dafür verantwortlich ist. |
+| [!UICONTROL Inhabende] | Die Person, die das Projekt erstellt hat und dafür verantwortlich ist. |
 | [!UICONTROL Tags] | (Optional) Mit Tagging können Projekte praktisch organisiert werden. Alle Benutzer können Tags erstellen und eines oder mehrere Tags auf ein Projekt anwenden. Sie sehen Tags jedoch nur für die Projekte, deren Verantwortlicher Sie sind oder die für Sie freigegeben wurden. |
-| [!UICONTROL Gesendet an] | Der/die Empfänger dieses geplanten Projekts. |
+| [!UICONTROL Zugestellt an] | Die Empfängerinnen bzw. Empfänger dieses geplanten Projekts. |
 | [!UICONTROL Ablaufdatum] | Sie können das Ablaufdatum auf bis zu ein Jahr festlegen, unabhängig von der Häufigkeit des Zeitplans. |
-| [!UICONTROL Häufigkeit] | Wie oft Sie dieses geplante Projekt an den/die Empfänger senden möchten. |
-| [!UICONTROL Durchführungszeit] | Zu welcher Tageszeit dieses geplante Projekt gesendet wird.  |
+| [!UICONTROL Häufigkeit] | Wie oft Sie dieses geplante Projekt an die Empfängerinnen bzw. Empfänger senden möchten. |
+| [!UICONTROL Ausführungszeit] | Zu welcher Tageszeit dieses geplante Projekt gesendet wird.  |
 | [!UICONTROL Anzahl der Abfragen] | Die Anzahl der Abfragen für dieses Projekt. |
 
 Die folgenden Aktionen werden im Manager für geplante Projekte häufig ausgeführt:

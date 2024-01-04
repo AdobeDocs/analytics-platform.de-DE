@@ -3,10 +3,11 @@ title: Integrieren der Adobe Journey Optimizer-Entscheidungsverwaltung in Adobe 
 description: Einbinden von Daten, die vom Adobe Journey Optimizer-Entscheidungsmanagement generiert wurden, und Analysieren Sie sie mithilfe von Analysis Workspace im Customer Journey Analytics.
 exl-id: fde45264-46cf-4c68-9872-7fb739748f21
 feature: Experience Platform Integration
-source-git-commit: 2429c60cab701017702e3312770232aa329e303c
+role: Admin
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '749'
-ht-degree: 20%
+source-wordcount: '710'
+ht-degree: 18%
 
 ---
 
@@ -41,7 +42,7 @@ Wählen Sie die folgenden Datensätze aus und konfigurieren Sie sie:
 
 ## Datenansicht erstellen
 
-Sobald eine Verbindung erstellt wurde, können Sie eine oder mehrere [Datenansichten](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=de) erstellen, um die gewünschten Dimensionen und Metriken zu konfigurieren, die in Customer Journey Analytics verfügbar sind.
+Sobald eine Verbindung erstellt wurde, können Sie eine oder mehrere [Datenansichten](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=en) erstellen, um die gewünschten Dimensionen und Metriken zu konfigurieren, die in Customer Journey Analytics verfügbar sind.
 
 >[!NOTE]
 >

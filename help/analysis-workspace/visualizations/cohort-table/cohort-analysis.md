@@ -3,10 +3,11 @@ title: Was ist eine Kohortenanalyse?
 description: Erfahren Sie mehr über die Kohortenanalyse in Analysis Workspace.
 feature: Visualizations
 exl-id: 3e3a70cd-70ec-4d4d-81c3-7902716d0b01
-source-git-commit: ab30cd4e884dbf92d4148e8f81a638a8ea0b63f3
+role: User
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '528'
-ht-degree: 68%
+source-wordcount: '524'
+ht-degree: 64%
 
 ---
 
@@ -65,4 +66,4 @@ Erstellen Sie Kohorten auf Grundlage einer ausgewählten Dimension und nicht auf
 
 ![Ein Kohortenbericht, der einen benutzerdefinierten Bericht mit ausgewählten Dimensionen anzeigt, nicht die standardmäßige zeitbasierte Kohorte.](assets/cohort-customizable-cohort-row.png)
 
-Anweisungen zum Einrichten und Durchführen eines Kohortenberichts finden Sie unter  [Konfigurieren eines Kohortenanalyseberichts](/help/analysis-workspace/visualizations/cohort-table/t-cohort.md).
+Anweisungen zum Einrichten und Ausführen eines Kohortenberichts finden Sie unter [Konfigurieren eines Kohortenanalyseberichts](/help/analysis-workspace/visualizations/cohort-table/t-cohort.md).

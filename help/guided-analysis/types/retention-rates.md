@@ -1,18 +1,20 @@
 ---
-title: Retentionsquoten
-description: Messen, wie viele Benutzende weiterhin Ihr Produkt nutzen.
+title: Bindungsrate
+description: Messen Sie, wie viele Benutzer Ihr Produkt weiterhin verwenden.
 feature: Guided Analysis
 keywords: Produktanalyse
 hide: true
 hidefromtoc: true
-source-git-commit: 1cadf9d863c18f590a99e22d7b0e79b1074bf29f
+exl-id: c35a0ee0-e6b7-47b5-a5bc-308cde1585de
+role: User
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '886'
-ht-degree: 2%
+source-wordcount: '889'
+ht-degree: 1%
 
 ---
 
-# Retentionsquoten
+# Bindungsrate
 
 {{release-limited-testing}}
 
@@ -55,7 +57,7 @@ Die [!UICONTROL Treuerate] Die Ansicht bietet die folgenden Diagrammeinstellunge
 * **[!UICONTROL Metrik]**: Wie Sie Benutzer beibehalten messen möchten. Optionen umfassen [!UICONTROL Benutzer beibehalten] und [!UICONTROL Prozentsatz der einbehaltenen Benutzer].
 * **[!UICONTROL Diagrammtyp]**: Der Visualisierungstyp, den Sie verwenden möchten. Optionen umfassen [!UICONTROL Balken] und [!UICONTROL Linie].
 
-## Einstellungen für Dauer
+## Einstellungen für Zeitrahmen
 
 Damit können Sie steuern, wie die Analyse Benutzer nach der Anzahl der verstrichenen Tage anzeigt.
 

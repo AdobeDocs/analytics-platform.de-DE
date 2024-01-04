@@ -2,18 +2,18 @@
 description: Erfahren Sie, wie Sie die Flussvisualisierung in einem Workspace-Projekt verwenden.
 title: Konfigurieren einer Flussvisualisierung
 feature: Visualizations
-role: User, Admin
 exl-id: 7055cbc9-19b3-40f0-b8d4-52d241224827
-source-git-commit: ab30cd4e884dbf92d4148e8f81a638a8ea0b63f3
+role: User
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '1581'
-ht-degree: 57%
+source-wordcount: '1595'
+ht-degree: 56%
 
 ---
 
 # Flussvisualisierung konfigurieren
 
-Flussvisualisierungen helfen Ihnen dabei, die Journey zu verstehen, die von einem bestimmten Konversionsereignis auf Ihrer Website oder in Ihrer App ausgehen oder dazu führen. Die Flussvisualisierung folgt einem Pfad durch Ihre Dimensionen (und Dimensionselemente) oder Metriken.
+Flussvisualisierungen helfen Ihnen dabei, die Journey zu verstehen, die von einem bestimmten Konversionsereignis auf Ihrer Website oder in Ihrer App ausgehen oder dazu führen. Sie verfolgt einen Pfad durch Ihre Dimensionen (und Dimensionselemente) oder Metriken.
 
 Mit Flussvisualisierungen können Sie den Anfang oder das Ende des Pfads, an dem Sie interessiert sind, konfigurieren oder alle Pfade analysieren, die durch eine Dimension oder ein Dimensionselement fließen.
 
@@ -57,8 +57,8 @@ Mit Flussvisualisierungen können Sie den Anfang oder das Ende des Pfads, an dem
    | **[!UICONTROL Wiederholungsinstanzen einschließen]** | Flussvisualisierungen basieren auf Instanzen einer Dimension. Diese Einstellung gibt Ihnen die Möglichkeit, wiederholte Instanzen ein- oder auszuschließen, z. B. Seitenneuladungen. Wiederholungen können jedoch nicht aus Flussvisualisierungen entfernt werden, die Dimensionen mit mehreren Werten enthalten, wie listVars, listProps, s.product, Merchandising-eVars usw. <p>Standardmäßig ist diese Option deaktiviert.</p> |
    | **[!UICONTROL Begrenzung auf erstes/letztes Auftreten]** | Begrenzen Sie Pfade auf jene, die mit dem ersten/letzten Vorkommen einer Dimension/eines Elements/einer Metrik beginnen/enden. Siehe den Abschnitt unten. [Beispielszenario für &quot;Beschränkung auf das erste/letzte Vorkommen&quot;](#example-scenario-for-limit-to-firstlast-occurrence), um eine ausführlichere Erläuterung zu erhalten. |
    | **[!UICONTROL Anzahl der Spalten]** | Die Anzahl der Spalten, die in Ihrem Flussdiagramm angezeigt werden sollen. Sie können maximal 5 Spalten angeben. |
-   | **[!UICONTROL Erweiterte Elemente pro Spalte]** | Die Anzahl der Elemente, die in jeder Spalte angezeigt werden sollen. Sie können pro Spalte maximal 10 erweiterte Elemente angeben. |
-   | **[!UICONTROL Fluss-Container]** | <ul><li>Besuch</li><li>Besucher.</li></ul> Hiermit können Sie bei der Analyse der Besucherpfade zwischen Besuch und Besucher wechseln. Mithilfe dieser Einstellungen können Sie Einblicke in Besucheraktivitäten auf der Besucherebene (besuchsübergreifend) erhalten oder die Analyse auf einen einzelnen Besuch einschränken. |
+   | **[!UICONTROL Elemente pro Spalte erweitert]** | Die Anzahl der Elemente, die in jeder Spalte angezeigt werden sollen. Sie können pro Spalte maximal 10 erweiterte Elemente angeben. |
+   | **[!UICONTROL Flussbehälter]** | <ul><li>Besuch</li><li>Besucher.</li></ul> Hiermit können Sie bei der Analyse der Besucherpfade zwischen Besuch und Besucher wechseln. Mithilfe dieser Einstellungen können Sie Einblicke in Besucheraktivitäten auf der Besucherebene (besuchsübergreifend) erhalten oder die Analyse auf einen einzelnen Besuch einschränken. |
 
    >[!IMPORTANT]
    >
@@ -120,7 +120,7 @@ Um die Daten weiter zu untersuchen, haben Sie mehrere Möglichkeiten:
 | [!UICONTROL Neu beginnen] | Bringt Sie wieder zurück in den Freiform-Diagramm-Builder, in dem Sie ein neues Flussdiagramm erstellen können. |
 | [!UICONTROL Filter für diesen Pfad erstellen] | Erstellen Sie einen Filter. Dadurch gelangen Sie zum Filtergenerator, in dem Sie den neuen Filter konfigurieren können. |
 | [!UICONTROL Aufschlüsselung] | Hiermit können Sie den Knoten nach verfügbaren Dimensionen, Metriken oder Zeiten aufschlüsseln. |
-| [!UICONTROL Spalte filtern] | Dieselben Filteroptionen werden wie in der Freiformtabelle angezeigt. Weitere Informationen zu den verfügbaren Optionen finden Sie im Abschnitt &quot;Anwenden eines einfachen oder erweiterten Filters auf eine Tabelle&quot;unter [Tabellen filtern und sortieren](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md). |
+| [!UICONTROL Filterspalte] | Dieselben Filteroptionen werden wie in der Freiformtabelle angezeigt. Weitere Informationen zu den verfügbaren Optionen finden Sie im Abschnitt &quot;Anwenden eines einfachen oder erweiterten Filters auf eine Tabelle&quot;unter [Tabellen filtern und sortieren](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md). |
 | [!UICONTROL Element ausschließen]/[!UICONTROL Ausgeschlossene Elemente wiederherstellen] | Entfernt einen bestimmten Knoten aus der Spalte und erstellt daraus automatisch einen Filter oben in der Spalte. Um das ausgeschlossene Element wiederherzustellen, klicken Sie erneut mit der rechten Maustaste und wählen Sie **[!UICONTROL Ausgeschlossenes Element wiederherstellen]**. Sie können den Filter auch oben in der Spalte öffnen und die Box mit dem Element entfernen, das Sie gerade ausgeschlossen haben. |
 | [!UICONTROL Trend] | Mit dieser Option erstellen Sie ein Trenddiagramm für den Knoten. |
 | Nächste Spalte anzeigen/Vorherige Spalte anzeigen | Zeigt die nächste (rechte) oder vorherige (linke) Spalte der Visualisierung an. |
