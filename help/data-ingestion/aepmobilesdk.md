@@ -4,10 +4,11 @@ description: Erläuterung der Datenaufnahme in Customer Journey Analytics über 
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: fb48b031-e093-4490-b457-69dbb5debe8d
-source-git-commit: caf2db9ae0b550ce47fa196a955fcceddf8bf2b7
+role: Admin
+source-git-commit: 59da35ddbdf06da354af4ab469a357caae41bd26
 workflow-type: tm+mt
-source-wordcount: '3435'
-ht-degree: 61%
+source-wordcount: '3385'
+ht-degree: 60%
 
 ---
 
@@ -100,6 +101,10 @@ Gehen Sie folgendermaßen vor, um das Schema einzurichten:
    ![Beispiel für die Schaltfläche zum Hinzufügen eines Feldes zum Schema](./assets/example-mobileschema-plus.png)
 
 1. Im [!UICONTROL Feldeigenschaften] Bereich, eingeben `identification` als [!UICONTROL Feldname], **[!UICONTROL Bezeichnung]** als [!UICONTROL Anzeigename]auswählen **[!UICONTROL Objekt]** als [!UICONTROL Typ] und wählen **[!UICONTROL ExperienceEvent Core v2.1]** als [!UICONTROL Feldergruppe].
+
+   >[!NOTE]
+   >
+   >Wenn diese Feldergruppe nicht verfügbar ist, suchen Sie nach einer anderen Feldergruppe, die Identitätsfelder enthält. Oder [eine neue Feldergruppe erstellen](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/field-groups.html?lang=en) und [Hinzufügen neuer Identitätsfelder](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/identity.html?lang=en#define-a-identity-field) (like `ecid`, `crmId`und andere erforderliche Elemente) zur Feldergruppe hinzu und wählen Sie diese neue Feldergruppe aus.
 
    ![Identifizierungsobjekt](./assets/identification-field-mobile.png)
 
@@ -258,7 +263,7 @@ Fügen Sie Ihrem -Tag die Adobe Platform Edge Network-Erweiterung hinzu, um sich
 
 So erstellen und konfigurieren Sie die Adobe Experience Platform Mobile SDK-Erweiterung:
 
-1. Wählen Sie **[!UICONTROL Erweiterungen]** in der linken Leiste aus. Sie sehen, dass die Mobile Core- und Profil-Erweiterungen bereits verfügbar sind.
+1. Auswählen **[!UICONTROL Erweiterungen]** in der linken Leiste. Sie sehen, dass die Mobile Core- und Profil-Erweiterungen bereits verfügbar sind.
 
 1. Wählen Sie **[!UICONTROL Katalog]** in der oberen Leiste aus.
 
@@ -277,8 +282,8 @@ Siehe [Konfigurieren der Adobe Experience Platform Edge Network-Erweiterung](htt
 Außerdem möchten Sie die folgenden zusätzlichen Erweiterungen aus dem Katalog einrichten:
 
 - Identität.
-- AEP-Sicherheit.
-- Einverständnis.
+- AEP Assurance.
+- Zustimmung.
 
 Siehe [Konfigurieren einer Tag-Eigenschaft](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/initial-configuration/configure-tags.html?lang=en) im Tutorial für mobile Apps für Experience Platform für viele weitere Informationen zu Erweiterungen und deren Konfiguration.
 

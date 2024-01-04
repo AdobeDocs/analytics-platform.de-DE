@@ -4,10 +4,11 @@ description: Erfahren Sie, wie Sie Daten über die Adobe Experience Platform Edg
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 6bfb7254-5bb7-45c6-86a2-0651a0d222fa
-source-git-commit: caf2db9ae0b550ce47fa196a955fcceddf8bf2b7
+role: Admin
+source-git-commit: 59da35ddbdf06da354af4ab469a357caae41bd26
 workflow-type: tm+mt
-source-wordcount: '2353'
-ht-degree: 60%
+source-wordcount: '2351'
+ht-degree: 59%
 
 ---
 
@@ -100,6 +101,10 @@ Gehen Sie folgendermaßen vor, um das Schema einzurichten:
    ![Beispiel für die Schaltfläche zum Hinzufügen eines Feldes zum Schema](./assets/example-gamingschema-plus.png)
 
 1. Im [!UICONTROL Feldeigenschaften] Bereich, eingeben `identification` als [!UICONTROL Feldname], **[!UICONTROL Bezeichnung]** als [!UICONTROL Anzeigename]auswählen **[!UICONTROL Objekt]** als [!UICONTROL Typ] und wählen **[!UICONTROL ExperienceEvent Core v2.1]** als [!UICONTROL Feldergruppe].
+
+   >[!NOTE]
+   >
+   >Wenn diese Feldergruppe nicht verfügbar ist, suchen Sie nach einer anderen Feldergruppe, die Identitätsfelder enthält. Oder [eine neue Feldergruppe erstellen](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/field-groups.html?lang=en) und [Hinzufügen neuer Identitätsfelder](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/identity.html?lang=en#define-a-identity-field) (like `ecid`, `crmId`und andere erforderliche Elemente) zur Feldergruppe hinzu und wählen Sie diese neue Feldergruppe aus.
 
    ![Identifizierungsobjekt](./assets/identification-field-gaming.png)
 
@@ -227,7 +232,7 @@ Gehen Sie folgendermaßen vor, um einen Datenstrom einzurichten:
 
 Ihr Datenspeicher ist jetzt so konfiguriert, dass die von Ihrem Spiel erfassten Daten an Ihren Datensatz in Adobe Experience Platform weitergeleitet werden.
 
-Weitere Informationen um Konfigurieren eines Datenstroms und zum Umgang mit sensiblen Daten finden Sie unter [Übersicht über Datenströme](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html?lang=de).
+Weitere Informationen um Konfigurieren eines Datenstroms und zum Umgang mit sensiblen Daten finden Sie unter [Übersicht über Datenströme](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html?lang=en).
 
 ## Verwenden der Edge Network Server-API
 
