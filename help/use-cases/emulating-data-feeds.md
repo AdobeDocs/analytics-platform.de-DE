@@ -6,9 +6,9 @@ feature: Use Cases
 hide: true
 hidefromtoc: true
 role: Admin
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 77f3c1c0f179ede05d9a10c50f74184953a16a84
 workflow-type: tm+mt
-source-wordcount: '2556'
+source-wordcount: '2558'
 ht-degree: 17%
 
 ---
@@ -66,7 +66,7 @@ Alternativ können Sie `identityMap` , um Identitäten abzufragen. Dieses Objekt
 
 Die XDM-Felder, die Sie in Ihrer Abfrage verwenden können, hängen von der Schemadefinition ab, auf der Ihre Datensätze basieren. Vergewissern Sie sich, dass Sie das dem Datensatz zugrunde liegende Schema verstehen.
 
-Um die Zuordnung zwischen den Daten-Feed-Spalten und XDM-Feldern zu vereinfachen, sollten Sie erwägen, die [Adobe Analytics ExperienceEvent-Vorlage](https://github.com/adobe/xdm/blob/master/extensions/adobe/experience/analytics/experienceevent-all.schema.json) Feldergruppe in Ihrem Erlebnisereignisschema. Siehe [Best Practices für die Datenmodellierung](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/best-practices.html?lang=en) und insbesondere [Adobe der Anwendungsschema-Feldgruppen](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/best-practices.html?lang=en#adobe-application-schema-field-groups).
+Um die Zuordnung zwischen den Daten-Feed-Spalten und XDM-Feldern zu definieren, sollten Sie einige Aspekte der [Adobe Analytics ExperienceEvent-Vorlage](https://github.com/adobe/xdm/blob/master/extensions/adobe/experience/analytics/experienceevent-all.schema.json) Feldergruppe. Siehe [Best Practices für die Datenmodellierung](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/best-practices.html?lang=en) und insbesondere [Adobe der Anwendungsschema-Feldgruppen](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/best-practices.html?lang=en#adobe-application-schema-field-groups).
 
 Beispiel: falls Sie *Seitenname* als Teil Ihres Daten-Feeds:
 
