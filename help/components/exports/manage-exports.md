@@ -5,7 +5,7 @@ title: Verwalten von Exporten
 feature: Components
 exl-id: 0c21802a-c46f-41be-9356-d836c038b174
 role: User
-source-git-commit: ad43b199d4174894f0e428bcaf1748ca80bddb45
+source-git-commit: 6f8a43acfba23d6faeff078873742315f1506699
 workflow-type: tm+mt
 source-wordcount: '1029'
 ht-degree: 4%
@@ -137,7 +137,7 @@ Wählen Sie eine Spaltenüberschrift aus, um die Exporte nach dieser Spalte zu s
    | Name | Der Name des Exports. Benutzer geben Exporten einen Namen, wenn sie sie erstellen, wie in [Customer Journey Analytics-Berichte in die Cloud exportieren](/help/analysis-workspace/export/export-cloud.md). |
    | ID | Die beim Erstellen automatisch dem Export zugewiesene Kennung. <!-- True? --> |
    | Name der Datenansicht | Der Name der mit dem Export verknüpften Datenansicht. Benutzer können die Datenansicht beim Erstellen des Exports auswählen, wie unter [Customer Journey Analytics-Berichte in die Cloud exportieren](/help/analysis-workspace/export/export-cloud.md). |
-   | Status | Der Status des Exports. Verfügbare Status sind [!UICONTROL Aktiv], [!UICONTROL Fertig], und [!UICONTROL Fehlgeschlagen].<p> **Hinweis:** Informationen zur Fehlerbehebung bei fehlgeschlagenen Exporten finden Sie unter [Fehlerbehebung bei fehlgeschlagenen Exporten](/help/components/exports/troubleshoot-exports.md).</p> |
+   | Status | Der Status des Exports. Verfügbare Status sind [!UICONTROL Aktiv], [!UICONTROL Abgeschlossen], und [!UICONTROL Fehlgeschlagen].<p> **Hinweis:** Informationen zur Fehlerbehebung bei fehlgeschlagenen Exporten finden Sie unter [Fehlerbehebung bei fehlgeschlagenen Exporten](/help/components/exports/troubleshoot-exports.md).</p> |
    | Tags | Zeigt alle Tags an, die auf den Export angewendet werden. Informationen zum Anwenden von Tags auf einen Export finden Sie unter [Export taggen](#tag-an-export). |
    | Tabellengröße (zuletzt gesendet) | Die Größe des Exports beim letzten Versand. |
    | Erstellt von | Der Benutzer, der den Export erstellt hat. |
