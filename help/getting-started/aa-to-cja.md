@@ -6,9 +6,9 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: 5e3f0aa0-ba24-48c8-948c-ebb5c270f34d
 source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1394'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -30,9 +30,9 @@ Beispiele für Identitäten sind Kunden-ID, Konto-ID oder E-Mail-ID. Für jede I
 * Die ID enthält keine persönlich identifizierbare Informationen. Wenden Sie Hashing auf alle sensiblen Elemente an.
 * Die ID verwendet dasselbe Format für alle Quellen (gleiche Länge, gleiche Hashing-Methode usw.)
 
-In Datensätzen wie Adobe Analytics ist möglicherweise nicht in jeder Datenzeile eine Identität vorhanden, aber eine sekundäre Identität schon. In diesem Fall kann die kanalübergreifende Analyse (auch als &quot;Stitching&quot;bezeichnet) verwendet werden, um die Lücke zwischen den Zeilen zu schließen, wenn ein Kunde nur durch seine ECID identifiziert wird und wenn eine Identität erfasst wird (z. B. bei der Authentifizierung eines Kunden). [Weitere Informationen](../stitching/overview.md).
+In Datensätzen wie Adobe Analytics ist möglicherweise nicht in jeder Datenzeile eine Identität vorhanden, aber eine sekundäre Identität schon. In diesem Fall kann die Cross-Channel-Analyse (früher als „Zuordnung“ oder „Stitching“ bezeichnet) verwendet werden, um die Lücke zwischen Zeilen zu schließen, wenn eine Kundin oder ein Kunde nur durch die ECID identifiziert wird und wenn eine Identität erfasst wird (z. B. bei der Authentifizierung einer Person). [Weitere Informationen](../stitching/overview.md).
 
-### 2. Variablen anpassen {#variables}
+### 2. Anpassen der Variablen {#variables}
 
 Die einfachste Methode, Adobe Analytics-Daten in Customer Journey Analytics-Daten umzuwandeln, besteht darin, eine [globale Report Suite](https://experienceleague.adobe.com/docs/analytics/implementation/prepare/global-rs.html?lang=de) mithilfe des [Adobe Analytics-Quell-Connectors](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=de) in Experience Platform aufzunehmen. Dieser Connector ordnet Ihre Adobe Analytics-Variablen direkt einem XDM-Schema und -Datensatz in Experience Platform zu, die wiederum einfach mit Customer Journey Analytics verbunden werden können.
 
@@ -71,7 +71,7 @@ Diese Methode erweitert die Möglichkeiten für die Datenerfassung deutlich: Die
 * Flexibles Schema zur Definition von erforderlichen Feldern
 * Nicht von der Adobe Analytics-Nomenklatur abhängig (Prop, eVar, Ereignis usw.)
 * Keine Längenbeschränkung (100 Zeichen für Props)
-* Schnellere Datenverfügbarkeit in Adobe Experience Platform [Anwendungsfälle für die Echtzeit-Personalisierung](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/configure-personalization-destinations.html?lang=de)
+* Schnellere Datenverfügbarkeit in Adobe Experience Platform, um [Anwendungsfälle der Echtzeit-Personalisierung](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/configure-personalization-destinations.html?lang=de) zu unterstützen
 * [Erstanbieter-Geräte-IDs](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/first-party-device-ids.html?lang=de) für eine genauere Besucheridentifizierung
 
 **Nachteile der Verwendung von Experience Platform-SDKs**
