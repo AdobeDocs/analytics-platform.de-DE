@@ -6,10 +6,10 @@ feature: Use Cases
 hide: true
 hidefromtoc: true
 role: Admin
-source-git-commit: 77f3c1c0f179ede05d9a10c50f74184953a16a84
+source-git-commit: a402c4b03c9d30235f2697e1b6ad5b1b22024c66
 workflow-type: tm+mt
-source-wordcount: '2558'
-ht-degree: 17%
+source-wordcount: '2537'
+ht-degree: 13%
 
 ---
 
@@ -57,7 +57,7 @@ Sie können alle Funktionen von Standard-ANSI SQL für SELECT-Anweisungen und an
 
 Unter Experience Platform sind verschiedene Identitäten verfügbar. Stellen Sie bei der Erstellung Ihrer Abfragen sicher, dass Sie Identitäten richtig abfragen.
 
-Oft finden Sie Identitäten in einer separaten Feldergruppe. In einer Implementierung ECID (`ecid`) kann als Teil einer Feldergruppe mit einer `core` -Objekt, das selbst Teil eines `identification` -Objekt. (Beispiel: `_sampleorg.identification.core.ecid`). Die ECIDs können in Ihren Schemas unterschiedlich organisiert sein.
+Oft finden Sie Identitäten in einer separaten Feldergruppe. In einer Implementierung ECID (`ecid`) kann als Teil einer Feldergruppe mit einer `core` -Objekt, das selbst Teil eines `identification` -Objekt (z. B.: `_sampleorg.identification.core.ecid`). Die ECIDs können in Ihren Schemas unterschiedlich organisiert sein.
 
 Alternativ können Sie `identityMap` , um Identitäten abzufragen. Dieses Objekt ist vom Typ `Map` und verwendet eine [verschachtelte Datenstruktur](#nested-data-structure).
 
@@ -73,31 +73,31 @@ Beispiel: falls Sie *Seitenname* als Teil Ihres Daten-Feeds:
 * In der Benutzeroberfläche des Adobe Analytics-Daten-Feeds wählen Sie **[!UICONTROL pagename]** als die Spalte, die zu Ihrer Datenfeed-Definition hinzugefügt werden soll.
 * In Query Service fügen Sie `web.webPageDetails.name` aus dem `sample_event_dataset_for_website_global_v1_1` Datensatz (basierend auf der **Beispielereignisschema für Website (Global v1.1)** Erlebnisereignisschema) in Ihrer Abfrage. Siehe [Feldgruppe &quot;Webdetails-Schema&quot;](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/event/web-details.html?lang=en) für weitere Informationen.
 
-Informationen zur Zuordnung zwischen früheren Adobe Analytics-Daten-Feed-Spalten und XDM-Feldern in Ihrem Erlebnisereignis-Datensatz und dem zugrunde liegenden Schema finden Sie unter [Zuordnung von Analytics-Feldern](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/mapping/analytics.html?lang=de) und [Feldergruppe Adobe Analytics ExperienceEvent Full Extension](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/event/analytics-full-extension.html?lang=en) für weitere Informationen.
+Informationen zur Zuordnung zwischen Adobe Analytics-Daten-Feed-Spalten und XDM-Feldern in Ihrem Erlebnisereignis-Datensatz und dem zugrunde liegenden Schema finden Sie unter [Zuordnung von Analytics-Feldern](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/mapping/analytics.html?lang=de) und [Feldergruppe Adobe Analytics ExperienceEvent Full Extension](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/event/analytics-full-extension.html?lang=en) für weitere Informationen.
 
 Darüber hinaus [automatisch erfasste Informationen vom Experience Platform Web SDK (standardmäßig)](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/automatic-information.html?lang=en) kann relevant sein, um Spalten für Ihre Abfrage zu identifizieren.
 
 #### Daten und Identifizierung auf Trefferebene
 
-Basierend auf der Implementierung werden traditionell in Adobe Analytics erfasste Trefferebenenddaten jetzt als Ereignisdaten mit Zeitstempel in Experience Platform gespeichert. Die folgende Tabelle wurde aus [Analytics-Feldzuordnung](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/mapping/analytics.html?lang=en#generated-mapping-fields) und zeigt Beispiele, wie Sie bestimmte Adobe Analytics-Daten-Feed-Spalten auf Trefferebene entsprechenden XDM-Feldern in Ihren Abfragen zuordnen. Die Tabelle zeigt auch Beispiele dafür, wie Treffer, Besuche und Besucher mithilfe von XDM-Feldern identifiziert werden.
+Basierend auf der Implementierung werden traditionell in Adobe Analytics erfasste Trefferebenenddaten jetzt als Ereignisdaten mit Zeitstempel in Experience Platform gespeichert. Die folgende Tabelle wurde aus [Analytics-Feldzuordnung](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/mapping/analytics.html?lang=en#generated-mapping-fields) und zeigt Beispiele, wie Sie Trefferebenenspezifische Adobe Analytics Data Feed-Spalten mit entsprechenden XDM-Feldern in Ihren Abfragen zuordnen. Die Tabelle zeigt außerdem Beispiele dafür, wie Treffer, Besuche und Besucher mithilfe von XDM-Feldern identifiziert werden.
 
 | Daten-Feed-Spalte | XDM-Feld | Typ | Beschreibung |
 |---|---|---|---|
 | hitid_high + hitid_low | _id | string | Eindeutige Kennung zur Identifizierung eines Treffers. |
-| hitid_low | _id | string | Dient zusammen mit hitid_high zur eindeutigen Identifizierung eines Treffers. |
-| hitid_high | _id | string | Dient zusammen mit hitid_high zur eindeutigen Identifizierung eines Treffers. |
-| hit_time_gmt | receivedTimestamp | string | Der Zeitstempel des Treffers basierend auf Unix-Zeit. |
-| first_hit_time_gmt | _experience.analytics.endUser.firstTimestamp | string | Zeitstempel des allerersten Treffers des Besuchers in Unix-Zeit. |
-| cust_hit_time_gmt | timestamp | string | Dieser Wert wird nur in für Zeitstempel aktivierten Datensätzen verwendet. Das ist der Zeitstempel, der mit gesendet wird und auf Unix-Zeit basiert. |
+| hitid_low | _id | string | Wird mit hitid_high zur eindeutigen Identifizierung eines Treffers verwendet. |
+| hitid_high | _id | string | Wird mit hitid_high zur eindeutigen Identifizierung eines Treffers verwendet. |
+| hit_time_gmt | receivedTimestamp | string | Der Zeitstempel des Treffers basierend auf der UNIX®-Zeit. |
+| first_hit_time_gmt | _experience.analytics.endUser.firstTimestamp | string | Zeitstempel des ersten Treffers des Besuchers in UNIX®-Zeit. |
+| cust_hit_time_gmt | timestamp | string | Dieser Wert wird nur in für Zeitstempel aktivierten Datensätzen verwendet. Dies ist der Zeitstempel, der mit dem Treffer gesendet wird, basierend auf der UNIX®-Zeit. |
 | visid_high + visid_low | identityMap | Objekt | Eindeutige Kennung für einen Besuch. |
 | visid_high + visid_low | endUserIDs._experience.aaid.id | string | Eindeutige Kennung für einen Besuch. |
-| visid_high | endUserIDs._experience.aaid.primary | boolean | Dient zusammen mit visid_low zur eindeutigen Identifizierung eines Besuchs. |
-| visid_high | endUserIDs._experience.aaid.namespace.code | string | Dient zusammen mit visid_low zur eindeutigen Identifizierung eines Besuchs. |
-| visid_low | identityMap | Objekt | Dient zusammen mit visid_high zur eindeutigen Identifizierung eines Besuchs. |
+| visid_high | endUserIDs._experience.aaid.primary | boolean | Wird mit visid_low zur eindeutigen Identifizierung eines Besuchs verwendet. |
+| visid_high | endUserIDs._experience.aaid.namespace.code | string | Wird mit visid_low zur eindeutigen Identifizierung eines Besuchs verwendet. |
+| visid_low | identityMap | Objekt | Wird mit visid_high zur eindeutigen Identifizierung eines Besuchs verwendet. |
 | cust_visid | identityMap | Objekt | Die Besucher-ID des Kunden |
 | cust_visid | endUserIDs._experience.aacustomid.id | Objekt | Die Besucher-ID des Kunden. |
 | cust_visid | endUserIDs._experience.aacustomid.primary | boolean | Der Namespace-Code der Besucher-ID des Kunden. |
-| cust_visid | endUserIDs._experience.aacustomid.namespace.code | string | Wird zusammen mit visid_low zur eindeutigen Identifizierung der Kunden-Besucher-ID verwendet. |
+| cust_visid | endUserIDs._experience.aacustomid.namespace.code | string | Wird mit visid_low zur eindeutigen Identifizierung der Kunden-Besucher-ID verwendet. |
 | geo\_* | placeContext.geo.* | Zeichenfolge, Zahl | Geolocation-Daten wie Land, Region, Stadt und andere |
 | visit_page_num | _experience.analytics.session.depth | number | Eine Variable, die in der Dimension „Treffertiefe“ verwendet wird. Der Wert erhöht sich bei jedem vom Benutzer generierten Treffer um 1 und wird nach jedem Besuch zurückgesetzt. |
 | event_list | commerce.purchases, commerce.productViews, commerce.productListOpens, commerce.checkouts, commerce.productListAdds, commerce.productListRemovals, commerce.productListViews, \_experience.analytics.event101bis200.*, ..., \_experience.analytics.event901_1000.\* | string | Standardmäßige Commerce- und benutzerspezifische Ereignisse, die beim Treffer ausgelöst werden. |
@@ -105,8 +105,8 @@ Basierend auf der Implementierung werden traditionell in Adobe Analytics erfasst
 | page_event | web.webInteraction.linkClicks.value | number | Die Art des in der Bildanforderung gesendeten Treffers (Standardtreffer, angeklickter Downloadlink, Exitlink oder benutzerspezifischer Link). |
 | page_event_var_1 | web.webInteraction.URL | string | Variable, die nur in Bildanforderungen zum Linktracking verwendet wird. Die Variable enthält die URL des angeklickten Downloadlinks, Exitlinks oder benutzerspezifischen Links. |
 | page_event_var_2 | web.webInteraction.name | string | Variable, die nur in Bildanforderungen zum Linktracking verwendet wird. Damit wird der benutzerdefinierte Name des Links aufgeführt, sofern angegeben. |
-| first_hit_ref_type | _experience.analytics.endUser.firstWeb.webReferrer.type | string | Numerische ID des Typs der verweisenden Stelle der allerersten verweisenden Stelle des Besuchers. |
-| first_hit_time_gmt | _experience.analytics.endUser.firstTimestamp | Ganzzahl | Zeitstempel des allerersten Treffers des Besuchers in Unix-Zeit. |
+| first_hit_ref_type | _experience.analytics.endUser.firstWeb.webReferrer.type | string | Numerische ID, die den Typ der verweisenden Stelle der ersten verweisenden Stelle des Besuchers darstellt. |
+| first_hit_time_gmt | _experience.analytics.endUser.firstTimestamp | Ganzzahl | Zeitstempel des ersten Treffers des Besuchers in UNIX®-Zeit. |
 | paid_search | search.isPaid | boolean | Markierung, die gesetzt wird, wenn der Treffer mit der Paid Search-Erkennung übereinstimmt. |
 | ref_type | web.webReferrertype | string | Eine numerische ID, die den Typ des Verweises für den Treffer darstellt. |
 
@@ -114,7 +114,7 @@ Basierend auf der Implementierung werden traditionell in Adobe Analytics erfasst
 
 Adobe Analytics Data Feeds verwenden das Spaltenkonzept mit einer `post_` -Präfix, d. h. Spalten, die nach der Verarbeitung Daten enthalten. Weitere Informationen finden Sie in den [häufig gestellten Fragen zu Daten-Feeds](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/df-faq.html?lang=en#post).
 
-Daten, die in Datensätzen über das Experience Platform Edge Network (Web SDK, Mobile SDK, Server API) erfasst werden, haben kein Konzept von `post_` -Felder, was erklärt, warum `post_` Präfix und *non* `post_` Präfixe Daten-Feed-Spalten in der Zuordnung von Analytics-Feldern zu denselben XDM-Feldern. Beispielsweise können beide `page_url` und `post_page_url` Daten-Feed-Spalten werden demselben `web.webPageDetails.URL` XDM-Feld.
+Daten, die in Datensätzen über das Experience Platform Edge Network (Web SDK, Mobile SDK, Server API) erfasst werden, haben kein Konzept von `post_` -Felder. Daher `post_` Präfix und *non*-`post_` Präfixe Daten-Feed-Spalten werden denselben XDM-Feldern zugeordnet. Beispielsweise können beide `page_url` und `post_page_url` Daten-Feed-Spalten werden demselben `web.webPageDetails.URL` XDM-Feld.
 
 Siehe [Datenverarbeitung in Adobe Analytics und Customer Journey Analytics vergleichen](https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/cja-aa-comparison/data-processing-comparisons.html?lang=de) für einen Überblick über die Unterschiede bei der Datenverarbeitung.
 
@@ -126,7 +126,7 @@ Zum Nachschlagen von Daten aus anderen Datensätzen verwenden Sie die SQL-Standa
 
 #### Berechnungen
 
-Verwenden Sie die SQL-Standardfunktionen (z. B. `COUNT(*)` oder [mathematische und statistische Operatoren und Funktionen](https://experienceleague.adobe.com/docs/experience-platform/query/sql/spark-sql-functions.html?lang=en#math) Teil von Spark SQL. Zusätzlich [Fensterfunktionen](https://experienceleague.adobe.com/docs/experience-platform/query/sql/adobe-defined-functions.html?lang=en#window-functions) unterstützen die Aktualisierung von Aggregationen und die Rückgabe einzelner Elemente für jede Zeile in einer sortierten Teilmenge. Siehe [Beispiele](#examples) zur Verwendung dieser Funktionen.
+Verwenden Sie die SQL-Standardfunktionen (z. B. `COUNT(*)` oder [mathematische und statistische Operatoren und Funktionen](https://experienceleague.adobe.com/docs/experience-platform/query/sql/spark-sql-functions.html?lang=en#math) Teil von Spark SQL. Außerdem [Fensterfunktionen](https://experienceleague.adobe.com/docs/experience-platform/query/sql/adobe-defined-functions.html?lang=en#window-functions) unterstützen die Aktualisierung von Aggregationen und die Rückgabe einzelner Elemente für jede Zeile in einer sortierten Teilmenge. Siehe [Beispiele](#examples) zur Verwendung dieser Funktionen.
 
 #### Verschachtelte Datenstruktur
 
@@ -168,11 +168,11 @@ Weitere Informationen finden Sie unter [Arbeiten mit verschachtelten Datenstrukt
 
 #### Beispiele
 
-Abfragen, die beispielsweise Daten aus Datensätzen im Experience Platform Data Lake verwenden, die zusätzliche Funktionen von Adobe Defined Functions und/oder Spark SQL nutzen und die ähnliche Ergebnisse wie ein äquivalenter Adobe Analytics-Daten-Feed liefern würden, finden Sie unter
+Abfragen, die Daten aus Datensätzen im Experience Platform Data Lake verwenden, nutzen die zusätzlichen Funktionen von Adobe Defined Functions und/oder Spark SQL und liefern ähnliche Ergebnisse wie ein äquivalenter Adobe Analytics-Daten-Feed, siehe
 
-* [abgebrochener Browser](https://experienceleague.adobe.com/docs/experience-platform/query/use-cases/abandoned-browse.html?lang=en),
-* [Attributionsanalyse](https://experienceleague.adobe.com/docs/experience-platform/query/use-cases/attribution-analysis.html?lang=en),
-* [Bot-Filterung](https://experienceleague.adobe.com/docs/experience-platform/query/use-cases/bot-filtering.html?lang=en),
+* [abgebrochener Browser](https://experienceleague.adobe.com/docs/experience-platform/query/use-cases/abandoned-browse.html?lang=en)
+* [Attributionsanalyse](https://experienceleague.adobe.com/docs/experience-platform/query/use-cases/attribution-analysis.html?lang=en)
+* [Bot-Filterung](https://experienceleague.adobe.com/docs/experience-platform/query/use-cases/bot-filtering.html?lang=en)
 * und anderen Beispielanwendungsfällen im Query Service-Handbuch.
 
 
@@ -238,7 +238,7 @@ Alternativ können Sie den Export von Ausgabedatensets mithilfe von APIs exporti
 
 #### Erste Schritte
 
-Vergewissern Sie sich, dass [erforderliche Berechtigungen](https://experienceleague.adobe.com/docs/experience-platform/destinations/api/export-datasets.html#permissions) , um Datensätze zu exportieren, und dass das Ziel, an das Sie Ihren Ausgabedatensatz senden möchten, den Export von Datensätzen unterstützt. Sie müssen [Werte für erforderliche und optionale Kopfzeilen erfassen](https://experienceleague.adobe.com/docs/experience-platform/destinations/api/export-datasets.html#gather-values-headers) Sie verwenden in den API-Aufrufen sowie [Identifizieren der Verbindungsspezifikations- und Flussspezifikations-IDs des Ziels](https://experienceleague.adobe.com/docs/experience-platform/destinations/api/export-datasets.html#gather-connection-spec-flow-spec) Sie beabsichtigen, Datensätze in zu exportieren.
+Um Datensätze zu exportieren, stellen Sie sicher, dass Sie über die [erforderliche Berechtigungen](https://experienceleague.adobe.com/docs/experience-platform/destinations/api/export-datasets.html#permissions). Überprüfen Sie außerdem, ob das Ziel, an das Sie Ihren Ausgabedatensatz senden möchten, den Export von Datensätzen unterstützt. Sie müssen [Werte für erforderliche und optionale Kopfzeilen erfassen](https://experienceleague.adobe.com/docs/experience-platform/destinations/api/export-datasets.html#gather-values-headers) , die Sie in den API-Aufrufen verwenden. Sie müssen auch [Identifizieren der Verbindungsspezifikations- und Flussspezifikations-IDs des Ziels](https://experienceleague.adobe.com/docs/experience-platform/destinations/api/export-datasets.html#gather-connection-spec-flow-spec) Sie beabsichtigen, Datensätze in zu exportieren.
 
 #### Abrufen zulässiger Datensätze
 
