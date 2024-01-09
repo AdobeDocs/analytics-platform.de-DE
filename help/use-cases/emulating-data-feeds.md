@@ -6,10 +6,10 @@ feature: Use Cases
 hide: true
 hidefromtoc: true
 role: Admin
-source-git-commit: a402c4b03c9d30235f2697e1b6ad5b1b22024c66
+source-git-commit: f062f8599dcc22b792369c310ceebcb283447d76
 workflow-type: tm+mt
-source-wordcount: '2537'
-ht-degree: 13%
+source-wordcount: '2402'
+ht-degree: 10%
 
 ---
 
@@ -52,30 +52,36 @@ Sie können alle Funktionen von Standard-ANSI SQL für SELECT-Anweisungen und an
 * [metadata PostgreSQL-Befehle](https://experienceleague.adobe.com/docs/experience-platform/query/sql/metadata.html?lang=en),
 * [vorbereitete Anweisungen](https://experienceleague.adobe.com/docs/experience-platform/query/sql/prepared-statements.html?lang=en).
 
-
-#### Identitäten
-
-Unter Experience Platform sind verschiedene Identitäten verfügbar. Stellen Sie bei der Erstellung Ihrer Abfragen sicher, dass Sie Identitäten richtig abfragen.
-
-Oft finden Sie Identitäten in einer separaten Feldergruppe. In einer Implementierung ECID (`ecid`) kann als Teil einer Feldergruppe mit einer `core` -Objekt, das selbst Teil eines `identification` -Objekt (z. B.: `_sampleorg.identification.core.ecid`). Die ECIDs können in Ihren Schemas unterschiedlich organisiert sein.
-
-Alternativ können Sie `identityMap` , um Identitäten abzufragen. Dieses Objekt ist vom Typ `Map` und verwendet eine [verschachtelte Datenstruktur](#nested-data-structure).
-
-
 #### Daten-Feed-Spalten
 
-Die XDM-Felder, die Sie in Ihrer Abfrage verwenden können, hängen von der Schemadefinition ab, auf der Ihre Datensätze basieren. Vergewissern Sie sich, dass Sie das dem Datensatz zugrunde liegende Schema verstehen.
+Die XDM-Felder, die Sie in Ihrer Abfrage verwenden können, hängen von der Schemadefinition ab, auf der Ihre Datensätze basieren. Vergewissern Sie sich, dass Sie das dem Datensatz zugrunde liegende Schema verstehen. Siehe [Handbuch zur Benutzeroberfläche von Datensätzen](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/user-guide.html?lang=de) für weitere Informationen.
 
-Um die Zuordnung zwischen den Daten-Feed-Spalten und XDM-Feldern zu definieren, sollten Sie einige Aspekte der [Adobe Analytics ExperienceEvent-Vorlage](https://github.com/adobe/xdm/blob/master/extensions/adobe/experience/analytics/experienceevent-all.schema.json) Feldergruppe. Siehe [Best Practices für die Datenmodellierung](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/best-practices.html?lang=en) und insbesondere [Adobe der Anwendungsschema-Feldgruppen](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/best-practices.html?lang=en#adobe-application-schema-field-groups).
+Informationen zum Definieren der Zuordnung zwischen den Daten-Feed-Spalten und XDM-Feldern finden Sie unter [Analytics-Feldzuordnung](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/mapping/analytics.html?lang=de). Siehe auch [Übersicht über die Benutzeroberfläche von Schemas](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/overview.html?lang=en#defining-xdm-fields) für weitere Informationen zum Verwalten von XDM-Ressourcen, einschließlich Schemas, Klassen, Feldergruppen und Datentypen.
 
 Beispiel: falls Sie *Seitenname* als Teil Ihres Daten-Feeds:
 
 * In der Benutzeroberfläche des Adobe Analytics-Daten-Feeds wählen Sie **[!UICONTROL pagename]** als die Spalte, die zu Ihrer Datenfeed-Definition hinzugefügt werden soll.
 * In Query Service fügen Sie `web.webPageDetails.name` aus dem `sample_event_dataset_for_website_global_v1_1` Datensatz (basierend auf der **Beispielereignisschema für Website (Global v1.1)** Erlebnisereignisschema) in Ihrer Abfrage. Siehe [Feldgruppe &quot;Webdetails-Schema&quot;](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/event/web-details.html?lang=en) für weitere Informationen.
 
-Informationen zur Zuordnung zwischen Adobe Analytics-Daten-Feed-Spalten und XDM-Feldern in Ihrem Erlebnisereignis-Datensatz und dem zugrunde liegenden Schema finden Sie unter [Zuordnung von Analytics-Feldern](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/mapping/analytics.html?lang=de) und [Feldergruppe Adobe Analytics ExperienceEvent Full Extension](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/event/analytics-full-extension.html?lang=en) für weitere Informationen.
+<!--
+To understand the mapping between Adobe Analytics data feed columns and XDM fields in your experience event dataset and underlying schema, see [Analytics fields mapping](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/mapping/analytics.html?lang=en) and [Adobe Analytics ExperienceEvent Full Extension schema field group](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/event/analytics-full-extension.html?lang=en) for more information.
 
-Darüber hinaus [automatisch erfasste Informationen vom Experience Platform Web SDK (standardmäßig)](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/automatic-information.html?lang=en) kann relevant sein, um Spalten für Ihre Abfrage zu identifizieren.
+Furthermore, the [automatically collected information by the Experience Platform Web SDK (out of the box)](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/automatic-information.html?lang=en) might be relevant to identify columns for your query.
+-->
+
+#### Identitäten
+
+Unter Experience Platform sind verschiedene Identitäten verfügbar. Stellen Sie bei der Erstellung Ihrer Abfragen sicher, dass Sie Identitäten richtig abfragen.
+
+
+Oft finden Sie Identitäten in einer separaten Feldergruppe. In einer Implementierung ECID (`ecid`) kann als Teil einer Feldergruppe mit einer `core` -Objekt, das selbst Teil eines `identification` -Objekt (z. B.: `_sampleorg.identification.core.ecid`). Die ECIDs können in Ihren Schemas unterschiedlich organisiert sein.
+
+Alternativ können Sie `identityMap` , um Identitäten abzufragen. Dieses Objekt ist vom Typ `Map` und verwendet eine [verschachtelte Datenstruktur](#nested-data-structure).
+
+Siehe [Identitätsfelder in der Benutzeroberfläche definieren](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/identity.html?lang=en) für weitere Informationen zur Definition von Identitätsfeldern in Experience Platform.
+
+Siehe Abschnitt [Primäre IDs in Analytics-Daten](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=en#primary-identifiers-in-analytics-data) für ein Verständnis, wie Adobe Analytics-Identitäten bei Verwendung des Analytics-Quell-Connectors Experience Platform-Identitäten zugeordnet werden. Dies kann als Anleitung zum Einrichten Ihrer Identitäten dienen, auch wenn Sie den Analytics-Quell-Connector nicht verwenden.
+
 
 #### Daten und Identifizierung auf Trefferebene
 
@@ -83,32 +89,28 @@ Basierend auf der Implementierung werden traditionell in Adobe Analytics erfasst
 
 | Daten-Feed-Spalte | XDM-Feld | Typ | Beschreibung |
 |---|---|---|---|
-| hitid_high + hitid_low | _id | string | Eindeutige Kennung zur Identifizierung eines Treffers. |
-| hitid_low | _id | string | Wird mit hitid_high zur eindeutigen Identifizierung eines Treffers verwendet. |
-| hitid_high | _id | string | Wird mit hitid_high zur eindeutigen Identifizierung eines Treffers verwendet. |
-| hit_time_gmt | receivedTimestamp | string | Der Zeitstempel des Treffers basierend auf der UNIX®-Zeit. |
-| first_hit_time_gmt | _experience.analytics.endUser.firstTimestamp | string | Zeitstempel des ersten Treffers des Besuchers in UNIX®-Zeit. |
-| cust_hit_time_gmt | timestamp | string | Dieser Wert wird nur in für Zeitstempel aktivierten Datensätzen verwendet. Dies ist der Zeitstempel, der mit dem Treffer gesendet wird, basierend auf der UNIX®-Zeit. |
-| visid_high + visid_low | identityMap | Objekt | Eindeutige Kennung für einen Besuch. |
-| visid_high + visid_low | endUserIDs._experience.aaid.id | string | Eindeutige Kennung für einen Besuch. |
-| visid_high | endUserIDs._experience.aaid.primary | boolean | Wird mit visid_low zur eindeutigen Identifizierung eines Besuchs verwendet. |
-| visid_high | endUserIDs._experience.aaid.namespace.code | string | Wird mit visid_low zur eindeutigen Identifizierung eines Besuchs verwendet. |
-| visid_low | identityMap | Objekt | Wird mit visid_high zur eindeutigen Identifizierung eines Besuchs verwendet. |
-| cust_visid | identityMap | Objekt | Die Besucher-ID des Kunden |
-| cust_visid | endUserIDs._experience.aacustomid.id | Objekt | Die Besucher-ID des Kunden. |
-| cust_visid | endUserIDs._experience.aacustomid.primary | boolean | Der Namespace-Code der Besucher-ID des Kunden. |
-| cust_visid | endUserIDs._experience.aacustomid.namespace.code | string | Wird mit visid_low zur eindeutigen Identifizierung der Kunden-Besucher-ID verwendet. |
-| geo\_* | placeContext.geo.* | Zeichenfolge, Zahl | Geolocation-Daten wie Land, Region, Stadt und andere |
-| visit_page_num | _experience.analytics.session.depth | number | Eine Variable, die in der Dimension „Treffertiefe“ verwendet wird. Der Wert erhöht sich bei jedem vom Benutzer generierten Treffer um 1 und wird nach jedem Besuch zurückgesetzt. |
-| event_list | commerce.purchases, commerce.productViews, commerce.productListOpens, commerce.checkouts, commerce.productListAdds, commerce.productListRemovals, commerce.productListViews, \_experience.analytics.event101bis200.*, ..., \_experience.analytics.event901_1000.\* | string | Standardmäßige Commerce- und benutzerspezifische Ereignisse, die beim Treffer ausgelöst werden. |
-| page_event | web.webInteraction.type | string | Die Art des in der Bildanforderung gesendeten Treffers (Standardtreffer, angeklickter Downloadlink, Exitlink oder benutzerspezifischer Link). |
-| page_event | web.webInteraction.linkClicks.value | number | Die Art des in der Bildanforderung gesendeten Treffers (Standardtreffer, angeklickter Downloadlink, Exitlink oder benutzerspezifischer Link). |
-| page_event_var_1 | web.webInteraction.URL | string | Variable, die nur in Bildanforderungen zum Linktracking verwendet wird. Die Variable enthält die URL des angeklickten Downloadlinks, Exitlinks oder benutzerspezifischen Links. |
-| page_event_var_2 | web.webInteraction.name | string | Variable, die nur in Bildanforderungen zum Linktracking verwendet wird. Damit wird der benutzerdefinierte Name des Links aufgeführt, sofern angegeben. |
-| first_hit_ref_type | _experience.analytics.endUser.firstWeb.webReferrer.type | string | Numerische ID, die den Typ der verweisenden Stelle der ersten verweisenden Stelle des Besuchers darstellt. |
-| first_hit_time_gmt | _experience.analytics.endUser.firstTimestamp | Ganzzahl | Zeitstempel des ersten Treffers des Besuchers in UNIX®-Zeit. |
-| paid_search | search.isPaid | boolean | Markierung, die gesetzt wird, wenn der Treffer mit der Paid Search-Erkennung übereinstimmt. |
-| ref_type | web.webReferrertype | string | Eine numerische ID, die den Typ des Verweises für den Treffer darstellt. |
+| `hitid_high` + `hitid_low` | `_id` | string | Eindeutige Kennung zur Identifizierung eines Treffers. |
+| `hitid_low` | `_id` | string | Verwendet mit `hitid_high` zur eindeutigen Identifizierung eines Treffers. |
+| `hitid_high` | `_id` | string | Verwendet mit `hitid_high` zur eindeutigen Identifizierung eines Treffers. |
+| `hit_time_gmt` | `receivedTimestamp` | string | Der Zeitstempel des Treffers basierend auf der UNIX®-Zeit. |
+| `cust_hit_time_gmt` | `timestamp` | string | Dieser Wert wird nur in für Zeitstempel aktivierten Datensätzen verwendet. Dies ist der Zeitstempel, der mit dem Treffer gesendet wird, basierend auf der UNIX®-Zeit. |
+| `visid_high` + `visid_low` | `identityMap` | Objekt | Eindeutige Kennung für einen Besuch. |
+| `visid_high` + `visid_low` | `endUserIDs._experience.aaid.id` | string | Eindeutige Kennung für einen Besuch. |
+| `visid_high` | `endUserIDs._experience.aaid.primary` | boolean | Verwendet mit `visid_low` zur eindeutigen Identifizierung eines Besuchs. |
+| `visid_high` | `endUserIDs._experience.aaid.namespace.code` | string | Verwendet mit `visid_low` zur eindeutigen Identifizierung eines Besuchs. |
+| `visid_low` | `identityMap` | Objekt | Verwendet mit `visid_high` zur eindeutigen Identifizierung eines Besuchs. |
+| `cust_visid` | `identityMap` | Objekt | Die Besucher-ID des Kunden. |
+| `cust_visid` | `endUserIDs._experience.aacustomid.id` | Objekt | Die Besucher-ID des Kunden. |
+| `cust_visid` | `endUserIDs._experience.aacustomid.primary` | boolean | Der Namespace-Code der Besucher-ID des Kunden. |
+| `cust_visid` | `endUserIDs._experience.aacustomid.namespace.code` | string | Verwendet mit `visid_low` zur eindeutigen Identifizierung der Kunden-Besucher-ID. |
+| `geo\_*` | `placeContext.geo.* ` | Zeichenfolge, Zahl | Geolocation-Daten wie Land, Region, Stadt und andere |
+| `event_list` | `commerce.purchases`, `commerce.productViews`, `commerce.productListOpens`, `commerce.checkouts`, `commerce.productListAdds`, `commerce.productListRemovals`, `commerce.productListViews`, `_experience.analytics.event101to200.*`, ... `_experience.analytics.event901_1000.*` | string | Standardmäßige Commerce- und benutzerspezifische Ereignisse, die beim Treffer ausgelöst werden. |
+| `page_event` | `web.webInteraction.type` | string | Die Art des in der Bildanforderung gesendeten Treffers (Standardtreffer, angeklickter Downloadlink, Exitlink oder benutzerspezifischer Link). |
+| `page_event` | `web.webInteraction.linkClicks.value` | number | Die Art des in der Bildanforderung gesendeten Treffers (Standardtreffer, angeklickter Downloadlink, Exitlink oder benutzerspezifischer Link). |
+| `page_event_var_1` | `web.webInteraction.URL` | string | Variable, die nur in Bildanforderungen zum Linktracking verwendet wird. Die Variable enthält die URL des angeklickten Downloadlinks, Exitlinks oder benutzerspezifischen Links. |
+| `page_event_var_2` | `web.webInteraction.name` | string | Variable, die nur in Bildanforderungen zum Linktracking verwendet wird. Damit wird der benutzerdefinierte Name des Links aufgeführt, sofern angegeben. |
+| `paid_search` | `search.isPaid` | boolean | Markierung, die gesetzt wird, wenn der Treffer mit der Paid Search-Erkennung übereinstimmt. |
+| `ref_type` | `web.webReferrertype` | string | Eine numerische ID, die den Typ des Verweises für den Treffer darstellt. |
 
 #### Post-Spalten
 
