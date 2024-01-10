@@ -4,9 +4,9 @@ description: Erfahren Sie mehr über die Limits für Customer Journey Analytics
 solution: Customer Journey Analytics
 feature: Administration
 role: Admin
-source-git-commit: f436084d71f19e9cf3dd67287e510e07586d58f6
+source-git-commit: 85aea47146d4079606ccdeb1bcc29d41bbf49837
 workflow-type: tm+mt
-source-wordcount: '1478'
+source-wordcount: '1480'
 ht-degree: 14%
 
 ---
@@ -76,7 +76,7 @@ Einige der Funktionen und der zugehörige Wert für die Begrenzung hängen vom C
 | Aktualisierungshäufigkeit der Zielgruppe | 4 | Systemerzwungene Limits | Maximale Häufigkeit in Stunden und [audience](../components/audiences/audiences-overview.md) aktualisiert werden. | |
 | Lookback-Fenster für Zielgruppenaktualisierung | 90 | Systemerzwungene Limits | Maximale Anzahl von Tagen für das Lookback-Fenster &quot;Aktualisieren&quot;. |
 | Aktualisieren des Zielgruppenablaufdatums | 13 | Systemerzwungene Limits | Die maximale Anzahl von Monaten für die Audience wird ab dem Erstellungsdatum nicht mehr aktualisiert. Kunden können dies um weitere 13 Monate verlängern. |
-| Anzahl der aktualisierten Zielgruppen | 75, 100, 150 | Systemerzwungene Limits | Maximale Anzahl aktualisierter Zielgruppen, der Wert variiert je nach Package. |
+| Anzahl der aktualisierten Zielgruppen | 75.100 | Systemerzwungene Limits | Maximale Anzahl aktualisierter Zielgruppen; der Wert variiert je nach Paket (siehe Produktbeschreibung). |
 
 {style="table-layout:auto"}
 
