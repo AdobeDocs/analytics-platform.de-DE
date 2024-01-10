@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Derived Fields
 exl-id: bcd172b2-cd13-421a-92c6-e8c53fa95936
 role: Admin
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 1d248ebfef9c5f31662f74535a005b6cd7ccea15
 workflow-type: tm+mt
-source-wordcount: '5783'
+source-wordcount: '5933'
 ht-degree: 13%
 
 ---
@@ -1280,6 +1280,34 @@ Die folgenden Einschränkungen gelten für die Funktion für abgeleitete Felder 
 - Sie können beim Definieren von Regeln für ein abgeleitetes Feld maximal zehn verschiedene Schemafelder (ohne Standardfelder) verwenden.
    - Von diesen maximal zehn verschiedenen Schemafeldern sind maximal drei Lookup-Schema- oder Profilschemafelder zulässig.
 - Pro Customer Journey Analytics-Verbindung können maximal 100 abgeleitete Felder verwendet werden.
+
+
+### Zusammenfassung der Funktionsbeschränkungen
+
+| Funktion | Beschränkungen |
+|---|---|
+| <p>Fall wenn</p> | <ul><li>5 Fall Wenn Funktionen eines abgeleiteten Felds</li><li>200 Operatoren pro abgeleitetem Feld</li></ul> |
+| <p>Klassifizieren</p> | <ul><li>5 Klassifizieren von Funktionen pro abgeleitetem Feld</li><li>100 Zeilen pro Funktion</li></ul> |
+| <p>Verketten</p> | <ul><li>2 Funktionen pro abgeleitetem Feld verketten</li></ul> |
+| <p>Suchen und Ersetzen</p> | <ul><li>2 Funktionen zum Suchen und Ersetzen für abgeleitetes Feld</li></ul> |
+| <p>Nachschlagen</p> | <ul><li>5 Suchfunktionen pro abgeleitetem Feld</li></ul> |
+| <p>Kleinschreibung</p> | <ul><li>2 Funktionen in Kleinbuchstaben pro abgeleitetem Feld</li></ul> |
+| <p>Felder zusammenführen</p> | <ul><li>2 Funktionen zum Zusammenführen von Feldern pro abgeleitetem Feld</li></ul> |
+| <p>Regulären Ausdruck ersetzen</p> | <ul><li>1 Regex-Ersetzungsfunktion pro abgeleitetem Feld</li></ul> |
+| <p>Split</p> | <ul><li>5 Aufspaltungsfunktionen pro abgeleitetem Feld</li></ul> |
+| <p>Zuschneiden</p> | <ul><li>1 Trimmfunktion pro abgeleitetem Feld</li></ul> |
+| <p>URL-Parsen</p> | <ul><li>5 URL-Parsen-Funktionen pro abgeleitetem Feld</li></ul> |
+
+{style="table-layout:auto"}
+
+### Operatoren
+
+Ein Operator in einem If - oder Else If -Konstrukt in einer Case When -Funktion ist die Kombination einer Bedingung mit **one** -Wert. Jeder zusätzliche Wert für das Kriterium erhöht die Anzahl der Benutzer.
+
+In der folgenden Bedingung werden beispielsweise 13 Operatoren verwendet.
+
+![Beispieloperatoren](assets/operators-sample.png)
+
 
 ## Weitere Informationen
 
