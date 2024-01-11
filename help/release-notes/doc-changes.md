@@ -4,16 +4,26 @@ description: Listet Inhaltsaktualisierungen für Dokumentation zu Customer Journ
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 6ae65a3356df4ce1b72cd30b055d4db734488235
 workflow-type: tm+mt
-source-wordcount: '2756'
-ht-degree: 91%
+source-wordcount: '2781'
+ht-degree: 90%
 
 ---
 
 # Customer Journey Analytics – Aktualisierungen der Dokumentation
 
 Die folgenden Aktualisierungen wurden seit der ersten Erstellung der Customer Journey Analytics-Dokumentation vorgenommen.
+
+## 2024
+
+| Funktion | Beschreibung |
+| --- | --- |
+| **Januar 2024** | |
+| Abgeleitete Felder | Die Zusammenfassung der Funktion wurde hinzugefügt. [Einschränkungen](/help/data-views/derived-fields/derived-fields.md#limitations) und Erläuterung, wie die Anzahl der [Operatoren](/help/data-views/derived-fields/derived-fields.md#operators) in einer Funktion verwendet. |
+
+{style="table-layout:auto"}
+
 
 ## 2023
 
@@ -94,6 +104,8 @@ Die folgenden Aktualisierungen wurden seit der ersten Erstellung der Customer Jo
 | Landingpage | Neue Landingpage-Updates [Landingpage](/help/getting-started/landing.md). |
 | Erstellen von Zeitplänen für Arbeitsmappen | Spezifische Seite, auf der das [Planen von Arbeitsmappen](/help/report-builder/schedule-reportbuilder.md) in Report Builder beschrieben wird. |
 | Objekt-Array-Unterstützung für Profil- und Lookup-Datensätze | [Verwenden von Objekt-Arrays](/help/use-cases/object-arrays.md) und [Aufnehmen von Adobe Experience Platform-Zielgruppen](/help/use-cases/data-ingestion/ingest-aep-segments.md) wurden aktualisiert und enthalten nun Informationen zur Objekt-Array-Unterstützung für Profil- und Lookup-Datensätze. |
+
+{style="table-layout:auto"}
 
 ## 2022
 
