@@ -6,10 +6,10 @@ feature: Basics
 exl-id: c258fa39-c0b6-45a1-8547-79516c15a215
 mini-toc-levels: 3
 role: Admin
-source-git-commit: 05bd88ea215d0b41c58221b42581a8fd09a019b3
+source-git-commit: 75413a38b9291cc8c31de3f2389ae74a31e7b00c
 workflow-type: tm+mt
-source-wordcount: '969'
-ht-degree: 76%
+source-wordcount: '942'
+ht-degree: 78%
 
 ---
 
@@ -93,7 +93,7 @@ Die Registerkarte **[!UICONTROL Berechtigungen]** ist Teil jedes Produktprofils 
 | **[!UICONTROL Zugriff auf Auditprotokolle]** | Diese Berechtigung erzwingt die Berechtigungsprüfung für die [API](https://adobe.io/cja-apis/docs/endpoints/auditlogs/) und die Benutzeroberfläche für Administratorprotokolle. |
 | **[!UICONTROL Verwaltung der Reporting-Nutzung]** | Ermöglicht Benutzenden das Anzeigen und Löschen aller in ihrem Unternehmen laufenden Berichte. |
 | **[!UICONTROL Anzeige der Reporting-Nutzung]** | Ermöglicht Benutzenden die Anzeige aller gleichzeitigen Berichtsanfragen. |
-| [!UICONTROL **Vollständiger Tabellenexport**] | Ermöglicht Benutzern [vollständige Tabellen in die Cloud exportieren](/help/analysis-workspace/export/export-cloud.md). <p>Informationen zum Hinzufügen des Zielzugriffs für Customer Journey Analytics-Benutzer in Adobe Experience Platform finden Sie unter [Ziele und Zugriffskontrolle](https://experienceleague.adobe.com/docs/experience-platform/destinations/home.html?lang=en#access-controls) in [Ziele - Übersicht](https://experienceleague.adobe.com/docs/experience-platform/destinations/home.html?lang=de)</p> |
+| [!UICONTROL **Vollständiger Tabellenexport**] | Ermöglicht Benutzern [vollständige Tabellen in die Cloud exportieren](/help/analysis-workspace/export/export-cloud.md). |
 | **[!UICONTROL Erstellung berechneter Metriken]** | Ermöglicht Benutzenden die Erstellung von [berechneten Metriken](/help/components/calc-metrics/calc-metr-overview.md). |
 | **[!UICONTROL Filter-Erstellung]** | Ermöglicht Benutzenden die Erstellung von [Filtern](/help/components/filters/filters-overview.md). |
 | **[!UICONTROL Labs-Zugriff]** | Ermöglicht Benutzern den Zugriff auf [Labs](/help/labs/labs.md) Registerkarte in Customer Journey Analytics. |
