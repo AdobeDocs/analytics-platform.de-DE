@@ -6,151 +6,199 @@ exl-id: 0a87518c-3608-44ad-b5e3-976f97560433
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 0b41cc80310c49bd1b0c73f1323f86c8b280e15f
 workflow-type: tm+mt
-source-wordcount: '1791'
-ht-degree: 92%
+source-wordcount: '2487'
+ht-degree: 27%
 
 ---
 
 # Verbindungen verwalten
 
-Nachdem Benutzer mit Administratorenrechten [eine oder mehrere Verbindungen erstellt haben](/help/connections/create-connection.md), können sie diese im [!UICONTROL Verbindungs-Manager] verwalten. Das neueste Update für das Verbindungserlebnis bietet zwei wichtige Funktionen auf der Seite „Verbindungsdetails“, die weiter unten auf dieser Seite beschrieben werden:
+Einmal [eine oder mehrere Verbindungen erstellt oder bearbeitet](/help/connections/create-connection.md)können Sie sie in **[!UICONTROL Verbindungen]**. Verbindungen ermöglichen Ihnen Folgendes:
 
-* Damit können Sie den **Status der Datensätze Ihrer Verbindung und des Aufnahmevorgangs** überprüfen. Mit dieser Statusprüfung erfahren Sie, wann Ihre Daten verfügbar sind, damit Sie in Analysis Workspace mit der Analyse beginnen können.
-
-* Damit können Sie **alle Datendiskrepanzen identifizieren**, die aufgrund einer Fehlkonfiguration entstanden sind bzw. entstehen. Fehlen Zeilen? Wenn ja, welche Zeilen fehlen und warum? Haben Sie Verbindungen falsch konfiguriert und fehlende Daten im Customer Journey Analytics verursacht?
-
-Im Folgenden finden Sie ein Video zum neuen Verbindungs-Manager:
-
->[!VIDEO](https://video.tv.adobe.com/v/342097/?quality=12&learn=on)
-
-## Verbindungs-Manager {#connections-manager}
-
-Der Verbindungs-Manager ermöglicht Ihnen Folgendes:
-
-* Lassen Sie sich alle Verbindungen auf einen Blick anzeigen, einschließlich Eigentümer, Sandbox und des Zeitpunkts der Erstellung und Änderung.
-* Lassen Sie sich alle Datensätze in einer Verbindung anzeigen.
-* Status einer Verbindung überprüfen.
+* Zeigen Sie alle Verbindungen auf einen Blick an, einschließlich des Eigentümers, der Sandbox und des Zeitpunkts der Erstellung und Änderung der Verbindungen.
+* Bearbeiten Sie eine Verbindung.
 * Eine Verbindung löschen.
-* Eine Verbindung umbenennen.
 * Eine Datenschicht aus einer Verbindung erstellen.
+* Lassen Sie sich alle Datensätze in einer Verbindung anzeigen.
+* Überprüfen Sie den Status der Datensätze Ihrer Verbindung und den Status des Aufnahmevorgangs. Wann sind Ihre Daten beispielsweise verfügbar, damit Sie mit der Berichterstellung und Analyse in Analysis Workspace beginnen können.
+* Identifizieren Sie alle Datendiskrepanzen aufgrund einer Fehlkonfiguration. Fehlen Zeilen? Wenn ja, welche Zeilen fehlen und warum? Haben Sie Verbindungen falsch konfiguriert und fehlende Daten im Customer Journey Analytics verursacht?
 
-![](assets/conn-manager.png)
 
-### Verbindungs-Manager-Einstellungen
+Eine Tabelle zeigt alle verfügbaren Verbindungen. Mithilfe der Suche können Sie schnell nach einer Verbindung suchen ![Suche](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) ankreuzen.
 
-| Einstellung | Beschreibung |
+Die folgenden Spalten/Symbole sind in der Tabelle verfügbar.
+
+| Spalte/Symbol | Beschreibung |
 | --- | --- |
-| [!UICONTROL Name] | Der Anzeigename der Verbindung. Wenn Sie auf den Hyperlink-Namen klicken, gelangen Sie zur Seite „Verbindungsdetails“, die unten beschrieben wird. |
-| Verbindungsinformationen | Klicken Sie auf das Informationssymbol neben dem Verbindungsnamen, um die folgenden Informationen anzuzeigen: ![Verbindungsinformationen anzeigen](assets/conn-info.png) |
-| Verbindung bearbeiten | Klicken Sie auf die Auslassungszeichen (…) neben dem Verbindungsnamen und dann auf [!UICONTROL Bearbeiten].![Bearbeiten einer Verbindung](assets/conn-edit-delete.png) Weitere Informationen finden Sie weiter unten unter „Bearbeiten einer Verbindung“. |
-| Eine Verbindung löschen | Klicken Sie auf die Auslassungszeichen (…) neben dem Verbindungsnamen und dann auf [!UICONTROL Löschen]. Weitere Informationen finden Sie weiter unten unter der Überschrift „Löschen von Verbindungen“. |
-| Datenansicht erstellen | Klicken Sie auf die Auslassungszeichen (…) neben dem Verbindungsnamen und dann auf [!UICONTROL Datenansicht erstellen]. Diese Aktion erstellt eine neue Datenansicht, die auf dieser Verbindung basiert. [Weitere Infos](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views.html?lang=de) |
-| [!UICONTROL Datensätze] | Die Datensätze, die Teil der Verbindung sind. Sie können auf den Hyperlink klicken, um alle Datensätze in der Verbindung anzuzeigen. Wenn Sie auf einen Datensatz klicken, wird dieser Datensatz in Adobe Experience Platform in einer neuen Registerkarte geöffnet. |
-| [!UICONTROL Sandbox] | Die [Sandbox von Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/sandbox/home.html?lang=de), aus der diese Verbindung ihre Datensätze zieht. Diese Sandbox wurde beim erstmaligen Erstellen der Verbindung ausgewählt. Sie kann nicht geändert werden. |
+| [!UICONTROL Name] | Der Anzeigename der Verbindung. Um die Details der Verbindung anzuzeigen, wählen Sie den Hyperlink-Namen aus. Siehe [Verbindungsdetails](#connection-details). |
+| ![Informationen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg) | So zeigen Sie Informationen an [!UICONTROL Enthaltene Datensätze], [!UICONTROL Sandbox], [!UICONTROL Inhaber]und wählen Sie ![Informationen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg) neben dem Verbindungsnamen.<p>In einem Popup-Fenster werden Details angezeigt. <p><img src="./assets/conn-info.png" alt="Verbindungsinformationen anzeigen" width="50%" /> |
+| ![Datenansicht](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataAdd_18_N.svg) | nach [Datenansicht erstellen](#create-a-data-view) Wählen Sie für die Verbindung ![Datenansicht](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataAdd_18_N.svg) . Dieses Symbol wird nur angezeigt, wenn der Verbindung bereits keine Datenansicht zugeordnet ist. |
+| ![Mehr](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) | Auswählen ![Mehr](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) an: <p>![Bearbeiten](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) [Bearbeiten](#edit-a-connection) eine Verbindung.<p>![Löschen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Delete_18_N.svg) [Löschen](#delete-a-connection) eine Verbindung.<p>![Datenansicht](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataAdd_18_N.svg) [Neue Datenansicht erstellen](#create-a-data-view). Verwenden Sie dies, um zusätzliche Datenansichten für die Verbindung zu erstellen. |
+| [!UICONTROL Datensätze] | Zeigt eine oder mehrere Links zu den Datensätzen an, die Teil der Verbindung sind. Sie können den Datensatz-Hyperlink auswählen, um den Datensatz in der Verbindung anzuzeigen. Wenn weitere Datensätze Teil der ausgewählten Verbindung sind, wählen Sie **[!UICONTROL +*x* more]** , um **[!UICONTROL Enthaltene Datensätze]** Bedienfeld. In diesem Bereich werden Links zu allen Datensätzen und eine Option zur Suche nach einem bestimmten Datensatz angezeigt, der Teil der Verbindung ist.<p><img src="./assets/datasets-included.png" alt="Enthaltene Datenbestände" width="50%" /><p>Wenn Sie einen Datensatznamen auswählen, wird der Datensatz in der Experience Platform-Benutzeroberfläche in einer neuen Registerkarte geöffnet. |
+| [!UICONTROL Sandbox] | Zeigt die [Experience Platform-Sandbox](https://experienceleague.adobe.com/docs/experience-platform/sandbox/home.html?lang=de) von dem aus diese Verbindung ihre Datensätze zeichnet. Diese Sandbox wurde beim erstmaligen Erstellen der Verbindung ausgewählt. Sie kann nicht geändert werden. |
 | [!UICONTROL Inhaber] | Die Person, die die Verbindung hergestellt hat. |
-| [!UICONTROL Importieren von Datensätzen] | Hiermit können Sie das sogenannte „Daten-Streaming“ aktivieren oder deaktivieren. |
-| [!UICONTROL Erstellt am] | Das Datum, an dem die Verbindung erstmalig erstellt wurde. |
-| [!UICONTROL Zuletzt geändert] | Das Datum, an dem die Verbindung zuletzt aktualisiert wurde. |
+| [!UICONTROL Neue Daten importieren] | Zeigt den Status des Imports neuer Daten für Datensätze an: <p><span style="color:green">●</span>   **[!UICONTROL _x _on]**für die Anzahl der Datensätze, die für den Import neuer Daten konfiguriert sind, und&lt;/<p><span style="color:gray">●</span>   **[!UICONTROL _x Aus_]** für die Anzahl der Datensätze, für die der neue Datenimport deaktiviert ist. |
+| [!UICONTROL Erstellt am] | Der Zeitstempel, zu dem die Verbindung erstellt wurde. |
+| [!UICONTROL Zuletzt geändert] | Der Zeitstempel, zu dem die Verbindung zuletzt aktualisiert wird. |
+| [!UICONTROL Aufstockungsdaten] | Zeigt den Status für Aufstockungsdaten in allen Datensätzen an.<p><span style="color:red">●</span>   **[!UICONTROL _x _Aufstockungen fehlgeschlagen]**für die Anzahl fehlgeschlagener Aufstockungen in Datensätzen,<p><span style="color:orange">●</span>   **[!UICONTROL _x _Verarbeitung von Backfilets]**für die Anzahl der Aufstockungen für die Verarbeitung in Datensätzen,<p><span style="color:green">●</span>   **[!UICONTROL _x _Aufstockungen abgeschlossen]**für die Anzahl abgeschlossener Backups für Datensätze und<p><span style="color:grey">●</span>   **[!UICONTROL _Aus_]** , falls für die Datensätze in der Verbindung keine Rückfüllungen definiert sind. |
 
-### Verbindungen löschen {#connections-delete}
-
-Nur Administratoren haben die Berechtigung, eine Verbindung zu löschen. Diese Aktion wird nur für Administratoren angezeigt.
-
-1. Klicken Sie auf die Auslassungspunkte (…) neben dem Verbindungsnamen.
-1. Klicken Sie auf [!UICONTROL Löschen].
-
-Wenn Sie eine Verbindung in [!UICONTROL Customer Journey Analytics] löschen, wird eine Fehlermeldung angezeigt, die auf Folgendes hinweist:
-
-* Datenansichten, die basierend auf der gelöschten Verbindung erstellt wurden, funktionieren nicht mehr.
-* Ebenso funktionieren alle Arbeitsbereich-Projekte nicht mehr, die von den Datenansichten der gelöschten Verbindung abhängig sind.
-
-[Weitere Informationen](/help/admin/cja-deletion.md) zu den Auswirkungen von Löschungen.
-
-### Suchen nach einer Verbindung oder einem Datensatz
-
-Sie können über die Suchleiste oben unter dem Titel [!UICONTROL Verbindungen] nach Verbindungen suchen.
-
-### Sortieren von Verbindungen
-
-Sie können Verbindungen sortieren, indem Sie auf jede Spaltenüberschrift klicken und sie nach oben oder unten sortieren.
-
-## Seite „Verbindungsdetails“ {#connection-detail}
-
-Auf der neuen Seite „Verbindungsdetails“ erhalten Sie einen sehr detaillierten Überblick über den Status einer Verbindung.
-
-Damit können Sie:
-
-* Überprüfen Sie den Status der Datensätze Ihrer Verbindung und des Aufnahmevorgangs.
-* Identifizieren Sie Konfigurationsprobleme, die zu übersprungenen oder gelöschten Datensätzen führen.
-* Finden Sie heraus, wann die Daten für das Reporting verfügbar sind.
-
->[!IMPORTANT]
->Daten, die vor dem 13. August 2021 aufgenommen wurden, werden in diesem Dialogfeld [!UICONTROL Verbindungen] nicht angezeigt.
-
-Im Folgenden werden Widgets und Einstellungen erläutert:
-
-![Fenster mit allen Datensätzen mit Widgets und Einstellungen](assets/conn-details.png)
-
-### Verbindungsdetails-Einstellungen
-
-| Widget/Einstellung | Beschreibung |
-| --- | --- |
-| Datensatz-Auswahl | Ermöglicht die Auswahl eines Datensatzes oder aller Datensätze in der Verbindung. Datensätze können nicht mehrmals ausgewählt werden. Die Standardeinstellung ist [!UICONTROL Alle Datensätze]. |
-| Kalender/Datumsbereiche | Der Datumsbereich gibt an, wann Sie der Verbindung Daten hinzugefügt haben. Alle Standardkalendervorgaben sind enthalten. Sie können den Datumsbereich anpassen, es werden jedoch keine benutzerdefinierten Datumsbereiche in der Dropdown-Liste angezeigt. |
-| Widget [!UICONTROL Datensätze von Ereignisdaten verfügbar] | Stellt die Gesamtzahl der für das Reporting verfügbaren Ereignis-Datensätze **für die gesamte Verbindung** dar. Diese Anzahl ist unabhängig von Kalendereinstellungen. Sie ändert sich, wenn Sie einen Datensatz aus der Datensatzauswahl auswählen, oder durch die Auswahl eines Datensatzes in der Tabelle. (Beachten Sie, dass es eine Latenz von 1-2 Stunden gibt, damit die Daten nach dem Hinzufügen in Berichten angezeigt werden.) |
-| Widget [!UICONTROL Metriken] | Fasst die hinzugefügten/übersprungenen/gelöschten Ereignis-Datensätze sowie die Anzahl der hinzugefügten Stapel **für den ausgewählten Datensatz und den ausgewählten Datumsbereich** zusammen. |
-| Widget [!UICONTROL Hinzugefügte Datensätze] | Gibt an, wie viele Zeilen im ausgewählten Zeitraum **für den ausgewählten Datensatz und Datumsbereich** hinzugefügt wurden. Wird alle zehn Minuten aktualisiert. <p>**Hinweis**: Daten für **[!UICONTROL hinzugefügte Datensätze]** umfassen derzeit nur Ereignisdaten, keine Profil- oder Suchdaten. |
-| Widget [!UICONTROL Übersprungene Datensätze] | Gibt an, wie viele Zeilen im ausgewählten Zeitraum **für den ausgewählten Datensatz und Datumsbereich** übersprungen wurden. Gründe für das Überspringen von Datensätzen sind: fehlende Zeitstempel, fehlende oder ungültige Personen-ID usw. Wird alle zehn Minuten aktualisiert.<p>Ungültige Personen-IDs (z. B. „undefiniert“ oder „00000000“ oder eine beliebige Kombination aus Zahlen und Buchstaben in einer [!UICONTROL Personen-ID], die in einem Ereignis mehr als eine Million Mal in einem bestimmten Monat auftritt) können keinem bestimmten Benutzer zugeordnet werden. Sie können nicht in das System aufgenommen werden und führen zu fehlerhafter Datenaufnahme und Berichterstellung. Um ungültige Personen-IDs zu beheben, haben Sie drei Möglichkeiten:<ul><li>Verwendung [Kanalübergreifende Analyse](/help/stitching/overview.md) , um die nicht definierten Benutzer-IDs oder Benutzer-IDs mit allen Identitäten mit gültigen Benutzer-IDs zu füllen.</li><li>Blenden Sie die Benutzer-ID aus, die dann auch bei der Datenaufnahme übersprungen werden (was Benutzer-IDs vorzuziehen ist, die ungültig sind oder nur Nullen enthalten).</li><li>Korrigieren Sie alle ungültigen Benutzer-IDs in Ihrem System, bevor Sie die Daten aufnehmen.</li></ul><p>**Hinweis**: Daten für **[!UICONTROL übersprungene Datensätze]** umfassen derzeit nur Ereignisdaten, keine Profil- oder Suchdaten. |
-| Widget [!UICONTROL Gelöschte Datensätze] | Gibt an, wie viele Zeilen im ausgewählten Zeitraum **für den ausgewählten Datensatz und Datumsbereich** gelöscht wurden. Beispielsweise könnte jemand einen Datensatz in Experience Platform gelöscht haben. Wird alle zehn Minuten aktualisiert. <p>**Hinweis**: Daten für **[!UICONTROL gelöschte Datensätze]** umfassen derzeit nur Ereignisdaten, keine Profil- oder Suchdaten. |
-| Datensatz-Suchfeld | Sie können nach Datensatznamen oder [!UICONTROL Datensatz-ID] suchen. |
-| [!UICONTROL Datensätze] | Zeigt die Datensätze an, die Teil der Verbindung sind. Sie können auf den Hyperlink klicken, um alle Datensätze in der Verbindung anzuzeigen. |
-| [!UICONTROL Datensatz-ID] | Diese ID wird automatisch von Adobe Experience Platform generiert. |
-| [!UICONTROL Batches] | Gibt an, wie viele Datenstapel zu diesem Datensatz hinzugefügt wurden. |
-| [!UICONTROL Zuletzt hinzugefügt] | Zeigt den Zeitstempel für den zuletzt zu diesem Datensatz hinzugefügten Stapel an. |
-| [!UICONTROL Typ des Datensatzes] | Der Datensatztyp für diesen Datensatz kann [!UICONTROL Ereignis], [!UICONTROL Suche] oder [!UICONTROL Profil] sein. [Weitere Infos](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=de#configure-dataset) |
-| Schema | Das Adobe Experience Platform-Schema, auf dem die Datensätze in dieser Verbindung basieren. |
-
-### Einstellungen in der rechten Leiste auf Verbindungsebene
-
-| Einstellung | Beschreibung |
-| --- | --- |
-| [!UICONTROL Aktualisieren] | Aktualisieren Sie die Verbindung, damit kürzlich hinzugefügte Datensätze angezeigt werden. |
-| [!UICONTROL Löschen] | Löschen Sie diese Verbindung. |
-| [!UICONTROL Datenansicht erstellen] | Erstellen Sie eine neue Datenansicht auf Grundlage dieser Verbindung. [Weitere Infos](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views.html?lang=de) |
-| [!UICONTROL Name der Verbindung] | Zeigt den Anzeigenamen der Verbindung an. |
-| [!UICONTROL Beschreibung der Verbindung] | Zeigt eine detailliertere Beschreibung an, die idealerweise den Zweck dieser Verbindung beschreibt. |
-| [!UICONTROL Sandbox] | Die [Sandbox von Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/sandbox/home.html?lang=de), aus der diese Verbindung ihre Datensätze abruft. Diese Sandbox wurde beim erstmaligen Erstellen der Verbindung ausgewählt. Sie kann nicht geändert werden. |
-| [!UICONTROL Verbindungs-ID] | Diese ID wird in Adobe Experience Platform vom System generiert. |
-| [!UICONTROL Datenaufrufe, die Verbindungen verwenden] | Listet alle Datenansichten auf, die diese Verbindung verwenden. |
-| [!UICONTROL Neue Daten importieren] | (Ein/Aus) Gibt an, ob neue Datenstapel zu den historischen Daten (Aufstockung) hinzugefügt werden sollen oder nicht. |
-| [!UICONTROL Aufstockungsdaten] | Aufstockungsdaten (historische Daten) werden in drei Status verfolgt: [!UICONTROL In der Warteschlange], [!UICONTROL In Bearbeitung] (mit angegebenem Fortschrittsprozentsatz) und [!UICONTROL Abgeschlossen]. |
-| [!UICONTROL Erstellt von] | Zeigt den Namen der Person, die die Verbindung herstellt. |
-| [!UICONTROL Zuletzt geändert] | Zeit Datum und Uhrzeit der letzten Änderung der Verbindung. |
-| [!UICONTROL Zuletzt geändert von] | Zeigt die Person, die die Verbindung zuletzt geändert hat. |
-
-### Einstellungen in der rechten Leiste auf Datensatzebene
-
-| Einstellung | Beschreibung |
-| --- | --- |
-| [!UICONTROL Personen-ID] | Zeigt eine Identität an, die im Datensatzschema in Experience Platform definiert wurde. Das ist die Personen-ID, die Sie bei der Erstellung der Verbindung ausgewählt haben. Wenn Sie eine Verbindung erstellen, die Datensätze mit unterschiedlichen IDs enthält, wird dies beim Reporting berücksichtigt. Um Datensätze wirklich zu fusionieren, müssen Sie in allen Datensätzen die gleiche Personen-ID verwenden. |
-| [!UICONTROL Verfügbare Datensätze] | Stellt die Gesamtzahl der Zeilen dar, die für diesen Datensatz in dem im Kalender ausgewählten Zeitraum aufgenommen wurden. Es gibt keine Latenz im Hinblick darauf, ab wann die Daten nach dem Hinzufügen in Berichten angezeigt werden. (Allerdings ist beim Erstellen einer brandneuen Verbindung eine [Latenz](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=de#3.-getting-data-into-customer-journey-analytics) vorhanden. |
-| [!UICONTROL Hinzugefügte Datensätze] | Gibt an, wie viele Zeilen im ausgewählten Zeitraum hinzugefügt wurden. <p>**Hinweis**: Daten für **[!UICONTROL hinzugefügte Datensätze]** umfassen derzeit nur Ereignisdaten, keine Profil- oder Suchdaten. |
-| [!UICONTROL Gelöschte Datensätze] | Gibt an, wie viele Datensätze im ausgewählten Zeitraum gelöscht wurden. <p>**Hinweis**: Daten für **[!UICONTROL gelöschte Datensätze]** umfassen derzeit nur Ereignisdaten, keine Profil- oder Suchdaten. |
-| [!UICONTROL Batches hinzugefügt] | Zeigt, wie viele Datenstapel diesem Datensatz hinzugefügt wurden. |
-| [!UICONTROL Übersprungene Datensätze] | Zeigt, wie viele Zeilen während der Aufnahme im ausgewählten Zeitraum übersprungen wurden.<p>Gründe für das Überspringen von Datensätzen sind: fehlende Zeitstempel, fehlende oder ungültige Personen-ID usw. Wird alle zehn Minuten aktualisiert.<p>Ungültige Personen-IDs (z. B. „undefiniert“ oder „00000000“ oder eine beliebige Kombination aus Zahlen und Buchstaben in einer [!UICONTROL Personen-ID], die in einem Ereignis mehr als eine Million Mal in einem bestimmten Monat auftritt) können keinem bestimmten Benutzer zugeordnet werden. Sie können nicht in das System aufgenommen werden und führen zu fehlerhafter Datenaufnahme und Berichterstellung. Um ungültige Personen-IDs zu beheben, haben Sie drei Möglichkeiten:<ul><li>Verwendung [Stitching](/help/stitching/overview.md) , um die nicht definierten Benutzer-IDs oder Benutzer-IDs mit allen Identitäten mit gültigen Benutzer-IDs zu füllen.</li><li>Blenden Sie die Benutzer-ID aus, die dann auch bei der Datenaufnahme übersprungen werden (was Benutzer-IDs vorzuziehen ist, die ungültig sind oder nur Nullen enthalten).</li><li>Korrigieren Sie alle ungültigen Benutzer-IDs in Ihrem System, bevor Sie die Daten aufnehmen.</li></ul><p>**Hinweis**: Daten für **[!UICONTROL übersprungene Datensätze]** umfassen derzeit nur Ereignisdaten, keine Profil- oder Suchdaten. |
-| [!UICONTROL Zuletzt hinzugefügt] | Zeigt den Zeitpunkt, zu dem der letzte Stapel hinzugefügt wurde. |
-| [!UICONTROL Typ des Datensatzes] | Entweder [!UICONTROL Ereignis], [!UICONTROL Suche] oder [!UICONTROL Profil]. [Weitere Infos](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=de#configure-dataset) |
-| [!UICONTROL Schema] | Zeigt das Adobe Experience Platform-Schema, auf dem dieser Datensatz basiert. |
-| [!UICONTROL Datensatz-ID] | Diese ID wird in Adobe Experience Platform vom System generiert. |
+Sie können konfigurieren, welche Spalten angezeigt werden sollen, indem Sie ![Spalteneinstellungen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ColumnSettings_18_N.svg). Dies zeigt die **Tabelle anpassen** -Dialogfeld, in dem Sie Spalten in der Tabelle ein-/ausschalten können.
 
 ## Verbindung bearbeiten
 
-Ermöglicht es Administratoren, die Verbindung zu bearbeiten. Wählen Sie eine Verbindung aus und klicken Sie dann auf [!UICONTROL Verbindung bearbeiten], um zu diesem Dialogfeld zu gelangen. Hier können Sie Folgendes tun:
+Ermöglicht es Administratoren, die Verbindung zu bearbeiten.
 
-* Starten und Beendes des Imports neuer Daten. Dieser Prozess wurde früher als „Daten-Streaming“ bezeichnet.
+1. Auswählen ![Mehr](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) neben dem Verbindungsnamen
+1. Auswählen ![Bearbeiten](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) **[!UICONTROL Bearbeiten]** aus dem Kontextmenü aus.
+
+Alternativ können Sie:
+
+1. Wählen Sie die Verbindungszeile aus.
+
+1. Auswählen ![Bearbeiten](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) **[!UICONTROL Bearbeiten]** aus der blauen Leiste.
+
+Beim Bearbeiten einer Verbindung haben Sie folgende Möglichkeiten:
+
+* Import neuer Daten starten und beenden.
 * Eine Verbindung umbenennen.
 * Aktualisieren Sie die Datensätze.
 * Entfernen Sie Datensätze aus den Verbindungen.
 
+Siehe [Erstellen oder Bearbeiten einer Verbindung](create-connection.md) für weitere Informationen.
+
+
+## Eine Verbindung löschen {#connections-delete}
+
+Ermöglicht Administratoren das Löschen der Verbindung.
+
+1. Auswählen ![Mehr](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) neben dem Verbindungsnamen.
+1. Auswählen ![Löschen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Delete_18_N.svg) **[!UICONTROL Löschen]**.
+
+Alternativ können Sie:
+
+1. Wählen Sie die Verbindungszeile aus.
+
+1. Auswählen ![Löschen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Delete_18_N.svg) **[!UICONTROL Löschen]** aus der blauen Leiste.
+
+Wenn Sie eine Verbindung löschen, wird eine **[!UICONTROL Verbindung löschen]** gibt an, welche Datenansichten gelöscht werden und welche Workspace-Projekte betroffen sind.
+
+<img src="./assets/delete-connection.png" alt="Verbindung löschen" width="50%" />
+
+Auswählen **[!UICONTROL Weiter]** , um die Verbindung zu löschen.
+
+Siehe [Auswirkungen löschen](/help/admin/cja-deletion.md) für weitere Informationen zu den Auswirkungen des Löschens einer Verbindung.
+
+
+## Datenansicht erstellen
+
+Ermöglicht Administratoren das Erstellen einer Datenansicht für die Verbindung.
+
+* Wenn der Verbindung keine Datenansicht zugeordnet ist:
+
+   1. Auswählen ![Datenansicht hinzufügen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataAdd_18_N.svg) neben dem Verbindungsnamen.
+
+* Wenn bereits eine oder mehrere Datenansichten für die Verbindung erstellt wurden:
+
+   1. Auswählen ![Mehr](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) neben dem Verbindungsnamen.
+   1. Auswählen ![Datenansicht hinzufügen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataAdd_18_N.svg) **[!UICONTROL Neue Datenansicht erstellen]**.
+
+Alternativ können Sie:
+
+1. Wählen Sie die Verbindungszeile aus.
+
+1. Auswählen ![Datenansicht hinzufügen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataAdd_18_N.svg) **[!UICONTROL Datenansicht erstellen]** aus der blauen Schaltflächenleiste.
+
+Weitere Informationen finden Sie unter [Erstellen oder Bearbeiten einer Datenansicht](/help/data-views/create-dataview.md).
+
+## Verbindungsdetails {#connection-detail}
+
+Um zu den Details für eine Verbindung zu wechseln, wählen Sie einen Verbindungsnamen in der Verbindungstabelle aus.
+
+![Fenster mit allen Datensätzen mit Widgets und Einstellungen](assets/conn-details.png)
+
+Der Bildschirm Verbindungsdetails bietet eine detaillierte Ansicht des Status einer Verbindung. Sie haben folgende Möglichkeiten:
+
+* Überprüfen Sie den Status der Datensätze Ihrer Verbindung und des Aufnahmevorgangs.
+* Ermitteln Sie Konfigurationsprobleme, die zu übersprungenen oder gelöschten Datensätzen führen können.
+* Finden Sie heraus, wann die Daten für das Reporting verfügbar sind.
+
+>[!IMPORTANT]
+>
+>Daten, die vor dem 13. August 2021 erfasst wurden, werden in dieser [!UICONTROL Verbindungen] angezeigt.
+
+### Verbindungsdetails
+
+| Benutzeroberfläche | Beschreibung |
+| --- | --- |
+| ![Bearbeiten](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) [!UICONTROL Verbindung bearbeiten] | Um die Details einer Verbindung zu bearbeiten, wählen Sie ![Bearbeiten](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) **[!UICONTROL Verbindung bearbeiten]** . Siehe [Erstellen oder Bearbeiten einer Verbindung](create-connection.md) für weitere Informationen. |
+| Datensatz-Auswahl | Ermöglicht die Auswahl eines Datensatzes oder aller Datensätze in der Verbindung. Datensätze können nicht mehrmals ausgewählt werden. Die Standardeinstellung ist [!UICONTROL Alle Datensätze]. |
+| Auswahl des Kalenders/Datumsbereichs | Der Datumsbereich gibt an, wann Sie der Verbindung Daten hinzugefügt haben. Alle Standardkalendervorgaben sind enthalten. Sie können den Datumsbereich anpassen, es werden jedoch keine benutzerdefinierten Datumsbereiche in der Dropdown-Liste angezeigt. |
+| [!UICONTROL Verfügbare Aufzeichnungen von Ereignisdaten] | Stellt die Gesamtzahl der für das Reporting verfügbaren Ereignis-Datensätze **für die gesamte Verbindung** dar. Diese Anzahl ist unabhängig von Kalendereinstellungen. Die Anzahl ändert sich, wenn Sie einen Datensatz aus der Datensatz-Auswahl auswählen oder indem Sie einen Datensatz in der Tabelle auswählen. Nach dem Hinzufügen von Daten ist die Latenz von 1-2 Stunden, damit die Daten in Berichten angezeigt werden. |
+| [!UICONTROL Metriken] | Fasst die hinzugefügten/übersprungenen/gelöschten Ereignis-Datensätze sowie die Anzahl der hinzugefügten Stapel **für den ausgewählten Datensatz und den ausgewählten Datumsbereich** zusammen. |
+| [!UICONTROL Hinzugefügte Datensätze] | Gibt an, wie viele Zeilen im ausgewählten Zeitraum **für den ausgewählten Datensatz und Datumsbereich** hinzugefügt wurden. Wird alle zehn Minuten aktualisiert. <p>**Hinweis**: Daten für **[!UICONTROL Hinzugefügte Datensätze]** enthält derzeit nur Ereignisdaten, keine Profil- oder Suchdaten. |
+| [!UICONTROL Übersprungene Datensätze] | Gibt an, wie viele Zeilen im ausgewählten Zeitraum **für den ausgewählten Datensatz und Datumsbereich** übersprungen wurden. Gründe für das Überspringen von Datensätzen sind: Fehlende Zeitstempel, fehlende oder ungültige Personen-ID usw. Wird alle zehn Minuten aktualisiert.<p>Ungültige Personen-IDs (z. B. „undefiniert“ oder „00000000“ oder eine beliebige Kombination aus Zahlen und Buchstaben in einer [!UICONTROL Personen-ID], die in einem Ereignis mehr als eine Million Mal in einem bestimmten Monat auftritt) können keinem bestimmten Benutzer zugeordnet werden. Sie können nicht in das System aufgenommen werden und führen zu fehlerhafter Datenaufnahme und Berichterstellung. Um ungültige Personen-IDs zu beheben, haben Sie drei Möglichkeiten:<ul><li>Verwendung [Stitching](/help/stitching/overview.md) , um die nicht definierten Benutzer-IDs oder Benutzer-IDs mit allen Identitäten mit gültigen Benutzer-IDs zu füllen.</li><li>Leeren Sie die Benutzer-ID aus, die dann bei der Erfassung übersprungen wird (vorzuziehen sind ungültige Benutzer-IDs ohne alle IDs).</li><li>Korrigieren Sie alle ungültigen Benutzer-IDs in Ihrem System, bevor Sie die Daten aufnehmen.</li></ul><p>**Hinweis**: Daten für **[!UICONTROL Übersprungene Datensätze]** enthält derzeit nur Ereignisdaten, keine Profil- oder Suchdaten. |
+| [!UICONTROL Datensätze] gelöscht | Gibt an, wie viele Zeilen im ausgewählten Zeitraum **für den ausgewählten Datensatz und Datumsbereich** gelöscht wurden. Beispielsweise könnte jemand einen Datensatz in Experience Platform gelöscht haben. Wird alle zehn Minuten aktualisiert. <p>**Hinweis**: Daten für **[!UICONTROL Gelöste Datensätze]** enthält derzeit nur Ereignisdaten, keine Profil- oder Suchdaten. |
+| ![Suche](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) _Datensatz-Namen oder ID durchsuchen_ | Datensatzsuchfeld. Sie können die Datensatztabelle nach Datensatznamen durchsuchen oder [!UICONTROL Datensatz-ID]. |
+| [!UICONTROL Datensatztabelle] | Zeigt die Datensätze an, die Teil der Verbindung sind. |
+| [!UICONTROL Datensätze] | Zeigt den Namen des Datensatzes an, der Teil der Verbindung ist. Sie können den Hyperlink auswählen, um den Datensatz in der Experience Platform-Benutzeroberfläche in einer neuen Registerkarte zu öffnen. Sie können die Zeile oder das Kontrollkästchen auswählen, um nur Details für den ausgewählten Datensatz anzuzeigen. |
+| [!UICONTROL Datensatz-ID] | Automatisch durch Experience Platform generiert. |
+| [!UICONTROL Hinzugefügte Datensätze] | Die Anzahl der Datensatzdatensätze/Zeilen, die während des ausgewählten Zeitintervalls zu einer Verbindung hinzugefügt wurden. |
+| [!UICONTROL Übersprungene Datensätze] | Die Anzahl der Datensätze/Zeilen, die während der Datenübertragung für eine Verbindung während des ausgewählten Zeitintervalls übersprungen wurden. |
+| [!UICONTROL Gelöschte Datensätze] | Die Anzahl der Datensätze/Zeilen, die während des ausgewählten Zeitintervalls aus einer Verbindung entfernt wurden. |
+| [!UICONTROL Batches hinzugefügt] | Anzahl der Datensatz-Batches, die zu einer Verbindung hinzugefügt wurden. |
+| [!UICONTROL Zuletzt hinzugefügt] | Der Zeitstempel des neuesten Batches aus dem Datensatz, der zu einer Verbindung hinzugefügt wurde. |
+| [!UICONTROL Datenquellentyp] | Der Quelltyp des Datensatzes. Sie definieren den Quelltyp beim Erstellen einer Verbindung. |
+| [!UICONTROL Typ des Datensatzes] | Der Datensatztyp für diesen Datensatz. Typ kann [!UICONTROL Ereignis], [!UICONTROL Suche]oder [!UICONTROL Profil]. [Weitere Infos](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=de#configure-dataset) |
+| Schema | Das Experience Platform-Schema, auf dem der Datensatz basiert. |
+| [!UICONTROL Neue Daten importieren] | Zeigt den Status des Imports neuer Daten für den Datensatz an: <p><span style="color:green">●</span>   **[!UICONTROL _x _on]**ob der Datensatz für den Import neuer Daten konfiguriert ist, und<p><span style="color:gray">●</span>   **[!UICONTROL _x Aus_]** wenn der Datensatz so konfiguriert ist, dass er keinen neuen Datenimport importiert. |
+| [!UICONTROL Aufstockungsdaten] | Zeigt den Status der Aufstockungsdaten für den Datensatz an.<p><span style="color:red">●</span>   **[!UICONTROL _x _Aufstockungen fehlgeschlagen]**für die Anzahl fehlgeschlagener Aufstockungen,<p><span style="color:orange">●</span>   **[!UICONTROL _x _Verarbeitung von Backfilets]**für die Anzahl der Aufstockungen,<p><span style="color:green">●</span>   **[!UICONTROL _x _Aufstockungen abgeschlossen]**für die Anzahl der abgeschlossenen Aufstockungen und<p><span style="color:grey">●</span>   **[!UICONTROL _Aus_]** , falls keine Aufstockungen konfiguriert sind. |
+
+### Verbindungs-Panel
+
+Wenn in der Datensatztabelle kein Datensatz ausgewählt ist, werden in einem Bedienfeld auf der rechten Seite der Schnittstelle Verbindungen Verbindungsoptionen und -details angezeigt.
+
+| Optionen/Details | Beschreibung |
+| --- | --- |
+| ![Aktualisieren](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Refresh_18_N.svg) [!UICONTROL Aktualisieren] | Um die Verbindung zu aktualisieren und die Anzeige kürzlich hinzugefügter Datensätze zuzulassen, wählen Sie ![Aktualisieren](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Refresh_18_N.svg) **[!UICONTROL Aktualisieren]**. |
+| ![Löschen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Delete_18_N.svg) **[!UICONTROL Löschen]** | [Löschen](#delete-a-connection) diese Verbindung. |
+| ![Datenansicht hinzufügen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataAdd_18_N.svg) **[!UICONTROL Datenansicht erstellen]** | [Datenansicht erstellen](#create-a-data-view) auf dieser Verbindung basieren. Siehe [Datenansichten](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views.html?lang=de) für weitere Informationen. |
+| [!UICONTROL Name der Verbindung] | Zeigt den Anzeigenamen der Verbindung an. |
+| [!UICONTROL Beschreibung der Verbindung] | Zeigt eine detailliertere Beschreibung an, die den Zweck dieser Verbindung beschreibt. |
+| [!UICONTROL Sandbox] | Die [Experience Platform-Sandbox](https://experienceleague.adobe.com/docs/experience-platform/sandbox/home.html?lang=de) von dem aus diese Verbindung ihre Datensätze zeichnet. Diese Sandbox wurde beim ersten Erstellen der Verbindung ausgewählt. Sie kann nicht geändert werden. |
+| [!UICONTROL Verbindungs-ID] | Diese ID wird im Experience Platform generiert. Sie können ![Kopieren](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) zum Kopieren der ID. |
+| [!UICONTROL Datenaufrufe, die Verbindungen verwenden] | Listet alle Datenansichten auf, die diese Verbindung verwenden. |
+| [!UICONTROL Neue Daten importieren] | Zeigt den Status des Imports neuer Daten für Datensätze an: <p><span style="color:green">●</span>   **[!UICONTROL _x _on]**für die Anzahl der Datensätze, die für den Import neuer Daten konfiguriert sind, und<p><span style="color:gray">●</span>   **[!UICONTROL _x Aus_]** für die Anzahl der Datensätze, für die der neue Datenimport deaktiviert ist. |
+| [!UICONTROL Aufstockungsdaten] | Zeigt den Status der Aufstockungsdaten für Datensätze an.<p><span style="color:red">●</span>   **[!UICONTROL _x _Aufstockungen fehlgeschlagen]**für die Anzahl fehlgeschlagener Aufstockungen in Datensätzen,<p><span style="color:orange">●</span>   **[!UICONTROL _x _Verarbeitung von Backfilets]**für die Anzahl der Aufstockungen für die Verarbeitung in Datensätzen,<p><span style="color:green">●</span>   **[!UICONTROL _x _Aufstockungen abgeschlossen]**für die Anzahl abgeschlossener Backups für Datensätze und<p><span style="color:grey">●</span>   **[!UICONTROL _Aus_]** , falls für die Datensätze in der Verbindung keine Rückfüllungen definiert sind. |
+| [!UICONTROL Erstellt von] | Zeigt den Namen der Person an, die die Verbindung hergestellt hat. |
+| [!UICONTROL Zuletzt geändert] | Zeigt den Zeitstempel der letzten Änderung an der Verbindung an. |
+| [!UICONTROL Zuletzt geändert von] | Zeigt die Person, die die Verbindung zuletzt geändert hat. |
+
+### Datensatzbedienfeld
+
+Wenn ein Datensatz in der Datensatztabelle ausgewählt ist, werden in einem Bedienfeld auf der rechten Seite der Benutzeroberfläche &quot;Verbindungen&quot;Details zum ausgewählten Datensatz angezeigt.
+
+| Details | Beschreibung |
+| --- | --- |
+| [!UICONTROL Personen-ID] | Zeigt eine Identität an, die im Datensatzschema in Experience Platform definiert wurde. Dies ist die Personen-ID, die Sie bei der Erstellung der Verbindung ausgewählt haben. Wenn Sie eine Verbindung erstellen, die Datensätze mit unterschiedlichen IDs enthält, spiegelt die Berichterstellung dies wider. Zum Zusammenführen von Datensätzen müssen Sie dieselbe Personen-ID für alle Datensätze verwenden. |
+| [!UICONTROL Schlüssel] | Zeigt den Schlüssel an, den Sie für einen Lookup-Datensatz angegeben haben. |
+| [!UICONTROL Übereinstimmender Schlüssel] | Zeigt den übereinstimmenden Schlüssel an, den Sie für einen Lookup-Datensatz angegeben haben. |
+| [!UICONTROL Zeitstempel] | Zeigt den für einen Ereignis-Datensatz definierten Zeitstempel an. |
+| [!UICONTROL Verfügbare Datensätze] | Stellt die Gesamtzahl der Zeilen dar, die für diesen Datensatz in dem im Kalender ausgewählten Zeitraum aufgenommen wurden. Es gibt keine Latenz im Hinblick darauf, ab wann die Daten nach dem Hinzufügen in Berichten angezeigt werden. Wenn Sie jedoch eine brandneue Verbindung erstellen, wird [Latenz](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=de#3.-getting-data-into-customer-journey-analytics). |
+| [!UICONTROL Hinzugefügte Datensätze] | Gibt an, wie viele Zeilen im ausgewählten Zeitraum hinzugefügt wurden. <p>**Hinweis**: Daten für **[!UICONTROL Hinzugefügte Datensätze]** enthält derzeit nur Ereignisdaten, keine Profil- oder Suchdaten. |
+| [!UICONTROL Gelöschte Datensätze] | Gibt an, wie viele Datensätze im ausgewählten Zeitraum gelöscht wurden. <p>**Hinweis**: Daten für **[!UICONTROL Gelöste Datensätze]** enthält derzeit nur Ereignisdaten, keine Profil- oder Suchdaten. |
+| [!UICONTROL Batches hinzugefügt] | Zeigt, wie viele Datenstapel diesem Datensatz hinzugefügt wurden. |
+| [!UICONTROL Übersprungene Datensätze] | Zeigt, wie viele Zeilen während der Aufnahme im ausgewählten Zeitraum übersprungen wurden.<p>Gründe für das Überspringen von Datensätzen sind: Fehlende Zeitstempel, fehlende oder ungültige Personen-ID usw. Wird alle zehn Minuten aktualisiert.<p>Ungültige Personen-IDs (z. B. „undefiniert“ oder „00000000“ oder eine beliebige Kombination aus Zahlen und Buchstaben in einer [!UICONTROL Personen-ID], die in einem Ereignis mehr als eine Million Mal in einem bestimmten Monat auftritt) können keinem bestimmten Benutzer zugeordnet werden. Sie können nicht in das System aufgenommen werden und führen zu fehlerhafter Datenaufnahme und Berichterstellung. Um ungültige Personen-IDs zu beheben, haben Sie drei Möglichkeiten:<ul><li>Verwendung [Stitching](/help/stitching/overview.md) , um die nicht definierten Benutzer-IDs oder Benutzer-IDs mit allen Identitäten mit gültigen Benutzer-IDs zu füllen.</li><li>Leeren Sie die Benutzer-ID aus, die dann bei der Erfassung übersprungen wird (vorzuziehen sind ungültige Benutzer-IDs oder Benutzer-IDs ohne Inhalt).</li><li>Korrigieren Sie alle ungültigen Benutzer-IDs in Ihrem System, bevor Sie die Daten aufnehmen.</li></ul><p>**Hinweis**: Daten für **[!UICONTROL Übersprungene Datensätze]** enthält derzeit nur Ereignisdaten, keine Profil- oder Suchdaten. |
+| [!UICONTROL Zuletzt hinzugefügt] | Zeigt den Zeitpunkt, zu dem der letzte Stapel hinzugefügt wurde. |
+| [!UICONTROL Neue Daten importieren] | Zeigt den Status des Imports neuer Daten für den Datensatz an: <p><span style="color:green">●</span>   **[!UICONTROL _x _on]**ob der Datensatz für den Import neuer Daten konfiguriert ist, und<p><span style="color:gray">●</span>   **[!UICONTROL _x Aus_]** wenn der Datensatz so konfiguriert ist, dass er keinen neuen Datenimport importiert. |
+| [!UICONTROL Aufstockungsdaten] | Zeigt den Status der Aufstockungsdaten für den Datensatz an.<p><span style="color:red">●</span>   **[!UICONTROL _x _Aufstockungen fehlgeschlagen]**für die Anzahl fehlgeschlagener Aufstockungen,<p><span style="color:orange">●</span>   **[!UICONTROL _x _Verarbeitung von Backfilets]**für die Anzahl der Aufstockungen,<p><span style="color:green">●</span>   **[!UICONTROL _x _Aufstockungen abgeschlossen]**für die Anzahl der abgeschlossenen Aufstockungen und<p><span style="color:grey">●</span>   **[!UICONTROL _Aus_]** , falls keine Aufstockungen konfiguriert sind.<p>Um ein Dialogfeld mit einem Überblick über die früheren Rückstände für den Datensatz anzuzeigen, wählen Sie <img src="./assets/pastbackfill.svg" alt="Frühere Aufstockungen" width="2%" /> **[!UICONTROL Frühere Backfilets]**. |
+| [!UICONTROL Datenquellentyp] | Datenquellentyp, wie beim Hinzufügen des Datensatzes zur Verbindung definiert. |
+| [!UICONTROL Typ des Datensatzes] | Entweder [!UICONTROL Ereignis], [!UICONTROL Suche] oder [!UICONTROL Profil]. [Weitere Infos](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=de#configure-dataset) |
+| [!UICONTROL Schema] | Zeigt das Experience Platform-Schema an, auf dem dieser Datensatz basiert. |
+| [!UICONTROL Datensatz-ID] | Diese Datensatz-ID wird im Experience Platform generiert. |
+
+
+>[!MORELIKETHIS]
+>
+>[Verbindungseinstellungen anzeigen, beheben und ändern](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/connections/connections-details-experience-in-cja.html?lang=en) Tutorial.
