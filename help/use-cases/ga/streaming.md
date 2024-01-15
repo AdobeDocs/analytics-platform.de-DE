@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie Ihre Implementierung einrichten, um eine Goog
 exl-id: 58854f4b-ae28-424e-a2cf-0e76219cb802
 feature: Use Cases
 role: Admin
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: bfaf76fa5f225e9aa3153fc4ee10c5be8f3164e7
 workflow-type: tm+mt
 source-wordcount: '234'
-ht-degree: 100%
+ht-degree: 89%
 
 ---
 
@@ -21,4 +21,4 @@ Die Konfiguration der Datenerfassung umfasst die folgenden Schritte:
 1. Installieren der [Google Data Layer-Erweiterung](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/google-data-layer/overview.html?lang=de). Diese Erweiterung ist eine Alternative zur Installation der Web SDK-Erweiterung und ist speziell für eine Google-Datenschicht konzipiert.
 1. [Erstellen eines Datenstroms](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html?lang=de) in der Adobe Experience Platform-Datenerfassung. Konfigurieren des Datenspeichers, um Daten an Adobe Experience Platform zu senden Aktuell müssen Sie jedes Google-Datenschichtobjekt dem entsprechenden XDM-Feld hier zuordnen. Adobe plant, in Zukunft einen einfacheren Zuordnungs-Workflow zur Verfügung zu stellen.
 
-Nachdem Sie die gewünschten Tags auf Ihrer Site implementiert und veröffentlicht haben, können Sie [eine Verbindung erstellen](/help/connections/create-connection.md) und dann [eine Datenansicht erstellen](/help/data-views/create-dataview.md).
+Nachdem Sie die gewünschten Tags auf Ihrer Site implementiert und veröffentlicht haben, können Sie mit dem [Verbindung erstellen](/help/connections/create-connection.md), dann [Datenansicht erstellen](/help/data-views/create-dataview.md).

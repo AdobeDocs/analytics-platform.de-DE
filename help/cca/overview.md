@@ -5,10 +5,10 @@ exl-id: 69763313-de27-4487-8e32-8277f1f693d8
 solution: Customer Journey Analytics
 hide: true
 hidefromtoc: true
-source-git-commit: 98c0f2887789310dc387f1bf7ce5298722a0797e
-workflow-type: ht
-source-wordcount: '1166'
-ht-degree: 100%
+source-git-commit: bfaf76fa5f225e9aa3153fc4ee10c5be8f3164e7
+workflow-type: tm+mt
+source-wordcount: '1159'
+ht-degree: 98%
 
 ---
 
@@ -75,7 +75,7 @@ Sobald Ihre Organisation alle Anforderungen erfüllt und die Einschränkungen ü
    * Sandbox-Name.
 1. Wenn Sie eine Anfrage bezüglich der Cross-Channel-Analyse an den Adobe-Support stellen, wird diese Funktion in Zusammenarbeit mit dem Engineering-Team von Adobe aktiviert. Nach der Aktivierung wird in Adobe Experience Platform ein neu verschlüsselter Datensatz angezeigt, der eine neue Spalte für die Personen-ID enthält. Der Adobe-Support stellt die neue Datensatz-ID und den Namen der Personen-ID-Spalte bereit.
 1. Bei der erstmaligen Verwendung stellt Adobe eine Aufstockung der zugeordneten Daten bereit, die bis zum Beginn des Vormonats zurückreicht (bis zu 60 Tage). Um diese Aufstockung durchführen zu können, muss die vorübergehende ID in den nicht zugewiesenen Daten aus dem so weit zurückreichenden Zeitfenster vorhanden sein.
-1. [Erstellen Sie eine Verbindung](/help/connections/create-connection.md) in Customer Journey Analytics mit dem neu erstellten Datensatz und beliebigen weiteren Datensätzen, die Sie einbeziehen möchten. Wählen Sie für jeden Datensatz die korrekte Personen-ID.
+1. [Erstellen oder Bearbeiten einer Verbindung](/help/connections/create-connection.md) in Customer Journey Analytics unter Verwendung des neu generierten Datensatzes und anderer Datensätze, die Sie einbeziehen möchten. Wählen Sie für jeden Datensatz die korrekte Personen-ID.
 1. [Erstellen Sie eine Datenansicht](/help/data-views/create-dataview.md) auf Grundlage der Verbindung.
 
 <!-- To do: Paragraph on backfill once product and marketing determine the best way forward. -->

@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Use Cases
 exl-id: ef8a2d08-848b-4072-b400-7b24955a085b
 role: Admin
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: bfaf76fa5f225e9aa3153fc4ee10c5be8f3164e7
 workflow-type: tm+mt
-source-wordcount: '391'
-ht-degree: 60%
+source-wordcount: '393'
+ht-degree: 58%
 
 ---
 
@@ -26,7 +26,7 @@ Verwenden Sie den [Marketo Engage-Connector](https://experienceleague.adobe.com/
 
 ## Schritt 3: Herstellen einer Verbindung zu diesem Datensatz in Customer Journey Analytics
 
-Um über Experience Platform-Datensätze zu berichten, müssen Sie zunächst eine Verbindung zwischen Datensätzen in Experience Platform und Customer Journey Analytics herstellen. Weitere Informationen finden Sie unter [Verbindung erstellen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=de).
+Um über Experience Platform-Datensätze zu berichten, müssen Sie zunächst eine Verbindung zwischen Datensätzen in Experience Platform und Customer Journey Analytics herstellen. Weitere Informationen finden Sie unter [Erstellen oder Bearbeiten einer Verbindung](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=de).
 
 ## Schritt 4: Erstellen Sie eine oder mehrere Datenansichten.
 

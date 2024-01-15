@@ -1,18 +1,18 @@
 ---
-title: Verbindung herstellen
-description: Beschreibt, wie eine Verbindung zu einem Platform-Datensatz in Customer Journey Analytics hergestellt wird.
+title: Erstellen oder Bearbeiten einer Verbindung
+description: Beschreibt, wie eine Verbindung zu einem Experience Platform-Datensatz in Customer Journey Analytics hergestellt oder bearbeitet wird.
 exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
-workflow-type: ht
-source-wordcount: '2741'
-ht-degree: 100%
+source-git-commit: bfaf76fa5f225e9aa3153fc4ee10c5be8f3164e7
+workflow-type: tm+mt
+source-wordcount: '2748'
+ht-degree: 99%
 
 ---
 
-# Verbindung herstellen
+# Erstellen oder Bearbeiten einer Verbindung
 
 Beim Workflow für die Erstellung und Bearbeitung von Verbindungen können alle Einstellungen zur Datensatz- und Verbindungskonfiguration mit einem unterstützenden Workflow zentral auf dem Bildschirm durchgeführt werden. Sie haben Möglichkeiten zur präzisen Auswahl, Konfiguration und Prüfung von Datensätzen mit wichtigen Informationen wie Datensatztyp, Größe, Schema, Datensatz-ID, Batch-Status, Aufstockungsstatus, Personen-IDs und vieles mehr, um das Risiko einer falschen Verbindungskonfiguration zu verringern. Im Folgenden finden Sie einen Überblick über die Funktionen:
 
