@@ -4,9 +4,9 @@ description: Listet Inhaltsaktualisierungen für Dokumentation zu Customer Journ
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 6ae65a3356df4ce1b72cd30b055d4db734488235
+source-git-commit: 9beeb2013eb3b94dc55fb721233096f1813e2bf3
 workflow-type: tm+mt
-source-wordcount: '2781'
+source-wordcount: '2792'
 ht-degree: 90%
 
 ---
@@ -20,6 +20,7 @@ Die folgenden Aktualisierungen wurden seit der ersten Erstellung der Customer Jo
 | Funktion | Beschreibung |
 | --- | --- |
 | **Januar 2024** | |
+| Verbindungen verwalten | Die [Verbindungen verwalten](../connections/manage-connections.md) Artikel, basierend auf dem Kunden-Feedback. |
 | Abgeleitete Felder | Die Zusammenfassung der Funktion wurde hinzugefügt. [Einschränkungen](/help/data-views/derived-fields/derived-fields.md#limitations) und Erläuterung, wie die Anzahl der [Operatoren](/help/data-views/derived-fields/derived-fields.md#operators) in einer Funktion verwendet. |
 
 {style="table-layout:auto"}
