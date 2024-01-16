@@ -4,10 +4,10 @@ description: Erfahren Sie, wie sich in Adobe Experience Platform definierte Date
 exl-id: 1de5070f-a91c-4fe6-addb-a89d59a280b7
 feature: Data Views, Data Governance
 role: Admin
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
-workflow-type: ht
-source-wordcount: '498'
-ht-degree: 100%
+source-git-commit: 3b089a3d358a1a39a4b572576e911faaa4ceb1d5
+workflow-type: tm+mt
+source-wordcount: '493'
+ht-degree: 94%
 
 ---
 
@@ -64,7 +64,7 @@ Klicken Sie auf **[!UICONTROL Anwenden]**, um zu sehen, welche Richtlinien aktiv
 
 ## Wie sich aktivierte Richtlinien auf Datenansichten auswirken
 
-Wenn die Richtlinien **[!UICONTROL Analytics erzwingen]** oder **[!UICONTROL Download erzwingen]** aktiviert sind, können die Schemakomponenten, denen bestimmte Datenbeschriftungen (wie C8 oder C12) zugeordnet sind, nicht zu Datenansichten hinzugefügt werden.
+Wenn die Variable **[!UICONTROL Analytics erzwingen]** -Richtlinie aktiviert ist, können die Schemakomponenten, mit denen bestimmte Datenbezeichnungen (z. B. C8) verknüpft sind, nicht zu Datenansichten hinzugefügt werden.
 
 Diese Komponenten sind in der linken Liste [!UICONTROL Schemafelder]-Liste ausgegraut:
 
