@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Basics
 hide: true
 hidefromtoc: true
-source-git-commit: 214616922aa157c390265f76138f8836c80b72d5
+source-git-commit: 171eb52940fabd422288d0f4f9eae512aafe3308
 workflow-type: tm+mt
-source-wordcount: '424'
+source-wordcount: '446'
 ht-degree: 13%
 
 ---
@@ -23,13 +23,13 @@ Hier erhalten Sie einen Einblick in die neuesten Verbesserungen des Customer Jou
 
 >[!TAB Arbeitsbereich: Zeitreihenprognosen]
 
-Prognosen sind eine neue Analysis Workspace-Funktion, mit der eine standardmäßige oder berechnete Metrik mit beliebiger unterstützter Zeitgranularität (stündlich, täglich, wöchentlich, monatlich und jährlich) prognostiziert werden kann.
+Prognosen sind eine neue Analysis Workspace-Funktion, mit der eine standardmäßige oder berechnete Metrik mit beliebiger unterstützter Zeitgranularität (stündlich, täglich, wöchentlich, monatlich und jährlich) prognostiziert werden kann. Prognosen sind nur für zeitreihenbezogene Daten verfügbar.
 
 [![Bild](assets/learn-more-button.svg)](../analysis-workspace/export/export-cloud.md)
 
 >[!TAB Verbindungen: Übersprungene Datensätze]
 
-Sie können jetzt die Gründe für das Überspringen von Datensätzen bei der Definition einer Verbindung überprüfen. Weitere Informationen finden Sie unter Verbindungen verwalten .
+Sie können jetzt die Gründe überprüfen, warum Datensätze aus Ereignis-Datensätzen beim Definieren einer Verbindung übersprungen werden. Sie können Details zu den Gründen abrufen, aus denen Datensätze übersprungen werden, z. B. leere Besucher-IDs, Datenaufbewahrungen und andere.
 
 [![Bild](assets/learn-more-button.svg)](/help/connections/manage-connections.md)
 
