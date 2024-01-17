@@ -5,8 +5,8 @@ exl-id: e23ce27a-77ab-4641-a126-93f00d4e6e14
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
-workflow-type: ht
+source-git-commit: 20f48259881bade1978909610055d6b20b894092
+workflow-type: tm+mt
 source-wordcount: '980'
 ht-degree: 100%
 
@@ -36,6 +36,9 @@ Diese erforderlichen Standardkomponenten werden standardmäßig jeder Datendatei
 | [!UICONTROL Monat] | Dimension | Der Monat, in dem ein bestimmtes Ereignis aufgetreten ist. Das erste Dimensionselement ist der erste Monat im Datumsbereich und das letzte Dimensionselement der letzte Monat im Datumsbereich. |
 | [!UICONTROL Quartal] | Dimension | Das Quartal, in dem ein bestimmtes Ereignis aufgetreten ist. Das erste Dimensionselement ist das erste Quartal im Datumsbereich und das letzte Dimensionselement das letzte Quartal im Datumsbereich. |
 | [!UICONTROL Jahr] | Dimension | Das Jahr, in dem ein bestimmtes Ereignis aufgetreten ist. Das erste Dimensionselement ist das erste Jahr im Datumsbereich und das letzte Dimensionselement das letzte Jahr im Datumsbereich. |
+| [!UICONTROL Sitzung beginnt] | Metrik | Die Anzahl der Ereignisse, die das erste Ereignis einer Sitzung waren. Bei Verwendung in einer Filterdefinition (wie beispielsweise „[!UICONTROL Sitzung beginnt] existiert“) wird nur das erste Ereignis jeder Sitzung gefiltert.<p>Diese Komponente muss in Ihrer Datenansicht für die folgende [berechnete Metrik](/help/components/calc-metrics/default-calcmetrics.md) enthalten sein, um in Workspace verfügbar zu sein: <ul><li>Startrate der Sitzung</li></p> |
+| [!UICONTROL Sitzung endet] | Metrik | Die Anzahl der Ereignisse, die das letzte Ereignis einer Sitzung waren. Ähnlich wie [!UICONTROL Sitzung beginnt] kann dies auch in einer Filterdefinition verwendet werden, um bis zum letzten Ereignis jeder Sitzung zu filtern.<p>Diese Komponente muss in Ihrer Datenansicht für die folgende [berechnete Metrik](/help/components/calc-metrics/default-calcmetrics.md) enthalten sein, um in Workspace verfügbar zu sein: <ul><li>Endrate der Sitzung</li></p> |
+| [!UICONTROL Aufgewendete Zeit (Sekunden)] | Metrik | Addiert die Zeit zwischen zwei verschiedenen Werten für eine Dimension.<p>Diese Komponente muss in Ihrer Datenansicht für die folgende [berechnete Metrik](/help/components/calc-metrics/default-calcmetrics.md) enthalten sein, um in Workspace verfügbar zu sein: <ul><li>Aufgewendete Zeit pro Person  </li><li>Aufgewendete Zeit pro Sitzung</li></p> |
 
 {style="table-layout:auto"}
 
@@ -59,10 +62,7 @@ Optionale Standardkomponenten sind unter **[!UICONTROL Datenansichten]** > **[!U
 | [!UICONTROL Personen-ID-Namespace] | Dimension | Aus welchem ID-Typ die [!UICONTROL Personen-ID] besteht. Beispiele sind: `email address`, `cookie ID` und `Analytics ID` |
 | [!UICONTROL Quartal des Jahres] | Zeitunterteilungsdimension | Q1, Q2, Q3, Q4 |
 | [!UICONTROL Sitzung wiederholen] | Metrik | Die Anzahl der Sitzungen, die nicht die allererste Sitzung einer Person waren. [Weitere Informationen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html?lang=de#new-repeat) |
-| [!UICONTROL Sitzung beginnt] | Metrik | Die Anzahl der Ereignisse, die das erste Ereignis einer Sitzung waren. Bei Verwendung in einer Filterdefinition (wie beispielsweise „[!UICONTROL Sitzung beginnt] existiert“) wird nur das erste Ereignis jeder Sitzung gefiltert.<p>Diese Komponente muss in Ihrer Datenansicht für die folgende [berechnete Metrik](/help/components/calc-metrics/default-calcmetrics.md) enthalten sein, um in Workspace verfügbar zu sein: <ul><li>Startrate der Sitzung</li></p> |
-| [!UICONTROL Sitzung endet] | Metrik | Die Anzahl der Ereignisse, die das letzte Ereignis einer Sitzung waren. Ähnlich wie [!UICONTROL Sitzung beginnt] kann dies auch in einer Filterdefinition verwendet werden, um bis zum letzten Ereignis jeder Sitzung zu filtern.<p>Diese Komponente muss in Ihrer Datenansicht für die folgende [berechnete Metrik](/help/components/calc-metrics/default-calcmetrics.md) enthalten sein, um in Workspace verfügbar zu sein: <ul><li>Endrate der Sitzung</li></p> |
 | [!UICONTROL Sitzungstyp] | Dimension | Diese Dimension hat zwei Werte: 1) [!UICONTROL Erstmalig] und 2) Wiederkehrend. Der Zeileneintrag [!UICONTROL Erstmalig] enthält das gesamte Verhalten (d. h. die Metriken für diese Dimension) in einer Sitzung, die als erste Sitzung einer Person definiert wurde. Alles andere ist im Zeileneintrag [!UICONTROL Wiederkehrend] enthalten (vorausgesetzt, dass alles zu einer Sitzung gehört). Wenn Metriken nicht Teil einer Sitzung sind, fallen sie in den Bucket „Nicht zutreffend“ für diese Dimension. [Weitere Informationen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html?lang=de#new-repeat) |
-| [!UICONTROL Aufgewendete Zeit (Sekunden)] | Metrik | Addiert die Zeit zwischen zwei verschiedenen Werten für eine Dimension.<p>Diese Komponente muss in Ihrer Datenansicht für die folgende [berechnete Metrik](/help/components/calc-metrics/default-calcmetrics.md) enthalten sein, um in Workspace verfügbar zu sein: <ul><li>Aufgewendete Zeit pro Person  </li><li>Aufgewendete Zeit pro Sitzung</li></p> |
 | [!UICONTROL Aufgewendete Zeit pro Ereignis] | Dimension | Sammelt die Metrik [!UICONTROL Verwendete Zeit] in Buckets des Typs [!UICONTROL Ereignis]. |
 | [!UICONTROL Aufgewendete Zeit pro Sitzung] | Dimension | Fasst die Metrik [!UICONTROL Aufgewendete Zeit] in Behältern des Typs [!UICONTROL Sitzung] zusammen. |
 | [!UICONTROL Aufgewendete Zeit pro Person] | Dimension | Fasst die Metrik [!UICONTROL Aufgewendete Zeit] in Behältern des Typs [!UICONTROL Person] zusammen. |
