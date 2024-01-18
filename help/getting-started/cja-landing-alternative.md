@@ -5,15 +5,18 @@ solution: Customer Journey Analytics
 feature: Basics
 hide: true
 hidefromtoc: true
-source-git-commit: 171eb52940fabd422288d0f4f9eae512aafe3308
+source-git-commit: ef46598db68372b8b3b58dc06aa7d5faacca6cc2
 workflow-type: tm+mt
-source-wordcount: '446'
-ht-degree: 13%
+source-wordcount: '520'
+ht-degree: 19%
 
 ---
 
 # Handbuch für Customer Journey Analytics
 
+Diese technische Dokumentation bietet Hilfe zur Selbsthilfe für Customer Journey Analytics. Mit Customer Journey Analytics können Sie Kundendaten aus beliebigen Kanälen (sowohl online als auch offline) in Adobe Experience Platform importieren und genauso analysieren wie vorhandene digitale Daten mit Analysis Workspace.
+
+Mit Customer Journey Analytics können Sie steuern, wie Sie Ihre Online- und Offline-Daten in Analysis Workspace mit jeder beliebigen Kunden-ID verbinden. Dadurch können Sie Aufgaben wie Attribution, Filterung, Fluss- und Fallout-Steuerung usw. endlich durchführen. Kundendaten.
 
 ## Neue Funktionen
 
@@ -21,23 +24,23 @@ Hier erhalten Sie einen Einblick in die neuesten Verbesserungen des Customer Jou
 
 >[!BEGINTABS]
 
->[!TAB Arbeitsbereich: Zeitreihenprognosen]
+>[!TAB Geführte Analyse - Treueraten]
 
-Prognosen sind eine neue Analysis Workspace-Funktion, mit der eine standardmäßige oder berechnete Metrik mit beliebiger unterstützter Zeitgranularität (stündlich, täglich, wöchentlich, monatlich und jährlich) prognostiziert werden kann. Prognosen sind nur für zeitreihenbezogene Daten verfügbar.
+Ein neuer Ansichtstyp, der den Prozentsatz der Benutzer anzeigt, die nach ihrer anfänglichen Interaktion innerhalb des gewünschten Datumsbereichs zurückkehren
 
-[![Bild](assets/learn-more-button.svg)](../analysis-workspace/export/export-cloud.md)
+[![Bild](assets/learn-more-button.svg)](/help//guided-analysis/types/retention-rates.md)
 
->[!TAB Verbindungen: Übersprungene Datensätze]
+>[!TAB Geführte Analyse - Trendlinien]
 
-Sie können jetzt die Gründe überprüfen, warum Datensätze aus Ereignis-Datensätzen beim Definieren einer Verbindung übersprungen werden. Sie können Details zu den Gründen abrufen, aus denen Datensätze übersprungen werden, z. B. leere Besucher-IDs, Datenaufbewahrungen und andere.
-
-[![Bild](assets/learn-more-button.svg)](/help/connections/manage-connections.md)
-
->[!TAB Product Analytics: Trendlinien]
-
-Trendzeilenüberlagerungen sind jetzt in der Ansicht &quot;Geführte Analyse - Nutzung&quot;verfügbar, was dazu beiträgt, ein klareres Muster in Daten darzustellen.
+Trendzeilenüberlagerungen sind jetzt in der Nutzungsansicht verfügbar, was dazu beiträgt, ein klareres Datenmuster darzustellen.
 
 [![Bild](assets/learn-more-button.svg)](/help/guided-analysis/types/usage.md)
+
+>[!TAB Visualisierung der Schlüsselmetriken]
+
+Bei Verwendung der Visualisierung der Schlüsselmetrik-Zusammenfassung kann der Datumsbereich des Vergleichs jetzt automatisch aktualisiert werden, je nachdem, ob die ausgewählte Option Datumsbereich des Vergleichs relativ zum primären Datumsbereich oder fest ist.
+
+[![Bild](assets/learn-more-button.svg)](/help/analysis-workspace/visualizations/key-metric.md)
 
 >[!ENDTABS]
 
