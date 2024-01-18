@@ -6,10 +6,10 @@ feature: Basics
 exl-id: c258fa39-c0b6-45a1-8547-79516c15a215
 mini-toc-levels: 3
 role: Admin
-source-git-commit: 75413a38b9291cc8c31de3f2389ae74a31e7b00c
+source-git-commit: 24d8d03867cf9619bbee1dd647b2a2a57a36492b
 workflow-type: tm+mt
-source-wordcount: '942'
-ht-degree: 78%
+source-wordcount: '1047'
+ht-degree: 63%
 
 ---
 
@@ -21,21 +21,48 @@ Darüber hinaus werden granulare Möglichkeiten zur Einschränkung des Zugriffs 
 
 ## Produktadministrator-Rolle
 
-Produktadministratoren haben die Berechtigung, alle Aufgaben auszuführen, die innerhalb von Customer Journey Analytics erforderlich sind. Sie müssen als Produktadministrator zum **Customer Journey Analytics-Produktprofil** im [Admin Console](https://adminconsole.adobe.com/enterprise/) under [!UICONTROL Customer Journey Analytics] > [!UICONTROL Administratoren] tab > [!UICONTROL Admin hinzufügen]. Produktadmins erhalten die folgenden Berechtigungen:
+Benutzern, denen die Rolle &quot;Produktadministrator&quot;zugewiesen wurde, werden standardmäßig die erforderlichen Berechtigungen erteilt, um die meisten Aufgaben innerhalb von Customer Journey Analytics auszuführen. Einige Aufgaben erfordern jedoch zusätzliche Berechtigungen.
 
-* Erstellen/Aktualisieren/Löschen von Verbindungen oder Datenansichten
-* Aktualisieren/Löschen von Projekten, Filtern, Berechnungsmetriken, Zielgruppen, Kommentaren oder von anderen Benutzenden erstellten Filtern
+So fügen Sie einen Benutzer als Produktadministrator hinzu:
+
+1. Navigieren Sie zu [Admin Console](https://adminconsole.adobe.com/enterprise/).
+
+1. Auswählen [!UICONTROL **Customer Journey Analytics**] > [!UICONTROL **Administratoren**] tab > [!UICONTROL **Admin hinzufügen**].
+
+   Den Benutzern, die Sie hinzugefügt haben, wird die [Produktadministratorstandardberechtigungen](#product-admin-default-permissions). Sie können sie auch [zusätzliche Berechtigungen](#product-admin-additional-permissions) bei Bedarf.
+
+### Produktadministratorstandardberechtigungen
+
+Produktadministratoren haben die Berechtigung, die meisten Aufgaben innerhalb von Customer Journey Analytics auszuführen.
+
+Produktadministratoren erhalten standardmäßig die erforderlichen Berechtigungen, um die folgenden Aufgaben auszuführen:
+
+* Datenansichten erstellen, aktualisieren und löschen
+* Projekte, Filter, berechnete Metriken, Zielgruppen, Anmerkungen oder von anderen Benutzern erstellte Filter aktualisieren und löschen
 * Freigeben von Workspace-Projekten für alle Benutzenden
 * Berichtaktivität im [Reporting Activity Manager](/help/reporting-activity-manager/reporting-activity-overview.md)
 
-Ein Produkt-Admin in Customer Journey Analytics zu werden, reicht allein nicht aus, um eine [Verbindung](/help/connections/overview.md) zu erstellen, zu aktualisieren oder zu löschen. Um eine Verbindung zu einem Experience Platform-Datensatz herzustellen, benötigen Sie auch Experience Platform-Berechtigungen. Insbesondere müssen Sie Teil eines **Experience Platform-Produktprofils** ein, das Ihnen die folgenden Berechtigungen gewährt:
+### Zusätzliche Berechtigungen für Produktadministratoren
 
-* Datenmodellierung: Schemas anzeigen, Schemas verwalten
-* Daten-Management: Datensätze anzeigen, Datensätze verwalten
-* Datenaufnahme: Quellen verwalten
-* Anzeigen von Identity-Namespaces
+Zusätzlich dazu, als Produkt-Admin im **Customer Journey Analytics-Produktprofil** im [Admin Console](https://adminconsole.adobe.com/enterprise/), sind zusätzliche Berechtigungen erforderlich, um die folgenden Aufgaben innerhalb von Customer Journey Analytics durchzuführen:
 
-Weitere Informationen zu Berechtigungen für Experience Platform finden Sie unter [Zugriffssteuerung in Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html?lang=de).
+* Erstellen, Aktualisieren und Löschen von Daten [Verbindungen](/help/connections/overview.md)
+
+  Um diese Aufgabe ausführen zu können, müssen Benutzer Teil eines **Experience Platform-Produktprofil** , der die folgenden Berechtigungen bereitstellt:
+   * Datenmodellierung: Schemas anzeigen, Schemas verwalten
+   * Daten-Management: Datensätze anzeigen, Datensätze verwalten
+   * Datenaufnahme: Quellen verwalten
+   * Anzeigen von Identity-Namespaces
+
+     Weitere Informationen zu Berechtigungen für Experience Platform finden Sie unter [Zugriffssteuerung in Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html?lang=de).
+
+* Exportieren von Datensätzen aus AEP-Zielen
+
+  Um diese Aufgabe ausführen zu können, benötigen Benutzer außerdem die folgenden Experience Platform-Berechtigungen:
+   * Verwalten von Zielen
+   * Aktivieren von Zielen
+
+     Weitere Informationen zu Berechtigungen für Experience Platform-Ziele finden Sie unter [Ziele - Übersicht](https://experienceleague.adobe.com/docs/experience-platform/destinations/home.html?lang=de).
 
 ## Produktprofil-Administratorrolle
 
