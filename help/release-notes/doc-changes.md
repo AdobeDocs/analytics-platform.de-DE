@@ -4,10 +4,10 @@ description: Listet Inhaltsaktualisierungen für Dokumentation zu Customer Journ
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 9beeb2013eb3b94dc55fb721233096f1813e2bf3
+source-git-commit: 227e1ca7f9652730c849a03fcf4e87f1c9ba98d7
 workflow-type: tm+mt
-source-wordcount: '2792'
-ht-degree: 90%
+source-wordcount: '2809'
+ht-degree: 89%
 
 ---
 
@@ -20,6 +20,7 @@ Die folgenden Aktualisierungen wurden seit der ersten Erstellung der Customer Jo
 | Funktion | Beschreibung |
 | --- | --- |
 | **Januar 2024** | |
+| Für das Exportieren von Datensätzen erforderliche Berechtigungen | Es wurden Informationen zur [erforderliche Berechtigungen](/help/admin/cja-access-control.md) , um Datensätze in Cloud-Ziele zu exportieren. |
 | Verbindungen verwalten | Die [Verbindungen verwalten](../connections/manage-connections.md) Artikel, basierend auf dem Kunden-Feedback. |
 | Abgeleitete Felder | Die Zusammenfassung der Funktion wurde hinzugefügt. [Einschränkungen](/help/data-views/derived-fields/derived-fields.md#limitations) und Erläuterung, wie die Anzahl der [Operatoren](/help/data-views/derived-fields/derived-fields.md#operators) in einer Funktion verwendet. |
 
