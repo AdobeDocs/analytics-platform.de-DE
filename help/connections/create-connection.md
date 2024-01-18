@@ -1,14 +1,14 @@
 ---
 title: Erstellen oder Bearbeiten einer Verbindung
-description: Beschreibt, wie eine Verbindung zu einem Experience Platform-Datensatz in Customer Journey Analytics hergestellt oder bearbeitet wird.
+description: Beschreibt, wie in Customer Journey Analytics eine Verbindung zu einem Experience Platform-Datensatz erstellt oder bearbeitet wird.
 exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
 source-git-commit: bfaf76fa5f225e9aa3153fc4ee10c5be8f3164e7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2748'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
