@@ -3,10 +3,10 @@ title: Aktuelle Versionshinweise zu Customer Journey Analytics anzeigen
 description: Neueste Versionshinweise zu Customer Journey Analytics
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: efae6138159820414004a21de7c05b4373257876
+source-git-commit: 767170d382931423ff0ee60c037021bc87000150
 workflow-type: tm+mt
-source-wordcount: '450'
-ht-degree: 31%
+source-wordcount: '448'
+ht-degree: 30%
 
 ---
 
@@ -23,7 +23,7 @@ Diese Versionshinweise beziehen sich auf den Veröffentlichungszeitraum Ende Okt
 | **Geführte Analyse - Treueraten** | Ein neuer Ansichtstyp, der den Prozentsatz der Benutzer anzeigt, die nach ihrer anfänglichen Interaktion innerhalb des gewünschten Datumsbereichs zurückkehren. [Weitere Informationen](../guided-analysis/types/retention-rates.md) | Nicht angegeben | Dienstag, 8. Januar 2024 |
 | **Zeitreihenprognosen** | Prognosen sind eine neue Analysis Workspace-Funktion, mit der eine standardmäßige oder berechnete Metrik mit beliebiger unterstützter Zeitgranularität (stündlich, täglich, wöchentlich, monatlich und jährlich) prognostiziert werden kann. | Nicht angegeben | Donnerstag, 31. Januar 2024 |
 | **Geführte Analyse - Trendlinien** | Trendzeilenüberlagerungen sind jetzt im [Nutzung](/help/guided-analysis/types/usage.md) -Ansicht, die dazu beiträgt, ein klareres Datenmuster darzustellen. | Nicht angegeben | Donnerstag, 17. Januar 2024 |
-| **Detailseite für Verbindungen - Übersprungene Datensätze** | Sie können jetzt die Gründe für das Überspringen von Datensätzen bei der Definition einer Verbindung überprüfen. [Weitere Informationen](../connections/manage-connections.md) | Nicht angegeben | Donnerstag, 31. Januar 2024 |
+| **Detailseite für Verbindungen - Übersprungene Datensätze** | Sie können jetzt die Gründe für das Überspringen von Datensätzen bei der Definition einer Verbindung überprüfen. | Nicht angegeben | Donnerstag, 31. Januar 2024 |
 | **Aktualisierungen der Zusammenfassung der Schlüsselmetriken** | Bei Verwendung der Visualisierung der Schlüsselmetrik-Zusammenfassung kann der Datumsbereich des Vergleichs jetzt automatisch aktualisiert werden, je nachdem, ob die ausgewählte Option Datumsbereich des Vergleichs relativ zum primären Datumsbereich oder fest ist. [Weitere Informationen](/help/analysis-workspace/visualizations/key-metric.md). | Nicht angegeben | Donnerstag, 17. Januar 2024 |
 | **Geführte Analyse - Streams** | Ein neuer Ansichtstyp, mit dem Sie einzelne Benutzerereignis-Streams untersuchen können. Mit dieser Analyse können Sie Erlebnismuster finden und bessere Benutzergeschichten erzählen. | Nicht angegeben | Donnerstag, 31. Januar 2024 |
 | **Geführte Analyse - Verbesserungen an der Abfrageleiste** | Einige Komponenteneinstellungen sind jetzt in der Abfrageleiste enthalten, was die Benutzerfreundlichkeit verbessert. | Nicht angegeben | Donnerstag, 31. Januar 2024 |
