@@ -6,9 +6,9 @@ exl-id: 0a87518c-3608-44ad-b5e3-976f97560433
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: 0b41cc80310c49bd1b0c73f1323f86c8b280e15f
+source-git-commit: 852dbce716e151d5feee52e813c9db9d76d9ccea
 workflow-type: tm+mt
-source-wordcount: '2487'
+source-wordcount: '2485'
 ht-degree: 27%
 
 ---
@@ -118,17 +118,11 @@ Um zu den Details für eine Verbindung zu wechseln, wählen Sie einen Verbindung
 
 ![Fenster mit allen Datensätzen mit Widgets und Einstellungen](assets/conn-details.png)
 
-Der Bildschirm Verbindungsdetails bietet eine detaillierte Ansicht des Status einer Verbindung. Sie haben folgende Möglichkeiten:
+Die Benutzeroberfläche &quot;Verbindungsdetails&quot;bietet einen detaillierten Überblick über den Status einer Verbindung. Sie haben folgende Möglichkeiten:
 
 * Überprüfen Sie den Status der Datensätze Ihrer Verbindung und des Aufnahmevorgangs.
 * Ermitteln Sie Konfigurationsprobleme, die zu übersprungenen oder gelöschten Datensätzen führen können.
 * Finden Sie heraus, wann die Daten für das Reporting verfügbar sind.
-
->[!IMPORTANT]
->
->Daten, die vor dem 13. August 2021 erfasst wurden, werden in dieser [!UICONTROL Verbindungen] angezeigt.
-
-### Verbindungsdetails
 
 | Benutzeroberfläche | Beschreibung |
 | --- | --- |
@@ -154,6 +148,10 @@ Der Bildschirm Verbindungsdetails bietet eine detaillierte Ansicht des Status ei
 | Schema | Das Experience Platform-Schema, auf dem der Datensatz basiert. |
 | [!UICONTROL Neue Daten importieren] | Zeigt den Status des Imports neuer Daten für den Datensatz an: <p><span style="color:green">●</span>   **[!UICONTROL _x _on]**ob der Datensatz für den Import neuer Daten konfiguriert ist, und<p><span style="color:gray">●</span>   **[!UICONTROL _x Aus_]** wenn der Datensatz so konfiguriert ist, dass er keinen neuen Datenimport importiert. |
 | [!UICONTROL Aufstockungsdaten] | Zeigt den Status der Aufstockungsdaten für den Datensatz an.<p><span style="color:red">●</span>   **[!UICONTROL _x _Aufstockungen fehlgeschlagen]**für die Anzahl fehlgeschlagener Aufstockungen,<p><span style="color:orange">●</span>   **[!UICONTROL _x _Verarbeitung von Backfilets]**für die Anzahl der Aufstockungen,<p><span style="color:green">●</span>   **[!UICONTROL _x _Aufstockungen abgeschlossen]**für die Anzahl der abgeschlossenen Aufstockungen und<p><span style="color:grey">●</span>   **[!UICONTROL _Aus_]** , falls keine Aufstockungen konfiguriert sind. |
+
+>[!IMPORTANT]
+>
+>Daten, die vor dem 13. August 2021 erfasst wurden, werden nicht im [!UICONTROL Verbindungen] -Schnittstelle.
 
 ### Verbindungs-Panel
 
