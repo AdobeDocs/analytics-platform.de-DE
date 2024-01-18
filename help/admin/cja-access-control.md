@@ -6,10 +6,10 @@ feature: Basics
 exl-id: c258fa39-c0b6-45a1-8547-79516c15a215
 mini-toc-levels: 3
 role: Admin
-source-git-commit: 7021e4cfc9275402ce175bf8dfa8a3993ac438dd
+source-git-commit: ae968e46c5822c9209ecf78735df0914f33cb0d2
 workflow-type: tm+mt
-source-wordcount: '1097'
-ht-degree: 63%
+source-wordcount: '1099'
+ht-degree: 61%
 
 ---
 
@@ -60,7 +60,7 @@ Zusätzlich dazu, als Produkt-Admin im **Customer Journey Analytics-Produktprofi
 
   >[!AVAILABILITY]
   >
-  >Die in diesem Artikel beschriebene Funktion befindet sich in der eingeschränkten Testphase der Version und ist möglicherweise noch nicht in Ihrer Umgebung verfügbar. Diese Anmerkung wird entfernt, wenn die Funktion allgemein verfügbar ist. Informationen zum Customer Journey Analytics-Veröffentlichungsprozess finden Sie unter [Customer Journey Analytics-Funktionsveröffentlichungen](/help/release-notes/releases.md).
+  >Die Möglichkeit, Datensätze in die Cloud zu exportieren, befindet sich in der eingeschränkten Testphase der Veröffentlichung und ist möglicherweise noch nicht in Ihrer Umgebung verfügbar. Diese Anmerkung wird entfernt, wenn die Funktion allgemein verfügbar ist. Informationen zum Customer Journey Analytics-Veröffentlichungsprozess finden Sie unter [Customer Journey Analytics-Funktionsveröffentlichungen](/help/release-notes/releases.md).
 
   Um diese Aufgabe ausführen zu können, benötigen Benutzer außerdem die folgenden Experience Platform-Berechtigungen:
    * Verwalten von Zielen
