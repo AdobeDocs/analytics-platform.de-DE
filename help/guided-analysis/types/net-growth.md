@@ -5,9 +5,9 @@ feature: Guided Analysis
 keywords: Produktanalyse
 exl-id: a4f97458-9934-4a98-8005-fa1ba7831101
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 486cd26bfacbae0072e14ec078ceca66909ac0ec
 workflow-type: tm+mt
-source-wordcount: '619'
+source-wordcount: '647'
 ht-degree: 1%
 
 ---
@@ -46,8 +46,14 @@ Anwendungsbeispiele für diesen Ansichtstyp sind:
 
 In der Abfrageleiste können Sie die folgenden Komponenten konfigurieren:
 
+* **[!UICONTROL Ansicht]**: Wechselt zwischen diesem Ansichtstyp und [Aktiv](active.md).
 * **[!UICONTROL Veranstaltungen]**: Das Ereignis, das Sie messen möchten. Da dieser Ansichtstyp benutzerbasiert ist, wird ein Benutzer, der innerhalb des Zeitraums einmal mit dem Ereignis interagiert, als aktiver Benutzer gezählt. Sie können ein Ereignis in eine Abfrage einbeziehen.
-* **[!UICONTROL Personen]**: Das Segment, das Sie messen möchten. Sie können ein Segment in eine Abfrage einbeziehen.
+* **[!UICONTROL Zählt als]**: Die zu messende Metrik. Optionen umfassen [!UICONTROL Anzahl der Benutzer] und [!UICONTROL Prozentsatz der Benutzer].
+* **[!UICONTROL Segmente]**: Das Segment, das Sie messen möchten. Sie können ein Segment in eine Abfrage einbeziehen.
+
+## Zeitvergleich
+
+{{apply-time-comparison}}
 
 ## Datumsbereich
 

@@ -5,9 +5,9 @@ exl-id: 53ef7485-9cae-4663-bf61-4eb77c126830
 feature: Guided Analysis
 keywords: Produktanalyse
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 60f1c20b4188b5363619af49b85373d081db6cc3
 workflow-type: tm+mt
-source-wordcount: '597'
+source-wordcount: '604'
 ht-degree: 1%
 
 ---
@@ -30,24 +30,25 @@ Alle aktiven Benutzer (neu + Wiederholen + Rückgabe) werden als Teelichtenschat
 Anwendungsbeispiele für diesen Ansichtstyp sind:
 
 * **Benutzerbindung und -abwanderung:** Bietet eine klare Visualisierung für Zeiträume hoher oder niedriger Benutzerbindung. Die Erkennung dieser Zeiträume mit hoher oder niedriger Aufbewahrung kann Ihnen dabei helfen, Produktentscheidungen zu treffen, um eine hohe Beibehaltung zu fördern oder Abwanderung zu minimieren.
-* **Kampagnenbewertung**: Die Anzeige einer bestimmten Kampagne kann Ihnen dabei helfen, nicht nur zu verstehen, wie viel Traffic sie generiert hat, sondern auch, wie gut die Kampagne den Benutzern geholfen hat, ihre Interaktion fortzusetzen.
+* **Kampagnenbewertung**: Durch die Anzeige einer bestimmten Kampagne können Sie besser nachvollziehen, wie viel Traffic durch die Kampagne generiert wurde und wie gut sie die Interaktion der Benutzer erleichtert hat.
 * **Analyse des Benutzerlebenszyklus**: Die Analyse des aktiven Nutzerwachstums während des gesamten Benutzerlebenszyklus kann dabei helfen, bestimmte Phasen zu identifizieren, in denen die Benutzerinteraktion abnimmt. Wenn beispielsweise eine hohe Anzahl ruhender Benutzer für Einzelpersonen in einer Onboarding-Phase vorhanden ist, kann dies auf Nutzungsprobleme oder die Notwendigkeit einer besseren produktinternen Anleitung hinweisen.
 
 ## Abfrageleiste
 
 In der Abfrageleiste können Sie die folgenden Komponenten konfigurieren:
 
+* **[!UICONTROL Ansicht]**: Wechselt zwischen diesem Ansichtstyp und [Nettowachstum](net-growth.md).
 * **[!UICONTROL Veranstaltungen]**: Das Ereignis, das Sie messen möchten. Da dieser Ansichtstyp benutzerbasiert ist, wird ein Benutzer, der innerhalb des Zeitraums einmal mit dem Ereignis interagiert, als aktiver Benutzer gezählt. Sie können ein Ereignis in eine Abfrage einbeziehen.
-* **[!UICONTROL Personen]**: Das Segment, das Sie messen möchten. Sie können ein Segment in eine Abfrage einbeziehen.
+* **[!UICONTROL Zählt als]**: Die zu messende Metrik. Optionen umfassen [!UICONTROL Anzahl der Benutzer] und [!UICONTROL Prozentsatz der Benutzer].
+* **[!UICONTROL Segmente]**: Das Segment, nach dem Sie Daten filtern möchten. Sie können ein Segment in eine Abfrage einbeziehen.
 
 ## Diagrammeinstellungen
 
 Die [!UICONTROL Aktiv] Die Ansicht bietet die folgenden Diagrammeinstellungen, die im Menü über dem Diagramm angepasst werden können:
 
-* **[!UICONTROL Metrik]**: Die zu messende Metrik. Zu den Optionen gehören die Anzahl der Benutzer und der Prozentsatz der Benutzer.
-* **[!UICONTROL Diagrammtyp]**: Der Visualisierungstyp, den Sie verwenden möchten. Zu den Optionen gehören &quot;Gestapelte Leiste&quot;und &quot;Gestapelter Bereich&quot;.
+* **[!UICONTROL Diagrammtyp]**: Der Visualisierungstyp, den Sie verwenden möchten. Optionen umfassen [!UICONTROL Gestapelte Leiste] und [!UICONTROL Gestapelter Bereich].
 
-## Zeitvergleich anwenden
+## Zeitvergleich
 
 {{apply-time-comparison}}
 

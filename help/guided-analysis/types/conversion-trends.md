@@ -5,9 +5,9 @@ feature: Guided Analysis
 keywords: Produktanalyse
 exl-id: 75501e77-a172-48b4-9c91-b12d39e93c37
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 486cd26bfacbae0072e14ec078ceca66909ac0ec
 workflow-type: tm+mt
-source-wordcount: '497'
+source-wordcount: '505'
 ht-degree: 1%
 
 ---
@@ -30,22 +30,23 @@ Anwendungsbeispiele für diesen Ansichtstyp sind:
 
 In der Abfrageleiste können Sie die folgenden Komponenten konfigurieren:
 
+* **[!UICONTROL Ansicht]**: Wechselt zwischen diesem Ansichtstyp und [Friktion](friction.md).
 * **[!UICONTROL Schritte]**: Die Ereignis-Touchpoints, die Sie verfolgen möchten. Jede Leiste im Diagramm stellt einen Schritt dar. Sie können bis zu zehn Schritte einbeziehen.
-* **[!UICONTROL Personen]**: Die Segmente, über die Sie den Trichter vergleichen möchten. Jedes ausgewählte Segment teilt jeden Schritt in mehrere Balken auf. Jede Farbe stellt ein anderes Segment dar. Sie können bis zu drei Segmente einbeziehen.
+* **[!UICONTROL Zählt als]**: Die zu messende Metrik. Optionen umfassen [!UICONTROL Benutzer] und [!UICONTROL Sitzungen].
+* **[!UICONTROL Segmente]**: Die Segmente, über die Sie den Trichter vergleichen möchten. Jedes ausgewählte Segment teilt jeden Schritt in mehrere Balken auf. Jede Farbe stellt ein anderes Segment dar. Sie können bis zu drei Segmente einbeziehen.
 
 ## Diagrammeinstellungen
 
-Die Ansicht Konversionstrends bietet die folgenden Diagrammeinstellungen, die im Menü über dem Diagramm angepasst werden können:
+Die [!UICONTROL Konversionstrends] Die Ansicht bietet die folgenden Diagrammeinstellungen, die im Menü über dem Diagramm angepasst werden können:
 
-* **[!UICONTROL Metrik]**: Die zu messende Metrik. Zu den Optionen gehören Sitzungen und Benutzer.
-* **[!UICONTROL Diagrammtyp]**: Der Visualisierungstyp, den Sie verwenden möchten. Zu den Optionen gehören &quot;Linie&quot;.
-* **[!UICONTROL Konversion von]**: Bestimmt die Berechnung des Prozentsatzes von Schritt zu Schritt. Zu den Optionen gehören die Berechnung der Konvertierung aus dem ersten Schritt oder dem vorherigen Schritt.
+* **[!UICONTROL Diagrammtyp]**: Der Visualisierungstyp, den Sie verwenden möchten. Optionen umfassen [!UICONTROL Linie].
+* **[!UICONTROL Konversion von]**: Bestimmt die Berechnung des Prozentsatzes von Schritt zu Schritt. Zu den Optionen gehören die Berechnung der Konversionsrate aus [!UICONTROL Erster Schritt] oder [!UICONTROL Vorheriger Schritt].
 
 >[!NOTE]
 >
 >Die **Durchschnittlich** in der Tabelle &quot;Konversionstrends&quot;unterscheidet sich von der **Ingesamt** in der [Friktionsansicht](friction.md) Tabelle. Erstere ist der Durchschnitt der Intervallspalten (z. B. der Durchschnitt der täglichen Konversionsraten), während Letztere eine aggregierte Berechnung über den gesamten Datumsbereich hinweg ist.
 
-## Zeitvergleich anwenden
+## Zeitvergleich
 
 {{apply-time-comparison}}
 

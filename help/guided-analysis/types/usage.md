@@ -5,9 +5,9 @@ exl-id: b632475f-371e-4156-9ffc-b138325aa120
 feature: Guided Analysis
 keywords: Produktanalyse
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 486cd26bfacbae0072e14ec078ceca66909ac0ec
 workflow-type: tm+mt
-source-wordcount: '702'
+source-wordcount: '701'
 ht-degree: 1%
 
 ---
@@ -52,7 +52,7 @@ Fügen Sie dem Diagramm zusätzliche Daten hinzu. Wenn mehrere Reihen im Diagram
    * [!UICONTROL Logarithmisch]: Erstellt eine gekrümmte Regressionslinie. Am besten für Daten, die schnell zunehmen oder abnehmen und dann weiter steigen. Gleichung: `y = a + b * log(x)`
    * [!UICONTROL anpassbarer Durchschnittswert]: Erstellt eine glatte Trendlinie basierend auf einer Reihe von Durchschnittswerten. Ein anpassbarer Durchschnittswert, der auch als rollierender Durchschnitt bezeichnet wird, verwendet eine bestimmte Anzahl vorheriger Datenpunkte (bestimmt durch Ihre Auswahl), errechnet einen Durchschnittswert und verwendet den Durchschnittswert als Punkt in der Zeile. Beispiele sind der anpassbare Durchschnittswert von sieben Tagen oder der anpassbare Durchschnittswert von vier Wochen. Die verfügbaren anpassbaren Durchschnittsoptionen hängen von Ihrem ausgewählten Intervall und Datumsbereich ab.
 
-## Zeitvergleich anwenden
+## Zeitvergleich
 
 {{apply-time-comparison}}
 

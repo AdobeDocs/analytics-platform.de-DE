@@ -1,8 +1,8 @@
 ---
-source-git-commit: fb624689c91bfa25f9676a5823b800d918e24e18
+source-git-commit: 486cd26bfacbae0072e14ec078ceca66909ac0ec
 workflow-type: tm+mt
 source-wordcount: '1092'
-ht-degree: 64%
+ht-degree: 63%
 
 ---
 # Snippets
@@ -74,7 +74,7 @@ ht-degree: 64%
 
 {style="table-layout:auto"}
 
-## Zeitvergleich anwenden {#apply-time-comparison}
+## Zeitvergleich {#apply-time-comparison}
 
 Sie können den aktuellen Zeitraum mit einem vorherigen Zeitraum vergleichen. Wenn Sie in diesem Menü eine Option auswählen, erhält jeder Datenpunkt ein ähnlich farbiges gepunktetes Gegenstück. Dieses Gegenstück stellt dieselbe Metrik im ausgewählten vorherigen Datumsbereich dar. Wenn Sie diese Option festlegen, verdoppelt sich die Anzahl der Elemente im Diagramm und der Zeilen in der Tabelle.
 

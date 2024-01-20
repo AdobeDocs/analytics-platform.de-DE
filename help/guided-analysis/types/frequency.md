@@ -5,10 +5,10 @@ feature: Guided Analysis
 keywords: Produktanalyse
 exl-id: 27eaa7c7-f1e1-4cf1-9d59-67ac552eb430
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 486cd26bfacbae0072e14ec078ceca66909ac0ec
 workflow-type: tm+mt
-source-wordcount: '548'
-ht-degree: 2%
+source-wordcount: '556'
+ht-degree: 1%
 
 ---
 
@@ -31,14 +31,15 @@ Anwendungsbeispiele für diesen Ansichtstyp sind:
 
 In der Abfrageleiste können Sie die folgenden Komponenten konfigurieren:
 
+* **[!UICONTROL Ansicht]**: Wechselt zwischen diesem Ansichtstyp und [Nutzung](usage.md).
 * **[!UICONTROL Veranstaltungen]**: Die Ereignisse, die Sie messen möchten. Jedes ausgewählte Ereignis wird als separates Diagramm dargestellt. Eine Zeile, die das Trendereignis darstellt, wird der Tabelle hinzugefügt. Sie können bis zu fünf Ereignisse einbeziehen.
-* **[!UICONTROL Personen]**: Die Segmente, die Sie messen möchten. Jedes ausgewählte Segment verdoppelt die Anzahl der Balken in der Grafik und Zeilen in der Tabelle. Sie können bis zu fünf Segmente einbeziehen.
+* **[!UICONTROL Zählt als]**: Die zu messende Metrik. Optionen umfassen [!UICONTROL Benutzer],  [!UICONTROL Sitzungen],  [!UICONTROL Prozentsatz der Benutzer] und  [!UICONTROL Prozentsatz der Sitzungen]. Der Nenner für prozentsatzbasierte Metriken in dieser Ansicht sind Benutzer oder Sitzungen, die die ausgewählten Ereignisse durchgeführt haben, nicht alle aktiven Benutzer des Produkts.
+* **[!UICONTROL Segmente]**: Die Segmente, die Sie messen möchten. Jedes ausgewählte Segment verdoppelt die Anzahl der Balken in der Grafik und Zeilen in der Tabelle. Sie können bis zu fünf Segmente einbeziehen.
 
 ## Diagrammeinstellungen
 
 Die [!UICONTROL Häufigkeit] Die Ansicht bietet die folgenden Diagrammeinstellungen, die im Menü über dem Diagramm angepasst werden können:
 
-* **[!UICONTROL Metrik]**: Die zu messende Metrik. Optionen umfassen [!UICONTROL Benutzer],  [!UICONTROL Sitzungen],  [!UICONTROL Prozentsatz der Benutzer] und  [!UICONTROL Prozentsatz der Sitzungen]. Der Nenner für prozentsatzbasierte Metriken in dieser Ansicht sind Benutzer oder Sitzungen, die die ausgewählten Ereignisse durchgeführt haben, nicht alle aktiven Benutzer des Produkts.
 * **[!UICONTROL Diagrammtyp]**: Der Visualisierungstyp, den Sie verwenden möchten. Optionen umfassen [!UICONTROL Horizontalbalken] und [!UICONTROL Gestapelte Leiste].
 
 ## Bucket-Einstellungen
@@ -51,7 +52,7 @@ Bestimmt, wie das Ereignis in Gruppen kategorisiert wird.
    * [!UICONTROL nach]: Die Frequenz, die größer als dieser Wert ist, wird in die letzte Gruppe gruppiert.
    * [!UICONTROL Größe]: Das Behälterintervall.
 
-## Zeitvergleich anwenden
+## Zeitvergleich
 
 {{apply-time-comparison}}
 

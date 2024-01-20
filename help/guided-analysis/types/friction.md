@@ -5,9 +5,9 @@ exl-id: c8b0b71f-8ed3-4aad-a0f8-4d5ad8d7a7bd
 feature: Guided Analysis
 keywords: Produktanalyse
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 486cd26bfacbae0072e14ec078ceca66909ac0ec
 workflow-type: tm+mt
-source-wordcount: '491'
+source-wordcount: '496'
 ht-degree: 1%
 
 ---
@@ -31,18 +31,21 @@ Anwendungsbeispiele für diesen Ansichtstyp sind:
 
 In der Abfrageleiste können Sie die folgenden Komponenten konfigurieren:
 
+* **[!UICONTROL Ansicht]**: Wechselt zwischen diesem Ansichtstyp und [Konversionstrends](conversion-trends.md).
 * **[!UICONTROL Schritte]**: Die Ereignis-Touchpoints, die Sie verfolgen möchten. Jede Leiste im Diagramm stellt einen Schritt dar. Sie können bis zu zehn Schritte einbeziehen.
-* **[!UICONTROL Personen]**: Die Segmente, über die Sie den Trichter vergleichen möchten. Jedes ausgewählte Segment teilt jeden Schritt in mehrere Balken auf. Jede Farbe stellt ein anderes Segment dar. Sie können bis zu drei Segmente einbeziehen.
+* **[!UICONTROL Zählt als]**: Der Bereich, der auf den Trichter angewendet werden soll. Optionen umfassen [!UICONTROL Sitzungen] und [!UICONTROL Benutzer].
+   * [!UICONTROL Sitzungen]: Alle Schritte müssen innerhalb derselben Sitzung erfolgen, damit sie gezählt werden.
+   * [!UICONTROL Benutzer]: Alle Schritte müssen innerhalb des ausgewählten Berichtsfensters ausgeführt werden, damit sie gezählt werden können.
+* **[!UICONTROL Segmente]**: Die Segmente, über die Sie den Trichter vergleichen möchten. Jedes ausgewählte Segment teilt jeden Schritt in mehrere Balken auf. Jede Farbe stellt ein anderes Segment dar. Sie können bis zu drei Segmente einbeziehen.
 
 ## Diagrammeinstellungen
 
 Die Ansicht &quot;Friction&quot;bietet die folgenden Diagrammeinstellungen, die im Menü über dem Diagramm angepasst werden können:
 
-* **[!UICONTROL Metrik]**: Der Bereich, der auf den Trichter angewendet werden soll. Zu den Optionen gehören Sitzungen und Benutzer. Durch die Auswahl von Sitzungen müssen alle Schritte innerhalb derselben Sitzung erfolgen, damit sie gezählt werden. Durch Auswahl von Benutzern müssen alle Schritte innerhalb des Berichtsfensters erfolgen, das für die Zählung ausgewählt wurde.
-* **[!UICONTROL Diagrammtyp]**: Der Visualisierungstyp, den Sie verwenden möchten. Zu den Optionen gehören die Schritte .
-* **[!UICONTROL Konversion von]**: Bestimmt die Berechnung des Prozentsatzes von Schritt zu Schritt. Zu den Optionen gehören die Berechnung der Konvertierung aus dem ersten Schritt oder dem vorherigen Schritt.
+* **[!UICONTROL Diagrammtyp]**: Der Visualisierungstyp, den Sie verwenden möchten. Optionen umfassen [!UICONTROL Schritte].
+* **[!UICONTROL Konversion von]**: Bestimmt die Berechnung des Prozentsatzes von Schritt zu Schritt. Zu den Optionen gehören die Berechnung der Konversionsrate aus [!UICONTROL Erster Schritt] oder [!UICONTROL Vorheriger Schritt].
 
-## Zeitvergleich anwenden
+## Zeitvergleich
 
 {{apply-time-comparison}}
 
