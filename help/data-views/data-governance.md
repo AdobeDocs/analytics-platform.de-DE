@@ -5,9 +5,9 @@ exl-id: 1de5070f-a91c-4fe6-addb-a89d59a280b7
 feature: Data Views, Data Governance
 role: Admin
 source-git-commit: 3b089a3d358a1a39a4b572576e911faaa4ceb1d5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '493'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -64,9 +64,9 @@ Klicken Sie auf **[!UICONTROL Anwenden]**, um zu sehen, welche Richtlinien aktiv
 
 ## Wie sich aktivierte Richtlinien auf Datenansichten auswirken
 
-Wenn die Variable **[!UICONTROL Analytics erzwingen]** -Richtlinie aktiviert ist, können die Schemakomponenten, mit denen bestimmte Datenbezeichnungen (z. B. C8) verknüpft sind, nicht zu Datenansichten hinzugefügt werden.
+Wenn die Richtlinie **[!UICONTROL Analyse erzwingen]** aktiviert ist, können die Schemakomponenten mit bestimmten Datenbeschriftungen (z. B. C8) nicht zu Datenansichten hinzugefügt werden.
 
-Diese Komponenten sind in der linken Liste [!UICONTROL Schemafelder]-Liste ausgegraut:
+Diese Komponenten sind in der Liste [!UICONTROL Schemafelder] in der linken Leiste ausgegraut:
 
 ![Ausgegraute Komponenten und die Richtlinienmeldung, dass Richtlinien auf dieses Feld angewendet wurden, um die Verwendung der Daten zu beschränken](assets/component-greyed.png)
 

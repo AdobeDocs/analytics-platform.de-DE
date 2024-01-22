@@ -4,41 +4,41 @@ description: Neueste Versionshinweise zu Customer Journey Analytics
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
 source-git-commit: 767170d382931423ff0ee60c037021bc87000150
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '448'
-ht-degree: 30%
+ht-degree: 100%
 
 ---
 
-# Aktuelle Adobe Customer Journey Analytics-Versionshinweise (Januar 2024)
+# Aktuelle Versionshinweise zu Adobe Customer Journey Analytics (Januar 2024)
 
-**Letzte Aktualisierung:** Samstag, 12. Januar 2024
+**Letzte Aktualisierung:** 12. Januar 2024
 
-Diese Versionshinweise beziehen sich auf den Veröffentlichungszeitraum Ende Oktober 2023 bis Januar 2024. Versionen von Adobe Customer Journey Analytics basieren auf einem [Modell der kontinuierlichen Bereitstellung](releases.md), das einen besser skalierbaren, schrittweisen Ansatz für die Implementierung von Funktionen ermöglicht. Dementsprechend werden diese Versionshinweise mehrmals im Monat aktualisiert. Bitte überprüfen Sie sie regelmäßig.
+Diese Versionshinweise beziehen sich auf den Veröffentlichungszeitraum von Ende Oktober 2023 bis Januar 2024. Versionen von Adobe Customer Journey Analytics basieren auf einem [Modell der kontinuierlichen Bereitstellung](releases.md), das einen besser skalierbaren, schrittweisen Ansatz für die Implementierung von Funktionen ermöglicht. Dementsprechend werden diese Versionshinweise mehrmals im Monat aktualisiert. Bitte überprüfen Sie sie regelmäßig.
 
 ## Neue oder aktualisierte Funktionen
 
 | Funktion | Beschreibung | [Rollout-Beginn](releases.md) | [Allgemeine Verfügbarkeit](releases.md) |
 | ----------- | ---------- | ------- | ---- |
-| **Geführte Analyse - Treueraten** | Ein neuer Ansichtstyp, der den Prozentsatz der Benutzer anzeigt, die nach ihrer anfänglichen Interaktion innerhalb des gewünschten Datumsbereichs zurückkehren. [Weitere Informationen](../guided-analysis/types/retention-rates.md) | Nicht angegeben | Dienstag, 8. Januar 2024 |
-| **Zeitreihenprognosen** | Prognosen sind eine neue Analysis Workspace-Funktion, mit der eine standardmäßige oder berechnete Metrik mit beliebiger unterstützter Zeitgranularität (stündlich, täglich, wöchentlich, monatlich und jährlich) prognostiziert werden kann. | Nicht angegeben | Donnerstag, 31. Januar 2024 |
-| **Geführte Analyse - Trendlinien** | Trendzeilenüberlagerungen sind jetzt im [Nutzung](/help/guided-analysis/types/usage.md) -Ansicht, die dazu beiträgt, ein klareres Datenmuster darzustellen. | Nicht angegeben | Donnerstag, 17. Januar 2024 |
-| **Detailseite für Verbindungen - Übersprungene Datensätze** | Sie können jetzt die Gründe für das Überspringen von Datensätzen bei der Definition einer Verbindung überprüfen. | Nicht angegeben | Donnerstag, 31. Januar 2024 |
-| **Aktualisierungen der Zusammenfassung der Schlüsselmetriken** | Bei Verwendung der Visualisierung der Schlüsselmetrik-Zusammenfassung kann der Datumsbereich des Vergleichs jetzt automatisch aktualisiert werden, je nachdem, ob die ausgewählte Option Datumsbereich des Vergleichs relativ zum primären Datumsbereich oder fest ist. [Weitere Informationen](/help/analysis-workspace/visualizations/key-metric.md). | Nicht angegeben | Donnerstag, 17. Januar 2024 |
-| **Geführte Analyse - Streams** | Ein neuer Ansichtstyp, mit dem Sie einzelne Benutzerereignis-Streams untersuchen können. Mit dieser Analyse können Sie Erlebnismuster finden und bessere Benutzergeschichten erzählen. | Nicht angegeben | Donnerstag, 31. Januar 2024 |
-| **Geführte Analyse - Verbesserungen an der Abfrageleiste** | Einige Komponenteneinstellungen sind jetzt in der Abfrageleiste enthalten, was die Benutzerfreundlichkeit verbessert. | Nicht angegeben | Donnerstag, 31. Januar 2024 |
+| **Geführte Analyse – Bindungsraten** | Dieser neue Ansichtstyp zeigt den Prozentsatz der Benutzenden an, die nach ihrer anfänglichen Interaktion innerhalb des gewünschten Datumsbereichs zurückkehren. [Weitere Informationen](../guided-analysis/types/retention-rates.md) | Nicht angegeben | 8. Januar 2024 |
+| **Zeitreihenprognosen** | Prognosen sind eine neue Funktion des Analyse-Arbeitsbereichs, mit der eine standardmäßige oder berechnete Metrik mit beliebiger unterstützter Zeitgranularität (stündlich, täglich, wöchentlich, monatlich und jährlich) prognostiziert werden kann. | Nicht angegeben | 31. Januar 2024 |
+| **Geführte Analyse – Trend-Linien** | Überlagerungen von Trend-Linien sind jetzt in der Ansicht [Nutzung](/help/guided-analysis/types/usage.md) verfügbar und unterstützen die Darstellung eines klareren Datenmusters. | Nicht angegeben | 17. Januar 2024 |
+| **Seite „Verbindungsdetails“ – Übersprungene Datensätze** | Sie können jetzt überprüfen, warum Einträge bei der Definition einer Verbindung übersprungen wurden. | Nicht angegeben | 31. Januar 2024 |
+| **Aktualisierungen zur Visualisierung der Schlüsselmetrikübersicht** | Bei der Visualisierung der Schlüsselmetrikübersicht kann der Vergleichs-Datumsbereich jetzt automatisch aktualisiert werden, je nachdem, ob der ausgewählte Vergleichs-Datumsbereich relativ zum primären Datumsbereich oder fest ist. [Weitere Informationen](/help/analysis-workspace/visualizations/key-metric.md). | Nicht angegeben | 17. Januar 2024 |
+| **Geführte Analyse – Streams** | Mit diesem neuen Ansichtstyp können Sie einzelne Benutzerereignis-Streams untersuchen. Mit dieser Analyse können Sie nach Erlebnismustern suchen und bessere Benutzergeschichten erzählen. | Nicht angegeben | 31. Januar 2024 |
+| **Geführte Analyse – Verbesserungen bei der Abfrageleiste** | Einige Komponenteneinstellungen sind jetzt in der Abfrageleiste enthalten, was die Benutzerfreundlichkeit verbessert. | Nicht angegeben | 31. Januar 2024 |
 
 {style="table-layout:auto"}
 
 ## Fehlerbehebungen in Customer Journey Analytics
 
-AN-310972; AN-332774; AN-332793; AN-332796; AN-333157; AN-334067; AN-334134; AN 334968; AN-335315; AN-335518; AN-335533; AN-335736;
+AN-310972; AN-332774; AN-332793; AN-332796; AN-333157; AN-334067; AN-334134; AN-334968; AN-335315; AN-335518; AN-335533; AN-335736;
 
 ## Wichtige Hinweise für Customer Journey Analytics-Admins
 
 | Hinweis | Hinweis hinzugefügt oder aktualisiert | Beschreibung |
 | --- | --- | --- |
-| Adobe-API-Objektmitgliedsadditionen | Donnerstag, 17. Januar 2024 | Adobe kann optionale Anforderungs- und Antwortmitglieder (Name/Wert-Paare) zu bestehenden API-Objekten hinzufügen, ohne dass dies angekündigt oder geändert wird. Solche Ergänzungen sollten für Ihre Implementierung nicht zu ändern sein. Adobe empfiehlt, in der API-Dokumentation jedes Drittanbieter-Tools, das Sie in unsere APIs integrieren, nachzuschlagen, damit solche Ergänzungen bei der Verarbeitung ignoriert werden, wenn sie nicht verstanden werden. Adobe entfernt keine Parameter und fügt keine erforderlichen Parameter hinzu, ohne zuvor eine Standardbenachrichtigung über die Versionshinweise bereitzustellen. |
+| Adobe-API-Objektmitgliederergänzungen | 17. Januar 2024 | Adobe kann ohne Ankündigung oder Versionsänderung optionale Anforderungs- und Antwortmitglieder (Name/Wert-Paare) zu bestehenden API-Objekten hinzufügen. Solche Ergänzungen sollten für Ihre Implementierung keine einschneidenden Änderungen darstellen. Adobe empfiehlt, in der API-Dokumentation jedes Drittanbieter-Tools, das Sie in unsere API integrieren, nachzuschlagen, damit solche Ergänzungen bei der Verarbeitung ignoriert werden, wenn sie nicht verstanden werden. Adobe entfernt keine Parameter und fügt keine erforderlichen Parameter hinzu, ohne zuvor durch Versionshinweise eine Standardbenachrichtigung bereitzustellen. |
 
 {style="table-layout:auto"}
 
