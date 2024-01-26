@@ -4,10 +4,10 @@ description: Listet Inhaltsaktualisierungen für Dokumentation zu Customer Journ
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 227e1ca7f9652730c849a03fcf4e87f1c9ba98d7
+source-git-commit: c13dfaa5367210f48e419a3516d30f2c1fd5c24f
 workflow-type: tm+mt
-source-wordcount: '2809'
-ht-degree: 89%
+source-wordcount: '2879'
+ht-degree: 87%
 
 ---
 
@@ -20,6 +20,8 @@ Die folgenden Aktualisierungen wurden seit der ersten Erstellung der Customer Jo
 | Funktion | Beschreibung |
 | --- | --- |
 | **Januar 2024** | |
+| Neue Informationen zur Komponentenmigration bei der Migration von Adobe Analytics | Informationen zu [Entwicklung von Adobe Analytics](/help/getting-started/aa-to-cja.md) , die auf das neue [Komponentenmigration](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/component-migration/prepare-component-migration.html?lang=de) Funktionen, die im Adobe Analytics Admin-Handbuch beschrieben sind. |
+| Es wurde klargestellt, dass bestimmte Informationen nur für Administratoren verfügbar sind | Es wurden Informationen hinzugefügt, aus denen hervorgeht, dass die Spalten &quot;Zuletzt verwendet&quot;und &quot;Verwendet in&quot;in [Manager für berechnete Metriken](/help/components/calc-metrics/cm-workflow/cm-manager.md) und [Filter Manager](/help/components/filters/manage-filters.md) sind nur für Systemadministratoren verfügbar. |
 | Für das Exportieren von Datensätzen erforderliche Berechtigungen | Es wurden Informationen zur [erforderliche Berechtigungen](/help/admin/cja-access-control.md) , um Datensätze in Cloud-Ziele zu exportieren. |
 | Verbindungen verwalten | Die [Verbindungen verwalten](../connections/manage-connections.md) Artikel, basierend auf dem Kunden-Feedback. |
 | Abgeleitete Felder | Die Zusammenfassung der Funktion wurde hinzugefügt. [Einschränkungen](/help/data-views/derived-fields/derived-fields.md#limitations) und Erläuterung, wie die Anzahl der [Operatoren](/help/data-views/derived-fields/derived-fields.md#operators) in einer Funktion verwendet. |
