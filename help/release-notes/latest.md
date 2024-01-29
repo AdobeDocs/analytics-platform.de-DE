@@ -25,7 +25,7 @@ Diese Versionshinweise beziehen sich auf den Veröffentlichungszeitraum von Ende
 | **Aktualisierungen zur Visualisierung der Schlüsselmetrikübersicht** | Bei der Visualisierung der Schlüsselmetrikübersicht kann der Vergleichs-Datumsbereich jetzt automatisch aktualisiert werden, je nachdem, ob der ausgewählte Vergleichs-Datumsbereich relativ zum primären Datumsbereich oder fest ist. [Weitere Informationen](/help/analysis-workspace/visualizations/key-metric.md). | Nicht angegeben | 17. Januar 2024 |
 | **Adobe Product Analytics - Streams** | Stream ist eine neue geführte Analyse, mit der Sie einzelne Benutzerereignis-Streams untersuchen können. Mit dieser Analyse können Sie nach Erlebnismustern suchen und bessere Benutzergeschichten erzählen. | Nicht angegeben | 31. Januar 2024 |
 | **Adobe Product Analytics - Verbesserungen an der Abfrageleiste** | In der geführten Analyse sind jetzt einige Komponenteneinstellungen in der Abfrageleiste enthalten, was die Benutzerfreundlichkeit verbessert. | Nicht angegeben | 31. Januar 2024 |
-| **Zeitreihenprognosen** | Prognosen sind eine neue Funktion des Analyse-Arbeitsbereichs, mit der eine standardmäßige oder berechnete Metrik mit beliebiger unterstützter Zeitgranularität (stündlich, täglich, wöchentlich, monatlich und jährlich) prognostiziert werden kann. | 31. Januar 2024 | Donnerstag, 21. Februar 2024 |
+| **Zeitreihenprognosen** | Prognosen sind eine neue Funktion des Analyse-Arbeitsbereichs, mit der eine standardmäßige oder berechnete Metrik mit beliebiger unterstützter Zeitgranularität (stündlich, täglich, wöchentlich, monatlich und jährlich) prognostiziert werden kann. | 31. Januar 2024 | 21. Februar 2024 |
 
 {style="table-layout:auto"}
 
