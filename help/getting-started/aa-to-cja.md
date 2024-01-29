@@ -5,10 +5,10 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 5e3f0aa0-ba24-48c8-948c-ebb5c270f34d
-source-git-commit: e84010b9ea9e6385574e8b1a04f7eccbba3ebc90
+source-git-commit: 37d9e8e84e1982d63f2173601d75f0b7fa552b73
 workflow-type: tm+mt
-source-wordcount: '1462'
-ht-degree: 95%
+source-wordcount: '1495'
+ht-degree: 93%
 
 ---
 
@@ -84,9 +84,17 @@ Die folgenden Adobe Analytics-Funktionen oder -Komponenten werden nicht unterst�
 
 ### 5. Zuordnen von Projekten und Komponenten von Adobe Analytics zum Customer Journey Analytics
 
-Migrieren Sie Ihre Projekte und die zugehörigen Komponenten von Adobe Analytics auf Customer Journey Analytics.
+Adobe Analytics-Administratoren können Adobe Analytics-Projekte und die zugehörigen Komponenten auf Customer Journey Analytics migrieren.
 
-Bevor jemand in Ihrer Organisation mit der Migration von Projekten beginnt, beginnen Sie die Migrationsprojekte, wie beschrieben in [Migrieren von Komponenten und Projekten von Adobe Analytics zum Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/component-migration/component-migration.html), first [Vorbereiten der Migration von Komponenten und Projekten von Adobe Analytics zu Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/component-migration/prepare-component-migration.html?lang=de)
+Der Migrationsprozess umfasst:
+
+* Erstellen Sie Adobe Analytics-Projekte im Customer Journey Analytics neu.
+
+* Zuordnen von Dimensionen und Metriken aus Adobe Analytics Report Suites zu Dimensionen und Metriken in Customer Journey Analytics-Datenansichten.
+
+Bevor Sie mit der Migration beginnen, müssen Sie [Vorbereiten der Migration von Komponenten und Projekten von Adobe Analytics zu Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/component-migration/prepare-component-migration.html?lang=de).
+
+Nachdem Sie alle notwendigen Vorbereitungen getroffen haben, können Sie [Migrieren von Komponenten und Projekten von Adobe Analytics zum Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/component-migration/component-migration.html).
 
 ## Einige wichtige Unterschiede
 
