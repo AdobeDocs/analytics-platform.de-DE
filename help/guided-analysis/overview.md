@@ -5,9 +5,9 @@ keywords: Produktanalyse
 exl-id: 1ac8157f-87e8-4d98-a2ca-f6beb68d9d6b
 feature: Guided Analysis
 role: User
-source-git-commit: 6f80a1aa4ec9142d75fe1abb2f268dc60c7dd245
+source-git-commit: a5c2003a593917bce67346279a033a6041aff959
 workflow-type: tm+mt
-source-wordcount: '1293'
+source-wordcount: '1302'
 ht-degree: 2%
 
 ---
@@ -24,14 +24,15 @@ Geführte Analyse kategorisiert Ansichtstypen in **Analysetypen**. Die folgenden
 
 | Analysetyp | Ansichtstyp | Beschreibung |
 | --- | --- | --- |
-| [!UICONTROL Auswirkung] | [Version](types/release.md) | Vergleichen Sie die Leistung über gleiche Zeiträume vor und nach der Veröffentlichung. |
-| [!UICONTROL Auswirkung] | [Erste Verwendung](types/first-use.md) | Messen Sie die Auswirkungen der erstmaligen Verwendung von Funktionen auf Schlüsselindikatoren. |
 | [!UICONTROL Trichter] | [Friktion](types/friction.md) | Vergleichen Sie die Konversionsraten zwischen Schritten. |
 | [!UICONTROL Trichter] | [Konversionstrends](types/conversion-trends.md) | Verfolgen Sie Änderungen der Konversionsraten im Zeitverlauf. |
-| [!UICONTROL Benutzerwachstum] | [Aktiv](types/active.md) | Identifizieren Sie, wer neu ist, beibehalten, zurückkehren oder ruhend ist. |
-| [!UICONTROL Benutzerwachstum] | [Nettowachstum](types/net-growth.md) | Gewinnen oder verlieren Sie Nutzende? |
+| [!UICONTROL Auswirkung] | [Version](types/release.md) | Vergleichen Sie die Leistung über gleiche Zeiträume vor und nach der Veröffentlichung. |
+| [!UICONTROL Auswirkung] | [Erste Verwendung](types/first-use.md) | Messen Sie die Auswirkungen der erstmaligen Verwendung von Funktionen auf Schlüsselindikatoren. |
+| [!UICONTROL Treue] | [Treuerate](types/retention-rates.md) | Messen Sie die anhaltenden Rückkehrgewohnheiten Ihrer Benutzer. |
 | [!UICONTROL Trends] | [Verwendung](types/usage.md) | Messen Sie die Benutzerinteraktion im Zeitverlauf. |
 | [!UICONTROL Trends] | [Häufigkeit](types/frequency.md) | Messen Sie die Interaktion nach Häufigkeit der Verwendung. |
+| [!UICONTROL Benutzerwachstum] | [Aktiv](types/active.md) | Identifizieren Sie, wer neu ist, beibehalten, zurückkehren oder ruhend ist. |
+| [!UICONTROL Benutzerwachstum] | [Nettowachstum](types/net-growth.md) | Gewinnen oder verlieren Sie Nutzende? |
 
 {style="table-layout:auto"}
 
