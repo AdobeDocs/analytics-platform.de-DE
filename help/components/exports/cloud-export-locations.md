@@ -5,10 +5,10 @@ title: Konfigurieren von Cloud-Exportspeicherorten
 feature: Components
 exl-id: 93f1cca0-95da-41a0-a4f9-5ab620a5b9da
 role: User, Admin
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: e16d071df04d91ec6627efd250515fb2d54515bb
 workflow-type: tm+mt
-source-wordcount: '1477'
-ht-degree: 3%
+source-wordcount: '1635'
+ht-degree: 4%
 
 ---
 
@@ -38,11 +38,18 @@ Informationen zum Verwalten vorhandener Standorte, einschließlich Anzeigen, Bea
 
    Das Dialogfeld Standort wird angezeigt.
 
-1. Geben Sie die folgenden Informationen an: |Feld | Funktion | |—|—| | [!UICONTROL **Name**] | Der Name des Standorts.  | | [!UICONTROL **Beschreibung**] | Geben Sie eine kurze Beschreibung des Kontos ein, um es von anderen Konten desselben Kontotyps zu unterscheiden. | | [!UICONTROL **Standortkonto**] | Wählen Sie das Konto aus, in dem Sie den Standort erstellen möchten. Informationen zum Erstellen eines Kontos finden Sie unter [Konfigurieren von Cloud-Exportkonten](/help/components/exports/cloud-export-accounts.md). |
+1. Geben Sie die folgenden Informationen an: |Feld | Funktion | |—|—| | [!UICONTROL **Name**] | Der Name des Standorts.  | | [!UICONTROL **Beschreibung**] | Geben Sie eine kurze Beschreibung des Standorts ein, um ihn von anderen Positionen im Konto zu unterscheiden. | | [!UICONTROL **Standortkonto**] | Wählen Sie das Konto aus, in dem Sie den Standort erstellen möchten. Informationen zum Erstellen eines Kontos finden Sie unter [Konfigurieren von Cloud-Exportkonten](/help/components/exports/cloud-export-accounts.md). |
 
 1. Im [!UICONTROL **Standorteigenschaften**] Informationen zum Kontotyp Ihres Standortkontos angeben.
 
    Fahren Sie mit dem folgenden Abschnitt fort, der dem Kontotyp entspricht, den Sie in der [!UICONTROL **Standortkonto**] -Feld.
+
+   * [AEP Data Landing Zone](#aep-data-landing-zone)
+   * [Amazon S3 Role ARN](#amazon-s3-role-arn)
+   * [Google Cloud Platform](#google-cloud-platform)
+   * [Azure SAS](#azure-sas)
+   * [Azure RBAC](#azure-rbac)
+   * [Snowflake](#snowflake)
 
 ### AEP Data Landing Zone
 
@@ -50,7 +57,11 @@ Informationen zum Verwalten vorhandener Standorte, einschließlich Anzeigen, Bea
 >
 >Achten Sie beim Exportieren von Customer Journey Analytics-Berichten in die Adobe Experience Platform Data Landing Zone darauf, die Daten innerhalb von 7 Tagen herunterzuladen und sie dann aus der AEP Data Landing Zone zu löschen. Nach 7 Tagen werden die Daten automatisch aus der AEP Data Landing Zone gelöscht.
 
-1. [Erstellen eines Cloud-Export-Standorts](#begin-creating-a-cloud-export-location), wie oben beschrieben.
+1. Beginnen Sie mit der Erstellung eines Cloud-Export-Standorts auf eine der folgenden Arten:
+
+   * Auf der Seite &quot;Exporte&quot;, wie oben beschrieben, unter [Erstellen eines Cloud-Export-Standorts](#begin-creating-a-cloud-export-location)
+
+   * Wann [Exportieren vollständiger Tabellen aus Analysis Workspace](/help/analysis-workspace/export/export-cloud.md#export-full-tables-from-analysis-workspace)
 
 1. Im [!UICONTROL **Standorteigenschaften**] Abschnitt [!UICONTROL **Ort hinzufügen**] Geben Sie die folgenden Informationen an, um einen Adobe Experience Platform Data Landing Zone-Speicherort zu konfigurieren:
 
@@ -83,7 +94,11 @@ Informationen zum Verwalten vorhandener Standorte, einschließlich Anzeigen, Bea
 
 ### Amazon S3 Role ARN
 
-1. [Erstellen eines Cloud-Export-Standorts](#begin-creating-a-cloud-export-location), wie oben beschrieben.
+1. Beginnen Sie mit der Erstellung eines Cloud-Export-Standorts auf eine der folgenden Arten:
+
+   * Auf der Seite &quot;Exporte&quot;, wie oben beschrieben, unter [Erstellen eines Cloud-Export-Standorts](#begin-creating-a-cloud-export-location)
+
+   * Wann [Exportieren vollständiger Tabellen aus Analysis Workspace](/help/analysis-workspace/export/export-cloud.md#export-full-tables-from-analysis-workspace)
 
 1. Im [!UICONTROL **Standorteigenschaften**] Abschnitt [!UICONTROL **Ort hinzufügen**] Geben Sie die folgenden Informationen an, um einen Amazon S3 Role ARN-Speicherort zu konfigurieren:
 
@@ -102,7 +117,11 @@ Informationen zum Verwalten vorhandener Standorte, einschließlich Anzeigen, Bea
 
 ### Google Cloud Platform
 
-1. [Erstellen eines Cloud-Export-Standorts](#begin-creating-a-cloud-export-location), wie oben beschrieben.
+1. Beginnen Sie mit der Erstellung eines Cloud-Export-Standorts auf eine der folgenden Arten:
+
+   * Auf der Seite &quot;Exporte&quot;, wie oben beschrieben, unter [Erstellen eines Cloud-Export-Standorts](#begin-creating-a-cloud-export-location)
+
+   * Wann [Exportieren vollständiger Tabellen aus Analysis Workspace](/help/analysis-workspace/export/export-cloud.md#export-full-tables-from-analysis-workspace)
 
 1. Im [!UICONTROL **Standorteigenschaften**] Abschnitt [!UICONTROL **Ort hinzufügen**] Geben Sie die folgenden Informationen an, um einen Google Cloud Platform-Speicherort zu konfigurieren:
 
@@ -121,7 +140,11 @@ Informationen zum Verwalten vorhandener Standorte, einschließlich Anzeigen, Bea
 
 ### Azure SAS
 
-1. [Erstellen eines Cloud-Export-Standorts](#begin-creating-a-cloud-export-location), wie oben beschrieben.
+1. Beginnen Sie mit der Erstellung eines Cloud-Export-Standorts auf eine der folgenden Arten:
+
+   * Auf der Seite &quot;Exporte&quot;, wie oben beschrieben, unter [Erstellen eines Cloud-Export-Standorts](#begin-creating-a-cloud-export-location)
+
+   * Wann [Exportieren vollständiger Tabellen aus Analysis Workspace](/help/analysis-workspace/export/export-cloud.md#export-full-tables-from-analysis-workspace)
 
 1. Im [!UICONTROL **Standorteigenschaften**] Abschnitt [!UICONTROL **Ort hinzufügen**] Geben Sie die folgenden Informationen an, um einen Azure SAS-Speicherort zu konfigurieren:
 
@@ -138,7 +161,11 @@ Informationen zum Verwalten vorhandener Standorte, einschließlich Anzeigen, Bea
 
 ### Azure RBAC
 
-1. [Erstellen eines Cloud-Export-Standorts](#begin-creating-a-cloud-export-location), wie oben beschrieben.
+1. Beginnen Sie mit der Erstellung eines Cloud-Export-Standorts auf eine der folgenden Arten:
+
+   * Auf der Seite &quot;Exporte&quot;, wie oben beschrieben, unter [Erstellen eines Cloud-Export-Standorts](#begin-creating-a-cloud-export-location)
+
+   * Wann [Exportieren vollständiger Tabellen aus Analysis Workspace](/help/analysis-workspace/export/export-cloud.md#export-full-tables-from-analysis-workspace)
 
 1. Im [!UICONTROL **Standorteigenschaften**] Abschnitt [!UICONTROL **Ort hinzufügen**] Geben Sie die folgenden Informationen an, um einen Azure RBAC-Speicherort zu konfigurieren:
 
@@ -156,7 +183,11 @@ Informationen zum Verwalten vorhandener Standorte, einschließlich Anzeigen, Bea
 
 ### Snowflake
 
-1. [Erstellen eines Cloud-Export-Standorts](#begin-creating-a-cloud-export-location), wie oben beschrieben.
+1. Beginnen Sie mit der Erstellung eines Cloud-Export-Standorts auf eine der folgenden Arten:
+
+   * Auf der Seite &quot;Exporte&quot;, wie oben beschrieben, unter [Erstellen eines Cloud-Export-Standorts](#begin-creating-a-cloud-export-location)
+
+   * Wann [Exportieren vollständiger Tabellen aus Analysis Workspace](/help/analysis-workspace/export/export-cloud.md#export-full-tables-from-analysis-workspace)
 
 1. Im [!UICONTROL **Standorteigenschaften**] Abschnitt [!UICONTROL **Ort hinzufügen**] Geben Sie die folgenden Informationen an, um einen Snowflake-Speicherort zu konfigurieren:
 

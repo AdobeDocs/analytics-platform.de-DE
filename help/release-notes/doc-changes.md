@@ -4,10 +4,10 @@ description: Listet Inhaltsaktualisierungen für Dokumentation zu Customer Journ
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: c13dfaa5367210f48e419a3516d30f2c1fd5c24f
+source-git-commit: 1587f98d0650d07a2f496c239d7b6bf69611535e
 workflow-type: tm+mt
-source-wordcount: '2879'
-ht-degree: 87%
+source-wordcount: '2951'
+ht-degree: 85%
 
 ---
 
@@ -19,7 +19,8 @@ Die folgenden Aktualisierungen wurden seit der ersten Erstellung der Customer Jo
 
 | Funktion | Beschreibung |
 | --- | --- |
-| **Januar 2024** | |
+| **Januar 2024** | |
+| Die Dokumentation zum Hinzufügen von Konten und Speicherorten beim Exportieren vollständiger Tabellen wurde aktualisiert. | Die Dokumentation wurde aktualisiert, um kleinere Aktualisierungen der Benutzeroberfläche beim Konfigurieren eines neuen Kontos oder Standorts beim [Exportieren vollständiger Tabellen aus Analysis Workspace](/help/analysis-workspace/export/export-cloud.md#export-full-tables-from-analysis-workspace).<p>Eine neue [!UICONTROL **Konto hinzufügen**] ist jetzt im [!UICONTROL **Konto**] Dropdown-Menü. Die [!UICONTROL **Ort hinzufügen**] -Option, die zuvor als Schaltfläche neben [!UICONTROL **Ortsname**] Dropdown-Menü ist jetzt im Menü selbst verfügbar. |
 | Neue Informationen zur Komponentenmigration bei der Migration von Adobe Analytics | Informationen zu [Entwicklung von Adobe Analytics](/help/getting-started/aa-to-cja.md) , die auf das neue [Komponentenmigration](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/component-migration/prepare-component-migration.html?lang=de) Funktionen, die im Adobe Analytics Admin-Handbuch beschrieben sind. |
 | Es wurde klargestellt, dass bestimmte Informationen nur für Administratoren verfügbar sind | Es wurden Informationen hinzugefügt, aus denen hervorgeht, dass die Spalten &quot;Zuletzt verwendet&quot;und &quot;Verwendet in&quot;in [Manager für berechnete Metriken](/help/components/calc-metrics/cm-workflow/cm-manager.md) und [Filter Manager](/help/components/filters/manage-filters.md) sind nur für Systemadministratoren verfügbar. |
 | Für das Exportieren von Datensätzen erforderliche Berechtigungen | Es wurden Informationen zur [erforderliche Berechtigungen](/help/admin/cja-access-control.md) , um Datensätze in Cloud-Ziele zu exportieren. |

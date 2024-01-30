@@ -5,9 +5,9 @@ title: Konfigurieren von Cloud-Exportkonten
 feature: Components
 exl-id: 7c9d100f-0dbd-4dd2-b20b-d2ee117f1b7a
 role: User, Admin
-source-git-commit: c60b48fa7bdc141e41a1df9ab9f9383cd2332713
+source-git-commit: e16d071df04d91ec6627efd250515fb2d54515bb
 workflow-type: tm+mt
-source-wordcount: '1733'
+source-wordcount: '1877'
 ht-degree: 3%
 
 ---
@@ -57,7 +57,11 @@ Informationen zum Verwalten vorhandener Konten, einschließlich Anzeigen, Bearbe
 >
 >Achten Sie beim Exportieren von Customer Journey Analytics-Berichten in die Adobe Experience Platform Data Landing Zone darauf, die Daten innerhalb von 7 Tagen herunterzuladen und sie dann aus der AEP Data Landing Zone zu löschen. Nach 7 Tagen werden die Daten automatisch aus der AEP Data Landing Zone gelöscht.
 
-1. [Erstellen eines Cloud-Exportkontos beginnen](#begin-creating-a-cloud-export-account), wie oben beschrieben.
+1. Beginnen Sie mit der Erstellung eines Cloud-Export-Kontos auf eine der folgenden Arten:
+
+   * Auf der Seite &quot;Exporte&quot;, wie oben beschrieben, unter [Erstellen eines Cloud-Exportkontos beginnen](#begin-creating-a-cloud-export-account)
+
+   * Wann [Exportieren vollständiger Tabellen aus Analysis Workspace](/help/analysis-workspace/export/export-cloud.md#export-full-tables-from-analysis-workspace)
 
 1. Wählen Sie [!UICONTROL **Speichern**] aus.
 
@@ -100,7 +104,11 @@ Informationen zum Verwalten vorhandener Konten, einschließlich Anzeigen, Bearbe
 
 ### Amazon S3 Role ARN
 
-1. [Erstellen eines Cloud-Exportkontos beginnen](#begin-creating-a-cloud-export-account), wie oben beschrieben.
+1. Beginnen Sie mit der Erstellung eines Cloud-Export-Kontos auf eine der folgenden Arten:
+
+   * Auf der Seite &quot;Exporte&quot;, wie oben beschrieben, unter [Erstellen eines Cloud-Exportkontos beginnen](#begin-creating-a-cloud-export-account)
+
+   * Wann [Exportieren vollständiger Tabellen aus Analysis Workspace](/help/analysis-workspace/export/export-cloud.md#export-full-tables-from-analysis-workspace)
 
 1. Im [!UICONTROL **Kontoeigenschaften**] Abschnitt [!UICONTROL **Konto hinzufügen**] Geben Sie die folgenden Informationen an:
 
@@ -124,7 +132,11 @@ Informationen zum Verwalten vorhandener Konten, einschließlich Anzeigen, Bearbe
 
 ### Google Cloud Platform
 
-1. [Erstellen eines Cloud-Exportkontos beginnen](#begin-creating-a-cloud-export-account), wie oben beschrieben.
+1. Beginnen Sie mit der Erstellung eines Cloud-Export-Kontos auf eine der folgenden Arten:
+
+   * Auf der Seite &quot;Exporte&quot;, wie oben beschrieben, unter [Erstellen eines Cloud-Exportkontos beginnen](#begin-creating-a-cloud-export-account)
+
+   * Wann [Exportieren vollständiger Tabellen aus Analysis Workspace](/help/analysis-workspace/export/export-cloud.md#export-full-tables-from-analysis-workspace)
 
 1. Im [!UICONTROL **Kontoeigenschaften**] Abschnitt [!UICONTROL **Konto hinzufügen**] Geben Sie die folgenden Informationen an:
 
@@ -148,7 +160,11 @@ Informationen zum Verwalten vorhandener Konten, einschließlich Anzeigen, Bearbe
 
 ### Azure SAS
 
-1. [Erstellen eines Cloud-Exportkontos beginnen](#begin-creating-a-cloud-export-account), wie oben beschrieben.
+1. Beginnen Sie mit der Erstellung eines Cloud-Export-Kontos auf eine der folgenden Arten:
+
+   * Auf der Seite &quot;Exporte&quot;, wie oben beschrieben, unter [Erstellen eines Cloud-Exportkontos beginnen](#begin-creating-a-cloud-export-account)
+
+   * Wann [Exportieren vollständiger Tabellen aus Analysis Workspace](/help/analysis-workspace/export/export-cloud.md#export-full-tables-from-analysis-workspace)
 
 1. Im [!UICONTROL **Kontoeigenschaften**] Abschnitt [!UICONTROL **Konto hinzufügen**] Geben Sie die folgenden Informationen an:
 
@@ -176,7 +192,11 @@ Informationen zum Verwalten vorhandener Konten, einschließlich Anzeigen, Bearbe
 
 ### Azure RBAC
 
-1. [Erstellen eines Cloud-Exportkontos beginnen](#begin-creating-a-cloud-export-account), wie oben beschrieben.
+1. Beginnen Sie mit der Erstellung eines Cloud-Export-Kontos auf eine der folgenden Arten:
+
+   * Auf der Seite &quot;Exporte&quot;, wie oben beschrieben, unter [Erstellen eines Cloud-Exportkontos beginnen](#begin-creating-a-cloud-export-account)
+
+   * Wann [Exportieren vollständiger Tabellen aus Analysis Workspace](/help/analysis-workspace/export/export-cloud.md#export-full-tables-from-analysis-workspace)
 
 1. Im [!UICONTROL **Kontoeigenschaften**] Abschnitt [!UICONTROL **Konto hinzufügen**] Geben Sie die folgenden Informationen an:
 
@@ -202,7 +222,11 @@ Informationen zum Verwalten vorhandener Konten, einschließlich Anzeigen, Bearbe
 
 ### Snowflake
 
-1. [Erstellen eines Cloud-Exportkontos beginnen](#begin-creating-a-cloud-export-account), wie oben beschrieben.
+1. Beginnen Sie mit der Erstellung eines Cloud-Export-Kontos auf eine der folgenden Arten:
+
+   * Auf der Seite &quot;Exporte&quot;, wie oben beschrieben, unter [Erstellen eines Cloud-Exportkontos beginnen](#begin-creating-a-cloud-export-account)
+
+   * Wann [Exportieren vollständiger Tabellen aus Analysis Workspace](/help/analysis-workspace/export/export-cloud.md#export-full-tables-from-analysis-workspace)
 
 1. Im [!UICONTROL **Kontoeigenschaften**] Abschnitt [!UICONTROL **Konto hinzufügen**] Geben Sie die folgenden Informationen an:
 
