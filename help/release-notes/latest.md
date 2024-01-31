@@ -3,10 +3,10 @@ title: Aktuelle Versionshinweise zu Customer Journey Analytics anzeigen
 description: Neueste Versionshinweise zu Customer Journey Analytics
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 90d91f07296f8c961d1b60ddbdc3d6b086958141
+source-git-commit: 1e024f7f84f96be446a2a922bd026bc70a6edf7e
 workflow-type: tm+mt
-source-wordcount: '437'
-ht-degree: 75%
+source-wordcount: '439'
+ht-degree: 71%
 
 ---
 
@@ -20,12 +20,12 @@ Diese Versionshinweise beziehen sich auf den Veröffentlichungszeitraum von Ende
 
 | Funktion | Beschreibung | [Rollout-Beginn](releases.md) | [Allgemeine Verfügbarkeit](releases.md) |
 | ----------- | ---------- | ------- | ---- |
-| **Adobe Product Analytics - Treueraten** | Die Treuerate sind eine neue geführte Analyse, die den Prozentsatz der Benutzer anzeigt, die nach ihrer anfänglichen Interaktion innerhalb des gewünschten Datumsbereichs zurückkehren. [Weitere Informationen](../guided-analysis/types/retention-rates.md) | Nicht angegeben | 8. Januar 2024 |
-| **Adobe Product Analytics - Trendlinien** | Trendlinien sind eine neue geführte Analyse, die im Abschnitt [Nutzung](/help/guided-analysis/types/usage.md) -Ansicht, die dazu beiträgt, ein klareres Datenmuster darzustellen. | Nicht angegeben | 17. Januar 2024 |
-| **Aktualisierungen zur Visualisierung der Schlüsselmetrikübersicht** | Bei der Visualisierung der Schlüsselmetrikübersicht kann der Vergleichs-Datumsbereich jetzt automatisch aktualisiert werden, je nachdem, ob der ausgewählte Vergleichs-Datumsbereich relativ zum primären Datumsbereich oder fest ist. [Weitere Informationen](/help/analysis-workspace/visualizations/key-metric.md). | Nicht angegeben | 17. Januar 2024 |
-| **Adobe Product Analytics - Benutzerstreams** | User Streams ist eine neue geführte Analyse, mit der Sie einzelne Benutzerereignis-Streams untersuchen können. Mit dieser Analyse können Sie nach Erlebnismustern suchen und bessere Benutzergeschichten erzählen. | Nicht angegeben | Donnerstag, 7. Februar 2024 |
-| **Adobe Product Analytics - Verbesserungen an der Abfrageleiste** | In der geführten Analyse sind jetzt einige Komponenteneinstellungen in der Abfrageleiste enthalten, was die Benutzerfreundlichkeit verbessert. | Nicht angegeben | 31. Januar 2024 |
 | **Zeitreihenprognosen** | Prognosen sind eine neue Funktion des Analyse-Arbeitsbereichs, mit der eine standardmäßige oder berechnete Metrik mit beliebiger unterstützter Zeitgranularität (stündlich, täglich, wöchentlich, monatlich und jährlich) prognostiziert werden kann. | 31. Januar 2024 | 21. Februar 2024 |
+| **Aktualisierungen zur Visualisierung der Schlüsselmetrikübersicht** | Bei der Visualisierung der Schlüsselmetrikübersicht kann der Vergleichs-Datumsbereich jetzt automatisch aktualisiert werden, je nachdem, ob der ausgewählte Vergleichs-Datumsbereich relativ zum primären Datumsbereich oder fest ist. [Weitere Informationen](/help/analysis-workspace/visualizations/key-metric.md). | Nicht angegeben | 17. Januar 2024 |
+| **Adobe Product Analytics - Analyse der Treueraten** | Die Treuerate sind eine neue geführte Analyse, mit der Sie die anhaltenden Rückkehrgewohnheiten Ihrer Benutzer messen können. [Weitere Informationen](../guided-analysis/types/retention-rates.md) | Nicht angegeben | 8. Januar 2024 |
+| **Adobe Product Analytics - Trendzeilenüberlagerung** | Trendlinien sind eine neue Überlagerungseinstellung, die im [Nutzungstrends](/help/guided-analysis/types/usage.md) anzeigen und dazu beitragen, ein klareres Datenmuster darzustellen. | Nicht angegeben | 17. Januar 2024 |
+| **Adobe Product Analytics - Verbesserungen der Abfrageleiste** | In der geführten Analyse enthält die linke Abfrageleiste jetzt den Ansichtstyp und Gezählt als Einstellungen, die zuvor in den Visualisierungseinstellungen verfügbar waren. | Nicht angegeben | 31. Januar 2024 |
+| **Adobe Product Analytics - User Stream-Analyse** | User Streams ist eine neue geleitete Analyse, mit der Sie einzelne Ereignis-Streams von Benutzern untersuchen können, die Ihnen dabei helfen, Erlebnismuster zu finden und bessere Benutzergeschichten zu erzählen. | Nicht angegeben | Donnerstag, 7. Februar 2024 |
 
 {style="table-layout:auto"}
 
