@@ -4,10 +4,10 @@ title: Linie
 feature: Visualizations
 exl-id: b68aa8dc-2c96-4c49-8d3c-d94804aab479
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 30f3e24533ab0e03ee7f819c7f94592776603764
 workflow-type: tm+mt
-source-wordcount: '523'
-ht-degree: 84%
+source-wordcount: '524'
+ht-degree: 81%
 
 ---
 
@@ -21,13 +21,14 @@ Die Linienvisualisierung stellt Metriken anhand einer Linie dar, die den Wertver
 
 ![Linienvisualisierung](assets/line-viz.png)
 
-Klicken Sie auf das Zahnradsymbol oben rechts in der Linienvisualisierung, um auf die verfügbaren [**Visualisierungseinstellungen**](freeform-analysis-visualizations.md) zuzugreifen. Die Einstellungen sind in folgende Kategorien unterteilt:
+Symbol Einstellungen auswählen ![Einstellungen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Settings_18_N.svg) in der Symbolleiste der Linienvisualisierung, um auf [Visualisierungseinstellungen](freeform-analysis-visualizations.md) verfügbar. Die Einstellungen sind in folgende Kategorien unterteilt:
+
+<img src="./assets/viz-settings-line.png" alt="Visualisierungseinstellungen" width="50%" />
 
 * **Allgemein**: Einstellungen, die für verschiedene Visualisierungstypen gelten
 * **Achse**: Einstellungen, die sich auf die x- oder y-Achse der Linienvisualisierung auswirken
 * **Überlagerungen**: Optionen zum Hinzufügen von zusätzlichem Kontext zu den in Ihrer Linienvisualisierung angezeigten Serien.
 
-![Visualisierungseinstellungen](assets/viz-settings-modal.png)
 
 ## Granularität ändern
 

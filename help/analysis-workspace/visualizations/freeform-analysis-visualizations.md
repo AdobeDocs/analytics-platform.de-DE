@@ -5,10 +5,10 @@ title: Visualisierungsübersicht
 feature: Visualizations
 exl-id: ca9e0561-7a54-487a-9fdc-3bcf34f9bdb1
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: c22f2d81eddbf9ee2fb3600fd5b727fb838de740
 workflow-type: tm+mt
-source-wordcount: '1325'
-ht-degree: 81%
+source-wordcount: '1326'
+ht-degree: 80%
 
 ---
 
@@ -22,7 +22,7 @@ Die folgenden Visualisierungstypen sind in Analysis Workspace verfügbar:
 
 | Name der Visualisierung | Beschreibung |
 | --- | --- | 
-| [Bereich](/help/analysis-workspace/visualizations/area.md)<p>![Bereichssymbol](assets/Smock_GraphArea_18_N.svg)</p> | Wie ein Liniendiagramm, aber mit einem farbigen Bereich unterhalb der Linie. Verwenden Sie ein Flächendiagramm, wenn Sie mehrere Metriken darstellen und den Bereich visualisieren möchten, der durch die Schnittmenge von zwei oder mehr Metriken gebildet wird. | Antworten auf Fragen wie: <ul><li> |
+| [Bereich](/help/analysis-workspace/visualizations/area.md)<p>![Bereichssymbol](assets/Smock_GraphArea_18_N.svg)</p> | Wie ein Liniendiagramm, aber mit einem farbigen Bereich unterhalb der Linie. Verwenden Sie ein Flächendiagramm, wenn Sie mehrere Metriken darstellen und den Bereich visualisieren möchten, der durch die Schnittmenge von zwei oder mehr Metriken gebildet wird. |
 | [Balken](/help/analysis-workspace/visualizations/bar.md) <p>![Balkensymbol](assets/Smock_GraphBarVertical_18_N.svg)</p> | Zeigt vertikale Balken, die verschiedene Werte aus einer oder mehreren Metriken darstellen. |
 | [Lineardiagramm](/help/analysis-workspace/visualizations/bullet-graph.md) <p>![Symbol &quot;Aufzählungszeichen&quot;](assets/Smock_GraphBullet_18_N.svg)</p> | Zeigt, wie ein Wert, der Sie interessiert, im Vergleich zu anderen Leistungsbereichen (Zielen) liegt oder ausfällt. |
 | [Kohortentabelle](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md)<p>![Symbol &quot;Kohortentabelle&quot;](assets/Smock_TextNumbered_18_N.svg)</p> | Eine *`cohort`* ist eine Personengruppe mit gemeinsamen Merkmalen innerhalb eines vorgegebenen Zeitraums. Die Kohortenanalyse ist nützlich für die Analyse von Verweildauer, Abwanderung oder Latenzzeiten. |
@@ -80,9 +80,9 @@ Sie können die Einstellungen für alle von Ihnen erstellten Visualisierungen an
 
 ## Einstellungen  {#settings}
 
-Jede Visualisierung verfügt über eigene Einstellungen, die Sie verwalten können. Um auf [!UICONTROL Visualisierungseinstellungen] zuzugreifen, klicken Sie auf das Zahnradsymbol [!UICONTROL Visualisierungseinstellungen].
+Jede Visualisierung verfügt über eigene Einstellungen, die Sie verwalten können. Um auf die Visualisierungseinstellungen zuzugreifen, wählen Sie das Einstellungssymbol aus ![Spalteneinstellungen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Settings_18_N.svg).
 
-![Visualisierungseinstellungen mit den im nächsten Abschnitt beschriebenen Einstellungsoptionen.](assets/settings.png)
+<img src="./assets/viz-settings-line.png" alt="Visualisierungseinstellungen" width="50%" />
 
 | Einstellung | Beschreibung |
 | --- | --- |
@@ -96,6 +96,7 @@ Jede Visualisierung verfügt über eigene Einstellungen, die Sie verwalten könn
 | Normalisierung | Erzwingt Metriken für gleiche Anteile. Dies ist hilfreich, wenn grafisch dargestellte Metriken sehr unterschiedliche Größenordnungen aufweisen. |
 | Zwei Achsen anzeigen | Gilt nur, wenn Sie zwei Metriken haben – möglich sind eine Y-Achse links (für die eine Metrik) und eine rechts (für die andere). Dies ist hilfreich, wenn grafisch dargestellte Metriken sehr unterschiedliche Größenordnungen aufweisen. |
 | Anomalien anzeigen | Verbessert Liniendiagramme und Freiformtabellen durch Anzeige der Anomalieerkennung. Die Anomalieerkennung in Linienvisualisierungen umfasst einen erwarteten Wert (gestrichelte Linie) und einen erwarteten Bereich (schattiertes Band). |
+| Prognose anzeigen | Verbessert Liniendiagramme und Freiformtabellen durch Anzeige von Prognosewerten. |
 
 ## Legende {#legend}
 

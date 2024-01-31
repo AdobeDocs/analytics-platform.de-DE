@@ -4,10 +4,10 @@ title: Spalteneinstellungen
 feature: Visualizations
 exl-id: b41d8a12-e8d9-405c-ac71-6567397aec6b
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 49b165c4dfec99ff1c65d4aacf4a5ffbe65d4004
 workflow-type: tm+mt
-source-wordcount: '813'
-ht-degree: 78%
+source-wordcount: '828'
+ht-degree: 74%
 
 ---
 
@@ -21,9 +21,9 @@ Sehen Sie sich hier ein Video zu Zeilen- und Spalteneinstellungen an:
 
 ## [!UICONTROL Spalteneinstellungen] bearbeiten {#edit-column-settings}
 
-Um die [!UICONTROL Spalteneinstellungen] aufzurufen, ziehen Sie eine Freiformtabelle in das Projekt und klicken Sie dann auf das Zahnrad-Symbol in der Spaltenüberschrift.
+Zugriff [!UICONTROL Spalteneinstellungen], ziehen Sie eine Freiformtabelle in das Projekt und klicken Sie dann auf das Einstellungssymbol ![Spalteneinstellungen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Settings_18_N.svg) in der Spaltenüberschrift.
 
-![In den Spalteneinstellungen werden die Summenzellen, Tabellenzellen und die Tabellenzellenvorschau angezeigt.](assets/column_settings.png)
+<img src="./assets/column-settings.png" alt="In den Spalteneinstellungen werden die Summenzellen, Tabellenzellen und die Tabellenzellenvorschau angezeigt." width="50%" />
 
 Sie können Einstellungen **für mehrere Spalten gleichzeitig** bearbeiten. Wählen Sie hierzu einfach mehrere Spalten aus und klicken Sie in einer der Spalten auf das Einstellungs-Symbol. Sämtliche Änderungen, die Sie hier vornehmen, werden auf die markierten Zellen aller Spalten angewendet.
 
@@ -31,7 +31,8 @@ Sie können Einstellungen **für mehrere Spalten gleichzeitig** bearbeiten. Wäh
 | --- | --- |
 | Nummer | Definition, ob in einer Zelle der numerische Wert der Metrik angezeigt wird oder nicht. Ist die Metrik beispielsweise „Seitenansichten“, ist der numerische Wert die Anzahl an Seitenansichten für dieses Zeilenelement. |
 | Prozent | Definition, ob in einer Zelle der Prozentwert der Metrik angezeigt wird oder nicht. Ist die Metrik beispielsweise „Seitenansichten“, ist der Prozentwert die Anzahl an Seitenansichten für dieses Zeilenelement geteilt durch die Gesamtanzahl der Seitenansichten für diese Spalte.  Hinweis: Für eine höhere Genauigkeit können Prozentsätze über 100 % angezeigt werden. Außerdem wird die obere Grenze auf 1.000 % verschoben, damit Spalten auch verbreitert werden können. |
-| Anomalien | Gibt an, ob die Anomalieerkennung für die Werte dieser Spalte ausgeführt wird |
+| Anomalien anzeigen | Gibt an, ob die Anomalieerkennung für die Werte dieser Spalte ausgeführt wird |
+| Prognose anzeigen | Bestimmt, ob die Prognosewerte in dieser Spalte angezeigt werden. |
 | Kopfzeilentext umbrechen | Hiermit können Sie den Kopfzeilentext in Freiformtabellen umbrechen, damit Kopfzeilen besser lesbar und Tabellen einfacher freizugeben sind. Diese Funktion ist beim .pdf-Rendering und für Metriken mit langen Namen nützlich. Standardmäßig aktiviert. |
 | Null nicht als Wert interpretieren | Definition, ob in Zellen mit 0-Wert eine 0 oder nichts angezeigt wird. Diese Option ist praktisch, wenn Sie die Daten für einzelne Tage eines Monats anzeigen und einige Tage noch in der Zukunft liegen.  Statt für in der Zukunft liegende Daten eine 0 anzuzeigen, kann die entsprechende Zelle auch leer angezeigt werden. In Diagrammen wird diese Einstellung ebenfalls berücksichtigt (ist diese Einstellung aktiviert, wird in Diagrammen also keine Linie bzw. kein Balken mit 0-Werten angezeigt). |
 | Hintergrund | Definition, ob in einer Zelle alle Zellformatierungen ein-/ausgeblendet werden, einschließlich Balkendiagramm und bedingter Formatierung |
@@ -43,7 +44,7 @@ Sie können Einstellungen **für mehrere Spalten gleichzeitig** bearbeiten. Wäh
 
 Die bedingte Formatierung gilt für Obergrenzen, Mittelwerte und Untergrenzen, die Sie definieren können. Das Anwenden bedingter Formatierung (Farben etc.) in Freiformtabellen ist bei Aufschlüsselungen auch automatisch aktiviert, wenn keine benutzerdefinierten Beschränkungen ausgewählt sind.
 
-![Die Optionen für die bedingte Formatierung mit Auswahl von &quot;Benutzerdefiniert&quot;.](assets/conditional-formatting.png)
+<img src="./assets/conditional-formatting.png" alt="Die Optionen für die bedingte Formatierung mit Auswahl &quot;Benutzerdefiniert&quot;" width="50%" />
 
 | Element | Beschreibung |
 | --- | --- |
