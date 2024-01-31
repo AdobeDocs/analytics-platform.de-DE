@@ -3,10 +3,10 @@ title: Aktuelle Versionshinweise zu Customer Journey Analytics anzeigen
 description: Neueste Versionshinweise zu Customer Journey Analytics
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: c22f2d81eddbf9ee2fb3600fd5b727fb838de740
+source-git-commit: 6ea1cf5c59dd527ba1bed966b994a3c966c899d4
 workflow-type: tm+mt
-source-wordcount: '439'
-ht-degree: 66%
+source-wordcount: '445'
+ht-degree: 65%
 
 ---
 
@@ -20,7 +20,7 @@ Diese Versionshinweise beziehen sich auf den Veröffentlichungszeitraum von Ende
 
 | Funktion | Beschreibung | [Rollout-Beginn](releases.md) | [Allgemeine Verfügbarkeit](releases.md) |
 | ----------- | ---------- | ------- | ---- |
-| **Zeitreihenprognosen** | [Prognosen](../analysis-workspace/c-forecast/forecasting.md) ist eine neue Analysis Workspace-Funktion, mit der eine standardmäßige oder berechnete Metrik mit beliebiger unterstützter Zeitgranularität (stündlich, täglich, wöchentlich, monatlich und jährlich) prognostiziert werden kann. | 31. Januar 2024 | 21. Februar 2024 |
+| **Zeitreihenprognosen** | [Prognosen](../analysis-workspace/c-forecast/forecasting.md) ist eine neue Analysis Workspace-Funktion, mit der eine standardmäßige oder berechnete Metrik mit beliebiger unterstützter Zeitgranularität (stündlich, täglich, wöchentlich, monatlich und jährlich) für Freiformtabellen und Liniendiagramme prognostiziert werden kann. | 31. Januar 2024 | 21. Februar 2024 |
 | **Aktualisierungen zur Visualisierung der Schlüsselmetrikübersicht** | Bei der Visualisierung der Schlüsselmetrikübersicht kann der Vergleichs-Datumsbereich jetzt automatisch aktualisiert werden, je nachdem, ob der ausgewählte Vergleichs-Datumsbereich relativ zum primären Datumsbereich oder fest ist. [Weitere Informationen](/help/analysis-workspace/visualizations/key-metric.md). | Nicht angegeben | 17. Januar 2024 |
 | **Adobe Product Analytics - Analyse der Treueraten** | Die Treuerate sind eine neue geführte Analyse, mit der Sie die anhaltenden Rückkehrgewohnheiten Ihrer Benutzer messen können. [Weitere Informationen](../guided-analysis/types/retention-rates.md) | Nicht angegeben | 8. Januar 2024 |
 | **Adobe Product Analytics - Trendzeilenüberlagerung** | Trendlinien sind eine neue Überlagerungseinstellung, die im [Nutzungstrends](/help/guided-analysis/types/usage.md) anzeigen und dazu beitragen, ein klareres Datenmuster darzustellen. | Nicht angegeben | 17. Januar 2024 |
