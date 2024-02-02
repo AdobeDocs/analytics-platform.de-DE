@@ -4,10 +4,10 @@ title: Intelligente Beschriftungen
 feature: Visualizations
 exl-id: d32d3cda-ecbf-4ee7-a8b7-7c3c71b5df75
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 02e98b5ec1932e822c8d3805948d390eccc2b750
 workflow-type: tm+mt
-source-wordcount: '412'
-ht-degree: 1%
+source-wordcount: '442'
+ht-degree: 2%
 
 ---
 
@@ -29,6 +29,10 @@ Um automatisch generierte Beschriftungen für eine Linienvisualisierung zu start
 ![Launch Analysis-Fenster mit den intelligenten Beschriftungen für den Trend zu Produktansichten. ](assets/intell-caps-1.png)
 
 Einblicke in natürliche Sprachen werden jetzt generiert.
+
+Bedenken Sie Folgendes
+
+* Sie benötigen mindestens 3 Datenpunkte, damit Beschriftungen erfolgreich generiert werden können. Andernfalls wird möglicherweise ein Fehler mit der Meldung &quot;Nicht genügend Daten zur Analyse&quot;angezeigt.
 
 * Beschriftungen werden jedes Mal generiert, wenn sich die zugrunde liegenden ausgewählten Daten in der Tabelle ändern, die die Visualisierung ermöglicht.
 
