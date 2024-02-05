@@ -4,10 +4,10 @@ description: Listet Inhaltsaktualisierungen für Dokumentation zu Customer Journ
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 7fdaf5868fd1aacbfec526749729be1fb5486cf7
+source-git-commit: 85a921cf97efd33cc6264ce97c871f965f376a5a
 workflow-type: tm+mt
-source-wordcount: '2984'
-ht-degree: 84%
+source-wordcount: '3005'
+ht-degree: 85%
 
 ---
 
@@ -19,11 +19,13 @@ Die folgenden Aktualisierungen wurden seit der ersten Erstellung der Customer Jo
 
 | Funktion | Beschreibung |
 | --- | --- |
-| **Januar 2024** | |
+| **Februar 2024** | |
+| Ignorierte Datensatzdetails | Es wurde eine Dokumentation zur Funktionalität der übersprungenen Datensatzdetails unter Verbindungen hinzugefügt. Siehe [Verbindungsdetails](../connections/manage-connections.md#connection-details) für weitere Informationen. |
+| **Januar 2024** | |
 | Prognose | Die Dokumentation wurde hinzugefügt zu [forecasting](../analysis-workspace/c-forecast/forecasting.md), die neue Analysis Workspace-Funktion, um eine standardmäßige oder berechnete Metrik mit einer unterstützten Zeitgranularität (stündlich, täglich, wöchentlich, monatlich und jährlich) für Freiformtabellen und Liniendiagramme zu prognostizieren. |
 | Die Dokumentation zum Hinzufügen von Konten und Speicherorten beim Exportieren vollständiger Tabellen wurde aktualisiert. | Die Dokumentation wurde aktualisiert, um kleinere Aktualisierungen der Benutzeroberfläche beim Konfigurieren eines neuen Kontos oder Standorts beim [Exportieren vollständiger Tabellen aus Analysis Workspace](/help/analysis-workspace/export/export-cloud.md#export-full-tables-from-analysis-workspace).<p>Eine neue [!UICONTROL **Konto hinzufügen**] ist jetzt im [!UICONTROL **Konto**] Dropdown-Menü. Die [!UICONTROL **Ort hinzufügen**] -Option, die zuvor als Schaltfläche neben [!UICONTROL **Ortsname**] Dropdown-Menü ist jetzt im Menü selbst verfügbar. |
 | Neue Informationen zur Komponentenmigration bei der Migration von Adobe Analytics | Informationen zu [Entwicklung von Adobe Analytics](/help/getting-started/aa-to-cja.md) , die auf das neue [Komponentenmigration](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/component-migration/prepare-component-migration.html?lang=de) Funktionen, die im Adobe Analytics Admin-Handbuch beschrieben sind. |
-| Es wurde klargestellt, dass bestimmte Informationen nur für Administratoren verfügbar sind | Es wurden Informationen hinzugefügt, aus denen hervorgeht, dass die Spalten &quot;Zuletzt verwendet&quot;und &quot;Verwendet in&quot;in [Manager für berechnete Metriken](/help/components/calc-metrics/cm-workflow/cm-manager.md) und [Filter Manager](/help/components/filters/manage-filters.md) sind nur für Systemadministratoren verfügbar. |
+| Es wurde klargestellt, dass bestimmte Informationen nur für Admins verfügbar sind | Es wurden Informationen hinzugefügt, aus denen hervorgeht, dass die Spalten &quot;Zuletzt verwendet&quot;und &quot;Verwendet in&quot;in [Manager für berechnete Metriken](/help/components/calc-metrics/cm-workflow/cm-manager.md) und [Filter Manager](/help/components/filters/manage-filters.md) sind nur für Systemadministratoren verfügbar. |
 | Für das Exportieren von Datensätzen erforderliche Berechtigungen | Es wurden Informationen zur [erforderliche Berechtigungen](/help/admin/cja-access-control.md) , um Datensätze in Cloud-Ziele zu exportieren. |
 | Verbindungen verwalten | Die [Verbindungen verwalten](../connections/manage-connections.md) Artikel, basierend auf dem Kunden-Feedback. |
 | Abgeleitete Felder | Die Zusammenfassung der Funktion wurde hinzugefügt. [Einschränkungen](/help/data-views/derived-fields/derived-fields.md#limitations) und Erläuterung, wie die Anzahl der [Operatoren](/help/data-views/derived-fields/derived-fields.md#operators) in einer Funktion verwendet. |
@@ -39,7 +41,7 @@ Die folgenden Aktualisierungen wurden seit der ersten Erstellung der Customer Jo
 | Rechenzentren | Es wurde ein Artikel zum Customer Journey Analytics hinzugefügt [Hosting-Standorte](../technotes/cja-datacenters.md). |
 | Leitplanken | Customer Journey Analytics zur Artikelauflistung hinzugefügt [Limits](../admin/guardrails.md). |
 | Währungskonversionsaktualisierungen | Klarere Dokumentation zum [Währungsumrechnung konfigurieren](/help/data-views/component-settings/format.md). |
-| Aktualisierungen der Dokumentation zur Anomalieerkennung | Die Dokumentation zur Anomalieerkennung fand sich zuvor in einem Abschnitt über Virtual Analyst. Die folgenden Änderungen wurden vorgenommen: <ul><li>Der Begriff &quot;Virtual Analyst&quot;wurde aus der Dokumentation entfernt.</li><li>Der Abschnitt zu [Anomalieerkennung](/help/analysis-workspace/c-anomaly-detection/anomaly-detection.md) wurde direkt unter den Abschnitt &quot;Analysis Workspace&quot;verschoben.</li></ul> |
+| Aktualisierungen der Dokumentation zur Anomalieerkennung | Die Dokumentation zur Anomalieerkennung fand sich zuvor in einem Abschnitt über Virtual Analyst. Die folgenden Änderungen wurden vorgenommen: <ul><li>Der Begriff „Virtual Analyst“ wurde aus der Dokumentation entfernt.</li><li>Der Abschnitt zur [Anomalieerkennung](/help/analysis-workspace/c-anomaly-detection/anomaly-detection.md) wurde direkt unter den Abschnitt zu Analysis Workspace verschoben.</li></ul> |
 | **Oktober 2023** | |
 | Verwenden abgeleiteter Felder zum Festlegen von Zielen | hinzugefügt [Anwendungsfall](../use-cases/goals-using-derived-fields.md) Artikel, in dem erläutert wird, wie abgeleitete Felder zum Festlegen von Zielen/Zielen und zum Reporting zu diesen verwendet werden. |
 | Vollständige Tabellen in die Cloud exportieren | Es wurde eine Dokumentation zum Exportieren vollständiger Tabellen mit Millionen von Workspace-Zeilen in Cloud-Ziele hinzugefügt. <p>Der Export vollständiger Tabellen bietet einen einmaligen oder geplanten Versand von Datentabellen, die in Workspace entwickelt wurden. Dabei werden bis zu fünf Aufschlüsselungen, fünf Metriken, Filter und berechnete Metriken in einer verketteten Tabelle unterstützt. Es ist die Weiterentwicklung von Data Warehouse-Berichten in Adobe Analytics, mit vielen neuen, häufig angeforderten Funktionen, die heute nicht in Data Warehouse verfügbar sind.</p><p>Weitere Informationen finden Sie unter [Exportieren von Customer Journey Analytics-Berichten in die Cloud](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/export/export-cloud.html?lang=de). |
