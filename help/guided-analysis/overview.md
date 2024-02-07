@@ -5,9 +5,9 @@ keywords: Produktanalyse
 exl-id: 1ac8157f-87e8-4d98-a2ca-f6beb68d9d6b
 feature: Guided Analysis
 role: User
-source-git-commit: a5c2003a593917bce67346279a033a6041aff959
+source-git-commit: aa0a6715c216730e0768cfa870ea75f315455101
 workflow-type: tm+mt
-source-wordcount: '1302'
+source-wordcount: '1310'
 ht-degree: 2%
 
 ---
@@ -33,6 +33,7 @@ Geführte Analyse kategorisiert Ansichtstypen in **Analysetypen**. Die folgenden
 | [!UICONTROL Trends] | [Häufigkeit](types/frequency.md) | Messen Sie die Interaktion nach Häufigkeit der Verwendung. |
 | [!UICONTROL Benutzerwachstum] | [Aktiv](types/active.md) | Identifizieren Sie, wer neu ist, beibehalten, zurückkehren oder ruhend ist. |
 | [!UICONTROL Benutzerwachstum] | [Nettowachstum](types/net-growth.md) | Gewinnen oder verlieren Sie Nutzende? |
+| [!UICONTROL Benutzerstream] | [Timeline](types/timeline.md) | Muster in der Sitzungsaktivität |
 
 {style="table-layout:auto"}
 
