@@ -4,16 +4,16 @@ description: Muster in der Sitzungsaktivität
 feature: Guided Analysis
 keywords: Produktanalyse
 role: User
-source-git-commit: 5cd54973b08285badbedce273ac28371158f194c
+source-git-commit: ecdbe1b68aa0824bd9db4acefd3ef9059d9ac927
 workflow-type: tm+mt
-source-wordcount: '383'
+source-wordcount: '390'
 ht-degree: 2%
 
 ---
 
 # [!UICONTROL Timeline] Ansicht
 
-Die **[!UICONTROL Timeline]** -Ansicht ermöglicht es Ihnen, einzelne Sitzungen zu analysieren, um Verhaltensmuster zu ermitteln. In der rechten Leiste können Sie eine Personen-IDs für die Analyse auswählen. Der mittlere Bereich zeigt die Zeit, den Eigenschaftswert und die Dauer für diese Person an.
+Die **[!UICONTROL Timeline]** -Ansicht ermöglicht es Ihnen, einzelne Sitzungen zu analysieren, um Verhaltensmuster zu ermitteln. In der rechten Leiste können Sie die Personen-ID auswählen, die Sie analysieren möchten. Der mittlere Bereich zeigt die Zeit, den ausgewählten Eigenschaftswert und die Dauer für jedes Ereignis dieser Person.
 
 Für diese Analyse müssen Sie die **[!UICONTROL Personen-ID]** Standardkomponente zu [Datenansicht](/help/data-views/component-reference.md#optional). Wenn Sie nicht über die [!UICONTROL Personen-ID] -Komponente, die der Datenansicht hinzugefügt wurde, wird die folgende Meldung angezeigt:
 
@@ -47,5 +47,5 @@ Die [!UICONTROL Timeline] Die Ansicht bietet die folgenden Diagrammeinstellungen
 
 Der gewünschte Datumsbereich für Ihre Analyse. Diese Einstellung umfasst zwei Komponenten:
 
-* **[!UICONTROL Intervall]**: Die Datumsgranularität, nach der Trenddaten angezeigt werden sollen. Diese Einstellung wirkt sich nicht auf Trend-Ansichten wie Häufigkeit aus.
+* **[!UICONTROL Intervall]**: Die Datumsgranularität, nach der Trenddaten angezeigt werden sollen. Diese Einstellung wirkt sich nicht auf Trend-Ansichten wie die Timeline aus.
 * **[!UICONTROL Datum]**: Das Start- und Enddatum. Vorgaben für rollierende Datumsbereiche und zuvor gespeicherte benutzerdefinierte Bereiche stehen Ihnen zur Verfügung. Alternativ können Sie die Kalenderauswahl verwenden, um einen festen Datumsbereich auszuwählen.
