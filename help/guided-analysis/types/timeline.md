@@ -4,9 +4,9 @@ description: Lernen Sie Erlebnismuster kennen und erzählen Sie bessere Benutzer
 feature: Guided Analysis
 keywords: Produktanalyse
 role: User
-source-git-commit: 2836582b13ae9aa971b521db7ed1c54805eb0e94
+source-git-commit: d7e1092e1b2b4e9decd8d601c4b6415b13f1e02a
 workflow-type: tm+mt
-source-wordcount: '536'
+source-wordcount: '546'
 ht-degree: 1%
 
 ---
@@ -17,10 +17,11 @@ Die **[!UICONTROL Timeline]** Mit dieser Ansicht können Sie Sitzungsereignisse 
 
 >[!NOTE]
 >
->In der Timeline-Ansicht muss die **[!UICONTROL Personen-ID]** Standardkomponente ist im [Datenansicht](/help/data-views/component-reference.md#optional). Die Aufnahme der Personen-ID in eine Datenansicht wird von Ihrem Adobe Analytics-Datenadministrator verwaltet, sodass Unternehmen die volle Datenschutzkontrolle darüber erhalten, wer auf diese Daten zugreifen kann. Wenn eine Datenansicht nicht über die [!UICONTROL Personen-ID] -Komponente hinzugefügt wurde, wird die folgende Meldung angezeigt:
+>In der Timeline-Ansicht muss die **[!UICONTROL Personen-ID]** Standardkomponente ist im [Datenansicht](/help/data-views/component-reference.md#optional). Die Aufnahme der Personen-ID in eine Datenansicht wird von Ihrem Adobe Analytics-Datenadministrator verwaltet, sodass Unternehmen die volle Datenschutzkontrolle darüber erhalten, wer auf diese Daten zugreifen kann.
 
-* **Administratoren**: Für diese Analyse ist die PersonID-Eigenschaft erforderlich. Fügen Sie der Datenansicht PersonID hinzu.
-* **Benutzer ohne Administratorrechte**: Für diese Analyse ist die PersonID-Eigenschaft erforderlich. Wenden Sie sich an Ihren Adobe Analytics-Administrator.
+Wenn eine Datenansicht nicht über die [!UICONTROL Personen-ID] -Komponente hinzugefügt wurde, wird die folgende Meldung angezeigt:
+* **Administratoren**: Für diese Analyse ist die PersonID-Eigenschaft erforderlich. Fügen Sie der Datenansicht die Personen-ID hinzu.
+* **Benutzer ohne Administratorrechte**: Für diese Analyse ist die PersonID-Eigenschaft erforderlich. Wenden Sie sich an Ihren Customer Journey Analytics-Administrator, um die Personen-ID zur Datenansicht hinzuzufügen.
 
 ## Anwendungsbeispiele
 
