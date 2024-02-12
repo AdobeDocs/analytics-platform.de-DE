@@ -6,27 +6,27 @@ feature: Release Notes
 source-git-commit: 9f60d83673591aebeffeb6442bf9f8b897ab2f20
 workflow-type: tm+mt
 source-wordcount: '470'
-ht-degree: 62%
+ht-degree: 95%
 
 ---
 
 # Aktuelle Versionshinweise zu Adobe Customer Journey Analytics (Januar 2024)
 
-**Letzte Aktualisierung:** Mittwoch, 30. Januar 2024
+**Letzte Aktualisierung:** 30. Januar 2024
 
-Diese Versionshinweise beziehen sich auf den Veröffentlichungszeitraum von Ende 8. Januar 2024 bis 13. Februar 2024. Versionen von Adobe Customer Journey Analytics basieren auf einem [Modell der kontinuierlichen Bereitstellung](releases.md), das einen besser skalierbaren, schrittweisen Ansatz für die Implementierung von Funktionen ermöglicht. Dementsprechend werden diese Versionshinweise mehrmals im Monat aktualisiert. Bitte überprüfen Sie sie regelmäßig.
+Diese Versionshinweise beziehen sich auf den Veröffentlichungszeitraum von Ende Januar 2024 bis zum 13. Februar 2024. Versionen von Adobe Customer Journey Analytics basieren auf einem [Modell der kontinuierlichen Bereitstellung](releases.md), das einen besser skalierbaren, schrittweisen Ansatz für die Implementierung von Funktionen ermöglicht. Dementsprechend werden diese Versionshinweise mehrmals im Monat aktualisiert. Bitte überprüfen Sie sie regelmäßig.
 
 ## Neue oder aktualisierte Funktionen
 
 | Funktion | Beschreibung | [Rollout-Beginn](releases.md) | [Allgemeine Verfügbarkeit](releases.md) |
 | ----------- | ---------- | ------- | ---- |
 | **Informationen zu übersprungenen Datensätzen** | Sie können Details dazu abrufen, warum Datensätze beim Einrichten einer Verbindung übersprungen werden. Siehe [Verbindungsdetails](../connections/manage-connections.md#connection-details) für weitere Informationen. | Dienstag, 5. Februar 2024 | Dienstag, 5. Februar 2024 |
-| **Zeitreihenprognosen** | [Prognosen](../analysis-workspace/c-forecast/forecasting.md) ist eine neue Analysis Workspace-Funktion, mit der eine standardmäßige oder berechnete Metrik mit beliebiger unterstützter Zeitgranularität (stündlich, täglich, wöchentlich, monatlich und jährlich) für Freiformtabellen und Liniendiagramme prognostiziert werden kann. | 31. Januar 2024 | 21. Februar 2024 |
+| **Zeitreihenprognosen** | [Prognosen](../analysis-workspace/c-forecast/forecasting.md) sind eine neue Funktion in Analysis Workspace, mit der eine standardmäßige oder berechnete Metrik mit beliebiger unterstützter Zeitgranularität (stündlich, täglich, wöchentlich, monatlich und jährlich) für Freiformtabellen und Liniendiagramme prognostiziert werden kann. | 31. Januar 2024 | 21. Februar 2024 |
 | **Aktualisierungen zur Visualisierung der Schlüsselmetrikübersicht** | Bei der Visualisierung der Schlüsselmetrikübersicht kann der Vergleichs-Datumsbereich jetzt automatisch aktualisiert werden, je nachdem, ob der ausgewählte Vergleichs-Datumsbereich relativ zum primären Datumsbereich oder fest ist. [Weitere Informationen](/help/analysis-workspace/visualizations/key-metric.md). | Nicht angegeben | 17. Januar 2024 |
-| **Adobe Product Analytics - Analyse der Treueraten** | Die Treuerate sind eine neue geführte Analyse, mit der Sie die anhaltenden Rückkehrgewohnheiten Ihrer Benutzer messen können. [Weitere Informationen](../guided-analysis/types/retention-rates.md) | Nicht angegeben | 8. Januar 2024 |
-| **Adobe Product Analytics - Trendzeilenüberlagerung** | Trendlinien sind eine neue Überlagerungseinstellung, die im [Nutzungstrends](/help/guided-analysis/types/usage.md) anzeigen und dazu beitragen, ein klareres Datenmuster darzustellen. | Nicht angegeben | 17. Januar 2024 |
-| **Adobe Product Analytics - Verbesserungen der Abfrageleiste** | In der geführten Analyse enthält die linke Abfrageleiste jetzt den Ansichtstyp und Gezählt als Einstellungen, die zuvor in den Visualisierungseinstellungen verfügbar waren. | Nicht angegeben | 31. Januar 2024 |
-| **Adobe Product Analytics - User Stream-Analyse** | User Streams ist eine neue geleitete Analyse, mit der Sie einzelne Ereignis-Streams von Benutzern untersuchen können, die Ihnen dabei helfen, Erlebnismuster zu finden und bessere Benutzergeschichten zu erzählen. | Nicht angegeben | Donnerstag, 7. Februar 2024 |
+| **Adobe Product Analytics – Bindungsratenanalyse** | Die Bindungsrate ist eine neue geführte Analyse, mit der Sie die fortlaufenden Rückkehrgewohnheiten Ihrer Benutzenden messen können. [Weitere Informationen](../guided-analysis/types/retention-rates.md) | Nicht angegeben | 8. Januar 2024 |
+| **Adobe Product Analytics – Trend-Linien-Überlagerung** | „Trend-Linien“ ist eine neue Überlagerungseinstellung, die in der Ansicht [Nutzungs-Trends](/help/guided-analysis/types/usage.md) verfügbar ist und hilft, ein klareres Muster in Daten darzustellen. | Nicht angegeben | 17. Januar 2024 |
+| **Adobe Product Analytics – Verbesserungen der Abfrageleiste** | In der geführten Analyse enthält die linke Abfrageleiste jetzt den Ansichtstyp und „Gezählt“ als Einstellungen, die zuvor in den Visualisierungseinstellungen verfügbar waren. | Nicht angegeben | 31. Januar 2024 |
+| **Adobe Product Analytics – Benutzer-Stream-Analyse** | „Benutzer-Streams“ ist eine neue geleitete Analyse, mit der Sie einzelne Ereignis-Streams von Benutzenden untersuchen können. Dies hilft Ihnen dabei, Erlebnismuster zu finden und bessere User Stories zu erzählen. | Nicht angegeben | 7. Februar 2024 |
 
 {style="table-layout:auto"}
 
