@@ -3,36 +3,36 @@ title: Aktuelle Versionshinweise zu Customer Journey Analytics anzeigen
 description: Neueste Versionshinweise zu Customer Journey Analytics
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 9f60d83673591aebeffeb6442bf9f8b897ab2f20
+source-git-commit: 29c124da55842bcb9085059a9008f7a7d6baf44e
 workflow-type: tm+mt
-source-wordcount: '470'
-ht-degree: 95%
+source-wordcount: '525'
+ht-degree: 44%
 
 ---
 
-# Aktuelle Versionshinweise zu Adobe Customer Journey Analytics (Januar 2024)
+# Aktuelle Adobe Customer Journey Analytics-Versionshinweise (Februar 2024)
 
-**Letzte Aktualisierung:** 30. Januar 2024
+**Letzte Aktualisierung**: Donnerstag, 14. Februar 2024
 
-Diese Versionshinweise beziehen sich auf den Veröffentlichungszeitraum von Ende Januar 2024 bis zum 13. Februar 2024. Versionen von Adobe Customer Journey Analytics basieren auf einem [Modell der kontinuierlichen Bereitstellung](releases.md), das einen besser skalierbaren, schrittweisen Ansatz für die Implementierung von Funktionen ermöglicht. Dementsprechend werden diese Versionshinweise mehrmals im Monat aktualisiert. Bitte überprüfen Sie sie regelmäßig.
+Diese Versionshinweise beziehen sich auf den Veröffentlichungszeitraum Ende 14. Februar 2024 bis 11. März 2024. Versionen von Adobe Customer Journey Analytics basieren auf einem [Modell der kontinuierlichen Bereitstellung](releases.md), das einen besser skalierbaren, schrittweisen Ansatz für die Implementierung von Funktionen ermöglicht. Dementsprechend werden diese Versionshinweise mehrmals im Monat aktualisiert. Bitte überprüfen Sie sie regelmäßig.
 
 ## Neue oder aktualisierte Funktionen
 
 | Funktion | Beschreibung | [Rollout-Beginn](releases.md) | [Allgemeine Verfügbarkeit](releases.md) |
 | ----------- | ---------- | ------- | ---- |
-| **Informationen zu übersprungenen Datensätzen** | Sie können Details dazu abrufen, warum Datensätze beim Einrichten einer Verbindung übersprungen werden. Siehe [Verbindungsdetails](../connections/manage-connections.md#connection-details) für weitere Informationen. | Dienstag, 5. Februar 2024 | Dienstag, 5. Februar 2024 |
-| **Zeitreihenprognosen** | [Prognosen](../analysis-workspace/c-forecast/forecasting.md) sind eine neue Funktion in Analysis Workspace, mit der eine standardmäßige oder berechnete Metrik mit beliebiger unterstützter Zeitgranularität (stündlich, täglich, wöchentlich, monatlich und jährlich) für Freiformtabellen und Liniendiagramme prognostiziert werden kann. | 31. Januar 2024 | 21. Februar 2024 |
-| **Aktualisierungen zur Visualisierung der Schlüsselmetrikübersicht** | Bei der Visualisierung der Schlüsselmetrikübersicht kann der Vergleichs-Datumsbereich jetzt automatisch aktualisiert werden, je nachdem, ob der ausgewählte Vergleichs-Datumsbereich relativ zum primären Datumsbereich oder fest ist. [Weitere Informationen](/help/analysis-workspace/visualizations/key-metric.md). | Nicht angegeben | 17. Januar 2024 |
-| **Adobe Product Analytics – Bindungsratenanalyse** | Die Bindungsrate ist eine neue geführte Analyse, mit der Sie die fortlaufenden Rückkehrgewohnheiten Ihrer Benutzenden messen können. [Weitere Informationen](../guided-analysis/types/retention-rates.md) | Nicht angegeben | 8. Januar 2024 |
-| **Adobe Product Analytics – Trend-Linien-Überlagerung** | „Trend-Linien“ ist eine neue Überlagerungseinstellung, die in der Ansicht [Nutzungs-Trends](/help/guided-analysis/types/usage.md) verfügbar ist und hilft, ein klareres Muster in Daten darzustellen. | Nicht angegeben | 17. Januar 2024 |
-| **Adobe Product Analytics – Verbesserungen der Abfrageleiste** | In der geführten Analyse enthält die linke Abfrageleiste jetzt den Ansichtstyp und „Gezählt“ als Einstellungen, die zuvor in den Visualisierungseinstellungen verfügbar waren. | Nicht angegeben | 31. Januar 2024 |
-| **Adobe Product Analytics – Benutzer-Stream-Analyse** | „Benutzer-Streams“ ist eine neue geleitete Analyse, mit der Sie einzelne Ereignis-Streams von Benutzenden untersuchen können. Dies hilft Ihnen dabei, Erlebnismuster zu finden und bessere User Stories zu erzählen. | Nicht angegeben | 7. Februar 2024 |
+| **Zeitreihenprognosen** | [Prognosen](../analysis-workspace/c-forecast/forecasting.md) ist eine neue Analysis Workspace-Funktion, mit der eine standardmäßige oder berechnete Metrik mit beliebiger unterstützter Zeitgranularität (stündlich, täglich, wöchentlich, monatlich und jährlich) für Freiformtabellen und Liniendiagramme prognostiziert wird. | 31. Januar 2024 | 21. Februar 2024 |
+| **Media Analytics-Berichte - Zielgruppendurchschnitt pro Minute (AMA)** | Das Bedienfeld Zielgruppendurchschnitt pro Minute ist jetzt in CJA verfügbar. Media Analytics-Kunden können das Bedienfeld Zielgruppendurchschnitt pro Minute verwenden, um die durchschnittliche Nutzung ihrer Inhalte besser zu verstehen. Der Zielgruppendurchschnitt pro Minute ermöglicht Vergleiche von Inhalten beliebiger Längen oder Genres. Darüber hinaus können Kunden diesen digitalen Zielgruppendurchschnitt pro Minute mit Metriken zum linearen TV-Durchschnitt pro Minute vergleichen oder ihn anhängen. Dieses Bedienfeld bietet mehr Flexibilität, um die durchschnittliche Zielgruppe für benutzerdefinierte Zeiträume sowie den Zeitpunkt zu messen, zu dem die Classification der Dauer nach der Tatsache aktualisiert wurde. |  | Samstag, 16. Februar 2024 |
+| **Zeilenanzahl für Lookup- und Profildaten** | Metriken zur Zeilenanzahl für Datensätze, die als Teil einer Verbindung konfiguriert sind, enthalten jetzt Datensätze, die hinzugefügt, übersprungen oder aus Profil- und Lookup-Datensätzen gelöscht werden. |  | Donnerstag, 14. Februar 2024 |
+| **Erlebnis-Edge-Bot-Erkennung** | [Bot-Erkennung](https://experienceleague.adobe.com/docs/experience-platform/datastreams/bot-detection.html) ermöglicht es Ihnen, Ereignisse zu identifizieren, die vom Web SDK, Mobile SDK und Server API als von bekannten Spiders und Bots generiert wurden. | | 21. Februar 2024 |
+| **Nutzungsmetriken** | Die Oberfläche für Nutzungsmetriken zeigt die Verwendung von aufgenommenen und berichtspflichtigen Zeilen über alle Verbindungen hinweg. Mit dieser Schnittstelle können Sie bestimmen, ob Ihre Customer Journey Analytics-Nutzung den vertraglich vereinbarten Bedingungen entspricht. | Mittwoch, 20. Februar 2024 | Anfang März 2024 |
+| **Adobe Product Analytics: Für jedermann freigeben** | Ermöglicht die Freigabe eines schreibgeschützten Links zu Adobe Product Analytics-Projekten für Personen, die keinen Zugriff auf Product Analytics haben. |  | 21. Februar 2024 |
+| **Adobe Product Analytics: Berechnete Metriken anwenden** | Sie können jetzt auf berechnete Metriken zugreifen, die in Analysis Workspace oder im Generator für berechnete Metriken in der Ansicht Trends: Nutzung erstellt wurden. Damit können Sie Metriken im Zeitverlauf als Trend verfolgen und vergleichen. |  | Samstag, 16. Februar 2024 |
 
 {style="table-layout:auto"}
 
 ## Fehlerbehebungen in Customer Journey Analytics
 
-AN-310972; AN-332774; AN-332793; AN-332796; AN-333157; AN-334067; AN-334134; AN-334968; AN-335315; AN-335518; AN-335533; AN-335736;
+AN-333172; AN-336887; AN-337402; AN-337593; AN-338482; AN-338684; AN-33983; AN 340200
 
 ## Wichtige Hinweise für Customer Journey Analytics-Admins
 
