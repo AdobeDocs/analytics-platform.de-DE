@@ -4,7 +4,7 @@ description: Beobachten Sie Sitzungsereignisse auf Benutzerebene im Zeitverlauf,
 feature: Guided Analysis
 keywords: Produktanalyse
 role: User
-source-git-commit: 6f3725653453e31244bfed34670782fe9d9c0c2f
+source-git-commit: 2eeaedd1c478fb9ae7a264a0af4a35327268c499
 workflow-type: tm+mt
 source-wordcount: '549'
 ht-degree: 1%
@@ -15,6 +15,8 @@ ht-degree: 1%
 
 Die **[!UICONTROL Timeline]** Mit dieser Ansicht können Sie Sitzungsereignisse auf Benutzerebene im Zeitverlauf beobachten, um Erlebnismuster zu finden und bessere Benutzergeschichten zu erzählen. In der linken Leiste können Sie den Stream nach Eigenschaftswerten und Segmenten filtern. In der rechten Leiste können Sie aus einer zufälligen Liste von Benutzern auswählen, die den Filterkriterien entsprechen. Der mittlere Bereich zeigt den Stream für den ausgewählten Benutzer nach Sitzung an, der aus Zeitstempel, Eigenschaftswerten und Dauer besteht. Die Dauer ist für das letzte Ereignis in einer bestimmten Sitzung nicht verfügbar.
 
+![Timeline-Screenshot](../assets/timeline.png)
+
 >[!NOTE]
 >
 >In der Timeline-Ansicht muss die **[!UICONTROL Personen-ID]** Standardkomponente ist im [Datenansicht](/help/data-views/component-reference.md#optional). Die Aufnahme der Personen-ID in eine Datenansicht wird von Ihrem Customer Journey Analytics-Administrator verwaltet, sodass Ihr Unternehmen die volle Datenschutzkontrolle darüber hat, wer auf diese Daten zugreifen kann.
@@ -23,8 +25,6 @@ Wenn eine Datenansicht nicht über die [!UICONTROL Personen-ID] -Komponente hinz
 
 * **Administratoren**: *Die PersonID-Eigenschaft ist für diese Analyse erforderlich. Fügen Sie der Datenansicht die Personen-ID hinzu.*
 * **Benutzer ohne Administratorrechte**: *Die PersonID-Eigenschaft ist für diese Analyse erforderlich. Wenden Sie sich an Ihren Customer Journey Analytics-Administrator, um die Personen-ID zur Datenansicht hinzuzufügen.*
-
-![Timeline-Screenshot](../assets/timeline.png)
 
 ## Anwendungsbeispiele
 
