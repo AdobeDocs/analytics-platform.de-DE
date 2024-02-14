@@ -1,23 +1,23 @@
 ---
 title: Timeline-Ansicht
-description: Lernen Sie Erlebnismuster kennen und erzählen Sie bessere Benutzergeschichten.
+description: Beobachten Sie Sitzungsereignisse auf Benutzerebene im Zeitverlauf, um Erlebnismuster zu finden.
 feature: Guided Analysis
 keywords: Produktanalyse
 role: User
-source-git-commit: fef60995e9241eaad99f6f536b1f329757ea0830
+source-git-commit: 6f3725653453e31244bfed34670782fe9d9c0c2f
 workflow-type: tm+mt
-source-wordcount: '540'
+source-wordcount: '549'
 ht-degree: 1%
 
 ---
 
 # [!UICONTROL Timeline] Ansicht
 
-Die **[!UICONTROL Timeline]** Mit dieser Ansicht können Sie Sitzungsereignisse auf Benutzerebene im Zeitverlauf beobachten, um Erlebnismuster zu finden und bessere Benutzergeschichten zu erzählen. In der linken Leiste können Sie nach Eigenschaftswerten filtern, die Sie streamen möchten. In der rechten Leiste können Sie die Personen-ID auswählen, die Sie analysieren möchten. Der mittlere Bereich zeigt den Stream nach Sitzung an, bestehend aus Zeitstempel, Eigenschaftswerten und Dauer. Die Dauer ist für das letzte Ereignis in einer bestimmten Sitzung nicht verfügbar.
+Die **[!UICONTROL Timeline]** Mit dieser Ansicht können Sie Sitzungsereignisse auf Benutzerebene im Zeitverlauf beobachten, um Erlebnismuster zu finden und bessere Benutzergeschichten zu erzählen. In der linken Leiste können Sie den Stream nach Eigenschaftswerten und Segmenten filtern. In der rechten Leiste können Sie aus einer zufälligen Liste von Benutzern auswählen, die den Filterkriterien entsprechen. Der mittlere Bereich zeigt den Stream für den ausgewählten Benutzer nach Sitzung an, der aus Zeitstempel, Eigenschaftswerten und Dauer besteht. Die Dauer ist für das letzte Ereignis in einer bestimmten Sitzung nicht verfügbar.
 
 >[!NOTE]
 >
->In der Timeline-Ansicht muss die **[!UICONTROL Personen-ID]** Standardkomponente ist im [Datenansicht](/help/data-views/component-reference.md#optional). Die Aufnahme der Personen-ID in eine Datenansicht wird von Ihrem Adobe Analytics-Datenadministrator verwaltet, sodass Unternehmen die volle Datenschutzkontrolle darüber erhalten, wer auf diese Daten zugreifen kann.
+>In der Timeline-Ansicht muss die **[!UICONTROL Personen-ID]** Standardkomponente ist im [Datenansicht](/help/data-views/component-reference.md#optional). Die Aufnahme der Personen-ID in eine Datenansicht wird von Ihrem Customer Journey Analytics-Administrator verwaltet, sodass Ihr Unternehmen die volle Datenschutzkontrolle darüber hat, wer auf diese Daten zugreifen kann.
 
 Wenn eine Datenansicht nicht über die [!UICONTROL Personen-ID] -Komponente hinzugefügt wurde, wird die folgende Meldung angezeigt:
 
