@@ -4,7 +4,7 @@ description: Listet Inhaltsaktualisierungen für Dokumentation zu Customer Journ
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 4f9878372f05da86b08449eeb17efb79b7432341
+source-git-commit: b49db376cb62c0668b8433c5dc5f66481966c333
 workflow-type: tm+mt
 source-wordcount: '3065'
 ht-degree: 83%
@@ -20,7 +20,7 @@ Die folgenden Aktualisierungen wurden seit der ersten Erstellung der Customer Jo
 | Funktion | Beschreibung |
 | --- | --- |
 | **Februar 2024** | |
-| Es wurde klargestellt, dass Produktadministratoren immer Zugriff auf den Export vollständiger Tabellen haben | Es wurden folgende Änderungen vorgenommen, um klarzustellen, dass Benutzer, denen die Produktadministratorrolle zugewiesen wurde, standardmäßig Zugriff auf vollständige Tabellen aus Analysis Workspace haben: <ul><li>Eine neue Aufzählung wurde hinzugefügt zu [Produktadministratorstandardberechtigungen](/help/admin/cja-access-control.md#product-admin-default-permissions). <p>Es wurde ein Hinweis unter dem [Mindestanforderungen für den Export vollständiger Tabellen in die Cloud](/help/analysis-workspace/export/export-cloud.md#minimum-requirements).</p> |
+| Es wurde klargestellt, dass Produktadministratoren immer Zugriff auf den Export vollständiger Tabellen haben | Es wurden folgende Änderungen vorgenommen, um klarzustellen, dass Benutzer, denen die Produktadministratorrolle zugewiesen wurde, standardmäßig Zugriff auf vollständige Tabellen aus Analysis Workspace haben: <ul><li>Eine neue Aufzählung wurde hinzugefügt zu [Produktadministratorstandardberechtigungen](/help/admin/cja-access-control.md#product-admin-default-permissions).</li><li>Es wurde ein Hinweis unter dem [Mindestanforderungen für den Export vollständiger Tabellen in die Cloud](/help/analysis-workspace/export/export-cloud.md#minimum-requirements).</li></ul> |
 | Ignorierte Datensatzdetails | Es wurde eine Dokumentation zur Funktionalität der übersprungenen Datensatzdetails unter Verbindungen hinzugefügt. Siehe [Verbindungsdetails](../connections/manage-connections.md#connection-details) für weitere Informationen. |
 | **Januar 2024** | |
 | Prognose | Die Dokumentation wurde hinzugefügt zu [forecasting](../analysis-workspace/c-forecast/forecasting.md), die neue Analysis Workspace-Funktion, um eine standardmäßige oder berechnete Metrik mit einer unterstützten Zeitgranularität (stündlich, täglich, wöchentlich, monatlich und jährlich) für Freiformtabellen und Liniendiagramme zu prognostizieren. |
