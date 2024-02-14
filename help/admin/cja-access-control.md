@@ -6,9 +6,9 @@ feature: Basics
 exl-id: c258fa39-c0b6-45a1-8547-79516c15a215
 mini-toc-levels: 3
 role: Admin
-source-git-commit: 6ea1cf5c59dd527ba1bed966b994a3c966c899d4
+source-git-commit: 4f9878372f05da86b08449eeb17efb79b7432341
 workflow-type: tm+mt
-source-wordcount: '1167'
+source-wordcount: '1173'
 ht-degree: 58%
 
 ---
@@ -41,6 +41,7 @@ Produktadministratoren erhalten standardmäßig die erforderlichen Berechtigunge
 * Projekte, Filter, berechnete Metriken, Zielgruppen, Anmerkungen oder von anderen Benutzern erstellte Filter aktualisieren und löschen
 * Freigeben von Workspace-Projekten für alle Benutzenden
 * Berichtaktivität im [Reporting Activity Manager](/help/reporting-activity-manager/reporting-activity-overview.md)
+* [Gesamte Tabellen exportieren](/help/analysis-workspace/export/export-cloud.md) von Analysis Workspace
 
 ### Zusätzliche Berechtigungen für Produktadministratoren
 
