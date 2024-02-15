@@ -5,9 +5,9 @@ exl-id: b632475f-371e-4156-9ffc-b138325aa120
 feature: Guided Analysis
 keywords: Produktanalyse
 role: User
-source-git-commit: 486cd26bfacbae0072e14ec078ceca66909ac0ec
+source-git-commit: 1d6a241766455a5da978b7e8401f1d7c0ba688d6
 workflow-type: tm+mt
-source-wordcount: '701'
+source-wordcount: '747'
 ht-degree: 1%
 
 ---
@@ -31,15 +31,15 @@ Anwendungsbeispiele für diesen Ansichtstyp sind:
 
 In der Abfrageleiste können Sie die folgenden Komponenten konfigurieren:
 
-* **[!UICONTROL Veranstaltungen]**: Die Ereignisse, die Sie messen möchten. Jedes ausgewählte Ereignis wird als Diagrammreihen und Tabellenzeile dargestellt. Sie können bis zu fünf Ereignisse einbeziehen.
-* **[!UICONTROL Personen]**: Die Segmente, die Sie messen möchten. Jedes ausgewählte Segment verdoppelt die Anzahl der Diagrammreihen und Tabellenzeilen. Sie können bis zu fünf Segmente einbeziehen.
+* **[!UICONTROL Ereignisse und Metriken]**: Die Ereignisse oder Metriken, die Sie messen möchten. Jede Auswahl wird als Diagrammreihen und Tabellenzeile dargestellt. Ereignisse und Metriken können nicht in der Abfrage kombiniert werden. Sobald Sie Ihre erste Auswahl getroffen haben, müssen die verbleibenden Abfrageauswahlen denselben Typ aufweisen. Sie können bis zu fünf Auswahlmöglichkeiten auswählen.
+* **[!UICONTROL Zählt als]**: Die zu messende Metrik. Zu den Optionen gehören Ereignisse, Sitzungen, Benutzer, Prozentsatz der Benutzer, Ereignisse pro Sitzung und Ereignisse pro Benutzer. Wird gezählt, da Optionen nur für Ereignisabfragen anwendbar sind und für Metrikabfragen entfernt werden.
+* **[!UICONTROL Segmente]**: Die Segmente, die Sie messen möchten. Jedes ausgewählte Segment verdoppelt die Anzahl der Diagrammreihen und Tabellenzeilen. Sie können bis zu fünf Segmente einbeziehen.
 * **[!UICONTROL Aufschlüsselungseigenschaft]**: Schlüsselt die Diagrammreihen und Tabellenzeilen nach den Werten der ausgewählten Eigenschaft auf. Eine einzelne Aufschlüsselungseigenschaft wird unterstützt. Die Top-20-Werte werden in der Tabelle angezeigt und bis zu zehn Werte können in der Grafik angezeigt werden. Sie können eine Zeile im Diagramm ausblenden oder verfügbar machen, indem Sie die ![Symbol zum Ausblenden](../assets/hide-in-chart.png) Symbol.
 
 ## Diagrammeinstellungen
 
 Die [!UICONTROL Nutzung] Die Ansicht bietet die folgenden Diagrammeinstellungen, die im Menü über dem Diagramm angepasst werden können:
 
-* **[!UICONTROL Metrik]**: Die zu messende Metrik. Zu den Optionen gehören Ereignisse, Sitzungen, Benutzer, Ereignisse pro Sitzung und Ereignisse pro Benutzer.
 * **[!UICONTROL Diagrammtyp]**: Der Visualisierungstyp, den Sie verwenden möchten. Zu den Optionen gehören &quot;Linie&quot;, &quot;Balken&quot;, &quot;Gestapelte Leiste&quot;und &quot;Gestapelter Bereich&quot;.
 
 ## Überlagerungen
