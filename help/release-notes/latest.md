@@ -3,9 +3,9 @@ title: Aktuelle Versionshinweise zu Customer Journey Analytics anzeigen
 description: Neueste Versionshinweise zu Customer Journey Analytics
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 29c124da55842bcb9085059a9008f7a7d6baf44e
+source-git-commit: 22b87a6f64c296e3eb05ec3b7076bf6dfa2935f9
 workflow-type: tm+mt
-source-wordcount: '525'
+source-wordcount: '526'
 ht-degree: 44%
 
 ---
@@ -21,7 +21,7 @@ Diese Versionshinweise beziehen sich auf den Veröffentlichungszeitraum Ende 14.
 | Funktion | Beschreibung | [Rollout-Beginn](releases.md) | [Allgemeine Verfügbarkeit](releases.md) |
 | ----------- | ---------- | ------- | ---- |
 | **Zeitreihenprognosen** | [Prognosen](../analysis-workspace/c-forecast/forecasting.md) ist eine neue Analysis Workspace-Funktion, mit der eine standardmäßige oder berechnete Metrik mit beliebiger unterstützter Zeitgranularität (stündlich, täglich, wöchentlich, monatlich und jährlich) für Freiformtabellen und Liniendiagramme prognostiziert wird. | 31. Januar 2024 | 21. Februar 2024 |
-| **Media Analytics-Berichte - Zielgruppendurchschnitt pro Minute (AMA)** | Das Bedienfeld Zielgruppendurchschnitt pro Minute ist jetzt in CJA verfügbar. Media Analytics-Kunden können das Bedienfeld Zielgruppendurchschnitt pro Minute verwenden, um die durchschnittliche Nutzung ihrer Inhalte besser zu verstehen. Der Zielgruppendurchschnitt pro Minute ermöglicht Vergleiche von Inhalten beliebiger Längen oder Genres. Darüber hinaus können Kunden diesen digitalen Zielgruppendurchschnitt pro Minute mit Metriken zum linearen TV-Durchschnitt pro Minute vergleichen oder ihn anhängen. Dieses Bedienfeld bietet mehr Flexibilität, um die durchschnittliche Zielgruppe für benutzerdefinierte Zeiträume sowie den Zeitpunkt zu messen, zu dem die Classification der Dauer nach der Tatsache aktualisiert wurde. |  | Samstag, 16. Februar 2024 |
+| **Media Analytics-Berichte - Zielgruppendurchschnitt pro Minute (AMA)** | Das Bedienfeld Zielgruppendurchschnitt pro Minute ist jetzt in CJA verfügbar. Media Analytics-Kunden können das Bedienfeld Zielgruppendurchschnitt pro Minute verwenden, um die durchschnittliche Nutzung ihrer Inhalte besser zu verstehen. Der Zielgruppendurchschnitt pro Minute ermöglicht Vergleiche von Inhalten beliebiger Längen oder Genres. Darüber hinaus können Kunden diesen digitalen Zielgruppendurchschnitt pro Minute mit Metriken zum linearen TV-Durchschnitt pro Minute vergleichen oder ihn anhängen. Dieses Bedienfeld bietet mehr Flexibilität, um die durchschnittliche Zielgruppe für benutzerdefinierte Zeiträume sowie den Zeitpunkt zu messen, zu dem die Classification der Dauer nach der Tatsache aktualisiert wurde. |  | Februar 2024 |
 | **Zeilenanzahl für Lookup- und Profildaten** | Metriken zur Zeilenanzahl für Datensätze, die als Teil einer Verbindung konfiguriert sind, enthalten jetzt Datensätze, die hinzugefügt, übersprungen oder aus Profil- und Lookup-Datensätzen gelöscht werden. |  | Donnerstag, 14. Februar 2024 |
 | **Erlebnis-Edge-Bot-Erkennung** | [Bot-Erkennung](https://experienceleague.adobe.com/docs/experience-platform/datastreams/bot-detection.html) ermöglicht es Ihnen, Ereignisse zu identifizieren, die vom Web SDK, Mobile SDK und Server API als von bekannten Spiders und Bots generiert wurden. | | 21. Februar 2024 |
 | **Nutzungsmetriken** | Die Oberfläche für Nutzungsmetriken zeigt die Verwendung von aufgenommenen und berichtspflichtigen Zeilen über alle Verbindungen hinweg. Mit dieser Schnittstelle können Sie bestimmen, ob Ihre Customer Journey Analytics-Nutzung den vertraglich vereinbarten Bedingungen entspricht. | Mittwoch, 20. Februar 2024 | Anfang März 2024 |
