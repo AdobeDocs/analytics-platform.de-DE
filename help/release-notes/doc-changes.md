@@ -4,10 +4,10 @@ description: Listet Inhaltsaktualisierungen für Dokumentation zu Customer Journ
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: b49db376cb62c0668b8433c5dc5f66481966c333
+source-git-commit: 5f96aa52562c2281e4a0c8fa97fb8b4dff04042e
 workflow-type: tm+mt
-source-wordcount: '3065'
-ht-degree: 83%
+source-wordcount: '3106'
+ht-degree: 82%
 
 ---
 
@@ -20,8 +20,9 @@ Die folgenden Aktualisierungen wurden seit der ersten Erstellung der Customer Jo
 | Funktion | Beschreibung |
 | --- | --- |
 | **Februar 2024** | |
+| Es wurden Zugriffsberechtigungen für das Hochladen von Dateien in Amazon S3 Role ARN- und GCP-Buckets bei der Konfiguration von Cloud-Exportspeicherorten hinzugefügt. | Es wurden genaue Berechtigungsanforderungen zum Hochladen von Dateien in Amazon S3 Role ARN- und Google Cloud Platform-Buckets hinzugefügt, wenn [Konfigurieren von Cloud-Exportstandorten](/help/components/exports/cloud-export-locations.md). |
 | Es wurde klargestellt, dass Produktadministratoren immer Zugriff auf den Export vollständiger Tabellen haben | Es wurden folgende Änderungen vorgenommen, um klarzustellen, dass Benutzer, denen die Produktadministratorrolle zugewiesen wurde, standardmäßig Zugriff auf vollständige Tabellen aus Analysis Workspace haben: <ul><li>Eine neue Aufzählung wurde hinzugefügt zu [Produktadministratorstandardberechtigungen](/help/admin/cja-access-control.md#product-admin-default-permissions).</li><li>Es wurde ein Hinweis unter dem [Mindestanforderungen für den Export vollständiger Tabellen in die Cloud](/help/analysis-workspace/export/export-cloud.md#minimum-requirements).</li></ul> |
-| Ignorierte Datensatzdetails | Es wurde eine Dokumentation zur Funktionalität der übersprungenen Datensatzdetails unter Verbindungen hinzugefügt. Siehe [Verbindungsdetails](../connections/manage-connections.md#connection-details) für weitere Informationen. |
+| Ignorierte Datensatzdetails | Es wurde eine Dokumentation zur Funktionalität der übersprungenen Datensatzdetails unter Verbindungen hinzugefügt. Weitere Informationen finden Sie im Abschnitt [Verbindungsdetails](../connections/manage-connections.md#connection-details). |
 | **Januar 2024** | |
 | Prognose | Die Dokumentation wurde hinzugefügt zu [forecasting](../analysis-workspace/c-forecast/forecasting.md), die neue Analysis Workspace-Funktion, um eine standardmäßige oder berechnete Metrik mit einer unterstützten Zeitgranularität (stündlich, täglich, wöchentlich, monatlich und jährlich) für Freiformtabellen und Liniendiagramme zu prognostizieren. |
 | Die Dokumentation zum Hinzufügen von Konten und Speicherorten beim Exportieren vollständiger Tabellen wurde aktualisiert. | Die Dokumentation wurde aktualisiert, um kleinere Aktualisierungen der Benutzeroberfläche beim Konfigurieren eines neuen Kontos oder Standorts beim [Exportieren vollständiger Tabellen aus Analysis Workspace](/help/analysis-workspace/export/export-cloud.md#export-full-tables-from-analysis-workspace).<p>Eine neue [!UICONTROL **Konto hinzufügen**] ist jetzt im [!UICONTROL **Konto**] Dropdown-Menü. Die [!UICONTROL **Ort hinzufügen**] -Option, die zuvor als Schaltfläche neben [!UICONTROL **Ortsname**] Dropdown-Menü ist jetzt im Menü selbst verfügbar. |
