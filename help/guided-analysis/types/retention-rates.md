@@ -5,9 +5,9 @@ feature: Guided Analysis
 keywords: Produktanalyse
 exl-id: c35a0ee0-e6b7-47b5-a5bc-308cde1585de
 role: User
-source-git-commit: b8e01079411d8a3edacb7e69a7bc529bf639c2b8
+source-git-commit: e448f6ddbff2673abbd2920aacf41d4268f3ce07
 workflow-type: tm+mt
-source-wordcount: '890'
+source-wordcount: '894'
 ht-degree: 4%
 
 ---
@@ -44,7 +44,7 @@ Anwendungsbeispiele für diesen Ansichtstyp sind:
 In der Abfrageleiste können Sie die folgenden Komponenten konfigurieren:
 
 * **[!UICONTROL Start- und Rückkehrereignis]**: Die Ereigniskriterien, mit denen ein Benutzer interagieren muss, um sich für die Aufnahme in Ihre Analyse zu qualifizieren. Ein Ereignis wird unterstützt, Sie können jedoch Eigenschaftenfilter einbeziehen.
-* **[!UICONTROL Zählt als]**: Wie Sie Benutzer beibehalten messen möchten. Optionen umfassen [!UICONTROL Benutzer beibehalten] und [!UICONTROL Prozentsatz der einbehaltenen Benutzer].
+* **[!UICONTROL Zählt als]**: Die Zählmethode, die Sie auf einbehaltene Benutzer anwenden möchten. Optionen umfassen [!UICONTROL Benutzer beibehalten] und [!UICONTROL Prozentsatz der einbehaltenen Benutzer].
 * **[!UICONTROL Segmente]**: Die Segmente, die Sie messen möchten. Jedes ausgewählte Segment fügt der Kohortentabelle eine Zeile hinzu. Sie können bis zu drei Segmente einbeziehen.
 
 ## Diagrammeinstellungen
