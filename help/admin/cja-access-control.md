@@ -6,10 +6,10 @@ feature: Basics
 exl-id: c258fa39-c0b6-45a1-8547-79516c15a215
 mini-toc-levels: 3
 role: Admin
-source-git-commit: 4f9878372f05da86b08449eeb17efb79b7432341
+source-git-commit: 14cdc7bd8817dbf1d7a9950fa6ff62aedff82640
 workflow-type: tm+mt
-source-wordcount: '1173'
-ht-degree: 58%
+source-wordcount: '1247'
+ht-degree: 52%
 
 ---
 
@@ -79,7 +79,18 @@ Ein Produktprofil ist ein Satz von Berechtigungen. Produktprofil-Admins können 
 
 ## Zugriff auf Benutzerebene
 
-Benutzende in Customer Journey Analytics können keine Datenansichten oder Verbindungen erstellen, bearbeiten oder anzeigen. Anwender können in Admin Console Filter, Projekte, Zielgruppen und berechnete Metriken mit speziellen Berechtigungen erstellen.
+In der folgenden Matrix werden die wichtigsten Zugriffsberechtigungen für verschiedene Customer Journey Analytics-Funktionen für Nicht-Produktadministratoren und CJA-Produktadministratoren beschrieben. Das Verständnis dieser Berechtigungen hilft Benutzern, effektiv zu navigieren und CJA basierend auf ihrer Rolle und Verantwortung innerhalb des Unternehmens zu nutzen.
+
+| CJA-Produktfunktionen | Nicht-Produkt-Admins (Benutzer) | Produktadministratoren |
+| --- | --- | --- |
+| **Datenansichten** | Kann nicht anzeigen/aktualisieren/erstellen/löschen | Kann erstellen/aktualisieren/löschen |
+| **Verbindungen** | Kann nicht anzeigen/aktualisieren/erstellen/löschen | Kann erstellen/aktualisieren/löschen |
+| **Filter** | Kann erstellen | Kann erstellen |
+| **Projekte** | Kann erstellen | Kann erstellen/aktualisieren/löschen |
+| **Zielgruppen** | Kann mit speziellen Berechtigungen in Admin Console erstellen | Kann erstellen |
+| **Berechnete Metriken** | Kann mit speziellen Berechtigungen in Admin Console erstellen | Kann erstellen |
+
+{style="table-layout:auto"}
 
 ## Workspace-Projektkuratierung
 

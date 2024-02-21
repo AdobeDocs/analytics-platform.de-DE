@@ -5,16 +5,17 @@ solution: Customer Journey Analytics
 feature: Connections
 exl-id: 012371d7-aaef-4018-95ee-5c52083e9d8f
 role: Admin
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
-workflow-type: ht
-source-wordcount: '102'
-ht-degree: 100%
+source-git-commit: 14cdc7bd8817dbf1d7a9950fa6ff62aedff82640
+workflow-type: tm+mt
+source-wordcount: '188'
+ht-degree: 39%
 
 ---
 
 # Verbindungen – Übersicht
 
-Mit einer Verbindung können Sie Datensätze von [!DNL Adobe Experience Platform] in [!UICONTROL Arbeitsbereich] integrieren. Um über [!DNL Experience Platform]-Datensätze zu berichten, müssen Sie zunächst eine Verbindung zwischen den Datensätzen in [!DNL Experience Platform] und [!UICONTROL Arbeitsbereich] herstellen.
+Verbindungen ermöglichen es Customer Journey Analytics-Produktadministratoren, Verbindungen mit verschiedenen AEP-Datenquellen herzustellen, z. B. Ereignis-, Such- und Profildatensätzen. Diese Verbindungen ermöglichen die Integration von Daten aus einer Verbindung zu einer abgeleiteten Datenansicht. Wir haben empfohlen, den Zugriff auf das Connections-Management auf eine zentrale Managementgruppe zu beschränken. Konfigurationen auf Verbindungsebene haben vertragliche Auswirkungen auf die Volumenzuweisungen von Daten, die in Customer Journey Analytics eingehen.
+Verbindungen sind die Grundlage von CJA und werden aus AEP-Quelldatensätzen erstellt. Der Zugriff auf Verbindungen bietet außerdem die Möglichkeit, den Connections-Manager anzuzeigen, mit dem Sie die zugrunde liegenden Datensätze, aus denen die Verbindung besteht, anzeigen sowie wichtige Bearbeitungs- und Konfigurationsoptionen vornehmen können.
 
 Im Folgenden finden Sie eine Videoübersicht:
 

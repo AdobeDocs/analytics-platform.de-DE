@@ -5,10 +5,10 @@ exl-id: e23ce27a-77ab-4641-a126-93f00d4e6e14
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: 20f48259881bade1978909610055d6b20b894092
-workflow-type: ht
-source-wordcount: '980'
-ht-degree: 100%
+source-git-commit: 949f0870c8607879d4f685f4fbeb838ddb68f80a
+workflow-type: tm+mt
+source-wordcount: '1016'
+ht-degree: 96%
 
 ---
 
@@ -29,6 +29,7 @@ Diese erforderlichen Standardkomponenten werden standardmäßig jeder Datendatei
 | [!UICONTROL Personen] | Metrik | Basiert auf der Personen-ID, die in einer [!UICONTROL Verbindung] angegeben ist. |
 | [!UICONTROL Sitzungen] | Metrik | Basiert auf den Sitzungseinstellungen der Datenansicht. |
 | [!UICONTROL Ereignisse] | Metrik | Die Anzahl der Zeilen aus allen Ereignisdatensätzen in einer [!UICONTROL Verbindung]. |
+| [!UICONTROL Sekunden] | Dimension | Die Sekunde, in der ein bestimmtes Ereignis aufgetreten ist (abgerundet). Das erste Dimensionselement ist die erste Sekunde im Datumsbereich und das letzte Dimensionselement die letzte Sekunde im Datumsbereich. |
 | [!UICONTROL Minute] | Dimension | Die Minute, in der ein bestimmtes Ereignis aufgetreten ist (abgerundet). Das erste Dimensionselement ist die erste Minute im Datumsbereich und das letzte Dimensionselement die letzte Minute im Datumsbereich. |
 | [!UICONTROL Stunde] | Dimension | Die Stunde, in der ein bestimmtes Ereignis aufgetreten ist (abgerundet). Das erste Dimensionselement ist die erste Stunde im Datumsbereich und das letzte Dimensionselement die letzte Stunde im Datumsbereich. |
 | [!UICONTROL Tag] | Dimension | Der Tag, an dem ein bestimmtes Ereignis aufgetreten ist. Das erste Dimensionselement ist der erste Tag im Datumsbereich und das letzte Dimensionselement der letzte Tag im Datumsbereich. |
