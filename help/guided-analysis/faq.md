@@ -5,7 +5,7 @@ exl-id: b6f92d47-6c09-4338-9dc5-b30bbfbe9f7f
 feature: Guided Analysis
 keywords: Produktanalyse
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: a8ead81a8de8dcab4c12cbbe9cba56c4ce8417a3
 workflow-type: tm+mt
 source-wordcount: '434'
 ht-degree: 2%
@@ -16,7 +16,7 @@ ht-degree: 2%
 
 Häufig gestellte Fragen zur geführten Analyse.
 
-+++**Wie kann meine Organisation für die geführte Analyse bereitgestellt werden?**
++++**Wie kann meine Organisation für eine geleitete Analyse bereitgestellt werden?**
 
 Geführte Analysen sind Teil von Adobe Product Analytics, einem kostenpflichtigen Add-on zu Customer Journey Analytics. Wenden Sie sich an Ihr Adobe-Account-Team, wenn Sie mit der Verwendung dieses Add-ons beginnen möchten.
 
@@ -30,7 +30,7 @@ Damit Ihre Endbenutzer mit der geführten Analyse am erfolgreichsten sind, wird 
 
 +++
 
-+++**Wann sollten Sie die Geführte Analyse oder Analysis Workspace verwenden?**
++++**Wann sollten Sie die geführte Analyse oder Analysis Workspace verwenden?**
 
 **Geführte Analyse** kann Benutzern dabei helfen, schnell hochwertige Einblicke zu erhalten. Dies ist nützlich für Produktteams, Benutzer, die vertraulicher mit Daten arbeiten möchten, und sogar für Analysten als Vorsprung zu einer tieferen Analyse.
 
@@ -38,9 +38,9 @@ Damit Ihre Endbenutzer mit der geführten Analyse am erfolgreichsten sind, wird 
 
 +++
 
-+++**Wie unterscheidet sich die Terminologie zwischen der geführten Analyse und Analysis Workspace?**
++++**Worin unterscheidet sich die Terminologie von der geführten Analyse mit Analysis Workspace?**
 
-Geführte Analyse verwendet Begriffe, die häufiger von Produktteams verwendet werden. Sie können diese Tabelle referenzieren, wenn Sie zwischen der geführten Analyse und [Analysis Workspace](../analysis-workspace/home.md).
+Geführte Analyse verwendet Begriffe, die häufiger von Produktteams verwendet werden. Sie können diese Tabelle referenzieren, wenn Sie zwischen einer geführten Analyse und [Analysis Workspace](../analysis-workspace/home.md).
 
 | Geführter Analysebegriff | Analysis Workspace-Begriff |
 | --- | --- |
@@ -54,7 +54,7 @@ Geführte Analyse verwendet Begriffe, die häufiger von Produktteams verwendet w
 
 +++
 
-+++**Was sind einige Unterschiede in der Vorgehensweise bei der geführten Analyse und der Berichterstellung mit Analysis Workspace?**
++++**Was sind einige Unterschiede bei der Vorgehensweise bei der geführten Analyse und der Berichterstellung mit Analysis Workspace?**
 
 while [Analysis Workspace](../analysis-workspace/home.md) und geführte Analysen verwenden dieselben zugrunde liegenden Daten. Die Art und Weise, mit der jedes Tool Abfragen dieser Daten erstellen kann, ist anders.
 
@@ -62,16 +62,16 @@ while [Analysis Workspace](../analysis-workspace/home.md) und geführte Analysen
 
 * **Geführte Analyse ist ein Ereignis und ein benutzerzentriertes Erlebnis.** Jede Analyse beginnt mit der Auswahl von Ereignissen. Anschließend können Dimensionen und Filter hinzugefügt werden, um diese Ereignisdaten zu verfeinern.
 
-![Ansichten der Analysis Workspace- und Guided-Analyse](assets/structure.png)
+![Ansichten mit Analysis Workspace und geführten Analysen](assets/structure.png){style="border:1px solid gray"}
 
 Betrachten Sie das folgende Beispiel, in dem Sie sich auf Daten rund um die Startseite Ihrer Website konzentrieren. Teams stellen ähnliche Fragen, aber der Analysenansatz kann unterschiedlich sein.
 
 * Ein typischer, dimensionszentrierter Analysis Workspace-Ansatz wäre: &quot;Sehen wir uns die Startseite an und sehen Sie, wie viele Seitenansichten sie erhalten hat.&quot;
 
-  ![Dimension zentriert](assets/dimension-centered.png)
+  ![Dimension zentriert](assets/dimension-centered.png){style="border:1px solid gray"}
 
-* Ein typisches Ereignis und benutzerzentrierter Ansatz für die angeleitete Analyse wäre: &quot;Wie viele Benutzer haben unsere Homepage besucht?&quot;
+* Ein typischer ereignisorientierter und benutzerzentrierter Ansatz für die geführte Analyse wäre: &quot;Wie viele Benutzer haben unsere Homepage besucht?&quot;
 
-  ![Ereignis zentriert](assets/event-centered.png)
+  ![Ereignis zentriert](assets/event-centered.png){style="border:1px solid gray"}
 
 +++

@@ -5,9 +5,9 @@ feature: Guided Analysis
 keywords: Produktanalyse
 exl-id: 2e004894-dc1b-42a7-a060-240f0151b2f2
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: a8ead81a8de8dcab4c12cbbe9cba56c4ce8417a3
 workflow-type: tm+mt
-source-wordcount: '1481'
+source-wordcount: '1487'
 ht-degree: 1%
 
 ---
@@ -27,9 +27,9 @@ Anwendungsbeispiele für die geführte Analyse variieren je nach Branche. Auf di
 
 {style="table-layout:auto"}
 
-![Fristansicht für Einzelhandel](assets/retail-funnel-friction.png)
+![Fristansicht für Einzelhandel](assets/retail-funnel-friction.png){style="border:1px solid gray"}
 
-![Nutzungsansicht für den Einzelhandel](assets/retail-trends-usage.png)
+![Nutzungsansicht für den Einzelhandel](assets/retail-trends-usage.png){style="border:1px solid gray"}
 
 +++
 
@@ -44,11 +44,11 @@ Anwendungsbeispiele für die geführte Analyse variieren je nach Branche. Auf di
 
 {style="table-layout:auto"}
 
-![Fristverlängerung für Finanzdienstleistungen](assets/fsi-funnel-friction.png)
+![Fristverlängerung für Finanzdienstleistungen](assets/fsi-funnel-friction.png){style="border:1px solid gray"}
 
-![Nutzungsansicht für Finanzdienstleistungen](assets/fsi-trends-usage.png)
+![Nutzungsansicht für Finanzdienstleistungen](assets/fsi-trends-usage.png){style="border:1px solid gray"}
 
-![Aktive Sicht auf Finanzdienstleistungen](assets/fsi-user-growth-active.png)
+![Aktive Sicht auf Finanzdienstleistungen](assets/fsi-user-growth-active.png){style="border:1px solid gray"}
 
 +++
 
@@ -56,18 +56,18 @@ Anwendungsbeispiele für die geführte Analyse variieren je nach Branche. Auf di
 
 | Anwendungsfall | Beispiel | Wirkung | Analyse |
 | --- | --- | --- | --- |
-| **Auswirkungen neuer Buchungsflussfunktionen quantifizieren** | Eine Organisation verwendet die geführte Analyse, um schnell die Auswirkungen einer neuen Buchungsschritt-Funktion auf die Konversionsraten anzuzeigen. Sie identifizieren den Teil des Erlebnisses mit den größten Gewinnen. | **Erhöhen Sie die Buchungsraten.** Messen Sie die geschäftlichen Auswirkungen anstatt nur die Nutzung von Funktionen. | [Ansicht mit Auswirkung auf die Version](types/release.md)<br>[Friktionsansicht](types/friction.md) |
+| **Auswirkungen neuer Buchungsflussfunktionen quantifizieren** | Eine Organisation verwendet eine geleitete Analyse, um schnell die Auswirkungen einer neuen Buchungsschritt-Funktion auf die Konversionsraten anzuzeigen. Sie identifizieren den Teil des Erlebnisses mit den größten Gewinnen. | **Erhöhen Sie die Buchungsraten.** Messen Sie die geschäftlichen Auswirkungen anstatt nur die Nutzung von Funktionen. | [Ansicht mit Auswirkung auf die Version](types/release.md)<br>[Friktionsansicht](types/friction.md) |
 | **Optimieren des App-Erlebnisses** | Eine Organisation versteht schnell und einfach monatliche aktive App-Benutzer im Zeitverlauf und erkennt positive Auswirkungen nach Version. | **Erhöhen Sie MAUs.** Messen und erhöhen Sie die App-Nutzung, die mit dem Kundenzufriedenheit in Zusammenhang steht. | [Wachstumsansicht aktiver Benutzer](types/active.md)<br>[Netto-Wachstumsansicht](types/net-growth.md) |
 | **Reibungssuche im mobilen Check-in-Fluss** | Wenn Sie sehen, wo Personen erfolgreich sind oder den erwarteten Mobile-Check-in-Prozess abbrechen, können Unternehmen mühelos Bereiche zur Erlebnisoptimierung identifizieren. | **Erhöhen Sie CSAT und reduzieren Sie IROPs.** Die Beseitigung von Reibung führt zu einem nahtloseren &quot;Tag des Reisens&quot;. | [Friktionsansicht](types/friction.md)<br>[Ansicht &quot;Konversionstrends&quot;](types/conversion-trends.md) |
 | **Callcenter-Aufrufe deaktivieren** | Das Anzeigen des Benutzererlebnisses in einer Trichteransicht zeigt einen Benutzer, bei dem die Reibung der Besucher auftritt, was zu einem kostspieligen Callcenter-Volumen führt. Die nächsten Schritte, auf die wir uns konzentrieren müssen, sind klar. | **Reduzierung der Nutzung des Callcenters.** Erfahren Sie mehr über &quot;glückliche Pfade&quot;und reduzieren Sie teure Anrufe. | [Friktionsansicht](types/friction.md)<br>[Ansicht &quot;Konversionstrends&quot;](types/conversion-trends.md) |
 
 {style="table-layout:auto"}
 
-![Friktionsansicht für Reisen und Gastfreundschaft](assets/th-funnel-friction.png)
+![Friktionsansicht für Reisen und Gastfreundschaft](assets/th-funnel-friction.png){style="border:1px solid gray"}
 
-![Nutzungsansicht für Reisen und Gastfreundschaft](assets/th-trends-usage.png)
+![Nutzungsansicht für Reisen und Gastfreundschaft](assets/th-trends-usage.png){style="border:1px solid gray"}
 
-![Umrechnungstrends für Reisen und Gastgewerbe](assets/th-funnel-conversion-trends.png)
+![Umrechnungstrends für Reisen und Gastgewerbe](assets/th-funnel-conversion-trends.png){style="border:1px solid gray"}
 
 +++
 
@@ -79,15 +79,15 @@ Anwendungsbeispiele für die geführte Analyse variieren je nach Branche. Auf di
 | **Erkennen des Abwanderungsrisikos** | Ein Unternehmen verzeichnet eine hohe Umsatzrate von Kunden, die sich für seine Plattform registrieren, um sich ein saisonales Ereignis anzusehen und es sofort nach Abschluss des Ereignisses zu stornieren. Durch die schnelle Identifizierung dieser Benutzer können Empfehlungen angezeigt werden, die Kunden dazu verleiten, mit der Plattform interagiert zu bleiben. | **Treten Sie glückliche Abonnenten bei.** Suchen Sie nach Inhalten, die ein Wachstumssegment einbinden, um mit Empfehlungen zu intervenieren. | [Wachstumsansicht aktiver Benutzer](types/active.md)<br>[Netto-Wachstumsansicht](types/net-growth.md) |
 | **Ermitteln von Upsell-Möglichkeiten** | Ein wesentlicher Bestandteil des Umsatzwachstums eines Unternehmens ist das Verständnis dessen, was In-App-Angebote während ihrer Teilnahme am Stadion für Fans am meisten verlockend sind. Die geleitete Analyse ermöglicht es ihnen genau zu sehen, welche Angebote am effektivsten sind. | **Steigerung der Nebeneinnahmen.** Machen Sie sich mit den Auswirkungen von In-App-Angeboten auf das Kaufverhalten vertraut. | [Ansicht &quot;Erste Verwendung&quot;](types/first-use.md)<br>[Friktionsansicht](types/friction.md) |
 | **Geräteübergreifendes Erlebnis optimieren** | Eine Organisation möchte analysieren, wie Abonnenten mit mehreren Geräten/Apps interagieren. Dieses Wissen ermöglicht es ihnen, die Konsummuster von Inhalten zu verstehen und zu bestimmen, wo es am besten wäre, sie erneut anzusprechen. | **Personalisieren Sie das Erlebnis.** Erfahren Sie, welche Inhalte bei Abonnenten auf den einzelnen Geräten am besten ankommen. | [Ansicht zu Nutzungstrends](types/usage.md) |
-| **Callcenter-Aufrufe deaktivieren** | Eine Organisation verwendet die geführte Analyse, um ein Problem zu identifizieren, bei dem die Autopie nicht funktionierte. Dies führte dazu, dass frustrierte Kunden ihr Supportcenter anrufen, um ihren Plan abzubrechen. | **Reduzieren Sie die Support-Aufrufe.** Erstellen Sie ein besseres Kundenerlebnis und reduzieren Sie Aufrufe an den Kundendienst. | [Friktionsansicht](types/friction.md)<br>[Ansicht &quot;Konversionstrends&quot;](types/conversion-trends.md) |
+| **Callcenter-Aufrufe deaktivieren** | Eine Organisation verwendet eine geleitete Analyse, um ein Problem zu identifizieren, bei dem die Autopie nicht funktionierte, was dazu führte, dass frustrierte Kunden ihr Support-Center anrufen, um ihren Plan abzubrechen. | **Reduzieren Sie die Support-Aufrufe.** Erstellen Sie ein besseres Kundenerlebnis und reduzieren Sie Aufrufe an den Kundendienst. | [Friktionsansicht](types/friction.md)<br>[Ansicht &quot;Konversionstrends&quot;](types/conversion-trends.md) |
 
 {style="table-layout:auto"}
 
-![Frisierungsansicht für Medien und Unterhaltung](assets/me-funnel-friction.png)
+![Frisierungsansicht für Medien und Unterhaltung](assets/me-funnel-friction.png){style="border:1px solid gray"}
 
-![Aktive Sicht auf Medien und Unterhaltung](assets/me-user-growth-active.png)
+![Aktive Sicht auf Medien und Unterhaltung](assets/me-user-growth-active.png){style="border:1px solid gray"}
 
-![](assets/me-trends-usage.png)
+![Nutzungsansicht für Medien und Unterhaltung](assets/me-trends-usage.png){style="border:1px solid gray"}
 
 +++
 
@@ -95,14 +95,14 @@ Anwendungsbeispiele für die geführte Analyse variieren je nach Branche. Auf di
 
 | Anwendungsfall | Beispiel | Wirkung | Analyse |
 | --- | --- | --- | --- |
-| **Verbesserung der gesundheitlichen Situation von Patienten** | Eine Organisation verfügt über die Daten, um ihre Bemühungen auf Wachstum zu konzentrieren. Vor der Verwendung der Guided-Analyse hatten sie kein klares Verständnis dafür, wie viele Mitglieder des Wellness-Plans pro Woche einfach aufgehört hatten, sie komplett zu nutzen. | **Reduzierung der Arztbesuche.** Schnell identifizierte ruhende Benutzer zur erneuten Interaktion. | [Wachstumsansichten aktiver Benutzer](types/active.md) |
+| **Verbesserung der gesundheitlichen Situation von Patienten** | Eine Organisation verfügt über die Daten, um ihre Bemühungen auf Wachstum zu konzentrieren. Vor der Verwendung der geführten Analyse hatten sie kein klares Verständnis dafür, wie viele Mitglieder des Wellness-Plans pro Woche einfach aufgehört hatten, ihn ganz zu nutzen. | **Reduzierung der Arztbesuche.** Schnell identifizierte ruhende Benutzer zur erneuten Interaktion. | [Wachstumsansichten aktiver Benutzer](types/active.md) |
 | **Verbesserung der Patientenerfahrung** | Die Sichtbarkeit, wie viele Patienten Callcenter kontaktieren, um ein einfaches Passwort zurückzusetzen, erneuerte die Leidenschaft eines Analytikers, sich auf die Stärkung ihrer Patientenerfahrung zu konzentrieren. | **Reduzieren Sie die Gesamtkosten für die Bereitstellung.** Erstellen Sie eine bessere Patientenerfahrung und reduzieren Sie die Aufrufe an Patientendienste. | [Ansicht zu Nutzungstrends](types/usage.md)<br>[Friktionsansicht](types/friction.md) |
 | **Ermitteln wiederholter kanalübergreifender Aktionen nach Segment** | Eine Organisation möchte verstehen, wie aktive, für Medicare infrage kommende Mitglieder mit ihrer geplanten Nutzung für bestimmte Botschaften in ihren digitalen Produkten arbeiten. Einblicke aus der geführten Analyse helfen, das Marketing effektiver zu gestalten. | **Personalisieren der Medicare-Registrierungsoptionen.** Vergleichen Sie allgemeine sequenzielle Aktionen meiner aktivsten Planmitglieder. | [Friktionsansicht](types/friction.md)<br>[Wachstumsansicht aktiver Benutzer](types/active.md) |
 | **Bewahren Sie die besten Branchenkenntnisse auf** | Analytics-Ressourcen für eine Organisation sind zeitsparend. Die geführte Analyse ermöglicht es dem Unternehmen, schnell die Produktnutzungsdaten abzurufen, die für Lead-Update-Aufrufe benötigt werden. | **Reduzierung des Arbeitsaufwands für Analysen.** Erhalten Sie schnellere Antworten. Angemessene Berichterstattung für den Zeitpunkt, an dem dies am wichtigsten ist. | [Geführte Analyse](overview.md) |
 
 {style="table-layout:auto"}
 
-![Fristverlängerung für die Gesundheitsfürsorge](assets/healthcare-funnel-friction.png)
+![Fristverlängerung für die Gesundheitsfürsorge](assets/healthcare-funnel-friction.png){style="border:1px solid gray"}
 
 +++
 
@@ -117,6 +117,6 @@ Anwendungsbeispiele für die geführte Analyse variieren je nach Branche. Auf di
 
 {style="table-layout:auto"}
 
-![Nutzungsansicht für B2B](assets/b2b-trends-usage.png)
+![Nutzungsansicht für B2B](assets/b2b-trends-usage.png){style="border:1px solid gray"}
 
 +++

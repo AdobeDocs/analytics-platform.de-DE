@@ -4,7 +4,7 @@ description: Beobachten Sie Sitzungsereignisse auf Benutzerebene im Zeitverlauf,
 feature: Guided Analysis
 keywords: Produktanalyse
 role: User
-source-git-commit: 2eeaedd1c478fb9ae7a264a0af4a35327268c499
+source-git-commit: a8ead81a8de8dcab4c12cbbe9cba56c4ce8417a3
 workflow-type: tm+mt
 source-wordcount: '549'
 ht-degree: 1%
@@ -15,7 +15,7 @@ ht-degree: 1%
 
 Die **[!UICONTROL Timeline]** Mit dieser Ansicht können Sie Sitzungsereignisse auf Benutzerebene im Zeitverlauf beobachten, um Erlebnismuster zu finden und bessere Benutzergeschichten zu erzählen. In der linken Leiste können Sie den Stream nach Eigenschaftswerten und Segmenten filtern. In der rechten Leiste können Sie aus einer zufälligen Liste von Benutzern auswählen, die den Filterkriterien entsprechen. Der mittlere Bereich zeigt den Stream für den ausgewählten Benutzer nach Sitzung an, der aus Zeitstempel, Eigenschaftswerten und Dauer besteht. Die Dauer ist für das letzte Ereignis in einer bestimmten Sitzung nicht verfügbar.
 
-![Timeline-Screenshot](../assets/timeline.png)
+![Timeline-Screenshot](../assets/timeline.png){style="border:1px solid gray"}
 
 >[!NOTE]
 >

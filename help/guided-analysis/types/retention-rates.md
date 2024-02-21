@@ -5,7 +5,7 @@ feature: Guided Analysis
 keywords: Produktanalyse
 exl-id: c35a0ee0-e6b7-47b5-a5bc-308cde1585de
 role: User
-source-git-commit: e448f6ddbff2673abbd2920aacf41d4268f3ce07
+source-git-commit: a8ead81a8de8dcab4c12cbbe9cba56c4ce8417a3
 workflow-type: tm+mt
 source-wordcount: '894'
 ht-degree: 4%
@@ -29,7 +29,7 @@ Die nachfolgenden Dauer-Behälter zählen die Anzahl der Benutzer, die nach dies
 * Wenn ein Benutzer mehrere Tage mit dem Ereignis interagiert, nachdem er sich erstmals für die Aufnahme in die Analyse qualifiziert hat, werden diese im Behälter für die neueste qualifizierende Dauer und in allen dazugehörigen Zeitspannen-Behältern angezeigt. Diese Art der Berechnung wird manchmal als &quot;unbegrenzter Beibehalt&quot;bezeichnet.
 * Wenn ein Benutzer das Ereignis im konfigurierten Datumsbereich mehrmals aktiviert, werden nur die ersten und letzten Ereignisse in die Analyse aufgenommen.
 
-![Screenshot der Treueraten](../assets/retention-rates.png)
+![Screenshot der Treueraten](../assets/retention-rates.png){style="border:1px solid gray"}
 
 ## Anwendungsbeispiele
 

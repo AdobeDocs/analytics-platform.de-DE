@@ -5,7 +5,7 @@ feature: Guided Analysis
 keywords: Produktanalyse
 exl-id: 27eaa7c7-f1e1-4cf1-9d59-67ac552eb430
 role: User
-source-git-commit: e448f6ddbff2673abbd2920aacf41d4268f3ce07
+source-git-commit: a8ead81a8de8dcab4c12cbbe9cba56c4ce8417a3
 workflow-type: tm+mt
 source-wordcount: '561'
 ht-degree: 1%
@@ -16,7 +16,7 @@ ht-degree: 1%
 
 Die **[!UICONTROL Häufigkeit]** -Ansicht gruppiert Ereignisdaten nach der Häufigkeit von Ereignissen in Ihrem Produkt. Die vertikale Achse dieser Ansicht enthält Behälter, die die Häufigkeit des Ereignisses darstellen. Die horizontale Achse misst die Anzahl der Benutzer oder Sitzungen für jeden Behälter.
 
-![Häufigkeit, Screenshot](../assets/frequency-stacked.png)
+![Häufigkeit, Screenshot](../assets/frequency-stacked.png){style="border:1px solid gray"}
 
 ## Anwendungsbeispiele
 
