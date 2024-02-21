@@ -5,9 +5,9 @@ exl-id: b632475f-371e-4156-9ffc-b138325aa120
 feature: Guided Analysis
 keywords: Produktanalyse
 role: User
-source-git-commit: a8ead81a8de8dcab4c12cbbe9cba56c4ce8417a3
+source-git-commit: e7e3b4a64ded8af3fa8137194c160044da74db62
 workflow-type: tm+mt
-source-wordcount: '752'
+source-wordcount: '760'
 ht-degree: 1%
 
 ---
@@ -31,6 +31,7 @@ Anwendungsbeispiele für diesen Ansichtstyp sind:
 
 In der Abfrageleiste können Sie die folgenden Komponenten konfigurieren:
 
+* **[!UICONTROL Ansicht]**: Wechselt zwischen diesem Ansichtstyp und [Häufigkeit](frequency.md).
 * **[!UICONTROL Ereignisse und Metriken]**: Die Ereignisse oder Metriken, die Sie messen möchten. Jede Auswahl wird als Diagrammreihen und Tabellenzeile dargestellt. Ereignisse und Metriken können nicht in der Abfrage kombiniert werden. Sobald Sie Ihre erste Auswahl getroffen haben, müssen die verbleibenden Abfrageauswahlen denselben Typ aufweisen. Sie können bis zu fünf Auswahlmöglichkeiten auswählen.
 * **[!UICONTROL Zählt als]**: Die Zählmethode, die auf die ausgewählten Ereignisse angewendet werden soll. Zu den Optionen gehören Ereignisse, Sitzungen, Benutzer, Prozentsatz der Benutzer, Ereignisse pro Sitzung und Ereignisse pro Benutzer. Wird gezählt, da Optionen nur für Ereignisabfragen anwendbar sind und für Metrikabfragen entfernt werden.
 * **[!UICONTROL Segmente]**: Die Segmente, die Sie messen möchten. Jedes ausgewählte Segment verdoppelt die Anzahl der Diagrammreihen und Tabellenzeilen. Sie können bis zu fünf Segmente einbeziehen.
