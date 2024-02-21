@@ -3,20 +3,20 @@ description: Erfahren Sie mehr über Prognosen in Analysis Workspace.
 title: Prognosen - Übersicht
 feature: Visualizations
 role: User
-source-git-commit: 6ea1cf5c59dd527ba1bed966b994a3c966c899d4
+source-git-commit: 2f5bd8bec1580077675d249fa0431d84ee2269fa
 workflow-type: tm+mt
-source-wordcount: '164'
+source-wordcount: '163'
 ht-degree: 0%
 
 ---
 
 # Prognosen - Übersicht
 
-{{release-limited-testing}}
+
 
 {{select-package}}
 
-Prognosen sind eine neue Analysis Workspace-Funktion, mit der eine standardmäßige oder berechnete Metrik mit beliebiger unterstützter Zeitgranularität (stündlich, täglich, wöchentlich, monatlich und jährlich) prognostiziert werden kann. Prognosen sind nur für zeitreihenbezogene Daten verfügbar.
+Prognosen sind eine Analysis Workspace-Funktion, mit der eine standardmäßige oder berechnete Metrik mit beliebiger unterstützter Zeitgranularität (stündlich, täglich, wöchentlich, monatlich und jährlich) prognostiziert werden kann. Prognosen sind nur für zeitreihenbezogene Daten verfügbar.
 
 Sie können die Prognose für Folgendes nutzen:
 
