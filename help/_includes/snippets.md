@@ -1,8 +1,8 @@
 ---
-source-git-commit: 486cd26bfacbae0072e14ec078ceca66909ac0ec
+source-git-commit: 2f7e11106334560d3c4b54e6c5eaf84d5e1d4fb6
 workflow-type: tm+mt
-source-wordcount: '1092'
-ht-degree: 63%
+source-wordcount: '1158'
+ht-degree: 59%
 
 ---
 # Snippets
@@ -23,7 +23,19 @@ ht-degree: 63%
 
 >[!NOTE]
 >
->Sie müssen über die **Auswählen** -Paket, um die in diesem Abschnitt beschriebene Funktion zu verwenden. Wenden Sie sich an Ihren Administrator, wenn Sie sich nicht sicher sind, welches Customer Journey Analytics-Paket Sie haben.
+>Sie müssen über die **Auswählen** -Paket oder höher verwenden, um die in diesem Abschnitt beschriebene Funktion zu verwenden. Wenden Sie sich an Ihren Administrator, wenn Sie sich nicht sicher sind, welches Customer Journey Analytics-Paket Sie haben.
+
+## Prime-Paket {#prime-package}
+
+>[!NOTE]
+>
+>Sie müssen über die **Prime** -Paket oder höher verwenden, um die in diesem Abschnitt beschriebene Funktion zu verwenden. Wenden Sie sich an Ihren Administrator, wenn Sie sich nicht sicher sind, welches Customer Journey Analytics-Paket Sie haben.
+
+## Ultimate Package {#ultimate-package}
+
+>[!NOTE]
+>
+>Sie müssen über die **Ultimate** -Paket, um die in diesem Abschnitt beschriebene Funktion zu verwenden. Wenden Sie sich an Ihren Administrator, wenn Sie sich nicht sicher sind, welches Customer Journey Analytics-Paket Sie haben.
 
 
 ## Filterkriterien für Datenwörterbuch {#dd-filter-criteria}
