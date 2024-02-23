@@ -4,10 +4,10 @@ description: Listet Inhaltsaktualisierungen für Dokumentation zu Customer Journ
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: d9a54eca27b41a7d52e61a75e18850608fc97e5e
+source-git-commit: 534f163230ea7cafc97948fe0e8196d1dea47fa8
 workflow-type: tm+mt
-source-wordcount: '3188'
-ht-degree: 80%
+source-wordcount: '3214'
+ht-degree: 79%
 
 ---
 
@@ -20,6 +20,7 @@ Die folgenden Aktualisierungen wurden seit der ersten Erstellung der Customer Jo
 | Funktion | Beschreibung |
 | --- | --- |
 | **Februar 2024** | |
+| Aktualisierungen der Dokumentation zur Projektfreigabe | Es wurden Informationen zum [Anzeigen von Projekten, die für Sie freigegeben wurden](/help/analysis-workspace/curate-share/share-projects.md#view-projects-shared-with-you).<p>Auch optimierte Informationen zu [Freigeben einzelner oder mehrerer Projekte](/help/analysis-workspace/curate-share/share-projects.md#share-a-specific-project-role).</p> |
 | Es wurden Zugriffsberechtigungen für das Hochladen von Dateien auf Azure SAS und Azure RBAC bei der Konfiguration von Cloud-Exportspeicherorten hinzugefügt. | Es wurden genaue Berechtigungsanforderungen für das Hochladen von Dateien auf Azure SAS und Azure RBAC hinzugefügt, wenn [Konfigurieren von Cloud-Exportkonten](/help/components/exports/cloud-export-accounts.md) und [Konfigurieren von Cloud-Exportstandorten](/help/components/exports/cloud-export-locations.md). |
 | Es wurden Zugriffsberechtigungen für das Hochladen von Dateien in Amazon S3 Role ARN- und GCP-Buckets bei der Konfiguration von Cloud-Exportspeicherorten hinzugefügt. | Es wurden genaue Berechtigungsanforderungen zum Hochladen von Dateien in Amazon S3 Role ARN- und Google Cloud Platform-Buckets hinzugefügt, wenn [Konfigurieren von Cloud-Exportstandorten](/help/components/exports/cloud-export-locations.md). |
 | Es wurde klargestellt, dass Produktadministratoren immer Zugriff auf den Export vollständiger Tabellen haben | Es wurden folgende Änderungen vorgenommen, um klarzustellen, dass Benutzer, denen die Produktadministratorrolle zugewiesen wurde, standardmäßig Zugriff auf vollständige Tabellen aus Analysis Workspace haben: <ul><li>Eine neue Aufzählung wurde hinzugefügt zu [Produktadministratorstandardberechtigungen](/help/admin/cja-access-control.md#product-admin-default-permissions).</li><li>Es wurde ein Hinweis unter dem [Mindestanforderungen für den Export vollständiger Tabellen in die Cloud](/help/analysis-workspace/export/export-cloud.md#minimum-requirements).</li></ul> |
