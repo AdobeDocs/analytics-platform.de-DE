@@ -4,10 +4,10 @@ description: Listet Inhaltsaktualisierungen für Dokumentation zu Customer Journ
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 5f96aa52562c2281e4a0c8fa97fb8b4dff04042e
+source-git-commit: d9a54eca27b41a7d52e61a75e18850608fc97e5e
 workflow-type: tm+mt
-source-wordcount: '3106'
-ht-degree: 82%
+source-wordcount: '3188'
+ht-degree: 80%
 
 ---
 
@@ -19,9 +19,11 @@ Die folgenden Aktualisierungen wurden seit der ersten Erstellung der Customer Jo
 
 | Funktion | Beschreibung |
 | --- | --- |
-| **Februar 2024** | |
+| **Februar 2024** | |
+| Es wurden Zugriffsberechtigungen für das Hochladen von Dateien auf Azure SAS und Azure RBAC bei der Konfiguration von Cloud-Exportspeicherorten hinzugefügt. | Es wurden genaue Berechtigungsanforderungen für das Hochladen von Dateien auf Azure SAS und Azure RBAC hinzugefügt, wenn [Konfigurieren von Cloud-Exportkonten](/help/components/exports/cloud-export-accounts.md) und [Konfigurieren von Cloud-Exportstandorten](/help/components/exports/cloud-export-locations.md). |
 | Es wurden Zugriffsberechtigungen für das Hochladen von Dateien in Amazon S3 Role ARN- und GCP-Buckets bei der Konfiguration von Cloud-Exportspeicherorten hinzugefügt. | Es wurden genaue Berechtigungsanforderungen zum Hochladen von Dateien in Amazon S3 Role ARN- und Google Cloud Platform-Buckets hinzugefügt, wenn [Konfigurieren von Cloud-Exportstandorten](/help/components/exports/cloud-export-locations.md). |
 | Es wurde klargestellt, dass Produktadministratoren immer Zugriff auf den Export vollständiger Tabellen haben | Es wurden folgende Änderungen vorgenommen, um klarzustellen, dass Benutzer, denen die Produktadministratorrolle zugewiesen wurde, standardmäßig Zugriff auf vollständige Tabellen aus Analysis Workspace haben: <ul><li>Eine neue Aufzählung wurde hinzugefügt zu [Produktadministratorstandardberechtigungen](/help/admin/cja-access-control.md#product-admin-default-permissions).</li><li>Es wurde ein Hinweis unter dem [Mindestanforderungen für den Export vollständiger Tabellen in die Cloud](/help/analysis-workspace/export/export-cloud.md#minimum-requirements).</li></ul> |
+| Es wurde klargestellt, dass Segmente während der Komponentenmigration aus Adobe Analytics neu erstellt werden | Im [Benutzerhandbuch für Adobe Analytics-Benutzer](/help/getting-started/aa-to-cja-user.md), wurde klargestellt, dass Segmente im Rahmen des Komponentenmigrationsprozesses automatisch neu erstellt werden und nicht manuell neu erstellt werden müssen. |
 | Ignorierte Datensatzdetails | Es wurde eine Dokumentation zur Funktionalität der übersprungenen Datensatzdetails unter Verbindungen hinzugefügt. Weitere Informationen finden Sie im Abschnitt [Verbindungsdetails](../connections/manage-connections.md#connection-details). |
 | **Januar 2024** | |
 | Prognose | Die Dokumentation wurde hinzugefügt zu [forecasting](../analysis-workspace/c-forecast/forecasting.md), die neue Analysis Workspace-Funktion, um eine standardmäßige oder berechnete Metrik mit einer unterstützten Zeitgranularität (stündlich, täglich, wöchentlich, monatlich und jährlich) für Freiformtabellen und Liniendiagramme zu prognostizieren. |
