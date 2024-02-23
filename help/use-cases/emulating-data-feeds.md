@@ -6,7 +6,8 @@ feature: Use Cases
 hide: true
 hidefromtoc: true
 role: Admin
-source-git-commit: f062f8599dcc22b792369c310ceebcb283447d76
+exl-id: 71dd9e4e-1d71-424b-b984-492a3e39af5f
+source-git-commit: 744c8cfc903ed841dd39b29fd3fef68ef2e7b7cb
 workflow-type: tm+mt
 source-wordcount: '2402'
 ht-degree: 10%
@@ -128,7 +129,7 @@ Zum Nachschlagen von Daten aus anderen Datensätzen verwenden Sie die SQL-Standa
 
 #### Berechnungen
 
-Verwenden Sie die SQL-Standardfunktionen (z. B. `COUNT(*)` oder [mathematische und statistische Operatoren und Funktionen](https://experienceleague.adobe.com/docs/experience-platform/query/sql/spark-sql-functions.html?lang=en#math) Teil von Spark SQL. Außerdem [Fensterfunktionen](https://experienceleague.adobe.com/docs/experience-platform/query/sql/adobe-defined-functions.html?lang=en#window-functions) unterstützen die Aktualisierung von Aggregationen und die Rückgabe einzelner Elemente für jede Zeile in einer sortierten Teilmenge. Siehe [Beispiele](#examples) zur Verwendung dieser Funktionen.
+Verwenden Sie die SQL-Standardfunktionen (z. B. `COUNT(*)`) oder der [mathematische und statistische Operatoren und Funktionen](https://experienceleague.adobe.com/docs/experience-platform/query/sql/spark-sql-functions.html?lang=en#math) Teil von Spark SQL. Außerdem [Fensterfunktionen](https://experienceleague.adobe.com/docs/experience-platform/query/sql/adobe-defined-functions.html?lang=en#window-functions) unterstützen die Aktualisierung von Aggregationen und die Rückgabe einzelner Elemente für jede Zeile in einer sortierten Teilmenge. Siehe [Beispiele](#examples) zur Verwendung dieser Funktionen.
 
 #### Verschachtelte Datenstruktur
 
@@ -277,4 +278,3 @@ Kurz gesagt, das Emulieren der Adobe Analytics-Daten-Feed-Funktion erfordert die
 >[!IMPORTANT]
 >
 >An diesem Anwendungsfall sind zwei Planer beteiligt. Um eine ordnungsgemäße Funktionsweise der emulierten Daten-Feed-Funktion zu gewährleisten, stellen Sie sicher, dass die in Query Service konfigurierten Zeitpläne und Datenexporte nicht stören.
-
