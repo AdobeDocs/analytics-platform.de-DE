@@ -5,10 +5,10 @@ exl-id: f69e6e38-ac98-49a6-b0ce-f642af2932ae
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
-workflow-type: ht
-source-wordcount: '1060'
-ht-degree: 100%
+source-git-commit: c1e6279d8e2f0b31a82c2588fce8b3c2e614e440
+workflow-type: tm+mt
+source-wordcount: '1106'
+ht-degree: 95%
 
 ---
 
@@ -61,6 +61,7 @@ Mit Datenansichten können Sie die Schemaelement-Einstellungen spontan ändern, 
 
 * Bevor Sie Datenansichten erstellen können, müssen Sie [eine oder mehrere Verbindungen zu Experience Platform-Datensätzen einrichten](/help/connections/create-connection.md).
 * Zum Erstellen oder Verwalten einer Datenansicht benötigen Sie einen [Berechtigungssatz in Adobe Admin Console](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html?lang=de#admin-access-permissions).
+* Wenn Sie die [Adobe Analytics-Quell-Connector](/help/data-ingestion/analytics.md) oder über Kenntnisse im Adobe Analytics-Hintergrund verfügen, möchten Sie möglicherweise verstehen, wie sich Felder in Ihren Schemas und Datensätzen, die Teil der Verbindung sind, mit ihren Adobe Analytics-Gegenstücken beziehen. Siehe [Analytics-Feldzuordnungen](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/mapping/analytics.html?lang=de) für weitere Informationen.
 
 ## Einstellungen für die Datenansicht, die Sie in Arbeitsbereich überschreiben können {#settings-override}
 
