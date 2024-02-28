@@ -9,9 +9,9 @@ index: true
 user-guide-title: Handbuch für Customer Journey Analytics
 user-guide-description: Hier erhalten Sie Informationen zu Adobe Customer Journey Analytics und Erläuterungen zur Nutzung von Analysis Workspace mit Daten aus Experience Platform.
 breadcrumb-title: Handbuch für Customer Journey Analytics
-source-git-commit: aa0a6715c216730e0768cfa870ea75f315455101
+source-git-commit: 53ce86d0009f2f5d7602ce55b938006c2600d2ca
 workflow-type: tm+mt
-source-wordcount: '1056'
+source-wordcount: '1058'
 ht-degree: 79%
 
 ---
@@ -23,6 +23,7 @@ ht-degree: 79%
 
 + Versionshinweise {#releases}
    + [Neueste Version](../release-notes/latest.md)
+   + [Versionen 2024](../release-notes/2024.md)
    + [Versionen 2023](../release-notes/2023.md)
    + [Versionen 2022](../release-notes/2022.md)
    + [Versionen von 2021](../release-notes/2021.md)
@@ -298,9 +299,9 @@ ht-degree: 79%
    + [Eingeschränkte Beschriftungen](../report-builder/restricted-labels.md)
    + [Report Builder-Einstellungen](../report-builder/report-builder-settings.md)
 
-+ Reporting Activity Manager {#reporting-activity-manager}
++ Berichterstellung für Activity Manager {#reporting-activity-manager}
    + [Überblick](../reporting-activity-manager/reporting-activity-overview.md)
-   + [Berichtsaktivität anzeigen](../reporting-activity-manager/reporting-activity.md)
+   + [Anzeigen von Berichtsaktivität](../reporting-activity-manager/reporting-activity.md)
    + [Abbrechen von Berichtsanfragen](../reporting-activity-manager/reporting-activity-cancel-requests.md)
 
 + Stitching {#stitching}
