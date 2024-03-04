@@ -5,9 +5,9 @@ exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: 2be283e0abd32229be1921b106d166f47fb410a8
+source-git-commit: 8303043d46365195d9ffde6eaa06f49c9d22101d
 workflow-type: tm+mt
-source-wordcount: '2763'
+source-wordcount: '2749'
 ht-degree: 98%
 
 ---
@@ -52,7 +52,7 @@ Sie müssen über die **Auswählen** -Paket, um einer Verbindung eine unbegrenzt
    | **[!UICONTROL Schlüssel]** | Nur für Lookup-Datensätze (z. B. _id). |
    | **[!UICONTROL Übereinstimmender Schlüssel]** | Nur für Lookup-Datensätze (z. B. _id). |
    | **[!UICONTROL Neue Daten importieren]** | Auf „Ein“ oder „Aus“ einstellen. |
-   | **[!UICONTROL Aufstockungsdaten]** | Sie können die Aufstockung der Daten in einem Datensatz basierend auf Ereignis-Zeitstempeln anfordern. So können Sie beispielsweise eine Aufstockung der Daten der letzten sieben Tage anfordern, die richtige Personen-ID konfigurieren und Ihre Verbindung auf die korrekte Konfiguration testen. Wenn alle Einstellungen korrekt sind, können Sie alle verbleibenden Daten mühelos aufstocken.<p>Darüber hinaus können Sie den Import neuer Daten nach Datensatz aktivieren. Beispielsweise können Sie den Import neuer Daten ausschließlich für die Suche aktivieren. |
+   | **[!UICONTROL Aufstockungsdaten]** | Sie können die Aufstockung der Daten in einem Datensatz basierend auf Ereignis-Zeitstempeln anfordern. So können Sie beispielsweise eine Aufstockung der Daten der letzten sieben Tage anfordern, die richtige Personen-ID konfigurieren und Ihre Verbindung auf die korrekte Konfiguration testen. Wenn alle Einstellungen korrekt sind, können Sie alle verbleibenden Daten mühelos aufstocken.<p>Darüber hinaus können Sie den Import neuer Daten nach Datensatz aktivieren. |
    | **[!UICONTROL Aufstockungsstatus]** | Gibt an, ob Aufstockungsdaten verarbeitet werden. |
 
    {style="table-layout:auto"}
