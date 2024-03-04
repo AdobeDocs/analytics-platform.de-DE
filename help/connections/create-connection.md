@@ -5,10 +5,10 @@ exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: bfaf76fa5f225e9aa3153fc4ee10c5be8f3164e7
-workflow-type: ht
-source-wordcount: '2748'
-ht-degree: 100%
+source-git-commit: 2be283e0abd32229be1921b106d166f47fb410a8
+workflow-type: tm+mt
+source-wordcount: '2763'
+ht-degree: 98%
 
 ---
 
@@ -26,7 +26,7 @@ Beim Workflow für die Erstellung und Bearbeitung von Verbindungen können alle 
 
 ## Voraussetzungen
 
-Sie müssen über das **Select**-Paket verfügen, um einer Verbindung eine unbegrenzte Anzahl von Datensätzen hinzuzufügen. Das **Foundation**-Paket ist auf einen Datensatz beschränkt. Wenden Sie sich an Ihr Admin-Team, wenn Sie sich nicht sicher sind, welches Customer Journey Analytics-Paket Sie besitzen.
+Sie müssen über die **Auswählen** -Paket, um einer Verbindung eine unbegrenzte Anzahl von Ereignis-Datensätzen hinzuzufügen. Die **Stiftung** -Paket ist auf einen Ereignis-Datensatz beschränkt. Sie können einer Verbindung eine unbegrenzte Anzahl von Profil- oder Lookup-Datensätzen hinzufügen. Wenden Sie sich an Ihr Admin-Team, wenn Sie sich nicht sicher sind, welches Customer Journey Analytics-Paket Sie besitzen.
 
 ## Erstellen und Konfigurieren der Verbindung {#create-connection}
 
