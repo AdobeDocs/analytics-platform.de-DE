@@ -6,9 +6,9 @@ feature: Workspace Basics
 exl-id: 9c3523b1-afa2-4a68-a432-972032680fc7
 role: User
 source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '193'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -24,21 +24,21 @@ Um ein Projekt aus einem Ordner zu entfernen, können Sie das Projekt an einen a
 
 Sie können Projekte von einem Ordner in einen anderen, von Ihnen erstellen Ordner verschieben.
 
-1. Klicken Sie in einem Projektordner auf die Auslassungspunkte **...** neben dem Projektnamen.
+1. Klicken Sie in einem Projektordner auf die Auslassungspunkte **…** neben dem Projektnamen.
 
-   ![Die Suchoptionen.](/help/analysis-workspace/build-workspace-project/assets/move1.png)
+   ![Die Optionen der Auslassungspunkte.](/help/analysis-workspace/build-workspace-project/assets/move1.png)
 
 1. Wählen Sie **Verschieben nach** und wählen Sie dann einen Ordner aus, in den das Projekt verschoben werden soll.
 
-   ![Das Fenster Standort auswählen .](/help/analysis-workspace/build-workspace-project/assets/move-select-location.png)
+   ![Das Fenster „Standort auswählen“.](/help/analysis-workspace/build-workspace-project/assets/move-select-location.png)
 
 1. Klicken Sie auf **Verschieben**.
 
-   ![Klicken Sie auf Verschieben.](/help/analysis-workspace/build-workspace-project/assets/move-click-move.png)
+   ![Klicken auf „Verschieben“.](/help/analysis-workspace/build-workspace-project/assets/move-click-move.png)
 
-   Ein Popup-Fenster bestätigt, dass das Projekt verschoben wurde.
+   Eine Meldung bestätigt, dass das Projekt verschoben wurde.
 
-   ![Der Verschiebebestätigungstoast. ](/help/analysis-workspace/build-workspace-project/assets/move-project-moved.png)
+   ![Die Bestätigungsmeldung zum Verschieben. ](/help/analysis-workspace/build-workspace-project/assets/move-project-moved.png)
 
 ## Löschen eines Projekts aus einem Projektordner {#delete-project-in-folder}
 
@@ -46,7 +46,7 @@ Wenn Sie ein Projekt aus einem Ordner löschen, wird das Projekt vollständig ge
 
 1. Klicken Sie in einem Projektordner auf die Auslassungspunkte **...** neben dem Projektnamen.
 
-   ![Die Suchoptionen.](/help/analysis-workspace/build-workspace-project/assets/move1.png)
+   ![Die Optionen der Auslassungspunkte.](/help/analysis-workspace/build-workspace-project/assets/move1.png)
 
 1. Wählen Sie **Löschen** aus.
 

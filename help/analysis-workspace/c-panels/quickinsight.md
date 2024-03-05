@@ -5,9 +5,9 @@ feature: Panels
 exl-id: 09ebc3af-34ac-4f1f-8a5d-90da008f8697
 role: User
 source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1140'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ Wenn Sie [!UICONTROL Analysis Workspace] zum ersten Mal verwenden, fragen Sie si
 
 Um Ihnen dabei zu helfen, und basierend auf der Nutzung der Datenkomponenten in [!UICONTROL Analysis Workspace] durch Ihr Unternehmen, verwendet [!UICONTROL Quick Insights] einen Algorithmus, der Ihnen die beliebtesten Dimensionen, Metriken, Filter und Datumsbereiche präsentiert, die Ihr Unternehmen verwendet. In der Dropdown-Liste werden Dimensionen, Metriken und Filter angezeigt, die als [!UICONTROL Beliebt] gekennzeichnet sind, wie im Folgenden gezeigt:
 
-![Bereich &quot;Quick Insights&quot;.](assets/popular-tag.png)
+![Das Bedienfeld „Quick Insights“.](assets/popular-tag.png)
 
 [!UICONTROL Quick Insights] hilft Ihnen bei Folgendem:
 
@@ -46,9 +46,9 @@ Im Folgenden finden Sie einige grundlegende Begriffe, mit denen Sie vertraut sei
 1. Melden Sie sich mit den Ihnen zur Verfügung gestellten Zugangsdaten bei Customer Journey Analytics an.
 1. Wechseln Sie zu [!UICONTROL Workspace] und klicken Sie auf **[!UICONTROL Neues Projekt erstellen]** und dann auf **[!UICONTROL Quick Insights]**. (Sie können auf dieses Bedienfeld auch über das Menü **[!UICONTROL Bedienfeld]** in der linken Leiste zugreifen.)
 
-   ![In der Ansicht &quot;Alle Vorlagen&quot;wird die Option Quick Insights hervorgehoben.](assets/qibuilder.png)
+   ![In der Ansicht „Alle Vorlagen“ wird die Option „Quick Insights“ hervorgehoben.](assets/qibuilder.png)
 
-   ![In der Liste Bedienfelder wird die Option Quick Insights hervorgehoben.](assets/qi-panel.png)
+   ![In der Liste der Bedienfelder wird die Option „Quick Insights“ hervorgehoben.](assets/qi-panel.png)
 
 1. Lesen Sie zunächst das kurze Tutorial, um sich mit einigen der Grundlagen des [!UICONTROL Bedienfelds „Quick Insights“] vertraut zu machen. Sie können auch auf **[!UICONTROL Tutorial überspringen]** klicken.
 1. Wählen Sie die Bausteine (auch als Komponenten bezeichnet) aus: Dimensionen (orange), Metriken (grün), Filter (blau) oder Datumsbereiche (violett). Sie müssen mindestens eine Dimension und eine Metrik auswählen, damit eine Tabelle automatisch erstellt wird.
@@ -80,11 +80,11 @@ Weitere nützliche Hinweise werden im [!UICONTROL Quick Insights Builder] angeze
 
 * Schließen Sie zunächst das Tutorial **[!UICONTROL Weitere Tipps]** ab: Greifen Sie über das Hilfe- Symbol (?) neben dem Titel [!UICONTROL Quick Insights] darauf zu. Dieses Tutorial wird 24 Stunden nach dem Erstellen eines Projekts mit mindestens einer Dimension und einer Metrik angezeigt.
 
-  ![Die Benachrichtigung zum Bedienfeld &quot;Quick Insights&quot;wird angezeigt, nachdem Sie auf das Hilfesymbol geklickt haben.](assets/qibuilder4.png)
+  ![Die Benachrichtigung zum Bedienfeld „Quick Insights“ wird angezeigt, nachdem Sie auf das Hilfesymbol geklickt haben.](assets/qibuilder4.png)
 
 * **Aufschlüsselung nach**: Sie können bis zu drei Aufschlüsselungsebenen für Dimensionen verwenden, um einen Drilldown zu den Daten durchzuführen, die Sie benötigen.
 
-  ![Unterebenen von Aufschlüsselungen.](assets/qibuilder5.png)
+  ![Unterebenen der Aufschlüsselungen.](assets/qibuilder5.png)
 
 * **Weitere Metriken hinzufügen**: Mithilfe des AND-Operators können Sie bis zu 2 weitere Metriken hinzufügen.
 
@@ -92,16 +92,16 @@ Weitere nützliche Hinweise werden im [!UICONTROL Quick Insights Builder] angeze
 
 * **Weitere Filter hinzufügen**: Mithilfe des AND- oder OR-Operators können Sie bis zu zwei weitere Filter zur Tabelle hinzufügen. Sehen Sie sich an, was mit der Tabelle passiert, wenn Sie „Mobilbenutzer OR Treue Besucher“ hinzufügen. Sie finden sie nebeneinander über den Metriken. Wenn Sie „Mobilbenutzer UND Treue Besucher“ hinzufügen, werden die Ergebnisse beider Segmente zusammen angezeigt und in der Tabelle übereinandergestapelt.
 
-  ![Abbildung der hinzugefügten Mobilbenutzer und Treuebesucher.](assets/qibuilder7.png)
+  ![Abbildung der hinzugefügten Benutzenden mit Mobilgeräten und der treuen Besucherinnen bzw. Besucher.](assets/qibuilder7.png)
 
 ## Bekannte Einschränkungen
 
 Wenn Sie versuchen, die Datei direkt in der Tabelle zu bearbeiten, wird das Bedienfeld [!UICONTROL Quick Insights] nicht mehr synchronisiert. Sie können die vorherigen Einstellungen für [!UICONTROL Quick Insights] wiederherstellen, indem Sie oben rechts im Bedienfeld auf **[!UICONTROL Builder neu synchronisieren]** klicken.
 
-![Das Bedienfeld Quick Insights mit der Option Builder neu synchronisieren .](assets/qibuilder9.png)
+![Das Bedienfeld „Quick Insights“ mit der Option zum Neusynchronisieren des Builders.](assets/qibuilder9.png)
 
 Sie erhalten eine Warnung, bevor Sie etwas direkt zur Tabelle hinzufügen:
 
-![Die Warnung zur Option Builder neu synchronisieren .](assets/qibuilder8.png)
+![Die Warnung der Option zum Neusynchronisieren des Builders.](assets/qibuilder8.png)
 
-Andernfalls verhält sich die Tabelle beim direkten Erstellen jetzt wie eine herkömmliche Freiformtabelle, ohne die hilfreichen Funktionen für neue Benutzer.
+Abgesehen davon verhält sich die Tabelle beim direkten Erstellen jetzt wie eine herkömmliche Freiformtabelle, ohne die hilfreichen Funktionen für neue Benutzende.

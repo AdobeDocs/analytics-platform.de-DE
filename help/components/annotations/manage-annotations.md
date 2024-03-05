@@ -5,9 +5,9 @@ feature: Components
 exl-id: 12f2cc2f-477c-4f16-afdd-b0db84725b32
 role: User
 source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '692'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
@@ -23,12 +23,12 @@ Die [!UICONTROL Anmerkungsverwaltung] zeigt Ihnen alle Anmerkungen an, die Ihnen
 
 ## Benutzeroberfläche der Anmerkungsverwaltung
 
-![Anmerkungsoptionen wie das Freigeben, Taggen oder Kopieren, die im nächsten Abschnitt beschrieben werden.](assets/annotation-mgr.png)
+![Anmerkungsoptionen wie das Freigeben, Tagging oder Kopieren, die im nächsten Abschnitt beschrieben werden.](assets/annotation-mgr.png)
 
 | UI-Element | Beschreibung |
 | --- | --- | 
 | [!UICONTROL Titel und Beschreibung] | Werden durch den Anmerkungsgenerator bereitgestellt. Klicken Sie auf den Titel-Link, um den Titel und die Beschreibung zu bearbeiten. Dadurch gelangen Sie zurück zum Anmerkungsgenerator. |
-| [!UICONTROL Datenansicht] | Die Datenansichten, für die diese Anmerkung gilt. |
+| [!UICONTROL Datenansicht] | Die Datenansicht(en), für die diese Anmerkung gilt. |
 | [!UICONTROL Inhaber] | Zeigt an, wer Inhaber der Anmerkung ist. Wenn Sie kein Administrator sind, können Sie nur Anmerkungen sehen, deren Inhaber Sie sind, sowie Anmerkungen, die für Sie freigegeben wurden. |
 | [!UICONTROL Angewendeter Datumsbereich] | Das Datum oder der Datumsbereich, für das bzw. den diese Anmerkung gilt. |
 | [!UICONTROL Freigegeben für] | Listet auf, für wie viele Einzelpersonen oder Gruppen Sie die Anmerkung freigegeben haben. Klicken Sie hier, um weitere Details anzuzeigen. |
@@ -38,7 +38,7 @@ Die [!UICONTROL Anmerkungsverwaltung] zeigt Ihnen alle Anmerkungen an, die Ihnen
 
 ## Bearbeiten von Anmerkungen
 
-Das Bearbeiten einer Anmerkung bedeutet, dass Sie Datumsbereiche, Farben, Umfang oder nicht alle Datenansichten oder Projekte anpassen können. Anmerkungen können auf zwei Arten bearbeitet werden:
+Sie können eine Anmerkung bearbeiten, indem Sie Datumsbereiche, Farben oder den Umfang anpassen. Sie können ebenfalls festlegen, ob die Anmerkung für alle Datenansichten oder Projekte gilt oder nicht. Anmerkungen können auf zwei Arten bearbeitet werden:
 
 * Bewegen Sie in einem Liniendiagramm den Mauszeiger über die Anmerkung und klicken Sie im Popover auf das Stiftsymbol.
 
@@ -58,7 +58,7 @@ Beachten Sie Folgendes beim Freigeben von Anmerkungen oder Arbeiten mit Anmerkun
 
 ## Anmerkungen und Zeitzonen
 
-Alle Anmerkungen werden mit einem Zeitstempel erstellt, jedoch ohne Stunden- oder Zeitzoneninformationen. Zum Zeitpunkt des Berichts wird immer die Zeitzone der Datenansicht des Bedienfelds angewendet. Daher wird am 25. Dezember eine Anmerkung für Weihnachten erstellt - unabhängig davon, in welcher Zeitzone der Datenansicht Sie sich befinden.
+Alle Anmerkungen werden mit einem Zeitstempel erstellt, jedoch ohne Stunden- oder Zeitzoneninformationen. Zum Zeitpunkt der Berichterstellung wird immer die Zeitzone der Datenansicht des Bedienfelds angewendet. Daher wird eine für den 1. Weihnachtsfeiertag erstellte Anmerkung immer am 25. Dezember erstellt, unabhängig davon, in welcher Datenansichts-Zeitzone Sie sich befinden.
 
 Ein weiteres Beispiel ist der Neujahrstag. Zu Beginn des neuen Jahres werden jede Stunde von einer anderen Zeitzone Feuerwerke ausgelöst. Um 22:00 Uhr US Mountain Time werden an der US-Ostküste Feuerwerke ausgelöst, weil es dort bereits 24:00 Uhr Eastern Time ist.
 
@@ -71,11 +71,11 @@ Wählen Sie einfach eine oder mehrere der Anmerkungen aus, und die Task-Leiste w
 | Aufgabe | Beschreibung |
 | --- | --- |
 | Hinzufügen | Sie gelangen zum Anmerkungsgenerator, in dem Sie neue Anmerkungen erstellen können. |
-| Tag | Alle Benutzer können Tags für Anmerkungen erstellen und ein oder mehrere Tags auf eine Anmerkung anwenden. Sie können Tags jedoch nur für die Filter sehen, deren Inhaber Sie sind. Welche Arten von Tags sollten Sie erstellen? Hier finden Sie einige Vorschläge für nützliche Tags:<ul><li>Auf Teamnamen basierende Tags wie Social Marketing, Mobile Marketing</li><li>Projekt-Tags (Analyse-Tags) wie Entrypage-Analyse</li><li>Kategorie-Tags: Männer, Region</li><li>Workflow-Tags: Kuratiert für (einen bestimmten Geschäftsbereich), Genehmigt</li></ul> |
+| Tag | Alle Benutzer können Tags für Anmerkungen erstellen und ein oder mehrere Tags auf eine Anmerkung anwenden. Sie sehen Tags jedoch nur für die Filter, deren Inhaberin bzw. Inhaber Sie sind. Welche Arten von Tags sollten Sie erstellen? Hier finden Sie einige Vorschläge für nützliche Tags:<ul><li>Auf Teamnamen basierende Tags wie Social Marketing, Mobile Marketing</li><li>Projekt-Tags (Analyse-Tags) wie Entrypage-Analyse</li><li>Kategorie-Tags: Männer, Region</li><li>Workflow-Tags: Kuratiert für (einen bestimmten Geschäftsbereich), Genehmigt</li></ul> |
 | Löschen | Durch das Löschen einer Anmerkung wird sie aus jedem Projekt in Ihrer Organisation entfernt. |
 | Umbenennen | Beim Umbenennen einer Anmerkung wird sie in allen Projekten, auf die sie angewendet wurde, umbenannt. |
 | Kopieren | Erstellt eine eigenständige Kopie mit einer eigenen neuen Anmerkungs-ID, jedoch mit demselben Namen und derselben Definition. |
 | In CSV exportieren | Exportiert die Anmerkungsdefinition in eine CSV-Datei. |
-| Filter (linke Leiste) | Filtern Sie nach Tags, Datenansicht, Inhabern und anderen Filtern (Meine, Genehmigt, Favoriten, Für mich freigegeben und Alle anzeigen). |
+| Filter (linke Leiste) | Filtern Sie nach Tags, Datenansicht, Inhaberinnen bzw. Inhabern und anderen Filtern („Meine“, „Genehmigt“, „Favoriten“, „Für mich freigegeben“ und „Alle anzeigen“). |
 
 {style="table-layout:auto"}

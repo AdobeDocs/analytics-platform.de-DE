@@ -6,9 +6,9 @@ feature: Workspace Basics
 exl-id: c83c3526-a8d0-4094-b4c4-46cf70e1a365
 role: User
 source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '203'
-ht-degree: 71%
+ht-degree: 100%
 
 ---
 
@@ -30,11 +30,11 @@ So erstellen Sie einen neuen Ordner:
 
 1. Klicken Sie auf **Erstellen**.
 
-   ![Klicken Sie auf Erstellen.](/help/analysis-workspace/build-workspace-project/assets/create.png)
+   ![Klicken Sie auf „Erstellen“](/help/analysis-workspace/build-workspace-project/assets/create.png).
 
    Der neue Ordner wird zur Hauptliste der Projekte und Ordner hinzugefügt.
 
-   ![Auf der Landingpage Projekte wird die aktualisierte Liste mit Projekten und Ordnern angezeigt.](/help/analysis-workspace/build-workspace-project/assets/create-new-listed.png)
+   ![Auf der Landingpage der Projekte wird die aktualisierte Liste mit Projekten und Ordnern angezeigt.](/help/analysis-workspace/build-workspace-project/assets/create-new-listed.png)
 
 ## Erstellen eines Unterordners {#create-subfolder}
 
@@ -44,17 +44,17 @@ So erstellen Sie einen Unterordner, wenn ein vorhandener Ordner geöffnet ist:
 
 1. Klicken Sie auf **Neuen Ordner erstellen**.
 
-   ![Klicken Sie auf Neuen Ordner erstellen .](/help/analysis-workspace/build-workspace-project/assets/create-subfolder2.png)
+   ![Klicken Sie auf „Neuen Ordner erstellen“.](/help/analysis-workspace/build-workspace-project/assets/create-subfolder2.png)
 
-1. Geben Sie einen Namen für den Unterordner ein und fügen Sie alle erforderlichen Tags hinzu.
+1. Geben Sie einen Namen für den Unterordner ein und fügen Sie ggf. erforderliche Tags hinzu.
 
-   ![Das Fenster Neuen Ordner erstellen mit neuem Namen und Tags wird angezeigt.](/help/analysis-workspace/build-workspace-project/assets/create-subfolder-name.png)
+   ![Das Fenster zum Erstellen eines neuen Ordners mit neuem Namen und Tags-Feld wird angezeigt.](/help/analysis-workspace/build-workspace-project/assets/create-subfolder-name.png)
 
 1. Klicken Sie auf **Erstellen**.
 
    Der neue Unterordner wird zur Liste der Projekte und Unterordner hinzugefügt.
 
-   ![Klicken Sie auf Erstellen.](/help/analysis-workspace/build-workspace-project/assets/create-subfolder-added.png)
+   ![Klicken Sie auf „Erstellen“.](/help/analysis-workspace/build-workspace-project/assets/create-subfolder-added.png)
 
    >[!NOTE]
    >

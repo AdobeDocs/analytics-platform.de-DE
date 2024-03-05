@@ -1,14 +1,14 @@
 ---
-description: Erfahren Sie mehr über Tastaturinteraktionen, Tastaturbefehle und Point-and-Click-Verhaltensweisen, die in Analysis Workspace verfügbar sind.
+description: Erfahren Sie mehr über Tastaturinteraktionen, Tastaturbefehle und Zeigen-und-Klicken-Verhaltensweisen, die in Analysis Workspace verfügbar sind.
 keywords: Analysis Workspace
 feature: Workspace Basics
-title: Verwenden von Workspace-Hotkeys
+title: Wie Workspace-Tastaturbefehle verwendet werden
 exl-id: de99a92b-701c-4cdc-a0c2-a70972a19499
 role: User
 source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '299'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -44,7 +44,7 @@ Hinweis: `CTRL` = Windows und `command` = Mac
 | Alle löschen | Alt + W |
 | Kopieren | STRG (oder Befehl) + C |
 | Wiederherstellen | STRG (oder Befehl) + UMSCHALT + Z |
-| Rückgängig | STRG (oder Befehl) + Z |
+| Rückgängig machen | STRG (oder Befehl) + Z |
 | Komponenten aktualisieren | Alt + Umsch + R |
 | Projekt aktualisieren | Alt + R |
 | Als Landingpage festlegen | STRG (oder Befehl) + UMSCHALT + L |

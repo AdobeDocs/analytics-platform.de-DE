@@ -6,9 +6,9 @@ feature: Components
 exl-id: c0f276b4-3514-4f93-8b6c-6896eb4da6e4
 role: User
 source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '402'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
@@ -33,13 +33,13 @@ Informationen zum Erstellen von Anmerkungen finden Sie unter [Erstellen von Anme
 
 1. Um sicherzustellen, dass die Option „Anmerkungen anzeigen“ ausgewählt ist, gehen Sie zu **[!UICONTROL Projekt]** > **[!UICONTROL Projektinformationen und Einstellungen]**.
 
-   ![Optionen für mobile Anmerkungen für Projektinformationen und Einstellungen, die die Option Anmerkungen anzeigen markieren.](assets/project-info-settings.png)
+   ![Optionen für mobile Anmerkungen für Projektinformationen und Einstellungen, wobei die Option „Anmerkungen anzeigen“ hervorgehoben ist.](assets/project-info-settings.png)
 
 ## Anzeigen von Anmerkungen in mobilen Scorecards
 
 Wenn Anmerkungen aktiviert sind, werden in Scorecard Builder Anmerkungssymbole angezeigt. Anmerkungen werden nur in Diagrammen und Tabellen in der Detailansicht angezeigt. in der Ansicht der Hauptkachel der Scorecard sind Anmerkungen nicht sichtbar.
 
-![Scorecard Builder, der die Anmerkungssymbole hervorhebt.](assets/view-annotations.png)
+![Scorecard Builder, wobei die Anmerkungssymbole hervorgehoben sind.](assets/view-annotations.png)
 
 Wenn Anmerkungssymbole sichtbar sind, können Sie Anmerkungen auf der Arbeitsfläche des Builders nicht vollständig anzeigen oder damit interagieren. Verwenden Sie den Vorschaumodus, um Anmerkungen so anzuzeigen und zu bearbeiten, wie sie in der App angezeigt werden. ![Vorschausymbol](assets/preview-icon.png)
 

@@ -7,9 +7,9 @@ type: Documentation
 exl-id: 56bf524d-101d-4745-b2ef-9770c50f6774
 solution: Customer Journey Analytics
 source-git-commit: 48f5e9d6c5d3a33a5bae45e841eb8364b7172876
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '335'
-ht-degree: 60%
+ht-degree: 100%
 
 ---
 
@@ -35,13 +35,13 @@ Report Builder für Customer Journey Analytics ist für Excel auf den folgenden 
 
 - **Benutzerdefinierte Berichterstellung**: Sie können benutzerdefinierte Berichte in Excel entsprechend Ihren spezifischen Berichtsanforderungen entwerfen und formatieren. Dies ist besonders nützlich, um Berichte an verschiedene Stakeholder anzupassen.
 
-- **Ad-hoc-Analysen**: Benutzer können schnell Ad-hoc-Berichte erstellen, um bestimmte Fragen zu beantworten oder Datentrends zu untersuchen, ohne einen langwierigen Prozess der Berichtserstellung durchlaufen zu müssen.
+- **Ad-Hoc-Analysen**: Benutzende können schnell Ad-Hoc-Berichte erstellen, um bestimmte Fragen zu beantworten oder Daten-Trends zu untersuchen, ohne einen langwierigen Prozess der Berichterstellung durchlaufen zu müssen.
 
-- **Dashboard**: Aus CJA extrahierte Daten können zur Erstellung von Excel-basierten Dashboards und Visualisierungen verwendet werden, um einen allgemeinen Überblick über die wichtigsten Leistungsindikatoren (KPIs) zu erhalten.
+- **Dashboarding**: Aus CJA extrahierte Daten können zur Erstellung von Excel-basierten Dashboards und Visualisierungen verwendet werden, um einen allgemeinen Überblick über die wichtigsten Leistungsindikatoren (KPIs) zu erhalten.
 
-- **Freigeben von Insights**: Sie können Excel-Berichte und -Einblicke für Team-Mitglieder oder Stakeholder freigeben, die möglicherweise keinen direkten Zugriff auf CJA haben.
+- **Freigeben von Erkenntnissen**: Sie können Excel-Berichte und -Erkenntnisse für Team-Mitglieder oder Stakeholder freigeben, die möglicherweise keinen direkten Zugriff auf CJA haben.
 
-## Überblickvideo
+## Übersichtsvideo
 
 >[!VIDEO](https://video.tv.adobe.com/v/337569/?quality=12&learn=on)
 

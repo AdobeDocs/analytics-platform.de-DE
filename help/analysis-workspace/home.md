@@ -7,9 +7,9 @@ exl-id: 9075518e-54fe-49a6-9601-aa9468187b8f
 solution: Customer Journey Analytics
 role: User
 source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '717'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -25,14 +25,14 @@ Das folgende Video bietet einen kurzen Überblick mit Beispielen, was alles mög
 
 Das folgende Bild und die zugehörige Tabelle erläutern einige der Hauptbereiche in Analysis Workspace:
 
-![Analysis Workspace-Fenster, das die linke und linke Leiste, die Arbeitsfläche und das Dropdown-Menü für die Datenansicht hervorhebt.](assets/analysis-workspace-overvew.png)
+![Fenster von Analysis Workspace mit Hervorhebung der ganz linken und linken Leiste, der Arbeitsfläche und des Dropdown-Menüs der Datenansicht.](assets/analysis-workspace-overvew.png)
 
 | Position im Bild | Name und Funktion |
 |---------|----------|
 | A  | **Ganz linke Leiste:** Enthält Registerkarten zum Hinzufügen von Bedienfeldern, Visualisierungen und Komponenten zu Analysis Workspace. Enthält außerdem das Datenwörterbuchsymbol, mit dem das Datenwörterbuch geöffnet wird. |
 | B | **Linke Leiste:** Je nachdem, welche Registerkarte in der linken Leiste ausgewählt ist, enthält dieser Bereich einzelne Bedienfelder, Visualisierungen oder Komponenten. |
 | C  | **Arbeitsfläche:** Dies ist der Hauptbereich, in den Sie Inhalte aus den linken Leisten ziehen, um Ihr Projekt zu erstellen. Das Projekt wird dynamisch aktualisiert, wenn Sie Bereiche, Visualisierungen und Komponenten zur Arbeitsfläche hinzufügen. |
-| D | **Dropdown-Menü &quot;Datenansicht&quot;:** Für jedes Bedienfeld in Analysis Workspace können Sie über das Dropdown-Menü &quot;Datenansicht&quot;die Datenansicht auswählen, die Sie als Datenquelle verwenden möchten. |
+| D | **Dropdown-Menü „Datenansicht“:** Für jedes Bedienfeld in Analysis Workspace können Sie im Dropdown-Menü „Datenansicht“ die Datenansicht auswählen, die Sie als Datenquelle verwenden möchten. |
 
 ## Funktionen in Analysis Workspace {#analysis}
 

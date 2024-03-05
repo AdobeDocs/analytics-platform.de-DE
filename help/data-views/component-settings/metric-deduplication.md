@@ -6,7 +6,7 @@ solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
 source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '281'
 ht-degree: 100%
 
@@ -16,7 +16,7 @@ ht-degree: 100%
 
 Mit der Metrik-Deduplizierung können Sie eine Metrik so konfigurieren, dass Werte nicht wiederholt gezählt werden.
 
-![Deduplizierung der Metrik](../assets/metric-deduplication.png)
+![Deduplizierung einer Metrik](../assets/metric-deduplication.png)
 
 | Einstellung | Beschreibung |
 | --- | --- |

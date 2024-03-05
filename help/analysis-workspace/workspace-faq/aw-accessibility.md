@@ -5,9 +5,9 @@ feature: FAQ
 exl-id: 1616c625-8914-4ede-815d-e8d62e796ea5
 role: User
 source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '605'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ Barrierefreiheit bezieht sich darauf, Produkte für Menschen mit visuellen, akus
 
 Die Navigation in [!UICONTROL Analysis Workspace] funktioniert von oben nach unten und von links nach rechts. Die folgenden Navigationselemente erleichtern die Zugänglichkeit:
 
-* Die `Tab` -Taste ermöglicht richtungsweisende Verknüpfungen, die zwischen größeren Abschnitten in Workspace wechseln. In der linken Leiste können Sie mit `Tab` auch von einer ziehbaren Option zur nächsten wechseln.
+* Die Taste `Tab` ermöglicht Markierungskurzbefehle, mit denen Sie zwischen größeren Abschnitten in Workspace wechseln können. In der linken Leiste können Sie mit `Tab` auch von einer ziehbaren Option zur nächsten wechseln.
 * Mit den `left/right arrows` können Sie zwischen einzelnen Elementen wechseln, nachdem Sie sie mit `Tab` markiert haben.
 * Mit `F6` navigieren Sie zum ersten Bedienfeld im Projekt und können zwischen den Visualisierungen in diesem Bedienfeld wechseln. Anschließend wird zum nächsten Bedienfeld im Projekt gewechselt und es wird wiederholt.
 * Wir wenden Fokusindikatoren an, sodass sehende Tastaturbenutzer einen klaren Hinweis darauf haben, welches Element der Benutzeroberfläche derzeit im Fokus ist. Der Indikator ist ein blauer Rand um das ausgewählte Element herum.
@@ -69,7 +69,7 @@ Die Navigation in [!UICONTROL Analysis Workspace] funktioniert von oben nach unt
 | `[Ctrl + Shift + C]` | Neue berechnete Metrik |
 | `[Ctrl + Shift + D]` | Neuer Datumsbereich |
 | `[Ctrl + Shift + E]` | Neuer Filter |
-| `[Ctrl + Z]` | Rückgängig |
+| `[Ctrl + Z]` | Rückgängig machen |
 | `[Component drag + Shift]` | Einen Dropdown-Filter erstellen |
 
 #### Demokratisierung
@@ -99,7 +99,7 @@ Beim Erstellen einer Komponente werden die erforderlichen Felder beim Speichern 
 
 Sobald eine Komponente vollständig validiert ist, wird der Builder durch Klicken auf `Save` geschlossen.
 
-![Segmentaufbau und Indikator zur Fehlervalidierung.](assets/error-validation.png)
+![Segment Builder und Indikator zur Fehlervalidierung.](assets/error-validation.png)
 
 ## Unterstützung für Barrierefreiheitsfunktionen des Betriebssystems
 

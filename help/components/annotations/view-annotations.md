@@ -5,9 +5,9 @@ role: User
 feature: Components
 exl-id: c0e4fb37-b20c-463c-b29a-310ca3adb2c7
 source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '283'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -19,9 +19,9 @@ Anmerkungen werden je nachdem, ob sie sich über einen einzelnen Tag oder einen 
 
 | Datum | Erscheinungsbild |
 | --- | --- |
-| **Einzeltag** | ![Liniendiagrammvisualisierung mit hervorgehobener Anmerkung](assets/single-day.png)<p>Wenn Sie den Mauszeiger über die Anmerkung bewegen, können Sie deren Details anzeigen, sie durch Auswahl des Stiftsymbols bearbeiten oder löschen:<p> ![Anmerkungsdetails mit der Option zum Bearbeiten oder Löschen der Anmerkung.](assets/hover.png) |
+| **Einzeltag** | ![Liniendiagramm-Visualisierung mit hervorgehobener Anmerkung](assets/single-day.png)<p>Wenn Sie den Mauszeiger über die Anmerkung bewegen, können Sie deren Details anzeigen und sie durch Auswahl des Stiftsymbols bearbeiten oder löschen:<p> ![Anmerkungsdetails mit der Option zum Bearbeiten oder Löschen der Anmerkung.](assets/hover.png) |
 | **Datumsbereich** | Das Symbol ändert sich, und wenn Sie den Mauszeiger darüber bewegen, wird der Datumsbereich angezeigt.<p>![Symbol für Datumsbereich-Anmerkungen](assets/multi-day.png)<p>Wenn Sie die Anmerkung im Liniendiagramm auswählen, werden ihre Metadaten angezeigt und Sie können sie bearbeiten oder löschen:![](assets/multi-hover.png)<p>In einer Tabelle wird an jedem Datum im Datumsbereich ein Symbol angezeigt.<p>![](assets/multi-day-table.png) |
-| **Überlappende Anmerkungen** | An Tagen, an denen es mehr als eine Anmerkung gibt, wird das Symbol grau dargestellt.<p>![Details für sich überschneidende Anmerkungen  ](assets/grey.png)<p>Wenn Sie den Mauszeiger über das graue Symbol bewegen, werden alle sich überlappenden Anmerkungen angezeigt:<p>![](assets/overlap.png) |
+| **Überlappende Anmerkungen** | An Tagen, an denen es mehr als eine Anmerkung gibt, wird das Symbol grau dargestellt.<p>![Details für sich überschneidende Anmerkungen ](assets/grey.png)<p>Wenn Sie den Mauszeiger über das graue Symbol bewegen, werden alle sich überlappenden Anmerkungen angezeigt:<p>![](assets/overlap.png) |
 
 {style="table-layout:auto"}
 
