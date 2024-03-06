@@ -1,14 +1,14 @@
 ---
 title: Aktive Ansicht
-description: Identifizieren Sie, wer neu ist, beibehalten, zurückkehren oder ruhend ist.
+description: Identifizieren Sie, wer neu ist, bleibt, zurückkehrt oder inaktiv ist.
 exl-id: 53ef7485-9cae-4663-bf61-4eb77c126830
-feature: Guided Analysis
-keywords: Produktanalyse
+feature: Adobe Product Analytics, Guided Analysis
+keywords: Produktanalysen
 role: User
-source-git-commit: a8ead81a8de8dcab4c12cbbe9cba56c4ce8417a3
+source-git-commit: 240a17923b55479865affaafb098b56e32d083a3
 workflow-type: tm+mt
 source-wordcount: '609'
-ht-degree: 1%
+ht-degree: 3%
 
 ---
 
