@@ -4,10 +4,10 @@ description: Verwendung und Interpretation des Panels „verbrachten Zeit bei de
 feature: Panels
 exl-id: de0fdbea-71f0-445b-a1e4-c7e895f142d4
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 1c9f3d1de499eda5aeeb4e6763871c8a2e7d075d
 workflow-type: tm+mt
-source-wordcount: '938'
-ht-degree: 71%
+source-wordcount: '932'
+ht-degree: 67%
 
 ---
 
@@ -50,7 +50,7 @@ Sie können das Panel „Verbrachte Zeit bei der Medienwiedergabe“ mithilfe de
 | Granularität | Die Standardeinstellung für die Granularität ist „Minute“.<br>Diese Visualisierung ist auf 1440 Datenzeilen beschränkt (z. B. 24 Stunden bei einer Granularität auf Minutenebene). Wenn eine Kombination aus Datumsbereich und Granularität zu mehr als 1440 Zeilen führt, wird die Granularität automatisch reduziert, um den vollständigen Datumsbereich zu erlauben. |
 | Zusammenfassende Zahlen der Bedienfelder | Um Details zu Datum und Uhrzeit für die verbrachte Zeit bei der Medienwiedergabe anzuzeigen, steht eine zusammenfassende Zahl zur Verfügung. Das Maximum zeigt Details zu Spitzenzeiten von gleichzeitigen Aufrufen an. Das Minimum zeigt Details zum Tiefpunkt an. In der Summe wird die gesamte Wiedergabezeit für diese Auswahl dargestellt. Im Panel wird standardmäßig nur der maximale Wert angezeigt. Sie können dies jedoch ändern, sodass das Minimum, die Summe oder eine beliebige Kombination der drei Werte angegeben wird.<br>Wenn Sie Aufschlüsselungen verwenden, wird jeweils eine Zusammenfassungsnummer angezeigt. |
 | Serienaufschlüsselung | Optional können Sie Ihre Visualisierung nach Filtern, Dimensionen, Dimensionselementen oder Datumsbereichen aufschlüsseln.<p>– Sie können bis zu 10 Zeilen auf einmal ansehen. Aufschlüsselungen sind auf eine einzelne Ebene beschränkt.</p><p>– Beim Ziehen einer Dimension werden die oberen Dimensionselemente automatisch anhand des im Panels ausgewählten Datumsbereichs ausgewählt.</p>– Ziehen Sie zum Vergleichen von Datumsbereichen zwei oder mehr Datumsbereiche in den Filter für die Aufschlüsselung der Serie. |
-| Zeitformat | Sie können die Wiedergabedauer entweder in Stunden:Minutes:Sekunden (Standard) oder in Minuten anzeigen (in Ganzzahlen, auf 0,5 aufgerundet). |
+| Zeitformat | Sie können die Wiedergabedauer anzeigen, die in `Hours:Minutes:Seconds` (Standard) oder in `Minutes` (wird in Ganzzahlen angezeigt, auf 0,5 aufgerundet). |
 | Anzeige der Datumsreihe | Wenn Sie mindestens zwei Datumsbereichsfilter als Serienaufschlüsselungen platziert haben, sehen Sie die Option, entweder Überlagerung (Standard) oder sequenziell auszuwählen. Bei der Überlagerung werden die Linien mit einem gemeinsamen X-Achsen-Beginn gezeigt, sodass sie parallel laufen, während bei der Sequenz die Linien mit ihrem jeweiligen X-Achsen-Beginn dargestellt werden. Wenn die Daten aufgerollt werden (z. B. Filter 1 endet um 20:44 Uhr und Filter 2 um 20:45 Uhr), werden die Zeilen nacheinander angezeigt. |
 
 ## Standardansicht
@@ -73,7 +73,7 @@ Die einzige Metrik, die in diesem Panel verwendet werden kann, ist „Wiedergabe
 
 | Metrik | Beschreibung |
 |---|---|
-| Wiedergabedauer | Summe der Stunden:minutes:Sekunden (oder Minuten) des Inhalts, der während der ausgewählten Granularität betrachtet wurde, einschließlich Pausen, Pufferung und der Zeit bis zum Start. |
+| Wiedergabedauer | Ingesamt `hours:minutes:seconds` (oder `minutes`) des Inhalts, der während der ausgewählten Granularität angezeigt wurde, einschließlich Pause, Puffer und Startzeit. |
 
 ## Häufig gestellte Fragen (FAQ)
 
