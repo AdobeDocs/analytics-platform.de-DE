@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Administration
 role: Admin
 exl-id: f093ac54-7d31-449b-a441-a65856a1d535
-source-git-commit: b945ae10d9107a760e32f5d111e5c14724898646
+source-git-commit: d6837178bccc1a80130ec3fc282d2b44858d06b1
 workflow-type: tm+mt
 source-wordcount: '1519'
 ht-degree: 11%
@@ -81,7 +81,7 @@ Einige der Funktionen und der zugehörige Wert für die Beschränkung hängen vo
 
 {style="table-layout:auto"}
 
-Siehe auch Experience Platform [Real-time Customer Data Platform-Schutzmechanismen](https://experienceleague.adobe.com/docs/experience-platform/profile/Guardrails.html?lang=en).
+Siehe auch Experience Platform [Real-time Customer Data Platform-Schutzmechanismen](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=en).
 
 
 ## Automatischer Ablauf von Datensätzen
@@ -126,7 +126,7 @@ Siehe auch Experience Platform [Real-time Customer Data Platform-Schutzmechanism
 
 {style="table-layout:auto"}
 
-Siehe auch Experience Platform [Limits für die Datenerfassung](https://experienceleague.adobe.com/docs/experience-platform/ingestion/Guardrails.html?lang=en).
+Siehe auch Experience Platform [Limits für die Datenerfassung](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html?lang=en).
 
 
 ## Daten-Landingzone
