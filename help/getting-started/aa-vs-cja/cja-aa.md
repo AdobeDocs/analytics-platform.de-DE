@@ -6,9 +6,9 @@ solution: Customer Journey Analytics
 feature: Basics
 role: User
 source-git-commit: 2ed8f4c3768312bb8f6c108ef8b8b052acbfa574
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2032'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -22,7 +22,7 @@ In den folgenden Tabellen ist aufgeführt, welche Adobe Analytics-Funktionen in 
 | --- | --- |
 | Anomalieerkennung | Vollständige Unterstützung |
 | Attribution IQ | Vollständige Unterstützung |
-| Bot-Erkennung | *Bald!* Für [Analytics-Quell-Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=de)-basierte Datensätze verwenden, wird die Bot-Filterung angewendet. Die allgemeine Bot-Erkennungslogik für andere Datensätze wird von [Experience Edge](https://experienceleague.adobe.com/docs/experience-platform/datastreams/bot-detection.html?lang=en). |
+| Bot-Erkennung | *Demnächst!* Auf Datensätze, die auf [Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=de) basieren, wird die Bot-Filterung angewendet. Die allgemeine Bot-Filterlogik für andere Datensätze wird von [Experience Edge](https://experienceleague.adobe.com/docs/experience-platform/datastreams/bot-detection.html?lang=de) ausgeführt. |
 | Berechnete Metriken  | Vollständige Unterstützung. Vorhandene berechnete Metriken im herkömmlichen Analysis Workspace werden nicht nach Customer Journey Analytics portiert. |
 | Kalenderereignisse | Vollständige Unterstützung. Kalenderereignisse wurden bisher als [Anmerkungen](/help/components/annotations/overview.md) in Workspace implementiert. |
 | CSV-Download | Vollständige Unterstützung |
@@ -30,12 +30,12 @@ In den folgenden Tabellen ist aufgeführt, welche Adobe Analytics-Funktionen in 
 | Datumsvergleiche | Vollständige Unterstützung |
 | Datumsbereiche | Alle Datumsbereichsfunktionen werden unterstützt. |
 | Dimensionen | Vollständige Unterstützung. Customer Journey Analytics verwendet XDM und unterstützt unbegrenzte Dimensionen. Customer Journey Analytics ist nicht an benutzerdefinierte eVars oder Eigenschaften des herkömmlichen Adobe Analytics-Tools gebunden. |
-| DSGVO-Löschung | Vollständige Unterstützung; beachten Sie, dass die DSGVO jetzt in Abstimmung mit [!UICONTROL Adobe Experience Platform]. Customer Journey Analytics übernimmt alle Datenänderungen, die [!UICONTROL Experience Platform] an den zugrunde liegenden Datensätzen vornimmt. |
-| Reporting über Anstieg und Konfidenz | Vollständige Unterstützung über [Experimentationsbereich](/help/analysis-workspace/c-panels/experimentation.md) |
+| DSGVO-Löschung | Vollständige Unterstützung; beachten Sie, dass die DSGVO jetzt in Abstimmung mit [!UICONTROL Adobe Experience Platform] gehandhabt wird. Customer Journey Analytics übernimmt alle Datenänderungen, die [!UICONTROL Experience Platform] an den zugrunde liegenden Datensätzen vornimmt. |
+| Reporting über Anstieg und Konfidenz | Vollständige Unterstützung über das [Bedienfeld „Experimentierung“](/help/analysis-workspace/c-panels/experimentation.md) |
 | Listenvariablen/Listen-Props | Vollständige Unterstützung. Customer Journey Analytics nutzt XDM und unterstützt unbegrenzte Zeichenfolgen-Arrays, die ähnlich wie listVars verwendet werden können. |
 | Merchandising-eVars | Vollständige Unterstützung über [Bindungsdimensionen und Bindungsmetriken](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html?lang=de#binding-dimension) |
-| Metriken | Vollständige Unterstützung; Customer Journey Analytics verwendet das Experience-Datenmodell (XDM) und unterstützt unbegrenzte Metriken und ist nicht an die benutzerdefinierten Erfolgsereignisse von Adobe Analytics gebunden. Beachten Sie, dass einige Standardmetriken in Adobe Analytics umbenannt wurden: Besucher = Personen, Besuche = Sitzungen, Treffer = Ereignisse. |
-| Migration von Projekten, Filtern und berechneten Metriken von Adobe Analytics nach Customer Journey Analytics | Vollständige Unterstützung. |
+| Metriken | Vollständige Unterstützung; Customer Journey Analytics nutzt das Experience-Datenmodell (XDM), unterstützt unbegrenzte Metriken und ist nicht an die benutzerspezifischen Erfolgsereignisse von Adobe Analytics gebunden. Beachten Sie, dass einige Standardmetriken in Adobe Analytics umbenannt wurden: Besucher = Personen, Besuche = Sitzungen, Treffer = Ereignisse. |
+| Migration von Projekten, Filtern und berechneten Metriken von Adobe Analytics nach Customer Journey Analytics | Vollständige Unterstützung.  |
 | Mobile Scorecard/Dashboards | Vollständige Unterstützung |
 | Bedienfelder | Leeres Bedienfeld, Attributions-Bedienfeld, Freiform-Bedienfeld und Quick Insights werden vollständig unterstützt. |
 | PDF-Export | Vollständige Unterstützung |
@@ -77,7 +77,7 @@ In den folgenden Tabellen ist aufgeführt, welche Adobe Analytics-Funktionen in 
 | Projektfreigabe | Die Projektfreigabe wird nur zwischen Benutzenden von Customer Journey Analytics unterstützt. Es gibt keine Projektfreigabe zwischen Customer Journey Analytics und dem herkömmlichen Analysis Workspace. |
 | Report Builder | Unterstützt mit einem neuen Office 365-Plug-in für Excel. |
 | Benutzerberechtigungen/Datenzugangssteuerungen | Customer Journey Analytics unterscheidet zwischen Produktadmins, Produktprofiladmins und Benutzenden von [Adobe Admin Console](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html?lang=de). Nur Produktadmins können von anderen Benutzenden erstellte Verbindungen, Projekte, Filter oder berechnete Metriken erstellen/aktualisieren/löschen, während Produktadmins und Produktprofiladmins Datenansichten bearbeiten können. Zusätzliche Benutzerberechtigungen sind für Vorgänge wie das Erstellen von berechneten Metriken, Filter oder Anmerkungen verfügbar. |
-| Visualisierungen | Mit Ausnahme der Zuordnungsvisualisierung werden alle Workspace-Visualisierungen unterstützt. |
+| Visualisierungen | Mit Ausnahme der Zuordnungsvisualisierung werden alle Visualisierungen unterstützt. |
 | Geräteübergreifende/kanalübergreifende Zuordnung | Unterstützt bei Datensätzen, die direkt Identitätsinformationen enthalten (auch als „feldbasiertes“ Stitching bezeichnet). Diagrammbasierte Zuordnung wird noch nicht unterstützt, ist aber in Planung. Siehe [Zuordnung](../../stitching/overview.md). |
 
 {style="table-layout:auto"}

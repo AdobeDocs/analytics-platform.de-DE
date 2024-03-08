@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: 7f67c497-386b-4442-a502-6b492f35c6e6
 source-git-commit: 2f5bd8bec1580077675d249fa0431d84ee2269fa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '622'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -23,9 +23,9 @@ Werfen Sie einen Blick auf die neuesten Verbesserungen in Customer Journey Analy
 
 >[!BEGINTABS]
 
->[!TAB Prognosen]
+>[!TAB Prognose]
 
-Prognosen sind eine Analysis Workspace-Funktion, mit der eine standardmäßige oder berechnete Metrik mit beliebiger unterstützter Zeitgranularität (stündlich, täglich, wöchentlich, monatlich und jährlich) prognostiziert werden kann. Prognosen sind nur für zeitreihenbezogene Daten verfügbar.
+Analysis Workspace bietet eine Prognose-Funktion, mit der eine standardmäßige oder berechnete Metrik mit beliebiger unterstützter Zeitgranularität (stündlich, täglich, wöchentlich, monatlich und jährlich) prognostiziert werden kann. Die Prognose-Funktion ist nur für zeitreihenbezogene Daten verfügbar.
 
 [![Bild](assets/learn-more-button.svg)](/help/analysis-workspace/c-forecast/forecasting.md)
 
