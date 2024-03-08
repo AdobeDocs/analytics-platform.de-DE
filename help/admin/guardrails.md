@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Administration
 role: Admin
 exl-id: f093ac54-7d31-449b-a441-a65856a1d535
-source-git-commit: d6837178bccc1a80130ec3fc282d2b44858d06b1
+source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
 workflow-type: tm+mt
 source-wordcount: '1519'
 ht-degree: 11%
@@ -81,7 +81,7 @@ Einige der Funktionen und der zugehörige Wert für die Beschränkung hängen vo
 
 {style="table-layout:auto"}
 
-Siehe auch Experience Platform [Real-time Customer Data Platform-Schutzmechanismen](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=en).
+Siehe auch Experience Platform [Real-time Customer Data Platform-Schutzmechanismen](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=de).
 
 
 ## Automatischer Ablauf von Datensätzen
@@ -101,7 +101,7 @@ Siehe auch Experience Platform [Real-time Customer Data Platform-Schutzmechanism
 | Projekte | 2.000 | Systemdurchsetztes Schutzschild | Maximale Anzahl der Projekte für eine Organisation. |
 | Datenansichten | 2.000 | Systemdurchsetztes Schutzschild | Maximale Anzahl an [Datenansichten](../data-views/data-views.md) für eine Organisation. |
 | Datenansichten | 50 | Systemdurchsetztes Schutzschild | Maximale Anzahl von Datenansichten für eine Verbindung |
-| Datensätze | 100 | Systemdurchsetztes Schutzschild | Maximale Anzahl an [Datensätze](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html?lang=en) pro Verbindung. |
+| Datensätze | 100 | Systemdurchsetztes Schutzschild | Maximale Anzahl an [Datensätze](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html?lang=de) pro Verbindung. |
 | Verbindungen | 1000 | Systemdurchsetztes Schutzschild | Maximale Anzahl an [Verbindungen](../connections/overview.md) für eine Organisation. |
 | Verbindungstitel | 500 | Systemdurchsetztes Schutzschild | Maximale Zeichenanzahl für einen Verbindungstitel. |
 | Metriken | 5.000 | Systemdurchsetztes Schutzschild | Maximale Anzahl an Metriken in einer Datenansicht. |
@@ -126,7 +126,7 @@ Siehe auch Experience Platform [Real-time Customer Data Platform-Schutzmechanism
 
 {style="table-layout:auto"}
 
-Siehe auch Experience Platform [Limits für die Datenerfassung](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html?lang=en).
+Siehe auch Experience Platform [Limits für die Datenerfassung](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html).
 
 
 ## Daten-Landingzone
@@ -181,7 +181,7 @@ Siehe auch Experience Platform [Limits für die Datenerfassung](https://experien
 | Name | Wert | Art von Limit | Beschreibung |
 |---|--:|---|---|
 | Größe der Arbeitsmappen-Datei | 5 | Systemdurchsetztes Schutzschild | Maximale Dateigröße einer geplanten Arbeitsmappe in MB. |
-| Datenblöcke | 1000 | Systemdurchsetztes Schutzschild | Maximale Anzahl an [Datenblöcke](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/manage-reportbuilder.html?lang=en) pro Arbeitsmappe. |
+| Datenblöcke | 1000 | Systemdurchsetztes Schutzschild | Maximale Anzahl an [Datenblöcke](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/manage-reportbuilder.html?lang=de) pro Arbeitsmappe. |
 | Metriken | 20 | Systemdurchsetztes Schutzschild | Maximale Anzahl an Metriken pro Datenblock. |
 | Datumsbereich-Bereich | 13 | Systemdurchsetztes Schutzschild | Maximale Anzahl von Monaten, die ein Datumsbereich pro Datenblock umfassen kann. |
 | Zeilen | 50.000 | Systemdurchsetztes Schutzschild | Maximale Zeilenanzahl pro Datenblock. |
@@ -204,7 +204,7 @@ Siehe auch Experience Platform [Limits für die Datenerfassung](https://experien
 
 >[!NOTE]
 >
->Die folgenden Verarbeitungszeiten sind Limits, nicht vertragliche Service Level Agreements (SLAs). Die Latenz variiert je nach Kundenkonfiguration, Datenvolumen und Verbraucheranwendungen. Echte Verarbeitungszeiten sind oft schneller. Ihre spezifischen Vertragsbedingungen und SLAs finden Sie in Ihrem Customer Journey Analytics-Vertrag. Siehe Experience Platform [Limits für die Datenerfassung](https://experienceleague.adobe.com/docs/experience-platform/ingestion/Guardrails.html?lang=en) für weitere Informationen.
+>Die folgenden Verarbeitungszeiten sind Limits, nicht vertragliche Service Level Agreements (SLAs). Die Latenz variiert je nach Kundenkonfiguration, Datenvolumen und Verbraucheranwendungen. Echte Verarbeitungszeiten sind oft schneller. Ihre spezifischen Vertragsbedingungen und SLAs finden Sie in Ihrem Customer Journey Analytics-Vertrag. Siehe Experience Platform [Limits für die Datenerfassung](https://experienceleague.adobe.com/docs/experience-platform/ingestion/Guardrails.html) für weitere Informationen.
 
 | Datenfluss | Erwartete Latenz |
 |---|---|

@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Use Cases
 exl-id: cb5a4f98-9869-4410-8df2-b2f2c1ee8c57
 role: Admin
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
 workflow-type: tm+mt
 source-wordcount: '968'
 ht-degree: 50%
@@ -32,13 +32,13 @@ Wahrscheinlich haben Sie bereits Zielgruppen im Echtzeit-Kundenprofil, die aus v
 
 ## Schritt 2: Erstellen Sie einen Profilvereinigungsdatensatz für den Export
 
-Um die Zielgruppe in einen Datensatz zu exportieren, der schließlich zu einer Verbindung in Customer Journey Analytics hinzugefügt werden kann, müssen Sie einen Datensatz erstellen, dessen Schema ein Profil ist [Vereinigungsschema](https://experienceleague.adobe.com/docs/experience-platform/profile/union-schemas/union-schema.html?lang=de#understanding-union-schemas).
+Um die Zielgruppe in einen Datensatz zu exportieren, der schließlich zu einer Verbindung in Customer Journey Analytics hinzugefügt werden kann, müssen Sie einen Datensatz erstellen, dessen Schema ein Profil ist [Vereinigungsschema](https://experienceleague.adobe.com/docs/experience-platform/profile/union-schemas/union-schema.html#understanding-union-schemas).
 
 Vereinigungsschemas bestehen aus mehreren Schemas, die dieselbe Klasse haben und für ein Profil aktiviert wurden. Im Vereinigungsschema können Sie eine Zusammenführung aller Felder sehen, die in Schemas enthalten sind, die dieselbe Klasse haben. Das Echtzeit-Kundenprofil verwendet das Vereinigungsschema, um eine ganzheitliche Ansicht jedes einzelnen Kunden zu erstellen.
 
 ## Schritt 3: Exportieren Sie eine Zielgruppe über einen API-Aufruf in den Profilvereinigungsdatensatz  {#export}
 
-Bevor Sie eine Zielgruppe in Customer Journey Analytics importieren können, müssen Sie sie in einen Adobe Experience Platform-Datensatz exportieren. Dies kann nur mit der Segmentierungs-API und insbesondere mit dem [Export Jobs API Endpoint](https://experienceleague.adobe.com/docs/experience-platform/segmentation/api/export-jobs.html?lang=de) geschehen.
+Bevor Sie eine Zielgruppe in Customer Journey Analytics importieren können, müssen Sie sie in einen Adobe Experience Platform-Datensatz exportieren. Dies kann nur mit der Segmentierungs-API und insbesondere mit dem [Export Jobs API Endpoint](https://experienceleague.adobe.com/docs/experience-platform/segmentation/api/export-jobs.html) geschehen.
 
 Sie können einen Exportauftrag mit der Zielgruppen-ID Ihrer Wahl erstellen und die Ergebnisse in den Adobe Experience Platform-Datensatz der Profilunion verschieben, den Sie in Schritt 2 erstellt haben. Obwohl Sie verschiedene Attribute/Ereignisse für die Zielgruppe exportieren können, müssen Sie nur das spezifische Feld für die Profil-ID exportieren, das mit dem Feld für die Personen-ID übereinstimmt, das in der von Ihnen verwendeten Customer Journey Analytics-Verbindung verwendet wird (siehe unten in Schritt 5).
 

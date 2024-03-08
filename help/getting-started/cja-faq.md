@@ -5,10 +5,10 @@ exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
 solution: Customer Journey Analytics
 feature: FAQ
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
-workflow-type: ht
-source-wordcount: '2521'
-ht-degree: 100%
+source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
+workflow-type: tm+mt
+source-wordcount: '2523'
+ht-degree: 98%
 
 ---
 
@@ -140,7 +140,7 @@ Adobe hat kürzlich die Verarbeitung von Daten in Customer Journey Analytics ge�
 
 ## 5. Festlegen eines rollierenden Fensters für die Speicherung von [!UICONTROL Verbindungsdaten] {#data-retention}
 
-Mit der Einstellung [**[!UICONTROL Rollierendes Datenfenster aktivieren ]**](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=de#create-connection) können Sie die Customer Journey Analytics-Datenspeicherung als rollierendes Fenster in Monaten (drei Monate, sechs Monate usw.) definieren. Sie wird auf einer [!UICONTROL Verbindungs]-Ebene, nicht auf einer [!UICONTROL Datensatz]-Ebene festgelegt. Die Datenaufbewahrung basiert auf Zeitstempeln für Ereignis-Datensätze und gilt nur für Ereignis-Datensätze. Für Profil- oder Lookup-Datensätze gibt es keine Datenspeicherungseinstellung, da keine entsprechenden Zeitstempel vorhanden sind.
+Mit der Einstellung [**[!UICONTROL Rollierendes Datenfenster aktivieren ]**](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html#create-connection) können Sie die Customer Journey Analytics-Datenspeicherung als rollierendes Fenster in Monaten (drei Monate, sechs Monate usw.) definieren. Sie wird auf einer [!UICONTROL Verbindungs]-Ebene, nicht auf einer [!UICONTROL Datensatz]-Ebene festgelegt. Die Datenaufbewahrung basiert auf Zeitstempeln für Ereignis-Datensätze und gilt nur für Ereignis-Datensätze. Für Profil- oder Lookup-Datensätze gibt es keine Datenspeicherungseinstellung, da keine entsprechenden Zeitstempel vorhanden sind.
 
 Der Hauptvorteil besteht darin, dass Sie nur Daten speichern oder Berichte dazu erstellen, die anwendbar und nützlich sind, und ältere Daten löschen, die nicht mehr nützlich sind. Dies hilft Ihnen, Ihre vertraglichen Beschränkungen einzuhalten und das Risiko bezüglich Kostendeckung zu reduzieren.
 
@@ -237,7 +237,7 @@ Weitere Informationen über die [Implikationen beim Löschen von Datensätzen un
 
 Adobe Experience Cloud verwendet die regionale Datenerfassung (Regional Data Collection, RDC), damit Interaktionen zwischen Ihren Besuchenden und Adobe- und Nicht-Adobe-Lösungen so nahe wie möglich an Ihren Besuchenden stattfinden. Sobald Daten regional in einem Datenerfassungszentrum (DCC, auch als Edge-Site bezeichnet, Teil des Platform Edge-Netzwerks) erfasst wurden, werden sie über eine sichere Verbindung zu den relevanten Lösungen weitergeleitet, die auf der Konfiguration Ihres Datenstroms und/oder der Ereignisweiterleitung basieren.
 
-![Datenfluss mithilfe von Edge-Netzwerken](https://experienceleague.adobe.com/docs/experience-platform/assets/collection.png?lang=de)
+![Datenfluss mithilfe von Edge-Netzwerken](https://experienceleague.adobe.com/docs/experience-platform/assets/collection.png)
 
 Der regionale Datenerfassungsprozess umfasst die folgenden Schritte:
 
@@ -267,5 +267,4 @@ Wenn die Daten das regionale Rechenzentrum erreichen, bestimmt die Konfiguration
 Für Customer Journey Analytics werden Datensätze von Adobe Experience Platform benötigt. Ihre Datenstrom-/Ereignisweiterleitungskonfiguration erfordert daher, dass der Adobe Experience Platform-Dienst die Daten vom regionalen Rechenzentrum an das Rechenzentrum weiterleitet, in dem sich Ihre Adobe Experience Platform-Instanz befindet. Customer Journey Analytics und die zugehörigen unterstützenden Dienste und Infrastrukturen werden in derselben Adobe Experience Platform-Instanz bereitgestellt.
 
 
-Weitere Informationen über den Prozess der Datenerfassung außerhalb des Experience Edge-Netzwerks und seiner regionalen Rechenzentren finden Sie unter [Datenerfassungsüberblick](https://experienceleague.adobe.com/docs/experience-platform/collection/home.html?lang=de).
-
+Siehe [Datenerfassung - Übersicht](https://experienceleague.adobe.com/docs/experience-platform/collection/home.html) für weitere Informationen über den Prozess der Datenerfassung außerhalb des Adobe Experience Platform Edge Network und seiner regionalen Rechenzentren.

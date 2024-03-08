@@ -3,10 +3,10 @@ title: Aktuelle Versionshinweise zu Customer Journey Analytics anzeigen
 description: Neueste Versionshinweise zu Customer Journey Analytics
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 42232ff87ee822ceccf624ad8655c2dce8776814
+source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
 workflow-type: tm+mt
-source-wordcount: '626'
-ht-degree: 99%
+source-wordcount: '627'
+ht-degree: 94%
 
 ---
 
@@ -22,7 +22,7 @@ Diese Versionshinweise beziehen sich auf den Veröffentlichungszeitraum vom 14. 
 | ----------- | ---------- | ------- | ---- |
 | **Zeitreihenprognosen** | [Prognosen](../analysis-workspace/c-forecast/forecasting.md) sind eine neue Funktion in Analysis Workspace, mit der eine standardmäßige oder berechnete Metrik mit beliebiger unterstützter Zeitgranularität (stündlich, täglich, wöchentlich, monatlich und jährlich) für Freiformtabellen und Liniendiagramme prognostiziert werden kann. | 31. Januar 2024 | 21. Februar 2024 |
 | **Zeilenanzahl-Metriken für Lookup- und Profildaten** | Metriken zur Zeilenanzahl für Datensätze, die als Teil einer Verbindung konfiguriert sind, enthalten jetzt Datensätze, die hinzugefügt, übersprungen oder aus Profil- und Lookup-Datensätzen gelöscht werden. |  | 14. Februar 2024 |
-| **Bot-Erkennung bei Experience Edge** | [Bot-Erkennung](https://experienceleague.adobe.com/docs/experience-platform/datastreams/bot-detection.html?lang=de) ermöglicht es Ihnen, Ereignisse zu identifizieren, die vom Web SDK, Mobile SDK und der Server-API und nicht von bekannten Spiders und Bots generiert wurden. | | 29. April 2024 |
+| **Edge Network-Bot-Erkennung** | [Bot-Erkennung](https://experienceleague.adobe.com/docs/experience-platform/datastreams/bot-detection.html?lang=de) ermöglicht es Ihnen, Ereignisse zu identifizieren, die vom Web SDK, Mobile SDK und Server API als von bekannten Spiders und Bots generiert wurden. | | 29. April 2024 |
 | **Nutzungsmetriken** | Die Nutzungsmetrik-Schnittstelle zeigt die Verwendung von erfassten und berichtspflichtigen Zeilen über alle Verbindungen hinweg an. Mit dieser Schnittstelle können Sie festlegen, ob Ihre Customer Journey Analytics-Nutzung den vertraglich vereinbarten Bedingungen entspricht. | 20. Februar 2024 | Donnerstag, 13. März 2024 |
 | **Adobe Product Analytics: Für alle freigeben** | Ermöglicht die Freigabe eines schreibgeschützten Links zu Adobe Product Analytics-Projekten für Personen, die keinen Zugriff auf Product Analytics haben. |  | Ende März 2024 |
 | **Adobe Product Analytics: Anwenden berechneter Metriken** | Sie können jetzt auf berechnete Metriken zugreifen, die in Analysis Workspace oder im Generator für berechnete Metriken in der Ansicht „Trends: Nutzung“ erstellt wurden. Damit können Sie Metriken im Zeitverlauf als Trend verfolgen und vergleichen. |  | 16. Februar 2024 |

@@ -7,10 +7,10 @@ hide: true
 hidefromtoc: true
 exl-id: 1827a637-6c0f-43f2-862a-928089340d30
 role: Admin
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
-workflow-type: ht
+source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
+workflow-type: tm+mt
 source-wordcount: '2789'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -117,7 +117,7 @@ Derzeit wird der SQL-Connector von Customer Journey Analytics nur für Power BI 
 
       2. Fügen Sie den Parameter **[!UICONTROL ** Datenbank **]** aus den [!UICONTROL Anmeldedaten] von Experience Platform-Abfragen in das Textfeld **[!UICONTROL ** Datenbank **]** ein.
 
-         Fügen Sie `?FLATTEN` zum Parameter **[!UICONTROL ** Datenbank **]** hinzu, damit er sich beispielsweise liest wie `prod:cja?FLATTEN`. Weitere Informationen finden Sie unter [Reduzieren verschachtelter Datenstrukturen für die Verwendung mit BI-Tools von Drittanbietern](https://experienceleague.adobe.com/docs/experience-platform/query/essential-concepts/flatten-nested-data.html?lang=de).
+         Fügen Sie `?FLATTEN` zum Parameter **[!UICONTROL ** Datenbank **]** hinzu, damit er sich beispielsweise liest wie `prod:cja?FLATTEN`. Weitere Informationen finden Sie unter [Reduzieren verschachtelter Datenstrukturen für die Verwendung mit BI-Tools von Drittanbietern](https://experienceleague.adobe.com/docs/experience-platform/query/essential-concepts/flatten-nested-data.html).
 
       3. Wenn Sie zur Wahl des **[!UICONTROL ** Datenkonnektivitätsmodus **]** aufgefordert werden, wählen Sie **[!UICONTROL ** DirectQuery **]** aus, um sicherzustellen, dass die Datenstrukturen ordnungsgemäß reduziert werden.
 
@@ -131,7 +131,7 @@ Derzeit wird der SQL-Connector von Customer Journey Analytics nur für Power BI 
 
    Alle Dimensionen und Metriken, die mit einer oder mehreren ausgewählten Tabellen verknüpft sind, werden im rechten Bereich angezeigt und können in Ihren Visualisierungen verwendet werden.
 
-   Weitere Informationen sind unter [Verbinden von Power BI mit dem Abfrage-Service](https://experienceleague.adobe.com/docs/experience-platform/query/clients/power-bi.html?lang=de) zu finden.
+   Weitere Informationen sind unter [Verbinden von Power BI mit dem Abfrage-Service](https://experienceleague.adobe.com/docs/experience-platform/query/clients/power-bi.html) zu finden.
 
 +++
 
@@ -159,7 +159,7 @@ Derzeit wird der SQL-Connector von Customer Journey Analytics nur für Power BI 
 
       3. Fügen Sie den Parameter **[!UICONTROL ** Datenbank **]** aus den [!UICONTROL Anmeldeinformationen] von Experience Platform-Abfragen in das Textfeld **[!UICONTROL ** Datenbank **]** ein.
 
-         Fügen Sie `%3FFLATTEN` zum Parameter **[!UICONTROL ** Datenbank **]** hinzu, damit er sich beispielsweise liest wie `prod:cja%3FFLATTEN`. Weitere Informationen finden Sie unter [Reduzieren verschachtelter Datenstrukturen für die Verwendung mit BI-Tools von Drittanbietern](https://experienceleague.adobe.com/docs/experience-platform/query/essential-concepts/flatten-nested-data.html?lang=de).
+         Fügen Sie `%3FFLATTEN` zum Parameter **[!UICONTROL ** Datenbank **]** hinzu, damit er sich beispielsweise liest wie `prod:cja%3FFLATTEN`. Weitere Informationen finden Sie unter [Reduzieren verschachtelter Datenstrukturen für die Verwendung mit BI-Tools von Drittanbietern](https://experienceleague.adobe.com/docs/experience-platform/query/essential-concepts/flatten-nested-data.html).
 
       4. Wählen Sie **[!UICONTROL ** Benutzername und Passwort **]** aus der Liste **[!UICONTROL ** Authentifizierung **]** aus.
 
@@ -175,11 +175,11 @@ Derzeit wird der SQL-Connector von Customer Journey Analytics nur für Power BI 
 
    Sie können jetzt mit den Daten aus den Datenansichtstabellen arbeiten, um Ihre Berichte und Visualisierungen zu erstellen.
 
-   Weitere Informationen erhalten Sie unter [Verbinden von Tableau mit dem Abfrage-Service](https://experienceleague.adobe.com/docs/experience-platform/query/clients/tableau.html?lang=de).
+   Weitere Informationen erhalten Sie unter [Verbinden von Tableau mit dem Abfrage-Service](https://experienceleague.adobe.com/docs/experience-platform/query/clients/tableau.html).
 
 +++
 
-Siehe [Verbinden von Clients mit dem Abfrage-Service](https://experienceleague.adobe.com/docs/experience-platform/query/clients/overview.html?lang=de), um einen Überblick und weitere Informationen über die verschiedenen verfügbaren Tools zu erhalten.
+Siehe [Verbinden von Clients mit dem Abfrage-Service](https://experienceleague.adobe.com/docs/experience-platform/query/clients/overview.html), um einen Überblick und weitere Informationen über die verschiedenen verfügbaren Tools zu erhalten.
 
 ## Funktionalität
 
@@ -219,11 +219,11 @@ prod:all=> \dv
 
 ### Verschachtelt oder reduziert
 
-Standardmäßig verwendet das Schema Ihrer Datenansichten verschachtelte Strukturen wie die ursprünglichen XDM-Schemata. Die Integration unterstützt auch die Option `FLATTEN`. Mit dieser Option können Sie erzwingen, dass das Schema für die Datenansichten (und jede andere Tabelle in der Sitzung) reduziert wird. Die Reduzierung ermöglicht eine einfachere Verwendung in BI-Tools, die keine strukturierten Schemata unterstützen. Weitere Informationen finden Sie unter [Arbeiten mit verschachtelten Datenstrukturen im Abfrage-Service](https://experienceleague.adobe.com/docs/experience-platform/query/essential-concepts/flatten-nested-data.html?lang=de).
+Standardmäßig verwendet das Schema Ihrer Datenansichten verschachtelte Strukturen wie die ursprünglichen XDM-Schemata. Die Integration unterstützt auch die Option `FLATTEN`. Mit dieser Option können Sie erzwingen, dass das Schema für die Datenansichten (und jede andere Tabelle in der Sitzung) reduziert wird. Die Reduzierung ermöglicht eine einfachere Verwendung in BI-Tools, die keine strukturierten Schemata unterstützen. Weitere Informationen finden Sie unter [Arbeiten mit verschachtelten Datenstrukturen im Abfrage-Service](https://experienceleague.adobe.com/docs/experience-platform/query/essential-concepts/flatten-nested-data.html).
 
 ### Unterstützte SQL
 
-Die vollständige Referenz dazu, welcher SQL-Typ unterstützt wird, finden Sie unter [SQL-Referenz für den Abfrage-Service](https://experienceleague.adobe.com/docs/experience-platform/query/sql/overview.html?lang=de).
+Die vollständige Referenz dazu, welcher SQL-Typ unterstützt wird, finden Sie unter [SQL-Referenz für den Abfrage-Service](https://experienceleague.adobe.com/docs/experience-platform/query/sql/overview.html).
 
 Beispiele für SQL, die Sie verwenden können, finden Sie in der folgenden Tabelle.
 

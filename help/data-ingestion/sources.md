@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: 813d3213-86b3-431a-821c-174e5e36d032
 role: Admin
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
 workflow-type: tm+mt
 source-wordcount: '1967'
-ht-degree: 86%
+ht-degree: 85%
 
 ---
 
@@ -118,7 +118,7 @@ Gehen Sie folgendermaßen vor, um das Schema einzurichten:
 
    Sie werden aufgefordert, das Schema für das Profil zu aktivieren. Nach der Aktivierung werden Daten, die auf der Basis dieses Schemas in Datensätze aufgenommen werden, zum Echtzeit-Kundenprofil hinzugefügt.
 
-   Weitere Informationen finden Sie im Abschnitt [Aktivieren des Schemas zur Verwendung im Echtzeit-Kundenprofil](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=de#profile).
+   Weitere Informationen finden Sie im Abschnitt [Aktivieren des Schemas zur Verwendung im Echtzeit-Kundenprofil](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html#profile).
 
    >[!IMPORTANT]
    >
@@ -205,7 +205,7 @@ Weitere Informationen zur Verwendung des Adobe Analytics-Quell-Connectors finden
 
 Weitere Informationen zur Verwendung des HTTP-API-Quell-Connectors finden Sie unter [Aufnehmen und Verwenden von Streaming-Daten](./streaming.md).
 
-Einen Überblick über Quell-Connectoren einschließlich Links zu weiteren Informationen zu jedem einzelnen Connector finden Sie unter [Übersicht über Quell-Connectoren](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=de#terms-and-conditions).
+Einen Überblick über Quell-Connectoren einschließlich Links zu weiteren Informationen zu jedem einzelnen Connector finden Sie unter [Übersicht über Quell-Connectoren](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html#terms-and-conditions).
 
 
 ## Einrichten einer Verbindung

@@ -4,10 +4,10 @@ description: Erfahren Sie mehr über den Workflow zum Verschieben von Daten von 
 exl-id: 10c485c9-66ab-4925-a357-a66a374d4c6f
 feature: Use Cases
 role: Admin
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
 workflow-type: tm+mt
-source-wordcount: '308'
-ht-degree: 87%
+source-wordcount: '311'
+ht-degree: 79%
 
 ---
 
@@ -25,7 +25,7 @@ Sobald Sie historische Daten erfolgreich in Platform integriert haben, können S
 
 ## Konfigurieren einer vorhandenen Google Analytics-Implementierung für Adobe Experience Platform {#configure}
 
-Zur Aufnahme aktueller (Streaming-) Daten müssen diese zuerst an Adobe Experience Edge gesendet werden, von wo sie dann an Adobe Experience Platform weitergeleitet werden. Siehe [Einrichten des Streaming-Vorgangs von Google Analytics-Daten nach Adobe Experience Platform](streaming.md).
+Zur Erfassung aktueller (Streaming-)Daten müssen Daten an das Adobe Experience Platform Edge Network gesendet werden, das diese Daten dann an Adobe Experience Platform weiterleitet. Siehe [Einrichten des Streaming-Vorgangs von Google Analytics-Daten nach Adobe Experience Platform](streaming.md).
 
 ## Verbindung und Datenansicht in Customer Journey Analytics konfigurieren
 

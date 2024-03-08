@@ -4,10 +4,10 @@ description: Binden Sie Daten ein, die vom Entscheidungs-Management in Adobe Jou
 exl-id: fde45264-46cf-4c68-9872-7fb739748f21
 feature: Experience Platform Integration
 role: Admin
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
-workflow-type: ht
+source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
+workflow-type: tm+mt
 source-wordcount: '710'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -16,13 +16,13 @@ ht-degree: 100%
 
 Das [Entscheidungs-Management](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioning/get-started-decision/starting-offer-decisioning.html?lang=de) in Adobe Journey Optimizer erleichtert die Personalisierung durch eine zentrale Bibliothek mit Marketing-Angeboten und eine Entscheidungs-Engine. Dabei werden Regeln und Einschränkungen auf die von Adobe Experience Platform erstellten, umfangreichen Echtzeitprofile angewendet, sodass Sie Ihren Kundinnen und Kunden zum richtigen Zeitpunkt das richtige Angebot senden können.
 
-Das Entscheidungs-Management ist Teil von Adobe Journey Optimizer und ist darin integriert. Dank seiner umfassenden [API](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioning/api-reference/getting-started.html?lang=de)-Unterstützung kann es auch unabhängig von Journeys und Kampagnen verwendet werden, die in Adobe Journey Optimizer definiert sind.
+Das Entscheidungs-Management ist Teil von Adobe Journey Optimizer und ist darin integriert. Dank seiner umfassenden [API](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioning/api-reference/getting-started.html)-Unterstützung kann es auch unabhängig von Journeys und Kampagnen verwendet werden, die in Adobe Journey Optimizer definiert sind.
 
 Gehen Sie wie folgt vor, um vom Entscheidungs-Management generierte Daten zu importieren und eine erweiterte Analyse in Customer Journey Analytics durchzuführen:
 
 ## Senden von Daten aus dem Entscheidungs-Management an Adobe Experience Platform
 
-Adobe Experience Platform dient als zentrale Datenquelle und Bindeglied zwischen Entscheidungs-Management und Customer Journey Analytics. Daten aus dem Entscheidungs-Management werden **automatisch** in Experience Platform oder als Teil von **explizit gesendeten Erlebnisereignisse** (zum Beispiel Impressionen oder Klicks) erfasst. Weitere Informationen finden Sie unter [Erste Schritte mit der Datenerfassung](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioning/collect-event-data/data-collection.html?lang=de).
+Adobe Experience Platform dient als zentrale Datenquelle und Bindeglied zwischen Entscheidungs-Management und Customer Journey Analytics. Daten aus dem Entscheidungs-Management werden **automatisch** in Experience Platform oder als Teil von **explizit gesendeten Erlebnisereignisse** (zum Beispiel Impressionen oder Klicks) erfasst. Weitere Informationen finden Sie unter [Erste Schritte mit der Datenerfassung](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioning/collect-event-data/data-collection.html).
 
 ## Erstellen einer Verbindung
 

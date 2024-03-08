@@ -6,7 +6,7 @@ feature: Basics
 exl-id: c258fa39-c0b6-45a1-8547-79516c15a215
 mini-toc-levels: 3
 role: Admin
-source-git-commit: 14cdc7bd8817dbf1d7a9950fa6ff62aedff82640
+source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
 workflow-type: tm+mt
 source-wordcount: '1247'
 ht-degree: 52%
@@ -67,7 +67,7 @@ Zusätzlich dazu, als Produkt-Admin im **Customer Journey Analytics-Produktprofi
    * Verwalten von Zielen
    * Aktivieren von Zielen
 
-     Weitere Informationen zu Berechtigungen für Experience Platform-Ziele finden Sie unter [Ziele - Übersicht](https://experienceleague.adobe.com/docs/experience-platform/destinations/home.html?lang=en#access-controls).
+     Weitere Informationen zu Berechtigungen für Experience Platform-Ziele finden Sie unter [Ziele - Übersicht](https://experienceleague.adobe.com/docs/experience-platform/destinations/home.html#access-controls).
 
 ## Produktprofil-Administratorrolle
 
@@ -136,7 +136,7 @@ Die Registerkarte **[!UICONTROL Berechtigungen]** ist Teil jedes Produktprofils 
 | **[!UICONTROL Zugriff auf Auditprotokolle]** | Diese Berechtigung erzwingt die Berechtigungsprüfung für die [API](https://adobe.io/cja-apis/docs/endpoints/auditlogs/) und die Benutzeroberfläche für Administratorprotokolle. |
 | **[!UICONTROL Zugriff auf Analysis Workspace]** | Ermöglicht Benutzern den Zugriff auf Analysis Workspace unter Customer Journey Analytics. |
 | [!UICONTROL **Geführter Zugriff auf Analysen**] | Benutzer können [Geführte Analyseprojekte](/help/guided-analysis/overview.md). |
-| [!UICONTROL **Prognosen**] | Ermöglicht Benutzern den Zugriff auf die Prognosefunktion in Analysis Workspace |
+| [!UICONTROL **Prognose**] | Ermöglicht Benutzern den Zugriff auf die Prognosefunktion in Analysis Workspace |
 | **[!UICONTROL Verwaltung der Reporting-Nutzung]** | Ermöglicht Benutzenden das Anzeigen und Löschen aller in ihrem Unternehmen laufenden Berichte. |
 | **[!UICONTROL Anzeige der Reporting-Nutzung]** | Ermöglicht Benutzenden die Anzeige aller gleichzeitigen Berichtsanfragen. |
 | [!UICONTROL **Vollständiger Tabellenexport**] | Ermöglicht Benutzern [vollständige Tabellen in die Cloud exportieren](/help/analysis-workspace/export/export-cloud.md). |
@@ -146,7 +146,7 @@ Die Registerkarte **[!UICONTROL Berechtigungen]** ist Teil jedes Produktprofils 
 | **[!UICONTROL Anmerkungserstellung]** | Ermöglicht Benutzenden das Erstellen von [Anmerkungen](/help/components/annotations/overview.md). |
 | **[!UICONTROL Zielgruppenerstellung]** | Ermöglicht Benutzenden das Erstellen von [Zielgruppen](/help/components/audiences/audiences-overview.md). |
 | **[!UICONTROL Zielgruppenansicht]** | Ermöglicht Benutzenden die Ansicht von [Zielgruppen](/help/components/audiences/audiences-overview.md). |
-| [!UICONTROL **Projektverknüpfungen für beliebige Benutzer freigeben**] | Ermöglicht Benutzern [Projekte für andere freigeben.](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/share-projects.html?lang=de#share-public-link) |
+| [!UICONTROL **Projektverknüpfungen für beliebige Benutzer freigeben**] | Ermöglicht Benutzern [Projekte für andere freigeben.](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/share-projects.html#share-public-link) |
 | **[!UICONTROL Datenansichts-Tools]**: |   |
 | [!UICONTROL **Vollständiger Tabellenexport**] | Ermöglicht Benutzern [vollständige Tabellen in die Cloud exportieren](/help/analysis-workspace/export/export-cloud.md). |
 | [!UICONTROL **Zugriff auf SQL Query Service**] | Ermöglicht Benutzern Zugriff [Query Service in AEP](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=de). |

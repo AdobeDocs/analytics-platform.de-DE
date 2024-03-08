@@ -5,7 +5,7 @@ title: Customer Journey Analytics-Berichte in die Cloud exportieren
 feature: Curate and Share
 exl-id: 072eadcc-43ff-42e3-86ee-82062fa02eba
 role: User
-source-git-commit: 4f9878372f05da86b08449eeb17efb79b7432341
+source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
 workflow-type: tm+mt
 source-wordcount: '2210'
 ht-degree: 3%
@@ -146,7 +146,7 @@ Stellen Sie sicher, dass Ihre Tabellen, Ihre Umgebung und Ihre Berechtigungen di
 
 * **Umgebung:** Administratoren sollten sicherstellen, dass die in [Von Customer Journey Analytics verwendete IP-Adressen](/help/admin/ip-addresses.md) sind in der Firewall-Zulassungsliste enthalten.
 
-* **Berechtigungen:** In der Adobe Admin Console müssen Benutzer einem Produktprofil zugewiesen werden, das über die [!UICONTROL **Vollständiger Tabellenexport**] Berechtigung zum Export vollständiger Tabellen zugewiesen wurde. Informationen zum Zuweisen von Berechtigungen zu einem Produktprofil in der Admin Console finden Sie unter [Customer Journey Analytics-Berechtigung in Admin Console](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-admin/cja-access-control.html?lang=en#customer-journey-analytics-permissions-in-admin-console) in [Customer Journey Analytics-Zugangssteuerung](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-admin/cja-access-control.html).
+* **Berechtigungen:** In der Adobe Admin Console müssen Benutzer einem Produktprofil zugewiesen werden, das über die [!UICONTROL **Vollständiger Tabellenexport**] Berechtigung zum Export vollständiger Tabellen zugewiesen wurde. Informationen zum Zuweisen von Berechtigungen zu einem Produktprofil in der Admin Console finden Sie unter [Customer Journey Analytics-Berechtigung in Admin Console](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-admin/cja-access-control.html#customer-journey-analytics-permissions-in-admin-console) in [Customer Journey Analytics-Zugangssteuerung](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-admin/cja-access-control.html).
 
   >[!NOTE]
   >

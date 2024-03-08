@@ -4,7 +4,7 @@ description: Erfahren Sie mehr über das Konzept der Zielgruppenveröffentlichun
 exl-id: 30404bfc-0ee7-4f01-842c-7e6156dc0b45
 feature: Audiences
 role: User, Admin
-source-git-commit: e1815cad331b47b281f61d427ef342ea3b5b5d87
+source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
 workflow-type: tm+mt
 source-wordcount: '493'
 ht-degree: 50%
@@ -20,7 +20,7 @@ Das Veröffentlichen von Zielgruppen bietet eine klare Möglichkeit, Einblicke, 
 * Verwenden der Zielgruppe für eine Journey in Adobe Journey Optimizer.
 * Exportieren der Zielgruppe zu einem Drittanbieter über ein Experience Platform-Ziel.
 * Anreicherung des Echtzeit-Kundenprofils mit nützlichen Attributen, die aus ereignisbasierten Daten in Customer Journey Analytics abgeleitet wurden.
-* Dies alles geschieht mit minimaler Latenz nach der Publikation der Zielgruppe. [Weitere Informationen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html?lang=de#latency)
+* Dies alles geschieht mit minimaler Latenz nach der Publikation der Zielgruppe. [Weitere Informationen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html#latency)
 * Veröffentlichen einmaliger oder wiederkehrender Zielgruppen
 
 Die Zielgruppen, die Sie in Customer Journey Analytics erstellen, müssen nicht auf für das Profil aktivierten Datensätzen basieren. Sie können historische Daten in Experience Platform erfassen, ohne verknüpfte Datensätze und Schemas für Profile zu aktivieren. Verwenden Sie dann diese Datensätze, um relevante Zielgruppen im Customer Journey Analytics zu ermitteln und diese Zielgruppen zum Zwecke der Aktivierung im Echtzeit-Kundenprofil in Experience Platform zu veröffentlichen.
@@ -43,7 +43,7 @@ Die Zielgruppen, die Sie in Customer Journey Analytics erstellen, müssen nicht 
 
 ## Data Governance und Einverständnis
 
-Wenn Sie eine Zielgruppe in Customer Journey Analytics veröffentlichen, werden die mit den in der Zielgruppe verwendeten Feldern verknüpften Data Governance-Beschriftungen und -Richtlinien aufgezeichnet.  Wenn die Zielgruppe in einem Adobe Experience-Programm aktiviert wird, sind alle zugehörigen Data Governance-Beschriftungen und -Richtlinien für diese Zielgruppe verfügbar und es kann eine geeignete Durchsetzung angewendet werden. [Weitere Informationen über Einverständnis](https://experienceleague.adobe.com/docs/experience-platform/data-governance/policies/user-guide.html?lang=de#consent-policy).
+Wenn Sie eine Zielgruppe in Customer Journey Analytics veröffentlichen, werden die mit den in der Zielgruppe verwendeten Feldern verknüpften Data Governance-Beschriftungen und -Richtlinien aufgezeichnet.  Wenn die Zielgruppe in einem Adobe Experience-Programm aktiviert wird, sind alle zugehörigen Data Governance-Beschriftungen und -Richtlinien für diese Zielgruppe verfügbar und es kann eine geeignete Durchsetzung angewendet werden. [Weitere Informationen über Einverständnis](https://experienceleague.adobe.com/docs/experience-platform/data-governance/policies/user-guide.html#consent-policy?lang=de).
 
 ## Nächste Schritte
 
