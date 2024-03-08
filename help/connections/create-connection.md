@@ -8,7 +8,7 @@ role: Admin
 source-git-commit: 42232ff87ee822ceccf624ad8655c2dce8776814
 workflow-type: tm+mt
 source-wordcount: '2766'
-ht-degree: 97%
+ht-degree: 99%
 
 ---
 
@@ -26,16 +26,16 @@ Beim Workflow für die Erstellung und Bearbeitung von Verbindungen können alle 
 
 ## Voraussetzungen
 
-Die maximale Anzahl von Datensätzen, die Sie einer Verbindung hinzufügen können, ist auf 100 begrenzt. Der Mix hängt davon ab, welches Customer Journey Analytics-Package Ihr Unternehmen erworben hat.
+Die maximale Anzahl von Datensätzen, die Sie einer Verbindung hinzufügen können, ist auf 100 begrenzt. Die Mischung hängt davon ab, welches Customer Journey Analytics-Paket Ihr Unternehmen erworben hat.
 
-| **Auswählen** package | **Stiftung** package |
+| ****-Paket auswählen | **Stiftungs-**-Paket |
 | --- | --- |
-| Jede Kombination aus Ereignis-/Profil-/Lookup-Datensätzen mit bis zu 100 | Ein Ereignis-Datensatz pro Verbindung |
-|  | Bis zu 99 Profil- oder Lookup-Datensätze pro Verbindung |
+| Jede Kombination aus bis zu 100 Ereignis-/Profil-/Suchdatensätzen | Ein Ereignisdatensatz pro Verbindung |
+|  | Bis zu 99 Profil- oder Suchdatensätze pro Verbindung |
 
 {style="table-layout:auto"}
 
-Wenden Sie sich an Ihren Administrator, wenn Sie sich nicht sicher sind, welches Customer Journey Analytics-Package Sie haben. &#x200B;
+Wenden Sie sich an Ihre oder Ihren Admin, wenn Sie sich nicht sicher sind, welches Customer Journey Analytics-Paket Sie besitzen.
 
 ## Erstellen und Konfigurieren der Verbindung {#create-connection}
 
@@ -61,7 +61,7 @@ Wenden Sie sich an Ihren Administrator, wenn Sie sich nicht sicher sind, welches
    | **[!UICONTROL Schlüssel]** | Nur für Lookup-Datensätze (z. B. _id). |
    | **[!UICONTROL Übereinstimmender Schlüssel]** | Nur für Lookup-Datensätze (z. B. _id). |
    | **[!UICONTROL Neue Daten importieren]** | Auf „Ein“ oder „Aus“ einstellen. |
-   | **[!UICONTROL Aufstockungsdaten]** | Sie können die Aufstockung der Daten in einem Datensatz basierend auf Ereignis-Zeitstempeln anfordern. So können Sie beispielsweise eine Aufstockung der Daten der letzten sieben Tage anfordern, die richtige Personen-ID konfigurieren und Ihre Verbindung auf die korrekte Konfiguration testen. Wenn alle Einstellungen korrekt sind, können Sie alle verbleibenden Daten mühelos aufstocken.<p>Darüber hinaus können Sie den Import neuer Daten nach Datensatz aktivieren. |
+   | **[!UICONTROL Aufstockungsdaten]** | Sie können die Aufstockung der Daten in einem Datensatz basierend auf Ereignis-Zeitstempeln anfordern. So können Sie beispielsweise eine Aufstockung der Daten der letzten sieben Tage anfordern, die richtige Personen-ID konfigurieren und Ihre Verbindung auf die korrekte Konfiguration testen. Wenn alle Einstellungen korrekt sind, können Sie alle verbleibenden Daten mühelos aufstocken.<p>Darüber hinaus können Sie den Import neuer Daten nach Datensatz aktivieren.  |
    | **[!UICONTROL Aufstockungsstatus]** | Gibt an, ob Aufstockungsdaten verarbeitet werden. |
 
    {style="table-layout:auto"}
