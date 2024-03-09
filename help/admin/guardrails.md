@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Administration
 role: Admin
 exl-id: f093ac54-7d31-449b-a441-a65856a1d535
-source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
+source-git-commit: 2380d1c176f2d0d6672714ee068ec198734bcdaf
 workflow-type: tm+mt
 source-wordcount: '1519'
 ht-degree: 11%
@@ -98,7 +98,7 @@ Siehe auch Experience Platform [Real-time Customer Data Platform-Schutzmechanism
 
 | Name | Wert | Art von Limit | Beschreibung |
 |---|--:|---|---|
-| Projekte | 2.000 | Systemdurchsetztes Schutzschild | Maximale Anzahl der Projekte für eine Organisation. |
+| Projekte | 50.000 | Systemdurchsetztes Schutzschild | Maximale Anzahl der Projekte für eine Organisation. |
 | Datenansichten | 2.000 | Systemdurchsetztes Schutzschild | Maximale Anzahl an [Datenansichten](../data-views/data-views.md) für eine Organisation. |
 | Datenansichten | 50 | Systemdurchsetztes Schutzschild | Maximale Anzahl von Datenansichten für eine Verbindung |
 | Datensätze | 100 | Systemdurchsetztes Schutzschild | Maximale Anzahl an [Datensätze](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html?lang=de) pro Verbindung. |
