@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Administration
 role: Admin
 exl-id: f093ac54-7d31-449b-a441-a65856a1d535
-source-git-commit: 2380d1c176f2d0d6672714ee068ec198734bcdaf
+source-git-commit: 56b909a542915cd64251fb8849e55df920668025
 workflow-type: tm+mt
 source-wordcount: '1519'
 ht-degree: 11%
@@ -204,7 +204,7 @@ Siehe auch Experience Platform [Limits für die Datenerfassung](https://experien
 
 >[!NOTE]
 >
->Die folgenden Verarbeitungszeiten sind Limits, nicht vertragliche Service Level Agreements (SLAs). Die Latenz variiert je nach Kundenkonfiguration, Datenvolumen und Verbraucheranwendungen. Echte Verarbeitungszeiten sind oft schneller. Ihre spezifischen Vertragsbedingungen und SLAs finden Sie in Ihrem Customer Journey Analytics-Vertrag. Siehe Experience Platform [Limits für die Datenerfassung](https://experienceleague.adobe.com/docs/experience-platform/ingestion/Guardrails.html) für weitere Informationen.
+>Die folgenden Verarbeitungszeiten sind Limits, nicht vertragliche Service Level Agreements (SLAs). Die Latenz variiert je nach Kundenkonfiguration, Datenvolumen und Verbraucheranwendungen. Echte Verarbeitungszeiten sind oft schneller. Ihre spezifischen Vertragsbedingungen und SLAs finden Sie in Ihrem Customer Journey Analytics-Vertrag. Siehe Experience Platform [Limits für die Datenerfassung](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html) für weitere Informationen.
 
 | Datenfluss | Erwartete Latenz |
 |---|---|
