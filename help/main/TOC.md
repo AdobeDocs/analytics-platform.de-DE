@@ -9,10 +9,10 @@ index: true
 user-guide-title: Handbuch für Customer Journey Analytics
 user-guide-description: Hier erhalten Sie Informationen zu Adobe Customer Journey Analytics und Erläuterungen zur Nutzung von Analysis Workspace mit Daten aus Experience Platform.
 breadcrumb-title: Handbuch für Customer Journey Analytics
-source-git-commit: 53ce86d0009f2f5d7602ce55b938006c2600d2ca
+source-git-commit: a6dd3495b51edcb823431ccb87b283665ccd765d
 workflow-type: tm+mt
-source-wordcount: '1058'
-ht-degree: 79%
+source-wordcount: '1063'
+ht-degree: 80%
 
 ---
 
@@ -154,6 +154,7 @@ ht-degree: 79%
       + [Leeres Bedienfeld](../analysis-workspace/c-panels/blank-panel.md)
       + [Experimentier-Bedienfeld](../analysis-workspace/c-panels/experimentation.md)
       + [Freiform-Bedienfeld](../analysis-workspace/c-panels/freeform-panel.md)
+      + [Bedienfeld „Zielgruppendurchschnitt pro Minute“](/help/analysis-workspace/c-panels/average-minute-audience-panel.md)
       + [Bedienfeld „Quick Insights“](../analysis-workspace/c-panels/quickinsight.md)
       + [Bedienfeld „Gleichzeitige Medienbetrachter“](../analysis-workspace/c-panels/media-concurrent-viewers.md)
       + [Panel „Verbrachte Zeit bei der Medienwiedergabe“](../analysis-workspace/c-panels/media-playback-time-spent.md)

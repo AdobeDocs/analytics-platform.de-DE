@@ -2,113 +2,159 @@
 title: Bedienfeld „Zielgruppendurchschnitt pro Minute“
 description: Verwenden und Interpretieren des Bedienfelds „Medien-Zielgruppendurchschnitt pro Minute“ in Analysis Workspace.
 feature: Panels
+role: User, Admin
 exl-id: be8371ee-8bc6-4a99-8527-dd94eab8a7f9
-role: User
-source-git-commit: d5d81caff62d4fb56a57739ddffb81787f684e23
+source-git-commit: a6dd3495b51edcb823431ccb87b283665ccd765d
 workflow-type: tm+mt
-source-wordcount: '1333'
-ht-degree: 88%
+source-wordcount: '1656'
+ht-degree: 31%
 
 ---
 
 
-# Bedienfeld „Zielgruppendurchschnitt pro Minute“
+# Zielgruppenbereich mit mittlerer Medienmindebene
 
-<!-- THIS FEATURE IS SCHEDULED FOR 2023 -->
-
-Media Analytics-Kunden können das Bedienfeld für den Zielgruppendurchschnitt pro Minute verwenden, um die durchschnittliche Nutzung ihrer Inhalte besser zu verstehen. Der Zielgruppendurchschnitt pro Minute ermöglicht Vergleiche von Inhalten beliebiger Längen oder Genres. Darüber hinaus können Kunden diesen digitalen Zielgruppendurchschnitt pro Minute mit Metriken zum linearen TV-Durchschnitt pro Minute vergleichen oder ihn anhängen. Dieses Bedienfeld bietet mehr Flexibilität, um den Zielgruppendurchschnitt für benutzerdefinierte Zeiträume zu messen sowie für Fälle, bei denen die Klassifizierung der Dauer nachträglich aktualisiert wurde. Die aktuelle Metrik für den Zielgruppendurchschnitt pro Minute funktioniert nur, wenn die Dauer zur Verarbeitungszeit verfügbar ist.
+>[!NOTE]
+>
+>Das Zielgruppenfeld Durchschnittliche Medienminuten ist nur für Kunden verfügbar, die das Media Analytics-Add-on für Customer Journey Analytics erworben haben.
+>
+>Wenden Sie sich an Ihren Adobe-Vertriebsmitarbeiter oder Adobe-Account-Team, um Media Analytics zu erwerben.
 
 In Analysis Workspace bezeichnet der Zielgruppendurchschnitt pro Minute die Zeit, die mit der Ansicht Ihres Medien-Streams verbracht wurde, geteilt durch die Inhaltsdauer oder die Gesamtauswahl des Zeitraums mit der ausgewählten Granularität.
 
-Das Bedienfeld „Medien-Zielgruppendurchschnitt pro Minute“ ermöglicht die Analyse des Zielgruppendurchschnitts pro Minute je nach dem ausgewählten Inhalt, wenn die Dauer mithilfe von Klassifizierungen zur Verfügung gestellt wird.
-Das Bedienfeld „Zielgruppendurchschnitt pro Minute“ bietet außerdem Analysen über einen ausgewählten Zeitraum, die nach bestimmten Inhalten gefiltert werden können – unabhängig davon, ob die Dauer mit Klassifizierungen verfügbar ist oder nicht. Um auf das Bedienfeld Zielgruppendurchschnitt pro Minute für Medien zuzugreifen, navigieren Sie zu einer Datenansicht mit aktivierten Media Analytics-Komponenten. Klicken Sie dann auf das Bedienfeld-Symbol ganz links und ziehen Sie das Bedienfeld in Ihr Analysis Workspace-Projekt.
+Mit dem Zielgruppenbereich Durchschnittliche Medienminuten können Sie die durchschnittliche Nutzung Ihrer Inhalte besser verstehen, indem Sie Programme beliebiger Länge oder Genres vergleichen. Beispielsweise können Sie den durchschnittlichen Verbrauch beim Vergleich einer 30-minütigen Website mit einer 3-stündigen Sportveranstaltung nachvollziehen.
 
-<!-- For more information, see the Media Average Minute Audience introduction video:
-<< replace with AMA video when available >> -->
+Darüber hinaus können Sie das Mediendurchschnitts-Minute-Zielgruppenfeld verwenden, um diese digitale durchschnittliche Minute-Zielgruppe mit linearen TV-Durchschnittsminuten-Metriken zu vergleichen oder anzuhängen.
 
-<!-- >[!VIDEO](https://video.tv.adobe.com/v/330177/?quality=12) -->
+Der Bereich Zielgruppe für durchschnittliche Medienminuten bietet im Vergleich zur Metrik Zielgruppendurchschnitt pro Minute die folgenden Vorteile:
+
+* Unterstützt benutzerdefinierte Zeiträume
+
+* Ermöglicht die Aktualisierung der Dauer-Classification nach Verarbeitung der Ansichten (falls diese nicht vorhanden waren oder korrigiert werden müssen)
+
+  Wenn Sie dies bei Verwendung der Metrik getan haben, ist die Metrik entweder nicht vorhanden (wenn die Classification nicht vorhanden war) oder sie ist veraltet (wenn die Classification vorhanden, aber falsch war).
+
+## Auf das Zielgruppenfeld &quot;Durchschnittliche Medienminuten&quot;zugreifen
+
+1. Wechseln Sie in Analysis Workspace zu einer Report Suite, für die Media Analytics-Komponenten aktiviert sind.
+
+1. Wählen Sie im linken Navigationsbereich die **Bedienfelder** Symbol.
+
+   ![Symbol &quot;Bedienfelder&quot;im linken Navigationsbereich](assets/panels-icon.png)
+
+1. Ziehen Sie die [!UICONTROL **Durchschnittliche Medienminuten-Audience**] auf die Arbeitsfläche in Analysis Workspace.
+
+1. Um das Bedienfeld zu konfigurieren, fahren Sie mit [Bedienfeldeingaben](#panel-inputs).
 
 ## Bedienfeldeingaben {#Input}
 
-Sie können das Bedienfeld „Medien-Zielgruppendurchschnitt pro Minute“ mithilfe der folgenden Eingabeeinstellungen konfigurieren:
+Verwenden Sie die in diesem Abschnitt beschriebenen Eingabeeinstellungen, um das Audience-Bedienfeld für die durchschnittliche Minute der Medien zu konfigurieren.
 
-| Einstellung | Beschreibung |
-|---------|------------|
-| Datumsbereich der Bedienfelder | Der Datumsbereich des Panels ist standardmäßig „Heute“. Sie können es so verändern, dass Sie einen einzelnen Tag oder mehrere Monate auf einmal betrachten können. <br></br> Diese Visualisierung ist auf 1.440 Datenzeilen beschränkt (z. B. 24 Stunden bei einer Granularität auf Minutenebene). Wenn eine Kombination aus Datumsbereich und Granularität mehr als 1.440 Zeilen zur Folge hat, wird die Granularität automatisch aktualisiert, um den vollständigen Datumsbereich anzuzeigen. |
-| Filter hierher ziehen (oder eine beliebige andere Komponente) | Wie andere Bedienfelder filtert diese Einstellung Ihre Auswahl anhand der von Ihnen erstellten Filter. Dies ist eine hervorragende Möglichkeit, bestimmte Plattformen, Live-Streams oder andere gängige Mediensegmente anzusehen. |
-| Metrik berechnen für | Mit dieser Einstellung können Sie wählen, ob Sie den Zielgruppendurchschnitt pro Minute für einen bestimmten Inhalt anzeigen möchten, indem Sie *Spezifischer Inhalt* wählen, oder ob Sie den Zielgruppendurchschnitt pro Minute für einen bestimmten Zeitraum anzeigen möchten, indem Sie *Benutzerdefinierter Zeitraum* wählen. <br></br>Die Option für bestimmte Inhalte funktioniert nur, wenn die Dauer mithilfe von Klassifizierungen aktualisiert wurde. Wenn die Dauer nicht verfügbar ist oder Sie den Zielgruppendurchschnitt pro Minute für eine Zeitreihe mit mehreren Inhalten oder Inhalten ohne bestimmte Dauer anzeigen möchten (z. B. während eines Live-Streams oder -Ereignisses), sollten Sie einen benutzerdefinierten Zeitraum auswählen. Diese Einstellung ändert den Workflow und die Berichtsausgabe. |
+1. Beginnen Sie mit der Erstellung eines Audience-Bedienfelds mit der durchschnittlichen Medienminuten, wie beschrieben in [Auf das Zielgruppenfeld &quot;Durchschnittliche Medienminuten&quot;zugreifen](#access-the-media-average-minute-audience-panel).
+
+1. Konfigurieren Sie die folgenden Eingabeeinstellungen:
+
+   | Einstellung | Beschreibung |
+   |---------|------------|
+   | **Datumsbereich des Bedienfelds** | Der Datumsbereich des Bedienfelds ist standardmäßig [!UICONTROL **Diesen Monat**]. Sie können sie bearbeiten, um einen oder mehrere Monate gleichzeitig anzuzeigen. <br></br> Diese Visualisierung ist auf 1.440 Datenzeilen beschränkt (z. B. 24 Stunden bei einer Granularität auf Minutenebene). Wenn eine Kombination aus Datumsbereich und Granularität mehr als 1.440 Zeilen zur Folge hat, wird die Granularität automatisch aktualisiert, um den vollständigen Datumsbereich anzuzeigen. |
+   | [!UICONTROL **Segment hier (oder einer anderen Komponente) ablegen**] | Wie andere Bedienfelder filtert diese Einstellung Ihre Auswahl anhand von Segmenten, die Sie erstellt haben. Dies ist eine hervorragende Möglichkeit, bestimmte Plattformen, Live-Streams oder andere gängige Mediensegmente anzusehen. |
+   | [!UICONTROL **Berechnete Metrik für**] | Wählen Sie aus, ob Sie die durchschnittliche Minutenzielgruppe für einen bestimmten Inhalt anzeigen möchten oder ob Sie die durchschnittliche Minutenzielgruppe für einen benutzerdefinierten Zeitraum anzeigen möchten:<ul><li>**Spezifischer Inhalt:** Dies ist nur verfügbar, wenn die Dauer mithilfe von Classifications aktualisiert wurde. Wenn die Dauer nicht verfügbar ist oder Sie die durchschnittliche Minutenzielgruppe für eine Zeitreihe mit mehreren Inhalten oder Inhalten ohne bestimmte Dauer anzeigen möchten (z. B. während eines Live-Streams oder -Ereignisses), sollten Sie Folgendes auswählen: [!UICONTROL **Benutzerdefinierter Zeitraum**]. (Die Dauer kann mithilfe von Classifications entweder vor oder nach der Verarbeitungszeit festgelegt werden.)</li><li>**Benutzerdefinierter Zeitraum:** Dies ist unabhängig davon verfügbar, ob die Dauer mit Classifications verfügbar gemacht wird.</li></ul> <p>Diese Einstellung ändert den Workflow und die Berichtsausgabe.</p> |
+
+1. Fahren Sie mit [Spezifischer Inhalt](#specific-content) oder [Benutzerdefinierter Zeitraum](#custom-time-period), abhängig von der in der Variablen [!UICONTROL **Berechnete Metrik für**] Dropdown-Menü.
 
 ### Bestimmter Inhalt
 
-| Einstellung | Beschreibung |
-|---------|------------|
-| Berichtsdimensionen | Wenn Sie einen bestimmten Inhalt auswählen, können Sie für die Berichtsausgabe entweder das Feld für den Videonamen oder die Inhalts-ID verwenden, um den Inhalt und den zugehörigen Zielgruppendurchschnitt pro Minute für den ausgewählten Zeitraum anzuzeigen. |
-| Inhalte filtern nach (optional) | Sie können den spezifischen Inhalt nach der gewünschten Ansicht oder der Struktur Ihrer Daten filtern. |
-| Sendung, Staffel, Folge | Wenn Sie &quot;Anzeigen, Staffel, Folge&quot;auswählen, werden Ihre verfügbaren Sendungen in der Dropdown-Liste angezeigt, die Sie mithilfe einer Suche filtern können (oder indem Sie den Anzeigennamen aus der linken Spalte ziehen und ablegen). Sie können Ihre Auswahl hier beenden, um alle Staffeln Ihrer Sendung zu sehen, oder Sie können nach einzelnen Staffeln und dann nach einzelnen Folgen filtern. Diese Einstellung zeigt die Daten für diese Sendungen, Staffeln oder Folgen für den ausgewählten Zeitraum an. |
-| Benutzerdefinierte Dimension | Wenn sich der Name Ihrer Sendung unter einer benutzerdefinierten Dimension befindet, können Sie ihn entweder über die Suche im Dropdown-Menü der Dimension (optional) oder über die Suche in der linken Spalte finden. Das Dimensionselement wird basierend auf dieser Auswahl automatisch ausgefüllt und als Folge behandelt. |
-| Keine | Sie können *Keines* um alle Videonamen anzuzeigen, die durchschnittliche Minutenzielgruppendaten für die ausgewählte Auswahl enthalten. |
+1. Wenn Sie [!UICONTROL **Spezifischer Inhalt**] im [!UICONTROL **Berechnete Metrik für**] Dropdown-Menü beim [Konfigurieren von Bedienfeldeingaben](#panel-inputs)Legen Sie die folgenden Konfigurationsoptionen fest:
+
+   | Einstellung | Beschreibung |
+   |---------|------------|
+   | [!UICONTROL **Berichtsdimension**] | Wenn Sie einen bestimmten Inhalt auswählen, können Sie für die Berichtsausgabe entweder das Feld für den Videonamen oder die Inhalts-ID verwenden, um den Inhalt und den zugehörigen Zielgruppendurchschnitt pro Minute für den ausgewählten Zeitraum anzuzeigen. |
+   | [!UICONTROL **Filtern von Inhalten nach (optional)**] | Wählen Sie aus, wie der spezifische Inhalt gefiltert werden soll, je nach gewünschter Ansicht oder Struktur der Daten. <ul>[!UICONTROL **Einblenden, Staffel, Folge**]: Zeigt Ihre verfügbaren Anzeigen in der Dropdown-Liste an, die Sie mithilfe einer Suche filtern können (oder durch Ziehen und Ablegen des Anzeigennamens aus der linken Spalte). Sie können Ihre Auswahl hier beenden, um alle Staffeln Ihrer Sendung zu sehen, oder Sie können nach einzelnen Staffeln und dann nach einzelnen Folgen filtern. Diese Einstellung zeigt die Daten für diese Sendungen, Staffeln oder Folgen für den ausgewählten Zeitraum an.</li><li>[!UICONTROL **Benutzerdefinierte Dimension**]: Wenn Ihr Anzeigename unter einer benutzerdefinierten Dimension liegt, können Sie ihn entweder durch Suchen in der Dropdown-Liste &quot;Dimension&quot;(optional) oder durch Verwenden der linken Spaltensuche finden. Das Dimensionselement wird basierend auf dieser Auswahl automatisch ausgefüllt und als Folge behandelt.</li><li>[!UICONTROL **Keines**]: Zeigt alle Videonamen an, die für die ausgewählte Auswahl durchschnittliche Minutenzielgruppendaten aufweisen. (Diese Optionen sind standardmäßig ausgewählt.)</li></ul> |
+
+1. Fahren Sie mit [Erweiterte Einstellungen für spezifischen Inhalt](#specific-content-advanced-settings) , um die erweiterten Einstellungen zu konfigurieren.
 
 ### Erweiterte Einstellungen für spezifischen Inhalt
 
-| Einstellung | Beschreibung |
-|---------|------------|
-| Tabelleneinstellungen | Die Standardeinstellung zeigt die Berechnungswerte in der Tabelle an, wobei Zähler und Nenner des Zielgruppendurchschnitts pro Minute als die vorangehenden Spalten in der Tabelle angezeigt werden. Wenn Sie diese Option deaktivieren, werden diese beiden Spalten entfernt, sodass nur der Zielgruppendurchschnitt pro Minute neben dem Videonamen oder der Inhalts-ID verbleibt. |
-| Besuchszeit-Kennzahl | Sie können die standardmäßige mit dem Inhalt verbrachte Zeit auswählen, die nur die Inhaltsdauer enthält, oder die mit der Medienwiedergabe verbrachte Zeit verwenden, die die mit dem Inhalt und den Werbeanzeigen verbrachte Zeit als Zählerberechnung für den Zielgruppendurchschnitt pro Minute enthält. |
+1. Mit [!UICONTROL **Spezifischer Inhalt**] in der [!UICONTROL **Berechnete Metrik für**] Dropdown-Menü auswählen [!UICONTROL **Erweiterte Einstellungen anzeigen**] und geben Sie dann die folgenden Konfigurationsoptionen an:
+
+   | Einstellung | Beschreibung |
+   |---------|------------|
+   | Tabelleneinstellungen | Die Standardeinstellung zeigt die Berechnungswerte in der Tabelle an, wobei Zähler und Nenner des Zielgruppendurchschnitts pro Minute als die vorangehenden Spalten in der Tabelle angezeigt werden. Wenn Sie diese Option deaktivieren, werden diese beiden Spalten entfernt, sodass nur der Zielgruppendurchschnitt pro Minute neben dem Videonamen oder der Inhalts-ID verbleibt. |
+   | Besuchszeit-Kennzahl | Sie können die standardmäßige mit dem Inhalt verbrachte Zeit auswählen, die nur die Inhaltsdauer enthält, oder die mit der Medienwiedergabe verbrachte Zeit verwenden, die die mit dem Inhalt und den Werbeanzeigen verbrachte Zeit als Zählerberechnung für den Zielgruppendurchschnitt pro Minute enthält. |
+
+1. Auswählen [!UICONTROL **Build**] , um die Erstellung des Audience-Bedienfelds für die durchschnittliche Minute der Medien abzuschließen.
+
+1. Fahren Sie mit [Bedienfeldausgabe](#panel-output) für Informationen zur Verwendung des Bereichs Zielgruppe mit durchschnittlich Medienminuten.
 
 ### Benutzerdefinierter Zeitraum
 
-| Einstellung | Beschreibung |
-|---------|------------|
-| Granularität | Die Standardgranularität beträgt 5 Minuten. Sie können jedoch eine beliebige andere Granularität auswählen, die als Nenner für die Zeitreihe innerhalb Ihrer allgemeinen Zeitraumauswahl in der Kalenderauswahl verwendet wird. Wenn Sie beispielsweise 12:00 Uhr bis 12:30 Uhr mit einer Granularität von 5 Minuten auswählen, erhalten Sie den Zielgruppendurchschnitt pro Minute über die gesamte halbe Stunde sowie sechs Zeilen mit dem Zielgruppendurchschnitt pro Minute für jeden 5-minütigen Zeitraum. Diese Zeilen werden als Datenpunkte für das Zeitreihendiagramm verwendet. |
-| Inhalte filtern nach (optional) | Sie können den spezifischen Inhalt nach der gewünschten Ansicht oder der Struktur Ihrer Daten filtern. |
-| Sendung, Staffel, Folge | Auswählen *Einblenden, Staffel, Folge* zeigt Ihre verfügbaren Anzeigen in der Dropdown-Liste an, die Sie per Suche filtern können (oder indem Sie den Anzeigennamen aus der linken Spalte ziehen und ablegen). Sie können Ihre Auswahl hier beenden, um alle Staffeln Ihrer Sendung zu sehen, oder Sie können nach einzelnen Staffeln und dann nach einzelnen Folgen filtern. Diese Einstellung zeigt die Daten für diese Sendungen, Staffeln oder Folgen für den ausgewählten Zeitraum an. |
-| Benutzerdefinierte Dimension | Wenn sich der Name Ihrer Sendung unter einer benutzerdefinierten Dimension befindet, können Sie ihn entweder über die Suche im Dropdown-Menü der Dimension (optional) oder über die Suche in der linken Spalte finden. Das Dimensionselement wird basierend auf dieser Auswahl automatisch ausgefüllt und als Folge behandelt. |
-| Keine | Sie können *Keines* um alle Videonamen über den ausgewählten Zeitraum anzuzeigen. |
+1. Wenn Sie [!UICONTROL **Benutzerdefinierter Zeitraum**] im [!UICONTROL **Berechnete Metrik für**] Dropdown-Menü beim [Konfigurieren von Bedienfeldeingaben](#panel-inputs)Legen Sie die folgenden Konfigurationsoptionen fest:
+
+   | Einstellung | Beschreibung |
+   |---------|------------|
+   | Granularität | Die Standardgranularität lautet [!UICONTROL **5 Minuten**], Sie können jedoch eine beliebige Granularität auswählen, die als Nenner für die Zeitreihe innerhalb der Gesamtzeitauswahl, die in der Kalenderauswahl vorgenommen wird, verwendet wird. Wenn Sie beispielsweise 12:00 Uhr bis 23:30 Uhr mit einer Granularität von 5 Minuten auswählen, werden die durchschnittliche Minutenzielgruppe über die gesamte halbe Stunde sowie sechs Zeilen mit der durchschnittlichen Minutenzielgruppe für jeden 5-minütigen Zeitraum zurückgegeben. Diese Zeilen werden als Datenpunkte für das Zeitreihendiagramm verwendet. |
+   | [!UICONTROL **Filtern von Inhalten nach (optional)**] | Wählen Sie aus, wie der spezifische Inhalt gefiltert werden soll, je nach gewünschter Ansicht oder Struktur der Daten. <ul>[!UICONTROL **Einblenden, Staffel, Folge**]: Zeigt Ihre verfügbaren Anzeigen in der Dropdown-Liste an, die Sie mithilfe einer Suche filtern können (oder durch Ziehen und Ablegen des Anzeigennamens aus der linken Spalte). Sie können Ihre Auswahl hier beenden, um alle Staffeln Ihrer Sendung zu sehen, oder Sie können nach einzelnen Staffeln und dann nach einzelnen Folgen filtern. Diese Einstellung zeigt die Daten für diese Sendungen, Staffeln oder Folgen für den ausgewählten Zeitraum an.</li><li>[!UICONTROL **Benutzerdefinierte Dimension**]: Wenn Ihr Anzeigename unter einer benutzerdefinierten Dimension liegt, können Sie ihn entweder durch Suchen in der Dropdown-Liste &quot;Dimension&quot;(optional) oder durch Verwenden der linken Spaltensuche finden. Das Dimensionselement wird basierend auf dieser Auswahl automatisch ausgefüllt und als Folge behandelt.</li><li>[!UICONTROL **Keines**]: Zeigt alle Videonamen an, die für die ausgewählte Auswahl durchschnittliche Minutenzielgruppendaten aufweisen. (Diese Optionen sind standardmäßig ausgewählt.)</li></ul> |
+
+1. Fahren Sie mit [Erweiterte Einstellungen für benutzerdefinierte Zeiträume](#custom-time-period-advanced-settings) , um die erweiterten Einstellungen zu konfigurieren.
 
 ### Erweiterte Einstellungen für benutzerdefinierte Zeiträume
 
-| Einstellung | Beschreibung |
-|---------|------------|
-| Tabelleneinstellungen | Die Standardeinstellung zeigt die Berechnungswerte in der Tabelle an, die den Zähler und Nenner des Zielgruppendurchschnitts pro Minute als die vorangehenden Spalten in der Tabelle anzeigt. Wenn Sie diese Option deaktivieren, werden die beiden Spalten entfernt, sodass neben dem Zeitraum nur der Zielgruppendurchschnitt pro Minute verbleibt. |
+1. Mit [!UICONTROL **Benutzerdefinierter Zeitraum**] in der [!UICONTROL **Berechnete Metrik für**] Dropdown-Menü auswählen [!UICONTROL **Erweiterte Einstellungen anzeigen**] und geben Sie dann die folgende Konfigurationsoption an:
 
+   | Einstellung | Beschreibung |
+   |---------|------------|
+   | Tabelleneinstellungen | Die Standardeinstellung zeigt die Berechnungswerte in der Tabelle an, die den Zähler und Nenner des Zielgruppendurchschnitts pro Minute als die vorangehenden Spalten in der Tabelle anzeigt. Wenn Sie diese Option deaktivieren, werden die beiden Spalten entfernt, sodass neben dem Zeitraum nur der Zielgruppendurchschnitt pro Minute verbleibt. |
 
-## Bestimmte Ausgaben im Inhaltsbedienfeld
+1. Auswählen [!UICONTROL **Build**] , um die Erstellung des Audience-Bedienfelds für die durchschnittliche Minute der Medien abzuschließen.
 
-Das Bedienfeld „Medien-Zielgruppendurchschnitt pro Minute“ gibt Folgendes zurück:
+1. Fahren Sie mit [Bedienfeldausgabe](#panel-output) für Informationen zur Verwendung des Bereichs Zielgruppe mit durchschnittlich Medienminuten.
+
+## Bedienfeldausgabe
+
+Die Bedienfeldausgabe variiert je nachdem, ob Sie ausgewählt haben [!UICONTROL **Spezifischer Inhalt**] oder [!UICONTROL **Benutzerdefinierter Zeitraum**] im [!UICONTROL **Berechnete Metrik für**] Dropdown-Menü beim [Konfigurieren von Bedienfeldeingaben](#panel-inputs).
+
+### Bestimmter Inhalt
+
+Das Zielgruppen-Bedienfeld für die durchschnittliche Medienminütigkeit gibt Folgendes zurück:
 
 * Gesamtwert des Zielgruppendurchschnitts pro Minute für Ihre gesamte Auswahl
 * Filter und Zielgruppendurchschnitt pro Minute für die einzelnen Videos, die in einer Tabelle angezeigt werden
 * Mit dem Inhalt verbrachte Zeit und Videolänge (Dauer), wenn diese erweiterte Einstellung ausgewählt wurde
 
-Sie können das Bedienfeld jederzeit bearbeiten und neu erstellen. Klicken Sie dazu oben rechts auf den Stift „Bearbeiten“.
+Um das Bedienfeld jederzeit zu bearbeiten und neu zu erstellen, wählen Sie oben rechts das Symbol Bearbeiten (Bleistift) aus.
 
-![Die Standardansicht des Bereichs Zielgruppendurchschnitt pro Minute .](assets/specific-content-panel-output.png)
+![Standardansicht](assets/specific-content-panel-output.png)
 
+### Spezifische Inhaltsdatenquellen
 
-### Bestimmte Inhaltsdatenquelle
-
-Die einzige Kennzahl, die in diesem Bedienfeld verwendet werden kann, ist „Zielgruppendurchschnitt pro Minute“.
+Im Bereich Zielgruppe für Medien mit durchschnittlicher Minute werden zur Datenerfassung nur die Metrik Zielgruppendurchschnitt pro Minute verwendet. Aufschlüsselungen oder andere Metriken können nicht im Bereich verwendet werden.
 
 | Metrik | Beschreibung |
 |--------|-------------|
 | Zielgruppendurchschnitt pro Minute | Die Zeit, die mit der Ansicht Ihres Medien-Streams verbracht wurde, dividiert durch die Videolänge (Dauer), die über Classifications bereitgestellt wird. |
 
-## Benutzerdefinierter Zeitraum für die Bedienfeldausgabe {#custom-time-period-output}
+### Benutzerdefinierter Zeitraum {#custom-time-period-output}
 
-Das Bedienfeld „Medien-Zielgruppendurchschnitt pro Minute“ gibt den Zielgruppendurchschnitt pro Minute für Ihre gesamte Auswahl, den maximalen und minimalen Zielgruppendurchschnitt pro Minute sowie das Liniendiagramm mit dem Zielgruppendurchschnitt pro Minute für die gesamte Auswahl zurück. Die nachstehende Tabelle zeigt die Filter und den Zielgruppendurchschnitt pro Minute für die Granularitäten sowie die mit dem Inhalt verbrachte Zeit und die Granularität für jeden Zeitraum, an dem diese erweiterte Einstellung ausgewählt wurde.
+Das Zielgruppen-Bedienfeld für die durchschnittliche Medienminütigkeit gibt Folgendes zurück:
 
-Sie können das Bedienfeld jederzeit bearbeiten und neu erstellen. Klicken Sie dazu oben rechts auf den Stift „Bearbeiten“.
+* Gesamtdurchschnittl. Minutenzielgruppe für die gesamte Auswahl
 
-![Das Bedienfeld Zielgruppendurchschnitt pro Minute zeigt die Daten für die gesamte Auswahl an.](assets/custom-time-period-panel-output.png)
+* Maximale und minimale durchschnittliche Minutenzielgruppe
 
-### Datenquelle für den benutzerdefinierten Zeitraum
+* Das Liniendiagramm zeigt die durchschnittliche Minutenzielgruppe über die gesamte Auswahl.
 
-Die einzige Kennzahl, die in diesem Bedienfeld verwendet werden kann, ist „Zielgruppendurchschnitt pro Minute“.
+* Eine Tabelle mit den Filtern und der durchschnittlichen Minutenzielgruppe für die Granularitäten sowie der Besuchszeit für den Inhalt und der Granularität für jeden Zeitraum
+
+  Diese Tabelle wird nur angezeigt, wenn die Option unter den erweiterten Einstellungen [!UICONTROL **Berechnungswerte in Tabelle anzeigen**] ausgewählt ist.
+
+Um das Bedienfeld jederzeit zu bearbeiten und neu zu erstellen, wählen Sie oben rechts das Symbol Bearbeiten (Bleistift) aus.
+
+![Output von gleichzeitigen Betrachtern](assets/custom-time-period-panel-output.png)
+
+### Datenquelle für benutzerdefinierte Zeiträume
+
+Im Bereich Zielgruppe für Medien mit durchschnittlicher Minute werden zur Datenerfassung nur die Metrik Zielgruppendurchschnitt pro Minute verwendet. Aufschlüsselungen oder andere Metriken können nicht im Bereich verwendet werden.
 
 | Metrik | Beschreibung |
 |---|---|
 | Zielgruppendurchschnitt pro Minute | Die mit der Ansicht Ihres Medien-Streams verbrachte Zeit dividiert durch die Gesamtauswahl oder die ausgewählte Granularität in Minuten. |
-
-
-
-<!-- For more information about Media Average Minute Audience, visit [MA doc page]( https://url). -->
