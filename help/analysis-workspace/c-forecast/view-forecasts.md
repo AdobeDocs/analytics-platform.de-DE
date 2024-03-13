@@ -3,7 +3,8 @@ description: Erfahren Sie, wie Sie Prognosen in einer Tabelle oder einem Liniend
 title: Anzeigen von Prognosen in Analysis Workspace
 feature: Visualizations
 role: User
-source-git-commit: e52cee369be75785a99798d5acfa9cfc5aba2986
+exl-id: 4a8b602c-e6aa-4a46-bba9-642387e6af88
+source-git-commit: fea1b12a594a820ab2e55f850ca95c5a373184f0
 workflow-type: tm+mt
 source-wordcount: '368'
 ht-degree: 1%
@@ -16,7 +17,7 @@ Sie können Prognosen in einer Freiformtabelle oder in einem Liniendiagramm anze
 
 ## Anzeigen von Prognosen in einer Tabelle
 
-Sie können Prognosen in einer Zeitreihen-Freiformtabelle anzeigen. Wenn Vorschau anzeigen für Freiformtabelle in aktiviert ist [Benutzereinstellungen](../user-preferences.md), wird die Prognose automatisch für die erste Metrikspalte angezeigt, die der Tabelle hinzugefügt wurde. Für jede zusätzliche Spalte:
+Sie können Prognosen in einer Zeitreihen-Freiformtabelle anzeigen. Wann [!UICONTROL Vorschau anzeigen] ist für die Freiformtabelle in [Benutzereinstellungen](../user-preferences.md), wird die Prognose automatisch für die erste Metrikspalte angezeigt, die der Tabelle hinzugefügt wurde. Für jede zusätzliche Spalte:
 
 1. Symbol Spalteneinstellungen auswählen ![Spalteneinstellungen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Settings_18_N.svg) in der Spaltenüberschrift und stellen Sie dann sicher, dass **[!UICONTROL Vorschau anzeigen]** in der Optionsliste ausgewählt ist. Weitere Informationen finden Sie unter [Spalteneinstellungen](../visualizations/freeform-table/column-row-settings/column-settings.md).
 
@@ -50,5 +51,4 @@ Die Prognosen werden im Liniendiagramm wie folgt angezeigt:
    * prognostizierter Wert für die Metrik
    * Obergrenze des prognostizierten Werts für die Metrik
    * Untergrenze des prognostizierten Werts für die Metrik
-* Der schattierte Bereich zeigt das Konfidenzband der Prognose an.
-
+* Der schattierte Bereich zeigt das Konfidenzband der Prognose.

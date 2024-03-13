@@ -5,10 +5,10 @@ exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
+source-git-commit: 948f5d986d9cde2b2994165896e0a22baace88ab
 workflow-type: tm+mt
-source-wordcount: '2766'
-ht-degree: 99%
+source-wordcount: '2888'
+ht-degree: 94%
 
 ---
 
@@ -35,7 +35,7 @@ Die maximale Anzahl von Datensätzen, die Sie einer Verbindung hinzufügen könn
 
 {style="table-layout:auto"}
 
-Wenden Sie sich an Ihre oder Ihren Admin, wenn Sie sich nicht sicher sind, welches Customer Journey Analytics-Paket Sie besitzen.
+Wenden Sie sich an Ihren Administrator, wenn Sie sich nicht sicher sind, welches Customer Journey Analytics-Paket Sie haben.
 
 ## Erstellen und Konfigurieren der Verbindung {#create-connection}
 
@@ -185,3 +185,12 @@ Diese Berechnung wird für jeden Datensatz in der Verbindung durchgeführt.
    In diesem Beispiel ist „analytics_demo_data“ der Name des Datensatzes.
 
 2. Um alle in Adobe Experience Platform vorhandenen Datensätze anzuzeigen, führen Sie die Abfrage `Show Tables` durch.
+
+
+## Algorithmisches Beschneiden großer Lookup-Datensätze
+
+Beim Erstellen einer Verbindung können Sie große Datensätze zu Suchzwecken hinzufügen. Beispiel: ein Datensatz, der einen Produktkatalog darstellt, sodass beim Erstellen von Berichten und Visualisierungen nach beschreibenden Produktinformationen gesucht werden kann. Ein solch großer Lookup-Datensatz kann die maximal 10 Millionen eindeutigen Suchen überschreiten, die derzeit als Schutz implementiert sind, was dazu führt, dass zusätzliche Daten übersprungen werden.
+
+Sie können die algorithmische Beschneidung eines solch großen Lookup-Datensatzes anfordern. Durch dieses Beschneiden werden nur Daten in den Lookup-Datensatz geladen, für die im Ereignis-Datensatz-Teil Ihrer Verbindung Schlüssel verfügbar sind. Die im Algorithmus verwendete Referenzanzahl wird auf 90 Tage zurückgesetzt und wöchentlich aktualisiert.
+
+Wenden Sie sich für weitere Informationen an Ihren Adobe-Support-Mitarbeiter.

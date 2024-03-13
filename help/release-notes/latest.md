@@ -3,16 +3,16 @@ title: Aktuelle Versionshinweise zu Customer Journey Analytics anzeigen
 description: Neueste Versionshinweise zu Customer Journey Analytics
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 1b39449fa58157fb61d619de82235cba326ffe2c
+source-git-commit: 7f0a348738d2f3a53ec57558d321a3501afe8d00
 workflow-type: tm+mt
-source-wordcount: '831'
-ht-degree: 57%
+source-wordcount: '841'
+ht-degree: 51%
 
 ---
 
 # Aktuelle Adobe Customer Journey Analytics-Versionshinweise (März 2024)
 
-**Zuletzt aktualisiert**: Samstag, 8. März 2024
+**Zuletzt aktualisiert**: Donnerstag, 13. März 2024
 
 Diese Versionshinweise beziehen sich auf den Veröffentlichungszeitraum von Ende des 13. März 2024 bis April 2024. Versionen von Adobe Customer Journey Analytics basieren auf einem [Modell der kontinuierlichen Bereitstellung](releases.md), das einen besser skalierbaren, schrittweisen Ansatz für die Implementierung von Funktionen ermöglicht. Dementsprechend werden diese Versionshinweise mehrmals im Monat aktualisiert. Bitte überprüfen Sie sie regelmäßig.
 
@@ -20,9 +20,9 @@ Diese Versionshinweise beziehen sich auf den Veröffentlichungszeitraum von Ende
 
 | Funktion | Beschreibung | [Rollout-Beginn](releases.md) | [Allgemeine Verfügbarkeit](releases.md) |
 | ----------- | ---------- | ------- | ---- |
-| **Auf der Landingpage &quot;Projekte&quot;verfügbare neue Spalte** | Die **[!UICONTROL Zuletzt verwendet]** ist jetzt bei Ansicht der Registerkarte Projekte auf der [Customer Journey Analytics-Landingpage](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/landing.html). Anhand dieser Informationen können Sie feststellen, ob ein Projekt für Benutzer in Ihrer Organisation nützlich ist, indem Sie das Datum und die Uhrzeit des letzten Öffnens des Projekts anzeigen. Zuvor wurde die Variable **[!UICONTROL Zuletzt verwendet]** -Spalte war nur im Manager für berechnete Metriken, im Segment-Manager und im Warnhinweismanager verfügbar. |  | Donnerstag, 13. März 2024 |
-| **Nutzungsmetriken** | Die Nutzungsmetrik-Schnittstelle zeigt die Verwendung von erfassten und berichtspflichtigen Zeilen über alle Verbindungen hinweg an. Mit dieser Schnittstelle können Sie festlegen, ob Ihre Customer Journey Analytics-Nutzung den vertraglich vereinbarten Bedingungen entspricht. |  | Donnerstag, 13. März 2024 |
-| **Media Analytics-Berichte – Zielgruppendurchschnitt pro Minute (AMA)** | Das Bedienfeld „Zielgruppendurchschnitt pro Minute“ ist jetzt in CJA verfügbar. Media Analytics-Kundinnen und -Kunden können das Bedienfeld „Zielgruppendurchschnitt pro Minute“ verwenden, um die durchschnittliche Nutzung ihrer Inhalte besser zu verstehen. Der Zielgruppendurchschnitt pro Minute ermöglicht Vergleiche von Inhalten beliebiger Längen oder Genres. Darüber hinaus können Kunden diesen digitalen Zielgruppendurchschnitt pro Minute mit Metriken zum linearen TV-Durchschnitt pro Minute vergleichen oder ihn anhängen. Dieses Bedienfeld bietet mehr Flexibilität, um die durchschnittliche Zielgruppe für benutzerdefinierte Zeiträume sowie den Zeitpunkt zu ermitteln, an dem die Klassifizierung der Dauer nachträglich aktualisiert wurde.  |  | 12. März 2024 |
+| **Auf der Landingpage &quot;Projekte&quot;verfügbare neue Spalte** | Die **[!UICONTROL Zuletzt verwendet]** ist jetzt bei Ansicht der Registerkarte Projekte auf der [Customer Journey Analytics-Landingpage](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/landing.html). <p>Anhand dieser Informationen können Sie feststellen, ob ein Projekt für Benutzer in Ihrer Organisation nützlich ist, indem Sie das Datum und die Uhrzeit des letzten Öffnens des Projekts anzeigen. Zuvor wurde die Variable **[!UICONTROL Zuletzt verwendet]** -Spalte war nur im Manager für berechnete Metriken, im Segment-Manager und im Warnhinweismanager verfügbar.</p> |  | Donnerstag, 13. März 2024 |
+| **Nutzungsmetriken** | Die [Benutzeroberfläche für Nutzungsmetriken](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/manage-connections.html?lang=de) zeigt die Verwendung von aufgenommenen und berichtspflichtigen Zeilen über alle Verbindungen hinweg. Mit dieser Schnittstelle können Sie festlegen, ob Ihre Customer Journey Analytics-Nutzung den vertraglich vereinbarten Bedingungen entspricht. |  | Donnerstag, 13. März 2024 |
+| **Media Analytics-Berichte – Zielgruppendurchschnitt pro Minute (AMA)** | Das Bedienfeld „Zielgruppendurchschnitt pro Minute“ ist jetzt in CJA verfügbar. Media Analytics-Kunden können das Bedienfeld Zielgruppendurchschnitt pro Minute verwenden, um die durchschnittliche Nutzung ihrer Inhalte besser zu verstehen. <p>Der Zielgruppendurchschnitt pro Minute ermöglicht Vergleiche von Inhalten beliebiger Längen oder Genres. Darüber hinaus können Kunden diese durchschnittliche Minutenzielgruppe für digitale Sendungen mit linearen TV-Durchschnittsminuten-Metriken vergleichen oder anhängen.</p><p> Dieses Bedienfeld bietet mehr Flexibilität, um die durchschnittliche Zielgruppe für benutzerdefinierte Zeiträume sowie den Zeitpunkt zu ermitteln, an dem die Klassifizierung der Dauer nachträglich aktualisiert wurde. </p><p>Weitere Informationen finden Sie unter [Bereich &quot;Zielgruppendurchschnitt pro Minute&quot;für Medien](/help/analysis-workspace/c-panels/average-minute-audience-panel.md).</p> |  | 12. März 2024 |
 | **B2B-Schema-Umwandlung für Person zu Konto** | Ermöglicht Ihnen die Transformation von Datensätzen zur besseren Unterstützung personalbasierter Suchen in Customer Journey Analytics-B2B-Berichtsszenarien. Diese Funktion ist für Datensätze für B2B-Schemas verfügbar, die auf den folgenden Klassen basieren:<ul><li>XDM Business Account Person Relation</li><li>XDM Business Opportunity Person Relation</li><li>XDM Business Marketing List Members</li><li>XDM Business Campaign Members</li></ul> | | Mittwoch, 26. März 2024 |
 | **Adobe Product Analytics: Vergleichen von Ereignissen innerhalb eines einzelnen Trichterschritts** | In der Ansicht &quot;Trichter: Fehler&quot;können Sie jetzt Ereignisse innerhalb eines einzelnen Trichterschritts vergleichen. Dies ist besonders nützlich, wenn Ihre Journey Schrittoptionen hat oder wenn ein A/B-Experiment durchgeführt wird. | Samstag, 29. März 2024 | Samstag, 12. April 2024 |
 | **Administratoren können alle Standorte in ihrer Organisation verwalten** | Eine neue Option auf der Seite Standorte ermöglicht es Administratoren, alle Standorte in der Organisation anzuzeigen und zu verwalten. Zuvor konnten Administratoren nur die von ihnen erstellten Standorte anzeigen und verwalten. | | April 2024 |

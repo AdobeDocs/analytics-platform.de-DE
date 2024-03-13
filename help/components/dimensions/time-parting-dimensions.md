@@ -4,10 +4,10 @@ title: Dimensionen für die Zeitunterteilung
 feature: Dimensions
 exl-id: 5c3c2867-58de-4765-a4e1-91eac1891b38
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: e3b80438f5bffc94efd24b80a93d2e4674906780
 workflow-type: tm+mt
 source-wordcount: '196'
-ht-degree: 62%
+ht-degree: 61%
 
 ---
 
@@ -27,7 +27,7 @@ Die Dimensionen für die Zeitunterteilung basieren auf der Zeitzone der Datenans
 | Stunde des Tages | 0–23 |
 | Vormittag/Nachmittag | Vormittag (AM), Nachmittag (PM) |
 | Wochentag | Montag, Dienstag, Mittwoch, Donnerstag, Freitag, Samstag, Sonntag |
-| Wochenende/Wochentag | Wochenende, Wochentag |
+| Wochentag/Wochenende | Wochentag, Wochenende |
 | Tag des Monats | 1–31 |
 | Monat des Jahres | Januar bis Dezember |
 | Tag des Jahres | 1–366 |
