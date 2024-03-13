@@ -6,10 +6,10 @@ exl-id: 0a87518c-3608-44ad-b5e3-976f97560433
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
+source-git-commit: 17956f66d0bed46b876ba83aba8782c664fe2530
 workflow-type: tm+mt
-source-wordcount: '2484'
-ht-degree: 26%
+source-wordcount: '2764'
+ht-degree: 23%
 
 ---
 
@@ -24,9 +24,16 @@ Einmal [eine oder mehrere Verbindungen erstellt oder bearbeitet](/help/connectio
 * Lassen Sie sich alle Datensätze in einer Verbindung anzeigen.
 * Überprüfen Sie den Status der Datensätze Ihrer Verbindung und den Status des Aufnahmevorgangs. Wann sind Ihre Daten beispielsweise verfügbar, damit Sie mit der Berichterstellung und Analyse in Analysis Workspace beginnen können.
 * Identifizieren Sie alle Datendiskrepanzen aufgrund einer Fehlkonfiguration. Fehlen Zeilen? Wenn ja, welche Zeilen fehlen und warum? Haben Sie Verbindungen falsch konfiguriert und fehlende Daten im Customer Journey Analytics verursacht?
+* Hier erhalten Sie Einblicke in die Verwendung von aufgenommenen und berichtspflichtigen Zeilen über alle Verbindungen hinweg.
+
+[!UICONTROL Verbindungen] hat zwei Schnittstellen: [[!UICONTROL Liste]](#list) und [[!UICONTROL Nutzung]](#usage).
 
 
-Eine Tabelle zeigt alle verfügbaren Verbindungen. Mithilfe der Suche können Sie schnell nach einer Verbindung suchen ![Suche](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) ankreuzen.
+## Liste
+
+Die [!UICONTROL Liste] -Schnittstelle ist die Standardschnittstelle für Verbindungen. Wenn nicht ausgewählt, wählen Sie die **[!UICONTROL Liste]** -Tab, um auf die Benutzeroberfläche zuzugreifen.
+
+Die [!UICONTROL Liste] -Schnittstelle zeigt eine Tabelle aller verfügbaren Verbindungen. Mithilfe der Suche können Sie schnell nach einer Verbindung suchen ![Suche](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) ankreuzen.
 
 Die folgenden Spalten/Symbole sind in der Tabelle verfügbar.
 
@@ -46,7 +53,7 @@ Die folgenden Spalten/Symbole sind in der Tabelle verfügbar.
 
 Sie können konfigurieren, welche Spalten angezeigt werden sollen, indem Sie ![Spalteneinstellungen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ColumnSettings_18_N.svg). Dies zeigt die **Tabelle anpassen** -Dialogfeld, in dem Sie Spalten in der Tabelle ein-/ausschalten können.
 
-## Verbindung bearbeiten
+### Verbindung bearbeiten
 
 Ermöglicht es Administratoren, die Verbindung zu bearbeiten.
 
@@ -69,7 +76,7 @@ Beim Bearbeiten einer Verbindung haben Sie folgende Möglichkeiten:
 Siehe [Erstellen oder Bearbeiten einer Verbindung](create-connection.md) für weitere Informationen.
 
 
-## Eine Verbindung löschen {#connections-delete}
+### Eine Verbindung löschen {#connections-delete}
 
 Ermöglicht Administratoren das Löschen der Verbindung.
 
@@ -91,7 +98,7 @@ Auswählen **[!UICONTROL Weiter]** , um die Verbindung zu löschen.
 Siehe [Auswirkungen löschen](/help/admin/cja-deletion.md) für weitere Informationen zu den Auswirkungen des Löschens einer Verbindung.
 
 
-## Erstellen einer Datenansicht
+### Erstellen einer Datenansicht
 
 Ermöglicht Administratoren das Erstellen einer Datenansicht für die Verbindung.
 
@@ -112,7 +119,7 @@ Alternativ können Sie:
 
 Weitere Informationen finden Sie unter [Erstellen oder Bearbeiten einer Datenansicht](/help/data-views/create-dataview.md).
 
-## Verbindungsdetails {#connection-detail}
+### Verbindungsdetails {#connection-detail}
 
 Um zu den Details für eine Verbindung zu wechseln, wählen Sie einen Verbindungsnamen in der Verbindungstabelle aus.
 
@@ -153,7 +160,7 @@ Die Benutzeroberfläche &quot;Verbindungsdetails&quot;bietet einen detaillierten
 >
 >Daten, die vor dem 13. August 2021 erfasst wurden, werden nicht im [!UICONTROL Verbindungen] -Schnittstelle.
 
-### Verbindungs-Panel
+#### Verbindungs-Panel
 
 Wenn in der Datensatztabelle kein Datensatz ausgewählt ist, werden in einem Bedienfeld auf der rechten Seite der Schnittstelle Verbindungen Verbindungsoptionen und -details angezeigt.
 
@@ -173,7 +180,7 @@ Wenn in der Datensatztabelle kein Datensatz ausgewählt ist, werden in einem Bed
 | [!UICONTROL Zuletzt geändert] | Zeigt den Zeitstempel der letzten Änderung an der Verbindung an. |
 | [!UICONTROL Zuletzt geändert von] | Zeigt die Person, die die Verbindung zuletzt geändert hat. |
 
-### Datensatzbedienfeld
+#### Datensatzbedienfeld
 
 Wenn ein Datensatz in der Datensatztabelle ausgewählt ist, werden in einem Bedienfeld auf der rechten Seite der Benutzeroberfläche &quot;Verbindungen&quot;Details zum ausgewählten Datensatz angezeigt.
 
@@ -195,6 +202,31 @@ Wenn ein Datensatz in der Datensatztabelle ausgewählt ist, werden in einem Bedi
 | [!UICONTROL Typ des Datensatzes] | Entweder [!UICONTROL Ereignis], [!UICONTROL Suche] oder [!UICONTROL Profil]. [Weitere Infos](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=de#configure-dataset) |
 | [!UICONTROL Schema] | Zeigt das Experience Platform-Schema an, auf dem dieser Datensatz basiert. |
 | [!UICONTROL Datensatz-ID] | Diese Datensatz-ID wird im Experience Platform generiert. |
+
+
+## Nutzung
+
+Die [!UICONTROL Nutzung] -Schnittstelle zeigt die Verwendung von aufgenommenen und berichtspflichtigen Zeilen über alle Verbindungen hinweg. Diese Schnittstelle unterstützt Sie dabei festzustellen, ob Ihre Customer Journey Analytics-Nutzung den vertraglichen Vereinbarungen entspricht.
+
+Wählen Sie die **[!UICONTROL Nutzung]** -Tab, um auf die Benutzeroberfläche zuzugreifen.
+
+So melden Sie die Verwendung:
+
+1. Wählen Sie eine **[!UICONTROL Zeitraum]**. Sie können zwischen **[!UICONTROL Letzte 6 Monate]**, **[!UICONTROL Jahr bis Datum]** oder **[!UICONTROL Letzte 2 Jahre]**.
+1. Wählen Sie eine **[!UICONTROL Intervall]**. Sie können zwischen **[!UICONTROL Monatlich]** oder **[!UICONTROL Vierteljährlich]**.
+
+Für [!UICONTROL Aufgenommene Zeilen]:
+
+* Ein Feld zeigt die [!UICONTROL Ingesamt] Anzahl der aufgenommenen Zeilen.
+* Ein Feld zeigt die Anzahl der aufgenommenen Zeilen für die [!UICONTROL Letzter Monat] und die Veränderung in % (erkennbar an <span style="color:green">lake</span> oder <span style="color:c64545">ù</span>) aus dem Vormonat.
+* ein Liniendiagramm anzeigt,  <span style="color:53b2ad">◼︎</span> Aufgezogene Zeilen und <span style="color:4046c3">◼︎</span> Monatlich aufgenommene Zeilen.<br/>Sie können den Mauszeiger über einen Datenpunkt für jede Zeile im Liniendiagramm bewegen, um ein Popup mit dem Datum und der Anzahl der Zeilen für den ausgewählten Datenpunkt anzuzeigen.
+
+
+Für [!UICONTROL Meldepflichtige Zeilen]:
+
+* ein Feld angezeigt wird [!UICONTROL Ingesamt] Anzahl der berichtspflichtigen Zeilen.
+* Ein Feld zeigt die Anzahl der berichtspflichtigen Zeilen für die [!UICONTROL Letzter Monat] und die Veränderung in % (erkennbar an <span style="color:green">lake</span> oder <span style="color:c64545">ù</span>) aus dem Vormonat.
+* ein Liniendiagramm anzeigt,  <span style="color:53b2ad">◼︎</span> Zusammenfassende berichtspflichtige Zeilen und <span style="color:4046c3">◼︎</span> Berichterstattbare Zeilen pro Monat.<br/>Sie können den Mauszeiger über einen Datenpunkt für jede Zeile im Liniendiagramm bewegen, um ein Popup mit dem Datum und der Anzahl der Zeilen für den ausgewählten Datenpunkt anzuzeigen.
 
 
 >[!MORELIKETHIS]
