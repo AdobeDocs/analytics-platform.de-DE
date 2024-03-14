@@ -4,13 +4,12 @@ description: Verwenden und Interpretieren des Bedienfelds „Medien-Zielgruppend
 feature: Panels
 role: User, Admin
 exl-id: be8371ee-8bc6-4a99-8527-dd94eab8a7f9
-source-git-commit: a6dd3495b51edcb823431ccb87b283665ccd765d
+source-git-commit: 92e35e59d77f2bb3f7d33914bf825a3325a71051
 workflow-type: tm+mt
 source-wordcount: '1656'
 ht-degree: 31%
 
 ---
-
 
 # Zielgruppenbereich mit mittlerer Medienmindebene
 
