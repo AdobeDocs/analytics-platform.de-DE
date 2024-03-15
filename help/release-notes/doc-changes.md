@@ -4,10 +4,10 @@ description: Listet Inhaltsaktualisierungen für Dokumentation zu Customer Journ
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
+source-git-commit: 0fb09e9a7d23c88fb3d18f39816dfae32b131469
 workflow-type: tm+mt
-source-wordcount: '3208'
-ht-degree: 79%
+source-wordcount: '3246'
+ht-degree: 78%
 
 ---
 
@@ -19,6 +19,8 @@ Die folgenden Aktualisierungen wurden seit der ersten Erstellung der Customer Jo
 
 | Funktion | Beschreibung |
 | --- | --- |
+| **März 2024** | |
+| Nutzungsinformationen zur Spalte &quot;Verwendet in&quot;sind erst ab September 2023 verfügbar. | Diese Nutzungsinformationen zu **Verwendet in** in der Spalte [Projekt-Landingpage](/help/getting-started/landing.md) reicht bis September 2023 zurück. |
 | **Februar 2024** | |
 | Aktualisierungen der Dokumentation zur Projektfreigabe | Es wurden Informationen zum [Anzeigen von Projekten, die für Sie freigegeben wurden](/help/analysis-workspace/curate-share/share-projects.md#view-projects-shared-with-you).<p>Auch optimierte Informationen zu [Freigeben einzelner oder mehrerer Projekte](/help/analysis-workspace/curate-share/share-projects.md#share-a-specific-project-role).</p> |
 | Es wurden Zugriffsberechtigungen für das Hochladen von Dateien auf Azure SAS und Azure RBAC bei der Konfiguration von Cloud-Exportspeicherorten hinzugefügt. | Es wurden genaue Berechtigungsanforderungen für das Hochladen von Dateien auf Azure SAS und Azure RBAC hinzugefügt, wenn [Konfigurieren von Cloud-Exportkonten](/help/components/exports/cloud-export-accounts.md) und [Konfigurieren von Cloud-Exportstandorten](/help/components/exports/cloud-export-locations.md). |

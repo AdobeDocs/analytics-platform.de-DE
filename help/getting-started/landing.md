@@ -4,10 +4,10 @@ title: Landingpage von Customer Journey Analytics
 role: User, Admin
 feature: Basics
 exl-id: 65c7bc26-7160-4bba-b764-5b0fa8686fca
-source-git-commit: 6bd4a0462547966342a52115eb9d45e7c1e1ad25
+source-git-commit: 0fb09e9a7d23c88fb3d18f39816dfae32b131469
 workflow-type: tm+mt
-source-wordcount: '1373'
-ht-degree: 89%
+source-wordcount: '1388'
+ht-degree: 88%
 
 ---
 
@@ -55,7 +55,7 @@ Die verfügbaren Spalten sind:
 | [!UICONTROL **Freigegeben für**] | Zeigt an, für wen das Projekt derzeit freigegeben ist. |
 | [!UICONTROL **Zuletzt geändert**] | Datum und Uhrzeit der letzten Änderung des Projekts. |
 | [!UICONTROL **Zuletzt geöffnet**] | Identifiziert das Datum, an dem ein Projekt zuletzt von dem Benutzer geöffnet wurde, der sich gerade die Seite &quot;Projekte&quot;ansieht. |
-| [!UICONTROL **Zuletzt verwendet**] | Hilft festzustellen, ob ein Projekt für Benutzer in Ihrer Organisation nützlich ist, indem das Datum und die Uhrzeit der letzten Öffnung des Projekts durch einen Benutzer innerhalb der Organisation angezeigt werden.<p>Diese Spalte steht nur Systemadministratoren zur Verfügung.</p> |
+| [!UICONTROL **Zuletzt verwendet**] | Hilft festzustellen, ob ein Projekt für Benutzer in Ihrer Organisation nützlich ist, indem das Datum und die Uhrzeit der letzten Öffnung des Projekts durch einen Benutzer innerhalb der Organisation angezeigt werden.<p>Beachten Sie bei der Anzeige dieser Spalte Folgendes:</p><ul><li>Nutzungsinformationen sind ab September 2023 verfügbar.</li><li>Diese Spalte steht nur Systemadministratoren zur Verfügung.</li></ul> |
 | [!UICONTROL **Projekt-ID**] | Kann zum Debugging von Projekten verwendet werden. |
 | [!UICONTROL **Längster Datumsbereich**] | Längere Datumsbereiche erhöhen die Komplexität von Projekten und können die Verarbeitungs- und Ladezeiten erhöhen. |
 | [!UICONTROL **Anzahl der Abfragen**] | Die Gesamtzahl der Anfragen, die an Analytics beim Laden des Projekts gesendet wurden. Eine höhere Anzahl von Projektabfragen erhöht die Komplexität eines Projekts und somit auch die Verarbeitungs- und Ladezeiten. Diese Daten sind erst verfügbar, nachdem ein Projekt geladen oder ein geplantes Projekt gesendet wurde. |
