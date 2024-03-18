@@ -4,10 +4,10 @@ title: Filtern und Sortieren von Tabellen
 feature: Visualizations
 exl-id: 3af637ec-bb6c-49b7-a7b3-e1d310e71101
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 772fa17f013ef0543027a7f60be780e9cf8f634a
 workflow-type: tm+mt
-source-wordcount: '953'
-ht-degree: 67%
+source-wordcount: '924'
+ht-degree: 69%
 
 ---
 
@@ -53,12 +53,15 @@ So schließen Sie bestimmte Zeilen schnell aus einer Freiformtabelle aus:
 
    Halten Sie die Umschalttaste gedrückt, um einen Zeilenbereich auszuwählen, oder halten Sie die Befehlstaste (Mac) oder die Strg-Taste (Windows) gedrückt, um mehrere Zeilen auszuwählen.
 
-### Rechtsklick > Ausgewählte Zeilen löschen
+<!--### Right-click > Delete selected rows
 
-1. Wählen Sie mindestens eine Zeile aus.
-1. Rechtsklicken Sie auf und wählen Sie **[!UICONTROL Ausgewählte Zeilen löschen]**.
+Note: this option does not seem to work. AN-338422
 
-   Dadurch werden die Zeilen aus der Tabelle entfernt und ein Tabellenfilter angewendet.
+1. Select 1 or more rows. 
+1. Right-click and select **[!UICONTROL Delete Selected Rows]**. 
+
+   This action will remove the rows from the table and apply a table filter.-->
+
 
 ### Einfache oder erweiterte Filter auf Tabellen anwenden
 
