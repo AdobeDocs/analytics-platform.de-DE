@@ -8,7 +8,7 @@ role: Admin
 source-git-commit: 948f5d986d9cde2b2994165896e0a22baace88ab
 workflow-type: tm+mt
 source-wordcount: '2888'
-ht-degree: 94%
+ht-degree: 95%
 
 ---
 
@@ -26,7 +26,7 @@ Beim Workflow für die Erstellung und Bearbeitung von Verbindungen können alle 
 
 ## Voraussetzungen
 
-Die maximale Anzahl von Datensätzen, die Sie einer Verbindung hinzufügen können, ist auf 100 begrenzt. Die Mischung hängt davon ab, welches Customer Journey Analytics-Paket Ihr Unternehmen erworben hat.
+Die maximale Anzahl der Datensätze, die einer Verbindung hinzugefügt werden können, ist auf 100 begrenzt. Die Mischung hängt davon ab, welches Customer Journey Analytics-Paket Ihr Unternehmen erworben hat.
 
 | ****-Paket auswählen | **Stiftungs-**-Paket |
 | --- | --- |
