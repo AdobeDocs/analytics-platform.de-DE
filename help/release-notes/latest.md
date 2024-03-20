@@ -3,16 +3,16 @@ title: Aktuelle Versionshinweise zu Customer Journey Analytics anzeigen
 description: Neueste Versionshinweise zu Customer Journey Analytics
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: adb62f1a4c48955f890909d4f4b090786c3968d3
+source-git-commit: 20e99275a42312ed974ac4c1af28ede73180e748
 workflow-type: tm+mt
-source-wordcount: '923'
-ht-degree: 46%
+source-wordcount: '957'
+ht-degree: 44%
 
 ---
 
 # Aktuelle Adobe Customer Journey Analytics-Versionshinweise (März 2024)
 
-**Zuletzt aktualisiert**: Donnerstag, 13. März 2024
+**Zuletzt aktualisiert**: Donnerstag, 20. März 2024
 
 Diese Versionshinweise beziehen sich auf den Veröffentlichungszeitraum von Ende des 13. März 2024 bis April 2024. Versionen von Adobe Customer Journey Analytics basieren auf einem [Modell der kontinuierlichen Bereitstellung](releases.md), das einen besser skalierbaren, schrittweisen Ansatz für die Implementierung von Funktionen ermöglicht. Dementsprechend werden diese Versionshinweise mehrmals im Monat aktualisiert. Bitte überprüfen Sie sie regelmäßig.
 
@@ -26,7 +26,7 @@ Diese Versionshinweise beziehen sich auf den Veröffentlichungszeitraum von Ende
 | **B2B-Schema-Umwandlung für Person zu Konto** | Ermöglicht Ihnen die Transformation von Datensätzen zur besseren Unterstützung personalbasierter Suchen in Customer Journey Analytics-B2B-Berichtsszenarien. Diese Funktion ist für Datensätze für B2B-Schemas verfügbar, die auf den folgenden Klassen basieren:<ul><li>XDM Business Account Person Relation</li><li>XDM Business Opportunity Person Relation</li><li>XDM Business Marketing List Members</li><li>XDM Business Campaign Members</li></ul> | | Mittwoch, 26. März 2024 |
 | **Verwendung der Report Builder in der Spalte &quot;Verwendet in&quot;im Manager für berechnete Metriken und im Filter-Manager** | Beim Anzeigen der **Verwendet in** im Manager für berechnete Metriken oder im Filter-Manager stehen nun Nutzungsdaten für den Report Builder zur Verfügung.<p>Bisher waren Nutzungsdaten im Filter-Manager nur für Warnhinweise, Projekte, geplante Projekte und berechnete Metriken verfügbar, während Nutzungsdaten im Manager für berechnete Metriken nur für Warnhinweise, Projekte und geplante Projekte verfügbar waren.</p> |  | Ende März oder Anfang April |
 | **Adobe Product Analytics: Vergleichen von Ereignissen innerhalb eines einzelnen Trichterschritts** | In der Ansicht &quot;Trichter: Fehler&quot;können Sie jetzt Ereignisse innerhalb eines einzelnen Trichterschritts vergleichen. Dies ist besonders nützlich, wenn Ihre Journey Schrittoptionen hat oder wenn ein A/B-Experiment durchgeführt wird. | Samstag, 29. März 2024 | Samstag, 12. April 2024 |
-| **Administratoren können alle Standorte in ihrer Organisation verwalten** | Eine neue Option auf der Seite Standorte ermöglicht es Administratoren, alle Standorte in der Organisation anzuzeigen und zu verwalten. Zuvor konnten Administratoren nur die von ihnen erstellten Standorte anzeigen und verwalten. | | April 2024 |
+| **Administratoren können alle Standorte und Konten in ihrer Organisation verwalten** | Eine neue Option auf der Registerkarte Standorte (auf der Seite Komponenten > Exporte ) ermöglicht es Administratoren, alle Standorte in der Organisation anzuzeigen und zu verwalten. <p>Eine neue Option auf der Registerkarte Standortkonten (auf der Seite Komponenten > Exporte ) ermöglicht es Administratoren, alle Konten in der Organisation anzuzeigen und zu verwalten.</p><p>Zuvor konnten Administratoren nur die von ihnen erstellten Standorte und Konten anzeigen und verwalten.</p> | | April 2024 |
 | **Zielgruppen werden in einem neuen Abschnitt &quot;Zielgruppen&quot;unter Experience Platform veröffentlicht** | Audiences, die von Customer Journey Analytics veröffentlicht werden, sind jetzt im neuen Bereich &quot;Audiences&quot;unter Experience Platform verfügbar. Zuvor waren Zielgruppen, die über Customer Journey Analytics veröffentlicht wurden, in Platform im Bereich &quot;Segmente&quot;verfügbar. Diese Verbesserung bietet die folgenden Vorteile:<ul><li>Zielgruppen haben keine Verzögerung von mehr 1 Stunde, bevor sie in Platform angezeigt werden. Sie stehen Sekunden nach ihrer Veröffentlichung zur Verfügung.</li><li>Zielgruppen können in Platform mithilfe der Spalte &quot;Ursprung&quot;sortiert werden, in der die Anwendung angezeigt wird, von der aus die Zielgruppe ursprünglich veröffentlicht wurde.</li><li>Mit den Filter- und Sortieroptionen in Platform können Sie die relevanten Zielgruppen schneller finden.</li></ul>Weitere Informationen finden Sie im Abschnitt . [Verwenden von Customer Journey Analytics-Zielgruppen in Experience Platform](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html?lang=en#audiences-aep). |  | April 2024 |
 | **Bot-Erkennung bei Experience Edge** | [Bot-Erkennung](https://experienceleague.adobe.com/docs/experience-platform/datastreams/bot-detection.html?lang=de) ermöglicht es Ihnen, Ereignisse zu identifizieren, die vom Web SDK, Mobile SDK und der Server-API und nicht von bekannten Spiders und Bots generiert wurden. | | 29. April 2024 |
 
