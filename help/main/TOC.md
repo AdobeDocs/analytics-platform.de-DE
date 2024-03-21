@@ -9,9 +9,9 @@ index: true
 user-guide-title: Handbuch für Customer Journey Analytics
 user-guide-description: Hier erhalten Sie Informationen zu Adobe Customer Journey Analytics und Erläuterungen zur Nutzung von Analysis Workspace mit Daten aus Experience Platform.
 breadcrumb-title: Handbuch für Customer Journey Analytics
-source-git-commit: a6dd3495b51edcb823431ccb87b283665ccd765d
+source-git-commit: 05a2887d85dd523b09701242178fb6a0fd18ba69
 workflow-type: tm+mt
-source-wordcount: '1063'
+source-wordcount: '1064'
 ht-degree: 80%
 
 ---
@@ -87,7 +87,7 @@ ht-degree: 80%
       + [Teilzeichenfolge](../data-views/component-settings/substring.md)
       + [Wert-Bucketing](../data-views/component-settings/value-bucketing.md)
    + [Standardkomponentenreferenz](../data-views/component-reference.md)
-   + [SQL-Connector](../data-views/sql-connector.md)
+   + [CJA BI-Erweiterung](../data-views/sql-connector.md)
    + [Abgeleitete Felder](../data-views/derived-fields/derived-fields.md)
    + [Beschriftungen und Richtlinien](../data-views/data-governance.md)
 
@@ -207,7 +207,7 @@ ht-degree: 80%
    + Benutzerwachstum {#user-growth}
       + [Aktive Ansicht](../guided-analysis/types/active.md)
       + [Netto-Wachstumsansicht](../guided-analysis/types/net-growth.md)
-   + Benutzerstream {#streams}
+   + Benutzer-Stream {#streams}
       + [Timeline](../guided-analysis/types/timeline.md)
    + [Anwendungsfälle für Branchen](../guided-analysis/industry-use-cases.md)
    + [Häufig gestellte Fragen](../guided-analysis/faq.md)
