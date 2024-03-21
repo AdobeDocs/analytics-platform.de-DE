@@ -4,9 +4,9 @@ description: Greifen Sie auf diese Funktionen zu, indem Sie in der Dropdown-List
 feature: Calculated Metrics
 exl-id: 3689a499-817d-4a59-8a1f-5f7bda297268
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: cfaf29b8dd92325a4e5fdd2a960de798178db933
 workflow-type: tm+mt
-source-wordcount: '3062'
+source-wordcount: '3024'
 ht-degree: 98%
 
 ---
@@ -67,10 +67,6 @@ Definition für eine neue berechnete „Ungefähre Kunden“-Metrik:
 So könnte die „Ungefähre Kunden“-Metrik für Berichte verwendet werden:
 
 ![Freiformtabelle mit Unique Visitors und Ungefähren Kunden ](assets/approx-customers.png)
-
-## Individuelle Werte überschritten
-
-Ebenso wie Count() und RowCount() unterliegt Ungefährer Distinct Count() [„Uniques überschritten“-Beschränkungen](https://experienceleague.adobe.com/docs/analytics/technotes/low-traffic.html?lang=de). Wird für eine Dimension in einem bestimmten Monat die „Uniques überschritten“-Beschränkung erreicht, wird der Wert als 1 Dimensionselement gezählt.
 
 ## Vergleich von Count-Funktionen
 
