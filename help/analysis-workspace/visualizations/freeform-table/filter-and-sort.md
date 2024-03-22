@@ -4,9 +4,9 @@ title: Filtern und Sortieren von Tabellen
 feature: Visualizations
 exl-id: 3af637ec-bb6c-49b7-a7b3-e1d310e71101
 role: User
-source-git-commit: 772fa17f013ef0543027a7f60be780e9cf8f634a
+source-git-commit: 4c96089088560da635e2499e7ec770c19c3de0ab
 workflow-type: tm+mt
-source-wordcount: '924'
+source-wordcount: '920'
 ht-degree: 69%
 
 ---
@@ -33,7 +33,6 @@ Mit Filtern in Analysis Workspace können Sie die wichtigsten Informationen aufd
 Sie können mehrere Methoden verwenden, um Zeilen aus einer Freiformtabelle zu filtern. 
 
 - Klicken Sie auf das X in der Zeile
-- Rechtsklick > Ausgewählte Zeilen gelöscht
 - Tabellenfilter
 - Segmentierung
 
