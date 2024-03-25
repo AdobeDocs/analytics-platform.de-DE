@@ -7,10 +7,10 @@ hide: true
 hidefromtoc: true
 exl-id: 1827a637-6c0f-43f2-862a-928089340d30
 role: Admin
-source-git-commit: 9489868fdf8de416c061239de1c0719f263288d1
+source-git-commit: a932d0d364761d949831ee261907b923a79a1f56
 workflow-type: tm+mt
-source-wordcount: '2731'
-ht-degree: 77%
+source-wordcount: '2730'
+ht-degree: 76%
 
 ---
 
@@ -63,7 +63,7 @@ In Adobe Experience Platform:
 
 1. Wählen Sie ![Abfrage erstellen](assets/Smock_AddCircle_18_N.svg) **[!UICONTROL ** Abfrage erstellen **]** aus.
 
-1. Wählen Sie die `"cja"` **[!UICONTROL ** Datenbank **]**.
+1. Wählen Sie die `cja` **[!UICONTROL ** Datenbank **]**.
 
 1. Um die Abfrage auszuführen, geben Sie Ihre SQL-Anweisung ein und wählen Sie die ![Play](assets/Smock_Play_18_N.svg) Taste (oder drücken `[SHIFT]` + `[ENTER]`).
 
@@ -78,7 +78,7 @@ In Adobe Experience Platform:
 
    1. Wählen Sie **[!UICONTROL ** Anmeldeinformationen **]** aus der oberen Leiste aus.
 
-   1. Wählen Sie die `"cja"` **[!UICONTROL ** Datenbank **]**.
+   1. Wählen Sie die `cja` **[!UICONTROL ** Datenbank **]**.
 
    1. Um die Befehlszeichenfolge zu kopieren, verwenden Sie ![Kopieren](assets/Smock_Copy_18_N.svg) im **[!UICONTROL ** PSQL-Befehl **]** Abschnitt.
 
@@ -103,7 +103,7 @@ Derzeit wird die [!DNL Customer Journey Analytics BI extension] wird nur für Po
 
    1. Wählen Sie **[!UICONTROL ** Anmeldeinformationen **]** aus der oberen Leiste aus.
 
-   1. Wählen Sie die `"cja"` **[!UICONTROL ** Datenbank **]**.
+   1. Wählen Sie die `cja` **[!UICONTROL ** Datenbank **]**.
 
    1. Verwenden Sie ![Kopieren](assets/Smock_Copy_18_N.svg), um jeden Parameter der Postgres-Anmeldeinformationen ([!UICONTROL Host], [!UICONTROL Port], [!UICONTROL Datenbank], [!UICONTROL Benutzername] und andere) zu kopieren, wenn sie in Power BI benötigt werden.
 
@@ -146,7 +146,7 @@ Derzeit wird die [!DNL Customer Journey Analytics BI extension] wird nur für Po
 
    1. Wählen Sie **[!UICONTROL ** Anmeldeinformationen **]** aus der oberen Leiste aus.
 
-   1. Wählen Sie &quot;cja&quot;aus **[!UICONTROL ** Datenbank **]**.
+   1. Wählen Sie die ` cja` **[!UICONTROL ** Datenbank **]**.
 
    1. Verwenden Sie ![Kopieren](assets/Smock_Copy_18_N.svg), um jeden Parameter der Postgres-Anmeldedaten ([!UICONTROL Host], [!UICONTROL Port], [!UICONTROL Datenbank], [!UICONTROL Benutzername] und andere) bei Bedarf in Tableau zu kopieren.
 
@@ -233,7 +233,7 @@ Beispiele für SQL, die Sie verwenden können, finden Sie in der folgenden Tabel
 | Mehrere Dimensionen<br/>Aufschlüsselungen<br/>und obere eindeutige Werte | <pre>SELECT dim1, dim2, SUM(metric1) AS m1<br/>FROM dv1<br/>WHERE \`timestamp\` BETWEEN &#39;2022-01-01&#39; AND &#39;2022-01-02&#39;<br/>GROUP BY dim1, dim2</pre><pre>SELECT dim1, dim2, SUM(metric1) AS m1<br/>FROM dv1<br/>WHERE \`timestamp\` BETWEEN &#39;2022-01-01&#39; AND &#39;2022-01-02&#39;<br/>GROUP BY 1, 2<br/>ORDER BY 1, 2</pre><pre>SELECT DISTINCT dim1, dim2<br/>FROM dv1</pre> |
 | Unterauswahl:<br/>Zusätzliche Filter<br/>Ergebnisse | <pre>SELECT dim1, m1<br/>FROM (<br/>  SELECT dim1, SUM(metric1) AS m1<br/>  FROM dv1<br/>  WHERE \`timestamp\` BETWEEN &#39;2022-01-01&#39; AND &#39;2022-01-02&#39;</br>  GROUP BY dim1<br/>)<br/>WHERE dim1 in (&#39;A&#39;, &#39;B&#39;)</pre> |
 | Unterauswahl:<br/>Abfrage über<br/>Datenansichten | <pre>SELECT key, SUM(m1) AS total<br/>FROM (<br/>  SELECT dim1 AS key, SUM(metric1) AS m1<br/>  FROM dv1<br/>  WHERE \`timestamp\` BETWEEN &#39;2022-01-01&#39; AND &#39;2022-01-02&#39;<br/>  GROUP BY dim1<br/><br/>  UNION<br/><br/>  SELECT dim2 AS key, SUM(m1) AS m1<br/>  FROM dv2<br/>  WHERE \`timestamp\` BETWEEN &#39;2022-01-01&#39; AND &#39;2022-01-02&#39;<br/>  GROUP BY dim2<br/>GROUP BY key<br/>ORDER BY total</pre> |
-| Unterauswahl: <br/>Ebenenquelle, <br/>Filtern, <br/>und Aggregation | Geschichtet, mit den Unterauswahlen:<br><pre>SELECT rows.dim1, SUM(rows.m1) AS total<br/>FROM (<br/>  SELECT \_.dim1,\_.m1<br/>  FROM (<br/>    SELECT \* FROM dv1<br/>    WHERE \`timestamp\` BETWEEN &#39;2022-01-01&#39; AND &#39;2022-01-02&#39;<br/>  ) \_<br/>  WHERE \_.dim1 in (&#39;A&#39;, &#39;B&#39;, &#39;C&#39;)<br/>) rows<br/>GROUP BY 1<br/>ORDER BY total</pre><br/>Ebenen, die CTE WITH verwenden:<br/><pre>WITH rows AS (<br/>  WITH \_ AS (<br/>    SELECT * FROM data_ares<br/>    WHERE \`timestamp\` BETWEEN &#39;2021-01-01&#39; AND &#39;2021-02-01&#39;<br/>  )<br/>  SELECT _.item, _.units FROM _<br/>  WHERE _.item IS NOT NULL<br/>)<br/>SELECT rows.item, SUM(rows.units) AS units<br/>FROM rows WHERE rows.item in (&#39;A&#39;, &#39;B&#39;, &#39;C&#39;)<br/>GROUP BY rows.item</pre> |
+| Unterauswahl: <br/>Ebenenquelle, <br/>Filtern, <br/>und Aggregation | Geschichtet, mit den Unterauswahlen:<br><pre>SELECT rows.dim1, SUM(rows.m1) AS total<br/>FROM (<br/>  SELECT \_.dim1,\_.m1<br/>  FROM (<br/>    SELECT \* FROM dv1<br/>    WHERE \`timestamp\` BETWEEN &#39;2022-01-01&#39; AND &#39;2022-01-02&#39;<br/>  ) \_<br/>  WHERE \_.dim1 in (&#39;A&#39;, &#39;B&#39;, &#39;C&#39;)<br/>) rows<br/>GROUP BY 1<br/>ORDER BY total</pre><br/>Ebenen, die CTE WITH verwenden:<br/><pre>MIT DEN Zeilen ALS (<br/>  MIT \_ AS (<br/>    SELECT * FROM data_ares<br/>    WO \`timestamp\` ZWISCHEN &#39;2021-01-01&#39; UND &#39;2021-02-01&#39; IST<br/>  )<br/>  SELECT \_.item, \_.unit FROM \_<br/>  WOBEI \_.item NICHT NULL IST<br/>)<br/>SELECT rows.item, SUM(rows.unit) AS-Einheiten<br/>AUS DEN Zeilen WHERE rows.item in (&#39;A&#39;, &#39;B&#39;, &#39;C&#39;)<br/>GROUP BY rows.item</pre> |
 | Wählt aus, wo die<br/>Metriken vor<br/> den Dimensionen erscheinen oder mit<br/>den Dimensionen gemischt werden | <pre>SELECT SUM(metric1) AS m1, dim1<br/>FROM dv1<br/>WHERE \`timestamp\` BETWEEN &#39;2022-01-01&#39; AND &#39;2022-01-02&#39;<br/>GROUP BY 2</pre> |
 
 {style="table-layout:auto"}
