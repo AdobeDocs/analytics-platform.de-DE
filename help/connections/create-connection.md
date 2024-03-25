@@ -5,10 +5,10 @@ exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: 948f5d986d9cde2b2994165896e0a22baace88ab
+source-git-commit: 18f7f4ab3ef368afb73445c5b6dccc3c4f468ef7
 workflow-type: tm+mt
-source-wordcount: '2888'
-ht-degree: 95%
+source-wordcount: '2910'
+ht-degree: 97%
 
 ---
 
@@ -35,7 +35,7 @@ Die maximale Anzahl der Datensätze, die einer Verbindung hinzugefügt werden k�
 
 {style="table-layout:auto"}
 
-Wenden Sie sich an Ihren Administrator, wenn Sie sich nicht sicher sind, welches Customer Journey Analytics-Paket Sie haben.
+Wenden Sie sich an Ihre Admins, wenn Sie sich nicht sicher sind, welches Customer Journey Analytics-Paket Sie besitzen.
 
 ## Erstellen und Konfigurieren der Verbindung {#create-connection}
 
@@ -187,10 +187,10 @@ Diese Berechnung wird für jeden Datensatz in der Verbindung durchgeführt.
 2. Um alle in Adobe Experience Platform vorhandenen Datensätze anzuzeigen, führen Sie die Abfrage `Show Tables` durch.
 
 
-## Algorithmisches Beschneiden großer Lookup-Datensätze
+## Algorithmisches Bereinigen großer Lookup-Datensätze
 
-Beim Erstellen einer Verbindung können Sie große Datensätze zu Suchzwecken hinzufügen. Beispiel: ein Datensatz, der einen Produktkatalog darstellt, sodass beim Erstellen von Berichten und Visualisierungen nach beschreibenden Produktinformationen gesucht werden kann. Ein solch großer Lookup-Datensatz kann die maximal 10 Millionen eindeutigen Suchen überschreiten, die derzeit als Schutz implementiert sind, was dazu führt, dass zusätzliche Daten übersprungen werden.
+Beim Erstellen einer Verbindung können Sie große Datensätze zu Suchzwecken hinzufügen. Ein Beispiel hierfür wäre ein Datensatz, der einen Produktkatalog darstellt, sodass beim Erstellen von Berichten und Visualisierungen nach beschreibenden Produktinformationen gesucht werden kann. Ein solch großer Lookup-Datensatz kann die maximal 10 Millionen eindeutigen Lookups überschreiten. Dieser Grenzwert ist derzeit als Schutzmechanismus implementiert und führt dazu, dass zusätzliche Daten übersprungen werden.
 
-Sie können die algorithmische Beschneidung eines solch großen Lookup-Datensatzes anfordern. Durch dieses Beschneiden werden nur Daten in den Lookup-Datensatz geladen, für die im Ereignis-Datensatz-Teil Ihrer Verbindung Schlüssel verfügbar sind. Die im Algorithmus verwendete Referenzanzahl wird auf 90 Tage zurückgesetzt und wöchentlich aktualisiert.
+Sie können eine algorithmische Beschneidung eines großen Lookup-Datensatzes anfordern. Diese algorithmische Beschneidung behält nur Daten im Lookup-Datensatz bei, die mit den Schlüsseln in Ihrem Ereignis-Datensatz übereinstimmen. Auf diese Weise müssen Sie nicht den gesamten nicht ausgefüllten Lookup-Datensatz laden. Alte oder seltener verwendete Elemente werden entfernt, was sich geringfügig auf Berichte auswirken kann, jedoch erhebliche Vorteile bringt. Der Algorithmus blickt auf 90 Tage zurück und aktualisiert wöchentlich.
 
-Wenden Sie sich für weitere Informationen an Ihren Adobe-Support-Mitarbeiter.
+Wenden Sie sich an Ihr Adobe-Supportteam, um weitere Informationen zu erhalten und diese Funktion zu aktivieren.
