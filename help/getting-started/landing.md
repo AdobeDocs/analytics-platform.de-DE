@@ -5,9 +5,9 @@ role: User, Admin
 feature: Basics
 exl-id: 65c7bc26-7160-4bba-b764-5b0fa8686fca
 source-git-commit: 0fb09e9a7d23c88fb3d18f39816dfae32b131469
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1388'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -17,11 +17,11 @@ Auf der Landingpage für Customer Journey Analytics finden Sie [!DNL Analysis Wo
 
 >[!VIDEO](https://video.tv.adobe.com/v/334278/?quality=12)
 
-Die Customer Journey Analytics-Landingpage besteht aus den folgenden Unterregisterkarten: Projekte und Lernen.
+Die Customer Journey Analytics-Landingpage besteht aus den folgenden Unterregisterkarten: „Projekte“ und „Lernen“.
 
 **[!UICONTROL Projekte]** sind benutzerdefinierte Entwürfe, die aus Datenkomponenten, Tabellen und Visualisierungen bestehen, die von Ihnen erstellt oder einer anderen Person für Sie erstellt und freigegeben wurden. [!UICONTROL Projekte] beziehen sich auch auf leere Projekte und leere mobile Scorecards.
 
-Die **[!UICONTROL Lernen]** enthält praktische Videoführungen, Tutorials und Links zur Dokumentation.
+Die Registarkarte **[!UICONTROL Lernen]** enthält praktische Video-Touren und Tutorials sowie Links zur Dokumentation.
 
 ## Navigieren Sie zur Registerkarte [!UICONTROL Projekte] {#navigate-projects}
 
@@ -41,7 +41,7 @@ Um die Spaltenbreiten anzupassen, ziehen Sie den vertikalen Balken, der die einz
 
 Um Spalten zur Projektliste hinzuzufügen oder daraus zu entfernen, klicken Sie oben rechts auf das Spaltensymbol (![Landing (alle)](assets/select-column.png)) und wählen Sie dann Spaltentitel aus bzw. entfernen Sie die Auswahl.
 
-Die verfügbaren Spalten sind:
+Folgende Spalten sind verfügbar:
 
 | Spaltenname | Beschreibung |
 |---------|----------|
@@ -49,19 +49,19 @@ Die verfügbaren Spalten sind:
 | [!UICONTROL **Typ**] | Gibt an, ob es sich bei diesem Typ um ein Analysis Workspace-Projekt, eine mobile Scorecard oder einen Ordner handelt. |
 | [!UICONTROL **Tags**] | Taggt Projekte, um sie in Gruppen einzuteilen. |
 | [!UICONTROL **Geplant**] | Wählen Sie [!UICONTROL Ein], wenn ein Projekt geplant ist, oder [!UICONTROL Aus], wenn dies nicht der Fall ist. Wenn Sie auf den [!UICONTROL Ein]-Link klicken, können Sie Informationen zum geplanten Projekt anzeigen. Sie können auch [den Projektplan bearbeiten](/help/analysis-workspace/export/t-schedule-report.md), wenn Sie Projektinhaber sind. |
-| [!UICONTROL **Projektrolle**] | Gibt die Projektrollen an: ob Sie Projekteigentümer sind und ob Sie berechtigt sind, das Projekt zu bearbeiten oder zu duplizieren. |
+| [!UICONTROL **Projektrolle**] | Gibt die Projektrollen an: ob Sie Projekteigentümerin oder Projekteigentümer sind und ob Sie berechtigt sind, das Projekt zu bearbeiten oder zu duplizieren. |
 | [!UICONTROL **Report Suite**] | Gibt die Report Suites an, die mit dem Projekt verknüpft sind.<br>Tabellen und Visualisierungen innerhalb eines Bedienfelds erhalten Daten von der oben rechts im Bedienfeld ausgewählten Report Suite. Von der Report Suite hängt auch ab, welche Komponenten in der linken Leiste verfügbar sind. In einem Projekt können Sie je nach Anwendungsfällen Ihrer Analyse eine oder viele Report Suites verwenden. Die Liste der Report Suites ist nach Relevanz sortiert. Adobe definiert die Relevanz anhand der Häufigkeit der kürzlichen Verwendung der Suite durch die aktuelle Benutzerin bzw. den aktuellen Benutzer und der Häufigkeit der Verwendung der Suite innerhalb der Organisation. |
 | [!UICONTROL **Inhaber**] | Die Person, die das Projekt erstellt hat. |
 | [!UICONTROL **Freigegeben für**] | Zeigt an, für wen das Projekt derzeit freigegeben ist. |
 | [!UICONTROL **Zuletzt geändert**] | Datum und Uhrzeit der letzten Änderung des Projekts. |
-| [!UICONTROL **Zuletzt geöffnet**] | Identifiziert das Datum, an dem ein Projekt zuletzt von dem Benutzer geöffnet wurde, der sich gerade die Seite &quot;Projekte&quot;ansieht. |
-| [!UICONTROL **Zuletzt verwendet**] | Hilft festzustellen, ob ein Projekt für Benutzer in Ihrer Organisation nützlich ist, indem das Datum und die Uhrzeit der letzten Öffnung des Projekts durch einen Benutzer innerhalb der Organisation angezeigt werden.<p>Beachten Sie bei der Anzeige dieser Spalte Folgendes:</p><ul><li>Nutzungsinformationen sind ab September 2023 verfügbar.</li><li>Diese Spalte steht nur Systemadministratoren zur Verfügung.</li></ul> |
+| [!UICONTROL **Zuletzt geöffnet**] | Identifiziert das Datum, an dem ein Projekt zuletzt von der Person geöffnet wurde, die sich gerade die Seite „Projekte“ ansieht. |
+| [!UICONTROL **Zuletzt verwendet**] | Hilft festzustellen, ob ein Projekt für Benutzende in Ihrer Organisation nützlich ist, indem der Zeitpunkt (Datum und Uhrzeit) angezeigt wird, zu dem das Projekt durch eine Person innerhalb der Organisation zuletzt geöffnet wurde.<p>Beachten Sie Folgendes beim Anzeigen dieser Spalte:</p><ul><li>Nutzungsinformationen sind ab September 2023 verfügbar.</li><li>Diese Spalte steht nur Systemadmins zur Verfügung.</li></ul> |
 | [!UICONTROL **Projekt-ID**] | Kann zum Debugging von Projekten verwendet werden. |
 | [!UICONTROL **Längster Datumsbereich**] | Längere Datumsbereiche erhöhen die Komplexität von Projekten und können die Verarbeitungs- und Ladezeiten erhöhen. |
 | [!UICONTROL **Anzahl der Abfragen**] | Die Gesamtzahl der Anfragen, die an Analytics beim Laden des Projekts gesendet wurden. Eine höhere Anzahl von Projektabfragen erhöht die Komplexität eines Projekts und somit auch die Verarbeitungs- und Ladezeiten. Diese Daten sind erst verfügbar, nachdem ein Projekt geladen oder ein geplantes Projekt gesendet wurde. |
 | [!UICONTROL **Ort**] | Zeigt den Ordner an, in dem sich das Projekt befindet. |
 
-### Andere UI-Elemente auf der Seite &quot;Projekte&quot;
+### Andere Benutzeroberflächenelemente auf der Seite „Projekte“
 
 | UI-Element | Definition |
 | --- | --- |

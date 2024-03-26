@@ -5,9 +5,9 @@ exl-id: 1de5070f-a91c-4fe6-addb-a89d59a280b7
 feature: Data Views, Data Governance
 role: Admin
 source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '493'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ Die folgenden Beschriftungen sind für Customer Journey Analytics von besonderem
 >
 >Datennutzungskennzeichnungen werden nicht automatisch in zugeordnete Datensätze übertragen. Sie können jedoch manuell hinzugefügt werden.
 
-Die Beschriftung an sich bedeutet nicht, dass diese Datennutzungskennzeichnungen erzwungen werden. Dafür werden Richtlinien verwendet. Sie erstellen Ihre Richtlinien mithilfe der [Experience Platform-Benutzeroberfläche](https://experienceleague.adobe.com/docs/experience-platform/data-governance/policies/user-guide.html) oder über die [Richtlinien-Service-API](https://experienceleague.adobe.com/docs/experience-platform/data-governance/api/overview.html) in Experience Platform.
+Die Beschriftung an sich bedeutet nicht, dass diese Datennutzungskennzeichnungen erzwungen werden. Dafür werden Richtlinien verwendet. Sie erstellen Ihre Richtlinien mithilfe der [Experience Platform-Benutzeroberfläche](https://experienceleague.adobe.com/docs/experience-platform/data-governance/policies/user-guide.html?lang=de) oder über die [Richtlinien-Service-API](https://experienceleague.adobe.com/docs/experience-platform/data-governance/api/overview.html?lang=de) in Experience Platform.
 
 In Customer Journey Analytics werden zwei von Adobe definierte Richtlinien angezeigt, die sich auf Reporting sowie Download/Freigabe auswirken:
 
@@ -76,6 +76,6 @@ Sie können auch keine Datensicht speichern, die gesperrte Felder enthält.
 >[Herunterladen sensibler Daten](/help/analysis-workspace/export/download-send.md)
 
 >[!MORELIKETHIS]
->[Was sind eingeschränkte Beschriftungen in Report Builder?](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/restricted-labels.html)
+>[Was sind eingeschränkte Beschriftungen in Report Builder?](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/restricted-labels.html?lang=de)
 
 
