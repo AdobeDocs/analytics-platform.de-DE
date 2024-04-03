@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Administration
 role: Admin
 exl-id: f093ac54-7d31-449b-a441-a65856a1d535
-source-git-commit: 56b909a542915cd64251fb8849e55df920668025
+source-git-commit: eca9b101cea489b77af0ec5287ff96907e637d1e
 workflow-type: tm+mt
-source-wordcount: '1519'
+source-wordcount: '1523'
 ht-degree: 11%
 
 ---
@@ -121,7 +121,7 @@ Siehe auch Experience Platform [Real-time Customer Data Platform-Schutzmechanism
 |---|--:|---|---|
 | Felder | 10.000 | Systemdurchsetztes Schutzschild | Maximale Anzahl von Eigenschaften oder Feldern pro Zeile in einem Datensatz. |
 | Eindeutige Zeichenfolgen | 10 Million | Systemdurchsetztes Schutzschild | Maximale Anzahl eindeutiger Schlüssel pro Lookup-Datensatz. |
-| Zeilen | 1 Million | Systemdurchsetztes Schutzschild | Maximale Anzahl von Zeilen pro eindeutiger Personen-ID innerhalb einer Verbindung. |
+| Zeilen | 1 Million | Systemdurchsetztes Schutzschild | Maximale Anzahl von Zeilen pro eindeutiger Personen-ID in einem bestimmten Monat innerhalb einer Verbindung. |
 | Zeilengröße | 2 | Leistungsgarantie/systemerzwungene Schutzmechanismen | Durchschnittliche Größe in Kilobyte pro Datenzeile, die in Customer Journey Analytics erfasst wird (weiche Begrenzung). Eine statische Grenze für die Zeilengröße wird durch Limits für die Datenerfassung in Experience Platform bestimmt. |
 
 {style="table-layout:auto"}
