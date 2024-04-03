@@ -5,10 +5,10 @@ title: Entfernen von Projekten aus Ordnern
 feature: Workspace Basics
 exl-id: 9c3523b1-afa2-4a68-a432-972032680fc7
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
-workflow-type: ht
-source-wordcount: '193'
-ht-degree: 100%
+source-git-commit: caf16a6971c4474516e116f8cb62e37f0bf6a06b
+workflow-type: tm+mt
+source-wordcount: '222'
+ht-degree: 81%
 
 ---
 
@@ -42,9 +42,9 @@ Sie können Projekte von einem Ordner in einen anderen, von Ihnen erstellen Ordn
 
 ## Löschen eines Projekts aus einem Projektordner {#delete-project-in-folder}
 
-Wenn Sie ein Projekt aus einem Ordner löschen, wird das Projekt vollständig gelöscht.
+Wenn Sie ein Projekt aus einem Ordner löschen, wird es nach 180 Tagen aus dem System gelöscht. In den 180 Tagen nach dem Löschen können Benutzer weiterhin über die Web-Oberfläche auf ein Projekt zugreifen, wenn sie über eine direkte URL zum Projekt verfügen.
 
-1. Klicken Sie in einem Projektordner auf die Auslassungspunkte **...** neben dem Projektnamen.
+1. Klicken Sie in einem Projektordner auf die Auslassungspunkte **…** neben dem Projektnamen.
 
    ![Die Optionen der Auslassungspunkte.](/help/analysis-workspace/build-workspace-project/assets/move1.png)
 
