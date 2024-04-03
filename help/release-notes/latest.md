@@ -3,16 +3,16 @@ title: Aktuelle Versionshinweise zu Customer Journey Analytics anzeigen
 description: Neueste Versionshinweise zu Customer Journey Analytics
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: e6696dc9639e3309695a7a20427753fa629d1816
+source-git-commit: 880bec05dbc14093f711ef54ee06ad2c8b178a7d
 workflow-type: tm+mt
-source-wordcount: '953'
-ht-degree: 100%
+source-wordcount: '1005'
+ht-degree: 94%
 
 ---
 
 # Aktuelle Versionshinweise zu Adobe Customer Journey Analytics (März 2024)
 
-**Zuletzt aktualisiert**: 20. März 2024
+**Letzte Aktualisierung**: Donnerstag, 3. April 2024
 
 Diese Versionshinweise beziehen sich auf den Veröffentlichungszeitraum vom 13. März 2024 bis April 2024. Versionen von Adobe Customer Journey Analytics basieren auf einem [Modell der kontinuierlichen Bereitstellung](releases.md), das einen besser skalierbaren, schrittweisen Ansatz für die Implementierung von Funktionen ermöglicht. Dementsprechend werden diese Versionshinweise mehrmals im Monat aktualisiert. Bitte überprüfen Sie sie regelmäßig.
 
@@ -20,6 +20,7 @@ Diese Versionshinweise beziehen sich auf den Veröffentlichungszeitraum vom 13. 
 
 | Funktion | Beschreibung | [Rollout-Beginn](releases.md) | [Allgemeine Verfügbarkeit](releases.md) |
 | ----------- | ---------- | ------- | ---- |
+| **Änderung des Löschprotokolls für Workspace-Projekte** | Zuvor wurden gelöschte Projekte nie aus dem System gelöscht. Nach 180 Tagen werden wir nun mit der Bereinigung gelöschter Projekte beginnen. In den 180 Tagen nach dem Löschen können Benutzer weiterhin über die Web-Oberfläche auf ein Projekt zugreifen, wenn sie über eine URL zum direkten Projekt verfügen. | | 14. März 2024 |
 | **Neue Spalte auf der Landingpage „Projekte“** | Die Spalte **[!UICONTROL Zuletzt verwendet]** ist nun bei Ansicht der Registerkarte „Projekte“ auf der [Customer Journey Analytics-Landingpage](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/landing.html?lang=de) verfügbar. <p>Anhand dieser Informationen können Sie feststellen, ob ein Projekt für Benutzende in Ihrer Organisation nützlich ist, indem der Zeitpunkt (Datum und Uhrzeit) angezeigt wird, zu dem das Projekt zuletzt geöffnet wurde. Zuvor war die Spalte **[!UICONTROL Zuletzt verwendet]** nur im Manager für berechnete Metriken, im Segment-Manager und im Warnhinweis-Manager verfügbar.</p> |  | 13. März 2024 |
 | **Nutzungsmetriken** | Die [Nutzungsmetrik-Oberfläche](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/manage-connections.html?lang=de) zeigt die Verwendung von aufgenommenen und berichtsfähigen Zeilen über alle Verbindungen hinweg an. Mit dieser Schnittstelle können Sie festlegen, ob Ihre Customer Journey Analytics-Nutzung den vertraglich vereinbarten Bedingungen entspricht. |  | 13. März 2024 |
 | **Media Analytics-Berichte – Zielgruppendurchschnitt pro Minute (AMA)** | Das Bedienfeld „Zielgruppendurchschnitt pro Minute“ ist jetzt in CJA verfügbar. Media Analytics-Kundinnen und -Kunden können das Bedienfeld „Zielgruppendurchschnitt pro Minute“ verwenden, um die durchschnittliche Nutzung ihrer Inhalte besser zu verstehen.  <p>Der Zielgruppendurchschnitt pro Minute ermöglicht Vergleiche von Inhalten beliebiger Längen oder Genres. Darüber hinaus können Kundinnen und Kunden diesen Medien-Zielgruppendurchschnitt pro Minute für digitale Sendungen mit Metriken für den linearen TV-Durchschnitt pro Minute vergleichen oder ihn anhängen. </p><p> Dieses Bedienfeld bietet mehr Flexibilität, um die durchschnittliche Zielgruppe für benutzerdefinierte Zeiträume sowie den Zeitpunkt zu ermitteln, an dem die Klassifizierung der Dauer nachträglich aktualisiert wurde. </p><p>Weitere Informationen finden Sie unter [Bedienfeld „Medien-Zielgruppendurchschnitt pro Minute“](/help/analysis-workspace/c-panels/average-minute-audience-panel.md).</p> |  | 12. März 2024 |
