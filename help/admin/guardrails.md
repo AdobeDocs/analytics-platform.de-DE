@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Administration
 role: Admin
 exl-id: f093ac54-7d31-449b-a441-a65856a1d535
-source-git-commit: eca9b101cea489b77af0ec5287ff96907e637d1e
+source-git-commit: 8af2c48c4895e6015c16e3973b6cd213aff38441
 workflow-type: tm+mt
-source-wordcount: '1523'
+source-wordcount: '1606'
 ht-degree: 11%
 
 ---
@@ -127,6 +127,18 @@ Siehe auch Experience Platform [Real-time Customer Data Platform-Schutzmechanism
 {style="table-layout:auto"}
 
 Siehe auch Experience Platform [Limits für die Datenerfassung](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html).
+
+
+## Zieldatenexport
+
+| Name | Wert | Art von Limit | Beschreibung |
+|---|--:|---|---|
+| Datenexport | Gesamter autorisierter Data Lake-Speicher | Leistungsgarantie | Der Kunde kann den Zieldatensatzexport verwenden, um Kundendaten bis zum zulässigen Gesamtdatenspeicherplatz im Data Lake im Data Lake zu exportieren. |
+| Verfügbare Datensätze | Profil und Ereignis | Systemgesteuerte Schutzmechanismen | Profil- und Erlebnisereignis-Datensätze, die in der Experience Platform-Benutzeroberfläche erstellt wurden, nachdem Daten über Quellen, Web SDK, Mobile SDK, Analytics Data Connector und Audience Manager erfasst oder erfasst wurden. |
+
+{style="table-layout:auto"}
+
+Siehe auch Experience Platform [Limits für den Datenexport](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/guardrails#dataset-exports)
 
 
 ## Daten-Landingzone
