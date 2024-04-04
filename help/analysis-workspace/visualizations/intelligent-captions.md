@@ -4,9 +4,9 @@ title: Intelligente Beschriftungen
 feature: Visualizations
 exl-id: d32d3cda-ecbf-4ee7-a8b7-7c3c71b5df75
 role: User
-source-git-commit: 02e98b5ec1932e822c8d3805948d390eccc2b750
+source-git-commit: c5f4ddd2f0a2840e7c0d456475f95d891863666e
 workflow-type: tm+mt
-source-wordcount: '442'
+source-wordcount: '453'
 ht-degree: 2%
 
 ---
@@ -71,3 +71,7 @@ Sie können **Untertitel über PDF exportieren**, solange das Projekt mit den ge
 Wenn Sie keine intelligenten Untertitel erstellen möchten, können Sie diese Funktion deaktivieren, indem Sie die Voreinstellungen für die Visualisierung aufrufen und die Option deaktivieren. **[!UICONTROL Intelligente Beschriftungen anzeigen]**.
 
 ![Linienvisualisierungsoptionen mit der Option zum Deaktivieren der Option Intelligente Untertitel anzeigen.](assets/toggle-captions.png)
+
+## Intelligente Beschriftungen in mobilen Scorecards
+
+Weitere Informationen finden Sie unter [Scorecards verwalten](/help/mobile-app/manage-scorecard.md)

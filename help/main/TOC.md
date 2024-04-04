@@ -9,10 +9,10 @@ index: true
 user-guide-title: Handbuch für Customer Journey Analytics
 user-guide-description: Hier erhalten Sie Informationen zu Adobe Customer Journey Analytics und Erläuterungen zur Nutzung von Analysis Workspace mit Daten aus Experience Platform.
 breadcrumb-title: Handbuch für Customer Journey Analytics
-source-git-commit: e8d55cfbb0bb50269e436bc3c38a88bc4830bed0
+source-git-commit: c5f4ddd2f0a2840e7c0d456475f95d891863666e
 workflow-type: tm+mt
-source-wordcount: '1064'
-ht-degree: 80%
+source-wordcount: '1067'
+ht-degree: 79%
 
 ---
 
@@ -187,8 +187,9 @@ ht-degree: 80%
 + Analytics-Dashboards {#cja-dashboards}
    + [Analytics-Dashboards – Übersicht](../mobile-app/home.md)
    + [Kuratoraufgaben](../mobile-app/curator.md)
-   + [Mobile-Scorecard erstellen](../mobile-app/create-scorecard.md)
-   + [Führungskräften die Nutzung von Dashboards ermöglichen](../mobile-app/set-up-execs.md)
+   + [Erstellen einer mobilen Scorecard](../mobile-app/create-scorecard.md)
+   + [Mobile Scorecards verwalten](../mobile-app/manage-scorecard.md)
+   + [Einrichten von Führungskräften für die Verwendung von Dashboards](../mobile-app/set-up-execs.md)
    + [Schnellstarthandbuch für ausführende Benutzer](../mobile-app/executive.md)
 
 + Geführte Analyse {#guided-analysis}

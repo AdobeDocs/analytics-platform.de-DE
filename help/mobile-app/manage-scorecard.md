@@ -1,172 +1,20 @@
 ---
-description: Erstellen und Freigeben von Scorecards für Analytics-Dashboards
-title: Scorecards erstellen und freigeben
+description: Anzeigen und Verwalten von Scorecards für Analytics-Dashboards
+title: Scorecards verwalten
 feature: Analytics Dashboards
 role: User, Admin
-exl-id: 12531600-7e88-4d56-a2a5-e5b346f91937
 solution: Customer Journey Analytics
 source-git-commit: c5f4ddd2f0a2840e7c0d456475f95d891863666e
 workflow-type: tm+mt
-source-wordcount: '2659'
-ht-degree: 68%
+source-wordcount: '1648'
+ht-degree: 72%
 
 ---
 
-# Erstellen einer mobilen Scorecard
 
-Die folgenden Informationen zeigen Kuratoren von Customer Journey Analytics-Daten, wie Dashboards für ausführende Benutzer konfiguriert und präsentiert werden können. Beginnen Sie mit dem Video zum Scorecard Builder für Analytics-Dashboards:
+# Scorecards verwalten
 
->[!VIDEO](https://video.tv.adobe.com/v/343458)
-
->[!NOTE]
->
->Screenshots von Analytics-Scorecards für diese Seite stammen aus der Adobe Analytics-Benutzeroberfläche und nicht aus dem Customer Journey Analytics. Die Benutzeroberflächen sind fast identisch.
-
-Eine Analytics-Scorecard zeigt wichtige Datenvisualisierungen für ausführende Benutzer in einem gekachelten Layout an, wie unten dargestellt:
-
-![Beispiel einer Analytics-Scorecard mit Demo der mobilen Scorecard](assets/intro_scorecard.png)
-
-Als Kurator dieser Scorecard können Sie mit dem Scorecard Builder konfigurieren, welche Kacheln auf der Scorecard für Ihren ausführenden Verbraucher angezeigt werden. Sie können auch konfigurieren, wie die detaillierten Ansichten bzw. Aufschlüsselungen angepasst werden können, nachdem auf die Kacheln getippt wird. Die Scorecard Builder-Oberfläche ist unten dargestellt:
-
-![Scorecard Builder mit dem neuen Fenster für mobile Scorecards. ](assets/scorecard_builder.png)
-
-Gehen Sie wie folgt vor, um die Scorecard zu erstellen:
-
-1. Öffnen Sie die Vorlage für [!UICONTROL leere mobile Scorecards].
-2. Konfigurieren Sie die Scorecard mit Daten und speichern Sie sie.
-
-## Zugriff auf die Vorlage für [!UICONTROL leere mobile Scorecards] {#template}
-
-Sie können die Vorlage [!UICONTROL Leere mobile Scorecard] öffnen, indem Sie entweder ein neues Projekt erstellen oder über das Menü „Tools“ zugreifen.
-
-### Neues Projekt erstellen {#create}
-
-1. Öffnen Sie Customer Journey Analytics und klicken Sie auf **[!UICONTROL Arbeitsbereich]** Registerkarte.
-1. Klicken Sie auf die Schaltfläche **[!UICONTROL Projekt erstellen]** und wählen Sie die Projektvorlage **[!UICONTROL Leere mobile Scorecard]** aus.
-1. Klicken Sie auf **[!UICONTROL Erstellen]**.
-
-![Fenster &quot;Alle Vorlagen&quot;mit der ausgewählten leeren MObile-Scorecard.](assets/new_template.png)
-
-### Tools-Menü
-
-1. Wählen Sie im Menü **[!UICONTROL Tools]** die Option **[!UICONTROL Analytics-Dashboards (Mobile App)]** aus.
-1. Klicken Sie im nachfolgenden Bildschirm auf **[!UICONTROL Neue Scorecard erstellen]**.
-
-## Scorecard mit Daten konfigurieren und speichern {#configure}
-
-So implementieren Sie die Scorecard-Vorlage:
-
-1. Geben Sie unter **[!UICONTROL Eigenschaften]** (in der rechten Leiste) eine **[!UICONTROL Datenansicht des Projekts]** an, aus der Sie Daten verwenden möchten.
-
-   ![Neues Fenster zur mobilen Scorecard, in dem die Datenansichtsauswahl hervorgehoben wird](assets/properties_save.png)
-
-1. Um Ihrer Scorecard eine neue Kachel hinzuzufügen, ziehen Sie eine Metrik aus dem linken Bereich und legen Sie sie im **[!UICONTROL Metriken hierher ziehen und ablegen]** Zone. Sie können auch eine Metrik zwischen zwei Kacheln einfügen, indem Sie einen ähnlichen Workflow verwenden.
-
-   ![Neues mobiles Scorecard-Fenster mit einem Pfeil, der auf eine Metrik (neue KPI) verweist, wurde in die Scorecard abgelegt. ](assets/build_list.png)
-
-
-1. Von jeder Kachel aus können Sie auf eine Detailansicht zugreifen, die zusätzliche Informationen über die Metrik anzeigt, wie z. B. die obersten Elemente in einer Liste verwandter Dimensionen.
-
-## Dimensionen oder Metriken hinzufügen {#dimsmetrics}
-
-Um einer Metrik eine verwandte Dimension hinzuzufügen, ziehen Sie eine Dimension aus dem linken Bereich und legen Sie sie auf einer Kachel ab.
-
-Sie können beispielsweise geeignete Dimensionen (wie **[!DNL Marketing Channel]** in diesem Beispiel) zur Metrik **[!UICONTROL Unique Visitors]** hinzufügen, indem Sie sie auf die Kachel ziehen und dort ablegen. Aufschlüsselungen von Dimensionen werden im Abschnitt [!UICONTROL Drill Ins] (Aufschlüsselung) der kachelspezifischen **[!UICONTROL Eigenschaften]** angezeigt. Sie können jeder Kachel mehrere Dimensionen hinzufügen.
-
-![Neues mobiles Scorecard-Fenster mit einem Pfeil, der von der Dimensionsliste zum Scorecard-Bereich zeigt.](assets/layer_dimensions.png)
-
-## Anwenden von Filtern {#filters}
-
-Um Filter auf einzelne Kacheln anzuwenden, ziehen Sie einen Filter (Segmente sind Filter im Customer Journey Analytics) aus dem linken Bereich und legen Sie ihn direkt über der Kachel ab.
-
-Wenn Sie den Filter auf alle Kacheln in der Scorecard anwenden möchten, legen Sie die Kachel auf der Scorecard ab. Sie können auch Filter anwenden, indem Sie im Menü „Filter“ unterhalb der Datumsbereiche Filter auswählen. You [Konfigurieren und Anwenden von Filtern für Ihre Scorecards](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html?lang=de) auf die gleiche Weise wie im Customer Journey Analytics Workspace.
-
-![Dropdown-Auswahl filtern, um die Build-Filter hervorzuheben](assets/segment_ui.png)
-
-## Datumsbereiche hinzufügen {#dates}
-
-Um Datumsbereichskombinationen, die in Ihrer Wertungsliste ausgewählt werden können, hinzuzufügen oder zu entfernen, wählen Sie die Dropdown-Liste „Datumsbereich“ aus.
-
-![Neue mobile Scorecard-Markierung Gestern im Vergleich zum gleichen Tag letzte Woche](assets/new_score_card.png)
-
-Jede neue Scorecard Beginn mit 6 Datumsbereichskombinationen, die sich auf den Datumsbereich von heute und gestern konzentrieren. Sie können unnötige Datumsbereiche entfernen, indem Sie auf das „x“ klicken, oder Sie können jede Datumsbereichskombination durch Klicken auf den Stift bearbeiten.
-
-![Neue mobile Scorecard, die das Stiftsymbol hervorhebt](assets/new_score_card2.png)
-
-Um ein Primärdatum zu erstellen oder zu ändern, wählen Sie über die Dropdown-Liste aus den verfügbaren Datumsbereichen aus oder ziehen Sie eine Datumskomponente aus der rechten Leiste in den Ablagebereich.
-
-![Neue mobile Scorecard, die Datumsbereiche mit Primärem Datum/Gestern hervorhebt](assets/new_score_card3.png)
-
-Um ein Vergleichsdatum zu erstellen, können Sie im Dropdown-Menü aus praktischen Voreinstellungen für gängige Zeitvergleiche auswählen. Sie können auch eine Datumskomponente aus der rechten Leiste ziehen und ablegen.
-
-![Neue mobile Scorecard, die die Datumsbereiche mit dem Vergleichsdatum hervorhebt und auf den letzten Tag der ausgewählten Woche eingestellt ist](assets/new_score_card4.png)
-
-Wenn der gewünschte Datumsbereich noch nicht erstellt wurde, können Sie durch Klicken auf das Kalendersymbol einen neuen erstellen.
-
-![Kalendersymbol](assets/new_score_card5.png)
-
-Dadurch gelangen Sie zum Generator für den Datumsbereich, in dem Sie eine neue Komponente für den Datumsbereich erstellen und speichern können.
-
-### Vergleichsdatumsbereiche anzeigen oder ausblenden {#show-comparison-dates}
-
-Um Vergleichsdatumsbereiche einzubeziehen, schalten Sie die Einstellung **Vergleichsdaten einschließen** um.
-
-![Neue mobile Scorecard, die gestern vs. Vortag hervorhebt und Vergleichsdaten einschließen](assets/include-comparison-dates.png)
-
-Die Einstellung ist standardmäßig *an*. Schalten Sie sie *aus*, wenn Sie keine Vergleichsdaten anzeigen möchten.
-
-![Neue mobile Scorecard-Hervorhebung Gestern und Vergleichsdaten einschließen](assets/no-comparison-dates.png)
-
-## Visualisierungen anwenden {#viz}
-
-Analytics-Dashboards bieten vier Visualisierungen, die Ihnen einen umfassenden Einblick in Dimensionselemente und Metriken bieten. Wenn Sie eine andere Visualisierung anwenden möchten, ändern Sie den [!UICONTROL Diagrammtyp] in den [!UICONTROL Eigenschaften] einer Kachel. Wählen Sie einfach die rechte Kachel aus und ändern Sie dann den Diagrammtyp.
-
-![Kacheleigenschaften](assets/properties.png)
-
-Oder klicken Sie auf das Symbol für [!UICONTROL Visualisierungen] in der linken Leiste und ziehen Sie die rechte Visualisierung per Drag &amp; Drop auf die Kachel:
-
-![Visualisierungen](assets/vizs.png)
-
-### [!UICONTROL Zusammenfassungszahl]
-
-Verwenden Sie die Visualisierung der Zusammenfassungsnummer, um eine große Zahl hervorzuheben, die in einem Projekt wichtig ist.
-
-![Neue mobile Scorecard mit Visualisierung der Zusammenfassungsnummer, die 13,3.000 Besuche hervorhebt](assets/summary-number.png)
-
-### [!UICONTROL Ringdiagramm]
-
-Ähnlich einem Tortendiagramm zeigt diese Visualisierung die Daten als Teile eines Ganzen. Ein Ringdiagramm kann für den Vergleich der prozentualen Anteile eines Ganzen verwendet werden. Nehmen wir beispielsweise an, Sie möchten sehen, welche Anzeigenplattform zur Gesamtzahl der eindeutigen Personen beigetragen hat:
-
-![Neue mobile Scorecard mit Donut-Visualisierung](assets/donut-viz.png)
-
-### [!UICONTROL Linie]
-
-Die Linienvisualisierung stellt Metriken anhand einer Linie dar, die den Wertverlauf über einen bestimmten Zeitraum hinweg zeigt. Ein Liniendiagramm zeigt Dimensionen im Zeitverlauf an, funktioniert aber bei jeder Visualisierung. In diesem Beispiel visualisieren Sie die Dimension „Produktkategorie“.
-
-![Neue mobile Scorecard mit einer Linienvisualisierung](assets/line.png)
-
-### [!UICONTROL Horizontalbalken]
-
-Diese Visualisierung zeigt Horizontalbalken, die verschiedene Werte aus einer oder mehreren Metriken darstellen. Verwenden Sie zum Beispiel [!UICONTROL Horizontalbalken] als bevorzugte Visualisierung, um ganz leicht zu erkennen, welches Ihre Top-Produkte sind.
-
-![Neue mobile Scorecard mit horizontaler Leiste](assets/horizontal.png)
-
-## Benennen von Scorecards {#name}
-
-Um die Scorecard zu benennen, klicken Sie auf den Namespace oben links im Bildschirm und geben Sie den neuen Namen ein.
-
-![Scorecards benennen](assets/new_name.png)
-
-### Dimensionselement des Typs [!UICONTROL Nicht angegeben] entfernen {#remove-dims}
-
-Wenn Sie Dimensionselemente des Typs [!UICONTROL Nicht angegeben] aus Ihren Daten entfernen möchten, gehen Sie wie folgt vor:
-
-1. Wählen Sie die richtige Kachel aus.
-1. Wählen Sie in der rechten Leiste unter **[!UICONTROL Drill-ins]** den Rechtspfeil neben dem Dimensionselement aus, für das Sie Elemente des Typs **[!UICONTROL Nicht angegeben]** entfernen möchten.
-
-   ![Eigenschaften mit Pfeil zeigen auf den Pfeil neben dem Dimensionsnamen.](assets/unspecified.png)
-
-1. Klicken Sie auf das Symbol neben **[!UICONTROL Nicht angegeben]**, um nicht spezifizierte Daten aus Ihrem Reporting zu entfernen. (Sie können auch jedes andere Dimensionselement entfernen.)
+In diesem Thema werden Kuratoren von Customer Journey Analytics-Daten angewiesen, wie Scorecard-Elemente angezeigt und verwaltet werden.
 
 ## Anzeigen und Konfigurieren von Kacheleigenschaften {#tiles}
 
@@ -342,3 +190,24 @@ So geben Sie eine Scorecard über einen freigebbaren Link frei
 
    Wenn ein Empfänger die App nicht heruntergeladen hat, wird er zur App-Liste im App Store- oder Google Play-Store weitergeleitet, wo er sie herunterladen kann.
 
+
+## Dimensionselement des Typs [!UICONTROL Nicht angegeben] entfernen {#remove-dims}
+
+Wenn Sie Dimensionselemente des Typs [!UICONTROL Nicht angegeben] aus Ihren Daten entfernen möchten, gehen Sie wie folgt vor:
+
+1. Wählen Sie die richtige Kachel aus.
+1. Wählen Sie in der rechten Leiste unter **[!UICONTROL Drill-ins]** den Rechtspfeil neben dem Dimensionselement aus, für das Sie Elemente des Typs **[!UICONTROL Nicht angegeben]** entfernen möchten.
+
+   ![Eigenschaften mit Pfeil zeigen auf den Pfeil neben dem Dimensionsnamen.](assets/unspecified.png)
+
+1. Klicken Sie auf das Symbol neben **[!UICONTROL Nicht angegeben]**, um nicht spezifizierte Daten aus Ihrem Reporting zu entfernen. (Sie können auch jedes andere Dimensionselement entfernen.)
+
+## Intelligente Beschriftungen in Scorecards anzeigen
+
+Intelligente Untertitel können Nicht-Analytikern helfen, ohne die Hilfe von Analysten ihre Daten besser zu verstehen. Intelligente Untertitel verwenden fortschrittliches maschinelles Lernen und generative KI, um wertvolle Einblicke in natürliche Sprachen für Visualisierungen zu bieten.
+
+So zeigen Sie intelligente Beschriftungen an:
+
+1. Klicken Sie in eine Kachel.
+
+1. more
