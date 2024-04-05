@@ -5,9 +5,9 @@ feature: Dimensions
 solution: Customer Journey Analytics
 exl-id: 17b275a5-c2c2-48ee-b663-e7fe76f79456
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: aaab21ef817e3acf67ca83cb6f9258b812625c8e
 workflow-type: tm+mt
-source-wordcount: '532'
+source-wordcount: '544'
 ht-degree: 6%
 
 ---
@@ -39,3 +39,4 @@ Die beste Möglichkeit, um Dimensionen mit hoher Kardinalität aufzunehmen, best
 * Verwenden Sie eine Lookup-Datensatzdimension. Lookup-Datensatzdimensionen kombinieren Elemente von Ereignis-Datensatzdimensionen, die die Anzahl der zurückgegebenen eindeutigen Werte begrenzen.
 * Verwenden Sie die [Ein-/Ausschließen](/help/data-views/component-settings/include-exclude-values.md) Komponenteneinstellung im Datenansichtsmanager.
 * Kürzen Sie den Datumsbereich der Anforderung. Wenn sich im Laufe der Zeit viele eindeutige Werte ansammeln, kann die Verkürzung des Datumsbereichs des Workspace-Berichts die Anzahl der eindeutigen Werte einschränken, die Server verarbeiten können.
+* Verwenden Sie [Vollständiger Tabellenexport](/help/analysis-workspace/export/export-cloud.md) , um alle Zeilen der Tabelle zurückzugeben.
