@@ -6,9 +6,9 @@ solution: Customer Journey Analytics
 feature: Basics
 role: User
 source-git-commit: 5333034f70ca9ca8252af2874d443bd09e746384
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1969'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -87,7 +87,7 @@ In den folgenden Tabellen ist aufgeführt, welche Adobe Analytics-Funktionen in 
 | Funktion | Hinweise |
 | --- | --- |
 | Bedienfelder | Leeres Bedienfeld, Attributions-Bedienfeld, Freiform-Bedienfeld und Quick Insights werden vollständig unterstützt. Die Bedienfelder „Segmentvergleich“ und „Analytics for Target“ (A4T) werden nicht unterstützt. |
-| Analytics for Target (A4T) | Derzeit in der Beta-Phase. Teilweise Unterstützung wird über Felder im [Analytics-Quell-Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=de) bereitgestellt. Die Unterstützung von A4T-gerechten Namen für die Zielgruppenaktivitäten und -erfahrungen ist geplant. |
+| Analytics for Target (A4T) | Derzeit in der Beta-Version. Teilweise Unterstützung wird über Felder im [Analytics-Quell-Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=de) bereitgestellt. Die Unterstützung von A4T-gerechten Namen für die Zielgruppenaktivitäten und -erfahrungen ist geplant. |
 
 {style="table-layout:auto"}
 
