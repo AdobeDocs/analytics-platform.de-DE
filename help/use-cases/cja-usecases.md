@@ -5,8 +5,8 @@ exl-id: 90746eb0-99df-463a-8f01-330fd460a4a8
 solution: Customer Journey Analytics
 feature: Use Cases
 role: User, Admin
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
-workflow-type: ht
+source-git-commit: f078bf7b9b9d87335f435db2bbba87b078412738
+workflow-type: tm+mt
 source-wordcount: '213'
 ht-degree: 100%
 
@@ -21,4 +21,4 @@ Customer Journey Analytics unterstützt die folgenden wichtigen Anwendungsfälle
 * **Möglichkeiten der Datenwissenschaft für Ihre Analysten nutzen**: Mit Customer Journey Analytics können normale Menschen mithilfe der Datenwissenschaft tiefe Einblicke und Analysen gewinnen.
 * **Datensätze visualisieren und mit ihnen mithilfe von Ad-hoc-Berichten interagieren**: Workspace kann jeden Datensatz aus Adobe Experience Platform verwenden, der einigen Grundregeln entspricht.
 * **Nicht-Webdaten anzeigen**: Arbeitsbereich ist nicht mehr auf eine starre Definition eines „Treffers“ oder „Ereignisses“ beschränkt. Benutzerdefinierte Schemata ermöglichen die vollständige Kontrolle über Daten und Definitionen.
-* **Mehr Kontrolle über die Datenmanipulationen**: Ändern Sie hochgeladene Daten, erstellen Sie neue Datensätze und importieren Sie sie in Arbeitsbereich. Adobe Experience Platform bietet Tools zum Abfragen, Extrahieren, Transformieren und Laden über den Experience Cloud-Abfragedienst.
+* **Mehr Kontrolle über die Datenmanipulationen**: Ändern Sie hochgeladene Daten, erstellen Sie neue Datensätze und importieren Sie sie in Arbeitsbereich. Adobe Experience Platform bietet Tools zum Abfragen, Extrahieren, Transformieren und Laden über den Abfrage-Service von Experience Platform.
