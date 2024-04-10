@@ -4,13 +4,13 @@ title: Scorecards verwalten
 feature: Analytics Dashboards
 role: User, Admin
 solution: Customer Journey Analytics
-source-git-commit: c5f4ddd2f0a2840e7c0d456475f95d891863666e
+exl-id: 6a0de7db-689d-448d-b8e0-90af4a5ee325
+source-git-commit: 6149d2cf23eb31f0aaa37546d3150017e155053c
 workflow-type: tm+mt
-source-wordcount: '1648'
-ht-degree: 72%
+source-wordcount: '1792'
+ht-degree: 66%
 
 ---
-
 
 # Scorecards verwalten
 
@@ -202,12 +202,30 @@ Wenn Sie Dimensionselemente des Typs [!UICONTROL Nicht angegeben] aus Ihren Date
 
 1. Klicken Sie auf das Symbol neben **[!UICONTROL Nicht angegeben]**, um nicht spezifizierte Daten aus Ihrem Reporting zu entfernen. (Sie können auch jedes andere Dimensionselement entfernen.)
 
-## Intelligente Beschriftungen in Scorecards anzeigen
+## Intelligente Beschriftungen in Scorecards anzeigen {#captions}
 
 Intelligente Untertitel können Nicht-Analytikern helfen, ohne die Hilfe von Analysten ihre Daten besser zu verstehen. Intelligente Untertitel verwenden fortschrittliches maschinelles Lernen und generative KI, um wertvolle Einblicke in natürliche Sprachen für Visualisierungen zu bieten.
 
-So zeigen Sie intelligente Beschriftungen an:
+Diese Beschriftungen ermitteln wichtige statistische Einblicke in die Daten und formulieren sie in natürlicher Sprache, wodurch Nichtanalytiker ihre Datenkompetenz entwickeln können.
 
-1. Klicken Sie in eine Kachel.
+Intelligente Beschriftungen sind für alle Visualisierungen in der Mobile App verfügbar, einschließlich Linien-, Ring-, Balkendiagramm- und Zusammenfassungsnummer.
 
-1. more
+So zeigen Sie intelligente Untertitel in einer mobilen Scorecard an:
+
+1. Klicken Sie in einer Scorecard auf eine Kachel. Klicken Sie in dieser Scorecard beispielsweise in das Liniendiagramm am unteren Rand.
+
+   ![Scorecard mit Linienvisualisierung](assets/caption1.png)
+
+1. Tippen Sie oben rechts auf das blaue Symbol, um die Beschriftungen zu generieren. Die Beschriftungen werden unter dem Liniendiagramm angezeigt.
+
+   ![Intelligente Beschriftung in Linienvisualisierung](assets/caption2.png)
+
+1. Wischen Sie nach rechts, um alle intelligenten Beschriftungen anzuzeigen.
+
+   Intelligente Beschriftungen können auf Datenspitzen, Anomalien, Trends, Rückgänge, Korrelationen und andere Phänomene verweisen.
+
+1. Tippen Sie auf die schwarze Markierung in einer Beschriftung, um ein Problem zu melden, z. B. schädliche oder illegale Inhalte.
+
+   ![Berichtsproblem mit Beschriftung](assets/caption-report.png)
+
+1. Klicken Sie auf das X, um die **[!UICONTROL Berichtsergebnisse]** angezeigt.
