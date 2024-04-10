@@ -4,9 +4,9 @@ description: Listet Inhaltsaktualisierungen für Dokumentation zu Customer Journ
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: dd4a2e4770e0ead4c7b4c578acd2ceacdfaa856c
+source-git-commit: 3ca28d9c9f1c6a9e14ce4c9080bd180a5699ad5b
 workflow-type: tm+mt
-source-wordcount: '3277'
+source-wordcount: '3290'
 ht-degree: 78%
 
 ---
@@ -20,6 +20,7 @@ Die folgenden Aktualisierungen wurden seit der ersten Erstellung der Customer Jo
 | Funktion | Beschreibung |
 | --- | --- |
 | **April 2024** | |
+| Vorhersage statistischer Verfahren | Es wurde ein Artikel hinzugefügt, der die [statistische Verfahren für Prognosedienst](../analysis-workspace/c-forecast/statistics-forecasting.md). |
 | Es wurden Informationen hinzugefügt, die einen vollständigen Tabellenexport für Dimensionen mit hoher Kardinalität empfehlen | Aufzählungszeichen in [Best Practices für Dimensionen mit hoher Kardinalität](/help/components/dimensions/high-cardinality.md) , um die Verwendung des vollständigen Tabellenexports für Dimensionen mit hoher Kardinalität zu empfehlen. |
 | **März 2024** | |
 | Nutzungsinformationen zur Spalte „Verwendet in“ sind erst ab September 2023 verfügbar. | Es wurde klargestellt, dass die Nutzungsinformationen zur Spalte **Verwendet in** auf der [Projekte-Landingpage](/help/getting-started/landing.md) nur bis September 2023 zurückreichen. |
