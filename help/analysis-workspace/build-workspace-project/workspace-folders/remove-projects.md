@@ -6,9 +6,9 @@ feature: Workspace Basics
 exl-id: 9c3523b1-afa2-4a68-a432-972032680fc7
 role: User
 source-git-commit: 7ba5a1d4d9f93cd15b76d26a880abe723120de72
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '223'
-ht-degree: 80%
+ht-degree: 100%
 
 ---
 
@@ -42,7 +42,7 @@ Sie können Projekte von einem Ordner in einen anderen, von Ihnen erstellen Ordn
 
 ## Löschen eines Projekts aus einem Projektordner {#delete-project-in-folder}
 
-Wenn Sie ein Projekt aus einem Ordner löschen, wird es nach 180 Tagen aus dem System gelöscht. In den 180 Tagen nach dem Löschen können Benutzer weiterhin über die Web-Oberfläche auf ein gelöschtes Projekt zugreifen, wenn sie über eine direkte URL zum Projekt verfügen.
+Wenn Sie ein Projekt aus einem Ordner löschen, wird es nach 180 Tagen aus dem System bereinigt. In den 180 Tagen nach dem Löschen können Benutzende weiterhin über die Web-Oberfläche auf ein gelöschtes Projekt zugreifen, wenn sie über eine direkte URL zu dem Projekt verfügen.
 
 1. Klicken Sie in einem Projektordner auf die Auslassungspunkte **…** neben dem Projektnamen.
 
