@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: 1f5b2a42-162e-45a7-9fd4-8c1557f48bb8
 role: Admin
-source-git-commit: d6f2d7129b472b32edc30dadfeb2303a92d790de
+source-git-commit: 4cb3c61a518b93119d8ffd503fc8653076ad56a1
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '2007'
+ht-degree: 7%
 
 ---
 
@@ -24,11 +24,13 @@ Weitere Informationen zum Reporting Activity Manager, einschließlich der wichti
 
    Eine Liste Ihrer aktivierten Basisverbindungen wird angezeigt.
 
-   ![Berichtsaktivität, die die Berichtswarteschlange anzeigt](assets/reporting-activity1.png)
+   ![Berichtsaktivität mit Anzeige der Berichtswarteschlange](assets/reporting-activity1.png)
 
 1. Um die Gesamtzahl der Berichtsanfragen für alle Verbindungen in Ihrem Unternehmen anzuzeigen, erweitern Sie [!UICONTROL **Mehr anzeigen**] , um die [!UICONTROL **Monatliche Berichtsanforderungen**] Diagramm.
 
    Sie können die Anzahl der Berichtsanfragen in Ihrer Organisation für den aktuellen Monat und den Vormonat anzeigen.
+
+   ![Berichtsaktivität mit Anzeige der Berichtswarteschlange](assets/reporting-activity-monthly.png)
 
 1. (Optional) Sie können die Liste der Verbindungen durchsuchen oder filtern:
 
