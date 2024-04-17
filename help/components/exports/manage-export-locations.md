@@ -5,10 +5,10 @@ title: Verwalten von Cloud-Exportspeicherorten und -konten
 feature: Components
 exl-id: 8e82fe6f-99df-4360-8693-99692aac002b
 role: User, Admin
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: cdf99e31790f089950de8063445b6264158131dd
 workflow-type: tm+mt
-source-wordcount: '508'
-ht-degree: 2%
+source-wordcount: '668'
+ht-degree: 1%
 
 ---
 
@@ -48,13 +48,19 @@ Um benötigte Informationen zu finden, können Sie entweder die Liste der Stando
 
 1. Wählen Sie die [!UICONTROL **Standorte**] Registerkarte.
 
+1. (Bedingt) Wenn Sie Systemadministrator sind, können Sie die [!UICONTROL **Anzeigen von Standorten für alle Benutzer**] -Option zum Anzeigen von Orten, die von allen Benutzern in Ihrer Organisation erstellt wurden.
+
 1. Geben Sie im Suchfeld alle Informationen ein, die mit dem gesuchten Ort verknüpft sind. Sie können in einer beliebigen Spalte der Tabelle nach Daten suchen.
 
 ## Bearbeitungsorte
 
 1. Wählen Sie unter Customer Journey Analytics die Option [!UICONTROL **Komponenten**] > [!UICONTROL **Exporte**].
 
-1. Wählen Sie die [!UICONTROL **Standorte**] und wählen Sie dann den Ort aus, den Sie bearbeiten möchten.
+1. Wählen Sie die [!UICONTROL **Standorte**] Registerkarte.
+
+1. (Bedingt) Wenn Sie Systemadministrator sind, können Sie die [!UICONTROL **Anzeigen von Standorten für alle Benutzer**] -Option zum Anzeigen von Orten, die von allen Benutzern in Ihrer Organisation erstellt wurden.
+
+1. Wählen Sie den Speicherort aus, den Sie bearbeiten möchten.
 
    ![Exportiert das Fenster mit der Registerkarte Standorte und der Liste der Standorte.](assets/locations-edit.png)
 
@@ -70,7 +76,11 @@ So löschen Sie einen Speicherort:
 
 1. Wählen Sie unter Customer Journey Analytics die Option [!UICONTROL **Komponenten**] > [!UICONTROL **Exporte**].
 
-1. Wählen Sie die [!UICONTROL **Standorte**] und wählen Sie einen oder mehrere Speicherorte aus, die Sie löschen möchten.
+1. Wählen Sie die [!UICONTROL **Standorte**] Registerkarte.
+
+1. (Bedingt) Wenn Sie Systemadministrator sind, können Sie die [!UICONTROL **Anzeigen von Standorten für alle Benutzer**] -Option zum Anzeigen von Orten, die von allen Benutzern in Ihrer Organisation erstellt wurden.
+
+1. Wählen Sie einen oder mehrere Speicherorte aus, die Sie löschen möchten.
 
    ![Exportiert das Fenster mit der Registerkarte Standorte und der Liste der Standorte](assets/locations-edit.png)
 
@@ -92,6 +102,8 @@ So löschen Sie einen Speicherort:
 
    ![Exportfenster mit der Registerkarte Standortkonten](assets/account-add.png)
 
+1. (Bedingt) Wenn Sie Systemadministrator sind, können Sie die [!UICONTROL **Anzeigen von Konten für alle Benutzer**] -Option zum Anzeigen von Orten, die von allen Benutzern in Ihrer Organisation erstellt wurden.
+
 1. Auswählen [!UICONTROL **Details anzeigen**] auf dem Konto, das Sie bearbeiten möchten.
 
 1. Nehmen Sie die gewünschten Änderungen vor und wählen Sie dann [!UICONTROL **Speichern**].
@@ -108,6 +120,8 @@ So zeigen Sie Schlüssel an, die mit einem Exportkonto verknüpft sind:
 
    ![Exportfenster mit der Registerkarte Standortkonten](assets/account-add.png)
 
+1. (Bedingt) Wenn Sie Systemadministrator sind, können Sie die [!UICONTROL **Anzeigen von Konten für alle Benutzer**] -Option zum Anzeigen von Orten, die von allen Benutzern in Ihrer Organisation erstellt wurden.
+
 1. Wählen Sie das 3-Punkt-Symbol für das Konto aus, das Sie bearbeiten möchten, und wählen Sie dann [!UICONTROL **Kontoschlüssel**].
 
 ## Löschen von Konten
@@ -117,6 +131,8 @@ So zeigen Sie Schlüssel an, die mit einem Exportkonto verknüpft sind:
 1. Wählen Sie die [!UICONTROL **Standortkonten**] Registerkarte.
 
    ![Exportfenster mit der Registerkarte Standortkonten](assets/account-add.png)
+
+1. (Bedingt) Wenn Sie Systemadministrator sind, können Sie die [!UICONTROL **Anzeigen von Konten für alle Benutzer**] -Option zum Anzeigen von Orten, die von allen Benutzern in Ihrer Organisation erstellt wurden.
 
 1. Wählen Sie das 3-Punkt-Symbol für das Konto aus, das Sie bearbeiten möchten, und wählen Sie dann [!UICONTROL **Konto löschen**].
 
