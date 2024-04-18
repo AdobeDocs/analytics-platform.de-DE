@@ -4,7 +4,7 @@ description: Erfahren Sie, wie Sie Zielgruppen in Customer Journey Analytics ver
 exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
 feature: Audiences
 role: User
-source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
+source-git-commit: 91ab1d3160db83979e1550f8f1b5135065cc6707
 workflow-type: tm+mt
 source-wordcount: '1631'
 ht-degree: 57%
@@ -86,7 +86,7 @@ Nachdem Sie eine Audience erstellt haben, erstellt Adobe für jede neue Customer
 
 An verschiedenen Stellen vor, während und nach der Veröffentlichung von Zielgruppen können Latenzen auftreten. Im Folgenden finden Sie einen Überblick über mögliche Latenzen.
 
-![Latenzen bei der Zielgruppenveröffentlichung, wie in diesem Abschnitt beschrieben.](assets/latency-diagram.png)
+![Latenzen bei der Zielgruppenveröffentlichung, wie in diesem Abschnitt beschrieben.](/help/components/audiences/assets/latency-diagram.png)
 
 | # | Latenzpunkt | Latenzdauer |
 | --- | --- | --- |
@@ -141,7 +141,7 @@ Customer Journey Analytics streamt die Daten per Pipeline in RTCP, und diese Dat
 
 +++**Welche Identitäten sendet Customer Journey Analytics?**
 
-Die Identitäts-/Namespace-Paare, die im [Verbindungs-Setup](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html#create-connection). Indesondere der Schritt, in dem Benutzende das Feld auswählen, das sie als ihre „Personen-ID“ verwenden möchten.
+Die Identitäts-/Namespace-Paare, die im [Verbindungs-Setup](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=de#create-connection). Indesondere der Schritt, in dem Benutzende das Feld auswählen, das sie als ihre „Personen-ID“ verwenden möchten.
 
 +++
 
