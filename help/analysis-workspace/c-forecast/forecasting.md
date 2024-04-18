@@ -4,9 +4,9 @@ title: Prognosen - Übersicht
 feature: Visualizations
 role: User
 exl-id: 9ec920c4-3273-4497-83a4-6a2e2fc92e2f
-source-git-commit: fea1b12a594a820ab2e55f850ca95c5a373184f0
+source-git-commit: dc3a109f162adfe48f621ba3ece95fedead3c6e1
 workflow-type: tm+mt
-source-wordcount: '164'
+source-wordcount: '220'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,9 @@ ht-degree: 0%
 
 {{select-package}}
 
-Prognosen sind eine Analysis Workspace-Funktion, mit der Sie eine standardmäßige oder berechnete Metrik mit einer beliebigen unterstützten Zeitgranularität (stündlich, täglich, wöchentlich, monatlich und jährlich) prognostizieren können. Prognosen sind nur für zeitreihenbezogene Daten verfügbar.
+Prognosen enthalten eine statistische Prognose für zeitreihenbezogene Daten, die auf den bereits in Customer Journey Analytics vorhandenen historischen Daten basieren. Prognosen können in Freiformtabellen und Liniendiagrammvisualisierungen angezeigt werden. Benutzer können steuern, ob Prognosen automatisch über ihre Benutzereinstellungen in der Customer Journey Analytics-Benutzeroberfläche eingeschlossen werden. Sie können sie auch in den Spalteneinstellungen pro Spalte aktivieren und deaktivieren. Nur die erste Spalte, die einer Tabelle hinzugefügt wurde, ist bereits für Prognosen aktiviert.
+
+Prognosen sind in &quot;Select&quot; und höheren Customer Journey Analytics-Lizenzstufen verfügbar.
 
 Sie können die Prognose für Folgendes nutzen:
 

@@ -5,10 +5,10 @@ exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: 18f7f4ab3ef368afb73445c5b6dccc3c4f468ef7
-workflow-type: ht
+source-git-commit: dc3a109f162adfe48f621ba3ece95fedead3c6e1
+workflow-type: tm+mt
 source-wordcount: '2910'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -189,7 +189,7 @@ Diese Berechnung wird für jeden Datensatz in der Verbindung durchgeführt.
 
 ## Algorithmisches Bereinigen großer Lookup-Datensätze
 
-Beim Erstellen einer Verbindung können Sie große Datensätze zu Suchzwecken hinzufügen. Ein Beispiel hierfür wäre ein Datensatz, der einen Produktkatalog darstellt, sodass beim Erstellen von Berichten und Visualisierungen nach beschreibenden Produktinformationen gesucht werden kann. Ein solch großer Lookup-Datensatz kann die maximal 10 Millionen eindeutigen Lookups überschreiten. Dieser Grenzwert ist derzeit als Schutzmechanismus implementiert und führt dazu, dass zusätzliche Daten übersprungen werden.
+Beim Erstellen einer Verbindung können Sie große Datensätze zu Suchzwecken hinzufügen. Beispiel: ein Datensatz, der einen Produktkatalog darstellt, sodass beim Erstellen von Berichten und Visualisierungen beschreibende Produktinformationen nachgeschlagen werden können. Ein solch großer Lookup-Datensatz kann die maximal 10 Millionen eindeutigen Lookups überschreiten. Dieser Grenzwert ist derzeit als Schutzmechanismus implementiert und führt dazu, dass zusätzliche Daten übersprungen werden.
 
 Sie können eine algorithmische Bereinigung eines großen Lookup-Datensatzes anfordern. Bei dieser algorithmischen Bereinigung bleiben nur Daten im Lookup-Datensatz, die mit den Schlüsseln in Ihrem Ereignisdatensatz übereinstimmen. Auf diese Weise müssen Sie nicht den gesamten unbereinigten Lookup-Datensatz laden. Alte oder seltener verwendete Elemente werden entfernt, was sich geringfügig auf Berichte auswirken kann, jedoch erhebliche Vorteile bringt. Der Algorithmus bezieht die letzten 90 Tage ein und führt wöchentlich Aktualisierungen durch.
 
