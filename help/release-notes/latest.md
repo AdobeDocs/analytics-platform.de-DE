@@ -3,10 +3,10 @@ title: Aktuelle Versionshinweise zu Customer Journey Analytics anzeigen
 description: Neueste Versionshinweise zu Customer Journey Analytics
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 69566b840301f87a6362d6bd16b1e255a14d4e23
+source-git-commit: abaa747934ff2cdd0a3dab867165afb46fbc71db
 workflow-type: tm+mt
-source-wordcount: '828'
-ht-degree: 48%
+source-wordcount: '945'
+ht-degree: 44%
 
 ---
 
@@ -32,6 +32,7 @@ Diese Versionshinweise beziehen sich auf den Veröffentlichungszeitraum vom 10. 
 | **B2B-Schematransformation – Person zu Konto** | Ermöglicht Ihnen die Transformation von Datensätzen, um personenbasierte Suchvorgänge in Customer Journey Analytics-B2B-Berichtsszenarien besser zu unterstützen. Diese Funktion ist bei Datensätzen für B2B-Schemata verfügbar, die auf den folgenden Klassen basieren:<ul><li>XDM Business Account Person Relation</li><li>XDM Business Opportunity Person Relation</li><li>XDM Business Marketing List Members</li><li>XDM Business Campaign Members</li></ul> | | Donnerstag, 1. Mai 2024 |
 | **Bot-Erkennung bei Experience Edge** | [Bot-Erkennung](https://experienceleague.adobe.com/docs/experience-platform/datastreams/bot-detection.html?lang=de) ermöglicht es Ihnen, Ereignisse zu identifizieren, die vom Web SDK, Mobile SDK und der Server-API und nicht von bekannten Spiders und Bots generiert wurden. | | Donnerstag, 1. Mai 2024 |
 | **Abgeleitete Felder: Funktion &quot;Weiter&quot;oder &quot;Zurück&quot;** | Mit diesen neuen Funktionen können Sie ein Feld als Eingabe nehmen und dann den n-vorherigen oder n-nächsten Wert identifizieren, um eine bessere Ansicht der Benutzer-Journey zu erhalten. Diese Funktion kann auch mit anderen Funktionen in [!UICONTROL Abgeleitete Felder], beispielsweise [!UICONTROL Verketten], um neue Dimensionen zu erstellen. |  | Donnerstag, 1. Mai 2024 |
+| **Veröffentlichung von Zielgruppen in einem neuen Abschnitt „Zielgruppen“ in Experience Platform** | Zielgruppen, die über Customer Journey Analytics veröffentlicht werden, sind jetzt im neuen Abschnitt &quot;Zielgruppen&quot;in Adobe Experience Platform verfügbar.<p>Zuvor waren Audiences, die über Customer Journey Analytics veröffentlicht wurden, im Experience Platform unter dem Abschnitt &quot;Segmente&quot;verfügbar.</p><p>Diese Verbesserung bietet folgende Vorteile:</p><ul><li>Zielgruppen haben keine Verzögerung von mehr 1 Stunde, bevor sie auf dem Experience Platform erscheinen. Sie sind Sekunden nach ihrer Veröffentlichung verfügbar.</li><li>Zielgruppen können mithilfe der Spalte &quot;Ursprung&quot;in der Experience Platform sortiert werden, in der die Anwendung angezeigt wird, von der aus die Zielgruppe ursprünglich veröffentlicht wurde.</li><li>Mithilfe der Filter- und Sortieroptionen in Experience Platform können Sie die relevanten Zielgruppen schneller finden.</li></ul> |  | Mai 2024 |
 
 {style="table-layout:auto"}
 
