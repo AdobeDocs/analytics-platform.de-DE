@@ -5,10 +5,10 @@ title: Konfigurieren von Cloud-Exportspeicherorten
 feature: Components
 exl-id: 93f1cca0-95da-41a0-a4f9-5ab620a5b9da
 role: User, Admin
-source-git-commit: 067a9e3d5319a33bb5ae894d76f3445e2d968d0e
+source-git-commit: d1fc7c0ab95e43a20cdfba8d0948c188fda8bec8
 workflow-type: tm+mt
-source-wordcount: '1789'
-ht-degree: 19%
+source-wordcount: '1792'
+ht-degree: 16%
 
 ---
 
@@ -106,7 +106,7 @@ Informationen zum Verwalten vorhandener Standorte, einschließlich Anzeigen, Bea
 
    | Feld | Funktion |
    |---------|----------|
-   | [!UICONTROL **Bucket**] | Der Bucket in Ihrem Amazon S3-Konto, an den Adobe Analytics-Daten gesendet werden sollen. <p>Stellen Sie sicher, dass die von Adobe bereitgestellte Benutzer-ARN über die `S3:PutObject` -Berechtigung, um Dateien in diesen Bucket hochzuladen. </p><p>Behälternamen müssen bestimmten Benennungsregeln entsprechen. Sie müssen beispielsweise zwischen 3 und 63 Zeichen lang sein, dürfen nur aus Kleinbuchstaben, Zahlen, Punkten (.) und Bindestrichen (-) bestehen und müssen mit einem Buchstaben oder einer Zahl beginnen und enden. [Eine vollständige Liste der Benennungsregeln finden Sie in der Dokumentation zu AWS .](https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucketnamingrules.html). </p> |
+   | [!UICONTROL **Bucket**] | Der Behälter in Ihrem Amazon S3-Konto, an den Customer Journey Analytics-Daten gesendet werden sollen. <p>Stellen Sie sicher, dass die von Adobe bereitgestellte Benutzer-ARN über die `S3:PutObject` -Berechtigung, um Dateien in diesen Bucket hochzuladen. </p><p>Behälternamen müssen bestimmten Benennungsregeln entsprechen. Sie müssen beispielsweise zwischen 3 und 63 Zeichen lang sein, dürfen nur aus Kleinbuchstaben, Zahlen, Punkten (.) und Bindestrichen (-) bestehen und müssen mit einem Buchstaben oder einer Zahl beginnen und enden. [Eine vollständige Liste der Benennungsregeln finden Sie in der Dokumentation zu AWS .](https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucketnamingrules.html). </p> |
    | [!UICONTROL **Präfix**] | Der Ordner im Bucket, in den Sie die Daten ablegen möchten. Geben Sie einen Ordnernamen an und fügen Sie nach dem Namen einen Schrägstrich hinzu, um den Ordner zu erstellen. (Beispiel: Ordnername/) |
 
    {style="table-layout:auto"}
@@ -129,7 +129,7 @@ Informationen zum Verwalten vorhandener Standorte, einschließlich Anzeigen, Bea
 
    | Feld | Funktion |
    |---------|----------|
-   | [!UICONTROL **Bucket**] | Der Bucket in Ihrem GCP-Konto, an den Adobe Analytics-Daten gesendet werden sollen. <p>Vergewissern Sie sich, dass Sie die `roles/storage.objectCreator` Berechtigung zum von Adobe bereitgestellten Prinzipal. (Der Prinzipal wird bereitgestellt, wenn [Konfigurieren des Google Cloud Platform-Kontos](/help/components/exports/cloud-export-accounts.md). <p>Informationen zum Gewähren von Berechtigungen finden Sie in der Google Cloud-Dokumentation unter [Hauptkonto zu einer Richtlinie auf Bucket-Ebene hinzufügen](https://cloud.google.com/storage/docs/access-control/using-iam-permissions#bucket-add).</p> |
+   | [!UICONTROL **Bucket**] | Der Bucket in Ihrem GCP-Konto, an den Customer Journey Analytics-Daten gesendet werden sollen. <p>Vergewissern Sie sich, dass Sie die `roles/storage.objectCreator` Berechtigung zum von Adobe bereitgestellten Prinzipal. (Der Prinzipal wird bereitgestellt, wenn [Konfigurieren des Google Cloud Platform-Kontos](/help/components/exports/cloud-export-accounts.md). <p>Informationen zum Gewähren von Berechtigungen finden Sie in der Google Cloud-Dokumentation unter [Hauptkonto zu einer Richtlinie auf Bucket-Ebene hinzufügen](https://cloud.google.com/storage/docs/access-control/using-iam-permissions#bucket-add).</p> |
    | [!UICONTROL **Präfix**] | Der Ordner im Bucket, in den Sie die Daten ablegen möchten. Geben Sie einen Ordnernamen an und fügen Sie nach dem Namen einen Schrägstrich hinzu, um den Ordner zu erstellen. (Beispiel: Ordnername/) |
 
    {style="table-layout:auto"}
@@ -171,7 +171,7 @@ Informationen zum Verwalten vorhandener Standorte, einschließlich Anzeigen, Bea
 
    | Feld | Funktion |
    |---------|----------|
-   | [!UICONTROL **Container**] | Der Container innerhalb des von Ihnen angegebenen Kontos, an den Adobe Analytics-Daten gesendet werden sollen. Stellen Sie sicher, dass Sie Berechtigungen zum Hochladen von Dateien in die Azure-Anwendung erteilen, die Sie zuvor erstellt haben. |
+   | [!UICONTROL **Container**] | Der Container innerhalb des von Ihnen angegebenen Kontos, an den Customer Journey Analytics-Daten gesendet werden sollen. Stellen Sie sicher, dass Sie Berechtigungen zum Hochladen von Dateien in die Azure-Anwendung erteilen, die Sie zuvor erstellt haben. |
    | [!UICONTROL **Präfix**] | Der Ordner im Container, in dem Sie die Daten ablegen möchten. Geben Sie einen Ordnernamen an und fügen Sie nach dem Namen einen Schrägstrich hinzu, um den Ordner zu erstellen. Beispiel: `folder_name/`<p>Stellen Sie sicher, dass die Anwendungs-ID, die Sie beim Konfigurieren des Azure RBAC-Kontos angegeben haben, der Rolle `Storage Blob Data Contributor` zugeteilt wurde, damit der Zugriff auf den Container (Ordner) möglich ist.</p> <p>Weitere Informationen finden Sie unter [Integrierte Azure-Rollen](https://learn.microsoft.com/de-de/azure/role-based-access-control/built-in-roles).</p> |
    | [!UICONTROL **Konto**] | Das Azure-Speicherkonto. |
 
