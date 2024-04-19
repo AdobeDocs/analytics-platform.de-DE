@@ -5,10 +5,10 @@ exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: Basics
 role: User
-source-git-commit: 5333034f70ca9ca8252af2874d443bd09e746384
-workflow-type: ht
-source-wordcount: '1969'
-ht-degree: 100%
+source-git-commit: 5c5e526c6442c6ad1c749b6472a342590db2eff5
+workflow-type: tm+mt
+source-wordcount: '2035'
+ht-degree: 96%
 
 ---
 
@@ -125,16 +125,18 @@ In der folgenden Tabelle sind Funktionen aufgeführt, die in Customer Journey An
 
 | Funktion | Mehr Infos |
 | --- | --- |
+| Möglichkeit zur Kombination von Datensätzen (z. B. Report Suites von Adobe Analytics) | Mit Customer Journey Analytics können Sie Daten aus mehreren Report Suites so kombinieren, als wären sie eine einzige Report Suite in Adobe Analytics. |
 | Verarbeitung von Daten jeder Art | Customer Journey Analytics wird mit der Fähigkeit von Experience Platform kombiniert, alle Arten von Datenschemata und -typen zu speichern. Mithilfe des [Experience-Datenmodells (XDM)](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=de) können Daten einheitlich dargestellt und organisiert werden, sodass sie kombiniert und untersucht werden können. Adobe Analytics konzentriert sich hauptsächlich auf Web-basierte und Mobile-Analysedaten, wobei verschiedene Funktionen für den [Datenimport](https://experienceleague.adobe.com/docs/analytics/import/home.html?lang=de) zur Verfügung stehen. |
+| Geräteübergreifende Analyse | Customer Journey Analytics unterstützt die nahtlose Kombination gerätespezifischer Datensätze aus nicht authentifizierten und authentifizierten Sitzungen. Customer Journey Analytics bietet die Möglichkeit, historische Daten auf bekannte Geräte aufzustocken. In Analytics ist diese Funktion auf eine einzige Report Suite und die Verwendung eines Gerätediagramms beschränkt. |
+| Abgeleitete Felder | Abgeleitete Felder ermöglichen die Umwandlung zum Zeitpunkt der Berichtserstattung Ihren Daten. Daten können dynamisch kombiniert, korrigiert oder erstellt werden und gelten rückwirkend für alle Berichte. |
+| Verbesserte Sicherheits- und Datenschutzoptionen – HIPAA-Fähigkeit | Customer Journey Analytics ist HIPAA-fähig und bietet zusätzliche Sicherheitsoptionen für die Einhaltung von Vorschriften. Adobe Analytics ist nicht HIPAA-fähig. |
+| Experimentanalyse | Customer Journey Analytics kann Lift und Konfidenz jedes Experiments aus jeder Datenquelle bewerten, die als Teil einer Verbindung definiert wurde. Diese Auswertung ermöglicht Ihnen, die kausalen Zusammenhänge zwischen Kundeninteraktionen zu verstehen, die sich über alle Kanäle erstrecken. Analytics ist auf die Experimentanalyse über A4T beschränkt. |
+| Prognose | Prognosen sind eine KI/ML-Funktion, die eine statistische Prognose für zeitreihenbezogene Daten enthält, die auf den bereits in Customer Journey Analytics vorhandenen historischen Daten basieren. Prognosen können in Freiformtabellen und Liniendiagrammvisualisierungen angezeigt werden. |
+| Geführte Analyse | „Geführte Analyse“ ist ein Berichtsformat, das es Benutzenden ermöglicht, schnell ihre Datenanforderungen selbst zu erfüllen, sodass sie schnell hochwertige Erkenntnisse erhalten und datenbasierte Entscheidungen treffen können. „Geführte Analyse“ ist Bestandteil von Adobe Product Analytics, einem Add-on zu Customer Journey Analytics. |
+| Intelligente Beschriftungen | Intelligente Untertitel verwenden fortschrittliches maschinelles Lernen und generative KI, um wertvolle Einblicke in natürliche Sprachen für Workspace-Visualisierungen bereitzustellen. Die erste Version bietet automatisch generierte Einblicke für die [Linie](/help/analysis-workspace/visualizations/line.md) Visualisierung. |
+| Umwandlungen zum Zeitpunkt der Berichtserstellung | Datenansichten in Customer Journey Analytics ermöglichen eine weiter gehende Interpretation von Daten aus einer Verbindung. Sie können Daten ändern oder entfernen, ohne Ihre Implementierung zu ändern, Teilzeichenfolgen verwenden, um Dimensionen zu bearbeiten, Metriken aus beliebigen Werten erstellen oder Teilereignisse filtern. Alle diese Umwandlungen erfolgen zerstörungsfrei. Adobe Analytics bietet begrenzte Möglichkeiten durch Virtual Report Suites und benutzerdefinierte Sitzungslängen. |
+| SQL-Zugriff | Mit der Data Distiller-Option kann Customer Journey Analytics die Einschränkungen in Bezug auf die per Backend-Verarbeitung von Adobe erfassten Daten aufheben. Sie können Ihre Daten mit SQL ändern, unternehmensspezifische Werte und Datensätze erstellen und Ihre Entdeckungsreise fortsetzen. Analytics unterstützt keinen SQL-Zugriff auf seine Daten. |
 | Unbegrenzte Kundendimensionen und -metriken | Customer Journey Analytics-Dimensionen sind unbegrenzt. Werte können Zahlen, Texte, Objekte und Listen aufweisen oder aus einer Kombination dieser Elemente bestehen. Dimensionen können verschachtelt oder hierarchisch aufgebaut sein. Analytics unterstützt maximal 75 Eigenschaften und 250 eVars. |
 | Unbegrenzte eindeutige Werte | Customer Journey Analytics unterstützt unbegrenzte eindeutige Werte oder Dimensionselemente, über die innerhalb einer Dimension berichtet werden kann. Adobe Analytics ist auf 500.000 eindeutige Werte begrenzt. Durch die unbegrenzten eindeutigen Werte oder Dimensionen werden die Reporting- und Analysebeschränkungen aufgehoben, die derzeit bei einer umfangreichen Analytics-Implementierung bestehen. |
-| Umwandlungen zum Zeitpunkt der Berichtserstellung | Datenansichten in Customer Journey Analytics ermöglichen eine weiter gehende Interpretation von Daten aus einer Verbindung. Sie können Daten ändern oder entfernen, ohne Ihre Implementierung zu ändern, Teilzeichenfolgen verwenden, um Dimensionen zu bearbeiten, Metriken aus beliebigen Werten erstellen oder Teilereignisse filtern. Alle diese Umwandlungen erfolgen zerstörungsfrei. Adobe Analytics bietet begrenzte Möglichkeiten durch Virtual Report Suites und benutzerdefinierte Sitzungslängen. |
-| Experimentanalyse | Customer Journey Analytics kann Lift und Konfidenz jedes Experiments aus jeder Datenquelle bewerten, die als Teil einer Verbindung definiert wurde. Diese Auswertung ermöglicht Ihnen, die kausalen Zusammenhänge zwischen Kundeninteraktionen zu verstehen, die sich über alle Kanäle erstrecken. Analytics ist auf die Experimentanalyse über A4T beschränkt. |
-| Geräteübergreifende Analyse | Customer Journey Analytics unterstützt die nahtlose Kombination gerätespezifischer Datensätze aus nicht authentifizierten und authentifizierten Sitzungen. Customer Journey Analytics bietet die Möglichkeit, historische Daten auf bekannte Geräte aufzustocken. In Analytics ist diese Funktion auf eine einzige Report Suite und die Verwendung eines Gerätediagramms beschränkt. |
-| SQL-Zugriff | Mit der Data Distiller-Option kann Customer Journey Analytics die Einschränkungen in Bezug auf die per Backend-Verarbeitung von Adobe erfassten Daten aufheben. Sie können Ihre Daten mit SQL ändern, unternehmensspezifische Werte und Datensätze erstellen und Ihre Entdeckungsreise fortsetzen. Analytics unterstützt keinen SQL-Zugriff auf seine Daten. |
-| Verbesserte Sicherheits- und Datenschutzoptionen – HIPAA-Fähigkeit | Customer Journey Analytics ist HIPAA-fähig und bietet zusätzliche Sicherheitsoptionen für die Einhaltung von Vorschriften. Adobe Analytics ist nicht HIPAA-fähig. |
-| Möglichkeit zur Kombination von Datensätzen (z. B. Report Suites von Adobe Analytics) | Mit Customer Journey Analytics können Sie Daten aus mehreren Report Suites so kombinieren, als wären sie eine einzige Report Suite in Adobe Analytics. |
-| Abgeleitete Felder | Abgeleitete Felder ermöglichen die Umwandlung zum Zeitpunkt der Berichtserstattung Ihren Daten. Daten können dynamisch kombiniert, korrigiert oder erstellt werden und gelten rückwirkend für alle Berichte. |
-| Geführte Analyse | „Geführte Analyse“ ist ein Berichtsformat, das es Benutzenden ermöglicht, schnell ihre Datenanforderungen selbst zu erfüllen, sodass sie schnell hochwertige Erkenntnisse erhalten und datenbasierte Entscheidungen treffen können. „Geführte Analyse“ ist Bestandteil von Adobe Product Analytics, einem Add-on zu Customer Journey Analytics. |
 
 {style="table-layout:auto"}
