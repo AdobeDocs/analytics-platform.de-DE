@@ -4,16 +4,16 @@ title: Customer Journey Analytics-Daten herunterladen
 feature: Curate and Share
 exl-id: 1d8384ca-888c-482c-ab3e-d1b579217560
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: a3fc89ed08102d57ce3cfaadde96ade843cd8f8b
 workflow-type: tm+mt
-source-wordcount: '1133'
-ht-degree: 55%
+source-wordcount: '1165'
+ht-degree: 72%
 
 ---
 
 # Customer Journey Analytics-Daten herunterladen
 
-Sie können Customer Journey Analytics-Daten auf Ihre Workstation herunterladen. Dies kann in Form von kopierten Daten, CSV oder PDF erfolgen. Eine PDF wird normalerweise bevorzugt, wenn Sie in der heruntergeladenen Datei enthaltene Visualisierungen verwenden möchten. CSV- und kopierte Daten werden bevorzugt, wenn Sie einfach Textdaten verwenden möchten.
+Sie können Customer Journey Analytics-Daten auf Ihre Workstation herunterladen. Dies kann in Form von kopierten Daten, CSV oder PDF erfolgen. Eine PDF wird normalerweise bevorzugt, wenn Sie in der heruntergeladenen Datei enthaltene Visualisierungen verwenden möchten. CSV- und kopierte Daten werden bevorzugt, wenn Sie Daten in Textform verwenden möchten.
 
 Es stehen auch andere Methoden zum Exportieren von Customer Journey Analytics-Daten zur Verfügung, wie unter [Exportübersicht](/help/analysis-workspace/export/export-project-overview.md).
 
@@ -21,17 +21,17 @@ Es stehen auch andere Methoden zum Exportieren von Customer Journey Analytics-Da
 
 1. Führen Sie je nach dem Format, in dem der Download erfolgen soll, einen der folgenden Schritte aus:
 
-   * **PDF:** Auswählen **[!UICONTROL Projekt]** > **[!UICONTROL PDF herunterladen]**.
+   * **PDF:** Wählen Sie **[!UICONTROL Projekt]** > **[!UICONTROL PDF herunterladen]** aus.
 
-     Wählen Sie diese Option aus, wenn die heruntergeladene Datei alle angezeigten (sichtbaren) Tabellen und Visualisierungen im Projekt enthalten soll.
+     Wählen Sie diese Option, wenn die heruntergeladene Datei alle angezeigten (sichtbaren) Tabellen und Visualisierungen im Projekt enthalten soll.
 
-   * **CSV:** Auswählen **[!UICONTROL Projekt]** > **[!UICONTROL CSV herunterladen]**.
+   * **CSV:** Wählen Sie **[!UICONTROL Projekt]** > **[!UICONTROL CSV herunterladen]** aus.
 
      Wählen Sie diese Option aus, wenn die heruntergeladene Datei Text enthalten soll.
 
    ![Das Dropdown-Menü Projekt mit den Optionen CSV herunterladen und PDF herunterladen hervorgehoben.](assets/download-project.png)
 
-1. (Bedingt) Wenn Sie sich für den Download einer PDF entschieden haben, wird eine Nachricht angezeigt, nachdem das Projekt heruntergeladen werden kann. Wählen Sie [!UICONTROL **Herunterladen**] aus.
+1. (Bedingt) Wenn Sie sich für den Download einer PDF entschieden haben, wird eine Nachricht angezeigt, sobald das Projekt heruntergeladen werden kann. Wählen Sie [!UICONTROL **Herunterladen**] aus.
 
 Beachten Sie beim Herunterladen von Projekten Folgendes:
 
@@ -44,12 +44,12 @@ Beachten Sie beim Herunterladen von Projekten Folgendes:
 
 Die Rechtsklickoption **[!UICONTROL In Zwischenablage kopieren]** ermöglicht Ihnen das schnelle Kopieren von Customer Journey Analytics-Daten aus Workspace und das Einfügen dieser Daten in ein Tool eines Drittanbieters.
 
-* Wenn die angezeigte Tabelle kopiert werden soll, klicken Sie mit der rechten Maustaste auf die Tabellenüberschrift und wählen Sie **Daten in die Zwischenablage kopieren**.
-* Wenn Sie möchten, dass nur ein Teil der Daten kopiert wird, wählen Sie die Tabelle aus, und klicken Sie dann mit der rechten Maustaste auf **Auswahl in Zwischenablage kopieren**.
+* Wenn die angezeigte Tabelle kopiert werden soll, klicken Sie mit der rechten Maustaste auf die Tabellenkopfzeile und wählen Sie **Daten in die Zwischenablage kopieren**.
+* Wenn Sie möchten, dass nur ein Teil der Daten kopiert wird, wählen Sie ihn in der Tabelle aus, und klicken Sie dann mit der rechten Maustaste auf >**Auswahl in Zwischenablage kopieren**.
 
 >[!TIP]
 >
->Sie können den Hotkey verwenden `Ctrl+C` , um Ihre Auswahl in die Zwischenablage zu kopieren, und verwenden Sie `Ctrl+V` , um es in ein Tool eines Drittanbieters einzufügen.
+>Sie können den Hotkey `Ctrl+C` verwenden, um Ihre Auswahl in die Zwischenablage zu kopieren, und dann `Ctrl+V`, um es in ein Tool eines Drittanbieters einzufügen.
 
 
 ![Die Option Auswahl in Zwischenablage kopieren ](assets/copy-selection.png)
@@ -58,11 +58,11 @@ Die Rechtsklickoption **[!UICONTROL In Zwischenablage kopieren]** ermöglicht Ih
 
 Die Rechtsklickoption **[!UICONTROL Daten als CSV herunterladen]** ermöglicht Ihnen, eine Tabelle mit Customer Journey Analytics-Daten oder die Datenquelle einer beliebigen Visualisierung als CSV-Datei herunterzuladen.
 
-* Klicken Sie in der Kopfzeile einer beliebigen Tabelle oder Visualisierung mit der rechten Maustaste auf und wählen Sie **[!UICONTROL Daten als CSV herunterladen]**. Dadurch werden die angezeigten Customer Journey Analytics-Daten in der Tabelle oder der zugrunde liegenden Datenquelle für eine Visualisierung als CSV heruntergeladen.
+* Klicken Sie in der Kopfzeile einer Tabelle oder Visualisierung mit der rechten Maustaste und wählen Sie **[!UICONTROL Daten als CSV herunterladen]** aus. Dadurch werden die angezeigten Customer Journey Analytics-Daten in der Tabelle oder der zugrunde liegenden Datenquelle für eine Visualisierung als CSV heruntergeladen.
 
   >[!NOTE]
   >
-  >  Hinweis: Diese Option wird von der Map-Visualisierung nicht unterstützt.
+  >  Hinweis: Diese Option wird von der Kartenvisualisierung nicht unterstützt.
 
 
 * Klicken Sie in einer Tabelle mit der rechten Maustaste und wählen Sie **[!UICONTROL Auswahl als CSV herunterladen]**. Mit dieser Option wird nur die Auswahl heruntergeladen, nicht die vollständige, angezeigte Tabelle.
@@ -71,7 +71,7 @@ Die Rechtsklickoption **[!UICONTROL Daten als CSV herunterladen]** ermöglicht I
 
 ## Objekte als CSV herunterladen {#download-items}
 
-Wenn Sie mehr als die sichtbaren 400 Datenzeilen in einer Tabelle analysieren möchten, klicken Sie mit der rechten Maustaste auf die Tabellenüberschrift oder eine beliebige Zeile und wählen Sie **Elemente als CSV herunterladen (_Name der Dimension_)**. Diese Option exportiert bis zu 50.000 Dimensionselemente (basierend auf der Tabellensortierung) für die ausgewählte Dimension, wobei Sortieroptionen und Filter angewendet werden. Wenn Sie diese Option oben in der Tabelle auswählen, wird die erste Dimension in der Tabelle exportiert. Obwohl in Freiformtabellen keine Beschränkungen gelten, wird empfohlen, die Option zum Herunterladen von Elementen in Tabellen mit weniger als 20 Spalten zu verwenden, um optimale Leistung sicherzustellen.
+Wenn Sie mehr als die 400 sichtbaren Zeilen mit Daten in einer Tabelle analysieren möchten, klicken Sie mit der rechten Maustaste auf die Tabellenkopfzeile oder eine beliebige Zeile und wählen Sie **Elemente als CSV herunterladen (_Dimensionsname_)**. Diese Option exportiert bis zu 50.000 Dimensionselemente (basierend auf der Tabellensortierung) für die ausgewählte Dimension, wobei Sortieroptionen und Filter angewendet werden. Wenn Sie diese Option oben in der Tabelle auswählen, wird die erste Dimension in der Tabelle exportiert. Obwohl in Freiformtabellen keine Beschränkungen gelten, wird empfohlen, die Option zum Herunterladen von Elementen in Tabellen mit weniger als 20 Spalten zu verwenden, um optimale Leistung sicherzustellen.
 
 >[!TIP]
 >
@@ -107,10 +107,12 @@ Wenn Sie mehrere Downloads gleichzeitig anfordern, erhalten Sie eine Benachricht
 
 Wenn die Variable **[!UICONTROL Download durchsetzen]** [Data Governance-Politik](/help/data-views/data-governance.md) in der Datenansicht aktiviert ist, über die Sie Berichte erstellen, werden bei jedem Download von Workspace-Projekten (z. B. per E-Mail oder PDF) die als vertraulich gekennzeichneten Datenfelder gehasht. Sie können diese Felder in Workspace weiterhin analysieren, aber wenn Sie versuchen, ein Projekt per E-Mail zu versenden oder anderweitig freizugeben, werden die blockierten Felder in der .pdf- oder .csv-Datei als leer angezeigt.
 
+Wenn Datenfelder, die als vertraulich gekennzeichnet sind, in der Variablen [!UICONTROL Datenansicht], ist die Option zum Auswählen und Kopieren von Daten aus dem Bildschirm auf alle Daten im [!UICONTROL Datenansicht].
+
 ## Häufig gestellte Fragen {#faq}
 
 | Frage | Antwort |
 | --- | --- |
 | Warum besteht meine heruntergeladene PDF-Datei aus einer Seite? | In Workspace werden heruntergeladene PDFs derzeit nicht in Seiten unterteilt. |
-| Kann ich über die Option &quot;Elemente als CSV herunterladen&quot;mehr als 50.000 Elemente exportieren? | Während jeder Download bis zu 50.000 Dimensionselemente enthalten kann, können Sie die Sortierung der Tabelle ändern, um längere Elemente abzurufen, oder einen Filter anwenden, um spezifischere Elemente herunterzuladen. |
-| Beschreibung der Funktion **[!UICONTROL Visualisierung kopieren]** | Unlike [!UICONTROL **Daten in die Zwischenablage kopieren**] oder [!UICONTROL **Auswahl in Zwischenablage kopieren**], die **[!UICONTROL Visualisierung kopieren]** Rechtsklick ist keine Exportoption. Damit können Sie eine Visualisierung oder ein Bedienfeld von einem Bereich in Workspace in einen anderen kopieren. Beispielsweise von einem Bedienfeld in ein anderes im selben Projekt oder von einem Projekt in ein anderes. [Intra-linking-Video](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/visualizations/intra-linking-in-analysis-workspace.html?lang=de) |
+| Kann ich mehr als 50.000 Elemente mit der Option „Elemente als CSV herunterladen“ exportieren? | Während jeder Download bis zu 50.000 Dimensionselemente enthalten kann, können Sie die Sortierung der Tabelle ändern, um längere Elemente abzurufen, oder einen Filter anwenden, um spezifischere Elemente herunterzuladen. |
+| Beschreibung der Funktion **[!UICONTROL Visualisierung kopieren]** | Im Gegensatz zu [!UICONTROL **Daten in die Zwischenablage kopieren**] oder [!UICONTROL **Auswahl in Zwischenablage kopieren**] handelt es sich bei der Rechtsklick-Option **[!UICONTROL Visualisierung kopieren]** um keine Exportoption. Damit können Sie eine Visualisierung oder ein Bedienfeld von einem Bereich in Workspace in einen anderen kopieren. Beispielsweise von einem Bedienfeld in ein anderes im selben Projekt oder von einem Projekt in ein anderes. [Intra-linking-Video](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/visualizations/intra-linking-in-analysis-workspace.html?lang=de) |
