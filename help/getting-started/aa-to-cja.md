@@ -5,22 +5,20 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 5e3f0aa0-ba24-48c8-948c-ebb5c270f34d
-source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
-workflow-type: ht
-source-wordcount: '1443'
-ht-degree: 100%
+source-git-commit: 01188253d4a8d794e9cd9bbea9c0fef02180c940
+workflow-type: tm+mt
+source-wordcount: '1085'
+ht-degree: 91%
 
 ---
 
 # Weiterentwicklung von Adobe Analytics
 
-Wenn sich Ihr Unternehmen entschließt, Customer Journey Analytics zu verwenden, sollten Sie sich mit diesen Schritten vertraut machen, um Ihre Daten vorzubereiten, und über die wichtigen Unterschiede zwischen den beiden Technologien Bescheid wissen. Dieser Artikel richtet sich an Administratoren.
-
-## Vorbereiten Ihrer Daten
+## Schritt 3: Vorhandene Daten vorbereiten
 
 Die Vorbereitung Ihrer Adobe Analytics-Daten auf einen nahtlosen Wechsel zu Customer Journey Analytics ist für die Datenintegrität und die Konsistenz der Berichte von entscheidender Bedeutung.
 
-### 1. Identitäten erfassen {#identities}
+### Identitäten sammeln
 
 Die vielleicht wichtigste Komponente beim Verständnis einer Customer Journey ist, zu wissen, wer bei jedem Schritt der Kunde ist. Customer Journey Analytics verfügt über eine Kennung über alle Kanäle hinweg und für die entsprechenden Daten, die es ermöglicht, mehrere Quellen in Customer Journey Analytics einander zuzuordnen.
 Beispiele für Identitäten sind Kunden-ID, Konto-ID oder E-Mail-ID. Für jede ID gilt Folgendes unabhängig von der Identität (es kann auch mehrere Identitäten geben):
@@ -30,11 +28,11 @@ Beispiele für Identitäten sind Kunden-ID, Konto-ID oder E-Mail-ID. Für jede I
 * Die ID enthält keine persönlich identifizierbare Informationen. Wenden Sie Hashing auf alle sensiblen Elemente an.
 * Die ID verwendet dasselbe Format für alle Quellen (gleiche Länge, gleiche Hashing-Methode usw.)
 
-In Datensätzen wie Adobe Analytics ist möglicherweise nicht in jeder Datenzeile eine Identität vorhanden, aber eine sekundäre Identität schon. In diesem Fall kann die Cross-Channel-Analyse (früher als „Zuordnung“ oder „Stitching“ bezeichnet) verwendet werden, um die Lücke zwischen Zeilen zu schließen, wenn eine Kundin oder ein Kunde nur durch die ECID identifiziert wird und wenn eine Identität erfasst wird (z. B. bei der Authentifizierung einer Person). [Weitere Informationen](../stitching/overview.md).
+In Datensätzen wie Adobe Analytics ist möglicherweise nicht in jeder Datenzeile eine Identität vorhanden, aber eine sekundäre Identität schon. In diesem Fall [Kanalübergreifende Analyse (auch &quot;Stitching&quot;genannt)](/help/stitching/overview.md) kann verwendet werden, um die Lücke zwischen Zeilen zu schließen, wenn ein Kunde nur durch seine ECID identifiziert wird und wenn eine Identität erfasst wird (z. B. bei der Authentifizierung eines Kunden).
 
-### 2. Anpassen der Variablen {#variables}
+### Variablen ausrichten
 
-Die einfachste Methode, Adobe Analytics-Daten in Customer Journey Analytics-Daten umzuwandeln, besteht darin, eine [globale Report Suite](https://experienceleague.adobe.com/docs/analytics/implementation/prepare/global-rs.html?lang=de) mithilfe des [Adobe Analytics-Quell-Connectors](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=de) in Experience Platform aufzunehmen. Dieser Connector ordnet Ihre Adobe Analytics-Variablen direkt einem XDM-Schema und -Datensatz in Experience Platform zu, die wiederum einfach mit Customer Journey Analytics verbunden werden können.
+Die einfachste Methode zur Umwandlung von Adobe Analytics-Daten in Customer Journey Analytics-Daten besteht darin, eine [globale Report Suite](https://experienceleague.adobe.com/docs/analytics/implementation/prepare/global-rs.html?lang=de) in Experience Platform mithilfe der [Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=de). Dieser Connector ordnet Ihre Adobe Analytics-Variablen direkt einem XDM-Schema und -Datensatz in Experience Platform zu, die wiederum einfach mit Customer Journey Analytics verbunden werden können.
 
 Eine vollständige globale Report Suite ist nicht in jedem Fall für eine Implementierung möglich. Wenn Sie planen, mehrere Report Suites in Customer Journey Analytics zu integrieren, haben Sie zwei Möglichkeiten:
 
@@ -46,7 +44,7 @@ Wenn Sie den Wechsel zu einer globalen Report Suite aufgrund von Problemen mit [
 
 Im Folgenden finden Sie ein Anwendungsbeispiel für das [Kombinieren von Report Suites mit verschiedenen Schemata](/help/use-cases/aa-data/combine-report-suites.md).
 
-### 3. Marketing-Kanäle (erneut) konfigurieren {#marketing-channels}
+### Marketing-Kanäle (erneut) konfigurieren
 
 Herkömmliche Einstellungen für Marketing-Kanäle in Adobe Analytics funktionieren in Customer Journey Analytics nicht auf die gleiche Weise. Dies hat zwei Gründe:
 
@@ -58,43 +56,9 @@ Adobe hat [aktualisierte Best Practices für die Implementierung von Marketing-K
 
 Mit der Einführung von [abgeleiteten Feldern](../data-views/derived-fields/derived-fields.md) im Rahmen der Datenansichten von Customer Journey Analytics werden Marketing-Kanäle auch zerstörungsfrei und rückwirkend unterstützt, indem die Vorlage [Marketing-Kanal-Funktion](../data-views/derived-fields/derived-fields.md#function-templates) verwendet wird.
 
-### 4. Entscheidung zwischen Analytics-Quell-Connector und Experience Platform SDKs {#connector-vs-sdk}
+## Vorbereiten auf wichtige Unterschiede bei der Migration zum Customer Journey Analytics
 
-Adobe Analytics-Kundinnen und -Kunden können ihre Report Suites in Adobe Experience Platform und Customer Journey Analytics ganz einfach mit dem Analytics-Quell-Connector nutzen. Informationen zur Verwendung des Analytics-Quell-Connectors finden Sie in der Schnellstartanleitung zum [Aufnehmen von Daten aus Adobe Analytics und ihre Verwendung in Customer Journey Analytics](../data-ingestion/analytics.md). Siehe auch [Erstellen einer Adobe Analytics-Quellverbindung in der Benutzeroberfläche](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=de), um weitere Informationen zu erhalten.
-
-Adobe bietet außerdem die Möglichkeit, die Datenerfassung mit dem [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/web-sdk.html?lang=de) oder dem [Adobe Experience Platform Mobile SDK](https://experienceleague.adobe.com/docs/mobile.html?lang=de) zu implementieren. Diese Methoden führen zu deutlich mehr Möglichkeiten bei der Datenerfassung. Die Anzahl der Felder ist nicht mehr beschränkt und es besteht keine Notwendigkeit mehr, Datenelemente wie in Analytics zu Props, eVars und Ereignissen zuzuordnen. Sie können unbegrenzte Schemaelemente verschiedener Typen verwenden und sie mithilfe von Customer Journey Analytics-[Datenansichten](/help/data-views/data-views.md) unterschiedlich darstellen. Die Geschwindigkeit der Datenverfügbarkeit steigt, wenn die Daten direkt an Adobe Experience Platform gesendet werden, da die Zeit für die Datenverarbeitung über Adobe Analytics entfällt.
-
-**Vorteile der Verwendung von Experience Platform-SDKs:**
-
-* Flexibles Schema zur Definition von erforderlichen Feldern
-* Nicht von der Adobe Analytics-Nomenklatur abhängig (Prop, eVar, Ereignis usw.)
-* Keine Längenbeschränkung (100 Zeichen für Props)
-* Schnellere Datenverfügbarkeit in Adobe Experience Platform, um [Anwendungsfälle der Echtzeit-Personalisierung](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/configure-personalization-destinations.html?lang=de) zu unterstützen
-* [Erstanbieter-Geräte-IDs](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/first-party-device-ids.html?lang=de) für eine genauere Besucheridentifizierung
-
-**Nachteile der Verwendung von Experience Platform-SDKs**
-
-Die folgenden Adobe Analytics-Funktionen oder -Komponenten werden nicht unterstützt:
-
-* Bot-Filterung
-* Messung von Streaming-Medien
-* Livestream oder Livestream-Trigger
-
-### 5. Zuordnen von Komponenten und Projekten von Adobe Analytics zu Customer Journey Analytics
-
-Adobe Analytics-Admins können Adobe Analytics-Projekte und die zugehörigen Komponenten zu Customer Journey Analytics migrieren.
-
-Der Migrationsvorgang umfasst:
-
-* Neuerstellung von Adobe Analytics-Projekten in Customer Journey Analytics.
-
-* Zuordnung von Dimensionen und Metriken aus Adobe Analytics-Report Suites zu Dimensionen und Metriken in Customer Journey Analytics-Datenansichten.
-
-Bevor Sie mit der Migration beginnen, sollten Sie zunächst die [Migration von Komponenten und Projekten von Adobe Analytics zu Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/component-migration/prepare-component-migration.html?lang=de) vorbereiten.
-
-Nachdem Sie alle notwendigen Vorbereitungen getroffen haben, können Sie [Komponenten und Projekte von Adobe Analytics zu Customer Journey Analytics migrieren](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/component-migration/component-migration.html?lang=de).
-
-## Einige wichtige Unterschiede
+Wenn sich Ihr Unternehmen entschließt, Customer Journey Analytics zu verwenden, sollten Sie sich mit diesen Schritten vertraut machen, um Ihre Daten vorzubereiten, und über die wichtigen Unterschiede zwischen den beiden Technologien Bescheid wissen. Dieser Artikel richtet sich an Administratoren.
 
 ### Machen Sie sich vertraut mit der Verarbeitung zur Berichtslaufzeit {#report-time}
 
@@ -132,6 +96,6 @@ Hier sind einige Videos, die Ihnen dabei helfen:
 
 * Erwägen Sie die Bereitstellung eines Datenwörterbuchs für Ihre Benutzer – oder erweitern Sie das SDR, um den Experience Platform-Feldnamen für Schemaelemente einzuschließen.
 
-## Nächste Schritte
+### Nächste Schritte
 
 Wenn Sie nach dem Wechsel zu Customer Journey Analytics Datendiskrepanzen feststellen, können Sie Ihre ursprünglichen Adobe Analytics-Daten mit den aktuellen Adobe Analytics-Daten in Customer Journey Analytics vergleichen. [Weitere Informationen](/help/troubleshooting/compare.md)

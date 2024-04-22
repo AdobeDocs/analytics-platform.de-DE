@@ -9,17 +9,17 @@ index: true
 user-guide-title: Handbuch für Customer Journey Analytics
 user-guide-description: Hier erhalten Sie Informationen zu Adobe Customer Journey Analytics und Erläuterungen zur Nutzung von Analysis Workspace mit Daten aus Experience Platform.
 breadcrumb-title: Handbuch für Customer Journey Analytics
-source-git-commit: 135d1832a1c22248e3c52e3f7cb9f05293626522
+source-git-commit: 9450ecdce53088b008f3a5a5413d3e824fbd9b13
 workflow-type: tm+mt
-source-wordcount: '1073'
-ht-degree: 79%
+source-wordcount: '1111'
+ht-degree: 77%
 
 ---
 
 
-# Handbuch zu Adobe Customer Journey Analytics {#using}
+# Adobe Customer Journey Analytics-Anleitung {#using}
 
-+ [Handbuch zu Adobe Customer Journey Analytics](../getting-started/cja-landing.md)
++ [Adobe Customer Journey Analytics-Anleitung](../getting-started/cja-landing.md)
 
 + Versionshinweise {#releases}
    + [Neueste Version](../release-notes/latest.md)
@@ -28,7 +28,7 @@ ht-degree: 79%
    + [Versionen 2022](../release-notes/2022.md)
    + [Versionen von 2021](../release-notes/2021.md)
    + [Versionen von 2020](../release-notes/2020.md)
-   + [Customer Journey Analytics-Versionen](../release-notes/releases.md)
+   + [Customer Journey Analytics-Releases](../release-notes/releases.md)
    + [Customer Journey Analytics – Aktualisierungen der Dokumentation](../release-notes/doc-changes.md)
 
 + Erste Schritte {#cja-overview}
@@ -42,6 +42,16 @@ ht-degree: 79%
 + Customer Journey Analytics und Adobe Analytics {#compare-aa-cja}
    + [Weiterentwicklung von Adobe Analytics](../getting-started/aa-to-cja.md)
    + [Benutzerhandbuch für Adobe Analytics-Benutzende](../getting-started/aa-to-cja-user.md)
+   + Zu Customer Journey Analytics migrieren {#migrate-to-cja}
+      + [Erste Schritte](/help/getting-started/cja-migration/cja-migration-getstarted.md)
+      + [Migrationsmethode auswählen](/help/getting-started/cja-migration/cja-migration-method.md)
+      + [Daten an Platform senden](/help/getting-started/cja-migration/cja-migration-send-to-platform.md)
+      + [Daten XDM zuordnen](/help/getting-started/cja-migration/cja-migration-xdm.md)
+      + [Verlaufsdaten beibehalten](/help/getting-started/cja-migration/cja-migration-historical-data.md)
+      + [Benutzereinstieg planen](/help/getting-started/cja-migration/cja-migration-onboarding.md)
+      + [Verwendung der Port-API](/help/getting-started/cja-migration/cja-migration-api.md)
+      + [Ersetzen von Daten-Feeds und Data Warehouse](/help/getting-started/cja-migration/cja-migration-export-options.md)
+      + [Migrieren von Projekten und Komponenten](/help/getting-started/cja-migration/cja-migration-projects.md)
    + Vergleich mit Adobe Analytics {#cja-aa-comparison}
       + [Überblick](../getting-started/aa-vs-cja/overview.md)
       + [Verwenden von Adobe Analytics-Daten in Customer Journey Analytics](../getting-started/aa-vs-cja/aa-data-in-cja.md)
@@ -173,10 +183,10 @@ ht-degree: 79%
       + [Übersicht über die Anomalieerkennung](../analysis-workspace/c-anomaly-detection/anomaly-detection.md)
       + [Anomalien in Analysis Workspace anzeigen](../analysis-workspace/c-anomaly-detection/view-anomalies.md)
       + [In der Anomalieerkennung verwendete statistische Verfahren](../analysis-workspace/c-anomaly-detection/statistics-anomaly-detection.md)
-   + Prognose {#forecasting}
+   + Prognosen {#forecasting}
       + [Prognosen - Übersicht](../analysis-workspace/c-forecast/forecasting.md)
       + [Prognosen in Analysis Workspace anzeigen](../analysis-workspace/c-forecast/view-forecasts.md)
-      + [Im Prognosedienst verwendete statistische Verfahren](../analysis-workspace/c-forecast/statistics-forecasting.md)
+      + [Statistische Verfahren, die beim Prognosedienst verwendet werden](../analysis-workspace/c-forecast/statistics-forecasting.md)
    + [Benutzervoreinstellungen](../analysis-workspace/user-preferences.md)
    + Häufig gestellte Fragen zu Workspace {#workspace-faq}
       + [Häufig gestellte Fragen](../analysis-workspace/workspace-faq/faq.md)
@@ -196,19 +206,19 @@ ht-degree: 79%
 + Geführte Analyse {#guided-analysis}
    + [Überblick](../guided-analysis/overview.md)
    + Trichter {#funnel}
-      + [Reibungsansicht](../guided-analysis/types/friction.md)
-      + [Ansicht der Konversionstrends](../guided-analysis/types/conversion-trends.md)
+      + [Friktionsansicht](../guided-analysis/types/friction.md)
+      + [Ansicht &quot;Konversionstrends&quot;](../guided-analysis/types/conversion-trends.md)
    + Wirkung {#impact}
       + [Versionsansicht](../guided-analysis/types/release.md)
-      + [Ansicht der ersten Verwendung](../guided-analysis/types/first-use.md)
-   + Retention {#retention}
+      + [Ansicht &quot;Erste Verwendung&quot;](../guided-analysis/types/first-use.md)
+   + Treue {#retention}
       + [Bindungsrate](../guided-analysis/types/retention-rates.md)
    + Trends {#trends}
       + [Nutzungsansicht](../guided-analysis/types/usage.md)
-      + [Häufigkeitsansicht](../guided-analysis/types/frequency.md)
+      + [Frequenzansicht](../guided-analysis/types/frequency.md)
    + Benutzerwachstum {#user-growth}
       + [Aktive Ansicht](../guided-analysis/types/active.md)
-      + [Nettowachstumsansicht](../guided-analysis/types/net-growth.md)
+      + [Netto-Wachstumsansicht](../guided-analysis/types/net-growth.md)
    + Benutzer-Stream {#streams}
       + [Timeline](../guided-analysis/types/timeline.md)
    + [Anwendungsfälle für Branchen](../guided-analysis/industry-use-cases.md)
@@ -254,7 +264,7 @@ ht-degree: 79%
          + [Metriken suchen](../components/calc-metrics/cm-workflow/cm-finding.md)
          + [Erstellen von Metriken](../components/calc-metrics/cm-workflow/cm-build-metrics.md)
          + [Metriktyp und Attribution](../components/calc-metrics/cm-workflow/m-metric-type-alloc.md)
-         + [Erstellen einer Teilnahmemetrik](../components/calc-metrics/cm-workflow/participation-metric.md)
+         + [Erstellen einer Beitragsmetrik](../components/calc-metrics/cm-workflow/participation-metric.md)
          + [Gefilterte Metriken](../components/calc-metrics/cm-workflow/metrics-with-segments.md)
          + [Filter stapeln und ersetzen](../components/calc-metrics/cm-workflow/cm-stack-seg.md)
          + [Gefilterte und gewichtete Metriken](../components/calc-metrics/cm-workflow/cm-weighted-metric.md)
@@ -278,9 +288,9 @@ ht-degree: 79%
    + Exporte {#exports}
       + [Konfigurieren von Cloud-Exportkonten](/help/components/exports/cloud-export-accounts.md)
       + [Konfigurieren von Cloud-Exportspeicherorten](/help/components/exports/cloud-export-locations.md)
-      + [Cloud-Exportspeicherorte verwalten](/help/components/exports/manage-export-locations.md)
-      + [Exporte verwalten](/help/components/exports/manage-exports.md)
-      + [Exportprotokolle verwalten](/help/components/exports/manage-export-logs.md)
+      + [Verwalten von Cloud-Exportspeicherorten](/help/components/exports/manage-export-locations.md)
+      + [Verwalten von Exporten](/help/components/exports/manage-exports.md)
+      + [Verwalten von Exportprotokollen](/help/components/exports/manage-export-logs.md)
       + [Fehlerbehebung bei Exporten](/help/components/exports/troubleshoot-exports.md)
    + Datenwörterbuch {#data-dictionary}
       + [Datenwörterbuch – Überblick](../components/data-dictionary/data-dictionary-overview.md)
@@ -307,17 +317,17 @@ ht-degree: 79%
    + [Anzeigen von Berichtsaktivität](../reporting-activity-manager/reporting-activity.md)
    + [Abbrechen von Berichtsanfragen](../reporting-activity-manager/reporting-activity-cancel-requests.md)
 
-+ Zusammenheften {#stitching}
++ Stitching {#stitching}
    + [Überblick](../stitching/overview.md)
    + [Funktionsweise von Stitching](../stitching/explained.md)
-   + [Erstellen und Verwalten von zusammengefügten Datensätzen](../stitching/stitching-ui.md)
+   + [Erstellen und Verwalten von zugeordneten Datensätzen](../stitching/stitching-ui.md)
    + [Häufig gestellte Fragen](../stitching/faq.md)
 
 + Adobe-Integrationen {#integrations}
-   + [Integration von Adobe-Lösungen mit Customer Journey Analytics - Überblick](/help/integrations/overview.md)
+   + [Adobe-Lösungen mit Customer Journey Analytics integrieren - Übersicht](/help/integrations/overview.md)
    + [Integrieren von Adobe Analytics mit Customer Journey Analytics](/help/integrations/aa.md)
    + [Integrieren von Journey Optimizer-Daten mit Customer Journey Analytics](/help/integrations/ajo.md)
-   + [Integrieren von Entscheidungs-Management-Daten mit Customer Journey Analytics](/help/integrations/ajo-od.md)
+   + [Integrieren von Entscheidungsverwaltungsdaten mit Customer Journey Analytics](/help/integrations/ajo-od.md)
    + [Integrieren von Customer AI mit Customer Journey Analytics](/help/integrations/customer-ai.md)
 
 + Data Governance {#cja-privacy}
@@ -333,13 +343,13 @@ ht-degree: 79%
       + [Konfigurieren des Streaming-Vorgangs von Google Analytics-Daten in Platform](../use-cases/ga/streaming.md)
       + [Bericht zu Google Analytics-Daten in Customer Journey Analytics](../use-cases/ga/report.md)
    + Datenaufnahme {#data-ingestion}
-      + [Aufnehmen von Marketo Engage-Daten in Adobe Experience Platform und Berichterstellung in Customer Journey Analytics](../use-cases/data-ingestion/marketo.md)
-      + [Aufnehmen von Adobe Experience Platform-Zielgruppen in Customer Journey Analytics](../use-cases/data-ingestion/ingest-aep-segments.md)
+      + [Marketo Engage-Daten in Adobe Experience Platform erfassen und in Customer Journey Analytics berichten](../use-cases/data-ingestion/marketo.md)
+      + [Adobe Experience Platform-Zielgruppen in Customer Journey Analytics erfassen](../use-cases/data-ingestion/ingest-aep-segments.md)
    + Datenansichten {#data-views}
       + [Anwendungsfälle von Datenansichten](../use-cases/data-views/data-views-usecases.md)
       + [Verwenden von Bindungsdimensionen und Metriken](../use-cases/data-views/binding-dimensions-metrics.md)
    + B2B {#b2b}
-      + [Ein B2B-Beispielprojekt](../use-cases/b2b/example.md)
+      + [Beispiel für ein B2B-Projekt](../use-cases/b2b/example.md)
       + [Hinzufügen von Daten der Kontoebene als Lookup-Datensatz](../use-cases/b2b/b2b.md)
    + Kanalübergreifende Daten {#cross-channel}
       + [Kanalübergreifendes Analysieren von Daten](../use-cases/cross-channel/cross-channel.md)
@@ -347,7 +357,7 @@ ht-degree: 79%
    + Adobe Analytics-Daten {#aa-data}
       + [Verwenden von Marketing-Kanal-Dimensionen](../use-cases/aa-data/marketing-channels.md)
       + [Kombinieren von Report Suites mit verschiedenen Schemata](../use-cases/aa-data/combine-report-suites.md)
-      + [Emulieren von Daten-Feeds](../use-cases/emulating-data-feeds.md)
+      + [Datenfeeds emulieren](../use-cases/emulating-data-feeds.md)
    + Komplexe Daten {#complex-data}
       + [Verwenden von Objekt-Arrays](../use-cases/object-arrays.md)
    + Abgeleitete Felder {#derived-fields}
@@ -359,7 +369,7 @@ ht-degree: 79%
    + [Zugriffssteuerung](../admin/cja-access-control.md)
    + [Anzeigen und Verwalten der Nutzung](../admin/estimate-usage.md)
    + [Auswirkungen des Löschens](../admin/cja-deletion.md)
-   + [Optimieren der Customer Journey Analytics-Leistung](../admin/optimizing-performance.md)
+   + [Customer Journey Analytics-Performance optimieren](../admin/optimizing-performance.md)
    + [IP-Adressen](../admin/ip-addresses.md)
 
 + Labs {#labs}
@@ -367,7 +377,7 @@ ht-degree: 79%
 
 + Fehlerbehebung {#troubleshooting}
    + [Vergleich von Adobe Analytics-Daten mit Customer Journey Analytics-Daten](../troubleshooting/compare.md)
-   + [Konsistenz der Metriken und der Anzahl der Zielgruppenzugehörigkeiten zwischen Real-Time CDP und Customer Journey Analytics](../troubleshooting/consistency-rcdp-cja.md)
+   + [Konsistenz von Metriken und Zählungen der Zielgruppenzugehörigkeit zwischen Echtzeit-Kundendatenplattform und Customer Journey Analytics](../troubleshooting/consistency-rcdp-cja.md)
    + [Fehlende Berechtigungen](../troubleshooting/lack-of-permissions.md)
 
 + Technische Hinweise {#technotes}
