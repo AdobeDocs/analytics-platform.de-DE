@@ -7,9 +7,9 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: 86ce60cf-b3c7-43b5-aa18-9e16fa942e54
-source-git-commit: 923dfac33fcde368392fe29c6530069cc0d8fb9d
+source-git-commit: 3e362a62d2ffd6d15e3028706e3704264df80222
 workflow-type: tm+mt
-source-wordcount: '788'
+source-wordcount: '800'
 ht-degree: 4%
 
 ---
@@ -38,7 +38,7 @@ Die Informationen auf dieser Seite beziehen sich auf Schritt 4, wie in der folge
 
 +++
 
-Die folgende Tabelle zeigt Implementierungsmethoden, die erfordern, dass Sie Daten dem XDM-Schema zuordnen:
+Nicht alle Migrationsmethoden erfordern, dass Sie Ihre Adobe Analytics-Daten dem XDM-Schema zuordnen. Die folgende Tabelle zeigt, welche Implementierungsmethoden eine XDM-Schemazuordnung erfordern:
 
 
 | Migrationsmethode | XDM-Zuordnung erforderlich? | Weitere Informationen |
