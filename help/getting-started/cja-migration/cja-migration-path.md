@@ -5,9 +5,9 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 9559ba10-cbaf-4243-9c85-a0a5f6e3bbff
-source-git-commit: 7bc4425f11980780ab64a201029cd63e4bd7849c
+source-git-commit: 6d4fdb464775967074547f8401de679f181d29d7
 workflow-type: tm+mt
-source-wordcount: '2080'
+source-wordcount: '1965'
 ht-degree: 2%
 
 ---
@@ -137,16 +137,6 @@ Der folgende Migrationspfad steht für Organisationen zur Verfügung, die Adobe 
 
 +++
 
-## Zuordnen von Daten zum XDM-Schema
+## Senden Sie als Nächstes Daten an Adobe Experience Platform
 
-Nachdem Sie Daten durch Befolgen der Links in der obigen Tabelle an Experience Platform gesendet haben, müssen Sie möglicherweise [Zuordnen von Daten zum XDM-Schema](/help/getting-started/cja-migration/cja-migration-xdm.md), abhängig von der gewählten Implementierungsmethode.
-
-Für die folgenden Implementierungsmethoden müssen Sie Daten dem XDM-Schema zuordnen:
-
-* Migration von der Adobe Analytics-Tag-Erweiterung zur Web SDK-Tag-Erweiterung
-
-* Konfigurieren der vorhandenen Adobe Analytics Web SDK-Implementierung zum Senden von Daten an Customer Journey Analytics
-
-Wenn Sie sich für eine neue Implementierung des Experience Platform Web SDK entschieden haben, ist auch keine Zuordnung erforderlich, da Sie bereits [Einrichten eines neuen XDM-Schemas](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-data-ingestion/ingest-use-guides/edge-network/aepwebsdk#set-up-a-schema) als Teil der neuen Implementierung.
-
-Wenn Sie sich dafür entschieden haben, Analytics Source Connector für Ihre Migration zu verwenden, ist keine Zuordnung erforderlich, da der Analytics Source Connector Ihr vorhandenes Adobe Analytics-Schema anstelle des XDM-Schemas verwendet.
+Nachdem Sie die oben genannten Informationen zur Auswahl eines Migrationspfads verwendet haben, erfahren Sie, wie Sie [Daten an Adobe Experience Platform senden](/help/getting-started/cja-migration/cja-migration-send-to-platform.md) abhängig vom ausgewählten Migrationspfad.
