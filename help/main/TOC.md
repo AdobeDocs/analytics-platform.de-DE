@@ -9,7 +9,7 @@ index: true
 user-guide-title: Handbuch für Customer Journey Analytics
 user-guide-description: Hier erhalten Sie Informationen zu Adobe Customer Journey Analytics und Erläuterungen zur Nutzung von Analysis Workspace mit Daten aus Experience Platform.
 breadcrumb-title: Handbuch für Customer Journey Analytics
-source-git-commit: 9450ecdce53088b008f3a5a5413d3e824fbd9b13
+source-git-commit: 8b7fedb9625ba60af1fea0b1580d32d2366081b8
 workflow-type: tm+mt
 source-wordcount: '1111'
 ht-degree: 77%
@@ -44,7 +44,7 @@ ht-degree: 77%
    + [Benutzerhandbuch für Adobe Analytics-Benutzende](../getting-started/aa-to-cja-user.md)
    + Zu Customer Journey Analytics migrieren {#migrate-to-cja}
       + [Erste Schritte](/help/getting-started/cja-migration/cja-migration-getstarted.md)
-      + [Migrationsmethode auswählen](/help/getting-started/cja-migration/cja-migration-method.md)
+      + [Migrationspfad auswählen](/help/getting-started/cja-migration/cja-migration-path.md)
       + [Daten an Platform senden](/help/getting-started/cja-migration/cja-migration-send-to-platform.md)
       + [Daten XDM zuordnen](/help/getting-started/cja-migration/cja-migration-xdm.md)
       + [Verlaufsdaten beibehalten](/help/getting-started/cja-migration/cja-migration-historical-data.md)

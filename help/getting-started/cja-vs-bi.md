@@ -5,10 +5,10 @@ role: User
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: ae66cd06-7ec1-4174-a3cf-939c3a66b840
-source-git-commit: 170737214fea4dbd4d90d33ebf770920c8344fb1
-workflow-type: ht
-source-wordcount: '1650'
-ht-degree: 100%
+source-git-commit: 8b7fedb9625ba60af1fea0b1580d32d2366081b8
+workflow-type: tm+mt
+source-wordcount: '1649'
+ht-degree: 98%
 
 ---
 
@@ -46,7 +46,7 @@ Customer Journey Analytics verwendet eine eigene leistungsstarke Architektur, di
 
 * **Schnelle Anwendung komplexer Pfade und Filter**: Die Reporting-Engine arbeitet mit teilweise sortierten, hierarchischen Datensätzen (z. B. Person -> Sitzungen -> Ereignisse). Alle Daten für ein Objekt der obersten Ebene (einzelne Profile) befinden sich auf einem einzigen Verarbeitungsknoten, um präzise Ergebnisse zu erzielen. Diese Aufteilung ermöglicht die schnelle Anwendung komplexer Pfade und Filter. Komplexe Vorgänge wie Sitzungserstellung, Attribution, zustandsorientierte Persistenz von Datenattributen und komplexe Datenbearbeitungsoptionen werden skaliert und mit kurzer Berichtszeit ausgeführt. In der BI-Welt erfordern diese Arten von Vorgängen normalerweise, dass für jeden Anwendungsfall neue OLAP-Cubes erstellt werden. Die Reporting-Engine von Customer Journey Analytics ermöglicht den ungehinderten Zugriff auf den gesamten Datensatz bei jeder Abfrage, was zu vollständig korrelierten Daten führt, ohne dass vorzeitiges Cubing erforderlich ist.
 
-* **Effiziente Abfrage komplexer Datenströme**: Einer der größten Unterschiede der Reporting-Engine gegenüber herkömmlichen SQL- und NoSQL-Datenbanken besteht in der Fähigkeit, Vorhersagen auf Basis sequenzorientierter Beziehungen auf einer grundlegenden Ebene zu bestimmen. Diese grundlegenden Abfragevorgänge können sich auf den Datensatzstrom beziehen, der aus vielen verzahnten (und sogar verschachtelten) Sequenzen besteht. Sie führen eine Abfrage für all diese miteinander verknüpften Datenströme durch, mit der Effizienz eines einzigen, fortlaufenden Sequenzvorgangs.
+* **Effiziente Abfrage komplexer Datenspeicher**: Einer der größten Unterschiede zwischen der Reporting-Engine und den herkömmlichen SQL- und NoSQL-Datenbanken besteht in der Fähigkeit, Eigenschaften auf Basis sequenzorientierter Beziehungen auf einer grundlegenden Ebene zu bestimmen. Diese grundlegenden Abfragevorgänge können sich auf den Datensatzstrom beziehen, der aus vielen verzahnten (und sogar verschachtelten) Sequenzen besteht. Sie führen eine Abfrage für all diese miteinander verknüpften Datenströme durch, mit der Effizienz eines einzigen, fortlaufenden Sequenzvorgangs.
 
 * **Entwickelt für die schnelle Beantwortung großer Abfragen**: Die Reporting-Engine hat keinen so allgemeinen Zweck wie herkömmliche Big-Data-Systeme. Sie wurde dagegen speziell für die Beantwortung von Abfragen entwickelt, die Millionen oder sogar Milliarden von Datensätzen (Ereignisdaten/Erlebnisereignisse) umfassen, was im Allgemeinen in weniger als einer Sekunde geschieht. Im Gegensatz zu anderen Big-Data-Systemen erfolgt dies nicht durch die Nutzung von Datenstichproben oder durch Vorberechnung der Antworten auf alle Fragen, die Sie potenziell stellen könnten. Stattdessen können die Antworten schnell genug berechnet werden, um die interaktive Abfrage von Anwendungsfällen zu unterstützen. Dieses spezielle Design der Reporting-Engine von Customer Journey Analytics macht die Daten schnell zur laufenden Analyse und Untersuchung verfügbar, sodass Sie schrittweise Erkenntnisse und Einsichten zur Customer Journeys gewinnen können.
 
