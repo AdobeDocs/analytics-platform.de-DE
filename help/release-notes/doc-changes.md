@@ -4,10 +4,10 @@ description: Listet Inhaltsaktualisierungen für Dokumentation zu Customer Journ
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 3ca28d9c9f1c6a9e14ce4c9080bd180a5699ad5b
+source-git-commit: c55daff7e2d96c96b985b0ec9609eb4db0370a45
 workflow-type: tm+mt
-source-wordcount: '3290'
-ht-degree: 78%
+source-wordcount: '3375'
+ht-degree: 76%
 
 ---
 
@@ -22,8 +22,11 @@ Die folgenden Aktualisierungen wurden seit der ersten Erstellung der Customer Jo
 | **April 2024** | |
 | Vorhersage statistischer Verfahren | Es wurde ein Artikel hinzugefügt, der die [statistische Verfahren für Prognosedienst](../analysis-workspace/c-forecast/statistics-forecasting.md). |
 | Es wurden Informationen hinzugefügt, die einen vollständigen Tabellenexport für Dimensionen mit hoher Kardinalität empfehlen | Aufzählungszeichen in [Best Practices für Dimensionen mit hoher Kardinalität](/help/components/dimensions/high-cardinality.md) , um die Verwendung des vollständigen Tabellenexports für Dimensionen mit hoher Kardinalität zu empfehlen. |
+| Eine Dokumentation zu intelligenten Untertiteln in mobilen Scorecards wurde hinzugefügt. | [Intelligente Untertitel](https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-dashboards/manage-scorecard#captions) kann Nicht-Analytikern dabei helfen, ohne die Hilfe von Analysten ihre Daten besser zu verstehen. |
+| Dokumentation für neue Adobe Product Analytics-Funktionen | <ul><li>[Funktionsmatrix](https://experienceleague.adobe.com/de/docs/analytics-platform/using/guided-analysis/funnel/friction)</li><li>Verbesserte [Treuerate](https://experienceleague.adobe.com/de/docs/analytics-platform/using/guided-analysis/retention/retention-rates)</li><li>[Verbesserte Einblicke in Trichter](https://experienceleague.adobe.com/de/docs/analytics-platform/using/guided-analysis/funnel/friction)</li><li>Vergleichen von Ereignissen innerhalb eines einzelnen Trichterschrittsschritts</li></ul> |
 | **März 2024** | |
 | Nutzungsinformationen zur Spalte „Verwendet in“ sind erst ab September 2023 verfügbar. | Es wurde klargestellt, dass die Nutzungsinformationen zur Spalte **Verwendet in** auf der [Projekte-Landingpage](/help/getting-started/landing.md) nur bis September 2023 zurückreichen. |
+| Es wurde eine Dokumentation zur Berechtigungsverbesserung für Workspace-Projektkomponenten hinzugefügt. | Wenn Sie ein Projekt für andere Benutzer freigeben, können diese Benutzer [Schnellfilter](/help/components/filters/quick-filters.md) und anderen Projektkomponenten, die in das freigegebene Projekt eingebettet sind. |
 | **Februar 2024** | |
 | Aktualisierungen der Dokumentation zur Projektfreigabe | Es wurden Informationen zum [Anzeigen von Projekten, die für Sie freigegeben wurden](/help/analysis-workspace/curate-share/share-projects.md#view-projects-shared-with-you).<p>Außerdem wurden die Informationen zum [Freigeben einzelner oder mehrerer Projekte](/help/analysis-workspace/curate-share/share-projects.md#share-a-specific-project-role) optimiert.</p> |
 | Es wurden Zugriffsberechtigungen für das Hochladen von Dateien auf Azure SAS und Azure RBAC bei der Konfiguration von Cloud-Exportspeicherorten hinzugefügt. | Es wurden genaue Berechtigungsanforderungen für das Hochladen von Dateien auf Azure SAS und Azure RBAC hinzugefügt, wenn [Konfigurieren von Cloud-Exportkonten](/help/components/exports/cloud-export-accounts.md) und [Konfigurieren von Cloud-Exportstandorten](/help/components/exports/cloud-export-locations.md). |

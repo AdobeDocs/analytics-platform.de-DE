@@ -4,10 +4,10 @@ title: Schnellfilter
 feature: Workspace Basics
 role: User
 exl-id: 549e5db5-fcdf-43c5-bc43-590144aee309
-source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
+source-git-commit: 284c73374ca3fdfc4afbc2824209bebdc764fb64
 workflow-type: tm+mt
-source-wordcount: '1145'
-ht-degree: 33%
+source-wordcount: '1170'
+ht-degree: 39%
 
 ---
 
@@ -17,9 +17,10 @@ Schnellfilter ermöglichen es Ihnen, Daten innerhalb eines Projekts einfach zu u
 
 Beachten Sie beim Erstellen von Schnellfiltern Folgendes:
 
-* Schnellfilter gelten nur für das Projekt, in dem sie erstellt wurden. Sie sind nicht in anderen Projekten verfügbar und können nicht für andere Benutzer freigegeben werden.
-* Es sind maximal 3 Regeln zulässig.
+* Schnellfilter gelten nur für das Projekt, in dem sie erstellt wurden. Sie sind nicht in anderen Projekten verfügbar und können nicht für andere Benutzende freigegeben werden. 
+* Es sind maximal 3 Regeln zulässig.
 * Verschachtelte Container oder sequenzielle Regeln werden nicht unterstützt.
+* Wenn Sie ein Projekt für andere Benutzer freigeben, können diese Benutzer Schnellfilter und andere reine Projektkomponenten bearbeiten, die in das freigegebene Projekt eingebettet sind.
 
 Im folgenden Video wird die Verwendung von Schnellfiltern veranschaulicht. (Hinweis: In diesem Video wird der Begriff &quot;Schnellsegmente&quot;anstelle von &quot;Schnellfilter&quot;verwendet. Die Funktionalität ist jedoch identisch.)
 
@@ -35,7 +36,7 @@ So erstellen Sie einen Schnellfilter:
 
    * **Ad Hoc (Drag &amp; Drop):** Ziehen Sie eine Komponente aus der linken Leiste in die Dropzone neben dem **Filter** Symbol in der Bedienfeldüberschrift und wählen Sie dann die **Bearbeiten** -Symbol, um den Filter anzupassen.
 
-     ![Ad-hoc-Filter bearbeiten](assets/filter-adhoc-edit.png)
+     ![Ad-hoc-Bearbeitung von Filtern](assets/filter-adhoc-edit.png)
 
      >[!NOTE]
      >
@@ -49,7 +50,7 @@ So erstellen Sie einen Schnellfilter:
 
      ![Segmentfilter](assets/quick-seg1.png)
 
-1. Passen Sie eine der folgenden Einstellungen an:
+1. Passen Sie die folgenden Einstellungen an:
 
    | Einstellung | Beschreibung |
    | --- | --- |
@@ -66,16 +67,16 @@ So erstellen Sie einen Schnellfilter:
    | [!UICONTROL Datumsbereich] | Der Validator verwendet den Datumsbereich des Bedienfelds für die Datensuche. Jeder Datumsbereich, der in einem Schnellfilter angewendet wird, überschreibt jedoch den Datumsbereich des Bedienfelds oben im Bedienfeld. |
    | Vorschau (oben rechts) | Hiermit können Sie sehen, ob Sie über einen gültigen Filter verfügen und wie breit der Filter ist. Stellt die Aufschlüsselung des Datensatzes dar, den Sie bei Anwendung dieses Filters erwarten können. Sie erhalten möglicherweise einen Hinweis, der anzeigt, dass dieser Filter keine Daten enthält. In diesem Fall können Sie weiterarbeiten oder aber die Filterdefinition ändern. |
 
-1. Auswählen [!UICONTROL **Anwenden**] , um Ihre Änderungen zu speichern.
+1. Wählen Sie [!UICONTROL **Übernehmen**] aus, um Ihre Änderungen zu speichern.
 
 ## Schnellfilter bearbeiten {#edit}
 
 1. Bewegen Sie den Mauszeiger über den Schnellfilter, den Sie bearbeiten möchten, und wählen Sie dann die **Bearbeiten** Symbol.
 
-   ![Ad-hoc-Filter bearbeiten](assets/filter-adhoc-edit.png)
+   ![Ad-hoc-Bearbeitung von Filtern](assets/filter-adhoc-edit.png)
 
 1. Bearbeiten Sie die Filterdefinition oder den Filternamen.
-1. Auswählen [!UICONTROL **Anwenden**] , um Ihre Änderungen zu speichern.
+1. Wählen Sie [!UICONTROL **Übernehmen**] aus, um Ihre Änderungen zu speichern.
 
 ## Schnellfilter als Komponentenlistenfilter speichern {#save}
 
@@ -89,7 +90,7 @@ So erstellen Sie einen Schnellfilter:
 
 Sie können Schnellfilter als Komponentenlistenfilter speichern. Vorteile von Komponentenlistenfiltern:
 
-* Verfügbarkeit aller Workspace-Projekte
+* Verfügbarkeit über alle Arbeitsbereich-Projekte hinweg
 * Unterstützung komplexerer Filter sowie sequenzieller Filter
 
 Sie können Filter entweder aus dem Schnellfilter-Builder oder aus dem [!UICONTROL Filter Builder].
@@ -97,7 +98,7 @@ Sie können Filter entweder aus dem Schnellfilter-Builder oder aus dem [!UICONTR
 ### Speichern im Schnellfilter-Builder {#save2}
 
 1. Wenn Sie den Schnellfilter angewendet haben, halten Sie den Mauszeiger darüber und wählen Sie das Infosymbol (&quot;i&quot;) aus.
-1. Auswählen **[!UICONTROL Bereitstellen für alle Projekte und Hinzufügen zur Komponentenliste]**.
+1. Wählen Sie **[!UICONTROL Für alle Projekte verfügbar machen und Ihrer Komponentenliste hinzufügen]** aus.
 1. (Optional) Benennen Sie den Filter um.
 1. Wählen Sie **[!UICONTROL Speichern]** aus.
 
@@ -109,7 +110,7 @@ Sie können Filter entweder aus dem Schnellfilter-Builder oder aus dem [!UICONTR
 1. Wählen Sie **[!UICONTROL Filter speichern]**
 1. (Optional) Benennen Sie den Filter um und wählen Sie [!UICONTROL **Anwenden**].
 
-   Gehen Sie zurück zu Workspace und beachten Sie, dass sich die Seitenleiste des Filters von hellblau in dunkelblau ändert, was bedeutet, dass sie im Schnellfilter-Builder nicht mehr bearbeitet oder geöffnet werden kann. Und durch Speichern wird er Teil der Komponentenliste.
+   Gehen Sie zurück zu Workspace und beachten Sie, dass sich die Seitenleiste des Filters von hellblau in dunkelblau ändert, was bedeutet, dass sie im Schnellfilter-Builder nicht mehr bearbeitet oder geöffnet werden kann. Und durch Speichern wird es Teil der Komponentenliste.
 
    ![Komponentenlisten-Filter](assets/quick-seg4.png)
 
@@ -117,7 +118,7 @@ Nachdem Sie den Filter angewendet haben, können Sie ihn Ihrer Liste der Filterk
 
 1. Bewegen Sie den Mauszeiger über den gespeicherten Filter und wählen Sie das Stiftsymbol aus.
 
-1. Auswählen [!UICONTROL **Open Builder**].
+1. Wählen Sie [!UICONTROL **Builder öffnen**] aus.
 
 1. Beachten Sie dieses Dialogfeld oben im Filtergenerator:
 
