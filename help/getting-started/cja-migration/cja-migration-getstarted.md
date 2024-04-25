@@ -5,9 +5,9 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: fd3b36ab-72c1-469a-b2c7-419813c82425
-source-git-commit: 2d35e49ca9afe37ed53d7c5da5aafd31dd2da632
+source-git-commit: d734e5daf9b5c9a559c0390622ab5aa15f2aa7a2
 workflow-type: tm+mt
-source-wordcount: '634'
+source-wordcount: '633'
 ht-degree: 10%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 10%
 
 Customer Journey Analytics ist die nächste Analysegeneration. Sie ermöglicht die kanalübergreifende Datenerfassung (sowohl Online- als auch Offline-Daten) in Verbindung mit einer leistungsstarken Berichtszeitverarbeitungsfunktion (durch Definition von Komponenten und abgeleiteten Feldern in Datenansichten).
 
-Bevor Sie mit der Migration von Adobe Analytics zu Customer Journey Analytics beginnen, sollten Sie die Vorteile von Customer Journey Analytics sowie die Schritte kennen, die für eine erfolgreiche Migration erforderlich sind.
+Bevor Sie mit der Migration von Adobe Analytics zu Customer Journey Analytics beginnen, sollten Sie sich mit den Vorteilen von Customer Journey Analytics sowie mit den für eine erfolgreiche Migration erforderlichen Schritten vertraut machen.
 
 ## Die Vorteile von Customer Journey Analytics
 
