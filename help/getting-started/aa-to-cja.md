@@ -6,19 +6,19 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: 5e3f0aa0-ba24-48c8-948c-ebb5c270f34d
 source-git-commit: d20655293a8248d26fed675d6f38e5a8a49a15c1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1083'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
 # Weiterentwicklung von Adobe Analytics
 
-## Vorhandene Daten vorbereiten
+## Vorbereiten Ihrer bestehenden Daten
 
 Die Vorbereitung Ihrer Adobe Analytics-Daten auf einen nahtlosen Wechsel zu Customer Journey Analytics ist für die Datenintegrität und die Konsistenz der Berichte von entscheidender Bedeutung.
 
-### Identitäten sammeln
+### Sammeln von Identitäten
 
 Die vielleicht wichtigste Komponente beim Verständnis einer Customer Journey ist, zu wissen, wer bei jedem Schritt der Kunde ist. Customer Journey Analytics verfügt über eine Kennung über alle Kanäle hinweg und für die entsprechenden Daten, die es ermöglicht, mehrere Quellen in Customer Journey Analytics einander zuzuordnen.
 Beispiele für Identitäten sind Kunden-ID, Konto-ID oder E-Mail-ID. Für jede ID gilt Folgendes unabhängig von der Identität (es kann auch mehrere Identitäten geben):
@@ -28,11 +28,11 @@ Beispiele für Identitäten sind Kunden-ID, Konto-ID oder E-Mail-ID. Für jede I
 * Die ID enthält keine persönlich identifizierbare Informationen. Wenden Sie Hashing auf alle sensiblen Elemente an.
 * Die ID verwendet dasselbe Format für alle Quellen (gleiche Länge, gleiche Hashing-Methode usw.)
 
-In Datensätzen wie Adobe Analytics ist möglicherweise nicht in jeder Datenzeile eine Identität vorhanden, aber eine sekundäre Identität schon. In diesem Fall [Kanalübergreifende Analyse (auch &quot;Stitching&quot;genannt)](/help/stitching/overview.md) kann verwendet werden, um die Lücke zwischen Zeilen zu schließen, wenn ein Kunde nur durch seine ECID identifiziert wird und wenn eine Identität erfasst wird (z. B. bei der Authentifizierung eines Kunden).
+In Datensätzen wie Adobe Analytics ist möglicherweise nicht in jeder Datenzeile eine Identität vorhanden, aber eine sekundäre Identität schon. In diesem Fall kann die [Cross-Channel-Analyse (früher als „Zuordnung“ oder „Stitching“ bezeichnet)](/help/stitching/overview.md) verwendet werden, um die Lücke zwischen Zeilen zu schließen, wenn eine Kundin oder ein Kunde nur durch die ECID identifiziert wird und wenn eine Identität erfasst wird (z. B. bei der Authentifizierung einer Person). 
 
-### Variablen ausrichten
+### Anpassen Ihrer Variablen
 
-Die einfachste Methode zur Umwandlung von Adobe Analytics-Daten in Customer Journey Analytics-Daten besteht darin, eine [globale Report Suite](https://experienceleague.adobe.com/docs/analytics/implementation/prepare/global-rs.html?lang=de) in Experience Platform mithilfe der [Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=de). Dieser Connector ordnet Ihre Adobe Analytics-Variablen direkt einem XDM-Schema und -Datensatz in Experience Platform zu, die wiederum einfach mit Customer Journey Analytics verbunden werden können.
+Die einfachste Methode, Adobe Analytics-Daten in Customer Journey Analytics-Daten umzuwandeln, ist die Aufnahme einer [globalen Report Suite](https://experienceleague.adobe.com/docs/analytics/implementation/prepare/global-rs.html?lang=de) in Experience Platform mit dem [Analytics-Quell-Connectors](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=de). Dieser Connector ordnet Ihre Adobe Analytics-Variablen direkt einem XDM-Schema und -Datensatz in Experience Platform zu, die wiederum einfach mit Customer Journey Analytics verbunden werden können.
 
 Eine vollständige globale Report Suite ist nicht in jedem Fall für eine Implementierung möglich. Wenn Sie planen, mehrere Report Suites in Customer Journey Analytics zu integrieren, haben Sie zwei Möglichkeiten:
 
@@ -44,7 +44,7 @@ Wenn Sie den Wechsel zu einer globalen Report Suite aufgrund von Problemen mit [
 
 Im Folgenden finden Sie ein Anwendungsbeispiel für das [Kombinieren von Report Suites mit verschiedenen Schemata](/help/use-cases/aa-data/combine-report-suites.md).
 
-### Marketing-Kanäle (erneut) konfigurieren
+###  (Erneutes) Konfigurieren Ihrer Marketing-Kanäle
 
 Herkömmliche Einstellungen für Marketing-Kanäle in Adobe Analytics funktionieren in Customer Journey Analytics nicht auf die gleiche Weise. Dies hat zwei Gründe:
 
@@ -56,7 +56,7 @@ Adobe hat [aktualisierte Best Practices für die Implementierung von Marketing-K
 
 Mit der Einführung von [abgeleiteten Feldern](../data-views/derived-fields/derived-fields.md) im Rahmen der Datenansichten von Customer Journey Analytics werden Marketing-Kanäle auch zerstörungsfrei und rückwirkend unterstützt, indem die Vorlage [Marketing-Kanal-Funktion](../data-views/derived-fields/derived-fields.md#function-templates) verwendet wird.
 
-## Vorbereiten auf wichtige Unterschiede bei der Migration zum Customer Journey Analytics
+## Vorbereiten auf wichtige Unterschiede bei der Migration zu Customer Journey Analytics
 
 Wenn sich Ihr Unternehmen entschließt, Customer Journey Analytics zu verwenden, sollten Sie sich mit diesen Schritten vertraut machen, um Ihre Daten vorzubereiten, und über die wichtigen Unterschiede zwischen den beiden Technologien Bescheid wissen. Dieser Artikel richtet sich an Administratoren.
 
