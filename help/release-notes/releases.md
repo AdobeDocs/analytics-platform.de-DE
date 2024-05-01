@@ -1,16 +1,16 @@
 ---
 description: Erläutert die Strategie zur kontinuierlichen Veröffentlichung von Funktionen für Customer Journey Analytics
-title: Versionen von Customer Journey Analytics-Funktionen
+title: Customer Journey Analytics-Veröffentlichungsstrategie
 exl-id: aebe709a-4cc7-4197-86e9-b26ab2874375
 feature: Release Notes
-source-git-commit: edbad9c9d3dc0b48db5334828a18ef652d4a38aa
-workflow-type: ht
-source-wordcount: '391'
-ht-degree: 100%
+source-git-commit: 39e4c17336d3648cbf20cace535668d14510186f
+workflow-type: tm+mt
+source-wordcount: '397'
+ht-degree: 88%
 
 ---
 
-# Versionen von Customer Journey Analytics-Funktionen
+# Customer Journey Analytics-Veröffentlichungsstrategie
 
 Customer Journey Analytics-Versionen basieren auf einem Modell der kontinuierlichen Bereitstellung, das einen besser skalierbaren, schrittweisen Ansatz für die Implementierung von Funktionen ermöglicht.
 
@@ -28,7 +28,7 @@ Bei jeder Funktionsveröffentlichung kann die Timeline von RTP bis GA variieren.
 
 ## Funktionsmarkierungen
 
-Mithilfe von Funktionsmarkierungen wird die Sichtbarkeit neuer Funktionen während der Veröffentlichung gesteuert. Adobe empfiehlt, `app.launchdarkly.com` zur [Zulassungsliste](https://experienceleague.adobe.com/docs/analytics/technotes/ip-addresses.html?lang=de) Ihrer Firewall hinzuzufügen, um eine optimale Funktionalität bei der Veröffentlichung zu erzielen. Kurz nach der allgemeinen Verfügbarkeit wird die Markierung entfernt.
+Mithilfe von Funktionsmarkierungen wird die Sichtbarkeit neuer Funktionen während der Veröffentlichung gesteuert. Adobe empfiehlt, `app.launchdarkly.com` durch die Firewall Ihres Unternehmens, um ein optimales Erlebnis während der Versionen zu erhalten. Diese Flags werden entfernt, nachdem eine Funktion für alle freigegeben wurde. Siehe [Von Customer Journey Analytics verwendete Domänen](../technotes/domains.md) für weitere Informationen.
 
 Sie können sich Ihre aktiven Funktionsmarkierungen jederzeit unter **Hilfe > Über den Workspace > Aktive Funktionsmarkierungen** ansehen.
 

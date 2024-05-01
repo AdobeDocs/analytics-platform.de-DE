@@ -4,8 +4,8 @@ title: Häufig gestellte Fragen
 feature: FAQ
 exl-id: d7233b26-9887-4b71-ad46-3c6ffe27d904
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
-workflow-type: ht
+source-git-commit: 39e4c17336d3648cbf20cace535668d14510186f
+workflow-type: tm+mt
 source-wordcount: '380'
 ht-degree: 100%
 
@@ -19,7 +19,7 @@ ht-degree: 100%
 | **Welche Administrations- und Zugriffsanforderungen gibt es für Analysis Workspace?** | Siehe [Administrationsanforderungen](/help/analysis-workspace/workspace-faq/frequently-asked-questions-analysis-workspace.md). |
 | **Wirkt sich die Verwendung von Analysis Workspace auf die Datenerfassung aus?** | Da Analysis Workspace ein Berichtswerkzeug ist, hat dies keine Auswirkungen auf die Datenerfassung. Komponenten wahllos in ein Projekt zu ziehen, um zu sehen, was funktioniert, hat keine weiteren Folgen. Ziehen Sie verschiedene Kombinationen von Dimensionen und Metriken in Ihr Workspace-Projekt, um zu sehen, welche Möglichkeiten Sie haben. Wenn Sie versehentlich eine ungültige Komponente in Ihr Workspace-Projekt ziehen oder einen Schritt zurückgehen möchten, drücken Sie Strg + Z (Windows) oder Befehl + Z (Mac), um die letzte durchgeführte Aktion rückgängig zu machen. Sie können auch mit einem leeren Arbeitsbereich beginnen, indem Sie im Menü oben links auf *[!UICONTROL Projekt] > [!UICONTROL Neu]* klicken. |
 | **Wie wird Analysis Workspace implementiert?** | Es ist keine spezielle Implementierung erforderlich. Analysis Workspace steht allen Unternehmen mit Customer Journey Analytics zur Verfügung. Es gelten jedoch die Standardberechtigungen für Inhalte (z. B. Projektkomponenten) und für die Kuratierung und Freigabe von Projekten. Weitere Informationen finden Sie unter [Administrations- und Zugriffsanforderungen](/help/analysis-workspace/workspace-faq/frequently-asked-questions-analysis-workspace.md). |
-| **Wie kann ich die Leistung von Analysis Workspace optimieren?** | Siehe [Leistungsoptimierung](/help/admin/optimizing-performance.md). |
+| **Wie kann ich die Leistung von Analysis Workspace optimieren?** | Siehe [Leistungsoptimierung](/help/technotes/optimizing-performance.md). |
 
 ## Fehlerbehebung
 

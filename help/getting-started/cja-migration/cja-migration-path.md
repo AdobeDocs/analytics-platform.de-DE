@@ -5,7 +5,7 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 9559ba10-cbaf-4243-9c85-a0a5f6e3bbff
-source-git-commit: 1c789264a9867279f58a3ad139207fec8db29c1b
+source-git-commit: 39e4c17336d3648cbf20cace535668d14510186f
 workflow-type: tm+mt
 source-wordcount: '2422'
 ht-degree: 0%
@@ -123,7 +123,7 @@ Im Folgenden finden Sie die Migrationspfade, die für Organisationen verfügbar 
 
 | Vorteile | Nachteile |
 |----------|---------|
-| <ul><li>Weniger zeitaufwendiger und anspruchsvoller Migrationspfad. <p>Daten werden schnell und mit minimalem Aufwand zu Customer Journey Analytics migriert</p></li></ul> | <ul><li>**Daten werden nicht an Edge Network gesendet**: <p>Dies führt zu folgenden Nachteilen:</p><ul><li>Höchste Ebene von [Latenz](/help/admin/guardrails.md#latencies) in Berichten über alle Migrationspfade hinweg, nicht optimiert für Anwendungsfälle der Echtzeit-Personalisierung.</li><li>Daten können nicht für andere Adobe Experience Platform-Anwendungen freigegeben werden. Sie sind auf Customer Journey Analytics beschränkt</li><li>Auf die Adobe Analytics-Nomenklatur (Eigenschaft, eVar, Ereignis usw.) angewiesen</li></ul><li>**Schwierigkeit, in Zukunft zum Web SDK zu wechseln**: </li><li>**Verwendet die Feldergruppe Analytics-Erlebnisereignis in Ihrem Schema**: Diese Feldergruppe fügt viele Adobe Analytics-Ereignisse hinzu, die in Ihrem Customer Journey Analytics-Schema nicht benötigt werden.  Dies kann zu einem übersichtlicheren, komplexeren Schema führen, als es sonst für das Customer Journey Analytics erforderlich wäre.</li></ul> |
+| <ul><li>Weniger zeitaufwendiger und anspruchsvoller Migrationspfad. <p>Daten werden schnell und mit minimalem Aufwand zu Customer Journey Analytics migriert</p></li></ul> | <ul><li>**Daten werden nicht an Edge Network gesendet**: <p>Dies führt zu folgenden Nachteilen:</p><ul><li>Höchste Ebene von [Latenz](/help/technotes/guardrails.md#latencies) in Berichten über alle Migrationspfade hinweg, nicht optimiert für Anwendungsfälle der Echtzeit-Personalisierung.</li><li>Daten können nicht für andere Adobe Experience Platform-Anwendungen freigegeben werden. Sie sind auf Customer Journey Analytics beschränkt</li><li>Auf die Adobe Analytics-Nomenklatur (Eigenschaft, eVar, Ereignis usw.) angewiesen</li></ul><li>**Schwierigkeit, in Zukunft zum Web SDK zu wechseln**: </li><li>**Verwendet die Feldergruppe Analytics-Erlebnisereignis in Ihrem Schema**: Diese Feldergruppe fügt viele Adobe Analytics-Ereignisse hinzu, die in Ihrem Customer Journey Analytics-Schema nicht benötigt werden.  Dies kann zu einem übersichtlicheren, komplexeren Schema führen, als es sonst für das Customer Journey Analytics erforderlich wäre.</li></ul> |
 
 {style="table-layout:auto"}
 

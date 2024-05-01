@@ -5,7 +5,7 @@ exl-id: d345f680-b657-4b87-9560-a50fc59bb7a7
 solution: Customer Journey Analytics
 feature: Use Cases
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: b4c77c3ef4d57aac6e914a2373b6a9169f4872df
 workflow-type: tm+mt
 source-wordcount: '803'
 ht-degree: 73%
@@ -22,7 +22,7 @@ Dieser Anwendungsfall für den B2B-Bereich zeigt auf, wie Sie festlegen können,
 * Wie schneidet dieses Konto in Bezug auf die Leistung einer bestimmten Marketing-Kampagne im Vergleich zu einem anderen Konto ab?
 * Weisen bestimmte Rollen (z. B. IT-Experten) im einen Konto ein von einem anderen Konto abweichendes Verhalten auf?
 
-Sie erreichen dies, indem Sie die Informationen auf Kontoebene als [Lookup](/help/getting-started/cja-glossary.md)-Datensatz eintragen.
+Sie erreichen dies, indem Sie die Informationen auf Kontoebene als [Lookup](/help/technotes/glossary.md)-Datensatz eintragen.
 
 Erstellen Sie zunächst ein Lookup-Schema in Adobe Experience Platform und dann einen Lookup-Tabellen-Datensatz, indem Sie CSV-basierte Kontodaten aufnehmen. Anschließend erstellen Sie eine Verbindung im Customer Journey Analytics (Customer Journey Analytics), die verschiedene Datensätze kombiniert, einschließlich des von Ihnen erstellten Lookup-Datensatzes. Wenn Sie dann eine Datenansicht erstellen, können Sie letztendlich alle diese Daten in Arbeitsbereich nutzen.
 
@@ -32,7 +32,7 @@ Erstellen Sie zunächst ein Lookup-Schema in Adobe Experience Platform und dann 
 
 ## 1. Erstellen eines Lookup-Schemas (Experience Platform)
 
-Erstellen eines eigenen Schemas für die [Nachschlagen](/help/getting-started/cja-glossary.md) -Tabelle stellt sicher, dass der verwendete Datensatz in Customer Journey Analytics mit der richtigen Einrichtung (Datensatztyp) verfügbar ist. Als Best Practice empfiehlt sich die [Erstellung einer benutzerdefinierten Schemaklasse](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=de#create-new-class) mit dem Namen „Lookup“, die keinerlei Elemente enthält. Diese kann dann für alle Lookup-Tabellen wiederverwendet werden.
+Erstellen eines eigenen Schemas für die [Nachschlagen](/help/technotes/glossary.md) -Tabelle stellt sicher, dass der verwendete Datensatz in Customer Journey Analytics mit der richtigen Einrichtung (Datensatztyp) verfügbar ist. Als Best Practice empfiehlt sich die [Erstellung einer benutzerdefinierten Schemaklasse](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=de#create-new-class) mit dem Namen „Lookup“, die keinerlei Elemente enthält. Diese kann dann für alle Lookup-Tabellen wiederverwendet werden.
 
 ![Dialogfeld &quot;Neue Klasse erstellen&quot;.](../assets/create-new-class.png)
 

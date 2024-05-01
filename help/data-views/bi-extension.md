@@ -6,7 +6,8 @@ feature: SQL Connector
 hide: true
 hidefromtoc: true
 role: Admin
-source-git-commit: 98d99dd3a25b8e6f9d9366dd2f4ff44ca132ee9e
+exl-id: ab7e1f15-ead9-46b7-94b7-f81802f88ff5
+source-git-commit: 39e4c17336d3648cbf20cace535668d14510186f
 workflow-type: tm+mt
 source-wordcount: '2730'
 ht-degree: 76%
@@ -43,7 +44,7 @@ Um diese Funktion verwenden zu können, müssen Sie:
 
 * Verwenden Sie das Ablaufdatum für nicht ablaufende Anmeldedaten, um BI-Tools mit dem [!DNL Customer Journey Analytics BI extension]. Die [Handbuch zu Anmeldeinformationen](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/credentials) enthält weitere Informationen zum Festlegen ablaufender oder nicht ablaufender Anmeldeinformationen.
 
-Weitere Informationen sind im Abschnitt „Verwaltung von Customer Journey Analytics“ unter [Zugriffssteuerung](../admin/cja-access-control.md) zu finden.
+Weitere Informationen sind im Abschnitt „Verwaltung von Customer Journey Analytics“ unter [Zugriffssteuerung](../technotes/access-control.md) zu finden.
 
 
 ## Nutzung
