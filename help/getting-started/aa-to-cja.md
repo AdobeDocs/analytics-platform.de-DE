@@ -44,7 +44,7 @@ Wenn Sie den Wechsel zu einer globalen Report Suite aufgrund von Problemen mit [
 
 Im Folgenden finden Sie ein Anwendungsbeispiel für das [Kombinieren von Report Suites mit verschiedenen Schemata](/help/use-cases/aa-data/combine-report-suites.md).
 
-###  (Erneutes) Konfigurieren Ihrer Marketing-Kanäle
+### (Erneutes) Konfigurieren Ihrer Marketing-Kanäle
 
 Herkömmliche Einstellungen für Marketing-Kanäle in Adobe Analytics funktionieren in Customer Journey Analytics nicht auf die gleiche Weise. Dies hat zwei Gründe:
 
