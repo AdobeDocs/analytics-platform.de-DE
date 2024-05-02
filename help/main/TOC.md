@@ -9,7 +9,7 @@ index: true
 user-guide-title: Handbuch für Customer Journey Analytics
 user-guide-description: Hier erhalten Sie Informationen zu Adobe Customer Journey Analytics und Erläuterungen zur Nutzung von Analysis Workspace mit Daten aus Experience Platform.
 breadcrumb-title: Handbuch für Customer Journey Analytics
-source-git-commit: 39e4c17336d3648cbf20cace535668d14510186f
+source-git-commit: c64f7a1676f4fd3712e618e26357f430e7d9f019
 workflow-type: tm+mt
 source-wordcount: '1081'
 ht-degree: 78%
@@ -40,11 +40,11 @@ ht-degree: 78%
    + [Vergleichen von Customer Journey Analytics mit BI-Lösungen](../getting-started/cja-vs-bi.md)
 
 + Customer Journey Analytics und Adobe Analytics {#compare-aa-cja}
-   + Zu Customer Journey Analytics migrieren {#migrate-to-cja}
-      + [Erste Schritte](/help/getting-started/cja-migration/cja-migration-getstarted.md)
-      + [Migrationspfad auswählen](/help/getting-started/cja-migration/cja-migration-path.md)
-      + [Daten an Platform senden](/help/getting-started/cja-migration/cja-migration-send-to-platform.md)
-      + [Verlaufsdaten beibehalten](/help/getting-started/cja-migration/cja-migration-historical-data.md)
+   + Upgrade auf Customer Journey Analytics {#upgrade-to-cja}
+      + [Erste Schritte](/help/getting-started/cja-upgrade/cja-upgrade-getstarted.md)
+      + [Aktualisierungspfad auswählen](/help/getting-started/cja-upgrade/cja-upgrade-path.md)
+      + [Daten an Platform senden](/help/getting-started/cja-upgrade/cja-upgrade-send-to-platform.md)
+      + [Verlaufsdaten beibehalten](/help/getting-started/cja-upgrade/cja-upgrade-historical-data.md)
    + Vergleich mit Adobe Analytics {#cja-aa-comparison}
       + [Überblick](../getting-started/aa-vs-cja/overview.md)
       + [Verwenden von Adobe Analytics-Daten in Customer Journey Analytics](../getting-started/aa-vs-cja/aa-data-in-cja.md)
