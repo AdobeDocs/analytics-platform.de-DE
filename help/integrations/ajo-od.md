@@ -4,8 +4,8 @@ description: Binden Sie Daten ein, die vom Entscheidungs-Management in Adobe Jou
 exl-id: fde45264-46cf-4c68-9872-7fb739748f21
 feature: Experience Platform Integration
 role: Admin
-source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
-workflow-type: ht
+source-git-commit: 734751f94a5d066de80182eb1ca3668aa311a4c1
+workflow-type: tm+mt
 source-wordcount: '710'
 ht-degree: 100%
 
@@ -73,12 +73,12 @@ Sie können die folgenden Metriken in einer Datenansicht erstellen, um eine unge
 | Ereignistyp (umbenennen, um auf ein bestimmtes Ereignis zu verweisen, beispielsweise `Feedback` für `message.feedback`) [1] | Umfang eines bestimmten Ereignistyps | `eventType` | Komponententyp: Metrik<br/>**[!UICONTROL Werteinschluss/-ausschluss festlegen ]**: Ein<br/>**[!UICONTROL Übereinstimmung]**: [!UICONTROL Wenn alle Kriterien erfüllt sind]<br/>**[!UICONTROL Kriterien ]**:**[!UICONTROL  Gleich ]**`message.feedback` |
 | Score von Entscheidungsoptionen | Berechneter Wert für eine Entscheidungsoption im Kontext eines einzelnen Geltungsbereichs. | `_experience.decisioning.`<br/>`propositionDetails.selections.score` | Komponententyp: Metrik |
 | Score der Fallback-Entscheidungsoptionen | Berechneter Wert für eine Fallback-Entscheidungsoption im Kontext eines einzelnen Geltungsbereichs. | `_experience.decisioning.`<br/>`propositionDetails.fallback.score` | Komponententyp: Metrik |
-| Verwerfen von Angeboten | Die Anzahl der Angebote, die ohne andere direkte Interaktion verworfen oder abgelehnt wurden. | `_experience.decisioning.`<br/>`propositionEventType.display` | Komponententyp: Metrik |
+| Verwerfen von Angeboten | Die Anzahl der Angebote, die ohne andere direkte Interaktion verworfen oder abgelehnt wurden. | `_experience.decisioning.`<br/>`propositionEventType.dismiss` | Komponententyp: Metrik |
 | Angebotsanzeige | Die Anzahl der dem Profil angezeigten Angebote. | `_experience.decisioning.`<br/>`propositionEventType.display` | Komponententyp: Metrik |
 | Angebots-Interaktionen | Die Anzahl der dem Profil angezeigten Angebote. | `_experience.decisioning.`<br/>`propositionEventType.interact` | Komponententyp: Metrik |
 | Angebotsversand | Die Anzahl der an das Profil gesendeten Angebote. | `_experience.decisioning.`<br/>`propositionEventType.send` | Komponententyp: Metrik |
 | Angebots-Trigger | Die Anzahl der vom Client-SDK ausgewählten Angebote. | `_experience.decisioning.`<br/>`propositionEventType.trigger` | Komponententyp: Metrik |
-| Abmeldung von Angeboten | Die Anzahl der Angebote, die vom Profil angefordert wurden und in Zukunft nicht mehr angezeigt werden. | `_experience.decisioning.`<br/>`propositionEventType.trigger` | Komponententyp: Metrik |
+| Abmeldung von Angeboten | Die Anzahl der Angebote, die vom Profil angefordert wurden und in Zukunft nicht mehr angezeigt werden. | `_experience.decisioning.`<br/>`propositionEventType.unsubscribe` | Komponententyp: Metrik |
 
 {style="table-layout:auto"}
 
