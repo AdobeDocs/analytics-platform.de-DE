@@ -5,10 +5,10 @@ exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
 solution: Customer Journey Analytics
 feature: FAQ
 role: User
-source-git-commit: 39e4c17336d3648cbf20cace535668d14510186f
+source-git-commit: 172d80a832356b59df875336c15865c9bacdd837
 workflow-type: tm+mt
-source-wordcount: '2522'
-ht-degree: 99%
+source-wordcount: '2536'
+ht-degree: 98%
 
 ---
 
@@ -174,9 +174,9 @@ Wenn Sie planen, Adobe Analytics-Daten über den [Adobe Analytics-Quell-Connecto
 
 ## 8. [!UICONTROL Adobe Analytics]-Komponenten
 
-+++**Kann ich [!UICONTROL Filter] von [!DNL Customer Journey Analytics] für Experience Platform Real-Time CDP oder andere Experience Cloud-Anwendungen freigeben/veröffentlichen?**
++++**Kann ich freigeben/veröffentlichen? [!UICONTROL Zielgruppen] von [!DNL Customer Journey Analytics] Experience Platform Real-Time CDP oder andere Experience Cloud-Applikationen?**
 
-Noch nicht, aber Adobe arbeitet aktiv an der Bereitstellung dieser Funktion.
+Sie können [Erstellen und Veröffentlichen von Zielgruppen](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-components/audiences/publish) identifiziert in Customer Journey Analytics zum Echtzeit-Kundenprofil in Adobe Experience Platform für Kunden-Targeting und -Personalisierung.
 
 +++
 
