@@ -5,10 +5,10 @@ title: Übersicht über Ordner
 feature: Workspace Basics
 exl-id: e12e271e-ce15-4535-bb48-1976395cf755
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
-workflow-type: ht
-source-wordcount: '461'
-ht-degree: 100%
+source-git-commit: 8a56f6182b0679d64b9e4ad82402f414eeb88055
+workflow-type: tm+mt
+source-wordcount: '459'
+ht-degree: 93%
 
 ---
 
@@ -24,7 +24,7 @@ In Analysis Workspace gibt es zwei Arten von Ordnern: den Unternehmensordner und
 
 Wenn Sie sich bei Analysis Workspace anmelden, wird auf der Startseite von „Projekte“ eine Liste Ihrer Projekte mit dem Unternehmensordner und allen von Ihnen erstellten persönlichen Ordnern angezeigt.
 
-![Projekt-Startseite, auf der Ihre Projekte und der Firmenordner aufgelistet sind.](/help/analysis-workspace/build-workspace-project/assets/landing-page2.png)
+![Startseite von Projekten](../assets/landing-page2.png)
 
 ## Über den Unternehmensordner {#company-folder}
 
@@ -34,7 +34,6 @@ Als Administrator bzw. Administratorin können Sie Projekte für alle Benutzende
 
 Wenn sich ein(e) Benutzende(r) bei Analysis Workspace anmeldet, wird der Unternehmensordner automatisch zu seiner Projekt- und Ordnerliste hinzugefügt. Für Projekte, die im Unternehmensordner enthalten sind, sind keine spezifischen Berechtigungen erforderlich.
 
-
 ### Optionen für Administratoren bzw. Administratorinnen {#admin-options}
 
 Administratoren bzw. Administratorinnen verfügen über spezielle Berechtigungen in Bezug auf den Unternehmensordner. Beispielsweise können nur Administratoren bzw. Administratorinnen Ordner oder Projekte im Unternehmensordner hinzufügen oder entfernen. Benutzende ohne Administratorrechte können den Inhalt des Unternehmensordners anzeigen.
@@ -43,7 +42,7 @@ Administratoren bzw. Administratorinnen verfügen über spezielle Berechtigungen
 
 Die Optionen für Benutzende ohne Administratorrechte sind eingeschränkt.
 
-![Auf der Seite „Projekte“ werden die Optionen ohne Adminrechte für Ordner angezeigt.](/help/analysis-workspace/build-workspace-project/assets/non-admin-folder-options.png){width="45%"}
+![Auf der Seite „Projekte“ werden die Optionen ohne Adminrechte für Ordner angezeigt.](/help/analysis-workspace/build-workspace-project/assets/non-admin-folder-options.png)
 
 ### Informationen zum Unternehmensordner {#company-folder-guidelines}
 
@@ -53,6 +52,6 @@ Die Optionen für Benutzende ohne Administratorrechte sind eingeschränkt.
 
 - Admins können im Firmenordner einen Ordner löschen, den andere Admins erstellt haben. Administratoren bzw. Administratorinnen müssen sich möglicherweise mit anderen Administratoren bzw. Administratorinnen abstimmen, um die Konsistenz von Ordnern und Projektzugriffen zu gewährleisten.
 
-- Wenn ein Administrator bzw. eine Administratorin ein Projekt in den Unternehmensordner verschiebt, wird das Projekt für alle freigegeben, selbst wenn die ursprünglichen Freigabeberechtigungen eingeschränkt waren.
+- Wenn ein Administrator ein Projekt in den Ordner Firma verschiebt, wird das Projekt für alle Benutzer mit der **Kopie bearbeiten** Rolle, auch wenn die ursprünglichen freigegebenen Berechtigungen eingeschränkt waren.
 
 - Wenn ein Administrator bzw. eine Administratorin ein Projekt aus dem Unternehmensordner verschiebt, werden die ursprünglichen oder vorherigen Freigabeberechtigungen beibehalten.

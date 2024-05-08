@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: 813d3213-86b3-431a-821c-174e5e36d032
 role: Admin
-source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
+source-git-commit: 8a56f6182b0679d64b9e4ad82402f414eeb88055
 workflow-type: tm+mt
-source-wordcount: '1967'
-ht-degree: 85%
+source-wordcount: '1978'
+ht-degree: 84%
 
 ---
 
@@ -218,43 +218,43 @@ Gehen Sie folgendermaßen vor, um eine Verbindung zu erstellen:
 
 1. Wählen Sie in der Customer Journey Analytics-Benutzeroberfläche die Option **[!UICONTROL Verbindungen]** in der oberen Navigation aus.
 
-2. Wählen Sie **[!UICONTROL Neue Verbindung erstellen]** aus.
+1. Wählen Sie **[!UICONTROL Neue Verbindung erstellen]** aus.
 
-3. Im Bildschirm [!UICONTROL Nicht benannte Verbindung]:
+1. Im Bildschirm **[!UICONTROL Nicht benannte Verbindung]**:
 
-   Benennen und beschreiben Sie Ihre Verbindung in den [!UICONTROL Verbindungseinstellungen].
+   1. Benennen und beschreiben Sie Ihre Verbindung in den **[!UICONTROL Verbindungseinstellungen]**.
 
-   Wählen Sie die entsprechende Sandbox in der Liste [!UICONTROL Sandbox] in [!UICONTROL Dateneinstellungen] sowie die Anzahl der täglichen Ereignisse in der Liste [!UICONTROL Durchschnittliche Anzahl der täglichen Ereignisse] aus.
+   1. Wählen Sie die entsprechende Sandbox in der Liste **[!UICONTROL Sandbox]** in **[!UICONTROL Dateneinstellungen]** sowie die Anzahl der täglichen Ereignisse in der Liste **[!UICONTROL Durchschnittliche Anzahl der täglichen Ereignisse]** aus.
 
-   ![Verbindungseinstellungen](./assets/cja-connections-1.png)
+      ![Verbindungseinstellungen](./assets/cja-connections-1.png)
 
-   Wählen Sie **[!UICONTROL Datensätze hinzufügen]** aus.
+   1. Wählen Sie **[!UICONTROL Datensätze hinzufügen]** aus.
 
-   Im Schritt [!UICONTROL Auswählen von Datensätzen] in [!UICONTROL Datensätze hinzufügen]:
+1. Im Schritt **[!UICONTROL Auswählen von Datensätzen]** in **[!UICONTROL Datensätze hinzufügen]**:
 
-   - Wählen Sie den zuvor erstellten Datensatz aus (`Example Loyalty Dataset`) und etwaige andere Datensätze, die Sie in Ihre Verbindung einschließen möchten.
+   1. Wählen Sie den zuvor erstellten Datensatz aus (`Example Loyalty Dataset`) und etwaige andere Datensätze, die Sie in Ihre Verbindung einschließen möchten.
 
-     ![Hinzufügen von Datensätzen](./assets/cja-connections-2.png)
+      ![Hinzufügen von Datensätzen](./assets/cja-connections-2.png)
 
-   - Wählen Sie **[!UICONTROL Weiter]** aus.
+   1. Wählen Sie **[!UICONTROL Weiter]** aus.
 
-   Im Schritt [!UICONTROL Datensatzeinstellungen] in [!UICONTROL Datensätze hinzufügen]:
+1. Im Schritt **[!UICONTROL Datensatzeinstellungen]** in **[!UICONTROL Datensätze hinzufügen]**:
 
-   - Für jeden Datensatz:
+   Für jeden Datensatz:
 
-      - Wählen Sie eine [!UICONTROL Personen-ID] aus den verfügbaren Identitäten aus, die im Datensatzschema in Experience Platform definiert sind.
+   1. Wählen Sie eine [!UICONTROL Personen-ID] aus den verfügbaren Identitäten aus, die im Datensatzschema in Experience Platform definiert sind.
 
-      - Wählen Sie die richtige Datenquelle in der Liste [!UICONTROL Datenquellentyp] aus. Wenn Sie **[!UICONTROL Sonstige]** angeben, fügen Sie eine Beschreibung für Ihre Datenquelle hinzu.
+   1. Wählen Sie die richtige Datenquelle in der Liste [!UICONTROL Datenquellentyp] aus. Wenn Sie **[!UICONTROL Sonstige]** angeben, fügen Sie eine Beschreibung für Ihre Datenquelle hinzu.
 
-      - Definieren Sie **[!UICONTROL Alle neuen Daten importieren]** und **[!UICONTROL Datensatz-Aufstockung vorhandener Daten]** entsprechend Ihren Anforderungen.
+   1. Definieren Sie **[!UICONTROL Alle neuen Daten importieren]** und **[!UICONTROL Datensatz-Aufstockung vorhandener Daten]** entsprechend Ihren Anforderungen.
 
-     ![Konfigurieren von Datensätzen](./assets/cja-connections-3.png)
+      ![Konfigurieren von Datensätzen](./assets/cja-connections-3.png)
 
-   - Wählen Sie **[!UICONTROL Datensätze hinzufügen]** aus.
+   1. Wählen Sie **[!UICONTROL Datensätze hinzufügen]** aus.
 
-   Wählen Sie **[!UICONTROL Speichern]** aus.
+   1. Wählen Sie **[!UICONTROL Speichern]** aus.
 
-Weitere Informationen zum Erstellen und Verwalten einer Verbindung und zum Auswählen und Kombinieren von Datensätzen finden Sie unter [Verbindungen – Überblick](../connections/overview.md).
+Nachdem Sie eine [connection](/help/connections/overview.md)können Sie verschiedene Verwaltungsaufgaben ausführen, z. B. [Auswählen und Kombinieren von Datensätzen](/help/connections/combined-dataset.md), [Überprüfen des Status der Datensätze einer Verbindung und des Status der Datenerfassung](/help/connections/manage-connections.md)und mehr.
 
 ## Einrichten einer Datenansicht
 
