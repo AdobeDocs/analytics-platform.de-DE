@@ -9,10 +9,10 @@ index: true
 user-guide-title: Handbuch für Customer Journey Analytics
 user-guide-description: Hier erhalten Sie Informationen zu Adobe Customer Journey Analytics und Erläuterungen zur Nutzung von Analysis Workspace mit Daten aus Experience Platform.
 breadcrumb-title: Handbuch für Customer Journey Analytics
-source-git-commit: d1497c20c0e986ae27fd7c64a14fd92630081650
+source-git-commit: a968ab150ed5fe3df9c0759c186b01444583cedf
 workflow-type: tm+mt
-source-wordcount: '1090'
-ht-degree: 78%
+source-wordcount: '1102'
+ht-degree: 77%
 
 ---
 
@@ -344,6 +344,12 @@ ht-degree: 78%
    + Datenansichten {#data-views}
       + [Anwendungsfälle von Datenansichten](../use-cases/data-views/data-views-usecases.md)
       + [Verwenden von Bindungsdimensionen und Metriken](../use-cases/data-views/binding-dimensions-metrics.md)
+   + Datenexport {#data-export}
+      + [Überblick](../use-cases/data-export/overview.md)
+      + [BI-Erweiterung](../use-cases/data-export/bi-extension.md)
+      + [Exportieren von Datensätzen](../use-cases/data-export/export-datasets.md)
+      + [Vollständige Tabelle exportieren](../use-cases/data-export/export-full-table.md)
+      + [Query Service und Exportieren von Datensätzen](../use-cases/data-export/queryservice-export-datasets.md)
    + B2B {#b2b}
       + [Beispiel für ein B2B-Projekt](../use-cases/b2b/example.md)
       + [Hinzufügen von Daten der Kontoebene als Lookup-Datensatz](../use-cases/b2b/b2b.md)
@@ -353,7 +359,6 @@ ht-degree: 78%
    + Adobe Analytics-Daten {#aa-data}
       + [Verwenden von Marketing-Kanal-Dimensionen](../use-cases/aa-data/marketing-channels.md)
       + [Kombinieren von Report Suites mit verschiedenen Schemata](../use-cases/aa-data/combine-report-suites.md)
-      + [Datenfeeds emulieren](../use-cases/emulating-data-feeds.md)
    + Komplexe Daten {#complex-data}
       + [Verwenden von Objekt-Arrays](../use-cases/object-arrays.md)
    + Abgeleitete Felder {#derived-fields}
