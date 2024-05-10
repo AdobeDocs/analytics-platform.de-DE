@@ -4,9 +4,9 @@ description: Listet Inhaltsaktualisierungen für Dokumentation zu Customer Journ
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: ea3ea6ad387300e2efcafb8e49efcafdfc011ba9
+source-git-commit: 0014515b29885bf3eb44e8e49fc605fc76e4b439
 workflow-type: tm+mt
-source-wordcount: '3544'
+source-wordcount: '3567'
 ht-degree: 72%
 
 ---
@@ -24,6 +24,7 @@ Die folgenden Aktualisierungen wurden seit der ersten Erstellung der Customer Jo
 | Neue Dokumentation für die Aktualisierung von Adobe Analytics auf Customer Journey Analytics | Für Unternehmen, die von Adobe Analytics auf Customer Journey Analytics aktualisieren, gibt es mehrere Upgrade-Optionen und viele Überlegungen, die basierend auf der aktuellen Adobe Analytics-Implementierung und den langfristigen Zielen eines Unternehmens zu beachten sind.<p>Es stehen nun neue Dokumentationsressourcen zur Verfügung, die Ihnen helfen, Folgendes besser zu verstehen:</p><ul><li>Die verschiedenen vorhandenen Aktualisierungspfade</li><li>Welche Aktualisierungspfade sind basierend auf der aktuellen Adobe Analytics-Implementierung eines Unternehmens verfügbar?</li><li>Die Vor- und Nachteile jedes Aktualisierungspfads</li><li>Schrittweise Anleitung für jeden Aktualisierungspfad</li><li>Überlegungen zum Umgang mit historischen Daten</li><li>Und vieles mehr!</li></ul><p>[Erste Schritte mit dem Upgrade auf Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-getstarted.md).</p> |
 | Aktualisierte Dokumentation zu benutzerdefinierten Datumsbereichen | Aktualisierte Screenshots und Verfahren zu [Erstellen benutzerdefinierter Datumsbereiche](/help/components/date-ranges/custom-date-ranges.md) , um die aktuellen Produktfunktionen und Designs abzugleichen. |
 | Übersichtsinformationen zu Dimensionen | Es wurden Informationen zu [Dimensionen](/help/components/dimensions/overview.md). |
+| Beispiele für Quell-Connectoren | Beispiele für Quell-Connectoren wurden hinzugefügt, die verfügbar sind, wenn beschrieben wird, wie [Quell-Connector verwenden](/help/data-ingestion/sources.md#use-a-source-connector) für die Aufnahme von Daten. |
 | **April 2024** | |
 | Vorhersage statistischer Verfahren | Es wurde ein Artikel hinzugefügt, der die [statistische Verfahren für Prognosedienst](../analysis-workspace/c-forecast/statistics-forecasting.md). |
 | Es wurden Informationen hinzugefügt, die einen vollständigen Tabellenexport für Dimensionen mit hoher Kardinalität empfehlen | Aufzählungszeichen in [Best Practices für Dimensionen mit hoher Kardinalität](/help/components/dimensions/high-cardinality.md) , um die Verwendung des vollständigen Tabellenexports für Dimensionen mit hoher Kardinalität zu empfehlen. |

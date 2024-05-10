@@ -5,16 +5,22 @@ feature: Workspace Basics
 exl-id: b013f9ce-6a6c-4a33-8081-5133557cf0b6
 solution: Customer Journey Analytics
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
-workflow-type: ht
-source-wordcount: '153'
-ht-degree: 100%
+source-git-commit: 1564c91616015311393a643fe7fcecd429cf3a36
+workflow-type: tm+mt
+source-wordcount: '188'
+ht-degree: 71%
 
 ---
 
 # Grundlegende Analyse durchführen
 
-Nachdem Sie Verbindungen und Datenansichten erstellt haben, nutzen Sie die leistungsstarken und flexiblen Funktionen von Analysis Workspace, um Ihre eingebrachten Daten zu analysieren. Experimentieren Sie und schließen Sie Dimensionen und Metriken ein, ändern Sie Attributionseinstellungen für Dimensionen und Metriken, Anzeigenamen, Zeitzone und Sitzungseinstellungen usw.
+Mit Customer Journey Analytics können Sie Daten mithilfe der Leistungsfähigkeit und Flexibilität von Analysis Workspace analysieren.
+
+>[!TIP]
+>
+>Wenn in Analysis Workspace keine Daten verfügbar sind, folgen Sie dem [Datenerfassungsprozess](/help/data-ingestion/data-ingestion.md), der Folgendes umfasst:<ul><li>[Verbindung erstellen](/help/connections/create-connection.md#create-and-configure-the-connection) </br>Stellen Sie sicher, dass die Verbindung für den Import neuer Daten, Aufstockungsdaten oder beides konfiguriert ist.</li><li>[Hinzufügen von Datensätzen](/help/connections/create-connection.md#add-and-configure-datasets)</li><li>[Erstellen von Datenansichten](/help/data-views/create-dataview.md)</li></ul>
+
+Experimentieren Sie und schließen Sie Dimensionen und Metriken ein, ändern Sie Attributionseinstellungen für Dimensionen und Metriken, Anzeigenamen, Zeitzone und Sitzungseinstellungen usw.
 
 Im Folgenden finden Sie ein Beispiel für grundlegende Visualisierungen in Arbeitsbereich. Sie können zum Beispiel
 

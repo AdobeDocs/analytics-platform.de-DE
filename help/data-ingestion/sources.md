@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: 813d3213-86b3-431a-821c-174e5e36d032
 role: Admin
-source-git-commit: 8a56f6182b0679d64b9e4ad82402f414eeb88055
+source-git-commit: 1564c91616015311393a643fe7fcecd429cf3a36
 workflow-type: tm+mt
-source-wordcount: '1978'
-ht-degree: 84%
+source-wordcount: '2041'
+ht-degree: 78%
 
 ---
 
@@ -173,37 +173,45 @@ Im [Handbuch zur Datensatz-Benutzeroberfläche](https://experienceleague.adobe.c
 
 Abhängig davon, woher Sie Ihre Treueprogramm-Daten erhalten, wählen Sie einen der in Adobe Experience Platform verfügbaren Quell-Connectoren aus.
 
+Sie können Daten aus verschiedenen Quellen erfassen. Im Folgenden finden Sie nur einige der vielen verfügbaren Quellen:
+
+- Adobe-Anwendungen (Quell-Connectoren umfassen [Adobe Analytics](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/analytics), [Adobe Audience Manager](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/audience-manager)und mehr)
+
+- Cloud-Speicher (Quell-Connectoren umfassen [Amazon S3](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/cloud-storage/s3), [Azure Blob](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/cloud-storage/blob)und mehr)
+
+- Datenbanken (Quell-Connectoren umfassen [Snowflake](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/databases/snowflake), [Microsoft SQL Server](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/databases/sql-server)und mehr)
+
 Gehen Sie folgendermaßen vor, um einen Quell-Connector einzurichten:
 
-1. Wählen Sie in der Benutzeroberfläche von Experience Platform in der linken Leiste **[!UICONTROL Quellen]** unter [!UICONTROL VERBINDUNGEN].
+1. Wählen Sie in Adobe Experience Platform **[!UICONTROL Quellen]** von [!UICONTROL VERBINDUNGEN] in der linken Leiste.
 
-2. Wählen Sie einen Quell-Connector aus der Liste der verfügbaren Quell-Connectoren aus. Jeder Connector folgt einem ähnlichen Workflow:
+1. Wählen Sie Ihren Quell-Connector aus der Liste der verfügbaren Quell-Connectoren aus.
 
-   - **[!UICONTROL Authentifizierung]**. Geben Sie Authentifizierungsinformationen, damit auf die Datenquelle zugegriffen werden kann.
+   Jeder Connector folgt einem ähnlichen Workflow:
 
-   - **[!UICONTROL Daten auswählen]**: Sie wählen die Quelldaten aus, die Sie aufnehmen möchten.
+   1. **[!UICONTROL Authentifizierung]**. Geben Sie Authentifizierungsinformationen, damit auf die Datenquelle zugegriffen werden kann.
 
-   - **[!UICONTROL Datenflussdetails]**: Sie geben zusätzliche Details zum Datenfluss an, z. B. den Namen und den zu verwendenden Datensatz.
+   1. **[!UICONTROL Daten auswählen]**: Sie wählen die Quelldaten aus, die Sie aufnehmen möchten.
 
-   - **[!UICONTROL Zuordnung]**: Sie ordnen die eingehenden Quelldatenfelder den Attributen im Schema zu, das mit dem ausgewählten Datensatz verknüpft ist.
+   1. **[!UICONTROL Datenflussdetails]**: Sie geben zusätzliche Details zum Datenfluss an, z. B. den Namen und den zu verwendenden Datensatz.
 
-   - **[!UICONTROL Zeitplan]**: Sofern diese Funktion verfügbar ist, können Sie die Datenerfassung zeitlich planen.
+   1. **[!UICONTROL Zuordnung]**: Sie ordnen die eingehenden Quelldatenfelder den Attributen im Schema zu, das mit dem ausgewählten Datensatz verknüpft ist.
 
-   - **[!UICONTROL Überprüfung]**: Sie können die Definition des Quell-Connectors überprüfen.
+   1. **[!UICONTROL Zeitplan]**: Sofern diese Funktion verfügbar ist, können Sie die Datenerfassung zeitlich planen.
 
-   Jeder Connector bietet eine detaillierte Dokumentation.
+   1. **[!UICONTROL Überprüfung]**: Sie können die Definition des Quell-Connectors überprüfen.
 
-   Gehen Sie folgendermaßen vor, um auf diese Dokumentation zuzugreifen:
+1. Jeder Connector bietet eine detaillierte Dokumentation. Gehen Sie folgendermaßen vor, um auf diese Dokumentation zuzugreifen:
 
-   - Wählen Sie auf der Connector-Kachel die Punkte **[!UICONTROL ...]** neben [!UICONTROL Einrichten] oder [!UICONTROL Daten hinzufügen].
+   1. Wählen Sie auf der Connector-Kachel die Punkte **[!UICONTROL ...]** neben [!UICONTROL Einrichten] oder [!UICONTROL Daten hinzufügen].
 
-     ![Anzeigen der Dokumentation](./assets/sourceconnector-documentation.png)
+      ![Anzeigen der Dokumentation](./assets/sourceconnector-documentation.png)
 
-   - Wählen Sie **[!UICONTROL Dokumentation anzeigen]** aus.
+   1. Wählen Sie **[!UICONTROL Dokumentation anzeigen]** aus.
 
-Weitere Informationen zur Verwendung des Adobe Analytics-Quell-Connectors finden Sie unter [Aufnahme und Verwendung der Daten im herkömmlichen Adobe Analytics](./analytics.md).
+Siehe [Daten aus dem herkömmlichen Adobe Analytics erfassen und verwenden](./analytics.md) Informationen zur Verwendung des Adobe Analytics-Quell-Connectors.
 
-Weitere Informationen zur Verwendung des HTTP-API-Quell-Connectors finden Sie unter [Aufnehmen und Verwenden von Streaming-Daten](./streaming.md).
+Siehe [Streaming-Daten erfassen und verwenden](./streaming.md) für Informationen zur Verwendung des Quell-Connectors für die HTTP-API.
 
 Einen Überblick über Quell-Connectoren einschließlich Links zu weiteren Informationen zu jedem einzelnen Connector finden Sie unter [Übersicht über Quell-Connectoren](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html#terms-and-conditions).
 

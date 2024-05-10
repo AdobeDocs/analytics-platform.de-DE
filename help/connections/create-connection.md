@@ -5,8 +5,8 @@ exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: dc3a109f162adfe48f621ba3ece95fedead3c6e1
-workflow-type: ht
+source-git-commit: 1564c91616015311393a643fe7fcecd429cf3a36
+workflow-type: tm+mt
 source-wordcount: '2910'
 ht-degree: 100%
 
@@ -28,14 +28,14 @@ Beim Workflow für die Erstellung und Bearbeitung von Verbindungen können alle 
 
 Die maximale Anzahl der Datensätze, die einer Verbindung hinzugefügt werden können, ist auf 100 begrenzt. Die Mischung hängt davon ab, welches Customer Journey Analytics-Paket Ihr Unternehmen erworben hat.
 
+Wenden Sie sich an Ihre Admins, wenn Sie sich nicht sicher sind, welches Customer Journey Analytics-Paket Sie besitzen.
+
 | ****-Paket auswählen | **Stiftungs-**-Paket |
 | --- | --- |
 | Jede Kombination aus bis zu 100 Ereignis-/Profil-/Suchdatensätzen | Ein Ereignisdatensatz pro Verbindung |
 |  | Bis zu 99 Profil- oder Suchdatensätze pro Verbindung |
 
 {style="table-layout:auto"}
-
-Wenden Sie sich an Ihre Admins, wenn Sie sich nicht sicher sind, welches Customer Journey Analytics-Paket Sie besitzen.
 
 ## Erstellen und Konfigurieren der Verbindung {#create-connection}
 
