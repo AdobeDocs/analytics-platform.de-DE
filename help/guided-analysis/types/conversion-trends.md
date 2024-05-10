@@ -5,16 +5,16 @@ feature: Adobe Product Analytics, Guided Analysis
 keywords: Produktanalysen
 exl-id: 75501e77-a172-48b4-9c91-b12d39e93c37
 role: User
-source-git-commit: 240a17923b55479865affaafb098b56e32d083a3
+source-git-commit: 2b8afe1dbac5057f867437e2bfce27f3bd752d57
 workflow-type: tm+mt
 source-wordcount: '510'
 ht-degree: 2%
 
 ---
 
-# Ansicht &quot;Konversionstrends&quot;
+# [!UICONTROL Konversionstrends] Ansicht
 
-Die **Konversionstrends** -Ansicht bietet eine Trend-Visualisierung um Konversionsraten im Zeitverlauf. Die horizontale Achse ist ein Zeitintervall, während die vertikale Achse die Konversionsrate darstellt.
+Die **[!UICONTROL Konversionstrends]** -Ansicht bietet eine Trend-Visualisierung der Konversionsraten im Zeitverlauf. Die horizontale Achse ist ein Zeitintervall, während die vertikale Achse die Konversionsrate darstellt.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3421662/?learn=on)
 
