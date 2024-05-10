@@ -1,16 +1,16 @@
 ---
-title: Anwendungsfälle für Datenfeeds
+title: Anwendungsfälle für den Datenexport
 description: Verstehen verschiedener Anwendungsfälle für den Datenexport zum Customer Journey Analytics
 solution: Customer Journey Analytics
 feature: Use Cases
 role: Admin
-source-git-commit: 19018e31bb2a46e88a27643fe10c388b40de243e
+exl-id: 8b9c164e-01da-4b43-8e2c-99904223cae5
+source-git-commit: 8118435a3982c405f76de9070afa05b8fd71ebf3
 workflow-type: tm+mt
 source-wordcount: '774'
 ht-degree: 0%
 
 ---
-
 
 # Anwendungsfälle für den Datenexport
 
@@ -77,4 +77,3 @@ Im Allgemeinen unterstützt der Datenexport eine Reihe von Anwendungsfällen. Je
 | **Datenvalidierung**<br/> Bewerten Sie Clickstream-Daten auf ihre Genauigkeit bei der Datenerfassung. | **Experience Platform**: [**Query Service (Data Distiller) und Export von Datensätzen**](queryservice-export-datasets.md)<br/> Interaktive PostgreSQL-Schnittstelle zum Ausführen von Ad-hoc-SQL-Abfragen mit Ihrem bevorzugten SQL-Tool zur Validierung der Daten in Ihren Datensätzen.<br/><br/>**Customer Journey Analytics**: [**Gesamte Tabelle exportieren**](export-full-table.md)<br/> Validieren Sie verarbeitete Daten aus CJA mit angewendeter Attribution und Sitzungserstellung. |
 | **Data Lake-, Data Warehouse- oder BI-Tools**<br/> Bringen Sie digitale Daten in Ihre eigenen BI-Tools oder den Data Lake zur Verwendung mit zusätzlichen Datensätzen. | **Customer Journey Analytics**: [**BI-Erweiterung**](bi-extension.md)<br/> Hinzufügen von Customer Journey Analytics verarbeiteten Metriken zu Datenvisualisierungstools wie Power BI und Kombinieren mit zusätzlichen Daten für benutzerdefinierte Berichte <br/><br/>**Experience Platform**: [**Query Service (Data Distiller) und Export von Datensätzen**](queryservice-export-datasets.md)<br> Generieren benutzerdefinierter Clickstream-Daten mit SQL, die an Cloud-Ziele bereitgestellt werden sollen. |
 | **Bereitschaft für KI/ML**<br/> Verbessern Sie die Modelle und Aufgaben für künstliche Intelligenz/maschinelles Lernen mit Customer Journey Analytics-Daten. | **Customer Journey Analytics**: [**Gesamte Tabelle exportieren**](export-full-table.md)<br/> Exportieren Sie von Customer Journey Analytics verarbeitete Dimensionen und Metriken ein- oder mehrmals in Cloud-Ziele, einschließlich berechneter Metriken und Segmentierung.<br/><br/>**Experience Platform**: [**Query Service (Data Distiller) und Export von Datensätzen**](queryservice-export-datasets.md)<br/> Generieren benutzerdefinierter Clickstream-Daten mit SQL zur Anreicherung von KI-/ML-Modellen. |
-
