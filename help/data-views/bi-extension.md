@@ -7,10 +7,10 @@ hide: true
 hidefromtoc: true
 role: Admin
 exl-id: ab7e1f15-ead9-46b7-94b7-f81802f88ff5
-source-git-commit: 39e4c17336d3648cbf20cace535668d14510186f
+source-git-commit: ad7f748fb7aa684d134cf110460a84d1b9ec3895
 workflow-type: tm+mt
-source-wordcount: '2730'
-ht-degree: 76%
+source-wordcount: '2748'
+ht-degree: 75%
 
 ---
 
@@ -312,6 +312,11 @@ Die Sonderspalte `daterange` funktioniert ähnlich wie `timestamp`, die Filterun
 Die `daterange` -Feld kann auch in Datums-/Uhrzeitfunktionen verwendet werden, um das Ereignisdatum zu analysieren oder abzuschneiden.
 
 Die `daterangeName` Eine spezielle Spalte kann verwendet werden, um Ihre Abfrage mit einem benannten Datumsbereich wie `Last Quarter`.
+
+>[!NOTE]
+>
+>PowerBI unterstützt nicht die `daterange` Metriken, die weniger als einen Tag betragen (Stunde, 30 Minuten, 5 Minuten usw.).
+
 
 #### Filter-ID
 
