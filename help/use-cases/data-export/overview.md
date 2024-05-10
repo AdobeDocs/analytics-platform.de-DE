@@ -5,16 +5,16 @@ solution: Customer Journey Analytics
 feature: Use Cases
 role: Admin
 exl-id: 8b9c164e-01da-4b43-8e2c-99904223cae5
-source-git-commit: 8118435a3982c405f76de9070afa05b8fd71ebf3
+source-git-commit: 40e4c3bd8f3c37e9a6143200b85ffe0ac4bcb2ca
 workflow-type: tm+mt
-source-wordcount: '774'
+source-wordcount: '781'
 ht-degree: 0%
 
 ---
 
 # Anwendungsfälle für den Datenexport
 
-In diesem Abschnitt finden Sie Anwendungsfälle für den Datenexport. Jeder Anwendungsfall wird in einem eigenen Artikel beschrieben. Für einige Anwendungsfälle wird mehr als eine Lösung bereitgestellt.
+In diesem Abschnitt finden Sie Anwendungsbeispiele für den Datenexport und die Implementierung dieser Anwendungsfälle mit einer oder mehreren Funktionen von Customer Journey Analytics oder Experience Platform. Jede Funktion wird in einem separaten Artikel näher beschrieben.
 
 ## Einführung
 
@@ -67,7 +67,7 @@ Zur Konsistenz der Metriken wird die Verwendung der neuen Funktionen im Customer
    * Warnhinweise für Versandprobleme und Einschränkungen bei geplanten Versandfenstern festlegen.
 
 
-## Anwendungsbeispiele und Lösungen
+## Anwendungsbeispiele und Funktionen
 
 Im Allgemeinen unterstützt der Datenexport eine Reihe von Anwendungsfällen. Jeder Anwendungsfall unterscheidet sich hinsichtlich der erforderlichen Daten und des Zugriffs und Exports auf diese Daten. Experience Platform und Customer Journey Analytics bieten eine Reihe von Funktionen, die entweder unabhängig oder kombiniert die verschiedenen Anwendungsfälle lösen können. Die nachstehende Tabelle bietet einen Überblick über die Anwendungsfälle für identifizierte Datenexporte und die Experience Platform- und Customer Journey Analytics-Funktionen zur Implementierung dieser Anwendungsfälle.
 
