@@ -5,10 +5,10 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 9559ba10-cbaf-4243-9c85-a0a5f6e3bbff
-source-git-commit: 6cceeaa3b57808a82012b124435aa1b7dbf1b3f2
+source-git-commit: f1e1fdd5ca8aa51a28de13cdb028bf585a0324e7
 workflow-type: tm+mt
-source-wordcount: '2483'
-ht-degree: 63%
+source-wordcount: '2475'
+ht-degree: 61%
 
 ---
 
@@ -83,7 +83,7 @@ Wenden Sie sich an den Adobe-Support, wenn Sie konkretere Ratschläge, Anleitung
 |---------|----------|
 | AppMeasurement | <ul><li>Neue Implementierung des Experience Platform Web SDK</li><li>Migrieren von Adobe Analytics zum Web SDK</li><li>Analytics-Quell-Connector</li></ul> |
 | Adobe Analytics-Erweiterung | <ul><li>Neue Implementierung des Experience Platform Web SDK</li><li>Migrieren von Adobe Analytics zum Web SDK</li><li>Analytics-Quell-Connector</li></ul> |
-| Web SDK | <ul><li>Konfigurieren der Adobe Analytics Web SDK-Implementierung zum Senden von Daten an Customer Journey Analytics</li></ul> |
+| Web SDK | <ul><li>Konfigurieren der Adobe Analytics Web SDK-Implementierung zum Senden von Daten an Platform</li></ul> |
 
 {style="table-layout:auto"}
 
@@ -137,7 +137,7 @@ Bei der Auswahl dieses Aktualisierungspfads müssen Sie auch Ihr Schema auswähl
 
 #### Aktualisierungspfad
 
-+++Konfigurieren der Adobe Analytics Web SDK-Implementierung zum Senden von Daten an Customer Journey Analytics
++ + + Konfigurieren der Adobe Analytics Web SDK-Implementierung zum Senden von Daten an Platform
 
 | Vorteile | Nachteile |
 |----------|---------|
@@ -149,7 +149,7 @@ Bei der Auswahl dieses Aktualisierungspfads müssen Sie auch Ihr Schema auswähl
 
 #### Auswählen Ihres Schemas
 
-Wenn Sie den Aktualisierungspfad auswählen, über den Sie die Adobe Analytics Web SDK-Implementierung konfigurieren können, um Daten an Customer Journey Analytics zu senden, können Sie das Schema auswählen, das Sie verwenden möchten.
+Wenn Sie den Aktualisierungspfad auswählen, über den Sie die Adobe Analytics Web SDK-Implementierung konfigurieren können, um Daten an Platform zu senden, können Sie das Schema auswählen, das Sie verwenden möchten.
 
 Sie können entscheiden, ob Sie Ihr vorhandenes Adobe Analytics-Schema verwenden oder ein Update auf Ihr eigenes XDM-Schema vornehmen möchten, um es bei der Nutzung anderer Platform-Dienste besser an die Anforderungen Ihrer Organisation anzupassen.
 
@@ -165,7 +165,7 @@ Sie können entscheiden, ob Sie Ihr vorhandenes Adobe Analytics-Schema verwenden
 
 | Vorteile | Nachteile |
 |----------|---------|
-| <ul><p>Vorteile der Aktualisierung auf Ihr eigenes XDM-Schema:</p><ul><li>Ein optimiertes Schema, das auf die Anforderungen Ihrer Organisation und die spezifischen von Ihnen verwendeten Platform-Anwendungen zugeschnitten ist.</li><p>Wenn Änderungen am Schema erforderlich sind, müssen Sie nicht Tausende nicht verwendeter Felder durchgehen, um das zu aktualisierende Feld zu finden.</p></ul> | <p>Nachteile der Aktualisierung auf Ihr eigenes XDM-Schema:</p><ul><li>Die Aktualisierung Ihres Schemas ist ein zeitaufwendiger Prozess, der erforderlich ist, bevor Sie Daten an Customer Journey Analytics senden können.</li></ul> |
+| <ul><p>Vorteile der Aktualisierung auf Ihr eigenes XDM-Schema:</p><ul><li>Ein optimiertes Schema, das auf die Anforderungen Ihrer Organisation und die spezifischen von Ihnen verwendeten Platform-Anwendungen zugeschnitten ist.</li><p>Wenn Änderungen am Schema erforderlich sind, müssen Sie nicht Tausende nicht verwendeter Felder durchgehen, um das zu aktualisierende Feld zu finden.</p></ul> | <p>Nachteile der Aktualisierung auf Ihr eigenes XDM-Schema:</p><ul><li>Die Aktualisierung Ihres Schemas ist ein zeitaufwendiger Prozess, der erforderlich ist, bevor Sie mit dem Senden von Daten an Platform beginnen.</li></ul> |
 
 +++
 
