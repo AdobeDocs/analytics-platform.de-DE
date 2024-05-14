@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: SQL Connector
 role: Admin
 exl-id: ab7e1f15-ead9-46b7-94b7-f81802f88ff5
-source-git-commit: 77a2975d5f23516acb925c5cf90a2fbde7fbf3e2
+source-git-commit: 87661e0000d050652d9510bb4830ca6f30bfeae9
 workflow-type: tm+mt
-source-wordcount: '2748'
+source-wordcount: '2747'
 ht-degree: 75%
 
 ---
@@ -311,7 +311,7 @@ Die `daterangeName` Eine spezielle Spalte kann verwendet werden, um Ihre Abfrage
 
 >[!NOTE]
 >
->PowerBI unterstützt nicht die `daterange` Metriken, die weniger als einen Tag betragen (Stunde, 30 Minuten, 5 Minuten usw.).
+>PowerBI unterstützt nicht `daterange` Metriken, die weniger als einen Tag betragen (Stunde, 30 Minuten, 5 Minuten usw.).
 
 
 #### Filter-ID
