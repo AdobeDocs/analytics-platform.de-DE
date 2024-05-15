@@ -3,7 +3,7 @@ title: Aktuelle Versionshinweise zu Customer Journey Analytics anzeigen
 description: Neueste Versionshinweise zu Customer Journey Analytics
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 36badebf0710131b2f831feb645f20d8dd888b9b
+source-git-commit: 4ad92a72f0ced81f84198da744fef9fe4c0a6b0b
 workflow-type: tm+mt
 source-wordcount: '688'
 ht-degree: 37%
@@ -12,7 +12,7 @@ ht-degree: 37%
 
 # Aktuelle Adobe Customer Journey Analytics-Versionshinweise (Mai 2024)
 
-**Letzte Aktualisierung:**: Freitag, 9. Mai 2024
+**Letzte Aktualisierung:**: Donnerstag, 15. Mai 2024
 
 Diese Versionshinweise beziehen sich auf den Veröffentlichungszeitraum vom 15. Mai 2024 bis Juni 2024. Versionen von Adobe Customer Journey Analytics basieren auf einem [Modell der kontinuierlichen Bereitstellung](releases.md), das einen besser skalierbaren, schrittweisen Ansatz für die Implementierung von Funktionen ermöglicht. Dementsprechend werden diese Versionshinweise mehrmals im Monat aktualisiert. Bitte überprüfen Sie sie regelmäßig.
 
