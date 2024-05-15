@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Administration
 role: Admin
 exl-id: f093ac54-7d31-449b-a441-a65856a1d535
-source-git-commit: 39e4c17336d3648cbf20cace535668d14510186f
+source-git-commit: c3293e2ce93113dd22157bb6470a780b20813d80
 workflow-type: tm+mt
-source-wordcount: '1606'
+source-wordcount: '1632'
 ht-degree: 11%
 
 ---
@@ -77,7 +77,7 @@ Einige der Funktionen und der zugehörige Wert für die Beschränkung hängen vo
 | Häufigkeit der Zielgruppenaktualisierung | 4 | Systemdurchsetztes Schutzschild | Maximale Häufigkeit in Stunden und [audience](../components/audiences/audiences-overview.md) aktualisiert werden. |
 | Lookback-Fenster für Zielgruppenaktualisierung | 90 | Systemdurchsetztes Schutzschild | Maximale Anzahl von Tagen für das Lookback-Fenster &quot;Aktualisieren&quot;. |
 | Aktualisieren des Zielgruppenablaufdatums | 13 | Systemdurchsetztes Schutzschild | Die maximale Anzahl von Monaten für die Audience wird ab dem Erstellungsdatum nicht mehr aktualisiert. Kunden können dies um weitere 13 Monate verlängern. |
-| Anzahl der aktualisierten Zielgruppen | 75.100 | Systemdurchsetztes Schutzschild | Maximale Anzahl aktualisierter Zielgruppen; der Wert variiert je nach Paket (siehe Produktbeschreibung). |
+| Anzahl der aktualisierten Zielgruppen | 75.150 | Systemdurchsetztes Schutzschild | Maximale Anzahl aktualisierter Zielgruppen; der Wert variiert je nach Customer Journey Analytics-Package (siehe Produktbeschreibung). |
 
 {style="table-layout:auto"}
 
@@ -110,7 +110,7 @@ Siehe auch Experience Platform [Real-time Customer Data Platform-Schutzmechanism
 | Anmerkungsbeschreibung | 250 | Systemdurchsetztes Schutzschild | Maximale Zeichenanzahl für eine Anmerkung. |
 | Schemafelder | 10 | Systemdurchsetztes Schutzschild | Maximale Anzahl von Schemafeldern (ohne Standardfelder) bei der Definition von Regeln für eine [abgeleitetes Feld](../data-views/derived-fields/derived-fields.md). |
 | Such-/Profilfelder | 3 | Systemdurchsetztes Schutzschild | Maximale Anzahl von Lookup- oder Profilschemafeldern innerhalb der maximalen Anzahl von Schemafeldern (ohne Standardfelder) bei der Definition von Regeln für ein abgeleitetes Feld. |
-| Abgeleitete Felder | 100 | Systemdurchsetztes Schutzschild | Maximale Anzahl abgeleiteter Felder pro Verbindung. |
+| Abgeleitete Felder | 100-500 | Systemdurchsetztes Schutzschild | Maximale Anzahl abgeleiteter Felder pro Verbindung. Der Wert variiert je nach Customer Journey Analytics-Package (siehe Produktbeschreibung). |
 
 {style="table-layout:auto"}
 
@@ -134,7 +134,7 @@ Siehe auch Experience Platform [Limits für die Datenerfassung](https://experien
 | Name | Wert | Art von Limit | Beschreibung |
 |---|--:|---|---|
 | Datenexport | Gesamter autorisierter Data Lake-Speicher | Leistungsgarantie | Der Kunde kann den Zieldatensatzexport verwenden, um Kundendaten bis zum zulässigen Gesamtdatenspeicherplatz im Data Lake im Data Lake zu exportieren. |
-| Verfügbare Datensätze | Profil und Ereignis | Systemgesteuerte Schutzmechanismen | Profil- und Erlebnisereignis-Datensätze, die in der Experience Platform-Benutzeroberfläche erstellt wurden, nachdem Daten über Quellen, Web SDK, Mobile SDK, Analytics Data Connector und Audience Manager erfasst oder erfasst wurden. |
+| Verfügbare Datensätze | Profil und Ereignis | Systemgesteuerte Schutzmechanismen | Ereignis-, Profil- oder Lookup-Datensätze, die in der Experience Platform-Benutzeroberfläche erstellt wurden, nachdem Daten über Quellen, Web SDK, Mobile SDK, Analytics Data Connector und Audience Manager erfasst oder erfasst wurden. |
 
 {style="table-layout:auto"}
 
@@ -155,8 +155,8 @@ Siehe auch Experience Platform [Limits für den Datenexport](https://experiencel
 
 | Name | Wert | Art von Limit | Beschreibung |
 |---|--:|---|---|
-| Zusammengefügte Datensätze | 10 | Systemdurchsetztes Schutzschild | Maximale Anzahl von zugeordneten Datensätzen pro Kunde. Der Wert variiert je nach dem jeweiligen Customer Journey Analytics-Package (siehe zutreffende Produktbeschreibung). |
-| Aufstockungsdaten | 60 | Systemdurchsetztes Schutzschild | Maximale Anzahl von Tagen für Aufstockungsdaten. |
+| Zusammengefügte Datensätze | 5 - 50 | Systemdurchsetztes Schutzschild | Maximale Anzahl von zugeordneten Datensätzen pro Kunde; der Wert variiert je nach Customer Journey Analytics-Package (siehe Produktbeschreibung). |
+| Aufstockungsdaten | 60-395 | Systemdurchsetztes Schutzschild | Maximale Anzahl Tage für Aufstockungsdaten; der Wert variiert je nach Customer Journey Analytics-Package (siehe Produktbeschreibung). |
 
 {style="table-layout:auto"}
 
@@ -205,7 +205,7 @@ Siehe auch Experience Platform [Limits für den Datenexport](https://experiencel
 
 | Name | Wert | Art von Limit | Beschreibung |
 |---|--:|---|---|
-| Zeilen pro Bericht | 3 Millionen - 300 Millionen | Systemdurchsetztes Schutzschild | Maximale Anzahl an Berichtszeilen pro Bericht; der Wert variiert je nach dem jeweiligen Customer Journey Analytics-Package (siehe zutreffende Produktbeschreibung). |
+| Zeilen pro Bericht | 3 Millionen - 300 Millionen | Systemdurchsetztes Schutzschild | Maximale Anzahl an Berichtszeilen pro Bericht. Der Wert variiert je nach Customer Journey Analytics-Package (siehe Produktbeschreibung). |
 | Aufschlüsselung nach Tabelle | 5 | Systemdurchsetztes Schutzschild | Maximale Anzahl an Aufschlüsselungen pro Tabelle. |
 | Metriken pro Tabelle | 5 | Systemdurchsetztes Schutzschild | Maximale Anzahl an Metriken pro Tabelle. |
 | Planfrequenz | 1 | Systemdurchsetztes Schutzschild | Die Exporte können einmal (1) täglich oder länger geplant werden (z. B. einmal alle 2 Tage oder wöchentlich). |
@@ -229,6 +229,6 @@ Siehe auch Experience Platform [Limits für den Datenexport](https://experiencel
 | Stitching (optionale Funktion; siehe [Stitching-Übersicht](../stitching/overview.md) für weitere Informationen) | &lt; 3,25 Stunden |
 | Aufstockung von Adobe Analytics Source Connector für weniger als 10 Milliarden Ereignisse (maximal 13 Monate historischer Daten) | &lt; 4 Wochen |
 | Zielgruppe Veröffentlichen in Echtzeit-Kundenprofil, einschließlich der automatischen Erstellung des Streaming-Segments, sodass das Segment für den Empfang der Daten bereit ist. | ~ 60 Minuten |
-| Aktualisierungsintervall für Zielgruppen | Einmalige Aktualisierung: Latenz von weniger als 5 Minuten.<br/>Aktualisieren Sie alle 4 Stunden, täglich, wöchentlich, monatlich (die Latenz geht mit der Aktualisierungsrate einher). |
+| Aktualisierungshäufigkeit für Zielgruppen | Einmalige Aktualisierung: Latenz von weniger als 5 Minuten.<br/>Aktualisieren Sie alle 4 Stunden, täglich, wöchentlich, monatlich (die Latenz geht mit der Aktualisierungsrate einher). |
 
 {style="table-layout:auto"}
