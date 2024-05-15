@@ -3,10 +3,10 @@ title: Aktuelle Versionshinweise zu Customer Journey Analytics anzeigen
 description: Neueste Versionshinweise zu Customer Journey Analytics
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 4ad92a72f0ced81f84198da744fef9fe4c0a6b0b
+source-git-commit: cc74a8fdb3e44c5fa46e82a5111619970f090870
 workflow-type: tm+mt
-source-wordcount: '688'
-ht-degree: 37%
+source-wordcount: '622'
+ht-degree: 40%
 
 ---
 
@@ -25,7 +25,6 @@ Diese Versionshinweise beziehen sich auf den Veröffentlichungszeitraum vom 15. 
 | **KI-Assistent für Customer Journey Analytics** | Ermöglicht Ihnen, Fragen in natürlicher Sprache in der Customer Journey Analytics-Benutzeroberfläche zu stellen und Antworten auf der Grundlage der Customer Journey Analytics-Dokumentation zu erhalten. (Link zur Dokumentation folgt) | | Freitag, 30. Mai 2024 |
 | **Streaming-Medien: Senden von Webdaten mit dem Web SDK an das Adobe Experience Platform-Edge Network** | Sie können jetzt das Adobe Experience Platform Web SDK verwenden, um Webdaten zu Streaming-Medien an Adobe Experience Platform-Edge Network zu senden, sodass Sie personalisiertere Kampagnen erstellen und personalisiertere Inhalte bereitstellen können, sodass mehr Tracking-Daten für Berichte zur Verfügung stehen.<p>Diese Verbesserung bietet eine einheitliche Erfassungsmethode für Webimplementierungen in allen Plattformlösungen, z. B. Customer Journey Analytics, RT-CDP, AJO und Ereignisweiterleitung. Zuvor bestand die einzige Möglichkeit, Web-Daten für Streaming-Medien an Edge Network zu senden, in der Verwendung der Media Edge-API. [Weitere Informationen](https://experienceleague.adobe.com/de/docs/media-analytics/using/implementation/edge-recommended/media-edge-sdk/implementation-edge) | | 31. Mai 2024 |
 | **Abgeleitete Felder - Math-Funktion** | Ermöglicht Ihnen, einfache mathematische Operatoren in Datenansichten auszuführen, um Fragen zu Ihren Benutzern zu beantworten. Sie können beispielsweise Produkt-, Garantie- und Versandumsätze kombinieren. (Link zur Dokumentation folgt) | | Donnerstag, 5. Juni 2024 |
-| **Abgeleitete Felder - Nächste oder Vorherige Funktion** | Hiermit können Sie den nächsten oder vorherigen Wert anzeigen. Mit welchen vorherigen Marketing-Kanälen hat beispielsweise jemand vor dem ausgewählten Marketing-Kanal interagiert? Oder mit welchen Seiten die Benutzer vor oder nach der ausgewählten Seite interagiert haben? Mit welchen Kanälen interagieren die beliebtesten Benutzer, bevor sie in den Speicher gehen?  (Link zur Dokumentation folgt) | | Donnerstag, 12. Juni 2024 |
 | **Neue Dokumentation für die Aktualisierung von Adobe Analytics auf Customer Journey Analytics** | Für Unternehmen, die von Adobe Analytics auf Customer Journey Analytics aktualisieren, gibt es mehrere Upgrade-Optionen und viele Überlegungen, die basierend auf der aktuellen Adobe Analytics-Implementierung und den langfristigen Zielen eines Unternehmens zu beachten sind. Es stehen nun neue Dokumentationsressourcen zur Verfügung, die Ihnen helfen, Folgendes besser zu verstehen:<ul><li>Die verschiedenen vorhandenen Aktualisierungspfade</li><li>Welche Aktualisierungspfade sind basierend auf der aktuellen Adobe Analytics-Implementierung eines Unternehmens verfügbar?</li><li>Die Vor- und Nachteile jedes Aktualisierungspfads</li><li>Schrittweise Anleitung für jeden Aktualisierungspfad</li><li>Überlegungen zum Umgang mit historischen Daten</li></ul>[Erste Schritte mit dem Upgrade auf Customer Journey Analytics](https://experienceleague.adobe.com/en/docs/analytics-platform/using/compare-aa-cja/upgrade-to-cja/cja-upgrade-getstarted) | | Jetzt verfügbar |
 | **Neue Dokumentation zu [Anwendungsfälle für Datenexport](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-usecases/data-export/overview)** | In diesem neuen Abschnitt werden Anwendungsfälle für den Datenexport beschrieben, z. B.<ul><li>Datensicherung</li><li>Datenvalidierung</li><li>Data Lake-, Data Warehouse- oder BI-Tools</li><li>Bereitschaft für KI/ML</li></ul> und wie sie mithilfe von Experience Platform- und Customer Journey Analytics-Funktionen implementiert werden. | | Jetzt verfügbar |
 
