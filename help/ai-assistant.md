@@ -4,9 +4,9 @@ title: KI-Assistent für Adobe Customer Journey Analytics
 role: User, Admin
 solution: Customer Journey Analytics
 exl-id: 7a4f15c4-7fd6-4a6a-9b83-7c1f3b95be16
-source-git-commit: 02a0ad53d8c3ef0c10e2b9c2b11bb75a6a962cf0
+source-git-commit: 49f2c393bbd0bff28dd8bc166b3c60bc49d4df37
 workflow-type: tm+mt
-source-wordcount: '344'
+source-wordcount: '476'
 ht-degree: 0%
 
 ---
@@ -34,6 +34,16 @@ Der KI-Assistent für Customer Journey Analytics ist für alle Produktkategorien
 >[!IMPORTANT]
 >
 >Zu diesem Zeitpunkt beantwortet der KI-Assistent für Customer Journey Analytics keine Nutzungsfragen zu Datenobjekten in Ihrem Unternehmen.
+
+## Funktionszugriff
+
+In dieser ersten Version wird der Zugriff auf die Funktion des AI-Assistenten durch die folgenden Parameter gesteuert:
+
+* **Lösungszugriff**: Der KI-Assistent ist im Customer Journey Analytics verfügbar, nicht aber in Adobe Analytics. Es ist auch in Adobe Experience Platform, Adobe Journey Optimizer, Adobe Real-Time CDP und zusätzlichen Experience Platform-Apps verfügbar.
+
+* **Vertraglicher Zugang**: Ihr Adobe-Kaufvertrag muss eine -Klausel enthalten, die es Adobe ermöglicht, Ihre Daten in der Entwicklung von AI-/ML-Modellen zu verwenden (Abschnitt 6.2).
+
+* **Berechtigungen**: Die [!UICONTROL Adobe Admin Console] [!UICONTROL Reporting-Tools] Die Berechtigung &quot;AI Assistant Documentation&quot;bestimmt den Zugriff auf dieses Tool. Diese Berechtigung wird Mitte Mai zum Abschnitt &quot;Reporting-Tools&quot;hinzugefügt. Sie müssen sicherstellen, dass Sie eine [Produktprofil](https://helpx.adobe.com/de/enterprise/using/manage-product-profiles.html) in Admin Console mit dieser Berechtigung zugestimmt haben, und fügen Sie diesem Profil manuell Benutzer hinzu.
 
 ## Zugriff auf den KI-Assistenten in der Customer Journey Analytics-Benutzeroberfläche
 
