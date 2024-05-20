@@ -4,10 +4,10 @@ title: Erstellen von Projekten
 feature: Workspace Basics
 role: User
 exl-id: cc3d3ac9-c31f-4a8d-999c-78590512b57c
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
-workflow-type: ht
-source-wordcount: '602'
-ht-degree: 100%
+source-git-commit: 53d367e51f739ebf324390ba4114ddb58138fac8
+workflow-type: tm+mt
+source-wordcount: '681'
+ht-degree: 84%
 
 ---
 
@@ -27,8 +27,8 @@ In den folgenden Abschnitten wird beschrieben, wie Sie ein Projekt erstellen und
 
 1. Legen Sie fest, ob ein leeres Projekt oder eine leere mobile Scorecard erstellt werden soll.
 
-   * **Leeres Projekt**, wenn Sie Ihre Analyse über den Browser freigeben möchten
-   * [**Leere mobile Scorecard**](/help/mobile-app/curator.md), wenn Sie Ihre Analyse über die mobile Adobe Analytics-Dashboards-App freigeben möchten.
+   * **Leeres Projekt**, wenn Sie Ihre Analyse über den Browser freigeben möchten.
+   * [**Leere mobile Scorecard**](/help/mobile-app/curator.md), wenn Sie Ihre Analyse über die Mobile App Adobe Analytics-Dashboards freigeben möchten.
 
 1. Wählen Sie [!UICONTROL **Erstellen**] aus.
 
@@ -66,7 +66,7 @@ So fügen Sie eine Visualisierung hinzu.
 
    ![Das Symbol „Ausgewählte Visualisierungen“ und die Liste der verfügbaren Visualisierungen.](assets/build-visualizations.png)
 
-1. Suchen Sie nach der Visualisierung, die Sie hinzufügen möchten. Wenn es in der linken Leiste angezeigt wird, ziehen Sie es in ein Bedienfeld innerhalb Ihres Projekts.
+1. Suchen Sie nach der Visualisierung, die Sie hinzufügen möchten. Wenn sie in der linken Leiste angezeigt wird, ziehen Sie sie in ein Bedienfeld innerhalb Ihres Projekts.
 
 1. Fügen Sie der Visualisierung Komponenten hinzu, wie unter [Hinzufügen von Komponenten zum Projekt](#add-components-to-the-project) beschrieben.
 
@@ -78,15 +78,23 @@ So fügen Sie eine Visualisierung hinzu.
 >
 >Informationen zu den einzelnen Komponenten erhalten Sie, wenn Sie in der linken Leiste auf das Infosymbol neben dem Namen einer Komponente klicken oder in der [Komponentenübersicht](/help/components/overview.md).
 
-So fügen Sie eine Komponente hinzu:
+Im Folgenden finden Sie grundlegende Informationen zum Hinzufügen einer Komponente zu einem Projekt in Analysis Workspace. Detaillierte Informationen zum Hinzufügen der verschiedenen Komponententypen (Dimensionen, Metriken, Filter und Datumsbereiche) finden Sie unter [Komponenten in Analysis Workspace verwenden](/help/components/use-components-in-workspace.md).
+
+So fügen Sie einem Projekt in Analysis Workspace eine Komponente hinzu:
 
 1. Wählen Sie das Symbol **[!UICONTROL Komponenten]** in der linken Leiste aus.
 
    ![Symbol „Ausgewählte Komponenten“ und Liste der verfügbaren Dimensionen.](assets/build-components.png)
 
-1. Suchen Sie nach der Komponente, die Sie hinzufügen möchten. Wenn es in der linken Leiste angezeigt wird, ziehen Sie es in ein Bedienfeld oder eine Visualisierung innerhalb Ihres Projekts.
+1. Scrollen Sie zu der Komponente, die Sie hinzufügen möchten, oder suchen Sie sie und ziehen Sie sie in ein Bedienfeld oder eine Visualisierung innerhalb Ihres Projekts.
 
-1. (Optional) Geben Sie das Projekt wie unter [Speichern und Freigeben des Projekts](#save-and-share-the-project) frei.
+   Sie können beispielsweise einen Filter in die Dropzone des Filters in eine Bedienfeldüberschrift ziehen.
+
+   ![Filter in der Dropzone ablegen](assets/filter-dropzone.png)
+
+   Weitere Informationen zum Hinzufügen von Komponenten zu Projekten finden Sie unter [Komponenten in Analysis Workspace verwenden](/help/components/use-components-in-workspace.md).
+
+1. (Optional) Geben Sie das Projekt wie unter [Speichern und Freigeben des Projekts](#save-and-share-the-project) beschrieben frei.
 
 ## Speichern und Freigeben des Projekts
 

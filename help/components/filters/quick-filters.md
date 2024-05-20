@@ -4,9 +4,9 @@ title: Schnellfilter
 feature: Workspace Basics
 role: User
 exl-id: 549e5db5-fcdf-43c5-bc43-590144aee309
-source-git-commit: 284c73374ca3fdfc4afbc2824209bebdc764fb64
+source-git-commit: 53d367e51f739ebf324390ba4114ddb58138fac8
 workflow-type: tm+mt
-source-wordcount: '1170'
+source-wordcount: '1173'
 ht-degree: 39%
 
 ---
@@ -34,9 +34,11 @@ So erstellen Sie einen Schnellfilter:
 
 1. Wählen Sie eine der folgenden Methoden, um mit der Erstellung des Schnellfilters zu beginnen:
 
-   * **Ad Hoc (Drag &amp; Drop):** Ziehen Sie eine Komponente aus der linken Leiste in die Dropzone neben dem **Filter** Symbol in der Bedienfeldüberschrift und wählen Sie dann die **Bearbeiten** -Symbol, um den Filter anzupassen.
+   * **Ad Hoc (Drag &amp; Drop):** Ziehen Sie eine Komponente aus der linken Leiste in die Dropzone Filter in der Kopfzeile des Bedienfelds.
 
-     ![Ad-hoc-Bearbeitung von Filtern](assets/filter-adhoc-edit.png)
+     ![Segment in der Dropzone ablegen](assets/filter-dropzone.png)
+
+     Sie können den Schnellfilter wie unter [Schnellfilter bearbeiten](#edit-a-quick-filter).
 
      >[!NOTE]
      >
