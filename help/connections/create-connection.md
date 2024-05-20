@@ -7,8 +7,8 @@ feature: Connections
 role: Admin
 source-git-commit: 24b2cdcc2ab2c56775191950af0603f7bedf102b
 workflow-type: tm+mt
-source-wordcount: '2913'
-ht-degree: 79%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
