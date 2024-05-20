@@ -6,9 +6,9 @@ solution: Customer Journey Analytics
 feature: Basics
 role: User
 source-git-commit: 8a56f6182b0679d64b9e4ad82402f414eeb88055
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2141'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -137,7 +137,7 @@ In der folgenden Tabelle sind Funktionen aufgeführt, die in Customer Journey An
 | Intelligente Beschriftungen | Intelligente Untertitel verwenden fortschrittliches maschinelles Lernen und generative KI, um wertvolle Einblicke in natürliche Sprachen für Workspace-Visualisierungen bereitzustellen. Die erste Version bietet automatisch generierte Einblicke für die Visualisierung [Linie](/help/analysis-workspace/visualizations/line.md). |
 | Umwandlungen zum Zeitpunkt der Berichtserstellung | Datenansichten in Customer Journey Analytics ermöglichen eine weiter gehende Interpretation von Daten aus einer Verbindung. Sie können Daten ändern oder entfernen, ohne Ihre Implementierung zu ändern, Teilzeichenfolgen verwenden, um Dimensionen zu bearbeiten, Metriken aus beliebigen Werten erstellen oder Teilereignisse filtern. Alle diese Umwandlungen erfolgen zerstörungsfrei. Adobe Analytics bietet begrenzte Möglichkeiten durch Virtual Report Suites und benutzerdefinierte Sitzungslängen. |
 | SQL-Zugriff | Mit der Data Distiller-Option kann Customer Journey Analytics die Einschränkungen in Bezug auf die per Backend-Verarbeitung von Adobe erfassten Daten aufheben. Sie können Ihre Daten mit SQL ändern, unternehmensspezifische Werte und Datensätze erstellen und Ihre Entdeckungsreise fortsetzen. Analytics unterstützt keinen SQL-Zugriff auf seine Daten. |
-| Unbegrenzte Kundendimensionen und -metriken | Customer Journey Analytics-Dimensionen sind unbegrenzt. Werte können Zahlen, Texte, Objekte und Listen aufweisen oder aus einer Kombination dieser Elemente bestehen. Dimensionen können verschachtelt oder hierarchisch aufgebaut sein. <p>Im Gegensatz dazu unterstützt Adobe Analytics bis zu 75 Props und 250 eVars.</p> |
+| Unbegrenzte Kundendimensionen und -metriken | Customer Journey Analytics-Dimensionen sind unbegrenzt. Werte können Zahlen, Texte, Objekte und Listen aufweisen oder aus einer Kombination dieser Elemente bestehen. Dimensionen können verschachtelt oder hierarchisch aufgebaut sein. <p>Im Gegensatz dazu unterstützt Adobe Analytics bis zu maximal 75 Eigenschaften und 250 eVars.</p> |
 | Unbegrenzte eindeutige Werte | Customer Journey Analytics unterstützt unbegrenzt eindeutige Werte oder Dimensionselemente, über die innerhalb einer Dimension berichtet werden kann.<p>Es gibt keine [Kardinalitätsbeschränkungen für eine Dimension](/help/components/dimensions/high-cardinality.md), sodass eindeutige Werte angezeigt und gezählt werden können.</p><p>Durch diesen Ansatz werden Reporting- und Analysebeschränkungen aufgehoben, die bei einer umfangreichen Adobe Analytics-Implementierung bestehen können, was zu Kennzeichnungen [!UICONTROL Geringer Datenverkehr] führen kann.</p><p>In Customer Journey Analytics kann eine Kennzeichnung [!UICONTROL Eindeutige Werte überschritten] angezeigt werden, allerdings geschieht dies wesentlich seltener und kann durch die Anwendung eines Filters oder Segments auf die Daten verhindert werden.</p> |
 
 {style="table-layout:auto"}

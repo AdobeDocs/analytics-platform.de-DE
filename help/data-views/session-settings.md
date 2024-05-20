@@ -6,19 +6,19 @@ feature: Data Views
 exl-id: 25710bf1-ec85-4a7d-a404-54549013cc2c
 role: Admin
 source-git-commit: 8a56f6182b0679d64b9e4ad82402f414eeb88055
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '411'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
 # Sitzungseinstellungen
 
-Unter Customer Journey Analytics können Sie eine Sitzung beliebig definieren, um zu bestimmen, wie Personen mit Ihren digitalen Erlebnissen interagieren. Sitzungseinstellungen werden in einer Datenansicht konfiguriert.
+In Customer Journey Analytics können Sie eine Sitzung auf jede beliebige Art und Weise definieren, die der Interaktion von Personen mit Ihren digitalen Erlebnissen entspricht. Die Sitzungseinstellungen werden in einer Datenansicht konfiguriert.
 
 Definitionen von Sitzungseinstellungen sind zerstörungsfrei und verändern die zugrunde liegenden Daten nicht. Sie können mehrere Datenansichten (jede mit ihrer spezifischen Definition von Sitzungseinstellungen) als Grundlage für Ihre Workspace-Projekte einrichten.
 
-So definieren Sie den Kontext einer Sitzung in einer Datenansicht:
+So definieren Sie den Kontext einer Sitzung innerhalb einer Datenansicht:
 
 1. Wählen Sie **[!UICONTROL Datenansichten]** in der Customer Journey Analytics-Benutzeroberfläche.
 

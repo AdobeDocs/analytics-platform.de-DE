@@ -6,9 +6,9 @@ exl-id: b013f9ce-6a6c-4a33-8081-5133557cf0b6
 solution: Customer Journey Analytics
 role: User
 source-git-commit: 1564c91616015311393a643fe7fcecd429cf3a36
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '188'
-ht-degree: 71%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ Mit Customer Journey Analytics können Sie Daten mithilfe der Leistungsfähigkei
 
 >[!TIP]
 >
->Wenn in Analysis Workspace keine Daten verfügbar sind, folgen Sie dem [Datenerfassungsprozess](/help/data-ingestion/data-ingestion.md), der Folgendes umfasst:<ul><li>[Verbindung erstellen](/help/connections/create-connection.md#create-and-configure-the-connection) </br>Stellen Sie sicher, dass die Verbindung für den Import neuer Daten, Aufstockungsdaten oder beides konfiguriert ist.</li><li>[Hinzufügen von Datensätzen](/help/connections/create-connection.md#add-and-configure-datasets)</li><li>[Erstellen von Datenansichten](/help/data-views/create-dataview.md)</li></ul>
+>Wenn keine Daten in Analysis Workspace verfügbar sind, vergewissern Sie sich, dass Sie den [Datenaufnahmeprozess](/help/data-ingestion/data-ingestion.md) befolgt haben, der Folgendes umfasst:<ul><li>[Erstellen einer Verbindung](/help/connections/create-connection.md#create-and-configure-the-connection) </br>Vergewissern Sie sich, dass die Verbindung so konfiguriert ist, dass sie neue Daten importiert, Daten aufstockt oder beides.</li><li>[Hinzufügen von Datensätzen](/help/connections/create-connection.md#add-and-configure-datasets)</li><li>[Erstellen von Datenansichten](/help/data-views/create-dataview.md)</li></ul>
 
 Experimentieren Sie und schließen Sie Dimensionen und Metriken ein, ändern Sie Attributionseinstellungen für Dimensionen und Metriken, Anzeigenamen, Zeitzone und Sitzungseinstellungen usw.
 

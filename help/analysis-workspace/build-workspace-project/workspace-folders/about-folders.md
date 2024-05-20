@@ -6,9 +6,9 @@ feature: Workspace Basics
 exl-id: e12e271e-ce15-4535-bb48-1976395cf755
 role: User
 source-git-commit: 8a56f6182b0679d64b9e4ad82402f414eeb88055
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '459'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -24,7 +24,7 @@ In Analysis Workspace gibt es zwei Arten von Ordnern: den Unternehmensordner und
 
 Wenn Sie sich bei Analysis Workspace anmelden, wird auf der Startseite von „Projekte“ eine Liste Ihrer Projekte mit dem Unternehmensordner und allen von Ihnen erstellten persönlichen Ordnern angezeigt.
 
-![Startseite von Projekten](../assets/landing-page2.png)
+![Projekte-Startseite](../assets/landing-page2.png)
 
 ## Über den Unternehmensordner {#company-folder}
 
@@ -52,6 +52,6 @@ Die Optionen für Benutzende ohne Administratorrechte sind eingeschränkt.
 
 - Admins können im Firmenordner einen Ordner löschen, den andere Admins erstellt haben. Administratoren bzw. Administratorinnen müssen sich möglicherweise mit anderen Administratoren bzw. Administratorinnen abstimmen, um die Konsistenz von Ordnern und Projektzugriffen zu gewährleisten.
 
-- Wenn ein Administrator ein Projekt in den Ordner Firma verschiebt, wird das Projekt für alle Benutzer mit der **Kopie bearbeiten** Rolle, auch wenn die ursprünglichen freigegebenen Berechtigungen eingeschränkt waren.
+- Wenn eine oder ein Admin ein Projekt in den Unternehmensordner verschiebt, wird das Projekt für alle Personen mit der Berechtigung **Kopie bearbeiten** freigegeben, selbst wenn die ursprünglichen Freigabeberechtigungen eingeschränkt waren.
 
-- Wenn ein Administrator bzw. eine Administratorin ein Projekt aus dem Unternehmensordner verschiebt, werden die ursprünglichen oder vorherigen Freigabeberechtigungen beibehalten.
+- Wenn eine oder ein Admin ein Projekt aus dem Unternehmensordner verschiebt, werden die ursprünglichen oder vorherigen Freigabeberechtigungen beibehalten.
