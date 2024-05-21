@@ -3,16 +3,16 @@ title: Aktuelle Versionshinweise zu Customer Journey Analytics anzeigen
 description: Neueste Versionshinweise zu Customer Journey Analytics
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: b78e3812f716d4c0d8807fa82892a6e4d918f7bd
+source-git-commit: 7619818cafec3891379099c31fe46dd803b378c7
 workflow-type: tm+mt
-source-wordcount: '629'
-ht-degree: 38%
+source-wordcount: '705'
+ht-degree: 35%
 
 ---
 
 # Aktuelle Adobe Customer Journey Analytics-Versionshinweise (Mai 2024)
 
-**Letzte Aktualisierung:**: Donnerstag, 15. Mai 2024
+**Letzte Aktualisierung:**: Mittwoch, 21. Mai 2024
 
 Diese Versionshinweise beziehen sich auf den Veröffentlichungszeitraum vom 15. Mai 2024 bis Juni 2024. Versionen von Adobe Customer Journey Analytics basieren auf einem [Modell der kontinuierlichen Bereitstellung](releases.md), das einen besser skalierbaren, schrittweisen Ansatz für die Implementierung von Funktionen ermöglicht. Dementsprechend werden diese Versionshinweise mehrmals im Monat aktualisiert. Bitte überprüfen Sie sie regelmäßig.
 
@@ -25,6 +25,7 @@ Diese Versionshinweise beziehen sich auf den Veröffentlichungszeitraum vom 15. 
 | **KI-Assistent für Customer Journey Analytics** | Ermöglicht Ihnen, Fragen in natürlicher Sprache in der Customer Journey Analytics-Benutzeroberfläche zu stellen und Antworten auf der Grundlage der Customer Journey Analytics-Dokumentation zu erhalten. (Link zur Dokumentation folgt) | | Freitag, 30. Mai 2024 |
 | **Streaming-Medien: Senden von Webdaten mit dem Web SDK an das Adobe Experience Platform-Edge Network** | Sie können jetzt das Adobe Experience Platform Web SDK verwenden, um Webdaten zu Streaming-Medien an Adobe Experience Platform-Edge Network zu senden, sodass Sie personalisiertere Kampagnen erstellen und personalisiertere Inhalte bereitstellen können, sodass mehr Tracking-Daten für Berichte zur Verfügung stehen.<p>Diese Verbesserung bietet eine einheitliche Erfassungsmethode für Webimplementierungen in allen Plattformlösungen, z. B. Customer Journey Analytics, RT-CDP, AJO und Ereignisweiterleitung. Zuvor bestand die einzige Möglichkeit, Web-Daten für Streaming-Medien an Edge Network zu senden, in der Verwendung der Media Edge-API. [Weitere Informationen] | | 31. Mai 2024 |
 | **Abgeleitete Felder - Math-Funktion** | Ermöglicht Ihnen, einfache mathematische Operatoren in Datenansichten auszuführen, um Fragen zu Ihren Benutzern zu beantworten. Sie können beispielsweise Produkt-, Garantie- und Versandumsätze kombinieren. (Link zur Dokumentation folgt) | | Donnerstag, 5. Juni 2024 |
+| **Freigeben von Konten und Speicherorten, die für den Export und Import verwendet werden** | Benutzer können nun die von ihnen erstellten Konten und Standorte allen Benutzern in ihrer Organisation zur Verfügung stellen. Nur Konto- und Standorteigner und Systemadministratoren können Konten und Standorte bearbeiten und löschen.<p>Zuvor konnten Konten und Standorte nur von dem Benutzer verwendet werden, der sie erstellt hat.</p><p>Diese Einstellungen sind verfügbar, wenn Benutzer [Konfigurieren von Cloud-Exportkonten](/help/components/exports/cloud-export-accounts.md) und [Cloud-Exportspeicherorte konfigurieren](/help/components/exports/cloud-export-locations.md). </p> | Juni 2024 | Juni 2024 |
 | **Neue Dokumentation für die Aktualisierung von Adobe Analytics auf Customer Journey Analytics** | Für Unternehmen, die von Adobe Analytics auf Customer Journey Analytics aktualisieren, gibt es mehrere Upgrade-Optionen und viele Überlegungen, die basierend auf der aktuellen Adobe Analytics-Implementierung und den langfristigen Zielen eines Unternehmens zu beachten sind. Es stehen nun neue Dokumentationsressourcen zur Verfügung, die Ihnen helfen, Folgendes besser zu verstehen:<ul><li>Die verschiedenen vorhandenen Aktualisierungspfade</li><li>Welche Aktualisierungspfade sind basierend auf der aktuellen Adobe Analytics-Implementierung eines Unternehmens verfügbar?</li><li>Die Vor- und Nachteile jedes Aktualisierungspfads</li><li>Schrittweise Anleitung für jeden Aktualisierungspfad</li><li>Überlegungen zum Umgang mit historischen Daten</li></ul>[Erste Schritte mit dem Upgrade auf Customer Journey Analytics](https://experienceleague.adobe.com/en/docs/analytics-platform/using/compare-aa-cja/upgrade-to-cja/cja-upgrade-getstarted) | | Jetzt verfügbar |
 | **Neue Dokumentation zu [Anwendungsfälle für Datenexport](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-usecases/data-export/overview)** | In diesem neuen Abschnitt werden Anwendungsfälle für den Datenexport beschrieben, z. B.<ul><li>Datensicherung</li><li>Datenvalidierung</li><li>Data Lake-, Data Warehouse- oder BI-Tools</li><li>Bereitschaft für KI/ML</li></ul> und wie sie mithilfe von Experience Platform- und Customer Journey Analytics-Funktionen implementiert werden. | | Jetzt verfügbar |
 
