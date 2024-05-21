@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Derived Fields
 exl-id: bcd172b2-cd13-421a-92c6-e8c53fa95936
 role: Admin
-source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
+source-git-commit: 17ffd1865c9d24a6ed99577b4679b72ef855e898
 workflow-type: tm+mt
-source-wordcount: '5932'
+source-wordcount: '5986'
 ht-degree: 13%
 
 ---
@@ -255,7 +255,7 @@ Falls Ihre Site die folgenden Beispielereignisse erhält, die [!UICONTROL Referr
 |  | `https://site.com/?cid=em_12345678` |
 | `https://google.com` | `https://site.com/?cid=ps_abc098765` |
 | `https://google.com` | `https://site.com/?cid=em_765544332` |
-| `https://google.com` |
+| `https://google.com` | |
 
 {style="table-layout:auto"}
 
@@ -445,13 +445,13 @@ Definiert einen Satz von Werten, die in einem neuen abgeleiteten Feld durch ents
 
 >[!NOTE]
 >
->Diese Funktion hieß ursprünglich Lookup , wurde aber in Classify umbenannt, um eine kommende Suchfunktion mit unterschiedlichen Funktionen aufzunehmen.
+>Diese Funktion hieß ursprünglich Lookup , wurde aber in Classify umbenannt, um die Lookup-Funktion mit unterschiedlichen Funktionen aufzunehmen.
 
 ## Spezifikationen {#classify-io}
 
 | Eingabedatentyp | Eingabe | Einbezogene Operatoren | Einschränkungen | Ausgabe |
 |---|---|---|---|---|
-| <ul><li>Zeichenfolge</li><li>Numerisch</li><li>Datum</li></ul> | <ul><li>[!UICONTROL Zu klassifizierendes Feld]:<ul><li>Regeln</li><li>Standardfelder</li><li>Felder</li></ul></li><li>[!UICONTROL Wenn der Wert gleich] und [!UICONTROL Werte ersetzen durch]:</p><ul><li>Zeichenfolge</li></ul><li>Originalwerte anzeigen<ul><li>Boolesch</li></ul></li></ul> | <p>Nicht angegeben</p> | <p>5 Funktionen pro abgeleitetem Feld<br/>100 Zeilen pro Funktion</p> | <p>Neues abgeleitetes Feld</p> |
+| <ul><li>Zeichenfolge</li><li>Numerisch</li><li>Datum</li></ul> | <ul><li>[!UICONTROL Zu klassifizierendes Feld]:<ul><li>Regeln</li><li>Standardfelder</li><li>Felder</li></ul></li><li>[!UICONTROL Wenn der Wert gleich] und [!UICONTROL Werte ersetzen durch]:</p><ul><li>Zeichenfolge</li></ul><li>Originalwerte anzeigen<ul><li>Boolesch</li></ul></li></ul> | <p>Nicht angegeben</p> | <ul><li>5 Funktionen pro abgeleitetem Feld</li><li>200 [Operatoren](#operators) pro abgeleitetes Feld. Jeder Eintrag für [!UICONTROL Wenn Wert gleich Originalwert ist] [!UICONTROL Wert durch neuen Wert ersetzen] als Vorgang betrachtet.</li></ul> | <p>Neues abgeleitetes Feld</p> |
 
 {style="table-layout:auto"}
 
@@ -1184,7 +1184,7 @@ Sie erstellen eine  `Store Identifier` abgeleitetes Feld. Sie verwenden die [!UI
 | CA | 2 |
 | UT | 2 |
 | ID | 1 |
-| OR | 1 |
+| ODER | 1 |
 | NV | 1 |
 
 {style="table-layout:auto"}
@@ -1307,6 +1307,12 @@ Ein Operator in einem If - oder Else If -Konstrukt in einer Case When -Funktion 
 In der folgenden Bedingung werden beispielsweise 13 Operatoren verwendet.
 
 ![Beispieloperatoren](assets/operators-sample.png)
+
+Ein Operator in der Klassifizierungsfunktion ist ein Einzeleintrag für [!UICONTROL Wenn Wert gleich Ausgangswert] [!UICONTROL Wert durch neuen Wert ersetzen].
+
+Die unten stehende Regel Klassifizieren verwendet beispielsweise 3 Operatoren.
+
+![Screenshot der Klassifizierungsregel 1](assets/classify-1.png)
 
 
 ## Weitere Informationen
