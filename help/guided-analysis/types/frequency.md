@@ -5,9 +5,9 @@ feature: Adobe Product Analytics, Guided Analysis
 keywords: Produktanalysen
 exl-id: 27eaa7c7-f1e1-4cf1-9d59-67ac552eb430
 role: User
-source-git-commit: 240a17923b55479865affaafb098b56e32d083a3
+source-git-commit: 481e52bbfe06268642522b908f9b7ac66c882433
 workflow-type: tm+mt
-source-wordcount: '561'
+source-wordcount: '559'
 ht-degree: 6%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 6%
 
 Die **[!UICONTROL Häufigkeit]** -Ansicht gruppiert Ereignisdaten nach der Häufigkeit von Ereignissen in Ihrem Produkt. Die vertikale Achse dieser Ansicht enthält Behälter, die die Häufigkeit des Ereignisses darstellen. Die horizontale Achse misst die Anzahl der Benutzer oder Sitzungen für jeden Behälter.
 
-![Häufigkeit, Screenshot](../assets/frequency-stacked.png){style="border:1px solid gray"}
+>[!VIDEO](https://video.tv.adobe.com/v/3428089/?learn=on)
 
 ## Anwendungsbeispiele
 
@@ -33,7 +33,7 @@ In der Abfrageleiste können Sie die folgenden Komponenten konfigurieren:
 
 * **[!UICONTROL Ansicht]**: Wechselt zwischen diesem Ansichtstyp und [Nutzung](usage.md).
 * **[!UICONTROL Ereignisse]**: Die Ereignisse, die Sie messen möchten. Jedes ausgewählte Ereignis wird als separates Diagramm dargestellt. Eine Zeile, die das Trendereignis darstellt, wird der Tabelle hinzugefügt. Sie können bis zu fünf Ereignisse einbeziehen.
-* **[!UICONTROL Zählt als]**: Die Zählmethode, die auf die ausgewählten Ereignisse angewendet werden soll. Optionen umfassen [!UICONTROL Benutzer],  [!UICONTROL Sitzungen],  [!UICONTROL Prozentsatz der Benutzer] und  [!UICONTROL Prozentsatz der Sitzungen]. Der Nenner für prozentsatzbasierte Metriken in dieser Ansicht sind Benutzer oder Sitzungen, die die ausgewählten Ereignisse durchgeführt haben, nicht alle aktiven Benutzer des Produkts.
+* **[!UICONTROL Zählt als]**: Die Zählmethode, die auf die ausgewählten Ereignisse angewendet werden soll. Optionen umfassen [!UICONTROL Benutzer], [!UICONTROL Sitzungen], [!UICONTROL Prozentsatz der Benutzer] und [!UICONTROL Prozentsatz der Sitzungen]. Der Nenner für prozentsatzbasierte Metriken in dieser Ansicht sind Benutzer oder Sitzungen, die die ausgewählten Ereignisse durchgeführt haben, nicht alle aktiven Benutzer des Produkts.
 * **[!UICONTROL Segmente]**: Die Segmente, die Sie messen möchten. Jedes ausgewählte Segment verdoppelt die Anzahl der Balken in der Grafik und Zeilen in der Tabelle. Sie können bis zu fünf Segmente einbeziehen.
 
 ## Diagrammeinstellungen
