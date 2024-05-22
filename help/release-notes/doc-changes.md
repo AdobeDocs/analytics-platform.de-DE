@@ -4,10 +4,10 @@ description: Listet Inhaltsaktualisierungen für Dokumentation zu Customer Journ
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 53d367e51f739ebf324390ba4114ddb58138fac8
+source-git-commit: cfc019133473cb7509677d03e897d4eeb934ef38
 workflow-type: tm+mt
-source-wordcount: '3590'
-ht-degree: 71%
+source-wordcount: '3650'
+ht-degree: 70%
 
 ---
 
@@ -20,6 +20,7 @@ Die folgenden Aktualisierungen wurden seit der ersten Erstellung der Customer Jo
 | Funktion | Beschreibung |
 | --- | --- |
 | **Mai 2024** | |
+| Erforderliche Informationen beim Exportieren von Customer Journey Analytics-Berichten in Google Cloud Platform unter Verwendung von Einschränkungen aufgrund von Organisationsrichtlinien | Die Organisations-ID von Google Cloud Platform, die sich im Besitz der Adobe befindet, wurde zur [Konfigurieren von Cloud-Exportspeicherorten](/help/components/exports/cloud-export-locations.md) Dokumentation zum Exportieren von Customer Journey Analytics-Berichten in Google Cloud Platform. <p>Diese Informationen sind nur für Organisationen erforderlich, die [Richtlinien der Organisation](https://cloud.google.com/storage/docs/org-policy-constraints) in der Google Cloud-Plattform.</p> |
 | Dokumentation zum Hinzufügen von Komponenten zu Projekten | Es wurden allgemeine Informationen zum [Hinzufügen der verschiedenen Komponententypen zu Projekten in Analysis Workspace](/help/components/use-components-in-workspace.md). |
 | Anwendungsfälle für den Datenexport | Satz neuer Artikel mit einer Beschreibung [Anwendungsfälle für den Datenexport](/help/use-cases/data-export/overview.md) und wie Experience Platform- und Customer Journey Analytics-Funktionen zur Implementierung dieser Anwendungsfälle verwendet werden |
 | Neue Dokumentation für die Aktualisierung von Adobe Analytics auf Customer Journey Analytics | Für Unternehmen, die von Adobe Analytics auf Customer Journey Analytics aktualisieren, gibt es mehrere Upgrade-Optionen und viele Überlegungen, die basierend auf der aktuellen Adobe Analytics-Implementierung und den langfristigen Zielen eines Unternehmens zu beachten sind.<p>Es stehen nun neue Dokumentationsressourcen zur Verfügung, die Ihnen helfen, Folgendes besser zu verstehen:</p><ul><li>Die verschiedenen vorhandenen Aktualisierungspfade</li><li>Welche Aktualisierungspfade sind basierend auf der aktuellen Adobe Analytics-Implementierung eines Unternehmens verfügbar?</li><li>Die Vor- und Nachteile jedes Aktualisierungspfads</li><li>Schrittweise Anleitung für jeden Aktualisierungspfad</li><li>Überlegungen zum Umgang mit historischen Daten</li><li>Und vieles mehr!</li></ul><p>[Erste Schritte mit dem Upgrade auf Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-getstarted.md).</p> |

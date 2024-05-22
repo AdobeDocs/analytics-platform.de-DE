@@ -5,10 +5,10 @@ title: Konfigurieren von Cloud-Exportspeicherorten
 feature: Components
 exl-id: 93f1cca0-95da-41a0-a4f9-5ab620a5b9da
 role: User, Admin
-source-git-commit: d1fc7c0ab95e43a20cdfba8d0948c188fda8bec8
+source-git-commit: cfc019133473cb7509677d03e897d4eeb934ef38
 workflow-type: tm+mt
-source-wordcount: '1792'
-ht-degree: 16%
+source-wordcount: '1823'
+ht-degree: 18%
 
 ---
 
@@ -106,7 +106,7 @@ Informationen zum Verwalten vorhandener Standorte, einschließlich Anzeigen, Bea
 
    | Feld | Funktion |
    |---------|----------|
-   | [!UICONTROL **Bucket**] | Der Behälter in Ihrem Amazon S3-Konto, an den Customer Journey Analytics-Daten gesendet werden sollen. <p>Stellen Sie sicher, dass die von Adobe bereitgestellte Benutzer-ARN über die `S3:PutObject` -Berechtigung, um Dateien in diesen Bucket hochzuladen. </p><p>Behälternamen müssen bestimmten Benennungsregeln entsprechen. Sie müssen beispielsweise zwischen 3 und 63 Zeichen lang sein, dürfen nur aus Kleinbuchstaben, Zahlen, Punkten (.) und Bindestrichen (-) bestehen und müssen mit einem Buchstaben oder einer Zahl beginnen und enden. [Eine vollständige Liste der Benennungsregeln finden Sie in der Dokumentation zu AWS .](https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucketnamingrules.html). </p> |
+   | [!UICONTROL **Bucket**] | Der Behälter in Ihrem Amazon S3-Konto, an den Customer Journey Analytics-Daten gesendet werden sollen. <p>Stellen Sie sicher, dass die von Adobe bereitgestellte Benutzer-ARN über die `S3:PutObject` -Berechtigung, um Dateien in diesen Bucket hochzuladen. </p><p>Bucket-Namen müssen bestimmten Benennungsregeln entsprechen. Bucket-Namen müssen etwa zwischen 3 und 63 Zeichen lang sein, dürfen nur aus Kleinbuchstaben, Zahlen, Punkten (.) und Bindestrichen (-) bestehen und müssen mit einem Buchstaben oder einer Zahl beginnen und enden. [Eine vollständige Liste der Benennungsregeln finden Sie in der AWS-Dokumentation.](https://docs.aws.amazon.com/de_de/AmazonS3/latest/userguide/bucketnamingrules.html). </p> |
    | [!UICONTROL **Präfix**] | Der Ordner im Bucket, in den Sie die Daten ablegen möchten. Geben Sie einen Ordnernamen an und fügen Sie nach dem Namen einen Schrägstrich hinzu, um den Ordner zu erstellen. (Beispiel: Ordnername/) |
 
    {style="table-layout:auto"}
@@ -125,11 +125,9 @@ Informationen zum Verwalten vorhandener Standorte, einschließlich Anzeigen, Bea
 
 1. Im [!UICONTROL **Standorteigenschaften**] Abschnitt [!UICONTROL **Ort hinzufügen**] Geben Sie die folgenden Informationen an, um einen Google Cloud Platform-Speicherort zu konfigurieren:
 
-   <!-- still need to update; can't create GCP account -->
-
    | Feld | Funktion |
    |---------|----------|
-   | [!UICONTROL **Bucket**] | Der Bucket in Ihrem GCP-Konto, an den Customer Journey Analytics-Daten gesendet werden sollen. <p>Vergewissern Sie sich, dass Sie die `roles/storage.objectCreator` Berechtigung zum von Adobe bereitgestellten Prinzipal. (Der Prinzipal wird bereitgestellt, wenn [Konfigurieren des Google Cloud Platform-Kontos](/help/components/exports/cloud-export-accounts.md). <p>Informationen zum Gewähren von Berechtigungen finden Sie in der Google Cloud-Dokumentation unter [Hauptkonto zu einer Richtlinie auf Bucket-Ebene hinzufügen](https://cloud.google.com/storage/docs/access-control/using-iam-permissions#bucket-add).</p> |
+   | [!UICONTROL **Bucket**] | Der Bucket in Ihrem GCP-Konto, an den Customer Journey Analytics-Daten gesendet werden sollen. <p>Vergewissern Sie sich, dass Sie die `roles/storage.objectCreator` Berechtigung zum von Adobe bereitgestellten Prinzipal. (Der Prinzipal wird bereitgestellt, wenn [Konfigurieren des Google Cloud Platform-Kontos](/help/components/exports/cloud-export-accounts.md). <p>Informationen zum Gewähren von Berechtigungen finden Sie in der Google Cloud-Dokumentation unter [Hauptkonto zu einer Richtlinie auf Bucket-Ebene hinzufügen](https://cloud.google.com/storage/docs/access-control/using-iam-permissions#bucket-add).</p><p>Wenn Ihr Unternehmen [Richtlinien der Organisation](https://cloud.google.com/storage/docs/org-policy-constraints) Um nur das Google Cloud Platform-Konto in Ihrer Zulassungsliste zuzulassen, benötigen Sie die folgende Adobe-eigene Google Cloud Platform-Organisations-ID: <ul><li>`DISPLAY_NAME`: `adobe.com`</li><li>`ID`: `178012854243`</li><li>`DIRECTORY_CUSTOMER_ID`: `C02jo8puj`</li></ul> </p> |
    | [!UICONTROL **Präfix**] | Der Ordner im Bucket, in den Sie die Daten ablegen möchten. Geben Sie einen Ordnernamen an und fügen Sie nach dem Namen einen Schrägstrich hinzu, um den Ordner zu erstellen. (Beispiel: Ordnername/) |
 
    {style="table-layout:auto"}
