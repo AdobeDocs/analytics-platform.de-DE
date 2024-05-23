@@ -5,10 +5,10 @@ exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
-workflow-type: ht
-source-wordcount: '1423'
-ht-degree: 100%
+source-git-commit: 5ed1622d4e9f1bcc25931cbf3d3cbd6796d0ac15
+workflow-type: tm+mt
+source-wordcount: '1468'
+ht-degree: 97%
 
 ---
 
@@ -45,6 +45,7 @@ Stellt übergreifende Einstellungen für die Datenansicht bereit.
 | --- | --- |
 | [!UICONTROL Verbindung] | In diesem Feld wird die Datenansicht mit der zuvor eingerichteten Verbindung verknüpft, die einen oder mehrere Adobe Experience Platform-Datensätze enthält. |
 | [!UICONTROL Name] | Erforderlich. Der Name der Datenansicht. Dieser Wert wird in der Dropdown-Liste oben rechts in Analysis Workspace angezeigt. |
+| Externe ID | Erforderlich. Der Name der Datenansicht, die Sie in externen Quellen verwenden können, z. B. in Business Intelligence-Tools. Der Standardwert ist `unspecified`. Wenn Sie keine externe ID angeben, wird der Name aus dem Namen der Datenansicht generiert und durch Unterstriche ersetzt. |
 | [!UICONTROL Beschreibung] | Optional. Adobe empfiehlt eine detaillierte Beschreibung, damit Benutzer verstehen, warum die Datenansicht vorhanden ist und für wen sie konzipiert ist. |
 
 {style="table-layout:auto"}

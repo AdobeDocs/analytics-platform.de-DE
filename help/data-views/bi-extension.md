@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: SQL Connector
 role: Admin
 exl-id: ab7e1f15-ead9-46b7-94b7-f81802f88ff5
-source-git-commit: 87661e0000d050652d9510bb4830ca6f30bfeae9
+source-git-commit: 5ed1622d4e9f1bcc25931cbf3d3cbd6796d0ac15
 workflow-type: tm+mt
-source-wordcount: '2747'
-ht-degree: 75%
+source-wordcount: '2770'
+ht-degree: 74%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 75%
 
 Der [!DNL Customer Journey Analytics BI extension] ermöglicht SQL-Zugriff auf [Datenansichten](./data-views.md), die Sie in Customer Journey Analytics definiert haben. Ihre Dateningenieurinnen und -ingenieure sowie Ihre Datenanalytikerinnen und -analytiker sind möglicherweise besser mit Power BI, Tableau oder anderen Business Intelligence- und Visualisierungs-Tools (im Folgenden „BI-Tools“ genannt) vertraut. Sie können jetzt Berichte und Dashboards basierend auf denselben Datenansichten erstellen, die Benutzerinnen und Benutzer von Customer Journey Analytics beim Erstellen ihrer Analysis Workspace-Projekte verwenden.
 
-Der [Abfrage-Service](https://experienceleague.adobe.com/en/docs/experience-platform/query/home) von Adobe Experience Platform ist die SQL-Schnittstelle zu Daten, die im Data Lake von Experience Platform verfügbar sind. Wenn der [!DNL Customer Journey Analytics BI extension] aktiviert ist, wird die Funktionalität von [!DNL Query Service] erweitert, damit Ihre Datenansichten von Customer Journey Analytics als Tabellen oder Ansichten in einer [!DNL Query Service]-Sitzung zu sehen sind. Daher profitieren Business-Intelligence-Tools, die [!DNL Query Service] als Ihre PostgresSQL-Schnittstelle verwenden, nahtlos von dieser erweiterten Funktion.
+Der [Abfrage-Service](https://experienceleague.adobe.com/de/docs/experience-platform/query/home) von Adobe Experience Platform ist die SQL-Schnittstelle zu Daten, die im Data Lake von Experience Platform verfügbar sind. Wenn der [!DNL Customer Journey Analytics BI extension] aktiviert ist, wird die Funktionalität von [!DNL Query Service] erweitert, damit Ihre Datenansichten von Customer Journey Analytics als Tabellen oder Ansichten in einer [!DNL Query Service]-Sitzung zu sehen sind. Daher profitieren Business-Intelligence-Tools, die [!DNL Query Service] als Ihre PostgresSQL-Schnittstelle verwenden, nahtlos von dieser erweiterten Funktion.
 
 Die wichtigsten Vorteile sind:
 
@@ -184,7 +184,7 @@ Siehe [Verbinden von Clients mit dem Abfrage-Service](https://experienceleague.a
 
 ## Funktionalität
 
-Standardmäßig wird für Ihre Datenansichten ein tabellensicherer Name aus ihrem Anzeigenamen generiert. Beispielsweise die Datenansicht mit dem Namen [!UICONTROL Meine Webdatenansicht] hat den Namen der Ansicht `my_web_data_view`.
+Standardmäßig wird für Ihre Datenansichten ein tabellensicherer Name aus ihrem Anzeigenamen generiert. Beispielsweise die Datenansicht mit dem Namen [!UICONTROL Meine Webdatenansicht] hat den Namen der Ansicht `my_web_data_view`. Sie können einen bevorzugten Namen definieren, der in Ihrem BI-Tool für Ihre Datenansicht verwendet werden soll. Siehe [Datenansichtseinstellungen](create-dataview.md#settings) für weitere Informationen.
 
 Wenn Sie die Datenansichts-IDs als Tabellennamen verwenden möchten, können Sie beim Verbinden die optionale Einstellung für `CJA_USE_IDS` auf Ihren Datenbanknamen festlegen. Zum Beispiel zeigt `prod:cja?CJA_USE_IDS` Ihre Datenansichten mit Namen wie `dv_ABC123` an.
 
