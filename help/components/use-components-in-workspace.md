@@ -3,16 +3,16 @@ description: Erfahren Sie, wie Sie einem Projekt in Analysis Workspace Komponent
 title: Komponenten in Analysis Workspace verwenden
 feature: Components
 role: User
-source-git-commit: d3f90414494b52aba9736fef83423e4a1b2508b5
+source-git-commit: b02a3954e7b531caabfbea1f7df4e322eb4af741
 workflow-type: tm+mt
 source-wordcount: '963'
-ht-degree: 16%
+ht-degree: 18%
 
 ---
 
 # Komponenten in Analysis Workspace verwenden
 
-Komponenten bilden die tatsächlichen Daten eines Projekts in Analysis Workspace. Komponenten bestehen aus Dimensionen, Metriken, Segmenten und Datumsbereichen. Sie können einem Projekt Komponenten hinzufügen, indem Sie sie in Visualisierungen oder Bedienfelder ziehen.
+Komponenten bilden die tatsächlichen Daten eines Projekts in Analysis Workspace. Komponenten bestehen aus Dimensionen, Metriken, Filtern und Datumsbereichen. Sie können einem Projekt Komponenten hinzufügen, indem Sie sie in Visualisierungen oder Bedienfelder ziehen.
 
 Eine Übersicht über die Komponententypen, die Sie hinzufügen können, finden Sie unter [Komponentenübersicht](/help/components/overview.md).
 
@@ -34,9 +34,9 @@ Eine Übersicht über die Komponententypen, die Sie hinzufügen können, finden 
 
 1. Scrollen Sie zu der Komponente, die Sie hinzufügen möchten, oder suchen Sie sie und ziehen Sie sie in ein Bedienfeld oder eine Visualisierung innerhalb Ihres Projekts.
 
-   Sie können beispielsweise ein Segment in die Segment-Dropzone in einer Bedienfeldüberschrift ziehen.
+   Sie können beispielsweise einen Filter in die Dropzone des Filters in eine Bedienfeldüberschrift ziehen.
 
-   ![Segment in der Dropzone ablegen](assets/filter-dropzone.png)
+   ![Filter in der Dropzone ablegen](assets/filter-dropzone.png)
 
 1. Weitere Informationen erhalten Sie in den folgenden Abschnitten, je nach Typ der Komponente, die Sie hinzufügen:
 
@@ -44,7 +44,7 @@ Eine Übersicht über die Komponententypen, die Sie hinzufügen können, finden 
 
    * [Hinzufügen von Metriken zu einem Projekt](#add-metrics-to-a-project)
 
-   * [Segmente zu einem Projekt hinzufügen](#add-segments-to-a-project)
+   * [Filter zu einem Projekt hinzufügen](#add-filters-to-a-project)
 
    * [Hinzufügen von Datumsbereichen zu einem Projekt](#add-date-ranges-to-a-project)
 
@@ -60,7 +60,7 @@ Eine Übersicht über die Komponententypen, die Sie hinzufügen können, finden 
 
      ![Dimensionen zu einem Projekt hinzufügen](assets/add-dimensions.png)
 
-   * Ziehen Sie eine oder mehrere Dimensionen aus der linken Leiste in den Segment-Ablagebereich, um ein Ad-hoc-Segment zu erstellen, wie unter [Segmente zu einem Projekt hinzufügen](#add-segments-to-a-project).
+   * Ziehen Sie eine oder mehrere Dimensionen aus der linken Leiste in die Dropzone des Filters, um einen Ad-hoc-Filter zu erstellen, wie unter [Filter zu einem Projekt hinzufügen](#add-filters-to-a-project).
 
 Weitere Informationen zur Verwendung von Dimensionen in Analysis Workspace finden Sie unter [Dimensionen in der Vorschau anzeigen](/help/components/dimensions/view-dimensions.md), [Dimensionen aufschlüsseln](/help/components/dimensions/t-breakdown-fa.md), und [Dimensionen für die Zeitunterteilung](/help/components/dimensions/time-parting-dimensions.md).
 
@@ -96,11 +96,11 @@ So fügen Sie einem Projekt in Analysis Workspace einen Filter hinzu:
 
 1. Wählen Sie eine der folgenden Methoden, um mit dem Filtern Ihres Bedienfelds zu beginnen:
 
-   * Ziehen Sie einen einzelnen Filter aus der linken Leiste in den Segmentablagebereich.
+   * Ziehen Sie einen einzelnen Filter aus der linken Leiste in die Dropzone des Filters.
 
      ![Filter in der Dropzone ablegen](assets/filter-dropzone.png)
 
-   * Halten Sie die Umschalt- oder Strg-Taste gedrückt, um mehrere Segmente in der linken Leiste auszuwählen, und halten Sie dann die Umschalt-Taste gedrückt, während Sie sie in der Segment-Dropzone ablegen.
+   * Halten Sie die Umschalt- oder Strg-Taste gedrückt, um mehrere Filter in der linken Leiste auszuwählen, und halten Sie dann die Umschalt-Taste gedrückt, während Sie sie in der Dropzone des Filters ablegen.
 
      ![mehrere Filter in der Dropzone ablegen](assets/filter-dropzone-multiple.png)
 
@@ -108,13 +108,13 @@ So fügen Sie einem Projekt in Analysis Workspace einen Filter hinzu:
 
      Sie können die Option (x) auswählen, um eine beliebige Option aus dem Dropdown-Menü zu entfernen. Wenn Sie die [!UICONTROL **Kein Filter**] auswählen, ist ein Filter erforderlich.
 
-   * Erstellen Sie Ad-hoc-Segmente, indem Sie Nicht-Segment-Komponenten in die Dropzone ziehen. So sparen Sie Zeit und Mühe beim Aufrufen des Segment Builders. Auf diese Weise erstellte Segmente werden automatisch als Segmente auf Trefferebene definiert. Diese Definition kann geändert werden, indem Sie auf das Informationssymbol (i) neben dem Segment und dann auf das stiftförmige Bearbeitungssymbol klicken und sie in Segment Builder bearbeiten.
+   * Erstellen Sie Ad-hoc-Filter, indem Sie Nicht-Filter-Komponenten in die Dropzone ziehen. So sparen Sie Zeit und Mühe beim Aufrufen des Filter Builder. Auf diese Weise erstellte Filter werden automatisch als Filter auf Trefferebene definiert. Diese Definition kann geändert werden, indem Sie auf das Informationssymbol (i) neben dem Filter und dann auf das stiftförmige Bearbeitungssymbol klicken und sie in Filter Builder bearbeiten.
 
-     Ad-hoc-Segmente sind eine Art Schnellsegment und für das Projekt lokal verfügbar. Sie werden nicht in der linken Leiste angezeigt, es sei denn, Sie machen sie öffentlich.
+     Ad-hoc-Filter sind eine Art Schnellfilter und für das Projekt lokal verfügbar. Sie werden nicht in der linken Leiste angezeigt, es sei denn, Sie machen sie öffentlich.
 
      Weitere Informationen finden Sie unter [Schnellfilter](/help/components/filters/quick-filters.md).
 
-Weitere Informationen dazu, wie Sie die Segment-Dropzone in einem Bedienfeld zum Filtern Ihres Bedienfelds verwenden können, finden Sie unter [Dropzone](/help/analysis-workspace/c-panels/panels.md#drop-zone) in [Bedienfelder - Übersicht](/help/analysis-workspace/c-panels/panels.md).
+Weitere Informationen dazu, wie Sie die Filter-Dropzone in einem Bedienfeld zum Filtern Ihres Bedienfelds verwenden können, finden Sie unter [Dropzone](/help/analysis-workspace/c-panels/panels.md#drop-zone) in [Bedienfelder - Übersicht](/help/analysis-workspace/c-panels/panels.md).
 
 ## Hinzufügen von Datumsbereichen zu einem Projekt
 
