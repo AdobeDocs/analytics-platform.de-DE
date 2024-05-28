@@ -6,9 +6,9 @@ exl-id: 0a87518c-3608-44ad-b5e3-976f97560433
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: 73b9aa3bc7568c90c3e92b6fa8197577a904a6a2
+source-git-commit: 5ad3f9c85c583390e6c5ba933ee59c3d0b3f8c59
 workflow-type: tm+mt
-source-wordcount: '2993'
+source-wordcount: '2996'
 ht-degree: 15%
 
 ---
@@ -33,6 +33,8 @@ Einmal [eine oder mehrere Verbindungen erstellt oder bearbeitet](/help/connectio
 
 Die [!UICONTROL Liste] -Schnittstelle ist die Standardschnittstelle für Verbindungen. Wenn nicht ausgewählt, wählen Sie die **[!UICONTROL Liste]** -Tab, um auf die Benutzeroberfläche zuzugreifen.
 
+![Listenansicht](assets/list-view.png)
+
 Die [!UICONTROL Liste] -Schnittstelle zeigt eine Tabelle aller verfügbaren Verbindungen. Mithilfe der Suche können Sie schnell nach einer Verbindung suchen ![Suche](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) ankreuzen.
 
 Die folgenden Spalten oder Symbole sind in der Tabelle verfügbar.
@@ -46,7 +48,7 @@ Die folgenden Spalten oder Symbole sind in der Tabelle verfügbar.
 | [!UICONTROL Datensätze] | Zeigt eine oder mehrere Links zu den Datensätzen an, die Teil der Verbindung sind. Sie können den Datensatz-Hyperlink auswählen, um den Datensatz in der Verbindung anzuzeigen. Wenn weitere Datensätze Teil der ausgewählten Verbindung sind, wählen Sie **[!UICONTROL +*x* more]** , um **[!UICONTROL Enthaltene Datensätze]** Bedienfeld. In diesem Bereich werden Links zu allen Datensätzen und eine Option zur Suche nach einem bestimmten Datensatz angezeigt, der Teil der Verbindung ist.<p><img src="./assets/datasets-included.png" alt="Enthaltene Datenbestände" width="400"/><p>Wenn Sie einen Datensatznamen auswählen, wird der Datensatz in der Experience Platform-Benutzeroberfläche in einer neuen Registerkarte geöffnet. |
 | [!UICONTROL Sandbox] | Zeigt die [Experience Platform-Sandbox](https://experienceleague.adobe.com/docs/experience-platform/sandbox/home.html?lang=de) von dem aus diese Verbindung ihre Datensätze zeichnet. Diese Sandbox wurde beim erstmaligen Erstellen der Verbindung ausgewählt. Sie kann nicht geändert werden. |
 | [!UICONTROL Inhaber] | Die Person, die die Verbindung hergestellt hat. |
-| [!UICONTROL Neue Daten importieren] | Zeigt den Status des Imports neuer Daten für Datensätze an: <p><span style="color:green">●</span>   **[!UICONTROL _x _on]**für die Anzahl der Datensätze, die für den Import neuer Daten konfiguriert sind, und&lt;/<p><span style="color:gray">●</span>   **[!UICONTROL _x Aus_]** für die Anzahl der Datensätze, für die der neue Datenimport deaktiviert ist. |
+| [!UICONTROL Importieren neuer Daten] | Zeigt den Status des Imports neuer Daten für Datensätze an: <p><span style="color:green">●</span>   **[!UICONTROL _x _on]**für die Anzahl der Datensätze, die für den Import neuer Daten konfiguriert sind, und&lt;/<p><span style="color:gray">●</span>   **[!UICONTROL _x Aus_]** für die Anzahl der Datensätze, für die der neue Datenimport deaktiviert ist. |
 | [!UICONTROL Erstellt am] | Der Zeitstempel, zu dem die Verbindung erstellt wurde. |
 | [!UICONTROL Zuletzt geändert] | Der Zeitstempel, zu dem die Verbindung zuletzt aktualisiert wird. |
 | [!UICONTROL Aufstockungsdaten] | Zeigt den Status für Aufstockungsdaten in allen Datensätzen an.<p><span style="color:red">●</span>   **[!UICONTROL _x _Aufstockungen fehlgeschlagen]**für die Anzahl fehlgeschlagener Aufstockungen in Datensätzen,<p><span style="color:orange">●</span>   **[!UICONTROL _x _Verarbeitung von Backfilets]**für die Anzahl der Aufstockungen für die Verarbeitung in Datensätzen,<p><span style="color:green">●</span>   **[!UICONTROL _x _Aufstockungen abgeschlossen]**für die Anzahl abgeschlossener Backups für Datensätze und<p><span style="color:grey">●</span>   **[!UICONTROL _Aus_]** , falls für die Datensätze in der Verbindung keine Rückfüllungen definiert sind. |
@@ -147,7 +149,7 @@ Die Benutzeroberfläche &quot;Verbindungsdetails&quot;bietet einen detaillierten
 | [!UICONTROL Datenquellentyp] | Der Quelltyp des Datensatzes. Sie definieren den Quelltyp beim Erstellen einer Verbindung. |
 | [!UICONTROL Typ des Datensatzes] | Der Datensatztyp für diesen Datensatz. Typ kann [!UICONTROL Ereignis], [!UICONTROL Suche]oder [!UICONTROL Profil]. [Weitere Infos](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=de#configure-dataset) |
 | Schema | Das Experience Platform-Schema, auf dem der Datensatz basiert. |
-| [!UICONTROL Neue Daten importieren] | Zeigt den Status des Imports neuer Daten für den Datensatz an: <p><span style="color:green">●</span>   **[!UICONTROL _x _on]**ob der Datensatz für den Import neuer Daten konfiguriert ist, und<p><span style="color:gray">●</span>   **[!UICONTROL _x Aus_]** wenn der Datensatz so konfiguriert ist, dass er keine neuen Daten importiert. |
+| [!UICONTROL Importieren neuer Daten] | Zeigt den Status des Imports neuer Daten für den Datensatz an: <p><span style="color:green">●</span>   **[!UICONTROL _x _on]**ob der Datensatz für den Import neuer Daten konfiguriert ist, und<p><span style="color:gray">●</span>   **[!UICONTROL _x Aus_]** wenn der Datensatz so konfiguriert ist, dass er keine neuen Daten importiert. |
 | [!UICONTROL Aufstockungsdaten] | Zeigt den Status der Aufstockungsdaten für den Datensatz an.<p><span style="color:red">●</span>   **[!UICONTROL _x _Aufstockungen fehlgeschlagen]**für die Anzahl fehlgeschlagener Aufstockungen,<p><span style="color:orange">●</span>   **[!UICONTROL _x _Verarbeitung von Backfilets]**für die Anzahl der Aufstockungen,<p><span style="color:green">●</span>   **[!UICONTROL _x _Aufstockungen abgeschlossen]**für die Anzahl der abgeschlossenen Aufstockungen und<p><span style="color:grey">●</span>   **[!UICONTROL _Aus_]** , falls keine Aufstockungen konfiguriert sind. |
 
 >[!IMPORTANT]
@@ -190,7 +192,7 @@ Wenn ein Datensatz in der Datensatztabelle ausgewählt ist, werden in einem Bedi
 | [!UICONTROL Batches hinzugefügt] | Zeigt an, wie viele Daten-Batches zu diesem Datensatz hinzugefügt wurden. |
 | [!UICONTROL Übersprungene Datensätze] | Zeigt an, wie viele Zeilen während der Aufnahme im ausgewählten Zeitraum übersprungen wurden.<p>Gründe für das Überspringen von Datensätzen sind: Fehlende Zeitstempel, fehlende oder ungültige Personen-ID usw. Wird alle zehn Minuten aktualisiert.<p>Ungültige Personen-IDs (z. B. `undefined`oder `00000000`oder einer beliebigen Kombination von Zahlen und Buchstaben in einer [!UICONTROL Personen-ID] die in einem Ereignis vorkommen, das mehr als eine Million Mal in einem bestimmten Monat auftritt), sind IDs, die keinem bestimmten Benutzer oder einer bestimmten Person zugeordnet werden können. Diese Zeilen können nicht in das System aufgenommen werden und führen zu fehleranfälliger Erfassung und Berichterstellung. Um ungültige Personen-IDs zu beheben, haben Sie drei Möglichkeiten:<ul><li>Verwendung [Stitching](/help/stitching/overview.md) , um die nicht definierten Benutzer-IDs oder Benutzer-IDs mit allen Identitäten mit gültigen Benutzer-IDs zu füllen.</li><li>Leeren Sie die Benutzer-ID aus, die dann bei der Erfassung übersprungen wird (vorzuziehen sind ungültige Benutzer-IDs oder Benutzer-IDs ohne Inhalt).</li><li>Korrigieren Sie alle ungültigen Benutzer-IDs in Ihrem System, bevor Sie die Daten aufnehmen.</li></ul> |
 | [!UICONTROL Zuletzt hinzugefügt] | Zeigt an, wann der letzte Batch hinzugefügt wurde. |
-| [!UICONTROL Neue Daten importieren] | Zeigt den Status des Imports neuer Daten für den Datensatz an: <p><span style="color:green">●</span>   **[!UICONTROL _x _on]**ob der Datensatz für den Import neuer Daten konfiguriert ist, und<p><span style="color:gray">●</span>   **[!UICONTROL _x Aus_]** wenn der Datensatz so konfiguriert ist, dass er keine neuen Daten importiert. |
+| [!UICONTROL Importieren neuer Daten] | Zeigt den Status des Imports neuer Daten für den Datensatz an: <p><span style="color:green">●</span>   **[!UICONTROL _x _on]**ob der Datensatz für den Import neuer Daten konfiguriert ist, und<p><span style="color:gray">●</span>   **[!UICONTROL _x Aus_]** wenn der Datensatz so konfiguriert ist, dass er keine neuen Daten importiert. |
 | [!UICONTROL Aufstockungsdaten] | Zeigt den Status der Aufstockungsdaten für den Datensatz an.<p><span style="color:red">●</span>   **[!UICONTROL _x _Aufstockungen fehlgeschlagen]**für die Anzahl fehlgeschlagener Aufstockungen,<p><span style="color:orange">●</span>   **[!UICONTROL _x _Verarbeitung von Backfilets]**für die Anzahl der Aufstockungen,<p><span style="color:green">●</span>   **[!UICONTROL _x _Aufstockungen abgeschlossen]**für die Anzahl der abgeschlossenen Aufstockungen und<p><span style="color:grey">●</span>   **[!UICONTROL _Aus_]** , falls keine Aufstockungen konfiguriert sind.<p>Um ein Dialogfeld mit einem Überblick über die früheren Rückstände für den Datensatz anzuzeigen, wählen Sie <img src="./assets/pastbackfill.svg" alt="Frühere Aufstockungen" width="15"/> **[!UICONTROL Frühere Backfilets]**. |
 | [!UICONTROL Datenquellentyp] | Datenquellentyp, wie beim Hinzufügen des Datensatzes zur Verbindung definiert. |
 | [!UICONTROL Typ des Datensatzes] | Entweder [!UICONTROL Ereignis], [!UICONTROL Suche] oder [!UICONTROL Profil]. [Weitere Infos](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=de#configure-dataset) |
@@ -201,6 +203,8 @@ Wenn ein Datensatz in der Datensatztabelle ausgewählt ist, werden in einem Bedi
 ## Nutzung
 
 Die [!UICONTROL Nutzung] -Schnittstelle zeigt die Verwendung von aufgenommenen und berichtspflichtigen Zeilen über alle Verbindungen hinweg. Diese Schnittstelle unterstützt Sie dabei festzustellen, ob Ihre Customer Journey Analytics-Nutzung den vertraglich vereinbarten Bedingungen entspricht.
+
+![usage-view](assets/usage-view.png)
 
 Wählen Sie die **[!UICONTROL Nutzung]** -Tab, um auf die Benutzeroberfläche zuzugreifen.
 
