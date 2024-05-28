@@ -6,9 +6,9 @@ exl-id: 0a87518c-3608-44ad-b5e3-976f97560433
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: 5ad3f9c85c583390e6c5ba933ee59c3d0b3f8c59
+source-git-commit: bba51d1354d14d6e7eb236b787b419571fea6423
 workflow-type: tm+mt
-source-wordcount: '2996'
+source-wordcount: '2995'
 ht-degree: 15%
 
 ---
@@ -208,7 +208,7 @@ Die [!UICONTROL Nutzung] -Schnittstelle zeigt die Verwendung von aufgenommenen u
 
 Wählen Sie die **[!UICONTROL Nutzung]** -Tab, um auf die Benutzeroberfläche zuzugreifen.
 
-So melden Sie die Verwendung:
+### Verwendungsbericht
 
 1. Wählen Sie eine **[!UICONTROL Zeitraum]**. Sie können zwischen **[!UICONTROL Letzte 6 Monate]**, **[!UICONTROL Jahr bis Datum]** oder **[!UICONTROL Letzte 2 Jahre]**.
 1. Wählen Sie eine **[!UICONTROL Intervall]**. Sie können zwischen **[!UICONTROL Monatlich]** oder **[!UICONTROL Vierteljährlich]**.
