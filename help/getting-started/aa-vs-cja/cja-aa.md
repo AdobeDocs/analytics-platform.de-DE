@@ -5,10 +5,10 @@ exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: Basics
 role: User
-source-git-commit: 8a56f6182b0679d64b9e4ad82402f414eeb88055
-workflow-type: ht
-source-wordcount: '2141'
-ht-degree: 100%
+source-git-commit: e767639d1e6276e4f9a52ce3f1bdb53b7c42ac04
+workflow-type: tm+mt
+source-wordcount: '2135'
+ht-degree: 99%
 
 ---
 
@@ -56,6 +56,7 @@ In den folgenden Tabellen ist aufgeführt, welche Adobe Analytics-Funktionen in 
 
 | Funktion | Hinweise |
 | --- | --- |
+| Analytics for Target (A4T) | Die [Integration zwischen Adobe Customer Journey Analytics und Target](https://experienceleague.adobe.com/en/docs/target/using/integrate/cja/target-reporting-in-cja) bietet leistungsstarke Analyse- und Zeitersparniswerkzeuge für Ihr Optimierungsprogramm. |
 | Zielgruppenveröffentlichung | Wird unterstützt, sofern diese Funktion mit den Adobe-Produkten Customer Data Platform oder Journey Optimizer lizenziert wurde. [Zielgruppenveröffentlichung](/help/components/audiences/audiences-overview.md) sendet Zielgruppen an das Echtzeit-Kundenprofil in Experience Platform. |
 | Classifications | Jetzt „Lookup-Datensätze“ genannt. In Analytics verwendete Klassifizierungen können mit dem Quell-Connector für Analytics-Klassifizierungen in Experience Platform und Customer Journey Analytics importiert werden. Suchdatensätze können auch direkt in Experience Platform hochgeladen und in Customer Journey Analytics verfügbar gemacht werden. |
 | Classification Rule Builder | Unterstützt mit Verwendung von [Teilzeichenfolgen](/help/data-views/component-settings/substring.md) in Customer Journey Analytics. Verwendet zum Zeitpunkt der Berichtserstellung Zeichenfolgenmanipulationen anstelle von Lookup-Datensätzen. |
@@ -87,7 +88,6 @@ In den folgenden Tabellen ist aufgeführt, welche Adobe Analytics-Funktionen in 
 | Funktion | Hinweise |
 | --- | --- |
 | Bedienfelder | Leeres Bedienfeld, Attributions-Bedienfeld, Freiform-Bedienfeld und Quick Insights werden vollständig unterstützt. Die Bedienfelder „Segmentvergleich“ und „Analytics for Target“ (A4T) werden nicht unterstützt. |
-| Analytics for Target (A4T) | Derzeit in der Beta-Version. Teilweise Unterstützung wird über Felder im [Analytics-Quell-Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=de) bereitgestellt. Die Unterstützung von A4T-gerechten Namen für die Zielgruppenaktivitäten und -erfahrungen ist geplant. |
 
 {style="table-layout:auto"}
 
