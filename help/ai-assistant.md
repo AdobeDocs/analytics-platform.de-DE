@@ -6,9 +6,9 @@ solution: Customer Journey Analytics
 exl-id: 7a4f15c4-7fd6-4a6a-9b83-7c1f3b95be16
 hide: true
 hidefromtoc: true
-source-git-commit: b21dba5b7bef0d9add116f1e9bca0403e9a8c1d5
+source-git-commit: c0ed9f09f9fc0c9bb1e4c002986866677aebfb1f
 workflow-type: tm+mt
-source-wordcount: '485'
+source-wordcount: '506'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,9 @@ ht-degree: 0%
 >
 >AI Assistant for Customer Journey Analytics ist derzeit als Beta-Version verfügbar. Die Funktion und ihre Dokumentation können sich ändern.
 
-AI Assistant ist eine Benutzeroberflächenfunktion, mit der Sie in Adobe Customer Journey Analytics-Konzepten und -Terminologie navigieren und diese verstehen können. Der KI-Assistent im Customer Journey Analytics wird in der Adobe Experience League-Dokumentation geschult. Bei der Beantwortung einer Frage antwortet der KI-Assistent mit einer hilfreichen Antwort, die schnelles Lernen ermöglicht.
+AI Assistant ist eine Dialogerfahrung, die es Fachleuten ermöglicht, Aufgaben schnell auszuführen - unabhängig davon, ob sie Konzepte verstehen, Probleme beheben oder nach Informationen suchen. Sie ermöglicht es auch Nichtexperten, Expertenaufgaben durchzuführen und die allgemeine Qualität der Arbeit zu erhöhen.
+
+Der KI-Assistent im Customer Journey Analytics wird in der Adobe Experience League-Dokumentation geschult. Bei der Beantwortung einer Frage antwortet der KI-Assistent mit einer hilfreichen Antwort, die schnelles Lernen ermöglicht.
 
 Als Anfänger können Sie mit dem KI-Assistenten Customer Journey Analytics-Konzepte erlernen und sich selbst mit Produkten und Funktionen vertraut machen, mit denen Sie nicht vertraut sind. Erfahrene Benutzer können mit dem AI-Assistenten erweiterte Anwendungsfälle oder Tipps und Tricks präsentieren.
 
@@ -58,6 +60,6 @@ In dieser ersten Version wird der Zugriff auf die Funktion des AI-Assistenten du
 
    ![Fragefeld](assets/ai-asst2.png)
 
-1. (Optional) Um Quellen anzuzeigen, klicken Sie auf **[!UICONTROL Quellen anzeigen]** und die Dokumentationsquelle(n), die die Antwort informiert hat (werden) angezeigt.
+1. (Optional) Um Quellen anzuzeigen, klicken Sie auf **[!UICONTROL Quellen anzeigen]** und die Dokumentationsquelle bzw. Quellen, die die Antwort erhalten haben, angezeigt werden.
 
 1. (Optional) Sie können auch eine Daumen-Up- oder Daumen-Down-Abstimmung über die Nützlichkeit einer gegebenen Antwort geben.
