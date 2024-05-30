@@ -4,10 +4,10 @@ description: Binden Sie Daten ein, die vom Entscheidungs-Management in Adobe Jou
 exl-id: fde45264-46cf-4c68-9872-7fb739748f21
 feature: Experience Platform Integration
 role: Admin
-source-git-commit: 734751f94a5d066de80182eb1ca3668aa311a4c1
+source-git-commit: 027ff3983c67481dd8284667d97f59f427b18928
 workflow-type: tm+mt
-source-wordcount: '710'
-ht-degree: 100%
+source-wordcount: '711'
+ht-degree: 98%
 
 ---
 
@@ -75,7 +75,7 @@ Sie können die folgenden Metriken in einer Datenansicht erstellen, um eine unge
 | Score der Fallback-Entscheidungsoptionen | Berechneter Wert für eine Fallback-Entscheidungsoption im Kontext eines einzelnen Geltungsbereichs. | `_experience.decisioning.`<br/>`propositionDetails.fallback.score` | Komponententyp: Metrik |
 | Verwerfen von Angeboten | Die Anzahl der Angebote, die ohne andere direkte Interaktion verworfen oder abgelehnt wurden. | `_experience.decisioning.`<br/>`propositionEventType.dismiss` | Komponententyp: Metrik |
 | Angebotsanzeige | Die Anzahl der dem Profil angezeigten Angebote. | `_experience.decisioning.`<br/>`propositionEventType.display` | Komponententyp: Metrik |
-| Angebots-Interaktionen | Die Anzahl der dem Profil angezeigten Angebote. | `_experience.decisioning.`<br/>`propositionEventType.interact` | Komponententyp: Metrik |
+| Angebots-Interaktionen | Die Anzahl der Angebote, mit denen das Profil interagiert hat. | `_experience.decisioning.`<br/>`propositionEventType.interact` | Komponententyp: Metrik |
 | Angebotsversand | Die Anzahl der an das Profil gesendeten Angebote. | `_experience.decisioning.`<br/>`propositionEventType.send` | Komponententyp: Metrik |
 | Angebots-Trigger | Die Anzahl der vom Client-SDK ausgewählten Angebote. | `_experience.decisioning.`<br/>`propositionEventType.trigger` | Komponententyp: Metrik |
 | Abmeldung von Angeboten | Die Anzahl der Angebote, die vom Profil angefordert wurden und in Zukunft nicht mehr angezeigt werden. | `_experience.decisioning.`<br/>`propositionEventType.unsubscribe` | Komponententyp: Metrik |

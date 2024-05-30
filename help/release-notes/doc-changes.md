@@ -4,10 +4,10 @@ description: Listet Inhaltsaktualisierungen für Dokumentation zu Customer Journ
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: cfc019133473cb7509677d03e897d4eeb934ef38
+source-git-commit: dcce03959018a34362d8f6cc1d3f44d4ffde916b
 workflow-type: tm+mt
-source-wordcount: '3650'
-ht-degree: 70%
+source-wordcount: '3667'
+ht-degree: 73%
 
 ---
 
@@ -20,11 +20,12 @@ Die folgenden Aktualisierungen wurden seit der ersten Erstellung der Customer Jo
 | Funktion | Beschreibung |
 | --- | --- |
 | **Mai 2024** | |
+| Target-Integration | hinzugefügt [Abschnitt zur Adobe-Integration](/help/integrations/cja4t.md) Informationen zur Integration von Target in Customer Journey Analytics. |
 | Erforderliche Informationen beim Exportieren von Customer Journey Analytics-Berichten in Google Cloud Platform unter Verwendung von Einschränkungen aufgrund von Organisationsrichtlinien | Die Organisations-ID von Google Cloud Platform, die sich im Besitz der Adobe befindet, wurde zur [Konfigurieren von Cloud-Exportspeicherorten](/help/components/exports/cloud-export-locations.md) Dokumentation zum Exportieren von Customer Journey Analytics-Berichten in Google Cloud Platform. <p>Diese Informationen sind nur für Organisationen erforderlich, die [Richtlinien der Organisation](https://cloud.google.com/storage/docs/org-policy-constraints) in der Google Cloud-Plattform.</p> |
 | Dokumentation zum Hinzufügen von Komponenten zu Projekten | Es wurden allgemeine Informationen zum [Hinzufügen der verschiedenen Komponententypen zu Projekten in Analysis Workspace](/help/components/use-components-in-workspace.md). |
 | Anwendungsfälle für den Datenexport | Satz neuer Artikel mit einer Beschreibung [Anwendungsfälle für den Datenexport](/help/use-cases/data-export/overview.md) und wie Experience Platform- und Customer Journey Analytics-Funktionen zur Implementierung dieser Anwendungsfälle verwendet werden |
-| Neue Dokumentation für die Aktualisierung von Adobe Analytics auf Customer Journey Analytics | Für Unternehmen, die von Adobe Analytics auf Customer Journey Analytics aktualisieren, gibt es mehrere Upgrade-Optionen und viele Überlegungen, die basierend auf der aktuellen Adobe Analytics-Implementierung und den langfristigen Zielen eines Unternehmens zu beachten sind.<p>Es stehen nun neue Dokumentationsressourcen zur Verfügung, die Ihnen helfen, Folgendes besser zu verstehen:</p><ul><li>Die verschiedenen vorhandenen Aktualisierungspfade</li><li>Welche Aktualisierungspfade sind basierend auf der aktuellen Adobe Analytics-Implementierung eines Unternehmens verfügbar?</li><li>Die Vor- und Nachteile jedes Aktualisierungspfads</li><li>Schrittweise Anleitung für jeden Aktualisierungspfad</li><li>Überlegungen zum Umgang mit historischen Daten</li><li>Und vieles mehr!</li></ul><p>[Erste Schritte mit dem Upgrade auf Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-getstarted.md).</p> |
-| Aktualisierte Dokumentation zu benutzerdefinierten Datumsbereichen | Aktualisierte Screenshots und Verfahren zu [Erstellen benutzerdefinierter Datumsbereiche](/help/components/date-ranges/custom-date-ranges.md) , um die aktuellen Produktfunktionen und Designs abzugleichen. |
+| Neue Dokumentation für die Aktualisierung von Adobe Analytics auf Customer Journey Analytics | Für Organisationen, die von Adobe Analytics auf Customer Journey Analytics umsteigen möchten, gibt es mehrere Aktualisierungsoptionen und viele Überlegungen, die abhängig von der aktuellen Adobe Analytics-Implementierung und den langfristigen Zielen der Organisation berücksichtigt werden sollten.<p>Es stehen nun neue Dokumentationsressourcen zur Verfügung, die Ihnen helfen, Folgendes besser zu verstehen:</p><ul><li>Die verschiedenen vorhandenen Aktualisierungspfade</li><li>Welche Aktualisierungspfade auf der Grundlage der aktuellen Adobe Analytics-Implementierung einer Organisation verfügbar sind</li><li>Die Vor- und Nachteile jedes Aktualisierungspfads</li><li>Eine schrittweise Anleitung für jeden Aktualisierungspfad</li><li>Überlegungen zum Umgang mit historischen Daten</li><li>Und vieles mehr!</li></ul><p>[Erste Schritte mit dem Upgrade auf Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-getstarted.md).</p> |
+| Aktualisierte Dokumentation zu benutzerdefinierten Datumsbereichen | Aktualisierte Screenshots und Verfahren im Zusammenhang mit der [Erstellung von benutzerdefinierten Datumsbereichen](/help/components/date-ranges/custom-date-ranges.md), um den aktuellen Produktfunktionen und dem Design zu entsprechen. |
 | Übersichtsinformationen zu Dimensionen | Es wurden Informationen zu [Dimensionen](/help/components/dimensions/overview.md). |
 | Beispiele für Quell-Connectoren | Beispiele für Quell-Connectoren wurden hinzugefügt, die verfügbar sind, wenn beschrieben wird, wie [Quell-Connector verwenden](/help/data-ingestion/sources.md#use-a-source-connector) für die Aufnahme von Daten. |
 | **April 2024** | |
