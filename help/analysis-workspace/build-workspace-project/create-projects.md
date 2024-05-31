@@ -5,9 +5,9 @@ feature: Workspace Basics
 role: User
 exl-id: cc3d3ac9-c31f-4a8d-999c-78590512b57c
 source-git-commit: 53d367e51f739ebf324390ba4114ddb58138fac8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '681'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
@@ -78,7 +78,7 @@ So fügen Sie eine Visualisierung hinzu.
 >
 >Informationen zu den einzelnen Komponenten erhalten Sie, wenn Sie in der linken Leiste auf das Infosymbol neben dem Namen einer Komponente klicken oder in der [Komponentenübersicht](/help/components/overview.md).
 
-Im Folgenden finden Sie grundlegende Informationen zum Hinzufügen einer Komponente zu einem Projekt in Analysis Workspace. Detaillierte Informationen zum Hinzufügen der verschiedenen Komponententypen (Dimensionen, Metriken, Filter und Datumsbereiche) finden Sie unter [Komponenten in Analysis Workspace verwenden](/help/components/use-components-in-workspace.md).
+Im Folgenden finden Sie grundlegende Informationen zum Hinzufügen einer Komponente zu einem Projekt in Analysis Workspace. Detaillierte Informationen zum Hinzufügen der verschiedenen Komponententypen (Dimensionen, Metriken, Filter und Datumsbereiche) finden Sie unter [Verwenden von Komponenten in Analysis Workspace](/help/components/use-components-in-workspace.md).
 
 So fügen Sie einem Projekt in Analysis Workspace eine Komponente hinzu:
 
@@ -86,13 +86,13 @@ So fügen Sie einem Projekt in Analysis Workspace eine Komponente hinzu:
 
    ![Symbol „Ausgewählte Komponenten“ und Liste der verfügbaren Dimensionen.](assets/build-components.png)
 
-1. Scrollen Sie zu der Komponente, die Sie hinzufügen möchten, oder suchen Sie sie und ziehen Sie sie in ein Bedienfeld oder eine Visualisierung innerhalb Ihres Projekts.
+1. Scrollen Sie zu der Komponente, die Sie hinzufügen möchten, oder suchen Sie sie und ziehen Sie sie anschließend in ein Panel oder eine Visualisierung innerhalb Ihres Projekts.
 
-   Sie können beispielsweise einen Filter in die Dropzone des Filters in eine Bedienfeldüberschrift ziehen.
+   Sie können beispielsweise einen Filter in den Filter-Ablegebereich in der Kopfzeile eines Panels ziehen.
 
-   ![Filter in der Dropzone ablegen](assets/filter-dropzone.png)
+   ![Filter im Ablegebereich ablegen](assets/filter-dropzone.png)
 
-   Weitere Informationen zum Hinzufügen von Komponenten zu Projekten finden Sie unter [Komponenten in Analysis Workspace verwenden](/help/components/use-components-in-workspace.md).
+   Weitere Informationen zum Hinzufügen von Komponenten zu Projekten finden Sie unter [Verwenden von Komponenten in Analysis Workspace](/help/components/use-components-in-workspace.md).
 
 1. (Optional) Geben Sie das Projekt wie unter [Speichern und Freigeben des Projekts](#save-and-share-the-project) beschrieben frei.
 
