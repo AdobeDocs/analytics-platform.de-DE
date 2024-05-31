@@ -5,10 +5,10 @@ keywords: Produktanalysen
 exl-id: 1ac8157f-87e8-4d98-a2ca-f6beb68d9d6b
 feature: Guided Analysis
 role: User
-source-git-commit: 2b8afe1dbac5057f867437e2bfce27f3bd752d57
-workflow-type: ht
+source-git-commit: a55224d91dbcf7323ccd481b4a7469d5b80f12c4
+workflow-type: tm+mt
 source-wordcount: '1397'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -26,7 +26,7 @@ Die folgenden Ansichten geführter Analysen sind verfügbar:
 
 | Analysetyp | Ansichtstyp | Beschreibung |
 | --- | --- | --- |
-| [!UICONTROL Funktionsmatrix] | [Interaktion](types/engagement.md) | Erfahren Sie mehr über Umfang und Tiefe der Funktionsinteraktion. |
+| [!UICONTROL Funktionsmatrix] | [Interaktion](types/engagement.md) | Machen Sie sich mit der Breite und Tiefe der Interaktion mit Funktionen vertraut. |
 | [!UICONTROL Trichter] | [Reibung](types/friction.md) | Vergleichen Sie die Konversionsraten zwischen den Schritten. |
 | [!UICONTROL Trichter] | [Konversions-Trends](types/conversion-trends.md) | Verfolgen Sie ie dVeränderungen der Konversionsraten im Laufe der Zeit. |
 | [!UICONTROL Auswirkungen] | [Version](types/release.md) | Vergleichen Sie die Leistung in gleichen Zeiträumen vor und nach der Veröffentlichung. |
