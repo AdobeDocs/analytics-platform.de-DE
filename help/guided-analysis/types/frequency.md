@@ -5,10 +5,10 @@ feature: Adobe Product Analytics, Guided Analysis
 keywords: Produktanalysen
 exl-id: 27eaa7c7-f1e1-4cf1-9d59-67ac552eb430
 role: User
-source-git-commit: 481e52bbfe06268642522b908f9b7ac66c882433
+source-git-commit: 70c274819eaef46627bf66d05ef8f790f61906a4
 workflow-type: tm+mt
-source-wordcount: '559'
-ht-degree: 6%
+source-wordcount: '629'
+ht-degree: 5%
 
 ---
 
@@ -44,7 +44,7 @@ Die [!UICONTROL Häufigkeit] Die Ansicht bietet die folgenden Diagrammeinstellun
 
 ## Bucket-Einstellungen
 
-Bestimmt, wie das Ereignis in Gruppen kategorisiert wird.
+Bestimmt, wie das Ereignis in Gruppen (Behälter) kategorisiert wird. In der Trendtabellenansicht werden Benutzer basierend auf der Häufigkeit der Verwendung insgesamt und in jedem Intervall zusammengefasst, d. h. 1 Benutzer kann in verschiedenen Intervallen für verschiedene Behälter zählen.
 
 * **[!UICONTROL Auto-Buckets]**: Identifizieren Sie automatisch die optimale Behältergröße basierend auf der Datenverteilung.
 * **[!UICONTROL Benutzerdefinierte Behälter]**: Passen Sie an, wie die Daten in Behälter gruppiert werden.
@@ -60,5 +60,5 @@ Bestimmt, wie das Ereignis in Gruppen kategorisiert wird.
 
 Der gewünschte Datumsbereich für Ihre Analyse. Diese Einstellung umfasst zwei Komponenten:
 
-* **[!UICONTROL Intervall]**: Die Datumsgranularität, nach der Trenddaten angezeigt werden sollen. Diese Einstellung wirkt sich nicht auf Trend-Ansichten wie Häufigkeit aus.
+* **[!UICONTROL Intervall]**: Die Datumsgranularität, mit der Sie Trenddaten anzeigen möchten. Diagramm und Tabelle zeigen standardmäßig aggregierte Daten mit der Option, die Tabelle in eine Trendansicht zu erweitern. In der Trendansicht werden Benutzer basierend auf der Häufigkeit der Verwendung insgesamt und in jedem Intervall zusammengefasst, d. h. 1 Benutzer kann in verschiedenen Intervallen für verschiedene Behälter zählen.
 * **[!UICONTROL Datum]**: Das Start- und Enddatum. Vorgaben für rollierende Datumsbereiche und zuvor gespeicherte benutzerdefinierte Bereiche stehen Ihnen zur Verfügung. Alternativ können Sie die Kalenderauswahl verwenden, um einen festen Datumsbereich auszuwählen.
