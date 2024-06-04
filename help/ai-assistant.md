@@ -6,9 +6,9 @@ solution: Customer Journey Analytics
 exl-id: 7a4f15c4-7fd6-4a6a-9b83-7c1f3b95be16
 hide: true
 hidefromtoc: true
-source-git-commit: c0ed9f09f9fc0c9bb1e4c002986866677aebfb1f
+source-git-commit: 7e2a372d6e1fcbcfc26a63ddc804a592d6ee1725
 workflow-type: tm+mt
-source-wordcount: '506'
+source-wordcount: '569'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,15 @@ Zu den Beispielen für Konzeptfragen gehören:
 * Wofür wird Customer Journey Analytics am besten verwendet?
 * Wie richte ich eine Datenansicht ein?
 
+## Produktwissen {#knowledge}
+
 Das Produktkennungsabfragemodell wird auf Customer Journey Analytics trainiert. Andere Funktionen wie die Datenanalyse werden zu einem späteren Zeitpunkt eingeführt.
+
+| Produktwissen | Beispiele |
+| --- | --- |
+| Zielgerichtetes Lernen | <ul><li>Was ist der Unterschied zwischen Adobe Analytics und Customer Journey Analytics?</li><li>Wie erstelle ich eine berechnete Metrik?</li></ul> |
+| Offene Entdeckung | <ul><li>Wie kann ich ein Workspace-Projekt exportieren?</li><li>Wie finde ich doppelte Workspace-Komponenten?</li></ul> |
+| Fehlerbehebung | <ul><li>Wie lange dauert es, bis Daten in CJA eingehen?</li><li>Wie viele abgeleitete Felder kann ich in einer Customer Journey Analytics-Verbindung haben?</li></ul> |
 
 Fragen, die außerhalb des Anwendungsbereichs von Customer Journey Analytics liegen, wie z. B. Fragen zu anderen Adobe-Produkten wie Adobe Target und der Adobe Creative Cloud Suite, können nicht beantwortet werden.
 
@@ -46,7 +54,10 @@ In dieser ersten Version wird der Zugriff auf die Funktion des AI-Assistenten du
 
 * **Vertraglicher Zugang**: Wenden Sie sich an den Administrator oder Adobe-Kundenbetreuer Ihres Unternehmens, wenn Sie keinen KI-Assistenten verwenden können. Bevor der KI-Assistent von Ihrer Einrichtung verwendet werden kann, muss Ihr Unternehmen bestimmten GenAI-bezogenen gesetzlichen Bestimmungen zustimmen.
 
-* **Berechtigungen**: Die [!UICONTROL Adobe Admin Console] [!UICONTROL Reporting-Tools] Die Berechtigung &quot;AI Assistant: Product Knowledge&quot;bestimmt den Zugriff auf dieses Tool. Diese Berechtigung wird Mitte Mai zum Abschnitt &quot;Reporting-Tools&quot;hinzugefügt. Ein Produktprofiladministrator muss eine [Produktprofil](https://helpx.adobe.com/de/enterprise/using/manage-product-profiles.html) in Admin Console mit dieser Berechtigung zugestimmt haben, und fügen Sie diesem Profil manuell Benutzer hinzu.
+* **Berechtigungen**: In [!UICONTROL Adobe Admin Console], die [!UICONTROL Reporting-Tools] Die Berechtigung &quot;AI Assistant: Product Knowledge&quot;bestimmt den Zugriff auf dieses Tool.
+A [Produktprofiladministrator](https://helpx.adobe.com/de/enterprise/using/manage-product-profiles.html) muss die folgenden Schritte in Admin Console ausführen:
+   1. Navigieren Sie zu [!UICONTROL Admin Console] > [!UICONTROL Produkte und Dienstleistungen] > [!UICONTROL Customer Journey Analytics] > [!UICONTROL Produktprofil] > [!UICONTROL Berechtigungen] > [!UICONTROL Bearbeiten von Reporting-Tools].
+   1. Fügen Sie &quot;AI Assistant: Product Knowledge&quot;hinzu.
 
 ## Zugriff auf den KI-Assistenten in der Customer Journey Analytics-Benutzeroberfläche
 
