@@ -6,7 +6,7 @@ solution: Customer Journey Analytics
 exl-id: 7a4f15c4-7fd6-4a6a-9b83-7c1f3b95be16
 hide: true
 hidefromtoc: true
-source-git-commit: 7e2a372d6e1fcbcfc26a63ddc804a592d6ee1725
+source-git-commit: fb9b0d2c8d2333aba83598ab1e1aea2370636002
 workflow-type: tm+mt
 source-wordcount: '569'
 ht-degree: 0%
@@ -32,6 +32,10 @@ Zu den Beispielen für Konzeptfragen gehören:
 * Wofür wird Customer Journey Analytics am besten verwendet?
 * Wie richte ich eine Datenansicht ein?
 
+Fragen, die außerhalb des Anwendungsbereichs von Customer Journey Analytics liegen, wie z. B. Fragen zu anderen Adobe-Produkten wie Adobe Target und der Adobe Creative Cloud Suite, können nicht beantwortet werden.
+
+Der KI-Assistent für Customer Journey Analytics ist für alle Produktkategorien verfügbar.
+
 ## Produktwissen {#knowledge}
 
 Das Produktkennungsabfragemodell wird auf Customer Journey Analytics trainiert. Andere Funktionen wie die Datenanalyse werden zu einem späteren Zeitpunkt eingeführt.
@@ -41,10 +45,6 @@ Das Produktkennungsabfragemodell wird auf Customer Journey Analytics trainiert. 
 | Zielgerichtetes Lernen | <ul><li>Was ist der Unterschied zwischen Adobe Analytics und Customer Journey Analytics?</li><li>Wie erstelle ich eine berechnete Metrik?</li></ul> |
 | Offene Entdeckung | <ul><li>Wie kann ich ein Workspace-Projekt exportieren?</li><li>Wie finde ich doppelte Workspace-Komponenten?</li></ul> |
 | Fehlerbehebung | <ul><li>Wie lange dauert es, bis Daten in CJA eingehen?</li><li>Wie viele abgeleitete Felder kann ich in einer Customer Journey Analytics-Verbindung haben?</li></ul> |
-
-Fragen, die außerhalb des Anwendungsbereichs von Customer Journey Analytics liegen, wie z. B. Fragen zu anderen Adobe-Produkten wie Adobe Target und der Adobe Creative Cloud Suite, können nicht beantwortet werden.
-
-Der KI-Assistent für Customer Journey Analytics ist für alle Produktkategorien verfügbar.
 
 ## Funktionszugriff
 
