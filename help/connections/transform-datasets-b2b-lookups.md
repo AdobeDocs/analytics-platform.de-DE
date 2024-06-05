@@ -4,10 +4,11 @@ description: Beschreibt, wie Daten in Datensätze spezifischer B2B-Lookup-Schema
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: ffa57c19174bf1618957efe7191c8486c8e3a900
+exl-id: 7729c1b9-b3ed-4662-a446-2088389bbd97
+source-git-commit: 6e50e9341c2eedd6e4882cc3eb943cbcb8dfc332
 workflow-type: tm+mt
-source-wordcount: '323'
-ht-degree: 5%
+source-wordcount: '327'
+ht-degree: 0%
 
 ---
 
@@ -17,10 +18,10 @@ Um personenbasierte Suchen nach B2B-Daten (einschließlich Konten, Chancen, Mark
 
 Diese Umwandlung ist nur für Datensätze mit Daten für B2B-Lookup-Schemas verfügbar, die auf den folgenden Klassen basieren:
 
-* XDM Business Account Person Relation
-* XDM Business Opportunity Person Relation
-* XDM Business Marketing List Members
-* XDM Business Campaign Members
+* [Personenbeziehung zwischen XDM-Geschäftskonto](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/classes/b2b/business-account-person-relation)
+* [XDM Business Opportunity-Personenbeziehung](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/classes/b2b/business-opportunity-person-relation)
+* [XDM Business Marketing List-Mitglieder](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/classes/b2b/business-marketing-list-members)
+* [XDM Business Campaign-Mitglieder](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/classes/b2b/business-campaign-members)
 
 So aktivieren Sie die Transformation für einen solchen Datensatz:
 
