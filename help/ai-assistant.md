@@ -4,9 +4,9 @@ title: KI-Assistent für Adobe Customer Journey Analytics
 role: User, Admin
 solution: Customer Journey Analytics
 exl-id: 7a4f15c4-7fd6-4a6a-9b83-7c1f3b95be16
-source-git-commit: c3fbf86e06e47583165a661683bc7490ecd1b17f
+source-git-commit: 3ed6eabae8607a10920c8917a818f0497b337893
 workflow-type: tm+mt
-source-wordcount: '552'
+source-wordcount: '563'
 ht-degree: 0%
 
 ---
@@ -68,3 +68,5 @@ In dieser ersten Version wird der Zugriff auf die Funktion des AI-Assistenten du
 1. (Optional) Um Quellen anzuzeigen, klicken Sie auf **[!UICONTROL Quellen anzeigen]** und die Dokumentationsquelle bzw. Quellen, die die Antwort erhalten haben, angezeigt werden.
 
 1. (Optional) Sie können auch eine Daumen-Up- oder Daumen-Down-Abstimmung über die Nützlichkeit einer gegebenen Antwort geben.
+
+1. (Optional) Sie können die Antwort auf unangemessene oder schädliche Inhalte kennzeichnen.
