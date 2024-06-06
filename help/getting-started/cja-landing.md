@@ -4,10 +4,10 @@ description: Landingpage von Customer Journey Analytics.
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 7f67c497-386b-4442-a502-6b492f35c6e6
-source-git-commit: 6b5a9050d6c13e3c9d637a3ed992840a46058cee
-workflow-type: ht
-source-wordcount: '688'
-ht-degree: 100%
+source-git-commit: 344dfb2e4e5191fb30ff4dd4ed35e45fb7b6cfd1
+workflow-type: tm+mt
+source-wordcount: '669'
+ht-degree: 86%
 
 ---
 
@@ -22,6 +22,24 @@ Mit Customer Journey Analytics können Sie steuern, wie Sie Ihre Online- und Off
 Werfen Sie einen Blick auf die neuesten Verbesserungen in Customer Journey Analytics und die Dokumentation! Eine umfassende Liste der Funktionen, Verbesserungen und Fehlerbehebungen finden Sie in den detaillierten [Versionshinweisen](../release-notes/latest.md). Besuchen Sie die [Seite zu den Dokumentationsaktualisierungen](../release-notes/doc-changes.md), um über die neuesten Änderungen auf dem Laufenden zu bleiben.
 
 >[!BEGINTABS]
+
+>[!TAB KI-Assistent]
+
+AI Assistant ist eine Dialogerfahrung, die es Fachleuten ermöglicht, Aufgaben schnell auszuführen - unabhängig davon, ob sie Konzepte verstehen, Probleme beheben oder nach Informationen suchen. Sie ermöglicht es auch Nichtexperten, Expertenaufgaben durchzuführen und die allgemeine Qualität der Arbeit zu erhöhen.
+
+[![Bild](assets/learn-more-button.svg)](/help/ai-assistant.md)
+
+>[!TAB B2B-Suchen]
+
+Im Rahmen der Konfiguration einer Verbindung können Sie Datensätze für bestimmte B2B-Lookup-Schemas transformieren, um personenbasierte Suchen nach B2B-Daten besser zu unterstützen.
+
+[![Bild](assets/learn-more-button.svg)](/help/connections/transform-datasets-b2b-lookups.md)
+
+>[!TAB Abgeleitete Felder]
+
+Es stehen neue abgeleitete Feldfunktionen (Mathematik, Nächste oder Vorherige) und zusätzliche Funktionsvorlagen (z. B. Absprünge, Monatsziele, einfache Bot-Erkennung und andere) zur Verfügung.
+
+[![Bild](assets/learn-more-button.svg)](/help/data-views/derived-fields/derived-fields.md)
 
 >[!TAB BI-Erweiterung*]
 
@@ -41,35 +59,17 @@ Audiences that are published from Customer Journey Analytics are now available i
 
 -->
 
-
->[!TAB Neue Dokumentation]
-
-Die neue, nun verfügbare Dokumentation enthält folgende Themen:<ul><li>Upgrade von Adobe Analytics auf Customer Journey Analytics.</li><li>Anwendungsfälle für den Datenexport sowie die erforderlichen Experience Platform- und Customer Journey-Funktionen. </li></ul>Wählen Sie **[!UICONTROL Weitere Informationen]** aus, um mehr über diese und andere Aktualisierungen der Dokumentation zu erfahren.
-
-[![Bild](assets/learn-more-button.svg)](/help/release-notes/doc-changes.md)
-
 >[!TAB Prognose]
 
 Analysis Workspace bietet eine Prognose-Funktion, mit der eine standardmäßige oder berechnete Metrik mit beliebiger unterstützter Zeitgranularität (stündlich, täglich, wöchentlich, monatlich und jährlich) prognostiziert werden kann. Die Prognose-Funktion ist nur für zeitreihenbezogene Daten verfügbar.
 
 [![Bild](assets/learn-more-button.svg)](/help/analysis-workspace/c-forecast/forecasting.md)
 
->[!TAB Geführte Analyse* - Bindungsrate]
+>[!TAB Neue Dokumentation]
 
-Dieser neue Ansichtstyp zeigt den Prozentsatz der Benutzenden an, die nach ihrer anfänglichen Interaktion innerhalb des gewünschten Datumsbereichs zurückkehren. Die horizontale Achse stellt die Anzahl der Tage seit der anfänglichen Interaktion einer Benutzerin oder eines Benutzers dar. Die vertikale Achse stellt den Prozentsatz der Benutzenden dar, die erneut interagieren.
+Die neue, nun verfügbare Dokumentation enthält folgende Themen:<ul><li>Upgrade von Adobe Analytics auf Customer Journey Analytics.</li><li>Anwendungsfälle für den Datenexport sowie die erforderlichen Experience Platform- und Customer Journey-Funktionen. </li></ul>Wählen Sie **[!UICONTROL Weitere Informationen]** aus, um mehr über diese und andere Aktualisierungen der Dokumentation zu erfahren.
 
-[![Bild](assets/learn-more-button.svg)](/help/guided-analysis/types/retention-rates.md)
-
-<span style="color:gray">*_Die geführte Analyse ist Bestandteil von Adobe Product Analytics, einem Add-on von Customer Journey Analytics._</span>
-
-
->[!TAB Geführte Analyse* - Trend-Linien]
-
-Die Ansicht „Nutzung“ zeigt nun Trend-Linienüberlagerungen an, um ein klareres Datenmuster darzustellen. Verfügbare Trend-Linientypen sind: linear, logarithmisch und gleitender Mittelwert.
-
-[![Bild](assets/learn-more-button.svg)](/help/guided-analysis/types/usage.md)
-
-<span style="color:gray">*_Die geführte Analyse ist Bestandteil von Adobe Product Analytics, einem Add-on von Customer Journey Analytics._</span>
+[![Bild](assets/learn-more-button.svg)](/help/release-notes/doc-changes.md)
 
 >[!ENDTABS]
 
