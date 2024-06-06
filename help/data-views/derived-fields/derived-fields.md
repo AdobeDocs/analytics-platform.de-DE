@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Derived Fields
 exl-id: bcd172b2-cd13-421a-92c6-e8c53fa95936
 role: Admin
-source-git-commit: 4396f6046f8a7aa27f04d2327c5b3c0ee967774b
+source-git-commit: 4d3d53ecb44a69bcf3f46ca0c358ef794a437add
 workflow-type: tm+mt
-source-wordcount: '6717'
+source-wordcount: '7147'
 ht-degree: 12%
 
 ---
@@ -435,7 +435,7 @@ Falls Ihre Site die folgenden Beispielereignisse erhält, die [!UICONTROL Referr
 |  | `https://site.com/?cid=em_12345678` |
 | `https://google.com` | `https://site.com/?cid=ps_abc098765` |
 | `https://google.com` | `https://site.com/?cid=em_765544332` |
-| `https://google.com` | |
+| `https://google.com` |  |
 
 {style="table-layout:auto"}
 
@@ -1067,6 +1067,78 @@ Sie müssen denselben Feldtyp in einer Regel zum Zusammenführen von Feldern aus
 
 +++
 
+
+<!-- NEXT OR PREVIOUS -->
+
+### Weiter oder zurück
+
+Nimmt ein Feld als Eingabe und löst den nächsten oder vorherigen Wert für dieses Feld im Rahmen der Sitzung oder Verwendung auf. Dies gilt nur für die Tabellenfelder Besuch und Ereignis .
+
++++ Details
+
+## Spezifikation {#prevornext-io}
+
+| Eingabedatentyp | Eingabe | Einbezogene Operatoren | Limit | Ausgabe |
+|---|---|---|---|---|
+| <ul><li>Zeichenfolge</li><li>Numerisch</li><li>Datum</li></ul> | <ul><li>[!UICONTROL Feld]:</li><ul><li>Regeln</li><li>Standardfelder</li><li>Felder</li></ul><li>[!UICONTROL Methode]:<ul><li>Vorheriger Wert</li><li>Nächster Wert</li></ul></li><li>[!UICONTROL Anwendungsbereich]:<ul><li>Benutzer</li><li>Sitzung</li></ul></li><li>[!UICONTROL Index]:<ul><li>Numerisch</li></ul><li>[!UICONTROL Wiederholungen einschließen]:<ul><li>Boolesch</li></ul></li><li>[!UICONTROL &quot;Keine Werte&quot;einschließen]:<ul><li>Boolesch</li></ul></li></ul> | <p>-/-</p> | <p>3 Funktionen pro abgeleitetem Feld</p> | <p>Neues abgeleitetes Feld</p> |
+
+{style="table-layout:auto"}
+
+## Anwendungsfall {#prevornext-uc1}
+
+Sie möchten verstehen, was die **next** oder **previous** -Wert der Daten ist, die Sie empfangen, wobei Wiederholungswerte berücksichtigt werden.
+
+### Daten {#prevornext-uc1-databefore}
+
+**Beispiel 1: Verarbeitung von Include-Wiederholungen**
+
+| Erfasste Daten | Nächster Wert<br/>Sitzung<br/>Index = 1<br/>Wiederholungen einschließen | Nächster Wert<br/>Sitzung<br/>Index = 1<br/>NICHT Wiederholungen einschließen | Vorheriger Wert<br/>Sitzung<br/>Index = 1<br/>Wiederholungen einschließen | Vorheriger Wert<br/>Sitzung<br/>Index = 1<br/>NICHT Wiederholungen einschließen |
+|---|---|---|---|---|
+| Startseite | Startseite | Suche | *Kein Wert* | *Kein Wert* |
+| Startseite | Suche | Suche | Startseite | *Kein Wert* |
+| Suche | Suche | Produktdetails | Startseite | Startseite |
+| Suche | Produktdetails | Produktdetails | Suche | Startseite |
+| Produktdetails | Suche | Suche | Suche | Suche |
+| Suche | Produktdetails | Produktdetails | Produktdetails | Produktdetails |
+| Produktdetails | Suche | Suche | Suche | Suche |
+| Suche | Suche | *Kein Wert* | Produktdetails | Produktdetails |
+| Suche | *Kein Wert* | *Kein Wert* | Suche | Produktdetails |
+
+{style="table-layout:auto"}
+
+**Beispiel 2: Umgang mit include-Wiederholungen mit leeren Werten in empfangenen Daten**
+
+| Erfasste Daten | Nächster Wert<br/>Sitzung<br/>Index = 1<br/>Wiederholungen einschließen | Nächster Wert<br/>Sitzung<br/>Index = 1<br/>NICHT Wiederholungen einschließen | Vorheriger Wert<br/>Sitzung<br/>Index = 1<br/>Wiederholungen einschließen | Vorheriger Wert<br/>Sitzung<br/>Index = 1<br/>NICHT Wiederholungen einschließen |
+|---|---|---|---|---|
+| Startseite | Startseite | Suche | *Kein Wert* | *Kein Wert* |
+| Startseite | Startseite | Suche | Startseite | *Kein Wert* |
+| Startseite | Suche | Suche | Startseite | *Kein Wert* |
+| Suche | Suche | Produktdetails | Startseite | Startseite |
+|   |   |   |   |   |
+| Suche | Suche | Produktdetails | Suche | Startseite |
+| Suche | Produktdetails | Produktdetails | Suche | Startseite |
+| Produktdetails | *Kein Wert* | *Kein Wert* | Suche | Suche |
+|   |   |   |   |   |
+
+{style="table-layout:auto"}
+
+### Abgeleitetes Feld {#prevnext-uc1-derivedfield}
+
+Sie definieren eine `Next Value` oder `Previous value` abgeleitetes Feld. Sie verwenden die [!UICONTROL NÄCHSTE ODER VORHERIGE] -Funktion, um eine Regel zu definieren, mit der die [!UICONTROL Erfasste Daten] Feld auswählen [!UICONTROL Nächster Wert] oder [!UICONTROL Vorheriger Wert] as [!UICONTROL Methode], [!UICONTROL Sitzung] als Umfang und legen Sie den Wert von [!UICONTROL Index] nach `1`.
+
+![Screenshot der Regel &quot;Felder zusammenführen&quot;](assets/prevnext-next.png)
+
+## Weitere Informationen {#prevnext-moreinfo}
+
+Sie können nur Felder auswählen, die zur Tabelle &quot;Besuch&quot;oder &quot;Ereignis&quot;gehören.
+
+[!UICONTROL Wiederholungen einschließen] bestimmt, wie sich wiederholende Werte für die [!UICONTROL NÄCHSTE ODER VORHERIGE] -Funktion.
+
+- Wiederholungen einschließen sieht aus und die nächsten oder vorherigen Werte. Wenn [!UICONTROL Wiederholungen einschließen] ausgewählt ist, werden alle sequenziellen Wiederholungen der nächsten oder vorherigen Werte aus dem aktuellen Treffer ignoriert.
+
+- Bei Zeilen ohne (leere) Werte für ein ausgewähltes Feld werden die nächsten oder vorherigen Werte nicht als Teil der [!UICONTROL NÄCHSTE ODER VORHERIGE] -Funktionsausgabe.
+
++++
 
 <!-- REGEX REPLACE -->
 
