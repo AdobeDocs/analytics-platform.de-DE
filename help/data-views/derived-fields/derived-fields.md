@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Derived Fields
 exl-id: bcd172b2-cd13-421a-92c6-e8c53fa95936
 role: Admin
-source-git-commit: 4d3d53ecb44a69bcf3f46ca0c358ef794a437add
+source-git-commit: 81554c8fd48d3aa34976347c0c0cc2e52f4db2ad
 workflow-type: tm+mt
-source-wordcount: '7147'
+source-wordcount: '7542'
 ht-degree: 12%
 
 ---
@@ -435,7 +435,7 @@ Falls Ihre Site die folgenden Beispielereignisse erhält, die [!UICONTROL Referr
 |  | `https://site.com/?cid=em_12345678` |
 | `https://google.com` | `https://site.com/?cid=ps_abc098765` |
 | `https://google.com` | `https://site.com/?cid=em_765544332` |
-| `https://google.com` |  |
+| `https://google.com` | |
 
 {style="table-layout:auto"}
 
@@ -1002,6 +1002,85 @@ Sie definieren eine `Product Names` abgeleitetes Feld. Sie verwenden die [!UICON
 
 +++
 
+<!-- MATH -->
+
+### Math
+
+Verwenden Sie grundlegende mathematische Operatoren (hinzufügen, subtrahieren, multiplizieren, teilen und erhöhen Sie die Leistung) für numerische Felder.
+
++++ Details
+
+## Spezifikation {#math-io}
+
+| Eingabedatentyp | Eingabe | Einbezogene Operatoren | Limit | Ausgabe |
+|---|---|---|---|---|
+| <ul><li>Numerisch</li></ul> | <ul><li>Ein oder mehrere numerische Felder</li><li>Ein oder mehrere Operatoren (hinzufügen, subtrahieren, multiplizieren, teilen, erhöhen Sie die Leistung)</li><li>Benutzereingabewert</li></ul> | <ul><li>`+` (hinzufügen)</li><li>`-` (subtract)</li><li>`*` (multiply)</li><li>`/` (divide)</li><li>`^` (Steigerung der Macht)</li></ul> | <ul><li>25 Vorgänge pro abgeleitetem Feld</li><li>5 Math-Funktionen pro abgeleitetem Feld</li></ul> | <p>Neues abgeleitetes Feld</p> |
+
+{style="table-layout:auto"}
+
+## Anwendungsfall {#math-uc}
+
+Aus Inflationsgründen möchten Sie die Umsatzzahlen der erfassten CRM-Daten mit 5% Inflation korrigieren.
+
+### Daten vor {#math-uc-databefore}
+
+| CRM-ID | Jahresumsatz |
+|---|---:|
+| 1234 | 35.070.000 |
+| 4133 | 7.500.000 |
+| 8110 | 10.980 |
+| 2201 | 42.620 |
+
+{style="table-layout:auto"}
+
+### Abgeleitetes Feld {#math-uc-derivedfield}
+
+Sie definieren eine `Corrected Annual Revenue` abgeleitetes Feld. Sie verwenden die [!UICONTROL MATH] -Funktion, um eine Regel zu definieren, die die ursprüngliche jährliche Umsatznummer mit 1,05 multipliziert.
+
+![Screenshot der Mathematischen Regel](assets/math.png)
+
+
+### Daten nach {#math-uc-dataafter}
+
+| CRM-ID | Berichtigte jährliche Einnahmen |
+|---|---:|
+| 1234 | 36.823.500 |
+| 4133 | 7.875.000 |
+| 8110 | 11.529,00 |
+| 2201 | 44.751 |
+
+{style="table-layout:auto"}
+
+## Weitere Informationen {#math-more-info}
+
+So erstellen Sie eine Formel:
+
+1. Geben Sie einfach in das Feld Formel ein und numerische Felder, die Ihrer Eingabe entsprechen, werden in einem Popup-Menü angezeigt. Alternativ können Sie ein numerisches Feld aus den verfügbaren Feldern im linken Bereich ziehen und ablegen.
+   ![Match More Info 1](assets/math-more-info-1.png)
+
+1. Hinzufügen des Operanden (z. B. `*` zu multiplizieren), gefolgt von einem anderen Feld oder einem statischen Wert. Sie können Klammern verwenden, um komplexere Formeln zu definieren.
+
+1. So fügen Sie einen statischen Wert ein (beispielsweise `1.05`), geben Sie den Wert ein und wählen Sie **[!UICONTROL Hinzufügen *x* als statischen Wert]** oder **[!UICONTROL Hinzufügen -*x* als negativen statischen Wert]** aus dem Popup-Menü.
+   ![Match More Info 2](assets/math-more-info-2.png)
+
+1. Ein grünes Häkchen ![Kontrollkästchen](./assets/checkmark.svg)</span> gibt an, ob Ihre Mathematikformel gültig ist. Andernfalls wird eine Warnung angezeigt <span style="color:red">![Warnung](./assets/alert.svg)</span> und die Nachricht <span style="color:#ea3829">[!UICONTROL Ungültiger Formelausdruck].</span>
+   ![Match More Info 3](assets/math-more-info-3.png)
+
+Beim Arbeiten mit statischen Zahlen im [!UICONTROL MATH] Funktion:
+
+- Statische Werte müssen mit einem Feld verknüpft werden. Verwenden Sie beispielsweise die [!UICONTROL MATH] -Funktion mit nur statischen Feldern wird nicht unterstützt.
+- Sie können die Anhebung nicht für den Netzbetreiber verwenden (`ˆ`) auf einen statischen Wert.
+- Wenn Sie mehrere statische Werte in einer Formel verwenden, sollten diese statischen Werte in Klammern gesetzt werden, damit die Formel gültig ist. Zum Beispiel:
+
+   - Diese Formel gibt einen Fehler zurück.
+     ![Match More Info 4](assets/math-more-info-4.png)
+
+   - Diese Formel ist gültig.
+     ![Match More Info 5](assets/math-more-info-5.png)
+
++++
+
+
 <!-- MERGE FIELDS -->
 
 ### Felder zusammenführen
@@ -1544,7 +1623,9 @@ Die folgenden Einschränkungen gelten für die Funktion für abgeleitete Felder 
 | <p>Suchen und Ersetzen</p> | <ul><li>2 Funktionen zum Suchen und Ersetzen für abgeleitetes Feld</li></ul> |
 | <p>Suche</p> | <ul><li>5 Suchfunktionen pro abgeleitetem Feld</li></ul> |
 | <p>Kleinschreibung</p> | <ul><li>2 Funktionen in Kleinbuchstaben pro abgeleitetem Feld</li></ul> |
+| <p>Math</p> | <ul><li>25 Vorgänge pro abgeleitetem Feld</li><li>5 Math-Funktionen pro abgeleitetem Feld</li></ul> |
 | <p>Felder zusammenführen</p> | <ul><li>2 Funktionen zum Zusammenführen von Feldern pro abgeleitetem Feld</li></ul> |
+| <p>Weiter oder zurück</p> | <ul><li>3 Nächste oder Vorherige Funktionen pro abgeleitetem Feld</li></ul> |
 | <p>Regulären Ausdruck ersetzen</p> | <ul><li>1 Regex-Ersetzungsfunktion pro abgeleitetem Feld</li></ul> |
 | <p>Split</p> | <ul><li>5 Aufspaltungsfunktionen pro abgeleitetem Feld</li></ul> |
 | <p>Zuschneiden</p> | <ul><li>1 Trimmfunktion pro abgeleitetem Feld</li></ul> |
