@@ -4,21 +4,15 @@ title: KI-Assistent für Adobe Customer Journey Analytics
 role: User, Admin
 solution: Customer Journey Analytics
 exl-id: 7a4f15c4-7fd6-4a6a-9b83-7c1f3b95be16
-hide: true
-hidefromtoc: true
-source-git-commit: f73e7e9be8593c3bbcad02925ab8b525694a4a15
+source-git-commit: c3fbf86e06e47583165a661683bc7490ecd1b17f
 workflow-type: tm+mt
-source-wordcount: '571'
+source-wordcount: '552'
 ht-degree: 0%
 
 ---
 
 
 # KI-Assistent für Adobe Customer Journey Analytics
-
->[!NOTE]
->
->AI Assistant for Customer Journey Analytics ist derzeit als Beta-Version verfügbar. Die Funktion und ihre Dokumentation können sich ändern.
 
 AI Assistant ist eine Dialogerfahrung, die es Fachleuten ermöglicht, Aufgaben schnell auszuführen - unabhängig davon, ob sie Konzepte verstehen, Probleme beheben oder nach Informationen suchen. Sie ermöglicht es auch Nichtexperten, Expertenaufgaben durchzuführen und die allgemeine Qualität der Arbeit zu erhöhen.
 
@@ -54,8 +48,7 @@ In dieser ersten Version wird der Zugriff auf die Funktion des AI-Assistenten du
 
 * **Vertraglicher Zugang**: Wenden Sie sich an den Administrator oder Adobe-Kundenbetreuer Ihres Unternehmens, wenn Sie keinen KI-Assistenten verwenden können. Bevor der KI-Assistent von Ihrer Einrichtung verwendet werden kann, muss Ihr Unternehmen bestimmten GenAI-bezogenen gesetzlichen Bestimmungen zustimmen.
 
-* **Berechtigungen**: In [!UICONTROL Adobe Admin Console], die [!UICONTROL Reporting-Tools] Die Berechtigung &quot;AI Assistant: Product Knowledge&quot;bestimmt den Zugriff auf dieses Tool.
-A [Produktprofiladministrator](https://helpx.adobe.com/de/enterprise/using/manage-product-profiles.html) muss die folgenden Schritte in Admin Console ausführen:
+* **Berechtigungen**: In [!UICONTROL Adobe Admin Console], die [!UICONTROL Reporting-Tools] Die Berechtigung &quot;AI Assistant: Product Knowledge&quot;bestimmt den Zugriff auf dieses Tool. A [Produktprofiladministrator](https://helpx.adobe.com/de/enterprise/using/manage-product-profiles.html) muss die folgenden Schritte in Admin Console ausführen:
    1. Navigieren Sie zu [!UICONTROL Admin Console] > [!UICONTROL Produkte und Dienstleistungen] > [!UICONTROL Customer Journey Analytics] > [!UICONTROL Produktprofil] > [!UICONTROL Berechtigungen] > [!UICONTROL Bearbeiten von Reporting-Tools].
    1. Fügen Sie &quot;AI Assistant: Product Knowledge&quot;hinzu.
       ![Berechtigung hinzufügen](assets/image.png)
