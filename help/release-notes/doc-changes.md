@@ -4,10 +4,10 @@ description: Listet Inhaltsaktualisierungen für Dokumentation zu Customer Journ
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 83696cb3289ab564ebc08ee3d16e82d9fb92ebda
+source-git-commit: 67a249ab291201926eb50df296e031b616de6e6f
 workflow-type: tm+mt
-source-wordcount: '3718'
-ht-degree: 74%
+source-wordcount: '3732'
+ht-degree: 73%
 
 ---
 
@@ -20,8 +20,9 @@ Die folgenden Aktualisierungen wurden seit der ersten Erstellung der Customer Jo
 | Funktion | Beschreibung |
 | --- | --- |
 | **Juni 2024** | |
-| Datensätze für B2B-Suchen transformieren | Dokumentation zur Unterstützung [personenbasierte Suchen nach B2B-Daten](/help/connections//transform-datasets-b2b-lookups.md) (einschließlich Konten, Möglichkeiten, Marketing-Listen und Kampagnen), ist eine Umwandlung von B2B-Lookup-Datensätzen erforderlich. |
-| Abgeleitete Feldfunktionen und Funktionsvorlagen | Dokumentation zu den zusätzlichen abgeleiteten Feldfunktionen ([Mathematisch](/help/data-views/derived-fields/derived-fields.md#math), [Nächste oder Vorherige](/help/data-views/derived-fields/derived-fields.md#next-or-previous)) und [Funktionsvorlagen](/help/data-views/derived-fields/derived-fields.md#function-templates). |
+| KI-Assistent | hinzugefügt [Dokumentation](../ai-assistant.md) auf der KI-Assistenzkraft für Customer Journey Analytics. |
+| Datensätze für B2B-Suchen transformieren | Eine Dokumentation zur Unterstützung von [personenbasierte Suchen nach B2B-Daten](/help/connections//transform-datasets-b2b-lookups.md) (einschließlich Konten, Möglichkeiten, Marketing-Listen und Kampagnen), ist eine Umwandlung von B2B-Lookup-Datensätzen erforderlich. |
+| Abgeleitete Feldfunktionen und Funktionsvorlagen | Eine Dokumentation zu den zusätzlichen abgeleiteten Feldfunktionen ([Mathematisch](/help/data-views/derived-fields/derived-fields.md#math), [Nächste oder Vorherige](/help/data-views/derived-fields/derived-fields.md#next-or-previous)) und [Funktionsvorlagen](/help/data-views/derived-fields/derived-fields.md#function-templates). |
 | **Mai 2024** | |
 | Target-Integration | hinzugefügt [Abschnitt zur Adobe-Integration](/help/integrations/cja4t.md) Informationen zur Integration von Target in Customer Journey Analytics. |
 | Erforderliche Informationen beim Exportieren von Customer Journey Analytics-Berichten in Google Cloud Platform unter Verwendung von Einschränkungen aufgrund von Organisationsrichtlinien | Die Organisations-ID von Google Cloud Platform, die sich im Besitz der Adobe befindet, wurde zur [Konfigurieren von Cloud-Exportspeicherorten](/help/components/exports/cloud-export-locations.md) Dokumentation zum Exportieren von Customer Journey Analytics-Berichten in Google Cloud Platform. <p>Diese Informationen sind nur für Organisationen erforderlich, die [Organisationsrichtlinieneinschränkungen](https://cloud.google.com/storage/docs/org-policy-constraints) in Google Cloud Platform verwenden.</p> |
