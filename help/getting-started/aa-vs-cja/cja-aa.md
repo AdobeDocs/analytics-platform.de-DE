@@ -8,7 +8,7 @@ role: User
 source-git-commit: 3acf29b703d52145d8679d60ed664cf794b5ee30
 workflow-type: tm+mt
 source-wordcount: '2255'
-ht-degree: 86%
+ht-degree: 87%
 
 ---
 
@@ -56,7 +56,7 @@ In den folgenden Tabellen ist aufgeführt, welche Adobe Analytics-Funktionen in 
 
 | Funktion | Hinweise |
 | --- | --- |
-| Analytics for Target (A4T) | Die [Integration zwischen Adobe Customer Journey Analytics und Target](https://experienceleague.adobe.com/en/docs/target/using/integrate/cja/target-reporting-in-cja) bietet leistungsstarke Analyse- und Zeitersparniswerkzeuge für Ihr Optimierungsprogramm. |
+| Analytics for Target (A4T) | Die [Integration zwischen Adobe Customer Journey Analytics und Target](https://experienceleague.adobe.com/de/docs/target/using/integrate/cja/target-reporting-in-cja) bietet Ihrem Optimierungsprogramm leistungsstarke Tools für Analysen und Zeitersparnisse. |
 | Zielgruppenveröffentlichung | Wird unterstützt, sofern diese Funktion mit den Adobe-Produkten Customer Data Platform oder Journey Optimizer lizenziert wurde. [Zielgruppenveröffentlichung](/help/components/audiences/audiences-overview.md) sendet Zielgruppen an das Echtzeit-Kundenprofil in Experience Platform. |
 | Classifications | Jetzt „Lookup-Datensätze“ genannt. In Analytics verwendete Klassifizierungen können mit dem Quell-Connector für Analytics-Klassifizierungen in Experience Platform und Customer Journey Analytics importiert werden. Suchdatensätze können auch direkt in Experience Platform hochgeladen und in Customer Journey Analytics verfügbar gemacht werden. |
 | Classification Rule Builder | Unterstützt mit Verwendung von [Teilzeichenfolgen](/help/data-views/component-settings/substring.md) in Customer Journey Analytics. Verwendet zum Zeitpunkt der Berichtserstellung Zeichenfolgenmanipulationen anstelle von Lookup-Datensätzen. |
