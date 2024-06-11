@@ -5,9 +5,9 @@ title: Verwalten von Cloud-Exportspeicherorten und -konten
 feature: Components
 exl-id: 8e82fe6f-99df-4360-8693-99692aac002b
 role: User, Admin
-source-git-commit: cdf99e31790f089950de8063445b6264158131dd
+source-git-commit: 6e36885cfba60c808b9f069159670db6834fe41f
 workflow-type: tm+mt
-source-wordcount: '668'
+source-wordcount: '710'
 ht-degree: 1%
 
 ---
@@ -54,6 +54,10 @@ Um benötigte Informationen zu finden, können Sie entweder die Liste der Stando
 
 ## Bearbeitungsorte
 
+Ein Speicherort kann nur von dem Benutzer, der ihn erstellt hat, oder von einem Systemadministrator bearbeitet werden.
+
+So bearbeiten Sie einen Speicherort:
+
 1. Wählen Sie unter Customer Journey Analytics die Option [!UICONTROL **Komponenten**] > [!UICONTROL **Exporte**].
 
 1. Wählen Sie die [!UICONTROL **Standorte**] Registerkarte.
@@ -95,6 +99,10 @@ So löschen Sie einen Speicherort:
 1. Auswählen [!UICONTROL **Löschen**] erneut zu bestätigen.
 
 ## Konten bearbeiten
+
+Ein Konto kann nur von dem Benutzer, der es erstellt hat, oder von einem Systemadministrator bearbeitet werden.
+
+So bearbeiten Sie ein Konto:
 
 1. Wählen Sie unter Customer Journey Analytics die Option [!UICONTROL **Komponenten**] > [!UICONTROL **Exporte**].
 
