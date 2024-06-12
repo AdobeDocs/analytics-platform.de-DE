@@ -4,28 +4,28 @@ description: Erfahren Sie, wie sich in Adobe Experience Platform definierte Date
 exl-id: 1de5070f-a91c-4fe6-addb-a89d59a280b7
 feature: Data Views, Data Governance
 role: Admin
-source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
-workflow-type: ht
-source-wordcount: '493'
-ht-degree: 100%
+source-git-commit: 950c121e6c889e202f048d4a33e8fecde3cd9efe
+workflow-type: tm+mt
+source-wordcount: '551'
+ht-degree: 67%
 
 ---
 
 # Beschriftungen und Richtlinien
 
-Wenn Sie einen Datensatz in Experience Platform erstellen, können Sie [Datennutzungskennzeichnungen](https://experienceleague.adobe.com/docs/experience-platform/data-governance/labels/reference.html?lang=de) für einige oder alle Elemente im Datensatz erstellen. Sie können diese Beschriftungen und Richtlinien in Customer Journey Analytics anzeigen.
+Wenn Sie einen Datensatz in Experience Platform erstellen, können Sie [Datennutzungsbezeichnungen](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/labels/reference) für einige oder alle Elemente im Datensatz. Sie können diese Beschriftungen und Richtlinien in Customer Journey Analytics anzeigen.
 
 Die folgenden Beschriftungen sind für Customer Journey Analytics von besonderem Interesse:
 
 * Die Beschriftung `C8` – **[!UICONTROL Keine Messung]**. Diese Beschriftung bedeutet, dass Daten nicht für Analysen auf den Websites oder in Anwendungen Ihres Unternehmens verwendet werden können.
 
-* Die Beschriftung `C12` – **[!UICONTROL Kein allgemeiner Datenexport]**. Auf diese Weise gekennzeichnete Schemafelder können nicht aus CJA exportiert oder heruntergeladen werden (über Reporting, Export, API usw.)
+* Die `C12` label - **[!UICONTROL Kein allgemeiner Datenexport]**. Auf diese Weise gekennzeichnete Schemafelder können nicht aus CJA exportiert oder heruntergeladen werden (über Reporting, Export, API usw.)
 
 >[!NOTE]
 >
 >Datennutzungskennzeichnungen werden nicht automatisch in zugeordnete Datensätze übertragen. Sie können jedoch manuell hinzugefügt werden.
 
-Die Beschriftung an sich bedeutet nicht, dass diese Datennutzungskennzeichnungen erzwungen werden. Dafür werden Richtlinien verwendet. Sie erstellen Ihre Richtlinien mithilfe der [Experience Platform-Benutzeroberfläche](https://experienceleague.adobe.com/docs/experience-platform/data-governance/policies/user-guide.html?lang=de) oder über die [Richtlinien-Service-API](https://experienceleague.adobe.com/docs/experience-platform/data-governance/api/overview.html?lang=de) in Experience Platform.
+Die Beschriftung an sich bedeutet nicht, dass diese Datennutzungskennzeichnungen erzwungen werden. Dafür werden Richtlinien verwendet. Sie können Ihre Richtlinien mit dem [Experience Platform-Benutzeroberfläche](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/policies/user-guide) oder über die [Policy Service-API](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/api/overview) in Experience Platform.
 
 In Customer Journey Analytics werden zwei von Adobe definierte Richtlinien angezeigt, die sich auf Reporting sowie Download/Freigabe auswirken:
 
@@ -34,7 +34,7 @@ In Customer Journey Analytics werden zwei von Adobe definierte Richtlinien angez
 
 ## Anzeigen von Datenbeschriftungen in Datenansichten von Customer Journey Analytics
 
-Datenbeschriftungen, die in Experience Platform erstellt wurden, werden an drei Stellen in der Benutzeroberfläche der Datenansichten angezeigt:
+Datenbeschriftungen, die Sie oder andere Benutzer unter Experience Platform erstellt haben, werden an drei Stellen in der Benutzeroberfläche &quot;Datenansichten&quot;angezeigt:
 
 | Standort | Beschreibung |
 | --- | --- |
@@ -54,28 +54,37 @@ Klicken **[!UICONTROL Anwenden]**, um zu sehen, an welche Komponenten Beschriftu
 
 ## Filtern nach Data Governance-Richtlinien in Datenansichten
 
-Sie können überprüfen, ob eine Richtlinie aktiviert ist, die die Verwendung bestimmter Datenansichtselemente von Customer Journey Analytics für Analyse- oder Exportzwecke blockiert.
+Sie können überprüfen, ob eine Richtlinie (z. B. eine mit dem Namen &quot;Analytics erzwingen&quot;) aktiviert ist und ob diese Richtlinie die Verwendung bestimmter Customer Journey Analytics-Datenansichtselemente für Analysen blockiert.
 
 Klicken Sie erneut auf das [!UICONTROL Filtersymbol] in der linken Leiste und klicken Sie unter **[!UICONTROL Data Governance]** auf **[!UICONTROL Richtlinien]**:
 
 ![Eingeschlossene Komponenten nach Liste gefiltert, mit ausgewählter Option „Analytics erzwingen“](assets/filter-policies.png)
 
-Klicken Sie auf **[!UICONTROL Anwenden]**, um zu sehen, welche Richtlinien aktiviert sind.
+Klicks **[!UICONTROL Anwenden]** , um zu sehen, welche Richtlinien aktiviert sind.
 
 ## Wie sich aktivierte Richtlinien auf Datenansichten auswirken
 
 Wenn die Richtlinie **[!UICONTROL Analyse erzwingen]** aktiviert ist, können die Schemakomponenten mit bestimmten Datenbeschriftungen (z. B. C8) nicht zu Datenansichten hinzugefügt werden.
 
-Diese Komponenten sind in der Liste [!UICONTROL Schemafelder] in der linken Leiste ausgegraut:
+Diese Komponenten sind in der linken Leiste grau dargestellt [!UICONTROL Schemafelder] list:
 
 ![Ausgegraute Komponenten und die Richtlinienmeldung, dass Richtlinien auf dieses Feld angewendet wurden, um die Verwendung der Daten zu beschränken](assets/component-greyed.png)
 
 Sie können auch keine Datensicht speichern, die gesperrte Felder enthält.
 
+Gehen Sie bei der Anwendung von Zugriffs- und Data Governance-Beschriftungen auf Felder oder Feldergruppen in Experience Platform vorsichtig vor. Für diese Felder und Feldergruppen sind in Ihrer Datenansicht bereits Komponenten definiert. Möglicherweise wird dieses Dialogfeld angezeigt.
+
+![Verletzung](assets/violation.png)
+
+Sie müssen zunächst den Verstoß beheben (z. B. die Komponenten aus der Datenansicht entfernen).
+
+
 >[!MORELIKETHIS]
+>
 >[Herunterladen sensibler Daten](/help/analysis-workspace/export/download-send.md)
 
 >[!MORELIKETHIS]
->[Was sind eingeschränkte Beschriftungen in Report Builder?](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/restricted-labels.html?lang=de)
+>
+>[Was sind eingeschränkte Beschriftungen in Report Builder?](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-reportbuilder/restricted-labels)
 
 
