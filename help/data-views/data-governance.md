@@ -4,10 +4,10 @@ description: Erfahren Sie, wie sich in Adobe Experience Platform definierte Date
 exl-id: 1de5070f-a91c-4fe6-addb-a89d59a280b7
 feature: Data Views, Data Governance
 role: Admin
-source-git-commit: 950c121e6c889e202f048d4a33e8fecde3cd9efe
+source-git-commit: 6526ca2b7caaf64acf29d97c859c3e813d003d2d
 workflow-type: tm+mt
-source-wordcount: '551'
-ht-degree: 67%
+source-wordcount: '583'
+ht-degree: 45%
 
 ---
 
@@ -27,10 +27,10 @@ Die folgenden Beschriftungen sind für Customer Journey Analytics von besonderem
 
 Die Beschriftung an sich bedeutet nicht, dass diese Datennutzungskennzeichnungen erzwungen werden. Dafür werden Richtlinien verwendet. Sie können Ihre Richtlinien mit dem [Experience Platform-Benutzeroberfläche](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/policies/user-guide) oder über die [Policy Service-API](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/api/overview) in Experience Platform.
 
-In Customer Journey Analytics werden zwei von Adobe definierte Richtlinien angezeigt, die sich auf Reporting sowie Download/Freigabe auswirken:
+Unter Experience Platform sind zwei Adobe definierte Richtlinien verfügbar, die sich auf Customer Journey Analytics auswirken und Berichte und Datenexporte beeinflussen können:
 
-* **[!UICONTROL Analytics erzwingen]**-Richtlinie
-* **[!UICONTROL Download erzwingen]**-Richtlinie
+* **[!UICONTROL Nutzungsanalyse und benutzerbasierte Messung beschränken]** -Richtlinie mithilfe der `C8` Beschriftung und
+* **[!UICONTROL Datenexport beschränken]** -Richtlinie mithilfe der `C12` Beschriftung.
 
 ## Anzeigen von Datenbeschriftungen in Datenansichten von Customer Journey Analytics
 
@@ -40,13 +40,13 @@ Datenbeschriftungen, die Sie oder andere Benutzer unter Experience Platform erst
 | --- | --- |
 | Informationsschaltfläche in einem Schemafeld | Durch Klicken auf diese Schaltfläche wird angegeben, welche [!UICONTROL Datennutzungsbezeichnungen] derzeit auf ein Feld angewendet werden:<p>![](assets/data-label-left.png) |
 | Rechte Leiste unter [Komponenteneinstellungen](/help/data-views/component-settings/overview.md) | Alle [!UICONTROL Datennutzungsbezeichnungen] sind hier aufgeführt:<p>![](assets/data-label-right.png) |
-| Hinzufügen von Datenbeschriftungen als Spalte | Sie können [!UICONTROL Datennutzungsbezeichnungen] als Spalte zu den [!UICONTROL Enthaltene Komponenten] Spalten in Datenansichten hinzufügen. Klicken Sie einfach auf das Symbol für die Spaltenauswahl und wählen Sie **[!UICONTROL Datennutzungsbezeichnungen]**:<p>![](assets/data-label-column.png) |
+| Hinzufügen von Datenbeschriftungen als Spalte | Sie können [!UICONTROL Datennutzungsbezeichnungen] als Spalte zu den [!UICONTROL Enthaltene Komponenten] Spalten in Datenansichten hinzufügen. Wählen Sie einfach das Symbol für die Spaltenauswahl aus und wählen Sie **[!UICONTROL Datennutzungsbezeichnungen]**:<p>![](assets/data-label-column.png) |
 
 {style="table-layout:auto"}
 
 ## Filtern nach Data Governance-Beschriftungen in Datenansichten
 
-Klicken Sie im Editor für Datenansichten auf das Symbol [!UICONTROL Filter] in der linken Spur und filtern Sie die Komponenten der Datenansichten nach **[!UICONTROL Data Governance]** und dem Typ der **[!UICONTROL Beschriftung]**:
+Wählen Sie im Datenansichtseditor die [!UICONTROL filter] Symbol im linken Pfad und Filtern Sie die Datenansichtskomponenten nach **[!UICONTROL Data Governance]** und Art der **[!UICONTROL Titel]**:
 
 ![](assets/filter-labels.png)
 
@@ -54,17 +54,17 @@ Klicken **[!UICONTROL Anwenden]**, um zu sehen, an welche Komponenten Beschriftu
 
 ## Filtern nach Data Governance-Richtlinien in Datenansichten
 
-Sie können überprüfen, ob eine Richtlinie (z. B. eine mit dem Namen &quot;Analytics erzwingen&quot;) aktiviert ist und ob diese Richtlinie die Verwendung bestimmter Customer Journey Analytics-Datenansichtselemente für Analysen blockiert.
+Sie können überprüfen, ob eine Richtlinie (z. B. eine von Ihnen erstellte Richtlinie mit dem Namen **[!UICONTROL Analytics erzwingen]**) aktiviert ist. Und ob diese Richtlinie die Verwendung bestimmter Customer Journey Analytics-Datenansichtselemente für Analysen oder Datenexporte blockiert.
 
-Klicken Sie erneut auf das [!UICONTROL Filtersymbol] in der linken Leiste und klicken Sie unter **[!UICONTROL Data Governance]** auf **[!UICONTROL Richtlinien]**:
+Wählen Sie erneut die [!UICONTROL filter] Symbol in der linken Leiste und unter **[!UICONTROL Data Governance]** auswählen **[!UICONTROL Richtlinien]**:
 
-![Eingeschlossene Komponenten nach Liste gefiltert, mit ausgewählter Option „Analytics erzwingen“](assets/filter-policies.png)
+![Filtern von eingeschlossenen Komponenten nach Liste mit ausgewählten Optionen Nutzungsanalyse und benutzerbasierte Messung beschränken](assets/filter-policies.png)
 
 Klicks **[!UICONTROL Anwenden]** , um zu sehen, welche Richtlinien aktiviert sind.
 
 ## Wie sich aktivierte Richtlinien auf Datenansichten auswirken
 
-Wenn die Richtlinie **[!UICONTROL Analyse erzwingen]** aktiviert ist, können die Schemakomponenten mit bestimmten Datenbeschriftungen (z. B. C8) nicht zu Datenansichten hinzugefügt werden.
+Wenn eine oder mehrere Richtlinien mit C8- oder C12-Beschriftungen aktiviert sind, können Schemakomponenten, auf die bestimmte Datenbezeichnungen angewendet wurden, nicht zu Datenansichten hinzugefügt werden.
 
 Diese Komponenten sind in der linken Leiste grau dargestellt [!UICONTROL Schemafelder] list:
 
@@ -72,7 +72,7 @@ Diese Komponenten sind in der linken Leiste grau dargestellt [!UICONTROL Schemaf
 
 Sie können auch keine Datensicht speichern, die gesperrte Felder enthält.
 
-Gehen Sie bei der Anwendung von Zugriffs- und Data Governance-Beschriftungen auf Felder oder Feldergruppen in Experience Platform vorsichtig vor. Für diese Felder und Feldergruppen sind in Ihrer Datenansicht bereits Komponenten definiert. Möglicherweise wird dieses Dialogfeld angezeigt.
+Seien Sie vorsichtig, wenn Sie versuchen, Zugriffs- und Data Governance-Beschriftungen (über Richtlinien) auf Felder oder Feldergruppen in Experience Platform anzuwenden, für die Sie in Ihrer Datenansicht bereits Komponenten definiert haben. Möglicherweise wird dieses Dialogfeld angezeigt.
 
 ![Verletzung](assets/violation.png)
 
