@@ -5,9 +5,9 @@ feature: Adobe Product Analytics, Guided Analysis
 keywords: Produktanalysen
 exl-id: c35a0ee0-e6b7-47b5-a5bc-308cde1585de
 role: User
-source-git-commit: f4a235d90ad44dbb192b74a03accc7ad4a39e986
+source-git-commit: 6b8d9abf7d807a1e19aa86386eb2dae9bb18f472
 workflow-type: tm+mt
-source-wordcount: '1235'
+source-wordcount: '1234'
 ht-degree: 2%
 
 ---
@@ -16,8 +16,8 @@ ht-degree: 2%
 
 Die **[!UICONTROL Treuerate]** -Ansicht misst, wie Benutzer Ihr Produkt im Laufe der Zeit weiterhin verwenden. Dies hilft Ihnen, Ihre Produktmarktanpassung zu verstehen. Die Analyse zählt Benutzer anhand von zwei wichtigen Ereignissen:
 
-* Start-Ereignis: Das erste Mal, dass ein Benutzer innerhalb des Datumsbereichs mit dem Startereignis interagiert
-* Rückkehrereignis: Das letzte Mal, dass ein Benutzer innerhalb des analysierten Datumsbereichs mit dem Rückgabeereignis interagiert hat
+* Startereignis: Das Ereignis, mit dem Benutzer für die Aufnahme in Ihre Analyse qualifiziert werden.
+* Rückkehrereignis: Die Ereignisse, mit denen ein Benutzer interagieren muss, um in Ihrer Analyse als wiederkehrender Benutzer zu zählen.
 
 In dieser Ansicht stellt die x-Achse des Diagramms die Zeit seit dem ersten Startereignis eines Benutzers und die y-Achse den Prozentsatz der Benutzer dar, die mit den Rückkehrereignissen interagieren. Sie können die Beibehaltung und Abwanderung über mehrere Zeiträume hinweg anzeigen und die angezeigten Zeiträume können über die Abfrageeinstellungen angepasst werden. Unter dem Diagramm bietet eine Tabelle aggregierte Daten mit der Möglichkeit, einzelne Kohorten anzuzeigen. Dabei handelt es sich um eine Gruppe von Personen, die am selben Datum das Startereignis durchgeführt haben.
 
