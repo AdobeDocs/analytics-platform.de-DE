@@ -1,17 +1,17 @@
 ---
-title: Handbuch für Customer Journey Analytics
+title: Handbuch zu Customer Journey Analytics
 description: Landingpage von Customer Journey Analytics.
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 7f67c497-386b-4442-a502-6b492f35c6e6
 source-git-commit: 67a249ab291201926eb50df296e031b616de6e6f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '677'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
-# Handbuch für Customer Journey Analytics
+# Handbuch zu Customer Journey Analytics
 
 Diese technische Dokumentation bietet Hilfe zur Selbsthilfe für Customer Journey Analytics. Mit Customer Journey Analytics können Sie Ihre Kundendaten von beliebigen Kanälen (sowohl online als auch offline) in Adobe Experience Platform importieren. Anschließend haben Sie die Möglichkeit, diese Daten so zu analysieren wie heute Ihre vorhandenen digitalen Daten mit Analysis Workspace.
 
@@ -25,19 +25,19 @@ Werfen Sie einen Blick auf die neuesten Verbesserungen in Customer Journey Analy
 
 >[!TAB KI-Assistent]
 
-AI Assistant ist eine Dialogerfahrung, die es Fachleuten ermöglicht, Aufgaben schnell auszuführen - unabhängig davon, ob sie Konzepte verstehen, Probleme beheben oder nach Informationen suchen. Sie ermöglicht es auch Nichtexperten, Expertenaufgaben durchzuführen und die allgemeine Qualität der Arbeit zu erhöhen.
+Der KI-Assistent ist eine Dialogerfahrung, die es Fachleuten ermöglicht, Aufgaben schnell auszuführen – unabhängig davon, ob sie Konzepte verstehen, Probleme beheben oder nach Informationen suchen wollen. Er ermöglicht es auch Nichtexpertinnen und -experten, Expertenaufgaben durchzuführen, und erhöht die allgemeine Qualität der Arbeit.
 
 [![Bild](assets/learn-more-button.svg)](/help/ai-assistant.md)
 
 >[!TAB B2B-Suchen]
 
-Im Rahmen der Konfiguration einer Verbindung können Sie Datensätze für bestimmte B2B-Lookup-Schemas transformieren, um personenbasierte Suchen nach B2B-Daten besser zu unterstützen.
+Im Rahmen der Konfiguration einer Verbindung können Sie Datensätze für bestimmte B2B-Suchschemata transformieren, um personenbasierte Suchen nach B2B-Daten besser zu unterstützen.
 
 [![Bild](assets/learn-more-button.svg)](/help/connections/transform-datasets-b2b-lookups.md)
 
 >[!TAB Abgeleitete Felder]
 
-Neue abgeleitete Feldfunktionen (Math, Next oder Previous) und zusätzliche Funktionsvorlagen (wie Absprünge, benutzerfreundlicher Datensatzname, Weihnachtszeit, monatliche Ziele, einfache Bot-Erkennung und andere) sind jetzt verfügbar.
+Neue abgeleitete Feldfunktionen (Mathematik, Weiter oder Zurück) und zusätzliche Funktionsvorlagen (wie Bounces, benutzerfreundlicher Datensatzname, Weihnachtszeit, monatliche Ziele, einfache Bot-Erkennung und andere) sind jetzt verfügbar.
 
 [![Bild](assets/learn-more-button.svg)](/help/data-views/derived-fields/derived-fields.md)
 
@@ -67,7 +67,7 @@ Analysis Workspace bietet eine Prognose-Funktion, mit der eine standardmäßige 
 
 >[!TAB Neue Dokumentation]
 
-Neue Dokumentationsabschnitte sind jetzt verfügbar unter:<ul><li>Upgrade von Adobe Analytics auf Customer Journey Analytics.</li><li>Anwendungsfälle für den Datenexport sowie die erforderlichen Experience Platform- und Customer Journey-Funktionen. </li></ul>Wählen Sie **[!UICONTROL Weitere Informationen]** aus, um mehr über diese und andere Aktualisierungen der Dokumentation zu erfahren.
+Neue verfügbare Dokumentationsabschnitte enthalten folgende Themen:<ul><li>Upgrade von Adobe Analytics auf Customer Journey Analytics.</li><li>Anwendungsfälle für den Datenexport sowie die erforderlichen Experience Platform- und Customer Journey-Funktionen. </li></ul>Wählen Sie **[!UICONTROL Weitere Informationen]** aus, um mehr über diese und andere Aktualisierungen der Dokumentation zu erfahren.
 
 [![Bild](assets/learn-more-button.svg)](/help/release-notes/doc-changes.md)
 
@@ -146,7 +146,7 @@ Lernen Sie die Unterschiede zwischen Customer Journey Analytics und Adobe Analyt
 
 <table style="table-layout:fixed"><tr style="border: 0;">
 <td><strong>Customer Journey Analytics</strong><br/>
-<a href="https://experienceleague.adobe.com/de/docs/customer-journey-analytics-learn/tutorials/overview" target="_blank">Tutorials</a> - <a href="https://helpx.adobe.com/de/legal/product-descriptions/customer-journey-analytics.html" target="_blank">Customer Journey Analytics-Produktbeschreibung</a> - <a href="https://helpx.adobe.com/de/legal/product-descriptions/adobe-analytics-addon-customer-journey-analytics.html" target="_blank">Produktbeschreibung für Adobe Analytics (Customer Journey Analytics Add-on)</a> - <a href="https://developer.adobe.com/cja-apis/docs/" target="_blank">Customer Journey Analytics-APIs</a> - <a href="/help/ai-assistant.md">KI-Assistent</a>
+<a href="https://experienceleague.adobe.com/de/docs/customer-journey-analytics-learn/tutorials/overview" target="_blank">Tutorials</a> – <a href="https://helpx.adobe.com/de/legal/product-descriptions/customer-journey-analytics.html" target="_blank">Customer Journey Analytics – Produktbeschreibung</a> – <a href="https://helpx.adobe.com/de/legal/product-descriptions/adobe-analytics-addon-customer-journey-analytics.html" target="_blank">Adobe Analytics (Customer Journey Analytics-Add-on) – Produktbeschreibung</a> – <a href="https://developer.adobe.com/cja-apis/docs/" target="_blank">Customer Journey Analytics-APIs</a> – <a href="/help/ai-assistant.md">KI-Assistent</a>
 </td>
 <td><strong>Datenaufnahme</strong><br/><a href="/help/data-ingestion/data-ingestion.md">Übersicht</a> - <a href="/help/data-ingestion/analytics.md">Analytics</a> - <a href="/help/data-ingestion/aepwebsdk.md">Web-SDK</a> - <a href="/help/data-ingestion/aepmobilesdk.md">Mobile SDK</a> - <a href="/help/data-ingestion/batch.md">Batch</a> - <a href="/help/data-ingestion/streaming.md">Streaming</a> - <a href="/help/data-ingestion/sources.md">Quellen</a> - <a href="/help/data-ingestion/serverapi.md">Server-API</a>
 </td>

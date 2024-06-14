@@ -5,23 +5,23 @@ role: Data Engineer, Data Architect, Admin
 solution: Customer Journey Analytics
 exl-id: dd273c71-fb5b-459f-b593-1aa5f3e897d2
 feature: Troubleshooting
-keywords: Query Service;Query Service;SQL-Syntax
+keywords: abfrage-Service;Abfrage-Service;SQL-Syntax
 source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '839'
-ht-degree: 64%
+ht-degree: 100%
 
 ---
 
 # Vergleich von Adobe Analytics-Daten mit Customer Journey Analytics-Daten
 
-Wenn Ihr Unternehmen Customer Journey Analytics einsetzt, kann es bei den Daten zwischen Adobe Analytics und Customer Journey Analytics zu Datenunterschieden kommen. Dies ist normal und kann aus verschiedenen Gründen auftreten. Mit Customer Journey Analytics können Sie einige Einschränkungen Ihrer Daten in AA verbessern. Es können jedoch unerwartete und unbeabsichtigte Diskrepanzen auftreten. Dieser Artikel soll Ihnen dabei helfen, diese Unterschiede zu diagnostizieren und zu beheben, sodass Sie und Ihr Team Customer Journey Analytics verwenden können, ohne dass Bedenken hinsichtlich der Datenintegrität bestehen.
+Wenn Ihr Unternehmen Customer Journey Analytics einsetzt, kann es bei den Daten zwischen Adobe Analytics und Customer Journey Analytics zu Unterschieden kommen. Dies ist normal und kann aus verschiedenen Gründen auftreten. Customer Journey Analytics soll es Ihnen ermöglichen, einige Einschränkungen bei Daten in Adobe Analytics zu verbessern. Es können jedoch unerwartete und unbeabsichtigte Diskrepanzen auftreten. Dieser Artikel soll Ihnen dabei helfen, diese Unterschiede zu diagnostizieren und zu beheben, damit Sie und Ihr Team Customer Journey Analytics ohne Beeinträchtigung der Datenintegrität verwenden können.
 
-Nehmen wir an, Sie haben Adobe Analytics-Daten über die [Analytics-Quell-Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=de)und dann eine Customer Journey Analytics-Verbindung mithilfe dieses Datensatzes erstellt.
+Nehmen wir an, Sie haben Adobe Analytics-Daten über den [Analytics-Quell-Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=de) in AEP aufgenommen und dann mit diesem Datensatz eine Customer Journey Analytics-Verbindung erstellt.
 
-![Der Datenfluss von Adobe Analytics über den Data Connector zu Adobe Experience Platform und zu Customer Journey Analytics mithilfe von CJA-Verbindungen.](assets/compare.png)
+![Der Datenfluss von Adobe Analytics über den Daten-Connector zu Adobe Experience Platform und zu Customer Journey Analytics mithilfe von CJA-Verbindungen.](assets/compare.png)
 
-Als Nächstes haben Sie eine Datenansicht erstellt und anschließend über diese Daten auf der Customer Journey Analytics berichtet. Es wurden Abweichungen bei den Berichtsergebnissen in Adobe Analytics festgestellt.
+Als Nächstes haben Sie eine Datenansicht erstellt und anschließend ein Reporting zu diesen Daten in Customer Journey Analytics durchgeführt. Dabei haben Sie Abweichungen bei den Berichtsergebnissen in Adobe Analytics festgestellt.
 
 Im Folgenden finden Sie einige Schritte zum Vergleich Ihrer ursprünglichen Adobe Analytics-Daten mit den Adobe Analytics-Daten, die sich jetzt in Customer Journey Analytics befinden.
 
@@ -41,7 +41,7 @@ Die Metrik [Vorfälle](https://experienceleague.adobe.com/docs/analytics/compone
 
 1. Speichern Sie dieses Projekt, damit Sie es im Vergleich verwenden können.
 
-## Schritt 2: Ergebnisse vergleichen mit [!UICONTROL Datensätze insgesamt nach Zeitstempeln] in Customer Journey Analytics
+## Schritt 2: Ergebnisse in Customer Journey Analytics mit den [!UICONTROL Datensätzen insgesamt nach Zeitstempeln] vergleichen
 
 Vergleichen Sie nun die [!UICONTROL Vorfälle] in Analytics mit der Gesamtzahl der Datensätze nach Zeitstempeln in Customer Journey Analytics.
 
@@ -49,9 +49,9 @@ Die Gesamtzahl der Datensätze nach Zeitstempeln sollten mit der der Vorfälle �
 
 >[!NOTE]
 >
->Dies funktioniert nur für normale Mid-Werte-Datensätze, nicht für zugeordnete Datensätze (über [Stitching](/help/stitching/overview.md)). Bitte beachten Sie, dass die Berücksichtigung der Personen-ID, die in Customer Journey Analytics verwendet wird, für die Durchführung des Vergleichs von entscheidender Bedeutung ist. Dies ist in Adobe Analytics möglicherweise nicht immer einfach zu replizieren, insbesondere wenn Stitching aktiviert ist.
+>Dies funktioniert nur für normale Mittelwert-Datensätze, nicht für zugeordnete Datensätze (über [Stitching](/help/stitching/overview.md)). Beachten Sie, dass die Berücksichtigung der in Customer Journey Analytics verwendeten Personen-ID für die Durchführung des Vergleichs von entscheidender Bedeutung ist. Dies kann möglicherweise nicht immer einfach in Adobe Analytics repliziert werden, insbesondere wenn Stitching aktiviert ist.
 
-1. Führen Sie in [Abfrage-Services](https://experienceleague.adobe.com/docs/experience-platform/query/best-practices/adobe-analytics.html?lang=de) von Adobe Experience Platform die folgende Abfrage zu [!UICONTROL Datensätzen insgesamt nach Zeitstempeln] aus:
+1. Führen Sie in den [Abfrage-Services](https://experienceleague.adobe.com/docs/experience-platform/query/best-practices/adobe-analytics.html?lang=de) von Adobe Experience Platform die folgende Abfrage zu [!UICONTROL Datensätzen insgesamt nach Zeitstempeln] aus:
 
    ```sql
    SELECT
@@ -66,7 +66,7 @@ Die Gesamtzahl der Datensätze nach Zeitstempeln sollten mit der der Vorfälle �
    ORDER BY Day; 
    ```
 
-1. Stellen Sie in den [Analytics-Daten-Feeds](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference.html?lang=de) anhand der Rohdaten fest, ob einige Zeilen möglicherweise vom Analytics-Quell-Connector herausgefiltert wurden.
+1. Stellen Sie in den [Analytics-Daten-Feeds](https://experienceleague.adobe.com/de/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference) anhand der Rohdaten fest, ob einige Zeilen möglicherweise vom Analytics-Quell-Connector herausgefiltert wurden.
 
    Der [Analytics-Quell-Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=de) kann bei der Umwandlung in das XDM-Schema Zeilen filtern. Es kann mehrere Gründe dafür geben, dass die gesamte Zeile nicht für eine Umwandlung geeignet ist. Wenn eines der folgenden Analytics-Felder diese Werte aufweist, wird die gesamte Zeile herausgefiltert.
 
@@ -79,15 +79,15 @@ Die Gesamtzahl der Datensätze nach Zeitstempeln sollten mit der der Vorfälle �
    | Hit_source | 0, 3, 5, 7, 8, 9, 10 |
    | Page_event | 53, 63 |
 
-   Weitere Informationen zu „hit\_source“ finden Sie unter [Datenspaltenreferenz](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference.html?lang=de). Weitere Informationen zu „page\_event“ finden Sie unter [Seitenereignissuche](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-page-event.html).
+   Weitere Informationen zu „hit\_source“ finden Sie unter [Datenspaltenreferenz](https://experienceleague.adobe.com/de/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference). Weitere Informationen zu „page\_event“ finden Sie unter [Seitenereignissuche](https://experienceleague.adobe.com/de/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-page-event).
 
 1. Wenn der Connector Zeilen gefiltert hat, ziehen Sie diese Zeilen von der Metrik [!UICONTROL Vorfälle] ab. Die resultierende Zahl sollte mit der Anzahl der Ereignisse in den Adobe Experience Platform-Datensätzen übereinstimmen.
 
-## Gründe für das Filtern oder Überspringen von Datensätzen während der Aufnahme aus Adobe Experience Platform
+## Warum Einträge während der Aufnahme aus Adobe Experience Platform möglicherweise gefiltert oder übersprungen werden
 
-Customer Journey Analytics [Verbindungen](/help/connections/create-connection.md) ermöglichen es Ihnen, mehrere Datensätze zusammenzuführen und miteinander zu verbinden, basierend auf einer gemeinsamen Personen-ID über die Datensätze hinweg. Im Backend wird Deduplizierung angewendet: ein vollständiger äußerer Join oder eine Vereinigung für Ereignis-Datensätze basierend auf Zeitstempeln und dann ein innerer Join in Profil- und Lookup-Datensatz basierend auf der Personen-ID.
+[Verbindungen](/help/connections/create-connection.md) in Customer Journey Analytics ermöglichen es Ihnen, mehrere Datensätze basierend auf einer gemeinsamen Personen-ID über die Datensätze hinweg zusammenzuführen und miteinander zu verbinden. Im Backend wird die Deduplizierung angewendet: ein vollständiger äußerer Join oder eine Vereinigung für Ereignis-Datensätze basierend auf Zeitstempeln und dann ein innerer Join in Profil- und Lookup-Datensatz basierend auf der Personen-ID.
 
-Im Folgenden finden Sie einige Gründe, warum Datensätze bei der Aufnahme von Daten aus Adobe Experience Platform möglicherweise übersprungen werden.
+Im Folgenden finden Sie einige Gründe, warum Einträge bei der Aufnahme von Daten aus Adobe Experience Platform übersprungen werden können.
 
 * **Fehlende Zeitstempel** – Wenn Zeitstempel in Ereignis-Datensätzen fehlen, werden diese Datensätze bei der Aufnahme vollständig ignoriert oder übersprungen.
 

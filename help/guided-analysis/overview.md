@@ -6,9 +6,9 @@ exl-id: 1ac8157f-87e8-4d98-a2ca-f6beb68d9d6b
 feature: Guided Analysis
 role: User
 source-git-commit: a55224d91dbcf7323ccd481b4a7469d5b80f12c4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1397'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -26,7 +26,7 @@ Die folgenden Ansichten geführter Analysen sind verfügbar:
 
 | Analysetyp | Ansichtstyp | Beschreibung |
 | --- | --- | --- |
-| [!UICONTROL Funktionsmatrix] | [Interaktion](types/engagement.md) | Machen Sie sich mit der Breite und Tiefe der Interaktion mit Funktionen vertraut. |
+| [!UICONTROL Funktionsmatrix] | [Interaktion](types/engagement.md) | Erfahren Sie mehr über Umfang und Tiefe der Funktionsinteraktion. |
 | [!UICONTROL Trichter] | [Reibung](types/friction.md) | Vergleichen Sie die Konversionsraten zwischen den Schritten. |
 | [!UICONTROL Trichter] | [Konversions-Trends](types/conversion-trends.md) | Verfolgen Sie ie dVeränderungen der Konversionsraten im Laufe der Zeit. |
 | [!UICONTROL Auswirkungen] | [Version](types/release.md) | Vergleichen Sie die Leistung in gleichen Zeiträumen vor und nach der Veröffentlichung. |
