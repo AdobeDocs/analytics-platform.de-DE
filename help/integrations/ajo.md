@@ -4,8 +4,8 @@ description: Binden Sie die von Adobe Journey Optimizer generierten Daten ein un
 exl-id: 9333ada2-b4d6-419e-9ee1-5c96f06a3bfd
 feature: Experience Platform Integration
 role: Admin
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
-workflow-type: ht
+source-git-commit: 5d89d6c3dae4964bc4085110d7baa51199e27044
+workflow-type: tm+mt
 source-wordcount: '862'
 ht-degree: 100%
 
@@ -55,7 +55,7 @@ Sie können die folgenden Dimensionen in einer Datenansicht erstellen, um eine u
 | --- | --- | --- |
 | Name der Journey | `_experience.customerJourneyManagement.`<br>`entities.journey.journeyName` | Komponententyp: Dimension |
 | Name und Version der Journey | `_experience.customerJourneyManagement.`<br>`entities.journey.journeyNameAndVersion` | Komponententyp: Dimension |
-| Journey-Knotenname | `_experience.customerJourneyManagement.`<br>`entities.journey.journeyName` | Komponententyp: Dimension |
+| Journey-Knotenname | `_experience.customerJourneyManagement.`<br>`entities.journey.journeyNodeName` | Komponententyp: Dimension |
 | Journey-Knotentyp | `_experience.customerJourneyManagement.`<br>`entities.journey.journeyNodeType` | Komponententyp: Dimension |
 | Kampagnenname | `_experience.customerJourneyManagement.`<br>`entities.campaign.name` | Komponententyp: Dimension |
 | Kanal | `_experience.customerJourneyManagement.`<br>`entities.channelDetails.channel._id` | Komponententyp: Dimension |
@@ -85,11 +85,11 @@ Sie können die folgenden Metriken in einer Datenansicht erstellen, um eine unge
 | Sendungen | Die Anzahl der Nachrichten, die von E-Mail-Anbietern akzeptiert wurden. | `_experience.customerJourneyManagement.`<br>`messageDeliveryfeedback.feedbackStatus` | Komponententyp: Metrik<br>Ausschlusswerte einschließen: Gleich `sent` |
 | Spam-Beschwerden | Anzahl der Beschwerden wegen Spam. | `_experience.customerJourneyManagement.`<br>`messageInteraction.interactionType` | Komponententyp: Metrik<br>Ausschlusswerte einschließen: Gleich `spam_complaint` |
 | Abonnementkündigungen | Anzahl der Abonnementkündigungen. | `_experience.customerJourneyManagement.`<br>`messageInteraction.interactionType` | Komponententyp: Metrik<br>Ausschlusswerte einschließen: Gleich `unsubscribe` |
-| Edge-Sendungen | Die Häufigkeit, mit der das Edge-Netzwerk eine Nachricht entweder an das Web- oder Mobile-SDK sendet | Verwenden des Schema-Zeichenfolgenelements `_experience.decisioning.propositionEventType.send` |
-| Eingehende Anzeigen | Die Häufigkeit, mit der den Benutzenden eine Web- oder In-App-Nachricht angezeigt wird | Verwenden des Schema-Zeichenfolgenelements `_experience.decisioning.propositionEventType.display` |
-| Eingehende Klicks | Die Anzahl der Klicks auf Web- oder In-App-Nachrichten | Verwenden des Schema-Zeichenfolgenelements `_experience.decisioning.propositionEventType.interact` |
-| In-App-Trigger | Die Häufigkeit, mit der die Decisioning Engine die Nachricht angezeigt hat. Das Mobile SDK kann die Entscheidung überschreiben, wodurch die Anzahl der tatsächlichen Anzeigen reduziert wird. | Verwenden des Schema-Zeichenfolgenelements `_experience.decisioning.propositionEventType.trigger` |
-| In-App-Abweisungen | Die Häufigkeit, mit der eine In-App-Nachricht vom SDK aus der Benutzeroberfläche entfernt wird | Verwenden des Schema-Zeichenfolgenelements `_experience.decisioning.propositionEventType.dismiss` |
+| Edge-Sendungen | Die Häufigkeit, mit der das Edge-Netzwerk eine Nachricht entweder an das Web- oder Mobile-SDK sendet | Verwenden des Schema-Zeichenfolgenelements `_experience.decisioning.propositionEventType.send` | |
+| Eingehende Anzeigen | Die Häufigkeit, mit der den Benutzenden eine Web- oder In-App-Nachricht angezeigt wird | Verwenden des Schema-Zeichenfolgenelements `_experience.decisioning.propositionEventType.display` | |
+| Eingehende Klicks | Die Anzahl der Klicks auf Web- oder In-App-Nachrichten | Verwenden des Schema-Zeichenfolgenelements `_experience.decisioning.propositionEventType.interact` | |
+| In-App-Trigger | Die Häufigkeit, mit der die Decisioning Engine die Nachricht angezeigt hat. Das Mobile SDK kann die Entscheidung überschreiben, wodurch die Anzahl der tatsächlichen Anzeigen reduziert wird. | Verwenden des Schema-Zeichenfolgenelements `_experience.decisioning.propositionEventType.trigger` | |
+| In-App-Abweisungen | Die Häufigkeit, mit der eine In-App-Nachricht vom SDK aus der Benutzeroberfläche entfernt wird | Verwenden des Schema-Zeichenfolgenelements `_experience.decisioning.propositionEventType.dismiss` | |
 
 {style="table-layout:auto"}
 
