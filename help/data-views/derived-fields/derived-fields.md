@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Derived Fields
 exl-id: bcd172b2-cd13-421a-92c6-e8c53fa95936
 role: Admin
-source-git-commit: 67a249ab291201926eb50df296e031b616de6e6f
+source-git-commit: 6a77107680b4882a64b01bf1606761d4f6d5a3d1
 workflow-type: tm+mt
-source-wordcount: '7542'
-ht-degree: 12%
+source-wordcount: '7843'
+ht-degree: 13%
 
 ---
 
@@ -441,7 +441,7 @@ Falls Ihre Site die folgenden Beispielereignisse erhält, die [!UICONTROL Referr
 
 ### Abgeleitetes Feld {#casewhen-uc1-derivedfield}
 
-Sie definieren eine neue `Marketing Channel` abgeleitetes Feld. Sie verwenden die [!UICONTROL WENN] Funktionen zum Definieren von Regeln, die Werte für die basierend auf vorhandenen Werten für `Page URL` und `Referring URL` -Feld.
+Sie definieren eine `Marketing Channel` abgeleitetes Feld. Sie verwenden die [!UICONTROL WENN] Funktionen zum Definieren von Regeln, die Werte für die basierend auf vorhandenen Werten für `Page URL` und `Referring URL` -Feld.
 
 Beachten Sie die Verwendung der Funktion . [!UICONTROL URL PARSE] zum Definieren von Regeln zum Abrufen der Werte für `Page Url` und `Referring Url` vor dem [!UICONTROL WENN] -Regeln angewendet werden.
 
@@ -814,7 +814,7 @@ Der gewünschte Bericht sollte wie folgt aussehen:
 
 ### Abgeleitetes Feld {#concatenate-derivedfield}
 
-Sie definieren eine neue [!UICONTROL Origin - Ziel] abgeleitetes Feld. Sie verwenden die [!UICONTROL CONCATENATE] -Funktion, um eine Regel zum Verketten der [!UICONTROL Original] und [!UICONTROL Ziel] -Felder, die `-` [!UICONTROL Trennzeichen].
+Sie definieren eine `Origin - Destination` abgeleitetes Feld. Sie verwenden die [!UICONTROL CONCATENATE] -Funktion, um eine Regel zum Verketten der [!UICONTROL Original] und [!UICONTROL Ziel] -Felder, die `-` [!UICONTROL Trennzeichen].
 
 ![Screenshot der Verkettungsregel](assets/concatenate.png)
 
@@ -827,6 +827,90 @@ Sie definieren eine neue [!UICONTROL Origin - Ziel] abgeleitetes Feld. Sie verwe
 | SLC-SEA |
 | SLC-SJO |
 | SLC-MCO |
+
+{style="table-layout:auto"}
+
++++
+
+
+<!-- DEDUPLICATE -->
+
+### Deduplizieren
+
+Verhindert die mehrfache Zählung eines Werts.
+
++++ Details
+
+## Spezifikationen {#deduplicate-io}
+
+| Eingabedatentyp | Eingabe | Einbezogene Operatoren | Einschränkungen | Ausgabe |
+|---|---|---|---|---|
+| <ul><li>Zeichenfolge</li><li>Numerisch</li></ul> | <ul><li>[!UICONTROL Wert]:<ul><li>Regeln</li><li>Standardfelder</li><li>Felder</li><li>Zeichenfolge</li></ul></li><li>[!UICONTROL Anwendungsbereich]:<ul><li>Benutzer</li><li>Sitzung</li></ul></li><li>[!UICONTROL Deduplizierungs-ID]:<ul><li>Regeln</li><li>Standardfelder</li><li>Felder</li><li>Zeichenfolge</li></ul><li>[!UICONTROL Wert zu beibehalten]:<ul><li>Erste Instanz beibehalten</li><li>Letzte Instanz beibehalten</li></ul></li></ul> | <p>-/-</p> | <p>5 Funktionen pro abgeleitetem Feld</p> | <p>Neues abgeleitetes Feld</p> |
+
+{style="table-layout:auto"}
+
+
+## Anwendungsfall 1 {#deduplicate-uc1}
+
+Sie möchten verhindern, dass doppelte Umsätze gezählt werden, wenn ein Benutzer die Buchungsbestätigungsseite neu lädt. Sie verwenden die Buchungsbestätigungs-ID am Identifikator, um den Umsatz nicht erneut zu zählen, wenn Sie ihn bei demselben Ereignis erhalten.
+
+### Daten vor {#deduplicate-uc1-databefore}
+
+| Buchungsbestätigungs-ID | Umsatz |
+|----|---:|
+| ABC123456789 | 359 |
+| ABC123456789 | 359 |
+| ABC123456789 | 359 |
+
+{style="table-layout:auto"}
+
+### Abgeleitetes Feld {#deduplicate-uc1-derivedfield}
+
+Sie definieren eine `Booking Confirmation` abgeleitetes Feld. Sie verwenden die [!UICONTROL DEDUPLIKAT] -Funktion, um eine Regel zum Deaktivieren der [!UICONTROL Wert] [!DNL Booking] für [!UICONTROL Anwendungsbereich] [!DNL Person] using [!UICONTROL Deduplizierungs-ID] [!UICONTROL Buchungsbestätigungs-ID]. Wählen Sie [!UICONTROL Erste Instanz beibehalten] as [!UICONTROL Wert zu beibehalten].
+
+![Screenshot der Verkettungsregel](assets/deduplicate-1.png)
+
+### Daten nach {#deduplicate-uc1-dataafter}
+
+| Buchungsbestätigungs-ID | Umsatz |
+|----|---:|
+| ABC123456789 | 359 |
+| ABC123456789 | 0 |
+| ABC123456789 | 0 |
+
+{style="table-layout:auto"}
+
+## Anwendungsfall 2 {#deduplicate-uc2}
+
+Sie verwenden Ereignisse als Proxy für Kampagnen-Clickthroughs mit externen Marketing-Kampagnen. Neuladungen und Umleitungen verursachen eine überhöhte Ereignismetrik. Sie möchten die Dimension des Trackingcodes deduplizieren, sodass nur die erste erfasst wird, und die Ereignisüberzählung minimieren.
+
+### Daten vor {#deduplicate-uc2-databefore}
+
+| Besucher-ID | Marketing-Kanal | Ereignisse |
+|----|---|---:|
+| ABC123 | Paid Search | 1 |
+| ABC123 | Paid Search | 1 |
+| ABC123 | Paid Search | 1 |
+| DEF 123 | E-Mail | 1 |
+| DEF 123 | E-Mail | 1 |
+| JKL 123 | natürliche Suche | 1 |
+| JKL 123 | natürliche Suche | 1 |
+
+{style="table-layout:auto"}
+
+### Abgeleitetes Feld {#deduplicate-uc2-derivedfield}
+
+Sie definieren eine neue `Tracking Code (deduplicated)` abgeleitetes Feld. Sie verwenden die [!UICONTROL DEDUPLIKAT] -Funktion, um eine Regel zum Deaktivieren der [!UICONTROL Trackingcode] mit [!UICONTROL Deduplizierungsbereich] von [!UICONTROL Sitzung] und [!UICONTROL Erste Instanz beibehalten] als [!UICONTROL Wert zu beibehalten].
+
+![Screenshot der Verkettungsregel](assets/deduplicate-2.png)
+
+### Daten nach {#deduplicate-uc2-dataafter}
+
+| Besucher-ID | Marketing-Kanal | Ereignisse |
+|----|---|---:|
+| ABC123 | Paid Search | 1 |
+| DEF 123 | E-Mail | 1 |
+| JKL 123 | natürliche Suche | 1 |
 
 {style="table-layout:auto"}
 
@@ -1620,6 +1704,7 @@ Die folgenden Einschränkungen gelten für die Funktion für abgeleitete Felder 
 | <p>Fall wenn</p> | <ul><li>5 Fall Wenn Funktionen eines abgeleiteten Felds</li><li>200 [Operatoren](#operators) pro abgeleitetem Feld</li></ul> |
 | <p>Klassifizieren</p> | <ul><li>5 Klassifizieren von Funktionen pro abgeleitetem Feld</li><li>200 [Operatoren](#operators) pro abgeleitetem Feld</li></ul> |
 | <p>Verketten</p> | <ul><li>2 Funktionen pro abgeleitetem Feld verketten</li></ul> |
+| <p>Deduplizieren</p> | <ul><li>5 Deduplizieren von Funktionen pro abgeleitetem Feld</li></ul> |
 | <p>Suchen und Ersetzen</p> | <ul><li>2 Funktionen zum Suchen und Ersetzen für abgeleitetes Feld</li></ul> |
 | <p>Suche</p> | <ul><li>5 Suchfunktionen pro abgeleitetem Feld</li></ul> |
 | <p>Kleinschreibung</p> | <ul><li>2 Funktionen in Kleinbuchstaben pro abgeleitetem Feld</li></ul> |
