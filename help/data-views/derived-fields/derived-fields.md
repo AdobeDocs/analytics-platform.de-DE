@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Derived Fields
 exl-id: bcd172b2-cd13-421a-92c6-e8c53fa95936
 role: Admin
-source-git-commit: 6a77107680b4882a64b01bf1606761d4f6d5a3d1
+source-git-commit: 6f99a732688f59e3950fc9b4336ad5b0434f24a7
 workflow-type: tm+mt
-source-wordcount: '7843'
-ht-degree: 13%
+source-wordcount: '8377'
+ht-degree: 12%
 
 ---
 
@@ -593,7 +593,7 @@ Sie definieren eine `Trip Duration (bucketed)` abgeleitetes Feld. Sie erstellen 
 | [!DNL long trip] |
 
 
-## Weitere Informationen
+## Weitere Informationen {#casewhen-more-info}
 
 Customer Journey Analytics verwendet eine verschachtelte Containerstruktur, die nach dem Modell von Adobe Experience Platform modelliert wurde [XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=de) (Experience-Datenmodell). Siehe [Container](../create-dataview.md#containers) und [Filter-Container](../../components/filters/filters-overview.md#filter-containers) für weitere Hintergrundinformationen. Dieses Containermodell, auch wenn es von Natur aus flexibel ist, stellt bei der Verwendung des Regel-Builders einige Einschränkungen auf.
 
@@ -841,6 +841,8 @@ Verhindert die mehrfache Zählung eines Werts.
 
 +++ Details
 
+{{release-limited-testing}}
+
 ## Spezifikationen {#deduplicate-io}
 
 | Eingabedatentyp | Eingabe | Einbezogene Operatoren | Einschränkungen | Ausgabe |
@@ -1022,7 +1024,7 @@ Sie definieren eine `Activity Name` abgeleitetes Feld. Sie verwenden die [!UICON
 
 ![Screenshot der Regel &quot;Kleinbuchstaben&quot;](assets/lookup.png)
 
-## Weitere Informationen
+## Weitere Informationen {#lookup-more-info}
 
 Sie können schnell eine [!UICONTROL Suche] -Funktion im Regel-Builder verwenden, die bereits eine oder mehrere andere Funktionen enthält.
 
@@ -1161,6 +1163,8 @@ Beim Arbeiten mit statischen Zahlen im [!UICONTROL MATH] Funktion:
 
    - Diese Formel ist gültig.
      ![Match More Info 5](assets/math-more-info-5.png)
+
+Verwenden Sie die Math-Funktion für trefferbasierte Berechnungen. Verwenden Sie die [Zusammenfassung](#summarize) -Funktion für ereignisbasierte, sitzungs- oder personenbezogene Berechnungen.
 
 +++
 
@@ -1350,7 +1354,7 @@ Sie erstellen eine `Page Identifier` abgeleitetes Feld. Sie verwenden die [!UICO
 | customer-journey-analytics.html |
 | adobe-experience-platform.html |
 
-## Weitere Informationen
+## Weitere Informationen {#regex-replace-more-info}
 
 Customer Journey Analytics verwendet eine Untergruppe der Perl-Regex-Syntax. Die folgenden Ausdrücke werden unterstützt:
 
@@ -1492,6 +1496,75 @@ Sie erstellen eine `Second Response` abgeleitetes Feld, um den letzten Wert aus 
 
 +++
 
+<!-- SUMMARIZE -->
+
+### Zusammenfassen
+
+Wendet Aggregatfunktionen auf Metriken oder Dimensionen auf Ereignis-, Sitzungs- und Benutzerebene an.
+
++++ Details
+
+{{release-limited-testing}}
+
+## Spezifikation {#summarize-io}
+
+| Eingabedatentyp | Eingabe | Einbezogene Operatoren | Limit | Ausgabe |
+|---|---|---|---|---|
+| <ul><li>Zeichenfolge</li><li>Numerisch</li><li>Datum</li></ul> | <ul><li>Wert<ul><li>Regeln</li><li>Standardfelder</li><li>Felder</li></ul></li><li>Zusammenfassen von Methoden</li><li>Anwendungsbereich<ul><li>Ereignis</li><li>Sitzung</li><li>Benutzer</li></ul></li></ul> | <ul><li>Numerisch<ul><li>MAX - gibt den höchsten Wert aus einem Wertesatz zurück</li><li>MIN - gibt den kleinsten Wert aus einem Satz von Werten zurück</li><li>MEDIAN - gibt Median für einen Satz von Werten zurück</li><li>MEAN - gibt den Durchschnitt für einen Satz von Werten zurück</li><li>SUM - gibt die Summe für einen Satz von Werten zurück</li><li>COUNT - gibt die Anzahl der empfangenen Werte zurück</li><li>DISTINCT - gibt Satz unterschiedlicher Werte zurück</li></ul></li><li>Zeichenfolgen<ul><li>DISTINCT - gibt Satz unterschiedlicher Werte zurück</li><li>COUNT DISTINCT - gibt die Anzahl unterschiedlicher Werte zurück</li><li>MOST COMMON - gibt den am häufigsten empfangenen Zeichenfolgenwert zurück</li><li>LEAST COMMON - gibt den am häufigsten empfangenen Zeichenfolgenwert zurück</li><li>FIRST - Der erste empfangene Wert. Gilt nur für die Sitzungs- und Ereignistabellen</li><li>LAST - Der letzte erhaltene Wert. Gilt nur für die Sitzungs- und Ereignistabellen</li></ul></li><li>Daten <ul><li>DISTINCT - gibt Satz unterschiedlicher Werte zurück</li><li>COUNT DISTINCT - gibt die Anzahl unterschiedlicher Werte zurück</li><li>MOST COMMON - gibt den am häufigsten empfangenen Zeichenfolgenwert zurück</li><li>LEAST COMMON - gibt den am häufigsten empfangenen Zeichenfolgenwert zurück</li><li>FIRST - Der erste empfangene Wert. Gilt nur für die Sitzungs- und Ereignistabellen</li><li>LAST - Der letzte erhaltene Wert. Gilt nur für die Sitzungs- und Ereignistabellen</li><li>EARLIEST - Der früheste empfangene Wert (bestimmt durch Uhrzeit); nur für die Sitzungs- und Ereignistabellen anwendbar</li><li>NEUEST - Der zuletzt empfangene Wert (bestimmt durch Uhrzeit). Gilt nur für die Sitzungs- und Ereignistabellen</li></ul></li></ul> | 3 Funktion pro abgeleitetem Feld | Neues abgeleitetes Feld |
+
+{style="table-layout:auto"}
+
+## Anwendungsfall {#summarize-uc}
+
+Sie möchten &quot;Zu Warenkorbumsatz hinzufügen&quot;in drei verschiedene Kategorien unterteilen: &quot;Klein&quot;, &quot;Mittel&quot;und &quot;Groß&quot;. Auf diese Weise können Sie die Eigenschaften von hochwertigen Kunden analysieren und identifizieren.
+
+### Daten vor {#summarize-uc-databefore}
+
+Annahmen:
+
+- &quot;Zu Warenkorbumsatz hinzufügen&quot;wird als numerisches Feld erfasst.
+
+Szenarien:
+
+- CustomerABC123 fügt seinem Warenkorb für ProductABC 35 USD hinzu und fügt ProductDEF anschließend separat zu seinem Warenkorb für 75 USD hinzu.
+- CustomerDEF456 fügt 50 USD zu seinem Warenkorb für ProductGHI hinzu und fügt ProductJKL anschließend separat zu seinem Warenkorb für 275 USD hinzu.
+- CustomerGHI789 fügt seinem Warenkorb für ProductMNO 500 USD hinzu.
+
+Logik:
+
+- Wenn der Gesamtumsatz zum Warenkorb für einen Besucher weniger als 150 USD beträgt, setzen Sie auf &quot;Klein&quot;.
+- Wenn der Gesamtumsatz zum Warenkorb für einen Besucher größer als 150 USD, aber weniger als 500 USD ist, setzen Sie auf &quot;Mittel&quot;.
+- Wenn der Gesamtumsatz zum Warenkorb für einen Besucher größer als oder gleich 500 USD ist, setzen Sie auf &quot;Groß&quot;.
+
+Ergebnisse:
+
+- Gesamtumsatz zum Warenkorb um 110 USD für CustomerABC123.
+- Gesamtumsatz zum Warenkorb um 325 USD für CustomerDEF456.
+- Gesamtumsatz zum Warenkorb um 500 USD für CustomerGHI789.
+
+### Abgeleitetes Feld {#summarize-uc-derivedfield}
+
+Sie erstellen eine `Add To Cart Revenue Size` abgeleitetes Feld. Sie verwenden die [!UICONTROL ZUSAMMENFASSEN] und [!UICONTROL Summe] [!UICONTROL Zusammenfassungsmethode] mit [!UICONTROL Anwendungsbereich] auf [!UICONTROL Person] um die Werte der [!UICONTROL cart_add] -Feld. Dann verwenden Sie eine Sekunde [!UICONTROL WENN] Regel, um das Ergebnis in die Größe der Baumkategorien aufzuteilen.
+
+![Screenshot der Zusammenfassungsregel 1](assets/summarize.png)
+
+
+
+### Daten nach {#summarize-uc-dataafter}
+
+| Zu Warenkorbumsatzgröße hinzufügen | Besucher |
+|---|--:|
+| Klein | 1 |
+| Mittel | 1 |
+| Groß | 1 |
+
+{style="table-layout:auto"}
+
+## Weitere Informationen {#summarize-more-info}
+
+Verwenden Sie die Zusammenfassungsfunktion für ereignisbasierte, sitzungs- oder personenbezogene Berechnungen. Verwenden Sie die [Mathematisch](#math) -Funktion für auf Trefferebene basierende Berechnungen.
+
++++
 
 <!-- TRIM -->
 
@@ -1507,7 +1580,6 @@ Beschneidet Leerzeichen, Sonderzeichen oder die Anzahl der Zeichen vom Anfang od
 |---|---|---|---|---|
 | <ul><li>Zeichenfolge</li></ul> | <ul><li>[!UICONTROL Feld]<ul><li>Regeln</li><li>Standardfelder</li><li>Felder</li></ul></li><li>Leerzeichen trimmen</li><li>Sonderzeichen trimmen<ul><li>Eingabe von Sonderzeichen</li></ul></li><li>Von links beschneiden<ul><li>Von <ul><li>Beginn der Zeichenfolge</li><li>Position<ul><li>Position #</li></ul></li><li>Zeichenfolge<ul><li>Zeichenfolgenwert</li><li>Index</li><li>Flag zum Einschließen von Zeichenfolge</li></ul></li></ul></li><li>Hierzu<ul><li>Ende der Zeichenfolge</li><li>Position<ul><li>Position #</li></ul></li><li>Zeichenfolge<ul><li>Zeichenfolgenwert</li><li>Index</li><li>Flag zum Einschließen von Zeichenfolge</li></ul></li><li>Länge</li></ul></li></ul></li><li>Von rechts zuschneiden<ul><li>Von <ul><li>Ende der Zeichenfolge</li><li>Position<ul><li>Position #</li></ul></li><li>Zeichenfolge<ul><li>Zeichenfolgenwert</li><li>Index</li><li>Flag zum Einschließen von Zeichenfolge</li></ul></li></ul></li><li>Hierzu<ul><li>Beginn der Zeichenfolge</li><li>Position<ul><li>Position #</li></ul></li><li>Zeichenfolge<ul><li>Zeichenfolgenwert</li><li>Index</li><li>Flag zum Einschließen von Zeichenfolge</li></ul></li><li>Länge</li></ul></li></ul></li></ul> | <p>-/-</p> | <p>1 Funktion pro abgeleitetem Feld</p> | <p>Neues abgeleitetes Feld</p> |
 
-{style="table-layout:auto"}
 
 ## Anwendungsfall 1 {#trim-uc1}
 
@@ -1713,6 +1785,7 @@ Die folgenden Einschränkungen gelten für die Funktion für abgeleitete Felder 
 | <p>Weiter oder zurück</p> | <ul><li>3 Nächste oder Vorherige Funktionen pro abgeleitetem Feld</li></ul> |
 | <p>Regulären Ausdruck ersetzen</p> | <ul><li>1 Regex-Ersetzungsfunktion pro abgeleitetem Feld</li></ul> |
 | <p>Split</p> | <ul><li>5 Aufspaltungsfunktionen pro abgeleitetem Feld</li></ul> |
+| <p>Zusammenfassen</p> | <ul><li>3 Zusammenfassen der Funktionen pro abgeleitetem Feld</li></ul> |
 | <p>Zuschneiden</p> | <ul><li>1 Trimmfunktion pro abgeleitetem Feld</li></ul> |
 | <p>URL-Parsen</p> | <ul><li>5 URL-Parsen-Funktionen pro abgeleitetem Feld</li></ul> |
 
@@ -1733,7 +1806,7 @@ Die unten stehende Regel Klassifizieren verwendet beispielsweise 3 Operatoren.
 ![Screenshot der Klassifizierungsregel 1](assets/classify-1.png)
 
 
-## Weitere Informationen
+## Weitere Informationen {#trim-more-info}
 
 [`Trim`](#trim) und [`Lowercase`](#lowercase) sind bereits in den Komponenteneinstellungen in verfügbar. [Datenansichten](../component-settings/overview.md). Mithilfe von abgeleiteten Feldern können Sie diese Funktionen kombinieren, um eine komplexere Datenumwandlung direkt im Customer Journey Analytics durchzuführen. Sie können beispielsweise `Lowercase` , um die Groß-/Kleinschreibung in einem Ereignisfeld zu entfernen, und verwenden Sie dann [`Lookup`](#lookup) , um das neue Feld in Kleinbuchstaben mit einem Lookup-Datensatz abzugleichen, der nur Suchschlüssel in Kleinbuchstaben enthält. Oder Sie können `Trim` zum Entfernen von Zeichen vor der Einrichtung `Lookup` im neuen Feld.
 
