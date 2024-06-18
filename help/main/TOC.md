@@ -9,10 +9,10 @@ index: true
 user-guide-title: Handbuch zu Customer Journey Analytics
 user-guide-description: Hier erhalten Sie Informationen zu Adobe Customer Journey Analytics und Erläuterungen zur Nutzung von Analysis Workspace mit Daten aus Experience Platform.
 breadcrumb-title: Handbuch zu Customer Journey Analytics
-source-git-commit: cf399df3a8043f5ec9fe723a531bf2f8af68799a
-workflow-type: ht
-source-wordcount: '1093'
-ht-degree: 100%
+source-git-commit: cef43e45a647674c6f2472e9402224b5cbc617da
+workflow-type: tm+mt
+source-wordcount: '1105'
+ht-degree: 98%
 
 ---
 
@@ -105,6 +105,7 @@ ht-degree: 100%
       + [Übersicht über Projekte](../analysis-workspace/build-workspace-project/freeform-overview.md)
       + [Projekte erstellen](/help/analysis-workspace/build-workspace-project/create-projects.md)
       + [Projekte speichern](../analysis-workspace/build-workspace-project/save-projects.md)
+      + [Inhaltsverzeichnis des Projekts](/help/analysis-workspace/build-workspace-project/project-table-of-contents.md)
       + Ordner in Analysis Workspace {#workspace-folders}
          + [Über Ordner in Analysis Workspace](../analysis-workspace/build-workspace-project/workspace-folders/about-folders.md)
          + [Erstellen von Ordnern und Unterordnern](../analysis-workspace/build-workspace-project/workspace-folders/create-folders.md)
@@ -120,6 +121,7 @@ ht-degree: 100%
       + [Datenquellen verwalten](../analysis-workspace/visualizations/t-sync-visualization.md)
       + Freiformtabelle {#freeform-table}
          + [Freiformtabelle](../analysis-workspace/visualizations/freeform-table/freeform-table.md)
+         + [Erstellen von Hyperlinks für Dimensionen in einer Freiformtabelle](/help/analysis-workspace/visualizations/freeform-table/freeform-table-hyperlinks.md)
          + Spalten- und Zeileneinstellungen {#column-row-settings}
             + [Spalteneinstellungen](../analysis-workspace/visualizations/freeform-table/column-row-settings/column-settings.md)
             + [Zeileneinstellungen](../analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.md)

@@ -4,10 +4,10 @@ description: Binden Sie die von Adobe Journey Optimizer generierten Daten ein un
 exl-id: 9333ada2-b4d6-419e-9ee1-5c96f06a3bfd
 feature: Experience Platform Integration
 role: Admin
-source-git-commit: 5d89d6c3dae4964bc4085110d7baa51199e27044
+source-git-commit: 6e1db2351aa9fcc4682b892334430c1896cee914
 workflow-type: tm+mt
-source-wordcount: '862'
-ht-degree: 100%
+source-wordcount: '1006'
+ht-degree: 83%
 
 ---
 
@@ -15,13 +15,21 @@ ht-degree: 100%
 
 [Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer/using/get-started/get-started.html?lang=de) hilft Ihnen bei der Bereitstellung von vernetzten, kontextbezogenen und personalisierten Erlebnissen. Dadurch können Ihre Kundinnen und Kunden leichter zum nächsten Schritt ihrer Customer Journey gelangen.
 
-Sie können von Journey Optimizer generierte Daten importieren, um eine erweiterte Analyse in Customer Journey Analytics durchzuführen, indem Sie die folgenden Schritte ausführen:
+Sie können von Journey Optimizer generierte Daten importieren, um eine erweiterte Analyse in Customer Journey Analytics durchzuführen. Sie können dies automatisch tun. Bei Bedarf können Sie zusätzliche manuelle Anpassungen an den Datensätzen, Dimensionen oder Metriken vornehmen, die in Ihren Datenansichten verfügbar sind, die Sie für Adobe Journey Optimizer und Customer Journey Analytics verwenden.
 
-## Senden von Daten aus Journey Optimizer an Adobe Experience Platform
+## Automatische Konfiguration einer Customer Journey Analytics-Datenansicht für die Verwendung mit Journey Optimizer
+
+Mit einer Konfigurationsoption unter Customer Journey Analytics können Sie eine Customer Journey Analytics-Datenansicht festlegen, die mit Journey Optimizer verwendet werden kann, ohne dass eine manuelle Konfiguration erforderlich ist. <p>Informationen zum Aktivieren dieser Konfigurationsoption finden Sie unter [Kompatibilität](/help/data-views/create-dataview.md#compatibility) Abschnitt in [Datenansicht erstellen oder bearbeiten](/help/data-views/create-dataview.md).
+
+## Manuelles Konfigurieren einer Customer Journey Analytics-Datenansicht für die Verwendung mit Journey Optimizer
+
+In den folgenden Abschnitten wird beschrieben, wie Sie von Journey Optimizer generierte Daten manuell importieren, um eine erweiterte Customer Journey Analytics-Analyse durchzuführen. Dies ist nur erforderlich, wenn die Variable [automatische Konfigurationsoption](#automatically-configure-a-customer-journey-analytics-data-view-to-be-used-with-adobe-journey-optimizer) ist nicht ausreichend für Ihre Bedürfnisse.
+
+### Senden von Daten aus Journey Optimizer an Adobe Experience Platform
 
 Adobe Experience Platform dient als zentrale Datenquelle und Bindeglied zwischen Journey Optimizer und Customer Journey Analytics. Eine schrittweise Anleitung zum Senden von Journey Optimizer-Daten an Platform als Datensatz finden Sie unter [Erste Schritte mit Datensätzen](https://experienceleague.adobe.com/docs/journey-optimizer/using/data-management/datasets/get-started-datasets.html?lang=de) im Journey Optimizer-Benutzerhandbuch.
 
-## Erstellen einer Verbindung in Customer Journey Analytics
+### Erstellen einer Verbindung in Customer Journey Analytics
 
 Sobald sich Journey Optimizer-Daten in Adobe Experience Platform befinden, können Sie eine [Verbindung erstellen](/help/connections/create-connection.md), die auf Ihrem Journey Optimizer-Datensatz basiert. Sie können auch Journey Optimizer-Datensätze zu einer bestehenden Verbindung hinzufügen.
 
@@ -38,7 +46,7 @@ Wählen Sie die folgenden Datensätze aus und konfigurieren Sie sie:
 {style="table-layout:auto"}
 
 
-## Konfigurieren der Datenansicht für Journey Optimizer-Dimensionen und -Metriken
+### Konfigurieren der Datenansicht für Journey Optimizer-Dimensionen und -Metriken
 
 Sobald eine Verbindung erstellt wurde, können Sie eine oder mehrere [Datenansichten](/help/data-views/create-dataview.md) erstellen, um die gewünschten Dimensionen und Metriken zu konfigurieren, die in Customer Journey Analytics verfügbar sind.
 
@@ -47,7 +55,7 @@ Sobald eine Verbindung erstellt wurde, können Sie eine oder mehrere [Datenansic
 >Die Datenabweichungen zwischen Adobe Journey Optimizer und Customer Journey Analytics betragen in der Regel weniger als 1–2 %. Größere Abweichungen sind bei Daten möglich, die innerhalb der letzten zwei Stunden erfasst wurden. Verwenden Sie Datumsbereiche, die den heutigen Tag ausschließen, um Abweichungen aufgrund der Verarbeitungszeit zu vermeiden.
 
 
-### Konfigurieren der Dimensionen in der Datenansicht
+#### Konfigurieren der Dimensionen in der Datenansicht
 
 Sie können die folgenden Dimensionen in einer Datenansicht erstellen, um eine ungefähre Parität mit ähnlichen Dimensionen in Journey Optimizer zu erreichen. Siehe [Komponenteneinstellungen](/help/data-views/component-settings/overview.md) im Datenansichts-Manager für Details zu den Anpassungsoptionen für Dimensionen.
 
@@ -70,7 +78,7 @@ Sie können die folgenden Dimensionen in einer Datenansicht erstellen, um eine u
 
 {style="table-layout:auto"}
 
-### Konfigurieren von Metriken in der Datenansicht
+#### Konfigurieren von Metriken in der Datenansicht
 
 Sie können die folgenden Metriken in einer Datenansicht erstellen, um eine ungefähre Übereinstimmung mit ähnlichen Metriken in Journey Optimizer zu erreichen. Siehe [Komponenteneinstellungen](/help/data-views/component-settings/overview.md) im Datenansichts-Manager für weitere Informationen zu den Anpassungsoptionen von Metriken.
 
@@ -93,7 +101,7 @@ Sie können die folgenden Metriken in einer Datenansicht erstellen, um eine unge
 
 {style="table-layout:auto"}
 
-### Konfigurieren von berechneten Metriken in Analysis Workspace
+#### Konfigurieren von berechneten Metriken in Analysis Workspace
 
 Nachdem Sie die gewünschten Dimensionen und Metriken für den Journey Optimizer-Datensatz konfiguriert haben, können Sie auch [Berechnete Metriken](/help/components/calc-metrics/calc-metr-overview.md) für weitere Einblicke in diese Daten konfigurieren. Diese berechneten Metriken basieren auf den oben genannten Metriken, die im Datenansichts-Manager erstellt wurden.
 

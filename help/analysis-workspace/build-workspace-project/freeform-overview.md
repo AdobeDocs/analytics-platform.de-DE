@@ -5,10 +5,10 @@ title: Übersicht über Projekte
 feature: Workspace Basics
 exl-id: 2eeb615c-57a1-4469-8d4a-8a61956bd6e6
 role: User
-source-git-commit: 39e4c17336d3648cbf20cace535668d14510186f
+source-git-commit: 10751991e3c40cfefac7d32cea0b5cc557133232
 workflow-type: tm+mt
-source-wordcount: '1336'
-ht-degree: 69%
+source-wordcount: '1342'
+ht-degree: 64%
 
 ---
 
@@ -89,11 +89,19 @@ Zu den Einstellungen gehören:
 
 ## Linke Leiste {#left-rail}
 
-In einem Projekt erfolgt der Zugriff auf [Bedienfelder](/help/analysis-workspace/c-panels/panels.md), Tabellen, [Visualisierungen](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md) und [Komponenten] von der linken Leiste aus. Das sind Ihre Projektbausteine.
+Innerhalb eines Projekts sind in der linken Leiste verschiedene Symbole verfügbar, die jeweils wichtige Teile eines Projekts darstellen:
 
-Sie können auch über das [leere Bedienfeld](/help/analysis-workspace/c-panels/blank-panel.md) auf Visualisierungen und Bedienfelder zugreifen.
+* [Bedienfelder](/help/analysis-workspace/c-panels/panels.md) ![Bedienfeldsymbol](assets/panels-icon.png)
 
-Komponenten (Dimensionen, Metriken, Filter, Datumsbereiche) in der linken Leiste beziehen sich auf die Datenansicht des aktiven Bedienfelds. Das aktive Bedienfeld wird durch einen blauen Rand umgeben, und die aktive Datenansicht wird oben in der Komponentenleiste aufgeführt.
+* [Visualisierung](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md)![Visualisierungssymbol](assets/visualizations-icon.png)
+
+* [Komponenten](/help/components/overview.md)![Komponentensymbol](assets/components-icon.png)
+
+* [Datenwörterbuch](/help/components/data-dictionary/data-dictionary-overview.md)![Datenwörterbuchsymbol](assets/data-dictionary-icon.png)
+
+* [Inhaltsverzeichnis](/help/analysis-workspace/build-workspace-project/project-table-of-contents.md) ![Token-Symbol](assets/toc-icon.png)
+
+Komponenten (Dimensionen, Metriken, Filter, Datumsbereiche) in der linken Leiste beziehen sich auf die Datenansicht des aktiven Bedienfelds. Das aktive Bedienfeld wird durch den blauen Rahmen identifiziert, der es umgibt, und die Ansicht der aktiven Daten wird oben in der Komponentenleiste angezeigt.
 
 ![Die Komponenten, die sich auf die Ansicht der aktiven Bedienfelddaten für die Datenansicht der branchenübergreifenden Demodaten beziehen.](assets/left-rail.png)
 

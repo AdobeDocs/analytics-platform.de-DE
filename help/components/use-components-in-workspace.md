@@ -1,16 +1,17 @@
 ---
 description: Erfahren Sie, wie Sie einem Projekt in Analysis Workspace Komponenten hinzufügen.
-title: Komponenten in Analysis Workspace verwenden
+title: Verwenden von Komponenten in Analysis Workspace
 feature: Components
 role: User
-source-git-commit: b02a3954e7b531caabfbea1f7df4e322eb4af741
+exl-id: 97bdfb9e-a27e-4a6b-b6cc-21a292398037
+source-git-commit: 697503bba56f44159df7a2f6a0e60a0a4178266d
 workflow-type: tm+mt
-source-wordcount: '963'
-ht-degree: 18%
+source-wordcount: '849'
+ht-degree: 16%
 
 ---
 
-# Komponenten in Analysis Workspace verwenden
+# Verwenden von Komponenten in Analysis Workspace
 
 Komponenten bilden die tatsächlichen Daten eines Projekts in Analysis Workspace. Komponenten bestehen aus Dimensionen, Metriken, Filtern und Datumsbereichen. Sie können einem Projekt Komponenten hinzufügen, indem Sie sie in Visualisierungen oder Bedienfelder ziehen.
 
@@ -28,15 +29,19 @@ Eine Übersicht über die Komponententypen, die Sie hinzufügen können, finden 
 
    Wenn Sie eine Komponente zu einem leeren Projekt hinzufügen, wird automatisch eine Freiformtabellenvisualisierung erstellt.
 
-1. Wählen Sie das Symbol **[!UICONTROL Komponenten]** in der linken Leiste aus.
+1. Wählen Sie in der linken Leiste das Symbol **[!UICONTROL Komponenten]** aus.
 
    ![](assets/build-components.png)
 
-1. Scrollen Sie zu der Komponente, die Sie hinzufügen möchten, oder suchen Sie sie und ziehen Sie sie in ein Bedienfeld oder eine Visualisierung innerhalb Ihres Projekts.
+1. Scrollen Sie zu der Komponente, die Sie hinzufügen möchten, oder suchen Sie sie und ziehen Sie sie anschließend in ein Bedienfeld oder eine Visualisierung innerhalb Ihres Projekts.
 
-   Sie können beispielsweise einen Filter in die Dropzone des Filters in eine Bedienfeldüberschrift ziehen.
+1. (Optional) Ziehen Sie eine Komponente in die Dropzone Filter in einer Bedienfeldüberschrift.
 
-   ![Filter in der Dropzone ablegen](assets/filter-dropzone.png)
+   Filter gelten für alle Inhalte im Bereich.
+
+   Informationen dazu, wie Sie die Filter-Dropzone in einem Bedienfeld zum Filtern Ihres Bedienfelds verwenden können, finden Sie unter [Dropzone](/help/analysis-workspace/c-panels/panels.md#drop-zone) in [Bedienfelder - Übersicht](/help/analysis-workspace/c-panels/panels.md).
+
+   ![Filter im Ablegebereich ablegen](assets/filter-dropzone.png)
 
 1. Weitere Informationen erhalten Sie in den folgenden Abschnitten, je nach Typ der Komponente, die Sie hinzufügen:
 
@@ -61,6 +66,10 @@ Eine Übersicht über die Komponententypen, die Sie hinzufügen können, finden 
      ![Dimensionen zu einem Projekt hinzufügen](assets/add-dimensions.png)
 
    * Ziehen Sie eine oder mehrere Dimensionen aus der linken Leiste in die Dropzone des Filters, um einen Ad-hoc-Filter zu erstellen, wie unter [Filter zu einem Projekt hinzufügen](#add-filters-to-a-project).
+
+1. (Optional) Sie können Dimensionen und Dimensionselemente in Analysis Workspace mit anderen Komponenten aufschlüsseln.
+
+   Weitere Informationen finden Sie unter [Aufschlüsseln von Dimensionen in Workspace](/help/components/dimensions/t-breakdown-fa.md).
 
 Weitere Informationen zur Verwendung von Dimensionen in Analysis Workspace finden Sie unter [Dimensionen in der Vorschau anzeigen](/help/components/dimensions/view-dimensions.md), [Dimensionen aufschlüsseln](/help/components/dimensions/t-breakdown-fa.md), und [Dimensionen für die Zeitunterteilung](/help/components/dimensions/time-parting-dimensions.md).
 
@@ -90,31 +99,23 @@ Weitere Informationen zu Metriken finden Sie unter [Übersicht über berechnete 
 
 [Filter](/help/components/filters/filters-overview.md) ermöglichen es Ihnen, Besucheruntergruppen anhand von Merkmalen oder spezifischen Interaktionen zu identifizieren.
 
-So fügen Sie einem Projekt in Analysis Workspace einen Filter hinzu:
+Sie können Filter in Analysis Workspace auf eine der folgenden Arten verwenden:
 
-1. Beginnen Sie mit dem Hinzufügen eines Filters zu Ihrem Projekt in Analysis Workspace, wie beschrieben in [Hinzufügen von Komponenten zu einem Projekt beginnen](#begin-adding-components-to-a-project).
+### Filter zu einem Bedienfeld hinzufügen
 
-1. Wählen Sie eine der folgenden Methoden, um mit dem Filtern Ihres Bedienfelds zu beginnen:
+Wenn Sie einem Bereich Filter hinzufügen, werden die Filter auf alle Inhalte im Bereich angewendet.
 
-   * Ziehen Sie einen einzelnen Filter aus der linken Leiste in die Dropzone des Filters.
+Informationen dazu, wie Sie die Filter-Dropzone in einem Bedienfeld zum Filtern Ihres Bedienfelds verwenden können, finden Sie unter [Dropzone](/help/analysis-workspace/c-panels/panels.md#drop-zone) in [Bedienfelder - Übersicht](/help/analysis-workspace/c-panels/panels.md).
 
-     ![Filter in der Dropzone ablegen](assets/filter-dropzone.png)
+### Filter zu einer Spalte in einer Freiformtabelle hinzufügen
 
-   * Halten Sie die Umschalt- oder Strg-Taste gedrückt, um mehrere Filter in der linken Leiste auszuwählen, und halten Sie dann die Umschalt-Taste gedrückt, während Sie sie in der Dropzone des Filters ablegen.
+Wenn Sie einer Spalte in einer Freiformtabelle Filter hinzufügen, werden die Filter auf alle Inhalte in der Tabellenspalte angewendet.
 
-     ![mehrere Filter in der Dropzone ablegen](assets/filter-dropzone-multiple.png)
+### Filter bei der Erstellung berechneter Metriken verwenden
 
-     Dadurch wird ein Dropdown-Menü erstellt, über das Benutzer des Bedienfelds den Filter auswählen können, den sie anwenden möchten. Das Dropdown-Menü enthält eine [!UICONTROL **Kein Filter**] -Option, die Benutzer auswählen können, wodurch das Bedienfeld nicht gefiltert bleibt.
+Im Generator für berechnete Metriken können Sie Filter innerhalb Ihrer Metrikdefinition anwenden.
 
-     Sie können die Option (x) auswählen, um eine beliebige Option aus dem Dropdown-Menü zu entfernen. Wenn Sie die [!UICONTROL **Kein Filter**] auswählen, ist ein Filter erforderlich.
-
-   * Erstellen Sie Ad-hoc-Filter, indem Sie Nicht-Filter-Komponenten in die Dropzone ziehen. So sparen Sie Zeit und Mühe beim Aufrufen des Filter Builder. Auf diese Weise erstellte Filter werden automatisch als Filter auf Trefferebene definiert. Diese Definition kann geändert werden, indem Sie auf das Informationssymbol (i) neben dem Filter und dann auf das stiftförmige Bearbeitungssymbol klicken und sie in Filter Builder bearbeiten.
-
-     Ad-hoc-Filter sind eine Art Schnellfilter und für das Projekt lokal verfügbar. Sie werden nicht in der linken Leiste angezeigt, es sei denn, Sie machen sie öffentlich.
-
-     Weitere Informationen finden Sie unter [Schnellfilter](/help/components/filters/quick-filters.md).
-
-Weitere Informationen dazu, wie Sie die Filter-Dropzone in einem Bedienfeld zum Filtern Ihres Bedienfelds verwenden können, finden Sie unter [Dropzone](/help/analysis-workspace/c-panels/panels.md#drop-zone) in [Bedienfelder - Übersicht](/help/analysis-workspace/c-panels/panels.md).
+Weitere Informationen finden Sie unter [Gefilterte Metriken](/help/components/calc-metrics/cm-workflow/metrics-with-segments.md).
 
 ## Hinzufügen von Datumsbereichen zu einem Projekt
 
