@@ -4,16 +4,17 @@ keywords: Analysis Workspace
 title: Inhaltsverzeichnis des Projekts
 feature: Workspace Basics
 role: User
-source-git-commit: acd993c97ee396e7674729e7cfaa489844f242b7
+exl-id: 4eb7de7a-ec40-4a59-afc4-94131e91a35f
+source-git-commit: 8ff130a20c719a594207f854ff3b85619f38b512
 workflow-type: tm+mt
-source-wordcount: '125'
+source-wordcount: '135'
 ht-degree: 1%
 
 ---
 
 # Inhaltsverzeichnis des Projekts
 
-In jedem Projekt ist ein Inhaltsverzeichnis verfügbar. Dadurch können Sie schnell zwischen Bedienfeldern und Visualisierungen innerhalb des Projekts wechseln. Dies ist besonders nützlich, wenn Sie größere Projekte anzeigen, die viele Bedienfelder und Visualisierungen enthalten.
+Sie können in jedem Projekt in Analysis Workspace ein Inhaltsverzeichnis anzeigen, sodass Sie schnell zwischen allen Bereichen und Visualisierungen wechseln können, die im Projekt vorhanden sind. Dies ist besonders nützlich, wenn Sie größere Projekte anzeigen, die viele Bedienfelder und Visualisierungen enthalten.
 
 So zeigen Sie das Inhaltsverzeichnis in einem Projekt an:
 
@@ -21,6 +22,8 @@ So zeigen Sie das Inhaltsverzeichnis in einem Projekt an:
 
 1. Wählen Sie im linken Navigationsmenü das Inhaltsverzeichnissymbol aus. ![Token-Symbol](assets/toc-icon.png).
 
-   Das Inhaltsverzeichnis für das Projekt wird angezeigt und erweitert.
+   Das Inhaltsverzeichnis für das Projekt wird angezeigt und jedes Bedienfeld wird standardmäßig erweitert.
 
-1. Klicken Sie auf einen Abschnitt im Inhaltsverzeichnis, um zu einem Bereich oder einer Visualisierung innerhalb des Projekts zu springen.
+   ![Projekt-TOC erweitert](assets/project-toc-expanded.png)
+
+1. Wählen Sie im Inhaltsverzeichnis eine Visualisierung aus, die innerhalb des Projekts angezeigt werden soll.

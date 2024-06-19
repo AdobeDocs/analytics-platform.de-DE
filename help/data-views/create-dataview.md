@@ -5,9 +5,9 @@ exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: 161dbfe828f83899ae2652513fbb90c21634becc
+source-git-commit: 8ff130a20c719a594207f854ff3b85619f38b512
 workflow-type: tm+mt
-source-wordcount: '1713'
+source-wordcount: '1714'
 ht-degree: 85%
 
 ---
@@ -56,7 +56,7 @@ Bietet Einstellungen, die bei der Verwendung von Adobe Journey Optimizer zusätz
 
 | Einstellung | Beschreibung |
 | --- | --- |
-| [!UICONTROL **Als Standarddatenansicht in Adobe Journey Optimizer festlegen**] | Diese Konfigurationsoption standardisiert die Berichterstellung über Journey Optimizer und Customer Journey Analytics. Sie können auch eine erweiterte Analyse Ihrer Adobe Journey Optimizer-Daten in Customer Journey Analytics durchführen (indem Sie die Option [!UICONTROL **Analysieren in CJA**] in Journey Optimizer).<p>Für diese Art von Analyse benötigt Journey Optimizer Zugriff auf eine Customer Journey Analytics-Datenansicht.<p>Aktivieren Sie diese Option, damit dies zur standardmäßigen Datenansicht wird, die in Journey Optimizer-Berichten verwendet wird.</p><p>Diese Konfigurationsoption automatisch:</p><ul><li>Konfiguriert alle erforderlichen Journey Optimizer-Datensätze in der zugehörigen Verbindung in Customer Journey Analytics für die Verwendung mit Journey Optimizer.</li><li>Erstellt einen Satz von Journey Optimizer-Metriken und -Dimensionen in der Datenansicht (einschließlich abgeleiteter Felder und berechneter Metriken). Kontextbezeichnungen werden automatisch für alle diese Metriken und Dimensionen festgelegt.<!--do we need to provide a list somewhere? See https://wiki.corp.adobe.com/display/CJM/Required+Metrics+and+Dimensions--></li><p>**Hinweis:** Bei Bedarf können Sie zusätzliche manuelle Anpassungen an den Datensätzen, Dimensionen oder Metriken vornehmen, die in Ihren Datenansichten verfügbar sind, die Sie für Journey Optimizer und Customer Journey Analytics verwenden, wie unter [Integrieren von Adobe Journey Optimizer mit Adobe Customer Journey Analytics](/help/integrations/ajo.md). </p></ul><p>Sie können die Standarddatenansicht zu einem späteren Zeitpunkt ändern. Dies kann jedoch Ihre Journey Optimizer-Berichtsdaten ändern. Wenn Sie es deaktivieren möchten, nachdem es aktiviert wurde, werden Sie aufgefordert, eine neue Standarddatenansicht auszuwählen.</p> |
+| [!UICONTROL **Als Standarddatenansicht in Adobe Journey Optimizer festlegen**] | Diese Konfigurationsoption standardisiert die Berichterstellung über Journey Optimizer und Customer Journey Analytics. Sie können auch eine erweiterte Analyse Ihrer Adobe Journey Optimizer-Daten in Customer Journey Analytics durchführen (indem Sie die Option [!UICONTROL **Analysieren in CJA**] in Journey Optimizer).<p>Für diese Art von Analyse benötigt Journey Optimizer Zugriff auf eine Customer Journey Analytics-Datenansicht.<p>Aktivieren Sie diese Option, damit dies zur standardmäßigen Datenansicht wird, die in Journey Optimizer-Berichten verwendet wird.</p><p>Diese Konfigurationsoption automatisch:</p><ul><li>Konfiguriert alle erforderlichen Journey Optimizer-Datensätze in der zugehörigen Verbindung in Customer Journey Analytics für die Verwendung mit Journey Optimizer.</li><li>Erstellt einen Satz von Journey Optimizer-Metriken und -Dimensionen in der Datenansicht (einschließlich abgeleiteter Felder und berechneter Metriken). Kontextbezeichnungen werden automatisch für alle diese Metriken und Dimensionen festgelegt.<p>**Hinweis:** Bei Bedarf können Sie zusätzliche manuelle Anpassungen an den Datensätzen, Dimensionen oder Metriken vornehmen, die in Ihren Datenansichten verfügbar sind, die Sie für Journey Optimizer und Customer Journey Analytics verwenden, wie unter [Integrieren von Adobe Journey Optimizer mit Adobe Customer Journey Analytics](/help/integrations/ajo.md). </p></li></ul><p>Sie können die Standarddatenansicht zu einem späteren Zeitpunkt ändern. Dies kann jedoch Ihre Journey Optimizer-Berichtsdaten ändern. Wenn Sie diese Option deaktivieren, nachdem sie aktiviert wurde, werden Sie aufgefordert, eine neue Standarddatenansicht auszuwählen.</p> |
 
 {style="table-layout:auto"}
 
