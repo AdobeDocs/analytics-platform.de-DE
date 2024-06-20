@@ -4,10 +4,10 @@ title: Customer Journey Analytics-Daten herunterladen
 feature: Curate and Share
 exl-id: 1d8384ca-888c-482c-ab3e-d1b579217560
 role: User
-source-git-commit: a3fc89ed08102d57ce3cfaadde96ade843cd8f8b
+source-git-commit: cd4722cc2eb95d7d5e4000361c8f96a30a3589e9
 workflow-type: tm+mt
-source-wordcount: '1165'
-ht-degree: 72%
+source-wordcount: '1194'
+ht-degree: 64%
 
 ---
 
@@ -18,6 +18,18 @@ Sie können Customer Journey Analytics-Daten auf Ihre Workstation herunterladen.
 Es stehen auch andere Methoden zum Exportieren von Customer Journey Analytics-Daten zur Verfügung, wie unter [Exportübersicht](/help/analysis-workspace/export/export-project-overview.md).
 
 ## Als CSV oder PDF herunterladen {#download-project}
+
+Beachten Sie beim Herunterladen von Projekten Folgendes:
+
+* Beim Herunterladen von Projekten als CSV- oder PDF-Datei kann das Projekt gespeichert oder nicht gespeichert werden, wenn Sie einen Projektdownload anfordern. Es können jedoch nur gespeicherte Projekte [geplant](/help/analysis-workspace/export/t-schedule-report.md) sein.
+
+* Beim Herunterladen von Projekten als PDF:
+   * Der Export von Downloads kann mehrere Minuten dauern, da das Projekt auf Adobe-Servern erneut ausgeführt wird, bevor es im PDF-Format gerendert wird. Wir empfehlen, das Projekt nicht zu verlassen, bis die PDF-Datei in Ihren Browser heruntergeladen wurde. Sie können jedoch beim Warten weiterhin Änderungen am Projekt vornehmen. Wenn die Ausgabe einer PDF-Datei länger als 5 Minuten dauert, werden Sie aufgefordert, diese stattdessen per E-Mail zu erhalten.
+   * Downloads werden als einzelne Seite ohne Seitenumbruch gerendert.
+   * PDF-Renderings enthalten die Informationen auf der Seite in Workspace. Wenn ein Projekt Visualisierungen und Bedienfelder in benutzerdefinierter Größe enthält, müssen Sie diese so ändern, dass die Größe automatisch bestimmt wird (Schaltfläche in der oberen rechten Ecke), damit der Inhalt nicht abgeschnitten wird.
+   * Alle [Hyperlinks](/help/analysis-workspace/visualizations/freeform-table/freeform-table-hyperlinks.md) , die in Freiformtabellen vorhanden sind, sind in der heruntergeladenen PDF nicht funktionsfähig.
+
+Herunterladen eines Projekts als CSV- oder PDF-Datei:
 
 1. Führen Sie je nach dem Format, in dem der Download erfolgen soll, einen der folgenden Schritte aus:
 
@@ -32,13 +44,6 @@ Es stehen auch andere Methoden zum Exportieren von Customer Journey Analytics-Da
    ![Das Dropdown-Menü Projekt mit den Optionen CSV herunterladen und PDF herunterladen hervorgehoben.](assets/download-project.png)
 
 1. (Bedingt) Wenn Sie sich für den Download einer PDF entschieden haben, wird eine Nachricht angezeigt, sobald das Projekt heruntergeladen werden kann. Wählen Sie [!UICONTROL **Herunterladen**] aus.
-
-Beachten Sie beim Herunterladen von Projekten Folgendes:
-
-* Die Anforderung von Projekt-Downloads kann mit oder ohne Speicherung eines Projekts erfolgen.  Es können jedoch nur gespeicherte Projekte [geplant](/help/analysis-workspace/export/t-schedule-report.md) sein.
-* Der Export von im Browser heruntergeladenen PDF-Dateien kann mehrere Minuten dauern, da das Projekt auf den Adobe-Servern erneut ausgeführt wird, bevor es im PDF-Format ausgegeben wird. Wir empfehlen, das Projekt nicht zu verlassen, bis die PDF-Datei in Ihren Browser heruntergeladen wurde. Sie können jedoch beim Warten weiterhin Änderungen am Projekt vornehmen. Wenn die Ausgabe einer PDF-Datei länger als 5 Minuten dauert, werden Sie aufgefordert, diese stattdessen per E-Mail zu erhalten.
-* PDF-Downloads werden als einzelne Seite ohne Seitenumbruch gerendert.
-* Bei der PDF-Ausgabe eines Projekts wird das gerendert, was sich auf der Seite befindet. Wenn ein Projekt Visualisierungen und Bedienfelder in benutzerdefinierter Größe enthält, müssen Sie diese so ändern, dass die Größe automatisch bestimmt wird (Schaltfläche in der oberen rechten Ecke), damit der Inhalt nicht abgeschnitten wird.
 
 ## In die Zwischenablage kopieren (Hotkey: Strg+C) {#copy-data}
 

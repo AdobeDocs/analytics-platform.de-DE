@@ -6,10 +6,10 @@ feature: Basics
 exl-id: c258fa39-c0b6-45a1-8547-79516c15a215
 mini-toc-levels: 3
 role: Admin
-source-git-commit: 39e4c17336d3648cbf20cace535668d14510186f
+source-git-commit: 7280bd21882e2baa31e76dbb6f983ccaf1af8633
 workflow-type: tm+mt
-source-wordcount: '1247'
-ht-degree: 52%
+source-wordcount: '1195'
+ht-degree: 54%
 
 ---
 
@@ -59,11 +59,7 @@ Zusätzlich dazu, als Produkt-Admin im **Customer Journey Analytics-Produktprofi
 
 * Exportieren von Datensätzen in Cloud [Ziele](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/export-datasets.html?lang=de)
 
-  >[!AVAILABILITY]
-  >
-  >Die Möglichkeit, Datensätze in die Cloud zu exportieren, befindet sich in der eingeschränkten Testphase der Veröffentlichung und ist möglicherweise noch nicht in Ihrer Umgebung verfügbar. Diese Anmerkung wird entfernt, wenn die Funktion allgemein verfügbar ist. Informationen zum Customer Journey Analytics-Veröffentlichungsprozess finden Sie unter [Customer Journey Analytics-Funktionsveröffentlichungen](/help/release-notes/releases.md).
-
-  Um diese Aufgabe ausführen zu können, benötigen Benutzer außerdem die folgenden Experience Platform-Berechtigungen:
+  Um diese Aufgabe ausführen zu können, benötigen Benutzer die folgenden Experience Platform-Berechtigungen:
    * Verwalten von Zielen
    * Aktivieren von Zielen
 

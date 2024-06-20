@@ -3,9 +3,10 @@ title: Erstellen von Hyperlinks in einer Freiformtabelle in Analysis Workspace
 description: Erfahren Sie, wie Sie Hyperlinks für Dimensionselemente in einer Freiformtabelle in Analysis Workspace erstellen.
 feature: Visualizations
 role: User
-source-git-commit: 433aabe6785527642db6b03ca54bd050323f2b70
+exl-id: 24fc2d24-b8c2-4664-8b9c-beda284f9033
+source-git-commit: 0c83d64a2ab3d23f92bc804092fc507479418052
 workflow-type: tm+mt
-source-wordcount: '1722'
+source-wordcount: '1730'
 ht-degree: 0%
 
 ---
@@ -35,6 +36,8 @@ Beachten Sie beim Erstellen von Hyperlinks für Dimensionselemente Folgendes:
   Wenn Sie einen Hyperlink mit einer ungültigen URL erstellen oder einen Hyperlink erstellen, der auf ein Dimensionselement verweist, das keinen URL-Wert aufweist (indem Sie entweder direkt auf das Dimensionselement verweisen oder die `$value` oder `$breakdown` -Variablen), wird Benutzern, die auf den Hyperlink klicken, eine Fehlermeldung angezeigt, dass die URL ungültig ist.
 
 * Hyperlinks, die für ein einzelnes Dimensionselement erstellt werden, überschreiben Hyperlinks, die für die Dimension erstellt werden.
+
+* Hyperlinks funktionieren nicht in [heruntergeladene PDF-Dateien](/help/analysis-workspace/export/download-send.md).
 
 So erstellen Sie Hyperlinks für ein oder mehrere Dimensionselemente:
 
@@ -130,4 +133,3 @@ So entfernen Sie Hyperlinks aus Dimensionselementen:
    Der Hyperlink wird aus dem einzelnen Dimensionselement (wenn Sie ein einzelnes Dimensionselement ausgewählt haben) oder aus allen Dimensionselementen entfernt (wenn Sie den Dimensionsnamen in der Dimensionsspaltenüberschrift ausgewählt haben).
 
 1. [Projekt speichern](/help/analysis-workspace/build-workspace-project/save-projects.md) , um Ihre Änderungen zu speichern.
-
