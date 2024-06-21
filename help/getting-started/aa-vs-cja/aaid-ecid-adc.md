@@ -4,10 +4,10 @@ description: Hier erfahren Sie, wie der Analytics-Quell-Connector mit Adobe Anal
 exl-id: c983cf50-0b6c-4daf-86a8-bcd6c01628f7
 feature: Basics
 role: User
-source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
-workflow-type: ht
-source-wordcount: '503'
-ht-degree: 100%
+source-git-commit: 0dc99750126ed5b88b1d1f2d4afc28acad0fe84e
+workflow-type: tm+mt
+source-wordcount: '542'
+ht-degree: 92%
 
 ---
 
@@ -52,6 +52,12 @@ Innerhalb der identityMap:
 * Wenn ECID vorhanden ist, wird sie als primäre Identität für das Ereignis markiert. Beachten Sie, dass in diesem Fall AAID gemäß der obigen Diskussion auf ECID basieren kann.
 Andernfalls wird AAID als primäre Identität für das Ereignis markiert.
 * AACUSTOMID wird nie als primäre ID für das Ereignis markiert. Wenn jedoch AACUSTOMID vorhanden ist, basiert AAID gemäß der obigen Diskussion auf AACUSTOMID.
+
+Wenn die Identität oder Identitäten nach kopiert werden `identityMap`, `endUserIDs._experience.mcid.namespace.code` wird auch für dasselbe Ereignis festgelegt:
+
+* Wenn AAID vorhanden ist, `endUserIDs._experience.aaid.namespace.code` auf &quot;AAID&quot;festgelegt ist.
+* Wenn ECID vorhanden ist, `endUserIDs._experience.mcid.namespace.code` auf &quot;ECID&quot;festgelegt ist.
+* Wenn AACUSTOMID vorhanden ist, `endUserIDs._experience.aacustomid.namespace.code` auf &quot;AACUSTOMID&quot;festgelegt ist.
 
 ## Customer Journey Analytics und primäre ID
 
