@@ -4,7 +4,7 @@ description: Listet Inhaltsaktualisierungen für Dokumentation zu Customer Journ
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: cfdbbacc1c6f280e8959513d8073cd17c8699962
+source-git-commit: 81ad9a41f1fa323f2e0149ce634904ceb1bc3198
 workflow-type: tm+mt
 source-wordcount: '3731'
 ht-degree: 73%
@@ -24,7 +24,7 @@ Die folgenden Aktualisierungen wurden seit der ersten Erstellung der Customer Jo
 | Datensätze für B2B-Suchen transformieren | Eine Dokumentation zur Unterstützung von [personenbasierte Suchen nach B2B-Daten](/help/connections//transform-datasets-b2b-lookups.md) (einschließlich Konten, Möglichkeiten, Marketing-Listen und Kampagnen) unter Verwendung der Transformation von B2B-Lookup-Datensätzen. |
 | Abgeleitete Feldfunktionen und Funktionsvorlagen | Eine Dokumentation zu den zusätzlichen abgeleiteten Feldfunktionen ([Mathematisch](/help/data-views/derived-fields/derived-fields.md#math), [Nächste oder Vorherige](/help/data-views/derived-fields/derived-fields.md#next-or-previous)) und [Funktionsvorlagen](/help/data-views/derived-fields/derived-fields.md#function-templates). |
 | **Mai 2024** | |
-| Target-Integration | hinzugefügt [Abschnitt zur Adobe-Integration](/help/integrations/cja4t.md) Informationen zur Integration von Target in Customer Journey Analytics. |
+| Target-Integration | hinzugefügt [Abschnitt zur Adobe-Integration](/help/integrations/at.md) Informationen zur Integration von Target in Customer Journey Analytics. |
 | Erforderliche Informationen beim Exportieren von Customer Journey Analytics-Berichten in Google Cloud Platform unter Verwendung von Einschränkungen aufgrund von Organisationsrichtlinien | Die Organisations-ID von Google Cloud Platform, die sich im Besitz der Adobe befindet, wurde zur [Konfigurieren von Cloud-Exportspeicherorten](/help/components/exports/cloud-export-locations.md) Dokumentation zum Exportieren von Customer Journey Analytics-Berichten in Google Cloud Platform. <p>Diese Informationen sind nur für Organisationen erforderlich, die [Organisationsrichtlinieneinschränkungen](https://cloud.google.com/storage/docs/org-policy-constraints) in Google Cloud Platform verwenden.</p> |
 | Dokumentation zum Hinzufügen von Komponenten zu Projekten | Es wurden allgemeine Informationen zum [Hinzufügen der verschiedenen Komponententypen zu Projekten in Analysis Workspace](/help/components/use-components-in-workspace.md) hinzugefügt. |
 | Anwendungsfälle für den Datenexport | Satz neuer Artikel mit einer Beschreibung [Anwendungsfälle für den Datenexport](/help/use-cases/data-export/overview.md) und wie Experience Platform- und Customer Journey Analytics-Funktionen zur Implementierung dieser Anwendungsfälle verwendet werden |
@@ -53,7 +53,7 @@ Die folgenden Aktualisierungen wurden seit der ersten Erstellung der Customer Jo
 | Neue Informationen zur Komponentenmigration bei der Migration von Adobe Analytics | Informationen zu [Entwicklung von Adobe Analytics](/help/getting-started/aa-to-cja.md) , die auf das neue [Komponentenmigration](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/component-migration/prepare-component-migration.html?lang=de) Funktionen, die im Adobe Analytics Admin-Handbuch beschrieben sind. |
 | Es wurde klargestellt, dass bestimmte Informationen nur für Admins verfügbar sind | Es wurden Informationen hinzugefügt, aus denen hervorgeht, dass die Spalten &quot;Zuletzt verwendet&quot;und &quot;Verwendet in&quot;in [Manager für berechnete Metriken](/help/components/calc-metrics/cm-workflow/cm-manager.md) und [Filter Manager](/help/components/filters/manage-filters.md) sind nur für Systemadministratoren verfügbar. |
 | Für das Exportieren von Datensätzen erforderliche Berechtigungen | Es wurden Informationen zur [erforderliche Berechtigungen](/help/technotes/access-control.md) , um Datensätze in Cloud-Ziele zu exportieren. |
-| Verbindungen verwalten | Die [Verbindungen verwalten](../connections/manage-connections.md) Artikel, basierend auf dem Kunden-Feedback. |
+| Verwalten von Verbindungen | Die [Verbindungen verwalten](../connections/manage-connections.md) Artikel, basierend auf dem Kunden-Feedback. |
 | Abgeleitete Felder | Die Zusammenfassung der Funktion wurde hinzugefügt. [Einschränkungen](/help/data-views/derived-fields/derived-fields.md#limitations) und Erläuterung, wie die Anzahl der [Operatoren](/help/data-views/derived-fields/derived-fields.md#operators) in einer Funktion verwendet. |
 
 {style="table-layout:auto"}
@@ -65,7 +65,7 @@ Die folgenden Aktualisierungen wurden seit der ersten Erstellung der Customer Jo
 | --- | --- |
 | **Dezember 2023** | |
 | Rechenzentren | Es wurde ein Artikel zum Customer Journey Analytics hinzugefügt [Hosting-Standorte](../technotes/data-centers.md). |
-| Leitplanken | Customer Journey Analytics zur Artikelauflistung hinzugefügt [Limits](../technotes/guardrails.md). |
+| Leitlinien | Customer Journey Analytics zur Artikelauflistung hinzugefügt [Limits](../technotes/guardrails.md). |
 | Währungskonversionsaktualisierungen | Klarere Dokumentation zum [Währungsumrechnung konfigurieren](/help/data-views/component-settings/format.md). |
 | Aktualisierungen der Dokumentation zur Anomalieerkennung | Die Dokumentation zur Anomalieerkennung fand sich zuvor in einem Abschnitt über Virtual Analyst. Die folgenden Änderungen wurden vorgenommen: <ul><li>Der Begriff „Virtual Analyst“ wurde aus der Dokumentation entfernt.</li><li>Der Abschnitt zur [Anomalieerkennung](/help/analysis-workspace/c-anomaly-detection/anomaly-detection.md) wurde direkt unter den Abschnitt zu Analysis Workspace verschoben.</li></ul> |
 | **Oktober 2023** | |
