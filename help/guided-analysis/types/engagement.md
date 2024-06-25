@@ -1,14 +1,14 @@
 ---
 title: Interaktionsansicht
-description: Machen Sie sich mit der Breite und Tiefe der Interaktion mit Funktionen vertraut.
+description: Erfahren Sie mehr über Umfang und Tiefe der Funktionsinteraktion.
 feature: Adobe Product Analytics, Guided Analysis
 keywords: Produktanalysen
 role: User
 exl-id: 8a48ad3b-fa30-497e-8306-f8d881b1a335
-source-git-commit: a4c35466b225d44130bb55204e2fdb155fa7dee6
+source-git-commit: 670443a8caf6b71f49fc63a23b5328609864a9be
 workflow-type: tm+mt
-source-wordcount: '723'
-ht-degree: 3%
+source-wordcount: '721'
+ht-degree: 4%
 
 ---
 
@@ -23,7 +23,7 @@ Funktionen, die oben in dieser Visualisierung dargestellt werden, zeigen an, das
 * Die Funktionen unten links in der Matrix sind Ihre **geringe Auswirkung** -Funktionen; sie sind nicht weit verbreitet oder werden häufig verwendet.
 * Die Funktionen unten rechts in der Matrix sind Ihre **einmalig** -Funktionen; sie werden zwar weithin angewendet, jedoch nicht häufig verwendet.
 
-![Interaktionsbildschirm](../assets/feature-matrix.png)
+>[!VIDEO](https://video.tv.adobe.com/v/3429489/&learn=on)
 
 ## Anwendungsbeispiele
 
