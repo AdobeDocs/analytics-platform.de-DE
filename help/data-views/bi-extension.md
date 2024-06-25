@@ -1,14 +1,14 @@
 ---
 title: Customer Journey Analytics BI-Erweiterung
-description: Erfahren Sie, wie Sie mit Query Service, Power BI, Tableau oder anderen BI- und SQL-Tools mithilfe der Customer Journey Analytics BI-Erweiterung auf Datenansichten zugreifen können.
+description: Erfahren Sie, wie Sie mit Power BI oder Tableau mithilfe der Customer Journey Analytics BI-Erweiterung auf Datenansichten zugreifen können.
 solution: Customer Journey Analytics
 feature: BI Extension
 role: Admin
 exl-id: ab7e1f15-ead9-46b7-94b7-f81802f88ff5
-source-git-commit: 963b8788f9657844d56449bf315abc5018deb5d8
+source-git-commit: 483f74408cfb81f2cbbbb25df9402aa829be09b1
 workflow-type: tm+mt
-source-wordcount: '2770'
-ht-degree: 74%
+source-wordcount: '2797'
+ht-degree: 68%
 
 ---
 
@@ -28,19 +28,17 @@ Die wichtigsten Vorteile sind:
 
 ## Voraussetzungen
 
-Um diese Funktion verwenden zu können, müssen Sie:
+Um diese Funktion verwenden zu können, müssen Sie über Folgendes verfügen:
 
 <!---   Enable the [!UICONTROL Customer Journey Analytics BI extension] in your Experience Platform organization. -->
 
-* Konfigurieren Sie die Funktionalität für die relevanten Produktprofile, Benutzergruppen und/oder einzelnen Benutzer. Zu den Zugriffsanforderungen gehören:
-   * Query Service von Adobe Experience Platform
-   * Workspace-Projekte im Customer Journey Analytics
-   * Gewünschte CJA-Datenansichten zur Verwendung
-   * Zugriff auf die BI-Erweiterung in den Datenansichts-Tools
-
+* Gewährter Zugriff auf Experience Platform und Customer Journey Analytics.
+* Produktadministratorzugriff auf Customer Journey Analytics gewährt, damit Sie Verbindungen und Datenansichten anzeigen, bearbeiten, aktualisieren oder löschen können.
+* Gewährter Zugriff auf die Datenansichten, auf die Sie zugreifen möchten.
+* Gewährter Zugriff auf die CJA BI-Erweiterung.
 * Verwenden Sie das Ablaufdatum für nicht ablaufende Anmeldedaten, um BI-Tools mit dem [!DNL Customer Journey Analytics BI extension]. Die [Handbuch zu Anmeldeinformationen](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/credentials) enthält weitere Informationen zum Festlegen ablaufender oder nicht ablaufender Anmeldeinformationen.
 
-Weitere Informationen sind im Abschnitt „Verwaltung von Customer Journey Analytics“ unter [Zugriffssteuerung](../technotes/access-control.md) zu finden.
+Siehe [Zugriffskontrolle für Kunden-Journey](../technotes/access-control.md) für weitere Informationen, insbesondere die [Zusätzliche Berechtigungen für Produktadministratoren](../technotes/access-control.md#product-admin-additional-permissions) und [Customer Journey Analytics von Berechtigungen in der Admin Console](../technotes/access-control.md#customer-journey-analytics-permissions-in-admin-console).
 
 
 ## Nutzung
@@ -84,7 +82,7 @@ In Adobe Experience Platform:
 
 +++
 
-Siehe [Anleitung zur Benutzeroberfläche des Abfrageeditors](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/user-guide) für weitere Informationen.
+Siehe [Anleitung zur Benutzeroberfläche des Abfrage-Editors](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/user-guide) für weitere Informationen.
 
 
 ### BI-Tools
@@ -113,9 +111,9 @@ Derzeit wird die [!DNL Customer Journey Analytics BI extension] wird nur für Po
 
    1. Im Dialogfeld **[!UICONTROL ** PostgresSQL-Datenbank **]**:
 
-      1. Fügen Sie den Parameter **[!UICONTROL ** Host **]** aus den [!UICONTROL Anmeldeinformationen] von Experience Platform-Abfragen in das Textfeld **[!UICONTROL ** Server **]** ein.
+      1. Fügen Sie die **[!UICONTROL ** Host **]** Parameter aus Experience Platform-Abfragen [!UICONTROL Anmeldeinformationen] im  **[!UICONTROL ** Server **]** Textfeld.
 
-      1. Fügen Sie den Parameter **[!UICONTROL ** Datenbank **]** aus den [!UICONTROL Anmeldedaten] von Experience Platform-Abfragen in das Textfeld **[!UICONTROL ** Datenbank **]** ein.
+      1. Fügen Sie die **[!UICONTROL ** Datenbank **]** Parameter aus Experience Platform-Abfragen [!UICONTROL Anmeldeinformationen] im **[!UICONTROL ** Datenbank **]** Textfeld.
 
          Fügen Sie `?FLATTEN` zum Parameter **[!UICONTROL ** Datenbank **]** hinzu, damit er sich beispielsweise liest wie `prod:cja?FLATTEN`. Weitere Informationen finden Sie unter [Reduzieren verschachtelter Datenstrukturen für die Verwendung mit BI-Tools von Drittanbietern](https://experienceleague.adobe.com/en/docs/experience-platform/query/key-concepts/flatten-nested-data).
 
@@ -124,7 +122,7 @@ Derzeit wird die [!DNL Customer Journey Analytics BI extension] wird nur für Po
       1. Sie werden aufgefordert, **[!UICONTROL Benutzername]** und **[!UICONTROL Passwort]** einzugeben. Verwenden Sie die entsprechenden Parameter aus den [!UICONTROL Anmeldeinformationen] von Experience Platform-Abfragen.
 
 
-   1. Nach erfolgreicher Anmeldung werden die Customer Journey Analytics-Datenansichtstabellen in der Power BI **[!UICONTROL ** Navigator **]**.
+   1. Nach erfolgreicher Anmeldung werden die Customer Journey Analytics-Datentabellen in Power BIs angezeigt **[!UICONTROL ** Navigator **]**.
 
    1. Wählen Sie die Datenansichtstabellen aus, die Sie verwenden möchten, und wählen Sie dann **[!UICONTROL ** Laden **]** aus.
 
@@ -154,11 +152,11 @@ Derzeit wird die [!DNL Customer Journey Analytics BI extension] wird nur für Po
 
    1. Im Dialogfeld [!UICONTROL PostgresSQL]:
 
-      1. Fügen Sie den Parameter **[!UICONTROL ** Host **]** aus den [!UICONTROL Anmeldeinformationen] von Experience Platform-Abfragen in das Textfeld **[!UICONTROL ** Server **]** ein.
+      1. Fügen Sie die **[!UICONTROL ** Host **]** Parameter aus Experience Platform-Abfragen [!UICONTROL Anmeldeinformationen] in **[!UICONTROL ** Server **]** Textfeld.
 
-      1. Fügen Sie den Parameter **[!UICONTROL ** Port **]** aus den [!UICONTROL Anmeldeinformationen] von Experience Platform-Abfragen in das Textfeld **[!UICONTROL ** Port **]** ein.
+      1. Fügen Sie die **[!UICONTROL ** Port **]** Parameter aus Experience Platform-Abfragen [!UICONTROL Anmeldeinformationen] in **[!UICONTROL ** Port **]** Textfeld.
 
-      1. Fügen Sie den Parameter **[!UICONTROL ** Datenbank **]** aus den [!UICONTROL Anmeldeinformationen] von Experience Platform-Abfragen in das Textfeld **[!UICONTROL ** Datenbank **]** ein.
+      1. Fügen Sie die **[!UICONTROL ** Datenbank **]** Parameter aus Experience Platform-Abfragen [!UICONTROL Anmeldeinformationen] in **[!UICONTROL ** Datenbank **]** Textfeld.
 
          Fügen Sie `%3FFLATTEN` zum Parameter **[!UICONTROL ** Datenbank **]** hinzu, damit er sich beispielsweise liest wie `prod:cja%3FFLATTEN`. Weitere Informationen finden Sie unter [Reduzieren verschachtelter Datenstrukturen für die Verwendung mit BI-Tools von Drittanbietern](https://experienceleague.adobe.com/en/docs/experience-platform/query/key-concepts/flatten-nested-data).
 
@@ -166,9 +164,9 @@ Derzeit wird die [!DNL Customer Journey Analytics BI extension] wird nur für Po
 
       1. Fügen Sie den Parameter **[!UICONTROL ** Benutzername **]** aus den [!UICONTROL Anmeldeinformationen] von Experience Platform-Abfragen in das Textfeld **[!UICONTROL ** Benutzername **]** ein.
 
-      1. Fügen Sie den Parameter **[!UICONTROL ** Passwort **]** aus den [!UICONTROL Anmeldeinformationen] von Experience Platform-Abfragen in das Textfeld **[!UICONTROL ** Passwort **]** ein.
+      1. Fügen Sie die **[!UICONTROL ** Passwort **]** Parameter aus Experience Platform-Abfragen [!UICONTROL Anmeldeinformationen] in **[!UICONTROL ** Passwort **]** Textfeld.
 
-      1. Wählen Sie **[!UICONTROL ** Anmelden **]** aus.
+      1. Wählen Sie die **[!UICONTROL ** Anmelden **]**.
 
    1. Customer Journey Analytics-Datenansichten werden als Tabellen in der **[!UICONTROL ** Verzeichnis **]** Liste.
 
@@ -222,7 +220,7 @@ Beispiele für SQL, die Sie verwenden können, finden Sie in der folgenden Tabel
 | Muster | Beispiel |
 |---|---|
 | Schema-Erkennung | <pre>SELECT * FROM dv1 WHERE 1=0</pre> |
-| Mit Ranking/Aufschlüsselung | <pre>SELECT dim1, SUM(metric1) AS m1<br/>FROM dv1<br/>WHERE \`timestamp\` BETWEEN &#39;2022-01-01&#39; AND &#39;2022-01-02&#39;<br/>GROUP BY dim1</pre><pre>SELECT dim1, SUM(metric1) AS m1<br/>FROM dv1<br/>WHERE \`timestamp\` BETWEEN &#39;2022-01-01&#39; AND &#39;2022-01-02&#39; AND<br/>  filterId = &#39;12345&#39;<br/>GROUP BY dim1</pre><pre>SELECT dim1, SUM(metric1) AS m1<br/>FROM dv1<br/>WHERE \`timestamp\` BETWEEN &#39;2022-01-01&#39; AND &#39;2022-01-02&#39; AND<br/>  AND (dim2 = &#39;A&#39; OR dim3 IN (&#39;X&#39;, &#39;Y&#39;, &#39;Z&#39;))<br/>GROUP BY dim1</pre> |
+| Rangansicht oder Verteilung | <pre>SELECT dim1, SUM(metric1) AS m1<br/>FROM dv1<br/>WHERE \`timestamp\` BETWEEN &#39;2022-01-01&#39; AND &#39;2022-01-02&#39;<br/>GROUP BY dim1</pre><pre>SELECT dim1, SUM(metric1) AS m1<br/>FROM dv1<br/>WHERE \`timestamp\` BETWEEN &#39;2022-01-01&#39; AND &#39;2022-01-02&#39; AND<br/>  filterId = &#39;12345&#39;<br/>GROUP BY dim1</pre><pre>SELECT dim1, SUM(metric1) AS m1<br/>FROM dv1<br/>WHERE \`timestamp\` BETWEEN &#39;2022-01-01&#39; AND &#39;2022-01-02&#39; AND<br/>  AND (dim2 = &#39;A&#39; OR dim3 IN (&#39;X&#39;, &#39;Y&#39;, &#39;Z&#39;))<br/>GROUP BY dim1</pre> |
 | `HAVING` clause | <pre>SELECT dim1, SUM(metric1) AS m1<br/>FROM dv1<br/>WHERE \`timestamp\` BETWEEN &#39;2022-01-01&#39; AND &#39;2022-01-02&#39;<br/>GROUP BY dim1<br/>HAVING m1 > 100</pre> |
 | Eindeutige, obere <br/>Dimensionswerte | <pre>SELECT DISTINCT dim1 FROM dv1</pre><pre>SELECT dim1 AS dv1<br/>FROM dv1<br/>WHERE \`timestamp\` BETWEEN &#39;2022-01-01&#39; AND &#39;2022-01-02&#39;<br/>GROUP BY dim1</pre><pre>SELECT dim1 AS dv1<br/>FROM dv1<br/>WHERE \`timestamp\` >= &#39;2022-01-01&#39; AND \`timestamp\` &lt; &#39;2022-01-02&#39;<br/>GROUP BY dim1<br/>ORDER BY SUM(metric1)<br/>LIMIT 15</pre> |
 | Metriksummen | <pre>SELECT SUM(metric1) AS m1<br/>FROM dv1<br/>WHERE \`timestamp\` BETWEEN &#39;2022-01-01&#39; AND &#39;2022-01-02&#39;</pre> |
@@ -258,7 +256,7 @@ Sie können:
 
 #### Zählung unterschiedlicher Werte
 
-Aufgrund der zugrunde liegenden Funktionsweise von Customer Journey Analytics ist die einzige Dimension, für die Sie die Anzahl der eindeutigen Werte genau bestimmen können, die Dimension `adobe_personid`. Die folgenden SQL-Ausdrücke `SELECT COUNT(DISTINCT adobe_personid)` oder `SELECT APPROX_COUNT_DISTINCT(adobe_personid)` geben den Wert der Standardmetrik „Personen“ zurück, die der Anzahl der eindeutigen Personen entspricht. Bei anderen Dimensionen wird eine ungefähre Zählung der eindeutigen Personen zurückgegeben.
+Aufgrund der zugrunde liegenden Funktionsweise von Customer Journey Analytics ist die einzige Dimension, für die Sie die Anzahl der eindeutigen Werte genau bestimmen können, die Dimension `adobe_personid`. Die folgenden SQL-Anweisungen `SELECT COUNT(DISTINCT adobe_personid)` oder `SELECT APPROX_COUNT_DISTINCT(adobe_personid)` gibt den Wert der Standard-Personenmetrik zurück, d. h. die Anzahl unterschiedlicher Personen. Bei anderen Dimensionen wird eine ungefähre Zählung der eindeutigen Personen zurückgegeben.
 
 #### Bedingte Metriken
 
@@ -276,7 +274,7 @@ SUM(CASE WHEN dim1 = 'X' AND dim2 = 'A' THEN metric1 END) AS m1
 
 #### Inline-Berechnungen
 
-Sie können zusätzliche Mathematik auf Metrikausdrücke in Ihrer `SELECT` anstatt die Mathematik in einer berechneten Metrik zu definieren. In der folgenden Tabelle ist aufgeführt, welche Arten von Ausdrücken unterstützt werden.
+Sie können zusätzliche Mathematik auf Metrikausdrücke in Ihrer `SELECT`. Diese Mathematik kann verwendet werden, anstatt die Mathematik in einer berechneten Metrik zu definieren. In der folgenden Tabelle ist aufgeführt, welche Arten von Ausdrücken unterstützt werden.
 
 | Operator oder Funktion | Details |
 |---|---|
@@ -304,19 +302,19 @@ Das Zeitstempelfeld kann auch in Datums-/Uhrzeitfunktionen verwendet werden, um 
 
 #### Datumsbereich
 
-Die Sonderspalte `daterange` funktioniert ähnlich wie `timestamp`, die Filterung ist jedoch hier auf volle Tage beschränkt. `daterange` ist ebenfalls optional und hat denselben Standardbereich wie `timestamp`.
+Die `daterange` Sonderspalten funktionieren ähnlich `timestamp`; die Filterung ist jedoch auf volle Tage beschränkt. `daterange` ist ebenfalls optional und hat denselben Standardbereich wie `timestamp`.
 Die `daterange` -Feld kann auch in Datums-/Uhrzeitfunktionen verwendet werden, um das Ereignisdatum zu analysieren oder abzuschneiden.
 
 Die `daterangeName` Eine spezielle Spalte kann verwendet werden, um Ihre Abfrage mit einem benannten Datumsbereich wie `Last Quarter`.
 
 >[!NOTE]
 >
->PowerBI unterstützt nicht `daterange` Metriken, die weniger als einen Tag betragen (Stunde, 30 Minuten, 5 Minuten usw.).
+>Power BI unterstützt nicht `daterange` Metriken, die weniger als einen Tag betragen (Stunde, 30 Minuten, 5 Minuten usw.).
 
 
 #### Filter-ID
 
-Die spezielle Spalte `filterId` ist optional und wird verwendet, um einen extern definierten Filter auf die Abfrage anzuwenden. Das Anwenden eines extern definierten Filters auf eine Abfrage ähnelt dem Ziehen eines Filters auf ein Bedienfeld in Workspace. Mehrere Filter-IDs können durch Verbinden mit `AND` bereitgestellt werden.
+Die spezielle Spalte `filterId` ist optional und wird verwendet, um einen extern definierten Filter auf die Abfrage anzuwenden. Das Anwenden eines extern definierten Filters auf eine Abfrage ähnelt dem Ziehen eines Filters auf ein Bedienfeld in Workspace. Mehrere Filter-IDs können von `AND`- und sie.
 
 Zusammen mit `filterId`, können Sie `filterName` , um den Namen eines Filters anstelle der ID zu verwenden.
 

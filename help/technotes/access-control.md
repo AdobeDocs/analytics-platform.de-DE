@@ -6,18 +6,18 @@ feature: Basics
 exl-id: c258fa39-c0b6-45a1-8547-79516c15a215
 mini-toc-levels: 3
 role: Admin
-source-git-commit: 7280bd21882e2baa31e76dbb6f983ccaf1af8633
+source-git-commit: 1a470345a6a2748b992263c3ad25e4cd7d3daa9e
 workflow-type: tm+mt
-source-wordcount: '1195'
-ht-degree: 54%
+source-wordcount: '1288'
+ht-degree: 42%
 
 ---
 
 # Zugriffssteuerung für Customer Journey Analytics
 
-Customer Journey Analytics wird durch drei Zugriffsebenen oder drei Rollen gesteuert: Produktadministratorrolle, Produktprofil-Administratorrolle und Benutzerzugriff. In diesem Thema werden diese Rollen ausführlicher erläutert.
+Für die Customer Journey Analytics gibt es drei Zugriffsebenen oder drei Benutzerrollen: Produktadministratorrolle, Produktprofil-Administratorrolle und Benutzerzugriff. In diesem Thema werden diese Rollen ausführlicher erläutert.
 
-Darüber hinaus werden granulare Möglichkeiten zur Einschränkung des Zugriffs behandelt, beispielsweise die Workspace-Kuratierung und die Zugriffskontrolle auf Zeilen- und Werteebene.
+Darüber hinaus werden in diesem Artikel detailliertere Möglichkeiten zur Beschränkung des Zugriffs beschrieben, z. B. die Kuratierung von Workspace und die Zeilenebene sowie die Zugriffskontrolle auf Wertebene.
 
 ## Produktadministrator-Rolle
 
@@ -49,35 +49,45 @@ Zusätzlich dazu, als Produkt-Admin im **Customer Journey Analytics-Produktprofi
 
 * Erstellen, Aktualisieren und Löschen von Daten [Verbindungen](/help/connections/overview.md)
 
-  Um diese Aufgabe ausführen zu können, müssen Benutzer Teil eines **Experience Platform-Produktprofil** , der die folgenden Berechtigungen bereitstellt:
+  Um diese Aufgabe durchzuführen, müssen Benutzer Teil eines **Experience Platform-Produktprofil** , der die folgenden Berechtigungen bereitstellt:
    * Datenmodellierung: Schemas anzeigen, Schemas verwalten
    * Daten-Management: Datensätze anzeigen, Datensätze verwalten
    * Datenaufnahme: Quellen verwalten
    * Anzeigen von Identity-Namespaces
 
-     Weitere Informationen zu Berechtigungen für Experience Platform finden Sie unter [Zugriffssteuerung in Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html?lang=de).
+     Weitere Informationen zu Berechtigungen für Experience Platform finden Sie unter [Zugriffssteuerung in Adobe Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/home).
 
 * Exportieren von Datensätzen in Cloud [Ziele](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/export-datasets.html?lang=de)
 
   Um diese Aufgabe ausführen zu können, benötigen Benutzer die folgenden Experience Platform-Berechtigungen:
+
    * Verwalten von Zielen
    * Aktivieren von Zielen
 
-     Weitere Informationen zu Berechtigungen für Experience Platform-Ziele finden Sie unter [Ziele - Übersicht](https://experienceleague.adobe.com/docs/experience-platform/destinations/home.html#access-controls).
+     Weitere Informationen zu Berechtigungen für Experience Platform-Ziele finden Sie unter [Ziele - Übersicht](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/home).
+
+* Verwenden Sie die [BI-Erweiterung](../data-views/bi-extension.md)
+
+  Damit Benutzer die BI-Erweiterung, einen Produkt-Admin, verwenden können
+
+   * muss sicherstellen, dass die Experience Platform-Berechtigungen für den Benutzer eine Rolle enthalten, die über die Query Service-Ressource mit den Optionen Abfragen verwalten und Query Service-Integration verwalten verfügt. Siehe [Berechtigungen für ein Produktprofil verwalten](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/ui/permissions).
+   * muss die entsprechenden Customer Journey Analytics-Berechtigungen für den Benutzer sicherstellen:
+      * Zugriffsberechtigung auf die entsprechenden Datenansichten. Siehe Datenansichten unter [Customer Journey Analytics-Berechtigungen in Admin Console](#customer-journey-analytics-permissions-in-admin-console).
+      * Zugriffsberechtigung auf die CJA BI-Erweiterung. Siehe Datenansichts-Tools in [Customer Journey Analytics-Berechtigungen in Admin Console](#customer-journey-analytics-permissions-in-admin-console).
 
 ## Produktprofil-Administratorrolle
 
 Ein Produktprofil ist ein Satz von Berechtigungen. Produktprofil-Admins können Folgendes:
 
-* Individuelle Produktprofile erstellen und verwalten, beispielsweise neue Benutzende hinzufügen oder Benutzergruppen und ihre zugehörigen Produktprofile verwalten.
+* Erstellen und verwalten Sie einzelne Produktprofile. Zum Beispiel das Hinzufügen neuer Benutzer oder das Verwalten von Benutzergruppen und den zugehörigen Produktprofilen.
 
 * Bearbeiten Sie in Customer Journey Analytics Datenansichten, die Teil eines von ihnen verwalteten Produktprofils sind. Sie können keine neuen Datenansichten erstellen.
 
 ## Zugriff auf Benutzerebene
 
-In der folgenden Matrix werden die wichtigsten Zugriffsberechtigungen für verschiedene Customer Journey Analytics-Funktionen für Nicht-Produktadministratoren und CJA-Produktadministratoren beschrieben. Das Verständnis dieser Berechtigungen hilft Benutzern, effektiv zu navigieren und CJA basierend auf ihrer Rolle und Verantwortung innerhalb des Unternehmens zu nutzen.
+In der folgenden Matrix werden die wichtigsten Zugriffsberechtigungen für verschiedene Customer Journey Analytics-Funktionen für Nicht-Produktadministratoren und Customer Journey Analytics-Produktadministratoren beschrieben. Anhand dieser Berechtigungen können Benutzer anhand ihrer Rolle und Verantwortlichkeiten innerhalb des Unternehmens effektiv zu navigieren und Customer Journey Analytics zu verwenden.
 
-| CJA-Produktfunktionen | Nicht-Produkt-Admins (Benutzer) | Produktadministratoren |
+| Produktfunktionen | Nicht-Produkt-Admins (Benutzer) | Produktadministratoren |
 | --- | --- | --- |
 | **Datenansichten** | Kann nicht anzeigen/aktualisieren/erstellen/löschen | Kann erstellen/aktualisieren/löschen |
 | **Verbindungen** | Kann nicht anzeigen/aktualisieren/erstellen/löschen | Kann erstellen/aktualisieren/löschen |
@@ -102,7 +112,7 @@ Hier sind einige Anwendungsfälle, die zeigen, wie die Zugriffskontrolle in real
 
 ### Zugriff durch Dritte
 
-Ein Drittanbieter, mit dem Ihr Unternehmen zusammenarbeitet, hat einen Teamleiter, der als Produktprofil-Admin festgelegt werden kann. Dieser Admin kann diesem Produktprofil dann Benutzende seines Teams hinzufügen. Dieser Admin kann Zugriff auf bestimmte Datenansichten gewähren und andere Benutzende zu diesem Produktprofil hinzufügen. Außerdem können sie die Datenansichten, über die sie die Kontrolle haben, an die Anforderungen ihrer Teams anpassen.
+Ein Drittanbieter, mit dem Ihr Unternehmen zusammenarbeitet, hat einen Teamleiter, der als Produktprofil-Admin festgelegt werden kann. Dieser Administrator kann diesem Produktprofil Benutzer aus dem Team des Unternehmens hinzufügen. Dieser Admin kann Zugriff auf bestimmte Datenansichten gewähren und andere Benutzende zu diesem Produktprofil hinzufügen. Außerdem können sie die Datenansichten, über die sie die Kontrolle haben, an die Anforderungen ihrer Teams anpassen.
 
 ### Zugriffskontrolle auf Zeilenebene
 
@@ -129,22 +139,22 @@ Die Registerkarte **[!UICONTROL Berechtigungen]** ist Teil jedes Produktprofils 
 | --- | --- |
 | **[!UICONTROL Datenansichten]** | Wenn **[!UICONTROL Auto-Include]** auf **[!UICONTROL Ein]** umgeschaltet wird, können Benutzende, die Teil dieses Produktprofils sind, alle vorhandenen und neu erstellten Datenansichten anzeigen. Wenn diese Einstellung auf **[!UICONTROL Aus]** gesetzt ist, können bestimmte Datenansichten ausgewählt werden, auf die Benutzende Zugriff haben. |
 | **[!UICONTROL Reporting-Tools]**: |   |
-| **[!UICONTROL Zugriff auf Auditprotokolle]** | Diese Berechtigung erzwingt die Berechtigungsprüfung für die [API](https://adobe.io/cja-apis/docs/endpoints/auditlogs/) und die Benutzeroberfläche für Administratorprotokolle. |
+| **[!UICONTROL Zugriff auf Auditprotokolle]** | Diese Berechtigung erzwingt die Berechtigungsprüfung für die [API](https://www.adobe.io/cja-apis/docs/endpoints/auditlogs/) und die Benutzeroberfläche für Administratorprotokolle. |
 | **[!UICONTROL Zugriff auf Analysis Workspace]** | Ermöglicht Benutzern den Zugriff auf Analysis Workspace unter Customer Journey Analytics. |
-| [!UICONTROL **Geführter Zugriff auf Analysen**] | Benutzer können [Geführte Analyseprojekte](/help/guided-analysis/overview.md). |
-| [!UICONTROL **Prognose**] | Ermöglicht Benutzern den Zugriff auf die Prognosefunktion in Analysis Workspace |
-| **[!UICONTROL Verwaltung der Reporting-Nutzung]** | Ermöglicht Benutzenden das Anzeigen und Löschen aller in ihrem Unternehmen laufenden Berichte. |
-| **[!UICONTROL Anzeige der Reporting-Nutzung]** | Ermöglicht Benutzenden die Anzeige aller gleichzeitigen Berichtsanfragen. |
-| [!UICONTROL **Vollständiger Tabellenexport**] | Ermöglicht Benutzern [vollständige Tabellen in die Cloud exportieren](/help/analysis-workspace/export/export-cloud.md). |
-| **[!UICONTROL Erstellung berechneter Metriken]** | Ermöglicht Benutzenden die Erstellung von [berechneten Metriken](/help/components/calc-metrics/calc-metr-overview.md). |
-| **[!UICONTROL Filter-Erstellung]** | Ermöglicht Benutzenden die Erstellung von [Filtern](/help/components/filters/filters-overview.md). |
-| **[!UICONTROL Labs-Zugriff]** | Ermöglicht Benutzern den Zugriff auf [Labs](/help/labs/labs.md) Registerkarte in Customer Journey Analytics. |
-| **[!UICONTROL Anmerkungserstellung]** | Ermöglicht Benutzenden das Erstellen von [Anmerkungen](/help/components/annotations/overview.md). |
-| **[!UICONTROL Zielgruppenerstellung]** | Ermöglicht Benutzenden das Erstellen von [Zielgruppen](/help/components/audiences/audiences-overview.md). |
-| **[!UICONTROL Zielgruppenansicht]** | Ermöglicht Benutzenden die Ansicht von [Zielgruppen](/help/components/audiences/audiences-overview.md). |
-| [!UICONTROL **Projektverknüpfungen für beliebige Benutzer freigeben**] | Ermöglicht Benutzern [Projekte für andere freigeben.](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/share-projects.html?lang=de#share-public-link) |
+| [!UICONTROL **Geführter Zugriff auf Analysen**] | Benutzer erstellen lassen [Geführte Analyseprojekte](/help/guided-analysis/overview.md). |
+| [!UICONTROL **Prognose**] | Ermöglichen des Zugriffs auf die Prognosefunktion in Analysis Workspace |
+| **[!UICONTROL Verwaltung der Reporting-Nutzung]** | Ermöglichen Benutzern das Anzeigen und Löschen von Berichten, die in ihrem Unternehmen ausgeführt werden. |
+| **[!UICONTROL Anzeige der Reporting-Nutzung]** | Ermöglicht Benutzern das Anzeigen aller gleichzeitigen Berichtsanforderungen. |
+| [!UICONTROL **Vollständiger Tabellenexport**] | Benutzer zulassen [vollständige Tabellen in die Cloud exportieren](/help/analysis-workspace/export/export-cloud.md). |
+| **[!UICONTROL Erstellung berechneter Metriken]** | Benutzer erstellen lassen [berechnete Metriken](/help/components/calc-metrics/calc-metr-overview.md). |
+| **[!UICONTROL Filter-Erstellung]** | Benutzer erstellen lassen [Filter](/help/components/filters/filters-overview.md). |
+| **[!UICONTROL Labs-Zugriff]** | Ermöglichen Sie Benutzern Zugriff auf [Labs](/help/labs/labs.md) Registerkarte in Customer Journey Analytics. |
+| **[!UICONTROL Anmerkungserstellung]** | Benutzer erstellen lassen [Anmerkungen](/help/components/annotations/overview.md). |
+| **[!UICONTROL Zielgruppenerstellung]** | Benutzer erstellen lassen [Zielgruppen](/help/components/audiences/audiences-overview.md). |
+| **[!UICONTROL Zielgruppenansicht]** | Benutzer anzeigen [Zielgruppen](/help/components/audiences/audiences-overview.md). |
+| [!UICONTROL **Projektverknüpfungen für beliebige Benutzer freigeben**] | Benutzer zulassen [Projekte für andere freigeben.](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/curate-share/share-projects) |
 | **[!UICONTROL Datenansichts-Tools]**: |   |
-| [!UICONTROL **Vollständiger Tabellenexport**] | Ermöglicht Benutzern [vollständige Tabellen in die Cloud exportieren](/help/analysis-workspace/export/export-cloud.md). |
-| [!UICONTROL **Zugriff auf SQL Query Service**] | Ermöglicht Benutzern Zugriff [Query Service in AEP](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=de). |
+| [!UICONTROL **Vollständiger Tabellenexport**] | Benutzer zulassen [vollständige Tabellen in die Cloud exportieren](/help/analysis-workspace/export/export-cloud.md). |
+| **[!UICONTROL [!UICONTROL CJA BI-Erweiterung]]** | Benutzer können die [BI-Erweiterung](../data-views/bi-extension.md). |
 
 {style="table-layout:auto"}
