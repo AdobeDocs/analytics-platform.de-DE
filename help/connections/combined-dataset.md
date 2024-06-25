@@ -5,10 +5,10 @@ exl-id: 9f678225-a9f3-4134-be38-924b8de8d57f
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 80d5a864e063911b46ff248f2ea89c1ed0d14e32
 workflow-type: tm+mt
-source-wordcount: '581'
-ht-degree: 60%
+source-wordcount: '578'
+ht-degree: 61%
 
 ---
 
@@ -100,6 +100,5 @@ Weiterführende Informationen zur kanalübergreifenden Analyse finden Sie im ent
 Eine ausführlichere Funktion zum Stitching finden Sie unter:
 
 * [Stitching-Übersicht](/help/stitching/overview.md)
-* [Funktionsweise von Stitching](../stitching/explained.md)
 * [Häufig gestellte Fragen](/help/stitching/faq.md)
 

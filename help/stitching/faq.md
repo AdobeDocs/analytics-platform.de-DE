@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 exl-id: f4115164-7263-40ad-9706-3b98d0bb7905
 role: Admin
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 80d5a864e063911b46ff248f2ea89c1ed0d14e32
 workflow-type: tm+mt
-source-wordcount: '1269'
-ht-degree: 34%
+source-wordcount: '1428'
+ht-degree: 29%
 
 ---
 
@@ -31,7 +31,7 @@ Wenn Sie die Datensatz-ID-Dimensionselemente umbenennen möchten, können Sie ei
 
 +++**Wie weit reicht die Zuordnung von wiedergegebenen Besuchern zurück?**
 
-Das Lookback-Fenster für die Neuzuweisung hängt von der gewünschten Häufigkeit der [Wiederholung](explained.md) der Daten ab. Wenn Sie beispielsweise die Zuordnung so einrichten, dass Daten einmal wöchentlich wiederholt werden, beträgt das Lookback-Fenster für die Neuzuweisung sieben Tage. Wenn Sie die Zuordnung so einrichten, dass Daten täglich wiederholt werden, beträgt das Lookback-Fenster für die Neuzuweisung einen Tag.
+Das Lookback-Fenster für die Neuzuweisung hängt von der gewünschten Häufigkeit der Wiederholung der Daten ab. Wenn Sie beispielsweise die Zuordnung so einrichten, dass Daten einmal wöchentlich wiederholt werden, beträgt das Lookback-Fenster für die Neuzuweisung sieben Tage. Wenn Sie die Zuordnung so einrichten, dass Daten täglich wiederholt werden, beträgt das Lookback-Fenster für die Neuzuweisung einen Tag.
 
 +++
 
@@ -47,7 +47,9 @@ Die vorübergehende ID setzt die beständige ID außer Kraft, sodass freigegeben
 
 In einigen Fällen kann eine einzelne benutzende Person mit mehreren beständigen IDs verknüpft sein. Ein Beispiel ist eine Person, die häufig die Cookies des Browsers löscht oder den privaten/Inkognito-Modus des Browsers verwendet.
 
-Die Anzahl der beständigen IDs ist für die vorübergehende ID irrelevant. Ein einzelner Benutzer kann zu einer beliebigen Anzahl von Geräten gehören, ohne dass sich dies auf die Fähigkeit von Customer Journey Analytics auswirkt, Geräte zuzuordnen.
+Bei feldbasiertem Stitching ist die Anzahl der beständigen IDs für die vorübergehende ID irrelevant. Ein einzelner Benutzer kann zu einer beliebigen Anzahl von Geräten gehören, ohne dass sich dies auf die Fähigkeit von Customer Journey Analytics auswirkt, Geräte zuzuordnen.
+
+Für eine grafikbasierte Zuordnung kann eine einzelne Person im Identitätsdiagramm über viele beständige IDs verfügen. Die Diagrammbasierte Zuordnung verwendet die beständige ID basierend auf dem angegebenen Namespace. Wenn für denselben Namespace eine beständige ID vorhanden ist, wird die lexikografische erste beständige ID verwendet.
 
 +++
 
@@ -85,7 +87,7 @@ Wenn das Feld &quot;Persistente ID&quot;bei einem Ereignis in einem Datensatz, d
 
 Seien Sie vorsichtig mit &quot;Personen reduzieren&quot;, was auftritt, wenn die Zuordnung auf Daten angewendet wird, die Platzhalterwerte für Übergangs-IDs verwenden. In der folgenden Beispieltabelle werden nicht definierte Personen-IDs aus einem Datensatz, der aus einem CRM-System stammt, mit dem Wert &quot;Undefiniert&quot;ausgefüllt, was zu einer falschen Darstellung von Personen führt.
 
-| Ereignis-   | Zeitstempel | Beständige ID (Cookie-ID) | Verlaufs-ID (Anmelde-ID) | Zugeordnete ID (nach der Wiederholung) |
+| Ereignis | Zeitstempel | Beständige ID (Cookie-ID) | Verlaufs-ID (Anmelde-ID) | Zugeordnete ID (nach der Wiederholung) |
 |---|---|---|---|---|
 | 1 | 12.05.2023 12:01 | 123 | – | **Geschichte** |
 | 2 | 2023-05-12 12:02 | 123 | Geschichte | **Geschichte** |
@@ -120,3 +122,21 @@ Andere Metriken können in Customer Journey Analytics und Adobe Analytics ähnli
 Nein, Customer Journey Analytics kann derzeit keine Identity Map-Felder zum Stitching verwenden.
 
 +++
+
++++**Müssen Daten neu gekocht werden, um von feldbasiertem Stitching zu grafischem Stitching zu wechseln?**
+Daten müssen nicht in Experience Platform neu aufgenommen werden, sie müssen jedoch in Customer Journey Analytics neu konfiguriert werden. Führen Sie folgende Schritte aus:
+
+1. Richten Sie den neuen graphenbasierten zugeordneten Datensatz ein.
+1. Konfigurieren Sie den neuen Datensatz als Teil einer neuen Verbindung in Customer Journey Analytics.
+1. Wechseln Sie Ihre vorhandene Datenansicht zur Verwendung der neuen Verbindung (und als solche zum neuen, auf Diagrammen basierenden gestuften Datensatz)
+1. Entfernen Sie die alte Verbindung, die den feldbasierten zugeordneten Datensatz verwendet hat.
+
++++
+
++++**Bestehen irgendwelche Störungen bei bestehenden Berichten?**
+
+Nicht, wenn Sie die oben beschriebenen Schritte ausführen. Andernfalls bitten Sie Adobe Consulting um zusätzlichen Support.
+
++++
+
+

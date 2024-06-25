@@ -5,10 +5,10 @@ exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
 solution: Customer Journey Analytics
 feature: FAQ
 role: User
-source-git-commit: 172d80a832356b59df875336c15865c9bacdd837
+source-git-commit: 80d5a864e063911b46ff248f2ea89c1ed0d14e32
 workflow-type: tm+mt
 source-wordcount: '2536'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -58,14 +58,14 @@ Ja. Bei der [Zuordnung](../stitching/overview.md) werden Benutzerdaten aus authe
 
 +++**Wie funktioniert die „Wiederholung“ bei der Zuordnungsfunktion?**
 
-Die Zuordnungsfunktion „wiederholt“ Daten basierend auf eindeutigen Kennungen, die sie gelernt hat. Bei der Wiederholung werden zunächst nicht authentifizierte Ereignisse von Geräten zugeordnet, die in der Zwischenzeit identifiziert wurden. [Weitere Informationen](../stitching/explained.md)
+Die Zuordnungsfunktion „wiederholt“ Daten basierend auf eindeutigen Kennungen, die sie gelernt hat. Bei der Wiederholung werden zunächst nicht authentifizierte Ereignisse von Geräten zugeordnet, die in der Zwischenzeit identifiziert wurden. [Weitere Informationen](../stitching/overview.md)
 
 +++
 
 
 +++**Wie funktioniert die Zuordnung historischer Daten (Aufstockung)?**
 
-Bei der erstmaligen Aktivierung stellt Adobe eine Aufstockung der zusammengefügten Daten bereit, die bis zum Beginn des Vormonats zurückreicht (bis zu 60 Tage). Um diese Aufstockung durchführen zu können, muss die vorübergehende ID in den nicht zusammengefügten Daten aus dem so weit zurückreichenden Zeitfenster vorhanden sein. [Weitere Informationen](../stitching/explained.md)
+Bei der erstmaligen Aktivierung stellt Adobe eine Aufstockung der zusammengefügten Daten bereit, die bis zum Beginn des Vormonats zurückreicht (bis zu 60 Tage). Um diese Aufstockung durchführen zu können, muss die vorübergehende ID in den nicht zusammengefügten Daten aus dem so weit zurückreichenden Zeitfenster vorhanden sein. [Weitere Informationen](../stitching/overview.md)
 
 +++
 
@@ -174,9 +174,9 @@ Wenn Sie planen, Adobe Analytics-Daten über den [Adobe Analytics-Quell-Connecto
 
 ## 8. [!UICONTROL Adobe Analytics]-Komponenten
 
-+++**Kann ich freigeben/veröffentlichen? [!UICONTROL Zielgruppen] von [!DNL Customer Journey Analytics] Experience Platform Real-Time CDP oder andere Experience Cloud-Applikationen?**
++++**Kann ich [!UICONTROL Zielgruppen] von [!DNL Customer Journey Analytics] für Experience Platform Real-Time CDP oder andere Experience Cloud-Anwendungen freigeben/veröffentlichen?**
 
-Sie können [Erstellen und Veröffentlichen von Zielgruppen](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-components/audiences/publish) identifiziert in Customer Journey Analytics zum Echtzeit-Kundenprofil in Adobe Experience Platform für Kunden-Targeting und -Personalisierung.
+Sie können in Customer Journey Analytics identifizierte [Zielgruppen erstellen](https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-components/audiences/publish) und im Echtzeit-Kundenprofil in Adobe Experience Platform veröffentlichen, um sie zum Targeting und zur Personalisierung zu verwenden.
 
 +++
 
@@ -210,9 +210,9 @@ Das hängt von Ihrem Anwendungsfall ab. Bitte wenden Sie sich an Ihr Adobe-Accou
 
 +++
 
-## 9. Verbindungsgröße schätzen {#estimate-size}
+## 9. Schätzen der Verbindungsgröße {#estimate-size}
 
-Siehe [Nutzung schätzen und verwalten](/help/technotes/estimate-usage.md).
+Siehe [Schätzen und Verwalten der Nutzung](/help/technotes/estimate-usage.md).
 
 ## 10. Über die Limits bei der Verwendung {#overage}
 
