@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Connections
 role: Admin
 exl-id: 7729c1b9-b3ed-4662-a446-2088389bbd97
-source-git-commit: 6e50e9341c2eedd6e4882cc3eb943cbcb8dfc332
+source-git-commit: eef9b420f1016254dece0a916b82bc99e2ca866e
 workflow-type: tm+mt
-source-wordcount: '327'
+source-wordcount: '365'
 ht-degree: 0%
 
 ---
@@ -22,6 +22,11 @@ Diese Umwandlung ist nur für Datensätze mit Daten für B2B-Lookup-Schemas verf
 * [XDM Business Opportunity-Personenbeziehung](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/classes/b2b/business-opportunity-person-relation)
 * [XDM Business Marketing List-Mitglieder](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/classes/b2b/business-marketing-list-members)
 * [XDM Business Campaign-Mitglieder](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/classes/b2b/business-campaign-members)
+
+>[!NOTE]
+>
+>Für jede ID sind maximal 10.000 Elemente zulässig. Diese Einschränkung bedeutet, dass Sie für eine bestimmte Personen-ID nur über 10.000 Konten, 10.000 Möglichkeiten, 10.000 Marketinglisten oder 10.000 Kampagnen verfügen können.
+
 
 So aktivieren Sie die Transformation für einen solchen Datensatz:
 
@@ -44,7 +49,7 @@ So aktivieren Sie die Transformation für einen oder mehrere Datensätze, die be
 
 1. Entfernen Sie die Datensätze aus der Verbindung.
 1. Speichern Sie die Verbindung.
-1. Fügen Sie die Datensätze zur Verbindung hinzu, während Sie die Transformation für die Datensätze aktivieren
+1. Fügen Sie die Datensätze zur Verbindung hinzu, während Sie die Transformation für die Datensätze aktivieren.
 
 ## Hintergrundinformationen
 
