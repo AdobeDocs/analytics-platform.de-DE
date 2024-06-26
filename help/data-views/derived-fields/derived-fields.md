@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Derived Fields
 exl-id: bcd172b2-cd13-421a-92c6-e8c53fa95936
 role: Admin
-source-git-commit: a0515c68407b01dd39bed9f0bf9121b575d02dea
+source-git-commit: efa7aaf80f0f7c6b232f7024a556e0e54504c0be
 workflow-type: tm+mt
-source-wordcount: '8373'
+source-wordcount: '8075'
 ht-degree: 12%
 
 ---
@@ -833,32 +833,32 @@ Sie definieren eine `Origin - Destination` abgeleitetes Feld. Sie verwenden die 
 +++
 
 
-<!-- DEDUPLICATE -->
+<!-- DEDUPLICATE
 
-### Deduplizieren
+### Deduplicate
 
-Verhindert die mehrfache Zählung eines Werts.
+Prevents counting a value multiple times.
 
 +++ Details
 
 {{release-limited-testing-section}}
 
-## Spezifikationen {#deduplicate-io}
+## Specifications {#deduplicate-io}
 
-| Eingabedatentyp | Eingabe | Einbezogene Operatoren | Einschränkungen | Ausgabe |
+| Input Data Type | Input | Included Operators | Limitations | Output |
 |---|---|---|---|---|
-| <ul><li>Zeichenfolge</li><li>Numerisch</li></ul> | <ul><li>[!UICONTROL Wert]:<ul><li>Regeln</li><li>Standardfelder</li><li>Felder</li><li>Zeichenfolge</li></ul></li><li>[!UICONTROL Anwendungsbereich]:<ul><li>Benutzer</li><li>Sitzung</li></ul></li><li>[!UICONTROL Deduplizierungs-ID]:<ul><li>Regeln</li><li>Standardfelder</li><li>Felder</li><li>Zeichenfolge</li></ul><li>[!UICONTROL Wert zu beibehalten]:<ul><li>Erste Instanz beibehalten</li><li>Letzte Instanz beibehalten</li></ul></li></ul> | <p>-/-</p> | <p>5 Funktionen pro abgeleitetem Feld</p> | <p>Neues abgeleitetes Feld</p> |
+| <ul><li>String</li><li>Numeric</li></ul> | <ul><li>[!UICONTROL Value]:<ul><li>Rules</li><li>Standard fields</li><li>Fields</li><li>String</li></ul></li><li>[!UICONTROL Scope]:<ul><li>Person</li><li>Session</li></ul></li><li>[!UICONTROL Deduplication ID]:<ul><li>Rules</li><li>Standard fields</li><li>Fields</li><li>String</li></ul><li>[!UICONTROL Value to keep]:<ul><li>Keep first instance</li><li>Keep last instance</li></ul></li></ul> | <p>N/A</p>| <p>5 functions per derived field</p> | <p>New derived field</p> |
 
 {style="table-layout:auto"}
 
 
-## Anwendungsfall 1 {#deduplicate-uc1}
+## Use case 1 {#deduplicate-uc1}
 
-Sie möchten verhindern, dass doppelte Umsätze gezählt werden, wenn ein Benutzer die Buchungsbestätigungsseite neu lädt. Sie verwenden die Buchungsbestätigungs-ID am Identifikator, um den Umsatz nicht erneut zu zählen, wenn Sie ihn bei demselben Ereignis erhalten.
+You want to prevent counting duplicate revenue when a user reloads the booking confirmation page. You use the booking confirmation ID at the identifier to not count the revenue again, when received on the same event.
 
-### Daten vor {#deduplicate-uc1-databefore}
+### Data before {#deduplicate-uc1-databefore}
 
-| Buchungsbestätigungs-ID | Umsatz |
+| Booking Confirmation ID | Revenue |
 |----|---:|
 | ABC123456789 | 359 |
 | ABC123456789 | 359 |
@@ -866,15 +866,15 @@ Sie möchten verhindern, dass doppelte Umsätze gezählt werden, wenn ein Benutz
 
 {style="table-layout:auto"}
 
-### Abgeleitetes Feld {#deduplicate-uc1-derivedfield}
+### Derived field {#deduplicate-uc1-derivedfield}
 
-Sie definieren eine `Booking Confirmation` abgeleitetes Feld. Sie verwenden die [!UICONTROL DEDUPLIKAT] -Funktion, um eine Regel zum Deaktivieren der [!UICONTROL Wert] [!DNL Booking] für [!UICONTROL Anwendungsbereich] [!DNL Person] using [!UICONTROL Deduplizierungs-ID] [!UICONTROL Buchungsbestätigungs-ID]. Wählen Sie [!UICONTROL Erste Instanz beibehalten] as [!UICONTROL Wert zu beibehalten].
+You define a `Booking Confirmation` derived field. You use the [!UICONTROL DEDUPLICATE] function to define a rule to deduplicate the [!UICONTROL Value] [!DNL Booking] for [!UICONTROL Scope] [!DNL Person] using [!UICONTROL Deduplication ID] [!UICONTROL Booking Confirmation ID]. You select [!UICONTROL Keep first instance] as [!UICONTROL Value to keep].
 
-![Screenshot der Verkettungsregel](assets/deduplicate-1.png)
+![Screenshot of the Concatenate rule](assets/deduplicate-1.png)
 
-### Daten nach {#deduplicate-uc1-dataafter}
+### Data after {#deduplicate-uc1-dataafter}
 
-| Buchungsbestätigungs-ID | Umsatz |
+| Booking Confirmation ID | Revenue |
 |----|---:|
 | ABC123456789 | 359 |
 | ABC123456789 | 0 |
@@ -882,41 +882,43 @@ Sie definieren eine `Booking Confirmation` abgeleitetes Feld. Sie verwenden die 
 
 {style="table-layout:auto"}
 
-## Anwendungsfall 2 {#deduplicate-uc2}
+## Use case 2 {#deduplicate-uc2}
 
-Sie verwenden Ereignisse als Proxy für Kampagnen-Clickthroughs mit externen Marketing-Kampagnen. Neuladungen und Umleitungen verursachen eine überhöhte Ereignismetrik. Sie möchten die Dimension des Trackingcodes deduplizieren, sodass nur die erste erfasst wird, und die Ereignisüberzählung minimieren.
+You use events as a proxy for campaign click-throughs with external marketing campaigns. Reloads & redirects are causing the event metric to be inflated. You would like to deduplicate the tracking code dimension so only the first is collected and minimize the event overcounting.
 
-### Daten vor {#deduplicate-uc2-databefore}
+### Data before {#deduplicate-uc2-databefore}
 
-| Besucher-ID | Marketing-Kanal | Ereignisse |
+| Visitor ID | Marketing Channel | Events |
 |----|---|---:|
-| ABC123 | Paid Search | 1 |
-| ABC123 | Paid Search | 1 |
-| ABC123 | Paid Search | 1 |
-| DEF 123 | E-Mail | 1 |
-| DEF 123 | E-Mail | 1 |
-| JKL 123 | natürliche Suche | 1 |
-| JKL 123 | natürliche Suche | 1 |
+| ABC123 | paid search | 1 |
+| ABC123 | paid search | 1 |
+| ABC123 | paid search | 1 |
+| DEF123 | email | 1 |
+| DEF123 | email | 1 |
+| JKL123 | natural search | 1 |
+| JKL123 | natural search | 1 |
 
 {style="table-layout:auto"}
 
-### Abgeleitetes Feld {#deduplicate-uc2-derivedfield}
+### Derived field {#deduplicate-uc2-derivedfield}
 
-Sie definieren eine neue `Tracking Code (deduplicated)` abgeleitetes Feld. Sie verwenden die [!UICONTROL DEDUPLIKAT] -Funktion, um eine Regel zum Deaktivieren der [!UICONTROL Trackingcode] mit [!UICONTROL Deduplizierungsbereich] von [!UICONTROL Sitzung] und [!UICONTROL Erste Instanz beibehalten] als [!UICONTROL Wert zu beibehalten].
+You define a new `Tracking Code (deduplicated)` derived field. You use the [!UICONTROL DEDUPLICATE] function to define a rule to deduplicate the [!UICONTROL Tracking Code] with a [!UICONTROL Deduplication scope] of [!UICONTROL Session] and [!UICONTROL Keep first instance] as the [!UICONTROL Value to keep].
 
-![Screenshot der Verkettungsregel](assets/deduplicate-2.png)
+![Screenshot of the Concatenate rule](assets/deduplicate-2.png)
 
-### Daten nach {#deduplicate-uc2-dataafter}
+### Data after {#deduplicate-uc2-dataafter}
 
-| Besucher-ID | Marketing-Kanal | Ereignisse |
+| Visitor ID | Marketing Channel | Events |
 |----|---|---:|
-| ABC123 | Paid Search | 1 |
-| DEF 123 | E-Mail | 1 |
-| JKL 123 | natürliche Suche | 1 |
+| ABC123 | paid search | 1 |
+| DEF123 | email | 1 |
+| JKL123 | natural search | 1 |
 
 {style="table-layout:auto"}
 
 +++
+
+-->
 
 <!-- FIND AND REPLACE -->
 
@@ -1503,8 +1505,6 @@ Sie erstellen eine `Second Response` abgeleitetes Feld, um den letzten Wert aus 
 Wendet Aggregatfunktionen auf Metriken oder Dimensionen auf Ereignis-, Sitzungs- und Benutzerebene an.
 
 +++ Details
-
-{{release-limited-testing-section}}
 
 ## Spezifikation {#summarize-io}
 

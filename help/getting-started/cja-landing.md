@@ -4,10 +4,10 @@ description: Landingpage von Customer Journey Analytics.
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 7f67c497-386b-4442-a502-6b492f35c6e6
-source-git-commit: 67a249ab291201926eb50df296e031b616de6e6f
-workflow-type: ht
-source-wordcount: '677'
-ht-degree: 100%
+source-git-commit: efa7aaf80f0f7c6b232f7024a556e0e54504c0be
+workflow-type: tm+mt
+source-wordcount: '758'
+ht-degree: 85%
 
 ---
 
@@ -29,6 +29,12 @@ Der KI-Assistent ist eine Dialogerfahrung, die es Fachleuten ermöglicht, Aufgab
 
 [![Bild](assets/learn-more-button.svg)](/help/ai-assistant.md)
 
+>[!TAB Diagrammbasiertes Stitching]
+
+Durch eine grafikbasierte Zuordnung können Sie das Identitätsdiagramm aus dem Experience Platform Identity-Dienst verwenden, um eine bessere Ansicht der Journey des Kunden zu erhalten, indem Sie: <ul><li>Datensätze mit verschiedenen Kennungen verknüpfen, ohne zusätzliche Daten extrahieren, transformieren und laden zu müssen, um eine einzelne Kennung widerzuspiegeln.</li> <li>Verbesserung der Abdeckung der bevorzugten oder goldenen Identität für einen Datensatz durch die gemeinsame Nutzung von Identitäten über Datensätze hinweg,</li><li>Abstimmung von in Real-time Customer Data Platform und Journey Optimizer erstellten Profilen mit Personen im Customer Journey Analytics.</li></ul>
+
+[![Bild](assets/learn-more-button.svg)](/help/stitching/overview.md#graph-based-stitching)
+
 >[!TAB B2B-Suchen]
 
 Im Rahmen der Konfiguration einer Verbindung können Sie Datensätze für bestimmte B2B-Suchschemata transformieren, um personenbasierte Suchen nach B2B-Daten besser zu unterstützen.
@@ -37,7 +43,7 @@ Im Rahmen der Konfiguration einer Verbindung können Sie Datensätze für bestim
 
 >[!TAB Abgeleitete Felder]
 
-Neue abgeleitete Feldfunktionen (Mathematik, Weiter oder Zurück) und zusätzliche Funktionsvorlagen (wie Bounces, benutzerfreundlicher Datensatzname, Weihnachtszeit, monatliche Ziele, einfache Bot-Erkennung und andere) sind jetzt verfügbar.
+Neue abgeleitete Feldfunktionen (Mathematik, Weiter oder Zurück, Zusammenfassung) und zusätzliche Funktionsvorlagen (wie Absprünge, Anzeigename des Datensatzes, Weihnachtszeit, Monatsziele, einfache Bot-Erkennung und andere) sind jetzt verfügbar.
 
 [![Bild](assets/learn-more-button.svg)](/help/data-views/derived-fields/derived-fields.md)
 
