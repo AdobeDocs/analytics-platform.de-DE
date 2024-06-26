@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: ead96b72-40f1-4ce9-8d91-c8ceea6c4458
 role: Admin
-source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
+source-git-commit: dca1cc33058ba57815c3534ab21da86d5247531a
 workflow-type: tm+mt
-source-wordcount: '856'
-ht-degree: 70%
+source-wordcount: '943'
+ht-degree: 63%
 
 ---
 
@@ -20,8 +20,7 @@ Sie haben mehrere Möglichkeiten bei der Aufnahme von Daten in Customer Journey 
 >
 >Doch alle haben gemeinsam, dass die Daten, die in Customer Journey Analytics _verwendet_ werden sollen, eigentlich in Adobe Experience Platform _aufgenommen_ werden müssen.
 
-
-Sehen Sie sich dazu die übergeordnete Customer Journey Analytics-Architektur an, die zuvor in der [Übersicht](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html?lang=de) dargestellt wurde:
+Sehen Sie sich dazu die übergeordnete Customer Journey Analytics-Architektur an, die zuvor in der [Übersicht](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html) dargestellt wurde:
 
 ![Customer Journey Analytics-Architektur beschrieben in diesem Abschnitt](./assets/cja-architecture.png)
 
@@ -35,13 +34,25 @@ Der Datensatz in der obigen Architektur kann aus verschiedenen Quellen stammen:
 
 - Daten aus der Verfolgung Ihrer Website/App mithilfe des Adobe Experience Platform Web/Mobile SDK,
 
-- Daten aus der Verfolgung einer Desktop-Applikation, eines Konsolenspiels, einer Set-Top-Box oder eines IoT-Geräts mithilfe der Adobe Experience Platform Edge Network Server-API oder
+- Daten aus der Verfolgung einer Desktop-Applikation, eines Konsolenspiels, einer Set-Top-Box oder eines IoT-Geräts mithilfe der Adobe Experience Platform Edge Network Server API oder
 
 - Daten von einem Third-Party-Datenanbieter, für die Adobe einen Quell-Connector bereitstellt
 
 Von diesen Datensätzen kann es viele geben.
 
 Im Folgenden finden Sie Kurzanleitungen für verschiedene Szenarien.
+
+## Aufnahmen priorisieren und Latenz
+
+Sie können Ihre Ereignisdaten innerhalb von 90 Minuten (SLT) in Customer Journey Analytics erfassen, unabhängig davon, ob die Daten 24 Stunden, 48 Stunden oder 7 Tage alt sind.
+
+Beachten Sie, dass sich diese Funktion je nach dem von Ihrem Unternehmen erworbenen SKU-Paket unterscheidet:
+
+- Priority Ingestion Standard: 24-Stunden-Daten innerhalb einer 90-minütigen SLT-Verarbeitung (verfügbar für **CJA Foundation** und **CJA-Auswahl**)
+
+- Priority Ingestion Intermediate: 72 Stunden alte Daten innerhalb einer 90-minütigen SLT-Verarbeitung (verfügbar für **CJA Prime**)
+
+- Priority Ingestion Erweitert: 1 Woche alte Daten innerhalb einer 90-minütigen SLT-Verarbeitung (verfügbar für **CJA Ultimate**)
 
 ## Aufnehmen und Verwenden von Daten aus Adobe Analytics
 
@@ -50,7 +61,7 @@ Sie haben Adobe Analytics bereits bereitgestellt und möchten diese Daten in Ado
 Weitere Informationen finden Sie unter [Aufnehmen und Verwenden von Daten aus Adobe Analytics](./analytics.md).
 
 
-## Daten über Edge Network erfassen und verwenden
+## Daten über das Edge Network erfassen und verwenden
 
 ### Verwenden des Adobe Experience Platform Web SDK
 
@@ -66,7 +77,7 @@ Siehe [Daten über das Adobe Experience Platform Mobile SDK erfassen und verwend
 
 ### Verwenden der Adobe Experience Platform Edge Network Server-API
 
-Sie möchten Ihre Desktop-Applikation, das Spiel, wie es auf einer Spielkonsole gespielt wird, die Nutzung einer Video-Streaming-Applikation auf einer Set-Top-Box oder Ihr IoT-Gerät mit Adobe-Technologie analysieren. Möglichkeit der Migration von einer anderen Lösung oder der Verfolgung des Verhaltens einer Person auf diesen Geräten von Grund auf. Sie möchten die Best Practices für die Implementierung befolgen, bei der die Adobe Experience Platform Edge Network Server-APIs und das Edge Network zum Erfassen der Daten verwendet werden. Anschließend können Sie die aufgenommenen Daten mit Daten aus anderen Kanälen und Datenquellen in Customer Journey Analytics verwenden, kombinieren und analysieren.
+Sie möchten Ihre Desktop-Applikation, das Spiel, wie es auf einer Spielkonsole gespielt wird, die Nutzung einer Video-Streaming-Applikation auf einer Set-Top-Box oder Ihr IoT-Gerät mit Adobe-Technologie analysieren. Möglichkeit der Migration von einer anderen Lösung oder der Verfolgung des Verhaltens einer Person auf diesen Geräten von Grund auf. Sie möchten die Best Practices für die Implementierung befolgen, bei der die Adobe Experience Platform Edge Network Server-APIs und Edge Network zur Aufnahme der Daten verwendet werden. Anschließend können Sie die aufgenommenen Daten mit Daten aus anderen Kanälen und Datenquellen in Customer Journey Analytics verwenden, kombinieren und analysieren.
 
 Siehe [Daten über die Adobe Experience Platform Edge Network Server-API erfassen und verwenden](./serverapi.md) für weitere Informationen.
 
