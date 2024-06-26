@@ -6,7 +6,7 @@ exl-id: 0a87518c-3608-44ad-b5e3-976f97560433
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: 6d5877b59dcc625e6cf324109bcb8162fb194187
+source-git-commit: 71931b85de6b238c0c6c6fd7b72d06f25103b906
 workflow-type: tm+mt
 source-wordcount: '3188'
 ht-degree: 14%
@@ -51,7 +51,7 @@ Die folgenden Spalten oder Symbole sind in der Tabelle verfügbar.
 | [!UICONTROL Importieren neuer Daten] | Zeigt den Status des Imports neuer Daten für Datensätze an: <p>![Status Grün](assets/status-green.svg))    **[!UICONTROL _x _on]**für Datensätze, die zum Importieren neuer Daten konfiguriert sind, und<p>![Status grau](assets/status-gray.svg)   **[!UICONTROL _x Aus_]** für Datensätze, die nicht für den Import neuer Daten konfiguriert sind. |
 | [!UICONTROL Erstellt am] | Der Zeitstempel, zu dem die Verbindung erstellt wurde. |
 | [!UICONTROL Zuletzt geändert] | Der Zeitstempel, zu dem die Verbindung zuletzt aktualisiert wird. |
-| [!UICONTROL Aufstockungsdaten] | Zeigt den Status für Aufstockungsdaten in allen Datensätzen an.<p>![Status rot](assets/status-red.svg)   **[!UICONTROL _x _Aufstockungen fehlgeschlagen]**für die Anzahl fehlgeschlagener Aufstockungen in Datensätzen,<p>![Statusorange](assets/status-orange.svg)   **[!UICONTROL _x _Verarbeitung von Backfilets]**für die Anzahl der Aufstockungen für die Verarbeitung in Datensätzen,<p>![Status Grün](assets/status-green.svg))   **[!UICONTROL _x _Aufstockungen abgeschlossen]**für die Anzahl abgeschlossener Backups für Datensätze und<p>![Status grau](assets/status-gray.svg)   **[!UICONTROL _Aus_]** , falls für die Datensätze in der Verbindung keine Rückfüllungen definiert sind. |
+| [!UICONTROL Aufstockungsdaten] | Zeigt den Status für Aufstockungsdaten in allen Datensätzen an.<p>![Status rot](assets/status-red.svg)   **[!UICONTROL _x _Aufstockungen fehlgeschlagen]**für die Anzahl fehlgeschlagener Aufstockungen in Datensätzen,<p>![Statusorange](assets/status-orange.svg)   **[!UICONTROL _x _Verarbeitung von Backfilets]**für die Anzahl der Aufstockungen für die Verarbeitung in Datensätzen,<p>![Status Grün](assets/status-green.svg)   **[!UICONTROL _x _Aufstockungen abgeschlossen]**für die Anzahl abgeschlossener Backups für Datensätze und<p>![Status grau](assets/status-gray.svg)   **[!UICONTROL _Aus_]** , falls für die Datensätze in der Verbindung keine Rückfüllungen definiert sind. |
 
 Auswahl der anzuzeigenden Spalten konfigurieren ![Spalteneinstellungen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ColumnSettings_18_N.svg), der die **Tabelle anpassen** -Dialogfeld, in dem Sie Spalten in der Tabelle ein- oder ausschalten können.
 
@@ -89,7 +89,7 @@ Alternativ können Sie:
 
 Wenn Sie eine Verbindung löschen, wird eine **[!UICONTROL Verbindung löschen]** gibt an, welche Datenansichten gelöscht werden und welche Workspace-Projekte betroffen sind.
 
-<img src="./assets/delete-connection.png" alt="Verbindung löschen" width="400"/>
+![Verbindung löschen](assets/delete-connection.png)
 
 Auswählen **[!UICONTROL Weiter]** , um die Verbindung zu löschen.
 
