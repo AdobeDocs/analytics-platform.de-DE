@@ -4,10 +4,10 @@ description: Landingpage von Customer Journey Analytics.
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 7f67c497-386b-4442-a502-6b492f35c6e6
-source-git-commit: efa7aaf80f0f7c6b232f7024a556e0e54504c0be
+source-git-commit: 6d5877b59dcc625e6cf324109bcb8162fb194187
 workflow-type: tm+mt
 source-wordcount: '758'
-ht-degree: 85%
+ht-degree: 83%
 
 ---
 
@@ -53,7 +53,7 @@ Die BI-Erweiterung ermöglicht SQL-Zugriff auf Datenansichten, die Sie in Custom
 
 [![Bild](assets/learn-more-button.svg)](/help/data-views/bi-extension.md)
 
-<span style="color:gray">*_Sie müssen mindestens über das Select-Paket verfügen, um die BI-Erweiterung verwenden zu können._</span>
+*_Sie müssen über das Paket Auswählen oder höher verfügen, um die BI-Erweiterung verwenden zu können._*
 
 
 <!--

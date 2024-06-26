@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Derived Fields
 exl-id: bcd172b2-cd13-421a-92c6-e8c53fa95936
 role: Admin
-source-git-commit: efa7aaf80f0f7c6b232f7024a556e0e54504c0be
+source-git-commit: 6d5877b59dcc625e6cf324109bcb8162fb194187
 workflow-type: tm+mt
 source-wordcount: '8075'
 ht-degree: 12%
@@ -14,7 +14,7 @@ ht-degree: 12%
 
 # Abgeleitete Felder
 
-Abgeleitete Felder sind ein wichtiger Aspekt der Echtzeitberichterstellungsfunktion in Adobe Customer Journey Analytics. Mit einem abgeleiteten Feld können Sie mithilfe eines anpassbaren Regel-Builders spontan (häufig komplexe) Datenmanipulationen definieren. Anschließend können Sie dieses abgeleitete Feld als Komponente (Metrik oder Dimension) in [Arbeitsbereich](../../analysis-workspace/home.md) oder definieren Sie das abgeleitete Feld als Komponente in [Datenansicht](../data-views.md).
+Abgeleitete Felder sind ein wichtiger Aspekt der Echtzeitberichterstellungsfunktion in Adobe Customer Journey Analytics. Mit einem abgeleiteten Feld können Sie mithilfe eines anpassbaren Regel-Builders spontan (häufig komplexe) Datenmanipulationen definieren. Anschließend können Sie dieses abgeleitete Feld als Komponente (Metrik oder Dimension) in [Workspace](../../analysis-workspace/home.md) oder definieren Sie das abgeleitete Feld als Komponente in [Datenansicht](../data-views.md).
 
 Abgeleitete Felder können viel Zeit und Mühe sparen, verglichen mit der Transformation oder Manipulation Ihrer Daten an anderen Orten außerhalb von Customer Journey Analytics. Beispiel: [Datenvorbereitung](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html?lang=de), [Data Distiller](https://experienceleague.adobe.com/docs/experience-platform/query/data-distiller/overview.html)oder innerhalb Ihrer eigenen Extract Transform Load (ETL)-/Extract Load Transform (ELT)-Prozesse.
 
@@ -607,9 +607,9 @@ Die folgenden Einschränkungen gelten und werden erzwungen, wenn *Auswählen* un
 
 |  | Begrenzungen |
 |:---:|----|
-| **<span style='color: red'>A</span>** | Werte *select* innerhalb desselben [!UICONTROL Wenn], [!UICONTROL Else If] struct (using [!UICONTROL und] oder [!UICONTROL Oder]) in einer Regel muss aus demselben Container stammen und kann von jedem Typ sein (Zeichenfolge) ![Zeichenfolge](assets/Smock_ABC_18_N.svg), numerisch ![Numerisch](assets/Smock_123_18_N.svg)usw.). <br/>![Screenshot der Abhängigkeit A](assets/dependency-a.png) |
-| **<span style='color: red'>B</span>** | Alle Werte, die Sie *set* in einer Regel muss aus demselben Container stammen und denselben Typ oder einen abgeleiteten Wert desselben Typs aufweisen. <br/> ![Screenshot der Abhängigkeit B](assets/dependency-b.png) |
-| **<span style='color: blue'>C</span>** | Die Werte, die Sie *select* Überall [!UICONTROL Wenn], [!UICONTROL Else If] -Konstrukte in der Regelaufgabe *not* müssen aus demselben Container stammen und tun *not* müssen vom gleichen Typ sein. <br/> ![Screenshot der Abhängigkeit C](assets/dependency-c.png) |
+| **A** | Werte *select* innerhalb desselben [!UICONTROL Wenn], [!UICONTROL Else If] struct (using [!UICONTROL und] oder [!UICONTROL Oder]) in einer Regel muss aus demselben Container stammen und kann von jedem Typ sein (Zeichenfolge) ![Zeichenfolge](assets/Smock_ABC_18_N.svg), numerisch ![Numerisch](assets/Smock_123_18_N.svg)usw.). <br/>![Screenshot der Abhängigkeit A](assets/dependency-a.png) |
+| **B** | Alle Werte, die Sie *set* in einer Regel muss aus demselben Container stammen und denselben Typ oder einen abgeleiteten Wert desselben Typs aufweisen. <br/> ![Screenshot der Abhängigkeit B](assets/dependency-b.png) |
+| **C** | Die Werte, die Sie *select* Überall [!UICONTROL Wenn], [!UICONTROL Else If] -Konstrukte in der Regelaufgabe *not* müssen aus demselben Container stammen und tun *not* müssen vom gleichen Typ sein. <br/> ![Screenshot der Abhängigkeit C](assets/dependency-c.png) |
 
 {style="table-layout:auto"}
 
@@ -1151,7 +1151,7 @@ So erstellen Sie eine Formel:
 1. So fügen Sie einen statischen Wert ein (beispielsweise `1.05`), geben Sie den Wert ein und wählen Sie **[!UICONTROL Hinzufügen *x* als statischen Wert]** oder **[!UICONTROL Hinzufügen -*x* als negativen statischen Wert]** aus dem Popup-Menü.
    ![Match More Info 2](assets/math-more-info-2.png)
 
-1. Ein grünes Häkchen ![Kontrollkästchen](./assets/checkmark.svg)</span> gibt an, ob Ihre Mathematikformel gültig ist. Andernfalls wird eine Warnung angezeigt <span style="color:red">![Warnung](./assets/alert.svg)</span> und die Nachricht <span style="color:#ea3829">[!UICONTROL Ungültiger Formelausdruck].</span>
+1. Ein grünes Häkchen ![Kontrollkästchen](./assets/checkmark.svg)</span> gibt an, ob Ihre Mathematikformel gültig ist. Andernfalls wird eine Warnung angezeigt ![Warnung](./assets/alert.svg) und die Nachricht [!UICONTROL Ungültiger Formelausdruck].
    ![Match More Info 3](assets/math-more-info-3.png)
 
 Beim Arbeiten mit statischen Zahlen im [!UICONTROL MATH] Funktion:
@@ -1516,7 +1516,7 @@ Wendet Aggregatfunktionen auf Metriken oder Dimensionen auf Ereignis-, Sitzungs-
 
 ## Anwendungsfall {#summarize-uc}
 
-Sie möchten &quot;Zu Warenkorbumsatz hinzufügen&quot;in drei verschiedene Kategorien unterteilen: &quot;Klein&quot;, &quot;Mittel&quot;und &quot;Groß&quot;. Auf diese Weise können Sie die Eigenschaften von hochwertigen Kunden analysieren und identifizieren.
+Sie möchten &quot;Zu Warenkorbumsatz hinzufügen&quot;in drei verschiedene Kategorien unterteilen: &quot;Klein&quot;, &quot;Medium&quot;und &quot;Groß&quot;. Auf diese Weise können Sie die Eigenschaften von hochwertigen Kunden analysieren und identifizieren.
 
 ### Daten vor {#summarize-uc-databefore}
 
@@ -1533,7 +1533,7 @@ Szenarien:
 Logik:
 
 - Wenn der Gesamtumsatz zum Warenkorb für einen Besucher weniger als 150 USD beträgt, setzen Sie auf &quot;Klein&quot;.
-- Wenn der Gesamtumsatz zum Warenkorb für einen Besucher größer als 150 USD, aber weniger als 500 USD ist, setzen Sie auf &quot;Mittel&quot;.
+- Wenn der Gesamtumsatz zum Warenkorb für einen Besucher größer als 150 USD, aber weniger als 500 USD ist, setzen Sie auf Medium.
 - Wenn der Gesamtumsatz zum Warenkorb für einen Besucher größer als oder gleich 500 USD ist, setzen Sie auf &quot;Groß&quot;.
 
 Ergebnisse:
