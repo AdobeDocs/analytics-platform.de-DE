@@ -5,10 +5,10 @@ exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: 8ff130a20c719a594207f854ff3b85619f38b512
+source-git-commit: f6b0088522a821a006d1c7fb4c55b4b2e11ff310
 workflow-type: tm+mt
-source-wordcount: '1714'
-ht-degree: 85%
+source-wordcount: '1761'
+ht-degree: 83%
 
 ---
 
@@ -52,11 +52,15 @@ Stellt übergreifende Einstellungen für die Datenansicht bereit.
 
 ### Kompatibilität
 
+{{release-limited-testing-section}}
+
 Bietet Einstellungen, die bei der Verwendung von Adobe Journey Optimizer zusätzlich zum Customer Journey Analytics angewendet werden können.
+
+Dieser Abschnitt ist nur für Administratoren sichtbar, die mit Journey Optimizer bereitgestellt wurden.
 
 | Einstellung | Beschreibung |
 | --- | --- |
-| [!UICONTROL **Als Standarddatenansicht in Adobe Journey Optimizer festlegen**] | Diese Konfigurationsoption standardisiert die Berichterstellung über Journey Optimizer und Customer Journey Analytics. Sie können auch eine erweiterte Analyse Ihrer Adobe Journey Optimizer-Daten in Customer Journey Analytics durchführen (indem Sie die Option [!UICONTROL **Analysieren in CJA**] in Journey Optimizer).<p>Für diese Art von Analyse benötigt Journey Optimizer Zugriff auf eine Customer Journey Analytics-Datenansicht.<p>Aktivieren Sie diese Option, damit dies zur standardmäßigen Datenansicht wird, die in Journey Optimizer-Berichten verwendet wird.</p><p>Diese Konfigurationsoption automatisch:</p><ul><li>Konfiguriert alle erforderlichen Journey Optimizer-Datensätze in der zugehörigen Verbindung in Customer Journey Analytics für die Verwendung mit Journey Optimizer.</li><li>Erstellt einen Satz von Journey Optimizer-Metriken und -Dimensionen in der Datenansicht (einschließlich abgeleiteter Felder und berechneter Metriken). Kontextbezeichnungen werden automatisch für alle diese Metriken und Dimensionen festgelegt.<p>**Hinweis:** Bei Bedarf können Sie zusätzliche manuelle Anpassungen an den Datensätzen, Dimensionen oder Metriken vornehmen, die in Ihren Datenansichten verfügbar sind, die Sie für Journey Optimizer und Customer Journey Analytics verwenden, wie unter [Integrieren von Adobe Journey Optimizer mit Adobe Customer Journey Analytics](/help/integrations/ajo.md). </p></li></ul><p>Sie können die Standarddatenansicht zu einem späteren Zeitpunkt ändern. Dies kann jedoch Ihre Journey Optimizer-Berichtsdaten ändern. Wenn Sie diese Option deaktivieren, nachdem sie aktiviert wurde, werden Sie aufgefordert, eine neue Standarddatenansicht auszuwählen.</p> |
+| [!UICONTROL **Als Standarddatenansicht in Adobe Journey Optimizer festlegen**] | Diese Konfigurationsoption standardisiert die Berichterstellung über Journey Optimizer und Customer Journey Analytics. Sie können auch eine erweiterte Analyse Ihrer Adobe Journey Optimizer-Daten in Customer Journey Analytics durchführen (indem Sie ![Öffnen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_OpenInLight_18_N.svg) [!UICONTROL **Analysieren in CJA**] in Journey Optimizer).<p>Für diese Art von Analyse benötigt Journey Optimizer Zugriff auf eine Customer Journey Analytics-Datenansicht.<p>Aktivieren Sie diese Option, damit dies zur standardmäßigen Datenansicht wird, die in Journey Optimizer-Berichten für Ihre Sandbox verwendet wird.</p><p>Diese Konfigurationsoption automatisch:</p><ul><li>Konfiguriert alle erforderlichen Journey Optimizer-Datensätze in der zugehörigen Verbindung in Customer Journey Analytics für die Verwendung mit Journey Optimizer.</li><li>Erstellt einen Satz von Journey Optimizer-Metriken und -Dimensionen in der Datenansicht (einschließlich abgeleiteter Felder und berechneter Metriken). Kontextbezeichnungen werden automatisch für alle diese Metriken und Dimensionen festgelegt.</li></ul><p><p>Beachten Sie beim Aktivieren dieser Option Folgendes: <ul><li>Sie können die Standarddatenansicht zu einem späteren Zeitpunkt ändern. Dies kann jedoch Ihre Journey Optimizer-Berichtsdaten ändern. Wenn Sie diese Option deaktivieren, nachdem sie aktiviert wurde, werden Sie aufgefordert, eine neue Standarddatenansicht auszuwählen.</li><li>Wenn Sie bereits manuelle Anpassungen an den Datensätzen, Dimensionen oder Metriken in der Customer Journey Analytics-Datenansicht vorgenommen haben, bleiben Ihre manuellen Anpassungen bei Aktivierung dieser Konfigurationsoption erhalten. Diese Option ermöglicht zusätzliche Anpassungen, die die Berichterstellung über Journey Optimizer und Customer Journey Analytics weiter standardisieren. Nach Aktivierung dieser Option können Sie auch manuelle Anpassungen vornehmen.</li></ul>Siehe [Integrieren von Adobe Journey Optimizer mit Adobe Customer Journey Analytics](/help/integrations/ajo.md) für weitere Informationen. |
 
 {style="table-layout:auto"}
 
