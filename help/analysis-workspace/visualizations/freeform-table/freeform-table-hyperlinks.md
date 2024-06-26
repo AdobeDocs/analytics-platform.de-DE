@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie Hyperlinks für Dimensionselemente in einer F
 feature: Visualizations
 role: User
 exl-id: 24fc2d24-b8c2-4664-8b9c-beda284f9033
-source-git-commit: 0c83d64a2ab3d23f92bc804092fc507479418052
+source-git-commit: 1534b628841a5b4588379b944822073f3288d710
 workflow-type: tm+mt
-source-wordcount: '1730'
-ht-degree: 0%
+source-wordcount: '1738'
+ht-degree: 1%
 
 ---
 
@@ -22,6 +22,10 @@ Diese Funktion ist besonders beim Erstellen von Hyperlinks für die folgenden Ar
 * Dimension von Elementen, die Aufschlüsselungen mit URL-Werten enthalten, mit denen Sie eine Verknüpfung herstellen möchten (z. B. eine Dimension &quot;Seitenname&quot;, die eine Aufschlüsselung der Dimension &quot;Seiten-URL&quot;aufweist)
 
 * Dimension von Elementen oder Aufschlüsselungen mit Werten, die Teil einer URL sind, mit der Sie eine Verknüpfung herstellen möchten (z. B. eine Dimension &quot;Seitenname&quot;, die Teil einer URL ist)
+
+Im Folgenden finden Sie eine Videodemonstration zu dieser Funktion:
+
+>[!VIDEO](https://video.tv.adobe.com/v/3430412/?learn=on)
 
 ## Erstellen von Hyperlinks für ein oder mehrere Dimensionselemente
 

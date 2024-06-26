@@ -4,10 +4,10 @@ description: Verwendung und Interpretation des Bedienfelds „Gleichzeitige Medi
 feature: Panels
 exl-id: a442fb9c-165f-4136-95e2-ce92b9280c25
 role: User
-source-git-commit: d5d81caff62d4fb56a57739ddffb81787f684e23
+source-git-commit: e4d4ff530d28e692301ca0671e055a164b9f7035
 workflow-type: tm+mt
-source-wordcount: '1048'
-ht-degree: 76%
+source-wordcount: '1052'
+ht-degree: 75%
 
 ---
 
@@ -17,7 +17,7 @@ Sie können gleichzeitig Betrachtende analysieren, um zu verstehen, wo Spitzenze
 
 In Analysis Workspace bezeichnet der Begriff &quot;Gleichzeitige Betrachter&quot;die Anzahl der Einzelanwender, die Ihre Medienstreams unabhängig von der Anzahl der Sitzungen zu einem bestimmten Zeitpunkt anzeigen.
 
-Das Bedienfeld „Gleichzeitige Medienbetrachter“ ermöglicht die Analyse von gleichzeitigen Betrachtern im Zeitverlauf mit Details zu Spitzenzeiten des gleichzeitigen Betrachtens und der Möglichkeit, Unterteilungen und Vergleiche vorzunehmen. Um auf das Bedienfeld &quot;Gleichzeitige Medienbetrachter&quot;zuzugreifen, navigieren Sie zu einer Datenansicht mit aktivierten Media Analytics-Komponenten. Klicken Sie dann auf das Panel-Symbol ganz links und ziehen Sie das Panel in Ihr Analysis Workspace-Projekt.
+Das Bedienfeld „Gleichzeitige Medienbetrachter“ ermöglicht die Analyse von gleichzeitigen Betrachtern im Zeitverlauf mit Details zu Spitzenzeiten des gleichzeitigen Betrachtens und der Möglichkeit, Unterteilungen und Vergleiche vorzunehmen. Um auf das Bedienfeld &quot;Gleichzeitige Medienbetrachter&quot;zuzugreifen, navigieren Sie über das Add-on für Streaming-Mediensammlung zu einer Datenansicht mit aktivierten Komponenten. Klicken Sie dann auf das Panel-Symbol ganz links und ziehen Sie das Panel in Ihr Analysis Workspace-Projekt.
 
 Im Folgenden finden Sie eine Videoübersicht zu diesem Panel:
 

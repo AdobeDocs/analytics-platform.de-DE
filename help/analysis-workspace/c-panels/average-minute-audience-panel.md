@@ -3,9 +3,10 @@ title: Bedienfeld „Zielgruppendurchschnitt pro Minute“
 description: Verwenden und Interpretieren des Bedienfelds „Medien-Zielgruppendurchschnitt pro Minute“ in Analysis Workspace.
 feature: Panels
 role: User, Admin
-source-git-commit: 907a627720910794d77f016d797f1b95d2d3ce13
+exl-id: c55b5534-a9a6-47f1-8b43-c8c0b8686c53
+source-git-commit: e4d4ff530d28e692301ca0671e055a164b9f7035
 workflow-type: tm+mt
-source-wordcount: '1656'
+source-wordcount: '1664'
 ht-degree: 31%
 
 ---
@@ -14,9 +15,9 @@ ht-degree: 31%
 
 >[!NOTE]
 >
->Das Zielgruppenfeld Durchschnittliche Medienminuten ist nur für Kunden verfügbar, die das Media Analytics-Add-on für Customer Journey Analytics erworben haben.
+>Das Zielgruppen-Bedienfeld &quot;Durchschnittliche Medienminuten&quot;steht nur Kunden zur Verfügung, die das Streaming-Mediensammlungs-Add-on für Customer Journey Analytics erworben haben.
 >
->Wenden Sie sich an Ihren Adobe-Vertriebsmitarbeiter oder Adobe-Account-Team, um Media Analytics zu erwerben.
+>Wenden Sie sich an Ihren Adobe Sales-Support-Mitarbeiter oder Adobe-Account-Team, um das Streaming Media Collection Add-on zu erwerben.
 
 In Analysis Workspace bezeichnet der Zielgruppendurchschnitt pro Minute die Zeit, die mit der Ansicht Ihres Medien-Streams verbracht wurde, geteilt durch die Inhaltsdauer oder die Gesamtauswahl des Zeitraums mit der ausgewählten Granularität.
 
@@ -34,7 +35,7 @@ Der Bereich Zielgruppe für durchschnittliche Medienminuten bietet im Vergleich 
 
 ## Auf das Zielgruppenfeld &quot;Durchschnittliche Medienminuten&quot;zugreifen
 
-1. Wechseln Sie in Analysis Workspace zu einer Report Suite, für die Media Analytics-Komponenten aktiviert sind.
+1. Wechseln Sie in Analysis Workspace zu einer Report Suite, für die Komponenten im Add-on für Streaming-Mediensammlung aktiviert sind.
 
 1. Wählen Sie im linken Navigationsbereich die **Bedienfelder** Symbol.
 

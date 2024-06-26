@@ -5,10 +5,10 @@ exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: Basics
 role: User
-source-git-commit: 3acf29b703d52145d8679d60ed664cf794b5ee30
-workflow-type: ht
-source-wordcount: '2255'
-ht-degree: 100%
+source-git-commit: e4d4ff530d28e692301ca0671e055a164b9f7035
+workflow-type: tm+mt
+source-wordcount: '2258'
+ht-degree: 98%
 
 ---
 
@@ -48,7 +48,7 @@ In den folgenden Tabellen ist aufgeführt, welche Adobe Analytics-Funktionen in 
 | Virtual Report Suites | Vollständige Unterstützung. Jetzt [Datenansichten](/help/data-views/create-dataview.md) genannt. |
 | Kuratierung von Komponenten der Virtual Report Suite | Vollständige Unterstützung. Jetzt Teil der Datenansichten. |
 | Dimensionen: Gerät, Browser, Referrer, Technologie | Unterstützt sowohl für Datensätze, die auf dem [Analytics-Quell-Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=de) basieren, als auch für Datensätze, die vom Web SDK generiert werden. Weitere Informationen finden Sie in der [Dokumentation zu über ADC unterstützten Analytics-Variablen](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/mapping/analytics.html?lang=de). Wenn Sie die Experience Platform Web SDK-Datenerfassung verwenden, werden Gerät und Dimensionen, die auf der Gerätesuche basieren, derzeit nicht unterstützt. Eine künftige Unterstützung ist geplant. Informationen zum Hinzufügen der Geräte- und Browser-Suche zu Ihrem Web SDK-Datenstrom finden Sie in [dieser Dokumentation](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html?lang=de) |
-| Streamen von Media Analytics | Mediendaten sind über den Analytics-Quell-Connector als Teil des Bedienfelds „Gleichzeitige Medienbetrachter“ und des Bedienfelds „Bei Medienwiedergabe verbrachte Zeit“ in Workspace verfügbar. |
+| Das Streaming-Mediensammlungs-Add-on | Streaming-Mediendaten sind über den Analytics-Quell-Connector als Teil des Bedienfelds &quot;Gleichzeitige Medienbetrachter&quot;und das Bedienfeld &quot;Besuchszeit für Medienwiedergabe&quot;in Workspace verfügbar. |
 
 {style="table-layout:auto"}
 

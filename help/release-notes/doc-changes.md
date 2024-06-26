@@ -4,10 +4,10 @@ description: Listet Inhaltsaktualisierungen für Dokumentation zu Customer Journ
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: efa7aaf80f0f7c6b232f7024a556e0e54504c0be
+source-git-commit: e4d4ff530d28e692301ca0671e055a164b9f7035
 workflow-type: tm+mt
-source-wordcount: '3746'
-ht-degree: 73%
+source-wordcount: '3810'
+ht-degree: 72%
 
 ---
 
@@ -20,6 +20,7 @@ Die folgenden Aktualisierungen wurden seit der ersten Erstellung der Customer Jo
 | Funktion | Beschreibung |
 | --- | --- |
 | **Juni 2024** | |
+| Aktualisierter Produktname, der sich auf Streaming-Medien-Funktionen bezieht | Instanzen von &quot;Media Analytics&quot;und &quot;Streaming Media&quot;wurden durch den Namen &quot;Streaming Media Collection Add-on&quot;ersetzt, wenn auf die Reihe von Streaming-Medien-Funktionen verwiesen wird, die Streaming-Mediendaten erfassen und in Analysis Workspace aufdecken. <p>Diese Updates sind sowohl in der Customer Journey Analytics-Dokumentation als auch in der [Dokumentation zum Streaming Media Collection Add-on](https://experienceleague.adobe.com/de/docs/media-analytics/using/media-overview).</p> |
 | Diagrammbasiertes Stitching | Aktualisiert und neu strukturiert [Zuordnungsdokumentation](/help/stitching/overview.md) mit der Einführung des grafikbasierten Stitching. |
 | KI-Assistent | hinzugefügt [Dokumentation](../ai-assistant.md) auf der KI-Assistenzkraft für Customer Journey Analytics. |
 | Datensätze für B2B-Suchen transformieren | Eine Dokumentation zur Unterstützung von [personenbasierte Suchen nach B2B-Daten](/help/connections//transform-datasets-b2b-lookups.md) (einschließlich Konten, Möglichkeiten, Marketing-Listen und Kampagnen) unter Verwendung der Transformation von B2B-Lookup-Datensätzen. |
@@ -40,7 +41,7 @@ Die folgenden Aktualisierungen wurden seit der ersten Erstellung der Customer Jo
 | Neue Dokumentation für Adobe Product Analytics-Funktionen | <ul><li>[Funktionsmatrix](https://experienceleague.adobe.com/de/docs/analytics-platform/using/guided-analysis/funnel/friction)</li><li>Verbesserte [Treuerate](https://experienceleague.adobe.com/de/docs/analytics-platform/using/guided-analysis/retention/retention-rates)</li><li>[Verbesserte Einblicke in Trichter](https://experienceleague.adobe.com/de/docs/analytics-platform/using/guided-analysis/funnel/friction)</li><li>Vergleichen von Ereignissen innerhalb eines einzelnen Trichterschrittsschritts</li></ul> |
 | **März 2024** | |
 | Nutzungsinformationen zur Spalte „Verwendet in“ sind erst ab September 2023 verfügbar. | Es wurde klargestellt, dass die Nutzungsinformationen zur Spalte **Verwendet in** auf der [Projekte-Landingpage](/help/getting-started/landing.md) nur bis September 2023 zurückreichen. |
-| Es wurde eine Dokumentation zur Berechtigungsverbesserung für Workspace-Projektkomponenten hinzugefügt. | Wenn Sie ein Projekt für andere Benutzer freigeben, können diese Benutzer [Schnellfilter](/help/components/filters/quick-filters.md) und anderen Projektkomponenten, die in das freigegebene Projekt eingebettet sind. |
+| Eine Dokumentation zur Berechtigungsverbesserung für reine Workspace-Projektkomponenten wurde hinzugefügt - | Wenn Sie ein Projekt für andere Benutzer freigeben, können diese Benutzer [Schnellfilter](/help/components/filters/quick-filters.md) und anderen Projektkomponenten, die in das freigegebene Projekt eingebettet sind. |
 | **Februar 2024** | |
 | Aktualisierungen der Dokumentation zur Projektfreigabe | Es wurden Informationen zum [Anzeigen von Projekten, die für Sie freigegeben wurden](/help/analysis-workspace/curate-share/share-projects.md#view-projects-shared-with-you).<p>Außerdem wurden die Informationen zum [Freigeben einzelner oder mehrerer Projekte](/help/analysis-workspace/curate-share/share-projects.md#share-a-specific-project-role) optimiert.</p> |
 | Es wurden Zugriffsberechtigungen für das Hochladen von Dateien auf Azure SAS und Azure RBAC bei der Konfiguration von Cloud-Exportspeicherorten hinzugefügt. | Es wurden genaue Berechtigungsanforderungen für das Hochladen von Dateien auf Azure SAS und Azure RBAC hinzugefügt, wenn [Konfigurieren von Cloud-Exportkonten](/help/components/exports/cloud-export-accounts.md) und [Konfigurieren von Cloud-Exportstandorten](/help/components/exports/cloud-export-locations.md). |
