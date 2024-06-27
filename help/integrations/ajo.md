@@ -4,7 +4,7 @@ description: Binden Sie die von Adobe Journey Optimizer generierten Daten ein un
 exl-id: 9333ada2-b4d6-419e-9ee1-5c96f06a3bfd
 feature: Experience Platform Integration
 role: Admin
-source-git-commit: 5185c28c7a2cf1a0690e783633bbfbf851a1dcd1
+source-git-commit: 13c3f99dba7725553c775df4492803f759ebead5
 workflow-type: tm+mt
 source-wordcount: '1541'
 ht-degree: 52%
@@ -90,7 +90,7 @@ Die Datenansicht hat den Namen **AJO Datenansicht aktivieren (*Sandbox-Name*)**.
    - Alle Metriken und Dimensionen mit [!UICONTROL (AJO)] an ihren Namen angehängt werden, werden im Rahmen dieser automatischen Konfiguration automatisch hinzugefügt.
    - Einige der automatisch hinzugefügten Metriken oder Dimensionen basieren auf abgeleiteten Feldern. Diese abgeleiteten Felder werden speziell für diese Integration erstellt. Beispielsweise wird die Metrik [!UICONTROL Landingpage-Klicks (AJO)] basiert auf der [!UICONTROL Landingpage-Klicks] abgeleitetes Feld.
    - Einige der Metriken oder Dimensionen verfügen über eine zusätzliche Konfiguration. Beispiel: [!UICONTROL Beschwerden wegen Spam (AJO)] hat [!UICONTROL Format] und [!UICONTROL Ausschlusswerte einschließen] angewendete Einstellungen.
-   - Alle automatisch hinzugefügten Metriken und Dimensionen haben eine Kontextbeschriftung mit dem Namen `:`*`name_of_metric_or_dimension`*. Beispiel: die [!UICONTROL Landingpage-Klicks (AJO)] -Metrik hat die Kontextbezeichnung `: Landing page clicks (AJO)`.
+   - Alle automatisch hinzugefügten Metriken und Dimensionen haben eine Kontextbeschriftung mit dem Namen `:`*`name_of_metric_or_dimension`*. Beispiel: die [!UICONTROL Landingpage-Klicks (AJO)] -Metrik hat die Kontextbezeichnung `:Landing page clicks (AJO)`.
 
 - Im **[!UICONTROL Einstellungen]** Registerkarte, es werden keine spezifischen Konfigurationswerte angewendet
 
