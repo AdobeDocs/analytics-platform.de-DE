@@ -6,9 +6,9 @@ exl-id: 0a87518c-3608-44ad-b5e3-976f97560433
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: 71931b85de6b238c0c6c6fd7b72d06f25103b906
+source-git-commit: c0599526e6a6a9ac9788a4ce29bcf44256b6c4df
 workflow-type: tm+mt
-source-wordcount: '3188'
+source-wordcount: '3277'
 ht-degree: 14%
 
 ---
@@ -206,7 +206,12 @@ Wenn ein Datensatz in der Datensatztabelle ausgewählt ist, werden in einem Bedi
 
 ## Nutzung
 
-Die [!UICONTROL Nutzung] -Schnittstelle zeigt die Verwendung von aufgenommenen und berichtspflichtigen Zeilen über alle Verbindungen hinweg. Diese Schnittstelle unterstützt Sie dabei festzustellen, ob Ihre Customer Journey Analytics-Nutzung den vertraglich vereinbarten Bedingungen entspricht.
+Die [!UICONTROL Nutzung] -Schnittstelle zeigt die Verwendung von aufgenommenen und berichtspflichtigen Zeilen über alle Verbindungen hinweg. Diese Schnittstelle unterstützt Sie dabei festzustellen, ob Ihre Customer Journey Analytics-Nutzung den vertraglich vereinbarten Bedingungen entspricht. Zusätzlich zu Überwachungszwecken können Sie die Nutzungs-Benutzeroberfläche verwenden, um die Verlängerung Ihrer Customer Journey Analytics-Lizenz besser zu planen.
+
+Sie können einen Zeitraum (zwischen den letzten 6 Monaten, dem aktuellen Jahr oder den letzten 2 Jahren) und ein Intervall (zwischen monatlich und vierteljährlich) auswählen, um die Nutzung der Customer Journey Analytics zu überwachen. Die Benutzeroberfläche ist in zwei Abschnitte unterteilt:
+
+* Aufgenommene Zeilen: Gesamtzahl der aus Ereignis-Datensätzen erfassten/gesendeten Zeilen über alle CJA-Verbindungen hinweg, einschließlich der bei der Aufnahme übersprungenen Datensätze
+* Berichterstellbare Zeilen: Gesamtzahl der berichtspflichtigen Zeilen, die alle Ereignisdaten über alle CJA-Verbindungen hinweg enthalten
 
 ![usage-view](assets/usage-view.png)
 
