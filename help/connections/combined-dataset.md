@@ -5,20 +5,20 @@ exl-id: 9f678225-a9f3-4134-be38-924b8de8d57f
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: 80d5a864e063911b46ff248f2ea89c1ed0d14e32
+source-git-commit: 2f2e4ac68f7a410b8046daae2f90af75ffdedab5
 workflow-type: tm+mt
-source-wordcount: '578'
-ht-degree: 61%
+source-wordcount: '676'
+ht-degree: 41%
 
 ---
 
 
 # Kombinierte Ereignis-Datensätze
 
-Wenn Sie eine Verbindung erstellen, kombiniert Customer Journey Analytics alle Schemas und Datensätze zu einem Datensatz. Dieser &quot;kombinierte Ereignis-Datensatz&quot;wird von Customer Journey Analytics für die Berichterstellung verwendet. Wenn Sie mehrere Schemata oder Datensätze in eine Verbindung einschließen:
+Wenn Sie eine Verbindung erstellen, kombiniert Customer Journey Analytics alle Ereignis-Datensätze zu einem Datensatz. Dieser kombinierte Ereignis-Datensatz wird von Customer Journey Analytics für die Berichterstellung verwendet (zusammen mit Profil- und Lookup-Datensätzen). Wenn Sie mehrere Ereignis-Datensätze in eine Verbindung einschließen:
 
-* Schemata werden kombiniert. Doppelte Schemafelder werden zusammengeführt.
-* Die Spalte „Personen-ID“ jedes Datensatzes wird unabhängig von ihrem Namen in eine Spalte zusammengefasst. Diese Spalte bildet die Grundlage für die Identifizierung von Einzelpersonen in der Customer Journey Analytics.
+* Die Daten für Felder in Datensätzen basieren auf der Variablen **derselbe Schemapfad** werden im kombinierten Datensatz in einer einzigen Spalte zusammengeführt.
+* Die für jeden Datensatz angegebene Spalte mit der Personen-ID wird in einer einzigen Spalte im kombinierten Datensatz zusammengeführt. **unabhängig von ihrem Namen**. Diese Spalte bildet die Grundlage für die Identifizierung von Einzelpersonen in der Customer Journey Analytics.
 * Zeilen werden anhand des Zeitstempels verarbeitet.
 * Ereignisse werden auf die Millisekunden-Ebene aufgelöst.
 
@@ -28,7 +28,7 @@ Siehe folgendes Beispiel. Sie haben zwei Ereignis-Datensätze mit jeweils unters
 
 >[!NOTE]
 >
->Adobe Experience Platform speichert Zeitstempel normalerweise in Unix-Millisekunden. Zur besseren Lesbarkeit werden in diesem Beispiel Datum und Uhrzeit verwendet.
+>Adobe Experience Platform speichert normalerweise einen Zeitstempel in UNIX® Millisekunden. Zur besseren Lesbarkeit werden in diesem Beispiel Datum und Uhrzeit verwendet.
 
 | `example_id` | `timestamp` | `string_color` | `string_animal` | `metric_a` |
 | --- | --- | --- | --- | --- |
@@ -45,7 +45,12 @@ Siehe folgendes Beispiel. Sie haben zwei Ereignis-Datensätze mit jeweils unters
 | `alternateid_656` | `2 Jan 8:58 PM` | `Red` | `Square` | `4.2` |
 | `alternateid_656` | `2 Jan 9:03 PM` | | `Triangle` | `3.1` |
 
-Wenn Sie eine Verbindung mit diesen beiden Ereignis-Datensätzen erstellen, wird die folgende Tabelle für das Reporting verwendet.
+Wenn Sie eine Verbindung mit diesen beiden Ereignis-Datensätzen erstellen und
+
+* `example_id` als Personen-ID für den ersten Datensatz und
+* `different_id` als Personen-ID für den zweiten Datensatz;
+
+der folgende kombinierte Datensatz wird für die Berichterstellung verwendet.
 
 | `id` | `timestamp` | `string_color` | `string_animal` | `string_shape` | `metric_a` | `metric_b` |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -59,7 +64,9 @@ Wenn Sie eine Verbindung mit diesen beiden Ereignis-Datensätzen erstellen, wird
 | `alternateid_656` | `2 Jan 8:58 PM` | `Red` | | `Square` | | `4.2` |
 | `alternateid_656` | `2 Jan 9:03 PM` | | | `Triangle` | | `3.1` |
 
-Dieser „kombinierte Ereignis-Datensatz“ wird für das Reporting verwendet. Es spielt keine Rolle, aus welchem Datensatz eine Zeile stammt. Customer Journey Analytics behandelt alle Daten so, als ob sie sich im selben Datensatz befinden. Wenn in beiden Datensätzen eine übereinstimmende Personen-ID angezeigt wird, werden sie als dieselbe eindeutige Person betrachtet. Wenn eine übereinstimmende Personen-ID mit einem Zeitstempel innerhalb von 30 Minuten in beiden Datasets erscheint, werden sie als Teil derselben Sitzung betrachtet.
+Um die Bedeutung von Schemapfaden zu veranschaulichen, beachten Sie dieses Szenario. Im ersten Datensatz: `string_color` basiert auf dem Schemapfad `_experience.whatever.string_color` und im zweiten Datensatz im Schemapfad  `_experience.somethingelse.string_color`. In diesem Szenario lauten die Daten **not** in einer Spalte im resultierenden kombinierten Datensatz zusammengeführt. Stattdessen lautet das Ergebnis zwei `string_color` Spalten im kombinierten Datensatz.
+
+Dieser „kombinierte Ereignis-Datensatz“ wird für das Reporting verwendet. Es spielt keine Rolle, aus welchem Datensatz eine Zeile stammt. Customer Journey Analytics behandelt alle Daten so, als befänden sie sich im selben Datensatz. Wenn in beiden Datensätzen eine übereinstimmende Personen-ID angezeigt wird, werden sie als dieselbe eindeutige Person betrachtet. Wenn eine übereinstimmende Personen-ID mit einem Zeitstempel innerhalb von 30 Minuten in beiden Datasets erscheint, werden sie als Teil derselben Sitzung betrachtet.
 
 Dieses Konzept gilt auch für die Attribution. Es spielt keine Rolle, aus welchem Datensatz eine Zeile stammt. Die Attribution funktioniert genau so, als ob alle Ereignisse aus einem einzigen Datensatz stammen. Anhand dem Beispiel der oben stehenden Tabellen:
 
@@ -93,11 +100,11 @@ Mithilfe der kanalübergreifenden Analyse können Sie Fragen beantworten, z. B.:
 * Wie unterscheidet sich das Verhalten von Benutzern mit mehreren Geräten von Benutzern mit nur einem Gerät?
 
 
-Weiterführende Informationen zur kanalübergreifenden Analyse finden Sie im entsprechenden Anwendungsbeispiel:
+Weiterführende Informationen zur kanalübergreifenden Analyse finden Sie im jeweiligen Anwendungsbeispiel:
 
 * [Kanalübergreifende Analyse](../use-cases/cross-channel/cross-channel.md)
 
-Eine ausführlichere Funktion zum Stitching finden Sie unter:
+Eine ausführlichere Diskussion der Stitching-Funktion finden Sie unter:
 
 * [Stitching-Übersicht](/help/stitching/overview.md)
 * [Häufig gestellte Fragen](/help/stitching/faq.md)
