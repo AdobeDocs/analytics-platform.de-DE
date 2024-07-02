@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Administration
 role: Admin
 exl-id: f093ac54-7d31-449b-a441-a65856a1d535
-source-git-commit: ffa7899b8ece8c39079ed64401ec6cad111e9a84
+source-git-commit: a0124ee6c4534cbaf607367ee3ae79f1cbfc239c
 workflow-type: tm+mt
-source-wordcount: '1632'
-ht-degree: 11%
+source-wordcount: '1747'
+ht-degree: 10%
 
 ---
 
@@ -58,8 +58,6 @@ Einige der Funktionen und der zugehörige Wert für die Beschränkung hängen vo
 
 <!--
 ## Attribution AI
-
-
 
 | Name |  Value | Description | PD? |
 |---|--:|---|:---:|
@@ -158,9 +156,19 @@ Siehe auch Experience Platform [Limits für den Datenexport](https://experiencel
 | Name | Wert | Art von Limit | Beschreibung |
 |---|--:|---|---|
 | Zusammengefügte Datensätze | 5 - 50 | Systemdurchsetztes Schutzschild | Maximale Anzahl von zugeordneten Datensätzen pro Kunde; der Wert variiert je nach Customer Journey Analytics-Package (siehe Produktbeschreibung). |
-| Aufstockungsdaten | 60-395 | Systemdurchsetztes Schutzschild | Maximale Anzahl Tage für Aufstockungsdaten; der Wert variiert je nach Customer Journey Analytics-Package (siehe Produktbeschreibung). |
+| Aufstockungsdauer | 6 - 25 | Systemdurchsetztes Schutzschild | Maximale Anzahl an Monaten für Aufstockungsdaten; der Wert variiert je nach Customer Journey Analytics-Package (siehe Produktbeschreibung). |
+| Lookback-Fenster/Wiederholungshäufigkeit | 1.01.2017 - 30.07 | Systemdurchsetztes Schutzschild | Maximales Lookback-Fenster in Tagen/Wiederholungshäufigkeit; der Wert variiert je nach Customer Journey Analytics-Package (siehe Produktbeschreibung). |
 
 {style="table-layout:auto"}
+
+
+## Diagrammbasiertes Stitching
+
+| Name | Wert | Art von Limit | Beschreibung |
+|---|--:|---|---|
+| Zusammengefügte Datensätze | 10-50 | Systemdurchsetztes Schutzschild | Maximale Anzahl von zugeordneten Datensätzen pro Kunde; der Wert variiert je nach Customer Journey Analytics-Package (siehe Produktbeschreibung). |
+| Aufstockungsdauer | 13-25 | Systemdurchsetztes Schutzschild | Maximale Anzahl an Monaten für Aufstockungsdaten; der Wert variiert je nach Customer Journey Analytics-Package (siehe Produktbeschreibung). |
+| Lookback-Fenster/Wiederholungshäufigkeit | 1.01.2017 - 30.07 | Systemdurchsetztes Schutzschild | Maximales Lookback-Fenster in Tagen/Wiederholungshäufigkeit; der Wert variiert je nach Customer Journey Analytics-Package (siehe Produktbeschreibung). |
 
 
 ## Filter und berechnete Metriken
@@ -226,7 +234,7 @@ Siehe auch Experience Platform [Limits für den Datenexport](https://experiencel
 | Adobe Analytics Source Connector zum Echtzeit-Kundenprofil (A4T nicht aktiviert) | &lt; 2 Minuten |
 | Adobe Analytics Source Connector zum Echtzeit-Kundenprofil (A4T aktiviert) | &lt; 30 Minuten |
 | Datenaufnahme aus der Edge Network- oder Streaming-Erfassung in den Data Lake | &lt; 60 Minuten |
-| Datenerfassung in den Data Lake von Adobe Analytics Source Connector | &lt; 2,25 Stunden |
+| Datenerfassung in den Data Lake über Adobe Analytics Source Connector | &lt; 2,25 Stunden |
 | Datenerfassung in Customer Journey Analytics vom Data Lake | &lt; 90 Minuten |
 | Stitching (optionale Funktion; siehe [Stitching-Übersicht](../stitching/overview.md) für weitere Informationen) | &lt; 3,25 Stunden |
 | Aufstockung von Adobe Analytics Source Connector für weniger als 10 Milliarden Ereignisse (maximal 13 Monate historischer Daten) | &lt; 4 Wochen |

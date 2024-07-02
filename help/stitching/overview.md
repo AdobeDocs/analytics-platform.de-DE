@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 exl-id: 1c42efac-b3d2-437b-8b0b-9c6fdfed8520
 role: Admin
-source-git-commit: 328939daf3e4dfe7f586d6c3822ce331cf24b97d
+source-git-commit: 32f0da9ea54952dbe3a765661b800e061ac5f039
 workflow-type: tm+mt
-source-wordcount: '3712'
+source-wordcount: '3723'
 ht-degree: 12%
 
 ---
@@ -345,13 +345,13 @@ Sobald Ihre Organisation [Voraussetzungen](#prerequisites) und verstehen gemeins
 
 ### Optionen
 
-Wählen Sie die Stitching-Optionen aus. Das Customer Journey Analytics-Paket legt die verfügbaren Optionen für die anfängliche Aufstockungsdauer, das Lookback-Fenster, die Wiederholungshäufigkeit und die maximale Anzahl der für das Stitching zulässigen Datensätze fest.
+Wählen Sie die Stitching-Optionen aus. Das Customer Journey Analytics-Paket legt die verfügbaren Optionen für die anfängliche Aufstockungsdauer, das Lookback-Fenster, die Wiederholungshäufigkeit und die maximale Anzahl der für das Stitching zulässigen Datensätze fest. Siehe [Customer Journey Analytics-Produktbeschreibung](https://helpx.adobe.com/de/legal/product-descriptions/customer-journey-analytics.html) für weitere Details.
 
 | | Customer Journey Analytics<br/>Auswählen | Customer Journey Analytics<br/>Prime | Customer Journey Analytics<br/>Ultimate |
 |---|---|---|---|
 | Dauer der einmaligen Zuordnung von Aufstockungen | 13 Monate | 13 Monate | 25 Monate |
 | Lookback-Fenster und Wiederholungshäufigkeit | <li>1 Tag, jeden Tag</li><li>bis zu 7 Tage, wöchentlich</li> | <li>1 Tag, jeden Tag</li><li>bis zu 14 Tage, wöchentlich</li> | <li>1 Tag, jeden Tag</li><li>bis zu 30 Tage, wöchentlich</li> |
-| Maximale Anzahl an Datensätzen, die für das Stitching zulässig sind | 5 | 10 | 15 |
+| Maximale Anzahl an Datensätzen, die für das Stitching zulässig sind | 5 | 10 | 50 |
 
 ### Support anfordern
 
