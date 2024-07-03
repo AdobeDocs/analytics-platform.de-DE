@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 exl-id: 1c42efac-b3d2-437b-8b0b-9c6fdfed8520
 role: Admin
-source-git-commit: 805eb9dc9ab287934dd15eb56d3ac35187c979d7
+source-git-commit: 38bcb262023773763c0ff710a6aba4e06b864d01
 workflow-type: tm+mt
 source-wordcount: '3752'
 ht-degree: 11%
@@ -326,7 +326,7 @@ Die folgenden Voraussetzungen gelten speziell für das grafikbasierte Stitching:
 
 >[!NOTE]
 >
->Sie tun **not** erfordert eine Real-time Customer Data Platform-Lizenz für grafisches Stitching. Die **Auswählen** oder ein höheres Paket von Customer Journey Analytics enthalten die erforderlichen Berechtigungen für den User Identity Service.
+>Sie tun **not** erfordert eine Real-time Customer Data Platform-Lizenz für grafisches Stitching. Die **Auswählen** oder höhere Pakete von Customer Journey Analytics enthalten die erforderlichen Berechtigungen für den User Identity Service.
 
 
 
