@@ -5,16 +5,19 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 exl-id: 1c42efac-b3d2-437b-8b0b-9c6fdfed8520
 role: Admin
-source-git-commit: 38bcb262023773763c0ff710a6aba4e06b864d01
+source-git-commit: 195659d6665e5a3c0e4bf5a4f02ce2af5b95749c
 workflow-type: tm+mt
-source-wordcount: '3752'
-ht-degree: 11%
+source-wordcount: '3793'
+ht-degree: 12%
 
 ---
 
 # Stitching
 
-{{select-package}}
+>[!NOTE]
+>
+>Sie müssen über die **Auswählen** Paket oder höher (für feldbasiertes Stitching) oder **Prime** -Paket oder höher (für grafikbasiertes Stitching) verwenden, um die in diesem Abschnitt beschriebene Funktion zu verwenden. Wenden Sie sich an Ihre Admins, wenn Sie sich nicht sicher sind, welches Customer Journey Analytics-Paket Sie besitzen.
+
 
 Die Identitätszuordnung (oder einfach das Stitching) ist eine leistungsstarke Funktion, die die Eignung eines Ereignis-Datensatzes für die kanalübergreifende Analyse erhöht. Die kanalübergreifende Analyse ist ein Hauptanwendungsfall, den Customer Journey Analytics handhaben kann. So können Sie Berichte basierend auf einer gemeinsamen Kennung (Personen-ID) nahtlos mit mehreren Datensätzen aus verschiedenen Kanälen kombinieren und ausführen.
 
@@ -189,7 +192,7 @@ Die folgenden Voraussetzungen gelten speziell für feldbasiertes Stitching:
 
 - Der Ereignisdatensatz in Adobe Experience Platform, auf den Sie die Zuordnung anwenden möchten, muss über zwei Spalten verfügen, mit denen Besucher identifiziert werden können:
 
-   - A **beständige ID**, eine Kennung, die in jeder Zeile verfügbar ist. Beispielsweise eine Besucher-ID, die von einer Adobe Analytics-AppMeasurement-Bibliothek generiert wurde, oder eine ECID, die vom Adobe Experience Cloud Identity-Dienst generiert wurde.
+   - A **beständige ID**, eine Kennung, die in jeder Zeile verfügbar ist. Beispielsweise eine Besucher-ID, die von einer Adobe Analytics-AppMeasurement-Bibliothek generiert wurde, oder eine ECID, die vom Adobe Experience Platform Identity-Dienst generiert wurde.
    - A **vorübergehende ID**, eine Kennung, die nur für einige Zeilen verfügbar ist. Beispiel: ein/e gehashte/r Benutzername oder E-Mail-Adresse, wenn sich ein Besucher authentifiziert. Sie können praktisch jede beliebige Kennung verwenden. Beim Stitching wird dieses Feld für die tatsächlichen Personen-ID-Informationen berücksichtigt. Für optimale Zuordnungsergebnisse sollte für jede beständige ID mindestens einmal innerhalb der Ereignisse des Datensatzes eine vorübergehende ID gesendet werden. Wenn Sie diesen Datensatz in eine Customer Journey Analytics-Verbindung einschließen möchten, sollten die anderen Datensätze ebenfalls eine ähnliche gemeinsame Kennung aufweisen.
 
 - Beide Spalten (beständige ID und vorübergehende ID) müssen als Identitätsfeld mit einem Identitäts-Namespace im Schema für den Datensatz definiert werden, den Sie zuordnen möchten. Bei Verwendung der Identitätszusammenfügung in Real-time Customer Data Platform wird mithilfe der [`identityMap` Feldergruppe](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition#identity)müssen Sie weiterhin Identitätsfelder mit einem Identitäts-Namespace hinzufügen. Diese Identifizierung von Identitätsfeldern ist erforderlich, da das Customer Journey Analytics-Stitching die `identityMap` Feldergruppe. Wenn Sie ein Identitätsfeld im Schema hinzufügen, während Sie auch die `identityMap` Feldergruppe verwenden, dürfen Sie das zusätzliche Identitätsfeld nicht als primäre Identität festlegen. Das Festlegen eines zusätzlichen Identitätsfelds als primäre Identität stört die `identityMap` für Real-time Customer Data Platform verwendete Feldergruppe.
@@ -321,13 +324,12 @@ Die folgende Tabelle stellt dieselben Daten wie oben dar, zeigt jedoch den Effek
 
 Die folgenden Voraussetzungen gelten speziell für das grafikbasierte Stitching:
 
-- Der Ereignisdatensatz in Adobe Experience Platform, auf den Sie die Zuordnung anwenden möchten, muss über eine Spalte verfügen, die einen Besucher in jeder Zeile identifiziert: die **beständige ID**. Beispielsweise eine Besucher-ID, die von einer Adobe Analytics-AppMeasurement-Bibliothek generiert wurde, oder eine ECID, die vom Adobe Experience Cloud Identity-Dienst generiert wurde.
-- Das Identitätsdiagramm von Experience Cloud Identity Service muss einen Namespace haben (z. B. `Email`oder `Phone`), die Sie beim Stitching verwenden möchten, um die **vorübergehende ID**. Siehe [Experience Platform Identity Service](https://experienceleague.adobe.com/en/docs/experience-platform/identity/home) für weitere Informationen.
+- Der Ereignisdatensatz in Adobe Experience Platform, auf den Sie die Zuordnung anwenden möchten, muss über eine Spalte verfügen, die einen Besucher in jeder Zeile identifiziert: die **beständige ID**. Beispielsweise eine Besucher-ID, die von einer Adobe Analytics-AppMeasurement-Bibliothek generiert wurde, oder eine ECID, die vom Adobe Experience Platform Identity-Dienst generiert wurde.
+- Das Identitätsdiagramm von Experience Platform Identity Service muss einen Namespace haben (z. B. `Email`oder `Phone`), die Sie beim Stitching verwenden möchten, um die **vorübergehende ID**. Siehe [Experience Platform Identity Service](https://experienceleague.adobe.com/en/docs/experience-platform/identity/home) für weitere Informationen.
 
 >[!NOTE]
 >
->Sie tun **not** erfordert eine Real-time Customer Data Platform-Lizenz für grafisches Stitching. Die **Auswählen** oder höhere Pakete von Customer Journey Analytics enthalten die erforderlichen Berechtigungen für den User Identity Service.
-
+>Sie tun **not** erfordert eine Real-time Customer Data Platform-Lizenz für grafisches Stitching. Die **Prime** -Paket oder höher von Customer Journey Analytics enthält die erforderlichen Experience Platform Identity Service-Berechtigungen.
 
 
 ### Einschränkungen
