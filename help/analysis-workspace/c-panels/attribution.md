@@ -4,14 +4,21 @@ description: Verwendung und Interpretation des Attributionsbedienfelds in Analys
 feature: Panels
 exl-id: 7fdec05b-5d99-48d1-ac1b-c243cb64e487
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 4ed05334a3866ec784901d273fcb13bd24b2d449
 workflow-type: tm+mt
-source-wordcount: '534'
-ht-degree: 77%
+source-wordcount: '554'
+ht-degree: 75%
 
 ---
 
-# Attributionsbedienfeld
+# Attributionsbedienfeld {#attribution-panel}
+
+>[!CONTEXTUALHELP]
+>id="cja_workspace_attribution"
+>title="Attribution"
+>abstract="Vergleichen und visualisieren Sie schnell eine beliebige Anzahl von Attributionsmodellen mit einer beliebigen Dimension und Konversionsmetrik."
+>additional-url="https://www.youtube.com/watch?v=Yu0hy2klzA0" text="Attribution IQ-Panel"
+
 
 Das [!UICONTROL Attributionsbedienfeld] bietet eine einfache Möglichkeit, eine Analyse zu erstellen, mit der verschiedene Attributionsmodelle verglichen werden. Es handelt sich um eine Funktion, die Ihnen einen speziellen Arbeitsbereich bietet, um Attributionsmodelle zu verwenden und zu vergleichen.
 
