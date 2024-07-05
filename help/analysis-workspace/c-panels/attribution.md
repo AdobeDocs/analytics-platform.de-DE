@@ -4,19 +4,25 @@ description: Verwendung und Interpretation des Attributionsbedienfelds in Analys
 feature: Panels
 exl-id: 7fdec05b-5d99-48d1-ac1b-c243cb64e487
 role: User
-source-git-commit: 4ed05334a3866ec784901d273fcb13bd24b2d449
+source-git-commit: c89a28323c9d40a7265cd22994a0d1c484f4c7ee
 workflow-type: tm+mt
-source-wordcount: '554'
-ht-degree: 75%
+source-wordcount: '620'
+ht-degree: 70%
 
 ---
 
 # Attributionsbedienfeld {#attribution-panel}
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_attribution"
+>id="cja_workspace_attribution_button"
 >title="Attribution"
 >abstract="Vergleichen und visualisieren Sie schnell eine beliebige Anzahl von Attributionsmodellen mit einer beliebigen Dimension und Konversionsmetrik."
+>additional-url="https://www.youtube.com/watch?v=Yu0hy2klzA0" text="Attribution IQ-Panel"
+
+>[!CONTEXTUALHELP]
+>id="cja_workspace_attribution_panel"
+>title="Attributionsbedienfeld"
+>abstract="Vergleichen und visualisieren Sie im Handumdrehen eine beliebige Anzahl von Attributionsmodellen unter Verwendung verschiedener Dimensionen und Konversionskennzahlen.<br/><br/>**Parameter **<br/>**Kanal**<br/> Die Dimension, der zugeschrieben werden soll. Dabei kann es sich um Marketingkanäle, Kampagnen oder beliebige andere Dimensionen handeln.<br/>**Modelle**<br/> Das Modell bestimmt, wie Gutschriften Touchpoints zugewiesen werden.<br/>**Lookback**<br/> Diese Einstellung bestimmt das Fenster der Datenzuordnung, auf das bei jeder Konvertierung angewendet wird."
 >additional-url="https://www.youtube.com/watch?v=Yu0hy2klzA0" text="Attribution IQ-Panel"
 
 
