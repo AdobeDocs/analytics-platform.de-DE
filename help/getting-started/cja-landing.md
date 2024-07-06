@@ -4,10 +4,10 @@ description: Landingpage von Customer Journey Analytics.
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 7f67c497-386b-4442-a502-6b492f35c6e6
-source-git-commit: 6d5877b59dcc625e6cf324109bcb8162fb194187
+source-git-commit: 52021e557171754901fe6a64c7fa544243af70f1
 workflow-type: tm+mt
-source-wordcount: '758'
-ht-degree: 83%
+source-wordcount: '767'
+ht-degree: 87%
 
 ---
 
@@ -29,11 +29,13 @@ Der KI-Assistent ist eine Dialogerfahrung, die es Fachleuten ermöglicht, Aufgab
 
 [![Bild](assets/learn-more-button.svg)](/help/ai-assistant.md)
 
->[!TAB Diagrammbasiertes Stitching]
+>[!TAB Diagrammbasiertes Stitching*]
 
-Durch eine grafikbasierte Zuordnung können Sie das Identitätsdiagramm aus dem Experience Platform Identity-Dienst verwenden, um eine bessere Ansicht der Journey des Kunden zu erhalten, indem Sie: <ul><li>Datensätze mit verschiedenen Kennungen verknüpfen, ohne zusätzliche Daten extrahieren, transformieren und laden zu müssen, um eine einzelne Kennung widerzuspiegeln.</li> <li>Verbesserung der Abdeckung der bevorzugten oder goldenen Identität für einen Datensatz durch die gemeinsame Nutzung von Identitäten über Datensätze hinweg,</li><li>Abstimmung von in Real-time Customer Data Platform und Journey Optimizer erstellten Profilen mit Personen im Customer Journey Analytics.</li></ul>
+Durch eine grafikbasierte Zuordnung können Sie das Identitätsdiagramm aus dem Experience Platform Identity-Dienst verwenden, um eine bessere Ansicht der Journey des Kunden zu erhalten, indem Sie: <ul><li>Datensätze mit verschiedenen Kennungen verknüpfen, ohne zusätzliche Daten extrahieren, transformieren und laden zu müssen, um eine einzelne Kennung widerzuspiegeln.</li> <li>Verbesserung der Abdeckung der bevorzugten oder goldenen Identität für einen Datensatz durch die gemeinsame Nutzung von Identitäten über Datensätze hinweg,</li><li>Die in Real-time Customer Data Platform und Journey Optimizer erstellten Profile mit Personen in Customer Journey Analytics abstimmen.</li></ul>
 
 [![Bild](assets/learn-more-button.svg)](/help/stitching/overview.md#graph-based-stitching)
+
+*_Sie müssen über das Prime-Paket für grafikbasiertes Stitching verfügen._*
 
 >[!TAB B2B-Suchen]
 
