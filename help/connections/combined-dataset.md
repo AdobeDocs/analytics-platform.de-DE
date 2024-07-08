@@ -5,10 +5,10 @@ exl-id: 9f678225-a9f3-4134-be38-924b8de8d57f
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: 2f2e4ac68f7a410b8046daae2f90af75ffdedab5
+source-git-commit: 3389c141105ff71ed26abe4384fe3bb930448d43
 workflow-type: tm+mt
-source-wordcount: '676'
-ht-degree: 41%
+source-wordcount: '731'
+ht-degree: 35%
 
 ---
 
@@ -66,7 +66,7 @@ der folgende kombinierte Datensatz wird für die Berichterstellung verwendet.
 
 Um die Bedeutung von Schemapfaden zu veranschaulichen, beachten Sie dieses Szenario. Im ersten Datensatz: `string_color` basiert auf dem Schemapfad `_experience.whatever.string_color` und im zweiten Datensatz im Schemapfad  `_experience.somethingelse.string_color`. In diesem Szenario lauten die Daten **not** in einer Spalte im resultierenden kombinierten Datensatz zusammengeführt. Stattdessen lautet das Ergebnis zwei `string_color` Spalten im kombinierten Datensatz.
 
-Dieser „kombinierte Ereignis-Datensatz“ wird für das Reporting verwendet. Es spielt keine Rolle, aus welchem Datensatz eine Zeile stammt. Customer Journey Analytics behandelt alle Daten so, als befänden sie sich im selben Datensatz. Wenn in beiden Datensätzen eine übereinstimmende Personen-ID angezeigt wird, werden sie als dieselbe eindeutige Person betrachtet. Wenn eine übereinstimmende Personen-ID mit einem Zeitstempel innerhalb von 30 Minuten in beiden Datasets erscheint, werden sie als Teil derselben Sitzung betrachtet.
+Dieser „kombinierte Ereignis-Datensatz“ wird für das Reporting verwendet. Es spielt keine Rolle, aus welchem Datensatz eine Zeile stammt. Customer Journey Analytics behandelt alle Daten so, als befänden sie sich im selben Datensatz. Wenn in beiden Datensätzen eine übereinstimmende Personen-ID angezeigt wird, werden sie als dieselbe eindeutige Person betrachtet. Wenn eine übereinstimmende Personen-ID in beiden Datensätzen mit einem Zeitstempel innerhalb von 30 Minuten angezeigt wird, werden sie als Teil derselben Sitzung betrachtet. Felder mit identischen Schemapfaden werden zusammengeführt.
 
 Dieses Konzept gilt auch für die Attribution. Es spielt keine Rolle, aus welchem Datensatz eine Zeile stammt. Die Attribution funktioniert genau so, als ob alle Ereignisse aus einem einzigen Datensatz stammen. Anhand dem Beispiel der oben stehenden Tabellen:
 
@@ -85,6 +85,10 @@ Wenn Sie jedoch beide Tabellen in Ihrer Verbindung eingeschlossen haben, ändert
 | Gelb | 6 |
 | Blau | 3 |
 | Rot | 2 |
+
+>[!NOTE]
+>
+>Wenn ein zusammengeführtes Feld ein Suchschlüssel für einen Ereignis-Datensatz in der Verbindung ist, wird der zugehörige Lookup-Datensatz angereichert *all* -Werte dieses Felds. Es spielt keine Rolle, aus welchem Ereignis-Datensatz eine Zeile stammt, da die Lookup-Beziehung mit dem Pfad des freigegebenen Schemas verknüpft ist.
 
 ## Kanalübergreifende Analyse
 
