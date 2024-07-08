@@ -7,7 +7,7 @@ exl-id: 7f67c497-386b-4442-a502-6b492f35c6e6
 source-git-commit: 52021e557171754901fe6a64c7fa544243af70f1
 workflow-type: tm+mt
 source-wordcount: '767'
-ht-degree: 87%
+ht-degree: 98%
 
 ---
 
@@ -31,11 +31,11 @@ Der KI-Assistent ist eine Dialogerfahrung, die es Fachleuten ermöglicht, Aufgab
 
 >[!TAB Diagrammbasiertes Stitching*]
 
-Durch eine grafikbasierte Zuordnung können Sie das Identitätsdiagramm aus dem Experience Platform Identity-Dienst verwenden, um eine bessere Ansicht der Journey des Kunden zu erhalten, indem Sie: <ul><li>Datensätze mit verschiedenen Kennungen verknüpfen, ohne zusätzliche Daten extrahieren, transformieren und laden zu müssen, um eine einzelne Kennung widerzuspiegeln.</li> <li>Verbesserung der Abdeckung der bevorzugten oder goldenen Identität für einen Datensatz durch die gemeinsame Nutzung von Identitäten über Datensätze hinweg,</li><li>Die in Real-time Customer Data Platform und Journey Optimizer erstellten Profile mit Personen in Customer Journey Analytics abstimmen.</li></ul>
+Durch die grafikbasierte Zuordnung können Sie das Identitätsdiagramm des Identity Service von Experience Platform verwenden, um eine bessere Ansicht der Customer Journey zu erhalten, indem Sie: <ul><li>Datensätze mit verschiedenen Kennungen verknüpfen, ohne zusätzliche Daten extrahieren, transformieren und laden zu müssen, um eine einzelne Kennung widerzuspiegeln.</li> <li>Die Abdeckung der bevorzugten oder goldenen Identität für einen einzelnen Datensatz durch die gemeinsame Nutzung von Identitäten über Datensätze hinweg verbessern.</li><li>Die in Real-time Customer Data Platform und Journey Optimizer erstellten Profile mit Personen in Customer Journey Analytics abstimmen.</li></ul>
 
 [![Bild](assets/learn-more-button.svg)](/help/stitching/overview.md#graph-based-stitching)
 
-*_Sie müssen über das Prime-Paket für grafikbasiertes Stitching verfügen._*
+*_Sie benötigen das Prime-Paket für diagrammbasiertes Stitching._*
 
 >[!TAB B2B-Suchen]
 
@@ -45,7 +45,7 @@ Im Rahmen der Konfiguration einer Verbindung können Sie Datensätze für bestim
 
 >[!TAB Abgeleitete Felder]
 
-Neue abgeleitete Feldfunktionen (Mathematik, Weiter oder Zurück, Zusammenfassung) und zusätzliche Funktionsvorlagen (wie Absprünge, Anzeigename des Datensatzes, Weihnachtszeit, Monatsziele, einfache Bot-Erkennung und andere) sind jetzt verfügbar.
+Neue abgeleitete Feldfunktionen (mathematische Funktionen, Weiter oder Zurück, Zusammenfassen) und zusätzliche Funktionsvorlagen (wie Bounces, benutzerfreundlicher Datensatzname, Weihnachtszeit, monatliche Ziele, einfache Bot-Erkennung und andere) sind jetzt verfügbar.
 
 [![Bild](assets/learn-more-button.svg)](/help/data-views/derived-fields/derived-fields.md)
 
@@ -55,7 +55,7 @@ Die BI-Erweiterung ermöglicht SQL-Zugriff auf Datenansichten, die Sie in Custom
 
 [![Bild](assets/learn-more-button.svg)](/help/data-views/bi-extension.md)
 
-*_Sie müssen über das Paket Auswählen oder höher verfügen, um die BI-Erweiterung verwenden zu können._*
+*_Sie müssen mindestens über das Select-Paket verfügen, um die BI-Erweiterung verwenden zu können._*
 
 
 <!--
