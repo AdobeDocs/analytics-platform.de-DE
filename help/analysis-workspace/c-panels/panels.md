@@ -5,9 +5,9 @@ feature: Panels
 exl-id: be3e34a0-06c1-4200-b965-96084c2912fd
 role: User
 source-git-commit: 665dcd8edcfae6bbf3239c0812ce70843f2ce07c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1438'
-ht-degree: 71%
+ht-degree: 100%
 
 ---
 
@@ -50,7 +50,7 @@ Mit dem Ablagebereich eines Bedienfelds können Sie Filter und Dropdown-Filter a
 
 ### Filter
 
-Ziehen Sie alle Filter aus der linken Leiste in die Dropzone des Bedienfelds, um mit dem Filtern Ihres Bedienfelds zu beginnen. Wiederholen Sie diesen Vorgang, um dem Bedienfeld weitere Filter hinzuzufügen. Filter werden oben im Bedienfeld nebeneinander angezeigt.
+Ziehen Sie einen beliebigen Filter aus der linken Leiste in den Ablagebereich des Bedienfelds, um mit dem Filtern des Bedienfelds zu beginnen.  Wiederholen Sie diesen Vorgang, um dem Bedienfeld weitere Filter hinzuzufügen. Filter werden oben im Bedienfeld nebeneinander angezeigt.
 
 ![Die linke Leiste zeigt verfügbare Metriken, und die Mobile-Kunden-Metrik wurde in den Ablegebereich des Bedienfelds gezogen.](assets/segment-filter.png)
 
@@ -66,44 +66,44 @@ Weitere Informationen finden Sie unter [Schnellfilter](/help/components/filters/
 
 ### Statische Dropdown-Filter
 
-Statische Dropdown-Filter ermöglichen Ihnen eine kontrollierte Interaktion mit den Daten. Sie können beispielsweise einen Dropdown-Filter für Mobilgerätetypen hinzufügen, damit Sie den Bereich nach Tablet, Mobiltelefon oder Desktop filtern können.
+Statische Dropdown-Filter ermöglichen Ihnen eine kontrollierte Interaktion mit den Daten. Sie können beispielsweise einen Dropdown-Filter für Typen von Mobilgeräten hinzufügen, damit Sie das Bedienfeld nach Tablet, Mobiltelefon oder Desktop filtern können.
 
-Statische Dropdown-Filter können auch verwendet werden, um viele Projekte in einem Projekt zu bündeln. Wenn Sie z. B. mehrere Versionen desselben Projekts mit unterschiedlichen Filtern je nach Land verwenden, können Sie alle Versionen in einem Projekt zusammenfassen und einen Dropdown-Filter „Land“ hinzufügen.
+Statische Dropdown-Filter können auch verwendet werden, um mehrere Projekte in einem Projekt zu bündeln. Wenn Sie z. B. mehrere Versionen desselben Projekts mit unterschiedlichen Filtern je nach Land verwenden, können Sie alle Versionen in einem Projekt zusammenfassen und einen Dropdown-Filter „Land“ hinzufügen.
 
 ![Statische Dropdown-Filter, die den Filter „Direkt“ für den Marktkanal hervorgehoben anzeigen. ](assets/dropdown-filter-intro.png)
 
 #### Erstellen von statischen Dropdown-Filtern
 
-* Wählen Sie für Dropdown-Filter mit Dimensionselementen eine einzelne Dimension aus der linken Leiste aus und legen Sie sie im Dropzone des Bedienfelds ab **während des Betriebs`[Shift]`**. Dadurch wird ein Dropdown-Filter mit allen Dimensionselementen erstellt, die mit dieser Dimension verknüpft sind.
+* Wählen Sie für Dropdown-Filter mit Dimensionselementen eine einzelne Dimension aus der linken Leiste aus und legen Sie sie im Ablagebereich des Bedienfelds ab, **während Sie `[Shift]`** gedrückt halten. Dadurch wird ein Dropdown-Filter mit allen Dimensionselementen erstellt, die mit dieser Dimension verknüpft sind.
 
-  Wenn Sie auch möchten, dass der Dropdown-Filter nur bestimmte Dimensionselemente enthält, die mit einer Dimension verknüpft sind, klicken Sie in der linken Leiste auf das Pfeilsymbol neben der gewünschten Dimension. Diese Aktion legt alle verfügbaren Dimensionselemente offen. Mehrere Dimensionselemente aus dieser Liste auswählen mithilfe von `[Shift + Click]` oder `[Ctrl + Click]`und legen Sie sie dann in der Dropzone des Bedienfelds ab **während des Betriebs** `[Shift]`.
+  Wenn Sie möchten, dass der Dropdown-Filter nur bestimmte Dimensionselemente enthält, die mit einer Dimension verknüpft sind, klicken Sie in der linken Leiste auf das Pfeilsymbol neben der gewünschten Dimension. Diese Aktion legt alle verfügbaren Dimensionselemente offen. Wählen Sie mithilfe von `[Shift + Click]` oder `[Ctrl + Click]` mehrere Dimensionselemente aus dieser Liste aus und legen Sie sie dann im Ablegebereich des Bedienfelds ab, **während** Sie `[Shift]` gedrückt halten.
 
-* Bei Dropdown-Filtern, die einen einzelnen Komponententyp verwenden (z. B. nur Dimensionen oder nur Filter oder nur Metriken), wählen Sie in der linken Leiste mehrere Elemente desselben Typs aus, indem Sie `[Shift + Click]` oder `[Ctrl + Click]`und legen Sie sie dann in der Dropzone des Bedienfelds ab **während des Betriebs`[Shift]`**.
+* Wählen Sie für Dropdown-Filter, die einen einzelnen Komponententyp verwenden (z. B. nur Dimensionen, nur Filter oder nur Metriken), in der linken Leiste über `[Shift + Click]` oder `[Ctrl + Click]` mehrere Elemente desselben Typs aus und legen Sie sie dann im Ablagebereich des Bedienfelds ab, **während Sie `[Shift]`** gedrückt halten.
 
-  Ein einzelner Dropdown-Filter wird mit den von Ihnen ausgewählten Komponenten erstellt.
+  Mit den von Ihnen ausgewählten Komponenten wird ein einzelner Dropdown-Filter erstellt.
 
-* Wählen Sie für Dropdown-Filter mit einer Mischung aus Komponententypen (z. B. 2 Metriken und 3 Filter) mehrere Komponenten mit `[Shift + Click]` oder `[Ctrl + Click]`. Legen Sie die Auswahl im Ablegebereich des Bedienfelds ab, **während Sie`[Shift]`** gedrückt halten. In diesem Kontext werden alle Komponententypen als separate Dropdown-Filter behandelt. Wenn Sie beispielsweise sowohl Metriken als auch Dimensionselemente in Ihre Auswahl aufnehmen, werden zwei separate Dropdown-Filter erstellt: Ein Dropdown-Filter enthält Dimensionselemente, der andere wiederum Metriken.
+* Wählen Sie für Dropdown-Filter, die gemischte Komponententypen (etwa 2 Metriken und 3 Filter) verwenden, mithilfe von `[Shift + Click]` oder `[Ctrl + Click]` mehrere Komponenten aus. Legen Sie die Auswahl im Ablegebereich des Bedienfelds ab, **während Sie`[Shift]`** gedrückt halten. In diesem Kontext werden alle Komponententypen als separate Dropdown-Filter behandelt. Wenn Sie beispielsweise sowohl Metriken als auch Dimensionselemente in Ihre Auswahl aufnehmen, werden zwei separate Dropdown-Filter erstellt: Der eine enthält Dimensionselemente und der andere Metriken.
 
   ![Das Fenster „Bedienfelder“ mit dem Feld „Mobilkundensegment“ ist verfügbar, um einen statischen Dropdown-Filter abzulegen. ](assets/create-dropdown.png)
 
 Wenn Sie mit der rechten Maustaste auf einen Dropdown-Filter klicken, stehen folgende Optionen zur Verfügung:
 
-* **[!UICONTROL Dropdown-Liste löschen]**: Entfernt den Dropdown-Filter aus dem Bereich.
-* **[!UICONTROL Titel löschen]**: Entfernen Sie den Text über einem Dropdown-Filter. Um den Titel zu ändern, wählen Sie das Stiftsymbol aus.
+* **[!UICONTROL Dropdown-Filter löschen]**: Entfernt den Dropdown-Filter aus dem Bedienfeld.
+* **[!UICONTROL Label löschen]**: Entfernt den Text über einem Dropdown-Filter.  Wählen Sie zum Ändern des Labels das Stiftsymbol aus.
 * **[!UICONTROL Titel hinzufügen]**: Wenn Sie einem Projekt einen Dropdown-Filter hinzufügen, wird für einen Titel automatisch der Komponentenname festgelegt. Wenn Sie den Titel löschen, können Sie ihn mit dieser Option erneut hinzufügen.
-* **[!UICONTROL Auswahl erforderlich]**: Erfordert, dass im Bereich ein Filter festgelegt ist.
+* **[!UICONTROL Auswahl erforderlich]**: Erfordert, dass im Bedienfeld ein Filter festgelegt ist.
 
 [Sehen Sie sich das Video an](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-panels-to-organize-your-analysis-workspace-projects.html?lang=de), um mehr über das Hinzufügen von Dropdown-Filtern zu Ihrem Projekt zu erfahren.
 
-#### Verwenden von statischen Dropdown-Filtern
+#### Verwenden statischer Dropdown-Filter
 
-Benutzer können das Dropdown-Filtermenü auf eine der folgenden Arten verwenden, um den Bereich zu filtern:
+Benutzende können das Dropdown-Filtermenü auf eine der folgenden Arten verwenden, um das Bedienfeld zu filtern:
 
-* Wenden Sie einen einzelnen Filter auf das Bedienfeld an, indem Sie den Filter aus dem Dropdown-Filter auswählen.
+* Wenden Sie einen einzelnen Filter auf das Bedienfeld an, indem Sie ihn über den Dropdown-Filter auswählen.
 
-* Wenden Sie mehrere Filter auf das Bedienfeld an, indem Sie aus dem Dropdown-Filter mehrere Filter auswählen. Das Bedienfeld wird gefiltert, um einen der ausgewählten Filter einzuschließen.
+* Wenden Sie mehrere Filter auf das Bedienfeld an, indem Sie mehr als einen Filter über den Dropdown-Filter auswählen. Das Bedienfeld wird gefiltert, um alle ausgewählten Filter einzuschließen.
 
-  ![Mehrere Filter auswählen](assets/dropdown-filter-multiselect.png)
+  ![Auswählen mehrerer Filter](assets/dropdown-filter-multiselect.png)
 
 ### Dynamische Dropdown-Filter
 
