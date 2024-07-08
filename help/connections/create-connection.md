@@ -5,9 +5,9 @@ exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: 3176be3fe1a117718cd675a4ed79df978d1f33f6
+source-git-commit: 8fe3fb966f559aa12f3203e02a1766436e45a24a
 workflow-type: tm+mt
-source-wordcount: '3174'
+source-wordcount: '3172'
 ht-degree: 95%
 
 ---
@@ -82,7 +82,7 @@ Mit dem neuen Workflow können Sie beim Erstellen einer Verbindung einen Experie
    |---|---|
    | Datensatz | Name des Datensatzes. Wählen Sie den Namen aus, um Sie zum Datensatz unter Experience Platform weiterzuleiten. Auswählen ![Info](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg) , um ein Popup mit weiteren Details zum Datensatz anzuzeigen. Im Popup-Fenster können Sie **[!UICONTROL In Platform bearbeiten]** , um den Datensatz direkt im Experience Platform zu bearbeiten. |
    | Datensatztyp | Der Typ des Datensatzes: Ereignis, Profil oder Suche. |
-   | Anzahl der Datensätze | Die Anzahl der Datensätze, die im letzten Batch des Datensatzes unter Experience Platform verfügbar sind. |
+   | Anzahl der Datensätze | Die Gesamtzahl der Einträge im Vormonat für den Datensatz in Experience Platform. |
    | Schema | Das Schema, auf dem der Datensatz basiert. Wählen Sie den Namen aus, um Sie zum Schema unter Experience Platform zu leiten. |
    | Letzter Batch | Der Status des letzten in Experience Platform erfassten Batches. Siehe [Batch-Status](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/batch/troubleshooting#batch-states) weitere Informationen. |
    | Datensatz-ID | Die ID des Datensatzes. |
