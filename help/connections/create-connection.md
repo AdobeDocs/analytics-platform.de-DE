@@ -5,10 +5,10 @@ exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: ce1a6b631baefaccf7daac5ebaf272bd5c7ed88a
-workflow-type: ht
-source-wordcount: '3027'
-ht-degree: 100%
+source-git-commit: 3176be3fe1a117718cd675a4ed79df978d1f33f6
+workflow-type: tm+mt
+source-wordcount: '3174'
+ht-degree: 95%
 
 ---
 
@@ -72,15 +72,33 @@ Mit dem neuen Workflow können Sie beim Erstellen einer Verbindung einen Experie
 
 1. Wählen Sie im Dialogfeld „Verbindungseinstellungen“ die Option **[!UICONTROL Datensätze hinzufügen]** aus.
 
-2. Wählen Sie im Schritt [!UICONTROL Datensätze auswählen] einen oder mehrere Datensätze aus und klicken Sie auf **[!UICONTROL Weiter]**. Mindestens ein Ereignisdatensatz muss Teil der Verbindung sein.
+1. Im [!UICONTROL Auswählen von Datensätzen] Schritt, sehen Sie eine Liste der Experience Platform-Datensätze.
+
+   ![Auswählen von Datensätzen](assets/select-datasets.png)
+
+   Für jeden Datensatz zeigt die Liste Folgendes an:
+
+   | Spalte | Beschreibung |
+   |---|---|
+   | Datensatz | Name des Datensatzes. Wählen Sie den Namen aus, um Sie zum Datensatz unter Experience Platform weiterzuleiten. Auswählen ![Info](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg) , um ein Popup mit weiteren Details zum Datensatz anzuzeigen. Im Popup-Fenster können Sie **[!UICONTROL In Platform bearbeiten]** , um den Datensatz direkt im Experience Platform zu bearbeiten. |
+   | Datensatztyp | Der Typ des Datensatzes: Ereignis, Profil oder Suche. |
+   | Anzahl der Datensätze | Die Anzahl der Datensätze, die im letzten Batch des Datensatzes unter Experience Platform verfügbar sind. |
+   | Schema | Das Schema, auf dem der Datensatz basiert. Wählen Sie den Namen aus, um Sie zum Schema unter Experience Platform zu leiten. |
+   | Letzter Batch | Der Status des letzten in Experience Platform erfassten Batches. Siehe [Batch-Status](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/batch/troubleshooting#batch-states) weitere Informationen. |
+   | Datensatz-ID | Die ID des Datensatzes. |
+   | Letzte Aktualisierung | Der letzte aktualisierte Zeitstempel des Datensatzes. |
+
+
+1. Wählen Sie einen oder mehrere Datensätze aus und wählen Sie **[!UICONTROL Nächste]**. Mindestens ein Ereignisdatensatz muss Teil der Verbindung sein.
    * Um die für die Liste der Datensätze angezeigten Spalten zu ändern, wählen Sie ![Spalteneinstellungen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ColumnSettings_18_N.svg) aus und wählen Sie die Spalten aus, die im Dialogfeld [!UICONTROL Tabelle anpassen] angezeigt werden sollen.
    * Um nach einem bestimmten Datensatz zu suchen, verwenden Sie das ![Suchfeld](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg).
    * Um die ausgewählten Datensätze ein- oder auszublenden, wählen Sie ![Auswählen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SelectBoxAll_18_N.svg), **[!UICONTROL Ausgewählte ausblenden]** oder **[!UICONTROL Ausgewählte anzeigen]** aus.
    * Um einen Datensatz aus der Liste der ausgewählten Datensätze zu entfernen, verwenden Sie ![Schließen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Close_18_N.svg). Um alle ausgewählten Datensätze zu entfernen, wählen Sie **[!UICONTROL Alle löschen]**.
 
-   ![Auswählen von Datensätzen](assets/select-datasets.png)
 
-3. Konfigurieren Sie nun die Datensätze einzeln.
+
+
+1. Konfigurieren Sie nun die Datensätze einzeln.
 
    ![Konfigurieren von Datensätzen](assets/add-dataset.png)
 
