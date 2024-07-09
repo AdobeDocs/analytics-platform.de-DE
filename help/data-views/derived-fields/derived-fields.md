@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Derived Fields
 exl-id: bcd172b2-cd13-421a-92c6-e8c53fa95936
 role: Admin
-source-git-commit: 6d5877b59dcc625e6cf324109bcb8162fb194187
+source-git-commit: 543443fa6483034f5604fca082fcb75f409006a1
 workflow-type: tm+mt
-source-wordcount: '8075'
+source-wordcount: '8068'
 ht-degree: 12%
 
 ---
@@ -381,9 +381,6 @@ Für jede unterstützte Funktion finden Sie im Folgenden Details zu:
 
 - Einschränkungen (falls zutreffend).
 
->[!NOTE]
->
->Die Suchfunktion wurde in [Klassifizieren](#classify). Siehe [Klassifizieren](#classify) für weitere Informationen.
 
 <!-- CASE WHEN -->
 
@@ -622,10 +619,6 @@ Die folgenden Einschränkungen gelten und werden erzwungen, wenn *Auswählen* un
 Definiert einen Satz von Werten, die in einem neuen abgeleiteten Feld durch entsprechende Werte ersetzt werden.
 
 +++ Details
-
->[!NOTE]
->
->Diese Funktion hieß ursprünglich Lookup , wurde aber in Classify umbenannt, um die Lookup-Funktion mit unterschiedlichen Funktionen aufzunehmen.
 
 ## Spezifikationen {#classify-io}
 
@@ -1027,6 +1020,8 @@ Sie definieren eine `Activity Name` abgeleitetes Feld. Sie verwenden die [!UICON
 ![Screenshot der Regel &quot;Kleinbuchstaben&quot;](assets/lookup.png)
 
 ## Weitere Informationen {#lookup-more-info}
+
+Die Suchfunktion wird zur Berichtszeit auf die Daten angewendet, die von Customer Journey Analytics aus dem Lookup-Datensatz abgerufen werden, den Sie als Teil Ihrer Verbindung konfiguriert haben.
 
 Sie können schnell eine [!UICONTROL Suche] -Funktion im Regel-Builder verwenden, die bereits eine oder mehrere andere Funktionen enthält.
 
