@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 exl-id: 1c42efac-b3d2-437b-8b0b-9c6fdfed8520
 role: Admin
-source-git-commit: 195659d6665e5a3c0e4bf5a4f02ce2af5b95749c
+source-git-commit: d8487c48b4ca4c2a7e5f407d73e71d227aa0de1c
 workflow-type: tm+mt
-source-wordcount: '3793'
+source-wordcount: '3809'
 ht-degree: 12%
 
 ---
@@ -352,10 +352,11 @@ Sobald Ihre Organisation [Voraussetzungen](#prerequisites) und verstehen gemeins
 
 ### Optionen
 
-Wählen Sie die Stitching-Optionen aus. Das Customer Journey Analytics-Paket legt die verfügbaren Optionen für die anfängliche Aufstockungsdauer, das Lookback-Fenster, die Wiederholungshäufigkeit und die maximale Anzahl der für das Stitching zulässigen Datensätze fest. Siehe [Customer Journey Analytics-Produktbeschreibung](https://helpx.adobe.com/de/legal/product-descriptions/customer-journey-analytics.html) für weitere Details.
+Wählen Sie die Stitching-Optionen aus. Das Customer Journey Analytics-Paket bestimmt die verfügbaren Stitching-Methoden, Optionen für die anfängliche Aufstockungsdauer, das Lookback-Fenster, die Wiederholungshäufigkeit und die maximale Anzahl von Datensätzen, die für das Stitching zulässig sind. Siehe [Customer Journey Analytics-Produktbeschreibung](https://helpx.adobe.com/de/legal/product-descriptions/customer-journey-analytics.html) für weitere Details.
 
 | | Customer Journey Analytics<br/>Auswählen | Customer Journey Analytics<br/>Prime | Customer Journey Analytics<br/>Ultimate |
 |---|---|---|---|
+| Verfügbare Stitverfahren | <li>Feldbasiertes Stitching</li> | <li>Feldbasiertes Stitching</li><li>Diagrammbasiertes Stitching</li> | <li>Feldbasiertes Stitching</li><li>Diagrammbasiertes Stitching</li> |
 | Dauer der einmaligen Zuordnung von Aufstockungen | 13 Monate | 13 Monate | 25 Monate |
 | Lookback-Fenster und Wiederholungshäufigkeit | <li>1 Tag, jeden Tag</li><li>bis zu 7 Tage, wöchentlich</li> | <li>1 Tag, jeden Tag</li><li>bis zu 14 Tage, wöchentlich</li> | <li>1 Tag, jeden Tag</li><li>bis zu 30 Tage, wöchentlich</li> |
 | Maximale Anzahl an Datensätzen, die für das Stitching zulässig sind | 5 | 10 | 50 |
