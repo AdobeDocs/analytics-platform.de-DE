@@ -5,7 +5,7 @@ exl-id: 9f678225-a9f3-4134-be38-924b8de8d57f
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: 3389c141105ff71ed26abe4384fe3bb930448d43
+source-git-commit: 22f3519445564ebdb2092db04cc966001bda8b1c
 workflow-type: tm+mt
 source-wordcount: '731'
 ht-degree: 35%
@@ -88,7 +88,7 @@ Wenn Sie jedoch beide Tabellen in Ihrer Verbindung eingeschlossen haben, ändert
 
 >[!NOTE]
 >
->Wenn ein zusammengeführtes Feld ein Suchschlüssel für einen Ereignis-Datensatz in der Verbindung ist, wird der zugehörige Lookup-Datensatz angereichert *all* -Werte dieses Felds. Es spielt keine Rolle, aus welchem Ereignis-Datensatz eine Zeile stammt, da die Lookup-Beziehung mit dem Pfad des freigegebenen Schemas verknüpft ist.
+>Wenn ein zusammengeführtes Feld ein Suchschlüssel für einen Ereignis-Datensatz in der Verbindung ist, wird der zugehörige Lookup-Datensatz angereichert **all** -Werte dieses Felds. Es spielt keine Rolle, aus welchem Ereignis-Datensatz eine Zeile stammt, da die Lookup-Beziehung mit dem Pfad des freigegebenen Schemas verknüpft ist.
 
 ## Kanalübergreifende Analyse
 
