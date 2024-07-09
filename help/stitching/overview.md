@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 exl-id: 1c42efac-b3d2-437b-8b0b-9c6fdfed8520
 role: Admin
-source-git-commit: d8487c48b4ca4c2a7e5f407d73e71d227aa0de1c
+source-git-commit: ca2387c2dd4c6c0ccdf6cec245c5d66ecea93bd5
 workflow-type: tm+mt
-source-wordcount: '3809'
+source-wordcount: '3817'
 ht-degree: 12%
 
 ---
@@ -350,9 +350,9 @@ Die folgenden Einschränkungen gelten speziell für das grafikbasierte Stitching
 
 Sobald Ihre Organisation [Voraussetzungen](#prerequisites) und verstehen gemeinsame [Einschränkungen](#limitations) und Stitching-Methodenspezifisch ([feldbasiert](#limitations-1) und [grafikbasiert](#limitations-2)), können Sie diese Schritte ausführen, um mit dem Stitching in Customer Journey Analytics zu beginnen.
 
-### Optionen
+### Optionen auswählen
 
-Wählen Sie die Stitching-Optionen aus. Das Customer Journey Analytics-Paket bestimmt die verfügbaren Stitching-Methoden, Optionen für die anfängliche Aufstockungsdauer, das Lookback-Fenster, die Wiederholungshäufigkeit und die maximale Anzahl von Datensätzen, die für das Stitching zulässig sind. Siehe [Customer Journey Analytics-Produktbeschreibung](https://helpx.adobe.com/de/legal/product-descriptions/customer-journey-analytics.html) für weitere Details.
+Das Customer Journey Analytics-Paket, für das Sie berechtigt sind, legt die verfügbaren Stitching-Methoden, Optionen für die anfängliche Aufstockungsdauer, das Lookback-Fenster, die Wiederholungshäufigkeit und die maximale Anzahl der für das Stitching zulässigen Datensätze fest. Siehe [Customer Journey Analytics-Produktbeschreibung](https://helpx.adobe.com/de/legal/product-descriptions/customer-journey-analytics.html) für weitere Details. Entscheiden Sie sich für die verfügbaren Optionen, bevor Sie Support anfordern.
 
 | | Customer Journey Analytics<br/>Auswählen | Customer Journey Analytics<br/>Prime | Customer Journey Analytics<br/>Ultimate |
 |---|---|---|---|
