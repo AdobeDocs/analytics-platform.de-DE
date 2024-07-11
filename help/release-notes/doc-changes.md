@@ -4,10 +4,10 @@ description: Listet Inhaltsaktualisierungen für Dokumentation zu Customer Journ
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 466bcd2d790dae9eccb5d9114a375c5b9666c435
+source-git-commit: f0ff4abcfdb7361aed62bd35b50c4b014b223ec9
 workflow-type: tm+mt
-source-wordcount: '3810'
-ht-degree: 72%
+source-wordcount: '3824'
+ht-degree: 73%
 
 ---
 
@@ -19,8 +19,10 @@ Die folgenden Aktualisierungen wurden seit der ersten Erstellung der Customer Jo
 
 | Funktion | Beschreibung |
 | --- | --- |
+| **Juli 2024** | |
+| Aktualisierte allgemeine Fehlermeldungen | Es wurden geringfügige Aktualisierungen an der [Allgemeine Fehlermeldungen](/help/analysis-workspace/workspace-faq/error-messages.md). |
 | **Juni 2024** | |
-| Aktualisierter Produktname, der sich auf Streaming-Medien-Funktionen bezieht | Instanzen von &quot;Media Analytics&quot;und &quot;Streaming Media&quot;wurden durch den Namen &quot;Streaming Media Collection Add-on&quot;ersetzt, wenn auf die Reihe von Streaming-Medien-Funktionen verwiesen wird, die Streaming-Mediendaten erfassen und in Analysis Workspace aufdecken. <p>Diese Updates sind sowohl in der Customer Journey Analytics-Dokumentation als auch in der [Dokumentation zum Streaming Media Collection Add-on](https://experienceleague.adobe.com/de/docs/media-analytics/using/media-overview).</p> |
+| Aktualisierter Produktname, der sich auf die Funktion zum Streaming von Medien bezieht | Instanzen von „Media Analytics“ und „Streaming Media“ wurden durch den Namen „Add-on für Streaming-Mediensammlungen“ ersetzt, wenn auf die Reihe von Funktionen zum Streaming von Medien verwiesen wird, die Streaming-Mediendaten erfassen und in Analysis Workspace anzeigen. <p>Diese Updates sind sowohl in der Customer Journey Analytics-Dokumentation als auch in der [Dokumentation zum Streaming Media Collection Add-on](https://experienceleague.adobe.com/de/docs/media-analytics/using/media-overview).</p> |
 | Diagrammbasiertes Stitching | Aktualisiert und neu strukturiert [Zuordnungsdokumentation](/help/stitching/overview.md) mit der Einführung des grafikbasierten Stitching. |
 | KI-Assistent | hinzugefügt [Dokumentation](../ai-assistant.md) auf der KI-Assistenzkraft für Customer Journey Analytics. |
 | Datensätze für B2B-Suchen transformieren | Eine Dokumentation zur Unterstützung von [personenbasierte Suchen nach B2B-Daten](/help/connections//transform-datasets-b2b-lookups.md) (einschließlich Konten, Möglichkeiten, Marketing-Listen und Kampagnen) unter Verwendung der Transformation von B2B-Lookup-Datensätzen. |
