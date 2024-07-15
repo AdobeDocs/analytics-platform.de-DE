@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: 7f67c497-386b-4442-a502-6b492f35c6e6
 source-git-commit: 52021e557171754901fe6a64c7fa544243af70f1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '767'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -29,13 +29,13 @@ Der KI-Assistent ist eine Dialogerfahrung, die es Fachleuten ermöglicht, Aufgab
 
 [![Bild](assets/learn-more-button.svg)](/help/ai-assistant.md)
 
->[!TAB Diagrammbasiertes Stitching*]
+>[!TAB Grafikbasierte Zuordnung*]
 
 Durch die grafikbasierte Zuordnung können Sie das Identitätsdiagramm des Identity Service von Experience Platform verwenden, um eine bessere Ansicht der Customer Journey zu erhalten, indem Sie: <ul><li>Datensätze mit verschiedenen Kennungen verknüpfen, ohne zusätzliche Daten extrahieren, transformieren und laden zu müssen, um eine einzelne Kennung widerzuspiegeln.</li> <li>Die Abdeckung der bevorzugten oder goldenen Identität für einen einzelnen Datensatz durch die gemeinsame Nutzung von Identitäten über Datensätze hinweg verbessern.</li><li>Die in Real-time Customer Data Platform und Journey Optimizer erstellten Profile mit Personen in Customer Journey Analytics abstimmen.</li></ul>
 
 [![Bild](assets/learn-more-button.svg)](/help/stitching/overview.md#graph-based-stitching)
 
-*_Sie benötigen das Prime-Paket für diagrammbasiertes Stitching._*
+*_Für grafikbasierte Zuordnung ist das Prime-Paket erforderlich._*
 
 >[!TAB B2B-Suchen]
 
