@@ -5,16 +5,16 @@ feature: Guided Analysis
 keywords: Produktanalysen
 exl-id: 2e004894-dc1b-42a7-a060-240f0151b2f2
 role: User
-source-git-commit: a8ead81a8de8dcab4c12cbbe9cba56c4ce8417a3
-workflow-type: ht
-source-wordcount: '1487'
-ht-degree: 100%
+source-git-commit: 2b503ba784762d60efe8581c9ee06587aed416eb
+workflow-type: tm+mt
+source-wordcount: '1477'
+ht-degree: 98%
 
 ---
 
 # Anwendungsfälle für Branchen
 
-Die Anwendungsbeispiele für die geführte Analyse variieren je nach Branche. Auf dieser Seite finden Sie einige Beispiele dafür, was Produkt-Teams mit geführten Analysen und Adobe Product Analytics-Funktionen erreichen können.
+Auf dieser Seite finden Sie einige Beispiele dafür, was Produktteams aus verschiedenen Branchen mit geführter Analyse erreichen können.
 
 +++**Einzelhandel**
 
