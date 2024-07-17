@@ -5,20 +5,16 @@ keywords: Produktanalysen
 exl-id: 1ac8157f-87e8-4d98-a2ca-f6beb68d9d6b
 feature: Guided Analysis
 role: User
-source-git-commit: a55224d91dbcf7323ccd481b4a7469d5b80f12c4
-workflow-type: ht
-source-wordcount: '1397'
-ht-degree: 100%
+source-git-commit: 2addd3d17f62da69eb6636d987931fc21df07af5
+workflow-type: tm+mt
+source-wordcount: '1399'
+ht-degree: 93%
 
 ---
 
 # Überblick über die geführte Analyse
 
 Mit geführten Analysen können Benutzende hochwertige Daten und Erkenntnisse zur Kunden-Journey mithilfe geführter Workflows selbst bereitstellen, die auf den kanalübergreifenden Daten von Customer Journey Analytics basieren. Funktionsübergreifende Teams, vom Marketing bis zum Produkt, können in Echtzeit eine Verbindung herstellen, um diese Berichte zu verwenden und zu verstehen.
-
->[!NOTE]
->
-> Die geführte Analyse ist derzeit nur als Bestandteil von Adobe Product Analytics erhältlich, einem kostenpflichtigen Add-on zu Customer Journey Analytics.  Wenn Ihr Unternehmen diese Reihe von Funktionen nutzen möchte, wenden Sie sich bitte an Ihr Adobe-Accountteam.
 
 Ähnlich wie bei Analysis Workspace- und Mobile-Scorecards verwendet die geführte Analyse Daten aus einer [Datenansicht](../data-views/data-views.md), die auf Daten in Adobe Experience Platform über eine [Verbindung](../connections/overview.md) verweist. Viele Berichte, die mit einer geführten Analyse erstellt wurden, können nahtlos zur weiteren Recherche an Analysis Workspace übermittelt werden.
 
@@ -72,9 +68,19 @@ Die geführte Analyse verwendet die folgenden Elemente der Benutzeroberfläche:
 
 ## Bereitstellung
 
-Die geführte Analyse ist Bestandteil von Adobe Product Analytics, einem kostenpflichtigen Add-on zu Customer Journey Analytics. Wenn Ihr Unternehmen diese Reihe von Funktionen nutzen möchte, wenden Sie sich bitte an Ihr Adobe-Accountteam.
+Geführte Analyseansichten sind in Customer Journey Analytics-Packages wie folgt enthalten:
 
-Sobald Ihr Unternehmen für die Verwendung der geführten Analyse freigeschaltet ist, können Produktprofiladmins den Zugriff darauf in der Adobe Admin Console hinzufügen oder entfernen.
+| Paket | Verfügbare Ansichten |
+| --- | --- |
+| [!UICONTROL CJA-Add-ons] | Trends: Nutzung, Trends: Häufigkeit, Trichter: Friction, Trichter: Konversionstrends, Treue: Bindungsraten, Benutzerwachstum: Aktiv, Benutzerwachstum: Nettowachstum |
+| [!UICONTROL CJA Foundation] | Trends: Nutzung |
+| [!UICONTROL CJA Select] | Foundation-Ansichten + Trends: Häufigkeit, Trichter: Funktion, Trichter: Konversionstrends, Treue: Treueraten, Benutzerwachstum: Aktiv, Benutzerwachstum: Nettowachstum |
+| [!UICONTROL CJA Prime] | Ansichten auswählen + Benutzerstream: Timeline, Funktionsmatrix: Interaktion, Auswirkung: Veröffentlichung, Auswirkung: Erste Verwendung |
+| [!UICONTROL CJA Ultimate] | Primäre Ansichten |
+
+{style="table-layout:auto"}
+
+Produktprofiladministratoren können den Zugriff auf die geführte Analyse in der Adobe Admin Console hinzufügen oder entfernen.
 
 1. Melden Sie sich bei der [Adobe Admin Console](https://adminconsole.adobe.com) an.
 1. Wählen Sie in der Produktliste **[!UICONTROL Customer Journey Analytics]** aus.
