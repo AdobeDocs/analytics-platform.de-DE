@@ -5,16 +5,16 @@ feature: Guided Analysis
 keywords: Produktanalysen
 exl-id: 2e004894-dc1b-42a7-a060-240f0151b2f2
 role: User
-source-git-commit: 2b503ba784762d60efe8581c9ee06587aed416eb
+source-git-commit: 5752d3952987f8447cd12f953a57921044fa3c65
 workflow-type: tm+mt
-source-wordcount: '1477'
+source-wordcount: '1483'
 ht-degree: 98%
 
 ---
 
 # Anwendungsfälle für Branchen
 
-Auf dieser Seite finden Sie einige Beispiele dafür, was Produktteams aus verschiedenen Branchen mit geführter Analyse erreichen können.
+Auf dieser Seite finden Sie einige Beispiele aus der Branche, wie Kundenerlebnisteams - von Analysten über Produktteams bis hin zu Marketingexperten - mit einer geführten Analyse Erfolg erzielen können.
 
 +++**Einzelhandel**
 
