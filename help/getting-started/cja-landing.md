@@ -4,10 +4,10 @@ description: Landingpage von Customer Journey Analytics.
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 7f67c497-386b-4442-a502-6b492f35c6e6
-source-git-commit: 52021e557171754901fe6a64c7fa544243af70f1
-workflow-type: ht
-source-wordcount: '767'
-ht-degree: 100%
+source-git-commit: 7d915fc9b50163b7ec9c48232b99a85a3b063a77
+workflow-type: tm+mt
+source-wordcount: '768'
+ht-degree: 95%
 
 ---
 
@@ -45,7 +45,7 @@ Im Rahmen der Konfiguration einer Verbindung können Sie Datensätze für bestim
 
 >[!TAB Abgeleitete Felder]
 
-Neue abgeleitete Feldfunktionen (mathematische Funktionen, Weiter oder Zurück, Zusammenfassen) und zusätzliche Funktionsvorlagen (wie Bounces, benutzerfreundlicher Datensatzname, Weihnachtszeit, monatliche Ziele, einfache Bot-Erkennung und andere) sind jetzt verfügbar.
+Neue abgeleitete Feldfunktionen (Mathematik, Weiter oder Zurück, Zusammenfassung, Deduplizierung) und zusätzliche Funktionsvorlagen (wie Absprünge, Anzeigename des Datensatzes, Weihnachtszeit, Monatsziele, einfache Bot-Erkennung und andere) sind jetzt verfügbar.
 
 [![Bild](assets/learn-more-button.svg)](/help/data-views/derived-fields/derived-fields.md)
 
