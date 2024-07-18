@@ -8,7 +8,7 @@ role: User
 source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
 source-wordcount: '242'
-ht-degree: 79%
+ht-degree: 80%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 79%
 
 Sie können Projekte über den [Projektfreigabe-Workflow](/help/analysis-workspace/curate-share/share-projects.md) für Empfänger als „schreibgeschützt“ freigeben. Empfänger mit der Rolle „Kann anzeigen“ erhalten ein eingeschränkteres Projekterlebnis. Dies kann gewünscht werden, wenn Sie ein Projekt für Benutzer freigeben, die mit der Datenstruktur Ihres Unternehmens, Analysis Workspace oder Customer Journey Analytics im Allgemeinen weniger vertraut sind, aber dennoch Daten und Erkenntnisse in einer sicheren Umgebung nutzen möchten.
 
-![Ein schreibgeschütztes freigegebenes Projekt.](assets/view-only-project.png)
+![ Ein schreibgeschütztes freigegebenes Projekt.](assets/view-only-project.png)
 
 ## Deaktivierte Interaktionen
 

@@ -7,15 +7,15 @@ role: User
 source-git-commit: e0cf556a094726edbee35b21bf71d5d1f227fcc7
 workflow-type: tm+mt
 source-wordcount: '1885'
-ht-degree: 34%
+ht-degree: 35%
 
 ---
 
 # Experimentier-Bedienfeld
 
-Im Bedienfeld **[!UICONTROL Experimentieren]** können Analysten verschiedene Varianten von Anwendererlebnissen, Marketing oder Messaging miteinander vergleichen, um zu ermitteln, welches die beste Lösung für ein bestimmtes Ergebnis ist. Sie können die Steigerung und Konfidenz jedes A/B-Experiments von jeder beliebigen Experimentierplattform aus bewerten - online, offline, von Adobe-Lösungen wie Target oder Journey Optimizer und sogar von selbst erstellten BYO-Daten.
+Im Bedienfeld **[!UICONTROL Experimentieren]** können Analysten verschiedene Varianten von Anwendererlebnissen, Marketing oder Messaging miteinander vergleichen, um zu ermitteln, welches die beste Lösung für ein bestimmtes Ergebnis ist. Sie können den Anstieg und die Konfidenz eines jeden A/B-Experiments von jeder beliebigen Experimentierplattform aus bewerten – online, offline, aus Adobe-Lösungen wie Target oder Journey Optimizer und sogar aus eigenen, selbst eingebrachten Daten.
 
-Mehr über [Integration zwischen Adobe Customer Journey Analytics und Adobe Target](https://experienceleague.adobe.com/en/docs/target/using/integrate/cja/target-reporting-in-cja).
+Erfahren Sie mehr über die [Integration zwischen Adobe Customer Journey Analytics und Adobe Target](https://experienceleague.adobe.com/de/docs/target/using/integrate/cja/target-reporting-in-cja).
 
 ## Zugriffssteuerung {#access}
 
@@ -27,32 +27,32 @@ Zwei neue erweiterte Funktionen wurden hinzugefügt: [!UICONTROL Anstieg] und [!
 
 ## Schritt 1: Einrichten der Verbindung zu Experimentier-Datensätzen {#connection}
 
-Laut dem empfohlenen Datenschema sollten die Experimentdaten in einem [Objekt-Array](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/fields/array) gespeichert sein, in dem die Experiment- und Variantendaten in zwei separaten Dimensionen enthalten sind. Beide Dimensionen müssen in einer **single** Objekt-Array. Wenn sich Ihre Experimentdaten in einer einzigen Dimension befinden (mit Experiment- und Variantendaten in einer getrennten Zeichenfolge), können Sie die [substring](/help/data-views/component-settings/substring.md) in Datenansichten festlegen, um die Dimension zur Verwendung im Bereich in zwei zu unterteilen.
+Laut dem empfohlenen Datenschema sollten die Experimentdaten in einem [Objekt-Array](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/fields/array) gespeichert sein, in dem die Experiment- und Variantendaten in zwei separaten Dimensionen enthalten sind. Beide Dimensionen müssen sich in einem **einzelnen** -Objektarray befinden. Wenn sich Ihre Experimentdaten in einer einzigen Dimension befinden (mit Experiment- und Variantendaten in einer getrennten Zeichenfolge), können Sie die Einstellung [substring](/help/data-views/component-settings/substring.md) in Datenansichten verwenden, um die Dimension zur Verwendung im Bedienfeld in zwei aufzuteilen.
 
-Nachdem Ihre Experimentdaten [erfasst](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/home) nach Adobe Experience Platform, [Erstellen einer Verbindung in Customer Journey Analytics](/help/connections/create-connection.md) zu einem oder mehreren Experimentdatensätzen hinzufügen.
+Nachdem Ihre Experimentdaten [ in Adobe Experience Platform aufgenommen wurden, erstellen [eine Verbindung in Customer Journey Analytics](/help/connections/create-connection.md) mit einem oder mehreren Experimentdatensätzen.](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/home)
 
 ## Schritt 2: Hinzufügen von Kontextbezeichnungen in Datenansichten {#context-labels}
 
-In den Einstellungen für Customer Journey Analytics-Datenansichten können Administratoren [Kontextbezeichnungen](/help/data-views/component-settings/overview.md) zu einer Dimension oder Metrik und Customer Journey Analytics-Diensten wie [!UICONTROL Experimentieren] -Bedienfeld können diese Beschriftungen für ihre Zwecke verwenden. Für das Bedienfeld „Experimentieren“ werden zwei vordefinierte Beschriftungen verwendet:
+In den Einstellungen für Customer Journey Analytics-Datenansichten können Administratoren einer Dimension oder Metrik [Kontextbezeichnungen](/help/data-views/component-settings/overview.md) hinzufügen und Customer Journey Analytics-Dienste wie das Bedienfeld [!UICONTROL Experimentation] können diese Bezeichnungen für ihre Zwecke verwenden. Für das Bedienfeld „Experimentieren“ werden zwei vordefinierte Beschriftungen verwendet:
 
 * [!UICONTROL Experimentierexperiment]
 * [!UICONTROL Experimentiervariante]
 
 Wählen Sie in Ihrer Datenansicht, die Experimentierdaten enthält, zwei Dimensionen aus: eine mit den Experimentierdaten und eine mit den Variantendaten. Geben Sie diesen Dimensionen dann die Beschriftungen **[!UICONTROL Experiment]** und **[!UICONTROL Variante]**.
 
-![Kontextbeschriftungsoptionen für Experimentierungs- und Experimentierungsvarianten.](assets/context-label.png)
+![Optionen für die Kontextbeschriftung für die Experimentierungs- und Experimentierungsvariante.](assets/context-label.png)
 
 Ohne diese Beschriftungen funktioniert das Bedienfeld „Experiment“ nicht, da keine Experimente vorhanden sind, mit denen gearbeitet werden kann.
 
 ## Schritt 3: Konfigurieren des Bedienfelds „Experiment“ {#configure}
 
-1. Ziehen Sie in Customer Journey Analytics Workspace das Experimentierfeld in ein Projekt.
+1. Ziehen Sie unter Customer Journey Analytics Workspace das Experimentierfeld in ein Projekt.
 
-![Das Bedienfeld Erlebnis zog sich in ein Projekt.](assets/experiment.png)
+![Das Bedienfeld &quot;Erlebnis&quot;wurde in ein Projekt gezogen.](assets/experiment.png)
 
 >[!IMPORTANT]
 >
->Wenn die erforderliche Einrichtung in Customer Journey Analytics-Datenansichten nicht abgeschlossen wurde, erhalten Sie diese Nachricht, bevor Sie fortfahren können: &quot;[!UICONTROL Konfigurieren Sie die Experiment- und Variantendimensionen in Datenansichten.]&quot;.
+>Wenn die erforderliche Einrichtung in Customer Journey Analytics-Datenansichten nicht abgeschlossen wurde, erhalten Sie diese Nachricht, bevor Sie fortfahren können: &quot;[!UICONTROL Konfigurieren Sie die Dimensionen für Experiment und Variante in Datenansichten]&quot;.
 >
 
 1. Konfigurieren Sie die Einstellungen für die Bedienfeldeingabe.
@@ -62,7 +62,7 @@ Ohne diese Beschriftungen funktioniert das Bedienfeld „Experiment“ nicht, da
    | **[!UICONTROL Experiment]** | Eine Reihe von Varianten eines Erlebnisses, die Endbenutzern bereitgestellt wurden, um zu ermitteln, welche Erlebnisse am besten dauerhaft beibehalten werden sollten. Ein Experiment besteht aus zwei oder mehr Varianten, von denen eine als Kontrollvariante gilt. Diese Einstellung wird vorab mit den Dimensionen gefüllt, die in den Datenansichten mit der Beschriftung **[!UICONTROL Experiment]** gekennzeichnet wurden, sowie mit den Experimentdaten der letzten drei Monate. |
    | **[!UICONTROL Kontrollvariante]** | Eine von zwei oder mehr Änderungen im Erlebnis eines Endbenutzers, die verglichen werden, um die bessere Alternative zu ermitteln. Eine Variante muss als Kontrolle ausgewählt werden und nur eine Variante kann als Kontrollvariante betrachtet werden. Diese Einstellung wird vorab mit den Dimensionen gefüllt, die in den Datenansichten mit der Beschriftung **[!UICONTROL Variante]** gekennzeichnet wurden. Mit dieser Einstellung werden die Variantendaten abgerufen, die mit diesem Experiment verknüpft sind. |
    | **[!UICONTROL Erfolgsmetriken]** | Die Metrik(en), die ein Anwender verwendet, um Varianten zu vergleichen. Die Variante mit dem wünschenswertesten Ergebnis für die Konversionsmetrik (egal ob am höchsten oder am niedrigsten) wird zur „Variante mit der besten Performance“ eines Experiments erklärt. Sie können bis zu 5 Metriken hinzufügen. |
-   | **[!UICONTROL Normalisierungsmetrik]** | Grundlage ([!UICONTROL Personen], [!UICONTROL Sitzungen]oder [!UICONTROL Veranstaltungen]), auf dem ein Test ausgeführt wird. Beispielsweise kann ein Test die Konversionsraten verschiedener Varianten vergleichen, bei denen die **[!UICONTROL Konversionsrate]** als **[!UICONTROL Konversionen pro Sitzung]** oder **[!UICONTROL Konversionen pro Person]** berechnet wird. |
+   | **[!UICONTROL Normalisierungsmetrik]** | Die Grundlage ([!UICONTROL Personen], [!UICONTROL Sitzungen] oder [!UICONTROL Ereignisse]), auf der ein Test ausgeführt wird. Beispielsweise kann ein Test die Konversionsraten verschiedener Varianten vergleichen, bei denen die **[!UICONTROL Konversionsrate]** als **[!UICONTROL Konversionen pro Sitzung]** oder **[!UICONTROL Konversionen pro Person]** berechnet wird. |
    | **[!UICONTROL Datumsbereich]** | Der Datumsbereich wird automatisch festgelegt, basierend auf dem ersten Ereignis, das beim Customer Journey Analytics für das ausgewählte Experiment empfangen wurde. Sie können den Datumsbereich bei Bedarf auf einen spezifischeren Zeitraum beschränken oder erweitern. |
 
 1. Klicken Sie auf **[!UICONTROL Erstellen]**.
@@ -75,11 +75,11 @@ Sie erhalten auch eine Textzusammenfassung, die anzeigt, ob das Experiment schl�
 
 Für jede ausgewählte Erfolgsmetrik wird eine Freiformtabelle und ein Konversionsraten-Trend angezeigt.
 
-![Die Experimentierungsausgabe, die eine Freiformtabelle und einen Konversionsraten-Trend anzeigt.](assets/exp-output1.png)
+![Die Experimentierungsausgabe, die eine Freiformtabelle und einen Konversionsratentrend anzeigt.](assets/exp-output1.png)
 
 Das [!UICONTROL Liniendiagramm] zeigt Ihnen die Performance von [!UICONTROL Kontrolle] im Vergleich zur [!UICONTROL Kontrollvariante]:
 
-![Die Liniendiagrammausgabe, die die Leistung von Control versus Control Variant anzeigt.](assets/exp-output2.png)
+![Die Liniendiagrammausgabe, die die Leistung von Kontroll- und Kontrollvarianten anzeigt.](assets/exp-output2.png)
 
 >[!NOTE]
 >
@@ -87,15 +87,15 @@ Das [!UICONTROL Liniendiagramm] zeigt Ihnen die Performance von [!UICONTROL Kont
 
 ## Schritt 5: Interpretieren der Ergebnisse {#interpret}
 
-1. **Experiment ist abgeschlossen**: Jedes Mal, wenn Sie den Experimentbericht anzeigen, werden die bis zu diesem Zeitpunkt im Experiment angesammelten Daten analysiert. Und deklariert ein Experiment als &quot;Fazit&quot;, wenn das jederzeit gültige Vertrauen einen Schwellenwert von 95 % für *mindestens ein* der Varianten (mit einer Benjamini-Hochberg Korrektur, wenn mehr als zwei Arme vorhanden sind, zur Korrektur der Mehrfachhypothesen).
+1. **Experiment ist abgeschlossen**: Jedes Mal, wenn Sie den Experimentbericht anzeigen, werden die bis zu diesem Zeitpunkt im Experiment angesammelten Daten analysiert. Und deklariert ein Experiment als &quot;Fazit&quot;, wenn das jederzeit gültige Konfidenzniveau für *mindestens 1* der Varianten einen Schwellenwert von 95 % überschreitet (wobei eine Benjamini-Hochberg-Korrektur angewendet wird, wenn mehr als zwei Arme vorhanden sind, um eine Mehrfachhypothesenprüfung zu korrigieren).
 
 2. **Variante mit der besten Performance**: Wenn ein Experiment als endgültig deklariert wird, wird die Variante mit der höchsten Konversionsrate als „Variante mit der besten Performance“ gekennzeichnet. Beachten Sie, dass es sich bei dieser Variante entweder um die Kontroll- oder Grundvariante oder um eine der Varianten handeln muss, die die 95%-Schwelle jederzeit überschreiten (bei Anwendung von Benjamini-Hochberg-Korrekturen).
 
 3. **Konversionsrate**: Die angezeigte Konversionsrate ist ein Verhältnis zwischen dem Erfolgsmetrikwert und dem normalisierenden Metrikwert. Beachten Sie, dass dieser Wert manchmal größer als 1 sein kann, wenn die Metrik nicht binär ist (1 oder 0 für jede Einheit im Experiment)
 
-4. **Steigerung**: Die Zusammenfassung des Experimentberichts zeigt die Steigerung im Vergleich zur Grundlinie, die einen Messwert für die prozentuale Verbesserung der Konversionsrate einer bestimmten Variante im Vergleich zur Grundlinie darstellt. Genau bestimmt ist dies der Performance-Unterschied zwischen einer bestimmten Variante und der Baseline, geteilt durch die Performance der Baseline und ausgedrückt in Prozent.
+4. **Steigerung**: Die Zusammenfassung des Experimentberichts zeigt die Steigerung gegenüber der Grundlinie, die eine Messung der prozentualen Verbesserung der Konversionsrate einer bestimmten Variante gegenüber der Grundlinie darstellt. Genau bestimmt ist dies der Performance-Unterschied zwischen einer bestimmten Variante und der Baseline, geteilt durch die Performance der Baseline und ausgedrückt in Prozent.
 
-5. **Vertrauen**: Die jederzeit gültige Konfidenz, die angezeigt wird, ist ein probabilistischer Messwert dafür, wie viele Beweise dafür vorliegen, dass eine bestimmte Variante mit der Kontrollvariante identisch ist. Eine höhere Konfidenz deutet auf weniger Nachweise hin, die die Annahme stützen, dass die Kontroll- und Nicht-Kontrollvariante die gleiche Performance aufweisen. Genauer gesagt ist die angezeigte Konfidenz eine Wahrscheinlichkeit (ausgedrückt als Prozentsatz), dass Sie einen kleineren Unterschied in den Konversionsraten zwischen einer bestimmten Variante und der Kontrolle beobachtet hätten, wenn in Wirklichkeit kein Unterschied in den zugrunde liegenden tatsächlichen Konversionsraten besteht. Im Hinblick auf *p*-Werte ist die angezeigte Konfidenz 1 - *p*-Wert.
+5. **Konfidenz**: Die jederzeit gültige Konfidenz, die angezeigt wird, ist ein probabilistischer Messwert dafür, wie viele Beweise dafür vorliegen, dass eine bestimmte Variante mit der Kontrollvariante identisch ist. Eine höhere Konfidenz deutet auf weniger Nachweise hin, die die Annahme stützen, dass die Kontroll- und Nicht-Kontrollvariante die gleiche Performance aufweisen. Genauer gesagt ist die angezeigte Konfidenz eine Wahrscheinlichkeit (ausgedrückt als Prozentsatz), dass Sie einen kleineren Unterschied in den Konversionsraten zwischen einer bestimmten Variante und der Kontrolle beobachtet hätten, wenn in Wirklichkeit kein Unterschied in den zugrunde liegenden tatsächlichen Konversionsraten besteht. Im Hinblick auf *p*-Werte ist die angezeigte Konfidenz 1 - *p*-Wert.
 
 >[!NOTE]
 >
@@ -105,7 +105,7 @@ Das [!UICONTROL Liniendiagramm] zeigt Ihnen die Performance von [!UICONTROL Kont
 
 Um leicht verständliche und sichere statistische Rückschlüsse zu ermöglichen, hat Adobe eine statistische Methodik eingeführt, die auf [Immer gültige Konfidenzsequenzen](https://arxiv.org/abs/2103.06476) basiert.
 
-Eine Konfidenzsequenz ist *sequenziell* Analogon eines Konfidenzintervalls. Um zu verstehen, was eine Konfidenzsequenz ist, stellen Sie sich vor, Ihre Experimente hundertmal zu wiederholen und eine Schätzung der durchschnittlichen Geschäftsmetrik (z. B. Öffnungsrate einer E-Mail) und der zugehörigen Konfidenzsequenz von 95 % für *Jeder neue Benutzer* , der in das Experiment eintritt.
+Eine Konfidenzsequenz ist ein *sequenzielles* Analogon eines Konfidenzintervalls. Um zu verstehen, was eine Konfidenzsequenz ist, stellen Sie sich vor, Ihre Experimente hundertmal zu wiederholen und eine Schätzung der durchschnittlichen Geschäftsmetrik (z. B. Öffnungsrate einer E-Mail) und der zugehörigen Konfidenzsequenz von 95 % für *jeden neuen Benutzer* zu berechnen, der in das Experiment eintritt.
 
 Eine Konfidenzsequenz von 95 % umfasst den &quot;true&quot;-Wert der Geschäftsmetrik in 95 der 100 Experimente, die Sie ausgeführt haben. (Ein Konfidenzintervall von 95 % kann nur einmal pro Experiment berechnet werden, um die gleiche 95-%-Garantie zu erhalten, nicht bei jedem neuen Benutzer.) Konfidenzsequenzen ermöglichen es Ihnen daher, Experimente kontinuierlich zu überwachen, ohne die Falsch-Positiv-Fehlerrate zu erhöhen, d. h. sie ermöglichen einen &quot;Peeking&quot; bei den Ergebnissen.
 
@@ -123,10 +123,10 @@ Im Experimentierbereich in Customer Journey Analytics können Sie Daten als durc
 
 Die folgende Abbildung widerspricht diesen Situationen:
 
-![Ein Diagramm, das Beobachtungsdaten und das zufällige Experiment anzeigt.](assets/randomize.png)
+![Ein Diagramm, das Beobachtungsdaten und das randomisierte Experiment anzeigt.](assets/randomize.png)
 
 Wenn Sie die Wirkung von Intervention X auf das Ergebnis Y messen möchten, ist es möglich, dass die wahre Ursache für beide der verwirrende Faktor C ist. Wenn die Daten nicht durch eine zufällige Personalisierung auf X erreicht werden, ist die Auswirkung schwieriger zu messen, und die Analyse berücksichtigt explizit C. Randomisierung unterbricht die Abhängigkeit von X auf C, sodass wir die Wirkung von X auf Y messen können, ohne sich um andere Variablen kümmern zu müssen.
 
 ## Berechnete Metriken im Experimentierungsbereich verwenden
 
-Weitere Informationen finden Sie in diesem Blogpost . [Verwendung abgeleiteter Metriken im Experimentierungsbereich](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/using-derived-metrics-in-cja-s-experimentation-panel/ba-p/593119).
+In diesem Blogpost finden Sie Informationen zu [Verwendung abgeleiteter Metriken im Experimentierungsbereich](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/using-derived-metrics-in-cja-s-experimentation-panel/ba-p/593119).

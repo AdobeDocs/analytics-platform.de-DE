@@ -7,7 +7,7 @@ exl-id: 647f192a-e317-4011-92bc-a8bb8494a3c7
 solution: Customer Journey Analytics
 source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '717'
+source-wordcount: '712'
 ht-degree: 74%
 
 ---
@@ -39,19 +39,19 @@ Damit ausführende Benutzer Zugriff auf Ihre Scorecards in der Mobile App haben,
 
 **Für ausführende Benutzer mit iOS-Geräten:**
 
-Klicken Sie auf den folgenden Link (er ist auch unter Customer Journey Analytics verfügbar unter **[!UICONTROL Instrumente]** > **[!UICONTROL Analytics-Dashboards (mobile Opp)]**) und befolgen Sie die Anweisungen zum Herunterladen, Installieren und Öffnen der App:
+Klicken Sie auf den folgenden Link (er ist auch unter Customer Journey Analytics unter **[!UICONTROL Tools]** > **[!UICONTROL Analytics-Dashboards (mobile Opp)]** verfügbar) und befolgen Sie die Anweisungen zum Herunterladen, Installieren und Öffnen der App:
 
 `[iOS link](https://apple.co/2zXq0aN)`
 
 **Für ausführende Benutzer mit Android-Geräten:**
 
-Klicken Sie auf den folgenden Link (er ist auch unter Customer Journey Analytics verfügbar unter **[!UICONTROL Instrumente]** > **[!UICONTROL Analytics-Dashboards (mobile App)]**) und befolgen Sie die Anweisungen zum Herunterladen, Installieren und Öffnen der App:
+Klicken Sie auf den folgenden Link (er ist auch unter Customer Journey Analytics unter **[!UICONTROL Tools]** > **[!UICONTROL Analytics-Dashboards (mobile App)]** verfügbar) und befolgen Sie die Anweisungen zum Herunterladen, Installieren und Öffnen der App:
 
 `[Android link](https://bit.ly/2LM38Oo)`
 
 Nach dem Herunterladen und Installieren können sich ausführende Benutzer mit ihren vorhandenen Customer Journey Analytics-Anmeldedaten bei der App anmelden. Wir unterstützen sowohl Adobe als auch Enterprise/Federated IDs.
 
-![Willkommensbildschirm von Adobe Analytics-Dashboards](assets/welcome.png)
+![Willkommensbildschirm der Adobe Analytics-Dashboards](assets/welcome.png)
 
 ## Ausführenden Benutzern helfen, auf Ihre Scorecard zuzugreifen
 
@@ -74,7 +74,7 @@ Nach dem Herunterladen und Installieren können sich ausführende Benutzer mit i
 
 Erklären Sie dem ausführenden Benutzer, wie die Kacheln in den von Ihnen freigegebenen Scorecards dargestellt werden.
 
-![Kacheln erklären, einschließlich Datumsbereich, Segmentfilter sowie ausgewählte Metriken und Dimensionen](assets/newexplain.png)
+![Kacheln erklären, einschließlich des ausgewählten Datumsbereichs, Segmentfilters und der ausgewählten Metriken und Dimensionen](assets/newexplain.png)
 
 ![Beispiel-Scorecard](assets/intro_scorecard.png)
 

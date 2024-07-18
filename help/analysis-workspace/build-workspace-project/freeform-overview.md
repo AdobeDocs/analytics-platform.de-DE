@@ -18,7 +18,7 @@ Mit Workspace-Projekten können Sie Datenkomponenten, Tabellen und Visualisierun
 
 ## Projektliste {#project-list}
 
-Wenn Sie zum ersten Mal **[!UICONTROL Analytics]** > **[!UICONTROL Arbeitsbereich]**, listet die Seite alle Projekte auf, deren Inhaber Sie sind, oder Projekte, die für Sie freigegeben wurden. Dies ist auch die Landingpage für Adobe Analytics, es sei denn, Sie haben zuvor eine benutzerdefinierte Landingpage festgelegt.
+Wenn Sie zum ersten Mal zu **[!UICONTROL Analytics]** > **[!UICONTROL Workspace]** navigieren, werden auf der Seite alle Projekte aufgelistet, deren Inhaber Sie sind oder die für Sie freigegeben wurden. Dies ist auch die Landingpage für Adobe Analytics, es sei denn, Sie haben zuvor eine benutzerdefinierte Landingpage festgelegt.
 
 ![Projekt-Landingpage mit der Projektliste.](assets/sample-project.png)
 
@@ -26,21 +26,21 @@ Die Seite &quot;Projekte&quot;enthält die folgenden Informationen:
 
 >[!NOTE]
 >
->Einige Spalten werden nicht standardmäßig angezeigt. Klicken Sie auf die Schaltfläche **Tabelle anpassen** icon ![Tabelle anpassen](assets/projects-page-customize-columns-icon.png).
+>Einige Spalten werden nicht standardmäßig angezeigt. Um die angezeigten Spalten anzupassen, klicken Sie auf das Symbol **Tabelle anpassen** ![Tabelle anpassen](assets/projects-page-customize-columns-icon.png).
 
 | Element | Beschreibung |
 |---|---|
 | [Voreinstellungen bearbeiten](/help/analysis-workspace/user-preferences.md) | Verwalten Sie Einstellungen für Analysis Workspace und die zugehörigen Komponenten für alle neuen Projekte oder Bereiche, die Sie erstellen. |
 | [Ordner erstellen](/help/analysis-workspace/build-workspace-project/workspace-folders/create-folders.md) | Fügen Sie der Liste der Projekte und Ordner einen neuen Ordner oder Unterordner hinzu. |
 | [Projekt erstellen](/help/analysis-workspace/build-workspace-project/create-projects.md) | Beginnen Sie ein neues Projekt von Grund auf. |
-| Mehr zeigen | Zeigt Optionen zum Erstellen eines leeren Projekts oder einer mobilen Scorecard an, [Anzeigen von Tutorials](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/analysis-workspace-basics/analysis-workspace-introduction.html?lang=de)oder [Versionshinweise anzeigen](/help/release-notes/latest.md). |
+| Mehr zeigen | Zeigt Optionen zum Erstellen eines leeren Projekts oder einer mobilen Scorecard, [Anzeigen von Trainings-Tutorials](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/analysis-workspace-basics/analysis-workspace-introduction.html?lang=de) oder [Anzeigen von Versionshinweisen](/help/release-notes/latest.md) an. |
 | Anzeigen von Ordnern und Projekten | Wählen Sie aus, ob die Ordnerstruktur der Projekte angezeigt werden soll. Weitere Informationen finden Sie unter [Über Ordner in Analytics](/help/analysis-workspace/build-workspace-project/workspace-folders/about-folders.md). |
 | Tabelle anpassen (Symbol) | Ermöglicht die Anpassung der Informationen, die für jedes Projekt auf der Seite &quot;Projekte&quot;angezeigt werden. |
 | Name | Name des Workspace-Projekts. |
-| Typ | Gibt an, ob es sich um ein Workspace-Projekt, einen Ordner oder ein [Mobile Scorecard](https://experienceleague.adobe.com/docs/analytics/analyze/mobapp/home.html?lang=de). |
+| Typ | Gibt an, ob es sich um ein Workspace-Projekt, einen Ordner oder eine [mobile Scorecard](https://experienceleague.adobe.com/docs/analytics/analyze/mobapp/home.html?lang=de) handelt. |
 | Tags | Tags, die auf das Projekt angewendet wurden. |
-| Eingeplant | Gibt an, ob die E-Mail-Versendung von Projekten an Empfänger planmäßig geplant ist. Siehe [Senden von Projektdaten an andere](/help/analysis-workspace/export/t-schedule-report.md). |
-| Freigegebener Link (alle) | Projekte können für jeden freigegeben werden - auch für Personen, die keinen Zugriff auf Analysis Workspace haben. Diese Spalte zeigt, ob Projekte auf diese Weise freigegeben wurden. Siehe [Projekt für andere freigeben (keine Anmeldung erforderlich)](/help/analysis-workspace/curate-share/share-projects.md#share-public-link) in [Freigeben von Projekten](/help/analysis-workspace/curate-share/share-projects.md) für weitere Informationen. |
+| Eingeplant | Gibt an, ob die E-Mail-Versendung von Projekten an Empfänger planmäßig geplant ist. Siehe [Projektdaten an andere senden](/help/analysis-workspace/export/t-schedule-report.md). |
+| Freigegebener Link (alle) | Projekte können für jeden freigegeben werden - auch für Personen, die keinen Zugriff auf Analysis Workspace haben. Diese Spalte zeigt, ob Projekte auf diese Weise freigegeben wurden. Weitere Informationen finden Sie unter [Freigeben eines Projekts für andere (keine Anmeldung erforderlich)](/help/analysis-workspace/curate-share/share-projects.md#share-public-link) in [Freigeben von Projekten](/help/analysis-workspace/curate-share/share-projects.md) . |
 | Datenansicht | Die Datenansicht, mit der das Projekt verknüpft ist. |
 | [Projektrolle](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/share-projects.html?lang=de) | Zeigt Ihre Rolle für das Projekt an – Inhaber, bearbeiten, duplizieren, anzeigen. |
 | Verantwortlicher | Die Person, die dieses Projekt erstellt hat (entweder Sie oder eine Person, die das Projekt für Sie freigegeben hat). |
@@ -56,11 +56,11 @@ Die Seite &quot;Projekte&quot;enthält die folgenden Informationen:
 
 Innerhalb eines Projekts bietet das Menü Optionen zum Verwalten Ihres Projekts, zum Hinzufügen von Komponenten, zur Suche von Hilfe und mehr. Auf jede Menüoption kann auch über [Tastenkombinationen](/help/analysis-workspace/build-workspace-project/fa-shortcut-keys.md) zugegriffen werden.
 
-![Neue Projektoptionen, einschließlich der Optionen Projekt, Bearbeiten, Einfügen, Komponenten, Freigabe und Hilfe .](assets/menu.png)
+![Neue Projektoptionen, einschließlich der Optionen Projekt, Bearbeiten, Einfügen, Komponenten, Freigabe und Hilfe.](assets/menu.png)
 
 | Menüelement | Beschreibung |
 |---|---|
-| Projekt   | Enthält allgemeine Aktionen für das Projektmanagement, einschließlich Neu, Öffnen, Speichern und Speichern unter. Sie können auch das gesamte Projekt aktualisieren, um die neuesten Daten und Definitionen abzurufen, indem Sie auf „Projekt aktualisieren“ klicken. [Projektdaten herunterladen](/help/analysis-workspace/export/download-send.md) -Optionen ermöglichen den Export von Daten aus Workspace. **Projektinformation und Einstellungen** (siehe unten) bieten viele Optionen zum Verwalten Ihres Projekts. |
+| Projekt   | Enthält allgemeine Aktionen für das Projektmanagement, einschließlich Neu, Öffnen, Speichern und Speichern unter. Sie können auch das gesamte Projekt aktualisieren, um die neuesten Daten und Definitionen abzurufen, indem Sie auf „Projekt aktualisieren“ klicken. Mit den Optionen [Projektdaten herunterladen](/help/analysis-workspace/export/download-send.md) können Sie Daten aus Workspace exportieren. **Projektinformation und Einstellungen** (siehe unten) bieten viele Optionen zum Verwalten Ihres Projekts. |
 | Vorlage | Rückgängigmachen oder Wiederholen der letzten Aktion. „Alles löschen“ setzt das Projekt auf den Ausgangspunkt zurück. |
 | Einfügen | Fügen Sie neue Bedienfelder oder Visualisierungen aus diesem Menü ein. Sie können auch neue Bedienfelder und Visualisierungen aus der linken Leiste einfügen. |
 | [Komponenten](/help/components/overview.md) | Erstellen Sie neue Filter, berechnete Metriken, Datumsbereiche oder Warnhinweiskomponenten aus Ihrem Projekt. Sie können auch über die linke Leiste neue Komponenten erstellen. Wenn sich Ihre Komponentendefinitionen kürzlich geändert haben, werden die neuesten Definitionen über „Komponenten aktualisieren“ abgerufen. |
@@ -70,9 +70,9 @@ Innerhalb eines Projekts bietet das Menü Optionen zum Verwalten Ihres Projekts,
 
 ### Projektinfo und Einstellungen {#info-settings}
 
-**[!UICONTROL Arbeitsbereich]** > **[!UICONTROL Projekt]** > **[!UICONTROL Projektinfo und Einstellungen]** liefert Informationen auf Projektebene zum derzeit aktiven Projekt.
+**[!UICONTROL Workspace]** > **[!UICONTROL Projekt]** > **[!UICONTROL Projektinfo und Einstellungen]** enthält Informationen auf Projektebene zum derzeit aktiven Projekt.
 
-![Das Fenster Projektinfo und Einstellungen .](assets/projectinfo.png)
+![Das Fenster Projektinfo und Einstellungen.](assets/projectinfo.png)
 
 Zu den Einstellungen gehören:
 
@@ -93,9 +93,9 @@ Innerhalb eines Projekts sind in der linken Leiste verschiedene Symbole verfügb
 
 * [Bedienfelder](/help/analysis-workspace/c-panels/panels.md) ![Bedienfeldsymbol](assets/panels-icon.png)
 
-* [Visualisierung](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md)![Visualisierungssymbol](assets/visualizations-icon.png)
+* [Visualisierungen](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md)![Visualisierungssymbol](assets/visualizations-icon.png)
 
-* [Komponenten](/help/components/overview.md)![Komponentensymbol](assets/components-icon.png)
+* Symbol [Komponenten](/help/components/overview.md)![Komponenten](assets/components-icon.png)
 
 * [Datenwörterbuch](/help/components/data-dictionary/data-dictionary-overview.md)![Datenwörterbuchsymbol](assets/data-dictionary-icon.png)
 
@@ -117,7 +117,7 @@ Je nach Ausgangspunkt, den Sie für Ihre Projekte ausgewählt haben, befindet si
 
 ## Projektmanager {#manager}
 
-Analysis Workspace-Projekte können unter **„Analysen“ > „Komponenten“ > „Projekte“** verwaltet werden. Der Projekt-Manager zeigt die Elemente an, die ein bestimmter Benutzer erstellt hat. Sie können das Projekteigentum an einen neuen Benutzer unter Admin > Analytics-Benutzer und -Assets > Assets übertragen.
+Analysis Workspace-Projekte können unter **„Analysen“ > „Komponenten“ > „Projekte“** verwaltet werden. Der Projekt-Manager zeigt die Elemente an, die ein bestimmter Benutzer erstellt hat. Sie können das Projekteigentum an einen neuen Benutzer unter Admin > Analytics-Benutzer und Assets > Assets übertragen.
 
 Im Projektmanager können Sie u. a. hinzufügen, taggen, freigeben, duplizieren/kopieren und vieles mehr. Suchen Sie in der Suchleiste oder mithilfe der Filteroptionen in der linken Leiste nach einem Projekt. Sie können u. a. nach Tag, Inhaber und Projekttyp filtern.
 

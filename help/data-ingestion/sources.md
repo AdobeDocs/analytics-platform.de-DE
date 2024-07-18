@@ -52,25 +52,26 @@ Gehen Sie folgendermaßen vor, um das Schema einzurichten:
 
 1. Wählen Sie in der Adobe Experience Platform-Benutzeroberfläche in der linken Leiste die Option **[!UICONTROL Schemata]** in [!UICONTROL DATEN-MANAGEMENT] aus.
 
-1. Auswählen **[!UICONTROL Schema erstellen]**. .
+1. Wählen Sie **[!UICONTROL Schema erstellen]** aus.
+.
 1. Im Schritt Klasse auswählen des Assistenten Schema erstellen :
 
-   1. Auswählen **[!UICONTROL Individuelles Profil]**.
+   1. Wählen Sie **[!UICONTROL Individuelles Profil]** aus.
 
       ![Erstellen eines Schemafensters mit ausgewähltem individuellen Profil](./assets/create-pr-schema-wizard-step-1.png)
 
       >[!INFO]
       >
-      >    Ein Erlebnisereignis-Schema wird zum Modellieren der _Verhalten_ eines Profils (wie Name der Szene, Schaltfläche zum Hinzufügen zum Warenkorb). Das Schema „Individuelles Profil“ wird verwendet, um die _Attribute_ eines Profils zu modellieren (z. B. Name, E-Mail, Geschlecht).
+      >    Mit einem Erlebnisereignis-Schema wird das _Verhalten_ eines Profils modelliert (z. B. Name der Szene, Schaltfläche zum Hinzufügen zum Warenkorb). Das Schema „Individuelles Profil“ wird verwendet, um die _Attribute_ eines Profils zu modellieren (z. B. Name, E-Mail, Geschlecht).
 
    1. Klicken Sie auf **[!UICONTROL Weiter]**.
 
 
-1. Im [!UICONTROL Name und Überprüfungsschritt] des [!UICONTROL Schema erstellen] Assistent:
+1. Im Schritt [!UICONTROL Name und Überprüfung] des Assistenten [!UICONTROL Schema erstellen]:
 
-   1. Geben Sie einen **[!UICONTROL Anzeigename des Schemas]** für Ihr Schema und (optional) a **[!UICONTROL Beschreibung]**.
+   1. Geben Sie einen **[!UICONTROL Anzeigenamen des Schemas]** und (optional) eine **[!UICONTROL Beschreibung]** ein.
 
-      ![Schema-Fenster erstellen mit Feldern zum Benennen Ihres Schemas ](./assets/create-pr-schema-wizard-step-2.png)
+      ![Schema-Fenster erstellen, in dem die Felder zum Benennen Ihres Schemas angezeigt werden ](./assets/create-pr-schema-wizard-step-2.png)
 
    1. Wählen Sie **[!UICONTROL Beenden]** aus.
 
@@ -78,7 +79,7 @@ Gehen Sie folgendermaßen vor, um das Schema einzurichten:
 
    1. Wählen Sie **[!UICONTROL + Hinzufügen]** in [!UICONTROL Feldergruppen] aus.
 
-      ![Schema-Fenster mit der Feldergruppe hinzufügen erstellen](./assets/add-field-group-button.png)
+      ![Schema-Fenster mit der Feldergruppe &quot;Feld hinzufügen&quot;erstellen](./assets/add-field-group-button.png)
 
       Feldergruppen sind wiederverwendbare Sammlungen von Objekten und Attributen, mit denen Sie Ihre Schemata einfach erweitern können.
 
@@ -175,15 +176,15 @@ Abhängig davon, woher Sie Ihre Treueprogramm-Daten erhalten, wählen Sie einen 
 
 Sie können Daten aus verschiedenen Quellen erfassen. Im Folgenden finden Sie nur einige der vielen verfügbaren Quellen:
 
-- Adobe-Anwendungen (Quell-Connectoren umfassen [Adobe Analytics](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/analytics), [Adobe Audience Manager](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/audience-manager)und mehr)
+- Adobe-Anwendungen (Quell-Connectoren umfassen [Adobe Analytics](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/analytics), [Adobe Audience Manager](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/audience-manager) und mehr)
 
-- Cloud-Speicher (Quell-Connectoren umfassen [Amazon S3](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/cloud-storage/s3), [Azure Blob](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/cloud-storage/blob)und mehr)
+- Cloud-Speicher (Quell-Connectoren umfassen [Amazon S3](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/cloud-storage/s3), [Azure Blob](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/cloud-storage/blob) und mehr)
 
-- Datenbanken (Quell-Connectoren umfassen [Snowflake](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/databases/snowflake), [Microsoft SQL Server](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/databases/sql-server)und mehr)
+- Datenbanken (Quell-Connectoren umfassen [Snowflake](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/databases/snowflake), [Microsoft SQL Server](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/databases/sql-server) und mehr)
 
 Gehen Sie folgendermaßen vor, um einen Quell-Connector einzurichten:
 
-1. Wählen Sie in Adobe Experience Platform **[!UICONTROL Quellen]** von [!UICONTROL VERBINDUNGEN] in der linken Leiste.
+1. Wählen Sie in Adobe Experience Platform in der linken Leiste unter [!UICONTROL VERBINDUNGEN] die Option **[!UICONTROL Quellen]** aus.
 
 1. Wählen Sie Ihren Quell-Connector aus der Liste der verfügbaren Quell-Connectoren aus.
 
@@ -193,7 +194,7 @@ Gehen Sie folgendermaßen vor, um einen Quell-Connector einzurichten:
 
    1. **[!UICONTROL Daten auswählen]**: Sie wählen die Quelldaten aus, die Sie aufnehmen möchten.
 
-   1. **[!UICONTROL Datenflussdetails]**: Sie geben zusätzliche Details zum Datenfluss an, z. B. den Namen und den zu verwendenden Datensatz.
+   1. **[!UICONTROL Datenfluss-Detail]**: Sie geben zusätzliche Details zum Datenfluss an, z. B. den Namen und den zu verwendenden Datensatz.
 
    1. **[!UICONTROL Zuordnung]**: Sie ordnen die eingehenden Quelldatenfelder den Attributen im Schema zu, das mit dem ausgewählten Datensatz verknüpft ist.
 
@@ -209,9 +210,9 @@ Gehen Sie folgendermaßen vor, um einen Quell-Connector einzurichten:
 
    1. Wählen Sie **[!UICONTROL Dokumentation anzeigen]** aus.
 
-Siehe [Daten aus dem herkömmlichen Adobe Analytics erfassen und verwenden](./analytics.md) Informationen zur Verwendung des Adobe Analytics-Quell-Connectors.
+Informationen zur Verwendung des Adobe Analytics-Quell-Connectors finden Sie unter [Aufnehmen und Verwenden von Daten aus dem herkömmlichen Adobe Analytics](./analytics.md).
 
-Siehe [Streaming-Daten erfassen und verwenden](./streaming.md) für Informationen zur Verwendung des Quell-Connectors für die HTTP-API.
+Informationen zur Verwendung des HTTP-API-Quell-Connectors finden Sie unter [Aufnehmen und Verwenden von Streaming-Daten](./streaming.md) .
 
 Einen Überblick über Quell-Connectoren einschließlich Links zu weiteren Informationen zu jedem einzelnen Connector finden Sie unter [Übersicht über Quell-Connectoren](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html#terms-and-conditions).
 
@@ -262,7 +263,7 @@ Gehen Sie folgendermaßen vor, um eine Verbindung zu erstellen:
 
    1. Wählen Sie **[!UICONTROL Speichern]** aus.
 
-Nachdem Sie eine [connection](/help/connections/overview.md)können Sie verschiedene Verwaltungsaufgaben ausführen, z. B. [Auswählen und Kombinieren von Datensätzen](/help/connections/combined-dataset.md), [Überprüfen des Status der Datensätze einer Verbindung und des Status der Datenerfassung](/help/connections/manage-connections.md)und mehr.
+Nachdem Sie eine [Verbindung](/help/connections/overview.md) erstellt haben, können Sie verschiedene Verwaltungsaufgaben ausführen, z. B. [Auswählen und Kombinieren von Datensätzen](/help/connections/combined-dataset.md), [Überprüfen des Status der Datensätze einer Verbindung und des Status der Datenerfassung](/help/connections/manage-connections.md) usw.
 
 ## Einrichten einer Datenansicht
 

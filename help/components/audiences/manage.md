@@ -18,8 +18,8 @@ Die Verwaltung zuvor erstellter Audiences ermöglicht Ihnen Folgendes:
 * **Erstellen eines Zeitplans bzw. Aufhebung des Zeitplans** für die automatische Aktualisierung der Zielgruppe. Die maximale Gültigkeit des Zeitplans beträgt 1 Jahr.
 * **Verlängern Sie einen Zeitplan für die Aktualisierung der Zielgruppe**, bevor er abläuft. Vor der Beendigung der Zielgruppen-Aktualisierung erhält der Administrierende ähnlich wie bei der Beendigung von geplanten Berichten einen Monat vor Ablauf des Zeitplans eine E-Mail.
 * Sehen Sie sich das **Aktualisierungsintervall** und die **letzte Aktualisierung einer Zielgruppe** an.
-* Gewinnen Sie Einblicke in **Dauer der Erstellung einer Audience** von Customer Journey Analytics aus und die Zeit, die es dauerte, bis die Zielgruppe zur Aktivierung im Echtzeit-Kundenprofil angezeigt wurde.
-* Überprüfen Sie, ob die Zielgruppen in Customer Journey Analytics **aktiv vom Echtzeit-Kundenprofil verwendet werden** oder (idealerweise) alle Experience Platform-Anwendungen, die die durch Customer Journey Analytics erstellten Zielgruppen nutzen.
+* Erhalten Sie Einblicke in die **Zeit, die zum Erstellen einer Audience erforderlich war** von Customer Journey Analytics, und die Zeit, die benötigt wurde, um die Audience zum Aktivieren im Echtzeit-Kundenprofil erscheinen zu lassen.
+* Ermitteln Sie, ob die Zielgruppen in Customer Journey Analytics aktiv vom Echtzeit-Kundenprofil **oder (idealerweise) von Experience Platform-Anwendungen verwendet werden, die die von Customer Journey Analytics erstellten Zielgruppen nutzen.**
 
 ## Verwaltungs-Benutzeroberfläche
 

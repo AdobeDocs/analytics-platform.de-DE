@@ -17,8 +17,8 @@ ht-degree: 35%
 
 Wenn Sie eine Verbindung erstellen, kombiniert Customer Journey Analytics alle Ereignis-Datensätze zu einem Datensatz. Dieser kombinierte Ereignis-Datensatz wird von Customer Journey Analytics für die Berichterstellung verwendet (zusammen mit Profil- und Lookup-Datensätzen). Wenn Sie mehrere Ereignis-Datensätze in eine Verbindung einschließen:
 
-* Die Daten für Felder in Datensätzen basieren auf der Variablen **derselbe Schemapfad** werden im kombinierten Datensatz in einer einzigen Spalte zusammengeführt.
-* Die für jeden Datensatz angegebene Spalte mit der Personen-ID wird in einer einzigen Spalte im kombinierten Datensatz zusammengeführt. **unabhängig von ihrem Namen**. Diese Spalte bildet die Grundlage für die Identifizierung von Einzelpersonen in der Customer Journey Analytics.
+* Die Daten für Felder in Datensätzen, die auf dem **gleichen Schemapfad** basieren, werden in einer einzigen Spalte im kombinierten Datensatz zusammengeführt.
+* Die für jeden Datensatz angegebene Spalte &quot;Personen-ID&quot;wird unabhängig von ihrem Namen **in einer einzigen Spalte im kombinierten Datensatz mit** zusammengeführt. Diese Spalte bildet die Grundlage für die Identifizierung von Einzelpersonen in der Customer Journey Analytics.
 * Zeilen werden anhand des Zeitstempels verarbeitet.
 * Ereignisse werden auf die Millisekunden-Ebene aufgelöst.
 
@@ -48,7 +48,7 @@ Siehe folgendes Beispiel. Sie haben zwei Ereignis-Datensätze mit jeweils unters
 Wenn Sie eine Verbindung mit diesen beiden Ereignis-Datensätzen erstellen und
 
 * `example_id` als Personen-ID für den ersten Datensatz und
-* `different_id` als Personen-ID für den zweiten Datensatz;
+* `different_id` als Personen-ID für den zweiten Datensatz,
 
 der folgende kombinierte Datensatz wird für die Berichterstellung verwendet.
 
@@ -64,7 +64,7 @@ der folgende kombinierte Datensatz wird für die Berichterstellung verwendet.
 | `alternateid_656` | `2 Jan 8:58 PM` | `Red` | | `Square` | | `4.2` |
 | `alternateid_656` | `2 Jan 9:03 PM` | | | `Triangle` | | `3.1` |
 
-Um die Bedeutung von Schemapfaden zu veranschaulichen, beachten Sie dieses Szenario. Im ersten Datensatz: `string_color` basiert auf dem Schemapfad `_experience.whatever.string_color` und im zweiten Datensatz im Schemapfad  `_experience.somethingelse.string_color`. In diesem Szenario lauten die Daten **not** in einer Spalte im resultierenden kombinierten Datensatz zusammengeführt. Stattdessen lautet das Ergebnis zwei `string_color` Spalten im kombinierten Datensatz.
+Um die Bedeutung von Schemapfaden zu veranschaulichen, beachten Sie dieses Szenario. Im ersten Datensatz basiert `string_color` auf dem Schemapfad `_experience.whatever.string_color` und im zweiten Datensatz auf dem Schemapfad `_experience.somethingelse.string_color`. In diesem Szenario werden die Daten **nicht** in eine Spalte im resultierenden kombinierten Datensatz zusammengeführt. Stattdessen ergibt sich aus zwei `string_color` -Spalten im kombinierten Datensatz.
 
 Dieser „kombinierte Ereignis-Datensatz“ wird für das Reporting verwendet. Es spielt keine Rolle, aus welchem Datensatz eine Zeile stammt. Customer Journey Analytics behandelt alle Daten so, als befänden sie sich im selben Datensatz. Wenn in beiden Datensätzen eine übereinstimmende Personen-ID angezeigt wird, werden sie als dieselbe eindeutige Person betrachtet. Wenn eine übereinstimmende Personen-ID in beiden Datensätzen mit einem Zeitstempel innerhalb von 30 Minuten angezeigt wird, werden sie als Teil derselben Sitzung betrachtet. Felder mit identischen Schemapfaden werden zusammengeführt.
 
@@ -88,7 +88,7 @@ Wenn Sie jedoch beide Tabellen in Ihrer Verbindung eingeschlossen haben, ändert
 
 >[!NOTE]
 >
->Wenn ein zusammengeführtes Feld ein Suchschlüssel für einen Ereignis-Datensatz in der Verbindung ist, wird der zugehörige Lookup-Datensatz angereichert **all** -Werte dieses Felds. Es spielt keine Rolle, aus welchem Ereignis-Datensatz eine Zeile stammt, da die Lookup-Beziehung mit dem Pfad des freigegebenen Schemas verknüpft ist.
+>Wenn ein zusammengeführtes Feld ein Suchschlüssel für einen Ereignis-Datensatz in der Verbindung ist, reichert der zugehörige Lookup-Datensatz **alle** Werte dieses Felds an. Es spielt keine Rolle, aus welchem Ereignis-Datensatz eine Zeile stammt, da die Lookup-Beziehung mit dem Pfad des freigegebenen Schemas verknüpft ist.
 
 ## Kanalübergreifende Analyse
 

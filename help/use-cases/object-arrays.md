@@ -84,7 +84,7 @@ Beim Erstellen einer Datenansicht sind die folgenden Dimensionen und Metriken ve
 
 ### Beispiele für dieselben Ereignisse (Reporting-Verhalten)
 
-Unter Verwendung des obigen Ereignisses zeigen die folgenden Tabellen Workspace-Berichte mit einigen Dimensions- und Metrikkombinationen.
+Unter Verwendung des oben genannten Ereignisses zeigen die folgenden Tabellen Workspace-Berichte mit einigen Dimensions- und Metrikkombinationen.
 
 | `product : name` | `product : orders` | `product : revenue` |
 | --- | --- | --- |

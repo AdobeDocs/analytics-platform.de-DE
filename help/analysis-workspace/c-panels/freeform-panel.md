@@ -15,4 +15,4 @@ ht-degree: 69%
 
 Ein Freiform-Bedienfeld ist ein leeres Bedienfeld mit einer Freiformtabelle im Standardzustand.
 
-![Das standardmäßige Freiform-Bedienfeld, das einen leeren Bereich mit einer Freiformtabelle anzeigt.](assets/freeform-panel.png)
+![Das standardmäßige Freiform-Bedienfeld, das einen leeren Bedienfeld mit einer Freiformtabelle anzeigt.](assets/freeform-panel.png)

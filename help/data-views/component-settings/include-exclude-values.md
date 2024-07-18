@@ -16,7 +16,7 @@ ht-degree: 97%
 
 „Werte einschließen/ausschließen“ ermöglicht die Erstellung von Regeln, die vom Wert eines Dimensionselements abhängen. Werte, die die von Ihnen festgelegten Kriterien nicht erfüllen, werden in Analysis Workspace so behandelt, als wären sie nicht vorhanden, obwohl die Daten noch im zugrunde liegenden Datensatz vorhanden sind.
 
-![Datenansichten, in denen die Werte zum Ausschließen einschließen hervorgehoben werden](../assets/include-exclude.png)
+![Datenansichten-Fenster, in dem die Werte zum Ausschließen einschließen hervorgehoben werden](../assets/include-exclude.png)
 
 | Einstellung | Beschreibung/Verwendungsfall |
 | --- | --- |

@@ -25,13 +25,13 @@ So ändern Sie die für jede Dimension zurückgegebenen Dimensionselemente
 
 1. Klicken Sie auf das Symbol **...** neben einem Komponentennamen in der Tabelle.
 
-   ![Die Optionen für die Auslassungszeichen.](./assets/image27.png)
+   ![ Die Suchsymbol-Optionen.](./assets/image27.png)
 
 1. Wählen Sie **Filterdimension** im Popup-Menü aus, um den Bereich **Filterdimension** anzuzeigen.
 
 1. Wählen Sie **Am beliebtesten** oder **Spezifisch**.
 
-   ![Die spezifische Option, die im Bereich Filterdimension ausgewählt ist.](./assets/image28.png)
+   ![Die spezifische Option, die im Bereich Filterdimension ausgewählt wurde.](./assets/image28.png)
 
 1. Wählen Sie je nach ausgewähltem Filtertyp die gewünschten Optionen aus.
 
@@ -92,7 +92,7 @@ So legen Sie Filterkriterien fest
 
 1. Wählen Sie einen aus der Dropdownliste „Operator“ aus.
 
-   ![Die Benutzerliste.](./assets/image31.png)
+   ![Die Operatorliste.](./assets/image31.png)
 
 1. Geben Sie einen Wert in das Suchfeld ein.
 
@@ -114,7 +114,7 @@ So ändern Sie die zum Filtern und Sortieren des Datenblocks verwendete Metrik:
 
 2. Klicken Sie auf den Pfeil der gewünschten Metrik. 
 
-   ![Tabellenaufbau und -metriken.](./assets/image30.png)
+   ![Der Tabellenaufbau und die Metriken.](./assets/image30.png)
 
 
 ## Spezifische Filter
@@ -137,9 +137,9 @@ Mit der Option „Spezifisch“ können Sie für jede Dimension eine feste Liste
 
 1. Um nach einem Element zu suchen, das in den letzten 90 Tagen nicht enthalten war, klicken Sie auf **Elemente für die letzten 6 Monate anzeigen**, um die Suche zu erweitern.
 
-   ![Die Liste Elemente der letzten 6 Monate anzeigen .](./assets/image34.png)
+   ![Die Liste Elemente der letzten 6 Monate anzeigen](./assets/image34.png).
 
-   Nach den Daten der letzten 6 Monate lädt der Report Builder den Link zu **Elemente der letzten 18 Monate anzeigen**.
+   Nach dem Laden der Daten der letzten 6 Monate aktualisiert der Report Builder den Link auf **Elemente der letzten 18 Monate anzeigen**.
 
 1. Wählen Sie ein Dimensionselement aus.
 
@@ -161,7 +161,7 @@ Mit der Option „Spezifisch“ können Sie für jede Dimension eine feste Liste
 
 Wählen Sie die Option **Aus Zellenbereich** aus, um einen Zellenbereich auszuwählen, der die Liste der abzugleichenden Dimensionselemente enthält.
 
-![Wählen Sie die Option Aus Zellenbereich und das Feld , um einen Zellenbereich auszuwählen.](./assets/image37.png)
+![Die Option Aus Zellenbereich und das Feld zur Auswahl eines Zellenbereichs.](./assets/image37.png)
 
 Beachten Sie bei der Auswahl eines Zellenbereichs die folgenden Einschränkungen:
 
@@ -175,6 +175,6 @@ Ihre Auswahl kann leere Zellen oder Zellen mit Werten enthalten, die nicht mit e
 
 Klicken Sie auf der Registerkarte **Dimensionen** auf das Pfeilsymbol neben einem Dimensionsnamen, um die Liste der Dimensionselemente anzuzeigen.
 
-![Registerkarte Dimensionen und Liste der Dimensionen.](./assets/dimensions_chevron.png)
+![ Die Registerkarte &quot;Dimensionen&quot;und die Liste der Dimensionen.](./assets/dimensions_chevron.png)
 
 Sie können Elemente per Drag &amp; Drop in die **Tabelle** ziehen oder auf einen Elementnamen doppelklicken, um ihn zum **Tabellen**-Builder hinzuzufügen.

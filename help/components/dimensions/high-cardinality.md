@@ -18,7 +18,7 @@ Bei Verwendung einer Dimension, die viele eindeutige Werte enthält, kann der re
 
 Wenn Sie einen Bericht mit zu vielen eindeutigen Werten anfordern, zeigt Analysis Workspace in der Dimensionsüberschrift einen Indikator an, der angibt, dass nicht alle Dimensionselemente einbezogen werden. Beispiel: &quot;Zeilen: 1-50 von mehr als 22.343.156&quot;. Das Keyword &quot;Mehr als&quot;zeigt an, dass eine Optimierung auf den Bericht angewendet wurde, um die wichtigsten Dimensionselemente zurückzugeben.
 
-![Freiformtabelle in Workspace mit dem Keyword &quot;Mehr als&quot;, um 1-50 von mehr als 22.343.156 anzuzeigen](assets/high-cardinality.png)
+![Freiformtabelle in Workspace mit dem Keyword &quot;more than&quot;, um 1-50 von mehr als 22.343.156 anzuzeigen](assets/high-cardinality.png)
 
 ## Festlegen der anzuzeigenden Dimensionselemente
 
@@ -34,9 +34,9 @@ Auch wenn einige einzelne Dimensionselemente in Berichten mit hoher Kardinalitä
 
 Die beste Möglichkeit, um Dimensionen mit hoher Kardinalität aufzunehmen, besteht darin, die Anzahl der Dimensionselemente zu begrenzen, die ein Bericht verarbeitet. Da alle Berichte zum Zeitpunkt ihrer Anforderung verarbeitet werden, können Sie die Berichtsparameter an die sofortigen Ergebnisse anpassen. Adobe empfiehlt eine der folgenden Optimierungen für Dimensionen mit hoher Kardinalität:
 
-* Verwenden Sie eine [Filter](/help/components/filters/create-filters.md). Filter werden angewendet, wenn jeder Server eine Untergruppe von Daten verarbeitet.
+* Verwenden Sie einen [Filter](/help/components/filters/create-filters.md). Filter werden angewendet, wenn jeder Server eine Untergruppe von Daten verarbeitet.
 * Verwenden Sie eine Suche. Aus dem Suchbegriff ausgeschlossene Dimension-Elemente werden aus den Berichtsergebnissen entfernt, sodass es wahrscheinlicher wird, dass Sie die gewünschten Dimensionselemente sehen.
 * Verwenden Sie eine Lookup-Datensatzdimension. Lookup-Datensatzdimensionen kombinieren Elemente von Ereignis-Datensatzdimensionen, die die Anzahl der zurückgegebenen eindeutigen Werte begrenzen.
-* Verwenden Sie die [Ein-/Ausschließen](/help/data-views/component-settings/include-exclude-values.md) Komponenteneinstellung im Datenansichtsmanager.
-* Kürzen Sie den Datumsbereich der Anforderung. Wenn sich im Laufe der Zeit viele eindeutige Werte ansammeln, kann die Verkürzung des Datumsbereichs des Workspace-Berichts die Anzahl der eindeutigen Werte einschränken, die Server verarbeiten können.
-* Verwenden Sie [Vollständiger Tabellenexport](/help/analysis-workspace/export/export-cloud.md) , um alle Zeilen der Tabelle zurückzugeben.
+* Verwenden Sie die Komponenteneinstellung [Einbeziehen/Ausschließen](/help/data-views/component-settings/include-exclude-values.md) im Datenansichtsmanager.
+* Kürzen Sie den Datumsbereich der Anforderung. Wenn sich im Laufe der Zeit viele individuelle Werte ansammeln, kann die Verkürzung des Datumsbereichs des Workspace-Berichts die Anzahl der eindeutigen Werte begrenzen, die Server verarbeiten können.
+* Erwägen Sie die Verwendung von [Full Table Export](/help/analysis-workspace/export/export-cloud.md) , um alle Zeilen der Tabelle zurückzugeben.

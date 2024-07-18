@@ -8,7 +8,7 @@ role: User
 source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
 source-wordcount: '509'
-ht-degree: 92%
+ht-degree: 94%
 
 ---
 
@@ -28,13 +28,13 @@ Die im Projekt verwendeten Komponenten werden automatisch hinzugefügt.
 
 Eine Kuratierung kann auch über das Menü [!UICONTROL Freigeben] angewendet werden, indem Sie auf **[!UICONTROL Kuratieren und freigeben]** klicken. Diese Option kuratiert das Projekt automatisch auf die im Projekt verwendeten Komponenten. Sie können weitere Komponenten hinzufügen, wie oben beschrieben.
 
-![Im Fenster Komponenten kuratieren werden die im Projekt verwendeten Komponenten angezeigt.](assets/curation-field.png)
+![Das Fenster &quot;Komponenten kuratieren&quot;mit den im Projekt verwendeten Komponenten.](assets/curation-field.png)
 
 ## Ansicht des kuratierten Projekts
 
 Wenn ein Empfänger ein kuratiertes Projekt öffnet, wird ihm nur der ausgewählte Satz der von Ihnen definierten Komponenten angezeigt:
 
-![Ein freigegebenes kuratiertes Projekt mit von Ihnen definierten Komponenten.](assets/curate-project.png)
+![Ein freigegebenes kuratiertes Projekt, das die von Ihnen definierten Komponenten anzeigt.](assets/curate-project.png)
 
 ## Entfernen der Projektkuratierung
 
@@ -48,7 +48,7 @@ So entfernen Sie die Projektkuratierung und stellen Sie den vollständigen Satz 
 
 In einem kuratierten Projekt wird dem Empfänger in der linken Leiste die Option **[!UICONTROL Alle anzeigen]** für Komponenten angezeigt. [!UICONTROL Alle anzeigen] zeigt verschiedene Komponentensätze an, je nach:
 
-* Berechtigungsstufe des Benutzers (Administrator oder Nicht-Administrator)
+* Berechtigungsebene der Person (Admin oder Nicht-Admin)
 * Projektrolle (Inhaber/Bearbeiter oder nicht)
 * Art der angewendeten Kuratierung (auf Projektebene)
 

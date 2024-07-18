@@ -7,7 +7,7 @@ role: User
 source-git-commit: e84010b9ea9e6385574e8b1a04f7eccbba3ebc90
 workflow-type: tm+mt
 source-wordcount: '692'
-ht-degree: 19%
+ht-degree: 22%
 
 ---
 
@@ -21,7 +21,7 @@ Der Filter-Manager zeigt Ihnen alle Filter an, deren Inhaber Sie sind und die f�
 
 ## Zugriff auf den Filter-Manager
 
-1. Wählen Sie unter Customer Journey Analytics die **[!UICONTROL Komponenten]** Registerkarte und wählen Sie **[!UICONTROL Filter]**.
+1. Wählen Sie unter Customer Journey Analytics die Registerkarte **[!UICONTROL Komponenten]** und dann **[!UICONTROL Filter]** aus.
 
 ## Verfügbare Aktionen im Filter-Manager
 
@@ -31,15 +31,15 @@ Im Filter-Manager haben Sie folgende Möglichkeiten:
 
 * [Filter als Favoriten markieren](/help/components/filters/filters-favorite.md)
 
-* [Filter genehmigen](/help/components/filters/filters-approve.md)
+* [Genehmigen von Filtern](/help/components/filters/filters-approve.md)
 
-* [Filter taggen](/help/components/filters/filters-tag.md)
+* [Taggen von Filtern](/help/components/filters/filters-tag.md)
 
-* [Filter freigeben](/help/components/filters/filters-share.md)
+* [Freigeben von Filtern](/help/components/filters/filters-share.md)
 
 * Exportieren Sie einen Filter in eine CSV-Datei.
 
-* [Filter kopieren](/help/components/filters/filters-copy.md)
+* [Kopieren von Filtern](/help/components/filters/filters-copy.md)
 
 * Filter löschen
 
@@ -49,9 +49,9 @@ Sie können die für jeden Filter angezeigten Informationen im Filter-Manager ko
 
 So konfigurieren Sie die sichtbaren Spalten im Filter-Manager:
 
-1. Wählen Sie unter Customer Journey Analytics die **[!UICONTROL Komponenten]** Registerkarte und wählen Sie **[!UICONTROL Filter]**.
+1. Wählen Sie unter Customer Journey Analytics die Registerkarte **[!UICONTROL Komponenten]** und dann **[!UICONTROL Filter]** aus.
 
-1. Wählen Sie im Filter-Manager die **Spalten anpassen** icon ![Symbol &quot;Spalten anpassen&quot;](assets/customize-columns-icon.png)und wählen Sie dann die Spalten aus, die im Filter-Manager angezeigt werden sollen.
+1. Wählen Sie im Filter-Manager das Symbol **Spalten anpassen** ![Spaltensymbol anpassen](assets/customize-columns-icon.png) und wählen Sie dann die Spalten aus, die im Filter-Manager angezeigt werden sollen.
 
    Die folgenden Spalten sind verfügbar:
 
@@ -64,7 +64,7 @@ So konfigurieren Sie die sichtbaren Spalten im Filter-Manager:
    | Tags (in der Spaltenauswahl nicht aktiviert, weshalb die Spalte nicht angezeigt wird) | Tags, die entweder durch Sie oder durch Personen, die einen Filter für Sie freigegeben haben, auf den Filter angewendet wurden. |
    | Freigegeben für | Zeigt Personen oder Gruppen (nur Administrator) oder „Alle“ (nur Administrator) an, für die Sie den Filter freigegeben haben. <p>Wenn ein Filter von Ihnen oder für Sie freigegeben wird, wird neben dem Filternamen ein Freigabesymbol angezeigt.</p> |
    | Änderungsdatum | Zeigt das Datum der letzten Änderung des Filters an. |
-   | Verwendet in | Zeigt an, in wie vielen Komponenten der Filter derzeit verwendet wird. <p>Wenn der Filter beispielsweise in 40 Projekten und 2 Warnhinweisen verwendet wird, wird der Wert dieser Spalte als [!UICONTROL **42 Komponenten**].</p> <p>Wählen Sie den Wert in dieser Spalte aus, um die Aufschlüsselung der verwendeten Filter anzuzeigen (z. B. [!UICONTROL **Projekte (40)**], [!UICONTROL **Warnhinweise (2)**]).</p><p>Filter können in einem der folgenden Komponententypen verwendet werden:</p> <ul><li>Berechnete Metriken </li><li>Projekte</li><li>Geplante Projekte</li></ul><p>Diese Informationen können Ihnen dabei helfen festzustellen, ob eine Komponente für Benutzer in Ihrer Organisation nützlich ist, wo sie verwendet wird und ob sie gelöscht oder geändert werden muss.</p><p>Beachten Sie bei der Anzeige dieser Spalte Folgendes:</p><ul><li>Diese Informationen enthalten keine Verwendung von API, Report Builder oder Data Warehouse.</li><li>Die [!UICONTROL **Verwendet in**] -Spalte wird nicht standardmäßig angezeigt. [Spalten konfigurieren](#configure-columns) , um es anzuzeigen.</li><li>Wenn in dieser Spalte keine Daten für eine bestimmte Komponente vorhanden sind, aber eine [!UICONTROL **Zuletzt verwendet**] Datum, wurde die Komponente möglicherweise in einer Analyse verwendet, ohne gespeichert zu werden.</li><li>Diese Informationen sind nur für Systemadministratoren verfügbar.</li></ul><p>Sie können die [Datenwörterbuch](/help/components/data-dictionary/data-dictionary-overview.md) zusammen mit diesen Informationen, damit Sie die Verwendung von Komponenten in Ihrem Unternehmen verfolgen und besser verstehen können.</p> |
-   | Zuletzt verwendet | Zeigt das Datum der letzten Verwendung des Filters in einem der folgenden Komponententypen an: <ul><li>Berechnete Metriken </li><li>Projekte</li><li>Geplante Projekte</li><li>Filter</li></ul> <p>Anhand dieser Informationen können Sie feststellen, ob eine Komponente für Benutzer in Ihrer Organisation nützlich ist oder ob sie gelöscht werden soll.</p><p>Beachten Sie bei der Anzeige dieser Spalte Folgendes:</p><ul><li>Diese Informationen enthalten keine Verwendung von API, Report Builder oder Data Warehouse.</li><li>Bei einigen Komponenten enthält diese Spalte möglicherweise keine Daten, wenn die Komponente zuletzt vor September 2023 verwendet wurde.</li><li>Diese Informationen sind nur für Systemadministratoren verfügbar.</li></ul><p>Sie können die [Datenwörterbuch](/help/components/data-dictionary/data-dictionary-overview.md) zusammen mit diesen Informationen, damit Sie die Verwendung von Komponenten in Ihrem Unternehmen verfolgen und besser verstehen können. |
+   | Verwendet in | Zeigt an, in wie vielen Komponenten der Filter derzeit verwendet wird. <p>Wenn der Filter beispielsweise in 40 Projekten und 2 Warnhinweisen verwendet wird, wird der Wert dieser Spalte als [!UICONTROL **42 Komponenten**] angezeigt.</p> <p>Wählen Sie den Wert in dieser Spalte aus, um die Aufschlüsselung der verwendeten Filter anzuzeigen (z. B. [!UICONTROL **Projekte (40)**], [!UICONTROL **Warnhinweise (2)**]).</p><p>Filter können in einem der folgenden Komponententypen verwendet werden:</p> <ul><li>Berechnete Metriken </li><li>Projekte</li><li>Geplante Projekte</li></ul><p>Diese Informationen können Ihnen dabei helfen festzustellen, ob eine Komponente für Benutzer in Ihrer Organisation nützlich ist, wo sie verwendet wird und ob sie gelöscht oder geändert werden muss.</p><p>Beachten Sie Folgendes beim Anzeigen dieser Option:</p><ul><li>Diese Informationen enthalten keine Verwendung von API, Report Builder oder Data Warehouse.</li><li>Die Spalte [!UICONTROL **Verwendet in**] wird nicht standardmäßig angezeigt. [Konfigurieren Sie Spalten](#configure-columns), um sie anzuzeigen.</li><li>Wenn in dieser Spalte keine Daten für eine bestimmte Komponente vorhanden sind, sie jedoch das Datum [!UICONTROL **Zuletzt verwendet**] hat, wurde die Komponente möglicherweise in einer Analyse verwendet, ohne gespeichert zu werden.</li><li>Diese Informationen sind nur für Systemadministratoren verfügbar.</li></ul><p>Sie können das [Datenwörterbuch](/help/components/data-dictionary/data-dictionary-overview.md) zusammen mit diesen Informationen verwenden, um die Verwendung von Komponenten in Ihrer Organisation zu verfolgen und besser zu verstehen.</p> |
+   | Zuletzt verwendet | Zeigt das Datum der letzten Verwendung des Filters in einem der folgenden Komponententypen an: <ul><li>Berechnete Metriken </li><li>Projekte</li><li>Geplante Projekte</li><li>Filter</li></ul> <p>Anhand dieser Informationen können Sie feststellen, ob eine Komponente für Benutzer in Ihrer Organisation nützlich ist oder ob sie gelöscht werden soll.</p><p>Beachten Sie Folgendes beim Anzeigen dieser Option:</p><ul><li>Diese Informationen enthalten keine Verwendung von API, Report Builder oder Data Warehouse.</li><li>Bei einigen Komponenten enthält diese Spalte möglicherweise keine Daten, wenn die Komponente zuletzt vor September 2023 verwendet wurde.</li><li>Diese Informationen sind nur für Systemadministratoren verfügbar.</li></ul><p>Sie können das [Datenwörterbuch](/help/components/data-dictionary/data-dictionary-overview.md) zusammen mit diesen Informationen verwenden, um die Verwendung von Komponenten in Ihrer Organisation zu verfolgen und besser zu verstehen. |
 
    {style="table-layout:auto"}

@@ -21,13 +21,13 @@ In Analysis Workspace bildet eine Freiformtabelle die Grundlage für die interak
 
 Am schnellsten können Sie eine Tabelle erstellen, indem Sie Komponenten direkt in ein leeres Projekt, ein leeres Bedienfeld oder eine Freiformtabelle ablegen. Eine Freiformtabelle wird dann automatisch in einem empfohlenen Format erstellt. [Tutorial ansehen](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/building-freeform-tables/auto-build-freeform-tables-in-analysis-workspace.html?lang=de).
 
-![Ein neues Bedienfeld mit der Komponente &quot;Besuche&quot;wurde im Arbeitsbereich abgelegt.](assets/automated-table.png)
+![Ein neues Bedienfeld mit der Komponente &quot;Besuche&quot;wurde auf den Arbeitsbereich verschoben.](assets/automated-table.png)
 
 ## Freiformtabellen-Builder
 
 Wenn Sie Ihrer Tabelle lieber zuerst mehrere Komponenten hinzufügen und dann die Daten rendern möchten, können Sie Freiformtabellen-Builder aktivieren. Wenn der Builder aktiviert ist, können Sie für komplexe Fragen Tabellen mit vielen Dimensionen, Unterteilungen, Metriken und Filtern per Drag-and-Drop erstellen. Daten werden nicht sofort aktualisiert. Sie werden erst aktualisiert, wenn Sie auf **[!UICONTROL Erstellen]** klicken.
 
-![Freiform-Tabellen-Builder mit ](assets/table-builder.png)
+![Ein Freiform-Tabellen-Builder mit ](assets/table-builder.png)
 
 ## Tabelleninteraktionen
 
@@ -54,4 +54,4 @@ Erfahren Sie mehr über die [Exportoptionen](https://experienceleague.adobe.com/
 
 Erfahren Sie mehr über die [Exportoptionen](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/download-send.html?lang=de) aller Daten für Analysis Workspace.
 
-![Freiformtabelle mit den ausgewählten Exportoptionen und Daten in die Zwischenablage kopieren](assets/export-options.png)
+![Freiformtabelle mit den ausgewählten Exportoptionen und &quot;Daten in Zwischenablage kopieren&quot;](assets/export-options.png)

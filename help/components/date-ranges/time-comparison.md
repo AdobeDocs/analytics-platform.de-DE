@@ -42,13 +42,13 @@ Für Analysen wird Kontext benötigt, der oft durch einen vorherigen Zeitraum be
 
 1. Der resultierende Vergleich sieht wie folgt aus:
 
-   ![Freiformtabelle, die einen Vergleich von Datumsbereichen und prozentualen Änderungen anzeigt.](assets/compare-time-result.png)
+   ![Freiformtabelle mit einem Vergleich von Datumsbereichen und prozentualen Änderungen.](assets/compare-time-result.png)
 
    Zeilen in der Spalte „Prozentwertänderung“ sind rot bei negativen Werten und grün bei positiven Werten.
 
 1. (Optional) Wie bei allen anderen Workspace-Projekten können Sie basierend auf diesen Zeitvergleichen Visualisierungen erstellen. Hier ist z. B. ein Balkendiagramm:
 
-   ![Arbeitsbereich-Projektleistendiagramm.](assets/compare-time-barchart.png)
+   ![Workspace-Projektleistendiagramm.](assets/compare-time-barchart.png)
 
    Beachten Sie, dass Sie die Einstellung [!UICONTROL Prozentsätze] in den [!UICONTROL Visualisierungseinstellungen] aktivieren müssen, damit die prozentuale Änderung im Balkendiagramm angezeigt wird.
 
@@ -56,7 +56,7 @@ Für Analysen wird Kontext benötigt, der oft durch einen vorherigen Zeitraum be
 
 Sie können jetzt Zeiträume zu allen Spalten in einer Tabelle hinzufügen. So können Sie einen Zeitraum hinzufügen, der von dem abweicht, auf den Ihr Kalender eingestellt ist. Dies ist eine weitere Möglichkeit, um Daten zu vergleichen.
 
-1. Klicken Sie mit der rechten Maustaste auf eine Spalte in der Tabelle und wählen Sie **[!UICONTROL Spalte &quot;Zeitraum hinzufügen&quot;]** ![Tabellenspaltenliste mit hervorgehobener Spalte &quot;Zeitraum hinzufügen&quot; ](assets/add-time-period-column.png)
+1. Klicken Sie mit der rechten Maustaste auf eine Spalte in der Tabelle und wählen Sie **[!UICONTROL Spalte &quot;Zeitraum hinzufügen&quot;]** ![Spaltenliste &quot;Tabelle&quot;mit Spalte &quot;Zeitraum hinzufügen&quot;mit Markierung ](assets/add-time-period-column.png) aus
 
 1. Je nachdem, wie Sie den Datumsbereich der Tabelle festgelegt haben, stehen die folgenden Optionen zum Vergleich zur Verfügung:
 
@@ -76,7 +76,7 @@ Sie können jetzt Zeiträume zu allen Spalten in einer Tabelle hinzufügen. So k
 
 1. Sie können so viele Zeitspalten hinzufügen, wie Sie möchten, sowie verschiedene Datumsbereiche kombinieren:
 
-   ![Freiformtabelle, die die Vorkommen für diesen Monat, den Vormonat, den Vormonat vor einem Jahr und eine Woche des Vormonats vor einem Jahr anzeigt.](assets/add-time-period-column4.png)
+   ![Freiformtabelle, die die Vorkommen für diesen Monat, den Vormonat, den Vormonat vor einem Jahr und eine Woche vor einem Jahr anzeigt.](assets/add-time-period-column4.png)
 
 1. Sie können außerdem nach jeder Spalte sortieren. Dadurch wird die Reihenfolge der Tage abhängig von der jeweiligen Spalte geändert.
 
@@ -84,7 +84,7 @@ Sie können jetzt Zeiträume zu allen Spalten in einer Tabelle hinzufügen. So k
 
 Mit einer neuen Einstellung für alle Tabellen können Sie **[!UICONTROL Datumswerte in jeder Spalte so ausrichten, dass sie in der gleichen Zeile beginnen (wird auf die gesamte Tabelle angewendet)]**. „Wird auf die gesamte Tabelle angewendet“ bedeutet, dass, wenn Sie z. B. eine Aufschlüsselung in der Tabelle durchführen und diese Einstellung für die Aufschlüsselung ändern, die Einstellung für die gesamte Tabelle geändert wird.
 
-![Freiformtabelle mit Popup-Fenster &quot;Tabelleneinstellungen&quot;mit der Option Datumsangaben in jeder Spalte ausrichten , damit sie alle in derselben ausgewählten Zeile beginnen.](assets/date-comparison-setting.png)
+![Freiformtabelle mit Tabelleneinstellungen mit Popup-Fenster, in dem die Datumsangaben in jeder Spalte so ausgerichtet sind, dass sie alle in derselben ausgewählten Zeile beginnen.](assets/date-comparison-setting.png)
 
 >[!IMPORTANT]
 >

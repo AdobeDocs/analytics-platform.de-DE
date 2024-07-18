@@ -15,7 +15,7 @@ ht-degree: 85%
 
 Mit der Visualisierung [!UICONTROL Kombinationsdiagramm] können Sie schnell und einfach einen Vergleich darstellen, ohne zuerst eine Tabelle erstellen zu müssen. Die Entwicklung Ihrer Daten wird dabei durch eine Kombination aus Linien und Balken dargestellt.
 
-Verwenden Sie eine [!UICONTROL Combo-Diagramm] an:
+Verwenden Sie ein [!UICONTROL Combo-Diagramm], um:
 
 * Vergleichen der Bestellungen dieser Woche mit denen im letzten Monat (und im letzten Jahr) – alles mit nur wenigen Klicks.
 * Schnelles Analysieren und Vergleichen mehrerer Metriken (z. B. [!UICONTROL Unique Visitors] und [!UICONTROL Umsatz]) im selben Diagramm.
@@ -33,7 +33,7 @@ Beachten Sie:
 
 1. Ziehen Sie aus der Visualisierungs-Dropdown-Liste in der linken Leiste die Visualisierung [!UICONTROL Kombinationsdiagramm] in ein leeres Bedienfeld.
 
-   ![Combo-Diagramm mit der X- und Y-Achse und dem Optionsfeld](assets/combo-chart-build.png)
+   ![Kombodiagramm mit der X- und Y-Achse und dem Optionsfeld](assets/combo-chart-build.png)
 
 1. Wählen Sie aus den Dropdown-Listen eine Dimension für die X-Achse und eine Metrik für die Y-Achse aus.
 
@@ -41,9 +41,9 @@ Beachten Sie:
 
    | Linienvergleichstyp | Definition |
    | --- | --- |
-   | **[!UICONTROL Zeitvergleich]** | Der häufigste Vergleichstyp, z. B. Vergleich dieses Zeitraums mit dem vor 4 Wochen. Wenn Sie [!UICONTROL Zeitvergleich] auswählen, führen Sie eine zweite Auswahl durch, um anzugeben, mit welchem Zeitraum der Vergleich durchgeführt werden soll.<p>![Vergleich mit ausgewähltem Zeitraum und sekundäres Auswahlfeld für Zeitraum.](assets/combo-time-period.png) |
+   | **[!UICONTROL Zeitvergleich]** | Der häufigste Vergleichstyp, z. B. Vergleich dieses Zeitraums mit dem vor 4 Wochen. Wenn Sie [!UICONTROL Zeitvergleich] auswählen, führen Sie eine zweite Auswahl durch, um anzugeben, mit welchem Zeitraum der Vergleich durchgeführt werden soll.<p>![Zeilenvergleich mit ausgewähltem Zeitraum und sekundäres Auswahlfeld für den Zeitraum.](assets/combo-time-period.png) |
    | **[!UICONTROL Funktion]** | Sie können zum Vergleich eine Funktion wie [!UICONTROL Durchschnitt] hinzufügen. Eine Liste der unterstützten Funktionen finden Sie unten.<p>![Ein Dropdown-Menü für einen Vergleich mit ausgewählten Funktionen und einer Liste der verfügbaren unterstützten Funktionen.](assets/combo-functions.png) |
-   | **[!UICONTROL Sekundäre Metrik]** | Sie können beispielsweise den [!UICONTROL Umsatz] mit einer anderen Metrik vergleichen.<p>![Ein Combo-Diagramm, das zwei Metriken vergleicht.](assets/combo-2metrics.png) |
+   | **[!UICONTROL Sekundäre Metrik]** | Sie können beispielsweise den [!UICONTROL Umsatz] mit einer anderen Metrik vergleichen.<p>![Ein Kombinationsdiagramm, in dem zwei Metriken verglichen werden.](assets/combo-2metrics.png) |
 
    {style="table-layout:auto"}
 
@@ -51,7 +51,7 @@ Beachten Sie:
 
    Die Ausgabe sieht in etwa so aus:
 
-   ![Ein Combo-Diagramm, das den aktuellen Zeitraum in einem Balkendiagramm und einem Vergleichszeitraum im Liniendiagramm anzeigt ](assets/combo-output.png)
+   ![Ein Kombinationsdiagramm, das den aktuellen Zeitraum in einem Balkendiagramm und Vergleichszeitraum im Liniendiagramm anzeigt ](assets/combo-output.png)
 
    Der aktuelle Zeitraum wird im Balkendiagramm angezeigt und der Vergleichszeitraum wird durch das Liniendiagramm dargestellt. Die Punkte im Liniendiagramm werden als „Datenpunkte“ bezeichnet.
 
@@ -73,11 +73,11 @@ Wenn Sie **[!UICONTROL Funktion]** als [!UICONTROL Linienvergleichstyp] auswähl
 
 Im Folgenden finden Sie ein Beispiel für den kumulativen Durchschnitt der Umsatzmetrik:
 
-![Ein Combo-Diagramm mit dem kumulativen Durchschnitt](assets/combo-cumul-avg.png)
+![Ein Kombinationsdiagramm mit dem kumulativen Durchschnitt](assets/combo-cumul-avg.png)
 
 Im Folgenden finden Sie ein Beispiel für ein Kombinationsdiagramm mit den Funktionen „Kumulativer Durchschnitt“ und „Mittel“:
 
-![Ein Combo-Diagramm, das sowohl die durchschnittliche als auch die mittlere Funktion anzeigt.](assets/combo-two-functions.png)
+![Ein Kombinationsdiagramm, das sowohl den kumulativen Durchschnittswert als auch die mittleren Funktionen anzeigt.](assets/combo-two-functions.png)
 
 ## Einstellungen des Kombinationsdiagramms
 

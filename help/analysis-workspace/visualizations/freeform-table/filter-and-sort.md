@@ -35,7 +35,7 @@ Sie können mehrere Methoden verwenden, um Zeilen aus einer Freiformtabelle zu f
 - Tabellenfilter
 - Segmentierung
 
-Lesen Sie unbedingt, wie sich die einzelnen Methoden auf [Gesamtwerte der Freiformtabelle](/help/analysis-workspace/visualizations/freeform-table/workspace-totals.md).
+Lesen Sie unbedingt, wie sich jede Methode auf die Gesamtwerte der Freiformtabelle [1} auswirkt.](/help/analysis-workspace/visualizations/freeform-table/workspace-totals.md)
 
 ### Schnelles Ausschließen bestimmter Zeilen aus einer Tabelle
 
@@ -43,7 +43,7 @@ Sie können bestimmte Zeilen schnell aus der Tabelle ausschließen, ohne das Dia
 
 >[!NOTE]
 >
->Wenn Sie Zeilen ausschließen, wie in diesem Abschnitt beschrieben, wird ein [!UICONTROL **Ausschließen von Elementen**] im Dialogfeld für erweiterte Filter automatisch angewendet wird. (Sie können die angewendete Regel anzeigen, indem Sie das Filtersymbol auswählen und dann [**[!UICONTROL Erweitert anzeigen]**](#apply-a-simple-or-advanced-filter-to-a-table).
+>Wenn Sie Zeilen wie in diesem Abschnitt beschrieben ausschließen, wird im Dialogfeld für erweiterte Filter automatisch eine Regel [!UICONTROL **Elemente immer ausschließen**] angewendet. (Sie können die angewendete Regel anzeigen, indem Sie das Filtersymbol und dann [**[!UICONTROL Erweitert anzeigen]**](#apply-a-simple-or-advanced-filter-to-a-table) auswählen.)
 
 So schließen Sie bestimmte Zeilen schnell aus einer Freiformtabelle aus:
 
@@ -69,7 +69,7 @@ So filtern Sie Daten in Freiformtabellen:
 
 1. Wählen Sie das **Filtersymbol** aus, wenn es angezeigt wird.
 
-   ![Freiformtabelle, die das Symbol Filter hervorhebt.](assets/table-filter-icon.png)
+   ![ Freiformtabelle, die das Filtersymbol hervorhebt.](assets/table-filter-icon.png)
 
    Die folgenden Optionen sind verfügbar:
 
@@ -95,7 +95,7 @@ So filtern Sie Daten in Freiformtabellen:
 
 ### Filter
 
-Siehe unsere [Filterdokumentation](/help/components/filters/filters-overview.md) für weitere Details.
+Weitere Informationen finden Sie in der [Filterdokumentation](/help/components/filters/filters-overview.md) .
 
 ## Sortieren von Tabellen
 
@@ -110,6 +110,6 @@ Ein Pfeil-nach-unten-Symbol ![Pfeil nach unten zur Sortierung einer Tabellenspal
    - Der Nach-unten-Pfeil sortiert in absteigender Reihenfolge und der Nach-oben-Pfeil (Standard) in aufsteigender Reihenfolge.
    - Sie können Dimensionen alphabetisch oder numerisch sortieren. Beispielsweise können Sie in einem Workflow nummerierte Schritte verwenden und nach der Schrittnummer sortieren. Eine datumsbezogene Dimension kann nach Datum sortiert werden. Oder Sie können, wie in der folgenden Abbildung, Datenquellen alphabetisch sortieren.
 
-   ![Data Sources-Ansicht, die das Sortiersymbol hervorhebt.](assets/sort-dimensions.png)
+   ![Data Sources-Ansicht, in der das Sortiersymbol hervorgehoben wird.](assets/sort-dimensions.png)
 
 

@@ -23,15 +23,15 @@ In diesem Thema werden Auditprotokolle im Customer Journey Analytics behandelt, 
 
 Wenn diese Funktion für Ihr Unternehmen aktiviert ist, werden bei Aktivitäten automatisch Auditprotokolle aufgezeichnet. Sie müssen die Datenerfassung in Auditprotokollen nicht manuell aktivieren.
 
-Um Auditprotokolle anzeigen und exportieren zu können, benötigen Sie in der Adobe-Konsole die Zugriffsberechtigung **[!UICONTROL Zugriff auf Auditprotokolle]**. Informationen zum Verwalten individueller Berechtigungen für Customer Journey Analytics-Funktionen finden Sie im Abschnitt [Zugriffssteuerungsdokumentation](../technotes/access-control.md).
+Um Auditprotokolle anzeigen und exportieren zu können, benötigen Sie in der Adobe-Konsole die Zugriffsberechtigung **[!UICONTROL Zugriff auf Auditprotokolle]**. Informationen zum Verwalten individueller Berechtigungen für Customer Journey Analytics-Funktionen finden Sie in der Dokumentation zur [Zugriffskontrolle](../technotes/access-control.md).
 
 ## Administratorprotokoll in der Benutzeroberfläche anzeigen
 
-Navigieren Sie unter Customer Journey Analytics zu **[!UICONTROL Instrumente]** > **[!UICONTROL Auditprotokolle]**.
+Navigieren Sie unter Customer Journey Analytics zu **[!UICONTROL Tools]** > **[!UICONTROL Prüfprotokolle]**.
 
 Das Auditprotokoll für den heutigen und gestrigen Tag wird standardmäßig angezeigt.
 
-![Auditprotokoll, das heute und gestern hervorhebt. ](assets/audit_ui.png)
+![Markierung des Auditprotokolls heute und gestern. ](assets/audit_ui.png)
 
 Sie können auswählen, welche Spalten sichtbar sein sollen, indem Sie oben rechts zur Spaltenauswahl wechseln.
 
@@ -39,7 +39,7 @@ Sie können auswählen, welche Spalten sichtbar sein sollen, indem Sie oben rech
 
 Doppelklicken Sie auf die Info-Schaltfläche (i) neben einer Beschreibung.
 
-![Auditprotokoll, das die Info-Schaltfläche hervorhebt. ](assets/info-button-audit.png)
+![Prüfprotokoll, das die Infoschaltfläche hervorhebt. ](assets/info-button-audit.png)
 
 Die folgenden Informationen werden angezeigt:
 
@@ -57,10 +57,10 @@ Die folgenden Informationen werden angezeigt:
    * TRANSFER
    * UNGENEHMIGEN
    * UNSHARE
-* **[!UICONTROL Erstellungsdatum]**: Datum und Uhrzeit der Aktion.
+* **[!UICONTROL Erstellungsdatum]**: Das Datum und die Uhrzeit, zu der die Aktion durchgeführt wurde.
 * **[!UICONTROL Beschreibung]**: Eine Zusammenfassung der Aktion.
 * **[!UICONTROL Benutzername]**: Der Benutzer, der die Aktion ausgeführt hat.
-* **[!UICONTROL Email]**: Die E-Mail-Adresse des Benutzers, der die Aktion ausgeführt hat.
+* **[!UICONTROL E-Mail]**: Die E-Mail-Adresse des Benutzers, der die Aktion ausgeführt hat.
 * **[!UICONTROL Komponentenname]**: Die Komponente, auf die der Benutzer eine Aktion ausgeführt hat.
 * **[!UICONTROL Komponententyp]**: Der Typ der Komponente. Mögliche Werte:
    * ANMERKUNG
@@ -81,8 +81,8 @@ Die folgenden Informationen werden angezeigt:
    * BENUTZER
    * USER_GROUP
 * **[!UICONTROL Komponenten-ID]**: Die ID der Komponente, für die der Benutzer eine Aktion ausgeführt hat.
-* **[!UICONTROL Kennung der IMS-Organisation]**: Die IMS-ID der Organisation im Format `ABC123@AdobeOrg`.
-* **[!UICONTROL Protokollkennung]**: Eine eindeutige ID, die diesen Protokolleintrag identifiziert.
+* **[!UICONTROL IMS-Organisations-ID]**: Die IMS-ID des Unternehmens im Format `ABC123@AdobeOrg`.
+* **[!UICONTROL Log ID]**: Eine eindeutige ID, die diesen Protokolleintrag identifiziert.
 * **[!UICONTROL Benutzer-ID]**: Die eindeutige ID, mit der der Benutzer identifiziert wird, der die Aktion ausgeführt hat.
 * **[!UICONTROL Benutzertyp]**: Der verwendete Authentifizierungstyp. Zu gültigen Werten gehören:
    * IMS
@@ -92,7 +92,7 @@ Die folgenden Informationen werden angezeigt:
 
 Wählen Sie das Trichtersymbol (![Filter](assets/filter-icon.png)), um eine Liste von Filterfeldern anzuzeigen, mit denen die Ergebnisse eingegrenzt werden können. Unabhängig von den ausgewählten Filtern werden nur die letzten 1.000 Datensätze angezeigt.
 
-![Auditprotokoll mit den für den Datenbereich angezeigten Filtern.](assets/filters.png)
+![Prüfprotokoll, das die für den Datenbereich angezeigten Filter anzeigt.](assets/filters.png)
 
 Die Benutzeroberfläche verfügt für Protokolle über folgende Filter:
 
@@ -139,4 +139,4 @@ Sie können Auditprotokolle im CSV- oder JSON-Format herunterladen. Alle angewen
 
 ## Verwalten von Auditprotokollen in der API
 
-Alle Aktionen, die Sie in der Benutzeroberfläche ausführen können, können auch über API-Aufrufe ausgeführt werden. Siehe [Customer Journey Analytics API-Referenzdokument](https://developer.adobe.com/cja-apis/docs/api/#tag/Audit-Logs) für weitere Informationen.
+Alle Aktionen, die Sie in der Benutzeroberfläche ausführen können, können auch über API-Aufrufe ausgeführt werden. Weitere Informationen finden Sie im Referenzdokument [Customer Journey Analytics API-Referenz](https://developer.adobe.com/cja-apis/docs/api/#tag/Audit-Logs) .

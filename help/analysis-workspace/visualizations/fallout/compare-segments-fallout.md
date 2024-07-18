@@ -28,11 +28,11 @@ Sie können in Analysis Workspace Filter aus einem Touchpoint erstellen, Filter 
 
 1. Erstellen Sie einen Filter aus einem bestimmten Touchpoint, an dem Sie interessiert sind und den Sie eventuell auch in andere Berichte übernehmen möchten. Klicken Sie dazu mit der rechten Maustaste auf den Touchpoint und wählen Sie dann **[!UICONTROL Filter aus Touchpoint erstellen]** aus.
 
-   ![Das Dropdown-Menü Touchpoint mit hervorgehobenem Dropdown-Menü Segment aus Touchpoint erstellen .](assets/segment-from-touchpoint.png)
+   ![Das Dropdown-Menü &quot;Touchpoint&quot;mit hervorgehobenem Symbol &quot;Segment aus Touchpoint erstellen&quot;.](assets/segment-from-touchpoint.png)
 
    Der Filtergenerator wird geöffnet und enthält bereits den vorkonfigurierten sequenziellen Filter, der zu dem von Ihnen ausgewählten Touchpoint passt:
 
-   ![Der Filter Builder zeigt den vorausgefüllten und vordefinierten sequenziellen Filter an.](assets/segment-builder.png)
+   ![Der Filtergenerator zeigt den vorausgefüllten und vordefinierten sequenziellen Filter an.](assets/segment-builder.png)
 
 1. Geben Sie einen Titel und eine Beschreibung für den Filter ein und speichern Sie ihn.
 
@@ -53,10 +53,10 @@ In der Fallout-Visualisierung können Sie eine unbegrenzte Anzahl von Filtern mi
 1. Wählen Sie die zu vergleichenden Filter links in der Leiste [!UICONTROL Filter] aus. Im vorliegenden Beispiel haben wir zwei Filter ausgewählt: „USA-Benutzer“ und „Benutzer außerhalb der USA“.
 1. Ziehen Sie sie nach oben in die Ablegezone „Filter“.
 
-   ![Die Fallout-Visualisierung mit ausgewählten Filtern und der rote Pfeil, der auf die Dropzone Filter zeigt.](assets/segment-drop.png)
+   ![Die Fallout-Visualisierung mit ausgewählten Filtern und dem roten Pfeil, der auf die Filterablagezone zeigt.](assets/segment-drop.png)
 
 1. Optional: Sie können „Alle Besuche“ als Standard-Container belassen oder ihn löschen.
 
-   ![Der Fallout, der alle Besuche anzeigt, sowie die beiden Filter, die im vorherigen Schritt gezogen wurden.](assets/seg-compare.png)
+   ![Der Fallout, der alle Besuche anzeigt, zusammen mit den beiden Filtern, die im vorherigen Schritt gezogen wurden.](assets/seg-compare.png)
 
 1. Sie können nun den Fallout über zwei Filter hinweg vergleichen (z. B. an welcher Stelle ein Filter eine bessere Leistung als der andere hat) oder sonstige Einblicke erhalten.

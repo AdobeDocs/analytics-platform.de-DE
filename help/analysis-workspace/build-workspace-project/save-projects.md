@@ -44,7 +44,7 @@ Alle Projekte in Analysis Workspace werden automatisch alle 2 Minuten auf Ihrem 
 
    1. Gehen Sie zum Ordner [!UICONTROL **Wiederhergestellte Projekte**] auf der Landingpage von Analysis Workspace.
 
-      ![Die Liste der Ordner, die den Ordner Wiederhergestelltes Projekt hervorheben.](assets/recovered-folder.png)
+      ![Die Liste der Ordner, die den Ordner des wiederhergestellten Projekts hervorheben.](assets/recovered-folder.png)
 
    1. Öffnen Sie das Projekt und speichern Sie es an einem gewünschten Ort.
 
@@ -69,7 +69,7 @@ Die folgenden Optionen sind verfügbar:
 
 Wenn Sie eine Seite verlassen oder die Browser-Registerkarte schließen, während Sie ein Projekt mit noch nicht automatisch gespeicherten Änderungen betrachten, warnt Sie der Browser, dass Ihre nicht gespeicherten Änderungen verloren gehen. Sie können entscheiden, ob Sie die Registerkarte verlassen oder abbrechen möchten.
 
-![Klicken Sie auf Leeren , um die Site zu verlassen, oder auf Abbrechen , um zu navigieren, ohne Änderungen zu speichern. ](assets/browser-image.png)
+![Klicken Sie auf &quot;Leave&quot;, um die Site zu verlassen, oder auf &quot;Cancel&quot;, um zu navigieren, ohne Änderungen zu speichern. ](assets/browser-image.png)
 
 ### Browser-Abstürze oder Zeitüberschreitung der Sitzung
 
@@ -81,7 +81,7 @@ Wählen Sie **Ja**, um das Projekt auf der Basis der letzten automatisch gespeic
 
 Wählen Sie **Nein**, um die automatisch gespeicherte Kopie zu löschen und die letzte vom Benutzer bzw. der Benutzerin gespeicherte Version des Projekts zu öffnen.
 
-![Dialogfeld &quot;Projektwiederherstellung&quot;.](assets/project-recovery.png)
+![Das Dialogfeld &quot;Projekterholung&quot;.](assets/project-recovery.png)
 
 Bei **neuen** Projekten, die noch nie gespeichert wurden, können nicht gespeicherte Änderungen nicht wiederhergestellt werden.
 
@@ -91,7 +91,7 @@ So öffnen Sie eine frühere Version eines Projekts:
 
 1. Gehen Sie zu **[!UICONTROL Projekt]** > **[!UICONTROL Frühere Version öffnen]**
 
-   ![Liste und Optionen der zuvor gespeicherten Projektversionen zum Anzeigen aller Versionen oder Nur Versionen mit Anmerkungen.](assets/previous-versions.png)
+   ![Die Liste der zuvor gespeicherten Projektversionen und Optionen zum Anzeigen aller Versionen oder Nur Versionen mit Anmerkungen.](assets/previous-versions.png)
 
 1. Überprüfen Sie die Liste der verfügbaren älteren Versionen.
    [!UICONTROL Zeitstempel] und [!UICONTROL Editor] werden ebenso wie [!UICONTROL Notizen] angezeigt, wenn diese beim Speichern im [!UICONTROL Editor] hinzugefügt wurden. Versionen ohne Notizen werden 90 Tage lang gespeichert. Versionen mit Notizen werden für ein Jahr gespeichert.

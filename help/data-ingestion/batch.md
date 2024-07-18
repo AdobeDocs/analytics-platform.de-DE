@@ -49,23 +49,24 @@ Gehen Sie folgendermaßen vor, um das Schema einzurichten:
 
 1. Wählen Sie in der Adobe Experience Platform-Benutzeroberfläche in der linken Leiste die Option **[!UICONTROL Schemata]** in [!UICONTROL DATEN-MANAGEMENT] aus.
 
-1. Auswählen **[!UICONTROL Schema erstellen]**. .
+1. Wählen Sie **[!UICONTROL Schema erstellen]** aus.
+.
 1. Im Schritt Klasse auswählen des Assistenten Schema erstellen :
 
-   1. Auswählen **[!UICONTROL Individuelles Profil]**.
+   1. Wählen Sie **[!UICONTROL Individuelles Profil]** aus.
 
       ![Erstellen eines Schemas](./assets/create-pr-schema-wizard-step-1.png)
 
       >[!INFO]
       >
-      >    Ein Erlebnisereignis-Schema wird zum Modellieren der _Verhalten_ eines Profils (wie Name der Szene, Schaltfläche zum Hinzufügen zum Warenkorb). Das Schema „Individuelles Profil“ wird verwendet, um die _Attribute_ eines Profils zu modellieren (z. B. Name, E-Mail, Geschlecht).
+      >    Mit einem Erlebnisereignis-Schema wird das _Verhalten_ eines Profils modelliert (z. B. Name der Szene, Schaltfläche zum Hinzufügen zum Warenkorb). Das Schema „Individuelles Profil“ wird verwendet, um die _Attribute_ eines Profils zu modellieren (z. B. Name, E-Mail, Geschlecht).
 
    1. Klicken Sie auf **[!UICONTROL Weiter]**.
 
 
-1. Im [!UICONTROL Name und Überprüfungsschritt] des [!UICONTROL Schema erstellen] Assistent:
+1. Im Schritt [!UICONTROL Name und Überprüfung] des Assistenten [!UICONTROL Schema erstellen]:
 
-   1. Geben Sie einen **[!UICONTROL Anzeigename des Schemas]** für Ihr Schema und (optional) a **[!UICONTROL Beschreibung]**.
+   1. Geben Sie einen **[!UICONTROL Anzeigenamen des Schemas]** und (optional) eine **[!UICONTROL Beschreibung]** ein.
 
       ![Benennen des Schemas](./assets/create-pr-schema-wizard-step-2.png)
 
@@ -218,7 +219,7 @@ Gehen Sie folgendermaßen vor, um Workflows zu verwenden:
 
 6. Wählen Sie **[!UICONTROL Beenden]**, um Ihre Batch-Daten in Adobe Experience Platform aufzunehmen.
 
-Siehe [CSV-Datei über einem vorhandenen XDM-Schema zuordnen](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/map-csv/existing-schema.html?lang=de) Weitere Informationen finden Sie unter:
+Weitere Informationen finden Sie unter [Zuordnen einer CSV-Datei über einem vorhandenen XDM-Schema ](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/map-csv/existing-schema.html?lang=de):
 
 - Zuordnen von Daten, wenn Ihre eingehenden Daten nicht mit Ihrem XDM-Schema kompatibel sind.
 - Mapping-Vorlagen verwenden,

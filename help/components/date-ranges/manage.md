@@ -20,7 +20,7 @@ Verwenden Sie den Datumsbereichs-Manager, um Datumsbereiche freizugeben, umzuben
 
 ## Benutzeroberfläche
 
-![Datumsbereiche mit Beispielbereich hervorgehoben.](../assets/date-range-ui.png)
+![Datumsbereiche mit hervorgehobenem Beispielbereich.](../assets/date-range-ui.png)
 
 Der Datumsbereichs-Manager umfasst die folgenden Optionen:
 

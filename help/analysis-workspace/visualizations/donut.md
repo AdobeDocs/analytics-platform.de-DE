@@ -15,4 +15,4 @@ ht-degree: 79%
 
 Ähnlich einem Tortendiagramm zeigt diese Visualisierung die Daten als Teile oder Filter eines Ganzen. Ein Ringdiagramm kann für den Vergleich der prozentualen Anteile eines Ganzen verwendet werden, typischerweise bei einer geringen Anzahl an Elementen.
 
-![Ein Ringdiagramm mit Daten als Teile oder Filter eines Ganzen.](assets/donut.png)
+![Ein Ringdiagramm, das Daten als Teile oder Filter eines Ganzen anzeigt.](assets/donut.png)

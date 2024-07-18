@@ -7,14 +7,14 @@ exl-id: 7a4f15c4-7fd6-4a6a-9b83-7c1f3b95be16
 source-git-commit: 3ed6eabae8607a10920c8917a818f0497b337893
 workflow-type: tm+mt
 source-wordcount: '563'
-ht-degree: 0%
+ht-degree: 5%
 
 ---
 
 
 # KI-Assistent für Adobe Customer Journey Analytics
 
-AI Assistant ist eine Dialogerfahrung, die es Fachleuten ermöglicht, Aufgaben schnell auszuführen - unabhängig davon, ob sie Konzepte verstehen, Probleme beheben oder nach Informationen suchen. Sie ermöglicht es auch Nichtexperten, Expertenaufgaben durchzuführen und die allgemeine Qualität der Arbeit zu erhöhen.
+AI Assistant ist eine Dialogerfahrung, die es Fachleuten ermöglicht, Aufgaben schnell auszuführen - unabhängig davon, ob sie Konzepte verstehen, Probleme beheben oder nach Informationen suchen. Er ermöglicht es auch Nichtexpertinnen und -experten, Expertenaufgaben durchzuführen, und erhöht die allgemeine Qualität der Arbeit.
 
 Der KI-Assistent im Customer Journey Analytics wird in der Adobe Experience League-Dokumentation geschult. Bei der Beantwortung einer Frage antwortet der KI-Assistent mit einer hilfreichen Antwort, die schnelles Lernen ermöglicht.
 
@@ -44,12 +44,12 @@ Das Produktkennungsabfragemodell wird auf Customer Journey Analytics trainiert. 
 
 In dieser ersten Version wird der Zugriff auf die Funktion des AI-Assistenten durch die folgenden Parameter gesteuert:
 
-* **Lösungszugriff**: Der KI-Assistent ist im Customer Journey Analytics verfügbar, nicht aber in Adobe Analytics. Es ist auch in Adobe Experience Platform, Adobe Journey Optimizer, Adobe Real-Time CDP und zusätzlichen Experience Platform-Apps verfügbar.
+* **Lösungszugriff**: Der AI-Assistent ist im Customer Journey Analytics, nicht aber in Adobe Analytics verfügbar. Es ist auch in Adobe Experience Platform, Adobe Journey Optimizer, Adobe Real-Time CDP und zusätzlichen Experience Platform-Apps verfügbar.
 
-* **Vertraglicher Zugang**: Wenden Sie sich an den Administrator oder Adobe-Kundenbetreuer Ihres Unternehmens, wenn Sie keinen KI-Assistenten verwenden können. Bevor der KI-Assistent von Ihrer Einrichtung verwendet werden kann, muss Ihr Unternehmen bestimmten GenAI-bezogenen gesetzlichen Bestimmungen zustimmen.
+* **Vertragszugriff**: Wenn Sie den KI-Assistenten nicht verwenden können, wenden Sie sich an den Administrator oder Adobe-Kundenbetreuer Ihres Unternehmens. Bevor der KI-Assistent von Ihrer Einrichtung verwendet werden kann, muss Ihr Unternehmen bestimmten GenAI-bezogenen gesetzlichen Bestimmungen zustimmen.
 
-* **Berechtigungen**: In [!UICONTROL Adobe Admin Console], die [!UICONTROL Reporting-Tools] Die Berechtigung &quot;AI Assistant: Product Knowledge&quot;bestimmt den Zugriff auf dieses Tool. A [Produktprofiladministrator](https://helpx.adobe.com/de/enterprise/using/manage-product-profiles.html) muss die folgenden Schritte in Admin Console ausführen:
-   1. Navigieren Sie zu [!UICONTROL Admin Console] > [!UICONTROL Produkte und Dienstleistungen] > [!UICONTROL Customer Journey Analytics] > [!UICONTROL Produktprofil] > [!UICONTROL Berechtigungen] > [!UICONTROL Bearbeiten von Reporting-Tools].
+* **Berechtigungen**: In [!UICONTROL Adobe Admin Console] bestimmt die Berechtigung [!UICONTROL Berichterstellungs-Tools] &quot;AI-Assistent: Produktwissen&quot;den Zugriff auf dieses Tool. Ein [Produktprofiladministrator](https://helpx.adobe.com/de/enterprise/using/manage-product-profiles.html) muss die folgenden Schritte in Admin Console ausführen:
+   1. Navigieren Sie zu [!UICONTROL Admin Console] > [!UICONTROL Produkte und Dienste] > [!UICONTROL Customer Journey Analytics] > [!UICONTROL Produktprofil] > [!UICONTROL Berechtigungen] > [!UICONTROL Berichterstellungs-Tools bearbeiten].
    1. Fügen Sie &quot;AI Assistant: Product Knowledge&quot;hinzu.
       ![Berechtigung hinzufügen](assets/image.png)
 
@@ -65,7 +65,7 @@ In dieser ersten Version wird der Zugriff auf die Funktion des AI-Assistenten du
 
    ![Fragefeld](assets/ai-asst2.png)
 
-1. (Optional) Um Quellen anzuzeigen, klicken Sie auf **[!UICONTROL Quellen anzeigen]** und die Dokumentationsquelle bzw. Quellen, die die Antwort erhalten haben, angezeigt werden.
+1. (Optional) Um Quellen anzuzeigen, klicken Sie auf &quot;**[!UICONTROL Quellen anzeigen]**&quot;. Außerdem werden die Dokumentationsquelle bzw. die Quellen angezeigt, die die Antwort erhalten haben.
 
 1. (Optional) Sie können auch eine Daumen-Up- oder Daumen-Down-Abstimmung über die Nützlichkeit einer gegebenen Antwort geben.
 

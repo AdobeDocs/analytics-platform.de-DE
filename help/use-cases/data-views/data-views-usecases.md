@@ -25,7 +25,7 @@ Wenn Sie beispielsweise eine Datenansicht erstellen, können Sie eine Metrik [!U
 1. Markieren Sie nun die Metrik, die Sie gerade in den Bereich gezogen haben, und benennen Sie sie unter [!UICONTROL Komponenteneinstellungen] auf der rechten Seite um:
    ![Schemafelder, die Bestellungen unter den Komponenteneinstellungen hervorheben.](../assets/orders.png)
 1. Öffnen Sie das Dialogfeld [!UICONTROL Werte einschließen/ausschließen] auf der rechten Seite und geben Sie Folgendes an:
-   ![Ein-/Ausschließen von Werten mit Festlegen von Ein-/Ausschlusswerten und Auswahl der Option Groß-/Kleinschreibung beachten.](../assets/orders2.png)
+   ![Ein-/Ausschließen von Werten mit Festlegen von Ein-/Ausschlusswerten und ausgewählter Groß-/Kleinschreibung.](../assets/orders2.png)
 
    Der Zusatz „Bestätigung“ gibt an, dass es sich um eine Bestellung handelt. Nach Überprüfung aller Seitentitel, bei denen diese Kriterien erfüllt sind, wird für jede Instanz „1“ gezählt. Das Ergebnis ist eine neue Metrik (keine berechnete Metrik). Eine Metrik mit eingeschlossenen/ausgeschlossenen Werten kann überall dort verwendet werden, wo auch jede andere Metrik eingesetzt werden kann. Sie funktioniert mit Attribution IQ, Filtern und überall sonst, wo Sie Standardmetriken verwenden können.
 1. Sie können darüber hinaus ein Zuordnungsmodell für diese Metrik angeben, beispielsweise [!UICONTROL Letztkontakt] mit einem [!UICONTROL Lookback-Fenster] von [!UICONTROL Sitzung].
@@ -43,7 +43,7 @@ Zuvor wurden Ganzzahlen in Customer Journey Analytics automatisch als Metriken b
 
 1. Sie können jetzt [!UICONTROL Wertgruppierung] hinzufügen, um diese Dimension in Berichten in zusammengefasster Form darzustellen. (Ohne Gruppierung würde jede Instanz dieser Dimension als Zeilenelement im Arbeitsbereich-Reporting angezeigt.)
 
-   ![Wert-Zusammenstellung mit ausgewähltem Behälterwert.](../assets/bucketing.png)
+   ![Wert-Bucket mit ausgewähltem Behälterwert](../assets/bucketing.png)
 
 ## 3. Verwenden Sie numerische Dimensionen als „Metriken“ in Flussdiagrammen {#numeric}
 
@@ -52,7 +52,7 @@ Eine numerische Dimension kann verwendet werden, um „Metriken“ in Ihre [!UIC
 1. Ziehen Sie auf der Registerkarte [Komponenten](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=de#configure-component-settings) der Datenansichten das Schemafeld [!UICONTROL Marketing-Kanäle] in den Bereich [!UICONTROL Metriken] unter [!UICONTROL Eingeschlossene Komponenten].
 2. In Arbeitsbereich-Berichten zeigt dieser Fluss [!UICONTROL Marketing-Kanäle], die in [!UICONTROL Bestellungen] fließen:
 
-![Marketing-Kanal-Fluss von E-Mails zu Ausstieg/Bestellungen.](../assets/flow.png)
+![Marketingkanal-Fluss von E-Mails zu Ausstiegen/Bestellungen.](../assets/flow.png)
 
 ## 4. Unterereignisfilterung durchführen {#sub-event}
 
@@ -83,7 +83,7 @@ Erstellen Sie dazu mithilfe der Funktion [!UICONTROL Duplizieren] oben rechts ei
 
 Vergessen Sie nicht, jeder Metrik einen neuen Namen zu geben, um die Unterschiede widerzuspiegeln, z. B. „Algorithmischer Umsatz“:
 
-![Algorithmischer Umsatz mit Zählerwerten, die unter &quot;Verhaltensliste&quot;ausgewählt sind.](../assets/algo-revenue.png)
+![Algorithmischer Umsatz mit unter der Liste &quot;Verhalten&quot;ausgewählten Count-Werten.](../assets/algo-revenue.png)
 
 Weitere Informationen zu anderen Datenansicht-Einstellungen finden Sie unter [Erstellen von Datenansichten](/help/data-views/create-dataview.md).
 Eine konzeptionelle Übersicht über die Datenansichten finden Sie unter [Übersicht über Datenansichten](/help/data-views/data-views.md).
@@ -102,7 +102,7 @@ Eine Dimension und zwei Metriken ermöglichen diese Berichte:
 
 * [Erstmalige Sitzungen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html#optional). Die Metrik Erstmalige Sitzungen wird als die definierte erste Sitzung einer Person im Berichtsfenster definiert.
 
-* [Rückkehrsitzungen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html#optional) Die Metrik &quot;Rückkehrsitzungen&quot;ist die Anzahl der Sitzungen, die keine Erstsitzung einer Person waren.—>
+* [Rückkehrsitzungen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html#optional) Die Metrik Rückkehrsitzungen ist die Anzahl der Sitzungen, die nicht die erste Sitzung einer Person waren.—>
 
 So greifen Sie auf diese Komponente zu:
 
@@ -133,5 +133,5 @@ Wir unterstützen derzeit Datumsangaben nach dem 1. Januar 1900 (mit Ausnahme de
 * Datum-Uhrzeit: Ein Einzelhandelsunternehmen erfasst die Uhrzeit für jeden seiner Einkäufe am Verkaufsort (POS Point-Of-Sale) im Geschäft. Sie möchten wissen, zu welchen Zeiten in einem bestimmten Monat am meisten eingekauft wird, und zwar nach [!UICONTROL Tageszeit].
 
 >[!MORELIKETHIS]
->[Datum und Uhrzeit in der Komponenteneinstellung &quot;Format&quot;](/help/data-views/component-settings/format.md)
+>[Datum und Datum/Uhrzeit in der Einstellung der Komponente &quot;Format&quot;](/help/data-views/component-settings/format.md)
 

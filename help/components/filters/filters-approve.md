@@ -1,6 +1,6 @@
 ---
 description: Sie können einen Workflow einrichten, der die Genehmigung von Filtern für verschiedene Anwendungsebenen, für bestimmte Abteilungen oder Gruppen umfasst und mit Berichtserstellungsrichtlinien übereinstimmt.
-title: Filter genehmigen
+title: Genehmigen von Filtern
 feature: Filters
 exl-id: 3892ef54-3f24-4c7a-868f-f566efaea400
 role: User

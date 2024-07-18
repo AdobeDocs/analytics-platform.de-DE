@@ -14,18 +14,18 @@ ht-degree: 61%
 
 # Verwenden von Marketing-Kanal-Dimensionen in Adobe Experience Platform
 
-Wenn Ihr Unternehmen die [Analytics-Quell-Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=de) Um Report Suite-Daten in Customer Journey Analytics zu importieren, können Sie eine Verbindung in Customer Journey Analytics konfigurieren, um Berichte zu Marketingkanal-Dimensionen zu erstellen.
+Wenn Ihr Unternehmen den [Analytics-Quell-Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=de) verwendet, um Report Suite-Daten in die Customer Journey Analytics zu importieren, können Sie eine Verbindung in der Customer Journey Analytics konfigurieren, um Berichte zu Marketingkanal-Dimensionen zu erstellen.
 
 ## Voraussetzungen
 
-* Report Suite-Daten müssen bereits mit der Variablen [Analytics-Quell-Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=de). Andere Datenquellen werden nicht unterstützt, da Marketing-Kanäle auf Verarbeitungsregeln in einer Analytics Report Suite angewiesen sind.
-* Verarbeitungsregeln für den Marketing-Kanal müssen bereits eingerichtet sein. Siehe [Verarbeitungsregeln für Marketing-Kanäle](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/marketing-channels/c-rules.html) im Adobe Analytics-Komponentenleitfaden.
+* Report Suite-Daten müssen bereits mit dem [Analytics-Quell-Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=de) in Adobe Experience Platform importiert worden sein. Andere Datenquellen werden nicht unterstützt, da Marketing-Kanäle auf Verarbeitungsregeln in einer Analytics Report Suite angewiesen sind.
+* Verarbeitungsregeln für den Marketing-Kanal müssen bereits eingerichtet sein. Siehe [Verarbeitungsregeln für Marketingkanäle](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/marketing-channels/c-rules.html?lang=de) im Adobe Analytics-Komponentenleitfaden.
 
 ## Marketing-Kanal: Schema-Elemente
 
 Nachdem Sie den Analytics-Quell-Connector in einer gewünschten Report Suite eingerichtet haben, wird ein XDM-Schema für Sie erstellt. Dieses Schema enthält alle Analytics-Dimensionen und -Metriken als Rohdaten. Diese Rohdaten enthalten keine Attribution oder Persistenz. Stattdessen durchläuft jedes Ereignis die Verarbeitungsregeln des Marketing-Kanals und zeichnet die erste Regel auf, die es erfüllt. Beim Erstellen einer Datenansicht in Customer Journey Analytics geben Sie Attribution und Persistenz an.
 
-1. [Verbindung erstellen](/help/connections/create-connection.md) , der einen Datensatz enthält, der auf dem Analytics-Quell-Connector basiert.
+1. [Erstellen Sie eine Verbindung](/help/connections/create-connection.md) , die einen Datensatz enthält, der auf dem Analytics-Quell-Connector basiert.
 2. [Erstellen Sie eine Datenansicht](/help/data-views/create-dataview.md) mit folgenden Dimensionen:
    * **`channel.typeAtSource`**: entspricht der [Marketing-Kanal](https://experienceleague.adobe.com/docs/analytics/components/dimensions/marketing-channel.html?lang=de)-Dimension.
    * **`channel._id`**: entspricht dem [Marketing-Kanal-Detail](https://experienceleague.adobe.com/docs/analytics/components/dimensions/marketing-detail.html?lang=de).
@@ -36,7 +36,7 @@ Die Dimensionen Ihres Marketing-Kanals stehen jetzt in Analysis Workspace zur Ve
 
 >[!NOTE]
 >
-> Der Analytics-Quell-Connector erfordert, dass beide `channel.typeAtSource` (Marketingkanal) und `channel._id` (Marketingkanal-Detail) ausgefüllt werden, sonst wird keines in das XDM ExperienceEvent übertragen. Wenn die Marketing-Kanaldetails in der Quell-Report Suite leer sind, wird dies zu einer leeren `channel._id` und der Analytics-Quell-Connector wird leer `channel.typeAtSource` sowie. Dies kann zu Berichtsunterschieden zwischen Adobe Analytics und Customer Journey Analytics führen.
+> Für den Analytics-Quell-Connector müssen sowohl `channel.typeAtSource` (Marketingkanal) als auch `channel._id` (Marketingkanal-Detail) ausgefüllt werden. Andernfalls wird keines von beiden in das XDM ExperienceEvent übertragen. Wenn die Marketing-Kanal-Details in der Quell-Report Suite leer sind, wird das Ergebnis leer `channel._id` und der Analytics-Quell-Connector wird ebenfalls `channel.typeAtSource` leer gelassen. Dies kann zu Berichtsunterschieden zwischen Adobe Analytics und Customer Journey Analytics führen.
 
 ## Unterschiede in der Verarbeitung und der Architektur
 
@@ -55,12 +55,12 @@ Die Marketing-Kanal-Einstellungen funktionieren bei Platform-Daten und Report Su
   ![Erste Seite des Besuchs](../assets/first-page-of-visit.png)
 
 * **Last Touch-Kanal überschreiben**: Diese Einstellung im Marketing-Kanal-Manager verhindert normalerweise, dass bestimmte Kanäle eine Last Touch-Kanal-Gutschrift erhalten. Platform ignoriert diese Einstellung, sodass breite Kanäle wie „Direkt“ oder „Intern“ Metriken möglicherweise auf unerwünschte Art zuordnen können. Adobe empfiehlt, Kanäle zu entfernen, bei denen „Last Touch-Kanal überschreiben“ deaktiviert ist.
-   * Sie können den Marketing-Kanal &quot;Direkt&quot;im Marketingkanal-Manager löschen und sich dann auf das Dimensionselement &quot;Kein Wert&quot;von Customer Journey Analytics verlassen. Sie können dieses Dimensionselement auch in „Direkt“ umbenennen oder das Dimensionselement beim Konfigurieren einer Datenansicht vollständig ausschließen.
+   * Sie können den Marketingkanal &quot;Direkt&quot;im Marketingkanal-Manager löschen und sich dann auf das Dimensionselement &quot;Kein Wert&quot;von Customer Journey Analytics für diesen Kanal verlassen. Sie können dieses Dimensionselement auch in „Direkt“ umbenennen oder das Dimensionselement beim Konfigurieren einer Datenansicht vollständig ausschließen.
    * Alternativ können Sie eine Marketing-Kanal-Classification erstellen und jeden Wert für sich selbst klassifizieren, mit Ausnahme der Kanäle, die Sie im Customer Journey Analytics ausschließen möchten. Sie können diese Klassifizierungsdimension dann beim Erstellen einer Datenansicht anstelle von `channel.typeAtSource` verwenden.
 
   ![Last Touch-Kanal überschreiben](../assets/override-last-touch-channel.png)
 
-* **Ablauf des Marketing-Kanals**: Diese Einstellung für den Interaktionszeitraum bestimmt den Zeitraum der Inaktivität, bevor eine Person einen neuen Erstkontakt-Kanal in den Report Suite-Daten erhalten kann. Platform verwendet eigene Attributionseinstellungen, sodass diese Einstellung beim Customer Journey Analytics vollständig ignoriert wird.
+* **Ablauf des Marketing-Kanals**: Diese Einstellung für den Interaktionszeitraum legt den Zeitraum der Inaktivität fest, bevor eine Person einen neuen Erstkontakt-Kanal in den Report Suite-Daten abrufen kann. Platform verwendet eigene Attributionseinstellungen, sodass diese Einstellung beim Customer Journey Analytics vollständig ignoriert wird.
 
   ![Marketing-Kanalablauf](../assets/marketing-channel-expiration.png)
 

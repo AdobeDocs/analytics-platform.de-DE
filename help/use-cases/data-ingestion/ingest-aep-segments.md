@@ -1,5 +1,5 @@
 ---
-title: Adobe Experience Platform-Zielgruppen in Customer Journey Analytics erfassen
+title: Aufnehmen von Adobe Experience Platform-Zielgruppen in Customer Journey Analytics
 description: Erläutert, wie Adobe Experience Platform-Zielgruppen für weitere Analysen in Customer Journey Analytics aufgenommen werden.
 solution: Customer Journey Analytics
 feature: Use Cases
@@ -8,13 +8,13 @@ role: Admin
 source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
 workflow-type: tm+mt
 source-wordcount: '968'
-ht-degree: 50%
+ht-degree: 51%
 
 ---
 
 # Adobe Experience Platform-Zielgruppen in Adobe Customer Journey Analytics erfassen
 
-In diesem Anwendungsbeispiel wird eine vorläufige, manuelle Methode zur Einbindung von Adobe Experience Platform (Adobe Experience Platform)-Zielgruppen in Customer Journey Analytics untersucht. Diese Zielgruppen wurden möglicherweise im Adobe Experience Platform Segment Builder, in Adobe Audience Manager oder anderen Tools erstellt und sind im Echtzeit-Kundenprofil (RTCP) gespeichert. Die Zielgruppen bestehen aus einer Reihe von Profil-IDs und den entsprechenden Attributen/Ereignissen/etc. und wir möchten sie zur Analyse in Customer Journey Analytics Workspace einbringen.
+In diesem Anwendungsbeispiel wird eine vorläufige, manuelle Methode zur Einbindung von Adobe Experience Platform (Adobe Experience Platform)-Zielgruppen in Customer Journey Analytics untersucht. Diese Zielgruppen wurden möglicherweise im Adobe Experience Platform Segment Builder, in Adobe Audience Manager oder anderen Tools erstellt und sind im Echtzeit-Kundenprofil (RTCP) gespeichert. Die Zielgruppen bestehen aus einer Reihe von Profil-IDs und den entsprechenden Attributen/Ereignissen/etc. und wir wollen sie zur Analyse in Customer Journey Analytics Workspace bringen.
 
 ## Voraussetzungen
 
@@ -32,7 +32,7 @@ Wahrscheinlich haben Sie bereits Zielgruppen im Echtzeit-Kundenprofil, die aus v
 
 ## Schritt 2: Erstellen Sie einen Profilvereinigungsdatensatz für den Export
 
-Um die Zielgruppe in einen Datensatz zu exportieren, der schließlich zu einer Verbindung in Customer Journey Analytics hinzugefügt werden kann, müssen Sie einen Datensatz erstellen, dessen Schema ein Profil ist [Vereinigungsschema](https://experienceleague.adobe.com/docs/experience-platform/profile/union-schemas/union-schema.html#understanding-union-schemas).
+Um die Zielgruppe in einen Datensatz zu exportieren, der schließlich zu einer Verbindung in Customer Journey Analytics hinzugefügt werden kann, müssen Sie einen Datensatz erstellen, dessen Schema ein Profil [Vereinigungsschema](https://experienceleague.adobe.com/docs/experience-platform/profile/union-schemas/union-schema.html#understanding-union-schemas) ist.
 
 Vereinigungsschemas bestehen aus mehreren Schemas, die dieselbe Klasse haben und für ein Profil aktiviert wurden. Im Vereinigungsschema können Sie eine Zusammenführung aller Felder sehen, die in Schemas enthalten sind, die dieselbe Klasse haben. Das Echtzeit-Kundenprofil verwendet das Vereinigungsschema, um eine ganzheitliche Ansicht jedes einzelnen Kunden zu erstellen.
 
@@ -44,7 +44,7 @@ Sie können einen Exportauftrag mit der Zielgruppen-ID Ihrer Wahl erstellen und 
 
 ## Schritt 4: Bearbeiten Sie die Exportausgabe
 
-Die Ergebnisse des Exportvorgangs müssen in einen separaten Profildatensatz umgewandelt werden, damit sie in Customer Journey Analytics aufgenommen werden können.  Diese Umwandlung kann mit [Adobe Experience Platform Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=de)oder ein anderes Transformationstool Ihrer Wahl. Für die Berichterstellung in Customer Journey Analytics benötigen wir nur die Profil-ID (die mit der Personen-ID in Customer Journey Analytics übereinstimmt) und eine oder mehrere Zielgruppen-ID(s).
+Die Ergebnisse des Exportvorgangs müssen in einen separaten Profildatensatz umgewandelt werden, damit sie in Customer Journey Analytics aufgenommen werden können.  Diese Umwandlung kann mit [Adobe Experience Platform Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=de) oder einem anderen Transformationstool Ihrer Wahl durchgeführt werden. Für die Berichterstellung in Customer Journey Analytics benötigen wir nur die Profil-ID (die mit der Personen-ID in Customer Journey Analytics übereinstimmt) und eine oder mehrere Zielgruppen-ID(s).
 
 Der standardmäßige Exportvorgang enthält jedoch zusätzliche Daten. Daher müssen Sie diese Ausgabe bearbeiten, um irrelevante Daten zu entfernen und einige Dinge umzustellen.  Außerdem müssen Sie zuerst ein Schema/einen Datensatz erstellen, bevor Sie die umgewandelten Daten hinzufügen.
 
@@ -91,4 +91,4 @@ Sie können jetzt Berichte zu `audienceMembershipId`, `audienceMembershipIdName`
    1. Führen Sie diesen Prozess für jede gewünschte Zielgruppe in Ihrer Zielgruppensammlung innerhalb des Echtzeit-Kundenprofis aus.
    1. Customer Journey Analytics unterstützt Arrays/Objekt-Arrays in Profildatensätzen. Es wird empfohlen, für audienceMembershipId oder audienceMembershipIdName ein [Array von Objekten](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/complex-data/object-arrays.html?lang=de) zu verwenden.
    1. Erstellen Sie in Ihrer Datenansicht eine neue Dimension mithilfe der Teilzeichenfolgenumwandlung des `audienceMembershipId`-Felds, um die Zeichenfolge mit kommagetrennten Werten in ein Array zu konvertieren. HINWEIS: Derzeit besteht für das Array eine Beschränkung von 10 Werten.
-   1. Sie können jetzt Berichte zu dieser neuen Dimension erstellen `audienceMembershipIds` in Customer Journey Analytics Workspace.
+   1. Sie können jetzt über diese neue Dimension `audienceMembershipIds` in Customer Journey Analytics Workspace berichten.

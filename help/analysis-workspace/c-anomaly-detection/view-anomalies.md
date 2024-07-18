@@ -23,7 +23,7 @@ Sie können Anomalien in einer Freiformtabelle für Zeitreihen anzeigen.
 
 1. Klicken Sie auf eine Stelle außerhalb des Einstellungsmenü, um die aktualisierte Tabelle anzuzeigen.
 
-   ![Eine Anomalieerkennungsmeldung, die angibt, dass sie 15 % unter den erwarteten Werten liegt.](assets/anomaly_detected.png)
+   ![Eine Benachrichtigung zur Anomalieerkennung, die angibt, dass 15 % unter den erwarteten Wert liegen.](assets/anomaly_detected.png)
 
 1. Anomalien werden in der Tabelle wie folgt angezeigt:
 
@@ -47,7 +47,7 @@ So stellen Sie Anomalien in einem Liniendiagramm dar:
 
 1. Klicken Sie auf eine Stelle außerhalb des Einstellungsmenü, um das aktualisierte Liniendiagramm anzuzeigen.
 
-   ![Ein Liniendiagramm mit einer anormal erkannten Meldung, die angibt, dass 15 % über dem erwarteten Wert liegen.](assets/anomaly_linechart.png)
+   ![Ein Liniendiagramm mit einer anormal erkannten Meldung, die angibt, dass 15 % über den erwarteten Wert liegen.](assets/anomaly_linechart.png)
 
    Anomalien werden im Liniendiagramm wie folgt dargestellt:
 

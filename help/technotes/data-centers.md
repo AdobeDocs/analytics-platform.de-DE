@@ -19,4 +19,4 @@ Nach der Bereitstellung bestimmen Kunden die Region, in der sich ihre Adobe Expe
 
 ![CJA-Rechenzentren](assets/data-centers.png)
 
-Siehe [Regionale Datenerfassung](https://experienceleague.adobe.com/en/docs/core-services/interface/data-collection/rdc) in der Dokumentation zu Adobe Experience Cloud .
+Weitere Informationen finden Sie unter [Regionale Datenerfassung](https://experienceleague.adobe.com/en/docs/core-services/interface/data-collection/rdc) in der Adobe Experience Cloud-Dokumentation.

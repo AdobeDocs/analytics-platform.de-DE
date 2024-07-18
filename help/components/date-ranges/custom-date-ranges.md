@@ -20,11 +20,11 @@ Informationen zum Hinzufügen vorhandener Datumsbereiche zu einem Projekt finden
 
 So erstellen Sie einen benutzerdefinierten Datumsbereich:
 
-1. Wählen Sie in Adobe Analytics **[!UICONTROL Komponenten]** > **[!UICONTROL Datumsbereiche]**.
+1. Wählen Sie in Adobe Analytics **[!UICONTROL Komponenten]** > **[!UICONTROL Datumsbereiche]** aus.
 
    ![Datumsbereichsseite](assets/date-ranges.png)
 
-1. Auswählen [!UICONTROL **Neuen Datumsbereich erstellen**].
+1. Wählen Sie [!UICONTROL **Neuen Datumsbereich erstellen**] aus.
 
 1. Geben Sie im Generator für Datumsbereiche die folgenden Informationen an:
 
@@ -34,7 +34,7 @@ So erstellen Sie einen benutzerdefinierten Datumsbereich:
    | [!UICONTROL **Beschreibung**] | Eine Beschreibung für den Datumsbereich. |
    | [!UICONTROL **Tags**] | Alle Tags, die Sie auf den Datumsbereich anwenden möchten. |
    | [!UICONTROL **Datumsbereich**] | Hier können Sie einen benutzerdefinierten Datumsbereich auswählen. Standardmäßig sind die letzten 30 Tage ausgewählt. |
-   | [!UICONTROL **Voreinstellung**] | Wählen Sie aus einer Liste vordefinierter Datumsbereiche aus, z. B. [!UICONTROL **Gestern**], [!UICONTROL **Letzte 7 Tage**], [!UICONTROL **Letzte 30 Tage**] usw. |
+   | [!UICONTROL **Vorgabe**] | Wählen Sie aus einer Liste vordefinierter Datumsbereiche aus, z. B. [!UICONTROL **Gestern**], [!UICONTROL **Letzte 7 Tage**], [!UICONTROL **Letzte 30 Tage**] usw. |
    | [!UICONTROL **Startzeit**] | Die Tageszeit, zu der der Datumsbereich beginnt. |
    | [!UICONTROL **Endzeit**] | Die Tageszeit, zu der der Datumsbereich endet. |
    | [!UICONTROL **Rollierende Datumswerte verwenden**] | Mithilfe rollierender Daten können Sie einen dynamischen Bericht generieren, der zum Zeitpunkt seiner Ausführung einen bestimmten Zeitraum voraus oder zurück umfasst. Wenn Sie zum Beispiel einen Bericht zu allen Bestellungen haben möchten, die im letzten Monat aufgegeben wurden (wobei sich „Letzter Monat“ auf das Feld „Erstellungsdatum“ bezieht), und diesen Bericht dann im Dezember ausführen, würden Ihnen alle Bestellungen angezeigt, die im November aufgegeben wurden. Führen Sie den gleichen Bericht im Januar aus, werden Ihnen die Bestellungen aus dem Dezember angezeigt.<ul><li>**[!UICONTROL Datumsvorschau]**: Gibt an, welchen Zeitraum der rollierende Kalender umfasst.</li><li>**[!UICONTROL Start]**: Sie können zwischen den folgenden Optionen wählen: „Aktueller Tag“, „Aktuelle Woche“, „Aktueller Monat“, „Aktuelles Quartal“ und „Aktuelles Jahr“.</li><li>**[!UICONTROL Ende]**: Sie können zwischen den folgenden Optionen wählen: „Aktueller Tag“, „Aktuelle Woche“, „Aktueller Monat“, „Aktuelles Quartal“ und „Aktuelles Jahr“.</li></ul><br>Standardmäßig ausgewählt. |

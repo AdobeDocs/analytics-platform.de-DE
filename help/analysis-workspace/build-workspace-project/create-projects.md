@@ -5,7 +5,7 @@ feature: Workspace Basics
 role: User
 exl-id: cc3d3ac9-c31f-4a8d-999c-78590512b57c
 source-git-commit: 53d367e51f739ebf324390ba4114ddb58138fac8
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '681'
 ht-degree: 100%
 
@@ -82,7 +82,7 @@ Im Folgenden finden Sie grundlegende Informationen zum Hinzufügen einer Kompone
 
 So fügen Sie einem Projekt in Analysis Workspace eine Komponente hinzu:
 
-1. Wählen Sie das Symbol **[!UICONTROL Komponenten]** in der linken Leiste aus.
+1. Wählen Sie in der linken Leiste das Symbol **[!UICONTROL Komponenten]** aus.
 
    ![Symbol „Ausgewählte Komponenten“ und Liste der verfügbaren Dimensionen.](assets/build-components.png)
 

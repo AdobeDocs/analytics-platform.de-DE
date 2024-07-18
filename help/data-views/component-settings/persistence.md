@@ -17,15 +17,15 @@ ht-degree: 80%
 
 [!UICONTROL Persistenz] ist die Fähigkeit, dass ein bestimmter Dimensionswert sich über das Ereignis hinaus auf eine Metrik beziehen kann. Dafür wird eine Kombination aus Zuordnung und Gültigkeit verwendet.
 
-![Datenansichten - Fenster mit den Persistenzoptionen](../assets/persistence.png)
+![Fenster &quot;Datenansichten&quot;, in dem die Persistenzoptionen hervorgehoben werden](../assets/persistence.png)
 
 * Mit **Zuordnung** können Sie festlegen, welcher Wert beibehalten wird, wenn mehrere Dimensionselemente gleichzeitig in einer Spalte beibehalten werden können.
 
   >[!NOTE]
   >
-  >Wenn Sie [Nicht standardmäßiges Attributionsmodell](/help/data-views/component-settings/attribution.md) für eine Metrik in einem Bericht festgelegt ist, ignoriert das Attributionsmodell die Zuordnung, die Sie für die Dimension für denselben Bericht festgelegt haben.
+  >Wenn Sie ein [ nicht standardmäßiges Attributionsmodell](/help/data-views/component-settings/attribution.md) für eine Metrik in einem Bericht festgelegt haben, ignoriert das Attributionsmodell die Zuordnung, die Sie für die Dimension für denselben Bericht festgelegt haben.
   >
-  >Wenn Sie jedoch eine [vollständiger Tabellenexport](/help/analysis-workspace/export/export-cloud.md) , die mehrere Dimensionen umfasst, behält die Attribution die auf jede Dimension angewendeten Zuordnungsmodelle bei.
+  >Bei einem [vollständigen Tabellenexport](/help/analysis-workspace/export/export-cloud.md) mit mehreren Dimensionen behält die Attribution jedoch die auf jede Dimension angewendeten Zuordnungsmodelle bei.
 
 * Mit **Gültigkeit** können Sie festlegen, wie lange ein Dimensionselement über das Ereignis hinaus bestehen bleibt, für das es festgelegt ist.
 
@@ -86,7 +86,7 @@ Details zu den verfügbaren Gültigkeitseinstellungen.
 
 Eine Dropdown-Liste, mit der Sie die Persistenz eines Dimensionswerts an Dimensionswerte in einer anderen Dimension binden können. Gültige Optionen sind andere Dimensionen, die in der Datenansicht enthalten sind.
 
-Siehe [Verwenden von Bindungsdimensionen und Metriken im Customer Journey Analytics](../../use-cases/data-views/binding-dimensions-metrics.md) Beispiele für die effektive Verwendung von Bindungsdimensionen.
+Beispiele zur effektiven Verwendung von Bindungsdimensionen finden Sie unter [Verwenden von Bindungsdimensionen und -metriken in Customer Journey Analytics](../../use-cases/data-views/binding-dimensions-metrics.md).
 
 >[!VIDEO](https://video.tv.adobe.com/v/342694/?quality=12)
 
@@ -96,4 +96,4 @@ Eine Dropdown-Liste, in der Sie eine Metrik auswählen können, die als bindende
 
 Diese Einstellung wird nur angezeigt, wenn die Binding-Dimension im Objekt-Array niedriger ist als die Komponente. Wenn in einem Ereignis eine Bindungsmetrik vorhanden ist, werden Dimensionswerte von der Ereignisebene auf die untere Schemaebene der Bindungsdimension kopiert.
 
-Siehe das zweite Beispiel unter [Verwenden von Bindungsdimensionen und Metriken im Customer Journey Analytics](../../use-cases/data-views/binding-dimensions-metrics.md) für weitere Informationen zur effektiven Verwendung von Bindungsmetriken.
+Weitere Informationen zur effektiven Verwendung von Bindungsmetriken finden Sie im zweiten Beispiel unter [Verwenden von Bindungsdimensionen und Metriken in Customer Journey Analytics](../../use-cases/data-views/binding-dimensions-metrics.md) .

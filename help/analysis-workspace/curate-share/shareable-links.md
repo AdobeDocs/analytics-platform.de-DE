@@ -8,25 +8,25 @@ role: User
 source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
 source-wordcount: '374'
-ht-degree: 55%
+ht-degree: 79%
 
 ---
 
 # Erstellen von freigebbaren Links
 
-Analysis Workspace bietet viele Möglichkeiten, ein Projekt für Ihre Benutzer freizugeben, einschließlich der Möglichkeit, einen Link zu einem Projekt oder einem bestimmten Teil eines Projekts absurufen. Bei einigen Linktypen muss sich der Empfänger bei Adobe Analytics anmelden, bevor er auf das Projekt zugreift, bei anderen dagegen nicht.
+Analysis Workspace bietet viele Möglichkeiten, ein Projekt für Ihre Benutzer freizugeben, einschließlich der Möglichkeit, einen Link zu einem Projekt oder einem bestimmten Teil eines Projekts absurufen. Bei einigen Link-Typen muss sich die Person bei Adobe Analytics anmelden, bevor sie auf das Projekt zugreifen kann, bei anderen hingegen nicht.
 
-## Projekt-Link zur Freigabe für andere Workspace-Benutzer abrufen {#project-link}
+## Abrufen eines Projekt-Links zur Freigabe für andere Workspace-Benutzende {#project-link}
 
-Um einen Link zu einem Projekt freizugeben, gehen Sie zu dem Projekt, das Sie freigeben möchten, und wählen Sie dann gehen aus [!UICONTROL **Freigeben**] > [!UICONTROL **Projekt-Link abrufen**] (oder **Freigeben**] > [!UICONTROL **Freigeben für Workspace-Benutzer**] > [!UICONTROL **Über Link freigeben**). Benutzer, für die Sie den Link freigeben, müssen sich anmelden.
+Um einen Link zu einem Projekt freizugeben, gehen Sie zum Projekt, das Sie freigeben möchten, und wählen Sie dann &quot;[!UICONTROL **Freigabe**]&quot;> &quot;[!UICONTROL **Projekt-Link abrufen**]&quot;(oder &quot;**Freigabe**&quot;> &quot;[!UICONTROL **Mit Workspace-Benutzern teilen**]&quot;> &quot;[!UICONTROL **Über Link freigeben**&quot;). Benutzende, für die Sie den Link freigeben, müssen sich anmelden.
 
-Wenn dem Empfänger des Links kein [Projektrolle](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/share-projects.html?lang=de), erhalten Administratoren **[!UICONTROL Original bearbeiten]** und Nicht-Administratoren erhalten **[!UICONTROL Kopie bearbeiten]** Erlebnisse.
+Wenn dem Empfänger bzw. der Empfängerin des Links keine [Projektrolle](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/share-projects.html?lang=de) zugewiesen wurde, erhalten Admins das Erlebnis **[!UICONTROL Kann bearbeiten]**, und Nicht-Admins erhalten **[!UICONTROL Kann duplizieren]**.
 
-## Einen schreibgeschützten Link zur Freigabe für alle abrufen
+## Abrufen eines schreibgeschützten Links zur Freigabe für alle
 
 Sie können einen schreibgeschützten Link zu Analysis Workspace-Projekten für Personen freigeben, die keinen Zugriff auf Customer Journey Analytics haben.
 
-Weitere Informationen finden Sie unter &quot;Freigeben eines Projekts für andere (keine Anmeldung erforderlich)&quot;im Artikel [Freigeben von Projekten](/help/analysis-workspace/curate-share/share-projects.md).
+Weitere Informationen finden Sie unter „Projekt für alle freigeben (keine Anmeldung erforderlich)“ im Artikel [Freigeben von Projekten](/help/analysis-workspace/curate-share/share-projects.md).
 
 ## Bedienfeld- oder Visualisierungslink abrufen {#panel-link}
 
@@ -37,7 +37,7 @@ Sie können auch einen Link zu einem bestimmten Teil eines Projekts freigeben, z
 
 [Sehen Sie sich das Video an](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/visualizations/intra-linking-in-analysis-workspace.html?lang=de), wie Sie Links erstellen und diese verwenden, um Empfänger zu bestimmten Teilen Ihres Projekts zu führen.
 
-![Das Dropdown-Menü, nachdem Sie mit der rechten Maustaste auf die Kopfzeile geklickt haben, wobei der Link Visualisierung abrufen hervorgehoben ist.](assets/get-viz-link.png)
+![Das Dropdown-Menü, nachdem Sie mit der rechten Maustaste auf die Kopfzeile geklickt haben, wobei der Link &quot;Visualisierung abrufen&quot;hervorgehoben ist.](assets/get-viz-link.png)
 
 ## Links in Inhaltsverzeichnissen verwenden {#TOC}
 

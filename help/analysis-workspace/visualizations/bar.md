@@ -29,4 +29,4 @@ Diese Visualisierung entspricht einem Balkendiagramm, aber die Serienbalken sind
 
 Mit der neuen Einstellung für gestapelte Balkendiagramme erhalten Sie eine zu „100 % gestapelte“ Visualisierung.
 
-![Ein gestapeltes Balkendiagramm von 100 %.](assets/stacked_100_percent.png)
+![ Ein gestapeltes Balkendiagramm mit 100 %.](assets/stacked_100_percent.png)

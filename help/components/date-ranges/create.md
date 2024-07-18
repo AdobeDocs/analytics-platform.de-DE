@@ -39,7 +39,7 @@ Wenn Sie im modalen Fenster auf den Datumsbereich klicken, haben Sie mehrere Opt
 
 * **Kalender**: Wählen Sie das Anfangs- und das Enddatum aus.
 * **Rollierende Datumswerte verwenden**: Aktivieren Sie dieses Kontrollkästchen, wenn Sie möchten, dass sich der Datumsbereich im Zeitverlauf ändert. Aktivieren Sie dieses Kontrollkästchen nicht, wenn Ihr Datumsbereich statisch bleiben soll.
-* **Vorgabe auswählen**: Verwenden Sie diese Dropdown-Auswahl, wenn Sie einen benutzerdefinierten Datumsbereich wünschen, der auf einem Bereich basiert, den Adobe standardmäßig anbietet. Wenn Sie eine Voreinstellung auswählen, können Sie den Datumsbereich entsprechend Ihren Anforderungen weiter anpassen. Die von Adobe angebotenen Voreinstellungen werden dadurch nicht beeinflusst.
+* **Vorgabe auswählen**: Verwenden Sie diese Dropdownauswahl, wenn Sie einen benutzerdefinierten Datumsbereich wünschen, der auf einem Bereich basiert, den Adobe standardmäßig anbietet. Wenn Sie eine Voreinstellung auswählen, können Sie den Datumsbereich entsprechend Ihren Anforderungen weiter anpassen. Die von Adobe angebotenen Voreinstellungen werden dadurch nicht beeinflusst.
 
 ## Rollierende Datumsbereiche
 

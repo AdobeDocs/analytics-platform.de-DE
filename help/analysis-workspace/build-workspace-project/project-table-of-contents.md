@@ -26,10 +26,10 @@ So zeigen Sie das Inhaltsverzeichnis in einem Projekt an:
 
 1. Navigieren Sie in Analysis Workspace zu dem Projekt, in dem das Inhaltsverzeichnis angezeigt werden soll.
 
-1. Wählen Sie im linken Navigationsmenü das Inhaltsverzeichnissymbol aus. ![Token-Symbol](assets/toc-icon.png).
+1. Wählen Sie im linken Navigationsmenü das Inhaltsverzeichnissymbol ![Token-Symbol](assets/toc-icon.png) aus.
 
    Das Inhaltsverzeichnis für das Projekt wird angezeigt und jedes Bedienfeld wird standardmäßig erweitert.
 
-   ![Projekt-TOC erweitert](assets/project-toc-expanded.png)
+   ![Projekt-Inhaltsverzeichnis erweitert](assets/project-toc-expanded.png)
 
 1. Wählen Sie im Inhaltsverzeichnis eine Visualisierung aus, die innerhalb des Projekts angezeigt werden soll.

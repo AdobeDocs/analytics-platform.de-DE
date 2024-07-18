@@ -19,10 +19,10 @@ Bei der Venn-Visualisierung können Sie bis zu drei Filter (aus Komponenten) un
 
 Sie können dann den Mauszeiger über die Filter bewegen, um mehr Details z. B. zu Prozentzahlen anzuzeigen.
 
-![Venn-Visualisierung mit erweiterten Informationen zum Filter für Herbstteilnehmende im Outdoor-Bereich 2015.](assets/venn_hover.png)
+![Venn-Visualisierung mit erweiterten Informationen über den Filter für Herbstteilnehmende im Outdoor-Bereich 2015.](assets/venn_hover.png)
 
 Um das Venn-Diagramm in eine Freiformtabelle umzuwandeln, klicken Sie auf den farbigen Punkt neben der Überschrift **[!UICONTROL Venn]** und wählen Sie **[!UICONTROL Data Sources verwalten]** > **[!UICONTROL Verfügbare Data Sources]** > **[!UICONTROL Freiformtabelle]** aus.
 
 Um das Venn-Diagramm zu normalisieren (die Größeninformationen zu entfernen), klicken Sie auf das Symbol für seine Visualisierungseinstellungen und wählen Sie **[!UICONTROL Normalisierung aus]**.
 
-![Option &quot;Visualisierungseinstellungen&quot;für den Visualisierungstyp: Venn-Diagramm.](assets/normalization.png)
+![Option für Visualisierungseinstellungen für den Visualisierungstyp: Venn-Diagramm.](assets/normalization.png)

@@ -1,6 +1,6 @@
 ---
 title: Verwenden abgeleiteter Felder für Berichte zu Zielen
-description: Erfahren Sie, wie Sie abgeleitete Felder verwenden können, um über Ziele (Ziele) in Ihren Workspace-Projekten zu berichten.
+description: Erfahren Sie, wie Sie abgeleitete Felder verwenden können, um Berichte über Ziele (Ziele) in Ihren Workspace-Projekten zu erstellen.
 solution: Customer Journey Analytics
 feature: Use Cases
 exl-id: 5cd838f7-e394-4a67-9d2e-e1d08a864ca0
@@ -8,7 +8,7 @@ role: User
 source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
 workflow-type: tm+mt
 source-wordcount: '429'
-ht-degree: 2%
+ht-degree: 6%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 2%
 
 In diesem Anwendungsbeispiel wird beschrieben, wie Sie mithilfe der Leistungsfähigkeit abgeleiteter Felder Ziele für eine bestimmte Dimension festlegen und diese Ziele dann in Ihrem Workspace-Projekt verwenden können.
 
-Wenn Sie mit abgeleiteten Feldern nicht vertraut sind, lesen Sie den Abschnitt [Tutorial](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/data-views/derived-fields-in-cja.html) und [Dokumentation](../data-views/derived-fields/derived-fields.md) für eine Einführung.
+Wenn Sie nicht mit abgeleiteten Feldern vertraut sind, finden Sie eine Einführung in das [Tutorial](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/data-views/derived-fields-in-cja.html) und die [Dokumentation](../data-views/derived-fields/derived-fields.md) .
 
 
 ## Ziele definieren
@@ -30,7 +30,7 @@ Sie möchten explizit Ziele für Ihre Bestellungen von Geschenkgutscheinen für 
 
 1. Erstellen Sie ein neues abgeleitetes Feld mit dem Namen `Monthly Gift Certificate Orders Goal (Incremental)`.
 
-1. Legen Sie für jeden Monat mithilfe einer REGEL &quot;CASE WHEN&quot; statische Werte fest, indem Sie eine **[!UICONTROL Benutzerdefinierter numerischer Wert]**. Siehe Regel &quot;Monatliche Produktziele&quot; unten.
+1. Legen Sie für jeden Monat statische Werte mithilfe einer FALL-WENN-REGEL fest, indem Sie einen **[!UICONTROL benutzerdefinierten numerischen Wert]** festlegen. Siehe Regel &quot;Monatliche Produktziele&quot; unten.
 
    ![Monatliche Produktziele](assets/goals-derived-field-product-goals-1.png)
 
@@ -39,13 +39,13 @@ Sie möchten explizit Ziele für Ihre Bestellungen von Geschenkgutscheinen für 
 
 Sie möchten für jeden Ihrer Marketing-Kanäle ein monatliches Umsatzziel festlegen. Gehen Sie folgendermaßen vor:
 
-1. Erstellen Sie ein neues abgeleitetes Feld mithilfe der [Vorlage für Marketing-Kanäle](/help/data-views/derived-fields/derived-fields.md#marketing-channels) mit dem Namen `Monthly Marketing Channel Revenue Goal (Incremental)`.
+1. Erstellen Sie ein neues abgeleitetes Feld mithilfe der Funktionsvorlage [Marketing-Kanäle](/help/data-views/derived-fields/derived-fields.md#marketing-channels) mit dem Namen `Monthly Marketing Channel Revenue Goal (Incremental)`.
 
 1. Definieren Sie alle Regeln, um jeden Marketing-Kanal anhand einer Kombination aus URL-PARSE und CASE WHEN-Regeln ordnungsgemäß zu identifizieren. Zum Beispiel:
 
-   ![Definition von Regeln für das abgeleitete Marketing-Kanal-Feld](assets/goals-derived-field-marketing-channel-1.png)
+   ![Definition der Regeln für das abgeleitete Marketing-Kanal-Feld](assets/goals-derived-field-marketing-channel-1.png)
 
-1. Setzen Sie in einer endgültigen FALL WH-Regel explizit statische Werte, die monatliche Umsatzziele darstellen, für die spezifischen Marketing-Kanäle ein, indem Sie eine **[!UICONTROL Benutzerdefinierter numerischer Wert]**. Siehe [!DNL Monthly Goal] Regel unten.
+1. Setzen Sie in einer endgültigen FALL-WHEN-Regel explizit statische Werte, die die monatlichen Umsatzziele darstellen, für die spezifischen Marketing-Kanäle ein, indem Sie einen **[!UICONTROL benutzerdefinierten numerischen Wert]** festlegen. Siehe die Regel [!DNL Monthly Goal] unten.
 
    ![Monatliche Ziele](assets/goals-derived-field-marketing-channel-2.png)
 
@@ -57,11 +57,11 @@ Um Ziele in Ihrem Workspace-Projekt zu verwenden, verwenden Sie die Funktion fü
 
 ### Ziele für monatliche Geschenkzertifikate
 
-1. Erstellen Sie ein berechnetes Metrikfeld mit dem Namen `Monthly Gift Certificate Orders Goal`, definiert als:
+1. Erstellen Sie ein berechnetes Metrikfeld mit dem Namen `Monthly Gift Certificate Orders Goal`, das folgendermaßen definiert ist:
 
-   ![Bestellziel](assets/calculated-metric-ordersgoals.png)
+   ![Bestellungsziel](assets/calculated-metric-ordersgoals.png)
 
-1. Sie können zusätzliche berechnete Felder erstellen, beispielsweise `% of Monthly Gift Certificate Orders Goal`, um den tatsächlichen Fortschritt in Bezug auf Ziele anzuzeigen, beispielsweise:
+1. Sie können zusätzliche berechnete Felder erstellen, z. B. `% of Monthly Gift Certificate Orders Goal`, um den tatsächlichen Fortschritt in Bezug auf Ziele anzuzeigen, z. B.:
 
    ![Bestellzielprozentsatz](assets/calculated-metric-ordersgoalspercent.png)
 
@@ -72,13 +72,13 @@ Sie können diese berechneten Metriken verwenden, um über den Fortschritt in Fr
 
 ### Umsatzziele für Marketing-Kanäle
 
-1. Erstellen Sie ein berechnetes Metrikfeld mit dem Namen `Marketing Channel Revenue Goal`, definiert als:
+1. Erstellen Sie ein berechnetes Metrikfeld mit dem Namen `Marketing Channel Revenue Goal`, das folgendermaßen definiert ist:
 
    ![Umsatzziel](assets/calculated-metric-revenuegoals.png)
 
-1. Sie können zusätzliche berechnete Felder erstellen, beispielsweise `% of Marketing Channel Revenue Goal`, um den tatsächlichen Fortschritt in Bezug auf Ziele anzuzeigen, beispielsweise:
+1. Sie können zusätzliche berechnete Felder erstellen, z. B. `% of Marketing Channel Revenue Goal`, um den tatsächlichen Fortschritt in Bezug auf Ziele anzuzeigen, z. B.:
 
-   ![Prozentsatz des Umsatzziels](assets/calculated-metric-revenuegoalspercent.png)
+   ![Umsatzzielprozentsatz](assets/calculated-metric-revenuegoalspercent.png)
 
 Sie können diese berechneten Metriken verwenden, um über den Fortschritt in Freiformtabellen und Visualisierungen zu berichten. Zum Beispiel:
 

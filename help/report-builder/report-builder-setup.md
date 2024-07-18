@@ -88,7 +88,7 @@ Nachdem Sie das Report Builder for Excel-Add-in für Ihr Betriebssystem oder Ihr
 
 1. Klicken Sie in der Adobe Report Builder-Symbolleiste auf **Anmelden**.
 
-   ![Klicken Sie auf die Schaltfläche Report Builder-Anmeldung .](./assets/rb_login.png)
+   ![Klicken Sie auf die Schaltfläche zum Anmelden des Report Builders.](./assets/rb_login.png)
 
 1. Geben Sie Ihre Adobe Experience ID-Kontoinformationen ein. Ihre Kontoinformationen sollten mit Ihren Customer Journey Analytics-Anmeldedaten übereinstimmen.
 
@@ -114,6 +114,6 @@ Sie können sich über das Benutzerprofil von Report Builder abmelden.
 
 1. Klicken Sie auf das Avatar-Symbol, um Ihr Benutzerprofil anzuzeigen.
 
-   ![Ihr Benutzerprofilavatar und die Schaltfläche Abmelden .](./assets/image6.png)
+   ![Ihr Benutzerprofilavatar und die Schaltfläche &quot;Abmelden&quot;.](./assets/image6.png)
 
 1. Klicken Sie auf **Abmelden**.

@@ -10,7 +10,7 @@ role: User
 source-git-commit: 9c60c00818e82a6ca891ab9d90260922437c6cca
 workflow-type: tm+mt
 source-wordcount: '793'
-ht-degree: 9%
+ht-degree: 11%
 
 ---
 
@@ -20,7 +20,7 @@ In diesem Artikel wird beschrieben, wie Sie B2B-Daten auf Profil-(Personen-)Eben
 
 ## Verbindung
 
-Definieren Sie Ihre Verbindung, um alle relevanten B2B-Datensätze aus Experience Platform einzuschließen. Stellen Sie sicher, dass Sie alle relevanten Lookup-Datensätze einschließen und transformieren, die für ein typisches B2B-personenbasiertes Berichtsszenario erforderlich sind. Siehe [B2B-Lookup-Datensätze transformieren](/help/connections/transform-datasets-b2b-lookups.md) für weitere Informationen.
+Definieren Sie Ihre Verbindung, um alle relevanten B2B-Datensätze aus Experience Platform einzuschließen. Stellen Sie sicher, dass Sie alle relevanten Lookup-Datensätze einschließen und transformieren, die für ein typisches B2B-personenbasiertes Berichtsszenario erforderlich sind. Weitere Informationen finden Sie unter [Transformieren von B2B-Lookup-Datensätzen](/help/connections/transform-datasets-b2b-lookups.md) .
 
 Datensätze, die Sie Ihrer Verbindung hinzufügen können:
 
@@ -40,13 +40,13 @@ Datensätze, die Sie Ihrer Verbindung hinzufügen können:
 -->
 
 
-Die Beziehung zwischen den Lookup-Schemas, dem Profilschema und dem Ereignisschema wird in der B2B-Einrichtung innerhalb von Experience Platform definiert. Siehe Schemas in [Real-time Customer Data Platform B2B Edition](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/schemas/b2b.html) und [Definieren einer 1:1-Beziehung zwischen zwei Schemas in Real-time Customer Data Platform B2B Edition](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/relationship-b2b.html) für weitere Details.
+Die Beziehung zwischen den Lookup-Schemas, dem Profilschema und dem Ereignisschema wird in der B2B-Einrichtung innerhalb von Experience Platform definiert. Weitere Informationen finden Sie unter Schemas in [Real-time Customer Data Platform B2B Edition](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/schemas/b2b.html) und unter [Definieren einer n:1-Beziehung zwischen zwei Schemas in Real-time Customer Data Platform B2B Edition](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/relationship-b2b.html) .
 
 ![Beziehung zwischen B2B-Schemata](assets/classes.png)
 
-Für jeden Lookup-Datensatz, den Sie Ihrer Verbindung hinzufügen, müssen Sie die Beziehung zu einem Ereignis-Datensatz explizit definieren, indem Sie **[!UICONTROL Schlüssel]** und **[!UICONTROL Übereinstimmungsschlüssel]** im **[!UICONTROL Datensatz bearbeiten]** angezeigt. Zum Beispiel:
+Für jeden Lookup-Datensatz, den Sie Ihrer Verbindung hinzufügen, müssen Sie die Beziehung zu einem Ereignis-Datensatz explizit mit **[!UICONTROL Schlüssel]** und **[!UICONTROL Übereinstimmungsschlüssel]** im Dialogfeld **[!UICONTROL Datensatz bearbeiten]** definieren. Zum Beispiel:
 
-![Schlüssel - Übereinstimmung mit Schlüssel](assets/key-matchingkey.png)
+![Schlüssel - Abgleichschlüssel](assets/key-matchingkey.png)
 
 Es werden explizit vier Schemas verwendet, um das Personen-Schema mit anderen relevanten Schemas zu verbinden: Konto, Chancen, Kampagne und Marketingliste. Diese Schemas basieren auf den folgenden Schemaklasse:
 
@@ -55,9 +55,9 @@ Es werden explizit vier Schemas verwendet, um das Personen-Schema mit anderen re
 * XDM Business Marketing List Members
 * XDM Business Campaign Members
 
-Für jeden Lookup-Datensatz aktivieren Sie für ein Schema, das auf einer solchen Schemaklasse basiert, auch **[!UICONTROL Datensatz transformieren]** , um sicherzustellen, dass die Daten für personenbasierte Suchen umgewandelt werden. Siehe [Datensätze für B2B-Suchen transformieren](/help/connections/transform-datasets-b2b-lookups.md) für weitere Informationen.
+Für jeden Lookup-Datensatz aktivieren Sie für ein Schema, das auf einer solchen Schemaklasse basiert, außerdem **[!UICONTROL Datensatz transformieren]** , um sicherzustellen, dass die Daten für personenbasierte Suchen umgewandelt werden. Weitere Informationen finden Sie unter [Umwandeln von Datensätzen für B2B-Suchen](/help/connections/transform-datasets-b2b-lookups.md).
 
-Die nachstehende Tabelle bietet eine Beispielübersicht über die [!UICONTROL Personen-ID], [!UICONTROL Schlüssel], und [!UICONTROL Übereinstimmungsschlüssel] -Werte für jeden Datensatz.
+Die nachstehende Tabelle bietet eine Beispielübersicht der Werte [!UICONTROL Personen-ID], [!UICONTROL Schlüssel] und [!UICONTROL Schlüssel-Übereinstimmung] für jeden Datensatz.
 
 
 | Datensatz | Personen-ID | Schlüssel | Übereinstimmungsschlüssel (im Ereignis-Datensatz) |
@@ -71,7 +71,7 @@ Die nachstehende Tabelle bietet eine Beispielübersicht über die [!UICONTROL Pe
 
 {style="table-layout:auto"}
 
-Siehe [Hinzufügen und Konfigurieren von Datensätzen](../../connections/create-connection.md) Weitere Informationen zum Konfigurieren von Einstellungen für einen Datensatz.
+Weitere Informationen zum Konfigurieren von Einstellungen für einen Datensatz finden Sie unter [Hinzufügen und Konfigurieren von Datensätzen](../../connections/create-connection.md) .
 
 
 ## Datenansicht

@@ -14,10 +14,10 @@ ht-degree: 29%
 
 Die Kennzeichnung berechneter Metriken als Favoriten bietet eine weitere Möglichkeit, sie zur einfachen Verwendung zu organisieren.
 
-1. Wählen Sie unter Customer Journey Analytics die **[!UICONTROL Komponenten]** Registerkarte und wählen Sie **[!UICONTROL Berechnete Metriken]**.
+1. Wählen Sie unter Customer Journey Analytics die Registerkarte **[!UICONTROL Komponenten]** und dann **[!UICONTROL Berechnete Metriken]** aus.
 
 1. Überprüfen Sie im Manager für berechnete Metriken den Stern neben einer beliebigen berechneten Metrik, die Sie als Favoriten markieren möchten. Der Stern wird daraufhin gelb angezeigt:
 
-   ![Gelber Stern, der Besucher von Bing anzeigt.](assets/favorites.png)
+   ![ Gelber Stern, der Besucher von Bing anzeigt.](assets/favorites.png)
 
 1. Sie können unter **[!UICONTROL Filter]** > **[!UICONTROL Weitere Filter]** > **[!UICONTROL Favoriten]** nach Favoriten filtern.

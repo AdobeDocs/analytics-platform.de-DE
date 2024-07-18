@@ -24,7 +24,7 @@ Beim Verwalten von Datenquellen können Sie die Datenquelle anzeigen oder die Au
 1. Wählen Sie in der Datentabelle die Zellen (Datenquelle) aus, die Sie der Visualisierung zuordnen möchten.
 1. Klicken Sie in der Visualisierung auf den Punkt neben dem Titel, um das Dialogfeld **[!UICONTROL Datenquelle]** zu öffnen. Wählen Sie **[!UICONTROL Datenquelle anzeigen]** oder **[!UICONTROL Auswahl sperren]** aus.
 
-   ![Das Dialogfeld &quot;Dadta Source&quot;mit den im nächsten Abschnitt beschriebenen Optionen.](assets/manage-data-source.png)
+   ![Das Dialogfeld für die Option &quot;Dadta Source&quot;mit den im nächsten Abschnitt beschriebenen Optionen.](assets/manage-data-source.png)
 
    Beim Synchronisieren einer Visualisierung mit einer Tabellenzelle wird eine neue (ausgeblendete) Tabelle erstellt und die synchronisierte Visualisierung mit dieser Tabelle farblich codiert.
 
@@ -46,4 +46,4 @@ Diese Architektur unterscheidet sich von der vorherigen darin, dass Analysis Wor
   ![Speicherort der Datenquelle mit zusätzlichen Visualisierungen, die aus mehreren Zellen stammen](assets/data-source3.png)>
 * Sie können sehen, ob es mit einer Freiform- oder Kohortentabelle verknüpfte Visualisierungen gibt, indem Sie auf den Punkt oben links klicken (Datenquelleneinstellungen). Durch Bewegen der Maus über die betreffende Stelle wird die verbundene Visualisierung hervorgehoben. Sie haben auch die Möglichkeit, durch Klicken mit der Maus dorthin zu gelangen.
 
-  ![Datenquelleneinstellungen, die eine verknüpfte Visualisierung für Top-Seitenansichten hervorheben.](assets/linked-visualizations.png)>
+  ![Daten-Source-Einstellungen, die eine verknüpfte Visualisierung für Top-Seitenansichten hervorheben.](assets/linked-visualizations.png)>

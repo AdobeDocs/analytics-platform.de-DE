@@ -32,7 +32,7 @@ Die Informationen auf dieser Seite decken Schritt 3 des Aktualisierungsprozesses
 +++
 
 
-Nach [Aktualisierungspfad auswählen](/help/getting-started/cja-upgrade/cja-upgrade-path.md) Wenn dies für Ihr Unternehmen am besten ist, können Sie mit dem Senden von Daten an Adobe Experience Platform beginnen, um sie in Customer Journey Analytics verfügbar zu machen.
+Nachdem Sie [den Aktualisierungspfad](/help/getting-started/cja-upgrade/cja-upgrade-path.md) ausgewählt haben, der für Ihr Unternehmen am besten geeignet ist, können Sie mit dem Senden von Daten an Adobe Experience Platform beginnen, um sie auf Customer Journey Analytics verfügbar zu machen.
 
 Der Prozess zum Senden von Daten an Experience Platform für jeden Aktualisierungspfad ist unten dargestellt. Ausführliche Konfigurationsinformationen finden Sie über die Links in der Tabelle.
 

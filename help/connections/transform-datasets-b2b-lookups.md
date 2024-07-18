@@ -18,10 +18,10 @@ Um personenbasierte Suchen nach B2B-Daten (einschließlich Konten, Chancen, Mark
 
 Diese Umwandlung ist nur für Datensätze mit Daten für B2B-Lookup-Schemas verfügbar, die auf den folgenden Klassen basieren:
 
-* [Personenbeziehung zwischen XDM-Geschäftskonto](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/classes/b2b/business-account-person-relation)
-* [XDM Business Opportunity-Personenbeziehung](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/classes/b2b/business-opportunity-person-relation)
-* [XDM Business Marketing List-Mitglieder](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/classes/b2b/business-marketing-list-members)
-* [XDM Business Campaign-Mitglieder](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/classes/b2b/business-campaign-members)
+* [XDM Business Account Person Relation](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/classes/b2b/business-account-person-relation)
+* [XDM Business Opportunity Person Relation](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/classes/b2b/business-opportunity-person-relation)
+* [XDM Business Marketing List Members](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/classes/b2b/business-marketing-list-members)
+* [XDM-Geschäftskampagnenmitglieder](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/classes/b2b/business-campaign-members)
 
 >[!NOTE]
 >
@@ -30,13 +30,13 @@ Diese Umwandlung ist nur für Datensätze mit Daten für B2B-Lookup-Schemas verf
 
 So aktivieren Sie die Transformation für einen solchen Datensatz:
 
-![Datensatz umwandeln aktivieren](assets/transform-dataset.gif)
+![Transform dataset aktivieren](assets/transform-dataset.gif)
 
-* Stellen Sie sicher, dass Sie die richtige Kennung für **[!UICONTROL Schlüssel]** und **[!UICONTROL Übereinstimmungsschlüssel]**, beispielsweise `personKey.sourceKey`.
+* Stellen Sie sicher, dass Sie die richtige Kennung für **[!UICONTROL Schlüssel]** und **[!UICONTROL Übereinstimmungsschlüssel]** auswählen, z. B. `personKey.sourceKey`.
 
 * Wählen Sie die Optionen zum Importieren neuer Daten und zur Aufstockung des Datensatzes aus.
 
-* Auswählen **[!UICONTROL Datensatz für B2B-Suchen transformieren]**.
+* Wählen Sie **[!UICONTROL Datensatz für B2B-Suchen transformieren]** aus.
 
   Mit dieser Option wird der Datensatz so transformiert, dass er für personenbasierte Suchen in B2B-Szenarien verwendet werden kann.
 
@@ -57,4 +57,4 @@ Nicht transformierte Datensätze können für Schemas, die auf den oben genannte
 
 Durch die Umwandlung wird der Datensatz jeder der vier Schemaklassen geändert (orange in der Abbildung unten), sodass für jede Personenkennung ein (Objekt-)Array für die relevanten Daten (Konten, Chancen, Marketinglisten oder Kampagnen) in den Lookup-Datensätzen erstellt wird (rosa in der Abbildung unten). Diese Umwandlung ermöglicht eine korrekte Funktionsweise von Personen-ID-basierten Suchen.
 
-![B2B-Schemata](./assets/b2b-schemas.svg)
+![B2B-Schemas](./assets/b2b-schemas.svg)

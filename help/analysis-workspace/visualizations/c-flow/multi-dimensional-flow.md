@@ -17,7 +17,7 @@ Mithilfe eines interdimensionalen Flusses können Sie Benutzerpfade über versch
 
 Eine Dimensionsbezeichnung jeweils oben in der Spalte „Fluss“ vereinfacht die Verwendung mehrerer Dimensionen in einer Flussvisualisierung:
 
-![Interdimensionaler Fluss, der mehrere Dimensionen wie Produkt, Seite, Betriebssystemversion und Besuchszeit hervorhebt.](assets/flow.png)
+![Ein interdimensionaler Fluss, der mehrere Dimensionen hervorhebt, einschließlich Produkt, Seite, Betriebssystemversion und Besuchszeit.](assets/flow.png)
 
 Sehen wir uns 2 Anwendungsfälle an: einen App-Anwendungsfall und einen Web-Anwendungsfall.
 
@@ -31,15 +31,15 @@ Um die Interaktion zwischen Bildschirmen/Seiten und Aktionen in dieser App zu un
 
 * Ziehen Sie die Dimension an eines der Enden der Dropzone (innerhalb der schwarz umrandeten rechteckigen Zone, die eingeblendet wird), um die obersten Ergebnisse an den Enden zu **ersetzen**:
 
-  ![Ein Fluss, der die Dimension Seite anzeigt, die in mehrere Bereiche gezogen wurde.](assets/multi-dimensional-flow2.png) ![Flussdiagramm mit den gezogenen Elementen.](assets/multi-dimensional-flow3.png)
+  ![Ein Fluss, der die Dimension Seite anzeigt, die in mehrere Bereiche gezogen wurde.](assets/multi-dimensional-flow2.png) ![ Flussdiagramm mit den gezogenen Elementen.](assets/multi-dimensional-flow3.png)
 
 * Ziehen Sie die Dimension auf die weiße Fläche an dem Ende (beachten Sie die schwarze Klammer), um sie **der Visualisierung hinzuzufügen**:
 
-  ![Ein Fluss, der die Dimension Seite anzeigt, die am Ende in den Leerraum gezogen wurde.](assets/multi-dimensional-flow4.png)
+  ![Ein Fluss, der die Dimension Seite anzeigt, der zum Leerraum am Ende gezogen wurde.](assets/multi-dimensional-flow4.png)
 
 Falls Sie sich enschieden haben, das Element „ItemScaled“ in der rechten Spalte mit der Dimension „Seite“ zu ersetzen, sieht das Ergebnis so aus. Das oberste Ergebnis ändert sich nun so, dass es das oberste Ergebnis für die Dimension „Seite“ ist.
 
-![Eine niedrige Anzeige der Dimension Seite ergibt sich oben in der Liste.](assets/multi-dimensional-flow5.png)
+![Ein fLow zeigt die Seitendimensionen oben in der Liste an.](assets/multi-dimensional-flow5.png)
 
 Nun können Sie erkennen, wie Ihre Kunden durch die Aktionen und Seiten navigieren. Per Klick auf die verschiedenen Knoten können Sie den Fluss noch weiter untersuchen:
 
@@ -47,7 +47,7 @@ Nun können Sie erkennen, wie Ihre Kunden durch die Aktionen und Seiten navigier
 
 Wenn Sie eine weitere Dimension Aktionsname am Ende der Visualisierung hinzufügen, geschieht Folgendes:
 
-![Ein Fluss mit dem hinzugefügten Aktionsnamen.](assets/multi-dimensional-flow7.png)
+![Ein Fluss, der den hinzugefügten Aktionsnamen anzeigt.](assets/multi-dimensional-flow7.png)
 
 Dies gibt Ihnen tiefere Einblicke in die App, die Sie analysieren möchten, und erlaubt geeignete Änderungen.
 
@@ -57,7 +57,7 @@ Dieser Verwendungsfall zeigt, wie Sie anaysieren können, welche Kampagnen die m
 
 Ziehen Sie die Dimension „Kampagnenname“ in einen neuen Fluss:
 
-![Ein Fluss, der die Dimension Kampagnenname anzeigt und in einen neuen Fluss gezogen wurde.](assets/multi-dimensional-flow8.png)
+![Ein Fluss, der die Dimension &quot;Kampagnenname&quot;anzeigt und in einen neuen Fluss gezogen wurde.](assets/multi-dimensional-flow8.png)
 
 Nun möchte ich wissen, auf welche Seiten diese Kampagnen Traffic leiten. Daher ziehe ich die Dimension „Seite“ nach rechts von den Flussergebnissen, um sie in der Visualisierung hinzuzufügen:
 

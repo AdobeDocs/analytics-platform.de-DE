@@ -26,7 +26,7 @@ Filter können auf
 
 Sie können Filter im Filtergenerator erstellen und speichern oder Filter aus einer Fallout-Visualisierung (in Workspace) generieren. Darüber hinaus können Filter zusammen als gestapelte Filter verwendet werden.
 
-Die Filterung umfasst die [Filter Builder](/help/components/filters/filter-builder.md) , um Filter zu erstellen und einen Vortest auszuführen, und die [Filter Manager](/help/components/filters/manage-filters.md) , um Filter in Ihrem Unternehmen zu sammeln, zu taggen, zu genehmigen, zu schützen und freizugeben.
+Die Filterung umfasst den [Filtergenerator](/help/components/filters/filter-builder.md) zum Erstellen von Filtern und Ausführen eines Vorab-Tests sowie den [Filter-Manager](/help/components/filters/manage-filters.md) zum Erfassen, Taggen, Genehmigen, Festlegen der Sicherheit und Freigeben von Filtern in Ihrer Organisation.
 
 Die maximale Anzahl von Filtern, die Sie pro IMS-Organisation erstellen können, beträgt 50.000.
 
@@ -40,7 +40,7 @@ Mit sequenziellen Filtern können Sie Personen anhand der Navigation identifizie
 
 >[!IMPORTANT]
 >
->Sie müssen über die **Auswählen** -Paket zum Erstellen von kanalübergreifenden sequenziellen Filtern. Wenden Sie sich an Ihren Administrator, wenn Sie sich nicht sicher sind, welches Customer Journey Analytics-Paket Sie haben.
+>Sie müssen über das Paket **Select** verfügen, um kanalübergreifende sequenzielle Filter zu erstellen. Wenden Sie sich an Ihren Administrator, wenn Sie sich nicht sicher sind, welches Customer Journey Analytics-Paket Sie haben.
 
 Siehe folgendes Beispiel:
 
@@ -67,7 +67,7 @@ Filter basieren auf einer Hierarchie auf Personen-, Sitzungs- und Ereignisebene,
 <tr>
 <td style="background-color: #E5E4E2;" width="200" height="100"></td>
 <td style="background-color: #D3D3D3;" width="200" height="100"></td>
-<td style="background-color: #C0C0C0;" width="200" height="100" colspan="1"><img src="https://spectrum.adobe.com/static/icons/workflow_18/Smock_Events_18_N.svg"/> Ereignis-  </td>
+<td style="background-color: #C0C0C0;" width="200" height="100" colspan="1"><img src="https://spectrum.adobe.com/static/icons/workflow_18/Smock_Events_18_N.svg"/> Ereignis</td>
 </tr>
 </table>
 
@@ -102,7 +102,7 @@ Sitzungs-Container enthalten Werte, die auf dem Auftreten pro Sitzung basieren:
 - Beitragsmetriken
 - Linear zugeordnete Metriken
 
-Mithilfe von Datenansichten in Customer Journey Analytics können Sie festlegen, wie lange eine Sitzung dauert, aber auch, wann eine neue Sitzung erstellt werden soll. Sie können beispielsweise eine neue App-Sitzung definieren, die auf jedem Start der App durch einen Benutzer basiert. Siehe [Sitzungseinstellungen](/help/data-views/session-settings.md) für weitere Informationen.
+Mithilfe von Datenansichten in Customer Journey Analytics können Sie festlegen, wie lange eine Sitzung dauert, aber auch, wann eine neue Sitzung erstellt werden soll. Sie können beispielsweise eine neue App-Sitzung definieren, die auf jedem Start der App durch einen Benutzer basiert. Weitere Informationen finden Sie unter [Sitzungseinstellungen](/help/data-views/session-settings.md) .
 
 ### Ereignis-Container {#event}
 

@@ -17,14 +17,14 @@ ht-degree: 71%
 
 Mit dem Datenblock-Manager können Sie alle Datenblöcke einer Arbeitsmappe anzeigen und verwalten. Der Datenblock-Manager bietet Such-, Filter- und Sortierfunktionen, mit denen Sie bestimmte Datenblöcke schnell finden können. Nach Auswahl eines oder mehrerer Datenblöcke können Sie diese bearbeiten, löschen oder aktualisieren.
 
-![Der Bildschirm Datenblock-Manager .](./assets/image52.png)
+![Der Bildschirm des Datenblock-Managers.](./assets/image52.png)
 
 ## Anzeigen von Datenblöcken
 
 Klicken Sie auf **Verwalten**, um eine Liste aller Datenblöcke in einer Arbeitsmappe anzuzeigen.
 
 
-![Die Option Verwalten , um eine Liste aller Datenblöcke anzuzeigen.](./assets/image53.png)
+![Die Option &quot;Verwalten&quot;, um eine Liste aller Datenblöcke anzuzeigen.](./assets/image53.png)
 
 Der Datenblock-Manager listet alle in einer Arbeitsmappe vorhandenen Datenblöcke auf. 
 
@@ -36,13 +36,13 @@ Sie können die Datenblockliste nach einer angezeigten Spalte sortieren. Beispie
 
 Um die Datenblockliste zu sortieren, klicken Sie auf eine Spaltenüberschrift.
 
-![Sortieren der Datenblöcke](./assets/image54.png)
+![Sortieren der Datenblöcke.](./assets/image54.png)
 
 ## Durchsuchen der Datenblockliste
 
 Verwenden Sie das Suchfeld, um in der Datenblocktabelle eine Suche durchzuführen. Sie können beispielsweise nach Metriken suchen, die in den Datenblöcken oder in der Datenansicht enthalten sind. Sie können auch nach Datumsangaben suchen, die in den Spalten „Datumsbereich“, „Änderungsdatum“ oder „Datum des letzten Durchgang“ angezeigt werden.
 
-![Suchen Sie mithilfe des Suchfelds nach etwas in der Datenblock-Tabelle.](./assets/image55.png)
+![Verwenden des Suchfelds, um etwas in der Datenblock-Tabelle zu suchen.](./assets/image55.png)
 
 ## Bearbeiten von Datenblöcken
 
@@ -52,15 +52,15 @@ Beispielsweise können Sie einen vorhandenen Filter in einem oder mehreren Daten
 
 1. Wählen Sie die zu aktualisierenden Datenblöcke aus. Sie können das Kontrollkästchen auf der obersten Ebene aktivieren, um alle Datenblöcke auszuwählen. Sie können aber auch einzelne Datenblöcke auswählen.
 
-   ![Symbol zum Bearbeiten des Stiftsymbols](./assets/image56.png)
+   ![Das Stiftsymbol zur Bearbeitung](./assets/image56.png)
 
 1. Klicken Sie auf das Bearbeitungssymbol, um das Fenster „Schnellbearbeitung“ anzuzeigen.
 
-   ![Das Fenster &quot;Schnellbearbeitung&quot;](./assets/image58.png)
+   ![Das Fenster für die Schnellbearbeitung](./assets/image58.png)
 
 1. Wählen Sie einen Filter-Link aus, um Datenansichten, Datumsbereiche oder Filter zu aktualisieren.
 
-   ![Das Feld Segment hinzufügen im Fenster Schnellbearbeitung](./assets/image59.png)
+   ![Das Feld Segment hinzufügen im Fenster &quot;Quick edit&quot;](./assets/image59.png)
 
 ## Aktualisieren von Datenblöcken
 
@@ -75,7 +75,7 @@ Ein erfolgreich aktualisierter Datenblock zeigt ein Häkchen in einem grünen Kr
 Ein Datenblock, der nicht aktualisiert werden konnte, zeigt ein Warnsymbol an: <img src="./assets/refresh-failure.png" width="5%" alt="Rotes Dreieck mit Ausrufezeichen-Symbol"/>.Dadurch lässt sich leicht erkennen, ob Datenblöcke Fehler aufweisen.
 
 
-![Datenblock-Manager mit Aktualisierungsstatus für jeden aufgelisteten Datenblock.](./assets/image512.png)
+![Datenblock-Manager, der den Aktualisierungsstatus für jeden aufgelisteten Datenblock anzeigt.](./assets/image512.png)
 
 ## Löschen von Datenblöcken
 
@@ -94,4 +94,4 @@ Sie können auswählen, welche Spalten im Fenster „Datenblock-Manager“ angez
 
 Klicken Sie auf das <img src="./assets/image515.png" width="3%" alt="Symbol für Spaltenliste"/>-Symbol der Spaltenliste, um auszuwählen, welche Spalten im Datenblock-Manager aufgeführt werden. Wählen Sie einen Spaltennamen aus, um die entsprechende Spalte anzuzeigen. Heben Sie die Auswahl des Spaltennamens auf, um die Spalte aus der Ansicht zu entfernen.
 
-![Datenblock-Manager mit Spaltenliste](./assets/image516.png)
+![Datenblock-Manager, der die Spaltenliste anzeigt](./assets/image516.png)

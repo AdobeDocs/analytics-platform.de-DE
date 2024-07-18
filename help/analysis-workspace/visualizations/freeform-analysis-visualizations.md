@@ -29,12 +29,12 @@ Die folgenden Visualisierungstypen sind in Analysis Workspace verfügbar:
 | [Ringdiagramm](/help/analysis-workspace/visualizations/donut.md) <p>![Symbol &quot;Ringdiagramm&quot;](assets/Smock_GraphDonut_18_N.svg)</p> | Ähnlich einem Tortendiagramm zeigt diese Visualisierung die Daten als Teile oder Filter eines Ganzen. |
 | [Fallout](/help/analysis-workspace/visualizations/fallout/fallout-flow.md)<p>![Fallout-Symbol](assets/Smock_ConversionFunnel_18_N.svg)</p> | Fallout-Berichte zeigen an, wo Personen eine vordefinierte Seitensequenz verlassen (ausgefallen) und weitergemacht (durchgefallen) haben. Kann auf mögliche oder exakte Sequenzen eingestellt werden |
 | [Fluss](/help/analysis-workspace/visualizations/c-flow/flow.md)<p>![Flusssymbol](assets/flow-icon.png)</p> | Zeigt Kundenpfade durch Ihre Websites und Programme. |
-| [Freiformtabelle](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)<p>![Symbol &quot;Freiformtabelle&quot;](assets/Smock_ViewTable_18_N.svg)</p> | Eine Freiformtabelle ist nicht nur eine Datentabelle, sondern auch eine interaktive Visualisierung. Es bildet die Grundlage für die Analyse von Daten in Workspace. |
+| [Freiformtabelle](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)<p>![Freiformtabellensymbol](assets/Smock_ViewTable_18_N.svg)</p> | Eine Freiformtabelle ist nicht nur eine Datentabelle, sondern auch eine interaktive Visualisierung. Es bildet die Grundlage für die Analyse von Daten in Workspace. |
 | [Histogramm](/help/analysis-workspace/visualizations/histogram.md)<p>![Histogrammsymbol](assets/Smock_GraphHistogram_18_N.svg)</p> | Ein Histogramm fasst Personen, Besuche oder Ereignisse basierend auf einem Metrikvolumen in Behälter zusammen. |
-| [Horizontalbalken](/help/analysis-workspace/visualizations/horizontal-bar.md)<p>![Symbol &quot;Horizontalbalken&quot;](assets//Smock_GraphBarHorizontal_18_N.svg)</p> | Zeigt horizontale Balken, die verschiedene Werte aus einer oder mehreren Metriken darstellen. |
+| [Horizontalbalken](/help/analysis-workspace/visualizations/horizontal-bar.md)<p>![Horizontalbalkensymbol](assets//Smock_GraphBarHorizontal_18_N.svg)</p> | Zeigt horizontale Balken, die verschiedene Werte aus einer oder mehreren Metriken darstellen. |
 | [Linie](/help/analysis-workspace/visualizations/line.md)<p>![Liniensymbol](assets/Smock_GraphTrend_18_N.svg)</p> | Stellt Metriken anhand einer Linie dar, die den Wertverlauf über einen bestimmten Zeitraum hinweg zeigt. Ein Liniendiagramm verwendet die Zeit entlang der X-Achse. |
 | [Streudiagramm](/help/analysis-workspace/visualizations/scatterplot.md) <p>![Streudiagramm-Symbol](assets/Smock_GraphScatter_18_N.svg)</p> | Zeigt die Beziehung zwischen Dimensionselementen und bis zu drei Metriken. |
-| [Zusammenfassungszahl](/help/analysis-workspace/visualizations/summary-number-change.md)<p>![Symbol für Zusammenfassungsnummer](assets/summary-number-icon.png)</p> | Zeigt die ausgewählte Zelle als eine große Zahl an. |
+| [Zusammenfassungszahl](/help/analysis-workspace/visualizations/summary-number-change.md)<p>![Symbol &quot;Zusammenfassungsnummer&quot;](assets/summary-number-icon.png)</p> | Zeigt die ausgewählte Zelle als eine große Zahl an. |
 | [Zusammenfassungsänderung](/help/analysis-workspace/visualizations/summary-number-change.md)<p>![Symbol für Zusammenfassungsänderung](assets/summary-change-icon.png)</p> | Zeigt die Änderung zwischen den ausgewählten Zellen als eine große Zahl/Prozentzahl an. |
 | [Text](/help/analysis-workspace/visualizations/text.md)<p>![Streudiagramm-Symbol](assets/Smock_Text_18_N.svg)</p> | Sie können benutzerdefinierten Text zu Ihrem Workspace hinzufügen. Hilfreich zum Hinzufügen zusätzlicher Kontexte zu Ihrer Analyse und zu Einblicken, zusätzlich zum Nutzen der Beschreibungen im Bedienfeld oder in Visualisierungen |
 | [Treemap](/help/analysis-workspace/visualizations/treemap.md)<p>![Treemap-Symbol](assets/Smock_GraphTree_18_N.svg)</p> | Zeigt hierarchische Daten (Baumstruktur) als Gruppe verschachtelter Rechtecke an. |
@@ -46,19 +46,19 @@ Die folgenden Visualisierungstypen sind in Analysis Workspace verfügbar:
 
 1. Verwenden Sie eine der folgenden Methoden, um die Visualisierung hinzuzufügen:
 
-   * Wählen Sie in der linken Leiste die **Visualisierung** icon <!-- add icon -->, und ziehen Sie eine Visualisierung in den Bereich, dem Sie sie hinzufügen möchten.
+   * Wählen Sie in der linken Leiste das Symbol **Visualisierungen** <!-- add icon --> aus und ziehen Sie dann eine Visualisierung in den Bereich, dem Sie sie hinzufügen möchten.
 
      ![Visualisierungsbereich](assets/viz-rail.png)
 
-   * Wählen Sie im Bereich, in dem Sie die Visualisierung hinzufügen möchten, die **Plus** und wählen Sie dann das Symbol aus, das die Visualisierung darstellt, die Sie hinzufügen möchten. Bewegen Sie den Mauszeiger über das Symbol für jede Visualisierung, um den Namen anzuzeigen.
+   * Wählen Sie im Bereich, in dem Sie die Visualisierung hinzufügen möchten, das Symbol **Plus** und dann das Symbol für die Visualisierung aus, die Sie hinzufügen möchten. Bewegen Sie den Mauszeiger über das Symbol für jede Visualisierung, um den Namen anzuzeigen.
 
      ![Schaltfläche zum Hinzufügen einer Visualisierung](assets/visualization-add-to-panel.png)
 
-   * Hinzufügen einer [leeres Bedienfeld](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/blank-panel.html?lang=de)und wählen Sie dann die Visualisierung aus, die Sie hinzufügen möchten.
+   * Fügen Sie ein [leeres Bedienfeld](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/blank-panel.html?lang=de) hinzu und wählen Sie dann die Visualisierung aus, die Sie hinzufügen möchten.
 
      ![Leeres Bedienfeld](assets/blank_panel.png)
 
-   * Klicken Sie mit der rechten Maustaste auf einen vorhandenen Bereich in Ihrem Analysis Workspace-Projekt und wählen Sie [!UICONTROL **Visualisierung duplizieren**] oder [!UICONTROL **Visualisierung kopieren**].
+   * Klicken Sie mit der rechten Maustaste auf einen vorhandenen Bereich in Ihrem Analysis Workspace-Projekt und wählen Sie dann [!UICONTROL **Visualisierung duplizieren**] oder [!UICONTROL **Visualisierung kopieren**] aus.
 
 ## Anpassen von Visualisierungseinstellungen
 
@@ -80,7 +80,7 @@ Sie können die Einstellungen für alle von Ihnen erstellten Visualisierungen an
 
 ## Einstellungen  {#settings}
 
-Jede Visualisierung verfügt über eigene Einstellungen, die Sie verwalten können. Um auf die Visualisierungseinstellungen zuzugreifen, wählen Sie das Einstellungssymbol aus ![Spalteneinstellungen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Settings_18_N.svg).
+Jede Visualisierung verfügt über eigene Einstellungen, die Sie verwalten können. Um auf die Visualisierungseinstellungen zuzugreifen, wählen Sie das Einstellungssymbol ![Spalteneinstellungen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Settings_18_N.svg) aus.
 
 <img src="./assets/viz-settings-line.png" alt="Visualisierungseinstellungen" width="50%" />
 
@@ -109,7 +109,7 @@ So bearbeiten Sie eine Legendenbezeichnung:
 1. klicken Sie mit der rechten Maustaste auf die Legendenbeschriftungen.
 1. Klicken Sie auf **[!UICONTROL Bezeichnung bearbeiten]**.
 
-   ![Titel der Legende und Option Titel bearbeiten .](assets/edit-label.png)
+   ![Eine Legendenbeschriftung und die Option Titel bearbeiten.](assets/edit-label.png)
 
 1. Geben Sie den neuen Beschriftungstext ein.
 1. Drücken Sie zum Speichern die **[!UICONTROL Eingabetaste]**.

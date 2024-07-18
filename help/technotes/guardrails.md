@@ -14,7 +14,7 @@ ht-degree: 10%
 
 # Customer Journey Analytics Guardrails
 
-Dieses Dokument bietet Einschränkungen für verschiedene Komponenten von Customer Journey Analytics. Informationen zu Limits, Scoping-Parametern und Berechtigungen finden Sie in der [Produktbeschreibung für Customer Journey Analytics](https://helpx.adobe.com/de/legal/product-descriptions/customer-journey-analytics.html) oder [Produktbeschreibung für Adobe Analytics Add-on: Customer Journey Analytics](https://helpx.adobe.com/de/legal/product-descriptions/adobe-analytics-addon-customer-journey-analytics.html).
+Dieses Dokument bietet Einschränkungen für verschiedene Komponenten von Customer Journey Analytics. Schutzmechanismen, Scoping-Parameter und Berechtigungen finden Sie in der [Produktbeschreibung für Customer Journey Analytics](https://helpx.adobe.com/de/legal/product-descriptions/customer-journey-analytics.html) oder der [Produktbeschreibung für Adobe Analytics-Add-on: Customer Journey Analytics](https://helpx.adobe.com/de/legal/product-descriptions/adobe-analytics-addon-customer-journey-analytics.html).
 
 ## Arten von Beschränkungen
 
@@ -23,7 +23,7 @@ In diesem Dokument gibt es zwei Arten von Standardbeschränkungen:
 | Schutztyp | Beschreibung |
 |----------|---------|
 | **Leistungsgarantien (weiche Begrenzung)** | Performance-Limits sind Nutzungsbeschränkungen, die sich auf das Scoping Ihrer Anwendungsfälle beziehen. Bei Überschreitung der Leistungs-Limits kann es zu Leistungsbeeinträchtigungen und Latenzzeiten kommen. Adobe ist nicht für eine solche Leistungsbeeinträchtigung verantwortlich. Kunden, die eine Performance-Limits durchgängig überschreiten, können zusätzliche Kapazität lizenzieren, um Leistungsbeeinträchtigungen zu vermeiden. |
-| **Systemerzwungene Limits (harte Grenze)** | Systemerzwungene Schutzmechanismen werden durch die Customer Journey Analytics-Benutzeroberfläche oder -API erzwungen. Dies sind Beschränkungen, die Sie nicht überschreiten können, da die Benutzeroberfläche und API Sie daran hindert, dies zu tun oder einen Fehler zurückzugeben. |
+| **Systemerzwungene Schutzmechanismen (harte Begrenzung)** | Systemerzwungene Schutzmechanismen werden durch die Customer Journey Analytics-Benutzeroberfläche oder -API erzwungen. Dies sind Beschränkungen, die Sie nicht überschreiten können, da die Benutzeroberfläche und API Sie daran hindert, dies zu tun oder einen Fehler zurückzugeben. |
 
 {style="table-layout:auto"}
 
@@ -50,8 +50,8 @@ Einige der Funktionen und der zugehörige Wert für die Beschränkung hängen vo
 |---|--:|---|---|
 | Sichtbare Zeilen pro Tabelle | 400 | Systemdurchsetztes Schutzschild | Maximale Anzahl sichtbarer Zeilen in einer Freiformtabelle in einem Analysis Workspace-Projekt. |
 | Exportierbare Zeilen pro Tabelle | 50.000 | Systemdurchsetztes Schutzschild | Maximale Anzahl von Zeilen, die pro Dimension exportiert werden können. |
-| Bedienfelder pro Projekt | 15 | Systemdurchsetztes Schutzschild | Maximale Anzahl an [Bedienfelder](../analysis-workspace/home.md#panels) pro Projekt. |
-| Visualisierungen pro Bedienfeld | 25 | Systemdurchsetztes Schutzschild | Maximale Anzahl an [Visualisierungen](../analysis-workspace/home.md#visualizations) pro Bedienfeld. |
+| Bedienfelder pro Projekt | 15 | Systemdurchsetztes Schutzschild | Maximale Anzahl von [Bedienfeldern](../analysis-workspace/home.md#panels) pro Projekt. |
+| Visualisierungen pro Bedienfeld | 25 | Systemdurchsetztes Schutzschild | Maximale Anzahl von [Visualisierungen](../analysis-workspace/home.md#visualizations) pro Bedienfeld. |
 | Abgeleitete Felder pro Freiformtabelle | 5 | Systemdurchsetztes Schutzschild | Maximale Anzahl verschiedener abgeleiteter Felder in einer einzelnen Freiformtabelle. |
 
 {style="table-layout:auto"}
@@ -72,16 +72,16 @@ Einige der Funktionen und der zugehörige Wert für die Beschränkung hängen vo
 
 | Name | Wert | Art von Limit | Beschreibung |
 |---|--:|---|---|
-| Zielgruppenfilter | 20 | Systemdurchsetztes Schutzschild | Maximale Anzahl an [Filter](../components/filters/filters-overview.md) pro Zielgruppe. |
+| Zielgruppenfilter | 20 | Systemdurchsetztes Schutzschild | Maximale Anzahl von [Filtern](../components/filters/filters-overview.md) pro Zielgruppe. |
 | Anzahl der Zielgruppenidentitäten | 20 Million | Systemdurchsetztes Schutzschild | Maximale Anzahl von Identitäten pro Zielgruppe. |
-| Häufigkeit der Zielgruppenaktualisierung | 4 | Systemdurchsetztes Schutzschild | Maximale Häufigkeit in Stunden und [audience](../components/audiences/audiences-overview.md) aktualisiert werden. |
+| Häufigkeit der Zielgruppenaktualisierung | 4 | Systemdurchsetztes Schutzschild | Maximale Häufigkeit in Stunden, in der eine [Audience](../components/audiences/audiences-overview.md) aktualisiert werden kann. |
 | Lookback-Fenster für Zielgruppenaktualisierung | 90 | Systemdurchsetztes Schutzschild | Maximale Anzahl von Tagen für das Lookback-Fenster &quot;Aktualisieren&quot;. |
 | Aktualisieren des Zielgruppenablaufdatums | 13 | Systemdurchsetztes Schutzschild | Die maximale Anzahl von Monaten für die Audience wird ab dem Erstellungsdatum nicht mehr aktualisiert. Kunden können dies um weitere 13 Monate verlängern. |
 | Anzahl der aktualisierten Zielgruppen | 75.150 | Systemdurchsetztes Schutzschild | Maximale Anzahl aktualisierter Zielgruppen; der Wert variiert je nach Customer Journey Analytics-Package (siehe Produktbeschreibung). |
 
 {style="table-layout:auto"}
 
-Siehe auch Experience Platform [Real-time Customer Data Platform-Schutzmechanismen](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=de).
+Siehe auch Experience Platform [Real-time Customer Data Platform Guardrails](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=de).
 
 
 ## Automatischer Ablauf von Datensätzen
@@ -99,16 +99,16 @@ Siehe auch Experience Platform [Real-time Customer Data Platform-Schutzmechanism
 | Name | Wert | Art von Limit | Beschreibung |
 |---|--:|---|---|
 | Projekte | 50.000 | Systemdurchsetztes Schutzschild | Maximale Anzahl der Projekte für eine Organisation. |
-| Datenansichten | 2.000 | Systemdurchsetztes Schutzschild | Maximale Anzahl an [Datenansichten](../data-views/data-views.md) für eine Organisation. |
+| Datenansichten | 2.000 | Systemdurchsetztes Schutzschild | Maximale Anzahl von [Datenansichten](../data-views/data-views.md) für eine Organisation. |
 | Datenansichten | 50 | Systemdurchsetztes Schutzschild | Maximale Anzahl von Datenansichten für eine Verbindung |
-| Datensätze | 100 | Systemdurchsetztes Schutzschild | Maximale Anzahl an [Datensätze](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html?lang=de) pro Verbindung. |
-| Verbindungen | 1000 | Systemdurchsetztes Schutzschild | Maximale Anzahl an [Verbindungen](../connections/overview.md) für eine Organisation. |
+| Datensätze | 100 | Systemdurchsetztes Schutzschild | Maximale Anzahl von [Datensätzen](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html?lang=de) pro Verbindung. |
+| Verbindungen | 1000 | Systemdurchsetztes Schutzschild | Maximale Anzahl von [Verbindungen](../connections/overview.md) für eine Organisation. |
 | Verbindungstitel | 500 | Systemdurchsetztes Schutzschild | Maximale Zeichenanzahl für einen Verbindungstitel. |
 | Metriken | 5.000 | Systemdurchsetztes Schutzschild | Maximale Anzahl an Metriken in einer Datenansicht. |
 | Dimensionen | 5.000 | Systemdurchsetztes Schutzschild | Maximale Anzahl von Dimensionen in einer Datenansicht. |
 | Anmerkungstitel | 100 | Systemdurchsetztes Schutzschild | Maximale Zeichenanzahl für einen Anmerkungstitel. |
 | Anmerkungsbeschreibung | 250 | Systemdurchsetztes Schutzschild | Maximale Zeichenanzahl für eine Anmerkung. |
-| Schemafelder | 10 | Systemdurchsetztes Schutzschild | Maximale Anzahl von Schemafeldern (ohne Standardfelder) bei der Definition von Regeln für eine [abgeleitetes Feld](../data-views/derived-fields/derived-fields.md). |
+| Schemafelder | 10 | Systemdurchsetztes Schutzschild | Maximale Anzahl von Schemafeldern (ohne Standardfelder) beim Definieren von Regeln für ein [abgeleitetes Feld](../data-views/derived-fields/derived-fields.md). |
 | Such-/Profilfelder | 3 | Systemdurchsetztes Schutzschild | Maximale Anzahl von Lookup- oder Profilschemafeldern innerhalb der maximalen Anzahl von Schemafeldern (ohne Standardfelder) bei der Definition von Regeln für ein abgeleitetes Feld. |
 | Abgeleitete Felder | 100-500 | Systemdurchsetztes Schutzschild | Maximale Anzahl abgeleiteter Felder pro Verbindung. Der Wert variiert je nach Customer Journey Analytics-Package (siehe Produktbeschreibung). |
 
@@ -138,7 +138,7 @@ Siehe auch Experience Platform [Limits für die Datenerfassung](https://experien
 
 {style="table-layout:auto"}
 
-Siehe auch Experience Platform [Limits für den Datenexport](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/guardrails#dataset-exports)
+Siehe auch Experience Platform [Limits für den Datensatzexport](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/guardrails#dataset-exports)
 
 
 ## Daten-Landingzone
@@ -162,7 +162,7 @@ Siehe auch Experience Platform [Limits für den Datenexport](https://experiencel
 {style="table-layout:auto"}
 
 
-## Diagrammbasiertes Stitching
+## Grafikbasierte Zuordnung
 
 | Name | Wert | Art von Limit | Beschreibung |
 |---|--:|---|---|
@@ -203,7 +203,7 @@ Siehe auch Experience Platform [Limits für den Datenexport](https://experiencel
 | Name | Wert | Art von Limit | Beschreibung |
 |---|--:|---|---|
 | Größe der Arbeitsmappen-Datei | 5 | Systemdurchsetztes Schutzschild | Maximale Dateigröße einer geplanten Arbeitsmappe in MB. |
-| Datenblöcke | 1000 | Systemdurchsetztes Schutzschild | Maximale Anzahl an [Datenblöcke](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/manage-reportbuilder.html?lang=de) pro Arbeitsmappe. |
+| Datenblöcke | 1000 | Systemdurchsetztes Schutzschild | Maximale Anzahl von [Datenblöcken](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/manage-reportbuilder.html?lang=de) pro Arbeitsmappe. |
 | Metriken | 20 | Systemdurchsetztes Schutzschild | Maximale Anzahl an Metriken pro Datenblock. |
 | Datumsbereich-Bereich | 13 | Systemdurchsetztes Schutzschild | Maximale Anzahl von Monaten, die ein Datumsbereich pro Datenblock umfassen kann. |
 | Zeilen | 50.000 | Systemdurchsetztes Schutzschild | Maximale Zeilenanzahl pro Datenblock. |
@@ -226,7 +226,7 @@ Siehe auch Experience Platform [Limits für den Datenexport](https://experiencel
 
 >[!NOTE]
 >
->Die folgenden Verarbeitungszeiten sind Limits, nicht vertragliche Service Level Agreements (SLAs). Die Latenz variiert je nach Kundenkonfiguration, Datenvolumen und Verbraucheranwendungen. Echte Verarbeitungszeiten sind oft schneller. Ihre spezifischen Vertragsbedingungen und SLAs finden Sie in Ihrem Customer Journey Analytics-Vertrag. Siehe Experience Platform [Limits für die Datenerfassung](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html) für weitere Informationen.
+>Die folgenden Verarbeitungszeiten sind Limits, nicht vertragliche Service Level Agreements (SLAs). Die Latenz variiert je nach Kundenkonfiguration, Datenvolumen und Verbraucheranwendungen. Echte Verarbeitungszeiten sind oft schneller. Ihre spezifischen Vertragsbedingungen und SLAs finden Sie in Ihrem Customer Journey Analytics-Vertrag. Weitere Informationen finden Sie unter Experience Platform [Limits für die Datenerfassung](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html) .
 
 | Datenfluss | Erwartete Latenz |
 |---|---|
@@ -236,7 +236,7 @@ Siehe auch Experience Platform [Limits für den Datenexport](https://experiencel
 | Datenaufnahme aus der Edge Network- oder Streaming-Erfassung in den Data Lake | &lt; 60 Minuten |
 | Datenerfassung in den Data Lake über Adobe Analytics Source Connector | &lt; 2,25 Stunden |
 | Datenerfassung in Customer Journey Analytics vom Data Lake | &lt; 90 Minuten |
-| Stitching (optionale Funktion; siehe [Stitching-Übersicht](../stitching/overview.md) für weitere Informationen) | &lt; 3,25 Stunden |
+| Stitching (optionale Funktion; weitere Informationen finden Sie unter [Stitching - Übersicht](../stitching/overview.md) ) | &lt; 3,25 Stunden |
 | Aufstockung von Adobe Analytics Source Connector für weniger als 10 Milliarden Ereignisse (maximal 13 Monate historischer Daten) | &lt; 4 Wochen |
 | Zielgruppe Veröffentlichen in Echtzeit-Kundenprofil, einschließlich der automatischen Erstellung des Streaming-Segments, sodass das Segment für den Empfang der Daten bereit ist. | ~ 60 Minuten |
 | Aktualisierungshäufigkeit für Zielgruppen | Einmalige Aktualisierung: Latenz von weniger als 5 Minuten.<br/>Aktualisieren Sie alle 4 Stunden, täglich, wöchentlich, monatlich (die Latenz geht mit der Aktualisierungsrate einher). |

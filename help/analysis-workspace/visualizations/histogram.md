@@ -23,7 +23,7 @@ So erstellen Sie ein Histogramm:
 1. Ziehen Sie **[!UICONTROL Histogramm]** in das Bedienfeld.
 1. Wählen Sie eine Metrik zum Ziehen der Visualisierung „Histogramm“ aus und klicken Sie dann auf **[!UICONTROL Erstellen]**.
 
-![Leeres Histogrammbedienfeld mit dem Feld Metrik unter ablegen .](assets/histogram.png)
+![Leeres Histogrammbedienfeld, das das Feld Metrik unter Feld ablegen anzeigt.](assets/histogram.png)
 
 >[!NOTE]
 >
@@ -55,14 +55,14 @@ Wenn Sie die Einstellungen für Ihr Histogramm ändern möchten, klicken Sie auf
 
 Wenn Sie die Datenquelle für das Histogramm anzeigen oder ändern möchten, klicken Sie auf den Punkt neben der Histogramm-Überschrift und navigieren Sie zu **[!UICONTROL Datenquelleneinstellungen]** > **[!UICONTROL Datenquelle anzeigen]**.
 
-![Datenquelleneinstellungen mit ausgewählten Optionen Datenquelle anzeigen und Auswahl sperren .](assets/manage-data-source.png)
+![Optionen für Daten-Source-Einstellungen mit ausgewählter Option &quot;Data Source anzeigen&quot;und &quot;Auswahl sperren&quot;](assets/manage-data-source.png)
 
 Vorkonfigurierte Filter, die in der Tabelle angezeigt werden, sind interne Filter und werden in der Filterauswahl nicht angezeigt. Klicken Sie auf das Symbol „i“ neben dem Filternamen und dann auf **[!UICONTROL Veröffentlichen]**, um den Filter öffentlich zu machen.
 
-![Segmente, die das Bearbeitungsfenster und den Link Öffentlich machen anzeigen.](assets/prebuilt_segments.png)
+![Segmente, die das Bearbeitungsfenster und den öffentlichen Link anzeigen.](assets/prebuilt_segments.png)
 
 Weitere Möglichkeiten zum Verwalten von Freiform-Datentabellen und anderen Visualisierungen (wie zum Beispiel Datenaufschlüsselungen) finden Sie [hier](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.html?lang=de).
 
 ## Blogpost
 
-In diesem Blogpost finden Sie Informationen zu [Verwendung von Histogrammen zur Identifizierung unerwarteter Datenwerte](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/using-histograms-to-identify-unexpected-data-values/ba-p/596168).
+In diesem Blogpost finden Sie Informationen zu [mithilfe von Histogrammen zur Identifizierung unerwarteter Datenwerte](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/using-histograms-to-identify-unexpected-data-values/ba-p/596168).

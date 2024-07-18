@@ -7,7 +7,7 @@ role: Admin
 source-git-commit: 027ff3983c67481dd8284667d97f59f427b18928
 workflow-type: tm+mt
 source-wordcount: '711'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -30,7 +30,7 @@ Sobald sich Entscheidungs-Management-Daten in Adobe Experience Platform befinden
 
 Wählen Sie die folgenden Datensätze aus und konfigurieren Sie sie:
 
-| Datensatz | Typ des Datensatzes | Verbindungseinstellungen | Beschreibung |
+| Datensatz | Datensatztyp | Verbindungseinstellungen | Beschreibung |
 | --- | --- | --- | --- |
 | ODE DecisonEvents – _Sandbox_-Entscheidungsfindung | Ereignis | Personen-ID: `IdentityMap` | Enthält automatisch generierte Daten für Entscheidungsereignisse im Entscheidungs-Management. _Sandbox_ bezieht sich auf den spezifischen Sandbox-Namen. |
 | Ereignisdatensatz mit Nachrichten-Feedback in Adobe Journey Optimizer | Ereignis | Personen-ID:`IdentityMap` | Enthält Ereignisse bei der Zustellung von Nachrichten. |

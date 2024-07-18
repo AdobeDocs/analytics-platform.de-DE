@@ -20,13 +20,13 @@ Mit &quot;Format&quot;können Sie festlegen, wie eine bestimmte Metrik bei Verwe
 
 Sie können bestimmen, wie eine bestimmte Metrik angezeigt wird, indem Sie ihre Formateinstellungen anpassen.
 
-1. Wählen Sie unter Customer Journey Analytics die [!UICONTROL **Datenansichten**] Registerkarte.
+1. Wählen Sie unter Customer Journey Analytics die Registerkarte [!UICONTROL **Datenansichten**] aus.
 
 1. Wählen Sie die Datenansicht aus, die die Komponente enthält, deren Formateinstellung Sie konfigurieren möchten.
 
 1. Wählen Sie die Registerkarte [!UICONTROL **Komponenten**] aus.
 
-1. Wählen Sie die Komponente aus, die Sie konfigurieren möchten, und erweitern Sie dann die [!UICONTROL **Format**] auf der rechten Seite der Seite.
+1. Wählen Sie die Komponente aus, die Sie konfigurieren möchten, und erweitern Sie dann den Abschnitt [!UICONTROL **Format**] auf der rechten Seite der Seite.
 
    ![Formateinstellungen](../assets/format-settings.png)
 
@@ -38,7 +38,7 @@ Sie können bestimmen, wie eine bestimmte Metrik angezeigt wird, indem Sie ihre 
    | **[!UICONTROL Dezimal]** | Nicht sichtbar bei Schemadatentypen des Typs „Ganzzahl“. Hier können Sie die Anzahl der Dezimalstellen angeben, die eine Metrik anzeigt. |
    | **[!UICONTROL Datum]** | Hiermit können Sie bestimmen, wie das „date-time“-Feld angezeigt werden soll, wenn es als Dimension in Berichten verwendet wird. [Weitere Informationen](../../use-cases/data-views/data-views-usecases.md#date-and-date-time-use-cases) |
    | **[!UICONTROL Date-Time]** | Hiermit können Sie bestimmen, wie das „date-time“-Feld angezeigt werden soll, wenn es als Dimension in Berichten verwendet wird. [Weitere Informationen](../../use-cases/data-views/data-views-usecases.md#date-and-date-time-use-cases) |
-   | **[!UICONTROL Währung]** | Ermöglicht Ihnen die Bestimmung der Währung, in der die Metrik angezeigt werden soll. <p>Wenn Sie globale Daten analysieren, in denen Transaktionen in verschiedenen Währungen stattfinden, lesen Sie  [Währungsumrechnung verwenden](#use-currency-conversion).</p> |
+   | **[!UICONTROL Währung]** | Ermöglicht Ihnen die Bestimmung der Währung, in der die Metrik angezeigt werden soll. <p>Wenn Sie globale Daten analysieren, in denen Transaktionen in verschiedenen Währungen stattfinden, lesen Sie [Währungsumrechnung verwenden](#use-currency-conversion).</p> |
    | **[!UICONTROL Aufwärts-Trend anzeigen als]** | Hier können Sie angeben, ob bei dieser Metrik ein Aufwärts-Trend gut (grün) oder schlecht (rot) ist. |
    | **[!UICONTROL Wert „True“]** und **[!UICONTROL Wert „False“]** | Nur bei booleschen Schemadatentypen sichtbar. Ermöglicht die Anpassung der Bezeichnung des Dimensionselements für die Werte `true` und `false`. |
 
@@ -55,27 +55,27 @@ Wenn beispielsweise ein E-Commerce-Unternehmen in den USA, Großbritannien und d
 >Beachten Sie Folgendes, bevor Sie mit der Konfiguration einer Metrik für die Währungsumrechnung beginnen:
 >
 >* Die Metrik, die Sie für die Währungsumrechnung auswählen, muss einen numerischen Typ aufweisen (Double, Long, Integer, Short, Byte).
->* Richten Sie Ihre Customer Journey Analytics-Verbindung so ein, dass sie mindestens einen Ereignis-Datensatz enthält, der eine Währungscode-Dimension für jedes Ereignis enthält, das eine Währungsmetrik enthält. Diese Dimension des Währungscodes verwendet einen alphabetischen Währungscode, der dem [ISO 4217](https://www.iso.org/iso-4217-currency-codes.html) Standard für die Darstellung von Währungen. Diese Werte sollten in einem vollständigen Großbuchstabenformat vorliegen, z. B. USD für $, EUR für €, GBP für £.
+>* Richten Sie Ihre Customer Journey Analytics-Verbindung so ein, dass sie mindestens einen Ereignis-Datensatz enthält, der eine Währungscode-Dimension für jedes Ereignis enthält, das eine Währungsmetrik enthält. Diese Dimension des Währungscodes verwendet einen alphabetischen Währungscode, der dem [ISO 4217](https://www.iso.org/iso-4217-currency-codes.html)-Standard für die Darstellung von Währungen entspricht. Diese Werte sollten in einem vollständigen Großbuchstabenformat vorliegen, z. B. USD für $, EUR für €, GBP für £.
 
 So bestimmen Sie, wie Währungen für eine bestimmte Metrik angezeigt und konvertiert werden:
 
-1. Beginnen Sie mit der Konfiguration der Metrik, für die Sie die Währung als Format verwenden möchten, wie oben beschrieben in [Formateinstellungen für eine Metrik konfigurieren](#configure-format-settings-for-a-metric).
+1. Konfigurieren Sie zunächst die Metrik, für die Sie die Währung als Format verwenden möchten, wie oben unter [Formateinstellungen für eine Metrik konfigurieren](#configure-format-settings-for-a-metric) beschrieben.
 
-1. Wenn die Metrik ausgewählt ist, sollten Sie die folgenden Auswahlen im [!UICONTROL **Format**] rechts auf der Seite:
+1. Führen Sie bei ausgewählter Metrik die folgenden Auswahlen im Abschnitt [!UICONTROL **Format**] rechts auf der Seite durch:
 
-   * Im [!UICONTROL **Format**] Feld auswählen [!UICONTROL **Währung**].
+   * Wählen Sie im Feld [!UICONTROL **Format**] die Option [!UICONTROL **Währung**] aus.
 
-   * Im [!UICONTROL **Dezimalstellen**] auswählen, die Anzahl der Dezimalstellen, die die Metrik anzeigt.
+   * Wählen Sie im Feld [!UICONTROL **Dezimalstellen**] die Anzahl der Dezimalstellen aus, die die Metrik anzeigt.
 
      Diese Option ist nur verfügbar, wenn die Metrik den numerischen Typ &quot;Double&quot;aufweist.
 
-   * Wählen Sie die [!UICONTROL **Währung konvertieren**] -Option.
+   * Wählen Sie die Option [!UICONTROL **Währung konvertieren**] aus.
 
-   * Im [!UICONTROL **Dimension Währungscode auswählen**] auswählen Sie die Dimension, die die Währung darstellt, aus der Sie konvertieren (die Währung, auf der Ihre Daten basieren). Wählen Sie beispielsweise eine Dimension mit dem Namen [!UICONTROL **Währungscode**].
+   * Wählen Sie im Feld [!UICONTROL **Dimension Währungscode auswählen**] die Dimension aus, die die Währung darstellt, aus der Sie konvertieren (Währung, auf der Ihre Daten basieren). Wählen Sie beispielsweise die Dimension [!UICONTROL **Währungscode**] aus.
 
-     Wenn Ihr aktuelles Datenschema keine Dimension enthält, die ein Währungscode-Feld enthält, können Sie ein neues Währungscode-Feld mit [Datenvorbereitung](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html?lang=de), [Data Distiller](https://experienceleague.adobe.com/docs/experience-platform/query/data-distiller/overview.html)oder [Abgeleitete Felder](/help/data-views/derived-fields/derived-fields.md). Die Datenvorbereitung eignet sich nur für neue Implementierungen, da sie nur für künftige Implementierungen geeignet ist. Je nach Einrichtung eines Unternehmens können Data Distiller und abgeleitete Felder verwendet werden, um historisch auf die Währungscodewerte zuzugreifen.
+     Wenn im aktuellen Datenschema keine Dimension vorhanden ist, die ein Währungscode-Feld enthält, können Sie mit [Datenvorgabe](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html?lang=de), [Daten-Distiller](https://experienceleague.adobe.com/docs/experience-platform/query/data-distiller/overview.html) oder [Abgeleitete Felder](/help/data-views/derived-fields/derived-fields.md) ein neues Währungscode-Feld erstellen. Die Datenvorbereitung eignet sich nur für neue Implementierungen, da sie nur für künftige Implementierungen geeignet ist. Je nach Einrichtung eines Unternehmens können Data Distiller und abgeleitete Felder verwendet werden, um historisch auf die Währungscodewerte zuzugreifen.
 
-   * Im [!UICONTROL **Währung konvertieren und anzeigen in**] auswählen, die Währung, in die die Daten konvertiert werden sollen.
+   * Wählen Sie im Feld [!UICONTROL **Währung konvertieren und in**] anzeigen die Währung aus, in die die Daten konvertiert werden sollen.
 
 1. Wiederholen Sie diese Schritte, wenn Sie die Währungsumrechnung auf zusätzliche Metriken anwenden möchten.
 

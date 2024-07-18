@@ -25,7 +25,7 @@ So ändern Sie die Report Builder-Einstellungen
 
 1. Klicken Sie auf **Anwenden**.
 
-   ![Datumsbereich des Report Builders mit der Schaltfläche Abbrechen und Anwenden](./assets/image38.png)
+   ![Datumsbereich des Report Builders, in dem die Schaltfläche Abbrechen und Anwenden angezeigt wird.](./assets/image38.png)
 
 ## Offline-Modus
 

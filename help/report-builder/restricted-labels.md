@@ -34,7 +34,7 @@ Unter Customer Journey Analytics werden zwei Adobe definierte Richtlinien angeze
 
 Komponenten, die von diesen Richtlinien betroffen sind, sind grau ausgeblendet. Wenn Sie den Mauszeiger über eine Komponente bewegen, auf die eine Richtlinie angewendet wurde, wird ein Hinweis angezeigt, der Folgendes angibt: **Auf dieses Feld wurden Richtlinien angewendet, die die Verwendung dieser Daten untersagen.** Weitere Informationen finden Sie unter [Beschriftungen und Richtlinien](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-governance.html?lang=de).
 
-![Der Richtlinientext, der die verbotene Verwendung von Daten angibt.](assets/rb-restricted-label.png)
+![Der Richtlinienvermerk, der die verbotene Verwendung von Daten angibt.](assets/rb-restricted-label.png)
 
 ## Aktualisieren von Berichten mit eingeschränkten Daten
 

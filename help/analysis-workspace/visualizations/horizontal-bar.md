@@ -23,8 +23,8 @@ Diese Visualisierung zeigt Horizontalbalken, die verschiedene Werte aus einer od
 
 Diese Visualisierung entspricht dem [!UICONTROL horizontalen Balkendiagramm], die Serien sind hier jedoch gestapelt.
 
-![Eine gestapelte horizontale Leiste mit Seitenansichten, Besuchen, Einstiegen und Ausstiegen.](assets/horizontal-bar-stacked.png)
+![Ein gestapelter horizontaler Balken, der Seitenansichten, Besuche, Einstiege und Ausstiege anzeigt.](assets/horizontal-bar-stacked.png)
 
 Mit der neuen Einstellung [!UICONTROL Horizontalbalken gestapelt] erhalten Sie eine zu „100 % gestapelte“ Visualisierung.
 
-![Horizontalbalken wurden zu 100 % gestapelt und zeigen Besuche, Seitenansichten und Unique Visitors an.](assets/horizstacked100.png)
+![Horizontalbalken wurden zu 100 % mit Besuchen, Seitenansichten und Unique Visitors gestapelt.](assets/horizstacked100.png)

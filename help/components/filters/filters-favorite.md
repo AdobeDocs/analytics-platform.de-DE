@@ -17,4 +17,4 @@ Das Kennzeichnen von Filtern als Favoriten bietet eine weitere Möglichkeit, die
 
 1. Wählen Sie im Filter-Manager den Stern neben allen Filtern aus, die Sie als Favoriten kennzeichnen möchten. Der Stern wird gelb, wenn Sie ihn auswählen.
 
-1. (Optional) Sie können Ihre Filterliste nach Favoriten sortieren. Wählen Sie in der linken Leiste das Symbol Filter aus und wählen Sie dann [!UICONTROL **Sonstige Filter**] > [!UICONTROL **Favoriten**].
+1. (Optional) Sie können Ihre Filterliste nach Favoriten sortieren. Wählen Sie in der linken Leiste das Symbol Filter und dann [!UICONTROL **Sonstige Filter**] > [!UICONTROL **Favoriten**] aus.

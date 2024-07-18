@@ -54,11 +54,11 @@ Gehen Sie folgendermaßen vor, um einen Adobe Analytics-Quell-Connector zu erste
 
 3. Wählen Sie in der Adobe Analytics-Kachel **[!UICONTROL Einrichten]** oder **[!UICONTROL Daten hinzufügen]** aus.
 
-   ![Adobe Experience Platform-Fenster mit ausgewählten Quellen zusammen mit Adobe-Anwendungen und hervorgehobenen Daten hinzufügen.](./assets/sources-overview.png)
+   ![Adobe Experience Platform-Fenster mit ausgewählten Quellen zusammen mit Adobe-Anwendungen und hervorgehobenen Daten hinzufügen](./assets/sources-overview.png).
 
 4. Wählen Sie **[!UICONTROL Report Suite]** aus. Wählen Sie in der Liste der Report Suites die gewünschte Report Suite aus.
 
-   ![Adobe Experience Platform-Fenster mit der Report Suite-Liste](./assets/report-suites.png)
+   ![Adobe Experience Platform-Fenster mit der Report Suites-Liste](./assets/report-suites.png)
 
    Klicken Sie auf **[!UICONTROL Weiter]**.
 
@@ -70,13 +70,13 @@ Gehen Sie folgendermaßen vor, um einen Adobe Analytics-Quell-Connector zu erste
 
 6. Benennen Sie den Datenfluss und geben Sie (optional) eine Beschreibung ein.
 
-   ![Adobe Experience Platform-Fenster, in dem der Abschnitt mit den Datenflüssen hervorgehoben wird](./assets/dataflow-detail.png)
+   ![Adobe Experience Platform-Fenster, das den Detailabschnitt des Datenflusses hervorhebt](./assets/dataflow-detail.png)
 
    Wählen Sie **[!UICONTROL Weiter]** aus.
 
 7. Überprüfen Sie die Verbindung und wählen Sie **[!UICONTROL Beenden]**.
 
-   ![Adobe Experience Platform-Fenster, in dem die Abschnitte Verbinden und Datentyp zur Überprüfung hervorgehoben werden](./assets/review.png)
+   ![Adobe Experience Platform-Fenster, das die Abschnitte Verbinden und Datentyp zur Überprüfung hervorhebt](./assets/review.png)
 
 
 Nachdem die Verbindung erstellt wurde, wird der Datenfluss automatisch erstellt, um einen Datensatz mit den Adobe Analytics-Daten aus Ihrer Report Suite zu füllen. Der Datenfluss erfasst bis zu 13 Monate historischer Daten für Produktions-Sandboxes. Die Aufstockung in Nicht-Produktions-Sandboxes ist auf drei Monate beschränkt.
@@ -112,7 +112,7 @@ Gehen Sie folgendermaßen vor, um eine Verbindung zu erstellen:
 
    - Wählen Sie den automatisch vom Adobe Analytics-Quell-Connector erstellten Datensatz sowie alle anderen Datensätze aus, die in Ihre Verbindung eingeschlossen werden sollen.
 
-     ![Fenster &quot;Datensätze hinzufügen&quot;](./assets/cja-connections-2a.png)
+     ![Datensatzfenster hinzufügen](./assets/cja-connections-2a.png)
 
    - Wählen Sie **[!UICONTROL Weiter]** aus.
 

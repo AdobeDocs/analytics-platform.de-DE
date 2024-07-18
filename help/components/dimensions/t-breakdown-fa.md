@@ -22,7 +22,7 @@ Sie können Ihre Daten für Ihre spezifischen Anforderungen unbegrenzt aufschlü
 1. [Erstellen Sie ein Projekt](/help/analysis-workspace/home.md) mit einer Datentabelle.
 1. Klicken Sie in der Datentabelle mit der rechten Maustaste auf einen Zeileneintrag und wählen Sie **[!UICONTROL Aufschlüsselung]** > *`<item>`* aus.
 
-   ![Schrittergebnis mit ausgewählter Option Warnhinweis aus Auswahl erstellen](assets/fa_data_table_actions.png)
+   ![Schrittergebnis mit ausgewähltem Warnhinweis aus Auswahl erstellen.](assets/fa_data_table_actions.png)
 
    Sie können Metriken nach Dimensionselementen oder Zielgruppenfiltern über ausgewählte Zeiträume aufschlüsseln. Sie können auch noch granularer aufschlüsseln.
 

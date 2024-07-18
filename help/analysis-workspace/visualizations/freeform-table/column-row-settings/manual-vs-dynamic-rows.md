@@ -23,7 +23,7 @@ Wenn Sie eine Dimension in eine Freiform-Tabelle ablegen, werden dynamische Zeil
 
 Wenn Sie beispielsweise die Dimension „Browser-Typ“ in die Tabelle ziehen, kehren die obersten Dimensionselemente des Browser-Typs (z. B. Microsoft, Apple, Google usw.) dynamisch zu den Tabellenzeilen zurück. Wenn sie in eine Spalte abgelegt wurde, werden die obersten 5 Browsertyp-Dimensionselemente dynamisch zurückgegeben.
 
-Dynamische Dimensionselemente verfügen über die Zeilenfilteroption und die X-Symbole und tun dies **not** Schloss-Symbol vorhanden. <!--do they have the lock icon? --> Wenn Sie auf das x neben einem dynamischen Dimensionselement klicken, wird automatisch ein Filter angewendet. Weitere Informationen zum Anwenden von Filtern auf Tabellen finden Sie unter [Tabellen filtern und sortieren](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md).
+Dynamische Dimensionselemente verfügen über die Zeilenfilteroption und die X-Symbole und verfügen nicht über das Sperrsymbol (**nicht** ). <!--do they have the lock icon? --> Wenn Sie auf das x neben einem dynamischen Dimensionselement klicken, wird automatisch ein Filter angewendet. Weitere Informationen zum Anwenden von Filtern auf Tabellen finden Sie unter [Tabellen filtern und sortieren](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md).
 
 
 ![Eine Freiformtabelle, die das Filtersymbol hervorhebt.](assets/dynamic-items.png)
@@ -47,7 +47,7 @@ Statische Dimensionselemente verfügen **nicht** über die Zeilenfilteroption. S
 
 Dimensionselemente aus verschiedenen Dimensionen können derselben Tabelle hinzugefügt werden. In diesen Fällen steht in der Kopfzeile der Zeile „Gemischte Dimensionen“. Diese Dimensionselemente sind statisch. Fügen Sie beispielsweise bestimmte Dimensionselemente aus der Dimension „Browser-Typ“ und andere Dimensionselemente aus der Dimension „Browser“ hinzu.
 
-![Eine Freiformtabelle, die die Spalte Gemischte Dimensionen hervorhebt.](assets/mixed-dimensions.png)
+![Eine Freiformtabelle, die die Spalte &quot;Gemischte Dimensionen&quot;hervorhebt.](assets/mixed-dimensions.png)
 
 ## Freiform-Gesamtzeilen
 

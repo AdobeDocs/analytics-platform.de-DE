@@ -5,8 +5,8 @@ feature: Calculated Metrics
 exl-id: b2a3e4e3-f0aa-4505-b3f5-7d9f14dc1640
 source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '352'
-ht-degree: 28%
+source-wordcount: '338'
+ht-degree: 26%
 
 ---
 
@@ -23,9 +23,9 @@ So geben Sie eine berechnete Metrik frei:
 
 1. Aktivieren Sie im Manager für berechnete Metriken das Kontrollkästchen neben der Metrik, die Sie freigeben möchten.
 
-   ![Manager für berechnete Metriken, der die verfügbaren Symbole oben im Fenster anzeigt, einschließlich Filter ausblenden, Taggen, Freigeben, Löschen und Kopieren.](assets/cm_task_bar.png)
+   ![Manager für berechnete Metriken zeigt die verfügbaren Symbole oben im Fenster an, einschließlich Filter ausblenden, Taggen, Freigeben, Löschen und Kopieren.](assets/cm_task_bar.png)
 
-1. Wählen Sie die **[!UICONTROL Freigeben]** Symbol. ![](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Share_18_N.svg)
+1. Wählen Sie das Symbol **[!UICONTROL Freigabe]** aus. ![](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Share_18_N.svg)
 
    Das Dialogfeld Berechnete Metrik freigeben wird angezeigt.
 
@@ -35,11 +35,11 @@ So geben Sie eine berechnete Metrik frei:
 
 1. Wählen Sie aus, für wen Sie freigeben möchten:
 
-   * **[!UICONTROL Alle]** (Nur Administratoren): Teilt Inhalte für alle Benutzer in der Organisation frei.
+   * **[!UICONTROL Alle]** (nur Administratoren): Teilt Inhalte für alle Benutzer in der Organisation frei.
 
-     Erwägen Sie die Freigabe für alle nur dann, wenn sie für das gesamte Unternehmen von Nutzen ist und von jedem bequem verwendet werden kann. In diesem Fall sollten Sie es auch in Erwägung ziehen, [genehmigte Metrik](/help/components/calc-metrics/cm-workflow/cm-approving.md).
+     Erwägen Sie die Freigabe für alle nur dann, wenn sie für das gesamte Unternehmen von Nutzen ist und von jedem bequem verwendet werden kann. In diesem Fall sollten Sie es auch zu einer [genehmigten Metrik](/help/components/calc-metrics/cm-workflow/cm-approving.md) machen.
 
-   * **[!UICONTROL Gruppen]** (Nur Administratoren): Wählen Sie alle Gruppen aus, für die Sie freigeben möchten.
+   * **[!UICONTROL Gruppen]** (nur Administratoren): Wählen Sie alle Gruppen aus, für die Sie freigeben möchten.
 
      Erwägen Sie die Freigabe für eine Gruppe, wenn die Metrik für dieses Team einen Geschäftswert bietet.
 
@@ -53,4 +53,4 @@ So geben Sie eine berechnete Metrik frei:
 
 1. Sie können nach für Sie freigegebenen Metriken filtern, indem Sie **[!UICONTROL Filter]** > **[!UICONTROL Weitere Filter]** > **[!UICONTROL Für mich freigegeben]** verwenden.
 
-1. (Optional) Um die Liste der berechneten Metriken im Manager für berechnete Metriken zu filtern und nur Metriken anzuzeigen, die für Sie freigegeben sind, wählen Sie die **Filter** Symbol, erweitern **[!UICONTROL Sonstige Filter]**, wählen Sie **[!UICONTROL Freigegeben für mich]**.
+1. (Optional) Um die Liste der berechneten Metriken im Manager für berechnete Metriken so zu filtern, dass nur Metriken angezeigt werden, die für Sie freigegeben sind, wählen Sie das Symbol **Filter**, erweitern Sie **[!UICONTROL Sonstige Filter]** und wählen Sie dann **[!UICONTROL Für mich freigegeben]** aus.

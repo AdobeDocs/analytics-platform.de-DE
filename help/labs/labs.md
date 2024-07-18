@@ -31,7 +31,7 @@ So greifen Sie auf [!UICONTROL Labs] zu:
 
 1. Wenn Sie noch keinen Zugriff auf [!UICONTROL Workspace] und [!UICONTROL Labs] haben, bitten Sie Ihren Administrator um Berechtigungen.
 
-1. Klicken Sie unter Customer Journey Analytics auf die **[!UICONTROL Labs]** Registerkarte.
+1. Klicken Sie unter Customer Journey Analytics auf die Registerkarte **[!UICONTROL Labs]** .
 
 ## Prototyp bewerten
 
@@ -65,7 +65,7 @@ So starten und bewerten Sie einen Prototyp:
 
 1. Wenn Sie einen anderen Prototyp testen oder die Prototypumgebung verlassen möchten, klicken Sie oben rechts im Bildschirm auf **[!UICONTROL Prototyp verlassen]** und füllen Sie die kurze Umfrage zum Prototyp aus. Änderungen, die an einem Prototypprojekt vorgenommen wurden, gehen beim Verlassen der Prototypumgebung verloren.
 
-   ![Feedback-Fenster für intelligente Pfade](assets/short-survey.png)
+   ![Intelligentes Pfade-Feedback-Fenster](assets/short-survey.png)
 
 1. Klicken Sie auf **[!UICONTROL Senden]**, um zum Hauptportal „Vorschau“ zurückzukehren.
 

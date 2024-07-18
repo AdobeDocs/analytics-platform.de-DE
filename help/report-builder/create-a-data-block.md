@@ -23,7 +23,7 @@ Konfigurieren Sie die anfänglichen Datenblockparameter für die Position des Da
 
 1. Klicken Sie auf **Datenblock erstellen**.
 
-   ![Screenshot mit der Option Datenblock erstellen](./assets/create_db.png)
+   ![ Screenshot mit der Option &quot;Datenblock erstellen&quot;.](./assets/create_db.png)
 
 1. Legen Sie den **Speicherort des Datenblocks** fest.
 
@@ -41,7 +41,7 @@ Konfigurieren Sie die anfänglichen Datenblockparameter für die Position des Da
 
 1. Klicken Sie auf **Weiter**.
 
-   ![Screenshot mit der Option Datumsbereich und der aktiven Schaltfläche Weiter](./assets/choose_date_data_view3.png)
+   ![Screenshot mit der Option &quot;Datumsbereich&quot;und der aktiven Schaltfläche &quot;Weiter&quot;](./assets/choose_date_data_view3.png)
 
    Nach der Konfiguration des Datenblocks können Sie Dimensionen, Metriken und Filter auswählen, um Ihren Datenblock zu erstellen. Die Registerkarten „Dimensionen“, „Metriken“ und „Filter“ werden über dem Bereich „Tabellen-Builder“ angezeigt.
 
@@ -71,13 +71,13 @@ Um den Datenblock zu erstellen, wählen Sie Berichtkomponenten aus und passen Si
 
    Wenn Sie Komponenten zur Tabelle hinzufügen, wird eine Vorschau des Datenblocks an der Stelle des Datenblocks im Arbeitsblatt angezeigt. Das Layout der Datenblock-Vorschau wird automatisch aktualisiert, wenn Sie in der Tabelle Elemente hinzufügen, verschieben oder entfernen.
 
-   ![Screenshot mit den hinzugefügten Komponenten und dem aktualisierten Arbeitsblatt.](./assets/image10.png)
+   ![ Screenshot mit den hinzugefügten Komponenten und dem aktualisierten Arbeitsblatt.](./assets/image10.png)
 
    **Anzeigen oder Ausblenden von Zeilen- und Spaltenüberschriften**
 
-1. Klicken Sie auf **Verzeichnis** Einstellungssymbol.
+1. Klicken Sie auf das Symbol **Tabellen**-Einstellungen.
 
-   ![Screenshot mit der Option Tabelleneinstellungen](./assets/table-settings.png){width="35%"}
+   ![ Screenshot mit der Option Tabelleneinstellungen.](./assets/table-settings.png){width="35%"}
 
 1. Aktivieren oder deaktivieren Sie die Option zum Anzeigen von Zeilen- und Spaltenüberschriften. Die Kopfzeilen werden standardmäßig angezeigt.
 
@@ -85,7 +85,7 @@ Um den Datenblock zu erstellen, wählen Sie Berichtkomponenten aus und passen Si
 
 1. Klicken Sie auf das Auslassungssymbol in den Dimensionen oder Spaltenüberschriften, um die Einstellungen anzuzeigen.
 
-   ![Das Symbol mit Auslassungspunkten im Abschnitt Zeile .](./assets/row-heading.png){width="35%"}
+   ![Das Symbol mit Auslassungspunkten im Abschnitt &quot;Zeile&quot;.](./assets/row-heading.png){width="35%"}
 
 1. Klicken Sie auf Ausblenden oder Anzeigen , um die Dimensionsbezeichnungen oder Spaltenüberschriften umzuschalten. Alle Bezeichnungen werden standardmäßig angezeigt.
 
@@ -93,7 +93,7 @@ Um den Datenblock zu erstellen, wählen Sie Berichtkomponenten aus und passen Si
 
    Eine Verarbeitungsmeldung wird angezeigt, während die Analysedaten abgerufen werden.
 
-   ![Die Verarbeitungsmeldung.](./assets/image11.png)
+   ![ Die Verarbeitungsmeldung.](./assets/image11.png)
 
    Report Builder ruft die Daten ab und zeigt den abgeschlossenen Datenblock im Arbeitsblatt an.
 

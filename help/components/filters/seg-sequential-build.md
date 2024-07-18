@@ -2,7 +2,8 @@
 description: Sequenzielle Filter werden mit dem THEN -Operator anstelle von AND oder OR erstellt. DANN bedeutet, dass eine Filterbedingung auftritt, gefolgt von einer anderen. Standardmäßig identifiziert ein sequenzieller Filter alle übereinstimmenden Daten mit dem Filter "Alle einschließen". Sequenzielle Filter können mithilfe der Optionen "Nur vor Sequenz"und "Nur nach Sequenz"weiter in eine Teilmenge übereinstimmender Treffer gefiltert werden.
 title: Sequenzielle Filter erstellen
 feature: Filters
-source-git-commit: 2a9880148864140254d8acb0a53d701c2986dcb1
+exl-id: 64cb10b5-36f0-42c8-b687-ae5de5ced8b5
+source-git-commit: 85abe07d29ad74578aa5bf6a23ae4016b0e9d82f
 workflow-type: tm+mt
 source-wordcount: '3918'
 ht-degree: 65%
@@ -33,7 +34,7 @@ Beim Erstellen eines Filters, bei dem &quot;Alle einschließen&quot;festgelegt i
 
 ## „Nur vor Sequenz“ und „Nur nach Sequenz“ {#only_before_after}
 
-Die Optionen **[!UICONTROL Nur vor Sequenz]** und **[!UICONTROL Nur nach Sequenz]** Filtern Sie den Filter nach einer Teilmenge von Daten vor oder nach der angegebenen Sequenz.
+Die Optionen **[!UICONTROL Nur vor Sequenz]** und **[!UICONTROL Nur nach Sequenz]** filtern den Filter vor oder nach der angegebenen Sequenz nach einer Teilmenge an Daten.
 
 * **Nur vor Sequenz**: Umfasst alle Treffer vor einer Sequenz sowie den ersten Treffer der Sequenz selbst (siehe Beispiel 1 und 3). Wenn eine Sequenz innerhalb eines Pfads mehrmals vorkommt, umfasst „Nur vor Sequenz“ den ersten Treffer des letzten Vorkommens der Sequenz sowie alle vorangegangenen Treffer (siehe Beispiel 2).
 * **Nur nach Sequenz**: Umfasst alle Treffer nach einer Sequenz sowie den letzten Treffer der Sequenz selbst (siehe Beispiel 1 und 3). Wenn eine Sequenz innerhalb eines Pfads mehrmals vorkommt, umfasst „Nur nach Sequenz“ den letzten Treffer des ersten Vorkommens der Sequenz sowie alle darauffolgenden Treffer (siehe Beispiel 2).
@@ -88,7 +89,7 @@ Im Folgenden finden Sie Beispiele für die Verwendung des Filters.
 1. Besucher einer Sport-Site sehen sich die Football-Landingpage und dann die Basketball-Landingpage in sequenzieller Reihenfolge an, aber nicht unbedingt während desselben Besuchs. Dies löst eine Kampagne aus, die während der Football-Saison Basketball-Inhalte an Football-Besucher liefert.
 1. Der Händler ermittelt die Beziehung zwischen denen, die auf der Kundentreueseite landen und dann zu irgendeinem Zeitpunkt während des Besuchs oder bei einem anderen Besuch zur Videoseite wechseln.
 
-**Filter erstellen**
+**Diesen Filter erstellen**
 
 Sie verschachteln zwei Seitenregeln in einem [!UICONTROL Besucherbehälter] der obersten Ebene und sequenzieren die Seitentreffer mit dem [!UICONTROL THEN]-Operator.
 
@@ -107,9 +108,9 @@ Im Folgenden finden Sie Beispiele für die Verwendung dieses Filtertyps:
 * Besucher der Sportseite eine Nachrichten-Site, die anschließend in einer anderen Sitzung die Sportseite erneut besuchen.
 * Ein Bekleidungshändler sieht eine Beziehung zwischen Besuchern, die in einer Sitzung auf einer Landingpage ankommen und dann in einer anderen Sitzung direkt zur Kassenseite gehen.
 
-**Filter erstellen**
+**Diesen Filter erstellen**
 
-Dieses Beispiel verschachtelt zwei **[!UICONTROL Besuch]** Container innerhalb der obersten Ebene **[!UICONTROL Besucher]** Container und Sequenzen des Filters mit dem [!UICONTROL THEN] Operator.
+In diesem Beispiel werden zwei **[!UICONTROL Besuche]** -Container im obersten **[!UICONTROL Besucher]** -Container verschachtelt und der Filter mithilfe des [!UICONTROL DANN] -Operators sequenziert.
 
 ![](assets/visitor_seq_across_visits.png)
 
@@ -126,7 +127,7 @@ Im Folgenden finden Sie Beispiele für die Verwendung dieses Filtertyps:
 * Besucher besuchen zuerst eine Nachrichten-Site und sehen sich dann bei demselben Besuch die Sportseite an. Bei einem anderen Besuch sieht sich der Besucher die Wetterseite an.
 * Ein Händler definiert Besucher, die die Hauptseite besuchen und dann zur Seite „Mein Konto“ wechseln. Bei einem anderen Besuch besuchen sie die Seite „Einkaufswagen anzeigen“.
 
-**Filter erstellen**
+**Diesen Filter erstellen**
 
 1. Legen Sie zwei Seitendimensionen aus den linken Fenstern in einem [!UICONTROL Besucherbehälter] der obersten Ebene ab.
 1. Fügen Sie zwischen den beiden den THEN-Operator ein.
@@ -136,7 +137,7 @@ Im Folgenden finden Sie Beispiele für die Verwendung dieses Filtertyps:
 
 ## Aggregieren von Containern {#aggregate_containers}
 
-Durch das Hinzufügen mehrerer [!UICONTROL Trefferbehälter] innerhalb eines [!UICONTROL Besucherbehälters] können Sie die entsprechenden Operatoren zwischen identischen Behältertypen anwenden und Regeln und Dimensionen wie Seiten- und Besuchsnummer verwenden, um die Seitenansicht zu definieren und eine Sequenzdefinition innerhalb des [!UICONTROL Trefferbehälters] bereitzustellen. Durch Anwendung der Logik auf Trefferebene können Sie Übereinstimmungen auf derselben Ebene von Treffern innerhalb der [!UICONTROL Besucher] Container , um eine Vielzahl von Filtertypen zu erstellen.
+Durch das Hinzufügen mehrerer [!UICONTROL Trefferbehälter] innerhalb eines [!UICONTROL Besucherbehälters] können Sie die entsprechenden Operatoren zwischen identischen Behältertypen anwenden und Regeln und Dimensionen wie Seiten- und Besuchsnummer verwenden, um die Seitenansicht zu definieren und eine Sequenzdefinition innerhalb des [!UICONTROL Trefferbehälters] bereitzustellen. Wenn Sie eine Logik auf Trefferebene anwenden, können Sie Übereinstimmungen auf derselben Ebene von Treffern innerhalb des [!UICONTROL Besucher] -Containers einschränken und kombinieren, um eine Vielzahl von Filtertypen zu erstellen.
 
 **Beispiel**: Die Besucher haben Seite A nach dem ersten Treffer in der Sequenz von Seitenansichten (in diesem Beispiel Seite D) besucht. Anschließend haben sie ungeachtet der Anzahl der Besuche entweder Seite B oder Seite C besucht.
 
@@ -147,7 +148,7 @@ Im Folgenden finden Sie Beispiele für die Verwendung dieses Filtertyps:
 * Erkennen von Besuchern, die während eines Besuchs zur Haupt-Landingpage gelangen, dann bei einem anderen Besuch die Herrenbekleidungsseite ansehen und sich dann bei einem anderen Besuch entweder die Landingpage für Damen- oder Kinderbekleidung ansehen.
 * Ein e-Zine erfasst Besucher, die bei einem Besuch die Homepage besuchen, bei einem anderen Besuch die Sportseite und bei einem anderen Besuch die Kommentarseite.
 
-**Filter erstellen**
+**Diesen Filter erstellen**
 
 1. Wählen Sie den [!UICONTROL Besucherbehälter] als Behälter der obersten Ebene aus.
 1. Fügen Sie zwei weitere Behälter der [!UICONTROL Trefferebene] hinzu – eine Dimension mit einer geeigneten numerischen Dimension wurde auf derselben [!UICONTROL Trefferebene] durch die [!UICONTROL AND]- und [!UICONTROL OR]-Operatoren verknüpft.
@@ -159,11 +160,11 @@ Im Folgenden finden Sie Beispiele für die Verwendung dieses Filtertyps:
 
 ## &quot;Verschachtelung&quot;in sequenziellen Filtern {#nesting}
 
-Durch Platzierung von Checkpoints an beiden [!UICONTROL Besuch] und [!UICONTROL Treffer] -Ebene können Sie den Filter so einschränken, dass Anforderungen innerhalb eines bestimmten Besuchs sowie an einen bestimmten Treffer erfüllt werden.
+Wenn Sie Checkpoints sowohl auf der Ebene [!UICONTROL Besuch] als auch auf der Ebene [!UICONTROL Treffer] platzieren, können Sie den Filter so einschränken, dass Anforderungen innerhalb eines bestimmten Besuchs sowie an einen bestimmten Treffer erfüllt werden.
 
 **Beispiel**: Besucher hat Seite A und dann Seite B im selben Besuch besucht. Bei einem neuen Besuch ist der Besucher dann zur Seite C gewechselt.
 
-**Filter erstellen**
+**Diesen Filter erstellen**
 
 1. Legen Sie unter einem [!UICONTROL Besuchebehälter] der obersten Ebene zwei Seitendimensionen ab.
 1. Wählen Sie beide Regeln aus, klicken Sie auf **[!UICONTROL Optionen]** > **[!UICONTROL Behälter aus Auswahl hinzufügen]** und ändern Sie ihn in einen [!UICONTROL Besuchebehälter].
@@ -179,11 +180,11 @@ Segmentregeln beinhalten alle Daten, es sei denn, Sie schließen mithilfe der Re
 
 Beispiel:
 
-* **Schließen Sie Seiten aus**. Verwenden Sie eine Filterregel, um eine bestimmte Seite auszuschließen (z. B. *`Home Page`*), erstellen Sie eine Trefferregel, bei der die Seite der &quot;Homepage&quot;entspricht, und schließen Sie sie dann aus. Diese Regel schließt mit Ausnahme der Homepage automatisch alle Werte ein.
+* **Schließen Sie Seiten aus**. Verwenden Sie eine Filterregel, um eine bestimmte Seite (z. B. *`Home Page`*) aus einem Bericht auszuschließen, erstellen Sie eine Trefferregel, bei der die Seite &quot;Homepage&quot;entspricht, und schließen Sie sie dann aus. Diese Regel schließt mit Ausnahme der Homepage automatisch alle Werte ein.
 * **Schließen Sie die Referrerdomäne aus**. Verwenden Sie eine Regel, die nur Referrerdomänen aus „Google.com“ einschließt und alle anderen Domänen ausschließt.
 * **Identifizieren Sie Nicht-Käufer**. Bestimmen Sie, wann Bestellungen größer als null sind, und schließen Sie dann den [!UICONTROL Besucher] aus.
 
-Der [!UICONTROL Exclude] kann zum Identifizieren einer Sequenz verwendet werden, in der vom Besucher keine spezifischen Besuche oder Treffer ausgeführt wurden. [!UICONTROL Ausschluss-Checkpoints] kann auch in eine logische Gruppe einbezogen werden (siehe unten).
+Der [!UICONTROL Exclude] kann zum Identifizieren einer Sequenz verwendet werden, in der vom Besucher keine spezifischen Besuche oder Treffer ausgeführt wurden. [!UICONTROL Ausschluss-Checkpoints] können auch in eine logische Gruppe einbezogen werden (siehe unten).
 
 ### Ausschluss zwischen Checkpoints {#exclude_between}
 
@@ -198,9 +199,9 @@ Im Folgenden finden Sie Beispiele für die Verwendung dieses Filtertyps:
 * Besucher einer Lifestyle-Seite, die direkt den Theaterbereich aufsuchen, ohne die Feuilletonseite zu besuchen.
 * Ein Autohändler sieht einen Zusammenhang zwischen denen, die die Haupt-Landingpage besuchen und dann direkt zur „Kein Interesse“-Kampagne wechseln, ohne die Fahrzeugseite zu besuchen.
 
-**Filter erstellen**
+**Diesen Filter erstellen**
 
-Erstellen Sie einen Filter wie für einen einfachen, gemischten oder verschachtelten sequenziellen Filter und legen Sie dann die [!UICONTROL AUSSCHLIESSEN] -Operator für das Container-Element. Das folgende Beispiel zeigt einen Aggregat-Filter, bei dem die drei [!UICONTROL Treffer] -Container auf die Arbeitsfläche gezogen werden, wird die [!UICONTROL THEN] -Operator zugewiesen ist, um der Behälterlogik beizutreten, und schließen Sie dann den mittleren Seitenansichtsbehälter aus, um nur Besucher einzuschließen, die in der Sequenz von Seite A zu Seite C gewechselt sind.
+Erstellen Sie einen Filter wie für einen einfachen, gemischten oder verschachtelten sequenziellen Filter und legen Sie dann den Operator [!UICONTROL AUSSCHLIESSEN] für das Behälterelement fest. Das Beispiel unten ist ein Aggregat-Filter, bei dem die drei [!UICONTROL Trefferbehälter] in die Arbeitsfläche gezogen werden, der [!UICONTROL DANN] -Operator für die Verknüpfung mit der Behälterlogik zugewiesen ist und dann der mittlere Seitenansichtsbehälter ausgeschlossen wird, um nur Besucher einzuschließen, die in der Sequenz von Seite A zu Seite C gewechselt sind.
 
 ![](assets/exclude_between_checkpoints.png)
 
@@ -210,7 +211,7 @@ Wenn sich der Ausschluss-Checkpoint am Anfang eines sequenziellen Filters befind
 
 Beispielsweise möchte ein Restaurant Benutzer sehen, die dazu neigen, die Haupt-Landingpage zu vermeiden, und direkt zur Bestellseite gehen. Sie können diese Daten anzeigen, indem Sie Treffer auf der Landingpage ausschließen und Treffer auf der Seite &quot;Auftragsausgabe&quot;in einen sequenziellen Filter einschließen.
 
-**Filter erstellen**
+**Diesen Filter erstellen**
 
 Erstellen Sie zwei separate Trefferbehälter in einem Besucherbehälter der obersten Ebene. Legen Sie anschließend den [!UICONTROL EXCLUDE]-Operator für den ersten Behälter fest.
 
@@ -222,9 +223,9 @@ Wenn der Ausschluss-Checkpoint am Ende einer Sequenz liegt, wird sichergestellt,
 
 Ein Bekleidungsgeschäft möchte beispielsweise alle Besucher sehen, die sich eine Produktseite angesehen, aber anschließend nie ihren Warenkorb besucht haben. Dieses Beispiel kann dahingehend vereinfacht werden, dass ein Besucher Seite A besucht und dann beim aktuellen Besuch oder nachfolgenden Besuchen nie zu Seite B geht.
 
-**Filter erstellen**
+**Diesen Filter erstellen**
 
-Erstellen eines einfachen Sequenzfilters durch Ziehen von zwei [!UICONTROL Treffer] Container mit der Arbeitsfläche verknüpfen und sie mithilfe der [!UICONTROL THEN] Operator. Weisen Sie dann den [!UICONTROL EXCLUDE]-Operator dem zweiten [!UICONTROL Trefferbehälter] in der Sequenz zu.
+Erstellen Sie einen einfachen Sequenzfilter, indem Sie zwei [!UICONTROL Trefferbehälter] in die Arbeitsfläche ziehen und sie mit dem Operator [!UICONTROL DANN] verbinden. Weisen Sie dann den [!UICONTROL EXCLUDE]-Operator dem zweiten [!UICONTROL Trefferbehälter] in der Sequenz zu.
 
 ![](assets/exclude_end_sequence.png)
 
@@ -235,11 +236,11 @@ Der [!UICONTROL logische Gruppencontainer] wurde so konzipiert, dass *mehrere Ch
 
 >[!NOTE]
 >
->A [!UICONTROL Logische Gruppe] kann nur in einem sequenziellen Filter definiert werden. Das bedeutet, dass die Variable [!UICONTROL THEN] -Operator wird innerhalb des Ausdrucks verwendet.
+>Eine [!UICONTROL logische Gruppe] kann nur in einem sequenziellen Filter definiert werden, was bedeutet, dass der Operator [!UICONTROL DANN] im Ausdruck verwendet wird.
 
 | Behälterhierarchie | Abbildung | Definition |
 |---|---|---|
-| Standardbehälterhierarchie | ![](assets/nesting_container.png) | Innerhalb der [!UICONTROL Besucher] -Container, die [!UICONTROL Besuch] und [!UICONTROL Treffer] Behälter werden in einer Sequenz verschachtelt, um Filter basierend auf Treffern, der Anzahl Besuche und dem Besucher zu extrahieren. |
+| Standardbehälterhierarchie | ![](assets/nesting_container.png) | Innerhalb des Containers [!UICONTROL Besucher] werden die Container [!UICONTROL Besuch] und [!UICONTROL Treffer] in einer Sequenz verschachtelt, um Filter basierend auf Treffern, der Anzahl Besuche und dem Besucher zu extrahieren. |
 | Logische Containerhierarchie | ![](assets/logic_group_hierarchy.png) | Die Standardbehälterhierarchie ist auch außerhalb des [!UICONTROL Logischen Gruppenbehälters] erforderlich. Innerhalb des [!UICONTROL Logischen Gruppenbehälters] ist für die Checkpoints jedoch keine bestimmte Reihenfolge oder Hierarchie erforderlich. Diese Checkpoints müssen einfach vom Besucher in beliebiger Reihenfolge getroffen werden. |
 
 Logische Gruppen wirken vielleicht abschreckend – hier finden Sie einige Best Practices zur Verwendung dieser Gruppen:
@@ -248,7 +249,7 @@ Logische Gruppen wirken vielleicht abschreckend – hier finden Sie einige Best 
 Wenn Sie sequenzielle Checkpoints gruppieren möchten, ist Ihr „Container“ eine logische Gruppe. Müssen diese sequenziellen Checkpoints jedoch innerhalb eines einzelnen Treffers oder Besuchs auftreten, ist ein „Treffercontainer“ oder ein „Besuchecontainer“ erforderlich. (Natürlich ergibt „Treffer“ keinen Sinn für eine Gruppe sequenzieller Checkpoints, wenn einem Treffer nicht mehr als ein Checkpoint gutgeschrieben werden kann).
 
 **Vereinfachen logische Gruppen das Erstellen sequenzieller Filter?**
-Ja, unter Umständen. Angenommen, Sie versuchen, diesen Besucherfilter zu identifizieren: **Besucher, die Seite A und dann alle Seiten von B, C und D angezeigt haben**
+Ja, unter Umständen. Angenommen, Sie versuchen, diesen Besucherfilter zu identifizieren: **Besucher, die Seite A und dann alle Seiten von B, C und D** angezeigt haben.
 
 Sie können diesen Filter ohne logischen Gruppenbehälter erstellen, er ist jedoch komplex und aufwändig. Sie müssen jede Sequenz von Seiten angeben, die der Besucher anzeigen kann:
 * `Visitor Container [Page A THEN Page B THEN Page C THEN Page D] or`
@@ -276,11 +277,11 @@ Wie andere Container können auch [!UICONTROL logische Gruppencontainer] auf meh
 
 ### Logische Gruppe – Checkpoints in beliebiger Reihenfolge {#any_order}
 
-Die Verwendung der [!UICONTROL logischen Gruppe] ermöglicht Ihnen das Erfüllen von Bedingungen innerhalb der jeweiligen Gruppe, die sich außerhalb der Sequenz befinden. Auf diese Weise können Sie Filter erstellen, bei denen eine [!UICONTROL Besuch] oder [!UICONTROL Treffer] -Container erfolgt unabhängig von der normalen Hierarchie.
+Die Verwendung der [!UICONTROL logischen Gruppe] ermöglicht Ihnen das Erfüllen von Bedingungen innerhalb der jeweiligen Gruppe, die sich außerhalb der Sequenz befinden. Auf diese Weise können Sie Filter erstellen, bei denen unabhängig von der normalen Hierarchie ein [!UICONTROL Besuch] - oder [!UICONTROL Treffer] -Container stattfindet.
 
 **Beispiel**: Besucher, die Seite A und dann Seite B und C in beliebiger Reihenfolge besucht haben.
 
-**Filter erstellen**
+**Diesen Filter erstellen**
 
 Seite B und C sind in einem [!UICONTROL logischen Gruppenbehälter] innerhalb des äußeren [!UICONTROL Besucherbehälters] verschachtelt. Der [!UICONTROL Trefferbehälter] für A wird anschließend vom [!UICONTROL logischen Gruppenbehälter] gefolgt, wobei B und C mithilfe des [!UICONTROL AND]-Operators identifiziert werden. Da sie sich in der [!UICONTROL logischen Gruppe] befindet, wird die Sequenz nicht definiert und durch einen Treffer auf Seite B und C in beliebiger Reihenfolge wird das Argument wahr.
 
@@ -294,11 +295,11 @@ Der Filter muss mindestens mit einem der Checkpoints der logischen Gruppe (B ode
 
 ### Logische Gruppe – Erste Übereinstimmung {#first_match}
 
-Die Verwendung der [!UICONTROL logischen Gruppe] ermöglicht Ihnen das Erfüllen von Bedingungen innerhalb der jeweiligen Gruppe, die sich außerhalb der Sequenz befinden. In diesem ungeordneten Filter für die erste Übereinstimmung wird die [!UICONTROL Logische Gruppe] -Regeln werden zuerst als Seitenansicht von Seite B oder C und dann als erforderliche Ansicht von Seite A identifiziert.
+Die Verwendung der [!UICONTROL logischen Gruppe] ermöglicht Ihnen das Erfüllen von Bedingungen innerhalb der jeweiligen Gruppe, die sich außerhalb der Sequenz befinden. In diesem nicht geordneten Filter für die erste Übereinstimmung werden die Regeln für die [!UICONTROL logische Gruppe] zuerst als Seitenansicht von Seite B oder C und dann als erforderliche Ansicht von Seite A identifiziert.
 
 **Beispiel**: Besucher, die Seite B oder C und anschließend Seite A besucht haben.
 
-**Filter erstellen**
+**Diesen Filter erstellen**
 
 Die Dimensionen von Seite B und C werden innerhalb eines [!UICONTROL Logischen Gruppenbehälters] gruppiert, wobei der [!UICONTROL OR]-Operator ausgewählt ist. Dann folgt der [!UICONTROL Trefferbehälter], der eine Seitenansicht von Seite A als Wert definiert.
 
@@ -306,11 +307,11 @@ Die Dimensionen von Seite B und C werden innerhalb eines [!UICONTROL Logischen G
 
 ### Logische Gruppe – AND-Ausschluss {#lg_exclude_and}
 
-Erstellen von Filtern mithilfe der [!UICONTROL Logische Gruppe] wobei mehrere Seitenansichten aggregiert werden, um zu definieren, welche Seiten getroffen werden müssen, während andere Seiten speziell ausgelassen wurden. ****
+Erstellen Sie Filter mithilfe der [!UICONTROL logischen Gruppe], wobei mehrere Seitenansichten aggregiert werden, um zu definieren, welche Seiten getroffen werden müssen, während andere Seiten speziell ausgelassen wurden. ****
 
 **Beispiel**: Der Besucher hat Seite A besucht. Anschließend hat er Seite B oder C explizit nicht besucht, aber auf Seite D einen Treffer erzielt.
 
-**Filter erstellen**
+**Diesen Filter erstellen**
 
 Erstellen Sie diesen Filter, indem Sie Dimensionen, Ereignisse und vorgefertigte Filter aus den linken Fenstern ziehen. Siehe Abschnitt Erstellen eines logischen Gruppenfilters .
 
@@ -320,11 +321,11 @@ Klicken Sie nach dem Verschachteln der Werte in der [!UICONTROL logischen Gruppe
 
 ### Logische Gruppe – OR-Ausschluss {#lg_exclude_or}
 
-Erstellen von Filtern mithilfe der [!UICONTROL Logische Gruppe] wobei mehrere Seitenansichten aggregiert werden, um zu definieren, welche Seiten getroffen werden müssen, während andere Seiten speziell ausgelassen wurden.
+Erstellen Sie Filter mithilfe der [!UICONTROL logischen Gruppe], wobei mehrere Seitenansichten aggregiert werden, um zu definieren, welche Seiten getroffen werden müssen, während andere Seiten speziell ausgelassen wurden.
 
 **Beispiel**: Besucher, die Seite A besucht haben, die jedoch vor dem Besuch von Seite A die Seite B oder C nicht besucht haben.
 
-**Filter erstellen**
+**Diesen Filter erstellen**
 
 Die ursprünglichen Seiten B und C werden in einem ausgeschlossenen [!UICONTROL logischen Gruppenbehälter] identifiziert und werden dann von einem Treffer auf Seite A durch den Besucher gefolgt.
 
@@ -348,7 +349,7 @@ Mit den [!UICONTROL Within] und [!UICONTROL After]-Behältern und durch Angabe e
 >
 >![Bild](https://git.corp.adobe.com/storage/user/5902/files/70a875e2-0ef9-4459-8648-77c60081d64d)
 >
->Verwenden Sie für dimensionsbasierte Definitionen von Within und After die Optionen im Untermenü. *Sonstige Dimensionen*:
+>Verwenden Sie für dimensionsbasierte Definitionen von Within und After die Optionen im Untermenü *Sonstige Dimensionen*:
 >
 >![Bild](https://git.corp.adobe.com/storage/user/5902/files/b808eeb0-5e3f-499b-8096-c7eb0d51c57a)
 
@@ -362,9 +363,9 @@ Die Dauer wird durch einen einzelnen Großbuchstaben für die Granularität gefo
 
 | Operatoren | Beschreibung |
 |--- |--- |
-| AFTER | Der After-Operator wird zum Angeben einer minimalen Zeitbegrenzung zwischen zwei Checkpoints verwendet. Beim Festlegen der After-Werte beginnt die Zeitbegrenzung mit der Anwendung des Filters. Wenn beispielsweise der Nach -Operator in einem Container festgelegt ist, um Besucher zu identifizieren, die Seite A besuchen, aber erst nach einem Tag zum Besuch von Seite B zurückkehren, beginnt dieser Tag mit dem Verlassen von Seite A durch den Besucher. Damit der Besucher in den Filter aufgenommen wird, müssen nach dem Verlassen von Seite A zur Anzeige von Seite B mindestens 1440 Minuten (ein Tag) vergehen. |
-| WITHIN | Der Within-Operator wird zum Angeben einer maximalen Zeitbegrenzung zwischen zwei Checkpoints verwendet. Wenn der In -Operator beispielsweise für einen Container festgelegt ist, um Besucher zu identifizieren, die Seite A besuchen und dann innerhalb eines Tages zurückkehren und Seite B besuchen, beginnt dieser Tag mit dem Verlassen von Seite A durch den Besucher. Damit er in den Filter aufgenommen wird, hat der Besucher eine maximale Zeit von einem Tag, bevor er Seite B öffnet. Damit der Besucher in den Filter aufgenommen wird, muss der Besuch auf Seite B innerhalb von maximal 1440 Minuten (einen Tag) nach dem Verlassen von Seite A auf Seite B erfolgen. |
-| AFTER/WITHIN | Beim Verwenden der After- und Within-Operatoren gilt es zu beachten, dass beide Operatoren parallel und nicht sequenziell beginnen und enden.   Wenn Sie beispielsweise einen Filter erstellen, bei dem der Container auf Folgendes festgelegt ist:<br>`After = 1 Week(s) and Within = 2 Week(s)`<br>Anschließend sind die Bedingungen zur Identifizierung von Besuchern im Filter nur zwischen 1 und 2 Wochen erfüllt. Beide Bedingungen werden vom Zeitpunkt des ersten Seitentreffers an erzwungen. |
+| AFTER | Der After-Operator wird zum Angeben einer minimalen Zeitbegrenzung zwischen zwei Checkpoints verwendet. Beim Festlegen der After-Werte beginnt die Zeitbegrenzung mit der Anwendung des Filters. Wenn beispielsweise der Nach -Operator in einem Container festgelegt ist, um Besucher zu identifizieren, die Seite A besuchen, aber erst nach einem Tag zum Besuch von Seite B zurückkehren, beginnt dieser Tag mit dem Verlassen von Seite A durch den Besucher.  Damit der Besucher in den Filter aufgenommen wird, müssen nach dem Verlassen von Seite A zur Anzeige von Seite B mindestens 1440 Minuten (ein Tag) vergehen. |
+| WITHIN | Der Within-Operator wird zum Angeben einer maximalen Zeitbegrenzung zwischen zwei Checkpoints verwendet. Wenn der In -Operator beispielsweise für einen Container festgelegt ist, um Besucher zu identifizieren, die Seite A besuchen und dann innerhalb eines Tages zurückkehren und Seite B besuchen, beginnt dieser Tag mit dem Verlassen von Seite A durch den Besucher. Damit er in den Filter aufgenommen wird, hat der Besucher eine maximale Zeit von einem Tag, bevor er Seite B öffnet.   Damit der Besucher in den Filter aufgenommen wird, muss der Besuch auf Seite B innerhalb von maximal 1440 Minuten (einen Tag) nach dem Verlassen von Seite A auf Seite B erfolgen. |
+| AFTER/WITHIN | Beim Verwenden der After- und Within-Operatoren gilt es zu beachten, dass beide Operatoren parallel und nicht sequenziell beginnen und enden.   Wenn Sie beispielsweise einen Filter erstellen, bei dem der Container auf &quot;<br>`After = 1 Week(s) and Within = 2 Week(s)`<br>festgelegt ist, dann werden die Bedingungen zum Identifizieren von Besuchern nur zwischen 1 und 2 Wochen erfüllt. Beide Bedingungen werden vom Zeitpunkt des ersten Seitentreffers an erzwungen. |
 
 ### Verwenden von After-Operatoren {#after}
 
@@ -375,7 +376,7 @@ Die Dauer wird durch einen einzelnen Großbuchstaben für die Granularität gefo
 
 ![](assets/time_between_after_operator.png)
 
-**Segment erstellen**: Dieser Filter wird durch Hinzufügen eines [!UICONTROL Besucher] Container mit zwei [!UICONTROL Treffer] Container. Anschließend können Sie den [!UICONTROL THEN]-Operator festlegen und die Dropdown-Liste für den [!UICONTROL AFTER]-Operator öffnen, um die Wochenanzahl festzulegen.
+**Segment erstellen**: Dieser Filter wird durch Hinzufügen eines [!UICONTROL Besucher] -Containers mit zwei [!UICONTROL Treffer] -Containern erstellt. Anschließend können Sie den [!UICONTROL THEN]-Operator festlegen und die Dropdown-Liste für den [!UICONTROL AFTER]-Operator öffnen, um die Wochenanzahl festzulegen.
 
 ![](assets/after_operator.png)
 
@@ -401,7 +402,7 @@ Wenn „Nach 2 Wochen“ festgelegt ist und am 1. Juni 2019 um 00:01 Uhr auf Sei
 
 ![](assets/time_between_within_operator.png)
 
-**Filter erstellen**: Dieser Filter wird durch Hinzufügen eines [!UICONTROL Besucher] Container, dann mit zwei [!UICONTROL Treffer] Container. Dann können Sie den [!UICONTROL THEN]-Operator festlegen und das Dropdown-Feld [!UICONTROL AFTER] öffnen, um das Intervall festzulegen: Treffer, Seitenansichten, Besuche, Minuten, Stunden, Tage, Wochen, Monate, Quartale oder Jahre.
+**Filter erstellen**: Dieser Filter wird erstellt, indem ein [!UICONTROL Besucher] -Container hinzugefügt und dann mit zwei [!UICONTROL Treffer] -Containern gezogen wird. Dann können Sie den [!UICONTROL THEN]-Operator festlegen und das Dropdown-Feld [!UICONTROL AFTER] öffnen, um das Intervall festzulegen: Treffer, Seitenansichten, Besuche, Minuten, Stunden, Tage, Wochen, Monate, Quartale oder Jahre.
 
 ![](assets/within_operator.png)
 
@@ -411,21 +412,21 @@ Wenn „Nach 2 Wochen“ festgelegt ist und am 1. Juni 2019 um 00:01 Uhr auf Sei
 
 ### Die Within- und After-Operatoren {#within_after}
 
-Verwendung [!UICONTROL Within] und [!UICONTROL Nachher] , um einen maximalen und minimalen Endpunkt an beiden Enden eines Filters bereitzustellen.
+Verwenden Sie [!UICONTROL Within] und [!UICONTROL After] , um einen maximalen und minimalen Endpunkt an beiden Enden eines Filters bereitzustellen.
 
 **Beispiel**: Besucher, die Seite A und dann nach 2 Wochen, aber innerhalb eines Monats, Seite B besucht haben.
 
 ![](assets/time_between_using_both_operators.png)
 
-**Segment erstellen**: Erstellen Sie den Filter durch Sequenzierung von zwei [!UICONTROL Treffer] Behälter in [!UICONTROL Besucher] Container. Legen Sie anschließend die [!UICONTROL After]- und [!UICONTROL Within]-Operatoren fest.
+**Segment erstellen**: Erstellen Sie den Filter, indem Sie zwei [!UICONTROL Trefferbehälter] in einem [!UICONTROL Besucher] -Container sequenzieren. Legen Sie anschließend die [!UICONTROL After]- und [!UICONTROL Within]-Operatoren fest.
 
 ![](assets/within_after_together.png)
 
 **Stimmt überein mit**
 
-Alle Besucher, die am 1. Juni 2019 auf Seite A treffen, kehren nach dem 15. Juni 2019 um 00:01 Uhr zurück, jedoch *before* Der 1. Juli 2019 wird in den Filter aufgenommen. Vergleichen Sie den Abschnitt Zeit zwischen Ausschlüssen .
+Alle Besucher, die am 1. Juni 2019 auf Seite A einen Treffer erzielen, kehren nach dem 15. Juni 2019 um 00:01 Uhr zurück, aber *vor dem 1. Juli 2019 .* Vergleichen Sie den Abschnitt Zeit zwischen Ausschlüssen .
 
-Die [!UICONTROL Nachher] und [!UICONTROL Within] -Operatoren können zusammen verwendet werden, um einen sequenziellen Filter zu definieren.
+Die Operatoren [!UICONTROL Nach] und [!UICONTROL Innerhalb] können zusammen verwendet werden, um einen sequenziellen Filter zu definieren.
 
 ![](assets/time_between_within_after.png)
 

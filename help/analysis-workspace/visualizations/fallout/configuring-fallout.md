@@ -19,7 +19,7 @@ Sie können sogar Filter innerhalb eines Touchpoints hinzufügen. Vielleicht mö
 
 Bezüglich der Anzahl der Schritte, die hinzugefügt, oder der Dimensionen, die verwendet werden können, gibt es keine Einschränkungen.
 
-Sie können Pathing an eVars vornehmen, einschließlich Merchandising-eVars und [listVars](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/page-variables.html?lang=de) (Variablen, die mehrere Werte pro Ereignis aufweisen können, z. B. Produkte, listVars, Merchandising-eVars und Listen-Props). Beispiel: Angenommen, jemand sucht auf der einen Seite nach „Schuhe, Shirt“ und auf der nächsten Seite nach „Schuhe, Socken“. Der nächste Produktflussbericht von Schuhe wird „Shirt und Socken“ lauten, NICHT „Shirt“.
+Sie können Pathing an eVars vornehmen, einschließlich Merchandising-eVars und [listVars](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/page-variables.html?lang=de) (Variablen, die mehrere Werte pro Ereignis haben können, wie Produkte, listVars, Merchandising-eVars und Listen-Props). Beispiel: Angenommen, jemand sucht auf der einen Seite nach „Schuhe, Shirt“ und auf der nächsten Seite nach „Schuhe, Socken“. Der nächste Produktflussbericht von Schuhe wird „Shirt und Socken“ lauten, NICHT „Shirt“.
 
 1. Ziehen Sie eine [!UICONTROL Fallout]-Visualisierung aus dem Dropdownfeld „Visualisierung“ in eine [!UICONTROL Freiformtabelle].
 
@@ -41,11 +41,11 @@ Sie können Pathing an eVars vornehmen, einschließlich Merchandising-eVars und 
    >
    >Hinweis: Mehrere Segmente werden mit AND verbunden, mehrere Elemente wie Dimensionselemente und Metriken hingegen mit OR.
 
-   ![Die Touchpoints &quot;Page:CamerRoll&quot;oder &quot;Page: Camera&quot;wurden hervorgehoben.](assets/multiple_obj_touchpoint.png)
+   ![Die Seiten:CamerRoll oder Seite: Kamera-Touchpoints hervorgehoben.](assets/multiple_obj_touchpoint.png)
 
-1. Sie können auch **einzelne Touchpoints auf das nächste Ereignis beschränken** (im Gegensatz zu &quot;schließlich&quot;) innerhalb des Pfads. Jedem Touchpoint unterliegen die Auswahlmöglichkeiten „Pfad am Ende“ und „Nächster Hit“:
+1. Sie können einzelne Touchpoints auch auf das nächste Ereignis **(im Gegensatz zu &quot;am Ende&quot;) im Pfad beschränken.** Jedem Touchpoint unterliegen die Auswahlmöglichkeiten „Pfad am Ende“ und „Nächster Hit“:
 
-   ![In der Ansicht &quot;Alle Besuche&quot;wurde die Option Pfad am Ende hervorgehoben. ](assets/next-hit-eventually.png)
+   ![Die Ansicht &quot;Alle Besuche&quot;mit der Option &quot;Pfad am Ende&quot;wurde hervorgehoben. ](assets/next-hit-eventually.png)
 
 <table id="table_A91D99D9364B41929CC5A5BC907E8985"> 
  <tbody> 

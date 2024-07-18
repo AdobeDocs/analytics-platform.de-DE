@@ -17,13 +17,13 @@ ht-degree: 75%
 
 Diese Visualisierung entspricht einem Kantengraph, bei dem der Bereich unter der Linie farbig dargestellt ist. Verwenden Sie ein Flächendiagramm, wenn Sie mehrere Metriken darstellen und den Bereich visualisieren möchten, der durch die Schnittmenge von zwei oder mehr Metriken gebildet wird.
 
-![Bereichsvisualisierung, die mehrere Metriken anzeigt, darunter Seitenansichten, Besuche, Unique Visitors und Absprungrate.](assets/area.png)
+![Flächenvisualisierung mit mehreren Metriken, einschließlich Seitenansichten, Besuchen, Unique Visitors und Absprungrate.](assets/area.png)
 
 ## Bereich gestapelt {#stacked}
 
 Diese Visualisierung entspricht einem Flächendiagramm, aber hier beginnt jede Serie über der vorherigen Serie.
 
-![Bereich gestapelt, in dem jede Reihe oben in der vorherigen Reihe angezeigt wird.](assets/area-stacked.png)
+![Bereich gestapelt, der die einzelnen Serien oben in der vorherigen Serie anzeigt.](assets/area-stacked.png)
 
 Mit der neuen Einstellung für gestapelte Bereichsdiagramme erhalten Sie eine zu „100 % gestapelte“ Visualisierung.
 

@@ -16,7 +16,7 @@ ht-degree: 33%
 
 Einige Firewall-Konfigurationen blockieren IP-Adressen, die von den Adobe-Datenerfassungs-Servern oder -Servern stammen, die für den Datenzugriff zuständig sind. Sie können diese Liste von Bereichen verwenden, um die Firewall-Einstellungen Ihres Unternehmens so zu ändern, dass der Zugriff und das Senden von Daten aus Ihrem Unternehmen heraus möglich ist.
 
-Diese Seite enthält IP-Adressen, die Sie Ihrer Zulassungsliste hinzufügen müssen, damit ausgehende Systeme funktionieren, z. B. [Exportieren von Daten in einen Cloud-Anbieter](/help/analysis-workspace/export/export-cloud.md).
+Auf dieser Seite finden Sie IP-Adressen, die Sie Ihrer Zulassungsliste hinzufügen müssen, damit ausgehende Systeme funktionieren, z. B. [Daten an einen Cloud-Anbieter exportieren](/help/analysis-workspace/export/export-cloud.md).
 
 >[!IMPORTANT]
 >
@@ -141,6 +141,6 @@ Diese Seite enthält IP-Adressen, die Sie Ihrer Zulassungsliste hinzufügen müs
 
 >[!MORELIKETHIS]
 >
->[Von Customer Journey Analytics verwendete Domänen](domains.md)
+>[Von Customer Journey Analytics](domains.md) verwendete Domänen
 >
 >[Von der Adobe Experience Cloud verwendete IP-Adressen](https://experienceleague.adobe.com/en/docs/core-services/interface/data-collection/ip-addresses)

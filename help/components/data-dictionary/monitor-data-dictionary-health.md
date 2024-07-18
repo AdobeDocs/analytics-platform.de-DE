@@ -37,7 +37,7 @@ So identifizieren Sie Probleme mit Ihrem Datenwörterbuch:
 
    Das Fenster „Datenwörterbuch“ wird angezeigt.
 
-   ![Ansicht des Administrators des Datenwörterbuchs, in der der Zustand des Wörterbuchs angezeigt wird](assets/data-dictionary-admin.png)
+   ![Ansicht des Datenwörterbuchadministrators mit dem Wörterbuchzustand](assets/data-dictionary-admin.png)
 
 1. Stellen Sie sicher, dass im Dropdown-Menü die richtige Datenansicht ausgewählt ist.
 

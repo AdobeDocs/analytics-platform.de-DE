@@ -36,7 +36,7 @@ Mit der Option „Von Zelle“ können Sie auf Daten verweisen, die in Zellen ei
 
 Sie können den aktuellen Tag für einen beliebigen Datumsbereich ausschließen.
 
-![Report Builder Quick edit panel mit the calendar selected and Exclude today selected.](./assets/image17.png)
+![Report Builder Quick edit panel with calendar selected and Exclude Today selected.](./assets/image17.png)
 
 ## Verwenden des Kalenders
 
@@ -76,7 +76,7 @@ Mit der Option „Rollierende Datumswerte“ können Sie einen Datumsbereich mit
 
 1. Wählen Sie einen rollierenden Ausdruck für Ihr Start- und Enddatum aus.
 
-   ![Datumsbereich des Report Builders, der die Option Rollierende Datumswerte verwenden und den rollierenden Ausdruck anzeigt.](./assets/image19.png)
+   ![Datumsbereich des Report Builders, in dem die Option Rollierende Datumswerte verwenden und der rollierende Ausdruck angezeigt wird.](./assets/image19.png)
 
    **Beginn von** – Ermöglicht die Auswahl des Anfangs eines Tages, einer Woche, eines Monats, eines Quartals oder eines Jahres.
 
@@ -86,11 +86,11 @@ Mit der Option „Rollierende Datumswerte“ können Sie einen Datumsbereich mit
 
 1. Wählen Sie als rollierenden Zeitraum Tag, Woche, Monat, Quartal oder Jahr aus.
 
-   ![Datumsbereich des Report Builders mit dem ausgewählten aktuellen Tag.](./assets/image20.png)
+   ![Datumsbereich des Report Builders, der den ausgewählten aktuellen Tag anzeigt.](./assets/image20.png)
 
 1. Fügen Sie Tage, Wochen, Monate, Quartale oder Jahre ab dem rollierenden Datum hinzu oder subtrahieren Sie diese.
 
-   ![Datumsbereich des Report Builders mit dem ausgewählten Tag plus 14 Tagen.](./assets/image21.png)
+   ![Datumsbereich des Report Builders, der den aktuellen Tag plus 14 ausgewählte Tage anzeigt.](./assets/image21.png)
 
 1. Klicken Sie auf „Weiter“, um den Datenbereich zu definieren.
 
@@ -163,7 +163,7 @@ In der folgenden Tabelle sind Beispiele für Datumsausdrücke aufgeführt.
 
 Der Datumsbereich kann in Zellen eines Arbeitsblatts angegeben werden. Verwenden Sie die Option **Datumsbereich aus Zelle**, um das Start- und Enddatum des Datenblocks aus ausgewählten Zellen auszuwählen. Wenn Sie die Option **Aus Zelle** auswählen, zeigt das Bedienfeld die Felder **Von** und **Bis** an, in die Sie eine Zellenposition eingeben können.
 
-![Aus Zellenblatt1!H4 in Blatt1!I4 auswählen](./assets/image23.png)
+![Aus Zellenblatt1!H4 in Blatt1!I4](./assets/image23.png) auswählen
 
 ## Heute ausschließen
 

@@ -4,7 +4,8 @@ description: Beschreibt die Verwendung von Query Service (Data Distiller) und Da
 solution: Customer Journey Analytics
 feature: Use Cases
 role: Admin
-source-git-commit: 19018e31bb2a46e88a27643fe10c388b40de243e
+exl-id: 14a90758-91eb-4610-8802-1edfdb8b9689
+source-git-commit: 9fef1fddbb4b51efb9282e3ef13501bd498a4546
 workflow-type: tm+mt
 source-wordcount: '2475'
 ht-degree: 10%
@@ -13,21 +14,21 @@ ht-degree: 10%
 
 # Query Service (Data Distiller) und Export von Datensätzen
 
-In diesem Artikel wird erläutert, wie die Kombination aus Experience Platform Query Service (Data Distiller) und Datensatzexport verwendet werden kann, um Folgendes zu implementieren: [Anwendungsfälle für den Datenexport](overview.md):
+In diesem Artikel wird erläutert, wie die Kombination aus Experience Platform Query Service (Data Distiller) und Datensatzexport verwendet werden kann, um die folgenden [Anwendungsfälle für Datenexporte](overview.md) zu implementieren:
 
 - Datenvalidierung
 - Data Lake, Data Warehouse von BI-Tools
 - Bereitschaft für künstliche Intelligenz und maschinelles Lernen.
 
 
-Adobe Analytics kann diese Anwendungsfälle mithilfe der [Daten-Feeds](https://experienceleague.adobe.com/en/docs/analytics/export/analytics-data-feed/data-feed-overview) Funktionalität. Daten-Feeds sind eine leistungsstarke Methode, Rohdaten aus Adobe Analytics abzurufen. In diesem Artikel wird beschrieben, wie Sie ähnliche Rohdaten aus dem Experience Platform abrufen, damit Sie die oben genannten Anwendungsfälle implementieren können. Gegebenenfalls werden die in diesem Artikel beschriebenen Funktionen mit Adobe Analytics Data Feeds verglichen, um Unterschiede in Daten und Prozessen zu klären.
+Adobe Analytics kann diese Anwendungsfälle mithilfe der [Daten-Feeds](https://experienceleague.adobe.com/en/docs/analytics/export/analytics-data-feed/data-feed-overview) -Funktion implementieren. Daten-Feeds sind eine leistungsstarke Methode, Rohdaten aus Adobe Analytics abzurufen. In diesem Artikel wird beschrieben, wie Sie ähnliche Rohdaten aus dem Experience Platform abrufen, damit Sie die oben genannten Anwendungsfälle implementieren können. Gegebenenfalls werden die in diesem Artikel beschriebenen Funktionen mit Adobe Analytics Data Feeds verglichen, um Unterschiede in Daten und Prozessen zu klären.
 
 ## Einführung
 
 Der Datenexport mithilfe von Query Service (Data Distiller) und Datensatzexport besteht aus:
 
-- Definieren einer **Geplante Abfrage** , das die Daten für Ihren Daten-Feed als Ausgabedatensatz generiert ![Ausgabedatensatz](../assets/output-dataset.svg)verwendet **Query Service**.
-- Definieren einer **geplanter Datensatzexport** , der den Ausgabedatensatz in ein Cloud-Speicher-Ziel exportiert, mithilfe von **Datensatzexport**.
+- Definieren einer **geplanten Abfrage** , mit der die Daten für Ihren Daten-Feed als Ausgabedatensatz ![Ausgabedatensatz ](../assets/output-dataset.svg) generiert werden, wobei **Query Service** verwendet wird.
+- Definieren eines **geplanten Datensatzexports**, der den Ausgabedatensatz mithilfe von **Datensatzexport** an ein Cloud-Speicher-Ziel exportiert.
 
 ![Daten-Feed](../assets/queryservice-export-datasets.svg)
 
@@ -37,8 +38,8 @@ Der Datenexport mithilfe von Query Service (Data Distiller) und Datensatzexport 
 Stellen Sie sicher, dass Sie alle folgenden Anforderungen erfüllen, bevor Sie die in diesem Anwendungsbeispiel beschriebene Funktion verwenden:
 
 - Eine funktionierende Implementierung, die Daten in den Experience Platform Data Lake sammelt.
-- Zugriff auf das Data Distiller-Add-on, um sicherzustellen, dass Sie berechtigt sind, Batch-Abfragen auszuführen. Siehe [Query Service-Verpackung](https://experienceleague.adobe.com/en/docs/experience-platform/query/packaging) für weitere Informationen.
-- Zugriff auf die Funktion zum Exportieren von Datensätzen , die beim Kauf des Real-Time CDP Prime- oder Ultimate-Packages, Adobe Journey Optimizer oder Customer Journey Analytics verfügbar ist. Siehe [Exportieren von Datensätzen in Cloud-Speicher-Ziele](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/export-datasets) für weitere Informationen.
+- Zugriff auf das Data Distiller-Add-on, um sicherzustellen, dass Sie berechtigt sind, Batch-Abfragen auszuführen. Weitere Informationen finden Sie unter [Query Service packaging](https://experienceleague.adobe.com/en/docs/experience-platform/query/packaging) .
+- Zugriff auf die Funktion zum Exportieren von Datensätzen , die beim Kauf des Real-Time CDP Prime- oder Ultimate-Packages, Adobe Journey Optimizer oder Customer Journey Analytics verfügbar ist. Weitere Informationen finden Sie unter [Exportieren von Datensätzen in Cloud-Speicher-Ziele](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/export-datasets) .
 - Ein oder mehrere konfigurierte Ziele (z. B. Amazon S3, Google Cloud Storage), an die Sie die Rohdaten Ihres Daten-Feeds exportieren können.
 
 
@@ -46,27 +47,27 @@ Stellen Sie sicher, dass Sie alle folgenden Anforderungen erfüllen, bevor Sie d
 
 Mit dem Experience Platform Query Service können Sie einen beliebigen Datensatz im Experience Platform Data Lake abfragen und verbinden, als wäre es eine Datenbanktabelle. Anschließend können Sie die Ergebnisse als neuen Datensatz für die weitere Verwendung in Berichten oder für den Export erfassen.
 
-Sie können den Query Service verwenden [Benutzeroberfläche](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/overview), a [Client, der über das PostgresQL-Protokoll verbunden ist](https://experienceleague.adobe.com/en/docs/experience-platform/query/clients/overview)oder [RESTful-APIs](https://experienceleague.adobe.com/en/docs/experience-platform/query/api/getting-started) , um Abfragen zu erstellen und zu planen, die die Daten für Ihren Daten-Feed erfassen.
+Sie können die Query Service- [Benutzeroberfläche](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/overview), einen [Client, der über das PostgresQL-Protokoll](https://experienceleague.adobe.com/en/docs/experience-platform/query/clients/overview) verbunden ist, oder [RESTful-APIs](https://experienceleague.adobe.com/en/docs/experience-platform/query/api/getting-started) verwenden, um Abfragen zu erstellen und zu planen, die die Daten für Ihren Daten-Feed erfassen.
 
 ### Abfrage erstellen
 
-Sie können alle Funktionen von Standard-ANSI SQL für SELECT-Anweisungen und andere eingeschränkte Befehle verwenden, um Abfragen zu erstellen und auszuführen, die die Daten für Ihren Daten-Feed generieren. Siehe [SQL-Syntax](https://experienceleague.adobe.com/en/docs/experience-platform/query/sql/syntax) für weitere Informationen. Neben dieser SQL-Syntax unterstützt Adobe Folgendes:
+Sie können alle Funktionen von Standard-ANSI SQL für SELECT-Anweisungen und andere eingeschränkte Befehle verwenden, um Abfragen zu erstellen und auszuführen, die die Daten für Ihren Daten-Feed generieren. Weitere Informationen finden Sie unter [SQL-Syntax](https://experienceleague.adobe.com/en/docs/experience-platform/query/sql/syntax) . Neben dieser SQL-Syntax unterstützt Adobe Folgendes:
 
-- vorkonfiguriert [Adobe-definierte Funktionen (ADF)](https://experienceleague.adobe.com/en/docs/experience-platform/query/sql/adobe-defined-functions) , mit denen häufig geschäftsbezogene Aufgaben für Ereignisdaten durchgeführt werden können, die im Experience Platform Data Lake gespeichert sind, einschließlich Funktionen für [Sessionization](https://experienceleague.adobe.com/en/docs/analytics/components/virtual-report-suites/vrs-mobile-visit-processing) und [Attribution](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/attribution/overview),
-- mehrere integrierte [Spark SQL-Funktionen](https://experienceleague.adobe.com/en/docs/experience-platform/query/sql/spark-sql-functions),
+- vorkonfigurierte [Adobe-definierte Funktionen (ADF)](https://experienceleague.adobe.com/en/docs/experience-platform/query/sql/adobe-defined-functions), die bei der Durchführung allgemeiner geschäftsbezogener Aufgaben für Ereignisdaten helfen, die im Experience Platform Data Lake gespeichert sind, einschließlich Funktionen für die [Sitzungserstellung](https://experienceleague.adobe.com/en/docs/analytics/components/virtual-report-suites/vrs-mobile-visit-processing) und die [Zuordnung](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/attribution/overview),
+- mehrere integrierte [Spark-SQL-Funktionen](https://experienceleague.adobe.com/en/docs/experience-platform/query/sql/spark-sql-functions),
 - [metadata PostgreSQL-Befehle](https://experienceleague.adobe.com/en/docs/experience-platform/query/sql/metadata),
 - [vorbereitete Anweisungen](https://experienceleague.adobe.com/en/docs/experience-platform/query/sql/prepared-statements).
 
 #### Daten-Feed-Spalten
 
-Die XDM-Felder, die Sie in Ihrer Abfrage verwenden können, hängen von der Schemadefinition ab, auf der Ihre Datensätze basieren. Vergewissern Sie sich, dass Sie das dem Datensatz zugrunde liegende Schema verstehen. Weitere Informationen finden Sie unter [Handbuch zur Benutzeroberfläche von Datensätzen](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/user-guide).
+Die XDM-Felder, die Sie in Ihrer Abfrage verwenden können, hängen von der Schemadefinition ab, auf der Ihre Datensätze basieren. Vergewissern Sie sich, dass Sie das dem Datensatz zugrunde liegende Schema verstehen. Weitere Informationen finden Sie im Leitfaden zur Benutzeroberfläche von [Datensätzen](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/user-guide).
 
-Informationen zum Definieren der Zuordnung zwischen den Daten-Feed-Spalten und XDM-Feldern finden Sie unter [Analytics-Feldzuordnung](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/mapping/analytics). Siehe auch [Übersicht über die Benutzeroberfläche von Schemas](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/overview#defining-xdm-fields) für weitere Informationen zur Verwaltung von XDM-Ressourcen, einschließlich Schemas, Klassen, Feldergruppen und Datentypen.
+Informationen zum Definieren der Zuordnung zwischen den Daten-Feed-Spalten und XDM-Feldern finden Sie unter [Analytics-Feldzuordnung](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/mapping/analytics). Weitere Informationen zum Verwalten von XDM-Ressourcen, einschließlich Schemas, Klassen, Feldergruppen und Datentypen, finden Sie in der [Übersicht über die Benutzeroberfläche von Schemas](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/overview#defining-xdm-fields) .
 
-Beispiel: falls Sie *Seitenname* als Teil Ihres Daten-Feeds:
+Wenn Sie beispielsweise *Seitenname* als Teil Ihres Daten-Feeds verwenden möchten:
 
-- In der Benutzeroberfläche des Adobe Analytics-Daten-Feeds wählen Sie **[!UICONTROL pagename]** als die Spalte, die zu Ihrer Datenfeed-Definition hinzugefügt werden soll.
-- In Query Service fügen Sie `web.webPageDetails.name` aus dem `sample_event_dataset_for_website_global_v1_1` Datensatz (basierend auf der **Beispielereignisschema für Website (Global v1.1)** Erlebnisereignisschema) in Ihrer Abfrage. Siehe [Feldgruppe &quot;Webdetails-Schema&quot;](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/field-groups/event/web-details) für weitere Informationen.
+- In der Benutzeroberfläche des Adobe Analytics-Daten-Feeds wählen Sie **[!UICONTROL pagename]** als Spalte aus, die Sie Ihrer Daten-Feed-Definition hinzufügen möchten.
+- In Query Service fügen Sie `web.webPageDetails.name` aus dem Datensatz `sample_event_dataset_for_website_global_v1_1` (basierend auf dem Erlebnisereignisschema **Beispielereignis-Schema für Website (globales Erlebnisereignis-Schema v1.1)**) in Ihre Abfrage ein. Weitere Informationen finden Sie in der Feldergruppe [Webdetails-Schema](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/field-groups/event/web-details) .
 
 
 #### Identitäten
@@ -74,37 +75,37 @@ Beispiel: falls Sie *Seitenname* als Teil Ihres Daten-Feeds:
 Unter Experience Platform sind verschiedene Identitäten verfügbar. Stellen Sie bei der Erstellung Ihrer Abfragen sicher, dass Sie Identitäten richtig abfragen.
 
 
-Oft finden Sie Identitäten in einer separaten Feldergruppe. In einer Implementierung ECID (`ecid`) kann als Teil einer Feldergruppe mit einer `core` -Objekt, das selbst Teil eines `identification` -Objekt (z. B.: `_sampleorg.identification.core.ecid`). Die ECIDs können in Ihren Schemas unterschiedlich organisiert sein.
+Oft finden Sie Identitäten in einer separaten Feldergruppe. In einer Implementierung kann ECID (`ecid`) als Teil einer Feldergruppe mit einem `core` -Objekt definiert werden, das selbst Teil eines `identification` -Objekts ist (z. B. `_sampleorg.identification.core.ecid`). Die ECIDs können in Ihren Schemas unterschiedlich organisiert sein.
 
-Alternativ können Sie `identityMap` , um Identitäten abzufragen. Die `identityMap` ist vom Typ `Map` und verwendet eine [verschachtelte Datenstruktur](#nested-data-structure).
+Alternativ können Sie `identityMap` verwenden, um nach Identitäten zu suchen. Der `identityMap` hat den Typ `Map` und verwendet eine [ verschachtelte Datenstruktur](#nested-data-structure).
 
-Siehe [Identitätsfelder in der Benutzeroberfläche definieren](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/fields/identity) für weitere Informationen zur Definition von Identitätsfeldern in Experience Platform.
+Weitere Informationen zum Definieren von Identitätsfeldern in Experience Platform finden Sie unter [Identitätsfelder in der Benutzeroberfläche definieren](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/ui/fields/identity) .
 
-Siehe Abschnitt [Primäre IDs in Analytics-Daten](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/analytics#primary-identifiers-in-analytics-data) für ein Verständnis, wie Adobe Analytics-Identitäten bei Verwendung des Analytics-Quell-Connectors Experience Platform-Identitäten zugeordnet werden. Diese Zuordnung kann als Anleitung zum Einrichten Ihrer Identitäten dienen, selbst wenn Sie den Analytics-Quell-Connector nicht verwenden.
+Unter [Primäre IDs in Analytics-Daten](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/analytics#primary-identifiers-in-analytics-data) finden Sie Informationen dazu, wie Adobe Analytics-Identitäten bei Verwendung des Analytics-Quell-Connectors Experience Platform-Identitäten zugeordnet werden. Diese Zuordnung kann als Anleitung zum Einrichten Ihrer Identitäten dienen, selbst wenn Sie den Analytics-Quell-Connector nicht verwenden.
 
 
 #### Daten und Identifizierung auf Trefferebene
 
-Basierend auf der Implementierung werden traditionell in Adobe Analytics erfasste Trefferebenenddaten jetzt als Ereignisdaten mit Zeitstempel in Experience Platform gespeichert. Die folgende Tabelle wurde aus [Analytics-Feldzuordnung](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/mapping/analytics#generated-mapping-fields) und zeigt Beispiele, wie Sie Trefferebenenspezifische Adobe Analytics Data Feed-Spalten mit entsprechenden XDM-Feldern in Ihren Abfragen zuordnen. Die Tabelle zeigt außerdem Beispiele dafür, wie Treffer, Besuche und Besucher mithilfe von XDM-Feldern identifiziert werden.
+Basierend auf der Implementierung werden traditionell in Adobe Analytics erfasste Trefferebenenddaten jetzt als Ereignisdaten mit Zeitstempel in Experience Platform gespeichert. Die folgende Tabelle wird aus der [Analytics-Feldzuordnung](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/mapping/analytics#generated-mapping-fields) extrahiert und zeigt Beispiele, wie Sie Trefferebenen-spezifischen Adobe Analytics-Daten-Feed-Spalten entsprechende XDM-Felder in Ihren Abfragen zuordnen. Die Tabelle zeigt außerdem Beispiele dafür, wie Treffer, Besuche und Besucher mithilfe von XDM-Feldern identifiziert werden.
 
 | Daten-Feed-Spalte | XDM-Feld | Typ | Beschreibung |
 |---|---|---|---|
 | `hitid_high` + `hitid_low` | `_id` | string | Eindeutige Kennung zur Identifizierung eines Treffers. |
-| `hitid_low` | `_id` | string | Verwendet mit `hitid_high` , um einen Treffer eindeutig zu identifizieren. |
-| `hitid_high` | `_id` | string | Verwendet mit `hitid_high` , um einen Treffer eindeutig zu identifizieren. |
+| `hitid_low` | `_id` | string | Wird mit `hitid_high` verwendet, um einen Treffer eindeutig zu identifizieren. |
+| `hitid_high` | `_id` | string | Wird mit `hitid_high` verwendet, um einen Treffer eindeutig zu identifizieren. |
 | `hit_time_gmt` | `receivedTimestamp` | string | Der Zeitstempel des Treffers basierend auf der UNIX®-Zeit. |
 | `cust_hit_time_gmt` | `timestamp` | string | Dieser Zeitstempel wird nur in für Zeitstempel aktivierten Datensätzen verwendet. Dieser Zeitstempel wird mit dem Treffer basierend auf der UNIX®-Zeit gesendet. |
 | `visid_high` + `visid_low` | `identityMap` | Objekt | Eindeutige Kennung für einen Besuch. |
 | `visid_high` + `visid_low` | `endUserIDs._experience.aaid.id` | string | Eindeutige Kennung für einen Besuch. |
-| `visid_high` | `endUserIDs._experience.aaid.primary` | boolean | Verwendet mit `visid_low` , um einen Besuch eindeutig zu identifizieren. |
-| `visid_high` | `endUserIDs._experience.aaid.namespace.code` | string | Verwendet mit `visid_low` , um einen Besuch eindeutig zu identifizieren. |
-| `visid_low` | `identityMap` | Objekt | Verwendet mit `visid_high` , um einen Besuch eindeutig zu identifizieren. |
+| `visid_high` | `endUserIDs._experience.aaid.primary` | boolean | Wird mit `visid_low` verwendet, um einen Besuch eindeutig zu identifizieren. |
+| `visid_high` | `endUserIDs._experience.aaid.namespace.code` | string | Wird mit `visid_low` verwendet, um einen Besuch eindeutig zu identifizieren. |
+| `visid_low` | `identityMap` | Objekt | Wird mit `visid_high` verwendet, um einen Besuch eindeutig zu identifizieren. |
 | `cust_visid` | `identityMap` | Objekt | Die Besucher-ID des Kunden. |
 | `cust_visid` | `endUserIDs._experience.aacustomid.id` | Objekt | Die Besucher-ID des Kunden. |
 | `cust_visid` | `endUserIDs._experience.aacustomid.primary` | boolean | Der Namespace-Code der Besucher-ID des Kunden. |
-| `cust_visid` | `endUserIDs._experience.aacustomid.namespace.code` | string | Verwendet mit `visid_low` zur eindeutigen Identifizierung der Besucher-ID des Kunden. |
+| `cust_visid` | `endUserIDs._experience.aacustomid.namespace.code` | string | Wird mit `visid_low` verwendet, um die Besucher-ID des Kunden eindeutig zu identifizieren. |
 | `geo\_*` | `placeContext.geo.* ` | Zeichenfolge, Zahl | Geolocation-Daten wie Land, Region, Stadt und andere |
-| `event_list` | `commerce.purchases`, `commerce.productViews`, `commerce.productListOpens`, `commerce.checkouts`, `commerce.productListAdds`, `commerce.productListRemovals`, `commerce.productListViews`, `_experience.analytics.event101to200.*`, ... `_experience.analytics.event901_1000.*` | string | Standardmäßige Commerce- und benutzerspezifische Ereignisse, die beim Treffer ausgelöst werden. |
+| `event_list` | `commerce.purchases`, `commerce.productViews`, `commerce.productListOpens`, `commerce.checkouts`, `commerce.productListAdds`, `commerce.productListRemovals`, `commerce.productListViews`, `_experience.analytics.event101to200.*`, ..., `_experience.analytics.event901_1000.*` | string | Standardmäßige Commerce- und benutzerspezifische Ereignisse, die beim Treffer ausgelöst werden. |
 | `page_event` | `web.webInteraction.type` | string | Die Art des in der Bildanforderung gesendeten Treffers (Standardtreffer, angeklickter Downloadlink, Exitlink oder benutzerspezifischer Link). |
 | `page_event` | `web.webInteraction.linkClicks.value` | number | Die Art des in der Bildanforderung gesendeten Treffers (Standardtreffer, angeklickter Downloadlink, Exitlink oder benutzerspezifischer Link). |
 | `page_event_var_1` | `web.webInteraction.URL` | string | Variable, die nur in Bildanforderungen zum Linktracking verwendet wird. Die Variable enthält die URL des angeklickten Downloadlinks, Exitlinks oder benutzerspezifischen Links. |
@@ -114,25 +115,25 @@ Basierend auf der Implementierung werden traditionell in Adobe Analytics erfasst
 
 #### Post-Spalten
 
-Adobe Analytics Data Feeds verwenden das Spaltenkonzept mit einer `post_` -Präfix, d. h. Spalten, die nach der Verarbeitung Daten enthalten. Weitere Informationen finden Sie in den [häufig gestellten Fragen zu Daten-Feeds](https://experienceleague.adobe.com/en/docs/analytics/export/analytics-data-feed/df-faq#post).
+Adobe Analytics Data Feeds verwenden das Konzept von Spalten mit dem Präfix `post_` , bei denen es sich um Spalten handelt, die nach der Verarbeitung Daten enthalten. Weitere Informationen finden Sie in den [häufig gestellten Fragen zu Daten-Feeds](https://experienceleague.adobe.com/en/docs/analytics/export/analytics-data-feed/df-faq#post).
 
-Daten, die in Datensätzen über das Experience Platform-Edge Network (Web SDK, Mobile SDK, Server API) erfasst werden, haben kein Konzept von `post_` -Felder. Daher `post_` Präfix und *non*-`post_` Präfixe Daten-Feed-Spalten werden denselben XDM-Feldern zugeordnet. Beispielsweise können beide `page_url` und `post_page_url` Daten-Feed-Spalten werden demselben `web.webPageDetails.URL` XDM-Feld.
+Daten, die in Datensätzen über das Experience Platform-Edge Network (Web SDK, Mobile SDK, Server API) erfasst werden, haben kein Konzept von `post_` -Feldern. Daher werden die mit dem Präfix `post_` und dem Präfix *non*-`post_` versehenen Daten-Feed-Spalten denselben XDM-Feldern zugeordnet. Beispielsweise werden sowohl `page_url` als auch `post_page_url` Daten-Feed-Spalten demselben `web.webPageDetails.URL` XDM-Feld zugeordnet.
 
-Siehe [Datenverarbeitung in Adobe Analytics und Customer Journey Analytics vergleichen](https://experienceleague.adobe.com/en/docs/analytics-platform/using/compare-aa-cja/cja-aa-comparison/data-processing-comparisons) für einen Überblick über die Unterschiede bei der Datenverarbeitung.
+Unter [Datenverarbeitung in Adobe Analytics und Customer Journey Analytics vergleichen](https://experienceleague.adobe.com/en/docs/analytics-platform/using/compare-aa-cja/cja-aa-comparison/data-processing-comparisons) finden Sie einen Überblick über den Unterschied bei der Datenverarbeitung.
 
-Die `post_` -Präfix-Spaltentyp von Daten, die im Experience Platform Data Lake erfasst werden, erfordert jedoch erweiterte Transformationen, bevor sie in einem Daten-Feed-Anwendungsfall erfolgreich verwendet werden können. Die Durchführung dieser erweiterten Umwandlungen in Abfragen erfordert die Verwendung von [Adobe-definierte Funktionen](https://experienceleague.adobe.com/en/docs/experience-platform/query/sql/adobe-defined-functions) für die Sitzungserstellung, Attribution und Deduplizierung. Siehe [Beispiele](#examples) zur Verwendung dieser Funktionen.
+Der Spaltentyp `post_` des Präfixes für Daten, die im Experience Platform Data Lake erfasst werden, erfordert jedoch erweiterte Transformationen, bevor sie in einem Anwendungsfall für Daten-Feeds erfolgreich verwendet werden können. Die Durchführung dieser erweiterten Transformationen in Ihren Abfragen erfordert die Verwendung von [Adobe-definierten Funktionen](https://experienceleague.adobe.com/en/docs/experience-platform/query/sql/adobe-defined-functions) für die Sitzungserstellung, Attribution und Deduplizierung. Weitere Informationen zur Verwendung dieser Funktionen finden Sie unter [Beispiele](#examples) .
 
 #### Suchen
 
-Zum Nachschlagen von Daten aus anderen Datensätzen verwenden Sie die SQL-Standardfunktion (`WHERE` -Klausel, `INNER JOIN`, `OUTER JOIN`und andere).
+Zum Nachschlagen von Daten aus anderen Datensätzen verwenden Sie die SQL-Standardfunktionalität (`WHERE` -Klausel, `INNER JOIN`, `OUTER JOIN` und andere).
 
 #### Berechnungen
 
-Verwenden Sie die SQL-Standardfunktionen (z. B. `COUNT(*)`) oder der [mathematische und statistische Operatoren und Funktionen](https://experienceleague.adobe.com/en/docs/experience-platform/query/sql/spark-sql-functions#math) Teil von Spark SQL. Außerdem [Fensterfunktionen](https://experienceleague.adobe.com/en/docs/experience-platform/query/sql/adobe-defined-functions#window-functions) unterstützen die Aktualisierung von Aggregationen und die Rückgabe einzelner Elemente für jede Zeile in einer sortierten Teilmenge. Siehe [Beispiele](#examples) zur Verwendung dieser Funktionen.
+Um Berechnungen für Felder (Spalten) durchzuführen, verwenden Sie die SQL-Standardfunktionen (z. B. `COUNT(*)`) oder den Teil [mathematische und statistische Operatoren und Funktionen](https://experienceleague.adobe.com/en/docs/experience-platform/query/sql/spark-sql-functions#math) von Spark SQL. Außerdem unterstützen die [Fensterfunktionen](https://experienceleague.adobe.com/en/docs/experience-platform/query/sql/adobe-defined-functions#window-functions) die Aktualisierung von Aggregationen und die Rückgabe einzelner Elemente für jede Zeile in einer sortierten Teilmenge. Weitere Informationen zur Verwendung dieser Funktionen finden Sie unter [Beispiele](#examples) .
 
 #### Verschachtelte Datenstruktur
 
-Die Schemas, auf denen die Datensätze basieren, enthalten häufig komplexe Datentypen, einschließlich verschachtelter Datenstrukturen. Zuvor erwähnt `identityMap` ist ein Beispiel für eine verschachtelte Datenstruktur. Nachfolgend finden Sie ein Beispiel für `identityMap` Daten.
+Die Schemas, auf denen die Datensätze basieren, enthalten häufig komplexe Datentypen, einschließlich verschachtelter Datenstrukturen. Zuvor erwähnte `identityMap` ist ein Beispiel für eine verschachtelte Datenstruktur. Unten finden Sie ein Beispiel für `identityMap` -Daten.
 
 ```json
 {
@@ -153,7 +154,7 @@ Die Schemas, auf denen die Datensätze basieren, enthalten häufig komplexe Date
 }
 ```
 
-Sie können die [`explode()` oder anderen Arrays-Funktionen](https://experienceleague.adobe.com/en/docs/experience-platform/query/sql/spark-sql-functions#arrays) von Spark SQL, um zu den Daten in einer verschachtelten Datenstruktur zu gelangen, z. B.:
+Sie können die [`explode()`- oder anderen Arrays-Funktionen](https://experienceleague.adobe.com/en/docs/experience-platform/query/sql/spark-sql-functions#arrays) von Spark SQL verwenden, um zu den Daten in einer verschachtelten Datenstruktur zu gelangen, z. B.:
 
 ```sql
 select explode(identityMap) from demosys_cja_ee_v1_website_global_v1_1 limit 15;
@@ -178,10 +179,10 @@ Für Abfragen:
 
 siehe:
 
-- [abgebrochener Browser](https://experienceleague.adobe.com/en/docs/experience-platform/query/use-cases/abandoned-browse)
+- [abgebrochener Durchsuchen](https://experienceleague.adobe.com/en/docs/experience-platform/query/use-cases/abandoned-browse)
 - [Attributionsanalyse](https://experienceleague.adobe.com/en/docs/experience-platform/query/use-cases/attribution-analysis)
 - [Bot-Filterung](https://experienceleague.adobe.com/en/docs/experience-platform/query/use-cases/bot-filtering)
-- und andere [unterstützte Anwendungsfälle im Handbuch für Query Service](https://experienceleague.adobe.com/en/docs/experience-platform/query/use-cases/overview).
+- und anderen von [unterstützten Anwendungsfällen im Handbuch für Query Service](https://experienceleague.adobe.com/en/docs/experience-platform/query/use-cases/overview).
 
 
 ### Planen der Abfrage
@@ -190,19 +191,19 @@ Sie planen die Abfrage, um sicherzustellen, dass die Abfrage ausgeführt und die
 
 #### Verwenden des Abfrage-Editors
 
-Sie können eine Abfrage mit dem Abfrage-Editor planen. Bei der Planung der Abfrage definieren Sie einen Ausgabedatensatz. Siehe [Abfragepläne](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/query-schedules) für weitere Informationen.
+Sie können eine Abfrage mit dem Abfrage-Editor planen. Bei der Planung der Abfrage definieren Sie einen Ausgabedatensatz. Weitere Informationen finden Sie unter [Abfragezeitpläne](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/query-schedules) .
 
 
 #### Verwenden der Query Service-API
 
-Alternativ können Sie die RESTful-APIs verwenden, um eine Abfrage und einen Zeitplan für die Abfrage zu definieren. Siehe [Handbuch zur Query Service-API](https://experienceleague.adobe.com/en/docs/experience-platform/query/api/getting-started) für weitere Informationen.
-Stellen Sie sicher, dass Sie den Ausgabedatensatz als Teil des optionalen `ctasParameters` -Eigenschaft beim Erstellen der Abfrage ([Abfragen erstellen](https://developer.adobe.com/experience-platform-apis/references/query-service/#tag/Queries/operation/createQuery)) oder beim Erstellen des Zeitplans für eine Abfrage ([Geplante Abfrage erstellen](https://developer.adobe.com/experience-platform-apis/references/query-service/#tag/Schedules/operation/createSchedule)).
+Alternativ können Sie die RESTful-APIs verwenden, um eine Abfrage und einen Zeitplan für die Abfrage zu definieren. Weitere Informationen finden Sie im Handbuch [Query Service API guide](https://experienceleague.adobe.com/en/docs/experience-platform/query/api/getting-started) .
+Stellen Sie sicher, dass Sie den Ausgabedatensatz als Teil der optionalen Eigenschaft `ctasParameters` definieren, wenn Sie die Abfrage erstellen ([Abfragen erstellen](https://developer.adobe.com/experience-platform-apis/references/query-service/#tag/Queries/operation/createQuery)) oder wenn Sie den Zeitplan für eine Abfrage erstellen ([Geplante Abfrage erstellen](https://developer.adobe.com/experience-platform-apis/references/query-service/#tag/Schedules/operation/createSchedule)).
 
 
 
 ## Exportieren von Datensätzen
 
-Nachdem Sie Ihre Abfrage erstellt und geplant und die Ergebnisse überprüft haben, können Sie die Rohdatensätze in Cloud-Speicher-Ziele exportieren. Dieser Export erfolgt in der Experience Platform Destinations-Terminologie, die als Datensatzexport-Ziele bezeichnet wird. Siehe [Exportieren von Datensätzen in Cloud-Speicher-Ziele](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/export-datasets) für einen Überblick.
+Nachdem Sie Ihre Abfrage erstellt und geplant und die Ergebnisse überprüft haben, können Sie die Rohdatensätze in Cloud-Speicher-Ziele exportieren. Dieser Export erfolgt in der Experience Platform Destinations-Terminologie, die als Datensatzexport-Ziele bezeichnet wird. Eine Übersicht finden Sie unter [Exportieren von Datensätzen in Cloud-Speicher-Ziele](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/export-datasets) .
 
 Die folgenden Cloud-Speicher-Ziele werden unterstützt:
 
@@ -220,7 +221,7 @@ Sie können den Export Ihrer Ausgabedatensätze über die Experience Platform-Be
 
 #### Ziel auswählen
 
-Wenn Sie ermittelt haben, in welches Cloud-Speicher-Ziel Sie den Ausgabedatensatz exportieren möchten, [Ziel auswählen](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/export-datasets#select-destination). Wenn Sie noch kein Ziel für Ihren bevorzugten Cloud-Speicher konfiguriert haben, müssen Sie [Erstellen einer neuen Zielverbindung](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/connect-destination).
+Wenn Sie ermittelt haben, in welches Cloud-Speicher-Ziel Sie den Ausgabedatensatz exportieren möchten, wählen Sie [das Ziel ](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/export-datasets#select-destination) aus. Wenn Sie noch kein Ziel für Ihren bevorzugten Cloud-Speicher konfiguriert haben, müssen Sie [eine neue Zielverbindung erstellen](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/connect-destination).
 
 Im Zuge der Konfiguration eines Ziels können Sie
 
@@ -231,54 +232,54 @@ Im Zuge der Konfiguration eines Ziels können Sie
 
 #### Datensatz auswählen
 
-Wenn Sie das Ziel ausgewählt haben, klicken Sie im nächsten **[!UICONTROL Auswählen von Datensätzen]** Schritt müssen Sie Ihren Ausgabedatensatz aus der Liste der Datensätze auswählen. Wenn Sie mehrere geplante Abfragen erstellen und möchten, dass die Ausgabedatensätze an dasselbe Cloud-Speicher-Ziel gesendet werden, können Sie die entsprechenden Ausgabedatensätze auswählen. Siehe [Auswählen Ihrer Datensätze](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/export-datasets#select-datasets) für weitere Informationen.
+Wenn Sie das Ziel ausgewählt haben, müssen Sie im nächsten Schritt **[!UICONTROL Datensätze auswählen]** Ihren Ausgabedatensatz aus der Liste der Datensätze auswählen. Wenn Sie mehrere geplante Abfragen erstellen und möchten, dass die Ausgabedatensätze an dasselbe Cloud-Speicher-Ziel gesendet werden, können Sie die entsprechenden Ausgabedatensätze auswählen. Weitere Informationen finden Sie unter [Auswählen Ihrer Datensätze](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/export-datasets#select-datasets) .
 
 #### Planen des Datensatzexports
 
-Schließlich möchten Sie Ihren Datensatzexport als Teil der **[!UICONTROL Planung]** Schritt. In diesem Schritt können Sie den Zeitplan definieren und festlegen, ob der Export des Ausgabedatensatzes inkrementell erfolgen soll oder nicht. Siehe [Datensatz-Export planen](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/export-datasets#scheduling) für weitere Informationen.
+Schließlich möchten Sie den Export Ihres Datensatzes im Rahmen des Schritts **[!UICONTROL Planung]** planen. In diesem Schritt können Sie den Zeitplan definieren und festlegen, ob der Export des Ausgabedatensatzes inkrementell erfolgen soll oder nicht. Weitere Informationen finden Sie unter [Planen des Datensatzexports](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/export-datasets#scheduling) .
 
 
 #### Abgeschlossene Schritte
 
-[Überprüfen](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/export-datasets#review) Ihre Auswahl fest und starten Sie den Export des Ausgabedatensatzes in das Cloud-Speicher-Ziel, wenn dies korrekt ist.
+[Überprüfen Sie Ihre Auswahl](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/export-datasets#review) und starten Sie den Export Ihres Ausgabedatasets in das Cloud-Speicher-Ziel, wenn dies korrekt ist.
 
-Sie müssen [verify](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/export-datasets#verify) einen erfolgreichen Datenexport. Beim Exportieren von Datensätzen erstellt Experience Platform eine oder mehrere `.json` oder `.parquet` -Dateien am Speicherort, der in Ihrem Ziel definiert ist. Erwarten Sie, dass neue Dateien entsprechend dem von Ihnen eingerichteten Exportplan an Ihrem Speicherort abgelegt werden. Experience Platform erstellt eine Ordnerstruktur am Speicherort, den Sie als Teil des ausgewählten Ziels angegeben haben, wo die exportierten Dateien abgelegt werden. Für jeden Exportzeitpunkt wird ein neuer Ordner nach folgendem Muster erstellt: `folder-name-you-provided/datasetID/exportTime=YYYYMMDDHHMM`. Der standardmäßige Dateiname wird nach dem Zufallsprinzip generiert, was sicherstellt, dass die Namen von exportierten Dateien eindeutig sind.
+Sie müssen einen erfolgreichen Datenexport [überprüfen](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/export-datasets#verify). Beim Exportieren von Datensätzen erstellt Experience Platform eine oder mehrere `.json` - oder `.parquet` -Dateien am Speicherort, der in Ihrem Ziel definiert ist. Erwarten Sie, dass neue Dateien entsprechend dem von Ihnen eingerichteten Exportplan an Ihrem Speicherort abgelegt werden. Experience Platform erstellt eine Ordnerstruktur am Speicherort, den Sie als Teil des ausgewählten Ziels angegeben haben, wo die exportierten Dateien abgelegt werden. Für jeden Exportzeitpunkt wird ein neuer Ordner nach folgendem Muster erstellt: `folder-name-you-provided/datasetID/exportTime=YYYYMMDDHHMM`. Der standardmäßige Dateiname wird nach dem Zufallsprinzip generiert, was sicherstellt, dass die Namen von exportierten Dateien eindeutig sind.
 
 ### Flussdienst-API
 
-Alternativ können Sie den Export von Ausgabedatensets mithilfe von APIs exportieren und planen. Die erforderlichen Schritte werden im Abschnitt [Exportieren von Datensätzen mithilfe der Flow Service-API](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/api/export-datasets).
+Alternativ können Sie den Export von Ausgabedatensets mithilfe von APIs exportieren und planen. Die erforderlichen Schritte werden in [Exportieren von Datensätzen mithilfe der Flow Service-API](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/api/export-datasets) dokumentiert.
 
 #### Erste Schritte
 
-Um Datensätze zu exportieren, stellen Sie sicher, dass Sie über die [erforderliche Berechtigungen](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/api/export-datasets#permissions). Überprüfen Sie außerdem, ob das Ziel, an das Sie Ihren Ausgabedatensatz senden möchten, den Export von Datensätzen unterstützt. Sie müssen [Werte für erforderliche und optionale Kopfzeilen erfassen](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/api/export-datasets#gather-values-headers) , die Sie in den API-Aufrufen verwenden. Sie müssen auch [Identifizieren der Verbindungsspezifikations- und Flussspezifikations-IDs des Ziels](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/api/export-datasets#gather-connection-spec-flow-spec) Sie beabsichtigen, Datensätze in zu exportieren.
+Um Datensätze zu exportieren, stellen Sie sicher, dass Sie über die [erforderlichen Berechtigungen](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/api/export-datasets#permissions) verfügen. Überprüfen Sie außerdem, ob das Ziel, an das Sie Ihren Ausgabedatensatz senden möchten, den Export von Datensätzen unterstützt. Anschließend müssen Sie [ die Werte für erforderliche und optionale Kopfzeilen ](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/api/export-datasets#gather-values-headers) erfassen, die Sie in den API-Aufrufen verwenden. Außerdem müssen Sie [die Verbindungsspezifikations- und Flussspezifikations-IDs des Ziels](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/api/export-datasets#gather-connection-spec-flow-spec) identifizieren, an das Sie Datensätze exportieren möchten.
 
 #### Abrufen zulässiger Datensätze
 
-Sie können [Liste der zulässigen Datensätze abrufen](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/api/export-datasets#retrieve-list-of-available-datasets) zum Exportieren und überprüfen Sie, ob Ihr Ausgabedatensatz mithilfe der [`GET /connectionSpecs/{id}/configs`](https://developer.adobe.com/experience-platform-apis/references/destinations/#tag/Configurations/operation/getDatasets) API.
+Sie können [ eine Liste der für den Export infrage kommenden Datensätze abrufen](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/api/export-datasets#retrieve-list-of-available-datasets) und mithilfe der API [`GET /connectionSpecs/{id}/configs`](https://developer.adobe.com/experience-platform-apis/references/destinations/#tag/Configurations/operation/getDatasets) überprüfen, ob Ihr Ausgabedatensatz Teil dieser Liste ist.
 
 
 #### Erstellen der Quellverbindung
 
-Als Nächstes müssen Sie [Quellverbindung erstellen](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/api/export-datasets#create-source-connection) für den Ausgabedatensatz, den Sie mit seiner eindeutigen ID an das Cloud-Speicher-Ziel exportieren möchten. Sie verwenden die [`POST /sourceConnections`](https://developer.adobe.com/experience-platform-apis/references/destinations/#tag/Source-connections/operation/postSourceConnection) API.
+Als Nächstes müssen Sie [eine Quellverbindung für den Ausgabedatensatz erstellen](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/api/export-datasets#create-source-connection), indem Sie dessen eindeutige Kennung verwenden, die Sie an das Cloud-Speicher-Ziel exportieren möchten. Sie verwenden die [`POST /sourceConnections`](https://developer.adobe.com/experience-platform-apis/references/destinations/#tag/Source-connections/operation/postSourceConnection) -API.
 
 #### Authentifizierung am Ziel (Basisverbindung erstellen)
 
-Sie müssen jetzt [Basisverbindung erstellen](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/api/export-datasets#create-base-connection) , um die Anmeldeinformationen zu authentifizieren und sicher in Ihrem Cloud-Speicher-Ziel zu speichern, indem Sie die [`POST /targetConection`](https://developer.adobe.com/experience-platform-apis/references/destinations/#tag/Target-connections/operation/postTargetConnection) API.
+Sie müssen jetzt [eine Basisverbindung erstellen](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/api/export-datasets#create-base-connection), um die Anmeldeinformationen mithilfe der API [`POST /targetConection`](https://developer.adobe.com/experience-platform-apis/references/destinations/#tag/Target-connections/operation/postTargetConnection) für Ihr Cloud-Speicher-Ziel zu authentifizieren und sicher zu speichern.
 
 
 #### Exportparameter angeben
 
-Als Nächstes müssen Sie [eine zusätzliche Zielverbindung erstellen, in der die Exportparameter gespeichert werden](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/api/export-datasets#create-target-connection) für Ihren Ausgabedatensatz verwenden, indem Sie erneut die [`POST /targetConection`](https://developer.adobe.com/experience-platform-apis/references/destinations/#tag/Target-connections/operation/postTargetConnection) API. Zu diesen Exportparametern gehören Speicherort, Dateiformat, Komprimierung und mehr.
+Als Nächstes müssen Sie [eine zusätzliche Zielverbindung erstellen, in der die Exportparameter](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/api/export-datasets#create-target-connection) für Ihren Ausgabedatensatz gespeichert werden. Verwenden Sie dazu einmal mehr die API [`POST /targetConection`](https://developer.adobe.com/experience-platform-apis/references/destinations/#tag/Target-connections/operation/postTargetConnection) . Zu diesen Exportparametern gehören Speicherort, Dateiformat, Komprimierung und mehr.
 
 #### Einrichten des Datenflusses
 
-Schließlich haben Sie [Datenfluss einrichten](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/api/export-datasets#create-dataflow) , um sicherzustellen, dass Ihr Ausgabedatensatz mit dem [`POST /flows`](https://developer.adobe.com/experience-platform-apis/references/destinations/#tag/Dataflows/operation/postFlow) API. In diesem Schritt können Sie den Zeitplan für den Export mithilfe der Variablen `scheduleParams` -Parameter.
+Richten Sie abschließend den Datenfluss ](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/api/export-datasets#create-dataflow) ein, um sicherzustellen, dass Ihr Ausgabedatensatz mit der API [`POST /flows`](https://developer.adobe.com/experience-platform-apis/references/destinations/#tag/Dataflows/operation/postFlow) in Ihr Cloud-Speicher-Ziel exportiert wird. [ In diesem Schritt können Sie den Zeitplan für den Export mithilfe des Parameters `scheduleParams` definieren.
 
 #### Validieren des Datenflusses
 
-nach [Überprüfen erfolgreicher Ausführungen Ihres Datenflusses](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/api/export-datasets#get-dataflow-runs), verwenden Sie die [`GET /runs`](https://developer.adobe.com/experience-platform-apis/references/destinations/#tag/Dataflow-runs/operation/getFlowRuns) API, die die Datenfluss-ID als Abfrageparameter angibt. Diese Datenfluss-ID ist eine Kennung, die beim Einrichten des Datenflusses zurückgegeben wird.
+Um [die erfolgreichen Ausführungen Ihres Datenflusses](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/api/export-datasets#get-dataflow-runs) zu überprüfen, verwenden Sie die API [`GET /runs`](https://developer.adobe.com/experience-platform-apis/references/destinations/#tag/Dataflow-runs/operation/getFlowRuns) und geben Sie die Datenfluss-ID als Abfrageparameter an. Diese Datenfluss-ID ist eine Kennung, die beim Einrichten des Datenflusses zurückgegeben wird.
 
-[Überprüfen](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/export-datasets#verify) einen erfolgreichen Datenexport. Beim Exportieren von Datensätzen erstellt Experience Platform eine oder mehrere `.json` oder `.parquet` -Dateien am Speicherort, der in Ihrem Ziel definiert ist. Erwarten Sie, dass neue Dateien entsprechend dem von Ihnen eingerichteten Exportplan an Ihrem Speicherort abgelegt werden. Experience Platform erstellt eine Ordnerstruktur am Speicherort, den Sie als Teil des ausgewählten Ziels angegeben haben, wo die exportierten Dateien abgelegt werden. Für jeden Exportzeitpunkt wird ein neuer Ordner nach folgendem Muster erstellt: `folder-name-you-provided/datasetID/exportTime=YYYYMMDDHHMM`. Der standardmäßige Dateiname wird nach dem Zufallsprinzip generiert, was sicherstellt, dass die Namen von exportierten Dateien eindeutig sind.
+[Überprüfen](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/export-datasets#verify) Sie einen erfolgreichen Datenexport. Beim Exportieren von Datensätzen erstellt Experience Platform eine oder mehrere `.json` - oder `.parquet` -Dateien am Speicherort, der in Ihrem Ziel definiert ist. Erwarten Sie, dass neue Dateien entsprechend dem von Ihnen eingerichteten Exportplan an Ihrem Speicherort abgelegt werden. Experience Platform erstellt eine Ordnerstruktur am Speicherort, den Sie als Teil des ausgewählten Ziels angegeben haben, wo die exportierten Dateien abgelegt werden. Für jeden Exportzeitpunkt wird ein neuer Ordner nach folgendem Muster erstellt: `folder-name-you-provided/datasetID/exportTime=YYYYMMDDHHMM`. Der standardmäßige Dateiname wird nach dem Zufallsprinzip generiert, was sicherstellt, dass die Namen von exportierten Dateien eindeutig sind.
 
 ## Zusammenfassung
 

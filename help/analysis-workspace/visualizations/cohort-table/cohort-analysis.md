@@ -30,7 +30,7 @@ Die [!UICONTROL Kohortenanalyse] steht allen Customer Journey Analytics-Kunden m
 
 >[!IMPORTANT]
 >
->[!UICONTROL Kohortenanalyse] unterstützt keine nicht filterbaren Metriken (einschließlich berechneter Metriken), Nicht-Ganzzahlmetriken (z. B. Umsatz) oder Vorfälle. Nur Metriken, die in Filtern verwendet werden können, können in [!UICONTROL Kohortenanalyse]und sie können jeweils nur um 1 inkrementiert werden.
+>[!UICONTROL Kohortenanalyse] unterstützt keine nicht filterbaren Metriken (einschließlich berechneter Metriken), nicht ganzzahlige Metriken (z. B. Umsatz) oder Vorfälle. In der Kohortenanalyse ] können nur Metriken verwendet werden, die in Filtern verwendet werden können, und sie können jeweils nur um 1 inkrementiert werden.[!UICONTROL 
 
 ## Funktionen der Kohortenanalyse
 
@@ -38,13 +38,13 @@ Die folgenden Fähigkeiten ermöglichen eine fein abgestimmte Kontrolle über di
 
 ### [!UICONTROL Bindungstabelle]
 
-A [!UICONTROL Treue] Kohortenbericht gibt Personen zurück: Jede Datenzelle zeigt die Roh- und Prozentanzahl der Personen in der Kohorte, die die Aktion während dieses Zeitraums ausgeführt haben. Sie können bis zu 3 Metriken und bis zu 10 Filter einschließen.
+Ein Kohortenbericht vom Typ [!UICONTROL Bindung] gibt Personen zurück: Jede Datenzelle zeigt die Roh- und Prozentanzahl der Personen in der Kohorte, die die Aktion während dieses Zeitraums ausgeführt haben. Sie können bis zu 3 Metriken und bis zu 10 Filter einschließen.
 
 ![Ein Bericht zur Kohorte &quot;Rention&quot;, der die Einheiten und den Prozentsatz der Personen in der Kohorte anzeigt.](assets/retention-report.png)
 
 ### [!UICONTROL Abwanderungstabelle]
 
-A [!UICONTROL Abwanderung] Die Kohorte ist die Umkehrung einer Bindungstabelle und zeigt die Personen an, die abgestürzt sind oder die Rückkehrkriterien für Ihre Kohorte im Laufe der Zeit nie erfüllt haben. Sie können bis zu 3 Metriken und bis zu 10 Filter einschließen.
+Eine [!UICONTROL Abwanderungskohorte] ist die Umkehrung einer Bindungstabelle und zeigt die Personen an, die abgewandert sind oder die Rückkehrkriterien für Ihre Kohorte im Laufe der Zeit nie erfüllt haben. Sie können bis zu 3 Metriken und bis zu 10 Filter einschließen.
 
 ![Eine Abwanderungstabelle, die Einheiten und Prozentsatz der Personen anzeigt, die die Rückkehrkriterien für eine Kohorte nicht erfüllt haben.](assets/churn-report.png)
 
@@ -64,6 +64,6 @@ Misst die Zeit, die vor und nach dem Aufnahmeereignis verstrichen ist. Ein hervo
 
 Erstellen Sie Kohorten auf Grundlage einer ausgewählten Dimension und nicht auf Grundlage zeitbasierter Kohorten, die Standardeinstellung sind. Verwenden Sie Dimensionen wie [!UICONTROL Marketing-Kanal], [!UICONTROL Kampagne], [!UICONTROL Produkt], [!UICONTROL Seite], [!UICONTROL Region] oder jede andere Dimension in Customer Journey Analytics, um zu zeigen, wie sich die Kundenbindung basierend auf den verschiedenen Werten dieser Dimensionen ändert.
 
-![Ein Kohortenbericht, der einen benutzerdefinierten Bericht mit ausgewählten Dimensionen anzeigt, nicht die standardmäßige zeitbasierte Kohorte.](assets/cohort-customizable-cohort-row.png)
+![Ein Kohortenbericht, der einen benutzerspezifischen Bericht mit ausgewählten Dimensionen anzeigt, nicht die standardmäßige zeitbasierte Kohorte.](assets/cohort-customizable-cohort-row.png)
 
 Anweisungen zum Einrichten und Ausführen eines Kohortenberichts finden Sie unter [Konfigurieren eines Kohortenanalyseberichts](/help/analysis-workspace/visualizations/cohort-table/t-cohort.md).

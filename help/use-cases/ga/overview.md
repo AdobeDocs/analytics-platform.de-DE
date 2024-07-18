@@ -21,11 +21,11 @@ Workflows sind sowohl für historische Daten als auch für die aktuelle Datenerf
 
 Die Aufnahme historischer Daten (Aufstockungsdaten) umfasst den Export der Daten aus Google und den Import dieser Daten in Adobe Experience Platform. Siehe [Aufnehmen von Daten aus Google Analytics in Adobe Experience Platform](backfill.md)
 
-Sobald Sie historische Daten erfolgreich in Platform integriert haben, können Sie entweder [Streaming aktueller Daten konfigurieren](streaming.md)oder sofort mit der Berichterstellung für aufgestockte Daten in Customer Journey Analytics beginnen, indem Sie [Verbindung erstellen](/help/connections/create-connection.md).
+Sobald Sie historische Daten erfolgreich in Platform integriert haben, können Sie entweder [Streaming aktueller Daten konfigurieren](streaming.md) oder sofort mit der Berichterstellung zu aufgestockten Daten unter Customer Journey Analytics beginnen, indem Sie [eine Verbindung erstellen](/help/connections/create-connection.md).
 
 ## Konfigurieren einer vorhandenen Google Analytics-Implementierung für Adobe Experience Platform {#configure}
 
-Zur Erfassung aktueller (Streaming-)Daten müssen Daten an das Adobe Experience Platform Edge Network gesendet werden, das diese Daten dann an Adobe Experience Platform weiterleitet. Siehe [Einrichten des Streaming-Vorgangs von Google Analytics-Daten nach Adobe Experience Platform](streaming.md).
+Zur Erfassung aktueller (Streaming-)Daten müssen Daten an das Adobe Experience Platform-Edge Network gesendet werden, das diese Daten dann an Adobe Experience Platform weiterleitet. Siehe [Einrichten des Streaming-Vorgangs von Google Analytics-Daten nach Adobe Experience Platform](streaming.md).
 
 ## Verbindung und Datenansicht in Customer Journey Analytics konfigurieren
 

@@ -24,16 +24,16 @@ In Freiformtabellen wird auf jeder Unterteilungsebene eine Zeile insgesamt angez
 
 Unter **[!UICONTROL Spalteneinstellungen]** finden Sie die Optionen **[!UICONTROL Summen anzeigen]** und **[!UICONTROL Gesamtsumme anzeigen]**. Wenn diese Einstellungen deaktiviert sind, werden die Summen aus der Tabelle entfernt. Dies kann in Fällen gewünscht werden, in denen Summen beispielsweise in bestimmten [Szenarien mit berechneten Metriken](https://experienceleague.adobe.com/docs/analytics/components/calculated-metrics/calcmetrics-reference/cm-totals.html?lang=de) keinen Sinn ergeben.
 
-![Optionen für Spalteneinstellungen mit Häkchen für &quot;Summen anzeigen&quot;und &quot;Zuschusssumme anzeigen&quot;.](assets/column-settings-total.png)
+![Optionen für die Spalteneinstellungen mit Häkchen für &quot;Gesamt anzeigen&quot;und &quot;Zuschusssumme anzeigen&quot;](assets/column-settings-total.png)
 
 ## Gesamteinstellungen für statische Zeile
 
 Die Gesamtwerte für [statische Zeilen](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/manual-vs-dynamic-rows.md) verhalten sich anders und werden unter **[!UICONTROL Zeileneinstellungen]** gesteuert.
 
-* **[!UICONTROL Summe der aktuellen Zeilen als Gesamtsumme anzeigen]** - Zeigt eine clientseitige Summe der Zeilen in der Tabelle an, was bedeutet, dass die Summe **not** Duplizieren Sie Metriken wie Besuche oder Personen.
+* **[!UICONTROL Anzeigen der Summe der aktuellen Zeilen als Gesamtsumme]** - Zeigt eine clientseitige Summe der Zeilen in der Tabelle an, was bedeutet, dass die Gesamtsumme die Duplizierung von Metriken wie Besuche oder Personen **nicht** dedupliziert.
 * **[!UICONTROL Gesamtsumme anzeigen]** - Zeigt eine Server-seitige Summe an, d. h. die Gesamtsumme dedupliziert Metriken wie Besuche oder Personen.
 
-![Zeileneinstellungen, in denen die Gesamtsumme angezeigt wird.](assets/static-rows.png)
+![Zeileneinstellungen, die die ausgewählte Gesamtsumme anzeigen anzeigen.](assets/static-rows.png)
 
 ## Häufig gestellte Fragen
 

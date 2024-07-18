@@ -20,7 +20,7 @@ Zum Wechseln zwischen den Anzeigedichten gibt es drei Optionsschaltflächen:
 - **[!UICONTROL Komfort]**: Bietet etwas mehr Abstand als die Kompaktversion.
 - **[!UICONTROL Erweitert]** (Standard): Die aus Workspace bekannte Ansicht.
 
-![Die kompakten, komfortablen und erweiterten Ansichtsdichten.](assets/view-density.png)
+![Die Dichte der kompakten, komfortablen und erweiterten Ansichten.](assets/view-density.png)
 
 So stellen Sie die Anzeigedichte ein:
 

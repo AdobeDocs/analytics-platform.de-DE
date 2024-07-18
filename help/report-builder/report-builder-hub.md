@@ -30,7 +30,7 @@ Verwenden Sie die Schaltflächen „Erstellen“ oder „Verwalten“, um neue D
 
 Verwenden Sie das Bedienfeld „Befehle“, um auf Befehle zuzugreifen, die mit den ausgewählten Zellen oder einer vorherigen Aktion kompatibel sind.
 
-![Bereich &quot;Befehle&quot;in Report Builder-Hub](./assets/hub1.png)
+![Das Bedienfeld &quot;Befehle&quot;in Report Builder-Hub](./assets/hub1.png)
 
 ### Befehle
 
@@ -47,7 +47,7 @@ Verwenden Sie das Bedienfeld „Befehle“, um auf Befehle zuzugreifen, die mit 
 
 Wenn Sie einen oder mehrere Datenblöcke in einem Arbeitsblatt auswählen, zeigt Report Builder das Bedienfeld „Schnellbearbeitung“ an. Sie können das Bedienfeld „Schnellbearbeitung“ verwenden, um Parameter in einem Datenblock zu ändern oder Parameter in mehreren Datenblöcken gleichzeitig zu ändern.
 
-![Bereich &quot;Schnellbearbeitung&quot;im Report Builder](./assets/hub2.png)
+![Das Bedienfeld &quot;Schnellbearbeitung&quot;in Report Builder](./assets/hub2.png)
 
 Die mithilfe der Schnellbearbeitungs-Bereiche vorgenommenen Änderungen gelten für alle ausgewählten Datenblöcke.
 
@@ -59,7 +59,7 @@ Wenn Sie die Datenansicht ändern, übernehmen alle Datenblöcke in der Auswahl 
 
 Um die Datenansicht zu ändern, wählen Sie eine neue Datenansicht aus dem Dropdown-Menü aus.
 
-![Report Builder-Hub, der das Dropdown-Menü für Datenansichten anzeigt.](./assets/image16.png)
+![Der Report Builder-Hub, der das Dropdown-Menü für die Datenansicht anzeigt.](./assets/image16.png)
 
 ### Datumsbereich
 

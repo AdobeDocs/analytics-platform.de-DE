@@ -22,18 +22,18 @@ Die kanalübergreifende Analyse ermöglicht eine zentrale, konsolidierte Ansicht
 
 1. [Erstellen Sie Schemata](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=de) für aufzunehmende Daten.
 1. [Erstellen Sie Datensätze](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/create-datasets-and-ingest-data.html?lang=de) für aufzunehmende Daten.
-1. [Daten in Experience Platform erfassen](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/understanding-data-ingestion.html?lang=de):
-   1. Ereignisbasierte Daten ![event](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Events_18_N.svg) von der Website oder App über den Quell-Connector von Edge Network oder Analytics.
-   2. Profildaten ![profile](https://spectrum.adobe.com/static/icons/workflow_18/Smock_User_18_N.svg) (z. B. über ein CRM-System, Callcenter-Anwendung, Treueprogramm).
-   3. Suchdaten ![Nachschlagen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) (z. B. Produktname, Kategorie aus einem Produktinformationssystem).
+1. [Daten in Experience Platform](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/understanding-data-ingestion.html?lang=de) aufnehmen:
+   1. Ereignisbasierte Daten ![event](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Events_18_N.svg) von einer Website oder App über den Quell-Connector für Edge Network oder Analytics.
+   2. Profildaten ![Profil](https://spectrum.adobe.com/static/icons/workflow_18/Smock_User_18_N.svg) (z. B. aus einem CRM-System, Callcenter-Anwendung, Treueanwendung).
+   3. Suchdaten ![lookup](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) (z. B. Produktname, Kategorie aus einem Produktinformationssystem).
 
-1. Verwenden Sie eine gemeinsame Namespace-ID für alle Datensätze. Verwendung [Stitching](../../stitching/overview.md) zum Erhöhen aller ereignisbasierten Datensätze ![Datenaktualisierung](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataRefresh_18_N.svg) in Bezug auf die Bereitstellung der gemeinsamen Kennung in jeder Zeile. Beachten Sie, dass Customer Journey Analytics derzeit für die Zuordnung weder das Experience Platform-Profil noch die Identitäts-Services verwendet.
+1. Verwenden Sie eine gemeinsame Namespace-ID für alle Datensätze. Verwenden Sie die [Zuordnung](../../stitching/overview.md) , um jeden ereignisbasierten Datensatz ![Datenaktualisierung](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataRefresh_18_N.svg) zu erhöhen, um die allgemeine ID für jede Zeile anzugeben. Beachten Sie, dass Customer Journey Analytics derzeit für die Zuordnung weder das Experience Platform-Profil noch die Identitäts-Services verwendet.
 1. Führen Sie eine benutzerdefinierte Datenvorbereitung durch, um sicherzustellen, dass ein gemeinsamer Schlüssel aus Zeitreihendaten in Customer Journey Analytics aufgenommen werden kann.
 1. Weisen Sie Suchdaten eine primäre ID zu, die mit einem Feld in den Ereignisdaten verknüpft werden kann. Zählt bei der Lizenzierung als Zeilen.
 1. Legen Sie dieselbe primäre ID für Profildaten als primäre ID der Ereignisdaten fest.
-1. [Verbindung erstellen](../../connections/overview.md) , um die relevanten Datensätze von Experience Platform auf Customer Journey Analytics zu erfassen.
+1. [Erstellen Sie eine Verbindung](../../connections/overview.md) , um die relevanten Datensätze von Experience Platform auf Customer Journey Analytics zu erfassen.
 1. [Erstellen Sie eine Datenansicht](/help/data-views/create-dataview.md) für die Verbindung, um die spezifischen Dimensionen und Metriken auszuwählen, die in die Ansicht aufgenommen werden sollen. Die Einstellungen für Attribution und Zuordnung werden auch in der Datenansicht konfiguriert. Diese Einstellungen werden zur Berichtszeit berechnet.
-1. [Projekt erstellen](/help/analysis-workspace/home.md) , um Dashboards und Berichte in Analysis Workspace zu konfigurieren.
+1. [Erstellen Sie ein Projekt](/help/analysis-workspace/home.md) , um Dashboards und Berichte in Analysis Workspace zu konfigurieren.
 
 ## Zu beachten
 

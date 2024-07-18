@@ -66,7 +66,7 @@ Um einer Detailfolie Text hinzuzufügen, wählen Sie ein Layout aus, für das da
 
 ## Entfernen von Komponenten {#remove}
 
-Um eine Komponente zu entfernen, die auf die gesamte Scorecard angewendet wird, klicken Sie auf eine beliebige Stelle außerhalb der Kacheln auf die Scorecard und entfernen Sie sie, indem Sie auf die **x** wird angezeigt, wenn Sie den Mauszeiger über die Komponente bewegen, wie unten für die **Erstbesuche**:
+Um eine Komponente zu entfernen, die auf die gesamte Scorecard angewendet wird, klicken Sie auf eine beliebige Stelle außerhalb der Kacheln auf die Scorecard und entfernen Sie sie, indem Sie auf **x** klicken, der angezeigt wird, wenn Sie den Mauszeiger über die Komponente bewegen, wie unten für die **Erstbesuche** dargestellt:
 
 ![Entfernen von Komponenten](assets/new_remove.png)
 
@@ -157,7 +157,7 @@ So geben Sie die Scorecard für einen ausführenden Benutzer frei:
 
 1. Klicken Sie auf das Menü **[!UICONTROL Freigeben]** und wählen Sie **[!UICONTROL Scorecard freigeben]**.
 
-1. Im **[!UICONTROL Mobile Scorecard freigeben]** Formular ausfüllen, indem Sie die Felder wie folgt ausfüllen:
+1. Füllen Sie die Felder im Formular **[!UICONTROL Mobile Scorecard freigeben]** aus, indem Sie:
 
    * den Namen der Scorecard angeben
    * eine Beschreibung der Scorecard angeben
@@ -198,7 +198,7 @@ Wenn Sie Dimensionselemente des Typs [!UICONTROL Nicht angegeben] aus Ihren Date
 1. Wählen Sie die richtige Kachel aus.
 1. Wählen Sie in der rechten Leiste unter **[!UICONTROL Drill-ins]** den Rechtspfeil neben dem Dimensionselement aus, für das Sie Elemente des Typs **[!UICONTROL Nicht angegeben]** entfernen möchten.
 
-   ![Eigenschaften mit Pfeil zeigen auf den Pfeil neben dem Dimensionsnamen.](assets/unspecified.png)
+   ![Eigenschaften mit Pfeil, der auf den Pfeil neben dem Dimensionsnamen zeigt.](assets/unspecified.png)
 
 1. Klicken Sie auf das Symbol neben **[!UICONTROL Nicht angegeben]**, um nicht spezifizierte Daten aus Ihrem Reporting zu entfernen. (Sie können auch jedes andere Dimensionselement entfernen.)
 
@@ -226,6 +226,6 @@ So zeigen Sie intelligente Untertitel in einer mobilen Scorecard an:
 
 1. Tippen Sie auf die schwarze Markierung in einer Beschriftung, um ein Problem zu melden, z. B. schädliche oder illegale Inhalte.
 
-   ![Berichtsproblem mit Beschriftung](assets/caption-report.png)
+   ![Berichtproblem mit Beschriftung](assets/caption-report.png)
 
-1. Klicken Sie auf das X, um die **[!UICONTROL Berichtsergebnisse]** angezeigt.
+1. Klicken Sie auf das X, um das Dialogfeld **[!UICONTROL Berichtsergebnisse]** zu verlassen.

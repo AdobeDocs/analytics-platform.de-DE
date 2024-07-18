@@ -37,7 +37,7 @@ Diese Visualisierung eignet sich für eine Vielzahl gängiger Anwendungsfälle, 
 
 1. Konfigurieren Sie die Visualisierung, indem Sie eine Metrik, einen primären Datumsbereich, einen Vergleichsdatumsbereich und einen Filter auswählen (falls gewünscht):
 
-   ![Schlüsselmetrikkonfiguration mit den Optionen für Metrik, Primärdatumsbereich, Vergleichsdatumsbereich und Segment.](assets/key-metric-config.png)
+   ![Schlüsselmetrikkonfiguration, die die Optionen für Metrik, Primärdatumsbereich, Vergleichsdatumsbereich und Segment anzeigt.](assets/key-metric-config.png)
 
    | Konfigurationseinstellungen | Definition |
    | --- | --- |
@@ -79,7 +79,7 @@ When you change the panel's date range to '4 days ago', the comparison date rang
 
 ## Ausgabe anzeigen
 
-![Schlüsselmetrikausgabe, die die Metrik, Zusammenfassungsänderung, Zusammenfassungsnummer und Liniendiagramme anzeigt.](assets/key-metric-output.png)
+![Schlüsselmetrikausgabe, die die Metrik, die Zusammenfassungsänderung, die Zusammenfassungsnummer und die Liniendiagramme anzeigt.](assets/key-metric-output.png)
 
 Bitte beachten Sie:
 
@@ -95,7 +95,7 @@ Bitte beachten Sie:
 
 Die Zusammenfassung der Schlüsselmetriken bietet mehrere flexible Einstellungen, um eine bessere Berichterstellung und Kommunikation wichtiger Metriken zu ermöglichen. Die Einstellungen können über das Zahnradsymbol in der oberen rechten Ecke der Visualisierung aufgerufen werden.
 
-![Schlüsselmetrikzusammenfassungs-Einstellungen mit Anzeigetyp, Allgemein und Anzeigeoptionen der Zusammenfassung](assets/key-metric-settings.png)
+![Schlüsselmetrikzusammenfassungs-Einstellungen, die den Anzeigetyp, die allgemeinen und die Anzeigeoptionen der Zusammenfassung anzeigen.](assets/key-metric-settings.png)
 
 | Einstellung | Beschreibung |
 | --- | --- |
@@ -116,7 +116,7 @@ Nach dem Erstellen der Visualisierung können Sie die ursprüngliche Konfigurati
 
 1. Klicken Sie oben rechts in der Visualisierung auf das Stiftsymbol (neben dem Zahnradsymbol für Einstellungen).
 
-   ![Symbol für die Visualisierungsbearbeitung](assets/edit-icon.png)
+   ![Symbol für die Visualisierungsbearbeitung.s](assets/edit-icon.png)
 
    Sie gelangen nun zurück zur ursprünglichen Konfigurationsansicht.
 

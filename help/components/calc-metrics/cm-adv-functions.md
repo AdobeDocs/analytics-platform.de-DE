@@ -62,7 +62,7 @@ Ungefährer Distinct Count (Kunden-ID-eVar) ist ein typischer Anwendungsfall fü
 
 Definition für eine neue berechnete „Ungefähre Kunden“-Metrik:
 
-![Ungefähre Definition einer neuen Dimension für das Land, die die Kunden-ID anzeigt (eVar 1)](assets/approx-count-distinct.png)
+![Ungefähre Definition einer neuen Dimension für ungefähre Ländereinheiten, die die Kunden-ID anzeigt (eVar1)](assets/approx-count-distinct.png)
 
 So könnte die „Ungefähre Kunden“-Metrik für Berichte verwendet werden:
 

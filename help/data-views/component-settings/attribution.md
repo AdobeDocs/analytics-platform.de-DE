@@ -16,7 +16,7 @@ ht-degree: 28%
 
 Mit Attribution können Sie anpassen, wie Dimensionselemente Erfolgsereignissen zugeschrieben werden.
 
-![Datenansichtsfenster mit der Option Attribution festlegen](../assets/attribution-settings.png)
+![Fenster &quot;Datenansichten&quot;, in dem die Option &quot;Attribution festlegen&quot;hervorgehoben wird](../assets/attribution-settings.png)
 
 Zum Beispiel:
 
@@ -33,11 +33,11 @@ Sie können ein standardmäßiges Attributionsmodell für eine bestimmte Metrik 
 >
 >Beachten Sie beim Aktivieren der Attribution für eine Metrik Folgendes:
 >
->* **Bei Verwendung der Komponente in einem Bericht mit *eine einzige Dimension*:** Die Attribution der Komponente ignoriert das Zuordnungsmodell, wenn ein nicht standardmäßiges Attributionsmodell verwendet wird.
+>* **Bei Verwendung der Komponente in einem Bericht mit *einer einzelnen Dimension*:** Die Attribution der Komponente ignoriert das Zuordnungsmodell, wenn ein nicht standardmäßiges Attributionsmodell verwendet wird.
 >
->* **Bei Verwendung der Komponente in einem Bericht mit *mehrere Dimensionen*:** Die Attribution der Komponente behält das Zuordnungsmodell bei, wenn ein nicht standardmäßiges Attributionsmodell verwendet wird.
+>* **Bei Verwendung der Komponente in einem Bericht mit *mehreren Dimensionen*:** Die Attribution der Komponente behält das Zuordnungsmodell bei, wenn ein nicht standardmäßiges Attributionsmodell verwendet wird.
 >
->   Mehrere Dimensionen sind nur verfügbar, wenn [Exportieren von Daten in die Cloud](/help/analysis-workspace/export/export-cloud.md).
+>   Mehrere Dimensionen sind nur verfügbar, wenn [Daten in die Cloud exportieren](/help/analysis-workspace/export/export-cloud.md).
 >
 > Weitere Informationen zur Zuordnung finden Sie unter [Einstellungen der Persistenz-Komponente](/help/data-views/component-settings/persistence.md).
 
@@ -47,11 +47,11 @@ So aktualisieren Sie das standardmäßige Attributionsmodell einer Komponente:
 
 1. Wählen Sie die Komponente aus und erweitern Sie dann den Abschnitt Attribution auf der rechten Seite des Bildschirms.
 
-   ![Datenansichtsfenster mit der Option Attribution festlegen](../assets/attribution-settings.png)
+   ![Fenster &quot;Datenansichten&quot;, in dem die Option &quot;Attribution festlegen&quot;hervorgehoben wird](../assets/attribution-settings.png)
 
-1. Auswählen [!UICONTROL **Attribution festlegen**] und wählen Sie dann das Attributionsmodell im [!UICONTROL **Attributionsmodell**] Dropdown-Menü.
+1. Wählen Sie [!UICONTROL **Attribution festlegen**] und wählen Sie dann das Attributionsmodell im Dropdown-Menü [!UICONTROL **Attributionsmodell**] aus.
 
-   Siehe [Attributionsmodelle](#attribution-models) , um mehr über die einzelnen Attributionsmodelle zu erfahren.
+   Weitere Informationen zu den einzelnen Attributionsmodellen finden Sie unter [Attributionsmodelle](#attribution-models) .
 
 1. Wählen Sie [!UICONTROL **Speichern und fortfahren**] aus.
 
@@ -61,7 +61,7 @@ So aktualisieren Sie das standardmäßige Attributionsmodell einer Komponente:
 >
 > * Kopieren Sie die Metrik in der Datenansicht mit jeder gewünschten Attributionseinstellung. Sie können dieselbe Metrik mehrmals in eine Datenansicht einbeziehen, wodurch jede Metrik eine andere Einstellung erhält. Stellen Sie sicher, dass Sie jede Metrik entsprechend benennen, damit Analysten den Unterschied zwischen diesen Metriken bei der Berichterstellung verstehen.
 >
-> * Überschreiben Sie die Metrik in Analysis Workspace. In einer Metrik [Spalteneinstellungen](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/column-settings.md)auswählen **[!UICONTROL Nicht standardmäßiges Attributionsmodell verwenden]** , um das Attributionsmodell der Metrik und das Lookback-Fenster für diesen Bericht zu ändern.
+> * Überschreiben Sie die Metrik in Analysis Workspace. Wählen Sie in den [Spalteneinstellungen](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/column-settings.md) einer Metrik die Option **[!UICONTROL Nicht standardmäßiges Attributionsmodell verwenden]** aus, um das Attributionsmodell und das Lookback-Fenster der Metrik für diesen Bericht zu ändern.
 
 ## Attributionsmodelle
 
@@ -74,9 +74,9 @@ Ein Attributionsmodell bestimmt, welche Dimensionselemente einer Metrik gutgesch
 | ![Linear](../assets/attribution-models/linear.png) | Linear | Ermöglicht die gleiche Gewichtung für jeden Touchpoint, der zu einer Konversion geführt hat. Dies ist nützlich, wenn Konversionszyklen länger sind oder eine häufigere Kundeninteraktion erfordern. Unternehmen verwenden in der Regel dieses Attributionsmodell zur Messung der Benachrichtigungseffektivität mobiler Apps oder mit abonnementbasierten Produkten. |
 | ![Beitrag](../assets/attribution-models/participation.png) | Beitrag | 100 % Gewichtung für alle eindeutigen Touchpoints. Da jedem Touchpoint 100 % zugeschrieben werden, ergeben sich für Metrikdaten in der Regel mehr als 100 %. Wenn ein Dimensionselement mehrmals vor einer Konversion separat angezeigt wird, werden die Werte auf 100 % dedupliziert. Dieses Attributionsmodell eignet sich ideal für Situationen, in denen Sie verstehen möchten, welche Touchpoints Kunden am häufigsten angezeigt werden. Medienunternehmen verwenden dieses Modell normalerweise zur Berechnung der Content Velocity. Einzelhandelsunternehmen verwenden dieses Modell normalerweise, um zu verstehen, welche Teile ihrer Site für die Konversion von entscheidender Bedeutung sind. |
 | ![Selber Kontakt](../assets/attribution-models/same_touch.png) | Selber Kontakt | 100 % werden demselben Ereignis zugeschrieben, bei dem die Konversion erfolgte. Wenn bei demselben Ereignis wie einer Konversion kein Touchpoint auftritt, wird er unter &quot;Keine&quot;zusammengefasst. Dieses Attributionsmodell ist manchmal mit dem Attributionsmodell gleichgesetzt, das überhaupt nicht vorhanden ist. Dies ist in Szenarien nützlich, in denen Sie keine Werte aus anderen Ereignissen wünschen, die sich auf die Art und Weise auswirken, in der eine Metrik Dimensionselementen zugeschrieben wird. Produkt- oder Designteams können dieses Modell verwenden, um die Effektivität einer Seite zu bewerten, auf der eine Konversion stattfindet. |
-| ![U förmig](../assets/attribution-models/u_shaped.png) | U-Form | Der ersten Interaktion werden 40 % zugeschrieben, der letzten Interaktion 40 %. Die verbleibenden 20 % werden auf alle dazwischen liegenden Touchpoints aufgeteilt. Bei Konversionen mit einem einzigen Touchpoint werden diesem 100 % zugeschrieben. Bei Konversionen mit zwei Touchpoints werden beiden 50 % zugeschrieben. Dieses Attributionsmodell eignet sich am besten in Szenarien, in denen Sie die erste und letzte Interaktion am häufigsten bewerten, aber keine zusätzlichen Interaktionen dazwischen vollständig verwerfen möchten. |
-| ![J Curve](../assets/attribution-models/j_shaped.png) | J-Kurve | Der letzten Interaktion werden 60 % zugeschrieben, der ersten Interaktion werden 20 % zugeschrieben. Die restlichen 20 % werden auf alle dazwischen liegenden Touchpoints aufgeteilt. Bei Konversionen mit einem einzigen Touchpoint werden diesem 100 % zugeschrieben. Bei Konversionen mit zwei Touchpoints werden der letzten Interaktion 75 % zugeschrieben und der ersten 25 %. Ähnlich wie U-förmig bevorzugt dieses Attributionsmodell die ersten und letzten Interaktionen, bevorzugt jedoch die letzte Interaktion. |
-| ![Umgekehrtes J](../assets/attribution-models/inverse_j.png) | Umgekehrtes J | Der ersten Interaktion werden 60 % zugeschrieben, der letzten Interaktion 20 %. Die verbleibenden 20 % werden auf alle dazwischen liegenden Touchpoints aufgeteilt. Bei Konversionen mit einem einzigen Touchpoint werden diesem 100 % zugeschrieben. Bei Konversionen mit zwei Touchpoints werden der ersten Interaktion 75 % zugeschrieben und der letzten 25 %. Ähnlich wie J-förmig bevorzugt dieses Attributionsmodell die ersten und letzten Interaktionen, bevorzugt jedoch die erste Interaktion. |
+| ![U-förmig](../assets/attribution-models/u_shaped.png) | U-Form | Der ersten Interaktion werden 40 % zugeschrieben, der letzten Interaktion 40 %. Die verbleibenden 20 % werden auf alle dazwischen liegenden Touchpoints aufgeteilt. Bei Konversionen mit einem einzigen Touchpoint werden diesem 100 % zugeschrieben. Bei Konversionen mit zwei Touchpoints werden beiden 50 % zugeschrieben. Dieses Attributionsmodell eignet sich am besten in Szenarien, in denen Sie die erste und letzte Interaktion am häufigsten bewerten, aber keine zusätzlichen Interaktionen dazwischen vollständig verwerfen möchten. |
+| ![J-Kurve](../assets/attribution-models/j_shaped.png) | J-Kurve | Der letzten Interaktion werden 60 % zugeschrieben, der ersten Interaktion werden 20 % zugeschrieben. Die restlichen 20 % werden auf alle dazwischen liegenden Touchpoints aufgeteilt. Bei Konversionen mit einem einzigen Touchpoint werden diesem 100 % zugeschrieben. Bei Konversionen mit zwei Touchpoints werden der letzten Interaktion 75 % zugeschrieben und der ersten 25 %. Ähnlich wie U-förmig bevorzugt dieses Attributionsmodell die ersten und letzten Interaktionen, bevorzugt jedoch die letzte Interaktion. |
+| ![Umgekehrter J](../assets/attribution-models/inverse_j.png) | Umgekehrtes J | Der ersten Interaktion werden 60 % zugeschrieben, der letzten Interaktion 20 %. Die verbleibenden 20 % werden auf alle dazwischen liegenden Touchpoints aufgeteilt. Bei Konversionen mit einem einzigen Touchpoint werden diesem 100 % zugeschrieben. Bei Konversionen mit zwei Touchpoints werden der ersten Interaktion 75 % zugeschrieben und der letzten 25 %. Ähnlich wie J-förmig bevorzugt dieses Attributionsmodell die ersten und letzten Interaktionen, bevorzugt jedoch die erste Interaktion. |
 | ![Zeitverfall](../assets/attribution-models/time_decay.png) | Zeitverlauf | Folgt einem exponentiellen Abfall mit einem benutzerdefinierten Parameter für die Halbwertszeit, wobei der Standardwert 7 Tage ist. Die Gewichtung der einzelnen Kanäle hängt von der Zeit ab, die zwischen dem Beginn des Touchpoints und der letztendlichen Konversion verstrichen ist. Die Formel, die zur Bestimmung der Gewichtung verwendet wird, lautet `2^(-t/halflife)`, wobei `t` die Zeit zwischen einem Touchpoint und einer Konversion ist. Alle Touchpoints werden dann auf 100 % normalisiert. Ideal für Szenarien, in denen Sie die Attribution mit einem bestimmten und wichtigen Ereignis messen möchten. Je länger eine Konversion nach diesem Ereignis erfolgt, desto weniger Gewichtung wird gewährt. |
 | ![Benutzerspezifisch](../assets/attribution-models/custom.png) | Anpassen | Ermöglicht die Angabe der Gewichtungen, die Sie für den Erstkontakt-Punkt, den Letztkontakt-Punkt und alle dazwischen liegenden Touchpoints festlegen möchten. Die angegebenen Werte werden auf 100 % normalisiert, selbst wenn die eingegebenen benutzerdefinierten Zahlen zusammen nicht 100 ergeben. Bei Konversionen mit einem einzigen Touchpoint werden diesem 100 % zugeschrieben. Bei Interaktionen mit zwei Touchpoints wird der mittlere Parameter ignoriert. Die Erst- und Letztkontaktpunkte werden dann auf 100 % normalisiert und die Gewichtung wird entsprechend zugeordnet. Dieses Modell eignet sich ideal für Analysten, die vollständige Kontrolle über ihr Attributionsmodell wünschen und spezielle Anforderungen haben, die andere Attributionsmodelle nicht erfüllen. |
 | ![Algorithmisch](../assets/attribution-models/algorithmic.png) | Algorithmisch | Verwendet statistische Verfahren, um die optimale Zuordnung für die ausgewählte Metrik dynamisch zu bestimmen. Der für die Zuordnung verwendete Algorithmus basiert auf der Harsanyi-Dividende aus der kooperativen Spieltheorie. Die Harsanyi-Dividende ist eine Verallgemeinerung der Shapley-Wertlösung (die nach Lloyd Shapley, einem Nobelpreisträger für Ökonomie, benannt wurde) zur Verteilung von Gutschriften unter den Spielern in einem Spiel mit ungleichen Beiträgen zum Ergebnis.<br>Auf hoher Ebene wird die Attribution als eine Koalition von Akteuren berechnet, auf die ein Überschuss gleichmäßig verteilt werden muss. Die Überschusshöhe jeder Koalition wird nach dem Überschuss bestimmt, der zuvor von jeder Unterkoalition (oder zuvor teilnehmenden Dimensionselementen) rekursiv erzeugt wurde. Weitere Informationen finden Sie in den Originalpapieren von John Harsanyi und Lloyd Shapley:<br>Shapley, Lloyd S. (1953). A value for n-person games. *Contributions to the Theory of Games, 2(28)*, 307-317.<br>Harsanyi, John C. (1963). A simplified bargaining model for the n-person cooperative game. *International Economic Review 4(2)*, 194-220. |
@@ -91,7 +91,7 @@ Ein Lookback-Fenster ist der Zeitraum, der für eine Konversion rückblickend be
 * **30 Tage**: Blickt bis zu 30 Tage nach der Konvertierung zurück.
 * **60 Tage**: Blickt bis zu 60 Tage nach der Konvertierung zurück.
 * **90 Tage**: Blickt bis zu 90 Tage nach der Konvertierung zurück.
-* **Sitzung**: Blickt bis zum Beginn der Sitzung zurück, in der eine Konversion stattgefunden hat. Sitzungs-Lookback-Fenster berücksichtigen die geänderte [Sitzungs-Timeout](../create-dataview.md#session-settings).
+* **Sitzung**: Blickt bis zum Anfang der Sitzung zurück, in der eine Konversion stattgefunden hat. Sitzungs-Lookback-Fenster berücksichtigen den geänderten [Sitzungs-Timeout](../create-dataview.md#session-settings).
 * **Person (Berichtsfenster)**: Betrachtet alle Besuche bis zum ersten des Monats des aktuellen Datumsbereichs. Wenn der Datumsbereich des Berichts beispielsweise zwischen dem 15. September und dem 30. September liegt, liegt der Personen-Lookback-Datumsbereich zwischen dem 1. September und dem 30. September. Wenn Sie dieses Lookback-Fenster verwenden, können Sie gelegentlich sehen, dass Dimensionselemente Datumsangaben außerhalb Ihres Berichtsfensters zugeordnet werden.
 * **Benutzerdefinierte Zeit:** Ermöglicht Ihnen das Festlegen eines benutzerdefinierten Lookback-Fensters ab dem Zeitpunkt der Konvertierung. Sie können die Anzahl der Minuten, Stunden, Tage, Wochen, Monate oder Quartale festlegen. Wenn beispielsweise am 20. Februar eine Konversion stattgefunden hat, würde ein Lookback-Fenster von fünf Tagen alle Dimensionskontaktpunkte vom 15. Februar bis 20. Februar im Attributionsmodell auswerten.
 
@@ -105,15 +105,15 @@ Siehe folgendes Beispiel:
 
 Je nach Lookback-Fenster und Attributionsmodell erhalten Kanäle eine unterschiedliche Gewichtung. Im Folgenden finden Sie einige interessante Beispiele:
 
-* Verwenden **Erstkontakt** und **Sitzungs-Lookback-Fenster**, betrachtet die Attribution nur den dritten Besuch. E-Mail kam vor Display-Anzeige, sodass E-Mail 100 % des Kaufs von 50 Euro zugeschrieben werden.
-* Verwenden **Erstkontakt** und **Personen-Lookback-Fenster**, betrachtet die Attribution alle drei Besuche. Paid Search kam zuerst, sodass Paid Search 100 % des Kaufs von 50 Euro zugeschrieben werden.
-* Verwenden **linear** und **Sitzungs-Lookback-Fenster**, wird die Gewichtung zwischen E-Mail und Anzeige aufgeteilt. Beiden Kanälen werden jeweils 25 Euro zugeschrieben.
-* Verwenden **linear** und **Personen-Lookback-Fenster**, wird die Gewichtung zwischen Paid Search, Social Media, E-Mail und Display-Anzeige aufgeteilt. Jedem Kanal werden für diesen Kauf 12,50 Euro zugeschrieben.
-* Verwenden **J-förmig** und **Personen-Lookback-Fenster**, wird die Gewichtung zwischen Paid Search, Social Media, E-Mail und Display-Anzeige aufgeteilt.
+* Bei Verwendung von **Erstkontakt** und einem **Sitzungs-Lookback-Fenster** betrachtet die Attribution nur den dritten Besuch. E-Mail kam vor Display-Anzeige, sodass E-Mail 100 % des Kaufs von 50 Euro zugeschrieben werden.
+* Mithilfe von **Erstkontakt** und einem **Personen-Lookback-Fenster** betrachtet die Attribution alle drei Besuche. Paid Search kam zuerst, sodass Paid Search 100 % des Kaufs von 50 Euro zugeschrieben werden.
+* Bei Verwendung von **linear** und einem **Sitzungs-Lookback-Fenster** wird die Gewichtung zwischen E-Mail und Anzeige aufgeteilt. Beiden Kanälen werden jeweils 25 Euro zugeschrieben.
+* Bei Verwendung von **linear** und einem **Personen-Lookback-Fenster** wird die Gewichtung zwischen Paid Search, Social Media, E-Mail und Display-Anzeige aufgeteilt. Jedem Kanal werden für diesen Kauf 12,50 Euro zugeschrieben.
+* Bei Verwendung von **J-förmig** und einem **Personen-Lookback-Fenster** wird die Gewichtung zwischen Paid Search, Social Media, E-Mail und Display-Anzeige aufgeteilt.
    * Der Display-Anzeige werden 60 %, also 30 Euro, zugeschrieben.
    * Paid Search werden 20 %, also 10 Euro, zugeschrieben.
    * Die restlichen 20 % werden zwischen Social Media und E-Mail aufgeteilt (jeweils 5 Euro).
-* Verwenden **Zeitverfall** und **Personen-Lookback-Fenster**, wird die Gewichtung zwischen Paid Search, Social Media, E-Mail und Display-Anzeige aufgeteilt. Verwendung der standardmäßigen 7-Tage-Halbwertszeit:
+* Bei Verwendung von **Zeitverfall** und einem **Personen-Lookback-Fenster** wird die Gewichtung zwischen Paid Search, Social Media, E-Mail und Display-Anzeige aufgeteilt. Verwendung der standardmäßigen 7-Tage-Halbwertszeit:
    * Abstand von null Tagen zwischen Display-Touchpoint und Konversion. `2^(-0/7) = 1`
    * Abstand von null Tagen zwischen E-Mail-Touchpoint und Konversion. `2^(-0/7) = 1`
    * Abstand von sechs Tagen zwischen Social Touch-Point und Konversion. `2^(-6/7) = 0.552`

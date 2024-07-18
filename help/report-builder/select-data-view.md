@@ -26,7 +26,7 @@ Um eine Datenansicht aus einer Zelle auszuwählen, erstellen Sie zunächst einen
 1. Erstellen Sie einen Datenblock.
 Informationen zum Erstellen eines Datenblocks finden Sie unter [Erstellen eines Datenblocks](/help/report-builder/create-a-data-block.md).
 
-1. Klicken Sie auf *Zellensymbol* im *Datenansichten* Abschnitt.
+1. Klicken Sie auf das Zellensymbol ** im Abschnitt *Datenansichten*.
 
    ![Erstellen Sie ein neues Datenblock-Fenster mit hervorgehobenem Zellensymbol.](/help/report-builder/assets/cell-icon.png)
 
@@ -38,13 +38,13 @@ Informationen zum Erstellen eines Datenblocks finden Sie unter [Erstellen eines 
 
 1. Wählen Sie die Datenansichten aus, die Sie der Zelle zuweisen möchten.
 
-   ![Report Builder Schnellbearbeitungsfenster mit den Datenansichten Auswählen .](/help/report-builder/assets/select-data-view.png)
+   ![Report Builder Quick edit panel, der die Datenansichten auswählen anzeigt.](/help/report-builder/assets/select-data-view.png)
 
 1. Klicken Sie auf **Anwenden**.
 
    Wenn Sie Ihren Datenblock fertig gestellt haben, können Sie ihn mit einer anderen Datenansicht aus der ausgewählten Zelle aktualisieren.
 
-   **Datenansicht in der Zelle ändern**
+   **Ändern der Datenansicht aus der Zelle**
 
 1. Klicken Sie auf die Zellenposition der Datenansicht, die Sie in Schritt 3 ausgewählt haben.
 
@@ -52,7 +52,7 @@ Informationen zum Erstellen eines Datenblocks finden Sie unter [Erstellen eines 
 
 1. Wählen Sie eine andere Datenansicht aus der Dropdownliste aus.
 
-1. (Optional) **Datenblock(e) aktualisieren auswählen** bei Änderung.
+1. (Optional) **Wählen Sie bei Änderung die Option Datenblock(e) aktualisieren** aus.
 
 1. Klicken Sie auf **Anwenden**.
 

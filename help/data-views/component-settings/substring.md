@@ -22,7 +22,7 @@ Mit Einstellungen der [!UICONTROL Teilzeichenfolge]-Komponente können Sie mehre
 
 ## Von links/rechts
 
-Hiermit stellen Sie einen Teil einer Zeichenfolge je nach ihrer Position an den Beginn oder das Ende einer Zeichenfolge. **[!UICONTROL Von links]** und **[!UICONTROL Von rechts]** -Methoden bieten zwei Dropdownlisten: **[!UICONTROL Von]** (wo die Ausgabe beginnt) und **[!UICONTROL nach]** (wo die Ausgabe endet).
+Hiermit stellen Sie einen Teil einer Zeichenfolge je nach ihrer Position an den Beginn oder das Ende einer Zeichenfolge. Die Methoden **[!UICONTROL Von links]** und **[!UICONTROL Von rechts]** bieten zwei Dropdownlisten: **[!UICONTROL Von]** (wo die Ausgabe beginnt) und **[!UICONTROL bis]** (wo die Ausgabe endet).
 
 * **[!UICONTROL Zeichenfolgen-Start]**: Der Beginn der Zeichenfolge.
 * **[!UICONTROL Zeichenfolge-Ende]**: Das Ende der Zeichenfolge.
@@ -31,7 +31,7 @@ Hiermit stellen Sie einen Teil einer Zeichenfolge je nach ihrer Position an den 
    * **[!UICONTROL Übereinstimmung]**: Die zuzuordnende Zeichenfolge. Wenn die Eingabe nicht mit diesem Feld übereinstimmt, werden [keine Wertoptionen](no-value-options.md) angewendet.
    * **[!UICONTROL Index]**: Die **[!UICONTROL Übereinstimmungskriterien]** können in einer Zeichenfolge mehrmals vorkommen. Diese Ganzzahl bestimmt, welche Übereinstimmung je nach Methode die Ausgabe starten oder beenden soll. Beispiel: Ein Index von `1` stellt die erste Übereinstimmung dar. Wenn der Index höher ist als die Anzahl der verfügbaren Übereinstimmungen, werden [keine Wertoptionen](no-value-options.md) angewendet.
    * **[!UICONTROL Zeichenfolge einschließen]**: Ist dieses Kontrollkästchen aktiviert, wird die **[!UICONTROL Übereinstimmungszeichenfolge]** in der Ausgabe einbezogen.
-* **[!UICONTROL Länge]**: Eine Ganzzahl, die angibt, wie hoch die einzubeziehende Zeichenzahl nach der Startposition der Ausgabe sein soll. Nur verfügbar unter **[!UICONTROL nach]** Dropdown-Liste.
+* **[!UICONTROL Länge]**: Eine Ganzzahl, die angibt, wie hoch die einzubeziehende Zeichenzahl nach der Startposition der Ausgabe sein soll. Nur verfügbar unter der Dropdownliste **[!UICONTROL bis]**.
 
 ## Trennzeichen
 

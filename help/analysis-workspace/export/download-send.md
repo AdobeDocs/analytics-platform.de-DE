@@ -15,7 +15,7 @@ ht-degree: 64%
 
 Sie können Customer Journey Analytics-Daten auf Ihre Workstation herunterladen. Dies kann in Form von kopierten Daten, CSV oder PDF erfolgen. Eine PDF wird normalerweise bevorzugt, wenn Sie in der heruntergeladenen Datei enthaltene Visualisierungen verwenden möchten. CSV- und kopierte Daten werden bevorzugt, wenn Sie Daten in Textform verwenden möchten.
 
-Es stehen auch andere Methoden zum Exportieren von Customer Journey Analytics-Daten zur Verfügung, wie unter [Exportübersicht](/help/analysis-workspace/export/export-project-overview.md).
+Es sind auch andere Methoden zum Exportieren von Customer Journey Analytics-Daten verfügbar, wie unter [Exportübersicht](/help/analysis-workspace/export/export-project-overview.md) beschrieben.
 
 ## Als CSV oder PDF herunterladen {#download-project}
 
@@ -27,7 +27,7 @@ Beachten Sie beim Herunterladen von Projekten Folgendes:
    * Der Export von Downloads kann mehrere Minuten dauern, da das Projekt auf Adobe-Servern erneut ausgeführt wird, bevor es im PDF-Format gerendert wird. Wir empfehlen, das Projekt nicht zu verlassen, bis die PDF-Datei in Ihren Browser heruntergeladen wurde. Sie können jedoch beim Warten weiterhin Änderungen am Projekt vornehmen. Wenn die Ausgabe einer PDF-Datei länger als 5 Minuten dauert, werden Sie aufgefordert, diese stattdessen per E-Mail zu erhalten.
    * Downloads werden als einzelne Seite ohne Seitenumbruch gerendert.
    * PDF-Renderings enthalten die Informationen auf der Seite in Workspace. Wenn ein Projekt Visualisierungen und Bedienfelder in benutzerdefinierter Größe enthält, müssen Sie diese so ändern, dass die Größe automatisch bestimmt wird (Schaltfläche in der oberen rechten Ecke), damit der Inhalt nicht abgeschnitten wird.
-   * Alle [Hyperlinks](/help/analysis-workspace/visualizations/freeform-table/freeform-table-hyperlinks.md) , die in Freiformtabellen vorhanden sind, sind in der heruntergeladenen PDF nicht funktionsfähig.
+   * Alle [Hyperlinks](/help/analysis-workspace/visualizations/freeform-table/freeform-table-hyperlinks.md), die in Freiformtabellen vorhanden sind, sind auf der heruntergeladenen PDF nicht funktionsfähig.
 
 Herunterladen eines Projekts als CSV- oder PDF-Datei:
 
@@ -47,7 +47,7 @@ Herunterladen eines Projekts als CSV- oder PDF-Datei:
 
 ## In die Zwischenablage kopieren (Hotkey: Strg+C) {#copy-data}
 
-Die Rechtsklickoption **[!UICONTROL In Zwischenablage kopieren]** ermöglicht Ihnen das schnelle Kopieren von Customer Journey Analytics-Daten aus Workspace und das Einfügen dieser Daten in ein Tool eines Drittanbieters.
+Mit der Rechtsklickoption **[!UICONTROL In die Zwischenablage kopieren]** können Sie schnell Customer Journey Analytics-Daten aus Workspace kopieren und in ein Drittanbieter-Tool einfügen.
 
 * Wenn die angezeigte Tabelle kopiert werden soll, klicken Sie mit der rechten Maustaste auf die Tabellenkopfzeile und wählen Sie **Daten in die Zwischenablage kopieren**.
 * Wenn Sie möchten, dass nur ein Teil der Daten kopiert wird, wählen Sie ihn in der Tabelle aus, und klicken Sie dann mit der rechten Maustaste auf >**Auswahl in Zwischenablage kopieren**.
@@ -57,11 +57,11 @@ Die Rechtsklickoption **[!UICONTROL In Zwischenablage kopieren]** ermöglicht Ih
 >Sie können den Hotkey `Ctrl+C` verwenden, um Ihre Auswahl in die Zwischenablage zu kopieren, und dann `Ctrl+V`, um es in ein Tool eines Drittanbieters einzufügen.
 
 
-![Die Option Auswahl in Zwischenablage kopieren ](assets/copy-selection.png)
+![Die Option Auswahl in Zwischenablage kopieren . ](assets/copy-selection.png)
 
 ## Als CSV herunterladen {#download-data}
 
-Die Rechtsklickoption **[!UICONTROL Daten als CSV herunterladen]** ermöglicht Ihnen, eine Tabelle mit Customer Journey Analytics-Daten oder die Datenquelle einer beliebigen Visualisierung als CSV-Datei herunterzuladen.
+Mit der Rechtsklickoption **[!UICONTROL Daten als CSV-Datei herunterladen]** können Sie eine Customer Journey Analytics-Datentabelle oder die Datenquelle einer beliebigen Visualisierung als CSV-Datei herunterladen.
 
 * Klicken Sie in der Kopfzeile einer Tabelle oder Visualisierung mit der rechten Maustaste und wählen Sie **[!UICONTROL Daten als CSV herunterladen]** aus. Dadurch werden die angezeigten Customer Journey Analytics-Daten in der Tabelle oder der zugrunde liegenden Datenquelle für eine Visualisierung als CSV heruntergeladen.
 
@@ -72,7 +72,7 @@ Die Rechtsklickoption **[!UICONTROL Daten als CSV herunterladen]** ermöglicht I
 
 * Klicken Sie in einer Tabelle mit der rechten Maustaste und wählen Sie **[!UICONTROL Auswahl als CSV herunterladen]**. Mit dieser Option wird nur die Auswahl heruntergeladen, nicht die vollständige, angezeigte Tabelle.
 
-![Die Option Daten als CSV herunterladen .](assets/download-data-viz.png)
+![ Die Option Daten als CSV herunterladen .](assets/download-data-viz.png)
 
 ## Objekte als CSV herunterladen {#download-items}
 
@@ -84,7 +84,7 @@ Wenn Sie mehr als die 400 sichtbaren Zeilen mit Daten in einer Tabelle analysier
 
 Während eines Downloads können Sie mehrere Aufgaben im Projekt ausführen und sogar zu einem neuen Workspace-Projekt auf derselben Registerkarte navigieren. Der Download wird angehalten, wenn Sie eine neue Browser-Registerkarte öffnen. Der Download wird abgebrochen, wenn Sie Workspace vollständig verlassen oder die Browser-Registerkarte schließen.
 
-![Die Option Elemente als CSV (Seite) herunterladen .](assets/download-items.png)
+![Die Option Elemente als CSV-Datei (Seite) herunterladen.](assets/download-items.png)
 
 ### Datei mit heruntergeladenen Elementen {#items-file}
 
@@ -96,7 +96,7 @@ Die Eigenschaften der Tabelle werden wie folgt auf die heruntergeladene Datei an
 
 Im obigen Beispiel werden Seitenelemente mit dem Bedienfeldfilter („Neue Besucher-Kunden“) heruntergeladen und die darüber liegenden Komponenten („Marketing-Kanal = E-Mail“) als Filter angewendet, während die darunter liegenden Komponenten („Typ des Mobilgeräts“) aus der heruntergeladenen CSV-Datei entfernt werden.
 
-![Die heruntergeladene CSV-Datei wurde in Excel geöffnet.](assets/downloaded-file.png)
+![ Die heruntergeladene CSV-Datei, die in Excel geöffnet wurde.](assets/downloaded-file.png)
 
 ### Download-Benachrichtigungen {#notifications}
 
@@ -106,13 +106,13 @@ Sobald die Datei abgeschlossen ist, wird eine Benachrichtigung angezeigt und die
 
 Wenn Sie mehrere Downloads gleichzeitig anfordern, erhalten Sie eine Benachrichtigung, dass jeder weitere Download in die Warteschlange gestellt wird, bis der vorherige Download abgeschlossen ist.
 
-![Die Benachrichtigung zum Download-Status, die den Prozentsatz der Fertigstellung und den Link Download abbrechen anzeigt.](assets/toast.png)
+![Die Benachrichtigung zum Downloadstatus, die den Prozentsatz der Fertigstellung und einen Abbrechen des Downloadlinks anzeigt.](assets/toast.png)
 
 ## Herunterladen sensibler Daten {#sensitive}
 
-Wenn die Variable **[!UICONTROL Download durchsetzen]** [Data Governance-Politik](/help/data-views/data-governance.md) in der Datenansicht aktiviert ist, über die Sie Berichte erstellen, werden bei jedem Download von Workspace-Projekten (z. B. per E-Mail oder PDF) die als vertraulich gekennzeichneten Datenfelder gehasht. Sie können diese Felder in Workspace weiterhin analysieren, aber wenn Sie versuchen, ein Projekt per E-Mail zu versenden oder anderweitig freizugeben, werden die blockierten Felder in der .pdf- oder .csv-Datei als leer angezeigt.
+Wenn die Richtlinie **[!UICONTROL Download erzwingen]** [Data Governance ](/help/data-views/data-governance.md) in der Datenansicht, über die Sie Berichte erstellen, aktiviert ist, werden bei jedem Download (z. B. E-Mail-Versand oder Freigabe von PDF-Dateien) von Workspace-Projekten die Datenfelder mit der Beschriftung &quot;vertraulich&quot;gehasht. Sie können diese Felder in Workspace weiterhin analysieren, aber wenn Sie versuchen, ein Projekt per E-Mail zu versenden oder anderweitig freizugeben, werden die blockierten Felder in der .pdf- oder .csv-Datei als leer angezeigt.
 
-Wenn Datenfelder, die als vertraulich gekennzeichnet sind, in der Variablen [!UICONTROL Datenansicht], ist die Option zum Auswählen und Kopieren von Daten aus dem Bildschirm auf alle Daten im [!UICONTROL Datenansicht].
+Wenn Datenfelder, die als vertraulich gekennzeichnet sind, in der [!UICONTROL Datenansicht] enthalten sind, ist die Option zum Auswählen und Kopieren von Daten aus dem Bildschirm für alle Daten in der [!UICONTROL Datenansicht] eingeschränkt.
 
 ## Häufig gestellte Fragen {#faq}
 

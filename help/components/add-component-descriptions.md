@@ -15,7 +15,7 @@ ht-degree: 39%
 
 Mithilfe von Beschreibungen können Benutzerinnen und Benutzer wissen, wie die verschiedenen Komponenten beim Erstellen von Projekten in Analysis Workspace oder beim Anzeigen von Berichten am besten verwendet werden.
 
-Customer Journey Analytics-Administratoren können Beschreibungen für Komponenten (Dimensionen, Metriken, Filter und Datumsbereiche) entweder in der Datenansicht oder über das Datenwörterbuch direkt in Analysis Workspace hinzufügen.
+Customer Journey Analytics-Administratoren können Komponentenbeschreibungen (Dimensionen, Metriken, Filter und Datumsbereiche) entweder in der Datenansicht oder über das Datenwörterbuch direkt in Analysis Workspace hinzufügen.
 
 ## Hinzufügen von Beschreibungen zu Komponenten in einer Datenansicht
 

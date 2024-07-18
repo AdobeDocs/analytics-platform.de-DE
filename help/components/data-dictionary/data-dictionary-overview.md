@@ -7,7 +7,7 @@ exl-id: 8e4b8169-7c7f-4a58-a6c6-70efb0c86ce8
 source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
 workflow-type: tm+mt
 source-wordcount: '536'
-ht-degree: 67%
+ht-degree: 80%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 67%
 
 Das Datenwörterbuch in Analysis Workspace hilft Benutzenden und Administrierenden, die Komponenten in ihrer Analytics-Umgebung zu verfolgen und besser zu verstehen.
 
-Analytics-Administratoren sind für das Kuratieren von Informationen zu den einzelnen Komponenten im Datenwörterbuch zuständig, damit sie Benutzern zur Verfügung gestellt werden.
+Analytics-Administratorinnen und -Administratoren sind dafür verantwortlich, Informationen über jede Komponenten im Datenwörterbuch zu kuratieren, um sie Benutzerinnen und Benutzern verfügbar zu machen.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3418028/?quality=12&learn=on)
 
@@ -70,11 +70,11 @@ Sie können auf eine der folgenden Arten in Analysis Workspace auf das Datenwör
 
 Detaillierte Informationen zu den verschiedenen verfügbaren Optionen im Datenwörterbuch finden Sie unter [Komponenteninformationen im Datenwörterbuch anzeigen](/help/components/data-dictionary/view-data-dictionary.md).
 
-## Datenwörterbuch aktualisieren und kuratieren
+## Aktualisieren und Kuratieren des Datenwörterbuchs
 
-Customer Journey Analytics-Administratoren sind für die Pflege eines gesunden Datenwörterbuchs für ihre Organisation verantwortlich, wie unter [Überwachen der Gesundheit von Datenwörterbüchern](/help/components/data-dictionary/monitor-data-dictionary-health.md).
+Customer Journey Analytics-Administratoren sind für die Pflege eines gesunden Datenwörterbuchs für ihre Organisation verantwortlich, wie in [Überwachen der Datenwörterbuchkonsistenz](/help/components/data-dictionary/monitor-data-dictionary-health.md) beschrieben.
 
-Im Rahmen dieses Vorgangs können Customer Journey Analytics-Administratoren Informationen zu den einzelnen Komponenten im Datenwörterbuch bearbeiten, wie unter [Bearbeiten von Komponenteneinträgen im Datenwörterbuch](/help/components/data-dictionary/edit-entries-data-dictionary.md).
+Im Rahmen dieses Vorgangs können Customer Journey Analytics-Administratoren Informationen zu den einzelnen Komponenten im Datenwörterbuch bearbeiten, wie unter [Komponenteneinträge im Datenwörterbuch bearbeiten](/help/components/data-dictionary/edit-entries-data-dictionary.md) beschrieben.
 
 ## Verschieben, Minimieren oder Schließen des Datenwörterbuchs
 

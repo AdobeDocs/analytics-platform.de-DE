@@ -51,7 +51,7 @@ Beachten Sie beim Freigeben einer bestimmten Projektrolle für Benutzende und Gr
 
 * Projektrollen (**[!UICONTROL Original bearbeiten]**, **[!UICONTROL Kopie bearbeiten]** und **[!UICONTROL Schreibgeschützt]**) sind an die Benutzenden und die spezifische Projekt-ID gebunden. Projektrollen sind unabhängig von Benutzerberechtigungen, die in der [Adobe Experience Cloud Admin Console](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/admin-getting-started.html?lang=de) verwaltet werden.
 
-* Unter Customer Journey Analytics werden Gruppen durch Produktprofile im [Adobe Experience Cloud Admin Console](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/admin-getting-started.html?lang=de). Die von Administrierenden durchgeführte Freigabe ist für jede Gruppe möglich, einschließlich „Alle“. Nichtadministrierende können Freigaben für Gruppen durchführen, denen sie angehören (mit Ausnahme von „Alle“).
+* Unter Customer Journey Analytics werden Gruppen durch Produktprofile in der [Adobe Experience Cloud Admin Console](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/admin-getting-started.html?lang=de) definiert. Die von Administrierenden durchgeführte Freigabe ist für jede Gruppe möglich, einschließlich „Alle“. Nichtadministrierende können Freigaben für Gruppen durchführen, denen sie angehören (mit Ausnahme von „Alle“).
 
 * Benutzende, denen mehrere Rollen zugewiesen sind, erhalten immer die maximale Berechtigung. Dies kann vorkommen, wenn Benutzende sowohl als Einzelpersonen als auch als Gruppenmitglieder hinzugefügt werden. Wenn Benutzenden beispielsweise die Rolle **[!UICONTROL Original bearbeiten]** als Einzelpersonen und die Rolle **[!UICONTROL Schreibgeschützt]** als Gruppenmitgliedern zugewiesen wird, erhalten sie die Projektberechtigung **[!UICONTROL Original bearbeiten]**.
 
@@ -65,7 +65,7 @@ Beachten Sie beim Freigeben einer bestimmten Projektrolle für Benutzende und Gr
 
 So geben Sie eine bestimmte Projektrolle für Benutzende oder Gruppen in Ihrer Organisation frei:
 
-1. Wählen Sie unter Customer Journey Analytics die [!UICONTROL **Arbeitsbereich**] Registerkarte und wählen Sie [!UICONTROL **Projekte**] in der linken Leiste.
+1. Wählen Sie unter Customer Journey Analytics die Registerkarte [!UICONTROL **Workspace**] und dann in der linken Leiste [!UICONTROL **Projekte**] aus.
 
 1. Wählen Sie das Kontrollkästchen neben einem oder mehreren freizugebenden Projekten und dann [!UICONTROL **Freigeben**] aus.
 
@@ -76,7 +76,7 @@ Wenn es nicht gespeicherte Änderungen gibt, werden Sie aufgefordert, das Projek
 
    Das Dialogfeld „Freigeben“ wird angezeigt. Die Abschnitte [!UICONTROL **Über Link freigeben**] und [!UICONTROL **Einstellungen**] des Dialogfelds sind nur sichtbar, wenn ein einzelnes Projekt freigegeben wird.
 
-   ![Das Fenster Projekt freigeben .](assets/share-proj-modal.png)
+   ![Das Fenster &quot;Projekt freigeben&quot;.](assets/share-proj-modal.png)
 
 1. Fügen Sie Empfangende oder Empfängergruppen in einem der angegebenen Rollenfelder hinzu:
 
@@ -112,13 +112,13 @@ So geben Sie den Projekt-Link für Personen in Ihrer Organisation frei:
 
 1. Wählen Sie **[!UICONTROL Freigeben]** > **[!UICONTROL Freigeben für Workspace-Benutzende]** und anschließend **[!UICONTROL Kopieren]** neben dem Feld **[!UICONTROL Über Link freigeben]**.
 
-   ![Das Projekt Freigabe , das das Feld Freigabe nach Link hervorhebt.](assets/share-proj-modal.png)
+   ![Das Projekt &quot;Freigeben&quot;, das das Feld &quot;Nach Link freigeben&quot;hervorhebt.](assets/share-proj-modal.png)
 
 1. Geben Sie den Link für Benutzende in Ihrer Organisation frei. Sie können ihn beispielsweise in eine E-Mail oder eine interne Website usw. einfügen.
 
 ## Freigeben eines Projekts für alle (keine Anmeldung erforderlich) {#share-public-link}
 
-Sie können [Schreibgeschützter Zugriff](/help/analysis-workspace/curate-share/view-only-projects.md) für Analysis Workspace-Projekte für Personen, die keinen Zugriff auf Customer Journey Analytics haben. Dazu können gehören:
+Sie können Analysis Workspace-Projekten [schreibgeschützten Zugriff](/help/analysis-workspace/curate-share/view-only-projects.md) für Personen gewähren, die keinen Zugriff auf Customer Journey Analytics haben. Dazu können gehören:
 
 * Personen außerhalb Ihrer Organisation
 
@@ -128,17 +128,17 @@ Sie können [Schreibgeschützter Zugriff](/help/analysis-workspace/curate-share/
 >
 >Beachten Sie Folgendes bei der Freigabe eines Analysis Workspace-Projekts für Personen, die keinen Zugriff auf Customer Journey Analytics haben:
 >
->* Die Möglichkeit, ein Projekt auf diese Weise freizugeben, kann vom Customer Journey Analytics-Administrator deaktiviert werden, wie unter [Voreinstellungen](/help/analysis-workspace/user-preferences.md). Wenn Sie ein Projekt nicht wie in diesem Abschnitt beschrieben freigeben können, hat Ihr Customer Journey Analytics-Administrator diese Funktion deaktiviert.
+>* Die Möglichkeit, ein Projekt auf diese Weise freizugeben, kann vom Customer Journey Analytics-Administrator deaktiviert werden, wie unter [Voreinstellungen](/help/analysis-workspace/user-preferences.md) beschrieben. Wenn Sie ein Projekt nicht wie in diesem Abschnitt beschrieben freigeben können, hat Ihr Customer Journey Analytics-Administrator diese Funktion deaktiviert.
 >
 >* Projekte mit mehr als 50 erweiterten Visualisierungen können nicht für Personen freigegeben werden, die keinen Zugriff auf Customer Journey Analytics haben.
 >
->* Benutzer, für die Sie freigeben, können alle Filter anzeigen, die während der [Kuratierung](curate.md).
+>* Benutzer, für die Sie freigeben, können alle Filter anzeigen, die während der [Kuratierung](curate.md) auf das Projekt angewendet wurden.
 > 
 >* Personen, für die Sie das Projekt freigeben, können den Projektdatumsbereich ändern. Standardmäßig wird der Datumsbereich angezeigt, den Sie für das Projekt festgelegt haben.
 >
 >* Wenn viele Personen gleichzeitig versuchen, auf einen bestimmten Link zuzugreifen, ist das Projekt möglicherweise nicht mehr zugänglich. Standardmäßig können alle 5 Minuten mehr als 190 Personen auf einen einzelnen Link zugreifen. Sollte Ihr Unternehmen diese Grenze erreichen, warten Sie 5 Minuten und versuchen Sie dann erneut, den Link zu öffnen.
 >
->* Die [!UICONTROL Für alle freigeben] wird sowohl für den Gesundheitsschild als auch für die Lizenzen des Datenschutzschilds blockiert.
+>* Die Funktion [!UICONTROL Mit allen teilen] ist sowohl für den Gesundheitsschild als auch für die Lizenzen des Datenschutz- und Sicherheitsschilds gesperrt.
 
 Die folgende Videodemonstration und die zugehörige Dokumentation beschreiben die Optionen im Zusammenhang mit der Freigabe eines Links für alle:
 
@@ -166,13 +166,13 @@ So geben Sie ein Analysis Workspace-Projekt für andere frei:
 
      Wenn diese Option aktiviert ist, können nur Benutzer auf das Projekt zugreifen, die sich bei der Adobe Experience Cloud-Organisation anmelden können, in der das freigegebene Projekt erstellt wurde. Für Benutzende, für die Sie es freigeben, ist jedoch kein Zugriff auf Adobe Analytics erforderlich.
 
-     Customer Journey Analytics-Administratoren können diese Voreinstellung für das Unternehmen konfigurieren, wie unter [Voreinstellungen](/help/analysis-workspace/user-preferences.md). Je nachdem, wie die Admins diese Option konfiguriert haben, können die folgenden Szenarien auftreten:
+     Customer Journey Analytics-Administratoren können diese Voreinstellung für das Unternehmen konfigurieren, wie unter [Voreinstellungen](/help/analysis-workspace/user-preferences.md) beschrieben. Je nachdem, wie die Admins diese Option konfiguriert haben, können die folgenden Szenarien auftreten:
 
       * Wenn diese Option nicht angezeigt wird, hat Ihr Customer Journey Analytics-Administrator diese Funktion nicht aktiviert.
 
       * Wenn diese Option aktiviert ist und Sie sie nicht deaktivieren können, erfordert Ihr Customer Journey Analytics-Administrator die Experience Cloud-Authentifizierung für alle Benutzer, die auf Analysis Workspace-Projekte zugreifen. Dies gilt immer für Organisationen, die Gesundheitsschild bestellen.
 
-1. Neben dem **[!UICONTROL Mit anderen teilen (keine Anmeldung erforderlich)]** und klicken Sie auf das **Link kopieren** icon ![Symbol Link kopieren](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Link_18_N.svg)), um den Link in die Zwischenablage Ihres Systems zu kopieren.
+1. Klicken Sie neben dem Feld &quot;**[!UICONTROL Für jedermann freigeben (keine Anmeldung erforderlich)&quot;]** auf das Symbol &quot;**Link kopieren**&quot;![Verknüpfungssymbol kopieren](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Link_18_N.svg)), um den Link in die Systemzwischenablage zu kopieren.
 
 1. Teilen Sie den Link mit den Personen, die Zugriff auf das Projekt haben sollen. Sie können beispielsweise den Link in eine E-Mail einfügen.
 
@@ -186,7 +186,7 @@ So geben Sie ein Analysis Workspace-Projekt für andere frei:
 
 Wenn jemand durch [Freigeben einer bestimmten Projektrolle](#share-a-specific-project-role) ein Projekt für Sie freigibt, können Sie über die [Registerkarte „Projekte“ auf der Analytics-Landingpage](/help/getting-started/landing.md#navigate-the-projects-tab) auf diese freigegebenen Projekte zugreifen.
 
-Wenn ein Benutzer ein Projekt für Sie teilt, indem er einen Link teilt (entweder über die [Registerkarte Projekt freigeben](#share-a-link-to-a-project) oder mithilfe einer [Teilen mit jedem Link](#share-a-project-with-anyone-no-login-required)), müssen Sie den für Sie freigegebenen Link verwenden, um auf das Projekt zuzugreifen. Der Link wurde beispielsweise in eine E-Mail oder eine interne Website eingefügt.
+Wenn ein Benutzer ein Projekt über einen Link (entweder über die Registerkarte [Projekt freigeben](#share-a-link-to-a-project) oder über einen [Teilen-Link](#share-a-project-with-anyone-no-login-required)) für Sie freigegeben hat, müssen Sie den für Sie freigegebenen Link verwenden, um auf das Projekt zuzugreifen. Der Link wurde beispielsweise in eine E-Mail oder eine interne Website eingefügt.
 
 ## Freigeben von eingebetteten Komponenten
 
@@ -199,6 +199,6 @@ Im Folgenden finden Sie ein Video zum Thema:
 | Frage | Antwort |
 |---|---|
 | Was passiert, wenn zwei Bearbeiter ein Projekt gleichzeitig speichern? | Die Änderungen werden nicht zusammengeführt und die zuletzt gespeicherte Projektversion bleibt erhalten. Analysis Workspace unterstützt derzeit keine Live-Zusammenarbeit. |
-| Welches Projekterlebnis sehe ich als Administrator? | Administratoren, die in einer **[!UICONTROL Kopie bearbeiten]** oder **[!UICONTROL Schreibgeschützt]** Rolle erhält diese eingeschränkten Erlebnisse beim Öffnen eines Projekts. Bei Bedarf kann ein Administrator seine Rolle auf **[!UICONTROL Original bearbeiten]** jederzeit durch **[!UICONTROL Komponenten] > [!UICONTROL Projekte]**. |
-| Was passiert, wenn ein Empfänger als Einzelperson einer Rolle und als Gruppenmitglied einer weiteren Rolle zugewiesen wird? | Wenn einem Empfänger mehrere Rollen zugewiesen werden, erhält er immer das höhere Erlebnis. Wenn einem Empfänger beispielsweise die Variable **[!UICONTROL Original bearbeiten]** Rolle als Einzelperson und **[!UICONTROL Kann anzeigen]** Als Mitglied einer Gruppe erhalten sie eine **[!UICONTROL Original bearbeiten]** Projekterlebnis. |
+| Welches Projekterlebnis sehe ich als Administrator? | Administratoren, die in der Rolle **[!UICONTROL Kopie bearbeiten]** oder **[!UICONTROL Schreibgeschützt]** platziert wurden, erhalten diese eingeschränkten Erlebnisse beim Öffnen eines Projekts. Falls gewünscht, kann ein Administrator seine Rolle jederzeit über **[!UICONTROL Komponenten] > [!UICONTROL Projekte]** auf **[!UICONTROL Original bearbeiten]** erhöhen. |
+| Was passiert, wenn ein Empfänger als Einzelperson einer Rolle und als Gruppenmitglied einer weiteren Rolle zugewiesen wird? | Wenn einem Empfänger mehrere Rollen zugewiesen werden, erhält er immer das höhere Erlebnis. Wenn einem Empfänger beispielsweise die Rolle **[!UICONTROL Original bearbeiten]** als Einzelperson und die Rolle **[!UICONTROL Kann anzeigen]** als Mitglied einer Gruppe zugewiesen wird, erhält er das Projekterlebnis **[!UICONTROL Original bearbeiten]** . |
 | Welches Erlebnis erhält ein Empfänger, wenn er einen Projekt-Link öffnet? | Empfänger erhalten die Rolle, die Sie ihnen im Freigabe-Modal zugewiesen haben. Wenn Empfängerinnen oder Empfängern keine Rolle zugewiesen wurde und sie einen Link zum Projekt erhalten (**[!UICONTROL Freigeben]** > **[!UICONTROL Für Workspace-Benutzer freigeben]**, dann **[!UICONTROL Kopieren]** neben dem Feld **[!UICONTROL Über Link freigeben]** auswählen), werden sie standardmäßig in eine Rolle aufgenommen. Admins erhalten **[!UICONTROL Original bearbeiten]** und Nicht-Admins erhalten **[!UICONTROL Kopie bearbeiten]**. |

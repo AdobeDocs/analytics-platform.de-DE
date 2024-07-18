@@ -13,7 +13,7 @@ ht-degree: 57%
 
 # Vom Kunden verwaltete Schlüssel
 
-Adobe Customer Journey Analytics bietet die Option für [Gesundheitsschild](https://www.adobe.com/trust/compliance/hipaa-ready.html) Kunden von Privacy &amp; Security Shield verwenden einen Azure Customer Managed Key (CMK), der auf Ihre Customer Journey Analytics-Daten angewendet werden soll.  Beachten Sie, dass dieser Prozess vom [Einrichten von Adobe Experience Platform-CMK](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/customer-managed-keys.html?lang=de) getrennt ist.
+Adobe Customer Journey Analytics bietet Kunden von [Gesundheitsschild](https://www.adobe.com/trust/compliance/hipaa-ready.html) und Privacy &amp; Security Shield die Möglichkeit, einen Azure Customer Managed Key (CMK) zu verwenden, der auf Ihre Customer Journey Analytics-Daten angewendet werden kann.  Beachten Sie, dass dieser Prozess vom [Einrichten von Adobe Experience Platform-CMK](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/customer-managed-keys.html?lang=de) getrennt ist.
 
 >[!NOTE]
 >
@@ -29,7 +29,7 @@ Gehen Sie wie folgt vor, um CMK für Customer Journey Analytics einzurichten:
 1. Gewähren Sie dem Adobe Azure-Programm Zugriff auf den Schlüssel im Schlüsseltresor. Dies ist die Adobe-Anwendungs-ID: 251e3919-1940-4296-bb8b-6b9a5e8a4805. [Weitere Informationen von Microsoft](https://learn.microsoft.com/de-de/azure/storage/common/customer-managed-keys-configure-cross-tenant-existing-account?toc=%2Fazure%2Fstorage%2Fblobs%2Ftoc.json&amp;tabs=powershell-preview%2Cazure-portal#the-customer-grants-the-service-providers-app-access-to-the-key-in-the-key-vault)
 1. Erstellen Sie ein Adobe-Kundenunterstützungs-Ticket, um die CMK-Einrichtung anzufordern. Fügen Sie den Azure-URI in Ihr Ticket ein. Der URI befindet sich im Feld **Schlüsselkennung** Ihres Azure-Schlüssels.
 
-   ![Felder mit der Schlüsselkennung, die den URI für https://cmkoberontest.vault.azure.net anzeigen](assets/key-identifier.png)
+   ![Schlüsselkennungsfelder, die den URI für https://cmkoberontest.vault.azure.net](assets/key-identifier.png) anzeigen
 
 1. Die Adobe-Kundenunterstützung bestätigt den Abschluss der CMK-Anwendung auf Ihren Customer Journey Analytics-Daten.
 

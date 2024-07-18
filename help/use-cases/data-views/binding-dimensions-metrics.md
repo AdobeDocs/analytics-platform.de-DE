@@ -79,7 +79,7 @@ Wenn Sie den Umsatz nach Farbe ohne eine gebundene Dimension betrachten wollten,
 | --- | --- |
 | Neonorange | 2099 |
 
-Anmelden **[!UICONTROL Datenansichten]** und binden die [!DNL Product Color] Dimension zu [!DNL Product Name]:
+Wechseln Sie zu **[!UICONTROL Datenansichten]** und binden Sie die Dimension [!DNL Product Color] an [!DNL Product Name]:
 
 ![Bindungsdimension](../assets/binding-dimension.png)
 
@@ -238,13 +238,13 @@ Eine der gängigsten Merchandising-Methoden in Adobe Analytics besteht darin, ei
    }
    ```
 
-Wenn Sie ein Zuordnungsmodell verwenden, dessen Suchbegriffe keine Bindingsdimension enthalten, weisen alle drei Produkte den Umsatz nur einem einzigen Suchbegriff zu. Wenn Sie beispielsweise [!UICONTROL Original] Zuordnung mit der Suchbegriffdimension:
+Wenn Sie ein Zuordnungsmodell verwenden, dessen Suchbegriffe keine Bindingsdimension enthalten, weisen alle drei Produkte den Umsatz nur einem einzigen Suchbegriff zu. Wenn Sie beispielsweise die Zuordnung [!UICONTROL Original] mit der Suchbegriffdimension verwendet haben:
 
 | search_term | Umsatz |
 | --- | --- |
 | Boxhandschuhe | $ 204.97 |
 
-Wenn Sie [!UICONTROL Zuletzt verwendet] -Zuordnung mit der Suchbegriffdimension zuordnen, weisen alle drei Produkte weiterhin den Umsatz einem einzelnen Suchbegriff zu:
+Wenn Sie die Zuordnung &quot;[!UICONTROL Zuletzt verwendet]&quot;mit der Suchbegriffdimension verwendet haben, weisen alle drei Produkte weiterhin den Umsatz einem einzelnen Suchbegriff zu:
 
 | search_term | Umsatz |
 | --- | --- |
@@ -252,7 +252,7 @@ Wenn Sie [!UICONTROL Zuletzt verwendet] -Zuordnung mit der Suchbegriffdimension 
 
 Während dieses Beispiel nur eine Person umfasst, können viele Personen, die nach verschiedenen Elementen suchen, Suchbegriffe verschiedenen Produkten zuordnen, was es schwierig macht festzustellen, welche die besten Suchergebnisse tatsächlich sind.
 
-Sie können jetzt binden [!DNL Search Term] nach [!DNL Product Name] wann immer [!DNL Searches] -Metrik vorhanden ist, um Suchbegriffe korrekt dem Umsatz zuzuordnen.
+Sie können jetzt [!DNL Search Term] an [!DNL Product Name] binden, sobald die Metrik [!DNL Searches] vorhanden ist, um den Suchbegriff korrekt dem Umsatz zuzuordnen.
 
 ![Bindungsmetrik](../assets/binding-metric.png)
 
@@ -440,4 +440,4 @@ Wenn Sie jedoch `product_finding_method` an die Metrik „Hinzufügen zum Warenk
 
 >[!MORELIKETHIS]
 >
->[Binden von Dimensionen in Datenansichten](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/data-views/binding-dimensions-in-data-views.html) Tutorial.
+>Tutorial zum Binden von Dimensionen in Datenansichten ](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/data-views/binding-dimensions-in-data-views.html).[

@@ -8,7 +8,7 @@ role: User
 source-git-commit: 47b7747b37f82e4d75d5272ce1d8d37f4e497bb5
 workflow-type: tm+mt
 source-wordcount: '895'
-ht-degree: 73%
+ht-degree: 75%
 
 ---
 
@@ -18,7 +18,7 @@ Mithilfe des Kalenders können Sie Daten und Datumsbereiche angeben oder eine Vo
 
 Wenn Sie im Kalender etwas auswählen, bezieht sich diese Auswahl auf das jeweilige Panel. Sie haben jedoch die Möglichkeit, die Auswahl auf sämtliche Panels anzuwenden. Wenn Sie in Workspace auf einen Datumsbereich klicken, zeigt die Benutzeroberfläche den aktuellen Kalendermonat und den vorherigen Kalendermonat an. Sie können diese beiden Kalender anpassen, indem Sie auf die Rechts- und Linkspfeile in den jeweiligen oberen Ecken klicken.
 
-![Kalender, der die Monate Oktober 2022 und November 2022 mit der Auswahl vom 1. bis 30. November anzeigt.](assets/aw_calendar2.png){width="60%"}
+![Kalender, der den Oktober 2022 und den November 2022 anzeigt, wobei der 1. bis 30. November ausgewählt war.](assets/aw_calendar2.png){width="60%"}
 
 Beim ersten Klick auf einen Kalender wird die Auswahl eines Datumsbereichs begonnen. Mit dem zweiten Klick wird die Auswahl des Datumsbereichs beendet und hervorgehoben. Wenn die `Shift` Taste gedrückt gehalten wird (oder ein Rechtsklick verwendet wird), wird der entsprechende Bereich an den derzeit ausgewählten Bereich angehängt.
 
@@ -29,7 +29,7 @@ Sie können Datums- (und Zeitdimensionen) mittels Drag-and-Drop in einem Workspa
 | Einstellung | Beschreibung |
 | --- | --- |
 | Ausgewählte Tage | Ausgewählte Tage/Wochen/Monate/Jahre |
-| Rollierende Datumswerte verwenden | Mithilfe rollierender Daten können Sie einen dynamischen Bericht generieren, der zum Zeitpunkt seiner Ausführung einen bestimmten Zeitraum voraus oder zurück umfasst. Wenn Sie zum Beispiel einen Bericht zu allen Bestellungen haben möchten, die im letzten Monat aufgegeben wurden (wobei sich „Letzter Monat“ auf das Feld „Erstellungsdatum“ bezieht), und diesen Bericht dann im Dezember ausführen, würden Ihnen alle Bestellungen angezeigt, die im November aufgegeben wurden. Führen Sie den gleichen Bericht im Januar aus, werden Ihnen die Bestellungen aus dem Dezember angezeigt.<ul><li>**[!UICONTROL Datumsvorschau]**: Gibt an, welchen Zeitraum der rollierende Kalender umfasst.</li><li>**[!UICONTROL Start]**: Sie können zwischen den folgenden Optionen wählen: „Aktueller Tag“, „Aktuelle Woche“, „Aktueller Monat“, „Aktuelles Quartal“ und „Aktuelles Jahr“.</li><li>**[!UICONTROL Ende]**: Sie können zwischen den folgenden Optionen wählen: „Aktueller Tag“, „Aktuelle Woche“, „Aktueller Monat“, „Aktuelles Quartal“ und „Aktuelles Jahr“.</li></ul>Ein Beispiel dazu finden Sie [hier](/help/components/date-ranges/custom-date-ranges.md). |
+| Verwenden von rollierenden Daten | Mithilfe rollierender Daten können Sie einen dynamischen Bericht generieren, der zum Zeitpunkt seiner Ausführung einen bestimmten Zeitraum voraus oder zurück umfasst. Wenn Sie zum Beispiel einen Bericht zu allen Bestellungen haben möchten, die im letzten Monat aufgegeben wurden (wobei sich „Letzter Monat“ auf das Feld „Erstellungsdatum“ bezieht), und diesen Bericht dann im Dezember ausführen, würden Ihnen alle Bestellungen angezeigt, die im November aufgegeben wurden. Führen Sie den gleichen Bericht im Januar aus, werden Ihnen die Bestellungen aus dem Dezember angezeigt.<ul><li>**[!UICONTROL Datumsvorschau]**: Gibt an, welchen Zeitraum der rollierende Kalender umfasst.</li><li>**[!UICONTROL Start]**: Sie können zwischen den folgenden Optionen wählen: „Aktueller Tag“, „Aktuelle Woche“, „Aktueller Monat“, „Aktuelles Quartal“ und „Aktuelles Jahr“.</li><li>**[!UICONTROL Ende]**: Sie können zwischen den folgenden Optionen wählen: „Aktueller Tag“, „Aktuelle Woche“, „Aktueller Monat“, „Aktuelles Quartal“ und „Aktuelles Jahr“.</li></ul>Ein Beispiel dazu finden Sie [hier](/help/components/date-ranges/custom-date-ranges.md). |
 | Datumsbereich | Hier können Sie einen voreingestellten Datumsbereich auswählen. Der Standardwert lautet „Letzte 30 Tage“. **[!UICONTROL Diese Woche/Monat/Quartal/Jahr (außer heute)]** ermöglicht Ihnen, aus Datumsbereichen auszuwählen, die keine Daten von heute enthalten. |
 | In alle Bedienfelder übernehmen | Hiermit können Sie den ausgewählten Datumsbereich nicht nur für das aktuelle Bedienfeld, sondern für alle Bedienfelder des Projekts ändern. |
 | Übernehmen | Hiermit wird der Datumsbereich nur in diesem Bedienfeld übernommen. |
@@ -49,12 +49,12 @@ So verwenden Sie relative Datumsbereiche im Bedienfeld
 Wenn relative Datumswerte ausgewählt sind, basieren rollierende Datumswerte auf dem Startdatum des Bedienfeldkalenders und nicht auf dem heutigen Datum.
    * Ist diese Option nicht ausgewählt, basieren rollierende Datumswerte auf dem heutigen Datum.
 
-   ![Kalender mit Festlegen von Datumsbereichskomponenten relativ zum ausgewählten Bedienfeldkalender](assets/relative-date-selected.png){width="60%"}
+   ![Kalender mit ausgewählten Datumsbereichskomponenten relativ zum Bedienfeldkalender festlegen](assets/relative-date-selected.png){width="60%"}
 
 1. Klicken Sie auf **Anwenden**.
 Die relativen Daten werden oben rechts angezeigt.
 
-   ![Freiformtabelle mit hervorgehobenen relativen Daten und hervorgehobenem Letzten Monat. ](assets/relative-date-range1.png)
+   ![Freiformtabelle mit hervorgehobenen relativen Datumsangaben und hervorgehobenem Letzten Monat. ](assets/relative-date-range1.png)
 
 ## Richtlinien für relative Bedienfelddatumsbereiche {#guidelines}
 
@@ -62,7 +62,7 @@ Beachten Sie bei der Verwendung relativer Bedienfelddatumsbereiche die folgenden
 
 ### Formeln und relative Datumsbereiche {#formula-relative-dates}
 
-Wenn Sie relative Daten ausgewählt haben, verwenden alle Datumsformeln das Startdatum des Bedienfelds als Ausgangspunkt.
+Wenn Sie relative Datumsangaben ausgewählt haben, verwenden alle Datumsformeln das Startdatum des Bedienfelds als Ausgangspunkt.
 
 ### Benutzerdefinierte Kalender und relative Datumsbereiche {#custom-calendar-formulas}
 
@@ -70,7 +70,7 @@ Wenn Sie einen wöchentlichen benutzerspezifischen Kalender verwenden und Monate
 
 ### Über Filter, die rollierende Datumswerte und relative Datumsbereiche für Bedienfelder verwenden {#segments-relative-dates}
 
-Wenn Sie einen Filter erstellen oder einen Filter mit einem rollierenden Datum verwenden, z. B. die letzten 7 Tage oder die letzten 2 Wochen, und Sie auf die Filtervorschau klicken, beginnt das rollierende Datum ab *Heute* anstelle des Startdatums des Bedienfelds. Daher stimmt die Vorschau für den Filter nicht überein, wenn Sie den Filter tatsächlich in der Tabelle verwenden. Die Vorschau ist betroffen, nicht der Filter selbst.
+Wenn Sie einen Filter erstellen oder einen Filter mit einem rollierenden Datum verwenden, z. B. die letzten 7 Tage oder die letzten 2 Wochen, und Sie auf die Filtervorschau klicken, wird das rollierende Datum von *Heute* anstelle des Anfangsdatums des Bedienfelds gestartet. Daher stimmt die Vorschau für den Filter nicht überein, wenn Sie den Filter tatsächlich in der Tabelle verwenden. Die Vorschau ist betroffen, nicht der Filter selbst.
 
 ## Richtlinien für Panel-Datumsbereiche und Vorschauen {#guidelines-panel-dates}
 

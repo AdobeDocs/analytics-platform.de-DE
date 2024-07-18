@@ -36,7 +36,7 @@ Sie können das Bedienfeld „Gleichzeitige Medienbetrachter“ mithilfe der fol
 
 ### Standardansicht
 
-![Die Standardansicht &quot;Gleichzeitige Medienbetrachter&quot;.](assets/concurrent-viewers-default.png)
+![Die Standardansicht der gleichzeitigen Medienbetrachter.](assets/concurrent-viewers-default.png)
 
 
 ### Serienaufschlüsselungsansicht
@@ -51,7 +51,7 @@ Sie können das Bedienfeld jederzeit bearbeiten oder erneut erstellen, indem Sie
 
 Wenn Sie Serienaufschlüsselung ausgewählt haben, wird für jeden der folgenden Punkte eine Zeile im Liniendiagramm und eine Zusammenfassungsnummer angezeigt:
 
-![Die Ausgabe der gleichzeitigen Medienbetrachter.](assets/concurrent-viewers-output.png)
+![ Die Ausgabe der gleichzeitigen Medienbetrachter.](assets/concurrent-viewers-output.png)
 
 ### Datenquelle
 
@@ -64,7 +64,7 @@ Die einzige Metrik, die in diesem Bedienfeld verwendet werden kann, ist „Gleic
 Eine Freiformtabelle ist in dieser Ansicht nicht verfügbar.  Zur Ansicht der Datenquelle können Sie mit der rechten Maustaste auf das Liniendiagramm klicken und es als csv-Datei herunterladen.  Serienaufschlüsselungen werden einbezogen.
 
 
-![Die Ausgabeoptionen &quot;Gleichzeitige Viewer&quot;mit &quot;Daten als CSV herunterladen&quot;wurden hervorgehoben.](assets/concurrent-viewers-download-csv.png)
+![Die Ausgabeoptionen der gleichzeitigen Viewer mit &quot;Daten als CSV herunterladen&quot;sind hervorgehoben.](assets/concurrent-viewers-download-csv.png)
 
 ## Häufig gestellte Fragen (FAQ) {#FAQ}
 

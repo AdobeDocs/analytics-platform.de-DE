@@ -15,7 +15,7 @@ ht-degree: 71%
 
 Um Ihre Customer Journey Analytics-Nutzung anzuzeigen, können Sie mehrere Methoden verwenden:
 
-* Addieren Sie die Ereignisdatenzeilen für jede Verbindung. Siehe [Geschätzte Verbindungsgröße](#estimate-connection-size) unten. Dies ist eine einfache Methode, um Ihre Ereigniszeilendaten pro Verbindung für einen bestimmten Zeitstempel anzuzeigen.
+* Addieren Sie die Ereignisdatenzeilen für jede Verbindung. Siehe [Schätzung der Verbindungsgröße](#estimate-connection-size) unten. Dies ist eine einfache Methode, um Ihre Ereigniszeilendaten pro Verbindung für einen bestimmten Zeitstempel anzuzeigen.
 
 * Sie können Ihre Nutzung auf drei Arten anzeigen, von denen jede im Folgenden ausführlicher beschrieben wird:
    * Verwenden Sie Analysis Workspace, um Berichte zu den Ereignissen des letzten Monats zu erstellen.
@@ -56,7 +56,7 @@ Möglicherweise benötigen Sie Informationen zur aktuellen Anzahl von Ereignisda
 
    * Ändern Sie Ihre [Datenspeicherungseinstellungen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/manage-connections.html?lang=de#set-rolling-window-for-connection-data-retention).
    * [Löschen Sie alle nicht verwendeten Verbindungen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=de#implications-of-deleting-data-components).
-   * [Datensatz in Adobe Experience Platform löschen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=de#implications-of-deleting-data-components).
+   * [Löschen Sie einen Datensatz in Adobe Experience Platform](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=de#implications-of-deleting-data-components).
    * Wenden Sie sich an Ihr Adobe Account Team, um zusätzliche Kapazitäten zu lizenzieren.
 
 ## Erstellen eines Analysis Workspace-Projekts mit allen Ereignisdaten {#workspace-event-data}
@@ -69,9 +69,9 @@ Mit dieser Methode können Sie Ihre Nutzungsdaten sowie den Verlauf Ihrer Nutzun
 >
 >    Erstellen Sie keine neue Verbindung mit all Ihren Daten ausschließlich zum Zweck der Nutzungsmessung, da dadurch Ihre Nutzungswerte tatsächlich verdoppelt werden würden.
 
-1. Erstellen Sie in Workspace neue Projekte basierend auf den einzelnen Datenansichten und rufen Sie alle Ereignisse ab (aus dem **[!UICONTROL Metriken]** -Dropdown-Liste) bis zum ersten Freitag des Monats, beginnend mit dem ersten Tag Ihres aktuellen Customer Journey Analytics-Vertrags.
+1. Erstellen Sie in Workspace neue Projekte auf der Basis der einzelnen Datenansichten und ziehen Sie alle Ereignisse (aus der Dropdownliste **[!UICONTROL Metriken]** ) bis zum ersten Freitag des Monats ein, beginnend mit dem ersten Tag Ihres aktuellen Customer Journey Analytics-Vertrags.
 
-   ![Freiformtabelle mit Ereignissen.](./assets/events-usage.png)
+   ![ Freiformtabelle mit Ereignissen.](./assets/events-usage.png)
 
    Dadurch erhalten Sie eine gute Vorstellung davon, wie Ihre Nutzung von Monat zu Monat aussieht.
 
@@ -83,7 +83,7 @@ Erstellen Sie in Report Builder für jede Datenansicht [einen Datenblock](/help/
 
 ## Erstellen eines automatisierten Berichts in der Customer Journey Analytics-API {#api-report}
 
-1. Verwenden Sie die [Customer Journey Analytics Reporting-API](https://developer.adobe.com/cja-apis/docs/api/#tag/Reporting-API) , um einen Bericht zu allen Ereignisdaten auszuführen, **für jede Verbindung**. Richten Sie dies so ein, dass der Bericht folgendermaßen ausgeführt wird:
+1. Verwenden Sie die [Customer Journey Analytics Reporting-API](https://developer.adobe.com/cja-apis/docs/api/#tag/Reporting-API), um einen Bericht zu allen Ereignisdaten auszuführen, **für jede Verbindung**. Richten Sie dies so ein, dass der Bericht folgendermaßen ausgeführt wird:
 
    * An jedem ersten Freitag eines jeden Monats
    * zurück zum ersten Tag Ihres aktuellen Customer Journey Analytics-Vertrags.
@@ -94,7 +94,7 @@ Erstellen Sie in Report Builder für jede Datenansicht [einen Datenblock](/help/
 
 ## Verwalten der Nutzung durch Definieren eines rollierenden Datenfensters {#rolling}
 
-Um Ihre Nutzung zu verwalten, wird die [Verbindungs-Benutzeroberfläche](/help/connections/create-connection.md) ermöglicht die Definition der Aufbewahrung von Customer Journey Analytics-Daten als rollierendes Fenster in Monaten (1 Monat, 3 Monate, 6 Monate usw.) auf Verbindungsebene.
+Um Ihre Nutzung zu verwalten, können Sie mit der Benutzeroberfläche für [Verbindungen](/help/connections/create-connection.md) die Aufbewahrung von Customer Journey Analytics-Daten als rollierendes Fenster in Monaten (1 Monat, 3 Monate, 6 Monate usw.) auf Verbindlichkeitsebene definieren.
 
 Der Hauptvorteil besteht darin, dass Sie nur Daten speichern oder Berichte dazu erstellen, die anwendbar und nützlich sind, und ältere Daten löschen, die nicht mehr nützlich sind. Dies hilft Ihnen, Ihre vertraglichen Beschränkungen einzuhalten und das Risiko bezüglich Kostendeckung zu reduzieren.
 

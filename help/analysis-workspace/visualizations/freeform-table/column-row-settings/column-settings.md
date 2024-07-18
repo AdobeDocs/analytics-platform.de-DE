@@ -21,7 +21,7 @@ Sehen Sie sich hier ein Video zu Zeilen- und Spalteneinstellungen an:
 
 ## [!UICONTROL Spalteneinstellungen] bearbeiten {#edit-column-settings}
 
-Zugriff [!UICONTROL Spalteneinstellungen], ziehen Sie eine Freiformtabelle in das Projekt und klicken Sie dann auf das Einstellungssymbol ![Spalteneinstellungen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Settings_18_N.svg) in der Spaltenüberschrift.
+Um auf [!UICONTROL Spalteneinstellungen] zuzugreifen, ziehen Sie eine Freiformtabelle in das Projekt und klicken Sie dann auf das Einstellungssymbol ![Spalteneinstellungen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Settings_18_N.svg) in der Spaltenüberschrift.
 
 <img src="./assets/column-settings.png" alt="In den Spalteneinstellungen werden die Summenzellen, Tabellenzellen und die Tabellenzellenvorschau angezeigt." width="50%" />
 
@@ -56,17 +56,17 @@ Die bedingte Formatierung gilt für Obergrenzen, Mittelwerte und Untergrenzen, d
 
 ## Nicht standardmäßiges Attributionsmodell verwenden {#attribution}
 
-Ermöglicht es Ihnen, den standardmäßigen Attributionsmodellsatz in [Datenansichten](/help/data-views/component-settings/attribution.md).
+Ermöglicht es Ihnen, den standardmäßigen Attributionsmodellsatz in [Datenansichten](/help/data-views/component-settings/attribution.md) zu überschreiben.
 
 >[!NOTE]
 >
 >Beachten Sie beim Aktualisieren der Attribution einer Komponente auf ein nicht standardmäßiges Attributionsmodell Folgendes:
 >
->* **Bei Verwendung der Komponente in einem Bericht mit *eine einzige Dimension*:** Die Attribution der Komponente ignoriert das Zuordnungsmodell, wenn ein nicht standardmäßiges Attributionsmodell verwendet wird.
+>* **Bei Verwendung der Komponente in einem Bericht mit *einer einzelnen Dimension*:** Die Attribution der Komponente ignoriert das Zuordnungsmodell, wenn ein nicht standardmäßiges Attributionsmodell verwendet wird.
 >
->* **Bei Verwendung der Komponente in einem Bericht mit *mehrere Dimensionen*:** Die Attribution der Komponente behält das Zuordnungsmodell bei, wenn ein nicht standardmäßiges Attributionsmodell verwendet wird.
+>* **Bei Verwendung der Komponente in einem Bericht mit *mehreren Dimensionen*:** Die Attribution der Komponente behält das Zuordnungsmodell bei, wenn ein nicht standardmäßiges Attributionsmodell verwendet wird.
 >
->   Mehrere Dimensionen sind nur verfügbar, wenn [Exportieren von Daten in die Cloud](/help/analysis-workspace/export/export-cloud.md).
+>   Mehrere Dimensionen sind nur verfügbar, wenn [Daten in die Cloud exportieren](/help/analysis-workspace/export/export-cloud.md).
 >
 > Weitere Informationen zur Zuordnung finden Sie unter [Einstellungen der Persistenz-Komponente](/help/data-views/component-settings/persistence.md).
 
@@ -74,11 +74,11 @@ So verwenden Sie ein nicht standardmäßiges Attributionsmodell für eine Metrik
 
 1. Klicken Sie auf das Symbol Einstellungen (Zahnrad) für eine Metrik in einer Freiformtabellenspalte.
 
-   ![Die Optionen für Spalteneinstellungen , die die Option Dateneinstellungen hervorheben: Verwenden Sie den nicht standardmäßigen Attributionsmodus.](assets/attribution-checkbox.png)
+   ![Die Optionen für Spalteneinstellungen, die die Option &quot;Dateneinstellungen&quot;hervorheben: Verwenden Sie den nicht standardmäßigen Attributionsmodus.](assets/attribution-checkbox.png)
 
 2. Aktivieren Sie unter **[!UICONTROL Dateneinstellungen]** die Option **[!UICONTROL Nicht standardmäßiges Attributionsmodell verwenden]**. Weitere Informationen zu den unterschiedlichen Attributionsmodellen finden Sie unter [Attributionsmodelle](/help/data-views/component-settings/attribution.md).
 
-   ![Die Optionen des Spaltenattributionsmodells zeigen die Option Linear ausgewählt an.](assets/attribution-select.png)
+   ![Die Optionen für das Spaltenattributionsmodell, bei denen die Option Linear ausgewählt ist,](assets/attribution-select.png)
 
 >[!MORELIKETHIS]
 >

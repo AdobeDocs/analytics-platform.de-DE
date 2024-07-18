@@ -13,7 +13,7 @@ ht-degree: 50%
 
 # Übersicht über die Veröffentlichung von Customer Journey Analytics-Zielgruppen
 
-Sie können jetzt Zielgruppen erstellen und veröffentlichen, die im Customer Journey Analytics in [Echtzeit-Kundenprofil](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=de) in Adobe Experience Platform für Kunden-Targeting und Personalisierung.
+Sie können jetzt Zielgruppen erstellen und veröffentlichen, die im Customer Journey Analytics in [Echtzeit-Kundenprofil](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=de) in Adobe Experience Platform gefunden werden, um sie für Kunden-Targeting und Personalisierung zu nutzen.
 
 Das Veröffentlichen von Zielgruppen bietet eine klare Möglichkeit, Einblicke, die in Customer Journey Analytics gefunden werden, zu aktivieren und zu nutzen. Zu diesen Maßnahmen zählen:
 
@@ -31,7 +31,7 @@ Die Zielgruppen, die Sie in Customer Journey Analytics erstellen, müssen nicht 
 
 **Filter**: Ein Regelsatz, mit dem bei der Auswertung eines Datensatzes über einen bestimmten Zeitraum eine Teilmenge von Daten erzeugt wird. Bei der Erstellung einer Zielgruppe kann ein Filter verwendet werden, wenn auch andere unterstützende Services genutzt werden. Filter werden im Customer Journey Analytics definiert und gepflegt.
 
-**Filter** versus **Segmente**: Customer Journey Analytics verwendet nicht das Konzept von &quot;Segmenten&quot;, sondern &quot;Filter&quot;. Bei beiden handelt es sich zwar um einen Regelsatz, der eine ähnliche Logik enthalten kann, das erzeugte Ergebnis ist jedoch ein anderes. Ein Filter wird verwendet, um einen Datensatz für Analysezwecke einzugrenzen. Ein Segment wird verwendet, um eine Liste von Identitäten zu erstellen, die zur Aktivierung verwendet werden können. Segmente erzeugen Zielgruppen im Echtzeit-Kundenprofil, Filter (allein) dagegen nicht. Customer Journey Analytics Audience Publishing ist der Prozess, mit dem wir einen Customer Journey Analytics-Filter verwenden, um eine Zielgruppe zu erstellen, die vom Echtzeit-Kundenprofil genutzt werden kann.
+**Filter** versus **Segmente**: Customer Journey Analytics verwendet nicht das Konzept &quot;Segmente&quot;. Stattdessen wird &quot;Filter&quot;verwendet. Bei beiden handelt es sich zwar um einen Regelsatz, der eine ähnliche Logik enthalten kann, das erzeugte Ergebnis ist jedoch ein anderes. Ein Filter wird verwendet, um einen Datensatz für Analysezwecke einzugrenzen. Ein Segment wird verwendet, um eine Liste von Identitäten zu erstellen, die zur Aktivierung verwendet werden können. Segmente erzeugen Zielgruppen im Echtzeit-Kundenprofil, Filter (allein) dagegen nicht. Customer Journey Analytics Audience Publishing ist der Prozess, mit dem wir einen Customer Journey Analytics-Filter verwenden, um eine Zielgruppe zu erstellen, die vom Echtzeit-Kundenprofil genutzt werden kann.
 
 ## Zugriffsberechtigung
 
@@ -43,7 +43,7 @@ Die Zielgruppen, die Sie in Customer Journey Analytics erstellen, müssen nicht 
 
 ## Data Governance und Einverständnis
 
-Wenn Sie eine Zielgruppe in Customer Journey Analytics veröffentlichen, werden die mit den in der Zielgruppe verwendeten Feldern verknüpften Data Governance-Beschriftungen und -Richtlinien aufgezeichnet.  Wenn die Zielgruppe in einem Adobe Experience-Programm aktiviert wird, sind alle zugehörigen Data Governance-Beschriftungen und -Richtlinien für diese Zielgruppe verfügbar und es kann eine geeignete Durchsetzung angewendet werden. [Weitere Informationen über Einverständnis](https://experienceleague.adobe.com/docs/experience-platform/data-governance/policies/user-guide.html#consent-policy?lang=de).
+Wenn Sie eine Zielgruppe in Customer Journey Analytics veröffentlichen, werden die mit den in der Zielgruppe verwendeten Feldern verknüpften Data Governance-Beschriftungen und -Richtlinien aufgezeichnet.  Wenn die Zielgruppe in einem Adobe Experience-Programm aktiviert wird, sind alle zugehörigen Data Governance-Beschriftungen und -Richtlinien für diese Zielgruppe verfügbar und es kann eine geeignete Durchsetzung angewendet werden. [Weitere Informationen über Einverständnis](https://experienceleague.adobe.com/docs/experience-platform/data-governance/policies/user-guide.html?lang=de#consent-policy).
 
 ## Nächste Schritte
 

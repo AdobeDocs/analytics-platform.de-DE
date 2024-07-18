@@ -47,7 +47,7 @@ Diese Visualisierung verhält sich folgendermaßen:
 * Wenn die Spalte ausgewählt ist, wird der erste Wert mit sich selbst verglichen, sodass eine Änderung von 0 angezeigt wird.
 
 
-![Visualisierung der Zusammenfassungsänderung, die die Differenz zwischen zwei Zahlen anzeigt.](assets/summary-change.png)
+![Visualisierung der Zusammenfassungsänderung, die die Differenz zwischen zwei Zahlen anzeigt. s](assets/summary-change.png)
 
 
 Klicken Sie oben rechts auf den **Visualisierungseinstellungen**, um die Einstellungen für die Zusammenfassungsänderung zu konfigurieren:

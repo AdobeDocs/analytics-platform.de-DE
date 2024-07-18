@@ -7,7 +7,7 @@ role: User
 source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
 source-wordcount: '199'
-ht-degree: 86%
+ht-degree: 93%
 
 ---
 
@@ -29,9 +29,9 @@ Sie können den [Fluss zwischen Dimensionen](/help/analysis-workspace/visualizat
 
 Jede Spalte könnte eine andere Dimension anzeigen. Ziehen Sie einen Dimension per Drag-and-Drop in eine Dropzone, um diese Dimension zum Diagramm hinzuzufügen.
 
-## Flussvisualisierung konfigurieren
+## Konfigurieren einer Flussvisualisierung
 
-Informationen zum Konfigurieren einer Flussvisualisierung finden Sie unter [Flussvisualisierung konfigurieren](/help/analysis-workspace/visualizations/c-flow/create-flow.md).
+Informationen zum Konfigurieren einer Flussvisualisierung finden Sie unter [Konfigurieren einer Flussvisualisierung](/help/analysis-workspace/visualizations/c-flow/create-flow.md).
 
 ## Flussdiagramme als Teil von Projekt-CSV-Dateien exportieren {#section_BACD2639A0FC4C49A75398F7D0363D9D}
 

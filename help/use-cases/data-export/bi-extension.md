@@ -4,23 +4,23 @@ description: Beschreibt die Verwendung der BI-Erweiterung, um digitale Daten in 
 solution: Customer Journey Analytics
 feature: Use Cases
 role: Admin
-source-git-commit: a76763636cc9c939e6a442d707051b61e7c7da91
+exl-id: 669a1305-3e37-4ca2-8178-a89a27958e5d
+source-git-commit: 9fef1fddbb4b51efb9282e3ef13501bd498a4546
 workflow-type: tm+mt
 source-wordcount: '154'
-ht-degree: 46%
+ht-degree: 47%
 
 ---
 
-
 # BI-Erweiterung
 
-In diesem Artikel wird erläutert, wie die [!DNL Customer Journey Analytics BI extension] kann zur Implementierung der folgenden [Anwendungsfall für den Datenexport](overview.md):
+In diesem Artikel wird beschrieben, wie der [!DNL Customer Journey Analytics BI extension] verwendet werden kann, um den folgenden [Anwendungsfall für den Datenexport](overview.md) zu implementieren:
 
 - Data Lake-, Data Warehouse- oder BI-Tools
 
 ## Einführung
 
-Exportieren von Daten mithilfe des [!DNL Customer Journey Analytics BI extension] ermöglicht Ihnen den Export von Daten aus Ihren Customer Journey Analytics-Datenansichten.
+Durch den Export von Daten mit dem [!DNL Customer Journey Analytics BI extension] können Sie Daten aus Ihren Customer Journey Analytics-Datenansichten exportieren.
 
 ![BI-Erweiterung](../assets/bi-extension.svg)
 
@@ -28,4 +28,4 @@ Exportieren von Daten mithilfe des [!DNL Customer Journey Analytics BI extension
 
 Der [!DNL Customer Journey Analytics BI extension] ermöglicht SQL-Zugriff auf [Datenansichten](/help/data-views/data-views.md), die Sie in Customer Journey Analytics definiert haben. Ihre Dateningenieurinnen und -ingenieure sowie Ihre Datenanalytikerinnen und -analytiker sind möglicherweise besser mit Power BI, Tableau oder anderen Business Intelligence- und Visualisierungs-Tools (im Folgenden „BI-Tools“ genannt) vertraut. Sie können jetzt Berichte und Dashboards basierend auf denselben Datenansichten erstellen, die Benutzerinnen und Benutzer von Customer Journey Analytics beim Erstellen ihrer Analysis Workspace-Projekte verwenden.
 
-Weitere Informationen finden Sie in der ausführlichen Dokumentation unter [BI-Erweiterung](../../data-views/bi-extension.md).
+Weitere Informationen finden Sie in der ausführlichen Dokumentation zur [BI-Erweiterung](../../data-views/bi-extension.md).

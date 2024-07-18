@@ -15,13 +15,13 @@ ht-degree: 81%
 
 >[!NOTE]
 >
->Die Linienvisualisierung wird in Kürze verfügbar sein [intelligente Beschriftungen](/help/analysis-workspace/visualizations/intelligent-captions.md).
+>Die Linienvisualisierung wird bald [intelligente Beschriftungen](/help/analysis-workspace/visualizations/intelligent-captions.md) enthalten.
 
 Die Linienvisualisierung stellt Metriken anhand einer Linie dar, die den Wertverlauf über einen bestimmten Zeitraum hinweg zeigt. Ein Liniendiagramm kann nur verwendet werden, wenn die Zeit als Dimension verwendet wird.
 
 ![Linienvisualisierung](assets/line-viz.png)
 
-Symbol Einstellungen auswählen ![Einstellungen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Settings_18_N.svg) in der Symbolleiste der Linienvisualisierung, um auf [Visualisierungseinstellungen](freeform-analysis-visualizations.md) verfügbar. Die Einstellungen sind in folgende Kategorien unterteilt:
+Wählen Sie das Einstellungssymbol ![Einstellungen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Settings_18_N.svg) in der oberen Leiste der Linienvisualisierung aus, um auf die verfügbaren [Visualisierungseinstellungen](freeform-analysis-visualizations.md) zuzugreifen. Die Einstellungen sind in folgende Kategorien unterteilt:
 
 <img src="./assets/viz-settings-line.png" alt="Visualisierungseinstellungen" width="50%" />
 

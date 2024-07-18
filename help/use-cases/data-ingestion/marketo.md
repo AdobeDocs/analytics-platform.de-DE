@@ -1,5 +1,5 @@
 ---
-title: Marketo Engage-Daten in Adobe Experience Platform erfassen und in Customer Journey Analytics berichten
+title: Aufnehmen von Marketo Engage-Daten in Adobe Experience Platform und Reporting in Customer Journey Analytics
 description: Erfahren Sie, wie Sie Marketo Engage-Daten in Customer Journey Analytics importieren
 solution: Customer Journey Analytics
 feature: Use Cases
@@ -8,11 +8,11 @@ role: Admin
 source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
 workflow-type: tm+mt
 source-wordcount: '393'
-ht-degree: 57%
+ht-degree: 64%
 
 ---
 
-# Marketo Engage-Daten in Adobe Experience Platform erfassen und in Customer Journey Analytics berichten
+# Aufnehmen von Marketo Engage-Daten in Adobe Experience Platform und Reporting in Customer Journey Analytics
 
 Sie können die neu verfügbaren Marketo Engage-Datensätze in Adobe Experience Platform (Adobe Experience Platform) nutzen, um B2B-Marketingexperten wertvolle Analyse- und Berichterstellungslösungen bereitzustellen. Erstellen Sie dann einen Bericht zu diesen Datensätzen in Adobe Customer Journey Analytics.
 
@@ -41,11 +41,11 @@ Kunden mit B2B/B2P CDP können eine B2C-Analyse im Customer Journey Analytics du
 
 1. Erstellen Sie einen [Filter](/help/components/filters/create-filters.md) für Web-Seitenansichten wie folgt: Ereignistyp = web.webpagedetails.pageViews :
 
-   ![Definitionsfenster mit Ereignis- und Ereignistyp](../assets/marketo-filter.png)
+   ![Fenster &quot;Definition&quot;mit Ereignis- und Ereignistyp](../assets/marketo-filter.png)
 
 1. Ziehen Sie den von Ihnen erstellten Filter (Web-Seitenansichten) und danach den Datumsbereich „Monat“ in die Freiformtabelle. So erhalten Sie die monatlichen Web-Seitenbesuche nach Leads:
 
-   ![Freiformtabelle mit Ereignissen nach Monat](../assets/marketo-freeform.png)
+   ![ Freiformtabelle mit Ereignissen nach Monat.](../assets/marketo-freeform.png)
 
 1. Oder ziehen Sie die folgenden Dimensionen in die Tabelle: Personen-Schlüssel oder geschäftliche E-Mail-Adresse. Dadurch erhalten Sie die Web-Seitenbesuche nach Lead:
 

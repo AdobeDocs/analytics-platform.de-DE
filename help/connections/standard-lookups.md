@@ -77,7 +77,7 @@ The catch here is that they can only populate those IDs today if they have a dir
 
 Um einen Bericht zu den Dimensionen der Standardsuche zu erstellen, müssen Sie diese hinzufügen, wenn Sie eine Datenansicht in Customer Journey Analytics erstellen:
 
-![Erstellen einer Datenansicht mit der Liste &quot;Komponenten hinzufügen&quot;](assets/global-lookup.png)
+![Erstellen Sie eine Datenansicht, die die Liste &quot;Komponenten hinzufügen&quot;anzeigt](assets/global-lookup.png)
 
 Anschließend werden die Suchdaten in Arbeitsbereich angezeigt:
 
