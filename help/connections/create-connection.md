@@ -6,9 +6,9 @@ solution: Customer Journey Analytics
 feature: Connections
 role: Admin
 source-git-commit: 8fe3fb966f559aa12f3203e02a1766436e45a24a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3172'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -72,7 +72,7 @@ Mit dem neuen Workflow können Sie beim Erstellen einer Verbindung einen Experie
 
 1. Wählen Sie im Dialogfeld „Verbindungseinstellungen“ die Option **[!UICONTROL Datensätze hinzufügen]** aus.
 
-1. Im Schritt [!UICONTROL Datensatz auswählen] wird eine Liste der Experience Platform-Datensätze angezeigt.
+1. Im Schritt [!UICONTROL Auswählen von Datensätzen] wird eine Liste der Experience Platform-Datensätze angezeigt.
 
    ![Auswählen von Datensätzen](assets/select-datasets.png)
 
@@ -80,16 +80,16 @@ Mit dem neuen Workflow können Sie beim Erstellen einer Verbindung einen Experie
 
    | Spalte | Beschreibung |
    |---|---|
-   | Datensatz | Name des Datensatzes. Wählen Sie den Namen aus, um Sie zum Datensatz unter Experience Platform weiterzuleiten. Wählen Sie ![Info](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg) aus, um ein Popup mit weiteren Details zum Datensatz anzuzeigen. Im Popup-Fenster können Sie **[!UICONTROL In Platform bearbeiten]** auswählen, um den Datensatz direkt im Experience Platform zu bearbeiten. |
-   | Datensatztyp | Der Typ des Datensatzes: Ereignis, Profil oder Suche. |
-   | Anzahl der Datensätze | Die Gesamtzahl der Einträge im Vormonat für den Datensatz in Experience Platform. |
-   | Schema | Das Schema, auf dem der Datensatz basiert. Wählen Sie den Namen aus, um Sie zum Schema unter Experience Platform zu leiten. |
-   | Letzter Batch | Der Status des letzten in Experience Platform erfassten Batches. Weitere Informationen finden Sie unter [Batch-Status](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/batch/troubleshooting#batch-states) . |
+   | Datensatz | Der Name des Datensatzes. Wählen Sie den Namen aus, um zum Datensatz in Experience Platform weitergeleitet zu werden. Wählen Sie ![Informationen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg) aus, um ein Popup-Fenster mit weiteren Details zum Datensatz anzuzeigen. Im Popup-Fenster können Sie **[!UICONTROL In Platform bearbeiten]** auswählen, um den Datensatz direkt in Experience Platform zu bearbeiten. |
+   | Datensatztyp | Der Typ des Datensatzes: „Ereignis“, „Profil“ oder „Suche“. |
+   | Anzahl der Einträge | Die Gesamtzahl der Einträge im Vormonat für den Datensatz in Experience Platform. |
+   | Schema | Das Schema, auf dem der Datensatz basiert. Wählen Sie den Namen aus, um zum Schema in Experience Platform weitergeleitet zu werden. |
+   | Letzter Batch | Der Status des letzten Batches, der in Experience Platform aufgenommen wurde. Weitere Informationen finden Sie unter [Batch-Status](https://experienceleague.adobe.com/de/docs/experience-platform/ingestion/batch/troubleshooting#batch-states). |
    | Datensatz-ID | Die ID des Datensatzes. |
-   | Letzte Aktualisierung | Der letzte aktualisierte Zeitstempel des Datensatzes. |
+   | Zuletzt aktualisiert | Der Zeitstempel für die letzte Aktualisierung des Datensatzes. |
 
 
-1. Wählen Sie einen oder mehrere Datensätze aus und wählen Sie **[!UICONTROL Weiter]** aus. Mindestens ein Ereignisdatensatz muss Teil der Verbindung sein.
+1. Wählen Sie einen oder mehrere Datensätze und anschließend die Option **[!UICONTROL Weiter]** aus. Mindestens ein Ereignisdatensatz muss Teil der Verbindung sein.
    * Um die für die Liste der Datensätze angezeigten Spalten zu ändern, wählen Sie ![Spalteneinstellungen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ColumnSettings_18_N.svg) aus und wählen Sie die Spalten aus, die im Dialogfeld [!UICONTROL Tabelle anpassen] angezeigt werden sollen.
    * Um nach einem bestimmten Datensatz zu suchen, verwenden Sie das ![Suchfeld](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg).
    * Um die ausgewählten Datensätze ein- oder auszublenden, wählen Sie ![Auswählen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SelectBoxAll_18_N.svg), **[!UICONTROL Ausgewählte ausblenden]** oder **[!UICONTROL Ausgewählte anzeigen]** aus.
