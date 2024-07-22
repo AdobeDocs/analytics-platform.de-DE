@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 exl-id: 1c42efac-b3d2-437b-8b0b-9c6fdfed8520
 role: Admin
-source-git-commit: ca2387c2dd4c6c0ccdf6cec245c5d66ecea93bd5
+source-git-commit: f390789287721a777947093123f672e0a854540a
 workflow-type: tm+mt
-source-wordcount: '3817'
+source-wordcount: '3830'
 ht-degree: 12%
 
 ---
@@ -324,7 +324,8 @@ Die folgende Tabelle stellt dieselben Daten wie oben dar, zeigt jedoch den Effek
 
 Die folgenden Voraussetzungen gelten speziell für das grafikbasierte Stitching:
 
-- Der Ereignisdatensatz in Adobe Experience Platform, auf den Sie die Zuordnung anwenden möchten, muss über eine Spalte verfügen, die einen Besucher in jeder Zeile identifiziert, die **beständige ID**. Beispielsweise eine Besucher-ID, die von einer Adobe Analytics-AppMeasurement-Bibliothek generiert wurde, oder eine ECID, die vom Adobe Experience Platform Identity-Dienst generiert wurde.
+- Der Ereignisdatensatz in Adobe Experience Platform, auf den Sie die Zuordnung anwenden möchten, muss über eine Spalte verfügen, die einen Besucher in jeder Zeile identifiziert, die **beständige ID**. Beispielsweise eine Besucher-ID, die von einer Adobe Analytics-AppMeasurement-Bibliothek generiert wurde, oder eine ECID, die vom Experience Platform Identity-Dienst generiert wurde.
+- Die beständige ID muss auch [als Identität definiert](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/ui/fields/identity) im Schema sein.
 - Das Identitätsdiagramm vom Experience Platform Identity Service muss über einen Namespace verfügen (z. B. `Email` oder `Phone`), den Sie beim Stitching verwenden möchten, um die **vorübergehende ID** aufzulösen. Weitere Informationen finden Sie unter [Experience Platform Identity Service](https://experienceleague.adobe.com/de/docs/experience-platform/identity/home) .
 
 >[!NOTE]
