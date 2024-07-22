@@ -5,7 +5,7 @@ title: Verwalten von Cloud-Exportspeicherorten und -konten
 feature: Components
 exl-id: 8e82fe6f-99df-4360-8693-99692aac002b
 role: User, Admin
-source-git-commit: 9f3182ed33fc5ad537b05e9effbdd25caf4e87d7
+source-git-commit: 8fc8e3e4057663bd4bdf38e41bb3129df442f749
 workflow-type: tm+mt
 source-wordcount: '1370'
 ht-degree: 1%
@@ -147,8 +147,6 @@ So zeigen Sie Schlüssel an, die mit einem Exportkonto verknüpft sind:
 1. Wählen Sie im Bestätigungsdialogfeld erneut [!UICONTROL **Löschen**] aus.
 
 ## unternehmensweite Einstellungen konfigurieren (nur Administratoren)
-
-{{release-limited-testing-section}}
 
 Systemadministratoren können Benutzer daran hindern, Konten und Standorte zu erstellen, oder sie können die Arten von Konten einschränken, die Benutzer erstellen und verwenden können.
 
