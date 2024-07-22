@@ -4,10 +4,10 @@ title: Datumsvergleich
 feature: Calendar
 exl-id: 08113536-658f-486b-ac56-6c531240c3c2
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: b196b8c05ba05a3f46d71c10fdcaa2ad8ef0dcd6
 workflow-type: tm+mt
-source-wordcount: '740'
-ht-degree: 86%
+source-wordcount: '772'
+ht-degree: 56%
 
 ---
 
@@ -20,11 +20,11 @@ Mit dem Datumsvergleich in Analysis Workspace können Sie mit einer Spalte, die 
 Für Analysen wird Kontext benötigt, der oft durch einen vorherigen Zeitraum bereitgestellt wird. Beispielsweise ist „Wie viel besser/schlechter geht es uns als zu diesem Zeitpunkt letztes Jahr?“ eine Kernfrage, um Ihr Geschäft zu verstehen. Der Datumsvergleich enthält automatisch eine Spalte „Differenz“, die die prozentuale Veränderung im Vergleich zu einem bestimmten Zeitraum angibt.
 
 1. Erstellen Sie eine Freiformtabelle mit beliebigen Dimensionen und Metriken, die Sie mit einem bestimmten Zeitraum vergleichen möchten.
-1. Rechtsklicken Sie auf eine Tabellenzeile und wählen Sie **[!UICONTROL Zeiträume vergleichen]** aus.
+1. Klicken Sie mit der rechten Maustaste auf eine Tabellenzeile und wählen Sie **[!UICONTROL Zeiträume vergleichen]** aus.
 
    ![Tabellenzeile mit ausgewählten Zeiträumen vergleichen](assets/compare-time.png)
 
-   >[!IMPORTANT]
+   >[!NOTE]
    >
    >Diese Rechtsklickoption ist für Metrikzeilen, Datumsbereichzeilen und Zeitdimensionszeilen deaktiviert.
 
@@ -33,12 +33,12 @@ Für Analysen wird Kontext benötigt, der oft durch einen vorherigen Zeitraum be
    | Option | Beschreibung |
    |---|---|
    | **[!UICONTROL Vorhergehende/r/s Woche/Monat/Quartal/Jahr vor diesem Datumsbereich]** | Vergleich mit der Woche/dem Monat usw. unmittelbar vor diesem Datumsbereich. |
-   | **[!UICONTROL Diese/r/s Woche/Monat/Quartal/Jahr letztes Jahr]** | Vergleich mit demselben Datumsbereich vor einem Jahr. |
-   | **[!UICONTROL Bereich auswählen]** | Ermöglicht die Auswahl eines benutzerdefinierten Datumsbereichs. |
+   | **[!UICONTROL Diese Woche/dieser Monat/dieses Quartal/Dieses Jahr des letzten Jahres bis zu diesem Datumsbereich]** | Vergleich mit demselben Datumsbereich vor einem Jahr. |
+   | **[!UICONTROL Benutzerdefinierter Datumsbereich für diesen Datumsbereich]** | Ermöglicht die Auswahl eines benutzerdefinierten Datumsbereichs. |
 
    >[!NOTE]
    >
-   >Wenn Sie eine benutzerdefinierte Anzahl an Tagen auswählen, z. B. 7.–20. Oktober (ein Zeitraum von 14 Tagen), stehen nur zwei Optionen zur Verfügung: **[!UICONTROL Vorherige 14 Tage vor diesem Datumsbereich]** und **[!UICONTROL Bereich auswählen]**.
+   >Wenn Sie eine benutzerdefinierte Anzahl von Tagen auswählen, z. B. 7. bis 20. Oktober (ein Zeitraum von 14 Tagen), erhalten Sie nur zwei Optionen: **[!UICONTROL Vorherige 14 Tage vor diesem Datumsbereich]** und **[!UICONTROL Benutzerdefinierter Datumsbereich bis zu diesem Datumsbereich]**.
 
 1. Der resultierende Vergleich sieht wie folgt aus:
 
@@ -56,19 +56,21 @@ Für Analysen wird Kontext benötigt, der oft durch einen vorherigen Zeitraum be
 
 Sie können jetzt Zeiträume zu allen Spalten in einer Tabelle hinzufügen. So können Sie einen Zeitraum hinzufügen, der von dem abweicht, auf den Ihr Kalender eingestellt ist. Dies ist eine weitere Möglichkeit, um Daten zu vergleichen.
 
-1. Klicken Sie mit der rechten Maustaste auf eine Spalte in der Tabelle und wählen Sie **[!UICONTROL Spalte &quot;Zeitraum hinzufügen&quot;]** ![Spaltenliste &quot;Tabelle&quot;mit Spalte &quot;Zeitraum hinzufügen&quot;mit Markierung ](assets/add-time-period-column.png) aus
+1. Klicken Sie mit der rechten Maustaste auf eine Spalte in der Tabelle und wählen Sie **[!UICONTROL Spalte &quot;Zeitraum hinzufügen&quot;]** aus.
+
+   ![](assets/add-time-period-column.png)
 
 1. Je nachdem, wie Sie den Datumsbereich der Tabelle festgelegt haben, stehen die folgenden Optionen zum Vergleich zur Verfügung:
 
    | Option | Beschreibung |
    |---|---|
    | **[!UICONTROL Vorhergehende/r/s Woche/Monat/Quartal/Jahr vor diesem Datumsbereich]** | Fügt eine Spalte mit der Woche/dem Monat usw. unmittelbar vor diesem Datumsbereich hinzu. |
-   | **[!UICONTROL Diese/r/s Woche/Monat/Quartal/Jahr letztes Jahr]** | Fügt denselben Datumsbereich des Vorjahres hinzu. |
-   | **[!UICONTROL Bereich auswählen]** | Ermöglicht die Auswahl eines benutzerdefinierten Datumsbereichs. |
+   | **[!UICONTROL Diese Woche/dieser Monat/dieses Quartal/Dieses Jahr des letzten Jahres bis zu diesem Datumsbereich]** | Fügt denselben Datumsbereich des Vorjahres hinzu. |
+   | **[!UICONTROL Benutzerdefinierter Datumsbereich für diesen Datumsbereich]** | Ermöglicht die Auswahl eines benutzerdefinierten Datumsbereichs. |
 
    >[!NOTE]
    >
-   >Wenn Sie eine benutzerdefinierte Anzahl an Tagen auswählen, z. B. 7.–20. Oktober (ein Zeitraum von 14 Tagen), stehen nur zwei Optionen zur Verfügung: **[!UICONTROL Vorherige 14 Tage vor diesem Datumsbereich]** und **[!UICONTROL Bereich auswählen]**.
+   >Wenn Sie eine benutzerdefinierte Anzahl von Tagen auswählen, z. B. 7. bis 20. Oktober (ein Zeitraum von 14 Tagen), erhalten Sie nur zwei Optionen: **[!UICONTROL Vorherige 14 Tage vor diesem Datumsbereich]** und **[!UICONTROL Benutzerdefinierter Datumsbereich bis zu diesem Datumsbereich]**.
 
 1. Der Zeitraum wird am Anfang der ausgewählten Spalte eingefügt:
 
@@ -82,20 +84,25 @@ Sie können jetzt Zeiträume zu allen Spalten in einer Tabelle hinzufügen. So k
 
 ## Beginn der Spaltendaten an derselben Zeile ausrichten {#section_5085E200082048CB899C3F355062A733}
 
-Mit einer neuen Einstellung für alle Tabellen können Sie **[!UICONTROL Datumswerte in jeder Spalte so ausrichten, dass sie in der gleichen Zeile beginnen (wird auf die gesamte Tabelle angewendet)]**. „Wird auf die gesamte Tabelle angewendet“ bedeutet, dass, wenn Sie z. B. eine Aufschlüsselung in der Tabelle durchführen und diese Einstellung für die Aufschlüsselung ändern, die Einstellung für die gesamte Tabelle geändert wird.
+Sie können die Daten in jeder Spalte so ausrichten, dass sie alle in derselben Zeile beginnen.
 
-![Freiformtabelle mit Tabelleneinstellungen mit Popup-Fenster, in dem die Datumsangaben in jeder Spalte so ausgerichtet sind, dass sie alle in derselben ausgewählten Zeile beginnen.](assets/date-comparison-setting.png)
+Wenn Sie beispielsweise das Datum ausrichten und einen Monatsvergleich zwischen Oktober und September 2016 durchführen, beginnt die linke Spalte mit dem 1. Oktober und die rechte Spalte mit dem 1. September:
 
->[!IMPORTANT]
+![](assets/add-time-period-column3.png)
+
+>[!NOTE]
 >
->Diese Einstellung ist für alle bestehenden Projekte **deaktiviert** und für alle neuen Projekte **aktiviert**.
+>Beachten Sie bei Verwendung dieser Option Folgendes:
+>
+>* Diese Einstellung ist standardmäßig für alle neuen Projekte aktiviert.
+>
+>* Diese Einstellung gilt für die gesamte Tabelle. Wenn Sie beispielsweise diese Einstellung für eine Aufschlüsselung innerhalb der Tabelle ändern, wird die Einstellung für die gesamte Tabelle geändert.
+>
 
-Beispiel: Wenn Sie die Daten in einem Monatsvergleich zwischen Oktober und September 2016 ausrichten, beginnt die linke Spalte mit dem 1. Oktober und die rechte Spalte mit dem 1. September:
+So aktivieren Sie diese Einstellung, falls sie noch nicht aktiviert ist:
 
-![Vergleich mit monatlichen Prozentsätzen.](assets/add-time-period-column3.png)
+1. Wählen Sie in der Tabelle, in der Sie die Spaltendaten ausrichten möchten, das Symbol **Einstellungen** in der Tabellenüberschrift aus.
 
-<!-- 
+1. Wählen Sie auf der Registerkarte [!UICONTROL **Einstellungen**] die Option **[!UICONTROL Datumsangaben in jeder Spalte so ausrichten, dass sie alle auf derselben Zeile beginnen (gilt für die gesamte Tabelle)]**.
 
-<p>See Jonny Moon's email from November 3. </p>
-
- -->
+![](assets/date-comparison-setting.png)
