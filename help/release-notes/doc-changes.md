@@ -4,10 +4,10 @@ description: Listet Inhaltsaktualisierungen für Dokumentation zu Customer Journ
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 7d915fc9b50163b7ec9c48232b99a85a3b063a77
+source-git-commit: cdab5d8b674527a1c3f950284daac65d0ab01900
 workflow-type: tm+mt
-source-wordcount: '3836'
-ht-degree: 73%
+source-wordcount: '3940'
+ht-degree: 71%
 
 ---
 
@@ -20,8 +20,9 @@ Die folgenden Aktualisierungen wurden seit der ersten Erstellung der Customer Jo
 | Funktion | Beschreibung |
 | --- | --- |
 | **Juli 2024** | |
+| Informationen zu schnell berechneten Metriken hinzugefügt | Die Informationen in [Metriken](/help/components/apply-create-metrics.md) wurden aktualisiert, um den Unterschied zwischen [berechneten Metriken, die im Generator für berechnete Metriken erstellt werden](/help/components/apply-create-metrics.md#create-calculated-metrics-for-all-projects) und [Metriken, die in einem einzelnen Projekt als schnell berechnete Metriken erstellt werden, zu klären.](/help/components/apply-create-metrics.md#create-calculated-metrics-for-a-single-project) Es wurden auch weitere Details hinzugefügt, wie Sie schnell berechnete Metriken erstellen können.<p>Berechnete Metriken, die im Generator für berechnete Metriken erstellt werden, stehen in der Komponentenliste zur Verfügung und können in der gesamten Organisation auf Projekte angewendet werden, während berechnete Metriken, die als schnell berechnete Metriken erstellt werden, nur in dem Projekt verfügbar sind, in dem sie erstellt wurden.</p><p>Außerdem wurden Informationen in [Metriken erstellen](/help/components/calc-metrics/cm-workflow/cm-build-metrics.md) aktualisiert, um ähnliche Klarstellungen vorzunehmen.</p> |
 | Funktion zum Deduplizieren abgeleiteter Felder | Eine Dokumentation zur abgeleiteten Funktion [deduplicate](/help/data-views/derived-fields/derived-fields.md#deduplicate) wurde hinzugefügt. |
-| Aktualisierte allgemeine Fehlermeldungen | Es wurden kleinere Aktualisierungen an den [häufigen Fehlermeldungen](/help/analysis-workspace/workspace-faq/error-messages.md) vorgenommen. |
+| Aktualisierte allgemeine Fehlermeldungen | Es wurden kleinere Aktualisierungen an den [allgemeinen Fehlermeldungen](/help/analysis-workspace/workspace-faq/error-messages.md) vorgenommen. |
 | **Juni 2024** | |
 | Aktualisierter Produktname, der sich auf die Funktion zum Streaming von Medien bezieht | Instanzen von „Media Analytics“ und „Streaming Media“ wurden durch den Namen „Add-on für Streaming-Mediensammlungen“ ersetzt, wenn auf die Reihe von Funktionen zum Streaming von Medien verwiesen wird, die Streaming-Mediendaten erfassen und in Analysis Workspace anzeigen. <p>Diese Updates sind in der gesamten Customer Journey Analytics-Dokumentation sowie in der [Add-on zur Streaming-Mediensammlung](https://experienceleague.adobe.com/de/docs/media-analytics/using/media-overview) verfügbar.</p> |
 | Grafikbasierte Zuordnung | Die [Dokumentation zum Stitching](/help/stitching/overview.md) wurde mit der Einführung des grafikbasierten Stitching aktualisiert und umstrukturiert. |

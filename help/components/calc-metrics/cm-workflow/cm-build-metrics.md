@@ -3,10 +3,10 @@ description: Der Generator für berechnete Metriken bietet eine Arbeitsfläche, 
 title: Metriken erstellen
 feature: Calculated Metrics
 exl-id: 4d03a51d-c676-483c-98e2-d7283e8d71b0
-source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+source-git-commit: cdab5d8b674527a1c3f950284daac65d0ab01900
 workflow-type: tm+mt
-source-wordcount: '1072'
-ht-degree: 54%
+source-wordcount: '1150'
+ht-degree: 50%
 
 ---
 
@@ -16,11 +16,17 @@ Customer Journey Analytics bietet eine Arbeitsfläche zum Ziehen und Ablegen von
 
 ## Erstellen einer berechneten Metrik beginnen
 
-Sie können mit der Erstellung einer berechneten Metrik auf eine der folgenden Arten beginnen:
+Mit dem Generator für berechnete Metriken können Sie berechnete Metriken erstellen. Auf diese Weise werden berechnete Metriken in der Komponentenliste verfügbar und können dann in Projekten in Ihrer gesamten Organisation verwendet werden. Alternativ können Sie eine schnell berechnete Metrik erstellen, wie unter [Berechnete Metriken für ein einzelnes Projekt erstellen](/help/components/apply-create-metrics.md#create-calculated-metrics-for-a-single-project) in [Metriken](/help/components/apply-create-metrics.md) beschrieben.
 
-* Öffnen Sie in Analysis Workspace ein Projekt und wählen Sie dann **[!UICONTROL Komponenten]** > **[!UICONTROL Metrik erstellen]** aus.
-* Öffnen Sie in Analysis Workspace ein Projekt und wählen Sie dann in der linken Leiste das Symbol **Plus** neben dem Abschnitt [!UICONTROL **Metriken**] aus.
-* Wechseln Sie in [!DNL Customer Journey Analytics] zu **[!UICONTROL Komponenten]** > **[!UICONTROL Berechnete Metriken]** und wählen Sie dann oben auf der Seite &quot;Berechnete Metriken&quot;die Option **[!UICONTROL + Hinzufügen]** aus.
+Greifen Sie auf den Generator für berechnete Metriken zu, um mit der Erstellung einer berechneten Metrik zu beginnen, die in der Komponentenliste verfügbar ist.
+
+1. Greifen Sie auf den Generator für berechnete Metriken wie folgt zu:
+
+   * Öffnen Sie in Analysis Workspace ein Projekt und wählen Sie dann **[!UICONTROL Komponenten]** > **[!UICONTROL Metrik erstellen]** aus.
+   * Öffnen Sie in Analysis Workspace ein Projekt und wählen Sie dann in der linken Leiste das Symbol **Plus** neben dem Abschnitt [!UICONTROL **Metriken**] aus.
+   * Wechseln Sie in [!DNL Customer Journey Analytics] zu **[!UICONTROL Komponenten]** > **[!UICONTROL Berechnete Metriken]** und wählen Sie dann oben auf der Seite &quot;Berechnete Metriken&quot;die Option **[!UICONTROL + Hinzufügen]** aus.
+
+1. Fahren Sie mit [Bereichen des Generators für berechnete Metriken](#areas-of-the-calculated-metrics-builder) fort.
 
 ## Bereiche des Generators für berechnete Metriken
 
@@ -46,7 +52,7 @@ Die folgende Abbildung und die zugehörige Tabelle erläutern einige der Hauptbe
 | Zahnradsymbol (Metriktyp, Attribution) | Wenn Sie das Zahnradsymbol neben einer Metrik auswählen, können Sie den Metriktyp und die Attributionsmodelle angeben. <p>**Hinweis:** Beachten Sie Folgendes, wenn Sie die Zuordnung einer Komponente auf ein nicht standardmäßiges Attributionsmodell aktualisieren:</p><ul><li>**Bei Verwendung der Komponente in einem Bericht mit *einer einzelnen Dimension*:** Die Attribution der Komponente ignoriert das Zuordnungsmodell, wenn ein nicht standardmäßiges Attributionsmodell verwendet wird.</li><li>**Bei Verwendung der Komponente in einem Bericht mit *mehreren Dimensionen*:** Die Attribution der Komponente behält das Zuordnungsmodell bei, wenn ein nicht standardmäßiges Attributionsmodell verwendet wird.</li><li>Mehrere Dimensionen sind nur verfügbar, wenn [Daten in die Cloud exportieren](/help/analysis-workspace/export/export-cloud.md).</li></ul> <p>Weitere Informationen zur Zuordnung finden Sie unter [Einstellungen der Persistenz-Komponente](/help/data-views/component-settings/persistence.md).</p> |
 | Plus-Symbol (+) | Ermöglicht Ihnen die Erstellung einer neuen Komponente, z. B. eines neuen Filters (Sie werden zum Filter Builder geleitet). |
 | Suchkomponenten | In dieser Suchleiste können Sie nach Dimensionen, Metriken, Filtern (nur erweiterte berechnete Metriken) und Funktionen (nur erweiterte berechnete Metriken) suchen. |
-| Liste von Dimensionen | Anstatt den Generator für berechnete Metriken zu verlassen, um einen einfachen Filter (im Filter-Builder) zu erstellen, z. B. &quot;Seite = Homepage&quot;, können Sie die Seite hereinziehen und &quot;Homepage&quot;direkt aus dem Generator für berechnete Metriken auswählen. So profitieren Sie von einem deutlich optimierten Arbeitsablauf bei der Erstellung gefilterter berechneter Metriken. |
+| Liste von Dimensionen | Anstatt den Generator für berechnete Metriken zu verlassen, um einen einfachen Filter zu erstellen (im Filter-Builder), z. B. &quot;Seite = Homepage&quot;, können Sie die Seite hereinziehen und Startseite direkt aus dem Generator für berechnete Metriken auswählen. So profitieren Sie von einem deutlich optimierten Arbeitsablauf bei der Erstellung gefilterter berechneter Metriken. |
 | Liste von Metriken | Metriken sind in drei Kategorien eingeteilt:<ul><li>Standardmetriken</li><li>Berechnete Metriken</li><li>Metrikvorlagen – unten in der Liste.</li></ul>Wenn Sie mit dem Mauszeiger auf eine Metrik zeigen, wird das Infosymbol rechts neben der Metrik angezeigt. Durch Klicken auf dieses Symbol erhalten Sie die folgenden Informationen:<ul><li>Die Formel für die Berechnung der Metrik.</li><li>Ein Vorschautrend der Metrik.</li><li>Ein Bearbeitungssymbol (Bleistift) oben rechts, über das Sie zum Generator für berechnete Metriken gelangen, wo Sie diese berechnete Metrik bearbeiten können.</li></ul> |
 | Liste von Filtern | (Nur erweiterte berechnete Metriken) Wenn Sie Administrator sind, zeigt Ihnen diese Liste alle in Ihrem Anmeldeunternehmen erstellten Filter an. Wenn Sie kein Administrator sind, zeigt diese Liste die Filter an, deren Eigentümer Sie sind, sowie die Filter, die für Sie freigegeben wurden. |
 | Liste von Funktionen | (Nur erweiterte berechnete Metriken) Funktionen sind in zwei Listen unterteilt: Einfach (am häufigsten verwendet) und Erweitert . |
