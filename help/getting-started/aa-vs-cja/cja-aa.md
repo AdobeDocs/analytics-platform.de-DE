@@ -5,10 +5,10 @@ exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: Basics
 role: User
-source-git-commit: f091dda08391bad3974493e93dce942b8a2fc4d3
+source-git-commit: 1abd23ded188697a910d4e6d04675f96f51e9b0e
 workflow-type: tm+mt
-source-wordcount: '2287'
-ht-degree: 100%
+source-wordcount: '2273'
+ht-degree: 99%
 
 ---
 
@@ -80,7 +80,7 @@ In den folgenden Tabellen ist aufgeführt, welche Adobe Analytics-Funktionen in 
 | Report Builder | Unterstützt mit einem neuen Office 365-Plug-in für Excel. |
 | Benutzerberechtigungen/Datenzugangssteuerungen | Customer Journey Analytics unterscheidet zwischen Produktadmins, Produktprofiladmins und Benutzenden von [Adobe Admin Console](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html?lang=de). Nur Produktadmins können von anderen Benutzenden erstellte Verbindungen, Projekte, Filter oder berechnete Metriken erstellen/aktualisieren/löschen, während Produktadmins und Produktprofiladmins Datenansichten bearbeiten können. Zusätzliche Benutzerberechtigungen sind für Vorgänge wie das Erstellen von berechneten Metriken, Filter oder Anmerkungen verfügbar. |
 | Visualisierungen | Mit Ausnahme der Zuordnungsvisualisierung werden alle Visualisierungen unterstützt. |
-| Geräteübergreifende/kanalübergreifende Zuordnung | Unterstützt bei Datensätzen, die direkt Identitätsinformationen enthalten (auch als „feldbasiertes“ Stitching bezeichnet). Diagrammbasierte Zuordnung wird noch nicht unterstützt, ist aber in Planung. Siehe [Zuordnung](../../stitching/overview.md). |
+| Geräteübergreifende/kanalübergreifende Zuordnung | Wird für Ereignis-Datensätze unterstützt, die Identitätsinformationen enthalten. Siehe [Zuordnung](../../stitching/overview.md). |
 
 {style="table-layout:auto"}
 
