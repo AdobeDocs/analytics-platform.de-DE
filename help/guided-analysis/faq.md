@@ -5,10 +5,10 @@ exl-id: b6f92d47-6c09-4338-9dc5-b30bbfbe9f7f
 feature: Guided Analysis
 keywords: Produktanalysen
 role: User
-source-git-commit: df00d954de5db89f0ccc40f7eb2474523d9e774e
-workflow-type: ht
-source-wordcount: '435'
-ht-degree: 100%
+source-git-commit: d6f26da108a2c840838ac71d9b98f45cd145ad3e
+workflow-type: tm+mt
+source-wordcount: '439'
+ht-degree: 94%
 
 ---
 
@@ -40,15 +40,17 @@ Damit die Endbenutzenden die geführte Analyse so erfolgreich wie möglich nutze
 
 +++**Worin unterscheidet sich die Terminologie der geführten Analyse von der Analysis Workspace-Terminologie?**
 
-Die geführte Analyse verwendet Begriffe, die häufiger von Produkt-Teams verwendet werden. Sie können diese Tabelle referenzieren, wenn Sie zwischen einer geführten Analyse und [Analysis Workspace](../analysis-workspace/home.md) wechseln.
+Geführte Analyse und [Analysis Workspace](../analysis-workspace/home.md) richten sich mit wenigen Unterschieden an der wichtigsten Terminologie aus.
 
 | Begriff der geführten Analyse | Begriff von Analysis Workspace |
 | --- | --- |
-| Ereignis | Metrik |
+| Ereignis (eine binäre 1/0-Metrik) | Metrik |
 | Benutzende | Personen |
-| Eigenschaft | Dimension |
-| Wert | Dimensionselement |
+| Dimension | Dimension |
+| Dimensionselement | Dimensionselement |
 | Segment | Filter |
+| Filter | Berichtsfilter |
+| Berechnete Metrik, Metriken | Berechnete Metrik |
 
 {style="table-layout:auto"}
 
