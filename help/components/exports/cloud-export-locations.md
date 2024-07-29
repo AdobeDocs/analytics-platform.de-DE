@@ -5,7 +5,7 @@ title: Konfigurieren von Cloud-Exportspeicherorten
 feature: Components
 exl-id: 93f1cca0-95da-41a0-a4f9-5ab620a5b9da
 role: User, Admin
-source-git-commit: 8fc8e3e4057663bd4bdf38e41bb3129df442f749
+source-git-commit: ec8f6c3c8cc1c0b12821e3b61fbef9f5fe875258
 workflow-type: tm+mt
 source-wordcount: '1888'
 ht-degree: 20%
@@ -39,12 +39,13 @@ Informationen zum Verwalten vorhandener Speicherorte, einschließlich Anzeigen, 
    Das Dialogfeld Standort wird angezeigt.
 
 1. Geben Sie die folgenden Informationen an:
-|Feld | Funktion |
-|—|—|
-| [!UICONTROL **Name**] | Der Name des Standorts.  |
-| [!UICONTROL **Beschreibung**] | Geben Sie eine kurze Beschreibung des Standorts ein, um ihn von anderen Positionen im Konto zu unterscheiden. |
-| [!UICONTROL **Stellen Sie den Standort allen Benutzern in Ihrer Organisation zur Verfügung**] | Aktivieren Sie diese Option, damit andere Benutzer in Ihrer Organisation den Standort verwenden können. <p>Beachten Sie beim Freigeben von Orten Folgendes:</p><ul><li>Die Freigabe von freigegebenen Speicherorten kann nicht aufgehoben werden.</li><li>Freigegebene Standorte können nur vom Eigentümer des Standorts bearbeitet werden.</li><li>Standorte können nur freigegeben werden, wenn auch das Konto, mit dem der Ort verknüpft ist, freigegeben wurde.</li></ul> |
-| [!UICONTROL **Standortkonto**] | Wählen Sie das Konto aus, in dem Sie den Standort erstellen möchten. Informationen zum Erstellen eines Kontos finden Sie unter [Konfigurieren von Cloud-Exportkonten](/help/components/exports/cloud-export-accounts.md). |
+
+   | Feld | Funktion |
+   |---------|----------|
+   | [!UICONTROL **Name**] | Der Name des Standorts. |
+   | [!UICONTROL **Beschreibung**] | Geben Sie eine kurze Beschreibung des Standorts ein, um ihn von anderen Positionen im Konto zu unterscheiden. |
+   | [!UICONTROL **Stellen Sie den Standort allen Benutzern in Ihrer Organisation zur Verfügung**] | Aktivieren Sie diese Option, damit andere Benutzer in Ihrer Organisation den Standort verwenden können. <p>Beachten Sie beim Freigeben von Orten Folgendes:</p><ul><li>Die Freigabe von freigegebenen Speicherorten kann nicht aufgehoben werden.</li><li>Freigegebene Standorte können nur vom Eigentümer des Standorts bearbeitet werden.</li><li>Standorte können nur freigegeben werden, wenn auch das Konto, mit dem der Ort verknüpft ist, freigegeben wurde.</li></ul> |
+   | [!UICONTROL **Standortkonto**] | Wählen Sie das Konto aus, in dem Sie den Standort erstellen möchten. Informationen zum Erstellen eines Kontos finden Sie unter [Konfigurieren von Cloud-Exportkonten](/help/components/exports/cloud-export-accounts.md). |
 
 1. Geben Sie im Abschnitt [!UICONTROL **Speicherorteigenschaften**] spezifische Informationen zum Kontotyp Ihres Speicherortkontos an.
 
