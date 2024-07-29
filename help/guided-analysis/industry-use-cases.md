@@ -6,15 +6,15 @@ keywords: Produktanalysen
 exl-id: 2e004894-dc1b-42a7-a060-240f0151b2f2
 role: User
 source-git-commit: 5752d3952987f8447cd12f953a57921044fa3c65
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1483'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
 # Anwendungsfälle für Branchen
 
-Auf dieser Seite finden Sie einige Beispiele aus der Branche, wie Kundenerlebnisteams - von Analysten über Produktteams bis hin zu Marketingexperten - mit einer geführten Analyse Erfolg erzielen können.
+Diese Seite enthält einige Beispiele aus der Branche dazu, was Kundenerlebnis-Teams (von Analystinnen und Analysten über Produkt-Teams bis hin zu Marketing-Fachleuten) mit einer geführten Analyse erreichen können.
 
 +++**Einzelhandel**
 

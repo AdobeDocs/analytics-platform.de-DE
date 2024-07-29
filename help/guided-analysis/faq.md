@@ -6,9 +6,9 @@ feature: Guided Analysis
 keywords: Produktanalysen
 role: User
 source-git-commit: df00d954de5db89f0ccc40f7eb2474523d9e774e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '435'
-ht-degree: 71%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ Häufig gestellte Fragen zur geführten Analyse.
 
 +++**Hat meine Organisation Zugriff auf die geführte Analyse?**
 
-Geführte Analyseansichten sind in allen Customer Journey Analytics-Packages enthalten. Weitere Informationen zu den Ansichten, die Ihr CJA-Paket entsperrt, finden Sie im Abschnitt [Bereitstellung](overview.md#provisioning) auf der Übersichtsseite .
+Geführte Analyseansichten sind in allen Customer Journey Analytics-Paketen enthalten. Weitere Informationen zu den Ansichten, die das CJA-Paket entsperrt, sind im Abschnitt [Bereitstellung](overview.md#provisioning) auf der Übersichtsseite zu finden.
 
 +++
 
@@ -26,7 +26,7 @@ Geführte Analyseansichten sind in allen Customer Journey Analytics-Packages ent
 
 Wenn Sie Customer Journey Analytics bereits heute verwenden, sind keine zusätzlichen Implementierungsänderungen erforderlich. Die geführte Analyse verwendet dieselben [Datenansichten](../data-views/data-views.md) und [Verbindungen](../connections/overview.md) wie andere CJA-Schnittstellen wie [Analysis Workspace](../analysis-workspace/home.md).
 
-Damit Ihre Endbenutzer mit der geführten Analyse am erfolgreichsten sind, wird empfohlen, in Adobe Experience Platform über ein starkes Ereignisschema und eine leistungsstarke Verwaltungsstrategie sowie in [Datenansichten](../data-views/data-views.md) zu verfügen.
+Damit die Endbenutzenden die geführte Analyse so erfolgreich wie möglich nutzen können, sollten Sie in Adobe Experience Platform und [Datenansichten](../data-views/data-views.md) über ein solides Ereignisschema und eine entsprechende Verwaltungsstrategie verfügen.
 
 +++
 
@@ -38,7 +38,7 @@ Damit Ihre Endbenutzer mit der geführten Analyse am erfolgreichsten sind, wird 
 
 +++
 
-+++**Wie unterscheidet sich die Terminologie zwischen der geführten Analyse und Analysis Workspace?**
++++**Worin unterscheidet sich die Terminologie der geführten Analyse von der Analysis Workspace-Terminologie?**
 
 Die geführte Analyse verwendet Begriffe, die häufiger von Produkt-Teams verwendet werden. Sie können diese Tabelle referenzieren, wenn Sie zwischen einer geführten Analyse und [Analysis Workspace](../analysis-workspace/home.md) wechseln.
 
@@ -54,7 +54,7 @@ Die geführte Analyse verwendet Begriffe, die häufiger von Produkt-Teams verwen
 
 +++
 
-+++**Was sind einige Unterschiede bei der Vorgehensweise bei der geführten Analyse und der Analysis Workspace-Berichterstattung?**
++++**Welche Unterschiede gibt es zwischen der Vorgehensweise bei der geführten Analyse und der Berichterstellung mit Analysis Workspace?**
 
 [Analysis Workspace](../analysis-workspace/home.md) und die geführte Analyse verwenden zwar dieselben zugrunde liegenden Daten, aber die Art und Weise, wie Sie mit jedem Tool Abfragen dieser Daten erstellen können, ist unterschiedlich.
 
@@ -70,8 +70,8 @@ Betrachten Sie das folgende Beispiel, in dem Sie sich auf Daten rund um die Star
 
   ![Dimensionzentriert](assets/dimension-centered.png){style="border:1px solid gray"}
 
-* Ein typischer ereignisorientierter und benutzerzentrierter Ansatz für die geführte Analyse wäre: &quot;Wie viele Benutzer haben die Homepage besucht?&quot;
+* Ein typischer ereignisorientierter und benutzerzentrierter Ansatz für die geführte Analyse wäre: „Wie viele Benutzende haben die Startseite besucht?“
 
-  ![Ereigniszentriert](assets/event-centered.png){style="border:1px solid gray"}
+  ![Ereignisorientert](assets/event-centered.png){style="border:1px solid gray"}
 
 +++

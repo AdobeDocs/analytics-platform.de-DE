@@ -6,9 +6,9 @@ exl-id: 1ac8157f-87e8-4d98-a2ca-f6beb68d9d6b
 feature: Guided Analysis
 role: User
 source-git-commit: 2addd3d17f62da69eb6636d987931fc21df07af5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1399'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -68,19 +68,19 @@ Die geführte Analyse verwendet die folgenden Elemente der Benutzeroberfläche:
 
 ## Bereitstellung
 
-Geführte Analyseansichten sind in Customer Journey Analytics-Packages wie folgt enthalten:
+Geführte Analyseansichten sind in Customer Journey Analytics-Paketen auf folgende Weise enthalten:
 
 | Paket | Verfügbare Ansichten |
 | --- | --- |
-| [!UICONTROL CJA-Add-ons] | Trends: Nutzung, Trends: Häufigkeit, Trichter: Friction, Trichter: Konversionstrends, Treue: Bindungsraten, Benutzerwachstum: Aktiv, Benutzerwachstum: Nettowachstum |
+| [!UICONTROL CJA-Add-ons] | Trends: Nutzung, Trends: Häufigkeit, Trichter: Reibung, Trichter: Konversions-Trends, Bindung: Bindungsraten, Benutzerwachstum: Aktiv, Benutzerwachstum: Nettowachstum |
 | [!UICONTROL CJA Foundation] | Trends: Nutzung |
-| [!UICONTROL CJA Select] | Foundation-Ansichten + Trends: Häufigkeit, Trichter: Funktion, Trichter: Konversionstrends, Treue: Treueraten, Benutzerwachstum: Aktiv, Benutzerwachstum: Nettowachstum |
-| [!UICONTROL CJA Prime] | Ansichten auswählen + Benutzerstream: Timeline, Funktionsmatrix: Interaktion, Auswirkung: Veröffentlichung, Auswirkung: Erste Verwendung |
-| [!UICONTROL CJA Ultimate] | Primäre Ansichten |
+| [!UICONTROL CJA Select] | Foundation-Ansichten + Trends: Häufigkeit, Trichter: Funktion, Trichter: Konversions-Trends, Bindung: Bindungsraten, Benutzerwachstum: Aktiv, Benutzerwachstum: Nettowachstum |
+| [!UICONTROL CJA Prime] | Ansichten auswählen + Benutzer-Stream: Timeline, Funktionsmatrix: Interaktion, Auswirkung: Veröffentlichung, Auswirkung: Erste Verwendung |
+| [!UICONTROL CJA Ultimate] | Prime-Ansichten |
 
 {style="table-layout:auto"}
 
-Produktprofiladministratoren können den Zugriff auf die geführte Analyse in der Adobe Admin Console hinzufügen oder entfernen.
+Produktprofiladmins können den Zugriff auf die geführte Analyse in der Adobe Admin Console hinzufügen oder entfernen.
 
 1. Melden Sie sich bei der [Adobe Admin Console](https://adminconsole.adobe.com) an.
 1. Wählen Sie in der Produktliste **[!UICONTROL Customer Journey Analytics]** aus.
