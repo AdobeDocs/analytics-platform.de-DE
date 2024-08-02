@@ -5,10 +5,10 @@ exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
 solution: Customer Journey Analytics
 feature: FAQ
 role: User
-source-git-commit: 80d5a864e063911b46ff248f2ea89c1ed0d14e32
+source-git-commit: 252ddfd3a321d94d14fbe2593b942ac36bf932a5
 workflow-type: tm+mt
-source-wordcount: '2536'
-ht-degree: 100%
+source-wordcount: '2547'
+ht-degree: 98%
 
 ---
 
@@ -65,7 +65,7 @@ Die Zuordnungsfunktion „wiederholt“ Daten basierend auf eindeutigen Kennunge
 
 +++**Wie funktioniert die Zuordnung historischer Daten (Aufstockung)?**
 
-Bei der erstmaligen Aktivierung stellt Adobe eine Aufstockung der zusammengefügten Daten bereit, die bis zum Beginn des Vormonats zurückreicht (bis zu 60 Tage). Um diese Aufstockung durchführen zu können, muss die vorübergehende ID in den nicht zusammengefügten Daten aus dem so weit zurückreichenden Zeitfenster vorhanden sein. [Weitere Informationen](../stitching/overview.md)
+Nach der ersten Aktivierung bietet Adobe eine Aufstockung der gehefteten Daten, die bis zu der von Ihnen ausgewählten Anzahl zurückgeht (bis zu 25 Monate, je nach dem Customer Journey Analytics-Package, für das Sie berechtigt sind). Um diese Aufstockung durchführen zu können, muss die vorübergehende ID in den nicht zusammengefügten Daten aus dem so weit zurückreichenden Zeitfenster vorhanden sein. [Weitere Informationen](../stitching/overview.md)
 
 +++
 
