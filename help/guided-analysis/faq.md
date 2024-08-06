@@ -6,9 +6,9 @@ feature: Guided Analysis
 keywords: Produktanalysen
 role: User
 source-git-commit: d6f26da108a2c840838ac71d9b98f45cd145ad3e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '439'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -40,7 +40,7 @@ Damit die Endbenutzenden die geführte Analyse so erfolgreich wie möglich nutze
 
 +++**Worin unterscheidet sich die Terminologie der geführten Analyse von der Analysis Workspace-Terminologie?**
 
-Geführte Analyse und [Analysis Workspace](../analysis-workspace/home.md) richten sich mit wenigen Unterschieden an der wichtigsten Terminologie aus.
+Die Hauptterminologie der geführten Analyse und von [Analysis Workspace](../analysis-workspace/home.md) ist zum großen Teil identisch und es gibt nur wenige kleine Unterschiede.
 
 | Begriff der geführten Analyse | Begriff von Analysis Workspace |
 | --- | --- |
