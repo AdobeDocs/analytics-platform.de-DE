@@ -3,16 +3,16 @@ title: Aktuelle Versionshinweise zu Customer Journey Analytics anzeigen
 description: Neueste Versionshinweise zu Customer Journey Analytics
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 4f228dbe58a9efbe988f274c071c61ec5e36d321
-workflow-type: ht
-source-wordcount: '776'
+source-git-commit: 466b4e22ba39197208a191a7298bf37a0b3e36c8
+workflow-type: tm+mt
+source-wordcount: '777'
 ht-degree: 100%
 
 ---
 
 # Aktuelle Versionshinweise zu Adobe Customer Journey Analytics (Juli 2024)
 
-**Letzte Aktualisierung**: 29. Juli 2024
+**Letzte Aktualisierung**: Donnerstag, 7. August 2024
 
 Diese Versionshinweise beziehen sich auf den Veröffentlichungszeitraum vom 17. Juli 2024 bis zum August 2024. Versionen von Adobe Customer Journey Analytics basieren auf einem [Modell der kontinuierlichen Bereitstellung](releases.md), das einen besser skalierbaren, schrittweisen Ansatz für die Implementierung von Funktionen ermöglicht. Dementsprechend werden diese Versionshinweise mehrmals im Monat aktualisiert. Bitte überprüfen Sie sie regelmäßig.
 
@@ -26,7 +26,7 @@ Diese Versionshinweise beziehen sich auf den Veröffentlichungszeitraum vom 17.�
 | **Abgeleitete Felder – Deduplizierungsfunktion** | Mit der Funktion [Deduplizieren](/help/data-views/derived-fields/derived-fields.md#deduplicate) in abgeleiteten Feldern können Sie verhindern, dass ein Wert mehrmals gezählt wird. |  | 17. Juli 2024 |
 | **Bereitstellung der geführten Analyse für CJA-Kundinnen und -Kunden** | Mit geführten Analysen können Benutzende hochwertige Daten und Erkenntnisse zur Customer Journey mithilfe geführter Workflows selbst bereitstellen, die auf den kanalübergreifenden Daten von Customer Journey Analytics basieren. <p>Funktionsübergreifende Teams, vom Marketing bis zum Produkt, können in Echtzeit eine Verbindung herstellen, um diese Berichte zu verwenden und zu verstehen.</p><p>In CJA-Paketen sind jetzt bis zu 11 geführte Analyseansichten verfügbar. [Weitere Informationen](https://experienceleague.adobe.com/de/docs/analytics-platform/using/guided-analysis/overview)</p> |  | 17. Juli 2024 |
 | **Freigeben von Konten und Speicherorten, die für den Export und Import verwendet werden** | Benutzende können nun die von ihnen erstellten Konten und Speicherorte allen Benutzenden in ihrer Organisation zur Verfügung stellen. Nur die Personen, denen Konten bzw. Speicherorte gehören, und System-Admins können Konten und Speicherorte bearbeiten und löschen. Zuvor konnten Konten und Speicherorte nur von der Person verwendet werden, die sie erstellt hat. Diese Einstellungen sind verfügbar, wenn Benutzende [Cloud-Exportkonten konfigurieren](https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-components/exports/cloud-export-accounts) und [Cloud-Exportspeicherorte konfigurieren](https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-components/exports/cloud-export-locations). | 12. Juni 2024 | 19. Juli 2024 |
-| **Veröffentlichung von Zielgruppen in einem neuen Abschnitt „Zielgruppen“ in Experience Platform** | Von Customer Journey Analytics veröffentlichte Zielgruppen sind jetzt im neuen Abschnitt „Zielgruppen“ in Adobe Experience Platform verfügbar.<p>Bislang waren über Customer Journey Analytics veröffentlichte Zielgruppen in Experience Platform im Abschnitt „Segmente“ verfügbar.</p><p>Diese Verbesserung bietet folgende Vorteile:</p><ul><li>Zielgruppen werden nicht mehr mit 1 Stunde Verzögerung in Experience Platform angezeigt. Sie stehen vielmehr Sekunden nach ihrer Veröffentlichung zur Verfügung.</li><li>Zielgruppen können in Experience Platform mithilfe der Spalte „Herkunft“ sortiert werden, in der die Anwendung angezeigt wird, von der aus die Zielgruppe ursprünglich veröffentlicht wurde.</li><li>Mit den Filter- und Sortieroptionen in Experience Platform können die relevanten Zielgruppen schneller gefunden werden.</li></ul> <p>(Link zur Dokumentation folgt)</p> |  | TBD |
+| **Veröffentlichung von Zielgruppen in einem neuen Abschnitt „Zielgruppen“ in Experience Platform** | Von Customer Journey Analytics veröffentlichte Zielgruppen sind jetzt im neuen Abschnitt „Zielgruppen“ in Adobe Experience Platform verfügbar.<p>Bislang waren über Customer Journey Analytics veröffentlichte Zielgruppen in Experience Platform im Abschnitt „Segmente“ verfügbar.</p><p>Diese Verbesserung bietet folgende Vorteile:</p><ul><li>Zielgruppen werden nicht mehr mit 1 Stunde Verzögerung in Experience Platform angezeigt. Sie stehen vielmehr Sekunden nach ihrer Veröffentlichung zur Verfügung.</li><li>Zielgruppen können in Experience Platform mithilfe der Spalte „Herkunft“ sortiert werden, in der die Anwendung angezeigt wird, von der aus die Zielgruppe ursprünglich veröffentlicht wurde.</li><li>Mit den Filter- und Sortieroptionen in Experience Platform können die relevanten Zielgruppen schneller gefunden werden.</li></ul> <p>(Link zur Dokumentation folgt)</p> | Donnerstag, 14. August 2024 | Freitag, 22. August 2024 |
 
 {style="table-layout:auto"}
 
