@@ -4,19 +4,19 @@ description: Ordnen Sie den Objekt-Arrays Dimensionen für die komplexe Persiste
 exl-id: 5e7c71e9-3f22-4aa1-a428-0bea45efb394
 feature: Use Cases
 role: User
-source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
+source-git-commit: 1590b7fbdedfacf4665d191220156c887f9c562a
 workflow-type: tm+mt
 source-wordcount: '1342'
-ht-degree: 83%
+ht-degree: 70%
 
 ---
 
 
-# Bindungsdimensionen und Metriken in Customer Journey Analytics verwenden
+# Verwenden von Bindungsdimensionen und Metriken
 
 Customer Journey Analytics bietet mehrere Möglichkeiten, Dimensionswerte über den Treffer hinaus beizubehalten, für den sie festgelegt wurden. Eine der Persistenzmethoden, die Adobe anbietet, wird als Bindung bezeichnet. In früheren Versionen von Adobe Analytics wurde dieses Konzept als Merchandising bezeichnet.
 
-Sie können Bindungsdimensionen zwar mit Ereignisdaten der obersten Ebene verwenden, dieses Konzept empfiehlt sich jedoch am meisten bei der Arbeit mit [Arrays von Objekten](/help/use-cases/object-arrays.md). Sie können eine Dimension einem Teil eines Objekt-Arrays zuordnen, ohne sie auf alle Attribute in einem bestimmten Ereignis anzuwenden. Sie können beispielsweise einen Suchbegriff einem Produkt in Ihrem Warenkorb-Objekt-Array zuordnen, ohne diesen Suchbegriff an das gesamte Ereignis zu binden.
+Sie können Bindungsdimensionen zwar mit Ereignisdaten der obersten Ebene verwenden, dieses Konzept empfiehlt sich jedoch am meisten bei der Arbeit mit [Arrays von Objekten](/help/use-cases/object-arrays.md). Sie können eine Dimension einem Teil eines Objekt-Arrays zuordnen, ohne die Dimension auf alle Attribute in einem bestimmten Ereignis anzuwenden. Sie können beispielsweise einen Suchbegriff einem Produkt in Ihrem Warenkorb-Objekt-Array zuordnen, ohne diesen Suchbegriff an das gesamte Ereignis zu binden.
 
 ## Beispiel 1: Bindungsdimensionen verwenden, um zusätzliche Produktattribute einem Kauf zuzuordnen
 
@@ -90,11 +90,11 @@ Wenn Sie dieses Persistenzmodell festlegen, nimmt Customer Journey Analytics den
 | weiß | 1.600 |
 | Neonorange | 499 |
 
-## Beispiel 2: Verwenden von Bindungsmetriken, um Suchbegriffe mit einem Produktkauf zu verknüpfen
+## Beispiel 2: Verwenden Sie Bindungsmetriken, um einen Suchbegriff mit einem Produktkauf zu verknüpfen
 
-Eine der gängigsten Merchandising-Methoden in Adobe Analytics besteht darin, einen Suchbegriff an ein Produkt zu binden, sodass jeder Suchbegriff für das entsprechende Produkt angerechnet wird. Betrachten Sie die folgende Customer Journey:
+Eine der gängigsten Merchandising-Methoden in Adobe Analytics besteht darin, einen Suchbegriff an ein Produkt zu binden, sodass jeder Suchbegriff für sein geeignetes Produkt angerechnet wird. Betrachten Sie die folgende Customer Journey:
 
-1. Ein Besucher gelangt zu Ihrer Website und sucht „Boxhandschuhe“. Die Suchmetrik wird um 1 inkrementiert und die drei wichtigsten Suchergebnisse werden angezeigt.
+1. Ein Besucher gelangt zu Ihrer Site und sucht nach `boxing gloves`. Die Suchmetrik wird um 1 inkrementiert und die drei wichtigsten Suchergebnisse werden angezeigt.
 
    ```json
    {
@@ -131,7 +131,7 @@ Eine der gängigsten Merchandising-Methoden in Adobe Analytics besteht darin, ei
    }
    ```
 
-3. Der Besucher sucht dann nach „Tennisschläger“. Die Suchmetrik wird um 1 inkrementiert und die drei wichtigsten Suchergebnisse werden angezeigt.
+3. Der Besucher sucht dann nach `tennis racket`. Die Suchmetrik wird um 1 inkrementiert und die drei wichtigsten Suchergebnisse werden angezeigt.
 
    ```json
    {
@@ -171,7 +171,7 @@ Eine der gängigsten Merchandising-Methoden in Adobe Analytics besteht darin, ei
    }
    ```
 
-5. Der Besucher sucht ein drittes Mal, dieses Mal „Schuhe“. Die Suchmetrik wird um 1 inkrementiert und die drei wichtigsten Suchergebnisse werden angezeigt.
+5. Der Besucher sucht ein drittes Mal nach `shoes`. Die Suchmetrik wird um 1 inkrementiert und die drei wichtigsten Suchergebnisse werden angezeigt.
 
    ```json
    {
@@ -250,7 +250,7 @@ Wenn Sie die Zuordnung &quot;[!UICONTROL Zuletzt verwendet]&quot;mit der Suchbeg
 | --- | --- |
 | Schuhe | $ 204.97 |
 
-Während dieses Beispiel nur eine Person umfasst, können viele Personen, die nach verschiedenen Elementen suchen, Suchbegriffe verschiedenen Produkten zuordnen, was es schwierig macht festzustellen, welche die besten Suchergebnisse tatsächlich sind.
+Während dieses Beispiel nur eine Person umfasst, können viele Personen, die nach verschiedenen Elementen suchen, Suchbegriffe unterschiedlichen Produkten zuordnen. Mehrere Personen suchen nach verschiedenen Elementen, was es schwierig macht, die besten Suchergebnisse zu bestimmen.
 
 Sie können jetzt [!DNL Search Term] an [!DNL Product Name] binden, sobald die Metrik [!DNL Searches] vorhanden ist, um den Suchbegriff korrekt dem Umsatz zuzuordnen.
 
@@ -268,11 +268,11 @@ Customer Journey Analytics erkennt automatisch die Beziehung zwischen der ausgew
 
 Wenn Sie die Suchbegriffdimension auf dieses Persistenzmodell festlegen, wird die folgende Logik ausgeführt:
 
-* Wenn die Suchbegriffdimension festgelegt ist, überprüfen Sie, ob der Produktname vorhanden ist.
-* Wenn der Produktname nicht vorhanden ist, führen Sie keine Aktionen aus.
+* Wenn die Suchbegriffdimension festgelegt ist, überprüfen Sie, ob ein Produktname vorhanden ist.
+* Wenn der Produktname nicht vorhanden ist, führen Sie nichts aus.
 * Wenn der Produktname vorhanden ist, überprüfen Sie, ob die Suchmetrik vorhanden ist.
 * Wenn die Suchmetrik nicht vorhanden ist, führen Sie keine Aktionen aus.
-* Wenn die Suchmetrik vorhanden ist, binden Sie den Suchbegriff an alle Produktnamen in diesem Ereignis. Er kopiert sich selbst auf die gleiche Ebene wie der Produktname für dieses Ereignis.  In diesem Beispiel ist er product.search_term.
+* Wenn die Suchmetrik vorhanden ist, binden Sie den Suchbegriff an alle Produktnamen in diesem Ereignis. Es kopiert sich selbst auf die gleiche Ebene wie der Produktname für dieses Ereignis. In diesem Beispiel wird sie als `product.search_term` behandelt.
 * Wenn derselbe Produktname in einem nachfolgenden Ereignis angezeigt wird, wird der gebundene Suchbegriff auch an dieses Ereignis weitergeleitet.
 
 ## Beispiel 3: Binden des Videosuchbegriffs an das Benutzerprofil
@@ -334,7 +334,7 @@ Sie können einen Suchbegriff an ein Benutzerprofil binden, damit die Persistenz
    }
    ```
 
-Wenn Sie die Zuordnung „Zuletzt gesehen“ mit „Gültigkeit der Person“ verwenden, wird der Suchbegriff `"grownup movie"` dem letzten Abspielen der Kindersendung zugeordnet.
+Wenn Sie die Zuordnung „Zuletzt gesehen“ mit „Gültigkeit der Person“ verwenden, wird der Suchbegriff `grownup movie` dem letzten Abspielen der Kindersendung zugeordnet.
 
 | Suchbegriff | Videostarts |
 | --- | --- |
@@ -345,7 +345,7 @@ Wenn Sie jedoch `search_term` an `ProfileID` binden, werden die Suchvorgänge je
 
 ![Besucherbindung](../assets/binding-profileid.png)
 
-Analysis Workspace ordnet die zweite Folge von Orangey korrekt dem Suchbegriff `"kids show"` zu, ohne die Suche anderer Profile zu berücksichtigen.
+Analysis Workspace ordnet die zweite Folge von Orangey dem Suchbegriff `kids show` zu, ohne Suchvorgänge aus anderen Profilen zu berücksichtigen.
 
 | Suchbegriff | Videostarts |
 | --- | --- |
@@ -356,7 +356,7 @@ Analysis Workspace ordnet die zweite Folge von Orangey korrekt dem Suchbegriff `
 
 Sie können Werte an Dimensionen binden, die für vorhergehende Ereignisse festgelegt wurden. Wenn Sie eine Variable mit einer Bindungsdimension festlegen, berücksichtigt Customer Journey Analytics den beibehaltenen Wert. Wenn dieses Verhalten unerwünscht ist, können Sie die Persistenzeinstellungen der Bindungsdimension anpassen. Betrachten Sie das folgende Beispiel, bei dem `product_finding_method` für ein Ereignis festgelegt und dann für das folgende Ereignis an die Metrik „Hinzufügen zum Warenkorb“ gebunden wird.
 
-1. Ein Besucher sucht nach `"camera"`. Beachten Sie, dass auf dieser Seite keine Produkte festgelegt sind.
+1. Ein Besucher sucht nach `camera`. Beachten Sie, dass auf dieser Seite keine Produkte festgelegt sind.
 
    ```json
    {
