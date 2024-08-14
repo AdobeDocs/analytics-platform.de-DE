@@ -4,7 +4,7 @@ description: Details und Informationen zur Verwendung und Konfiguration von Zusa
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: cba5904191b0602557903b5b9f32a2b793c8207d
+source-git-commit: 9517d698acf41a25fa972ced32faa75de540a080
 workflow-type: tm+mt
 source-wordcount: '1033'
 ht-degree: 4%
@@ -13,6 +13,8 @@ ht-degree: 4%
 
 
 # Zusammenfassungsdaten
+
+{{release-limited-testing}}
 
 Zusammenfassungsdaten sind Zeitreihendaten, die nicht an eine individuelle Personen-ID gebunden sind. Zusammenfassungsdaten stellen aggregierte Daten auf einer anderen Aggregationsebene dar, z. B. Kampagnen. Sie können diese Daten im Customer Journey Analytics verwenden, um verschiedene Anwendungsfälle zu unterstützen. Beispielsweise Daten, die ein Datum und einen einzelnen Metrikwert enthalten, oder Daten, die mehrere Dimensionen und Metriken enthalten.
 
