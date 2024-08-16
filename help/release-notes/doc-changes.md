@@ -4,10 +4,10 @@ description: Listet Inhaltsaktualisierungen für Dokumentation zu Customer Journ
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: cdab5d8b674527a1c3f950284daac65d0ab01900
+source-git-commit: 3568aad27001b322da77f5d1fb762db5ba6d433d
 workflow-type: tm+mt
-source-wordcount: '3940'
-ht-degree: 71%
+source-wordcount: '3990'
+ht-degree: 73%
 
 ---
 
@@ -19,8 +19,11 @@ Die folgenden Aktualisierungen wurden seit der ersten Erstellung der Customer Jo
 
 | Funktion | Beschreibung |
 | --- | --- |
+| August 2024 | |
+| Aktualisierte Anwendungsfälle für den Datenexport | Es wurden detailliertere Abfragebeispiele zu [Query Service (Data Distiller) und Export-Datensätzen](/help/use-cases/data-export/queryservice-export-datasets.md) hinzugefügt, um zu veranschaulichen, wie die Attribution sitzungsübergreifend mithilfe eines Lookback-Fensters ordnungsgemäß angewendet wird. |
+| Zusammenfassungsdaten | Es wurde eine Dokumentation zu den Einstellungen der Datengruppe [summary data](/help/data-views/summary-data.md), [summary data group component settings](/help/data-views/component-settings/summary-data-group.md) und einem Anwendungsfall für Zusammenfassungsdaten [ hinzugefügt.](/help/use-cases/data-views/summary-data.md) |
 | **Juli 2024** | |
-| Informationen zu schnell berechneten Metriken hinzugefügt | Die Informationen in [Metriken](/help/components/apply-create-metrics.md) wurden aktualisiert, um den Unterschied zwischen [berechneten Metriken, die im Generator für berechnete Metriken erstellt werden](/help/components/apply-create-metrics.md#create-calculated-metrics-for-all-projects) und [Metriken, die in einem einzelnen Projekt als schnell berechnete Metriken erstellt werden, zu klären.](/help/components/apply-create-metrics.md#create-calculated-metrics-for-a-single-project) Es wurden auch weitere Details hinzugefügt, wie Sie schnell berechnete Metriken erstellen können.<p>Berechnete Metriken, die im Generator für berechnete Metriken erstellt werden, stehen in der Komponentenliste zur Verfügung und können in der gesamten Organisation auf Projekte angewendet werden, während berechnete Metriken, die als schnell berechnete Metriken erstellt werden, nur in dem Projekt verfügbar sind, in dem sie erstellt wurden.</p><p>Außerdem wurden Informationen in [Metriken erstellen](/help/components/calc-metrics/cm-workflow/cm-build-metrics.md) aktualisiert, um ähnliche Klarstellungen vorzunehmen.</p> |
+| Informationen zu schnell berechneten Metriken hinzugefügt | Die Informationen in [Metriken](/help/components/apply-create-metrics.md) wurden aktualisiert, um den Unterschied zwischen [berechneten Metriken, die im Generator für berechnete Metriken erstellt werden](/help/components/apply-create-metrics.md#create-calculated-metrics-for-all-projects), und [Metriken, die in einem einzelnen Projekt als schnell berechnete Metriken erstellt werden](/help/components/apply-create-metrics.md#create-calculated-metrics-for-a-single-project), zu klären. Darüber hinaus wurden weitere Details zum Erstellen schnell berechneter Metriken hinzugefügt.<p>Berechnete Metriken, die im Generator für berechnete Metriken erstellt werden, stehen in der Komponentenliste zur Verfügung und können in der gesamten Organisation auf Projekte angewendet werden. Demgegenüber sind berechnete Metriken, die als schnell berechnete Metriken erstellt werden, nur in dem Projekt verfügbar, in dem sie erstellt wurden.</p><p>Außerdem wurden Informationen in [Erstellen von Metriken](/help/components/calc-metrics/cm-workflow/cm-build-metrics.md) aktualisiert, um ähnliche Klarstellungen vorzunehmen.</p> |
 | Funktion zum Deduplizieren abgeleiteter Felder | Eine Dokumentation zur abgeleiteten Funktion [deduplicate](/help/data-views/derived-fields/derived-fields.md#deduplicate) wurde hinzugefügt. |
 | Aktualisierte allgemeine Fehlermeldungen | Es wurden kleinere Aktualisierungen an den [allgemeinen Fehlermeldungen](/help/analysis-workspace/workspace-faq/error-messages.md) vorgenommen. |
 | **Juni 2024** | |
