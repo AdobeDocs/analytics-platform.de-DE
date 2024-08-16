@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Use Cases
 exl-id: e8ebf5e7-0b80-4d46-8a5f-b7ae832eda4f
 role: User
-source-git-commit: 20756b289912dfcc4e0539db4d1ae36d1496a266
+source-git-commit: 3f83b4c141324a7b255ac5af039fa1d7607f3b15
 workflow-type: tm+mt
-source-wordcount: '1205'
-ht-degree: 9%
+source-wordcount: '1223'
+ht-degree: 8%
 
 ---
 
@@ -58,16 +58,16 @@ Um eine ordnungsgemäße Einrichtung einer Verbindung sicherzustellen, die perso
 
    | Datensatz | Personen-ID | Schlüssel | Übereinstimmung mit Schlüssel<br/> (im Ereignis-Datensatz) |
    |---|---|---|---| 
-   | B2B-Aktivitätsdatensatz | `personKey.sourceKey` | | |
-   | B2B-Personendatensatz | `b2b.personKey.sourceKey` | | |
-   | B2B-Kontodatensatz | | `accountKey.sourceKey`❶<br/> Source-Schlüssel | `b2b.accountKey.sourceKey`❶<br/>(B2B-Personendatensatz) |
-   | B2B-Angebotsdatensatz | | `opportunityKey.sourceKey`❷<br/> Source-Schlüssel | `opportunityKey.sourceKey`❷<br/>(B2B Opportunity Relation DataSet) |
-   | B2B-Kampagnensatz | | `campaignKey.sourceKey`❸<br/> Source-Schlüssel | `campaignKey.sourceKey`❸<br/>(B2B-Datensatz der Kampagnenmitglieder) |
-   | Datensatz der B2B-Marketingliste | | `marketingListKey.sourceKey`❹<br/> Source-Schlüssel | `marketingListKey.sourceKey`❹<br/>(B2B Marketing List Member Datensatz) |
-   | Datensatz zur B2B-Konto-Personenbeziehung | | `personKey.sourceKey`❺<br/> Source-Schlüssel | `personKey.sourceKey`❺<br/>Source-Schlüssel (Ereignis-Datensätze) |
-   | Datensatz zu B2B-Chancen-Personenbeziehungen | | `personKey.sourceKey`❻<br/> Source-Schlüssel | `personKey.sourceKey`❻<br/>Source-Schlüssel (Ereignis-Datensätze) |
-   | B2B Campaign-Mitgliederdatensatz | | `personKey.sourceKey`❼<br/> Source-Schlüssel | `personKey.sourceKey`❼<br/>Source-Schlüssel (Ereignis-Datensätze) |
-   | B2B Marketing List Member Datensatz | | `personKey.sourceKey`❽<br/> Source-Schlüssel | `personKey.sourceKey`❽<br/>Source-Schlüssel (Ereignis-Datensätze) |
+   | B2B-Aktivitätsdatensatz | SourceKey <br/>**personKey.sourceKey** | | |
+   | B2B-Personendatensatz | SourceKey <br/>**b2b.personKey.sourceKey** | | |
+   | B2B-Kontodatensatz | | SourceKey <br/>**accountKey.sourceKey**❶ | SourceKey<br>(B2B Person Dataset)<br/>**b2b.accountKey.sourceKey**❶ |
+   | B2B-Angebotsdatensatz | | Source Key <br/>**OpportunityKey.sourceKey**❷ | SourceKey<br/>(B2B Opportunity Relation DataSet)<br/>**unityKey.sourceKey**❷ |
+   | B2B-Kampagnensatz | | SourceKey <br/>**campaignKey.sourceKey**❸ | SourceKey<br/>(B2B Campaign Member Datensatz)<br/>c **campaignKey.sourceKey**❸<br/> |
+   | Datensatz der B2B-Marketingliste | | SourceKey <br/>**marketingListKey.sourceKey**❹ | SourceKey<br/>(B2B Marketing List Member Datensatz)<br/>**marketingListKey.sourceKey**❹ |
+   | Datensatz zur B2B-Konto-Personenbeziehung | | SourceKey <br/>**personKey.sourceKey**❺ | Source Key<br/>(Event datasets)<br/>**personKey.sourceKey**❺ |
+   | Datensatz zu B2B-Chancen-Personenbeziehungen | | SourceKey <br/>**personKey.sourceKey** y ❻ | Source Key<br/>(Event datasets)<br/>**personKey.sourceKey**❻ |
+   | B2B Campaign-Mitgliederdatensatz | | SourceKey <br/>**personKey.sourceKey**❼ | Source Key<br/>(Event datasets)<br/>**personKey.sourceKey**❼ |
+   | B2B Marketing List Member Datensatz | | SourceKey <br/>**personKey.sourceKey**❽ | Source Key<br/>(Event datasets)<br/>**personKey.sourceKey**❽ |
 
 {style="table-layout:auto"}
 
