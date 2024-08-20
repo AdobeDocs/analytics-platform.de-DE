@@ -9,9 +9,9 @@ index: true
 user-guide-title: Handbuch zu Customer Journey Analytics
 user-guide-description: Hier erhalten Sie Informationen zu Adobe Customer Journey Analytics und Erläuterungen zur Nutzung von Analysis Workspace mit Daten aus Experience Platform.
 breadcrumb-title: Handbuch zu Customer Journey Analytics
-source-git-commit: 056c23c584823c7b3633d04585d15197692a2ee2
+source-git-commit: 190e8ad584cdb933b570467fc757b392627fc282
 workflow-type: tm+mt
-source-wordcount: '1102'
+source-wordcount: '1099'
 ht-degree: 98%
 
 ---
@@ -366,8 +366,6 @@ ht-degree: 98%
    + Kanalübergreifende Daten {#cross-channel}
       + [Kanalübergreifendes Analysieren von Daten](../use-cases/cross-channel/cross-channel.md)
       + [Importieren von Callcenter- und Web-Daten](../use-cases/cross-channel/call-center.md)
-   + Stitching {#stitching}
-      + [Freigegebene Geräte](/help/use-cases/stitching/shared-devices.md)
    + Adobe Analytics-Daten {#aa-data}
       + [Verwenden von Marketing-Kanal-Dimensionen](../use-cases/aa-data/marketing-channels.md)
       + [Kombinieren von Report Suites mit verschiedenen Schemata](../use-cases/aa-data/combine-report-suites.md)
