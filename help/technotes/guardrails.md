@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Administration
 role: Admin
 exl-id: f093ac54-7d31-449b-a441-a65856a1d535
-source-git-commit: a0124ee6c4534cbaf607367ee3ae79f1cbfc239c
+source-git-commit: a80b20eb2e0395445e8f2e7fd0e76e2eef40522a
 workflow-type: tm+mt
-source-wordcount: '1747'
+source-wordcount: '1760'
 ht-degree: 10%
 
 ---
@@ -77,7 +77,7 @@ Einige der Funktionen und der zugehörige Wert für die Beschränkung hängen vo
 | Häufigkeit der Zielgruppenaktualisierung | 4 | Systemdurchsetztes Schutzschild | Maximale Häufigkeit in Stunden, in der eine [Audience](../components/audiences/audiences-overview.md) aktualisiert werden kann. |
 | Lookback-Fenster für Zielgruppenaktualisierung | 90 | Systemdurchsetztes Schutzschild | Maximale Anzahl von Tagen für das Lookback-Fenster &quot;Aktualisieren&quot;. |
 | Aktualisieren des Zielgruppenablaufdatums | 13 | Systemdurchsetztes Schutzschild | Die maximale Anzahl von Monaten für die Audience wird ab dem Erstellungsdatum nicht mehr aktualisiert. Kunden können dies um weitere 13 Monate verlängern. |
-| Anzahl der aktualisierten Zielgruppen | 75.150 | Systemdurchsetztes Schutzschild | Maximale Anzahl aktualisierter Zielgruppen; der Wert variiert je nach Customer Journey Analytics-Package (siehe Produktbeschreibung). |
+| Anzahl der aktualisierten Zielgruppen | 75.150 | Systemdurchsetztes Schutzschild | Maximale Anzahl aktualisierter Zielgruppen. Der Wert variiert je nach Customer Journey Analytics-Package (siehe Produktbeschreibung). |
 
 {style="table-layout:auto"}
 
@@ -100,7 +100,7 @@ Siehe auch Experience Platform [Real-time Customer Data Platform Guardrails](htt
 |---|--:|---|---|
 | Projekte | 50.000 | Systemdurchsetztes Schutzschild | Maximale Anzahl der Projekte für eine Organisation. |
 | Datenansichten | 2.000 | Systemdurchsetztes Schutzschild | Maximale Anzahl von [Datenansichten](../data-views/data-views.md) für eine Organisation. |
-| Datenansichten | 50 | Systemdurchsetztes Schutzschild | Maximale Anzahl von Datenansichten für eine Verbindung |
+| Datenansichten | 500-1000 | Systemdurchsetztes Schutzschild | Maximale Anzahl der Datenansichten für eine Verbindung. Der Wert variiert je nach Customer Journey Analytics-Package (siehe Produktbeschreibung). |
 | Datensätze | 100 | Systemdurchsetztes Schutzschild | Maximale Anzahl von [Datensätzen](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html?lang=de) pro Verbindung. |
 | Verbindungen | 1000 | Systemdurchsetztes Schutzschild | Maximale Anzahl von [Verbindungen](../connections/overview.md) für eine Organisation. |
 | Verbindungstitel | 500 | Systemdurchsetztes Schutzschild | Maximale Zeichenanzahl für einen Verbindungstitel. |
@@ -155,9 +155,9 @@ Siehe auch Experience Platform [Limits für den Datensatzexport](https://experie
 
 | Name | Wert | Art von Limit | Beschreibung |
 |---|--:|---|---|
-| Zusammengefügte Datensätze | 5 - 50 | Systemdurchsetztes Schutzschild | Maximale Anzahl von zugeordneten Datensätzen pro Kunde; der Wert variiert je nach Customer Journey Analytics-Package (siehe Produktbeschreibung). |
-| Aufstockungsdauer | 6 - 25 | Systemdurchsetztes Schutzschild | Maximale Anzahl an Monaten für Aufstockungsdaten; der Wert variiert je nach Customer Journey Analytics-Package (siehe Produktbeschreibung). |
-| Lookback-Fenster/Wiederholungshäufigkeit | 1.01.2017 - 30.07 | Systemdurchsetztes Schutzschild | Maximales Lookback-Fenster in Tagen/Wiederholungshäufigkeit; der Wert variiert je nach Customer Journey Analytics-Package (siehe Produktbeschreibung). |
+| Zusammengefügte Datensätze | 5 - 50 | Systemdurchsetztes Schutzschild | Maximale Anzahl von zugeordneten Datensätzen pro Kunde. Der Wert variiert je nach Customer Journey Analytics-Package (siehe Produktbeschreibung). |
+| Aufstockungsdauer | 6 - 25 | Systemdurchsetztes Schutzschild | Maximale Anzahl der Monate von Aufstockungsdaten. Der Wert variiert je nach Customer Journey Analytics-Package (siehe Produktbeschreibung). |
+| Lookback-Fenster/Wiederholungshäufigkeit | 1.01.2017 - 30.07 | Systemdurchsetztes Schutzschild | Maximales Lookback-Fenster in Tagen/Wiederholungshäufigkeit. Der Wert variiert je nach Customer Journey Analytics-Package (siehe Produktbeschreibung). |
 
 {style="table-layout:auto"}
 
@@ -166,9 +166,9 @@ Siehe auch Experience Platform [Limits für den Datensatzexport](https://experie
 
 | Name | Wert | Art von Limit | Beschreibung |
 |---|--:|---|---|
-| Zusammengefügte Datensätze | 10-50 | Systemdurchsetztes Schutzschild | Maximale Anzahl von zugeordneten Datensätzen pro Kunde; der Wert variiert je nach Customer Journey Analytics-Package (siehe Produktbeschreibung). |
-| Aufstockungsdauer | 13-25 | Systemdurchsetztes Schutzschild | Maximale Anzahl an Monaten für Aufstockungsdaten; der Wert variiert je nach Customer Journey Analytics-Package (siehe Produktbeschreibung). |
-| Lookback-Fenster/Wiederholungshäufigkeit | 1.01.2017 - 30.07 | Systemdurchsetztes Schutzschild | Maximales Lookback-Fenster in Tagen/Wiederholungshäufigkeit; der Wert variiert je nach Customer Journey Analytics-Package (siehe Produktbeschreibung). |
+| Zusammengefügte Datensätze | 10-50 | Systemdurchsetztes Schutzschild | Maximale Anzahl von zugeordneten Datensätzen pro Kunde. Der Wert variiert je nach Customer Journey Analytics-Package (siehe Produktbeschreibung). |
+| Aufstockungsdauer | 13-25 | Systemdurchsetztes Schutzschild | Maximale Anzahl der Monate von Aufstockungsdaten. Der Wert variiert je nach Customer Journey Analytics-Package (siehe Produktbeschreibung). |
+| Lookback-Fenster/Wiederholungshäufigkeit | 1.01.2017 - 30.07 | Systemdurchsetztes Schutzschild | Maximales Lookback-Fenster in Tagen/Wiederholungshäufigkeit. Der Wert variiert je nach Customer Journey Analytics-Package (siehe Produktbeschreibung). |
 
 
 ## Filter und berechnete Metriken
@@ -215,7 +215,7 @@ Siehe auch Experience Platform [Limits für den Datensatzexport](https://experie
 
 | Name | Wert | Art von Limit | Beschreibung |
 |---|--:|---|---|
-| Zeilen pro Bericht | 3 Millionen - 300 Millionen | Systemdurchsetztes Schutzschild | Maximale Anzahl an Berichtszeilen pro Bericht. Der Wert variiert je nach Customer Journey Analytics-Package (siehe Produktbeschreibung). |
+| Zeilen pro Bericht | 3 Millionen - 300 Millionen | Systemdurchsetztes Schutzschild | Maximale Anzahl der Berichtszeilen pro Bericht. Der Wert variiert je nach Customer Journey Analytics-Package (siehe Produktbeschreibung). |
 | Aufschlüsselung nach Tabelle | 5 | Systemdurchsetztes Schutzschild | Maximale Anzahl an Aufschlüsselungen pro Tabelle. |
 | Metriken pro Tabelle | 5 | Systemdurchsetztes Schutzschild | Maximale Anzahl an Metriken pro Tabelle. |
 | Planfrequenz | 1 | Systemdurchsetztes Schutzschild | Die Exporte können einmal (1) täglich oder länger geplant werden (z. B. einmal alle 2 Tage oder wöchentlich). |
