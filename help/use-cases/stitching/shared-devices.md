@@ -6,9 +6,9 @@ feature: Stitching, Cross-Channel Analysis
 hide: true
 hide-from-toc: true
 role: Admin
-source-git-commit: 97fcb5f16962b85aa4f95bfbe2f16295d8bb3452
+source-git-commit: f17d2ebdf9a45ebb3a4e923a34c4b9b3d629f038
 workflow-type: tm+mt
-source-wordcount: '976'
+source-wordcount: '993'
 ht-degree: 7%
 
 ---
@@ -49,7 +49,7 @@ Durch die Zuordnung können freigegebene Gerätedaten entweder mithilfe der Attr
 
 #### Last-auth-Attribution
 
-Last-auth ordnet alle unbekannten Aktivitäten von einem gemeinsam genutzten Gerät dem Benutzer zu, der sich zuletzt authentifiziert hat. Letztauth wird in Audience Manager verwendet und ist der bevorzugte Ansatz für Anwendungsfälle des Echtzeit-Kundendatenprofils. Der Experience Platform Identity-Dienst erstellt das Diagramm basierend auf der Attribution der letzten Autoren und wird als solches beim grafikbasierten Stitching verwendet.
+Last-auth ordnet alle unbekannten Aktivitäten von einem gemeinsam genutzten Gerät dem Benutzer zu, der sich zuletzt authentifiziert hat. Letztauth wird in Audience Manager verwendet und ist der bevorzugte Ansatz für Anwendungsfälle des Echtzeit-Kundendatenprofils. Der Experience Platform Identity-Dienst erstellt das Diagramm basierend auf der Attribution der letzten Autoren und wird als solches beim grafikbasierten Stitching verwendet. Weitere Informationen finden Sie unter [Übersicht über die Regeln für die Verknüpfung von Identitätsdiagrammen](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-graph-linking-rules/overview) .
 
 Bei Verwendung der Attribution &quot;last-auth&quot;beim Stitching lösen zugeordnete IDs auf, wie in der folgenden Tabelle dargestellt.
 
@@ -65,7 +65,7 @@ Bei Verwendung der Attribution &quot;last-auth&quot;beim Stitching lösen zugeor
 
 #### Device-split
 
-Die Device-Split-Aktivität ordnet anonyme Aktivitäten von einem gemeinsam genutzten Gerät dem Benutzer in nächster Nähe zur anonymen Aktivität zu. Die Geräteaufteilung ist der bevorzugte Ansatz für analytische Anwendungsfälle, da die Geräteaufteilung der nächstbekannten Person sowohl nicht authentifizierte als auch authentifizierte Aktivitäten zuordnet. Die Device-Split wird derzeit beim feldbasierten Stitching verwendet.
+Die Device-Split-Aktivität ordnet anonyme Aktivitäten von einem gemeinsam genutzten Gerät dem Benutzer in nächster Nähe zur anonymen Aktivität zu. Die Device-Split wird derzeit beim feldbasierten Stitching verwendet. Die Geräteaufteilung ist der bevorzugte Ansatz für analytische Anwendungsfälle, da die Geräteaufteilung der nächstbekannten Person sowohl nicht authentifizierte als auch authentifizierte Aktivitäten zuordnet. Die Device-Split wird derzeit beim feldbasierten Stitching verwendet.
 
 Bei der Verwendung der Attribution der Geräteaufteilung bei der Zuordnung lösen zugeordnete IDs auf, wie in der folgenden Tabelle dargestellt.
 
