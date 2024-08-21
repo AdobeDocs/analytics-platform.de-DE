@@ -4,10 +4,10 @@ description: Binden Sie die von Adobe Journey Optimizer generierten Daten ein un
 exl-id: 9333ada2-b4d6-419e-9ee1-5c96f06a3bfd
 feature: Experience Platform Integration
 role: Admin
-source-git-commit: eda523204ec40a5660621cfd9e96ba77b61aa22c
+source-git-commit: 5434b8432608ba5ee49f7062070fa1624af1b46a
 workflow-type: tm+mt
-source-wordcount: '3036'
-ht-degree: 69%
+source-wordcount: '3028'
+ht-degree: 70%
 
 ---
 
@@ -106,7 +106,7 @@ In den folgenden Abschnitten wird beschrieben, wie Sie von Journey Optimizer gen
 
 Adobe Experience Platform dient als zentrale Datenquelle und Bindeglied zwischen Journey Optimizer und Customer Journey Analytics. Eine schrittweise Anleitung zum Senden von Journey Optimizer-Daten an Experience Platform als Datensatz finden Sie im Journey Optimizer-Benutzerhandbuch unter [Erste Schritte mit Datensätzen](https://experienceleague.adobe.com/de/docs/journey-optimizer/using/data-management/datasets/get-started-datasets).
 
-### Erstellen einer Verbindung in Customer Journey Analytics
+### Erstellen einer Verbindung
 
 Sobald sich Journey Optimizer-Daten in Adobe Experience Platform befinden, können Sie eine [Verbindung erstellen](/help/connections/create-connection.md), die auf Ihrem Journey Optimizer-Datensatz basiert. Sie können auch Journey Optimizer-Datensätze zu einer bestehenden Verbindung hinzufügen.
 
@@ -174,7 +174,7 @@ Sie können die folgenden Dimensionen in einer Datenansicht erstellen, um eine u
 
 {style="table-layout:auto"}
 
-#### Konfigurieren von Metriken in der Datenansicht
+#### Konfigurieren von Metriken
 
 Sie können die folgenden Metriken in einer Datenansicht erstellen, um eine ungefähre Übereinstimmung mit ähnlichen Metriken in Journey Optimizer zu erreichen. Siehe [Komponenteneinstellungen](/help/data-views/component-settings/overview.md) im Datenansichts-Manager für weitere Informationen zu den Anpassungsoptionen von Metriken.
 
@@ -185,7 +185,7 @@ Sie können die folgenden Metriken in einer Datenansicht erstellen, um eine unge
 | Bounces für ausgehende Kanäle (AJO) | Gesamtzahl der über ausgehende Kanäle hinweg nicht erfolgreich zugestellten Nachrichten | Ereignisdatensatz mit Feedback zu AJO-Nachrichten | `_experience.customerJourneyManagement.`<br/>`messageDeliveryfeedback.feedbackStatus` | Komponententyp: Metrik |
 | Klicks (AJO) | Gesamtanzahl an Klicks über alle Kanäle hinweg | AJO Push Tracking Experience Event Datensatz, Journey Step Events, AJO Email Tracking Experience Event Datensatz, AJO Message Feedback Event Datensatz | Abgeleitete Felder | Komponententyp: Metrik (abgeleitetes Feld) |
 | Anzahl der Fallback-Angebote (AJO) | Anzahl der Fallback-Angebote. | AJO Push Tracking Experience Event Datensatz, Journey Step Events, AJO Message Feedback Event Datensatz, AJO Email Tracking Experience Event Datensatz | `_experience.decisioning.propositions.items.`<br/>`itemSelection.selectionDetail.selectionType` | Komponententyp: Metrik |
-| Angebotsanzahl (AJO) | Anzahl der Angebote. | AJO Push Tracking Experience Event Datensatz, Journey Step Events, AJO Message Feedback Event Datensatz, AJO Email Tracking Experience Event Datensatz | ` _experience.decisioning.`<br/>`propositions.items.id` | Komponententyp: Metrik |
+| Anzahl der Angebote (AJO) | Anzahl der Angebote. | AJO Push Tracking Experience Event Datensatz, Journey Step Events, AJO Message Feedback Event Datensatz, AJO Email Tracking Experience Event Datensatz | ` _experience.decisioning.`<br/>`propositions.items.id` | Komponententyp: Metrik |
 | Deduplizierungsmetrik (AJO) | Deduplizierungsmetrik | AJO Push Tracking Experience Event Datensatz, Journey Step Events, AJO Message Feedback Event Datensatz, AJO Email Tracking Experience Event Datensatz | `_id` | Komponententyp: Metrik |
 | Zugestellt (AJO) | Gesamtzahl der zugestellten Nachrichten. | AJO Push Tracking Experience Event Datensatz, Journey Step Events, AJO Message Feedback Event Datensatz, AJO Email Tracking Experience Event Datensatz | Abgeleitete Felder | Komponententyp: Metrik (abgeleitetes Feld) |
 | Verworfen (AJO) | Zählt jedes Mal, wenn die In-App-Nachricht vom Adobe SDK geschlossen wird, unabhängig davon, welche Aktion die Endbenutzerin bzw. der Endbenutzer zum Schließen auswählt. | AJO Push Tracking Experience Event Datensatz, Journey Step Events, AJO Message Feedback Event Datensatz, AJO Email Tracking Experience Event Datensatz | `_experience.decisioning.`<br/>`propositionEventType.dismiss` | Komponententyp: Metrik |
