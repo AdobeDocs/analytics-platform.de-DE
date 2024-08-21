@@ -6,10 +6,10 @@ feature: Stitching, Cross-Channel Analysis
 hide: true
 hidefromtoc: true
 role: Admin
-source-git-commit: d94f6d6b592b2ddecfa0b1024b9ae045b3c3ce11
+source-git-commit: 63bdb36f7c33a129f294157a814f9fb15868006e
 workflow-type: tm+mt
-source-wordcount: '993'
-ht-degree: 7%
+source-wordcount: '950'
+ht-degree: 8%
 
 ---
 
@@ -102,7 +102,9 @@ Berücksichtigen Sie verschiedene Faktoren, um richtig zu verstehen, wie weit ve
 
 Um die Belichtung des gemeinsam genutzten Geräts zu verstehen, können Sie über die Durchführung der folgenden Abfragen nachdenken.
 
-1. Machen Sie sich mit der Anzahl der gemeinsam genutzten Geräte vertraut. Sie können eine Abfrage verwenden, die die Geräte-IDs zählt, denen mindestens zwei Personen-IDs mit der Geräte-ID verknüpft sind. Eine Beispielabfrage könnte wie folgt aussehen:
+1. **Identifizieren freigegebener Geräte**
+
+   Um die Anzahl der gemeinsam genutzten Geräte zu verstehen, führen Sie eine Abfrage durch, bei der die Geräte-IDs mit zwei oder mehr Personen-IDs gezählt werden. Dies hilft dabei, Geräte zu identifizieren, die von mehreren Personen verwendet werden.
 
    ```sql
    SELECT COUNT(*)
@@ -116,7 +118,9 @@ Um die Belichtung des gemeinsam genutzten Geräts zu verstehen, können Sie übe
    ```
 
 
-2. Bei den gemeinsam genutzten Geräten, die aus der ersten Abfrage resultieren, müssen Sie wissen, wie viele Ereignisse der gesamten Ereignisse diesen gemeinsam genutzten Geräten zugeordnet werden können. Diese Attribution gibt Ihnen ein besseres Verständnis der Auswirkungen freigegebener Geräte auf Ihre Daten und der Auswirkungen bei der Durchführung von Analysen. Eine Beispielabfrage könnte wie folgt aussehen:
+2. **Zuordnung von Ereignissen zu freigegebenen Geräten**
+
+   Legen Sie für die identifizierten freigegebenen Geräte fest, wie viele Ereignisse von der Gesamtzahl diesen Geräten zugeordnet werden können. Dies bietet Einblicke in die Auswirkungen freigegebener Geräte auf Ihre Daten und die Auswirkungen auf die Analyse.
 
    ```sql
    SELECT COUNT(*) AS total_events,
@@ -141,7 +145,9 @@ Um die Belichtung des gemeinsam genutzten Geräts zu verstehen, können Sie übe
    ON events.persistent_id = shared_persistent_ids.persistent_id; 
    ```
 
-3. Für die Ereignisse, die freigegebenen Geräten zugeordnet werden (Ergebnis der zweiten Abfrage), müssen Sie wissen, wie viele dieser Ereignisse KEINE Personen-ID aufweisen. Ansonsten wird angegeben, wie viele der freigegebenen Gerätetsereignisse anonyme Ereignisse sind. Letztlich wirkt sich der Algorithmus (last-auth, device-split, ECID-reset), den Sie zur Verbesserung Ihrer Datenqualität auswählen, auf diese anonymen gemeinsamen Gerätesereignisse aus. Eine Beispielabfrage könnte wie folgt aussehen:
+3. **Anonyme Ereignisse auf freigegebenen Geräten identifizieren**
+
+   Identifizieren Sie unter den Ereignissen, die freigegebenen Geräten zugeordnet sind, wie viele keine Personen-ID besitzen, und geben Sie anonyme Ereignisse an. Der von Ihnen gewählte Algorithmus (z. B. last-auth, device-split oder ECID-reset) zur Verbesserung der Datenqualität wirkt sich auf diese anonymen Ereignisse aus.
 
    ```sql
    SELECT COUNT(IF(shared_persistent_ids.persistent_id IS NOT NULL, 1, null)) shared_persistent_ids_events,
@@ -166,7 +172,9 @@ Um die Belichtung des gemeinsam genutzten Geräts zu verstehen, können Sie übe
    ON events.persistent_id = shared_persistent_ids.persistent_id; 
    ```
 
-4. Schließlich möchten Sie wissen, wie groß die Exposition ist, die jeder Kunde aufgrund einer Fehlklassifizierung von Ereignissen erleben würde. Um diese Belichtung zu erhalten, müssen Sie für jedes gemeinsam genutzte Gerät den Prozentsatz anonymer Ereignisse berechnen, der in Bezug auf die Gesamtzahl der Ereignisse steht. Eine Beispielabfrage könnte wie folgt aussehen:
+4. **Berechnung der Exposition aufgrund einer Fehlklassifizierung des Ereignisses**
+
+   Schließlich ist zu beurteilen, mit welchem Risiko jeder Kunde aufgrund einer Fehleinstufung von Ereignissen konfrontiert sein könnte. Berechnen Sie den Prozentsatz anonymer Ereignisse über die Gesamtereignisse für jedes gemeinsam genutzte Gerät. Dies hilft dabei, die potenziellen Auswirkungen auf die Genauigkeit von Kundendaten zu verstehen.
 
    ```sql
    SELECT COUNT(*) AS total_events,
