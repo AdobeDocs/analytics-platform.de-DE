@@ -6,10 +6,10 @@ feature: Stitching, Cross-Channel Analysis
 hide: true
 hidefromtoc: true
 role: Admin
-source-git-commit: 63bdb36f7c33a129f294157a814f9fb15868006e
+source-git-commit: c1ed707f63db87566331783ea24f33cc69721af9
 workflow-type: tm+mt
-source-wordcount: '950'
-ht-degree: 8%
+source-wordcount: '930'
+ht-degree: 6%
 
 ---
 
@@ -26,11 +26,11 @@ Wenn zwei Personen dasselbe Gerät verwenden und beide einen Kauf tätigen, kön
 
 | Zeitstempel | Seitenname | Geräte-ID | E-Mail |
 |---|---|---|---|
-| 12.05.2023 12:01 | Startseite | 1234 | |
-| 2023-05-12 12:02 | Produktseite | 1234 | |
-| 2023-05-12 12:03 | Auftragserfolg | 1234 | <ryan@a.com> |
-| 2023-05-12 12:07 | Produktseite | 1234 | |
-| 12.05.2023 12:08 | Auftragserfolg | 1234 | <cassidy@a.com> |
+| 12.05.2023 12:01 | Startseite | `1234` | |
+| 2023-05-12 12:02 | Produktseite | `1234` | |
+| 2023-05-12 12:03 | Auftragserfolg | `1234` | `ryan@a.com` |
+| 2023-05-12 12:07 | Produktseite | `1234` | |
+| 12.05.2023 12:08 | Auftragserfolg | `1234` | `cassidy@a.com` |
 
 Die Bestellerfolgs- (Kauf-)Ereignisse weisen die Daten der richtigen E-Mail zu. Wie sich diese Zuweisung auf Ihre Analyse auswirkt, hängt davon ab, wie Sie die Analyse durchführen:
 
@@ -56,12 +56,12 @@ Bei Verwendung der Attribution &quot;last-auth&quot;beim Stitching lösen zugeor
 
 | Zeitstempel | Seitenname | Geräte-ID | E-Mail | Angeheftete ID |
 |---|---|---|---|---|
-| 12.05.2023 12:01 | Startseite | 1234 | | <cassidy@a.com> |
-| 2023-05-12 12:02 | Produktseite | 1234 | | <cassidy@a.com> |
-| 2023-05-12 12:03 | Auftragserfolg | 1234 | <ryan@a.com> | <cassidy@a.com> |
-| 2023-05-12 12:07 | Produktseite | 1234 | | <cassidy@a.com> |
-| 12.05.2023 12:08 | Auftragserfolg | 1234 | <cassidy@a.com> | <cassidy@a.com> |
-| 13.05.2023 11:08 | Startseite | 1234 | | <cassidy@a.com> |
+| 12.05.2023 12:01 | Startseite | `1234` | | `cassidy@a.com` |
+| 2023-05-12 12:02 | Produktseite | `1234` | | `cassidy@a.com` |
+| 2023-05-12 12:03 | Auftragserfolg | `1234` | `ryan@a.com` | `cassidy@a.com` |
+| 2023-05-12 12:07 | Produktseite | `1234` | | `cassidy@a.com` |
+| 12.05.2023 12:08 | Auftragserfolg | `1234` | `cassidy@a.com` | `cassidy@a.com` |
+| 13.05.2023 11:08 | Startseite | `1234` | | `cassidy@a.com` |
 
 
 #### Device-split
@@ -72,12 +72,12 @@ Bei der Verwendung der Attribution der Geräteaufteilung bei der Zuordnung löse
 
 | Zeitstempel | Seitenname | Geräte-ID | E-Mail | Angeheftete ID |
 |---|---|---|---|---|
-| 12.05.2023 12:01 | Startseite | 1234 | | <ryan@a.com> |
-| 2023-05-12 12:02 | Produktseite | 1234 | | <ryan@a.com> |
-| 2023-05-12 12:03 | Auftragserfolg | 1234 | <ryan@a.com> | <ryan@a.com> |
-| 2023-05-12 12:07 | Produktseite | 1234 | | <ryan@a.com> |
-| 12.05.2023 12:08 | Auftragserfolg | 1234 | <cassidy@a.com> | <cassidy@a.com> |
-| 13.05.2023 11:08 | Startseite | 1234 | | <cassidy@a.com> |
+| 12.05.2023 12:01 | Startseite | `1234` | | `ryan@a.com` |
+| 2023-05-12 12:02 | Produktseite | `1234` | | `ryan@a.com` |
+| 2023-05-12 12:03 | Auftragserfolg | `1234` | `ryan@a.com` | `ryan@a.com` |
+| 2023-05-12 12:07 | Produktseite | `1234` | | `ryan@a.com` |
+| 12.05.2023 12:08 | Auftragserfolg | `1234` | `cassidy@a.com` | `cassidy@a.com` |
+| 13.05.2023 11:08 | Startseite | `1234` | | `cassidy@a.com` |
 
 
 ### ECID-Zurücksetzung
@@ -89,12 +89,12 @@ Bei Verwendung des ECID-Resets lösen zugeordnete IDs auf, wie in der folgenden 
 
 | Zeitstempel | Seitenname | Geräte-ID | E-Mail | Angeheftete ID |
 |---|---|---|---|---|
-| 12.05.2023 12:01 | Startseite | 1234 | | <ryan@a.com> |
-| 2023-05-12 12:02 | Produktseite | 1234 | | <ryan@a.com> |
-| 2023-05-12 12:03 | Auftragserfolg | 1234 | <ryan@a.com> | <ryan@a.com> |
-| 2023-05-12 12:07 | Produktseite | 5678 | | <cassidy@a.com> |
-| 12.05.2023 12:08 | Auftragserfolg | 5678 | <cassidy@a.com> | <cassidy@a.com> |
-| 13.05.2023 11:08 | Startseite | 5678 | | <cassidy@a.com> |
+| 12.05.2023 12:01 | Startseite | `1234` | | `ryan@a.com` |
+| 2023-05-12 12:02 | Produktseite | `1234` | | `ryan@a.com` |
+| 2023-05-12 12:03 | Auftragserfolg | `1234` | `ryan@a.com` | `ryan@a.com` |
+| 2023-05-12 12:07 | Produktseite | 5678 | | `cassidy@a.com` |
+| 12.05.2023 12:08 | Auftragserfolg | 5678 | `cassidy@a.com` | `cassidy@a.com` |
+| 13.05.2023 11:08 | Startseite | 5678 | | `cassidy@a.com` |
 
 ## Gemeinsame Geräteerkennung
 
