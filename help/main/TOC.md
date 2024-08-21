@@ -12,7 +12,7 @@ breadcrumb-title: Handbuch zu Customer Journey Analytics
 source-git-commit: d94f6d6b592b2ddecfa0b1024b9ae045b3c3ce11
 workflow-type: tm+mt
 source-wordcount: '1102'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -78,7 +78,7 @@ ht-degree: 98%
    + [B2B-Suchen](../connections/transform-datasets-b2b-lookups.md)
 
 + Datenansichten {#cja-dataviews}
-   + [Übersicht über die Datenansichten](../data-views/data-views.md)
+   + [Überblick über Datenansichten](../data-views/data-views.md)
    + [Erstellen oder Bearbeiten einer Datenansicht](../data-views/create-dataview.md)
    + [Sitzungseinstellungen](../data-views/session-settings.md)
    + Komponenteneinstellungen {#component-settings}
@@ -348,12 +348,12 @@ ht-degree: 98%
       + [Konfigurieren des Streaming-Vorgangs von Google Analytics-Daten in Platform](../use-cases/ga/streaming.md)
       + [Bericht zu Google Analytics-Daten in Customer Journey Analytics](../use-cases/ga/report.md)
    + Datenaufnahme {#data-ingestion}
-      + [Marketo Engage-Daten erfassen und verwenden](../use-cases/data-ingestion/marketo.md)
-      + [Experience Platform-Audiences erfassen und verwenden](../use-cases/data-ingestion/ingest-aep-segments.md)
+      + [Aufnehmen und Verwenden von Marketo Engage-Daten](../use-cases/data-ingestion/marketo.md)
+      + [Aufnehmen und Verwenden von Experience Platform-Zielgruppen](../use-cases/data-ingestion/ingest-aep-segments.md)
    + Datenansichten {#data-views}
       + [Anwendungsfälle von Datenansichten](../use-cases/data-views/data-views-usecases.md)
       + [Verwenden von Bindungsdimensionen und Metriken](../use-cases/data-views/binding-dimensions-metrics.md)
-      + [Zusammenfassungsdaten verwenden](../use-cases/data-views/summary-data.md)
+      + [Verwenden von Zusammenfassungsdaten](../use-cases/data-views/summary-data.md)
    + Datenexport {#data-export}
       + [Überblick](../use-cases/data-export/overview.md)
       + [BI-Erweiterung](../use-cases/data-export/bi-extension.md)
