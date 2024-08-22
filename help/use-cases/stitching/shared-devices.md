@@ -6,10 +6,10 @@ feature: Stitching, Cross-Channel Analysis
 hide: true
 hidefromtoc: true
 role: Admin
-source-git-commit: c1ed707f63db87566331783ea24f33cc69721af9
+source-git-commit: 1a5646700dba6362a35158890f2917fc472fbddd
 workflow-type: tm+mt
-source-wordcount: '930'
-ht-degree: 6%
+source-wordcount: '977'
+ht-degree: 5%
 
 ---
 
@@ -39,7 +39,7 @@ Die Bestellerfolgs- (Kauf-)Ereignisse weisen die Daten der richtigen E-Mail zu. 
 
 ## Verbessern der personenbezogenen Analyse
 
-Um die personenorientierte Analyse freigegebener Geräte zu verbessern, haben Sie zwei Möglichkeiten: Sie können die Zuordnung verwenden oder Sie können die Funktion zum Zurücksetzen der ECID implementieren. Beide Ansätze werden in den folgenden Abschnitten ausführlicher erläutert.
+Die Beispieldaten stellen eine Mischung aus authentifizierter und nicht authentifizierter Aktivität für dasselbe Gerät dar. Die Herausforderung besteht darin, eine Person dem nicht authentifizierten Traffic zuzuweisen, damit Sie eine personenorientierte Analyse durchführen und verhindern können, dass Customer Journey Analytics die Aktivitäten ablegt, für die kein Personen-ID-Wert vorliegt. Zur Lösung dieses Problems haben Sie zwei Möglichkeiten: Sie können das Stitching verwenden oder die Funktion zum Zurücksetzen von ECIDs implementieren. Beide Optionen werden in den folgenden Abschnitten ausführlicher erläutert.
 
 ### Stitching
 

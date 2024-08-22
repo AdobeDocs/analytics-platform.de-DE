@@ -4,10 +4,10 @@ title: Landingpage von Customer Journey Analytics
 role: User, Admin
 feature: Basics
 exl-id: 65c7bc26-7160-4bba-b764-5b0fa8686fca
-source-git-commit: c3d97fe2353011f4747d0c1742e49189cc91b85c
-workflow-type: ht
-source-wordcount: '1388'
-ht-degree: 100%
+source-git-commit: a9dd06a7b9d7c1ee6d5be5b944564e971cfe5192
+workflow-type: tm+mt
+source-wordcount: '1398'
+ht-degree: 99%
 
 ---
 
@@ -15,7 +15,11 @@ ht-degree: 100%
 
 Auf der Landingpage für Customer Journey Analytics finden Sie [!DNL Analysis Workspace] und eine Startseite für Projekt-Manager sowie einen Lernabschnitt, der Ihnen hilft, Customer-Journey-Daten besser zu verwalten.
 
++++ Eine Einführung in Customer Journey Analytics finden Sie im Video ...
+
 >[!VIDEO](https://video.tv.adobe.com/v/334278/?quality=12)
+
++++
 
 Die Customer Journey Analytics-Landingpage besteht aus den folgenden Unterregisterkarten: „Projekte“ und „Lernen“.
 
