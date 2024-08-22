@@ -4,7 +4,7 @@ description: Listet Inhaltsaktualisierungen für Dokumentation zu Customer Journ
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 20756b289912dfcc4e0539db4d1ae36d1496a266
+source-git-commit: bdf13331967a1b2e51ce9d1dab650fb3dba1606d
 workflow-type: tm+mt
 source-wordcount: '4026'
 ht-degree: 72%
@@ -19,7 +19,7 @@ Die folgenden Aktualisierungen wurden seit der ersten Erstellung der Customer Jo
 
 | Funktion | Beschreibung |
 | --- | --- |
-| August 2024 | |
+| **August 2024** | |
 | Beispiel für ein B2B-Projekt | Es wurde ein [Anwendungsfall](/help/use-cases/b2b/example.md) hinzugefügt, in dem beschrieben wird, wie B2B-Daten auf Profilebene (Person) eingerichtet, konfiguriert und in Berichten verwendet werden, wobei die neue [Transformation von Datensätzen für B2B-Suchen verwendet wird](/help/connections/transform-datasets-b2b-lookups.md). |
 | Aktualisierte Anwendungsfälle für den Datenexport | Es wurden detailliertere Abfragebeispiele zu [Query Service (Data Distiller) und Export-Datensätzen](/help/use-cases/data-export/queryservice-export-datasets.md) hinzugefügt, um zu veranschaulichen, wie die Attribution sitzungsübergreifend mithilfe eines Lookback-Fensters ordnungsgemäß angewendet wird. |
 | Zusammenfassungsdaten | Es wurde eine Dokumentation zu den Einstellungen der Datengruppe [summary data](/help/data-views/summary-data.md), [summary data group component settings](/help/data-views/component-settings/summary-data-group.md) und einem Anwendungsfall für Zusammenfassungsdaten [ hinzugefügt.](/help/use-cases/data-views/summary-data.md) |
