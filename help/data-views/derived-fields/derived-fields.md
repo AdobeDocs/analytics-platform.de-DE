@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Derived Fields
 exl-id: bcd172b2-cd13-421a-92c6-e8c53fa95936
 role: Admin
-source-git-commit: 0a046a89e1742d3470a78ebad4f93cb3b4ea7f4c
+source-git-commit: 1fddf0e8421b35021a1f1641a684cacbc0ec1f0d
 workflow-type: tm+mt
 source-wordcount: '8366'
 ht-degree: 12%
@@ -26,7 +26,7 @@ Anwendungsbeispiele sind:
 
 - Definieren Sie ein abgeleitetes Marketing-Kanal -Feld, das den korrekten Marketing-Kanal anhand einer oder mehrerer Bedingungen bestimmt (z. B. URL-Parameter, Seiten-URL, Seitenname).
 
-## Abgeleitete Feldoberfläche
+## Abgeleitete Feldoberfläche {#interface}
 
 Wenn Sie ein abgeleitetes Feld erstellen oder bearbeiten, verwenden Sie die abgeleitete Feldoberfläche.
 
@@ -42,7 +42,7 @@ Wenn Sie ein abgeleitetes Feld erstellen oder bearbeiten, verwenden Sie die abge
 
 {style="table-layout:auto"}
 
-## Assistent für Feldvorlagen
+## Assistent für Feldvorlagen {#wizard}
 
 Wenn Sie zum ersten Mal auf die abgeleitete Feldoberfläche zugreifen, wird der Assistent [!UICONTROL Mit einer Feldvorlage beginnen] angezeigt.
 
@@ -51,7 +51,7 @@ Wenn Sie zum ersten Mal auf die abgeleitete Feldoberfläche zugreifen, wird der 
 
 Ihr abgeleitetes Felddialogfeld enthält Regeln (und Funktionen), die für den von Ihnen ausgewählten Feldtyp erforderlich oder nützlich sind. Weitere Informationen zu den verfügbaren Vorlagen finden Sie unter [Funktionsvorlagen](#function-templates) .
 
-## Regelschnittstelle
+## Regelschnittstelle {#rules}
 
 Wenn Sie eine Regel im Regel-Builder definieren, verwenden Sie die Regel-Oberfläche.
 
@@ -66,7 +66,7 @@ Wenn Sie eine Regel im Regel-Builder definieren, verwenden Sie die Regel-Oberfl�
 
 {style="table-layout:auto"}
 
-## abgeleitetes Feld erstellen
+## abgeleitetes Feld erstellen {#create}
 
 1. Wählen Sie eine Datenansicht aus oder erstellen Sie eine Datenansicht. Weitere Informationen finden Sie unter [Datenansichten](../data-views.md) .
 
@@ -81,7 +81,7 @@ Wenn Sie eine Regel im Regel-Builder definieren, verwenden Sie die Regel-Oberfl�
 5. Ihr neues abgeleitetes Feld wird dem Container [!UICONTROL Abgeleitete Felder >] als Teil von **[!UICONTROL ** Schemafeldern **]** in der linken Leiste Ihrer Datenansicht hinzugefügt.
 
 
-## abgeleitetes Feld bearbeiten
+## abgeleitetes Feld bearbeiten {#edit}
 
 1. Wählen Sie eine Datenansicht aus. Weitere Informationen finden Sie unter [Datenansichten](../data-views.md) .
 
@@ -117,7 +117,7 @@ Wenn Sie ein abgeleitetes Feld als Komponente für Dimensionen oder Metriken in 
 
 
 
-## abgeleitetes Feld löschen
+## abgeleitetes Feld löschen {#delete}
 
 1. Wählen Sie eine Datenansicht aus. Weitere Informationen finden Sie unter [Datenansichten](../data-views.md) .
 
@@ -153,12 +153,12 @@ Wenn Sie ein abgeleitetes Feld als Komponente für Dimensionen oder Metriken in 
 
 
 
-## Funktionsvorlagen
+## Funktionsvorlagen {#templates}
 
 Um schnell ein abgeleitetes Feld für bestimmte Anwendungsfälle zu erstellen, sind Funktionsvorlagen verfügbar. Auf diese Funktionsvorlagen kann über den Auswahlbereich in der abgeleiteten Feldoberfläche zugegriffen werden oder sie werden bei der ersten Verwendung im Assistenten [!UICONTROL Mit einer Feldvorlage beginnen] angezeigt.
 
 
-### Marketing-Kanäle
+### Marketing-Kanäle {#mchannel}
 
 Diese Funktionsvorlage verwendet eine Kollektion von Regeln, um Marketingkanäle zu erstellen.
 
@@ -170,7 +170,7 @@ Um die Vorlage zu verwenden, müssen Sie die richtigen Parameter für jede Funkt
 
 +++
 
-### Bounces
+### Bounces {#bounces}
 
 Diese Funktionsvorlage verwendet eine Sammlung von Regeln, um Site-Absprünge zu identifizieren.
 
@@ -182,7 +182,7 @@ Um die Vorlage zu verwenden, müssen Sie die richtigen Parameter für jede Funkt
 
 +++
 
-### Mehrdimensionales Kombinieren
+### Mehrdimensionales Kombinieren {#multi-dim}
 
 Diese Funktionsvorlage kombiniert zwei Werte zu einem.
 
@@ -194,7 +194,7 @@ Um die Vorlage zu verwenden, müssen Sie die richtigen Parameter für jede Funkt
 
 +++
 
-### Anzeigename des Datensatzes
+### Anzeigename des Datensatzes {#friendlyname}
 
 Diese Funktionsvorlage enthält einen lesbaren Datensatznamen.
 
@@ -206,7 +206,7 @@ Um die Vorlage zu verwenden, müssen Sie die richtigen Parameter für jede Funkt
 
 +++
 
-### Seitenname aus URL
+### Seitenname aus URL {#pagename}
 
 Diese Funktionsvorlage erstellt einen einfachen Seitennamen.
 
@@ -218,7 +218,7 @@ Um die Vorlage zu verwenden, müssen Sie die richtigen Parameter für jede Funkt
 
 +++
 
-### Urlaubssaison
+### Urlaubssaison {#holiday}
 
 Diese Funktionsvorlage klassifiziert die Schlüsselzeiten des Jahres.
 
@@ -230,7 +230,7 @@ Um die Vorlage zu verwenden, müssen Sie die richtigen Parameter für jede Funkt
 
 +++
 
-### Monatliche Ziele
+### Monatliche Ziele {#goals}
 
 Diese Funktionsvorlage legt benutzerdefinierte Monatsziele fest.
 
@@ -242,7 +242,7 @@ Um die Vorlage zu verwenden, müssen Sie die richtigen Parameter für jede Funkt
 
 +++
 
-### Alle Werte in durch Trennzeichen getrennter Liste abrufen
+### Alle Werte in durch Trennzeichen getrennter Liste abrufen {#allvalues}
 
 Diese Funktionsvorlage konvertiert eine begrenzte Liste in ein Array.
 
@@ -254,7 +254,7 @@ Um die Vorlage zu verwenden, müssen Sie die richtigen Parameter für jede Funkt
 
 +++
 
-### Ersten Wert in durch Trennzeichen getrennter Liste abrufen
+### Ersten Wert in durch Trennzeichen getrennter Liste abrufen {#firstvalue}
 
 Diese Funktionsvorlage erhält den ersten Wert in einer durch Trennzeichen getrennten Liste.
 
@@ -266,7 +266,7 @@ Um die Vorlage zu verwenden, müssen Sie die richtigen Parameter für jede Funkt
 
 +++
 
-### Letzten Wert in durch Trennzeichen getrennter Liste abrufen
+### Letzten Wert in durch Trennzeichen getrennter Liste abrufen {#lastvalue}
 
 Diese Funktionsvorlage erhält den letzten Wert in einer durch Trennzeichen getrennten Liste.
 
@@ -278,7 +278,7 @@ Um die Vorlage zu verwenden, müssen Sie die richtigen Parameter für jede Funkt
 
 +++
 
-### Domänenname
+### Domänenname {#domain}
 
 Diese Funktionsvorlage extrahiert den Domänennamen mithilfe eines regulären Ausdrucks.
 
@@ -290,7 +290,7 @@ Um die Vorlage zu verwenden, müssen Sie die richtigen Parameter für jede Funkt
 
 +++
 
-### Abfragezeichenfolgenparameter abrufen
+### Abfragezeichenfolgenparameter abrufen {#querystring}
 
 Diese Funktionsvorlage extrahiert Abfragezeichenfolgenwerte.
 
@@ -302,7 +302,7 @@ Um die Vorlage zu verwenden, müssen Sie die richtigen Parameter für jede Funkt
 
 +++
 
-### Übergangsfeld
+### Übergangsfeld {#transition}
 
 Diese Funktionsvorlage überträgt die Berichterstellung von einem Feld in ein anderes.
 
@@ -314,7 +314,7 @@ Um die Vorlage zu verwenden, müssen Sie die richtigen Parameter für jede Funkt
 
 +++
 
-### Einfache Bot-Erkennung
+### Einfache Bot-Erkennung {#botdetection}
 
 Diese Funktionsvorlage implementiert die leichte Bot-Identifizierung.
 
@@ -326,7 +326,7 @@ Um die Vorlage zu verwenden, müssen Sie die richtigen Parameter für jede Funkt
 
 +++
 
-### Exitlink
+### Exitlink {#exit}
 
 Diese Funktionsvorlage identifiziert den letzten Link, der in einer Sitzung angeklickt wurde.
 
@@ -338,7 +338,7 @@ Um die Vorlage zu verwenden, müssen Sie die richtigen Parameter für jede Funkt
 
 +++
 
-### Downloadlink
+### Downloadlink {#download}
 
 Diese Funktionsvorlage markiert allgemeine Downloadlinks.
 
@@ -361,7 +361,7 @@ Um die Vorlage zu verwenden, müssen Sie die richtigen Parameter für jede Funkt
 
 -->
 
-## Funktionsreferenz
+## Funktionsreferenz {#functionref}
 
 {{select-package}}
 
@@ -384,7 +384,7 @@ Für jede unterstützte Funktion finden Sie im Folgenden Details zu:
 
 <!-- CASE WHEN -->
 
-### Fall wenn
+### Fall wenn {#casewhen}
 
 Wendet Bedingungen an, die auf definierten Kriterien aus einem oder mehreren Feldern basieren. Diese Kriterien werden dann verwendet, um die Werte in einem neuen abgeleiteten Feld basierend auf der Reihenfolge der Bedingungen zu definieren.
 
@@ -614,7 +614,7 @@ Die folgenden Einschränkungen gelten und werden erzwungen, wenn *die Werte* und
 
 <!-- CLASSIFY -->
 
-### Klassifizieren
+### Klassifizieren {#classify}
 
 Definiert einen Satz von Werten, die in einem neuen abgeleiteten Feld durch entsprechende Werte ersetzt werden.
 
@@ -749,7 +749,7 @@ Die folgenden zusätzlichen Funktionen sind in der Benutzeroberfläche der Regel
 
 <!-- CONCATENATE -->
 
-### Verketten
+### Verketten {#concatenate}
 
 Verbindet Feldwerte in einem neuen abgeleiteten Feld mit definierten Trennzeichen.
 
@@ -826,7 +826,7 @@ Sie definieren ein abgeleitetes `Origin - Destination` -Feld. Verwenden Sie die 
 +++
 
 
-### Deduplizieren
+### Deduplizieren {#dedup}
 
 Verhindert die mehrfache Zählung eines Werts.
 
@@ -911,7 +911,7 @@ Sie definieren ein neues abgeleitetes `Tracking Code (deduplicated)` -Feld. Mit 
 
 <!-- FIND AND REPLACE -->
 
-### Suchen und ersetzen
+### Suchen und ersetzen {#find-replace}
 
 Sucht alle Werte in einem ausgewählten Feld und ersetzt diese Werte durch einen anderen Wert in einem neuen abgeleiteten Feld.
 
@@ -981,7 +981,7 @@ Sie definieren ein abgeleitetes `Email Marketing (updated)` -Feld. Sie verwenden
 
 <!-- LOOKUP -->
 
-### Suche
+### Suche {#lookup}
 
 Sucht Werte mithilfe eines Felds aus einem Lookup-Datensatz und gibt einen Wert in einem neuen abgeleiteten Feld oder zur weiteren Regelverarbeitung zurück.
 
@@ -1032,7 +1032,7 @@ Sie können schnell eine [!UICONTROL Suchfunktion] in den Regel-Builder einfüge
 
 <!-- LOWERCASE -->
 
-### Kleinschreibung
+### Kleinschreibung {#lowercase}
 
 Konvertiert Werte aus einem Feld in Kleinbuchstaben und speichert sie in ein neues abgeleitetes Feld.
 
@@ -1083,7 +1083,7 @@ Sie definieren ein abgeleitetes `Product Names` -Feld. Mit der Funktion [!UICONT
 
 <!-- MATH -->
 
-### Math
+### Math {#math}
 
 Verwenden Sie grundlegende mathematische Operatoren (hinzufügen, subtrahieren, multiplizieren, teilen und erhöhen Sie die Leistung) für numerische Felder.
 
@@ -1164,7 +1164,7 @@ Verwenden Sie die Math-Funktion für trefferbasierte Berechnungen. Verwenden Sie
 
 <!-- MERGE FIELDS -->
 
-### Felder zusammenführen
+### Felder zusammenführen {#merge}
 
 Führt Werte aus zwei verschiedenen Feldern zu einem neuen abgeleiteten Feld zusammen.
 
@@ -1230,7 +1230,7 @@ Sie müssen denselben Feldtyp in einer Regel zum Zusammenführen von Feldern aus
 
 <!-- NEXT OR PREVIOUS -->
 
-### Weiter oder zurück
+### Weiter oder zurück {#next-previous}
 
 Nimmt ein Feld als Eingabe und löst den nächsten oder vorherigen Wert für dieses Feld im Rahmen der Sitzung oder Verwendung auf. Dies gilt nur für die Tabellenfelder Besuch und Ereignis .
 
@@ -1302,7 +1302,7 @@ Sie können nur Felder auswählen, die zur Tabelle &quot;Besuch&quot;oder &quot;
 
 <!-- REGEX REPLACE -->
 
-### Regulären Ausdruck ersetzen
+### Regulären Ausdruck ersetzen {#regex-replace}
 
 Ersetzt einen Wert aus einem Feld mithilfe eines regulären Ausdrucks in ein neues abgeleitetes Feld.
 
@@ -1399,7 +1399,7 @@ Sie können diese Sequenzen im [!UICONTROL Ausgabeformat] beliebig oft und in be
 
 <!-- SPLIT -->
 
-### Split
+### Split {#split}
 
 Teilt einen Wert aus einem Feld in ein neues abgeleitetes Feld.
 
@@ -1491,7 +1491,7 @@ Sie erstellen ein abgeleitetes Feld vom Typ `Second Response` , um den letzten W
 
 <!-- SUMMARIZE -->
 
-### Zusammenfassen
+### Zusammenfassen {#summarize}
 
 Wendet Aggregatfunktionen auf Metriken oder Dimensionen auf Ereignis-, Sitzungs- und Benutzerebene an.
 
