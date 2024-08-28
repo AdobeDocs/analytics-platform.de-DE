@@ -5,10 +5,10 @@ title: Visualisierungsübersicht
 feature: Visualizations
 exl-id: ca9e0561-7a54-487a-9fdc-3bcf34f9bdb1
 role: User
-source-git-commit: c22f2d81eddbf9ee2fb3600fd5b727fb838de740
+source-git-commit: d903745e105edb11ef6f43b6137e1e03d43e5e07
 workflow-type: tm+mt
-source-wordcount: '1326'
-ht-degree: 80%
+source-wordcount: '1344'
+ht-degree: 78%
 
 ---
 
@@ -27,7 +27,7 @@ Die folgenden Visualisierungstypen sind in Analysis Workspace verfügbar:
 | [Lineardiagramm](/help/analysis-workspace/visualizations/bullet-graph.md) <p>![Symbol &quot;Aufzählungszeichen&quot;](assets/Smock_GraphBullet_18_N.svg)</p> | Zeigt, wie ein Wert, der Sie interessiert, im Vergleich zu anderen Leistungsbereichen (Zielen) liegt oder ausfällt. |
 | [Kohortentabelle](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md)<p>![Symbol &quot;Kohortentabelle&quot;](assets/Smock_TextNumbered_18_N.svg)</p> | Eine *`cohort`* ist eine Personengruppe mit gemeinsamen Merkmalen innerhalb eines vorgegebenen Zeitraums. Die Kohortenanalyse ist nützlich für die Analyse von Verweildauer, Abwanderung oder Latenzzeiten. |
 | [Ringdiagramm](/help/analysis-workspace/visualizations/donut.md) <p>![Symbol &quot;Ringdiagramm&quot;](assets/Smock_GraphDonut_18_N.svg)</p> | Ähnlich einem Tortendiagramm zeigt diese Visualisierung die Daten als Teile oder Filter eines Ganzen. |
-| [Fallout](/help/analysis-workspace/visualizations/fallout/fallout-flow.md)<p>![Fallout-Symbol](assets/Smock_ConversionFunnel_18_N.svg)</p> | Fallout-Berichte zeigen an, wo Personen eine vordefinierte Seitensequenz verlassen (ausgefallen) und weitergemacht (durchgefallen) haben. Kann auf mögliche oder exakte Sequenzen eingestellt werden |
+| [Fallout](/help/analysis-workspace/visualizations/fallout/fallout-flow.md)<p>![Fallout-Symbol](assets/Smock_ConversionFunnel_18_N.svg)</p> | <!-- Similar to Journey canvas, -->Fallout-Visualisierungen zeigen, wo Personen eine vordefinierte Seitensequenz verlassen (ausgefallen) und durchlaufen (durchgefallen) haben. Fallout-Visualisierungen können auf endgültige oder exakte Sequenzen festgelegt werden. <p><!-- Unlike Journey canvas, -->Fallout-Visualisierungen bieten nur Analysen für lineare Journey mit nur einem bekannten Anfang und Ende.</p> |
 | [Fluss](/help/analysis-workspace/visualizations/c-flow/flow.md)<p>![Flusssymbol](assets/flow-icon.png)</p> | Zeigt Kundenpfade durch Ihre Websites und Programme. |
 | [Freiformtabelle](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)<p>![Freiformtabellensymbol](assets/Smock_ViewTable_18_N.svg)</p> | Eine Freiformtabelle ist nicht nur eine Datentabelle, sondern auch eine interaktive Visualisierung. Es bildet die Grundlage für die Analyse von Daten in Workspace. |
 | [Histogramm](/help/analysis-workspace/visualizations/histogram.md)<p>![Histogrammsymbol](assets/Smock_GraphHistogram_18_N.svg)</p> | Ein Histogramm fasst Personen, Besuche oder Ereignisse basierend auf einem Metrikvolumen in Behälter zusammen. |
@@ -39,6 +39,8 @@ Die folgenden Visualisierungstypen sind in Analysis Workspace verfügbar:
 | [Text](/help/analysis-workspace/visualizations/text.md)<p>![Streudiagramm-Symbol](assets/Smock_Text_18_N.svg)</p> | Sie können benutzerdefinierten Text zu Ihrem Workspace hinzufügen. Hilfreich zum Hinzufügen zusätzlicher Kontexte zu Ihrer Analyse und zu Einblicken, zusätzlich zum Nutzen der Beschreibungen im Bedienfeld oder in Visualisierungen |
 | [Treemap](/help/analysis-workspace/visualizations/treemap.md)<p>![Treemap-Symbol](assets/Smock_GraphTree_18_N.svg)</p> | Zeigt hierarchische Daten (Baumstruktur) als Gruppe verschachtelter Rechtecke an. |
 | [Venn](/help/analysis-workspace/visualizations/venn.md)<p>![Venn-Symbol](assets/venn-icon.png)</p> | Verwendet Kreise zur Darstellung der Metriküberschneidung von bis zu drei Filtern. |
+
+<!-- Add beneath Horizontal bar in the table above: | [Journey canvas](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md) | Similar to Fallout, Journey canvas shows where persons left (fell out) and continued through (fell through) a predefined sequence of pages. <p>Unlike Fallout, Journey canvas supports not only linear journeys, but any number of entry points and paths. Furthermore, journeys can be created in Adobe Journey Optimizer and then analyzed in Journey canvas.</p> | -->
 
 ## Visualisierungen zu einem Bedienfeld hinzufügen
 
