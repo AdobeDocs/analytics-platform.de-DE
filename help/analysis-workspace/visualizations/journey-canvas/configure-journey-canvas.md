@@ -5,9 +5,9 @@ feature: Visualizations
 role: User
 hide: true
 hidefromtoc: true
-source-git-commit: e06793a0ce73fa8d6aa9b798209bfc044e696931
+source-git-commit: 777c37dbd8bc678021ced5f1697058dc7812f5a8
 workflow-type: tm+mt
-source-wordcount: '4087'
+source-wordcount: '4138'
 ht-degree: 1%
 
 ---
@@ -220,6 +220,12 @@ Die Logik, die beim Kombinieren auf Knoten angewendet wird, hängt davon ab, wel
 ### Verbinden von Knoten
 
 Sie können Knoten verbinden, die sich bereits auf der Arbeitsfläche befinden, oder Sie können einen Knoten verbinden, wenn Sie ihn zur Arbeitsfläche hinzufügen.
+
+#### Logik beim Verbinden von Knoten
+
+Wenn Sie Knoten in der Journey-Arbeitsfläche verbinden, werden diese über den THEN-Operator verbunden. Dies wird auch als [sequenzielle Filterung](/help/components/filters/seg-sequential-build.md) bezeichnet.
+
+Sie können die Logik der verbundenen Knoten anzeigen, indem Sie mit der rechten Maustaste auf den Knoten klicken und dann [!UICONTROL **Filter von Knoten erstellen**] auswählen. Die Logik wird im Abschnitt [!UICONTROL **Definition**] angezeigt.
 
 #### Vorhandene Knoten verbinden
 

@@ -5,10 +5,10 @@ feature: Visualizations
 role: User
 hide: true
 hidefromtoc: true
-source-git-commit: fb2a24d6f7a93e941a76db0d10c515381c476c31
+source-git-commit: 777c37dbd8bc678021ced5f1697058dc7812f5a8
 workflow-type: tm+mt
-source-wordcount: '1215'
-ht-degree: 3%
+source-wordcount: '1193'
+ht-degree: 2%
 
 ---
 
@@ -94,16 +94,25 @@ Journey-Arbeitsfläche bietet eine tiefgründige Analyse, die in Journey Optimiz
 
 Die Verwendung der Journey-Arbeitsfläche zur Analyse von Journey, die in Journey Optimizer erstellt wurden, bietet verschiedene Vorteile:
 
-| Funktion | Vorteil |
-|---------|----------|
-| **Ereignisse erstellen** | Einfaches Erstellen von Ereignissen mithilfe von Customer Journey Analytics-Dimensionen, Metriken oder Filtern. <p>In Journey Optimizer muss ein technischer Anwender ein Ereignis erstellen, bevor es zu einer Journey hinzugefügt werden kann.</p> |
-| **Erstellen von Zielgruppen aus benutzerdefinierten Knoten** | Erstellen Sie Zielgruppen basierend auf einem benutzerdefinierten Knoten, den Sie in der Journey in der Visualisierung der Journey-Arbeitsfläche erstellen. (Startet den Customer Journey Analytics Audience Builder.) <p>In Journey Optimizer können Sie Zielgruppen nur für vordefinierte Aktivitäten erstellen.</p> |
-| **Fallthrough und Fallout** | B3 |
-| **Aufschlüsseln von Ereignissen** | B3 |
-| **Ereignisse umbenennen** | B3 |
-| **Löschereignisse** | B3 |
-| **Ereignisse kombinieren** | B3 |
-| **Ereignisse verbinden** | B3 |
+* Erstellen Sie Customer Journey Analytics-Ereignisse mit beliebigen Dimensionen, Metriken, Filtern oder Datumsbereichen.
+
+  In Journey Optimizer muss ein technischer Anwender ein Ereignis erstellen, bevor es zu einer Journey hinzugefügt werden kann.
+
+* Erstellen Sie Zielgruppen basierend auf einem benutzerdefinierten Knoten, den Sie erstellen (startet den Customer Journey Analytics-Audience-Builder).
+
+  In Journey Optimizer können Sie Zielgruppen nur für vordefinierte Aktivitäten erstellen.
+
+* Fallthrough und Fallout analysieren
+
+* Aufschlüsseln von Ereignissen mit einer beliebigen Dimension
+
+* Ereignisse kombinieren
+
+* Ereignisse verbinden
+
+* Ereignisse umbenennen und löschen
+
+* Mehr
 
 ### Synchronisation zwischen Journey Optimizer und Journey-Arbeitsfläche
 
@@ -144,8 +153,6 @@ Bestimmte Begriffe, die eine Sache in Journey Optimizer bedeuten, bedeuten etwas
 | Begriff | Journey-Arbeitsfläche | Journey Optimizer |
 |---------|----------|---------|
 | **Ereignis** | Eine von mehreren Standardmetriken, die in Customer Journey Analytics verfügbar sind. Diese Metrik zählt Dinge wie Umsatz, Abonnements oder generierte Leads. | Die Aktivitätskategorie, die eine personalisierte Journey Trigger, z. B. einen Online-Kauf. |
-| A2 | B2 | C2 |
-| A3 | B3 | C3 |
 
 ### Analysieren einer Journey Optimizer-Journey in der Journey-Arbeitsfläche
 
