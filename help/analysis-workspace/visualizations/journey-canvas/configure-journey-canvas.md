@@ -5,14 +5,17 @@ feature: Visualizations
 role: User
 hide: true
 hidefromtoc: true
-source-git-commit: 777c37dbd8bc678021ced5f1697058dc7812f5a8
+exl-id: 53984934-6fba-4f15-aeeb-d91039260553
+source-git-commit: 707bfbf6d34d999bc1b275b24cd6a78b8ef65e74
 workflow-type: tm+mt
-source-wordcount: '4138'
+source-wordcount: '4276'
 ht-degree: 1%
 
 ---
 
 # Journey-Arbeitsflächenvisualisierung konfigurieren
+
+{{release-limited-testing}}
 
 Mit der Journey-Arbeitsflächenvisualisierung können Sie tief greifende Einblicke in die Journey erhalten, die Sie Ihren Benutzern und Kunden zur Verfügung stellen.
 
@@ -78,9 +81,9 @@ Sie müssen [mit der Erstellung einer Journey-Arbeitsflächenvisualisierung begi
    | Einstellung | Funktion |
    |---------|----------|
    | [!UICONTROL **Knotentyp**] | Ermöglicht die Konfiguration der in der Visualisierung angezeigten Knotentypen. Um einen Knotentyp aus der Visualisierung auszublenden, wählen Sie (x) neben dem Knotentyp aus oder deaktivieren Sie ihn im Dropdown-Menü. Um einen ausgeblendeten Knotentyp anzuzeigen, wählen Sie ihn aus dem Dropdownmenü aus. <p>Je nach Inhalt Ihrer Visualisierung sind folgende Knotentypen möglich:</p><ul><li>[!UICONTROL **Segment lesen**]</li><li>[!UICONTROL **Ende**]</li><li>[!UICONTROL **Dimension**]</li><li>[!UICONTROL **Metrik**]</li></ul><p>**Hinweis**: Beachten Sie bei Verwendung dieses Felds Folgendes:</p><ul><li>Diese Option wird nur angezeigt, wenn Journey Optimizer-Daten in der Datenansicht erkannt werden, die im Bedienfeld Analysis Workspace ausgewählt ist, in dem Sie die Visualisierung hinzufügen. Informationen zum Ändern der Datenansicht in einem Bedienfeld in Analysis Workspace finden Sie unter [Analysis Workspace - Übersicht](/help/analysis-workspace/home.md).</li><li>Nachdem Sie eine Journey Optimizer-Journey auf der Journey-Arbeitsfläche geändert haben, ist diese Option nicht mehr verfügbar. Weitere Informationen finden Sie unter [Visuelle Unterschiede nach dem Ändern einer Journey in der Journey-Arbeitsfläche](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md#visual-differences-after-modifying-a-journey-in-journey-canvas)</li></ul></p> |
-   | [!UICONTROL **Prozentwert**] | Wählen Sie aus den folgenden Optionen: <ul><li>[!UICONTROL **Prozent der Gesamtsumme**]: Der Prozentsatz aller Personen, die in der Datenansicht im Datumsbereich des Bedienfelds enthalten sind.</li><li>[!UICONTROL **Prozent des Startknotens**]: Der Prozentsatz aller Personen, die im Startknoten enthalten sind.<p>Diese Option ist nur verfügbar, wenn Sie über einen einzelnen Startknoten verfügen. Sie ist ausgeblendet, wenn Sie mehrere Startknoten haben.</p></li></ul> |
+   | [!UICONTROL **Prozentwert**] | Wählen Sie aus den folgenden Optionen: <ul><li>[!UICONTROL **Prozent der Gesamtsumme**]: Der Prozentsatz aller Personen, die in der Datenansicht im Datumsbereich des Bedienfelds enthalten sind.</li><li>[!UICONTROL **Prozent des Startknotens**]: Der Prozentsatz aller Personen, die in der Datenansicht im Datumsbereich des Bedienfelds enthalten sind und die Kriterien des Journey-Startknotens erfüllen. (Diese Option ist nur in Journey mit einem einzelnen Startknoten verfügbar. Sie ist in Journey mit mehreren Startknoten deaktiviert. Ein Startknoten ist definiert als jeder Knoten, der keine Verbindung hat.)</li></ul> |
    | [!UICONTROL **Pfeileinstellungen**] | Wählen Sie aus den folgenden Optionen:<ul><li>[!UICONTROL **None**]: </li><li>[!UICONTROL **Bedingung**]: </li><li>[!UICONTROL **Alle Beschriftungen**]: </li></ul><p>**Hinweis**: Diese Option wird nur angezeigt, wenn Journey Optimizer-Daten in der Datenansicht erkannt werden, die im Bedienfeld &quot;Analysis Workspace&quot;ausgewählt ist, in dem Sie die Visualisierung hinzufügen. Informationen zum Ändern der Datenansicht in einem Bedienfeld in Analysis Workspace finden Sie unter [Analysis Workspace - Übersicht](/help/analysis-workspace/home.md).</p> |
-   | [!UICONTROL **Fallout anzeigen**] | Zeigen Sie Fallout-Daten für jeden Knoten an und geben Sie die Anzahl und den Prozentsatz der Personen an, die die Journey an einem bestimmten Knoten verlassen haben. |
+   | [!UICONTROL **Fallout anzeigen**] | Anzeigen von Fallout-Daten für jeden Knoten. Zeigt die Anzahl und den Prozentsatz der Personen an, die die Journey an einem bestimmten Knoten verlassen haben. <p>Personen, die aus der Journey herausgefallen sind, haben möglicherweise andere Aktionen auf der Site durchgeführt, aber sie haben die vom nächsten Knoten im Journey definierten Kriterien nie erfüllt.</p> |
 
 1. Fahren Sie mit [Hinzufügen eines Knotens](#add-a-node) fort.
 
@@ -92,7 +95,7 @@ So fügen Sie einer Journey-Arbeitsflächenvisualisierung einen Knoten hinzu:
 
 1. Öffnen Sie in Analysis Workspace eine bestehende Visualisierung der Journey-Arbeitsfläche oder beginnen Sie mit der Erstellung einer neuen Visualisierung.[](#begin-building-a-journey-canvas-visualization)
 
-1. Ziehen Sie Metriken, Dimensionen, Dimensionselemente, Filter oder Datumsbereiche aus der linken Leiste auf die Arbeitsfläche. Berechnete Metriken werden nicht unterstützt. Darüber hinaus werden keine Metriken oder Dimensionen unterstützt, die auf einem [Zusammenfassungsdatensatz](/help/data-views/summary-data.md) basieren.
+1. Ziehen Sie Metriken, Dimensionen, Dimensionselemente, Filter oder Datumsbereiche aus der linken Leiste auf die Arbeitsfläche. Metriken, die auf einem [abgeleiteten Feld](/help/data-views/derived-fields/derived-fields.md) basieren, werden unterstützt. Berechnete Metriken sowie Metriken oder Dimensionen, die auf einem [Zusammenfassungsdatensatz](/help/data-views/summary-data.md) basieren, werden jedoch nicht unterstützt.
 
    Sie können mehrere Komponenten in der linken Leiste auswählen, indem Sie die Umschalttaste gedrückt halten oder die Befehlstaste (Mac) oder die Strg-Taste (Windows) gedrückt halten.
 
@@ -221,15 +224,25 @@ Die Logik, die beim Kombinieren auf Knoten angewendet wird, hängt davon ab, wel
 
 Sie können Knoten verbinden, die sich bereits auf der Arbeitsfläche befinden, oder Sie können einen Knoten verbinden, wenn Sie ihn zur Arbeitsfläche hinzufügen.
 
+#### Pfeile zwischen Knoten
+
+Knoten sind durch einen Pfeil verbunden. Sowohl die Pfeilrichtung als auch die Pfeilbreite haben Bedeutung:
+
+* **Richtung**: Gibt die Ereignisabfolge der Journey an
+
+* **Breite**: Gibt die prozentuale Lautstärke von einem Knoten zum anderen an
+
 #### Logik beim Verbinden von Knoten
 
 Wenn Sie Knoten in der Journey-Arbeitsfläche verbinden, werden diese über den THEN-Operator verbunden. Dies wird auch als [sequenzielle Filterung](/help/components/filters/seg-sequential-build.md) bezeichnet.
+
+Knoten sind als &quot;letztendlicher Pfad&quot;verbunden. Das bedeutet, dass Besucher gezählt werden, solange sie sich schließlich von einem Knoten zum anderen bewegen, unabhängig von Ereignissen, die zwischen den beiden Knoten auftreten.
 
 Sie können die Logik der verbundenen Knoten anzeigen, indem Sie mit der rechten Maustaste auf den Knoten klicken und dann [!UICONTROL **Filter von Knoten erstellen**] auswählen. Die Logik wird im Abschnitt [!UICONTROL **Definition**] angezeigt.
 
 #### Vorhandene Knoten verbinden
 
-Der Pfeil zwischen Knoten auf der Journey-Arbeitsfläche bestimmt die Reihenfolge der Ereignisse im Journey.
+Journey können nicht zirkulär sein und an zuvor verbundene Knoten zurückschleifen.
 
 So verbinden Sie Knoten auf der Journey-Arbeitsfläche:
 
@@ -239,7 +252,7 @@ So verbinden Sie Knoten auf der Journey-Arbeitsfläche:
 
 1. Ziehen Sie einen der vier blauen Punkte auf eine der vier Seiten des Knotens, mit dem Sie eine Verbindung herstellen möchten.
 
-   Es wird ein Pfeil angezeigt, der die beiden Knoten verbindet. Der Pfeil zeigt die Richtung an, in die Personen durch die Journey navigieren.
+   Es wird ein Pfeil angezeigt, der die beiden Knoten verbindet. Weitere Informationen finden Sie unter [Pfeile zwischen Knoten](#arrows-between-nodes) .
 
 #### Knoten beim Hinzufügen eines Knotens verbinden
 
@@ -249,7 +262,7 @@ Weitere Informationen finden Sie unter [Knoten hinzufügen](#add-a-node).
 
 ### Ändern der Farbe eines Knotens oder Pfeils
 
-Sie können die Farbe eines Knotens oder Pfeils auf der Arbeitsfläche ändern.
+Sie können eine Journey visuell anpassen, indem Sie die Farbe eines beliebigen Knotens oder Pfeils auf der Arbeitsfläche ändern. Sie können beispielsweise Farben anpassen, um ein wünschenswertes oder unerwünschtes Ereignis anzuzeigen.
 
 Die Option zum Ändern der Farbe ist für die folgenden Objekte auf der Arbeitsfläche verfügbar:
 
@@ -339,7 +352,7 @@ So erstellen Sie eine Zielgruppe:
 
 ### Trenddaten anzeigen
 
-Sie können die Trenddaten in einem Liniendiagramm für Objekte auf der Journey-Arbeitsfläche anzeigen. &lt;!— mit einigen vordefinierten Anomalieerkennungsdaten (dies ist die Definition in Fallout)>
+Sie können die Trenddaten in einem Liniendiagramm für Objekte auf der Journey-Arbeitsfläche anzeigen. <!--, with some prebuilt anomaly detection data (this is the definition in Fallout) -->
 
 Die Option zum Trend ist für die folgenden Objekte auf der Arbeitsfläche verfügbar:
 
@@ -474,4 +487,3 @@ So löschen Sie Pfeile zwischen Knoten in der Journey-Arbeitsfläche:
 Öffnen Sie in Journey Optimizer die Journey, die Sie analysieren möchten, in der Arbeitsfläche des Journey.
 
 1. Wählen Sie [!UICONTROL **Analysieren in CJA**] aus. <!-- ?? -->
-
