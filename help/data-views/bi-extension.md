@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: BI Extension
 role: Admin
 exl-id: ab7e1f15-ead9-46b7-94b7-f81802f88ff5
-source-git-commit: 79efab0baf9c44603a7aad7383f42a9d9c0b63cb
+source-git-commit: 81bde9f61f208fd01b3ba1c3df57609104109800
 workflow-type: tm+mt
-source-wordcount: '2931'
+source-wordcount: '2928'
 ht-degree: 65%
 
 ---
@@ -197,7 +197,7 @@ Datenschutzbeschriftungen und -richtlinien, die für von Experience Platform gen
 Die folgenden zusätzlichen Standardeinstellungen und Einschränkungen gelten aus Gründen der Data Governance.
 
 * Die BI-Erweiterung erfordert eine Zeilenbegrenzung für die Abfrageergebnisse. Der Standardwert ist 50, aber Sie können dies in SQL mit `LIMIT n` überschreiben, wobei `n` 1 - 50000 ist.
-* Die BI-Erweiterung erfordert einen Datumsbereich, um die für Berechnungen verwendeten Zeilen zu beschränken. Die Standardeinstellung ist die letzten 30 Tage. Sie können dies jedoch in Ihrer SQL `WHERE`-Klausel mit den speziellen Spalten [`timestamp`](#timestamp) oder [`daterange`](#date-range) überschreiben (siehe weitere Dokumentation).
+* Die BI-Erweiterung erfordert einen Datumsbereich, um die für Berechnungen verwendeten Zeilen zu beschränken. Die Standardeinstellung ist die letzten 30 Tage, aber Sie können dies in Ihrer SQL `WHERE`-Klausel mit den speziellen Spalten [`timestamp`](#timestamp) oder [`daterange`](#date-range) überschreiben.
 * Die BI-Erweiterung erfordert aggregierte Abfragen. Sie können SQL nicht wie `SELECT * FROM ...` verwenden, um die rohen, zugrunde liegenden Zeilen abzurufen. Auf hoher Ebene sollten Ihre Aggregat-Abfragen Folgendes verwenden:
    * Wählen Sie die Summen mit `SUM` und/oder `COUNT` aus.<br/> Beispiel: `SELECT SUM(metric1), COUNT(*) FROM ...`
    * Wählen Sie Metriken, die nach einer Dimension aufgeschlüsselt sind. <br/>Beispiel: `SELECT dimension1, SUM(metric1), COUNT(*) FROM ... GROUP BY dimension1`
