@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: BI Extension
 role: Admin
 exl-id: ab7e1f15-ead9-46b7-94b7-f81802f88ff5
-source-git-commit: 81bde9f61f208fd01b3ba1c3df57609104109800
+source-git-commit: 27749382a311330e6ece76c663f4c610ef20d8c1
 workflow-type: tm+mt
 source-wordcount: '2928'
 ht-degree: 65%
@@ -192,19 +192,6 @@ Einstellungen in Bezug auf die Data Governance in Customer Journey Analytics wer
 
 Datenschutzbeschriftungen und -richtlinien, die für von Experience Platform genutzte Datensätze erstellt wurden, können im Datenansichts-Workflow von Customer Journey Analytics angezeigt werden. Daher zeigen mit dem [!DNL Customer Journey Analytics BI extension] abgefragte Daten geeignete Warnungen oder Fehler, wenn sie nicht den definierten Datenschutzbezeichnungen und Richtlinien entsprechen.
 
-#### Standardeinstellungen und Einschränkungen
-
-Die folgenden zusätzlichen Standardeinstellungen und Einschränkungen gelten aus Gründen der Data Governance.
-
-* Die BI-Erweiterung erfordert eine Zeilenbegrenzung für die Abfrageergebnisse. Der Standardwert ist 50, aber Sie können dies in SQL mit `LIMIT n` überschreiben, wobei `n` 1 - 50000 ist.
-* Die BI-Erweiterung erfordert einen Datumsbereich, um die für Berechnungen verwendeten Zeilen zu beschränken. Die Standardeinstellung ist die letzten 30 Tage, aber Sie können dies in Ihrer SQL `WHERE`-Klausel mit den speziellen Spalten [`timestamp`](#timestamp) oder [`daterange`](#date-range) überschreiben.
-* Die BI-Erweiterung erfordert aggregierte Abfragen. Sie können SQL nicht wie `SELECT * FROM ...` verwenden, um die rohen, zugrunde liegenden Zeilen abzurufen. Auf hoher Ebene sollten Ihre Aggregat-Abfragen Folgendes verwenden:
-   * Wählen Sie die Summen mit `SUM` und/oder `COUNT` aus.<br/> Beispiel: `SELECT SUM(metric1), COUNT(*) FROM ...`
-   * Wählen Sie Metriken, die nach einer Dimension aufgeschlüsselt sind. <br/>Beispiel: `SELECT dimension1, SUM(metric1), COUNT(*) FROM ... GROUP BY dimension1`
-   * Wählen Sie unterschiedliche Metrikwerte aus.<br/>Beispiel: `SELECT DISTINCT dimension1 FROM ...`
-
-     Weitere Informationen finden Sie unter [Unterstützte SQL](#supported-sql).
-
 ### Auflisten von Datenansichten
 
 In der standardmäßigen PostgresSQL-CLI können Sie Ihre Ansichten mithilfe von `\dv` auf folgende Arten anzeigen:
@@ -221,6 +208,21 @@ prod:all=> \dv
 ### Verschachtelt oder reduziert
 
 Standardmäßig verwendet das Schema Ihrer Datenansichten verschachtelte Strukturen wie die ursprünglichen XDM-Schemata. Die Integration unterstützt auch die Option `FLATTEN`. Mit dieser Option können Sie erzwingen, dass das Schema für die Datenansichten (und jede andere Tabelle in der Sitzung) reduziert wird. Die Reduzierung ermöglicht eine einfachere Verwendung in BI-Tools, die keine strukturierten Schemata unterstützen. Weitere Informationen finden Sie unter [Arbeiten mit verschachtelten Datenstrukturen im Abfrage-Service](https://experienceleague.adobe.com/en/docs/experience-platform/query/key-concepts/flatten-nested-data).
+
+
+### Standardeinstellungen und Einschränkungen
+
+Bei Verwendung der BI-Erweiterung gelten die folgenden zusätzlichen Standardeinstellungen und Einschränkungen:
+
+* Die BI-Erweiterung erfordert eine Zeilenbegrenzung für die Abfrageergebnisse. Der Standardwert ist 50, aber Sie können dies in SQL mit `LIMIT n` überschreiben, wobei `n` 1 - 50000 ist.
+* Die BI-Erweiterung erfordert einen Datumsbereich, um die für Berechnungen verwendeten Zeilen zu beschränken. Die Standardeinstellung ist die letzten 30 Tage, aber Sie können dies in Ihrer SQL `WHERE`-Klausel mit den speziellen Spalten [`timestamp`](#timestamp) oder [`daterange`](#date-range) überschreiben.
+* Die BI-Erweiterung erfordert aggregierte Abfragen. Sie können SQL nicht wie `SELECT * FROM ...` verwenden, um die rohen, zugrunde liegenden Zeilen abzurufen. Auf hoher Ebene sollten Ihre Aggregat-Abfragen Folgendes verwenden:
+   * Wählen Sie die Summen mit `SUM` und/oder `COUNT` aus.<br/> Beispiel: `SELECT SUM(metric1), COUNT(*) FROM ...`
+   * Wählen Sie Metriken, die nach einer Dimension aufgeschlüsselt sind. <br/>Beispiel: `SELECT dimension1, SUM(metric1), COUNT(*) FROM ... GROUP BY dimension1`
+   * Wählen Sie unterschiedliche Metrikwerte aus.<br/>Beispiel: `SELECT DISTINCT dimension1 FROM ...`
+
+     Weitere Informationen finden Sie unter [Unterstützte SQL](#supported-sql).
+
 
 ### Unterstützte SQL
 
