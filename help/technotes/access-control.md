@@ -6,7 +6,7 @@ feature: Basics
 exl-id: c258fa39-c0b6-45a1-8547-79516c15a215
 mini-toc-levels: 3
 role: Admin
-source-git-commit: 30133a5d825c3623a5f46a972e787cf60626edf3
+source-git-commit: c6800f1fa36298f3d2aa53c36c78398d9d3fd670
 workflow-type: tm+mt
 source-wordcount: '1463'
 ht-degree: 22%
@@ -92,7 +92,7 @@ Zusätzlich zum Hinzufügen als Produktadministrator zum **Customer Journey Anal
       * Zugriffsberechtigung auf die entsprechenden Datenansichten. Siehe [!UICONTROL Datenansichten] in [Zugriff auf Benutzerebene](#user-level-access).
       * Zugriffsberechtigung auf die Customer Journey Analytics BI-Erweiterung. Siehe [!UICONTROL Datenansichts-Tools] in [Zugriff auf Benutzerebene](#user-level-access).
 
-## Administratorrolle für Produktprofile
+### Administratorrolle für Produktprofile
 
 Ein Produktprofil ist ein Satz von Berechtigungen. Produktadministratoren erstellen Produktprofile und können Produktprofiladministratoren zuweisen, um ein oder mehrere Produktprofile zu verwalten. Ein Produktprofiladministrator kann dann:
 
@@ -100,7 +100,7 @@ Ein Produktprofil ist ein Satz von Berechtigungen. Produktadministratoren erstel
 
 * Bearbeiten Sie unter Customer Journey Analytics Datenansichten, die Teil eines zugewiesenen Produktprofils sind. Produktprofiladministratoren können keine neuen Datenansichten erstellen.
 
-## Zugriff auf Benutzerebene
+### Zugriff auf Benutzerebene
 
 In der folgenden Tabelle sind die wichtigsten Zugriffsberechtigungen für verschiedene Customer Journey Analytics-Funktionen aufgeführt, die Sie für relevante Benutzer konfigurieren können. Sie können unterschiedliche Benutzerzugriffsebenen über Produktprofile verwalten. Ein Produktprofil kombiniert mehrere Berechtigungen, die Sie dann einzelnen Benutzern oder Benutzergruppen zuweisen können.
 
