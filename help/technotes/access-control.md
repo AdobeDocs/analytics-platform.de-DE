@@ -6,9 +6,9 @@ feature: Basics
 exl-id: c258fa39-c0b6-45a1-8547-79516c15a215
 mini-toc-levels: 3
 role: Admin
-source-git-commit: fb106077949cc5a1a2fbaf7702bd0c872152499f
+source-git-commit: 30133a5d825c3623a5f46a972e787cf60626edf3
 workflow-type: tm+mt
-source-wordcount: '1465'
+source-wordcount: '1463'
 ht-degree: 22%
 
 ---
@@ -110,7 +110,7 @@ Die Registerkarte **[!UICONTROL Berechtigungen]** ist Teil jedes Produktprofils 
 
 | Kategorie | Berechtigung | Beschreibung |
 | --- | --- | ---|
-| [!UICONTROL Datenansichten] | *Name einer Datenansicht* | Wenn **[!UICONTROL Auto-Include]** auf **[!UICONTROL Ein]** umgeschaltet wird, können Benutzende, die Teil dieses Produktprofils sind, alle vorhandenen und neu erstellten Datenansichten anzeigen. Wenn diese Einstellung auf **[!UICONTROL Aus]** gesetzt ist, können bestimmte Datenansichten ausgewählt werden, auf die Benutzende Zugriff haben. |
+| [!UICONTROL Datenansichten] | *Name der Datenansicht* | Wenn **[!UICONTROL Auto-Include]** auf **[!UICONTROL Ein]** umgeschaltet wird, können Benutzende, die Teil dieses Produktprofils sind, alle vorhandenen und neu erstellten Datenansichten anzeigen. Wenn diese Einstellung auf **[!UICONTROL Aus]** gesetzt ist, können bestimmte Datenansichten ausgewählt werden, auf die Benutzende Zugriff haben. |
 | [!UICONTROL Berichterstellungs-Tools] | [!UICONTROL Zugriff auf Analysis Workspace] | Benutzer können auf [Analysis Workspace](/help/analysis-workspace/home.md) zugreifen. |
 | [!UICONTROL Berichterstellungs-Tools] | [!UICONTROL  Geführter Analysezugriff] | Ermöglichen Benutzern den Zugriff auf die [Geführte Analyse](/help/guided-analysis/overview.md). |
 | [!UICONTROL Berichterstellungs-Tools] | [!UICONTROL Erstellung berechneter Metriken] | Ermöglicht Benutzern das Erstellen von [berechneten Metriken](/help/components/calc-metrics/calc-metr-overview.md). Benutzer können nur die berechneten Metriken, die sie erstellen, löschen, umbenennen, genehmigen oder deren Genehmigung aufheben, oder die für sie freigegebenen berechneten Metriken. |
