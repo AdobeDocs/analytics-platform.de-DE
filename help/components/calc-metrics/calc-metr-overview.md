@@ -4,16 +4,16 @@ description: Erfahren Sie mehr über gefilterte Metriken, die zum Zeitpunkt der 
 feature: Calculated Metrics
 exl-id: c9205c95-8b01-4177-a89c-038886f41d3d
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 61c1fe48ebe8ebff5b7104cebae1ce7b62289b7d
 workflow-type: tm+mt
-source-wordcount: '461'
-ht-degree: 100%
+source-wordcount: '458'
+ht-degree: 96%
 
 ---
 
 # Übersicht über berechnete Metriken
 
-Berechnete und erweiterte berechnete (abgeleitete) Metriken sind benutzerdefinierte Metriken, die Sie über vorhandene Metriken erstellen können. Mit unseren Tools für berechnete Metriken können Sie Metriken auf flexiblere Weise erstellen, verwalten und kuratieren. Damit können Marketing-Experten, Produktmanager und Analytiker Fragen zu den Daten beantworten, ohne die -Implementierung ändern zu müssen.
+Berechnete und erweiterte berechnete Metriken sind benutzerdefinierte Metriken, die Sie aus vorhandenen Metriken erstellen können. Mit unseren Tools für berechnete Metriken können Sie Metriken auf flexiblere Weise erstellen, verwalten und kuratieren. Damit können Marketing-Experten, Produktmanager und Analytiker Fragen zu den Daten beantworten, ohne die -Implementierung ändern zu müssen.
 
 Sie können
 
@@ -25,7 +25,7 @@ Sie können
 
 Hier sehen Sie einen Vergleich zwischen den jeweiligen Möglichkeiten, die berechnete und erweiterte berechnete Metriken bieten:
 
-| Generatoroptionen | Berechnete Metriken | Erweiterte berechnete (abgeleitete) Metriken |
+| Generatoroptionen | Berechnete Metriken | Erweiterte berechnete Metriken |
 |---|---|---|
 | Formattypen (Dezimal, Zeit, Prozent, Währung) | Ja | Ja |
 | Attributionsänderung (Standard, Linear, Teilnahme usw.) | Ja | Ja |
