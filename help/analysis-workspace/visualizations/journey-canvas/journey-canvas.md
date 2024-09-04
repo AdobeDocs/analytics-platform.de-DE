@@ -6,7 +6,7 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: be03c3b2-8faf-47b8-b3ab-e953202bf488
-source-git-commit: 707bfbf6d34d999bc1b275b24cd6a78b8ef65e74
+source-git-commit: 2f42c64443cc5798388287e6f84b125fb8694812
 workflow-type: tm+mt
 source-wordcount: '1193'
 ht-degree: 2%
@@ -139,7 +139,7 @@ Dies liegt daran, dass Sie im Gegensatz zu Journey Optimizer mit der Journey-Arb
 
 #### Funktionsunterschiede
 
-Nachdem Sie eine Journey Optimizer-Journey auf der Journey-Arbeitsfläche geändert haben, ist das Dropdown-Feld [!UICONTROL **Knotentyp**] nicht mehr verfügbar.
+Nachdem Sie eine Journey Optimizer-Journey in der Journey-Arbeitsfläche geändert haben, ist das Dropdown-Feld [!UICONTROL **Knotentyp**] nicht mehr verfügbar.
 
 Weitere Informationen zu diesem Feld finden Sie unter [Einstellungen konfigurieren](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md).
 
@@ -147,7 +147,7 @@ Weitere Informationen zu diesem Feld finden Sie unter [Einstellungen konfigurier
 
 Änderungen, die an einer Journey in der Journey Optimizer-Arbeitsfläche vorgenommen wurden, werden nur dann mit der Journey-Arbeitsfläche synchronisiert, wenn die Journey in der Journey-Arbeitsfläche unverändert bleibt.
 
-Nachdem Sie eine Journey Optimizer-Journey auf der Journey-Arbeitsfläche geändert haben, werden alle Änderungen, die Sie an der Journey in Journey Optimizer vornehmen, nicht in der Arbeitsfläche zum Journey dargestellt. Um die Änderungen auf der Journey-Arbeitsfläche zu sehen, können Sie die Journey in der Journey-Arbeitsfläche ](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md) löschen und [neu erstellen.
+Nachdem Sie eine Journey Optimizer-Journey in der Journey-Arbeitsfläche geändert haben, werden alle Änderungen, die Sie an der Journey in Journey Optimizer vornehmen, nicht in der Arbeitsfläche zum Journey dargestellt. Um die Änderungen auf der Journey-Arbeitsfläche zu sehen, können Sie die Journey in der Journey-Arbeitsfläche ](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md) löschen und [neu erstellen.
 
 ### Terminologieunterschiede zwischen Journey Optimizer und Customer Journey Analytics
 

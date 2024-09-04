@@ -6,9 +6,9 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: 53984934-6fba-4f15-aeeb-d91039260553
-source-git-commit: 6fc4645bba82e0f844dbf98df9f1cc7f05455bef
+source-git-commit: 2f42c64443cc5798388287e6f84b125fb8694812
 workflow-type: tm+mt
-source-wordcount: '4484'
+source-wordcount: '4526'
 ht-degree: 1%
 
 ---
@@ -145,6 +145,10 @@ Sie erstellen Knoten, indem Sie Workspace-Komponenten aus der linken Leiste auf 
 
 ### Hinzufügen der obersten Knoten basierend auf vorhandenen Knoten
 
+>[!AVAILABILITY]
+>
+>Diese Funktion ist noch nicht verfügbar.
+
 Sie können die obersten Knoten automatisch hinzufügen, basierend auf den Knoten, die sich bereits auf der Arbeitsfläche befinden.
 
 Diese Option ist für die folgenden Objekte auf der Arbeitsfläche verfügbar:
@@ -188,6 +192,10 @@ Sie können die drei wichtigsten Knoten hinzufügen, die zwischen zwei vorhanden
    Die drei wichtigsten Knoten werden zwischen den beiden vorhandenen Knoten hinzugefügt und sind jeweils als separater Zweig verbunden.
 
 ### Duplizieren von Knoten
+
+>[!AVAILABILITY]
+>
+>Diese Funktion ist noch nicht verfügbar.
 
 Die Option zum Duplizieren ist für die folgenden Objekte auf der Arbeitsfläche verfügbar:
 
@@ -289,6 +297,10 @@ Weitere Informationen finden Sie unter [Knoten hinzufügen](#add-nodes).
 
 ### Zeitliche Beschränkung zwischen Knoten hinzufügen
 
+>[!AVAILABILITY]
+>
+>Diese Funktion ist noch nicht verfügbar.
+
 Sie können eine Zeitbegrenzung zwischen Knoten festlegen. Wenn eine Zeitbeschränkung vorhanden ist und eine Person der definierten Journey folgt, aber länger dauert, als der zugewiesene Zeitraum für die Bewegung zwischen den Knoten ist, gilt sie als aus der Journey herausgefallen.
 
 Die Option zum Hinzufügen einer Zeitbegrenzung ist für die folgenden Objekte auf der Arbeitsfläche verfügbar:
@@ -310,6 +322,10 @@ from Travis: You can set time to be within X amount of time or after X amount of
 
 ### Ändern der Farbe eines Knotens oder Pfeils
 
+>[!AVAILABILITY]
+>
+>Diese Funktion ist noch nicht verfügbar.
+
 Sie können eine Journey visuell anpassen, indem Sie die Farbe eines beliebigen Knotens oder Pfeils auf der Arbeitsfläche ändern. Sie können beispielsweise Farben anpassen, um ein wünschenswertes oder unerwünschtes Ereignis anzuzeigen.
 
 Die Option zum Ändern der Farbe ist für die folgenden Objekte auf der Arbeitsfläche verfügbar:
@@ -329,6 +345,10 @@ So ändern Sie die Farbe eines Knotens oder Pfeils:
    Die folgenden Farben sind verfügbar: <!--look into this interaction and color list-->
 
 ### Umbenennen eines Knotens oder Pfeils
+
+>[!AVAILABILITY]
+>
+>Diese Funktion ist noch nicht verfügbar.
 
 Wenn Sie eine Komponente in eine Journey-Arbeitsflächenvisualisierung ziehen, wird ein Knoten mit demselben Namen wie der Komponentenname erstellt. Sie können den Knoten so umbenennen, dass er besser mit dem Schritt der Journey übereinstimmt, den der Knoten darstellt.
 
@@ -359,6 +379,10 @@ Die Option, eine Aufschlüsselung auf Ihre Daten anzuwenden, ist für die folgen
 * Mehrere Pfeile zwischen Knoten
 
 #### Aufschlüsselung auf einen oder mehrere Knoten oder Pfeile anwenden
+
+>[!AVAILABILITY]
+>
+>Diese Funktion ist noch nicht verfügbar.
 
 1. Wählen Sie mindestens einen Knoten aus, auf den Sie eine Aufschlüsselung anwenden möchten, und klicken Sie dann mit der rechten Maustaste auf einen der ausgewählten Knoten.
 
@@ -400,6 +424,10 @@ So erstellen Sie eine Zielgruppe:
 
 ### Trenddaten anzeigen
 
+>[!AVAILABILITY]
+>
+>Diese Funktion ist noch nicht verfügbar.
+
 Sie können die Trenddaten in einem Liniendiagramm für Objekte auf der Journey-Arbeitsfläche anzeigen. <!--, with some prebuilt anomaly detection data (this is the definition in Fallout) -->
 
 Die Option zum Trend ist für die folgenden Objekte auf der Arbeitsfläche verfügbar:
@@ -421,7 +449,6 @@ Anzeigen von Trenddaten:
    Wählen Sie einen oder mehrere Pfeile zwischen 2 Knoten aus, für die Sie Trenddaten anzeigen möchten, und klicken Sie dann mit der rechten Maustaste auf einen der ausgewählten Pfeile.
 
 1. Wählen Sie [!UICONTROL **Trend**] aus.
-
 
 ### Erstellen eines auf einem Knoten oder Pfeil basierenden Filters
 
