@@ -5,10 +5,10 @@ exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: Basics
 role: User
-source-git-commit: 835be84fd5f1398b88e265a21fe6f9665c758dce
-workflow-type: ht
-source-wordcount: '2272'
-ht-degree: 100%
+source-git-commit: 75edfb09e3d2d4673d4c7f86b53eb5a620e77cbc
+workflow-type: tm+mt
+source-wordcount: '2260'
+ht-degree: 98%
 
 ---
 
@@ -99,7 +99,6 @@ In den folgenden Tabellen ist aufgeführt, welche Adobe Analytics-Funktionen in 
 | --- | --- |
 | Warnhinweise | Unterstützung ist geplant. |
 | Beitragsanalyse | Unterstützung ist geplant. |
-| ID-Zuordnung mithilfe des Gerätediagramms | Unterstützung ist geplant. |
 | Projektvorlagen | Unterstützung ist geplant. |
 | Echtzeit-Reporting | Unterstützung ist geplant. |
 | Segment IQ | Unterstützung ist geplant. |
@@ -139,8 +138,8 @@ In der folgenden Tabelle sind Funktionen aufgeführt, die in Customer Journey An
 | Umwandlungen zum Zeitpunkt der Berichtserstellung | [Datenansichten](/help/data-views/data-views.md) in Customer Journey Analytics ermöglichen eine weiter gehende Interpretation von Daten aus einer Verbindung. Sie können Daten ändern oder entfernen, ohne Ihre Implementierung zu ändern, Teilzeichenfolgen verwenden, um Dimensionen zu bearbeiten, Metriken aus beliebigen Werten erstellen oder Teilereignisse filtern. Alle diese Umwandlungen erfolgen zerstörungsfrei. Adobe Analytics bietet begrenzte Möglichkeiten durch Virtual Report Suites und benutzerdefinierte Sitzungslängen. |
 | BI-Erweiterung | Die [BI-Erweiterung](https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-usecases/data-export/bi-extension) ermöglicht Ihnen, CJA direkt mit gängigen BI-Visualisierungs-Tools wie PowerBI oder Tableau zu verbinden. Durch die Verwendung dieser Erweiterung können Sie Ihre BI-Berichte exakt mit der Anzeige in Analysis Workspace und anderen CJA-Reporting-Schnittstellen abstimmen. Auf diese Weise können Sie BI-Berichte für CJA wesentlich einfacher abrufen, ohne Berichte/Metriken aus Rohdaten neu erstell zu müssen. |
 | SQL-Zugriff | Mit der Data Distiller-Option kann Customer Journey Analytics die Einschränkungen in Bezug auf die per Backend-Verarbeitung von Adobe erfassten Daten aufheben. Sie können Ihre Daten mit SQL ändern, unternehmensspezifische Werte und Datensätze erstellen und Ihre Entdeckungsreise fortsetzen. Analytics unterstützt keinen SQL-Zugriff auf seine Daten. |
-| Stitching | [Identitätszuordnung](/help/stitching/overview.md) (oder einfach Stitching) ist eine leistungsstarke Funktion, die die Eignung eines Ereignis-Datensatzes für die kanalübergreifende Analyse erhöht. Die kanalübergreifende Analyse ist ein Hauptanwendungsfall, den Customer Journey Analytics handhaben kann. So können Sie Berichte auf Basis einer gemeinsamen Kennung (Personen-ID) nahtlos kombinieren und für mehrere Datensätze aus verschiedenen Kanälen ausführen. |
-| Unbegrenzte Kundendimensionen und -metriken | Customer Journey Analytics-Dimensionen sind unbegrenzt. Werte können Zahlen, Texte, Objekte und Listen aufweisen oder aus einer Kombination dieser Elemente bestehen. Dimensionen können verschachtelt oder hierarchisch aufgebaut sein. <p>Im Gegensatz dazu unterstützt Adobe Analytics bis zu maximal 75 Eigenschaften und 250 eVars.</p> |
+| Stitching | [Stitching](/help/stitching/overview.md) ist eine leistungsstarke Funktion, die die Eignung eines Ereignis-Datensatzes für die kanalübergreifende Analyse erhöht. Die kanalübergreifende Analyse ist ein Hauptanwendungsfall, den Customer Journey Analytics handhaben kann. So können Sie Berichte auf Basis einer gemeinsamen Kennung (Personen-ID) nahtlos kombinieren und für mehrere Datensätze aus verschiedenen Kanälen ausführen. |
+| Unbegrenzte Kundendimensionen und -metriken | Customer Journey Analytics-Dimensionen sind unbegrenzt. Werte können Zahlen, Texte, Objekte und Listen aufweisen oder aus einer Kombination dieser Elemente bestehen. Dimensionen können verschachtelt oder hierarchisch aufgebaut sein. <br/>Im Gegensatz dazu unterstützt Adobe Analytics maximal 75 Props und 250 eVars. |
 | Unbegrenzte eindeutige Werte | Customer Journey Analytics unterstützt unbegrenzt eindeutige Werte oder Dimensionselemente, über die innerhalb einer Dimension berichtet werden kann.<p>Es gibt keine [Kardinalitätsbeschränkungen für eine Dimension](/help/components/dimensions/high-cardinality.md), sodass eindeutige Werte angezeigt und gezählt werden können.</p><p>Durch diesen Ansatz werden Reporting- und Analysebeschränkungen aufgehoben, die bei einer umfangreichen Adobe Analytics-Implementierung bestehen können, was zu Kennzeichnungen [!UICONTROL Geringer Datenverkehr] führen kann.</p><p>In Customer Journey Analytics kann eine Kennzeichnung [!UICONTROL Eindeutige Werte überschritten] angezeigt werden, allerdings geschieht dies wesentlich seltener und kann durch die Anwendung eines Filters oder Segments auf die Daten verhindert werden.</p> |
 
 {style="table-layout:auto"}
