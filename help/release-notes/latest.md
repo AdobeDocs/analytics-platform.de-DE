@@ -3,16 +3,16 @@ title: Aktuelle Versionshinweise zu Customer Journey Analytics anzeigen
 description: Neueste Versionshinweise zu Customer Journey Analytics
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 3b5877ff515147964c2d4fbd6eaa43a8a99f0fe0
-workflow-type: ht
-source-wordcount: '540'
-ht-degree: 100%
+source-git-commit: d748d89638704eace46b4ba172691b5004be1d67
+workflow-type: tm+mt
+source-wordcount: '662'
+ht-degree: 82%
 
 ---
 
 # Aktuelle Versionshinweise zu Adobe Customer Journey Analytics (August 2024)
 
-**Letzte Aktualisierung**: 14. August 2024
+**Letzte Aktualisierung**: Dienstag, 9. September 2024
 
 Diese Versionshinweise beziehen sich auf den Veröffentlichungszeitraum vom 14. August 2024 bis September 2024. Versionen von Adobe Customer Journey Analytics basieren auf einem [Modell der kontinuierlichen Bereitstellung](releases.md), das einen besser skalierbaren, schrittweisen Ansatz für die Implementierung von Funktionen ermöglicht. Dementsprechend werden diese Versionshinweise mehrmals im Monat aktualisiert. Bitte überprüfen Sie sie regelmäßig.
 
@@ -20,6 +20,7 @@ Diese Versionshinweise beziehen sich auf den Veröffentlichungszeitraum vom 14.�
 
 | Funktion | Beschreibung | [Rollout-Beginn](releases.md) | [Allgemeine Verfügbarkeit](releases.md) |
 | ----------- | ---------- | ------- | ---- |
+| **Zusätzliche Informationen in der Spalte &quot;Verwendet in&quot;im Manager für berechnete Metriken und im Filter-Manager** | Die Spalte &quot;Verwendet in&quot;im Manager für berechnete Metriken und im Filter-Manager enthält die folgenden neuen Berichtsbereiche:<ul><li>**Report Builder:** Zeigt die Anzahl der berechneten Metriken oder Filter an, die im Report Builder verwendet werden.</li><li>**Ad-hoc-Komponenten:** Zeigt die Anzahl der berechneten Ad-hoc-Metriken oder Ad-hoc-Filter an, die in Projekten verwendet werden. Diese errechneten Ad-hoc-Metriken und Filter (auch als &quot;schnell berechnete Metriken&quot;und &quot;Schnellfilter&quot;bezeichnet) können nur in dem Projekt verwendet werden, in dem sie erstellt wurden. Daher werden sie getrennt vom Berichtsbereich &quot;Projekt&quot;in der Spalte &quot;Verwendet in&quot;gemeldet.</li></ul><p>(Nachfolgende Links der Dokumentation wurden aktualisiert.)</p> | -/- | Donnerstag, 11. September 2024 |
 | **Datenquellen auf Zusammenfassungsebene** | Ermöglicht das Einbinden von Zeitreihendaten ohne Personen-ID. Diese Zeitreihendaten können zur Unterstützung verschiedener Anwendungsfälle verwendet werden, z. B.:<ul><li>Darstellung von Leistungsindikatoren auf hoher Ebene als Teil von oder neben Daten auf Ereignisebene. Dies kann so einfach sein wie ein Datum und ein einzelner Metrikwert, aber auch mehrere Dimensionen und Metriken umfassen, wie z. B. Werbeimpressionen, E-Mail-Öffnungen, Werbeausgaben, Kosten für verkaufte Waren und mehr.</li><li>Hochladen von Zielen oder Zielvorgaben auf stündlicher oder täglicher Basis und anschließendes Positionieren dieser Ziele oder Zielvorgaben anhand von Metriken auf Ereignisebene. Dadurch können Sie die Trends von Metriken im Vergleich zu den Zielen oder Zielvorgaben der Organisation visualisieren.</li></ul><p>Weitere Informationen finden Sie unter [Zusammenfassungsdaten](/help/data-views/summary-data.md).</p> | 13. August 2024 | 21. August 2024 |
 | **Veröffentlichung von Zielgruppen in einem neuen Abschnitt „Zielgruppen“ in Experience Platform** | Von Customer Journey Analytics veröffentlichte Zielgruppen sind jetzt im neuen Abschnitt „Zielgruppen“ in Adobe Experience Platform verfügbar.<p>Bislang waren über Customer Journey Analytics veröffentlichte Zielgruppen in Experience Platform im Abschnitt „Segmente“ verfügbar.</p><p>Diese Verbesserung bietet folgende Vorteile:</p><ul><li>Zielgruppen werden nicht mehr mit 1 Stunde Verzögerung in Experience Platform angezeigt. Sie stehen vielmehr Sekunden nach ihrer Veröffentlichung zur Verfügung.</li><li>Zielgruppen können in Experience Platform mithilfe der Spalte „Herkunft“ sortiert werden, in der die Anwendung angezeigt wird, von der aus die Zielgruppe ursprünglich veröffentlicht wurde.</li><li>Mit den Filter- und Sortieroptionen in Experience Platform können die relevanten Zielgruppen schneller gefunden werden.</li></ul> <p>Weitere Informationen finden Sie unter [Verwenden von Customer Journey Analytics-Zielgruppen in Experience Platform](/help/components/audiences/publish.md#use-customer-journey-analytics-audiences-in-experience-platform) im Artikel [Erstellen und Veröffentlichen von Zielgruppen](/help/components/audiences/publish.md).</p> | September 2024 | September 2024 |
 | **Intelligente Warnhinweise** | Intelligente Warnhinweise in Customer Journey Analytics ermöglichen es, dass Sie sofort benachrichtigt werden, wenn in Ihren Daten anormale Ereignisse auftreten.<p>Sie können festlegen, dass Warnhinweise auf der Grundlage von Schwellenwerten für Anomalien, geänderten Prozentsätzen oder spezifischen Datenpunkten ausgelöst werden. Warnhinweise bieten granulare Steuerelemente, die in die Anomalieerkennung integriert werden und ausgelöst werden, wenn Sie sie am dringendsten benötigenen.</p><p>Die Verwendung intelligenter Warnhinweise in Customer Journey Analytics ist fast identisch mit der Verwendung intelligenter Warnhinweise in Adobe Analytics. Ein wichtiger Unterschied besteht darin, dass in Customer Journey Analytics keine stündlichen Warnhinweise verfügbar sind. Dieser Unterschied ist darauf zurückzuführen, dass die Datenaufnahme für die verschiedenen Arten von Ereignisdaten, die aufgenommen werden können, erst mit einer Verzögerung abgeschlossen ist, die in der Regel zwischen 3 und 9 Stunden nach dem Zeitpunkt des Datenereignisses liegt.</p><p>(Links zur aktualisierten Dokumentation folgen)</p><!--<p>[Learn more](/help/analysis-workspace/c-intelligent-alerts/intellligent-alerts.md)</p> --> |  | TBD |
