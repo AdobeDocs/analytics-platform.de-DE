@@ -5,14 +5,14 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: ead96b72-40f1-4ce9-8d91-c8ceea6c4458
 role: Admin
-source-git-commit: dca1cc33058ba57815c3534ab21da86d5247531a
+source-git-commit: ac1d8a191bbad049ada246937364aeb7f8b275a0
 workflow-type: tm+mt
 source-wordcount: '943'
-ht-degree: 65%
+ht-degree: 64%
 
 ---
 
-# Datenaufnahme – Übersicht
+# Datenerfassung - Übersicht
 
 Sie haben mehrere Möglichkeiten bei der Aufnahme von Daten in Customer Journey Analytics. In einigen Szenarien sollen Daten aus Adobe Analytics verschoben, in anderen Daten in Adobe Experience Platform aufgenommen werden.
 
