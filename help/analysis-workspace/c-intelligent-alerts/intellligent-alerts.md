@@ -3,14 +3,18 @@ description: Das neue System für intelligente Warnhinweise erlaubt eine feiner 
 title: Übersicht über intelligente Warnhinweise
 feature: Workspace Basics
 role: User, Admin
-source-git-commit: 1613b3fc7e9cce1fb74b86bb7435612b2d469eb1
+source-git-commit: 17a7e794533c1536e362ca1fd11f45b053954c0a
 workflow-type: tm+mt
-source-wordcount: '331'
-ht-degree: 56%
+source-wordcount: '356'
+ht-degree: 52%
 
 ---
 
 # Übersicht über intelligente Warnhinweise
+
+>[!NOTE]
+>
+>Intelligente Warnhinweise stehen allen Kunden zur Verfügung. Um jedoch die Anomalieerkennung in intelligenten Warnhinweisen zu verwenden, müssen Sie über Customer Journey Analytics Select, Prime oder Ultimate verfügen.
 
 Intelligente Warnhinweise (oder nur &quot;Warnhinweise&quot;) in Customer Journey Analytics ermöglichen es Ihnen, über anormale Ereignisse in Ihren Daten informiert zu werden.
 

@@ -3,10 +3,10 @@ description: Lassen Sie sich Warnhinweise anzeigen, wenn Projektkomponenten best
 title: Warnhinweise erstellen (Analysis Workspace)
 feature: Workspace Basics
 role: User, Admin
-source-git-commit: 1613b3fc7e9cce1fb74b86bb7435612b2d469eb1
+source-git-commit: 8f866d47ef0caccb91bd0e9cb9043bb1e16e0d89
 workflow-type: tm+mt
-source-wordcount: '990'
-ht-degree: 22%
+source-wordcount: '1001'
+ht-degree: 21%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 22%
 
 >[!NOTE]
 >
->Intelligente Warnhinweise sind nur für Kunden von Adobe Analytics Prime und Adobe Analytics Ultimate verfügbar.
+>Intelligente Warnhinweise stehen allen Kunden zur Verfügung. Um jedoch die Anomalieerkennung in intelligenten Warnhinweisen zu verwenden, müssen Sie über Customer Journey Analytics Select, Prime oder Ultimate verfügen.
 
 Intelligente Warnhinweise (oder nur &quot;Warnhinweise&quot;) in Customer Journey Analytics ermöglichen es Ihnen, sofort benachrichtigt zu werden, wenn in Ihren Daten abnorme Ereignisse auftreten.
 
