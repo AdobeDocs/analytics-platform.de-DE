@@ -3,9 +3,9 @@ description: Erfahren Sie, wie sich intelligente Warnhinweise beim Customer Jour
 title: Customer Journey Analytics und Adobe Analytics zum Funktionsvergleich für intelligente Warnhinweise
 feature: Workspace Basics
 role: User, Admin
-source-git-commit: 1613b3fc7e9cce1fb74b86bb7435612b2d469eb1
+source-git-commit: d6f800a6e3e79556026291387e984a35949b3c46
 workflow-type: tm+mt
-source-wordcount: '447'
+source-wordcount: '449'
 ht-degree: 4%
 
 ---
@@ -42,7 +42,7 @@ Um diese Verzögerung bei der Erfassungszeit zu berücksichtigen, dauert es stan
 
 Sie können die Standardverzögerung von 9 Stunden auf einen beliebigen Wert zwischen 0 und 24 Stunden einstellen. Eine Verringerung der Verzögerung auf unter 9 Stunden kann jedoch bedeuten, dass Sie über unvollständige Daten berichten, was zu ungenauen Warnhinweisinformationen führt.
 
-Weitere Informationen zum Anpassen der Verzögerung und der Faktoren, die Sie dabei berücksichtigen sollten, finden Sie unter <!--add link -->.
+Weitere Informationen zum Anpassen der Verzögerung und der Faktoren, die Sie dabei berücksichtigen sollten, finden Sie unter [Warnhinweise erstellen](/help/analysis-workspace/c-intelligent-alerts/alert-builder.md).
 
 <!-- Starting with "However," the rest of this information should probably go into the actual documentation where we document the option to adjust the delay. -->
 
