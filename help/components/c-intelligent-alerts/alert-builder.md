@@ -3,7 +3,7 @@ description: Lassen Sie sich Warnhinweise anzeigen, wenn Projektkomponenten best
 title: Warnhinweise erstellen (Analysis Workspace)
 feature: Workspace Basics
 role: User, Admin
-source-git-commit: 640624ab017d8fc0e7b942c2f00c71cf255c4296
+source-git-commit: 4155f486c8398b75c2bed41d93562483d35c1477
 workflow-type: tm+mt
 source-wordcount: '927'
 ht-degree: 22%
@@ -18,7 +18,7 @@ ht-degree: 22%
 
 Intelligente Warnhinweise (oder nur &quot;Warnhinweise&quot;) in Customer Journey Analytics ermöglichen es Ihnen, sofort benachrichtigt zu werden, wenn in Ihren Daten abnorme Ereignisse auftreten.
 
-Detaillierte Übersichtsinformationen zu intelligenten Warnhinweisen finden Sie unter [Übersicht über intelligente Warnhinweise](/help/components/c-intelligent-alerts/intellligent-alerts.md).
+Detaillierte Übersichtsinformationen zu intelligenten Warnhinweisen finden Sie unter [Übersicht über intelligente Warnhinweise](/help/components/c-intelligent-alerts/intelligent-alerts.md).
 
 So erstellen Sie einen Warnhinweis:
 

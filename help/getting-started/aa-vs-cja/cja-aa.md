@@ -5,9 +5,9 @@ exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: Basics
 role: User
-source-git-commit: 640624ab017d8fc0e7b942c2f00c71cf255c4296
+source-git-commit: 8017754adfde8a7d6ecea6d17138368d5430c1a6
 workflow-type: tm+mt
-source-wordcount: '2321'
+source-wordcount: '2320'
 ht-degree: 85%
 
 ---
@@ -92,7 +92,7 @@ In der folgenden Tabelle sind Funktionen aufgeführt, die in Customer Journey An
 | **eVar persistence settings** | eVars sind nicht mehr Teil von Customer Journey Analytics. Die Persistenzeinstellungen sind jetzt jedoch Teil der Datenansichten und für alle Dimensionen verfügbar. Beachten Sie, dass die Persistenz auf der Berichtszeitverarbeitung und nicht auf der Datenerfassungsverarbeitung basiert. Dimensionen, die innerhalb von Datenansichten festgelegt werden, sind auf eine maximale Persistenz von 90 Tagen beschränkt und unterstützen keine unbegrenzte Persistenz. |
 | **GeoSegmentation-Dimensionen** | [Vollständige Unterstützung](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html?lang=de) |
 | **Grafikbasierte Zuordnung** | Durch [grafikbasierte Zuordnung](https://experienceleague.adobe.com/de/docs/analytics-platform/using/stitching/overview#graph-based-stitching) können Sie die Leistungsfähigkeit des Identitätsdiagramms in [Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/de/docs/experience-platform/identity/home) nutzen, um Datensätze auf ihre bevorzugte Identität zu heben. |
-| **Intelligente Warnhinweise** | Die Verwendung von [intelligenten Warnhinweisen](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/alerts/intellligent-alerts) in Customer Journey Analytics ist fast identisch mit der Verwendung intelligenter Warnhinweise in Adobe Analytics. Es gibt jedoch [wichtige Unterschiede](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/alerts/alerts-feature-comparison). |
+| **Intelligente Warnhinweise** | Die Verwendung von [intelligenten Warnhinweisen](/help/components/c-intelligent-alerts/intelligent-alerts.md) in Customer Journey Analytics ist fast identisch mit der Verwendung intelligenter Warnhinweise in Adobe Analytics. Es gibt jedoch [wichtige Unterschiede](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/alerts/alerts-feature-comparison). |
 | **IP-Verschleierung** | Für Customer Journey Analytics-Kundinnen und -Kunden, die den Analytics-Quell-Connector verwenden, um Daten aus Adobe Analytics in Customer Journey Analytics zu übernehmen: Die in Adobe Analytics vorgenommenen Einstellungen zur IP-Verschleierung werden auf Ihre Customer Journey Analytics-Daten übertragen. Sie können diese Einstellungen nach Bedarf in Adobe Analytics steuern.<p>Für Customer Journey Analytics-Kundinnen oder -Kunden, die das Experience Platform Web SDK verwenden, um Daten direkt in Platform und Customer Journey Analytics aufzufüllen. Sie können die Datenvorbereitung für die Datenerfassung in Platform verwenden, um Regeln zu konfigurieren, die die IP-Adresse basierend auf den Anforderungen Ihres Unternehmens verschleiern. |
 | **Marketingkanäle** | Bei Verwendung des Analytics-Quell-Connectors fließen Marketing-Kanal-Daten über diesen Connector in Customer Journey Analytics. Regeln für Marketing-Kanäle werden im herkömmlichen Adobe Analytics-Tool konfiguriert, und einige Regeln werden nicht unterstützt. Weitere Informationen finden Sie unter [Marketing-Kanäle von Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/aa-data/marketing-channels.html?lang=de). <br/>Bei Web SDK-Implementierungen werden berichtszeitbezogene Verarbeitungsregeln für Marketing-Kanäle über [abgeleitete Felder](../../data-views/derived-fields/derived-fields.md) unterstützt. |
 | **Persistenz der Merchandising-Variablen** | Vollständige Unterstützung über [Binding-Dimensionen und Binding-Metriken](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html?lang=de#binding-dimension) |
