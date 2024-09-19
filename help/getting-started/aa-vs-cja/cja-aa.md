@@ -8,7 +8,7 @@ role: User
 source-git-commit: def8b074ea468e409e340415d5e96f75d6b69312
 workflow-type: tm+mt
 source-wordcount: '2315'
-ht-degree: 85%
+ht-degree: 86%
 
 ---
 
@@ -78,7 +78,7 @@ In der folgenden Tabelle sind Funktionen aufgeführt, die in Customer Journey An
 
 | Funktion | Hinweise |
 | --- | --- |
-| **Warnhinweise** | Die Verwendung von [Warnhinweisen in Customer Journey Analytics](/help/components/c-intelligent-alerts/alerts-feature-comparison.md) ist fast identisch mit der Verwendung von Warnhinweisen in Adobe Analytics. <p>Aufgrund des Timings der Datenerfassung in Customer Journey Analytics sind jedoch keine stündlichen Warnhinweise verfügbar. Unter Customer Journey Analytics können Warnhinweise für täglich, wöchentlich oder monatlich konfiguriert werden.</p> |
+| **Warnhinweise** | Die Verwendung von [Warnhinweisen in Customer Journey Analytics](/help/components/c-intelligent-alerts/alerts-feature-comparison.md) ist fast identisch mit der Verwendung von Warnhinweisen in Adobe Analytics. <p>Aufgrund des Zeitpunkts der Datenerfassung in Customer Journey Analytics sind stündliche Warnhinweise jedoch nicht verfügbar. In Customer Journey Analytics können tägliche, wöchentliche oder monatliche Warnhinweise konfiguriert werden.</p> |
 | **Analytics for Target (A4T)** | Die [Integration zwischen Adobe Customer Journey Analytics und Target](https://experienceleague.adobe.com/de/docs/target/using/integrate/cja/target-reporting-in-cja) bietet Ihrem Optimierungsprogramm leistungsstarke Tools für Analysen und Zeitersparnisse. |
 | **Zielgruppenveröffentlichung** | Wird unterstützt, sofern diese Funktion mit den Adobe-Produkten Customer Data Platform oder Journey Optimizer lizenziert wurde. [Zielgruppenveröffentlichung](/help/components/audiences/audiences-overview.md) sendet Zielgruppen an das Echtzeit-Kundenprofil in Experience Platform. |
 | **Klassifizierungen** | Jetzt „Lookup-Datensätze“ genannt. In Analytics verwendete Klassifizierungen können mit dem Quell-Connector für Analytics-Klassifizierungen in Experience Platform und Customer Journey Analytics importiert werden. Suchdatensätze können auch direkt in Experience Platform hochgeladen und in Customer Journey Analytics verfügbar gemacht werden. |
