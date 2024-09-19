@@ -1,18 +1,18 @@
 ---
-description: Anwendungsfälle für intelligente Warnhinweise.
-title: Intelligente Warnhinweise – Anwendungsfälle
+description: Anwendungsbeispiele für Warnhinweise.
+title: Warnhinweise - Anwendungsfälle
 feature: Workspace Basics
 role: User, Admin
-source-git-commit: 640624ab017d8fc0e7b942c2f00c71cf255c4296
+source-git-commit: def8b074ea468e409e340415d5e96f75d6b69312
 workflow-type: tm+mt
-source-wordcount: '67'
-ht-degree: 55%
+source-wordcount: '63'
+ht-degree: 38%
 
 ---
 
-# Intelligente Warnhinweise – Anwendungsfälle
+# Warnhinweise - Anwendungsfälle
 
-Sie können intelligente Warnhinweise erstellen, wie unter [Warnhinweise erstellen](/help/components/c-intelligent-alerts/alert-builder.md) beschrieben.
+Sie können Warnhinweise wie in [Warnhinweise erstellen](/help/components/c-intelligent-alerts/alert-builder.md) beschrieben erstellen.
 
 Die folgenden Abschnitte veranschaulichen Beispielanwendungsfälle, die bei der Erstellung von Warnhinweisen berücksichtigt werden sollten.
 

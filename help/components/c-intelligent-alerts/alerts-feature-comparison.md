@@ -1,18 +1,18 @@
 ---
-description: Erfahren Sie, wie sich intelligente Warnhinweise beim Customer Journey Analytics von Adobe Analytics unterscheiden.
-title: Customer Journey Analytics und Adobe Analytics zum Funktionsvergleich für intelligente Warnhinweise
+description: Erfahren Sie, wie sich Warnhinweise beim Customer Journey Analytics von Adobe Analytics unterscheiden.
+title: Customer Journey Analytics und Adobe Analytics zum Vergleich von Warnhinweisen
 feature: Workspace Basics
 role: User, Admin
-source-git-commit: 640624ab017d8fc0e7b942c2f00c71cf255c4296
+source-git-commit: def8b074ea468e409e340415d5e96f75d6b69312
 workflow-type: tm+mt
-source-wordcount: '571'
-ht-degree: 3%
+source-wordcount: '566'
+ht-degree: 0%
 
 ---
 
-# Funktionsvergleich für intelligente Warnhinweise: Customer Journey Analytics und Adobe Analytics
+# Vergleich der Warnhinweisfunktion: Customer Journey Analytics und Adobe Analytics
 
-Die Verwendung intelligenter Warnhinweise in Customer Journey Analytics ist fast identisch mit der Verwendung intelligenter Warnhinweise in Adobe Analytics. Es gibt jedoch wichtige Unterschiede.
+Die Verwendung von Warnhinweisen auf dem Customer Journey Analytics ist fast identisch mit der Verwendung von Warnhinweisen in Adobe Analytics. Es gibt jedoch wichtige Unterschiede.
 
 In den folgenden Abschnitten werden die wichtigsten Unterschiede beschrieben.
 
