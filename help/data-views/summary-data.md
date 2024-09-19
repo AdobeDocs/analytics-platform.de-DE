@@ -4,13 +4,13 @@ description: Details und Informationen zur Verwendung und Konfiguration von Zusa
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: bdf13331967a1b2e51ce9d1dab650fb3dba1606d
+exl-id: 417443ae-a1ab-483b-a8fd-cff5ee8b6263
+source-git-commit: e6f57b03689bd9aaaec12c13fc95da5b079b901e
 workflow-type: tm+mt
-source-wordcount: '1033'
-ht-degree: 8%
+source-wordcount: '1137'
+ht-degree: 7%
 
 ---
-
 
 # Zusammenfassungsdaten
 
@@ -75,6 +75,14 @@ Durch die Kombination der zusammengefassten Ereignisdaten mit den Clickstream-Da
 | def456 | 775 | 650 $ | 775 | 1.250 $ | 1,92 |
 | ghi789 | 500 | 500$ | 500 | 750 $ | 1,50 |
 
+
+### Suchdaten
+
+Wenn Sie Berichte mit einer Dimension erstellen möchten, die in einem zusätzlichen Lookup-Datensatz definiert ist (z. B. Kampagnenname), müssen Sie die folgenden zusätzlichen Schritte ausführen:
+
+1. Erstellen Sie ein neues abgeleitetes Feld, das die Funktion [Lookup](/help/data-views/derived-fields/derived-fields.md#lookup) verwendet, um den Kampagnennamen aus dem Lookup-Datensatz zu suchen. In der Definition der Funktion [Lookup](/help/data-views/derived-fields/derived-fields.md#lookup) verwenden Sie die Übereinstimmung zwischen Kampagnen-Code und Trackingcode, um den Kampagnennamen zu suchen.
+1. Fügen Sie das neu erstellte abgeleitete Feld als Dimensionskomponente zu Ihrer Datenansicht hinzu.
+1. Konfigurieren Sie die Dimensionskomponente für den Kampagnennamen (aus dem Lookup-Datensatz) so, dass eine Gruppierung der Zusammenfassungsdaten mit dem neu erstellten abgeleiteten Feld erfolgt.
 
 Ein detaillierter Artikel zur Verwendung, Berichterstellung und Analyse von Zusammenfassungsdaten in Customer Journey Analytics finden Sie im Anwendungsfall [Zusammenfassungsdaten erfassen und melden](/help/use-cases/data-views/summary-data.md) .
 

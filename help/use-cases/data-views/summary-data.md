@@ -4,14 +4,15 @@ description: Erläuterung aller Details zum Einbringen von Zusammenfassungsdaten
 solution: Customer Journey Analytics
 feature: Use Cases
 role: Admin
-source-git-commit: 1590b7fbdedfacf4665d191220156c887f9c562a
+exl-id: 80139806-618a-46ff-b2c4-32d7bb85a526
+source-git-commit: e6f57b03689bd9aaaec12c13fc95da5b079b901e
 workflow-type: tm+mt
-source-wordcount: '4974'
+source-wordcount: '5187'
 ht-degree: 8%
 
 ---
 
-# Zusammenfassungsdaten verwenden
+# Verwenden von Zusammenfassungsdaten
 
 Dieser Anwendungsfall soll Ihnen dabei helfen, die Verwendung von Zusammenfassungsdaten in Ihren Berichten und Analysen zu verstehen. Im Anwendungsfall werden alle Schritte beschrieben, die zur Verwendung von Zusammenfassungsdaten im Customer Journey Analytics erforderlich sind:
 
@@ -487,6 +488,26 @@ Um sicherzustellen, dass Sie Berichte zu den richtigen Daten in Workspace erstel
             1. Wählen Sie die Dimension **[!UICONTROL Kampagnen-ID]** in der Liste **[!UICONTROL Dimensionen]** aus.
             1. Beachten Sie, dass die Komponente **[!UICONTROL Ausblenden in Berichten]** in den **[!UICONTROL Komponenteneinstellungen]** jetzt automatisch aktiviert ist.
 
+      1. Erstellen Sie ein neues abgeleitetes Feld, z. B. &quot;`Campaign Name (Lookup Derived Field)`&quot;, um sicherzustellen, dass Sie in Workspace Berichte mit der Dimension Kampagnenname (Suche) aus dem Beispiel-Lookup-Datensatz erstellen können.
+
+         ![Abgeleitetes Feld für den Kampagnennamen](../aa-data/../assets/summary-derived-field.png)
+
+         1. Wählen Sie **[!UICONTROL campaign_id]** für **[!UICONTROL Wert]** aus.
+         1. Wählen Sie **[!UICONTROL Beispiel-Suchdatensatz]** aus dem Dropdown-Menü **[!UICONTROL Suchdatensatz]** aus.
+         1. Wählen Sie **[!UICONTROL tracking_code]** aus dem Dropdown-Menü **[!UICONTROL Matching Key]** aus.
+         1. Wählen Sie **[!UICONTROL campaign_name]** aus dem Dropdown-Menü **[!UICONTROL Werte, die zurückgegeben werden sollen]**.
+         1. Wählen Sie **[!UICONTROL Speichern]** aus.
+
+      1. Fügen Sie das neu erstellte abgeleitete Feld **[!UICONTROL Kampagnenname (Feld für Abgeleitete Suche)]** zur Komponentenliste **[!UICONTROL Dimensionen]** hinzu.
+
+      1. Wählen Sie die Dimension **[!UICONTROL Kampagnenname (Suche)]** in der Liste **[!UICONTROL Dimensionen]** aus. Im Komponentenbereich:
+
+         ![Datengruppe mit abgeleiteten Feldzusammenfassungsdaten](../assets/derived-field-summary-data-group.png)
+
+         1. Erweitern Sie ![ChevronDown](/help/assets/icons/ChevronDown.svg) **[!UICONTROL Zusammenfassungsdatengruppe]**.
+         1. Aktivieren Sie **[!UICONTROL Gruppierung erstellen]**.
+         1. Wählen Sie **[!UICONTROL Kampagnenname (Suchabgeleitetes Feld)]** aus der Dropdownliste **[!UICONTROL Dimension]** aus. Dieser Schritt stellt sicher, dass der Kampagnenname (Suche) aus dem Beispiel-Lookup-Datensatz in Berichten sicher verwendet werden kann (siehe [Workspace](#workspace)).
+
       1. Wählen Sie die Metrik **[!UICONTROL Umsatz]** aus der Liste **[!UICONTROL Metriken]** aus. Im Komponentenbereich:
 
          ![Umsatzzusammenfassungsdaten](../assets/revenue-summary-data.png)
@@ -566,6 +587,14 @@ Fügen Sie Ihre berechneten Metriken zu Ihrem Bericht hinzu.
          1. Wählen Sie eine bevorzugte Palette **[!UICONTROL Bedingte Formatierung]** aus.
    1. Wählen Sie **[!UICONTROL Speichern]** aus, um Ihr Projekt zu speichern.
 
+Gehen Sie wie folgt vor, wenn Sie einen Bericht zum Kampagnennamen anstatt zum Rückverfolgungscode (Ereignis) erstellen möchten:
+
+1. Duplizieren Sie die Visualisierung des **[!UICONTROL Zusammenfassungsberichts]** Freiformtabellen.
+1. Benennen Sie die duplizierte Visualisierung in `Summary Data Report (using Campaign Name)` um.
+1. Ersetzen Sie die Dimension ![Switch](/help/assets/icons/Switch.svg) durch die Dimension **[!UICONTROL Trackingcode (Ereignis)]** durch die Dimension **[!UICONTROL Kampagnenname (Suche)]** .
+
+Aufgrund des von Ihnen erstellten abgeleiteten Felds und der Konfiguration der Zusammenfassungsdatengruppen-Komponente für den Kampagnennamen (Suche) können Sie einen korrekten Bericht zum Kampagnennamen (Suche) erstellen. Siehe [Datenansicht](#data-view).
+
 Ihr endgültiges Projekt sollte wie folgt aussehen:
 
 ![Beispielprojekt mit Zusammenfassungsdaten, das das Bedienfeld &quot;Zusammenfassungsdaten&quot;mit Zusammenfassungsdatenbericht anzeigt](../assets/summary-workspace.png)
@@ -575,4 +604,3 @@ Ihr endgültiges Projekt sollte wie folgt aussehen:
 >
 >[Zusammenfassungsdaten](/help/data-views/summary-data.md)
 >[Komponenteneinstellungen für Zusammenfassungsdatengruppen](/help/data-views/component-settings/summary-data-group.md)
-
