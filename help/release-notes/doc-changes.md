@@ -4,9 +4,9 @@ description: Listet Inhaltsaktualisierungen für Dokumentation zu Customer Journ
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: bdf13331967a1b2e51ce9d1dab650fb3dba1606d
+source-git-commit: a4b838f7813d78681eba072e4febd90ba0c7111d
 workflow-type: tm+mt
-source-wordcount: '4026'
+source-wordcount: '4016'
 ht-degree: 72%
 
 ---
@@ -262,7 +262,6 @@ Die folgenden Aktualisierungen wurden seit der ersten Erstellung der Customer Jo
 | 7. Oktober 2020 | Es wurde ein Thema zu [kombinierten Ereignis-Datensätzen](/help/connections/combined-dataset.md) hinzugefügt. |
 | 15. September 2020 | Es wurde ein Thema zu [Datenerfassung](/help/data-ingestion/data-ingestion.md) hinzugefügt. |
 | 2. September 2020 | Der Abschnitt zu [Benutzerberechtigungen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html?lang=de) wurde aktualisiert. |
-| 7. August 2020 | Neues Thema zu [B2B-Anwendungsfall - Such-Datensatz](/help/use-cases/b2b/b2b.md) hinzugefügt. |
 | Juli 2020 | Es wurden Informationen zur Option [Identitätszuordnung für Personen-ID](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=de) hinzugefügt. |
 | Juli 2020 | Neues Thema zu [Objekt-Arrays](/help/use-cases/object-arrays.md) oder „Datenhierarchien“ hinzugefügt. |
 | 14. April 2020 | Aktualisierungen der neuesten Benutzeroberfläche im Thema [Verbindungen erstellen](/help/connections/create-connection.md). |
