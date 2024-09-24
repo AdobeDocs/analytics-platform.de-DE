@@ -1,19 +1,19 @@
 ---
-description: Übersicht über die Journey-Arbeitsfläche
+description: Überblick über die Journey-Arbeitsfläche
 title: Journey-Arbeitsfläche
 feature: Visualizations
 role: User
 hide: true
 hidefromtoc: true
 exl-id: be03c3b2-8faf-47b8-b3ab-e953202bf488
-source-git-commit: 2f42c64443cc5798388287e6f84b125fb8694812
+source-git-commit: 5d65f2cee34741d985ae7b85ad62f65a68c6289a
 workflow-type: tm+mt
-source-wordcount: '1193'
+source-wordcount: '1300'
 ht-degree: 2%
 
 ---
 
-# Übersicht über die Journey-Arbeitsfläche
+# Überblick über die Journey-Arbeitsfläche
 
 {{release-limited-testing}}
 
@@ -127,6 +127,16 @@ Darüber hinaus werden Änderungen an einer Journey in Journey Optimizer nur dan
 
 Nachdem Sie eine Journey Optimizer-Journey in der Journey-Arbeitsfläche geändert haben, können Änderungen an der Datenverarbeitung, den verfügbaren Funktionen und dem Synchronisierungsverhalten auftreten.
 
+Wenn Sie eine wesentliche Änderung an einer Journey Optimizer-Journey auf der Journey-Arbeitsfläche vornehmen, können Änderungen an der Datenverarbeitung, den verfügbaren Funktionen und dem Synchronisierungsverhalten auftreten. Eine wesentliche Änderung umfasst eine der folgenden Aspekte:
+
+* Knoten hinzufügen oder entfernen
+
+* Hinzufügen oder Entfernen eines Pfeils zwischen Knoten
+
+* Komponenten auf einem Knoten ändern
+
+Wenn Sie andere Änderungen an einer Journey Optimizer-Journey auf der Journey-Arbeitsfläche vornehmen, z. B. das Ziehen eines Knotens oder das Hinzufügen einer Aufschlüsselung, gelten die in den folgenden Abschnitten beschriebenen Unterschiede nicht.
+
 >[!NOTE]
 >
 >Um den Originalzustand der Journey wiederherzustellen, können Sie Strg+Z drücken, nachdem Sie Ihre erste Änderung in der Journey-Arbeitsfläche vorgenommen haben. Oder Sie können die Journey in der Journey-Arbeitsfläche ](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md) löschen und [neu erstellen
@@ -139,9 +149,13 @@ Dies liegt daran, dass Sie im Gegensatz zu Journey Optimizer mit der Journey-Arb
 
 #### Funktionsunterschiede
 
-Nachdem Sie eine Journey Optimizer-Journey in der Journey-Arbeitsfläche geändert haben, ist das Dropdown-Feld [!UICONTROL **Knotentyp**] nicht mehr verfügbar.
+Nachdem Sie eine Journey Optimizer-Journey auf der Journey-Arbeitsfläche geändert haben, kann sich die Funktionalität je nach Ihren Änderungen für die folgenden Funktionen ändern:
 
-Weitere Informationen zu diesem Feld finden Sie unter [Einstellungen konfigurieren](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md).
+* Die im Feld [!UICONTROL **Knotentyp**] angezeigten Werte ändern sich.
+
+* Die Optionen, die im Dropdown-Feld [!UICONTROL **Pfeileinstellungen**] verfügbar sind, ändern sich.
+
+Weitere Informationen zu diesen Feldern finden Sie unter [Einstellungen konfigurieren](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md).
 
 #### Unterschiede bei der Synchronisierung
 
