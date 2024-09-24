@@ -4,10 +4,10 @@ description: Listet Inhaltsaktualisierungen für Dokumentation zu Customer Journ
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: a4b838f7813d78681eba072e4febd90ba0c7111d
+source-git-commit: 0325b48e7144ac3e334ab57448b9adba9fcea21d
 workflow-type: tm+mt
-source-wordcount: '4016'
-ht-degree: 72%
+source-wordcount: '4065'
+ht-degree: 71%
 
 ---
 
@@ -19,6 +19,10 @@ Die folgenden Aktualisierungen wurden seit der ersten Erstellung der Customer Jo
 
 | Funktion | Beschreibung |
 | --- | --- |
+| **September 2024** | |
+| Aktualisierung der Zusammenfassungsdaten | Die Zusammenfassungsdatenartikel wurden mit Informationen zur ordnungsgemäßen Verwendung von [Suchdaten](/help/data-views/summary-data.md#lookup-data) bei der Berichterstellung für Zusammenfassungsdaten aktualisiert. |
+| Aktualisierung der BI-Erweiterung | Der Abschnitt [Standardwerte und Begrenzungen](/help/data-views/bi-extension.md#defaults-and-limitations) zur Dokumentation zur BI-Erweiterung wurde hinzugefügt. |
+| Warnhinweise | Es wurde eine Dokumentation für die Funktion [Warnhinweise](/help/components/c-intelligent-alerts/intelligent-alerts.md) hinzugefügt, die jetzt unter Customer Journey Analytics verfügbar ist. |
 | **August 2024** | |
 | Beispiel für ein B2B-Projekt | Es wurde ein [Anwendungsfall](/help/use-cases/b2b/example.md) hinzugefügt, in dem beschrieben wird, wie B2B-Daten auf Profilebene (Person) eingerichtet, konfiguriert und in Berichten verwendet werden, wobei die neue [Transformation von Datensätzen für B2B-Suchen verwendet wird](/help/connections/transform-datasets-b2b-lookups.md). |
 | Aktualisierte Anwendungsfälle für den Datenexport | Es wurden detailliertere Abfragebeispiele zu [Query Service (Data Distiller) und Export-Datensätzen](/help/use-cases/data-export/queryservice-export-datasets.md) hinzugefügt, um zu veranschaulichen, wie die Attribution sitzungsübergreifend mithilfe eines Lookback-Fensters ordnungsgemäß angewendet wird. |
