@@ -3,10 +3,10 @@ title: Aktuelle Versionshinweise zu Customer Journey Analytics anzeigen
 description: Neueste Versionshinweise zu Customer Journey Analytics
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: def8b074ea468e409e340415d5e96f75d6b69312
+source-git-commit: a07823d3671c683ec30cf1be4efc542b2b1b29d9
 workflow-type: tm+mt
-source-wordcount: '575'
-ht-degree: 81%
+source-wordcount: '508'
+ht-degree: 79%
 
 ---
 
@@ -23,9 +23,7 @@ Diese Versionshinweise beziehen sich auf den Veröffentlichungszeitraum vom 11.�
 | **Zusätzliche Informationen in der Spalte „Verwendet in“ im Manager für berechnete Metriken und im Filter-Manager** | Die Spalte „Verwendet in“ im Manager für berechnete Metriken und im Filter-Manager enthält die folgenden neuen Reporting-Bereiche:<ul><li>**Report Builder**: Zeigt die Anzahl der berechneten Metriken oder Filter an, die in Report Builder verwendet werden.</li><li>**Ad-hoc-Komponenten**: Zeigt die Anzahl der berechneten Ad-hoc-Metriken oder Ad-hoc-Filter an, die in Projekten verwendet werden. Diese berechneten Ad-hoc-Metriken und -Filter (auch als „schnell berechnete Metriken“ und „Schnellfilter“ bezeichnet) können nur in dem Projekt verwendet werden, in dem sie erstellt wurden. Daher werden sie getrennt vom Reporting-Bereich „Projekt“ in der Spalte „Verwendet in“ aufgeführt.</li></ul>Weitere Informationen finden Sie unter [Manager für berechnete Metriken](https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-components/cja-calcmetrics/cm-workflow/cm-manager) und [Filter-Manager](https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-components/cja-filters/manage-filters). |  | 11. September 2024 |
 | **Warnhinweise** | Warnhinweise in Customer Journey Analytics ermöglichen es Ihnen, über geänderte Prozentsätze oder bestimmte Datenpunkte benachrichtigt zu werden.<p>Je nach Customer Journey Analytics-Package können Sie auch Warnhinweise verwenden, die basierend auf Anomalieschwellen ausgelöst werden. Diese Warnhinweise (auch als &quot;intelligente Warnhinweise&quot;bezeichnet) bieten granulare Steuerelemente, die in die Anomalieerkennung integriert sind und bei Bedarf ausgelöst werden.</p><p>Die Verwendung von Warnhinweisen auf dem Customer Journey Analytics ist fast identisch mit der Verwendung von Warnhinweisen in Adobe Analytics. Ein wichtiger Unterschied besteht darin, dass in Customer Journey Analytics keine stündlichen Warnhinweise verfügbar sind. Dieser Unterschied ist darauf zurückzuführen, dass die Datenaufnahme für die verschiedenen Arten von Ereignisdaten, die aufgenommen werden können, erst mit einer Verzögerung abgeschlossen ist, die in der Regel zwischen 3 und 9 Stunden nach dem Zeitpunkt des Datenereignisses liegt.</p><p>Weitere Informationen zu den Unterschieden bei der Verwendung von Warnhinweisen im Customer Journey Analytics von Adobe Analytics finden Sie unter [Vergleich der Warnhinweise-Funktion](/help/components/c-intelligent-alerts/alerts-feature-comparison.md).</p><p>Weitere Informationen zu Warnhinweisen finden Sie unter [Warnhinweise - Übersicht](/help/components/c-intelligent-alerts/intelligent-alerts.md) |  | Samstag, 13. September 2024 |
 | **Aktualisierungen am Adobe Analytics-Quell-Connector** | Auf der Seite für Datensatzaktivitäten werden keine Informationen zu Batches angezeigt, da der Analytics-Quell-Connector vollständig von Adobe verwaltet wird. Sie können überwachen, dass Daten fließen, indem Sie sich die Metriken zu aufgenommenen Einträgen ansehen. Weitere Informationen finden Sie im Leitfaden zum [Erstellen einer Quellverbindung für Analytics-Daten](https://experienceleague.adobe.com/de/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics). |  | Jetzt verfügbar |
-| **Nutzungsanalyse** | Erfahren Sie, wie Ihr Unternehmen Customer Journey Analytics verwendet. Durch die Aktivierung dieser Funktion wird ein Datensatz in Adobe Experience Platform erstellt, der Daten erfasst, wenn Personen in Ihrem Unternehmen Analysis Workspace verwenden. Eine Verbindung und eine Datenansicht werden ebenfalls automatisch erstellt, sodass Sie auf verschiedene Dimensionen zugreifen können, darunter die Top-Projekttypen, die aktivsten Benutzenden und die beliebtesten in Projekten verwendeten Komponenten. (Link zur Dokumentation folgt) |  | 18. Sept. 2024 |
 | **Geführte Analyse: Einbetten in Workspace** | Kombinieren Sie mehrere geführte Analysen in einer Ansicht in Analysis Workspace. (Link zur Dokumentation folgt) | 22. September 2024 | 2. Oktober 2024 |
-
 
 ## Fehlerbehebungen in Customer Journey Analytics
 
