@@ -4,16 +4,16 @@ description: Erfahren Sie, wie Sie Zielgruppen in Customer Journey Analytics ver
 exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
 feature: Audiences
 role: User
-source-git-commit: d903745e105edb11ef6f43b6137e1e03d43e5e07
+source-git-commit: 7d21f6816412b45b795d223d351d4b48bd679c6d
 workflow-type: tm+mt
 source-wordcount: '1696'
-ht-degree: 52%
+ht-degree: 50%
 
 ---
 
 # Erstellen und Veröffentlichen von Zielgruppen
 
-In diesem Thema wird beschrieben, wie Sie in Adobe Experience Platform identifizierte Zielgruppen für das Targeting und die Personalisierung von Kunden in das Echtzeit-Kundenprofil ](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=de) von Customer Journey Analytics erstellen und veröffentlichen.[
+In diesem Thema wird beschrieben, wie Sie Zielgruppen erstellen und veröffentlichen, die im Customer Journey Analytics in [Echtzeit-Kundenprofil](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=de) in Adobe Experience Platform identifiziert werden, um Kunden-Targeting und -Personalisierung zu ermöglichen.
 
 Lesen Sie diesen [Überblick](/help/components/audiences/audiences-overview.md) , um sich mit dem Konzept der Customer Journey Analytics-Zielgruppen vertraut zu machen.
 
