@@ -4,10 +4,10 @@ title: Intelligente Beschriftungen
 feature: Visualizations
 exl-id: d32d3cda-ecbf-4ee7-a8b7-7c3c71b5df75
 role: User
-source-git-commit: dae2282717d5d84862259d5b056fbfeb2d068cce
+source-git-commit: 6a193f2fd179809afac6808f3fb958c020f53a8d
 workflow-type: tm+mt
-source-wordcount: '661'
-ht-degree: 4%
+source-wordcount: '646'
+ht-degree: 5%
 
 ---
 
@@ -32,27 +32,29 @@ Einblicke in natürliche Sprachen werden jetzt generiert.
 
 Bedenken Sie Folgendes
 
-* Sie benötigen mindestens 3 Datenpunkte, um Beschriftungen erfolgreich zu generieren. Andernfalls wird möglicherweise ein Fehler mit der Meldung &quot;Nicht genügend Daten zur Analyse&quot;angezeigt.
+* Sie benötigen mindestens 3 Datenpunkte, um Beschriftungen erfolgreich zu generieren. Andernfalls wird möglicherweise ein Fehler wie **[!UICONTROL Nicht genügend Daten zur Analyse]** ausgegeben.
 
-* Beschriftungen werden jedes Mal generiert, wenn sich die zugrunde liegenden ausgewählten Daten in der Tabelle ändern, die die Visualisierung ermöglicht.
+* Beschriftungen werden jedes Mal generiert, wenn sich die zugrunde liegenden ausgewählten Daten in der Tabelle ändern, die die Visualisierung steuert.
 
 * Wenn die Tabelle mehrere Metriken enthält, werden Untertitel nur für die erste Metrik oder die Metrik generiert, die aktuell vom Benutzer ausgewählt wird.
 
-* Wenn Sie das Projekt zu diesem Zeitpunkt speichern und es später erneut laden, werden die Beschriftungen automatisch mit neuen Daten aktualisiert. Dasselbe gilt für geplante Projekte und PDF-Dateien, die aus diesem Projekt exportiert werden.
+* Wenn Sie das Projekt an einem bestimmten Punkt speichern und später erneut laden, werden die Beschriftungen automatisch mit neuen Daten aktualisiert. Dasselbe gilt für geplante Projekte und PDF-Dateien, die aus einem Projekt exportiert werden.
 
-## Anzeigen und Interpretieren von Untertiteln {#view}
-
-Im Folgenden finden Sie ein Beispiel dafür, wie die Beschriftungen aussehen könnten:
+Im Folgenden finden Sie ein Beispiel dafür, wie intelligente Beschriftungen aussehen könnten:
 
 ![Intelligente Beschriftungen für die Linienvisualisierung, einschließlich Saisonabhängigkeit, Min., Max., Spitze und Rückgang.](assets/captions.png)
 
-## In Zwischenablage kopieren {#copy}
+## Aktionen
+
+Sie können die folgenden Aktionen für intelligente Untertitel durchführen:
+
+### In Zwischenablage kopieren {#copy}
 
 Sie können die Beschriftungen in eine Zwischenablage kopieren und in einen PowerPoint- oder andere Tools einfügen. Wählen Sie oben rechts im Dialogfeld &quot;Beschriftungen&quot;die Option ![Beschriftungen in die Zwischenablage kopieren](/help/assets/icons/Copy.svg) aus.
 
-## Bearbeiten von Beschriftungen {#edit}
+### Anzeige bearbeiten {#edit}
 
-Sie können die Beschriftungen bearbeiten, z. B. eine bestimmte Kategorie von Einblicken ein- oder ausblenden. Wenn Sie beispielsweise keinen Einblick in die Mindestreihenfolge wünschen, können Sie diese Einblicke einfach ausblenden und auf &quot;Anwenden&quot;klicken. und es wird nicht wieder angezeigt.
+Sie können die Anzeige von Untertiteln bearbeiten, z. B. das Ausblenden oder Aufheben der Ausblendung einer bestimmten Kategorie von Einblicken.
 
 1. Wählen Sie im Dialogfeld &quot;Intelligente Untertitel&quot;die Option ![Intelligente Untertitel bearbeiten..](/help/assets/icons/EditInLight.svg) .
 
@@ -63,7 +65,7 @@ Sie können die Beschriftungen bearbeiten, z. B. eine bestimmte Kategorie von Ei
 1. Wählen Sie **[!UICONTROL Anwenden]** aus.
 
 
-## Feedback geben
+### Feedback geben
 
 Sie können Feedback zu den generierten intelligenten Untertiteln geben.
 
@@ -73,13 +75,13 @@ Sie können Feedback zu den generierten intelligenten Untertiteln geben.
 
 1. Geben Sie im Dialogfeld **[!UICONTROL Vielen Dank für Ihr Feedback]** Ihr Feedback ein und wählen Sie **[!UICONTROL Senden]** aus, um das Feedback zu senden.
 
-## Untertitel exportieren {#export}
+### Exportieren {#export}
 
-Sie können **Untertitel über PDF** exportieren, solange das Projekt mit den generierten Untertiteln gespeichert wird.
+Sie können intelligente Untertitel als Teil einer PDF exportieren, solange das Projekt mit den generierten intelligenten Untertiteln gespeichert wird.
 
-## Beschriftungen deaktivieren {#toggle}
+### Deaktivieren {#toggle}
 
-Wenn Sie keine intelligenten Beschriftungen anzeigen möchten, können Sie diese Funktion deaktivieren.
+Wenn Sie keine intelligenten Beschriftungen anzeigen möchten, können Sie die Funktion deaktivieren.
 
 1. Wechseln Sie zu [Voreinstellungen für Visualisierungen](/help/analysis-workspace/user-preferences.md#visualizations-preferences).
 1. Deaktivieren Sie **[!UICONTROL Intelligente Beschriftungen anzeigen]**.
@@ -87,9 +89,6 @@ Wenn Sie keine intelligenten Beschriftungen anzeigen möchten, können Sie diese
    ![Linienvisualisierungsoptionen mit der Option zum Deaktivieren der Option &quot;Intelligente Untertitel anzeigen&quot;](assets/toggle-captions.png)
 
 1. Wählen Sie **[!UICONTROL Speichern]** aus, um die Voreinstellung zu speichern.
-
-
-
 
 
 ## Intelligente Beschriftungen in mobilen Scorecards
