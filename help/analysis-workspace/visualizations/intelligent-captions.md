@@ -4,9 +4,9 @@ title: Intelligente Beschriftungen
 feature: Visualizations
 exl-id: d32d3cda-ecbf-4ee7-a8b7-7c3c71b5df75
 role: User
-source-git-commit: 6a193f2fd179809afac6808f3fb958c020f53a8d
+source-git-commit: 9d94d52b14a4f119193696c1e5fc6df9538f77cb
 workflow-type: tm+mt
-source-wordcount: '646'
+source-wordcount: '632'
 ht-degree: 5%
 
 ---
@@ -19,8 +19,6 @@ Intelligente Beschriftungen sind auf Folgendes ausgerichtet:
 
 * Analysten, die Geschichten benötigen, um sie für andere Benutzer freizugeben. Analysten benötigen diese Einblicke, um ihren Benutzern Kontext bieten zu können.
 * Geschäftsbenutzer, die schnell allgemeine Schnellzugriffe entdecken möchten.
-
-Untertitel sind für alle Customer Journey Analytics-Benutzer verfügbar und erfordern keine speziellen Berechtigungen.
 
 ## Intelligente Beschriftungen starten {#launch}
 
@@ -101,7 +99,7 @@ Die folgenden Parameter steuern den Zugriff auf intelligente Untertitel:
 
 * **Lösungszugriff**: Die Funktion &quot;Intelligente Untertitel&quot;ist unter Customer Journey Analytics verfügbar, jedoch nicht in Adobe Analytics.
 
-* **Vertraglicher Zugriff**: Wenn Sie keine intelligenten Untertitel verwenden können, wenden Sie sich an den Administrator oder Adobe-Kundenbetreuer Ihres Unternehmens. Bevor Sie Intelligent in Ihrem Unternehmen verwenden können, müssen Sie bestimmten GenAI-bezogenen gesetzlichen Bestimmungen zustimmen.
+* **Vertragszugriff**: Wenn Sie keine intelligenten Untertitel verwenden können, wenden Sie sich an den Administrator oder Adobe-Kundenbetreuer Ihres Unternehmens. Bevor Sie intelligente Untertitel in Ihrer Organisation verwenden können, müssen Sie bestimmten GenAI-bezogenen gesetzlichen Bestimmungen zustimmen.
 
 * **Berechtigungen**: In der [!UICONTROL Adobe Admin Console] bestimmt die Berechtigung [!UICONTROL Berichterstellungs-Tools] **[!UICONTROL Intelligente Untertitel]** den Zugriff. Ein [Produktprofiladministrator](https://helpx.adobe.com/de/enterprise/using/manage-product-profiles.html) muss die folgenden Schritte in der [!UICONTROL Admin Console] ausführen:
    1. Navigieren Sie zu **[!UICONTROL Admin Console]** > **[!UICONTROL Produkte und Dienste]** > **[!UICONTROL Customer Journey Analytics]** > **[!UICONTROL Produktprofile]**.
