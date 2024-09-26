@@ -6,9 +6,9 @@ solution: Customer Journey Analytics
 feature: FAQ
 role: User
 source-git-commit: 22ae84479142d45f400f6ae39fe1416c9aaf7229
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2567'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -136,7 +136,7 @@ Nein, Sie können eine beliebige ID verwenden, einschließlich eines Hash einer 
 
 Adobe hat kürzlich die Verarbeitung von Daten in Customer Journey Analytics geändert:
 
-<ul><li>Ereignisdaten für den "aktuellen"Tag werden als Live-Daten gestreamt. Alle Daten mit einer Ereigniszeit vor 11:59:59 Uhr (23:59:59) am Vortag werden als Aufstockung behandelt.</li><li>Alle Ereignisdaten mit einem Zeitstempel, der älter als 24 Stunden ist (auch wenn sie sich im gleichen Batch wie neuere Daten befinden) werden als Aufstockung betrachtet und mit einer niedrigeren Priorität aufgenommen.</li></ul>
+<ul><li>Ereignisdaten für den „aktuellen“ Tag werden als Live-Daten gestreamt. Alle Daten mit einer Ereigniszeit vor 11:59:59 pm (23:59:59 Uhr) am Vortag werden als Aufstockung behandelt.</li><li>Alle Ereignisdaten mit einem Zeitstempel, der älter als 24 Stunden ist (auch wenn sie sich im gleichen Batch wie neuere Daten befinden) werden als Aufstockung betrachtet und mit einer niedrigeren Priorität aufgenommen.</li></ul>
 
 ## 5. Festlegen eines rollierenden Fensters für die Speicherung von [!UICONTROL Verbindungsdaten] {#data-retention}
 
