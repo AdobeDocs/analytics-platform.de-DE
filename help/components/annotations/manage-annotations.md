@@ -4,9 +4,9 @@ description: Verwalten von Anmerkungen in Workspace.
 feature: Components
 exl-id: 12f2cc2f-477c-4f16-afdd-b0db84725b32
 role: User
-source-git-commit: 01f862997503cb36502145eddb47873bc7cb28fe
+source-git-commit: 19d2130f4fae736a8553c1a3dd573706d4fb8083
 workflow-type: tm+mt
-source-wordcount: '764'
+source-wordcount: '763'
 ht-degree: 6%
 
 ---
@@ -36,7 +36,7 @@ In der Liste der Anmerkungen, die Sie besitzen, werden alle Anmerkungen, die fü
 | Spalte | Beschreibung |
 | --- | --- | 
 | ![StarOutline](/help/assets/icons/StarOutline.svg) | Wählen Sie diese Option aus, um ![Star](/help/assets/icons/Star.svg) oder eine Anmerkung für ![StarOutline](/help/assets/icons/StarOutline.svg) zu bevorzugen. |
-| **[!UICONTROL Titel und Beschreibung]** | Werden durch den Anmerkungsgenerator bereitgestellt. Um den Titel und die Beschreibung zu bearbeiten, wählen Sie den Titel-Link aus. Dadurch wird der [Anmerkungs-Builder](/help/components/annotations/create-annotations.md#annotation-builder) geöffnet. Eine gemeinsame Anmerkung wird mit ![Freigabe](/help/assets/icons/Share.svg) angegeben. |
+| **[!UICONTROL Titel und Beschreibung]** | Werden durch den Anmerkungsgenerator bereitgestellt. Um den Titel und die Beschreibung zu bearbeiten, wählen Sie den Titel-Link aus. Dadurch wird der [Anmerkungs-Builder](/help/components/annotations/create-annotations.md#annotation-builder) geöffnet. Eine gemeinsame Anmerkung wird mit ![Freigabe](/help/assets/icons/ShareLight.svg) angegeben. |
 | **[!UICONTROL Datenansicht]** | Die Datenansichten, für die diese Anmerkung gilt. |
 | **[!UICONTROL Inhabende]** | Der Eigentümer der Anmerkung. Als Benutzer sehen Sie nur die Anmerkungen, deren Inhaber Sie sind, oder die Anmerkungen, die für Sie freigegeben wurden. |
 | **[!UICONTROL Angewandter Datumsbereich]** | Das Datum oder der Datumsbereich, für das bzw. den diese Anmerkung gilt. |
@@ -57,7 +57,7 @@ Mit der Aktionsleiste können Sie Aktionen für Anmerkungen durchführen. Die Ak
 | ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Add]** | Fügen Sie mit dem [Anmerkung-Builder](create-annotations.md#annotation-builder) eine weitere Anmerkung hinzu. |
 | ![Suche](/help/assets/icons/Search.svg) [!UICONTROL *Suche nach Titel*] | Wenn in der Liste keine Anmerkung ausgewählt ist, suchen Sie mithilfe dieses Suchfelds nach Anmerkungen. |
 | ![Beschriftung](/help/assets/icons/Label.svg) **[!UICONTROL Tag]** | Taggen Sie die ausgewählten Anmerkungen. Wählen Sie im Dialogfeld **[!UICONTROL Tag-Komponente]** die Tags für die ausgewählten Anmerkungen aus oder heben Sie die Auswahl auf. Wählen Sie **[!UICONTROL Speichern]** aus, um die Tags für die ausgewählten Anmerkungen zu speichern. |
-| ![share](/help/assets/icons/Share.svg) **[!UICONTROL share]** | Freigeben der ausgewählten Anmerkungen. Im Dialogfeld **[!UICONTROL Komponente freigeben]** können Sie ![Suchen](/help/assets/icons/Search.svg) *Einzelpersonen oder Gruppen durchsuchen* oder Sie können **[!UICONTROL Organisation]** oder **[!UICONTROL Gruppen]** auswählen. Wählen Sie **[!UICONTROL Speichern]** aus, um Freigabedetails für die ausgewählten Anmerkungen zu speichern. Weitere Informationen finden Sie unter [Freigeben von Anmerkungen](#share-annotations) . |
+| ![share](/help/assets/icons/ShareLight.svg) **[!UICONTROL share]** | Freigeben der ausgewählten Anmerkungen. Im Dialogfeld **[!UICONTROL Komponente freigeben]** können Sie ![Suchen](/help/assets/icons/Search.svg) *Einzelpersonen oder Gruppen durchsuchen* oder Sie können **[!UICONTROL Organisation]** oder **[!UICONTROL Gruppen]** auswählen. Wählen Sie **[!UICONTROL Speichern]** aus, um Freigabedetails für die ausgewählten Anmerkungen zu speichern. Weitere Informationen finden Sie unter [Freigeben von Anmerkungen](#share-annotations) . |
 | ![Löschen](/help/assets/icons/Delete.svg) **[!UICONTROL Löschen]** | Löschen Sie die ausgewählten Anmerkungen. Sie werden zur Bestätigung aufgefordert. |
 | ![Bearbeiten](/help/assets/icons/Edit.svg) **[!UICONTROL Umbenennen]** | Umbenennen einer einzelnen ausgewählten Anmerkung Wenn diese Option aktiviert ist, können Sie die Anmerkung inline umbenennen. |
 | ![Kopieren](/help/assets/icons/Copy.svg) **[!UICONTROL Kopieren]** | Kopieren Sie die ausgewählten Anmerkungen. Neue Anmerkungen werden mit demselben Namen und Suffix (Kopieren) erstellt. |
@@ -69,7 +69,7 @@ Die Filterleiste zeigt die aktiven Filter an (falls vorhanden). Mit ![CrossSize7
 
 ### Filterbereich
 
-Sie können Anmerkungen mithilfe des linken Fensterfelds ![Filter](/help/assets/icons/Filter.svg) **[!UICONTROL Filter]** filtern. Im Filterbereich werden der Filtertyp und die Anzahl der Anmerkungen angezeigt, die den Filter berücksichtigen. Wählen Sie ![Filter](/help/assets/icons/Filter.svg) aus, um die Anzeige des Filterbereichs umzuschalten.
+Sie können Anmerkungen mithilfe des linken Fensterbereichs **[!UICONTROL Filter]** filtern. Im Filterbereich werden der Filtertyp und die Anzahl der Anmerkungen angezeigt, die den Filter berücksichtigen. Wählen Sie ![Filter](/help/assets/icons/Filter.svg) aus, um die Anzeige des Filterbereichs umzuschalten.
 
 So filtern Sie die Filterliste:
 
