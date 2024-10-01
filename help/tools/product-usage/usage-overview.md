@@ -3,7 +3,7 @@ title: Produktnutzung - Übersicht
 description: Zeigen Sie Einblicke und Berichte dazu an, wie Ihr Unternehmen Customer Journey Analytics verwendet.
 hide: true
 hidefromtoc: true
-source-git-commit: 8f2a340f59d8cdf97a5309ec20dc36f49b8f1129
+source-git-commit: dcd3ee5f3db5af434b87bfded0e360c66643793e
 workflow-type: tm+mt
 source-wordcount: '373'
 ht-degree: 6%
@@ -25,7 +25,7 @@ Die Datenerfassung und -einrichtung wird automatisch für Sie konfiguriert, soba
 
 >[!IMPORTANT]
 >
->Diese Funktion zählt zu Ihren vertraglichen Datenbeschränkungen in Adobe Experience Platform. Stellen Sie sicher, dass Ihre Organisation die durch diese Funktion erzeugten Daten berücksichtigen kann, bevor Sie sie aktivieren.
+>Diese Funktion zählt zu Ihren vertraglichen Zeilenbeschränkungen in Adobe Experience Platform. Stellen Sie sicher, dass Ihre Organisation die durch diese Funktion erzeugten Daten berücksichtigen kann, bevor Sie sie aktivieren.
 
 ## Verfügbare Dimensionen
 

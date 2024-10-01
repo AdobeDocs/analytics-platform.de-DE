@@ -3,9 +3,9 @@ title: Einstellungen für Produktverwendungsdaten
 description: Produktnutzungseinstellungen aktivieren, deaktivieren oder konfigurieren.
 hide: true
 hidefromtoc: true
-source-git-commit: 8f2a340f59d8cdf97a5309ec20dc36f49b8f1129
+source-git-commit: 40b761928697d1d55e1177aa7b2b3c056739ecc9
 workflow-type: tm+mt
-source-wordcount: '292'
+source-wordcount: '318'
 ht-degree: 0%
 
 ---
@@ -25,8 +25,8 @@ Die Seite _Dateneinstellungen_ verarbeitet Ihre Produktverwendungskonfiguration.
 Die folgenden Einstellungen sind auf dieser Seite verfügbar:
 
 * **Produktnutzung aktivieren**: Schaltet die Verfügbarkeit der Datenerfassung zur Produktnutzung um. Wenn Sie die Produktnutzung aktivieren und sie später deaktivieren, werden der Datensatz, die Verbindung und die Datenansicht nicht gelöscht. Das Tracking ist für Ihr Unternehmen global deaktiviert, wenn es deaktiviert wurde.
-* **Sandbox**: Bestimmt die Adobe Experience Platform-Sandbox, unter der das Schema und der Datensatz erstellt werden. Die von Ihnen ausgewählte Sandbox wirkt sich nicht auf die Datenerfassung zur Produktnutzung aus. Wenn Sie diese Sandbox-Einstellung ändern, wird eine separate Datensatz-, Verbindungs- und Datenansicht erstellt. Historische Daten verbleiben in der vorherigen Sandbox.
-* **Datenaufbewahrungsfenster überschreiben**: Jeder Datensatz verfügt über ein standardmäßiges Datenaufbewahrungsfenster. Wenn diese Einstellung deaktiviert ist, folgt bei der Produktnutzung der standardmäßige Zeitraum. Sie können diese Einstellung aktivieren, wenn Sie die Aufbewahrungsdauer der Daten verkürzen möchten. Sie können die Datenaufbewahrung nicht über das standardmäßige Datenaufbewahrungsfenster des Datensatzes hinaus erweitern.
+* **Sandbox**: Bestimmt die Adobe Experience Platform-Sandbox, unter der das Schema und der Datensatz erstellt werden. Die von Ihnen ausgewählte Sandbox wirkt sich nicht auf die Datenerfassung zur Produktnutzung aus. Wenn Sie diese Sandbox-Einstellung ändern, werden alle vorhandenen Daten gelöscht. In der ausgewählten Sandbox wird ein neuer Datensatz, eine neue Verbindung und eine neue Datenansicht erstellt.
+* **Datenaufbewahrungsfenster überschreiben**: Jeder Datensatz verfügt über ein standardmäßiges Datenaufbewahrungsfenster. Wenn diese Einstellung deaktiviert ist, folgt bei der Produktnutzung der standardmäßige Zeitraum. Sie können diese Einstellung aktivieren, wenn Sie die Aufbewahrungsdauer der Daten verkürzen möchten. Die Verkürzung des Zeitfensters für die Datenaufbewahrung hilft Ihnen, Kosten zu senken und die Einhaltung von firmenspezifischen Datenschutzrichtlinien zu ermöglichen. Sie können die Datenaufbewahrung nicht über das standardmäßige Datenaufbewahrungsfenster des Datensatzes hinaus erweitern.
 
 >[!CONTEXTUALHELP]
 >id="cja_product_usage_sandbox"
@@ -36,4 +36,4 @@ Die folgenden Einstellungen sind auf dieser Seite verfügbar:
 >[!CONTEXTUALHELP]
 >id="cja_product_usage_data_retention"
 >title="Datenaufbewahrungsfenster überschreiben"
->abstract="Verkürzen Sie die Verfügbarkeit von Produktverwendungsdaten, um die Kosten zu senken."
+>abstract="Verkürzen Sie die Verfügbarkeit von Produktverwendungsdaten, um Kosten zu reduzieren oder Datenschutzrichtlinien einzuhalten."
