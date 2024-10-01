@@ -6,9 +6,9 @@ feature: Workspace Basics
 exl-id: 9075518e-54fe-49a6-9601-aa9468187b8f
 solution: Customer Journey Analytics
 role: User
-source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
+source-git-commit: cfc48aea3f474fedece022898f224ee68fb2b649
 workflow-type: tm+mt
-source-wordcount: '1511'
+source-wordcount: '1493'
 ht-degree: 13%
 
 ---
@@ -24,7 +24,6 @@ Mit Analysis Workspace können Sie schnell Analysen erstellen, um Einblicke zu g
 
 {{videoaa}}
 
-
 +++
 
 ## Benutzeroberfläche
@@ -36,7 +35,7 @@ In der folgenden Abbildung und der zugehörigen Tabelle werden die wichtigsten E
 | Standort | Name und Funktion |
 |:---------:|----------|
 | ?? | Enthält den Projektnamen, eine Menüstruktur für den Zugriff auf die Funktionen, eine Schaltfläche ![ChevronLeft](/help/assets/icons/ChevronLeft.svg) zum Zurückkehren zur Projektliste und eine Schaltfläche zum Freigeben **[!UICONTROL 3} für das Freigeben Ihres Workspace-Projekts.]** <br/>Wählen Sie den Namen Ihres Projekts (z. B. Beispielprojekt) jederzeit aus, um den Namen zu ändern. <br/>Wählen Sie ![StarOutline](/help/assets/icons/StarOutline.svg) aus, um Ihr Projekt als bevorzugtes Projekt ![Star](/help/assets/icons/Star.svg) hinzuzufügen. |
-| ?? | **Schaltflächenbereich:** Enthält Schaltflächen für den Zugriff auf die Schlüssel [features](#features) von Analysis Workspace: ![WebPage](/help/assets/icons/WebPage.svg) **[!UICONTROL Panels]**, ![GraphBarVertical](/help/assets/icons/GraphBarVertical.svg) **[!UICONTROL Visualisierungen]** und ![Kuratieren](/help/assets/icons/Curate.svg) **[!UICONTROL Komponenten]** in Analysis Workspace. Der Bereich enthält auch die Schaltfläche ![ViewList](/help/assets/icons/ViewList.svg) **[!UICONTROL Inhaltsverzeichnis]** und ![Lesezeichen](/help/assets/icons/Bookmark.svg) **[!UICONTROL Datenwörterbuch]** , um das Datenwörterbuch zu öffnen. |
+| ?? | **Schaltflächenbedienfeld:** Enthält Schaltflächen für den Zugriff auf die Schlüssel [features](#features) von Analysis Workspace:<br/>![WebPage](/help/assets/icons/WebPage.svg) **[!UICONTROL Bedienfelder]**<br/>![Geführte Analyse](/help/assets/icons/GuidedAnalysis.svg)**[!UICONTROL  Geführte Analyse]**<br/>![GraphBarVertical](/help/assets/icons/GraphBarVertical.svg) **[!UICONTROL Visualisierungen]**<br/>![Kuratieren](/help/assets/icons/Curate.svg)**[!UICONTROL  Komponenten]**<br/>![ViewList](/help/assets/icons/ViewList.svg) **[!UICONTROL Inhaltsverzeichnis]**<br/>![Lesezeichen](/help/assets/icons/Bookmark.svg)**[!UICONTROL  Datenwörterbuch ]** |
 | ?? | **Linker Bereich:** Dieser Bereich enthält einzelne Bereiche, Visualisierungen, Komponenten oder Listen. Der Inhalt hängt von der im Schaltflächenbedienfeld ausgewählten Schaltfläche ab. |
 | ?? | **Arbeitsfläche:** Der Hauptbereich, in den Sie Inhalte aus dem linken Bereich ziehen, um Ihr Projekt zu erstellen. Das Projekt wird dynamisch aktualisiert, wenn Sie Bedienfelder hinzufügen, Visualisierungen zu Bedienfeldern hinzufügen und Komponenten zu Visualisierungen hinzufügen. Sie können mehrere Bedienfelder erstellen und in jedem Bedienfeld mehrere Visualisierungen erstellen.<br/>Jeder Bereich basiert auf einer ausgewählten Datenansicht. Die ausgewählte Datenansicht bestimmt verfügbare Komponenten wie Metriken und Dimensionen. Weitere Informationen finden Sie unter [Bedienfelder - Datenansicht](/help/analysis-workspace/c-panels/panels.md#data-view) . |
 
@@ -46,11 +45,12 @@ Die wichtigsten Funktionen von Analysis Workspace sind über das Schaltflächenb
 
 | Symbol | Funktion | Beschreibung |
 |:---:|---|---|
-| ![WebPage](/help/assets/icons/WebPage.svg) | **[!UICONTROL Bedienfelder]** | Bedienfelder werden verwendet, um Ihre Analyse in einem Projekt zu organisieren, und können viele Tabellen und Visualisierungen enthalten. Viele der in Analysis Workspace bereitgestellten Bedienfelder generieren einen vollständigen Satz von Analysen auf der Grundlage einiger Benutzereingaben. Wählen Sie im Schaltflächenbedienfeld ![WebPage](/help/assets/icons/WebPage.svg) aus, um eine vollständige Liste der verfügbaren Bedienfelder anzuzeigen.<br/>Weitere Informationen zu Bedienfeldern finden Sie unter [Übersicht über Bedienfelder](/help/analysis-workspace/c-panels/panels.md). |
-| ![GraphBarVertical](/help/assets/icons/GraphBarVertical.svg) | **[!UICONTROL Visualisierungen]** | Visualisierungen wie Balken- oder Liniendiagramme können verwendet werden, um Daten visuell darzustellen. Wählen Sie im linken Bereich das mittlere Symbol **[!UICONTROL Visualisierungen]** aus, um die vollständige Liste der verfügbaren Visualisierungen anzuzeigen. <br/>Weitere Informationen zu Visualisierungen finden Sie unter [Visualisierungsübersicht](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md). |
-| ![Kuratieren](/help/assets/icons/Curate.svg) | **[!UICONTROL Komponenten]** | Komponenten in Analysis Workspace sind:<ul><li>![Dimensionen](/help/assets/icons/Dimensions.svg) [Dimensionen](/help/components/dimensions/overview.md)</li><li>![Ereignis](/help/assets/icons/Event.svg) [Metriken](/help/components/apply-create-metrics.md)</li><li>![Segmentierung](/help/assets/icons/Segmentation.svg) [Filter](/help/components/filters/filters-overview.md)</li><li>![Kalender](/help/assets/icons/Calendar.svg) [Datumsbereiche](/help/components/date-ranges/overview.md)</li></ul>Weitere Informationen zu den einzelnen Komponententypen finden Sie in der [Komponentenübersicht](/help/components/overview.md). |
-| ![ViewList](/help/assets/icons/ViewList.svg) | **[!UICONTROL Inhaltsverzeichnis]** | Das Inhaltsverzeichnis organisiert alle Bedienfelder und Visualisierungen in einer ausblendbaren Liste, sodass Sie schnell auf ein bestimmtes Bedienfeld oder eine bestimmte Visualisierung zugreifen können. |
-| ![Lesezeichen](/help/assets/icons/Bookmark.svg) | **Datenwörterbuch** | Das Datenwörterbuch in Analysis Workspace hilft Benutzern und Administratoren, die Komponenten in ihrer Analytics-Umgebung zu verfolgen und besser zu verstehen.<br/>Weitere Informationen zum Datenwörterbuch finden Sie in der [Übersicht über das Datenwörterbuch](/help/components/data-dictionary/data-dictionary-overview.md). |
+| ![WebPage](/help/assets/icons/WebPage.svg) | **[!UICONTROL Bedienfelder]** | [Bedienfelder](/help/analysis-workspace/c-panels/panels.md) dienen zur Organisation Ihrer Analyse in einem Projekt und können viele Tabellen und Visualisierungen enthalten. Viele der in Analysis Workspace bereitgestellten Bedienfelder generieren einen vollständigen Satz von Analysen auf der Grundlage einiger Benutzereingaben. Wählen Sie im Schaltflächenbedienfeld ![WebPage](/help/assets/icons/WebPage.svg) aus, um eine vollständige Liste der verfügbaren Bedienfelder anzuzeigen. |
+| ![ Geführte Analyse](/help/assets/icons/GuidedAnalysis.svg) | **[!UICONTROL Geführte Analyse]** | [Geführte Analyse](../guided-analysis/overview.md) ermöglicht es Ihnen, durch geführte Workflows hochwertige Daten und Einblicke über die Journey des Kunden selbst bereitzustellen. Sie können eine Analyse erstellen, um sie in Ihr Workspace-Projekt aufzunehmen, oder eine bereits gespeicherte Analyse einbeziehen. |
+| ![GraphBarVertical](/help/assets/icons/GraphBarVertical.svg) | **[!UICONTROL Visualisierungen]** | [Visualisierungen](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md), wie Balken- oder Liniendiagramme, können verwendet werden, um Daten visuell darzustellen. Wählen Sie im linken Bereich das mittlere Symbol **[!UICONTROL Visualisierungen]** aus, um die vollständige Liste der verfügbaren Visualisierungen anzuzeigen. |
+| ![Kuratieren](/help/assets/icons/Curate.svg) | **[!UICONTROL Komponenten]** | [Komponenten](/help/components/overview.md) enthalten die folgenden Elemente:<ul><li>![Dimensionen](/help/assets/icons/Dimensions.svg) [Dimensionen](/help/components/dimensions/overview.md)</li><li>![Ereignis](/help/assets/icons/Event.svg) [Metriken](/help/components/apply-create-metrics.md)</li><li>![Segmentierung](/help/assets/icons/Segmentation.svg) [Filter](/help/components/filters/filters-overview.md)</li><li>![Kalender](/help/assets/icons/Calendar.svg) [Datumsbereiche](/help/components/date-ranges/overview.md)</li></ul> |
+| ![ViewList](/help/assets/icons/ViewList.svg) | **[!UICONTROL Inhaltsverzeichnis]** | Das Inhaltsverzeichnis organisiert alle im Projekt enthaltenen Bedienfelder und Visualisierungen in einer ausblendbaren Liste, sodass Sie schnell auf ein bestimmtes Bedienfeld oder eine bestimmte Visualisierung zugreifen können. |
+| ![Lesezeichen](/help/assets/icons/Bookmark.svg) | **Datenwörterbuch** | Das [Datenwörterbuch](/help/components/data-dictionary/data-dictionary-overview.md) hilft Benutzern und Administratoren dabei, die Komponenten in ihrer Analytics-Umgebung zu verfolgen und besser zu verstehen. |
 
 
 ## Menü

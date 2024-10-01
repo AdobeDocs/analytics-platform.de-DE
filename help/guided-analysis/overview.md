@@ -5,10 +5,10 @@ keywords: Produktanalysen
 exl-id: 1ac8157f-87e8-4d98-a2ca-f6beb68d9d6b
 feature: Guided Analysis
 role: User
-source-git-commit: 664756b796e8915a701ccabfb5f250e777701b60
+source-git-commit: cfc48aea3f474fedece022898f224ee68fb2b649
 workflow-type: tm+mt
-source-wordcount: '1392'
-ht-degree: 99%
+source-wordcount: '1435'
+ht-degree: 91%
 
 ---
 
@@ -20,19 +20,19 @@ Mit geführten Analysen können Benutzende hochwertige Daten und Erkenntnisse zu
 
 Die folgenden Ansichten geführter Analysen sind verfügbar:
 
-| Analysetyp | Ansichtstyp | Beschreibung |
-| --- | --- | --- |
-| [!UICONTROL Funktionsmatrix] | [Interaktion](types/engagement.md) | Erfahren Sie mehr über Umfang und Tiefe der Funktionsinteraktion. |
-| [!UICONTROL Trichter] | [Reibung](types/friction.md) | Vergleichen Sie die Konversionsraten zwischen den Schritten. |
-| [!UICONTROL Trichter] | [Konversions-Trends](types/conversion-trends.md) | Verfolgen Sie ie dVeränderungen der Konversionsraten im Laufe der Zeit. |
-| [!UICONTROL Auswirkungen] | [Version](types/release.md) | Vergleichen Sie die Leistung in gleichen Zeiträumen vor und nach der Veröffentlichung. |
-| [!UICONTROL Auswirkungen] | [Erstmalige Verwendung](types/first-use.md) | Messen Sie die Auswirkung der erstmaligen Verwendung von Funktionen auf Schlüsselindikatoren. |
-| [!UICONTROL Treue] | [Bindungsquote](types/retention-rates.md) | Messen Sie die Rückkehrgewohnheiten Ihrer Benutzenden. |
-| [!UICONTROL Trends] | [Verwendung](types/usage.md) | Messen Sie die Benutzerinteraktion im Zeitverlauf. |
-| [!UICONTROL Trends] | [Häufigkeit](types/frequency.md) | Messen Sie die Interaktion anhand der Nutzungshäufigkeit. |
-| [!UICONTROL Benutzerwachstum] | [Aktiv](types/active.md) | Identifizieren Sie, wer neu ist, bleibt, zurückkehrt oder inaktiv ist. |
-| [!UICONTROL Benutzerwachstum] | [Nettowachstum](types/net-growth.md) | Gewinnen oder verlieren Sie Benutzende? |
-| [!UICONTROL Benutzer-Stream] | [Timeline](types/timeline.md) | Untersuchen Sie Muster in der Sitzungsaktivität. |
+| Ansichtstyp | Beschreibung |
+| --- | --- |
+| [Interaktion](types/engagement.md) | Erfahren Sie mehr über Umfang und Tiefe der Funktionsinteraktion. |
+| [Reibung](types/friction.md) | Vergleichen Sie die Konversionsraten zwischen den Schritten. |
+| [Konversions-Trends](types/conversion-trends.md) | Verfolgen Sie ie dVeränderungen der Konversionsraten im Laufe der Zeit. |
+| [Version](types/release.md) | Vergleichen Sie die Leistung in gleichen Zeiträumen vor und nach der Veröffentlichung. |
+| [Erstmalige Verwendung](types/first-use.md) | Messen Sie die Auswirkung der erstmaligen Verwendung von Funktionen auf Schlüsselindikatoren. |
+| [Bindungsquote](types/retention-rates.md) | Messen Sie die Rückkehrgewohnheiten Ihrer Benutzenden. |
+| [Verwendung](types/usage.md) | Messen Sie die Benutzerinteraktion im Zeitverlauf. |
+| [Häufigkeit](types/frequency.md) | Messen Sie die Interaktion anhand der Nutzungshäufigkeit. |
+| [Aktiv](types/active.md) | Identifizieren Sie, wer neu ist, bleibt, zurückkehrt oder inaktiv ist. |
+| [Nettowachstum](types/net-growth.md) | Gewinnen oder verlieren Sie Benutzende? |
+| [Timeline](types/timeline.md) | Untersuchen Sie Muster in der Sitzungsaktivität. |
 
 {style="table-layout:auto"}
 
@@ -40,15 +40,27 @@ Die folgenden Ansichten geführter Analysen sind verfügbar:
 
 Sie können von der Customer Journey Analytics-Startseite aus auf die Geführte Analyse zugreifen.
 
-1. Klicken Sie auf der Startseite auf **[!UICONTROL Geführte Analyse]**. Von dort aus werden Sie direkt zur [Ansicht der Nutzungs-Trends](types/usage.md) weitergeleitet.
+1. Wählen Sie **[!UICONTROL Geführte Analyse]** von der Startseite aus, wodurch Sie direkt zur Ansicht [Nutzungstrends](types/usage.md) gelangen.
 
    ![Titel der Landingpage](assets/landing-page-tile.png){style="border:1px solid gray"}
 
-1. Klicken Sie auf **[!UICONTROL Neu erstellen]**, um die verschiedenen Ansichtsoptionen anzuzeigen und einen anderen Ausgangspunkt für Ihre Analyse auszuwählen.
+1. Wählen Sie **[!UICONTROL Neu erstellen]** aus, um die verschiedenen Anzeigeoptionen anzuzeigen und einen anderen Ausgangspunkt für Ihre Analyse auszuwählen.
 
    ![Erstellen eines neuen Modals](assets/create-new-modal.png){style="border:1px solid gray"}
 
-Wenn Ihr Unternehmen noch nicht für die geführte Analyse freigeschaltet ist, wenden Sie sich bitte an Ihr Adobe-Accountteam.
+Sie können auch von einem Analysis Workspace-Projekt aus auf die geführte Analyse zugreifen.
+
+1. Wählen Sie auf der Startseite die Option **[!UICONTROL Leeres Projekt]** aus, um ein leeres Workspace-Projekt zu erstellen.
+
+   ![Leeres Projekt erstellen](assets/blank-project.png){style="border:1px solid gray"}
+
+1. Wählen Sie in der linken Leiste die Option ![Geführte Analyse](/help/assets/icons/GuidedAnalysis.svg) **[!UICONTROL Geführte Analyse]** aus.
+
+   ![Linke Leiste von Workspace](assets/workspace-left-rail.png){style="border:1px solid gray"}
+
+1. Ziehen Sie einen beliebigen Ansichtstyp auf die Workspace-Arbeitsfläche und wählen Sie dann die Schaltfläche **[!UICONTROL Erstellen]** aus, um die gewünschte Analyse zu erstellen. Sie können eine vorhandene Analyse auch aus dem Bereich **[!UICONTROL Speichern]** auf die Workspace-Arbeitsfläche ziehen.
+
+   ![Bedienfeld erstellen](assets/create-panel.png)
 
 ## Benutzeroberfläche
 
