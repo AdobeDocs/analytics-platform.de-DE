@@ -4,78 +4,114 @@ description: Verwalten von Anmerkungen in Workspace.
 feature: Components
 exl-id: 12f2cc2f-477c-4f16-afdd-b0db84725b32
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 01f862997503cb36502145eddb47873bc7cb28fe
 workflow-type: tm+mt
-source-wordcount: '692'
-ht-degree: 100%
+source-wordcount: '764'
+ht-degree: 6%
 
 ---
 
 # Verwalten von Anmerkungen
 
-Die Anmerkungsverwaltung ([!UICONTROL Komponenten] > [!UICONTROL Anmerkungen]) bietet viele Möglichkeiten zum Verwalten von Anmerkungen, z. B. Freigeben, Filtern, Markieren, Genehmigen, Kopieren, Löschen und Markieren als Favorit.
+Sie können Anmerkungen in einer zentralen Verwaltungsoberfläche von [!UICONTROL Anmerkungen] freigeben, filtern, taggen, genehmigen, kopieren, löschen und als Favoriten markieren. So verwalten Sie Anmerkungen:
 
-Die [!UICONTROL Anmerkungsverwaltung] zeigt Ihnen alle Anmerkungen an, die Ihnen gehören und für alle Ihre Projekte gelten und die für Sie freigegeben wurden.
+* Wählen Sie **[!UICONTROL Komponenten]** in der Hauptbenutzeroberfläche und dann **[!UICONTROL Anmerkungen]** aus.
+
 
 >[!NOTE]
 >
->[!UICONTROL Anmerkungen], die Sie nur für ein bestimmtes Projekt erstellt haben, werden nicht in der Anmerkungsverwaltung angezeigt.
+>Die Anmerkungen, die Sie in einem bestimmten Workspace-Projekt erstellen, werden nicht im Manager [!UICONTROL Anmerkungen] angezeigt, es sei denn, Sie haben die Anmerkung für alle Ihre Projekte verfügbar gemacht.
+>
 
-## Benutzeroberfläche der Anmerkungsverwaltung
+## Anmerkungs-Manager
 
-![Anmerkungsoptionen wie das Freigeben, Tagging oder Kopieren, die im nächsten Abschnitt beschrieben werden.](assets/annotation-mgr.png)
+Der Anmerkungs-Manager verfügt über die folgenden Elemente der Benutzeroberfläche:
 
-| UI-Element | Beschreibung |
+![ Benutzeroberfläche für Anmerkungen](assets/annotations-manager.png)
+
+### Anmerkungsliste
+
+In der Liste der Anmerkungen, die Sie besitzen, werden alle Anmerkungen, die für alle Ihre Projekte in den Gültigkeitsbereich fallen, sowie die für Sie freigegebenen Anmerkungen angezeigt. Die Liste enthält die folgenden Spalten:
+
+| Spalte | Beschreibung |
 | --- | --- | 
-| [!UICONTROL Titel und Beschreibung] | Werden durch den Anmerkungsgenerator bereitgestellt. Klicken Sie auf den Titel-Link, um den Titel und die Beschreibung zu bearbeiten. Dadurch gelangen Sie zurück zum Anmerkungsgenerator. |
-| [!UICONTROL Datenansicht] | Die Datenansicht(en), für die diese Anmerkung gilt. |
-| [!UICONTROL Inhaber] | Zeigt an, wer Inhaber der Anmerkung ist. Wenn Sie kein Administrator sind, können Sie nur Anmerkungen sehen, deren Inhaber Sie sind, sowie Anmerkungen, die für Sie freigegeben wurden. |
-| [!UICONTROL Angewendeter Datumsbereich] | Das Datum oder der Datumsbereich, für das bzw. den diese Anmerkung gilt. |
-| [!UICONTROL Freigegeben für] | Listet auf, für wie viele Einzelpersonen oder Gruppen Sie die Anmerkung freigegeben haben. Klicken Sie hier, um weitere Details anzuzeigen. |
-| [!UICONTROL Änderungsdatum] | Zeigt das Datum und die Uhrzeit der letzten Änderung der Anmerkung an. |
+| ![StarOutline](/help/assets/icons/StarOutline.svg) | Wählen Sie diese Option aus, um ![Star](/help/assets/icons/Star.svg) oder eine Anmerkung für ![StarOutline](/help/assets/icons/StarOutline.svg) zu bevorzugen. |
+| **[!UICONTROL Titel und Beschreibung]** | Werden durch den Anmerkungsgenerator bereitgestellt. Um den Titel und die Beschreibung zu bearbeiten, wählen Sie den Titel-Link aus. Dadurch wird der [Anmerkungs-Builder](/help/components/annotations/create-annotations.md#annotation-builder) geöffnet. Eine gemeinsame Anmerkung wird mit ![Freigabe](/help/assets/icons/Share.svg) angegeben. |
+| **[!UICONTROL Datenansicht]** | Die Datenansichten, für die diese Anmerkung gilt. |
+| **[!UICONTROL Inhabende]** | Der Eigentümer der Anmerkung. Als Benutzer sehen Sie nur die Anmerkungen, deren Inhaber Sie sind, oder die Anmerkungen, die für Sie freigegeben wurden. |
+| **[!UICONTROL Angewandter Datumsbereich]** | Das Datum oder der Datumsbereich, für das bzw. den diese Anmerkung gilt. |
+| **[!UICONTROL Tags]** | Die Tags für diese Anmerkung. |
+| **[!UICONTROL Freigegeben für]** | Die Personen oder Gruppen, für die Sie die Anmerkung freigegeben haben. Klicken Sie auf , um das Dialogfeld **[!UICONTROL Komponente freigeben]** zu öffnen. |
+| **[!UICONTROL Datum geändert]** | Zeigt Datum und Uhrzeit der letzten Änderung der Anmerkung an. |
 
 {style="table-layout:auto"}
+
+Verwenden Sie ![ColumnSetting](/help/assets/icons/ColumnSetting.svg) , um anzugeben, welche Spalten angezeigt werden sollen.
+
+### Symbolleiste
+
+Mit der Aktionsleiste können Sie Aktionen für Anmerkungen durchführen. Die Aktionsleiste enthält die folgenden Aktionen:
+
+| Aktion | Beschreibung |
+|---|---|
+| ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Add]** | Fügen Sie mit dem [Anmerkung-Builder](create-annotations.md#annotation-builder) eine weitere Anmerkung hinzu. |
+| ![Suche](/help/assets/icons/Search.svg) [!UICONTROL *Suche nach Titel*] | Wenn in der Liste keine Anmerkung ausgewählt ist, suchen Sie mithilfe dieses Suchfelds nach Anmerkungen. |
+| ![Beschriftung](/help/assets/icons/Label.svg) **[!UICONTROL Tag]** | Taggen Sie die ausgewählten Anmerkungen. Wählen Sie im Dialogfeld **[!UICONTROL Tag-Komponente]** die Tags für die ausgewählten Anmerkungen aus oder heben Sie die Auswahl auf. Wählen Sie **[!UICONTROL Speichern]** aus, um die Tags für die ausgewählten Anmerkungen zu speichern. |
+| ![share](/help/assets/icons/Share.svg) **[!UICONTROL share]** | Freigeben der ausgewählten Anmerkungen. Im Dialogfeld **[!UICONTROL Komponente freigeben]** können Sie ![Suchen](/help/assets/icons/Search.svg) *Einzelpersonen oder Gruppen durchsuchen* oder Sie können **[!UICONTROL Organisation]** oder **[!UICONTROL Gruppen]** auswählen. Wählen Sie **[!UICONTROL Speichern]** aus, um Freigabedetails für die ausgewählten Anmerkungen zu speichern. Weitere Informationen finden Sie unter [Freigeben von Anmerkungen](#share-annotations) . |
+| ![Löschen](/help/assets/icons/Delete.svg) **[!UICONTROL Löschen]** | Löschen Sie die ausgewählten Anmerkungen. Sie werden zur Bestätigung aufgefordert. |
+| ![Bearbeiten](/help/assets/icons/Edit.svg) **[!UICONTROL Umbenennen]** | Umbenennen einer einzelnen ausgewählten Anmerkung Wenn diese Option aktiviert ist, können Sie die Anmerkung inline umbenennen. |
+| ![Kopieren](/help/assets/icons/Copy.svg) **[!UICONTROL Kopieren]** | Kopieren Sie die ausgewählten Anmerkungen. Neue Anmerkungen werden mit demselben Namen und Suffix (Kopieren) erstellt. |
+| ![FileCSV](/help/assets/icons/FileCSV.svg) **[!UICONTROL Export in CSV]** | Exportieren Sie die Anmerkungen in eine `Annotations List.csv` -Datei. |
+
+### Aktive Filterleiste
+
+Die Filterleiste zeigt die aktiven Filter an (falls vorhanden). Mit ![CrossSize75](/help/assets/icons/CrossSize75.svg) können Sie schnell einen Filter entfernen. Wenn mehr als ein Filter angegeben ist, können Sie alle Filter mit **[!UICONTROL Alle entfernen]** entfernen.
+
+### Filterbereich
+
+Sie können Anmerkungen mithilfe des linken Fensterfelds ![Filter](/help/assets/icons/Filter.svg) **[!UICONTROL Filter]** filtern. Im Filterbereich werden der Filtertyp und die Anzahl der Anmerkungen angezeigt, die den Filter berücksichtigen. Wählen Sie ![Filter](/help/assets/icons/Filter.svg) aus, um die Anzeige des Filterbereichs umzuschalten.
+
+So filtern Sie die Filterliste:
+
+1. Wählen Sie ![Filter](/help/assets/icons/Filter.svg) aus, um den Bereich &quot;Filter&quot;zu öffnen. Wenn Sie mehr Platz für die Liste &quot;Filter&quot;benötigen, können Sie ![Filter](/help/assets/icons/Filter.svg) erneut auswählen, um den Bereich zu schließen.
+1. Sie können die Anmerkungen mit einem der verfügbaren [Filterabschnitte](#filter-sections) filtern.
+
+   >[!INFO]
+   >
+   >*Elemente* beziehen sich auf die Anmerkungselemente, die in der Liste [Anmerkungen](manage-annotations.md#annotations-list) angezeigt werden.
+   > 
+
+#### Filterabschnitte
+
+{{tagfiltersection}}
+{{dataviewfiltersection}}
+{{ownerfiltersection}}
+{{daterangefiltersection}}
+{{otherfiltersfiltersection}}
+
+
+Die [Anmerkungsliste](manage-annotations.md#annotations-list) wird basierend auf Ihrer Filterkonfiguration automatisch aktualisiert. Die konfigurierten Filter werden in der [aktiven Filterleiste](manage-annotations.md#active-filter-bar) angezeigt.
+
 
 ## Bearbeiten von Anmerkungen
 
-Sie können eine Anmerkung bearbeiten, indem Sie Datumsbereiche, Farben oder den Umfang anpassen. Sie können ebenfalls festlegen, ob die Anmerkung für alle Datenansichten oder Projekte gilt oder nicht. Anmerkungen können auf zwei Arten bearbeitet werden:
+Sie können Anmerkungen auf zwei Arten bearbeiten:
 
-* Bewegen Sie in einem Liniendiagramm den Mauszeiger über die Anmerkung und klicken Sie im Popover auf das Stiftsymbol.
+* Verwenden Sie in einem Workspace-Projekt das Symbol [Komponenteninformationen](/help/components/use-components-in-workspace.md#component-info) .
 
-* Klicken Sie in der [!UICONTROL Anmerkungsverwaltung] auf den Titel der Anmerkung.
+* Wählen Sie in der Liste [[!UICONTROL Anmerkungen] ](#annotations-list) den Titel der Anmerkung aus.
 
-Beide dieser Optionen bringen Sie zum Anmerkungsgenerator zurück. Dort können Sie die erforderlichen Anpassungen vornehmen und die neue Version speichern.
+Sie verwenden den [Anmerkungs-Builder](/help/components/annotations/create-annotations.md#annotation-builder), um die Anmerkung zu bearbeiten.
 
 ## Freigeben von Anmerkungen
 
-Beachten Sie Folgendes beim Freigeben von Anmerkungen oder Arbeiten mit Anmerkungen, die für Sie freigegeben wurden:
+Folgendes gilt beim Freigeben von Anmerkungen oder Arbeiten mit Anmerkungen, die für Sie freigegeben sind:
 
-* Angenommen, Sie erstellen ein Projekt mit nur projektbezogenen Anmerkungen und geben das Projekt dann für einen anderen Benutzer frei. Diese Anmerkungen werden angezeigt, können jedoch von niemandem bearbeitet oder gelöscht werden, für den Sie das Projekt freigeben.
+* Für diese Benutzer werden nur Projektanmerkungen in einem Projekt angezeigt, das Sie für andere Benutzer freigeben. Die Benutzer können diese reinen Anmerkungen des Projekts nicht bearbeiten oder löschen.
+* Wenn Sie eine Anmerkung speichern und die Anmerkung direkt für einen Benutzer freigeben, kann dieser Benutzer die Anmerkung nur dann bearbeiten und löschen, wenn dieser Benutzer über Administratorrechte verfügt.
 
-* Wenn Sie eine Anmerkung speichern und direkt für einen Benutzer freigeben, kann dieser die Anmerkung nur bearbeiten/löschen, wenn er über Administratorrechte verfügt.
-
-* Also: Wenn das Projekt für Sie freigegeben wurde, wird es nur in diesem Projekt angezeigt. Wenn die Anmerkung direkt für Sie freigegeben wird, wird sie in allen Projekten angezeigt, in denen diese Anmerkung angezeigt werden kann.
+* Wenn ein Projekt für Sie freigegeben wird, werden in diesem Projekt erstellte Anmerkungen nur in diesem Projekt angezeigt. Wenn eine Anmerkung direkt für Sie freigegeben wird, wird die Anmerkung in allen Projekten angezeigt, in denen diese Anmerkung angezeigt werden kann.
 
 ## Anmerkungen und Zeitzonen
 
-Alle Anmerkungen werden mit einem Zeitstempel erstellt, jedoch ohne Stunden- oder Zeitzoneninformationen. Zum Zeitpunkt der Berichterstellung wird immer die Zeitzone der Datenansicht des Bedienfelds angewendet. Daher wird eine für den 1. Weihnachtsfeiertag erstellte Anmerkung immer am 25. Dezember erstellt, unabhängig davon, in welcher Datenansichts-Zeitzone Sie sich befinden.
-
-Ein weiteres Beispiel ist der Neujahrstag. Zu Beginn des neuen Jahres werden jede Stunde von einer anderen Zeitzone Feuerwerke ausgelöst. Um 22:00 Uhr US Mountain Time werden an der US-Ostküste Feuerwerke ausgelöst, weil es dort bereits 24:00 Uhr Eastern Time ist.
-
-## Sonstige Aktionen mit Anmerkungen
-
-Mit der Anmerkungsverwaltung können Administratoren Anmerkungen bearbeiten, hinzufügen, taggen, löschen, umbenennen, genehmigen, kopieren, exportieren und filtern. Dies ist für Nicht-Admin-Benutzer nicht sichtbar.
-
-Wählen Sie einfach eine oder mehrere der Anmerkungen aus, und die Task-Leiste wird angezeigt.
-
-| Aufgabe | Beschreibung |
-| --- | --- |
-| Hinzufügen | Sie gelangen zum Anmerkungsgenerator, in dem Sie neue Anmerkungen erstellen können. |
-| Tag | Alle Benutzer können Tags für Anmerkungen erstellen und ein oder mehrere Tags auf eine Anmerkung anwenden. Sie sehen Tags jedoch nur für die Filter, deren Inhaberin bzw. Inhaber Sie sind. Welche Arten von Tags sollten Sie erstellen? Hier finden Sie einige Vorschläge für nützliche Tags:<ul><li>Auf Teamnamen basierende Tags wie Social Marketing, Mobile Marketing</li><li>Projekt-Tags (Analyse-Tags) wie Entrypage-Analyse</li><li>Kategorie-Tags: Männer, Region</li><li>Workflow-Tags: Kuratiert für (einen bestimmten Geschäftsbereich), Genehmigt</li></ul> |
-| Löschen | Durch das Löschen einer Anmerkung wird sie aus jedem Projekt in Ihrer Organisation entfernt. |
-| Umbenennen | Beim Umbenennen einer Anmerkung wird sie in allen Projekten, auf die sie angewendet wurde, umbenannt. |
-| Kopieren | Erstellt eine eigenständige Kopie mit einer eigenen neuen Anmerkungs-ID, jedoch mit demselben Namen und derselben Definition. |
-| In CSV exportieren | Exportiert die Anmerkungsdefinition in eine CSV-Datei. |
-| Filter (linke Leiste) | Filtern Sie nach Tags, Datenansicht, Inhaberinnen bzw. Inhabern und anderen Filtern („Meine“, „Genehmigt“, „Favoriten“, „Für mich freigegeben“ und „Alle anzeigen“). |
-
-{style="table-layout:auto"}
+Alle Anmerkungen werden mit einem Zeitstempel erstellt, jedoch keine Stunden- oder Zeitzoneninformationen. Zum Zeitpunkt des Berichts wird die Zeitzone der für das Bedienfeld konfigurierten Datenansicht verwendet.

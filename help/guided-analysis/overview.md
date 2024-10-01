@@ -5,10 +5,10 @@ keywords: Produktanalysen
 exl-id: 1ac8157f-87e8-4d98-a2ca-f6beb68d9d6b
 feature: Guided Analysis
 role: User
-source-git-commit: 2addd3d17f62da69eb6636d987931fc21df07af5
-workflow-type: ht
-source-wordcount: '1399'
-ht-degree: 100%
+source-git-commit: 664756b796e8915a701ccabfb5f250e777701b60
+workflow-type: tm+mt
+source-wordcount: '1392'
+ht-degree: 99%
 
 ---
 
@@ -38,7 +38,7 @@ Die folgenden Ansichten geführter Analysen sind verfügbar:
 
 ## Zugriff
 
-Wenn Ihr Unternehmen für eine geführte Analyse freigeschaltet wurde, können Sie über die Customer Journey Analytics-Startseite darauf zugreifen.
+Sie können von der Customer Journey Analytics-Startseite aus auf die Geführte Analyse zugreifen.
 
 1. Klicken Sie auf der Startseite auf **[!UICONTROL Geführte Analyse]**. Von dort aus werden Sie direkt zur [Ansicht der Nutzungs-Trends](types/usage.md) weitergeleitet.
 

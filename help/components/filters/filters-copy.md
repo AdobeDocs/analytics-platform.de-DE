@@ -4,23 +4,18 @@ title: Kopieren von Filtern
 feature: Filters
 exl-id: a64737bd-5d5b-4e85-95ff-eb1d90b95e18
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 52752beb746dabdf0e604fa28ea373d0106de8a2
 workflow-type: tm+mt
-source-wordcount: '83'
-ht-degree: 12%
+source-wordcount: '99'
+ht-degree: 4%
 
 ---
 
 # Kopieren von Filtern
 
-Beim Erstellen eines neuen Filters ist es manchmal einfacher, einen vorhandenen Filter zu kopieren, der dem zu erstellenden Filter ähnelt, und dann die kopierte Version zu ändern.
+Im [Filter-Manager](manage-filters.md) können Sie Filter kopieren. Das Kopieren eines Filters ist praktisch, wenn Sie eine geringfügig geänderte Version eines vorhandenen Filters erstellen oder einen Filter, dessen Inhaber Sie nicht sind, neu definieren möchten und den Sie nicht bearbeiten können.
 
-So kopieren Sie einen Filter im Filter-Manager:
+1. Wählen Sie im [Filter-Manager](manage-filters.md) einen oder mehrere der Filter aus, die Sie kopieren möchten.
+1. Wählen Sie in der Aktionsleiste ![Kopieren](/help/assets/icons/Copy.svg) **[!UICONTROL Kopieren]** aus.
 
-1. Wählen Sie unter Customer Journey Analytics die Registerkarte **[!UICONTROL Komponenten]** und dann **[!UICONTROL Filter]** aus.
-
-1. Wählen Sie im Filter-Manager den Filter aus, den Sie kopieren möchten.
-
-   Die Werkzeugleiste für die Filterverwaltung wird angezeigt.
-
-1. Wählen Sie **[!UICONTROL Kopieren]** aus.
+Die Filter werden kopiert und erscheinen in der Filterliste mit demselben Namen wie das Original, jedoch mit angehängter (Kopie).

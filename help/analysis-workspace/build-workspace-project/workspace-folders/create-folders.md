@@ -5,10 +5,10 @@ title: Erstellen von Ordnern
 feature: Workspace Basics
 exl-id: c83c3526-a8d0-4094-b4c4-46cf70e1a365
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 98a92fff2a0fae7ad3e6d94e61f8babed3c11eb7
 workflow-type: tm+mt
-source-wordcount: '203'
-ht-degree: 100%
+source-wordcount: '113'
+ht-degree: 41%
 
 ---
 
@@ -16,48 +16,21 @@ ht-degree: 100%
 
 Sie können zur Liste der Projekte und Ordner auf Ihrer Workspace-Landingpage einen neuen Ordner oder einen Unterordner hinzufügen.
 
-## Erstellen eines neuen Ordners {#create-new-folder}
+## Erstellen eines neuen Ordners
 
 So erstellen Sie einen neuen Ordner:
 
-1. Klicken Sie auf **Neu erstellen**.
+1. Stellen Sie sicher, dass Sie &quot;[Ordner und Projekte anzeigen](/help/analysis-workspace/build-workspace-project/freeform-overview.md#show-selector)&quot;ausgewählt haben.
 
-1. Geben Sie einen Namen für den neuen Ordner ein.
+1. Stellen Sie sicher, dass der [Titelbereich](/help/analysis-workspace/build-workspace-project/freeform-overview.md#title-area) und die [Projektliste](/help/analysis-workspace/build-workspace-project/freeform-overview.md#project-list) den Ordner anzeigen, in dem Sie einen neuen Ordner erstellen möchten.
 
-1. Wählen Sie Tags aus dem Dropdown-Menü aus oder fügen Sie neue Tags hinzu.
+1. Klicken Sie auf **Ordner erstellen**.
 
-   ![Erstellen Sie ein neues Ordnerfenster mit dem neuen Ordnernamen und der Liste der verfügbaren Tags.](/help/analysis-workspace/build-workspace-project/assets/select-tags.png)
+1. Geben Sie im Dialogfeld **[!UICONTROL Neuen Ordner erstellen]** einen Namen für den neuen Ordner ein. Beispiel: `Second Week Reports`.
 
-1. Klicken Sie auf **Erstellen**.
+1. Wählen Sie Tags aus oder geben Sie neue Tags aus der Dropdown-Liste **[!UICONTROL Tags]** ein.
 
-   ![Klicken Sie auf „Erstellen“](/help/analysis-workspace/build-workspace-project/assets/create.png).
-
-   Der neue Ordner wird zur Hauptliste der Projekte und Ordner hinzugefügt.
-
-   ![Auf der Landingpage der Projekte wird die aktualisierte Liste mit Projekten und Ordnern angezeigt.](/help/analysis-workspace/build-workspace-project/assets/create-new-listed.png)
-
-## Erstellen eines Unterordners {#create-subfolder}
-
-Mit Unterordnern können Sie zusätzliche Ebenen für Projekt-Management und -organisation bereitstellen.
-
-So erstellen Sie einen Unterordner, wenn ein vorhandener Ordner geöffnet ist:
-
-1. Klicken Sie auf **Neuen Ordner erstellen**.
-
-   ![Klicken Sie auf „Neuen Ordner erstellen“.](/help/analysis-workspace/build-workspace-project/assets/create-subfolder2.png)
-
-1. Geben Sie einen Namen für den Unterordner ein und fügen Sie ggf. erforderliche Tags hinzu.
-
-   ![Das Fenster zum Erstellen eines neuen Ordners mit neuem Namen und Tags-Feld wird angezeigt.](/help/analysis-workspace/build-workspace-project/assets/create-subfolder-name.png)
+   ![Neuen Ordner erstellen](../assets/create-new-folder.png)
 
 1. Klicken Sie auf **Erstellen**.
-
-   Der neue Unterordner wird zur Liste der Projekte und Unterordner hinzugefügt.
-
-   ![Klicken Sie auf „Erstellen“.](/help/analysis-workspace/build-workspace-project/assets/create-subfolder-added.png)
-
-   >[!NOTE]
-   >
-   >Sie können in einem Ordner bis zu 10 Ebenen von Unterordnern erstellen.
-
-   ![In der Dropdown-Liste des Ordners werden alle Unterordner des Ordners angezeigt.](/help/analysis-workspace/build-workspace-project/assets/create-subfolder-limit.png)
+Der neue Ordner wird dem aktuellen Ordner hinzugefügt.

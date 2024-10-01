@@ -4,35 +4,40 @@ title: Freigeben von Filtern
 feature: Filters
 exl-id: c8559c7b-f886-4046-9bd6-80778882afcc
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
 workflow-type: tm+mt
-source-wordcount: '280'
-ht-degree: 96%
+source-wordcount: '297'
+ht-degree: 10%
 
 ---
 
-# Filter freigeben {#share}
+# Freigeben von Filtern
 
-Abhängig von Ihren Berechtigungen können Sie Filter für Ihre gesamte Organisation, Gruppen oder einzelne Benutzer freigeben.
+Im [Filter-Manager](manage-filters.md) können Sie Filter freigeben. Abhängig von Ihren Berechtigungen können Sie Filter für Ihre gesamte Organisation, Gruppen oder einzelne Benutzer freigeben:
 
-| Administrator | Nicht-Administrator |
-|---|---|
-| Kann Filter für alle, für Gruppen und für Benutzer freigeben. Weitere Informationen finden Sie in der [Dokumentation zu Admin Console](https://helpx.adobe.com/de/enterprise/using/manage-products-and-profiles.html). | Kann Filter nur für einzelne Benutzer freigeben. |
+* **Administratoren**: Administratoren können Filter für die gesamte Organisation, für Gruppen innerhalb einer Organisation und für einzelne Benutzer freigeben. Weitere Informationen finden Sie in der [Dokumentation zu Admin Console](https://helpx.adobe.com/de/enterprise/using/manage-products.html).
+* **Benutzer ohne Administratorrechte**: Benutzer ohne Administratorrechte können die von ihnen erstellten Filter nur für einzelne Benutzer freigeben. |
 
-Wann sollten Filter für das gesamte Unternehmen und wann nur für eine Benutzergruppe oder einzelne Benutzer freigegeben werden? Im Folgenden finden Sie einige Best Practices, an denen Sie sich orientieren können:
+So geben Sie einen oder mehrere Filter frei:
 
-* Geben Sie als Administrator einen Filter für alle frei, wenn er für das gesamte Unternehmen von Nutzen ist und von jedem problemlos verwendet werden kann. In diesem Fall sollten Sie den Filter eventuell auch genehmigen.
+1. Wählen Sie im [Filter-Manager](manage-filters.md) einen oder mehrere der Filter aus, die Sie freigeben möchten.
+1. Wählen Sie in der Aktionsleiste ![Freigabe](/help/assets/icons/Share.svg) **[!UICONTROL Freigabe]** aus.
+1. Im Dialogfeld **[!UICONTROL Filter freigeben]** :
 
-* Geben Sie als Administrator einen Filter für ein bestimmtes Produktprofil frei, wenn der Filter für das entsprechende Team einen Geschäftswert bietet. Führen Sie für diesen Filtertyp keine offizielle Genehmigung durch.
+   ![Dialogfeld &quot;Filter freigeben&quot;](assets/share-filter-dialog.png)
 
-* Geben Sie als Administrator oder als einzelner Benutzer einen Filter für andere einzelne Benutzer frei, um einen Filter zu prüfen und zu validieren. Wenn er sich als nicht nützlich erweist, kann er verworfen werden. Führen Sie für diesen Filtertyp keine offizielle Genehmigung durch.
+   1. (Optional) Verwenden Sie ![Suche](/help/assets/icons/Search.svg), um *Einzelpersonen oder Gruppen zu durchsuchen*, um die Liste der Gruppen oder Einzelanwender zu finden, für die Sie den Filter freigeben möchten.
 
-Freigeben eines Filters:
+   1. Wählen Sie eine oder mehrere Optionen im Abschnitt **[!UICONTROL Organisation]** oder **[!UICONTROL Gruppen]** aus oder suchen Sie nach einer oder mehreren Einzelpersonen und wählen Sie diese aus. Welche Optionen verfügbar sind, hängt von Ihrer Rolle ab.
 
-1. Aktivieren Sie im Filter-Manager das Kontrollkästchen neben dem Filter, den Sie freigeben möchten.
+   1. Wählen Sie **[!UICONTROL Speichern]** aus, um die Filter freizugeben. Wählen Sie **[!UICONTROL Abbrechen]** aus, um abzubrechen.
 
-1. Klicken Sie in der Toolbar für die Filterverwaltung auf **[!UICONTROL Freigeben]**.
+## Best Practices
 
-1. Wenn Sie Administrator sind, können Sie „Alle“ oder Gruppen und Benutzer in Ihrer Organisation auswählen. Als Nicht-Administrator sehen Sie nur einzelne Benutzer. Benutzen Sie das Suchfeld, um nach Gruppen oder Benutzern zu suchen. Klicken Sie auf **[!UICONTROL Freigabe]**. Neben dem Filter wird das Freigabesymbol angezeigt: ![](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Share_18_N.svg)
+Im Folgenden finden Sie einige Best Practices, wenn Sie Filter freigeben und für wen Sie Filter freigeben sollten.
 
-1. Sie können nach für Sie freigegebenen Filtern filtern, indem Sie „Filter“ > „Weitere Filter“ > „Für mich freigegeben“ verwenden.
+* Geben Sie als Administrator einen Filter nur dann für Alle frei, wenn Sie überzeugt sind, dass die Verwendung der Filter für andere Personen in Ihrer Organisation von Vorteil ist. Sie können auch erwägen, diese Filter zu favorisieren. Weitere Informationen finden Sie unter [Filter als Favoriten markieren](filters-favorite.md) .
+
+* Geben Sie als Administrator einen Filter für eine bestimmte Gruppe frei, wenn dieser Filter für den Teil der Benutzer dieser Gruppe einen Geschäftswert bietet
+
+* Geben Sie als Administrator oder als einzelner Benutzer einen Filter für eine oder mehrere Einzelanwender frei, um einen Filter zu validieren. Wenn sich die Filter als nicht nützlich erweisen, können Sie den Filter löschen.

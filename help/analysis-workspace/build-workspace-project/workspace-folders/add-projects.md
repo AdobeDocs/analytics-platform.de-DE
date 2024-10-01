@@ -1,73 +1,57 @@
 ---
-description: Erfahren Sie, wie Sie Ordner in Workspace hinzufügen
+description: Erfahren Sie, wie Sie Ordner in Workspace hinzufügen oder verschieben
 keywords: Analysis Workspace
-title: Hinzufügen von Ordnern in Workspace
+title: Ordner hinzufügen oder verschieben
 feature: Workspace Basics
 exl-id: 4008d087-e183-4b07-bc6f-e5f30e69afd8
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 98a92fff2a0fae7ad3e6d94e61f8babed3c11eb7
 workflow-type: tm+mt
-source-wordcount: '286'
-ht-degree: 100%
+source-wordcount: '257'
+ht-degree: 22%
 
 ---
 
-# Hinzufügen von Projekten zu Ordnern
+# Hinzufügen oder Verschieben von Projekten in Ordnern
 
-Sie können Projekte zu einem Ordner in der Tabellenansicht oder innerhalb eines Ordners hinzufügen.
+Sie können Projekte direkt aus der [Projektliste](/help/analysis-workspace/build-workspace-project/freeform-overview.md#project-list) hinzufügen oder in einen Ordner verschieben.
 
-## Aus der Tabellenansicht {#table-view}
+## Verschieben von Projekten in einen Ordner
 
-Fügen Sie auf der Startseite aus der Tabellenansicht Projekte zu einem Ordner hinzu.
+>[!NOTE]
+>
+>Wenn ein Administrator ein Projekt in den Unternehmensordner verschiebt, wird der Ordner für alle freigegeben, selbst wenn die vorhandenen freigegebenen Berechtigungen eingeschränkt sind. Wenn ein Administrator ein Projekt aus dem Unternehmensordner verschiebt, werden die vorhandenen freigegebenen Berechtigungen erneut angewendet.
+>
 
-1. Wählen Sie ein oder mehrere Projekte aus, die Sie einem Ordner hinzufügen möchten.
+So verschieben Sie Projekte aus der [Projektliste](/help/analysis-workspace/build-workspace-project/freeform-overview.md#project-list) in einen Ordner:
 
-   ![Tabellenansicht der Projekte mit drei ausgewählten Projekten.](/help/analysis-workspace/build-workspace-project/assets/move-tv-selected.png)
+1. Wählen Sie ![SelectBox](/help/assets/icons/SelectBox.svg) ein oder mehrere Projekte aus, die Sie in einen Ordner verschieben möchten.
 
-1. Wählen Sie **Verschieben nach** aus. Das Dialogfeld „Ordner auswählen“ wird angezeigt.
+1. Wählen Sie ![FolderAddTo](/help/assets/icons/FolderAddTo.svg) **Move to** aus der Liste der möglichen [Aktionen](/help/analysis-workspace/build-workspace-project/freeform-overview.md#actions). Das Dialogfeld **[!UICONTROL Ordner auswählen]** wird angezeigt.
 
-1. Wählen Sie einen Ordnernamen aus dem Dropdown-Menü aus.
+1. Wählen Sie einen Ordnernamen aus dem Dropdownmenü **[!UICONTROL Ordner]** aus. Über das Dropdown-Menü können Sie durch die Ordnerhierarchie navigieren, um einen Unterordner auf jeder Ebene auszuwählen.
 
-   ![In der Ansicht „Ordner auswählen“ werden das Dropdown-Menü und die verfügbaren Unterordner angezeigt.](/help/analysis-workspace/build-workspace-project/assets/move-select-folder.png)
+   ![In der Ansicht „Ordner auswählen“ werden das Dropdown-Menü und die verfügbaren Unterordner angezeigt.](/help/analysis-workspace/build-workspace-project/assets/add-projects.png)
 
-1. Klicken Sie auf **Hinzufügen**.
+1. Wählen Sie **[!UICONTROL Verschieben]** aus. 
 
-   ![Klicken auf „Hinzufügen“.](/help/analysis-workspace/build-workspace-project/assets/move-add.png)
 
    Die ausgewählten Projekte werden dem Ordner hinzugefügt.
 
-   ![Der ausgewählte Unterordner zeigt die drei verschobenen Projekte an.](/help/analysis-workspace/build-workspace-project/assets/move-projects-added.png)
 
-   Auf der Startseite von Workspace wird nun angezeigt, dass der Ordner (3) Projekte enthält.
+## Projekte zu einem Ordner hinzufügen
 
-   ![Die aktualisierte Startseitenliste für Projekte zeigt den Unterordner mit drei Projekten an.](/help/analysis-workspace/build-workspace-project/assets/move-folders-updated.png)
+So fügen Sie einem Ordner aus der [Projektliste](/help/analysis-workspace/build-workspace-project/freeform-overview.md#project-list) Projekte hinzu:
 
-## Aus dem Inneren eines Ordners {#inside-folder}
+1. Wählen Sie ![SelectBox](/help/assets/icons/SelectBox.svg) aus dem Ordner, dem Sie Projekte hinzufügen möchten.
 
-Sie können auch Projekte aus dem Inneren eines Ordners hinzufügen, indem Sie den Link mit den Auslassungspunkten verwenden.
+1. Wählen Sie ![ProjectAdd](/help/assets/icons/ProjectAdd.svg) **Projekte hinzufügen** aus der Liste der möglichen [Aktionen](/help/analysis-workspace/build-workspace-project/freeform-overview.md#actions). Das Dialogfeld **[!UICONTROL Ordner auswählen]** wird angezeigt.
 
-1. Wählen Sie einen Ordner in der Tabellenansicht aus und öffnen Sie ihn.
+1. Wählen Sie ein oder mehrere Projekte aus dem Ordner [!UICONTROL *Projekte auswählen, die dem Ordner hinzugefügt werden sollen*].
 
-   ![Der Unterordner, der keine Projekte enthält](/help/analysis-workspace/build-workspace-project/assets/move-open-folder.png)
+   ![In der Ansicht „Ordner auswählen“ werden das Dropdown-Menü und die verfügbaren Unterordner angezeigt.](/help/analysis-workspace/build-workspace-project/assets/add-projects-folder.png)
 
-1. Klicken Sie oben rechts auf das Symbol mit den Auslassungspunkten **…**.
-
-   ![Dropdown-Menüoptionen für die Auslassungspunkte.](/help/analysis-workspace/build-workspace-project/assets/add-projects-elipsis.png)
-
-   In einem Dropdown-Menü wird die Option zum Hinzufügen von Projekten zum Ordner angezeigt. Zusätzliche Optionen ermöglichen es Ihnen, den Ordner umzubenennen, zu verschieben oder zu löschen und die Ordnerberechtigungen zu verwalten.
-
-1. Wählen Sie **Projekte hinzufügen** und wählen Sie das Projekt, das Sie hinzufügen möchten, aus der Dropdown-Liste.
-
-   ![Die Liste „Projekte hinzufügen“.](/help/analysis-workspace/build-workspace-project/assets/select-add-projects.png)
-
-   Sie können mehrere Projekte zu dem Ordner hinzufügen.
-
-   ![Das Fenster „Projekte hinzufügen“ zeigt drei Projekte an](/help/analysis-workspace/build-workspace-project/assets/move-add-multiple-projects.png)
-
-1. Klicken Sie auf **Hinzufügen**, um die Projekte zu dem Ordner hinzuzufügen.
-
-   ![Klicken Sie auf „Hinzufügen“.](/help/analysis-workspace/build-workspace-project/assets/move-added-items.png)
-
+1. Wählen Sie **[!UICONTROL Hinzufügen]** aus.
 
 >[!NOTE]
 >

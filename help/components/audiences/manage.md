@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie Zielgruppen in Customer Journey Analytics ver
 exl-id: 0cc50f64-40b5-4245-a9bb-a60fc90f507a
 feature: Audiences
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: de04792035aa7c235751019ee9f9fe5b74b9b102
 workflow-type: tm+mt
 source-wordcount: '285'
-ht-degree: 68%
+ht-degree: 64%
 
 ---
 
@@ -27,7 +27,7 @@ Die Verwaltung zuvor erstellter Audiences ermöglicht Ihnen Folgendes:
 
 | Benutzeroberflächen-Einstellung | Definition |
 | --- | --- |
-| Filter anzeigen/ausblenden | Hiermit können Sie die folgenden Filter in der linken Leiste ein- oder ausblenden: <ul><li>[!UICONTROL Datenansicht]</li><li>[!UICONTROL Inhaber]</li><li>[!UICONTROL Häufigkeit der Aktualisierung]</li><li>[!UICONTROL Tags]</li></ul> |
+| Filter anzeigen/ausblenden | Hiermit können Sie die folgenden Filter im linken Bereich ein- oder ausblenden: <ul><li>[!UICONTROL Datenansicht]</li><li>[!UICONTROL Inhaber]</li><li>[!UICONTROL Häufigkeit der Aktualisierung]</li><li>[!UICONTROL Tags]</li></ul> |
 | [!UICONTROL Titel und Beschreibung] | Der Titel und die Beschreibung, die der Zielgruppe bei ihrer Erstellung gegeben wurde. |
 | [!UICONTROL Datenansicht] | Die Datenansicht, in der diese Zielgruppe erstellt wurde. |
 | [!UICONTROL Zielgruppengröße] | Die Gesamtzahl der Personen in dieser Zielgruppe. |

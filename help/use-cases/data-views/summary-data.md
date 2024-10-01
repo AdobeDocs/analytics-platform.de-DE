@@ -1,13 +1,13 @@
 ---
 title: Zusammenfassungsdaten im Customer Journey Analytics verwenden
-description: Erläuterung aller Details zum Einbringen von Zusammenfassungsdaten in Customer Journey Analytics
+description: Anwendungsbeispiel, das alle Details zum Einbringen von Zusammenfassungsdaten in Customer Journey Analytics erläutert
 solution: Customer Journey Analytics
 feature: Use Cases
 role: Admin
 exl-id: 80139806-618a-46ff-b2c4-32d7bb85a526
-source-git-commit: e6f57b03689bd9aaaec12c13fc95da5b079b901e
+source-git-commit: 6cd4fadc28117ed88b68d17274ab8de2b0edff10
 workflow-type: tm+mt
-source-wordcount: '5187'
+source-wordcount: '5188'
 ht-degree: 8%
 
 ---
@@ -512,7 +512,7 @@ Um sicherzustellen, dass Sie Berichte zu den richtigen Daten in Workspace erstel
 
          ![Umsatzzusammenfassungsdaten](../assets/revenue-summary-data.png)
          1. Erweitern Sie ![ChevronDown](/help/assets/icons/ChevronDown.svg) **[!UICONTROL Attribution]**.
-            1. Wählen Sie ![AttributionLastTouch](/help/assets/icons/AttributionLastTouch.svg) **[!UICONTROL Letztkontakt]** aus der Dropdown-Liste **[!UICONTROL Attributionsmodell]**.
+            1. Wählen Sie ![AttributeLastTouch](/help/assets/icons/AttributeLastTouch.svg) **[!UICONTROL Letztkontakt]** aus der Dropdown-Liste **[!UICONTROL Attributionsmodell]**.
             1. Wählen Sie **[!UICONTROL 30 Tag]** aus der Dropdownliste **[!UICONTROL Lookback-Fenster]** aus.
          1. Erweitern Sie ![ChevronDown](/help/assets/icons/ChevronDown.svg) **Format**.
             1. Wählen Sie **[!UICONTROL Währung]** aus der Dropdown-Liste **[!UICONTROL Format]** aus.
@@ -522,7 +522,7 @@ Um sicherzustellen, dass Sie Berichte zu den richtigen Daten in Workspace erstel
 
          ![Zusammenfassungsdaten der Bestellungen](../assets/orders-summary-data.png)
          1. Erweitern Sie ![ChevronDown](/help/assets/icons/ChevronDown.svg) **[!UICONTROL Attribution]**.
-            1. Wählen Sie ![AttributionLastTouch](/help/assets/icons/AttributionLastTouch.svg) **[!UICONTROL Letztkontakt]** aus der Dropdown-Liste **[!UICONTROL Attributionsmodell]**.
+            1. Wählen Sie ![AttributeLastTouch](/help/assets/icons/AttributeLastTouch.svg) **[!UICONTROL Letztkontakt]** aus der Dropdown-Liste **[!UICONTROL Attributionsmodell]**.
             1. Wählen Sie **[!UICONTROL 30 Tag]** aus der Dropdownliste **[!UICONTROL Lookback-Fenster]** aus.
          1. Erweitern Sie ![ChevronDown](/help/assets/icons/ChevronDown.svg) **[!UICONTROL Format]**.
             1. Wählen Sie **[!UICONTROL Dezimal]** aus der Dropdown-Liste **[!UICONTROL Format]** aus.

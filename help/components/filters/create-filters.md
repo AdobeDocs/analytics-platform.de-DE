@@ -4,31 +4,32 @@ description: Machen Sie sich mit der Benutzeroberfläche zur Filtererstellung ve
 exl-id: b6a921d5-7dd3-4230-88b8-5f1cd313b791
 feature: Filters
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 01f862997503cb36502145eddb47873bc7cb28fe
 workflow-type: tm+mt
-source-wordcount: '308'
-ht-degree: 55%
+source-wordcount: '262'
+ht-degree: 3%
 
 ---
 
 # Filter erstellen
 
-Sie können verschiedene Filtertypen in Workspace erstellen, je nachdem, wie komplex sie sein müssen, ob sie nur auf das aktuelle Projekt oder auf alle Projekte angewendet werden sollen usw.
+Sie können verschiedene Filtertypen im Customer Journey Analytics erstellen.  Der ausgewählte Typ hängt davon ab, wie komplex die Filter sein müssen und ob die Filter nur für das aktuelle Workspace-Projekt oder für alle Projekte gelten sollen. Sie können Filter direkt in der Hauptbenutzeroberfläche von Customer Journey Analytics oder bei der Arbeit an einem Workspace-Projekt erstellen.
 
-Im Folgenden finden Sie eine Zusammenfassung der verfügbaren Filtertypen mit Links zu Informationen zur Erstellung:
+Standardmäßig können nur Administratoren Filter erstellen. Benutzer haben Berechtigungen zum Anzeigen von Filtern, ähnlich wie beim Anzeigen anderer Komponenten (z. B. Anmerkungen, berechnete Metriken usw.).
 
-| Filtertyp | Wo erstellt? | Wird wo angewendet? | Verwendungsbereiche |
-| --- | --- | --- | --- |
-| Komponentenlistenfilter | Klicken Sie auf „+“, wodurch Sie zum [Filtergenerator](/help/components/filters/filter-builder.md) gelangen. | Alle Workspace-Projekte | Für komplexere Filter, sequenzielle Filter |
-| Schnellfilter | [Schnellfilter-Generator](/help/components/filters/quick-filters.md) | Nur im Projekt, Speichern und Hinzufügen zur Segmentliste möglich. | Kann für Ad-hoc-Filter mit einzelnen Regeln (per Drag &amp; Drop) oder zum Hinzufügen/Bearbeiten mehrerer Regeln verwendet werden (durch Klicken auf das Symbol Filter ) |
-| Filter in Fallout-Analyse | [Fallout-Visualisierung](/help/analysis-workspace/visualizations/fallout/compare-segments-fallout.md) in Analysis Workspace | Für individuelle Fallout-Visualisierungen | Erstellen von Filtern von einem Touchpoint aus, Hinzufügen von Filtern als Touchpoint und Vergleichen wichtiger Workflows über verschiedene Filter hinweg. |
-| Auf berechneten Metriken basierende Filter | [Generator für berechnete Metriken](/help/components/calc-metrics/cm-workflow/metrics-with-segments.md) | Für einzelne berechnete Metriken | Anwenden von Filtern innerhalb Ihrer Metrikdefinition |
+Administratoren können Benutzern über die [Admin Console](/help/technotes/access-control.md#user-level-access) jedoch die Berechtigung **[!UICONTROL Filtererstellung]** für die **[!UICONTROL Berichterstellungs-Tools]** in den **[!UICONTROL Berechtigungen zum Bearbeiten des CJA Workspace-Zugriffs]** erteilen.
 
-Beim Anwenden von Filtern auf ein Freiformprojekt stehen auch mehrere andere Methoden zur Verfügung:
+Sie können Filter wie folgt erstellen:
 
-| Aktion | Beschreibung |
-| --- | --- |
-| Filter aus Auswahl erstellen | Erstellen Sie einen Inline-Filter. Dieser Filter gilt nur für das geöffnete Projekt und wird nicht als Customer Journey Analytics-Filter gespeichert.<p> 1. Die Tabellenzeilen auswählen, die Teil des Filters sein sollen. 2. Rechtsklick auf die Auswahl.  3. Klick auf *Filter aus Auswahl erstellen*. |
-| Arbeitsbereich [!UICONTROL Komponenten] > [!UICONTROL Neuer Filter] | Zeigt den Filter Builder an. Weitere Informationen zur Filterung finden Sie unter [Filter Builder](/help/components/filters/filter-builder.md). |
-| „Freigeben“ > „Projekt freigeben“ oder „Freigeben“ > „Projektdaten kuratieren“ | In [Projekte freigeben](/help/analysis-workspace/curate-share/share-projects.md) oder [Projekte kuratieren](/help/analysis-workspace/curate-share/curate.md) erfahren Sie, wie Filter, die Sie auf das Projekt anwenden, in freigegebenen Analysen für den Empfänger verfügbar sind. |
-| Verwenden von Filtern als Dimensionen | Das folgende Video zeigt, wie Filter als Dimensionen verwendet werden:  <p>[Verwenden von Filtern als Dimensionen in Analysis Workspace](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/components/filters/use-filters-as-dimensions.html?lang=de)</p> |
+![Möglichkeiten zum Erstellen eines Filters](assets/create-filter.png)
+
+* ?? Wählen Sie in der Hauptbenutzeroberfläche **[!UICONTROL Komponenten]** und dann **[!UICONTROL Filter]** aus. Wählen Sie ![AddCircle](/help/assets/icons/AddCircle.svg) [!UICONTROL **[!UICONTROL Add]**] aus dem [[!UICONTROL Filters] manager](/help/components/filters/manage-filters.md).
+* ?? Wählen Sie in einem Workspace-Projekt im linken Bereich &quot;Komponenten&quot;unter ![Segment](/help/assets/icons/Segmentation.svg) **Filter** die Option ![Hinzufügen](/help/assets/icons/Add.svg) aus.
+* ?? Wählen Sie in einem Workspace-Projekt im Kontextmenü einer Visualisierung die Option **[!UICONTROL Filter aus Auswahl erstellen]**.
+* ?? Wählen Sie in einem Workspace-Projekt **[!UICONTROL Komponenten]** aus dem Menü und dann **[!UICONTROL Filter erstellen]**.
+* ?? Verwenden Sie in einem Workspace-Projekt die Tastenkombination **[!UICONTROL Umschalt+Befehl+e]** (macOS) oder **[!UICONTROL Umschalt+Strg+e]** (Windows).
+* ?? Wählen Sie ![Hinzufügen](/help/assets/icons/Add.svg) in der Dropzone ***Filter hier (oder einer anderen Komponente) ablegen*** aus. Durch diese Aktion wird ein reiner Projektfilter erstellt.
+
+Um den neuen Filter zu definieren, verwenden Sie den [Filter-Builder](/help/components/filters/filter-builder.md).
+
+Wenn Sie sich in einem Workspace-Projekt befinden, können Sie mit [Schnellfilter](/help/components/filters/quick-filters.md) schnell einen Filter erstellen.

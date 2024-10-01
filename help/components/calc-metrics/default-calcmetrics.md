@@ -4,23 +4,23 @@ title: Standardmäßige berechnete Metriken
 feature: Calculated Metrics
 exl-id: 08d11cce-170e-42a2-806f-e0a28b70a2dc
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: a507417c945f827ebb8bc92f7b5f54a9c4e6faa0
 workflow-type: tm+mt
-source-wordcount: '195'
-ht-degree: 28%
+source-wordcount: '387'
+ht-degree: 9%
 
 ---
 
 # Standardmäßige berechnete Metriken
 
-Customer Journey Analytics bietet die folgenden berechneten Metriken, um die häufigsten Anwendungsfälle abzudecken:
+Customer Journey Analytics bietet die folgenden standardmäßigen berechneten Metriken, um die häufigsten Anwendungsfälle abzudecken. Diese von der Adobe definierten standardmäßigen berechneten Metriken werden durch ein kleines ![AdobeLogoSmall](/help/assets/icons/AdobeLogoSmall.svg) -Logo gekennzeichnet. Um diese Metriken schnell zu filtern, wählen Sie ![Beschriftung](/help/assets/icons/Label.svg) **[!UICONTROL Adobe-Vorlage]** im [Komponentenfilter](/help/components/overview.md#filter) aus.
 
-| Name der berechneten Metrik | Beschreibung | Formel |
-|---------|----------|---------|
-| Startrate der Sitzung | Der Prozentsatz, zu dem ein Dimensionselement beim ersten Ereignis einer Sitzung aufgetreten ist.<p>Diese berechnete Metrik wird Workspace automatisch hinzugefügt, wenn Sie die `[Session Starts]` [Standardkomponente](/help/data-views/component-reference.md) in Ihre [Datenansicht](/help/data-views/create-dataview.md) aufnehmen.</p> | `[Session Starts] / [Sessions]` |
-| Aufgewendete Zeit pro Person   | Die durchschnittliche Zeit, die eine Person mit einem bestimmten Dimensionselement verbracht hat.<p>Diese berechnete Metrik wird Workspace automatisch hinzugefügt, wenn Sie die `[Time Spent (seconds)]` [Standardkomponente](/help/data-views/component-reference.md) in Ihre [Datenansicht](/help/data-views/create-dataview.md) aufnehmen.</p> | `[Time Spent (seconds)] / [Users]` |
-| Sitzungen pro Person | Die durchschnittliche Anzahl von Sitzungen pro Person. | `[Sessions] / [Users]` |
-| Aufgewendete Zeit pro Sitzung | Die durchschnittliche Zeit, die eine Person pro Sitzung mit einem bestimmten Dimensionselement verbracht hat.<p>Diese berechnete Metrik wird Workspace automatisch hinzugefügt, wenn Sie die `[Time Spent (seconds)]` [Standardkomponente](/help/data-views/component-reference.md) in Ihre [Datenansicht](/help/data-views/create-dataview.md) aufnehmen.</p> | `[Time Spent (seconds)] / [Sessions]` |
-| Endrate der Sitzung | Der Prozentsatz, zu dem ein Dimensionselement beim letzten Ereignis einer Sitzung aufgetreten ist. <p>Diese berechnete Metrik wird Workspace automatisch hinzugefügt, wenn Sie die `[Session Ends]` [Standardkomponente](/help/data-views/component-reference.md) in Ihre [Datenansicht](/help/data-views/create-dataview.md) aufnehmen.</p> | `[Session Ends] / [Sessions]` |
+| Name der berechneten Metrik | Beschreibung<br/>Formel |
+|---------|----------|
+| **[!UICONTROL Sitzungsstartrate]** | Der Prozentsatz, zu dem ein Dimensionselement beim ersten Ereignis einer Sitzung aufgetreten ist.<p>Diese berechnete Metrik wird Workspace automatisch hinzugefügt, wenn Sie die [!UICONTROL Sitzungsstarts] [Standardkomponente](/help/data-views/component-reference.md) in Ihre [Datenansicht](/help/data-views/create-dataview.md) aufnehmen.</p>Zusammenfassung: **(** ![Ereignis](/help/assets/icons/Event.svg) **Sitzungsstarts** ![divide](/help/assets/icons/Divide.svg) ![Ereignis](/help/assets/icons/Event.svg) **Sitzungen** **)** |
+| **[!UICONTROL Besuchszeit pro Person]** | Die durchschnittliche Zeit, die eine Person mit einem bestimmten Dimensionselement verbracht hat.<p>Diese berechnete Metrik wird Workspace automatisch hinzugefügt, wenn Sie die Standardkomponente [!UICONTROL Besuchszeit (Sekunden)] [ ](/help/data-views/component-reference.md) in Ihre [Datenansicht](/help/data-views/create-dataview.md) aufnehmen. Der Filter Letztes Sitzungsereignis ausschließen wird auf die Metrik für Personen angewendet. Der Filter schließt das letzte Ereignis jeder Sitzung in einem Datensatz aus. Dieser Ausschluss kann Ihnen dabei helfen, das Benutzerverhalten zu analysieren, das zu einem Ereignis oder einer Aktion führt, z. B. einem Kauf oder einer Formularübermittlung, während die endgültige Aktion selbst ausgeschlossen wird.</p>Zusammenfassung: **(** ![Ereignis](/help/assets/icons/Event.svg) **Besuchszeit (Sekunden)** ![Aufteilen](/help/assets/icons/Divide.svg) ![Segmentierung](/help/assets/icons/Segmentation.svg) **Letztes Sitzungsereignis ausschließen(** ![Ereignis](/help/assets/icons/Event.svg) **Personen )** |
+| **[!UICONTROL Sitzungen pro Person]** | Die durchschnittliche Anzahl von Sitzungen pro Person.<p>Zusammenfassung: **(** ![Ereignis](/help/assets/icons/Event.svg) **Sitzungen** ![teilen](/help/assets/icons/Divide.svg) ![Ereignis](/help/assets/icons/Event.svg) **Personen** **)** |
+| **[!UICONTROL Zeit pro Sitzung]** | Die durchschnittliche Zeit, die eine Person pro Sitzung mit einem bestimmten Dimensionselement verbracht hat.<p>Diese berechnete Metrik wird Workspace automatisch hinzugefügt, wenn Sie die Standardkomponente [!UICONTROL Besuchszeit (Sekunden)] [ ](/help/data-views/component-reference.md) in Ihre [Datenansicht](/help/data-views/create-dataview.md) aufnehmen. Der Filter Letztes Sitzungsereignis ausschließen wird auf die Metrik Sitzungen angewendet. Der Filter schließt das letzte Ereignis jeder Sitzung in einem Datensatz aus. Dieser Ausschluss kann Ihnen dabei helfen, das Benutzerverhalten zu analysieren, das zu einem Ereignis oder einer Aktion führt, z. B. einem Kauf oder einer Formularübermittlung, während die endgültige Aktion selbst ausgeschlossen wird.</p>Zusammenfassung: **(** ![Ereignis](/help/assets/icons/Event.svg) **Besuchszeit (Sekunden)** ![Aufteilen](/help/assets/icons/Divide.svg) ![Segmentierung](/help/assets/icons/Segmentation.svg) **Letztes Sitzungsereignis ausschließen(** ![Ereignis](/help/assets/icons/Event.svg) **Sitzungen )** |
+| **[!UICONTROL Sitzungsendrate]** | Der Prozentsatz, zu dem ein Dimensionselement beim letzten Ereignis einer Sitzung aufgetreten ist. <p>Diese berechnete Metrik wird Workspace automatisch hinzugefügt, wenn Sie die [!UICONTROL Sitzungsende] [Standardkomponente](/help/data-views/component-reference.md) in Ihre [Datenansicht](/help/data-views/create-dataview.md) aufnehmen.</p>Zusammenfassung: **(** ![Ereignis](/help/assets/icons/Event.svg) **Sitzungsende** ![teilen](/help/assets/icons/Divide.svg) ![Ereignis](/help/assets/icons/Event.svg) **Sitzungen** **)** |
 
 {style="table-layout:auto"}

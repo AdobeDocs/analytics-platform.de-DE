@@ -4,10 +4,10 @@ title: Filtern und Sortieren von Tabellen
 feature: Visualizations
 exl-id: 3af637ec-bb6c-49b7-a7b3-e1d310e71101
 role: User
-source-git-commit: 0300422b50cf6312c9148bbe38cd43003eb73bb2
+source-git-commit: a9976a053021b2b0ac26daaad2cfe89f8af61a96
 workflow-type: tm+mt
-source-wordcount: '920'
-ht-degree: 69%
+source-wordcount: '847'
+ht-degree: 42%
 
 ---
 
@@ -27,27 +27,25 @@ Mit Filtern in Analysis Workspace können Sie die wichtigsten Informationen aufd
 >
 > Nur dynamische Dimensionselemente können wie in diesem Abschnitt beschrieben gefiltert werden. Statische Dimensionselemente können nicht gefiltert werden. Weitere Informationen finden Sie unter [Dynamische und statische Dimensionselemente in Freiformtabellen](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/manual-vs-dynamic-rows.md).
 
-## Freiformtabellenzeilen filtern
+Sie können mehrere Methoden verwenden, um Zeilen aus einer Freiformtabelle zu filtern.
 
-Sie können mehrere Methoden verwenden, um Zeilen aus einer Freiformtabelle zu filtern. 
-
-- Klicken Sie auf das X in der Zeile
-- Tabellenfilter
-- Segmentierung
+- Ausschließen bestimmter Zeilen aus einer Tabelle
+- Anwenden von Filtern auf Tabellen
+- Verwenden von Zielgruppenfiltern
 
 Lesen Sie unbedingt, wie sich jede Methode auf die Gesamtwerte der Freiformtabelle [1} auswirkt.](/help/analysis-workspace/visualizations/freeform-table/workspace-totals.md)
 
-### Schnelles Ausschließen bestimmter Zeilen aus einer Tabelle
+### Ausschließen bestimmter Zeilen aus einer Tabelle
 
-Sie können bestimmte Zeilen schnell aus der Tabelle ausschließen, ohne das Dialogfeld Filter öffnen zu müssen.
+Sie können bestimmte Zeilen schnell aus der Tabelle ausschließen, ohne ![Filter](/help/assets/icons/Filter.svg) **[!UICONTROL Filter]** verwenden zu müssen.
 
 >[!NOTE]
 >
->Wenn Sie Zeilen wie in diesem Abschnitt beschrieben ausschließen, wird im Dialogfeld für erweiterte Filter automatisch eine Regel [!UICONTROL **Elemente immer ausschließen**] angewendet. (Sie können die angewendete Regel anzeigen, indem Sie das Filtersymbol und dann [**[!UICONTROL Erweitert anzeigen]**](#apply-a-simple-or-advanced-filter-to-a-table) auswählen.)
+>Wenn Sie Zeilen wie in diesem Abschnitt beschrieben ausschließen, wird im Filterdialogfeld [!UICONTROL Erweitert] automatisch eine Regel zum [!UICONTROL Immer Elemente ausschließen] hinzugefügt. Sie können die angewendete Regel anzeigen, indem Sie auf das Symbol ![Filter](/help/assets/icons/Filter.svg) Filter und dann auf [**[!UICONTROL Erweitert anzeigen]**](#apply-a-simple-or-advanced-filter-to-a-table) klicken.
 
-So schließen Sie bestimmte Zeilen schnell aus einer Freiformtabelle aus:
+So schließen Sie bestimmte Zeilen aus einer Freiformtabelle aus:
 
-1. Bewegen Sie den Mauszeiger über die Zeile, die Sie ausschließen möchten, und wählen Sie dann das Symbol x aus.
+1. Bewegen Sie den Mauszeiger über die Zeile, die Sie ausschließen möchten, und wählen Sie dann ![Schließen](/help/assets/icons/Close.svg) aus.
 
    Halten Sie die Umschalttaste gedrückt, um einen Zeilenbereich auszuwählen, oder halten Sie die Befehlstaste (Mac) oder die Strg-Taste (Windows) gedrückt, um mehrere Zeilen auszuwählen.
 
@@ -67,49 +65,41 @@ So filtern Sie Daten in Freiformtabellen:
 
 1. Bewegen Sie den Mauszeiger über die Spalte, die die zu filternden Daten enthält. <!--only some types of columns show the filter... Which? Just Dimensions?-->
 
-1. Wählen Sie das **Filtersymbol** aus, wenn es angezeigt wird.
+1. Wählen Sie ![Filter](/help/assets/icons/Filter.svg) **Filter** aus, wenn er angezeigt wird.
 
    ![ Freiformtabelle, die das Filtersymbol hervorhebt.](assets/table-filter-icon.png)
 
-   Die folgenden Optionen sind verfügbar:
+   Die folgenden Optionen sind im Dialogfeld **[!UICONTROL Suchen]** verfügbar:
+
+   ![Einfachen Filter](assets/filter-simple.png){width="500"}
 
    | Option | Funktion |
    |---------|----------|
+   | [!UICONTROL **Include &quot;No value&quot;**] | Wählen Sie diese Option aus, um eine Zeile **[!UICONTROL Kein Wert]** in der Tabelle für Daten anzuzeigen, die keinen Wert für die ausgewählte Dimension haben. Heben Sie die Auswahl dieser Option auf, um die Zeile **[!UICONTROL Kein Wert]** auszublenden. |
    | [!UICONTROL **Suchbegriff oder -satz**] | Geben Sie ein Wort oder eine Wortgruppe an, nach dem/der Sie filtern möchten. Es werden nur Zeilen angezeigt, die das Wort oder die exakte Phrase enthalten. |
-   | [!UICONTROL **Nicht spezifizierte einschließen (keine)**] | Aktivieren Sie diese Option, um Daten in der Tabelle anzuzeigen, die nicht zu einer Dimension der Tabelle gehören. <!--what is this?--> |
+
 
 1. (Optional) Um nach verschiedenen Kriterien oder nach mehreren Kriterien zu filtern, wählen Sie [!UICONTROL **Erweiterte Einstellungen anzeigen**] aus.
 
    Die folgenden erweiterten Filteroptionen sind verfügbar:
 
+   ![Einfachen Filter](assets/filter-advanced.png){width=500}
+
    | Option | Funktion |
    |---------|----------|
-   | [!UICONTROL **Nicht spezifizierte einschließen (keine)**] | Aktivieren Sie diese Option, um Daten in der Tabelle anzuzeigen, die nicht zu einer Dimension der Tabelle gehören. <!--what is this?--> |
-   | [!UICONTROL **Übereinstimmung**] | <p>Wählen Sie [!UICONTROL **Wenn alle Kriterien erfüllt sind**] aus, um nur Daten anzuzeigen, die alle angegebenen Kriterien erfüllen. Diese Option führt normalerweise zu verfeinerten Daten.</p> <p>Wählen Sie [!UICONTROL **Wenn ein Kriterium erfüllt ist**] aus, um Daten anzuzeigen, die eines der angegebenen Filterkriterien erfüllen. Diese Option führt normalerweise zu weniger verfeinerten Daten.</p> |
-   | [!UICONTROL **Kriterien**] | <p>Treffen Sie eine Auswahl aus den folgenden Filteroptionen:</p><p>(Wählen Sie [!UICONTROL **Zeile hinzufügen**] aus, um mehrere Filterkriterien hinzuzufügen. Die Option, die Sie im Abschnitt [!UICONTROL **Übereinstimmung**] auswählen, bestimmt, ob alle oder eines der hinzugefügten Kriterien erfüllt sein müssen.)</p><ul><li><p>[!UICONTROL **Enthält die Phrase**]: Nur Daten, die die von Ihnen angegebene Phrase enthalten, werden in die gefilterten Ergebnisse aufgenommen. Die Wörter müssen in der Reihenfolge vorliegen, die im Feld [!UICONTROL **Nach Wort oder Phrase suchen**] angegeben ist.<p>Dies ist die Standardeinstellung bei einer einfachen Suche.</p></p></li><li><p>[!UICONTROL **Enthält einen der Begriffe**]: Nur Daten, die ein oder mehrere Wörter aus der angegebenen Phrase enthalten, werden in die gefilterten Ergebnisse aufgenommen. </p></li><li><p>[!UICONTROL **Enthält alle Begriffe**]: Nur Daten, die alle Wörter aus der angegebenen Phrase enthalten, werden in die gefilterten Ergebnisse aufgenommen. Die Wörter müssen nicht in der gleichen Reihenfolge wie im Feld [!UICONTROL **Nach Wort oder Phrase suchen**] vorliegen.</p></li><li><p>[!UICONTROL **Enthält keinen der Begriffe**]: Nur Daten, die keines der Wörter aus der angegebenen Phrase enthalten, werden in die gefilterten Ergebnisse aufgenommen. </p></li><li><p>[!UICONTROL **Enthält nicht die Phrase**]: Nur Daten, die nicht genau die angegebene Phrase enthalten, werden in die gefilterten Ergebnisse aufgenommen. Die Wörter müssen in der Reihenfolge vorliegen, die im Feld [!UICONTROL **Nach Wort oder Phrase suchen**] angegeben ist.</p></li><li><p>[!UICONTROL **Gleich**]: Nur Daten, die genau mit der angegebenen Phrase übereinstimmen, werden in die gefilterten Ergebnisse aufgenommen. </p></li><li><p>[!UICONTROL **Ist nicht gleich**]: Nur Daten, die nicht genau mit der angegebenen Phrase übereinstimmen, werden in die gefilterten Ergebnisse aufgenommen. </p></li><li><p>[!UICONTROL **Beginnt mit**]: Nur Daten, die mit dem angegebenen Wort oder der angegebenen Phrase beginnen, werden in die gefilterten Ergebnisse aufgenommen. </p></li><li><p>[!UICONTROL **Endet mit**]: Nur Daten, die mit dem angegebenen Wort oder der angegebenen Phrase enden, werden in die gefilterten Ergebnisse aufgenommen. </p></li></ul> |
+   | [!UICONTROL **Include &quot;No value&quot;**] | Wählen Sie diese Option aus, um eine Zeile **[!UICONTROL Kein Wert]** in der Tabelle für Daten anzuzeigen, die keinen Wert für die ausgewählte Dimension haben. Heben Sie die Auswahl dieser Option auf, um die Zeile **[!UICONTROL Kein Wert]** auszublenden. |
+   | [!UICONTROL **Übereinstimmung**] | Wählen Sie [!UICONTROL **Wenn alle Kriterien erfüllt sind**] aus, um nur Daten anzuzeigen, die alle angegebenen Kriterien erfüllen. Diese Option führt normalerweise zu verfeinerten Daten.<br/><br/>Wählen Sie [!UICONTROL **Wenn ein Kriterium erfüllt ist**] aus, um Daten anzuzeigen, die eines der von Ihnen angegebenen Filterkriterien erfüllen. Diese Option führt normalerweise zu weniger verfeinerten Daten. |
+   | [!UICONTROL **Kriterien**] | Wählen Sie aus den folgenden Filteroptionen aus:<br/><ul><li>[!UICONTROL **Enthält die Phrase**] (Standard): Nur Daten, die den von Ihnen angegebenen genauen Wortlaut enthalten, werden in die gefilterten Ergebnisse aufgenommen. Die Wörter müssen in der Reihenfolge vorliegen, die im Feld [!UICONTROL **Nach Wort oder Phrase suchen**] angegeben ist.</li><li>[!UICONTROL **Enthält einen der Begriffe**]: Nur Daten, die ein oder mehrere Wörter aus der angegebenen Phrase enthalten, werden in die gefilterten Ergebnisse aufgenommen. </li><li>[!UICONTROL **Enthält alle Begriffe**]: Nur Daten, die alle Wörter aus der angegebenen Phrase enthalten, werden in die gefilterten Ergebnisse aufgenommen. Die Wörter müssen nicht in der gleichen Reihenfolge wie im Feld [!UICONTROL **Nach Wort oder Phrase suchen**] vorliegen.</li><li>[!UICONTROL **Enthält keinen der Begriffe**]: Nur Daten, die keines der Wörter aus der angegebenen Phrase enthalten, werden in die gefilterten Ergebnisse aufgenommen. </li><li>[!UICONTROL **Enthält nicht die Phrase**]: Nur Daten, die nicht genau die angegebene Phrase enthalten, werden in die gefilterten Ergebnisse aufgenommen. Die Wörter müssen in der Reihenfolge vorliegen, die im Feld [!UICONTROL **Nach Wort oder Phrase suchen**] angegeben ist.</li><li>[!UICONTROL **Entspricht**]: Nur Daten, die genau mit der von Ihnen angegebenen Wortgruppe übereinstimmen, werden in die gefilterten Ergebnisse aufgenommen. </li><li>[!UICONTROL **Ist nicht gleich**]: Nur Daten, die nicht genau mit der angegebenen Phrase übereinstimmen, werden in die gefilterten Ergebnisse aufgenommen. </li><li>[!UICONTROL **Beginnt mit**]: Nur Daten, die mit dem angegebenen Wort oder der angegebenen Phrase beginnen, werden in die gefilterten Ergebnisse aufgenommen. </li><li>[!UICONTROL **Endet mit**]: Nur Daten, die mit dem angegebenen Wort oder der angegebenen Phrase enden, werden in die gefilterten Ergebnisse aufgenommen. </li></ul>Wählen Sie ![Hinzufügen](/help/assets/icons/Add.svg) [!UICONTROL **Zeile hinzufügen**] aus, um mehrere Filterkriterien hinzuzufügen. Die Option, die Sie für [!UICONTROL **Übereinstimmung**] auswählen, bestimmt **[!UICONTROL ob alle Kriterien erfüllt sind]** oder **[!UICONTROL ob ein Kriterium erfüllt ist]**. |
    | [!UICONTROL **Elemente immer ausschließen**] | Geben Sie den Namen aller Elemente an, die Sie aus den gefilterten Daten ausschließen möchten. |
 
-1. Wählen Sie [!UICONTROL **Anwenden**] aus, um die Daten zu filtern.
+1. Wählen Sie **[!UICONTROL Anwenden]** aus, um die Daten zu filtern. Wählen Sie **[!UICONTROL Löschen]** aus, um alle Eingaben zu löschen. Wählen Sie **[!UICONTROL Abbrechen]** aus, um das Dialogfeld abzubrechen und zu schließen. <br/>Ein farbiges Symbol ![Filter](/help/assets/icons/FilterColored.svg) **Filter** zeigt Details an, wenn ein Filter auf die Tabelle angewendet wird.
 
-   Das **Filtersymbol** ![Blaues Filtersymbol zur Filterung der Tabelle](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg) wird angezeigt, wenn ein Filter auf die Tabelle angewendet wird.
+### Verwenden von Zielgruppenfiltern
 
-### Filter
-
-Weitere Informationen finden Sie in der [Filterdokumentation](/help/components/filters/filters-overview.md) .
+Weitere Informationen finden Sie unter [Filterübersicht](/help/components/filters/filters-overview.md) .
 
 ## Sortieren von Tabellen
 
-Sie können die Daten einer Freiformtabelle nach jeder Spalte in Analysis Workspace sortieren, die entweder eine Dimension oder eine Metrik ist.
+Sie können die Daten einer Freiformtabelle nach jeder Spalte in Analysis Workspace sortieren, die entweder eine Dimension oder eine Metrik ist. Ein Pfeil zeigt an, wie die Daten sortiert werden (**↓** für absteigende Werte oder **↑** für aufsteigende Werte).
 
-Ein Pfeil-nach-unten-Symbol ![Pfeil nach unten zur Sortierung einer Tabellenspalte](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowDown_18_N.svg) ist in der Kopfzeile der Spalte sichtbar, nach der die Daten derzeit sortiert werden.
-
-1. Klicken Sie in einer beliebigen Freiformtabelle in Analysis Workspace auf den Pfeil neben dem Namen der Dimension oder Metrik.
-
-   Beachten Sie beim Sortieren Folgendes:
-
-   - Der Nach-unten-Pfeil sortiert in absteigender Reihenfolge und der Nach-oben-Pfeil (Standard) in aufsteigender Reihenfolge.
-   - Sie können Dimensionen alphabetisch oder numerisch sortieren. Beispielsweise können Sie in einem Workflow nummerierte Schritte verwenden und nach der Schrittnummer sortieren. Eine datumsbezogene Dimension kann nach Datum sortiert werden. Oder Sie können, wie in der folgenden Abbildung, Datenquellen alphabetisch sortieren.
-
-   ![Data Sources-Ansicht, in der das Sortiersymbol hervorgehoben wird.](assets/sort-dimensions.png)
-
-
+![Sortierung](assets/sorting.gif)

@@ -5,7 +5,7 @@ feature: Dimensions
 solution: Customer Journey Analytics
 exl-id: 17b275a5-c2c2-48ee-b663-e7fe76f79456
 role: User
-source-git-commit: aaab21ef817e3acf67ca83cb6f9258b812625c8e
+source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
 workflow-type: tm+mt
 source-wordcount: '544'
 ht-degree: 6%
@@ -16,7 +16,7 @@ ht-degree: 6%
 
 Bei Verwendung einer Dimension, die viele eindeutige Werte enthält, kann der resultierende Bericht zu viele eindeutige Dimensionselemente enthalten, die angezeigt oder berechnet werden können. Ergebnisse werden abgeschnitten, indem Dimensionselemente entfernt werden, die als am wenigsten wichtig erachtet werden. Diese Optimierungen erfolgen zur Gewährleistung der Projekt- und Produktleistung.
 
-Wenn Sie einen Bericht mit zu vielen eindeutigen Werten anfordern, zeigt Analysis Workspace in der Dimensionsüberschrift einen Indikator an, der angibt, dass nicht alle Dimensionselemente einbezogen werden. Beispiel: &quot;Zeilen: 1-50 von mehr als 22.343.156&quot;. Das Keyword &quot;Mehr als&quot;zeigt an, dass eine Optimierung auf den Bericht angewendet wurde, um die wichtigsten Dimensionselemente zurückzugeben.
+Wenn Sie einen Bericht mit zu vielen eindeutigen Werten anfordern, zeigt Analysis Workspace in der Dimensionsüberschrift einen Indikator an, der angibt, dass nicht alle Dimensionselemente einbezogen werden. Beispiel: **[!UICONTROL Zeilen: 1-50 von mehr als 22.343.156]**. Das Keyword **[!UICONTROL more than]** zeigt an, dass eine Optimierung auf den Bericht angewendet wurde, um die wichtigsten Dimensionselemente zurückzugeben.
 
 ![Freiformtabelle in Workspace mit dem Keyword &quot;more than&quot;, um 1-50 von mehr als 22.343.156 anzuzeigen](assets/high-cardinality.png)
 

@@ -5,10 +5,10 @@ title: Kuratieren von Projekten
 feature: Curate and Share
 exl-id: f9636191-8414-458c-9881-8c03f3d45efb
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: de04792035aa7c235751019ee9f9fe5b74b9b102
 workflow-type: tm+mt
 source-wordcount: '509'
-ht-degree: 94%
+ht-degree: 83%
 
 ---
 
@@ -23,7 +23,7 @@ Mit der Kuratierung können Sie die Komponenten (Dimensionen, Metriken, Filter, 
 
 1. Klicken Sie auf **[!UICONTROL Freigeben]** > **[!UICONTROL Projektdaten kuratieren]**.
 Die im Projekt verwendeten Komponenten werden automatisch hinzugefügt.
-1. (Optional) Um weitere Komponenten hinzuzufügen, ziehen Sie die freizugebenden Komponenten aus der linken Leiste in das Feld [!UICONTROL Komponenten kuratieren].
+1. (Optional) Um weitere Komponenten hinzuzufügen, ziehen Sie die freizugebenden Komponenten aus dem linken Bereich in das Feld [!UICONTROL Komponenten kuratieren] .
 1. Klicken Sie auf **[!UICONTROL Fertig]**.
 
 Eine Kuratierung kann auch über das Menü [!UICONTROL Freigeben] angewendet werden, indem Sie auf **[!UICONTROL Kuratieren und freigeben]** klicken. Diese Option kuratiert das Projekt automatisch auf die im Projekt verwendeten Komponenten. Sie können weitere Komponenten hinzufügen, wie oben beschrieben.
@@ -38,7 +38,7 @@ Wenn ein Empfänger ein kuratiertes Projekt öffnet, wird ihm nur der ausgewähl
 
 ## Entfernen der Projektkuratierung
 
-So entfernen Sie die Projektkuratierung und stellen Sie den vollständigen Satz der Komponenten in der linken Leiste wieder her:
+So entfernen Sie die Projektkuratierung und stellen den vollständigen Satz von Komponenten im linken Bereich wieder her:
 
 1. Klicken Sie auf **[!UICONTROL Freigeben]** > **[!UICONTROL Projektdaten kuratieren]**.
 1. Klicken Sie auf **[!UICONTROL Kuratierung entfernen]**.
@@ -46,7 +46,7 @@ So entfernen Sie die Projektkuratierung und stellen Sie den vollständigen Satz 
 
 ## Optionen zur Komponentenkuratierung
 
-In einem kuratierten Projekt wird dem Empfänger in der linken Leiste die Option **[!UICONTROL Alle anzeigen]** für Komponenten angezeigt. [!UICONTROL Alle anzeigen] zeigt verschiedene Komponentensätze an, je nach:
+In einem kuratierten Projekt wird dem Empfänger im linken Bereich die Option für die Komponenten **[!UICONTROL Alle anzeigen]** angezeigt. [!UICONTROL Alle anzeigen] zeigt verschiedene Komponentensätze an, je nach:
 
 * Berechtigungsebene der Person (Admin oder Nicht-Admin)
 * Projektrolle (Inhaber/Bearbeiter oder nicht)

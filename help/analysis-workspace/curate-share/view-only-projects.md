@@ -5,10 +5,10 @@ title: Schreibgeschützte Projekte
 feature: Curate and Share
 exl-id: 2bc26444-aeea-4695-92a5-a2b45ac18e0d
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: de04792035aa7c235751019ee9f9fe5b74b9b102
 workflow-type: tm+mt
 source-wordcount: '242'
-ht-degree: 80%
+ht-degree: 79%
 
 ---
 
@@ -22,7 +22,7 @@ Sie können Projekte über den [Projektfreigabe-Workflow](/help/analysis-workspa
 
 Zu den deaktivierten Interaktionen in einem schreibgeschützten Projekt gehören:
 
-* Ausgeblendete linke Leiste
+* Ausgeblendeter linker Bereich
 * Datumsbereich des Bedienfeldkalenders. Hinweis: Wenn Sie zulassen möchten, dass die Empfänger Kontrolle über den Kalender haben, fügen Sie einen [Dropdown-Filter mit Datumsbereichen](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html?lang=de) hinzu.
 * Freiformfilterung
 * Freiform – Anzahl der sichtbaren Zeilen

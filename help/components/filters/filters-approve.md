@@ -4,29 +4,26 @@ title: Genehmigen von Filtern
 feature: Filters
 exl-id: 3892ef54-3f24-4c7a-868f-f566efaea400
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 65eafd65358d9370b452338ce1036e59b3c69d1a
 workflow-type: tm+mt
-source-wordcount: '132'
-ht-degree: 71%
+source-wordcount: '131'
+ht-degree: 3%
 
 ---
 
-# Filter genehmigen {#approve}
+# Genehmigen von Filtern
 
-Im Filter-Manager können Sie einen Workflow einrichten, der das Genehmigen von Filtern für verschiedene Anwendungsebenen, für bestimmte Abteilungen oder Gruppen umfasst und mit den Berichtserstellungsrichtlinien übereinstimmt.
+Im [Filter-Manager](manage-filters.md) können Sie Filter genehmigen und deren Genehmigung aufheben. Nur Administratoren können Filter genehmigen.
 
-So wird ein Filter als genehmigt gekennzeichnet:
+So validieren Sie Filter:
 
-1. Aktivieren Sie im Filter-Manager das Kontrollkästchen links neben dem Filtertitel.
+1. Wählen Sie im [Filter-Manager](manage-filters.md) einen oder mehrere Filter aus, die Sie genehmigen möchten.
+1. Wählen Sie in der Aktionsleiste ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) **[!UICONTROL Approve]** aus. Die genehmigten Filter werden mit ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) angegeben.
 
-1. Klicken Sie in der Task-Leiste für die Filterverwaltung auf **[!UICONTROL Genehmigen]**.
+So deaktivieren Sie Filter:
 
-1. Überlegen Sie, ob Sie die genehmigten Filter für Ihre Organisation freigeben möchten.
+1. Wählen Sie im [Filter-Manager](manage-filters.md) mindestens einen Filter aus, dessen Genehmigung Sie aufheben möchten.
+1. Wählen Sie in der Aktionsleiste ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) **[!UICONTROL Unapprove]** aus.
 
-1. Klicken Sie auf **[!UICONTROL OK]**.
 
-   Beachten Sie, dass in der Liste neben dem Filter ein Genehmigungssymbol angezeigt wird:
-
-   ![Filter-Manager, der anzeigt, dass Bestellungen über 100 für die Freigabe genehmigt wurden.](assets/seg_approved.png)
-
-1. Sie können die Genehmigung eines genehmigten Filters auch aufheben, indem Sie auf **[!UICONTROL Nicht genehmigen]** klicken.
+Sie können Ihre Filterliste nach genehmigten Filtern filtern. Wählen Sie **[!UICONTROL Sonstige Filter]** aus dem Bereich ![Filter](/help/assets/icons/Filter.svg) **[!UICONTROL Filter]** und wählen Sie **[!UICONTROL Genehmigt]** aus. Weitere Informationen finden Sie unter [Filtern der Filterliste](/help/components/filters/filters-filter.md) .

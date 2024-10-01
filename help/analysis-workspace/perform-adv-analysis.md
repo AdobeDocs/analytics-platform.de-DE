@@ -5,16 +5,16 @@ feature: Workspace Basics
 exl-id: 17f50618-54eb-4d60-9f5e-62aab9a3c49b
 solution: Customer Journey Analytics
 role: User
-source-git-commit: 1564c91616015311393a643fe7fcecd429cf3a36
+source-git-commit: 747e77b964006404d70b500b28ec44005d65d944
 workflow-type: tm+mt
-source-wordcount: '65'
-ht-degree: 100%
+source-wordcount: '71'
+ht-degree: 73%
 
 ---
 
 # Durchführen einer erweiterten Analyse
 
-Vergewissern Sie sich, dass Sie die [grundlegende Analyse](/help/analysis-workspace/perform-basic-analysis.md) verstanden haben, bevor Sie die unten beschriebene erweiterte Analyse durchführen.
+Bevor Sie wie unten beschrieben mit der Erstellung von erweiterten Analyseberichten und -visualisierungen beginnen, sollten Sie die [grundlegende Analyse](/help/analysis-workspace/perform-basic-analysis.md) verstehen.
 
 Die erweiterte Analyse nutzt Funktionen wie [Flussdiagramme](/help/analysis-workspace/visualizations/c-flow/flow.md), [Attribution](/help/analysis-workspace/c-panels/attribution.md), [Fallout-Diagramme](/help/analysis-workspace/visualizations/fallout/fallout-flow.md) und [Dimensionsaufschlüsselungen](/help/components/dimensions/t-breakdown-fa.md).
 

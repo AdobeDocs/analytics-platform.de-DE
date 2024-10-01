@@ -4,26 +4,42 @@ title: Dichte anzeigen
 feature: Workspace Basics
 exl-id: b02672e2-0728-472b-97fe-14637ab1c2df
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 373d0c9989fb692da23efe371c65344093801140
 workflow-type: tm+mt
-source-wordcount: '116'
-ht-degree: 93%
+source-wordcount: '110'
+ht-degree: 20%
 
 ---
 
 # Dichte anzeigen
 
-Durch die Anpassung der Anzeigedichte können Sie mehr Daten auf dem Bildschirm anzeigen, indem Sie den vertikalen Abstand der linken Schiene, Freiformtabellen und Kohortentabellen reduzieren.
-Zum Wechseln zwischen den Anzeigedichten gibt es drei Optionsschaltflächen:
+Durch die Anpassung der Anzeigedichte können Sie mehr Daten auf dem Bildschirm anzeigen, indem Sie den vertikalen Abstand des linken Bedienfelds, der Freiformtabellen und der Kohortentabellen reduzieren. Drei Optionen stehen zur Wahl:
 
-- **[!UICONTROL Kompakt]**: Dies ist die Version mit der am stärksten verdichteten Ansicht.
-- **[!UICONTROL Komfort]**: Bietet etwas mehr Abstand als die Kompaktversion.
-- **[!UICONTROL Erweitert]** (Standard): Die aus Workspace bekannte Ansicht.
+>[!BEGINTABS]
 
-![Die Dichte der kompakten, komfortablen und erweiterten Ansichten.](assets/view-density.png)
+>[!TAB Compact]
+
+Dies ist die Version mit der am meisten gekürzten Ansicht.
+
+![ Die Dichte der kompakten Ansicht.](assets/view-density-compact.png)
+
+>[!TAB Komfort]
+
+Dies ist die Ansicht, die Sie in Workspace gewohnt sind.
+
+![ Die Dehnungsgrenzen der erweiterten Ansicht.](assets/view-density-comfortable.png)
+
+>[!TAB Erweitert]
+
+Dies ist die Ansicht, die Sie in Workspace gewohnt sind.
+
+![ Die Dehnungsgrenzen der erweiterten Ansicht.](assets/view-density-expanded.png)
+
+>[!ENDTABS]
+
 
 So stellen Sie die Anzeigedichte ein:
 
-1. Navigieren Sie im Workspace zu **[!UICONTROL Projekte]** > **[!UICONTROL Projektinformationen und Einstellungen]**.
+1. Navigieren Sie in Workspace zu &quot;**[!UICONTROL Projekte]**&quot;> &quot;**[!UICONTROL Projektinformationen und Einstellungen]**&quot;.
 
-1. Wählen Sie eine der 3 oben erwähnten Optionen und klicken Sie auf **[!UICONTROL Speichern]**.
+1. Wählen Sie die Option **[!UICONTROL Dichte anzeigen]** und danach **[!UICONTROL Speichern]** aus.

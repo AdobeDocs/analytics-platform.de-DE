@@ -5,16 +5,16 @@ title: Anwendungsfälle für die Kohortenanalyse
 feature: Visualizations
 exl-id: f559d4b4-b682-4306-b111-22acb26fe0a0
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 388042e24a7b9d33ac88e05a68689308e6258339
 workflow-type: tm+mt
-source-wordcount: '955'
-ht-degree: 96%
+source-wordcount: '973'
+ht-degree: 51%
 
 ---
 
-# Anwendungsfälle für die [!UICONTROL Kohortenanalyse]
+# Anwendungsfälle für die Kohortenanalyse ][!UICONTROL 
 
-Anwendungsfälle für die [!UICONTROL Kohortenanalyse].
+In diesem Artikel werden einige Anwendungsfallbeispiele für die [!UICONTROL Kohortenanalyse] beschrieben.
 
 ## Anwendungsfall: Mobile-App-Interaktion
 
@@ -28,7 +28,7 @@ Sie können eine [!UICONTROL Kohortenanalyse] über sechs Monate erstellen:
 
 **Rückkehrmetrik**: Sitzungen oder Starts
 
-Besucher werden in den Folgemonaten nicht als *`engaged`* gezählt, es sei denn, sie haben eine Sitzung oder starten mindestens die App. Die [!UICONTROL Kohortenanalyse] zeigt Ihnen dann Nutzungsmuster, bei denen *`App Install`* immer in Monat 0 auftritt. Vielleicht stellen Sie fest, dass die Verwendung im zweiten Monat zurückgeht, unabhängig vom Zeitpunkt der Installation der Anwendung durch die Benutzer. (Für diejenigen, die die Anwendung im Januar 2015 installiert haben, ist der zweite Monat der März 2015. Für diejenigen, die die Anwendung im Februar 2015 installiert haben, ist der zweite Monat der April 2015 usw.) Diese Analyse bietet Ihnen die Möglichkeit, im zweiten Monat nach der Installation der Anwendung an alle Benutzer eine E-Mail oder eine Push-Nachricht zu senden, um sie daran zu erinnern, die Anwendung zu verwenden.
+Personen zählen in nachfolgenden Monaten nicht als *interagiert*, es sei denn, sie haben eine Sitzung oder starten die App zumindest. [!UICONTROL Kohortenanalyse] zeigt Ihnen dann Nutzungsmuster, bei denen die *App-Installation* immer im Monat 0 auftritt. Vielleicht stellen Sie fest, dass die Verwendung im zweiten Monat zurückgeht, unabhängig vom Zeitpunkt der Installation der Anwendung durch die Benutzer. (Für Benutzer, die die App im Januar 2015 installiert haben, ist der zweite Monat der März 2015. Für die Personen, die die App im Februar 2015 installiert haben, ist der zweite Monat der April 2015 usw.) Diese Analyse ermöglicht es Ihnen, im zweiten Monat nach der Installation der App eine E-Mail oder eine Push-Nachricht an alle Benutzer zu senden, um sie an die Verwendung der App zu erinnern.
 
 ## Anwendungsfall: Abonnement
 
@@ -40,23 +40,23 @@ Sie arbeiten bei Adobe.com und bieten ein kostenloses Creative Cloud-Abonnement 
 
 **Rückkehrmetrik**: Kauf der zahlungspflichtigen Creative Cloud
 
-Mithilfe dieser [!UICONTROL Kohortenanalyse] könnten Sie z. B. sehen, dass zwischen 8 % und 10 % der Benutzer der kostenlosen Creative Cloud-Version im ersten Monat nach der Installation ein Upgrade durchführen, unabhängig vom Zeitpunkt der Installation. 12–15 % führen im zweiten Monat der Verwendung ein Upgrade durch. Danach lassen die Upgrades merklich nach: 4–5 % im dritten Monat, 3–4 % im vierten Monat und 1–2 % im fünften Monat.
+Mithilfe der [!UICONTROL Kohortenanalyse] können Sie beispielsweise sehen, dass zwischen 8 % und 10 % der kostenlosen Creative Cloud-Benutzer im ersten Monat nach der Installation ein Upgrade durchführen. Unabhängig davon, wann die Benutzer installiert sind. 12–15 % führen im zweiten Monat der Verwendung ein Upgrade durch. Danach lassen die Upgrades merklich nach: 4–5 % im dritten Monat, 3–4 % im vierten Monat und 1–2 % im fünften Monat.
 
-Da deutlich wird, dass Sie im dritten Monat keine potenziellen Kunden verlieren sollten, richten Sie eine E-Mail-Kampagne ein, die in der Mitte des dritten Monats an eine Stichprobe der Benutzer herausgeht und Benutzern, die noch kein Upgrade durchgeführt haben, einen Gutschein über 50 $ anbietet.
+Sie möchten keine potenziellen Kunden im dritten Monat verlieren. Sie richten also eine E-Mail-Kampagne ein, die Mitte des dritten Monats an eine Stichprobe von Benutzern gesendet werden soll. Angebot eines Gutscheins von 50 USD für Benutzer, die noch kein Upgrade durchgeführt haben.
 
-Einige Monate später erstellen Sie erneut einen Kohortenanalysebericht. Für Kohorten, die nach dem Start der Kampagne gebildet wurden, ist die Konversion zu zahlungspflichtigen Creative Cloud-Abonnements von 4–5 % auf 13–14 % gestiegen, was pro Kohorte für mehrere hunderttausend Dollar steht, für alle monatlichen Kohorten, die ab diesem Punkt den dritten Monat erreichen.
+Sehen Sie sich einige Monate später Ihre Kohortenanalyseberichte an. Für Kohorten, die nach dem Start der Kampagne gebildet wurden, ist die Konversion in bezahlte Creative Cloud-Abonnements im dritten Monat von 4-5 % auf 13-14 % gestiegen. Dieser Anstieg der Konversionen führt zu Hunderttausenden von Dollar pro Kohorte, für jede monatliche Kohorte, die ab diesem Zeitpunkt den dritten Monat erreicht.
 
 ## Anwendungsfall für komplexe Kohortenfilter
 
-Eine große Hotelkette zielt auf mehrere Kundengruppen für Promotionen ab und verfolgt sie auf Grundlage der Leistung nach. Um die besten Gruppen von Benutzerkohorten für die Zielgruppe zu identifizieren, sollen sehr spezifische Kohortengruppen gebildet werden. Mithilfe der erweiterten [!UICONTROL Einschluss]- und [!UICONTROL Rückgabe]-Kriterien innerhalb der [!UICONTROL Kohortentabellen] sind sie in der Lage, genau die richtigen Kohortengruppierungen mit mehreren Metriken und Filtern zu definieren, um leistungsschwache Kundengruppen zu identifizieren und sie gezielt mit Werbeaktionen und Angeboten anzusprechen, um die Buchungen zu steigern.
+Eine große Hotelkette zielt auf mehrere Kundengruppen für Promotionen ab und verfolgt sie auf Grundlage der Leistung nach. Um die besten Gruppen von Benutzerkohorten zu identifizieren, die als Ziel ausgewählt werden sollen, möchten sie sehr spezifische Kohortengruppen erstellen. Mithilfe der erweiterten Kriterien [!UICONTROL Aufnahme] und [!UICONTROL Rückgabe] innerhalb der Tabellen [!UICONTROL Kohorte] kann die Hotelkette genau die richtigen Kohortengruppierungen mit mehreren Metriken und Filtern definieren. So kann die Hotelkette leistungsschwache Kundengruppen identifizieren, um Kunden mit Promotions und Angeboten anzusprechen und so die Buchungen zu steigern.
 
 ## Anwendungsfall zur Annahme der App-Version
 
-Bei einem großen Versicherungsunternehmen wird ein großer Teil der Kundeninteraktion über die Nutzung der mobilen Anwendung gefördert. Da jedoch immer wieder neue Funktionen zur App hinzugefügt werden, ist es wichtig, dass die Kunden eine Aktualisierung auf die neueste App-Version durchführen. Sie können alle App-Versionen mithilfe der Kohorte [!UICONTROL Benutzerspezifische Dimension] gegeneinander analysieren und miteinander vergleichen, um zu sehen, auf welche Kunden mit welcher App-Version abgezielt werden sollte. Darüber hinaus können sowohl die Bindung als auch die Abwanderung verfolgt werden, um festzustellen, ob bestimmte App-Versionen Kunden davon abhalten, die App im Laufe der Zeit zu nutzen. Durch mobiles Messaging kann eine erneute Interaktion mit solchen Benutzern stattfinden, damit diese eine Aktualisierung auf die neueste Version durchführen, um die Vorteile der neuesten Funktionen nutzen zu können.
+Ein großes Versicherungsunternehmen treibt die Kundeninteraktion durch die Verwendung seiner mobilen App voran. Da jedoch immer wieder neue Funktionen zur App hinzugefügt werden, ist es wichtig, dass die Kunden eine Aktualisierung auf die neueste App-Version durchführen. Sie können alle App-Versionen mithilfe der Kohorte [!UICONTROL Benutzerspezifische Dimension] gegeneinander analysieren und miteinander vergleichen, um zu sehen, auf welche Kunden mit welcher App-Version abgezielt werden sollte. Darüber hinaus können sowohl die Bindung als auch die Abwanderung verfolgt werden, um festzustellen, ob bestimmte App-Versionen Kunden davon abhalten, die App im Laufe der Zeit zu nutzen. Durch mobiles Messaging kann eine erneute Interaktion mit solchen Benutzern stattfinden, damit diese eine Aktualisierung auf die neueste Version durchführen, um die Vorteile der neuesten Funktionen nutzen zu können.
 
 ## Anwendungsfall zur Kampagnentreue
 
-Ein internationales Medienunternehmen verwendet Zielgruppen-Kampagnen, um Benutzer auf die verschiedenen Plattformen zu leiten und so die Interaktion zu fördern. Die Werbeausgaben pro Plattform basieren auf der Kundeninteraktion und -bindung, daher sind erfolgreiche Kampagnen entscheidend für den Erfolg des Unternehmens. Unsere neue Funktion für die Kohorte [!UICONTROL Benutzerspezifische Dimension] in [!UICONTROL Kohortentabellen] wird verwendet, um verschiedene Kampagnen nebeneinander zu vergleichen und herauszufinden, welche Kampagnen am effektivsten sind, um Benutzer zu gewinnen und zu binden und so die Interaktion zu fördern. Anschließend kann festgestellt werden, welche Aspekte zum Erfolg einer Kampagne beitragen. Diese Erkenntnisse können dann auf andere Kampagnen angewendet werden, um die Interaktion auf den verschiedenen Plattformen zu fördern.
+Ein internationales Medienunternehmen verwendet Zielgruppen-Kampagnen, um Benutzer auf die verschiedenen Plattformen zu leiten und so die Interaktion zu fördern. Die Werbeausgaben pro Plattform basieren auf der Kundeninteraktion und -bindung, daher sind erfolgreiche Kampagnen entscheidend für den Erfolg des Unternehmens. Sie verwenden die neue Kohortenfunktion [!UICONTROL Benutzerdefinierte Dimension] in den Tabellen [!UICONTROL Kohorte] , um verschiedene Kampagnen nebeneinander zu vergleichen und herauszufinden, welche Kampagnen am effektivsten sind, um Benutzer zu gewinnen und zu binden und so die Interaktion zu steigern. Anschließend kann festgestellt werden, welche Aspekte zum Erfolg einer Kampagne beitragen. Diese Erkenntnisse können dann auf andere Kampagnen angewendet werden, um die Interaktion auf den verschiedenen Plattformen zu fördern.
 
 ## Anwendungsfall einer Produkteinführung
 
@@ -64,4 +64,4 @@ Ein großer Kleidungseinzelhändler verfügt über viele spezifische Kundenfilte
 
 ## Individuelle Stickiness - Anwendungsfall der meisten treuen Benutzer
 
-Bei einer großen Fluggesellschaft hängt der Erfolg und Umsatz zu einem großen Teil von wiederkehrenden und treuen Kunden ab. In vielen Fällen machen treue Reisende den Großteil des Umsatzes aus und die Bindung dieser Kunden ist entscheidend für den langfristigen Erfolg. Oft kann es sich schwierig gestalten herauszufinden, welche die treuesten und beständigsten Kunden sind. Mithilfe der neuen Einstellung [!UICONTROL Rollierende Berechnung] in der [!UICONTROL Kohortenanalyse] konnte das Unternehmen jedoch Filter für treue Kunden analysieren und herausfinden, welche Reisenden Monat für Monat zu Wiederholungskäufern wurden. So konnten diese Reisenden dann mit Vorteilen und Vergünstigungen für ihre Treue belohnt werden. Darüber hinaus konnte durch die Umstellung des Kohortentyps von Bindung auf Abwanderung auch monatsweise festgestellt werden, welche Reisenden nicht erneut eingekauft hatten. Für diese Filter können dann Marketingaktionen durchgeführt werden, sodass erneut eine Verbindung mit diesen Kunden aufgebaut und sichergestellt werden kann, dass sie auch in Zukunft treue Kunden bleiben.
+Bei einer großen Fluggesellschaft hängt der Erfolg und Umsatz zu einem großen Teil von wiederkehrenden und treuen Kunden ab. In vielen Fällen machen treue Reisende den Großteil des Umsatzes aus und die Bindung dieser Kunden ist entscheidend für den langfristigen Erfolg. Oft kann es sich schwierig gestalten herauszufinden, welche die treuesten und beständigsten Kunden sind. Mit der neuen Einstellung [!UICONTROL Rollierende Berechnung] in der [!UICONTROL Kohortenanalyse] kann die Fluglinie jedoch Filter für treue Kunden analysieren und herausfinden, welche Reisenden im Monat für Monat erneut Kunden waren. Die Fluggesellschaft ist auch in der Lage, diese Reisenden mit Belohnungen und Prämien für ihre Loyalität anzusprechen. Darüber hinaus kann die Fluggesellschaft durch Umstellung des Kohortentyps von Bindung auf Abwanderung identifizieren, welche Kunden monatlich keine wiederkehrenden Käufer sind, und diese Kunden mit Promotions ansprechen. So kann die Fluggesellschaft wieder mit diesen Kunden interagieren und sicherstellen, dass sie auch in Zukunft treue Kunden bleiben.

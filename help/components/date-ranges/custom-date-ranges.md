@@ -1,70 +1,56 @@
 ---
-description: Erstellen Sie benutzerdefinierte Datumsbereiche in Analysis Workspace und speichern Sie sie als Zeitkomponenten.
+description: Beispiel für benutzerdefinierte Datumsbereiche in Analysis Workspace.
 keywords: Analysis Workspace
-title: Erstellen von benutzerdefinierten Datumsbereichen
+title: Beispiel für benutzerdefinierte Datumsbereiche
 feature: Calendar
 exl-id: 1a7df63a-bf18-4c38-b7e2-e83c2d278544
 role: User
-source-git-commit: 47b7747b37f82e4d75d5272ce1d8d37f4e497bb5
+source-git-commit: 01f862997503cb36502145eddb47873bc7cb28fe
 workflow-type: tm+mt
-source-wordcount: '438'
-ht-degree: 57%
+source-wordcount: '111'
+ht-degree: 4%
 
 ---
 
-# Erstellen von benutzerdefinierten Datumsbereichen
+# Beispiel für benutzerdefinierte Datumsbereiche
 
-Sie können benutzerdefinierte Datumsbereiche in Analysis Workspace erstellen und als Zeitkomponenten speichern.
+Dieser Artikel zeigt weitere Beispiele für benutzerdefinierte Datumsbereiche
 
-Informationen zum Hinzufügen vorhandener Datumsbereiche zu einem Projekt finden Sie unter [Übersicht über Kalender und Datumsbereiche](/help/components/date-ranges/calendar.md).
 
-So erstellen Sie einen benutzerdefinierten Datumsbereich:
 
-1. Wählen Sie in Adobe Analytics **[!UICONTROL Komponenten]** > **[!UICONTROL Datumsbereiche]** aus.
+## Letzte zwei Monate
 
-   ![Datumsbereichsseite](assets/date-ranges.png)
++++ Details
 
-1. Wählen Sie [!UICONTROL **Neuen Datumsbereich erstellen**] aus.
+Sie möchten einen benutzerdefinierten Datumsbereich definieren, der vor zwei Monaten definiert wurde. Sie verwenden eine der Vorgaben.
 
-1. Geben Sie im Generator für Datumsbereiche die folgenden Informationen an:
+![Letzte 2 Monate vor ](assets/date-range-example-simple.png)
 
-   | Option | Beschreibung |
-   |---------|----------|
-   | [!UICONTROL **Titel**] | Der Titel des Datumsbereichs, der angezeigt wird, wenn Benutzer ihn in Analysis Workspace auswählen. |
-   | [!UICONTROL **Beschreibung**] | Eine Beschreibung für den Datumsbereich. |
-   | [!UICONTROL **Tags**] | Alle Tags, die Sie auf den Datumsbereich anwenden möchten. |
-   | [!UICONTROL **Datumsbereich**] | Hier können Sie einen benutzerdefinierten Datumsbereich auswählen. Standardmäßig sind die letzten 30 Tage ausgewählt. |
-   | [!UICONTROL **Vorgabe**] | Wählen Sie aus einer Liste vordefinierter Datumsbereiche aus, z. B. [!UICONTROL **Gestern**], [!UICONTROL **Letzte 7 Tage**], [!UICONTROL **Letzte 30 Tage**] usw. |
-   | [!UICONTROL **Startzeit**] | Die Tageszeit, zu der der Datumsbereich beginnt. |
-   | [!UICONTROL **Endzeit**] | Die Tageszeit, zu der der Datumsbereich endet. |
-   | [!UICONTROL **Rollierende Datumswerte verwenden**] | Mithilfe rollierender Daten können Sie einen dynamischen Bericht generieren, der zum Zeitpunkt seiner Ausführung einen bestimmten Zeitraum voraus oder zurück umfasst. Wenn Sie zum Beispiel einen Bericht zu allen Bestellungen haben möchten, die im letzten Monat aufgegeben wurden (wobei sich „Letzter Monat“ auf das Feld „Erstellungsdatum“ bezieht), und diesen Bericht dann im Dezember ausführen, würden Ihnen alle Bestellungen angezeigt, die im November aufgegeben wurden. Führen Sie den gleichen Bericht im Januar aus, werden Ihnen die Bestellungen aus dem Dezember angezeigt.<ul><li>**[!UICONTROL Datumsvorschau]**: Gibt an, welchen Zeitraum der rollierende Kalender umfasst.</li><li>**[!UICONTROL Start]**: Sie können zwischen den folgenden Optionen wählen: „Aktueller Tag“, „Aktuelle Woche“, „Aktueller Monat“, „Aktuelles Quartal“ und „Aktuelles Jahr“.</li><li>**[!UICONTROL Ende]**: Sie können zwischen den folgenden Optionen wählen: „Aktueller Tag“, „Aktuelle Woche“, „Aktueller Monat“, „Aktuelles Quartal“ und „Aktuelles Jahr“.</li></ul><br>Standardmäßig ausgewählt. |
++++
 
-1. Wählen Sie [!UICONTROL **Speichern**] aus.
 
-## Beispiel: Datumsbereich für &quot;Vor zwei Monaten&quot; {#section_C4109C57CB444BB2A79CC8082BD67294}
+## Rollierend bis zum Ende der letzten Woche
 
-Der folgende benutzerdefinierte Datumsbereich zeigt den Bereich vor zwei Monaten mit einer Visualisierung der Zusammenfassungsänderung, die eine Trend-Entwicklung anzeigt.
++++ Details
 
-![](assets/date-range-two-months-ago.png)
+Sie möchten einen Datumsbereich definieren, der den Zeitraum zwischen dem aktuellen Tag vor einer Woche und dem Ende dieser letzten Woche definiert. Wenn heute beispielsweise Mittwoch, der 11. September 2024 ist. Sie möchten einen Datumsbereich zwischen Mittwoch, 4. September 2024 und Samstag, 7. September 2024 festlegen. September
 
-Der benutzerdefinierte Datumsbereich wird in Ihrem Projekt oben auf dem Komponentenbereich für den [!UICONTROL Datumsbereich] angezeigt:
+![Beispiel für einen Datumsbereich](assets/date-range-example.png)
 
-![](assets/date-range-panel-two-months-ago.png)
++++
 
-Sie können diesen benutzerdefinierten Datumsbereich auf eine Spalte neben einem benutzerdefinierten, monatlichen rollierenden Datumsbereich ziehen und die Voreinstellung für den letzten Monat für den Vergleich nutzen. Fügen Sie eine Visualisierung der Sammeländerung hinzu und wählen Sie die Gesamtsummen der einzelnen Spalten aus, um eine Trendentwicklung zu zeigen:
+<!--
+## Example: Use a 7-day rolling date range {#section_7EF63B2E9FF54D2E9144C4F76956A8DD}
 
-![](assets/date-range-two-months-table.png)
-
-## Beispiel: Verwenden eines 7-Tage-Datumsbereichs {#section_7EF63B2E9FF54D2E9144C4F76956A8DD}
-
-Sie können einen Datumsbereich erstellen, der ein rollierendes 7-Tage-Fenster angibt, das vor einer Woche endet:
+You can create a date range that specifies a 7-day rolling window that ends one week ago:
 
 ![](assets/create_date_range.png)
 
-Verwenden Sie *`rolling daily`*.
+Use *`rolling daily`*.
 
-* Die Starteinstellung lautet *`current day minus 6 days`*.
+* The Start settings would be *`current day minus 6 days`*.
 
-* Die Endeinstellung lautet *`current day minus 7 days`*.
+* The End settings would be *`current day minus 7 days`*.
 
-Dieser Datumsbereich kann eine Komponente sein, die Sie auf eine beliebige Freiformtabelle ziehen können.
+This date range can be a component that you drag onto any freeform table.
+-->

@@ -4,10 +4,10 @@ title: Fallout-Visualisierung konfigurieren
 feature: Visualizations
 exl-id: 3d888673-d7b1-45ef-bd3a-97b98466fb0e
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 664756b796e8915a701ccabfb5f250e777701b60
 workflow-type: tm+mt
-source-wordcount: '709'
-ht-degree: 67%
+source-wordcount: '711'
+ht-degree: 36%
 
 ---
 
@@ -15,64 +15,73 @@ ht-degree: 67%
 
 Sie können die Touchpoints angeben, um eine mehrdimensionale Fallout-Sequenz zu erstellen. Ein Touchpoint ist im Allgemeinen eine Seite auf Ihrer Website. Touchpoints sind jedoch nicht auf Webseiten eingeschränkt. Sie können beispielsweise Ereignisse wie Einheiten sowie Unique Users und Wiederkehrbesuche hinzufügen. Auch Dimensionen können Sie hinzufügen (wie Kategorie, Browsertyp oder interner Suchbegriff).
 
-Sie können sogar Filter innerhalb eines Touchpoints hinzufügen. Vielleicht möchten Sie zum Beispiel Filter vergleichen, etwa iOS- und Android-Benutzer. Wenn Sie die gewünschten Filter per Drag-and-Drop an den oberen Rand des Fallouts ziehen, werden Informationen über diese Filter zum Fallout-Bericht hinzugefügt. Wenn Sie möchten, dass nur diese Filter angezeigt werden, können Sie die Grundlinie „Alle Besuche“ entfernen.
+Sie können sogar Filter innerhalb eines Touchpoints hinzufügen. Sie können beispielsweise Filter vergleichen, z. B. Benutzer von iOS und Android™. Wenn Sie die gewünschten Filter per Drag-and-Drop an den oberen Rand des Fallouts ziehen, werden Informationen über diese Filter zum Fallout-Bericht hinzugefügt. Wenn Sie nur diese Filter anzeigen möchten, können Sie die Grundlinie Alle Besuche entfernen.
 
-Bezüglich der Anzahl der Schritte, die hinzugefügt, oder der Dimensionen, die verwendet werden können, gibt es keine Einschränkungen.
+Die Anzahl der Schritte, die Sie hinzufügen können, und die Anzahl der verwendeten Dimensionen sind nicht beschränkt.
 
-Sie können Pathing an eVars vornehmen, einschließlich Merchandising-eVars und [listVars](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/page-variables.html?lang=de) (Variablen, die mehrere Werte pro Ereignis haben können, wie Produkte, listVars, Merchandising-eVars und Listen-Props). Beispiel: Angenommen, jemand sucht auf der einen Seite nach „Schuhe, Shirt“ und auf der nächsten Seite nach „Schuhe, Socken“. Der nächste Produktflussbericht von Schuhe wird „Shirt und Socken“ lauten, NICHT „Shirt“.
+Sie können Pfade für Dimensionen, Metriken und Filter erstellen. Angenommen, jemand sucht auf einer Seite nach Schuhe, Hemd und auf der nächsten Seite nach Hemd, Socken. Der nächste Produktflussbericht von Schuhe wird „Shirt und Socken“ lauten, NICHT „Shirt“.
 
-1. Ziehen Sie eine [!UICONTROL Fallout]-Visualisierung aus dem Dropdownfeld „Visualisierung“ in eine [!UICONTROL Freiformtabelle].
+## Verwenden Sie stattdessen 
 
-1. Ziehen Sie die Dimension „Seite“ in die Freiformtabelle und ziehen Sie von dort eine Seite (in diesem Fall „Startseite – JJEsquire“) als ersten Touchpoint in das Feld **[!UICONTROL Touchpoint hinzufügen]**.
+1. Fügen Sie eine Visualisierung für ![ConversionTrichter](/help/assets/icons/ConversionFunnel.svg) **[!UICONTROL Fallout]** hinzu. Siehe [Hinzufügen einer Visualisierung zu einem Bedienfeld](../freeform-analysis-visualizations.md#add-visualizations-to-a-panel).
+1. Ziehen Sie eine Seite, z. B. die Startseite, aus der Dimension Seite in das Dropdown-Menü *Touchpoint hinzufügen* .
 
-   ![Die Dropdown-Liste Alle Besuche mit JJEsquire wurde in das Feld Touchpoint hinzufügen gezogen.](assets/fallout1.png)
+   ![Die Startseite aus der Dimension &quot;Startseite&quot;wurde in das Feld &quot;Touchpoint hinzufügen&quot;gezogen.](assets/fallout-drag.png)
 
-   Bewegen Sie den Mauszeiger über einen Touchpoint, um den Fallout und andere Informationen zu dieser Ebene anzuzeigen, z. B. den Namen des Touchpoints, die Anzahl der Personen an diesem Punkt und die Erfolgsrate für diesen Touchpoint (sowie den Vergleich der Erfolgsrate mit anderen Touchpoints).
+   Bewegen Sie den Mauszeiger über einen Touchpoint, um den Fallout und andere Informationen zu dieser Ebene anzuzeigen, z. B. den Namen des Touchpoints und die Personenanzahl an diesem Punkt. Sehen Sie sich die Erfolgsrate für diesen Touchpoint an (und vergleichen Sie die Erfolgsrate mit anderen Touchpoints).
 
-   Die umkreisten Zahlen im grauen Abschnitt der Leiste zeigen den Fallout zwischen Touchpoints an (nicht den gesamten Fallout bis zu diesem Punkt). Der Touchpoint-Prozentsatz zeigt den erfolgreichen Fall-through vom vorherigen Schritt zum aktuellen Schritt im Fallout-Bericht an.
+   Die umkreisten Zahlen im grauen Abschnitt der Leiste zeigen den Fallout zwischen Touchpoints an (nicht den gesamten Fallout bis zu diesem Punkt). Der **[!UICONTROL Touchpoint %]** zeigt den erfolgreichen Durchbruch vom vorherigen Schritt zum aktuellen Schritt im Fallout-Bericht an.
 
-   Sie können auch eine einzelne Seite anstatt der gesamten Dimension zum Fallout-Bericht hinzufügen. Klicken Sie auf den rechten Pfeil „>“ auf der Seitendimension, um die Seite auszuwählen, die Sie zum Fallout-Bericht hinzufügen möchten.
+   Sie können auch eine einzelne Seite anstatt der gesamten Dimension zum Fallout-Bericht hinzufügen. Klicken Sie auf den Pfeil ![ChevronRight](/help/assets/icons/ChevronRight.svg) auf der Seitendimension, um eine bestimmte Seite auszuwählen, die dem Fallout-Bericht hinzugefügt werden soll.
 
 1. Fügen Sie weitere Touchpoints hinzu, bis Ihre Sequenz vollständig ist.
 
-   Sie können **mehrere Touchpoints kombinieren**, indem Sie mindestens einen weiteren Touchpoint auf einen Touchpoint ziehen.
+   Sie können **mehrere Touchpoints kombinieren** , indem Sie eine oder mehrere zusätzliche Komponenten auf einen Touchpoint ziehen.
 
    >[!NOTE]
    >
    >Hinweis: Mehrere Segmente werden mit AND verbunden, mehrere Elemente wie Dimensionselemente und Metriken hingegen mit OR.
 
-   ![Die Seiten:CamerRoll oder Seite: Kamera-Touchpoints hervorgehoben.](assets/multiple_obj_touchpoint.png)
+   ![Die Seiten:CamerRoll oder Seite: Kamera-Touchpoints hervorgehoben.](assets/fallout-or.png)
 
-1. Sie können einzelne Touchpoints auch auf das nächste Ereignis **(im Gegensatz zu &quot;am Ende&quot;) im Pfad beschränken.** Jedem Touchpoint unterliegen die Auswahlmöglichkeiten „Pfad am Ende“ und „Nächster Hit“:
+1. Sie können einzelne Touchpoints auch auf das nächste Ereignis **(im Gegensatz zu *letztendlich*) im Pfad beschränken.** Unter jedem Touchpoint befindet sich ein Selektor mit den Optionen **[!UICONTROL Eventual path]** und **[!UICONTROL Next event]**, wie hier dargestellt:
 
-   ![Die Ansicht &quot;Alle Besuche&quot;mit der Option &quot;Pfad am Ende&quot;wurde hervorgehoben. ](assets/next-hit-eventually.png)
+   ![Die Ansicht &quot;Alle Besuche&quot;mit der Option &quot;Pfad am Ende&quot;wurde hervorgehoben. ](assets/fallout-nexthit.png)
 
-<table id="table_A91D99D9364B41929CC5A5BC907E8985"> 
- <tbody> 
-  <tr> 
-   <td colname="col1"> <p>Pfad am Ende </p> <p>(Standard) </p> </td> 
-   <td colname="col2"> <p>Besucher werden gezählt, die "am Ende"auf der nächsten Seite im Pfad landen, aber nicht notwendigerweise beim nächsten Ereignis. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p>Nächster Treffer </p> </td> 
-   <td colname="col2"> <p>Besucher werden gezählt, die auf der nächsten Seite im Pfad des nächsten Ereignisses landen. </p> </td> 
-  </tr> 
- </tbody> 
-</table>
+   | Option | Beschreibung |
+   |---|---|
+   | **[!UICONTROL Eventual path]** (Standard) | Personen werden gezählt, die *schließlich* auf der nächsten Seite im Pfad landen, aber nicht notwendigerweise beim nächsten Ereignis. |
+   | **[!UICONTROL Nächstes Ereignis]** | werden gezählt, die auf der nächsten Seite im Pfad des nächsten Ereignisses landen. |
 
-## Fallout-Einstellungen {#section_0C7C89D72F0B4D6EB467F278AC979093}
 
-| Einstellung | Beschreibung |
+## Einstellungen
+
+Im Rahmen der Visualisierung sind spezifische Einstellungen verfügbar.
+
+| Fallout-Container | Beschreibung |
 |--- |--- |
-| Fallout-Container <ul><li>Besuch</li><li>Besucher</li></ul> | Ermöglicht Ihnen den Wechsel zwischen Besuch und Besucher zur Analyse der Personenpfade. Die Standardeinstellung lautet „Besucher“.  Mithilfe dieser Einstellungen können Sie die Interaktion der Person auf der Personenebene (besuchsübergreifend) nachvollziehen oder die Analyse auf einen einzelnen Besuch beschränken. |
+| **[!UICONTROL Sitzung]** oder **[!UICONTROL Person]** | Wechseln Sie zwischen [!UICONTROL Sitzung] und [!UICONTROL Person], um die Personenpfade zu analysieren. Der Standardwert ist [!UICONTROL Person]. Diese Einstellungen helfen Ihnen, das Engagement von Personen auf Personenebene (über Sitzungen hinweg) zu verstehen, oder die Analyse auf eine einzelne Sitzung zu beschränken. |
 
-Wenn Sie **mit der rechten Maustaste auf einen Touchpoint klicken**, werden die folgenden Optionen angezeigt:
+
+## Kontextmenü
+
+Im Rahmen der Visualisierung sind spezifische Kontextmenüoptionen verfügbar.
+
+![Fallout-Optionen](assets/fallout-options.png)
 
 | Option | Beschreibung |
 |--- |--- |
-| Trend-Touchpoint | Zeigt Trenddaten für einen Touchpoint in einem Kantengraphen mit einigen vorab definierten Anomalieerkennungsdaten an. |
-| Trend-Touchpoint (%) | Trends für den gesamten Fallout-Prozentsatz. |
-| Trenderstellung aller Touchpoints (%) | Trends für alle Touchpoint-Prozentsätze im Fallout (außer „Alle Besuche“, falls vorhanden) im selben Diagramm. |
-| Aufschlüsselung des Fallthrough an diesem Touchpoint | Sehen Sie sich an, welche Personen zwischen zwei Touchpoints (diesem Touchpoint und dem nächsten Touchpoint) ausgeführt haben, wenn sie zum nächsten Touchpoint übergegangen sind. Diese Option erstellt eine Freiformtabelle, die Ihre Dimensionen enthält. Dimensionen und andere Elemente der Tabelle können Sie austauschen. |
-| Aufschlüsselung des Fallout an diesem Touchpoint | Zeigt an, was Besucher, die nicht im Trichter verblieben sind, unmittelbar nach dem ausgewählten Schritt getan haben. |
-| Erstellen eines Filters aus einem Touchpoint | Erstellen Sie einen neuen Filter aus dem ausgewählten Touchpoint. |
+| **[!UICONTROL Trend-Touchpoint]** | Zeigt Trenddaten für einen Touchpoint in einem Kantengraphen mit einigen vorab definierten Anomalieerkennungsdaten an. |
+| **[!UICONTROL Trend-Touchpoint (%)]** | Trends für den gesamten Fallout-Prozentsatz. |
+| **[!UICONTROL Trend für alle Touchpoints (%)]** | Zeigt die Trends für alle Touchpoint-Prozentsätze im Fallout (außer **[!UICONTROL Alle Personen]**, sofern vorhanden) im selben Diagramm an. |
+| **[!UICONTROL Aufschlüsseln des Fallthrough an diesem Touchpoint]** | Sehen Sie sich an, welche Personen zwischen zwei Touchpoints (diesem Touchpoint und dem nächsten Touchpoint) ausgeführt haben, wenn sie zum nächsten Touchpoint übergegangen sind. Diese Option erstellt eine Freiformtabelle, die Ihre Dimensionen enthält. Dimensionen und andere Elemente der Tabelle können Sie austauschen. |
+| **[!UICONTROL Trichteranalyse an diesem Touchpoint aufschlüsseln]** | Zeigt an, was Besucher, die nicht im Trichter verblieben sind, unmittelbar nach dem ausgewählten Schritt getan haben. |
+| **[!UICONTROL Filter aus Touchpoint erstellen]** | Erstellen Sie einen neuen Filter aus dem ausgewählten Touchpoint. |
+
+>[!MORELIKETHIS]
+>
+>[Hinzufügen einer Visualisierung zu einem Bedienfeld](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
+>[Visualisierungseinstellungen](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
+>[Kontextmenü &quot;Visualisierung&quot;](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
+>
+

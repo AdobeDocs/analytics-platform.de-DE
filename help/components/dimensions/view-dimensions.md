@@ -4,29 +4,34 @@ title: Vorschau von Dimensionen in Customer Journey Analytics Workspace anzeigen
 feature: Dimensions
 exl-id: 3e620bfa-825c-4f25-956c-83c905c49f84
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
 workflow-type: tm+mt
-source-wordcount: '223'
-ht-degree: 90%
+source-wordcount: '113'
+ht-degree: 18%
 
 ---
 
 # Vorschau von Dimensionen in Analysis Workspace
 
-Bewegen Sie den Cursor über das Informations-Symbol neben einer Dimension, um die obersten fünf Werte für nicht zeitabhängige Dimensionen (und 15 für zeitabhängige Dimensionen) anzuzeigen. Bisher waren diese Werte statisch (d. h. die fünf ausgewählten Werte blieben unverändert).
+Sie können die [Komponenteninformationen](/help/components/use-components-in-workspace.md#component-info) für eine Komponente verwenden, um die obersten Elemente für eine Dimension anzuzeigen.
 
-![Top 5-Werte für Nicht-Zeitdimensionen.](assets/dimension-preview.png)
+![Komponenteninfo](../assets/component-info.png)
 
-Jetzt zeigen wir standardmäßig dynamische Werte anstelle von statischen an, mit der Option, diese in statische Werte umzuwandeln. Wissenswertes:
+<!--
+Now, by default, we show dynamic values instead of static ones, with the option to turn them into static values. Other things to note:
 
-* Bei einer Aktualisierung Ihrer Daten werden die Spalten der dynamischen Dimension aktualisiert, um die aktuellen 5/15 Dimensionselemente anzuzeigen.
-* Eine dynamische Dimensionsspalte, die kopiert oder bewegt wird, wird statisch.
-* Wenn Sie mit dem Mauszeiger über eine statische Dimensionsspalte fahren, wird ein Schlosssymbol angezeigt, das angibt, dass es sich bei der Dimension um eine statische handelt.
+* As your data updates, the dynamic dimension columns will update to show the current 5/15 dimension items.
+* A dynamic dimension column that is copied or moved will become static.
+* When hovering a static dimension column you will see a lock icon, indicating that the dimension is static.
 
-![Dimension-Spalte-Popup, das das Sperrsymbol markiert.](assets/dimension_static.png)
+![Dimension column popup highlighting the lock icon.](assets/dimension_static.png)
+
+-->
+
 
 ## Anzeige von Dimensionselementen
 
-Wenn Sie auf eine Dimension zeigen und auf den grauen, nach rechts zeigenden Pfeil daneben klicken, wird eine Liste der jeweiligen Dimensionselemente angezeigt. Dimensionselementlisten zeigen normalerweise die Top-Elemente der letzten 30 Tage an.
+Wenn Sie für eine Dimension im Komponentenbereich ![ChevronRight](/help/assets/icons/ChevronRight.svg) auswählen, wird eine Liste der zugehörigen Dimensionselemente angezeigt. Die Liste der Dimensionselemente zeigt normalerweise die obersten Elemente der letzten 30 Tage an. Wenn weitere Elemente verfügbar sind, wählen Sie außerhalb des ausgewählten Datumsbereichs für das Bedienfeld den Link aus, um weitere Elemente anzuzeigen. Beispiel: **[!UICONTROL Elemente aus dem letzten Monat anzeigen]**.
 
-Am Ende der Liste sehen Sie die Option **[!UICONTROL Top-Elemente der letzten 6 Monate anzeigen]**. Klicken Sie auf diese Option, um die Top-Dimensionselemente der letzten 180 Tage anzuzeigen.
+![Dimensionselemente anzeigen](assets/dimension-items.png)
+

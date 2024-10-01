@@ -6,9 +6,9 @@ feature: Basics
 exl-id: c258fa39-c0b6-45a1-8547-79516c15a215
 mini-toc-levels: 3
 role: Admin
-source-git-commit: c6800f1fa36298f3d2aa53c36c78398d9d3fd670
+source-git-commit: 664576605b8be098a751609536e388c304c65513
 workflow-type: tm+mt
-source-wordcount: '1463'
+source-wordcount: '1461'
 ht-degree: 22%
 
 ---
@@ -122,7 +122,7 @@ Die Registerkarte **[!UICONTROL Berechtigungen]** ist Teil jedes Produktprofils 
 | [!UICONTROL Berichterstellungs-Tools] | [!UICONTROL Projektlinks für jedermann freigeben] | Benutzer können [Projekte für alle freigeben.](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/curate-share/share-projects) |
 | [!UICONTROL Berichterstellungs-Tools] | [!UICONTROL Prognose] | Ermöglichen Sie Benutzern den Zugriff auf die Funktion [Prognosen](../analysis-workspace/c-forecast/forecasting.md) in Analysis Workspace |
 | [!UICONTROL Berichterstellungs-Tools] | [!UICONTROL KI-Assistent: Produktkenntnis] | Ermöglichen Sie Benutzern Zugriff auf den [KI-Assistenten](../ai-assistant.md), um Produktwissen zu erhalten. |
-| [!UICONTROL Berichterstellungs-Tools] | [!UICONTROL Intelligente Beschriftungen] | Benutzer können auf [intelligente Beschriftungen](/help/analysis-workspace/visualizations/intelligent-captions.md) zugreifen. |
+| [!UICONTROL Berichterstellungs-Tools] | [!UICONTROL Intelligente Untertitel] | Benutzer können auf [intelligente Beschriftungen](/help/analysis-workspace/visualizations/intelligent-captions.md) zugreifen. |
 | [!UICONTROL Tools für die Datenansicht] | [!UICONTROL Vollständiger Tabellenexport] | Benutzer [können vollständige Tabellen in die Cloud exportieren](/help/analysis-workspace/export/export-cloud.md). |
 | [!UICONTROL Tools für die Datenansicht] | [!UICONTROL CJA BI-Erweiterung] | Benutzer können die [BI-Erweiterung](../data-views/bi-extension.md) verwenden. |
 
@@ -146,7 +146,7 @@ Sie können der Produktprofilverwaltung Zugriff auf einen Teamleiter eines Dritt
 
 ### Zugriffskontrolle auf Zeilenebene
 
-Angenommen, Sie möchten Benutzern Zugriff auf Daten von nur einem Tag gewähren. So könnte der Zugriff auf diese speziellen Zeilen beschränkt werden:
+Sie möchten Benutzern nur von einem Tag aus Zugriff auf Daten gewähren. So könnte der Zugriff auf diese speziellen Zeilen beschränkt werden:
 
 1. Erstellen Sie einen Filter in den [!UICONTROL Einstellungen] einer bestimmten Datenansicht, wobei [!UICONTROL Tag] dem Datum entspricht, an dem sie Datenzugriff haben sollen. Weitere Informationen finden Sie unter [Datenansicht erstellen](/help/data-views/create-dataview.md#settings-filters) .
 1. Speichern Sie die Datenansicht, die den Filter auf den Datenbereich der Datensätze in der zugrunde liegenden Verbindung anwendet. Alle Zeilen, die nicht in die Filterdefinition passen, werden automatisch aus der Datenansicht ausgeschlossen und stehen Analysis Workspace bei Verwendung dieser Datenansicht nicht zur Verfügung.

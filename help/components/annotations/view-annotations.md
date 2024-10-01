@@ -4,10 +4,10 @@ description: Anzeigen von Anmerkungen in Workspace.
 role: User
 feature: Components
 exl-id: c0e4fb37-b20c-463c-b29a-310ca3adb2c7
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: e04f07ba674ed55c53888d5c606ecb4d4aa5ffe5
 workflow-type: tm+mt
-source-wordcount: '283'
-ht-degree: 100%
+source-wordcount: '214'
+ht-degree: 21%
 
 ---
 
@@ -17,26 +17,16 @@ Anmerkungen werden je nachdem, ob sie sich über einen einzelnen Tag oder einen 
 
 ## Anzeigen von Anmerkungen in Liniendiagrammen oder Tabellen
 
-| Datum | Erscheinungsbild |
+| Visualization<br/>type | Beschreibung |
 | --- | --- |
-| **Einzeltag** | ![Liniendiagramm-Visualisierung mit hervorgehobener Anmerkung](assets/single-day.png)<p>Wenn Sie den Mauszeiger über die Anmerkung bewegen, können Sie deren Details anzeigen und sie durch Auswahl des Stiftsymbols bearbeiten oder löschen:<p> ![Anmerkungsdetails mit der Option zum Bearbeiten oder Löschen der Anmerkung.](assets/hover.png) |
-| **Datumsbereich** | Das Symbol ändert sich, und wenn Sie den Mauszeiger darüber bewegen, wird der Datumsbereich angezeigt.<p>![Symbol für Datumsbereich-Anmerkungen](assets/multi-day.png)<p>Wenn Sie die Anmerkung im Liniendiagramm auswählen, werden ihre Metadaten angezeigt und Sie können sie bearbeiten oder löschen:![](assets/multi-hover.png)<p>In einer Tabelle wird an jedem Datum im Datumsbereich ein Symbol angezeigt.<p>![](assets/multi-day-table.png) |
-| **Überlappende Anmerkungen** | An Tagen, an denen es mehr als eine Anmerkung gibt, wird das Symbol grau dargestellt.<p>![Details für sich überschneidende Anmerkungen ](assets/grey.png)<p>Wenn Sie den Mauszeiger über das graue Symbol bewegen, werden alle sich überlappenden Anmerkungen angezeigt:<p>![](assets/overlap.png) |
+| **Linie **<br/>**Einzeltag** | Wenn Sie in einer Linienvisualisierung ![Anmerken](/help/assets/icons/Annotate.svg) auswählen, wird ein Popup mit den Anmerkungsdetails angezeigt.<br/>![Anmerkung für einen einzelnen Tag](assets/annotation-single-day.png)<br/>Wählen Sie zum Bearbeiten der Anmerkung im [Anmerkungs-Builder](create-annotations.md#annotation-builder) die Option ![Bearbeiten](/help/assets/icons/Edit.svg) aus. Um die Anmerkung zu löschen, wählen Sie ![Löschen](/help/assets/icons/Delete.svg) aus. |
+| **Zeile **<br/>**Datumsbereich** | Wenn Sie ![AnnotateRange](/help/assets/icons/AnnotateRange.svg) auswählen, sehen Sie ein Popup mit den Anmerkungsdetails und eine Zeile unten, die den Datumsbereich angibt.<br/>![Anmerkungsbereich](assets/annotation-range.png)Wählen Sie zum Bearbeiten der Anmerkung im [Anmerkung-Builder](create-annotations.md#annotation-builder) die Option ![Bearbeiten](/help/assets/icons/Edit.svg) aus. Um die Anmerkung zu löschen, wählen Sie ![Löschen](/help/assets/icons/Delete.svg) aus. |
+| **Freiformtabelle** | In einer Freiformtabelle können Sie über die Schaltfläche &quot;Anmerkungen&quot;oben rechts in der Visualisierung auf alle Anmerkungen zugreifen. Wählen Sie ![Anmerken](/help/assets/icons/Annotate.svg) aus, um eine (Scroll-Liste) aller Anmerkungen anzuzeigen.<br/>![Anmerkungstabelle](assets/annotations-table.png)<br/>Für jede Anmerkung können Sie ![Bearbeiten](/help/assets/icons/Edit.svg) auswählen, um die Anmerkung im [Anmerkung-Builder](create-annotations.md#annotation-builder) und im ![Löschen](/help/assets/icons/Delete.svg) zu bearbeiten, um die Anmerkung zu löschen. |
 
 {style="table-layout:auto"}
 
-## Anzeigen von Anmerkungen in einer PDF-Datei
+## Anzeigen von Anmerkungen in einer PDF
 
-Da Symbole in einer PDF-Datei nicht auf den Mauszeiger reagieren können, enthält diese Datei (nach dem Export) am unteren Rand eines Bedienfelds Anmerkungen zu Erklärungen. Siehe folgendes Beispiel:
+Wenn Sie Ihr Projekt als PDF herunterladen oder als PDF versenden, werden Anmerkungen in PDF im Abschnitt Anmerkungszusammenfassung zusammengefasst.
 
-![Eine hervorgehobene Ansicht einer PDF-Datei mit Erklärungen zu Anmerkungen.](assets/ann-pdf.png)
-
-## Anzeigen von Anmerkungen mit Daten ohne Trendansicht
-
-Manchmal werden Anmerkungen mit Daten ohne Trendansicht angezeigt, die jedoch an eine bestimmte Dimension gebunden sind. In diesem Fall werden sie nur in einer zusammenfassenden Anmerkung in der rechten unteren Ecke angezeigt. Siehe folgendes Beispiel:
-
-![](assets/non-date.png)
-
-Das Zusammenfassungsdiagramm wird in allen Visualisierungstypen in der Ecke angezeigt, nicht nur in Freiformtabellen ohne Trendansicht und Zusammenfassungszahlen. Es wird auch in Visualisierungen wie dem [!UICONTROL Ringdiagramm], dem [!UICONTROL Fluss], dem [!UICONTROL Fallout], der [!UICONTROL Kohorte] usw. angezeigt.
-
-![Zusammenfassungsdiagramm in Visualisierungen](assets/ann-summary.png)
+![Eine hervorgehobene Ansicht einer PDF-Datei mit Erklärungen zu Anmerkungen.](assets/annotations-pdf.png)

@@ -4,29 +4,33 @@ title: Komponentenbeschreibungen hinzufügen
 feature: Components
 role: Admin
 exl-id: 99d531cd-50e9-4e6c-adad-a66b606fd877
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+source-git-commit: a0e301130cf7f8c4b3be17dfe52648fde5ee4fe4
 workflow-type: tm+mt
-source-wordcount: '172'
-ht-degree: 39%
+source-wordcount: '170'
+ht-degree: 14%
 
 ---
 
 # Komponentenbeschreibungen hinzufügen
 
-Mithilfe von Beschreibungen können Benutzerinnen und Benutzer wissen, wie die verschiedenen Komponenten beim Erstellen von Projekten in Analysis Workspace oder beim Anzeigen von Berichten am besten verwendet werden.
+Beschreibungen helfen Benutzern dabei, die verschiedenen Komponenten beim Erstellen von Projekten in Analysis Workspace oder beim Anzeigen von Berichten zu verwenden.
 
-Customer Journey Analytics-Administratoren können Komponentenbeschreibungen (Dimensionen, Metriken, Filter und Datumsbereiche) entweder in der Datenansicht oder über das Datenwörterbuch direkt in Analysis Workspace hinzufügen.
+Customer Journey Analytics-Administratoren können in einer Datenansicht oder mithilfe des Datenwörterbuchs Beschreibungen für Komponenten (Dimensionen, Metriken, Filter und Datumsbereiche) hinzufügen.
 
-## Hinzufügen von Beschreibungen zu Komponenten in einer Datenansicht
+## Hinzufügen von Beschreibungen in einer Datenansicht
 
-Im folgenden Video wird beschrieben, wie Sie in einer Datenansicht Dimensions- und Metrikbeschreibungen hinzufügen:
+Sie können einer Komponente, die Sie Ihrer Datenansicht hinzugefügt haben, eine Beschreibung hinzufügen. Siehe [Komponenteneinstellungen](/help/data-views/component-settings/overview.md).
 
->[!VIDEO](https://video.tv.adobe.com/v/25453/?quality=12)
+## Hinzufügen von Beschreibungen mithilfe des Datenwörterbuchs
 
-## Hinzufügen von Beschreibungen zu Komponenten in Analysis Workspace (mithilfe des Datenwörterbuchs) {#add-descriptions}
-
-Das Datenwörterbuch in Analysis Workspace hilft Benutzern und Administratoren, die Komponenten in ihrer Customer Journey Analytics-Umgebung zu verfolgen und besser zu verstehen. So können Customer Journey Analytics-Administratoren Komponentenbeschreibungen direkt in Analysis Workspace hinzufügen.
+Das Datenwörterbuch in Analysis Workspace hilft Benutzern und Administratoren, die Komponenten in ihrer Customer Journey Analytics-Umgebung zu verfolgen und besser zu verstehen. Das Datenwörterbuch bietet Administratoren die Möglichkeit, Komponentenbeschreibungen direkt in Analysis Workspace hinzuzufügen.
 
 Informationen zum Bearbeiten einer Komponente im Datenwörterbuch finden Sie unter [Bearbeiten von Komponenteneinträgen im Datenwörterbuch](/help/components/data-dictionary/edit-entries-data-dictionary.md).
 
-Allgemeine Informationen zum Datenwörterbuch finden Sie unter [Datenwörterbuch – Übersicht](/help/components/data-dictionary/data-dictionary-overview.md).
+Allgemeine Informationen zum Datenwörterbuch finden Sie in der [Datenwörterbuchübersicht](/help/components/data-dictionary/data-dictionary-overview.md).
+
+>[!MORELIKETHIS]
+>
+>[Komponenteneinstellungen für die Datenansicht](/help/data-views/component-settings/overview.md)
+>[Komponenteneinträge für Datenwörterbücher](/help/components/data-dictionary/edit-entries-data-dictionary.md)
+>

@@ -1,12 +1,12 @@
 ---
-description: Verwenden Sie intelligente Beschriftungen, um Einblicke in natürliche Sprachen zu generieren, damit Trends schnell in Visualisierungen auftauchen können.
+description: Verwenden Sie intelligente Beschriftungen, um Einblicke in natürliche Sprachen zu generieren, um Trends innerhalb von Visualisierungen zu überdecken.
 title: Intelligente Beschriftungen
 feature: Visualizations
 exl-id: d32d3cda-ecbf-4ee7-a8b7-7c3c71b5df75
 role: User
-source-git-commit: 93b4426bc3e46540d3b4c9d6ae816a6d1f96f6ed
+source-git-commit: c65efad313df660467f5738d3fcbbb327060a502
 workflow-type: tm+mt
-source-wordcount: '632'
+source-wordcount: '630'
 ht-degree: 5%
 
 ---
@@ -22,13 +22,13 @@ Intelligente Beschriftungen sind auf Folgendes ausgerichtet:
 
 ## Intelligente Beschriftungen starten {#launch}
 
-Um automatisch generierte Untertitel für eine Linienvisualisierung zu starten, klicken Sie oben rechts in der Visualisierung auf das Symbol **[!UICONTROL Intelligente Untertitel]** .
+Um automatisch generierte Untertitel für eine Linienvisualisierung zu starten, wählen Sie oben rechts in der Visualisierung ![AEMSscreen](/help/assets/icons/AI.svg) **[!UICONTROL Intelligente Untertitel]** aus.
 
 ![Das Fenster &quot;Analyse starten&quot;mit den intelligenten Beschriftungen für den Trend zu Produktansichten. ](assets/intell-caps-1.png)
 
 Einblicke in natürliche Sprachen werden jetzt generiert.
 
-Bedenken Sie Folgendes
+Bedenken Sie Folgendes:
 
 * Sie benötigen mindestens 3 Datenpunkte, um Beschriftungen erfolgreich zu generieren. Andernfalls wird möglicherweise ein Fehler wie **[!UICONTROL Nicht genügend Daten zur Analyse]** ausgegeben.
 

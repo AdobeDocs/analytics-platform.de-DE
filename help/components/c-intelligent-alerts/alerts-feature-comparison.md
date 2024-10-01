@@ -3,22 +3,20 @@ description: Erfahren Sie, wie sich Warnhinweise beim Customer Journey Analytics
 title: Customer Journey Analytics und Adobe Analytics zum Vergleich von Warnhinweisen
 feature: Workspace Basics
 role: User, Admin
-source-git-commit: def8b074ea468e409e340415d5e96f75d6b69312
+source-git-commit: 8f3b30ca6d20d633669d7e9180884c24e0b9a52e
 workflow-type: tm+mt
-source-wordcount: '566'
-ht-degree: 0%
+source-wordcount: '560'
+ht-degree: 5%
 
 ---
 
-# Vergleich der Warnhinweisfunktion: Customer Journey Analytics und Adobe Analytics
+# Vergleich der Warnhinweise-Funktion
 
-Die Verwendung von Warnhinweisen auf dem Customer Journey Analytics ist fast identisch mit der Verwendung von Warnhinweisen in Adobe Analytics. Es gibt jedoch wichtige Unterschiede.
-
-In den folgenden Abschnitten werden die wichtigsten Unterschiede beschrieben.
+Die Verwendung von Warnhinweisen in Customer Journey Analytics ist nahezu identisch mit der Verwendung von Warnhinweisen in Adobe Analytics. Es gibt jedoch wichtige Unterschiede. In den folgenden Abschnitten werden die wichtigsten Unterschiede beschrieben.
 
 ## Stündliche Warnhinweise sind nicht im Customer Journey Analytics verfügbar
 
-Stündliche Warnhinweise sind nicht wie in Adobe Analytics auf dem Customer Journey Analytics verfügbar. Unter Customer Journey Analytics können Warnhinweise für täglich, wöchentlich oder monatlich konfiguriert werden.
+Stündliche Warnhinweise sind nicht wie in Adobe Analytics auf dem Customer Journey Analytics verfügbar. In Customer Journey Analytics können tägliche, wöchentliche oder monatliche Warnhinweise konfiguriert werden.
 
 Dies liegt an den verschiedenen Möglichkeiten, wie Daten in Adobe Experience Platform aufgenommen werden können, bevor sie in Customer Journey Analytics gemeldet werden. Datenvollständigkeit und -verfügbarkeit können nicht zuverlässig innerhalb einer Stunde erreicht werden, sodass stündliche Warnhinweise aufgrund des hohen Potenzials unvollständiger Daten nicht praktikabel sind. Weitere Informationen finden Sie unter [Datenerfassungszeiten variieren](#data-ingestion-times-vary-in-customer-journey-analytics).
 

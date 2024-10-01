@@ -3,68 +3,94 @@ description: Durch Filterung einzelner Metriken können Sie Metrikvergleiche inn
 title: Gefilterte Metriken
 feature: Calculated Metrics
 exl-id: 37cc93df-9f51-42b3-918f-ed5864991621
-source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+source-git-commit: 65eafd65358d9370b452338ce1036e59b3c69d1a
 workflow-type: tm+mt
-source-wordcount: '528'
-ht-degree: 53%
+source-wordcount: '487'
+ht-degree: 1%
 
 ---
 
 # Gefilterte Metriken
 
-Im Generator für berechnete Metriken können Sie Filter innerhalb Ihrer Metrikdefinition anwenden. Dies ist hilfreich, wenn Sie neue Metriken für Ihre Analyse ableiten möchten. Denken Sie daran, dass Filterdefinitionen über den Filter Builder aktualisiert werden können. Wenn Änderungen vorgenommen werden, wird der Filter automatisch überall dort aktualisiert, wo er angewendet wurde, auch wenn er Teil einer Definition für berechnete Metriken ist.
+Im [Generator für berechnete Metriken](cm-build-metrics.md#definition-builder) können Sie Filter innerhalb Ihrer Metrikdefinition anwenden. Das Anwenden von Filtern ist hilfreich, wenn Sie Metriken für eine Untergruppe Ihrer Daten in Ihrer Analyse verwenden möchten.
 
-![Zusammenfassung und Definition von Filtern für Länder = Deutschland und Unique Visitors](assets/german-visitors.png)
+>[!NOTE]
+>
+>Filterdefinitionen werden über den [Filter-Builder](/help/components/filters/filter-builder.md) aktualisiert. Wenn Sie an einem Filter Änderungen vornehmen, wird der Filter automatisch überall dort aktualisiert, wo der Filter verwendet wird, auch wenn der Filter Teil einer Definition für berechnete Metriken ist.
+>
 
-## Erstellen einer gefilterten Metrik {#create}
+Sie möchten Metriken für deutsche Personen vergleichen, die mit Ihrer Marke interagieren, und für Personen außerhalb Deutschlands. So können Sie Fragen beantworten wie:
 
-Beispiel: Sie möchten verschiedene Aspekte des Filters „Deutsche Besucher“ mit denen des Filters „Internationale Besucher“ vergleichen. Dazu können Sie Metriken erstellen, die Einblick in Folgendes ermöglichen:
+1. Wie viele Deutsche und internationale Besucher Ihre beliebtesten [Seiten](#popular-pages) besuchen.
+1. Wie viele deutsche und internationale Personen insgesamt [insgesamt](#totals) haben in diesem Monat mit Ihrer Marke online interagiert.
+1. Wie hoch sind die [Prozentsätze](#percentages) der Deutschen und internationalen Menschen, die Ihre beliebten Seiten besucht haben?
 
-* Wie sieht das Browsingverhalten im Vergleich zwischen den beiden Gruppen aus? (Ein weiteres Beispiel wäre: Wie sieht die Konversionsrate im Vergleich zwischen den beiden Filtern aus?)
-* Wie viele deutsche Personen durchsuchen bestimmte Seiten im Vergleich zu internationalen Personen in Prozent?
-* Wo liegen die größten Unterschiede in Bezug darauf, welcher Inhalt von den verschiedenen Filtern aufgerufen wird?
+In den folgenden Abschnitten erfahren Sie, wie Ihnen gefilterte Metriken bei der Beantwortung dieser Fragen helfen können. Gegebenenfalls wird auf ausführlichere Unterlagen verwiesen.
 
-Erstellen und speichern Sie eine Metrik namens &quot;Deutsche Besucher&quot;und eine Metrik namens &quot;Internationale Besucher&quot;:
+## Beliebte Seiten
 
-1. Erstellen Sie im Generator für berechnete Metriken einen Ad-hoc-Filter namens &quot;Deutsche Besucher&quot;, bei dem &quot;Länder&quot;gleich &quot;Deutschland&quot;ist. Ziehen Sie die Dimension Länder in die Arbeitsfläche Definition und wählen Sie als Wert [!UICONTROL **Deutschland**] aus:
+1. [Erstellen Sie eine berechnete Metrik](cm-workflow.md) aus einem Workspace-Projekt mit dem Namen `German people`.
+1. Erstellen Sie im [Generator für berechnete Metriken](cm-build-metrics.md) [einen Filter mit dem Namen ](/help/components/filters/filter-builder.md) mit dem Namen `Germany`, der das Feld CRM-Land aus Ihren CRM-Daten verwendet, um zu ermitteln, woher eine Person stammt.
 
-   ![Ad-hoc-Filter, der Länder gleich Deutschland anzeigt](assets/segment-from-dimension.png)
-
-   >[!NOTE]
+   >[!TIP]
    >
-   >Sie können dies auch im [Filtergenerator](/help/components/filters/create-filters.md) tun, aber wir haben den Workflow vereinfacht, indem Dimensionen im Generator für berechnete Metriken verfügbar gemacht werden. &quot;Ad Hoc&quot;bedeutet, dass der Filter in der Liste **[!UICONTROL Filter]** in der linken Leiste nicht sichtbar ist. Sie können es aber auch veröffentlichen, indem Sie über das „i“ daneben fahren und auf **[!UICONTROL Als öffentlich einstellen klicken]**.
+   >Im Generator für berechnete Metriken können Sie direkt über den Bereich Komponenten einen Filter erstellen.
+   >   
 
-1. Ziehen Sie den Filter Deutschland in die Arbeitsfläche Definition und ziehen Sie die Metrik Unique Visitors darin:
+   Ihr Filter könnte so aussehen.
 
-   ![Zusammenfassung und Definition von Ländern gleich Deutschland und Unique Visitors](assets/german-visitors.png)
+   ![Deutschland filtern](assets/filter-germany.png)
 
-1. Wählen Sie [!UICONTROL **Speichern**] aus, um die berechnete Metrik zu speichern.
+1. Verwenden Sie im Generator für berechnete Metriken den Filter, um die berechnete Metrik zu aktualisieren.
 
-1. Erstellen Sie im Generator für berechnete Metriken einen Ad-hoc-Filter namens &quot;internationale Besucher&quot;, bei dem &quot;Länder&quot;nicht mit &quot;Deutschland&quot;übereinstimmt.
+   ![Berechnete Metrik Deutschland](assets/calculated-metric-germany.png)
 
-   Ziehen Sie die Dimension &quot;Länder&quot;in die Arbeitsfläche &quot;Definition&quot;, wählen Sie [!UICONTROL **Deutschland**] als Wert aus und wählen Sie dann [!UICONTROL **nicht gleich**] als Operator.
+Wiederholen Sie die obigen Schritte für die internationale Version Ihrer berechneten Metrik.
 
-1. Ziehen Sie die Metrik Unique Visitors hinzu.
+1. Erstellen Sie eine berechnete Metrik aus Ihrem Workspace-Projekt mit dem Titel `International people`.
+1. Erstellen Sie im Generator für berechnete Metriken einen Filter mit der Bezeichnung `Not Germany`, der das Feld CRM-Land aus Ihren CRM-Daten verwendet, um zu bestimmen, woher eine Person stammt.
 
-1. Wählen Sie [!UICONTROL **Speichern**] aus, um die berechnete Metrik zu speichern.
+   Ihr Filter sollte so aussehen.
 
-1. Ziehen Sie in Analysis Workspace die Dimension **[!UICONTROL Seite]** in eine Freiform-Tabelle und dann die zwei neuen berechneten Metriken nebeneinander oben in die Tabelle:
+   ![Deutschland filtern](assets/filter-not-germany.png)
 
-   ![Freiformtabelle mit der Dimension &quot;Seite&quot;für deutsche und internationale Besucher](assets/workspace-pages.png)
+1. Verwenden Sie im Generator für berechnete Metriken den Filter, um die berechnete Metrik zu aktualisieren.
 
-Im Folgenden finden Sie eine Videoübersicht:
+   ![Berechnete Metrik Deutschland](assets/calculated-metric-notgermany.png)
+
+
+1. Erstellen Sie ein Projekt in Analysis Workspace, in dem Sie sich die Seiten ansehen, die von deutschen und internationalen Besuchern besucht werden.
+
+   ![Visualisierung der Workspace-Freiformtabelle mit deutschsprachigen und internationalen Personen](assets/workspace-german-vs-international.png)
+
+
+## Gesamt
+
+1. Erstellen Sie zwei neue Filter basierend auf der Gesamtsumme. Öffnen Sie jeden zuvor erstellten Filter, benennen Sie den Filter um, setzen Sie den Metriktyp **[!UICONTROL für**[!UICONTROL  Personen ]**auf**[!UICONTROL  Gesamtsumme ]**und verwenden Sie**[!UICONTROL  Speichern unter ]**, um den Filter unter dem neuen Namen zu speichern.]** Zum Beispiel:
+
+   ![Gesamtmetrik für Deutschland](assets/calculated-metric-germany-total.png)
+
+1. Fügen Sie Ihrem Workspace-Projekt eine neue Freiformtabellen-Visualisierung hinzu, die die Gesamtseiten für diesen Monat anzeigt.
+
+   ![Visualisierung der Workspace-Freiformtabelle mit deutscher und internationaler Gesamtzahl](assets/workspace-german-vs-international-totals.png)
+
+
+## Prozentsatz
+
+1. Erstellen Sie zwei neue berechnete Metriken, die einen Prozentsatz aus den zuvor erstellten berechneten Metriken berechnen.
+
+   ![Visualisierung der Workspace-Freiformtabelle mit deutschem und internationalem Gesamt-Personenprozentsatz](assets/calculated-metric-germany-total-percentage.png)
+
+
+1. Aktualisieren Sie Ihr Workspace-Projekt.
+
+   ![Visualisierung der Workspace-Freiformtabelle mit deutscher und internationaler Gesamtzahl](assets/workspace-german-vs-international-totals-percentage.png)
+
+
++++ In diesem Video wird gezeigt, wie eine gefilterte berechnete Metrik als implementierungslose Metrik verwendet wird.
 
 >[!VIDEO](https://video.tv.adobe.com/v/25407/?quality=12)
 
-## Prozent der Gesamtmetriken {#percent-total}
+{{videoaa}}
 
-Sie können das obige Beispiel fortentwickeln, indem Sie Ihren Filter mit der Gesamtbevölkerung vergleichen. Erstellen Sie dazu zwei neue Metriken: „% aller deutschen Besucher“ und „% der Gesamtzahl internationaler Besucher“:
-
-1. Ziehen Sie den Filter „Deutsche Besucher“ (oder „Internationale Besucher“) auf die Arbeitsfläche.
-1. Legen Sie darunter einen weiteren Filter „Deutsche Besucher“ (oder „Internationale Besucher“) ab. Klicken Sie dieses Mal aber auf das zugehörige Konfigurationssymbol (Zahnrad), um den Metriktyp „Gesamt“ auszuwählen. Das Format sollte „Prozent“ lauten. Der Operator sollte „Geteilt durch“ lauten. Dadurch erhalten Sie die folgende Metrikdefinition:
-
-   ![Länder gleich Deutschland und Gesamtanzahl Unique Visitors](assets/cm_metric_total.png)
-
-1. Wenden Sie diese Metrik auf das Projekt an:
-
-   ![Freiformtabelle mit Seite und % aller deutschen Besucher insgesamt](assets/cm_percent_total.png)
++++

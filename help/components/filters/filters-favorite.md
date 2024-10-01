@@ -4,17 +4,19 @@ title: Filter als Favoriten markieren
 feature: Filters
 exl-id: b13457dd-06e5-4316-af7e-edcf4ee46408
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 8f3b30ca6d20d633669d7e9180884c24e0b9a52e
 workflow-type: tm+mt
-source-wordcount: '86'
-ht-degree: 51%
+source-wordcount: '96'
+ht-degree: 18%
 
 ---
 
-# Filter als Favoriten markieren {#favorites}
+# Filter als Favoriten markieren
 
-Das Kennzeichnen von Filtern als Favoriten bietet eine weitere Möglichkeit, diese für eine einfache Verwendung zu organisieren.
+Sie können einen Filter als Favoriten markieren. Wenn Sie Filter als Favoriten markieren, können Sie Ihre Filter organisieren. Alle Benutzer können Filter bevorzugen.
 
-1. Wählen Sie im Filter-Manager den Stern neben allen Filtern aus, die Sie als Favoriten kennzeichnen möchten. Der Stern wird gelb, wenn Sie ihn auswählen.
+Um einen Filter zu favorisieren oder zu verweigern, gehen Sie in den [Filter-Manager](/help/components/filters/manage-filters.md):
 
-1. (Optional) Sie können Ihre Filterliste nach Favoriten sortieren. Wählen Sie in der linken Leiste das Symbol Filter und dann [!UICONTROL **Sonstige Filter**] > [!UICONTROL **Favoriten**] aus.
+* Wählen Sie ![StarOutline](/help/assets/icons/StarOutline.svg) als Favorit aus oder wählen Sie ![Star](/help/assets/icons/Star.svg) aus, um die Vorliebe für einen Filter aufzuheben.
+
+Sie können Ihre Filterliste nach Favoriten sortieren. Wählen Sie **[!UICONTROL Sonstige Filter]** aus dem Bereich ![Filter](/help/assets/icons/Filter.svg) **[!UICONTROL Filter]** und wählen Sie **[!UICONTROL Favoriten]** aus. Weitere Informationen finden Sie unter [Filtern der Filterliste](/help/components/filters/filters-filter.md) .

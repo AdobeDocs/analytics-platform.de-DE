@@ -5,16 +5,16 @@ title: Erstellen von freigebbaren Links
 exl-id: 6cfb5161-08e1-4583-ae79-4600b5531929
 feature: Curate and Share
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
 workflow-type: tm+mt
-source-wordcount: '374'
-ht-degree: 79%
+source-wordcount: '381'
+ht-degree: 67%
 
 ---
 
 # Erstellen von freigebbaren Links
 
-Analysis Workspace bietet viele Möglichkeiten, ein Projekt für Ihre Benutzer freizugeben, einschließlich der Möglichkeit, einen Link zu einem Projekt oder einem bestimmten Teil eines Projekts absurufen. Bei einigen Link-Typen muss sich die Person bei Adobe Analytics anmelden, bevor sie auf das Projekt zugreifen kann, bei anderen hingegen nicht.
+Analysis Workspace bietet viele Möglichkeiten, ein Projekt für Ihre Benutzer freizugeben, einschließlich der Möglichkeit, einen Link zu einem Projekt oder einem bestimmten Teil eines Projekts absurufen. Bei einigen Linktypen muss sich der Empfänger vor dem Zugriff auf das Projekt bei Customer Journey Analytics anmelden, bei anderen dagegen nicht.
 
 ## Abrufen eines Projekt-Links zur Freigabe für andere Workspace-Benutzende {#project-link}
 
@@ -32,8 +32,8 @@ Weitere Informationen finden Sie unter „Projekt für alle freigeben (keine Anm
 
 Sie können auch einen Link zu einem bestimmten Teil eines Projekts freigeben, z. B. einem Bedienfeld oder einer individuellen Visualisierung. Dies wird manchmal auch als Intra-Linking bezeichnet. Dies kann nützlich sein, um die Aufmerksamkeit Ihrer Benutzerinnen und Benutzer auf wichtige Erkenntnisse im Projekt zu lenken.
 
-* Klicken Sie in der Kopfzeile eines Bedienfelds mit der rechten Maustaste auf **[!UICONTROL Bedienfeld-Link abrufen]**.
-* Klicken Sie in einer Tabellen- oder Visualisierungskopfzeile mit der rechten Maustaste auf **[!UICONTROL Visualisierungs-Link abrufen]**.
+* Wählen Sie im Kontextmenü einer Bedienfeldkopfzeile die Option **[!UICONTROL Bereichslink abrufen]**
+* Wählen Sie im Kontextmenü einer Visualisierungs-Kopfzeile **[!UICONTROL Visualisierungslink abrufen]** aus.
 
 [Sehen Sie sich das Video an](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/visualizations/intra-linking-in-analysis-workspace.html?lang=de), wie Sie Links erstellen und diese verwenden, um Empfänger zu bestimmten Teilen Ihres Projekts zu führen.
 

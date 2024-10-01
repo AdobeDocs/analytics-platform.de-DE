@@ -4,96 +4,165 @@ title: Projekte speichern
 feature: Workspace Basics
 role: User
 exl-id: d751057e-6a5f-4605-abc1-9259a1f95a28
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 664756b796e8915a701ccabfb5f250e777701b60
 workflow-type: tm+mt
-source-wordcount: '775'
-ht-degree: 93%
+source-wordcount: '824'
+ht-degree: 18%
 
 ---
 
 # Projekte speichern
 
-Projekte in Analysis Workspace werden automatisch alle zwei Minuten gespeichert.
+Projekte in Analysis Workspace werden automatisch alle zwei Minuten gespeichert. Sie können auch Projekte selbst speichern, ein Projekt als Duplikat speichern oder ein Projekt mit Versionshinweisen speichern.
 
-Sie können Projekte auch manuell speichern. Beim manuellen Speichern eines Projekts stehen zusätzliche Optionen wie das Hinzufügen von Tags oder Notizen zur Verfügung.
+## Speichern
 
-## Speichern von Projektoptionen {#Save}
+Um ein Projekt manuell zu speichern, wählen Sie bei geöffnetem Projekt in Analysis Workspace **[!UICONTROL Projekt]** aus und wählen Sie dann aus den folgenden Optionen:
 
-Beim manuellen Speichern eines Projekts in Analysis Workspace stehen verschiedene Optionen zur Verfügung.
+* **[!UICONTROL Speichern]**
 
-Gehen Sie folgendermaßen vor, um ein Projekt manuell zu speichern:
+  Speichern Sie die Änderungen an Ihrem Projekt. Wenn das Projekt freigegeben ist, sehen die Empfänger des Projekts auch die Änderungen.
 
-1. Wenn Ihr Projekt in Analysis Workspace geöffnet ist, wählen Sie **[!UICONTROL Projekt]** und dann eine der folgenden Optionen aus:
+  Wenn Sie das Projekt zum ersten Mal speichern, wird ein Dialogfeld **[!UICONTROL Speichern]** angezeigt.
 
-   | Aktion | Beschreibung |
-   |---|---| 
-   | **[!UICONTROL Speichern]** | Speichern Sie die Änderungen an Ihrem Projekt. Wenn das Projekt freigegeben ist, sehen auch die Empfänger des Projekts die Änderungen. Wenn Sie das Projekt zum ersten Mal speichern, werden Sie aufgefordert, dem Projekt einen Namen, eine (optionale) Beschreibung und (optionale) Tags hinzuzufügen. |
-   | **[!UICONTROL Mit Hinweisen speichern]** | Bevor Sie das Projekt speichern, fügen Sie Notizen zu den Änderungen im Projekt hinzu. Notizen werden mit der Projektversion gespeichert und stehen allen Editoren unter [!UICONTROL Projekt] > [!UICONTROL Frühere Version öffnen] zur Verfügung. |
-   | **[!UICONTROL Speichern unter]** | Erstellen Sie ein Duplikat Ihres Projekts. Das ursprüngliche Projekt bleibt davon unberührt. |
-   | **[!UICONTROL Als Vorlage speichern]** | Speichern Sie Ihr Projekt als [benutzerdefinierte Vorlage](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/starter-projects.html?lang=de), die für Ihr Unternehmen unter **[!UICONTROL Projekt > Neu]** zur Verfügung steht. |
+  ![Projekt speichern](assets/save-project.png)
 
-## Automatisches Speichern {#Autosave}
+   1. Geben Sie Folgendes an:
 
-Alle Projekte in Analysis Workspace werden automatisch alle 2 Minuten auf Ihrem lokalen Computer gespeichert. Dazu gehören auch neu erstellte Projekte, die noch nicht manuell gespeichert wurden.
+      * **[!UICONTROL Name]** (erforderlich). Name Ihres Projekts.
+      * **[!UICONTROL Beschreibung]**. Eine Beschreibung Ihres Projekts.
+      * **[!UICONTROL Tags]**. Suchen Sie im Feld [!UICONTROL *Tags durchsuchen*] nach Tags oder fügen Sie neue Tags mithilfe von **[!UICONTROL ENTER]** hinzu.
+      * **[!UICONTROL Ordner]**. Wählen Sie einen Ordner aus dem Dropdown-Menü [!UICONTROL *Ordner auswählen*] aus. Wenn Sie keinen Ordner angeben, wird das Projekt in dem aktuellen Ordner gespeichert, aus dem Sie ein neues Projekt erstellt haben.
+      * **[!UICONTROL Versionshinweise]**. Fügen Sie im Textbereich *Notizen hinzufügen* Versionshinweise hinzu.
 
-* **Neue Projekte:** Obwohl neue Projekte automatisch gespeichert werden, müssen Sie jedes neue Projekt beim ersten Mal manuell speichern. Analysis Workspace fordert Sie auf, neue Projekte manuell zu speichern, wenn Sie zu einem anderen Projekt wechseln, die Browser-Registerkarte schließen usw.
+   1. Wählen Sie **[!UICONTROL Speichern]** aus, um Ihr Projekt zu speichern.
 
-  Wenn Sie aus irgendeinem Grund unerwartet den Zugriff auf ein neu erstelltes Projekt verlieren, bevor Sie es manuell gespeichert haben, wird eine Wiederherstellungsversion Ihres Projekts auf der Analysis Workspace-Landingpage in einem Ordner namens `Recovered Projects (Last 7 Days)` gespeichert. Sie müssen das betroffene Projekt wiederherstellen und manuell an einem gewünschten Ort speichern.
+  Durch das Speichern Ihres Projekts wird tatsächlich eine Version Ihres Projekts gespeichert, die 90 Tage lang gespeichert ist.
 
-  Gehen Sie folgendermaßen vor, um ein Projekt wiederherzustellen:
+  Wenn Sie ein freigegebenes Projekt speichern, werden Sie im Warndialogfeld **[!UICONTROL Änderungen an freigegebenem Projekt speichern]** zur Bestätigung aufgefordert.
 
-   1. Gehen Sie zum Ordner [!UICONTROL **Wiederhergestellte Projekte**] auf der Landingpage von Analysis Workspace.
+  ![Projekt speichern freigegeben](assets/save-project-shared.png)
 
-      ![Die Liste der Ordner, die den Ordner des wiederhergestellten Projekts hervorheben.](assets/recovered-folder.png)
-
-   1. Öffnen Sie das Projekt und speichern Sie es an einem gewünschten Ort.
+   * Wählen Sie **[!UICONTROL Speichern]** aus, um das Projekt zu speichern.
+   * Wählen Sie **[!UICONTROL Speichern unter]** aus, um das Projekt als doppeltes Projekt mit einem neuen Namen zu speichern.
 
 
-* **Bestehende Projekte:** Wenn Sie aus irgendeinem Grund ein Projekt verlassen, das noch nicht automatisch gespeicherten Änderungen enthält, fordert Sie Analysis Workspace entweder auf, Ihre Änderungen zu speichern, oder gibt eine Warnmeldung aus.
+* **[!UICONTROL Mit Hinweisen speichern]**
 
-  Im Folgenden finden Sie einige gängige Szenarien:
+  ![Mit Hinweisen speichern](assets/save-version-notes.png)
 
-### Öffnen eines weiteres Projekts
+  Fügen Sie beim Speichern Ihres Projekts Notizen zu den Änderungen im Projekt hinzu. Im Dialogfeld Versionshinweise speichern :
 
-Wenn Sie ein weiteres Projekt öffnen, während Sie an einem Projekt arbeiten, das noch nicht automatisch gespeicherte Änderungen enthält, werden Sie von Analysis Workspace aufgefordert, das aktuelle Projekt zu speichern, bevor Sie es verlassen.
+   1. Geben Sie Ihre **[!UICONTROL Versionshinweise]** im Textbereich **[!UICONTROL Notizen hinzufügen]** ein.
+   1. Wählen Sie **[!UICONTROL Speichern]** aus.
+
+  Notizen werden mit der Projektversion gespeichert und sind verfügbar, wenn Sie [eine frühere Version öffnen](open-projects.md#open-previous-version) des Projekts. Eine mit Anmerkungen gespeicherte Version wird automatisch ein Jahr lang gespeichert.
+
+* **[!UICONTROL Speichern unter]**
+
+  ![Projekt speichern als](assets/save-project-as.png)
+
+  Erstellen Sie ein Duplikat Ihres Projekts mit einem neuen Namen. Das Dialogfeld Speichern unter wird angezeigt.
+
+   1. Geben Sie Folgendes an:
+
+      * **[!UICONTROL Name]** (erforderlich). Name Ihres Projekts.
+      * **[!UICONTROL Beschreibung]**. Eine Beschreibung Ihres Projekts.
+      * **[!UICONTROL Tags]**. Suchen Sie im Feld [!UICONTROL *Tags durchsuchen*] nach Tags oder fügen Sie neue Tags mithilfe von **[!UICONTROL ENTER]** hinzu.
+      * **[!UICONTROL Ordner]**. Wählen Sie einen Ordner aus dem Dropdown-Menü [!UICONTROL *Ordner auswählen*] aus. Wenn Sie keinen Ordner angeben, wird das Projekt in dem aktuellen Ordner gespeichert, aus dem Sie ein neues Projekt erstellt haben.
+      * **[!UICONTROL Versionshinweise]**. Fügen Sie im Textbereich *Notizen hinzufügen* Versionshinweise hinzu.
+
+   1. Wählen Sie **[!UICONTROL Speichern]** aus, um Ihr Projekt zu speichern.
+
+  Sie können das Projekt in einem anderen Ordner speichern. Das ursprüngliche Projekt ist nicht betroffen.
+
+
+<!-- Cannot find this option in CJA 
+| **[!UICONTROL Save as template]** | Save your project as a [custom template](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/starter-projects.html) that becomes available to your organization under **[!UICONTROL Project > New]** | 
+-->
+
+## Automatisches Speichern
+
+
+>[!IMPORTANT]
+>
+>Obwohl neue Projekte automatisch gespeichert werden, müssen Sie jedes neue Projekt manuell speichern, indem Sie **zuerst** Mal speichern.
+>
+
+Alle Projekte in Analysis Workspace werden automatisch alle 2 Minuten auf Ihrem lokalen Computer gespeichert. Diese automatische Speicherung umfasst neu erstellte Projekte, die noch nicht manuell gespeichert wurden.
+
+### Neue Projekte
+
+Analysis Workspace fordert Sie auf, neue Projekte manuell zu speichern, wenn Sie zu einem anderen Projekt wechseln, die Browser-Registerkarte schließen usw.
+
+Wenn Sie aus irgendeinem Grund unerwartet den Zugriff auf ein neu erstelltes Projekt verlieren, bevor Sie es manuell speichern, wird eine Wiederherstellungsversion Ihres Projekts auf der Analysis Workspace-Landingpage in einem Ordner namens **[!UICONTROL Wiederhergestellte Projekte (Letzte 7 Tage)]** gespeichert. Stellen Sie das wiederhergestellte Projekt wieder her und speichern Sie es manuell an einem gewünschten Ort.
+
+Gehen Sie folgendermaßen vor, um ein Projekt wiederherzustellen:
+
+1. Markieren Sie auf der Analysis Workspace-Landingpage den Ordner **[!UICONTROL Wiederhergestellte Projekte (Letzte 7 Tage)]** .
+
+<!-- 
+     ![The list of folders highlighting the Recovered Project folder.](assets/recovered-folder.png)
+  -->
+
+1. Öffnen Sie das Projekt und speichern Sie es an einem gewünschten Ort.
+
+
+### Bestehende Projekte
+
+Wenn Sie ein Projekt mit noch nicht automatisch gespeicherten Änderungen aus irgendeinem Grund verlassen, fordert Sie Analysis Workspace entweder auf, Ihre Änderungen zu speichern, oder gibt eine Warnmeldung aus.
+
+
+Einige gängige Szenarien:
+
+#### Öffnen eines weiteres Projekts
+
+Wenn Sie beim Bearbeiten eines Projekts, das noch nicht automatisch gespeicherte Änderungen enthält, ein anderes Projekt öffnen, werden Sie von Analysis Workspace aufgefordert, das aktuelle Projekt zu speichern.
 
 Die folgenden Optionen sind verfügbar:
 
-* **Speichern:** Ersetzt die neueste automatisch gespeicherte lokale Kopie Ihres Projekts durch Ihre letzten Änderungen.
-* **Speichern unter:** Speichert Ihre letzten Änderungen als neues Projekt. Das ursprüngliche Projekt wird nur mit den letzten automatisch gespeicherten Änderungen gespeichert.
-* **Änderungen verwerfen:** Verwirft Ihre letzten Änderungen. Das Projekt behält die letzten automatisch gespeicherten Änderungen bei.
+* **[!UICONTROL Speichern]**: Ersetzt die neueste automatisch gespeicherte lokale Kopie Ihres Projekts durch Ihre neuesten Änderungen.
+* **[!UICONTROL Änderungen verwerfen]**: Verwirft Ihre neuesten Änderungen. Das Projekt behält die neueste automatisch gespeicherte lokale Kopie bei.
+* **[!UICONTROL Abbrechen]**: Brechen Sie die Aktion ab, um ein anderes Projekt zu öffnen und das vorhandene Projekt zu öffnen.
 
-![Klicken Sie auf Speichern , um Änderungen an einem Projekt zu speichern.](assets/existing-save.png)
+<!-- ![Click Save to save changes to a project.](assets/existing-save.png) -->
 
-### Verlassen oder Schließen einer Registerkarte
+#### Verlassen oder Schließen einer Registerkarte
 
-Wenn Sie eine Seite verlassen oder die Browser-Registerkarte schließen, während Sie ein Projekt mit noch nicht automatisch gespeicherten Änderungen betrachten, warnt Sie der Browser, dass Ihre nicht gespeicherten Änderungen verloren gehen. Sie können entscheiden, ob Sie die Registerkarte verlassen oder abbrechen möchten.
+Wenn Sie von der Seite weg navigieren oder die Browser-Registerkarte schließen, während Sie ein Projekt mit noch nicht automatisch gespeicherten Änderungen anzeigen, warnt der Browser Sie, dass Ihre nicht gespeicherten Änderungen verloren gehen. Sie können wählen, ob Sie gehen oder abbrechen möchten. Wie der Browser Sie warnt, hängt vom verwendeten Browser ab.
 
-![Klicken Sie auf &quot;Leave&quot;, um die Site zu verlassen, oder auf &quot;Cancel&quot;, um zu navigieren, ohne Änderungen zu speichern. ](assets/browser-image.png)
 
 ### Browser-Abstürze oder Zeitüberschreitung der Sitzung
 
-Wenn Ihr Browser abstürzt oder Ihre Sitzung durch eine Zeitüberschreitung beendet wird, werden Sie beim nächsten Zugriff auf Analysis Workspace aufgefordert, alle Änderungen am Projekt wiederherzustellen, die noch nicht automatisch gespeichert wurden.
+Wenn Ihr Browser abstürzt oder die Sitzung abbricht, werden Sie beim nächsten Zugriff auf Analysis Workspace aufgefordert, alle Änderungen am Projekt wiederherzustellen, die noch nicht automatisch gespeichert wurden.
 
-Im Folgenden finden Sie das Dialogfeld „Projektwiederherstellung“, das beim ersten Zugriff auf Analysis Workspace nach einem Absturz oder einer Zeitüberschreitung angezeigt wird.
+* Wählen Sie **[!UICONTROL Ja]**, um das Projekt auf der Basis der letzten automatisch gespeicherten Kopie wiederherzustellen.
 
-Wählen Sie **Ja**, um das Projekt auf der Basis der letzten automatisch gespeicherten Kopie wiederherzustellen.
+* Wählen Sie **[!UICONTROL Nein]**, um die automatisch gespeicherte Kopie zu löschen und die letzte vom Benutzer bzw. der Benutzerin gespeicherte Version des Projekts zu öffnen.
 
-Wählen Sie **Nein**, um die automatisch gespeicherte Kopie zu löschen und die letzte vom Benutzer bzw. der Benutzerin gespeicherte Version des Projekts zu öffnen.
+<!--![The Project Recovery dialog box.](assets/project-recovery.png)-->
 
-![Das Dialogfeld &quot;Projekterholung&quot;.](assets/project-recovery.png)
+
 
 Bei **neuen** Projekten, die noch nie gespeichert wurden, können nicht gespeicherte Änderungen nicht wiederhergestellt werden.
 
-## Vorherige Version öffnen {#previous-version}
 
-So öffnen Sie eine frühere Version eines Projekts:
+<!-- Shouldn't this belong to another page?  Moved it to a new open projects page
 
-1. Gehen Sie zu **[!UICONTROL Projekt]** > **[!UICONTROL Frühere Version öffnen]**
 
-   ![Die Liste der zuvor gespeicherten Projektversionen und Optionen zum Anzeigen aller Versionen oder Nur Versionen mit Anmerkungen.](assets/previous-versions.png)
+## Open previously saved version
 
-1. Überprüfen Sie die Liste der verfügbaren älteren Versionen.
-   [!UICONTROL Zeitstempel] und [!UICONTROL Editor] werden ebenso wie [!UICONTROL Notizen] angezeigt, wenn diese beim Speichern im [!UICONTROL Editor] hinzugefügt wurden. Versionen ohne Notizen werden 90 Tage lang gespeichert. Versionen mit Notizen werden für ein Jahr gespeichert.
-1. Wählen Sie eine frühere Version aus und klicken Sie auf **[!UICONTROL Laden]**.
-Die vorherige Version wird dann mit einer Benachrichtigung geladen. Die vorherige Version wird nur dann zur aktuell gespeicherten Version Ihres Projekts, wenn Sie auf **[!UICONTROL Speichern]** klicken. Wenn Sie die geladene Version verlassen, sehen Sie bei der Rückkehr die zuletzt gespeicherte Version des Projekts.
+To open a previously saved version of a project:
+
+1. Select **[!UICONTROL Open previous version]** from the **[!UICONTROL Project]** menu.
+
+   ![The Previously saved project versions list and options to show All versions or Only versions with notes.](assets/open-previously-saved.png)
+
+1. Review the list of previous versions available. You can switch between **[!UICONTROL All versions]** and **[!UICONTROL Only versions with notes]**.
+
+   For each version, the list shows a timestamp
+   [!UICONTROL Timestamp] and [!UICONTROL Editor] are shown, in addition to [!UICONTROL Notes] if they were added when the [!UICONTROL Editor] saved. Versions without notes are stored for 90 days; versions with notes are stored for 1 year.
+1. Select a previous version and click **[!UICONTROL Load]**.
+   The previous version then loads with a notification. The previous version does not become the current saved version of your project until you click **[!UICONTROL Save]**. If you navigate away from the loaded version, when you return, you will see the last saved version of the project.
+
+-->

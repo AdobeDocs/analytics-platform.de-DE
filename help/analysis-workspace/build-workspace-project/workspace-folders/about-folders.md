@@ -5,53 +5,56 @@ title: Übersicht über Ordner
 feature: Workspace Basics
 exl-id: e12e271e-ce15-4535-bb48-1976395cf755
 role: User
-source-git-commit: 8a56f6182b0679d64b9e4ad82402f414eeb88055
+source-git-commit: 98a92fff2a0fae7ad3e6d94e61f8babed3c11eb7
 workflow-type: tm+mt
-source-wordcount: '459'
-ht-degree: 100%
+source-wordcount: '432'
+ht-degree: 5%
 
 ---
 
-# Über Ordner in Analytics
+# Über Ordner
 
-„Ordner“ in Analytics ist ein Ordnerverwaltungssystem, das auf der Landingpage von Adobe Analytics angezeigt wird. Sie können es auch aufrufen, indem Sie **Workspace** > **Projekte** auswählen.
+Ordner in Customer Journey Analytics sind auf der Landingpage von Workspace verfügbar, wenn Sie &quot;[Ordner und Projekte anzeigen](../freeform-overview.md#show-selector)&quot;ausgewählt haben.
 
-Mit Ordnern in Analysis Workspace können Sie Ihre Projekte organisieren und kategorisieren, um einfacher auf ihre Inhalte zugreifen zu können. Darüber hinaus ermöglicht ein gemeinsam genutzter Unternehmensordner Administratoren bzw. Administratorinnen die einfache Erstellung und Freigabe von Inhalten für alle Analysis Workspace-Benutzenden.
+Mit Ordnern in Workspace können Sie Ihre Projekte organisieren und kategorisieren. Mit der Ordnerfunktion können Sie Ordner und Unterordner erstellen, um Ihre Projekte zu verwalten.
 
-Bei einer langen Liste von Projekten kann die Navigation zu einem bestimmten Projekt eine Herausforderung sein. Mit der Ordnerfunktion können Sie Ordner und Unterordner erstellen, um Ihre Projekte zu verwalten. So können Sie Projekte bei Bedarf leichter finden.
+In Workspace gibt es zwei Ordnertypen: den Ordner &quot;Unternehmen&quot;und &quot;Persönliche Ordner&quot;. Mit einem freigegebenen Unternehmensordner können Administratoren Inhalte für alle Workspace-Benutzer erstellen und freigeben.
 
-In Analysis Workspace gibt es zwei Arten von Ordnern: den Unternehmensordner und persönliche Ordner.
+Wenn Sie &quot;[Ordner und Projekte anzeigen](../freeform-overview.md#show-selector)&quot;ausgewählt haben, zeigt die Startseite &quot;Projekte&quot;eine Liste Ihrer Projekte mit dem Ordner &quot;Firma&quot;und allen von Ihnen erstellten persönlichen Ordnern an. Andernfalls wird nur eine Liste Ihrer Projekte angezeigt.
 
-Wenn Sie sich bei Analysis Workspace anmelden, wird auf der Startseite von „Projekte“ eine Liste Ihrer Projekte mit dem Unternehmensordner und allen von Ihnen erstellten persönlichen Ordnern angezeigt.
 
-![Projekte-Startseite](../assets/landing-page2.png)
+## Firmenordner
 
-## Über den Unternehmensordner {#company-folder}
+Der Ordner Unternehmen ist ein Ordner mit gemeinsamem Zugriff für Projekte, die Administratoren für alle Benutzer freigeben können.
 
-Der Unternehmensordner ist ein Ordner mit gemeinsamem Zugriff für Projekte, die Administratoren bzw. Administratorinnen für alle Benutzenden freigeben können.
+Als Administrator können Sie schnell Projekte für alle Benutzer freigeben und Projekte in Unterordnern für eine Benutzergruppe gruppieren. Sie haben beispielsweise eine Reihe von Projekten, die Ihre Marketing-Experten verwenden sollen, um ihre Forschung zu starten. Anschließend können Sie einen Marketing-Ordner im Ordner Unternehmen erstellen und anschließend ausgewählte Projekte im Ordner Marketing platzieren. Dieser Ordner bietet direkten Zugriff auf freigegebene Projekte und erleichtert dem Marketing-Team die Suche nach gemeinsamen Projekten.
 
-Als Administrator bzw. Administratorin können Sie Projekte für alle Benutzenden mühelos freigeben und für eine Benutzergruppe in Unterordnern ablegen. Wenn Sie beispielsweise möchten, dass Ihre Marketer an bestimmten Projekten arbeiten, können Sie im Unternehmensordner einen Marketing-Ordner erstellen und diese Projekte dann im Marketing-Ordner ablegen. Dies ermöglicht einen schnellen direkten Zugriff auf freigegebene Projekte und das Marketing-Team weiß sofort, wo die freigegebenen Dateien abgelegt sind.
+Wenn Sie sich bei Workspace anmelden, wird der Ordner Firma automatisch zu Ihrem Projekt und Ihrer Ordnerliste hinzugefügt. Für Projekte, die im Unternehmensordner enthalten sind, sind keine spezifischen Berechtigungen erforderlich.
 
-Wenn sich ein(e) Benutzende(r) bei Analysis Workspace anmeldet, wird der Unternehmensordner automatisch zu seiner Projekt- und Ordnerliste hinzugefügt. Für Projekte, die im Unternehmensordner enthalten sind, sind keine spezifischen Berechtigungen erforderlich.
+### Administratoroptionen
 
-### Optionen für Administratoren bzw. Administratorinnen {#admin-options}
+Administratoren haben spezielle Berechtigungen für den Ordner &quot;Unternehmen&quot;. Beispielsweise können nur Administratoren Ordner oder Projekte im Ordner &quot;Unternehmen&quot;hinzufügen oder entfernen. Benutzer ohne Zugriffskontrolle durch Administratoren können den Inhalt des Ordners Firma anzeigen.
 
-Administratoren bzw. Administratorinnen verfügen über spezielle Berechtigungen in Bezug auf den Unternehmensordner. Beispielsweise können nur Administratoren bzw. Administratorinnen Ordner oder Projekte im Unternehmensordner hinzufügen oder entfernen. Benutzende ohne Administratorrechte können den Inhalt des Unternehmensordners anzeigen.
+<!--
+![The Projects page showing the admin options.](/help/analysis-workspace/build-workspace-project/assets/admin-options.png)
 
-![Auf der Seite „Projekte“ werden die Admin-Optionen angezeigt.](/help/analysis-workspace/build-workspace-project/assets/admin-options.png)
+Non-Admins have limited options.
 
-Die Optionen für Benutzende ohne Administratorrechte sind eingeschränkt.
+![The Projects page showing the non-admin options for folders.](/help/analysis-workspace/build-workspace-project/assets/non-admin-folder-options.png)
 
-![Auf der Seite „Projekte“ werden die Optionen ohne Adminrechte für Ordner angezeigt.](/help/analysis-workspace/build-workspace-project/assets/non-admin-folder-options.png)
+-->
 
-### Informationen zum Unternehmensordner {#company-folder-guidelines}
+### Richtlinien
 
-- Administratoren bzw. Administratorinnen können Projekte zum Unternehmensordner hinzufügen oder ein neues Projekt erstellen und im Unternehmensordner speichern. Benutzende ohne Administratorrechte können dann die Inhalte im Unternehmensordner anzeigen.
+Im Folgenden finden Sie einige Richtlinien für die Arbeit mit dem Ordner &quot;Unternehmen&quot;:
 
-- Administratoren bzw. Administratorinnen können im Unternehmensordner Unterordner erstellen.
+- Administratoren können Projekte zum Ordner Unternehmen hinzufügen oder ein neues Projekt erstellen und das neue Projekt im Ordner Firma speichern. Benutzer ohne Administratorrechte können den Inhalt des Ordners Firma anzeigen.
 
-- Admins können im Firmenordner einen Ordner löschen, den andere Admins erstellt haben. Administratoren bzw. Administratorinnen müssen sich möglicherweise mit anderen Administratoren bzw. Administratorinnen abstimmen, um die Konsistenz von Ordnern und Projektzugriffen zu gewährleisten.
+- Administratoren können Unterordner im Ordner &quot;Unternehmen&quot;erstellen.
 
-- Wenn eine oder ein Admin ein Projekt in den Unternehmensordner verschiebt, wird das Projekt für alle Personen mit der Berechtigung **Kopie bearbeiten** freigegeben, selbst wenn die ursprünglichen Freigabeberechtigungen eingeschränkt waren.
+- Administratoren können einen Ordner im Ordner Firma löschen, den ein anderer Administrator erstellt hat. Möglicherweise müssen sich Administratoren mit anderen Administratoren abstimmen, um den Zugriff auf Ordner und Projekte konsistent zu halten.
 
-- Wenn eine oder ein Admin ein Projekt aus dem Unternehmensordner verschiebt, werden die ursprünglichen oder vorherigen Freigabeberechtigungen beibehalten.
+- Wenn ein Administrator ein Projekt in den Ordner Firma verschiebt, wird der Ordner für alle freigegeben, selbst wenn die ursprünglichen freigegebenen Berechtigungen eingeschränkt waren.
+- Wenn ein Administrator ein Projekt aus dem Ordner &quot;Unternehmen&quot;verschiebt, werden die ursprünglichen oder vorherigen Freigabeberechtigungen respektiert.
+
+- Wenn ein Administrator ein Projekt aus dem Ordner &quot;Unternehmen&quot;verschiebt, werden die ursprünglichen oder vorherigen Freigabeberechtigungen respektiert.

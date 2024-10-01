@@ -3,35 +3,34 @@ description: Filtern Sie nach Tags, Datenansicht, Inhabern und anderen Filtern (
 title: Berechnete Metriken filtern
 feature: Calculated Metrics
 exl-id: 902da464-14de-45b9-bd92-d2db064cb095
-source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+source-git-commit: 1907d94a0f53ee65a3839d879da6c06092f75e0f
 workflow-type: tm+mt
-source-wordcount: '209'
-ht-degree: 26%
+source-wordcount: '142'
+ht-degree: 2%
 
 ---
 
-# Berechnete Metriken filtern
+# Filtern der Liste berechneter Metriken
 
-Filtern Sie nach Tags, Inhabern und anderen Filtern („Alle anzeigen“, „Meine“, „Für mich freigegeben“, „Favoriten“ und „Genehmigt“).
+Sie können die Liste der berechneten Metriken filtern. Die Verwendung eines Filters für berechnete Metriken erleichtert die Suche nach den berechneten Metriken, die Ihnen zur Verfügung stehen, und die Verwaltung berechneter Metriken über den Manager für berechnete Metriken [](cm-manager.md).
 
-Die Filterung erleichtert die Suche nach berechneten Metriken in der Segmentleiste.
 
-1. Wählen Sie unter Customer Journey Analytics die Registerkarte **[!UICONTROL Komponenten]** und dann **[!UICONTROL Berechnete Metriken]** aus.
+So filtern Sie die Liste der berechneten Metriken:
 
-1. Klicken Sie im Manager für berechnete Metriken auf das Symbol **[!UICONTROL Filter]**: ![](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg)
+1. Wählen Sie ![Filter](/help/assets/icons/Filter.svg) aus, um den Bereich &quot;Filter&quot;zu öffnen. Wenn Sie mehr Platz für die Liste &quot;Filter&quot;benötigen, können Sie ![Filter](/help/assets/icons/Filter.svg) erneut auswählen, um den Bereich zu schließen.
+1. Wählen Sie Filter aus einem der verfügbaren [Filterabschnitte](#filter-sections) aus.
 
-   ![Manager für berechnete Metriken mit dem Symbol Filter und den verfügbaren Filtern wie Tags, Report Suite und Inhaber](assets/filtering.png)
+   >[!INFO]
+   >
+   >*Elemente* beziehen sich auf die in der Liste [Berechnete Metrik](cm-manager.md#filters-list) angezeigten Filterelemente.
+   > 
 
-1. Folgende Filter sind verfügbar:
+## Filterabschnitte
 
-   | Filtername | Beschreibung |
-   |---|---|
-   | Tags | Filtert berechnete Metriken mit bestimmten [Tags](/help/components/calc-metrics/cm-workflow/cm-tagging.md). Die Spalte „Tags“ wird standardmäßig angezeigt. |
-   | Inhaber | Filtert berechnete Metriken nach Inhaber. |
-   | Datenansicht | Filtert berechnete Metriken nach Datenansicht. |
-   | Weitere Filter > Alle anzeigen | **(Nur Admin)** Zeigt alle berechneten Metriken, ihren Inhaber und das Datum der letzten Änderung an. |
-   | Weitere Filter > Meine | Zeigt alle berechneten Metriken an, deren Inhaber Sie sind. |
-   | Weitere Filter > Für mich freigegeben | Zeigt alle berechneten Metriken an, die für Sie freigegeben wurden.[](/help/components/calc-metrics/cm-workflow/cm-sharing.md) |
-   | Weitere Filter > Favoriten | Zeigt alle berechneten Metriken an, die Sie als [Favoriten](/help/components/calc-metrics/cm-workflow/cm-favorite.md) markiert haben. |
-   | Weitere Filter > Genehmigt | Zeigt alle offiziell [genehmigten](/help/components/calc-metrics/cm-workflow/cm-approving.md) berechneten Metriken an. |
-   | Berechnete Metriken durchsuchen | Ermöglicht die Suche nach berechneten Metriken nach Namen. |
+{{tagfiltersection}}
+{{dataviewfiltersection}}
+{{ownerfiltersection}}
+{{otherfiltersfiltersection}}
+
+
+Die Liste [Berechnete Metriken](cm-manager.md#filters-list) wird basierend auf Ihrer Filterkonfiguration automatisch aktualisiert. Die konfigurierten Filter werden in der [aktiven Filterleiste](cm-manager.md#active-filter-bar) angezeigt.

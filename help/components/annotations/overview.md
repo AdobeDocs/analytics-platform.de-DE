@@ -5,47 +5,41 @@ solution: Customer Journey Analytics
 feature: Components
 exl-id: a87f6968-27a5-4595-be4f-0a38e03b9398
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 664576605b8be098a751609536e388c304c65513
 workflow-type: tm+mt
-source-wordcount: '307'
-ht-degree: 100%
+source-wordcount: '318'
+ht-degree: 30%
 
 ---
 
 # Anmerkungen – Übersicht
 
-Mit Anmerkungen können Sie Ihrer Organisation kontextbezogene Datennuancen und Einblicke effektiv übermitteln. Durch sie können Sie Kalenderereignisse an bestimmte Dimensionen/Metriken binden. Sie können etwa ein Datum oder einen Datumsbereich mit bekannten Datenproblemen, öffentlichen Feiertagen, Kampagnenstarts usw. kommentieren. Sie können dann Ereignisse grafisch darstellen und sehen, ob sich Kampagnen oder andere Ereignisse auf den Sitetraffic, die Nutzung der Mobile App, den Umsatz oder andere Metriken ausgewirkt haben.
+Anmerkungen ermöglichen es Ihnen, kontextbezogene Datennuancen und Einblicke effektiv an andere Stakeholder in Ihrer Organisation zu kommunizieren. Mit Anmerkungen können Sie Kalenderereignisse mit bestimmten Dimensionen und Metriken verknüpfen. Sie können etwa zu einem Datum oder Datumsbereich Anmerkungen zu bekannten Datenproblemen, öffentlichen Feiertagen, Kampagnenstarts usw. machen, Sie können dann Ereignisse grafisch darstellen und sehen, ob sich Kampagnen oder andere Ereignisse auf den Sitetraffic, die Nutzung der Mobile App, den Umsatz oder andere Metriken ausgewirkt haben.
 
-Angenommen, Sie geben Projekte für Ihr Unternehmen frei. Wenn der Traffic aufgrund einer Marketing-Kampagne stark angestiegen ist, können Sie eine Anmerkung „Start der Kampagne“ erstellen und diese auf Ihre gesamte Datenansicht anwenden. Wenn Ihre Benutzenden Datensätze betrachten, die dieses Datum enthalten, sehen sie die Anmerkung in ihren Projekten gemeinsam mit ihren Daten.
+Beispielsweise können Sie Projekte für Ihre Organisation freigeben. Wenn Ihre Angebote erheblich heruntergefallen sind, können Sie eine Anmerkung **Unangemessene Angebote** erstellen und sie auf Ihre gesamte Datenansicht eingrenzen. Wenn Ihre Benutzenden Datensätze betrachten, die dieses Datum enthalten, sehen sie die Anmerkung in ihren Projekten gemeinsam mit ihren Daten.
 
-![Liniendiagramm mit hervorgehobener Anmerkung.](assets/multi-day.png)
+![Liniendiagramm mit hervorgehobener Anmerkung.](assets/annotation-example.png)
 
-Beachten Sie:
+Anmerkungen können für Folgendes gelten:
 
-* Anmerkungen können an ein einzelnes Datum oder einen Datumsbereich gebunden werden.
+* Ein einzelnes Datum oder einen Datumsbereich.
 
-* Sie können auf Ihren gesamten Datensatz oder auf bestimmte Metriken, Dimensionen oder Filter angewendet werden.
+* Ihren gesamten Datensatz oder bestimmte Metriken, Dimensionen oder Filter.
 
-* Sie können auf das Projekt angewendet werden, in dem sie erstellt wurden (Standard), oder auf alle Projekte.
+* Das Projekt, in dem Anmerkungen erstellt werden (Standard) oder alle Projekte.
 
-* Sie können auf die Datenansicht, in der sie erstellt wurden (Standard), oder auf alle Datenansichten angewendet werden.
+* Die Datenansicht, in der Anmerkungen erstellt werden (Standard), oder alle Datenansichten.
 
-## Zugriffsberechtigungen
+Unter [Anmerkungen erstellen](/help/components/annotations/create-annotations.md) finden Sie die verschiedenen Optionen zum Erstellen von Anmerkungen. Anschließend erstellen, ändern und speichern Sie Anmerkungen im [Anmerkungen-Builder](create-annotations.md#annotation-builder).
 
-Standardmäßig können nur Admins Anmerkungen erstellen. Benutzende haben die Berechtigung, Anmerkungen anzuzeigen, wie dies bei anderen Analytics-Komponenten der Fall ist (z. B. Filter und berechnete Metriken).
+Sie verwenden den [Anmerkungsmanager](manage-annotations.md) zum Verwalten von Anmerkungen.
 
-Admins können jedoch über die [Adobe Admin Console](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/analytics-tools.html?lang=de) Benutzenden die Berechtigung zur [!UICONTROL Erstellung von Anmerkungen] (Analytics-Tools) erteilen.
-
-## Aktivieren oder Deaktivieren von Anmerkungen {#annotations-on-off}
+## Aktivieren oder Deaktivieren von Anmerkungen
 
 Anmerkungen können auf verschiedenen Ebenen aktiviert oder deaktiviert werden:
 
-* Auf Visualisierungsebene: Einstellungen der [!UICONTROL Visualisierung] > [!UICONTROL Anmerkungen anzeigen]
-
-* Auf Projektebene: [!UICONTROL Projektinfo und Einstellungen] > [!UICONTROL Anmerkungen anzeigen]
-
-* Auf Benutzerebene: [!UICONTROL Komponenten] > [!UICONTROL Benutzereinstellungen] > [!UICONTROL Daten] > [!UICONTROL Anmerkungen anzeigen]
-
-![Dialogfeld „Visualisierungseinstellungen“ mit „Anmerkungen anzeigen“ hervorgehoben](assets/show-ann.png)
-
-![Benutzereinstellungen, mit „Anmerkungen anzeigen“ hervorgehoben.](assets/show-ann2.png)
+| Ebene | Anleitung ... |
+|---|---|
+| **Visualisierung** | Aktivieren oder deaktivieren Sie ![Einstellung](/help/assets/icons/Setting.svg) > **[!UICONTROL Einstellungen]** > **[!UICONTROL Anmerkungen anzeigen]**.<br/>![Aktiviert die Option zum Deaktivieren von Anmerkungen für eine Visualisierung](/help/components/annotations/assets/annotations-visualization.png) |
+| **Projekt** | Wählen Sie in einem Workspace-Projektmenü **[!UICONTROL Projekt]** > **[!UICONTROL Projektinformationen und Einstellungen]** aus und aktivieren oder deaktivieren Sie **[!UICONTROL Anmerkungen anzeigen]**.<br/>![Aktiviert die Option zum Deaktivieren von Anmerkungen für ein Projekt](/help/components/annotations/assets/annotations-project.png) |
+| **Benutzer** | Wählen Sie auf der Registerkarte **[!UICONTROL Komponenten]** die Option **[!UICONTROL Voreinstellungen]** oder wählen Sie im Workspace-Projektmenü die Option **[!UICONTROL Projekt]** > **[!UICONTROL Benutzereinstellungen]** aus. <br/>Wählen Sie in **[!UICONTROL Voreinstellungen]** die Option **[!UICONTROL Projekte und Analysen]** aus. Wählen Sie in der linken Registerkartenleiste **[!UICONTROL Daten]** aus. Aktivieren oder deaktivieren Sie unten **[!UICONTROL Anmerkungen anzeigen]** unter der Überschrift **[!UICONTROL Freiformtabelle]** .<br/>![Aktiviert die Option zum Deaktivieren von Anmerkungen für einen Benutzer](/help/components/annotations/assets/annotations-user.png) |

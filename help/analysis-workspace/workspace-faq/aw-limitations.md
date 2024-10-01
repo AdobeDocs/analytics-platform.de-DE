@@ -4,10 +4,10 @@ title: Bekannte Einschränkungen in Analysis Workspace
 feature: FAQ
 exl-id: 334cfe24-a4b2-43be-94df-5a2df90612f0
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: de04792035aa7c235751019ee9f9fe5b74b9b102
 workflow-type: tm+mt
-source-wordcount: '320'
-ht-degree: 100%
+source-wordcount: '314'
+ht-degree: 89%
 
 ---
 
@@ -28,23 +28,23 @@ Im Folgenden finden Sie eine Liste der bekannten Einschränkungen in Analysis Wo
 * [!UICONTROL Fluss]: Einstiegs-/Ausstiegsdimensionen, z. B. [!UICONTROL Entrypage], können nicht im Fluss verwendet werden.
 * [!UICONTROL Kohorte]: Nur Ganzzahlen können als Kohortenkriterien verwendet werden.
 
-## „Komponenten“ > „Filter“
+## Filter
 
-* Bestimmte Metriken und Dimensionen können nicht gefiltert werden, wie [!UICONTROL Vorfälle], [!UICONTROL Unique Visitors] usw.
-* In der [Dropzone des Bedienfelds](/help/analysis-workspace/c-panels/panels.md) erstellte Ad hoc-Filter sind eine Art Schnellfilter. Sie werden nicht in der linken Leiste von Workspace oder im Filter-Komponenten-Manager angezeigt, es sei denn, sie werden veröffentlicht. Weitere Informationen finden Sie unter [Schnellfilter](/help/components/filters/quick-filters.md).
+* Bestimmte Metriken und Dimensionen können nicht gefiltert werden, z. B. [!UICONTROL Ereignisse], [!UICONTROL Personen] usw.
+* In der [Dropzone des Bedienfelds](/help/analysis-workspace/c-panels/panels.md) erstellte Ad hoc-Filter sind eine Art Schnellfilter. Sie werden nicht im linken Bereich von Workspace oder im Komponenten-Manager für Filter angezeigt, es sei denn, sie werden veröffentlicht. Weitere Informationen finden Sie unter [Schnellfilter](/help/components/filters/quick-filters.md).
 
-## Komponenten > Berechnete Metriken
+## Berechnete Metriken 
 
-* Berechnete Metriken können in bestimmten Visualisierungen nicht verwendet werden. Siehe „Visualisierungen“ oben.
+* Berechnete Metriken können in bestimmten Visualisierungen nicht verwendet werden. Siehe [Visualisierungen](#visualizations).
 * Berechnete Metriken können nicht im Bereich [!UICONTROL Attribution] verwendet werden, da berechnete Metriken selbst separate Attributionsmodelle enthalten können.
 * Bestimmte Komponenten und Operatoren sind nicht verfügbar, wenn eine berechnete Metrik aus Workspace erstellt wird (im Gegensatz zu [!UICONTROL Komponenten > Filter]). Beispiel: [!UICONTROL IP-Adresse].
 
-## Komponenten > Datumsbereiche
+## Datumsbereiche
 
 * Benutzerdefinierte Datumsbereiche werden nicht unterstützt [!UICONTROL Dieser Tag im letzten Jahr], [!UICONTROL Dieser Tag im letzten Monat] usw.
 
 
-## Komponenten > Berichtseinstellungen
+## Berichtseinstellungen
 
 * Einige der Einstellungen auf der Seite [!UICONTROL Berichtseinstellungen] gelten nicht. Analysis Workspace verwendet nur die [!UICONTROL Einstellungen für Sprache/Währung/Kodierung] am unteren Rand: [!UICONTROL Tausendertrennzeichen], [!UICONTROL Kodierung des terminierten Berichts] und [!UICONTROL CSV-Trennzeichen].
 

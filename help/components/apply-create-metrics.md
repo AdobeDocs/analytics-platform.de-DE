@@ -4,10 +4,10 @@ title: Metriken
 feature: Metrics
 exl-id: 4edfb5d7-da20-4bd8-8041-387b291daf96
 role: User
-source-git-commit: cdab5d8b674527a1c3f950284daac65d0ab01900
+source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
 workflow-type: tm+mt
-source-wordcount: '537'
-ht-degree: 18%
+source-wordcount: '316'
+ht-degree: 20%
 
 ---
 
@@ -19,66 +19,78 @@ Mit Metriken können Sie Datenpunkte in Analysis Workspace quantifizieren. Sie w
 
 Adobe bietet verschiedene Arten von Metriken zur Verwendung in Analysis Workspace:
 
+
 * **Standardmetriken**: Beispiel für Standardmetriken sind Personen, Sitzungen, Ereignisse.
 
-* **Berechnete Metriken** ![Symbol für berechnete Metriken](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calculator_18_N.svg): Benutzerdefinierte Metriken, die auf Standardmetriken, statischen Zahlen oder algorithmischen Funktionen basieren.
+* **Berechnete Metriken** ![Rechner](/help/assets/icons/Calculator.svg): Benutzerdefinierte Metriken, die auf Standardmetriken, statischen Zahlen oder algorithmischen Funktionen basieren.
 
-* **Vorlagen für berechnete Metriken**  <img src="./assets/adobe-logo.svg" width="18"> : Adobe-definierte Metriken, die sich ähnlich wie berechnete Metriken verhalten. Sie können sie unverändert in Workspace-Projekten verwenden oder eine Kopie speichern, um ihre Logik anzupassen.
+* **Vorlagen für berechnete Metriken** ![AdobeLogoSmall](/help/assets/icons/AdobeLogoSmall.svg) : Adobe-definierte Metriken, die sich ähnlich wie berechnete Metriken verhalten. Sie können sie unverändert in Workspace-Projekten verwenden oder eine Kopie speichern, um die Logik anzupassen.
 
-
-![Workspace-Bedienfeld, in dem Metriken im linken Bereich hervorgehoben werden.](assets/cja-metrics.png)
-
-Sie können sehen, ob eine Metrik für ![Genehmigungssymbol](https://spectrum.adobe.com/static/icons/ui_18/CheckmarkSize100.svg) genehmigt wurde oder nicht. Wenn Sie weitere Details zu einer Metrik wünschen, bewegen Sie den Mauszeiger über die Metrik und wählen Sie ![Infosymbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg) aus.
+Sie können sehen, ob eine Metrik für ![Genehmigungssymbol](https://spectrum.adobe.com/static/icons/ui_18/CheckmarkSize100.svg) genehmigt wurde oder nicht. Wenn Sie weitere Details zu einer Metrik wünschen, bewegen Sie den Mauszeiger über die Metrik und wählen Sie ![Infosymbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg) aus. Weitere Informationen finden Sie unter [Komponenteninformationen](use-components-in-workspace.md#component-info) .
 
 
-Metriken sind in ihrer Verwendung in Analysis Workspace flexibel. Ziehen Sie eine Metrik in eine leere Freiformtabelle, um die Trendansicht dieser Metrik über den Datumsbereich des Projekts anzuzeigen. Sie können auch eine Metrik ziehen, wenn eine Dimension vorhanden ist, um diese Metrik im Vergleich zu jedem Dimensionselement anzuzeigen. Wenn Sie eine Metrik auf eine vorhandene Metrik-Kopfzeile ziehen, wird sie ersetzt und durch Ziehen einer Metrik neben eine Kopfzeile können Sie beide Metriken nebeneinander sehen.
 
 ## Verwenden von Metriken in Analysis Workspace
 
-Metriken können in Analysis Workspace auf verschiedene Arten verwendet werden. Informationen zum Hinzufügen von Metriken und anderen Komponententypen zu Analysis Workspace finden Sie unter [Verwenden von Komponenten in Analysis Workspace](/help/components/use-components-in-workspace.md).
+Metriken sind in ihrer Verwendung in Analysis Workspace flexibel. Ziehen Sie eine Metrik in eine leere Freiformtabelle, um die Trendansicht dieser Metrik über den Datumsbereich des Projekts anzuzeigen. Sie können auch eine Metrik ziehen, wenn eine Dimension vorhanden ist, um diese Metrik im Vergleich zu jedem Dimensionselement anzuzeigen. Wenn Sie eine Metrik auf eine vorhandene Metrik-Kopfzeile ziehen, wird sie ersetzt und durch Ziehen einer Metrik neben eine Kopfzeile können Sie beide Metriken nebeneinander sehen.
 
-## Berechnete Metriken erstellen
+Informationen zum Hinzufügen von Metriken und anderen Komponententypen zu Analysis Workspace finden Sie unter [Verwenden von Komponenten in Analysis Workspace](/help/components/use-components-in-workspace.md).
 
-Berechnete Metriken ermöglichen es Ihnen, mithilfe einfacher Operatoren oder statistischer Funktionen einfach zu erkennen, wie sich Metriken zueinander verhalten.
+## Berechnete Metriken 
 
-Es gibt mehrere Möglichkeiten, berechnete Metriken zu erstellen. Die gewählte Methode bestimmt, ob die berechnete Metrik in der Komponentenliste für alle Projekte oder nur in dem Projekt verfügbar ist, in dem sie erstellt wurde.
+Berechnete Metriken ermöglichen es Ihnen, mithilfe einfacher Operatoren oder statistischer Funktionen einfach zu konfigurieren, wie sich Metriken zueinander verhalten. Weitere Informationen finden Sie unter [Übersicht über berechnete Metriken](/help/components/calc-metrics/calc-metr-overview.md) .
 
-### Berechnete Metriken für alle Projekte erstellen
+<!--
 
-Mit dem Generator für berechnete Metriken können Sie berechnete Metriken erstellen. Auf diese Weise werden berechnete Metriken in der Komponentenliste verfügbar und können dann in Projekten in Ihrer gesamten Organisation verwendet werden.
+There are several ways to create calculated metrics. See [Create calculated metrics]()
 
-Informationen zum Zugriff auf den Generator für berechnete Metriken finden Sie unter [Metriken erstellen](/help/components/calc-metrics/cm-workflow/cm-build-metrics.md).
+### Create calculated metrics for all projects
 
-### Berechnete Metriken für ein einzelnes Projekt erstellen
+You can use the calculated metric builder to create calculated metrics. When created in this way, calculated metrics are available in the component list and can then be used in projects throughout your organization. 
 
-Sie können schnell berechnete Metriken erstellen, die nur für das Projekt verfügbar sind, in dem sie erstellt wurden.
+For information about how to access the calculated metrics builder, see [Build metrics](/help/components/calc-metrics/cm-workflow/cm-build-metrics.md).
 
-So erstellen Sie eine berechnete Metrik für ein einzelnes Projekt:
+### Create calculated metrics for a single project
 
-1. Öffnen Sie in Analysis Workspace das Projekt, in dem Sie die berechnete Metrik erstellen möchten.
+You can create quick calculated metrics that are available only for the project where they were created.
 
-1. Klicken Sie in einer Freiformtabelle mit der rechten Maustaste auf eine oder mehrere Spaltenüberschriftszellen und wählen Sie dann **[!UICONTROL Metrik aus Auswahl erstellen]**
+To create a calculated metric for a single project:
 
-   ![Workspace-Bedienfeld, das die Option Aus Auswahl erstellen hervorhebt](assets/create-metric-from-selection.png)
+1. In Analysis Workspace, open the project where you want to create the calculated metric.
 
-1. Um nur eine berechnete Metrik für dieses Projekt zu erstellen, wählen Sie eine der folgenden Optionen aus:
+1. In a freeform table, select **[!UICONTROL Create metric from selection]** from the context menu in a column header.
 
-   * [!UICONTROL **divide**]
+   ![Workspace panel highlighting Create from selection](assets/create-metric-from-selection.png)
 
+1. To create a calculated metric for this project only, choose from the following options:
+
+   * [!UICONTROL **Divide**]
+   
    * [!UICONTROL **Subtract**]
 
-   * [!UICONTROL **Hinzufügen**]
+   * [!UICONTROL **Add**]
 
    * [!UICONTROL **Multiply**]
 
-   Alternativ können Sie den Generator für berechnete Metriken öffnen und die berechnete Metrik für alle Projekte erstellen, indem Sie [!UICONTROL **Im Generator für berechnete Metriken öffnen**] und dann mit [Metriken erstellen](/help/components/calc-metrics/cm-workflow/cm-build-metrics.md) fortfahren.
+   Or, to open the calculated metric builder and create the calculated metric for all projects, select [!UICONTROL **Open in Calculated Metric Builder**], then continue with [Build metrics](/help/components/calc-metrics/cm-workflow/cm-build-metrics.md).
 
-[Berechnete Metriken: implementierungslose Metriken](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/components/calculated-metrics/calculated-metrics-implementationless-metrics.html?lang=de) (3:42)
+
+<!-- This video really shows an AA example using hits, etc.  Not suitable for CJA... >
++++ See the following video on how to create an implementation-less calculated metric from within Analysis Workspace.
+
+[Calculated Metrics: Implementation-less metrics](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/components/calculated-metrics/calculated-metrics-implementationless-metrics.html) (3:42)
+
+
+>[!VIDEO](https://video.tv.adobe.com/v/25407/?quality=12)
+
++++
+
+-->
 
 ## Vergleichen von Metriken mit verschiedenen Attributionsmodellen
 
-Wenn Sie Attributionsmodelle schnell und einfach miteinander vergleichen möchten, klicken Sie mit der rechten Maustaste auf eine Metrik und wählen Sie **[!UICONTROL Attributionsmodelle vergleichen]**:
+Wenn Sie Attributionsmodelle für eine Metrik schnell und einfach miteinander vergleichen möchten, wählen Sie **[!UICONTROL Attributionsmodelle vergleichen]** aus dem Kontextmenü für eine Metrik.
 
 ![Workspace-Bedienfeld zur Hervorhebung von Vergleichsattributionsmodellen](assets/compare-attribution.png)
 
-Dadurch können Sie Attributionsmodelle schnell und einfach miteinander vergleichen, ohne eine Metrik hereinzuziehen und sie zweifach zu konfigurieren.
+Mit dieser Verknüpfung können Sie Attributionsmodelle schnell und einfach vergleichen.

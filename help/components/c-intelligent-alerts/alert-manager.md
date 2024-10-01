@@ -1,110 +1,121 @@
 ---
 description: Warnhinweise erstellen, bearbeiten oder löschen.
-title: Alert Manager (Analysis Workspace)
+title: Änderungen verwalten
 feature: Workspace Basics
 role: User, Admin
-source-git-commit: def8b074ea468e409e340415d5e96f75d6b69312
+source-git-commit: bd58af0680fc9524453e072ecb60e3ada72ce634
 workflow-type: tm+mt
-source-wordcount: '562'
-ht-degree: 7%
+source-wordcount: '566'
+ht-degree: 4%
 
 ---
 
 # Verwalten von Warnhinweisen
 
-Sie können vorhandene Warnhinweise im Warnhinweis-Manager verwalten. Sie können verschiedene Verwaltungsaufgaben für Warnhinweise ausführen, z. B. Tagging, Umbenennen, Löschen usw.
+
+Sie können Warnhinweise über eine zentrale Verwaltungsoberfläche von [!UICONTROL Warnhinweise] filtern, taggen, löschen, umbenennen, kopieren, aktivieren, deaktivieren, verlängern und exportieren. Warnhinweise verwalten:
+
+* Wählen Sie **[!UICONTROL Komponenten]** in der Hauptbenutzeroberfläche und dann **[!UICONTROL Warnhinweise]** aus.
 
 Der Warnhinweis-Manager ähnelt sehr dem [Filter-Manager](/help/components/filters/manage-filters.md) und dem [Manager für berechnete Metriken](/help/components/calc-metrics/cm-workflow/cm-manager.md).
 
-## Erstellen von Warnhinweisen
 
-So erstellen Sie Warnhinweise vom Warnhinweis-Manager:
+## Warnhinweis-Manager
 
-1. Wählen Sie **[!UICONTROL Komponenten]** > **[!UICONTROL Warnhinweise]** aus, um auf den Warnhinweis-Manager im Customer Journey Analytics zuzugreifen.
+Der Warnhinweis-Manager verfügt über die folgenden Elemente der Benutzeroberfläche:
 
-   ![](assets/alert-manager.png)
+![Filterschnittstelle](assets/alerts-manager.png)
 
-1. Wählen Sie [!UICONTROL **Hinzufügen**] (oder [!UICONTROL **Neuen Warnhinweis erstellen**] , wenn keine Warnhinweise vorhanden sind).
+### Liste der Warnhinweise
 
-1. Fahren Sie mit [Warnhinweise erstellen](/help/components/c-intelligent-alerts/alert-builder.md) fort, um weitere Informationen zum Erstellen von Warnhinweisen zu erhalten.
+In der Liste der Warnhinweise werden alle Warnhinweise, die Ihnen gehören, sowie alle Warnhinweise, die für alle Ihre Projekte verfügbar sind, und die Warnhinweise angezeigt, die für Sie freigegeben wurden. Die Liste enthält die folgenden Spalten:
 
-## Vorhandene Warnungen verwalten
+| Spalte | Beschreibung |
+|---|---|
+| ![StarOutline](/help/assets/icons/StarOutline.svg) | Wählen Sie diese Option aus, um ![Star](/help/assets/icons/Star.svg) oder den Warnhinweis für ![StarOutline](/help/assets/icons/StarOutline.svg) zu favorisieren. |
+| **[!UICONTROL Titel und Beschreibung]** | Um den Warnhinweis zu bearbeiten, wählen Sie den Titel-Link aus, der den [Warnhinweiserstellung](alert-builder.md#alert-builder) öffnet. |
+| **[!UICONTROL Typ]** | Zeigt an, ob es sich bei dem Warnhinweis um einen Customer Journey Analytics-Datenwarnungen oder einen Warnhinweis zur Nutzung von Server-Aufrufen handelt. |
+| **[!UICONTROL Aktiviert]** | Gibt an, ob der Warnhinweis aktiviert oder deaktiviert ist. |
+| **[!UICONTROL Datenansicht]** | Die Datenansichten, für die dieser Warnhinweis gilt. |
+| **[!UICONTROL Inhabende]** | Der Eigentümer der Warnung. Als Nicht-Administrator werden nur Warnhinweise angezeigt, die Ihnen gehören oder für Sie freigegeben wurden. |
+| **[!UICONTROL Tags]** | Die Tags für diese Warnung. |
+| **[!UICONTROL Ablaufdatum]** | Datum und Uhrzeit des Ablaufs der Warnung. |
+| **[!UICONTROL Datum geändert]** | Datum und Uhrzeit der letzten Änderung der Warnung. |
 
-So verwalten Sie vorhandene Warnhinweise im Warnhinweis-Manager:
+<!-- When "Last used" column is added, add this information as the description: Shows the date when the alert was last used. <p>This information can help you determine whether a component is valuable to users in your organization, where it is used, and if it needs to be deleted or modified.</p><p>Consider the following when viewing this column:</p><ul><li>This information does not include usage from the API, Report Builder, or Data Warehouse.</li><li>For some components, this column might not contain data if the component was last used prior to September 2023.</li></ul> -->
 
-1. Wählen Sie **[!UICONTROL Komponenten]** > **[!UICONTROL Warnhinweise]** aus, um auf den Warnhinweis-Manager im Customer Journey Analytics zuzugreifen.
+Verwenden Sie ![ColumnSetting](/help/assets/icons/ColumnSetting.svg) , um anzugeben, welche Spalten angezeigt werden sollen.
 
-   ![](assets/alert-manager.png)
+### Symbolleiste
 
-1. Wählen Sie einen oder mehrere Warnhinweise aus, die Sie verwalten möchten.
+Sie können Warnhinweise über die Aktionsleiste bearbeiten. Die Aktionsleiste enthält die folgenden Aktionen:
 
-   ![](assets/alert-manager-tasks.png)
+| Aktion | Beschreibung |
+|---|---|
+| ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Add]** | Fügen Sie mit dem [Alert Builder](alert-builder.md#alert-builder) einen weiteren Warnhinweis hinzu. |
+| ![Suche](/help/assets/icons/Search.svg) [!UICONTROL *Suche nach Titel*] | Wenn in der Liste kein Warnhinweis ausgewählt ist, suchen Sie mithilfe dieses Suchfelds nach Warnhinweisen. |
+| ![Beschriftung](/help/assets/icons/Label.svg) **[!UICONTROL Tag]** | Taggen Sie die ausgewählten Warnhinweise. Wählen Sie im Dialogfeld **[!UICONTROL Warnhinweis taggen]** die Tags für die ausgewählten Warnhinweise aus oder deaktivieren Sie sie. Wählen Sie **[!UICONTROL Speichern]** aus, um die Tags für die ausgewählten Warnhinweise zu speichern. |
+| ![Löschen](/help/assets/icons/Delete.svg) **[!UICONTROL Löschen]** | Löschen Sie die ausgewählten Warnhinweise. Sie werden zur Bestätigung aufgefordert. |
+| ![Bearbeiten](/help/assets/icons/Edit.svg) **[!UICONTROL Umbenennen]** | Benennen Sie eine einzelne ausgewählte Warnung um. Wenn diese Option aktiviert ist, können Sie den Warnhinweis inline umbenennen. |
+| ![Kopieren](/help/assets/icons/Copy.svg) **[!UICONTROL Kopieren]** | Kopieren Sie den ausgewählten Warnhinweis. Neue Warnhinweise werden mit demselben Namen und Suffix `(Copy)` erstellt. |
+| ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) **[!UICONTROL Enable]** or **[!UICONTROL disable]** | Aktivieren oder deaktivieren Sie die ausgewählten Warnhinweise. |
+| ![Aktualisieren](/help/assets/icons/Refresh.svg) **[!UICONTROL Verlängern]** | Verlängern Sie das Ablaufdatum des Warnhinweises. Das Ablaufdatum erstreckt sich ab dem Tag, an dem Sie diese Option auswählen, unabhängig vom ursprünglichen Ablaufdatum um 1 Jahr. |
+| ![FileCSV](/help/assets/icons/FileCSV.svg) **[!UICONTROL Export in CSV]** | Exportieren Sie die Warnungen in eine `Alerts List.csv` -Datei. |
 
-1. Wählen Sie in der Aktionsleiste eine der folgenden Optionen aus:
 
-   | Aktion | Funktion |
-   |---------|----------|
-   | [!UICONTROL **Tag**] | Wenden Sie ein Tag auf einen Warnhinweis an. Auf diese Weise können Sie Warnhinweise zur einfachen Verwendung organisieren. |
-   | [!UICONTROL **Löschen**] | Löscht den Warnhinweis. |
-   | [!UICONTROL **Umbenennen**] | Benennt die Warnung um. |
-   | [!UICONTROL **Genehmigen**] | Markieren Sie den Warnhinweis als Genehmigt. |
-   | [!UICONTROL **Kopieren**] | Erstellt eine Kopie (Duplikat) des Warnhinweises. |
-   | [!UICONTROL **Deaktivieren**] | Deaktiviert eine Warnung, die derzeit aktiviert ist. |
-   | [!UICONTROL **Aktivieren**] | Aktiviert einen Warnhinweis, der derzeit deaktiviert ist. |
-   | [!UICONTROL **Verlängern**] | Verlängern Sie das Ablaufdatum des Warnhinweises. Dadurch wird das Ablaufdatum ab dem Tag, an dem Sie diese Option ausgewählt haben, auf 1 Jahr verlängert, unabhängig vom ursprünglichen Ablaufdatum. |
-   | [!UICONTROL **In CSV exportieren**] | Exportiert den Warnhinweis in eine .CSV-Datei. |
+### Aktive Filterleiste
 
-## Warnhinweis bearbeiten
+Die Filterleiste zeigt die aktiven Filter an, die aus dem Filterbereich auf die Liste der Warnhinweise angewendet werden (sofern vorhanden). Mit ![CrossSize75](/help/assets/icons/CrossSize75.svg) können Sie schnell einen Filter entfernen. Wenn mehr als ein Filter angegeben ist, können Sie alle Filter mit **[!UICONTROL Alle entfernen]** entfernen.
 
-So bearbeiten Sie einen vorhandenen Warnhinweis:
 
-1. Wählen Sie **[!UICONTROL Komponenten]** > **[!UICONTROL Warnhinweise]** aus, um auf den Warnhinweis-Manager in Adobe Analytics zuzugreifen.
+### Filterbereich
 
-   ![](assets/alert-manager.png)
+Sie können die Liste der Warnhinweise mit dem linken Fensterbereich ![Filter](/help/assets/icons/Filter.svg) **[!UICONTROL Filter]** filtern. Im Filterbereich werden der Filtertyp und die Anzahl der Warnhinweise angezeigt, die den jeweiligen Filter berücksichtigen.
 
-1. Wählen Sie den Namen des Warnhinweises in der Spalte [!UICONTROL **Titel und Beschreibung**] aus.
+{{filterspanel}}
 
-1. Bearbeiten Sie den Warnhinweis nach Bedarf.
 
-   Im Folgenden finden Sie einige Schritte, die Sie beim Bearbeiten eines Warnhinweises ausführen können:
+#### Abschnitt &quot;Tags-Filter&quot;
 
-   * Warnhinweise zu anderen Report Suites hinzufügen
-   * Eigentümer ändern
-   * Filter aktualisieren
-   * Ablaufdatum aktualisieren
+{{tagfiltersection}}
 
-1. Bearbeiten Sie den Warnhinweis und wählen Sie dann [!UICONTROL **Speichern**] aus.
 
-## Spalten konfigurieren
+#### Datenansichtsfilterabschnitt
 
-Sie können die für jeden Warnhinweis im Warnhinweis-Manager angezeigten Informationen konfigurieren, indem Sie die angezeigten Spalten konfigurieren.
+{{dataviewfiltersection}}
 
-So konfigurieren Sie die sichtbaren Spalten im Warnhinweis-Manager:
 
-1. Wählen Sie in Adobe Analytics die Registerkarte **[!UICONTROL Komponenten]** und dann **[!UICONTROL Warnhinweise]** aus.
+#### Filterabschnitt für Inhaber
 
-1. Wählen Sie im Warnhinweis-Manager das Symbol **Spalten anpassen** ![Spaltensymbol anpassen](assets/customize-columns-icon.png) und wählen Sie dann die Spalten aus, die im Warnhinweis-Manager angezeigt werden sollen.
+{{ownerfiltersection}}
 
-   Die folgenden Spalten sind verfügbar:
 
-   | Spaltentitel | Beschreibung |
-   |---|---|
-   | Titel und Beschreibung | Diese Werte werden in der Warnhinweiserstellung bereitgestellt. Um den Titel und die Beschreibung zu bearbeiten, wählen Sie den Titel-Link aus, um die Warnhinweiserstellung zu öffnen. |
-   | Favoriten | Zeigt neben jedem Warnhinweis Sternensymbole an, mit denen Sie Warnhinweise als Favoriten markieren können. <!-- For more information, see [Mark calculated metrics as favorites](/help/components/c-calcmetrics/c-workflow/cm-workflow/cm-favorite.md). --> |
-   | Typ | Zeigt an, ob es sich bei dem Warnhinweis um einen Warnhinweis zu Analytics-Daten oder eine Warnung zur Nutzung von Server-Aufrufen handelt. |
-   | Aktiviert | Zeigt an, ob der Warnhinweis derzeit aktiviert oder deaktiviert ist. |
-   | Report Suite | Gibt an, in welcher Report Suite die Warnung zuletzt gespeichert wurde. |
-   | Verantwortlicher | Gibt an, wem der Warnhinweis gehört. Als Benutzer ohne Administratorrechte können Sie nur Warnhinweise sehen, deren Inhaber Sie sind, sowie solche, die für Sie freigegeben wurden. |
-   | Tags | Zeigt Tags an, die entweder von Ihnen oder von Personen, die den Warnhinweis für Sie freigegeben haben, auf den Warnhinweis angewendet wurden. |
-   | Ablaufdatum | Zeigt Datum und Uhrzeit des Ablaufs des Warnhinweises an. |
-   | Änderungsdatum | Gibt das Datum der letzten Änderung des Warnhinweises an. |
+#### Abschnitt für aktivierte Statusfilter
 
-   {style="table-layout:auto"}
+{{enabledstatusfiltersection}}
 
-   <!-- When "Last used" column is added, add this information as the description: Shows the date when the alert was last used. <p>This information can help you determine whether a component is valuable to users in your organization, where it is used, and if it needs to be deleted or modified.</p><p>Consider the following when viewing this column:</p><ul><li>This information does not include usage from the API, Report Builder, or Data Warehouse.</li><li>For some components, this column might not contain data if the component was last used prior to September 2023.</li></ul> -->
+
+#### Filtertyp
+
+{{typefiltersection}}
+
+
+#### Abschnitt &quot;Sonstige Filter&quot;
+
+{{otherfiltersfiltersection}}
+
+
+
+## Warnhinweise bearbeiten
+
+Sie können eine Warnung bearbeiten
+
+* Wählen Sie in der Liste [[!UICONTROL Alert]](#alerts-list) den Titel des Warnhinweises aus.
+
+Sie verwenden die [Warnhinweiserstellung](alert-builder.md#alert-builder), um den Warnhinweis zu bearbeiten.
 
 ## Fehlerbehebung bei einem Warnhinweis
 
-Stellen Sie beim Beheben eines Problems mit einem Warnhinweis die JID-Nummer (Job Instance ID) für den Adobe-Support bereit. Die JID-Nummer befindet sich unten in der Benachrichtigungs-E-Mail-Benachrichtigung, die Sie erhalten haben.
+Stellen Sie beim Beheben eines Problems mit einem Warnhinweis die JID-Nummer (Job Instance ID) für den Adobe-Support bereit. Die JID-Nummer befindet sich unten in der Benachrichtigungs-E-Mail mit dem Warnhinweis, die Sie erhalten.
 
 ![Warnhinweis-E-Mail](assets/alerts-email.PNG)

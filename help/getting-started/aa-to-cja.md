@@ -5,7 +5,7 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 5e3f0aa0-ba24-48c8-948c-ebb5c270f34d
-source-git-commit: d20655293a8248d26fed675d6f38e5a8a49a15c1
+source-git-commit: e93f4875bbb5940d9182aadcefcc7166644434c4
 workflow-type: tm+mt
 source-wordcount: '1083'
 ht-degree: 100%
@@ -90,7 +90,7 @@ Hier sind einige Videos, die Ihnen dabei helfen:
 
 * Durch die leistungsstarken Customer Journey Analytics-Datenansichten haben Sie bei der Definition von Metriken und Dimensionen in Customer Journey Analytics deutlich mehr Flexibilität. Sie können beispielsweise den Wert einer Dimension als Definition einer Metrik verwenden. [Weitere Informationen](/help/use-cases/data-views/data-views-usecases.md)
 
-* Wenn Sie einen benutzerdefinierten Kalender in Adobe Analytics festgelegt haben, verfügen Sie in Customer Journey Analytics über ähnliche [benutzerdefinierte Kalenderfunktionen](/help/components/date-ranges/custom-date-ranges.md). Sie müssen sicherstellen, dass Ihr Kalender korrekt definiert ist.
+* Wenn Sie einen benutzerdefinierten Kalender in Adobe Analytics festgelegt haben, verfügen Sie in Customer Journey Analytics über ähnliche [benutzerdefinierte Kalenderfunktionen](/help/components/date-ranges/overview.md). Sie müssen sicherstellen, dass Ihr Kalender korrekt definiert ist.
 
 * In Customer Journey Analytics können Sie eine benutzerdefinierte maximale Wartezeit für Besuche/Sitzungen definieren sowie eine Metrik festlegen, durch die eine neue Sitzung gestartet wird. Sie können Datenansichten mit verschiedenen Sitzungsdefinitionen erstellen, um Einblicke zu erhalten, die weit darüber hinausgehen, was in Adobe Analytics möglich war. Diese Funktion kann besonders für Datensätze im Mobile-Bereich von Nutzen sein.
 

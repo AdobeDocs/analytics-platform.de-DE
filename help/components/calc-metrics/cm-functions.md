@@ -4,16 +4,17 @@ description: Mit dem Generator für berechnete Metriken können Sie statistische
 feature: Calculated Metrics
 exl-id: 63775753-337b-4dec-a3a2-a3a0ee9aac2e
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
 workflow-type: tm+mt
-source-wordcount: '1078'
-ht-degree: 100%
+source-wordcount: '1071'
+ht-degree: 97%
 
 ---
 
 # Referenz – Grundfunktionen
 
-Mit dem Generator für berechnete Metriken können Sie statistische und mathematische Funktionen anwenden, um erweiterte berechnete Metriken zu erstellen.
+
+Mit dem [Generator für berechnete Metriken](cm-workflow/cm-build-metrics.md) können Sie statistische und mathematische Funktionen anwenden.
 
 Im Folgenden werden die Funktionen und ihre Definitionen alphabetisch aufgelistet.
 
@@ -21,9 +22,12 @@ Im Folgenden werden die Funktionen und ihre Definitionen alphabetisch aufgeliste
 >
 >Wenn [!DNL metric] als Argument in einer Funktion angegeben ist, sind auch andere Ausdrücke von Metriken zulässig. Beispiel: [!DNL MAXV(metrics)] ermöglicht auch [!DNL MAXV(PageViews + Visits).]
 
+
 ## Vergleich zwischen Tabellenfunktionen und Zeilenfunktionen
 
 Bei einer Tabellenfunktion ist die Ausgabe für jede Tabellenzeile gleich. Bei einer Zeilenfunktion ist die Ausgabe für jede Tabellenzeile unterschiedlich.
+
+
 
 ## Absolutwert (Zeile)
 
@@ -101,9 +105,9 @@ EXP(metric)
 
 Potenzierungsoperator
 
-<pre>
-pow(x,y) = x<sup>y</sup> = x*x*x*… (y-mal)
-</pre>
+
+pow(x,y) = x<sup>y</sup> = x *x* x*... (y-mal)
+
 
 ## Arithmetisches Mittel (Tabelle)
 
@@ -313,7 +317,7 @@ Zur Berechnung einer Varianz sehen Sie sich eine gesamte Spalte von Zahlen an. A
 
 Sobald Sie die gesamte Spalte durchlaufen haben, haben Sie ein einziges Gesamtergebnis. Teilen Sie dann dieses Gesamtergebnis durch die Anzahl der Elemente in der Spalte. Die resultierende Zahl ist die Varianz für die Spalte. Es handelt sich dabei um eine einzige Zahl. Allerdings wird der Wert in Form einer Spalte mit Zahlen angezeigt.
 
-Beispiel: Sie haben eine Spalte mit drei Elementen:
+Bei einer Spalte mit drei Elementen:
 
 1
 

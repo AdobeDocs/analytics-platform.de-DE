@@ -3,23 +3,20 @@ description: Beschreibt, wie eine berechnete Metrik im Manager für berechnete M
 title: Kopieren von berechneten Metriken
 feature: Calculated Metrics
 exl-id: b1cc1171-aebf-4b97-99db-9bbcef5ea9d7
-source-git-commit: b0ddfbb4d018e6d563bef639a31f31e09700fbc2
+source-git-commit: 1907d94a0f53ee65a3839d879da6c06092f75e0f
 workflow-type: tm+mt
-source-wordcount: '96'
+source-wordcount: '100'
 ht-degree: 6%
 
 ---
 
 # Kopieren von berechneten Metriken
 
-Beim Erstellen einer neuen berechneten Metrik ist es manchmal einfacher, eine vorhandene berechnete Metrik zu kopieren, die der berechneten Metrik, die Sie erstellen möchten, nahe ist, und dann die kopierte Version zu ändern.
+Bei der Erstellung einer neuen berechneten Metrik müssen Sie nicht von Grund auf neu beginnen. Sie können eine vorhandene berechnete Metrik kopieren, die bereits eine geeignete Definition für den Anfang enthält, und dann die kopierte Version ändern.
 
-So kopieren Sie eine berechnete Metrik in den Manager für berechnete Metriken:
+So kopieren Sie eine berechnete Metrik in den Manager [für berechnete Metriken](cm-manager.md):
 
-1. Wählen Sie unter Customer Journey Analytics die Registerkarte **[!UICONTROL Komponenten]** und dann **[!UICONTROL Berechnete Metriken]** aus.
+1. Wählen Sie im Manager für berechnete Metriken ](cm-manager.md) mindestens eine der berechneten Metriken aus, die Sie kopieren möchten.[
+1. Wählen Sie in der Aktionsleiste ![Kopieren](/help/assets/icons/Copy.svg) **[!UICONTROL Kopieren]** aus.
 
-1. Wählen Sie im Manager für berechnete Metriken die berechnete Metrik aus, die Sie kopieren möchten.
-
-   Die Werkzeugleiste für die Verwaltung berechneter Metriken wird angezeigt.
-
-1. Wählen Sie **[!UICONTROL Kopieren]** aus.
+Die neuen berechneten Metriken werden mit demselben Namen und Suffix `(Copy)` erstellt.

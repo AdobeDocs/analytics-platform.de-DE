@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie mithilfe der Datenvorbereitung Report Suites 
 exl-id: 2656cc21-3980-4654-bffb-b10908cb21f5
 feature: Use Cases
 role: User
-source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
+source-git-commit: 664576605b8be098a751609536e388c304c65513
 workflow-type: tm+mt
-source-wordcount: '1322'
-ht-degree: 57%
+source-wordcount: '1321'
+ht-degree: 55%
 
 ---
 
@@ -26,7 +26,7 @@ Angenommen, Ihr Unternehmen möchte Daten aus zwei verschiedenen Report Suites z
 | eVar1 = Suchbegriff | eVar1 = Geschäftseinheit |
 | eVar2 = Kundenkategorie | eVar2 = Suchbegriff |
 
-Sagen wir aus Gründen der Einfachheit, dass dies die einzigen definierten eVars für beide Report Suites sind.
+Der Einfachheit halber sollten Sie davon ausgehen, dass dies die einzigen definierten eVars für beide Report Suites sind.
 
 Angenommen, Sie führen nun die folgenden Aktionen durch:
 
