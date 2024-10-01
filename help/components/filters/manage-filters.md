@@ -4,7 +4,7 @@ description: Erfahren Sie, wie Sie Filter in Customer Journey Analytics verwalte
 exl-id: b8869560-0cf1-4e5d-a03c-dfca85d05e66
 feature: Filters
 role: User
-source-git-commit: e07197325e992cd85b852899c2f7cef60637f532
+source-git-commit: 97b831d7eee477ee7ef0bf8ae65e6a415d243464
 workflow-type: tm+mt
 source-wordcount: '884'
 ht-degree: 4%
@@ -37,7 +37,7 @@ In der Filterliste werden alle Filter angezeigt, die Ihnen gehören, die für al
 | Spalte | Beschreibung |
 | --- | --- | 
 | ![StarOutline](/help/assets/icons/StarOutline.svg) | Wählen Sie diese Option aus, um einen Filter für ![Star](/help/assets/icons/Star.svg) oder für ![StarOutline](/help/assets/icons/StarOutline.svg) zu bevorzugen. Siehe [Filter als Favoriten markieren](/help/components/filters/filters-favorite.md) |
-| **[!UICONTROL Titel und Beschreibung]** | Um den Filter zu bearbeiten, wählen Sie den Titel-Link aus, der den [Filter-Builder](filter-builder.md) öffnet. Ein freigegebener Filter wird mit ![Freigabe](/help/assets/icons/ShareLight.svg) angegeben. |
+| **[!UICONTROL Titel und Beschreibung]** | Um den Filter zu bearbeiten, wählen Sie den Titel-Link aus, der den [Filter-Builder](filter-builder.md) öffnet. Ein freigegebener Filter wird mit ![Freigabe](/help/assets/icons/ShareAlt.svg) angegeben. |
 | **[!UICONTROL Datenansicht]** | Die Datenansichten, für die dieser Filter gilt. |
 | **[!UICONTROL Inhabende]** | Der Eigentümer des Filters. Als Benutzer sehen Sie nur die Filter, deren Inhaber Sie sind, oder die Anmerkungen, die für Sie freigegeben wurden. |
 | **[!UICONTROL Tags]** | Die Tags für diesen Filter. |
@@ -59,7 +59,7 @@ Mithilfe der Aktionsleiste können Sie Filter bearbeiten. Die Aktionsleiste enth
 | ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Add]** | Fügen Sie mit dem [Filter-Builder](filter-builder.md) einen weiteren Filter hinzu. |
 | ![Suche](/help/assets/icons/Search.svg) [!UICONTROL *Suche nach Titel*] | Wenn in der Liste kein Filter ausgewählt ist, suchen Sie mithilfe dieses Suchfelds nach Filtern. |
 | ![Beschriftung](/help/assets/icons/Label.svg) **[!UICONTROL Tag]** | Markieren Sie die ausgewählten Filter. Wählen Sie im Dialogfeld **[!UICONTROL Tag-Filter]** die Tags für die ausgewählten Filter aus oder deaktivieren Sie sie. Wählen Sie **[!UICONTROL Speichern]** aus, um die Tags für die ausgewählten Filter zu speichern. Weitere Informationen finden Sie unter [Filter taggen](/help/components/filters/filters-tag.md) . |
-| ![share](/help/assets/icons/ShareLight.svg) **[!UICONTROL share]** | Geben Sie die ausgewählten Filter frei. Im Dialogfeld **[!UICONTROL Filter freigeben]** können Sie ![Search](/help/assets/icons/Search.svg) *Search Individues or groups* auswählen oder Sie können **[!UICONTROL Organisation]** oder **[!UICONTROL Gruppen]** auswählen. Wählen Sie **[!UICONTROL Speichern]** aus, um Freigabedetails für die ausgewählten Filter zu speichern. Weitere Informationen finden Sie unter [Filter freigeben](filters-share.md) . |
+| ![share](/help/assets/icons/ShareAlt.svg) **[!UICONTROL share]** | Geben Sie die ausgewählten Filter frei. Im Dialogfeld **[!UICONTROL Filter freigeben]** können Sie ![Search](/help/assets/icons/Search.svg) *Search Individues or groups* auswählen oder Sie können **[!UICONTROL Organisation]** oder **[!UICONTROL Gruppen]** auswählen. Wählen Sie **[!UICONTROL Speichern]** aus, um Freigabedetails für die ausgewählten Filter zu speichern. Weitere Informationen finden Sie unter [Filter freigeben](filters-share.md) . |
 | ![Löschen](/help/assets/icons/Delete.svg) **[!UICONTROL Löschen]** | Löschen Sie die ausgewählten Filter. Sie werden zur Bestätigung aufgefordert. |
 | ![Bearbeiten](/help/assets/icons/Edit.svg) **[!UICONTROL Umbenennen]** | Benennen Sie einen einzelnen ausgewählten Filter um. Wenn diese Option aktiviert ist, können Sie den Filter inline umbenennen. |
 | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) **[!UICONTROL Approve]** | Genehmigen Sie die ausgewählten Filter. Weitere Informationen finden Sie unter [Filter genehmigen](filters-approve.md) . |
