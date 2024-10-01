@@ -3,7 +3,7 @@ title: Produktnutzung - Übersicht
 description: Zeigen Sie Einblicke und Berichte dazu an, wie Ihr Unternehmen Customer Journey Analytics verwendet.
 hide: true
 hidefromtoc: true
-source-git-commit: 5c18fd78a71ddffef62dc3ac69f1abc3b42bddda
+source-git-commit: 8f2a340f59d8cdf97a5309ec20dc36f49b8f1129
 workflow-type: tm+mt
 source-wordcount: '373'
 ht-degree: 6%
@@ -11,6 +11,8 @@ ht-degree: 6%
 ---
 
 # Produktnutzung - Übersicht
+
+{{release-limited-testing}}
 
 Die Produktnutzung bietet Ihrem Unternehmen die Möglichkeit, Analysedaten zur Verwendung von Customer Journey Analytics anzuzeigen. Es ist für alle Unternehmen verfügbar, die Customer Journey Analytics verwenden. Nach der Aktivierung werden die folgenden Adobe Experience Platform-Komponenten automatisch erstellt und für Sie bereitgestellt:
 

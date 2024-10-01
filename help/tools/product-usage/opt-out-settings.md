@@ -3,16 +3,18 @@ title: Opt-out-Einstellungen für die Produktnutzung
 description: Verwalten Sie Opt-out-Einstellungen für einzelne Benutzer in Ihrer Organisation.
 hide: true
 hidefromtoc: true
-source-git-commit: 5c18fd78a71ddffef62dc3ac69f1abc3b42bddda
+source-git-commit: 8f2a340f59d8cdf97a5309ec20dc36f49b8f1129
 workflow-type: tm+mt
-source-wordcount: '206'
+source-wordcount: '213'
 ht-degree: 0%
 
 ---
 
 # Opt-out-Einstellungen für die Produktnutzung {#product-usage-opt-out-settings}
 
-Auf der Seite _Opt-out-Einstellungen_ können Sie Benutzer in Ihrer Organisation vom Tracking der Produktnutzung ausschließen oder erneut einbeziehen.
+{{release-limited-testing}}
+
+Auf der Seite _Opt-out-Einstellungen_ können Sie Benutzer in Ihrer Organisation vom Tracking der Produktnutzung ausschließen oder erneut einbeziehen. Sie ist nur für Produktadministratoren sichtbar.
 
 **Customer Journey Analytics** > **[!UICONTROL Tools]** > **[!UICONTROL Produktnutzung]** > **[!UICONTROL Opt-out-Einstellungen]**
 
