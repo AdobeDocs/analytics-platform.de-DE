@@ -5,14 +5,24 @@ exl-id: 52f9abf6-69f1-47d0-86ab-57123bc178d5
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: a236b2126c4b998b4d97caab014556e3ee3a9e83
 workflow-type: tm+mt
-source-wordcount: '193'
+source-wordcount: '208'
 ht-degree: 100%
 
 ---
 
-# Komponenteneinstellungen für [!UICONTROL Wert-Bucketing]
+# Komponenteneinstellungen für [!UICONTROL Wert-Bucketing] {#value-bucketing-component-settings}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_dataview_component_dimension_valuebucketing"
+>title="Wert-Bucketing"
+>abstract="Fassen Sie Werte zu spezifischen Bereichen zusammen. Diese Bereiche werden in Berichten als Dimensionseinträge angezeigt."
+
+<!-- markdownlint-enable MD034 -->
+
 
 Beim Erstellen oder Bearbeiten einer Datenansicht können Sie mit Wert-Bucketing numerische Werte basierend auf einem Bereich kombinieren. Sie ist nur für Dimensionen verfügbar, die Schemadatentypen vom Typ „Ganzzahl“ oder „Doppelt“ verwenden.
 

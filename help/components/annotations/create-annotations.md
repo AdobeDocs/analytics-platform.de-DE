@@ -4,47 +4,90 @@ description: Erstellen von Anmerkungen in Workspace.
 feature: Components
 exl-id: 68fef9b3-dc47-4e56-bea6-d1c4c39fb51b
 role: User, Admin
-source-git-commit: e1815cad331b47b281f61d427ef342ea3b5b5d87
+source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
 workflow-type: tm+mt
-source-wordcount: '701'
-ht-degree: 100%
+source-wordcount: '872'
+ht-degree: 17%
 
 ---
 
 # Erstellen von Anmerkungen
 
-Standardmäßig können nur Admins Anmerkungen erstellen. Benutzende haben die Berechtigung, Anmerkungen anzuzeigen, wie dies bei anderen Analytics-Komponenten der Fall ist (z. B. Filter und berechnete Metriken).
+Standardmäßig können nur Administratoren Anmerkungen erstellen. Benutzer haben Berechtigungen zum Anzeigen von Anmerkungen, ähnlich wie beim Anzeigen anderer Komponenten durch Benutzer (z. B. Filter, berechnete Metriken usw.).
 
-Admins können jedoch über die [Adobe Admin Console](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/analytics-tools.html?lang=de) Benutzenden die Berechtigung zur [!UICONTROL Erstellung von Anmerkungen] (Analytics-Tools) erteilen.
+Administratoren können Benutzern über die Admin Console jedoch die Berechtigung **[!UICONTROL Anmerkungserstellung]** für die **[!UICONTROL Berichterstellungs-Tools]** in den **[!UICONTROL Berechtigungen zum Bearbeiten des CJA Workspace-Zugriffs]** erteilen. Weitere Informationen finden Sie unter [Zugriffskontrolle auf Benutzerebene](/help/technotes/access-control.md#user-level-access) .
 
-1. Um Anmerkungen zu erstellen, haben Sie verschiedene Möglichkeiten zur Verfügung:
+Sie können Anmerkungen wie folgt erstellen:
 
-| Erstellungsmethode | Details |
-| --- | --- |
-| **Navigieren Sie zu [!UICONTROL Komponenten] > [!UICONTROL Anmerkung].** | Die Seite „Anmerkungsverwaltung“ wird geöffnet. Klicken Sie auf [!UICONTROL Neue Anmerkung erstellen], und der [!UICONTROL Anmerkungsgenerator] wird geöffnet. |
-| **Klicken Sie mit der rechten Maustaste auf einen Punkt auf einer Tabelle.** | [!UICONTROL Der Anmerkungsgenerator] wird geöffnet. Beachten Sie, dass die auf diese Weise erstellten Anmerkungen standardmäßig nur in dem Projekt sichtbar sind, in dem sie erstellt wurden. Sie können sie aber für alle Projekte verfügbar machen. Beachten Sie, dass das Datum und ggf. Metriken usw. bereits ausgefüllt sind.<p>![](assets/annotate-table.png) |
-| **Klicken Sie mit der rechten Maustaste auf einen Punkt in einem [!UICONTROL Linien] diagramm.** | Der [!UICONTROL Anmerkungsgenerator] wird geöffnet. Beachten Sie, dass die auf diese Weise erstellten Anmerkungen standardmäßig nur in dem Projekt sichtbar sind, in dem sie erstellt wurden. Sie können sie aber für alle Projekte verfügbar machen. Beachten Sie, dass das Datum und ggf. Metriken usw. bereits ausgefüllt sind.<p>![](assets/annotate-line.png) |
-| **Wechseln Sie in Workspace zu [!UICONTROL Komponenten] > [!UICONTROL Anmerkung erstellen].** | Der [!UICONTROL Anmerkungsgenerator] wird geöffnet. |
-| **Verwenden Sie dieses Tastenkürzel**, um den Anmerkungsgenerator zu öffnen: (PC) `ctrl` `shift` + o, (Mac) `shift` + `command` + o | Beachten Sie, dass Sie durch Verwendung des Tastenkürzels zur Erstellung einer Anmerkung eine eintägige Anmerkung für das aktuelle Datum ohne einen vorab ausgewählten Bereich (Kennzahlen oder Dimensionen) erstellen. |
-| **Verwenden Sie die [Anmerkungs-API in Customer Journey Analytics](https://developer.adobe.com/cja-apis/docs/endpoints/annotations/)** | Mit den Anmerkungs-APIs in Customer Journey Analytics können Sie Anmerkungen programmgesteuert über Adobe Developer erstellen, aktualisieren oder abrufen. Diese APIs verwenden dieselben Daten und Methoden, die Adobe innerhalb der Produkt-Benutzeroberfläche verwendet. |
+![Erstellen einer Anmerkung](assets/create-annotation.png)
 
-{style="table-layout:auto"}
+* ?? Wählen Sie in der Hauptbenutzeroberfläche **[!UICONTROL Komponenten]** und dann **[!UICONTROL Anmerkungen]** aus. Wählen Sie ![AddCircle](/help/assets/icons/AddCircle.svg) [!UICONTROL **[!UICONTROL Add]**] aus dem Manager [[!UICONTROL Annotations]](/help/components/annotations/manage-annotations.md).
+* ?? Wählen Sie in einem Workspace-Projekt im Kontextmenü einer Visualisierung **[!UICONTROL Anmerkung aus Auswahl erstellen]** aus.
+* ?? Wählen Sie in einem Workspace-Projekt im Kontextmenü eines Liniendiagramms die Option **[!UICONTROL Auswahl kommentieren]**.
+* ??Wählen Sie in einem Workspace-Projekt **[!UICONTROL Komponenten]** aus dem Menü und dann **[!UICONTROL Anmerkung erstellen]**.
+* ?? Verwenden Sie in einem Workspace-Projekt die Tastenkombination **[!UICONTROL Strg+Umschalt+o]** (Windows) oder **[!UICONTROL Umschalt+Befehl+o]** (macOS).
 
-1. Füllen Sie die Elemente des [!UICONTROL Anmerkungsgenerators] aus.
+Um die Anmerkung zu definieren, verwenden Sie den [[!UICONTROL Anmerkungs-Builder]](#annotation-builder):
 
-   ![Fenster „Anmerkungsdetails“ mit Feldern und Optionen, die im nächsten Abschnitt beschrieben werden.](assets/ann-builder.png)
+<!-- Should we really mention API here. If so, we can do it all over the place in the docs...
+| **Use the [Customer Journey Analytics Annotations API](https://developer.adobe.com/cja-apis/docs/endpoints/annotations/)** | The Customer Journey Analytics Annotations APIs allow you to create, update, or retrieve annotations programmatically through Adobe Developer. These APIs use the same data and methods that Adobe uses inside the product UI. |
+-->
+
+
+## Anmerkungsaufbau {#annotation-builder}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_components_annotations_details"
+>title="Anmerkungsdetails"
+>abstract="Mit Anmerkungen können Sie Ihrer Organisation kontextbezogene Datennuancen und Einblicke effektiv übermitteln. Damit können Sie Kalenderereignisse mit bestimmten Dimensionen/Metriken verknüpfen."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_components_annotations_scope"
+>title="Anwendungsbereich"
+>abstract="Mit Umfang können Sie anpassen, welche Daten kommentiert werden. Berechnete Metriken und Segmente übernehmen keine automatisch angewendeten Anmerkungen, die auf Komponenten angewendet werden, die in ihren Definitionen verwendet werden. Sie können neue berechnete Metriken zum Bereich des Umfangs einer vorhandenen Anmerkung hinzufügen. Neue Segmente erfordern eine neue Anmerkung."
+
+<!-- markdownlint-enable MD034 -->
+
+
+Das Dialogfeld **[!UICONTROL Anmerkungs-Builder]** wird zum Erstellen neuer oder Bearbeiten vorhandener Anmerkungen verwendet. Das Dialogfeld trägt den Titel **[!UICONTROL Neue Anmerkung]** oder **[!UICONTROL Anmerkung bearbeiten]** für Anmerkungen, die Sie über den Manager [[!UICONTROL Anmerkungen] erstellen oder verwalten.](/help/components/annotations/manage-annotations.md)
+
+
+>[!BEGINTABS]
+
+>[!TAB Anmerkungs-Builder]
+
+![Fenster „Anmerkungsdetails“ mit Feldern und Optionen, die im nächsten Abschnitt beschrieben werden.](assets/annotation-builder.png)
+
+>[!TAB Anmerkung erstellen/bearbeiten]
+
+![Fenster „Anmerkungsdetails“ mit Feldern und Optionen, die im nächsten Abschnitt beschrieben werden.](assets/create-edit-annotation.png)
+
+>[!ENDTABS]
+
+1. Geben Sie die folgenden Details an (![Erforderlich](/help/assets/icons/Required.svg) ist erforderlich):
 
    | Element | Beschreibung |
    | --- | --- |
-   | [!UICONTROL Titel] | Benennen Sie die Anmerkung, z. B. „Gedenktag“ |
-   | [!UICONTROL Beschreibung] | (Optional) Geben Sie eine Beschreibung für die Anmerkung ein, z. B. „Feiertage in den USA“. |
-   | [!UICONTROL Tags] | (Optional) Organisieren Sie Anmerkungen, indem Sie ein Tag erstellen oder anwenden. |
-   | [!UICONTROL Anwendungsdatum] | Wählen Sie das Datum oder den Datumsbereich aus, das bzw. der vorhanden sein muss, damit die Anmerkung sichtbar ist. |
-   | [!UICONTROL Farbe] | Wenden Sie eine Farbe auf die Anmerkung an. Die Anmerkung wird im Projekt mit der ausgewählten Farbe angezeigt. Mit Farben können Sie Anmerkungen kategorisieren, z. B. Feiertage, externe Ereignisse, Tracking-Probleme usw. |
-   | [!UICONTROL Anwendungsbereich] | (Optional) Ziehen Sie die Metriken, von denen die Anmerkung ausgelöst werden soll, per Drag-and-Drop in das entsprechende Feld. Ziehen Sie dann alle Dimensionen oder Filter, die als Filter fungieren (d. h. bei deren Anwendung die Anmerkung sichtbar bleiben soll) per Drag-and-Drop in das Feld. Wenn Sie keinen Bereich angeben, gilt die Anmerkung für alle Ihre Daten.<ul><li>**[!UICONTROL Eine dieser Metriken ist vorhanden]**: Ziehen Sie per Drag-and-Drop bis zu 10 Metriken in das Feld, die jeweils auslösen sollen, dass die Anmerkung angezeigt wird.</li><li>**[!UICONTROL Mit allen diesen Filtern]**: Ziehen Sie bis zu 10 Dimensionen oder Filter per Drag-and-Drop in dieses Feld, nach denen gefiltert werden soll, wenn die Anmerkung angezeigt wird.</li></ul><p>Anwendungsbeispiele: Eine eVar hat die Erfassung von Daten für einen bestimmten Datumsbereich eingestellt. Ziehen Sie die eVar in das Dialogfeld **[!UICONTROL Eine dieser Metriken ist vorhanden]**. Oder die Metrik [!UICONTROL Besuche] meldet keine Daten – folgen Sie demselben Prozess.<p>**Hinweis:** Bei Anmerkungen, die auf eine Komponente angewendet werden, die dann als Teil einer berechneten Metrik oder Filterdefinition verwendet wird, wird die Anmerkung NICHT automatisch übernommen. Die gewünschte berechnete Kennzahl muss auch dem Abschnitt „Umfang“ hinzugefügt werden, damit die Anmerkung angezeigt wird. Für jeden Filter, den Sie mit denselben Informationen versehen möchten, sollte jedoch eine neue Anmerkung erstellt werden.<p>Beispiel: Sie wenden eine Anmerkung auf [!UICONTROL Bestellungen] an einem bestimmten Tag an. Anschließend verwenden Sie [!UICONTROL Bestellungen] in einer berechneten Metrik für denselben Datumsbereich. Die neue berechnete Metrik zeigt die Anmerkung für Bestellungen nicht automatisch an. Die berechnete Metrik muss auch zum Bereich für den Umfang hinzugefügt werden, damit die Anmerkung angezeigt wird. |
-   | [!UICONTROL Auf alle Datenansichten anwenden] | Standardmäßig gilt die Anmerkung für die ursprüngliche Datenansicht. Wenn Sie dieses Kontrollkästchen aktivieren, können Sie die Anmerkung für alle Datenansichten im Unternehmen gelten lassen. |
-   | [!UICONTROL Auf alle Projekte anwenden] | Standardmäßig gilt die Anmerkung für das aktuelle Projekt. Wenn Sie dieses Kontrollkästchen aktivieren, können Sie die Anmerkung auf alle Projekte anwenden, deren Inhaber Sie sind. Beachten Sie, dass dieses Kontrollkästchen nur angezeigt wird, wenn Sie den Anmerkungsgenerator aus dem Anmerkungsgenerator starten? |
+   | **[!UICONTROL Datenansicht]** | Sie können die Datenansicht für die Anmerkung auswählen. Die von Ihnen definierte Anmerkung ist in den Workspace-Projekten auf der Grundlage der ausgewählten Datenansicht als Anmerkung verfügbar. Diese Auswahl wird überschrieben, wenn Sie [!UICONTROL Auf alle Datenansichten anwenden] aktiviert haben. |
+   | **[!UICONTROL Projektspezifische Anmerkungen]** | Ein Informationsfeld, mit dem erklärt wird, dass die von Ihnen erstellte Anmerkung nur im Workspace-Projekt sichtbar ist, an dem Sie arbeiten. Aktivieren Sie **[!UICONTROL Diese Anmerkung für alle Projekte verfügbar machen]** , um die Anmerkung für alle Projekte sichtbar zu machen. Dieses Informationsfeld ist nur sichtbar, wenn Sie eine Anmerkung in einem Workspace-Projekt erstellen. |
+   | **[!UICONTROL Titel]** ![Erforderlich](/help/assets/icons/Required.svg) | Nennen Sie die Anmerkung, z. B. `Needs further investigation`. |
+   | **[!UICONTROL Beschreibung]** | Geben Sie eine Beschreibung für die Anmerkung ein, z. B. `We never expected such a fluctuation in numbers.`. |
+   | **[!UICONTROL Tags]** | Organisieren Sie die Anmerkung, indem Sie ein oder mehrere Tags erstellen oder anwenden. Beginnen Sie mit der Eingabe, um vorhandene Tags zu finden, die Sie auswählen können. Oder drücken Sie die **[!UICONTROL Eingabetaste]** , um ein neues Tag hinzuzufügen. Wählen Sie ![CrossSize75](/help/assets/icons/CrossSize75.svg) aus, um ein Tag zu entfernen. |
+   | **[!UICONTROL Angewendetes Datum]** ![Erforderlich](/help/assets/icons/Required.svg) | Wählen Sie das Datum oder den Datumsbereich aus, das bzw. der vorhanden sein muss, damit die Anmerkung sichtbar ist. Wenn Sie eine Anmerkung mit der Verknüpfung erstellen, wird standardmäßig ein Datumsbereich für den Tag verwendet. Wenn Sie eine Anmerkung mithilfe einer Auswahl in einer Visualisierung erstellen, wird standardmäßig der Datumsbereich der Anmerkung basierend auf dem Bereich verwendet, zu dem die Visualisierung gehört. |
+   | **[!UICONTROL Farbe]** | Wenden Sie eine Farbe auf die Anmerkung an. Die Anmerkung wird im Projekt mit der ausgewählten Farbe angezeigt. Mit Farben können Sie Anmerkungen kategorisieren, z. B. Feiertage, externe Ereignisse, Tracking-Probleme usw. |
+   | **[!UICONTROL Anwendungsbereich]** | Ziehen Sie Metriken per Drag-and-Drop aus dem Komponentenbereich, in dem die Anmerkung Trigger wird. Zum Beispiel Personen, Sitzungen und Ereignisse. Ziehen Sie dann beliebige Dimensionen oder Filter aus dem Komponentenbereich, die als Filter fungieren, um zu bestimmen, ob die Anmerkung angezeigt werden soll oder nicht. Wenn Sie keinen Bereich angeben, gilt die Anmerkung für alle Ihre Daten. <br/>Sie haben zwei Optionen:<ul><li>**[!UICONTROL Jede dieser Metriken ist vorhanden]**: Ziehen Sie per Drag-and-Drop bis zu 10 Metriken in den Trigger der anzuzeigenden Anmerkung.<br/>Beispielsweise hat die Umsatzmetrik die Erfassung von Daten für einen bestimmten Datumsbereich beendet. Ziehen Sie die Metrik Umsatz in dieses Feld.</li><li>**[!UICONTROL Mit all diesen Filtern]**: Ziehen Sie bis zu 10 Dimensionen oder Filter in den Arbeitsbereich, um zu filtern, ob die Anmerkung angezeigt wird.</li></ul><p><p>**Hinweis:** Jede Anmerkung, die auf eine Komponente angewendet wird, die anschließend als Teil einer berechneten Metrik oder Filterdefinition verwendet wird, übernimmt die Anmerkung NICHT automatisch. Die gewünschte berechnete Kennzahl muss auch dem Abschnitt „Umfang“ hinzugefügt werden, damit die Anmerkung angezeigt wird. Für jeden Filter, den Sie mit denselben Informationen kommentieren möchten, sollte jedoch eine neue Anmerkung erstellt werden. Sie wenden beispielsweise eine Anmerkung auf [!UICONTROL Bestellungen] an einem bestimmten Tag an. Anschließend verwenden Sie [!UICONTROL Bestellungen] in einer berechneten Metrik für denselben Datumsbereich. Die neue berechnete Metrik zeigt die Anmerkung für Bestellungen nicht automatisch an. Fügen Sie außerdem die berechnete Metrik zum Bereich hinzu, damit die Anmerkung angezeigt wird. |
+   | **[!UICONTROL Auf alle Datenansichten anwenden]** | Standardmäßig gilt die Anmerkung für die ursprüngliche Datenansicht. Wenn Sie dieses Kontrollkästchen aktivieren, können Sie die Anmerkung für alle Datenansichten im Unternehmen gelten lassen. |
 
    {style="table-layout:auto"}
 
-1. Klicken Sie auf **[!UICONTROL Speichern]**.
+1. Auswählen
+   * **[!UICONTROL Speichern]** zum Speichern der Anmerkung.
+   * **[!UICONTROL Speichern unter]** , um eine Kopie der Anmerkung zu speichern.
+   * **[!UICONTROL Löschen]** , um eine Anmerkung zu löschen.
+   * **[!UICONTROL Abbrechen]** , um alle Änderungen abzubrechen, die Sie an einer Anmerkung vorgenommen haben, oder um die Erstellung einer neuen Anmerkung abzubrechen.

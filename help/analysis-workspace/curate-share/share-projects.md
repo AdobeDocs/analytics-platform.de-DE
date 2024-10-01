@@ -5,14 +5,24 @@ title: Freigeben von Projekten
 feature: Curate and Share
 exl-id: ac4ed73a-e890-46cc-be08-4ccedf66b47d
 role: User
-source-git-commit: 19923592c8c50d93e150ba908f23313513d3450b
+source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
 workflow-type: tm+mt
-source-wordcount: '2040'
-ht-degree: 69%
+source-wordcount: '2047'
+ht-degree: 65%
 
 ---
 
-# Freigeben von Projekten
+# Freigeben von Projekten {#share-projects}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_workspace_shareprojects"
+>title="Freigeben von Projekten"
+>abstract="Sie können diese Projektrollen für andere Benutzer in Ihrer Organisation freigeben."
+
+<!-- markdownlint-enable MD034 -->
+
 
 Sie können ein Analysis Workspace-Projekt für die folgenden Personentypen freigeben:
 
@@ -30,10 +40,13 @@ Sie können ein Analysis Workspace-Projekt für die folgenden Personentypen frei
 
 Jede [Kuration](curate.md), die Sie vor der Freigabe vorgenommen haben, wird beim Öffnen des Projekts durch die Empfängerinnen bzw. Empfänger angezeigt.
 
-Im Folgenden finden Sie eine Videoübersicht zur gemeinsamen Nutzung von Projekten:
++++ Sehen Sie sich ein Video an, in dem gezeigt wird, wie die Projektfreigabe verwendet wird.
 
 >[!VIDEO](https://video.tv.adobe.com/v/36207/?quality=12)
 
+{{videoaa}}
+
++++
 
 ## Freigeben für Customer Journey Analytics-Benutzer und -Gruppen in Ihrer Organisation {#Add}
 
@@ -65,7 +78,7 @@ Beachten Sie beim Freigeben einer bestimmten Projektrolle für Benutzende und Gr
 
 So geben Sie eine bestimmte Projektrolle für Benutzende oder Gruppen in Ihrer Organisation frei:
 
-1. Wählen Sie unter Customer Journey Analytics die Registerkarte [!UICONTROL **Workspace**] und dann in der linken Leiste [!UICONTROL **Projekte**] aus.
+1. Wählen Sie unter Customer Journey Analytics die Registerkarte [!UICONTROL **Workspace**] und dann im linken Bereich [!UICONTROL **Projekte**] aus.
 
 1. Wählen Sie das Kontrollkästchen neben einem oder mehreren freizugebenden Projekten und dann [!UICONTROL **Freigeben**] aus.
 
@@ -82,9 +95,9 @@ Wenn es nicht gespeicherte Änderungen gibt, werden Sie aufgefordert, das Projek
 
    **Original bearbeiten**: Empfängerinnen und Empfänger können Änderungen an einem Projekt **[!UICONTROL speichern]** und als Co-Inhaberinnen bzw. Co-Inhaber auftreten. Diese Rolle ist nützlich, wenn Sie ein Projekt mit anderen Kollegen gemeinsam verwalten möchten. Dazu gehören das Bearbeiten, Löschen und Bearbeiten von Empfängerlisten für ein freigegebenes Projekt. <br>Hinweis: Analysis Workspace unterstützt derzeit keine Live-Zusammenarbeit. Es wird daher empfohlen, dass zu jedem Zeitpunkt nur ein Benutzer ein Projekt bearbeitet. Wenn Projekte zum gleichen Zeitpunkt gespeichert werden, wird die letzte Version beibehalten.
 
-   **Kopie bearbeiten:** Empfängerinnen und Empfänger können die Option **[!UICONTROL Speichern unter]** verwenden und auf die linke Leiste zugreifen. Projektinteraktionen sind in dieser Rolle nicht beschränkt. Diese Rolle ist nützlich, wenn Sie ein Projekt für Benutzende freigeben möchten, die mit der Datennutzung in Ihrem Unternehmen und der Verwendung von Analysis Workspace vertraut sind, Ihr Projekt jedoch nicht geändert werden soll.
+   **Kopie bearbeiten:** Empfänger können **[!UICONTROL Als]** speichern und auf den linken Bereich zugreifen. Projektinteraktionen sind in dieser Rolle nicht beschränkt. Diese Rolle ist nützlich, wenn Sie ein Projekt für Benutzende freigeben möchten, die mit der Datennutzung in Ihrem Unternehmen und der Verwendung von Analysis Workspace vertraut sind, Ihr Projekt jedoch nicht geändert werden soll.
 
-   **Schreibgeschützt:** Empfängerinnen und Empfänger können nicht **[!UICONTROL speichern]** oder die Option **[!UICONTROL Speichern unter]** verwenden und haben keinen Zugriff auf die linke Leiste. Auch die Projektinteraktionen sind begrenzt. Diese Rolle ist nützlich, wenn Sie ein Projekt für Benutzer freigeben möchten, die mit der Datenstruktur Ihres Unternehmens, Analysis Workspace oder Customer Journey Analytics im Allgemeinen weniger vertraut sind. Sie möchten jedoch, dass sie Daten und Erkenntnisse in einer sicheren Umgebung einsehen können. Erhalten Sie weitere Informationen zum [Erlebnis eines schreibgeschützten Projekts](/help/analysis-workspace/curate-share/view-only-projects.md).
+   **Schreibgeschützt:** Empfänger können **[!UICONTROL Speichern]** oder **[!UICONTROL Speichern unter]** nicht speichern und haben keinen Zugriff auf den linken Bereich. Auch die Projektinteraktionen sind begrenzt. Diese Rolle ist nützlich, wenn Sie ein Projekt für Benutzer freigeben möchten, die mit der Datenstruktur Ihres Unternehmens, Analysis Workspace oder Customer Journey Analytics im Allgemeinen weniger vertraut sind. Sie möchten jedoch, dass sie Daten und Erkenntnisse in einer sicheren Umgebung einsehen können. Erhalten Sie weitere Informationen zum [Erlebnis eines schreibgeschützten Projekts](/help/analysis-workspace/curate-share/view-only-projects.md).
 
 1. (Bedingt) Wenn Sie ein einzelnes Projekt freigeben, wählen Sie aus, ob beim Freigeben des Projekts die folgenden Optionen aktiviert werden sollen:
 
@@ -148,7 +161,7 @@ So geben Sie ein Analysis Workspace-Projekt für andere frei:
 
 1. Öffnen Sie das Analysis Workspace-Projekt, das Sie freigeben möchten.
 
-1. Klicken Sie auf **[!UICONTROL Freigeben]** > **[!UICONTROL Für alle freigeben]**.
+1. Wählen Sie **[!UICONTROL Freigabe]** > **[!UICONTROL Für jeden freigeben]** aus.
 
    Wenn es nicht gespeicherte Änderungen gibt, werden Sie aufgefordert, das Projekt zuerst zu speichern.
 
@@ -164,7 +177,7 @@ So geben Sie ein Analysis Workspace-Projekt für andere frei:
 
    * **[!UICONTROL Experience Cloud-Authentifizierung verlangen]:**
 
-     Wenn diese Option aktiviert ist, können nur Benutzer auf das Projekt zugreifen, die sich bei der Adobe Experience Cloud-Organisation anmelden können, in der das freigegebene Projekt erstellt wurde. Für Benutzende, für die Sie es freigeben, ist jedoch kein Zugriff auf Adobe Analytics erforderlich.
+     Wenn diese Option aktiviert ist, können nur Benutzer auf das Projekt zugreifen, die sich bei der Adobe Experience Cloud-Organisation anmelden können, in der das freigegebene Projekt erstellt wurde. Benutzer, für die Sie freigeben, benötigen jedoch keinen Zugriff auf Customer Journey Analytics.
 
      Customer Journey Analytics-Administratoren können diese Voreinstellung für das Unternehmen konfigurieren, wie unter [Voreinstellungen](/help/analysis-workspace/user-preferences.md) beschrieben. Je nachdem, wie die Admins diese Option konfiguriert haben, können die folgenden Szenarien auftreten:
 
@@ -172,13 +185,13 @@ So geben Sie ein Analysis Workspace-Projekt für andere frei:
 
       * Wenn diese Option aktiviert ist und Sie sie nicht deaktivieren können, erfordert Ihr Customer Journey Analytics-Administrator die Experience Cloud-Authentifizierung für alle Benutzer, die auf Analysis Workspace-Projekte zugreifen. Dies gilt immer für Organisationen, die Gesundheitsschild bestellen.
 
-1. Klicken Sie neben dem Feld &quot;**[!UICONTROL Für jedermann freigeben (keine Anmeldung erforderlich)&quot;]** auf das Symbol &quot;**Link kopieren**&quot;![Verknüpfungssymbol kopieren](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Link_18_N.svg)), um den Link in die Systemzwischenablage zu kopieren.
+1. Wählen Sie neben dem Feld &quot;**[!UICONTROL Mit niemandem teilen (keine Anmeldung erforderlich)]**&quot;die Option &quot;![Link](/help/assets/icons/Link.svg)&quot;, um den Link in die Systemzwischenablage zu kopieren.
 
 1. Teilen Sie den Link mit den Personen, die Zugriff auf das Projekt haben sollen. Sie können beispielsweise den Link in eine E-Mail einfügen.
 
    Alle Personen, mit denen Sie den Link teilen, können das Analysis Workspace-Projekt ansehen.
 
-1. (Optional) Sie können auf das Symbol **Neuen Link generieren** ![Symbol „Link generieren“](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Refresh_18_N.svg) klicken, um den Zugriff von Personen zu entfernen, die zuvor einen Link zum Projekt erhalten haben. Es wird ein neuer Link generiert, den Sie für Benutzende freigeben können, die auf das Projekt zugreifen können sollen.
+1. (Optional) Sie können ![Neues Link-Symbol erzeugen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Refresh_18_N.svg) auswählen, um den Zugriff von Benutzern zu entfernen, die zuvor einen Link zum Projekt erhalten haben. Es wird ein neuer Link generiert, den Sie für Benutzende freigeben können, die auf das Projekt zugreifen können sollen.
 
 1. Wählen Sie **[!UICONTROL Schließen]** aus, um das Dialogfeld „Freigeben“ zu schließen. Ihre Änderungen werden automatisch gespeichert.
 

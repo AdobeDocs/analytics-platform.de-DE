@@ -5,10 +5,10 @@ exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: f6b0088522a821a006d1c7fb4c55b4b2e11ff310
+source-git-commit: 747e77b964006404d70b500b28ec44005d65d944
 workflow-type: tm+mt
-source-wordcount: '1761'
-ht-degree: 100%
+source-wordcount: '1832'
+ht-degree: 96%
 
 ---
 
@@ -16,9 +16,11 @@ ht-degree: 100%
 
 Das Erstellen einer Datenansicht beinhaltet entweder das Erstellen von Metriken und Dimensionen aus Schemaelementen oder die Verwendung von Standardkomponenten. Die meisten Schemaelemente können je nach den Anforderungen Ihres Unternehmens entweder eine Dimension oder eine Metrik sein. Nachdem Sie ein Schemaelement in eine Datenansicht gezogen haben, werden rechts Optionen angezeigt, mit denen Sie anpassen können, wie die Dimension oder Metrik in Customer Journey Analytics funktioniert.
 
-Im Folgenden finden Sie ein Video zum Thema:
++++ Anzeigen eines Videos zur Veranschaulichung von Datenansichten unter Customer Journey Analytics
 
 >[!VIDEO](https://video.tv.adobe.com/v/35110/?quality=12&learn=on)
+
++++
 
 So erstellen oder bearbeiten Sie eine Datenansicht:
 
@@ -26,7 +28,17 @@ So erstellen oder bearbeiten Sie eine Datenansicht:
 1. Um eine Datenansicht zu erstellen, wählen Sie **[!UICONTROL Neue Datenansicht erstellen]** aus. Sie können auch eine vorhandene Datenansicht aus der Liste der Datenansichten auswählen und diese bearbeiten.
 
 
-## Konfigurieren
+## Konfigurieren {#configure}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_dataview_externalid"
+>title="Externe ID"
+>abstract="Das Ändern der externen ID kann sich darauf auswirken, wie der Name der Datenansicht in externen Quellen angezeigt wird, z. B. in Business-Intelligence-Tools."
+
+<!-- markdownlint-enable MD034 -->
+
 
 So konfigurieren Sie eine neue oder vorhandene Datenansicht:
 
@@ -50,9 +62,20 @@ Stellt übergreifende Einstellungen für die Datenansicht bereit.
 
 {style="table-layout:auto"}
 
-### Kompatibilität
+### Kompatibilität {#compatibility}
 
 {{release-limited-testing-section}}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_dataview_dataviewsinadobejourneyoptimizer"
+>title="Datenansichten in Journey Optimizer"
+>abstract="Journey Optimizer muss eine Datenansicht verwenden, die mit Customer Journey Analytics konfiguriert ist.<br/>Aktivieren Sie diese Option, um diese Option zur Standarddatenansicht zu machen, die in Adobe Journey Optimizer-Berichten verwendet wird."
+>additional-url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/integrations/ajo#connection" text="Welche Komponenten und Datensätze werden hinzugefügt?"
+
+<!-- markdownlint-enable MD034 -->
+
 
 Bietet Einstellungen, die angewendet werden können, wenn Adobe Journey Optimizer zusätzlich zu Customer Journey Analytics verwendet wird.
 

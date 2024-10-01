@@ -4,24 +4,42 @@ title: Über Fallout-Berichte und -Visualisierungen
 feature: Visualizations
 exl-id: c4338821-64ac-4345-828a-15af18a95ea6
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: b38e9052618f7326cd5ea22b6cda8b96624a3f84
 workflow-type: tm+mt
-source-wordcount: '228'
-ht-degree: 79%
+source-wordcount: '244'
+ht-degree: 46%
 
 ---
 
-# Fallout-Übersicht
+# Fallout-Übersicht {#fallout-overview}
 
-Fallout-Berichte zeigen an, wo Personen eine vordefinierte Seitensequenz verlassen (ausgefallen) und weitergemacht (durchgefallen) haben.
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_workspace_fallout_button"
+>title="Fallout"
+>abstract="Erstellt eine Visualisierung, um zu sehen, wie Personen erfolgreich zu den gewünschten Checkpoints übergehen."
+
+<!-- markdownlint-enable MD034 -->
+
+
+Eine Visualisierung vom Typ ![ConversionFunnel](/help/assets/icons/ConversionFunnel.svg) [!UICONTROL Fallout] zeigt, wo Personen eine vordefinierte Seitensequenz verlassen (ausfielen) und durchlaufen (durchgefallen) haben.
+
++++ Sehen Sie sich eine Videodemonstration der [!UICONTROL Fallout-Visualisierung] an.
+
+>[!VIDEO](https://video.tv.adobe.com/v/345883/?quality=12)
+
+{{videoaa}}
+
++++
 
 Fallout-Visualisierungen bieten mehr Optionen zum Erstellen Ihrer Fallout-Berichte. Mit Fallout-Visualisierungen können Sie:
 
 * Eine Gegenüberstellung zweier verschiedener Filter im gleichen Bericht vornehmen.
-* Trichterschritte (Touchpoints) ziehen, ablegen und neu anordnen.
-* Werte aus unterschiedlichen Dimensionen und Metriken mischen und kombinieren
-* Einen multidimensionalen Fallout-Bericht erstellen
-* Feststellen, wohin Kunden unmittelbar nach dem Ausstieg navigieren
+* Ziehen Sie Trichterschritte (Touchpoints) per Drag &amp; Drop (und ordnen Sie sie neu an).
+* Werte aus verschiedenen Dimensionen und Metriken mischen und abgleichen.
+* Erstellen Sie einen mehrdimensionalen Fallout-Bericht.
+* Ermitteln Sie, wohin Kunden unmittelbar nach dem Ausfallen navigieren.
 
 Die Fallout-Funktion zeigt Konversions- und Fallout-Raten zwischen den einzelnen Schritten oder Touchpoints in einer Sequenz an.
 
@@ -30,8 +48,12 @@ Sie können beispielsweise die Fallout-Punkte einer Person während eines Kaufpr
 Eine Fallout-Visualisierung ist zur Analyse der folgenden Punkte nützlich:
 
 * Konversionssätze durch bestimmte Abläufe auf Ihrer Site (wie z. B. ein Kauf- oder Registrierungsablauf).
-* Allgemeiner, breiter gefasster Trafficfluss: Dieser Fluss zeigt, wie viele Personen, die sich die Homepage ansahen, anschließend eine Suche durchführten und dann ein bestimmtes Element anzeigten.
+* Allgemeiner, breiter gefasster Traffic-Fluss: Dieser Fluss zeigt, wie viele Personen eine Suche durchgeführt haben. Und wie viele von ihnen sahen sich schließlich einen bestimmten Artikel an.
 * Korrelationen zwischen Ereignissen auf Ihrer Site. Korrelationen zeigen, welcher Prozentsatz von Personen, die die Datenschutzrichtlinien durchlasen, ein Produkt kauften.
 
-[Tutorial zur Fallout-Visualisierung](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/analyzing-customer-journeys/fallout-visualization.html?lang=de) (4:15)
+>[!MORELIKETHIS]
+>
+>[Fallout-Visualisierung konfigurieren](configuring-fallout.md)
+
+
 

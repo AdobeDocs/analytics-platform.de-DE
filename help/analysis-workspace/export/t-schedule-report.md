@@ -1,21 +1,21 @@
 ---
 description: Senden Sie ein Analysis Workspace-Projekt per E-Mail oder planen Sie die Bereitstellung.
 keywords: Analysis Workspace
-title: Customer Journey Analytics-Daten per E-Mail an andere senden
+title: Berichte per E-Mail an andere senden
 feature: Curate and Share
 mini-toc-levels: 3
 exl-id: 36b5133a-2cd3-4cf1-a6fa-93a02dba276a
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 388e008f4ee092dd8224bfacd020cdf762d4fb82
 workflow-type: tm+mt
-source-wordcount: '1018'
-ht-degree: 61%
+source-wordcount: '1034'
+ht-degree: 58%
 
 ---
 
-# Senden von Customer Journey Analytics-Daten an andere per E-Mail
+# Dateien an andere senden
 
-Sie können Customer Journey Analytics-Berichte exportieren, indem Sie sie per E-Mail an ausgewählte Empfänger senden. Sie können Dateien ad hoc versenden oder Dateien so konfigurieren, dass sie planmäßig gesendet werden. Dateien können im CSV- oder PDF-Format gesendet werden.
+Sie können Customer Journey Analytics-Berichte als Dateien per E-Mail an ausgewählte Benutzer senden. Sie können Dateien ad hoc versenden oder Dateien so konfigurieren, dass sie planmäßig gesendet werden. Dateien können im CSV- oder PDF-Format gesendet werden.
 
 Alle auf das Projekt angewendeten Tags werden automatisch auf den Export angewendet.
 
@@ -56,7 +56,7 @@ So senden Sie eine Datei nach einem wiederkehrenden Zeitplan per E-Mail an Empf�
 
 Geplante Analysis Workspace-Projekte können unter **[!UICONTROL Analytics] > [!UICONTROL Komponenten] > [!UICONTROL Geplante Projekte]** verwaltet werden.
 
-Im Manager für geplante Projekte können wiederkehrende Projektzeitpläne bearbeitet und gelöscht werden. Suchen Sie in der Suchleiste oder mithilfe der Filteroptionen in der linken Leiste nach einem Zeitplan. Sie können nach Tag, genehmigten Zeitplänen, Inhabern und mehr filtern.
+Im Manager für geplante Projekte können wiederkehrende Projektzeitpläne bearbeitet und gelöscht werden. Suchen Sie in der Suchleiste oder mithilfe der Filteroptionen im linken Bereich nach einem Zeitplan. Sie können nach Tag, genehmigten Zeitplänen, Inhabern und mehr filtern.
 
 | Feld | Beschreibung |
 | --- | --- |
@@ -78,14 +78,24 @@ Die folgenden Aktionen werden im Manager für geplante Projekte häufig ausgefü
 | **[!UICONTROL Zeitplan bearbeiten]** | Klicken Sie auf den Titel des Zeitplans, um seine Versandeinstellungen zu aktualisieren. |
 | **[!UICONTROL Zeitplan löschen]** | Wählen Sie das geplante Projekt in der Liste aus und klicken Sie dann im Menü auf „Löschen“. Dadurch wird der ausgewählte Zeitplan für das Projekt gelöscht. Das Projekt selbst wird nicht gelöscht. |
 | **[!UICONTROL Tags hinzufügen]** | Wählen Sie das geplante Projekt in der Liste aus und wählen Sie dann „Taggen“ oder „Genehmigen“ aus, um Ihre Zeitpläne zu organisieren und die Suche zu vereinfachen. |
-| **[!UICONTROL Fehlgeschlagene Zeitpläne anzeigen]** | Navigieren Sie zur linken Leiste > „Andere Filter“ > „Fehlgeschlagen“, um Zeitpläne anzuzeigen, die fehlgeschlagen sind. |
-| **[!UICONTROL Abgelaufene Zeitpläne anzeigen]** | Navigieren Sie zur linken Leiste > „Andere Filter“ > „Abgelaufen“, um Zeitpläne anzuzeigen, die abgelaufen sind. Klicken Sie auf den Titel des Zeitplans, um einen neuen Versandplan einzurichten. |
+| **[!UICONTROL Fehlgeschlagene Zeitpläne anzeigen]** | Navigieren Sie zum linken Bereich > Andere Filter > Fehlgeschlagen , um Zeitpläne anzuzeigen, die fehlgeschlagen sind. |
+| **[!UICONTROL Abgelaufene Zeitpläne anzeigen]** | Navigieren Sie zum linken Bereich > Andere Filter > Abgelaufen , um Zeitpläne anzuzeigen, die abgelaufen sind. Klicken Sie auf den Titel des Zeitplans, um einen neuen Versandplan einzurichten. |
 | **[!UICONTROL Zeitplan-ID anzeigen]** | Navigieren Sie oben rechts zu den Spaltenoptionen und fügen Sie der Tabelle die Spalte „Zeitplan-ID“ hinzu. Die Zeitplan-ID ist oft zum Debugging nützlich. |
 
 Im Manager für geplante Projekte werden die Elemente angezeigt, die von einem bestimmten Benutzer erstellt wurden. Wenn das Benutzerkonto in der Anwendung deaktiviert ist, werden alle geplanten Sendungen beendet.
 Weitere Informationen finden Sie unter [Geplante Projekte](/help/components/scheduled-projects-manager.md).
 
 ## Passwortschutz für ein geplantes Projekt {#password}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_workspace_sendfile_password"
+>title="Kennwortverschlüsselung"
+>abstract="Das angegebene Passwort wird verwendet, um die Datei für das geplante Projekt zu verschlüsseln. Die Sicherheitsanforderungen für Ihre Organisation erfordern eine Passwortverschlüsselung."
+
+<!-- markdownlint-enable MD034 -->
+
 
 >[!NOTE]
 >

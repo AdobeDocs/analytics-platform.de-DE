@@ -4,20 +4,37 @@ title: Datenwörterbuch – Überblick
 feature: Components
 role: User, Admin
 exl-id: 8e4b8169-7c7f-4a58-a6c6-70efb0c86ce8
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
 workflow-type: tm+mt
-source-wordcount: '536'
-ht-degree: 80%
+source-wordcount: '564'
+ht-degree: 69%
 
 ---
 
-# Datenwörterbuch – Überblick
+# Datenwörterbuch – Überblick {#data-dictionary-overview}
 
-Das Datenwörterbuch in Analysis Workspace hilft Benutzenden und Administrierenden, die Komponenten in ihrer Analytics-Umgebung zu verfolgen und besser zu verstehen.
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_component_datadictionary"
+>title="Datenwörterbuch"
+>abstract="Das Datenwörterbuch hilft Benutzern und Administratoren dabei, die Komponenten in ihrer Analytics-Umgebung zu verfolgen und besser zu verstehen. <br/>Analytics-Administratoren sind für das Kuratieren von Informationen zu den einzelnen Komponenten des Datenwörterbuchs für Benutzer verantwortlich."
+
+<!-- markdownlint-enable MD034 -->
+
+
+Das Datenwörterbuch in Analysis Workspace hilft Benutzenden und Admins, die Komponenten in ihrer Analytics-Umgebung zu verfolgen und besser zu verstehen.
 
 Analytics-Administratorinnen und -Administratoren sind dafür verantwortlich, Informationen über jede Komponenten im Datenwörterbuch zu kuratieren, um sie Benutzerinnen und Benutzern verfügbar zu machen.
 
+
++++ Anzeigen eines Videos zur Veranschaulichung des Datenwörterbuchs
+
 >[!VIDEO](https://video.tv.adobe.com/v/3418028/?quality=12&learn=on)
+
+{{videoaa}}
+
++++
 
 ## Vorteile für Benutzende
 
@@ -57,16 +74,14 @@ Im Folgenden finden Sie einige Möglichkeiten, wie Analytics-Administrierende da
 
 Sie können auf eine der folgenden Arten in Analysis Workspace auf das Datenwörterbuch zugreifen:
 
-* über das Symbol **Datenwörterbuch** in der linken Leiste.
+![Symbol &quot;Datenwörterbuch&quot;im linken Bereich](assets/data-dictionary-access.png)
 
-  ![Datenwörterbuchsymbol in der linken Leiste](assets/data-dictionary-access-icon.png)
+* Von ![Lesezeichen](/help/assets/icons/Bookmark.svg) im Schaltflächenbedienfeld.
 
-* über das Symbol **Datenwörterbuch** im Info-Pop-up einer Komponente.
 
-  ![Datenwörterbuchsymbol im Info-Pop-up](assets/data-dictionary-access-infopopover.png)
-  <!--update screenshot; this was taken from a mock-->
 
-* über das Menü: [!UICONTROL **Hilfe**] > [!UICONTROL **Datenwörterbuch**].
+* Von ![Lesezeichen](/help/assets/icons/Bookmark.svg) im Info-Popup einer Komponente.
+
 
 Detaillierte Informationen zu den verschiedenen verfügbaren Optionen im Datenwörterbuch finden Sie unter [Komponenteninformationen im Datenwörterbuch anzeigen](/help/components/data-dictionary/view-data-dictionary.md).
 

@@ -4,25 +4,44 @@ title: Venn
 feature: Visualizations
 exl-id: a0162164-a0cf-45b9-99b6-2a115e9a4e57
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
 workflow-type: tm+mt
-source-wordcount: '133'
-ht-degree: 79%
+source-wordcount: '136'
+ht-degree: 17%
 
 ---
 
-# Venn
+# Venn {#venn}
 
-Bei der Venn-Visualisierung können Sie bis zu drei Filter (aus Komponenten) und eine Metrik durch Drag-and-Drop einfügen, um ein Venn-Diagramm zu erstellen.
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_workspace_venn_button"
+>title="Venn"
+>abstract="Erstellt eine Visualisierung eines Venendiagramms, um visuell zwei Elemente und die Größe ihrer Überschneidung zu vergleichen."
+
+<!-- markdownlint-enable MD034 -->
+
+
+Mit der Visualisierung ![Typ](/help/assets/icons/TwoDots.svg) **[!UICONTROL Venn]** können Sie bis zu 3 Filter und eine Metrik (aus dem Komponentenbereich) hineinziehen, um ein Venn-Diagramm zu erstellen.
 
 ![Venn-Visualisierung, die drei Filter enthält.](assets/venn.png)
 
-Sie können dann den Mauszeiger über die Filter bewegen, um mehr Details z. B. zu Prozentzahlen anzuzeigen.
+Sie können den Mauszeiger über die Filter bewegen, um mehr Einblicke in Prozentsätze und mehr zu erhalten.
 
-![Venn-Visualisierung mit erweiterten Informationen über den Filter für Herbstteilnehmende im Outdoor-Bereich 2015.](assets/venn_hover.png)
+Um eine [!UICONTROL Freiformtabelle] aus der Visualisierung [!UICONTROL Venn] zu generieren, wählen Sie die farbige ![StatusOrange](/help/assets/icons/StatusOrange.svg) neben der Kopfzeile **[!UICONTROL Venn]** aus und wählen Sie **[!UICONTROL Datenquelle anzeigen]**. Es wird eine Freiformtabelle **[!UICONTROL Venn Data]** mit den Daten angezeigt, die zum Erstellen der Visualisierung für [!UICONTROL Venn] verwendet werden.
 
-Um das Venn-Diagramm in eine Freiformtabelle umzuwandeln, klicken Sie auf den farbigen Punkt neben der Überschrift **[!UICONTROL Venn]** und wählen Sie **[!UICONTROL Data Sources verwalten]** > **[!UICONTROL Verfügbare Data Sources]** > **[!UICONTROL Freiformtabelle]** aus.
+<!--
+To normalize the Venn diagram (take the size out of it), go select ![Setting](/help/assets/icons/Setting.svg) and select **[!UICONTROL Normalization]**.
 
-Um das Venn-Diagramm zu normalisieren (die Größeninformationen zu entfernen), klicken Sie auf das Symbol für seine Visualisierungseinstellungen und wählen Sie **[!UICONTROL Normalisierung aus]**.
+![Visualization Settings option for Visualization type: Venn diagram.](assets/normalization.png)
 
-![Option für Visualisierungseinstellungen für den Visualisierungstyp: Venn-Diagramm.](assets/normalization.png)
+-->
+
+>[!MORELIKETHIS]
+>
+>[Hinzufügen einer Visualisierung zu einem Bedienfeld](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
+>[Visualisierungseinstellungen](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
+>[Kontextmenü &quot;Visualisierung&quot;](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
+>
+

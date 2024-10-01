@@ -4,59 +4,71 @@ title: Linie
 feature: Visualizations
 exl-id: b68aa8dc-2c96-4c49-8d3c-d94804aab479
 role: User
-source-git-commit: 30f3e24533ab0e03ee7f819c7f94592776603764
+source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
 workflow-type: tm+mt
-source-wordcount: '524'
-ht-degree: 81%
+source-wordcount: '508'
+ht-degree: 18%
 
 ---
 
-# Linie
+# Linie {#line}
 
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_workspace_line_button"
+>title="Linie"
+>abstract="Erstellen Sie eine Linienvisualisierung, die anzeigt, wie sich Werte über einen bestimmten Zeitraum ändern. Eine Linienvisualisierung kann nur verwendet werden, wenn die Zeit als Dimension verwendet wird."
+
+<!-- markdownlint-enable MD034 -->
+
+
+Die Visualisierung ![GraphTrend](/help/assets/icons/GraphTrend.svg) **[!UICONTROL Linie]** stellt Metriken anhand einer Zeile dar, die angibt, wie sich Werte über einen bestimmten Zeitraum ändern. Eine Linienvisualisierung kann nur verwendet werden, wenn die Zeit als Dimension verwendet wird.
+
+<!--
 >[!NOTE]
 >
->Die Linienvisualisierung wird bald [intelligente Beschriftungen](/help/analysis-workspace/visualizations/intelligent-captions.md) enthalten.
+>The Line visualization soon feature [intelligent captions](/help/analysis-workspace/visualizations/intelligent-captions.md).
 
-Die Linienvisualisierung stellt Metriken anhand einer Linie dar, die den Wertverlauf über einen bestimmten Zeitraum hinweg zeigt. Ein Liniendiagramm kann nur verwendet werden, wenn die Zeit als Dimension verwendet wird.
+The Line visualization represents metrics using a line to show how values change over a period of time. A line chart can be used only when time is used as a dimension.
+-->
 
 ![Linienvisualisierung](assets/line-viz.png)
 
-Wählen Sie das Einstellungssymbol ![Einstellungen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Settings_18_N.svg) in der oberen Leiste der Linienvisualisierung aus, um auf die verfügbaren [Visualisierungseinstellungen](freeform-analysis-visualizations.md) zuzugreifen. Die Einstellungen sind in folgende Kategorien unterteilt:
 
-<img src="./assets/viz-settings-line.png" alt="Visualisierungseinstellungen" width="50%" />
+## Einstellungen
 
-* **Allgemein**: Einstellungen, die für verschiedene Visualisierungstypen gelten
-* **Achse**: Einstellungen, die sich auf die x- oder y-Achse der Linienvisualisierung auswirken
-* **Überlagerungen**: Optionen zum Hinzufügen von zusätzlichem Kontext zu den in Ihrer Linienvisualisierung angezeigten Serien.
+Im Rahmen der [Visualisierungseinstellungen](freeform-analysis-visualizations.md#settings) sind spezifische Einstellungen für die Linienvisualisierung verfügbar.
 
-
-## Granularität ändern
-
-In den [Visualisierungseinstellungen](freeform-analysis-visualizations.md) können Sie über ein Dropdown-Menü für die Granularität eine Trend-Visualisierung (z. B. Linie, Balken) von täglich zu wöchentlich zu monatlich usw. ändern. Die Granularität wird auch in der Datenquellentabelle aktualisiert.
-
-## Min. oder Max. anzeigen
-
-Unter **[!UICONTROL Visualisierungseinstellungen]** > **[!UICONTROL Überlagerungen]** > **[!UICONTROL Min/Max anzeigen]** können Sie eine Beschriftung für Minimal- und Maximalwerte überlagern, um die Spitzen und Täler schnell in einer Metrik hervorzuheben. Hinweis: Die Minimal bzw. Maximalwerte werden aus den sichtbaren Datenpunkten in der Visualisierung abgeleitet, nicht aus dem vollständigen Satz von Werten innerhalb einer Dimension.
-
-![Eine Überlagerung mit der minimalen und maximalen Wertebeschriftung.](assets/min-max-labels.png)
-
-## Trendzeilenüberlagerung anzeigen
-
-Unter **[!UICONTROL Visualisierungseinstellungen]** > **[!UICONTROL Überlagerungen]** > **[!UICONTROL Trendlinie anzeigen]** können Sie Ihrer Linienserie eine Regressionstrendlinie hinzufügen oder die Durchschnittstrendlinie in Ihre Linienserie verschieben. Trendlinien helfen, ein Muster in den Daten besser darzustellen.
+| Einstellung | Beschreibung |
+|---|---|
+| **[!UICONTROL Granularität]** | Wählen Sie aus der Dropdown-Liste Granularität aus, um eine Trend-Visualisierung von täglich zu wöchentlich zu monatlich usw. zu ändern. Die Granularität wird auch in der Datenquellentabelle aktualisiert. |
+| **[!UICONTROL Min. anzeigen]** <br/>**[!UICONTROL Max.]**anzeigen | Sie können eine Mindest- und Höchstwertebeschriftung überlagern, um die Mindest- und Höchstwerte in einer Metrik hervorzuheben. Die Mindest-/Höchstwerte werden aus den sichtbaren Datenpunkten in der Visualisierung abgeleitet, nicht aus dem vollständigen Satz von Werten innerhalb einer Dimension.<br/>![Eine Überlagerung mit der minimalen und maximalen Wertebeschriftung.](assets/min-max-labels.png) |
+| **[!UICONTROL Trendlinie anzeigen]** | Sie können eine Regression oder eine sich bewegende durchschnittliche Trendlinie zu Ihrer Linienserie hinzufügen. Trendlinien helfen bei der Darstellung eines klareren Musters in den Daten. Wenn diese Option aktiviert ist, wählen Sie ein Modell aus der Liste aus. Eine Übersicht und Beschreibung der verfügbaren Modelle finden Sie unter [Modelle](#models) .<br/>![Lineare Trendlinie](assets/show-linear-trendline.png). |
 
 >[!TIP]
 >
->Es wird empfohlen, Trendlinien auf Daten anzuwenden, die weder das aktuelle Datum (partielle Daten) noch zukünftige Datumsangaben enthalten, da diese die Trendlinie verfälschen. Wenn Sie jedoch zukünftige Datumsangaben einbeziehen müssen, entfernen Sie Nullen aus den Daten, um eine Verfälschung für diese Tage zu vermeiden. Gehen Sie dazu zur Datenquellenabelle der Visualisierung, wählen Sie Ihre Metrikspalte aus und aktivieren Sie dann **[!UICONTROL Spalteneinstellungen]** > **[!UICONTROL Null als keinen Wert interpretieren]**.
+>Es wird empfohlen, Trendlinien auf Daten anzuwenden, die weder heute noch zukünftige Daten enthalten. Die heutigen oder künftigen Datumsangaben verfälschen die Trendlinie. Wenn Sie jedoch zukünftige Datumsangaben einbeziehen müssen, entfernen Sie Nullen aus den Daten, um eine Verfälschung für diese Tage zu vermeiden. Wechseln Sie zur Datenquellentabelle der Visualisierung, wählen Sie Ihre Metrikspalte aus und aktivieren Sie dann **[!UICONTROL Spalteneinstellungen]** > **[!UICONTROL Null als keinen Wert auffassen]**.
 
-![Lineare Trendlinie](assets/show-linear-trendline.png)
+
+
+### Modelle
 
 Alle Trendlinien des Regressionsmodells werden über die reguläre Kleinstquadrat-Methode angepasst:
 
 | Modell | Beschreibung |
 | --- | --- |
-| Linear | Erstellt eine am besten passende gerade Linie für einfache lineare Datensätze und ist nützlich, wenn die Daten stetig zunehmen oder abnehmen. Gleichung: `y = a + b * x` |
-| Logarithmisch | Erstellt eine am besten passende gekrümmte Linie und ist nützlich, wenn die Änderungsrate der Daten schnell zunimmt oder abnimmt und dann abflacht. Eine logarithmische Trendlinie kann negative und positive Werte verwenden. Gleichung: `y = a + b * log(x)` |
-| Exponentiell | Erstellt eine gekrümmte Linie und ist nützlich, wenn Daten mit ständig steigenden Raten steigen oder fallen. Diese Option sollte nicht verwendet werden, wenn Ihre Daten Null oder negative Werte enthalten. Gleichung: `y = a + e^(b * x)` |
-| Potenzfunktion | Erstellt eine gekrümmte Linie und ist nützlich für Datensätze, die Messungen vergleichen, die mit einer bestimmten Rate zunehmen. Diese Option sollte nicht verwendet werden, wenn Ihre Daten Null oder negative Werte enthalten. Gleichung: `y = a * x^b` |
-| Quadratisch | Findet die beste Anpassung für einen Datensatz, der wie eine Parabel geformt ist (konkav nach oben oder unten). Gleichung: `y = a + b * x + c * x^2` |
-| Gleitender Mittelwert | Erstellt eine glatte Trendlinie basierend auf einer Reihe von Durchschnittswerten. Ein gleitender Durchschnittswert, der auch als rollierender Durchschnitt bezeichnet wird, nutzt eine bestimmte Anzahl von Datenpunkten (bestimmt durch Auswahl eines Zeitraums), errechnet einen Durchschnittswert und verwendet den Durchschnittswert als Punkt auf der Linie. Beispiele sind der gleitende Durchschnitt für 7 Tage oder der gleitende Durchschnitt für 4 Wochen. |
+| **[!UICONTROL Linear]** | Erstellen Sie eine am besten passende gerade Linie für einfache lineare Datensätze und ist nützlich, wenn die Daten stetig zunehmen oder abnehmen. Gleichung: `y = a + b * x` |
+| **[!UICONTROL Logarithmisch]** | Erstellen Sie eine am besten passende gekrümmte Linie und ist nützlich, wenn die Änderungsrate in den Daten schnell zunimmt oder abnimmt und dann abflacht. Eine logarithmische Trendlinie kann negative und positive Werte verwenden. Gleichung: `y = a + b * log(x)` |
+| **[!UICONTROL Exponentiell]** | Erstellen Sie eine gekrümmte Linie und ist nützlich, wenn Daten mit ständig steigenden Raten steigen oder fallen. Diese Option sollte nicht verwendet werden, wenn Ihre Daten Null oder negative Werte enthalten. Gleichung: `y = a + e^(b * x)` |
+| **[!UICONTROL Power]** | Erstellen Sie eine gekrümmte Linie und ist nützlich für Datensätze, die Messungen vergleichen, die mit einer bestimmten Rate zunehmen. Diese Option sollte nicht verwendet werden, wenn Ihre Daten Null oder negative Werte enthalten. Gleichung: `y = a * x^b` |
+| **[!UICONTROL Quadratisch]** | Findet die beste Anpassung für einen Datensatz, der wie eine Parabel geformt ist (konkav nach oben oder unten). Gleichung: `y = a + b * x + c * x^2` |
+| **[!UICONTROL Beweglicher Durchschnitt]** | Erstellen Sie eine glatte Trendlinie basierend auf einer Reihe von Durchschnittswerten. Ein anpassbarer Durchschnittswert, der auch als rollierender Durchschnitt bezeichnet wird, verwendet eine bestimmte Anzahl von Datenpunkten (bestimmt durch Ihre Auswahl von [!UICONTROL Granularität] ), errechnet einen Durchschnittswert und verwendet den Durchschnittswert als Punkt in der Zeile. Beispiele sind ein anpassbarer Durchschnittswert von sieben Tagen oder ein anpassbarer Durchschnittswert von vier Wochen. |
+
+>[!MORELIKETHIS]
+>
+>[Hinzufügen einer Visualisierung zu einem Bedienfeld](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
+>[Visualisierungseinstellungen](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
+>[Kontextmenü &quot;Visualisierung&quot;](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
+>
+

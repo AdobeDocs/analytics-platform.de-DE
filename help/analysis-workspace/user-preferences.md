@@ -5,91 +5,146 @@ feature: Workspace Basics
 exl-id: 6a934be7-0612-41ff-964e-77abc0b1efda
 solution: Customer Journey Analytics
 role: User
-source-git-commit: 39486d83a446c8bcfe93824c06bee3c681922ff4
+source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
 workflow-type: tm+mt
-source-wordcount: '3259'
-ht-degree: 100%
+source-wordcount: '3466'
+ht-degree: 73%
 
 ---
 
 # Benutzervoreinstellungen
 
-Sie können für alle neu erstellten Projekte oder Bedienfelder die auf Analysis Workspace und die zugehörigen Komponenten anzuwendenden Einstellungen verwalten. Bestehende Projekte und Bedienfelder sind davon nicht betroffen.
+Sie können Benutzereinstellungen oder Voreinstellungen für Analysis Workspace und zugehörige Komponenten für alle neuen, von Ihnen erstellten Projekte oder Bedienfelder verwalten. Bestehende Projekte und Bedienfelder sind davon nicht betroffen.
 
 ## Aktualisieren von Voreinstellungen
 
-1. Gehen Sie in Customer Journey Analytics auf die Landingpage [!UICONTROL **Projekte**] und wählen Sie dann [!UICONTROL **Einstellungen bearbeiten**].
+Sie können Ihre Voreinstellungen wie folgt aktualisieren:
 
-   ![Workspace Projekte-Ansicht mit Hervorhebung der auf dieser Seite beschriebenen Optionen „Einstellungen bearbeiten“.](assets/user-preferences.png)
+- Wählen Sie ![UserAdmin](/help/assets/icons/UserAdmin.svg) **[!UICONTROL Voreinstellungen bearbeiten]** in der Workspace-Hauptbenutzeroberfläche aus.
+- Wählen Sie bei der Arbeit an einem Workspace-Projekt im Menü **[!UICONTROL Projekt]** > **[!UICONTROL Benutzereinstellungen]** aus.
+- Wählen Sie **[!UICONTROL Komponenten]** > **[!UICONTROL Voreinstellungen]** in der oberen Hauptleiste des Customer Journey Analytics aus (nur für Produktadministratoren verfügbar).
 
-   Oder
+## Voreinstellungen konfigurieren
 
-   Produktadmins können die Einstellungen der IMS-Organisation aktualisieren, indem sie auf die Registerkarte [!UICONTROL **Komponenten**] gehen und dann [!UICONTROL **Einstellungen**] wählen.
+Sie können die folgenden Voreinstellungen konfigurieren:
 
-1. Informationen zu den verfügbaren Voreinstellungen auf den einzelnen Registerkarten finden Sie in jedem der folgenden Abschnitte in diesem Artikel:
-
-   * [Allgemeine Voreinstellungen](#general-preferences)
-
-   * [IMS-Organisations-Voreinstellungen](#ims-organization-preferences)
-
-   * [Voreinstellungen für Projekte und Analysen](#project-preferences)
-
-   * [Voreinstellungen für Freiformtabellen](#freeform-table-preferences)
-
-   * [Voreinstellungen für Visualisierungen](#visualizations-preferences)
-
-## Allgemeine Voreinstellungen
+### Allgemeine Voreinstellungen
 
 Die allgemeinen Voreinstellungen gelten für Ihre Customer Journey Analytics-Erfahrung im Browser. Informationen zum Zugriff auf diese Voreinstellungen finden Sie unter [Aktualisieren von Voreinstellungen](#update-preferences).
 
 | Voreinstellung | Optionen |
 | --- | --- |
-| Landingpage | Wählen Sie aus, welche Seite beim Zugriff auf Adobe Analytics als Standardseite angezeigt werden soll: <ul><li>Projektliste (Standard)</li><li>Leeres Projekt</li><li>Bestimmtes Projekt, das aus einer Liste ausgewählt wurde</li></ul> |
-| Tipps anzeigen | Zeigt Tipps in einem blauen Feld im rechten unteren Bereich von Analysis Workspace an. <p>Standardmäßig ist diese Option aktiviert.</p> |
-| Komponenten, die in Gruppen auf der linken Leiste angezeigt werden | Wählen Sie aus, wie viele Komponenten im Komponentenmenü in der linken Leiste angezeigt werden sollen. <p>Wenn Sie „0“ auswählen, kann die Komponente nicht mehr über die linke Leiste Ihrer Arbeitsbereiche aufgerufen werden.</p><p>Standardmäßig werden für jede der folgenden Objekte fünf Komponenten angezeigt:</p> <ul><li>Dimensionen</li><li>Metriken</li><li>Filter</li><li>Datumsbereiche</li></ul> <p>Weitere Informationen zu Komponenten in Analysis Workspace finden Sie unter [Komponentenübersicht](/help/components/overview.md).</p> |
+| **[!UICONTROL Landingpage]** | Wählen Sie aus, welche Seite beim Zugriff auf Customer Journey Analytics als Standardseite angezeigt wird: <ul><li>Projektliste (Standard)</li><li>Leeres Projekt</li><li>Geführte Analyse von Blank Trends</li><li>Bestimmtes Projekt, ausgewählt aus einer Liste</li></ul> |
+| **[!UICONTROL Tipps]** | Zeigt Tipps in einem blauen Feld im rechten unteren Bereich von Analysis Workspace an. <p>Standardmäßig ist diese Option aktiviert.</p> |
+| **[!UICONTROL In linken Bedienfeldgruppen angezeigte Komponenten]** | Wählen Sie im Menü Komponenten im linken Bereich aus, wie viele Komponenten jeder Komponentengruppe angezeigt werden sollen. <p>Wenn Sie für eine Komponentengruppe &quot;0&quot;auswählen, ist die Komponentengruppe nicht mehr über das linke Bedienfeld zugänglich.</p><p>Standardmäßig werden für jede der folgenden Komponentengruppen fünf Komponenten angezeigt:</p> <ul><li>Dimensionen</li><li>Metriken</li><li>Filter</li><li>Datumsbereiche</li></ul> <p>Weitere Informationen zu Komponenten in Analysis Workspace finden Sie unter [Komponentenübersicht](/help/components/overview.md).</p> |
 
-## IMS-Organisations-Voreinstellungen
+### IMS-Organisations-Voreinstellungen {#ims-organization-preferences}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_workspace_prefs_shareonlyworkspace"
+>title="Freigabe nur für Workspace-Benutzende zulassen"
+>abstract="Wenn diese Option aktiviert ist, ist die Option **[!UICONTROL Mit allen teilen]** nicht mehr für Benutzer verfügbar, die ein Analysis Workspace-Projekt freigeben. Personen, die zuvor über diese Freigabeoption Zugriff auf ein Projekt erhalten haben, können nicht mehr auf das Projekt zugreifen."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_workspace_prefs_requireexperiencecloudauth"
+>title="Experience Cloud-Authentifizierung verlangen"
+>abstract="Wenn diese Option aktiviert ist, müssen sich Personen, die über die Option Mit jedem Benutzer teilen in Analysis Workspace Zugriff auf ein Projekt erhalten, mit ihren Experience Cloud-Anmeldeinformationen authentifizieren."
+
+<!-- markdownlint-enable MD034 -->
+
 
 Sie können Unternehmensvoreinstellungen aktualisieren, die für alle Benutzerinnen und Benutzer sowie Projekte in Ihrer Organisation gelten. Informationen zum Zugriff auf diese Voreinstellungen finden Sie unter [Aktualisieren von Voreinstellungen](#update-preferences).
 
 | Abschnitt | Voreinstellung | Optionen |
 | --- | --- | --- |
 | **Projektfreigabe** | | |
-| | Freigabe nur für Workspace-Benutzende zulassen | <p>Wenn diese Option aktiviert ist, können Benutzerinnen und Benutzer in Ihrer Organisation im Menü „Freigeben“ die Option „Für alle freigeben“ nicht sehen. Das bedeutet, dass Benutzerinnen und Benutzer keine Projekte für Personen freigeben können, die kein Analysis Workspace-Konto in Ihrer Organisation haben, wie unter [Projekt für andere freigeben (keine Anmeldung erforderlich)](/help/analysis-workspace/curate-share/share-projects.md#share-public-link) in [Freigeben von Projekten](/help/analysis-workspace/curate-share/share-projects.md) beschrieben wird.</p><p>Diese Option ist standardmäßig für alle Organisationen deaktiviert (d. h. Benutzende können Projekte für Personen außerhalb der Organisation freigeben), mit Ausnahme von Kundinnen und Kunden, die Health Care Shield lizenziert haben. </p><p>Beachten Sie beim Aktivieren oder Deaktivieren dieser Option Folgendes:</p> <ul><li><p>Wenn Sie diese Option aktivieren, können Personen, die zuvor über die Freigabeoption „Für alle freigeben“ Zugriff auf ein Projekt erhalten haben, nicht mehr auf das Projekt zugreifen.</p></li><li><p>Wenn diese Option aktiviert ist (um die Freigabe nur für Workspace-Benutzende zuzulassen) und später deaktiviert wird (um die Freigabe für andere zuzulassen), erhalten Personen, die zuvor über die Freigabeoption „Für alle freigeben“ Zugriff auf ein Projekt erhalten hatten, nicht automatisch wieder Zugriff auf das Projekt. In diesem Fall muss die Person, die das Projekt freigegeben hat, die Option [!UICONTROL **Link ist aktiv**] aktivieren, die beim Freigeben eines Projekts für alle verfügbar ist ([!UICONTROL **Freigeben**] > [!UICONTROL **Für alle freigeben**]), wie unter [Projekt für alle freigeben (keine Anmeldung erforderlich)](/help/analysis-workspace/curate-share/share-projects.md#share-public-link) in [Freigeben von Projekten](/help/analysis-workspace/curate-share/share-projects.md).</p></li><li><p>**Für Kundinnen und Kunden, die Healthcare Shield lizenzieren:** Diese Option ist standardmäßig aktiviert und kann nicht deaktiviert werden. Bevor Sie diese Option deaktivieren können, damit die Benutzenden die Freigabeoption „Mit allen teilen“ verwenden können, müssen Sie zunächst in der Adobe Admin Console die Berechtigung [!UICONTROL **Projekt-Links mit jedem teilen**] (zu finden unter [!UICONTROL **Reporting-Tools**]) hinzufügen. Nachdem die Berechtigung hinzugefügt wurde, können Sie diese Option deaktivieren und dann den resultierenden rechtlichen Hinweis akzeptieren. Informationen zum Hinzufügen einer Berechtigung zur Admin Console finden Sie unter [Verwalten von Produktberechtigungen in der Admin Console](https://helpx.adobe.com/de/enterprise/using/manage-permissions-and-roles.html).</p></li> |
-| | Experience Cloud-Authentifizierung verlangen | <p>Wenn diese Option aktiviert ist, müssen sich Personen, die über die Option „Für alle freigeben“ in Analysis Workspace Zugriff auf ein Projekt erhalten haben, sich mit ihren Anmeldeinformationen von Experience Cloud authentifizieren.</p> <p>Wenn diese Option aktiviert ist, wird jedes Mal, wenn eine Person ein Projekt mithilfe der Freigabeoption „Für alle freigeben“ teilt, die Option „Authentifizierung für dieses Projekt erforderlich“ im Freigabe-Dialogfeld aktiviert und kann von der Person, die das Projekt freigegeben hat, nicht deaktiviert werden. (Informationen dazu, wie Benutzerinnen und Benutzer Projekte für alle freigeben können, finden Sie unter [Projekt für alle freigeben (keine Anmeldung erforderlich)](/help/analysis-workspace/curate-share/share-projects.md#share-public-link) in [Freigeben von Projekten](/help/analysis-workspace/curate-share/share-projects.md).)</p> <p>Beachten Sie beim Aktivieren dieser Option Folgendes:</p><ul><li><p>Wenn Sie diese Option aktivieren, werden alle Projekte, die zuvor mit der Freigabeoption „Für alle freigeben“ freigegeben wurden und für die die Option „Experience Cloud-Authentifizierung erfordern“ nicht aktiviert ist, deaktiviert.</p></li> <li><p>Wenn diese Option aktiviert ist (d. h. eine Experience Cloud-Authentifizierung erforderlich ist) und später deaktiviert wird (damit alle Benutzerinnen und Benutzer mit dem Link auf das Projekt zugreifen können), erhalten Personen, die zuvor über die Freigabeoption „Für alle freigeben“ Zugriff auf ein Projekt erhalten haben, nicht automatisch wieder Zugriff auf das Projekt. In diesem Fall muss die Person, die das Projekt freigegeben hat, die Option „Link ist aktiv“ aktivieren, die verfügbar ist, wenn ein Projekt für alle freigegeben wird ([!UICONTROL **Freigeben**] > [!UICONTROL **Für alle freigeben**] > [!UICONTROL **Link ist aktiv**]), wie unter [Projekt für alle freigeben (keine Anmeldung erforderlich)](/help/analysis-workspace/curate-share/share-projects.md#share-public-link) in [Freigeben von Projekten](/help/analysis-workspace/curate-share/share-projects.md) beschrieben wird.</p></li> <li><p>Diese Option ist nur verfügbar, wenn SSO in Ihrem Unternehmen implementiert ist. Informationen dazu, wie System-Admins SSO für Ihre Organisation aktivieren können, finden Sie unter [Einrichten von Identität und Single Sign-On](https://helpx.adobe.com/de/enterprise/using/set-up-identity.html){target=_blank}.</p><p>Wenn SSO für Ihre Organisation konfiguriert ist, überprüfen Sie, ob in der Konsole eine automatische Kontoerstellung implementiert ist. Normalerweise richten System-Admins dies ein, wie unter [Aktivieren der automatischen Kontoerstellung](https://helpx.adobe.com/de/enterprise/using/automatic-account-creation.html){target=_blank} beschrieben wird.</p></li><li><p>Wenn Ihre Organisation eine Lizenz für Healthcare Shield besitzt, ist diese Option standardmäßig aktiviert und kann nicht deaktiviert werden.</p></li></ul> |
+| | Freigabe nur für Workspace-Benutzende zulassen | Wenn diese Option aktiviert ist, können Benutzer in Ihrer Organisation die Option **[!UICONTROL Mit niemandem teilen]** im Menü **[!UICONTROL Freigeben]** nicht sehen. Das bedeutet, dass Benutzerinnen und Benutzer keine Projekte für Personen freigeben können, die kein Analysis Workspace-Konto in Ihrer Organisation haben, wie unter [Projekt für andere freigeben (keine Anmeldung erforderlich)](/help/analysis-workspace/curate-share/share-projects.md#share-public-link) in [Freigeben von Projekten](/help/analysis-workspace/curate-share/share-projects.md) beschrieben wird.<br/>Diese Option ist standardmäßig für alle Organisationen deaktiviert (d. h., Benutzer können Projekte für Personen außerhalb der Organisation freigeben), mit Ausnahme von Kunden, die den &quot;Healthcare Shield&quot;lizenziert haben. <p>Beachten Sie beim Aktivieren oder Deaktivieren dieser Option Folgendes:<ul><li>Wenn Sie diese Option aktivieren, können Personen, die zuvor über die Option &quot;[!UICONTROL Mit jedem teilen] teilen&quot;Zugriff auf ein Projekt erhalten haben, nicht mehr auf das Projekt zugreifen.</li><li>Wenn diese Option aktiviert ist (um die Freigabe nur für Workspace-Benutzer zuzulassen) und später deaktiviert wird (um die Freigabe für andere zuzulassen), erhalten Personen, die zuvor über die Option &quot;[!UICONTROL Mit allen teilen] teilen&quot;Zugriff auf ein Projekt erhalten haben, nicht automatisch wieder Zugriff auf das Projekt. In diesem Fall muss der Benutzer, der das Projekt freigegeben hat, die Option [!UICONTROL **Link ist aktiv**] aktivieren, die verfügbar ist, wenn ein Projekt für andere freigegeben wird **([!UICONTROL Freigabe]** > **[!UICONTROL Für alle freigeben]**), wie unter [Ein Projekt für andere freigeben (keine Anmeldung erforderlich)](/help/analysis-workspace/curate-share/share-projects.md#share-public-link) in [Projekte freigeben](/help/analysis-workspace/curate-share/share-projects.md) beschrieben.</li><li>**Für Kundinnen und Kunden, die Healthcare Shield lizenzieren:** Diese Option ist standardmäßig aktiviert und kann nicht deaktiviert werden. Bevor Sie diese Option deaktivieren können, damit Benutzer die Option &quot;[!UICONTROL Für jedermann freigeben]&quot;verwenden können, müssen Sie zunächst die Berechtigung &quot;[!UICONTROL Projektlinks für alle freigeben]&quot;(unter &quot;[!UICONTROL Berichterstellungs-Tools]&quot;) in der Adobe Admin Console hinzufügen. Nachdem die Berechtigung hinzugefügt wurde, können Sie diese Option deaktivieren und dann den resultierenden rechtlichen Hinweis akzeptieren. Informationen zum Hinzufügen einer Berechtigung zur Admin Console finden Sie unter [Verwalten von Produktberechtigungen in der Admin Console](https://helpx.adobe.com/de/enterprise/using/manage-permissions-and-roles.html).</li></ul> |
+| | Experience Cloud-Authentifizierung verlangen | Wenn diese Option aktiviert ist, müssen sich Personen, die über die Option Mit jedem Benutzer teilen in Analysis Workspace Zugriff auf ein Projekt erhalten, mit ihren Experience Cloud-Anmeldeinformationen authentifizieren.<p>Wenn diese Option aktiviert ist, wird jedes Mal, wenn ein Benutzer ein Projekt mithilfe der Freigabeoption [!UICONTROL Mit allen teilen] nutzt, die Option [!UICONTROL Experience Cloud-Authentifizierung erforderlich] im Freigabedialogfeld aktiviert und kann von dem Benutzer, der das Projekt freigegeben hat, nicht deaktiviert werden. Informationen dazu, wie Benutzer Projekte für andere freigeben können, finden Sie unter [Freigeben eines Projekts für andere (keine Anmeldung erforderlich)](/help/analysis-workspace/curate-share/share-projects.md#share-public-link) in [Projekte freigeben](/help/analysis-workspace/curate-share/share-projects.md). <p> <p>Beachten Sie beim Aktivieren dieser Option Folgendes: <ul><li>Wenn Sie diese Option aktivieren, werden alle Projekte deaktiviert, die zuvor mit der Freigabeoption [!UICONTROL Für alle freigeben] freigegeben wurden und für die die Option [!UICONTROL Experience Cloud-Authentifizierung erforderlich] nicht aktiviert ist.<p>Wenn diese Option aktiviert ist (Experience Cloud-Authentifizierung erforderlich) und später deaktiviert wird (damit alle Benutzer mit dem Link auf das Projekt zugreifen können), erhalten Personen, die zuvor über die Option &quot;[!UICONTROL Mit allen teilen] teilen&quot;Zugriff auf ein Projekt erhalten haben, nicht automatisch wieder Zugriff auf das Projekt. In diesem Fall muss der Benutzer, der das Projekt freigegeben hat, die Option [!UICONTROL Link ist aktiv]*Option aktivieren, die verfügbar ist, wenn ein Projekt für andere freigegeben wird **([!UICONTROL Freigabe]** > **[!UICONTROL Für alle freigeben]** > **[!UICONTROL Link ist aktiv]**), wie unter [Ein Projekt für andere freigeben (keine Anmeldung erforderlich)](/help/analysis-workspace/curate-share/share-projects.md#share-public-link) Projekte freigeben](/help/analysis-workspace/curate-share/share-projects.md) beschrieben. .[</li><li>Diese Option ist nur verfügbar, wenn SSO in Ihrem Unternehmen implementiert ist. Informationen dazu, wie Systemadministratoren die einmalige Anmeldung für Ihr Unternehmen aktivieren können, finden Sie unter [Einrichten von Identitäten und Single-Sign-On](https://helpx.adobe.com/de/enterprise/using/set-up-identity.html).</p><p>Wenn SSO für Ihre Organisation konfiguriert ist, überprüfen Sie, ob in der Konsole eine automatische Kontoerstellung implementiert ist. Normalerweise würde ein Systemadministrator dies einrichten, wie unter [Automatische Kontoerstellung aktivieren](https://helpx.adobe.com/de/enterprise/using/automatic-account-creation.html) beschrieben.</li><li>Wenn Ihre Organisation eine Lizenz für Healthcare Shield besitzt, ist diese Option standardmäßig aktiviert und kann nicht deaktiviert werden.</li></ul> |
 
 {style="table-layout:auto"}
 
-## Voreinstellungen für Projekte und Analysen
+### Voreinstellungen für Projekte und Analysen {#project-and-analysis-preferences}
+
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_workspace_prefs_categoricalpalette"
+>title="Kategorische Palette"
+>abstract="Wird auf viele Visualisierungen in Analysis Workspace und geführte Analysen angewendet. Jede Farbe steht für einen Wert einer Kategorie."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_workspace_prefs_divergingpalette"
+>title="Divergierende Palette"
+>abstract="Wird auf die Kohortentabelle in Analysis Workspace und die geführte Analyse von Benutzerwachstum angewendet. Durch diese Palette werden die Zahlen zweier Extremwerte dargestellt, getrennt durch eine Basislinie in der Mitte."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_workspace_prefs_sequentialpalette"
+>title="Sequenzielle Palette"
+>abstract="Wird bei der geführten Analyse der Frequenz-Trends angewendet (gestapelte Balken). In dieser Palette werden Zahlen durch die Helligkeitsabstufungen von hell bis dunkel dargestellt."
+
+<!-- markdownlint-enable MD034 -->
+
 
 Sie können diese Voreinstellungen für alle neuen Analysis Workspace-Projekte, neuen Analysis Workspace-Bedienfeldern und neuen geführten Analysen anpassen. Informationen zum Zugriff auf diese Voreinstellungen finden Sie unter [Aktualisieren von Voreinstellungen](#update-preferences).
 
 Einige dieser Einstellungen können auch für einzelne Projekte in Analysis Workspace angepasst werden, wie in der [Projektübersicht](/help/analysis-workspace/build-workspace-project/freeform-overview.md) beschrieben.
 
-Klicken Sie auf die verlinkten Voreinstellungstitel, um weitere Informationen und Kontext zu den einzelnen Voreinstellungen zu erhalten.
-
 | Abschnitt | Voreinstellung | Optionen |
 | --- | --- | --- |
 | **Anzeigen** | | |
-|  | [Dichte anzeigen](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/view-density.html?lang=de) | Wählen Sie aus, wie viel Inhalt auf dem Bildschirm angezeigt werden soll, indem Sie den vertikalen Abstand der linken Schiene, der Freiformtabellen und der Kohortentabellen verkleinern. <ul><li>Kompakt</li><li>Komfortabel</li><li>Erweitert (Standard)</li></ul> |
+|  | [Dichte anzeigen](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/view-density.html?lang=de) | Wählen Sie aus, wie viel Inhalt auf dem Bildschirm angezeigt werden soll, indem Sie den vertikalen Abstand des linken Bedienfelds, der Freiformtabellen und der Kohortentabellen reduzieren. <ul><li>Kompakt</li><li>Komfortabel</li><li>Erweitert (Standard)</li></ul> |
 | | [Farbpalette](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/color-palettes.html?lang=de) | Wählen Sie die Farbpaletten für die Visualisierung, die in Analysis Workspace und der geführten Analyse verwendet werden. <ul><li> Kategorische Palette: Wird bei vielen Visualisierungen in Analysis Workspace und der geführten Analyse verwendet. Jede Farbe stellt einen bestimmten kategorischen Wert dar. Wählen Sie aus den von Adobe bereitgestellten Optionen oder geben Sie eine benutzerdefinierte Palette ein, die durch kommagetrennte Hexadezimalwerte definiert ist.</li><li> Divergente Palette: Wird auf die Kohortentabelle in Analysis Workspace und auf die geführte Analyse des Benutzerwachstums angewendet. Diese Palette enthält eine numerische Bedeutung mit zwei Extremen und einer Grundlinie in der Mitte.<li> Sequenzielle Palette: Wird auf die geführte Analyse der Häufigkeits-Trends (gestapelte Balken) angewendet. Diese Palette hat eine numerische Bedeutung von hell bis dunkel.</li></ul> |
 | **Daten** | | |
-|  | [Datenansicht](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/panels.html?lang=de#report-suite) | Wählen Sie aus, von wo Tabellen und Visualisierungen ihre Daten beziehen sollen. <ul><li>Zuletzt verwendet (Standard)</li><li>Eine bestimmte Datenansicht, die aus einer Liste ausgewählt wird</li></ul> |
-|  | [Kalender](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/panels.html?lang=de#calendar) | Wählen Sie aus einer Liste, die Folgendes enthält: <ul><li>Von Adobe bereitgestellte Bereiche (Standard ist „Diesen Monat“)</li><li>Benutzerdefinierte Bereiche</li></ul> |
+|  | [Datenansicht](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/panels.html?lang=de#report-suite) | Wählen Sie die Daten aus, aus denen Tabellen und Visualisierungen ihre Daten ableiten. <ul><li>Zuletzt verwendet (Standard)</li><li>Eine bestimmte Datenansicht, die aus einer Liste ausgewählt wird</li></ul> |
+|  | [Kalender](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/panels.html?lang=de#calendar) | Wählen Sie aus einer Liste, die Folgendes enthält: <ul><li>Von Adobe bereitgestellte Bereiche (Standard ist „Diesen Monat“)</li><li>Sie können [!UICONTROL Standardmäßig Datumsbereichskomponenten relativ zum Bedienfeldkalender festlegen].</li></ul> |
 |  | [Typ des Bedienfelds](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/panels.html?lang=de) | <ul><li>Freiform (Standard)</li><li>Leer</li><li>Quick Insights</li></ul> |
-|  | Wiederholte Instanzen zählen | Diese Einstellung legt fest, ob wiederholte Instanzen in Berichten gezählt werden sollen. Beispielsweise werden mit dieser Einstellung (wenn aktiviert) mehrere aufeinanderfolgende Aufrufe derselben Seite wie mehrere Seitenaufrufe gezählt. Ist diese Einstellung deaktiviert, werden sie als nur ein einziger Seitenaufruf gezählt. <p>**Hinweis:** Diese Einstellung wirkt sich nur auf bestimmte Metriken aus (z. B. Einzelseitenbesuche) und nicht auf Fluss- oder Fallout-Visualisierungen.</p> |
+|  | Instanzzählung | Aktivieren Sie [!UICONTROL Wiederholte Instanzen zählen] , um anzugeben, ob Wiederholungsinstanzen in Berichten gezählt werden. Wenn beispielsweise aktiviert, werden mehrere aufeinander folgende Seitenansichten auf derselben Seite als mehrere Seitenansichten behandelt. Wenn diese Option deaktiviert ist, zählen mehrere aufeinander folgende Seitenansichten auf derselben Seite als Einzelseitenansicht. <p>**Hinweis:** Diese Einstellung betrifft nur bestimmte Metriken (z. B. Sitzungen) und gilt nicht für Fluss- oder Fallout-Visualisierungen.</p> |
 |  | Zahlenformat | <ul><li>1.000,00 (Standard)</li><li>1.000,00</li><li>1 000,00</li></ul> |
 |  | CSV-Trennzeichen | <ul><li>Komma (Standard)</li><li>Semikolon</li><li>Doppelpunkt</li><li>Verkettungszeichen</li><li>Zeitraum</li><li>Leerzeichen</li><li>Tab</li></ul> |
 |  | Anmerkungen anzeigen | Wählen Sie aus, ob Anmerkungen in Ihren Projekten sichtbar sein sollen. Weitere Informationen zu Anmerkungen finden Sie unter [Anmerkungen – Überblick](/help/components/annotations/overview.md). |
 
 
-## Voreinstellungen für Freiformtabellen
+### Voreinstellungen für Freiformtabellen {#freeform-table-preferences}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_workspace_prefs_showanomalies"
+>title="Anomalien anzeigen"
+>abstract="Wenn Sie **[!UICONTROL Anomalien anzeigen]** auswählen, wird automatisch die Anomalieerkennung für die erste Metrikspalte ausgeführt, die der Freiformtabellenvisualisierung einer Zeitreihe hinzugefügt wurde."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_workspace_prefs_showforecast"
+>title="Prognose anzeigen"
+>abstract="Wenn Sie **[!UICONTROL Vorschau anzeigen]** auswählen, wird automatisch die erste Metrikspalte prognostiziert, die zu einer Zeitreihen-Freiformtabellenvisualisierung hinzugefügt wurde."
+
+<!-- markdownlint-enable MD034 -->
+
 
 Sie können die Voreinstellungen für Freiformtabellen für alle neuen Projekte anpassen, die Sie in Analysis Workspace erstellen. Informationen zum Zugriff auf diese Voreinstellungen finden Sie unter [Aktualisieren von Voreinstellungen](#update-preferences).
 
 Einige dieser Voreinstellungen können auch für einzelne Tabellen angepasst werden.
 
-Klicken Sie auf die verlinkten Abschnittstitel, um weitere Informationen und den Kontext zu den verfügbaren Voreinstellungen anzuzeigen.
+Wählen Sie die verknüpften Abschnittstitel aus, um weitere Informationen und den Kontext zu den verfügbaren Voreinstellungen anzuzeigen.
 
 | Abschnitt | Voreinstellung | Optionen |
 | --- | --- | --- |
@@ -115,13 +170,13 @@ Klicken Sie auf die verlinkten Abschnittstitel, um weitere Informationen und den
 | | Prozentuale Berechnung | <ul><li>Spalte</li><li>Zeile</li></ul> |
 | | Spaltensummen (nur statische Zeilen) | <ul><li>Summe der Zeilen anzeigen: Zeigt die Summe der einzelnen Zeileneinträge an </li><li>Gesamtsumme anzeigen: Zeigt die deduplizierte Summe der Zeilen an.</li></ul> |
 
-## Voreinstellungen für Visualisierungen
+### Voreinstellungen für Visualisierungen
 
 Sie können die Visualisierungsvoreinstellungen für alle in Analysis Workspace neu erstellten Projekte aktualisieren. Informationen zum Zugriff auf diese Voreinstellungen finden Sie unter [Aktualisieren von Voreinstellungen](#update-preferences).
 
 Einige dieser Voreinstellungen können auch für individuelle Visualisierungen angepasst werden.
 
-Klicken Sie auf die verlinkten Abschnittstitel, um weitere Informationen und den Kontext zu den verfügbaren Voreinstellungen anzuzeigen.
+Wählen Sie die verknüpften Abschnittstitel aus, um weitere Informationen und den Kontext zu den verfügbaren Voreinstellungen anzuzeigen.
 
 | Abschnitt | Voreinstellung | Optionen |
 | --- | --- | --- |
@@ -132,6 +187,7 @@ Klicken Sie auf die verlinkten Abschnittstitel, um weitere Informationen und den
 | | Zwei Achsen anzeigen (falls anwendbar) | Gilt nur, wenn Sie zwei Metriken haben – möglich sind eine Y-Achse links (für die eine Metrik) und eine rechts (für die andere). Dies ist hilfreich, wenn grafisch dargestellte Metriken sehr unterschiedliche Größenordnungen aufweisen. |
 | | Normalisierung (falls anwendbar) | Erzwingt Metriken für gleiche Anteile. Dies ist hilfreich, wenn grafisch dargestellte Metriken sehr unterschiedliche Größenordnungen aufweisen. |
 | | Y-Achse bei null verankern | Wenn alle im Diagramm dargestellten Werte deutlich größer als null sind, wird der untere Teil der Y-Achse standardmäßig zu NICHT-NULL gemacht. Wenn Sie dieses Kontrollkästchen aktivieren, wird die Y-Achse zwangsweise auf null gesetzt (und das Diagramm neu gezeichnet). |
+| | Ankeranomalien zum Skalieren der Y-Achse | Die Y-Achse wird mithilfe von Anomaliewerten skaliert. |
 | **[Linie](/help/analysis-workspace/visualizations/line.md)** | | |
 | | Prozentsatz | Zeigt in Linienvisualisierungen Werte in Prozentsätzen an. |
 | | Legende sichtbar | Ermöglicht das Ausblenden des detaillierten Legendentextes für die Linienvisualisierung. |
@@ -162,9 +218,9 @@ Klicken Sie auf die verlinkten Abschnittstitel, um weitere Informationen und den
 | | Vergleich anzeigen | Anzeigen von Vergleichsdaten. Wenn diese Option ausgeblendet ist, werden sowohl das Vergleichszeilendiagramm als auch die Objekte der Zusammenfassungsänderung ausgeblendet. |
 | | Zahlenwert-Optionen | Im Abschnitt [!UICONTROL **Zusammenfassung der Schlüsselmetriken**] <ul><li>Prozentuale Veränderung anzeigen</li><li>Rohdifferenz anzeigen</li>Rohdifferenz zwischen dem Gesamtwert der Metrik im primären Datumsbereich und im sekundären Datumsbereich</ul> |
 | **[Fallout](/help/analysis-workspace/visualizations/fallout/configuring-fallout.md)** | | |
-| | Container | Hiermit können Sie bei der Analyse der Besucherpfade zwischen Besuch und Besucher wechseln. Die Standardeinstellung lautet „Besucher“. Diese Einstellungen helfen Ihnen, das Engagement von Personen auf Personenebene (über Sitzungen hinweg) zu verstehen, oder die Analyse auf eine einzelne Sitzung zu beschränken. <p>Die folgenden Optionen sind verfügbar:</p> <ul><li>Besuch</li><li>Besucher</li></ul> |
+| | Container | Hiermit können Sie zwischen **[!UICONTROL Sitzung]** und **[!UICONTROL Person]** wechseln, um die Personenpfade zu analysieren. Der Standardwert ist **[!UICONTROL Person]**. Diese Einstellungen helfen Ihnen, das Engagement von Personen auf Personenebene (über Sitzungen hinweg) zu verstehen, oder die Analyse auf eine einzelne Sitzung zu beschränken. <p>Die folgenden Optionen sind verfügbar:</p> <ul><li>Sitzung</li><li>Benutzer</li></ul> |
 | **[Fluss](/help/analysis-workspace/visualizations/c-flow/create-flow.md)** | | |
-| | Container | Im Abschnitt [!UICONTROL **Fluss**] <ul><li>Besuch</li><li>Besucher</li></ul> |
+| | Container | Im Abschnitt [!UICONTROL **Fluss**] <ul><li>Sitzung</li><li>Benutzer</li></ul> |
 | | Beschriftungen umbrechen | Die Beschriftungen der Flusselemente werden üblicherweise aus Platzgründen auf dem Bildschirm abgeschnitten. Aktivieren Sie dieses Kontrollkästchen, um die gesamte Beschriftung anzuzeigen. Standard = deaktiviert. |
 | | Wiederholungsinstanzen einschließen | Flussvisualisierungen basieren auf Instanzen einer Dimension. Diese Einstellung gibt Ihnen die Möglichkeit, wiederholte Instanzen ein- oder auszuschließen, z. B. Seitenneuladungen. Wiederholungen können jedoch nicht aus Flussvisualisierungen entfernt werden, die Dimensionen mit mehreren Werten enthalten, wie listVars, listProps, s.product, Merchandising-eVars usw. Standard = deaktiviert. |
 | | QuickInfos anzeigen | Bestimmt, ob QuickInfos mit Knotendaten angezeigt werden, wenn der Mauszeiger über einzelne Knoten in einer Flussvisualisierung bewegt wird. |
@@ -174,7 +230,7 @@ Klicken Sie auf die verlinkten Abschnittstitel, um weitere Informationen und den
 | | 100 % gestapelt | Mit dieser Einstellung für die Visualisierungen „Bereich gestapelt“, „Balken gestapelt“ und „Horizontalbalken gestapelt“ wandeln Sie Diagramme in „zu 100 % gestapelte“ Visualisierungen um. <p>Weitere Informationen finden Sie unter [Balken und Balken gestapelt](/help/analysis-workspace/visualizations/bar.md).</p> |
 | **[Histogramm](/help/analysis-workspace/visualizations/histogram.md)** | | |
 | | Anzahl der Buckets | Wählen Sie die Anzahl der Datenbereiche (Buckets) in der Visualisierung aus. Maximal 50 Buckets sind möglich. <p>Weitere Informationen finden Sie unter [Histogramm](/help/analysis-workspace/visualizations/histogram.md).</p> |
-| | Zählmethode | Wählen Sie aus den folgenden Optionen: <ul><li>Treffer</li><li>Besuch</li><li>Besucher</li></ul> <p>In Verbindung mit Seitenansichten können Sie zum Beispiel zwischen „Seitenansichten pro Person“, „Seitenansichten pro Besuch“ oder „Seitenansichten pro Ereignis“ auswählen. Für Treffer wird in einer Freiformtabelle „Vorkommen“ als Metrik der Y-Achse verwendet.</p> |
+| | Zählmethode | Wählen Sie aus den folgenden Optionen: <ul><li>Treffer</li><li>Sitzung</li><li>Benutzer</li></ul> <p>In Verbindung mit Seitenansichten können Sie zum Beispiel zwischen „Seitenansichten pro Person“, „Seitenansichten pro Besuch“ oder „Seitenansichten pro Ereignis“ auswählen. Für Treffer wird in einer Freiformtabelle „Vorkommen“ als Metrik der Y-Achse verwendet.</p> |
 | **[Änderung der Zusammenfassung](/help/analysis-workspace/visualizations/summary-number-change.md)** | | |
 | | Wert | <!-- Seem to be basically the same options as in "Number value options" --> <ul><li>Prozentuale Veränderung</li><li>Rohdifferenz</li></ul> |
 | | Prozentsatz | Zeigt Werte in Prozent für die Visualisierungen der Zusammenfassungsänderung an. |
@@ -201,21 +257,19 @@ Sie können alle Ihre Benutzervoreinstellungen auf die Systemstandardwerte zurü
 
 Diese Aktion kann nicht rückgängig gemacht werden.
 
-1. Wählen Sie in Customer Journey Analytics [!UICONTROL **Komponenten**] **>** [!UICONTROL **Einstellungen**].
-
-   ![Benutzervoreinstellungen](assets/user-preferences.png)
+1. Wählen Sie unter Customer Journey Analytics die Option [!UICONTROL **Komponenten**] **>** [!UICONTROL **Voreinstellungen**] aus dem oberen Menü aus. Oder wählen Sie **[!UICONTROL Projekt]** > **[!UICONTROL Benutzereinstellungen]** aus dem Menü &quot;Workspace&quot;.
 
 1. Wählen Sie oben rechts **[!UICONTROL Standardeinstellungen wiederherstellen]** aus.
 
-1. Wenn Sie dazu aufgefordert werden, wählen Sie **[!UICONTROL Standardeinstellungen wiederherstellen]** aus.
+1. Wählen Sie **[!UICONTROL Standardangaben wiederherstellen]** in **[!UICONTROL Standardeinstellungen des Systems wiederherstellen]**, und wählen Sie aus.
 
 ## [!UICONTROL Dunkles Design]
 
-Wenn Sie einen dunklen Hintergrund für Ihre Adobe Analytics-Benutzeroberfläche bevorzugen, können Sie zu [!UICONTROL Dunkles Design] wechseln.
+Wenn Sie einen dunklen Hintergrund für Ihre Customer Journey Analytics-Benutzeroberfläche bevorzugen, können Sie zu [!UICONTROL Dunkles Thema] wechseln.
 
-1. Klicken Sie oben rechts auf das Experience Cloud-Benutzersymbol.
+1. Wählen Sie oben rechts das Experience Cloud-Benutzersymbol aus.
 
    ![dark-theme](assets/dark-theme.png)
 
-1. Schieben Sie den Umschalter **[!UICONTROL Dunkles Thema]** nach rechts.
+1. Aktivieren Sie **[!UICONTROL dunkles Design]**.
 

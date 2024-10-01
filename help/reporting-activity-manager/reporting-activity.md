@@ -5,20 +5,30 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: 1f5b2a42-162e-45a7-9fd4-8c1557f48bb8
 role: Admin
-source-git-commit: def8b074ea468e409e340415d5e96f75d6b69312
+source-git-commit: 31381cd397a821cc3ff1b3c15ae968a7260a6e9e
 workflow-type: tm+mt
-source-wordcount: '2004'
-ht-degree: 7%
+source-wordcount: '2016'
+ht-degree: 8%
 
 ---
 
-# Berichtsaktivität im Reporting Activity Manager anzeigen
+# Anzeigen von Berichtsaktivität {#view-reporting-activity}
 
 Mit dem [!UICONTROL Reporting Activity Manager] können Administratoren während Spitzenzeiten der Berichterstellung schnell Probleme mit der Berichtskapazität diagnostizieren und beheben.
 
 Weitere Informationen zum Reporting-Aktivitäts-Manager, einschließlich der wichtigsten Vorteile und Berechtigungsanforderungen, finden Sie unter [Übersicht über den Reporting-Aktivitäts-Manager](/help/reporting-activity-manager/reporting-activity-overview.md).
 
-## Berichtsaktivität für alle Verbindungen anzeigen {#view-all-report-suites}
+## Für alle Verbindungen {#view-all-report-suites}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_tools_reportingactivitymanager_connections"
+>title="Verbindungen"
+>abstract="In dieser Tabelle sind die Verbindungen aufgeführt, für die Sie Rechte zur Verwaltung der Berichtsaktivitäten haben. Informationen zu jeder Verbindung sind in jeder Spalte der Tabelle verfügbar."
+
+<!-- markdownlint-enable MD034 -->
+
 
 1. Navigieren Sie unter Customer Journey Analytics zu **[!UICONTROL Tools]** > **[!UICONTROL Berichterstattungs-Aktivitäts-Manager]**.
 
@@ -36,7 +46,7 @@ Weitere Informationen zum Reporting-Aktivitäts-Manager, einschließlich der wic
 
    * Verwenden Sie das Suchfeld, um nach einer bestimmten Verbindung zu suchen. Beginnen Sie mit der Eingabe des Verbindungsnamens oder der ID und die Liste der Verbindungen wird bei der Eingabe aktualisiert.
 
-   * Wählen Sie das Symbol [!UICONTROL **Filter**] ![Filtersymbol](assets/filter-icon.png) aus, um die Liste der Filteroptionen zu erweitern. Sie können nach [!UICONTROL **Favoriten**] oder [!UICONTROL **Status**] filtern.
+   * Wählen Sie ![Filter](/help/assets/icons/Filter.svg) aus, um die Liste der Filteroptionen zu erweitern. Sie können nach [!UICONTROL **Favoriten**] oder [!UICONTROL **Status**] filtern.
 
      Um eine Verbindung als Favoriten zu markieren, wählen Sie das Sternsymbol links neben dem Verbindungsnamen aus.
 
@@ -57,7 +67,7 @@ Weitere Informationen zum Reporting-Aktivitäts-Manager, einschließlich der wic
 
    {style="table-layout:auto"}
 
-## Berichtsaktivität für eine einzelne Verbindung anzeigen
+## Für eine einzelne Verbindung
 
 1. Wählen Sie unter Customer Journey Analytics die Option [!UICONTROL **Tools**] > [!UICONTROL **Reporting Activity Manager**].
 

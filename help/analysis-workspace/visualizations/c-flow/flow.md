@@ -4,35 +4,55 @@ title: Flussübersicht
 feature: Visualizations
 exl-id: 2ef325d9-1d82-46c9-86e3-6b2332548823
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 383fad799944f7405af6de1754aa2e0af83e2cab
 workflow-type: tm+mt
-source-wordcount: '199'
-ht-degree: 93%
+source-wordcount: '260'
+ht-degree: 30%
 
 ---
 
-# Flussübersicht
+# Fluss {#flow}
 
-Die Flussfunktion zeigt Kundenpfade durch Ihre Websites und Programme an.
+<!-- markdownlint-disable MD034 -->
 
-Damit können Sie:
+>[!CONTEXTUALHELP]
+>id="cja_workspace_flow_button"
+>title="Fluss"
+>abstract="Erstellen Sie eine Visualisierung, um den Personenfluss von einem Checkpoint zum nächsten anzuzeigen."
 
-* Visualisieren der Kundenpfade in Ihrer Website oder Anwendung
-* Analysieren, wohin Kunden vor und nach festgelegten Checkpoints navigieren, wie zum Beispiel Einsteig, eine bestimmte Dimension oder Ausstieg
+>[!CONTEXTUALHELP]
+>id="cja_workspace_flow_panel"
+>title="Fluss"
+>abstract="Analysieren Sie den Besuchs- oder Besucherfluss von einem Touchpoint zum nächsten.<br/><br/>**Parameter **<br/>**Beginnt mit**: Fügen Sie eine Dimension, ein Dimensionselement oder eine Metrik hinzu, um die am häufigsten auftretenden Touchpoints nach dem Auftreten der ausgewählten Komponente anzuzeigen.<br/>**Enthält**: Fügen Sie eine Dimension oder ein Dimensionselement hinzu, um die am häufigsten auftretenden Touchpoints vor und nach dem Auftreten der ausgewählten Komponente anzuzeigen.<br/>**Endet mit**: Fügen Sie eine Dimension, ein Dimensionselement oder eine Metrik hinzu, um die am häufigsten auftretenden Touchpoints vor dem Auftreten der ausgewählten Komponente anzuzeigen.<br/>**Pfaddimension**: Fügen Sie eine Dimension hinzu, die als Pfad verwendet werden soll, der zu der ausgewählten Komponente führt oder von dieser weg führt."
+
+<!-- markdownlint-enable MD034 -->
+
+
+
+Die Visualisierung ![GraphPathing](/help/assets/icons/GraphPathing.svg) [!UICONTROL Fluss] zeigt Kundenpfade durch Ihre Websites und Apps.
+
+Mit der Visualisierung können Sie:
+
+* Visualisieren Sie die Journey des Kunden über Ihre Website oder Anwendung.
+* Analysieren Sie, wohin Kunden vor und nach bestimmten Checkpoints gehen, z. B. Einstieg, eine bestimmte Dimension oder Ausstieg.
 * Erstellen Sie Filter, indem Sie einen bestimmten Punkt in einem ausgewählten Pfad angeben
 
-[Video-Tutorial zur Flussvisualisierung](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/analyzing-customer-journeys/flow-visualization.html?lang=de) (4:56)
++++ Zeigen Sie eine Videodemonstration der Visualisierung [!UICONTROL Fluss] an.
 
-## Interdimensionale Flüsse {#in}
+>[!VIDEO](https://video.tv.adobe.com/v/346063/?quality=12)
+
+{{videoaa}}
+
++++
+
+## Interdimensionale Flüsse
 
 Sie können den [Fluss zwischen Dimensionen](/help/analysis-workspace/visualizations/c-flow/multi-dimensional-flow.md) anzeigen. So können Sie beispielsweise in einem Diagramm Seiten mit Abteilungen kombinieren. In diesem Fall würde der Fluss von der Startseite zur Seite „Männer“ und dann zur Abteilung „Schuhe“ verlaufen.
 
 Jede Spalte könnte eine andere Dimension anzeigen. Ziehen Sie einen Dimension per Drag-and-Drop in eine Dropzone, um diese Dimension zum Diagramm hinzuzufügen.
 
-## Konfigurieren einer Flussvisualisierung
+>[!MORELIKETHIS]
+>
+>[Konfigurieren einer Flussvisualisierung](/help/analysis-workspace/visualizations/c-flow/create-flow.md).
+>
 
-Informationen zum Konfigurieren einer Flussvisualisierung finden Sie unter [Konfigurieren einer Flussvisualisierung](/help/analysis-workspace/visualizations/c-flow/create-flow.md).
-
-## Flussdiagramme als Teil von Projekt-CSV-Dateien exportieren {#section_BACD2639A0FC4C49A75398F7D0363D9D}
-
-Flussdiagramme sind Teil der .CSV-Datei eines Projekts, die Sie erstellen können, indem Sie **[!UICONTROL Projekt]** > **[!UICONTROL CSV herunterladen]** aufrufen. Dies ermöglicht es Ihnen, Flussergebnisse in Microsoft Excel (als Tabelle visualisiert) oder anderen Programmen zu analysieren.

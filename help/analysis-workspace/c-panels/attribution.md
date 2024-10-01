@@ -4,14 +4,16 @@ description: Verwendung und Interpretation des Attributionsbedienfelds in Analys
 feature: Panels
 exl-id: 7fdec05b-5d99-48d1-ac1b-c243cb64e487
 role: User
-source-git-commit: c89a28323c9d40a7265cd22994a0d1c484f4c7ee
+source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
 workflow-type: tm+mt
-source-wordcount: '620'
-ht-degree: 80%
+source-wordcount: '669'
+ht-degree: 40%
 
 ---
 
 # Attributionsbedienfeld {#attribution-panel}
+
+<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja_workspace_attribution_button"
@@ -22,46 +24,74 @@ ht-degree: 80%
 >[!CONTEXTUALHELP]
 >id="cja_workspace_attribution_panel"
 >title="Attributionsbedienfeld"
->abstract="Vergleichen und visualisieren Sie im Handumdrehen eine beliebige Anzahl von Attributionsmodellen unter Verwendung verschiedener Dimensionen und Konversionskennzahlen.<br/><br/>**Parameter **<br/>**Kanal**<br/> Die Dimension, der zugeschrieben werden soll. Dabei kann es sich um Marketing-Kanäle, Kampagnen oder beliebige andere Dimensionen handeln.<br/>**Modelle**<br/> Das Modell bestimmt, wie Guthaben zu Touchpoints zugewiesen wird.<br/>**Lookback-Fenster**<br/> Diese Einstellung bestimmt das Fenster der Datenzuordnung, auf das bei jeder Konvertierung die Anwendung erfolgt."
+>abstract="Vergleichen und visualisieren Sie im Handumdrehen eine beliebige Anzahl von Attributionsmodellen unter Verwendung verschiedener Dimensionen und Konversionskennzahlen.<br/><br/>**Parameter **<br/>**Kanal**<br/> Die Dimension, der zugeschrieben werden soll. Diese Dimension kann Marketing-Kanäle, Kampagnen oder eine beliebige andere Dimension sein.<br/>**Modelle**<br/> Das Modell bestimmt, wie Guthaben zu Touchpoints zugewiesen wird.<br/>**Lookback-Fenster**<br/> Diese Einstellung bestimmt das Fenster der Datenzuordnung, das für jede Konvertierung gilt."
 >additional-url="https://www.youtube.com/watch?v=Yu0hy2klzA0" text="Attribution IQ-Bedienfeld"
 
+<!-- markdownlint-enable MD034 -->
 
-Das [!UICONTROL Attributionsbedienfeld] bietet eine einfache Möglichkeit, eine Analyse zu erstellen, mit der verschiedene Attributionsmodelle verglichen werden. Es handelt sich um eine Funktion, die Ihnen einen speziellen Arbeitsbereich bietet, um Attributionsmodelle zu verwenden und zu vergleichen.
+
+Das **[!UICONTROL Attributionsbedienfeld]** bietet eine einfache Möglichkeit, eine Analyse zu erstellen, mit der verschiedene Attributionsmodelle verglichen werden. Der Bereich bietet Ihnen einen eigenen Arbeitsbereich zum Verwenden und Vergleichen von Attributionsmodellen.
 
 Customer Journey Analytics erweitert die Attribution und ermöglicht Ihnen Folgendes:
 
-* Die Attribution über bezahlte Medien definieren: Dimensionen, Metriken, Kanäle oder Ereignisse können auf Modelle (z. B. die interne Suche) angewendet werden, nicht nur Marketing-Kampagnen.
-* Den Vergleich für unbegrenzte Attributionsmodelle verwenden: Vergleichen Sie dynamisch so viele Modelle, wie Sie möchten.
+* Definition der Attribution über gebührenpflichtige Medien: Jede Dimension, Metrik, jeder Kanal oder jedes Ereignis kann auf Modelle (z. B. interne Suche) und nicht nur auf Marketing-Kampagnen angewendet werden.
+* Verwenden Sie einen unbegrenzten Attributionsmodellvergleich: Vergleichen Sie dynamisch beliebig viele Modelle.
 * Implementierungsänderungen vermeiden: Mit der Berichtszeitverarbeitung und kontextabhängigen Sitzungen kann der Journey-Kontext für Kunden integriert und zur Laufzeit angewendet werden.
 * Die Sitzung erstellen, die Ihrem Attributionsszenario am ehesten entspricht.
-* Die Attribution nach Filtern aufschlüsseln: Vergleichen Sie problemlos die Leistung Ihrer Marketing-Kanäle über alle wichtigen Filter hinweg (z. B. Neu- mit Bestandskunden, Produkt X vs. Produkt Y, Loyalitätsgrad oder CLV).
+* Attribution nach Filtern aufschlüsseln: Vergleichen Sie einfach die Leistung Ihrer Marketing-Kanäle über einen beliebigen wichtigen Filter (z. B. Neu vs. Wiederholte Kunden, Produkt X vs. Produkt Y, Treuestufe oder CLV).
 * Wechsel zwischen Kanälen und Multi-Touch-Analyse beachten: Verwenden Sie Venn-Diagramme und Histogramme und erstellen Sie Trends anhand von Attributionsergebnissen.
 * Wichtige Marketing-Sequenzen visuell analysieren: Erkunden Sie zur Konversion führende Pfade visuell mithilfe von mehrknotigen Fluss- und Fallout-Visualisierungen.
 * Berechnete Metriken erstellen: Verwenden Sie eine beliebige Anzahl an Attributionszuordnungsmethoden.
 
-## Erstellen eines Attributionsbedienfeldes
+## Verwenden Sie stattdessen 
 
-1. Klicken Sie links auf das Bedienfeldsymbol.
-1. Ziehen Sie das [!UICONTROL Attributionsbedienfeld] in Ihr Analysis Workspace-Projekt.
+So verwenden Sie ein Bedienfeld &quot;**[!UICONTROL Attribution]**&quot;:
 
-   ![Das Fenster &quot;Neues Projekt&quot;, in dem der Bereich &quot;Attribution&quot;hervorgehoben wird.](assets/Attribution_Panel_1.png)
+1. Erstellen Sie ein Bedienfeld &quot;**[!UICONTROL Attribution]**&quot;. Informationen zum Erstellen eines Bedienfelds finden Sie unter [Erstellen eines Bedienfelds](panels.md#create-a-panel).
 
-1. Fügen Sie eine Metrik hinzu, die Sie zuordnen möchten, und fügen Sie eine beliebige Dimension hinzu, gegen die Sie zuordnen möchten. Beispiele sind Marketing-Kanäle oder benutzerdefinierte Dimensionen wie interne Promotions.
+1. Geben Sie die [Eingabe](#panel-input) für das Bedienfeld an.
 
-   ![Das Fenster &quot;Attributionsbereich&quot;mit mehreren ausgewählten Dimensionen und Metriken.](assets/attribution_panel2.png)
+1. Beobachten Sie die [Ausgabe](#panel-output) für das Bedienfeld.
 
-1. Wählen Sie die Attributionsmodelle und das Lookback-Fenster aus, die Sie vergleichen möchten.
+### Bedienfeldeingabe
 
-1. Das Attributionsbedienfeld gibt einen umfangreichen Satz an Daten und Visualisierungen zurück, die die Attribution für die ausgewählte Dimension und Metrik vergleichen.
+Sie können das Attributionsbedienfeld mithilfe der folgenden Eingabeeinstellungen konfigurieren:
 
-   ![Die Visualisierungen des Attributionsbedienfelds, die ausgewählte Metriken und Dimensionen vergleichen.](assets/attr_panel_vizs.png)
+1. Fügen Sie eine **[!UICONTROL Erfolgsmetrik]** und eine Dimension aus dem **[!UICONTROL Kanal]** hinzu, für den Sie eine Zuordnung vornehmen möchten. Beispiele sind Marketing-Kanäle oder benutzerdefinierte Dimensionen wie interne Promotions.
 
-## Visualisierungen der Attribution
+   ![Das Fenster &quot;Attributionsbereich&quot;mit mehreren ausgewählten Dimensionen und Metriken.](assets/attribution-panel.png)
 
-* **Gesamtmetrik**: Die Gesamtanzahl der im Berichtszeitfenster aufgetretenen Konversionen. Hierbei handelt es sich um die Konversionen, die über die von Ihnen ausgewählte Dimension hinweg mit Attributen versehen werden.
+1. Wählen Sie ein oder mehrere [Attributionsmodelle](#attribution-models) aus **[!UICONTROL Einbezogene Modelle]** und ein [Lookback-Fenster](#lookback-window) aus dem **[!UICONTROL Lookback-Fenster]** aus, das Sie zum Vergleich verwenden möchten.
+
+1. Wählen Sie **[!UICONTROL Build]** aus, um die Visualisierungen im Bedienfeld zu erstellen.
+
+### Bedienfeldausgabe
+
+Das Bedienfeld **[!UICONTROL Attribution]** gibt einen umfangreichen Satz von Daten und Visualisierungen zurück, die die Attribution für die ausgewählte Dimension und Metrik vergleichen.
+
+![Die Visualisierungen des Attributionsbedienfelds, die ausgewählte Metriken und Dimensionen vergleichen.](assets/attr_panel_vizs.png)
+
+### Visualisierungen der Attribution
+
+Die folgende Visualisierung ist Teil der Bereichsausgabe.
+
+* **Metrik insgesamt**: Die Gesamtanzahl der Konversionen, die im Berichtszeitfenster aufgetreten sind und der ausgewählten Dimension zugeordnet werden.
 * **Balkendiagramm für den Vergleich der Metrik-Attribution**: Vergleicht visuell die zugeordneten Konversionen über die einzelnen Dimensionselemente der von Ihren ausgewählten Dimension hinweg. Jede Balkenfarbe stellt ein bestimmtes Attributionsmodell dar.
-* **Attributionsvergleichstabelle**: Zeigt dieselben Daten wie das Balkendiagramm in Tabellenform an. Durch die Auswahl verschiedener Spalten oder Zeilen in dieser Tabelle werden das Balkendiagramm sowie mehrere andere Visualisierungen im Bedienfeld gefiltert. Diese Tabelle verhält sich ähnlich wie jede andere Freiformtabelle in Workspace. So können Sie Komponenten wie Metriken, Filter oder Aufschlüsselungen hinzufügen.
-* **Überlagerungsdiagramm**: Ein Venn-Diagramm, das die drei wichtigsten Dimensionselemente zeigt und wie oft sie gemeinsam an einer Konversion beteiligt sind. Beispielsweise gibt die Größe der Blasenüberschneidung an, wie oft Konversionen auftraten, wenn eine Person beiden Dimensionselementen ausgesetzt war. Durch die Auswahl anderer Zeilen in der angrenzenden Freiformtabelle wird die Visualisierung entsprechend Ihrer Auswahl aktualisiert.
-* **Leistungsdetails**: Hiermit können Sie bis zu drei Attributionsmodelle visuell mit einem Streudiagramm vergleichen.
+* **Attributionsvergleichstabelle**: Zeigt dieselben Daten wie das Balkendiagramm in Tabellenform an. Durch die Auswahl verschiedener Spalten oder Zeilen in dieser Tabelle werden das Balkendiagramm sowie mehrere andere Visualisierungen im Bedienfeld gefiltert. Diese Tabelle ähnelt jeder anderen Freiformtabelle in Workspace. Sie ermöglicht das Hinzufügen von Komponenten wie Metriken, Filtern oder Aufschlüsselungen.
+* **Überlagerungsdiagramm**: Eine Venn-Visualisierung, die die drei wichtigsten Dimensionselemente zeigt und wie oft sie gemeinsam an einer Konversion beteiligt sind. Beispielsweise gibt die Größe der Blasenüberschneidung an, wie oft Konversionen auftraten, wenn eine Person beiden Dimensionselementen ausgesetzt war. Durch die Auswahl anderer Zeilen in der angrenzenden Freiformtabelle wird die Visualisierung entsprechend Ihrer Auswahl aktualisiert.
+* **Leistungsdetails**: Eine Streuvisualisierung zum visuellen Vergleich von bis zu drei Attributionsmodellen.
 * **Trendleistung**: Zeigt den Trend der zugeordneten Konvertierungen für das Element der obersten Dimension. Durch die Auswahl anderer Zeilen in der angrenzenden Freiformtabelle wird die Visualisierung entsprechend Ihrer Auswahl aktualisiert.
 * **Fluss**: Hiermit können Sie sehen, mit welchen Kanälen am häufigsten interagiert wird und in welcher Reihenfolge sie auf dem Journey einer Person angeordnet sind.
+
+## Attributionsmodelle
+
+{{attribution-models-details}}
+
+## Lookback-Fenster
+
+{{attribution-lookback-window}}
+
+>[!MORELIKETHIS]
+>
+> [Erstellen eines Bedienfelds](/help/analysis-workspace/c-panels/panels.md#create-a-panel)
+>

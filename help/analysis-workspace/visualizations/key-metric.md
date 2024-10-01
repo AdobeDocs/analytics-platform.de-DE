@@ -4,24 +4,32 @@ title: Zusammenfassung einer Schlüsselmetrik
 feature: Visualizations
 exl-id: ef606c53-b370-419a-904b-573ee6d70a8d
 role: User
-source-git-commit: b196b8c05ba05a3f46d71c10fdcaa2ad8ef0dcd6
+source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
 workflow-type: tm+mt
-source-wordcount: '649'
-ht-degree: 84%
+source-wordcount: '585'
+ht-degree: 35%
 
 ---
 
-# Zusammenfassung einer Schlüsselmetrik
+# Zusammenfassung einer Schlüsselmetrik {#key-metric-summary}
 
-Mit der [!UICONTROL Zusammenfassung der Schlüsselmetrik] können Sie sehen, wie eine wichtige Metrik innerhalb eines einzigen Zeitrahmens trendet. Außerdem können Sie damit die Leistung von Metriken über zwei Zeitrahmen hinweg vergleichen. Sie bietet die Vorteile mehrerer Visualisierungen, die in einer Visualisierung kombiniert werden:
+<!-- markdownlint-disable MD034 -->
 
-* **[!UICONTROL Linie]** Visualisierungen, die zeigen, wie die Metrik für die primären und Vergleichsdatumsbereiche trendet.
+>[!CONTEXTUALHELP]
+>id="cja_workspace_keymetricsummary_button"
+>title="Zusammenfassung einer Schlüsselmetrik"
+>abstract="Erstellen Sie eine Visualisierung, die einer Kombination aus den Diagrammen für Zeilen-, Zusammenfassungsänderung und Zusammenfassungsnummer entspricht. Verwenden Sie diese Visualisierung, um zu vergleichen, wie wichtige Metriken zwischen zwei Zeiträumen Trend verfolgen."
 
-* **[!UICONTROL Zusammenfassende prozentuale Änderung]**, die die Zunahme oder Abnahme der Metrik zwischen dem primären und dem Vergleichsdatumsbereich anzeigt
+<!-- markdownlint-enable MD034 -->
+
+
+Mit der Visualisierung ![Schlüsselmetriken](/help/assets/icons/KeyMetrics.svg) **[!UICONTROL Schlüsselmetrik-Zusammenfassung]** können Sie sehen, wie eine wichtige Metrik innerhalb eines einzigen Zeitrahmens in Trends gerät. Außerdem können Sie damit die Leistung von Metriken über zwei Zeitrahmen hinweg vergleichen. Sie bietet die Vorteile mehrerer Visualisierungen, die in einer Visualisierung kombiniert werden:
+
+* **[!UICONTROL Linienvisualisierung]** zeigt, wie die Metrik Trends für die primären und Vergleichsdatumsbereiche verwendet.
+
+* **[!UICONTROL Veränderung des Zusammenfassungs-Prozentsatzes]** zeigt die Metrikerhöhung oder -verringerung zwischen dem primären und dem Vergleichsdatumsbereich
 
 * Aktueller Gesamtwert ([!UICONTROL **Summenzahl**]) für die Metrik
-
-## Anwendungsbeispiele
 
 Diese Visualisierung eignet sich für eine Vielzahl gängiger Anwendungsfälle, darunter:
 
@@ -31,15 +39,15 @@ Diese Visualisierung eignet sich für eine Vielzahl gängiger Anwendungsfälle, 
 
 * Eine Führungskraft, die wissen möchte, wie sich die Buchungen in diesem Quartal im Vergleich zum letzten Quartal verändert haben.
 
-## Konfigurieren der Zusammenfassung einer Schlüsselmetrik
+## Verwenden Sie stattdessen 
 
-1. Ziehen Sie die Visualisierung **[!UICONTROL Zusammenfassung einer Schlüsselmetrik]** aus dem Menü **[!UICONTROL Visualisierungen]** in der linken Leiste in ein Bedienfeld.
+1. Fügen Sie eine Visualisierung für ![KeyMetrics](/help/assets/icons/KeyMetrics.svg) **[!UICONTROL Schlüsselmetrik-Zusammenfassung]** hinzu. Siehe [Hinzufügen einer Visualisierung zu einem Bedienfeld](freeform-analysis-visualizations.md#add-visualizations-to-a-panel).
 
-1. Konfigurieren Sie die Visualisierung, indem Sie eine Metrik, einen primären Datumsbereich, einen Vergleichsdatumsbereich und einen Filter auswählen (falls gewünscht):
+1. Konfigurieren Sie die Visualisierung, indem Sie eine **[!UICONTROL Metrik]**, einen **[!UICONTROL Primären Datumsbereich]**, einen **[!UICONTROL Vergleichsdatumsbereich]** (optional) und einen **[!UICONTROL Filter]** (optional) auswählen:
 
-   ![Schlüsselmetrikkonfiguration, die die Optionen für Metrik, Primärdatumsbereich, Vergleichsdatumsbereich und Segment anzeigt.](assets/key-metric-config.png)
+   ![Schlüsselmetrikkonfiguration, die die Optionen für Metrik, Primärdatumsbereich, Vergleichsdatumsbereich und Segment anzeigt.](assets/key-metrics-config.png)
 
-   | Konfigurationseinstellungen | Definition |
+   | Option | Beschreibung |
    | --- | --- |
    | **[!UICONTROL Metrik]** | Wählen Sie die Metrik aus, die Sie überprüfen möchten. Alle Metriken werden unterstützt. |
    | **[!UICONTROL Primärer Datumsbereich]** | Der aktuelle Datumsbereich für die Freiformtabelle. |
@@ -48,7 +56,7 @@ Diese Visualisierung eignet sich für eine Vielzahl gängiger Anwendungsfälle, 
 
    {style="table-layout:auto"}
 
-1. Klicken Sie auf **[!UICONTROL Erstellen]**.
+1. Wählen Sie **[!UICONTROL Erstellen]** aus.
 
 <!--## How the Key Metric Summary visualization handles the comparison date range
 
@@ -77,49 +85,43 @@ Comparison date range is set to a non-relative date range, such as 'Feb 2nd, 202
 
 When you change the panel's date range to '4 days ago', the comparison date range remains at the previous selection. -->
 
-## Ausgabe anzeigen
+Die Ausgabe der Schlüsselmetrik-Zusammenfassung sieht wie folgt aus:
 
-Die Ausgabe sollte ungefähr so aussehen:
+![Schlüsselmetrikausgabe, die die Metrik, die Zusammenfassungsänderung, die Zusammenfassungsnummer und die Liniendiagramme anzeigt.](assets/key-metrics.png)
 
-![Schlüsselmetrikausgabe, die die Metrik, die Zusammenfassungsänderung, die Zusammenfassungsnummer und die Liniendiagramme anzeigt.](assets/key-metric-output.png)
+* Das Liniendiagramm **[!UICONTROL Vorheriger Zeitraum]** (immer grau dargestellt) entspricht dem **[!UICONTROL Vergleichsdatumsbereich]** im Konfigurationsschritt.
 
-Bitte beachten Sie:
-
-* Der Kantengraph **[!UICONTROL Vorheriger Zeitraum]** (immer grau dargestellt) entspricht dem **[!UICONTROL Vergleichsdatumsbereich]** im Konfigurationsschritt.
-
-* Wenn während der Konfiguration kein Vergleichsdatumsbereich angegeben ist, oder in den Visualisierungseinstellungen ausgeblendet wird, wird nur das Liniendiagramm für den primären Datumsbereich angezeigt. Die Änderung der Zusammenfassung wird ausgeblendet.
+* Wenn während der Konfiguration kein Vergleichsdatumsbereich angegeben ist, oder in den Visualisierungseinstellungen ausgeblendet wird, wird nur das Liniendiagramm für den primären Datumsbereich angezeigt. Die Zusammenfassungsänderung ist ausgeblendet.
 
 * Von hier aus können Sie mit dem Mauszeiger über die Liniendiagramme fahren, um die Statistiken für einzelne Tage zu sehen:
 
-![Besuchsstatistiken](assets/key-metric-output2.png)
 
-## Visualisierungseinstellungen
+## Konfigurieren
 
-Die Zusammenfassung der Schlüsselmetriken bietet mehrere flexible Einstellungen, um eine bessere Berichterstellung und Kommunikation wichtiger Metriken zu ermöglichen. Die Einstellungen können über das Zahnradsymbol in der oberen rechten Ecke der Visualisierung aufgerufen werden.
+Nach dem Erstellen der Visualisierung können Sie die ursprüngliche Konfiguration bearbeiten.
 
-![Schlüsselmetrikzusammenfassungs-Einstellungen, die den Anzeigetyp, die allgemeinen und die Anzeigeoptionen der Zusammenfassung anzeigen.](assets/key-metric-settings.png)
+1. Wählen Sie oben in der Visualisierung ![Bearbeiten](/help/assets/icons/Edit.svg) **[!UICONTROL Visualisierung konfigurieren]** aus.
+
+   Sie werden zum ursprünglichen Konfigurationsdialogfeld zurückgeführt.
+
+1. Ändern Sie die Einstellungen wie gewünscht. Wählen Sie **[!UICONTROL Zurücksetzen]** aus, um die aktuellen Einstellungen zurückzusetzen. Wählen Sie **[!UICONTROL Build]** aus, um die Visualisierung neu zu erstellen.
+
+## Einstellungen
+
+Im Rahmen der Visualisierungseinstellungen sind spezifische Einstellungen für Schlüsselmetriken verfügbar.
 
 | Einstellung | Beschreibung |
-| --- | --- |
-| **[!UICONTROL Prozentuale Veränderung betonen]** | Anzeige der Zusammenfassungsänderung in hervorgehobener fetter Schrift in der Mitte der Visualisierung |
-| **[!UICONTROL Zahlenwert hervorheben]** | Anzeige der Zusammenfassungsanzahl in hervorgehobener fetter Schrift in der Mitte der Visualisierung |
-| **[!UICONTROL Legende eingeblendet]** | Ein- oder Ausblenden der Legende am unteren Rand der Visualisierung |
-| **[!UICONTROL Anmerkungen anzeigen]** | Von einem Administrator hinzugefügte Anmerkungen anzeigen oder ausblenden |
-| **[!UICONTROL Sparklines anzeigen]** | Liniendiagramme am unteren Rand des Diagramms anzeigen oder ausblenden. Wenn sie ausgeblendet ist, wird die Legende so geändert, dass sie keinen visuellen Bezug mehr zu den Linien hat. |
-| **[!UICONTROL Min. und Max. für Wortgrafiken anzeigen]** | Ein- und Ausblenden von Minimal- und Maximalwerten in Primär- und Vergleichsliniendiagrammen |
-| **[!UICONTROL Vergleich anzeigen]** | Vergleichsdaten ein- oder ausblenden. Wenn diese Option ausgeblendet ist, werden sowohl das Vergleichszeilendiagramm als auch die Zusammenfassungsänderung der Objekte ausgeblendet. |
-| **[!UICONTROL Gesamtanzahl anzeigen]** | Zusammenfassungsnummer anzeigen oder ausblenden |
-| **[!UICONTROL Rohdifferenz anzeigen]** | Rohdifferenz zwischen dem Gesamtwert der Metrik im primären Datumsbereich und im sekundären Datumsbereich anzeigen oder ausblenden |
-| **[!UICONTROL Wert kürzen]** | Abkürzen von Zahlenwerten zur Vereinfachung der kommunizierten Einblicke (z. B. 20.000 -> 20K) |
+|---|---|
+| **[!UICONTROL Anzeigetyp der Zusammenfassung]** | Wählen Sie zwischen **[!UICONTROL Prozentänderung hervorheben]** oder **[!UICONTROL Wert der Nummer hervorheben]**. |
+| **[!UICONTROL Trendlinien anzeigen]** | Trendlinien in der Visualisierung anzeigen. |
+| **[!UICONTROL Maximale und minimale Anzahl an Trendlinien anzeigen]** | Zeigt maximalen und minimalen Wert für Trendlinien an. |
+| **[!UICONTROL Vergleichsprozentsatz und Trendlinie anzeigen]** | Zeigt den Vergleichsprozentsatz mit der Trendlinie an. Wenn diese Option nicht ausgewählt ist, werden beide ausgeblendet. |
+| **[!UICONTROL Zahlenwertoptionen]** | **[!UICONTROL Gesamtanzahl anzeigen]** oder **[!UICONTROL Rohdifferenz anzeigen]** für den Zahlenwert anzeigen. |
+| **[!UICONTROL Wert kürzen]** | Wählen Sie **[!UICONTROL Wert abkürzen]** aus, um den Zahlenwert intelligent abzukürzen. Wenn diese Option aktiviert ist, geben Sie eine Zahl ein, um die Abkürzung zu definieren. Beispiel:<br/><table><tr><td>**Ausgangswert**</td><td>**Abkürzung**</td><td>**Ergebnis**</td></tr><tr><td>12.011.141,25 $</td><td>Nicht ausgewählt</td><td  align="right">12.011.141,25 $</td></tr><tr><td>12.011.141,25 $</td><td>Ausgewählt, auf 1 gesetzt</td><td align="right">12 Mio. USD</td></tr><tr><td>12.011.141,25 $</td><td>Ausgewählt, auf 2 gesetzt</td><td  align="right">12,0 Mio. $</td></tr><tr><td>12.011.141,25 $</td><td>Ausgewählt, auf 2 gesetzt</td><td align="right">12,011 Mio. $</td></tr><tr><td>12.011.141,25 $</td><td>Select, auf 3 setzen</td><td align="right">12,011 Mio. $</td></tr></table> |
 
-## Visualisierung bearbeiten
-
-Nach dem Erstellen der Visualisierung können Sie die ursprüngliche Konfiguration noch bearbeiten.
-
-1. Klicken Sie oben rechts in der Visualisierung auf das Stiftsymbol (neben dem Zahnradsymbol für Einstellungen).
-
-   ![Symbol für die Visualisierungsbearbeitung.s](assets/edit-icon.png)
-
-   Sie gelangen nun zurück zur ursprünglichen Konfigurationsansicht.
-
-1. Ändern Sie die Metrik, den primären Datumsbereich, den Vergleichsdatumsbereich oder den Filter wie gewünscht.
+>[!MORELIKETHIS]
+>
+>[Hinzufügen einer Visualisierung zu einem Bedienfeld](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
+>[Visualisierungseinstellungen](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
+>[Kontextmenü &quot;Visualisierung&quot;](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
+>

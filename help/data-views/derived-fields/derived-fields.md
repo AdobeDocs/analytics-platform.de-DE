@@ -5,14 +5,24 @@ solution: Customer Journey Analytics
 feature: Derived Fields
 exl-id: bcd172b2-cd13-421a-92c6-e8c53fa95936
 role: Admin
-source-git-commit: 1fddf0e8421b35021a1f1641a684cacbc0ec1f0d
+source-git-commit: a236b2126c4b998b4d97caab014556e3ee3a9e83
 workflow-type: tm+mt
-source-wordcount: '8366'
-ht-degree: 12%
+source-wordcount: '8842'
+ht-degree: 16%
 
 ---
 
-# Abgeleitete Felder
+# Abgeleitete Felder {#derived-fields}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_dataview_derivedfields"
+>title="Abgeleitete Felder"
+>abstract="Mit einem abgeleiteten Feld können Datenmanipulationen direkt über einen anpassbaren Regelgenerator definiert werden. Dieses abgeleitete Feld kann dann als Komponente (Metrik oder Dimension) im Arbeitsbereich verwendet oder weiterdefiniert und als Komponente in der Datenansicht eingesetzt werden."
+
+<!-- markdownlint-enable MD034 -->
+
 
 Abgeleitete Felder sind ein wichtiger Aspekt der Echtzeitberichterstellungsfunktion in Adobe Customer Journey Analytics. Mit einem abgeleiteten Feld können Sie mithilfe eines anpassbaren Regel-Builders spontan (häufig komplexe) Datenmanipulationen definieren. Anschließend können Sie dieses abgeleitete Feld als Komponente (Metrik oder Dimension) in [Workspace](../../analysis-workspace/home.md) verwenden oder das abgeleitete Feld als Komponente in der [Datenansicht](../data-views.md) weiter definieren.
 
@@ -32,6 +42,8 @@ Wenn Sie ein abgeleitetes Feld erstellen oder bearbeiten, verwenden Sie die abge
 
 ![Screenshot des Dialogfelds &quot;Abgeleitetes Feld&quot;](assets/derived-field-dialog.png)
 
+
+![ProgrammOverview](/help/assets/icons/ProgramOverview.svg)
 
 |  | Name | Beschreibung |
 |---------|----------|--------|
@@ -386,6 +398,16 @@ Für jede unterstützte Funktion finden Sie im Folgenden Details zu:
 
 ### Fall wenn {#casewhen}
 
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_dataview_derivedfields_casewhen"
+>title="Fall wenn"
+>abstract="Diese Funktion bietet die Möglichkeit, Bedingungen basierend auf definierten Kriterien aus einem oder mehreren Feldern anzuwenden. Diese Kriterien werden dann verwendet, um die Werte in dem neuen, abgeleiteten Feld auf der Grundlage der Reihenfolge der Bedingungen zu definieren."
+
+<!-- markdownlint-enable MD034 -->
+
+
 Wendet Bedingungen an, die auf definierten Kriterien aus einem oder mehreren Feldern basieren. Diese Kriterien werden dann verwendet, um die Werte in einem neuen abgeleiteten Feld basierend auf der Reihenfolge der Bedingungen zu definieren.
 
 +++ Details
@@ -616,6 +638,16 @@ Die folgenden Einschränkungen gelten und werden erzwungen, wenn *die Werte* und
 
 ### Klassifizieren {#classify}
 
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_dataview_derivedfields_classify"
+>title="Klassifizieren"
+>abstract="Diese Funktion bietet die Möglichkeit, einen Satz von Werten zu definieren, die durch Texteingabe durch entsprechende Werte ersetzt werden."
+
+<!-- markdownlint-enable MD034 -->
+
+
 Definiert einen Satz von Werten, die in einem neuen abgeleiteten Feld durch entsprechende Werte ersetzt werden.
 
 +++ Details
@@ -624,7 +656,7 @@ Definiert einen Satz von Werten, die in einem neuen abgeleiteten Feld durch ents
 
 | Eingabedatentyp | Eingabe | Einbezogene Operatoren | Einschränkungen | Ausgabe |
 |---|---|---|---|---|
-| <ul><li>Zeichenfolge</li><li>Numerisch</li><li>Datum</li></ul> | <ul><li>[!UICONTROL Zu klassifizierendes Feld]:<ul><li>Regeln</li><li>Standardfelder</li><li>Felder</li></ul></li><li>[!UICONTROL Wenn der Wert gleich] und [!UICONTROL Werte durch ] ersetzen:</p><ul><li>Zeichenfolge</li></ul><li>Originalwerte anzeigen<ul><li>Boolesch</li></ul></li></ul> | <p>-/-</p> | <ul><li>5 Funktionen pro abgeleitetem Feld</li><li>200 [Operatoren](#operators) pro abgeleitetem Feld. Jeder Eintrag für [!UICONTROL Wenn der Wert gleich dem ursprünglichen Wert ] [!UICONTROL Wert durch neuen Wert ersetzen] ist als Vorgang zu betrachten.</li></ul> | <p>Neues abgeleitetes Feld</p> |
+| <ul><li>Zeichenfolge</li><li>Numerisch</li><li>Datum</li></ul> | <ul><li>[!UICONTROL Zu klassifizierendes Feld]:<ul><li>Regeln</li><li>Standardfelder</li><li>Felder</li></ul></li><li>[!UICONTROL Wenn der Wert gleich] und [!UICONTROL Werte durch ] ersetzen:</p><ul><li>Zeichenfolge</li></ul><li>Originalwerte anzeigen<ul><li>Boolesch</li></ul></li></ul> | <p>Nicht angegeben</p> | <ul><li>5 Funktionen pro abgeleitetem Feld</li><li>200 [Operatoren](#operators) pro abgeleitetem Feld. Jeder Eintrag für [!UICONTROL Wenn der Wert gleich dem ursprünglichen Wert ] [!UICONTROL Wert durch neuen Wert ersetzen] ist als Vorgang zu betrachten.</li></ul> | <p>Neues abgeleitetes Feld</p> |
 
 {style="table-layout:auto"}
 
@@ -751,6 +783,16 @@ Die folgenden zusätzlichen Funktionen sind in der Benutzeroberfläche der Regel
 
 ### Verketten {#concatenate}
 
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_dataview_derivedfields_concatenate"
+>title="Verketten"
+>abstract="Diese Funktion bietet die Möglichkeit, zwei oder mehr Felder, abgeleitete Felder oder von Benutzenden eingegebene Werte in einem einzigen Feld mit definierten Trennzeichen zu kombinieren"
+
+<!-- markdownlint-enable MD034 -->
+
+
 Verbindet Feldwerte in einem neuen abgeleiteten Feld mit definierten Trennzeichen.
 
 +++ Details
@@ -759,7 +801,7 @@ Verbindet Feldwerte in einem neuen abgeleiteten Feld mit definierten Trennzeiche
 
 | Eingabedatentyp | Eingabe | Einbezogene Operatoren | Einschränkungen | Ausgabe |
 |---|---|---|---|---|
-| <ul><li>Zeichenfolge</li></ul> | <ul><li>[!UICONTROL Wert]:<ul><li>Regeln</li><li>Standardfelder</li><li>Felder</li><li>Zeichenfolge</li></ul></li><li>[!UICONTROL Trennzeichen]:<ul><li>Zeichenfolge</li></ul></li> </ul> | <p>-/-</p> | <p>2 Funktionen pro abgeleitetem Feld</p> | <p>Neues abgeleitetes Feld</p> |
+| <ul><li>Zeichenfolge</li></ul> | <ul><li>[!UICONTROL Wert]:<ul><li>Regeln</li><li>Standardfelder</li><li>Felder</li><li>Zeichenfolge</li></ul></li><li>[!UICONTROL Trennzeichen]:<ul><li>Zeichenfolge</li></ul></li> </ul> | <p>Nicht angegeben</p> | <p>2 Funktionen pro abgeleitetem Feld</p> | <p>Neues abgeleitetes Feld</p> |
 
 {style="table-layout:auto"}
 
@@ -828,6 +870,16 @@ Sie definieren ein abgeleitetes `Origin - Destination` -Feld. Verwenden Sie die 
 
 ### Deduplizieren {#dedup}
 
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_dataview_derivedfields_deduplicate"
+>title="Deduplizieren"
+>abstract="Mit dieser Funktion kann ein Feld so konfiguriert werden, dass es entweder auf Sitzungs- oder auf Personenebene nur Werte zählt, die sich nicht wiederholen. Außerdem kann mit einer Deduplizierungs-ID sichergestellt werden, dass auf der Grundlage einer bestimmten ID (z. B. einer Kauf-ID) nur ein Wert verwendet wird (entweder die erste oder die letzte Instanz)."
+
+<!-- markdownlint-enable MD034 -->
+
+
 Verhindert die mehrfache Zählung eines Werts.
 
 +++ Details
@@ -837,7 +889,7 @@ Verhindert die mehrfache Zählung eines Werts.
 
 | Eingabedatentyp | Eingabe | Einbezogene Operatoren | Einschränkungen | Ausgabe |
 |---|---|---|---|---|
-| <ul><li>Zeichenfolge</li><li>Numerisch</li></ul> | <ul><li>[!UICONTROL Wert]:<ul><li>Regeln</li><li>Standardfelder</li><li>Felder</li><li>Zeichenfolge</li></ul></li><li>[!UICONTROL Umfang]:<ul><li>Benutzer</li><li>Sitzung</li></ul></li><li>[!UICONTROL Deduplizierungs-ID]:<ul><li>Regeln</li><li>Standardfelder</li><li>Felder</li><li>Zeichenfolge</li></ul><li>[!UICONTROL Wert, der beibehalten werden soll]:<ul><li>Erste Instanz beibehalten</li><li>Letzte Instanz beibehalten</li></ul></li></ul> | <p>-/-</p> | <p>5 Funktionen pro abgeleitetem Feld</p> | <p>Neues abgeleitetes Feld</p> |
+| <ul><li>Zeichenfolge</li><li>Numerisch</li></ul> | <ul><li>[!UICONTROL Wert]:<ul><li>Regeln</li><li>Standardfelder</li><li>Felder</li><li>Zeichenfolge</li></ul></li><li>[!UICONTROL Umfang]:<ul><li>Benutzer</li><li>Sitzung</li></ul></li><li>[!UICONTROL Deduplizierungs-ID]:<ul><li>Regeln</li><li>Standardfelder</li><li>Felder</li><li>Zeichenfolge</li></ul><li>[!UICONTROL Wert, der beibehalten werden soll]:<ul><li>Erste Instanz beibehalten</li><li>Letzte Instanz beibehalten</li></ul></li></ul> | <p>Nicht angegeben</p> | <p>5 Funktionen pro abgeleitetem Feld</p> | <p>Neues abgeleitetes Feld</p> |
 
 {style="table-layout:auto"}
 
@@ -911,7 +963,17 @@ Sie definieren ein neues abgeleitetes `Tracking Code (deduplicated)` -Feld. Mit 
 
 <!-- FIND AND REPLACE -->
 
-### Suchen und ersetzen {#find-replace}
+### Suchen und ersetzen {#find-and-replace}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_dataview_derivedfields_findandreplace"
+>title="Suchen und Ersetzen"
+>abstract="Diese Funktion bietet die Möglichkeit, alle Werte in einem ausgewählten Feld zu finden und diese Werte durch einen anderen Wert in einem neuen, abgeleiteten Feld zu ersetzen."
+
+<!-- markdownlint-enable MD034 -->
+
 
 Sucht alle Werte in einem ausgewählten Feld und ersetzt diese Werte durch einen anderen Wert in einem neuen abgeleiteten Feld.
 
@@ -983,6 +1045,16 @@ Sie definieren ein abgeleitetes `Email Marketing (updated)` -Feld. Sie verwenden
 
 ### Suche {#lookup}
 
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_dataview_derivedfields_lookup"
+>title="Suche"
+>abstract="Diese Funktion ermöglicht die Verwendung von Feldern aus einem Lookup-Datensatz unter Verwendung eines übereinstimmenden Schlüssels zwischen Datensätzen."
+
+<!-- markdownlint-enable MD034 -->
+
+
 Sucht Werte mithilfe eines Felds aus einem Lookup-Datensatz und gibt einen Wert in einem neuen abgeleiteten Feld oder zur weiteren Regelverarbeitung zurück.
 
 +++ Details
@@ -991,7 +1063,7 @@ Sucht Werte mithilfe eines Felds aus einem Lookup-Datensatz und gibt einen Wert 
 
 | Eingabedatentyp | Eingabe | Einbezogene Operatoren | Limit | Ausgabe |
 |---|---|---|---|---|
-| <ul><li>Zeichenfolge</li><li>Numerisch</li><li>Datum</li></ul> | <ul><li>[!UICONTROL Feld zum Anwenden der Suche]:</li><ul><li>Regeln</li><li>Standardfelder</li><li>Felder</li></ul><li>[!UICONTROL Lookup-Datensatz]</li><ul><li>Datensatz</li></ul><li>[!UICONTROL Passender Schlüssel]<ul><li>Regeln</li><li>Felder</li></ul></li><li>Zurückzugebende Werte<ul><li>Regeln</li><li>Felder</li></ul></li></ul> | <p>-/-</p> | <p>3 Funktionen pro abgeleitetem Feld</p> | <p>Neues abgeleitetes Feld oder Wert für die weitere Verarbeitung in der nächsten Regel</p> |
+| <ul><li>Zeichenfolge</li><li>Numerisch</li><li>Datum</li></ul> | <ul><li>[!UICONTROL Feld zum Anwenden der Suche]:</li><ul><li>Regeln</li><li>Standardfelder</li><li>Felder</li></ul><li>[!UICONTROL Lookup-Datensatz]</li><ul><li>Datensatz</li></ul><li>[!UICONTROL Passender Schlüssel]<ul><li>Regeln</li><li>Felder</li></ul></li><li>Zurückzugebende Werte<ul><li>Regeln</li><li>Felder</li></ul></li></ul> | <p>Nicht angegeben</p> | <p>3 Funktionen pro abgeleitetem Feld</p> | <p>Neues abgeleitetes Feld oder Wert für die weitere Verarbeitung in der nächsten Regel</p> |
 
 {style="table-layout:auto"}
 
@@ -1034,6 +1106,16 @@ Sie können schnell eine [!UICONTROL Suchfunktion] in den Regel-Builder einfüge
 
 ### Kleinschreibung {#lowercase}
 
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_dataview_derivedfields_lowercase"
+>title="Kleinschreibung"
+>abstract="Diese Funktion konvertiert den gesamten String-Text in Werte in Kleinbuchstaben."
+
+<!-- markdownlint-enable MD034 -->
+
+
 Konvertiert Werte aus einem Feld in Kleinbuchstaben und speichert sie in ein neues abgeleitetes Feld.
 
 +++ Details
@@ -1042,7 +1124,7 @@ Konvertiert Werte aus einem Feld in Kleinbuchstaben und speichert sie in ein neu
 
 | Eingabedatentyp | Eingabe | Einbezogene Operatoren | Limit | Ausgabe |
 |---|---|---|---|---|
-| <ul><li>Zeichenfolge</li><li>Numerisch</li><li>Datum</li></ul> | <ul><li>[!UICONTROL Field]:</li><ul><li>Regeln</li><li>Standardfelder</li><li>Felder</li></ul> | <p>-/-</p> | <p>2 Funktionen pro abgeleitetem Feld</p> | <p>Neues abgeleitetes Feld</p> |
+| <ul><li>Zeichenfolge</li><li>Numerisch</li><li>Datum</li></ul> | <ul><li>[!UICONTROL Field]:</li><ul><li>Regeln</li><li>Standardfelder</li><li>Felder</li></ul> | <p>Nicht angegeben</p> | <p>2 Funktionen pro abgeleitetem Feld</p> | <p>Neues abgeleitetes Feld</p> |
 
 {style="table-layout:auto"}
 
@@ -1084,6 +1166,16 @@ Sie definieren ein abgeleitetes `Product Names` -Feld. Mit der Funktion [!UICONT
 <!-- MATH -->
 
 ### Math {#math}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_dataview_derivedfields_math"
+>title="Math"
+>abstract="Diese Funktion bietet die Möglichkeit, mathematische Operationen für ein Feld durchzuführen. Die Funktion kann zur Durchführung grundlegender Rechenoperationen wie Addition, Subtraktion, Multiplikation und Division verwendet werden."
+
+<!-- markdownlint-enable MD034 -->
+
 
 Verwenden Sie grundlegende mathematische Operatoren (hinzufügen, subtrahieren, multiplizieren, teilen und erhöhen Sie die Leistung) für numerische Felder.
 
@@ -1166,6 +1258,16 @@ Verwenden Sie die Math-Funktion für trefferbasierte Berechnungen. Verwenden Sie
 
 ### Felder zusammenführen {#merge}
 
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_dataview_derivedfields_mergefields"
+>title="Felder zusammenführen"
+>abstract="Diese Funktion bietet die Möglichkeit, Werte aus zwei verschiedenen Feldern zu übernehmen und ihre jeweiligen Werte in eine einzige Dimension aufzunehmen. Die Regel prüft zunächst, ob der erste Wert gesetzt ist. Wenn nicht, wird der zweite Wert verwendet und so weiter."
+
+<!-- markdownlint-enable MD034 -->
+
+
 Führt Werte aus zwei verschiedenen Feldern zu einem neuen abgeleiteten Feld zusammen.
 
 +++ Details
@@ -1174,7 +1276,7 @@ Führt Werte aus zwei verschiedenen Feldern zu einem neuen abgeleiteten Feld zus
 
 | Eingabedatentyp | Eingabe | Einbezogene Operatoren | Limit | Ausgabe |
 |---|---|---|---|---|
-| <ul><li>Zeichenfolge</li><li>Numerisch</li><li>Datum</li></ul> | <ul><li>[!UICONTROL Field]:</li><ul><li>Regeln</li><li>Standardfelder</li><li>Felder</li></ul> | <p>-/-</p> | <p>5 Funktionen pro abgeleitetem Feld</p> | <p>Neues abgeleitetes Feld</p> |
+| <ul><li>Zeichenfolge</li><li>Numerisch</li><li>Datum</li></ul> | <ul><li>[!UICONTROL Field]:</li><ul><li>Regeln</li><li>Standardfelder</li><li>Felder</li></ul> | <p>Nicht angegeben</p> | <p>5 Funktionen pro abgeleitetem Feld</p> | <p>Neues abgeleitetes Feld</p> |
 
 {style="table-layout:auto"}
 
@@ -1232,6 +1334,16 @@ Sie müssen denselben Feldtyp in einer Regel zum Zusammenführen von Feldern aus
 
 ### Weiter oder zurück {#next-previous}
 
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_dataview_derivedfields_nextprevious"
+>title="Weiter oder zurück"
+>abstract="Diese Funktion bietet die Möglichkeit, den nächsten oder vorherigen Wert anzuzeigen, der für ein bestimmtes Feld erfasst wurde."
+
+<!-- markdownlint-enable MD034 -->
+
+
 Nimmt ein Feld als Eingabe und löst den nächsten oder vorherigen Wert für dieses Feld im Rahmen der Sitzung oder Verwendung auf. Dies gilt nur für die Tabellenfelder Besuch und Ereignis .
 
 +++ Details
@@ -1240,7 +1352,7 @@ Nimmt ein Feld als Eingabe und löst den nächsten oder vorherigen Wert für die
 
 | Eingabedatentyp | Eingabe | Einbezogene Operatoren | Limit | Ausgabe |
 |---|---|---|---|---|
-| <ul><li>Zeichenfolge</li><li>Numerisch</li><li>Datum</li></ul> | <ul><li>[!UICONTROL Field]:</li><ul><li>Regeln</li><li>Standardfelder</li><li>Felder</li></ul><li>[!UICONTROL Methode]:<ul><li>Vorheriger Wert</li><li>Nächster Wert</li></ul></li><li>[!UICONTROL Umfang]:<ul><li>Benutzer</li><li>Sitzung</li></ul></li><li>[!UICONTROL Index]:<ul><li>Numerisch</li></ul><li>[!UICONTROL Wiederholungen einschließen]:<ul><li>Boolesch</li></ul></li></ul> | <p>-/-</p> | <p>3 Funktionen pro abgeleitetem Feld</p> | <p>Neues abgeleitetes Feld</p> |
+| <ul><li>Zeichenfolge</li><li>Numerisch</li><li>Datum</li></ul> | <ul><li>[!UICONTROL Field]:</li><ul><li>Regeln</li><li>Standardfelder</li><li>Felder</li></ul><li>[!UICONTROL Methode]:<ul><li>Vorheriger Wert</li><li>Nächster Wert</li></ul></li><li>[!UICONTROL Umfang]:<ul><li>Benutzer</li><li>Sitzung</li></ul></li><li>[!UICONTROL Index]:<ul><li>Numerisch</li></ul><li>[!UICONTROL Wiederholungen einschließen]:<ul><li>Boolesch</li></ul></li></ul> | <p>Nicht angegeben</p> | <p>3 Funktionen pro abgeleitetem Feld</p> | <p>Neues abgeleitetes Feld</p> |
 
 {style="table-layout:auto"}
 
@@ -1304,6 +1416,16 @@ Sie können nur Felder auswählen, die zur Tabelle &quot;Besuch&quot;oder &quot;
 
 ### Regulären Ausdruck ersetzen {#regex-replace}
 
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_dataview_derivedfields_regexreplace"
+>title="Regulären Ausdruck ersetzen"
+>abstract="Diese Funktion bietet die Möglichkeit, Teile einer Zeichenkette mithilfe regulärer Ausdrücke zu extrahieren."
+
+<!-- markdownlint-enable MD034 -->
+
+
 Ersetzt einen Wert aus einem Feld mithilfe eines regulären Ausdrucks in ein neues abgeleitetes Feld.
 
 +++ Details
@@ -1312,7 +1434,7 @@ Ersetzt einen Wert aus einem Feld mithilfe eines regulären Ausdrucks in ein neu
 
 | Eingabedatentyp | Eingabe | Einbezogene Operatoren | Limit | Ausgabe |
 |---|---|---|---|---|
-| <ul><li>Zeichenfolge</li><li>Numerisch</li></ul> | <ul><li>[!UICONTROL Field]:</li><ul><li>Regeln</li><li>Standardfelder</li><li>Felder</li></ul></ul><ul><li>[!UICONTROL Regex]:</li><ul><li>Zeichenfolge</li></ul></li><li>[!UICONTROL Ausgabeformat]:<ul><li>Zeichenfolge</li></ul></ul><ul><li>Groß-/Kleinschreibung beachten</li><ul><li>Boolesch</li></ul></li></ul></li> | <p>-/-</p> | <p>1 Funktion pro abgeleitetem Feld</p> | <p>Neues abgeleitetes Feld</p> |
+| <ul><li>Zeichenfolge</li><li>Numerisch</li></ul> | <ul><li>[!UICONTROL Field]:</li><ul><li>Regeln</li><li>Standardfelder</li><li>Felder</li></ul></ul><ul><li>[!UICONTROL Regex]:</li><ul><li>Zeichenfolge</li></ul></li><li>[!UICONTROL Ausgabeformat]:<ul><li>Zeichenfolge</li></ul></ul><ul><li>Groß-/Kleinschreibung beachten</li><ul><li>Boolesch</li></ul></li></ul></li> | <p>Nicht angegeben</p> | <p>1 Funktion pro abgeleitetem Feld</p> | <p>Neues abgeleitetes Feld</p> |
 
 {style="table-layout:auto"}
 
@@ -1401,6 +1523,16 @@ Sie können diese Sequenzen im [!UICONTROL Ausgabeformat] beliebig oft und in be
 
 ### Split {#split}
 
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_dataview_derivedfields_split"
+>title="Split"
+>abstract="Diese Funktion bietet die Möglichkeit, ein Feld anhand eines Trennzeichens in mehrere Felder aufzuteilen."
+
+<!-- markdownlint-enable MD034 -->
+
+
 Teilt einen Wert aus einem Feld in ein neues abgeleitetes Feld.
 
 +++ Details
@@ -1409,7 +1541,7 @@ Teilt einen Wert aus einem Feld in ein neues abgeleitetes Feld.
 
 | Eingabedatentyp | Eingabe | Einbezogene Operatoren | Limit | Ausgabe |
 |---|---|---|---|---|
-| <ul><li>Zeichenfolge</li><li>Numerisch</li></ul> | <ul><li>[!UICONTROL Field]:</li><ul><li>Regeln</li><li>Standardfelder</li><li>Felder</li></ul></ul><ul><li>[!UICONTROL Methode]:</li><ul><li>Von links</li><li>Von rechts</li><li>In Array konvertieren</li></ul></li><li>Für Trennzeichen:<ul><li>Zeichenfolge</li></ul><li>Für Index:<ul><li>Numerisch</li></ul></li> | <p>-/-</p> | <p>5 Funktionen pro abgeleitetem Feld</p> | <p>Neues abgeleitetes Feld</p> |
+| <ul><li>Zeichenfolge</li><li>Numerisch</li></ul> | <ul><li>[!UICONTROL Field]:</li><ul><li>Regeln</li><li>Standardfelder</li><li>Felder</li></ul></ul><ul><li>[!UICONTROL Methode]:</li><ul><li>Von links</li><li>Von rechts</li><li>In Array konvertieren</li></ul></li><li>Für Trennzeichen:<ul><li>Zeichenfolge</li></ul><li>Für Index:<ul><li>Numerisch</li></ul></li> | <p>Nicht angegeben</p> | <p>5 Funktionen pro abgeleitetem Feld</p> | <p>Neues abgeleitetes Feld</p> |
 
 {style="table-layout:auto"}
 
@@ -1493,6 +1625,16 @@ Sie erstellen ein abgeleitetes Feld vom Typ `Second Response` , um den letzten W
 
 ### Zusammenfassen {#summarize}
 
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_dataview_derivedfields_summarize"
+>title="Zusammenfassen"
+>abstract="Diese Funktion bietet die Möglichkeit, Werte auf Ereignis-, Sitzungs- oder Personenebene zu aggregieren. Je nach Feldtyp für das ausgewählte Feld stehen unterschiedliche Optionen zur Verfügung."
+
+<!-- markdownlint-enable MD034 -->
+
+
 Wendet Aggregatfunktionen auf Metriken oder Dimensionen auf Ereignis-, Sitzungs- und Benutzerebene an.
 
 +++ Details
@@ -1561,6 +1703,16 @@ Verwenden Sie die Zusammenfassungsfunktion für ereignisbasierte, sitzungs- oder
 
 ### Zuschneiden
 
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_dataview_derivedfields_trim"
+>title="Zuschneiden"
+>abstract="Diese Funktion bietet die Möglichkeit, Leerzeichen oder Sonderzeichen am Anfang oder am Ende einer Zeichenkette zu entfernen. Außerdem können Sie die Anzahl der Zeichen angeben, die für den zurückgegebenen Wert verwendet werden sollen, entweder vom Anfang oder vom Ende der Zeichenfolge."
+
+<!-- markdownlint-enable MD034 -->
+
+
 Beschneidet Leerzeichen, Sonderzeichen oder die Anzahl der Zeichen vom Anfang oder Ende der Feldwerte in ein neues abgeleitetes Feld.
 
 +++ Details
@@ -1569,7 +1721,7 @@ Beschneidet Leerzeichen, Sonderzeichen oder die Anzahl der Zeichen vom Anfang od
 
 | Eingabedatentyp | Eingabe | Einbezogene Operatoren | Limit | Ausgabe |
 |---|---|---|---|---|
-| <ul><li>Zeichenfolge</li></ul> | <ul><li>[!UICONTROL Feld]<ul><li>Regeln</li><li>Standardfelder</li><li>Felder</li></ul></li><li>Leerzeichen trimmen</li><li>Sonderzeichen trimmen<ul><li>Eingabe von Sonderzeichen</li></ul></li><li>Von links beschneiden<ul><li>Von <ul><li>Beginn der Zeichenfolge</li><li>Position<ul><li>Position #</li></ul></li><li>Zeichenfolge<ul><li>Zeichenfolgenwert</li><li>Index</li><li>Flag zum Einschließen von Zeichenfolge</li></ul></li></ul></li><li>Hierzu<ul><li>Ende der Zeichenfolge</li><li>Position<ul><li>Position #</li></ul></li><li>Zeichenfolge<ul><li>Zeichenfolgenwert</li><li>Index</li><li>Flag zum Einschließen von Zeichenfolge</li></ul></li><li>Länge</li></ul></li></ul></li><li>Von rechts zuschneiden<ul><li>Von <ul><li>Ende der Zeichenfolge</li><li>Position<ul><li>Position #</li></ul></li><li>Zeichenfolge<ul><li>Zeichenfolgenwert</li><li>Index</li><li>Flag zum Einschließen von Zeichenfolge</li></ul></li></ul></li><li>Hierzu<ul><li>Beginn der Zeichenfolge</li><li>Position<ul><li>Position #</li></ul></li><li>Zeichenfolge<ul><li>Zeichenfolgenwert</li><li>Index</li><li>Flag zum Einschließen von Zeichenfolge</li></ul></li><li>Länge</li></ul></li></ul></li></ul> | <p>-/-</p> | <p>1 Funktion pro abgeleitetem Feld</p> | <p>Neues abgeleitetes Feld</p> |
+| <ul><li>Zeichenfolge</li></ul> | <ul><li>[!UICONTROL Feld]<ul><li>Regeln</li><li>Standardfelder</li><li>Felder</li></ul></li><li>Leerzeichen trimmen</li><li>Sonderzeichen trimmen<ul><li>Eingabe von Sonderzeichen</li></ul></li><li>Von links beschneiden<ul><li>Von <ul><li>Beginn der Zeichenfolge</li><li>Position<ul><li>Position #</li></ul></li><li>Zeichenfolge<ul><li>Zeichenfolgenwert</li><li>Index</li><li>Flag zum Einschließen von Zeichenfolge</li></ul></li></ul></li><li>Hierzu<ul><li>Ende der Zeichenfolge</li><li>Position<ul><li>Position #</li></ul></li><li>Zeichenfolge<ul><li>Zeichenfolgenwert</li><li>Index</li><li>Flag zum Einschließen von Zeichenfolge</li></ul></li><li>Länge</li></ul></li></ul></li><li>Von rechts zuschneiden<ul><li>Von <ul><li>Ende der Zeichenfolge</li><li>Position<ul><li>Position #</li></ul></li><li>Zeichenfolge<ul><li>Zeichenfolgenwert</li><li>Index</li><li>Flag zum Einschließen von Zeichenfolge</li></ul></li></ul></li><li>Hierzu<ul><li>Beginn der Zeichenfolge</li><li>Position<ul><li>Position #</li></ul></li><li>Zeichenfolge<ul><li>Zeichenfolgenwert</li><li>Index</li><li>Flag zum Einschließen von Zeichenfolge</li></ul></li><li>Länge</li></ul></li></ul></li></ul> | <p>Nicht angegeben</p> | <p>1 Funktion pro abgeleitetem Feld</p> | <p>Neues abgeleitetes Feld</p> |
 
 
 ## Anwendungsfall 1 {#trim-uc1}
@@ -1673,6 +1825,16 @@ Sie erstellen ein abgeleitetes `Store Identifier` -Feld. Mit der Funktion [!UICO
 
 ### URL-Parsen
 
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_dataview_derivedfields_urlparse"
+>title="URL-Parsen"
+>abstract="Diese Funktion bietet die Möglichkeit, verschiedene Teile einer URL zu analysieren, einschließlich der Host-, Pfad- oder Abfrageparameter."
+
+<!-- markdownlint-enable MD034 -->
+
+
 Analysiert verschiedene Teile einer URL, einschließlich Protokoll-, Host-, Pfad- oder Abfrageparametern.
 
 +++ Details
@@ -1681,7 +1843,7 @@ Analysiert verschiedene Teile einer URL, einschließlich Protokoll-, Host-, Pfad
 
 | Eingabedatentyp | Eingabe | Einbezogene Operatoren | Limit | Ausgabe |
 |---|---|---|---|---|
-| <ul><li>Zeichenfolge</li></ul> | <ul><li>[!UICONTROL Field]:</li><ul><li>Regeln</li><li>Standardfelder</li><li>Felder</li></ul><li>[!UICONTROL Option]:<ul><li>[!UICONTROL Protokoll abrufen]</li><li>[!UICONTROL Host abrufen]</li><li>[!UICONTROL Pfad abrufen]</li><li>[!UICONTROL Abfragezeichenfolgenwert abrufen]<ul><li>[!UICONTROL Abfrageparameter]:<ul><li>Zeichenfolge</li></ul></li></ul></li><li>[!UICONTROL Hash-Wert abrufen]</li></ul></li></ul></li></ul> | <p>-/-</p> | <p>5 Funktionen pro abgeleitetem Feld</p> | <p>Neues abgeleitetes Feld</p> |
+| <ul><li>Zeichenfolge</li></ul> | <ul><li>[!UICONTROL Field]:</li><ul><li>Regeln</li><li>Standardfelder</li><li>Felder</li></ul><li>[!UICONTROL Option]:<ul><li>[!UICONTROL Protokoll abrufen]</li><li>[!UICONTROL Host abrufen]</li><li>[!UICONTROL Pfad abrufen]</li><li>[!UICONTROL Abfragezeichenfolgenwert abrufen]<ul><li>[!UICONTROL Abfrageparameter]:<ul><li>Zeichenfolge</li></ul></li></ul></li><li>[!UICONTROL Hash-Wert abrufen]</li></ul></li></ul></li></ul> | <p>Nicht angegeben</p> | <p>5 Funktionen pro abgeleitetem Feld</p> | <p>Neues abgeleitetes Feld</p> |
 
 {style="table-layout:auto"}
 

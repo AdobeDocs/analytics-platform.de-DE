@@ -5,14 +5,24 @@ feature: Analytics Dashboards
 role: User, Admin
 exl-id: 12531600-7e88-4d56-a2a5-e5b346f91937
 solution: Customer Journey Analytics
-source-git-commit: c5f4ddd2f0a2840e7c0d456475f95d891863666e
+source-git-commit: 31381cd397a821cc3ff1b3c15ae968a7260a6e9e
 workflow-type: tm+mt
-source-wordcount: '2659'
-ht-degree: 68%
+source-wordcount: '2672'
+ht-degree: 67%
 
 ---
 
-# Erstellen einer mobilen Scorecard
+# Erstellen einer mobilen Scorecard {#create-a-mobile-scorecard}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_mobilescorecard_annotations"
+>title="Anmerkungen"
+>abstract="Anmerkungen können im Komponenten-Manager eines Workspace-Projekts erstellt werden."
+
+<!-- markdownlint-enable MD034 -->
+
 
 Die folgenden Informationen zeigen Kuratoren von Customer Journey Analytics-Daten, wie Dashboards für ausführende Benutzer konfiguriert und präsentiert werden können. Beginnen Sie mit dem Video zum Scorecard Builder für Analytics-Dashboards:
 
@@ -135,7 +145,7 @@ Verwenden Sie die Visualisierung der Zusammenfassungsnummer, um eine große Zahl
 
 ### [!UICONTROL Ringdiagramm]
 
-Ähnlich einem Tortendiagramm zeigt diese Visualisierung die Daten als Teile eines Ganzen. Ein Ringdiagramm kann für den Vergleich der prozentualen Anteile eines Ganzen verwendet werden. Nehmen wir beispielsweise an, Sie möchten sehen, welche Anzeigenplattform zur Gesamtzahl der eindeutigen Personen beigetragen hat:
+Ähnlich einem Tortendiagramm zeigt diese Visualisierung die Daten als Teile eines Ganzen. Ein Ringdiagramm kann für den Vergleich der prozentualen Anteile eines Ganzen verwendet werden. Sie möchten beispielsweise sehen, welche Anzeigenplattform zur Gesamtzahl der eindeutigen Personen beigetragen hat:
 
 ![Neue mobile Scorecard mit einer Donut-Visualisierung](assets/donut-viz.png)
 

@@ -5,14 +5,60 @@ exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: a4b838f7813d78681eba072e4febd90ba0c7111d
+source-git-commit: a236b2126c4b998b4d97caab014556e3ee3a9e83
 workflow-type: tm+mt
-source-wordcount: '3300'
-ht-degree: 99%
+source-wordcount: '3507'
+ht-degree: 97%
 
 ---
 
-# Erstellen oder Bearbeiten einer Verbindung
+# Erstellen oder Bearbeiten einer Verbindung {#create-or-edit-a-connection}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_connections_recordsadded"
+>title="Hinzugefügte Datensätze"
+>abstract="Die Anzahl der Datensätze (Zeilen), die im ausgewählten Zeitintervall für die ausgewählten Datensätze zu einer Verbindung hinzugefügt wurden."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_connections_recordsskipped"
+>title="Übersprungene Datensätze"
+>abstract="Die Anzahl der Datensätze (Zeilen), die während der Datenübertragung für eine Verbindung während des ausgewählten Zeitintervalls für die ausgewählten Datensätze übersprungen wurden."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_connections_recordsdeleted"
+>title="Gelöschte Datensätze"
+>abstract="Die Anzahl der Datensätze (Zeilen), die im ausgewählten Zeitintervall für die ausgewählten Datensätze aus einer Verbindung entfernt wurden"
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_connection_lastadded"
+>title="Zuletzt hinzugefügt"
+>abstract="Zeitstempel des letzten Batches aus einem beliebigen Datensatz, der an eine Verbindung übertragen wurde."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_connection_enablerollingdatawindow"
+>title="Rollierendes Datenfenster aktivieren"
+>abstract="Definieren Sie die Datenspeicherung als rollierendes Fenster in Monaten auf Verbindungsebene."
+
+<!-- markdownlint-enable MD034 -->
+
 
 Beim Workflow für die Erstellung und Bearbeitung von Verbindungen können alle Einstellungen zur Datensatz- und Verbindungskonfiguration mit einem unterstützenden Workflow zentral auf dem Bildschirm durchgeführt werden. Er ermöglicht Ihnen eine präzise Auswahl, Konfiguration und Prüfung von Datensätzen. Außerdem können Sie wichtige Informationen angeben, z. B. Datensatztyp, Größe, Schema, Datensatz-ID, Batch-Status, Aufstockungsstatus, Personen-IDs und vieles mehr, um das Risiko einer falschen Verbindungskonfiguration zu verringern. Im Folgenden finden Sie einen Überblick über die Funktionen:
 
@@ -22,7 +68,11 @@ Beim Workflow für die Erstellung und Bearbeitung von Verbindungen können alle 
 * Sie können Datensätze bearbeiten, z. B. um eine weitere Aufstockung anzufordern.
 * Sie können für einzelne Datensätze vorhandene Daten importieren.
 
++++ Video zur Veranschaulichung des Erlebnisses beim Erstellen und Bearbeiten einer Verbindung
+
 >[!VIDEO](https://video.tv.adobe.com/v/343044/?quality=12&learn=on)
+
++++
 
 ## Voraussetzungen
 
@@ -70,6 +120,42 @@ Wenden Sie sich an Ihre Admins, wenn Sie sich nicht sicher sind, welches Custome
    {style="table-layout:auto"}
 
 ## Hinzufügen und Konfigurieren von Datensätzen {#add-dataset}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_connection_matchingkey"
+>title="Passender Schlüssel"
+>abstract="Wählen Sie ein Feld aus, das einem der Ereignisdatensätze hinzugefügt werden soll. Wenn diese Liste leer ist, haben Sie wahrscheinlich keinen Ereignisdatensatz hinzugefügt oder konfiguriert."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_connection_importnewdata"
+>title="Neue Daten importieren"
+>abstract="Alle neuen Batches, die im Experience Platform-Datensatz hinzugefügt werden, werden automatisch zu dieser Verbindung hinzugefügt und zur Analyse bereitgestellt."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_connection_datasetbackfill"
+>title="Aufstockung des Datensatzes"
+>abstract="Mit dieser Option werden die vorhandenen (historischen) Daten von Experience Platform für diesen Datensatz in der Verbindung aufgestockt."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_connection_transformdataset"
+>title="Datensatz transformieren"
+>abstract="Mit dieser Option wird der Datensatz so transformiert, dass er für personenbezogene Suchvorgänge in B2B-Szenarien verwendet werden kann. Sobald diese Option aktiviert ist, ist die Transformation des Datensatzes nicht mehr umkehrbar."
+
+<!-- markdownlint-enable MD034 -->
 
 Mit dem neuen Workflow können Sie beim Erstellen einer Verbindung einen Experience Platform-Datensatz hinzufügen.
 

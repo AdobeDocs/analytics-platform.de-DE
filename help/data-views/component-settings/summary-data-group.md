@@ -4,14 +4,25 @@ description: Details und Informationen zum Konfigurieren von Dimensionen aus Dat
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: cba5904191b0602557903b5b9f32a2b793c8207d
+exl-id: c39ee568-97f6-4925-ae18-3d4a9dfdb6f5
+source-git-commit: a236b2126c4b998b4d97caab014556e3ee3a9e83
 workflow-type: tm+mt
-source-wordcount: '313'
-ht-degree: 9%
+source-wordcount: '343'
+ht-degree: 17%
 
 ---
 
-# [!UICONTROL Komponenteneinstellungen der Zusammenfassungsdatengruppe]
+# [!UICONTROL Komponenteneinstellungen der Zusammenfassungsdatengruppe] {#summary-data-group-component-settings}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_dataview_component_dimension_summarydatagroup"
+>title="Zusammenfassungsdatengruppe"
+>abstract="Eine Zusammenfassungsdatengruppe erzeugt eine Verbindung zwischen allen Dimensionen in der Gruppierung und wird verwendet, um Dimensionen aus Zusammenfassungsdatensätzen mit anderen Dimensionen für die Berichterstattung zu kombinieren."
+
+<!-- markdownlint-enable MD034 -->
+
 
 Eine Zusammenfassungsdatengruppe erzeugt eine Verbindung zwischen allen Dimensionen in der Gruppierung und wird verwendet, um Dimensionen aus Zusammenfassungsdatensätzen mit anderen Dimensionen für die Berichterstattung zu kombinieren.
 
@@ -40,5 +51,3 @@ Werte in `tracking_code` können sich möglicherweise von `campaign_code` unters
 >
 >Stellen Sie sicher, dass Sie nur Dimensionen aus einer Dimension gruppieren und keine Gruppierung aus mehreren Dimensionen anwenden. Wenn Sie beispielsweise eine Gruppierung durch Hinzufügen der Dimension `campaign_name` zur Dimension `tracking_code` erstellen, erstellen Sie keine Gruppierung für die Dimension `campaign_name` .
 >
-
-

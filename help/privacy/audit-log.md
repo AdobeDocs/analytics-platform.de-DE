@@ -4,14 +4,33 @@ description: Erfahren Sie, wie Sie Customer Journey Analytics-Auditprotokolle an
 exl-id: 360609f2-b811-49ee-ad4a-a54ceb23bfa3
 feature: Privacy
 role: Admin
-source-git-commit: 39e4c17336d3648cbf20cace535668d14510186f
+source-git-commit: 31381cd397a821cc3ff1b3c15ae968a7260a6e9e
 workflow-type: tm+mt
-source-wordcount: '795'
-ht-degree: 65%
+source-wordcount: '837'
+ht-degree: 66%
 
 ---
 
-# Auditprotokolle
+# Auditprotokolle {#audit-logs}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_tools_auditlog_userid"
+>title="Benutzer-ID"
+>abstract="Die Benutzer-ID finden Sie, indem Sie auf die Schaltfläche „Info“ auf einem Protokolleintrag klicken, der den/die gewünschte(n) Benutzende(n) enthält."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_tools_auditlog_componentid"
+>title="Komponenten-ID"
+>abstract="Die Komponenten-ID finden Sie, indem Sie auf die Schaltfläche „Info“ auf einem Protokolleintrag klicken, der die gewünschte Komponente enthält."
+
+<!-- markdownlint-enable MD034 -->
+
 
 Um die Transparenz und Sichtbarkeit der im System durchgeführten Aktivitäten zu erhöhen, können Sie mit Adobe Customer Journey Analytics die Benutzeraktivität für verschiedene Dienste und Funktionen in Form von &quot;Prüfprotokollen&quot;überprüfen. Diese Protokolle bilden einen Prüfpfad, der Ihnen bei der Fehlerbehebung helfen kann und Ihrem Unternehmen ermöglicht, betriebliche Datenverwaltungsrichtlinien und gesetzliche Anforderungen wie den Health Insurance Portability and Accountability Act (HIPAA) einzuhalten.
 

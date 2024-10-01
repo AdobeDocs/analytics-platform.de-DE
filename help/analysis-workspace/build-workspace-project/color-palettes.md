@@ -4,34 +4,41 @@ title: Visualisierungsfarbpalette
 feature: Workspace Basics
 exl-id: c3c208b9-84a5-4620-ba3c-7e483215e698
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 383fad799944f7405af6de1754aa2e0af83e2cab
 workflow-type: tm+mt
-source-wordcount: '223'
-ht-degree: 88%
+source-wordcount: '214'
+ht-degree: 28%
 
 ---
 
-# Visualisierungsfarbpalette
+# Visualisierungsfarbpalette {#visualization-color-palette}
 
-Sie können die in Workspace verwendete Visualisierungsfarbpalette ändern, indem Sie eine andere Farbpalette auswählen oder Ihre eigene Palette festlegen, die den Markenfarben Ihres Unternehmens entspricht. Diese Funktion wirkt sich auf die meisten Visualisierungen in Workspace aus. Die Zusammenfassungsänderung, die bedingte Formatierung in Freiformtabellen und die Zuordnungsvisualisierung sind davon jedoch **nicht** betroffen.
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_workspace_project_colorpalette"
+>title="Farbpalette für Projekt"
+>abstract="Ändern Sie die in diesem Projekt verwendete Farbpalette."
+
+<!-- markdownlint-enable MD034 -->
+
+
+Sie können die in Workspace verwendete Visualisierungsfarbpalette ändern. Sie können eine vordefinierte Farbpalette auswählen oder eine eigene Palette festlegen, die den Branding-Farben Ihres Unternehmens entspricht. Diese Funktion wirkt sich auf die meisten Visualisierungen in Workspace aus. Die Zusammenfassungsänderung, die bedingte Formatierung in Freiformtabellen und die Zuordnungsvisualisierung sind davon jedoch **nicht** betroffen.
 
 >[!NOTE]
 >
 >Die Farbpalettenunterstützung ist für Internet Explorer 11 nicht aktiviert.
 
-![Das Fenster Projektinfo und Einstellungen.](assets/color_palettes.png)
+![Das Fenster Projektinfo und Einstellungen.](assets/color-palettes.png)
 
 Beachten Sie:
 
-* Es stehen fünf voreingestellte Farbpaletten zur Auswahl. Die Standardpalette und die unten stehende wurden für Kontrast optimiert und sind bei Farbenblindheit besser geeignet.
-* Die dritte bis fünfte Farbpalette unter den ersten beiden wurden auf Farbharmonie optimiert.
+* Es gibt sechs voreingestellte Farbpaletten zur Auswahl. Die Standardpalette und die zweite aufgelistete wurden für den Kontrast optimiert und sind für farbenblinde Benutzer leichter zugänglich.
+* Die anderen Paletten wurden für Farbharmonie optimiert.
 
 ## So ändern Sie Ihre Farbpalette:
 
-1. Navigieren Sie zu **[!UICONTROL Workspace]** > **[!UICONTROL Projekt]** > **[!UICONTROL Projektinfo und Einstellungen]**.
-1. Aus der Dropdownliste **[!UICONTROL Projektfarbpalette]** können Sie eines von fünf voreingestellten Farbschemata auswählen.
-
-   ![ Die fünf voreingestellten Farbschemata.](assets/custom_palette.png)
-
-1. Um Ihre eigene Palette festzulegen, wählen Sie **[!UICONTROL Benutzerdefinierte Palette]** unter den voreingestellten Optionen aus.
-1. Geben Sie bis zu 16 kommagetrennte hexadezimale Werte (z. B. #00a4e4) für die Farben an, die Sie verwenden möchten. Wenn Sie beispielsweise nur vier Werte verwenden möchten, werden diese Farben in Visualisierungen, die mehr Farben enthalten, automatisch wiederholt.
+1. Navigieren Sie zu &quot;**[!UICONTROL Workspace]**&quot;> &quot;**[!UICONTROL Projekt]**&quot;> &quot;**[!UICONTROL Projektinfo und Einstellungen]**&quot;.
+1. Aus der Dropdownliste **[!UICONTROL Farbe der Palette &quot;Projekt&quot;]** können Sie eines der voreingestellten Farbschemas auswählen.
+1. Um Ihre eigene Palette festzulegen, wählen Sie unter den voreingestellten Optionen die Option **[!UICONTROL Benutzerdefinierte Palette]** aus.
+1. Geben Sie bis zu 16 kommagetrennte Hexadezimalwerte an (z. B. `#00a4e4`), um eine eigene Farbpalette zu erstellen. Wenn Sie beispielsweise nur vier Werte angeben, werden Farben automatisch in Visualisierungen wiederholt, die mehr Farben enthalten.

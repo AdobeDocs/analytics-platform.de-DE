@@ -1,20 +1,55 @@
 ---
-description: Schauen wir uns einmal an, wie ein Wert, der Sie interessiert, im Vergleich zu anderen Leistungsbereichen (Zielen) liegt oder ausfällt.
+description: Zeigt, wie ein Wert, der Sie interessiert, im Vergleich zu anderen Leistungsbereichen (Zielen) liegt oder ausfällt.
 title: Lineardiagramm
 feature: Visualizations
 exl-id: b560389a-1149-4e16-b45a-0c6a1f7d0e1f
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
 workflow-type: tm+mt
-source-wordcount: '100'
-ht-degree: 86%
+source-wordcount: '228'
+ht-degree: 22%
 
 ---
 
-# Lineardiagramm
+# Horizontales Säulendiagramm {#bullet}
 
-Schauen wir uns einmal an, wie ein Wert, der Sie interessiert, im Vergleich zu anderen Leistungsbereichen (Zielen) liegt oder ausfällt.
+<!-- markdownlint-disable MD034 -->
 
-![Fenster &quot;Visualisierungseinstellungen&quot;mit der Option Diagrammtyp , Aufzählungsoptionen und anderen Diagrammeinstellungen.](assets/bullet-image.png)
+>[!CONTEXTUALHELP]
+>id="cja_workspace_bullet_goalvalue"
+>title="Zielwert"
+>abstract="**[!UICONTROL Hohes Ziel]** ist das Hauptziel, das Sie anstreben. **[!UICONTROL Niedriges Ziel]** und **[!UICONTROL mittleres Ziel]** erstellen Bereiche unterhalb des [!UICONTROL hohen Ziels]. Hinweis: Wenn die Option **[!UICONTROL Prozentsätze]** aktiviert ist, geben Sie Ziele als Ganzzahlen ein. Beispiel: `20` , wenn Ihr Ziel zwanzig Prozent beträgt."
 
-Das Lineardiagramm enthält einen einzigen primären Messwert (z. B. aktueller Umsatz im Jahr) und ermöglicht Ihnen die Eingabe qualitativer Bereiche und Leistungsbereiche (z. B. im Vergleich zu einem Zielumsatz). Sie können zwischen „Hoch“, „Mittel“ und „Niedrig“ wählen. In den [!UICONTROL Visualisierungseinstellungen] können Sie Zielbereiche festlegen.
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_workspace_bullet_button"
+>title="Nullet"
+>abstract="Erstellen Sie eine Visualisierung eines Aufzählungsdiagramms, um anzuzeigen, wie eine Metrik mit Leistungsbereichen (Zielen) verglichen oder diese misst."
+
+<!-- markdownlint-enable MD034 -->
+
+
+Die Visualisierung ![GraphBullet](/help/assets/icons/GraphBullet.svg) **[!UICONTROL Aufzählungszeichen]** zeigt, wie eine Metrik Leistungsbereiche (Ziele) vergleicht oder dagegen misst.
+
+![](assets/bullet.png)
+
+Das Lineardiagramm enthält einen einzigen primären Messwert (z. B. aktueller Umsatz im Jahr) und ermöglicht Ihnen die Eingabe qualitativer Bereiche und Leistungsbereiche (z. B. im Vergleich zu einem Zielumsatz). Sie können hohe, mittlere und niedrige Zielbereiche festlegen. Sie können Zielbereiche in ![Einstellung](/help/assets/icons/Setting.svg) **[!UICONTROL Einstellungen]** festlegen.
+
+## Einstellungen
+
+Sie können bestimmte Einstellungen für eine [!UICONTROL Aufzählungszeichen] -Visualisierung definieren.
+
+| Einstellung | Beschreibung |
+|---|---|
+| **[!UICONTROL Aufzählungsoptionen]** | Geben Sie in der Visualisierung [!UICONTROL Aufzählungszeichen] Werte für **[!UICONTROL High Ziel]**, **[!UICONTROL Mid Ziel]** und **[!UICONTROL Low Ziel]** an. <br/>**[!UICONTROL Hohes Ziel ]**ist das Hauptziel, das Sie anstreben.**[!UICONTROL  Niedriges Ziel ]**und**[!UICONTROL  mittleres Ziel ]**erstellen Bereiche unterhalb des Ziels &quot;Hoch&quot;. Hinweis: Wenn die Option**[!UICONTROL  Prozentsätze ]**aktiviert ist, geben Sie Ziele als Ganzzahlen ein. Beispiel: `20` , wenn Ihr Ziel zwanzig Prozent beträgt. |
+
+>[!MORELIKETHIS]
+>
+>[Hinzufügen einer Visualisierung zu einem Bedienfeld](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
+>[Visualisierungseinstellungen](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
+>[Kontextmenü &quot;Visualisierung&quot;](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
+>
+

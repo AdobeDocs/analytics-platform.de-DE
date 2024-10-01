@@ -4,64 +4,71 @@ title: Histogramm
 feature: Visualizations
 exl-id: 5901eb15-51cf-45a0-a80b-5824adf33bdd
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
 workflow-type: tm+mt
-source-wordcount: '447'
-ht-degree: 80%
+source-wordcount: '330'
+ht-degree: 37%
 
 ---
 
-# Histogramm
+# Histogramm {#histogram}
 
-Ein Histogramm ähnelt einem Balkendiagramm, fasst jedoch Zahlen zu Bereichen (Behältern) zusammen. Analytics automatisiert diese Zusammenfassung von Zahlen zu Bereichen, wobei Sie jedoch die Einstellungen unter [Erweiterte Einstellungen](#section_09D774C584864D4CA6B5672DC2927477) ändern können.
+<!-- markdownlint-disable MD034 -->
 
-## Erstellen eines Histogramms {#section_74647707CC984A1CB6D3097F43A30B45}
+>[!CONTEXTUALHELP]
+>id="cja_workspace_histogram_button"
+>title="Histogramm"
+>abstract="Erstellen Sie eine Histogrammvisualisierung, um die Verteilung numerischer Daten in Gruppen von Bereichen darzustellen."
+
+<!-- markdownlint-enable MD034 -->
+
+
+Die Visualisierung ![Histogramm](/help/assets/icons/Histogram.svg) **[!UICONTROL Histogramm]** ähnelt einer Visualisierung mit [!UICONTROL Balken], gruppiert jedoch Zahlen in Bereiche (Behälter). Analytics automatisiert diese Zusammenfassung von Zahlen zu Bereichen, wobei Sie jedoch die Einstellungen unter [Erweiterte Einstellungen](#advanced-settings) ändern können.
+
+## Verwenden Sie stattdessen 
 
 So erstellen Sie ein Histogramm:
 
-1. Klicken Sie in der linken Leiste auf **[!UICONTROL Visualisierungen]**.
-1. Ziehen Sie **[!UICONTROL Histogramm]** in das Bedienfeld.
-1. Wählen Sie eine Metrik zum Ziehen der Visualisierung „Histogramm“ aus und klicken Sie dann auf **[!UICONTROL Erstellen]**.
-
-![Leeres Histogrammbedienfeld, das das Feld Metrik unter Feld ablegen anzeigt.](assets/histogram.png)
+1. Fügen Sie eine Visualisierung für das Histogramm ](/help/assets/icons/Histogram.svg) **[!UICONTROL Histogramm]** hinzu. ![ Siehe [Hinzufügen einer Visualisierung zu einem Bedienfeld](freeform-analysis-visualizations.md#add-visualizations-to-a-panel).
+1. Ziehen Sie eine Metrik aus der Komponentenliste **[!UICONTROL Metriken]** oder wählen Sie eine Metrik aus dem Dropdownmenü [!UICONTROL *Metrik hinzufügen*] aus.
+1. (optional) Wählen Sie **[!UICONTROL Erweiterte Einstellungen anzeigen]** aus. Siehe [Erweiterte Einstellungen](#advanced-settings).
+1. Wählen Sie **[!UICONTROL Erstellen]** aus.
 
 >[!NOTE]
 >
 >Histogramme unterstützen nur Standardmetriken, keine berechneten Metriken.
 
-Hier haben wir die Metrik „Seitenansichten pro Unique Visitors“ verwendet. Der erste (linke) Behälter entspricht 1 Seitenansicht pro Einzelperson, der zweite Behälter zwei Seitenansichten usw.
+Im folgenden Beispiel wird ein Histogramm verwendet, um Sitzungen für die Anzahl der Personen zu bündeln. Das Histogramm zeigt, dass die meisten Personen zwischen 16 und 21 Sitzungen für den ausgewählten Datenbereich haben.
 
-![](assets/histogram2.png)
+![](assets/histogram.png)
 
 ## Erweiterte Einstellungen {#section_09D774C584864D4CA6B5672DC2927477}
 
-Wenn Sie die Einstellungen für Ihr Histogramm ändern möchten, klicken Sie auf das Einstellungssymbol (Zahnrad) in der Ecke oben rechts. Die folgenden Einstellungen können Sie ändern:
+Im Rahmen der Visualisierung sind spezifische Histogrammeinstellungen verfügbar.
 
-| Histogramm-Einstellungen | Dient dem folgenden Zweck |
+| Histogrammeinstellungen | Beschreibung |
 |---|---|
-| Startpaket | Bestimmt, mit welchem Paket das Histogramm beginnt. Die Standardeinstellung lautet 1. Sie können Startwerte von null bis unendlich festlegen, jedoch keine negativen Zahlen. |
-| Metrische Behälter | Hiermit können Sie die Anzahl der Datumsbereiche (Behälter) erhöhen/verringern. Maximal 50 Buckets sind möglich. |
-| Metrische Behältergröße | Hiermit können Sie die Größe der einzelnen Behälter festlegen. So könnten Sie zum Beispiel die Behältergröße von 1 Seitenansicht zu 2 Seitenansichten ändern. |
-| Zählmethode | Sie können als Typ [Besucher](https://experienceleague.adobe.com/docs/analytics/components/metrics/unique-visitors.html?lang=de), [Besuch](https://experienceleague.adobe.com/docs/analytics/components/metrics/visits.html?lang=de) oder „Treffer“ auswählen, Zum Beispiel Seitenansichten pro Besuch oder Seitenansichten pro Person oder Seitenansichten pro Ereignis. Für Hits wird „Vorkommen“ in der Freiformtabelle als Metrik der Y-Achse verwendet. |
+| **[!UICONTROL Startbehälter]** | Bestimmt, mit welchem Paket das Histogramm beginnt. Die Standardeinstellung lautet 1. Sie können Startwerte von null bis unendlich festlegen, jedoch keine negativen Zahlen. |
+| **[!UICONTROL Metrikbehälter]** | Hiermit können Sie die Anzahl der Datumsbereiche (Behälter) erhöhen/verringern. Maximal 50 Buckets sind möglich. |
+| **[!UICONTROL Metrik-Behältergröße]** | Hiermit können Sie die Größe der einzelnen Behälter festlegen. So könnten Sie zum Beispiel die Behältergröße von 1 Seitenansicht zu 2 Seitenansichten ändern. |
+| **[!UICONTROL Zählmethode]** | Wählen Sie &quot;**[!UICONTROL Person]**&quot;, &quot;**[!UICONTROL Sitzung]**&quot;oder &quot;**[!UICONTROL Ereignis]**&quot;. Zum Beispiel Seitenansichten pro Sitzung, Seitenansichten pro Person oder Seitenansichten pro Ereignis. |
 
 <!--Russ or Meike - Check Hit Type link above. -->
 
 **Beispiele**:
 
-* Startpaket: 1; Metrische Behälter: 5; Metrische Behältergröße: 2 – Diese Werte würden zu dem folgenden Histogramm führen: 1-2, 3-4, 5-6, 7-8, 9-10.
-* Startpaket: 0; Metrische Behälter: 3; Metrische Behältergröße: 5 – Diese Werte würden zu dem folgenden Histogramm führen: 0-4, 5-9, 10-14.
+| Startbehälter | Metrikbehälter | Größe des Metrik-Behälters | Ergebnis |
+|:----:|:--:|:--:|:--|
+| 1 | 5 | 2 | ![Histogramm, Anfangsbehälter 1, Metrikbehälter 5, Metrikbehälter 2](assets/histogram-1-5-2.png) |
+| 0 | 3 | 5 | ![Histogramm, Anfangsbehälter 0, Metrikbehälter 3, Metrikbehälter 5](assets/histogram-0-3-5.png) |
 
-## Anzeigen und Bearbeiten von Histogrammdaten {#section_B2CD7CDF0F6B432F928103AE7AAA3617}
+>[!MORELIKETHIS]
+>
+>[Hinzufügen einer Visualisierung zu einem Bedienfeld](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
+>[Visualisierungseinstellungen](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
+>[Kontextmenü &quot;Visualisierung&quot;](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
+>
 
-Wenn Sie die Datenquelle für das Histogramm anzeigen oder ändern möchten, klicken Sie auf den Punkt neben der Histogramm-Überschrift und navigieren Sie zu **[!UICONTROL Datenquelleneinstellungen]** > **[!UICONTROL Datenquelle anzeigen]**.
-
-![Optionen für Daten-Source-Einstellungen mit ausgewählter Option &quot;Data Source anzeigen&quot;und &quot;Auswahl sperren&quot;](assets/manage-data-source.png)
-
-Vorkonfigurierte Filter, die in der Tabelle angezeigt werden, sind interne Filter und werden in der Filterauswahl nicht angezeigt. Klicken Sie auf das Symbol „i“ neben dem Filternamen und dann auf **[!UICONTROL Veröffentlichen]**, um den Filter öffentlich zu machen.
-
-![Segmente, die das Bearbeitungsfenster und den öffentlichen Link anzeigen.](assets/prebuilt_segments.png)
-
-Weitere Möglichkeiten zum Verwalten von Freiform-Datentabellen und anderen Visualisierungen (wie zum Beispiel Datenaufschlüsselungen) finden Sie [hier](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.html?lang=de).
 
 ## Blogpost
 

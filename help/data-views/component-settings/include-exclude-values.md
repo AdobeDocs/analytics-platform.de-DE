@@ -5,14 +5,34 @@ exl-id: 1a3f8ab5-bd82-415a-989a-f93e6714df4b
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: a236b2126c4b998b4d97caab014556e3ee3a9e83
 workflow-type: tm+mt
-source-wordcount: '306'
-ht-degree: 97%
+source-wordcount: '353'
+ht-degree: 94%
 
 ---
 
-# Komponenteneinstellung „Werte einschließen/ausschließen“
+# Komponenteneinstellung „Werte einschließen/ausschließen“ {#include-exclude-values-component-settings}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_dataview_component_metric_includeexcludevalues"
+>title="Werte einschließen/ausschließen"
+>abstract="Metrik so filtern, dass nur Werte gezählt werden, die spezifischen Kriterien entsprechen."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_dataview_component_dimension_includeexcludevalues"
+>title="Werte einschließen/ausschließen"
+>abstract="Engen Sie eine Dimension so ein, dass nur Werte enthalten sind, die spezifischen Kriterien entsprechen. Ein- und Ausschlüsse werden vorgenommen, bevor die Zuordnung und etwaige Filter in Berichten angewendet werden.<br/><br/>**Parameter **<br/>**Groß-/Kleinschreibung beachten**: Bestimmen Sie, ob bei der folgenden Filterlogik zwischen Groß- und Kleinschreibung unterschieden wird."
+
+<!-- markdownlint-enable MD034 -->
+
+
 
 „Werte einschließen/ausschließen“ ermöglicht die Erstellung von Regeln, die vom Wert eines Dimensionselements abhängen. Werte, die die von Ihnen festgelegten Kriterien nicht erfüllen, werden in Analysis Workspace so behandelt, als wären sie nicht vorhanden, obwohl die Daten noch im zugrunde liegenden Datensatz vorhanden sind.
 

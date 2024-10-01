@@ -5,45 +5,50 @@ title: Datenquellen verwalten
 feature: Visualizations
 exl-id: f9e89bef-0e78-49c7-8b7b-1fefd709c0cd
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 388e008f4ee092dd8224bfacd020cdf762d4fb82
 workflow-type: tm+mt
-source-wordcount: '609'
-ht-degree: 93%
+source-wordcount: '416'
+ht-degree: 17%
 
 ---
 
-# Datenquellen verwalten
+# Datenquellen verwalten {#manage-data-sources}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_workspace_freeformtable_lockselection"
+>title="Auswahl sperren"
+>abstract="Aktivieren Sie diese Einstellung, um die Visualisierung an den ausgewählten Positionen oder den ausgewählten Elementen in der Datenquelle zu sperren."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_workspace_freeformtable_lockselection_showtable"
+>title="Tabelle anzeigen"
+>abstract="Wenn Sie **[!UICONTROL Tabelle anzeigen]** auswählen, wird eine neue Datenquelle für Ihre aktuelle Visualisierung generiert, die von der ursprünglichen Datenquelle getrennt ist."
+
+<!-- markdownlint-enable MD034 -->
+
+
 
 Beim Synchronisieren von Visualisierungen können Sie kontrollieren, welche Datentabelle oder Datenquelle zu einer Visualisierung gehört.
 
-**Tipp:** Die Farbe des Punkts neben dem Titel gibt an, welche Visualisierungen zusammenhängen. Übereinstimmende Farben besagen, dass Visualisierungen auf derselben Datenquelle basieren.
+>[!TIP]
+>
+>Sie können erkennen, welche Visualisierungen sich auf die Farbe von ![StatusOrange](/help/assets/icons/StatusOrange.svg) neben dem Titel der Visualisierungen beziehen. Übereinstimmende Farben besagen, dass Visualisierungen auf derselben Datenquelle basieren.
+>
 
-Beim Verwalten von Datenquellen können Sie die Datenquelle anzeigen oder die Auswahl sperren. Diese Einstellungen legen fest, ob sich die Visualisierung ändert (oder nicht ändert), sobald neue Daten eingehen.
+Sie können die Datenquelle ein- oder ausblenden. Sie können die Auswahl auch an ausgewählten Positionen oder Elementen sperren. Diese Einstellungen legen fest, ob sich die Visualisierung ändert (oder nicht ändert), sobald neue Daten eingehen.
 
-1. [Erstellen Sie ein Projekt](/help/analysis-workspace/home.md) mit einer Datentabelle und einer [Visualisierung](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md).
-1. Wählen Sie in der Datentabelle die Zellen (Datenquelle) aus, die Sie der Visualisierung zuordnen möchten.
-1. Klicken Sie in der Visualisierung auf den Punkt neben dem Titel, um das Dialogfeld **[!UICONTROL Datenquelle]** zu öffnen. Wählen Sie **[!UICONTROL Datenquelle anzeigen]** oder **[!UICONTROL Auswahl sperren]** aus.
+![Das Dialogfeld für die Option &quot;Data Source&quot;mit den im nächsten Abschnitt beschriebenen Optionen.](assets/lock-selection.png)
 
-   ![Das Dialogfeld für die Option &quot;Dadta Source&quot;mit den im nächsten Abschnitt beschriebenen Optionen.](assets/manage-data-source.png)
 
-   Beim Synchronisieren einer Visualisierung mit einer Tabellenzelle wird eine neue (ausgeblendete) Tabelle erstellt und die synchronisierte Visualisierung mit dieser Tabelle farblich codiert.
-
-| Element | Beschreibung |
+| Option | Beschreibung |
 |--- |--- |
-| [!UICONTROL Verknüpfte Visualisierungen] | Wenn Visualisierungen mit einer Freiform- oder Kohortentabelle verknüpft sind, öffnet sich über den Punkt oben links eine Liste der verbundenen Visualisierungen sowie ein Kontrollkästchen „Anzeigen“, über das die Tabelle angezeigt/ausgeblendet werden kann.  Wenn Sie die Maus über die verknüpfte Visualisierung bewegen, wird sie hervorgehoben. Wenn Sie darauf klicken, werden Sie dorthin geleitet. |
-| [!UICONTROL Datenquelle anzeigen] | Sie können die der Visualisierung entsprechende Datentabelle anzeigen (durch Aktivieren des Kontrollkästchens) oder ausblenden (durch Deaktivieren des Kontrollkästchens). |
-| [!UICONTROL Auswahl sperren] | Aktivieren Sie diese Einstellung, damit die Visualisierung mit den aktuell in der entsprechenden Datentabelle ausgewählten Daten verknüpft bleibt. Wenn Sie die Option aktiviert haben, können Sie Folgendes auswählen:  <ul><li>**Ausgewählte Positionen**: Wählen Sie diese Option aus, damit die Visualisierung mit den Positionen verknüpft bleibt, die in der entsprechenden Datentabelle ausgewählt sind. Diese Positionen werden weiterhin visualisiert, auch wenn sich die Elemente auf den Positionen ändern. Wählen Sie diese Option aus, wenn Sie beispielsweise immer die fünf Kampagnennamen mit dem höchsten Wert in dieser Visualisierung zeigen möchten, egal um welche Kampagnennamen es sich handelt.</li> <li>**Gewählte Elemente**: Wählen Sie diese Option aus, damit die Visualisierung mit genau den Elementen verknüpft bleibt, die aktuell in der entsprechenden Datentabelle ausgewählt sind. Diese Elemente werden weiterhin visualisiert, selbst wenn sich ihr Rang in der Tabelle ändert. Wählen Sie diese Option aus, wenn Sie z. B. immer die gleichen fünf Kampagnennamen in dieser Visualisierung zeigen möchten, egal welchen Rang diese Kampagnennamen einnehmen.</li></ul> |
-
-Diese Architektur unterscheidet sich von der vorherigen darin, dass Analysis Workspace keine doppelte ausgeblendete Tabelle mehr erstellt, in der die gesperrte Auswahl für Sie gespeichert wird. Die Datenquelle verweist nun auf die Tabelle, aus der Sie die Visualisierung erstellt haben.
-
-**Beispielhafte Anwendungsfälle:**
-
-* Sie können eine Zusammenfassungsvisualisierung erstellen und mit einer Zelle in der Tabelle verknüpfen, aus der Sie sie erstellt haben. Wenn Sie „Datenquelle anzeigen“ aktivieren, wird angezeigt, wo genau die Informationen aus der Tabelle herkommen. Die Quelldaten werden abgeblendet dargestellt:
-
-  ![Speicherort der Datenquelle in einem Arbeitsblatt.](assets/data-source2.png)>
-* Sie können zahlreiche Visualisierungen hinzufügen und sie aus unterschiedlichen Zellen in derselben Tabelle beziehen, wie hier gezeigt wird. Es handelt sich um dieselbe Tabelle wie im Beispiel oben, allerdings ist die bezogene Zelle (und Metrik) anders:
-
-  ![Speicherort der Datenquelle mit zusätzlichen Visualisierungen, die aus mehreren Zellen stammen](assets/data-source3.png)>
-* Sie können sehen, ob es mit einer Freiform- oder Kohortentabelle verknüpfte Visualisierungen gibt, indem Sie auf den Punkt oben links klicken (Datenquelleneinstellungen). Durch Bewegen der Maus über die betreffende Stelle wird die verbundene Visualisierung hervorgehoben. Sie haben auch die Möglichkeit, durch Klicken mit der Maus dorthin zu gelangen.
-
-  ![Daten-Source-Einstellungen, die eine verknüpfte Visualisierung für Top-Seitenansichten hervorheben.](assets/linked-visualizations.png)>
+| **[!UICONTROL Datenquelle]** | Wählen Sie im Dropdown-Menü die Datenquelle aus, auf der die Visualisierung basiert. |
+| **[!UICONTROL Verknüpfte Visualisierungen]** | Listet alle verknüpften Visualisierungen auf. Gilt für die Datenquelle (Freiformtabelle). |
+| **[!UICONTROL Datenquelle anzeigen]** | Ermöglicht das Anzeigen oder Verbergen der Datenquelle (Freiformtabelle), die der Visualisierung entspricht. |
+| **[!UICONTROL Auswahl sperren]** | Aktivieren Sie diese Option, um die Visualisierung ![LockClosed](/help/assets/icons/LockClosed.svg) mit den aktuell in der entsprechenden Datentabelle ausgewählten Daten zu sperren. Wählen Sie nach der Aktivierung zwischen:  <ul><li>**Ausgewählte Positionen**: Die Visualisierung wird auf den in der entsprechenden Datentabelle ausgewählten **Positionen** gesperrt. Diese Positionen werden weiterhin visualisiert, auch wenn sich die Elemente an diesen Positionen ändern (z. B. aufgrund von Sortierung oder Filterung). Wählen Sie diese Option beispielsweise aus, wenn Sie die fünf Kampagnennamen, die in der Datenquelle in dieser Visualisierung am häufigsten aufgeführt sind, jederzeit anzeigen möchten. Unabhängig davon, welche Kampagnennamen angezeigt werden.</li> <li>**Ausgewählte Elemente**: Die Visualisierung ist für die spezifischen **Elemente** gesperrt, die derzeit in der entsprechenden Datentabelle ausgewählt sind. Diese Elemente werden weiterhin visualisiert, auch wenn sie ihren Rang unter den Elementen in der Tabelle ändern. Wählen Sie diese Option beispielsweise aus, wenn Sie immer dieselben fünf Kampagnennamen anzeigen möchten, die in der Datenquelle in dieser Visualisierung aufgeführt sind. Egal, wie diese Kampagnennamen ranken.</li></ul>Wenn die Visualisierung auf Daten beschränkt ist, die nicht mehr in der verbundenen Datentabelle sichtbar sind, können Sie eine neue Tabelle generieren. Wählen Sie **[!UICONTROL Tabelle anzeigen]** aus, um eine neue Datenquelle für Ihre aktuelle Visualisierung zu generieren, die von der ursprünglichen Datenquelle getrennt ist. |

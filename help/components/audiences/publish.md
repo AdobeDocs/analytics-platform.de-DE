@@ -4,14 +4,32 @@ description: Erfahren Sie, wie Sie Zielgruppen in Customer Journey Analytics ver
 exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
 feature: Audiences
 role: User
-source-git-commit: 7d21f6816412b45b795d223d351d4b48bd679c6d
+source-git-commit: 31381cd397a821cc3ff1b3c15ae968a7260a6e9e
 workflow-type: tm+mt
-source-wordcount: '1696'
-ht-degree: 50%
+source-wordcount: '1726'
+ht-degree: 49%
 
 ---
 
-# Erstellen und Veröffentlichen von Zielgruppen
+# Erstellen und Veröffentlichen von Zielgruppen {#create-and-publish-audiences}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_components_audiences_refreshfrequency"
+>title="Häufigkeit der Aktualisierung"
+>abstract="Erfahren Sie, wie oft die Mitgliedschaft einer Zielgruppe neu bewertet wird.<br/>Einmalige Audiences werden nur einmal ausgewertet."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_components_audiences_audiencelimit"
+>title="Zielgruppenlimit"
+>abstract="Die Anzahl der Aktualisierungen der Zielgruppen ist begrenzt, je nachdem, wie oft sie durchgeführt werden."
+
+<!-- markdownlint-enable MD034 -->
 
 In diesem Thema wird beschrieben, wie Sie Zielgruppen erstellen und veröffentlichen, die im Customer Journey Analytics in [Echtzeit-Kundenprofil](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=de) in Adobe Experience Platform identifiziert werden, um Kunden-Targeting und -Personalisierung zu ermöglichen.
 
@@ -53,7 +71,7 @@ Lesen Sie diesen [Überblick](/help/components/audiences/audiences-overview.md) 
 
 1. Interpretieren Sie die Datenvorschau.
 
-   Die Zielgruppenvorschau wird in der rechten Leiste angezeigt. Sie ermöglicht eine zusammengefasste Analyse der von Ihnen erstellten Zielgruppe.
+   Die Vorschau der Audience wird im rechten Bereich angezeigt. Sie ermöglicht eine zusammengefasste Analyse der von Ihnen erstellten Zielgruppe.
 
    ![Screenshot der Datenvorschau mit einer zusammengefassten Analyse der Audience.](assets/data-preview.png)
 
@@ -115,7 +133,7 @@ Anzeigen von Customer Journey Analytics-Zielgruppen in Platform:
 >
 >Diese Anmerkung wird entfernt, wenn die Funktion allgemein verfügbar ist. Weitere Informationen zum Customer Journey Analytics-Veröffentlichungsprozess finden Sie unter [Customer Journey Analytics-Feature Releases](/help/release-notes/releases.md).
 
-1. Erweitern Sie [!UICONTROL **Kunde**] in der linken Leiste und wählen Sie dann [!UICONTROL **Zielgruppen**] <!-- is there a folder called "Customer Journey Analytics? --> aus.
+1. Erweitern Sie [!UICONTROL **Kunde**] im linken Bereich und wählen Sie dann [!UICONTROL **Zielgruppen**] <!-- is there a folder called "Customer Journey Analytics? --> aus.
 
 1. Wählen Sie die Registerkarte [!UICONTROL **Durchsuchen**] aus.
 
