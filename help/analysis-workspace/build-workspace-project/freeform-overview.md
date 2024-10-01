@@ -5,7 +5,7 @@ title: Übersicht über Projekte
 feature: Workspace Basics
 exl-id: 2eeb615c-57a1-4469-8d4a-8a61956bd6e6
 role: User
-source-git-commit: 98a92fff2a0fae7ad3e6d94e61f8babed3c11eb7
+source-git-commit: e07197325e992cd85b852899c2f7cef60637f532
 workflow-type: tm+mt
 source-wordcount: '1627'
 ht-degree: 6%
@@ -52,7 +52,7 @@ In der Projektliste werden alle Projekte angezeigt, die Ihnen gehören und für 
 | --- | --- | 
 | ![SelectBox](/help/assets/icons/SelectBox.svg) | Wenn ein oder mehrere Projekte ausgewählt sind, wird am unteren Rand der Projektoberfläche eine blaue Aktionsleiste angezeigt. Weitere Informationen finden Sie unter [Aktionen](#actions) . |
 | ![StarOutline](/help/assets/icons/StarOutline.svg) | Wählen Sie diese Option aus, um ein Projekt mit ![Stern](/help/assets/icons/Star.svg) oder mit ![StarOutline](/help/assets/icons/StarOutline.svg) zu favorisieren. |
-| **[!UICONTROL Titel und Beschreibung]** | Um das Projekt zu bearbeiten, wählen Sie den Titellink aus, der das [Workspace-Projekt](/help/analysis-workspace/home.md) öffnet. Für Sie freigegebene Projekte werden mit ![Freigabe](/help/assets/icons/Share.svg) angegeben. Wählen Sie ![InfoOutline](/help/assets/icons/InfoOutline.svg) aus, um ein Popup-Menü mit weiteren Details zum Projekt anzuzeigen. Wählen Sie ![Mehr](/help/assets/icons/More.svg) aus, um ein Kontextmenü mit Aktionen zu öffnen. Weitere Informationen finden Sie unter [Aktionen](#actions) . |
+| **[!UICONTROL Titel und Beschreibung]** | Um das Projekt zu bearbeiten, wählen Sie den Titellink aus, der das [Workspace-Projekt](/help/analysis-workspace/home.md) öffnet. Für Sie freigegebene Projekte werden mit ![Freigabe](/help/assets/icons/ShareLight.svg) angegeben. Wählen Sie ![InfoOutline](/help/assets/icons/InfoOutline.svg) aus, um ein Popup-Menü mit weiteren Details zum Projekt anzuzeigen. Wählen Sie ![Mehr](/help/assets/icons/More.svg) aus, um ein Kontextmenü mit Aktionen zu öffnen. Weitere Informationen finden Sie unter [Aktionen](#actions) . |
 | **[!UICONTROL Typ]** | Ein Workspace-Projekt, ein Ordner ![FolderUser](/help/assets/icons/FolderUser.svg) oder eine [mobile Scorecard](https://experienceleague.adobe.com/en/docs/analytics/analyze/mobapp/home). |
 | **[!UICONTROL Tags]** | Die auf das Projekt angewendeten Tags. |
 | Eingeplant | Gibt an, ob ein Projekt für die E-Mail-Versendung an Empfänger geplant ist. Optionen sind ![StatusGreen](/help/assets/icons/StatusGreen.svg) **[!UICONTROL On]** oder ![StatusGray](/help/assets/icons/StatusGray.svg) **[!UICONTROL Off]**. Siehe [Projektdaten an andere senden](/help/analysis-workspace/export/t-schedule-report.md). |
@@ -82,7 +82,7 @@ Sie können Aktionen für ein oder mehrere Projekte über das Kontextmenü ![Meh
 |---|---|
 | ![CrossSize75](/help/assets/icons/CrossSize75.svg) **[!UICONTROL *x *selected]** | Heben Sie die Auswahl der ausgewählten Projekte und Ordner auf und entfernen Sie die blaue Aktionsleiste. |
 | ![Löschen](/help/assets/icons/Delete.svg) **[!UICONTROL Löschen]** | Löschen Sie ein oder mehrere Projekte oder Ordner. Sie werden zur Bestätigung aufgefordert. |
-| ![share](/help/assets/icons/Share.svg) **[!UICONTROL share]** | Freigeben eines Projekts. Weitere Informationen finden Sie unter [Projekt freigeben](/help/analysis-workspace/curate-share/share-projects.md) . |
+| ![share](/help/assets/icons/ShareLight.svg) **[!UICONTROL share]** | Freigeben eines Projekts. Weitere Informationen finden Sie unter [Projekt freigeben](/help/analysis-workspace/curate-share/share-projects.md) . |
 | ![Bearbeiten](/help/assets/icons/Edit.svg) Umbenennen | Benennen Sie ein Projekt um. Öffnet das Dialogfeld **[!UICONTROL Umbenennen: *Projektname *]**. Geben Sie einen neuen Namen ein und wählen Sie**[!UICONTROL Speichern ]**aus. |
 | ![Kopieren](/help/assets/icons/Copy.svg) **[!UICONTROL Kopieren]** | Kopieren Sie ein oder mehrere Projekte. Das Projekt erhält denselben Namen und das Suffix `(Copy)`. |
 | ![PinOnff](/help/assets/icons/PinOff.svg) **[!UICONTROL Pin]** oder **[!UICONTROL Unpin]** | Ein oder mehrere Projekte oder Ordner anheften oder entsperren. Angeheftete Projekte und Ordner werden oben in der Liste angezeigt und ignorieren die von Ihnen angegebene Sortierreihenfolge. |

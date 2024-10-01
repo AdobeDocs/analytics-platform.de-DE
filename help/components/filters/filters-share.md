@@ -4,7 +4,7 @@ title: Freigeben von Filtern
 feature: Filters
 exl-id: c8559c7b-f886-4046-9bd6-80778882afcc
 role: User
-source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
+source-git-commit: e07197325e992cd85b852899c2f7cef60637f532
 workflow-type: tm+mt
 source-wordcount: '297'
 ht-degree: 10%
@@ -21,7 +21,7 @@ Im [Filter-Manager](manage-filters.md) können Sie Filter freigeben. Abhängig v
 So geben Sie einen oder mehrere Filter frei:
 
 1. Wählen Sie im [Filter-Manager](manage-filters.md) einen oder mehrere der Filter aus, die Sie freigeben möchten.
-1. Wählen Sie in der Aktionsleiste ![Freigabe](/help/assets/icons/Share.svg) **[!UICONTROL Freigabe]** aus.
+1. Wählen Sie in der Aktionsleiste ![Freigabe](/help/assets/icons/ShareLight.svg) **[!UICONTROL Freigabe]** aus.
 1. Im Dialogfeld **[!UICONTROL Filter freigeben]** :
 
    ![Dialogfeld &quot;Filter freigeben&quot;](assets/share-filter-dialog.png)

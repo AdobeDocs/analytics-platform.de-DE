@@ -5,7 +5,7 @@ exl-id: f9b0b3c2-7c88-4bef-af33-0d309cafe799
 solution: Customer Journey Analytics
 feature: Components
 role: User
-source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
+source-git-commit: e07197325e992cd85b852899c2f7cef60637f532
 workflow-type: tm+mt
 source-wordcount: '923'
 ht-degree: 33%
@@ -75,7 +75,7 @@ Sie können Komponenten verwalten (einzeln oder durch Auswahl mehrerer Komponent
    | ![Stern](/help/assets/icons/Star.svg) [!UICONTROL **Favorit**] | Fügen Sie die Komponente Ihrer Favoritenliste hinzu. Wie Tags können Sie im linken Bereich nach Favoriten suchen und in den Komponentenmanagern nach diesen filtern. |
    | ![StarOutline](/help/assets/icons/StarOutline.svg) **[!UICONTROL Nicht-Favorit]** | Entfernen Sie die Komponente aus Ihrer Favoritenliste. |
    | ![Prüfzeichen](/help/assets/icons/Checkmark.svg) [!UICONTROL **Genehmigen**] | Markieren Sie Komponenten als „Genehmigt“, um Ihren Benutzern zu signalisieren, dass die Komponente vom Unternehmen genehmigt ist. Wie Tags können Sie im linken Bereich nach Genehmigt suchen und filtern. Mit einem ![Prüfzeichen](/help/assets/icons/Checkmark.svg) werden genehmigte Komponenten identifiziert. |
-   | ![share](/help/assets/icons/Share.svg) [!UICONTROL **share**] | Geben Sie Komponenten für Benutzeden in Ihrer Organisation frei. Diese Option ist nur für benutzerdefinierte Komponenten verfügbar, wie z. B. Filter oder berechnete Metriken. |
+   | ![share](/help/assets/icons/ShareLight.svg) [!UICONTROL **share**] | Geben Sie Komponenten für Benutzeden in Ihrer Organisation frei. Diese Option ist nur für benutzerdefinierte Komponenten verfügbar, wie z. B. Filter oder berechnete Metriken. |
    | ![Löschen](/help/assets/icons/Delete.svg) [!UICONTROL **Löschen**] | Löschen Sie Komponenten, die Sie nicht mehr benötigen. Diese Option ist nur für benutzerdefinierte Komponenten verfügbar, wie z. B. Filter oder berechnete Metriken. |
 
 Benutzerdefinierte Komponenten können auch über ihre jeweiligen Komponenten-Manager verwaltet werden. Siehe beispielsweise [Filter verwalten](/help/components/filters/manage-filters.md).

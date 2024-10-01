@@ -3,7 +3,7 @@ description: Mit dem Manager für berechnete Metriken können Sie Favoriten frei
 title: Manager für berechnete Metriken
 feature: Calculated Metrics
 exl-id: 8b257ecc-a596-4b34-ac26-eda16835f1ba
-source-git-commit: a8d33db669259cef470b8514f244c29148f57561
+source-git-commit: e07197325e992cd85b852899c2f7cef60637f532
 workflow-type: tm+mt
 source-wordcount: '900'
 ht-degree: 5%
@@ -34,7 +34,7 @@ In der Filterliste werden alle berechneten Metriken angezeigt, die Ihnen gehöre
 | Spalte | Beschreibung |
 | --- | --- | 
 | ![StarOutline](/help/assets/icons/StarOutline.svg) | Wählen Sie diese Option aus, um ![Star](/help/assets/icons/Star.svg) oder eine berechnete Metrik für ![StarOutline](/help/assets/icons/StarOutline.svg) zu bevorzugen. Siehe [Berechnete Metrik als Favoriten markieren](/help/components/filters/filters-favorite.md) |
-| **[!UICONTROL Titel und Beschreibung]** | Um die berechnete Metrik zu bearbeiten, wählen Sie den Titel-Link aus, der den [Generator für berechnete Metriken](cm-build-metrics.md) öffnet. Eine freigegebene berechnete Metrik wird mit ![Freigabe](/help/assets/icons/Share.svg) angegeben. |
+| **[!UICONTROL Titel und Beschreibung]** | Um die berechnete Metrik zu bearbeiten, wählen Sie den Titel-Link aus, der den [Generator für berechnete Metriken](cm-build-metrics.md) öffnet. Eine freigegebene berechnete Metrik wird mit ![Freigabe](/help/assets/icons/ShareLight.svg) angegeben. |
 | **[!UICONTROL Datenansicht]** | Die Datenansichten, für die diese berechnete Metrik gilt. |
 | **[!UICONTROL Inhabende]** | Inhaber der berechneten Metrik. Als Benutzer sehen Sie nur die Anmerkungen, deren Inhaber Sie sind, oder die Anmerkungen, die für Sie freigegeben wurden. |
 | **[!UICONTROL Tags]** | Listet die Tags für diese berechnete Metrik auf. |
@@ -56,7 +56,7 @@ Mithilfe der Aktionsleiste können Sie Filter bearbeiten. Die Aktionsleiste enth
 | ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Add]** | Fügen Sie mithilfe des [Generator für berechnete Metriken](cm-build-metrics.md) weitere berechnete Metriken hinzu. |
 | ![Suche](/help/assets/icons/Search.svg) [!UICONTROL *Suche nach Titel*] | Wenn keine berechnete Metrik in der Liste ausgewählt ist, suchen Sie mithilfe dieses Suchfelds nach Filtern. |
 | ![Beschriftung](/help/assets/icons/Label.svg) **[!UICONTROL Tag]** | Taggen Sie die ausgewählten berechneten Metriken. Wählen Sie im Dialogfeld **[!UICONTROL Berechnete Metrik taggen]** die Tags für die ausgewählte berechnete Metrik aus oder deaktivieren Sie sie. Wählen Sie **[!UICONTROL Speichern]** aus, um die Tags für die ausgewählten berechneten Metriken zu speichern. Weitere Informationen finden Sie unter [Berechnete Metriken taggen](cm-tagging.md) . |
-| ![share](/help/assets/icons/Share.svg) **[!UICONTROL share]** | Geben Sie die ausgewählten berechneten Metriken frei. Im Dialogfeld **[!UICONTROL Berechnete Metriken freigeben]** können Sie ![Suchen](/help/assets/icons/Search.svg) *nach Personen oder Gruppen durchsuchen* oder Sie können **[!UICONTROL Organisation]** oder **[!UICONTROL Gruppen]** auswählen. Wählen Sie **[!UICONTROL Speichern]** aus, um Freigabedetails für die ausgewählten berechneten Metriken zu speichern. Weitere Informationen finden Sie unter [Berechnete Metriken freigeben](cm-sharing.md) . |
+| ![share](/help/assets/icons/ShareLight.svg) **[!UICONTROL share]** | Geben Sie die ausgewählten berechneten Metriken frei. Im Dialogfeld **[!UICONTROL Berechnete Metriken freigeben]** können Sie ![Suchen](/help/assets/icons/Search.svg) *nach Personen oder Gruppen durchsuchen* oder Sie können **[!UICONTROL Organisation]** oder **[!UICONTROL Gruppen]** auswählen. Wählen Sie **[!UICONTROL Speichern]** aus, um Freigabedetails für die ausgewählten berechneten Metriken zu speichern. Weitere Informationen finden Sie unter [Berechnete Metriken freigeben](cm-sharing.md) . |
 | ![Löschen](/help/assets/icons/Delete.svg) **[!UICONTROL Löschen]** | Löschen Sie die ausgewählten berechneten Metriken. Sie werden zur Bestätigung aufgefordert. |
 | ![Bearbeiten](/help/assets/icons/Edit.svg) **[!UICONTROL Umbenennen]** | Benennen Sie eine einzelne ausgewählte berechnete Metrik um. Wenn diese Option aktiviert ist, können Sie die berechnete Metrik inline umbenennen. |
 | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) **[!UICONTROL Approve]** | Genehmigen Sie die ausgewählten berechneten Metriken. Siehe [Berechnete Metriken genehmigen](cm-approving.md). |

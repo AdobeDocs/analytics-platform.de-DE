@@ -3,7 +3,7 @@ description: Abhängig von Ihren Berechtigungen können Sie Metriken für Ihre g
 title: Berechnete Metriken freigeben
 feature: Calculated Metrics
 exl-id: b2a3e4e3-f0aa-4505-b3f5-7d9f14dc1640
-source-git-commit: 1907d94a0f53ee65a3839d879da6c06092f75e0f
+source-git-commit: e07197325e992cd85b852899c2f7cef60637f532
 workflow-type: tm+mt
 source-wordcount: '322'
 ht-degree: 10%
@@ -20,7 +20,7 @@ Im Manager für berechnete Metriken ](cm-manager.md) können Sie berechnete Metr
 So geben Sie eine oder mehrere berechnete Metriken frei:
 
 1. Wählen Sie im Manager für berechnete Metriken ](cm-manager.md) mindestens eine der berechneten Metriken aus, die Sie freigeben möchten.[
-1. Wählen Sie in der Aktionsleiste ![Freigabe](/help/assets/icons/Share.svg) **[!UICONTROL Freigabe]** aus.
+1. Wählen Sie in der Aktionsleiste ![Freigabe](/help/assets/icons/ShareLight.svg) **[!UICONTROL Freigabe]** aus.
 1. Im Dialogfeld **[!UICONTROL Berechnete Metrik freigeben]** :
 
    ![Dialogfeld &quot;Berechnete Metriken freigeben&quot;](assets/share-calculated-metrics-dialog.png)
