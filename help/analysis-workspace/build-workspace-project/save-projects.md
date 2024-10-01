@@ -4,14 +4,24 @@ title: Projekte speichern
 feature: Workspace Basics
 role: User
 exl-id: d751057e-6a5f-4605-abc1-9259a1f95a28
-source-git-commit: 664756b796e8915a701ccabfb5f250e777701b60
+source-git-commit: 519e7d583edc1eab9b6dd10fec024ac4bb2b93cf
 workflow-type: tm+mt
-source-wordcount: '824'
-ht-degree: 18%
+source-wordcount: '851'
+ht-degree: 17%
 
 ---
 
-# Projekte speichern
+# Projekte speichern {#save-projects}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_workspace_project_addnotes"
+>title="Notizen hinzufügen"
+>abstract="Fügen Sie Notizen zur gespeicherten Projektversion hinzu. Diese Notizen werden mit der -Version gespeichert und können über das Menü **[!UICONTROL Projekt]** > **[!UICONTROL Vorherige Version öffnen]** aufgerufen werden."
+
+<!-- markdownlint-enable MD034 -->
+
 
 Projekte in Analysis Workspace werden automatisch alle zwei Minuten gespeichert. Sie können auch Projekte selbst speichern, ein Projekt als Duplikat speichern oder ein Projekt mit Versionshinweisen speichern.
 

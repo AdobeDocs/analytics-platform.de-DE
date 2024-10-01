@@ -3,10 +3,10 @@ description: Erfahren Sie mehr über Metriktyp und Attribution
 title: Metriktyp und Attribution
 feature: Calculated Metrics
 exl-id: da73a9ba-542e-436c-bdb2-b629b5b6f760
-source-git-commit: 8f3b30ca6d20d633669d7e9180884c24e0b9a52e
+source-git-commit: 519e7d583edc1eab9b6dd10fec024ac4bb2b93cf
 workflow-type: tm+mt
-source-wordcount: '953'
-ht-degree: 26%
+source-wordcount: '947'
+ht-degree: 25%
 
 ---
 
@@ -148,8 +148,8 @@ Ein Beispiel für die Verwendung eines Attributionsmodells und Lookback-Fensters
 
 >[!CONTEXTUALHELP]
 >id="cja_components_calculatedmetrics_attribution_custom"
->title="Zeitverlauf"
->abstract="Die zeitlich am nächsten zu einer Konversion liegenden Dimensionswerte erhalten die höchste Anrechnung."
+>title="Anpassen"
+>abstract="Definieren Sie Ihre eigene, auf der Position basierende Attributionsgewichtung"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -161,7 +161,6 @@ Ein Beispiel für die Verwendung eines Attributionsmodells und Lookback-Fensters
 >abstract="Die Gewichtung wird anhand eines statistischen Algorithmus dynamisch bestimmt."
 
 <!-- markdownlint-enable MD034 -->
-
 
 
 {{attribution-models-details}}
