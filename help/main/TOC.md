@@ -9,9 +9,9 @@ index: true
 user-guide-title: Handbuch zu Customer Journey Analytics
 user-guide-description: Hier erhalten Sie Informationen zu Adobe Customer Journey Analytics und Erläuterungen zur Nutzung von Analysis Workspace mit Daten aus Experience Platform.
 breadcrumb-title: Handbuch zu Customer Journey Analytics
-source-git-commit: 8f3b30ca6d20d633669d7e9180884c24e0b9a52e
+source-git-commit: 0e627d536682f62b499f7f6d477c1d906de13f24
 workflow-type: tm+mt
-source-wordcount: '1041'
+source-wordcount: '1054'
 ht-degree: 91%
 
 ---
@@ -148,6 +148,10 @@ ht-degree: 91%
          + [Flussübersicht](../analysis-workspace/visualizations/c-flow/flow.md)
          + [Fluss konfigurieren](../analysis-workspace/visualizations/c-flow/create-flow.md)
          + [Interdimensionale Flüsse](../analysis-workspace/visualizations/c-flow/multi-dimensional-flow.md)
+      + Journey-Arbeitsfläche {#journey-canvas}
+         + [Überblick über die Journey-Arbeitsfläche](../analysis-workspace/visualizations/journey-canvas/journey-canvas.md)
+         + [Konfigurieren einer Journey-Arbeitsflächenvisualisierung](../analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md)
+         + [Fehlerbehebung bei Journey Canvas](../analysis-workspace/visualizations/journey-canvas/journey-canvas-troubleshooting.md)
       + [Bereich (gestapelt)](../analysis-workspace/visualizations/area.md)
       + [Balken (gestapelt)](../analysis-workspace/visualizations/bar.md)
       + [Horizontales Säulendiagramm](../analysis-workspace/visualizations/bullet-graph.md)

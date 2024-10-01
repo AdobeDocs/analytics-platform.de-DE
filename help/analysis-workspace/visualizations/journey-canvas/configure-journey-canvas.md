@@ -3,12 +3,10 @@ description: Konfigurieren einer Journey-Arbeitsflächenvisualisierung
 title: Journey-Arbeitsfläche
 feature: Visualizations
 role: User
-hide: true
-hidefromtoc: true
 exl-id: 53984934-6fba-4f15-aeeb-d91039260553
-source-git-commit: 90180e1231ab8b50f1f6b8552e00d1c251d10a2f
+source-git-commit: c42858908aa8e73c5f3b622b9911ff9e9724f2dc
 workflow-type: tm+mt
-source-wordcount: '5408'
+source-wordcount: '6520'
 ht-degree: 1%
 
 ---
@@ -41,19 +39,19 @@ Weitere Informationen zu Journey-Arbeitsflächen finden Sie unter [Journey-Arbei
 
    Fügen Sie eine Visualisierung der Journey-Arbeitsfläche auf eine der im Abschnitt [Visualisierungen zu einem Bereich hinzufügen](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel) in der Übersicht über die [Visualisierungen](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md) beschriebenen Arten hinzu.
 
-1. Geben Sie die folgenden grundlegenden Informationen an:
+1. Geben Sie die folgenden grundlegenden Informationen zum Konfigurieren der Journey-Arbeitsfläche an:
 
    | Feld | Funktion |
    |---------|----------|
-   | [!UICONTROL **Primäre Metrik**] | Die primäre Metrik wirkt sich auf die folgenden Aspekte der Visualisierung der Journey-Arbeitsfläche aus:  <ul><li>Definiert, wie Benutzer durch die Journey navigieren.</li><li>Die Gesamtzahl, die auf jedem Knoten angezeigt wird.<p>Wenn beispielsweise People die primäre Metrik ist, zeigt jeder Knoten die Anzahl der Personen an, die diesen Knoten im Journey erreicht haben.</p></li><li>Der auf jedem Knoten angezeigte Prozentsatz. (Nachdem die Visualisierung erstellt wurde, können Sie festlegen, dass entweder der Prozentsatz des Gesamtwerts oder des Anfangsknotens angezeigt werden soll.)</li><p>Wenn beispielsweise People die primäre Metrik ist, zeigt jeder Knoten den Prozentsatz der Personen an, die diesen Knoten im Journey erreicht haben (entweder den Prozentsatz des Gesamtwerts oder des Anfangsknotens).</p></li><li>Wenn der Visualisierung eine Dimension hinzugefügt wird, werden die drei wichtigsten Knoten der Visualisierung hinzugefügt, basierend auf der primären Metrik.</li></ul> |
-   | [!UICONTROL **Sekundäre Metrik**] | Die sekundäre Metrik ist optional. Wenn eine ausgewählt ist, werden die folgenden Informationen für jeden Knoten unter der primären Metrik angezeigt: <ul><li>Die Gesamtzahl<p>Wenn Sitzungen beispielsweise die sekundäre Metrik sind, zeigt jeder Knoten die Anzahl der Sitzungen an, die diesen Knoten im Journey erreicht haben.</p></li><li>Der Prozentsatz (nach Erstellung der Visualisierung können Sie entweder den Prozentsatz des Gesamtwerts oder des Anfangsknotens anzeigen.)</li><p>Wenn Sitzungen beispielsweise die sekundäre Metrik sind, zeigt jeder Knoten den Prozentsatz der Sitzungen an, die diesen Knoten im Journey erreicht haben (entweder den Prozentsatz des Gesamtwerts oder des Anfangsknotens).</p></li></ul> |
-   | [!UICONTROL **Journey Optimizer Journey**]<!-- name? --> | Wählen Sie die Journey Optimizer-Journey aus, die Sie als Grundlage für Ihre Analyse in der Journey-Arbeitsfläche verwenden möchten. (Alternativ können Sie diese Option leer lassen, wenn Sie eine leere Arbeitsfläche zum Erstellen Ihrer Analyse in Analysis Workspace verwenden möchten.)</p> <p>Wenn Sie eine Journey Optimizer-Journey auf der Journey-Arbeitsfläche analysieren, wird die Journey mit der gleichen Reihenfolge, Sequenz und Struktur angezeigt wie in Journey Optimizer. Weitere Informationen finden Sie unter [Journey Optimizer-Journey analysieren](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md#analyze-journey-optimizer-journeys) in der [Journey-Arbeitsfläche - Übersicht](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md).</p><p>**Hinweis**: Diese Option wird nur angezeigt, wenn Journey Optimizer-Daten in derselben Datenansicht erkannt werden, die im Bedienfeld &quot;Analysis Workspace&quot;ausgewählt ist, in dem Sie die Visualisierung hinzufügen. Informationen zum Ändern der Datenansicht in einem Bedienfeld in Analysis Workspace finden Sie unter [Analysis Workspace - Übersicht](/help/analysis-workspace/home.md).</p> |
+   | [!UICONTROL **Primäre Metrik**] | Bestimmt die Metrik, die zur Berechnung der Prozentwert- und Zahlenwerte für jeden Knoten im Journey verwendet wird. <p>**Hinweis**: Der Umfang der in den einzelnen Prozentwerten und Zahlenwerten enthaltenen Daten wird durch die Metrik bestimmt, die Sie im Feld **[!UICONTROL Journey-Arbeitsflächencontainer]** auswählen. Wenn beispielsweise **[!UICONTROL Person]** als Container festgelegt ist, erstrecken sich die auf der Journey angezeigten Statistiken über mehrere Sitzungen für eine bestimmte Person. Wenn **[!UICONTROL Sitzung]** als Container festgelegt ist, sind die auf der Journey angezeigten Statistiken auf eine einzelne definierte Sitzung für eine bestimmte Person beschränkt.</p><p>Sehen Sie sich folgende Beispiele an:</p><ul><li>Wenn _Personen_ die primäre Metrik ist und _Person_ der Container ist, werden nur die Personen, die ein Ereignis haben, das den Kriterien jedes nachfolgenden Knotens im Journey entspricht, durch die Journey bewegt. Fallout tritt auf einem Knoten auf, wenn eine Person nie an einem der unmittelbar nächsten Knoten im Journey angekommen ist. Möglicherweise haben sie andere Aktionen auf der Site durchgeführt, die Kriterien, die von einem der unmittelbar folgenden Knoten definiert wurden, jedoch nicht erfüllt.</li><li>Wenn _Personen_ die primäre Metrik und _Sitzung_ der Container ist, werden nur Personen, die ein Ereignis haben, das den Kriterien der einzelnen Knoten im Journey innerhalb einer einzelnen Sitzung entspricht, durch die Journey bewegt. Fallout tritt auf einem Knoten auf, wenn eine Person innerhalb einer einzigen Sitzung nie an einem der unmittelbar nächsten Knoten im Journey angekommen ist. Möglicherweise haben sie innerhalb der Sitzung andere Aktionen auf der Site ausgeführt, die Kriterien, die von einem der unmittelbar folgenden Knoten definiert wurden, jedoch nicht erfüllt.</li></ul> <p>Die primäre Metrik wirkt sich auf die folgenden Aspekte der Visualisierung der Journey-Arbeitsfläche aus:</p><ul><li>Die Gesamtzahl, die auf jedem Knoten angezeigt wird.  <p>Wenn beispielsweise &quot;Ereignisse&quot;die primäre Metrik ist, zeigt jeder Knoten die Anzahl der Personen an, die ein Ereignis hatten, das den Kriterien dieses Knotens entspricht (und jeden vorherigen Knoten, der zu ihm in der Journey führte).</p></li><li>Der auf jedem Knoten angezeigte Prozentsatz. (Nachdem die Visualisierung erstellt wurde, können Sie über das Dropdown-Menü **[!UICONTROL Prozentwert]** auswählen, ob der Prozentsatz des Gesamtwerts, der Prozentsatz des vorherigen Knotens oder der Prozentsatz des Anfangsknotens angezeigt werden soll.)</li><p>Wenn beispielsweise &quot;Ereignisse&quot;die primäre Metrik ist, zeigt jeder Knoten den Prozentsatz der Personen an, die ein Ereignis hatten, das den Kriterien dieses Knotens entspricht (und jeden vorherigen Knoten, der zu ihm in der Journey führte).</p></li><li>Wenn der Visualisierung eine Dimension hinzugefügt wird, werden die drei wichtigsten Knoten der Visualisierung hinzugefügt, basierend auf der primären Metrik.</li></ul> |
+   | [!UICONTROL **Sekundäre Metrik**] | Bestimmt die sekundäre Metrik, die zur Berechnung der Prozentwerte und Zahlenwerte für jeden Knoten im Journey verwendet wird. Die sekundäre Metrik ist optional. <p>**Hinweis**: Der Umfang der in den einzelnen Prozentwerten und Zahlenwerten enthaltenen Daten wird durch die Metrik bestimmt, die Sie im Feld **[!UICONTROL Journey-Arbeitsflächencontainer]** auswählen. Wenn beispielsweise **[!UICONTROL Person]** als Container festgelegt ist, erstrecken sich die auf der Journey angezeigten Statistiken über mehrere Sitzungen für eine bestimmte Person. Wenn **[!UICONTROL Sitzung]** als Container festgelegt ist, sind die auf der Journey angezeigten Statistiken auf eine einzelne definierte Sitzung für eine bestimmte Person beschränkt.</p><p>Wenn eine sekundäre Metrik ausgewählt wird, wirkt sich dies auf die folgenden Aspekte der Visualisierung der Journey-Arbeitsfläche aus:</p><ul><li>Die Gesamtzahl, die auf jedem Knoten unter der primären Metrik angezeigt wird. <p>Wenn beispielsweise Konten die sekundäre Metrik sind, wird die Anzahl der Konten auf dem Knoten für alle Personen angezeigt, die diesen Knoten erreicht haben, wobei nur der Knoten der Personen die Anzahl der Sitzungen anzeigt, die diesen Knoten im Journey erreicht haben.</p></li><li>Der auf jedem Knoten unter der primären Metrik angezeigte Prozentsatz. (Nachdem die Visualisierung erstellt wurde, können Sie festlegen, dass entweder der Prozentsatz des Gesamtwerts oder des Anfangsknotens angezeigt werden soll.)</li><p>Wenn Sitzungen beispielsweise die sekundäre Metrik sind, zeigt jeder Knoten den Prozentsatz der Sitzungen an, die diesen Knoten im Journey erreicht haben (entweder den Prozentsatz des Gesamtwerts oder des Anfangsknotens).</p></li></ul> |
+   | [!UICONTROL **Journey Optimizer Journey**]<!-- name? --> | Wählen Sie die Journey Optimizer-Journey aus, die Sie als Grundlage für Ihre Analyse in der Journey-Arbeitsfläche verwenden möchten. Journey mit einem der folgenden Status sind verfügbar: &quot;Live&quot;, &quot;Angehalten&quot;oder &quot;Abgeschlossen&quot; <p>Alternativ können Sie diese Option leer lassen, wenn Sie eine leere Arbeitsfläche zum Erstellen Ihrer Analyse in Analysis Workspace verwenden möchten.</p> <p>Wenn Sie eine Journey Optimizer-Journey auf der Journey-Arbeitsfläche analysieren, wird die Journey mit der gleichen Reihenfolge, Sequenz und Struktur angezeigt wie in Journey Optimizer. Weitere Informationen finden Sie unter [Journey Optimizer-Journey analysieren](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md#analyze-journey-optimizer-journeys) in der [Journey-Arbeitsfläche - Übersicht](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md).</p><p>**Hinweis**: Diese Option wird nur angezeigt, wenn Journey Optimizer-Daten in derselben Datenansicht erkannt werden, die im Bedienfeld &quot;Analysis Workspace&quot;ausgewählt ist, in dem Sie die Visualisierung hinzufügen. Informationen zum Ändern der Datenansicht in einem Bedienfeld in Analysis Workspace finden Sie unter [Analysis Workspace - Übersicht](/help/analysis-workspace/home.md).</p> |
 
 1. (Optional) Wählen Sie [!UICONTROL **Erweiterte Einstellungen anzeigen**] und geben Sie dann die folgenden Informationen an:
 
    | Feld | Funktion |
    |---------|----------|
-   | [!UICONTROL **Journey canvas container**] | Wählen Sie den Container aus, auf den Sie sich auf der gesamten Journey konzentrieren möchten. Der ausgewählte Container bestimmt die Statistiken, die in der Visualisierung angezeigt werden. (Wenn sich Ihre Containernamen von den unten gezeigten Standardnamen unterscheiden, wurden sie in Ihrer Datenansicht angepasst.)<ul><li>**Sitzungen:** Beschränkt die Statistiken der Visualisierung so, dass sie für eine bestimmte Person in eine einzelne definierte Sitzung fallen. Das bedeutet, dass die Zahlen und Prozentsätze, die auf jedem Knoten angezeigt werden (die auf den primären und sekundären Metriken basieren), innerhalb einer einzelnen Sitzung für jede Person auftreten müssen.</li><li>**Personen:** Ermöglicht es, dass die Statistiken der Visualisierung mehrere Sitzungen für eine bestimmte Person umfassen. Das bedeutet, dass die Zahlen und Prozentsätze, die auf jedem Knoten angezeigt werden (die auf den primären und sekundären Metriken basieren), über eine beliebige Anzahl von Sitzungen hinweg auftreten können, sofern die Sitzungen zur selben Person gehören. Dies ist die Standardeinstellung.</li></ul> |
+   | [!UICONTROL **Journey canvas container**] | Wählen Sie den Container aus, auf den Sie sich auf der gesamten Journey konzentrieren möchten. Der ausgewählte Container bestimmt den Umfang der in der Journey erfassten Daten. Dies wirkt sich auf die in der Visualisierung angezeigten Statistiken aus. (Wenn sich Ihre Containernamen von den unten gezeigten Standardnamen unterscheiden, wurden sie in Ihrer Datenansicht angepasst.)<ul><li>**Sitzung:** Beschränkt die Statistiken der Visualisierung so, dass sie für eine bestimmte Person in eine einzelne definierte Sitzung fallen. Das bedeutet, dass die Zahlen und Prozentsätze, die auf jedem Knoten angezeigt werden (die auf den primären und sekundären Metriken basieren), innerhalb einer einzelnen Sitzung für jede Person auftreten müssen. Mit anderen Worten, eine Person kann mehrmals in einer Journey dargestellt werden.<p>Dieser Container verwendet die Metrik Sitzungen .</p></li><li>**Person:** (Standard) Ermöglicht es, dass die Statistiken der Visualisierung mehrere Sitzungen für eine bestimmte Person umfassen. Das bedeutet, dass die Zahlen und Prozentsätze, die auf jedem Knoten angezeigt werden (die auf den primären und sekundären Metriken basieren), über eine beliebige Anzahl von Sitzungen hinweg auftreten können, sofern die Sitzungen zur selben Person gehören. Mit anderen Worten, eine Person kann nur einmal in einer Journey vertreten sein.<p>Dieser Container verwendet die Metrik für Personen .</p></li></ul> |
 
 1. Wählen Sie [!UICONTROL **Erstellen**] aus.
 
@@ -61,7 +59,7 @@ Weitere Informationen zu Journey-Arbeitsflächen finden Sie unter [Journey-Arbei
 
    <!-- add screen shot -->
 
-   Wenn Sie nicht über Journey Optimizer verfügen oder keine Journey Optimizer-Journey ausgewählt haben, wird eine leere Arbeitsfläche angezeigt, auf der Sie mit dem Ausfüllen der Journey beginnen können.
+   Wenn Sie nicht über Journey Optimizer verfügen oder keine Journey Optimizer-Journey ausgewählt haben, wird eine leere Arbeitsfläche angezeigt, auf der Sie Knoten zum Journey hinzufügen können.
 
    <!-- add screen shot -->
 
@@ -85,9 +83,9 @@ So konfigurieren Sie Einstellungen für die Visualisierung der Journey-Arbeitsfl
    | Einstellung | Funktion |
    |---------|----------|
    | [!UICONTROL **Knotentyp**] | Ermöglicht die Konfiguration der in der Visualisierung angezeigten Knotentypen.<p>Um einen Knotentyp aus der Visualisierung auszublenden, wählen Sie (x) neben dem Knotentyp aus oder deaktivieren Sie ihn im Dropdown-Menü. Um einen ausgeblendeten Knotentyp anzuzeigen, wählen Sie ihn aus dem Dropdownmenü aus. (Knoten werden nicht aus dem Journey gelöscht, wenn Sie sie ausblenden. Informationen zum Löschen eines Knotens finden Sie unter [Knoten löschen](#delete-nodes).)</p><p>Dieses Feld kann wie folgt Journey Optimizer-Knotentypen ([!UICONTROL **Segment lesen**], [!UICONTROL **Ende**] usw.) und Komponentenknotentypen ([!UICONTROL **Dimension**], [!UICONTROL **Metrik**], [!UICONTROL **Filter**] und [!UICONTROL **Datumsbereich**]) enthalten: </p><ul><li>**Es werden nur Journey Optimizer-Knotentypen angezeigt**, wenn die Journey eine Journey Optimizer-Journey ist, die nicht auf der Journey-Arbeitsfläche mit einer der folgenden Änderungen geändert wurde:<ul><li>Knoten hinzugefügt oder entfernt</li><li>Pfeile hinzugefügt oder entfernt</li><li>Komponenten auf einem Knoten geändert</li></ul></li><li>**Sowohl Journey Optimizer-Knotentypen als auch Komponentenknotentypen werden angezeigt**, wenn die Journey eine Journey Optimizer-Journey ist, die auf der Journey-Arbeitsfläche mit einer der folgenden Änderungen geändert wurde:<ul><li>Knoten hinzugefügt oder entfernt</li><li>Pfeile hinzugefügt oder entfernt</li><li>Komponenten auf einem Knoten geändert</li></ul></li><li>**Es werden nur Komponentenknotentypen angezeigt**, wenn die Journey keine Journey Optimizer-Journey ist.</li></ul></p> |
-   | [!UICONTROL **Prozentwert**] | Der auf jedem Knoten im Journey angezeigte Prozentwert. Dieser Prozentsatz umfasst nur die Personen, die in der Datenansicht innerhalb des Datumsbereichs des Bedienfelds eingeschlossen sind. <p>Wählen Sie aus den folgenden Optionen:</p> <ul><li>[!UICONTROL **Prozent des Startknotens**]: Der Prozentsatz aller Personen, die die Kriterien eines Startknotens im Journey erfüllen. <p>Ein _Startknoten_ ist ein Knoten, der keine verbundenen Knoten davor hat.</p><p>Eine Journey kann mehrere Startknoten enthalten. Allerdings wird [!UICONTROL **Prozent des Gesamtwerts**] verwendet, wenn die Journey 2 oder mehr Startknoten enthält, die zu einem gemeinsamen Knoten führen. Wenn Sie [!UICONTROL **Prozent des Startknotens**] verwenden möchten, aktualisieren Sie die Journey, sodass jeder Knoten im Journey auf einen einzelnen Startknoten zurückverfolgt werden kann.</p></li><li>[!UICONTROL **Prozentsatz des vorherigen Knotens**]: Der Prozentsatz aller Personen des vorherigen Knotens.</li><li>[!UICONTROL **Prozent der Gesamtsumme**]: Der Prozentsatz aller Personen, die in der Datenansicht im Datumsbereich des Bedienfelds enthalten sind.</li></ul> |
-   | [!UICONTROL **Pfeileinstellungen**] | Die Pfeile, die zwischen Knoten auf der Journey-Arbeitsfläche angezeigt werden, können so konfiguriert werden, dass benutzerdefinierte Beschriftungen und Werte angezeigt werden. <p>_Beschriftungen_ sind benutzerdefinierte Namen, die auf den Pfeilen angezeigt werden. Auf einem Pfeil wird nur eine einzige Bezeichnung angezeigt. Bezeichnungen können eine der folgenden sein und werden in der folgenden Reihenfolge angezeigt:</p><ol><li>Ein benutzerdefinierter Name, der von der Journey-Arbeitsfläche hinzugefügt wurde (wie unter [Umbenennen eines Knotens oder Pfeils](#rename-a-node-or-arrow) beschrieben)</li><li>Eine Journey Optimizer-Bezeichnung</li><li>Eine Journey Optimizer-Bedingung</li></ol><p>_Werte_ sind die Zahlen und Prozentwerte, die auf den Pfeilen angezeigt werden, und sie geben die Personen oder Sitzungen an, die von einem Knoten zum nächsten im Journey verschoben wurden. (Mit anderen Worten, diejenigen, die bei einem bestimmten Schritt nicht aus dem Journey herausgefallen sind.) </p><p>Die folgenden Optionen sind für Journey verfügbar, die nicht aus Journey Optimizer stammen, und für Journey Optimizer-Journey, die nicht wesentlich auf der Journey-Arbeitsfläche geändert wurden: (Wesentliche Änderungen sind das Hinzufügen oder Entfernen von Knoten, das Hinzufügen oder Entfernen von Pfeilen oder das Ändern der Knotenkomponenten.)</p><ul><li>[!UICONTROL **Keine Beschriftungen**]: Auf den Pfeilen im Journey werden keine Beschriftungen angezeigt. </br> Diese Option ist nur verfügbar, wenn die Journey in </li><li>[!UICONTROL **Nur Beschriftungen**]: Beschriftungen werden auf den Pfeilen im Journey angezeigt.</li></ul><p>Die folgenden Optionen stehen für Journey Optimizer-Journey zur Verfügung, die in der Journey-Arbeitsfläche erheblich geändert wurden: (Wesentliche Änderungen sind das Hinzufügen oder Entfernen von Knoten, das Hinzufügen oder Entfernen von Pfeilen oder das Ändern der Komponenten eines Knotens.)(**Hinweis**: Diese Optionen werden nur angezeigt, wenn Journey Optimizer-Daten in derselben Datenansicht erkannt werden, die im Bedienfeld &quot;Analysis Workspace&quot;ausgewählt ist, in dem Sie die Visualisierung hinzufügen. Informationen zum Ändern der Datenansicht in einem Bedienfeld in Analysis Workspace finden Sie unter [Analysis Workspace - Übersicht](/help/analysis-workspace/home.md).)</p><ul><li>[!UICONTROL **Keine Beschriftungen oder Werte**]: Auf den Pfeilen des Journey werden keine Beschriftungen oder Werte angezeigt.</li><li>[!UICONTROL **Nur Beschriftungen**]: Auf den Pfeilen im Journey werden nur Beschriftungen angezeigt. Werte werden nicht angezeigt.</li><li>[!UICONTROL **Nur Werte**]: Nur Werte werden auf den Pfeilen im Journey angezeigt. Beschriftungen werden nicht angezeigt.</li><li>[!UICONTROL **Werte und Beschriftungen**]: Sowohl Beschriftungen als auch Werte werden auf den Pfeilen im Journey angezeigt.</li></ul> |
-   | [!UICONTROL **Fallout anzeigen**] | Anzeigen von Fallout-Daten für jeden Knoten. Zeigt die Anzahl und den Prozentsatz der Personen an, die die Journey nach einem bestimmten Knoten verlassen haben. <p>Personen, die aus der Journey herausgefallen sind, haben möglicherweise andere Aktionen auf der Site durchgeführt, aber sie haben die vom nächsten Knoten im Journey definierten Kriterien nie erfüllt.</p> |
+   | [!UICONTROL **Prozentwert**] | Der auf jedem Knoten im Journey angezeigte Prozentwert. <p>Beachten Sie Folgendes bei der Konfiguration der auf Knoten in der Journey angezeigten Prozentwerte:</p><ul><li>Ein Prozentsatz wird auf jedem Knoten für die primäre Metrik angezeigt. Ein Prozentsatz wird auch für die sekundäre Metrik angezeigt, wenn eine konfiguriert ist. (Weitere Informationen zu den primären und sekundären Metrikeinstellungen finden Sie unter [Erstellen einer Journey-Arbeitsflächenvisualisierung beginnen](#begin-building-a-journey-canvas-visualization).)</li><li>Prozentsätze umfassen alle Personen oder Sitzungen, die in der Datenansicht innerhalb des Datumsbereichs des Bedienfelds enthalten sind. Ob _Personen_ oder _Sitzungen_ verwendet werden, hängt von der Behältereinstellung ab. (Weitere Informationen zur Behältereinstellung finden Sie unter [Erstellen einer Journey-Arbeitsflächenvisualisierung beginnen](#begin-building-a-journey-canvas-visualization).)</li></ul> <p>Wählen Sie aus den folgenden Optionen:</p> <ul><li>[!UICONTROL **Prozent des Startknotens**]: Berechnet die auf jedem Knoten angezeigten Prozentsätze im Verhältnis zum Startknoten. Prozentsätze basieren auf der von Ihnen ausgewählten primären und sekundären Metrik. <p>Ein _Startknoten_ ist ein Knoten, der keine verbundenen Knoten davor hat.</p><p>Eine Journey kann mehrere Startknoten enthalten. Allerdings wird [!UICONTROL **Prozent des Gesamtwerts**] verwendet, wenn die Journey 2 oder mehr Startknoten enthält, die zu einem gemeinsamen Knoten führen. Wenn Sie [!UICONTROL **Prozent des Startknotens**] verwenden möchten, aktualisieren Sie die Journey, sodass jeder Knoten im Journey auf einen einzelnen Startknoten zurückverfolgt werden kann.</p></li><li>[!UICONTROL **Prozentsatz des vorherigen Knotens**]: Berechnet die auf jedem Knoten angezeigten Prozentsätze im Verhältnis zum vorherigen Knoten. Prozentsätze basieren auf der von Ihnen ausgewählten primären und sekundären Metrik.</li><li>[!UICONTROL **Prozent des Gesamtwerts**]: Berechnet die auf jedem Knoten angezeigten Prozentsätze in Bezug auf alle Daten in der Datenansicht. Prozentsätze basieren auf der von Ihnen ausgewählten primären und sekundären Metrik.</li></ul> |
+   | [!UICONTROL **Pfeileinstellungen**] | Die Pfeile, die zwischen Knoten auf der Journey-Arbeitsfläche angezeigt werden, können so konfiguriert werden, dass benutzerdefinierte Beschriftungen und Werte angezeigt werden. <p>_Beschriftungen_ sind benutzerdefinierte Namen, die auf den Pfeilen angezeigt werden. Auf einem Pfeil wird nur eine einzige Bezeichnung angezeigt. Bezeichnungen können eine der folgenden sein und werden in der folgenden Reihenfolge angezeigt:</p><ol><li>Ein benutzerdefinierter Name, der von der Journey-Arbeitsfläche hinzugefügt wurde (wie unter [Hinzufügen oder Aktualisieren einer Bezeichnung auf einem Pfeil](#add-or-update-a-label-on-an-arrow) beschrieben)</li><li>Eine Journey Optimizer-Bezeichnung</li><li>Eine Journey Optimizer-Bedingung</li></ol><p>_Werte_ sind die Zahlen und Prozentwerte, die auf den Pfeilen angezeigt werden, und sie geben die Personen oder Sitzungen an, die von einem Knoten zum nächsten im Journey verschoben wurden. (Mit anderen Worten, diejenigen, die bei einem bestimmten Schritt nicht aus dem Journey herausgefallen sind.) </p><p>Die folgenden Optionen sind für Journey verfügbar, die nicht aus Journey Optimizer stammen, und für Journey Optimizer-Journey, die nicht wesentlich auf der Journey-Arbeitsfläche geändert wurden: (Wesentliche Änderungen sind das Hinzufügen oder Entfernen von Knoten, das Hinzufügen oder Entfernen von Pfeilen oder das Ändern der Knotenkomponenten.)</p><ul><li>[!UICONTROL **Keine Beschriftungen**]: Auf den Pfeilen im Journey werden keine Beschriftungen angezeigt. </br> Diese Option ist nur verfügbar, wenn die Journey in </li><li>[!UICONTROL **Nur Beschriftungen**]: Beschriftungen werden auf den Pfeilen im Journey angezeigt.</li></ul><p>Die folgenden Optionen stehen für Journey Optimizer-Journey zur Verfügung, die in der Journey-Arbeitsfläche erheblich geändert wurden: (Wesentliche Änderungen sind das Hinzufügen oder Entfernen von Knoten, das Hinzufügen oder Entfernen von Pfeilen oder das Ändern der Komponenten eines Knotens.)(**Hinweis**: Diese Optionen werden nur angezeigt, wenn Journey Optimizer-Daten in derselben Datenansicht erkannt werden, die im Bedienfeld &quot;Analysis Workspace&quot;ausgewählt ist, in dem Sie die Visualisierung hinzufügen. Informationen zum Ändern der Datenansicht in einem Bedienfeld in Analysis Workspace finden Sie unter [Analysis Workspace - Übersicht](/help/analysis-workspace/home.md).)</p><ul><li>[!UICONTROL **Keine Beschriftungen oder Werte**]: Auf den Pfeilen des Journey werden keine Beschriftungen oder Werte angezeigt.</li><li>[!UICONTROL **Nur Beschriftungen**]: Auf den Pfeilen im Journey werden nur Beschriftungen angezeigt. Werte werden nicht angezeigt.</li><li>[!UICONTROL **Nur Werte**]: Nur Werte werden auf den Pfeilen im Journey angezeigt. Beschriftungen werden nicht angezeigt.</li><li>[!UICONTROL **Werte und Beschriftungen**]: Sowohl Beschriftungen als auch Werte werden auf den Pfeilen im Journey angezeigt.</li></ul> |
+   | [!UICONTROL **Fallout anzeigen**] | Fallout-Daten zeigen einen Prozentsatz und eine Zahl, die von jedem Knoten der Journey fallen. Fallout-Daten basieren auf der Metrik, die mit den Einstellungen des Journey-Containers verknüpft ist. Sie basieren nicht auf der primären oder sekundären Metrik.<p>Standardmäßig ist der Container _Person_, daher ist die für Fallout-Daten verwendete Metrik _Personen_. Wenn der Container in _Sitzung_ geändert wird, lautet die für Fallout-Daten verwendete Metrik _Sitzungen_ usw.</p><p>Wenn beispielsweise _Person_ als Containereinstellung verwendet wird, zeigt Fallout den Prozentsatz und die Anzahl der Personen auf jedem Knoten des Journey an, die nie an einem der nächsten Knoten gelangt sind. Möglicherweise haben sie andere Aktionen auf der Site durchgeführt, die Kriterien, die von einem der unmittelbar folgenden Knoten definiert wurden, jedoch nicht erfüllt.</p> <p>Weitere Informationen zur Journey-Arbeitsflächencontainer-Einstellung finden Sie unter [Erstellen einer Journey-Arbeitsflächenvisualisierung beginnen](#begin-building-a-journey-canvas-visualization). |
    | **Zoom-Steuerelemente** | Die folgenden Zoom-Steuerelemente sind oben rechts auf der Arbeitsfläche verfügbar:<ul><li>**Zoom in** ![Einzoomsymbol](assets/zoom-in-icon.png): Vergrößert bestimmte Bereiche der Visualisierung.<p>Sie können auch Maussteuerungen verwenden, wie z. B. das Pinzen auf einem Trackpad.</p></li><li>**Auszoomen** ![ Symbol &quot;Auszoomen&quot;](assets/zoom-out-icon.png): Verkleinert die Visualisierung, um mehr Platz auf der Arbeitsfläche zu gewähren.<p>Sie können auch Maussteuerungen verwenden, wie z. B. das Pinzen auf einem Trackpad.</p></li><li>**Bildschirmgröße** ![Bildschirmsymbol](assets/fill-screen-icon.png): Passt die aktuellen Zoom- und Bildeinstellungen an, um den Bildschirm mit der vollständigen Visualisierung zu füllen.</li></ul><p>Um nach dem Vergrößern oder Verkleinern über die Arbeitsfläche zu schwenken, klicken Sie auf die Maus und ziehen Sie sie an die gewünschte Position.</p> |
 
 1. Fahren Sie mit [Knoten hinzufügen](#add-nodes) fort.
@@ -96,7 +94,7 @@ So konfigurieren Sie Einstellungen für die Visualisierung der Journey-Arbeitsfl
 
 Knoten in einer Journey-Arbeitsflächenvisualisierung stellen die Ereignisse oder Aktionen eines Journey dar.
 
-Sie erstellen Knoten, indem Sie Workspace-Komponenten aus der linken Leiste auf die Arbeitsfläche ziehen, indem Sie Journey-Arbeitsfläche die Auswahl der obersten nächsten oder vorherigen Knoten auf der Grundlage vorhandener Knoten ermöglichen oder indem Sie vorhandene Knoten duplizieren.
+Sie können Knoten wie folgt erstellen: indem Sie Workspace-Komponenten aus der linken Leiste auf die Arbeitsfläche ziehen, indem Sie Journey-Arbeitsfläche die Auswahl der obersten nächsten oder vorherigen Knoten auf der Grundlage vorhandener Knoten ermöglichen oder indem Sie vorhandene Knoten duplizieren.
 
 ### Komponenten aus der linken Leiste ziehen
 
@@ -138,6 +136,8 @@ Sie erstellen Knoten, indem Sie Workspace-Komponenten aus der linken Leiste auf 
    * Primäre Metrikstatistiken (insgesamt und in Prozent)
 
    * Sekundäre Metrikstatistiken (insgesamt und in Prozent)
+
+   Ein pulsierender oder leuchtender Knoten zeigt an, dass Daten für diesen Knoten geladen werden.
 
 1. Wiederholen Sie diesen Vorgang, um mit dem Hinzufügen von Knoten fortzufahren und Ihre Journey zu erstellen.
 
@@ -241,7 +241,7 @@ Nachdem Knoten zur Arbeitsfläche hinzugefügt wurden, können Sie sie neu anord
 
 Journey in der Journey-Arbeitsfläche bestehen aus einem flexiblen Diagramm von Knoten und Pfeilen, die eine beliebige Kombination aus Ereignissen, Dimensionselementen und Filtern darstellen.
 
-Sie können Knoten auf die Arbeitsfläche ziehen, um die Ereignisse und Bedingungen der Journey neu anzuordnen. Sie können mehrere Knoten auswählen, indem Sie die Befehlstaste (unter Mac) oder die Strg-Taste (unter Windows) gedrückt halten.
+Sie können Knoten auf die Arbeitsfläche ziehen, um die Ereignisse und Bedingungen der Journey neu anzuordnen.
 
 Wenn Sie die Reihenfolge der Knoten im Journey neu anordnen, werden die Daten entsprechend aktualisiert.
 
@@ -251,7 +251,7 @@ Ein kombinierter Knoten in der Journey-Arbeitsfläche ist ein Einzelpunkt im Ben
 
 #### Erstellen kombinierter Knoten
 
-Sie können einen der folgenden Schritte ausführen, um eine kombinierte Node in der Journey-Arbeitsfläche zu erstellen:
+Sie können Folgendes tun, um Knoten in der Journey-Arbeitsfläche zu kombinieren:
 
 * Ziehen Sie aus der linken Leiste eine einzelne Komponente auf einen Knoten auf der Arbeitsfläche.
 
@@ -306,7 +306,7 @@ Journey können nicht zirkulär sein und an zuvor verbundene Knoten zurückschle
 
 So verbinden Sie Knoten auf der Journey-Arbeitsfläche:
 
-1. Bewegen Sie auf der Arbeitsfläche den Mauszeiger über den Knoten, der zuerst in der Journey-Sequenz erscheint, die Sie mit einem anderen Knoten verbinden möchten.
+1. Bewegen Sie in einer Journey-Arbeitsflächenvisualisierung den Mauszeiger über den Knoten, der zuerst in der Journey-Sequenz erscheint, die Sie mit einem anderen Knoten verbinden möchten.
 
    Auf jeder Seite des ausgewählten Knotens werden vier blaue Punkte angezeigt.
 
@@ -334,7 +334,7 @@ Die Option zum Hinzufügen einer Zeitbegrenzung ist für die folgenden Objekte a
 
 So fügen Sie eine Zeitbegrenzung hinzu:
 
-1. Klicken Sie mit der rechten Maustaste auf den Pfeil zwischen zwei Knoten und wählen Sie dann [!UICONTROL **Zeitliche Beschränkung hinzufügen**] aus.
+1. Klicken Sie in einer Journey-Arbeitsflächenvisualisierung mit der rechten Maustaste auf den Pfeil zwischen zwei Knoten und wählen Sie dann [!UICONTROL **Zeitliche Beschränkung hinzufügen**] aus.
 
 <!-- 
 
@@ -361,7 +361,7 @@ Die Option zum Ändern der Farbe ist für die folgenden Objekte auf der Arbeitsf
 
 So ändern Sie die Farbe eines Knotens oder Pfeils:
 
-1. Klicken Sie mit der rechten Maustaste auf den Knoten oder Pfeil, dessen Farbe Sie ändern möchten.
+1. Klicken Sie in einer Journey-Arbeitsflächenvisualisierung mit der rechten Maustaste auf den Knoten oder Pfeil, dessen Farbe Sie ändern möchten.
 
 1. Wählen Sie [!UICONTROL **Farbe ändern**]. <!--make sure "color" isn't capitalized. It is in the req doc-->
 
@@ -369,7 +369,7 @@ So ändern Sie die Farbe eines Knotens oder Pfeils:
 
    Die folgenden Farben sind verfügbar: <!--look into this interaction and color list-->
 
-### Umbenennen eines Knotens oder Pfeils
+### Umbenennen eines Knotens
 
 >[!AVAILABILITY]
 >
@@ -381,15 +381,45 @@ Die Option zum Umbenennen ist für die folgenden Objekte auf der Arbeitsfläche 
 
 * Einzelne Knoten
 
-* Der Pfeil zwischen Knoten
-
 So benennen Sie einen Knoten um:
 
-1. Klicken Sie mit der rechten Maustaste auf den Knoten, den Sie umbenennen möchten.
+1. Klicken Sie in einer Journey-Arbeitsflächenvisualisierung mit der rechten Maustaste auf den Knoten, den Sie umbenennen möchten.
 
 1. Wählen Sie [!UICONTROL **Umbenennen**] aus.
 
 1. Geben Sie einen neuen Namen ein und drücken Sie dann die Eingabetaste.<!--is that right?-->
+
+### Hinzufügen oder Aktualisieren einer Bezeichnung auf einem Pfeil
+
+Die Pfeile, die zwischen Knoten auf der Journey-Arbeitsfläche angezeigt werden, können so konfiguriert werden, dass benutzerdefinierte Beschriftungen und Werte angezeigt werden.
+
+Beschriftungen sind benutzerdefinierte Namen, die auf Pfeilen angezeigt werden. Auf einem Pfeil wird nur eine einzige Bezeichnung angezeigt.
+
+Weitere Informationen zu den Beschriftungen und Werten, die auf den Pfeilen angezeigt werden, finden Sie unter &quot;Pfeileinstellungen&quot;in [Visualisierungseinstellungen konfigurieren](#configure-visualization-settings).
+
+Die Option zum Hinzufügen oder Aktualisieren einer Bezeichnung ist für die folgenden Objekte auf der Arbeitsfläche verfügbar:
+
+* Der Pfeil zwischen Knoten
+
+So fügen Sie einem Pfeil eine Bezeichnung hinzu:
+
+1. Klicken Sie in einer Visualisierung der Journey-Arbeitsfläche mit der rechten Maustaste auf den Pfeil, in dem Sie eine Beschriftung hinzufügen möchten.
+
+1. Wählen Sie **[!UICONTROL Titel hinzufügen]** aus.
+
+1. Geben Sie einen Namen für die Beschriftung ein und drücken Sie dann die Eingabetaste.
+
+   Wenn die Pfeileinstellungen derzeit so konfiguriert sind, dass Beschriftungen ausgeblendet werden, wird eine Meldung angezeigt, in der Sie aufgefordert werden, Beschriftungen anzuzeigen.
+
+So aktualisieren Sie eine vorhandene Bezeichnung für einen Pfeil:
+
+1. Klicken Sie in einer Visualisierung der Journey-Arbeitsfläche mit der rechten Maustaste auf den Pfeil, in dem Sie eine Beschriftung hinzufügen möchten.
+
+1. Wählen Sie **[!UICONTROL Titel aktualisieren]** aus.
+
+1. Geben Sie einen Namen für die Beschriftung ein und drücken Sie dann die Eingabetaste.
+
+   Wenn die Pfeileinstellungen derzeit so konfiguriert sind, dass Beschriftungen ausgeblendet werden, wird eine Meldung angezeigt, in der Sie aufgefordert werden, Beschriftungen anzuzeigen.
 
 ### Aufschlüsselung anwenden
 
@@ -419,21 +449,25 @@ Beachten Sie beim Anwenden einer Aufschlüsselung Folgendes:
 >
 >Diese Funktion ist noch nicht verfügbar.
 
-1. Wählen Sie mindestens einen Knoten aus, auf den Sie eine Aufschlüsselung anwenden möchten, und klicken Sie dann mit der rechten Maustaste auf einen der ausgewählten Knoten.
+1. Wählen Sie in einer Journey-Arbeitsflächenvisualisierung mindestens einen Knoten aus, auf den Sie eine Aufschlüsselung anwenden möchten, und klicken Sie dann mit der rechten Maustaste auf einen der ausgewählten Knoten.
 
    Oder
 
-   Wählen Sie einen oder mehrere Pfeile zwischen 2 Knoten aus, auf die Sie die Aufschlüsselung anwenden möchten, und klicken Sie dann mit der rechten Maustaste auf einen der ausgewählten Pfeile.
+   Wählen Sie in einer Journey-Arbeitsflächenvisualisierung einen oder mehrere Pfeile zwischen 2 Knoten aus, auf die Sie die Aufschlüsselung anwenden möchten, und klicken Sie dann mit der rechten Maustaste auf einen der ausgewählten Pfeile.
 
 1. Wählen Sie [!UICONTROL **Aufschlüsselung**] aus.
 
-<!-- 1. Choose where you want to view the breakdown:
+1. Wählen Sie aus, wo die Aufschlüsselung angezeigt werden soll:
 
-        * [!UICONTROL **In Journey canvas**]
+   * [!UICONTROL **In Journey canvas**]
 
-        * [!UICONTROL **In a freeform table**]
+   * [!UICONTROL **In einer Freiformtabelle**]
 
--->
+1. Wählen Sie die Dimension aus, die Sie für die Aufschlüsselung verwenden möchten.
+
+   Wenn Sie die Aufschlüsselung auf der Journey-Arbeitsfläche anzeigen möchten, werden die obersten 5 Dimensionselemente auf dem Knoten angezeigt. Auf dem Knoten ist eine Option verfügbar, um die Aufschlüsselung in einer Freiformtabelle zu öffnen.
+
+   Wenn Sie die Aufschlüsselung in einer Freiformtabelle anzeigen möchten, werden die obersten Dimensionselemente in einer neuen Freiformtabelle direkt über der Journey-Arbeitsflächenvisualisierung angezeigt.
 
 #### Aufschlüsselung auf einzelne Knoten anwenden
 
@@ -457,21 +491,17 @@ Wenn Sie eine Zielgruppe aus mehreren Knoten oder Pfeilen erstellen, werden dies
 
 So erstellen Sie eine Zielgruppe:
 
-1. Wählen Sie mindestens einen Knoten aus, für den Sie eine Zielgruppe erstellen möchten, und klicken Sie dann mit der rechten Maustaste auf einen der ausgewählten Knoten.
+1. Wählen Sie in einer Journey-Arbeitsflächenvisualisierung mindestens einen Knoten aus, für den Sie eine Zielgruppe erstellen möchten, und klicken Sie dann mit der rechten Maustaste auf einen der ausgewählten Knoten.
 
    Oder
 
-   Wählen Sie einen oder mehrere Pfeile zwischen 2 Knoten, in denen Sie eine Zielgruppe erstellen möchten, und klicken Sie dann mit der rechten Maustaste auf einen der ausgewählten Pfeile.
+   Wählen Sie in einer Journey-Arbeitsflächenvisualisierung einen oder mehrere Pfeile zwischen 2 Knoten, an denen Sie eine Zielgruppe erstellen möchten, und klicken Sie dann mit der rechten Maustaste auf einen der ausgewählten Pfeile.
 
-1. Wählen Sie [!UICONTROL **Zielgruppe erstellen**] aus.
+   >[!NOTE]
+   >
+   >Zielgruppen können keine berechneten Metriken oder Metriken enthalten, die auf einem [Zusammenfassungsdatensatz](/help/data-views/summary-data.md) basieren. Wenn Sie versuchen, eine Zielgruppe aus einem Bereich der Journey-Arbeitsfläche zu erstellen, der eine berechnete Metrik oder eine Metrik enthält, die auf einem Zusammenfassungsdatensatz basiert, wird die berechnete Metrik nicht in die Zielgruppendefinition aufgenommen.
 
-<!-- 1. Choose where you want to create the audience:
-
-        * [!UICONTROL **In Journey canvas**]
-
-        * [!UICONTROL **In a freeform table**]
-
--->
+1. Wählen Sie [!UICONTROL **Erstellen einer Zielgruppe aus dem Knoten**] oder [!UICONTROL **Erstellen einer Zielgruppe aus Pfeil**] aus.
 
 1. Fahren Sie mit dem Erstellen und Veröffentlichen der Zielgruppe fort, wie unter [Erstellen und Veröffentlichen von Zielgruppen](/help/components/audiences/publish.md) beschrieben.
 
@@ -495,11 +525,11 @@ Die Option zum Trend ist für die folgenden Objekte auf der Arbeitsfläche verf�
 
 Anzeigen von Trenddaten:
 
-1. Wählen Sie mindestens einen Knoten aus, für den Sie Trenddaten anzeigen möchten, und klicken Sie dann mit der rechten Maustaste auf einen der ausgewählten Knoten.
+1. Wählen Sie in einer Journey-Arbeitsflächenvisualisierung mindestens einen Knoten aus, für den Sie Trenddaten anzeigen möchten, und klicken Sie dann mit der rechten Maustaste auf einen der ausgewählten Knoten.
 
    Oder
 
-   Wählen Sie einen oder mehrere Pfeile zwischen 2 Knoten aus, für die Sie Trenddaten anzeigen möchten, und klicken Sie dann mit der rechten Maustaste auf einen der ausgewählten Pfeile.
+   Wählen Sie in einer Journey-Arbeitsflächenvisualisierung einen oder mehrere Pfeile zwischen 2 Knoten aus, für die Sie Trenddaten anzeigen möchten, und klicken Sie dann mit der rechten Maustaste auf einen der ausgewählten Pfeile.
 
 1. Wählen Sie [!UICONTROL **Trend**] aus.
 
@@ -513,7 +543,7 @@ Wenn Sie einen Filter erstellen, der auf einem Knoten basiert, in den mehrere Pf
 
 Erstellen eines Filters:
 
-1. Klicken Sie auf der Arbeitsfläche mit der rechten Maustaste auf den Knoten oder Pfeil, den Sie zum Erstellen des Filters verwenden möchten.
+1. Klicken Sie in einer Journey-Arbeitsflächenvisualisierung mit der rechten Maustaste auf den Knoten oder Pfeil, den Sie zum Erstellen des Filters verwenden möchten.
 
 1. Wählen Sie [!UICONTROL **Filter aus Knoten erstellen**] oder [!UICONTROL **Filter aus Pfeil erstellen**].
 
@@ -529,7 +559,7 @@ Sie können einen oder mehrere Knoten gleichzeitig innerhalb einer Journey lösc
 
 So löschen Sie Knoten in der Journey-Arbeitsfläche:
 
-1. Wählen Sie mindestens einen Knoten aus, den Sie löschen möchten, und klicken Sie dann mit der rechten Maustaste auf einen der ausgewählten Knoten.
+1. Wählen Sie in einer Journey-Arbeitsflächenvisualisierung mindestens einen Knoten aus, den Sie löschen möchten, und klicken Sie dann mit der rechten Maustaste auf einen der ausgewählten Knoten.
 
 1. Wählen Sie [!UICONTROL **Löschen**] aus.
 
@@ -539,48 +569,14 @@ Sie können einen oder mehrere Pfeile gleichzeitig innerhalb einer Journey lösc
 
 So löschen Sie Pfeile zwischen Knoten in der Journey-Arbeitsfläche:
 
-1. Wählen Sie einen oder mehrere Pfeile zwischen zwei Knoten aus, die Sie löschen möchten, und klicken Sie dann mit der rechten Maustaste auf einen der ausgewählten Pfeile.
+1. Wählen Sie in einer Journey-Arbeitsflächenvisualisierung einen oder mehrere Pfeile zwischen zwei zu löschenden Nodes aus und klicken Sie dann mit der rechten Maustaste auf einen der ausgewählten Pfeile.
 
 1. Wählen Sie [!UICONTROL **Löschen**] aus.
 
-
-<!-- Delete this after I decide I don't want to do it this way. Will probably use sections like I hav above.
-
-### Manage existing nodes
-
-1. In Analysis Workspace, open an existing Journey canvas visualization, or [begin building a new one](#begin-building-a-journey-canvas-visualization).
-
-1. Right-click an **individual node** on the canvas, then select any of the following options:
-   
-   | Option | Function | 
-   |---------|----------|
-   | [!UICONTROL **Create segment**] | B1 |
-   | [!UICONTROL **Publish audience**] | B2 |
-   | [!UICONTROL **Trend**] | B3 | 
-   | [!UICONTROL **Breakdown**] | B2 |
-   | [!UICONTROL **Get top next ...**] | B2 |
-   | [!UICONTROL **Change color**] | B2 |
-   | [!UICONTROL **Rename**] | B2 |
-   | [!UICONTROL **Delete**] | B2 |
-
-1. Select **multiple nodes** on the canvas, right-click one of the selected nodes, then select any of the following options:
-
-   | Option | Function | 
-   |---------|----------|
-   | [!UICONTROL **Combine**] | B1 |
-   | [!UICONTROL **Delete**] | B2 |
-   | [!UICONTROL **Duplicate**] | B3 | 
-   | [!UICONTROL **Trend**] | B2 |
-   | [!UICONTROL **Breakdown**] | B2 |
-   | [!UICONTROL **Create segment**] | B2 |
-   | [!UICONTROL **Publish audience**] | B2 |
-
-   -->
-
-
 ## Öffnen einer Journey über Journey Optimizer
 
+Wenn Sie eine Journey in Journey Optimizer anzeigen, können Sie sie auf der Journey-Arbeitsfläche anzeigen.
 
-Öffnen Sie in Journey Optimizer die Journey, die Sie analysieren möchten, in der Arbeitsfläche des Journey.
+1. Öffnen Sie in Journey Optimizer die Journey, die Sie analysieren möchten, in der Arbeitsfläche des Journey.
 
 1. Wählen Sie [!UICONTROL **Analysieren in CJA**] aus. <!-- ?? -->

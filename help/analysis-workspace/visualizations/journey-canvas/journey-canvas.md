@@ -3,12 +3,10 @@ description: Überblick über die Journey-Arbeitsfläche
 title: Journey-Arbeitsfläche
 feature: Visualizations
 role: User
-hide: true
-hidefromtoc: true
 exl-id: be03c3b2-8faf-47b8-b3ab-e953202bf488
-source-git-commit: 5d65f2cee34741d985ae7b85ad62f65a68c6289a
+source-git-commit: c42858908aa8e73c5f3b622b9911ff9e9724f2dc
 workflow-type: tm+mt
-source-wordcount: '1300'
+source-wordcount: '1318'
 ht-degree: 2%
 
 ---
@@ -35,7 +33,7 @@ Zu den wichtigsten Funktionen der Visualisierung der Journey-Arbeitsfläche geh�
 
 ## Potenzielle Erkenntnisse
 
-Im Folgenden finden Sie einige Beispiele für die Arten von Einblicken, die Journey-Arbeitsfläche bieten kann. Sie können auswählen, ob diese Einblicke auf allen Personen in der Datenansicht oder auf allen Personen basieren, die die Journey gestartet haben.
+Im Folgenden finden Sie einige Beispiele für die Arten von Einblicken, die Journey-Arbeitsfläche bieten kann. Sie können auswählen, ob diese Einblicke auf allen Personen in der Datenansicht, allen Personen, die die Journey gestartet haben, oder allen Personen aus dem vorherigen Knoten der Journey basieren.
 
 **Fallthrough**
 
@@ -47,7 +45,7 @@ Im Folgenden finden Sie einige Beispiele für die Arten von Einblicken, die Jour
 
 **Fallout**
 
-* Die Punkte (Knoten) des Journey, an denen die meisten Menschen am häufigsten aus dem Journey herausgefallen sind
+* Die Punkte (Knoten) der Journey, an denen die meisten Menschen aus der Journey herausgefallen sind (sie kamen nie an einem der nächsten Knoten an)
 
 **Sonstige**
 
