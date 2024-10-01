@@ -5,10 +5,10 @@ title: Visualisierungsübersicht
 feature: Visualizations
 exl-id: ca9e0561-7a54-487a-9fdc-3bcf34f9bdb1
 role: User
-source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
+source-git-commit: 714e37433b12713e45a66ebd64771c050edb89a5
 workflow-type: tm+mt
-source-wordcount: '1525'
-ht-degree: 16%
+source-wordcount: '1592'
+ht-degree: 15%
 
 ---
 
@@ -20,26 +20,30 @@ Workspace bietet eine Reihe von Visualisierungen, mit denen Sie visuelle Darstel
 
 Die folgenden Visualisierungstypen sind in Analysis Workspace verfügbar:
 
-| Visualisierungsname<br/>Visualisierungssymbol | Beschreibung |
-| --- | --- | 
-| [Bereich](/help/analysis-workspace/visualizations/area.md)<p>![GraphArea](/help/assets/icons/GraphArea.svg)</p> | Eine Visualisierung eines Bereichsdiagramms. Wie ein Liniendiagramm, aber mit einem farbigen Bereich unterhalb der Linie. Verwenden Sie ein Flächendiagramm, wenn Sie mehrere Metriken darstellen und den Bereich visualisieren möchten, der durch die Schnittmenge von zwei oder mehr Metriken gebildet wird. |
-| [Balken](/help/analysis-workspace/visualizations/bar.md) <p>![GraphBarVertical](/help/assets/icons/GraphBarVertical.svg)</p> | Eine Balkendiagrammvisualisierung mit vertikalen Balken, die verschiedene Werte aus einer oder mehreren Metriken darstellen. |
-| [Lineardiagramm](/help/analysis-workspace/visualizations/bullet-graph.md) <p>![GraphBullet](/help/assets/icons/GraphBullet.svg)</p> | Eine Visualisierung eines Lineardiagramms, die anzeigt, wie ein Wert, der Sie interessiert, im Vergleich zu anderen Leistungsbereichen (Zielen) liegt oder diese misst. |
-| [Kohortentabelle](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md)<p>![TextNumbered](/help/assets/icons/TextNumbered.svg)</p> | Eine Kohortenvisualisierung ist eine Personengruppe mit gemeinsamen Merkmalen innerhalb eines bestimmten Zeitraums. Eine Kohortentabelle ist für die Aufbewahrungs-, Abwanderungs- oder Latenzanalyse nützlich. |
-| [Ringdiagramm](/help/analysis-workspace/visualizations/donut.md) <p>![GraphDonut](/help/assets/icons/GraphDonut.svg)</p> | Ähnlich wie bei einem Tortendiagramm zeigt eine Ringvisualisierung Daten als Teile oder Filter eines Ganzen an. |
-| [Fallout](/help/analysis-workspace/visualizations/fallout/fallout-flow.md)<p>![ConversionTrichter](/help/assets/icons/ConversionFunnel.svg)</p> | Eine Fallout-Visualisierung zeigt an, wo Personen eine vordefinierte Seitensequenz verlassen (ausgefallen) und weitergemacht (durchgeraten) haben. |
-| [Fluss](/help/analysis-workspace/visualizations/c-flow/flow.md)<p>![GraphPathing](/help/assets/icons/GraphPathing.svg)</p> | Eine Flussvisualisierung zeigt exakte Kundenpfade durch Ihre Websites und Apps. |
-| [Freiformtabelle](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)<p>![ViewTable](/help/assets/icons/ViewTable.svg)</p> | Eine Freiformtabellen-Visualisierung ist eine interaktive Visualisierung. Die Freiformtabellenvisualisierung bildet die Grundlage für die Datenanalyse in Workspace. |
-| [Histogramm](/help/analysis-workspace/visualizations/histogram.md)<p>![GraphHistogramm](/help/assets/icons/GraphHistogram.svg)</p> | Eine Histogrammvisualisierung fasst Personen, Besuche oder Ereignisse basierend auf einem Metrikvolumen in Behälter zusammen. |
-| [Horizontalbalken](/help/analysis-workspace/visualizations/horizontal-bar.md)<p>![GraphBarHorizontal](/help/assets/icons/GraphBarHorizontal.svg)</p> | Eine horizontale Balkenvisualisierung zeigt horizontale Balken, die verschiedene Werte aus einer oder mehreren Metriken darstellen. |
-| [Zusammenfassung der Schlüsselmetriken](/help/analysis-workspace/visualizations/key-metric.md)<p>![KeyMetrics](/help/assets/icons/KeyMetrics.svg) | Eine Visualisierung der Schlüsselmetriken-Zusammenfassung kombiniert die Visualisierungen für Zeilen, Zusammenfassungen und Zusammenfassungsnummern. |
-| [Linie](/help/analysis-workspace/visualizations/line.md)<p>![GraphTrend](/help/assets/icons/GraphTrend.svg)</p> | Eine Linienvisualisierung stellt Metriken anhand einer Linie dar, die angibt, wie sich Werte über einen bestimmten Zeitraum ändern. Ein Liniendiagramm verwendet die Zeit entlang der X-Achse. |
-| [Streudiagramm](/help/analysis-workspace/visualizations/scatterplot.md) <p>![GraphStreuung](/help/assets/icons/GraphScatter.svg)</p> | Eine Streudiagramm-Visualisierung zeigt die Beziehung zwischen Dimensionselementen und bis zu drei Metriken. |
-| [Zusammenfassungszahl](/help/analysis-workspace/visualizations/summary-number-change.md)<p>![123](/help/assets/icons/123.svg)</p> | Eine Visualisierung der Zusammenfassungsnummer zeigt die ausgewählte Zelle als eine große Zahl an. |
-| [Zusammenfassungsänderung](/help/analysis-workspace/visualizations/summary-number-change.md)<p>![MoveUpDown](/help/assets/icons/MoveUpDown.svg)</p> | Eine Visualisierung der Zusammenfassungsänderung zeigt die Änderung zwischen den ausgewählten Zellen als eine große Zahl oder einen großen Prozentsatz an. |
-| [Text](/help/analysis-workspace/visualizations/text.md)<p>![Text](/help/assets/icons/Text.svg)</p> | Mit einer Textvisualisierung können Sie benutzerdefinierten Text zu Ihrer Workspace hinzufügen. Hilfreich zum Hinzufügen zusätzlicher Kontexte zu Ihrer Analyse und zu Einblicken, zusätzlich zum Nutzen der Beschreibungen im Bedienfeld oder in Visualisierungen |
-| [Treemap](/help/analysis-workspace/visualizations/treemap.md)<p>![ModernGridView](/help/assets/icons/ModernGridView.svg)</p> | Eine Treemap-Visualisierung zeigt hierarchische Daten (Baumstruktur) als Satz verschachtelter Rechtecke an. |
-| [Venn](/help/analysis-workspace/visualizations/venn.md)<p>![Typ](/help/assets/icons/TwoDots.svg)</p> | In einer Venenkvisualisierung werden Kreise verwendet, um die Metriküberschneidung von bis zu 3 Filtern darzustellen. |
+| Symbol | Name | Beschreibung |
+| :---: | --- | ---| 
+| ![GraphArea](/help/assets/icons/GraphArea.svg) | [Bereich](/help/analysis-workspace/visualizations/area.md) | Eine Visualisierung eines Bereichsdiagramms. Wie ein Liniendiagramm, aber mit einem farbigen Bereich unterhalb der Linie. Verwenden Sie ein Flächendiagramm, wenn Sie mehrere Metriken darstellen und den Bereich visualisieren möchten, der durch die Schnittmenge von zwei oder mehr Metriken gebildet wird. |
+| ![GraphBarVertical](/help/assets/icons/GraphBarVertical.svg) | [Balken](/help/analysis-workspace/visualizations/bar.md) | Eine Balkendiagrammvisualisierung mit vertikalen Balken, die verschiedene Werte aus einer oder mehreren Metriken darstellen. |
+| ![GraphBarVertical](/help/assets/icons/GraphBarVerticalStacked.svg) | [Balken gestapelt](/help/analysis-workspace/visualizations/bar.md) | Eine gestapelte Balkendiagrammvisualisierung mit vertikalen Balken, die verschiedene Werte aus einer oder mehreren Metriken darstellt. |
+| ![GraphBullet](/help/assets/icons/GraphBullet.svg)</p> | [Aufzählungszeichen](/help/analysis-workspace/visualizations/bullet-graph.md) | Eine Visualisierung eines Lineardiagramms, die anzeigt, wie ein Wert, der Sie interessiert, im Vergleich zu anderen Leistungsbereichen (Zielen) liegt oder diese misst. |
+| ![TextNumbered](/help/assets/icons/TextNumbered.svg) | [Kohortentabelle](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md) | Eine Kohortenvisualisierung ist eine Personengruppe mit gemeinsamen Merkmalen innerhalb eines bestimmten Zeitraums. Eine Kohortentabelle ist für die Aufbewahrungs-, Abwanderungs- oder Latenzanalyse nützlich. |
+| ![Kombo](/help/assets/icons/ComboChart.svg) | [Kombo](combo-charts.md) | Mit einem Kombinationsdiagramm können Sie schnell eine Vergleichsvisualisierung erstellen, ohne zuvor eine Tabelle erstellen zu müssen. |
+| ![GraphDonut](/help/assets/icons/GraphDonut.svg) | [Ringdiagramm](/help/analysis-workspace/visualizations/donut.md) | Ähnlich wie bei einem Tortendiagramm zeigt eine Ringvisualisierung Daten als Teile oder Filter eines Ganzen an. |
+| ![ConversionTrichter](/help/assets/icons/ConversionFunnel.svg) | [Fallout](/help/analysis-workspace/visualizations/fallout/fallout-flow.md) | Eine Fallout-Visualisierung zeigt an, wo Personen eine vordefinierte Seitensequenz verlassen (ausgefallen) und weitergemacht (durchgeraten) haben. |
+| ![GraphPathing](/help/assets/icons/GraphPathing.svg) | [Fluss](/help/analysis-workspace/visualizations/c-flow/flow.md) | Eine Flussvisualisierung zeigt exakte Kundenpfade durch Ihre Websites und Apps. |
+| ![ViewTable](/help/assets/icons/ViewTable.svg)</p> | [Freiformtabelle](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) | Eine Freiformtabellen-Visualisierung ist eine interaktive Visualisierung. Die Freiformtabellenvisualisierung bildet die Grundlage für die Datenanalyse in Workspace. |
+| ![GraphHistogramm](/help/assets/icons/Histogram.svg) | [Histogramm](/help/analysis-workspace/visualizations/histogram.md) | Eine Histogrammvisualisierung fasst Personen, Besuche oder Ereignisse basierend auf einem Metrikvolumen in Behälter zusammen. |
+| ![GraphBarHorizontal](/help/assets/icons/GraphBarHorizontal.svg) | [Horizontalbalken](/help/analysis-workspace/visualizations/horizontal-bar.md) | Eine horizontale Balkenvisualisierung zeigt horizontale Balken, die verschiedene Werte aus einer oder mehreren Metriken darstellen. |
+| ![GraphBarHorizontalStack](/help/assets/icons/GraphBarHorizontalStacked.svg) | [Horizontalbalken gestapelt](/help/analysis-workspace/visualizations/horizontal-bar.md) | Eine gestapelte horizontale Balkenvisualisierung zeigt horizontale Balken, die verschiedene Werte aus einer oder mehreren Metriken darstellen. |
+| ![KeyMetrics](/help/assets/icons/KeyMetrics.svg) | [Zusammenfassung der Schlüsselmetriken](/help/analysis-workspace/visualizations/key-metric.md) | Eine Visualisierung der Schlüsselmetriken-Zusammenfassung kombiniert die Visualisierungen für Zeilen, Zusammenfassungen und Zusammenfassungsnummern. |
+| ![GraphTrend](/help/assets/icons/GraphTrend.svg) | [Linie](/help/analysis-workspace/visualizations/line.md) | Eine Linienvisualisierung stellt Metriken anhand einer Linie dar, die angibt, wie sich Werte über einen bestimmten Zeitraum ändern. Ein Liniendiagramm verwendet die Zeit entlang der X-Achse. |
+| ![GraphStreuung](/help/assets/icons/GraphScatter.svg) | [Streuung](/help/analysis-workspace/visualizations/scatterplot.md) | Eine Streudiagramm-Visualisierung zeigt die Beziehung zwischen Dimensionselementen und bis zu drei Metriken. |
+| ![PageRule](/help/assets/icons/PageRule.svg) | [Bereichs header](section-header.md) | So identifizieren und artikulieren Sie Abschnitte in einem Bedienfeld. |
+| ![MoveUpDown](/help/assets/icons/MoveUpDown.svg) | [Zusammenfassungsänderung](/help/analysis-workspace/visualizations/summary-number-change.md) | Eine Visualisierung der Zusammenfassungsänderung zeigt die Änderung zwischen den ausgewählten Zellen als eine große Zahl oder einen großen Prozentsatz an. |
+| ![123](/help/assets/icons/123.svg)</p> | [Zusammenfassungszahl](/help/analysis-workspace/visualizations/summary-number-change.md) | Eine Visualisierung der Zusammenfassungsnummer zeigt die ausgewählte Zelle als eine große Zahl an. |
+| ![Text](/help/assets/icons/Text.svg) | [Text](/help/analysis-workspace/visualizations/text.md) | Mit einer Textvisualisierung können Sie benutzerdefinierten Text zu Ihrer Workspace hinzufügen. Hilfreich zum Hinzufügen zusätzlicher Kontexte zu Ihrer Analyse und zu Einblicken, zusätzlich zum Nutzen der Beschreibungen im Bedienfeld oder in Visualisierungen |
+| ![ModernGridView](/help/assets/icons/ModernGridView.svg) | [Treemap](/help/analysis-workspace/visualizations/treemap.md)<p> | Eine Treemap-Visualisierung zeigt hierarchische Daten (Baumstruktur) als Satz verschachtelter Rechtecke an. |
+| ![Typ](/help/assets/icons/TwoDots.svg) | [Venn](/help/analysis-workspace/visualizations/venn.md) | In einer Venenkvisualisierung werden Kreise verwendet, um die Metriküberschneidung von bis zu 3 Filtern darzustellen. |
 
 <!-- Add beneath Horizontal bar in the table above: | [Journey canvas](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md) | Similar to Fallout, Journey canvas shows where persons left (fell out) and continued through (fell through) a predefined sequence of pages. <p>Unlike Fallout, Journey canvas supports not only linear journeys, but any number of entry points and paths. Furthermore, journeys can be created in Adobe Journey Optimizer and then analyzed in Journey canvas.</p> | -->
 
@@ -141,7 +145,7 @@ Verwenden Sie das Kontextmenü (über alternative Auswahl verfügbar, z. B. Rech
 | **[!UICONTROL Elemente als CSV-Datei herunterladen (*Dimensionsname*)]** | Laden Sie die Dimensionselemente (bis zu maximal 50.000) der Visualisierung auf Ihr lokales Gerät herunter. Maximal 50.000 Dimensionselemente für die ausgewählte Dimension. |
 | **[!UICONTROL Visualisierung kopieren]** | Kopieren Sie die Visualisierung, damit Sie die Visualisierung an eine andere Stelle innerhalb des Projekts oder in ein ganz anderes Projekt einfügen können. |
 | **[!UICONTROL Daten-CSV herunterladen]** | Laden Sie die angezeigten Daten der Visualisierung auf Ihr lokales Gerät herunter. |
-| **[!UICONTROL Gesamte Tabelle exportieren..]** | Exportieren Sie die vollständige Tabelle in eine bestimmte Cloud-Position. Siehe [Exportiert Customer Journey Analytics-Berichte in die Cloud](../export/export-cloud.md) |
+| **[!UICONTROL Gesamte Tabelle exportieren]** | Exportieren Sie die vollständige Tabelle in eine bestimmte Cloud-Position. Siehe [Exportiert Customer Journey Analytics-Berichte in die Cloud](../export/export-cloud.md) |
 | **[!UICONTROL Visualisierung duplizieren]** | Erstellen Sie ein exaktes Duplikat der Visualisierung. |
 | **[!UICONTROL Beschreibung bearbeiten]** | Fügen Sie eine Textbeschreibung für die Visualisierung hinzu (oder bearbeiten Sie sie). Siehe [Text](text.md). |
 | **[!UICONTROL Visualisierungslink abrufen]** | Kopieren Sie einen Link und geben Sie ihn direkt für die Visualisierung frei. Ein Dialogfeld Link freigeben zeigt den Link an. Wählen Sie Kopieren aus, um den Link in die Zwischenablage zu kopieren. |
