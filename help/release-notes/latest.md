@@ -3,10 +3,10 @@ title: Aktuelle Versionshinweise zu Customer Journey Analytics anzeigen
 description: Neueste Versionshinweise zu Customer Journey Analytics
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: c403e2bbf20de3dca4440160ef3f69a9d0d60a2f
+source-git-commit: e45b57ca3ec55493c252336ac0b78fef97e03b36
 workflow-type: tm+mt
-source-wordcount: '485'
-ht-degree: 52%
+source-wordcount: '513'
+ht-degree: 50%
 
 ---
 
@@ -24,7 +24,7 @@ Diese Versionshinweise beziehen sich auf den Veröffentlichungszeitraum vom 2. O
 | **Produktnutzung** | Erfahren Sie, wie Ihr Unternehmen Customer Journey Analytics verwendet. Durch die Aktivierung dieser Funktion wird ein Datensatz in Adobe Experience Platform erstellt, der Daten erfasst, wenn Personen in Ihrem Unternehmen Analysis Workspace verwenden. Eine Verbindung und eine Datenansicht werden ebenfalls automatisch erstellt, sodass Sie auf verschiedene Dimensionen zugreifen können, darunter die Top-Projekttypen, die aktivsten Benutzenden und die beliebtesten in Projekten verwendeten Komponenten. [Weitere Informationen](https://experienceleague.adobe.com/en/docs/analytics-platform/using/tools/product-usage/usage-overview) | Freitag, 3. Oktober 2024 | Donnerstag, 23. Oktober 2024 |
 | **Visualisierung der Journey-Arbeitsfläche** | Journey-Arbeitsfläche ist eine Visualisierung in Analysis Workspace, mit der Sie analysieren können, wie Benutzer eine definierte Journey durchlaufen oder aussteigen. Erstellen Sie Analysen von Benutzer-Journeys, indem Sie ein flexibles Diagramm mit Knoten und Pfeilen erstellen, die eine beliebige Kombination von Ereignissen, Dimensionselementen und Filtern darstellen. Ziehen Sie Knoten auf der Arbeitsfläche, um die Ereignisse und Bedingungen der Journey neu anzuordnen. Die Daten werden dabei entsprechend aktualisiert.<p>Kundinnen und Kunden mit Zugriff auf Adobe Journey Optimizer können vorhandene Journey Optimizer-Journeys analysieren.<p>Weitere Informationen zum Journey-Arbeitsbereich finden Sie unter [Überblick über die Journey-Arbeitsfläche](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/visualizations/journey-canvas/journey-canvas).<p>Informationen zum Erstellen einer Visualisierung einer Journey-Arbeitsfläche finden Sie unter [Konfigurieren der Journey-Arbeitsfläche](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/visualizations/journey-canvas/configure-journey-canvas). | 2. Oktober 2024 | Dienstag, 14. Oktober 2024 |
 | **Bereichsfilter und Spaltenfilter sind jetzt beim Erstellen einer Zielgruppe eingeschlossen** | Beim Erstellen einer Zielgruppe aus einer Visualisierung in Analysis Workspace werden Bereichsfilter und Spaltenfilter jetzt als zusätzliche Kriterien einbezogen. Wenn die Filter nicht benötigt werden, können sie vor der Publikation entfernt werden. Bisher wurden alle Filter, die auf das Bedienfeld oder die Spalte einer Visualisierung in Analysis Workspace angewendet wurden, beim Erstellen einer Zielgruppe ignoriert.<p>Weitere Informationen zum Erstellen einer Zielgruppe aus Customer Journey Analytics finden Sie unter [Erstellen und Veröffentlichen von Zielgruppen](https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-components/audiences/publish). |  | 2. Oktober 2024 |
-
+| **Asset-Übertragung** | Ermöglicht die Übertragung des Eigentums an Komponenten wie Projekten, Filtern und berechneten Metriken an andere Benutzer, um Kontinuität und angemessenen Zugriff sicherzustellen. | Oktober 15 | Oktober 22 |
 
 ## Fehlerbehebungen in Customer Journey Analytics
 
