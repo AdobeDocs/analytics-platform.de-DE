@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie Zielgruppen in Customer Journey Analytics ver
 exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
 feature: Audiences
 role: User
-source-git-commit: 17b684a3662caf68b4c4a097caad9cf6d0eb3d9f
+source-git-commit: 905d8e0bfe2e0dbc9c6a03d9eb9a6efd4926fbbf
 workflow-type: tm+mt
-source-wordcount: '1651'
-ht-degree: 51%
+source-wordcount: '1767'
+ht-degree: 48%
 
 ---
 
@@ -42,12 +42,10 @@ Lesen Sie diesen [Überblick](/help/components/audiences/audiences-overview.md) 
    | Erstellungsmethode | Details |
    | --- | --- |
    | Über das Hauptmenü **[!UICONTROL Komponenten] > [!UICONTROL Zielgruppen]**: | Die Seite „Zielgruppen-Manager“ wird geöffnet. Klicken Sie auf **[!UICONTROL Zielgruppe erstellen]**. [!UICONTROL Audience Builder] wird geöffnet. |
-   | Über eine Freiformtabelle: | Klicken Sie mit der rechten Maustaste auf ein Element in einer Freiformtabelle und wählen Sie **[!UICONTROL Erstellen einer Zielgruppe aus Auswahl]** aus. Mit dieser Methode wird der Filter vorab mit der Dimension oder dem Dimensionselement ausgefüllt, die bzw. das Sie in der Tabelle ausgewählt haben. |
+   | Aus einer Visualisierung in Analysis Workspace | Mit vielen Visualisierungen in Analysis Workspace können Sie mithilfe des Kontextmenüs eine Zielgruppe erstellen. Sie können beispielsweise mit der rechten Maustaste auf ein Element in einer Freiformtabelle klicken oder Sie können mit der rechten Maustaste auf einen Knoten in der Journey-Arbeitsfläche klicken und dann **[!UICONTROL Zielgruppe erstellen]** auswählen. <p>Mit dieser Methode wird der Filter vorab mit der Dimension oder dem Dimensionselement ausgefüllt, die bzw. das Sie in der Tabelle ausgewählt haben.</p><p>Mit den folgenden Visualisierungen können Sie eine Zielgruppe mithilfe des Kontextmenüs erstellen:</p><ul><li>Kohorte</li><li>Fallout</li><li>Fluss</li><li>Freiformtabelle</li><li>Journey-Arbeitsfläche</li><li>Venn</li></ul><p>**Hinweis:** Zielgruppen können keine berechneten Metriken enthalten. Wenn Sie versuchen, eine Zielgruppe zu erstellen, die eine berechnete Metrik enthält, wird die berechnete Metrik nicht in die Zielgruppendefinition aufgenommen.</p> |
    | Über die Benutzeroberfläche zur Erstellung/Bearbeitung von Filtern: | Markieren Sie das Kästchen **[!UICONTROL Zielgruppe über diesen Filter erstellen]**. Mit dieser Methode wird der Filter vorab ausgefüllt. |
 
    {style="table-layout:auto"}
-
-   <!-- add beneath the Freeform table row above: | From within a Journey canvas visualization | Right-click a node in a Journey canvas visualization and select **[!UICONTROL Create audience]**. Using this method pre-populates the filter with the dimension or dimension item you selected in the table. | -->
 
 1. Erstellen Sie die Zielgruppe.
 
@@ -64,7 +62,7 @@ Lesen Sie diesen [Überblick](/help/components/audiences/audiences-overview.md) 
    | Ablaufdatum | Wann die Aktualisierung der Zielgruppe beendet ist. Der Standardwert liegt bei 1 Jahr ab dem Erstellungsdatum. Vor der Beendigung der Zielgruppen-Aktualisierung erhält der Administrator ähnlich wie bei der Beendigung von geplanten Berichten einen Monat vor Ablauf der Zielgruppe eine E-Mail. |
    | Lookback-Fenster aktualisieren | Gibt an, wie weit Sie im Datenfenster bei der Erstellung dieser Zielgruppe zurückgehen möchten. Die Höchstdauer beträgt 90 Tage. |
    | [!UICONTROL Einmaliger Datumsbereich] | Datumsbereich, in dem die einmalige Zielgruppe veröffentlicht werden soll. |
-   | [!UICONTROL Filter] | Filter sind die Hauptauswahloptionen für die Zielgruppe. Sie können bis zu 20 Filter hinzufügen. Diese Filter können mit `And`- oder `Or`-Operatoren verbunden werden. |
+   | [!UICONTROL Filter] | Filter sind die Hauptauswahloptionen für die Zielgruppe. Sie können bis zu 20 Filter hinzufügen. Diese Filter können mit `And`- oder `Or`-Operatoren verbunden werden.<p>Beim Erstellen einer Zielgruppe aus einer Visualisierung in Analysis Workspace (z. B. einer Freiformtabelle oder einer Journey-Arbeitsfläche) bleiben alle auf das Bedienfeld oder die Spalte angewendeten Filter erhalten. Sie können alle automatisch angewendeten Filter entfernen.</p> |
    | [!UICONTROL Beispiel-IDs anzeigen] | Beispiel für IDs in dieser Zielgruppe. Verwenden Sie die Suchleiste, um nach Beispiel-IDs zu suchen. |
 
    {style="table-layout:auto"}
