@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie Zielgruppen in Customer Journey Analytics ver
 exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
 feature: Audiences
 role: User
-source-git-commit: 31381cd397a821cc3ff1b3c15ae968a7260a6e9e
+source-git-commit: 17b684a3662caf68b4c4a097caad9cf6d0eb3d9f
 workflow-type: tm+mt
-source-wordcount: '1726'
-ht-degree: 49%
+source-wordcount: '1651'
+ht-degree: 51%
 
 ---
 
@@ -126,12 +126,6 @@ Customer Journey Analytics übernimmt alle Namespace- und ID-Kombinationen aus I
 Das Echtzeit-Kundenprofil untersucht dann jede Namespace/ID-Kombination und sucht nach einem passenden Profil. Ein Profil ist im Grunde eine Gruppe verknüpfter Namespaces, IDs und Geräte. Wenn ein Profil gefunden wird, werden der Namespace und die ID den anderen IDs in diesem Profil als Attribut für die Segmentmitgliedschaft hinzugefügt. Beispielsweise kann <user@adobe.com> für alle Geräte und Kanäle als Ziel ausgewählt werden. Wenn kein Profil gefunden wird, wird ein neues erstellt.
 
 Anzeigen von Customer Journey Analytics-Zielgruppen in Platform:
-
->[!AVAILABILITY]
->
->Die in den folgenden Schritten beschriebene Funktion befindet sich in der Phase der eingeschränkten Testphase der Veröffentlichung und ist möglicherweise noch nicht in Ihrer Umgebung verfügbar. Wenn diese Schritte nicht mit denen in Ihrer Umgebung übereinstimmen, gehen Sie zu &quot;[!UICONTROL **Segmente**]&quot;> &quot;[!UICONTROL **Segmente erstellen**]&quot;> &quot;[!UICONTROL **Zielgruppen**]&quot;> &quot;[!UICONTROL **CJA-Zielgruppen**]&quot;.
->
->Diese Anmerkung wird entfernt, wenn die Funktion allgemein verfügbar ist. Weitere Informationen zum Customer Journey Analytics-Veröffentlichungsprozess finden Sie unter [Customer Journey Analytics-Feature Releases](/help/release-notes/releases.md).
 
 1. Erweitern Sie [!UICONTROL **Kunde**] im linken Bereich und wählen Sie dann [!UICONTROL **Zielgruppen**] <!-- is there a folder called "Customer Journey Analytics? --> aus.
 

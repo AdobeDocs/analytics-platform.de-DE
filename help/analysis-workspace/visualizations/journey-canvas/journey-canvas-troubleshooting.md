@@ -5,9 +5,9 @@ feature: Visualizations
 role: User
 hide: true
 hidefromtoc: true
-source-git-commit: 057c9f4a0e8fb163bfb23cea1870f949ad4ae1c0
+source-git-commit: c79d1174d78c0bfb1c9b082eb93855bdab4283e4
 workflow-type: tm+mt
-source-wordcount: '507'
+source-wordcount: '587'
 ht-degree: 1%
 
 ---
@@ -41,10 +41,23 @@ Wenn Sie beispielsweise Person als Container mit Sitzung als primäre oder sekun
 
 Die folgenden Konfigurationen können zu Knoten führen, die Prozentsätze anzeigen, die 100 % überschreiten:
 
-* Wenn das Feld **[!UICONTROL Prozentwert]** auf **[!UICONTROL Prozent des Gesamtwerts]** gesetzt ist und eine primäre Metrik ausgewählt wird, die zu weniger Daten für den Startknoten als für nachfolgende Knoten führt.
+* Wenn das Feld **[!UICONTROL Prozentwert]** auf **[!UICONTROL Prozent des Gesamtwerts]** oder **[!UICONTROL Prozent des Startknotens]** gesetzt ist und eine primäre Metrik ausgewählt wird, die zu weniger Daten für den Startknoten als für die nachfolgenden Knoten führt.
 
   Wenn beispielsweise &quot;Umsatz&quot;als primäre Metrik ausgewählt ist und kein Umsatz für die primäre Metrik realisiert wird, wird für jeden Knoten, in dem der Umsatz realisiert wird, ein Umsatz von mehr als 100 % angezeigt.
 
+## Knoten mit einem höheren Prozentsatz oder Wert als vorherige Knoten
+
+## Knoten mit einem höheren Prozentsatz oder Wert als vorherige Knoten
+
+## Knoten, die später im Journey auftreten, weisen einen höheren Prozentsatz oder Wert auf als die, die früher eingehen
+
+## Ein Knoten mit einem höheren Prozentsatz oder Wert als Knoten, die ihm in der Journey vorangehen
+
+## Knoten mit einem höheren Prozentsatz oder Wert als vorherige Knoten
+
+## Knoten
+
+## Ein höherer Prozentsatz oder Wert in nachfolgenden Knoten
 
 ## Eine Journey, die nicht trichter-förmig ist
 

@@ -4,9 +4,9 @@ title: Journey-Arbeitsfläche
 feature: Visualizations
 role: User
 exl-id: be03c3b2-8faf-47b8-b3ab-e953202bf488
-source-git-commit: c42858908aa8e73c5f3b622b9911ff9e9724f2dc
+source-git-commit: c79d1174d78c0bfb1c9b082eb93855bdab4283e4
 workflow-type: tm+mt
-source-wordcount: '1318'
+source-wordcount: '1367'
 ht-degree: 2%
 
 ---
@@ -18,6 +18,10 @@ ht-degree: 2%
 Mit der Journey-Arbeitsflächenvisualisierung können Sie tief greifende Einblicke in die Journey erhalten, die Sie Ihren Benutzern und Kunden zur Verfügung stellen. Es ermöglicht Ihnen, eine Journey von Grund auf zu definieren oder eine von Journey Optimizer anzuzeigen, dann sehen Sie, wie die Menschen verlassen (fiel aus) oder weiter durch (fiel durch) die Journey.
 
 Sie können [ Analysen von Journey erstellen, indem Sie eine beliebige Kombination aus Ereignissen, Dimensionselementen, Filtern und Datumsbereichen verwenden, um Journey-Knoten zu erstellen. ](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md) Verbinden Sie die Knoten, um den Journey zu erstellen, und schließen Sie mehrere Pfade und Entscheidungspunkte ein. Ziehen Sie Knoten auf die Arbeitsfläche, um die Ereignisse und Bedingungen der Journey neu anzuordnen. Daten werden in Echtzeit aktualisiert, wenn Sie Änderungen vornehmen.
+
+[Knoten sind mit ](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md#logic-when-connecting-nodes) als &quot;letztendlichen Pfad&quot;verbunden. Das bedeutet, dass Besucher gezählt werden, solange sie sich schließlich von einem Knoten zum anderen bewegen, unabhängig von Ereignissen, die zwischen den beiden Knoten auftreten. Die Zeit, die Benutzern für das Verschieben entlang des Pfads zugewiesen wird, wird durch die Containereinstellung bestimmt.
+
+![Journey canvas](assets/journey-canvas.png)
 
 ## Wichtigste Funktionen
 
@@ -39,13 +43,13 @@ Im Folgenden finden Sie einige Beispiele für die Arten von Einblicken, die Jour
 
 * Anzahl und Prozentsatz der Personen, die die Journey abgeschlossen haben (am Endknoten angekommen)
 
-* Anzahl und Prozentsatz der Personen, die zu einem bestimmten Punkt (Knoten) der Journey gelangt sind
+* Anzahl und Prozentsatz der Personen, die zu einem bestimmten Knoten der Journey gelangt sind
 
-* Der häufigste Schritt, der nach oder vor einem bestimmten Punkt (Knoten) der Journey erfolgte
+* Der häufigste Schritt, der nach oder vor einem bestimmten Knoten der Journey erfolgte
 
 **Fallout**
 
-* Die Punkte (Knoten) der Journey, an denen die meisten Menschen aus der Journey herausgefallen sind (sie kamen nie an einem der nächsten Knoten an)
+* Die Knoten der Journey, wo die Leute am häufigsten aus der Journey herausgefallen sind (sie kamen nie an einem der unmittelbar nächsten Knoten an)
 
 **Sonstige**
 
