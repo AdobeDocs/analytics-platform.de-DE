@@ -4,10 +4,10 @@ title: Visualisierung von Kombinationsdiagrammen
 feature: Visualizations
 exl-id: 06faa997-3a4e-4c41-b64e-64a15ada6552
 role: User
-source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
+source-git-commit: 590a3ddbe988d27341fe96a3fa866960d1641e24
 workflow-type: tm+mt
-source-wordcount: '580'
-ht-degree: 42%
+source-wordcount: '579'
+ht-degree: 41%
 
 ---
 
@@ -50,7 +50,7 @@ Bedenken Sie Folgendes:
    | Linienvergleichstyp | Definition |
    | --- | --- |
    | **[!UICONTROL Zeitvergleich]** | Der häufigste Vergleichstyp, z. B. Vergleich dieses Zeitraums mit dem vor 4 Wochen. Wenn Sie [!UICONTROL Zeitvergleich] auswählen, führen Sie eine zweite Auswahl durch, um anzugeben, mit welchem Zeitraum der Vergleich durchgeführt werden soll.<p>![Zeilenvergleich mit ausgewähltem Zeitraum und sekundäres Auswahlfeld für den Zeitraum.](assets/combo-time-period.png) |
-   | **[!UICONTROL Funktion]** | Sie können zum Vergleich eine Funktion wie [!UICONTROL Durchschnitt] hinzufügen. Eine Liste der unterstützten Funktionen finden Sie unten.<p>![Ein Dropdown-Menü für einen Vergleich mit ausgewählten Funktionen und einer Liste der verfügbaren unterstützten Funktionen.](assets/combo-functions.png) |
+   | **[!UICONTROL Funktion]** | Sie können zum Vergleich eine Funktion wie [!UICONTROL Durchschnitt] hinzufügen. Siehe Liste der [unterstützten Funktionen](#supported-functions).<p>![Ein Dropdown-Menü für einen Vergleich mit ausgewählten Funktionen und einer Liste der verfügbaren unterstützten Funktionen.](assets/combo-functions.png) |
    | **[!UICONTROL Sekundäre Metrik]** | Sie können beispielsweise den [!UICONTROL Umsatz] mit einer anderen Metrik vergleichen.<p>![Ein Kombinationsdiagramm, in dem zwei Metriken verglichen werden.](assets/combo-2metrics-settings.png) |
 
    {style="table-layout:auto"}

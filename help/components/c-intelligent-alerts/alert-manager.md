@@ -3,10 +3,10 @@ description: Warnhinweise erstellen, bearbeiten oder löschen.
 title: Änderungen verwalten
 feature: Workspace Basics
 role: User, Admin
-source-git-commit: bd58af0680fc9524453e072ecb60e3ada72ce634
+source-git-commit: 6a279ac39e6b94200ff93ac1a3796d202e6349c7
 workflow-type: tm+mt
-source-wordcount: '566'
-ht-degree: 4%
+source-wordcount: '567'
+ht-degree: 7%
 
 ---
 
@@ -50,17 +50,17 @@ Verwenden Sie ![ColumnSetting](/help/assets/icons/ColumnSetting.svg) , um anzuge
 
 Sie können Warnhinweise über die Aktionsleiste bearbeiten. Die Aktionsleiste enthält die folgenden Aktionen:
 
-| Aktion | Beschreibung |
-|---|---|
-| ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Add]** | Fügen Sie mit dem [Alert Builder](alert-builder.md#alert-builder) einen weiteren Warnhinweis hinzu. |
-| ![Suche](/help/assets/icons/Search.svg) [!UICONTROL *Suche nach Titel*] | Wenn in der Liste kein Warnhinweis ausgewählt ist, suchen Sie mithilfe dieses Suchfelds nach Warnhinweisen. |
-| ![Beschriftung](/help/assets/icons/Label.svg) **[!UICONTROL Tag]** | Taggen Sie die ausgewählten Warnhinweise. Wählen Sie im Dialogfeld **[!UICONTROL Warnhinweis taggen]** die Tags für die ausgewählten Warnhinweise aus oder deaktivieren Sie sie. Wählen Sie **[!UICONTROL Speichern]** aus, um die Tags für die ausgewählten Warnhinweise zu speichern. |
-| ![Löschen](/help/assets/icons/Delete.svg) **[!UICONTROL Löschen]** | Löschen Sie die ausgewählten Warnhinweise. Sie werden zur Bestätigung aufgefordert. |
-| ![Bearbeiten](/help/assets/icons/Edit.svg) **[!UICONTROL Umbenennen]** | Benennen Sie eine einzelne ausgewählte Warnung um. Wenn diese Option aktiviert ist, können Sie den Warnhinweis inline umbenennen. |
-| ![Kopieren](/help/assets/icons/Copy.svg) **[!UICONTROL Kopieren]** | Kopieren Sie den ausgewählten Warnhinweis. Neue Warnhinweise werden mit demselben Namen und Suffix `(Copy)` erstellt. |
-| ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) **[!UICONTROL Enable]** or **[!UICONTROL disable]** | Aktivieren oder deaktivieren Sie die ausgewählten Warnhinweise. |
-| ![Aktualisieren](/help/assets/icons/Refresh.svg) **[!UICONTROL Verlängern]** | Verlängern Sie das Ablaufdatum des Warnhinweises. Das Ablaufdatum erstreckt sich ab dem Tag, an dem Sie diese Option auswählen, unabhängig vom ursprünglichen Ablaufdatum um 1 Jahr. |
-| ![FileCSV](/help/assets/icons/FileCSV.svg) **[!UICONTROL Export in CSV]** | Exportieren Sie die Warnungen in eine `Alerts List.csv` -Datei. |
+| Symbol | Aktion | Beschreibung |
+|:---:|---|---|
+| ![AddCircle](/help/assets/icons/AddCircle.svg) | **[!UICONTROL Hinzufügen]** | Fügen Sie mit dem [Alert Builder](alert-builder.md#alert-builder) einen weiteren Warnhinweis hinzu. |
+| ![Durchsuchen](/help/assets/icons/Search.svg) | [!UICONTROL *Suche nach Titel*] | Wenn in der Liste kein Warnhinweis ausgewählt ist, suchen Sie mithilfe dieses Suchfelds nach Warnhinweisen. |
+| ![Beschriftung](/help/assets/icons/Label.svg) | **[!UICONTROL Tag]** | Taggen Sie die ausgewählten Warnhinweise. Wählen Sie im Dialogfeld **[!UICONTROL Warnhinweis taggen]** die Tags für die ausgewählten Warnhinweise aus oder deaktivieren Sie sie. Wählen Sie **[!UICONTROL Speichern]** aus, um die Tags für die ausgewählten Warnhinweise zu speichern. |
+| ![Löschen](/help/assets/icons/Delete.svg) | **[!UICONTROL Löschen]** | Löschen Sie die ausgewählten Warnhinweise. Sie werden zur Bestätigung aufgefordert. |
+| ![Bearbeiten](/help/assets/icons/Edit.svg) | **[!UICONTROL Umbenennen]** | Benennen Sie eine einzelne ausgewählte Warnung um. Wenn diese Option aktiviert ist, können Sie den Warnhinweis inline umbenennen. |
+| ![Kopieren](/help/assets/icons/Copy.svg) | **[!UICONTROL Kopieren]** | Kopieren Sie den ausgewählten Warnhinweis. Neue Warnhinweise werden mit demselben Namen und Suffix `(Copy)` erstellt. |
+| ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | **[!UICONTROL Enable]** oder **[!UICONTROL disable]** | Aktivieren oder deaktivieren Sie die ausgewählten Warnhinweise. |
+| ![Aktualisieren](/help/assets/icons/Refresh.svg) | **[!UICONTROL Verlängern]** | Verlängern Sie das Ablaufdatum des Warnhinweises. Das Ablaufdatum erstreckt sich ab dem Tag, an dem Sie diese Option auswählen, unabhängig vom ursprünglichen Ablaufdatum um 1 Jahr. |
+| ![FileCSV](/help/assets/icons/FileCSV.svg) | **[!UICONTROL In CSV exportieren]** | Exportieren Sie die Warnungen in eine `Alerts List.csv` -Datei. |
 
 
 ### Aktive Filterleiste

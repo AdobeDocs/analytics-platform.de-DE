@@ -9,10 +9,10 @@ index: true
 user-guide-title: Handbuch zu Customer Journey Analytics
 user-guide-description: Hier erhalten Sie Informationen zu Adobe Customer Journey Analytics und Erläuterungen zur Nutzung von Analysis Workspace mit Daten aus Experience Platform.
 breadcrumb-title: Handbuch zu Customer Journey Analytics
-source-git-commit: 0e627d536682f62b499f7f6d477c1d906de13f24
+source-git-commit: 590a3ddbe988d27341fe96a3fa866960d1641e24
 workflow-type: tm+mt
-source-wordcount: '1054'
-ht-degree: 91%
+source-wordcount: '1052'
+ht-degree: 90%
 
 ---
 
@@ -173,11 +173,11 @@ ht-degree: 91%
       + [Attribution](../analysis-workspace/c-panels/attribution.md)
       + [Experimentieren](../analysis-workspace/c-panels/experimentation.md)
       + [Freiform](../analysis-workspace/c-panels/freeform-panel.md)
-      + [Medien-Zielgruppendurchschnitt pro Minute](/help/analysis-workspace/c-panels/average-minute-audience-panel.md)
+      + [Durchschnittliche Medienminuten-Audience](/help/analysis-workspace/c-panels/average-minute-audience-panel.md)
       + [Gleichzeitige Medienbetrachter](../analysis-workspace/c-panels/media-concurrent-viewers.md)
-      + [Bei Medienwiedergabe verbrachte Zeit](../analysis-workspace/c-panels/media-playback-time-spent.md)
+      + [Besuchszeit für Medienwiedergabe](../analysis-workspace/c-panels/media-playback-time-spent.md)
       + [Nächstes oder vorheriges Element](../analysis-workspace/c-panels/next-previous.md)
-      + [Quick Insights](../analysis-workspace/c-panels/quickinsight.md)
+      + [Schnelle Einblicke](../analysis-workspace/c-panels/quickinsight.md)
    + Kuratieren, Freigeben und Planen von Projekten {#curate-share}
       + [Menü „Freigeben“](../analysis-workspace/curate-share/send-schedule-files.md)
       + [Kuratieren von Projekten](../analysis-workspace/curate-share/curate.md)
@@ -257,7 +257,7 @@ ht-degree: 91%
       + [Dimensionsvorschau](../components/dimensions/view-dimensions.md)
       + [Dimensionen aufschlüsseln](../components/dimensions/t-breakdown-fa.md)
       + [Dimensionen für die Zeitunterteilung](../components/dimensions/time-parting-dimensions.md)
-      + [Dimensionen mit sehr hoher Kardinalität](../components/dimensions/high-cardinality.md)
+      + [Hohe Kardinalitätsdimensionen](../components/dimensions/high-cardinality.md)
    + [Metriken](../components/apply-create-metrics.md)
    + Filter {#cja-filters}
       + [Filterübersicht](../components/filters/filters-overview.md)

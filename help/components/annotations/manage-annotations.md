@@ -4,10 +4,10 @@ description: Verwalten von Anmerkungen in Workspace.
 feature: Components
 exl-id: 12f2cc2f-477c-4f16-afdd-b0db84725b32
 role: User
-source-git-commit: 97b831d7eee477ee7ef0bf8ae65e6a415d243464
+source-git-commit: 6a279ac39e6b94200ff93ac1a3796d202e6349c7
 workflow-type: tm+mt
-source-wordcount: '763'
-ht-degree: 6%
+source-wordcount: '764'
+ht-degree: 8%
 
 ---
 
@@ -52,16 +52,16 @@ Verwenden Sie ![ColumnSetting](/help/assets/icons/ColumnSetting.svg) , um anzuge
 
 Mit der Aktionsleiste können Sie Aktionen für Anmerkungen durchführen. Die Aktionsleiste enthält die folgenden Aktionen:
 
-| Aktion | Beschreibung |
-|---|---|
-| ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Add]** | Fügen Sie mit dem [Anmerkung-Builder](create-annotations.md#annotation-builder) eine weitere Anmerkung hinzu. |
-| ![Suche](/help/assets/icons/Search.svg) [!UICONTROL *Suche nach Titel*] | Wenn in der Liste keine Anmerkung ausgewählt ist, suchen Sie mithilfe dieses Suchfelds nach Anmerkungen. |
-| ![Beschriftung](/help/assets/icons/Label.svg) **[!UICONTROL Tag]** | Taggen Sie die ausgewählten Anmerkungen. Wählen Sie im Dialogfeld **[!UICONTROL Tag-Komponente]** die Tags für die ausgewählten Anmerkungen aus oder heben Sie die Auswahl auf. Wählen Sie **[!UICONTROL Speichern]** aus, um die Tags für die ausgewählten Anmerkungen zu speichern. |
-| ![share](/help/assets/icons/ShareAlt.svg) **[!UICONTROL share]** | Freigeben der ausgewählten Anmerkungen. Im Dialogfeld **[!UICONTROL Komponente freigeben]** können Sie ![Suchen](/help/assets/icons/Search.svg) *Einzelpersonen oder Gruppen durchsuchen* oder Sie können **[!UICONTROL Organisation]** oder **[!UICONTROL Gruppen]** auswählen. Wählen Sie **[!UICONTROL Speichern]** aus, um Freigabedetails für die ausgewählten Anmerkungen zu speichern. Weitere Informationen finden Sie unter [Freigeben von Anmerkungen](#share-annotations) . |
-| ![Löschen](/help/assets/icons/Delete.svg) **[!UICONTROL Löschen]** | Löschen Sie die ausgewählten Anmerkungen. Sie werden zur Bestätigung aufgefordert. |
-| ![Bearbeiten](/help/assets/icons/Edit.svg) **[!UICONTROL Umbenennen]** | Umbenennen einer einzelnen ausgewählten Anmerkung Wenn diese Option aktiviert ist, können Sie die Anmerkung inline umbenennen. |
-| ![Kopieren](/help/assets/icons/Copy.svg) **[!UICONTROL Kopieren]** | Kopieren Sie die ausgewählten Anmerkungen. Neue Anmerkungen werden mit demselben Namen und Suffix (Kopieren) erstellt. |
-| ![FileCSV](/help/assets/icons/FileCSV.svg) **[!UICONTROL Export in CSV]** | Exportieren Sie die Anmerkungen in eine `Annotations List.csv` -Datei. |
+| Symbol | Aktion | Beschreibung |
+|:--:|---|---|
+| ![AddCircle](/help/assets/icons/AddCircle.svg) | **[!UICONTROL Hinzufügen]** | Fügen Sie mit dem [Anmerkung-Builder](create-annotations.md#annotation-builder) eine weitere Anmerkung hinzu. |
+| ![Durchsuchen](/help/assets/icons/Search.svg) | [!UICONTROL *Suche nach Titel*] | Wenn in der Liste keine Anmerkung ausgewählt ist, suchen Sie mithilfe dieses Suchfelds nach Anmerkungen. |
+| ![Beschriftung](/help/assets/icons/Label.svg) | **[!UICONTROL Tag]** | Taggen Sie die ausgewählten Anmerkungen. Wählen Sie im Dialogfeld **[!UICONTROL Tag-Komponente]** die Tags für die ausgewählten Anmerkungen aus oder heben Sie die Auswahl auf. Wählen Sie **[!UICONTROL Speichern]** aus, um die Tags für die ausgewählten Anmerkungen zu speichern. |
+| ![Freigeben](/help/assets/icons/ShareAlt.svg) | **[!UICONTROL Freigeben]** | Freigeben der ausgewählten Anmerkungen. Im Dialogfeld **[!UICONTROL Komponente freigeben]** können Sie ![Suchen](/help/assets/icons/Search.svg) *Einzelpersonen oder Gruppen durchsuchen* oder Sie können **[!UICONTROL Organisation]** oder **[!UICONTROL Gruppen]** auswählen. Wählen Sie **[!UICONTROL Speichern]** aus, um Freigabedetails für die ausgewählten Anmerkungen zu speichern. Weitere Informationen finden Sie unter [Freigeben von Anmerkungen](#share-annotations) . |
+| ![Löschen](/help/assets/icons/Delete.svg) | **[!UICONTROL Löschen]** | Löschen Sie die ausgewählten Anmerkungen. Sie werden zur Bestätigung aufgefordert. |
+| ![Bearbeiten](/help/assets/icons/Edit.svg) | **[!UICONTROL Umbenennen]** | Umbenennen einer einzelnen ausgewählten Anmerkung Wenn diese Option aktiviert ist, können Sie die Anmerkung inline umbenennen. |
+| ![Kopieren](/help/assets/icons/Copy.svg) | **[!UICONTROL Kopieren]** | Kopieren Sie die ausgewählten Anmerkungen. Neue Anmerkungen werden mit demselben Namen und Suffix (Kopieren) erstellt. |
+| ![FileCSV](/help/assets/icons/FileCSV.svg) | **[!UICONTROL In CSV exportieren]** | Exportieren Sie die Anmerkungen in eine `Annotations List.csv` -Datei. |
 
 ### Aktive Filterleiste
 

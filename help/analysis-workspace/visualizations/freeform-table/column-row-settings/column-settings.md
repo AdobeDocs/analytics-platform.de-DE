@@ -4,9 +4,9 @@ title: Spalteneinstellungen
 feature: Visualizations
 exl-id: b41d8a12-e8d9-405c-ac71-6567397aec6b
 role: User
-source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
+source-git-commit: 6a279ac39e6b94200ff93ac1a3796d202e6349c7
 workflow-type: tm+mt
-source-wordcount: '875'
+source-wordcount: '882'
 ht-degree: 19%
 
 ---
@@ -51,7 +51,7 @@ Sie können Einstellungen für mehrere Spalten gleichzeitig bearbeiten. Wählen 
 
 Die bedingte Formatierung gilt für Obergrenzen, Mittelwerte und Untergrenzen, die Sie definieren können. Das Anwenden bedingter Formatierung in Freiformtabellen ist auch bei Aufschlüsselungen automatisch aktiviert, es sei denn, die Beschränkungen für [!UICONTROL Benutzerdefiniert] sind aktiviert.
 
-<img src="./assets/conditional-formatting.png" alt="Die Optionen für die bedingte Formatierung mit Auswahl &quot;Benutzerdefiniert&quot;" width="40%" />
+![ Bedingte Formatierung](./assets/conditional-formatting.png)
 
 | Optionen für die bedingte Formatierung | Beschreibung |
 | --- | --- |
@@ -67,9 +67,19 @@ Die bedingte Formatierung gilt für Obergrenzen, Mittelwerte und Untergrenzen, d
 >[!CONTEXTUALHELP]
 >id="cja_workspace_freeformtable_column_usenondefaultattributionmodel"
 >title="Nicht standardmäßiges Attributionsmodell verwenden"
->abstract="Nicht standardmäßiges Attributionsmodell für die ausgewählten Spalten aktivieren"
+>abstract="Aktivieren Sie ein nicht standardmäßiges Attributionsmodell für die ausgewählten Spalten."
 
 <!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_workspace_freeformtable_column_usenondefaultattributionmodel_disabled"
+>title="Nicht standardmäßiges Attributionsmodell verwenden"
+>abstract="Der nicht standardmäßige Attributionsmodus ist für diese Metrik nicht verfügbar."
+
+<!-- markdownlint-enable MD034 -->
+
 
 
 Sie können das standardmäßige Attributionsmodell überschreiben, das in [Datenansichten](/help/data-views/component-settings/attribution.md) konfiguriert ist.

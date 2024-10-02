@@ -4,9 +4,9 @@ title: Filtern und Sortieren von Tabellen
 feature: Visualizations
 exl-id: 3af637ec-bb6c-49b7-a7b3-e1d310e71101
 role: User
-source-git-commit: a9976a053021b2b0ac26daaad2cfe89f8af61a96
+source-git-commit: 590a3ddbe988d27341fe96a3fa866960d1641e24
 workflow-type: tm+mt
-source-wordcount: '847'
+source-wordcount: '846'
 ht-degree: 42%
 
 ---
@@ -47,7 +47,7 @@ So schließen Sie bestimmte Zeilen aus einer Freiformtabelle aus:
 
 1. Bewegen Sie den Mauszeiger über die Zeile, die Sie ausschließen möchten, und wählen Sie dann ![Schließen](/help/assets/icons/Close.svg) aus.
 
-   Halten Sie die Umschalttaste gedrückt, um einen Zeilenbereich auszuwählen, oder halten Sie die Befehlstaste (Mac) oder die Strg-Taste (Windows) gedrückt, um mehrere Zeilen auszuwählen.
+   Halten Sie die ***Umschalttaste*** gedrückt, um einen Zeilenbereich auszuwählen, oder halten Sie die Taste ***cmd*** (in Mac) oder die Taste ***Strg*** (unter Windows) gedrückt, um mehrere Zeilen auszuwählen.
 
 <!--### Right-click > Delete selected rows
 

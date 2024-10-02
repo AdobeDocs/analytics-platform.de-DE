@@ -4,9 +4,9 @@ title: Experimentier-Bedienfeld
 feature: Panels
 exl-id: e11169b4-2c73-4dd4-bca7-c26189d60631
 role: User
-source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
+source-git-commit: 6a279ac39e6b94200ff93ac1a3796d202e6349c7
 workflow-type: tm+mt
-source-wordcount: '2169'
+source-wordcount: '2167'
 ht-degree: 23%
 
 ---
@@ -180,7 +180,6 @@ Berechnete Metriken, die eine der folgenden Metriken oder Konstanten enthalten, 
 * Konstanten, die zu einer Basismetrik hinzugefügt oder von dieser abgezogen werden (z. B. `Revenue+50`)
 * Eine der folgenden Basismetriken:
    * Personen
-   * (Was sonst noch?)
 
 Berechnete Metriken, die nicht mit dem Experimentierungsbereich kompatibel sind, haben beim Erstellen der berechneten Metrik den Wert [!UICONTROL **Überall auf Customer Journey Analytics (außer Experimentierung)**] im Feld [!UICONTROL **Produktkompatibilität**] . Informationen zum Erstellen einer berechneten Metrik finden Sie unter [Metriken erstellen](/help/components/calc-metrics/cm-workflow/cm-build-metrics.md).
 

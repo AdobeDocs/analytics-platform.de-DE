@@ -1,12 +1,12 @@
 ---
 description: Anwendungsbeispiele für Warnhinweise.
-title: Warnhinweise - Anwendungsfälle
+title: Anwendungsfälle für Warnhinweise
 feature: Workspace Basics
 role: User, Admin
-source-git-commit: def8b074ea468e409e340415d5e96f75d6b69312
+source-git-commit: 6a279ac39e6b94200ff93ac1a3796d202e6349c7
 workflow-type: tm+mt
-source-wordcount: '63'
-ht-degree: 38%
+source-wordcount: '105'
+ht-degree: 0%
 
 ---
 
@@ -16,7 +16,9 @@ Sie können Warnhinweise wie in [Warnhinweise erstellen](/help/components/c-inte
 
 Die folgenden Abschnitte veranschaulichen Beispielanwendungsfälle, die bei der Erstellung von Warnhinweisen berücksichtigt werden sollten.
 
-## Erstellen eines einfachen Warnhinweises, der durch zwei Filter gefiltert wird {#section_2E96FFFA93D44F7D8DBCEC97203204AA}
+## Warnhinweise filtern
+
+Sie können einfache Warnhinweise mithilfe von Filtern erstellen. Definieren Sie beispielsweise einen Warnhinweis zur Anzahl der Sitzungen für Personen, die die Startseite über eine mobile App-Sitzung besuchen.
 
 <!-- 
 
@@ -24,12 +26,12 @@ Update screenshots for better readability.
 
  -->
 
-![](assets/alerts_example1.png)
+![](assets/alerts-example1.png)
 
 
 
-## Warnhinweise zusammenfassen (stapeln), anstatt mehrere Warnhinweise zu erstellen {#section_B27B0856BA104B9FB6D0BBB317633F18}
+## Warnhinweise stapeln
 
-Durch das Stapeln von Warnhinweisen wird dafür gesorgt, dass Warnhinweise kombiniert werden und nicht separat angezeigt werden.
+Sie können Warnhinweise zusammenfassen (stapeln), anstatt mehrere Warnhinweise zu erstellen. Durch das Stapeln von Warnhinweisen wird sichergestellt, dass Warnhinweise kombiniert werden und Sie keine separaten Warnhinweise erhalten. Im folgenden Beispiel wird ein Warnhinweis gesendet, wenn eine der Metriktresten ausgelöst wird.
 
-![](assets/alerts_example2.png)
+![](assets/alerts-example2.png)

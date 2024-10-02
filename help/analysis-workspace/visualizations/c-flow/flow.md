@@ -4,7 +4,7 @@ title: Flussübersicht
 feature: Visualizations
 exl-id: 2ef325d9-1d82-46c9-86e3-6b2332548823
 role: User
-source-git-commit: 383fad799944f7405af6de1754aa2e0af83e2cab
+source-git-commit: 6a279ac39e6b94200ff93ac1a3796d202e6349c7
 workflow-type: tm+mt
 source-wordcount: '260'
 ht-degree: 30%
@@ -29,7 +29,7 @@ ht-degree: 30%
 
 
 
-Die Visualisierung ![GraphPathing](/help/assets/icons/GraphPathing.svg) [!UICONTROL Fluss] zeigt Kundenpfade durch Ihre Websites und Apps.
+Die Visualisierung ![GraphPathing](/help/assets/icons/GraphPathing.svg) **[!UICONTROL Fluss]** zeigt Kundenpfade durch Ihre Websites und Apps.
 
 Mit der Visualisierung können Sie:
 
@@ -37,7 +37,7 @@ Mit der Visualisierung können Sie:
 * Analysieren Sie, wohin Kunden vor und nach bestimmten Checkpoints gehen, z. B. Einstieg, eine bestimmte Dimension oder Ausstieg.
 * Erstellen Sie Filter, indem Sie einen bestimmten Punkt in einem ausgewählten Pfad angeben
 
-+++ Zeigen Sie eine Videodemonstration der Visualisierung [!UICONTROL Fluss] an.
++++ Zeigen Sie eine Videodemonstration der Flussvisualisierung an.
 
 >[!VIDEO](https://video.tv.adobe.com/v/346063/?quality=12)
 

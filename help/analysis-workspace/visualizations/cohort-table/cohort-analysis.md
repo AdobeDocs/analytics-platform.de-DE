@@ -4,7 +4,7 @@ description: Erfahren Sie, wie Sie eine Kohortentabelle für die Kohortenanalyse
 feature: Visualizations
 exl-id: 3e3a70cd-70ec-4d4d-81c3-7902716d0b01
 role: User
-source-git-commit: 383fad799944f7405af6de1754aa2e0af83e2cab
+source-git-commit: 590a3ddbe988d27341fe96a3fa866960d1641e24
 workflow-type: tm+mt
 source-wordcount: '597'
 ht-degree: 25%
@@ -32,7 +32,7 @@ ht-degree: 25%
 <!-- markdownlint-enable MD034 -->
 
 
-Eine *Kohorte* ist eine Personengruppe mit gemeinsamen Merkmalen innerhalb eines bestimmten Zeitraums. Eine Visualisierung der Kohortentabelle ![TextNummered](/help/assets/icons/TextNumbered.svg) [!UICONTROL 3} ist nützlich, wenn Sie beispielsweise erfahren möchten, wie eine Kohorte mit einer Marke interagiert. ] Sie können problemlos Trend-Änderungen offenlegen und entsprechend reagieren. (Erläuterungen zur [!UICONTROL Kohortenanalyse] sind im Internet verfügbar, z. B. unter [Cohort Analysis 101](https://de.wikipedia.org/wiki/Cohort_analysis).)
+Eine *Kohorte* ist eine Personengruppe mit gemeinsamen Merkmalen innerhalb eines bestimmten Zeitraums. Eine Visualisierung der Kohortentabelle ![TextNummered](/help/assets/icons/TextNumbered.svg) **[!UICONTROL 3} ist nützlich, wenn Sie beispielsweise erfahren möchten, wie eine Kohorte mit einer Marke interagiert.]** Sie können problemlos Trend-Änderungen offenlegen und entsprechend reagieren. (Erläuterungen zur [!UICONTROL Kohortenanalyse] sind im Internet verfügbar, z. B. unter [Cohort Analysis 101](https://de.wikipedia.org/wiki/Cohort_analysis).)
 
 Nachdem Sie einen Kohortenbericht erstellt haben, können Sie dessen Komponenten (bestimmte Dimensionen, Metriken und Filter) kuratieren und den Kohortenbericht dann für andere freigeben. Weitere Informationen finden Sie unter [Kuratieren und freigeben](/help/analysis-workspace/curate-share/curate.md).
 

@@ -4,9 +4,9 @@ title: Verwenden von Komponenten in Analysis Workspace
 feature: Components
 role: User
 exl-id: 97bdfb9e-a27e-4a6b-b6cc-21a292398037
-source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
+source-git-commit: 590a3ddbe988d27341fe96a3fa866960d1641e24
 workflow-type: tm+mt
-source-wordcount: '955'
+source-wordcount: '952'
 ht-degree: 7%
 
 ---
@@ -19,7 +19,7 @@ Weitere Informationen zu den Komponententypen, die Sie hinzufügen können, find
 
 >[!TIP]
 >
->Wählen Sie für Informationen zu den einzelnen Komponenten das Symbol ![InfoOutline](/help/assets/icons/InfoOutline.svg) neben dem Namen der Komponente aus.
+>Informationen zu den einzelnen Komponenten finden Sie unter ![InfoOutline](/help/assets/icons/InfoOutline.svg). Weitere Informationen finden Sie unter [Komponenteninfo](#component-info)
 
 ## Komponenten zu einem Projekt hinzufügen
 

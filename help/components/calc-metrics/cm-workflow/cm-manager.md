@@ -3,10 +3,10 @@ description: Mit dem Manager für berechnete Metriken können Sie Favoriten frei
 title: Manager für berechnete Metriken
 feature: Calculated Metrics
 exl-id: 8b257ecc-a596-4b34-ac26-eda16835f1ba
-source-git-commit: 97b831d7eee477ee7ef0bf8ae65e6a415d243464
+source-git-commit: 6a279ac39e6b94200ff93ac1a3796d202e6349c7
 workflow-type: tm+mt
-source-wordcount: '900'
-ht-degree: 5%
+source-wordcount: '901'
+ht-degree: 6%
 
 ---
 
@@ -51,17 +51,17 @@ Verwenden Sie ![ColumnSetting](/help/assets/icons/ColumnSetting.svg) , um anzuge
 
 Mithilfe der Aktionsleiste können Sie Filter bearbeiten. Die Aktionsleiste enthält die folgenden Aktionen:
 
-| Aktion | Beschreibung |
-|---|---|
-| ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Add]** | Fügen Sie mithilfe des [Generator für berechnete Metriken](cm-build-metrics.md) weitere berechnete Metriken hinzu. |
-| ![Suche](/help/assets/icons/Search.svg) [!UICONTROL *Suche nach Titel*] | Wenn keine berechnete Metrik in der Liste ausgewählt ist, suchen Sie mithilfe dieses Suchfelds nach Filtern. |
-| ![Beschriftung](/help/assets/icons/Label.svg) **[!UICONTROL Tag]** | Taggen Sie die ausgewählten berechneten Metriken. Wählen Sie im Dialogfeld **[!UICONTROL Berechnete Metrik taggen]** die Tags für die ausgewählte berechnete Metrik aus oder deaktivieren Sie sie. Wählen Sie **[!UICONTROL Speichern]** aus, um die Tags für die ausgewählten berechneten Metriken zu speichern. Weitere Informationen finden Sie unter [Berechnete Metriken taggen](cm-tagging.md) . |
-| ![share](/help/assets/icons/ShareAlt.svg) **[!UICONTROL share]** | Geben Sie die ausgewählten berechneten Metriken frei. Im Dialogfeld **[!UICONTROL Berechnete Metriken freigeben]** können Sie ![Suchen](/help/assets/icons/Search.svg) *nach Personen oder Gruppen durchsuchen* oder Sie können **[!UICONTROL Organisation]** oder **[!UICONTROL Gruppen]** auswählen. Wählen Sie **[!UICONTROL Speichern]** aus, um Freigabedetails für die ausgewählten berechneten Metriken zu speichern. Weitere Informationen finden Sie unter [Berechnete Metriken freigeben](cm-sharing.md) . |
-| ![Löschen](/help/assets/icons/Delete.svg) **[!UICONTROL Löschen]** | Löschen Sie die ausgewählten berechneten Metriken. Sie werden zur Bestätigung aufgefordert. |
-| ![Bearbeiten](/help/assets/icons/Edit.svg) **[!UICONTROL Umbenennen]** | Benennen Sie eine einzelne ausgewählte berechnete Metrik um. Wenn diese Option aktiviert ist, können Sie die berechnete Metrik inline umbenennen. |
-| ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) **[!UICONTROL Approve]** | Genehmigen Sie die ausgewählten berechneten Metriken. Siehe [Berechnete Metriken genehmigen](cm-approving.md). |
-| ![Kopieren](/help/assets/icons/Copy.svg) **[!UICONTROL Kopieren]** | Kopieren Sie die ausgewählten berechneten Metriken. Neue berechnete Metriken werden mit demselben Namen und Suffix `(Copy)` erstellt |
-| ![FileCSV](/help/assets/icons/FileCSV.svg) **[!UICONTROL Export in CSV]** | Exportieren Sie die berechneten Metriken in eine `Calculated  metric List.csv` -Datei. |
+| Symbol | Aktion | Beschreibung |
+|:---:|---|---|
+| ![AddCircle](/help/assets/icons/AddCircle.svg) | **[!UICONTROL Hinzufügen]** | Fügen Sie mithilfe des [Generator für berechnete Metriken](cm-build-metrics.md) weitere berechnete Metriken hinzu. |
+| ![Durchsuchen](/help/assets/icons/Search.svg) | [!UICONTROL *Suche nach Titel*] | Wenn keine berechnete Metrik in der Liste ausgewählt ist, suchen Sie mithilfe dieses Suchfelds nach Filtern. |
+| ![Beschriftung](/help/assets/icons/Label.svg) | **[!UICONTROL Tag]** | Taggen Sie die ausgewählten berechneten Metriken. Wählen Sie im Dialogfeld **[!UICONTROL Berechnete Metrik taggen]** die Tags für die ausgewählte berechnete Metrik aus oder deaktivieren Sie sie. Wählen Sie **[!UICONTROL Speichern]** aus, um die Tags für die ausgewählten berechneten Metriken zu speichern. Weitere Informationen finden Sie unter [Berechnete Metriken taggen](cm-tagging.md) . |
+| ![Freigeben](/help/assets/icons/ShareAlt.svg) | **[!UICONTROL Freigeben]** | Geben Sie die ausgewählten berechneten Metriken frei. Im Dialogfeld **[!UICONTROL Berechnete Metriken freigeben]** können Sie ![Suchen](/help/assets/icons/Search.svg) *nach Personen oder Gruppen durchsuchen* oder Sie können **[!UICONTROL Organisation]** oder **[!UICONTROL Gruppen]** auswählen. Wählen Sie **[!UICONTROL Speichern]** aus, um Freigabedetails für die ausgewählten berechneten Metriken zu speichern. Weitere Informationen finden Sie unter [Berechnete Metriken freigeben](cm-sharing.md) . |
+| ![Löschen](/help/assets/icons/Delete.svg) | **[!UICONTROL Löschen]** | Löschen Sie die ausgewählten berechneten Metriken. Sie werden zur Bestätigung aufgefordert. |
+| ![Bearbeiten](/help/assets/icons/Edit.svg) | **[!UICONTROL Umbenennen]** | Benennen Sie eine einzelne ausgewählte berechnete Metrik um. Wenn diese Option aktiviert ist, können Sie die berechnete Metrik inline umbenennen. |
+| ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | **[!UICONTROL Genehmigen]** | Genehmigen Sie die ausgewählten berechneten Metriken. Siehe [Berechnete Metriken genehmigen](cm-approving.md). |
+| ![Kopieren](/help/assets/icons/Copy.svg) | **[!UICONTROL Kopieren]** | Kopieren Sie die ausgewählten berechneten Metriken. Neue berechnete Metriken werden mit demselben Namen und Suffix `(Copy)` erstellt |
+| ![FileCSV](/help/assets/icons/FileCSV.svg) | **[!UICONTROL In CSV exportieren]** | Exportieren Sie die berechneten Metriken in eine `Calculated  metric List.csv` -Datei. |
 
 ### Aktive Filterleiste
 

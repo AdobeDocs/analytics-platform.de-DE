@@ -4,10 +4,10 @@ description: Freigeben, Umbenennen oder Löschen von Datumsbereichen in Analysis
 feature: Calendar
 exl-id: 694758c4-d740-4fd7-9fb0-3ff7f6b25a3d
 role: User
-source-git-commit: 97b831d7eee477ee7ef0bf8ae65e6a415d243464
+source-git-commit: 6a279ac39e6b94200ff93ac1a3796d202e6349c7
 workflow-type: tm+mt
-source-wordcount: '606'
-ht-degree: 9%
+source-wordcount: '607'
+ht-degree: 12%
 
 ---
 
@@ -46,17 +46,17 @@ Verwenden Sie ![ColumnSetting](/help/assets/icons/ColumnSetting.svg) , um anzuge
 
 Sie können Datumsbereiche in der Aktionsleiste aufrufen. Die Aktionsleiste enthält die folgenden Aktionen:
 
-| Aktion | Beschreibung |
-|---|---|
-| ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Add]** | Fügen Sie mit dem [Generator für Datumsbereiche](create.md#date-range-builder) einen weiteren Datumsbereich hinzu. |
-| ![Suche](/help/assets/icons/Search.svg) [!UICONTROL *Suche nach Titel*] | Wenn in der Liste kein Datumsbereich ausgewählt ist, suchen Sie mithilfe dieses Suchfelds nach Datumsbereichen. |
-| ![Beschriftung](/help/assets/icons/Label.svg) **[!UICONTROL Tag]** | Taggen Sie die ausgewählten Datumsbereiche. Wählen Sie im Dialogfeld **[!UICONTROL Datumsbereich taggen]** die Tags für die ausgewählten Datumsbereiche aus oder heben Sie die Auswahl auf. Wählen Sie **[!UICONTROL Speichern]** aus, um die Tags für die ausgewählten Datumsbereiche zu speichern. |
-| ![share](/help/assets/icons/ShareAlt.svg) **[!UICONTROL share]** | Geben Sie die ausgewählten Datumsbereiche frei. Im Dialogfeld **[!UICONTROL Datumsbereich freigeben]** können Sie ![Suchen](/help/assets/icons/Search.svg) *Nach Personen oder Gruppen suchen* oder Sie können **[!UICONTROL Organisation]** oder **[!UICONTROL Gruppen]** auswählen. Wählen Sie **[!UICONTROL Speichern]** aus, um Freigabedetails für die ausgewählten Datumsbereiche zu speichern. |
-| ![Löschen](/help/assets/icons/Delete.svg) **[!UICONTROL Löschen]** | Löschen Sie die ausgewählten Datumsbereiche. Sie werden zur Bestätigung aufgefordert. |
-| ![Bearbeiten](/help/assets/icons/Edit.svg) **[!UICONTROL Umbenennen]** | Umbenennen eines einzelnen ausgewählten Datumsbereichs Wenn diese Option aktiviert ist, können Sie den Datumsbereich inline umbenennen. |
-| ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) **[!UICONTROL Approve]** | Genehmigen Sie die ausgewählten Datumsbereiche. |
-| ![Kopieren](/help/assets/icons/Copy.svg) **[!UICONTROL Kopieren]** | Kopieren Sie die ausgewählten Datumsbereiche. Neue Datumsbereiche werden mit demselben Namen und Suffix (Kopieren) erstellt. |
-| ![FileCSV](/help/assets/icons/FileCSV.svg) **[!UICONTROL Export in CSV]** | Exportieren Sie die ausgewählten Datumsbereiche in eine `Date ranges List.csv` -Datei. |
+| Symbol | Aktion | Beschreibung |
+|:---:|---|---|
+| ![AddCircle](/help/assets/icons/AddCircle.svg) | **[!UICONTROL Hinzufügen]** | Fügen Sie mit dem [Generator für Datumsbereiche](create.md#date-range-builder) einen weiteren Datumsbereich hinzu. |
+| ![Durchsuchen](/help/assets/icons/Search.svg) | [!UICONTROL *Suche nach Titel*] | Wenn in der Liste kein Datumsbereich ausgewählt ist, suchen Sie mithilfe dieses Suchfelds nach Datumsbereichen. |
+| ![Beschriftung](/help/assets/icons/Label.svg) | **[!UICONTROL Tag]** | Taggen Sie die ausgewählten Datumsbereiche. Wählen Sie im Dialogfeld **[!UICONTROL Datumsbereich taggen]** die Tags für die ausgewählten Datumsbereiche aus oder heben Sie die Auswahl auf. Wählen Sie **[!UICONTROL Speichern]** aus, um die Tags für die ausgewählten Datumsbereiche zu speichern. |
+| ![Freigeben](/help/assets/icons/ShareAlt.svg) | **[!UICONTROL Freigeben]** | Geben Sie die ausgewählten Datumsbereiche frei. Im Dialogfeld **[!UICONTROL Datumsbereich freigeben]** können Sie ![Suchen](/help/assets/icons/Search.svg) *Nach Personen oder Gruppen suchen* oder Sie können **[!UICONTROL Organisation]** oder **[!UICONTROL Gruppen]** auswählen. Wählen Sie **[!UICONTROL Speichern]** aus, um Freigabedetails für die ausgewählten Datumsbereiche zu speichern. |
+| ![Löschen](/help/assets/icons/Delete.svg) | **[!UICONTROL Löschen]** | Löschen Sie die ausgewählten Datumsbereiche. Sie werden zur Bestätigung aufgefordert. |
+| ![Bearbeiten](/help/assets/icons/Edit.svg) | **[!UICONTROL Umbenennen]** | Umbenennen eines einzelnen ausgewählten Datumsbereichs Wenn diese Option aktiviert ist, können Sie den Datumsbereich inline umbenennen. |
+| ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | **[!UICONTROL Genehmigen]** | Genehmigen Sie die ausgewählten Datumsbereiche. |
+| ![Kopieren](/help/assets/icons/Copy.svg) | **[!UICONTROL Kopieren]** | Kopieren Sie die ausgewählten Datumsbereiche. Neue Datumsbereiche werden mit demselben Namen und Suffix (Kopieren) erstellt. |
+| ![FileCSV](/help/assets/icons/FileCSV.svg) | **[!UICONTROL In CSV exportieren]** | Exportieren Sie die ausgewählten Datumsbereiche in eine `Date ranges List.csv` -Datei. |
 
 ### Aktive Filterleiste
 

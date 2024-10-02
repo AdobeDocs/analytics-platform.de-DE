@@ -5,10 +5,10 @@ title: Anwenden von Filtern in der Fallout-Analyse
 feature: Visualizations
 exl-id: 85b1024f-acd2-43b7-b4b1-b10961ba43e8
 role: User
-source-git-commit: de04792035aa7c235751019ee9f9fe5b74b9b102
+source-git-commit: 6a279ac39e6b94200ff93ac1a3796d202e6349c7
 workflow-type: tm+mt
 source-wordcount: '462'
-ht-degree: 45%
+ht-degree: 43%
 
 ---
 
@@ -18,11 +18,11 @@ Sie können in Analysis Workspace Filter aus einem Touchpoint erstellen, Filter 
 
 >[!IMPORTANT]
 >
->Filter, die als Checkpoints in Fallout verwendet werden, müssen einen Container verwenden, der auf einer niedrigeren Ebene als der Gesamtkontext der Fallout-Visualisierung liegt. Bei einer personenbezogenen Fallout-Funktion müssen Filter, die als Checkpoints verwendet werden, besuchs- oder ereignisbasierte Filter sein. Bei einem besuchskontextbezogenen Fallout müssen als Checkpoint verwendete Filter ereignisbasierte Filter sein. Wenn Sie eine ungültige Kombination verwenden, beträgt der Fallout 100 %. Wenn Sie einen inkompatiblen Filter als Touchpoint hinzufügen, wird eine Warnung zur Fallout-Visualisierung angezeigt. Bestimmte ungültige Filter-Container-Kombinationen führen zu ungültigen Fallout-Diagrammen, wie:
-
-* Verwenden eines personenbasierten Filters als Touchpoint innerhalb einer Fallout-Visualisierung für Personen
-* Verwenden eines personenbasierten Filters als Touchpoint innerhalb einer Fallout-Visualisierung für Besuche
-* Verwenden eines besuchsbasierten Filters als Touchpoint innerhalb einer auf den Besuchskontext bezogenen Fallout-Visualisierung
+>Filter, die als Checkpoints in Fallout verwendet werden, müssen einen Container verwenden, der auf einer niedrigeren Ebene als der Gesamtkontext der Fallout-Visualisierung liegt. Bei einem personenbezogenen Fallout müssen Filter, die als Checkpoints verwendet werden, sitzungs- oder ereignisbasierte Filter sein. Bei einem Sitzungskontext-Fallout müssen Filter, die als Checkpoint verwendet werden, ereignisbasierte Filter sein. Wenn Sie eine ungültige Kombination verwenden, beträgt der Fallout 100 %. Wenn Sie einen inkompatiblen Filter als Touchpoint hinzufügen, wird eine Warnung zur Fallout-Visualisierung angezeigt. Bestimmte ungültige Filter-Container-Kombinationen führen zu ungültigen Fallout-Diagrammen, wie:
+>
+>* Verwenden eines personenbasierten Filters als Touchpoint innerhalb einer Fallout-Visualisierung für Personen
+>* Verwenden eines personenbasierten Filters als Touchpoint innerhalb einer Fallout-Visualisierung des Sitzungskontexts
+>* Verwenden eines sitzungsbasierten Filters als Touchpoint innerhalb einer Fallout-Visualisierung des Sitzungskontexts
 
 ## Erstellen eines Filters aus einem Touchpoint
 
