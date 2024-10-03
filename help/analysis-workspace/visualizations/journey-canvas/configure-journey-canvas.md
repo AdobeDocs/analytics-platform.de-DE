@@ -4,9 +4,9 @@ title: Journey-Arbeitsfläche
 feature: Visualizations
 role: User
 exl-id: 53984934-6fba-4f15-aeeb-d91039260553
-source-git-commit: c79d1174d78c0bfb1c9b082eb93855bdab4283e4
+source-git-commit: 3b9f477001747a96359f77f2e48baf7589b7a1e4
 workflow-type: tm+mt
-source-wordcount: '6593'
+source-wordcount: '6391'
 ht-degree: 1%
 
 ---
@@ -149,10 +149,6 @@ Sie können Knoten wie folgt erstellen: indem Sie Workspace-Komponenten aus der 
 
 ### Anzeigen der obersten Knoten basierend auf vorhandenen Knoten
 
->[!AVAILABILITY]
->
->Diese Funktion ist noch nicht verfügbar.
-
 Sie können die obersten Knoten automatisch anhand der Knoten anzeigen, die sich bereits auf der Arbeitsfläche befinden. Sie können die obersten Knoten zur Journey-Arbeitsfläche hinzufügen oder sie in einer Freiformtabelle anzeigen.
 
 Diese Option ist für die folgenden Objekte auf der Arbeitsfläche verfügbar:
@@ -221,17 +217,17 @@ Sie können einen Pfeil auswählen und die obersten Dimensionselemente anzeigen,
 
 ### Duplizieren von Knoten
 
->[!AVAILABILITY]
->
->Diese Funktion ist noch nicht verfügbar.
-
 Die Option zum Duplizieren ist für die folgenden Objekte auf der Arbeitsfläche verfügbar:
+
+* Einzelne Knoten
 
 * Mehrere Knoten
 
 So duplizieren Sie Knoten:
 
-1. Wählen Sie mehrere Knoten aus, die Sie duplizieren möchten.
+1. Wählen Sie mindestens einen Knoten aus, den Sie duplizieren möchten.
+
+   Um mehrere Knoten auszuwählen, halten Sie die Befehlstaste (Mac) oder die Strg-Taste (Windows) gedrückt.
 
 1. Klicken Sie mit der rechten Maustaste auf einen der ausgewählten Knoten und wählen Sie dann [!UICONTROL **Duplizieren**] aus.
 
@@ -263,7 +259,7 @@ Sie können Folgendes tun, um Knoten in der Journey-Arbeitsfläche zu kombiniere
 
 * Ziehen Sie aus der linken Leiste mehrere Komponenten gleichzeitig auf einen leeren Bereich der Arbeitsfläche, während Sie die Umschalttaste gedrückt halten.
 
-* Wählen Sie auf der Arbeitsfläche die Knoten aus, die Sie kombinieren möchten, klicken Sie mit der rechten Maustaste auf einen der ausgewählten Knoten und wählen Sie dann **Kombinieren**<!--Is there a limit on how many you can combine? -->.
+<!-- * On the canvas, select the nodes that you want to combine, right-click one of the selected nodes, then select **Combine**. Is there a limit on how many you can combine? -->
 
 #### Logik beim Kombinieren von Knoten
 
@@ -304,7 +300,7 @@ Knoten sind durch einen Pfeil verbunden. Sowohl die Pfeilrichtung als auch die P
 
 Wenn Sie Knoten in der Journey-Arbeitsfläche verbinden, werden diese über den THEN-Operator verbunden. Dies wird auch als [sequenzielle Filterung](/help/components/filters/seg-sequential-build.md) bezeichnet.
 
-Knoten sind als &quot;letztendlicher Pfad&quot;verbunden. Das bedeutet, dass Besucher gezählt werden, solange sie sich schließlich von einem Knoten zum anderen bewegen, unabhängig von Ereignissen, die zwischen den beiden Knoten auftreten. Die Zeit, die Benutzern für das Verschieben entlang des Pfads zugewiesen wird, wird durch die Containereinstellung bestimmt. Sie kann auch durch das Hinzufügen von [einer Zeitbegrenzung](#add-a-time-constraint-between-nodes) gesteuert werden.
+Knoten sind als &quot;letztendlicher Pfad&quot;verbunden. Das bedeutet, dass Besucher gezählt werden, solange sie sich schließlich von einem Knoten zum anderen bewegen, unabhängig von Ereignissen, die zwischen den beiden Knoten auftreten. Die Zeit, die Benutzern für das Verschieben entlang des Pfads zugewiesen wird, wird durch die Containereinstellung bestimmt. <!-- It can also be controlled by [adding a time constraint](#add-a-time-constraint-between-nodes). -->
 
 Sie können die Logik der verbundenen Knoten anzeigen, indem Sie mit der rechten Maustaste auf den Knoten klicken und dann [!UICONTROL **Filter von Knoten erstellen**] auswählen. Die Logik wird im Abschnitt [!UICONTROL **Definition**] angezeigt.
 
@@ -328,23 +324,23 @@ Beim Hinzufügen eines Knotens zur Arbeitsfläche können Sie ihn zwischen zwei 
 
 Weitere Informationen finden Sie unter [Knoten hinzufügen](#add-nodes).
 
-### Zeitliche Beschränkung zwischen Knoten hinzufügen
+<!--
+
+### Add a time constraint between nodes
 
 >[!AVAILABILITY]
 >
->Diese Funktion ist noch nicht verfügbar.
+>This feature is not yet available.
 
-Sie können eine Zeitbegrenzung zwischen Knoten festlegen. Wenn eine Zeitbegrenzung vorhanden ist, gelten die Personen als aus dem Journey herausgefallen, wenn sie der definierten Journey folgen, aber länger als den zugewiesenen Zeitraum benötigen, um zwischen den Knoten zu wechseln.
+You can set a time constraint between nodes. When a time constraint is in place, people are considered to have fallen out of the journey if they follow the defined journey but take longer than the allotted time period to move between the nodes.
 
-Die Option zum Hinzufügen einer Zeitbegrenzung ist für die folgenden Objekte auf der Arbeitsfläche verfügbar:
+The option to add a time constraint is available for the following objects on the canvas:
 
-* Der Pfeil zwischen Knoten
+* The arrow between nodes
 
-So fügen Sie eine Zeitbegrenzung hinzu:
+To add a time constraint:
 
-1. Klicken Sie in einer Journey-Arbeitsflächenvisualisierung mit der rechten Maustaste auf den Pfeil zwischen zwei Knoten und wählen Sie dann [!UICONTROL **Zeitliche Beschränkung hinzufügen**] aus.
-
-<!-- 
+1. In a Journey canvas visualization, right-click the arrow between 2 nodes, then select [!UICONTROL **Add time constraint**].
 
 from Travis: You can set time to be within X amount of time or after X amount of time (those are the only two options I think, but we can check with Brandon). 
 1. Choose from the following options: 
@@ -353,35 +349,35 @@ from Travis: You can set time to be within X amount of time or after X amount of
 
 ## Knoten oder Pfeile verwalten
 
-### Ändern der Farbe eines Knotens oder Pfeils
+<!--
+
+### Change the color of a node or arrow
 
 >[!AVAILABILITY]
 >
->Diese Funktion ist noch nicht verfügbar.
+>This feature is not yet available.
 
-Sie können eine Journey visuell anpassen, indem Sie die Farbe eines beliebigen Knotens oder Pfeils auf der Arbeitsfläche ändern. Sie können beispielsweise Farben anpassen, um ein wünschenswertes oder unerwünschtes Ereignis anzuzeigen.
+You can visually customize a journey by changing the color of any node or arrow on the canvas. For example, you could adjust colors to indicate a desirable or undesirable event.
 
-Die Option zum Ändern der Farbe ist für die folgenden Objekte auf der Arbeitsfläche verfügbar:
+The option to change the color is available for the following objects on the canvas:
 
-* Einzelne Knoten
+* Individual nodes
 
-* Der Pfeil zwischen Knoten
+* The arrow between nodes
 
-So ändern Sie die Farbe eines Knotens oder Pfeils:
+To change the color of a node or arrow:
 
-1. Klicken Sie in einer Journey-Arbeitsflächenvisualisierung mit der rechten Maustaste auf den Knoten oder Pfeil, dessen Farbe Sie ändern möchten.
+1. In a Journey canvas visualization, right-click the node or arrow whose color you want to change.
 
-1. Wählen Sie [!UICONTROL **Farbe ändern**]. <!--make sure "color" isn't capitalized. It is in the req doc-->
+1. Select [!UICONTROL **Change color**]. 
 
-1. Wählen Sie die gewünschte Farbe aus.
+1. Select the desired color. 
 
-   Die folgenden Farben sind verfügbar: <!--look into this interaction and color list-->
+   The following colors are available: 
+
+-->
 
 ### Umbenennen eines Knotens
-
->[!AVAILABILITY]
->
->Diese Funktion ist noch nicht verfügbar.
 
 Wenn Sie eine Komponente in eine Journey-Arbeitsflächenvisualisierung ziehen, wird ein Knoten mit demselben Namen wie der Komponentenname erstellt. Sie können den Knoten so umbenennen, dass er besser mit dem Schritt der Journey übereinstimmt, den der Knoten darstellt.
 
@@ -453,15 +449,13 @@ Beachten Sie beim Anwenden einer Aufschlüsselung Folgendes:
 
 #### Aufschlüsselung auf einen oder mehrere Knoten oder Pfeile anwenden
 
->[!AVAILABILITY]
->
->Diese Funktion ist noch nicht verfügbar.
-
 1. Wählen Sie in einer Journey-Arbeitsflächenvisualisierung mindestens einen Knoten aus, auf den Sie eine Aufschlüsselung anwenden möchten, und klicken Sie dann mit der rechten Maustaste auf einen der ausgewählten Knoten.
 
    Oder
 
    Wählen Sie in einer Journey-Arbeitsflächenvisualisierung einen oder mehrere Pfeile zwischen 2 Knoten aus, auf die Sie die Aufschlüsselung anwenden möchten, und klicken Sie dann mit der rechten Maustaste auf einen der ausgewählten Pfeile.
+
+   Um mehrere Knoten oder Pfeile auszuwählen, halten Sie die Befehlstaste (Mac) oder die Strg-Taste (Windows) gedrückt.
 
 1. Wählen Sie [!UICONTROL **Aufschlüsselung**] aus.
 
@@ -513,6 +507,8 @@ So erstellen Sie eine Zielgruppe:
 
    Wählen Sie in einer Journey-Arbeitsflächenvisualisierung einen oder mehrere Pfeile zwischen 2 Knoten, an denen Sie eine Zielgruppe erstellen möchten, und klicken Sie dann mit der rechten Maustaste auf einen der ausgewählten Pfeile.
 
+   Um mehrere Knoten oder Pfeile auszuwählen, halten Sie die Befehlstaste (Mac) oder die Strg-Taste (Windows) gedrückt.
+
    >[!NOTE]
    >
    >Zielgruppen können keine berechneten Metriken oder Metriken enthalten, die auf einem [Zusammenfassungsdatensatz](/help/data-views/summary-data.md) basieren. Wenn Sie versuchen, eine Zielgruppe aus einem Bereich der Journey-Arbeitsfläche zu erstellen, der eine berechnete Metrik oder eine Metrik enthält, die auf einem Zusammenfassungsdatensatz basiert, wird die berechnete Metrik nicht in die Zielgruppendefinition aufgenommen.
@@ -522,10 +518,6 @@ So erstellen Sie eine Zielgruppe:
 1. Fahren Sie mit dem Erstellen und Veröffentlichen der Zielgruppe fort, wie unter [Erstellen und Veröffentlichen von Zielgruppen](/help/components/audiences/publish.md) beschrieben.
 
 ### Trenddaten anzeigen
-
->[!AVAILABILITY]
->
->Diese Funktion ist noch nicht verfügbar.
 
 Sie können die Trenddaten in einem Liniendiagramm für Objekte auf der Journey-Arbeitsfläche anzeigen. <!--, with some prebuilt anomaly detection data (this is the definition in Fallout) -->
 
@@ -546,6 +538,8 @@ Anzeigen von Trenddaten:
    Oder
 
    Wählen Sie in einer Journey-Arbeitsflächenvisualisierung einen oder mehrere Pfeile zwischen 2 Knoten aus, für die Sie Trenddaten anzeigen möchten, und klicken Sie dann mit der rechten Maustaste auf einen der ausgewählten Pfeile.
+
+   Um mehrere Knoten oder Pfeile auszuwählen, halten Sie die Befehlstaste (Mac) oder die Strg-Taste (Windows) gedrückt.
 
 1. Wählen Sie [!UICONTROL **Trend**] aus.
 
