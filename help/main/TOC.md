@@ -9,10 +9,10 @@ index: true
 user-guide-title: Handbuch zu Customer Journey Analytics
 user-guide-description: Hier erhalten Sie Informationen zu Adobe Customer Journey Analytics und Erläuterungen zur Nutzung von Analysis Workspace mit Daten aus Experience Platform.
 breadcrumb-title: Handbuch zu Customer Journey Analytics
-source-git-commit: 04a95b6e502a8a1c1e686738d490d2a40936e738
+source-git-commit: 90d1c51c11f0ab4d7d61b8e115efa8257a985446
 workflow-type: tm+mt
-source-wordcount: '1021'
-ht-degree: 91%
+source-wordcount: '964'
+ht-degree: 86%
 
 ---
 
@@ -61,7 +61,7 @@ ht-degree: 91%
    + [Übersicht über die Datenaufnahme](../data-ingestion/data-ingestion.md)
    + Kurzanleitungen zur Aufnahme und Verwendung von Daten{#ingest-use-guides}
       + [Adobe Analytics](../data-ingestion/analytics.md)
-      + Adobe Experience Platform Edge Network {#edge-network}
+      + Experience Platform Edge Network {#edge-network}
          + [Web SDK](../data-ingestion/aepwebsdk.md)
          + [Mobile SDK](../data-ingestion/aepmobilesdk.md)
          + [Server-API](../data-ingestion/serverapi.md)
@@ -115,7 +115,7 @@ ht-degree: 91%
       + [Offene Projekte](/help/analysis-workspace/build-workspace-project/open-projects.md)
       + [Projekte speichern](../analysis-workspace/build-workspace-project/save-projects.md)
       + Ordner in Analysis Workspace {#workspace-folders}
-         + [Über Ordner in Workspace](../analysis-workspace/build-workspace-project/workspace-folders/about-folders.md)
+         + [Über Ordner](../analysis-workspace/build-workspace-project/workspace-folders/about-folders.md)
          + [Erstellen von Ordnern und Unterordnern](../analysis-workspace/build-workspace-project/workspace-folders/create-folders.md)
          + [Ordner verwalten](../analysis-workspace/build-workspace-project/workspace-folders/manage-folders.md)
          + [Hinzufügen oder Verschieben von Projekten in Ordnern](../analysis-workspace/build-workspace-project/workspace-folders/add-projects.md)
@@ -132,7 +132,7 @@ ht-degree: 91%
          + Spalten- und Zeileneinstellungen {#column-row-settings}
             + [Spalteneinstellungen](../analysis-workspace/visualizations/freeform-table/column-row-settings/column-settings.md)
             + [Zeileneinstellungen](../analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.md)
-            + [Dynamische im Vergleich zu statischen Elementen](../analysis-workspace/visualizations/freeform-table/column-row-settings/manual-vs-dynamic-rows.md)
+            + [Dynamische und statische Elemente](../analysis-workspace/visualizations/freeform-table/column-row-settings/manual-vs-dynamic-rows.md)
          + [Filtern und Sortieren von Tabellen](../analysis-workspace/visualizations/freeform-table/filter-and-sort.md)
          + [Workspace-Summen](../analysis-workspace/visualizations/freeform-table/workspace-totals.md)
       + Kohortentabelle {#cohort-table}
@@ -175,7 +175,7 @@ ht-degree: 91%
       + [Freiform](../analysis-workspace/c-panels/freeform-panel.md)
       + [Durchschnittliche Medienminuten-Audience](/help/analysis-workspace/c-panels/average-minute-audience-panel.md)
       + [Gleichzeitige Medienbetrachter](../analysis-workspace/c-panels/media-concurrent-viewers.md)
-      + [Besuchszeit für Medienwiedergabe](../analysis-workspace/c-panels/media-playback-time-spent.md)
+      + [Medienwiedergabedauer](../analysis-workspace/c-panels/media-playback-time-spent.md)
       + [Nächstes oder vorheriges Element](../analysis-workspace/c-panels/next-previous.md)
       + [Schnelle Einblicke](../analysis-workspace/c-panels/quickinsight.md)
    + Kuratieren, Freigeben und Planen von Projekten {#curate-share}
@@ -191,20 +191,20 @@ ht-degree: 91%
       + [Exportieren in die Cloud](../analysis-workspace/export/export-cloud.md)
    + Anomalieerkennung {#anomaly-detection}
       + [Überblick](../analysis-workspace/c-anomaly-detection/anomaly-detection.md)
-      + [Anomalien in Analysis Workspace anzeigen](../analysis-workspace/c-anomaly-detection/view-anomalies.md)
-      + [In der Anomalieerkennung verwendete statistische Verfahren](../analysis-workspace/c-anomaly-detection/statistics-anomaly-detection.md)
+      + [Anomalien anzeigen](../analysis-workspace/c-anomaly-detection/view-anomalies.md)
+      + [Statistische Verfahren](../analysis-workspace/c-anomaly-detection/statistics-anomaly-detection.md)
    + Prognose {#forecasting}
       + [Überblick](../analysis-workspace/c-forecast/forecasting.md)
-      + [Anzeigen von Prognosen in Analysis Workspace](../analysis-workspace/c-forecast/view-forecasts.md)
-      + [Im Prognosedienst verwendete statistische Verfahren](../analysis-workspace/c-forecast/statistics-forecasting.md)
-      + [Inhaltsverzeichnis ](../analysis-workspace/build-workspace-project/project-table-of-contents.md)
+      + [Prognosen anzeigen](../analysis-workspace/c-forecast/view-forecasts.md)
+      + [Statistische Verfahren](../analysis-workspace/c-forecast/statistics-forecasting.md)
+   + [Inhaltsverzeichnis ](../analysis-workspace/build-workspace-project/project-table-of-contents.md)
    + [Benutzervoreinstellungen](../analysis-workspace/user-preferences.md)
-   + Häufig gestellte Fragen zu Workspace {#workspace-faq}
+   + Häufig gestellte Fragen zu Workspace und mehr {#workspace-faq}
       + [Häufig gestellte Fragen](../analysis-workspace/workspace-faq/faq.md)
       + [Fehlermeldungen](../analysis-workspace/workspace-faq/error-messages.md)
-      + [Analysis Workspace-Beschränkungen](../analysis-workspace/workspace-faq/aw-limitations.md)
+      + [Einschränkungen](../analysis-workspace/workspace-faq/aw-limitations.md)
       + [Administrationsanforderungen](../analysis-workspace/workspace-faq/frequently-asked-questions-analysis-workspace.md)
-      + [Barrierefreiheit in Analysis Workspace](../analysis-workspace/workspace-faq/aw-accessibility.md)
+      + [Barrierefreiheit](../analysis-workspace/workspace-faq/aw-accessibility.md)
 
 + Analytics-Dashboards {#cja-dashboards}
    + [Analytics-Dashboards – Übersicht](../mobile-app/home.md)
@@ -360,10 +360,10 @@ ht-degree: 91%
 + Anwendungsfälle {#cja-usecases}
    + [Anwendungsfälle für Customer Journey Analytics](../use-cases/cja-usecases.md)
    + Google Analytics-Daten {#ga}
-      + [Migrieren von Daten von Google Analytics zu Customer Journey Analytics – Überblick](../use-cases/ga/overview.md)
-      + [Aufnehmen von historischen Daten von Google Analytics in Platform](../use-cases/ga/backfill.md)
-      + [Konfigurieren des Streaming-Vorgangs von Google Analytics-Daten in Platform](../use-cases/ga/streaming.md)
-      + [Bericht zu Google Analytics-Daten in Customer Journey Analytics](../use-cases/ga/report.md)
+      + [Migrieren von Daten aus Google Analytics](../use-cases/ga/overview.md)
+      + [historische Daten von Google Analytics erfassen](../use-cases/ga/backfill.md)
+      + [Streaming-Google Analytics konfigurieren](../use-cases/ga/streaming.md)
+      + [Bericht über Google Analytics-Daten](../use-cases/ga/report.md)
    + Datenaufnahme {#data-ingestion}
       + [Aufnehmen und Verwenden von Marketo Engage-Daten](../use-cases/data-ingestion/marketo.md)
       + [Aufnehmen und Verwenden von Experience Platform-Zielgruppen](../use-cases/data-ingestion/ingest-aep-segments.md)
@@ -390,14 +390,14 @@ ht-degree: 91%
    + Stitching {#stitching}
       + [Gemeinsam verwendete Geräte](/help/use-cases/stitching/shared-devices.md)
    + Abgeleitete Felder {#derived-fields}
-      + [Verwenden abgeleiteter Felder für Berichte zu Zielen](../use-cases/goals-using-derived-fields.md)
+      + [Bericht über Ziele](../use-cases/goals-using-derived-fields.md)
 
 + Labs {#labs}
    + [Labs-Benutzerhandbuch](../labs/labs.md)
 
 + Fehlerbehebung {#troubleshooting}
-   + [Vergleich von Adobe Analytics-Daten mit Customer Journey Analytics-Daten](../troubleshooting/compare.md)
-   + [Konsistenz der Metriken und Anzahl der Zielgruppenzugehörigkeiten zwischen Real-Time CDP und Customer Journey Analytics](../troubleshooting/consistency-rcdp-cja.md)
+   + [Daten vergleichen](../troubleshooting/compare.md)
+   + [Konsistenz von Metriken und Zielgruppen](../troubleshooting/consistency-rcdp-cja.md)
    + [Fehlen von Berechtigungen](../troubleshooting/lack-of-permissions.md)
 
 + Technische Hinweise {#technotes}
@@ -408,7 +408,7 @@ ht-degree: 91%
    + [Glossar](../technotes/glossary.md)
    + [Leitlinien](../technotes/guardrails.md)
    + [IP-Adressen](../technotes/ip-addresses.md)
-   + [Optimieren der Customer Journey Analytics-Performance](../technotes/optimizing-performance.md)
+   + [Leistung optimieren](../technotes/optimizing-performance.md)
    + [Anzeigen und Verwalten der Nutzung](../technotes/estimate-usage.md)
 
 + [Customer Journey Analytics-API](https://developer.adobe.com/cja-apis/docs/)

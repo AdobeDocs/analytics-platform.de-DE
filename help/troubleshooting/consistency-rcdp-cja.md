@@ -1,18 +1,18 @@
 ---
 description: Erläutert, welche Faktoren die Konsistenz von Metriken und die Anzahl der Zielgruppenzugehörigkeiten zwischen Real-time Customer Data Platform (Real-Time CDP) und Customer Journey Analytics beeinflussen.
-title: Konsistenz der Metriken und Anzahl der Zielgruppenzugehörigkeiten zwischen Real-Time CDP und Customer Journey Analytics
+title: Konsistenz von Metriken und Zielgruppenzugehörigkeit
 role: Admin
 feature: Basics
 exl-id: 13d972bc-3d32-414e-a67d-845845381c3e
-source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
+source-git-commit: 90d1c51c11f0ab4d7d61b8e115efa8257a985446
 workflow-type: tm+mt
-source-wordcount: '609'
-ht-degree: 100%
+source-wordcount: '592'
+ht-degree: 97%
 
 ---
 
 
-# Konsistenz der Metriken und Anzahl der Zielgruppenzugehörigkeiten zwischen Real-Time CDP und Adobe Customer Journey Analytics
+# Konsistenz von Metriken und Zielgruppenzugehörigkeit
 
 In realen Szenarien kann die Konsistenz von Metriken und die Anzahl der Zielgruppenmitgliedschaften zwischen Real-Time Customer Data Platform (Real-Time CDP) und Customer Journey Analytics nicht garantiert werden.  In diesem Dokument wird erläutert, warum.
 

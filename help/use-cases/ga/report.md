@@ -1,18 +1,18 @@
 ---
-title: Bericht zu Google Analytics-Daten in Customer Journey Analytics
+title: Bericht über Google Analytics-Daten
 description: Zeigt nützliche Berichte zu Google Analytics-Daten in Customer Journey Analytics an
 exl-id: a7ac3c8d-c0d9-4fc2-80d7-c2b388250586
 solution: Customer Journey Analytics
 feature: Use Cases
 role: Admin
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 90d1c51c11f0ab4d7d61b8e115efa8257a985446
 workflow-type: tm+mt
-source-wordcount: '690'
-ht-degree: 87%
+source-wordcount: '682'
+ht-degree: 85%
 
 ---
 
-# Bericht zu Google Analytics-Daten in Customer Journey Analytics
+# Bericht über Google Analytics-Daten
 
 Sobald Daten in Customer Journey Analytics zur Verfügung stehen, bieten die folgenden Beispiele nützliche Szenarien für das Reporting über diese Daten.
 

@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie Zielgruppen in Customer Journey Analytics ver
 exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
 feature: Audiences
 role: User
-source-git-commit: 905d8e0bfe2e0dbc9c6a03d9eb9a6efd4926fbbf
+source-git-commit: e131fd78ceee67a05a1ea7256e58b4b34ce44ae5
 workflow-type: tm+mt
-source-wordcount: '1767'
-ht-degree: 48%
+source-wordcount: '1952'
+ht-degree: 16%
 
 ---
 
@@ -31,7 +31,37 @@ ht-degree: 48%
 
 <!-- markdownlint-enable MD034 -->
 
-In diesem Thema wird beschrieben, wie Sie Zielgruppen erstellen und veröffentlichen, die im Customer Journey Analytics in [Echtzeit-Kundenprofil](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=de) in Adobe Experience Platform identifiziert werden, um Kunden-Targeting und -Personalisierung zu ermöglichen.
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_component_audiences_refreshlookbackwindow"
+>title="Lookback-Fenster aktualisieren"
+>abstract="Definieren Sie die Anzahl der Lookback-Tage ab heute, aus denen eine Zielgruppe ausgewertet wird."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_component_audiences_audiencesizelimit"
+>title="Zielgruppen-Limit"
+>abstract="Zielgruppen dürfen maximal 20 Millionen Mitglieder umfassen."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_component_audiences_namespacesincluded"
+>title="Enthaltene Namespaces"
+>abstract="Die Identitäten in dieser Zielgruppe bestehen aus den folgenden Namespaces."
+
+<!-- markdownlint-enable MD034 -->
+
+
+
+
+In diesem Thema wird beschrieben, wie Sie Zielgruppen erstellen und veröffentlichen, die im Customer Journey Analytics in [Echtzeit-Kundenprofil](https://experienceleague.adobe.com/en/docs/experience-platform/profile/home) in Adobe Experience Platform identifiziert werden, um Kunden-Targeting und -Personalisierung zu ermöglichen.
 
 Lesen Sie diesen [Überblick](/help/components/audiences/audiences-overview.md) , um sich mit dem Konzept der Customer Journey Analytics-Zielgruppen vertraut zu machen.
 
@@ -41,64 +71,62 @@ Lesen Sie diesen [Überblick](/help/components/audiences/audiences-overview.md) 
 
    | Erstellungsmethode | Details |
    | --- | --- |
-   | Über das Hauptmenü **[!UICONTROL Komponenten] > [!UICONTROL Zielgruppen]**: | Die Seite „Zielgruppen-Manager“ wird geöffnet. Klicken Sie auf **[!UICONTROL Zielgruppe erstellen]**. [!UICONTROL Audience Builder] wird geöffnet. |
-   | Aus einer Visualisierung in Analysis Workspace | Mit vielen Visualisierungen in Analysis Workspace können Sie mithilfe des Kontextmenüs eine Zielgruppe erstellen. Sie können beispielsweise mit der rechten Maustaste auf ein Element in einer Freiformtabelle klicken oder Sie können mit der rechten Maustaste auf einen Knoten in der Journey-Arbeitsfläche klicken und dann **[!UICONTROL Zielgruppe erstellen]** auswählen. <p>Mit dieser Methode wird der Filter vorab mit der Dimension oder dem Dimensionselement ausgefüllt, die bzw. das Sie in der Tabelle ausgewählt haben.</p><p>Mit den folgenden Visualisierungen können Sie eine Zielgruppe mithilfe des Kontextmenüs erstellen:</p><ul><li>Kohorte</li><li>Fallout</li><li>Fluss</li><li>Freiformtabelle</li><li>Journey-Arbeitsfläche</li><li>Venn</li></ul><p>**Hinweis:** Zielgruppen können keine berechneten Metriken enthalten. Wenn Sie versuchen, eine Zielgruppe zu erstellen, die eine berechnete Metrik enthält, wird die berechnete Metrik nicht in die Zielgruppendefinition aufgenommen.</p> |
-   | Über die Benutzeroberfläche zur Erstellung/Bearbeitung von Filtern: | Markieren Sie das Kästchen **[!UICONTROL Zielgruppe über diesen Filter erstellen]**. Mit dieser Methode wird der Filter vorab ausgefüllt. |
+   | Von der Oberfläche von **[!UICONTROL Audiences]** aus. | Wählen Sie im Hauptmenü die Option **[!UICONTROL Komponenten]** > **[!UICONTROL Zielgruppen]** aus. Die Benutzeroberfläche &quot;Zielgruppen&quot;wird angezeigt. Wählen Sie die Option **[!UICONTROL Erstellen der Audience]** aus und der [!UICONTROL Audience Builder] wird geöffnet. |
+   | Aus einer Visualisierung in Analysis Workspace | Mit vielen Visualisierungen in Analysis Workspace können Sie mithilfe des Kontextmenüs eine Zielgruppe erstellen. Sie können beispielsweise **[!UICONTROL Zielgruppe erstellen]** aus dem Kontextmenü eines Elements in einer [Freiformtabelle](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) oder eines Knotens in der [Journey-Arbeitsfläche](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md) auswählen.<p>Mit dieser Methode wird der Filter im Audience Builder vorab mit der ausgewählten Dimension oder dem Dimensionselement ausgefüllt.</p><p>Mit den folgenden Visualisierungen können Sie eine Zielgruppe mithilfe des Kontextmenüs erstellen:</p><ul><li>[Kohortentabelle](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md)</li><li>[Fallout](/help/analysis-workspace/visualizations/fallout/fallout-flow.md)</li><li>[Fluss](/help/analysis-workspace/visualizations/c-flow/flow.md)</li><li>[Freiformtabelle](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)</li><li>[Journey canvas](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md)</li><li>[Venn](/help/analysis-workspace/visualizations/venn.md)</li></ul><p>**Hinweis:** Zielgruppen können keine berechneten Metriken enthalten. Wenn Sie versuchen, eine Zielgruppe zu erstellen, die eine berechnete Metrik enthält, ist die berechnete Metrik nicht in der Zielgruppendefinition enthalten.</p> |
+   | Über die Benutzeroberfläche zur Erstellung/Bearbeitung von Filtern: | Markieren Sie das Kästchen **[!UICONTROL Zielgruppe über diesen Filter erstellen]**. Mit dieser Methode wird der Filter vorab ausgefüllt. Weitere Informationen finden Sie unter [Filter erstellen](/help/components/filters/create-filters.md) . |
 
    {style="table-layout:auto"}
 
-1. Erstellen Sie die Zielgruppe.
+1. Erstellen Sie die Zielgruppe mit dem [Audience Builder](#audience-builder).
 
-   Konfigurieren Sie diese Einstellungen. Danach können Sie die Zielgruppe veröffentlichen.
+1. Interpretieren Sie die Daten mithilfe des Bereichs [Datumsvorschau](#data-preview) .
 
-   ![Screenshot zum Erstellen von Zielgruppen-Sbowing-Einstellungen, beschrieben im nächsten Abschnitt.](assets/create-audience.png)
+1. Wählen Sie **[!UICONTROL [!UICONTROL Beispiel-IDs anzeigen]]** aus, um ein Beispiel für IDs in dieser Zielgruppe anzuzeigen. Im Dialogfeld **[!UICONTROL Beispiel-IDs]** können Sie ![Suche](/help/assets/icons/Search.svg) [!UICONTROL *Suchen nach Beispiel-IDs*] verwenden, um nach Beispiel-IDs zu suchen.
 
-   | Einstellung | Beschreibung |
-   | --- | --- |
-   | [!UICONTROL Name] | Der Name der Zielgruppe. |
-   | [!UICONTROL Tags] | Alle Tags, die Sie der Zielgruppe aus organisatorischen Gründen zuweisen möchten. Sie können ein bereits vorhandenes Tag verwenden oder ein neues eingeben. |
-   | [!UICONTROL Beschreibung] | Fügen Sie der Zielgruppe eine Beschreibung hinzu, um sie von anderen leicht unterscheiden zu können. |
-   | [!UICONTROL Häufigkeit der Aktualisierung] | Die Häufigkeit, mit der Sie die Zielgruppe aktualisieren möchten.<ul><li>Sie können eine einmalige Zielgruppe (Standard) erstellen, die nicht aktualisiert werden muss. Dies könnte beispielsweise bei bestimmten einmaligen Kampagnen der Fall sein.</li><li>Sie können auch andere Aktualisierungsintervalle auswählen. Für die Aktualisierungshäufigkeit von 4 Stunden gilt je nach Customer Journey Analytics-Berechtigung eine Beschränkung von 75 bis 150 Zielgruppenaktualisierungen.</li></ul> |
-   | Ablaufdatum | Wann die Aktualisierung der Zielgruppe beendet ist. Der Standardwert liegt bei 1 Jahr ab dem Erstellungsdatum. Vor der Beendigung der Zielgruppen-Aktualisierung erhält der Administrator ähnlich wie bei der Beendigung von geplanten Berichten einen Monat vor Ablauf der Zielgruppe eine E-Mail. |
-   | Lookback-Fenster aktualisieren | Gibt an, wie weit Sie im Datenfenster bei der Erstellung dieser Zielgruppe zurückgehen möchten. Die Höchstdauer beträgt 90 Tage. |
-   | [!UICONTROL Einmaliger Datumsbereich] | Datumsbereich, in dem die einmalige Zielgruppe veröffentlicht werden soll. |
-   | [!UICONTROL Filter] | Filter sind die Hauptauswahloptionen für die Zielgruppe. Sie können bis zu 20 Filter hinzufügen. Diese Filter können mit `And`- oder `Or`-Operatoren verbunden werden.<p>Beim Erstellen einer Zielgruppe aus einer Visualisierung in Analysis Workspace (z. B. einer Freiformtabelle oder einer Journey-Arbeitsfläche) bleiben alle auf das Bedienfeld oder die Spalte angewendeten Filter erhalten. Sie können alle automatisch angewendeten Filter entfernen.</p> |
-   | [!UICONTROL Beispiel-IDs anzeigen] | Beispiel für IDs in dieser Zielgruppe. Verwenden Sie die Suchleiste, um nach Beispiel-IDs zu suchen. |
+1. Überprüfen Sie Ihre Zielgruppenkonfiguration und wählen Sie **[!UICONTROL Publish]** aus.
+Sie erhalten eine Bestätigungsmeldung, dass die Zielgruppe veröffentlicht wurde. Die Publikation dauert nur eine oder zwei Minuten, bis diese Audience im Experience Platform angezeigt wird.
 
-   {style="table-layout:auto"}
+1. Wählen Sie in derselben Nachricht die Option **[!UICONTROL Audience in AEP anzeigen]** aus, und Sie gelangen zur [Segmentbenutzeroberfläche](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/overview) in Adobe Experience Platform. Weitere Informationen finden Sie unten.
 
-1. Interpretieren Sie die Datenvorschau.
+## Audience Builder
 
-   Die Vorschau der Audience wird im rechten Bereich angezeigt. Sie ermöglicht eine zusammengefasste Analyse der von Ihnen erstellten Zielgruppe.
+Konfigurieren Sie diese Einstellungen, um Ihre Audience zu definieren oder zu aktualisieren.
 
-   ![Screenshot der Datenvorschau mit einer zusammengefassten Analyse der Audience.](assets/data-preview.png)
+![Screenshot zum Erstellen von Zielgruppen-Sbowing-Einstellungen, beschrieben im nächsten Abschnitt.](assets/create-audience.png)
 
-   | Vorschaueinstellung | Beschreibung |
-   | --- | --- |
-   | [!UICONTROL Datenvorschau]-Fenster | Der Datumsbereich für die Zielgruppe. |
-   | [!UICONTROL Personen insgesamt] | Die Gesamtzahl der Personen in dieser Zielgruppe. Sie kann bis zu 20 Millionen Personen umfassen. Wenn Ihre Zielgruppe mehr als 20 Millionen Personen umfasst, müssen Sie die Zielgruppengröße verringern, bevor Sie sie veröffentlichen können. |
-   | [!UICONTROL Zielgruppen-Limit] | Zeigt an, wie weit diese Zielgruppe vom Limit von 20 Millionen entfernt ist. |
-   | [!UICONTROL Geschätzte Zielgruppenrendite] | Diese Einstellung ist nützlich für das Retargeting von Kunden in dieser Zielgruppe, die zu Ihrer Site, mobilen App oder einem anderen Kanal zurückkehren (d. h. die erneut in diesem Datensatz angezeigt werden). <p>Hier können Sie den Zeitraum (nächste 7 Tage, nächste 2 Wochen, nächsten Monat) für die geschätzte Anzahl der Kunden auswählen, die möglicherweise zurückkehren. |
-   | [!UICONTROL Voraussichtliche Rückkehr] | Mit dieser Zahl erhalten Sie eine geschätzte Anzahl an wiederkehrenden Kunden über den von Ihnen aus der Dropdown-Liste ausgewählten Zeitraum. Für die Vorhersage dieser Zahl wird die historische Abwanderungsrate für diese Zielgruppe herangezogen. |
-   | [!UICONTROL Metriken in der Vorschau anzeigen] | Mit dieser Einstellung können Sie bestimmte Metriken betrachten, um festzustellen, ob diese Zielgruppe in dieser Metrik unverhältnismäßig stark vertreten ist, z. B. in [!UICONTROL Umsatz] oder [!UICONTROL Durchschnittliche Besuchszeit pro Site]. Damit erhalten Sie eine aggregierte Zahl für die Metrik sowie den Prozentsatz der Gesamtzahl. Sie können eine beliebige Metrik auswählen, die in Ihrer Datenansicht verfügbar ist. |
-   | [!UICONTROL Enthaltene Namespaces] | Die spezifischen Namespaces, die mit den Personen in Ihrer Zielgruppe verknüpft sind. Beispiele sind ECID, CRM-ID, E-Mail-Adressen usw. |
-   | [!UICONTROL Sandbox] | Die [Experience Platform-Sandbox](https://experienceleague.adobe.com/docs/experience-platform/sandbox/home.html?lang=de), in der sich diese Zielgruppe befindet. Wenn Sie diese Zielgruppe in Platform veröffentlichen, können Sie sie nur innerhalb dieser Sandbox verwenden. |
+| Einstellung | Beschreibung |
+| --- | --- |
+| ![Daten](/help/assets/icons/Data.svg) | Wählen Sie eine Datenansicht aus, die für die Erstellung der Zielgruppe verwendet werden soll. |
+| **[!UICONTROL Name]** | Der Name der Zielgruppe. Beispiel: `Really Interested in Potential Car Buyers` |
+| **[!UICONTROL Tags]** | Alle Tags, die Sie der Zielgruppe für organisatorische Zwecke zuweisen möchten. Sie können einen oder mehrere bereits vorhandene Tags auswählen oder einen neuen eingeben. |
+| **[!UICONTROL Beschreibung]** | Beschreibung der Audience, um sie von anderen zu unterscheiden. Beispiel: `Build an audience of really interested potential car buyers` |
+| **[!UICONTROL Häufigkeit der Aktualisierung]** | Die Häufigkeit, mit der Sie die Zielgruppe aktualisieren möchten.<p/>Sie können zwischen <ul><li>**[!UICONTROL Einmalige]** Audience: eine Audience (Standard), die nicht aktualisiert werden muss. Diese Option kann beispielsweise für bestimmte einmalige Kampagnen hilfreich sein.<br/>Sie müssen einen **[!UICONTROL einmaligen Datumsbereich]** angeben. Sie können ![Kalender](/help/assets/icons/Calendar.svg) verwenden, um einen Datumsbereich einzugeben.</li><li>Eine erfrischende Zielgruppe. Sie können aus den folgenden Optionen auswählen:<ul><li>**[!UICONTROL Alle 4 Stunden]** s: Eine Zielgruppe, die alle 4 Stunden aktualisiert wird.</li><li>**[!UICONTROL Täglich]**: Eine Zielgruppe, die täglich aktualisiert wird</li><li>**[!UICONTROL Wöchentlich]**: Eine Zielgruppe, die wöchentlich aktualisiert wird.</li><li>**[!UICONTROL Monatlich]**: Eine Zielgruppe, die monatlich aktualisiert wird</li></ul></li><br/>Für die Aktualisierung von Zielgruppen müssen Sie Folgendes angeben:<ul><li>**[!UICONTROL Lookback-Fenster aktualisieren]**. Definieren Sie die Anzahl der Lookback-Tage ab heute, an denen eine Zielgruppe ausgewertet wird. Sie können aus den Optionen auswählen oder eine benutzerdefinierte Zeit definieren. Die Höchstdauer beträgt 90 Tage.</li><li>**[!UICONTROL Ablaufdatum]**: Definieren Sie, wann die Aktualisierung der Zielgruppe beendet wird. Sie können ![Kalender](/help/assets/icons/Calendar.svg) verwenden, um ein Datum auszuwählen. Der Standardwert liegt bei 1 Jahr ab dem Erstellungsdatum. Das Ablaufen von Zielgruppen wird ähnlich wie das Ablaufen geplanter Berichte behandelt. Der Administrator erhält einen Monat vor Ablauf der Audience eine E-Mail.</li></ul> Beachten Sie, dass je nach Customer Journey Analytics-Berechtigung 75 bis 150 Zielgruppenaktualisierungen vorgenommen werden können.</li></ul> |
+| **[!UICONTROL Filter]** | Filter sind die Hauptauswahloptionen für die Zielgruppe. Ziehen Sie einen oder mehrere Filter aus dem linken Bereich ![Segmentierung](/help/assets/icons/Segmentation.svg) **[!UICONTROL Filter]** in den Filterbereich. Sie können die Suchfilter ![Suche](/help/assets/icons/Search.svg) [!UICONTROL *3} verwenden, um nach Filtern zu suchen.*] Sie können bis zu 20 Filter hinzufügen. Filter können mit den Operatoren **[!UICONTROL UND]** oder **[!UICONTROL ODER]** verbunden werden.<p>Beim Erstellen einer Zielgruppe aus einer Visualisierung in Analysis Workspace (z. B. einer Freiformtabelle oder einer Journey-Arbeitsfläche) bleiben alle auf das Bedienfeld oder die Spalte angewendeten Filter erhalten. Sie können alle automatisch angewendeten Filter entfernen.</p> |
+| **[!UICONTROL Datenvorschau]** | Wählen Sie ![Info](/help/assets/icons/Info.svg) aus, um die [Datenvorschau](#data-preview) für den ausgewählten Datumsbereich ein- oder auszublenden. |
 
-   {style="table-layout:auto"}
+## Datenvorschau
 
-1. Überprüfen Sie Ihre Zielgruppenkonfiguration und klicken Sie auf **[!UICONTROL Veröffentlichen]**.
+Im Bereich Datenvorschau finden Sie die folgenden Informationen.
 
-   Nach erfolgreicher Veröffentlichung erhalten Sie eine Bestätigungsnachricht, dass die Zielgruppe veröffentlicht wurde. Es dauert nur ein bis zwei Minuten, bis diese Zielgruppe in Experience Platform angezeigt wird. (Selbst für Zielgruppen mit Millionen von Personen dauert es normalerweise weniger als 5 Minuten.)
+| Element | Beschreibung |
+| --- | --- |
+| **[!UICONTROL Personen insgesamt]** | Die Gesamtzahl der Personen in dieser Zielgruppe. Die maximale Größe beträgt 20 Millionen Menschen. Wenn Ihre Zielgruppe mehr als 20 Millionen Benutzer umfasst, müssen Sie die Zielgruppengröße verringern, bevor Sie veröffentlichen können. |
+| **[!UICONTROL Zielgruppen-Limit]** | Visualisierung , um anzuzeigen, wie weit diese Zielgruppe von der 20-Millionen-Grenze entfernt ist. |
+| **[!UICONTROL Geschätzte Zielgruppenrendite]** | Sie können diesen Wert verwenden, um Personen in dieser Zielgruppe erneut anzusprechen, die zu Ihrer Site, App oder einem anderen Kanal zurückkehren.<p>Sie können den Zeitrahmen (**[!UICONTROL Nächste 7 Tage]**, **[!UICONTROL Nächste 2 Wochen]** oder **[!UICONTROL Nächster Monat]**) für die geschätzte Anzahl von Kunden auswählen, die zurückkehren können. |
+| **[!UICONTROL Voraussichtliche Rückkehr]** | Diese Zahl gibt Ihnen eine geschätzte Anzahl an wiederkehrenden Kunden über den von Ihnen ausgewählten Zeitraum. Diese Zahl wird anhand der historischen Abwanderungsrate für diese Zielgruppe prognostiziert. |
+| **[!UICONTROL Metriken in der Vorschau anzeigen]** | Sie können eine bestimmte Metrik auswählen, um zu sehen, wie die Daten für diese Metrik auf der von Ihnen definierten Zielgruppe basieren.  Jede Vorschaumetrik zeigt einen Gesamtwert für die Metrik basierend auf der Zielgruppe an. Und ein Prozentsatz der zielgruppenbasierten Metrik vom Gesamtwert der Metrik, wie durch die Datenansicht definiert. Beispielsweise sind 381 Personen (die von Ihnen ausgewählte Metrik) das Ergebnis Ihrer Zielgruppendefinition, was 5 % der Gesamtanzahl der in der Datenansicht verfügbaren Personen entspricht. Sie können eine beliebige Metrik auswählen, die in Ihrer Datenansicht verfügbar ist. |
+| **[!UICONTROL Enthaltene Namespaces]** | Die spezifischen Namespaces, die mit den Personen in Ihrer Zielgruppe verknüpft sind. Beispiele sind ECID, CRM-ID, E-Mail-Adressen usw. |
+| **[!UICONTROL Sandbox]** | Die [Experience Platform-Sandbox](https://experienceleague.adobe.com/de/docs/experience-platform/sandbox/home), in der sich diese Zielgruppe befindet. Wenn Sie diese Zielgruppe in Platform veröffentlichen, können Sie nur innerhalb der Grenzen dieser Sandbox mit der Zielgruppe arbeiten. |
 
-1. Klicken Sie in derselben Nachricht auf **[!UICONTROL Zielgruppe in AEP anzeigen]**. Sie gelangen zur [Segment-Benutzeroberfläche](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html?lang=de) in Adobe Experience Platform. Weitere Informationen finden Sie unten.
+{style="table-layout:auto"}
 
 ## Was passiert, nachdem eine Zielgruppe erstellt und veröffentlicht wurde? {#after-audience-created}
 
 Nachdem Sie eine Zielgruppe im Customer Journey Analytics erstellt und veröffentlicht haben, ist sie im Experience Platform verfügbar. Ein Adobe Experience Platform-Streaming-Segment wird nur erstellt, wenn Ihr Unternehmen für Streaming-Segmentierung eingerichtet ist.
 
-* Die Audience in Platform gibt denselben Namen/dieselbe Beschreibung wie die Customer Journey Analytics-Audience. Der Name wird jedoch an die Customer Journey Analytics-Audience-ID angehängt, um sicherzustellen, dass er eindeutig ist.
-* Änderungen, die am Namen oder an der Beschreibung der Audience im Customer Journey Analytics vorgenommen werden, werden in Platform übernommen.
-* Wenn eine Zielgruppe im Customer Journey Analytics gelöscht wird, ist sie weiterhin in Platform verfügbar.
+* Die Audience in Platform trägt denselben Namen und dieselbe Beschreibung wie die Customer Journey Analytics-Audience. Der Name wird an die Customer Journey Analytics-Zielgruppen-ID angehängt, um sicherzustellen, dass die Zielgruppe eindeutig ist.
+* Alle Änderungen, die am Namen oder an der Beschreibung der Audience im Customer Journey Analytics vorgenommen werden, werden im Experience Platform übernommen.
+* Wenn eine Zielgruppe im Customer Journey Analytics gelöscht wird, ist sie weiterhin im Experience Platform verfügbar.
 
 ## Latenzaspekte {#latency}
 
@@ -106,7 +134,7 @@ An verschiedenen Stellen vor, während und nach der Veröffentlichung von Zielgr
 
 ![Latenzen beim Veröffentlichen von Zielgruppen, wie in diesem Abschnitt beschrieben.](assets/latency-diagram.svg)
 
-| # | Latenzpunkt | Latenzdauer |
+|  | Latenzpunkt | Latenzdauer |
 | --- | --- | --- |
 | Nicht angezeigt | Quell-Connector von Adobe Analytics zu Analytics (A4T) | Bis zu 30 Minuten |
 | 1 | Datenaufnahme in den Data Lake (aus dem Analytics-Quell-Connector oder anderen Quellen) | Bis zu 90 Minuten |
@@ -119,27 +147,27 @@ An verschiedenen Stellen vor, während und nach der Veröffentlichung von Zielgr
 
 ## Verwenden von Customer Journey Analytics-Zielgruppen in Experience Platform {#audiences-aep}
 
-Customer Journey Analytics übernimmt alle Namespace- und ID-Kombinationen aus Ihrer veröffentlichten Zielgruppe und streamt sie in das Echtzeit-Kundenprofil (RTCP). Customer Journey Analytics sendet die Zielgruppe mit dem Hauptidentitätssatz an Experience Platform, je nachdem, was bei der Verbindungskonfiguration als [!UICONTROL Personen-ID] ausgewählt wurde.
+Customer Journey Analytics übernimmt alle Namespace- und ID-Kombinationen aus Ihrer veröffentlichten Zielgruppe und streamt sie an Real-time Customer Data Platform . Customer Journey Analytics sendet die Zielgruppe mit dem Hauptidentitätssatz an Experience Platform, je nachdem, was bei der Verbindungskonfiguration als [!UICONTROL Personen-ID] ausgewählt wurde.
 
-Das Echtzeit-Kundenprofil untersucht dann jede Namespace/ID-Kombination und sucht nach einem passenden Profil. Ein Profil ist im Grunde eine Gruppe verknüpfter Namespaces, IDs und Geräte. Wenn ein Profil gefunden wird, werden der Namespace und die ID den anderen IDs in diesem Profil als Attribut für die Segmentmitgliedschaft hinzugefügt. Beispielsweise kann <user@adobe.com> für alle Geräte und Kanäle als Ziel ausgewählt werden. Wenn kein Profil gefunden wird, wird ein neues erstellt.
+Real-time Customer Data Platform prüft dann jede Namespace-/ID-Kombination und sucht nach einem Profil, zu dem sie gehören kann. Ein Profil ist im Grunde eine Gruppe verknüpfter Namespaces, IDs und Geräte. Wenn ein Profil gefunden wird, werden der Namespace und die ID den anderen IDs in diesem Profil als Attribut für die Segmentmitgliedschaft hinzugefügt. Beispielsweise kann <user@adobe.com> für alle Geräte und Kanäle als Ziel ausgewählt werden. Wenn kein Profil gefunden wird, wird ein neues erstellt.
 
 Anzeigen von Customer Journey Analytics-Zielgruppen in Platform:
 
-1. Erweitern Sie [!UICONTROL **Kunde**] im linken Bereich und wählen Sie dann [!UICONTROL **Zielgruppen**] <!-- is there a folder called "Customer Journey Analytics? --> aus.
+1. Erweitern Sie **[!UICONTROL Kunde]** im linken Bereich und wählen Sie dann **[!UICONTROL Zielgruppen]** <!-- is there a folder called "Customer Journey Analytics? --> aus.
 
-1. Wählen Sie die Registerkarte [!UICONTROL **Durchsuchen**] aus.
-
-   ![Option &quot;Zielgruppen&quot;im linken Bereich](assets/audiences-aep.png)
+1. Wählen Sie die Registerkarte **[!UICONTROL Durchsuchen]** aus.
 
 1. Führen Sie einen der folgenden Schritte aus, um die von Ihnen unter Customer Journey Analytics veröffentlichte Zielgruppe zu finden:
 
-   * Sortieren Sie die Tabelle nach der Spalte [!UICONTROL **Origin**] , um Zielgruppen anzuzeigen, die [!UICONTROL **Customer Journey Analytics**] als Ursprung anzeigen.
+   ![Option &quot;Zielgruppen&quot;im linken Bereich](assets/aep-audiences.png)
 
-   * Wählen Sie das Filtersymbol aus.
+   * Sortieren Sie die Tabelle nach der Spalte **[!UICONTROL Origin]** , um Zielgruppen anzuzeigen, die [!UICONTROL **Customer Journey Analytics**] als Ursprung anzeigen.
 
-   * Verwenden Sie das Suchfeld.
+   * Filtern Sie ![Filter](/help/assets/icons/Filter.svg) nach **[!UICONTROL Ursprung]** und wählen Sie **[!UICONTROL Customer Journey Analytics]** aus.
 
-Weitere Informationen zur Verwendung von Zielgruppen in Platform finden Sie im Abschnitt [Zielgruppen](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html?lang=en#audiences) im Handbuch zur Segmentaufbau-Benutzeroberfläche](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html?lang=de) in der Experience Platform-Dokumentation.[
+   * Verwenden Sie das Suchfeld ![Suche](/help/assets/icons/Search.svg) .
+
+Weitere Informationen zur Verwendung von Zielgruppen in Platform finden Sie im Abschnitt [Zielgruppen](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/segment-builder) im Handbuch zur Benutzeroberfläche von [Segment Builder](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/segment-builder) in der Experience Platform-Dokumentation.
 
 
 ## Häufig gestellte Fragen (FAQ) {#faq}
@@ -154,37 +182,37 @@ In diesem Fall wird ein exit -Ereignis von Customer Journey Analytics an Experie
 
 +++**Was passiert, wenn Sie eine Audience im Customer Journey Analytics löschen?**
 
-Wenn eine Customer Journey Analytics-Zielgruppe gelöscht wird, wird diese Zielgruppe nicht mehr in der Experience Platform-Benutzeroberfläche angezeigt. Es werden jedoch keine Profile, die mit dieser Zielgruppe verknüpft sind, in Platform tatsächlich gelöscht.
+Wenn eine Customer Journey Analytics-Zielgruppe gelöscht wird, wird diese Zielgruppe nicht mehr in der Experience Platform-Benutzeroberfläche angezeigt. Profile, die mit dieser Audience verknüpft sind, werden jedoch nicht im Experience Platform gelöscht.
 
 +++
 
-+++**Wenn in RTCDP kein entsprechendes Profil existiert, wird dann ein neues Profil erstellt?**
++++**Wenn kein entsprechendes Profil in Real-time Customer Data Platform vorhanden ist, wird ein neues Profil erstellt?**
 
 Ja.
 
 +++
 
-+++**Sendet Customer Journey Analytics die Zielgruppendaten als Pipeline-Ereignisse oder als flache Datei, die auch an den Data Lake gesendet wird?**
++++**Sendet Customer Journey Analytics die Zielgruppendaten als Pipeline-Ereignisse oder als flache Datei, die auch zum Data Lake gelangt?**
 
-Customer Journey Analytics streamt die Daten per Pipeline in RTCP, und diese Daten werden auch in einem Systemdatensatz im Data Lake erfasst.
+Customer Journey Analytics streamt die Daten über die Pipeline in Real-time Customer Data Platform, und diese Daten werden auch in einem Systemdatensatz im Data Lake erfasst.
 
 +++
 
 +++**Welche Identitäten sendet Customer Journey Analytics?**
 
-Die Identitäts-/Namespace-Paare, die in der [Verbindungseinrichtung](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=de#create-connection) angegeben wurden. Indesondere der Schritt, in dem Benutzende das Feld auswählen, das sie als ihre „Personen-ID“ verwenden möchten.
+Die Identitäts-/Namespace-Paare, die in der [Verbindungseinrichtung](https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-connections/create-connection) angegeben wurden. Insbesondere der Schritt, in dem ein Benutzer das Feld auswählt, das er als Personen-ID verwenden möchte.
 
 +++
 
 +++**Welche ID wird als primäre Identität ausgewählt?**
 
-Siehe oben. Wir senden nur eine Identität pro Customer Journey Analytics &quot;Person&quot;.
+Siehe oben. Pro Customer Journey Analytics wird nur eine Identität gesendet.
 
 +++
 
-+++**Verarbeitet RTCP auch die Customer Journey Analytics-Nachrichten? Kann Customer Journey Analytics Identitäten zu einem Profilidentitätsdiagramm durch Zielgruppenfreigabe hinzufügen?**
++++**Verarbeitet Real-time Customer Data Platform auch die Customer Journey Analytics-Nachrichten? Kann Customer Journey Analytics Identitäten zu einem Profilidentitätsdiagramm durch Zielgruppenfreigabe hinzufügen?**
 
-Nein. Wir senden nur eine Identität pro „Person“, sodass es keine Diagramme gibt, die RTCP nutzen könnte.
+Nein. Es wird nur eine Identität pro Person gesendet, sodass Real-time Customer Data Platform keine Diagrammränder verwenden kann.
 
 +++
 
@@ -194,9 +222,9 @@ Der Zeitpunkt der Aktualisierung hängt davon ab, wann die ursprüngliche Zielgr
 
 +++
 
-+++**Können die täglichen, wöchentlichen und monatlichen Aktualisierungszeiten von Benutzern konfiguriert werden?**
++++**Können Sie die tägliche, wöchentliche und monatliche Aktualisierungszeit konfigurieren?**
 
-Nein, sie können nicht von Benutzern konfiguriert werden.
+Nein, Benutzer können die Aktualisierungszeit nicht konfigurieren.
 
 +++
 

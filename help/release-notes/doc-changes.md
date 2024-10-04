@@ -4,9 +4,9 @@ description: Listet Inhaltsaktualisierungen für Dokumentation zu Customer Journ
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 51d4f05d7d28befed0a5c0d1b47b53c2e045f7f7
+source-git-commit: 90d1c51c11f0ab4d7d61b8e115efa8257a985446
 workflow-type: tm+mt
-source-wordcount: '4090'
+source-wordcount: '4094'
 ht-degree: 71%
 
 ---
@@ -20,7 +20,7 @@ Die folgenden Aktualisierungen wurden seit der ersten Erstellung der Customer Jo
 | Funktion | Beschreibung |
 | --- | --- |
 | **Oktober 2024** | |
-| Workspace und Komponenten | Die Dokumentation zu Workspace-Projekten (Projekten, Visualisierungen und Bedienfeldern) und Komponenten (Anmerkungen, Dimensionen, (berechnete) Metriken, Filtern, Datumsbereichen und Warnhinweisen) wurde aktualisiert. |
+| Workspace und Komponenten | Die Dokumentation zu Analysis Workspace-Projekten (Projekten, Visualisierungen und Bedienfeldern) und Komponenten (Anmerkungen, Dimensionen, (berechnete) Metriken, Filtern, Datumsbereichen, Warnungen, geplanten Projekten und Zielgruppen) wurde aktualisiert. |
 | **September 2024** | |
 | Aktualisierung der Zusammenfassungsdaten | Die Zusammenfassungsdatenartikel wurden mit Informationen zur ordnungsgemäßen Verwendung von [Suchdaten](/help/data-views/summary-data.md#lookup-data) bei der Berichterstellung für Zusammenfassungsdaten aktualisiert. |
 | Aktualisierung der BI-Erweiterung | Der Abschnitt [Standardwerte und Begrenzungen](/help/data-views/bi-extension.md#defaults-and-limitations) zur Dokumentation zur BI-Erweiterung wurde hinzugefügt. |

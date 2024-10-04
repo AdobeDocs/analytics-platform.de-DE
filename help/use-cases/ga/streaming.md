@@ -1,17 +1,17 @@
 ---
-title: Konfigurieren des Streaming-Vorgangs von Google Analytics-Daten in Adobe Experience Platform
+title: Streaming-Google Analytics konfigurieren
 description: Erfahren Sie, wie Sie Ihre Implementierung einrichten, um eine Google-Datenschicht nach Adobe Experience Platform zu senden.
 exl-id: 58854f4b-ae28-424e-a2cf-0e76219cb802
 feature: Use Cases
 role: Admin
-source-git-commit: bfaf76fa5f225e9aa3153fc4ee10c5be8f3164e7
+source-git-commit: 90d1c51c11f0ab4d7d61b8e115efa8257a985446
 workflow-type: tm+mt
-source-wordcount: '234'
-ht-degree: 89%
+source-wordcount: '226'
+ht-degree: 84%
 
 ---
 
-# Konfigurieren des Streaming-Vorgangs von Google Analytics-Daten in Adobe Experience Platform
+# Streaming-Google Analytics konfigurieren
 
 Auf dieser Seite wird beschrieben, wie Sie Ihre Live-Daten von Google Analytics in Adobe Experience Platform aufnehmen und so in einer Datenansicht in Customer Journey Analytics auf diesen Datensatz verweisen können. Sie können die Schritte auf dieser Seite mit [der Aufnahme von historischen Google Analytics-Daten in Adobe Experience Platform](backfill.md) kombinieren, wodurch ein Datensatz mit historischen Daten generiert wird. Kombinieren Sie einen Streaming-Datensatz mit einem Aufstockungsdatensatz, um eine lückenlose Ansicht historischer und aktueller Daten in Customer Journey Analytics zu erhalten.
 

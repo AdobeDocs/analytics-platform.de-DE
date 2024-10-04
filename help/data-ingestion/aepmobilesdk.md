@@ -5,14 +5,14 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: fb48b031-e093-4490-b457-69dbb5debe8d
 role: Admin
-source-git-commit: f078bf7b9b9d87335f435db2bbba87b078412738
+source-git-commit: 90d1c51c11f0ab4d7d61b8e115efa8257a985446
 workflow-type: tm+mt
-source-wordcount: '3385'
+source-wordcount: '3382'
 ht-degree: 60%
 
 ---
 
-# Daten über das Adobe Experience Platform Mobile SDK erfassen
+# Daten über das Mobile SDK erfassen
 
 In dieser Kurzanleitung wird erläutert, wie Sie mit dem Adobe Experience Platform Mobile SDK und Edge Network Tracking-Daten von Apps direkt in Adobe Experience Platform erfassen können. Verwenden Sie dann diese Daten im Customer Journey Analytics.
 

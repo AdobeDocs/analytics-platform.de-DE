@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie Zielgruppen in Customer Journey Analytics ver
 exl-id: 0cc50f64-40b5-4245-a9bb-a60fc90f507a
 feature: Audiences
 role: User
-source-git-commit: 8676497c9341e3ff74d1b82ca79bc1e73caf514f
+source-git-commit: e131fd78ceee67a05a1ea7256e58b4b34ce44ae5
 workflow-type: tm+mt
-source-wordcount: '675'
+source-wordcount: '677'
 ht-degree: 20%
 
 ---
@@ -24,6 +24,8 @@ Die Verwaltung zuvor erstellter Audiences ermöglicht Ihnen Folgendes:
 * Überprüfen Sie, ob die Zielgruppen in Customer Journey Analytics **aktiv von der Echtzeit-Kundenplattform verwendet werden**. Oder (idealerweise) alle Experience Platform-Anwendungen, die die durch Customer Journey Analytics erstellten Zielgruppen nutzen.
 
 Wenn Sie Zugriff auf die [Zielgruppenansicht](/help/technotes/access-control.md#user-level-access) haben, können Sie Zielgruppen anzeigen. Wenn Sie Zugriff auf [Zielgruppe erstellen](/help/technotes/access-control.md#user-level-access) haben, können Sie Zielgruppen bearbeiten und löschen. Die Liste [Zielgruppen](#audiences-list) zeigt die Zielgruppen an.
+
+![Zielgruppen-Manager](assets/audiences-manager.png)
 
 ## Zielgruppenliste
 

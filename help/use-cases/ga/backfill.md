@@ -1,19 +1,19 @@
 ---
-title: Aufnehmen von historischen Daten aus Google Analytics in Adobe Experience Platform
+title: historische Daten von Google Analytics erfassen
 description: Erläutert die Verwendung von Adobe Customer Journey Analytics zur Aufnahme Ihrer Google Analytics-Daten in Adobe Experience Platform.
 exl-id: 314378c5-b1d7-4c74-a241-786198fa0218
 solution: Customer Journey Analytics
 feature: Use Cases
 role: Admin
-source-git-commit: 39e4c17336d3648cbf20cace535668d14510186f
+source-git-commit: 90d1c51c11f0ab4d7d61b8e115efa8257a985446
 workflow-type: tm+mt
-source-wordcount: '626'
-ht-degree: 90%
+source-wordcount: '618'
+ht-degree: 88%
 
 ---
 
 
-# Aufnehmen von historischen Daten aus Google Analytics in Adobe Experience Platform
+# historische Daten von Google Analytics erfassen
 
 Auf dieser Seite wird beschrieben, wie Sie Ihre historischen Google Analytics-Daten in Adobe Experience Platform als Datensatz erfassen und so in einer Datenansicht in Customer Journey Analytics auf diesen Datensatz verweisen können. Sie können die Schritte auf dieser Seite mit [der Konfiguration einer Google Analytics-Implementierung](streaming.md) kombinieren, wodurch ein sich wiederholender Datensatz generiert wird. Kombinieren Sie diesen historischen Datensatz mit dem Datensatz Ihrer aktuellen Implementierung, um in Customer Journey Analytics eine lückenlose Datenansicht mit sowohl aktuellen als auch aufgestockten Daten zu erhalten.
 

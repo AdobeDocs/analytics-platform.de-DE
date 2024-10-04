@@ -4,14 +4,16 @@ title: Balken und Balken gestapelt
 feature: Visualizations
 exl-id: a4458694-0c90-4e44-88d5-575737a61c36
 role: User
-source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
+source-git-commit: e8d9132ec9920d649f6694f02f987deadb93b77d
 workflow-type: tm+mt
-source-wordcount: '167'
-ht-degree: 16%
+source-wordcount: '174'
+ht-degree: 13%
 
 ---
 
-# Balken und Balken gestapelt
+# Balken (gestapelt)
+
+Die Balkenvisualisierung verfügt über eine standardmäßige und gestapelte Option.
 
 ## Balken {#bar}
 
@@ -38,7 +40,7 @@ Die Visualisierung ![GraphBarVertical](/help/assets/icons/GraphBarVertical.svg) 
 >[!CONTEXTUALHELP]
 >id="cja_workspace_barstacked_button"
 >title="Balken gestapelt"
->abstract="Erstellt eine Balkenvisualisierung, die verschiedene Werte aus einer oder mehreren gestapelten Metriken darstellt."
+>abstract="Erstellen Sie eine Balkenvisualisierung, um verschiedene Werte aus einer oder mehreren gestapelten Metriken darzustellen."
 
 <!-- markdownlint-enable MD034 -->
 

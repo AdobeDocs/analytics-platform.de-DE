@@ -1,17 +1,17 @@
 ---
-title: Erstellen von Hyperlinks in einer Freiformtabelle in Analysis Workspace
+title: Erstellen von Hyperlinks in einer Freiformtabelle
 description: Erfahren Sie, wie Sie Hyperlinks für Dimensionselemente in einer Freiformtabelle in Analysis Workspace erstellen.
 feature: Visualizations
 role: User
 exl-id: 24fc2d24-b8c2-4664-8b9c-beda284f9033
-source-git-commit: bc03cd75c03d41c5d0f8c2bc54bedc115b723211
+source-git-commit: 90d1c51c11f0ab4d7d61b8e115efa8257a985446
 workflow-type: tm+mt
-source-wordcount: '1609'
+source-wordcount: '1602'
 ht-degree: 1%
 
 ---
 
-# Erstellen von Hyperlinks für Dimensionen in einer Freiformtabelle
+# Erstellen von Hyperlinks in einer Freiformtabelle
 
 Sie können Hyperlinks für Dimensionselemente erstellen, damit sie in einer Freiformtabelle in Analysis Workspace angeklickt werden können.
 
@@ -31,9 +31,9 @@ Diese Funktion ist besonders beim Erstellen von Hyperlinks für die folgenden Ar
 
 +++
 
-## Erstellen von Hyperlinks für ein oder mehrere Dimensionselemente
+## Erstellen von Hyperlinks
 
-Beachten Sie beim Erstellen von Hyperlinks für Dimensionselemente Folgendes:
+Beachten Sie Folgendes, wenn Sie Hyperlinks für ein oder mehrere Dimensionselemente erstellen:
 
 * Die von Ihnen erstellten Hyperlinks werden in der Freiformtabelle im Analysis Workspace-Projekt gespeichert. Hyperlinks bleiben nicht bestehen, wenn Sie dieselbe Dimension oder dieselben Dimensionselemente in einer anderen Tabelle oder in einem anderen Projekt verwenden.
 
