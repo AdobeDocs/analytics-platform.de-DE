@@ -5,10 +5,10 @@ title: Übersicht über Projekte
 feature: Workspace Basics
 exl-id: 2eeb615c-57a1-4469-8d4a-8a61956bd6e6
 role: User
-source-git-commit: 97b831d7eee477ee7ef0bf8ae65e6a415d243464
+source-git-commit: 1dff53e244e5d231e7075ce087705e33e0978096
 workflow-type: tm+mt
-source-wordcount: '1627'
-ht-degree: 6%
+source-wordcount: '1628'
+ht-degree: 7%
 
 ---
 
@@ -78,21 +78,21 @@ Bewegen Sie den Mauszeiger über eine Spaltenüberschrift, um ![ChevronDown](/he
 
 Sie können Aktionen für ein oder mehrere Projekte über das Kontextmenü ![Mehr](/help/assets/icons/More.svg) oder die blaue Aktionsleiste ausführen.
 
-| Aktion | Beschreibung |
-|---|---|
-| ![CrossSize75](/help/assets/icons/CrossSize75.svg) **[!UICONTROL *x *selected]** | Heben Sie die Auswahl der ausgewählten Projekte und Ordner auf und entfernen Sie die blaue Aktionsleiste. |
-| ![Löschen](/help/assets/icons/Delete.svg) **[!UICONTROL Löschen]** | Löschen Sie ein oder mehrere Projekte oder Ordner. Sie werden zur Bestätigung aufgefordert. |
-| ![share](/help/assets/icons/ShareAlt.svg) **[!UICONTROL share]** | Freigeben eines Projekts. Weitere Informationen finden Sie unter [Projekt freigeben](/help/analysis-workspace/curate-share/share-projects.md) . |
-| ![Bearbeiten](/help/assets/icons/Edit.svg) Umbenennen | Benennen Sie ein Projekt um. Öffnet das Dialogfeld **[!UICONTROL Umbenennen: *Projektname *]**. Geben Sie einen neuen Namen ein und wählen Sie**[!UICONTROL Speichern ]**aus. |
-| ![Kopieren](/help/assets/icons/Copy.svg) **[!UICONTROL Kopieren]** | Kopieren Sie ein oder mehrere Projekte. Das Projekt erhält denselben Namen und das Suffix `(Copy)`. |
-| ![PinOnff](/help/assets/icons/PinOff.svg) **[!UICONTROL Pin]** oder **[!UICONTROL Unpin]** | Ein oder mehrere Projekte oder Ordner anheften oder entsperren. Angeheftete Projekte und Ordner werden oben in der Liste angezeigt und ignorieren die von Ihnen angegebene Sortierreihenfolge. |
-| ![arrowUp](/help/assets/icons/ArrowUp.svg) **[!UICONTROL Move up]** | Verschieben Sie ein gebundenes Projekt oder einen Ordner in der Projektliste nach oben. |
-| ![PfeilDown](/help/assets/icons/ArrowDown.svg) **[!UICONTROL Nach unten verschieben]** | Verschieben Sie ein gebundenes Projekt oder einen Ordner in die Projektliste. |
-| ![Beschriftung](/help/assets/icons/Label.svg) **[!UICONTROL Tag]** | Taggen Sie ein oder mehrere Projekte oder Ordner. Das Dialogfeld **[!UICONTROL Komponenten taggen]** wird angezeigt, um ein oder mehrere Tags auszuwählen. Wählen Sie **[!UICONTROL Speichern]** aus, um die Tags für die ausgewählten Projekte oder Ordner zu speichern. |
-| ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) **[!UICONTROL Approve]** or **[!UICONTROL Unapprove]** | Genehmigen oder deaktivieren Sie ein Projekt. Nur Administratoren können Projekte genehmigen. |
-| ![FileCSV](/help/assets/icons/FileCSV.svg) **[!UICONTROL Export CSV]** | Exportieren Sie die ausgewählten Projekte in eine CSV-Datei mit dem Namen &quot;`Project List.csv`&quot;. |
-| ![ProjectAdd](/help/assets/icons/ProjectAdd.svg) **[!UICONTROL Projekte hinzufügen]** | Fügen Sie einem ausgewählten Ordner ein oder mehrere Projekte hinzu. In **[!UICONTROL Projekte hinzufügen]** können Sie ein oder mehrere Projekte auswählen. Wählen Sie **[!UICONTROL Hinzufügen]** aus, um die Projekte zum Ordner hinzuzufügen. Weitere Informationen finden Sie unter [Hinzufügen von Projekten zu Ordnern](workspace-folders/add-projects.md#from-inside-a-folder) . |
-| ![FolderAddTo](/help/assets/icons/FolderAddTo.svg) **[!UICONTROL Move to]** | Verschieben Sie ein oder mehrere ausgewählte Projekte in einen Ordner. Wählen Sie in &quot;**[!UICONTROL Ordner auswählen]**&quot;den Ordner aus, in den das ausgewählte Projekt verschoben werden soll, und wählen Sie &quot;**[!UICONTROL Verschieben]**&quot;. Weitere Informationen finden Sie unter [Hinzufügen von Projekten zu Ordnern](workspace-folders/add-projects.md#from-the-project-list) . |
+| Symbol | Aktion | Beschreibung |
+|:---:| ---|---|
+| ![CrossSize75](/help/assets/icons/Close.svg) | **[!UICONTROL *x *selected]** | Heben Sie die Auswahl der ausgewählten Projekte und Ordner auf und entfernen Sie die blaue Aktionsleiste. |
+| ![Löschen](/help/assets/icons/Delete.svg) | **[!UICONTROL Löschen]** | Löschen Sie ein oder mehrere Projekte oder Ordner. Sie werden zur Bestätigung aufgefordert. |
+| ![Freigeben](/help/assets/icons/ShareAlt.svg) | **[!UICONTROL Freigeben]** | Freigeben eines Projekts. Weitere Informationen finden Sie unter [Projekt freigeben](/help/analysis-workspace/curate-share/share-projects.md) . |
+| ![Bearbeiten](/help/assets/icons/Edit.svg) | **[!UICONTROL Umbenennen]** | Benennen Sie ein Projekt um. Öffnet das Dialogfeld **[!UICONTROL Umbenennen: *Projektname *]**. Geben Sie einen neuen Namen ein und wählen Sie**[!UICONTROL Speichern ]**aus. |
+| ![Kopieren](/help/assets/icons/Copy.svg) | **[!UICONTROL Kopieren]** | Kopieren Sie ein oder mehrere Projekte. Das Projekt erhält denselben Namen und das Suffix `(Copy)`. |
+| ![PinOnff](/help/assets/icons/PinOff.svg) | **[!UICONTROL Pin]** oder **[!UICONTROL Unpin]** | Ein oder mehrere Projekte oder Ordner anheften oder entsperren. Angeheftete Projekte und Ordner werden oben in der Liste angezeigt und ignorieren die von Ihnen angegebene Sortierreihenfolge. |
+| ![arrowUp](/help/assets/icons/ArrowUp.svg) | **[!UICONTROL Nach oben verschieben]** | Verschieben Sie ein gebundenes Projekt oder einen Ordner in der Projektliste nach oben. |
+| ![ArrowDown](/help/assets/icons/ArrowDown.svg) | **[!UICONTROL Nach unten verschieben]** | Verschieben Sie ein gebundenes Projekt oder einen Ordner in die Projektliste. |
+| ![Beschriftung](/help/assets/icons/Label.svg) | **[!UICONTROL Tag]** | Taggen Sie ein oder mehrere Projekte oder Ordner. Das Dialogfeld **[!UICONTROL Komponenten taggen]** wird angezeigt, um ein oder mehrere Tags auszuwählen. Wählen Sie **[!UICONTROL Speichern]** aus, um die Tags für die ausgewählten Projekte oder Ordner zu speichern. |
+| ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | **[!UICONTROL Genehmigen]** oder **[!UICONTROL Nicht genehmigen]** | Genehmigen oder deaktivieren Sie ein Projekt. Nur Administratoren können Projekte genehmigen. |
+| ![FileCSV](/help/assets/icons/FileCSV.svg) | **[!UICONTROL CSV exportieren]** | Exportieren Sie die ausgewählten Projekte in eine CSV-Datei mit dem Namen &quot;`Project List.csv`&quot;. |
+| ![ProjectAdd](/help/assets/icons/ProjectAdd.svg) | **[!UICONTROL Projekte hinzufügen]** | Fügen Sie einem ausgewählten Ordner ein oder mehrere Projekte hinzu. In **[!UICONTROL Projekte hinzufügen]** können Sie ein oder mehrere Projekte auswählen. Wählen Sie **[!UICONTROL Hinzufügen]** aus, um die Projekte zum Ordner hinzuzufügen. Weitere Informationen finden Sie unter [Hinzufügen von Projekten zu Ordnern](workspace-folders/add-projects.md#from-inside-a-folder) . |
+| ![FolderAddTo](/help/assets/icons/FolderAddTo.svg) | **[!UICONTROL Verschieben nach]** | Verschieben Sie ein oder mehrere ausgewählte Projekte in einen Ordner. Wählen Sie in &quot;**[!UICONTROL Ordner auswählen]**&quot;den Ordner aus, in den das ausgewählte Projekt verschoben werden soll, und wählen Sie &quot;**[!UICONTROL Verschieben]**&quot;. Weitere Informationen finden Sie unter [Hinzufügen von Projekten zu Ordnern](workspace-folders/add-projects.md#from-the-project-list) . |
 
 
 

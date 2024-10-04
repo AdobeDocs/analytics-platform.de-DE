@@ -3,9 +3,9 @@ description: Erfahren Sie, wie sich Warnhinweise beim Customer Journey Analytics
 title: Customer Journey Analytics und Adobe Analytics zum Vergleich von Warnhinweisen
 feature: Workspace Basics
 role: User, Admin
-source-git-commit: 8f3b30ca6d20d633669d7e9180884c24e0b9a52e
+source-git-commit: 1dff53e244e5d231e7075ce087705e33e0978096
 workflow-type: tm+mt
-source-wordcount: '560'
+source-wordcount: '569'
 ht-degree: 5%
 
 ---
@@ -56,9 +56,8 @@ In Adobe Analytics sind die folgenden Optionen verfügbar:
 
 * Öffnen Sie ein Projekt in Analysis Workspace und wählen Sie dann **[!UICONTROL Komponenten]** > **[!UICONTROL Warnhinweis erstellen]** aus.
 
-* Öffnen Sie ein Projekt in Analysis Workspace und verwenden Sie dann die folgende Verknüpfung:
+* Öffnen Sie ein Projekt in Analysis Workspace und verwenden Sie dann den folgenden Tastaturbefehl: **[!UICONTROL *Strg *]**+**[!UICONTROL * Umschalttaste *]** + **[!UICONTROL *a *]**(Windows) oder**[!UICONTROL * Befehl *]** + **[!UICONTROL *Umschalttaste *]**+**[!UICONTROL * a *]** (macOS).
 
-  `ctrl (or cmd) + shift + a`
 
 
 

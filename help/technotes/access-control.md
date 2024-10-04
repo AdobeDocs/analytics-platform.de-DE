@@ -6,9 +6,9 @@ feature: Basics
 exl-id: c258fa39-c0b6-45a1-8547-79516c15a215
 mini-toc-levels: 3
 role: Admin
-source-git-commit: 664576605b8be098a751609536e388c304c65513
+source-git-commit: 8676497c9341e3ff74d1b82ca79bc1e73caf514f
 workflow-type: tm+mt
-source-wordcount: '1461'
+source-wordcount: '1469'
 ht-degree: 22%
 
 ---
@@ -117,6 +117,7 @@ Die Registerkarte **[!UICONTROL Berechtigungen]** ist Teil jedes Produktprofils 
 | [!UICONTROL Berichterstellungs-Tools] | [!UICONTROL Filter-Erstellung] | Ermöglicht Benutzern das Erstellen von [Filtern](/help/components/filters/filters-overview.md). Benutzer können nur die von ihnen erstellten Filter oder die für sie freigegebenen Filter taggen, freigeben, löschen, umbenennen, genehmigen oder deren Genehmigung aufheben. |
 | [!UICONTROL Berichterstellungs-Tools] | [!UICONTROL Labs-Zugriff] | Benutzer können auf die Registerkarte [Labs](/help/labs/labs.md) im Customer Journey Analytics zugreifen. |
 | [!UICONTROL Berichterstellungs-Tools] | [!UICONTROL Anmerkungserstellung] | Ermöglicht Benutzern das Erstellen von [Anmerkungen](/help/components/annotations/overview.md). Benutzer können nur die Anmerkungen, die sie erstellen, oder für sie freigegebene Anmerkungen taggen, freigeben, löschen und umbenennen. |
+| [!UICONTROL Berichterstellungs-Tools] | [!UICONTROL Zielgruppenansicht] | Benutzer können [Zielgruppen](/help/components/audiences/audiences-overview.md) anzeigen. |
 | [!UICONTROL Berichterstellungs-Tools] | [!UICONTROL Zielgruppenerstellung] | Ermöglicht Benutzern das Erstellen von [Zielgruppen](/help/components/audiences/audiences-overview.md). |
 | [!UICONTROL Berichterstellungs-Tools] | [!UICONTROL Zugriff auf Auditprotokolle] | Erzwingen Sie die Berechtigungsprüfung für die Benutzeroberfläche der [API](https://developer.adobe.com/cja-apis/docs/endpoints/auditlogs/) und der Prüfprotokolle. |
 | [!UICONTROL Berichterstellungs-Tools] | [!UICONTROL Projektlinks für jedermann freigeben] | Benutzer können [Projekte für alle freigeben.](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/curate-share/share-projects) |

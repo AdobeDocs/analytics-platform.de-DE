@@ -4,14 +4,14 @@ description: Erfahren Sie mehr über das Konzept der Zielgruppenveröffentlichun
 exl-id: 30404bfc-0ee7-4f01-842c-7e6156dc0b45
 feature: Audiences
 role: User, Admin
-source-git-commit: 4d71aaaaa0ac0162588dd6767e6c6209676dfc18
+source-git-commit: 1dff53e244e5d231e7075ce087705e33e0978096
 workflow-type: tm+mt
-source-wordcount: '493'
-ht-degree: 50%
+source-wordcount: '506'
+ht-degree: 42%
 
 ---
 
-# Übersicht über die Veröffentlichung von Customer Journey Analytics-Zielgruppen
+# Übersicht über die Zielgruppenveröffentlichung
 
 Sie können jetzt Zielgruppen erstellen und veröffentlichen, die im Customer Journey Analytics in [Echtzeit-Kundenprofil](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=de) in Adobe Experience Platform gefunden werden, um sie für Kunden-Targeting und Personalisierung zu nutzen.
 
@@ -31,15 +31,15 @@ Die Zielgruppen, die Sie in Customer Journey Analytics erstellen, müssen nicht 
 
 **Filter**: Ein Regelsatz, mit dem bei der Auswertung eines Datensatzes über einen bestimmten Zeitraum eine Teilmenge von Daten erzeugt wird. Bei der Erstellung einer Zielgruppe kann ein Filter verwendet werden, wenn auch andere unterstützende Services genutzt werden. Filter werden im Customer Journey Analytics definiert und gepflegt.
 
-**Filter** versus **Segmente**: Customer Journey Analytics verwendet nicht das Konzept &quot;Segmente&quot;. Stattdessen wird &quot;Filter&quot;verwendet. Bei beiden handelt es sich zwar um einen Regelsatz, der eine ähnliche Logik enthalten kann, das erzeugte Ergebnis ist jedoch ein anderes. Ein Filter wird verwendet, um einen Datensatz für Analysezwecke einzugrenzen. Ein Segment wird verwendet, um eine Liste von Identitäten zu erstellen, die zur Aktivierung verwendet werden können. Segmente erzeugen Zielgruppen im Echtzeit-Kundenprofil, Filter (allein) dagegen nicht. Customer Journey Analytics Audience Publishing ist der Prozess, mit dem wir einen Customer Journey Analytics-Filter verwenden, um eine Zielgruppe zu erstellen, die vom Echtzeit-Kundenprofil genutzt werden kann.
+**Filter** versus **Segmente**: Customer Journey Analytics verwendet nicht das Konzept von *Segmenten* - stattdessen verwendet es *Filter*. Bei beiden handelt es sich zwar um einen Regelsatz, der eine ähnliche Logik enthalten kann, das erzeugte Ergebnis ist jedoch ein anderes. Ein Filter wird verwendet, um einen Datensatz für Analysezwecke einzugrenzen. Ein Segment wird verwendet, um eine Liste von Identitäten zu erstellen, die zur Aktivierung verwendet werden können. Segmente erzeugen Zielgruppen im Echtzeit-Kundenprofil, Filter (allein) dagegen nicht. Customer Journey Analytics Audience Publishing ist der Prozess, mit dem wir einen Customer Journey Analytics-Filter verwenden, um eine Zielgruppe zu erstellen, die vom Echtzeit-Kundenprofil genutzt werden kann.
 
 ## Zugriffsberechtigung
 
-* Administratoren erhalten automatisch die Berechtigung **[!UICONTROL Zielgruppenveröffentlichung]** in Adobe Admin Console.
+* Administratoren erhalten in Adobe Admin Console automatisch die Berechtigung **[!UICONTROL Zielgruppenveröffentlichung]** .
 
-* Administratoren können diese Berechtigung für einzelne Benutzer erteilen.
+* Administratoren und Produktprofiladministratoren können einzelnen Benutzern die Berechtigung **[!UICONTROL Zielgruppenerstellung]** und **[!UICONTROL Zielgruppenansicht]** erteilen. Weitere Informationen finden Sie unter [Zugriffskontrolle auf Benutzerebene](/help/technotes/access-control.md#user-level-access) .
 
-* Admins benötigen außerdem die Berechtigung **[!UICONTROL Profile verwalten]** in Adobe Experience Platform.
+* Administratoren benötigen außerdem die Berechtigung **[!UICONTROL Profile verwalten]** in Adobe Experience Platform.
 
 ## Data Governance und Einverständnis
 
