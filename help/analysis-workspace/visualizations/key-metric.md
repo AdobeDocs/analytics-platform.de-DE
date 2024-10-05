@@ -4,9 +4,9 @@ title: Zusammenfassung einer Schlüsselmetrik
 feature: Visualizations
 exl-id: ef606c53-b370-419a-904b-573ee6d70a8d
 role: User
-source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
+source-git-commit: 1dff53e244e5d231e7075ce087705e33e0978096
 workflow-type: tm+mt
-source-wordcount: '585'
+source-wordcount: '584'
 ht-degree: 35%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 35%
 >[!CONTEXTUALHELP]
 >id="cja_workspace_keymetricsummary_button"
 >title="Zusammenfassung einer Schlüsselmetrik"
->abstract="Erstellen Sie eine Visualisierung, die einer Kombination aus den Diagrammen für Zeilen-, Zusammenfassungsänderung und Zusammenfassungsnummer entspricht. Verwenden Sie diese Visualisierung, um zu vergleichen, wie wichtige Metriken zwischen zwei Zeiträumen Trend verfolgen."
+>abstract="Erstellen Sie eine Visualisierung, die aus den Diagrammen für Zeilen-, Zusammenfassungsänderung und Zusammenfassungsnummer besteht. Verwenden Sie diese Visualisierung, um zu vergleichen, wie wichtige Metriken zwischen zwei Zeiträumen Trend verfolgen."
 
 <!-- markdownlint-enable MD034 -->
 
