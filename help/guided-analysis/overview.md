@@ -5,10 +5,10 @@ keywords: Produktanalysen
 exl-id: 1ac8157f-87e8-4d98-a2ca-f6beb68d9d6b
 feature: Guided Analysis
 role: User
-source-git-commit: df0fd0af8a22c84705c3dea11065132359dd80ff
+source-git-commit: c403a660e1d60b1ee2e5552d615dffc2b52930a4
 workflow-type: tm+mt
-source-wordcount: '1444'
-ht-degree: 83%
+source-wordcount: '1454'
+ht-degree: 82%
 
 ---
 
@@ -84,11 +84,11 @@ Geführte Analyseansichten sind in Customer Journey Analytics-Paketen auf folgen
 
 | Paket | Verfügbare Ansichten |
 | --- | --- |
-| [!UICONTROL CJA-Add-ons] | Trends: Nutzung, Trends: Häufigkeit, Trichter: Reibung, Trichter: Konversions-Trends, Bindung: Bindungsraten, Benutzerwachstum: Aktiv, Benutzerwachstum: Nettowachstum |
-| [!UICONTROL CJA Foundation] | Trends: Nutzung |
-| [!UICONTROL CJA Select] | Foundation-Ansichten + Trends: Häufigkeit, Trichter: Funktion, Trichter: Konversionstrends, Treue: Treueraten, Benutzerwachstum: Aktiv, Benutzerwachstum: Nettowachstum |
-| [!UICONTROL CJA Prime] | Ansichten auswählen + Benutzerstream: Timeline, Funktionsmatrix: Interaktion, Auswirkung: Veröffentlichung, Auswirkung: Erste Verwendung |
-| [!UICONTROL CJA Ultimate] | Prime-Ansichten |
+| [!UICONTROL Customer Journey Analytics-Add-ons] | Trends: Nutzung, Trends: Häufigkeit, Trichter: Reibung, Trichter: Konversions-Trends, Bindung: Bindungsraten, Benutzerwachstum: Aktiv, Benutzerwachstum: Nettowachstum |
+| [!UICONTROL Customer Journey Analytics Foundation] | Trends: Nutzung |
+| [!UICONTROL Customer Journey Analytics Select] | Foundation-Ansichten + Trends: Häufigkeit, Trichter: Funktion, Trichter: Konversionstrends, Treue: Treueraten, Benutzerwachstum: Aktiv, Benutzerwachstum: Nettowachstum |
+| [!UICONTROL Customer Journey Analytics Prime] | Ansichten auswählen + Benutzerstream: Timeline, Funktionsmatrix: Interaktion, Auswirkung: Veröffentlichung, Auswirkung: Erste Verwendung |
+| [!UICONTROL Customer Journey Analytics Ultimate] | Prime-Ansichten |
 
 {style="table-layout:auto"}
 
