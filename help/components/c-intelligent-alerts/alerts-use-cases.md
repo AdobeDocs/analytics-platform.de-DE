@@ -3,14 +3,14 @@ description: Anwendungsbeispiele für Warnhinweise.
 title: Anwendungsfälle für Warnhinweise
 feature: Workspace Basics
 role: User, Admin
-source-git-commit: 6a279ac39e6b94200ff93ac1a3796d202e6349c7
+source-git-commit: df0fd0af8a22c84705c3dea11065132359dd80ff
 workflow-type: tm+mt
 source-wordcount: '105'
 ht-degree: 0%
 
 ---
 
-# Warnhinweise - Anwendungsfälle
+# Anwendungsfälle für Warnhinweise
 
 Sie können Warnhinweise wie in [Warnhinweise erstellen](/help/components/c-intelligent-alerts/alert-builder.md) beschrieben erstellen.
 
@@ -20,11 +20,6 @@ Die folgenden Abschnitte veranschaulichen Beispielanwendungsfälle, die bei der 
 
 Sie können einfache Warnhinweise mithilfe von Filtern erstellen. Definieren Sie beispielsweise einen Warnhinweis zur Anzahl der Sitzungen für Personen, die die Startseite über eine mobile App-Sitzung besuchen.
 
-<!-- 
-
-Update screenshots for better readability.
-
- -->
 
 ![](assets/alerts-example1.png)
 

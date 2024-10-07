@@ -1,17 +1,17 @@
 ---
 description: Das Datenwörterbuch in Analysis Workspace ermöglicht es Benutzenden, die verschiedenen Komponenten in Analysis Workspace zu katalogisieren und im Auge zu behalten, einschließlich ihres Verwendungszwecks, welche genehmigt sind, welche Duplikate sind usw.
-title: Datenwörterbuch anzeigen
+title: Komponenteninformationen anzeigen
 feature: Components
 role: User, Admin
 exl-id: 1e538679-12e0-487c-917f-2ff2f1cc8436
-source-git-commit: de04792035aa7c235751019ee9f9fe5b74b9b102
+source-git-commit: df0fd0af8a22c84705c3dea11065132359dd80ff
 workflow-type: tm+mt
-source-wordcount: '320'
-ht-degree: 75%
+source-wordcount: '315'
+ht-degree: 73%
 
 ---
 
-# Komponenteninformationen im Datenwörterbuch anzeigen
+# Komponenteninformationen anzeigen
 
 Mit dem Datenwörterbuch können Sie Informationen über eine Komponente anzeigen, einschließlich der Komponentenbeschreibung, ähnlicher Komponenten, anderer Komponenten, mit denen eine Komponente häufig verwendet wird, und mehr.
 

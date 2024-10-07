@@ -1,17 +1,17 @@
 ---
 description: Das Datenwörterbuch in Analysis Workspace ermöglicht es Benutzenden, die verschiedenen Komponenten in Analysis Workspace zu katalogisieren und im Auge zu behalten, einschließlich ihres Verwendungszwecks, welche genehmigt sind, welche Duplikate sind usw.
-title: Einträge im Datenwörterbuch bearbeiten
+title: Bearbeiten von Komponenteneinträgen
 feature: Components
 role: Admin
 exl-id: 2d232811-e34a-4667-819c-cbe2a3e72702
-source-git-commit: de04792035aa7c235751019ee9f9fe5b74b9b102
+source-git-commit: df0fd0af8a22c84705c3dea11065132359dd80ff
 workflow-type: tm+mt
-source-wordcount: '324'
-ht-degree: 60%
+source-wordcount: '317'
+ht-degree: 57%
 
 ---
 
-# Bearbeiten von Komponenteneinträgen im Datenwörterbuch
+# Bearbeiten von Komponenteneinträgen
 
 Customer Journey Analytics-Administratoren können Komponenteneinträge im Datenwörterbuch für eine bestimmte Datenansicht bearbeiten. Alle vorgenommenen Änderungen sind für alle Benutzer der Datenansicht sichtbar.
 
