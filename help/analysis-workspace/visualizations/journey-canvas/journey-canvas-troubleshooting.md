@@ -5,9 +5,9 @@ feature: Visualizations
 role: User
 hide: true
 hidefromtoc: true
-source-git-commit: 2fc2bd660b017140b8dfa660cf71054af9efb87e
+source-git-commit: cbe713c08269fd3cc4e1076181020ff3fdc947b3
 workflow-type: tm+mt
-source-wordcount: '1271'
+source-wordcount: '1287'
 ht-degree: 0%
 
 ---
@@ -46,9 +46,9 @@ Die in den folgenden Szenarien verwendete Journey wird mit den folgenden Einstel
 
 * **[!UICONTROL Ereignis]** wird als primäre Metrik festgelegt
 
-#### Szenario 1: Benutzer A folgt dem Journey-Pfad in der ersten Sitzung, dann nur späteren Knoten in einer nachfolgenden Sitzung
+#### Szenario 1: Benutzer A folgt dem Journey-Pfad in der ersten Sitzung. In einer nachfolgenden Sitzung verfügt der Benutzer über ein Ereignis, das nur mit einem späteren Knoten übereinstimmt.
 
-Angenommen, Benutzer A besucht die Site und schließt die Journey ab (Knoten 1: &quot;Site besuchen&quot; > Knoten 2: &quot;Produkt A anzeigen&quot; > Knoten 3: &quot;Auschecken&quot;). Da Benutzer A die Journey abgeschlossen hat, wird ein Ereignis auf jedem Knoten der Journey gezählt.
+Angenommen, Benutzer A besucht die Site und schließt die Journey ab (Knoten 1: &quot;Site besuchen&quot; > Knoten 2: &quot;Produkt A anzeigen&quot; > Knoten 3: &quot;Auschecken&quot;). Da Benutzer A über ein Ereignis verfügte, das jedem Knoten der Journey in der richtigen Reihenfolge entsprach, wird ein Ereignis auf jedem Knoten der Journey gezählt.
 
 Nehmen wir nun an, dass Benutzer A die Site in einer späteren Sitzung erneut besucht. Da Benutzer A die Journey bereits in einer vorherigen Sitzung durch Befolgen des Journey-Pfads abgeschlossen hat, bedeutet dies, dass jedes Mal, wenn Benutzer A über ein Ereignis verfügt, das mit einem beliebigen Knoten im Journey übereinstimmt - selbst wenn Benutzer A in der aktuellen Sitzung nicht dem Pfad der Journey gefolgt ist - ein Ereignis auf den entsprechenden Knoten im Journey gezählt wird. Wenn beispielsweise Benutzer A auscheckt, wird ein Ereignis auf dem Knoten &quot;Auschecken&quot;gezählt. Dies kann zu einem höheren Prozentsatz und einer höheren Zahl auf dem Knoten &quot;Checkout&quot;als auf dem vorherigen Knoten &quot;Produkt A anzeigen&quot;führen.
 
@@ -58,11 +58,11 @@ Wenn die Behältereinstellung auf &quot;Sitzung&quot;gesetzt worden wäre, wäre
 
 <!-- The time allotted for users to move along the path is determined by the container setting. Because "Person" is selected as the container setting in this example, people who followed the journey's path in one session (moving from Node 1 to Node 2 and to Node 3) met the criteria of the journey. On any subsequent visits to the site, any event they have that matches any node on the journey is counted on that node. -->
 
-#### Szenario 2 - Benutzer B fällt aus der Journey
+#### Szenario 2: Benutzer B verlässt die Journey
 
 Angenommen, Benutzer B besucht die Site und schließt die Journey nicht ab (besucht die Site, zeigt Produkt B an und checkt dann aus). In diesem Fall wird für den Startknoten &quot;Journey-Site besuchen&quot;ein Ereignis gezählt, aber für die verbleibenden Knoten wird ein-Ereignis nicht gezählt und Benutzer B verlässt die Journey. Auch wenn Benutzer B ausgecheckt ist, wird ein Ereignis nicht auf dem dritten Knoten (&quot;Checkout&quot;) gezählt, da Benutzer B die Journey nicht vor dem Auschecken durch Anzeigen von Produkt A abgeschlossen hat.
 
-Dies liegt daran, dass Ereignisse nur dann für jeden Knoten gezählt werden, wenn Benutzer dem Journey &quot;Endlicher Pfad&quot;folgen. Das bedeutet, dass Ereignisse nur gezählt werden, wenn der Benutzer schließlich von einem Knoten zum anderen wechselt, unabhängig davon, ob Ereignisse zwischen den beiden Knoten auftreten.
+Dies liegt daran, dass Ereignisse nur dann für jeden Knoten gezählt werden, wenn die Benutzer dem Journey &quot;Endlicher Pfad&quot;folgen. Das bedeutet, dass Ereignisse nur gezählt werden, wenn die Person schließlich von einem Knoten zum anderen verschoben wurde, unabhängig von Ereignissen, die zwischen den beiden Knoten auftreten.
 
 ### Die Journey hat mehrere Pfade, die zu einem einzelnen Knoten konvertieren
 
