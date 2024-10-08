@@ -4,9 +4,9 @@ description: Landingpage von Customer Journey Analytics.
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 7f67c497-386b-4442-a502-6b492f35c6e6
-source-git-commit: 0325b48e7144ac3e334ab57448b9adba9fcea21d
+source-git-commit: ba7b16bd7bae75c3ecb72797236405519d361921
 workflow-type: tm+mt
-source-wordcount: '878'
+source-wordcount: '820'
 ht-degree: 96%
 
 ---
@@ -29,9 +29,16 @@ Der KI-Assistent ist eine Dialogerfahrung, die es Fachleuten ermöglicht, Aufgab
 
 [![Bild](assets/learn-more-button.svg)](/help/ai-assistant.md)
 
+
+>[!TAB  Geführte Analyse]
+
+Geführte Analysen sind jetzt direkt in Analysis Workspace verfügbar, sodass Benutzer Dashboards mit umfassenden Einblicken aus Bereichen, Visualisierungen und geführten Analysen erstellen können.
+
+[![Bild](assets/learn-more-button.svg)](/help/guided-analysis/overview.md)
+
 >[!TAB Warnhinweise]
 
-Warnhinweise ermöglichen es Ihnen, über geänderte Prozentsätze oder bestimmte Datenpunkte benachrichtigt zu werden. Sie können eine Vorschau des Triggers eines Warnhinweises anzeigen, Warnhinweise per E-Mail oder SMS versenden, gestapelte Warnhinweise erstellen und vieles mehr.
+Warnhinweise ermöglichen es Ihnen, sich über geänderte Prozentsätze oder bestimmte Datenpunkte benachrichtigen zu lassen. Beispielsweise können Sie eine Vorschau anzeigen, wie oft ein Warnhinweis ausgelöst wird, Warnhinweise per E-Mail oder SMS versenden oder gestapelte Warnhinweise erstellen.
 
 [![Bild](assets/learn-more-button.svg)](/help/components/c-intelligent-alerts/intelligent-alerts.md)
 
@@ -72,27 +79,6 @@ Die BI-Erweiterung ermöglicht SQL-Zugriff auf Datenansichten, die Sie in Custom
 
 *_Sie müssen mindestens über das Select-Paket verfügen, um die BI-Erweiterung verwenden zu können._*
 
-
-<!--
->[!TAB Improved Audience Publising] 
-
-Audiences that are published from Customer Journey Analytics are now available in the new **Audiences** section in Adobe Experience Platform. Audiences are now available in Experience Platform seconds after they are published from Customer Journey Analytics. Improved sorting and filter options in Experience Platform for Customer Journey Analytics audiences. 
-
-[![image](assets/learn-more-button.svg)](/help/components/audiences/publish.md)
-
--->
-
->[!TAB Prognose]
-
-Analysis Workspace bietet eine Prognose-Funktion, mit der eine standardmäßige oder berechnete Metrik mit beliebiger unterstützter Zeitgranularität (stündlich, täglich, wöchentlich, monatlich und jährlich) prognostiziert werden kann. Die Prognose-Funktion ist nur für zeitreihenbezogene Daten verfügbar.
-
-[![Bild](assets/learn-more-button.svg)](/help/analysis-workspace/c-forecast/forecasting.md)
-
->[!TAB Neue Dokumentation]
-
-Neue verfügbare Dokumentationsabschnitte enthalten folgende Themen:<ul><li>Anwendungsfall für Zusammenfassungsdaten und Anwendungsfall für B2B-Beispiel.</li><li>Upgrade von Adobe Analytics auf Customer Journey Analytics.</li><li>Anwendungsfälle für den Datenexport sowie die erforderlichen Experience Platform- und Customer Journey-Funktionen. </li></ul>Wählen Sie **[!UICONTROL Weitere Informationen]** aus, um mehr über diese und andere Aktualisierungen der Dokumentation zu erfahren.
-
-[![Bild](assets/learn-more-button.svg)](/help/release-notes/doc-changes.md)
 
 >[!ENDTABS]
 
