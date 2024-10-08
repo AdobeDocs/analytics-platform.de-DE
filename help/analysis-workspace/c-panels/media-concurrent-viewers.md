@@ -7,11 +7,11 @@ role: User
 source-git-commit: 1dff53e244e5d231e7075ce087705e33e0978096
 workflow-type: tm+mt
 source-wordcount: '1208'
-ht-degree: 36%
+ht-degree: 43%
 
 ---
 
-# Bedienfeld &quot;Gleichzeitige Medienbetrachter&quot; {#media-concurrent-viewers-panel}
+# Bedienfeld „Gleichzeitige Medienbetrachter“ {#media-concurrent-viewers-panel}
 
 <!-- markdownlint-disable MD034 -->
 
@@ -27,7 +27,7 @@ ht-degree: 36%
 >[!CONTEXTUALHELP]
 >id="cja_workspace_mediaconcurrentviewers_panel"
 >title="Gleichzeitige Medienbetrachter"
->abstract="Analysieren Sie gleichzeitige Betrachter im Zeitverlauf, sehen Sie Spitzenzeiten bei gleichzeitigen Ansichten oder unterteilen Sie die Ansichten und vergleichen Sie sie.<br/><br>**Granularität**: Wählen Sie einen Zeitraum aus, nach dem gleichzeitige Betrachter angezeigt werden sollen.<br/>**Bereichszusammenfassungsnummern**:<br/>Option, Zusammenfassungsnummern mit Datums- oder Uhrzeitdetails für jede Zeile anzuzeigen. Maximal zeigt Details für Spitzengleichzeitigkeit an. Das Minimum zeigt Details für den Tief an.<br/>**Aufschlüsselung nach Serie (optional)**: Schlüsseln Sie die Visualisierung nach Segmenten, Dimensionen, Dimensionselementen oder Datumsbereichen auf. Sie können bis zu 10 Zeilen gleichzeitig anzeigen. Aufschlüsselungen sind auf eine einzelne Ebene beschränkt."
+>abstract="Analysieren Sie gleichzeitige Betrachtende im Zeitverlauf, zeigen Sie Informationen zum maximalen gleichzeitigen Zugriff an oder schlüsseln Sie Daten auf und vergleichen Sie sie.<br/><br>**Granularität**: Wählen Sie aus, nach welchem Zeitraum gleichzeitige Betrachtende angezeigt werden sollen.<br/>**Zusammenfassende Zahlen der Bedienfelder**:<br/>Wählen Sie diese Option aus, um für jede Zeile zusammenfassende Zahlen mit Datums- oder Uhrzeitangaben anzuzeigen. „Maximum“ zeigt Details zum maximalen gleichzeitigen Zugriff an. „Minimum“ zeigt Details für die minimale Wiedergabedauer an.<br/>**Serienaufschlüsselung (optional)**: Schlüsseln Sie Visualisierungen nach Segmenten, Dimensionen, Dimensionselementen oder Datumsbereichen auf. Sie können jeweils bis zu 10 Zeilen anzeigen. Aufschlüsselungen sind auf eine einzelne Ebene beschränkt."
 
 <!-- markdownlint-enable MD034 -->
 

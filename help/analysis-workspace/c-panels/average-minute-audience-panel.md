@@ -7,17 +7,17 @@ exl-id: c55b5534-a9a6-47f1-8b43-c8c0b8686c53
 source-git-commit: 1dff53e244e5d231e7075ce087705e33e0978096
 workflow-type: tm+mt
 source-wordcount: '1796'
-ht-degree: 17%
+ht-degree: 27%
 
 ---
 
-# Zielgruppenbereich mit mittlerer Medienmindebene {#media-average-minute-audience-panel}
+# Bedienfeld „Zielgruppendurchschnitt pro Minute“ {#media-average-minute-audience-panel}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja_workspace_mediaminuteaverageaudience_button"
->title="Durchschnittliche Medienminuten-Audience"
+>title="Medien-Zielgruppendurchschnitt pro Minute"
 >abstract="Erstellen Sie ein Bedienfeld, um die durchschnittliche Minutenzielgruppe für bestimmte Inhalte oder über einen bestimmten Zeitraum zu analysieren."
 
 
@@ -27,10 +27,10 @@ ht-degree: 17%
 
 >[!CONTEXTUALHELP]
 >id="cja_workspace_mediaaverageminuteaudience_panel"
->title="Durchschnittliche Medienminuten-Audience"
->abstract="Zeigt die Leistung bestimmter Medieninhalte oder über einen benutzerdefinierten Zeitraum an.<br/><br/>**Allgemeine Parameter **<br/>**Berechnete Metrik für**: Wählen Sie die für den Bereich zu verwendende Metrik aus. Wählen Sie **Spezifischer Inhalt** aus, um die durchschnittliche Minutenzielgruppe für bestimmte Inhalte oder Ereignisse basierend auf der Inhaltsdauer zu analysieren. **Wählen Sie Benutzerdefinierter Zeitraum aus**, um zu analysieren, wie sich die durchschnittliche Minutenzielgruppe über einen benutzerdefinierten ausgewählten Zeitraum ändert.<br/>**Berichtsdimension**: Wählen Sie diese Option aus, um einen Bericht nach der Dimension **Videoname** der Dimension **Inhalts-ID** zu erstellen. Nur verfügbar, wenn Sie Spezifischen Inhalt als Metrik ausgewählt haben.<br/>**Granularität**: Wählen Sie die Granularität für die Berichterstellung aus. Nur verfügbar, wenn Sie als Metrik benutzerdefinierten Zeitraum ausgewählt haben.<br/>**Inhalt filtern nach (optional)**: Wählen Sie eine bestimmte Sendung, Staffel, Folge oder eine benutzerdefinierte Dimension aus, um den Inhalt zu filtern.<br/><br/>**Erweiterte Einstellungen **<br/>**Tabelleneinstellungen**: Wählen Sie aus, ob Berechnungswerte in der Tabelle angezeigt werden sollen.<br/>**Besuchszeitmetrik**: Wählen Sie aus, welche Besuchszeitmetrik Sie für die spezifische Inhaltsberechnung verwenden möchten. Nur verfügbar, wenn Sie Spezifischen Inhalt als Metrik ausgewählt haben."
->additional-url="https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/panels/average-minute-audience-panel#specific-content" text="Bestimmter Inhalt"
->additional-url="https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/panels/average-minute-audience-panel#custom-time-period" text="Benutzerdefinierter Zeitraum"
+>title="Medien-Zielgruppendurchschnitt pro Minute"
+>abstract="Zeigt die Leistung bestimmter Medieninhalte oder über einen benutzerdefinierten Zeitraum an.<br/><br/>**Allgemeine Parameter **<br/>**Metrik berechnen für**: Wählen Sie die für das Bedienfeld zu verwendende Metrik aus. Wählen Sie **Bestimmter Inhalt** aus, um den Zielgruppendurchschnitt pro Minute für bestimmte Inhalte oder Ereignisse basierend auf der Inhaltslänge zu analysieren. **Wählen Sie „Benutzerdefinierter Zeitraum“ aus**, um zu analysieren, wie sich der Zielgruppendurchschnitt pro Minute über einen benutzerdefinierten Zeitraum verändert.<br/>**Reporting-Dimension**: Wählen Sie diese Option aus, um einen Bericht nach der Dimension **Videoname** oder **Inhalts-ID** zu erstellen. Nur verfügbar, wenn Sie „Bestimmter Inhalt“ als Metrik ausgewählt haben.<br/>**Granularität**: Wählen Sie die Granularität für die Berichte aus. Nur verfügbar, wenn Sie „Benutzerdefinierter Zeitraum“ als Metrik ausgewählt haben.<br/>**Inhalt filtern nach (optional)**: Wählen Sie eine bestimmte Sendung, Staffel, Folge oder eine benutzerdefinierte Dimension aus, um den Inhalt zu filtern.<br/><br/>**Erweiterte Einstellungen **<br/>**Tabelleneinstellungen**: Legen Sie fest, ob Berechnungswerte in der Tabelle angezeigt werden sollen.<br/>**Besuchszeitmetrik**: Legen Sie fest, welche Besuchszeitmetrik für die Berechnung eines bestimmten Inhalts verwendet werden soll. Nur verfügbar, wenn Sie „Bestimmter Inhalt“ als Metrik ausgewählt haben."
+>additional-url="https://experienceleague.adobe.com/de/docs/analytics/analyze/analysis-workspace/panels/average-minute-audience-panel#specific-content" text="Bestimmter Inhalt"
+>additional-url="https://experienceleague.adobe.com/de/docs/analytics/analyze/analysis-workspace/panels/average-minute-audience-panel#custom-time-period" text="Benutzerdefinierter Zeitraum"
 
 <!-- markdownlint-enable MD034 -->
 

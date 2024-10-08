@@ -8,7 +8,7 @@ role: Admin
 source-git-commit: a236b2126c4b998b4d97caab014556e3ee3a9e83
 workflow-type: tm+mt
 source-wordcount: '8842'
-ht-degree: 16%
+ht-degree: 17%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 16%
 >[!CONTEXTUALHELP]
 >id="cja_dataview_derivedfields"
 >title="Abgeleitete Felder"
->abstract="Mit einem abgeleiteten Feld können Datenmanipulationen direkt über einen anpassbaren Regelgenerator definiert werden. Dieses abgeleitete Feld kann dann als Komponente (Metrik oder Dimension) im Arbeitsbereich verwendet oder weiterdefiniert und als Komponente in der Datenansicht eingesetzt werden."
+>abstract="Mit einem abgeleiteten Feld können Sie mithilfe eines anpassbaren Regel-Builders spontan Datenmanipulationen definieren. Anschließend können Sie dieses abgeleitete Feld als Komponente (Metrik oder Dimension) in Workspace verwenden oder in der Datenansicht als Komponente weiter definieren."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -403,7 +403,7 @@ Für jede unterstützte Funktion finden Sie im Folgenden Details zu:
 >[!CONTEXTUALHELP]
 >id="cja_dataview_derivedfields_casewhen"
 >title="Fall wenn"
->abstract="Diese Funktion bietet die Möglichkeit, Bedingungen basierend auf definierten Kriterien aus einem oder mehreren Feldern anzuwenden. Diese Kriterien werden dann verwendet, um die Werte in dem neuen, abgeleiteten Feld auf der Grundlage der Reihenfolge der Bedingungen zu definieren."
+>abstract="Diese Funktion bietet die Möglichkeit, Bedingungen anzuwenden, die auf definierten Kriterien aus einem oder mehreren Feldern basieren. Anhand dieser Kriterien werden dann die Werte im neuen abgeleiteten Feld auf Grundlage der Reihenfolge der Bedingungen definiert."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -643,7 +643,7 @@ Die folgenden Einschränkungen gelten und werden erzwungen, wenn *die Werte* und
 >[!CONTEXTUALHELP]
 >id="cja_dataview_derivedfields_classify"
 >title="Klassifizieren"
->abstract="Diese Funktion bietet die Möglichkeit, einen Satz von Werten zu definieren, die durch Texteingabe durch entsprechende Werte ersetzt werden."
+>abstract="Diese Funktion bietet die Möglichkeit, einen Satz von Werten zu definieren, die per Texteingabe durch entsprechende Werte ersetzt werden."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -788,7 +788,7 @@ Die folgenden zusätzlichen Funktionen sind in der Benutzeroberfläche der Regel
 >[!CONTEXTUALHELP]
 >id="cja_dataview_derivedfields_concatenate"
 >title="Verketten"
->abstract="Diese Funktion bietet die Möglichkeit, zwei oder mehr Felder, abgeleitete Felder oder von Benutzenden eingegebene Werte in einem einzigen Feld mit definierten Trennzeichen zu kombinieren"
+>abstract="Diese Funktion bietet die Möglichkeit, zwei oder mehr Felder, abgeleitete Felder oder benutzerseitig eingegebene Zeichenfolgenwerte in einem Feld mit definierten Trennzeichen zu kombinieren."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -875,7 +875,7 @@ Sie definieren ein abgeleitetes `Origin - Destination` -Feld. Verwenden Sie die 
 >[!CONTEXTUALHELP]
 >id="cja_dataview_derivedfields_deduplicate"
 >title="Deduplizieren"
->abstract="Mit dieser Funktion kann ein Feld so konfiguriert werden, dass es entweder auf Sitzungs- oder auf Personenebene nur Werte zählt, die sich nicht wiederholen. Außerdem kann mit einer Deduplizierungs-ID sichergestellt werden, dass auf der Grundlage einer bestimmten ID (z. B. einer Kauf-ID) nur ein Wert verwendet wird (entweder die erste oder die letzte Instanz)."
+>abstract="Diese Funktion bietet die Möglichkeit, ein Feld so zu konfigurieren, dass Werte nicht wiederholt auf Sitzungs- oder Personenebene gezählt werden. Darüber hinaus kann mit einer Deduplizierungs-ID sichergestellt werden, dass auf Grundlage einer bestimmten ID (z. B. einer Kauf-ID) nur ein Wert verwendet wird (entweder die erste oder die letzte Instanz)."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -963,14 +963,14 @@ Sie definieren ein neues abgeleitetes `Tracking Code (deduplicated)` -Feld. Mit 
 
 <!-- FIND AND REPLACE -->
 
-### Suchen und ersetzen {#find-and-replace}
+### Suchen und Ersetzen {#find-and-replace}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja_dataview_derivedfields_findandreplace"
 >title="Suchen und Ersetzen"
->abstract="Diese Funktion bietet die Möglichkeit, alle Werte in einem ausgewählten Feld zu finden und diese Werte durch einen anderen Wert in einem neuen, abgeleiteten Feld zu ersetzen."
+>abstract="Diese Funktion bietet die Möglichkeit, alle Werte in einem ausgewählten Feld per Suche zu ermitteln und diese Werte in einem neuen abgeleiteten Feld durch einen anderen Wert zu ersetzen."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -1050,7 +1050,7 @@ Sie definieren ein abgeleitetes `Email Marketing (updated)` -Feld. Sie verwenden
 >[!CONTEXTUALHELP]
 >id="cja_dataview_derivedfields_lookup"
 >title="Suche"
->abstract="Diese Funktion ermöglicht die Verwendung von Feldern aus einem Lookup-Datensatz unter Verwendung eines übereinstimmenden Schlüssels zwischen Datensätzen."
+>abstract="Diese Funktion bietet die Möglichkeit, Felder aus einem Lookup-Datensatz mit einem übereinstimmenden Schlüssel zwischen Datensätzen zu verwenden."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -1111,7 +1111,7 @@ Sie können schnell eine [!UICONTROL Suchfunktion] in den Regel-Builder einfüge
 >[!CONTEXTUALHELP]
 >id="cja_dataview_derivedfields_lowercase"
 >title="Kleinschreibung"
->abstract="Diese Funktion konvertiert den gesamten String-Text in Werte in Kleinbuchstaben."
+>abstract="Diese Funktion wandel die gesamte Zeichenkette in Kleinschreibung um."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -1172,7 +1172,7 @@ Sie definieren ein abgeleitetes `Product Names` -Feld. Mit der Funktion [!UICONT
 >[!CONTEXTUALHELP]
 >id="cja_dataview_derivedfields_math"
 >title="Math"
->abstract="Diese Funktion bietet die Möglichkeit, mathematische Operationen für ein Feld durchzuführen. Die Funktion kann zur Durchführung grundlegender Rechenoperationen wie Addition, Subtraktion, Multiplikation und Division verwendet werden."
+>abstract="Diese Funktion bietet die Möglichkeit, mathematische Operationen für ein Feld durchzuführen. Mit ihr lassen sich grundlegende Rechenoperationen wie Addition, Subtraktion, Multiplikation und Division ausführen."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -1263,7 +1263,7 @@ Verwenden Sie die Math-Funktion für trefferbasierte Berechnungen. Verwenden Sie
 >[!CONTEXTUALHELP]
 >id="cja_dataview_derivedfields_mergefields"
 >title="Felder zusammenführen"
->abstract="Diese Funktion bietet die Möglichkeit, Werte aus zwei verschiedenen Feldern zu übernehmen und ihre jeweiligen Werte in eine einzige Dimension aufzunehmen. Die Regel prüft zunächst, ob der erste Wert gesetzt ist. Wenn nicht, wird der zweite Wert verwendet und so weiter."
+>abstract="Diese Funktion bietet die Möglichkeit, Werte aus zwei verschiedenen Feldern in einer einzigen Dimension einzuschließen. Mithilfe der ersten Regel wird zunächst überprüft, ob der erste Wert festgelegt ist. Wenn nicht, wird der zweite Wert verwendet usw."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -1339,7 +1339,7 @@ Sie müssen denselben Feldtyp in einer Regel zum Zusammenführen von Feldern aus
 >[!CONTEXTUALHELP]
 >id="cja_dataview_derivedfields_nextprevious"
 >title="Weiter oder zurück"
->abstract="Diese Funktion bietet die Möglichkeit, den nächsten oder vorherigen Wert anzuzeigen, der für ein bestimmtes Feld erfasst wurde."
+>abstract="Diese Funktion bietet die Möglichkeit, den nächsten bzw. vorherigen Wert anzuzeigen, der für ein bestimmtes Feld erfasst wurde."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -1421,7 +1421,7 @@ Sie können nur Felder auswählen, die zur Tabelle &quot;Besuch&quot;oder &quot;
 >[!CONTEXTUALHELP]
 >id="cja_dataview_derivedfields_regexreplace"
 >title="Regulären Ausdruck ersetzen"
->abstract="Diese Funktion bietet die Möglichkeit, Teile einer Zeichenkette mithilfe regulärer Ausdrücke zu extrahieren."
+>abstract="Diese Funktion bietet die Möglichkeit, Teile einer Zeichenfolge mithilfe regulärer Ausdrücke zu extrahieren."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -1528,7 +1528,7 @@ Sie können diese Sequenzen im [!UICONTROL Ausgabeformat] beliebig oft und in be
 >[!CONTEXTUALHELP]
 >id="cja_dataview_derivedfields_split"
 >title="Split"
->abstract="Diese Funktion bietet die Möglichkeit, ein Feld anhand eines Trennzeichens in mehrere Felder aufzuteilen."
+>abstract="Diese Funktion bietet die Möglichkeit, ein Feld mithilfe eines Trennzeichens in mehrere Felder aufzuspalten."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -1630,7 +1630,7 @@ Sie erstellen ein abgeleitetes Feld vom Typ `Second Response` , um den letzten W
 >[!CONTEXTUALHELP]
 >id="cja_dataview_derivedfields_summarize"
 >title="Zusammenfassen"
->abstract="Diese Funktion bietet die Möglichkeit, Werte auf Ereignis-, Sitzungs- oder Personenebene zu aggregieren. Je nach Feldtyp für das ausgewählte Feld stehen unterschiedliche Optionen zur Verfügung."
+>abstract="Diese Funktion bietet die Möglichkeit, Werte auf Ereignis-, Sitzungs- oder Personenebene zu aggregieren. Je nach Feldtyp für das Auswahlfeld stehen verschiedene Optionen zur Verfügung."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -1643,7 +1643,7 @@ Wendet Aggregatfunktionen auf Metriken oder Dimensionen auf Ereignis-, Sitzungs-
 
 | Eingabedatentyp | Eingabe | Einbezogene Operatoren | Limit | Ausgabe |
 |---|---|---|---|---|
-| <ul><li>Zeichenfolge</li><li>Numerisch</li><li>Datum</li></ul> | <ul><li>Wert<ul><li>Regeln</li><li>Standardfelder</li><li>Felder</li></ul></li><li>Zusammenfassen von Methoden</li><li>Anwendungsbereich<ul><li>Ereignis</li><li>Sitzung</li><li>Benutzer</li></ul></li></ul> | <ul><li>Numerisch<ul><li>MAX - gibt den höchsten Wert aus einem Wertesatz zurück</li><li>MIN - gibt den kleinsten Wert aus einem Satz von Werten zurück</li><li>MEDIAN - gibt Median für einen Satz von Werten zurück</li><li>MEAN - gibt den Durchschnitt für einen Satz von Werten zurück</li><li>SUM - gibt die Summe für einen Satz von Werten zurück</li><li>COUNT - gibt die Anzahl der empfangenen Werte zurück</li><li>DISTINCT - gibt Satz unterschiedlicher Werte zurück</li></ul></li><li>Zeichenfolgen<ul><li>DISTINCT - gibt Satz unterschiedlicher Werte zurück</li><li>COUNT DISTINCT - gibt die Anzahl unterschiedlicher Werte zurück</li><li>MOST COMMON - gibt den am häufigsten empfangenen Zeichenfolgenwert zurück</li><li>LEAST COMMON - gibt den am häufigsten empfangenen Zeichenfolgenwert zurück</li><li>FIRST - Der erste empfangene Wert. Gilt nur für die Sitzungs- und Ereignistabellen</li><li>LAST - Der letzte erhaltene Wert. Gilt nur für die Sitzungs- und Ereignistabellen</li></ul></li><li>Daten <ul><li>DISTINCT - gibt Satz unterschiedlicher Werte zurück</li><li>COUNT DISTINCT - gibt die Anzahl unterschiedlicher Werte zurück</li><li>MOST COMMON - gibt den am häufigsten empfangenen Zeichenfolgenwert zurück</li><li>LEAST COMMON - gibt den am häufigsten empfangenen Zeichenfolgenwert zurück</li><li>FIRST - Der erste empfangene Wert. Gilt nur für die Sitzungs- und Ereignistabellen</li><li>LAST - Der letzte erhaltene Wert. Gilt nur für die Sitzungs- und Ereignistabellen</li><li>EARLIEST - Der früheste empfangene Wert (bestimmt durch Uhrzeit); nur für die Sitzungs- und Ereignistabellen anwendbar</li><li>NEUEST - Der zuletzt empfangene Wert (bestimmt durch Uhrzeit). Gilt nur für die Sitzungs- und Ereignistabellen</li></ul></li></ul> | 3 Funktion pro abgeleitetem Feld | Neues abgeleitetes Feld |
+| <ul><li>Zeichenfolge</li><li>Numerisch</li><li>Datum</li></ul> | <ul><li>Wert<ul><li>Regeln</li><li>Standardfelder</li><li>Felder</li></ul></li><li>Zusammenfassen von Methoden</li><li>Umfang<ul><li>Ereignis</li><li>Sitzung</li><li>Benutzer</li></ul></li></ul> | <ul><li>Numerisch<ul><li>MAX - gibt den höchsten Wert aus einem Wertesatz zurück</li><li>MIN - gibt den kleinsten Wert aus einem Satz von Werten zurück</li><li>MEDIAN - gibt Median für einen Satz von Werten zurück</li><li>MEAN - gibt den Durchschnitt für einen Satz von Werten zurück</li><li>SUM - gibt die Summe für einen Satz von Werten zurück</li><li>COUNT - gibt die Anzahl der empfangenen Werte zurück</li><li>DISTINCT - gibt Satz unterschiedlicher Werte zurück</li></ul></li><li>Zeichenfolgen<ul><li>DISTINCT - gibt Satz unterschiedlicher Werte zurück</li><li>COUNT DISTINCT - gibt die Anzahl unterschiedlicher Werte zurück</li><li>MOST COMMON - gibt den am häufigsten empfangenen Zeichenfolgenwert zurück</li><li>LEAST COMMON - gibt den am häufigsten empfangenen Zeichenfolgenwert zurück</li><li>FIRST - Der erste empfangene Wert. Gilt nur für die Sitzungs- und Ereignistabellen</li><li>LAST - Der letzte erhaltene Wert. Gilt nur für die Sitzungs- und Ereignistabellen</li></ul></li><li>Daten <ul><li>DISTINCT - gibt Satz unterschiedlicher Werte zurück</li><li>COUNT DISTINCT - gibt die Anzahl unterschiedlicher Werte zurück</li><li>MOST COMMON - gibt den am häufigsten empfangenen Zeichenfolgenwert zurück</li><li>LEAST COMMON - gibt den am häufigsten empfangenen Zeichenfolgenwert zurück</li><li>FIRST - Der erste empfangene Wert. Gilt nur für die Sitzungs- und Ereignistabellen</li><li>LAST - Der letzte erhaltene Wert. Gilt nur für die Sitzungs- und Ereignistabellen</li><li>EARLIEST - Der früheste empfangene Wert (bestimmt durch Uhrzeit); nur für die Sitzungs- und Ereignistabellen anwendbar</li><li>NEUEST - Der zuletzt empfangene Wert (bestimmt durch Uhrzeit). Gilt nur für die Sitzungs- und Ereignistabellen</li></ul></li></ul> | 3 Funktion pro abgeleitetem Feld | Neues abgeleitetes Feld |
 
 {style="table-layout:auto"}
 
@@ -1708,7 +1708,7 @@ Verwenden Sie die Zusammenfassungsfunktion für ereignisbasierte, sitzungs- oder
 >[!CONTEXTUALHELP]
 >id="cja_dataview_derivedfields_trim"
 >title="Zuschneiden"
->abstract="Diese Funktion bietet die Möglichkeit, Leerzeichen oder Sonderzeichen am Anfang oder am Ende einer Zeichenkette zu entfernen. Außerdem können Sie die Anzahl der Zeichen angeben, die für den zurückgegebenen Wert verwendet werden sollen, entweder vom Anfang oder vom Ende der Zeichenfolge."
+>abstract="Diese Funktion bietet die Möglichkeit, Leer- oder Sonderzeichen entweder am Anfang oder am Ende einer Zeichenfolge zu entfernen. Außerdem kann die Anzahl der Zeichen angegeben werden, die für den zurückgegebenen Wert verwendet werden sollen (entweder vom Anfang oder vom Ende der Zeichenfolge aus gesehen)."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -1829,8 +1829,8 @@ Sie erstellen ein abgeleitetes `Store Identifier` -Feld. Mit der Funktion [!UICO
 
 >[!CONTEXTUALHELP]
 >id="cja_dataview_derivedfields_urlparse"
->title="URL-Parsen"
->abstract="Diese Funktion bietet die Möglichkeit, verschiedene Teile einer URL zu analysieren, einschließlich der Host-, Pfad- oder Abfrageparameter."
+>title="URL parsen"
+>abstract="Diese Funktion bietet die Möglichkeit, verschiedene Teile einer URL, einschließlich Host-, Pfad- oder Abfrageparameter, auszuparsen."
 
 <!-- markdownlint-enable MD034 -->
 

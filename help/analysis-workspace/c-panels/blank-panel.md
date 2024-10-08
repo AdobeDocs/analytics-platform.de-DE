@@ -7,7 +7,7 @@ role: User
 source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
 workflow-type: tm+mt
 source-wordcount: '224'
-ht-degree: 18%
+ht-degree: 28%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 18%
 >[!CONTEXTUALHELP]
 >id="cja_workspace_blankpanel_button"
 >title="Leeres Bedienfeld"
->abstract="Zeigen Sie eine Auswahl von Bedienfeldern oder Visualisierungen an, die Sie erstellen können, um eine vollständig angepasste Analyse zu erstellen."
+>abstract="Zeigen Sie eine Auswahl von Bedienfeldern oder Visualisierungen an, die Sie für eine vollständig benutzerdefinierte Analyse erstellen können."
 >additional-url="https://www.youtube.com/watch?v=SYaioiwBTrk" text="Bedienfelder in Analysis Workspace"
 
 <!-- markdownlint-enable MD034 -->

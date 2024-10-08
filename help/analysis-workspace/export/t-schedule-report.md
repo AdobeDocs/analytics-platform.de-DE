@@ -91,8 +91,8 @@ Weitere Informationen finden Sie unter [Geplante Projekte](/help/components/sche
 
 >[!CONTEXTUALHELP]
 >id="cja_workspace_sendfile_password"
->title="Kennwortverschlüsselung"
->abstract="Das angegebene Passwort wird verwendet, um die Datei für das geplante Projekt zu verschlüsseln. Die Sicherheitsanforderungen für Ihre Organisation erfordern eine Passwortverschlüsselung."
+>title="Passwortverschlüsselung"
+>abstract="Das angegebene Passwort dient dazu, die Datei für das geplante Projekt zu verschlüsseln. Gemäß den Sicherheitsanforderungen Ihrer Organisation ist eine Passwortverschlüsselung erforderlich."
 
 <!-- markdownlint-enable MD034 -->
 

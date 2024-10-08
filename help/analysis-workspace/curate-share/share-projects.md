@@ -8,7 +8,7 @@ role: User
 source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
 workflow-type: tm+mt
 source-wordcount: '2047'
-ht-degree: 65%
+ht-degree: 66%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 65%
 >[!CONTEXTUALHELP]
 >id="cja_workspace_shareprojects"
 >title="Freigeben von Projekten"
->abstract="Sie können diese Projektrollen für andere Benutzer in Ihrer Organisation freigeben."
+>abstract="Sie können diese Projektrollen für andere Benutzende in Ihrer Organisation freigeben."
 
 <!-- markdownlint-enable MD034 -->
 

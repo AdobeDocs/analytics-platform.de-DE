@@ -7,18 +7,18 @@ role: User
 source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
 workflow-type: tm+mt
 source-wordcount: '1127'
-ht-degree: 24%
+ht-degree: 26%
 
 ---
 
-# Bedienfeld &quot;Quick Insights&quot; {#quick-insights-panel}
+# Bedienfeld „Quick Insights“ {#quick-insights-panel}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja_workspace_quickinsights_button"
->title="Schnelle Einblicke"
->abstract="Erstellen Sie ein Bedienfeld, um schnell eine Freiformtabelle und die zugehörige Visualisierung zu erstellen, um Einblicke schneller zu analysieren und zu entdecken."
+>title="Quick Insights"
+>abstract="Erstellen Sie ein Bedienfeld, um im Handumdrehen eine Freiformtabelle und die zugehörige Visualisierung zu erstellen und so Erkenntnisse schneller gewinnen und analysieren zu können."
 
 <!-- markdownlint-enable MD034 -->
 

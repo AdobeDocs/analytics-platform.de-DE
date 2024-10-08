@@ -7,7 +7,7 @@ role: User
 source-git-commit: 6a279ac39e6b94200ff93ac1a3796d202e6349c7
 workflow-type: tm+mt
 source-wordcount: '244'
-ht-degree: 46%
+ht-degree: 51%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 46%
 >[!CONTEXTUALHELP]
 >id="cja_workspace_fallout_button"
 >title="Fallout"
->abstract="Erstellt eine Visualisierung, um zu sehen, wie Personen erfolgreich zu den gewünschten Checkpoints übergehen."
+>abstract="Erstellt eine Visualisierung, die zeigt, wie Personen erfolgreich zu den gewünschten Checkpoints übergehen."
 
 <!-- markdownlint-enable MD034 -->
 

@@ -8,7 +8,7 @@ role: Admin
 source-git-commit: 519e7d583edc1eab9b6dd10fec024ac4bb2b93cf
 workflow-type: tm+mt
 source-wordcount: '3526'
-ht-degree: 97%
+ht-degree: 99%
 
 ---
 
@@ -18,8 +18,8 @@ ht-degree: 97%
 
 >[!CONTEXTUALHELP]
 >id="cja_connections_recordsadded"
->title="Hinzugefügte Datensätze"
->abstract="Die Anzahl der Datensätze (Zeilen), die im ausgewählten Zeitintervall für die ausgewählten Datensätze zu einer Verbindung hinzugefügt wurden."
+>title="Hinzugefügte Einträge"
+>abstract="Die Anzahl der Einträge (Zeilen), die im ausgewählten Zeitintervall für die ausgewählten Einträge zu einer Verbindung hinzugefügt wurden."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -27,8 +27,8 @@ ht-degree: 97%
 
 >[!CONTEXTUALHELP]
 >id="cja_connections_recordsskipped"
->title="Übersprungene Datensätze"
->abstract="Die Anzahl der Datensätze (Zeilen), die während der Datenübertragung für eine Verbindung während des ausgewählten Zeitintervalls für die ausgewählten Datensätze übersprungen wurden."
+>title="Übersprungene Einträge"
+>abstract="Die Anzahl der Einträge (Zeilen), die im ausgewählten Zeitintervall für die ausgewählten Einträge während der Datenübertragung für eine Verbindung übersprungen wurden."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -36,8 +36,8 @@ ht-degree: 97%
 
 >[!CONTEXTUALHELP]
 >id="cja_connections_recordsdeleted"
->title="Gelöschte Datensätze"
->abstract="Die Anzahl der Datensätze (Zeilen), die im ausgewählten Zeitintervall für die ausgewählten Datensätze aus einer Verbindung entfernt wurden"
+>title="Gelöschte Einträge"
+>abstract="Die Anzahl der Einträge (Zeilen), die im ausgewählten Zeitintervall für die ausgewählten Einträge aus einer Verbindung entfernt wurden."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -46,7 +46,7 @@ ht-degree: 97%
 >[!CONTEXTUALHELP]
 >id="cja_connection_lastadded"
 >title="Zuletzt hinzugefügt"
->abstract="Zeitstempel des letzten Batches aus einem beliebigen Datensatz, der an eine Verbindung übertragen wurde."
+>abstract="Der Zeitstempel des neuesten Batches aus einem Datensatz, der an eine Verbindung übertragen wird."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -163,7 +163,7 @@ Wenden Sie sich an Ihre Admins, wenn Sie sich nicht sicher sind, welches Custome
 >[!CONTEXTUALHELP]
 >id="cja_connection_transformdataset"
 >title="Datensatz transformieren"
->abstract="Mit dieser Option wird der Datensatz so transformiert, dass er für personenbezogene Suchvorgänge in B2B-Szenarien verwendet werden kann. Sobald diese Option aktiviert ist, ist die Transformation des Datensatzes nicht mehr umkehrbar."
+>abstract="Mit dieser Option wird der Datensatz transformiert, sodass er für personenbasierte Suchen in B2B-Szenarien verwendet werden kann. Nach der Aktivierung ist die Umwandlung des Datensatzes unumkehrbar."
 
 <!-- markdownlint-enable MD034 -->
 

@@ -19,7 +19,7 @@ ht-degree: 29%
 >[!CONTEXTUALHELP]
 >id="cja_dataview_component_metric_attribution"
 >title="Attribution"
->abstract="Konfigurieren Sie das Standard-Attributionsmodell, das in Berichten auf eine Metrik angewendet wird."
+>abstract="Konfigurieren Sie das standardmäßige Attributionsmodell, das auf eine Metrik in Berichten angewendet wird."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -80,7 +80,7 @@ So aktualisieren Sie das standardmäßige Attributionsmodell einer Komponente:
 >[!CONTEXTUALHELP]
 >id="cja_dataviews_component_attribution_attributionmodels"
 >title="Modell"
->abstract="Wählen Sie ein Attributionsmodell für die Metrik."
+>abstract="Wählen Sie ein Attributionsmodell für die Metrik aus."
 
 <!-- markdownlint-enable MD034 -->
 

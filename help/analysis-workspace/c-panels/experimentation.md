@@ -7,7 +7,7 @@ role: User
 source-git-commit: 6a279ac39e6b94200ff93ac1a3796d202e6349c7
 workflow-type: tm+mt
 source-wordcount: '2167'
-ht-degree: 23%
+ht-degree: 26%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 23%
 >[!CONTEXTUALHELP]
 >id="cja_workspace_experimentation_button"
 >title="Experimentieren"
->abstract="Erstellen Sie ein Bedienfeld, um verschiedene Varianten von Benutzererlebnissen, Marketing- oder Messaging zu vergleichen. Und um festzustellen, welche Variante am besten zu einem bestimmten Ergebnis führt."
+>abstract="Erstellen Sie ein Bedienfeld, um verschiedene Anwendererlebnisse bzw. Marketing- oder Messaging-Varianten zu vergleichen. Außerdem können Sie dadurch feststellen, welche Variante die beste Lösung für ein bestimmtes Ergebnis ist."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -27,7 +27,7 @@ ht-degree: 23%
 >[!CONTEXTUALHELP]
 >id="cja_workspace_experimentation_panel"
 >title="Experimentieren"
->abstract="Vergleichen Sie verschiedene Benutzererfahrungen, Marketing- oder Messaging-Variationen, um zu bestimmen, welche am besten geeignet ist, um ein bestimmtes Ergebnis zu erzielen.<br/><br/>**Parameter **<br/>**Experiment**: Das zu analysierende Experiment.<br>**Kontrollvariante**: Kontrollvariante für das ausgewählte Experiment.<br/>**Erfolgsmetrik**: Bis zu 5 standardmäßige (nicht berechnete) Erfolgsmetriken zur Analyse des Experiments.<br/>**Normalisierungsmetrik**: Personen, Sitzungen oder Ereignisse. Diese Metrik (auch als Zählmethodik bezeichnet) wird zum Nenner der Steigerungsberechnung. Diese Metrik wirkt sich auch darauf aus, wie die Daten aggregiert werden, bevor die Konfidenzberechnung angewendet wird."
+>abstract="Vergleichen Sie verschiedene Anwendererlebnisse bzw. Marketing- oder Messaging-Varianten miteinander, um zu ermitteln, was für ein bestimmtes Ergebnis die beste Lösung ist. <br/><br/>**Parameter **<br/>**Experiment**: Das zu analysierende Experiment.<br>**Kontrollvariante**: Die Kontrollvariante für das ausgewählte Experiment.<br/>**Erfolgsmetrik**: Bis zu 5 standardmäßige (nicht berechnete) Erfolgsmetriken zur Analyse des Experiments.<br/>**Normalisierungsmetrik**: Personen, Sitzungen oder Ereignisse. Diese Metrik (auch als Zählmethodik bezeichnet) wird zum Nenner der Steigerungsberechnung. Diese Metrik wirkt sich auch darauf aus, wie die Daten aggregiert werden, bevor die Konfidenzberechnung angewendet wird."
 
 <!-- markdownlint-enable MD034 -->
 

@@ -6,7 +6,7 @@ role: User, Admin
 source-git-commit: 747e77b964006404d70b500b28ec44005d65d944
 workflow-type: tm+mt
 source-wordcount: '439'
-ht-degree: 5%
+ht-degree: 31%
 
 ---
 
@@ -16,8 +16,8 @@ ht-degree: 5%
 
 >[!CONTEXTUALHELP]
 >id="cja_workspace_nextorpreviousitem_button"
->title="Nächstes oder vorheriges Element"
->abstract="Erstellen Sie ein Bedienfeld, um die vorherigen Dimensionen zu verstehen, aus denen Personen kommen, oder die nächste Dimension, zu der Benutzer gehen."
+>title="Nächstes oder vorheriges Objekt"
+>abstract="Erstellen Sie ein Bedienfeld, um mehr über die vorherigen Dimensionen zu erfahren, aus denen Personen kommen, oder über die nächste Dimension, zu der sie gehen."
 
 <!-- markdownlint-disable MD034 -->
 
@@ -25,8 +25,8 @@ ht-degree: 5%
 
 >[!CONTEXTUALHELP]
 >id="cja_workspace_nextorpreviousitem_panel"
->title="Verschachteln oder vorheriges Element"
->abstract="Analysieren Sie, von wo aus Besucher am häufigsten kamen oder zum nächsten gelangen.<br/><br/>**Dimension**: Wählen Sie eine Dimension aus. Beispiel: **Seite**.<br/>**Dimension item**: Wählen Sie ein bestimmtes Dimensionselement aus. Beispiel: **Homepage**.<br/>**Richtung**: Wählen Sie **Weiter** aus, um die Dimensionselemente unmittelbar neben dem ausgewählten Dimensionselement anzuzeigen. Wählen Sie &quot;**Zurück**&quot;, um die Dimensionselemente anzuzeigen, die zu Ihrem ausgewählten Dimensionselement führen.<br/>**Container**: Wählen Sie **Sitzung** aus, um die nächsten/vorherigen Dimensionselemente innerhalb derselben Sitzung anzuzeigen, oder wählen Sie **Person** aus, um das nächste/vorherige Dimensionselement für dieselbe Person anzuzeigen."
+>title="Nächstes oder vorheriges Objekt"
+>abstract="Analysieren Sie, von wo Besuchende am häufigsten gekommen sind oder wohin sie als Nächstes gehen.<br/><br/>**Dimension**: Wählen Sie eine Dimension aus, z. B. **Seite**.<br/>**Dimensionselement**: Wählen Sie ein bestimmtes Dimensionselement aus, z. B. **Homepage**.<br/>**Richtung**: Wählen Sie **Weiter** aus, um die Dimensionselemente unmittelbar nach dem ausgewählten Dimensionselement anzuzeigen. Wählen Sie **Zurück** aus, um die Dimensionselemente anzuzeigen, die zu Ihrem ausgewählten Dimensionselement führen.<br/>**Container**: Wählen Sie **Sitzung** aus, um die nächsten/vorherigen Dimensionselemente innerhalb derselben Sitzung anzuzeigen, oder **Person**, um das nächste/vorherige Dimensionselement für dieselbe Person anzuzeigen."
 
 <!-- markdownlint-enable MD034 -->
 

@@ -1,5 +1,5 @@
 ---
-title: Übersicht über die Kohortentabelle
+title: Überblick über die Kohortentabelle
 description: Erfahren Sie, wie Sie eine Kohortentabelle für die Kohortenanalyse in Analysis Workspace verwenden.
 feature: Visualizations
 exl-id: 3e3a70cd-70ec-4d4d-81c3-7902716d0b01
@@ -7,18 +7,18 @@ role: User
 source-git-commit: 590a3ddbe988d27341fe96a3fa866960d1641e24
 workflow-type: tm+mt
 source-wordcount: '597'
-ht-degree: 25%
+ht-degree: 37%
 
 ---
 
-# Übersicht über die Kohortentabelle {#cohort-table-overview}
+# Überblick über die Kohortentabelle {#cohort-table-overview}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja_workspace_cohorttable_button"
 >title="Kohortentabelle"
->abstract="Erstellen Sie eine Kohortenvisualisierung, um Benutzer basierend auf dem Abschluss eines Ereignisses zu gruppieren und die anhaltende Interaktion und Abwanderung im Zeitverlauf zu analysieren."
+>abstract="Erstellen Sie eine Kohortenvisualisierung, um Benutzende bei Abschluss eines Ereignisses zu gruppieren und die anhaltende Interaktion und Abwanderung im Zeitverlauf zu analysieren."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -26,8 +26,8 @@ ht-degree: 25%
 
 >[!CONTEXTUALHELP]
 >id="cja_workspace_cohorttable_panel"
->title="Auswahltabelle"
->abstract="Gruppieren Sie Benutzer anhand des Abschlusses eines Ereignisses und analysieren Sie dann deren anhaltende Interaktion und Abwanderung im Zeitverlauf.<br/><br/>**Parameter **<br/>**Aufnahmekriterien**: Die Komponenten, die zur Definition der anfänglichen Besucherkohorten verwendet werden.<br/>**Rückgabekriterien**: Die Komponenten, mit denen bestimmt wird, ob ein Besucher zurückgegeben wurde."
+>title="Kohortentabelle"
+>abstract="Gruppieren Sie Benutzende bei Abschluss eines Ereignisses und analysieren Sie dann ihre anhaltenden Interaktionen und Abwanderungen im Zeitverlauf.<br/><br/>**Parameter **<br/>**Aufnahmekriterien**: Die Komponenten, die zur Definition der anfänglichen Besucherkohorten verwendet werden.<br/>**Rückkehrkriterien**: Die Komponenten, mit denen bestimmt wird, ob eine Besucherin bzw. ein Besucher zurückgekehrt ist."
 
 <!-- markdownlint-enable MD034 -->
 

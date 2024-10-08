@@ -8,7 +8,7 @@ role: User
 source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
 workflow-type: tm+mt
 source-wordcount: '3466'
-ht-degree: 73%
+ht-degree: 77%
 
 ---
 
@@ -45,7 +45,7 @@ Die allgemeinen Voreinstellungen gelten für Ihre Customer Journey Analytics-Erf
 >[!CONTEXTUALHELP]
 >id="cja_workspace_prefs_shareonlyworkspace"
 >title="Freigabe nur für Workspace-Benutzende zulassen"
->abstract="Wenn diese Option aktiviert ist, ist die Option **[!UICONTROL Mit allen teilen]** nicht mehr für Benutzer verfügbar, die ein Analysis Workspace-Projekt freigeben. Personen, die zuvor über diese Freigabeoption Zugriff auf ein Projekt erhalten haben, können nicht mehr auf das Projekt zugreifen."
+>abstract="Sofern aktiviert, ist die Option **[!UICONTROL Für alle freigeben]** nicht mehr für Benutzende verfügbar, wenn ein Analysis Workspace-Projekt freigegeben wird. Personen, die zuvor über diese Freigabeoption Zugriff auf ein Projekt erhalten hatten, können nicht mehr auf das Projekt zugreifen."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -54,7 +54,7 @@ Die allgemeinen Voreinstellungen gelten für Ihre Customer Journey Analytics-Erf
 >[!CONTEXTUALHELP]
 >id="cja_workspace_prefs_requireexperiencecloudauth"
 >title="Experience Cloud-Authentifizierung verlangen"
->abstract="Wenn diese Option aktiviert ist, müssen sich Personen, die über die Option Mit jedem Benutzer teilen in Analysis Workspace Zugriff auf ein Projekt erhalten, mit ihren Experience Cloud-Anmeldeinformationen authentifizieren."
+>abstract="Wenn diese Option aktiviert ist, müssen sich Personen, die über die Option „Für alle freigeben“ in Analysis Workspace Zugriff auf ein Projekt erhalten haben, mit ihren Experience Cloud-Anmeldeinformationen authentifizieren."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -65,7 +65,7 @@ Sie können Unternehmensvoreinstellungen aktualisieren, die für alle Benutzerin
 | --- | --- | --- |
 | **Projektfreigabe** | | |
 | | Freigabe nur für Workspace-Benutzende zulassen | Wenn diese Option aktiviert ist, können Benutzer in Ihrer Organisation die Option **[!UICONTROL Mit niemandem teilen]** im Menü **[!UICONTROL Freigeben]** nicht sehen. Das bedeutet, dass Benutzerinnen und Benutzer keine Projekte für Personen freigeben können, die kein Analysis Workspace-Konto in Ihrer Organisation haben, wie unter [Projekt für andere freigeben (keine Anmeldung erforderlich)](/help/analysis-workspace/curate-share/share-projects.md#share-public-link) in [Freigeben von Projekten](/help/analysis-workspace/curate-share/share-projects.md) beschrieben wird.<br/>Diese Option ist standardmäßig für alle Organisationen deaktiviert (d. h., Benutzer können Projekte für Personen außerhalb der Organisation freigeben), mit Ausnahme von Kunden, die den &quot;Healthcare Shield&quot;lizenziert haben. <p>Beachten Sie beim Aktivieren oder Deaktivieren dieser Option Folgendes:<ul><li>Wenn Sie diese Option aktivieren, können Personen, die zuvor über die Option &quot;[!UICONTROL Mit jedem teilen] teilen&quot;Zugriff auf ein Projekt erhalten haben, nicht mehr auf das Projekt zugreifen.</li><li>Wenn diese Option aktiviert ist (um die Freigabe nur für Workspace-Benutzer zuzulassen) und später deaktiviert wird (um die Freigabe für andere zuzulassen), erhalten Personen, die zuvor über die Option &quot;[!UICONTROL Mit allen teilen] teilen&quot;Zugriff auf ein Projekt erhalten haben, nicht automatisch wieder Zugriff auf das Projekt. In diesem Fall muss der Benutzer, der das Projekt freigegeben hat, die Option [!UICONTROL **Link ist aktiv**] aktivieren, die verfügbar ist, wenn ein Projekt für andere freigegeben wird **([!UICONTROL Freigabe]** > **[!UICONTROL Für alle freigeben]**), wie unter [Ein Projekt für andere freigeben (keine Anmeldung erforderlich)](/help/analysis-workspace/curate-share/share-projects.md#share-public-link) in [Projekte freigeben](/help/analysis-workspace/curate-share/share-projects.md) beschrieben.</li><li>**Für Kundinnen und Kunden, die Healthcare Shield lizenzieren:** Diese Option ist standardmäßig aktiviert und kann nicht deaktiviert werden. Bevor Sie diese Option deaktivieren können, damit Benutzer die Option &quot;[!UICONTROL Für jedermann freigeben]&quot;verwenden können, müssen Sie zunächst die Berechtigung &quot;[!UICONTROL Projektlinks für alle freigeben]&quot;(unter &quot;[!UICONTROL Berichterstellungs-Tools]&quot;) in der Adobe Admin Console hinzufügen. Nachdem die Berechtigung hinzugefügt wurde, können Sie diese Option deaktivieren und dann den resultierenden rechtlichen Hinweis akzeptieren. Informationen zum Hinzufügen einer Berechtigung zur Admin Console finden Sie unter [Verwalten von Produktberechtigungen in der Admin Console](https://helpx.adobe.com/de/enterprise/using/manage-permissions-and-roles.html).</li></ul> |
-| | Experience Cloud-Authentifizierung verlangen | Wenn diese Option aktiviert ist, müssen sich Personen, die über die Option Mit jedem Benutzer teilen in Analysis Workspace Zugriff auf ein Projekt erhalten, mit ihren Experience Cloud-Anmeldeinformationen authentifizieren.<p>Wenn diese Option aktiviert ist, wird jedes Mal, wenn ein Benutzer ein Projekt mithilfe der Freigabeoption [!UICONTROL Mit allen teilen] nutzt, die Option [!UICONTROL Experience Cloud-Authentifizierung erforderlich] im Freigabedialogfeld aktiviert und kann von dem Benutzer, der das Projekt freigegeben hat, nicht deaktiviert werden. Informationen dazu, wie Benutzer Projekte für andere freigeben können, finden Sie unter [Freigeben eines Projekts für andere (keine Anmeldung erforderlich)](/help/analysis-workspace/curate-share/share-projects.md#share-public-link) in [Projekte freigeben](/help/analysis-workspace/curate-share/share-projects.md). <p> <p>Beachten Sie beim Aktivieren dieser Option Folgendes: <ul><li>Wenn Sie diese Option aktivieren, werden alle Projekte deaktiviert, die zuvor mit der Freigabeoption [!UICONTROL Für alle freigeben] freigegeben wurden und für die die Option [!UICONTROL Experience Cloud-Authentifizierung erforderlich] nicht aktiviert ist.<p>Wenn diese Option aktiviert ist (Experience Cloud-Authentifizierung erforderlich) und später deaktiviert wird (damit alle Benutzer mit dem Link auf das Projekt zugreifen können), erhalten Personen, die zuvor über die Option &quot;[!UICONTROL Mit allen teilen] teilen&quot;Zugriff auf ein Projekt erhalten haben, nicht automatisch wieder Zugriff auf das Projekt. In diesem Fall muss der Benutzer, der das Projekt freigegeben hat, die Option [!UICONTROL Link ist aktiv]*Option aktivieren, die verfügbar ist, wenn ein Projekt für andere freigegeben wird **([!UICONTROL Freigabe]** > **[!UICONTROL Für alle freigeben]** > **[!UICONTROL Link ist aktiv]**), wie unter [Ein Projekt für andere freigeben (keine Anmeldung erforderlich)](/help/analysis-workspace/curate-share/share-projects.md#share-public-link) Projekte freigeben](/help/analysis-workspace/curate-share/share-projects.md) beschrieben. .[</li><li>Diese Option ist nur verfügbar, wenn SSO in Ihrem Unternehmen implementiert ist. Informationen dazu, wie Systemadministratoren die einmalige Anmeldung für Ihr Unternehmen aktivieren können, finden Sie unter [Einrichten von Identitäten und Single-Sign-On](https://helpx.adobe.com/de/enterprise/using/set-up-identity.html).</p><p>Wenn SSO für Ihre Organisation konfiguriert ist, überprüfen Sie, ob in der Konsole eine automatische Kontoerstellung implementiert ist. Normalerweise würde ein Systemadministrator dies einrichten, wie unter [Automatische Kontoerstellung aktivieren](https://helpx.adobe.com/de/enterprise/using/automatic-account-creation.html) beschrieben.</li><li>Wenn Ihre Organisation eine Lizenz für Healthcare Shield besitzt, ist diese Option standardmäßig aktiviert und kann nicht deaktiviert werden.</li></ul> |
+| | Experience Cloud-Authentifizierung verlangen | Wenn diese Option aktiviert ist, müssen sich Personen, die über die Option „Für alle freigeben“ in Analysis Workspace Zugriff auf ein Projekt erhalten haben, mit ihren Experience Cloud-Anmeldeinformationen authentifizieren.<p>Wenn diese Option aktiviert ist, wird jedes Mal, wenn ein Benutzer ein Projekt mithilfe der Freigabeoption [!UICONTROL Mit allen teilen] nutzt, die Option [!UICONTROL Experience Cloud-Authentifizierung erforderlich] im Freigabedialogfeld aktiviert und kann von dem Benutzer, der das Projekt freigegeben hat, nicht deaktiviert werden. Informationen dazu, wie Benutzer Projekte für andere freigeben können, finden Sie unter [Freigeben eines Projekts für andere (keine Anmeldung erforderlich)](/help/analysis-workspace/curate-share/share-projects.md#share-public-link) in [Projekte freigeben](/help/analysis-workspace/curate-share/share-projects.md). <p> <p>Beachten Sie beim Aktivieren dieser Option Folgendes: <ul><li>Wenn Sie diese Option aktivieren, werden alle Projekte deaktiviert, die zuvor mit der Freigabeoption [!UICONTROL Für alle freigeben] freigegeben wurden und für die die Option [!UICONTROL Experience Cloud-Authentifizierung erforderlich] nicht aktiviert ist.<p>Wenn diese Option aktiviert ist (Experience Cloud-Authentifizierung erforderlich) und später deaktiviert wird (damit alle Benutzer mit dem Link auf das Projekt zugreifen können), erhalten Personen, die zuvor über die Option &quot;[!UICONTROL Mit allen teilen] teilen&quot;Zugriff auf ein Projekt erhalten haben, nicht automatisch wieder Zugriff auf das Projekt. In diesem Fall muss der Benutzer, der das Projekt freigegeben hat, die Option [!UICONTROL Link ist aktiv]*Option aktivieren, die verfügbar ist, wenn ein Projekt für andere freigegeben wird **([!UICONTROL Freigabe]** > **[!UICONTROL Für alle freigeben]** > **[!UICONTROL Link ist aktiv]**), wie unter [Ein Projekt für andere freigeben (keine Anmeldung erforderlich)](/help/analysis-workspace/curate-share/share-projects.md#share-public-link) Projekte freigeben](/help/analysis-workspace/curate-share/share-projects.md) beschrieben. .[</li><li>Diese Option ist nur verfügbar, wenn SSO in Ihrem Unternehmen implementiert ist. Informationen dazu, wie Systemadministratoren die einmalige Anmeldung für Ihr Unternehmen aktivieren können, finden Sie unter [Einrichten von Identitäten und Single-Sign-On](https://helpx.adobe.com/de/enterprise/using/set-up-identity.html).</p><p>Wenn SSO für Ihre Organisation konfiguriert ist, überprüfen Sie, ob in der Konsole eine automatische Kontoerstellung implementiert ist. Normalerweise würde ein Systemadministrator dies einrichten, wie unter [Automatische Kontoerstellung aktivieren](https://helpx.adobe.com/de/enterprise/using/automatic-account-creation.html) beschrieben.</li><li>Wenn Ihre Organisation eine Lizenz für Healthcare Shield besitzt, ist diese Option standardmäßig aktiviert und kann nicht deaktiviert werden.</li></ul> |
 
 {style="table-layout:auto"}
 
@@ -77,7 +77,7 @@ Sie können Unternehmensvoreinstellungen aktualisieren, die für alle Benutzerin
 >[!CONTEXTUALHELP]
 >id="cja_workspace_prefs_categoricalpalette"
 >title="Kategorische Palette"
->abstract="Wird auf viele Visualisierungen in Analysis Workspace und geführte Analysen angewendet. Jede Farbe steht für einen Wert einer Kategorie."
+>abstract="Wird bei vielen Visualisierungen in Analysis Workspace und der geführten Analyse verwendet. Jede Farbe stellt einen bestimmten kategorischen Wert dar. "
 
 <!-- markdownlint-enable MD034 -->
 
@@ -86,7 +86,7 @@ Sie können Unternehmensvoreinstellungen aktualisieren, die für alle Benutzerin
 >[!CONTEXTUALHELP]
 >id="cja_workspace_prefs_divergingpalette"
 >title="Divergierende Palette"
->abstract="Wird auf die Kohortentabelle in Analysis Workspace und die geführte Analyse von Benutzerwachstum angewendet. Durch diese Palette werden die Zahlen zweier Extremwerte dargestellt, getrennt durch eine Basislinie in der Mitte."
+>abstract="Wird auf die Kohortentabelle in Analysis Workspace und auf die geführte Analyse des Benutzerwachstums angewendet. Diese Palette enthält eine numerische Bedeutung mit zwei Extremen und einer Grundlinie in der Mitte."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -95,7 +95,7 @@ Sie können Unternehmensvoreinstellungen aktualisieren, die für alle Benutzerin
 >[!CONTEXTUALHELP]
 >id="cja_workspace_prefs_sequentialpalette"
 >title="Sequenzielle Palette"
->abstract="Wird bei der geführten Analyse der Frequenz-Trends angewendet (gestapelte Balken). In dieser Palette werden Zahlen durch die Helligkeitsabstufungen von hell bis dunkel dargestellt."
+>abstract="Wird auf die geführte Analyse der Häufigkeits-Trends (gestapelte Balken) angewendet. Diese Palette hat eine numerische Bedeutung von hell bis dunkel."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -126,7 +126,7 @@ Einige dieser Einstellungen können auch für einzelne Projekte in Analysis Work
 >[!CONTEXTUALHELP]
 >id="cja_workspace_prefs_showanomalies"
 >title="Anomalien anzeigen"
->abstract="Wenn Sie **[!UICONTROL Anomalien anzeigen]** auswählen, wird automatisch die Anomalieerkennung für die erste Metrikspalte ausgeführt, die der Freiformtabellenvisualisierung einer Zeitreihe hinzugefügt wurde."
+>abstract="Wenn Sie **[!UICONTROL Anomalien zeigen]** auswählen, wird automatisch die Anomalieerkennung für die erste Metrikspalte ausgeführt, die einer Freiformtabellenvisualisierung der Zeitreihe hinzugefügt wurde."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -135,7 +135,7 @@ Einige dieser Einstellungen können auch für einzelne Projekte in Analysis Work
 >[!CONTEXTUALHELP]
 >id="cja_workspace_prefs_showforecast"
 >title="Prognose anzeigen"
->abstract="Wenn Sie **[!UICONTROL Vorschau anzeigen]** auswählen, wird automatisch die erste Metrikspalte prognostiziert, die zu einer Zeitreihen-Freiformtabellenvisualisierung hinzugefügt wurde."
+>abstract="Wenn Sie **[!UICONTROL Prognose anzeigen]** auswählen, wird die Prognose automatisch für die erste Metrikspalte ausgeführt, die einer Freiformtabellenvisualisierung der Zeitreihe hinzugefügt wurde."
 
 <!-- markdownlint-enable MD034 -->
 

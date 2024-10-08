@@ -7,7 +7,7 @@ role: User
 source-git-commit: 519e7d583edc1eab9b6dd10fec024ac4bb2b93cf
 workflow-type: tm+mt
 source-wordcount: '1128'
-ht-degree: 41%
+ht-degree: 53%
 
 ---
 
@@ -17,8 +17,8 @@ ht-degree: 41%
 
 >[!CONTEXTUALHELP]
 >id="cja_workspace_mediaplaybacktimespent_button"
->title="Medienwiedergabedauer"
->abstract="Erstellen Sie ein Bedienfeld, um den Videokonsum im Zeitverlauf mit verschiedenen Granularitätsebenen zu analysieren und die Möglichkeit, aufzuschlüsseln und zu vergleichen."
+>title="Bei der Medienwiedergabe verbrachte Zeit"
+>abstract="Erstellen Sie ein Bedienfeld, um den Videokonsum im Zeitverlauf mit verschiedenen Granularitätsebenen analysieren sowie Aufschlüsselungen und Vergleiche durchführen zu können."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -26,8 +26,8 @@ ht-degree: 41%
 
 >[!CONTEXTUALHELP]
 >id="cja_workspace_mediaplaybacktimespent_panel"
->title="Medienwiedergabedauer"
->abstract="Analysieren Sie den Videokonsum im Zeitverlauf, wählen Sie verschiedene Granularitäten aus, unterteilen Sie sie und vergleichen Sie sie.<br/><br/>**Granularität**: Wählen Sie einen Zeitraum aus, nach dem gleichzeitige Betrachter angezeigt werden sollen.<br/>**Bereichszusammenfassungsnummern (optional)**: Option zum Anzeigen von Zusammenfassungsnummern mit Datums- oder Uhrzeitdetails für jede Zeile. Maximal zeigt Details zur Spitzenwiedergabedauer an. Das Minimum zeigt Details für den Tief an. Die Summe zeigt Details zur Gesamtdauer der Wiedergabe an.<br/>**Aufschlüsselung nach Serie (optional)**: Schlüsseln Sie die Visualisierung nach Segmenten, Dimensionen, Dimensionselementen oder Datumsbereichen auf. Sie können bis zu 10 Zeilen gleichzeitig anzeigen. Aufschlüsselungen sind auf eine einzelne Ebene beschränkt.<br/>**Zeitformat**: Option zur Anzeige des Zeitformats für Visualisierungen in Stunden oder Minuten."
+>title="Bei der Medienwiedergabe verbrachte Zeit"
+>abstract="Analysieren Sie den Videokonsum im Zeitverlauf, wählen Sie verschiedene Granularitäten aus, schlüsseln Sie die Daten auf und vergleichen Sie sie.<br/><br/>**Granularität**: Wählen Sie aus, nach welchem Zeitraum gleichzeitige Betrachtende angezeigt werden sollen.<br/>**Zusammenfassende Zahlen der Bedienfelder (optional)**: Wählen Sie diese Option aus, um für jede Zeile zusammenfassende Zahlen mit Datums- oder Uhrzeitangaben anzuzeigen. „Maximum“ zeigt Details für die maximale Wiedergabedauer an. „Minimum“ zeigt Details für die minimale Wiedergabedauer an. „Summe“ zeigt Details zur Gesamtwiedergabedauer an.<br/>**Serienaufschlüsselung (optional)**: Schlüsseln Sie Visualisierungen nach Segmenten, Dimensionen, Dimensionselementen oder Datumsbereichen auf. Sie können jeweils bis zu 10 Zeilen anzeigen. Aufschlüsselungen sind auf eine einzelne Ebene beschränkt.<br/>**Zeitformat**: Wählen Sie diese Option aus, um das Zeitformat für Visualisierungen in Stunden oder Minuten anzuzeigen."
 
 <!-- markdownlint-enable MD034 -->
 

@@ -8,23 +8,23 @@ exl-id: c39ee568-97f6-4925-ae18-3d4a9dfdb6f5
 source-git-commit: a236b2126c4b998b4d97caab014556e3ee3a9e83
 workflow-type: tm+mt
 source-wordcount: '343'
-ht-degree: 17%
+ht-degree: 18%
 
 ---
 
-# [!UICONTROL Komponenteneinstellungen der Zusammenfassungsdatengruppe] {#summary-data-group-component-settings}
+# Komponenteneinstellungen für [!UICONTROL Zusammenfassungsdatengruppen] {#summary-data-group-component-settings}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja_dataview_component_dimension_summarydatagroup"
 >title="Zusammenfassungsdatengruppe"
->abstract="Eine Zusammenfassungsdatengruppe erzeugt eine Verbindung zwischen allen Dimensionen in der Gruppierung und wird verwendet, um Dimensionen aus Zusammenfassungsdatensätzen mit anderen Dimensionen für die Berichterstattung zu kombinieren."
+>abstract="Eine Zusammenfassungsdatengruppe erstellt eine Verknüpfung zwischen allen Dimensionen in der Gruppierung und wird verwendet, um Dimensionen aus Zusammenfassungsdatensätzen mit anderen Dimensionen für Berichte zu kombinieren."
 
 <!-- markdownlint-enable MD034 -->
 
 
-Eine Zusammenfassungsdatengruppe erzeugt eine Verbindung zwischen allen Dimensionen in der Gruppierung und wird verwendet, um Dimensionen aus Zusammenfassungsdatensätzen mit anderen Dimensionen für die Berichterstattung zu kombinieren.
+Eine Zusammenfassungsdatengruppe erstellt eine Verknüpfung zwischen allen Dimensionen in der Gruppierung und wird verwendet, um Dimensionen aus Zusammenfassungsdatensätzen mit anderen Dimensionen für Berichte zu kombinieren.
 
 ![Komponenteneinstellungen der Zusammenfassungsdatengruppe](/help/data-views/assets/summary-data-group.png)
 

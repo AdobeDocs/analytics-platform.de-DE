@@ -19,7 +19,7 @@ ht-degree: 93%
 >[!CONTEXTUALHELP]
 >id="cja_dataview_component_dimension_novalueoptions"
 >title="Keine Wertoptionen"
->abstract="Konfigurieren Sie das Standardverhalten für Situationen, in denen in einer Dimension kein Wert vorhanden ist."
+>abstract="Konfigurieren Sie das Standardverhalten für ein Szenario, bei dem in einer Dimension kein Wert vorhanden ist."
 
 <!-- markdownlint-enable MD034 -->
 

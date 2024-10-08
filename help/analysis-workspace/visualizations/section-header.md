@@ -1,5 +1,5 @@
 ---
-title: Abschnittskopfzeile
+title: Bereichs-Kopfzeile
 description: Eine Visualisierung, die eine Abschnittsüberschrift in Ihr Workspace-Projekt einfügt.
 feature: Visualizations
 role: User
@@ -11,14 +11,14 @@ ht-degree: 18%
 ---
 
 
-# Abschnittskopfzeile {#section-header}
+# Bereichs-Kopfzeile {#section-header}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja_workspace_sectionheader_button"
->title="Abschnittskopfzeile"
->abstract="Fügen Sie eine Abschnittsüberschrift zu einem Panel hinzu."
+>title="Bereichs-Kopfzeile"
+>abstract="Fügen Sie eine Bereichs-Kopfzeile zu einem Bedienfeld hinzu."
 
 <!-- markdownlint-enable MD034 -->
 

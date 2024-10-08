@@ -20,7 +20,7 @@ ht-degree: 81%
 >[!CONTEXTUALHELP]
 >id="cja_dataview_component_dimension_persistence"
 >title="Persistenz"
->abstract="Konfigurieren Sie das standardmäßig auf eine Dimension angewendete Zuordnungsmodell. Die Zuordnung erfolgt beim Reporting vor der Filterung."
+>abstract="Konfigurieren Sie das standardmäßige Zuordnungsmodell, das auf eine Dimension angewendet wird. Die Zuordnung erfolgt vor den Filtern in Berichten."
 
 <!-- markdownlint-enable MD034 -->
 

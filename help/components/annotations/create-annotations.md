@@ -7,7 +7,7 @@ role: User, Admin
 source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
 workflow-type: tm+mt
 source-wordcount: '872'
-ht-degree: 17%
+ht-degree: 24%
 
 ---
 
@@ -34,14 +34,14 @@ Um die Anmerkung zu definieren, verwenden Sie den [[!UICONTROL Anmerkungs-Builde
 -->
 
 
-## Anmerkungsaufbau {#annotation-builder}
+## Anmerkungsgenerator {#annotation-builder}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja_components_annotations_details"
 >title="Anmerkungsdetails"
->abstract="Mit Anmerkungen können Sie Ihrer Organisation kontextbezogene Datennuancen und Einblicke effektiv übermitteln. Damit können Sie Kalenderereignisse mit bestimmten Dimensionen/Metriken verknüpfen."
+>abstract="Mit Anmerkungen können Sie Ihrer Organisation kontextbezogene Datennuancen und Einblicke effektiv übermitteln. Durch sie können Sie Kalenderereignisse an bestimmte Dimensionen/Metriken binden."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -49,8 +49,8 @@ Um die Anmerkung zu definieren, verwenden Sie den [[!UICONTROL Anmerkungs-Builde
 
 >[!CONTEXTUALHELP]
 >id="cja_components_annotations_scope"
->title="Anwendungsbereich"
->abstract="Mit Umfang können Sie anpassen, welche Daten kommentiert werden. Berechnete Metriken und Segmente übernehmen keine automatisch angewendeten Anmerkungen, die auf Komponenten angewendet werden, die in ihren Definitionen verwendet werden. Sie können neue berechnete Metriken zum Bereich des Umfangs einer vorhandenen Anmerkung hinzufügen. Neue Segmente erfordern eine neue Anmerkung."
+>title="Umfang"
+>abstract="Mit dem Umfang können Sie anpassen, welche Daten kommentiert werden. Berechnete Metriken und Segmente übernehmen auf Komponenten angewendete Anmerkungen, die in ihren Definitionen verwendet werden, nicht automatisch. Sie können neue berechnete Metriken zum Bereich des Umfangs einer vorhandenen Anmerkung hinzufügen. Neue Segmente erfordern eine neue Anmerkung."
 
 <!-- markdownlint-enable MD034 -->
 

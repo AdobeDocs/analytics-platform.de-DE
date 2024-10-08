@@ -7,7 +7,7 @@ exl-id: 8e4b8169-7c7f-4a58-a6c6-70efb0c86ce8
 source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
 workflow-type: tm+mt
 source-wordcount: '564'
-ht-degree: 69%
+ht-degree: 76%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 69%
 >[!CONTEXTUALHELP]
 >id="cja_component_datadictionary"
 >title="Datenwörterbuch"
->abstract="Das Datenwörterbuch hilft Benutzern und Administratoren dabei, die Komponenten in ihrer Analytics-Umgebung zu verfolgen und besser zu verstehen. <br/>Analytics-Administratoren sind für das Kuratieren von Informationen zu den einzelnen Komponenten des Datenwörterbuchs für Benutzer verantwortlich."
+>abstract="Das Datenwörterbuch hilft sowohl Benutzenden als auch Admins, den Überblick zu behalten und die Komponenten in ihrer Analytics-Umgebung besser zu verstehen. <br/>Analytics-Admins sind dafür verantwortlich, im Datenwörterbuch Informationen über jede Komponente für Benutzende zu kuratieren."
 
 <!-- markdownlint-enable MD034 -->
 

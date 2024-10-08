@@ -8,7 +8,7 @@ role: Admin
 source-git-commit: 747e77b964006404d70b500b28ec44005d65d944
 workflow-type: tm+mt
 source-wordcount: '1832'
-ht-degree: 96%
+ht-degree: 99%
 
 ---
 
@@ -35,7 +35,7 @@ So erstellen oder bearbeiten Sie eine Datenansicht:
 >[!CONTEXTUALHELP]
 >id="cja_dataview_externalid"
 >title="Externe ID"
->abstract="Das Ändern der externen ID kann sich darauf auswirken, wie der Name der Datenansicht in externen Quellen angezeigt wird, z. B. in Business-Intelligence-Tools."
+>abstract="Eine Änderung der externen ID kann sich auf die Darstellung des Namens der Datenansicht in externen Quellen, z. B. Business Intelligence-Tools, auswirken."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -71,8 +71,8 @@ Stellt übergreifende Einstellungen für die Datenansicht bereit.
 >[!CONTEXTUALHELP]
 >id="cja_dataview_dataviewsinadobejourneyoptimizer"
 >title="Datenansichten in Journey Optimizer"
->abstract="Journey Optimizer muss eine Datenansicht verwenden, die mit Customer Journey Analytics konfiguriert ist.<br/>Aktivieren Sie diese Option, um diese Option zur Standarddatenansicht zu machen, die in Adobe Journey Optimizer-Berichten verwendet wird."
->additional-url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/integrations/ajo#connection" text="Welche Komponenten und Datensätze werden hinzugefügt?"
+>abstract="Journey Optimizer muss eine Datenansicht verwenden, die mit Customer Journey Analytics konfiguriert ist.<br/>Aktivieren Sie diese Option, um diese Datenansicht als Standard für Journey Optimizer-Berichte zu nutzen."
+>additional-url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/integrations/ajo#connection" text="Welche Komponenten und Datensätze werden hinzugefügt?"
 
 <!-- markdownlint-enable MD034 -->
 

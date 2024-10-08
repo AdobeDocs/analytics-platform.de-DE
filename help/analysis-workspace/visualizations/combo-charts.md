@@ -7,17 +7,17 @@ role: User
 source-git-commit: 590a3ddbe988d27341fe96a3fa866960d1641e24
 workflow-type: tm+mt
 source-wordcount: '579'
-ht-degree: 41%
+ht-degree: 44%
 
 ---
 
-# Kombination {#combo}
+# Combo {#combo}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja_workspace_combo_button"
->title="Kombination"
+>title="Combo"
 >abstract="Erstellen Sie schnell eine Visualisierung eines Kombinationsdiagramms, ohne dass Sie zuerst eine Freiformtabelle erstellen müssen."
 
 <!-- markdownlint-enable MD034 -->

@@ -25,7 +25,7 @@ Weitere Informationen zum Reporting-Aktivitäts-Manager, einschließlich der wic
 >[!CONTEXTUALHELP]
 >id="cja_tools_reportingactivitymanager_connections"
 >title="Verbindungen"
->abstract="In dieser Tabelle sind die Verbindungen aufgeführt, für die Sie Rechte zur Verwaltung der Berichtsaktivitäten haben. Informationen zu jeder Verbindung sind in jeder Spalte der Tabelle verfügbar."
+>abstract="Diese Tabelle zeigt die Verbindungen, für die Sie zur Verwaltung der Reporting-Aktivität berechtigt sind. Informationen zu den einzelnen Verbindungen finden Sie in den jeweiligen Spalten der Tabelle."
 
 <!-- markdownlint-enable MD034 -->
 

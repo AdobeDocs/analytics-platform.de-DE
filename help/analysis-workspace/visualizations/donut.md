@@ -7,7 +7,7 @@ role: User
 source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
 workflow-type: tm+mt
 source-wordcount: '96'
-ht-degree: 14%
+ht-degree: 32%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 14%
 >[!CONTEXTUALHELP]
 >id="cja_workspace_donut_button"
 >title="Ringdiagramm"
->abstract="Erstellen Sie eine Ringvisualisierung, um die Prozentsätze einer Gesamtsumme zu vergleichen, in der Regel mit einer geringen Anzahl von Elementen."
+>abstract="Erstellen Sie eine Ringvisualisierung, um die prozentualen Anteile eines Ganzen zu vergleichen, typischerweise bei einer geringen Anzahl an Werten."
 
 <!-- markdownlint-enable MD034 -->
 

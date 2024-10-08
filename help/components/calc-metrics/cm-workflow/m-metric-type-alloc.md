@@ -6,7 +6,7 @@ exl-id: da73a9ba-542e-436c-bdb2-b629b5b6f760
 source-git-commit: 519e7d583edc1eab9b6dd10fec024ac4bb2b93cf
 workflow-type: tm+mt
 source-wordcount: '947'
-ht-degree: 25%
+ht-degree: 40%
 
 ---
 
@@ -50,7 +50,7 @@ Ein Beispiel für die Verwendung eines Attributionsmodells und Lookback-Fensters
 >[!CONTEXTUALHELP]
 >id="cja_components_calculatedmetrics_nondefaultattributionmodel"
 >title="Nicht standardmäßiges Attributionsmodell verwenden"
->abstract="Aktivieren eines nicht standardmäßigen Attributionsmodells für die ausgewählte Metrik."
+>abstract="Aktivieren Sie ein nicht standardmäßiges Attributionsmodell für die ausgewählte Metrik."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -59,7 +59,7 @@ Ein Beispiel für die Verwendung eines Attributionsmodells und Lookback-Fensters
 >[!CONTEXTUALHELP]
 >id="cja_components_calculatedmetrics_attributionmodel"
 >title="Modell"
->abstract="Wählen Sie ein Attributionsmodell für die Metrik."
+>abstract="Wählen Sie ein Attributionsmodell für die Metrik aus."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -68,7 +68,7 @@ Ein Beispiel für die Verwendung eines Attributionsmodells und Lookback-Fensters
 >[!CONTEXTUALHELP]
 >id="cja_components_calculatedmetrics_attribution_lasttouch"
 >title="Letztkontakt"
->abstract="100 % der Gutschrift geht an den letzten Dimensionswert, den ein Besucher gesehen hat."
+>abstract="Die Credits gehen zu 100 % an den letzten Dimensionswert, den eine Besucherin bzw. ein Besucher gesehen hat."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -77,7 +77,7 @@ Ein Beispiel für die Verwendung eines Attributionsmodells und Lookback-Fensters
 >[!CONTEXTUALHELP]
 >id="cja_components_calculatedmetrics_attribution_firsttouch"
 >title="Erstkontakt"
->abstract="100 % der Gutschrift geht an den ersten Dimensionswert, den ein Besucher gesehen hat."
+>abstract="Die Credits gehen zu 100 % an den ersten Dimensionswert, den eine Besucherin bzw. ein Besucher gesehen hat."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -86,7 +86,7 @@ Ein Beispiel für die Verwendung eines Attributionsmodells und Lookback-Fensters
 >[!CONTEXTUALHELP]
 >id="cja_components_calculatedmetrics_attribution_linear"
 >title="Linear"
->abstract="Die Gewichtung wird gleichmäßig über alle Dimensionswerte verteilt."
+>abstract="Die Credits werden gleichmäßig auf alle Dimensionswerte verteilt."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -95,7 +95,7 @@ Ein Beispiel für die Verwendung eines Attributionsmodells und Lookback-Fensters
 >[!CONTEXTUALHELP]
 >id="cja_components_calculatedmetrics_attribution_participation"
 >title="Beitrag"
->abstract="100 % Gewichtung für jeden Dimensionswert, der von einem Besucher gesehen wird.<br/>Spaltensummen werden überschrieben."
+>abstract="Die Credits gehen zu 100 % an jeden Dimensionswert, der von einer Besucherin oder einem Besucher gesehen wird.<br/>Spaltensummen werden erhöht."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -104,7 +104,7 @@ Ein Beispiel für die Verwendung eines Attributionsmodells und Lookback-Fensters
 >[!CONTEXTUALHELP]
 >id="cja_components_calculatedmetrics_attribution_sametouch"
 >title="Selber Kontakt"
->abstract="Die Gewichtung wird nur Dimensionswerten zugeschrieben, die bei demselben Ereignis wie die Konversion auftreten."
+>abstract="Die Credits werden nur für Dimensionswerte erteilt, die bei demselben Ereignis wie die Konversion auftreten."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -113,7 +113,7 @@ Ein Beispiel für die Verwendung eines Attributionsmodells und Lookback-Fensters
 >[!CONTEXTUALHELP]
 >id="cja_components_calculatedmetrics_attribution_ushaped"
 >title="U-Form"
->abstract="Der ersten Dimension werden 40 % zugeschrieben, dem letzten 40 %, dem mittleren 20 %."
+>abstract="Die Credits gehen zu zu 40 % an die erste Dimension, zu 40 % an die letzte und zu 20 % an die mittlere."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -122,7 +122,7 @@ Ein Beispiel für die Verwendung eines Attributionsmodells und Lookback-Fensters
 >[!CONTEXTUALHELP]
 >id="cja_components_calculatedmetrics_attribution_jcurve"
 >title="J-Kurve"
->abstract="60 % werden dem letzten Dimensionswert zugeschrieben, 20 % dem ersten, 20 % von der Mitte."
+>abstract="Die Credits gehen zu zu 60 % an den letzten Dimensionswert, zu 20 % an den ersten und zu 20 % an den mittleren."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -131,7 +131,7 @@ Ein Beispiel für die Verwendung eines Attributionsmodells und Lookback-Fensters
 >[!CONTEXTUALHELP]
 >id="cja_components_calculatedmetrics_attribution_inversej"
 >title="Umgekehrtes J"
->abstract="Der ersten Dimension werden 60 %, der letzten 20 % und der mittleren 20 % zugeschrieben."
+>abstract="Die Credits gehen zu 60 % an den ersten Dimensionswert, zu 20 % an den letzten und zu 20 % an den mittleren."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -139,8 +139,8 @@ Ein Beispiel für die Verwendung eines Attributionsmodells und Lookback-Fensters
 
 >[!CONTEXTUALHELP]
 >id="cja_components_calculatedmetrics_attribution_timedecay"
->title="Zeitverlauf"
->abstract="Die zeitlich am nächsten zu einer Konversion liegenden Dimensionswerte erhalten die höchste Anrechnung."
+>title="Zeitabfall"
+>abstract="Die Dimensionswerte, die einer Konversion zeitlich am nächsten sind, erhalten die meisten Credits."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -158,7 +158,7 @@ Ein Beispiel für die Verwendung eines Attributionsmodells und Lookback-Fensters
 >[!CONTEXTUALHELP]
 >id="cja_components_calculatedmetrics_attribution_algorithmic"
 >title="Algorithmisch"
->abstract="Die Gewichtung wird anhand eines statistischen Algorithmus dynamisch bestimmt."
+>abstract="Die Credits werden anhand eines statistischen Algorithmus dynamisch bestimmt."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -173,7 +173,7 @@ Ein Beispiel für die Verwendung eines Attributionsmodells und Lookback-Fensters
 >[!CONTEXTUALHELP]
 >id="cja_components_calculatedmetrics_attribution_lookbackwindow"
 >title="Lookback-Fenster"
->abstract="Diese Einstellung bestimmt das Fenster der Datenzuordnung, das für jede Konversion angewendet wird."
+>abstract="Diese Einstellung bestimmt das Fenster der Datenattribution, das für jede Konversion angewendet wird."
 
 <!-- markdownlint-enable MD034 -->
 

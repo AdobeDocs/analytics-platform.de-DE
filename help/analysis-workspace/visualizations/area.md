@@ -7,7 +7,7 @@ role: User
 source-git-commit: 1dff53e244e5d231e7075ce087705e33e0978096
 workflow-type: tm+mt
 source-wordcount: '168'
-ht-degree: 17%
+ht-degree: 25%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 17%
 >[!CONTEXTUALHELP]
 >id="cja_workspace_area_button"
 >title="Flächendiagramm"
->abstract="Erstellen Sie eine Visualisierung des Bereichsdiagramms, die die Schnittmenge mehrerer Metriken darstellt."
+>abstract="Erstellen Sie eine Flächendiagrammvisualisierung, um die Schnittmenge mehrerer Metriken darzustellen."
 
 <!-- markdownlint-enable MD034 -->
 

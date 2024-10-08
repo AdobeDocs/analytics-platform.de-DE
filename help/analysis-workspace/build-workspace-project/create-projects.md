@@ -7,7 +7,7 @@ exl-id: cc3d3ac9-c31f-4a8d-999c-78590512b57c
 source-git-commit: 519e7d583edc1eab9b6dd10fec024ac4bb2b93cf
 workflow-type: tm+mt
 source-wordcount: '412'
-ht-degree: 41%
+ht-degree: 46%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 41%
 >[!CONTEXTUALHELP]
 >id="cja_workspace_project_countrepeatinstances"
 >title="Wiederholte Instanzen zählen"
->abstract="Diese Einstellung legt fest, ob wiederholte Instanzen in Berichten gezählt werden sollen.<br/><br/>Hinweis: Diese Einstellung gilt nicht für Fluss- oder Trichteranalysen."
+>abstract="Diese Einstellung legt fest, ob wiederholte Instanzen in Berichten gezählt werden sollen.<br/><br/>Hinweis: Diese Einstellung gilt nicht für Fluss- oder Fallout-Visualisierungen."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -61,7 +61,7 @@ Nachdem Sie jetzt ein leeres Workspace-Projekt erstellt haben, sollten Sie mit d
 >[!CONTEXTUALHELP]
 >id="cja_workspace_project_repeatinstances"
 >title="Wiederholte Instanzen zählen"
->abstract="Diese Einstellung legt fest, ob wiederholte Instanzen in Berichten gezählt werden sollen.<br/>Hinweis: Diese Einstellung gilt nicht für Fluss- oder Trichteranalysen."
+>abstract="Diese Einstellung legt fest, ob wiederholte Instanzen in Berichten gezählt werden sollen.<br/>Hinweis: Diese Einstellung gilt nicht für Fluss- oder Fallout-Visualisierungen."
 
 <!-- markdownlint-enable MD034 -->
 

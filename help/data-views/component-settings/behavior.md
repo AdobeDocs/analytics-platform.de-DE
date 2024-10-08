@@ -8,7 +8,7 @@ role: Admin
 source-git-commit: a236b2126c4b998b4d97caab014556e3ee3a9e83
 workflow-type: tm+mt
 source-wordcount: '340'
-ht-degree: 82%
+ht-degree: 90%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 82%
 >[!CONTEXTUALHELP]
 >id="cja_dataview_component_dimension_behavior"
 >title="Verhalten"
->abstract="Bestimmen Sie, wie Zeileneinträge in dieser Dimension aggregiert werden.<br/><br/>**Parameter **<br/>**Kleinbuchstaben**: Ermöglicht die Angabe, ob die Zeichenfolgenwerte im Feld niedriger sein sollen."
+>abstract="Bestimmen Sie, wie Zeileneinträge in dieser Dimension aggregiert werden.<br/><br/>**Parameter **<br/>**Kleinbuchstaben**: Ermöglicht die Angabe, ob die Zeichenfolgenwerte im Feld in Kleinbuchstaben sein sollen."
 
 <!-- markdownlint-enable MD034 -->
 

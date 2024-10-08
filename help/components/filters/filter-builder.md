@@ -1,24 +1,24 @@
 ---
 description: Der Filter-Builder bietet eine Arbeitsfläche zum Ziehen und Ablegen von metrischen Dimensionen, Filtern und Ereignissen, um Personen basierend auf der Behälterhierarchielogik, den Regeln und Operatoren zu filtern. Mit diesem integrierten Entwicklungstool können Sie einfache oder komplexe Filter erstellen und speichern, mit denen Personenattribute und Aktionen bei Besuchen und Ereignissen identifiziert werden.
-title: Filter erstellen
+title: Erstellen von Filtern
 feature: Filters
 role: User
 exl-id: 160021f1-6942-4682-9114-d375307d9912
 source-git-commit: 8f3b30ca6d20d633669d7e9180884c24e0b9a52e
 workflow-type: tm+mt
 source-wordcount: '1450'
-ht-degree: 4%
+ht-degree: 6%
 
 ---
 
-# Filter erstellen {#build-filters}
+# Erstellen von Filtern {#build-filters}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja_components_filters_createaudience"
->title="Zielgruppe erstellen"
->abstract="Zielgruppen können über einen Filter erstellt und für Adobe Experience Platform freigegeben werden, wo sie aktiviert werden können."
+>title="Erstellen einer Zielgruppe"
+>abstract="Zielgruppen können mithilfe eines Filters erstellt und zur Aktivierung für Adobe Experience Platform freigegeben werden."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -150,7 +150,7 @@ Oder Sie können 52 Filter definieren: 50 Filter für die US-Bundesstaaten, eine
 >[!CONTEXTUALHELP]
 >id="cja_components_filters_attribution_repeating"
 >title="Wiederholend"
->abstract="Umfasst Instanzen und beibehaltene Werte für die Dimension."
+>abstract="Umfasst Instanzen und persistierte Werte für die Dimension."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -159,7 +159,7 @@ Oder Sie können 52 Filter definieren: 50 Filter für die US-Bundesstaaten, eine
 >[!CONTEXTUALHELP]
 >id="cja_components_filters_attribution_instance"
 >title="Instanz"
->abstract="Umfasst Instanzen und beibehaltene Werte für die Dimension."
+>abstract="Umfasst Instanzen und persistierte Werte für die Dimension."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -168,7 +168,7 @@ Oder Sie können 52 Filter definieren: 50 Filter für die US-Bundesstaaten, eine
 >[!CONTEXTUALHELP]
 >id="cja_components_filters_attribution_nonrepeatinginstance"
 >title="Nicht wiederholende Instanz"
->abstract="Umfasst eindeutige (nicht wiederholende) Instanzen für die Dimension."
+>abstract="Umfasst einzigartige (sich nicht wiederholende) Instanzen für die Dimension."
 
 <!-- markdownlint-enable MD034 -->
 

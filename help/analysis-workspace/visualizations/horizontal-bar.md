@@ -7,7 +7,7 @@ role: User
 source-git-commit: e8d9132ec9920d649f6694f02f987deadb93b77d
 workflow-type: tm+mt
 source-wordcount: '160'
-ht-degree: 11%
+ht-degree: 36%
 
 ---
 
@@ -22,7 +22,7 @@ Die horizontale Balkenvisualisierung verfügt über eine standardmäßige und ge
 >[!CONTEXTUALHELP]
 >id="cja_workspace_horizontalbar_button"
 >title="Horizontalbalken"
->abstract="Erstellen Sie eine horizontale Balkenvisualisierung, um verschiedene Werte aus einer oder mehreren Metriken darzustellen."
+>abstract="Erstellen Sie eine Horizontalbalkenvisualisierung, um verschiedene Werte aus einer oder mehreren Metriken darzustellen."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -38,7 +38,7 @@ Die Visualisierung ![GraphBarHorizontal](/help/assets/icons/GraphBarHorizontal.s
 >[!CONTEXTUALHELP]
 >id="cja_workspace_horizontalbarstacked_button"
 >title="Horizontalbalken gestapelt"
->abstract="Erstellen Sie eine horizontale Balkenvisualisierung, um verschiedene Werte aus einer oder mehreren gestapelten Metriken darzustellen."
+>abstract="Erstellen Sie eine Horizontalbalkenvisualisierung, um verschiedene Werte aus einer oder mehreren gestapelten Metriken darzustellen."
 
 <!-- markdownlint-enable MD034 -->
 

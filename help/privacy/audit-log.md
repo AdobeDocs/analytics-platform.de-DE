@@ -18,7 +18,7 @@ ht-degree: 66%
 >[!CONTEXTUALHELP]
 >id="cja_tools_auditlog_userid"
 >title="Benutzer-ID"
->abstract="Die Benutzer-ID finden Sie, indem Sie auf die Schaltfläche „Info“ auf einem Protokolleintrag klicken, der den/die gewünschte(n) Benutzende(n) enthält."
+>abstract="Die Benutzer-ID lässt sich ermitteln, indem Sie in einem Protokolleintrag, der die gewünschte Person enthält, auf die Infoschaltfläche klicken."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -27,7 +27,7 @@ ht-degree: 66%
 >[!CONTEXTUALHELP]
 >id="cja_tools_auditlog_componentid"
 >title="Komponenten-ID"
->abstract="Die Komponenten-ID finden Sie, indem Sie auf die Schaltfläche „Info“ auf einem Protokolleintrag klicken, der die gewünschte Komponente enthält."
+>abstract="Die Komponenten-ID lässt sich ermitteln, indem Sie in einem Protokolleintrag, der die gewünschte Komponente enthält, auf die Infoschaltfläche klicken."
 
 <!-- markdownlint-enable MD034 -->
 

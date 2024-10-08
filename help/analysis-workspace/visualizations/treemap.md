@@ -7,7 +7,7 @@ role: User
 source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
 workflow-type: tm+mt
 source-wordcount: '133'
-ht-degree: 23%
+ht-degree: 32%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 23%
 >[!CONTEXTUALHELP]
 >id="cja_workspace_treemap_button"
 >title="Treemap"
->abstract="Erstellen Sie eine Treemap-Visualisierung, um hierarchische (baumstrukturierte) Daten mit verschachtelten Rechtecken anzuzeigen."
+>abstract="Erstellen Sie eine Treemap-Visualisierung, um hierarchische Daten (mit Baumstruktur) mit verschachtelten Rechtecken anzuzeigen."
 
 <!-- markdownlint-enable MD034 -->
 

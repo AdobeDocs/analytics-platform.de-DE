@@ -7,7 +7,7 @@ role: User
 source-git-commit: 1dff53e244e5d231e7075ce087705e33e0978096
 workflow-type: tm+mt
 source-wordcount: '228'
-ht-degree: 23%
+ht-degree: 64%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 23%
 >[!CONTEXTUALHELP]
 >id="cja_workspace_bullet_goalvalue"
 >title="Zielwert"
->abstract="**[!UICONTROL Hohes Ziel]** ist das Hauptziel, das Sie anstreben. **[!UICONTROL Niedriges Ziel]** und **[!UICONTROL mittleres Ziel]** erstellen Bereiche unterhalb des [!UICONTROL hohen Ziels]. Hinweis: Wenn die Option **[!UICONTROL Prozentsätze]** aktiviert ist, geben Sie Ziele als Ganzzahlen ein. Beispiel: `20` , wenn Ihr Ziel zwanzig Prozent beträgt."
+>abstract="**[!UICONTROL Hohes Ziel]** entspricht dem angestrebten Hauptziel. Mit **[!UICONTROL Niedriges Ziel]** und **[!UICONTROL Mittleres Ziel]** werden Bereiche unterhalb des Zielwerts [!UICONTROL Hohes Ziel] erstellt. Hinweis: Wenn die Option **[!UICONTROL Prozentsatz]** aktiviert ist, geben Sie Ziele als Ganzzahlen ein, z. B. `20`, wenn Ihr Ziel zwanzig Prozent ist."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -27,7 +27,7 @@ ht-degree: 23%
 >[!CONTEXTUALHELP]
 >id="cja_workspace_bullet_button"
 >title="Horizontales Säulendiagramm"
->abstract="Erstellen Sie eine Visualisierung eines Aufzählungsdiagramms, um anzuzeigen, wie eine Metrik mit Leistungsbereichen (Zielen) verglichen oder diese misst."
+>abstract="Erstellen Sie eine Visualisierung als horizontales Säulendiagramm, um anzuzeigen, wie eine Metrik gegenüber Leistungsbereichen (Zielen) abschneidet."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -44,7 +44,7 @@ Sie können bestimmte Einstellungen für eine [!UICONTROL Aufzählungszeichen] -
 
 | Einstellung | Beschreibung |
 |---|---|
-| **[!UICONTROL Aufzählungsoptionen]** | Geben Sie in der Visualisierung [!UICONTROL Aufzählungszeichen] Werte für **[!UICONTROL High Ziel]**, **[!UICONTROL Mid Ziel]** und **[!UICONTROL Low Ziel]** an. <br/>**[!UICONTROL Hohes Ziel ]**ist das Hauptziel, das Sie anstreben.**[!UICONTROL  Niedriges Ziel ]**und**[!UICONTROL  mittleres Ziel ]**erstellen Bereiche unterhalb des Ziels &quot;Hoch&quot;. Hinweis: Wenn die Option**[!UICONTROL  Prozentsätze ]**aktiviert ist, geben Sie Ziele als Ganzzahlen ein. Beispiel: `20` , wenn Ihr Ziel zwanzig Prozent beträgt. |
+| **[!UICONTROL Aufzählungsoptionen]** | Geben Sie in der Visualisierung [!UICONTROL Aufzählungszeichen] Werte für **[!UICONTROL High Ziel]**, **[!UICONTROL Mid Ziel]** und **[!UICONTROL Low Ziel]** an. <br/>**[!UICONTROL Hohes Ziel ]**entspricht dem angestrebten Hauptziel.**[!UICONTROL  Niedriges Ziel ]**und**[!UICONTROL  mittleres Ziel ]**erstellen Bereiche unterhalb des Ziels &quot;Hoch&quot;. Hinweis: Wenn die Option**[!UICONTROL  Prozentsatz ]**aktiviert ist, geben Sie Ziele als Ganzzahlen ein, z. B. `20`, wenn Ihr Ziel zwanzig Prozent ist. |
 
 >[!MORELIKETHIS]
 >

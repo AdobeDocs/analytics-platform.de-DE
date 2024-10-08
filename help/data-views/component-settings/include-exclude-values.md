@@ -8,7 +8,7 @@ role: Admin
 source-git-commit: a236b2126c4b998b4d97caab014556e3ee3a9e83
 workflow-type: tm+mt
 source-wordcount: '353'
-ht-degree: 94%
+ht-degree: 97%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 94%
 >[!CONTEXTUALHELP]
 >id="cja_dataview_component_metric_includeexcludevalues"
 >title="Werte einschließen/ausschließen"
->abstract="Metrik so filtern, dass nur Werte gezählt werden, die spezifischen Kriterien entsprechen."
+>abstract="Filtern Sie eine Metrik so, dass nur Werte gezählt werden, die bestimmten Kriterien entsprechen."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -28,7 +28,7 @@ ht-degree: 94%
 >[!CONTEXTUALHELP]
 >id="cja_dataview_component_dimension_includeexcludevalues"
 >title="Werte einschließen/ausschließen"
->abstract="Engen Sie eine Dimension so ein, dass nur Werte enthalten sind, die spezifischen Kriterien entsprechen. Ein- und Ausschlüsse werden vorgenommen, bevor die Zuordnung und etwaige Filter in Berichten angewendet werden.<br/><br/>**Parameter **<br/>**Groß-/Kleinschreibung beachten**: Bestimmen Sie, ob bei der folgenden Filterlogik zwischen Groß- und Kleinschreibung unterschieden wird."
+>abstract="Schränken Sie eine Dimension so ein, dass nur Werte eingeschlossen werden, die bestimmten Kriterien entsprechen. Einschlüsse und Ausschlüsse erfolgen vor der Zuordnung und vor Filtern in Berichten.<br/><br/>**Parameter **<br/>**Von Schreibweise abhängig**: Bestimmen Sie, ob die folgende Filterlogik von der Groß- und Kleinschreibung abhängig ist."
 
 <!-- markdownlint-enable MD034 -->
 

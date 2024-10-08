@@ -7,7 +7,7 @@ role: User
 source-git-commit: df0fd0af8a22c84705c3dea11065132359dd80ff
 workflow-type: tm+mt
 source-wordcount: '1948'
-ht-degree: 16%
+ht-degree: 17%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 16%
 >[!CONTEXTUALHELP]
 >id="cja_components_audiences_refreshfrequency"
 >title="Häufigkeit der Aktualisierung"
->abstract="Erfahren Sie, wie oft die Mitgliedschaft einer Zielgruppe neu bewertet wird.<br/>Einmalige Audiences werden nur einmal ausgewertet."
+>abstract="Erfahren Sie, wie oft die Mitgliedschaft einer Zielgruppe neu bewertet wird.<br/>Einmalige Zielgruppen werden nur einmal ausgewertet."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -26,8 +26,8 @@ ht-degree: 16%
 
 >[!CONTEXTUALHELP]
 >id="cja_components_audiences_audiencelimit"
->title="Zielgruppenlimit"
->abstract="Die Anzahl der Aktualisierungen der Zielgruppen ist begrenzt, je nachdem, wie oft sie durchgeführt werden."
+>title="Zielgruppen-Limit"
+>abstract="Die Aktualisierung von Zielgruppen ist abhängig davon, wie oft sie aktualisiert werden, begrenzt."
 
 <!-- markdownlint-enable MD034 -->
 

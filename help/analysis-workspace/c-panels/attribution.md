@@ -7,7 +7,7 @@ role: User
 source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
 workflow-type: tm+mt
 source-wordcount: '669'
-ht-degree: 40%
+ht-degree: 44%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 40%
 >[!CONTEXTUALHELP]
 >id="cja_workspace_attribution_panel"
 >title="Attributionsbedienfeld"
->abstract="Vergleichen und visualisieren Sie im Handumdrehen eine beliebige Anzahl von Attributionsmodellen unter Verwendung verschiedener Dimensionen und Konversionskennzahlen.<br/><br/>**Parameter **<br/>**Kanal**<br/> Die Dimension, der zugeschrieben werden soll. Diese Dimension kann Marketing-Kanäle, Kampagnen oder eine beliebige andere Dimension sein.<br/>**Modelle**<br/> Das Modell bestimmt, wie Guthaben zu Touchpoints zugewiesen wird.<br/>**Lookback-Fenster**<br/> Diese Einstellung bestimmt das Fenster der Datenzuordnung, das für jede Konvertierung gilt."
+>abstract="Vergleichen und visualisieren Sie im Handumdrehen eine beliebige Anzahl von Attributionsmodellen unter Verwendung verschiedener Dimensionen und Konversionskennzahlen.<br/><br/>**Parameter **<br/>**Kanal**<br/> Die Dimension, der zugeschrieben werden soll. Bei dieser Dimension kann es sich um Marketing-Kanäle, Kampagnen oder beliebige andere Dimensionen handeln.<br/>**Modelle**<br/> Das Modell bestimmt, wie Credits zu Touchpoints zugewiesen werden.<br/>**Lookback-Fenster**<br/> Diese Einstellung bestimmt das Fenster der Datenattribution, das für jede Konversion gilt."
 >additional-url="https://www.youtube.com/watch?v=Yu0hy2klzA0" text="Attribution IQ-Bedienfeld"
 
 <!-- markdownlint-enable MD034 -->

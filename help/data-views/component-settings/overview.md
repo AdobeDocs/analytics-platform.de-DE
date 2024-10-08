@@ -8,7 +8,7 @@ role: Admin
 source-git-commit: a236b2126c4b998b4d97caab014556e3ee3a9e83
 workflow-type: tm+mt
 source-wordcount: '554'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 94%
 >[!CONTEXTUALHELP]
 >id="cja_dataview_component_settings"
 >title="Einstellungen der Komponente"
->abstract="Zeigen Sie den Namen, die Beschreibung und andere Einstellungen einer Komponente an und konfigurieren Sie sie.<br/><br/>**Parameter **<br/>**Komponente in Berichten ausblenden**: Wenn Sie dieses Kontrollkästchen aktivieren, wird diese Komponente bei der Berichterstellung für Benutzer ohne Administratorrechte ausgeblendet. Administratoren können weiterhin darauf zugreifen, indem sie **[!UICONTROL Alle Komponenten anzeigen]** in einem Workspace-Projekt auswählen."
+>abstract="Zeigen Sie den Namen, die Beschreibung und andere Einstellungen für eine Komponente an und konfigurieren Sie sie.<br/><br/>**Parameter **<br/>**Komponente in Berichten ausblenden**: Wenn Sie dieses Kontrollkästchen aktivieren, wird diese Komponente in Berichten für Benutzende ohne Administratorrechte ausgeblendet. Admins können weiterhin darauf zugreifen, indem sie in einem Workspace-Projekt auf **[!UICONTROL Alle Komponenten anzeigen]** klicken."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -27,8 +27,8 @@ ht-degree: 94%
 
 >[!CONTEXTUALHELP]
 >id="cja_dataview_component_contextlabels"
->title="Kontext-Labels"
->abstract="Das Entfernen eines Kontext-Labels kann sich auf bestimmte Bedienfelder oder Berichte auswirken, bei denen die Komponente erforderlich ist."
+>title="Kontextbeschriftungen"
+>abstract="Das Entfernen einer Kontextbeschriftung kann sich auf bestimmte Bedienfelder oder Berichte auswirken, in denen die Komponente erforderlich ist."
 
 <!-- markdownlint-enable MD034 -->
 

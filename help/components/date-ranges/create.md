@@ -7,7 +7,7 @@ role: User
 source-git-commit: df0fd0af8a22c84705c3dea11065132359dd80ff
 workflow-type: tm+mt
 source-wordcount: '513'
-ht-degree: 4%
+ht-degree: 7%
 
 ---
 
@@ -31,14 +31,14 @@ Um die Anmerkung zu definieren, verwenden Sie den [[!UICONTROL Generator für Da
 -->
 
 
-## Generator für Datumsbereiche {#date-range-builder}
+## Datumsbereichsgenerator {#date-range-builder}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja_components_dateranges_endtime"
 >title="Endzeit"
->abstract="Endzeiten umfassen immer 59 Sekunden."
+>abstract="Endzeiten umfassen immer 59 Sekunden."
 
 <!-- markdownlint-enable MD034 -->
 

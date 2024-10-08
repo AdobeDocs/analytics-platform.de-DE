@@ -1,23 +1,23 @@
 ---
 description: Der Generator für berechnete Metriken bietet eine Arbeitsfläche, in der Sie Dimensionen, Metriken, Filter und Funktionen per Drag-and-Drop verschieben können, um benutzerdefinierte Metriken basierend auf Container-Hierarchielogik, Regeln und Operatoren zu erstellen. Mit diesem integrierten Entwicklungstool können Sie einfache berechnete Metriken oder komplexe, erweiterte berechnete Metriken erstellen und speichern.
-title: Berechnete Metriken erstellen
+title: Erstellen berechneter Metriken
 feature: Calculated Metrics
 exl-id: 4d03a51d-c676-483c-98e2-d7283e8d71b0
 source-git-commit: 8f3b30ca6d20d633669d7e9180884c24e0b9a52e
 workflow-type: tm+mt
 source-wordcount: '1526'
-ht-degree: 6%
+ht-degree: 10%
 
 ---
 
-# Berechnete Metriken erstellen {#build-metrics}
+# Erstellen berechneter Metriken {#build-metrics}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja_components_calculatedmetrics_productcompatibility"
 >title="Produktkompatibilität"
->abstract="Gibt an, wo auf der Customer Journey Analytics diese berechnete Metrik verwendet werden kann, z. B. in Analysis Workspace, Report Builder usw. Einige berechnete Metriken können nicht mit Experimenten verwendet werden."
+>abstract="Gibt an, wo in Customer Journey Analytics diese berechnete Metrik verwendet werden kann, z. B. in Analysis Workspace und Report Builder. Einige berechnete Metriken können nicht mit Experimenten verwendet werden."
 >additional-url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-workspace/panels/experimentation#use-in-experimentation" text="Verwenden von berechneten Metriken in Experimenten"
 
 <!-- markdownlint-enable MD034 -->
@@ -27,7 +27,7 @@ ht-degree: 6%
 >[!CONTEXTUALHELP]
 >id="cja_components_calculatedmetrics_externalid"
 >title="Externe ID"
->abstract="Eine Änderung der externen ID kann sich auf die Darstellung der berechneten Metrik in externen Quellen auswirken, z. B. auf Business Intelligence-Tools"
+>abstract="Eine Änderung der externen ID kann sich auf die Darstellung der berechneten Metrik in externen Quellen auswirken, z. B. auf Business Intelligence-Tools"
 
 <!-- markdownlint-enable MD034 -->
 
