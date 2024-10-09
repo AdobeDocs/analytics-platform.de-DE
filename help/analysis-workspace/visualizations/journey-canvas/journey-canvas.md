@@ -4,9 +4,9 @@ title: Journey-Arbeitsfläche
 feature: Visualizations
 role: User
 exl-id: be03c3b2-8faf-47b8-b3ab-e953202bf488
-source-git-commit: c79d1174d78c0bfb1c9b082eb93855bdab4283e4
+source-git-commit: 7a8c1dd1135f827acfe09f39823c6fbefbcd444d
 workflow-type: tm+mt
-source-wordcount: '1367'
+source-wordcount: '1697'
 ht-degree: 2%
 
 ---
@@ -37,9 +37,36 @@ Zu den wichtigsten Funktionen der Visualisierung der Journey-Arbeitsfläche geh�
 
 ## Potenzielle Erkenntnisse
 
-Im Folgenden finden Sie einige Beispiele für die Arten von Einblicken, die Journey-Arbeitsfläche bieten kann. Sie können auswählen, ob diese Einblicke auf allen Personen in der Datenansicht, allen Personen, die die Journey gestartet haben, oder allen Personen aus dem vorherigen Knoten der Journey basieren.
+Journey-Arbeitsfläche bietet umsetzbare Einblicke für die komplexesten Journey.
 
-**Fallthrough**
+### Pfad mit der höchsten Konversionsrate {#conversion-rate-caption}
+
+Der auffälligste Einblick in die Journey-Arbeitsfläche wird als Beschriftung oben auf der Arbeitsfläche angezeigt.
+
+Diese Beschriftung fasst zusammen, welche von allen Pfaden im Journey die höchste Konversionsrate aufwies.
+
+![Journey canvas insight caption](assets/journey-canvas-caption.png)
+
+Beachten Sie bei der Interpretation dieser Beschriftung Folgendes:
+
+* Ein _path_ wird als ein Startknoten definiert, der durch Pfeile mit einem Endknoten verbunden ist, wobei eine beliebige Anzahl von Knoten zwischen ihnen verbunden ist.
+
+* Die Berechnung der Konversionsrate hängt vom Typ der Journey ab (die Anzahl der Start- und Endknoten im Journey sowie davon, ob sich die Pfade zwischen ihnen überschneiden).
+
+  In der folgenden Tabelle wird beschrieben, wie Konversionsraten basierend auf dem Journey-Typ berechnet werden:
+
+  | Journey-Typ | Berechnung der Konversionsrate | Beispiel |
+  |---------|----------|---------|
+  | **Ein einzelner Startknoten und ein einzelner Endknoten** | Die Konversionsrate wird berechnet, indem die Zahl des Endknotens durch die des Anfangsknotens geteilt wird. | ![Journey mit mehreren Beginns, die in einen gemeinsamen Knoten konvertieren](assets/journey-canvas-single-path.png) |
+  | **Ein einzelner Startknoten und mehrere Endknoten** | Die Konversionsrate wird berechnet, indem der Endknoten mit der höchsten Zahl ermittelt und durch den Anfangsknoten geteilt wird. | ![Journey mit mehreren Beginns, die in einen gemeinsamen Knoten konvertieren](assets/journey-canvas-singlestart-multiend.png) |
+  | **Mehrere eigenständige Pfade mit jedem Pfad, der einen einzelnen Startknoten und einen einzelnen Endknoten enthält** | Die Konversionsrate wird berechnet, indem die Zahl des Endknotens durch die des Anfangsknotens geteilt wird. Der Pfad mit der höchsten Konversionsrate wird in der Beschriftung beschrieben. | ![Journey mit mehreren Beginns, die in einen gemeinsamen Knoten konvertieren](assets/journey-canvas-multi-start-separate.png) |
+  | **Mehrere Startknoten, die an einem beliebigen Punkt im Journey in einen gemeinsamen Knoten konvertieren** | Die Konversionsrate wird berechnet, indem der Endknoten mit der höchsten Nummer ermittelt und durch die Division der Nummer durch die des Anfangsknotens mit der niedrigsten Nummer geteilt wird. | ![Journey mit mehreren Beginns, die in einen gemeinsamen Knoten konvertieren](assets/journey-canvas-multi-start-converge.png) |
+
+### Fallthrough, Fallout und mehr
+
+Im Folgenden finden Sie einige Beispiele für weitere Einblicke, die Journey-Arbeitsfläche bieten kann. Sie können auswählen, ob diese Einblicke auf allen Personen in der Datenansicht, allen Personen, die die Journey gestartet haben, oder allen Personen aus dem vorherigen Knoten der Journey basieren.
+
+#### Fall-through (Verbleib)
 
 * Anzahl und Prozentsatz der Personen, die die Journey abgeschlossen haben (am Endknoten angekommen)
 
@@ -47,14 +74,13 @@ Im Folgenden finden Sie einige Beispiele für die Arten von Einblicken, die Jour
 
 * Der häufigste Schritt, der nach oder vor einem bestimmten Knoten der Journey erfolgte
 
-**Fallout**
+#### Fallout
 
 * Die Knoten der Journey, wo die Leute am häufigsten aus der Journey herausgefallen sind (sie kamen nie an einem der unmittelbar nächsten Knoten an)
 
-**Sonstige**
+#### Zusätzliche Daten für jeden Knoten
 
-* Zusätzliche Daten für jeden Knoten im Journey (durch Hinzufügen einer Aufschlüsselungsdimension für den Knoten)
-
+* Fügen Sie auf einem beliebigen Knoten der Journey eine Aufschlüsselungsdimension hinzu, um zusätzliche Daten für diesen Knoten anzuzeigen
 
 ## Wählen Sie zwischen Journey-Arbeitsfläche und Fallout-Visualisierungen
 
