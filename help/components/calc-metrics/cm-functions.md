@@ -1,31 +1,41 @@
 ---
-title: Referenz – Grundfunktionen
+title: Grundlegende Funktionen
 description: Mit dem Generator für berechnete Metriken können Sie statistische und mathematische Funktionen anwenden, um erweiterte berechnete Metriken zu erstellen.
 feature: Calculated Metrics
 exl-id: 63775753-337b-4dec-a3a2-a3a0ee9aac2e
 role: User
-source-git-commit: ecf8156df0b31e81f1a5546829c6100831b2a600
+source-git-commit: 1a84fc71eb29ceabf3a3c5c3e333b78b882ea966
 workflow-type: tm+mt
-source-wordcount: '1060'
-ht-degree: 32%
+source-wordcount: '1185'
+ht-degree: 30%
 
 ---
 
-# Referenz – Grundfunktionen
+# Grundlegende Funktionen
 
 
-Mit dem [Generator für berechnete Metriken](cm-workflow/cm-build-metrics.md) können Sie statistische und mathematische Funktionen anwenden.
-
-Im Folgenden werden die Funktionen und ihre Definitionen alphabetisch aufgelistet.
+Mit dem [Generator für berechnete Metriken](cm-workflow/cm-build-metrics.md) können Sie statistische und mathematische Funktionen anwenden. Dieser Artikel dokumentiert eine alphabetische Liste der Funktionen und ihrer Definitionen.
 
 >[!NOTE]
 >
 >Wenn [!DNL metric] als Argument in einer Funktion angegeben ist, sind auch andere Ausdrücke von Metriken zulässig. Beispiel: [SPALTE MAXIMUM(metrics)](#column-maximum) ermöglicht auch [SPALTE MAXIMUM(PageViews + Visits)](#column-maximum).
 
 
+
 ## Vergleich zwischen Tabellenfunktionen und Zeilenfunktionen
 
-Bei einer Tabellenfunktion ist die Ausgabe für jede Tabellenzeile gleich. Bei einer Zeilenfunktion unterscheidet sich die Ausgabe für jede Tabellenzeile. Gegebenenfalls und relevant wird eine Funktion mit dem Funktionstyp kommentiert.
+Bei einer Tabellenfunktion ist die Ausgabe für jede Tabellenzeile gleich. Bei einer Zeilenfunktion ist die Ausgabe für jede Tabellenzeile unterschiedlich.
+
+Gegebenenfalls wird eine Funktion mit dem Typ der Funktion kommentiert: [!BADGE Tabelle]{type="Neutral"}[!BADGE Zeile ]{type="Neutral"}
+
+## Was bedeutet der Parameter include-zeros?
+
+Damit wird angegeben, ob Nullen in die Berechnung einbezogen werden sollen. Manchmal bedeutet Null *nichts*, aber manchmal ist es wichtig.
+
+Wenn Sie beispielsweise eine Umsatzmetrik haben und dann eine Seitenansichtsmetrik zum Bericht hinzufügen, gibt es plötzlich mehr Zeilen für Ihren Umsatz, die alle null sind. Sie möchten wahrscheinlich nicht, dass sich diese zusätzliche Metrik auf **[MEAN](cm-functions.md#mean)**, **[ZEILENMINIMUM](cm-functions.md#row-min)**, **[QUARTILE](cm-functions.md#quartile)** und mehr Berechnungen auswirkt, die Sie in der Umsatzspalte haben. In diesem Fall würden Sie den Parameter `include-zeros` überprüfen.
+
+Ein alternatives Szenario besteht darin, dass Sie zwei Metriken von Interesse haben und eine Metrik einen höheren Durchschnitt oder ein höheres Minimum aufweist, da einige der Zeilen Nullen sind.  In diesem Fall können Sie festlegen, dass der Parameter nicht auf Nullen überprüft wird.
+
 
 
 ## Absolutwert

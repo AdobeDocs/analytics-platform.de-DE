@@ -1,29 +1,33 @@
 ---
-title: Referenz – Erweiterte Funktionen
+title: Erweiterte Funktionen
 description: Greifen Sie auf diese Funktionen zu, indem Sie in der Dropdown-Liste „Funktionen“ die Option „Erweitert anzeigen“ auswählen.
 feature: Calculated Metrics
 exl-id: 3689a499-817d-4a59-8a1f-5f7bda297268
 role: User
-source-git-commit: ecf8156df0b31e81f1a5546829c6100831b2a600
+source-git-commit: 1a84fc71eb29ceabf3a3c5c3e333b78b882ea966
 workflow-type: tm+mt
-source-wordcount: '3100'
+source-wordcount: '3126'
 ht-degree: 20%
 
 ---
 
-# Referenz – Erweiterte Funktionen
+# Erweiterte Funktionen
 
-Greifen Sie auf diese Funktionen zu, indem Sie im Komponentenbereich die Liste **[!UICONTROL Alle anzeigen]** unter ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL Funktionen]** auswählen. Scrollen Sie nach unten, um die Liste der erweiterten Funktionen anzuzeigen.
+Mit dem [Generator für berechnete Metriken](cm-workflow/cm-build-metrics.md) können Sie statistische und mathematische Funktionen anwenden. Dieser Artikel dokumentiert eine alphabetische Liste der erweiterten Funktionen und ihrer Definitionen.
+
+Greifen Sie auf diese Funktionen zu, indem Sie im Komponentenbereich die Liste **[!UICONTROL Alle anzeigen]** unter ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL Funktionen]** auswählen. Scrollen Sie nach unten, um die Liste der **[!UICONTROL erweiterten Funktionen]** anzuzeigen.
 
 ## Vergleich zwischen Tabellenfunktionen und Zeilenfunktionen
 
-Bei einer Tabellenfunktion ist die Ausgabe für jede Tabellenzeile gleich. Bei einer Zeilenfunktion unterscheidet sich die Ausgabe für jede Tabellenzeile. Gegebenenfalls und relevant wird eine Funktion mit dem Funktionstyp kommentiert.
+Bei einer Tabellenfunktion ist die Ausgabe für jede Tabellenzeile gleich. Bei einer Zeilenfunktion ist die Ausgabe für jede Tabellenzeile unterschiedlich.
+
+Gegebenenfalls wird eine Funktion mit dem Typ der Funktion kommentiert: [!BADGE Tabelle]{type="Neutral"}[!BADGE Zeile ]{type="Neutral"}
 
 ## Was bedeutet der Parameter include-zeros?
 
 Damit wird angegeben, ob Nullen in die Berechnung einbezogen werden sollen. Manchmal bedeutet Null *nichts*, aber manchmal ist es wichtig.
 
-Wenn Sie beispielsweise eine Umsatzmetrik haben und dann eine Seitenansichtsmetrik zum Bericht hinzufügen, gibt es plötzlich mehr Zeilen für Ihren Umsatz, die alle null sind. Sie möchten wahrscheinlich nicht, dass sich diese zusätzliche Metrik auf [MEAN](cm-functions.md#mean), [MIN](cm-functions.md#row-min), [QUARTILE](cm-functions.md#quartile) und weitere Berechnungen in der Umsatzspalte auswirkt. In diesem Fall würden Sie den Parameter `include-zeros` überprüfen.
+Wenn Sie beispielsweise eine Umsatzmetrik haben und dann eine Seitenansichtsmetrik zum Bericht hinzufügen, gibt es plötzlich mehr Zeilen für Ihren Umsatz, die alle null sind. Sie möchten wahrscheinlich nicht, dass sich diese zusätzliche Metrik auf **[MEAN](cm-functions.md#mean)**, **[ZEILENMINIMUM](cm-functions.md#row-min)**, **[QUARTILE](cm-functions.md#quartile)** und mehr Berechnungen auswirkt, die Sie in der Umsatzspalte haben. In diesem Fall würden Sie den Parameter `include-zeros` überprüfen.
 
 Ein alternatives Szenario besteht darin, dass Sie zwei Metriken von Interesse haben und eine Metrik einen höheren Durchschnitt oder ein höheres Minimum aufweist, da einige der Zeilen Nullen sind.  In diesem Fall können Sie festlegen, dass der Parameter keine Nullen enthält.
 
@@ -918,13 +922,13 @@ Der Rückgabewert ist die Wahrscheinlichkeit, die Teststatistik x zu erhalten, b
 
 **Beispiele:**
 
-1. Verwenden Sie ihn zum Auffinden von Ausreißern:
+1. Verwenden Sie die -Funktion, um Ausreißer zu finden:
 
    ```
    T-TEST(Z-SCORE(bouncerate), ROW COUNT - 1, 2)
    ```
 
-1. Kombinieren Sie ihn mit **[IF](#if)** , um sehr hohe oder niedrige Absprungraten zu ignorieren und Sitzungen für alles andere zu zählen:
+1. Kombinieren Sie die Funktion mit **[IF](#if)** , um sehr hohe oder niedrige Absprungraten zu ignorieren und Sitzungen für alle anderen zu zählen:
 
    ```
    IF(T-TEST(Z-SCORE(bouncerate), ROW COUNT - 1, 2) < 0.01, 0, sessions )
