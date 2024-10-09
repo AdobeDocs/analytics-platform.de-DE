@@ -4,7 +4,7 @@ description: Listet Inhaltsaktualisierungen für Dokumentation zu Customer Journ
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: ba7b16bd7bae75c3ecb72797236405519d361921
+source-git-commit: e355194d6699128ac817ea564940c0afdea61efc
 workflow-type: tm+mt
 source-wordcount: '4108'
 ht-degree: 70%
@@ -113,7 +113,7 @@ Die folgenden Aktualisierungen wurden seit der ersten Erstellung der Customer Jo
 | **Juni 2023** | |
 | Kanalübergreifende Analyse und Zuordnung | Um die bevorstehenden Änderungen vorwegzunehmen, die die Zuordnung ermöglichen, und um weiter zu klären, wie die kanalübergreifende Analyse mithilfe der Zuordnung erhöht werden kann, wurde die Dokumentation zur Funktionalität der Cross-Channel-Analyse überarbeitet. Sie verweist nun auf die [Cross-Channel-Analyse](../use-cases/cross-channel/cross-channel.md) als Fähigkeit und Anwendungsfall von Customer Journey Analytics sowie auf die [Zuordnung](../stitching/overview.md) als eine wichtige Funktionalität zur Erreichung dieses Ziels. |
 | Zugriff von PowerBI und Tableau auf Customer Journey Analytics-Datenansichten | Die Customer Journey Analytics BI-Erweiterung ermöglicht SQL-Zugriff auf Datenansichten, die Sie unter Customer Journey Analytics definiert haben. [Weitere Informationen](/help/data-views/bi-extension.md) |
-| Adobe Journey Optimizer-Datenansichten | Customer Journey Analytics-Admins haben in Customer Journey Analytics Zugriff auf einige zusätzliche Datenansichten mit dem Titel „AJO-Datenansicht (Sandbox-Name)“. [Weitere Informationen](https://experienceleague.adobe.com/de/docs/journey-optimizer/using/content-management/content-experiment/reporting-configuration). |
+| Adobe Journey Optimizer-Datenansichten | Customer Journey Analytics-Admins haben in Customer Journey Analytics Zugriff auf einige zusätzliche Datenansichten mit dem Titel „AJO-Datenansicht (Sandbox-Name)“. [Weitere Informationen](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channel-report/reporting-configuration). |
 | Währungsumrechnung | Die Dokumentation zur Unterstützung der [Währungsumrechnung](../data-views/component-settings/format.md#currency) wurde aktualisiert. |
 | Aktualisierungen zu berechneten Metriken | Die Dokumentation zu berechneten Metriken wurde wie folgt aktualisiert, um sie an die aktuellen Customer Journey Analytics-Funktionen anzupassen: <ul><li>Aktualisierte Liste der in Customer Journey Analytics verfügbaren [standardmäßig berechneten Metriken](/help/components/calc-metrics/default-calcmetrics.md)</li><li>Aktualisierte Screenshots und Verfahren in verschiedenen Artikeln zu berechneten Metriken </li></ul> |
 | **Mai 2023** | |

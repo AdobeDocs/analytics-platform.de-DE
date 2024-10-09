@@ -4,7 +4,7 @@ description: Greifen Sie auf diese Funktionen zu, indem Sie in der Dropdown-List
 feature: Calculated Metrics
 exl-id: 3689a499-817d-4a59-8a1f-5f7bda297268
 role: User
-source-git-commit: 1a84fc71eb29ceabf3a3c5c3e333b78b882ea966
+source-git-commit: e355194d6699128ac817ea564940c0afdea61efc
 workflow-type: tm+mt
 source-wordcount: '3126'
 ht-degree: 20%
@@ -168,7 +168,7 @@ CDF-Z(-3) ? 0.0013499
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL CONFIDENCE(Normalisierungs-Container, Erfolgsmetrik, Kontrolle, Signifikanztreshold)]**
 
-Berechnen Sie die beliebig zeitgültige Konfidenz **lower** mithilfe der WASKR-Methode, wie in [Zeitgleichmäßige zentrale Grenztheorie und asymptotische Konfidenzsequenzen](http://arxiv.org/pdf/2103.06476) beschrieben.
+Berechnen Sie die beliebig zeitgültige Konfidenz **lower** mithilfe der WASKR-Methode, wie in [Zeitgleichmäßige zentrale Grenztheorie und asymptotische Konfidenzsequenzen](https://arxiv.org/pdf/2103.06476) beschrieben.
 
 Konfidenz ist ein probabilistischer Messwert dafür, wie viele Beweise dafür vorliegen, dass eine bestimmte Variante mit der Kontrollvariante identisch ist. Bei einer höheren Konfidenz deutet weniger darauf hin, dass die Annahme stimmt, dass die Kontroll- und Nicht-Kontrollvariante die gleiche Performance aufweisen.
 
@@ -183,7 +183,7 @@ Konfidenz ist ein probabilistischer Messwert dafür, wie viele Beweise dafür vo
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL CONFIDENCE(Normalisierungs-Container, Erfolgsmetrik, Kontrolle, Signifikanztreshold)]**
 
-Berechnen Sie die zeitgültige Konfidenz **upper** mithilfe der WASKR-Methode, wie in der [Zeitgleichmäßigen Theorie der mittleren Grenze und asymptotischen Konfidenzsequenzen](http://arxiv.org/pdf/2103.06476) beschrieben.
+Berechnen Sie die zeitgültige Konfidenz **upper** mithilfe der WASKR-Methode, wie in der [Zeitgleichmäßigen Theorie der mittleren Grenze und asymptotischen Konfidenzsequenzen](https://arxiv.org/pdf/2103.06476) beschrieben.
 
 Konfidenz ist ein probabilistischer Messwert dafür, wie viele Beweise dafür vorliegen, dass eine bestimmte Variante mit der Kontrollvariante identisch ist. Bei einer höheren Konfidenz deutet weniger darauf hin, dass die Annahme stimmt, dass die Kontroll- und Nicht-Kontrollvariante die gleiche Performance aufweisen.
 

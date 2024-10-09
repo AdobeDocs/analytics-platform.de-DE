@@ -5,9 +5,9 @@ exl-id: c8b0b71f-8ed3-4aad-a0f8-4d5ad8d7a7bd
 feature: Adobe Product Analytics, Guided Analysis
 keywords: Produktanalysen
 role: User
-source-git-commit: 216783872bf4dd26fe2137dffe8994d03193b604
+source-git-commit: e355194d6699128ac817ea564940c0afdea61efc
 workflow-type: tm+mt
-source-wordcount: '651'
+source-wordcount: '649'
 ht-degree: 2%
 
 ---
@@ -34,7 +34,7 @@ In der Abfrageleiste können Sie die folgenden Komponenten konfigurieren:
 
 * **[!UICONTROL Ansicht]**: Zwischen diesem Ansichtstyp und [Konversionstrends](conversion-trends.md) wechseln.
 * **[!UICONTROL Schritte]**: Die Ereignis-Touchpoints, die Sie verfolgen möchten. Jede Leiste im Diagramm stellt einen Schritt dar. Sie können bis zu zehn Schritte einbeziehen.
-   * [!UICONTROL Vergleichen]: Jeder Schritt bietet eine Option zum Vergleichen mehrerer Ereignisse in einem einzelnen Trichterschritt und zum Erstellen eines &quot;abgespalteten Trichters&quot;. Mit dieser Funktion können Sie die Reibung von zwei Journey nebeneinander vergleichen, ohne zwei separate Analysen zu erstellen. Dies ist nützlich, wenn Schritt-Optionen vorhanden sind oder ein A/B-Experiment im Trichter ausgeführt wird. Unter [Trichterreibungsanalyse](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/guided-analysis/funnel/funnel-friction-analysis) in Customer Journey Analytics-Tutorials finden Sie ein Video, in dem erläutert wird, wie Trichter verglichen werden.
+   * [!UICONTROL Vergleichen]: Jeder Schritt bietet eine Option zum Vergleichen mehrerer Ereignisse in einem einzelnen Trichterschritt und zum Erstellen eines &quot;abgespalteten Trichters&quot;. Mit dieser Funktion können Sie die Reibung von zwei Journey nebeneinander vergleichen, ohne zwei separate Analysen zu erstellen. Dies ist nützlich, wenn Schritt-Optionen vorhanden sind oder ein A/B-Experiment im Trichter ausgeführt wird. Unter [Trichter](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/guided-analysis/funnel) in Customer Journey Analytics-Tutorials finden Sie ein Video, in dem erläutert wird, wie Trichter verglichen werden.
 * **[!UICONTROL Zählt als]**: Der Bereich, der auf den Trichter angewendet werden soll. Zu den Optionen gehören [!UICONTROL Sitzungen] und [!UICONTROL Benutzer].
    * [!UICONTROL Sitzungen]: Alle Schritte müssen innerhalb derselben Sitzung erfolgen, damit sie gezählt werden.
    * [!UICONTROL Benutzer]: Alle Schritte müssen innerhalb des ausgewählten Berichtsfensters erfolgen, damit sie gezählt werden.
