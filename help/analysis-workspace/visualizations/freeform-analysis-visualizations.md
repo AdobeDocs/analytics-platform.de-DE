@@ -5,9 +5,9 @@ title: Visualisierungsübersicht
 feature: Visualizations
 exl-id: ca9e0561-7a54-487a-9fdc-3bcf34f9bdb1
 role: User
-source-git-commit: 714e37433b12713e45a66ebd64771c050edb89a5
+source-git-commit: b85ad91a80f277aaf35f1e3aa3366a46f6478215
 workflow-type: tm+mt
-source-wordcount: '1592'
+source-wordcount: '1617'
 ht-degree: 15%
 
 ---
@@ -35,6 +35,7 @@ Die folgenden Visualisierungstypen sind in Analysis Workspace verfügbar:
 | ![GraphHistogramm](/help/assets/icons/Histogram.svg) | [Histogramm](/help/analysis-workspace/visualizations/histogram.md) | Eine Histogrammvisualisierung fasst Personen, Besuche oder Ereignisse basierend auf einem Metrikvolumen in Behälter zusammen. |
 | ![GraphBarHorizontal](/help/assets/icons/GraphBarHorizontal.svg) | [Horizontalbalken](/help/analysis-workspace/visualizations/horizontal-bar.md) | Eine horizontale Balkenvisualisierung zeigt horizontale Balken, die verschiedene Werte aus einer oder mehreren Metriken darstellen. |
 | ![GraphBarHorizontalStack](/help/assets/icons/GraphBarHorizontalStacked.svg) | [Horizontalbalken gestapelt](/help/analysis-workspace/visualizations/horizontal-bar.md) | Eine gestapelte horizontale Balkenvisualisierung zeigt horizontale Balken, die verschiedene Werte aus einer oder mehreren Metriken darstellen. |
+| ![Verzweigung3](/help/assets/icons/Branch3.svg) | [Journey canvas](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md) | Mit einer Journey-Arbeitsflächenvisualisierung können Sie die Journey analysieren und Einblicke in die gewinnen, die Sie Ihren Benutzern und Kunden bereitstellen. |
 | ![KeyMetrics](/help/assets/icons/KeyMetrics.svg) | [Zusammenfassung der Schlüsselmetriken](/help/analysis-workspace/visualizations/key-metric.md) | Eine Visualisierung der Schlüsselmetriken-Zusammenfassung kombiniert die Visualisierungen für Zeilen, Zusammenfassungen und Zusammenfassungsnummern. |
 | ![GraphTrend](/help/assets/icons/GraphTrend.svg) | [Linie](/help/analysis-workspace/visualizations/line.md) | Eine Linienvisualisierung stellt Metriken anhand einer Linie dar, die angibt, wie sich Werte über einen bestimmten Zeitraum ändern. Ein Liniendiagramm verwendet die Zeit entlang der X-Achse. |
 | ![GraphStreuung](/help/assets/icons/GraphScatter.svg) | [Streuung](/help/analysis-workspace/visualizations/scatterplot.md) | Eine Streudiagramm-Visualisierung zeigt die Beziehung zwischen Dimensionselementen und bis zu drei Metriken. |
