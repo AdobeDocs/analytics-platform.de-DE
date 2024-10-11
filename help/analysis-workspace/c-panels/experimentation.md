@@ -4,10 +4,10 @@ title: Experimentier-Bedienfeld
 feature: Panels
 exl-id: e11169b4-2c73-4dd4-bca7-c26189d60631
 role: User
-source-git-commit: 6a279ac39e6b94200ff93ac1a3796d202e6349c7
+source-git-commit: 835f061a5fdc52b39a7c8fee1e3ce474118d0e68
 workflow-type: tm+mt
-source-wordcount: '2167'
-ht-degree: 26%
+source-wordcount: '2145'
+ht-degree: 22%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 26%
 >[!CONTEXTUALHELP]
 >id="cja_workspace_experimentation_panel"
 >title="Experimentieren"
->abstract="Vergleichen Sie verschiedene Anwendererlebnisse bzw. Marketing- oder Messaging-Varianten miteinander, um zu ermitteln, was für ein bestimmtes Ergebnis die beste Lösung ist. <br/><br/>**Parameter **<br/>**Experiment**: Das zu analysierende Experiment.<br>**Kontrollvariante**: Die Kontrollvariante für das ausgewählte Experiment.<br/>**Erfolgsmetrik**: Bis zu 5 standardmäßige (nicht berechnete) Erfolgsmetriken zur Analyse des Experiments.<br/>**Normalisierungsmetrik**: Personen, Sitzungen oder Ereignisse. Diese Metrik (auch als Zählmethodik bezeichnet) wird zum Nenner der Steigerungsberechnung. Diese Metrik wirkt sich auch darauf aus, wie die Daten aggregiert werden, bevor die Konfidenzberechnung angewendet wird."
+>abstract="Vergleichen Sie verschiedene Anwendererlebnisse bzw. Marketing- oder Messaging-Varianten miteinander, um zu ermitteln, was für ein bestimmtes Ergebnis die beste Lösung ist. <br/><br/>**Parameter **<br/>**Experiment**: Das analysierte Experiment.<br>**Kontrollvariante**: Die Kontrollvariante für das ausgewählte Experiment.<br/>**Erfolgsmetrik**: Bis zu 5 standardmäßige (nicht berechnete) Erfolgsmetriken zur Analyse des Experiments.<br/>**Normalisierungsmetrik**: Personen, Sitzungen oder Ereignisse. Diese Metrik (auch als Zählmethodik bezeichnet) wird zum Nenner der Steigerungsberechnung. Diese Metrik wirkt sich auch darauf aus, wie die Daten aggregiert werden, bevor die Konfidenzberechnung angewendet wird."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -39,7 +39,7 @@ Erfahren Sie mehr über die [Integration zwischen Adobe Customer Journey Analyti
 
 ## Zugangssteuerung {#access}
 
-Das Experimentierungsfenster steht allen Customer Journey Analytics-Benutzern zur Verfügung. Es sind keine Administratorrechte oder anderen Berechtigungen erforderlich. Für die [Voraussetzungen](#prerequisites) sind jedoch Aktionen erforderlich, die nur Administratoren ausführen können.
+Das Experimentierungsfenster steht allen Customer Journey Analytics-Benutzern zur Verfügung. Es sind keine Administratorrechte oder anderen Berechtigungen erforderlich. Für die Voraussetzungen sind jedoch Aktionen erforderlich, die nur Administratoren durchführen können.
 
 ## Neue Funktionen in berechneten Metriken
 
@@ -52,6 +52,7 @@ Um das Experimentierfeld zu verwenden, müssen Sie die folgenden Voraussetzungen
 ### Verbindung zu Experimentdatensätzen erstellen
 
 Laut dem empfohlenen Datenschema sollten die Experimentdaten in einem [Objekt-Array](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/fields/array) gespeichert sein, in dem die Experiment- und Variantendaten in zwei separaten Dimensionen enthalten sind. Beide Dimensionen müssen sich in einem **einzelnen** -Objektarray befinden. Wenn sich Ihre Experimentdaten in einer einzigen Dimension befinden (mit Experiment- und Variantendaten in einer getrennten Zeichenfolge), können Sie die Einstellung [substring](/help/data-views/component-settings/substring.md) in Datenansichten verwenden, um die Dimension zur Verwendung im Bedienfeld in zwei aufzuteilen.
+
 
 Nachdem Ihre Experimentdaten [ in Adobe Experience Platform aufgenommen wurden, erstellen [in Customer Journey Analytics](/help/connections/create-connection.md) eine Verbindung zu einem oder mehreren Experimentdatensätzen.](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/home)
 
@@ -79,8 +80,6 @@ So verwenden Sie ein Bedienfeld **[!UICONTROL Experimentation]** :
 
 1. Beobachten Sie die [Ausgabe](#panel-output) für das Bedienfeld.
 
-   ![Das Bedienfeld &quot;Erlebnis&quot;wurde in ein Projekt gezogen.](assets/experiment.png)
-
    >[!IMPORTANT]
    >
    >Wenn die erforderliche Einrichtung in Customer Journey Analytics-Datenansichten nicht abgeschlossen wurde, erhalten Sie diese Nachricht, bevor Sie fortfahren können: [!UICONTROL Konfigurieren Sie die Dimensionen für Experiment und Variante in Datenansichten].
@@ -92,13 +91,15 @@ So verwenden Sie das Experimentierfeld:
 
 1. Konfigurieren Sie die Bedienfeldeingabeeinstellungen:
 
+   ![Das Bedienfeld &quot;Erlebnis&quot;wurde in ein Projekt gezogen.](assets/experiment-input.png)
+
    | Einstellung | Definition |
    | --- | --- |
    | **[!UICONTROL Datumsbereich]** | Der Datumsbereich für das Experimentierungsfenster wird automatisch festgelegt, basierend auf dem ersten Ereignis, das beim Customer Journey Analytics für das ausgewählte Experiment empfangen wurde. Sie können den Datumsbereich bei Bedarf auf einen spezifischeren Zeitraum beschränken oder erweitern. |
    | **[!UICONTROL Experiment]** | Eine Reihe von Varianten eines Erlebnisses, die Endbenutzern bereitgestellt wurden, um zu ermitteln, welche Erlebnisse am besten dauerhaft beibehalten werden sollten. Ein Experiment besteht aus zwei oder mehr Varianten, von denen eine als Kontrollvariante gilt. Diese Einstellung wird vorab mit den Dimensionen gefüllt, die in Datenansichten mit der Beschriftung **[!UICONTROL Experiment]** und den Experimentdaten der letzten drei Monate gekennzeichnet wurden. |
    | **[!UICONTROL Kontrollvariante]** | Eine von zwei oder mehr Änderungen im Erlebnis eines Endbenutzers, die verglichen werden, um die bessere Alternative zu ermitteln. Eine Variante muss als Kontrolle ausgewählt werden und nur eine Variante kann als Kontrollvariante betrachtet werden. Diese Einstellung enthält vorab die Dimensionen, die in Datenansichten mit der Bezeichnung **[!UICONTROL Variante]** gekennzeichnet wurden. Mit dieser Einstellung werden die Variantendaten abgerufen, die mit diesem Experiment verknüpft sind. |
-   | **[!UICONTROL Erfolgsmetriken]** | Die Metrik(en), die ein Anwender verwendet, um Varianten zu vergleichen. Die Variante mit dem wünschenswertesten Ergebnis für die Konversionsmetrik (egal ob am höchsten oder am niedrigsten) wird zur „Variante mit der besten Performance“ eines Experiments erklärt. Sie können bis zu 5 Metriken hinzufügen. |
-   | **[!UICONTROL Normalisierungsmetrik]** | Die Grundlage ([!UICONTROL Personen], [!UICONTROL Sitzungen] oder [!UICONTROL Ereignisse]), auf der ein Test ausgeführt wird. Beispielsweise kann ein Test die Konversionsraten verschiedener Varianten vergleichen, bei denen die **[!UICONTROL Konversionsrate]** als **[!UICONTROL Konversionen pro Sitzung]** oder **[!UICONTROL Konversionen pro Person]** berechnet wird. |
+   | **[!UICONTROL Erfolgsmetriken]** | Die Metrik(en), die ein Anwender verwendet, um Varianten zu vergleichen. Die Variante mit dem wünschenswertesten Ergebnis für die Konversionsmetrik (egal ob am höchsten oder am niedrigsten) wird als *beste Variante* eines Experiments deklariert. Sie können bis zu 5 Metriken hinzufügen. |
+   | **[!UICONTROL Normalisierungsmetrik]** | Die Grundlage ([!UICONTROL Personen], [!UICONTROL Sitzungen] oder [!UICONTROL Ereignisse]), auf der ein Test ausgeführt wird. Beispielsweise kann ein Test die Konversionsraten verschiedener Varianten vergleichen, bei denen **[!UICONTROL Konversionsrate]** als Seitenansicht berechnet wird |
    | **[!UICONTROL Obere/untere Konfidenzgrenzen einschließen]** | Aktivieren Sie diese Option, um Obergrenzen und Untergrenzen für Konfidenzniveaus anzuzeigen. |
 
 
@@ -106,17 +107,14 @@ So verwenden Sie das Experimentierfeld:
 
 ### Bedienfeldausgabe
 
-Das Bedienfeld „Experimentieren“ liefert umfangreiche Daten und Visualisierungen, die Ihnen helfen, die Performance Ihrer Experimente besser zu verstehen. Oben im Bedienfeld wird eine Zusammenfassungszeile angezeigt, die Sie an die ausgewählten Bedienfeldeinstellungen erinnert. Sie können das Bedienfeld jederzeit bearbeiten, indem Sie oben rechts den Stift zum Bearbeiten auswählen.
+Das Bedienfeld „Experimentieren“ liefert umfangreiche Daten und Visualisierungen, die Ihnen helfen, die Performance Ihrer Experimente besser zu verstehen. Oben im Bedienfeld werden Visualisierungen für die [Zusammenfassungsänderung](../visualizations/summary-number-change.md) bereitgestellt, um Sie an die von Ihnen ausgewählten Bereichseinstellungen zu erinnern. Sie können das Bedienfeld jederzeit bearbeiten, indem Sie oben rechts den Stift zum Bearbeiten auswählen.
 
 Sie erhalten auch eine Textzusammenfassung, die anzeigt, ob das Experiment schlüssig ist oder nicht, und die das Ergebnis zusammenfasst. Die Zusammenfassung basiert auf der statistischen Bedeutung (siehe [Statistische Methode](#adobes-statistical-methodology)). Sie können Zusammenfassungszahlen für die Variante mit der besten Performance mit dem höchsten Anstieg und der höchsten Konfidenz anzeigen.
 
-Für jede ausgewählte Erfolgsmetrik wird eine Freiformtabelle und ein Konversionsraten-Trend angezeigt.
+Für jede ausgewählte Erfolgsmetrik werden eine Visualisierung der [Freiformtabelle](../visualizations/freeform-table/freeform-table.md) und der Konversionsrate [Zeile](../visualizations/line.md) angezeigt.
 
-![Die Experimentierungsausgabe, die eine Freiformtabelle und einen Konversionsratentrend anzeigt.](assets/exp-output1.png)
+![Die Experimentierungsausgabe, die eine Freiformtabelle und einen Konversionsratentrend anzeigt.](assets/experiment-output.png)
 
-Das [!UICONTROL Liniendiagramm] zeigt Ihnen die Performance von [!UICONTROL Kontrolle] im Vergleich zur [!UICONTROL Kontrollvariante]:
-
-![Die Liniendiagrammausgabe, die die Leistung von Kontroll- und Kontrollvarianten anzeigt.](assets/exp-output2.png)
 
 >[!NOTE]
 >
@@ -124,11 +122,11 @@ Das [!UICONTROL Liniendiagramm] zeigt Ihnen die Performance von [!UICONTROL Kont
 
 #### Interpretieren der Ergebnisse
 
-1. **Experiment ist abgeschlossen**: Jedes Mal, wenn Sie den Experimentbericht anzeigen, werden die bis zu diesem Zeitpunkt im Experiment angesammelten Daten analysiert. Die Analyse deklariert einen Versuch als abgeschlossen, wenn die jederzeit gültige Konfidenz für mindestens eine der Varianten einen Schwellenwert von 95 % für *1} überschreitet.* Mit mehr als zwei Armen wird eine Benjamini-Hochberg Korrektur vorgenommen, um die Mehrfachhypothesentests zu korrigieren.
+1. **Experiment ist abgeschlossen**: Jedes Mal, wenn Sie den Experimentbericht anzeigen, werden die bis zu diesem Zeitpunkt im Experiment angesammelten Daten analysiert. Die Analyse erklärt ein Experiment als abgeschlossen, wenn die gültige Konfidenz *anytime* für *mindestens eine der Varianten einen Schwellenwert von 95 % überschreitet.* Mit mehr als zwei Armen wird eine Benjamini-Hochberg Korrektur vorgenommen, um die Mehrfachhypothesentests zu korrigieren.
 
-2. **Variante mit der besten Leistung**: Wenn ein Experiment für schlüssig erklärt wird, wird die Variante mit der höchsten Konversionsrate als die Variante mit der besten Performance gekennzeichnet. Beachten Sie, dass es sich bei dieser Variante entweder um die Kontroll- oder Grundvariante oder um eine der Varianten handeln muss, die die 95%-Schwelle jederzeit überschreiten (bei Anwendung von Benjamini-Hochberg-Korrekturen).
+2. **Variante mit der besten Leistung**: Wenn ein Experiment für schlüssig erklärt wird, wird die Variante mit der höchsten Konversionsrate als die Variante mit der besten Performance gekennzeichnet. Beachten Sie, dass es sich bei dieser Variante entweder um die Kontroll- oder Grundvariante oder um eine der Varianten handeln muss, die den 95% *anytime* gültigen Konfidenzschwellenwert überschreiten (wobei Benjamini-Hochberg-Korrekturen vorgenommen werden).
 
-3. **Konversionsrate**: Die angezeigte Konversionsrate ist ein Verhältnis zwischen dem Erfolgsmetrikwert und dem normalisierenden Metrikwert. Beachten Sie, dass dieser Wert manchmal größer als 1 sein kann, wenn die Metrik nicht binär ist (1 oder 0 für jede Einheit im Experiment)
+3. **Konversionsrate**: Die angezeigte Erfolgsmetrik ist das Verhältnis zwischen Konversionswert und Normalisierung des Metrikwerts. Beachten Sie, dass dieser Wert größer als 1 sein kann, wenn die Metrik nicht binär ist (1 oder 0 für jede Einheit im Experiment)
 
 4. **Steigerung**: Die Zusammenfassung des Experimentberichts zeigt die Steigerung gegenüber der Grundlinie, die eine Messung der prozentualen Verbesserung der Konversionsrate einer bestimmten Variante gegenüber der Grundlinie darstellt. Genau bestimmt ist dies der Performance-Unterschied zwischen einer bestimmten Variante und der Baseline, geteilt durch die Performance der Baseline und ausgedrückt in Prozent.
 
