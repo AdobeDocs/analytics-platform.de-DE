@@ -4,10 +4,10 @@ title: Flussübersicht
 feature: Visualizations
 exl-id: 2ef325d9-1d82-46c9-86e3-6b2332548823
 role: User
-source-git-commit: 6a279ac39e6b94200ff93ac1a3796d202e6349c7
+source-git-commit: 609aac6e0a2231b15296945dbf9dd4f917fb9a19
 workflow-type: tm+mt
-source-wordcount: '260'
-ht-degree: 30%
+source-wordcount: '362'
+ht-degree: 53%
 
 ---
 
@@ -56,3 +56,22 @@ Jede Spalte könnte eine andere Dimension anzeigen. Ziehen Sie einen Dimension p
 >[Konfigurieren einer Flussvisualisierung](/help/analysis-workspace/visualizations/c-flow/create-flow.md).
 >
 
+## Wählen Sie zwischen Fluss-, Fallout- oder Journey-Arbeitsflächenvisualisierungen
+
+Die Flussvisualisierung weist Ähnlichkeiten mit der [Fallout-Visualisierung](/help/analysis-workspace/visualizations/fallout/fallout-flow.md) und der [Journey-Leinwandvisualisierung](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md) auf, allerdings mit wichtigen Unterschieden.
+
+### Unterschiede verstehen
+
+<!-- Information in this snippet is shared between Journey canvas, Fallout, and Flow visualization docs -->
+
+{{journey-visualization-comparisons}}
+
+### Verwendungsbereiche
+
+Flussvisualisierungen eignen sich am besten für:
+
+* Sondierende Ad-hoc-Analyse für den unmittelbar nächsten Touchpoint auf dem Pfad. (Verwenden Sie die Journey-Arbeitsfläche für Journey mit einer vordefinierten Seitensequenz oder für Seiten, die einen Pfad verwenden.)
+
+* Nicht lineare Journey mit mehreren Einstiegspunkten und Pfaden. (Verwenden Sie die Journey-Arbeitsfläche für Journey mit einer vordefinierten Seitensequenz.)
+
+Verwenden Sie [die obige Tabelle](#understand-the-differences), um die Unterschiede zwischen Fluss-, Fallout- und Journey-Arbeitsfläche zu verstehen.

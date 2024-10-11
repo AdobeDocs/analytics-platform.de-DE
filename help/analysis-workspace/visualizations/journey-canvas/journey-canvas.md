@@ -4,10 +4,10 @@ title: Journey-Arbeitsfläche
 feature: Visualizations
 role: User
 exl-id: be03c3b2-8faf-47b8-b3ab-e953202bf488
-source-git-commit: 7a8c1dd1135f827acfe09f39823c6fbefbcd444d
+source-git-commit: 609aac6e0a2231b15296945dbf9dd4f917fb9a19
 workflow-type: tm+mt
-source-wordcount: '1697'
-ht-degree: 2%
+source-wordcount: '1606'
+ht-degree: 1%
 
 ---
 
@@ -82,32 +82,31 @@ Im Folgenden finden Sie einige Beispiele für weitere Einblicke, die Journey-Arb
 
 * Fügen Sie auf einem beliebigen Knoten der Journey eine Aufschlüsselungsdimension hinzu, um zusätzliche Daten für diesen Knoten anzuzeigen
 
-## Wählen Sie zwischen Journey-Arbeitsfläche und Fallout-Visualisierungen
+## Wählen Sie zwischen Journey-Arbeitsfläche, Fallout- oder Fluss-Visualisierungen
 
-Journey-Arbeitsflächenvisualisierungen ähneln den [Fallout-Visualisierungen](/help/analysis-workspace/visualizations/fallout/fallout-flow.md), da beide Visualisierungen zeigen, wo Personen eine vordefinierte Seitensequenz verlassen (ausgefallen) und weitergemacht (durchgeraten) haben.
-
-Es gibt jedoch wichtige Unterschiede.
+Die Visualisierung der Journey-Arbeitsfläche weist Ähnlichkeiten mit der [Fallout-Visualisierung](/help/analysis-workspace/visualizations/fallout/fallout-flow.md) und der [Flussvisualisierung](/help/analysis-workspace/visualizations/c-flow/flow.md) auf, allerdings mit wichtigen Unterschieden.
 
 ### Unterschiede verstehen
 
-Die folgende Tabelle zeigt die in der Visualisierung der Journey-Arbeitsfläche und der Fallout-Visualisierung unterstützten Analysetypen:
+<!-- Information in this snippet is shared between Journey canvas, Fallout, and Flow visualization docs -->
 
-| Funktion | Visualisierung der Journey-Arbeitsfläche | Fallout-Visualisierung |
-|---------|----------|---------|
-| Lineare Journey | Ja | Ja |
-| Nicht lineare Journey mit mehreren Einstiegspunkten und Pfaden | Ja | Nein |
-| Adobe Journey Optimizer Journey | Ja | Nein |
-| Primäre Metrik | Jede Metrik, einschließlich berechneter Metriken | Kann nur die Metriken Sitzung oder Benutzer verwenden |
-| Sekundäre Metrik | Ja<p>Jede Metrik, einschließlich berechneter Metriken</p> | Nein |
-| Filter vergleichen | Nein | Ja<p>Vergleichen einer [unbegrenzten Anzahl von Filtern](/help/analysis-workspace/visualizations/fallout/compare-segments-fallout.md#compare-filters-in-fallout)</p> |
+{{journey-visualization-comparisons}}
 
-### Auswählen der zu verwendenden Visualisierung
+### Verwendung der Journey-Arbeitsfläche
 
-Bevor Sie sich für die Verwendung von Journey-Arbeitsfläche oder Trichteranalyse entscheiden, sollten Sie [die Unterschiede zwischen den beiden](#understand-the-differences) verstehen.
+Journey-Arbeitsfläche ist für Folgendes unerlässlich:
 
-Wenn Ihre Fallout-Analyse nur eine lineare Journey mit einem einzigen bekannten Anfang und Ende umfasst, sollten Sie eine [Fallout-Visualisierung](/help/analysis-workspace/visualizations/fallout/fallout-flow.md) als einfachere Option für diese benutzerfreundlicheren Journey verwenden.
+* Fallout-Analyse mit Journey mit mehreren Einstiegspunkten und Pfaden.
 
-Journey-Arbeitsfläche ist für die Fallout-Analyse von Journey mit mehreren Einstiegspunkten und Pfaden oder für die Analyse von Journey, die in Journey Optimizer erstellt wurden, unerlässlich.
+* Nicht lineare Journey mit mehreren Einstiegspunkten und Pfaden mit einer vordefinierten Seitensequenz.
+
+* Sondierende Ad-hoc-Analysen, die auf einer vordefinierten Journey basieren.
+
+* Analyse, für die eine andere primäre Metrik als Sitzung, Person oder Ereignisse erforderlich ist.
+
+* Detaillierte Analyse der Journey aus Adobe Journey Optimizer.
+
+Verwenden Sie [die obige Tabelle](#understand-the-differences), um die Unterschiede zwischen Journey-Arbeitsfläche, Trichteranalyse und Flussvisualisierungen zu verstehen.
 
 ## Journey Optimizer-Journey analysieren
 
