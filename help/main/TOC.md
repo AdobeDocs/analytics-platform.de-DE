@@ -9,10 +9,10 @@ index: true
 user-guide-title: Handbuch zu Customer Journey Analytics
 user-guide-description: Hier erhalten Sie Informationen zu Adobe Customer Journey Analytics und Erläuterungen zur Nutzung von Analysis Workspace mit Daten aus Experience Platform.
 breadcrumb-title: Handbuch zu Customer Journey Analytics
-source-git-commit: df0fd0af8a22c84705c3dea11065132359dd80ff
+source-git-commit: 1a0422144b795be7f129b13208e93f8d3645a8e7
 workflow-type: tm+mt
-source-wordcount: '950'
-ht-degree: 85%
+source-wordcount: '954'
+ht-degree: 87%
 
 ---
 
@@ -100,6 +100,8 @@ ht-degree: 85%
    + [Beschriftungen und Richtlinien](../data-views/data-governance.md)
 
 + Tools {#tools}
+   + Asset-Übertragung {#asset-transfer}
+      + [Übertragen von Assets](../tools/asset-transfer/transfer-assets.md)
    + Produktnutzung {#product-usage}
       + [Überblick](../tools/product-usage/usage-overview.md)
       + [Dateneinstellungen](../tools/product-usage/data-settings.md)
@@ -155,7 +157,7 @@ ht-degree: 85%
       + [Bereich (gestapelt)](../analysis-workspace/visualizations/area.md)
       + [Balken (gestapelt)](../analysis-workspace/visualizations/bar.md)
       + [Horizontales Säulendiagramm](../analysis-workspace/visualizations/bullet-graph.md)
-      + [Kombination](../analysis-workspace/visualizations/combo-charts.md)
+      + [Combo](../analysis-workspace/visualizations/combo-charts.md)
       + [Ringdiagramm](../analysis-workspace/visualizations/donut.md)
       + [Histogramm](../analysis-workspace/visualizations/histogram.md)
       + [Horizontalbalken (gestapelt)](../analysis-workspace/visualizations/horizontal-bar.md)
@@ -163,7 +165,7 @@ ht-degree: 85%
       + [Linie](../analysis-workspace/visualizations/line.md)
       + [Streuung](../analysis-workspace/visualizations/scatterplot.md)
       + [Zusammenfassungsnummer und Änderung](../analysis-workspace/visualizations/summary-number-change.md)
-      + [Abschnittskopfzeile](/help/analysis-workspace/visualizations/section-header.md)
+      + [Bereichs-Kopfzeile](/help/analysis-workspace/visualizations/section-header.md)
       + [Text](../analysis-workspace/visualizations/text.md)
       + [Baumdiagramm](../analysis-workspace/visualizations/treemap.md)
       + [Venn](../analysis-workspace/visualizations/venn.md)
@@ -173,11 +175,11 @@ ht-degree: 85%
       + [Attribution](../analysis-workspace/c-panels/attribution.md)
       + [Experimentieren](../analysis-workspace/c-panels/experimentation.md)
       + [Freiform](../analysis-workspace/c-panels/freeform-panel.md)
-      + [Durchschnittliche Medienminuten-Audience](/help/analysis-workspace/c-panels/average-minute-audience-panel.md)
+      + [Medien-Zielgruppendurchschnitt pro Minute](/help/analysis-workspace/c-panels/average-minute-audience-panel.md)
       + [Gleichzeitige Medienbetrachter](../analysis-workspace/c-panels/media-concurrent-viewers.md)
-      + [Medienwiedergabedauer](../analysis-workspace/c-panels/media-playback-time-spent.md)
-      + [Nächstes oder vorheriges Element](../analysis-workspace/c-panels/next-previous.md)
-      + [Schnelle Einblicke](../analysis-workspace/c-panels/quickinsight.md)
+      + [Bei der Medienwiedergabe verbrachte Zeit](../analysis-workspace/c-panels/media-playback-time-spent.md)
+      + [Nächstes oder vorheriges Objekt](../analysis-workspace/c-panels/next-previous.md)
+      + [Quick Insights](../analysis-workspace/c-panels/quickinsight.md)
    + Kuratieren, Freigeben und Planen von Projekten {#curate-share}
       + [Überblick](../analysis-workspace/curate-share/send-schedule-files.md)
       + [Kuratieren von Projekten](../analysis-workspace/curate-share/curate.md)
@@ -262,7 +264,7 @@ ht-degree: 85%
    + Filter {#cja-filters}
       + [Überblick](../components/filters/filters-overview.md)
       + [Filter erstellen](../components/filters/create-filters.md)
-      + [Filter erstellen](../components/filters/filter-builder.md)
+      + [Erstellen von Filtern](../components/filters/filter-builder.md)
       + [Schnellfilter](../components/filters/quick-filters.md)
       + [Sequenzielle Filter](../components/filters/seg-sequential-build.md)
       + [Freigeben von Filtern](../components/filters/filters-share.md)
@@ -277,7 +279,7 @@ ht-degree: 85%
       + [Überblick](../components/calc-metrics/calc-metr-overview.md)
       + Workflow bei berechneten Metriken {#cm-workflow}
          + [Berechnete Metriken erstellen](../components/calc-metrics/cm-workflow/cm-workflow.md)
-         + [Berechnete Metriken erstellen](../components/calc-metrics/cm-workflow/cm-build-metrics.md)
+         + [Erstellen berechneter Metriken](../components/calc-metrics/cm-workflow/cm-build-metrics.md)
          + [Metriken suchen](../components/calc-metrics/cm-workflow/cm-finding.md)
          + [Metriktyp und Attribution](../components/calc-metrics/cm-workflow/m-metric-type-alloc.md)
          + [Erstellen einer Teilnahmemetrik](../components/calc-metrics/cm-workflow/participation-metric.md)
