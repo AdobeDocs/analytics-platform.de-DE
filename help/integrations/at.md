@@ -1,17 +1,17 @@
 ---
-title: Target-Reporting in Adobe Customer Journey Analytics
+title: Zielberichte
 description: Integrieren von Adobe Target mit Customer Journey Analytics
 feature: Experience Platform Integration
 role: User
 exl-id: 0b52af5b-b65c-4929-9ca3-547a640936f3
-source-git-commit: b189776de8cadae3a93c717b6814f2130ab1be43
+source-git-commit: 979564d0249abadd454ce43aba9aeae2c78a44f0
 workflow-type: tm+mt
-source-wordcount: '385'
-ht-degree: 40%
+source-wordcount: '375'
+ht-degree: 41%
 
 ---
 
-# Target-Reporting in Adobe Customer Journey Analytics
+# Zielberichte
 
 Mit der Zielberichterstellung in Customer Journey Analytics können Sie Adobe Target-Aktivitäten direkt im Customer Journey Analytics messen und darüber berichten. Diese Funktion ist mit der in Adobe Analytics (AA) über Analytics for Target (A4T) durchgeführten Ausführung vergleichbar, allerdings mit der Konnektivität zu Adobe Experience Platform (AEP).
 
