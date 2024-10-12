@@ -5,7 +5,7 @@ keywords: Produktanalysen
 exl-id: 1ac8157f-87e8-4d98-a2ca-f6beb68d9d6b
 feature: Guided Analysis
 role: User
-source-git-commit: 61db4e228e81c921e756fdd284c1be0f730e4adb
+source-git-commit: 6497a73aaf7ab7ab597d7a9b00315d126ce402f8
 workflow-type: tm+mt
 source-wordcount: '1381'
 ht-degree: 72%
@@ -14,7 +14,7 @@ ht-degree: 72%
 
 # Überblick über die geführte Analyse
 
-Geführte Analysen ermöglichen es Benutzern, vom Marketing über das Produkt bis hin zu Analysten, hochwertige Daten und Einblicke über die Journey des Kunden mithilfe geführter Workflows bereitzustellen, die auf den kanalübergreifenden Daten von Customer Journey Analytics aufbauen. Ähnlich wie bei Analysis Workspace- und Mobile-Scorecards verwendet die geführte Analyse Daten aus einer [Datenansicht](../data-views/data-views.md), die auf Daten in Adobe Experience Platform über eine [Verbindung](../connections/overview.md) verweist. Viele Berichte, die mit einer geführten Analyse erstellt wurden, können nahtlos zur weiteren Recherche an Analysis Workspace übermittelt werden.
+Geführte Analysen ermöglichen es Benutzern, vom Marketing über das Produkt bis hin zu Analysten, hochwertige Daten und Einblicke über die Journey des Kunden mithilfe geführter Workflows bereitzustellen, die auf den kanalübergreifenden Daten von Customer Journey Analytics aufbauen. Ähnlich wie bei Analysis Workspace- und Mobile-Scorecards verwendet die geführte Analyse Daten aus einer [Datenansicht](/help/data-views/data-views.md), die auf Daten in Adobe Experience Platform über eine [Verbindung](../connections/overview.md) verweist. Viele Berichte, die mit einer geführten Analyse erstellt wurden, können nahtlos zur weiteren Recherche an Analysis Workspace übermittelt werden.
 
 Die folgenden geführten Analysen sind verfügbar:
 
