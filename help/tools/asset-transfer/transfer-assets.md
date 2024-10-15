@@ -3,9 +3,9 @@ title: Übertragen von Assets
 description: Erfahren Sie, wie Sie Komponenten von einem Benutzer an einen anderen übertragen.
 role: Admin
 solution: Customer Journey Analytics
-source-git-commit: faa9545fa3928a19aeaaf7285a9643e7dc253cea
+source-git-commit: 9663a24c2430d3822cb83876ea048b6423405215
 workflow-type: tm+mt
-source-wordcount: '406'
+source-wordcount: '545'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Assets sind häufig an einen einzelnen Eigentümer gebunden und können in manch
 
 ## Zugriffsberechtigung
 
-Asset-Übertragung erfordert Produktadministratorberechtigungen für Customer Journey Analytics.
+Für die Asset-Übertragung ist die Produktadministratorberechtigung für die Customer Journey Analytics erforderlich.
 
 ## Übertragen von Assets
 
@@ -44,7 +44,14 @@ Asset-Übertragung erfordert Produktadministratorberechtigungen für Customer Jo
 
 1. Navigieren Sie nun in der linken Navigation durch jeden Komponentenordner, um einzelne Komponenten oder alle Assets in einem Ordner auszuwählen, die übertragen werden sollen.
 
-   Beachten Sie, dass durch die Übertragung von Assets von einem Administrator an einen Benutzer ohne Administratorrechte der Empfänger nicht auf einen Administrator aktualisiert wird.
+   >[!NOTE]
+   >
+   >Durch die Übertragung von Assets von einem Administrator auf einen Benutzer ohne Administratorrechte wird der Empfänger nicht auf einen Administrator aktualisiert.
+
+
+   >[!NOTE]
+   >
+   >    Bei der Übertragung von Assets, die auf andere Komponenten verweisen (z. B. Projekte, die auf andere Filter und berechnete Metriken verweisen), werden Komponenten, die nicht dem aktuellen Eigentümer des Projekts gehören, nur für den Empfänger freigegeben. Das Eigentum an allen anderen Komponenten wird auf den Empfänger übertragen.
 
 1. Um _alle_ Assets in einem Ordner auszuwählen, aktivieren Sie das Kontrollkästchen neben **[!UICONTROL Name]** oben in der Tabelle.
 
@@ -58,17 +65,31 @@ Asset-Übertragung erfordert Produktadministratorberechtigungen für Customer Jo
    >
    >Schließen Sie den Bildschirm nicht während der Übertragung, um eine Abtreibung des Prozesses zu vermeiden. Dadurch wird eine reibungslose Übertragung gewährleistet.
 
+## Übertragungsergebnisse
+
+Es gibt drei mögliche Ergebnisse für eine Übertragung:
+
+- **Transfer success**: &quot;Assets erfolgreich übertragen.&quot;
+
+- **Teilweiser Erfolg**: &quot;Einige Assets wurden erfolgreich übertragen.&quot;
+
+- **Übertragungsfehler**: &quot;Assets konnten nicht übertragen werden. Bitte versuchen Sie es erneut.&quot;
+
 ## Übertragen von Assets während der Aktualisierung von Adobe Analytics auf Customer Journey Analytics
 
 Einer der wichtigsten Anwendungsfälle für die Asset-Übertragung ist das Upgrade von Adobe Analytics auf Customer Journey Analytics.
 
 Mit der Funktion [Komponentenmigration](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/component-migration/component-migration) in Adobe Analytics können Sie Projekte, die sich im Besitz von Administratoren befinden, zu anderen Administratoren migrieren. Alle Komponenten, aus denen diese Projekte bestehen, werden dann in Customer Journey Analytics neu erstellt und der Empfängeradministrator ist für alle diese Komponenten verantwortlich, unabhängig davon, wer sie erstellt hat.
 
-Mit diesem Asset Transfer-Tool können Administratoren Komponenten ihren rechtmäßigen Eigentümern zuweisen.
+Mit diesem Asset Transfer-Tool können Administratoren Komponenten ihren rechtmäßigen Eigentümern zuweisen, unabhängig davon, ob es sich um Administratoren handelt oder nicht.
+
+>[!IMPORTANT]
+>
+>Während Sie Komponenten mit diesem Tool übertragen können, müssen Sie als Administrator dennoch sicherstellen, dass der Empfänger Zugriff auf die Datenansichten hat, die zum Anzeigen/Verwenden dieser Komponenten erforderlich sind. Sie können Berechtigungen in der [Admin Console](https://helpx.adobe.com/de/enterprise/using/admin-console.html) anzeigen und zuweisen.
 
 ## In CSV exportieren
 
-Sie können eine Liste von Assets exportieren, die von einem Benutzer an einen anderen in eine CSV-Datei übertragen wurden.
+Mit der Option **[!UICONTROL In CSV exportieren]** können Administratoren nur eine Liste von Benutzern herunterladen, die in einer CSV-Datei angezeigt werden. Sie können keine Liste der übertragenen Assets in eine CSV-Datei exportieren.
 
 <!---## Unknown users
 
