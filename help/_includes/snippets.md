@@ -1,5 +1,5 @@
 ---
-source-git-commit: 609aac6e0a2231b15296945dbf9dd4f917fb9a19
+source-git-commit: a6f543d3b6aab06593d9fa40a5d3d6bbf4aa7c32
 workflow-type: tm+mt
 source-wordcount: '3977'
 ht-degree: 32%
@@ -236,14 +236,15 @@ Verwenden Sie die folgenden Informationen, um die Visualisierung auszuwählen, d
 | Funktion | Journey-Arbeitsfläche | Fallout | Fluss |
 |---------|----------|---------|---------|
 | **Vordefinierte Folge von Seiten** | Ja</br>Kombiniert vordefinierte und forschende Analysen. Der endgültige Pfad wird verwendet, wenn vordefinierte Knoten im Pfad verwendet werden (Besucher werden gezählt, solange sie schließlich von einem vordefinierten Knoten zum anderen wechseln). Die unmittelbar (nicht letztendlichen) nächsten Knoten können ebenfalls angezeigt werden. | Ja</br>Der Pfad kann ein endgültiger Pfad sein oder auf den nächsten Touchpoint beschränkt werden | Nein |
-| **Sondierungsreihenfolge von Seiten (Ad-hoc-Analyse)** | Ja</br>Kombiniert vordefinierte und forschende Analysen. Der endgültige Pfad wird verwendet, wenn vordefinierte Knoten im Pfad verwendet werden (Besucher werden gezählt, solange sie schließlich von einem vordefinierten Knoten zum anderen wechseln). Die unmittelbar (nicht letztendlichen) nächsten Knoten können ebenfalls angezeigt werden. | Eingeschränkt</br>Ermöglicht Ihnen, mit der rechten Maustaste auf den sofortigen Fallout in einer Freiformtabelle zu klicken und ihn anzuzeigen. | Ja</br>Nur Explorationsanalyse. Jeder Knoten zeigt den sofortigen (nicht letztendlichen) nächsten Touchpoint entlang des Pfads an. |
+| **Sondierungsreihenfolge von Seiten (Ad-hoc-Analyse)** | Ja</br>Kombiniert vordefinierte und forschende Analysen. Der endgültige Pfad wird verwendet, wenn vordefinierte Knoten im Pfad verwendet werden (Besucher werden gezählt, solange sie schließlich von einem vordefinierten Knoten zum anderen wechseln). Die unmittelbar (nicht letztendlichen) nächsten Knoten können ebenfalls angezeigt werden. | Eingeschränkt</br>Ermöglicht Ihnen, mit der rechten Maustaste auf den sofortigen Fallout in einer Freiformtabelle zu klicken und ihn anzuzeigen. | Ja</br>Nur Explorationsanalyse. Immer innerhalb einer Dimensionsinstanz zwischen Knoten. Dies bedeutet, dass jeder Knoten den unmittelbar (nicht letztendlichen) nächsten Touchpoint entlang des Pfads anzeigt. |
 | **Zeigt, wo die Menschen hingegangen sind (hinausgefallen) und weitergingen (durchfielen)** | Ja</br>Zeigt sowohl vordefinierte als auch explorative Journey an | Ja</br>Zeigt vordefinierte Journey an | Ja</br>Zeigt für Journey an |
 | **Lineare Journey** | Ja | Ja | Nein |
 | **Nicht lineare Journey mit mehreren Einstiegspunkten und Pfaden** | Ja | Nein | Ja |
-| **Primäre Metrik** | Jede Metrik, einschließlich berechneter Metriken | Nur Sitzung oder Person | Nur Vorfälle |
+| **Primäre Metrik** | Jede Metrik, einschließlich berechneter Metriken | Nur Sitzung oder Person | Nur Vorfälle (Pfadansichten) |
 | **Sekundäre Metrik** | Ja<p>Jede Metrik, einschließlich berechneter Metriken</p> | Nein | Nein |
-| **Komponentenunterstützung in Knoten oder Touchpoints** | Jede Komponente für alle Knoten, einschließlich Metriken, berechnete Metriken, Dimensionen, Dimensionselemente, Filter und Datumsbereiche. | Jede Komponente für alle Knoten, einschließlich Metriken, berechnete Metriken, Dimensionen, Dimensionselemente, Filter und Datumsbereiche. | Nur Dimensionselemente (außer dem Start- und End-Touchpoint) |
+| **Komponentenunterstützung in Knoten oder Touchpoints** | Metriken, Dimensionselemente, Filter und Datumsbereiche. | Metriken, Dimensionselemente, Filter und Datumsbereiche. | Nur Dimensionselemente (außer dem Start- und End-Touchpoint) |
 | **Filter vergleichen** | Nein | Ja<p>Eine Gegenüberstellung zweier verschiedener Filter im gleichen Bericht vornehmen.</p> | Nein |
+| **Drag-and-Drop-Komponenteninteraktion** | Ja | Ja | Nein |
 | **Adobe Journey Optimizer Journey** | Ja</br>Öffnen Sie Journey aus Journey Optimizer für eine tiefere Analyse und Anpassung | Nein | Nein |
 
 {style="table-layout:auto"}
