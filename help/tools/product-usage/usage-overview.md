@@ -3,9 +3,9 @@ title: Produktnutzung - Übersicht
 description: Zeigen Sie Einblicke und Berichte dazu an, wie Ihr Unternehmen Customer Journey Analytics verwendet.
 hide: true
 hidefromtoc: true
-source-git-commit: dcd3ee5f3db5af434b87bfded0e360c66643793e
+source-git-commit: f337dfbd780aab4ae40534c5c1151dba35681b21
 workflow-type: tm+mt
-source-wordcount: '373'
+source-wordcount: '359'
 ht-degree: 6%
 
 ---
@@ -16,10 +16,10 @@ ht-degree: 6%
 
 Die Produktnutzung bietet Ihrem Unternehmen die Möglichkeit, Analysedaten zur Verwendung von Customer Journey Analytics anzuzeigen. Es ist für alle Unternehmen verfügbar, die Customer Journey Analytics verwenden. Nach der Aktivierung werden die folgenden Adobe Experience Platform-Komponenten automatisch erstellt und für Sie bereitgestellt:
 
-* Ein Schema in Adobe Experience Platform. Dieses Schema ist schreibgeschützt und kann nicht bearbeitet werden.
-* Ein Datensatz in Adobe Experience Platform. Die Einstellungen für diesen Datensatz sind schreibgeschützt und können nicht bearbeitet werden.
-* Eine Verbindung im Customer Journey Analytics. Die Einstellungen für diese Verbindung sind schreibgeschützt und können nicht bearbeitet werden.
-* Eine Datenansicht im Customer Journey Analytics. Sie können diese Datenansicht bearbeiten oder weitere Datenansichten mit derselben Verbindung erstellen.
+* Ein Schema in Adobe Experience Platform. Dieses Schema ist im Besitz des Systems, schreibgeschützt und kann nicht bearbeitet werden.
+* Ein Datensatz in Adobe Experience Platform. Dieser Datensatz ist im Besitz des Systems, schreibgeschützt und kann nicht bearbeitet werden.
+* Eine Verbindung im Customer Journey Analytics. Diese Verbindung ist im Besitz des Systems, schreibgeschützt und kann nicht bearbeitet werden.
+* Eine Datenansicht im Customer Journey Analytics. Sie können diese Datenansicht bearbeiten oder mithilfe der oben genannten Verbindung weitere Datenansichten erstellen. Der Eigentümer der Datenansicht ist die Person, die die Produktnutzung für Ihr Unternehmen ermöglicht.
 
 Die Datenerfassung und -einrichtung wird automatisch für Sie konfiguriert, sobald sie aktiviert sind. Jedes Mal, wenn ein Benutzer eine Aktion in Analysis Workspace ausführt, wird diese Aktion verfolgt und steht für Berichte zur Verfügung.
 
@@ -34,16 +34,11 @@ Wenn Sie die Produktnutzung aktivieren, sind die folgenden Dimensionen verfügba
 | Dimension | Beschreibung |
 | --- | --- |
 | Aktionsname | Die Art der Aktion, die der Benutzer ausgeführt hat. Sie können diese Dimension wie eine beliebige Metrik verwenden, indem Sie eine Kopie in den Datenansichtseinstellungen erstellen. |
-| Verwendetes Attributionsmodell | Der Typ des Attributionsmodells, das die aktuelle Komponente verwendet. |
-| Komponente | Ein abgeleitetes Feld. |
+| Verwendetes Attributionsmodell | Der Typ des Attributionsmodells, das die Komponente verwendet. |
+| Komponente | Ein abgeleitetes Feld, das den Komponententyp und den Komponentennamen enthält. |
 | Typ der Komponente | Der Typ der hinzugefügten, entfernten oder geänderten Komponente. |
-| Verbindung | Die Verbindung, die das Projekt verwendet. |
-| Datenansicht | Die Datenansicht, die vom Projekt verwendet wird. |
-| Funktion | Die Funktion, die das Projekt verwendet. |
-| Kennung | Die eindeutige Kennung für das Ereignis. |
 | Anmeldebenutzerin bzw. Anmeldebenutzer | Der Benutzer, der die Aktion ausgeführt hat. |
-| Bedienfeld verwendet | Das Bedienfeld, in dem die Komponente hinzugefügt, entfernt oder geändert wurde. |
-| Projekt   | Ein abgeleitetes Feld. |
+| Verwendetes Bedienfeld | Das Bedienfeld, in dem die Komponente hinzugefügt, entfernt oder geändert wurde. |
 | Projektname | Der Anzeigename des Projekts. |
 | Projekttyp | Der Projekttyp. |
 | Benutzer-ID | Die Benutzer-ID, die das Ereignis ausgelöst hat. |
