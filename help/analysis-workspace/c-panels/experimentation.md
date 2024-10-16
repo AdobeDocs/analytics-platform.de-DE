@@ -4,10 +4,10 @@ title: Experimentier-Bedienfeld
 feature: Panels
 exl-id: e11169b4-2c73-4dd4-bca7-c26189d60631
 role: User
-source-git-commit: 835f061a5fdc52b39a7c8fee1e3ce474118d0e68
+source-git-commit: 3e2d92003f8b89a20edfcfb8358854c7fbd15577
 workflow-type: tm+mt
-source-wordcount: '2145'
-ht-degree: 22%
+source-wordcount: '2144'
+ht-degree: 19%
 
 ---
 
@@ -33,7 +33,7 @@ ht-degree: 22%
 
 
 
-Im Bedienfeld **[!UICONTROL Experimentieren]** können Analysten verschiedene Varianten von Anwendererlebnissen, Marketing oder Messaging miteinander vergleichen, um zu ermitteln, welches die beste Lösung für ein bestimmtes Ergebnis ist. Sie können die Steigerung und Konfidenz jedes A/B-Experiments von jeder beliebigen Experimentierplattform aus bewerten: online, offline, von Adobe-Lösungen wie Target oder Journey Optimizer und sogar von BYO-Daten (eigene Daten).
+Mit dem Bedienfeld **[!UICONTROL Experimentierung]** können Analysten verschiedene Varianten von Benutzererlebnissen, Marketing- oder Messaging vergleichen, um zu bestimmen, welches am besten zu einem bestimmten Ergebnis führt. Sie können die Steigerung und Konfidenz jedes A/B-Experiments von jeder beliebigen Experimentierplattform aus bewerten: online, offline, von Adobe-Lösungen wie Target oder Journey Optimizer und sogar von BYO-Daten (eigene Daten).
 
 Erfahren Sie mehr über die [Integration zwischen Adobe Customer Journey Analytics und Adobe Target](https://experienceleague.adobe.com/de/docs/target/using/integrate/cja/target-reporting-in-cja).
 
@@ -41,9 +41,9 @@ Erfahren Sie mehr über die [Integration zwischen Adobe Customer Journey Analyti
 
 Das Experimentierungsfenster steht allen Customer Journey Analytics-Benutzern zur Verfügung. Es sind keine Administratorrechte oder anderen Berechtigungen erforderlich. Für die Voraussetzungen sind jedoch Aktionen erforderlich, die nur Administratoren durchführen können.
 
-## Neue Funktionen in berechneten Metriken
+## Funktionen in berechneten Metriken
 
-Zwei neue erweiterte Funktionen wurden hinzugefügt: Steigerung und Konfidenz. Weitere Informationen finden Sie unter [Referenz – Erweiterte Funktionen](/help/components/calc-metrics/cm-adv-functions.md).
+Zwei erweiterte Funktionen sind verfügbar: Steigerung und Konfidenz. Weitere Informationen finden Sie unter [Referenz – Erweiterte Funktionen](/help/components/calc-metrics/cm-adv-functions.md).
 
 ## Voraussetzungen
 
@@ -51,10 +51,10 @@ Um das Experimentierfeld zu verwenden, müssen Sie die folgenden Voraussetzungen
 
 ### Verbindung zu Experimentdatensätzen erstellen
 
-Laut dem empfohlenen Datenschema sollten die Experimentdaten in einem [Objekt-Array](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/fields/array) gespeichert sein, in dem die Experiment- und Variantendaten in zwei separaten Dimensionen enthalten sind. Beide Dimensionen müssen sich in einem **einzelnen** -Objektarray befinden. Wenn sich Ihre Experimentdaten in einer einzigen Dimension befinden (mit Experiment- und Variantendaten in einer getrennten Zeichenfolge), können Sie die Einstellung [substring](/help/data-views/component-settings/substring.md) in Datenansichten verwenden, um die Dimension zur Verwendung im Bedienfeld in zwei aufzuteilen.
+Das empfohlene Datenschema besteht darin, dass sich die Experimentdaten in einem [Objekt-Array](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/fields/array) befinden, das die Experiment- und Variantendaten in zwei separaten Dimensionen enthält. Beide Dimensionen müssen sich in einem **einzelnen** -Objektarray befinden. Wenn sich Ihre Experimentdaten in einer einzigen Dimension befinden (mit Experiment- und Variantendaten in einer getrennten Zeichenfolge), können Sie die Einstellung [substring](/help/data-views/component-settings/substring.md) in Datenansichten verwenden, um die Dimension zur Verwendung im Bedienfeld in zwei aufzuteilen.
 
 
-Nachdem Ihre Experimentdaten [ in Adobe Experience Platform aufgenommen wurden, erstellen [in Customer Journey Analytics](/help/connections/create-connection.md) eine Verbindung zu einem oder mehreren Experimentdatensätzen.](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/home)
+Nachdem Ihre Experimentdaten [ in Adobe Experience Platform aufgenommen wurden, erstellen [eine Verbindung in Customer Journey Analytics](/help/connections/create-connection.md) mit einem oder mehreren Experimentdatensätzen.](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/home)
 
 ### Hinzufügen von Kontextbezeichnungen in Datenansichten
 
@@ -63,7 +63,7 @@ In den Einstellungen für Customer Journey Analytics-Datenansichten können Admi
 * [!UICONTROL Experimentierexperiment]
 * [!UICONTROL Experimentiervariante]
 
-Wählen Sie in Ihrer Datenansicht, die Experimentierdaten enthält, zwei Dimensionen aus: eine mit den Experimentierdaten und eine mit den Variantendaten. Benennen Sie diese Dimensionen dann mit den Beschriftungen **[!UICONTROL Experimentierexperiment]** und **[!UICONTROL Experimentvariante]** .
+Wählen Sie in Ihrer Datenansicht, die Experimentdaten enthält, zwei Dimensionen aus: eine mit den Experimentierungsdaten und eine mit den Variantendaten. Benennen Sie diese Dimensionen dann mit den Beschriftungen **[!UICONTROL Experimentierexperiment]** und **[!UICONTROL Experimentvariante]** .
 
 ![Optionen für die Kontextbeschriftung für die Experimentierungs- und Experimentierungsvariante.](assets/context-label.png)
 
@@ -91,12 +91,12 @@ So verwenden Sie das Experimentierfeld:
 
 1. Konfigurieren Sie die Bedienfeldeingabeeinstellungen:
 
-   ![Das Bedienfeld &quot;Erlebnis&quot;wurde in ein Projekt gezogen.](assets/experiment-input.png)
+   ![Das Experimentierfeld zog sich in ein Projekt.](assets/experiment-input.png)
 
    | Einstellung | Definition |
    | --- | --- |
    | **[!UICONTROL Datumsbereich]** | Der Datumsbereich für das Experimentierungsfenster wird automatisch festgelegt, basierend auf dem ersten Ereignis, das beim Customer Journey Analytics für das ausgewählte Experiment empfangen wurde. Sie können den Datumsbereich bei Bedarf auf einen spezifischeren Zeitraum beschränken oder erweitern. |
-   | **[!UICONTROL Experiment]** | Eine Reihe von Varianten eines Erlebnisses, die Endbenutzern bereitgestellt wurden, um zu ermitteln, welche Erlebnisse am besten dauerhaft beibehalten werden sollten. Ein Experiment besteht aus zwei oder mehr Varianten, von denen eine als Kontrollvariante gilt. Diese Einstellung wird vorab mit den Dimensionen gefüllt, die in Datenansichten mit der Beschriftung **[!UICONTROL Experiment]** und den Experimentdaten der letzten drei Monate gekennzeichnet wurden. |
+   | **[!UICONTROL Experiment]** | Eine Reihe von Varianten eines Erlebnisses, die Endbenutzern bereitgestellt wurden, um zu ermitteln, welche Erlebnisse am besten dauerhaft beibehalten werden sollten. Ein Experiment besteht aus zwei oder mehr Varianten, von denen eine als Kontrollvariante gilt. Diese Einstellung wird vorab mit den Dimensionen gefüllt, die in Datenansichten mit der Beschriftung **[!UICONTROL Experiment]** und den Experimentierungsdaten der letzten drei Monate gekennzeichnet wurden. |
    | **[!UICONTROL Kontrollvariante]** | Eine von zwei oder mehr Änderungen im Erlebnis eines Endbenutzers, die verglichen werden, um die bessere Alternative zu ermitteln. Eine Variante muss als Kontrolle ausgewählt werden und nur eine Variante kann als Kontrollvariante betrachtet werden. Diese Einstellung enthält vorab die Dimensionen, die in Datenansichten mit der Bezeichnung **[!UICONTROL Variante]** gekennzeichnet wurden. Mit dieser Einstellung werden die Variantendaten abgerufen, die mit diesem Experiment verknüpft sind. |
    | **[!UICONTROL Erfolgsmetriken]** | Die Metrik(en), die ein Anwender verwendet, um Varianten zu vergleichen. Die Variante mit dem wünschenswertesten Ergebnis für die Konversionsmetrik (egal ob am höchsten oder am niedrigsten) wird als *beste Variante* eines Experiments deklariert. Sie können bis zu 5 Metriken hinzufügen. |
    | **[!UICONTROL Normalisierungsmetrik]** | Die Grundlage ([!UICONTROL Personen], [!UICONTROL Sitzungen] oder [!UICONTROL Ereignisse]), auf der ein Test ausgeführt wird. Beispielsweise kann ein Test die Konversionsraten verschiedener Varianten vergleichen, bei denen **[!UICONTROL Konversionsrate]** als Seitenansicht berechnet wird |
@@ -168,12 +168,11 @@ Wenn Sie die Wirkung von Intervention X auf das Ergebnis Y messen möchten, ist 
 >
 >Für Unternehmen, die sowohl Customer Journey Analytics als auch Adobe Journey Optimizer verwenden, gelten die Informationen in diesem Abschnitt auch für Experimentierungsfunktionen in Journey Optimizer.
 
-
 Nicht alle berechneten Metriken sind mit dem Experimentierungsbereich kompatibel.
 
 Berechnete Metriken, die eine der folgenden Metriken oder Konstanten enthalten, sind nicht mit dem Experimentierungsbereich kompatibel:
 
-* Basismetriken aus einem Zusammenfassungsdatensatz<!--add link to Rob's "Summary data" doc when it's published -->
+* Basismetriken aus einem [Zusammenfassungsdatensatz](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/summary-data)
 * Basismetriken, die untereinander aufgeteilt oder miteinander multipliziert werden (z. B. `Revenue`/`Orders`)
 * Konstanten, die zu einer Basismetrik hinzugefügt oder von dieser abgezogen werden (z. B. `Revenue+50`)
 * Eine der folgenden Basismetriken:

@@ -3,7 +3,7 @@ description: Der Generator für berechnete Metriken bietet eine Arbeitsfläche, 
 title: Erstellen berechneter Metriken
 feature: Calculated Metrics
 exl-id: 4d03a51d-c676-483c-98e2-d7283e8d71b0
-source-git-commit: 8f3b30ca6d20d633669d7e9180884c24e0b9a52e
+source-git-commit: 37209097327ffb142068b5df184c07c7c8021442
 workflow-type: tm+mt
 source-wordcount: '1526'
 ht-degree: 10%
@@ -67,8 +67,8 @@ Das Dialogfeld **[!UICONTROL Generator für berechnete Metriken]** wird verwende
 1. Um zu überprüfen, ob Ihre berechnete Metrikdefinition korrekt ist, verwenden Sie die ständig aktualisierte **[!UICONTROL Vorschau]** der Ergebnisse der berechneten Metrik. Die **[!UICONTROL Vorschau]** umfasst die letzten 90 Tage und wertet die Definition Ihrer berechneten Metrik kontinuierlich aus.
 
    Die **[!UICONTROL Produktkompatibilität]** gibt an, ob die berechnete Metrik für Experimente verwendet werden kann. Mögliche Werte sind:
-   * **[!UICONTROL Überall auf Customer Journey Analytics]**: Die berechnete Metrik kann während des gesamten Customer Journey Analytics verwendet werden, mit Ausnahme des Experimentierungsbereichs.
-   * **[!UICONTROL Überall auf Customer Journey Analytics (ohne Experimentiervorgänge)]**: Die berechnete Metrik kann für alle Customer Journey Analytics verwendet werden.
+   * **[!UICONTROL Überall auf Customer Journey Analytics]**: Die berechnete Metrik kann für alle Customer Journey Analytics verwendet werden.
+   * **[!UICONTROL Überall auf Customer Journey Analytics (ohne Experimentierung)]**: Die berechnete Metrik kann überall auf der Customer Journey Analytics verwendet werden, außer im Bereich &quot;Experimentierung&quot;.
 
 1. Wählen Sie:
    * **[!UICONTROL Speichern]** , um die berechnete Metrik zu speichern.
