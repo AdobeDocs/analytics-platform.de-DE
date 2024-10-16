@@ -5,9 +5,9 @@ keywords: Produktanalysen
 exl-id: 1ac8157f-87e8-4d98-a2ca-f6beb68d9d6b
 feature: Guided Analysis
 role: User
-source-git-commit: 6497a73aaf7ab7ab597d7a9b00315d126ce402f8
+source-git-commit: ce04e69d2c933f893eeeff04abb0f56fb4000e6f
 workflow-type: tm+mt
-source-wordcount: '1381'
+source-wordcount: '1393'
 ht-degree: 72%
 
 ---
@@ -18,19 +18,19 @@ Geführte Analysen ermöglichen es Benutzern, vom Marketing über das Produkt bi
 
 Die folgenden geführten Analysen sind verfügbar:
 
-| Analyse | Beschreibung |
-| --- | --- |
-| [Aktives Wachstum](types/active.md) | Identifizieren Sie, wer neu ist, bleibt, zurückkehrt oder inaktiv ist. |
-| [Konversions-Trends](types/conversion-trends.md) | Verfolgen Sie ie dVeränderungen der Konversionsraten im Laufe der Zeit. |
-| [Interaktion](types/engagement.md) | Erfahren Sie mehr über Umfang und Tiefe der Funktionsinteraktion. |
-| [Auswirkungen der ersten Verwendung](types/first-use.md) | Messen Sie die Auswirkung der erstmaligen Verwendung von Funktionen auf Schlüsselindikatoren. |
-| [Häufigkeit](types/frequency.md) | Messen Sie die Interaktion anhand der Nutzungshäufigkeit. |
-| [Trichter](types/friction.md) | Vergleichen Sie die Konversionsraten zwischen den Schritten. |
-| [Nettowachstum](types/net-growth.md) | Gewinnen oder verlieren Sie Benutzende? |
-| [Auswirkungen der Veröffentlichung](types/release.md) | Vergleichen Sie die Leistung in gleichen Zeiträumen vor und nach der Veröffentlichung. |
-| [Treue](types/retention-rates.md) | Messen Sie die Rückkehrgewohnheiten Ihrer Benutzenden. |
-| [Timeline](types/timeline.md) | Untersuchen Sie Muster in der Sitzungsaktivität. |
-| [Trends](types/usage.md) | Messen Sie die Benutzerinteraktion im Zeitverlauf. |
+| Symbol | Analyse | Beschreibung |
+| :----:|--- | --- |
+| ![PeopleGroup](/help/assets/icons/PeopleGroup.svg) | [Aktives Wachstum](types/active-growth.md) | Identifizieren Sie, wer neu ist, bleibt, zurückkehrt oder inaktiv ist. |
+| ![ConversionTrens](/help/assets/icons/ConversionTrends.svg) | [Konversions-Trends](types/conversion-trends.md) | Verfolgen Sie ie dVeränderungen der Konversionsraten im Laufe der Zeit. |
+| ![EngagementGraph](/help/assets/icons/EngagementGraph.svg) | [Interaktion](types/engagement.md) | Erfahren Sie mehr über Umfang und Tiefe der Funktionsinteraktion. |
+| ![FirstUse](/help/assets/icons/FirstUse.svg) | [Auswirkungen der ersten Verwendung](types/first-use-impact.md) | Messen Sie die Auswirkung der erstmaligen Verwendung von Funktionen auf Schlüsselindikatoren. |
+| ![Histogramm](/help/assets/icons/Histogram.svg) | [Häufigkeit](types/frequency.md) | Messen Sie die Interaktion anhand der Nutzungshäufigkeit. |
+| ![ConversionTrichter](/help/assets/icons/ConversionFunnel.svg) | [Trichter](types/funnel.md) | Vergleichen Sie die Konversionsraten zwischen den Schritten. |
+| ![NetGrowth](/help/assets/icons/NetGrowth.svg) | [Nettowachstum](types/net-growth.md) | Gewinnen oder verlieren Sie Benutzende? |
+| ![Version](/help/assets/icons/Release.svg) | [Auswirkungen der Veröffentlichung](types/release-impact.md) | Vergleichen Sie die Leistung in gleichen Zeiträumen vor und nach der Veröffentlichung. |
+| ![Treue](/help/assets/icons/Retention.svg) | [Treue](types/retention.md) | Messen Sie die Rückkehrgewohnheiten Ihrer Benutzenden. |
+| ![Timeline](/help/assets/icons/Timeline.svg) | [Timeline](types/timeline.md) | Untersuchen Sie Muster in der Sitzungsaktivität. |
+| ![GraphTrend](/help/assets/icons/GraphTrend.svg) | [Trends](types/trends.md) | Messen Sie die Benutzerinteraktion im Zeitverlauf. |
 
 {style="table-layout:auto"}
 
@@ -38,7 +38,7 @@ Die folgenden geführten Analysen sind verfügbar:
 
 Sie können von der Customer Journey Analytics-Startseite aus auf die Geführte Analyse zugreifen.
 
-1. Wählen Sie **[!UICONTROL Geführte Analyse]** von der Startseite aus, wodurch Sie direkt zur Ansicht [Nutzungstrends](types/usage.md) gelangen.
+1. Wählen Sie **[!UICONTROL Geführte Analyse]** von der Startseite aus, wodurch Sie direkt zur Ansicht [Nutzungstrends](types/trends.md) gelangen.
 
    ![Titel der Landingpage](assets/landing-page-tile.png){style="border:1px solid gray"}
 

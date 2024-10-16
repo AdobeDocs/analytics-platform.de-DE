@@ -5,16 +5,16 @@ feature: Adobe Product Analytics, Guided Analysis
 keywords: Produktanalysen
 role: User
 exl-id: d3da9257-a133-46c8-8fac-1a33d3372bb7
-source-git-commit: e9721eaf993175dd46e9d8edf9176d7c00308e8c
+source-git-commit: ce04e69d2c933f893eeeff04abb0f56fb4000e6f
 workflow-type: tm+mt
-source-wordcount: '547'
+source-wordcount: '548'
 ht-degree: 1%
 
 ---
 
 # Ansicht [!UICONTROL Timeline]
 
-In der Ansicht **[!UICONTROL Timeline]** können Sie Sitzungsereignisse auf Benutzerebene im Laufe der Zeit beobachten, um Erlebnismuster zu finden und bessere Benutzermeldungen zu erzählen. In der linken Leiste können Sie den Stream nach Eigenschaftswerten und Segmenten filtern. In der rechten Leiste können Sie aus einer zufälligen Liste von Benutzern auswählen, die den Filterkriterien entsprechen. Der mittlere Bereich zeigt den Stream für den ausgewählten Benutzer nach Sitzung an, der aus Zeitstempel, Eigenschaftswerten und Dauer besteht. Die Dauer ist für das letzte Ereignis in einer bestimmten Sitzung nicht verfügbar.
+In der Ansicht ![Timeline](/help/assets/icons/Timeline.svg) **[!UICONTROL Timeline]** können Sie Sitzungsereignisse auf Benutzerebene im Laufe der Zeit beobachten, um Erlebnismuster zu finden und bessere Benutzermeldungen zu erzählen. In der linken Leiste können Sie den Stream nach Eigenschaftswerten und Segmenten filtern. In der rechten Leiste können Sie aus einer zufälligen Liste von Benutzern auswählen, die den Filterkriterien entsprechen. Der mittlere Bereich zeigt den Stream für den ausgewählten Benutzer nach Sitzung an, der aus Zeitstempel, Eigenschaftswerten und Dauer besteht. Die Dauer ist für das letzte Ereignis in einer bestimmten Sitzung nicht verfügbar.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3427810/?learn=on)
 
@@ -31,7 +31,7 @@ Wenn in einer Datenansicht die Komponente [!UICONTROL Personen-ID] nicht hinzuge
 
 Anwendungsbeispiele für diesen Ansichtstyp sind:
 
-* **Friction exploration**: Wenn Sie einen steilen Rückgang in der Ansicht [Friction](friction.md) feststellen, können Sie ein Segment dieser Benutzer erstellen und das Segment in dieser Ansicht anwenden, um potenzielle Ursachen zu untersuchen.
+* **Friction exploration**: Wenn Sie einen steilen Rückgang in der Ansicht [Friction](funnel.md) feststellen, können Sie ein Segment dieser Benutzer erstellen und das Segment in dieser Ansicht anwenden, um potenzielle Ursachen zu untersuchen.
 * **Fehlerverhalten**: Wenn Benutzer auf einen Produktfehler stoßen, können Sie untersuchen, was Benutzer vor oder nach diesem Fehler getan haben.
 * **Validierung der Datenerfassung**: Datenadministratoren können diese Ansicht nach ihrer eigenen Personen-ID filtern, um zu überprüfen, ob die Implementierung ihrer Organisation erwartungsgemäß funktioniert.
 

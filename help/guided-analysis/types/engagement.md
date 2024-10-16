@@ -5,16 +5,16 @@ feature: Adobe Product Analytics, Guided Analysis
 keywords: Produktanalysen
 role: User
 exl-id: 8a48ad3b-fa30-497e-8306-f8d881b1a335
-source-git-commit: 670443a8caf6b71f49fc63a23b5328609864a9be
+source-git-commit: 39f9ef07088eb9595e5057d21008ecd2f5ea44fe
 workflow-type: tm+mt
-source-wordcount: '721'
+source-wordcount: '722'
 ht-degree: 4%
 
 ---
 
 # Ansicht [!UICONTROL Interaktion]
 
-Die Ansicht **[!UICONTROL Interaktion]** bietet einen Einblick, wie oft eine Funktion verwendet wird und wie viele Benutzer sie verwenden. Diese Analyse funktioniert am besten, wenn mehrere Funktionen miteinander verglichen werden. Sie hilft bei Investitionsentscheidungen, indem sie verstehen, was Ihr Kern, Ihre Macht, Ihre einmaligen und fragwürdigen Merkmale sind.
+Die Ansicht ![EngagementGraph](/help/assets/icons/EngagementGraph.svg) **[!UICONTROL Interaktion]** bietet einen Einblick in die Häufigkeit der Verwendung einer Funktion im Vergleich zu der Anzahl der Benutzer, die diese Funktion verwenden. Diese Analyse funktioniert am besten, wenn mehrere Funktionen miteinander verglichen werden. Sie hilft bei Investitionsentscheidungen, indem sie verstehen, was Ihr Kern, Ihre Macht, Ihre einmaligen und fragwürdigen Merkmale sind.
 
 Funktionen, die oben in dieser Visualisierung dargestellt werden, zeigen an, dass sie häufig von engagierten Benutzern verwendet werden. Funktionen, die rechts neben dieser Visualisierung dargestellt werden, zeigen an, dass sie von Ihren aktiven Benutzern auf breiter Front verwendet werden. Die mittlere Häufigkeit, mit der eine Funktion verwendet wird, teilt das Diagramm horizontal. Der mittlere Prozentsatz aktiver Benutzer teilt das Diagramm vertikal. Die Medianberechnung basiert auf den in der Abfrage ausgewählten Ereignissen, nicht auf allen Daten.
 

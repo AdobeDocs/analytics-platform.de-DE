@@ -5,16 +5,16 @@ feature: Adobe Product Analytics, Guided Analysis
 keywords: Produktanalysen
 exl-id: a4f97458-9934-4a98-8005-fa1ba7831101
 role: User
-source-git-commit: 240a17923b55479865affaafb098b56e32d083a3
+source-git-commit: ce04e69d2c933f893eeeff04abb0f56fb4000e6f
 workflow-type: tm+mt
-source-wordcount: '652'
+source-wordcount: '653'
 ht-degree: 2%
 
 ---
 
 # Ansicht für [!UICONTROL Nettowachstum]
 
-Der Ansichtstyp **[!UICONTROL Nettowachstum]** bietet Einblicke in die Rate, mit der Sie Benutzer über einen bestimmten Zeitraum gewinnen oder verlieren. Die horizontale Achse ist ein Zeitintervall, während die vertikale Achse die Wachstumsmessung darstellt.
+Der Ansichtstyp ![NetGrowth](/help/assets/icons/NetGrowth.svg) **[!UICONTROL Net Growth]** bietet Einblicke in die Rate, mit der Sie Benutzer über einen bestimmten Zeitraum gewinnen oder verlieren. Die horizontale Achse ist ein Zeitintervall, während die vertikale Achse die Wachstumsmessung darstellt.
 
 Jeder Datenpunkt stellt das Nettowachstum dar, das anhand der folgenden Formel berechnet wird:
 
@@ -22,7 +22,7 @@ Jeder Datenpunkt stellt das Nettowachstum dar, das anhand der folgenden Formel b
 
 Das Ergebnis dieser Formel ist ein Verhältnis. Ein Nettowachstum von `1` stellt ein Gleichgewicht dar; das Produkt hat die gleiche Anzahl von Benutzern gewonnen, die es verloren hat. Ein Nettowachstum von mehr als `1` bedeutet ein positives Wachstum; es gab mehr neue + wiederkehrende Benutzer als ruhende Benutzer. Ebenso stellt ein Nettowachstum von weniger als `1` einen Verlust dar; es gab mehr ruhende Benutzer als neue + wiederkehrende Benutzer.
 
-Ähnlich wie beim Ansichtstyp [Aktiv](active.md) werden Benutzer wie folgt definiert:
+Ähnlich wie beim Ansichtstyp [Aktiv](active-growth.md) werden Benutzer wie folgt definiert:
 
 * **[!UICONTROL Neu]**: Der Benutzer war während des aktuellen Zeitraums aktiv, jedoch nicht zuvor. Ermitteln Sie, wie weit die Analyse zurückblickt, um einen neuen Benutzer zu ermitteln, indem Sie den Mauszeiger in der Diagrammlegende über &quot;[!UICONTROL Neue Benutzer]&quot;bewegen. Der Lookback-Bereich wird basierend auf dem ausgewählten Datumsbereich und Intervall dynamisch bestimmt.
 * **[!UICONTROL Zurück]**: Der Benutzer war im aktuellen Zeitraum aktiv und nicht im unmittelbar vorherigen Zeitraum aktiv, war aber zu einem früheren Zeitpunkt aktiv. Ermitteln Sie, wie weit die Analyse zurückblickt, um einen wiederkehrenden Benutzer zu ermitteln, indem Sie den Mauszeiger in der Diagrammlegende über &quot;[!UICONTROL Wiederkehrende Benutzer]&quot;bewegen. Der Lookback-Bereich wird basierend auf dem ausgewählten Datumsbereich und Intervall dynamisch bestimmt.
@@ -46,7 +46,7 @@ Anwendungsbeispiele für diesen Ansichtstyp sind:
 
 In der Abfrageleiste können Sie die folgenden Komponenten konfigurieren:
 
-* **[!UICONTROL Ansicht]**: Wechseln Sie zwischen diesem Ansichtstyp und [Aktiv](active.md).
+* **[!UICONTROL Ansicht]**: Wechseln Sie zwischen diesem Ansichtstyp und [Aktiv](active-growth.md).
 * **[!UICONTROL Ereignisse]**: Das Ereignis, das Sie messen möchten. Da dieser Ansichtstyp benutzerbasiert ist, wird ein Benutzer, der innerhalb des Zeitraums einmal mit dem Ereignis interagiert, als aktiver Benutzer gezählt. Sie können ein Ereignis in eine Abfrage einbeziehen.
 * **[!UICONTROL Zählt als]**: Die Zählmethode, die auf die ausgewählten Ereignisse angewendet werden soll. Zu den Optionen gehören [!UICONTROL Anzahl der Benutzer] und [!UICONTROL Prozentsatz der Benutzer].
 * **[!UICONTROL Segmente]**: Das Segment, das Sie messen möchten. Sie können ein Segment in eine Abfrage einbeziehen.

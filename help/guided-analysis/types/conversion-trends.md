@@ -5,16 +5,16 @@ feature: Adobe Product Analytics, Guided Analysis
 keywords: Produktanalysen
 exl-id: 75501e77-a172-48b4-9c91-b12d39e93c37
 role: User
-source-git-commit: 2b8afe1dbac5057f867437e2bfce27f3bd752d57
+source-git-commit: ce04e69d2c933f893eeeff04abb0f56fb4000e6f
 workflow-type: tm+mt
-source-wordcount: '510'
+source-wordcount: '512'
 ht-degree: 2%
 
 ---
 
 # Ansicht [!UICONTROL Konversionstrends]
 
-Die Ansicht **[!UICONTROL Konversionstrends]** bietet eine Trend-Visualisierung der Konversionsraten im Zeitverlauf. Die horizontale Achse ist ein Zeitintervall, während die vertikale Achse die Konversionsrate darstellt.
+Die Ansicht ![Konversionstrends](/help/assets/icons/ConversionTrends.svg) **[!UICONTROL Konversionstrends]** bietet eine Trend-Visualisierung der Konversionsraten im Zeitverlauf. Die horizontale Achse ist ein Zeitintervall, während die vertikale Achse die Konversionsrate darstellt.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3421662/?learn=on)
 
@@ -22,7 +22,7 @@ Die Ansicht **[!UICONTROL Konversionstrends]** bietet eine Trend-Visualisierung 
 
 Anwendungsbeispiele für diesen Ansichtstyp sind:
 
-* **Optimierungsbemühungen verfolgen**: Nachdem Sie wichtige Engpässe identifiziert haben, die Sie mit [Korrektur](friction.md) verbessern möchten, können Sie diese Ansicht verwenden, um nachzuverfolgen, wie sich diese Optimierungen im Laufe der Zeit auf die Konversionsrate auswirken.
+* **Optimierungsbemühungen verfolgen**: Nachdem Sie wichtige Engpässe identifiziert haben, die Sie mit [Korrektur](funnel.md) verbessern möchten, können Sie diese Ansicht verwenden, um nachzuverfolgen, wie sich diese Optimierungen im Laufe der Zeit auf die Konversionsrate auswirken.
 * **A/B-Test-Evaluierung**: Bewerten Sie die Effektivität von A/B-Tests oder -Experimenten, die im Kontext eines Trichters durchgeführt werden. Durch den Vergleich von Konversionsraten zwischen verschiedenen Varianten können Sie einfach feststellen, welche Tests höhere Konversionsraten bieten, was zu datengesteuerten Entscheidungen führt, um welche Varianten dauerhaft implementiert werden sollen.
 * **Kampagnenbewertung im Zeitverlauf**: Messen Sie die Effektivität von Marketing-Kampagnen im Zeitverlauf. Sie können ein Segment erstellen, das sich auf Benutzer konzentriert, die eine bestimmte Kampagne berührt haben, und ihre Konversionsraten mit anderen Kampagnen vergleichen. Sie können auch die aktuellen Konversionsraten mit ähnlichen Kampagnen vergleichen, die in der Vergangenheit ausgeführt wurden.
 
@@ -30,7 +30,7 @@ Anwendungsbeispiele für diesen Ansichtstyp sind:
 
 In der Abfrageleiste können Sie die folgenden Komponenten konfigurieren:
 
-* **[!UICONTROL Ansicht]**: Zwischen diesem Ansichtstyp und [Funktion](friction.md) wechseln.
+* **[!UICONTROL Ansicht]**: Zwischen diesem Ansichtstyp und [Funktion](funnel.md) wechseln.
 * **[!UICONTROL Schritte]**: Die Ereignis-Touchpoints, die Sie verfolgen möchten. Jede Leiste im Diagramm stellt einen Schritt dar. Sie können bis zu zehn Schritte einbeziehen.
 * **[!UICONTROL Zählt als]**: Die Zählmethode, die auf die ausgewählten Ereignisse angewendet werden soll. Zu den Optionen gehören [!UICONTROL Benutzer] und [!UICONTROL Sitzungen].
 * **[!UICONTROL Segmente]**: Die Segmente, über die Sie den Trichter vergleichen möchten. Jedes ausgewählte Segment teilt jeden Schritt in mehrere Balken auf. Jede Farbe stellt ein anderes Segment dar. Sie können bis zu drei Segmente einbeziehen.
@@ -44,7 +44,7 @@ Die Ansicht [!UICONTROL Konversionstrends] bietet die folgenden Diagrammeinstell
 
 >[!NOTE]
 >
->Die Spalte **Durchschnitt** in der Tabelle &quot;Konversionstrends&quot;unterscheidet sich von der Spalte **Gesamtsumme** in der Tabelle [Friktionsansicht](friction.md). Erstere ist der Durchschnitt der Intervallspalten (z. B. der Durchschnitt der täglichen Konversionsraten), während Letztere eine aggregierte Berechnung über den gesamten Datumsbereich hinweg ist.
+>Die Spalte **Durchschnitt** in der Tabelle &quot;Konversionstrends&quot;unterscheidet sich von der Spalte **Gesamtsumme** in der Tabelle [Friktionsansicht](funnel.md). Erstere ist der Durchschnitt der Intervallspalten (z. B. der Durchschnitt der täglichen Konversionsraten), während Letztere eine aggregierte Berechnung über den gesamten Datumsbereich hinweg ist.
 
 ## Zeitvergleich
 

@@ -9,9 +9,9 @@ index: true
 user-guide-title: Handbuch zu Customer Journey Analytics
 user-guide-description: Hier erhalten Sie Informationen zu Adobe Customer Journey Analytics und Erläuterungen zur Nutzung von Analysis Workspace mit Daten aus Experience Platform.
 breadcrumb-title: Handbuch zu Customer Journey Analytics
-source-git-commit: 1a0422144b795be7f129b13208e93f8d3645a8e7
+source-git-commit: 2311e216eb2bc4aa2150bdb0771ab3e71bf1b8c5
 workflow-type: tm+mt
-source-wordcount: '954'
+source-wordcount: '938'
 ht-degree: 87%
 
 ---
@@ -218,24 +218,17 @@ ht-degree: 87%
 
 + Geführte Analyse {#guided-analysis}
    + [Überblick](../guided-analysis/overview.md)
-   + Funktionsmatrix {#feature-matrix}
-      + [Interaktion](../guided-analysis/types/engagement.md)
-   + Trichter {#funnel}
-      + [Reibungsansicht](../guided-analysis/types/friction.md)
-      + [Ansicht der Konversions-Trends](../guided-analysis/types/conversion-trends.md)
-   + Wirkung {#impact}
-      + [Versionsansicht](../guided-analysis/types/release.md)
-      + [Ansicht der ersten Verwendung](../guided-analysis/types/first-use.md)
-   + Treue {#retention}
-      + [Bindungsrate](../guided-analysis/types/retention-rates.md)
-   + Trends {#trends}
-      + [Nutzungsansicht](../guided-analysis/types/usage.md)
-      + [Häufigkeitsansicht](../guided-analysis/types/frequency.md)
-   + Benutzerwachstum {#user-growth}
-      + [Aktive Ansicht](../guided-analysis/types/active.md)
-      + [Ansicht des Nettowachstums](../guided-analysis/types/net-growth.md)
-   + Benutzer-Stream {#streams}
-      + [Timeline](../guided-analysis/types/timeline.md)
+   + [Aktives Wachstum](../guided-analysis/types/active-growth.md)
+   + [Konversions-Trends](../guided-analysis/types/conversion-trends.md)
+   + [Interaktion](../guided-analysis/types/engagement.md)
+   + [Wirkung der ersten Verwendung](../guided-analysis/types/first-use-impact.md)
+   + [Häufigkeit](../guided-analysis/types/frequency.md)
+   + [Trichter](../guided-analysis/types/funnel.md)
+   + [Nettowachstum](../guided-analysis/types/net-growth.md)
+   + [Auswirkungen der Version](../guided-analysis/types/release-impact.md)
+   + [Treue](../guided-analysis/types/retention.md)
+   + [Timeline](../guided-analysis/types/timeline.md)
+   + [Trends](../guided-analysis/types/trends.md)
    + [Anwendungsfälle für Branchen](../guided-analysis/industry-use-cases.md)
    + [Häufig gestellte Fragen](../guided-analysis/faq.md)
 
