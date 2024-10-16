@@ -4,10 +4,10 @@ title: Journey-Arbeitsfläche
 feature: Visualizations
 role: User
 exl-id: be03c3b2-8faf-47b8-b3ab-e953202bf488
-source-git-commit: 3abe8fd0e43d9ab8810e7166cbdb463bc9244223
+source-git-commit: 5e4666b81f23e09a4208f0efed17a7bc44dff0fc
 workflow-type: tm+mt
-source-wordcount: '1606'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 1%
 
 Mit der Journey-Arbeitsflächenvisualisierung können Sie tief greifende Einblicke in die Journey erhalten, die Sie Ihren Benutzern und Kunden zur Verfügung stellen. Es ermöglicht Ihnen, eine Journey von Grund auf zu definieren oder eine von Journey Optimizer anzuzeigen, dann sehen Sie, wie die Menschen verlassen (fiel aus) oder weiter durch (fiel durch) die Journey.
 
-Sie können [ Analysen von Journey erstellen, indem Sie eine beliebige Kombination aus Ereignissen, Dimensionselementen, Filtern und Datumsbereichen verwenden, um Journey-Knoten zu erstellen. ](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md) Verbinden Sie die Knoten, um den Journey zu erstellen, und schließen Sie mehrere Pfade und Entscheidungspunkte ein. Ziehen Sie Knoten auf die Arbeitsfläche, um die Ereignisse und Bedingungen der Journey neu anzuordnen. Daten werden in Echtzeit aktualisiert, wenn Sie Änderungen vornehmen.
+Sie können [ Analysen von Journey erstellen, indem Sie eine beliebige Kombination aus Ereignissen, Dimensionselementen, Filtern und Datumsbereichen verwenden, um Journey-Knoten zu erstellen. ](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md) Verbinden Sie die Knoten, um den Journey zu erstellen, und schließen Sie mehrere Pfade und Entscheidungspunkte ein. Ziehen Sie Knoten auf die Arbeitsfläche, um die Ereignisse und Bedingungen der Journey neu anzuordnen. Daten werden bei Änderungen in Echtzeit aktualisiert.
 
 [Knoten sind mit ](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md#logic-when-connecting-nodes) als &quot;letztendlichen Pfad&quot;verbunden. Das bedeutet, dass Besucher gezählt werden, solange sie sich schließlich von einem Knoten zum anderen bewegen, unabhängig von Ereignissen, die zwischen den beiden Knoten auftreten. Die Zeit, die Benutzern für das Verschieben entlang des Pfads zugewiesen wird, wird durch die Containereinstellung bestimmt.
 
@@ -33,7 +33,7 @@ Zu den wichtigsten Funktionen der Visualisierung der Journey-Arbeitsfläche geh�
 
 * Drag &amp; Drop von Interaktionen zum Hinzufügen von Komponenten zur Arbeitsfläche und zum Neupositionieren vorhandener Knoten.
 
-* Die Option zum Erstellen von Analysen von Journey-Benutzern auf der Journey-Arbeitsfläche oder zum automatischen Erstellen dieser Analysen auf Grundlage von Journey Optimizer-Journey.
+* Die Option zum Erstellen von Analysen von Journey-Benutzern auf der Journey-Arbeitsfläche oder zum automatischen Erstellen dieser Analysen auf der Grundlage von Journey Optimizer-Journey.
 
 ## Potenzielle Erkenntnisse
 
