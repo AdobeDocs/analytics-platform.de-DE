@@ -3,10 +3,10 @@ title: Dimensionen – Übersicht
 description: Erfahren Sie, welche Dimensionen und wie sie beim Customer Journey Analytics verwendet werden.
 feature: Dimensions
 exl-id: 3592808b-17fd-401d-ab12-ff0308b21f45
-source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
+source-git-commit: d37734ae415722fc609715868c37a36f2becdbf6
 workflow-type: tm+mt
-source-wordcount: '204'
-ht-degree: 28%
+source-wordcount: '262'
+ht-degree: 36%
 
 ---
 
@@ -34,6 +34,29 @@ Jede Dimension stellt einen anderen Teil oder eine andere Facette Ihrer Site dar
 ## Dimensionen erstellen
 
 Customer Journey Analytics-Administratoren können [Dimensionen in einer Datenansicht erstellen](/help/data-views/create-dataview.md#components).
+
+## Standarddimensionen
+
+Wenn Sie eine Datenansicht erstellen, werden die folgenden zeitbasierten Komponenten standardmäßig als Dimensionen zu Ihrer Datenansicht hinzugefügt:
+
+- 15 Minuten
+- 30 Minuten
+- 5 Minuten
+- Tag
+- Tag des Monats
+- Wochentag
+- Tag des Jahres
+- Stunde
+- Stunde des Tages
+- Minute
+- Minute der Stunde
+- Monat
+- Monat des Jahres
+- Quartal
+- Quartal des Jahres
+- Zweite/r
+- Woche des Jahres
+- Jahr
 
 ## Hinzufügen von Dimensionsbeschreibungen
 

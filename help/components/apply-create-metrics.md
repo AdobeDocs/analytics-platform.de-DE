@@ -4,16 +4,23 @@ title: Metriken
 feature: Metrics
 exl-id: 4edfb5d7-da20-4bd8-8041-387b291daf96
 role: User
-source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
+source-git-commit: d317f6bb9892d0d13fc7723f7e8c2d9ba2ce4f63
 workflow-type: tm+mt
-source-wordcount: '316'
-ht-degree: 20%
+source-wordcount: '441'
+ht-degree: 14%
 
 ---
 
 # Metriken
 
 Mit Metriken können Sie Datenpunkte in Analysis Workspace quantifizieren. Sie werden meist als Spalten in einer Visualisierung verwendet und sind an Dimensionen gebunden.
+
+## Verwenden von Metriken in Analysis Workspace
+
+Metriken sind in ihrer Verwendung in Analysis Workspace flexibel. Ziehen Sie eine Metrik in eine leere Freiformtabelle, um die Trendansicht dieser Metrik über den Datumsbereich des Projekts anzuzeigen. Sie können auch eine Metrik ziehen, wenn eine Dimension vorhanden ist, um diese Metrik im Vergleich zu jedem Dimensionselement anzuzeigen. Wenn Sie eine Metrik auf eine vorhandene Metrik-Kopfzeile ziehen, wird sie ersetzt und durch Ziehen einer Metrik neben eine Kopfzeile können Sie beide Metriken nebeneinander sehen.
+
+Informationen zum Hinzufügen von Metriken und anderen Komponententypen zu Analysis Workspace finden Sie unter [Verwenden von Komponenten in Analysis Workspace](/help/components/use-components-in-workspace.md).
+
 
 ## Arten von Metriken
 
@@ -22,19 +29,19 @@ Adobe bietet verschiedene Arten von Metriken zur Verwendung in Analysis Workspac
 
 * **Standardmetriken**: Beispiel für Standardmetriken sind Personen, Sitzungen, Ereignisse.
 
+  Im Gegensatz zu Adobe Analytics ermöglicht Customer Journey Analytics die flexible Definition von Standardmetriken im Rahmen einer Verbindung und einer Datenansicht.
+
+   * **Personen**: Die Metrik &quot;Personen&quot;in Customer Journey Analytics ist die Zählung für Personen-IDs. Je nachdem, was Sie beim Konfigurieren von Datensätzen in Ihrer Verbindung als Personen-ID auswählen, kann die Metrik für Personen unterschiedliche Bedeutungen haben.
+   * **Sitzungen**: Die Sitzungsmetrik in Customer Journey Analytics wird im Rahmen der Konfiguration der Sitzungseinstellungen in Ihrer Datenansicht definiert. Siehe [Sitzungseinstellungen](/help/data-views/session-settings.md).
+   * **Ereignisse**: Die Ereignismetrik in Customer Journey Analytics besteht aus den Ereignissen, die Teil jedes Ereignis-Datensatzes sind, den Sie im Rahmen Ihrer Verbindung konfiguriert haben.
+
 * **Berechnete Metriken** ![Rechner](/help/assets/icons/Calculator.svg): Benutzerdefinierte Metriken, die auf Standardmetriken, statischen Zahlen oder algorithmischen Funktionen basieren.
 
-* **Vorlagen für berechnete Metriken** ![AdobeLogoSmall](/help/assets/icons/AdobeLogoSmall.svg) : Adobe-definierte Metriken, die sich ähnlich wie berechnete Metriken verhalten. Sie können sie unverändert in Workspace-Projekten verwenden oder eine Kopie speichern, um die Logik anzupassen.
+* **Vorlagen für berechnete Metriken** ![AdobeLogoSmall](/help/assets/icons/AdobeLogoSmall.svg) : Adobe-definierte Metriken, die sich ähnlich wie berechnete Metriken verhalten. Sie können sie unverändert in Workspace-Projekten verwenden oder eine Kopie speichern, um die Logik anzupassen. Siehe [Standardberechnete Metriken](calc-metrics/cm-workflow/../default-calcmetrics.md).
 
 Sie können sehen, ob eine Metrik für ![Genehmigungssymbol](https://spectrum.adobe.com/static/icons/ui_18/CheckmarkSize100.svg) genehmigt wurde oder nicht. Wenn Sie weitere Details zu einer Metrik wünschen, bewegen Sie den Mauszeiger über die Metrik und wählen Sie ![Infosymbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg) aus. Weitere Informationen finden Sie unter [Komponenteninformationen](use-components-in-workspace.md#component-info) .
 
 
-
-## Verwenden von Metriken in Analysis Workspace
-
-Metriken sind in ihrer Verwendung in Analysis Workspace flexibel. Ziehen Sie eine Metrik in eine leere Freiformtabelle, um die Trendansicht dieser Metrik über den Datumsbereich des Projekts anzuzeigen. Sie können auch eine Metrik ziehen, wenn eine Dimension vorhanden ist, um diese Metrik im Vergleich zu jedem Dimensionselement anzuzeigen. Wenn Sie eine Metrik auf eine vorhandene Metrik-Kopfzeile ziehen, wird sie ersetzt und durch Ziehen einer Metrik neben eine Kopfzeile können Sie beide Metriken nebeneinander sehen.
-
-Informationen zum Hinzufügen von Metriken und anderen Komponententypen zu Analysis Workspace finden Sie unter [Verwenden von Komponenten in Analysis Workspace](/help/components/use-components-in-workspace.md).
 
 ## Berechnete Metriken 
 

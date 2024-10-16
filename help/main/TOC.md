@@ -9,10 +9,10 @@ index: true
 user-guide-title: Handbuch zu Customer Journey Analytics
 user-guide-description: Hier erhalten Sie Informationen zu Adobe Customer Journey Analytics und Erläuterungen zur Nutzung von Analysis Workspace mit Daten aus Experience Platform.
 breadcrumb-title: Handbuch zu Customer Journey Analytics
-source-git-commit: 2311e216eb2bc4aa2150bdb0771ab3e71bf1b8c5
+source-git-commit: 29869538b2f2475b707fd3c088b5715f44de319a
 workflow-type: tm+mt
 source-wordcount: '938'
-ht-degree: 87%
+ht-degree: 86%
 
 ---
 
@@ -21,6 +21,7 @@ ht-degree: 87%
 
 + [Handbuch zu Adobe Customer Journey Analytics](../getting-started/cja-landing.md)
 + [KI-Assistent für Adobe Customer Journey Analytics](../ai-assistant.md)
+
 + Versionshinweise {#releases}
    + [Neueste Version](../release-notes/latest.md)
    + [Versionen 2024](../release-notes/2024.md)
@@ -287,7 +288,7 @@ ht-degree: 87%
          + [Berechnete Metriken freigeben](../components/calc-metrics/cm-workflow/cm-sharing.md)
          + [Berechnete Metriken verwalten](../components/calc-metrics/cm-workflow/cm-manager.md)
          + [Beispiele](../components/calc-metrics/cm-workflow/cm-weighted-metric.md)
-      + [Standardmäßig berechnete Metriken](../components/calc-metrics/default-calcmetrics.md)
+      + [Berechnete Metrikvorlagen](../components/calc-metrics/default-calcmetrics.md)
       + [Grundlegende Funktionen](../components/calc-metrics/cm-functions.md)
       + [Erweiterte Funktionen](../components/calc-metrics/cm-adv-functions.md)
    + Datumsbereiche {#cja-date-ranges}
