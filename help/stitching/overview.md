@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 exl-id: 1c42efac-b3d2-437b-8b0b-9c6fdfed8520
 role: Admin
-source-git-commit: 63bdb36f7c33a129f294157a814f9fb15868006e
+source-git-commit: 50019cc5c66eee98f02d24bc55f3d993d9114dd0
 workflow-type: tm+mt
-source-wordcount: '3919'
-ht-degree: 12%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -84,9 +84,11 @@ Durch die Zuordnung werden mindestens zwei Durchgänge an Daten in einem bestimm
 
 - **Live-Stitching**: versucht, jeden Treffer (Ereignis) beim Eintreten zuzuordnen. Treffer von Geräten, die dem Datensatz &quot;neu&quot;sind (sich noch nie authentifiziert haben), werden normalerweise nicht auf dieser Ebene zugeordnet. Treffer von bereits erkannten Geräten werden sofort zugeordnet.
 
-- **Wiederholungszuordnung wiedergeben**: wiederholt Daten basierend auf eindeutigen Kennungen (vorübergehenden IDs), die gelernt wurden. In dieser Phase werden Treffer von zuvor unbekannten Geräten (beständigen IDs) zugeordnet (zu vorübergehenden IDs). Adobe bietet zwei Wiederholungsintervalle:
+- **Wiederholungszuordnung wiedergeben**: wiederholt Daten basierend auf eindeutigen Kennungen (vorübergehenden IDs), die gelernt wurden. In dieser Phase werden Treffer von zuvor unbekannten Geräten (beständigen IDs) zugeordnet (zu vorübergehenden IDs). Adobe bietet die folgenden Wiederholungsintervalle:
    - **Täglich**: Daten werden täglich mit einem 24-Stunden-Lookback-Fenster wiederholt. Diese Option bietet den Vorteil, dass Wiederholungen viel häufiger vorkommen. Nicht authentifizierte Besucher müssen sich jedoch an dem Tag authentifizieren, an dem sie Ihre Website besuchen.
-   - **Wöchentlich**: Daten werden einmal wöchentlich mit dem ausgewählten Lookback-Fenster wiederholt (siehe [Optionen](#select-options)). Diese Option bietet den Vorteil, dass nicht authentifizierte Sitzungen über einen weniger eng gefasst Zeitraum für die Authentifizierung verfügen. Nicht zugeordnete Daten, die weniger als eine Woche alt sind, werden jedoch erst bei der nächsten wöchentlichen Wiederholung erneut verarbeitet.
+   - **Wöchentlich**: Daten werden einmal wöchentlich mit dem Lookback-Fenster wiederholt (siehe [options](#options)). Diese Option bietet den Vorteil, dass nicht authentifizierte Sitzungen über einen weniger eng gefasst Zeitraum für die Authentifizierung verfügen. Nicht zugeordnete Daten, die weniger als eine Woche alt sind, werden jedoch erst bei der nächsten wöchentlichen Wiederholung erneut verarbeitet.
+   - **Biweekly**: Daten werden alle zwei Wochen mit dem Lookback-Fenster wiederholt (siehe [options](#options)). Diese Option bietet den Vorteil, dass nicht authentifizierte Sitzungen über einen weniger eng gefasst Zeitraum für die Authentifizierung verfügen. Nicht zugeordnete Daten, die weniger als zwei Wochen alt sind, werden jedoch erst bei der nächsten zweiwöchigen Wiederholung erneut verarbeitet.
+   - **Monatlich**: Die Daten werden einmal im Monat mit dem Lookback-Fenster wiederholt (siehe [Optionen](#options)). Diese Option bietet den Vorteil, dass nicht authentifizierte Sitzungen über einen weniger eng gefasst Zeitraum für die Authentifizierung verfügen. Nicht zugeordnete Daten, die weniger als einen Monat alt sind, werden jedoch erst nach der erneuten Wiedergabe im nächsten Monat erneut verarbeitet.
 
 - **Datenschutz**: Wenn datenschutzbezogene Anfragen empfangen werden, muss nicht nur die angeforderte Identität entfernt werden, sondern auch die Zuordnung dieser Identität zu nicht authentifizierten Ereignissen rückgängig gemacht werden.
 
@@ -223,11 +225,11 @@ Durch die Zuordnung werden mindestens zwei Durchgänge an Daten in einem bestimm
 
 - **Live-Stitching**: versucht, jeden eingehenden Treffer (Ereignis) zuzuordnen, indem die beständige ID verwendet wird, um die vorübergehende ID für den ausgewählten Namespace nachzuschlagen, indem das Identitätsdiagramm abgefragt wird. Wenn die vorübergehende ID aus der Suche verfügbar ist, wird diese vorübergehende ID sofort zugeordnet.
 
-- **Wiederholungszuordnung wiedergeben**: wiederholt Daten basierend auf aktualisierten Identitäten aus dem Identitätsdiagramm. In dieser Phase werden Treffer von zuvor unbekannten Geräten (beständigen IDs) zugeordnet, da das Identitätsdiagramm die Identität für einen Namespace aufgelöst hat. Adobe bietet zwei Wiederholungsintervalle:
+- **Wiederholungszuordnung wiedergeben**: wiederholt Daten basierend auf aktualisierten Identitäten aus dem Identitätsdiagramm. In dieser Phase werden Treffer von zuvor unbekannten Geräten (beständigen IDs) zugeordnet, da das Identitätsdiagramm die Identität für einen Namespace aufgelöst hat. Adobe bietet die folgenden Wiederholungsintervalle:
    - **Täglich**: Daten werden täglich mit einem 24-Stunden-Lookback-Fenster wiederholt. Diese Option bietet den Vorteil, dass Wiederholungen viel häufiger vorkommen. Nicht authentifizierte Besucher müssen sich jedoch an dem Tag authentifizieren, an dem sie Ihre Website besuchen.
    - **Wöchentlich**: Daten werden einmal wöchentlich mit dem Lookback-Fenster wiederholt (siehe [options](#options)). Diese Option bietet den Vorteil, dass nicht authentifizierte Sitzungen über einen weniger eng gefasst Zeitraum für die Authentifizierung verfügen. Nicht zugeordnete Daten, die weniger als eine Woche alt sind, werden jedoch erst bei der nächsten wöchentlichen Wiederholung erneut verarbeitet.
    - **Biweekly**: Daten werden alle zwei Wochen mit dem Lookback-Fenster wiederholt (siehe [options](#options)). Diese Option bietet den Vorteil, dass nicht authentifizierte Sitzungen über einen weniger eng gefasst Zeitraum für die Authentifizierung verfügen. Nicht zugeordnete Daten, die weniger als zwei Wochen alt sind, werden jedoch erst bei der nächsten zweiwöchigen Wiederholung erneut verarbeitet.
-   - **Monatlich**: Die Daten werden einmal im Monat mit dem Lookback-Fenster wiederholt (siehe [Optionen](#options)). Diese Option bietet den Vorteil, dass nicht authentifizierte Sitzungen über einen weniger eng gefasst Zeitraum für die Authentifizierung verfügen. Nicht zugeordnete Daten, die weniger als eine Woche alt sind, werden jedoch erst bei der nächsten wöchentlichen Wiederholung erneut verarbeitet.
+   - **Monatlich**: Die Daten werden einmal im Monat mit dem Lookback-Fenster wiederholt (siehe [Optionen](#options)). Diese Option bietet den Vorteil, dass nicht authentifizierte Sitzungen über einen weniger eng gefasst Zeitraum für die Authentifizierung verfügen. Nicht zugeordnete Daten, die weniger als einen Monat alt sind, werden jedoch erst nach der erneuten Wiedergabe im nächsten Monat erneut verarbeitet.
 
 - **Datenschutz**: Wenn datenschutzbezogene Anfragen empfangen werden, muss nicht nur die angeforderte Identität aus dem Quelldatensatz entfernt werden, sondern auch die Zuordnung dieser Identität zu nicht authentifizierten Ereignissen rückgängig gemacht werden. Außerdem muss die Identität aus dem Identitätsdiagramm entfernt werden, um das zukünftige grafikbasierte Stitching für diese spezifische Identität zu verhindern.
 

@@ -5,10 +5,10 @@ exl-id: 9f678225-a9f3-4134-be38-924b8de8d57f
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: 22f3519445564ebdb2092db04cc966001bda8b1c
+source-git-commit: 50019cc5c66eee98f02d24bc55f3d993d9114dd0
 workflow-type: tm+mt
-source-wordcount: '731'
-ht-degree: 35%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -30,20 +30,20 @@ Siehe folgendes Beispiel. Sie haben zwei Ereignis-Datensätze mit jeweils unters
 >
 >Adobe Experience Platform speichert normalerweise einen Zeitstempel in UNIX® Millisekunden. Zur besseren Lesbarkeit werden in diesem Beispiel Datum und Uhrzeit verwendet.
 
-| `example_id` | `timestamp` | `string_color` | `string_animal` | `metric_a` |
-| --- | --- | --- | --- | --- |
-| `user_310` | `1 Jan 7:02 AM` | `Red` | `Fox` | |
-| `user_310` | `1 Jan 7:04 AM` | | | `2` |
-| `user_310` | `1 Jan 7:08 AM` | `Blue` | | `3` |
-| `user_847` | `2 Jan 12:31 PM` | | `Turtle` | `4` |
-| `user_847` | `2 Jan 12:44 PM` | | | `2` |
+| example_id | timestamp | string_color | string_animal | metric_a |
+| --- | --- | --- | --- | ---: |
+| user_310 | 1. Januar 7:02 | Rot | Fuchs | |
+| user_310 | 1. Januar 7:04 | | | 2 |
+| user_310 | 1. Januar 7:08 | Blau | | 3 |
+| user_847 | 12.01:31 | | Schildkröte | 4 |
+| user_847 | 12.01:44 | | | 2 |
 
-| `different_id` | `timestamp` | `string_color` | `string_shape` | `metric_b` |
-| --- | --- | --- | --- | --- |
-| `user_847` | `2 Jan 12:26 PM` | `Yellow` | `Circle` | `8.5` |
-| `user_847` | `2 Jan 1:01 PM` | `Red` | | |
-| `alternateid_656` | `2 Jan 8:58 PM` | `Red` | `Square` | `4.2` |
-| `alternateid_656` | `2 Jan 9:03 PM` | | `Triangle` | `3.1` |
+| distinct_id | timestamp | string_color | string_shape | metric_b |
+| --- | --- | --- | --- | ---: |
+| user_847 | 12.01:26 | Gelb | Kreis | 8,5 |
+| user_847 | 14. Januar:01 | Rot | | |
+| alternateid_656 | 2. Januar 8:58 | Rot | Square | 4.2 |
+| alternateid_656 | 2. Januar 21:03 | | Dreieck | 3,1 |
 
 Wenn Sie eine Verbindung mit diesen beiden Ereignis-Datensätzen erstellen und
 
@@ -52,19 +52,31 @@ Wenn Sie eine Verbindung mit diesen beiden Ereignis-Datensätzen erstellen und
 
 der folgende kombinierte Datensatz wird für die Berichterstellung verwendet.
 
-| `id` | `timestamp` | `string_color` | `string_animal` | `string_shape` | `metric_a` | `metric_b` |
-| --- | --- | --- | --- | --- | --- | --- |
-| `user_310` | `1 Jan 7:02 AM` | `Red` | `Fox` | | | |
-| `user_310` | `1 Jan 7:04 AM` | | | | `2` | |
-| `user_310` | `1 Jan 7:08 AM` | `Blue` | | | `3` | |
-| `user_847` | `2 Jan 12:26 PM` | `Yellow` | | `Circle` | | `8.5` |
-| `user_847` | `2 Jan 12:31 PM` | | `Turtle` | | `4` | |
-| `user_847` | `2 Jan 12:44 PM` | | | | `2` | |
-| `user_847` | `2 Jan 1:01 PM` | `Red` | | | | |
-| `alternateid_656` | `2 Jan 8:58 PM` | `Red` | | `Square` | | `4.2` |
-| `alternateid_656` | `2 Jan 9:03 PM` | | | `Triangle` | | `3.1` |
+| id | timestamp | string_color | string_animal | string_shape | metric_a | metric_b |
+| --- | --- | --- | --- | --- | ---: | ---: |
+| user_310 | 1. Januar 7:02 | Rot | Fuchs | | | |
+| user_310 | 1. Januar 7:04 | | | | 2 | |
+| user_310 | 1. Januar 7:08 | Blau | | | 3 | |
+| user_847 | 12.01:26 | Gelb | | Kreis | | 8,5 |
+| user_847 | 12.01:31 | | Schildkröte | | 4 | |
+| user_847 | 12.01:44 | | | | 2 | |
+| user_847 | 14. Januar:01 | Rot | | | | |
+| alternateid_656 | 2. Januar 8:58 | Rot | | Square | | 4.2 |
+| alternateid_656 | 2. Januar 21:03 | | | Dreieck | | 3,1 |
 
-Um die Bedeutung von Schemapfaden zu veranschaulichen, beachten Sie dieses Szenario. Im ersten Datensatz basiert `string_color` auf dem Schemapfad `_experience.whatever.string_color` und im zweiten Datensatz auf dem Schemapfad `_experience.somethingelse.string_color`. In diesem Szenario werden die Daten **nicht** in eine Spalte im resultierenden kombinierten Datensatz zusammengeführt. Stattdessen ergibt sich aus zwei `string_color` -Spalten im kombinierten Datensatz.
+Um die Bedeutung von Schemapfaden zu veranschaulichen, beachten Sie dieses Szenario. Im ersten Datensatz basiert `string_color` auf dem Schemapfad `_experience.whatever.string_color` und im zweiten Datensatz auf dem Schemapfad `_experience.somethingelse.string_color`. In diesem Szenario werden die Daten **nicht** in eine Spalte im resultierenden kombinierten Datensatz zusammengeführt. Stattdessen ergibt sich aus zwei `string_color` -Spalten im kombinierten Datensatz:
+
+| id | timestamp | _experience.<br/>was auch immer.<br/>string_color | Erlebnis.<br/>etwas Anderes.<br/>string_color | string_animal | string_shape | metric_a | metric_b |
+| --- | --- | --- | --- | --- | --- | ---: | ---:|
+| user_310 | 1. Januar 7:02 | Rot | | Fuchs | | | |
+| user_310 | 1. Januar 7:04 | | | | | 2 | |
+| user_310 | 1. Januar 7:08 | Blau | | | | 3 | |
+| user_847 | 12.01:26 | | Gelb | | Kreis | | 8,5 |
+| user_847 | 12.01:31 | | | Schildkröte |  | 4 | |
+| user_847 | 12.01:44 | | | | | 2 | |
+| user_847 | 14. Januar:01 | | Rot | | | | |
+| alternateid_656 | 2. Januar 8:58 | | Rot | | Square | | 4.2 |
+| alternateid_656 | 2. Januar 21:03 | | | | Dreieck | | 3,1 |
 
 Dieser „kombinierte Ereignis-Datensatz“ wird für das Reporting verwendet. Es spielt keine Rolle, aus welchem Datensatz eine Zeile stammt. Customer Journey Analytics behandelt alle Daten so, als befänden sie sich im selben Datensatz. Wenn in beiden Datensätzen eine übereinstimmende Personen-ID angezeigt wird, werden sie als dieselbe eindeutige Person betrachtet. Wenn eine übereinstimmende Personen-ID in beiden Datensätzen mit einem Zeitstempel innerhalb von 30 Minuten angezeigt wird, werden sie als Teil derselben Sitzung betrachtet. Felder mit identischen Schemapfaden werden zusammengeführt.
 
@@ -73,7 +85,7 @@ Dieses Konzept gilt auch für die Attribution. Es spielt keine Rolle, aus welche
 Wenn Ihre Verbindung nur die erste Tabelle und nicht die zweite Tabelle enthält, wird beim Abrufen eines Berichts unter Verwendung der `string_color`-Dimension und der `metric_a`-Metrik und der Attribution „Letztkontakt“ Folgendes angezeigt:
 
 | string_color | metric_a |
-| --- | --- |
+| --- | ---: |
 | Nicht angegeben | 6 |
 | Blau | 3 |
 | Rot | 2 |
@@ -81,7 +93,7 @@ Wenn Ihre Verbindung nur die erste Tabelle und nicht die zweite Tabelle enthält
 Wenn Sie jedoch beide Tabellen in Ihrer Verbindung eingeschlossen haben, ändert sich die Attribution, da `user_847` in beiden Datensätzen enthalten ist. Eine Zeile aus den zweiten Datensatz weist `metric_a` „Gelb“ zu. Diese Zuordnung wurde im vorherigen Fall nicht angegeben:
 
 | string_color | metric_a |
-| --- | --- |
+| --- | ---: |
 | Gelb | 6 |
 | Blau | 3 |
 | Rot | 2 |
