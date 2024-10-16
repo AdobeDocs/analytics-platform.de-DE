@@ -4,9 +4,9 @@ description: Listet Inhaltsaktualisierungen für Dokumentation zu Customer Journ
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: e355194d6699128ac817ea564940c0afdea61efc
+source-git-commit: 18131b0ccabbc8043e2638c735a4a603029f4b93
 workflow-type: tm+mt
-source-wordcount: '4108'
+source-wordcount: '4104'
 ht-degree: 70%
 
 ---
@@ -53,7 +53,7 @@ Die folgenden Aktualisierungen wurden seit der ersten Erstellung der Customer Jo
 | Vorhersage statistischer Verfahren | Es wurde ein Artikel hinzugefügt, der die im Prognosedienst verwendeten [statistischen Verfahren ](../analysis-workspace/c-forecast/statistics-forecasting.md) beschreibt. |
 | Es wurden Informationen hinzugefügt, die einen vollständigen Tabellenexport für Dimensionen mit hoher Kardinalität empfehlen | Es wurde ein Aufzählungszeichen in [Best Practices für Dimensionen mit hoher Kardinalität](/help/components/dimensions/high-cardinality.md) hinzugefügt, um die Verwendung des vollständigen Tabellenexports für Dimensionen mit hoher Kardinalität zu empfehlen. |
 | Eine Dokumentation zu intelligenten Untertiteln in mobilen Scorecards wurde hinzugefügt. | [Intelligente Untertitel](https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-dashboards/manage-scorecard#captions) können Nicht-Analytikern helfen, ohne die Hilfe von Analysten ihre Daten besser zu verstehen. |
-| Neue Dokumentation für Adobe Product Analytics-Funktionen | <ul><li>[Funktionsmatrix](https://experienceleague.adobe.com/de/docs/analytics-platform/using/guided-analysis/funnel/friction)</li><li>Verbesserte [Beibehaltungsraten](https://experienceleague.adobe.com/de/docs/analytics-platform/using/guided-analysis/retention/retention-rates)</li><li>[Verbesserte Einblicke in Trichter](https://experienceleague.adobe.com/de/docs/analytics-platform/using/guided-analysis/funnel/friction)</li><li>Vergleichen von Ereignissen innerhalb eines einzelnen Trichterschrittsschritts</li></ul> |
+| Neue Dokumentation für Adobe Product Analytics-Funktionen | <ul><li>[Funktionsmatrix](/help/guided-analysis/types/funnel.md)</li><li>Verbesserte [Treue](/help/guided-analysis/types/retention.md)</li><li>[Verbesserte Einblicke in Trichter](/help/guided-analysis/types/funnel.md)</li><li>Vergleichen von Ereignissen innerhalb eines einzelnen Trichterschrittsschritts</li></ul> |
 | **März 2024** | |
 | Nutzungsinformationen zur Spalte „Verwendet in“ sind erst ab September 2023 verfügbar. | Es wurde klargestellt, dass die Nutzungsinformationen zur Spalte **Verwendet in** auf der [Projekte-Landingpage](/help/getting-started/landing.md) nur bis September 2023 zurückreichen. |
 | Eine Dokumentation zur Berechtigungsverbesserung für reine Workspace-Projektkomponenten wurde hinzugefügt - | Wenn Sie ein Projekt für andere Benutzer freigeben, können diese Benutzer [Schnellfilter](/help/components/filters/quick-filters.md) und andere reine Projektkomponenten bearbeiten, die in das freigegebene Projekt eingebettet sind. |
