@@ -5,7 +5,7 @@ exl-id: 9f678225-a9f3-4134-be38-924b8de8d57f
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: 8241bcc4a2653da456c1577eb95d5504ca118cd9
+source-git-commit: aaf23560b69c90fdbaee3fa401b5fe58e6a4e5d1
 workflow-type: tm+mt
 source-wordcount: '919'
 ht-degree: 34%
@@ -67,7 +67,7 @@ der folgende kombinierte Datensatz wird für die Berichterstellung verwendet.
 Um die Bedeutung von Schemapfaden zu veranschaulichen, beachten Sie dieses Szenario. Im ersten Datensatz basiert `string_color` auf dem Schemapfad `_experience.whatever.string_color` und im zweiten Datensatz auf dem Schemapfad `_experience.somethingelse.string_color`. In diesem Szenario werden die Daten **nicht** in eine Spalte im resultierenden kombinierten Datensatz zusammengeführt. Stattdessen ergibt sich aus zwei `string_color` -Spalten im kombinierten Datensatz:
 
 | id | timestamp | _experience.<br/>was auch immer.<br/>string_color | _experience.<br/>etwas Anderes.<br/>string_color | string_animal | string_shape | metric_a | metric_b |
-| --- | --- | --- | --- | --- | --- | ---: | ---:|
+|---|---|---|---|---|---|---:|---:|
 | user_310 | 1. Januar 7:02 | Rot | | Fuchs | | | |
 | user_310 | 1. Januar 7:04 | | | | | 2 | |
 | user_310 | 1. Januar 7:08 | Blau | | | | 3 | |
