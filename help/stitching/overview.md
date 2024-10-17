@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 exl-id: 1c42efac-b3d2-437b-8b0b-9c6fdfed8520
 role: Admin
-source-git-commit: 50019cc5c66eee98f02d24bc55f3d993d9114dd0
+source-git-commit: 8cf8af1d1d84f4db93ab627e76554f3fe618ef92
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '4009'
+ht-degree: 13%
 
 ---
 
@@ -17,7 +17,6 @@ ht-degree: 0%
 >[!NOTE]
 >
 >Sie müssen über das Paket **Select** oder höher (für feldbasiertes Stitching) oder das Paket **Prime** oder höher (für grafikbasiertes Stitching) verfügen, um die in diesem Abschnitt beschriebene Funktion verwenden zu können. Wenden Sie sich an Ihre Admins, wenn Sie sich nicht sicher sind, welches Customer Journey Analytics-Paket Sie besitzen.
-
 
 Die Identitätszuordnung (oder einfach das Stitching) ist eine leistungsstarke Funktion, die die Eignung eines Ereignis-Datensatzes für die kanalübergreifende Analyse erhöht. Die kanalübergreifende Analyse ist ein Hauptanwendungsfall, den Customer Journey Analytics handhaben kann. So können Sie Berichte basierend auf einer gemeinsamen Kennung (Personen-ID) nahtlos mit mehreren Datensätzen aus verschiedenen Kanälen kombinieren und ausführen.
 
