@@ -1,16 +1,16 @@
 ---
-title: Einstellungen für Produktverwendungsdaten
+title: Einstellungen für Produktnutzungsdaten
 description: Produktnutzungseinstellungen aktivieren, deaktivieren oder konfigurieren.
 hide: true
 hidefromtoc: true
-source-git-commit: f337dfbd780aab4ae40534c5c1151dba35681b21
+source-git-commit: b3d33561cc29aa1d37efa9f943bc145c16be814c
 workflow-type: tm+mt
-source-wordcount: '337'
-ht-degree: 0%
+source-wordcount: '318'
+ht-degree: 14%
 
 ---
 
-# Einstellungen für Produktverwendungsdaten {#product-usage-data-settings}
+# Einstellungen für Produktnutzungsdaten {#product-usage-data-settings}
 
 {{release-limited-testing}}
 
@@ -19,8 +19,7 @@ Die Seite _Dateneinstellungen_ verarbeitet Ihre Produktverwendungskonfiguration.
 **[!UICONTROL Customer Journey Analytics]** > **[!UICONTROL Tools]** > **[!UICONTROL Produktnutzung]** > **[!UICONTROL Dateneinstellungen]**
 
 >[!IMPORTANT]
->
->Wenn Sie diese Funktion aktivieren, müssen Sie die Nutzungsbedingungen akzeptieren, bevor Sie sie verwenden können. Wenn Sie diese Geschäftsbedingungen akzeptieren, tun Sie dies im Namen Ihrer gesamten Organisation. Der Benutzer, der diese Bedingungen akzeptiert, ist Eigentümer der Datenansicht, die automatisch erstellt wird, wenn diese Funktion aktiviert wird.
+>Wenn Sie diese Funktion aktivieren, müssen Sie die Nutzungsbedingungen akzeptieren, bevor Sie sie verwenden können. Wenn Sie diese Geschäftsbedingungen akzeptieren, tun Sie dies im Namen Ihrer gesamten Organisation.
 
 Die folgenden Einstellungen sind auf dieser Seite verfügbar:
 
@@ -35,5 +34,5 @@ Die folgenden Einstellungen sind auf dieser Seite verfügbar:
 
 >[!CONTEXTUALHELP]
 >id="cja_product_usage_data_retention"
->title="Datenaufbewahrungsfenster überschreiben"
->abstract="Verkürzen Sie die Verfügbarkeit von Produktverwendungsdaten, um Kosten zu reduzieren oder Datenschutzrichtlinien einzuhalten."
+>title="Überschreiben des Datenspeicherungsfensters"
+>abstract="Verkürzen Sie die Verfügbarkeit von Produktnutzungsdaten, um Kosten zu reduzieren oder Datenschutzrichtlinien einzuhalten."

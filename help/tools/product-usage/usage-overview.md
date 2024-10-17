@@ -3,9 +3,9 @@ title: Produktnutzung - Übersicht
 description: Zeigen Sie Einblicke und Berichte dazu an, wie Ihr Unternehmen Customer Journey Analytics verwendet.
 hide: true
 hidefromtoc: true
-source-git-commit: f337dfbd780aab4ae40534c5c1151dba35681b21
+source-git-commit: b3d33561cc29aa1d37efa9f943bc145c16be814c
 workflow-type: tm+mt
-source-wordcount: '359'
+source-wordcount: '336'
 ht-degree: 6%
 
 ---
@@ -14,12 +14,12 @@ ht-degree: 6%
 
 {{release-limited-testing}}
 
-Die Produktnutzung bietet Ihrem Unternehmen die Möglichkeit, Analysedaten zur Verwendung von Customer Journey Analytics anzuzeigen. Es ist für alle Unternehmen verfügbar, die Customer Journey Analytics verwenden. Nach der Aktivierung werden die folgenden Adobe Experience Platform-Komponenten automatisch erstellt und für Sie bereitgestellt:
+Die Produktnutzung bietet Ihrem Unternehmen die Möglichkeit, Analysedaten zur Verwendung von Customer Journey Analytics anzuzeigen. Es ist für alle Unternehmen verfügbar, die Customer Journey Analytics verwenden. Nach der Aktivierung werden die folgenden Adobe Experience Platform-Komponenten automatisch erstellt und für Sie bereitgestellt. Diese Komponenten sind alle im Besitz des Systems, schreibgeschützt und können nicht bearbeitet werden.
 
-* Ein Schema in Adobe Experience Platform. Dieses Schema ist im Besitz des Systems, schreibgeschützt und kann nicht bearbeitet werden.
-* Ein Datensatz in Adobe Experience Platform. Dieser Datensatz ist im Besitz des Systems, schreibgeschützt und kann nicht bearbeitet werden.
-* Eine Verbindung im Customer Journey Analytics. Diese Verbindung ist im Besitz des Systems, schreibgeschützt und kann nicht bearbeitet werden.
-* Eine Datenansicht im Customer Journey Analytics. Sie können diese Datenansicht bearbeiten oder mithilfe der oben genannten Verbindung weitere Datenansichten erstellen. Der Eigentümer der Datenansicht ist die Person, die die Produktnutzung für Ihr Unternehmen ermöglicht.
+* Ein Schema in Adobe Experience Platform
+* Ein Datensatz in Adobe Experience Platform
+* Eine Verbindung in Customer Journey Analytics
+* Eine Datenansicht im Customer Journey Analytics
 
 Die Datenerfassung und -einrichtung wird automatisch für Sie konfiguriert, sobald sie aktiviert sind. Jedes Mal, wenn ein Benutzer eine Aktion in Analysis Workspace ausführt, wird diese Aktion verfolgt und steht für Berichte zur Verfügung.
 
@@ -29,7 +29,7 @@ Die Datenerfassung und -einrichtung wird automatisch für Sie konfiguriert, soba
 
 ## Verfügbare Dimensionen
 
-Wenn Sie die Produktnutzung aktivieren, sind die folgenden Dimensionen verfügbar:
+Wenn Sie die Produktnutzung aktivieren, sind die folgenden Dimensionen verfügbar. Wenn Sie Dimensionseinstellungen ändern möchten, erstellen Sie eine Kopie der systemeigenen Datenansicht und verwenden Sie die kopierte Datenansicht in Analysis Workspace.
 
 | Dimension | Beschreibung |
 | --- | --- |
