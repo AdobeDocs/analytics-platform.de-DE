@@ -7,7 +7,7 @@ role: User
 source-git-commit: 1dff53e244e5d231e7075ce087705e33e0978096
 workflow-type: tm+mt
 source-wordcount: '168'
-ht-degree: 25%
+ht-degree: 32%
 
 ---
 
@@ -36,7 +36,7 @@ Die Visualisierung ![GraphArea](/help/assets/icons/GraphArea.svg) **[!UICONTROL 
 >[!CONTEXTUALHELP]
 >id="cja_workspace_areastacked_button"
 >title="Bereich gestapelt"
->abstract="Erstellen Sie eine Visualisierung des Bereichsdiagramms, um die Stapelung mehrerer Metriken darzustellen."
+>abstract="Erstellen Sie eine Flächendiagramm-Visualisierung, um die Stapelung mehrerer Metriken darzustellen."
 
 <!-- markdownlint-enable MD034 -->
 

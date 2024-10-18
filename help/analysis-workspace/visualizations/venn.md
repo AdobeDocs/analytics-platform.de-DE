@@ -7,7 +7,7 @@ role: User
 source-git-commit: 1dff53e244e5d231e7075ce087705e33e0978096
 workflow-type: tm+mt
 source-wordcount: '136'
-ht-degree: 17%
+ht-degree: 30%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 17%
 >[!CONTEXTUALHELP]
 >id="cja_workspace_venn_button"
 >title="Venn"
->abstract="Erstellen Sie eine Visualisierung eines Venendiagramms, um visuell zwei Elemente und die Größe ihrer Überschneidung zu vergleichen."
+>abstract="Erstellen Sie eine Visualisierung eines Venn-Diagramms, um schnell zwei Elemente und die Größe ihrer Überschneidung visuell zu vergleichen."
 
 <!-- markdownlint-enable MD034 -->
 

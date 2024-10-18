@@ -7,7 +7,7 @@ role: User
 source-git-commit: 1dff53e244e5d231e7075ce087705e33e0978096
 workflow-type: tm+mt
 source-wordcount: '1208'
-ht-degree: 43%
+ht-degree: 44%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 43%
 >[!CONTEXTUALHELP]
 >id="cja_workspace_mediaconcurrentviewers_button"
 >title="Gleichzeitige Medienbetrachter"
->abstract="Erstellen Sie ein Bedienfeld, um die durchschnittliche Minutenzielgruppe für bestimmte Inhalte oder über einen bestimmten Zeitraum zu analysieren."
+>abstract="Erstellen Sie ein Panel, um den Zielgruppendurchschnitt pro Minute für bestimmte Inhalte oder über einen bestimmten Zeitraum zu analysieren."
 
 <!-- markdownlint-enable MD034 -->
 

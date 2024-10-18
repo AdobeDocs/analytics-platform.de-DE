@@ -149,7 +149,7 @@ Ein Beispiel für die Verwendung eines Attributionsmodells und Lookback-Fensters
 >[!CONTEXTUALHELP]
 >id="cja_components_calculatedmetrics_attribution_custom"
 >title="Anpassen"
->abstract="Definieren Sie Ihre eigene, auf der Position basierende Attributionsgewichtung"
+>abstract="Definieren Sie Ihre eigene positionsbasierte Attributionsgewichtung."
 
 <!-- markdownlint-enable MD034 -->
 

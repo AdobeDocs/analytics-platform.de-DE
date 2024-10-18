@@ -7,7 +7,7 @@ exl-id: c55b5534-a9a6-47f1-8b43-c8c0b8686c53
 source-git-commit: 1dff53e244e5d231e7075ce087705e33e0978096
 workflow-type: tm+mt
 source-wordcount: '1796'
-ht-degree: 27%
+ht-degree: 28%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 27%
 >[!CONTEXTUALHELP]
 >id="cja_workspace_mediaminuteaverageaudience_button"
 >title="Medien-Zielgruppendurchschnitt pro Minute"
->abstract="Erstellen Sie ein Bedienfeld, um die durchschnittliche Minutenzielgruppe für bestimmte Inhalte oder über einen bestimmten Zeitraum zu analysieren."
+>abstract="Erstellen Sie ein Panel, um den Zielgruppendurchschnitt pro Minute für bestimmte Inhalte oder über einen bestimmten Zeitraum zu analysieren."
 
 
 <!-- markdownlint-enable MD034 -->

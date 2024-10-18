@@ -7,7 +7,7 @@ role: User
 source-git-commit: df0fd0af8a22c84705c3dea11065132359dd80ff
 workflow-type: tm+mt
 source-wordcount: '1948'
-ht-degree: 17%
+ht-degree: 18%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 17%
 >[!CONTEXTUALHELP]
 >id="cja_components_audiences_refreshfrequency"
 >title="Häufigkeit der Aktualisierung"
->abstract="Erfahren Sie, wie oft die Mitgliedschaft einer Zielgruppe neu bewertet wird.<br/>Einmalige Zielgruppen werden nur einmal ausgewertet."
+>abstract="Ermitteln Sie, wie oft die Mitgliedschaft einer Zielgruppe neu ausgewertet wird.<br/>Einmalige Zielgruppen werden nur einmal ausgewertet."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -36,7 +36,7 @@ ht-degree: 17%
 >[!CONTEXTUALHELP]
 >id="cja_component_audiences_refreshlookbackwindow"
 >title="Lookback-Fenster aktualisieren"
->abstract="Definieren Sie die Anzahl der Lookback-Tage ab heute, aus denen eine Zielgruppe ausgewertet wird."
+>abstract="Definieren Sie die Anzahl der Lookback-Tage ab heute, in denen eine Zielgruppe ausgewertet wird."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -44,8 +44,8 @@ ht-degree: 17%
 
 >[!CONTEXTUALHELP]
 >id="cja_component_audiences_audiencesizelimit"
->title="Zielgruppen-Limit"
->abstract="Zielgruppen dürfen maximal 20 Millionen Mitglieder umfassen."
+>title="Größenlimit für Zielgruppen"
+>abstract="Zielgruppen dürfen maximal 20 Millionen Mitglieder umfassen."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -54,7 +54,7 @@ ht-degree: 17%
 >[!CONTEXTUALHELP]
 >id="cja_component_audiences_namespacesincluded"
 >title="Enthaltene Namespaces"
->abstract="Die Identitäten in dieser Zielgruppe bestehen aus den folgenden Namespaces."
+>abstract="Die Identitäten in dieser Zielgruppe bestehen aus den unten stehenden Namespaces."
 
 <!-- markdownlint-enable MD034 -->
 

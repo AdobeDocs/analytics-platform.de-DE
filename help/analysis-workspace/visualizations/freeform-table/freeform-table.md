@@ -1,5 +1,5 @@
 ---
-title: Freiformtabellen - Übersicht
+title: Überblick über Freiformtabelle
 description: Freiformtabellen sind die Grundlage für die Analyse von Daten in Workspace
 feature: Visualizations
 exl-id: e5ba9089-c575-47b3-af85-b8b2179396ac
@@ -7,18 +7,18 @@ role: User
 source-git-commit: 519e7d583edc1eab9b6dd10fec024ac4bb2b93cf
 workflow-type: tm+mt
 source-wordcount: '761'
-ht-degree: 21%
+ht-degree: 26%
 
 ---
 
-# Freiformtabellen - Übersicht {#freeform-table-overview}
+# Überblick über Freiformtabelle {#freeform-table-overview}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja_workspace_freeformtable_button"
 >title="Freiformtabelle"
->abstract="Erstellen Sie eine leere Freiformtabellen-Visualisierung, die Sie mithilfe von Dimensionen, Segmenten, Metriken und Datumsbereichen erstellen können. Sie können die Freiformtabelle als Grundlage für andere Visualisierungen verwenden."
+>abstract="Erstellen Sie eine leere Visualisierung einer Freiformtabelle, die Sie mithilfe von Dimensionen, Segmenten, Metriken und Datumsbereichen gestalten können. Sie können die Freiformtabelle als Grundlage für andere Visualisierungen verwenden."
 
 <!-- markdownlint-enable MD034 -->
 

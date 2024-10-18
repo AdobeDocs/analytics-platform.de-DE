@@ -7,11 +7,11 @@ role: User
 source-git-commit: 519e7d583edc1eab9b6dd10fec024ac4bb2b93cf
 workflow-type: tm+mt
 source-wordcount: '1128'
-ht-degree: 53%
+ht-degree: 54%
 
 ---
 
-# Zeitfenster für die Medienwiedergabe {#media-playback-time-spent-panel}
+# Panel „Bei der Medienwiedergabe verbrachte Zeit“ {#media-playback-time-spent-panel}
 
 <!-- markdownlint-disable MD034 -->
 
