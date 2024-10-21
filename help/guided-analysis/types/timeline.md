@@ -5,9 +5,9 @@ feature: Adobe Product Analytics, Guided Analysis
 keywords: Produktanalysen
 role: User
 exl-id: d3da9257-a133-46c8-8fac-1a33d3372bb7
-source-git-commit: ad181b5ba3de1a038c661159a159d234da6c3edf
+source-git-commit: 7ccc9f28acf08fb49d86005abb7fbb648a1564ce
 workflow-type: tm+mt
-source-wordcount: '573'
+source-wordcount: '580'
 ht-degree: 2%
 
 ---
@@ -25,14 +25,9 @@ Die Analyse ![Timeline](/help/assets/icons/Timeline.svg) **[!UICONTROL Timeline]
 >* **Admins**: *Für diese Analyse ist die PersonID-Eigenschaft erforderlich. Fügen Sie der Datenansicht die Personen-ID hinzu.*
 >* **Nicht-Administratoren**: *Für diese Analyse ist die PersonID-Eigenschaft erforderlich. Wenden Sie sich an Ihren Customer Journey Analytics-Administrator, um die Personen-ID zur Datenansicht hinzuzufügen.*
 
-
-+++ Demovideo
-
 >[!VIDEO](https://video.tv.adobe.com/v/3427810/?learn=on)
 
-+++
 
-![Timeline](../assets/timeline-new.png)
 
 ## Anwendungsbeispiele
 
@@ -68,3 +63,10 @@ Der gewünschte Datumsbereich für Ihre Analyse. Diese Einstellung umfasst zwei 
 
 * **[!UICONTROL Intervall]**: Die Datumsgranularität, nach der Trenddaten angezeigt werden sollen. Diese Einstellung wirkt sich nicht auf Trendanalysen wie die Timeline aus.
 * **[!UICONTROL Datum]**: Das Start- und Enddatum. Vorgaben für rollierende Datumsbereiche und zuvor gespeicherte benutzerdefinierte Bereiche stehen Ihnen zur Verfügung. Alternativ können Sie die Kalenderauswahl verwenden, um einen festen Datumsbereich auszuwählen.
+
+
+## Beispiel
+
+Unten finden Sie ein Beispiel für die Analyse.
+
+![Timeline](../assets/timeline-new.png)

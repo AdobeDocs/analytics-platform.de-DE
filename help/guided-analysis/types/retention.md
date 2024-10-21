@@ -5,9 +5,9 @@ feature: Adobe Product Analytics, Guided Analysis
 keywords: Produktanalysen
 exl-id: c35a0ee0-e6b7-47b5-a5bc-308cde1585de
 role: User
-source-git-commit: ad181b5ba3de1a038c661159a159d234da6c3edf
+source-git-commit: 7ccc9f28acf08fb49d86005abb7fbb648a1564ce
 workflow-type: tm+mt
-source-wordcount: '1252'
+source-wordcount: '1259'
 ht-degree: 2%
 
 ---
@@ -21,13 +21,8 @@ Die Analyse ![Bindung](/help/assets/icons/Retention.svg) **[!UICONTROL Bindung]*
 
 In dieser Analyse stellt die x-Achse des Diagramms die Zeit seit dem ersten Startereignis eines Benutzers und die y-Achse den Prozentsatz der Benutzer dar, die mit einem oder mehreren Rückkehrereignissen interagieren. Sie können die Beibehaltung und Abwanderung über mehrere Zeiträume hinweg anzeigen und die angezeigten Zeiträume können über die Abfrageeinstellungen angepasst werden. Unter dem Diagramm bietet eine Tabelle aggregierte Daten mit der Möglichkeit, einzelne Kohorten anzuzeigen. Dabei handelt es sich um eine Gruppe von Personen, die am selben Datum das Startereignis durchgeführt haben.
 
-+++ Demovideo
-
 >[!VIDEO](https://video.tv.adobe.com/v/3430503/?learn=on)
 
-+++
-
-![Treue](../assets/retention.png)
 
 ## Anwendungsbeispiele
 
@@ -78,3 +73,9 @@ Wenn Sie einen Datumsbereich auswählen, der nahe am aktuellen Tag liegt, werden
 
 * **[!UICONTROL Analysieren von Benutzern, die das Startereignis in [Datumsintervall]]** durchgeführt haben: Wenn ein Benutzer innerhalb dieses Datumsbereichs mit dem Ereignis interagiert, werden diese in die Analyse einbezogen. Dieser Datumsbereich garantiert allen Benutzern ausreichend Zeit, um sich für alle Zeitspannen-Behälter zu qualifizieren. Dieser Datumsbereich kann sich von Ihrer Auswahl unterscheiden, wenn er nahe dem aktuellen Tag liegt.
 * **[!UICONTROL Daten aus dem [Datumsintervall] sind für den Abschluss der Analyse reserviert]**: Wenn ein Benutzer innerhalb dieses Zeitraums zum ersten Mal interagiert, sind sie **nicht** in der Analyse enthalten. Für die letzten Datumsbereiche hätten diese Benutzer keine Möglichkeit, sich für alle Zeitspannen-Behälter zu qualifizieren. Für frühere Datumsbereiche waren diese Benutzer außerhalb des ausgewählten Datumsbereichs aktiv.
+
+## Beispiel
+
+Unten finden Sie ein Beispiel für die Analyse.
+
+![Treue](../assets/retention.png)

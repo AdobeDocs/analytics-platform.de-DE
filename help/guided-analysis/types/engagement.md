@@ -5,10 +5,10 @@ feature: Adobe Product Analytics, Guided Analysis
 keywords: Produktanalysen
 role: User
 exl-id: 8a48ad3b-fa30-497e-8306-f8d881b1a335
-source-git-commit: ad181b5ba3de1a038c661159a159d234da6c3edf
+source-git-commit: 7ccc9f28acf08fb49d86005abb7fbb648a1564ce
 workflow-type: tm+mt
-source-wordcount: '743'
-ht-degree: 4%
+source-wordcount: '739'
+ht-degree: 5%
 
 ---
 
@@ -23,13 +23,8 @@ Funktionen, die oben in dieser Visualisierung dargestellt werden, zeigen an, das
 * Funktionen in der linken unteren Ecke der Matrix sind Ihre **Funktionen mit geringer Auswirkung**; sie werden nicht weit verbreitet oder häufig verwendet.
 * Funktionen in der rechten unteren Ecke der Matrix sind Ihre **einmaligen** Funktionen. Sie sind zwar weit verbreitet, werden aber nicht häufig verwendet.
 
-+++ Demovideo
-
 >[!VIDEO](https://video.tv.adobe.com/v/3429489/&learn=on)
 
-+++
-
-![Erweiterungsvergleich](../assets/engagement-compare.png)
 
 ## Anwendungsbeispiele
 
@@ -76,3 +71,11 @@ Der gewünschte Datumsbereich für Ihre Analyse. Diese Einstellung umfasst zwei 
 
 * **[!UICONTROL Intervall]**: Die Datumsgranularität, nach der Trenddaten angezeigt werden sollen. Diese Analyse behandelt [!UICONTROL Intervall] ähnlich wie [!UICONTROL Wird als] in der Abfrageleiste gezählt. Stündlich aktive Benutzer werden nicht unterstützt.
 * **[!UICONTROL Datum]**: Das Start- und Enddatum. Vorgaben für rollierende Datumsbereiche und zuvor gespeicherte benutzerdefinierte Bereiche stehen Ihnen zur Verfügung. Alternativ können Sie die Kalenderauswahl verwenden, um einen festen Datumsbereich auszuwählen.
+
+<!--
+## Example
+
+See below for an example of the analysis.
+
+![Enagement compare](../assets/engagement-compare.png)
+-->
