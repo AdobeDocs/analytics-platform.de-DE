@@ -1,38 +1,48 @@
 ---
-title: Treue
+title: Treueanalyse
 description: Messen Sie, wie viele Benutzende weiterhin Ihr Produkt nutzen.
 feature: Adobe Product Analytics, Guided Analysis
 keywords: Produktanalysen
 exl-id: c35a0ee0-e6b7-47b5-a5bc-308cde1585de
 role: User
-source-git-commit: 8592d6d5d4a9d7b8ac6a40963059d386ec5ee804
+source-git-commit: ad181b5ba3de1a038c661159a159d234da6c3edf
 workflow-type: tm+mt
-source-wordcount: '1230'
+source-wordcount: '1252'
 ht-degree: 2%
 
 ---
 
-# Treue
+# Treueanalyse
 
-In der Ansicht ![Bindung](/help/assets/icons/Retention.svg) **[!UICONTROL Bindung]** wird gemessen, wie Benutzer Ihr Produkt im Laufe der Zeit weiter verwenden. Dies kann Ihnen dabei helfen, die Anpassungsfähigkeit Ihres Produktmarkts zu verstehen. Die Analyse zählt Benutzer anhand von zwei wichtigen Ereignissen:
+Die Analyse ![Bindung](/help/assets/icons/Retention.svg) **[!UICONTROL Bindung]** misst, wie Benutzer Ihr Produkt im Laufe der Zeit weiterhin verwenden. Dies kann Ihnen dabei helfen, die Anpassungsfähigkeit Ihres Produktmarktes zu verstehen. Die Analyse zählt Benutzer anhand von zwei wichtigen Ereignissen:
 
 * Startereignis: Das Ereignis, mit dem Benutzer für die Aufnahme in Ihre Analyse qualifiziert werden.
 * Rückkehrereignis: Ein oder mehrere Ereignisse, mit denen ein Benutzer interagieren muss, um in Ihrer Analyse als wiederkehrender Benutzer zu zählen.
 
-In dieser Ansicht stellt die x-Achse des Diagramms die Zeit seit dem ersten Startereignis eines Benutzers und die y-Achse den Prozentsatz der Benutzer dar, die mit einem oder mehreren Rückkehrereignissen interagieren. Sie können die Beibehaltung und Abwanderung über mehrere Zeiträume hinweg anzeigen und die angezeigten Zeiträume können über die Abfrageeinstellungen angepasst werden. Unter dem Diagramm bietet eine Tabelle aggregierte Daten mit der Möglichkeit, einzelne Kohorten anzuzeigen. Dabei handelt es sich um eine Gruppe von Personen, die am selben Datum das Startereignis durchgeführt haben.
+In dieser Analyse stellt die x-Achse des Diagramms die Zeit seit dem ersten Startereignis eines Benutzers und die y-Achse den Prozentsatz der Benutzer dar, die mit einem oder mehreren Rückkehrereignissen interagieren. Sie können die Beibehaltung und Abwanderung über mehrere Zeiträume hinweg anzeigen und die angezeigten Zeiträume können über die Abfrageeinstellungen angepasst werden. Unter dem Diagramm bietet eine Tabelle aggregierte Daten mit der Möglichkeit, einzelne Kohorten anzuzeigen. Dabei handelt es sich um eine Gruppe von Personen, die am selben Datum das Startereignis durchgeführt haben.
+
++++ Demovideo
 
 >[!VIDEO](https://video.tv.adobe.com/v/3430503/?learn=on)
 
++++
+
+![Treue](../assets/retention.png)
+
 ## Anwendungsbeispiele
 
-Anwendungsbeispiele für diesen Ansichtstyp sind:
+Anwendungsbeispiele für diese Analyse sind:
 
 * **Kohortenanalyse**: Gruppieren Sie Benutzer anhand von Aktionen, die sie ausführen, z. B. Anmeldungen oder Käufe, in Kohorten. Sie können vergleichen, wie gut diese Gruppen erhalten bleiben, und bestimmen, wie das Benutzererlebnis der einzelnen Gruppen verbessert werden soll.
 * **Produktmarktanpassung**: Messen Sie die regelmäßige Nutzung Ihres Produkts und visualisieren Sie es als Treuekurven. Eine höhere Kundenbindung bedeutet eine höhere Produktmarktanpassung, und wenn sich Ihre Kurve herausflacht, zeigt dies, wie lange es dauert, bis Sie Ihre Anpassung erreichen. Sehen Sie sich diese Analyse auf einer übergeordneten Ebene an oder unterteilen Sie sie nach einzelnen Produktfunktionen, um tiefere Einblicke zu erhalten.
 * **Analyse des Anmeldedienstes**: Wenn Ihr Produkt ein Abonnement oder ein anderes Modell für wiederkehrenden Umsatz verwendet, können Sie den Prozentsatz der Benutzer sehen, die das meiste aus Ihrem Produkt machen. Sie können bestimmte Eigenschaften und Verhaltensweisen identifizieren, die diese Benutzer aufweisen.
 * **Benutzerinteraktion**: Evaluieren Sie, wie bestimmte Typen von Benutzern mit Ihrem Produkt interagieren, und vergleichen Sie nebeneinander, wie oft sie zurückkehren. Ein bestimmtes Segment mit geringerer Bindung als andere bietet Ihnen Einblicke in die Verbesserung potenzieller untergeordneter Erlebnisse, über die es möglicherweise verfügt.
 
-## Abfrageleiste
+## Benutzeroberfläche
+
+Eine Übersicht über die Benutzeroberfläche der geführten Analyse finden Sie unter [Schnittstelle](../overview.md#interface) . Die folgenden Einstellungen beziehen sich auf diese Analyse:
+
+### Abfrageleiste
 
 In der Abfrageleiste können Sie die folgenden Komponenten konfigurieren:
 
@@ -51,13 +61,13 @@ In der Abfrageleiste können Sie die folgenden Komponenten konfigurieren:
       * **[!UICONTROL Benutzerdefinierte Dauern]** ermöglichen es Ihnen, die vier im Diagramm und in der Tabelle angezeigten Zeitspannen anzupassen.
 * **[!UICONTROL Segmente]**: Die Segmente, die Sie messen möchten. Jedes ausgewählte Segment fügt der Kohortentabelle eine Zeile hinzu. Sie können bis zu drei Segmente einbeziehen.
 
-## Diagrammeinstellungen
+### Diagrammeinstellungen
 
-Die Ansicht [!UICONTROL Bindungsraten] bietet die folgenden Diagrammeinstellungen, die im Menü über dem Diagramm angepasst werden können:
+Die Analyse [!UICONTROL Bindung] bietet die folgenden Diagrammeinstellungen, die im Menü über dem Diagramm angepasst werden können:
 
 * **[!UICONTROL Diagrammtyp]**: Der Typ der Visualisierung, die Sie verwenden möchten. Zu den Optionen gehören [!UICONTROL Balken] und [!UICONTROL Linie].
 
-## Datumsbereich
+### Datumsbereich
 
 Der gewünschte Datumsbereich für Ihre Analyse. Diese Einstellung umfasst zwei Komponenten:
 

@@ -5,10 +5,10 @@ exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: 519e7d583edc1eab9b6dd10fec024ac4bb2b93cf
+source-git-commit: ea95b576a9d8309d2c6c2aeba589db1fd28ce499
 workflow-type: tm+mt
-source-wordcount: '3526'
-ht-degree: 99%
+source-wordcount: '3676'
+ht-degree: 95%
 
 ---
 
@@ -64,7 +64,7 @@ ht-degree: 99%
 >[!CONTEXTUALHELP]
 >id="cja_connection_averagenumberofdailyuses"
 >title="Durchschnittliche Anzahl der täglichen Verwendungen"
->abstract="Wählen Sie einen Bereich für die Anzahl der erwarteten täglichen Ereignisse für die gesamte Verbindung."
+>abstract="Wählen Sie einen Bereich für die Anzahl der erwarteten täglichen Ereignisse für die gesamte Verbindung aus."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -134,11 +134,67 @@ Wenden Sie sich an Ihre Admins, wenn Sie sich nicht sicher sind, welches Custome
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_connection_matchingkey"
->title="Passender Schlüssel"
->abstract="Wählen Sie ein Feld aus, das einem der Ereignisdatensätze hinzugefügt werden soll. Wenn diese Liste leer ist, haben Sie wahrscheinlich keinen Ereignisdatensatz hinzugefügt oder konfiguriert."
+>id="cja_connection_primaryID"
+>title="Primäre ID "
+>abstract="Wählen Sie die richtige primäre ID für Ihre Verbindung aus: Person für ein B2C-Szenario. Konto für ein B2B-Szenario."
 
 <!-- markdownlint-enable MD034 -->
+
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_connection_optionalContainers"
+>title="Optionale Container"
+>abstract="Wählen Sie weitere Container aus.<br/><br/>**[!UICONTROL Globales Konto ]**: ermöglicht die Konfiguration globaler Konten in einer Verbindung.<br/>**[!UICONTROL Chancen]**: Ermöglicht die Konfiguration von Möglichkeiten in einer Verbindung.<br/>**[!UICONTROL Buying group ]**: ermöglicht die Konfiguration von Einkaufsgruppen in einer Verbindung."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_connection_personID"
+>title="Personen-ID"
+>abstract="Wählen Sie eine Personen-ID aus den verfügbaren Identitäten, die im Datensatzschema in Experience Platform definiert sind."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_connection_accountID"
+>title="Konto-ID"
+>abstract="Wählen Sie eine Konto-ID (die eindeutige Kennung für ein Konto) aus den verfügbaren Identitäten aus, die im Datensatzschema in der Experience Platform definiert sind."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_connection_globalAccountID"
+>title="Globale Konto-ID"
+>abstract="Wählen Sie eine globale Konto-ID (die eindeutige Kennung für ein globales Konto) aus den verfügbaren Identitäten aus, die im Datensatzschema in der Experience Platform definiert sind."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_connection_opportunityID"
+>title="Opportunity-ID"
+>abstract="Wählen Sie eine Opportunity-ID (die eindeutige Kennung für eine Gelegenheit) aus den verfügbaren Identitäten aus, die im Datensatzschema in der Experience Platform definiert sind."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_connection_buyingGroupID"
+>title="Gruppen-ID kaufen"
+>abstract="Wählen Sie aus den verfügbaren Identitäten, die im Datensatzschema in der Experience Platform definiert sind, eine Käufer-Gruppen-ID (die eindeutige Kennung für eine Einkaufsgruppe) aus."
+
+<!-- markdownlint-enable MD034 -->
+
 
 <!-- markdownlint-disable MD034 -->
 

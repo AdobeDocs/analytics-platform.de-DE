@@ -1,20 +1,20 @@
 ---
-title: Interaktionsansicht
+title: Interaktionsanalyse
 description: Erfahren Sie mehr über Umfang und Tiefe der Funktionsinteraktion.
 feature: Adobe Product Analytics, Guided Analysis
 keywords: Produktanalysen
 role: User
 exl-id: 8a48ad3b-fa30-497e-8306-f8d881b1a335
-source-git-commit: 39f9ef07088eb9595e5057d21008ecd2f5ea44fe
+source-git-commit: ad181b5ba3de1a038c661159a159d234da6c3edf
 workflow-type: tm+mt
-source-wordcount: '722'
+source-wordcount: '743'
 ht-degree: 4%
 
 ---
 
-# Ansicht [!UICONTROL Interaktion]
+# Analyse [!UICONTROL Interaktion]
 
-Die Ansicht ![EngagementGraph](/help/assets/icons/EngagementGraph.svg) **[!UICONTROL Interaktion]** bietet einen Einblick in die Häufigkeit der Verwendung einer Funktion im Vergleich zu der Anzahl der Benutzer, die diese Funktion verwenden. Diese Analyse funktioniert am besten, wenn mehrere Funktionen miteinander verglichen werden. Sie hilft bei Investitionsentscheidungen, indem sie verstehen, was Ihr Kern, Ihre Macht, Ihre einmaligen und fragwürdigen Merkmale sind.
+Die Analyse ![Interaktionsdiagramm](/help/assets/icons/EngagementGraph.svg) **[!UICONTROL Interaktion]** bietet einen Einblick, wie oft eine Funktion verwendet wird und wie viele Benutzer sie verwenden. Diese Analyse funktioniert am besten, wenn mehrere Funktionen miteinander verglichen werden. Sie hilft bei Investitionsentscheidungen, indem sie verstehen, was Ihr Kern, Ihre Macht, Ihre einmaligen und fragwürdigen Merkmale sind.
 
 Funktionen, die oben in dieser Visualisierung dargestellt werden, zeigen an, dass sie häufig von engagierten Benutzern verwendet werden. Funktionen, die rechts neben dieser Visualisierung dargestellt werden, zeigen an, dass sie von Ihren aktiven Benutzern auf breiter Front verwendet werden. Die mittlere Häufigkeit, mit der eine Funktion verwendet wird, teilt das Diagramm horizontal. Der mittlere Prozentsatz aktiver Benutzer teilt das Diagramm vertikal. Die Medianberechnung basiert auf den in der Abfrage ausgewählten Ereignissen, nicht auf allen Daten.
 
@@ -23,11 +23,17 @@ Funktionen, die oben in dieser Visualisierung dargestellt werden, zeigen an, das
 * Funktionen in der linken unteren Ecke der Matrix sind Ihre **Funktionen mit geringer Auswirkung**; sie werden nicht weit verbreitet oder häufig verwendet.
 * Funktionen in der rechten unteren Ecke der Matrix sind Ihre **einmaligen** Funktionen. Sie sind zwar weit verbreitet, werden aber nicht häufig verwendet.
 
++++ Demovideo
+
 >[!VIDEO](https://video.tv.adobe.com/v/3429489/&learn=on)
+
++++
+
+![Erweiterungsvergleich](../assets/engagement-compare.png)
 
 ## Anwendungsbeispiele
 
-Anwendungsbeispiele für diesen Ansichtstyp sind:
+Anwendungsbeispiele für diese Analyse sind:
 
 * **Interaktion nach Funktion**: Sie können eine direkte Korrelation zwischen Interaktion und Übernahme einer bestimmten Funktion herstellen. Wenn Sie wissen, welche Funktionen am häufigsten verwendet werden, können Sie feststellen, in welche Funktionen Sie weiter investieren sollten.
 * **Entdecken Sie nicht verwendete Funktionen**: Funktionen mit niedrigen aktiven Benutzern, aber hoher Nutzung können auf eine Leistungsfunktion hinweisen, die zwar nützlich ist, aber von der breiteren Bevölkerung nicht erkannt oder verwendet wird. Erwägen Sie, die Entdeckung dieser Funktionen zu verbessern, damit mehr Benutzer sie nutzen.
@@ -35,7 +41,11 @@ Anwendungsbeispiele für diesen Ansichtstyp sind:
 * **Erstellen funktionsbasierter Segmente**: Zeigen Sie die Nutzung der Funktionen auf diese Weise an, um zusätzliche Analysechancen zu erhalten. Erstellen Sie ein Segment für jeden Punkt im Diagramm, um sich weiter in diese Benutzergruppe zu vertiefen und diese Erkenntnisse auf Ihre Benutzerinteraktionsstrategie anzuwenden.
 * **Übernahme von A/B-Tests durch Funktionen**: Vergleichen Sie die Nutzung mehrerer Funktionen für verschiedene Benutzergruppen. Fügen Sie in der Abfrageleiste Segmente hinzu, um den Unterschied bei der Nutzung von Funktionen über wichtige Benutzergruppen hinweg zu ermitteln.
 
-## Abfrageleiste
+## Benutzeroberfläche
+
+Eine Übersicht über die Benutzeroberfläche der geführten Analyse finden Sie unter [Schnittstelle](../overview.md#interface) . Die folgenden Einstellungen beziehen sich auf diese Analyse:
+
+### Abfrageleiste
 
 In der Abfrageleiste können Sie die folgenden Komponenten konfigurieren:
 
@@ -47,22 +57,22 @@ In der Abfrageleiste können Sie die folgenden Komponenten konfigurieren:
 >
 >Wenn mehrere Ereignisse die Verwendung einer einzelnen Funktion darstellen, können Sie ein neues Ereignis ableiten, das die Funktion in Datenansichten darstellt.
 
-## Diagrammeinstellungen
+### Diagrammeinstellungen
 
-Die Ansicht [!UICONTROL Interaktion] bietet die folgenden Diagrammeinstellungen, die im Menü über dem Diagramm angepasst werden können:
+Die Analyse [!UICONTROL Interaktion] bietet die folgenden Diagrammeinstellungen, die im Menü über dem Diagramm angepasst werden können:
 
 * **[!UICONTROL Medians]**: Bestimmen Sie, wo die Medianlinien angezeigt werden und wie die gezeichneten Punkte mit diesen Medianwerten zusammenhängen.
    * **[!UICONTROL Standard]**: Zeigt den absoluten Wert von Nutzung und Interaktion an.
    * **[!UICONTROL Normalisiert]**: Zeigt relative Änderungen von jedem Median an.
 * **[!UICONTROL Top-Ereignisse-Overlay]**: Sehen Sie, wie Ihre Ereignisse im Vergleich zu den 20 wichtigsten Ereignissen aussehen, basierend auf der Neuigkeit und Relevanz von Unternehmen und Benutzern (derselbe Algorithmus wurde auf die Ereignisauswahl in der Abfrageleiste angewendet).
 
-## Zeitvergleich
+### Zeitvergleich
 
 {{apply-time-comparison}}
 
-## Datumsbereich
+### Datumsbereich
 
 Der gewünschte Datumsbereich für Ihre Analyse. Diese Einstellung umfasst zwei Komponenten:
 
-* **[!UICONTROL Intervall]**: Die Datumsgranularität, nach der Trenddaten angezeigt werden sollen. Dieser Ansichtstyp behandelt [!UICONTROL Intervall] ähnlich wie [!UICONTROL Wird in der Abfrageleiste als ] gezählt. Stündlich aktive Benutzer werden nicht unterstützt.
+* **[!UICONTROL Intervall]**: Die Datumsgranularität, nach der Trenddaten angezeigt werden sollen. Diese Analyse behandelt [!UICONTROL Intervall] ähnlich wie [!UICONTROL Wird als] in der Abfrageleiste gezählt. Stündlich aktive Benutzer werden nicht unterstützt.
 * **[!UICONTROL Datum]**: Das Start- und Enddatum. Vorgaben für rollierende Datumsbereiche und zuvor gespeicherte benutzerdefinierte Bereiche stehen Ihnen zur Verfügung. Alternativ können Sie die Kalenderauswahl verwenden, um einen festen Datumsbereich auszuwählen.

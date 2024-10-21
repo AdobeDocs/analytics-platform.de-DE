@@ -1,20 +1,20 @@
 ---
-title: Ansicht des Nettowachstums
+title: Nettowachstumsanalyse
 description: Gewinnen oder verlieren Sie Benutzende?
 feature: Adobe Product Analytics, Guided Analysis
 keywords: Produktanalysen
 exl-id: a4f97458-9934-4a98-8005-fa1ba7831101
 role: User
-source-git-commit: ce04e69d2c933f893eeeff04abb0f56fb4000e6f
+source-git-commit: ad181b5ba3de1a038c661159a159d234da6c3edf
 workflow-type: tm+mt
-source-wordcount: '653'
+source-wordcount: '673'
 ht-degree: 2%
 
 ---
 
-# Ansicht für [!UICONTROL Nettowachstum]
+# Analyse [!UICONTROL Nettowachstum]
 
-Der Ansichtstyp ![NetGrowth](/help/assets/icons/NetGrowth.svg) **[!UICONTROL Net Growth]** bietet Einblicke in die Rate, mit der Sie Benutzer über einen bestimmten Zeitraum gewinnen oder verlieren. Die horizontale Achse ist ein Zeitintervall, während die vertikale Achse die Wachstumsmessung darstellt.
+Die Analyse ![NetGrowth](/help/assets/icons/NetGrowth.svg) **[!UICONTROL Net Growth]** bietet Einblicke in die Rate, mit der Sie Benutzer über einen bestimmten Zeitraum gewinnen oder verlieren. Die horizontale Achse ist ein Zeitintervall, während die vertikale Achse die Wachstumsmessung darstellt.
 
 Jeder Datenpunkt stellt das Nettowachstum dar, das anhand der folgenden Formel berechnet wird:
 
@@ -22,7 +22,7 @@ Jeder Datenpunkt stellt das Nettowachstum dar, das anhand der folgenden Formel b
 
 Das Ergebnis dieser Formel ist ein Verhältnis. Ein Nettowachstum von `1` stellt ein Gleichgewicht dar; das Produkt hat die gleiche Anzahl von Benutzern gewonnen, die es verloren hat. Ein Nettowachstum von mehr als `1` bedeutet ein positives Wachstum; es gab mehr neue + wiederkehrende Benutzer als ruhende Benutzer. Ebenso stellt ein Nettowachstum von weniger als `1` einen Verlust dar; es gab mehr ruhende Benutzer als neue + wiederkehrende Benutzer.
 
-Ähnlich wie beim Ansichtstyp [Aktiv](active-growth.md) werden Benutzer wie folgt definiert:
+Ähnlich wie bei der Analyse [Aktiv](active-growth.md) werden Benutzer wie folgt definiert:
 
 * **[!UICONTROL Neu]**: Der Benutzer war während des aktuellen Zeitraums aktiv, jedoch nicht zuvor. Ermitteln Sie, wie weit die Analyse zurückblickt, um einen neuen Benutzer zu ermitteln, indem Sie den Mauszeiger in der Diagrammlegende über &quot;[!UICONTROL Neue Benutzer]&quot;bewegen. Der Lookback-Bereich wird basierend auf dem ausgewählten Datumsbereich und Intervall dynamisch bestimmt.
 * **[!UICONTROL Zurück]**: Der Benutzer war im aktuellen Zeitraum aktiv und nicht im unmittelbar vorherigen Zeitraum aktiv, war aber zu einem früheren Zeitpunkt aktiv. Ermitteln Sie, wie weit die Analyse zurückblickt, um einen wiederkehrenden Benutzer zu ermitteln, indem Sie den Mauszeiger in der Diagrammlegende über &quot;[!UICONTROL Wiederkehrende Benutzer]&quot;bewegen. Der Lookback-Bereich wird basierend auf dem ausgewählten Datumsbereich und Intervall dynamisch bestimmt.
@@ -32,30 +32,40 @@ Das Ergebnis dieser Formel ist ein Verhältnis. Ein Nettowachstum von `1` stellt
 >
 >Wiederholte Benutzer werden nicht in diese Berechnung einbezogen, da sie keinen Gewinn oder Verlust von Benutzern darstellen.
 
++++ Demovideo
+
 >[!VIDEO](https://video.tv.adobe.com/v/3421664/?learn=on)
+
++++
+
+![Netto-Wachstumsvergleich](../assets/net-growth-compare.png)
 
 ## Anwendungsbeispiele
 
-Anwendungsbeispiele für diesen Ansichtstyp sind:
+Anwendungsbeispiele für diese Analyse sind:
 
 * **Leistungsbewertung**: Ermöglicht es Ihnen, die Gesamtleistung Ihres Produkts im Hinblick auf die Akquise neuer Benutzer zu bewerten. Durch die Verfolgung von Wachstumstrends können Sie besser nachvollziehen, ob Ihr Produkt Benutzer in einem gewünschten Tempo anzieht und bindet.
 * **Analyse der Benutzerakquise**: Ermöglicht es Ihnen, die Effektivität Ihrer Benutzerakquisestrategien zu bewerten. Die Analyse der Quellen für das Benutzerwachstum, wie Suchmaschinen, Kampagnen oder andere Marketingkanäle, ermöglicht es Ihnen, die wichtigsten Wachstumsquellen zu identifizieren, sodass Sie Ressourcen entsprechend zuordnen können.
 * **Abwanderungsanalyse**: Das Nettowachstum umfasst Abbruch in der Formel (ruhende Benutzer). Sie können die allgemeine Gesundheit Ihrer Benutzerbasis im Laufe der Zeit bewerten. Wenn das Nettowachstum konsequent unter `1` liegt, deutet dies auf eine hohe Abschreibungsrate hin, die die Implementierung von Treuestrategien erforderlich machen könnte.
 
-## Abfrageleiste
+## Benutzeroberfläche
+
+Eine Übersicht über die Benutzeroberfläche der geführten Analyse finden Sie unter [Schnittstelle](../overview.md#interface) . Die folgenden Einstellungen beziehen sich auf diese Analyse:
+
+### Abfrageleiste
 
 In der Abfrageleiste können Sie die folgenden Komponenten konfigurieren:
 
-* **[!UICONTROL Ansicht]**: Wechseln Sie zwischen diesem Ansichtstyp und [Aktiv](active-growth.md).
-* **[!UICONTROL Ereignisse]**: Das Ereignis, das Sie messen möchten. Da dieser Ansichtstyp benutzerbasiert ist, wird ein Benutzer, der innerhalb des Zeitraums einmal mit dem Ereignis interagiert, als aktiver Benutzer gezählt. Sie können ein Ereignis in eine Abfrage einbeziehen.
+* **[!UICONTROL Ansicht]**: Zwischen dieser Analyse und [Aktives Wachstum](active-growth.md) wechseln.
+* **[!UICONTROL Ereignisse]**: Das Ereignis, das Sie messen möchten. Da diese Analyse benutzerbasiert ist, wird ein Benutzer, der innerhalb des Zeitraums einmal mit dem Ereignis interagiert, als aktiver Benutzer gezählt. Sie können ein Ereignis in eine Abfrage einbeziehen.
 * **[!UICONTROL Zählt als]**: Die Zählmethode, die auf die ausgewählten Ereignisse angewendet werden soll. Zu den Optionen gehören [!UICONTROL Anzahl der Benutzer] und [!UICONTROL Prozentsatz der Benutzer].
 * **[!UICONTROL Segmente]**: Das Segment, das Sie messen möchten. Sie können ein Segment in eine Abfrage einbeziehen.
 
-## Zeitvergleich
+### Zeitvergleich
 
 {{apply-time-comparison}}
 
-## Datumsbereich
+### Datumsbereich
 
 Der gewünschte Datumsbereich für Ihre Analyse. Diese Einstellung umfasst zwei Komponenten:
 
