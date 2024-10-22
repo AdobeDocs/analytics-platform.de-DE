@@ -5,10 +5,10 @@ feature: Adobe Product Analytics, Guided Analysis
 keywords: Produktanalysen
 role: User
 exl-id: d3da9257-a133-46c8-8fac-1a33d3372bb7
-source-git-commit: 7ccc9f28acf08fb49d86005abb7fbb648a1564ce
+source-git-commit: aff01f4fc3520d461ca800382cc24d8d948d9cbc
 workflow-type: tm+mt
-source-wordcount: '580'
-ht-degree: 2%
+source-wordcount: '570'
+ht-degree: 1%
 
 ---
 
@@ -65,8 +65,12 @@ Der gewünschte Datumsbereich für Ihre Analyse. Diese Einstellung umfasst zwei 
 * **[!UICONTROL Datum]**: Das Start- und Enddatum. Vorgaben für rollierende Datumsbereiche und zuvor gespeicherte benutzerdefinierte Bereiche stehen Ihnen zur Verfügung. Alternativ können Sie die Kalenderauswahl verwenden, um einen festen Datumsbereich auszuwählen.
 
 
-## Beispiel
+<!--
 
-Unten finden Sie ein Beispiel für die Analyse.
+## Example
+
+See below for an example of the analysis.
 
 ![Timeline](../assets/timeline-new.png)
+
+-->

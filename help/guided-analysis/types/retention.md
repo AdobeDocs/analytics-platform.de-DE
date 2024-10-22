@@ -5,9 +5,9 @@ feature: Adobe Product Analytics, Guided Analysis
 keywords: Produktanalysen
 exl-id: c35a0ee0-e6b7-47b5-a5bc-308cde1585de
 role: User
-source-git-commit: 7ccc9f28acf08fb49d86005abb7fbb648a1564ce
+source-git-commit: aff01f4fc3520d461ca800382cc24d8d948d9cbc
 workflow-type: tm+mt
-source-wordcount: '1259'
+source-wordcount: '1249'
 ht-degree: 2%
 
 ---
@@ -74,8 +74,11 @@ Wenn Sie einen Datumsbereich auswählen, der nahe am aktuellen Tag liegt, werden
 * **[!UICONTROL Analysieren von Benutzern, die das Startereignis in [Datumsintervall]]** durchgeführt haben: Wenn ein Benutzer innerhalb dieses Datumsbereichs mit dem Ereignis interagiert, werden diese in die Analyse einbezogen. Dieser Datumsbereich garantiert allen Benutzern ausreichend Zeit, um sich für alle Zeitspannen-Behälter zu qualifizieren. Dieser Datumsbereich kann sich von Ihrer Auswahl unterscheiden, wenn er nahe dem aktuellen Tag liegt.
 * **[!UICONTROL Daten aus dem [Datumsintervall] sind für den Abschluss der Analyse reserviert]**: Wenn ein Benutzer innerhalb dieses Zeitraums zum ersten Mal interagiert, sind sie **nicht** in der Analyse enthalten. Für die letzten Datumsbereiche hätten diese Benutzer keine Möglichkeit, sich für alle Zeitspannen-Behälter zu qualifizieren. Für frühere Datumsbereiche waren diese Benutzer außerhalb des ausgewählten Datumsbereichs aktiv.
 
-## Beispiel
+<!--
+## Example
 
-Unten finden Sie ein Beispiel für die Analyse.
+See below for an example of the analysis.
 
-![Treue](../assets/retention.png)
+![Retention](../assets/retention.png)
+
+-->
