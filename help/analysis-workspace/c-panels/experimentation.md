@@ -7,7 +7,7 @@ role: User
 source-git-commit: 3e2d92003f8b89a20edfcfb8358854c7fbd15577
 workflow-type: tm+mt
 source-wordcount: '2144'
-ht-degree: 19%
+ht-degree: 20%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 19%
 >[!CONTEXTUALHELP]
 >id="cja_workspace_experimentation_panel"
 >title="Experimentieren"
->abstract="Vergleichen Sie verschiedene Anwendererlebnisse bzw. Marketing- oder Messaging-Varianten miteinander, um zu ermitteln, was für ein bestimmtes Ergebnis die beste Lösung ist. <br/><br/>**Parameter **<br/>**Experiment**: Das analysierte Experiment.<br>**Kontrollvariante**: Die Kontrollvariante für das ausgewählte Experiment.<br/>**Erfolgsmetrik**: Bis zu 5 standardmäßige (nicht berechnete) Erfolgsmetriken zur Analyse des Experiments.<br/>**Normalisierungsmetrik**: Personen, Sitzungen oder Ereignisse. Diese Metrik (auch als Zählmethodik bezeichnet) wird zum Nenner der Steigerungsberechnung. Diese Metrik wirkt sich auch darauf aus, wie die Daten aggregiert werden, bevor die Konfidenzberechnung angewendet wird."
+>abstract="Vergleichen Sie verschiedene Anwendererlebnisse bzw. Marketing- oder Messaging-Varianten miteinander, um zu ermitteln, was für ein bestimmtes Ergebnis die beste Lösung ist. <br/><br/>**Parameter **<br/>**Experiment**: Das Experiment, das analysiert wird.<br>**Kontrollvariante**: Die Kontrollvariante für das ausgewählte Experiment.<br/>**Erfolgsmetrik**: Bis zu 5 standardmäßige (nicht berechnete) Erfolgsmetriken zur Analyse des Experiments.<br/>**Normalisierungsmetrik**: Personen, Sitzungen oder Ereignisse. Diese Metrik (auch als Zählmethodik bezeichnet) wird zum Nenner der Steigerungsberechnung. Diese Metrik wirkt sich auch darauf aus, wie die Daten aggregiert werden, bevor die Konfidenzberechnung angewendet wird."
 
 <!-- markdownlint-enable MD034 -->
 
