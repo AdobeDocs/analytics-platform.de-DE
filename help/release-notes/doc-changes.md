@@ -4,9 +4,9 @@ description: Listet Inhaltsaktualisierungen für Dokumentation zu Customer Journ
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 18131b0ccabbc8043e2638c735a4a603029f4b93
+source-git-commit: fc3aee031808d7a6c12ed2a2cbcad8f7ae6caa82
 workflow-type: tm+mt
-source-wordcount: '4104'
+source-wordcount: '4138'
 ht-degree: 70%
 
 ---
@@ -20,6 +20,7 @@ Die folgenden Aktualisierungen wurden seit der ersten Erstellung der Customer Jo
 | Funktion | Beschreibung |
 | --- | --- |
 | **Oktober 2024** | |
+| Neue Informationen zu Anforderungsfaktoren in der Analysis Workspace-Leistung | In einem neuen Abschnitt [Anforderungsfaktoren](/help/technotes/optimizing-performance.md#request-factors) im Artikel [Leistungsoptimierung von Analysis Workspace](/help/technotes/optimizing-performance.md) wird erläutert, wie Anforderungen verarbeitet werden und welche Faktoren die Verarbeitungszeiten beeinflussen. |
 | Workspace und Komponenten | Die Dokumentation zu Analysis Workspace-Projekten (Projekten, Visualisierungen und Bedienfeldern) und Komponenten (Anmerkungen, Dimensionen, (berechnete) Metriken, Filtern, Datumsbereichen, Warnungen, geplanten Projekten und Zielgruppen) wurde aktualisiert. |
 | Geführte Analyse | Die Dokumentation wurde mit der Verfügbarkeit von [geführter Analysen](/help/guided-analysis/overview.md) aus Analysis Workspace aktualisiert. |
 | **September 2024** | |

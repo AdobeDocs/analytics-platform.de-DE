@@ -4,10 +4,10 @@ title: Optimieren der Customer Journey Analytics- und Analysis Workspace-Leistun
 feature: FAQ
 exl-id: ad00e476-6f19-462b-ba53-d72ddd949802
 role: Admin
-source-git-commit: 39e4c17336d3648cbf20cace535668d14510186f
+source-git-commit: fc3aee031808d7a6c12ed2a2cbcad8f7ae6caa82
 workflow-type: tm+mt
-source-wordcount: '1980'
-ht-degree: 74%
+source-wordcount: '2578'
+ht-degree: 57%
 
 ---
 
@@ -86,3 +86,32 @@ Darüber hinaus können Sie die Leistungsinhalte **als CSV-Datei herunterladen**
 | **Anzahl der Freiformzellen** | Siehe Tabelle &quot;Abfragefaktoren&quot;oben. | |
 | **Verwendete Komponenten** | Siehe Tabelle &quot;Abfragefaktoren&quot;oben. | |
 | **Längster Datumsbereich** | Siehe Tabelle &quot;Abfragefaktoren&quot;oben. | |
+
+## Anforderungsfaktoren
+
+[!UICONTROL Hilfe] > [!UICONTROL Leistung] Anforderungsfaktoren
+
+Verwenden Sie das folgende Diagramm und die folgenden Begriffe, um zu erfahren, wie Anforderungen verarbeitet werden und welche Faktoren die Verarbeitungszeiten beeinflussen:
+
+>[!NOTE]
+>
+>Die empfohlenen Richtlinien für diese Faktoren basieren auf einem Komplexitätswert von Medium für Berichterstellungsanforderungen.
+
+
+### Anforderungsverarbeitungsdiagramm
+
+![Anforderungsverarbeitung](assets/request-processing.png)
+
+### Verarbeitungsbegriffe anfordern
+
+| Faktor | Definition | Optimierung |
+| --- | --- | --- |
+| [!UICONTROL **Durchschnittliche Anforderungszeit**] | Die Zeit, die ab dem Initiieren der Anfrage bis zum Abschluss benötigt wird. Die Richtlinie beträgt 15 Sekunden. <p>Im obigen Diagramm [Anforderungsverarbeitung](#request-processing-diagram) stellt die Anforderungszeit den gesamten Prozess dar, von **Analysis Workspace-Anfrage initiiert** bis **Analysis Workspace-Anfrage abgeschlossen**.</p> |  |
+| [!UICONTROL **Längste Anforderungszeit**] | Die Zeit, die ab dem Initiieren der Anfrage bis zum Abschluss benötigt wird. <p>Im obigen Diagramm [Anforderungsverarbeitung](#request-processing-diagram) stellt die Anforderungszeit den gesamten Prozess dar, von **Analysis Workspace-Anfrage initiiert** bis **Analysis Workspace-Anfrage abgeschlossen**.</p> |  |
+| [!UICONTROL **Durchschnittliche Suchzeit**] | Da Analysis Workspace nur den Hash für alle Zeichenfolgen speichert, die in beliebigen Segmenten verwendet werden, werden bei jeder Projektverarbeitung **Suchen** ausgeführt, um die Hashes mit den entsprechenden Werten abzugleichen. Die Richtlinie liegt unter 2 Sekunden.<p>Dies kann ein ressourcenintensiver Prozess sein, je nachdem, wie viele Werte möglicherweise mit dem Hash übereinstimmen. </p><p>Im obigen Diagramm [Anforderungsverarbeitung](#request-processing-diagram) wird die Suchzeit in der Phase **Suchvorgänge** dargestellt (zum Zeitpunkt der Phase der **Verarbeitung der Anforderungs-Engine**).</p> | Wenn sich die Anforderungen hier verlangsamen, liegt dies wahrscheinlich daran, dass in Ihrem Projekt zu viele Zeichenfolgensegmente vorhanden sind oder Zeichenfolgen mit zu generischen Werten vorhanden sind, die zu viele potenzielle Übereinstimmungen aufweisen. |
+| [!UICONTROL **Durchschnittliche Warteschlangenzeit**] | Die Gesamtwartezeit in der Warteschlange, bevor Anforderungen verarbeitet werden. Die Richtlinie beträgt 5 Sekunden.<p>Im obigen Diagramm [Anforderungsverarbeitung](#request-processing-diagram) wird die Warteschlangenzeit in der Phase **Anforderungs-Engine-Warteschlange** und in der Phase **Server-Warteschlange** dargestellt.</p> | Wenn sich die Anforderungen hier verlangsamen, kann dies auf zu viele Anforderungen zurückzuführen sein, die gleichzeitig in Ihrem Unternehmen ausgeführt werden. Versuchen Sie, die Anfrage außerhalb der Spitzenzeiten auszuführen. |
+| [!UICONTROL **Durchschnittliche Server-Verarbeitungszeit**] | Die durchschnittliche Zeit, die für die Verarbeitung der Anfrage benötigt wird.<p>Im obigen Diagramm [Anforderungsverarbeitung](#request-processing-diagram) wird die durchschnittliche Serververarbeitungszeit in der Phase **Serverwarteschlange** und in der Phase **Serververarbeitung** dargestellt. Die Richtlinie beträgt 10 Sekunden | Wenn sich die Anforderungen hier verlangsamen, weist das Projekt wahrscheinlich zu lange Datumsbereiche oder komplexe Visualisierungen auf. Versuchen Sie, den Datumsbereich Ihres Projekts zu verkürzen, um die Verarbeitungszeiten zu verkürzen. |
+| [!UICONTROL **Komplexität**] | Nicht alle Anforderungen benötigen dieselbe Verarbeitungszeit. Die Anforderungskomplexität kann dabei helfen, eine allgemeine Vorstellung davon zu erhalten, wie viel Zeit für die Verarbeitung der Anfrage erforderlich ist. Die Richtlinie ist Medium oder niedriger. <p>Mögliche Werte:</p> <ul><li>[!UICONTROL **Niedrig**]</li><li>[!UICONTROL **Medium**]</li><li>[!UICONTROL **Hoch**]</li></ul>Dieser Wert wird durch die Werte in den folgenden Spalten beeinflusst:<ul><li>[!UICONTROL **Monatsgrenzen**]</li><li>[!UICONTROL **Spalten**]</li><li>[!UICONTROL **Segmente**]</li></ul> |  |
+| [!UICONTROL **Monatsgrenzen**] | Die Anzahl der Monate, die in einer Anfrage enthalten sind. Mehr Monatsgrenzen erhöhen die Komplexität der Anfrage. Die Richtlinie ist 6 oder weniger. | Wenn sich die Anforderungen hier verlangsamen, liegt dies möglicherweise daran, dass die Monatsgrenzen in Ihrem Projekt zu groß sind. Versuchen Sie, die Anzahl der Monate zu reduzieren. |
+| [!UICONTROL **Spalten**] | Die Anzahl der Metriken und Aufschlüsselungen in der Anforderung. Mehr Spalten erhöhen die Komplexität der Anforderung. Die Richtlinie ist 10 oder weniger. | Wenn sich die Anforderungen hier verlangsamen, liegt dies möglicherweise daran, dass Ihr Projekt zu viele Spalten enthält. Versuchen Sie, die Anzahl der Spalten zu reduzieren. |
+| [!UICONTROL **Segmente**] | Die Anzahl der Segmente, die auf die Anforderung angewendet werden. Weitere Segmente erhöhen die Komplexität der Anforderung. Die Richtlinie ist 5 oder weniger. | Wenn sich die Anforderungen hier verlangsamen, kann dies daran liegen, dass Ihr Projekt zu viele Segmente enthält. Versuchen Sie, die Anzahl der Segmente zu reduzieren. |
