@@ -4,10 +4,10 @@ title: Journey-Arbeitsfläche
 feature: Visualizations
 role: User
 exl-id: be03c3b2-8faf-47b8-b3ab-e953202bf488
-source-git-commit: 5e4666b81f23e09a4208f0efed17a7bc44dff0fc
+source-git-commit: 27c76e5090e4dfcfc00fd11c7a67574dc6af1c63
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1654'
+ht-degree: 1%
 
 ---
 
@@ -45,7 +45,13 @@ Der auffälligste Einblick in die Journey-Arbeitsfläche wird als Beschriftung o
 
 Diese Beschriftung fasst zusammen, welche von allen Pfaden im Journey die höchste Konversionsrate aufwies.
 
+Wenn die Journey mehrere Startknoten enthält, sieht die Beschriftung wie folgt aus:
+
 ![Journey canvas insight caption](assets/journey-canvas-caption.png)
+
+Wenn die Journey einen einzelnen Startknoten enthält, sieht die Beschriftung wie folgt aus:
+
+![Journey canvas insight caption single start node](assets/journey-canvas-caption-singlestart.png)
 
 Beachten Sie bei der Interpretation dieser Beschriftung Folgendes:
 
@@ -176,13 +182,9 @@ Dies liegt daran, dass Sie im Gegensatz zu Journey Optimizer mit der Journey-Arb
 
 #### Funktionsunterschiede
 
-Nachdem Sie eine Journey Optimizer-Journey auf der Journey-Arbeitsfläche geändert haben, kann sich die Funktionalität je nach Ihren Änderungen für die folgenden Funktionen ändern:
+Nachdem Sie eine Journey Optimizer-Journey auf der Arbeitsfläche &quot;Journey&quot;geändert haben, ändern sich die Optionen, die im Dropdown-Feld [!UICONTROL **Pfeileinstellungen**] verfügbar sind, je nach Ihren Änderungen. Weitere Informationen finden Sie unter [Einstellungen konfigurieren](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md).
 
-* Die im Feld [!UICONTROL **Knotentyp**] angezeigten Werte ändern sich.
-
-* Die Optionen, die im Dropdown-Feld [!UICONTROL **Pfeileinstellungen**] verfügbar sind, ändern sich.
-
-Weitere Informationen zu diesen Feldern finden Sie unter [Einstellungen konfigurieren](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md).
+Das Feld [!UICONTROL **Knotentyp**] ist nur in Journey Optimizer verfügbar. Sie ist nicht verfügbar, wenn Sie eine Journey Optimizer-Journey auf der Journey-Arbeitsfläche anzeigen, unabhängig davon, ob Sie Änderungen an der Journey auf der Journey-Arbeitsfläche vornehmen.
 
 #### Unterschiede bei der Synchronisierung
 
