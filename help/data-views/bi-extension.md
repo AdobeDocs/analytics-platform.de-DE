@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: BI Extension
 role: Admin
 exl-id: ab7e1f15-ead9-46b7-94b7-f81802f88ff5
-source-git-commit: b2e165e5bb2c15fecaba1c8b14daeb727c0cead5
+source-git-commit: 7b51f9c0699a07051936e6e6ca493688d59e624e
 workflow-type: tm+mt
-source-wordcount: '3044'
-ht-degree: 63%
+source-wordcount: '3078'
+ht-degree: 62%
 
 ---
 
@@ -28,15 +28,22 @@ Die wichtigsten Vorteile sind:
 
 ## Voraussetzungen
 
-Um diese Funktion verwenden zu können, müssen Sie über Folgendes verfügen:
-
+Um diese Funktion zu verwenden, können Sie ablaufende oder nicht ablaufende Anmeldeinformationen verwenden, um BI-Tools mit dem [!DNL Customer Journey Analytics BI extension] zu verbinden. Das [Berechtigungshandbuch](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/credentials) enthält weitere Informationen zum Festlegen ablaufender oder nicht ablaufender Anmeldeinformationen.
+Im Folgenden finden Sie weitere Schritte zum Einrichten von CJA-Berechtigungen.
 <!---   Enable the [!UICONTROL Customer Journey Analytics BI extension] in your Experience Platform organization. -->
+
+### Ablaufende Anmeldeinformationen
 
 * Gewährter Zugriff auf Experience Platform und Customer Journey Analytics.
 * Produktadministratorzugriff auf Customer Journey Analytics gewährt, damit Sie Verbindungen und Datenansichten anzeigen, bearbeiten, aktualisieren oder löschen können.
+* ODER
 * Gewährter Zugriff auf die Datenansichten, auf die Sie zugreifen möchten.
 * Gewährter Zugriff auf die CJA BI-Erweiterung.
-* Verwenden Sie das Ablaufdatum für nicht ablaufende Anmeldedaten, um BI-Tools mit dem [!DNL Customer Journey Analytics BI extension] zu verbinden. Das [Berechtigungshandbuch](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/credentials) enthält weitere Informationen zum Festlegen ablaufender oder nicht ablaufender Anmeldeinformationen.
+
+### Nicht ablaufende Anmeldedaten
+
+* Erstellen Sie nicht ablaufende Anmeldedaten in der Adobe-Erlebnisplattform.
+* Gewähren Sie Zugriff auf die nicht ablaufende Berechtigung, indem Sie dieselben Schritte ausführen, die unter [Ablauf der Anmeldedaten](#Expiring-credentials) beschrieben sind.
 
 Weitere Informationen finden Sie unter [Zugriffssteuerung für Kunden-Journey](../technotes/access-control.md), insbesondere die zusätzlichen Berechtigungen [Produktadministrator](../technotes/access-control.md#product-admin-additional-permissions) und [Customer Journey Analytics-Berechtigungen in der Admin Console](../technotes/access-control.md#customer-journey-analytics-permissions-in-admin-console).
 

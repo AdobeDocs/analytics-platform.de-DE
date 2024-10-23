@@ -5,10 +5,10 @@ exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: ea95b576a9d8309d2c6c2aeba589db1fd28ce499
+source-git-commit: 7b51f9c0699a07051936e6e6ca493688d59e624e
 workflow-type: tm+mt
-source-wordcount: '3676'
-ht-degree: 95%
+source-wordcount: '3747'
+ht-degree: 94%
 
 ---
 
@@ -194,6 +194,16 @@ Wenden Sie sich an Ihre Admins, wenn Sie sich nicht sicher sind, welches Custome
 >abstract="Wählen Sie aus den verfügbaren Identitäten, die im Datensatzschema in der Experience Platform definiert sind, eine Käufer-Gruppen-ID (die eindeutige Kennung für eine Einkaufsgruppe) aus."
 
 <!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_connection_matchingkey"
+>title="Passender Schlüssel"
+>abstract="Wählen Sie die Art des Joins aus: basierend auf einem übereinstimmenden Schlüssel oder einem entsprechenden Container.<br/><br/>**[!UICONTROL Entspricht Schlüssel ]**: Wählen Sie ein Feld aus, das mit einem der Ereignis-Datensätze verknüpft werden soll. Wenn diese Liste leer ist, haben Sie wahrscheinlich keinen Ereignisdatensatz hinzugefügt oder konfiguriert.<br/>**[!UICONTROL Übereinstimmender Container]**: Wählen Sie einen Container aus, der verwendet werden soll, um mit einem der Ereignis-Datensätze zu verknüpfen. Wenn diese Liste leer ist, haben Sie wahrscheinlich keinen oder mehrere Container konfiguriert."
+
+<!-- markdownlint-enable MD034 -->
+
 
 
 <!-- markdownlint-disable MD034 -->
