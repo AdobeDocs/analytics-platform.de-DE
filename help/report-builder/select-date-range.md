@@ -1,15 +1,15 @@
 ---
-title: Auswählen eines Datenbereichs in Report Builder unter Customer Journey Analytics
+title: So wählen Sie einen Datumsbereich in Report Builder in Customer Journey Analytics aus
 description: Beschreibt die Verwendung des Kalenders, rollierender Datumsangaben und benutzerdefinierter Ausdrücke in Report Builder zum Customer Journey Analytics
 role: User
 feature: Report Builder
 type: Documentation
 exl-id: 7252214f-a7d6-451b-99c9-d39e8e47120b
 solution: Customer Journey Analytics
-source-git-commit: 9efad7c7808a7a68bc25fc5f1700f4e4f8e18614
+source-git-commit: c56c77079aa21fb740fda6bec333731a1f82a48f
 workflow-type: tm+mt
 source-wordcount: '1091'
-ht-degree: 89%
+ht-degree: 87%
 
 ---
 
@@ -40,7 +40,7 @@ Sie können den aktuellen Tag für einen beliebigen Datumsbereich ausschließen.
 
 ## Verwenden des Kalenders
 
-Wenn Sie den **Kalender** verwenden, zeigt das Datumsbereichsfeld den aktuellen Datumsbereich für die Datenblockanfrage an. Sie können Datumsangaben direkt in das Datumsbereichsfeld eingeben oder eine Datenbereichsauswahl-Option verwenden.
+Wenn Sie den **Kalender** verwenden, zeigt das Datumsbereichsfeld den aktuellen Datumsbereich für die Datenblockanfrage an. Sie können Datumsangaben direkt in das Datumsbereichsfeld eingeben oder eine Datumsbereichsauswahloption verwenden.
 
 ### Feld „Datumsbereich“
 
@@ -92,7 +92,7 @@ Mit der Option „Rollierende Datumswerte“ können Sie einen Datumsbereich mit
 
    ![Datumsbereich des Report Builders, der den aktuellen Tag plus 14 ausgewählte Tage anzeigt.](./assets/image21.png)
 
-1. Klicken Sie auf „Weiter“, um den Datenbereich zu definieren.
+1. Klicken Sie auf Weiter , um den Datumsbereich festzulegen.
 
    Verwenden Sie die Datumsvorschau, um zu bestätigen, dass der resultierende Datumsbereich der gewünschte Bereich ist.
 

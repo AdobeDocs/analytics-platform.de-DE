@@ -4,7 +4,7 @@ title: Bedienfeld „Quick Insights“
 feature: Panels
 exl-id: 09ebc3af-34ac-4f1f-8a5d-90da008f8697
 role: User
-source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
+source-git-commit: c56c77079aa21fb740fda6bec333731a1f82a48f
 workflow-type: tm+mt
 source-wordcount: '1127'
 ht-degree: 26%
@@ -77,7 +77,7 @@ Wählen Sie die Bausteine aus:
 * **[!UICONTROL Analysieren]** - Festlegen einer Dimension (orange)
 * **[!UICONTROL by]** - Angabe einer Metrik (grün)
 * **[!UICONTROL Filter nach]** - Angabe eines Filters (blau)
-* **[!UICONTROL on]** - Geben Sie einen Datenbereich (violett) an.
+* **[!UICONTROL on]** - Geben Sie einen Datumsbereich (violett) an.
 
 Sie müssen mindestens eine Dimension und eine Metrik auswählen, damit die Visualisierung ordnungsgemäß funktioniert.
 
@@ -114,7 +114,7 @@ Weitere nützliche Hinweise werden im [!UICONTROL Quick Insights Builder] angeze
 
   ![Die Benachrichtigung zum Bedienfeld &quot;Quick Insights&quot;wird angezeigt, nachdem Sie das Hilfesymbol ausgewählt haben.](assets/qibuilder4.png)
 
-* Sie können mehrere Dimensionen und Metriken analysieren, Filter kombinieren oder vergleichen und einen Datenbereich angeben:
+* Sie können mehrere Dimensionen und Metriken analysieren, Filter kombinieren oder vergleichen und einen Datumsbereich angeben:
 
   ![Quick Insights Builder-Ergebnis](assets/qibuilder-result.png)
 
@@ -124,7 +124,7 @@ Weitere nützliche Hinweise werden im [!UICONTROL Quick Insights Builder] angeze
 
    * **[!UICONTROL Filtern nach]**: Sie können bis zu 2 weitere Filter hinzufügen. Fügen Sie beispielsweise Buchungen als Filter hinzu und kombinieren Sie diesen Filter mit den von Ihnen verglichenen Filtern Häufige Lesezeichen und Erstflüge . Siehe ➏, ➐ und ➑.
 
-   * on: Sie können den Datenbereich angeben. Siehe ➒.
+   * on: Sie können den Datumsbereich angeben. Siehe ➒.
 
 ## Bekannte Einschränkungen
 

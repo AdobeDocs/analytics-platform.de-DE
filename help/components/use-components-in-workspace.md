@@ -4,7 +4,7 @@ title: Verwenden von Komponenten in Analysis Workspace
 feature: Components
 role: User
 exl-id: 97bdfb9e-a27e-4a6b-b6cc-21a292398037
-source-git-commit: 590a3ddbe988d27341fe96a3fa866960d1641e24
+source-git-commit: c56c77079aa21fb740fda6bec333731a1f82a48f
 workflow-type: tm+mt
 source-wordcount: '952'
 ht-degree: 7%
@@ -120,7 +120,7 @@ Jedes Bedienfeld enthält standardmäßig einen Datumsbereich. Es gibt mehrere M
 
      ![Einen Datumsbereich ablegen](assets/add-date-range.gif)
 
-   * Eine Metrik oder Dimension in einer Freiformtabellenvisualisierung. Weitere Informationen finden Sie unter [Verwenden von Datenbereichen](/help/components/date-ranges/overview.md#use-date-ranges) .
+   * Eine Metrik oder Dimension in einer Freiformtabellenvisualisierung. Weitere Informationen finden Sie unter [Verwenden von Datumsbereichen](/help/components/date-ranges/overview.md#use-date-ranges) .
 
 Weitere Informationen zur Verwendung und Verwaltung von Datumsbereichen in Analysis Workspace finden Sie unter [Übersicht über Datumsbereiche](/help/components/date-ranges/overview.md).
 

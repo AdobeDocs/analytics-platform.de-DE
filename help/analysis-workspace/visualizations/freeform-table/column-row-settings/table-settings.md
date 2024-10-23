@@ -4,7 +4,7 @@ title: Zeileneinstellungen
 feature: Visualizations
 exl-id: a9438d83-498d-4b22-9e5e-c357bd3a2680
 role: User
-source-git-commit: 590a3ddbe988d27341fe96a3fa866960d1641e24
+source-git-commit: 347ab5b400fb8a5fddc02878f779be7112d693ab
 workflow-type: tm+mt
 source-wordcount: '1019'
 ht-degree: 15%
@@ -80,8 +80,8 @@ Die folgenden zusätzlichen Kontextmenüoptionen sind verfügbar, wenn Sie eine 
 | Option | Beschreibung |
 |---|---|
 | **[!UICONTROL Metrik aus Auswahl erstellen]** | Erstellen Sie eine neue Metrik aus der ausgewählten Metrik. Die Metrik kann &quot;Mittel&quot;, &quot;Medien&quot;, &quot;Spaltenmax&quot;, &quot;Spaltenmin&quot;, &quot;Spaltensumme&quot;sein. Sie können auch im Generator für berechnete Metriken die Option Öffnen auswählen, um eine berechnete Metrik zu erstellen. |
-| **[!UICONTROL Spalte mit Zeitraum hinzufügen]** | Fügen Sie eine Zeitraumspalte hinzu. Ihnen stehen verschiedene Optionen zur Verfügung, bei denen der Kalenderbereich des Bedienfelds den *Datumsbereich* bestimmt: <li>**[!UICONTROL Vorheriger *Datumsbereich* für diesen Datenbereich]**</li><li>**[!UICONTROL Diese *Datumsbereiche* bis zu diesem Datumsbereich]**.</li><li>**[!UICONTROL Benutzerdefinierter Datenbereich bis zu diesem Datumsbereich]**. Öffnet den **[!UICONTROL Generator für Datumsbereiche]** , um den Datumsbereich anzugeben.</li>Weitere Informationen finden Sie unter [Datumsvergleich](/help/components/date-ranges/time-comparison.md) . |
-| **[!UICONTROL Zeiträume vergleichen]** | Fügt die Spalten für den Zeitraum vergleichen hinzu. Nur verfügbar, wenn die Dimension nicht zeitbasiert ist. Ihnen stehen mehrere Optionen zur Verfügung, die den *Datumsbereich* bestimmen: <li>**[!UICONTROL Vorheriger *Datumsbereich* für diesen Datenbereich]**</li><li>**[!UICONTROL Benutzerdefinierter Datenbereich bis zu diesem Datumsbereich]**. Öffnet den **[!UICONTROL Generator für Datumsbereiche]** , um den Datumsbereich anzugeben.</li>Weitere Informationen finden Sie unter [Datumsvergleich](/help/components/date-ranges/time-comparison.md) . |
+| **[!UICONTROL Spalte mit Zeitraum hinzufügen]** | Fügen Sie eine Zeitraumspalte hinzu. Ihnen stehen verschiedene Optionen zur Verfügung, bei denen der Kalenderbereich des Bedienfelds den *Datumsbereich* bestimmt: <li>**[!UICONTROL Vorheriger *Datumsbereich* vor diesem Datumsbereich]**</li><li>**[!UICONTROL Diese *Datumsbereiche* bis zu diesem Datumsbereich]**.</li><li>**[!UICONTROL Benutzerdefinierter Datumsbereich für diesen Datumsbereich]**. Öffnet den **[!UICONTROL Generator für Datumsbereiche]** , um den Datumsbereich anzugeben.</li>Weitere Informationen finden Sie unter [Datumsvergleich](/help/components/date-ranges/time-comparison.md) . |
+| **[!UICONTROL Zeiträume vergleichen]** | Fügt die Spalten für den Zeitraum vergleichen hinzu. Nur verfügbar, wenn die Dimension nicht zeitbasiert ist. Ihnen stehen mehrere Optionen zur Verfügung, die den *Datumsbereich* bestimmen: <li>**[!UICONTROL Vorheriger *Datumsbereich* vor diesem Datumsbereich]**</li><li>**[!UICONTROL Benutzerdefinierter Datumsbereich für diesen Datumsbereich]**. Öffnet den **[!UICONTROL Generator für Datumsbereiche]** , um den Datumsbereich anzugeben.</li>Weitere Informationen finden Sie unter [Datumsvergleich](/help/components/date-ranges/time-comparison.md) . |
 | **[!UICONTROL Ändern von Attributionsmodellen]** | Ändern Sie das Attributionsmodell für die Spalte. |
 | **[!UICONTROL Attributionsmodell vergleichen]** | Geben Sie ein neues Attributionsmodell an und vergleichen Sie es mit dem Attributionsmodell für die ausgewählte Spalte. Eine neue Spalte mit den neuen Attributionsmodellmetriken wird hinzugefügt. Außerdem wird eine Spalte zur prozentualen Änderung zum Vergleich hinzugefügt. |
 | **[!UICONTROL Spaltenbreiten zurücksetzen]** | Setzen Sie die Spaltenbreiten auf die Standardbreite zurück. |

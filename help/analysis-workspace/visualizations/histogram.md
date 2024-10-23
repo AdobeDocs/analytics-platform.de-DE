@@ -4,7 +4,7 @@ title: Histogramm
 feature: Visualizations
 exl-id: 5901eb15-51cf-45a0-a80b-5824adf33bdd
 role: User
-source-git-commit: 90d1c51c11f0ab4d7d61b8e115efa8257a985446
+source-git-commit: c56c77079aa21fb740fda6bec333731a1f82a48f
 workflow-type: tm+mt
 source-wordcount: '330'
 ht-degree: 42%
@@ -38,7 +38,7 @@ So erstellen Sie ein Histogramm:
 >
 >Histogramme unterstützen nur Standardmetriken, keine berechneten Metriken.
 
-Im folgenden Beispiel wird ein Histogramm verwendet, um Sitzungen für die Anzahl der Personen zu bündeln. Das Histogramm zeigt, dass die meisten Personen zwischen 16 und 21 Sitzungen für den ausgewählten Datenbereich haben.
+Im folgenden Beispiel wird ein Histogramm verwendet, um Sitzungen für die Anzahl der Personen zu bündeln. Das Histogramm zeigt, dass die meisten Personen zwischen 16 und 21 Sitzungen für den ausgewählten Datumsbereich haben.
 
 ![](assets/histogram.png)
 

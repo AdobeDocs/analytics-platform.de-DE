@@ -6,7 +6,7 @@ feature: Workspace Basics
 exl-id: 9075518e-54fe-49a6-9601-aa9468187b8f
 solution: Customer Journey Analytics
 role: User
-source-git-commit: df0fd0af8a22c84705c3dea11065132359dd80ff
+source-git-commit: c56c77079aa21fb740fda6bec333731a1f82a48f
 workflow-type: tm+mt
 source-wordcount: '1479'
 ht-degree: 13%
@@ -111,7 +111,7 @@ Eine Übersicht über die verfügbaren Menüs finden Sie in den Tabellen unten.
 |---|---|---|---|
 | **[!UICONTROL Filter erstellen...]** | **[!UICONTROL *shift+cmd+e *]** | **[!UICONTROL *UMSCHALT+Strg+e *]** | Erstellen Sie einen neuen [Filter](/help/components/filters/create-filters.md). |
 | **[!UICONTROL Metrik erstellen...]** | **[!UICONTROL *shift+cmd+c *]** | **[!UICONTROL *UMSCHALT+Strg+c *]** | Erstellen Sie eine neue [berechnete Metrik](/help/components/calc-metrics/calc-metr-overview.md). |
-| **[!UICONTROL Datumsbereich erstellen...]** | **[!UICONTROL *shift+cmd+d *]** | **[!UICONTROL *UMSCHALT+Strg+D *]** | Erstellen Sie einen neuen [Datenbereich](/help/components/date-ranges/overview.md). |
+| **[!UICONTROL Datumsbereich erstellen...]** | **[!UICONTROL *shift+cmd+d *]** | **[!UICONTROL *UMSCHALT+Strg+D *]** | Erstellen Sie einen neuen [Datumsbereich](/help/components/date-ranges/overview.md). |
 | **[!UICONTROL Anmerkung erstellen...]** | **[!UICONTROL *shift+cmd+o *]** | **[!UICONTROL *UMSCHALT+Strg+O *]** | Erstellen Sie eine neue [Anmerkung](/help/components/annotations/overview.md). |
 | **[!UICONTROL Erstellen einer Zielgruppe...]** | **[!UICONTROL *shift+cmd+u *]** | **[!UICONTROL *UMSCHALT+Strg+u *]** | Erstellen Sie eine neue [Audience](/help/components/audiences/audiences-overview.md). |
 | **[!UICONTROL Refewsh components]** | **[!UICONTROL *opt+shift+r *]** | **[!UICONTROL *alt+shift+r *]** | Aktualisieren Sie die Komponenten im Projekt. |

@@ -4,7 +4,7 @@ description: Erfahren Sie, wie Sie Customer Journey Analytics-Auditprotokolle an
 exl-id: 360609f2-b811-49ee-ad4a-a54ceb23bfa3
 feature: Privacy
 role: Admin
-source-git-commit: 31381cd397a821cc3ff1b3c15ae968a7260a6e9e
+source-git-commit: c56c77079aa21fb740fda6bec333731a1f82a48f
 workflow-type: tm+mt
 source-wordcount: '837'
 ht-degree: 66%
@@ -111,7 +111,7 @@ Die folgenden Informationen werden angezeigt:
 
 Wählen Sie das Trichtersymbol (![Filter](assets/filter-icon.png)), um eine Liste von Filterfeldern anzuzeigen, mit denen die Ergebnisse eingegrenzt werden können. Unabhängig von den ausgewählten Filtern werden nur die letzten 1.000 Datensätze angezeigt.
 
-![Prüfprotokoll, das die für den Datenbereich angezeigten Filter anzeigt.](assets/filters.png)
+![Prüfprotokoll, das die für den Datumsbereich angezeigten Filter anzeigt.](assets/filters.png)
 
 Die Benutzeroberfläche verfügt für Protokolle über folgende Filter:
 

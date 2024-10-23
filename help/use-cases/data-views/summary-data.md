@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Use Cases
 role: Admin
 exl-id: 80139806-618a-46ff-b2c4-32d7bb85a526
-source-git-commit: 6cd4fadc28117ed88b68d17274ab8de2b0edff10
+source-git-commit: c56c77079aa21fb740fda6bec333731a1f82a48f
 workflow-type: tm+mt
 source-wordcount: '5188'
 ht-degree: 8%
@@ -430,7 +430,7 @@ Stellen Sie nach einer Weile sicher, dass die Daten aus Ihren Datensätzen ordnu
 1. Wählen Sie **[!UICONTROL Customer Journey Analytics]** aus dem   ![App](/help/assets/icons/Apps.svg)   App-Umschalter.
 1. Wählen Sie im oberen Menü **[!UICONTROL Verbindungen]** aus.
 1. Wählen Sie Ihre Verbindung aus, z. B. **[!UICONTROL Beispielverbindung mit Zusammenfassungsdaten]**.
-1. Wählen Sie in den Details **[!UICONTROL Verbindung]** > **[!UICONTROL Beispielverbindung mit Zusammenfassungsdaten]** einen entsprechenden Datenbereich aus.
+1. Wählen Sie in den Details **[!UICONTROL Verbindung]** > **[!UICONTROL Beispielverbindung mit Zusammenfassungsdaten]** einen entsprechenden Datumsbereich aus.
    1. Wählen Sie ![Kalender](/help/assets/icons/Calendar.svg) und dann **[!UICONTROL Letzte 7 Tage]** aus.
    1. Wählen Sie **[!UICONTROL Anwenden]** aus.
 
@@ -550,7 +550,7 @@ Erstellen Sie ein neues Projekt in Analysis Workspace, um Berichte zu Ihren Zusa
 Es wird eine leere Arbeitsfläche mit einem Bedienfeld [!UICONTROL Freiform] angezeigt, das aus einer leeren [!UICONTROL Freiformtabelle] besteht.
 
 1. Stellen Sie sicher, dass die für den Bereich ausgewählte Datenansicht sich auf die Datenansicht bezieht, die die Konfiguration für die Zusammenfassungsdaten enthält. Beispiel: **[!UICONTROL Beispiel einer Datenansicht mit Zusammenfassungsdaten.]**
-1. Stellen Sie sicher, dass der Datenbereich für die Daten gültig ist, für die Sie einen Bericht erstellen möchten. Beispiel: **[!UICONTROL Letzte 2 volle Monate]**.
+1. Stellen Sie sicher, dass der Datumsbereich für die Daten gültig ist, für die Sie einen Bericht erstellen möchten. Beispiel: **[!UICONTROL Letzte 2 volle Monate]**.
 1. Ziehen Sie **[!UICONTROL Trackingcode (Ereignis)]** aus **[!UICONTROL Dimensionen]** und legen Sie die Dimension auf die leere Freiformtabelle.
 1. Ziehen Sie **[!UICONTROL Bestellungen]** aus **[!UICONTROL Metriken]** und legen Sie die Metrik in die Spalte **[!UICONTROL Ereignisse]**, um diese Spalte in der Freiformtabelle zu ersetzen.
 1. Ziehen Sie **[!UICONTROL Umsatz]** aus **[!UICONTROL Metriken]** und legen Sie die Metrik ab, um sie als zusätzliche Spalte zur Freiformtabelle hinzuzufügen.
