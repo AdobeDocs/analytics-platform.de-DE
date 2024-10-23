@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: BI Extension
 role: Admin
 exl-id: ab7e1f15-ead9-46b7-94b7-f81802f88ff5
-source-git-commit: 7b51f9c0699a07051936e6e6ca493688d59e624e
+source-git-commit: e5d66bfbc39d3b20b2833b6a83485b106b3d4231
 workflow-type: tm+mt
-source-wordcount: '3078'
+source-wordcount: '3091'
 ht-degree: 62%
 
 ---
@@ -34,16 +34,22 @@ Im Folgenden finden Sie weitere Schritte zum Einrichten von CJA-Berechtigungen.
 
 ### Ablaufende Anmeldeinformationen
 
-* Gewährter Zugriff auf Experience Platform und Customer Journey Analytics.
-* Produktadministratorzugriff auf Customer Journey Analytics gewährt, damit Sie Verbindungen und Datenansichten anzeigen, bearbeiten, aktualisieren oder löschen können.
-* ODER
-* Gewährter Zugriff auf die Datenansichten, auf die Sie zugreifen möchten.
-* Gewährter Zugriff auf die CJA BI-Erweiterung.
+Um ablaufende Anmeldedaten zu verwenden, können Sie:
+
+* Gewähren Sie Zugriff auf Experience Platform und Customer Journey Analytics.
+* Gewähren Sie Produktadministratorzugriff auf Customer Journey Analytics, damit Sie Verbindungen und Datenansichten anzeigen, bearbeiten, aktualisieren oder löschen können.
+
+Sie können auch:
+
+* Gewähren Sie Zugriff auf die Datenansichten, auf die Sie zugreifen möchten.
+* Gewähren Sie Zugriff auf die Customer Journey Analytics BI-Erweiterung.
 
 ### Nicht ablaufende Anmeldedaten
 
-* Erstellen Sie nicht ablaufende Anmeldedaten in der Adobe-Erlebnisplattform.
-* Gewähren Sie Zugriff auf die nicht ablaufende Berechtigung, indem Sie dieselben Schritte ausführen, die unter [Ablauf der Anmeldedaten](#Expiring-credentials) beschrieben sind.
+So verwenden Sie nicht ablaufende Anmeldeinformationen:
+
+* Erstellen Sie nicht ablaufende Anmeldedaten in Experience Platform.
+* Gewähren Sie den Zugriff auf die nicht ablaufenden Anmeldedaten, indem Sie die unter [Ablauf der Anmeldedaten](#Expiring-credentials) genannten Schritte ausführen.
 
 Weitere Informationen finden Sie unter [Zugriffssteuerung für Kunden-Journey](../technotes/access-control.md), insbesondere die zusätzlichen Berechtigungen [Produktadministrator](../technotes/access-control.md#product-admin-additional-permissions) und [Customer Journey Analytics-Berechtigungen in der Admin Console](../technotes/access-control.md#customer-journey-analytics-permissions-in-admin-console).
 
