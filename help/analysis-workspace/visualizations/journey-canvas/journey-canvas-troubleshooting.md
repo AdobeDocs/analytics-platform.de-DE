@@ -3,9 +3,7 @@ description: Beispiele beim Konfigurieren einer Journey-Arbeitsflächenvisualisi
 title: Beispiele für Journey-Arbeitsfläche
 feature: Visualizations
 role: User
-hide: true
-hidefromtoc: true
-source-git-commit: cbe713c08269fd3cc4e1076181020ff3fdc947b3
+source-git-commit: 820251833eae9fed1574a0010f726b0ba6e12cd1
 workflow-type: tm+mt
 source-wordcount: '1287'
 ht-degree: 0%
@@ -13,8 +11,6 @@ ht-degree: 0%
 ---
 
 # Fehlerbehebung bei Journey Canvas
-
-{{release-limited-testing}}
 
 Mit der Journey-Arbeitsflächenvisualisierung können Sie tief greifende Einblicke in die Journey erhalten, die Sie Ihren Benutzern und Kunden zur Verfügung stellen.
 
