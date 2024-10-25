@@ -9,10 +9,10 @@ index: true
 user-guide-title: Handbuch zu Customer Journey Analytics
 user-guide-description: Hier erhalten Sie Informationen zu Adobe Customer Journey Analytics und Erläuterungen zur Nutzung von Analysis Workspace mit Daten aus Experience Platform.
 breadcrumb-title: Handbuch zu Customer Journey Analytics
-source-git-commit: aaf23560b69c90fdbaee3fa401b5fe58e6a4e5d1
+source-git-commit: 925eae6eb1b23e761432081f0dbcdcada9ce9be4
 workflow-type: tm+mt
-source-wordcount: '938'
-ht-degree: 86%
+source-wordcount: '942'
+ht-degree: 92%
 
 ---
 
@@ -49,11 +49,11 @@ ht-degree: 86%
       + [Überblick](../getting-started/aa-vs-cja/overview.md)
       + [Verwenden von Adobe Analytics-Daten](../getting-started/aa-vs-cja/aa-data-in-cja.md)
       + [Funktionsunterstützung](../getting-started/aa-vs-cja/cja-aa.md)
-      + [Terminologie vergleichen](../getting-started/aa-vs-cja/terminology.md)
-      + [Datenverarbeitung vergleichen](../getting-started/aa-vs-cja/data-processing-comparisons.md)
+      + [Vergleichen der Terminologie](../getting-started/aa-vs-cja/terminology.md)
+      + [Vergleichen der Datenverarbeitung](../getting-started/aa-vs-cja/data-processing-comparisons.md)
       + [Umgebungen](../getting-started/aa-vs-cja/vrs-dataview-sandbox-adc.md)
-      + [Analytics-Verarbeitung versus Datenvorbereitung](../getting-started/aa-vs-cja/pr-vista-dataprep.md)
-      + [Analytics-Identitäten](../getting-started/aa-vs-cja/aaid-ecid-adc.md)
+      + [Analysenverarbeitung und Datenvorbereitung](../getting-started/aa-vs-cja/pr-vista-dataprep.md)
+      + [Analytics-IDs](../getting-started/aa-vs-cja/aaid-ecid-adc.md)
    + [Weiterentwicklung von Adobe Analytics](../getting-started/aa-to-cja.md)
    + [Benutzerhandbuch für Adobe Analytics-Benutzende](../getting-started/aa-to-cja-user.md)
 
@@ -87,17 +87,17 @@ ht-degree: 86%
       + [Verhalten](../data-views/component-settings/behavior.md)
       + [Format](../data-views/component-settings/format.md)
       + [Werte einschließen/ausschließen](../data-views/component-settings/include-exclude-values.md)
-      + [Deduplizierung von Metriken](../data-views/component-settings/metric-deduplication.md)
+      + [Deduplizierung einer Metrik](../data-views/component-settings/metric-deduplication.md)
       + [Keine Wertoptionen](../data-views/component-settings/no-value-options.md)
       + [Persistenz](../data-views/component-settings/persistence.md)
       + [Teilzeichenfolge](../data-views/component-settings/substring.md)
       + [Zusammenfassungsdatengruppe](../data-views/component-settings/summary-data-group.md)
-      + [Wert-Bucketing](../data-views/component-settings/value-bucketing.md)
+      + [Bucketing von Werten](../data-views/component-settings/value-bucketing.md)
    + [Standardkomponentenreferenz](../data-views/component-reference.md)
    + [BI-Erweiterung](../data-views/bi-extension.md)
    + [Abgeleitete Felder](../data-views/derived-fields/derived-fields.md)
    + [Zusammenfassungsdaten](../data-views/summary-data.md)
-   + [Beschriftungen und Richtlinien](../data-views/data-governance.md)
+   + [Labels und Richtlinien](../data-views/data-governance.md)
 
 + Tools {#tools}
    + Asset-Übertragung {#asset-transfer}
@@ -114,16 +114,16 @@ ht-degree: 86%
    + Projekte {#build-workspace-project}
       + [Überblick](../analysis-workspace/build-workspace-project/freeform-overview.md)
       + [Erstellen von Projekten](/help/analysis-workspace/build-workspace-project/create-projects.md)
-      + [Offene Projekte](/help/analysis-workspace/build-workspace-project/open-projects.md)
+      + [Öffnen von Projekten](/help/analysis-workspace/build-workspace-project/open-projects.md)
       + [Projekte speichern](../analysis-workspace/build-workspace-project/save-projects.md)
       + Ordner in Analysis Workspace {#workspace-folders}
          + [Über Ordner](../analysis-workspace/build-workspace-project/workspace-folders/about-folders.md)
          + [Erstellen von Ordnern und Unterordnern](../analysis-workspace/build-workspace-project/workspace-folders/create-folders.md)
-         + [Ordner verwalten](../analysis-workspace/build-workspace-project/workspace-folders/manage-folders.md)
-         + [Hinzufügen oder Verschieben von Projekten in Ordnern](../analysis-workspace/build-workspace-project/workspace-folders/add-projects.md)
+         + [Verwalten von Ordnern](../analysis-workspace/build-workspace-project/workspace-folders/manage-folders.md)
+         + [Hinzufügen oder Verschieben von Projekten zu Ordnern](../analysis-workspace/build-workspace-project/workspace-folders/add-projects.md)
       + [Hotkeys (Tastaturbefehle)](../analysis-workspace/build-workspace-project/fa-shortcut-keys.md)
       + [Farbpaletten](../analysis-workspace/build-workspace-project/color-palettes.md)
-      + [Verwenden der Dichte](../analysis-workspace/build-workspace-project/view-density.md)
+      + [Anzeigen der Dichte](../analysis-workspace/build-workspace-project/view-density.md)
    + Visualisierungen {#visualizations}
       + [Überblick](../analysis-workspace/visualizations/freeform-analysis-visualizations.md)
       + [Datenquellen verwalten](../analysis-workspace/visualizations/t-sync-visualization.md)
@@ -157,15 +157,15 @@ ht-degree: 86%
       + [Bereich (gestapelt)](../analysis-workspace/visualizations/area.md)
       + [Balken (gestapelt)](../analysis-workspace/visualizations/bar.md)
       + [Horizontales Säulendiagramm](../analysis-workspace/visualizations/bullet-graph.md)
-      + [Combo](../analysis-workspace/visualizations/combo-charts.md)
+      + [Kombination](../analysis-workspace/visualizations/combo-charts.md)
       + [Ringdiagramm](../analysis-workspace/visualizations/donut.md)
       + [Histogramm](../analysis-workspace/visualizations/histogram.md)
       + [Horizontalbalken (gestapelt)](../analysis-workspace/visualizations/horizontal-bar.md)
       + [Zusammenfassung einer Schlüsselmetrik](../analysis-workspace/visualizations/key-metric.md)
       + [Linie](../analysis-workspace/visualizations/line.md)
       + [Streuung](../analysis-workspace/visualizations/scatterplot.md)
-      + [Zusammenfassungsnummer und Änderung](../analysis-workspace/visualizations/summary-number-change.md)
-      + [Bereichs-Kopfzeile](/help/analysis-workspace/visualizations/section-header.md)
+      + [Zusammenfassungszahl und -änderung](../analysis-workspace/visualizations/summary-number-change.md)
+      + [Abschnittskopfzeile](/help/analysis-workspace/visualizations/section-header.md)
       + [Text](../analysis-workspace/visualizations/text.md)
       + [Baumdiagramm](../analysis-workspace/visualizations/treemap.md)
       + [Venn](../analysis-workspace/visualizations/venn.md)
@@ -176,7 +176,7 @@ ht-degree: 86%
       + [Experimentieren](../analysis-workspace/c-panels/experimentation.md)
       + [Freiform](../analysis-workspace/c-panels/freeform-panel.md)
       + [Medien-Zielgruppendurchschnitt pro Minute](/help/analysis-workspace/c-panels/average-minute-audience-panel.md)
-      + [Gleichzeitige Medienbetrachter](../analysis-workspace/c-panels/media-concurrent-viewers.md)
+      + [Gleichzeitige Medienbetrachtende](../analysis-workspace/c-panels/media-concurrent-viewers.md)
       + [Bei der Medienwiedergabe verbrachte Zeit](../analysis-workspace/c-panels/media-playback-time-spent.md)
       + [Nächstes oder vorheriges Objekt](../analysis-workspace/c-panels/next-previous.md)
       + [Quick Insights](../analysis-workspace/c-panels/quickinsight.md)
@@ -252,7 +252,7 @@ ht-degree: 86%
       + [Dimensionsvorschau](../components/dimensions/view-dimensions.md)
       + [Dimensionen aufschlüsseln](../components/dimensions/t-breakdown-fa.md)
       + [Dimensionen für die Zeitunterteilung](../components/dimensions/time-parting-dimensions.md)
-      + [Hohe Kardinalitätsdimensionen](../components/dimensions/high-cardinality.md)
+      + [Dimensionen hoher Kardinalität](../components/dimensions/high-cardinality.md)
    + [Metriken](../components/apply-create-metrics.md)
    + Filter {#cja-filters}
       + [Überblick](../components/filters/filters-overview.md)
@@ -271,8 +271,8 @@ ht-degree: 86%
    + Berechnete Metriken {#cja-calcmetrics}
       + [Überblick](../components/calc-metrics/calc-metr-overview.md)
       + Workflow bei berechneten Metriken {#cm-workflow}
-         + [Berechnete Metriken erstellen](../components/calc-metrics/cm-workflow/cm-workflow.md)
-         + [Erstellen berechneter Metriken](../components/calc-metrics/cm-workflow/cm-build-metrics.md)
+         + [Erstellen von berechneten Metriken](../components/calc-metrics/cm-workflow/cm-workflow.md)
+         + [Bilden berechneter Metriken](../components/calc-metrics/cm-workflow/cm-build-metrics.md)
          + [Metriken suchen](../components/calc-metrics/cm-workflow/cm-finding.md)
          + [Metriktyp und Attribution](../components/calc-metrics/cm-workflow/m-metric-type-alloc.md)
          + [Erstellen einer Teilnahmemetrik](../components/calc-metrics/cm-workflow/participation-metric.md)
@@ -321,9 +321,9 @@ ht-degree: 86%
    + [Datenblock erstellen](../report-builder/create-a-data-block.md)
    + [Report Builder-Hub](../report-builder/report-builder-hub.md)
    + [Datenansicht auswählen](../report-builder/select-data-view.md)
-   + [Datumsbereich auswählen](../report-builder/select-date-range.md)
+   + [Auswählen eines Datumsbereichs](../report-builder/select-date-range.md)
    + [Arbeiten mit Filtern](../report-builder/work-with-filters.md)
-   + [Dimensionen filtern](../report-builder/filter-dimensions.md)
+   + [Filtern von Dimensionen](../report-builder/filter-dimensions.md)
    + [Verwalten von Datenblöcken](../report-builder/manage-reportbuilder.md)
    + [Erstellen von Zeitplänen für Arbeitsmappen](../report-builder/schedule-reportbuilder.md)
    + [Eingeschränkte Beschriftungen](../report-builder/restricted-labels.md)
@@ -363,9 +363,10 @@ ht-degree: 86%
       + [Aufnehmen und Verwenden von Marketo Engage-Daten](../use-cases/data-ingestion/marketo.md)
       + [Aufnehmen und Verwenden von Experience Platform-Zielgruppen](../use-cases/data-ingestion/ingest-aep-segments.md)
    + Datenansichten {#data-views}
-      + [Anwendungsfälle von Datenansichten](../use-cases/data-views/data-views-usecases.md)
-      + [Verwenden von Bindungsdimensionen und Metriken](../use-cases/data-views/binding-dimensions-metrics.md)
-      + [Verwenden von Zusammenfassungsdaten](../use-cases/data-views/summary-data.md)
+      + [Anwendungsfälle von Datenansichten](/help/use-cases/data-views/data-views-usecases.md)
+      + [Verwenden von Bindungsdimensionen und Metriken](/help/use-cases/data-views/binding-dimensions-metrics.md)
+      + [Verwenden von Zusammenfassungsdaten](/help/use-cases/data-views/summary-data.md)
+      + [Anwendungsfälle für BI-Erweiterungen](/help/use-cases/data-views/bi-extension-usecases.md)
    + Datenexport {#data-export}
       + [Überblick](../use-cases/data-export/overview.md)
       + [BI-Erweiterung](../use-cases/data-export/bi-extension.md)

@@ -5,10 +5,10 @@ exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: 747e77b964006404d70b500b28ec44005d65d944
+source-git-commit: bd89162aa81648133cbf05357fb7f8911ba91002
 workflow-type: tm+mt
-source-wordcount: '1832'
-ht-degree: 99%
+source-wordcount: '1884'
+ht-degree: 97%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 99%
 
 Das Erstellen einer Datenansicht beinhaltet entweder das Erstellen von Metriken und Dimensionen aus Schemaelementen oder die Verwendung von Standardkomponenten. Die meisten Schemaelemente können je nach den Anforderungen Ihres Unternehmens entweder eine Dimension oder eine Metrik sein. Nachdem Sie ein Schemaelement in eine Datenansicht gezogen haben, werden rechts Optionen angezeigt, mit denen Sie anpassen können, wie die Dimension oder Metrik in Customer Journey Analytics funktioniert.
 
-+++ Anzeigen eines Videos zur Veranschaulichung von Datenansichten unter Customer Journey Analytics
++++ Sehen Sie sich ein Video an, in dem Datenansichten in Customer Journey Analytics veranschaulicht werden.
 
 >[!VIDEO](https://video.tv.adobe.com/v/35110/?quality=12&learn=on)
 
@@ -35,7 +35,7 @@ So erstellen oder bearbeiten Sie eine Datenansicht:
 >[!CONTEXTUALHELP]
 >id="cja_dataview_externalid"
 >title="Externe ID"
->abstract="Eine Änderung der externen ID kann sich auf die Darstellung des Namens der Datenansicht in externen Quellen, z. B. Business Intelligence-Tools, auswirken."
+>abstract="Das Ändern der externen ID kann sich darauf auswirken, wie der Name der Datenansicht in externen Quellen angezeigt wird, z. B. in Business-Intelligence-Tools."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -71,8 +71,8 @@ Stellt übergreifende Einstellungen für die Datenansicht bereit.
 >[!CONTEXTUALHELP]
 >id="cja_dataview_dataviewsinadobejourneyoptimizer"
 >title="Datenansichten in Journey Optimizer"
->abstract="Journey Optimizer muss eine Datenansicht verwenden, die mit Customer Journey Analytics konfiguriert ist.<br/>Aktivieren Sie diese Option, um diese Datenansicht als Standard für Journey Optimizer-Berichte zu nutzen."
->additional-url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/integrations/ajo#connection" text="Welche Komponenten und Datensätze werden hinzugefügt?"
+>abstract="Customer Journey Analytics muss eine Verbindung und eine Datenansicht verwenden, die mit Adobe Journey Optimizer kompatibel sind. Standardmäßig werden zu diesem Zweck automatisch eine Verbindung und eine Datenansicht erstellt.<br/>Alternativ können Sie diese Option aktivieren, um dies zur standardmäßigen Datenansicht zu machen, die in Adobe Journey Optimizer-Berichten verwendet wird. Wenn diese Option aktiviert ist, werden alle für Journey Optimizer erforderlichen Komponenten dieser Datenansicht hinzugefügt und alle erforderlichen Journey Optimizer-Datensätze werden der mit dieser Datenansicht verknüpften Verbindung hinzugefügt."
+>additional-url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/integrations/ajo#connection" text="Welche Komponenten und Datensätze hinzugefügt werden."
 
 <!-- markdownlint-enable MD034 -->
 

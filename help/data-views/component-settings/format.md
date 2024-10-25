@@ -5,10 +5,10 @@ exl-id: 5ce13fe9-29fa-474c-bae3-65f275153a59
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: a236b2126c4b998b4d97caab014556e3ee3a9e83
+source-git-commit: bd89162aa81648133cbf05357fb7f8911ba91002
 workflow-type: tm+mt
-source-wordcount: '720'
-ht-degree: 21%
+source-wordcount: '737'
+ht-degree: 22%
 
 ---
 
@@ -22,6 +22,16 @@ ht-degree: 21%
 >abstract="Legen Sie fest, wie eine Komponente in Berichten angezeigt wird."
 
 <!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_dataview_component_metric_format_currencyconversion"
+>title="Währungsumrechnung"
+>abstract="Die Währungs-Code-Dimension kann ausgewählt werden, um die Währung in einem ausgewählten Währungstyp zu konfigurieren und anzuzeigen."
+
+<!-- markdownlint-enable MD034 -->
+
 
 
 Mit &quot;Format&quot;können Sie festlegen, wie eine bestimmte Metrik bei Verwendung in Berichten angezeigt wird.
