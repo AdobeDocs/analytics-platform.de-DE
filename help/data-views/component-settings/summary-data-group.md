@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
 exl-id: c39ee568-97f6-4925-ae18-3d4a9dfdb6f5
-source-git-commit: a236b2126c4b998b4d97caab014556e3ee3a9e83
+source-git-commit: ad446f55855696cf7721f34f779883792b7958fa
 workflow-type: tm+mt
-source-wordcount: '343'
-ht-degree: 18%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -22,6 +22,16 @@ ht-degree: 18%
 >abstract="Eine Zusammenfassungsdatengruppe erstellt eine Verknüpfung zwischen allen Dimensionen in der Gruppierung und wird verwendet, um Dimensionen aus Zusammenfassungsdatensätzen mit anderen Dimensionen für Berichte zu kombinieren."
 
 <!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_dataview_component_dimension_summarydatagroup_hideinreporting"
+>title="In Berichten verbergen"
+>abstract="Wenn Sie diese Option auswählen, wird die Komponente **[!UICONTROL Ausblenden in Berichten]** für diese Dimension aktiviert und verhindert, dass die Komponente in Analysis Workspace und anderen Customer Journey Analytics-Reporting-Tools angezeigt wird."
+
+<!-- markdownlint-enable MD034 -->
+
 
 
 Eine Zusammenfassungsdatengruppe erstellt eine Verknüpfung zwischen allen Dimensionen in der Gruppierung und wird verwendet, um Dimensionen aus Zusammenfassungsdatensätzen mit anderen Dimensionen für Berichte zu kombinieren.
@@ -40,7 +50,7 @@ So erstellen Sie eine Dimensiongruppierung:
 ## Gleiche Komponenteneinstellungen
 
 Beim Gruppieren von Dimensionen müssen Sie sicherstellen, dass die Einstellungen für [!UICONTROL Unterzeichenfolge], [!UICONTROL Verhalten (Kleinbuchstaben)] und [!UICONTROL Ausschlusswerte einschließen] für die einzelnen Dimensionen, die Teil der Gruppe sind, identisch sind. Andernfalls kann jede Dimension der Gruppe vor der Gruppierung unterschiedliche Ergebnisse zurückgeben.
-Zum Beispiel:
+z. B.:
 
 1. Sie haben eine Zusammenfassungsdatengruppe für `campaign_code` (Teil der Zusammenfassungsdaten) und `tracking_code` (Teil Ihrer Ereignisdaten) erstellt.
 1. Sie haben [!UICONTROL Verhalten (Kleinbuchstaben)] auf die Dimension `campaign_code`, nicht aber auf die Dimension `tracking_code` angewendet.

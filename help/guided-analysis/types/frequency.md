@@ -5,14 +5,23 @@ feature: Adobe Product Analytics, Guided Analysis
 keywords: Produktanalysen
 exl-id: 27eaa7c7-f1e1-4cf1-9d59-67ac552eb430
 role: User
-source-git-commit: 7ccc9f28acf08fb49d86005abb7fbb648a1564ce
+source-git-commit: d492220eaf12242a870f3826b31edd3d1ea99a3b
 workflow-type: tm+mt
-source-wordcount: '647'
-ht-degree: 5%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
-# Analyse der [!UICONTROL Häufigkeit]
+# Analyse der [!UICONTROL Häufigkeit] {#frequency}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_workspace_guidedanalysis_frequency_button"
+>title="Häufigkeit"
+>abstract="Zeigen Sie die Verteilung der wiederholten Benutzeraktivitäten für bestimmte Ereignisse an."
+
+<!-- markdownlint-enable MD034 -->
 
 Die Analyse ![Häufigkeit](/help/assets/icons/Histogram.svg) **[!UICONTROL Häufigkeit]** gruppiert Ereignisdaten danach, wie oft Ereignisse in Ihrem Produkt auftreten. Die vertikale Achse dieser Analyse enthält Behälter, die die Häufigkeit des Ereignisses darstellen. Die horizontale Achse misst die Anzahl der Benutzer oder Sitzungen für jeden Behälter.
 

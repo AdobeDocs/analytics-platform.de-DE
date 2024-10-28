@@ -5,14 +5,24 @@ feature: Adobe Product Analytics, Guided Analysis
 keywords: Produktanalysen
 exl-id: 75501e77-a172-48b4-9c91-b12d39e93c37
 role: User
-source-git-commit: 7ccc9f28acf08fb49d86005abb7fbb648a1564ce
+source-git-commit: d492220eaf12242a870f3826b31edd3d1ea99a3b
 workflow-type: tm+mt
-source-wordcount: '527'
-ht-degree: 2%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
-# [!UICONTROL Konversionstrends] Analyse
+# [!UICONTROL Konversionstrends] Analyse {#conversion-trends}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_workspace_guidedanalysis_conversiontrends_button"
+>title="Konversions-Trends"
+>abstract="Verfolgen Sie ie dVeränderungen der Konversionsraten im Laufe der Zeit."
+
+<!-- markdownlint-enable MD034 -->
+
 
 Die Analyse ![Konversionstrends](/help/assets/icons/ConversionTrends.svg) **[!UICONTROL Konversionstrends]** bietet eine Trend-Visualisierung der Konversionsraten im Zeitverlauf. Die horizontale Achse ist ein Zeitintervall, während die vertikale Achse die Konversionsrate darstellt.
 

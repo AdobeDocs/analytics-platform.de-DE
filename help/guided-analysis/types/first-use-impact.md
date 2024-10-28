@@ -5,14 +5,23 @@ feature: Adobe Product Analytics, Guided Analysis
 keywords: Produktanalysen
 exl-id: 2c512184-2d79-4c41-8229-a09e440179ea
 role: User
-source-git-commit: 7ccc9f28acf08fb49d86005abb7fbb648a1564ce
+source-git-commit: d492220eaf12242a870f3826b31edd3d1ea99a3b
 workflow-type: tm+mt
-source-wordcount: '661'
-ht-degree: 4%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
-# Analyse [!UICONTROL Erstmalige Verwendung der Auswirkung]
+# Analyse [!UICONTROL Erstmalige Verwendung der Auswirkung] {#first-use-impact}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_workspace_guidedanalysis_firstuseimpact_button"
+>title="Wirkung der ersten Verwendung"
+>abstract="Messen Sie die Auswirkung der erstmaligen Verwendung von Funktionen auf Schlüsselindikatoren."
+
+<!-- markdownlint-enable MD034 -->
 
 Die Analyse ![FirstUse](/help/assets/icons/FirstUse.svg) **[!UICONTROL First Use Impact]** zeigt einen Vergleich der Leistung von Schlüsselindikatoren, bevor und nachdem ein Benutzer zum ersten Mal eine Produktfunktion verwendet hat. Die horizontale Achse dieses Berichts ist ein relatives Zeitintervall vor und nach dem Ereignis, während die vertikale Achse die gewünschten Schlüsselindikatoren misst. Ein vertikaler Balken in der Mitte des Diagramms stellt den Tag 0 für den Zeitpunkt dar, zu dem eine Funktion von einem bestimmten Benutzer zum ersten Mal verwendet wird. Da Benutzer nicht immer Funktionen am selben Tag übernehmen und Ihre Rollouts möglicherweise über mehrere Tage erfolgen können, kann Tag 0 für jeden einzelnen Benutzer etwas Anderes bedeuten.
 

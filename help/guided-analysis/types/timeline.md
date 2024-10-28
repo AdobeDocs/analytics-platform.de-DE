@@ -5,14 +5,23 @@ feature: Adobe Product Analytics, Guided Analysis
 keywords: Produktanalysen
 role: User
 exl-id: d3da9257-a133-46c8-8fac-1a33d3372bb7
-source-git-commit: aff01f4fc3520d461ca800382cc24d8d948d9cbc
+source-git-commit: d492220eaf12242a870f3826b31edd3d1ea99a3b
 workflow-type: tm+mt
-source-wordcount: '570'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
-# Analyse [!UICONTROL Timeline]
+# Analyse [!UICONTROL Timeline] {#timeline}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_workspace_guidedanalysis_timeline_button"
+>title="Timeline"
+>abstract="Beobachten Sie Sitzungsereignisse auf Benutzerebene im Zeitverlauf."
+
+<!-- markdownlint-enable MD034 -->
 
 Die Analyse ![Timeline](/help/assets/icons/Timeline.svg) **[!UICONTROL Timeline]** ermöglicht es Ihnen, Sitzungsereignisse auf Benutzerebene im Laufe der Zeit zu beobachten, um Erlebnismuster zu finden und bessere Benutzermeldungen zu erzählen. In der linken Leiste können Sie den Stream nach Eigenschaftswerten und Segmenten filtern. In der rechten Leiste können Sie aus einer zufälligen Liste von Benutzern auswählen, die den Filterkriterien entsprechen. Der mittlere Bereich zeigt den Stream für den ausgewählten Benutzer nach Sitzung an, der aus Zeitstempel, Eigenschaftswerten und Dauer besteht. Die Dauer ist für das letzte Ereignis in einer bestimmten Sitzung nicht verfügbar.
 

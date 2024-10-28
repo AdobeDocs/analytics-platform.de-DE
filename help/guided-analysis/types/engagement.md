@@ -5,14 +5,24 @@ feature: Adobe Product Analytics, Guided Analysis
 keywords: Produktanalysen
 role: User
 exl-id: 8a48ad3b-fa30-497e-8306-f8d881b1a335
-source-git-commit: 7ccc9f28acf08fb49d86005abb7fbb648a1564ce
+source-git-commit: d492220eaf12242a870f3826b31edd3d1ea99a3b
 workflow-type: tm+mt
-source-wordcount: '739'
-ht-degree: 5%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
-# Analyse [!UICONTROL Interaktion]
+# Analyse [!UICONTROL Interaktion] {#engagement}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_workspace_guidedanalysis_engagement_button"
+>title="Erweiterung"
+>abstract="Erfahren Sie mehr über Umfang und Tiefe der Funktionsinteraktion."
+
+<!-- markdownlint-enable MD034 -->
+
 
 Die Analyse ![Interaktionsdiagramm](/help/assets/icons/EngagementGraph.svg) **[!UICONTROL Interaktion]** bietet einen Einblick, wie oft eine Funktion verwendet wird und wie viele Benutzer sie verwenden. Diese Analyse funktioniert am besten, wenn mehrere Funktionen miteinander verglichen werden. Sie hilft bei Investitionsentscheidungen, indem sie verstehen, was Ihr Kern, Ihre Macht, Ihre einmaligen und fragwürdigen Merkmale sind.
 
