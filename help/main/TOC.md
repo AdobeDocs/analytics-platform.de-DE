@@ -9,10 +9,10 @@ index: true
 user-guide-title: Handbuch zu Customer Journey Analytics
 user-guide-description: Hier erhalten Sie Informationen zu Adobe Customer Journey Analytics und Erläuterungen zur Nutzung von Analysis Workspace mit Daten aus Experience Platform.
 breadcrumb-title: Handbuch zu Customer Journey Analytics
-source-git-commit: 925eae6eb1b23e761432081f0dbcdcada9ce9be4
+source-git-commit: 711e92db7084592dc562eda3d0dcf33bcb4a62d4
 workflow-type: tm+mt
-source-wordcount: '942'
-ht-degree: 92%
+source-wordcount: '975'
+ht-degree: 91%
 
 ---
 
@@ -45,6 +45,16 @@ ht-degree: 92%
       + [Auswählen des Aktualisierungspfads](/help/getting-started/cja-upgrade/cja-upgrade-path.md)
       + [Senden von Daten an Platform](/help/getting-started/cja-upgrade/cja-upgrade-send-to-platform.md)
       + [Beibehalten historischer Daten](/help/getting-started/cja-upgrade/cja-upgrade-historical-data.md)
+      + [Empfohlener Prozess](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md)
+      + [Schema architektur](/help/getting-started/cja-upgrade/cja-upgrade-schema-architect.md)
+      + [Schema erstellen](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md)
+      + [Vorhandenes Schema verwenden](/help/getting-started/cja-upgrade/cja-upgrade-schema-existing.md)
+      + [Erstellen eines Datensatzes](/help/getting-started/cja-upgrade/cja-upgrade-dataset.md)
+      + [Erstellen eines Datenspeichers](/help/getting-started/cja-upgrade/cja-upgrade-datastream.md)
+      + [Hinzufügen von Platform als Dienst](/help/getting-started/cja-upgrade/cja-upgrade-datastream-addplatform.md)
+      + [Erstellen einer Verbindung](/help/getting-started/cja-upgrade/cja-upgrade-connection.md)
+      + [Erstellen einer Datenansicht](/help/getting-started/cja-upgrade/cja-upgrade-dataview.md)
+      + [Datenfluss überprüfen](/help/getting-started/cja-upgrade/cja-upgrade-validate.md)
    + Vergleich mit Adobe Analytics {#cja-aa-comparison}
       + [Überblick](../getting-started/aa-vs-cja/overview.md)
       + [Verwenden von Adobe Analytics-Daten](../getting-started/aa-vs-cja/aa-data-in-cja.md)
