@@ -5,7 +5,7 @@ exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: bab067f50e04b7eb1a211d8767cd2cd7a2acd9c5
+source-git-commit: 5aab46fbca8bf9638e238caa9dab34e391118139
 workflow-type: tm+mt
 source-wordcount: '1884'
 ht-degree: 97%
@@ -30,16 +30,6 @@ So erstellen oder bearbeiten Sie eine Datenansicht:
 
 ## Konfigurieren {#configure}
 
-<!-- markdownlint-disable MD034 -->
-
->[!CONTEXTUALHELP]
->id="cja_dataview_externalid"
->title="Externe ID"
->abstract="Das Ändern der externen ID kann sich darauf auswirken, wie der Name der Datenansicht in externen Quellen angezeigt wird, z. B. in Business-Intelligence-Tools."
-
-<!-- markdownlint-enable MD034 -->
-
-
 So konfigurieren Sie eine neue oder vorhandene Datenansicht:
 
 1. Wählen Sie die Registerkarte **[!UICONTROL Konfigurieren]** aus (sofern noch nicht aktiv).
@@ -49,7 +39,16 @@ So konfigurieren Sie eine neue oder vorhandene Datenansicht:
 1. Wählen Sie **[!UICONTROL Speichern und fortfahren]** aus, um mit der Konfiguration der neuen oder vorhandenen Datenansicht fortzufahren. Wählen Sie **[!UICONTROL Speichern]** aus, um die Konfiguration für die vorhandene Datenansicht zu speichern.
 
 
-### Einstellungen
+### Einstellungen {#settings}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_dataview_externalid"
+>title="Externe ID"
+>abstract="Das Ändern der externen ID kann sich darauf auswirken, wie der Name der Datenansicht in externen Quellen angezeigt wird, z. B. in Business-Intelligence-Tools."
+
+<!-- markdownlint-enable MD034 -->
 
 Stellt übergreifende Einstellungen für die Datenansicht bereit.
 

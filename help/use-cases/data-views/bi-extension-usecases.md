@@ -6,10 +6,10 @@ feature: Data Views
 role: User
 hide: true
 hidefromtoc: true
-source-git-commit: b111a75041743e14a71d0df56b04c85ed4bae7b8
+source-git-commit: d65171873f68835de0628b95158f01713eaacb6b
 workflow-type: tm+mt
-source-wordcount: '1521'
-ht-degree: 4%
+source-wordcount: '2575'
+ht-degree: 1%
 
 ---
 
@@ -38,9 +38,9 @@ Die folgenden Anwendungsfälle werden dokumentiert:
 Für jeden Anwendungsfall sind Anweisungen für die folgenden BI-Tools im Abschnitt **Details** verfügbar:
 
 * Power BI Desktop (Version 2.136.1478.0 64-Bit (September 2024))
-* Tableau-Desktop (Version 2022.3.5 (20223.23.0310) 64-Bit)
+* Tableau-Desktop (Version 2024.1.5 (20241.24.0705.0334) 64-Bit)
 
-Die Anweisungen beziehen sich auf eine Beispieldatenansicht mit dem Namen **[!UICONTROL public.ares_sql_validation]**, zwei Beispieldimensionen (**[!UICONTROL Produktname]** und **[!UICONTROL Produktkategorie]**) und zwei Beispielmetriken (**[!UICONTROL Einkäufe]** und **[!UICONTROL Kaufumsatz]**). Wenn Sie die Anweisungen durchgehen, ändern Sie diese Beispielobjekte gegebenenfalls für Ihre spezifische Umgebung.
+Die Anweisungen beziehen sich auf eine Beispieldatenansicht mit dem Namen **[!UICONTROL public.cc_data_view]**, zwei Beispieldimensionen (**[!UICONTROL Produktname]** und **[!UICONTROL Produktkategorie]**) und zwei Beispielmetriken (**[!UICONTROL Einkäufe]** und **[!UICONTROL Kaufumsatz]**). Wenn Sie die Anweisungen durchgehen, ändern Sie diese Beispielobjekte gegebenenfalls für Ihre spezifische Umgebung.
 
 
 ## Datenansichten verbinden und auflisten
@@ -81,13 +81,13 @@ In diesem Anwendungsbeispiel wird die Verbindung vom BI-Tool zum Customer Journe
    1. Wählen Sie **[!UICONTROL Verbinden]** aus.
 1. Im Dialogfeld **[!UICONTROL Navigator]** werden die Datenansichten abgerufen. Dieser Abruf kann einige Zeit in Anspruch nehmen. Nach dem Abrufen:
    ![Power BI Desktop Server-Ladedaten](assets/powerbi-navigator-load.png)
-   1. Wählen Sie **[!UICONTROL public.ares_sql_validation]** aus der Liste im linken Bereich.
+   1. Wählen Sie **[!UICONTROL public.cc_data_view]** aus der Liste im linken Bereich aus.
    1. Wählen Sie **[!UICONTROL laden]** aus.
 1. Nach einiger Zeit werden die verfügbaren Metriken und Dimensionen im Bereich **[!UICONTROL Daten]** angezeigt.
    ![Laden der Power BI Desktop Server-Daten](assets/powerbi-navigator-loaded.png)
 
 
->[!TAB Tableau]
+>[!TAB Tableau-Desktop]
 
 1. Greifen Sie über die Experience Platform Query Service-Benutzeroberfläche auf die erforderlichen Anmeldeinformationen und Parameter zu.
 
@@ -118,8 +118,8 @@ In diesem Anwendungsbeispiel wird die Verbindung vom BI-Tool zum Customer Journe
    * Der Name der Datenbank unter **[!UICONTROL Datenbank]**.
    * Eine Liste von Tabellen unter **[!UICONTROL Tabelle]**.
      ![Tableau verbunden](assets/tableau-connected.png)
-   1. Ziehen Sie den Eintrag **[!UICONTROL ares_sql_validation]** und legen Sie den Eintrag in der Hauptansicht ab, in der **[!UICONTROL Tabellen hierher ziehen]** steht.
-1. Im Hauptfenster werden jetzt Details zur Datenansicht **[!UICONTROL ares_sql_validation]** angezeigt.
+   1. Ziehen Sie den Eintrag **[!UICONTROL cc_data_view]** und legen Sie den Eintrag in der Hauptansicht ab, in der **[!UICONTROL Tabellen hierher ziehen]** steht.
+1. Im Hauptfenster werden jetzt Details zur Datenansicht **[!UICONTROL cc_data_view]** angezeigt.
    ![Tableau verbunden](assets/tableau-validation.png)
 
 >[!ENDTABS]
@@ -132,6 +132,11 @@ In diesem Anwendungsbeispiel wird die Verbindung vom BI-Tool zum Customer Journe
 In diesem Anwendungsfall möchten Sie eine Tabelle und eine einfache Linienvisualisierung anzeigen, die einen täglichen Trend der Vorkommen vom 1. Januar 2023 bis zum 31. Januar 2023 anzeigt.
 
 +++ Details
+
+>[!PREREQUISITES]
+>
+>Stellen Sie sicher, dass Sie eine [erfolgreiche Verbindung validiert haben und Datenansichten](#connect-and-list-data-views) für das BI-Tool auflisten können, für das Sie diesen Anwendungsfall ausprobieren möchten.
+>
 
 >[!BEGINTABS]
 
@@ -169,7 +174,7 @@ In diesem Anwendungsfall möchten Sie eine Tabelle und eine einfache Linienvisua
 
    ![Power BI-Desktop-Nutzungsszenario 2 Endgültige Trend-Visualisierung pro Tag](assets/uc2-pbi-filter-final.png)
 
->[!TAB Tableau]
+>[!TAB Tableau-Desktop]
 
 1. Wählen Sie unten die Registerkarte **[!UICONTROL Blatt 1]** aus, um von **[!UICONTROL Datenquelle]** zu wechseln. In der Ansicht **[!UICONTROL Tabellenblatt 1]**:
    1. Ziehen Sie den Eintrag **[!UICONTROL Daterange]** aus der Liste **[!UICONTROL Tabellen]** in den Bereich **[!UICONTROL Daten]** und legen Sie den Eintrag in die Regale **[!UICONTROL Filter]**.
@@ -196,11 +201,11 @@ In diesem Anwendungsfall möchten Sie eine Tabelle und eine einfache Linienvisua
    1. Ziehen Sie **[!UICONTROL TAG(Daterangeday)]** aus **[!UICONTROL Spalten]** in **[!UICONTROL Zeilen]**.
    1. Ändern Sie **[!UICONTROL Standard]** in **[!UICONTROL Gesamte Ansicht]** aus dem Dropdown-Menü in der Symbolleiste.
 
-      Ihre Ansicht für **[!UICONTROL Tag]** sollte wie unten dargestellt aussehen.
+      Ihre Ansicht **[!UICONTROL Daten]** sollte wie unten dargestellt aussehen.
 
       ![Tableau-Desktop-Daten](assets/uc2-tableau-data.png)
 
-1. Wählen Sie die Registerkarte **[!UICONTROL Dashboard]** aus, um eine neue Ansicht vom Typ **[!UICONTROL Dashboard 1]** zu erstellen. In der Ansicht **[!UICONTROL Dashboard 1]** :
+1. Wählen Sie die Registerkarte **[!UICONTROL Neues Dashboard]** (unten) aus, um eine neue Ansicht vom Typ **[!UICONTROL Dashboard 1]** zu erstellen. In der Ansicht **[!UICONTROL Dashboard 1]** :
    1. Ziehen Sie das Blatt **[!UICONTROL Diagramm]** aus dem Regal **[!UICONTROL Tabellen]** und legen Sie es in die Ansicht **[!UICONTROL Dashboard 1]**, in der *Tabellen hier ablegen* gelesen wird.
    1. Ziehen Sie das Blatt **[!UICONTROL Daten]** aus dem Regal **[!UICONTROL Tabellen]** unter das Blatt **[!UICONTROL Diagramm]** und legen Sie es in die Ansicht **[!UICONTROL Dashboard 1]**.
    1. Wählen Sie das Blatt **[!UICONTROL Daten]** in der Ansicht aus und ändern Sie **[!UICONTROL Gesamte Ansicht]** in **[!UICONTROL Breite korrigieren]**.
@@ -209,7 +214,6 @@ In diesem Anwendungsfall möchten Sie eine Tabelle und eine einfache Linienvisua
 
       ![Tableau-Desktop-Dashboard 1](assets/uc2-tableau-dashboard.png)
 
-
 >[!ENDTABS]
 
 +++
@@ -217,19 +221,61 @@ In diesem Anwendungsfall möchten Sie eine Tabelle und eine einfache Linienvisua
 
 ## Stündlicher Trend
 
-Zusammenfassung des Anwendungsfalls
+In diesem Anwendungsfall möchten Sie eine Tabelle und eine einfache Linienvisualisierung anzeigen, die einen stündlichen Trend der Vorkommen für den 1. Januar 2023 anzeigt.
 
 +++ Details
+
+>[!PREREQUISITES]
+>
+>Stellen Sie sicher, dass Sie eine [erfolgreiche Verbindung validiert haben und Datenansichten](#connect-and-list-data-views) für das BI-Tool auflisten können, für das Sie diesen Anwendungsfall ausprobieren möchten.
+>
 
 >[!BEGINTABS]
 
 >[!TAB Power BI Desktop]
 
-Schritte
+![Alert](/help/assets/icons/Alert.svg) Power BI versteht **nicht**, wie Datumszeitspalten verarbeitet werden. Daher werden Dimensionen wie **[!UICONTROL daterangehour]** und **[!UICONTROL daterangeminute]** nicht unterstützt.
 
->[!TAB Tableau]
+>[!TAB Tableau-Desktop]
 
-Schritte
+1. Wählen Sie unten die Registerkarte **[!UICONTROL Blatt 1]** aus, um von **[!UICONTROL Datenquelle]** zu wechseln. In der Ansicht **[!UICONTROL Tabellenblatt 1]**:
+   1. Ziehen Sie den Eintrag **[!UICONTROL Daterange]** aus der Liste **[!UICONTROL Tabellen]** in den Bereich **[!UICONTROL Daten]** und legen Sie den Eintrag in die Regale **[!UICONTROL Filter]**.
+   1. Wählen Sie im Dialogfeld **[!UICONTROL Filterfeld \[Datumsbereich\]]** die Option **[!UICONTROL Datumsbereich]** aus und wählen Sie **[!UICONTROL Weiter >]**.
+   1. Wählen Sie im Dialogfeld **[!UICONTROL Filter \[Datumsbereich]]** die Option **[!UICONTROL Datumsbereich]** aus und geben Sie einen Zeitraum von `01/01/2023` - `02/01/2023` an.
+
+      ![Tableau-Desktop-Filter](assets/uc3-tableau-filter.png)
+
+   1. Ziehen Sie **[!UICONTROL Daterangehour]** aus der Liste **[!UICONTROL Tabellen]** in den Bereich **[!UICONTROL Daten]** und legen Sie den Eintrag im Feld neben **[!UICONTROL Spalten]** ab.
+      * Wählen Sie **[!UICONTROL Mehr]** > **[!UICONTROL Stunden]** aus dem Dropdown-Menü **[!UICONTROL Daterangeday]** aus, damit der Wert auf **[!UICONTROL STUNDE(Daterangeday)]** aktualisiert wird.
+   1. Ziehen Sie **[!UICONTROL Vorfälle]** aus der Liste **[!UICONTROL Tabellen (*Messnamen*)]** in den Bereich **[!UICONTROL Daten]** und legen Sie den Eintrag im Feld neben **[!UICONTROL Zeilen]** ab.
+      * Die Werte werden automatisch in **[!UICONTROL SUM(Vorfälle)]** konvertiert.
+   1. Ändern Sie **[!UICONTROL Standard]** in **[!UICONTROL Gesamte Ansicht]** aus dem Dropdown-Menü in der Symbolleiste.
+
+      Ihre Tabellenansicht 1 sollte wie unten dargestellt aussehen.
+
+      ![Tableau-Desktop-Diagramm](assets/uc3-tableau-graph.png)
+
+1. Wählen Sie im Kontextmenü der Registerkarte **[!UICONTROL Blatt 1]** die Option **[!UICONTROL Duplizieren]** aus, um ein zweites Blatt zu erstellen.
+1. Wählen Sie im Kontextmenü der Registerkarte **[!UICONTROL Blatt 1]** die Option **[!UICONTROL Umbenennen]** aus, um das Blatt in `Graph` umzubenennen.
+1. Wählen Sie im Kontextmenü der Registerkarte **[!UICONTROL Blatt 1 (2)]** die Option **[!UICONTROL Umbenennen]** aus, um das Blatt in `Data` umzubenennen.
+1. Stellen Sie sicher, dass das Blatt **[!UICONTROL Daten]** ausgewählt ist. In der Datenansicht:
+   1. Wählen Sie oben rechts **[!UICONTROL Einblenden]** und dann **[!UICONTROL Texttabelle]** (obere linke Visualisierung) aus, um den Inhalt der Datenansicht in eine Tabelle zu ändern.
+   1. Ziehen Sie **[!UICONTROL STUNDE(Daterangeday)]** aus **[!UICONTROL Spalten]** in **[!UICONTROL Zeilen]**.
+   1. Ändern Sie **[!UICONTROL Standard]** in **[!UICONTROL Gesamte Ansicht]** aus dem Dropdown-Menü in der Symbolleiste.
+
+      Ihre Ansicht **[!UICONTROL Daten]** sollte wie unten dargestellt aussehen.
+
+      ![Tableau-Desktop-Daten](assets/uc3-tableau-data.png)
+
+1. Wählen Sie die Registerkarte **[!UICONTROL Neues Dashboard]** (unten) aus, um eine neue Ansicht vom Typ **[!UICONTROL Dashboard 1]** zu erstellen. In der Ansicht **[!UICONTROL Dashboard 1]** :
+   1. Ziehen Sie das Blatt **[!UICONTROL Diagramm]** aus dem Regal **[!UICONTROL Tabellen]** und legen Sie es in die Ansicht **[!UICONTROL Dashboard 1]**, in der *Tabellen hier ablegen* gelesen wird.
+   1. Ziehen Sie das Blatt **[!UICONTROL Daten]** aus dem Regal **[!UICONTROL Tabellen]** unter das Blatt **[!UICONTROL Diagramm]** und legen Sie es in die Ansicht **[!UICONTROL Dashboard 1]**.
+   1. Wählen Sie das Blatt **[!UICONTROL Daten]** in der Ansicht aus und ändern Sie **[!UICONTROL Gesamte Ansicht]** in **[!UICONTROL Breite korrigieren]**.
+
+      Ihre Ansicht **[!UICONTROL Dashboard 1]** sollte wie unten dargestellt aussehen.
+
+      ![Tableau-Desktop-Dashboard 1](assets/uc3-tableau-dashboard.png)
+
 
 >[!ENDTABS]
 
@@ -238,19 +284,90 @@ Schritte
 
 ## Monatlicher Trend
 
-Zusammenfassung des Anwendungsfalls
+In diesem Anwendungsfall möchten Sie eine Tabelle und eine einfache Linienvisualisierung anzeigen, die einen monatlichen Trend der Vorkommen für den 1. Januar 2023 bis zum 1. Januar 2024 anzeigt.
 
 +++ Details
+
+>[!PREREQUISITES]
+>
+>Stellen Sie sicher, dass Sie eine [erfolgreiche Verbindung validiert haben und Datenansichten](#connect-and-list-data-views) für das BI-Tool auflisten können, für das Sie diesen Anwendungsfall ausprobieren möchten.
+>
 
 >[!BEGINTABS]
 
 >[!TAB Power BI Desktop]
 
-Schritte
+1. Im Bereich **[!UICONTROL Daten]** :
+   1. Wählen Sie die Dimension **[!UICONTROL daterangemonth]** aus.
+   1. Wählen Sie die Metrik **[!UICONTROL Vorkommen]** aus.
 
->[!TAB Tableau]
+   Es wird eine Tabelle mit den Vorkommen für den aktuellen Monat angezeigt. Vergrößern Sie die Tabellenvisualisierung, um eine bessere Sichtbarkeit zu erzielen.
 
-Schritte
+1. Im Bereich **[!UICONTROL Filter]** :
+
+   1. Wählen Sie den Wert **[!UICONTROL daterangemonth is (All)]** aus **[!UICONTROL Filtern für diese visuelle Anzeige]** aus.
+   1. Wählen Sie **[!UICONTROL Erweiterte Filterung]** als **[!UICONTROL Filtertyp]** aus.
+   1. Definieren Sie den Filter auf **[!UICONTROL Elemente anzeigen , wenn der Wert]** **[!UICONTROL auf oder nach]** `1/1/2023` **[!UICONTROL und]** **[!UICONTROL vor]** `1/1/2024.` liegt. Mit dem Kalendersymbol können Sie Datumsangaben auswählen.
+   1. Wählen Sie **[!UICONTROL Filter anwenden]**.
+
+   Die Tabelle wird mit dem angewendeten Filter **[!UICONTROL daterangeday]** aktualisiert.
+
+1. Im Bereich **[!UICONTROL Visualisierungen]** :
+
+   1. Wählen Sie die Visualisierung **[!UICONTROL Liniendiagramm]** aus.
+
+   Eine Liniendiagrammvisualisierung ersetzt die Tabelle, wobei dieselben Daten wie die Tabelle verwendet werden.
+
+   ![Power BI Desktop-Anwendungsfall 2 Datumsbereichfilter](assets/uc4-pbi-filter-daterange.png)
+
+1. In der Liniendiagrammvisualisierung:
+
+   1. Wählen Sie ![Mehr](/help/assets/icons/More.svg) aus.
+   1. Wählen Sie im Kontextmenü **[!UICONTROL Als Tabelle anzeigen]** aus.
+
+   Die Hauptansicht wird aktualisiert und zeigt sowohl eine Linienvisualisierung als auch eine Tabelle an.
+
+   ![Power BI-Desktop-Nutzungsszenario 2 Endgültige Trend-Visualisierung pro Tag](assets/uc4-pbi-filter-final.png)
+
+>[!TAB Tableau-Desktop]
+
+1. Wählen Sie unten die Registerkarte **[!UICONTROL Blatt 1]** aus, um von **[!UICONTROL Datenquelle]** zu wechseln. In der Ansicht **[!UICONTROL Tabellenblatt 1]**:
+   1. Ziehen Sie den Eintrag **[!UICONTROL Daterange]** aus der Liste **[!UICONTROL Tabellen]** in den Bereich **[!UICONTROL Daten]** und legen Sie den Eintrag in die Regale **[!UICONTROL Filter]**.
+   1. Wählen Sie im Dialogfeld **[!UICONTROL Filterfeld \[Datumsbereich\]]** die Option **[!UICONTROL Datumsbereich]** aus und wählen Sie **[!UICONTROL Weiter >]**.
+   1. Wählen Sie im Dialogfeld **[!UICONTROL Filter \[Datumsbereich]]** die Option **[!UICONTROL Datumsbereich]** aus und geben Sie einen Zeitraum von `01/01/2023` - `01/01/2024` an.
+
+      ![Tableau-Desktop-Filter](assets/uc4-tableau-filter.png)
+
+   1. Ziehen Sie **[!UICONTROL Daterangeday]** aus der Liste **[!UICONTROL Tabellen]** in den Bereich **[!UICONTROL Daten]** und legen Sie den Eintrag im Feld neben **[!UICONTROL Spalten]** ab.
+      * Wählen Sie **[!UICONTROL MONTH]** aus dem Dropdown-Menü **[!UICONTROL Daterangeday]** aus, damit der Wert auf **[!UICONTROL MONTH(Daterangeday)]** aktualisiert wird.
+   1. Ziehen Sie **[!UICONTROL Vorfälle]** aus der Liste **[!UICONTROL Tabellen (*Messnamen*)]** in den Bereich **[!UICONTROL Daten]** und legen Sie den Eintrag im Feld neben **[!UICONTROL Zeilen]** ab.
+      * Die Werte werden automatisch in **[!UICONTROL SUM(Vorfälle)]** konvertiert.
+   1. Ändern Sie **[!UICONTROL Standard]** in **[!UICONTROL Gesamte Ansicht]** aus dem Dropdown-Menü in der Symbolleiste.
+
+      Ihre Tabellenansicht 1 sollte wie unten dargestellt aussehen.
+
+      ![Tableau-Desktop-Diagramm](assets/uc4-tableau-graph.png)
+
+1. Wählen Sie im Kontextmenü der Registerkarte **[!UICONTROL Blatt 1]** die Option **[!UICONTROL Duplizieren]** aus, um ein zweites Blatt zu erstellen.
+1. Wählen Sie im Kontextmenü der Registerkarte **[!UICONTROL Blatt 1]** die Option **[!UICONTROL Umbenennen]** aus, um das Blatt in `Graph` umzubenennen.
+1. Wählen Sie im Kontextmenü der Registerkarte **[!UICONTROL Blatt 1 (2)]** die Option **[!UICONTROL Umbenennen]** aus, um das Blatt in `Data` umzubenennen.
+1. Stellen Sie sicher, dass das Blatt **[!UICONTROL Daten]** ausgewählt ist. In der Datenansicht:
+   1. Wählen Sie oben rechts **[!UICONTROL Einblenden]** und dann **[!UICONTROL Texttabelle]** (obere linke Visualisierung) aus, um den Inhalt der Datenansicht in eine Tabelle zu ändern.
+   1. Ziehen Sie **[!UICONTROL MONTH(Daterangeday)]** aus **[!UICONTROL Spalten]** in **[!UICONTROL Zeilen]**.
+   1. Ändern Sie **[!UICONTROL Standard]** in **[!UICONTROL Gesamte Ansicht]** aus dem Dropdown-Menü in der Symbolleiste.
+
+      Ihre Ansicht **[!UICONTROL Daten]** sollte wie unten dargestellt aussehen.
+
+      ![Tableau-Desktop-Daten](assets/uc4-tableau-data.png)
+
+1. Wählen Sie die Registerkarte **[!UICONTROL Neues Dashboard]** (unten) aus, um eine neue Ansicht vom Typ **[!UICONTROL Dashboard 1]** zu erstellen. In der Ansicht **[!UICONTROL Dashboard 1]** :
+   1. Ziehen Sie das Blatt **[!UICONTROL Diagramm]** aus dem Regal **[!UICONTROL Tabellen]** und legen Sie es in die Ansicht **[!UICONTROL Dashboard 1]**, in der *Tabellen hier ablegen* gelesen wird.
+   1. Ziehen Sie das Blatt **[!UICONTROL Daten]** aus dem Regal **[!UICONTROL Tabellen]** unter das Blatt **[!UICONTROL Diagramm]** und legen Sie es in die Ansicht **[!UICONTROL Dashboard 1]**.
+   1. Wählen Sie das Blatt **[!UICONTROL Daten]** in der Ansicht aus und ändern Sie **[!UICONTROL Gesamte Ansicht]** in **[!UICONTROL Breite korrigieren]**.
+
+      Ihre Ansicht **[!UICONTROL Dashboard 1]** sollte wie unten dargestellt aussehen.
+
+      ![Tableau-Desktop-Dashboard 1](assets/uc4-tableau-dashboard.png)
 
 >[!ENDTABS]
 
@@ -263,13 +380,18 @@ Zusammenfassung des Anwendungsfalls
 
 +++ Details
 
+>[!PREREQUISITES]
+>
+>Stellen Sie sicher, dass Sie eine [erfolgreiche Verbindung validiert haben und Datenansichten](#connect-and-list-data-views) für das BI-Tool auflisten können, für das Sie diesen Anwendungsfall ausprobieren möchten.
+>
+
 >[!BEGINTABS]
 
 >[!TAB Power BI Desktop]
 
 Schritte
 
->[!TAB Tableau]
+>[!TAB Tableau-Desktop]
 
 Schritte
 
@@ -290,7 +412,7 @@ Zusammenfassung des Anwendungsfalls
 
 Schritte
 
->[!TAB Tableau]
+>[!TAB Tableau-Desktop]
 
 Schritte
 
@@ -311,7 +433,7 @@ Zusammenfassung des Anwendungsfalls
 
 Schritte
 
->[!TAB Tableau]
+>[!TAB Tableau-Desktop]
 
 Schritte
 
@@ -333,7 +455,7 @@ Zusammenfassung des Anwendungsfalls
 
 Schritte
 
->[!TAB Tableau]
+>[!TAB Tableau-Desktop]
 
 Schritte
 
@@ -355,7 +477,7 @@ Zusammenfassung des Anwendungsfalls
 
 Schritte
 
->[!TAB Tableau]
+>[!TAB Tableau-Desktop]
 
 Schritte
 
@@ -377,7 +499,7 @@ Zusammenfassung des Anwendungsfalls
 
 Schritte
 
->[!TAB Tableau]
+>[!TAB Tableau-Desktop]
 
 Schritte
 
@@ -399,7 +521,7 @@ Zusammenfassung des Anwendungsfalls
 
 Schritte
 
->[!TAB Tableau]
+>[!TAB Tableau-Desktop]
 
 Schritte
 
@@ -421,7 +543,7 @@ Zusammenfassung des Anwendungsfalls
 
 Schritte
 
->[!TAB Tableau]
+>[!TAB Tableau-Desktop]
 
 Schritte
 
@@ -443,7 +565,7 @@ Zusammenfassung des Anwendungsfalls
 
 Schritte
 
->[!TAB Tableau]
+>[!TAB Tableau-Desktop]
 
 Schritte
 
@@ -465,7 +587,7 @@ Zusammenfassung des Anwendungsfalls
 
 Schritte
 
->[!TAB Tableau]
+>[!TAB Tableau-Desktop]
 
 Schritte
 
@@ -487,7 +609,7 @@ Zusammenfassung des Anwendungsfalls
 
 Schritte
 
->[!TAB Tableau]
+>[!TAB Tableau-Desktop]
 
 Schritte
 

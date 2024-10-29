@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Derived Fields
 exl-id: bcd172b2-cd13-421a-92c6-e8c53fa95936
 role: Admin
-source-git-commit: a236b2126c4b998b4d97caab014556e3ee3a9e83
+source-git-commit: d65171873f68835de0628b95158f01713eaacb6b
 workflow-type: tm+mt
 source-wordcount: '8842'
 ht-degree: 17%
@@ -889,7 +889,7 @@ Verhindert die mehrfache Zählung eines Werts.
 
 | Eingabedatentyp | Eingabe | Einbezogene Operatoren | Einschränkungen | Ausgabe |
 |---|---|---|---|---|
-| <ul><li>Zeichenfolge</li><li>Numerisch</li></ul> | <ul><li>[!UICONTROL Wert]:<ul><li>Regeln</li><li>Standardfelder</li><li>Felder</li><li>Zeichenfolge</li></ul></li><li>[!UICONTROL Umfang]:<ul><li>Benutzer</li><li>Sitzung</li></ul></li><li>[!UICONTROL Deduplizierungs-ID]:<ul><li>Regeln</li><li>Standardfelder</li><li>Felder</li><li>Zeichenfolge</li></ul><li>[!UICONTROL Wert, der beibehalten werden soll]:<ul><li>Erste Instanz beibehalten</li><li>Letzte Instanz beibehalten</li></ul></li></ul> | <p>Nicht angegeben</p> | <p>5 Funktionen pro abgeleitetem Feld</p> | <p>Neues abgeleitetes Feld</p> |
+| <ul><li>Zeichenfolge</li><li>Numerisch</li></ul> | <ul><li>[!UICONTROL Wert]:<ul><li>Regeln</li><li>Standardfelder</li><li>Felder</li><li>Zeichenfolge</li></ul></li><li>[!UICONTROL Umfang]:<ul><li>Person</li><li>Sitzung</li></ul></li><li>[!UICONTROL Deduplizierungs-ID]:<ul><li>Regeln</li><li>Standardfelder</li><li>Felder</li><li>Zeichenfolge</li></ul><li>[!UICONTROL Wert, der beibehalten werden soll]:<ul><li>Erste Instanz beibehalten</li><li>Letzte Instanz beibehalten</li></ul></li></ul> | <p>Nicht angegeben</p> | <p>5 Funktionen pro abgeleitetem Feld</p> | <p>Neues abgeleitetes Feld</p> |
 
 {style="table-layout:auto"}
 
@@ -1241,7 +1241,7 @@ Beim Arbeiten mit statischen Zahlen in der Funktion [!UICONTROL MATH] sind einig
 
 - Statische Werte müssen mit einem Feld verknüpft werden. Beispielsweise wird die Verwendung der Funktion [!UICONTROL MATH] nur mit statischen Feldern nicht unterstützt.
 - Sie können den Anheben auf den Netzbetreiber (`ˆ`) nicht für einen statischen Wert verwenden.
-- Wenn Sie mehrere statische Werte in einer Formel verwenden, sollten diese statischen Werte in Klammern gesetzt werden, damit die Formel gültig ist. Zum Beispiel:
+- Wenn Sie mehrere statische Werte in einer Formel verwenden, sollten diese statischen Werte in Klammern gesetzt werden, damit die Formel gültig ist. z. B.:
 
    - Diese Formel gibt einen Fehler zurück.
      ![Math More Info 4](assets/math-more-info-4.png)
@@ -1352,7 +1352,7 @@ Nimmt ein Feld als Eingabe und löst den nächsten oder vorherigen Wert für die
 
 | Eingabedatentyp | Eingabe | Einbezogene Operatoren | Limit | Ausgabe |
 |---|---|---|---|---|
-| <ul><li>Zeichenfolge</li><li>Numerisch</li><li>Datum</li></ul> | <ul><li>[!UICONTROL Field]:</li><ul><li>Regeln</li><li>Standardfelder</li><li>Felder</li></ul><li>[!UICONTROL Methode]:<ul><li>Vorheriger Wert</li><li>Nächster Wert</li></ul></li><li>[!UICONTROL Umfang]:<ul><li>Benutzer</li><li>Sitzung</li></ul></li><li>[!UICONTROL Index]:<ul><li>Numerisch</li></ul><li>[!UICONTROL Wiederholungen einschließen]:<ul><li>Boolesch</li></ul></li></ul> | <p>Nicht angegeben</p> | <p>3 Funktionen pro abgeleitetem Feld</p> | <p>Neues abgeleitetes Feld</p> |
+| <ul><li>Zeichenfolge</li><li>Numerisch</li><li>Datum</li></ul> | <ul><li>[!UICONTROL Field]:</li><ul><li>Regeln</li><li>Standardfelder</li><li>Felder</li></ul><li>[!UICONTROL Methode]:<ul><li>Vorheriger Wert</li><li>Nächster Wert</li></ul></li><li>[!UICONTROL Umfang]:<ul><li>Person</li><li>Sitzung</li></ul></li><li>[!UICONTROL Index]:<ul><li>Numerisch</li></ul><li>[!UICONTROL Wiederholungen einschließen]:<ul><li>Boolesch</li></ul></li></ul> | <p>Nicht angegeben</p> | <p>3 Funktionen pro abgeleitetem Feld</p> | <p>Neues abgeleitetes Feld</p> |
 
 {style="table-layout:auto"}
 
@@ -1643,7 +1643,7 @@ Wendet Aggregatfunktionen auf Metriken oder Dimensionen auf Ereignis-, Sitzungs-
 
 | Eingabedatentyp | Eingabe | Einbezogene Operatoren | Limit | Ausgabe |
 |---|---|---|---|---|
-| <ul><li>Zeichenfolge</li><li>Numerisch</li><li>Datum</li></ul> | <ul><li>Wert<ul><li>Regeln</li><li>Standardfelder</li><li>Felder</li></ul></li><li>Zusammenfassen von Methoden</li><li>Umfang<ul><li>Ereignis</li><li>Sitzung</li><li>Benutzer</li></ul></li></ul> | <ul><li>Numerisch<ul><li>MAX - gibt den höchsten Wert aus einem Wertesatz zurück</li><li>MIN - gibt den kleinsten Wert aus einem Satz von Werten zurück</li><li>MEDIAN - gibt Median für einen Satz von Werten zurück</li><li>MEAN - gibt den Durchschnitt für einen Satz von Werten zurück</li><li>SUM - gibt die Summe für einen Satz von Werten zurück</li><li>COUNT - gibt die Anzahl der empfangenen Werte zurück</li><li>DISTINCT - gibt Satz unterschiedlicher Werte zurück</li></ul></li><li>Zeichenfolgen<ul><li>DISTINCT - gibt Satz unterschiedlicher Werte zurück</li><li>COUNT DISTINCT - gibt die Anzahl unterschiedlicher Werte zurück</li><li>MOST COMMON - gibt den am häufigsten empfangenen Zeichenfolgenwert zurück</li><li>LEAST COMMON - gibt den am häufigsten empfangenen Zeichenfolgenwert zurück</li><li>FIRST - Der erste empfangene Wert. Gilt nur für die Sitzungs- und Ereignistabellen</li><li>LAST - Der letzte erhaltene Wert. Gilt nur für die Sitzungs- und Ereignistabellen</li></ul></li><li>Daten <ul><li>DISTINCT - gibt Satz unterschiedlicher Werte zurück</li><li>COUNT DISTINCT - gibt die Anzahl unterschiedlicher Werte zurück</li><li>MOST COMMON - gibt den am häufigsten empfangenen Zeichenfolgenwert zurück</li><li>LEAST COMMON - gibt den am häufigsten empfangenen Zeichenfolgenwert zurück</li><li>FIRST - Der erste empfangene Wert. Gilt nur für die Sitzungs- und Ereignistabellen</li><li>LAST - Der letzte erhaltene Wert. Gilt nur für die Sitzungs- und Ereignistabellen</li><li>EARLIEST - Der früheste empfangene Wert (bestimmt durch Uhrzeit); nur für die Sitzungs- und Ereignistabellen anwendbar</li><li>NEUEST - Der zuletzt empfangene Wert (bestimmt durch Uhrzeit). Gilt nur für die Sitzungs- und Ereignistabellen</li></ul></li></ul> | 3 Funktion pro abgeleitetem Feld | Neues abgeleitetes Feld |
+| <ul><li>Zeichenfolge</li><li>Numerisch</li><li>Datum</li></ul> | <ul><li>Wert<ul><li>Regeln</li><li>Standardfelder</li><li>Felder</li></ul></li><li>Zusammenfassen von Methoden</li><li>Anwendungsbereich<ul><li>Ereignis</li><li>Sitzung</li><li>Person</li></ul></li></ul> | <ul><li>Numerisch<ul><li>MAX - gibt den höchsten Wert aus einem Wertesatz zurück</li><li>MIN - gibt den kleinsten Wert aus einem Satz von Werten zurück</li><li>MEDIAN - gibt Median für einen Satz von Werten zurück</li><li>MEAN - gibt den Durchschnitt für einen Satz von Werten zurück</li><li>SUM - gibt die Summe für einen Satz von Werten zurück</li><li>COUNT - gibt die Anzahl der empfangenen Werte zurück</li><li>DISTINCT - gibt Satz unterschiedlicher Werte zurück</li></ul></li><li>Zeichenfolgen<ul><li>DISTINCT - gibt Satz unterschiedlicher Werte zurück</li><li>COUNT DISTINCT - gibt die Anzahl unterschiedlicher Werte zurück</li><li>MOST COMMON - gibt den am häufigsten empfangenen Zeichenfolgenwert zurück</li><li>LEAST COMMON - gibt den am häufigsten empfangenen Zeichenfolgenwert zurück</li><li>FIRST - Der erste empfangene Wert. Gilt nur für die Sitzungs- und Ereignistabellen</li><li>LAST - Der letzte erhaltene Wert. Gilt nur für die Sitzungs- und Ereignistabellen</li></ul></li><li>Daten <ul><li>DISTINCT - gibt Satz unterschiedlicher Werte zurück</li><li>COUNT DISTINCT - gibt die Anzahl unterschiedlicher Werte zurück</li><li>MOST COMMON - gibt den am häufigsten empfangenen Zeichenfolgenwert zurück</li><li>LEAST COMMON - gibt den am häufigsten empfangenen Zeichenfolgenwert zurück</li><li>FIRST - Der erste empfangene Wert. Gilt nur für die Sitzungs- und Ereignistabellen</li><li>LAST - Der letzte erhaltene Wert. Gilt nur für die Sitzungs- und Ereignistabellen</li><li>EARLIEST - Der früheste empfangene Wert (bestimmt durch Uhrzeit); nur für die Sitzungs- und Ereignistabellen anwendbar</li><li>NEUEST - Der zuletzt empfangene Wert (bestimmt durch Uhrzeit). Gilt nur für die Sitzungs- und Ereignistabellen</li></ul></li></ul> | 3 Funktion pro abgeleitetem Feld | Neues abgeleitetes Feld |
 
 {style="table-layout:auto"}
 
@@ -1701,7 +1701,7 @@ Verwenden Sie die Zusammenfassungsfunktion für ereignisbasierte, sitzungs- oder
 
 <!-- TRIM -->
 
-### Zuschneiden
+### Zuschneiden {#trim}
 
 <!-- markdownlint-disable MD034 -->
 
@@ -1823,7 +1823,7 @@ Sie erstellen ein abgeleitetes `Store Identifier` -Feld. Mit der Funktion [!UICO
 
 <!-- URL PARSE -->
 
-### URL-Parsen
+### URL-Parsen {#urlparse}
 
 <!-- markdownlint-disable MD034 -->
 
