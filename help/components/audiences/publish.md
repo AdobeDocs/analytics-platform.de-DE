@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie Zielgruppen in Customer Journey Analytics ver
 exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
 feature: Audiences
 role: User
-source-git-commit: df0fd0af8a22c84705c3dea11065132359dd80ff
+source-git-commit: 126d2213b97b71ff3116ff53e56217b8b6e7a479
 workflow-type: tm+mt
-source-wordcount: '1948'
+source-wordcount: '1973'
 ht-degree: 18%
 
 ---
@@ -61,7 +61,7 @@ ht-degree: 18%
 
 
 
-In diesem Thema wird beschrieben, wie Sie Zielgruppen erstellen und veröffentlichen, die im Customer Journey Analytics in [Echtzeit-Kundenprofil](https://experienceleague.adobe.com/en/docs/experience-platform/profile/home) in Adobe Experience Platform identifiziert werden, um Kunden-Targeting und -Personalisierung zu ermöglichen.
+In diesem Thema wird beschrieben, wie Sie Zielgruppen erstellen und veröffentlichen, die im Customer Journey Analytics in [Echtzeit-Kundenprofil](https://experienceleague.adobe.com/de/docs/experience-platform/profile/home) in Adobe Experience Platform identifiziert werden, um Kunden-Targeting und -Personalisierung zu ermöglichen.
 
 Lesen Sie diesen [Überblick](/help/components/audiences/audiences-overview.md) , um sich mit dem Konzept der Customer Journey Analytics-Zielgruppen vertraut zu machen.
 
@@ -126,7 +126,7 @@ Nachdem Sie eine Zielgruppe im Customer Journey Analytics erstellt und veröffen
 
 * Die Audience in Platform trägt denselben Namen und dieselbe Beschreibung wie die Customer Journey Analytics-Audience. Der Name wird an die Customer Journey Analytics-Zielgruppen-ID angehängt, um sicherzustellen, dass die Zielgruppe eindeutig ist.
 * Alle Änderungen, die am Namen oder an der Beschreibung der Audience im Customer Journey Analytics vorgenommen werden, werden im Experience Platform übernommen.
-* Wenn eine Zielgruppe im Customer Journey Analytics gelöscht wird, ist sie weiterhin im Experience Platform verfügbar.
+* Wenn eine Zielgruppe im Customer Journey Analytics gelöscht wird, ist die Zielgruppe bis zum Ablauf der Profilmitgliedschaft der Zielgruppe weiterhin im Experience Platform verfügbar. Die Profilmitgliedschaft läuft für einmalige Zielgruppen nach 420 Tagen und für wiederkehrende Zielgruppen nach 16 Tagen ab.
 
 ## Latenzaspekte {#latency}
 
