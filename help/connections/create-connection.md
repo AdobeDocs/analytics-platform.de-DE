@@ -8,7 +8,7 @@ role: Admin
 source-git-commit: 7b51f9c0699a07051936e6e6ca493688d59e624e
 workflow-type: tm+mt
 source-wordcount: '3747'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 94%
 >[!CONTEXTUALHELP]
 >id="cja_connections_recordsadded"
 >title="Hinzugefügte Einträge"
->abstract="Die Anzahl der Einträge (Zeilen), die im ausgewählten Zeitintervall für die ausgewählten Einträge zu einer Verbindung hinzugefügt wurden."
+>abstract="Die Anzahl der Datensätze (Zeilen), die einer Verbindung im für die entsprechenden Datensätze ausgewählten Zeitintervall hinzugefügt wurden."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -28,7 +28,7 @@ ht-degree: 94%
 >[!CONTEXTUALHELP]
 >id="cja_connections_recordsskipped"
 >title="Übersprungene Einträge"
->abstract="Die Anzahl der Einträge (Zeilen), die im ausgewählten Zeitintervall für die ausgewählten Einträge während der Datenübertragung für eine Verbindung übersprungen wurden."
+>abstract="Die Anzahl der Datensätze (Zeilen), die bei der Datenübertragung für eine Verbindung im für die entsprechenden Datensätze ausgewählten Zeitintervall übersprungen werden."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -37,7 +37,7 @@ ht-degree: 94%
 >[!CONTEXTUALHELP]
 >id="cja_connections_recordsdeleted"
 >title="Gelöschte Einträge"
->abstract="Die Anzahl der Einträge (Zeilen), die im ausgewählten Zeitintervall für die ausgewählten Einträge aus einer Verbindung entfernt wurden."
+>abstract="Die Anzahl der Datensätze (Zeilen), die im ausgewählten Zeitintervall für die ausgewählten Datensätze aus einer Verbindung entfernt wurden."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -46,7 +46,7 @@ ht-degree: 94%
 >[!CONTEXTUALHELP]
 >id="cja_connection_lastadded"
 >title="Zuletzt hinzugefügt"
->abstract="Der Zeitstempel des neuesten Batches aus einem Datensatz, der an eine Verbindung übertragen wird."
+>abstract="Zeitstempel des letzten Batches aus einem beliebigen Datensatz, der an eine Verbindung übertragen wurde."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -63,8 +63,8 @@ ht-degree: 94%
 
 >[!CONTEXTUALHELP]
 >id="cja_connection_averagenumberofdailyuses"
->title="Durchschnittliche Anzahl der täglichen Verwendungen"
->abstract="Wählen Sie einen Bereich für die Anzahl der erwarteten täglichen Ereignisse für die gesamte Verbindung aus."
+>title="Durchschnittliche Anzahl der täglichen Nutzung"
+>abstract="Wählen Sie einen Bereich für die Anzahl der erwarteten täglichen Ereignisse für die gesamte Verbindung."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -78,7 +78,7 @@ Beim Workflow für die Erstellung und Bearbeitung von Verbindungen können alle 
 * Sie können Datensätze bearbeiten, z. B. um eine weitere Aufstockung anzufordern.
 * Sie können für einzelne Datensätze vorhandene Daten importieren.
 
-+++ Video zur Veranschaulichung des Erlebnisses beim Erstellen und Bearbeiten einer Verbindung
++++ Video zum Veranschaulichen der Erstellung und Bearbeitung von Verbindungen
 
 >[!VIDEO](https://video.tv.adobe.com/v/343044/?quality=12&learn=on)
 
@@ -136,7 +136,7 @@ Wenden Sie sich an Ihre Admins, wenn Sie sich nicht sicher sind, welches Custome
 >[!CONTEXTUALHELP]
 >id="cja_connection_primaryID"
 >title="Primäre ID "
->abstract="Wählen Sie die richtige primäre ID für Ihre Verbindung aus: Person für ein B2C-Szenario. Konto für ein B2B-Szenario."
+>abstract="Wählen Sie die richtige primäre ID für Ihre Verbindung aus: „Person“ für ein B2C-Szenario. „Konto“ für ein B2B-Szenario."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -146,7 +146,7 @@ Wenden Sie sich an Ihre Admins, wenn Sie sich nicht sicher sind, welches Custome
 >[!CONTEXTUALHELP]
 >id="cja_connection_optionalContainers"
 >title="Optionale Container"
->abstract="Wählen Sie weitere Container aus.<br/><br/>**[!UICONTROL Globales Konto ]**: ermöglicht die Konfiguration globaler Konten in einer Verbindung.<br/>**[!UICONTROL Chancen]**: Ermöglicht die Konfiguration von Möglichkeiten in einer Verbindung.<br/>**[!UICONTROL Buying group ]**: ermöglicht die Konfiguration von Einkaufsgruppen in einer Verbindung."
+>abstract="Wählen Sie weitere Container aus.<br/><br/>**[!UICONTROL Globales Konto ]**: ermöglicht die Konfiguration globaler Konten in einer Verbindung.<br/>**[!UICONTROL Opportunity]**: ermöglicht die Konfiguration von Opportunities in einer Verbindung.<br/>**[!UICONTROL Käufergruppe ]**: ermöglicht die Konfiguration von Käufergruppen in einer Verbindung."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -155,7 +155,7 @@ Wenden Sie sich an Ihre Admins, wenn Sie sich nicht sicher sind, welches Custome
 >[!CONTEXTUALHELP]
 >id="cja_connection_personID"
 >title="Personen-ID"
->abstract="Wählen Sie eine Personen-ID aus den verfügbaren Identitäten, die im Datensatzschema in Experience Platform definiert sind."
+>abstract="Wählen Sie eine Personen-ID aus den verfügbaren Identitäten aus, die im Datensatzschema in Experience Platform definiert sind."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -164,7 +164,7 @@ Wenden Sie sich an Ihre Admins, wenn Sie sich nicht sicher sind, welches Custome
 >[!CONTEXTUALHELP]
 >id="cja_connection_accountID"
 >title="Konto-ID"
->abstract="Wählen Sie eine Konto-ID (die eindeutige Kennung für ein Konto) aus den verfügbaren Identitäten aus, die im Datensatzschema in der Experience Platform definiert sind."
+>abstract="Wählen Sie eine Konto-ID (die eindeutige Kennung für ein Konto) aus den verfügbaren Identitäten aus, die im Datensatzschema in Experience Platform definiert sind."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -173,7 +173,7 @@ Wenden Sie sich an Ihre Admins, wenn Sie sich nicht sicher sind, welches Custome
 >[!CONTEXTUALHELP]
 >id="cja_connection_globalAccountID"
 >title="Globale Konto-ID"
->abstract="Wählen Sie eine globale Konto-ID (die eindeutige Kennung für ein globales Konto) aus den verfügbaren Identitäten aus, die im Datensatzschema in der Experience Platform definiert sind."
+>abstract="Wählen Sie eine globale Konto-ID (die eindeutige Kennung für ein globales Konto) aus den verfügbaren Identitäten aus, die im Datensatzschema in Experience Platform definiert sind."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -182,7 +182,7 @@ Wenden Sie sich an Ihre Admins, wenn Sie sich nicht sicher sind, welches Custome
 >[!CONTEXTUALHELP]
 >id="cja_connection_opportunityID"
 >title="Opportunity-ID"
->abstract="Wählen Sie eine Opportunity-ID (die eindeutige Kennung für eine Gelegenheit) aus den verfügbaren Identitäten aus, die im Datensatzschema in der Experience Platform definiert sind."
+>abstract="Wählen Sie eine Opportunity-ID (die eindeutige Kennung für eine Opportunity) aus den verfügbaren Identitäten aus, die im Datensatzschema in Experience Platform definiert sind."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -190,8 +190,8 @@ Wenden Sie sich an Ihre Admins, wenn Sie sich nicht sicher sind, welches Custome
 
 >[!CONTEXTUALHELP]
 >id="cja_connection_buyingGroupID"
->title="Gruppen-ID kaufen"
->abstract="Wählen Sie aus den verfügbaren Identitäten, die im Datensatzschema in der Experience Platform definiert sind, eine Käufer-Gruppen-ID (die eindeutige Kennung für eine Einkaufsgruppe) aus."
+>title="Käufergruppen-ID"
+>abstract="Wählen Sie eine Käufergruppen-ID (die eindeutige Kennung für eine Käufergruppe) aus den verfügbaren Identitäten aus, die im Datensatzschema in Experience Platform definiert sind."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -200,7 +200,7 @@ Wenden Sie sich an Ihre Admins, wenn Sie sich nicht sicher sind, welches Custome
 >[!CONTEXTUALHELP]
 >id="cja_connection_matchingkey"
 >title="Passender Schlüssel"
->abstract="Wählen Sie die Art des Joins aus: basierend auf einem übereinstimmenden Schlüssel oder einem entsprechenden Container.<br/><br/>**[!UICONTROL Entspricht Schlüssel ]**: Wählen Sie ein Feld aus, das mit einem der Ereignis-Datensätze verknüpft werden soll. Wenn diese Liste leer ist, haben Sie wahrscheinlich keinen Ereignisdatensatz hinzugefügt oder konfiguriert.<br/>**[!UICONTROL Übereinstimmender Container]**: Wählen Sie einen Container aus, der verwendet werden soll, um mit einem der Ereignis-Datensätze zu verknüpfen. Wenn diese Liste leer ist, haben Sie wahrscheinlich keinen oder mehrere Container konfiguriert."
+>abstract="Wählen Sie, wie Sie teilnehmen möchten: basierend auf einem passenden Schlüssel oder einem passenden Container.<br/><br/>**[!UICONTROL Passender Schlüssel ]**: Wählen Sie ein Feld aus, das einem der Ereignisdatensätze hinzugefügt werden soll. Wenn diese Liste leer ist, haben Sie wahrscheinlich keinen Ereignisdatensatz hinzugefügt oder konfiguriert.<br/>**[!UICONTROL Passender Container]**: Wählen Sie einen Container aus, der verwendet werden soll, um mit einem der Ereignis-Datensätze zu verknüpfen. Wenn diese Liste leer ist, haben Sie wahrscheinlich keinen oder mehrere Container konfiguriert."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -211,7 +211,7 @@ Wenden Sie sich an Ihre Admins, wenn Sie sich nicht sicher sind, welches Custome
 >[!CONTEXTUALHELP]
 >id="cja_connection_importnewdata"
 >title="Neue Daten importieren"
->abstract="Alle neuen Batches, die im Experience Platform-Datensatz hinzugefügt werden, werden automatisch zu dieser Verbindung hinzugefügt und zur Analyse bereitgestellt."
+>abstract="Alle neuen Batches, die dem Experience Platform-Datensatz hinzugefügt werden, werden automatisch in diese Verbindung aufgenommen und für die Analyse verfügbar gemacht."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -229,7 +229,7 @@ Wenden Sie sich an Ihre Admins, wenn Sie sich nicht sicher sind, welches Custome
 >[!CONTEXTUALHELP]
 >id="cja_connection_transformdataset"
 >title="Datensatz transformieren"
->abstract="Mit dieser Option wird der Datensatz transformiert, sodass er für personenbasierte Suchen in B2B-Szenarien verwendet werden kann. Nach der Aktivierung ist die Umwandlung des Datensatzes unumkehrbar."
+>abstract="Mit dieser Option wird der Datensatz so transformiert, dass er für personenbezogene Suchvorgänge in B2B-Szenarien verwendet werden kann. Sobald diese Option aktiviert ist, ist die Transformation des Datensatzes nicht mehr umkehrbar."
 
 <!-- markdownlint-enable MD034 -->
 
