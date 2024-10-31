@@ -5,10 +5,10 @@ role: User, Admin
 solution: Customer Journey Analytics
 hidefromtoc: true
 hide: true
-source-git-commit: 1442aa9be5e6a6dc283ba559a2ff6c46de862425
+source-git-commit: e723339831bf835b43096affd4e0f15f41462f54
 workflow-type: tm+mt
-source-wordcount: '852'
-ht-degree: 3%
+source-wordcount: '1058'
+ht-degree: 4%
 
 ---
 
@@ -37,7 +37,7 @@ Out-of-Scope-Funktionen:
 | Nicht unterstützte Funktion | Beschreibung |
 | --- | --- |
 | In-line-Zusammenfassung oder Antwort | Der KI-Assistent kann in der Chatleiste nicht mit einer zusammenfassenden Antwort auf eine Benutzeraufforderung linear antworten. Beispielhafte Eingabeaufforderungen außerhalb des Umfangs:<ul><li>*Geben Sie mir eine Zusammenfassung der Einblicke aus meiner letzten Eingabeaufforderung.*</li><li>*Fassen Sie die Highlights aus der Linienvisualisierung zusammen.*</li></ul> |
-| Klärung von Fragen | Die Klärung von Fragen ist auf Komponenten und Dimensionselemente beschränkt. Der AI-Assistent kann keine Datenansichten, Visualisierungen, Datengranularität, Vergleich, Umfang usw. klären. Ohne Klarstellung von Fragen verwendet der Assistent standardmäßig das, was der Benutzer am ehesten verlangt. Wenn eine unerwartete Visualisierung oder Datengranularität zurückgegeben wird, kann der Benutzer dann die Funktion für Mehrfachwechsel/Aktualisierung verwenden, um die Visualisierung und die Daten anzupassen. |
+| Klärung von Fragen | Die Klärung von Fragen ist auf Komponenten und Dimensionselemente beschränkt. Der AI-Assistent kann keine Datenansichten, Visualisierungen, Datengranularität, Vergleich, Umfang usw. klären. Ohne Klarstellung der Fragen verwendet die Assistenzkraft standardmäßig das, was Sie am ehesten wünschen. Wenn eine unerwartete Visualisierung oder Datengranularität zurückgegeben wird, können Sie dann die Funktion für die Mehrfachumstellung/Aktualisierung verwenden, um die Visualisierung und die Daten anzupassen. |
 | Workspace-Aktionen/-Funktionen | Der KI-Assistent kann für einen Benutzer in Workspace keine Aktionen durchführen, außer Visualisierungen zu erstellen und zu aktualisieren. Sie kann beispielsweise keine der folgenden Aktionen durchführen:<ul><li>Schaltflächen der Benutzeroberfläche für kontextbezogene Aktionen (zu Diagramm hinzufügen, neues Bedienfeld, neue Tabelle)</li><li>Freigeben</li><li>Exportieren</li><li>Download</li><li>Verwalten von Benutzereinstellungen</li><li>Kuratieren</li><li>Datenansicht verwalten</li><li>Analytics-Dashboards-App</li><li>Attribution</li></ul> |
 | Nicht unterstützte Visualisierungstypen | <ul><li>Fluss</li><li>Fallout</li><li>Kohortentabelle</li><li>Bereich, Bereich gestapelt</li><li>Balken gestapelt</li><li>Horizontales Säulendiagramm</li><li>Kombination</li><li>Histogramm</li><li>Horizontalbalken, Horizontalbalken gestapelt</li><li>Zusammenfassung einer Schlüsselmetrik</li><li>Streuung</li><li>Zusammenfassende Änderung</li><li>Text</li><li>Treemap</li><li>Venn</li></ul> |
 | Erläuterung und Überprüfung | Transparente Beschreibung oder Zitation, wie der KI-Assistent eine Antwort generiert hat, und eine Möglichkeit, die Richtigkeit der Antwort zu bestätigen. |
@@ -67,22 +67,40 @@ Es ist auch in Adobe Experience Platform, Adobe Journey Optimizer, Adobe Real-Ti
 
 Weitere Informationen finden Sie unter [Zugriffskontrolle](/help/technotes/access-control.md#access-control) .
 
-## Access Data Analysis AI Assistant
+## Data Analysis AI-Assistent aufrufen und verwenden
 
+1. Klicken Sie auf diesen Link, um Workspace in der Labs IMS-Organisation (in der Phase) zu öffnen und sich mit Ihrer Adobe ID anzumelden.
 
+1. Klicken Sie oben auf der Projektseite im Banner auf **[!UICONTROL Leeres Projekt]** , um ein neues leeres Projekt zu öffnen.
 
+1. Klicken Sie oben rechts auf das Chat-Symbol für den AI-Assistenten.
 
-## Data Analysis AI-Assistent verwenden
+   ![Symbol &quot;KI-Assistent&quot;](/help/assets/ai-asst-icon.png)
 
-1. Navigieren Sie unter Customer Journey Analytics zur bereitgestellten Sandbox.
+1. Stellen Sie im unteren Dialogfeld **[!UICONTROL Fragen Sie nach Customer Journey Analytics]** Ihre erste Datenanalysefrage im AI-Assistenten.
 
-1. Öffnen Sie ein Workspace-Projekt.
+   Nehmen wir beispielsweise an, Sie interessieren sich für die Bestellungen, die Ihr Unternehmen im Juli erhalten hat. Sie könnten also &quot;Bestellungen im Juli anzeigen&quot;eingeben.
+
+   ![AI-Eingabeaufforderung](/help/assets/ai-asst-prompt1.png)
 
 
 ## Beispieldatenanalyse - Eingabeaufforderungen
 
 Im Folgenden finden Sie einige Beispiele dafür, wie der KI-Assistent auf Aufforderungen reagiert und die erwarteten Visualisierungen:
 
+| Beispielaufforderung | Erwartete Visualisierung |
+| --- | --- |
+| Anzeigen von Gewinnen in [Monat] | Linie<p>Wenn Sie nach einem Trend oder einer Metrik für einen bestimmten Zeitraum fragen, wird standardmäßig eine Linienvisualisierung zurückgegeben. |
+| Trend-Bestellungen in [Monat] | Linie |
+| Umsatz nach Region in [Monat] anzeigen | Balken |
+| Umsatzanteil nach Produktkategorie | Ringdiagramm |
+| Bestellungen nach Wochentagen von Januar bis Mai | Balken |
+| Bestellungen nach Geschlecht von März bis Juni anzeigen | Balken |
+| Was ist der Gewinn der SKUs zwischen Februar und Mai? | Balken |
+| Umsatz nach Speichername in [Monat] | Balken |
+| Was waren meine Top-10-Stunden am Gewinn in [Monat]? | Balken |
+| Anteil der Käufe pro Monat des Jahres | Ringdiagramm |
+| Gesamtgewinn in [Monat] | Zusammenfassungszahl<p>Die Anforderung der &quot;Gesamtsumme&quot;einer Metrik über einen bestimmten Zeitraum hinweg sollte eine Visualisierung der Zusammenfassungsnummer zurückgeben. |
 
 
 ## Best Practices auffordern
@@ -91,7 +109,7 @@ TBD
 
 ## Erwartungen und Feedback zu Alpha-Tests
 
-TB D
+TBD
 
 ## Fragen und Kontakt
 
