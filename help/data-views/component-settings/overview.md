@@ -1,5 +1,5 @@
 ---
-title: Einstellungen der Komponente
+title: Komponenteneinstellungen
 description: Anzeigen der wichtigsten Einstellungen für eine Datenansichtskomponente
 exl-id: 6300d289-d308-476e-aa4e-05cdae361bb2
 solution: Customer Journey Analytics
@@ -12,14 +12,14 @@ ht-degree: 93%
 
 ---
 
-# Einstellungen der Komponente {#component-settings}
+# Komponenteneinstellungen {#component-settings}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja_dataview_component_settings"
->title="Einstellungen der Komponente"
->abstract="Zeigen Sie den Namen, die Beschreibung und andere Einstellungen für eine Komponente an und konfigurieren Sie sie.<br/><br/>**Parameter **<br/>**Komponente in Berichten ausblenden**: Wenn Sie dieses Kontrollkästchen aktivieren, wird diese Komponente in Berichten für Benutzende ohne Administratorrechte ausgeblendet. Admins können weiterhin darauf zugreifen, indem sie in einem Workspace-Projekt auf **[!UICONTROL Alle Komponenten anzeigen]** klicken."
+>title="Komponenteneinstellungen"
+>abstract="Zeigen Sie den Namen, die Beschreibung und andere Einstellungen einer Komponente an und konfigurieren Sie sie.<br/><br/>**Parameter **<br/>**Komponente in Berichten verbergen**: Wenn Sie dieses Kontrollkästchen aktivieren, wird diese Komponente bei der Berichterstellung für Benutzende ohne Administratorrechte ausgeblendet. Admins können weiterhin darauf zugreifen, indem sie in einem Workspace-Projekt **[!UICONTROL Alle Komponenten zeigen]** auswählen."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -27,8 +27,8 @@ ht-degree: 93%
 
 >[!CONTEXTUALHELP]
 >id="cja_dataview_component_contextlabels"
->title="Kontextbeschriftungen"
->abstract="Das Entfernen einer Kontextbeschriftung kann sich auf bestimmte Bedienfelder oder Berichte auswirken, in denen die Komponente erforderlich ist."
+>title="Kontext-Labels"
+>abstract="Das Entfernen eines Kontext-Labels kann sich auf bestimmte Bedienfelder oder Berichte auswirken, bei denen die Komponente erforderlich ist."
 
 <!-- markdownlint-enable MD034 -->
 

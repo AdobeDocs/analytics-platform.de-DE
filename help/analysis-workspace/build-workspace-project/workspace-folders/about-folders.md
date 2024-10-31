@@ -8,32 +8,32 @@ role: User
 source-git-commit: 90d1c51c11f0ab4d7d61b8e115efa8257a985446
 workflow-type: tm+mt
 source-wordcount: '435'
-ht-degree: 5%
+ht-degree: 98%
 
 ---
 
 # Über Ordner in Analysis Workspace
 
-Ordner in Customer Journey Analytics sind auf der Landingpage von Workspace verfügbar, wenn Sie &quot;[Ordner und Projekte anzeigen](../freeform-overview.md#show-selector)&quot;ausgewählt haben.
+Ordner in Customer Journey Analytics sind auf der Workspace-Landingpage verfügbar, wenn Sie [Ordner und Projekte anzeigen](../freeform-overview.md#show-selector) ausgewählt haben.
 
-Mit Ordnern in Workspace können Sie Ihre Projekte organisieren und kategorisieren. Mit der Ordnerfunktion können Sie Ordner und Unterordner erstellen, um Ihre Projekte zu verwalten.
+Die Ordner in Workspace unterstützen Sie dabei, Projekte zu organisieren und zu kategorisieren. Mit der Ordnerfunktionalität können Sie Ordner und Unterordner erstellen, um Ihre Projekte zu verwalten.
 
-In Workspace gibt es zwei Ordnertypen: den Ordner &quot;Unternehmen&quot;und &quot;Persönliche Ordner&quot;. Mit einem freigegebenen Unternehmensordner können Administratoren Inhalte für alle Workspace-Benutzer erstellen und freigeben.
+In Analysis Workspace gibt es zwei Arten von Ordnern: den Firmenordner und persönliche Ordner. Ein freigegebener Firmenordner ermöglicht es Admins, Inhalte zu erstellen und diese für alle Workspace-Benutzenden freizugeben.
 
-Wenn Sie &quot;[Ordner und Projekte anzeigen](../freeform-overview.md#show-selector)&quot;ausgewählt haben, zeigt die Startseite &quot;Projekte&quot;eine Liste Ihrer Projekte mit dem Ordner &quot;Firma&quot;und allen von Ihnen erstellten persönlichen Ordnern an. Andernfalls wird nur eine Liste Ihrer Projekte angezeigt.
+Wenn Sie [Ordner und Projekte anzeigen](../freeform-overview.md#show-selector) ausgewählt haben, wird auf der Startseite „Projekte“ eine Liste Ihrer Projekte mit dem Firmenordner und allen von Ihnen erstellten persönlichen Ordnern angezeigt. Andernfalls wird nur eine Liste Ihrer Projekte angezeigt.
 
 
 ## Firmenordner
 
-Der Ordner Unternehmen ist ein Ordner mit gemeinsamem Zugriff für Projekte, die Administratoren für alle Benutzer freigeben können.
+Der Firmenordner ist ein Ordner mit gemeinsamem Zugriff für Projekte, die Admins für alle Benutzenden freigeben können.
 
-Als Administrator können Sie schnell Projekte für alle Benutzer freigeben und Projekte in Unterordnern für eine Benutzergruppe gruppieren. Sie haben beispielsweise eine Reihe von Projekten, die Ihre Marketing-Experten verwenden sollen, um ihre Forschung zu starten. Anschließend können Sie einen Marketing-Ordner im Ordner Unternehmen erstellen und anschließend ausgewählte Projekte im Ordner Marketing platzieren. Dieser Ordner bietet direkten Zugriff auf freigegebene Projekte und erleichtert dem Marketing-Team die Suche nach gemeinsamen Projekten.
+Als Admin können Sie schnell Projekte für alle Benutzenden freigeben und Projekte für eine Benutzergruppe in Unterordnern gruppieren. Angenommen, Sie haben eine Reihe von Projekten, die Ihre Marketing-Fachleute als Ausgangspunkt für ihre Untersuchungen verwenden sollen. Sie können dann einen Marketing-Ordner im Firmenordner erstellen und ausgewählte Projekte im Marketing-Ordner ablegen. Dieser Ordner ermöglicht einen schnellen Direktzugriff auf freigegebene Projekte und erleichtert dem Marketing-Team das Auffinden allgemeiner Projekte.
 
-Wenn Sie sich bei Workspace anmelden, wird der Ordner Firma automatisch zu Ihrem Projekt und Ihrer Ordnerliste hinzugefügt. Für Projekte, die im Unternehmensordner enthalten sind, sind keine spezifischen Berechtigungen erforderlich.
+Bei der Anmeldung bei Workspace wird der Firmenordner automatisch zu Ihrer Projekt- und Ordnerliste hinzugefügt. Für Projekte, die im Unternehmensordner enthalten sind, sind keine spezifischen Berechtigungen erforderlich.
 
 ### Administratoroptionen
 
-Administratoren haben spezielle Berechtigungen für den Ordner &quot;Unternehmen&quot;. Beispielsweise können nur Administratoren Ordner oder Projekte im Ordner &quot;Unternehmen&quot;hinzufügen oder entfernen. Benutzer ohne Zugriffskontrolle durch Administratoren können den Inhalt des Ordners Firma anzeigen.
+Admins verfügen über spezielle Berechtigungen, die dem Firmenordner zugewiesen sind. Beispielsweise können nur Admins Ordner oder Projekte im Firmenordner hinzufügen oder entfernen. Benutzende ohne Admin-Zugriffssteuerung können sich den Inhalt des Firmenordners anzeigen lassen.
 
 <!--
 ![The Projects page showing the admin options.](/help/analysis-workspace/build-workspace-project/assets/admin-options.png)
@@ -46,15 +46,15 @@ Non-Admins have limited options.
 
 ### Richtlinien
 
-Im Folgenden finden Sie einige Richtlinien für die Arbeit mit dem Ordner &quot;Unternehmen&quot;:
+Im Folgenden finden Sie einige Richtlinien für die Arbeit mit dem Firmenordner:
 
-- Administratoren können Projekte zum Ordner Unternehmen hinzufügen oder ein neues Projekt erstellen und das neue Projekt im Ordner Firma speichern. Benutzer ohne Administratorrechte können den Inhalt des Ordners Firma anzeigen.
+- Admins können Projekte zum Firmenordner hinzufügen oder ein neues Projekt erstellen und dieses im Firmenordner speichern. Nicht-Admins können sich die Inhalte des Firmenordners anzeigen lassen.
 
-- Administratoren können Unterordner im Ordner &quot;Unternehmen&quot;erstellen.
+- Admins können im Firmenordner Unterordner erstellen.
 
-- Administratoren können einen Ordner im Ordner Firma löschen, den ein anderer Administrator erstellt hat. Möglicherweise müssen sich Administratoren mit anderen Administratoren abstimmen, um den Zugriff auf Ordner und Projekte konsistent zu halten.
+- Admins können im Firmenordner einen Ordner löschen, den andere Admins erstellt haben. Admins müssen sich möglicherweise mit anderen Admins abstimmen, um den Zugriff auf Ordner und Projekte konsistent zu halten.
 
-- Wenn ein Administrator ein Projekt in den Ordner Firma verschiebt, wird der Ordner für alle freigegeben, selbst wenn die ursprünglichen freigegebenen Berechtigungen eingeschränkt waren.
-- Wenn ein Administrator ein Projekt aus dem Ordner &quot;Unternehmen&quot;verschiebt, werden die ursprünglichen oder vorherigen Freigabeberechtigungen respektiert.
+- Wenn Admins ein Projekt in den Firmenordner verschieben, wird der Ordner für alle freigegeben, selbst wenn die ursprünglichen freigegebenen Berechtigungen eingeschränkt waren.
+- Wenn Admins ein Projekt aus dem Firmenordner verschieben, werden die ursprünglichen oder vorherigen Freigabeberechtigungen beibehalten.
 
-- Wenn ein Administrator ein Projekt aus dem Ordner &quot;Unternehmen&quot;verschiebt, werden die ursprünglichen oder vorherigen Freigabeberechtigungen respektiert.
+- Wenn Admins ein Projekt aus dem Firmenordner verschieben, werden die ursprünglichen oder vorherigen Freigabeberechtigungen beibehalten.

@@ -8,7 +8,7 @@ role: User
 source-git-commit: 1e7d61f05a8351a1bd9e4d289c9d31906676f909
 workflow-type: tm+mt
 source-wordcount: '1806'
-ht-degree: 28%
+ht-degree: 32%
 
 ---
 
@@ -25,7 +25,7 @@ Die folgenden geführten Analysen sind verfügbar:
 | ![EngagementGraph](/help/assets/icons/EngagementGraph.svg) | [Interaktion](types/engagement.md) | Erfahren Sie mehr über Umfang und Tiefe der Funktionsinteraktion. |
 | ![FirstUse](/help/assets/icons/FirstUse.svg) | [Auswirkungen der ersten Verwendung](types/first-use-impact.md) | Messen Sie die Auswirkung der erstmaligen Verwendung von Funktionen auf Schlüsselindikatoren. |
 | ![Histogramm](/help/assets/icons/Histogram.svg) | [Häufigkeit](types/frequency.md) | Messen Sie die Interaktion anhand der Nutzungshäufigkeit. |
-| ![ConversionTrichter](/help/assets/icons/ConversionFunnel.svg) | [Trichter](types/funnel.md) | Vergleichen Sie die Konversionsraten zwischen den Schritten. |
+| ![Konversionstrichter](/help/assets/icons/ConversionFunnel.svg) | [Trichter](types/funnel.md) | Vergleichen Sie die Konversionsraten zwischen den Schritten. |
 | ![NetGrowth](/help/assets/icons/NetGrowth.svg) | [Nettowachstum](types/net-growth.md) | Gewinnen oder verlieren Sie Benutzende? |
 | ![Version](/help/assets/icons/Release.svg) | [Auswirkungen der Veröffentlichung](types/release-impact.md) | Vergleichen Sie die Leistung in gleichen Zeiträumen vor und nach der Veröffentlichung. |
 | ![Treue](/help/assets/icons/Retention.svg) | [Treue](types/retention.md) | Messen Sie die Rückkehrgewohnheiten Ihrer Benutzenden. |
@@ -42,23 +42,23 @@ Sie können von der Customer Journey Analytics-Startseite aus auf die geführte 
 
    ![Titel der Landingpage](assets/landing-page-tile.png){style="border:1px solid gray"}
 
-1. Wählen Sie **[!UICONTROL Neu erstellen]** aus, um die verschiedenen Anzeigeoptionen anzuzeigen und einen anderen Ausgangspunkt für Ihre Analyse auszuwählen.
+1. Wählen Sie **[!UICONTROL Neu erstellen]**, um die verschiedenen Ansichtsoptionen anzuzeigen und einen anderen Ausgangspunkt für Ihre Analyse auszuwählen.
 
    ![Erstellen eines neuen Modals](assets/create-new-modal.png){style="border:1px solid gray"}
 
 Sie können auch von einem Analysis Workspace-Projekt aus auf die geführte Analyse zugreifen.
 
-1. Wählen Sie auf der Startseite die Option **[!UICONTROL Leeres Projekt]** aus, um ein leeres Workspace-Projekt zu erstellen.
+1. Wählen Sie auf der Startseite **[!UICONTROL Leeres Projekt]** aus, um ein leeres Workspace-Projekt zu erstellen.
 
-   ![Leeres Projekt erstellen](assets/blank-project.png){style="border:1px solid gray"}
+   ![Erstellen eines leeren Projekts](assets/blank-project.png){style="border:1px solid gray"}
 
-1. Wählen Sie in der linken Leiste die Option ![Geführte Analyse](/help/assets/icons/GuidedAnalysis.svg) **[!UICONTROL Geführte Analyse]** aus.
+1. Wählen Sie in der linken Leiste ![Geführte Analyse](/help/assets/icons/GuidedAnalysis.svg) **[!UICONTROL Geführte Analyse]** aus.
 
-   ![Linke Leiste von Workspace](assets/workspace-left-rail.png){style="border:1px solid gray"}
+   ![Linke Leiste in Workspace](assets/workspace-left-rail.png){style="border:1px solid gray"}
 
-1. Ziehen Sie eine neue Analyse auf die Workspace-Arbeitsfläche und wählen Sie dann **[!UICONTROL Erstellen]** aus, um die gewünschte Analyse zu erstellen (z. B. **[!UICONTROL Trends erstellen]**). Sie können eine vorhandene Analyse auch aus dem Bereich **[!UICONTROL Speichern]** auf die Workspace-Arbeitsfläche ziehen.
+1. Ziehen Sie eine neue Analyse auf die Workspace-Arbeitsfläche und wählen Sie dann **[!UICONTROL Erstellen]** aus, um die gewünschte Analyse zu erstellen (z. B. **[!UICONTROL Trends erstellen]**). Sie können eine vorhandene Analyse auch aus dem Bereich **[!UICONTROL Gespeichert]** auf die Workspace-Arbeitsfläche ziehen.
 
-   ![Bedienfeld erstellen](assets/create-guided-analysis-panel.gif)
+   ![Erstellen eines Bedienfelds](assets/create-guided-analysis-panel.gif)
 
 ## Benutzeroberfläche
 
