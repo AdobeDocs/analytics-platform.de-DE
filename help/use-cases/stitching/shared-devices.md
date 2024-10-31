@@ -3,13 +3,11 @@ title: Gemeinsam verwendete Geräte
 description: Erläuterung der Handhabung gemeinsam genutzter Geräte mithilfe von Stitching und anderen Verfahren.
 solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
-hide: true
-hidefromtoc: true
 role: Admin
 exl-id: a7d14968-33a2-46a8-8e32-fb6716650d0a
-source-git-commit: c0dae5f1255a986df5ab2551aabdf1bd0727e949
+source-git-commit: 81d1c6abbda63c4ac8cdcc96d1b730974b137ad9
 workflow-type: tm+mt
-source-wordcount: '683'
+source-wordcount: '659'
 ht-degree: 7%
 
 ---
@@ -67,7 +65,7 @@ Wenn die Attribution &quot;last-auth&quot;zum Stitching verwendet wird, werden z
 
 ### Device-split
 
-Die Device-Split-Aktivität ordnet anonyme Aktivitäten von einem gemeinsam genutzten Gerät dem Benutzer in nächster Nähe zur anonymen Aktivität zu. Die Geräteaufteilung ist der bevorzugte Ansatz für analytische Anwendungsfälle, da die Geräteaufteilung der nächstbekannten Person sowohl nicht authentifizierte als auch authentifizierte Aktivitäten zuordnet. Die Device-Split wird derzeit beim feldbasierten Stitching verwendet.
+Die Device-Split-Aktivität ordnet anonyme Aktivitäten von einem gemeinsam genutzten Gerät dem Benutzer in nächster Nähe zur anonymen Aktivität zu. Die Device-Split wird derzeit beim feldbasierten Stitching verwendet.
 
 Wenn beim Stitching die Attribution zwischen Geräten verwendet wird, werden zugeordnete IDs aufgelöst, wie in der folgenden Tabelle dargestellt.
 
