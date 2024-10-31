@@ -1,22 +1,22 @@
 ---
-title: Freigegebene Geräte
+title: Gemeinsam verwendete Geräte
 description: Erläuterung der Handhabung gemeinsam genutzter Geräte mithilfe von Stitching und anderen Verfahren.
 solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 hide: true
 hidefromtoc: true
 role: Admin
-source-git-commit: 1a5646700dba6362a35158890f2917fc472fbddd
+exl-id: a7d14968-33a2-46a8-8e32-fb6716650d0a
+source-git-commit: c0dae5f1255a986df5ab2551aabdf1bd0727e949
 workflow-type: tm+mt
-source-wordcount: '977'
-ht-degree: 5%
+source-wordcount: '683'
+ht-degree: 7%
 
 ---
 
+# Gemeinsam verwendete Geräte
 
-# Freigegebene Geräte
-
-Dieser Artikel bietet Kontext auf gemeinsam genutzten Geräten, wie Daten von gemeinsam genutzten Geräten mithilfe von Stitching verarbeitet und gemindert werden können und wie die Belichtung freigegebener Geräte in Ihren Daten mithilfe von Query Service verstanden werden kann.
+Dieser Artikel bietet Kontext auf gemeinsam genutzten Geräten, wie Daten von gemeinsam genutzten Geräten mithilfe von [Stitching](/help/stitching/overview.md) verarbeitet und gemindert werden können und wie die Belichtung freigegebener Geräte in Ihren Daten mithilfe von Query Service nachvollzogen werden kann.
 
 ## Was ist ein freigegebenes Gerät?
 
@@ -24,35 +24,36 @@ Ein gemeinsam genutztes Gerät ist ein Gerät, das von mehr als einer Person ver
 
 Wenn zwei Personen dasselbe Gerät verwenden und beide einen Kauf tätigen, können Beispielereignisdaten wie folgt aussehen:
 
-| Zeitstempel | Seitenname | Geräte-ID | E-Mail |
-|---|---|---|---|
-| 12.05.2023 12:01 | Startseite | `1234` | |
-| 2023-05-12 12:02 | Produktseite | `1234` | |
-| 2023-05-12 12:03 | Auftragserfolg | `1234` | `ryan@a.com` |
-| 2023-05-12 12:07 | Produktseite | `1234` | |
-| 12.05.2023 12:08 | Auftragserfolg | `1234` | `cassidy@a.com` |
+| Ereignis | Zeitstempel | Seitenname | Geräte-ID | E-Mail |
+|--:|---|---|---|---|
+| 1 | 12.05.2023 12:01 | Startseite | `1234` | |
+| 2 | 2023-05-12 12:02 | Produktseite | `1234` | |
+| 3 | 2023-05-12 12:03 | Auftragserfolg | `1234` | `ryan@a.com` |
+| 4 | 2023-05-12 12:07 | Produktseite | `1234` | |
+| 5 | 12.05.2023 12:08 | Auftragserfolg | `1234` | `cassidy@a.com` |
 
-Die Bestellerfolgs- (Kauf-)Ereignisse weisen die Daten der richtigen E-Mail zu. Wie sich diese Zuweisung auf Ihre Analyse auswirkt, hängt davon ab, wie Sie die Analyse durchführen:
+Wie Sie aus dieser Tabelle sehen können, beginnt nach der Authentifizierung bei den Ereignissen 3 und 5 eine Verknüpfung zwischen einer Geräte-ID und einer Personen-ID. Um die Auswirkungen von Marketing-Maßnahmen auf der Ebene der Person zu verstehen, müssen diese nicht authentifizierten Ereignisse der richtigen Person zugeordnet werden.
 
-- Gerätezentrierter Ansatz: Analyse, die mit der Geräte-ID durchgeführt wird. Bei diesem Ansatz werden sowohl authentifizierte als auch nicht authentifizierte Daten in die Analyse einbezogen. Dieser Ansatz ermöglicht jedoch keine personenbezogene Analyse.
-- Personenzentrierter Ansatz: Analyse, die unter Verwendung der E-Mail-Adresse oder einer anderen Personen-ID durchgeführt wird. Bei diesem Ansatz werden nur authentifizierte Ereignisse in die Analyse aufgenommen. Dieser Ansatz liefert kein vollständiges Bild der Journey, einschließlich Akquise
+<!--
+The order success (purchase) events assign the data accurately to the correct email. How this assignment impacts your analysis depends on how you perform analysis:
+
+- Device centric approach: analysis performed using the Device ID. With this approach, both authenticated and unauthenticated data are included in analysis. However, this approach does not allow for a more person based analysis. 
+- Person centric approach: analysis performed using the email address or other person identifier. With this approach, only authenticated events are included in the analysis. This approach doesn't provide a complete picture of the customer journey, including acquisition
+
+-->
 
 ## Verbessern der personenbezogenen Analyse
 
-Die Beispieldaten stellen eine Mischung aus authentifizierter und nicht authentifizierter Aktivität für dasselbe Gerät dar. Die Herausforderung besteht darin, eine Person dem nicht authentifizierten Traffic zuzuweisen, damit Sie eine personenorientierte Analyse durchführen und verhindern können, dass Customer Journey Analytics die Aktivitäten ablegt, für die kein Personen-ID-Wert vorliegt. Zur Lösung dieses Problems haben Sie zwei Möglichkeiten: Sie können das Stitching verwenden oder die Funktion zum Zurücksetzen von ECIDs implementieren. Beide Optionen werden in den folgenden Abschnitten ausführlicher erläutert.
+Der Stitching-Prozess behebt dieses Attributionsproblem, indem die ausgewählte Personen-ID (in den Beispieldaten die E-Mail) zu Ereignissen hinzugefügt wird, bei denen diese Kennung nicht vorhanden ist. Die Zuordnung nutzt eine Zuordnung zwischen Geräte-IDs und Personen-IDs, um sicherzustellen, dass sowohl authentifizierter als auch nicht authentifizierter Traffic in der Analyse verwendet werden kann, sodass er personenbezogen bleibt. Weitere Informationen finden Sie unter [Stitching](/help/stitching/overview.md) .
 
-### Stitching
-
-Der Stitching-Prozess befasst sich mit dem Mangel des personenorientierten Ansatzes. Durch die Zuordnung wird die ausgewählte Personen-ID (in den Beispieldaten die E-Mail) zu Ereignissen hinzugefügt, bei denen diese Kennung nicht vorhanden ist. Die Zuordnung nutzt eine Zuordnung zwischen Geräte-IDs und Personen-IDs, um sicherzustellen, dass sowohl authentifizierter als auch nicht authentifizierter Traffic in der Analyse verwendet werden kann, sodass er personenbezogen bleibt. Weitere Informationen finden Sie unter [Stitching](/help/stitching/overview.md) .
-
-Durch die Zuordnung können freigegebene Gerätedaten entweder mithilfe der Attribution &quot;last-auth&quot;oder der Attribution &quot;device-split&quot;zugeordnet werden. Implementierungsänderungen über das Zurücksetzen der ECID können jedoch auch für freigegebene Geräte gelten.
+Durch die Zuordnung können freigegebene Gerätedaten entweder mithilfe der Attribution &quot;last-auth&quot;oder der Attribution &quot;device-split&quot;zugeordnet werden. Alle Versuche, einem bekannten Benutzer nicht authentifizierte Ereignisse zuzuordnen, sind nicht deterministisch.
 
 
-#### Last-auth-Attribution
+### Last-auth-Attribution
 
-Last-auth ordnet alle unbekannten Aktivitäten von einem gemeinsam genutzten Gerät dem Benutzer zu, der sich zuletzt authentifiziert hat. Letztauth wird in Audience Manager verwendet und ist der bevorzugte Ansatz für Anwendungsfälle des Echtzeit-Kundendatenprofils. Der Experience Platform Identity-Dienst erstellt das Diagramm basierend auf der Attribution der letzten Autoren und wird als solches beim grafikbasierten Stitching verwendet. Weitere Informationen finden Sie unter [Übersicht über die Regeln für die Verknüpfung von Identitätsdiagrammen](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-graph-linking-rules/overview) .
+Last-auth ordnet alle unbekannten Aktivitäten von einem gemeinsam genutzten Gerät dem Benutzer zu, der sich zuletzt authentifiziert hat. Der Experience Platform Identity-Dienst erstellt das Diagramm basierend auf der Attribution der letzten Autoren und wird als solches beim grafikbasierten Stitching verwendet. Weitere Informationen finden Sie unter [Übersicht über die Regeln für die Verknüpfung von Identitätsdiagrammen](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-graph-linking-rules/overview) .
 
-Bei Verwendung der Attribution &quot;last-auth&quot;beim Stitching lösen zugeordnete IDs auf, wie in der folgenden Tabelle dargestellt.
+Wenn die Attribution &quot;last-auth&quot;zum Stitching verwendet wird, werden zugeordnete IDs aufgelöst, wie in der folgenden Tabelle dargestellt.
 
 | Zeitstempel | Seitenname | Geräte-ID | E-Mail | Angeheftete ID |
 |---|---|---|---|---|
@@ -64,11 +65,11 @@ Bei Verwendung der Attribution &quot;last-auth&quot;beim Stitching lösen zugeor
 | 13.05.2023 11:08 | Startseite | `1234` | | `cassidy@a.com` |
 
 
-#### Device-split
+### Device-split
 
-Die Device-Split-Aktivität ordnet anonyme Aktivitäten von einem gemeinsam genutzten Gerät dem Benutzer in nächster Nähe zur anonymen Aktivität zu. Die Device-Split wird derzeit beim feldbasierten Stitching verwendet. Die Geräteaufteilung ist der bevorzugte Ansatz für analytische Anwendungsfälle, da die Geräteaufteilung der nächstbekannten Person sowohl nicht authentifizierte als auch authentifizierte Aktivitäten zuordnet. Die Device-Split wird derzeit beim feldbasierten Stitching verwendet.
+Die Device-Split-Aktivität ordnet anonyme Aktivitäten von einem gemeinsam genutzten Gerät dem Benutzer in nächster Nähe zur anonymen Aktivität zu. Die Geräteaufteilung ist der bevorzugte Ansatz für analytische Anwendungsfälle, da die Geräteaufteilung der nächstbekannten Person sowohl nicht authentifizierte als auch authentifizierte Aktivitäten zuordnet. Die Device-Split wird derzeit beim feldbasierten Stitching verwendet.
 
-Bei der Verwendung der Attribution der Geräteaufteilung bei der Zuordnung lösen zugeordnete IDs auf, wie in der folgenden Tabelle dargestellt.
+Wenn beim Stitching die Attribution zwischen Geräten verwendet wird, werden zugeordnete IDs aufgelöst, wie in der folgenden Tabelle dargestellt.
 
 | Zeitstempel | Seitenname | Geräte-ID | E-Mail | Angeheftete ID |
 |---|---|---|---|---|
@@ -80,21 +81,25 @@ Bei der Verwendung der Attribution der Geräteaufteilung bei der Zuordnung löse
 | 13.05.2023 11:08 | Startseite | `1234` | | `cassidy@a.com` |
 
 
-### ECID-Zurücksetzung
+<!--
 
-Wie der Name schon sagt, implementiert das ECID-Zurücksetzen Funktionen, die die ECID auf einem vorab festgelegten Trigger zurücksetzen, in den meisten Fällen ein Anmelde- oder Abmeldeereignis. Mit dieser Implementierung erhält ein einzelnes Gerät jedes Mal, wenn der vordefinierte Trigger ausgelöst wird, eine neue ECID. Dieses Zurücksetzen zwingt das Gerät im Wesentlichen dazu, aus Datensicht immer wieder ein *neues Gerät* zu werden. Das Zurücksetzen der ECID hilft auch, zu verhindern, dass freigegebene Geräte auch in den Daten angezeigt werden. Es sind keine zusätzlichen Algorithmen erforderlich, Sie sind jedoch dafür verantwortlich, das ECID-Zurücksetzungssignal im Rahmen Ihrer Adobe-Datenerfassungsimplementierung zu implementieren.
+### ECID reset 
+
+As the name implies, ECID reset implements functionality that resets the ECID on a predetermined trigger, in most cases a login or logout event. With this implementation, a single device gets a new ECID every time the predetermined trigger fires. Essentially, this reset forces the device to become a *new device* over and again from a data perspective. The ECID reset also helps to prevent shared devices from even showing up in the data. No additional algorithms are required, but you have the responsibility to implement the ECID reset signal as part of your Adobe data collection implementation.
 
 
-Bei Verwendung des ECID-Resets lösen zugeordnete IDs auf, wie in der folgenden Tabelle dargestellt.
+When using ECID reset, Stitched IDs resolve as shown in the table below. 
 
-| Zeitstempel | Seitenname | Geräte-ID | E-Mail | Angeheftete ID |
+| Timestamp | Page name | Device ID | Email | Stitched ID |
 |---|---|---|---|---|
-| 12.05.2023 12:01 | Startseite | `1234` | | `ryan@a.com` |
-| 2023-05-12 12:02 | Produktseite | `1234` | | `ryan@a.com` |
-| 2023-05-12 12:03 | Auftragserfolg | `1234` | `ryan@a.com` | `ryan@a.com` |
-| 2023-05-12 12:07 | Produktseite | 5678 | | `cassidy@a.com` |
-| 12.05.2023 12:08 | Auftragserfolg | 5678 | `cassidy@a.com` | `cassidy@a.com` |
-| 13.05.2023 11:08 | Startseite | 5678 | | `cassidy@a.com` |
+| 2023-05-12 12:01 | Home page | `1234` | | `ryan@a.com`| 
+| 2023-05-12 12:02 | Product page  | `1234` | |`ryan@a.com` | 
+| 2023-05-12 12:03 | Order success | `1234` | `ryan@a.com` | `ryan@a.com` |
+| 2023-05-12 12:07 | Product page  | 5678  | | `cassidy@a.com` | 
+| 2023-05-12 12:08 | Order success | 5678 |  `cassidy@a.com` | `cassidy@a.com` |
+| 2023-05-13 11:08 | Home page | 5678 | | `cassidy@a.com` |
+
+-->
 
 ## Gemeinsame Geräteerkennung
 
@@ -120,7 +125,7 @@ Um die Belichtung des gemeinsam genutzten Geräts zu verstehen, können Sie übe
 
 2. **Zuordnung von Ereignissen zu freigegebenen Geräten**
 
-   Legen Sie für die identifizierten freigegebenen Geräte fest, wie viele Ereignisse von der Gesamtzahl diesen Geräten zugeordnet werden können. Dies bietet Einblicke in die Auswirkungen freigegebener Geräte auf Ihre Daten und die Auswirkungen auf die Analyse.
+   Legen Sie für die identifizierten freigegebenen Geräte fest, wie viele Ereignisse von der Gesamtzahl diesen Geräten zugeordnet werden können. Diese Attribution bietet Einblicke in die Auswirkungen freigegebener Geräte auf Ihre Daten und die Auswirkungen auf die Analyse.
 
    ```sql
    SELECT COUNT(*) AS total_events,
@@ -198,5 +203,3 @@ Um die Belichtung des gemeinsam genutzten Geräts zu verstehen, können Sie übe
    ) shared_persistent_ids 
    ON events.persistent_id = shared_persistent_ids.persistent_id; 
    ```
-
-
