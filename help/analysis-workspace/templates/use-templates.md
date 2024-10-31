@@ -5,10 +5,10 @@ feature: Workspace Basics
 role: User, Admin
 hide: true
 hidefromtoc: true
-source-git-commit: fc82690c63e7ab46746569a995578951809b43bc
+source-git-commit: 4927fbcaa8d0d0ea251c2827fd6c17c2d55c9f11
 workflow-type: tm+mt
-source-wordcount: '8295'
-ht-degree: 5%
+source-wordcount: '10210'
+ht-degree: 4%
 
 ---
 
@@ -140,8 +140,8 @@ So greifen Sie auf alle verfügbaren vordefinierten Vorlagen zu:
 
 >[!CONTEXTUALHELP]
 >id="cja_template_desc_pages"
->title="Seitenvorlage"
->abstract="Identifizieren Sie die beliebtesten und am wenigsten beliebten Seiten. <br/>**Dies kann Ihnen** helfen, Ihre Zielgruppe und die Art von Informationen, die sie am meisten interessiert, besser zu verstehen.<br/>**Basierend auf dem, was Sie lernen, können Sie** eine beliebige Anzahl von Dingen ausführen, z. B. Seitenmetadaten anpassen, um die Sichtbarkeit auf weniger angezeigten Seiten zu erhöhen, oder Sie verbringen Zeit mit der Verbesserung des Inhalts Ihrer am häufigsten angezeigten Seiten.<br/>Diese Vorlage verwendet die Dimension Seite und die Metrik Seitenansichten ."
+>title="Identifizieren Sie die beliebtesten und am wenigsten beliebten Seiten."
+>abstract="**Dies kann Ihnen** helfen, Ihre Zielgruppe und die Art von Informationen, die sie am meisten interessiert, besser zu verstehen.<br/>**Basierend auf dem, was Sie lernen, können Sie** eine beliebige Anzahl von Dingen ausführen, z. B. Seitenmetadaten anpassen, um die Sichtbarkeit auf weniger angezeigten Seiten zu erhöhen, oder Sie verbringen Zeit mit der Verbesserung des Inhalts Ihrer am häufigsten angezeigten Seiten.<br/>Diese Vorlage verwendet die Dimension Seite und die Metrik Seitenansichten ."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -149,8 +149,8 @@ So greifen Sie auf alle verfügbaren vordefinierten Vorlagen zu:
 
 >[!CONTEXTUALHELP]
 >id="cja_template_desc_page_views"
->title="Vorlage &quot;Seitenansichten&quot;"
->abstract="Anzeigen der Gesamtanzahl der Seitenansichten. Die Daten werden über einen bestimmten Zeitraum hinweg angezeigt und mit früheren Zeiträumen verglichen. <br/>**Dies kann Ihnen** helfen, besser zu verstehen, wie der Traffic auf Ihrer Site im Laufe der Zeit zunehmen oder abnehmen kann.<br/>**Basierend auf Ihren Erkenntnissen können Sie** eine beliebige Anzahl von Dingen ausführen, z. B. die Effektivität einer kürzlich gestarteten Marketing-Kampagne bewerten, indem Sie den Site-Traffic vor und nach dem Start der Kampagne vergleichen. Oder Sie vergleichen den jährlichen Urlaubsverkehr.<br/>Diese Vorlage verwendet die Dimension Tag und die Metrik Seitenansichten ."
+>title="Anzeigen der Gesamtanzahl der Seitenansichten. Die Daten werden über einen bestimmten Zeitraum hinweg angezeigt und mit früheren Zeiträumen verglichen. "
+>abstract="**Dies kann Ihnen** helfen, besser zu verstehen, wie der Traffic auf Ihrer Site im Laufe der Zeit zunehmen oder abnehmen kann.<br/>**Basierend auf Ihren Erkenntnissen können Sie** eine beliebige Anzahl von Dingen ausführen, z. B. die Effektivität einer kürzlich gestarteten Marketing-Kampagne bewerten, indem Sie den Site-Traffic vor und nach dem Start der Kampagne vergleichen. Oder Sie vergleichen den jährlichen Urlaubsverkehr.<br/>Diese Vorlage verwendet die Dimension Tag und die Metrik Seitenansichten ."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -158,8 +158,8 @@ So greifen Sie auf alle verfügbaren vordefinierten Vorlagen zu:
 
 >[!CONTEXTUALHELP]
 >id="cja_template_desc_web_visits"
->title="Webbesuchsvorlage"
->abstract="Anzeigen der Gesamtzahl der Besuche Die Daten werden über einen bestimmten Zeitraum hinweg angezeigt und mit früheren Zeiträumen verglichen. <br/>**Dies kann Ihnen** helfen, besser zu verstehen, wie der Traffic auf Ihrer Site im Laufe der Zeit zunehmen oder abnehmen kann.<br/>**Basierend auf Ihren Erkenntnissen können Sie** eine beliebige Anzahl von Dingen ausführen, z. B. die Effektivität einer kürzlich gestarteten Marketing-Kampagne bewerten, indem Sie den Site-Traffic vor und nach dem Start der Kampagne vergleichen. Oder Sie vergleichen den jährlichen Urlaubsverkehr.<br/>Diese Vorlage verwendet die Dimension Tag und die Metrik Besuche ."
+>title="Anzeigen der Gesamtzahl der Besuche Die Daten werden über einen bestimmten Zeitraum hinweg angezeigt und mit früheren Zeiträumen verglichen."
+>abstract="**Dies kann Ihnen** helfen, besser zu verstehen, wie der Traffic auf Ihrer Site im Laufe der Zeit zunehmen oder abnehmen kann.<br/>**Basierend auf Ihren Erkenntnissen können Sie** eine beliebige Anzahl von Dingen ausführen, z. B. die Effektivität einer kürzlich gestarteten Marketing-Kampagne bewerten, indem Sie den Site-Traffic vor und nach dem Start der Kampagne vergleichen. Oder Sie vergleichen den jährlichen Urlaubsverkehr.<br/>Diese Vorlage verwendet die Dimension Tag und die Metrik Besuche ."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -185,12 +185,82 @@ So greifen Sie auf alle verfügbaren vordefinierten Vorlagen zu:
 
 >[!CONTEXTUALHELP]
 >id="cja_template_desc_key_metrics"
->title="Vorlage für Schlüsselmetriken"
->abstract="Zeigen Sie einen Bericht an, der die Metriken zu Seitenansichten, Besuchen und Unique Visitors nebeneinander anzeigt. Die Daten werden über einen bestimmten Zeitraum hinweg angezeigt und mit früheren Zeiträumen verglichen. <br/>**Dies kann Ihnen helfen, diese wichtigen Metriken zu vergleichen, um ein vollständigeres Bild über die Anzahl der Unique Visitors auf der Site, die Anzahl der Seitenbesuche und die Anzahl der Sitzungen zu erhalten.**<br/>**Basierend auf Ihren Erkenntnissen können Sie** beliebig viele Dinge tun, z. B. die durchschnittliche Anzahl der Seiten, die jeder Besucher während eines Besuchs auf der Site in einer bestimmten Woche oder in einem bestimmten Monat angesehen hat, und wie sich dies während bestimmter Zeiten des Jahres oder vor und nach der Ausführung von Marketingkampagnen verändert hat. <br/>Diese Vorlage verwendet die Dimension Tag , die Metrik Seitenansichten , die Metrik Besuche und die Metrik Unique Visitors ."
+>title="Zeigen Sie einen Bericht an, der die Metriken zu Seitenansichten, Besuchen und Unique Visitors nebeneinander anzeigt. Die Daten werden über einen bestimmten Zeitraum hinweg angezeigt und mit früheren Zeiträumen verglichen."
+>abstract="**Dies kann Ihnen helfen, diese wichtigen Metriken zu vergleichen, um ein vollständigeres Bild über die Anzahl der Unique Visitors auf der Site, die Anzahl der Seitenbesuche und die Anzahl der Sitzungen zu erhalten.**<br/>**Basierend auf Ihren Erkenntnissen können Sie** beliebig viele Dinge tun, z. B. die durchschnittliche Anzahl der Seiten, die jeder Besucher während eines Besuchs auf der Site in einer bestimmten Woche oder in einem bestimmten Monat angesehen hat, und wie sich dies während bestimmter Zeiten des Jahres oder vor und nach der Ausführung von Marketingkampagnen verändert hat. <br/>Diese Vorlage verwendet die Dimension Tag , die Metrik Seitenansichten , die Metrik Besuche und die Metrik Unique Visitors ."
 
 <!-- markdownlint-enable MD034 -->
 
+<!-- markdownlint-disable MD034 -->
 
+>[!CONTEXTUALHELP]
+>id="cja_template_desc_site_sections"
+>title="Zeigen Sie die beliebtesten oder leistungsstärksten Abschnitte Ihrer Site an."
+>abstract="**Dies kann Ihnen** helfen, besser zu verstehen, welche Bereiche Ihrer Site am häufigsten besucht werden.<br>**Basierend auf dem, was Sie lernen, können Sie** eine beliebige Anzahl von Dingen ausführen, z. B. um zu beurteilen, welche Produkte oder Services Sie bereitstellen, die das meiste Interesse generieren.<br/>Diese Vorlage verwendet die Dimension Sitebereich und die Metrik Besuche ."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_template_desc_next_previous_page"
+>title="Sehen Sie sich die häufigsten Orte an, die Besucher direkt nach einem Besuch oder unmittelbar vor dem Besuch eines bestimmten Ortes aufrufen."
+>abstract="**Dies kann Ihnen** dabei helfen, zu verstehen, wie sich der Traffic von einer bestimmten Seite zu anderen Teilen Ihrer Site bewegt, und die Pfade zu verstehen, die Besucher nehmen, um zu einer bestimmten Seite zu gelangen.<br/>**Basierend auf dem, was Sie lernen, können Sie** eine beliebige Anzahl von Dingen ausführen, z. B. um zu beurteilen, ob das Seitendesign oder das Layout optimiert werden kann, um Personen zu wünschenswerteren Seiten zu leiten, z. B. zu einer Seite, um einen Kauf zu tätigen oder einen Review zu verlassen. Oder bewerten Sie, ob die Informationen auf der aktuellen Seite wahrscheinlich die Richtung oder die Aktionen bieten, nach denen Benutzer suchen, wenn sie von vorherigen Seiten kommen. Oder Sie können bewerten, ob Seiten, die nicht als vorherige Seiten angezeigt werden, auffälliger Links zur aktuellen Seite benötigen.<br/>Diese Vorlage verwendet das Bedienfeld &quot;Nächstes oder vorheriges Element&quot;."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_template_desc_campaigns"
+>title="Zeigen Sie die Links an, die am erfolgreichsten zur Erhöhung des Traffics auf Ihre Site beigetragen haben."
+>abstract="**Dies kann Ihnen** helfen, besser zu verstehen, welche Trackingcodes (und die Links, mit denen sie verknüpft sind) am häufigsten beim Zugriff auf Ihre Site verwendet wurden.<br/>**Basierend auf dem, was Sie lernen, können Sie** eine beliebige Anzahl von Dingen ausführen, z. B. Ihre Strategie anpassen, wo Sie Links zu Ihrer Site hinzufügen.<br/>Diese Vorlage verwendet die Dimension Trackingcode und die Metrik Besuche ."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_template_desc_products"
+>title="Anzeigen der Anzahl der Bestellungen nach Produkt. Daten werden über einen bestimmten Zeitraum angezeigt."
+>abstract="**Dies hilft Ihnen** zu verstehen, welche Produkte die höchste oder die niedrigste Nachfrage aufweisen.<br/>**Basierend auf dem, was Sie lernen, können Sie** eine beliebige Anzahl von Dingen ausführen, z. B. Ihre Marketing-Strategien so anpassen, dass sie leistungsstarke Produkte bewerben oder Produkte mit schlechter Leistung verbessern oder einstellen. Sie können Ihren Produktbestand auch auf Grundlage Ihrer Datenanalyse anpassen.<br/>Diese Vorlage verwendet die Dimension Produkt und die Metrik Bestellungen ."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_template_desc_last_touch"
+>title="Zeigen Sie die neuesten Marketing-Kanäle an, mit denen Besucher während ihres Interaktionszeitraums (standardmäßig 30 Tage) übereinstimmen."
+>abstract="**Dies kann Ihnen** dabei helfen zu verstehen, welche Marketing-Kanäle am effektivsten waren, um Personen zu Ihrer Site zu bringen, die zu Konversionen führten.<br/>**Je nachdem, was Sie lernen, können Sie** eine beliebige Anzahl von Dingen ausführen, z. B. mehr Ressourcen für leistungsstarke Kanäle zuweisen oder weniger Ressourcen für leistungsschwache Kanäle zuweisen.<br/>Diese Vorlage verwendet die Dimension Letztkontakt Kanal und die Metrik Unique Visitors ."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_template_desc_last_touch_detail"
+>title="Zeigen Sie Details zu den neuesten Marketing-Kanälen an, mit denen Besucher während ihres Interaktionszeitraums (standardmäßig 30 Tage) übereinstimmen."
+>abstract="**Dies kann Ihnen** helfen, nicht nur zu verstehen, welche Marketing-Kanäle am effektivsten waren, um Personen zu Ihrer Site zu bringen, die zu Konversionen führten, sondern auch Details zu diesen Marketing-Kanälen. Wenn beispielsweise ein Besucher zu Ihrer Site gelangt ist und mit dem Marketing-Kanal „Paid Search“ übereinstimmt, können Sie anhand des Kanaldetails sehen, welche Suchmaschine verwendet wurde oder nach welchem Schlüsselwort er gesucht hat.<br/>**Je nachdem, was Sie lernen, können Sie** eine beliebige Anzahl von Dingen ausführen, z. B. mehr Ressourcen für leistungsstarke Kanäle zuweisen oder weniger Ressourcen für leistungsschwache Kanäle zuweisen.<br/>Diese Vorlage verwendet die Dimension Letztkontakt Kanaldetail und die Metrik Unique Visitors . "
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_template_desc_revenue"
+>title="Zeigen Sie den Geldbetrag der bei allen Bestellungen gekauften Produkte an. Die Daten werden über einen bestimmten Zeitraum hinweg angezeigt und mit früheren Zeiträumen verglichen."
+>abstract="**Dies hilft Ihnen** zu verstehen, wie der Umsatz im Laufe der Zeit steigt oder abnimmt. Sie können diese Metrik mit einer beliebigen Dimension kombinieren, um zu erfahren, welche Dimensionselemente zum Umsatz beigetragen haben.<br/>**Je nachdem, was Sie lernen, können Sie** eine beliebige Anzahl von Dingen ausführen, z. B. zukünftige Projekterlöse basierend auf früheren Trends. Sie können auch eine weitere Dimension hinzufügen, z. B. die Dimension Trackingcode , um zu erfahren, welche Kampagnen den meisten Umsatz generieren.<br/>Diese Vorlage verwendet die Dimension Tag und die Metrik Umsatz ."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_template_desc_orders"
+>title="Anzeigen der Gesamtanzahl der Kaufereignisse. Die Daten werden über einen bestimmten Zeitraum hinweg angezeigt und mit früheren Zeiträumen verglichen."
+>abstract="**Dies kann Ihnen** helfen, besser zu verstehen, wie das Interesse an Ihren Produkten und Services im Laufe der Zeit steigt oder abnimmt. Sie können ein Segment anwenden, um zu erfahren, welche Kunden oder Regionen die meisten Bestellungen aufgeben und wie diese Bestellungen im Laufe der Zeit im Trend liegen.<br/>**Basierend auf Ihren Erkenntnissen können Sie** eine beliebige Anzahl von Maßnahmen durchführen, z. B. die Effektivität einer kürzlich gestarteten Marketing-Kampagne durch Vergleich der Bestellungen vor und nach dem Start der Kampagne. Oder Sie vergleichen Jahresvergleiche mit Urlaubsaufträgen.<br/>Diese Vorlage verwendet die Dimension Tag und die Metrik Bestellungen ."
+
+<!-- markdownlint-enable MD034 -->
 
 Die folgenden Vorlagen sind verfügbar:
 
@@ -210,10 +280,64 @@ Die folgenden Vorlagen sind verfügbar:
 | [!UICONTROL **Produkte**] | Anzeigen der Anzahl der Bestellungen nach Produkt. Daten werden über einen bestimmten Zeitraum angezeigt. <p>**Dies hilft Ihnen** zu verstehen, welche Produkte die höchste oder die niedrigste Nachfrage aufweisen.</p><p>**Basierend auf dem, was Sie lernen, können Sie** eine beliebige Anzahl von Dingen ausführen, z. B. Ihre Marketing-Strategien so anpassen, dass sie leistungsstarke Produkte bewerben oder Produkte mit schlechter Leistung verbessern oder einstellen. Sie können Ihren Produktbestand auch auf Grundlage Ihrer Datenanalyse anpassen.</p><p>Diese Vorlage verwendet die Dimension Produkt und die Metrik Bestellungen .</p> |
 | [!UICONTROL **Letztkontakt Marketingkanal**] | Zeigen Sie die neuesten Marketing-Kanäle an, mit denen Besucher während ihres Interaktionszeitraums (standardmäßig 30 Tage) übereinstimmen.<p>**Dies kann Ihnen** dabei helfen zu verstehen, welche Marketing-Kanäle am effektivsten waren, um Personen zu Ihrer Site zu bringen, die zu Konversionen führten.</p><p>**Je nachdem, was Sie lernen, können Sie** eine beliebige Anzahl von Dingen ausführen, z. B. mehr Ressourcen für leistungsstarke Kanäle zuweisen oder weniger Ressourcen für leistungsschwache Kanäle zuweisen.</p><p>Diese Vorlage verwendet die Dimension Letztkontakt Kanal und die Metrik Unique Visitors .</p> |
 | [!UICONTROL **Letztkontakt Marketingkanaldetail**] | Zeigen Sie Details zu den neuesten Marketing-Kanälen an, mit denen Besucher während ihres Interaktionszeitraums (standardmäßig 30 Tage) übereinstimmen.<p>**Dies kann Ihnen** helfen, nicht nur zu verstehen, welche Marketing-Kanäle am effektivsten waren, um Personen zu Ihrer Site zu bringen, die zu Konversionen führten, sondern auch Details zu diesen Marketing-Kanälen. Wenn beispielsweise ein Besucher zu Ihrer Site gelangt ist und mit dem Marketing-Kanal „Paid Search“ übereinstimmt, können Sie anhand des Kanaldetails sehen, welche Suchmaschine verwendet wurde oder nach welchem Schlüsselwort er gesucht hat.</p><p>**Je nachdem, was Sie lernen, können Sie** eine beliebige Anzahl von Dingen ausführen, z. B. mehr Ressourcen für leistungsstarke Kanäle zuweisen oder weniger Ressourcen für leistungsschwache Kanäle zuweisen.</p><p>Diese Vorlage verwendet die Dimension Letztkontakt Kanaldetail und die Metrik Unique Visitors .</p> |
-| [!UICONTROL **Umsatz**] | Zeigen Sie den Geldbetrag der bei allen Bestellungen gekauften Produkte an. Die Daten werden über einen bestimmten Zeitraum hinweg angezeigt und mit früheren Zeiträumen verglichen.<p>**Dies hilft Ihnen** zu verstehen, wie der Umsatz im Laufe der Zeit steigt oder abnimmt. Sie können diese Metrik mit einer beliebigen Dimension kombinieren, um zu erfahren, welche Dimensionselemente zum Umsatz beigetragen haben.</p><p>**Je nachdem, was Sie lernen, können Sie** eine beliebige Anzahl von Dingen ausführen, z. B. zukünftige Projekterlöse basierend auf früheren Trends. Sie können auch eine weitere Dimension hinzufügen, z. B. die Dimension Trackingcode , um zu erfahren, welche Kampagnen den meisten Umsatz generieren.</p><p>Diese Vorlage verwendet die Dimension Tag und die Metrik Umsatz .</p> |
-| [!UICONTROL **Bestellungen**] | Anzeigen der Gesamtanzahl der Kaufereignisse. Die Daten werden über einen bestimmten Zeitraum hinweg angezeigt und mit früheren Zeiträumen verglichen. <p>**Dies kann Ihnen** helfen, besser zu verstehen, wie das Interesse an Ihren Produkten und Services im Laufe der Zeit steigt oder abnimmt. Sie können ein Segment anwenden, um zu erfahren, welche Kunden oder Regionen die meisten Bestellungen aufgeben und wie diese Bestellungen im Laufe der Zeit im Trend liegen.</p><p>**Basierend auf Ihren Erkenntnissen können Sie** eine beliebige Anzahl von Maßnahmen durchführen, z. B. die Effektivität einer kürzlich gestarteten Marketing-Kampagne durch Vergleich der Bestellungen vor und nach dem Start der Kampagne. Oder Sie vergleichen Jahresvergleiche mit Urlaubsaufträgen.</p><p>Diese Vorlage verwendet die Dimension Tag und die Metrik Bestellungen .</p> |
+| [!UICONTROL **Umsatz**] | <!--duplicated in Web Conversion section-->Zeigen Sie den Geldbetrag der bei allen Bestellungen gekauften Produkte an. Die Daten werden über einen bestimmten Zeitraum hinweg angezeigt und mit früheren Zeiträumen verglichen.<p>**Dies hilft Ihnen** zu verstehen, wie der Umsatz im Laufe der Zeit steigt oder abnimmt. Sie können diese Metrik mit einer beliebigen Dimension kombinieren, um zu erfahren, welche Dimensionselemente zum Umsatz beigetragen haben.</p><p>**Je nachdem, was Sie lernen, können Sie** eine beliebige Anzahl von Dingen ausführen, z. B. zukünftige Projekterlöse basierend auf früheren Trends. Sie können auch eine weitere Dimension hinzufügen, z. B. die Dimension Trackingcode , um zu erfahren, welche Kampagnen den meisten Umsatz generieren.</p><p>Diese Vorlage verwendet die Dimension Tag und die Metrik Umsatz .</p> |
+| [!UICONTROL **Bestellungen**] | <!--duplicated in Web Conversion section-->Anzeigen der Gesamtanzahl der Kaufereignisse. Die Daten werden über einen bestimmten Zeitraum hinweg angezeigt und mit früheren Zeiträumen verglichen. <p>**Dies kann Ihnen** helfen, besser zu verstehen, wie das Interesse an Ihren Produkten und Services im Laufe der Zeit steigt oder abnimmt. Sie können ein Segment anwenden, um zu erfahren, welche Kunden oder Regionen die meisten Bestellungen aufgeben und wie diese Bestellungen im Laufe der Zeit im Trend liegen.</p><p>**Basierend auf Ihren Erkenntnissen können Sie** eine beliebige Anzahl von Maßnahmen durchführen, z. B. die Effektivität einer kürzlich gestarteten Marketing-Kampagne durch Vergleich der Bestellungen vor und nach dem Start der Kampagne. Oder Sie vergleichen Jahresvergleiche mit Urlaubsaufträgen.</p><p>Diese Vorlage verwendet die Dimension Tag und die Metrik Bestellungen .</p> |
 
-### Web: Interaktion
+### Web: Interaktion {#web-engagement}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_template_time_spent"
+>title="Sehen Sie sich die durchschnittliche Besuchszeit auf Ihrer Site während jedes Besuchs sowie die durchschnittliche Besuchszeit vor einem Erfolgsereignis an. Die Daten werden über einen bestimmten Zeitraum hinweg angezeigt und mit früheren Zeiträumen verglichen."
+>abstract="**Dies kann Ihnen** helfen, die Interaktionsstufen der Besucher besser zu verstehen und zu verstehen, wie viel Zeit Besucher benötigen, um eine gewünschte Aktion durchzuführen, z. B. einen Kauf.<br/>**Basierend auf Ihren Erkenntnissen können Sie** eine beliebige Anzahl von Maßnahmen ergreifen, z. B. um zu bewerten, ob Änderungen an Ihrer Site die Fähigkeit der Besucher verbessern, schnell ein Erfolgsereignis zu erreichen.<br/>Diese Vorlage verwendet die Dimension Tag , die Metrik Zeit pro Besuch (Sekunden) , die Dimension Tag und die Metrik Zeit pro Besuch (Sekunden) ."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_template_web_content_consumption"
+>title="Sehen Sie sich an, welche Webinhalte am häufigsten verwendet werden und wie Benutzer angesprochen werden."
+>abstract="**Dies kann Ihnen** helfen, besser zu verstehen, wo Personen beim ersten Einstieg in die Site hineingehen, welche Bereiche der Site von den Besuchern am häufigsten besucht werden und welche Seiten die Besucher am wahrscheinlichsten von der Site wegführen.<br/>**Basierend auf dem, was Sie lernen, können Sie** eine beliebige Anzahl von Dingen ausführen, z. B. um zu beurteilen, welche Pfade auf der Site Menschen zu den wichtigsten Seiten führen und welche Seiten die Besucher wahrscheinlicher von der Site weg führen.<br/>Diese Vorlage verwendet die Dimension Seite und die Metrik Seitenansichten , die Metrik Besuche , die Metrik Unique Visitors , die Metrik Einstiegsrate , die Metrik Absprungrate , die Metrik Ausstiegsrate und die Metrik Content-Geschwindigkeit . Außerdem werden Flussvisualisierungen für Einstiegs-, Ausstiegs- und Top-Abschnitte verwendet."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_template_media_content_consumption"
+>title="Sehen Sie sich an, welche Medieninhalte am häufigsten verwendet werden und Benutzer anregen."
+>abstract="**Dies kann Ihnen** helfen, besser zu verstehen, wo Personen beim ersten Einstieg in die Site hineingehen, welche Bereiche der Site von den Besuchern am häufigsten besucht werden und welche Seiten die Besucher am wahrscheinlichsten von der Site wegführen.<br/>**Basierend auf dem, was Sie lernen, können Sie** eine beliebige Anzahl von Dingen ausführen, z. B. um zu beurteilen, welche Pfade auf der Site Menschen zu den wichtigsten Seiten führen und welche Seiten die Besucher wahrscheinlicher von der Site weg führen.<br/>Diese Vorlage verwendet die Dimension Seite und die Metrik Seitenansichten , die Metrik Besuche , die Metrik Unique Visitors , die Metrik Einstiegsrate , die Metrik Absprungrate , die Metrik Ausstiegsrate und die Metrik Content-Geschwindigkeit . Darüber hinaus werden Flussvisualisierungen für Einstiegs-, Ausstiegs- und oberste Abschnitte verwendet, eine Starterplotvisualisierung, die Seitenansichten für die häufigsten Seiten anzeigt, eine Balkenvisualisierung, die Seitenansichten nach zusammengefasster Zeit anzeigt, und eine Linienvisualisierung, die eine Trendansicht der durchschnittlichen Besuchszeit auf der Site anzeigt."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_template_page_summary"
+>title="Zeigen Sie wichtige Informationen zu beliebigen Seiten in Ihren Eigenschaften an. Zeigt Seitenansichten, eine Trendlinie, eine Flussvisualisierung und mehr an."
+>abstract="**Dies kann Ihnen** helfen, besser zu verstehen, wie Benutzer mit einer bestimmten Seite interagieren.<br/>**Je nachdem, was Sie lernen, können Sie** eine beliebige Anzahl von Dingen ausführen, z. B. die Leistung der Seite über einen bestimmten Zeitraum analysieren oder besser verstehen, was den Traffic zur Seite bringt.<br/>Diese Vorlage verwendet die Metrik &quot;Seitenansichten&quot;. Außerdem werden die Linienvisualisierung und die Flussvisualisierung verwendet."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_template_entry_pages"
+>title="Zeigen Sie die wichtigsten Seiten an, auf die Benutzer beim ersten Besuch Ihrer Site zugreifen."
+>abstract="**Dies kann Ihnen** helfen, besser zu verstehen, welche Seiten den meisten Traffic zu Ihrer Site leiten, oder mehr über die ersten Impressionen zu verstehen, die Besucher auf Ihrer Site haben.<br/>**Basierend auf dem, was Sie lernen, können Sie** eine beliebige Anzahl von Dingen ausführen, z. B. die ersten Erlebnisse optimieren, die Besucher auf der Site erhalten, oder sicherstellen, dass die Seiten, die Besucher beim Einstieg auf Ihre Site zuerst sehen, willkommen heißen und die erforderlichen Links zu anderen Bereichen Ihrer Site bereitstellen.<br/>Diese Vorlage verwendet die Sitzungsmetrik. Außerdem werden die Balkenvisualisierung und die Freiformtabellen-Visualisierung verwendet."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_template_exit_pages"
+>title="Zeigen Sie die wichtigsten Seiten an, auf die Benutzer unmittelbar vor dem Verlassen Ihrer Site zugreifen."
+>abstract="**Dies kann Ihnen** helfen, besser zu verstehen, welche Seiten Personen von der Site wegführen. <br/>**Basierend auf dem, was Sie lernen, können Sie** eine beliebige Anzahl von Dingen ausführen, z. B. gängige Exitpages aktualisieren, um das Erlebnis zu optimieren, das Besucher vor dem Verlassen erhalten, oder Inhalte oder Links einschließen, um Menschen dazu zu ermutigen, auf Ihrer Site zu bleiben.<br/>Diese Vorlage verwendet die Sitzungsmetrik. Außerdem werden die Balkenvisualisierung und die Freiformtabellen-Visualisierung verwendet."
+
+<!-- markdownlint-enable MD034 -->
 
 Die folgenden Vorlagen sind verfügbar:
 
@@ -225,15 +349,87 @@ Die folgenden Vorlagen sind verfügbar:
 | [!UICONTROL **Besuche**] | <!--duplicated in Most popular section-->Anzeigen der Gesamtzahl der Besuche Die Daten werden über einen bestimmten Zeitraum hinweg angezeigt und mit früheren Zeiträumen verglichen. <p>**Dies kann Ihnen** helfen, besser zu verstehen, wie der Traffic auf Ihrer Site im Laufe der Zeit zunehmen oder abnehmen kann.</p><p>**Basierend auf Ihren Erkenntnissen können Sie** eine beliebige Anzahl von Dingen ausführen, z. B. die Effektivität einer kürzlich gestarteten Marketing-Kampagne bewerten, indem Sie den Site-Traffic vor und nach dem Start der Kampagne vergleichen. Oder Sie vergleichen den jährlichen Urlaubsverkehr.</p><p>Diese Vorlage verwendet die Dimension Tag und die Metrik Besuche .</p> |
 | [!UICONTROL **Besucher**] | <!--duplicated in Most popular section-->die Gesamtzahl der Unique Visitors anzeigen. Die Daten werden über einen bestimmten Zeitraum hinweg angezeigt und mit früheren Zeiträumen verglichen. <p>**Dies kann Ihnen** helfen, besser zu verstehen, wie die Reichweite und die Zielgruppengröße Ihrer Site im Laufe der Zeit oder im Vergleich zu einem früheren Zeitraum zunimmt oder abnimmt.</p><p>**Basierend auf Ihren Erkenntnissen können Sie** eine beliebige Anzahl von Maßnahmen durchführen, z. B. um zu bewerten, ob eine kürzlich gestartete Marketing-Kampagne erfolgreich darin bestand, neue Besucher auf die Site zu locken, indem Sie Unique Visitors vor und nach dem Start der Kampagne vergleichen. Oder Sie können die Anzahl der Personen vergleichen, die die Website während der Ferien im Jahr besuchen.</p><p>Diese Vorlage verwendet die Dimension Tag und die Metrik Unique Visitors .</p> |
 | [!UICONTROL **Besuchszeit**] | Sehen Sie sich die durchschnittliche Besuchszeit auf Ihrer Site während jedes Besuchs sowie die durchschnittliche Besuchszeit vor einem Erfolgsereignis an. Die Daten werden über einen bestimmten Zeitraum hinweg angezeigt und mit früheren Zeiträumen verglichen. <p>**Dies kann Ihnen** helfen, die Interaktionsstufen der Besucher besser zu verstehen und zu verstehen, wie viel Zeit Besucher benötigen, um eine gewünschte Aktion durchzuführen, z. B. einen Kauf.</p><p>**Basierend auf Ihren Erkenntnissen können Sie** eine beliebige Anzahl von Maßnahmen ergreifen, z. B. um zu bewerten, ob Änderungen an Ihrer Site die Fähigkeit der Besucher verbessern, schnell ein Erfolgsereignis zu erreichen.</p><p>Diese Vorlage verwendet die Dimension Tag , die Metrik Zeit pro Besuch (Sekunden) , die Dimension Tag und die Metrik Zeit pro Besuch (Sekunden) .</p> |
-| [!UICONTROL **Site-Abschnitte**] | <!--duplicated in Most popular section-->Zeigen Sie die beliebtesten oder leistungsstärksten Abschnitte Ihrer Site an. <p>**Dies kann Ihnen** helfen, besser zu verstehen, welche Bereiche Ihrer Site am häufigsten besucht werden.</p><p>**Basierend auf dem, was Sie lernen, können Sie** eine beliebige Anzahl von Dingen ausführen, z. B. um zu beurteilen, welche Produkte oder Services Sie bereitstellen, die das meiste Interesse generieren.</p> <p>Diese Vorlage verwendet die Dimension Sitebereich und die Metrik Besuche .</p> |
-| [!UICONTROL **Verbrauch von Webinhalten**] | Sehen Sie sich an, welche Webinhalte am häufigsten verwendet werden und wie Benutzer angesprochen werden.<p>**Dies kann Ihnen** helfen, besser zu verstehen, wo Personen beim ersten Einstieg in die Site hineingehen, welche Bereiche der Site von den Besuchern am häufigsten besucht werden und welche Seiten die Besucher am wahrscheinlichsten von der Site wegführen.</p><p>**Basierend auf dem, was Sie lernen, können Sie** eine beliebige Anzahl von Dingen ausführen, z. B. feststellen, welche Pfade auf der Site Menschen zu den wichtigsten Seiten führen und welche Seiten die Besucher wahrscheinlicher von der Site wegführen <!-- not sure about these takeaways... -->.</p> <p>Diese Vorlage verwendet die Dimension Seite und die Metrik Seitenansichten , die Metrik Besuche , die Metrik Unique Visitors , die Metrik Einstiegsrate , die Metrik Absprungrate , die Metrik Ausstiegsrate und die Metrik Content-Geschwindigkeit . Außerdem werden Flussvisualisierungen für Einstiegs-, Ausstiegs- und Top-Abschnitte verwendet.</p> |
+| [!UICONTROL **Sitebereiche**] | <!--duplicated in Most popular section-->Zeigen Sie die beliebtesten oder leistungsstärksten Abschnitte Ihrer Site an. <p>**Dies kann Ihnen** helfen, besser zu verstehen, welche Bereiche Ihrer Site am häufigsten besucht werden.</p><p>**Basierend auf dem, was Sie lernen, können Sie** eine beliebige Anzahl von Dingen ausführen, z. B. um zu beurteilen, welche Produkte oder Services Sie bereitstellen, die das meiste Interesse generieren.</p> <p>Diese Vorlage verwendet die Dimension Sitebereich und die Metrik Besuche .</p> |
+| [!UICONTROL **Nutzung von Webinhalten**] | Sehen Sie sich an, welche Webinhalte am häufigsten verwendet werden und wie Benutzer angesprochen werden.<p>**Dies kann Ihnen** helfen, besser zu verstehen, wo Personen beim ersten Einstieg in die Site hineingehen, welche Bereiche der Site von den Besuchern am häufigsten besucht werden und welche Seiten die Besucher am wahrscheinlichsten von der Site wegführen.</p><p>**Basierend auf dem, was Sie lernen, können Sie** eine beliebige Anzahl von Dingen ausführen, z. B. feststellen, welche Pfade auf der Site Menschen zu den wichtigsten Seiten führen und welche Seiten die Besucher wahrscheinlicher von der Site wegführen <!-- not sure about these takeaways... -->.</p> <p>Diese Vorlage verwendet die Dimension Seite und die Metrik Seitenansichten , die Metrik Besuche , die Metrik Unique Visitors , die Metrik Einstiegsrate , die Metrik Absprungrate , die Metrik Ausstiegsrate und die Metrik Content-Geschwindigkeit . Außerdem werden Flussvisualisierungen für Einstiegs-, Ausstiegs- und Top-Abschnitte verwendet.</p> |
 | [!UICONTROL **Verbrauch von Medieninhalten**] | Sehen Sie sich an, welche Medieninhalte am häufigsten verwendet werden und Benutzer anregen.<p>**Dies kann Ihnen** helfen, besser zu verstehen, wo Personen beim ersten Einstieg in die Site hineingehen, welche Bereiche der Site von den Besuchern am häufigsten besucht werden und welche Seiten die Besucher am wahrscheinlichsten von der Site wegführen.</p><p>**Basierend auf dem, was Sie lernen, können Sie** eine beliebige Anzahl von Dingen ausführen, z. B. feststellen, welche Pfade auf der Site Menschen zu den wichtigsten Seiten führen und welche Seiten die Besucher wahrscheinlicher von der Site wegführen <!-- not sure about these takeaways... -->.</p> <p>Diese Vorlage verwendet die Dimension Seite und die Metrik Seitenansichten , die Metrik Besuche , die Metrik Unique Visitors , die Metrik Einstiegsrate , die Metrik Absprungrate , die Metrik Ausstiegsrate und die Metrik Content-Geschwindigkeit . Darüber hinaus werden Flussvisualisierungen für Einstiegs-, Ausstiegs- und oberste Abschnitte verwendet, eine Starterplotvisualisierung, die Seitenansichten für die häufigsten Seiten anzeigt, eine Balkenvisualisierung, die Seitenansichten nach zusammengefasster Zeit anzeigt, und eine Linienvisualisierung, die eine Trendansicht der durchschnittlichen Besuchszeit auf der Site anzeigt.</p> |
-| [!UICONTROL **Nächste und vorherige Seite**] | Sehen Sie sich die häufigsten Orte an, an denen Besucher vor oder nach dem Besuch eines bestimmten Ortes reisen.<p>**Dies kann Ihnen** helfen, besser zu verstehen, wo Personen beim ersten Einstieg in die Site hineinnavigieren, welche Bereiche der Site von den Besuchern am häufigsten besucht werden und welche Seiten am ehesten besucht werden, bevor sie die Site verlassen.</p><p>**Basierend auf dem, was Sie lernen, können Sie** eine beliebige Anzahl von Dingen ausführen, z. B. feststellen, welche Pfade auf der Site Menschen zu den wichtigsten Seiten führen und welche Seiten die Besucher wahrscheinlicher von der Site weg führen.<!-- not sure about these takeaways... --></p> <p>Diese Vorlage verwendet die Dimension Seite , die Metrik Seitenansichten , die Metrik Besuche , die Metrik Unique Visitors , die Metrik Einstiegsrate , die Metrik Absprungrate , die Metrik Ausstiegsrate und die Metrik Content-Geschwindigkeit . Darüber hinaus werden Flussvisualisierungen für Einstiegs-, Ausstiegs- und oberste Abschnitte, eine Streudiagrammdarstellung mit Seitenansichten für die häufigsten Seiten, eine Balkenvisualisierung, die Seitenansichten nach Zusammenfassungszeit anzeigt, und eine Linienvisualisierung verwendet, die eine Trendansicht der durchschnittlichen Besuchszeit auf der Site anzeigt.</p> |
+| [!UICONTROL **Nächste und vorherige Seite**] | <!--duplicated in Most popular section-->Sehen Sie sich die häufigsten Orte an, an denen Besucher vor oder nach dem Besuch eines bestimmten Ortes reisen.<p>**Dies kann Ihnen** helfen, besser zu verstehen, wo Personen beim ersten Einstieg in die Site hineinnavigieren, welche Bereiche der Site von den Besuchern am häufigsten besucht werden und welche Seiten am ehesten besucht werden, bevor sie die Site verlassen.</p><p>**Basierend auf dem, was Sie lernen, können Sie** eine beliebige Anzahl von Dingen ausführen, z. B. feststellen, welche Pfade auf der Site Menschen zu den wichtigsten Seiten führen und welche Seiten die Besucher wahrscheinlicher von der Site weg führen.<!-- not sure about these takeaways... --></p> <p>Diese Vorlage verwendet die Dimension Seite , die Metrik Seitenansichten , die Metrik Besuche , die Metrik Unique Visitors , die Metrik Einstiegsrate , die Metrik Absprungrate , die Metrik Ausstiegsrate und die Metrik Content-Geschwindigkeit . Darüber hinaus werden Flussvisualisierungen für Einstiegs-, Ausstiegs- und oberste Abschnitte, eine Streudiagrammdarstellung mit Seitenansichten für die häufigsten Seiten, eine Balkenvisualisierung, die Seitenansichten nach Zusammenfassungszeit anzeigt, und eine Linienvisualisierung verwendet, die eine Trendansicht der durchschnittlichen Besuchszeit auf der Site anzeigt.</p> |
 | **Seitenzusammenfassung** | Zeigen Sie wichtige Informationen zu beliebigen Seiten in Ihren Eigenschaften an. Zeigt Seitenansichten, eine Trendlinie, eine Flussvisualisierung und mehr an.  <p>**Dies kann Ihnen** helfen, besser zu verstehen, wie Benutzer mit einer bestimmten Seite interagieren.</p><p>**Je nachdem, was Sie lernen, können Sie** eine beliebige Anzahl von Dingen ausführen, z. B. die Leistung der Seite über einen bestimmten Zeitraum analysieren oder besser verstehen, was den Traffic zur Seite bringt.</p><p>Diese Vorlage verwendet die Metrik Seitenansichten . Außerdem werden die Linienvisualisierung und die Flussvisualisierung verwendet.</p> |
 | **Entrypages** | Zeigen Sie die wichtigsten Seiten an, auf die Benutzer beim ersten Besuch Ihrer Site zugreifen. <p>**Dies kann Ihnen** helfen, besser zu verstehen, welche Seiten den meisten Traffic zu Ihrer Site leiten, oder mehr über die ersten Impressionen zu verstehen, die Besucher auf Ihrer Site haben.</p><p>**Basierend auf dem, was Sie lernen, können Sie** eine beliebige Anzahl von Dingen ausführen, z. B. die ersten Erlebnisse optimieren, die Besucher auf der Site erhalten, oder sicherstellen, dass die Seiten, die Besucher beim Einstieg auf Ihre Site zuerst sehen, willkommen heißen und die erforderlichen Links zu anderen Bereichen Ihrer Site bereitstellen.</p><p>Diese Vorlage verwendet die Metrik Sitzungen . Außerdem werden die Balkenvisualisierung und die Freiformtabellen-Visualisierung verwendet.</p> |
 | **Exitpages** | Zeigen Sie die wichtigsten Seiten an, auf die Benutzer unmittelbar vor dem Verlassen Ihrer Site zugreifen.<p>**Dies kann Ihnen** helfen, besser zu verstehen, welche Seiten Personen von der Site wegführen. </p><p>**Basierend auf dem, was Sie lernen, können Sie** eine beliebige Anzahl von Dingen ausführen, z. B. gängige Exitpages aktualisieren, um das Erlebnis zu optimieren, das Besucher vor dem Verlassen erhalten, oder Inhalte oder Links einschließen, um Menschen dazu zu ermutigen, auf Ihrer Site zu bleiben.</p><p>Diese Vorlage verwendet die Metrik Sitzungen . Außerdem werden die Balkenvisualisierung und die Freiformtabellen-Visualisierung verwendet.</p> |
 
-### Web: Conversion
+### Web: Conversion {#web-conversion}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_template_product_conversion_funnel"
+>title="Produktkonversionstrichter-Vorlage"
+>abstract=""
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_template_product_performance"
+>title="Anzeigen der Produkte mit der höchsten Leistung."
+>abstract="**Dies kann Ihnen** helfen, besser zu verstehen, welche Produkte am erfolgreichsten sind.<br/>**Je nachdem, was Sie lernen, können Sie** eine beliebige Anzahl von Dingen ausführen, z. B. die Erhöhung der Finanzierung für erfolgreiche Produkte und die Verringerung der Finanzierung für weniger erfolgreiche Produkte.<br/>Diese Vorlage verwendet die Metriken &quot;Produktansichten&quot;, &quot;Zusatz zum Warenkorb&quot;, &quot;Bestellungen&quot;, &quot;Umsatz&quot;und &quot;Einheiten&quot;. Außerdem wird die Dimension Produkt verwendet."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_template_cart_conversion_funnels"
+>title="Sehen Sie sich an, wie oft Personen wichtige Checkout-Ereignisse ausgeführt haben, z. B. das Hinzufügen von Artikeln zum Warenkorb, das Anzeigen des Warenkorbs, das Entfernen von Artikeln aus dem Warenkorb und das Auschecken."
+>abstract="**Dies kann Ihnen** helfen, besser zu verstehen, welche Teile des Checkout-Prozess-Trichters zu einer Konversion führen und welche eher zum Warenkorbabbruch neigen.<br/>**Je nachdem, was Sie lernen, können Sie** eine beliebige Anzahl von Dingen ausführen, z. B. die Reibung bei bestimmten Schritten des Checkout-Prozesses reduzieren.<br/>Diese Vorlage verwendet die"
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_template_carts"
+>title="Zeigen Sie die Anzahl der Personen an, die ein Produkt zum Warenkorb hinzugefügt haben."
+>abstract="**Dies kann Ihnen** dabei helfen, die Anzahl der Personen, die ein Produkt zum Warenkorb hinzufügen, besser zu verstehen als die Gesamtzahl der Produkte, die zum Warenkorb hinzugefügt werden.<br/>**Je nachdem, was Sie lernen, können Sie** eine beliebige Anzahl von Dingen ausführen, z. B. die Effektivität Ihrer Produktseiten messen.<br/>Diese Vorlage verwendet die Metrik Warenkorb ."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_template_cart_views"
+>title="Zeigt an, wie oft Personen ihren Warenkorb angezeigt haben."
+>abstract="**Dies kann Ihnen** dabei helfen, das Kassengang-Erlebnis besser zu verstehen, um die Warenkorbabbruchsraten zu reduzieren oder die Zeit zwischen Warenkorbabbrüchen und Checkouts zwischen verschiedenen Produkten zu analysieren.<br/>**Basierend auf dem, was Sie lernen, können Sie** eine beliebige Anzahl von Dingen ausführen, z. B. Angebotsaktionen für Produkte, die am längsten im Warenkorb bleiben und das größte Risiko für einen Abbruch aufweisen.<br/>Diese Vorlage verwendet die Metrik Warenkorbansichten ."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_template_cart_additions"
+>title="Sehen Sie sich an, wie oft Personen etwas zum Warenkorb hinzugefügt haben."
+>abstract="**Dies kann Ihnen** helfen, den Teil des Konversionstrichter besser zu verstehen, in dem das Kundeninteresse an einem Produkt so hoch ist, dass es zum Warenkorb hinzugefügt wird.<br/>**Je nachdem, was Sie lernen, können Sie** eine beliebige Anzahl von Maßnahmen durchführen, z. B. die Verbesserung der Produktempfehlungen für alle Kunden. Dazu können Sie analysieren, welche Produkte häufig demselben Warenkorb hinzugefügt werden, und verwandte Produkte auf der Grundlage von Artikeln vorschlagen, die bereits im Warenkorb enthalten sind."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_template_cart_removals"
+>title="Sehen Sie sich an, wie oft Personen etwas aus dem Warenkorb entfernt haben."
+>abstract="**Dies kann Ihnen** dabei helfen, den Teil des Konversionstrichter besser zu verstehen, in dem Kunden kein Interesse mehr an einem Produkt haben, oder Ihnen dabei helfen, zu verstehen, wo im Checkout-Prozess möglicherweise Probleme auftreten.<br/>**Basierend auf dem, was Sie lernen, können Sie** eine beliebige Anzahl von Dingen ausführen, z. B. potenzielle Barrieren beseitigen, die im Checkout-Prozess bestehen könnten, wie z. B. ein kompliziertes Benutzererlebnis.<br/>Diese Vorlage verwendet die Metrik Entnahme aus Warenkorb ."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_template_purchase_conversion_funnel"
+>title="Vorlage für Einkaufskonversionstrichter"
+>abstract=""
+
+<!-- markdownlint-enable MD034 -->
 
 Die folgenden Vorlagen sind verfügbar:
 
@@ -248,8 +444,8 @@ Die folgenden Vorlagen sind verfügbar:
 | **Zusatz zum Warenkorb** | Sehen Sie sich an, wie oft Personen etwas zum Warenkorb hinzugefügt haben. <p>**Dies kann Ihnen** helfen, den Teil des Konversionstrichter besser zu verstehen, in dem das Kundeninteresse an einem Produkt so hoch ist, dass es zum Warenkorb hinzugefügt wird.</p><p>**Je nachdem, was Sie lernen, können Sie** eine beliebige Anzahl von Maßnahmen durchführen, z. B. die Verbesserung der Produktempfehlungen für alle Kunden. Dazu können Sie analysieren, welche Produkte häufig demselben Warenkorb hinzugefügt werden, und verwandte Produkte auf der Grundlage von Artikeln vorschlagen, die bereits im Warenkorb enthalten sind. |
 | **Entnahme aus Warenkorb** | Sehen Sie sich an, wie oft Personen etwas aus dem Warenkorb entfernt haben.<p>**Dies kann Ihnen** dabei helfen, den Teil des Konversionstrichter besser zu verstehen, in dem Kunden kein Interesse mehr an einem Produkt haben, oder Ihnen dabei helfen, zu verstehen, wo im Checkout-Prozess möglicherweise Probleme auftreten.</p><p>**Basierend auf dem, was Sie lernen, können Sie** eine beliebige Anzahl von Dingen ausführen, z. B. potenzielle Barrieren beseitigen, die im Checkout-Prozess bestehen könnten, wie z. B. ein kompliziertes Benutzererlebnis.</p><p>Diese Vorlage verwendet die Metrik Entnahme aus Warenkorb . |
 | **Einkaufskonversionstrichter** | <p>**Dies hilft Ihnen**, besser zu verstehen</p><p>**Je nachdem, was Sie lernen, können Sie** eine beliebige Anzahl von Dingen ausführen, z. B. </p><p>Diese Vorlage verwendet die |
-| **Umsatz** | Zeigen Sie den Geldbetrag der bei allen Bestellungen gekauften Produkte an.<p>**Dies kann Ihnen** dabei helfen, besser zu verstehen, welche Dimensionselemente zum Umsatz beigetragen haben, indem die Umsatzmetrik mit einer beliebigen Dimension kombiniert wird. Sie könnten beispielsweise die Top-Kampagnen (unter Verwendung der Dimension Trackingcode ) sehen, die zum Umsatz beigetragen haben. </p><p>**Basierend auf dem, was Sie lernen, können Sie** eine beliebige Anzahl von Dingen ausführen, z. B. Kampagnen anpassen, die nicht den erwarteten Umsatzzielen entsprechen.</p><p>Diese Vorlage verwendet die Umsatzmetrik. |
-| **Bestellungen** | Anzeigen der Gesamtzahl der Kaufereignisse auf Ihrer Site. <p>**Dies kann Ihnen** dabei helfen, besser zu verstehen, welche Dimensionselemente zu einer Bestellung beigetragen haben, indem die Metrik &quot;Bestellungen&quot;mit einer beliebigen Dimension kombiniert wird. Sie könnten beispielsweise die Top-Kampagnen (unter Verwendung der Dimension Trackingcode ) sehen, die zu Käufen beigetragen haben.</p><p>**Je nachdem, was Sie lernen, können Sie** eine beliebige Anzahl von Dingen ausführen, z. B. Kampagnen anpassen, die nicht den erwarteten Einkaufszielen entsprechen. </p><p>Diese Vorlage verwendet die Metrik Bestellungen . |
+| **Umsatz** | <!--duplicated in Most popular section-->Zeigen Sie den Geldbetrag der bei allen Bestellungen gekauften Produkte an.<p>**Dies kann Ihnen** dabei helfen, besser zu verstehen, welche Dimensionselemente zum Umsatz beigetragen haben, indem die Umsatzmetrik mit einer beliebigen Dimension kombiniert wird. Sie könnten beispielsweise die Top-Kampagnen (unter Verwendung der Dimension Trackingcode ) sehen, die zum Umsatz beigetragen haben. </p><p>**Basierend auf dem, was Sie lernen, können Sie** eine beliebige Anzahl von Dingen ausführen, z. B. Kampagnen anpassen, die nicht den erwarteten Umsatzzielen entsprechen.</p><p>Diese Vorlage verwendet die Umsatzmetrik. |
+| **Bestellungen** | <!--duplicated in Most popular section-->Anzeigen der Gesamtzahl der Kaufereignisse auf Ihrer Site. <p>**Dies kann Ihnen** dabei helfen, besser zu verstehen, welche Dimensionselemente zu einer Bestellung beigetragen haben, indem die Metrik &quot;Bestellungen&quot;mit einer beliebigen Dimension kombiniert wird. Sie könnten beispielsweise die Top-Kampagnen (unter Verwendung der Dimension Trackingcode ) sehen, die zu Käufen beigetragen haben.</p><p>**Je nachdem, was Sie lernen, können Sie** eine beliebige Anzahl von Dingen ausführen, z. B. Kampagnen anpassen, die nicht den erwarteten Einkaufszielen entsprechen. </p><p>Diese Vorlage verwendet die Metrik Bestellungen . |
 
 ### Web: Audience
 
