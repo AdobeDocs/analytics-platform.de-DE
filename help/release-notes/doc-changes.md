@@ -4,10 +4,10 @@ description: Listet Inhaltsaktualisierungen für Dokumentation zu Customer Journ
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 8ff3a1c874a0eb67e4b7a6edda6156c4d07edc9f
+source-git-commit: ad51c3cab669121e270603e133d53b6c97be8846
 workflow-type: tm+mt
-source-wordcount: '4173'
-ht-degree: 70%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -20,7 +20,7 @@ Die folgenden Aktualisierungen wurden seit der ersten Erstellung der Customer Jo
 | Funktion | Beschreibung |
 | --- | --- |
 | **Oktober 2024** | |
-| Gemeinsam verwendete Geräte | Es wurde ein Anwendungsfallartikel hinzugefügt, der Kontext auf gemeinsam genutzten Geräten bietet, wie Daten von gemeinsam genutzten Geräten mithilfe von Stitching verarbeitet und gemindert werden können und wie die Belichtung freigegebener Geräte in Ihren Daten mithilfe von Query Service verstanden werden kann. |
+| Gemeinsam verwendete Geräte | Es wurde ein [Anwendungsfall-Artikel](/help/use-cases/stitching/shared-devices.md) hinzugefügt, der Kontext auf gemeinsam genutzten Geräten bietet, wie Daten von freigegebenen Geräten mithilfe des Stitching verarbeitet und gemindert werden können und wie die Belichtung freigegebener Geräte in Ihren Daten mithilfe von Query Service verstanden werden kann. |
 | Neue Informationen zu Anfragefaktoren in der Leistung von Analysis Workspace | In einem neuen Abschnitt [Anfragefaktoren](/help/technotes/optimizing-performance.md#request-factors) im Artikel [Optimieren der Leistung von Analysis Workspace](/help/technotes/optimizing-performance.md) wird erläutert, wie Anfragen verarbeitet werden und welche Faktoren die Verarbeitungszeiten beeinflussen. |
 | Workspace und Komponenten | Die Dokumentation zu Analysis Workspace-Projekten (Projekten, Visualisierungen und Bedienfeldern) und Komponenten (Anmerkungen, Dimensionen, (berechnete) Metriken, Filtern, Datumsbereichen, Warnungen, geplanten Projekten und Zielgruppen) wurde aktualisiert. |
 | Geführte Analyse | Die Dokumentation wurde mit der Verfügbarkeit von [geführter Analysen](/help/guided-analysis/overview.md) aus Analysis Workspace aktualisiert. |
