@@ -9,10 +9,10 @@ index: true
 user-guide-title: Handbuch zu Customer Journey Analytics
 user-guide-description: Hier erhalten Sie Informationen zu Adobe Customer Journey Analytics und Erläuterungen zur Nutzung von Analysis Workspace mit Daten aus Experience Platform.
 breadcrumb-title: Handbuch zu Customer Journey Analytics
-source-git-commit: a047deeef0fb212780fffebc4dd2e2fe90258cbe
+source-git-commit: 64662195842ae799d2020c226ca34293905d13ae
 workflow-type: tm+mt
-source-wordcount: '985'
-ht-degree: 90%
+source-wordcount: '991'
+ht-degree: 89%
 
 ---
 
@@ -56,6 +56,7 @@ ht-degree: 90%
       + [Erstellen einer Verbindung](/help/getting-started/cja-upgrade/cja-upgrade-connection.md)
       + [Erstellen einer Datenansicht](/help/getting-started/cja-upgrade/cja-upgrade-dataview.md)
       + [Datenfluss überprüfen](/help/getting-started/cja-upgrade/cja-upgrade-validate.md)
+      + [Upgrade-Kurzbefehl: Migration zum Web SDK](/help/getting-started/cja-upgrade/cja-upgrade-shortcut-websdk.md)
    + Vergleich mit Adobe Analytics {#cja-aa-comparison}
       + [Überblick](../getting-started/aa-vs-cja/overview.md)
       + [Verwenden von Adobe Analytics-Daten](../getting-started/aa-vs-cja/aa-data-in-cja.md)
