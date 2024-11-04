@@ -5,9 +5,9 @@ role: User, Admin
 solution: Customer Journey Analytics
 hidefromtoc: true
 hide: true
-source-git-commit: 7f5eddcf1ceaa6228411867f5794bfe72b2ad6ab
+source-git-commit: 37be5b159b756db2c8b523db6602f274541e2a81
 workflow-type: tm+mt
-source-wordcount: '1537'
+source-wordcount: '1541'
 ht-degree: 4%
 
 ---
@@ -18,6 +18,8 @@ ht-degree: 4%
 Der Data Analysis AI-Assistent ist ein intelligenter, kontextbezogener Konversationsagent, der Ihnen dabei hilft, Fragen zu Ihren Analysis Workspace-Daten in Customer Journey Analytics schneller und effizienter zu beantworten.
 
 Der Assistent durchsucht alle Daten in einer Datenansicht, einschließlich der verschiedenen Metriktypen und Komponenten, und übersetzt Ihre Eingabeaufforderung in die richtige Dimension, Metrik und den richtigen Datumsbereich für Ihre Analyse. Anstatt sich mit den Datenansichtskomponenten vertraut zu machen und diese Komponenten zur Beantwortung Ihrer Frage per Drag-and-Drop in die beste Kombination zu ziehen, können Sie die Frage einfach in den AI-Assistenten eingeben.
+
+![Data ANalysis AI Assistant](assets/cja-ai-asst-da.gif)
 
 ## Funktionen für die Alpha-Version im Vergleich zum Umfang
 
