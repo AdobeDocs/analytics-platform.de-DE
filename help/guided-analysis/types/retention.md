@@ -1,25 +1,25 @@
 ---
-title: Treueanalyse
-description: Messen Sie, wie viele Benutzende weiterhin Ihr Produkt nutzen.
+title: Analyse „Treue“
+description: Messen Sie, wie viele Benutzende Ihr Produkt weiterhin verwenden.
 feature: Adobe Product Analytics, Guided Analysis
 keywords: Produktanalysen
 exl-id: c35a0ee0-e6b7-47b5-a5bc-308cde1585de
 role: User
 source-git-commit: d492220eaf12242a870f3826b31edd3d1ea99a3b
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1259'
+ht-degree: 3%
 
 ---
 
-# Treueanalyse {#retention}
+# Analyse „Treue“ {#retention}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja_workspace_guidedanalysis_retention_button"
 >title="Treue"
->abstract="Messen Sie, wie viele Benutzende weiterhin Ihr Produkt nutzen."
+>abstract="Messen Sie, wie viele Benutzende Ihr Produkt weiterhin verwenden."
 
 <!-- markdownlint-enable MD034 -->
 

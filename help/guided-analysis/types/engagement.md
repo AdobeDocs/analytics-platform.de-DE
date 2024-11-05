@@ -7,8 +7,8 @@ role: User
 exl-id: 8a48ad3b-fa30-497e-8306-f8d881b1a335
 source-git-commit: d492220eaf12242a870f3826b31edd3d1ea99a3b
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '748'
+ht-degree: 6%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 >[!CONTEXTUALHELP]
 >id="cja_workspace_guidedanalysis_engagement_button"
->title="Erweiterung"
+>title="Interaktion"
 >abstract="Erfahren Sie mehr über Umfang und Tiefe der Funktionsinteraktion."
 
 <!-- markdownlint-enable MD034 -->

@@ -7,8 +7,8 @@ role: Admin
 exl-id: c39ee568-97f6-4925-ae18-3d4a9dfdb6f5
 source-git-commit: ad446f55855696cf7721f34f779883792b7958fa
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '376'
+ht-degree: 25%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 0%
 >[!CONTEXTUALHELP]
 >id="cja_dataview_component_dimension_summarydatagroup_hideinreporting"
 >title="In Berichten verbergen"
->abstract="Wenn Sie diese Option auswählen, wird die Komponente **[!UICONTROL Ausblenden in Berichten]** für diese Dimension aktiviert und verhindert, dass die Komponente in Analysis Workspace und anderen Customer Journey Analytics-Reporting-Tools angezeigt wird."
+>abstract="Wenn Sie diese Option auswählen, wird **[!UICONTROL Komponente in Berichten verbergen]** für diese Dimension aktiviert und verhindert, dass die Komponente in Analysis Workspace und anderen Reporting-Tools von Customer Journey Analytics angezeigt wird."
 
 <!-- markdownlint-enable MD034 -->
 

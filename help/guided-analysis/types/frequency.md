@@ -7,19 +7,19 @@ exl-id: 27eaa7c7-f1e1-4cf1-9d59-67ac552eb430
 role: User
 source-git-commit: d492220eaf12242a870f3826b31edd3d1ea99a3b
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '657'
+ht-degree: 7%
 
 ---
 
-# Analyse der [!UICONTROL Häufigkeit] {#frequency}
+# Analyse [!UICONTROL Häufigkeit] {#frequency}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja_workspace_guidedanalysis_frequency_button"
 >title="Häufigkeit"
->abstract="Zeigen Sie die Verteilung der wiederholten Benutzeraktivitäten für bestimmte Ereignisse an."
+>abstract="Zeigen Sie die Verteilung der Aktivität der zurückkehrenden Nutzenden für bestimmte Ereignisse an."
 
 <!-- markdownlint-enable MD034 -->
 

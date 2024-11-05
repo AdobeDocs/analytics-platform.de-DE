@@ -8,7 +8,7 @@ role: Admin
 source-git-commit: d65171873f68835de0628b95158f01713eaacb6b
 workflow-type: tm+mt
 source-wordcount: '737'
-ht-degree: 22%
+ht-degree: 23%
 
 ---
 
@@ -54,14 +54,14 @@ Sie können bestimmen, wie eine bestimmte Metrik angezeigt wird, indem Sie ihre 
 
    {style="table-layout:auto"}
 
-## Währungsumrechnung verwenden {#use-currency-conversion}
+## Verwenden der Währungsumrechnung {#use-currency-conversion}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja_dataview_component_metric_format_currencyconversion"
 >title="Währungsumrechnung"
->abstract="Die Währungs-Code-Dimension kann ausgewählt werden, um die Währung in einem ausgewählten Währungstyp zu konfigurieren und anzuzeigen."
+>abstract="Wählen Sie eine Währungs-Code-Dimension aus, um die Währung in einem ausgewählten Währungstyp zu konfigurieren und anzuzeigen."
 
 <!-- markdownlint-enable MD034 -->
 
