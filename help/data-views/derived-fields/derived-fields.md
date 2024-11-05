@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Derived Fields
 exl-id: bcd172b2-cd13-421a-92c6-e8c53fa95936
 role: Admin
-source-git-commit: d65171873f68835de0628b95158f01713eaacb6b
+source-git-commit: 64df8670418524be8879aa6362bb8b7c229025b6
 workflow-type: tm+mt
-source-wordcount: '8842'
+source-wordcount: '8841'
 ht-degree: 17%
 
 ---
@@ -43,7 +43,6 @@ Wenn Sie ein abgeleitetes Feld erstellen oder bearbeiten, verwenden Sie die abge
 ![Screenshot des Dialogfelds &quot;Abgeleitetes Feld&quot;](assets/derived-field-dialog.png)
 
 
-![ProgrammOverview](/help/assets/icons/ProgramOverview.svg)
 
 |  | Name | Beschreibung |
 |---------|----------|--------|
@@ -188,6 +187,8 @@ Diese Funktionsvorlage verwendet eine Sammlung von Regeln, um Site-Absprünge zu
 
 +++ Details
 
+{{select-package}}
+
 Um die Vorlage zu verwenden, müssen Sie die richtigen Parameter für jede Funktion angeben, die als Teil der Regeln in der Vorlage aufgeführt wird. Weitere Informationen finden Sie unter [Funktionsreferenz](#function-reference) .
 
 ![Screenshot des Bounces-Regel-Builders](assets/function-template-bounces.png)
@@ -199,6 +200,8 @@ Um die Vorlage zu verwenden, müssen Sie die richtigen Parameter für jede Funkt
 Diese Funktionsvorlage kombiniert zwei Werte zu einem.
 
 +++ Details
+
+{{select-package}}
 
 Um die Vorlage zu verwenden, müssen Sie die richtigen Parameter für jede Funktion angeben, die als Teil der Regeln in der Vorlage aufgeführt wird. Weitere Informationen finden Sie unter [Funktionsreferenz](#function-reference) .
 
@@ -212,6 +215,8 @@ Diese Funktionsvorlage enthält einen lesbaren Datensatznamen.
 
 +++ Details
 
+{{select-package}}
+
 Um die Vorlage zu verwenden, müssen Sie die richtigen Parameter für jede Funktion angeben, die als Teil der Regeln in der Vorlage aufgeführt wird. Weitere Informationen finden Sie unter [Funktionsreferenz](#function-reference) .
 
 ![Screenshot des Regel-Builders für benutzerfreundlichen Datensatznamen](assets/function-template-friendly-dataset-name.png)
@@ -223,6 +228,8 @@ Um die Vorlage zu verwenden, müssen Sie die richtigen Parameter für jede Funkt
 Diese Funktionsvorlage erstellt einen einfachen Seitennamen.
 
 +++ Details
+
+{{select-package}}
 
 Um die Vorlage zu verwenden, müssen Sie die richtigen Parameter für jede Funktion angeben, die als Teil der Regeln in der Vorlage aufgeführt wird. Weitere Informationen finden Sie unter [Funktionsreferenz](#function-reference) .
 
@@ -236,6 +243,8 @@ Diese Funktionsvorlage klassifiziert die Schlüsselzeiten des Jahres.
 
 +++ Details
 
+{{select-package}}
+
 Um die Vorlage zu verwenden, müssen Sie die richtigen Parameter für jede Funktion angeben, die als Teil der Regeln in der Vorlage aufgeführt wird. Weitere Informationen finden Sie unter [Funktionsreferenz](#function-reference) .
 
 ![Screenshot des Regel-Builders für die Feiertagssaison](assets/function-template-holiday-season.png)
@@ -247,6 +256,8 @@ Um die Vorlage zu verwenden, müssen Sie die richtigen Parameter für jede Funkt
 Diese Funktionsvorlage legt benutzerdefinierte Monatsziele fest.
 
 +++ Details
+
+{{select-package}}
 
 Um die Vorlage zu verwenden, müssen Sie die richtigen Parameter für jede Funktion angeben, die als Teil der Regeln in der Vorlage aufgeführt wird. Weitere Informationen finden Sie unter [Funktionsreferenz](#function-reference) .
 
@@ -260,6 +271,8 @@ Diese Funktionsvorlage konvertiert eine begrenzte Liste in ein Array.
 
 +++ Details
 
+{{select-package}}
+
 Um die Vorlage zu verwenden, müssen Sie die richtigen Parameter für jede Funktion angeben, die als Teil der Regeln in der Vorlage aufgeführt wird. Weitere Informationen finden Sie unter [Funktionsreferenz](#function-reference) .
 
 ![Screenshot des Builders &quot;Get All Values in Delimited list rule&quot;](assets/function-template-get-all-values-in-delimited-list.png)
@@ -271,6 +284,8 @@ Um die Vorlage zu verwenden, müssen Sie die richtigen Parameter für jede Funkt
 Diese Funktionsvorlage erhält den ersten Wert in einer durch Trennzeichen getrennten Liste.
 
 +++ Details
+
+{{select-package}}
 
 Um die Vorlage zu verwenden, müssen Sie die richtigen Parameter für jede Funktion angeben, die als Teil der Regeln in der Vorlage aufgeführt wird. Weitere Informationen finden Sie unter [Funktionsreferenz](#function-reference) .
 
@@ -284,6 +299,8 @@ Diese Funktionsvorlage erhält den letzten Wert in einer durch Trennzeichen getr
 
 +++ Details
 
+{{select-package}}
+
 Um die Vorlage zu verwenden, müssen Sie die richtigen Parameter für jede Funktion angeben, die als Teil der Regeln in der Vorlage aufgeführt wird. Weitere Informationen finden Sie unter [Funktionsreferenz](#function-reference) .
 
 ![Screenshot des Builders der Regel &quot;Letzten Wert abrufen&quot;im &quot;Builder für unbegrenzte Liste&quot;](assets/function-template-get-last-value-in-delimited-list.png)
@@ -295,6 +312,8 @@ Um die Vorlage zu verwenden, müssen Sie die richtigen Parameter für jede Funkt
 Diese Funktionsvorlage extrahiert den Domänennamen mithilfe eines regulären Ausdrucks.
 
 +++ Details
+
+{{select-package}}
 
 Um die Vorlage zu verwenden, müssen Sie die richtigen Parameter für jede Funktion angeben, die als Teil der Regeln in der Vorlage aufgeführt wird. Weitere Informationen finden Sie unter [Funktionsreferenz](#function-reference) .
 
@@ -308,6 +327,8 @@ Diese Funktionsvorlage extrahiert Abfragezeichenfolgenwerte.
 
 +++ Details
 
+{{select-package}}
+
 Um die Vorlage zu verwenden, müssen Sie die richtigen Parameter für jede Funktion angeben, die als Teil der Regeln in der Vorlage aufgeführt wird. Weitere Informationen finden Sie unter [Funktionsreferenz](#function-reference) .
 
 ![Screenshot des Regelaufbaus für Abfragezeichenfolgenparameter abrufen](assets/function-template-get-query-string-parameter.png)
@@ -319,6 +340,8 @@ Um die Vorlage zu verwenden, müssen Sie die richtigen Parameter für jede Funkt
 Diese Funktionsvorlage überträgt die Berichterstellung von einem Feld in ein anderes.
 
 +++ Details
+
+{{select-package}}
 
 Um die Vorlage zu verwenden, müssen Sie die richtigen Parameter für jede Funktion angeben, die als Teil der Regeln in der Vorlage aufgeführt wird. Weitere Informationen finden Sie unter [Funktionsreferenz](#function-reference) .
 
@@ -332,6 +355,8 @@ Diese Funktionsvorlage implementiert die leichte Bot-Identifizierung.
 
 +++ Details
 
+{{select-package}}
+
 Um die Vorlage zu verwenden, müssen Sie die richtigen Parameter für jede Funktion angeben, die als Teil der Regeln in der Vorlage aufgeführt wird. Weitere Informationen finden Sie unter [Funktionsreferenz](#function-reference) .
 
 ![Screenshot des Regel-Builders für die einfache Bot-Erkennung](assets/function-template-simple-bot-detection.png)
@@ -344,6 +369,8 @@ Diese Funktionsvorlage identifiziert den letzten Link, der in einer Sitzung ange
 
 +++ Details
 
+{{select-package}}
+
 Um die Vorlage zu verwenden, müssen Sie die richtigen Parameter für jede Funktion angeben, die als Teil der Regeln in der Vorlage aufgeführt wird. Weitere Informationen finden Sie unter [Funktionsreferenz](#function-reference) .
 
 ![Screenshot des Regel-Builders für Exitlinks](assets/function-template-exit-link.png)
@@ -355,6 +382,8 @@ Um die Vorlage zu verwenden, müssen Sie die richtigen Parameter für jede Funkt
 Diese Funktionsvorlage markiert allgemeine Downloadlinks.
 
 +++ Details
+
+{{select-package}}
 
 Um die Vorlage zu verwenden, müssen Sie die richtigen Parameter für jede Funktion angeben, die als Teil der Regeln in der Vorlage aufgeführt wird. Weitere Informationen finden Sie unter [Funktionsreferenz](#function-reference) .
 
