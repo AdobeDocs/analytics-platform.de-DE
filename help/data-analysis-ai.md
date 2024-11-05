@@ -5,19 +5,19 @@ role: User, Admin
 solution: Customer Journey Analytics
 hidefromtoc: true
 hide: true
-source-git-commit: 37be5b159b756db2c8b523db6602f274541e2a81
+source-git-commit: 376ad62c3883eef675f9b1df639e8c46ee259229
 workflow-type: tm+mt
-source-wordcount: '1541'
-ht-degree: 4%
+source-wordcount: '1596'
+ht-degree: 3%
 
 ---
 
 
 # Data Analysis AI Assistant in Customer Journey Analytics - Alpha
 
-Der Data Analysis AI-Assistent ist ein intelligenter, kontextbezogener Konversationsagent, der Ihnen dabei hilft, Fragen zu Ihren Analysis Workspace-Daten in Customer Journey Analytics schneller und effizienter zu beantworten.
+Der Data Analysis AI-Assistent ist ein generativer KI-Konversationsagent, der Ihnen dabei hilft, Fragen zu Ihren Analysis Workspace-Daten in Customer Journey Analytics schneller und effizienter zu beantworten.
 
-Der Assistent durchsucht alle Daten in einer Datenansicht, einschließlich der verschiedenen Metriktypen und Komponenten, und übersetzt Ihre Eingabeaufforderung in die richtige Dimension, Metrik und den richtigen Datumsbereich für Ihre Analyse. Anstatt sich mit den Datenansichtskomponenten vertraut zu machen und diese Komponenten zur Beantwortung Ihrer Frage per Drag-and-Drop in die beste Kombination zu ziehen, können Sie die Frage einfach in den AI-Assistenten eingeben.
+Wenn Sie eine Frage in AI Assistant stellen, scannt der AI Assistant alle Komponenten in Ihrer Datenansicht, einschließlich der verschiedenen Metriktypen und Komponenten, und übersetzt Ihre Eingabeaufforderung in die richtige Dimension, Metrik und den richtigen Datumsbereich für Ihre Analyse. Anstatt sich mit den Datenansichtskomponenten vertraut zu machen und diese Komponenten zur Beantwortung Ihrer Frage per Drag-and-Drop in die beste Kombination zu ziehen, können Sie die Frage einfach in den AI-Assistenten eingeben.
 
 ![Data ANalysis AI Assistant](assets/cja-ai-asst-da.gif)
 
@@ -32,6 +32,7 @@ Der Assistent durchsucht alle Daten in einer Datenansicht, einschließlich der v
 | **Erkennung von Eingabeaufforderungen außerhalb des Umfangs** | Wenn Sie eine Eingabeaufforderung senden, die nicht im Umfang vorhanden ist, z. B. &quot;dieses Projekt exportieren&quot;, antwortet der Assistent, indem er Ihnen mitteilt, dass die Frage außerhalb des Anwendungsbereichs liegt. |
 | **Fragen klären** | Wenn Sie eine Frage stellen, die nicht genügend Kontext für eine Antwort des KI-Assistenten bietet oder zu allgemein ist, antwortet der KI-Assistent mit einer Frage zur Klarstellung und/oder mit vorgeschlagenen Optionen. Beispiele: <p>**Komponenten**<ul><li>Metrik: *Welche &quot;Umsatz&quot;-Metrik haben Sie gemeint?*</li><li>Dimension: *Auf welche der folgenden &quot;Regionen&quot;möchten Sie sich konzentrieren?*</li><li>Filter: *Welchen &quot;Konto&quot;-Filter wollten Sie anwenden?*</li><li>Datumsbereich: *Mit &quot;Letzter Monat&quot;haben Sie den letzten vollen Monat oder die letzten 30 Tage gemeint?*</li></ul>**Dimension items**: Welchen &quot;Speichernamen&quot;haben Sie gemeint? (Beispiel: Store #5274, Store #2949 usw.) |
 | **Mehrfachwechsel** | Der AI-Assistent antwortet auf eine Eingabeaufforderung mit dem Kontext der vorherigen Aufforderung(en), sodass Benutzer Visualisierungen aktualisieren und Folgenachfragen stellen können.Beispiel: <ul><li>Eingabeaufforderung 1: *Trend-Ereignisse aus März.*</li><li>Aufforderung 2: *Zeigen Sie mir stattdessen die Daten von März bis April an*</li></ul> |
+| **Überprüfbarkeit** | Über die generierte Freiformtabelle und die Datenvisualisierung können die Datenverifizierbarkeit und -korrektur bestätigt werden. Wenn ein Benutzer beispielsweise *Trend-Bestellungen vom letzten Monat* anfordert, können Sie bestätigen, dass die richtigen Metriken (&quot;Bestellungen&quot;) und der Datumsbereich (&quot;Letzter Monat&quot;) im neu generierten Bereich, in der Datenvisualisierung und in der Freiformtabelle ausgewählt wurden. |
 | **Feedback** | <ul><li>Daumen nach oben</li><li>Nach unten</li><li>Markierung</li></ul> |
 
 ### Out-of-Scope-Alpha-Funktionen
@@ -42,7 +43,6 @@ Der Assistent durchsucht alle Daten in einer Datenansicht, einschließlich der v
 | **Fragen klären** | Die Klärung von Fragen ist auf Komponenten und Dimensionselemente beschränkt. Der AI-Assistent kann keine Datenansichten, Visualisierungen, Datengranularität, Vergleich, Umfang usw. klären. Ohne Klarstellung der Fragen verwendet die Assistenzkraft standardmäßig das, was Sie am ehesten wünschen. Wenn eine unerwartete Visualisierung oder Datengranularität zurückgegeben wird, können Sie dann die Funktion für die Mehrfachumstellung/Aktualisierung verwenden, um die Visualisierung und die Daten anzupassen. |
 | **Workspace-Aktionen/-Funktionen** | Der KI-Assistent kann für einen Benutzer in Workspace keine Aktionen durchführen, außer Visualisierungen zu erstellen und zu aktualisieren. Sie kann beispielsweise keine der folgenden Aktionen durchführen:<ul><li>Schaltflächen der Benutzeroberfläche für kontextbezogene Aktionen (zu Diagramm hinzufügen, neues Bedienfeld, neue Tabelle)</li><li>Freigeben</li><li>Exportieren</li><li>Download</li><li>Verwalten von Benutzereinstellungen</li><li>Kuratieren</li><li>Datenansicht verwalten</li><li>Analytics-Dashboards-App</li><li>Attribution</li></ul> |
 | **Nicht unterstützte Visualisierungstypen** | <ul><li>Fluss</li><li>Fallout</li><li>Kohortentabelle</li><li>Bereich, Bereich gestapelt</li><li>Balken gestapelt</li><li>Horizontales Säulendiagramm</li><li>Kombination</li><li>Histogramm</li><li>Horizontalbalken, Horizontalbalken gestapelt</li><li>Zusammenfassung einer Schlüsselmetrik</li><li>Streuung</li><li>Zusammenfassende Änderung</li><li>Text</li><li>Treemap</li><li>Venn</li></ul> |
-| **Erklärbarkeit und Überprüfbarkeit** | Transparente Beschreibung oder Zitation, wie der KI-Assistent eine Antwort generiert hat, und eine Möglichkeit, die Richtigkeit der Antwort zu bestätigen. |
 
 <!---## Feature access in the Customer Journey Analytics UI
 
@@ -77,7 +77,7 @@ See [Access control](/help/technotes/access-control.md#access-control) for more 
 
 3. Klicken Sie oben auf der Projektseite im Banner auf **[!UICONTROL Leeres Projekt]** , um ein neues leeres Projekt zu öffnen.
 
-4. Stellen Sie sicher, dass die ausgewählte Datenansicht für das Bedienfeld die Datenansicht ist, die für die Verwendung des AI-Assistenten zum Testen von Alphas aktiviert wurde (wenden Sie sich an taylorb@adobe.com oder im Alpha-Flackenkanal, wenn Sie sich nicht sicher sind).
+4. Stellen Sie sicher, dass die ausgewählte Datenansicht für das Bedienfeld die Datenansicht ist, die für die Verwendung des AI Assistant für Alpha-Tests aktiviert wurde (kontaktieren Sie den Alpha-Flackenkanal, wenn Sie sich nicht sicher sind).
 
 5. Klicken Sie oben rechts auf das Chat-Symbol für den AI-Assistenten.
 
@@ -111,23 +111,23 @@ Als Nächstes möchten Sie sehen, wie der Umsatz nach Region verteilt ist.
 
 ### Beispiel 3
 
-Betrachten wir nun den Umsatz nach Produktkategorie.
+Zusätzlich zum Verständnis des Umsatzes nach Region möchten Sie auch Daten für den Gewinn nach Region sehen. Anstatt die letzte Eingabeaufforderung neu eingeben zu müssen, können Sie den AI-Assistenten bitten, die neueste Visualisierungs- und Freiformtabelle zu aktualisieren.
+
+1. Geben Sie im Eingabeaufforderungsfenster *&quot;Profit hinzufügen&quot;* ein.
+
+2. Das Diagramm **[!UICONTROL Balken]** liefert weiterhin die präziseste Antwort, aber die Gewinnmetrik wurde als Spalte in der Freiformtabelle hinzugefügt:
+
+   ![Balkendiagramm](/help/assets/ai-asst-result4.png)
+
+### Beispiel 4
+
+Sehen wir uns schließlich den Umsatz nach Produktkategorie an.
 
 1. Geben Sie im Eingabeaufforderungsfenster *&quot;Anteil des Umsatzes nach Produktkategorie&quot;ein.*
 
 2. Auch hier wählt der Data Analysis AI-Assistent die am besten geeignete Visualisierung aus, in diesem Fall die Visualisierung **[!UICONTROL Donut]** , um die Frage zu beantworten.
 
    ![Ringdiagramm](/help/assets/ai-asst-result3.png)
-
-### Beispiel 4
-
-Schließlich möchten Sie wissen, welche SKU die profitabelste ist und wo Sie Marketing-Ressourcen investieren sollten.
-
-1. Fragen Sie im Eingabeaufforderungsfenster *&quot;Welchen Gewinn erzielen die SKUs von Februar bis Mai?&quot;*
-
-2. Ein einfaches **[!UICONTROL Balkendiagramm]** liefert die präziseste Antwort:
-
-   ![Balkendiagramm](/help/assets/ai-asst-result4.png)
 
 ## Beispieldatenanalyse - Eingabeaufforderungen
 
@@ -180,7 +180,6 @@ Wählen Sie nach der Auswahl der Daumen nach oben/unten für die entsprechenden 
 
 ## Fragen und Kontakt
 
-* E-Mail `taylorb@adobe.com` (PM)
 * Senden Sie Fragen und Feedback im Alpha-Slack-Kanal: #aep-cja-ai-assistant-testers ???
 
 
