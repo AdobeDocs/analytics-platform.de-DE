@@ -9,10 +9,10 @@ index: true
 user-guide-title: Handbuch zu Customer Journey Analytics
 user-guide-description: Hier erhalten Sie Informationen zu Adobe Customer Journey Analytics und Erläuterungen zur Nutzung von Analysis Workspace mit Daten aus Experience Platform.
 breadcrumb-title: Handbuch zu Customer Journey Analytics
-source-git-commit: 64662195842ae799d2020c226ca34293905d13ae
+source-git-commit: dcb01aa4ca885e00c5fe8b4c3373f0b57bace1e4
 workflow-type: tm+mt
-source-wordcount: '991'
-ht-degree: 89%
+source-wordcount: '1003'
+ht-degree: 88%
 
 ---
 
@@ -47,6 +47,9 @@ ht-degree: 89%
       + [Senden von Daten an Platform](/help/getting-started/cja-upgrade/cja-upgrade-send-to-platform.md)
       + [Beibehalten historischer Daten](/help/getting-started/cja-upgrade/cja-upgrade-historical-data.md)
       + [Empfohlener Prozess](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md)
+      + [Analytics-Implementierung verstehen](/help/getting-started/cja-upgrade/cja-upgrade-analytics-implementation.md)
+      + [Erstellen von Lookup-Datensätzen für Classifications](/help/getting-started/cja-upgrade/cja-upgrade-dataset-lookup.md)
+      + [Verwenden von Tags zum Aktualisieren](/help/getting-started/cja-upgrade/cja-upgrade-websdk-tags.md)
       + [Schema architektur](/help/getting-started/cja-upgrade/cja-upgrade-schema-architect.md)
       + [Schema erstellen](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md)
       + [Vorhandenes Schema verwenden](/help/getting-started/cja-upgrade/cja-upgrade-schema-existing.md)

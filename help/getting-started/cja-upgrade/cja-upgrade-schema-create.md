@@ -6,22 +6,20 @@ solution: Customer Journey Analytics
 feature: Basics
 hide: true
 hidefromtoc: true
-source-git-commit: 711e92db7084592dc562eda3d0dcf33bcb4a62d4
+source-git-commit: 33cfff3f675fc03c3444531e8426cb806cdf8559
 workflow-type: tm+mt
-source-wordcount: '989'
-ht-degree: 56%
+source-wordcount: '987'
+ht-degree: 52%
 
 ---
 
 # Erstellen eines XDM-Schemas zur Verwendung mit Customer Journey Analytics
 
 >[!NOTE]
->
->Diese Dokumentation sollte verwendet werden, nachdem der Fragebogen [Adobe Analytics zum Customer Journey Analytics-Upgrade](https://gigazelle.github.io/cja-ttv/) ausgefüllt wurde.
 > 
->Führen Sie die Schritte auf dieser Seite nur aus, nachdem Sie alle vorherigen Schritte ausgeführt haben, die dynamisch für Ihr Unternehmen generiert wurden.
+>Führen Sie die Schritte auf dieser Seite erst aus, nachdem Sie alle vorherigen Aktualisierungsschritte ausgeführt haben. Sie können die [empfohlenen Aktualisierungsschritte](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) ausführen oder die für Ihr Unternehmen dynamisch generierten Aktualisierungsschritte mit dem Fragebogen [Adobe Analytics to Customer Journey Analytics Upgrade Fragenkatalog](https://gigazelle.github.io/cja-ttv/) ausführen.
 >
->Nachdem Sie die Schritte auf dieser Seite ausgeführt haben, führen Sie die Aktualisierungsschritte aus, die für Ihr Unternehmen dynamisch vom Fragenkatalog [Adobe Analytics auf Customer Journey Analytics-Upgrade](https://gigazelle.github.io/cja-ttv/) generiert wurden.
+>Nachdem Sie die Schritte auf dieser Seite ausgeführt haben, fahren Sie mit den empfohlenen Aktualisierungsschritten oder den dynamisch generierten Aktualisierungsschritten fort.
 
 >[!IMPORTANT]
 >
@@ -62,13 +60,13 @@ So erstellen Sie ein Schema:
 
    1. Wählen Sie **[!UICONTROL Beenden]** aus.
 
-1. Auf der Registerkarte Struktur des Beispielschemas:
+1. Auf der Registerkarte [!UICONTROL **Struktur**] Ihres Schemas:
 
-   1. Wählen Sie **[!UICONTROL + Hinzufügen]** in [!UICONTROL Feldergruppen] aus.
-
-      ![Hinzufügen der Feldergruppe](assets/add-field-group-button.png)
+   1. Wählen Sie im Abschnitt **[!UICONTROL Feldgruppen]** die Option **[!UICONTROL + Hinzufügen]** aus.
 
       Feldergruppen sind wiederverwendbare Sammlungen von Objekten und Attributen, mit denen Sie Ihr Schema einfach erweitern können.
+
+      ![Hinzufügen der Feldergruppe](assets/add-field-group-button.png)
 
    1. Wählen Sie im Dialog [!UICONTROL Feldergruppen hinzufügen] die Feldergruppe **[!UICONTROL AEP Web SDK ExperienceEvent]** aus der Liste aus.
 
@@ -116,7 +114,7 @@ So erstellen Sie ein Schema:
 
    Wählen Sie **[!UICONTROL Speichern]** aus.
 
-1. Wählen Sie das Stammelement Ihres Schemas aus, das den Namen des Schemas trägt, und wählen Sie dann den Umschalter **[!UICONTROL Profil]** aus.
+1. (Optional) Wenn Sie Customer Journey Analytics in RTCDP integrieren möchten, wählen Sie das Stammelement Ihres Schemas aus, das den Namen des Schemas anzeigt, und wählen Sie dann den Schalter **[!UICONTROL Profil]** aus.
 
    Sie werden aufgefordert, das Schema für das Profil zu aktivieren. Nach der Aktivierung werden Daten, die auf der Basis dieses Schemas in Datensätze aufgenommen werden, zum Echtzeit-Kundenprofil hinzugefügt.
 
@@ -124,7 +122,7 @@ So erstellen Sie ein Schema:
 
    >[!IMPORTANT]
    >
-   >    Nachdem Sie ein für ein Profil aktiviertes Schema gespeichert haben, kann es für das Profil nicht mehr deaktiviert werden.
+   >Nachdem Sie ein Schema für ein Profil aktiviert haben, kann es für das Profil nicht deaktiviert werden.
 
    ![Aktivieren eines Schemas für ein Profil](./assets/enable-for-profile.png)
 
@@ -148,5 +146,5 @@ So erstellen Sie ein Schema:
 
    Weitere Informationen zum Hinzufügen und Entfernen von Feldergruppen und einzelnen Feldern zu einem Schema finden Sie unter [Erstellen und Bearbeiten von Schemata über die Benutzeroberfläche](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html?lang=de).
 
-1. Führen Sie die Aktualisierungsschritte aus, die für Ihr Unternehmen dynamisch vom Fragenkatalog [Adobe Analytics zu Customer Journey Analytics-Upgrade](https://gigazelle.github.io/cja-ttv/) generiert wurden.
+1. Führen Sie die [empfohlenen Aktualisierungsschritte](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) oder die dynamisch generierten Aktualisierungsschritte](https://gigazelle.github.io/cja-ttv/) aus.[
 
