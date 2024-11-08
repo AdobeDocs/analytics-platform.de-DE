@@ -7,16 +7,16 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: 07db28b8-b688-4a0c-8fb3-28a124342d25
-source-git-commit: adc9e888eece72031ed234e634b206475d1539d7
+source-git-commit: 7fc625fcca51deebf860829ac67ca1b88b64cd1a
 workflow-type: tm+mt
-source-wordcount: '9056'
+source-wordcount: '9048'
 ht-degree: 1%
 
 ---
 
 # Anwendungsfälle für BI-Erweiterungen
 
-In diesem Artikel wird beschrieben, wie Sie eine Reihe von Anwendungsfällen mit der Customer Journey Analytics BI-Erweiterung durchführen. Für jeden Anwendungsfall wird die Customer Journey Analytics-Funktion erläutert, gefolgt von Details zu den einzelnen unterstützten BI-Tools:
+In diesem Artikel wird beschrieben, wie Sie eine Reihe von Anwendungsfällen mit der Customer Journey Analytics BI-Erweiterung durchführen. In jedem Anwendungsfall wird die Customer Journey Analytics-Funktionalität erläutert, gefolgt von Details zu den einzelnen unterstützten BI-Tools:
 
 * **Power BI Desktop**. Die verwendete Version ist 2.137.1102.0 64-Bit (Oktober 2024).
 * **Tableau-Desktop**. Die verwendete Version ist 2024.1.5 (20241.24.0705.0334) 64-Bit.
@@ -1470,16 +1470,16 @@ Datumsbereichsdimensionen von Customer Journey Analytics, wie **[!UICONTROL Tag]
 Metriken von Customer Journey Analytics werden durch die [!UICONTROL Komponenten-ID] identifiziert. Die [!UICONTROL Komponenten-ID] wird in Ihrer Customer Journey Analytics-Datenansicht definiert. Beispielsweise verfügt die Metrik **[!UICONTROL Kaufumsatz]** in Customer Journey Analytics über eine [!UICONTROL Komponenten-ID] **[!UICONTROL Einkauf_Umsatz]**, die den Namen für die Metrik in Power BI Desktop darstellt. Eine **[!UICONTROL ∑]** gibt Metriken an. Wenn Sie eine Metrik in einer Visualisierung verwenden, wird die Metrik in **[!UICONTROL Summe der *Metrik *]**umbenannt.
 
 **Filter**
-Filter, die Sie in Customer Journey Analytics definiert haben, sind im Feld **[!UICONTROL filterName]** verfügbar. Wenn Sie ein **[!UICONTROL filterName]** -Feld im Power BI Desktop verwenden, können Sie angeben, welcher Filter verwendet werden soll.
+Filter, die Sie in Customer Journey Analytics definieren, sind als Teil des Felds **[!UICONTROL filterName]** verfügbar. Wenn Sie ein **[!UICONTROL filterName]** -Feld im Power BI Desktop verwenden, können Sie angeben, welcher Filter verwendet werden soll.
 
 **Berechnete Metriken**
 Berechnete Metriken, die Sie in Customer Journey Analytics definieren, werden durch die [!UICONTROL Externe ID] identifiziert, die Sie für die berechnete Metrik definiert haben. Beispielsweise weist die berechnete Metrik **[!UICONTROL Produktname (Count Distinct)]** die [!UICONTROL externe ID] **[!UICONTROL product_name_count_distinct]** auf und wird im Power BI Desktop als **[!UICONTROL cm_product_name_count_distinc]**t angezeigt.
 
 **Datumsbereiche**
-Datumsbereiche, die Sie in Customer Journey Analytics definiert haben, sind im Feld **[!UICONTROL daterangeName]** verfügbar. Wenn Sie ein **[!UICONTROL daterangeName]** -Feld verwenden, können Sie angeben, welcher Datumsbereich verwendet werden soll.
+Datumsbereiche, die Sie in Customer Journey Analytics definieren, sind im Feld **[!UICONTROL daterangeName]** verfügbar. Wenn Sie ein **[!UICONTROL daterangeName]** -Feld verwenden, können Sie angeben, welcher Datumsbereich verwendet werden soll.
 
 **Benutzerdefinierte Umwandlungen**
-Power BI Desktop bietet benutzerdefinierte Umwandlungsfunktionen mit [DAX (Data Analysis Expressions)](https://learn.microsoft.com/en-us/dax/dax-overview). Beispiel: Sie möchten den Anwendungsfall Einzeldimension - Rangansicht mit Produktnamen in Kleinbuchstaben ausführen. Gehen Sie folgendermaßen vor:
+Power BI Desktop bietet benutzerdefinierte Umwandlungsfunktionen mit [DAX (Data Analysis Expressions)](https://learn.microsoft.com/en-us/dax/dax-overview). Beispiel: Sie möchten den Anwendungsfall Einzeldimension - Rangansicht mit Produktnamen in Kleinbuchstaben ausführen.
 
 1. Wählen Sie in der Berichtsansicht die Balkenvisualisierung aus.
 1. Wählen Sie product_name im Datenbereich aus.
@@ -1545,16 +1545,16 @@ Datumsbereichsdimensionen von Customer Journey Analytics, wie **[!UICONTROL Tag]
 Metriken von Customer Journey Analytics werden durch den [!UICONTROL Komponentennamen] identifiziert. Der [!UICONTROL Komponentenname] wird in Ihrer Customer Journey Analytics-Datenansicht definiert. Beispielsweise verfügt die Metrik **[!UICONTROL Kaufumsatz]** in Customer Journey Analytics über einen [!UICONTROL Komponentennamen] **[!UICONTROL Einkaufsumsatz]**, der für die Metrik in Tableau festgelegt ist. Alle Metriken werden durch **[!UICONTROL #]** identifiziert. Wenn Sie eine Metrik in einer Visualisierung verwenden, wird die Metrik in **[!UICONTROL Summe(*metric*)]** umbenannt.
 
 **Filter**
-Filter, die Sie unter Customer Journey Analytics definiert haben, stehen im Feld **[!UICONTROL Filtername]** zur Verfügung. Wenn Sie ein Feld vom Typ **[!UICONTROL Filtername]** in Tableau verwenden, können Sie festlegen, welcher Filter verwendet werden soll.
+Filter, die Sie in Customer Journey Analytics definieren, sind im Feld **[!UICONTROL Filtername]** verfügbar. Wenn Sie ein Feld vom Typ **[!UICONTROL Filtername]** in Tableau verwenden, können Sie festlegen, welcher Filter verwendet werden soll.
 
 **Berechnete Metriken**
-Berechnete Metriken, die Sie in Customer Journey Analytics definiert haben, werden durch den [!UICONTROL Titel] identifiziert, den Sie für die berechnete Metrik definiert haben. Beispielsweise hat die berechnete Metrik **[!UICONTROL Produktname (Count Distinct)]** den Wert [!UICONTROL Titel] **[!UICONTROL Produktname (Count Distinct)]** und wird in Tableau als **[!UICONTROL cm Produktname Count Distinct]** angezeigt.
+Berechnete Metriken, die Sie in Customer Journey Analytics definieren, werden durch den [!UICONTROL Titel] identifiziert, den Sie für die berechnete Metrik definiert haben. Beispielsweise hat die berechnete Metrik **[!UICONTROL Produktname (Count Distinct)]** den Wert [!UICONTROL Titel] **[!UICONTROL Produktname (Count Distinct)]** und wird in Tableau als **[!UICONTROL cm Produktname Count Distinct]** angezeigt.
 
 **Datumsbereiche**
-Datumsbereiche, die Sie in Customer Journey Analytics definiert haben, stehen im Feld **[!UICONTROL Datumsbereichsname]** zur Verfügung. Wenn Sie ein Feld vom Typ **[!UICONTROL Datumsbereichname]** verwenden, können Sie angeben, welcher Datumsbereich verwendet werden soll.
+Datumsbereiche, die Sie in Customer Journey Analytics definieren, sind im Feld **[!UICONTROL Datumsbereichsname]** verfügbar. Wenn Sie ein Feld vom Typ **[!UICONTROL Datumsbereichname]** verwenden, können Sie angeben, welcher Datumsbereich verwendet werden soll.
 
 **Benutzerdefinierte Umwandlungen**
-Tableau Desktop bietet benutzerdefinierte Umwandlungsfunktionen mit [berechneten Feldern](https://help.tableau.com/current/pro/desktop/en-us/calculations_calculatedfields_create.htm). Beispiel: Sie möchten den Anwendungsfall Einzeldimension - Rangansicht mit Produktnamen in Kleinbuchstaben ausführen. Gehen Sie folgendermaßen vor:
+Tableau Desktop bietet benutzerdefinierte Umwandlungsfunktionen mit [berechneten Feldern](https://help.tableau.com/current/pro/desktop/en-us/calculations_calculatedfields_create.htm). Beispiel: Sie möchten den Anwendungsfall Einzeldimension - Rangansicht mit Produktnamen in Kleinbuchstaben ausführen.
 
 1. Wählen Sie **[!UICONTROL Analyse]** > **[!UICONTROL Berechnetes Feld erstellen]** aus dem Hauptmenü.
    1. Definieren Sie **[!UICONTROL Kleinbuchstaben Produktname]** mit der Funktion `LOWER([Product Name])`.
