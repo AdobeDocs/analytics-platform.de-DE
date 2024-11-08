@@ -6,57 +6,66 @@ feature: Data Views
 role: User
 hide: true
 hidefromtoc: true
-source-git-commit: 48310c12680feb30be2cb1ff62e73474ff59e534
+exl-id: 07db28b8-b688-4a0c-8fb3-28a124342d25
+source-git-commit: 1fda8abfe4c4b5d9d4a2ddf99b0bb83db45539e3
 workflow-type: tm+mt
-source-wordcount: '8625'
+source-wordcount: '8807'
 ht-degree: 1%
 
 ---
 
 # Anwendungsfälle für BI-Erweiterungen
 
-Dieser Artikel enthält eine Reihe von Anwendungsfällen, die veranschaulichen, wie die Funktionalität der BI-Erweiterung über verschiedene BI-Tools hinweg verwendet werden kann.
+In diesem Artikel wird beschrieben, wie Sie eine Reihe von Anwendungsfällen mit der Customer Journey Analytics BI-Erweiterung durchführen. Für jeden Anwendungsfall wird die Customer Journey Analytics-Funktion erläutert, gefolgt von Details zu den einzelnen unterstützten BI-Tools:
+
+* **Power BI Desktop**. Die verwendete Version ist 2.137.1102.0 64-Bit (Oktober 2024).
+* **Tableau-Desktop**. Die verwendete Version ist 2024.1.5 (20241.24.0705.0334) 64-Bit.
 
 Die folgenden Anwendungsfälle werden dokumentiert:
 
-1. [Datenansichten verbinden und auflisten](#connect-and-list-data-views).
-1. [Täglicher Trend](#daily-trend).
-1. [Stündlicher Trend](#hourly-trend).
-1. [Monatlicher Trend](#monthly-trend).
-1. [Einzelne Dimension mit Rangansicht ](#single-dimension-ranked).
-1. [Mehrere Dimensionen wurden nach Rang sortiert](#multiple-dimension-ranked).
-1. [Zählen Sie unterschiedliche Dimensionswerte](#count-distinct-dimension-values).
-1. [Verwenden Sie Datumsbereichsnamen, um ](#use-date-range-names-to-filter) zu filtern.
-1. [Verwenden Sie Filternamen, um zu filtern](#use-filter-names-to-filter).
-1. [Verwenden Sie Dimensionswerte zum Filtern von ](#use-dimension-values-to-filter).
-1. [Sortieren](#sort).
-1. [Beschränkungen](#limits).
-1. [Zum FLATTEN oder nicht](#to-flatten-or-not).
-1. [Umwandlungen](#object-transformations).
-1. [Visualisierungen](#visualizations).
+* [Datenansichten verbinden und auflisten](#connect-and-validate)
+* [Täglicher Trend](#daily-trend)
+* [Stündlicher Trend](#hourly-trend)
+* [Monatlicher Trend](#monthly-trend)
+* [Einzelne Dimension in Rang](#single-dimension-ranked)
+* [Rangansicht mehrerer Dimensionen](#multiple-dimension-ranked)
+* [Zählen von eindeutigen Dimensionswerten](#count-distinct-dimension-values)
+* [Filtern von Datumsbereichsnamen](#use-date-range-names-to-filter)
+* [Filternamen zum Filtern verwenden](#use-filter-names-to-filter)
+* [Verwenden von Dimensionswerten zum Filtern](#use-dimension-values-to-filter)
+* [Sortieren](#sort)
+* [Beschränkungen](#limits)
+* [Zum FLATTEN oder nicht](#to-flatten-or-not)
+* [Umwandlungen](#transformations)
+* [Visualisierungen](#visualizations)
 
-Der erste Anwendungsfall konzentriert sich auf die Verbindung von BI-Tools mit der Customer Journey Analytics BI-Erweiterung. Für alle anderen Anwendungsfälle sind Anweisungen zum Ausführen ähnlicher Customer Journey Analytics-Visualisierungen in den aktuell unterstützten BI-Tools verfügbar:
+Der erste Anwendungsfall konzentriert sich auf die Verbindung von BI-Tools mit der Customer Journey Analytics BI-Erweiterung.
 
-* Power BI Desktop. Die verwendete Version ist 2.137.1102.0 64-Bit (Oktober 2024).
-* Tableau Desktop. Die verwendete Version ist 2024.1.5 (20241.24.0705.0334) 64-Bit.
+In den Anwendungsfällen 2 bis 12 finden Sie Anweisungen zum Ausführen ähnlicher Customer Journey Analytics-Visualisierungen in den aktuell unterstützten BI-Tools.
+
+Die Anwendungsbeispiele 13 bis 15 enthalten weitere Details zu:
+
+* Verschiedene Möglichkeiten, eine Verbindung zu den BI-Tools herzustellen.
+* Umwandlungen, die auftreten, wenn Sie BI-Tools zum Reporting und Analysieren verwenden.
+* Visualisierungsähnlichkeiten und Unterschiede zwischen Customer Journey Analytics- und BI-Tools.
 
 
-## Datenansichten verbinden und auflisten
+## Verbindung herstellen und überprüfen
 
-In diesem Anwendungsbeispiel wird die Verbindung vom BI-Tool zum Customer Journey Analytics eingerichtet und die verfügbaren Datenansichten aufgelistet, um die Verbindung erfolgreich zu testen.
+In diesem Anwendungsbeispiel wird die Verbindung vom BI-Tool zum Customer Journey Analytics eingerichtet, die verfügbaren Datenansichten aufgelistet und eine zu verwendende Datenansicht ausgewählt.
 
 +++ Customer Journey Analytics
 
-Die Anweisungen beziehen sich auf ein mit den folgenden Objekten eingerichtetes Beispiel:
+Die Anweisungen beziehen sich auf eine Beispielumgebung mit den folgenden Objekten:
 
-* Datenansicht **[!UICONTROL C&amp;C - Datenansicht]** ???
-* Dimensionen **[!UICONTROL Produktname]** ??? und **[!UICONTROL Produktkategorie]** ???
-* Metriken **[!UICONTROL Einkaufsumsatz]** ??? und **[!UICONTROL Einkäufe]** ??..
-* Filter **[!UICONTROL Fischereierzeugnisse]** ??..
+* Datenansicht: **[!UICONTROL C&amp;C - Datenansicht]** ???
+* Dimensionen: **[!UICONTROL Produktname]** ??? und **[!UICONTROL Produktkategorie]** ??
+* Metriken: **[!UICONTROL Einkaufsumsatz]** ??? und **[!UICONTROL Einkäufe]** ??..
+* Filter: **[!UICONTROL Fischereierzeugnisse]** ??
 
 ![Customer Journey Analytics Base-Setup](assets/cja-base.png)
 
-Wenn Sie die Anweisungen durchgehen, ersetzen Sie diese Beispielobjekte durch Objekte, die in Ihrer spezifischen Umgebung geeignet sind.
+Wenn Sie die Anwendungsfälle durchlaufen, ersetzen Sie diese Beispielobjekte durch Objekte, die für Ihre spezifische Umgebung geeignet sind.
 
 +++
 
@@ -85,14 +94,14 @@ Wenn Sie die Anweisungen durchgehen, ersetzen Sie diese Beispielobjekte durch Ob
       ![Power BI Desktop Server- und Datenbankeinstellungen](assets/powerbi-serverdatabase.png)
       1. Verwenden Sie ![Kopieren](/help/assets/icons/Copy.svg) , um die Werte **[!UICONTROL Host]** und **[!UICONTROL Port]** aus dem Bedienfeld Experience Platform **[!UICONTROL Abfrage]** **[!UICONTROL Ablaufberechtigungen]** zu kopieren und einzufügen, getrennt durch `:` als Wert für **[!UICONTROL Server]**. Beispiel: `examplecompany.platform-query.adobe.io:80`.
       1. Verwenden Sie ![Kopieren](/help/assets/icons/Copy.svg) , um den Wert **[!UICONTROL Database]** aus dem Bereich Experience Platform **[!UICONTROL Abfrage]** **[!UICONTROL Ablaufberechtigungen]** zu kopieren und einzufügen. Fügen Sie `?FLATTEN` zum Wert hinzu, den Sie einfügen. Zum Beispiel `prod:cja?FLATTEN`.
-      1. Wählen Sie **[!UICONTROL DirectQuery]** als [!UICONTROL Datenkonnektivitätsmodus] aus.
+      1. Wählen Sie **[!UICONTROL DirectQuery]** als **[!UICONTROL Datenkonnektivitätsmodus]** aus.
       1. Wählen Sie **[!UICONTROL OK]** aus.
    1. Im Dialogfeld **[!UICONTROL PostgreSQL-Datenbank]** - **[!UICONTROL Datenbank]** :
       ![Power BI Desktop User and Password](assets/powerbi-userpassword.png)
       1. Kopieren Sie mithilfe von ![Kopieren](/help/assets/icons/Copy.svg) die Werte **[!UICONTROL Benutzername]** und **[!UICONTROL Kennwort]** aus dem Feld Experience Platform **[!UICONTROL Abfrage]** **[!UICONTROL Ablaufberechtigungen]** in den Feldern **[!UICONTROL Benutzername]** und **[!UICONTROL Kennwort]**. Wenn Sie eine [nicht ablaufende Berechtigung](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/credentials?lang=en#use-credential-to-connect) verwenden, verwenden Sie das Kennwort Ihrer nicht ablaufenden Berechtigung.
       1. Stellen Sie sicher, dass das Dropdown-Menü für **[!UICONTROL Auswählen, welche Ebene diese Einstellungen auf]** anwenden soll, auf den zuvor definierten **[!UICONTROL Server]** festgelegt ist.
       1. Wählen Sie **[!UICONTROL Verbinden]** aus.
-   1. Im Dialogfeld **[!UICONTROL Navigator]** werden die Datenansichten abgerufen. Dieser Abruf kann einige Zeit in Anspruch nehmen. Nach dem Abrufen:
+   1. Im Dialogfeld **[!UICONTROL Navigator]** werden die Datenansichten abgerufen. Dieser Abruf kann einige Zeit in Anspruch nehmen. Nach dem Abrufen sehen Sie Folgendes in Power BI Desktop.
       ![Power BI-Desktop-Ladedaten](assets/powerbi-navigator-load.png)
       1. Wählen Sie **[!UICONTROL public.cc_data_view]** aus der Liste im linken Bereich aus.
       1. Es gibt zwei Optionen:
@@ -100,7 +109,7 @@ Wenn Sie die Anweisungen durchgehen, ersetzen Sie diese Beispielobjekte durch Ob
          1. Wählen Sie **[!UICONTROL Daten transformieren]** aus. Es wird ein Dialogfeld angezeigt, in dem Sie im Rahmen der Konfiguration optional Umwandlungen anwenden können.
             ![Power BI Desktop Transform Data](assets/powerbi-transform-data.png)
             * Wählen Sie **[!UICONTROL Schließen und Anwenden]** aus.
-   1. Nach einiger Zeit wird **[!UICONTROL public cc_data_view]** im Bereich **[!UICONTROL Daten]** angezeigt. Wählen Sie ![ChevronRight](/help/assets/icons/ChevronRight.svg) aus, um Dimensionen und Metriken anzuzeigen.
+   1. Nach einiger Zeit wird **[!UICONTROL public.cc_data_view]** im Bereich **[!UICONTROL Daten]** angezeigt. Wählen Sie ![ChevronRight](/help/assets/icons/ChevronRight.svg) aus, um Dimensionen und Metriken anzuzeigen.
       ![Laden der Power BI Desktop Server-Daten](assets/powerbi-navigator-loaded.png)
 
 
@@ -160,7 +169,7 @@ Ein Beispiel für den Bereich **[!UICONTROL Täglicher Trend]** für den Anwendu
 
 >[!PREREQUISITES]
 >
->Stellen Sie sicher, dass Sie eine [erfolgreiche Verbindung validiert haben und Datenansichten](#connect-and-list-data-views) für das BI-Tool auflisten können, für das Sie diesen Anwendungsfall ausprobieren möchten.
+>Stellen Sie sicher, dass Sie eine [erfolgreiche Verbindung validiert haben und Datenansichten](#connect-and-validate) für das BI-Tool auflisten und verwenden können, für das Sie diesen Anwendungsfall ausprobieren möchten.
 >
 
 >[!BEGINTABS]
@@ -171,7 +180,7 @@ Ein Beispiel für den Bereich **[!UICONTROL Täglicher Trend]** für den Anwendu
    1. Wählen Sie **[!UICONTROL daterangeday]** aus.
    1. Wählen Sie **[!UICONTROL ∑ Vorkommen]** aus.
 
-   Es wird eine Tabelle mit den Vorkommen für den aktuellen Monat angezeigt. Vergrößern Sie die Tabellenvisualisierung, um eine bessere Sichtbarkeit zu erzielen.
+   Es wird eine Tabelle mit den Vorkommen für den aktuellen Monat angezeigt. Vergrößern Sie die Visualisierung, um eine bessere Sichtbarkeit zu erzielen.
 
 1. Im Bereich **[!UICONTROL Filter]** :
 
@@ -202,7 +211,7 @@ Ein Beispiel für den Bereich **[!UICONTROL Täglicher Trend]** für den Anwendu
 1. Wählen Sie unten die Registerkarte **[!UICONTROL Blatt 1]** aus, um von der Ansicht **[!UICONTROL Datenquelle]** zu wechseln. In der Ansicht **[!UICONTROL Tabellenblatt 1]**:
    1. Ziehen Sie den Eintrag **[!UICONTROL Daterange]** aus der Liste **[!UICONTROL Tabellen]** in den Bereich **[!UICONTROL Daten]** und legen Sie den Eintrag in die Regale **[!UICONTROL Filter]**.
    1. Wählen Sie im Dialogfeld **[!UICONTROL Filterfeld \[Datumsbereich\]]** die Option **[!UICONTROL Datumsbereich]** aus und wählen Sie **[!UICONTROL Weiter >]**.
-   1. Wählen Sie im Dialogfeld **[!UICONTROL Filter \[Datumsbereich]]** die Option **[!UICONTROL Datumsbereich]** aus und geben Sie einen Zeitraum von `01/01/2023` - `31/01/2023` an.
+   1. Wählen Sie im Dialogfeld **[!UICONTROL Filter \[Datumsbereich]]** die Option **[!UICONTROL Datumsbereich]** aus und geben Sie einen Zeitraum von `01/01/2023` - `01/02/2023` an.
 
       ![Tableau-Desktop-Filter](assets/uc2-tableau-filter.png)
 
@@ -210,7 +219,7 @@ Ein Beispiel für den Bereich **[!UICONTROL Täglicher Trend]** für den Anwendu
       * Wählen Sie **[!UICONTROL Tag]** aus dem Dropdown-Menü **[!UICONTROL Daterangeday]** aus, damit der Wert auf **[!UICONTROL TAG(Daterangeday)]** aktualisiert wird.
    1. Ziehen Sie **[!UICONTROL Vorfälle]** aus der Liste **[!UICONTROL Tabellen (*Messnamen*)]** in den Bereich **[!UICONTROL Daten]** und legen Sie den Eintrag im Feld neben **[!UICONTROL Zeilen]** ab.
       * Die Werte werden automatisch in **[!UICONTROL SUM(Vorfälle)]** konvertiert.
-   1. Ändern Sie **[!UICONTROL Standard]** in **[!UICONTROL Gesamte Ansicht]** aus dem Dropdown-Menü in der Symbolleiste.
+   1. Ändern Sie **[!UICONTROL Standard]** in **[!UICONTROL Gesamte Ansicht]** aus dem Dropdown-Menü **[IUICONTROL Fit]** in der Symbolleiste.
 
       Ihr Tableau-Desktop sollte wie unten dargestellt aussehen.
 
@@ -219,10 +228,10 @@ Ein Beispiel für den Bereich **[!UICONTROL Täglicher Trend]** für den Anwendu
 1. Wählen Sie im Kontextmenü der Registerkarte **[!UICONTROL Blatt 1]** die Option **[!UICONTROL Duplizieren]** aus, um ein zweites Blatt zu erstellen.
 1. Wählen Sie im Kontextmenü der Registerkarte **[!UICONTROL Blatt 1]** die Option **[!UICONTROL Umbenennen]** aus, um das Blatt in `Graph` umzubenennen.
 1. Wählen Sie im Kontextmenü der Registerkarte **[!UICONTROL Blatt 1 (2)]** die Option **[!UICONTROL Umbenennen]** aus, um das Blatt in `Data` umzubenennen.
-1. Stellen Sie sicher, dass das Blatt **[!UICONTROL Daten]** ausgewählt ist. In der Datenansicht:
+1. Stellen Sie sicher, dass das Blatt **[!UICONTROL Daten]** ausgewählt ist. In der Ansicht **[!UICONTROL Data]**:
    1. Wählen Sie oben rechts **[!UICONTROL Einblenden]** und dann **[!UICONTROL Texttabelle]** (obere linke Visualisierung) aus, um den Inhalt der Datenansicht in eine Tabelle zu ändern.
    1. Wählen Sie **[!UICONTROL Zeilen und Spalten tauschen]** aus der Symbolleiste aus.
-   1. Ändern Sie **[!UICONTROL Standard]** in **[!UICONTROL Gesamte Ansicht]** aus dem Dropdown-Menü in der Symbolleiste.
+   1. Ändern Sie **[!UICONTROL Standard]** in **[!UICONTROL Gesamte Ansicht]** aus dem Dropdown-Menü **[IUICONTROL Fit]** in der Symbolleiste.
 
       Ihr Tableau-Desktop sollte wie unten dargestellt aussehen.
 
@@ -258,14 +267,14 @@ Ein Beispiel für den Bereich **[!UICONTROL Stündlicher Trend]** für den Anwen
 
 >[!PREREQUISITES]
 >
->Stellen Sie sicher, dass Sie eine [erfolgreiche Verbindung validiert haben und Datenansichten](#connect-and-list-data-views) für das BI-Tool auflisten können, für das Sie diesen Anwendungsfall ausprobieren möchten.
+>Vergewissern Sie sich, dass Sie [eine erfolgreiche Verbindung überprüft haben, Datenansichten auflisten und eine Datenansicht](#connect-and-validate) für das BI-Tool verwenden können, für das Sie diesen Anwendungsfall ausprobieren möchten.
 >
 
 >[!BEGINTABS]
 
 >[!TAB Power BI Desktop]
 
-![Alert](/help/assets/icons/Alert.svg) Power BI versteht **nicht**, wie Datumszeitspalten verarbeitet werden. Daher werden Dimensionen wie **[!UICONTROL daterangehour]** und **[!UICONTROL daterangeminute]** nicht unterstützt.
+![AlertRed](/help/assets/icons/AlertRed.svg) Power BI versteht **nicht**, wie Datumszeitfelder verarbeitet werden. Daher werden Dimensionen wie **[!UICONTROL daterangehour]** und **[!UICONTROL daterangeminute]** nicht unterstützt.
 
 >[!TAB Tableau-Desktop]
 
@@ -280,7 +289,7 @@ Ein Beispiel für den Bereich **[!UICONTROL Stündlicher Trend]** für den Anwen
       * Wählen Sie **[!UICONTROL Mehr]** > **[!UICONTROL Stunden]** aus dem Dropdown-Menü **[!UICONTROL Daterangeday]** aus, damit der Wert auf **[!UICONTROL STUNDE(Daterangeday)]** aktualisiert wird.
    1. Ziehen Sie **[!UICONTROL Vorfälle]** aus der Liste **[!UICONTROL Tabellen (*Messnamen*)]** in den Bereich **[!UICONTROL Daten]** und legen Sie den Eintrag im Feld neben **[!UICONTROL Zeilen]** ab.
       * Die Werte werden automatisch in **[!UICONTROL SUM(Vorfälle)]** konvertiert.
-   1. Ändern Sie **[!UICONTROL Standard]** in **[!UICONTROL Gesamte Ansicht]** aus dem Dropdown-Menü in der Symbolleiste.
+   1. Ändern Sie **[!UICONTROL Standard]** in **[!UICONTROL Gesamte Ansicht]** aus dem Dropdown-Menü **[IUICONTROL Fit]** in der Symbolleiste.
 
       Ihr Tableau-Desktop sollte wie unten dargestellt aussehen.
 
@@ -289,10 +298,10 @@ Ein Beispiel für den Bereich **[!UICONTROL Stündlicher Trend]** für den Anwen
 1. Wählen Sie im Kontextmenü der Registerkarte **[!UICONTROL Blatt 1]** die Option **[!UICONTROL Duplizieren]** aus, um ein zweites Blatt zu erstellen.
 1. Wählen Sie im Kontextmenü der Registerkarte **[!UICONTROL Blatt 1]** die Option **[!UICONTROL Umbenennen]** aus, um das Blatt in `Graph` umzubenennen.
 1. Wählen Sie im Kontextmenü der Registerkarte **[!UICONTROL Blatt 1 (2)]** die Option **[!UICONTROL Umbenennen]** aus, um das Blatt in `Data` umzubenennen.
-1. Stellen Sie sicher, dass das Blatt **[!UICONTROL Daten]** ausgewählt ist. In der Datenansicht:
+1. Stellen Sie sicher, dass das Blatt **[!UICONTROL Daten]** ausgewählt ist. In der Ansicht **[!UICONTROL Data]**:
    1. Wählen Sie oben rechts **[!UICONTROL Einblenden]** und dann **[!UICONTROL Texttabelle]** (obere linke Visualisierung) aus, um den Inhalt der Datenansicht in eine Tabelle zu ändern.
    1. Ziehen Sie **[!UICONTROL STUNDE(Daterangeday)]** aus **[!UICONTROL Spalten]** in **[!UICONTROL Zeilen]**.
-   1. Ändern Sie **[!UICONTROL Standard]** in **[!UICONTROL Gesamte Ansicht]** aus dem Dropdown-Menü in der Symbolleiste.
+   1. Ändern Sie **[!UICONTROL Standard]** in **[!UICONTROL Gesamte Ansicht]** aus dem Dropdown-Menü **[IUICONTROL Fit]** in der Symbolleiste.
 
       Ihr Tableau-Desktop sollte wie unten dargestellt aussehen.
 
@@ -329,7 +338,7 @@ Ein Beispiel für den Bereich **[!UICONTROL Monatlicher Trend]** für den Anwend
 
 >[!PREREQUISITES]
 >
->Stellen Sie sicher, dass Sie eine [erfolgreiche Verbindung validiert haben und Datenansichten](#connect-and-list-data-views) für das BI-Tool auflisten können, für das Sie diesen Anwendungsfall ausprobieren möchten.
+>Vergewissern Sie sich, dass Sie [eine erfolgreiche Verbindung überprüft haben, Datenansichten auflisten und eine Datenansicht](#connect-and-validate) für das BI-Tool verwenden können, für das Sie diesen Anwendungsfall ausprobieren möchten.
 >
 
 >[!BEGINTABS]
@@ -340,7 +349,7 @@ Ein Beispiel für den Bereich **[!UICONTROL Monatlicher Trend]** für den Anwend
    1. Wählen Sie **[!UICONTROL daterangemonth]** aus.
    1. Wählen Sie **[!UICONTROL ∑ Vorkommen]** aus.
 
-   Es wird eine Tabelle mit den Vorkommen für den aktuellen Monat angezeigt. Vergrößern Sie die Tabellenvisualisierung, um eine bessere Sichtbarkeit zu erzielen.
+   Es wird eine Tabelle mit den Vorkommen für den aktuellen Monat angezeigt. Vergrößern Sie die Visualisierung, um eine bessere Sichtbarkeit zu erzielen.
 
 1. Im Bereich **[!UICONTROL Filter]** :
 
@@ -381,7 +390,7 @@ Ein Beispiel für den Bereich **[!UICONTROL Monatlicher Trend]** für den Anwend
       * Wählen Sie **[!UICONTROL MONTH]** aus dem Dropdown-Menü **[!UICONTROL Daterangeday]** aus, damit der Wert auf **[!UICONTROL MONTH(Daterangeday)]** aktualisiert wird.
    1. Ziehen Sie **[!UICONTROL Vorfälle]** aus der Liste **[!UICONTROL Tabellen (*Messnamen*)]** in den Bereich **[!UICONTROL Daten]** und legen Sie den Eintrag im Feld neben **[!UICONTROL Zeilen]** ab.
       * Die Werte werden automatisch in **[!UICONTROL SUM(Vorfälle)]** konvertiert.
-   1. Ändern Sie **[!UICONTROL Standard]** in **[!UICONTROL Gesamte Ansicht]** aus dem Dropdown-Menü in der Symbolleiste.
+   1. Ändern Sie **[!UICONTROL Standard]** in **[!UICONTROL Gesamte Ansicht]** aus dem Dropdown-Menü **[IUICONTROL Fit]** in der Symbolleiste.
 
       Ihr Tableau-Desktop sollte wie unten dargestellt aussehen.
 
@@ -393,7 +402,7 @@ Ein Beispiel für den Bereich **[!UICONTROL Monatlicher Trend]** für den Anwend
 1. Stellen Sie sicher, dass das Blatt **[!UICONTROL Daten]** ausgewählt ist. In der Datenansicht:
    1. Wählen Sie oben rechts **[!UICONTROL Einblenden]** und dann **[!UICONTROL Texttabelle]** (obere linke Visualisierung) aus, um den Inhalt der Datenansicht in eine Tabelle zu ändern.
    1. Ziehen Sie **[!UICONTROL MONTH(Daterangeday)]** aus **[!UICONTROL Spalten]** in **[!UICONTROL Zeilen]**.
-   1. Ändern Sie **[!UICONTROL Standard]** in **[!UICONTROL Gesamte Ansicht]** aus dem Dropdown-Menü in der Symbolleiste.
+   1. Ändern Sie **[!UICONTROL Standard]** in **[!UICONTROL Gesamte Ansicht]** aus dem Dropdown-Menü **[IUICONTROL Fit]** in der Symbolleiste.
 
       Ihr Tableau-Desktop sollte wie unten dargestellt aussehen.
 
@@ -428,7 +437,7 @@ Beispiel für ein Bedienfeld **[!UICONTROL Einzelne Dimension mit Rangansicht]**
 
 >[!PREREQUISITES]
 >
->Stellen Sie sicher, dass Sie eine [erfolgreiche Verbindung validiert haben und Datenansichten](#connect-and-list-data-views) für das BI-Tool auflisten können, für das Sie diesen Anwendungsfall ausprobieren möchten.
+>Vergewissern Sie sich, dass Sie [eine erfolgreiche Verbindung überprüft haben, Datenansichten auflisten und eine Datenansicht](#connect-and-validate) für das BI-Tool verwenden können, für das Sie diesen Anwendungsfall ausprobieren möchten.
 >
 
 >[!BEGINTABS]
@@ -441,7 +450,7 @@ Beispiel für ein Bedienfeld **[!UICONTROL Einzelne Dimension mit Rangansicht]**
    1. Wählen Sie **[!UICONTROL ∑ purchase_revenue]** aus.
    1. Wählen Sie **[!UICONTROL ∑ Einkäufe]** aus.
 
-   Es wird eine leere Tabelle angezeigt, die nur die Spaltenüberschriften für das ausgewählte Element anzeigt. Vergrößern Sie die Tabellenvisualisierung, um eine bessere Sichtbarkeit zu erzielen.
+   Es wird eine leere Tabelle angezeigt, die nur die Spaltenüberschriften für das ausgewählte Element anzeigt. Vergrößern Sie die Visualisierung, um eine bessere Sichtbarkeit zu erzielen.
 
 1. Im Bereich **[!UICONTROL Filter]** :
 
@@ -466,7 +475,7 @@ Beispiel für ein Bedienfeld **[!UICONTROL Einzelne Dimension mit Rangansicht]**
 1. Im Bereich **[!UICONTROL Filter]** :
 
    1. Wählen Sie **[!UICONTROL product_name is (All)]** aus.
-   1. Legen Sie den Filtertyp auf Oben N fest.
+   1. Setzen Sie **[!UICONTROL Filtertyp]** auf **[!UICONTROL Oben N]**.
    1. Definieren Sie den Filter zu **[!UICONTROL Elemente anzeigen]** **[!UICONTROL Oben]** `10` **[!UICONTROL Nach Wert]**.
    1. Ziehen Sie **[!UICONTROL purchase_revenue]** per Drag-and-Drop in **[!UICONTROL Nach Wert]** **[!UICONTROL Hier Datenfelder hinzufügen]**.
    1. Wählen Sie **[!UICONTROL Filter anwenden]**.
@@ -479,13 +488,13 @@ Beispiel für ein Bedienfeld **[!UICONTROL Einzelne Dimension mit Rangansicht]**
 
    Eine Liniendiagramm- und gestapelte Spaltendiagrammvisualisierung ersetzt die Tabelle, wobei dieselben Daten wie die Tabelle verwendet werden.
 
-1. Ziehen Sie Einkäufe per Drag-and-Drop auf die y-Achse der Zeile im Bereich Visualisierungen .
+1. Ziehen Sie **[!UICONTROL Einkäufe]** auf **[!UICONTROL Linie y-Achse]** im Bereich **[!UICONTROL Visualisierungen]** und legen Sie es dort ab.
 
    Das Linien- und gestapelte Spaltendiagramm wird aktualisiert. Ihr Power BI Desktop sollte wie unten dargestellt aussehen.
 
    ![Power BI Desktop-Nutzungsszenario 5 Diagramm](assets/uc5-pbi-chart.png)
 
-1. In der Liniendiagramm- und gestapelten Spaltendiagrammdarstellung:
+1. Visualisierung der Linien- und gestapelten Spaltendiagramme:
 
    1. Wählen Sie ![Mehr](/help/assets/icons/More.svg) aus.
    1. Wählen Sie im Kontextmenü **[!UICONTROL Als Tabelle anzeigen]** aus.
@@ -508,8 +517,8 @@ Beispiel für ein Bedienfeld **[!UICONTROL Einzelne Dimension mit Rangansicht]**
       * Die Werte werden automatisch in **[!UICONTROL SUM(Purchases)]** konvertiert.
    1. Ziehen Sie den Eintrag **[!UICONTROL Einkaufsumsatz]** aus der Liste **[!UICONTROL Tabellen (*Messnamen*)]** in den Bereich **[!UICONTROL Daten]** und legen Sie den Eintrag im Feld neben **[!UICONTROL Spalten]** und links von **[!UICONTROL SUM(Einkäufe)]** ab.
       * Die Werte werden automatisch in **[!UICONTROL SUM(Einkaufsumsatz)]** konvertiert.
-   1. Um beide Diagramme in absteigender Reihenfolge des Kaufumsatzes zu sortieren, bewegen Sie den Mauszeiger über den Titel des Kaufumsatzes und wählen Sie das Sortiersymbol aus.
-   1. Um die Anzahl der Einträge in den Diagrammen zu begrenzen, wählen Sie SUM(Purchase Revenue) in Zeilen und wählen Sie aus dem Dropdown-Menü Filter aus.
+   1. Um beide Diagramme in absteigender Reihenfolge des Kaufumsatzes zu sortieren, bewegen Sie den Mauszeiger über den Titel **[!UICONTROL Kaufumsatz]** und wählen Sie das Sortiersymbol aus.
+   1. Um die Anzahl der Einträge in den Diagrammen zu begrenzen, wählen Sie **[!UICONTROL SUM(Purchase Revenue)]** in **[!UICONTROL Zeilen]** und wählen Sie im Dropdown-Menü **[!UICONTROL Filter]** aus.
    1. Wählen Sie im Dialogfeld **[!UICONTROL Filter \[Kaufumsatz\]]** die Option **[!UICONTROL Wertebereich]** aus und geben Sie die entsprechenden Werte ein. Beispiel: `1,000,000` - `2,000,000`. Wählen Sie **[!UICONTROL Apply]** und **[!UICONTROL OK]** aus.
    1. Um die beiden Balkendiagramme in ein doppeltes Kombinationsdiagramm zu konvertieren, wählen Sie **[!UICONTROL SUM(Purchases)]** in **[!UICONTROL Zeilen]** und wählen Sie im Dropdown-Menü **[!UICONTROL Duale Achse]** aus. Die Balkendiagramme verwandeln sich in ein Streudiagramm.
    1. So ändern Sie das Streudiagramm in ein Balkendiagramm:
@@ -562,22 +571,25 @@ Beispiel für das Bedienfeld **[!UICONTROL Mehrere Dimensionen mit Rangansicht]*
 
 >[!PREREQUISITES]
 >
->Stellen Sie sicher, dass Sie eine [erfolgreiche Verbindung validiert haben und Datenansichten](#connect-and-list-data-views) für das BI-Tool auflisten können, für das Sie diesen Anwendungsfall ausprobieren möchten.
+>Vergewissern Sie sich, dass Sie [eine erfolgreiche Verbindung überprüft haben, Datenansichten auflisten und eine Datenansicht](#connect-and-validate) für das BI-Tool verwenden können, für das Sie diesen Anwendungsfall ausprobieren möchten.
 >
 
 >[!BEGINTABS]
 
 >[!TAB Power BI Desktop]
 
-1. Um sicherzustellen, dass der Datumsbereich auf alle Visualisierungen angewendet wird, ziehen Sie **[!UICONTROL daterangeday]** aus dem Bereich **[!UICONTROL Daten]** in den Bereich **[!UICONTROL Filter]** auf dieser Seite.
+1. Um sicherzustellen, dass der Datumsbereich für alle Visualisierungen gilt, ziehen Sie **[!UICONTROL daterangeday]** aus dem Bereich **[!UICONTROL Daten]** in den Bereich **[!UICONTROL Filter auf dieser Seite]**.
    1. Wählen Sie unter **[!UICONTROL Filter auf dieser Seite]** den Wert **[!UICONTROL daterangeday is (All)]** aus.
    1. Wählen Sie **[!UICONTROL Relatives Datum]** als **[!UICONTROL Filtertyp]** aus.
-   1. Definieren Sie den Filter auf **[!UICONTROL Elemente anzeigen , wenn der Wert]** **[!UICONTROL auf oder nach]** `1/1/2023` **[!UICONTROL und]** **[!UICONTROL vor]** `2/1/2023` liegt.
+   1. Definieren Sie den Filter auf **[!UICONTROL Elemente anzeigen , wenn sich der Wert]** **[!UICONTROL in den letzten]** `1` **[!UICONTROL Kalenderjahren]** befindet.
    1. Wählen Sie **[!UICONTROL Filter anwenden]**.
 
 1. Im Bereich **[!UICONTROL Daten]** :
    1. Wählen Sie **[!UICONTROL datarangeday]** aus.
-   1. Wählen Sie **[!UICONTROL ∑ cm_product_name_count_distinct]** aus, was der in Customer Journey Analytics definierten berechneten Metrik entspricht.
+   1. Wählen Sie **[!UICONTROL product_category]** aus.
+   1. Wählen Sie **[!UICONTROL product_name]** aus.
+   1. Wählen Sie **[!UICONTROL ∑ purchase_revenue]**
+   1. Wählen Sie **[!UICONTROL ∑ Einkäufe]**
 
 1. Um das vertikale Balkendiagramm in eine Tabelle zu ändern, stellen Sie sicher, dass Sie die Tabelle ausgewählt haben, und wählen Sie **[!UICONTROL Matrix]** aus dem Bereich **[!UICONTROL Visualisierungen]** aus.
    * Ziehen Sie **[!UICONTROL product_name]** aus **[!UICONTROL Spalten]** und legen Sie das Feld unter **[!UICONTROL product_category]**y in **[!UICONTROL Zeilen]** im Bereich **[!UICONTROL Visualisierung]** ab.
@@ -586,12 +598,12 @@ Beispiel für das Bedienfeld **[!UICONTROL Mehrere Dimensionen mit Rangansicht]*
 
    1. Wählen Sie **[!UICONTROL Erweiterte Filterung]** aus.
    1. Wählen Sie **[!UICONTROL Filtertyp]** **[!UICONTROL Oben N]** **[!UICONTROL Elemente anzeigen]** **[!UICONTROL Oben]** `15` **[!UICONTROL Nach Wert]** aus.
-   1. Ziehen Sie **[!UICONTROL Einkäufe]**e aus dem Bereich **[!UICONTROL Daten]** in den Bereich **[!UICONTROL Datenfelder hier hinzufügen]**.
+   1. Ziehen Sie **[!UICONTROL Einkäufe]** aus dem Bereich **[!UICONTROL Daten]** in den Bereich **[!UICONTROL Datenfelder hier hinzufügen]**.
    1. Wählen Sie **[!UICONTROL Filter anwenden]**.
 
 1. Um die Lesbarkeit zu verbessern, wählen Sie im oberen Menü **[!UICONTROL Ansicht]** aus, wählen Sie **[!UICONTROL Seitenansicht]** > **[!UICONTROL Tatsächliche Größe]** und ändern Sie die Größe der Tabellenvisualisierung.
 
-1. Um die einzelnen Kategorien in der Tabelle aufzuschlüsseln, wählen Sie auf der Ebene der Produktkategorie die Option **[!UICONTROL +]** aus. Ihr Power BI Desktop sollte wie unten dargestellt aussehen.
+1. Um jede Kategorie in der Tabelle aufzuschlüsseln, wählen Sie auf der Produktkategorienebene **[!UICONTROL +]** aus. Ihr Power BI Desktop sollte wie unten dargestellt aussehen.
 
    ![Power BI Desktop Multiple Dimensionen Rangansicht Tabelle](assets/uc6-powerbi-data.png)
 
@@ -722,7 +734,7 @@ Sie können diese Metrik dann in einem Beispielbedienfeld **[!UICONTROL Dimensio
 
 >[!PREREQUISITES]
 >
->Stellen Sie sicher, dass Sie eine [erfolgreiche Verbindung validiert haben und Datenansichten](#connect-and-list-data-views) für das BI-Tool auflisten können, für das Sie diesen Anwendungsfall ausprobieren möchten.
+>Vergewissern Sie sich, dass Sie [eine erfolgreiche Verbindung überprüft haben, Datenansichten auflisten und eine Datenansicht](#connect-and-validate) für das BI-Tool verwenden können, für das Sie diesen Anwendungsfall ausprobieren möchten.
 >
 
 >[!BEGINTABS]
@@ -731,7 +743,7 @@ Sie können diese Metrik dann in einem Beispielbedienfeld **[!UICONTROL Dimensio
 
 1. Um sicherzustellen, dass der Datumsbereich für alle Visualisierungen gilt, ziehen Sie **[!UICONTROL daterangeday]** aus dem Bereich **[!UICONTROL Daten]** auf **[!UICONTROL Filter]** auf dieser Seite.
    1. Wählen Sie unter **[!UICONTROL Filter auf dieser Seite]** den Wert **[!UICONTROL daterangeday is (All)]** aus.
-   1. Wählen Sie **[!UICONTROL RelAdvanced filtering]** als **[!UICONTROL Filtertyp]** aus.
+   1. Wählen Sie **[!UICONTROL Erweiterte Filterung]** als **[!UICONTROL Filtertyp]** aus.
    1. Definieren Sie den Filter auf **[!UICONTROL Elemente anzeigen , wenn der Wert]** **[!UICONTROL auf oder nach]** `1/1/2023` **[!UICONTROL und]** **[!UICONTROL vor]** `2/1/2023` liegt.
    1. Wählen Sie **[!UICONTROL Filter anwenden]**.
 
@@ -746,7 +758,7 @@ Sie können diese Metrik dann in einem Beispielbedienfeld **[!UICONTROL Dimensio
    ![Power BI Desktop Multiple Count Distinct table](assets/uc7-powerbi-table.png)
 
 1. Wählen Sie die Tabellenvisualisierung aus. Wählen Sie im Kontextmenü **[!UICONTROL Kopieren]** > **[!UICONTROL Visualisierung kopieren]** aus.
-1. Fügen Sie die Visualisierung mit dem Schlüssel **[!UICONTROL Strg-v]** ein. Die genaue Kopie der Visualisierung überschneidet sich mit der ursprünglichen. Verschieben Sie sie im Berichtsbereich nach rechts.
+1. Fügen Sie die Visualisierung mit **[!UICONTROL Strg-v]** ein. Die genaue Kopie der Visualisierung überschneidet sich mit der ursprünglichen. Verschieben Sie sie im Berichtsbereich nach rechts.
 1. Um die kopierte Visualisierung von einer Tabelle auf eine Karte zu ändern, wählen Sie **[!UICONTROL Karte]** aus **[!UICONTROL Visualisierungen]** aus.
 
    Ihr Power BI Desktop sollte wie unten dargestellt aussehen.
@@ -820,7 +832,7 @@ Beachten Sie, dass der in der Freiformtabellen-Visualisierung definierte Datumsb
 
 >[!PREREQUISITES]
 >
->Stellen Sie sicher, dass Sie eine [erfolgreiche Verbindung validiert haben und Datenansichten](#connect-and-list-data-views) für das BI-Tool auflisten können, für das Sie diesen Anwendungsfall ausprobieren möchten.
+>Vergewissern Sie sich, dass Sie [eine erfolgreiche Verbindung überprüft haben, Datenansichten auflisten und eine Datenansicht](#connect-and-validate) für das BI-Tool verwenden können, für das Sie diesen Anwendungsfall ausprobieren möchten.
 >
 
 >[!BEGINTABS]
@@ -886,7 +898,7 @@ Anschließend können Sie diesen Filter in einem Beispiel-Bedienfeld &quot;**[!U
 
 >[!PREREQUISITES]
 >
->Stellen Sie sicher, dass Sie eine [erfolgreiche Verbindung validiert haben und Datenansichten](#connect-and-list-data-views) für das BI-Tool auflisten können, für das Sie diesen Anwendungsfall ausprobieren möchten.
+>Vergewissern Sie sich, dass Sie [eine erfolgreiche Verbindung überprüft haben, Datenansichten auflisten und eine Datenansicht](#connect-and-validate) für das BI-Tool verwenden können, für das Sie diesen Anwendungsfall ausprobieren möchten.
 >
 
 >[!BEGINTABS]
@@ -924,7 +936,7 @@ Es wird eine Visualisierung mit **[!UICONTROL Fehler beim Abrufen von Daten für
    1. Stellen Sie im Dialogfeld **[!UICONTROL Filter \[Filtername\]]** sicher, dass **[!UICONTROL Aus Liste auswählen]** ausgewählt ist, und wählen Sie **[!UICONTROL Fischereierzeugnisse]** aus der Liste aus. Wählen Sie **[!UICONTROL Apply]** und **[!UICONTROL OK]** aus.
    1. Ziehen Sie den Eintrag **[!UICONTROL Daterange]** aus der Liste **[!UICONTROL Tabellen]** in der Regal **[!UICONTROL Filter]**.
    1. Wählen Sie im Dialogfeld **[!UICONTROL Filterfeld \[Datumsbereich\]]** die Option **[!UICONTROL Datumsbereich]** aus und wählen Sie **[!UICONTROL Weiter >]**.
-   1. Wählen Sie im Dialogfeld **[!UICONTROL Filter \[Datumsbereich]]** die Option **[!UICONTROL Datumsbereich]** und dann `01/01/2023` - `1/2/2023` aus. Wählen Sie **[!UICONTROL Apply]** und **[!UICONTROL OK]** aus.
+   1. Wählen Sie im Dialogfeld **[!UICONTROL Filter \[Datumsbereich]]** die Option **[!UICONTROL Datumsbereich]** und dann `01/01/2023` - `01/02/2023` aus. Wählen Sie **[!UICONTROL Apply]** und **[!UICONTROL OK]** aus.
    1. Ziehen Sie **[!UICONTROL Produktname]** aus der Liste **[!UICONTROL Tabellen]** in **[!UICONTROL Zeilen]**.
    1. Ziehen Sie den Eintrag **[!UICONTROL Vorfälle]** aus der Liste **[!UICONTROL Tabellen]** auf **[!UICONTROL Spalten]**. Der Wert ändert sich in **[!UICONTROL SUM(Vorfälle)]**.
    1. Wählen Sie **[!UICONTROL Texttabelle]** aus **[!UICONTROL Einblenden]** aus.
@@ -949,7 +961,7 @@ Erstellen Sie einen neuen Filter mit **[!UICONTROL Titel]** `Hunting Products` i
 
 ![Customer Journey Analytics Verwenden von Dimension-Werten zum Filtern](assets/cja-hunting-products.png)
 
-Anschließend können Sie diesen Filter in einem Beispiel-Bedienfeld &quot;**[!UICONTROL Verwenden von Datumsbereichsnamen zum Filtern]**&quot;für den Anwendungsfall verwenden:
+Sie können diesen Filter dann in einem Beispiel-Bedienfeld **[!UICONTROL Dimension Values To Filter]** für den Anwendungsfall verwenden:
 
 ![Customer Journey Analytics Unique Count Values ](assets/cja-using-dimension-values-to-filter.png)
 
@@ -959,7 +971,7 @@ Anschließend können Sie diesen Filter in einem Beispiel-Bedienfeld &quot;**[!U
 
 >[!PREREQUISITES]
 >
->Stellen Sie sicher, dass Sie eine [erfolgreiche Verbindung validiert haben und Datenansichten](#connect-and-list-data-views) für das BI-Tool auflisten können, für das Sie diesen Anwendungsfall ausprobieren möchten.
+>Vergewissern Sie sich, dass Sie [eine erfolgreiche Verbindung überprüft haben, Datenansichten auflisten und eine Datenansicht](#connect-and-validate) für das BI-Tool verwenden können, für das Sie diesen Anwendungsfall ausprobieren möchten.
 >
 
 >[!BEGINTABS]
@@ -994,7 +1006,7 @@ Es wird eine Visualisierung mit **[!UICONTROL Fehler beim Abrufen von Daten für
 
 >[!TAB Tableau-Desktop]
 
-1. Wählen Sie in der Ansicht **[!UICONTROL Data Source]** unter **[!UICONTROL Data]** aus dem Kontextmenü von **[!UICONTROL cc_data_view(prod:cja%3FFLATTEN)]** die Option **[!UICONTROL Refresh]**.
+1. Wählen Sie in der Ansicht **[!UICONTROL Data Source]** unter **[!UICONTROL Data]** aus dem Kontextmenü von **[!UICONTROL cc_data_view(prod:cja%3FFLATTEN)]** die Option **[!UICONTROL Refresh]**. Sie müssen die Verbindung aktualisieren, um den neuen Filter aufzunehmen, den Sie gerade unter Customer Journey Analytics definiert haben.
 1. Wählen Sie unten die Registerkarte **[!UICONTROL Blatt 1]** aus, um von **[!UICONTROL Datenquelle]** zu wechseln. In der Ansicht **[!UICONTROL Tabellenblatt 1]**:
    1. Ziehen Sie den Eintrag **[!UICONTROL Filtername]** aus der Liste **[!UICONTROL Tabellen]** in der Regal **[!UICONTROL Filter]**.
    1. Stellen Sie im Dialogfeld **[!UICONTROL Filter \[Filtername\]]** sicher, dass **[!UICONTROL Aus Liste auswählen]** ausgewählt ist, und wählen Sie **[!UICONTROL Jagdprodukte]** aus der Liste aus. Wählen Sie **[!UICONTROL Apply]** und **[!UICONTROL OK]** aus.
@@ -1018,11 +1030,9 @@ Es wird eine Visualisierung mit **[!UICONTROL Fehler beim Abrufen von Daten für
 
 ## Sortieren
 
-Zusammenfassung des Anwendungsfalls
+Sie möchten einen Bericht zum Kaufumsatz und zu den Käufen für Produktnamen im Januar 2023 erstellen, sortiert in absteigender Reihenfolge des Einkaufsumsatzes.
 
 +++ Customer Journey Analytics
-
-Sie möchten einen Bericht zum Kaufumsatz und zu den Käufen für Produktnamen im Januar 2023 erstellen, sortiert in absteigender Reihenfolge des Einkaufsumsatzes.
 
 Beispiel für ein Bedienfeld **[!UICONTROL Sortieren]** für den Anwendungsfall:
 
@@ -1034,7 +1044,7 @@ Beispiel für ein Bedienfeld **[!UICONTROL Sortieren]** für den Anwendungsfall:
 
 >[!PREREQUISITES]
 >
->Stellen Sie sicher, dass Sie eine [erfolgreiche Verbindung validiert haben und Datenansichten](#connect-and-list-data-views) für das BI-Tool auflisten können, für das Sie diesen Anwendungsfall ausprobieren möchten.
+>Vergewissern Sie sich, dass Sie [eine erfolgreiche Verbindung überprüft haben, Datenansichten auflisten und eine Datenansicht](#connect-and-validate) für das BI-Tool verwenden können, für das Sie diesen Anwendungsfall ausprobieren möchten.
 >
 
 >[!BEGINTABS]
@@ -1054,15 +1064,15 @@ Beispiel für ein Bedienfeld **[!UICONTROL Sortieren]** für den Anwendungsfall:
 
 1. Im Bereich Visualisierungen :
    1. Wählen Sie ![CrossSize75](/help/assets/icons/CrossSize75.svg) aus, um den Datumsbereich aus den Spalten zu entfernen.
-   1. Ziehen Sie die Summe der purchase_revenue an den unteren Rand der Spaltenelemente.
+   1. Ziehen Sie **[!UICONTROL Summe der purchase_revenue]** an den unteren Rand der Elemente **[!UICONTROL Spalte]**.
 
-1. Wählen Sie im Bericht die Option Summe des Kaufumsatzes aus, um die Tabelle in absteigender Reihenfolge des Kaufumsatzes zu sortieren.
+1. Wählen Sie im Bericht **[!UICONTROL Summe des Kaufumsatzes]** aus, um die Tabelle in absteigender Reihenfolge des Kaufumsatzes zu sortieren.
 
    Ihr Power BI Desktop sollte wie unten dargestellt aussehen.
 
    ![Power BI Desktop mit Datumsbereichsnamen zum Filtern](assets/uc11-powerbi-final.png)
 
-Die von Power BI Desktop mithilfe der BI-Erweiterung ausgeführte Abfrage enthält keine `sort` -Anweisung. Das Fehlen einer `sort` -Anweisung bedeutet, dass die Sortierung in absteigender Reihenfolge Client-basiert ist.
+Die von Power BI Desktop mithilfe der BI-Erweiterung ausgeführte Abfrage enthält keine `sort` -Anweisung. Das Fehlen einer `sort` -Anweisung bedeutet, dass die Sortierung clientseitig ausgeführt wird.
 
 ```sql
 select "_"."product_name",
@@ -1157,9 +1167,9 @@ limit 1000001
    1. Ziehen Sie den Eintrag **[!UICONTROL Daterange]** aus der Liste **[!UICONTROL Tabellen]** in der Regal **[!UICONTROL Filter]**.
    1. Wählen Sie im Dialogfeld **[!UICONTROL Filterfeld \[Datumsbereich\]]** die Option **[!UICONTROL Datumsbereich]** aus und wählen Sie **[!UICONTROL Weiter >]**.
    1. Wählen Sie im Dialogfeld **[!UICONTROL Filter \[Datumsbereich]]** die Option **[!UICONTROL Datumsbereich]** und dann `01/01/2023` - `1/2/2023` aus. Wählen Sie **[!UICONTROL Apply]** und **[!UICONTROL OK]** aus.
-   1. Ziehen Sie **[!UICONTROL Produktname]** aus der Liste **[!UICONTROL Tabellen]** in **[!UICONTROL Zeilen]**.
+   1. Ziehen Sie **[!UICONTROL Produktname]** aus der Liste **[!UICONTROL Tabellen]** und legen Sie den Eintrag im Feld neben **[!UICONTROL Zeilen]** ab.
    1. Ziehen Sie den Eintrag **[!UICONTROL Einkäufe]** aus der Liste **[!UICONTROL Tabellen]** auf **[!UICONTROL Spalten]**. Der Wert ändert sich in **[!UICONTROL SUM(Purchases)]**.
-   1. Ziehen Sie den Eintrag **[!UICONTROL Umsatz kaufen]** aus der Liste **[!UICONTROL Tabellen]** auf **[!UICONTROL Spalten]**, neben **[!UICONTROL SUM(Einkäufe)]**. Der Wert ändert sich in **[!UICONTROL SUM(Einkaufsumsatz)]**.
+   1. Ziehen Sie den Eintrag **[!UICONTROL Umsatz kaufen]** aus der Liste **[!UICONTROL Tabellen]** und legen Sie den Eintrag im Feld neben **[!UICONTROL Spalten]** neben **[!UICONTROL SUM(Einkäufe)]** ab. Der Wert ändert sich in **[!UICONTROL SUM(Einkaufsumsatz)]**.
    1. Wählen Sie **[!UICONTROL Texttabelle]** aus **[!UICONTROL Einblenden]** aus.
    1. Wählen Sie **[!UICONTROL Breite anpassen]** aus dem Dropdown-Menü **[!UICONTROL Passend]**.
    1. Wählen Sie die Spaltenüberschrift **[!UICONTROL Umsatz kaufen]** aus und sortieren Sie die Tabelle auf dieser Spalte in absteigender Reihenfolge.
@@ -1168,7 +1178,7 @@ limit 1000001
 
       ![Tableau-Desktop-Sortierung](assets/uc11-tableau-final.png)
 
-Die von Tableau Desktop mit der BI-Erweiterung ausgeführte Abfrage enthält keine `sort` -Anweisung. Das Fehlen dieser `sort` -Anweisung bedeutet, dass die Sortierung in absteigender Reihenfolge Client-basiert ist.
+Die von Tableau Desktop mit der BI-Erweiterung ausgeführte Abfrage enthält keine `sort` -Anweisung. Das Fehlen dieser `sort` -Anweisung bedeutet, dass die Sortierung clientseitig ausgeführt wird.
 
 ```sql
 SELECT CAST("cc_data_view"."product_name" AS TEXT) AS "product_name",
@@ -1200,7 +1210,7 @@ Beispiel für den Bereich **[!UICONTROL Limit]** für den Anwendungsfall:
 
 >[!PREREQUISITES]
 >
->Stellen Sie sicher, dass Sie eine [erfolgreiche Verbindung validiert haben und Datenansichten](#connect-and-list-data-views) für das BI-Tool auflisten können, für das Sie diesen Anwendungsfall ausprobieren möchten.
+>Vergewissern Sie sich, dass Sie [eine erfolgreiche Verbindung überprüft haben, Datenansichten auflisten und eine Datenansicht](#connect-and-validate) für das BI-Tool verwenden können, für das Sie diesen Anwendungsfall ausprobieren möchten.
 >
 
 >[!BEGINTABS]
@@ -1217,7 +1227,7 @@ Beispiel für den Bereich **[!UICONTROL Limit]** für den Anwendungsfall:
    1. Wählen Sie **[!UICONTROL Relatives Datum]** als **[!UICONTROL Filtertyp]** aus.
    1. Definieren Sie den Filter auf **[!UICONTROL Elemente anzeigen , wenn sich der Wert]** **[!UICONTROL in den letzten]** `1` **[!UICONTROL Kalenderjahren]** befindet.
    1. Wählen Sie **[!UICONTROL Filter anwenden]**.
-   1. Wählen Sie product_name is (All) aus **[!UICONTROL Filtern für diese visuelle]**.
+   1. Wählen Sie **[!UICONTROL product_name is (All)]** aus **[!UICONTROL Filtern für diese visuelle]**.
    1. Wählen Sie **[!UICONTROL Top N]** als **[!UICONTROL Filtertyp]** aus.
    1. Wählen Sie **[!UICONTROL Elemente anzeigen]** **[!UICONTROL Oben]** `5` **[!UICONTROL Nach Wert]** aus.
    1. Ziehen Sie **[!UICONTROL ∑ Vorkommnisse]** aus dem Bereich **[!UICONTROL Daten]** und legen Sie es auf **[!UICONTROL Datenfelder hier hinzufügen]** ab.
@@ -1230,7 +1240,7 @@ Beispiel für den Bereich **[!UICONTROL Limit]** für den Anwendungsfall:
 
    ![Power BI Desktop mit Datumsbereichsnamen zum Filtern](assets/uc12-powerbi-final.png)
 
-Die von Power BI Desktop mit der BI-Erweiterung ausgeführte Abfrage enthält eine `limit` -Anweisung, nicht jedoch die erwartete. Die expliziten Produktnamen, die vom Client zurückgegeben werden, erzwingen implizit die Beschränkung auf die fünf häufigsten Vorkommen.
+Die von Power BI Desktop mit der BI-Erweiterung ausgeführte Abfrage enthält eine `limit` -Anweisung, nicht jedoch die erwartete. Die Begrenzung auf die fünf häufigsten Vorkommen wird vom Power BI Desktop mithilfe expliziter Produktnamensergebnisse erzwungen.
 
 ```sql
 select "_"."product_name",
@@ -1326,12 +1336,12 @@ limit 1000001
    1. Ziehen Sie den Eintrag **[!UICONTROL Vorfälle]** aus der Liste **[!UICONTROL Tabellen]** auf **[!UICONTROL Spalten]**. Der Wert ändert sich in **[!UICONTROL SUM(Vorfälle)]**.
    1. Wählen Sie **[!UICONTROL Texttabelle]** aus **[!UICONTROL Einblenden]** aus.
    1. Wählen Sie **[!UICONTROL Breite anpassen]** aus dem Dropdown-Menü **[!UICONTROL Passend]**.
-   1. Wählen Sie Produktname in Zeilen aus. Wählen Sie im Dropdown-Menü Filter aus.
+   1. Wählen Sie **[!UICONTROL Produktname]** in **[!UICONTROL Zeilen]** aus. Wählen Sie **[!UICONTROL Filter]** aus dem Dropdown-Menü aus.
       1. Wählen Sie im Dialogfeld **[!UICONTROL Filter \[Produktname\]]** die Registerkarte **[!UICONTROL Top]** aus.
       1. Wählen Sie **[!UICONTROL Nach Feld:]** **[!UICONTROL Top]** `5` **[!UICONTROL durch Vorfälle]** **[!UICONTROL Summe]** aus.
       1. Wählen Sie **[!UICONTROL Apply]** und **[!UICONTROL OK]** aus.
 
-         Sie merken, dass die Tabelle verschwindet. Die Auswahl der 5 wichtigsten Produktnamen nach Vorkommen funktioniert nicht ordnungsgemäß mit diesem Filter.
+         ![AlertRed](/help/assets/icons/AlertRed.svg) Sie sehen, dass die Tabelle verschwindet. Die Auswahl der 5 wichtigsten Produktnamen nach Vorkommen funktioniert mit diesem Filter nicht ordnungsgemäß. **Nicht**
       1. Wählen Sie den **[!UICONTROL Produktnamen]** in der **[!UICONTROL Filter]**-Bibliothek aus und wählen Sie aus dem Dropdown-Menü **[!UICONTROL Entfernen]** aus. Die Tabelle wird wieder angezeigt.
    1. Wählen Sie **[!UICONTROL SUM(Occurrences)]** in der **[!UICONTROL Marks]**-Bibliothek aus. Wählen Sie **[!UICONTROL Filter]** aus dem Dropdown-Menü aus.
       1. Wählen Sie im Dialogfeld **[!UICONTROL Filter \[Vorfälle\]]** die Option **[!UICONTROL Mindestens]** aus.
@@ -1341,7 +1351,7 @@ limit 1000001
 
          ![Tableau-Desktop-Beschränkungen](assets/uc12-tableau-final.png)
 
-Die von Tableau Desktop mithilfe der BI-Erweiterung ausgeführte Abfrage beim Definieren eines Filters mit den Top 5-Vorkommen für Produktnamen ist unten dargestellt.
+Wie oben gezeigt, schlägt diese Abfrage, die von Tableau Desktop ausgeführt wird, bei der Definition eines Filters mit den fünf häufigsten Vorkommen nach Produktnamen fehl.
 
 ```sql
 SELECT CAST("cc_data_view"."product_name" AS TEXT) AS "product_name",
@@ -1360,7 +1370,7 @@ WHERE (("cc_data_view"."daterange" >= (TIMESTAMP '2023-01-01 00:00:00.000')) AND
 GROUP BY 1
 ```
 
-Die von Tableau Desktop mithilfe der BI-Erweiterung ausgeführte Abfrage bei der Definition eines Top 5-Filters für Vorkommen ist unten dargestellt. Die Begrenzung ist in der Abfrage nicht sichtbar und wird nur auf Client-Ebene angewendet.
+Die von Tableau Desktop ausgeführte Abfrage, bei der ein Filter Top 5 für Vorkommen definiert wird, ist unten dargestellt. Die Begrenzung ist in der Abfrage nicht sichtbar und wird clientseitig angewendet.
 
 ```sql
 SELECT CAST("cc_data_view"."product_name" AS TEXT) AS "product_name",
@@ -1397,12 +1407,14 @@ Customer Journey Analytics bietet Informationen zur Verbindung auf der Experienc
 
 >[!PREREQUISITES]
 >
->Stellen Sie sicher, dass Sie eine [erfolgreiche Verbindung validiert haben und Datenansichten](#connect-and-list-data-views) für das BI-Tool auflisten können, für das Sie diesen Anwendungsfall ausprobieren möchten. Im Abschnitt BI-Tools erfahren Sie, welche expliziten `FLATTEN` -Parameteroptionen für eine ordnungsgemäße Verbindung erforderlich sind.
+>Vergewissern Sie sich, dass Sie [eine erfolgreiche Verbindung überprüft haben, Datenansichten auflisten und eine Datenansicht](#connect-and-validate) für das BI-Tool verwenden können, für das Sie diesen Anwendungsfall ausprobieren möchten. Im Abschnitt BI-Tools erfahren Sie, welche expliziten `FLATTEN` -Parameteroptionen für eine ordnungsgemäße Verbindung erforderlich sind.
 >
 
 >[!BEGINTABS]
 
 >[!TAB Power BI Desktop]
+
+Power BI Desktop unterstützt die folgenden Szenarien für den Parameter `FLATTEN` .
 
 | FLATTEN-Parameter | Beispiel | Unterstützt | Bemerkungen |
 |---|---|:---:|---|
@@ -1411,6 +1423,8 @@ Customer Journey Analytics bietet Informationen zur Verbindung auf der Experienc
 | `%3FFLATTEN` | `prod:cja%3FFLATTEN` | ![CloseCircle](/help/assets/icons/CloseCircle.svg) | Power BI Desktop zeigt einen Fehler an: **[!UICONTROL Wir konnten uns nicht mit den angegebenen Anmeldedaten authentifizieren. Versuchen Sie es erneut.]** |
 
 >[!TAB Tableau-Desktop]
+
+Tableau Desktop unterstützt die folgenden Szenarien für den Parameter `FLATTEN` .
 
 | FLATTEN-Parameter | Beispiel | Unterstützt | Bemerkungen |
 |---|---|:---:|---|
@@ -1439,7 +1453,7 @@ Sie verwenden Komponenten wie [Filter](/help/components/filters/filters-overview
 
 >[!PREREQUISITES]
 >
->Stellen Sie sicher, dass Sie eine [erfolgreiche Verbindung validiert haben und Datenansichten](#connect-and-list-data-views) für das BI-Tool auflisten können, für das Sie diesen Anwendungsfall ausprobieren möchten.
+>Vergewissern Sie sich, dass Sie [eine erfolgreiche Verbindung überprüft haben, Datenansichten auflisten und eine Datenansicht](#connect-and-validate) für das BI-Tool verwenden können, für das Sie diesen Anwendungsfall ausprobieren möchten.
 >
 
 >[!BEGINTABS]
@@ -1459,7 +1473,7 @@ Metriken von Customer Journey Analytics werden durch die [!UICONTROL Komponenten
 Filter, die Sie in Customer Journey Analytics definiert haben, sind im Feld **[!UICONTROL filterName]** verfügbar. Wenn Sie ein **[!UICONTROL filterName]** -Feld im Power BI Desktop verwenden, können Sie angeben, welcher Filter verwendet werden soll.
 
 **Berechnete Metriken**
-Berechnete Metriken, die Sie in Customer Journey Analytics definiert haben, werden durch die [!UICONTROL Externe ID] identifiziert, die Sie für die berechnete Metrik definiert haben. Beispielsweise weist die berechnete Metrik **[!UICONTROL Produktname (Count Distinct)]** die [!UICONTROL externe ID] **[!UICONTROL product_name_count_distinct]** auf und wird im Power BI Desktop als **[!UICONTROL cm_product_name_count_distinc]**t angezeigt.
+Berechnete Metriken, die Sie in Customer Journey Analytics definieren, werden durch die [!UICONTROL Externe ID] identifiziert, die Sie für die berechnete Metrik definiert haben. Beispielsweise weist die berechnete Metrik **[!UICONTROL Produktname (Count Distinct)]** die [!UICONTROL externe ID] **[!UICONTROL product_name_count_distinct]** auf und wird im Power BI Desktop als **[!UICONTROL cm_product_name_count_distinc]**t angezeigt.
 
 **Datumsbereiche**
 Datumsbereiche, die Sie in Customer Journey Analytics definiert haben, sind im Feld **[!UICONTROL daterangeName]** verfügbar. Wenn Sie ein **[!UICONTROL daterangeName]** -Feld verwenden, können Sie angeben, welcher Datumsbereich verwendet werden soll.
@@ -1471,7 +1485,7 @@ Die Customer Journey Analytics-Objekte sind in der Seitenleiste **[!UICONTROL Da
 
 **Dimensionen**
 Dimensionen von Customer Journey Analytics werden durch den [!UICONTROL Komponentennamen] identifiziert. Der [!UICONTROL Komponentenname] wird in Ihrer Customer Journey Analytics-Datenansicht definiert. Beispielsweise hat die Dimension **[!UICONTROL Produktname]** in Customer Journey Analytics einen [!UICONTROL Komponentennamen] **[!UICONTROL Produktnamen]**, der für die Dimension in Tableau steht. Alle Dimensionen werden durch **[!UICONTROL Abc]** identifiziert.
-Datumsbereichsdimensionen von Customer Journey Analytics, wie **[!UICONTROL Tag]**, **[!UICONTROL Woche]**, **[!UICONTROL Monat]** und mehr sind als **[!UICONTROL Tag Datumsangabe]**, **[!UICONTROL Daterangeweek]**, **[!UICONTROL Monat]** und mehr verfügbar.
+Datumsbereichsdimensionen von Customer Journey Analytics, wie **[!UICONTROL Tag]**, **[!UICONTROL Woche]**, **[!UICONTROL Monat]** und mehr sind als **[!UICONTROL Tag Datumsangabe]**, **[!UICONTROL Daterangeweek]**, **[!UICONTROL Monat]** und mehr verfügbar. Wenn Sie eine Datumsbereichsdimension verwenden, müssen Sie eine geeignete Definition des Datums oder der Uhrzeit auswählen, die auf diese Datumsbereichsdimension im Dropdown-Menü angewendet werden soll. Beispiel: **[!UICONTROL Year]**, **[!UICONTROL Quarter]**, **[!UICONTROL Monat]**, **[!UICONTROL Tag]**.
 
 **Metriken**
 Metriken von Customer Journey Analytics werden durch den [!UICONTROL Komponentennamen] identifiziert. Der [!UICONTROL Komponentenname] wird in Ihrer Customer Journey Analytics-Datenansicht definiert. Beispielsweise verfügt die Metrik **[!UICONTROL Kaufumsatz]** in Customer Journey Analytics über einen [!UICONTROL Komponentennamen] **[!UICONTROL Einkaufsumsatz]**, der für die Metrik in Tableau festgelegt ist. Alle Metriken werden durch **[!UICONTROL #]** identifiziert. Wenn Sie eine Metrik in einer Visualisierung verwenden, wird die Metrik in **[!UICONTROL Summe(*metric*)]** umbenannt.
@@ -1570,5 +1584,3 @@ Die folgenden Customer Journey Analytics-Visualisierungen weisen ein ähnliches 
 >[!ENDTABS]
 
 +++
-
-
