@@ -12,7 +12,7 @@ breadcrumb-title: Handbuch zu Customer Journey Analytics
 source-git-commit: 1e4c14334da54a5a6e4a0f36b3538c6e4d1a0b6f
 workflow-type: tm+mt
 source-wordcount: '1009'
-ht-degree: 88%
+ht-degree: 97%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 88%
 
 + [Handbuch zu Adobe Customer Journey Analytics](../getting-started/cja-landing.md)
 + [KI-Assistent für Adobe Customer Journey Analytics](../ai-assistant.md)
-+ [Assistent für die Datenanalyse - Customer Journey Analytics](../data-analysis-ai.md)
++ [KI-Assistent für die Datenanalyse für Adobe Customer Journey Analytics](../data-analysis-ai.md)
 
 + Versionshinweise {#releases}
    + [Neueste Version](../release-notes/latest.md)
@@ -51,15 +51,15 @@ ht-degree: 88%
       + [Erstellen von Lookup-Datensätzen für Classifications](/help/getting-started/cja-upgrade/cja-upgrade-dataset-lookup.md)
       + [Abgeleitetes Marketing-Kanal-Feld erstellen](/help/getting-started/cja-upgrade/cja-upgrade-marketing-channel.md)
       + [Verwenden von Tags zum Aktualisieren](/help/getting-started/cja-upgrade/cja-upgrade-websdk-tags.md)
-      + [Schema architektur](/help/getting-started/cja-upgrade/cja-upgrade-schema-architect.md)
-      + [Schema erstellen](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md)
-      + [Vorhandenes Schema verwenden](/help/getting-started/cja-upgrade/cja-upgrade-schema-existing.md)
+      + [Planen Ihres Schemas](/help/getting-started/cja-upgrade/cja-upgrade-schema-architect.md)
+      + [Erstellen Ihres Schemas](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md)
+      + [Verwenden Ihres vorhandenen Schemas](/help/getting-started/cja-upgrade/cja-upgrade-schema-existing.md)
       + [Erstellen eines Datensatzes](/help/getting-started/cja-upgrade/cja-upgrade-dataset.md)
       + [Erstellen eines Datenspeichers](/help/getting-started/cja-upgrade/cja-upgrade-datastream.md)
-      + [Hinzufügen von Platform als Dienst](/help/getting-started/cja-upgrade/cja-upgrade-datastream-addplatform.md)
+      + [Hinzufügen von Platform as a Service](/help/getting-started/cja-upgrade/cja-upgrade-datastream-addplatform.md)
       + [Erstellen einer Verbindung](/help/getting-started/cja-upgrade/cja-upgrade-connection.md)
       + [Erstellen einer Datenansicht](/help/getting-started/cja-upgrade/cja-upgrade-dataview.md)
-      + [Datenfluss überprüfen](/help/getting-started/cja-upgrade/cja-upgrade-validate.md)
+      + [Validieren des Datenflusses](/help/getting-started/cja-upgrade/cja-upgrade-validate.md)
       + [Upgrade-Kurzbefehl: Migration zum Web SDK](/help/getting-started/cja-upgrade/cja-upgrade-shortcut-websdk.md)
    + Vergleich mit Adobe Analytics {#cja-aa-comparison}
       + [Überblick](../getting-started/aa-vs-cja/overview.md)
@@ -77,7 +77,7 @@ ht-degree: 88%
    + [Übersicht über die Datenaufnahme](../data-ingestion/data-ingestion.md)
    + Kurzanleitungen zur Aufnahme und Verwendung von Daten{#ingest-use-guides}
       + [Adobe Analytics](../data-ingestion/analytics.md)
-      + Experience Platform Edge Network {#edge-network}
+      + Experience Platform Edge Network {#edge-network}
          + [Web SDK](../data-ingestion/aepwebsdk.md)
          + [Mobile SDK](../data-ingestion/aepmobilesdk.md)
          + [Server-API](../data-ingestion/serverapi.md)
@@ -116,7 +116,7 @@ ht-degree: 88%
    + [Labels und Richtlinien](../data-views/data-governance.md)
 
 + Tools {#tools}
-   + Asset-Übertragung {#asset-transfer}
+   + Asset-Übertragung {#asset-transfer}
       + [Übertragen von Assets](../tools/asset-transfer/transfer-assets.md)
    + Produktnutzung {#product-usage}
       + [Überblick](../tools/product-usage/usage-overview.md)
@@ -143,7 +143,7 @@ ht-degree: 88%
    + [Vorlagen verwenden](../analysis-workspace/templates/use-templates.md)
    + Visualisierungen {#visualizations}
       + [Überblick](../analysis-workspace/visualizations/freeform-analysis-visualizations.md)
-      + [Datenquellen verwalten](../analysis-workspace/visualizations/t-sync-visualization.md)
+      + [Verwalten von Datenquellen](../analysis-workspace/visualizations/t-sync-visualization.md)
       + [Intelligente Beschriftungen](../analysis-workspace/visualizations/intelligent-captions.md)
       + Freiformtabelle {#freeform-table}
          + [Überblick](../analysis-workspace/visualizations/freeform-table/freeform-table.md)
@@ -153,11 +153,11 @@ ht-degree: 88%
             + [Zeileneinstellungen](../analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.md)
             + [Dynamische und statische Elemente](../analysis-workspace/visualizations/freeform-table/column-row-settings/manual-vs-dynamic-rows.md)
          + [Filtern und Sortieren von Tabellen](../analysis-workspace/visualizations/freeform-table/filter-and-sort.md)
-         + [Workspace-Summen](../analysis-workspace/visualizations/freeform-table/workspace-totals.md)
+         + [Arbeitsbereichs-Summen](../analysis-workspace/visualizations/freeform-table/workspace-totals.md)
       + Kohortentabelle {#cohort-table}
          + [Überblick](../analysis-workspace/visualizations/cohort-table/cohort-analysis.md)
          + [Konfigurieren](../analysis-workspace/visualizations/cohort-table/t-cohort.md)
-         + [Anwendungsbeispiele](../analysis-workspace/visualizations/cohort-table/cohort-use-cases.md)
+         + [Anwendungsfälle](../analysis-workspace/visualizations/cohort-table/cohort-use-cases.md)
       + Fallout {#fallout}
          + [Überblick](../analysis-workspace/visualizations/fallout/fallout-flow.md)
          + [Konfigurieren](../analysis-workspace/visualizations/fallout/configuring-fallout.md)
@@ -210,15 +210,15 @@ ht-degree: 88%
       + [Exportieren in die Cloud](../analysis-workspace/export/export-cloud.md)
    + Anomalieerkennung {#anomaly-detection}
       + [Überblick](../analysis-workspace/c-anomaly-detection/anomaly-detection.md)
-      + [Anomalien anzeigen](../analysis-workspace/c-anomaly-detection/view-anomalies.md)
+      + [Anzeigen von Anomalien](../analysis-workspace/c-anomaly-detection/view-anomalies.md)
       + [Statistische Verfahren](../analysis-workspace/c-anomaly-detection/statistics-anomaly-detection.md)
    + Prognose {#forecasting}
       + [Überblick](../analysis-workspace/c-forecast/forecasting.md)
-      + [Prognosen anzeigen](../analysis-workspace/c-forecast/view-forecasts.md)
+      + [Anzeigen von Prognosen](../analysis-workspace/c-forecast/view-forecasts.md)
       + [Statistische Verfahren](../analysis-workspace/c-forecast/statistics-forecasting.md)
    + [Inhaltsverzeichnis ](../analysis-workspace/build-workspace-project/project-table-of-contents.md)
    + [Benutzervoreinstellungen](../analysis-workspace/user-preferences.md)
-   + Häufig gestellte Fragen zu Workspace und mehr {#workspace-faq}
+   + Häufig gestellte Fragen zu Arbeitsbereichen und mehr {#workspace-faq}
       + [Häufig gestellte Fragen](../analysis-workspace/workspace-faq/faq.md)
       + [Fehlermeldungen](../analysis-workspace/workspace-faq/error-messages.md)
       + [Einschränkungen](../analysis-workspace/workspace-faq/aw-limitations.md)
@@ -228,7 +228,7 @@ ht-degree: 88%
 + Analytics-Dashboards {#cja-dashboards}
    + [Überblick](../mobile-app/home.md)
    + [Kuratoraufgaben](../mobile-app/curator.md)
-   + [Mobile Scorecards erstellen](../mobile-app/create-scorecard.md)
+   + [Erstellen mobiler Scorecards](../mobile-app/create-scorecard.md)
    + [Verwalten mobiler Scorecards](../mobile-app/manage-scorecard.md)
    + [Einrichten von Führungskräften für die Verwendung von Dashboards](../mobile-app/set-up-execs.md)
    + [Schnellstarthandbuch für ausführende Benutzer](../mobile-app/executive.md)
@@ -243,7 +243,7 @@ ht-degree: 88%
    + [Trichter](../guided-analysis/types/funnel.md)
    + [Nettowachstum](../guided-analysis/types/net-growth.md)
    + [Auswirkungen der Version](../guided-analysis/types/release-impact.md)
-   + [Treue](../guided-analysis/types/retention.md)
+   + [Kundentreue](../guided-analysis/types/retention.md)
    + [Timeline](../guided-analysis/types/timeline.md)
    + [Trends](../guided-analysis/types/trends.md)
    + [Anwendungsfälle für Branchen](../guided-analysis/industry-use-cases.md)
@@ -273,7 +273,7 @@ ht-degree: 88%
    + [Metriken](../components/apply-create-metrics.md)
    + Filter {#cja-filters}
       + [Überblick](../components/filters/filters-overview.md)
-      + [Filter erstellen](../components/filters/create-filters.md)
+      + [Erstellen von Filtern](../components/filters/create-filters.md)
       + [Erstellen von Filtern](../components/filters/filter-builder.md)
       + [Schnellfilter](../components/filters/quick-filters.md)
       + [Sequenzielle Filter](../components/filters/seg-sequential-build.md)
@@ -304,7 +304,7 @@ ht-degree: 88%
          + [Berechnete Metriken freigeben](../components/calc-metrics/cm-workflow/cm-sharing.md)
          + [Berechnete Metriken verwalten](../components/calc-metrics/cm-workflow/cm-manager.md)
          + [Beispiele](../components/calc-metrics/cm-workflow/cm-weighted-metric.md)
-      + [Berechnete Metrikvorlagen](../components/calc-metrics/default-calcmetrics.md)
+      + [Vorlagen für berechnete Metriken](../components/calc-metrics/default-calcmetrics.md)
       + [Grundlegende Funktionen](../components/calc-metrics/cm-functions.md)
       + [Erweiterte Funktionen](../components/calc-metrics/cm-adv-functions.md)
    + Datumsbereiche {#cja-date-ranges}
@@ -318,7 +318,7 @@ ht-degree: 88%
       + [Erstellen von Warnhinweisen](/help/components/c-intelligent-alerts/alert-builder.md)
       + [Verwalten von Warnhinweisen](/help/components/c-intelligent-alerts/alert-manager.md)
       + [Funktionsvergleich](/help/components/c-intelligent-alerts/alerts-feature-comparison.md)
-      + [Anwendungsbeispiele](/help/components/c-intelligent-alerts/alerts-use-cases.md)
+      + [Anwendungsfälle](/help/components/c-intelligent-alerts/alerts-use-cases.md)
    + Exporte {#exports}
       + [Konfigurieren von Cloud-Exportkonten](/help/components/exports/cloud-export-accounts.md)
       + [Konfigurieren von Cloud-Exportspeicherorten](/help/components/exports/cloud-export-locations.md)
@@ -373,9 +373,9 @@ ht-degree: 88%
    + [Anwendungsfälle für Customer Journey Analytics](../use-cases/cja-usecases.md)
    + Google Analytics-Daten {#ga}
       + [Migrieren von Daten aus Google Analytics](../use-cases/ga/overview.md)
-      + [historische Daten von Google Analytics erfassen](../use-cases/ga/backfill.md)
-      + [Streaming-Google Analytics konfigurieren](../use-cases/ga/streaming.md)
-      + [Bericht über Google Analytics-Daten](../use-cases/ga/report.md)
+      + [Aufnehmen von historischen Daten aus Google Analytics](../use-cases/ga/backfill.md)
+      + [Konfigurieren des Streaming-Vorgangs von Google Analytics-Daten](../use-cases/ga/streaming.md)
+      + [Bericht zu Google Analytics-Daten](../use-cases/ga/report.md)
    + Datenaufnahme {#data-ingestion}
       + [Aufnehmen und Verwenden von Marketo Engage-Daten](../use-cases/data-ingestion/marketo.md)
       + [Aufnehmen und Verwenden von Experience Platform-Zielgruppen](../use-cases/data-ingestion/ingest-aep-segments.md)
@@ -409,7 +409,7 @@ ht-degree: 88%
    + [Labs-Benutzerhandbuch](../labs/labs.md)
 
 + Fehlerbehebung {#troubleshooting}
-   + [Daten vergleichen](../troubleshooting/compare.md)
+   + [Vergleichen von Daten](../troubleshooting/compare.md)
    + [Konsistenz von Metriken und Zielgruppen](../troubleshooting/consistency-rcdp-cja.md)
    + [Fehlen von Berechtigungen](../troubleshooting/lack-of-permissions.md)
 
@@ -421,7 +421,7 @@ ht-degree: 88%
    + [Glossar](../technotes/glossary.md)
    + [Leitlinien](../technotes/guardrails.md)
    + [IP-Adressen](../technotes/ip-addresses.md)
-   + [Leistung optimieren](../technotes/optimizing-performance.md)
+   + [Optimieren der Leistung](../technotes/optimizing-performance.md)
    + [Anzeigen und Verwalten der Nutzung](../technotes/estimate-usage.md)
 
 + [Customer Journey Analytics-API](https://developer.adobe.com/cja-apis/docs/)
