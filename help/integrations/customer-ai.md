@@ -1,18 +1,18 @@
 ---
 description: Erfahren Sie, wie Adobe Experience Platform-Kunden-KI-Daten in Customer Journey Analytics mit Workspace integriert werden.
-title: Integration von Customer AI-Daten
+title: Integrieren von Kunden-KI-Daten
 role: Admin
 solution: Customer Journey Analytics
 exl-id: 5411f843-be3b-4059-a3b9-a4e1928ee8a9
 feature: Experience Platform Integration
 source-git-commit: c26829d7a53e9ba8d5faf731a8a1dca2e741bf21
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '959'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
-# Integration von Customer AI-Daten
+# Integrieren von Kunden-KI-Daten
 
 {{release-limited-testing}}
 

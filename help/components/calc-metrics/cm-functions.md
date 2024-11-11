@@ -5,20 +5,20 @@ feature: Calculated Metrics
 exl-id: 63775753-337b-4dec-a3a2-a3a0ee9aac2e
 role: User
 source-git-commit: 1a84fc71eb29ceabf3a3c5c3e333b78b882ea966
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1185'
-ht-degree: 30%
+ht-degree: 100%
 
 ---
 
 # Grundlegende Funktionen
 
 
-Mit dem [Generator für berechnete Metriken](cm-workflow/cm-build-metrics.md) können Sie statistische und mathematische Funktionen anwenden. Dieser Artikel dokumentiert eine alphabetische Liste der Funktionen und ihrer Definitionen.
+Mit dem [Generator für berechnete Metriken](cm-workflow/cm-build-metrics.md) können Sie statistische und mathematische Funktionen anwenden. In diesem Artikel werden die Funktionen und ihre Definitionen alphabetisch aufgelistet.
 
 >[!NOTE]
 >
->Wenn [!DNL metric] als Argument in einer Funktion angegeben ist, sind auch andere Ausdrücke von Metriken zulässig. Beispiel: [SPALTE MAXIMUM(metrics)](#column-maximum) ermöglicht auch [SPALTE MAXIMUM(PageViews + Visits)](#column-maximum).
+>Wenn [!DNL metric] als Argument in einer Funktion angegeben ist, sind auch andere Ausdrücke von Metriken zulässig. Beispiel: [COLUMN MAXIMUM(metrics)](#column-maximum) ermöglicht auch [COLUMN MAXIMUM(PageViews + Visits)](#column-maximum).
 
 
 
@@ -26,84 +26,84 @@ Mit dem [Generator für berechnete Metriken](cm-workflow/cm-build-metrics.md) k�
 
 Bei einer Tabellenfunktion ist die Ausgabe für jede Tabellenzeile gleich. Bei einer Zeilenfunktion ist die Ausgabe für jede Tabellenzeile unterschiedlich.
 
-Gegebenenfalls wird eine Funktion mit dem Typ der Funktion kommentiert: [!BADGE Tabelle]{type="Neutral"}[!BADGE Zeile ]{type="Neutral"}
+Gegebenenfalls wird einer Funktion eine Anmerkung mit dem Typ der Funktion hinzugefügt: [!BADGE Tabelle]{type="Neutral"}[!BADGE Zeile]{type="Neutral"}
 
-## Was bedeutet der Parameter include-zeros?
+## Was bedeutet der Parameter „include-zeros“? 
 
-Damit wird angegeben, ob Nullen in die Berechnung einbezogen werden sollen. Manchmal bedeutet Null *nichts*, aber manchmal ist es wichtig.
+Damit wird angegeben, ob Nullen in die Berechnung einbezogen werden sollen. In manchen Fällen bedeutet eine Null *nichts*, in anderen Fällen kann sie aber auch wichtig sein.
 
-Wenn Sie beispielsweise eine Umsatzmetrik haben und dann eine Seitenansichtsmetrik zum Bericht hinzufügen, gibt es plötzlich mehr Zeilen für Ihren Umsatz, die alle null sind. Sie möchten wahrscheinlich nicht, dass sich diese zusätzliche Metrik auf **[MEAN](cm-functions.md#mean)**, **[ZEILENMINIMUM](cm-functions.md#row-min)**, **[QUARTILE](cm-functions.md#quartile)** und mehr Berechnungen auswirkt, die Sie in der Umsatzspalte haben. In diesem Fall würden Sie den Parameter `include-zeros` überprüfen.
+Beispiel: Wenn Sie mit einer Umsatzmetrik arbeiten und dem Bericht dann eine Seitenansichtsmetrik hinzufügen, gibt es plötzlich mehr Zeilen für den Umsatz, die alle Nullwerte enthalten. Sie möchten wahrscheinlich nicht, dass sich diese zusätzliche Metrik auf Berechnungen wie **[ARITHMETISCHES MITTEL](cm-functions.md#mean)**, **[ZEILENMINIMUM](cm-functions.md#row-min)**, **[QUARTIL](cm-functions.md#quartile)** usw. auswirkt, die sich in der Umsatzspalte befinden. In diesem Fall müssen Sie den Parameter `include-zeros` aktivieren.
 
-Ein alternatives Szenario besteht darin, dass Sie zwei Metriken von Interesse haben und eine Metrik einen höheren Durchschnitt oder ein höheres Minimum aufweist, da einige der Zeilen Nullen sind.  In diesem Fall können Sie festlegen, dass der Parameter nicht auf Nullen überprüft wird.
+Ein alternatives Szenario besteht darin, dass Sie zwei Metriken von Interesse haben und eine Metrik einen höheren Durchschnitt oder ein höheres Minimum aufweist, da einige der Zeilen Nullen sind.   In diesem Fall können Sie festlegen, dass der Parameter nicht auf Nullen überprüft werden soll.
 
 
 
 ## Absolutwert
 
-![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL ABSOLUTE VALUE(metric)]**
+![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL ABSOLUTE VALUE(metric)]**
 
-[!BADGE Zeile ]{type="Neutral"}
+[!BADGE Zeile]{type="Neutral"}
 
 | Argument | Beschreibung |
 |---|---|
-| Metrik | Die Metrik, für die Sie den absoluten Wert berechnen möchten. |
+| metric | Die Metrik, für die der absolute Wert berechnet werden soll. |
 
 
 ## Spaltenmaximum
 
-![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL SPALTENMAXIMUM(metric, include_zeros)]**
+![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL COLUMN MAXIMUM(metric, include_zeros)]**
 
 Gibt den größten Wert in einem Satz aus Dimensionselementen für eine Metrikspalte zurück. MAXV wird vertikal innerhalb einer einzelnen Spalte (Metrik) über Dimensionselemente hinweg ausgewertet.
 
 | Argument | Beschreibung |
 |---|---|
-| Metrik | Erfordert mindestens eine Metrik, kann jedoch eine beliebige Anzahl von Metriken als Parameter verwenden. |
-| include_zeros | Gibt an, ob Nullwerte in die Berechnungen einbezogen werden sollen. |
+| metric | Erfordert mindestens eine Metrik, kann jedoch eine beliebige Anzahl von Metriken als Parameter verwenden. |
+| include_zeros | Gibt an, ob Nullwerte in die Berechnungen einbezogen werden sollen oder nicht. |
 
 
 ## Spaltenminimum
 
-![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL SPALTENMINIMUM(metric, include_zeros)]**
+![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL COLUMN MINIMUM(metric, include_zeros)]**
 
 Gibt den kleinsten Wert in einem Satz aus Dimensionselementen für eine Metrikspalte zurück. MINV wird vertikal innerhalb einer einzelnen Spalte (Metrik) über Dimensionselemente hinweg ausgewertet.
 
 | Argument | Beschreibung |
 |---|---|
-| Metrik | Erfordert mindestens eine Metrik, kann jedoch eine beliebige Anzahl von Metriken als Parameter verwenden. |
-| include_zeros | Gibt an, ob Nullwerte in die Berechnungen einbezogen werden sollen. |
+| metric | Erfordert mindestens eine Metrik, kann jedoch eine beliebige Anzahl von Metriken als Parameter verwenden. |
+| include_zeros | Gibt an, ob Nullwerte in die Berechnungen einbezogen werden sollen oder nicht. |
 
 
 ## Spaltensumme
 
-![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL COLUMN SUM(metric)]**
+![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL COLUMN SUM(metric)]**
 
-Fügt alle numerischen Werte für eine Metrik innerhalb einer Spalte hinzu (über die Elemente einer Dimension hinweg).
+Addiert alle numerischen Werte für eine Metrik innerhalb einer Spalte (über die Elemente einer Dimension hinweg).
 
 | Argument | Beschreibung |
 |---|---|
-| Metrik | Erfordert mindestens eine Metrik, kann jedoch eine beliebige Anzahl von Metriken als Parameter verwenden. |
+| metric | Erfordert mindestens eine Metrik, kann jedoch eine beliebige Anzahl von Metriken als Parameter verwenden. |
 
 
 ## Anzahl
 
-![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL COUNT(metric)]**
+![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL COUNT(metric)]**
 
 [!BADGE Tabelle]{type="Neutral"}
 
 | Argument | Beschreibung |
 |---|---|
-| Metrik | Die zu zählende Metrik. |
+| metric | Die Metrik, die gezählt werden soll. |
 
 
 ## Exponent
 
-![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL EXPONENT(metric)]**
+![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL EXPONENT(metric)]**
 
 [!BADGE Zeile ]{type="Neutral"}
 
 | Argument | Beschreibung |
 |---|---|
-| Metrik | Der auf die Basis e angewendete Exponent. |
+| metric | Die Exponentialfunktion mit Basis „e“. |
 
 
 ## Arithmetisches Mittel
@@ -114,11 +114,11 @@ Fügt alle numerischen Werte für eine Metrik innerhalb einer Spalte hinzu (übe
 
 | Argument | Beschreibung |
 |---|---|
-| Metrik | Die Metrik, für die Sie den Durchschnitt berechnen möchten. |
-| include_zeros | Gibt an, ob Nullwerte in die Berechnungen einbezogen werden sollen. |
+| metric | Die Metrik, für die der Durchschnitt berechnet werden soll. |
+| include_zeros | Gibt an, ob Nullwerte in die Berechnungen einbezogen werden sollen oder nicht. |
 
 
-## Mittelwert
+## Median
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL MEDIAN(metric, include_zeros)]**
 
@@ -126,20 +126,20 @@ Fügt alle numerischen Werte für eine Metrik innerhalb einer Spalte hinzu (übe
 
 | Argument | Beschreibung |
 |---|---|
-| Metrik | Die Metrik, für die Sie den Median berechnen möchten. |
-| include_zeros | Gibt an, ob Nullwerte in die Berechnungen einbezogen werden sollen. |
+| metric | Die Metrik, für die der Median berechnet werden soll. |
+| include_zeros | Gibt an, ob Nullwerte in die Berechnungen einbezogen werden sollen oder nicht. |
 
 
 ## Modulo
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL MODULO(metric_X, metric_Y)]**
 
-Gibt nach der euklidischen Division von x durch y den Rest zurück.
+Gibt den Rest bei der euklidischen Division von x durch y zurück.
 
 | Argument | Beschreibung |
 |---|---|
-| metric_X | Die erste Metrik, die Sie teilen möchten. |
-| metric_Y | Die zweite Metrik, die Sie teilen möchten. |
+| metric_X | Die erste Metrik, die geteilt werden soll. |
+| metric_Y | Die zweite Metrik, die geteilt werden soll. |
 
 ### Beispiele
 
@@ -151,7 +151,7 @@ MODULO(-4,3) = -1
 MODULO(-3,3) = 0
 ```
 
-Um sicherzustellen, dass Sie immer eine positive Zahl erhalten, verwenden Sie
+Um sicherzustellen, dass Sie immer eine positive Zahl zu erhalten, verwenden Sie
 
 ```
 MODULO(MODULO(x,y)+y,y)
@@ -165,47 +165,47 @@ MODULO(MODULO(x,y)+y,y)
 
 | Argument | Beschreibung |
 |---|---|
-| Metrik | Der Perzentilwert im Bereich von 0 bis 100 (einschließlich). |
+| metric | Der Perzentilwert im Bereich von 0 bis 100 (einschließlich). |
 | k | Die Metrikspalte, die die relative Position definiert. |
-| include_zeros | Gibt an, ob Nullwerte in die Berechnungen einbezogen werden sollen. |
+| include_zeros | Gibt an, ob Nullwerte in die Berechnungen einbezogen werden sollen oder nicht. |
 
 
 
-## Netzbetreiber
+## Potenzierungsoperator
 
-![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL POWER OPERATOR(metric_X, metrix_Y)]**
+![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL POWER OPERATOR(metric_X, metrix_Y)]**
 
-Gibt x auf den y-Strom erhöht zurück.
+Gibt die y-te Potenz von x zurück.
 
 | Argument | Beschreibung |
 |---|---|
-| metric_X | Die Metrik, die auf die metric_Y-Leistung erhöht werden soll. |
-| metric_Y | Die Leistung, auf die Sie metric_X erhöhen möchten. |
+| metric_X | Die Metrik, die zur Potenz metric_Y erhoben werden soll. |
+| metric_Y | Die Potenz, zu der metric_X erhoben werden soll. |
 
 
 ## Quartil
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL QUARTILE(metric, quartile, include_zeros)]**
 
-[!BADGE Tabelle]{type="Neutral"}[SPALTENMINIMUM](#column-minimum), [MEDIAN](#median) und [SPALTE MAXIMUM](#column-maximum) geben denselben Wert wie [QUARTILE](#quartile) zurück, wenn Quartil gleich `0` (null), `2` und `4` ist.
+[!BADGE Tabelle]{type="Neutral"}[COLUMN MINIMUM](#column-minimum), [MEDIAN](#median) und [COLUMN MAXIMUM](#column-maximum) geben jeweils denselben Wert zurück wie [QUARTILE](#quartile), wenn „Quartil“ `0` (null), `2` bzw. `4` entspricht.
 
 | Argument | Beschreibung |
 |---|---|
-| Metrik | Die Metrik, für die Sie den Quartilwert berechnen möchten. |
-| quartile | Gibt an, welcher Quartilwert zurückgegeben werden soll. |
-| include_zeros | Gibt an, ob Nullwerte in die Berechnungen einbezogen werden sollen. |
+| metric | Die Metrik, für die der Quartilwert berechnet werden soll. |
+| Quartil | Gibt an, welcher Quartilwert zurückgegeben werden soll. |
+| include_zeros | Gibt an, ob Nullwerte in die Berechnungen einbezogen werden sollen oder nicht. |
 
 
-## Rund
+## Runden
 
-![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL RUND(metric, number)]**
+![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL ROUND(metric, number)]**
 
-Das Runden ohne den Parameter *number* entspricht dem Runden mit dem Parameter *number* von 0, d. h. das Runden auf die nächste Ganzzahl.  Mit dem Parameter *number* gibt ROUND die Ziffern *number* rechts von der Dezimalstelle zurück.  Wenn *number* negativ ist, werden links neben der Dezimalstelle 0 zurückgegeben.
+Das Runden ohne den Parameter *number* hat den gleichen Effekt wie das Runden mit dem Parameter *number* von 0, also die Rundung auf die nächste Ganzzahl. Mit einem Parameter *number* gibt ROUND die auf *number* Ziffern rechts vom Dezimalzeichen gerundete Zahl zurück. Wenn *number* negativ ist, werden entsprechend viele Nullen links neben dem Dezimalzeichen zurückgegeben.
 
 | Argument | Beschreibung |
 |---|---|
-| Metrik | Die Metrik, die gerundet werden soll. |
-| number | Gibt an, wie viele Stellen rechts neben der Dezimalstelle zurückgegeben werden sollen. (Wenn negativ Nullen links neben der Dezimalstelle zurückgibt). |
+| metric | Die Metrik, die gerundet werden soll. |
+| number | Gibt an, wie viele Stellen rechts neben dem Dezimalzeichen zurückgegeben werden sollen. (Falls negativ, werden Nullen links neben dem Dezimalzeichen zurückgegeben.) |
 
 ### Beispiele
 
@@ -219,70 +219,70 @@ ROUND( 314.15, -2) = 300
 
 ## Zeilenanzahl
 
-![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL ROW COUNT()]**
+![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL ROW COUNT()]**
 
-Gibt die Anzahl der Zeilen in einer bestimmten Spalte zurück (die Anzahl innerhalb einer Dimension berichteter eindeutiger Elemente). *Individuelle Werte überschritten* wird als 1 gezählt.
+Gibt die Anzahl der Zeilen in einer bestimmten Spalte zurück (die Anzahl der innerhalb einer Dimension berichteten eindeutigen Elemente). *Individuelle Werte überschritten* wird als 1 gezählt.
 
 
 ## Zeilenmaximum
 
-![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL ZEILE MAX(metric, include_zeros)]**
+![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL ROW MAX(metric, include_zeros)]**
 
-Maximale Anzahl der Spalten jeder Zeile.
+Das Maximum der Spalten in jeder Zeile.
 
 | Argument | Beschreibung |
 |---|---|
-| Metrik | Erfordert mindestens eine Metrik, kann jedoch eine beliebige Anzahl von Metriken als Parameter verwenden. |
-| include_zeros | Gibt an, ob Nullwerte in die Berechnungen einbezogen werden sollen. |
+| metric | Erfordert mindestens eine Metrik, kann jedoch eine beliebige Anzahl von Metriken als Parameter verwenden. |
+| include_zeros | Gibt an, ob Nullwerte in die Berechnungen einbezogen werden sollen oder nicht. |
 
 ## Zeilenminimum
 
-![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL ZEILENMIN(metric, include_zeros)]**
+![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL ROW MIN(metric, include_zeros)]**
 
-Minimum der Spalten jeder Zeile.
+Das Minimum der Spalten in jeder Zeile.
 
 | Argument | Beschreibung |
 |---|---|
-| Metrik | Erfordert mindestens eine Metrik, kann jedoch eine beliebige Anzahl von Metriken als Parameter verwenden. |
-| include_zeros | Gibt an, ob Nullwerte in die Berechnungen einbezogen werden sollen. |
+| metric | Erfordert mindestens eine Metrik, kann jedoch eine beliebige Anzahl von Metriken als Parameter verwenden. |
+| include_zeros | Gibt an, ob Nullwerte in die Berechnungen einbezogen werden sollen oder nicht. |
 
 
 
 ## Zeilensumme
 
-![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL ROW SUM(metric, include_zeros)]**
+![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL ROW SUM(metric, include_zeros)]**
 
-Summe der Spalten jeder Zeile.
+Die Summe der Spalten in jeder Zeile.
 
 | Argument | Beschreibung |
 |---|---|
-| Metrik | Erfordert mindestens eine Metrik, kann jedoch eine beliebige Anzahl von Metriken als Parameter verwenden. |
+| metric | Erfordert mindestens eine Metrik, kann jedoch eine beliebige Anzahl von Metriken als Parameter verwenden. |
 
 
 ## Quadratwurzel
 
-![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL SQUARE ROOT(metric, include_zeros)]**
+![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL SQUARE ROOT(metric, include_zeros)]**
 
-[!BADGE Zeile ]{type="Neutral"}
+[!BADGE Zeile]{type="Neutral"}
 
 | Argument | Beschreibung |
 |---|---|
-| Metrik | Die Metrik, für die Sie die Quadratwurzel berechnen möchten. |
+| metric | Die Metrik, für die die Quadratwurzel berechnet werden soll. |
 
 
 ## Standardabweichung
 
-![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL STANDARDABWEICHUNG(metric, include_zeros)]**
+![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL STANDARD DEVIATION(metric, include_zeros)]**
 
 [!BADGE Tabelle]{type="Neutral"}
 
 | Argument | Beschreibung |
 |---|---|
-| | Die Metrik, für die Sie die Standardabweichung berechnen möchten. |
-| include_zeros | Gibt an, ob Nullwerte in die Berechnungen einbezogen werden sollen. |
+| | Die Metrik, für die die Standardabweichung berechnet werden soll. |
+| include_zeros | Gibt an, ob Nullwerte in die Berechnungen einbezogen werden sollen oder nicht. |
 
 
-## Abweichung
+## Varianz
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL VARIANCE(metric, include_zeros)]**
 
@@ -290,18 +290,18 @@ Summe der Spalten jeder Zeile.
 
 | Argument | Beschreibung |
 |---|---|
-| Metrik | Die Metrik, für die Sie die Varianz berechnen möchten. |
-| include_zeros | Gibt an, ob Nullwerte in die Berechnungen einbezogen werden sollen. |
+| metric | Die Metrik, für die die Varianz berechnet werden soll. |
+| include_zeros | Gibt an, ob Nullwerte in die Berechnungen einbezogen werden sollen oder nicht. |
 
 
 Die Gleichung für VARIANCE lautet:
 
 ![](assets/variance_eq.png){width="100"}
 
-Wobei *x* der Beispielmittelwert ist, [MEAN(*metric*)](#mean) und *n* die Beispielgröße ist.
+Dabei ist *x* der Mittelwert der Stichprobe, [MEAN(*metric*)](#mean), und *n* ist der Stichprobenumfang.
 
 
-Um eine Varianz zu berechnen, betrachten Sie eine ganze Spalte mit Zahlen. Aus dieser Liste von Zahlen berechnen Sie zunächst den Durchschnitt. Sobald Sie den Durchschnitt ermittelt haben, durchlaufen Sie jeden Eintrag und gehen wie folgt vor:
+Zur Berechnung einer Varianz wird eine gesamte Spalte von Zahlen betrachtet. Aus dieser Liste von Zahlen berechnen Sie zunächst den Durchschnitt. Sobald Sie den Durchschnitt ermittelt haben, sehen Sie sich jeden Eintrag an und gehen wie folgt vor:
 
 1. Ziehen Sie den Durchschnitt von der Zahl ab.
 
@@ -309,7 +309,7 @@ Um eine Varianz zu berechnen, betrachten Sie eine ganze Spalte mit Zahlen. Aus d
 
 1. Fügen Sie diesen Wert zum Gesamtergebnis hinzu.
 
-Nachdem Sie die gesamte Spalte durchlaufen haben, erhalten Sie eine einzige Gesamtsumme. Teilen Sie dann dieses Gesamtergebnis durch die Anzahl der Elemente in der Spalte. Die resultierende Zahl ist die Varianz für die Spalte. Es handelt sich dabei um eine einzige Zahl. Allerdings wird der Wert in Form einer Spalte mit Zahlen angezeigt.
+Sobald Sie die gesamte Spalte durchlaufen haben, erhalten Sie ein einziges Gesamtergebnis. Teilen Sie dann dieses Gesamtergebnis durch die Anzahl der Elemente in der Spalte. Die resultierende Zahl ist die Varianz für die Spalte. Es handelt sich dabei um eine einzige Zahl. Allerdings wird der Wert in Form einer Spalte mit Zahlen angezeigt.
 
 Im Beispiel der folgenden Spalte mit drei Elementen:
 
@@ -319,7 +319,7 @@ Im Beispiel der folgenden Spalte mit drei Elementen:
 | 2 |
 | 3 |
 
-Der Durchschnitt dieser Spalte ist 2. Die Varianz für die Spalte lautet ((1 - 2)<sup>2</sup> + (2 - 2)<sup>2</sup> + (3 - 2)<sup>2</sup>/3) = 2/3.
+Der Durchschnitt dieser Spalte ist 2. Die Varianz für die Spalte ist ((1 - 2)<sup>2</sup> + (2 - 2)<sup>2</sup> + (3 - 2)<sup>2</sup>/3) = 2/3.
 
 
 

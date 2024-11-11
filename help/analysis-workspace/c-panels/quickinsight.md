@@ -5,9 +5,9 @@ feature: Panels
 exl-id: 09ebc3af-34ac-4f1f-8a5d-90da008f8697
 role: User
 source-git-commit: c56c77079aa21fb740fda6bec333731a1f82a48f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1127'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -77,7 +77,7 @@ Wählen Sie die gewünschten Bausteine aus:
 * **[!UICONTROL Analysieren]**: Zum Festlegen einer Dimension (orange)
 * **[!UICONTROL Nach]**: Zum Festlegen einer Metrik (grün)
 * **[!UICONTROL Filtern nach]**: Zum Festlegen eines Filters (blau)
-* **[!UICONTROL on]** - Geben Sie einen Datumsbereich (violett) an.
+* **[!UICONTROL Am]**: Zum Festlegen eines Datumsbereichs (violett).
 
 Sie müssen mindestens eine Dimension und eine Metrik auswählen, damit die Visualisierung ordnungsgemäß funktioniert.
 
@@ -124,7 +124,7 @@ Weitere nützliche Hinweise werden im [!UICONTROL Quick Insights Builder] angeze
 
    * **[!UICONTROL Filtern nach]**: Sie können bis zu zwei weitere Filter hinzufügen. Sie können beispielsweise „Buchungen“ als Filter hinzufügen und diesen Filter mit den von Ihnen verglichenen Filtern für Personen, die die häufig fliegen, und Personen, die zum ersten Mal fliegen, kombinieren. Siehe ➏, ➐ und ➑.
 
-   * on: Sie können den Datumsbereich angeben. Siehe ➒.
+   * Am: Sie können den Datumsbereich festlegen. Siehe ➒.
 
 ## Bekannte Einschränkungen
 

@@ -6,7 +6,7 @@ solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
 source-git-commit: 5aab46fbca8bf9638e238caa9dab34e391118139
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1884'
 ht-degree: 100%
 
@@ -68,7 +68,7 @@ Stellt übergreifende Einstellungen für die Datenansicht bereit.
 >[!CONTEXTUALHELP]
 >id="cja_dataview_dataviewsinadobejourneyoptimizer"
 >title="Datenansichten in Journey Optimizer"
->abstract="Customer Journey Analytics muss eine Verbindungs- und Datenansicht verwenden, die mit Adobe Journey Optimizer kompatibel ist. Standardmäßig werden zu diesem Zweck automatisch eine Verbindung und eine Datenansicht erstellt.<br/>Alternativ können Sie diese Option aktivieren, um diese Datenansicht als Standard für Journey Optimizer-Berichte zu nutzen. Wenn diese Option aktiviert ist, werden alle für Journey Optimizer erforderlichen Komponenten dieser Datenansicht hinzugefügt und alle erforderlichen Journey Optimizer-Datensätze werden zu der mit dieser Datenansicht verknüpften Verbindung hinzugefügt."
+>abstract="Customer Journey Analytics muss eine Verbindung und eine Datenansicht verwenden, die mit Adobe Journey Optimizer kompatibel sind. Standardmäßig werden zu diesem Zweck automatisch eine Verbindung und eine Datenansicht erstellt.<br/>Alternativ kann diese Option aktiviert werden, um diese Datenansicht zur Standardansicht zu machen, die in der Adobe Journey Optimizer-Berichterstellung verwendet wird. Wenn diese Option aktiviert ist, werden alle notwendigen Komponenten, die für Journey Optimizer erforderlich sind, zu dieser Datenansicht hinzugefügt, und alle notwendigen Journey Optimizer-Datensätze werden zu der mit dieser Datenansicht verbundenen Verbindung hinzugefügt."
 >additional-url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/integrations/ajo#connection" text="Welche Komponenten und Datensätze hinzugefügt werden."
 
 <!-- markdownlint-enable MD034 -->
