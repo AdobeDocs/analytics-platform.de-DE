@@ -9,10 +9,10 @@ index: true
 user-guide-title: Handbuch zu Customer Journey Analytics
 user-guide-description: Hier erhalten Sie Informationen zu Adobe Customer Journey Analytics und Erläuterungen zur Nutzung von Analysis Workspace mit Daten aus Experience Platform.
 breadcrumb-title: Handbuch zu Customer Journey Analytics
-source-git-commit: 1e4c14334da54a5a6e4a0f36b3538c6e4d1a0b6f
+source-git-commit: 261396f3a63e3356f100b860324b2e8bb9702800
 workflow-type: tm+mt
-source-wordcount: '1009'
-ht-degree: 97%
+source-wordcount: '1036'
+ht-degree: 94%
 
 ---
 
@@ -50,7 +50,10 @@ ht-degree: 97%
       + [Analytics-Implementierung verstehen](/help/getting-started/cja-upgrade/cja-upgrade-analytics-implementation.md)
       + [Erstellen von Lookup-Datensätzen für Classifications](/help/getting-started/cja-upgrade/cja-upgrade-dataset-lookup.md)
       + [Abgeleitetes Marketing-Kanal-Feld erstellen](/help/getting-started/cja-upgrade/cja-upgrade-marketing-channel.md)
-      + [Verwenden von Tags zum Aktualisieren](/help/getting-started/cja-upgrade/cja-upgrade-websdk-tags.md)
+      + [Implementieren des Lader-Tags für die Web SDK-Erweiterung](/help/getting-started/cja-upgrade/cja-upgrage-tag-loader.md)
+      + [Erstellen eines Tags für Ihre Eigenschaft](/help/getting-started/cja-upgrade/cja-upgrade-tag-property.md)
+      + [Hinzufügen der Web SDK-Erweiterung zu Ihrem -Tag](/help/getting-started/cja-upgrade/cja-upgrade-tag-extension.md)
+      + [Hinzufügen der XDM-Datenerfassungslogik zu Ihrem Tag](/help/getting-started/cja-upgrade/cja-upgrade-tag-xdm.md)
       + [Planen Ihres Schemas](/help/getting-started/cja-upgrade/cja-upgrade-schema-architect.md)
       + [Erstellen Ihres Schemas](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md)
       + [Verwenden Ihres vorhandenen Schemas](/help/getting-started/cja-upgrade/cja-upgrade-schema-existing.md)
