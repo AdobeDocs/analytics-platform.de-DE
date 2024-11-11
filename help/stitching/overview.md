@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 exl-id: 1c42efac-b3d2-437b-8b0b-9c6fdfed8520
 role: Admin
-source-git-commit: 8cf8af1d1d84f4db93ab627e76554f3fe618ef92
+source-git-commit: 059a091fb41efee6f508b4260b1d943f881f5087
 workflow-type: tm+mt
-source-wordcount: '4009'
-ht-degree: 13%
+source-wordcount: '4135'
+ht-degree: 12%
 
 ---
 
@@ -90,6 +90,12 @@ Durch die Zuordnung werden mindestens zwei Durchgänge an Daten in einem bestimm
    - **Monatlich**: Die Daten werden einmal im Monat mit dem Lookback-Fenster wiederholt (siehe [Optionen](#options)). Diese Option bietet den Vorteil, dass nicht authentifizierte Sitzungen über einen weniger eng gefasst Zeitraum für die Authentifizierung verfügen. Nicht zugeordnete Daten, die weniger als einen Monat alt sind, werden jedoch erst nach der erneuten Wiedergabe im nächsten Monat erneut verarbeitet.
 
 - **Datenschutz**: Wenn datenschutzbezogene Anfragen empfangen werden, muss nicht nur die angeforderte Identität entfernt werden, sondern auch die Zuordnung dieser Identität zu nicht authentifizierten Ereignissen rückgängig gemacht werden.
+
+  >[!IMPORTANT]
+  >
+  >Die Aufhebung der Zuordnung als Teil von Datenschutzanfragen wird Anfang 2025 geändert. Der aktuelle Auftrennungsprozess löst Ereignisse anhand der neuesten Version bekannter Identitäten zurück. Diese Umbenennung von Ereignissen zu einer anderen Identität könnte unerwünschte rechtliche Folgen haben. Um diese Bedenken auszuräumen, aktualisiert der neue Auftrennungsprozess ab 2025 Ereignisse, die Gegenstand der Datenschutzanfrage sind, mit der beständigen ID.
+  > 
+
 
 Daten, die über das Lookback-Fenster hinausgehen, werden nicht wiederholt. Ein Besucher muss sich in einem gegebenen Lookback-Fenster authentifizieren, damit ein nicht authentifizierter Besuch und ein authentifizierter Besuch gemeinsam identifiziert werden können. Sobald ein Gerät erkannt wurde, wird es von diesem Punkt an live zugeordnet.
 
@@ -231,6 +237,11 @@ Durch die Zuordnung werden mindestens zwei Durchgänge an Daten in einem bestimm
    - **Monatlich**: Die Daten werden einmal im Monat mit dem Lookback-Fenster wiederholt (siehe [Optionen](#options)). Diese Option bietet den Vorteil, dass nicht authentifizierte Sitzungen über einen weniger eng gefasst Zeitraum für die Authentifizierung verfügen. Nicht zugeordnete Daten, die weniger als einen Monat alt sind, werden jedoch erst nach der erneuten Wiedergabe im nächsten Monat erneut verarbeitet.
 
 - **Datenschutz**: Wenn datenschutzbezogene Anfragen empfangen werden, muss nicht nur die angeforderte Identität aus dem Quelldatensatz entfernt werden, sondern auch die Zuordnung dieser Identität zu nicht authentifizierten Ereignissen rückgängig gemacht werden. Außerdem muss die Identität aus dem Identitätsdiagramm entfernt werden, um das zukünftige grafikbasierte Stitching für diese spezifische Identität zu verhindern.
+
+  >[!IMPORTANT]
+  >
+  >Die Aufhebung der Zuordnung als Teil von Datenschutzanfragen wird Anfang 2025 geändert. Der aktuelle Auftrennungsprozess löst Ereignisse anhand der neuesten Version bekannter Identitäten zurück. Diese Umbenennung von Ereignissen zu einer anderen Identität könnte unerwünschte rechtliche Folgen haben. Um diese Bedenken auszuräumen, aktualisiert der neue Auftrennungsprozess ab 2025 Ereignisse, die Gegenstand der Datenschutzanfrage sind, mit der beständigen ID.
+  > 
 
 Daten, die über das Lookback-Fenster hinausgehen, werden nicht wiederholt. Ein Besucher muss sich in einem gegebenen Lookback-Fenster authentifizieren, damit ein nicht authentifizierter Besuch und ein authentifizierter Besuch gemeinsam identifiziert werden können. Sobald ein Gerät erkannt wurde, wird es von diesem Punkt an live zugeordnet.
 

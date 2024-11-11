@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 exl-id: f4115164-7263-40ad-9706-3b98d0bb7905
 role: Admin
-source-git-commit: 80d5a864e063911b46ff248f2ea89c1ed0d14e32
+source-git-commit: 059a091fb41efee6f508b4260b1d943f881f5087
 workflow-type: tm+mt
-source-wordcount: '1428'
-ht-degree: 29%
+source-wordcount: '1871'
+ht-degree: 26%
 
 ---
 
@@ -70,6 +70,80 @@ Die kanalübergreifende Analyse ist ein für das Customer Journey Analytics spez
 +++**Wie behandelt die Zuordnung Datenschutzanfragen?**
 
 Adobe verarbeitet Datenschutzanfragen gemäß den nationalen und internationalen Gesetzen. Adobe bietet den [Adobe Experience Platform Privacy Service](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=de) für Datenzugriffs- und Löschanfragen. Die Anfragen gelten sowohl für die ursprünglichen als auch die neu zugewiesenen Datensätze.
+
+>[!IMPORTANT]
+>
+>Die Aufhebung der Zuordnung als Teil von Datenschutzanfragen wird Anfang 2025 geändert. Der aktuelle Auftrennungsprozess löst Ereignisse anhand der neuesten Version bekannter Identitäten zurück. Diese Umbenennung von Ereignissen zu einer anderen Identität könnte unerwünschte rechtliche Folgen haben. Um diese Bedenken auszuräumen, aktualisiert der neue Auftrennungsprozess ab 2025 Ereignisse, die Gegenstand der Datenschutzanfrage sind, mit der beständigen ID.
+> 
+
+Stellen Sie sich die folgenden Daten für Identitäten, Ereignisse vor dem Stitching und nach dem Stitching vor.
+
+| Identitätszuordnung | ID | timestamp | beständige ID | persistenter Namespace | vorübergehende ID | vorübergehender Namespace |
+|---|---|---|---|---|---|---|
+|  | 1 | ts1 | 123 | ecid | Bob | CustId |
+|  | 2 | ts2 | 123 | ecid | Alex | CustId |
+
+
+| Ereignis-Datensatz | ID | timestamp | beständige ID | persistenter Namespace | vorübergehende ID | vorübergehender Namespace |
+|---|---|---|---|---|---|---|
+| | 1 | ts0 | 123 | ecid | | |
+| | 2 | ts1 | 123 | ecid | Bob | CustId |
+| | 3 | ts2 | 123 | ecid | Alex | CustId |
+
+
+| Zusammengefügter Datensatz | ID | timestamp | beständige ID | persistenter Namespace | vorübergehende ID | vorübergehender Namespace | Angeheftete ID | Zusammengestellter Namespace |
+|---|---|---|---|---|---|---|---|---|
+| | 1 | ts0 | 123 | ecid | | | Bob | CustId |
+| | 2 | ts1 | 123 | ecid | Bob | CustId | Bob | CustId |
+| | 3 | ts2 | 123 | ecid | Alex | CustId | Alex | CustId |
+
+
+**Aktueller Prozess für Datenschutzanfragen**
+
+Wenn eine Datenschutzanfrage für Kunden mit CustID Bob empfangen wird, werden die Zeilen mit Durchstreichen-Einträgen gelöscht. Andere Ereignisse werden mithilfe der Identitätszuordnung erneut ausgelöst. Beispielsweise wird die erste zugeordnete ID im zugeordneten Datensatz auf **Alex** aktualisiert.
+
+| Identitätszuordnung | ID | timestamp | beständige ID | persistenter Namespace | vorübergehende ID | vorübergehender Namespace |
+|:---:|---|---|---|---|---|---|
+| ![DeleteOutline](/help/assets/icons/DeleteOutline.svg) | ~~1~~ | ~~ts1~~ | ~~123~~ | ~~ecid~~ | ~~Bob~~ | ~~CustId~~ |
+|  | 2 | ts2 | 123 | ecid | Alex | CustId |
+
+
+| Ereignis-Datensatz | ID | timestamp | beständige ID | persistenter Namespace | vorübergehende ID | vorübergehender Namespace |
+|:---:|---|---|---|---|---|---|
+| | 1 | ts0 | 123 | ecid | | |
+| ![DeleteOutline](/help/assets/icons/DeleteOutline.svg) | ~~2~~ | ~~ts1~~ | ~~123~~ | ~~ecid~~ | ~~Bob~~ | ~~CustId~~ |
+| | 3 | ts2 | 123 | ecid | Alex | CustId |
+
+
+| Zusammengefügter Datensatz | ID | timestamp | beständige ID | persistenter Namespace | vorübergehende ID | vorübergehender Namespace | Angeheftete ID | Zusammengestellter Namespace |
+|:---:|---|---|---|---|---|---|---|---|
+| | 1 | ts0 | 123 | ecid | | | **Alex** | CustId |
+| ![DeleteOutline](/help/assets/icons/DeleteOutline.svg) | ~~2~~ | ~~ts1~~ | ~~123~~ | ~~ecid~~ | ~~Bob~~ | ~~CustId~~ | ~~Bob~~ | ~~CustId~~ |
+| | 3 | ts2 | 123 | ecid | Alex | CustId | Alex | CustId |
+
+
+**Neuer Prozess für Datenschutzanfragen**
+
+Wenn eine Datenschutzanfrage für Kunden mit CustID Bob empfangen wird, werden die Zeilen mit Durchstreichen-Einträgen gelöscht. Andere Ereignisse werden mithilfe der beständigen ID zurückgegeben. Beispielsweise wird die erste zugeordnete ID im zugeordneten Datensatz auf **123** aktualisiert.
+
+| Identitätszuordnung | ID | timestamp | beständige ID | persistenter Namespace | vorübergehende ID | vorübergehender Namespace |
+|:---:|---|---|---|---|---|---|
+| ![DeleteOutline](/help/assets/icons/DeleteOutline.svg) | ~~1~~ | ~~ts1~~ | ~~123~~ | ~~ecid~~ | ~~Bob~~ | ~~CustId~~ |
+|  | 2 | ts2 | 123 | ecid | Alex | CustId |
+
+
+| Ereignis-Datensatz | ID | timestamp | beständige ID | persistenter Namespace | vorübergehende ID | vorübergehender Namespace |
+|:---:|---|---|---|---|---|---|
+| | 1 | ts0 | 123 | ecid | | |
+| ![DeleteOutline](/help/assets/icons/DeleteOutline.svg) | ~~2~~ | ~~ts1~~ | ~~123~~ | ~~ecid~~ | ~~Bob~~ | ~~CustId~~ |
+| | 3 | ts2 | 123 | ecid | Alex | CustId |
+
+
+| Zusammengefügter Datensatz | ID | timestamp | beständige ID | persistenter Namespace | vorübergehende ID | vorübergehender Namespace | Angeheftete ID | Zusammengestellter Namespace |
+|:---:|---|---|---|---|---|---|---|---|
+| | 1 | ts0 | 123 | ecid | | | **123** | ecid |
+| ![DeleteOutline](/help/assets/icons/DeleteOutline.svg) | ~~2~~ | ~~ts1~~ | ~~123~~ | ~~ecid~~ | ~~Bob~~ | ~~CustId~~ | ~~Bob~~ | ~~CustId~~ |
+| | 3 | ts2 | 123 | ecid | Alex | CustId | Alex | CustId |
 
 +++
 
