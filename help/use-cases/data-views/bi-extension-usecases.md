@@ -7,7 +7,7 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: 07db28b8-b688-4a0c-8fb3-28a124342d25
-source-git-commit: ae07aa8a275a37f88d7626bac2f59e21d4c40e5a
+source-git-commit: 552b7fe20759036a0919fa622019e87b2722bb31
 workflow-type: tm+mt
 source-wordcount: '9752'
 ht-degree: 1%
@@ -70,7 +70,7 @@ Die Anweisungen beziehen sich auf eine Beispielumgebung mit den folgenden Objekt
 * Metriken: **[!UICONTROL Einkaufsumsatz]** ??? und **[!UICONTROL Einkäufe]** ??..
 * Filter: **[!UICONTROL Fischereierzeugnisse]** ??
 
-![Customer Journey Analytics Base-Setup](assets/cja-base.png)
+![Customer Journey Analytics Base-Setup](assets/cja-base.png){zoomable="yes"}
 
 Wenn Sie die Anwendungsfälle durchlaufen, ersetzen Sie diese Beispielobjekte durch Objekte, die für Ihre spezifische Umgebung geeignet sind.
 
@@ -89,7 +89,7 @@ Wenn Sie die Anwendungsfälle durchlaufen, ersetzen Sie diese Beispielobjekte du
    1. Wählen Sie die Registerkarte **[!UICONTROL Anmeldedaten]** in der Benutzeroberfläche **[!UICONTROL Abfragen]** aus.
    1. Wählen Sie `prod:cja` aus dem Dropdown-Menü **[!UICONTROL Datenbank]** aus.
 
-      ![Anmeldedaten des Abfragedienstes](assets/queryservice-credentials.png)
+      ![Anmeldedaten des Abfragedienstes](assets/queryservice-credentials.png){width="100" zoomable="yes"}
 
 1. Starten Sie Power BI Desktop.
    1. Wählen Sie in der Hauptbenutzeroberfläche **[!UICONTROL Daten aus anderen Quellen abrufen]** aus.
@@ -129,7 +129,7 @@ Wenn Sie die Anwendungsfälle durchlaufen, ersetzen Sie diese Beispielobjekte du
    1. Wählen Sie die Registerkarte **[!UICONTROL Anmeldedaten]** in der Benutzeroberfläche **[!UICONTROL Abfragen]** aus.
    1. Wählen Sie `prod:cja` aus dem Dropdown-Menü **[!UICONTROL Datenbank]** aus.
 
-      ![Anmeldedaten des Abfragedienstes](assets/queryservice-credentials.png)
+      ![Anmeldedaten des Abfragedienstes](assets/queryservice-credentials.png){zoomable="yes"}
 
 1. Starten Sie Tableau.
    1. Wählen Sie **[!UICONTROL PostgreSQL]** aus der linken Leiste unter **[!UICONTROL Auf einen Server]** aus. Wenn nicht verfügbar, wählen Sie **[!UICONTROL Mehr...]** und dann **[!UICONTROL PostgreSQL]** aus den **[!UICONTROL installierten Connectoren]**.
