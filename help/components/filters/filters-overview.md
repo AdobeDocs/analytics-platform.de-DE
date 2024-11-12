@@ -4,9 +4,9 @@ description: Erfahren Sie, wofür Filter verwendet werden und wie Sie einen einf
 exl-id: 21183e98-6593-4b22-99c7-4a03231acfe9
 feature: Filters
 role: User
-source-git-commit: 8f3b30ca6d20d633669d7e9180884c24e0b9a52e
+source-git-commit: 5fbb228fc02304be2246f0b49cb49de7f160b227
 workflow-type: tm+mt
-source-wordcount: '1386'
+source-wordcount: '1423'
 ht-degree: 8%
 
 ---
@@ -83,7 +83,7 @@ Filter basieren auf einer Hierarchie auf Personen-, Sitzungs- und Ereignisebene,
 <table style="table-layout: fixed; border: none;" width="100%">
 
 <tr>
-<td style="background-color: #E5E4E2;" colspan="3" width="200" height="100"><img src="https://spectrum.adobe.com/static/icons/workflow_18/Smock_User_18_N.svg"/> Benutzer</td>
+<td style="background-color: #E5E4E2;" colspan="3" width="200" height="100"><img src="https://spectrum.adobe.com/static/icons/workflow_18/Smock_User_18_N.svg"/> Person</td>
 </tr>
 
 <tr>
@@ -174,9 +174,13 @@ Beim Erstellen von Containern in anderen Containern erstellen Sie tatsächlich e
 2. Wenden Sie die verschachtelte Filterdefinition auf die verbleibenden Daten an. Die Definition verschachtelter Filter gilt NICHT für Daten, die von der ersten Definition verworfen wurden.
 3. Wiederholen Sie diesen Vorgang, bis alle Filterdefinitionen für verschachtelte Container berechnet wurden. Die verbleibenden Daten werden dann in das Ergebnis aufgenommen und für die Berichterstellung verwendet.
 
+>[!NOTE]
+>
+>Wenn Sie einen Filter innerhalb eines Filters verschachteln (z. B. einen Filter aus dem Bereich &quot;Komponenten&quot;auf Ihre Filterdefinition ziehen), wird ein Container mit einer Kopie (keine Referenz) der gezogenen Filterdefinition erstellt.
 
 <!--
 You can use nesting between containers and between conditions within a container. Here is what you can nest in each container:
+
 
 | Container | What container you can nest inside |
 | Event | Only event conditions |
