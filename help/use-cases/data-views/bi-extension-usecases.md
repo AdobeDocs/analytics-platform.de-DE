@@ -7,7 +7,7 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: 07db28b8-b688-4a0c-8fb3-28a124342d25
-source-git-commit: 552b7fe20759036a0919fa622019e87b2722bb31
+source-git-commit: 749fbd5ae370995d772b6880c9949cf14042ed8c
 workflow-type: tm+mt
 source-wordcount: '9752'
 ht-degree: 1%
@@ -89,35 +89,35 @@ Wenn Sie die Anwendungsfälle durchlaufen, ersetzen Sie diese Beispielobjekte du
    1. Wählen Sie die Registerkarte **[!UICONTROL Anmeldedaten]** in der Benutzeroberfläche **[!UICONTROL Abfragen]** aus.
    1. Wählen Sie `prod:cja` aus dem Dropdown-Menü **[!UICONTROL Datenbank]** aus.
 
-      ![Anmeldedaten des Abfragedienstes](assets/queryservice-credentials.png){width="100" zoomable="yes"}
+      ![Anmeldedaten des Abfragedienstes](assets/queryservice-credentials.png){zoomable="yes"}
 
 1. Starten Sie Power BI Desktop.
    1. Wählen Sie in der Hauptbenutzeroberfläche **[!UICONTROL Daten aus anderen Quellen abrufen]** aus.
    1. Im Dialogfeld **[!UICONTROL Daten abrufen]** :
-      ![Power BI PostgreSQL-Datenbank](assets/powerbi-postgresql.png)
+      ![Power BI PostgreSQL-Datenbank](assets/powerbi-postgresql.png){zoomable="yes"}
       1. Suchen Sie nach der PostgreSQL-Datenbank ]**und wählen Sie sie aus.**[!UICONTROL 
       1. Wählen Sie **[!UICONTROL Verbinden]** aus.
    1. Im Dialogfeld **[!UICONTROL PostgreSQL-Datenbank]** :
-      ![Power BI Desktop Server- und Datenbankeinstellungen](assets/powerbi-serverdatabase.png)
+      ![Power BI Desktop Server- und Datenbankeinstellungen](assets/powerbi-serverdatabase.png){zoomable="yes"}
       1. Verwenden Sie ![Kopieren](/help/assets/icons/Copy.svg) , um die Werte **[!UICONTROL Host]** und **[!UICONTROL Port]** aus dem Bedienfeld Experience Platform **[!UICONTROL Abfrage]** **[!UICONTROL Ablaufberechtigungen]** zu kopieren und einzufügen, getrennt durch `:` als Wert für **[!UICONTROL Server]**. Beispiel: `examplecompany.platform-query.adobe.io:80`.
       1. Verwenden Sie ![Kopieren](/help/assets/icons/Copy.svg) , um den Wert **[!UICONTROL Database]** aus dem Bereich Experience Platform **[!UICONTROL Abfrage]** **[!UICONTROL Ablaufberechtigungen]** zu kopieren und einzufügen. Fügen Sie `?FLATTEN` zum Wert hinzu, den Sie einfügen. Zum Beispiel `prod:cja?FLATTEN`.
       1. Wählen Sie **[!UICONTROL DirectQuery]** als **[!UICONTROL Datenkonnektivitätsmodus]** aus.
       1. Wählen Sie **[!UICONTROL OK]** aus.
    1. Im Dialogfeld **[!UICONTROL PostgreSQL-Datenbank]** - **[!UICONTROL Datenbank]** :
-      ![Power BI Desktop User and Password](assets/powerbi-userpassword.png)
+      ![Power BI Desktop User and Password](assets/powerbi-userpassword.png){zoomable="yes"}
       1. Kopieren Sie mithilfe von ![Kopieren](/help/assets/icons/Copy.svg) die Werte **[!UICONTROL Benutzername]** und **[!UICONTROL Kennwort]** aus dem Feld Experience Platform **[!UICONTROL Abfrage]** **[!UICONTROL Ablaufberechtigungen]** in den Feldern **[!UICONTROL Benutzername]** und **[!UICONTROL Kennwort]**. Wenn Sie eine [nicht ablaufende Berechtigung](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/credentials?lang=en#use-credential-to-connect) verwenden, verwenden Sie das Kennwort Ihrer nicht ablaufenden Berechtigung.
       1. Stellen Sie sicher, dass das Dropdown-Menü für **[!UICONTROL Auswählen, welche Ebene diese Einstellungen auf]** anwenden soll, auf den zuvor definierten **[!UICONTROL Server]** festgelegt ist.
       1. Wählen Sie **[!UICONTROL Verbinden]** aus.
    1. Im Dialogfeld **[!UICONTROL Navigator]** werden die Datenansichten abgerufen. Dieser Abruf kann einige Zeit in Anspruch nehmen. Nach dem Abrufen sehen Sie Folgendes in Power BI Desktop.
-      ![Power BI-Desktop-Ladedaten](assets/powerbi-navigator-load.png)
+      ![Power BI-Desktop-Ladedaten](assets/powerbi-navigator-load.png){zoomable="yes"}
       1. Wählen Sie **[!UICONTROL public.cc_data_view]** aus der Liste im linken Bereich aus.
       1. Es gibt zwei Optionen:
          1. Wählen Sie **[!UICONTROL laden]** aus, um das Setup fortzusetzen und abzuschließen.
          1. Wählen Sie **[!UICONTROL Daten transformieren]** aus. Es wird ein Dialogfeld angezeigt, in dem Sie im Rahmen der Konfiguration optional Umwandlungen anwenden können.
-            ![Power BI Desktop Transform Data](assets/powerbi-transform-data.png)
+            ![Power BI Desktop Transform Data](assets/powerbi-transform-data.png){zoomable="yes"}
             * Wählen Sie **[!UICONTROL Schließen und Anwenden]** aus.
    1. Nach einiger Zeit wird **[!UICONTROL public.cc_data_view]** im Bereich **[!UICONTROL Daten]** angezeigt. Wählen Sie ![ChevronRight](/help/assets/icons/ChevronRight.svg) aus, um Dimensionen und Metriken anzuzeigen.
-      ![Laden der Power BI Desktop Server-Daten](assets/powerbi-navigator-loaded.png)
+      ![Laden der Power BI Desktop Server-Daten](assets/powerbi-navigator-loaded.png){zoomable="yes"}
 
 
 >[!TAB Tableau-Desktop]
@@ -133,9 +133,9 @@ Wenn Sie die Anwendungsfälle durchlaufen, ersetzen Sie diese Beispielobjekte du
 
 1. Starten Sie Tableau.
    1. Wählen Sie **[!UICONTROL PostgreSQL]** aus der linken Leiste unter **[!UICONTROL Auf einen Server]** aus. Wenn nicht verfügbar, wählen Sie **[!UICONTROL Mehr...]** und dann **[!UICONTROL PostgreSQL]** aus den **[!UICONTROL installierten Connectoren]**.
-      ![Tableau-Connectoren](assets/tableau-connectors.png)
+      ![Tableau-Connectoren](assets/tableau-connectors.png){zoomable="yes"}
    1. Im Dialogfeld **[!UICONTROL PostgreSQL]** auf der Registerkarte **[!UICONTROL Allgemein]**:
-      ![Dialogfeld &quot;Anmelden für Tableau&quot;](assets/tableau-signin.png)
+      ![Dialogfeld &quot;Anmelden für Tableau&quot;](assets/tableau-signin.png){zoomable="yes"}
       1. Verwenden Sie ![Kopieren](/help/assets/icons/Copy.svg) , um den **[!UICONTROL Host]** aus dem Bereich Experience Platform **[!UICONTROL Abfrage]** **[!UICONTROL Ablaufberechtigungen]** zu kopieren und in den Bereich **[!UICONTROL Server]** einzufügen.
       1. Verwenden Sie ![Kopieren](/help/assets/icons/Copy.svg) , um den **[!UICONTROL Port]** aus dem Bereich Experience Platform **[!UICONTROL Abfrage]** **[!UICONTROL Ablaufberechtigungen]** zu kopieren und in den Bereich **[!UICONTROL Port]** einzufügen.
       1. Verwenden Sie ![Kopieren](/help/assets/icons/Copy.svg) , um die **[!UICONTROL Datenbank]** aus dem Bereich Experience Platform **[!UICONTROL Abfrage]** **[!UICONTROL Ablaufberechtigungen]** zu kopieren und in den Bereich **[!UICONTROL Datenbank]** einzufügen. Fügen Sie `%3FFLATTEN` zum Wert hinzu, den Sie einfügen. Beispiel: `prod:cja%3FFLATTEN`.
@@ -150,10 +150,10 @@ Wenn Sie die Anwendungsfälle durchlaufen, ersetzen Sie diese Beispielobjekte du
       * Der Name der Verbindung unter **[!UICONTROL Verbindungen]**.
       * Der Name der Datenbank unter **[!UICONTROL Datenbank]**.
       * Eine Liste von Tabellen unter **[!UICONTROL Tabelle]**.
-        ![Tableau verbunden](assets/tableau-connected.png)
+        ![Tableau verbunden](assets/tableau-connected.png){zoomable="yes"}
       1. Ziehen Sie den Eintrag **[!UICONTROL cc_data_view]** und legen Sie den Eintrag in der Hauptansicht ab, in der **[!UICONTROL Tabellen hierher ziehen]** steht.
    1. Im Hauptfenster werden Details zur Datenansicht **[!UICONTROL cc_data_view]** angezeigt.
-      ![Tableau verbunden](assets/tableau-validation.png)
+      ![Tableau verbunden](assets/tableau-validation.png){zoomable="yes"}
 
 >[!ENDTABS]
 
@@ -172,7 +172,7 @@ Customer Journey Analytics bietet Informationen zur Verbindung auf der Experienc
 1. Wählen Sie die Registerkarte **[!UICONTROL Anmeldedaten]** in der Benutzeroberfläche **[!UICONTROL Abfragen]** aus.
 1. Wählen Sie `prod:cja` aus dem Dropdown-Menü **[!UICONTROL Datenbank]** aus.
 
-![Anmeldedaten des Abfragedienstes](assets/queryservice-credentials.png)
+![Anmeldedaten des Abfragedienstes](assets/queryservice-credentials.png){zoomable="yes"}
 
 
 +++
@@ -219,7 +219,7 @@ In diesem Anwendungsfall möchten Sie eine Tabelle und eine einfache Linienvisua
 
 Ein Beispiel für den Bereich **[!UICONTROL Täglicher Trend]** für den Anwendungsfall:
 
-![Customer Journey Analytics Täglicher Trend-Bereich ](assets/cja_daily_trend.png)
+![Customer Journey Analytics Täglicher Trend-Bereich ](assets/cja_daily_trend.png){zoomable="yes"}
 
 +++
 
@@ -253,7 +253,7 @@ Ein Beispiel für den Bereich **[!UICONTROL Täglicher Trend]** für den Anwendu
 
    Eine Liniendiagrammvisualisierung ersetzt die Tabelle, wobei dieselben Daten wie die Tabelle verwendet werden. Ihr Power BI Desktop sollte wie unten dargestellt aussehen.
 
-   ![Power BI Desktop-Anwendungsfall 2 Datumsbereichfilter](assets/uc2-pbi-daterange.png)
+   ![Power BI Desktop-Anwendungsfall 2 Datumsbereichfilter](assets/uc2-pbi-daterange.png){zoomable="yes"}
 
 1. In der Liniendiagrammvisualisierung:
 
@@ -262,7 +262,7 @@ Ein Beispiel für den Bereich **[!UICONTROL Täglicher Trend]** für den Anwendu
 
    Die Hauptansicht wird aktualisiert und zeigt sowohl eine Linienvisualisierung als auch eine Tabelle an. Ihr Power BI Desktop sollte wie unten dargestellt aussehen.
 
-   ![Power BI-Desktop-Nutzungsszenario 2 Endgültige Trend-Visualisierung pro Tag](assets/uc2-pbi-final.png)
+   ![Power BI-Desktop-Nutzungsszenario 2 Endgültige Trend-Visualisierung pro Tag](assets/uc2-pbi-final.png){zoomable="yes"}
 
 >[!TAB Tableau-Desktop]
 
@@ -271,7 +271,7 @@ Ein Beispiel für den Bereich **[!UICONTROL Täglicher Trend]** für den Anwendu
    1. Wählen Sie im Dialogfeld **[!UICONTROL Filterfeld \[Datumsbereich\]]** die Option **[!UICONTROL Datumsbereich]** aus und wählen Sie **[!UICONTROL Weiter >]**.
    1. Wählen Sie im Dialogfeld **[!UICONTROL Filter \[Datumsbereich]]** die Option **[!UICONTROL Datumsbereich]** aus und geben Sie einen Zeitraum von `01/01/2023` - `01/02/2023` an.
 
-      ![Tableau-Desktop-Filter](assets/uc2-tableau-filter.png)
+      ![Tableau-Desktop-Filter](assets/uc2-tableau-filter.png){zoomable="yes"}
 
    1. Ziehen Sie **[!UICONTROL Daterangeday]** aus der Liste **[!UICONTROL Tabellen]** in den Bereich **[!UICONTROL Daten]** und legen Sie den Eintrag im Feld neben **[!UICONTROL Spalten]** ab.
       * Wählen Sie **[!UICONTROL Tag]** aus dem Dropdown-Menü **[!UICONTROL Daterangeday]** aus, damit der Wert auf **[!UICONTROL TAG(Daterangeday)]** aktualisiert wird.
@@ -281,7 +281,7 @@ Ein Beispiel für den Bereich **[!UICONTROL Täglicher Trend]** für den Anwendu
 
       Ihr Tableau-Desktop sollte wie unten dargestellt aussehen.
 
-      ![Tableau-Desktop-Diagramm](assets/uc2-tableau-graph.png)
+      ![Tableau-Desktop-Diagramm](assets/uc2-tableau-graph.png){zoomable="yes"}
 
 1. Wählen Sie im Kontextmenü der Registerkarte **[!UICONTROL Blatt 1]** die Option **[!UICONTROL Duplizieren]** aus, um ein zweites Blatt zu erstellen.
 1. Wählen Sie im Kontextmenü der Registerkarte **[!UICONTROL Blatt 1]** die Option **[!UICONTROL Umbenennen]** aus, um das Blatt in `Graph` umzubenennen.
@@ -293,7 +293,7 @@ Ein Beispiel für den Bereich **[!UICONTROL Täglicher Trend]** für den Anwendu
 
       Ihr Tableau-Desktop sollte wie unten dargestellt aussehen.
 
-      ![Tableau-Desktop-Daten](assets/uc2-tableau-data.png)
+      ![Tableau-Desktop-Daten](assets/uc2-tableau-data.png){zoomable="yes"}
 
 1. Wählen Sie die Schaltfläche **[!UICONTROL Neues Dashboard]** (unten) aus, um eine neue Ansicht vom Typ **[!UICONTROL Dashboard 1]** zu erstellen. In der Ansicht **[!UICONTROL Dashboard 1]** :
    1. Ziehen Sie das Blatt **[!UICONTROL Diagramm]** aus dem Regal **[!UICONTROL Tabellen]** und legen Sie es in die Ansicht **[!UICONTROL Dashboard 1]**, in der *Tabellen hier ablegen* gelesen wird.
@@ -302,7 +302,7 @@ Ein Beispiel für den Bereich **[!UICONTROL Täglicher Trend]** für den Anwendu
 
       Ihr Tableau-Desktop sollte wie unten dargestellt aussehen.
 
-      ![Tableau-Desktop-Dashboard 1](assets/uc2-tableau-dashboard.png)
+      ![Tableau-Desktop-Dashboard 1](assets/uc2-tableau-dashboard.png){zoomable="yes"}
 
 >[!ENDTABS]
 
@@ -317,7 +317,7 @@ In diesem Anwendungsfall möchten Sie eine Tabelle und eine einfache Linienvisua
 
 Ein Beispiel für den Bereich **[!UICONTROL Stündlicher Trend]** für den Anwendungsfall:
 
-![Customer Journey Analytics Stündliche Trend-Visualisierungen ](assets/cja_hourly_trend.png)
+![Customer Journey Analytics Stündliche Trend-Visualisierungen ](assets/cja_hourly_trend.png){zoomable="yes"}
 
 +++
 
@@ -341,7 +341,7 @@ Ein Beispiel für den Bereich **[!UICONTROL Stündlicher Trend]** für den Anwen
    1. Wählen Sie im Dialogfeld **[!UICONTROL Filterfeld \[Datumsbereich\]]** die Option **[!UICONTROL Datumsbereich]** aus und wählen Sie **[!UICONTROL Weiter >]**.
    1. Wählen Sie im Dialogfeld **[!UICONTROL Filter \[Datumsbereich]]** die Option **[!UICONTROL Datumsbereich]** aus und geben Sie einen Zeitraum von `01/01/2023` - `02/01/2023` an.
 
-      ![Tableau-Desktop-Filter](assets/uc3-tableau-filter.png)
+      ![Tableau-Desktop-Filter](assets/uc3-tableau-filter.png){zoomable="yes"}
 
    1. Ziehen Sie **[!UICONTROL Daterangehour]** aus der Liste **[!UICONTROL Tabellen]** in den Bereich **[!UICONTROL Daten]** und legen Sie den Eintrag im Feld neben **[!UICONTROL Spalten]** ab.
       * Wählen Sie **[!UICONTROL Mehr]** > **[!UICONTROL Stunden]** aus dem Dropdown-Menü **[!UICONTROL Daterangeday]** aus, damit der Wert auf **[!UICONTROL STUNDE(Daterangeday)]** aktualisiert wird.
@@ -351,7 +351,7 @@ Ein Beispiel für den Bereich **[!UICONTROL Stündlicher Trend]** für den Anwen
 
       Ihr Tableau-Desktop sollte wie unten dargestellt aussehen.
 
-      ![Tableau-Desktop-Diagramm](assets/uc3-tableau-graph.png)
+      ![Tableau-Desktop-Diagramm](assets/uc3-tableau-graph.png){zoomable="yes"}
 
 1. Wählen Sie im Kontextmenü der Registerkarte **[!UICONTROL Blatt 1]** die Option **[!UICONTROL Duplizieren]** aus, um ein zweites Blatt zu erstellen.
 1. Wählen Sie im Kontextmenü der Registerkarte **[!UICONTROL Blatt 1]** die Option **[!UICONTROL Umbenennen]** aus, um das Blatt in `Graph` umzubenennen.
@@ -363,7 +363,7 @@ Ein Beispiel für den Bereich **[!UICONTROL Stündlicher Trend]** für den Anwen
 
       Ihr Tableau-Desktop sollte wie unten dargestellt aussehen.
 
-      ![Tableau-Desktop-Daten](assets/uc3-tableau-data.png)
+      ![Tableau-Desktop-Daten](assets/uc3-tableau-data.png){zoomable="yes"}
 
 1. Wählen Sie die Registerkarte **[!UICONTROL Neues Dashboard]** (unten) aus, um eine neue Ansicht vom Typ **[!UICONTROL Dashboard 1]** zu erstellen. In der Ansicht **[!UICONTROL Dashboard 1]** :
    1. Ziehen Sie das Blatt **[!UICONTROL Diagramm]** aus dem Regal **[!UICONTROL Tabellen]** und legen Sie es in die Ansicht **[!UICONTROL Dashboard 1]**, in der *Tabellen hier ablegen* gelesen wird.
@@ -372,7 +372,7 @@ Ein Beispiel für den Bereich **[!UICONTROL Stündlicher Trend]** für den Anwen
 
       Ihre Ansicht **[!UICONTROL Dashboard 1]** sollte wie unten dargestellt aussehen.
 
-      ![Tableau-Desktop-Dashboard 1](assets/uc3-tableau-dashboard.png)
+      ![Tableau-Desktop-Dashboard 1](assets/uc3-tableau-dashboard.png){zoomable="yes"}
 
 
 >[!ENDTABS]
@@ -388,7 +388,7 @@ In diesem Anwendungsfall möchten Sie eine Tabelle und eine einfache Linienvisua
 
 Ein Beispiel für den Bereich **[!UICONTROL Monatlicher Trend]** für den Anwendungsfall:
 
-![Customer Journey Analytics Monatliche Trend-Visualisierung ](assets/cja_monthly_trend.png)
+![Customer Journey Analytics Monatliche Trend-Visualisierung ](assets/cja_monthly_trend.png){zoomable="yes"}
 
 +++
 
@@ -424,7 +424,7 @@ Ein Beispiel für den Bereich **[!UICONTROL Monatlicher Trend]** für den Anwend
 
    Eine Liniendiagrammvisualisierung ersetzt die Tabelle, wobei dieselben Daten wie die Tabelle verwendet werden. Ihr Power BI Desktop sollte wie unten dargestellt aussehen.
 
-   ![Power BI Desktop-Anwendungsfall 2 Datumsbereichfilter](assets/uc4-pbi-filter-daterange.png)
+   ![Power BI Desktop-Anwendungsfall 2 Datumsbereichfilter](assets/uc4-pbi-filter-daterange.png){zoomable="yes"}
 
 1. In der Liniendiagrammvisualisierung:
 
@@ -433,7 +433,7 @@ Ein Beispiel für den Bereich **[!UICONTROL Monatlicher Trend]** für den Anwend
 
    Die Hauptansicht wird aktualisiert und zeigt sowohl eine Linienvisualisierung als auch eine Tabelle an. Ihr Power BI Desktop sollte wie unten dargestellt aussehen.
 
-   ![Power BI-Desktop-Nutzungsszenario 2 Endgültige Trend-Visualisierung pro Tag](assets/uc4-pbi-filter-final.png)
+   ![Power BI-Desktop-Nutzungsszenario 2 Endgültige Trend-Visualisierung pro Tag](assets/uc4-pbi-filter-final.png){zoomable="yes"}
 
 >[!TAB Tableau-Desktop]
 
@@ -442,7 +442,7 @@ Ein Beispiel für den Bereich **[!UICONTROL Monatlicher Trend]** für den Anwend
    1. Wählen Sie im Dialogfeld **[!UICONTROL Filterfeld \[Datumsbereich\]]** die Option **[!UICONTROL Datumsbereich]** aus und wählen Sie **[!UICONTROL Weiter >]**.
    1. Wählen Sie im Dialogfeld **[!UICONTROL Filter \[Datumsbereich]]** die Option **[!UICONTROL Datumsbereich]** aus und geben Sie einen Zeitraum von `01/01/2023` - `01/01/2024` an.
 
-      ![Tableau-Desktop-Filter](assets/uc4-tableau-filter.png)
+      ![Tableau-Desktop-Filter](assets/uc4-tableau-filter.png){zoomable="yes"}
 
    1. Ziehen Sie **[!UICONTROL Daterangeday]** aus der Liste **[!UICONTROL Tabellen]** in den Bereich **[!UICONTROL Daten]** und legen Sie den Eintrag im Feld neben **[!UICONTROL Spalten]** ab.
       * Wählen Sie **[!UICONTROL MONTH]** aus dem Dropdown-Menü **[!UICONTROL Daterangeday]** aus, damit der Wert auf **[!UICONTROL MONTH(Daterangeday)]** aktualisiert wird.
@@ -452,7 +452,7 @@ Ein Beispiel für den Bereich **[!UICONTROL Monatlicher Trend]** für den Anwend
 
       Ihr Tableau-Desktop sollte wie unten dargestellt aussehen.
 
-      ![Tableau-Desktop-Diagramm](assets/uc4-tableau-graph.png)
+      ![Tableau-Desktop-Diagramm](assets/uc4-tableau-graph.png){zoomable="yes"}
 
 1. Wählen Sie im Kontextmenü der Registerkarte **[!UICONTROL Blatt 1]** die Option **[!UICONTROL Duplizieren]** aus, um ein zweites Blatt zu erstellen.
 1. Wählen Sie im Kontextmenü der Registerkarte **[!UICONTROL Blatt 1]** die Option **[!UICONTROL Umbenennen]** aus, um das Blatt in `Graph` umzubenennen.
@@ -464,7 +464,7 @@ Ein Beispiel für den Bereich **[!UICONTROL Monatlicher Trend]** für den Anwend
 
       Ihr Tableau-Desktop sollte wie unten dargestellt aussehen.
 
-      ![Tableau-Desktop-Daten](assets/uc4-tableau-data.png)
+      ![Tableau-Desktop-Daten](assets/uc4-tableau-data.png){zoomable="yes"}
 
 1. Wählen Sie die Registerkarte **[!UICONTROL Neues Dashboard]** (unten) aus, um eine neue Ansicht vom Typ **[!UICONTROL Dashboard 1]** zu erstellen. In der Ansicht **[!UICONTROL Dashboard 1]** :
    1. Ziehen Sie das Blatt **[!UICONTROL Diagramm]** aus dem Regal **[!UICONTROL Tabellen]** und legen Sie es in die Ansicht **[!UICONTROL Dashboard 1]**, in der *Tabellen hier ablegen* gelesen wird.
@@ -473,7 +473,7 @@ Ein Beispiel für den Bereich **[!UICONTROL Monatlicher Trend]** für den Anwend
 
       Ihr Tableau-Desktop sollte wie unten dargestellt aussehen.
 
-      ![Tableau-Desktop-Dashboard 1](assets/uc4-tableau-dashboard.png)
+      ![Tableau-Desktop-Dashboard 1](assets/uc4-tableau-dashboard.png){zoomable="yes"}
 
 >[!ENDTABS]
 
@@ -488,7 +488,7 @@ In diesem Anwendungsfall möchten Sie eine Tabelle und eine einfache Balkenvisua
 
 Beispiel für ein Bedienfeld **[!UICONTROL Einzelne Dimension mit Rangansicht]** für den Anwendungsfall:
 
-![Customer Journey Analytics Einzelne Visualisierung nach Rang einer Dimension](assets/cja-single-dimension-ranked.png)
+![Customer Journey Analytics Einzelne Visualisierung nach Rang einer Dimension](assets/cja-single-dimension-ranked.png){zoomable="yes"}
 +++
 
 +++ BI-Tools
@@ -528,7 +528,7 @@ Beispiel für ein Bedienfeld **[!UICONTROL Einzelne Dimension mit Rangansicht]**
 
    1. Wählen Sie **[!UICONTROL Summe des Kaufumsatzes]** aus, um die Produktnamen in absteigender Reihenfolge des Kaufumsatzes zu sortieren. Ihr Power BI Desktop sollte wie unten dargestellt aussehen.
 
-   ![Power BI Desktop-Nutzungsszenario 5 Tabellenstatus](assets/uc5-pbi-table.png)
+   ![Power BI Desktop-Nutzungsszenario 5 Tabellenstatus](assets/uc5-pbi-table.png){zoomable="yes"}
 
 1. Im Bereich **[!UICONTROL Filter]** :
 
@@ -550,7 +550,7 @@ Beispiel für ein Bedienfeld **[!UICONTROL Einzelne Dimension mit Rangansicht]**
 
    Das Linien- und gestapelte Spaltendiagramm wird aktualisiert. Ihr Power BI Desktop sollte wie unten dargestellt aussehen.
 
-   ![Power BI Desktop-Nutzungsszenario 5 Diagramm](assets/uc5-pbi-chart.png)
+   ![Power BI Desktop-Nutzungsszenario 5 Diagramm](assets/uc5-pbi-chart.png){zoomable="yes"}
 
 1. Visualisierung der Linien- und gestapelten Spaltendiagramme:
 
@@ -559,7 +559,7 @@ Beispiel für ein Bedienfeld **[!UICONTROL Einzelne Dimension mit Rangansicht]**
 
    Die Hauptansicht wird aktualisiert und zeigt sowohl eine Linienvisualisierung als auch eine Tabelle an.
 
-   ![Power BI-Desktop-Nutzungsszenario 2 Endgültige Trend-Visualisierung pro Tag](assets/uc5-pbi-final.png)
+   ![Power BI-Desktop-Nutzungsszenario 2 Endgültige Trend-Visualisierung pro Tag](assets/uc5-pbi-final.png){zoomable="yes"}
 
 >[!TAB Tableau-Desktop]
 
@@ -568,7 +568,7 @@ Beispiel für ein Bedienfeld **[!UICONTROL Einzelne Dimension mit Rangansicht]**
    1. Wählen Sie im Dialogfeld **[!UICONTROL Filterfeld \[Datumsbereich\]]** die Option **[!UICONTROL Datumsbereich]** aus und wählen Sie **[!UICONTROL Weiter >]**.
    1. Wählen Sie im Dialogfeld **[!UICONTROL Filter \[Datumsbereich]]** die Option **[!UICONTROL Datumsbereich]** aus und geben Sie einen Zeitraum von `01/01/2023` - `31/12/2024` an. Wählen Sie **[!UICONTROL Apply]** und **[!UICONTROL OK]** aus.
 
-      ![Tableau-Desktop-Filter](assets/uc5-tableau-filter.png)
+      ![Tableau-Desktop-Filter](assets/uc5-tableau-filter.png){zoomable="yes"}
 
    1. Ziehen Sie **[!UICONTROL Produktname]** aus der Liste **[!UICONTROL Tabellen]** in den Bereich **[!UICONTROL Daten]** und legen Sie den Eintrag im Feld neben **[!UICONTROL Zeilen]** ab.
    1. Ziehen Sie **[!UICONTROL Käufe]** aus der Liste **[!UICONTROL Tabellen (*Bewertungsnamen*)]** und legen Sie den Eintrag im Bereich **[!UICONTROL Daten]** ab und legen Sie ihn im Feld neben **[!UICONTROL Zeilen]** ab.
@@ -585,7 +585,7 @@ Beispiel für ein Bedienfeld **[!UICONTROL Einzelne Dimension mit Rangansicht]**
 
    Ihr Tableau-Desktop sollte wie unten dargestellt aussehen.
 
-   ![Tableau-Desktop-Diagramm](assets/uc5-tableau-graph.png)
+   ![Tableau-Desktop-Diagramm](assets/uc5-tableau-graph.png){zoomable="yes"}
 
 1. Wählen Sie im Kontextmenü der Registerkarte **[!UICONTROL Blatt 1]** die Option **[!UICONTROL Duplizieren]** aus, um ein zweites Blatt zu erstellen.
 1. Wählen Sie im Kontextmenü der Registerkarte **[!UICONTROL Blatt 1]** die Option **[!UICONTROL Umbenennen]** aus, um das Blatt in `Data` umzubenennen.
@@ -597,7 +597,7 @@ Beispiel für ein Bedienfeld **[!UICONTROL Einzelne Dimension mit Rangansicht]**
 
    Ihr Tableau-Desktop sollte wie unten dargestellt aussehen.
 
-   ![Tableau-Desktop-Daten](assets/uc5-tableau-data.png)
+   ![Tableau-Desktop-Daten](assets/uc5-tableau-data.png){zoomable="yes"}
 
 1. Wählen Sie die Registerkarte **[!UICONTROL Neues Dashboard]** (unten) aus, um eine neue Ansicht vom Typ **[!UICONTROL Dashboard 1]** zu erstellen. In der Ansicht **[!UICONTROL Dashboard 1]** :
    1. Ziehen Sie das Blatt **[!UICONTROL Diagramm]** aus dem Regal **[!UICONTROL Tabellen]** und legen Sie es in die Ansicht **[!UICONTROL Dashboard 1]**, in der *Tabellen hier ablegen* gelesen wird.
@@ -606,7 +606,7 @@ Beispiel für ein Bedienfeld **[!UICONTROL Einzelne Dimension mit Rangansicht]**
 
    Ihre Ansicht **[!UICONTROL Dashboard 1]** sollte wie unten dargestellt aussehen.
 
-   ![Tableau-Desktop-Dashboard 1](assets/uc5-tableau-dashboard.png)
+   ![Tableau-Desktop-Dashboard 1](assets/uc5-tableau-dashboard.png){zoomable="yes"}
 
 >[!ENDTABS]
 
@@ -621,7 +621,7 @@ In diesem Anwendungsfall möchten Sie eine Tabelle anzeigen, in der der Kaufumsa
 
 Beispiel für das Bedienfeld **[!UICONTROL Mehrere Dimensionen mit Rangansicht]** für den Anwendungsfall:
 
-![Customer Journey Analytics Rangansicht mehrerer Dimensionen](assets/cja-multiple-dimension-ranked.png)
+![Customer Journey Analytics Rangansicht mehrerer Dimensionen](assets/cja-multiple-dimension-ranked.png){zoomable="yes"}
 
 +++
 
@@ -663,7 +663,7 @@ Beispiel für das Bedienfeld **[!UICONTROL Mehrere Dimensionen mit Rangansicht]*
 
 1. Um jede Kategorie in der Tabelle aufzuschlüsseln, wählen Sie auf der Produktkategorienebene **[!UICONTROL +]** aus. Ihr Power BI Desktop sollte wie unten dargestellt aussehen.
 
-   ![Power BI Desktop Multiple Dimensionen Rangansicht Tabelle](assets/uc6-powerbi-data.png)
+   ![Power BI Desktop Multiple Dimensionen Rangansicht Tabelle](assets/uc6-powerbi-data.png){zoomable="yes"}
 
 1. Wählen Sie **[!UICONTROL Home]** aus dem oberen Menü und dann **[!UICONTROL New visual]**. Dem Bericht wird eine neue visuelle Darstellung hinzugefügt.
 
@@ -677,7 +677,7 @@ Beispiel für das Bedienfeld **[!UICONTROL Mehrere Dimensionen mit Rangansicht]*
 
    Ihr Power BI Desktop sollte wie unten dargestellt aussehen.
 
-   ![Power BI Desktop Multiple Dimensionen Rangansicht ](assets/uc6-powerbi-treemap.png)
+   ![Power BI Desktop Multiple Dimensionen Rangansicht ](assets/uc6-powerbi-treemap.png){zoomable="yes"}
 
 1. Wählen Sie **[!UICONTROL Home]** aus dem oberen Menü und dann **[!UICONTROL New visual]**. Dem Bericht wird eine neue visuelle Darstellung hinzugefügt.
 
@@ -694,7 +694,7 @@ Beispiel für das Bedienfeld **[!UICONTROL Mehrere Dimensionen mit Rangansicht]*
 
    Ihr Power BI Desktop sollte wie unten dargestellt aussehen.
 
-   ![Power BI Desktop - Mehrere Dimensionen final bewertet](assets/uc6-powerbi-final.png)
+   ![Power BI Desktop - Mehrere Dimensionen final bewertet](assets/uc6-powerbi-final.png){zoomable="yes"}
 
 
 >[!TAB Tableau-Desktop]
@@ -706,7 +706,7 @@ Beispiel für das Bedienfeld **[!UICONTROL Mehrere Dimensionen mit Rangansicht]*
 
       Ihr Tableau-Desktop sollte wie unten dargestellt aussehen.
 
-      ![Tableau-Desktop-Rang-Filter mit mehreren Dimensionen](assets/uc6-tableau-filter.png)
+      ![Tableau-Desktop-Rang-Filter mit mehreren Dimensionen](assets/uc6-tableau-filter.png){zoomable="yes"}
 
    1. Ziehen Sie **[!UICONTROL Produktkategorie]** und legen Sie sie neben **[!UICONTROL Spalten]** ab.
    1. Ziehen Sie **[!UICONTROL Umsatz kaufen]** und legen Sie es neben **[!UICONTROL Zeilen]** ab. Der Wert ändert sich in **[!UICONTROL SUM(Einkaufsumsatz)]**.
@@ -719,7 +719,7 @@ Beispiel für das Bedienfeld **[!UICONTROL Mehrere Dimensionen mit Rangansicht]*
 
       Ihr Tableau-Desktop sollte wie unten dargestellt aussehen.
 
-      ![Tableau-Desktop-Mehrfach-Dimensionen-Rangansicht](assets/uc6-tableau-category.png)
+      ![Tableau-Desktop-Mehrfach-Dimensionen-Rangansicht](assets/uc6-tableau-category.png){zoomable="yes"}
 
 1. Benennen Sie das aktuelle Blatt 1 ]**in 2 um.**[!UICONTROL `Category`
 1. Wählen Sie **[!UICONTROL Neues Arbeitsblatt]** aus, um ein neues Arbeitsblatt zu erstellen, und benennen Sie es in `Data` um.
@@ -738,7 +738,7 @@ Beispiel für das Bedienfeld **[!UICONTROL Mehrere Dimensionen mit Rangansicht]*
 
       Ihr Tableau-Desktop sollte wie unten dargestellt aussehen.
 
-      ![Rang-Daten für Tableau-Desktop mit mehreren Dimensionen](assets/uc6-tableau-data.png)
+      ![Rang-Daten für Tableau-Desktop mit mehreren Dimensionen](assets/uc6-tableau-data.png){zoomable="yes"}
 
 1. Wählen Sie **[!UICONTROL Neues Arbeitsblatt]** aus, um ein neues Arbeitsblatt zu erstellen und es in **[!UICONTROL Treemap]** umzubenennen.
    1. Ziehen Sie den Eintrag **[!UICONTROL Daterange]** aus der Liste **[!UICONTROL Tabellen]** in den Bereich **[!UICONTROL Daten]** und legen Sie den Eintrag in die Regale **[!UICONTROL Filter]**.
@@ -755,7 +755,7 @@ Beispiel für das Bedienfeld **[!UICONTROL Mehrere Dimensionen mit Rangansicht]*
 
       Ihr Tableau-Desktop sollte wie unten dargestellt aussehen.
 
-      ![Rang-Daten für Tableau-Desktop mit mehreren Dimensionen](assets/uc6-tableau-treemap.png)
+      ![Rang-Daten für Tableau-Desktop mit mehreren Dimensionen](assets/uc6-tableau-treemap.png){zoomable="yes"}
 
 1. Wählen Sie die Registerkarte **[!UICONTROL Neues Dashboard]** (unten) aus, um eine neue Ansicht vom Typ **[!UICONTROL Dashboard 1]** zu erstellen. In der Ansicht **[!UICONTROL Dashboard 1]** :
    1. Ziehen Sie das Blatt **[!UICONTROL Kategorie]** aus dem Regal **[!UICONTROL Blätter]** und legen Sie es in die Ansicht **[!UICONTROL Dashboard 1]**, in der *Tabellen hier ablegen* gelesen wird.
@@ -765,7 +765,7 @@ Beispiel für das Bedienfeld **[!UICONTROL Mehrere Dimensionen mit Rangansicht]*
 
    Ihre Ansicht **[!UICONTROL Dashboard 1]** sollte wie unten dargestellt aussehen.
 
-   ![Tableau-Desktop-Dashboard 1](assets/uc6-tableau-final.png)
+   ![Tableau-Desktop-Dashboard 1](assets/uc6-tableau-final.png){zoomable="yes"}
 
 >[!ENDTABS]
 
@@ -780,11 +780,11 @@ Sie möchten die eindeutige Anzahl der Produktnamen erhalten, die im Januar 2023
 
 Um einen Bericht zu einer bestimmten Anzahl von Produktnamen zu erstellen, richten Sie eine berechnete Metrik in Customer Journey Analytics ein, wobei **[!UICONTROL Titel]** `Product Name (Count Distinct)` und **[!UICONTROL Externe ID]** `product_name_count_distinct` verwendet werden.
 
-![Customer Journey Analytics Produktname (Distincr Count), berechnete Metrik](assets/cja-calc-metric-distinct-count-product-names.png)
+![Customer Journey Analytics Produktname (Distincr Count), berechnete Metrik](assets/cja-calc-metric-distinct-count-product-names.png){zoomable="yes"}
 
 Sie können diese Metrik dann in einem Beispielbedienfeld **[!UICONTROL Dimension unterschiedlicher Werte zählen]** für den Anwendungsfall verwenden:
 
-![Customer Journey Analytics Unique Count Values ](assets/cja-count-distinct-dimension-values.png)
+![Customer Journey Analytics Unique Count Values ](assets/cja-count-distinct-dimension-values.png){zoomable="yes"}
 
 +++
 
@@ -813,7 +813,7 @@ Sie können diese Metrik dann in einem Beispielbedienfeld **[!UICONTROL Dimensio
 
    Ihr Power BI Desktop sollte wie unten dargestellt aussehen.
 
-   ![Power BI Desktop Multiple Count Distinct table](assets/uc7-powerbi-table.png)
+   ![Power BI Desktop Multiple Count Distinct table](assets/uc7-powerbi-table.png){zoomable="yes"}
 
 1. Wählen Sie die Tabellenvisualisierung aus. Wählen Sie im Kontextmenü **[!UICONTROL Kopieren]** > **[!UICONTROL Visualisierung kopieren]** aus.
 1. Fügen Sie die Visualisierung mit **[!UICONTROL Strg-v]** ein. Die genaue Kopie der Visualisierung überschneidet sich mit der ursprünglichen. Verschieben Sie sie im Berichtsbereich nach rechts.
@@ -821,7 +821,7 @@ Sie können diese Metrik dann in einem Beispielbedienfeld **[!UICONTROL Dimensio
 
    Ihr Power BI Desktop sollte wie unten dargestellt aussehen.
 
-   ![Power BI Desktop Multiple Count Distinct table](assets/uc7-powerbi-final.png)
+   ![Power BI Desktop Multiple Count Distinct table](assets/uc7-powerbi-final.png){zoomable="yes"}
 
 >[!TAB Tableau-Desktop]
 
@@ -837,7 +837,7 @@ Sie können diese Metrik dann in einem Beispielbedienfeld **[!UICONTROL Dimensio
 
       Ihr Tableau-Desktop sollte wie unten dargestellt aussehen.
 
-      ![Tableau-Desktop-Rang-Filter mit mehreren Dimensionen](assets/uc7-tableau-data.png)
+      ![Tableau-Desktop-Rang-Filter mit mehreren Dimensionen](assets/uc7-tableau-data.png){zoomable="yes"}
 
 1. Wählen Sie im Kontextmenü der Registerkarte **[!UICONTROL Blatt 1]** die Option **[!UICONTROL Duplizieren]** aus, um ein zweites Blatt zu erstellen.
 1. Wählen Sie im Kontextmenü der Registerkarte **[!UICONTROL Blatt 1]** die Option **[!UICONTROL Umbenennen]** aus, um das Blatt in `Data` umzubenennen.
@@ -852,7 +852,7 @@ Sie können diese Metrik dann in einem Beispielbedienfeld **[!UICONTROL Dimensio
 
    Ihr Tableau-Desktop sollte wie unten dargestellt aussehen.
 
-   ![Tableau-Desktop-Rang-Filter mit mehreren Dimensionen](assets/uc7-tableau-card.png)
+   ![Tableau-Desktop-Rang-Filter mit mehreren Dimensionen](assets/uc7-tableau-card.png){zoomable="yes"}
 
 1. Wählen Sie die Registerkarte **[!UICONTROL Neues Dashboard]** (unten) aus, um eine neue Ansicht vom Typ **[!UICONTROL Dashboard 1]** zu erstellen. In der Ansicht **[!UICONTROL Dashboard 1]** :
    1. Ziehen Sie das Blatt **[!UICONTROL Karte]** aus dem Regal **[!UICONTROL Blätter]** und legen Sie es in die Ansicht **[!UICONTROL Dashboard 1]**, in der *Tabellen hier ablegen* gelesen wird.
@@ -860,7 +860,7 @@ Sie können diese Metrik dann in einem Beispielbedienfeld **[!UICONTROL Dimensio
 
    Ihre Ansicht **[!UICONTROL Dashboard 1]** sollte wie unten dargestellt aussehen.
 
-   ![Tableau-Desktop-Dashboard 1](assets/uc7-tableau-final.png)
+   ![Tableau-Desktop-Dashboard 1](assets/uc7-tableau-final.png){zoomable="yes"}
 
 >[!ENDTABS]
 
@@ -876,11 +876,11 @@ Sie möchten einen Datumsbereich verwenden, den Sie unter Customer Journey Analy
 
 Um einen Bericht mit einem Datumsbereich zu erstellen, richten Sie einen Datumsbereich in Customer Journey Analytics mit **[!UICONTROL Titel]** `Last Year 2023` ein.
 
-![Customer Journey Analytics Verwenden Sie Datumsbereichsnamen zum Filtern](assets/cja-daterange.png)
+![Customer Journey Analytics Verwenden Sie Datumsbereichsnamen zum Filtern](assets/cja-daterange.png){zoomable="yes"}
 
 Anschließend können Sie diesen Datumsbereich in einem Beispiel-Bedienfeld &quot;**[!UICONTROL Verwenden von Datumsbereichsnamen zum Filtern]**&quot;für den Anwendungsfall verwenden:
 
-![Customer Journey Analytics Unique Count Values ](assets/cja-using-date-range-filter-names-to-filter.png)
+![Customer Journey Analytics Unique Count Values ](assets/cja-using-date-range-filter-names-to-filter.png){zoomable="yes"}
 
 Beachten Sie, dass der in der Freiformtabellen-Visualisierung definierte Datumsbereich den auf das Bedienfeld angewendeten Datumsbereich überschreibt.
 
@@ -913,7 +913,7 @@ Beachten Sie, dass der in der Freiformtabellen-Visualisierung definierte Datumsb
 
    Die Tabelle wird mit dem angewendeten Filter **[!UICONTROL daterangeName]** aktualisiert. Ihr Power BI Desktop sollte wie unten dargestellt aussehen.
 
-   ![Power BI Desktop mit Datumsbereichsnamen zum Filtern](assets/uc8-powerbi-final.png)
+   ![Power BI Desktop mit Datumsbereichsnamen zum Filtern](assets/uc8-powerbi-final.png){zoomable="yes"}
 
 >[!TAB Tableau-Desktop]
 
@@ -928,7 +928,7 @@ Beachten Sie, dass der in der Freiformtabellen-Visualisierung definierte Datumsb
 
       Ihr Tableau-Desktop sollte wie unten dargestellt aussehen.
 
-      ![Tableau-Desktop-Rang-Filter mit mehreren Dimensionen](assets/uc8-tableau-final.png)
+      ![Tableau-Desktop-Rang-Filter mit mehreren Dimensionen](assets/uc8-tableau-final.png){zoomable="yes"}
 
 >[!ENDTABS]
 
@@ -944,11 +944,11 @@ Sie möchten einen vorhandenen Filter für die unter Customer Journey Analytics 
 
 Inspect den Filter, den Sie im Customer Journey Analytics verwenden möchten.
 
-![Customer Journey Analytics Verwenden Sie Filternamen, um zu filtern](assets/cja-fishing-products.png)
+![Customer Journey Analytics Verwenden Sie Filternamen, um zu filtern](assets/cja-fishing-products.png){zoomable="yes"}
 
 Anschließend können Sie diesen Filter in einem Beispiel-Bedienfeld &quot;**[!UICONTROL Verwenden von Datumsbereichsnamen zum Filtern]**&quot;für den Anwendungsfall verwenden:
 
-![Customer Journey Analytics Unique Count Values ](assets/cja-using-filter-names-to-filter.png)
+![Customer Journey Analytics Unique Count Values ](assets/cja-using-filter-names-to-filter.png){zoomable="yes"}
 
 +++
 
@@ -984,7 +984,7 @@ Es wird eine Visualisierung mit **[!UICONTROL Fehler beim Abrufen von Daten für
 
    Die Tabelle wird mit dem angewendeten Filter **[!UICONTROL filterName]** aktualisiert. Ihr Power BI Desktop sollte wie unten dargestellt aussehen.
 
-   ![Power BI Desktop mit Datumsbereichsnamen zum Filtern](assets/uc9-powerbi-final.png)
+   ![Power BI Desktop mit Datumsbereichsnamen zum Filtern](assets/uc9-powerbi-final.png){zoomable="yes"}
 
 
 >[!TAB Tableau-Desktop]
@@ -1002,7 +1002,7 @@ Es wird eine Visualisierung mit **[!UICONTROL Fehler beim Abrufen von Daten für
 
       Ihr Tableau-Desktop sollte wie unten dargestellt aussehen.
 
-      ![Tableau-Desktop-Rang-Filter mit mehreren Dimensionen](assets/uc9-tableau-final.png)
+      ![Tableau-Desktop-Rang-Filter mit mehreren Dimensionen](assets/uc9-tableau-final.png){zoomable="yes"}
 
 >[!ENDTABS]
 
@@ -1017,11 +1017,11 @@ Sie erstellen einen neuen Filter unter Customer Journey Analytics, der Produkte 
 
 Erstellen Sie einen neuen Filter mit **[!UICONTROL Titel]** `Hunting Products` im Customer Journey Analytics.
 
-![Customer Journey Analytics Verwenden von Dimension-Werten zum Filtern](assets/cja-hunting-products.png)
+![Customer Journey Analytics Verwenden von Dimension-Werten zum Filtern](assets/cja-hunting-products.png){zoomable="yes"}
 
 Sie können diesen Filter dann in einem Beispiel-Bedienfeld **[!UICONTROL Dimension Values To Filter]** für den Anwendungsfall verwenden:
 
-![Customer Journey Analytics Unique Count Values ](assets/cja-using-dimension-values-to-filter.png)
+![Customer Journey Analytics Unique Count Values ](assets/cja-using-dimension-values-to-filter.png){zoomable="yes"}
 
 +++
 
@@ -1058,7 +1058,7 @@ Es wird eine Visualisierung mit **[!UICONTROL Fehler beim Abrufen von Daten für
 
    Die Tabelle wird mit dem angewendeten Filter **[!UICONTROL filterName]** aktualisiert. Ihr Power BI Desktop sollte wie unten dargestellt aussehen.
 
-   ![Power BI Desktop mit Datumsbereichsnamen zum Filtern](assets/uc10-powerbi-final.png)
+   ![Power BI Desktop mit Datumsbereichsnamen zum Filtern](assets/uc10-powerbi-final.png){zoomable="yes"}
 
 
 
@@ -1078,7 +1078,7 @@ Es wird eine Visualisierung mit **[!UICONTROL Fehler beim Abrufen von Daten für
 
       Ihr Tableau-Desktop sollte wie unten dargestellt aussehen.
 
-      ![Tableau-Desktop-Rang-Filter mit mehreren Dimensionen](assets/uc10-tableau-final.png)
+      ![Tableau-Desktop-Rang-Filter mit mehreren Dimensionen](assets/uc10-tableau-final.png){zoomable="yes"}
 
 >[!ENDTABS]
 
@@ -1094,7 +1094,7 @@ Sie möchten einen Bericht zum Kaufumsatz und zu den Käufen für Produktnamen i
 
 Beispiel für ein Bedienfeld **[!UICONTROL Sortieren]** für den Anwendungsfall:
 
-![Customer Journey Analytics Sort panel](assets/cja-sort.png)
+![Customer Journey Analytics Sort panel](assets/cja-sort.png){zoomable="yes"}
 
 +++
 
@@ -1128,7 +1128,7 @@ Beispiel für ein Bedienfeld **[!UICONTROL Sortieren]** für den Anwendungsfall:
 
    Ihr Power BI Desktop sollte wie unten dargestellt aussehen.
 
-   ![Power BI Desktop mit Datumsbereichsnamen zum Filtern](assets/uc11-powerbi-final.png)
+   ![Power BI Desktop mit Datumsbereichsnamen zum Filtern](assets/uc11-powerbi-final.png){zoomable="yes"}
 
 Die von Power BI Desktop mithilfe der BI-Erweiterung ausgeführte Abfrage enthält keine `sort` -Anweisung. Das Fehlen einer `sort` -Anweisung bedeutet, dass die Sortierung clientseitig ausgeführt wird.
 
@@ -1234,7 +1234,7 @@ limit 1000001
 
       Ihr Tableau-Desktop sollte wie unten dargestellt aussehen.
 
-      ![Tableau-Desktop-Sortierung](assets/uc11-tableau-final.png)
+      ![Tableau-Desktop-Sortierung](assets/uc11-tableau-final.png){zoomable="yes"}
 
 Die von Tableau Desktop mit der BI-Erweiterung ausgeführte Abfrage enthält keine `sort` -Anweisung. Das Fehlen dieser `sort` -Anweisung bedeutet, dass die Sortierung clientseitig ausgeführt wird.
 
@@ -1260,7 +1260,7 @@ Sie möchten die fünf häufigsten Vorkommen von Produktnamen im Jahr 2023 melde
 
 Beispiel für den Bereich **[!UICONTROL Limit]** für den Anwendungsfall:
 
-![Customer Journey Analytics Limit panel](assets/cja-limit.png)
+![Customer Journey Analytics Limit panel](assets/cja-limit.png){zoomable="yes"}
 
 +++
 
@@ -1296,7 +1296,7 @@ Beispiel für den Bereich **[!UICONTROL Limit]** für den Anwendungsfall:
 
    Ihr Power BI Desktop sollte wie unten dargestellt aussehen.
 
-   ![Power BI Desktop mit Datumsbereichsnamen zum Filtern](assets/uc12-powerbi-final.png)
+   ![Power BI Desktop mit Datumsbereichsnamen zum Filtern](assets/uc12-powerbi-final.png){zoomable="yes"}
 
 Die von Power BI Desktop mit der BI-Erweiterung ausgeführte Abfrage enthält eine `limit` -Anweisung, nicht jedoch die erwartete. Die Begrenzung auf die fünf häufigsten Vorkommen wird vom Power BI Desktop mithilfe expliziter Produktnamensergebnisse erzwungen.
 
@@ -1407,7 +1407,7 @@ limit 1000001
 
          Ihr Tableau-Desktop sollte wie unten dargestellt aussehen.
 
-         ![Tableau-Desktop-Beschränkungen](assets/uc12-tableau-final.png)
+         ![Tableau-Desktop-Beschränkungen](assets/uc12-tableau-final.png){zoomable="yes"}
 
 Wie oben gezeigt, schlägt diese Abfrage, die von Tableau Desktop ausgeführt wird, bei der Definition eines Filters mit den fünf häufigsten Vorkommen nach Produktnamen fehl.
 
@@ -1489,12 +1489,12 @@ Power BI Desktop bietet benutzerdefinierte Umwandlungsfunktionen mit [DAX (Data 
 1. Wählen Sie product_name im Datenbereich aus.
 1. Wählen Sie in der Symbolleiste die Option Neue Spalte aus.
 1. Definieren Sie im Formeleditor eine neue Spalte mit dem Namen `product_name_lower`, z. B. `product_name_lower = LOWER('public.cc_data_view[product_name])`.
-   ![Power BI Desktop Transformation in Lower](assets/uc14-powerbi-transformation.png)
+   ![Power BI Desktop Transformation in Lower](assets/uc14-powerbi-transformation.png){zoomable="yes"}
 1. Stellen Sie sicher, dass Sie die neue Spalte product_name_lower im Datenbereich anstelle der Spalte product_name auswählen.
 1. Wählen Sie in der Tabellenvisualisierung Bericht als Tabelle aus ![Mehr](/help/assets/icons/More.svg) aus.
 
    Ihr Power BI Desktop sollte wie unten dargestellt aussehen.
-   ![Power BI Desktop Transformation Final](assets/uc14-powerbi-final.png)
+   ![Power BI Desktop Transformation Final](assets/uc14-powerbi-final.png){zoomable="yes"}
 
 Die benutzerdefinierte Transformation führt zu einer Aktualisierung von SQL-Abfragen. Siehe Verwendung der Funktion `lower` im SQL-Beispiel unten:
 
@@ -1562,7 +1562,7 @@ Tableau Desktop bietet benutzerdefinierte Umwandlungsfunktionen mit [berechneten
 
 1. Wählen Sie **[!UICONTROL Analyse]** > **[!UICONTROL Berechnetes Feld erstellen]** aus dem Hauptmenü.
    1. Definieren Sie **[!UICONTROL Kleinbuchstaben Produktname]** mit der Funktion `LOWER([Product Name])`.
-      ![Berechnetes Tableau-Feld](assets/uc14-tableau-calculated-field.png)
+      ![Berechnetes Tableau-Feld](assets/uc14-tableau-calculated-field.png){zoomable="yes"}
    1. Wählen Sie **[!UICONTROL OK]** aus.
 1. Wählen Sie das Blatt **[!UICONTROL Daten]** aus.
    1. Ziehen Sie **[!UICONTROL Produktname mit Kleinbuchstaben]** aus **[!UICONTROL Tabellen]** und legen Sie den Eintrag im Feld neben **[!UICONTROL Zeilen]** ab.
@@ -1571,7 +1571,7 @@ Tableau Desktop bietet benutzerdefinierte Umwandlungsfunktionen mit [berechneten
 
 Ihr Tableau-Desktop sollte wie unten dargestellt aussehen.
 
-![Tableau-Desktop nach der Umwandlung](assets/uc14-tableau-final.png)
+![Tableau-Desktop nach der Umwandlung](assets/uc14-tableau-final.png){zoomable="yes"}
 
 Die benutzerdefinierte Transformation führt zu einer Aktualisierung von SQL-Abfragen. Siehe Verwendung der Funktion `LOWER` im SQL-Beispiel unten:
 
@@ -1642,11 +1642,11 @@ Für die meisten Customer Journey Analytics-Visualisierungen bietet Power BI Des
 
 Power BI unterstützt den [Drillmodus](https://learn.microsoft.com/en-us/power-bi/consumer/end-user-drill), um detaillierte Details zu bestimmten Visualisierungen zu untersuchen. Im folgenden Beispiel analysieren Sie den Umsatz der Einkäufe für Produktkategorien. Im Kontextmenü einer Leiste, die eine Produktkategorie darstellt, können Sie **[!UICONTROL Drilldown durchführen]** auswählen.
 
-![Power BI-Drilldown](assets/uc15-powerbi-drilldown.png)
+![Power BI-Drilldown](assets/uc15-powerbi-drilldown.png){zoomable="yes"}
 
 Mit der Drilldown-Liste wird die Visualisierung mit dem Kaufumsatz für Produkte innerhalb der ausgewählten Produktkategorie aktualisiert.
 
-![Power BI-Drillup](assets/uc15-powerbi-drillup.png)
+![Power BI-Drillup](assets/uc15-powerbi-drillup.png){zoomable="yes"}
 
 Der Drilldown führt zu der folgenden SQL-Abfrage, die eine `WHERE` -Klausel verwendet:
 
@@ -1725,11 +1725,11 @@ Für die meisten Customer Journey Analytics-Visualisierungen bietet Tableau glei
 
 Tableau unterstützt den [Drillmodus](https://learn.microsoft.com/en-us/power-bi/consumer/end-user-drill) bis [Hierarchien](https://help.tableau.com/current/pro/desktop/en-us/qs_hierarchies.htm). Im folgenden Beispiel erstellen Sie eine Hierarchie, wenn Sie das Feld &quot;Produktname&quot;in Tabellen auswählen und es auf die Produktkategorie ziehen. Wählen Sie dann im Kontextmenü einer Leiste, die eine Produktkategorie darstellt, **[!UICONTROL + Drilldown]** aus.
 
-![Tableau-Drilldown](assets/uc15-tableau-drilldown.png)
+![Tableau-Drilldown](assets/uc15-tableau-drilldown.png){zoomable="yes"}
 
 Mit der Drilldown-Liste wird die Visualisierung mit dem Kaufumsatz für Produkte innerhalb der ausgewählten Produktkategorie aktualisiert.
 
-![Tableau-Drillup](assets/uc15-tableau-drillup.png)
+![Tableau-Drillup](assets/uc15-tableau-drillup.png){zoomable="yes"}
 
 Der Drilldown führt zur folgenden SQL-Abfrage, die eine GROUP BY-Klausel verwendet:
 
@@ -1745,11 +1745,11 @@ GROUP BY 1,
 
 Die Abfrage beschränkt die Ergebnisse **nicht** auf die ausgewählte Produktkategorie. Nur die Visualisierung zeigt die ausgewählte Produktkategorie an.
 
-![Tableau-Drillup](assets/uc15-tableau-drillup2.png)
+![Tableau-Drillup](assets/uc15-tableau-drillup2.png){zoomable="yes"}
 
 Alternativ können Sie ein Drilldown-Dashboard erstellen, bei dem eine Visualisierung das Ergebnis der Auswahl in einer anderen Visualisierung ist. Im folgenden Beispiel wird die Visualisierung **[!UICONTROL Produktkategorien]** als Filter verwendet, um die Tabelle **[!UICONTROL Produktnamen]** zu aktualisieren. Dieser Visualisierungsfilter ist nur Client-seitig und führt nicht zu einer zusätzlichen SQL-Abfrage.
 
-![Visualisierungsfilter für Tableau](assets/uc15-tableau-visualizationfilter.png)
+![Visualisierungsfilter für Tableau](assets/uc15-tableau-visualizationfilter.png){zoomable="yes"}
 
 
 >[!ENDTABS]
