@@ -6,9 +6,9 @@ solution: Customer Journey Analytics
 hidefromtoc: true
 hide: true
 exl-id: 262d5f15-16cb-4851-a769-7dbd205b2f81
-source-git-commit: d0507dab387b9174aa3a119bdb22139edd0e8ca4
+source-git-commit: 6f264ffd30bb1308f95a913a16fb587f36d95a04
 workflow-type: tm+mt
-source-wordcount: '1596'
+source-wordcount: '1637'
 ht-degree: 3%
 
 ---
@@ -79,7 +79,7 @@ See [Access control](/help/technotes/access-control.md#access-control) for more 
 
 4. Stellen Sie sicher, dass die ausgewählte Datenansicht für das Bedienfeld die Datenansicht ist, die für die Verwendung des AI Assistant für Alpha-Tests aktiviert wurde (kontaktieren Sie den Alpha-Flackenkanal, wenn Sie sich nicht sicher sind).
 
-5. Klicken Sie oben rechts auf das Chat-Symbol für den AI-Assistenten.
+5. Klicken Sie oben rechts auf das Chat-Symbol für den AI-Assistenten. Hinweis: Wenn das Chat-Symbol oben rechts nicht angezeigt wird, wenden Sie sich an Ihren Administrator und bitten Sie ihn, die [folgenden Anweisungen](https://experienceleague.adobe.com/en/docs/analytics-platform/using/ai-assistant#feature-access) zu folgen, um den &quot;KI-Assistenten: Produktwissen&quot;und &quot;KI-Assistent: Datenanalyse&quot;in Admin Console zu aktivieren.
 
    ![Symbol &quot;KI-Assistent&quot;](/help/assets/ai-asst-icon.png)
 
