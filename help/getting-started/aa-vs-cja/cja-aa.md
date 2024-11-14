@@ -5,7 +5,7 @@ exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: Basics
 role: User
-source-git-commit: 1cf7ae6635f51f0ca06cbc235032525e3d9b3fec
+source-git-commit: 221b73ef8dc0f7d28d13b8571955792367519849
 workflow-type: tm+mt
 source-wordcount: '2320'
 ht-degree: 99%
@@ -41,7 +41,7 @@ In der folgenden Tabelle sind Funktionen aufgeführt, die in Customer Journey An
 
 ## Vollständig unterstützte Adobe Analytics-Funktionen/-Komponenten {#full-support}
 
-| Adobe Analytics-Funktion | Hinweise zur Unterstützung |
+| Adobe Analytics-Funktion | Hinweise zur CJA-Unterstützung |
 | --- | --- |
 | **Anomalieerkennung** | Vollständige Unterstützung |
 | **Attribution IQ** | Vollständige Unterstützung |
@@ -78,7 +78,7 @@ In der folgenden Tabelle sind Funktionen aufgeführt, die in Customer Journey An
 
 | Funktion | Hinweise |
 | --- | --- |
-| **Advertising Cloud** | Sie können [ historische Daten für AMO-IDs und EF-IDs zur Verwendung in Adobe Customer Journey Analytics erfassen](https://experienceleague.adobe.com/en/docs/advertising/integrations/analytics/planning/rvars-to-evars) |
+| **Advertising Cloud** | Sie können [ historische Daten für AMO-IDs und EF-IDs zur Verwendung in Customer Journey Analytics](https://experienceleague.adobe.com/en/docs/advertising/integrations/analytics/planning/rvars-to-evars) erfassen. |
 | **Warnhinweise** | Die [Verwendung von Warnhinweisen in Customer Journey Analytics](/help/components/c-intelligent-alerts/alerts-feature-comparison.md) ist nahezu identisch mit der Verwendung von Warnhinweisen in Adobe Analytics. <p>Aufgrund des Zeitpunkts der Datenerfassung in Customer Journey Analytics sind stündliche Warnhinweise jedoch nicht verfügbar. In Customer Journey Analytics können tägliche, wöchentliche oder monatliche Warnhinweise konfiguriert werden.</p> |
 | **Analytics for Target (A4T)** | Die [Integration zwischen Adobe Customer Journey Analytics und Target](https://experienceleague.adobe.com/de/docs/target/using/integrate/cja/target-reporting-in-cja) bietet Ihrem Optimierungsprogramm leistungsstarke Tools für Analysen und Zeitersparnisse. |
 | **Zielgruppenveröffentlichung** | Wird unterstützt, sofern diese Funktion mit den Adobe-Produkten Customer Data Platform oder Journey Optimizer lizenziert wurde. [Zielgruppenveröffentlichung](/help/components/audiences/audiences-overview.md) sendet Zielgruppen an das Echtzeit-Kundenprofil in Experience Platform. |
