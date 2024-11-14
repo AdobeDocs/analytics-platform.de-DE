@@ -6,9 +6,10 @@ solution: Customer Journey Analytics
 feature: Basics
 hide: true
 hidefromtoc: true
-source-git-commit: 1e4c14334da54a5a6e4a0f36b3538c6e4d1a0b6f
+exl-id: 2a74da97-61cb-4c98-949b-3fc428839d70
+source-git-commit: ef6afb2872b88c82801ceb279dd757e6e1f5e78c
 workflow-type: tm+mt
-source-wordcount: '319'
+source-wordcount: '332'
 ht-degree: 5%
 
 ---
@@ -47,3 +48,4 @@ Um bei Verwendung des Experience Platform Web SDK Marketingkanäle in Customer J
 
    Ihr neues abgeleitetes Feld wird zum Container Abgeleitete Felder > als Teil der Schemafelder in der linken Leiste Ihrer Datenansicht hinzugefügt.
 
+1. Führen Sie die [empfohlenen Aktualisierungsschritte](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) oder die dynamisch generierten Aktualisierungsschritte](https://gigazelle.github.io/cja-ttv/) aus.[

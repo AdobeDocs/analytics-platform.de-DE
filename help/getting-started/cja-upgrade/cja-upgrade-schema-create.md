@@ -6,14 +6,15 @@ solution: Customer Journey Analytics
 feature: Basics
 hide: true
 hidefromtoc: true
-source-git-commit: 33cfff3f675fc03c3444531e8426cb806cdf8559
+exl-id: 902e5890-f970-4f1a-b091-9c3e51a987db
+source-git-commit: ce19cf00d70220b6d7dcdfaeb1d4c9ec5c14e5dd
 workflow-type: tm+mt
-source-wordcount: '987'
-ht-degree: 52%
+source-wordcount: '1072'
+ht-degree: 48%
 
 ---
 
-# Erstellen eines XDM-Schemas zur Verwendung mit Customer Journey Analytics
+# Erstellen eines XDM-Schemas zur Verwendung mit Ihrer Customer Journey Analytics Web SDK-Implementierung
 
 >[!NOTE]
 > 
@@ -39,7 +40,7 @@ So erstellen Sie ein Schema:
 
 1. Wählen Sie **[!UICONTROL Schema erstellen]** aus.
 
-1. Im Schritt Klasse auswählen des Assistenten Schema erstellen :
+1. Wählen Sie im Schritt **[!UICONTROL Select a class]** des Assistenten Schema erstellen Folgendes:
 
    1. Wählen Sie **[!UICONTROL Erlebnisereignis]** aus.
 
@@ -60,11 +61,11 @@ So erstellen Sie ein Schema:
 
    1. Wählen Sie **[!UICONTROL Beenden]** aus.
 
-1. Auf der Registerkarte [!UICONTROL **Struktur**] Ihres Schemas:
+1. Fügen Sie alle Feldergruppen hinzu, die alle Felder enthalten, die Sie in Ihr Schema aufnehmen möchten.
+
+   Feldergruppen sind wiederverwendbare Sammlungen von Objekten und Attributen, mit denen Sie Ihr Schema einfach erweitern können.
 
    1. Wählen Sie im Abschnitt **[!UICONTROL Feldgruppen]** die Option **[!UICONTROL + Hinzufügen]** aus.
-
-      Feldergruppen sind wiederverwendbare Sammlungen von Objekten und Attributen, mit denen Sie Ihr Schema einfach erweitern können.
 
       ![Hinzufügen der Feldergruppe](assets/add-field-group-button.png)
 
@@ -78,7 +79,19 @@ So erstellen Sie ein Schema:
 
       Wählen Sie **[!UICONTROL Zurück]** aus, um die Vorschau zu schließen.
 
+   1. (Optional) Wählen Sie alle zusätzlichen Feldergruppen aus, die Sie einbeziehen möchten.
+
    1. Wählen Sie **[!UICONTROL Feldergruppen hinzufügen]** aus.
+
+1. (Optional) Wenn Sie benutzerdefinierte Felder haben, die Sie in Ihr Schema aufnehmen möchten, erstellen Sie eine benutzerdefinierte Feldergruppe und fügen Sie die benutzerdefinierten Felder zur Feldergruppe hinzu.
+
+   1. Wählen Sie im Abschnitt **[!UICONTROL Feldgruppen]** die Option **[!UICONTROL + Hinzufügen]** aus.
+
+      ![Hinzufügen der Feldergruppe](assets/add-field-group-button.png)
+
+   1. Wählen Sie im Dialogfeld [!UICONTROL Feldergruppen hinzufügen] die Option **[!UICONTROL Neue Feldergruppe erstellen]**.
+
+   1. Geben Sie einen Anzeigenamen und eine optionale Beschreibung an und wählen Sie dann **[!UICONTROL Feldgruppen hinzufügen]** aus.
 
 1. Wählen Sie **[!UICONTROL +]** neben Ihrem Schemanamen im Bedienfeld [!UICONTROL Struktur] aus.
 
@@ -147,4 +160,3 @@ So erstellen Sie ein Schema:
    Weitere Informationen zum Hinzufügen und Entfernen von Feldergruppen und einzelnen Feldern zu einem Schema finden Sie unter [Erstellen und Bearbeiten von Schemata über die Benutzeroberfläche](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html?lang=de).
 
 1. Führen Sie die [empfohlenen Aktualisierungsschritte](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) oder die dynamisch generierten Aktualisierungsschritte](https://gigazelle.github.io/cja-ttv/) aus.[
-
