@@ -5,10 +5,10 @@ exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: Basics
 role: User
-source-git-commit: 6820adc70412f6abeae81bf8389227999d13f0d5
+source-git-commit: 1cf7ae6635f51f0ca06cbc235032525e3d9b3fec
 workflow-type: tm+mt
-source-wordcount: '2306'
-ht-degree: 98%
+source-wordcount: '2320'
+ht-degree: 99%
 
 ---
 
@@ -30,7 +30,7 @@ In der folgenden Tabelle sind Funktionen aufgeführt, die in Customer Journey An
 | **Verbesserte Sicherheits- und Datenschutzoptionen – HIPAA-Fähigkeit** | Customer Journey Analytics ist HIPAA-fähig und bietet [zusätzliche Sicherheitsoptionen](/help/privacy/cmk.md) für die Einhaltung von Vorschriften. Adobe Analytics ist nicht HIPAA-fähig. |
 | **Experimentanalyse** | Customer Journey Analytics kann [Lift und Konfidenz jedes Experiments aus jeder Datenquelle bewerten](/help/analysis-workspace/c-panels/experimentation.md), die als Teil einer Verbindung definiert wurde. Diese Auswertung ermöglicht Ihnen, die kausalen Zusammenhänge zwischen Kundeninteraktionen zu verstehen, die sich über alle Kanäle erstrecken. Analytics ist auf die Experimentanalyse über A4T beschränkt. |
 | **Prognose** | Die [Prognose](/help/analysis-workspace/c-forecast/forecasting.md) ist eine KI/ML-Funktion, die eine statistische Prognose für zeitreihenbezogene Daten enthält, die auf den bereits in Customer Journey Analytics vorhandenen historischen Daten basiert. Prognosen können in Freiformtabellen und Liniendiagrammvisualisierungen angezeigt werden. |
-| **Geführte Analyse** | [Geführte Analyse](/help/guided-analysis/overview.md) ermöglicht es Benutzern, durch geleitete Workflows, die auf den kanalübergreifenden Daten von Customer Journey Analytics aufbauen, hochwertige Daten und Einblicke über die Journey des Kunden selbst bereitzustellen. |
+| **Geführte Analyse** | Mit [geführten Analysen](/help/guided-analysis/overview.md) können Benutzende hochwertige Daten und Erkenntnisse zur Customer Journey mithilfe geführter Workflows selbst bereitstellen, die auf den kanalübergreifenden Daten von Customer Journey Analytics basieren. |
 | **Intelligente Untertitel** | Intelligente Untertitel verwenden fortschrittliches maschinelles Lernen und generative KI, um wertvolle Einblicke in natürliche Sprachen für Workspace-Visualisierungen bereitzustellen. Die erste Version bietet automatisch generierte Einblicke für die Visualisierung [Linie](/help/analysis-workspace/visualizations/line.md). |
 | **Umwandlungen zum Zeitpunkt der Berichtserstellung** | [Datenansichten](/help/data-views/data-views.md) in Customer Journey Analytics ermöglichen eine weiter gehende Interpretation von Daten aus einer Verbindung. Sie können Daten ändern oder entfernen, ohne Ihre Implementierung zu ändern, Teilzeichenfolgen verwenden, um Dimensionen zu bearbeiten, Metriken aus beliebigen Werten erstellen oder Teilereignisse filtern. Alle diese Umwandlungen erfolgen zerstörungsfrei. Adobe Analytics bietet begrenzte Möglichkeiten durch Virtual Report Suites und benutzerdefinierte Sitzungslängen. |
 | **BI-Erweiterung** | Die [BI-Erweiterung](https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-usecases/data-export/bi-extension) ermöglicht Ihnen, CJA direkt mit gängigen BI-Visualisierungs-Tools wie PowerBI oder Tableau zu verbinden. Durch die Verwendung dieser Erweiterung können Sie Ihre BI-Berichte exakt mit der Anzeige in Analysis Workspace und anderen CJA-Reporting-Schnittstellen abstimmen. Auf diese Weise können Sie BI-Berichte für CJA wesentlich einfacher abrufen, ohne Berichte/Metriken aus Rohdaten neu erstell zu müssen. |
@@ -78,6 +78,7 @@ In der folgenden Tabelle sind Funktionen aufgeführt, die in Customer Journey An
 
 | Funktion | Hinweise |
 | --- | --- |
+| **Advertising Cloud** | Sie können [ historische Daten für AMO-IDs und EF-IDs zur Verwendung in Adobe Customer Journey Analytics erfassen](https://experienceleague.adobe.com/en/docs/advertising/integrations/analytics/planning/rvars-to-evars) |
 | **Warnhinweise** | Die [Verwendung von Warnhinweisen in Customer Journey Analytics](/help/components/c-intelligent-alerts/alerts-feature-comparison.md) ist nahezu identisch mit der Verwendung von Warnhinweisen in Adobe Analytics. <p>Aufgrund des Zeitpunkts der Datenerfassung in Customer Journey Analytics sind stündliche Warnhinweise jedoch nicht verfügbar. In Customer Journey Analytics können tägliche, wöchentliche oder monatliche Warnhinweise konfiguriert werden.</p> |
 | **Analytics for Target (A4T)** | Die [Integration zwischen Adobe Customer Journey Analytics und Target](https://experienceleague.adobe.com/de/docs/target/using/integrate/cja/target-reporting-in-cja) bietet Ihrem Optimierungsprogramm leistungsstarke Tools für Analysen und Zeitersparnisse. |
 | **Zielgruppenveröffentlichung** | Wird unterstützt, sofern diese Funktion mit den Adobe-Produkten Customer Data Platform oder Journey Optimizer lizenziert wurde. [Zielgruppenveröffentlichung](/help/components/audiences/audiences-overview.md) sendet Zielgruppen an das Echtzeit-Kundenprofil in Experience Platform. |
@@ -127,9 +128,6 @@ In der folgenden Tabelle sind Funktionen aufgeführt, die in Customer Journey An
 | Funktion | Hinweise |
 | --- | --- |
 | **Activity Map** | Unterstützung ist noch nicht geplant. |
-| **Advertising Cloud** | Unterstützung ist noch nicht geplant. |
-
-{style="table-layout:auto"}
 
 ## Keine Unterstützung geplant {#never}
 
