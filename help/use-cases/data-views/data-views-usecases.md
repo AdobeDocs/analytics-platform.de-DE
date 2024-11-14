@@ -5,10 +5,10 @@ exl-id: 6ecbae45-9add-4554-8d83-b06ad016fea9
 solution: Customer Journey Analytics
 feature: Data Views
 role: User
-source-git-commit: 62779154e889158c62e4713a951fb3633c16d5e1
+source-git-commit: 629935d66b0f2c5731806a68cc2fcda5fb11fc9a
 workflow-type: tm+mt
-source-wordcount: '1346'
-ht-degree: 35%
+source-wordcount: '1372'
+ht-degree: 33%
 
 ---
 
@@ -20,9 +20,13 @@ Diese Anwendungsbeispiele veranschaulichen die Flexibilität und Leistungsfähig
 
 Weitere Informationen finden Sie im Anwendungsbeispiel [Bindungsdimensionsmetriken verwenden](binding-dimensions-metrics.md) .
 
-## Zusammenfassungsdaten verwenden
+## Verwenden von Zusammenfassungsdaten
 
 Weitere Informationen finden Sie im Anwendungsbeispiel [Zusammenfassungsdaten verwenden](summary-data.md) .
+
+## Anwendungsfälle für BI-Erweiterungen
+
+In den Nutzungsszenarios für die [BI-Erweiterung](bi-extension-usecases.md) erfahren Sie, wie Sie eine Reihe von Anwendungsfällen mit der Customer Journey Analytics BI-Erweiterung durchführen.
 
 ## Erstellen einer Metrik aus einem Zeichenfolgenschemafeld {#string}
 
@@ -35,7 +39,7 @@ Beim Erstellen einer Datenansicht können Sie beispielsweise eine Metrik vom Typ
 1. Öffnen Sie den Abschnitt **[!UICONTROL Werte einschließen/ausschließen]** und geben Sie Folgendes an:
    1. Aktivieren Sie **[!UICONTROL Setzen Sie die Werte zum Ausschließen von Elementen ein]**.
    1. Wählen Sie **[!UICONTROL Wenn alle Kriterien erfüllt sind]** aus **[!UICONTROL Übereinstimmung]**.
-   1. Geben Sie `confirmation` an. Dieser Text für &quot;page_title&quot;zeigt an, dass diese Seite mit der Platzierung einer Bestellung verbunden ist. Nachdem Sie alle Seitentitel überprüft haben, bei denen diese Kriterien erfüllt sind, wird für jede Instanz ein `1` gezählt. Das Ergebnis ist eine neue Metrik (keine berechnete Metrik). Eine Metrik mit eingeschlossenen/ausgeschlossenen Werten kann überall dort verwendet werden, wo auch jede andere Metrik eingesetzt werden kann. Sie funktioniert mit Attribution IQ, Filtern und überall sonst, wo Sie Standardmetriken verwenden können.
+   1. Geben Sie `confirmation` an. Dieser Text für &quot;page_title&quot;zeigt an, dass diese Seite mit der Platzierung einer Bestellung verbunden ist. Nachdem Sie alle Seitentitel überprüft haben, bei denen diese Kriterien erfüllt sind, wird für jede Instanz ein `1` gezählt. Das Ergebnis ist eine neue Metrik (keine berechnete Metrik). Eine Metrik, die eingeschlossene/ausgeschlossene Werte enthält, kann überall dort verwendet werden, wo auch andere Metriken verwendet werden können. Sie funktioniert mit Attribution IQ, Filtern und überall sonst, wo Sie Standardmetriken verwenden können.
 
    ![Dimension zu Metrik](../assets/string-to-metric.gif){width=100%}
 1. Sie können darüber hinaus ein Zuordnungsmodell für diese Metrik angeben, beispielsweise [!UICONTROL Letztkontakt] mit einem [!UICONTROL Lookback-Fenster] von [!UICONTROL Sitzung].

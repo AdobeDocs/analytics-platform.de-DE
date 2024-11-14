@@ -4,9 +4,9 @@ description: Listet Inhaltsaktualisierungen für Dokumentation zu Customer Journ
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: a8d983255e3922bd619b614acedd21f66cc563b9
+source-git-commit: 5f02b6eff63f7efcfbec586186506f2c50ec52d7
 workflow-type: tm+mt
-source-wordcount: '4195'
+source-wordcount: '4216'
 ht-degree: 98%
 
 ---
@@ -20,6 +20,7 @@ Die folgenden Aktualisierungen wurden seit der ersten Erstellung der Customer Jo
 | Funktion | Beschreibung |
 | --- | --- |
 | **November 2024** | |
+| Anwendungsfälle für BI-Erweiterungen | Dokumentation zu mehreren Anwendungsfällen für die [BI-Erweiterung](/help/use-cases/data-views/bi-extension-usecases.md) für BI-Tools wie Power BI Desktop und Tableau Desktop. |
 | Zuordnen und Datenschutzanfragen | Es wurde ein Hinweis zu [bevorstehenden Änderungen im Auftrennungsprozess](/help/stitching/faq.md#frequently-asked-questions) hinzugefügt, die das Ergebnis von Datenschutzanfragen sind. |
 | **Oktober 2024** | |
 | Gemeinsam verwendete Geräte | Es wurde ein [Anwendungsfall-Artikel](/help/use-cases/stitching/shared-devices.md) hinzugefügt, der Kontext auf gemeinsam genutzten Geräten bietet, wie Daten von freigegebenen Geräten mithilfe des Stitching verarbeitet und gemindert werden können und wie die Belichtung freigegebener Geräte in Ihren Daten mithilfe von Query Service verstanden werden kann. |

@@ -4,12 +4,10 @@ description: Mehrere Anwendungsfälle, die zeigen, wie die BI-Erweiterung in ver
 solution: Customer Journey Analytics
 feature: Data Views
 role: User
-hide: true
-hidefromtoc: true
 exl-id: 07db28b8-b688-4a0c-8fb3-28a124342d25
-source-git-commit: d6d6777f3d40a979eefecea6ab6d4bd818be2401
+source-git-commit: 5f02b6eff63f7efcfbec586186506f2c50ec52d7
 workflow-type: tm+mt
-source-wordcount: '9736'
+source-wordcount: '9747'
 ht-degree: 1%
 
 ---
@@ -260,8 +258,7 @@ Ein Beispiel für den Bereich **[!UICONTROL Täglicher Trend]** für den Anwendu
 
    1. Ziehen Sie **[!UICONTROL Daterangeday]** aus der Liste **[!UICONTROL Tabellen]** in den Bereich **[!UICONTROL Daten]** und legen Sie den Eintrag im Feld neben **[!UICONTROL Spalten]** ab.
       * Wählen Sie **[!UICONTROL Tag]** aus dem Dropdown-Menü **[!UICONTROL Daterangeday]** aus, damit der Wert auf **[!UICONTROL TAG(Daterangeday)]** aktualisiert wird.
-   1. Ziehen Sie **[!UICONTROL Vorfälle]** aus der Liste **[!UICONTROL Tabellen (*Messnamen*)]** in den Bereich **[!UICONTROL Daten]** und legen Sie den Eintrag im Feld neben **[!UICONTROL Zeilen]** ab.
-      * Die Werte werden automatisch in **[!UICONTROL SUM(Vorfälle)]** konvertiert.
+   1. Ziehen Sie **[!UICONTROL Vorfälle]** aus der Liste **[!UICONTROL Tabellen (*Messnamen*)]** in den Bereich **[!UICONTROL Daten]** und legen Sie den Eintrag im Feld neben **[!UICONTROL Zeilen]** ab. Der Wert wird automatisch in **[!UICONTROL SUM(Vorfälle)]** konvertiert.
    1. Ändern Sie **[!UICONTROL Standard]** in **[!UICONTROL Gesamte Ansicht]** aus dem Dropdown-Menü **[!UICONTROL Anpassen]** in der Symbolleiste.
 
       Ihr Tableau-Desktop sollte wie unten dargestellt aussehen.
@@ -330,8 +327,7 @@ Ein Beispiel für den Bereich **[!UICONTROL Stündlicher Trend]** für den Anwen
 
    1. Ziehen Sie **[!UICONTROL Daterangehour]** aus der Liste **[!UICONTROL Tabellen]** in den Bereich **[!UICONTROL Daten]** und legen Sie den Eintrag im Feld neben **[!UICONTROL Spalten]** ab.
       * Wählen Sie **[!UICONTROL Mehr]** > **[!UICONTROL Stunden]** aus dem Dropdown-Menü **[!UICONTROL Daterangeday]** aus, damit der Wert auf **[!UICONTROL STUNDE(Daterangeday)]** aktualisiert wird.
-   1. Ziehen Sie **[!UICONTROL Vorfälle]** aus der Liste **[!UICONTROL Tabellen (*Messnamen*)]** in den Bereich **[!UICONTROL Daten]** und legen Sie den Eintrag im Feld neben **[!UICONTROL Zeilen]** ab.
-      * Die Werte werden automatisch in **[!UICONTROL SUM(Vorfälle)]** konvertiert.
+   1. Ziehen Sie **[!UICONTROL Vorfälle]** aus der Liste **[!UICONTROL Tabellen (*Messnamen*)]** in den Bereich **[!UICONTROL Daten]** und legen Sie den Eintrag im Feld neben **[!UICONTROL Zeilen]** ab. Der Wert wird automatisch in **[!UICONTROL SUM(Vorfälle)]** konvertiert.
    1. Ändern Sie **[!UICONTROL Standard]** in **[!UICONTROL Gesamte Ansicht]** aus dem Dropdown-Menü **[!UICONTROL Anpassen]** in der Symbolleiste.
 
       Ihr Tableau-Desktop sollte wie unten dargestellt aussehen.
@@ -431,8 +427,7 @@ Ein Beispiel für den Bereich **[!UICONTROL Monatlicher Trend]** für den Anwend
 
    1. Ziehen Sie **[!UICONTROL Daterangeday]** aus der Liste **[!UICONTROL Tabellen]** in den Bereich **[!UICONTROL Daten]** und legen Sie den Eintrag im Feld neben **[!UICONTROL Spalten]** ab.
       * Wählen Sie **[!UICONTROL MONTH]** aus dem Dropdown-Menü **[!UICONTROL Daterangeday]** aus, damit der Wert auf **[!UICONTROL MONTH(Daterangeday)]** aktualisiert wird.
-   1. Ziehen Sie **[!UICONTROL Vorfälle]** aus der Liste **[!UICONTROL Tabellen (*Messnamen*)]** in den Bereich **[!UICONTROL Daten]** und legen Sie den Eintrag im Feld neben **[!UICONTROL Zeilen]** ab.
-      * Die Werte werden automatisch in **[!UICONTROL SUM(Vorfälle)]** konvertiert.
+   1. Ziehen Sie **[!UICONTROL Vorfälle]** aus der Liste **[!UICONTROL Tabellen (*Messnamen*)]** in den Bereich **[!UICONTROL Daten]** und legen Sie den Eintrag im Feld neben **[!UICONTROL Zeilen]** ab. Der Wert wird automatisch in **[!UICONTROL SUM(Vorfälle)]** konvertiert.
    1. Ändern Sie **[!UICONTROL Standard]** in **[!UICONTROL Gesamte Ansicht]** aus dem Dropdown-Menü **[!UICONTROL Anpassen]** in der Symbolleiste.
 
       Ihr Tableau-Desktop sollte wie unten dargestellt aussehen.
@@ -556,10 +551,8 @@ Beispiel für ein Bedienfeld **[!UICONTROL Einzelne Dimension mit Rangansicht]**
       ![Tableau-Desktop-Filter](assets/uc5-tableau-filter.png){zoomable="yes"}
 
    1. Ziehen Sie **[!UICONTROL Produktname]** aus der Liste **[!UICONTROL Tabellen]** in den Bereich **[!UICONTROL Daten]** und legen Sie den Eintrag im Feld neben **[!UICONTROL Zeilen]** ab.
-   1. Ziehen Sie **[!UICONTROL Käufe]** aus der Liste **[!UICONTROL Tabellen (*Bewertungsnamen*)]** und legen Sie den Eintrag im Bereich **[!UICONTROL Daten]** ab und legen Sie ihn im Feld neben **[!UICONTROL Zeilen]** ab.
-      * Die Werte werden automatisch in **[!UICONTROL SUM(Purchases)]** konvertiert.
-   1. Ziehen Sie den Eintrag **[!UICONTROL Einkaufsumsatz]** aus der Liste **[!UICONTROL Tabellen (*Messnamen*)]** in den Bereich **[!UICONTROL Daten]** und legen Sie den Eintrag im Feld neben **[!UICONTROL Spalten]** und links von **[!UICONTROL SUM(Einkäufe)]** ab.
-      * Die Werte werden automatisch in **[!UICONTROL SUM(Einkaufsumsatz)]** konvertiert.
+   1. Ziehen Sie **[!UICONTROL Käufe]** aus der Liste **[!UICONTROL Tabellen (*Bewertungsnamen*)]** und legen Sie den Eintrag im Bereich **[!UICONTROL Daten]** ab und legen Sie ihn im Feld neben **[!UICONTROL Zeilen]** ab. Der Wert wird automatisch in **[!UICONTROL SUM(Purchases)]** konvertiert.
+   1. Ziehen Sie den Eintrag **[!UICONTROL Einkaufsumsatz]** aus der Liste **[!UICONTROL Tabellen (*Messnamen*)]** in den Bereich **[!UICONTROL Daten]** und legen Sie den Eintrag im Feld neben **[!UICONTROL Spalten]** und links von **[!UICONTROL SUM(Einkäufe)]** ab. Der Wert wird automatisch in **[!UICONTROL SUM(Einkaufsumsatz)]** konvertiert.
    1. Um beide Diagramme in absteigender Reihenfolge des Kaufumsatzes zu sortieren, bewegen Sie den Mauszeiger über den Titel **[!UICONTROL Kaufumsatz]** und wählen Sie das Sortiersymbol aus.
    1. Um die Anzahl der Einträge in den Diagrammen zu begrenzen, wählen Sie **[!UICONTROL SUM(Purchase Revenue)]** in **[!UICONTROL Zeilen]** und wählen Sie im Dropdown-Menü **[!UICONTROL Filter]** aus.
    1. Wählen Sie im Dialogfeld **[!UICONTROL Filter \[Kaufumsatz\]]** die Option **[!UICONTROL Wertebereich]** aus und geben Sie die entsprechenden Werte ein. Beispiel: `1,000,000` - `2,000,000`. Wählen Sie **[!UICONTROL Apply]** und **[!UICONTROL OK]** aus.
@@ -744,8 +737,8 @@ Beispiel für das Bedienfeld **[!UICONTROL Mehrere Dimensionen mit Rangansicht]*
 
 1. Wählen Sie die Registerkarte **[!UICONTROL Neues Dashboard]** (unten) aus, um eine neue Ansicht vom Typ **[!UICONTROL Dashboard 1]** zu erstellen. In der Ansicht **[!UICONTROL Dashboard 1]** :
    1. Ziehen Sie das Blatt **[!UICONTROL Kategorie]** aus dem Regal **[!UICONTROL Blätter]** und legen Sie es in die Ansicht **[!UICONTROL Dashboard 1]**, in der *Tabellen hier ablegen* gelesen wird.
-   1. Ziehen Sie das Blatt **[!UICONTROL Treemap]** aus dem Regal **[!UICONTROL Tabellen]** unter das Blatt **[!UICONTROL Kategorie]** und legen Sie es in die Ansicht **[!UICONTROL Dashboard 1]**.
-   1. Ziehen Sie das Blatt **[!UICONTROL Daten]** aus dem Regal **[!UICONTROL Tabellen]** unter das Blatt **[!UICONTROL Treemap]** und legen Sie es in die Ansicht **[!UICONTROL Dashboard 1]**.
+   1. Ziehen Sie das Blatt **[!UICONTROL Treemap]** aus dem Regal **[!UICONTROL Tabellen]** unter das Blatt **[!UICONTROL Kategorie]** und legen Sie es in der Ansicht **[!UICONTROL Dashboard 1]** ab.
+   1. Ziehen Sie das Blatt **[!UICONTROL Daten]** aus dem Regal **[!UICONTROL Tabellen]** unter das Blatt **[!UICONTROL Treemap]** und legen Sie es in der Ansicht **[!UICONTROL Dashboard 1]** ab.
    1. Ändern Sie die Größe der einzelnen Blätter in der Ansicht.
 
    Ihre Ansicht **[!UICONTROL Dashboard 1]** sollte wie unten dargestellt aussehen.
@@ -759,7 +752,7 @@ Beispiel für das Bedienfeld **[!UICONTROL Mehrere Dimensionen mit Rangansicht]*
 
 ## Zählen von eindeutigen Dimensionswerten
 
-Sie möchten die eindeutige Anzahl der Produktnamen erhalten, die im Januar 2023 gemeldet wurden.
+In diesem Anwendungsfall möchten Sie die eindeutige Anzahl der Produktnamen abrufen, die im Januar 2023 gemeldet wurden.
 
 +++ Customer Journey Analytics
 
@@ -850,7 +843,7 @@ Alternativ können Sie die Funktion count verwenden, die sich von Power BI unter
 
 1. Wählen Sie die Registerkarte **[!UICONTROL Neues Dashboard]** (unten) aus, um eine neue Ansicht vom Typ **[!UICONTROL Dashboard 1]** zu erstellen. In der Ansicht **[!UICONTROL Dashboard 1]** :
    1. Ziehen Sie das Blatt **[!UICONTROL Karte]** aus dem Regal **[!UICONTROL Blätter]** und legen Sie es in die Ansicht **[!UICONTROL Dashboard 1]**, in der *Tabellen hier ablegen* gelesen wird.
-   1. Ziehen Sie das Blatt **[!UICONTROL Daten]** aus dem Regal **[!UICONTROL Tabellen]** unter das Blatt **[!UICONTROL Karte]** und legen Sie es in die Ansicht **[!UICONTROL Dashboard 1]**.
+   1. Ziehen Sie das Blatt **[!UICONTROL Daten]** aus dem Regal **[!UICONTROL Tabellen]** unter das Blatt **[!UICONTROL Karte]** und legen Sie es in der Ansicht **[!UICONTROL Dashboard 1]** ab.
 
    Ihre Ansicht **[!UICONTROL Dashboard 1]** sollte wie unten dargestellt aussehen.
 
@@ -872,7 +865,7 @@ Alternativ können Sie die Funktion &quot;Anzahl getrennt&quot;von Tableau Deskt
 
 ## Filtern von Datumsbereichsnamen
 
-Sie möchten einen Datumsbereich verwenden, den Sie unter Customer Journey Analytics definiert haben, um Ereignisse (Ereignisse) aus dem letzten Jahr zu filtern und zu melden.
+In diesem Anwendungsfall möchten Sie einen Datumsbereich verwenden, den Sie unter Customer Journey Analytics definiert haben, um Ereignisse (Ereignisse) im letzten Jahr zu filtern und zu melden.
 
 +++ Customer Journey Analytics
 
@@ -940,7 +933,7 @@ Beachten Sie, dass der in der Freiformtabellen-Visualisierung definierte Datumsb
 
 ## Filternamen zum Filtern verwenden
 
-Sie möchten einen vorhandenen Filter für die unter Customer Journey Analytics definierte Fischereiproduktkategorie verwenden, um Produktnamen und Vorkommnisse (Ereignisse) im Januar 2023 zu filtern und Berichte zu diesen Vorkommen zu erstellen.
+In diesem Anwendungsfall möchten Sie einen vorhandenen Filter für die unter Customer Journey Analytics definierte Produktkategorie &quot;Fischerei&quot;verwenden, um Produktnamen und Vorkommnisse (Ereignisse) im Januar 2023 zu filtern und Berichte zu diesen Vorkommen zu erstellen.
 
 +++ Customer Journey Analytics
 
@@ -1090,7 +1083,7 @@ Es wird eine Visualisierung mit **[!UICONTROL Fehler beim Abrufen von Daten für
 
 ## Sortieren
 
-Sie möchten einen Bericht zum Kaufumsatz und zu den Käufen für Produktnamen im Januar 2023 erstellen, sortiert in absteigender Reihenfolge des Einkaufsumsatzes.
+In diesem Anwendungsfall möchten Sie den Kaufumsatz und die Käufe für Produktnamen im Januar 2023 in Berichte aufnehmen, sortiert nach absteigender Bestellung des Kaufumsatzes.
 
 +++ Customer Journey Analytics
 
@@ -1256,7 +1249,7 @@ GROUP BY 1
 
 ## Beschränkungen
 
-Sie möchten die fünf häufigsten Vorkommen von Produktnamen im Jahr 2023 melden.
+In diesem Anwendungsfall möchten Sie die fünf häufigsten Vorkommen von Produktnamen im Jahr 2023 melden.
 
 +++ Customer Journey Analytics
 
@@ -1595,7 +1588,7 @@ HAVING ((SUM("cc_data_view"."purchase_revenue") >= 999999.99999998999) AND (SUM(
 
 ## Visualisierungen
 
-In diesem Anwendungsfall möchte ich wissen, wie die in Customer Journey Analytics verfügbaren Visualisierungen auf ähnliche Weise mithilfe der verfügbaren Visualisierungen in den BI-Tools erstellt werden können.
+Sie möchten verstehen, wie die in Customer Journey Analytics verfügbaren Visualisierungen auf ähnliche Weise mit den verfügbaren Visualisierungen in den BI-Tools erstellt werden können.
 
 +++ Customer Journey Analytics
 
@@ -1642,11 +1635,11 @@ Für die meisten Customer Journey Analytics-Visualisierungen bietet Power BI Des
 
 ### Drilldown
 
-Power BI unterstützt den [Drillmodus](https://learn.microsoft.com/en-us/power-bi/consumer/end-user-drill), um detaillierte Details zu bestimmten Visualisierungen zu untersuchen. Im folgenden Beispiel analysieren Sie den Umsatz der Einkäufe für Produktkategorien. Im Kontextmenü einer Leiste, die eine Produktkategorie darstellt, können Sie **[!UICONTROL Drilldown durchführen]** auswählen.
+Power BI unterstützt einen [Drillmodus](https://learn.microsoft.com/en-us/power-bi/consumer/end-user-drill), um detaillierte Details zu bestimmten Visualisierungen zu untersuchen. Im folgenden Beispiel analysieren Sie den Umsatz der Einkäufe für Produktkategorien. Im Kontextmenü einer Leiste, die eine Produktkategorie darstellt, können Sie **[!UICONTROL Drilldown durchführen]** auswählen.
 
 ![Power BI-Drilldown](assets/uc15-powerbi-drilldown.png){zoomable="yes"}
 
-Mit der Drilldown-Liste wird die Visualisierung mit dem Kaufumsatz für Produkte innerhalb der ausgewählten Produktkategorie aktualisiert.
+Drilldown aktualisiert die Visualisierung mit dem Kaufumsatz für Produkte innerhalb der ausgewählten Produktkategorie.
 
 ![Power BI-Drillup](assets/uc15-powerbi-drillup.png){zoomable="yes"}
 
@@ -1725,7 +1718,7 @@ Für die meisten Customer Journey Analytics-Visualisierungen bietet Tableau glei
 
 ### Drilldown
 
-Tableau unterstützt den [Drillmodus](https://learn.microsoft.com/en-us/power-bi/consumer/end-user-drill) bis [Hierarchien](https://help.tableau.com/current/pro/desktop/en-us/qs_hierarchies.htm). Im folgenden Beispiel erstellen Sie eine Hierarchie, wenn Sie das Feld &quot;Produktname&quot;in Tabellen auswählen und es auf die Produktkategorie ziehen. Wählen Sie dann im Kontextmenü einer Leiste, die eine Produktkategorie darstellt, **[!UICONTROL + Drilldown]** aus.
+Tableau unterstützt den [Drillmodus](https://learn.microsoft.com/en-us/power-bi/consumer/end-user-drill) bis [Hierarchien](https://help.tableau.com/current/pro/desktop/en-us/qs_hierarchies.htm). Im folgenden Beispiel erstellen Sie eine Hierarchie, wenn Sie das Feld **[!UICONTROL Produktname]** in **[!UICONTROL Tabellen]** auswählen und es auf **[!UICONTROL Produktkategorie]** ziehen. Wählen Sie dann im Kontextmenü einer Leiste, die eine Produktkategorie darstellt, **[!UICONTROL + Drilldown]** aus.
 
 ![Tableau-Drilldown](assets/uc15-tableau-drilldown.png){zoomable="yes"}
 
@@ -1769,17 +1762,17 @@ Jedes der unterstützten BI-Tools hat beim Arbeiten mit der Customer Journey Ana
 
 >[!TAB Power BI Desktop]
 
-* Power BI Desktop Advanced Datumsbereichfilterung ist exklusiv.  Für Ihr Enddatum müssen Sie einen Tag nach dem Tag auswählen, für den Sie einen Bericht erstellen möchten. Beispiel: **[!UICONTROL ist auf oder nach]** `1/1/2023` **[!UICONTROL und vor]** `1/2/2023`.
+* Power BI Desktop Advanced Datumsbereichfilterung ist exklusiv.  Für Ihr Enddatum müssen Sie ein Datum nach dem Tag auswählen, für den Sie einen Bericht erstellen möchten. Beispiel: **[!UICONTROL ist auf oder nach]** `1/1/2023` **[!UICONTROL und vor]** `1/2/2023`.
 * Power BI Desktop wird standardmäßig auf **[!UICONTROL Import]** gesetzt, wenn Sie eine Verbindung erstellen. Stellen Sie sicher, dass Sie **[!UICONTROL Direct Query]** verwenden.
-* Power BI Desktop stellt Datentransformationen über Power Query bereit.  Power Query funktioniert in erster Linie mit Verbindungen vom Typ Import, sodass viele Transformationen, die Sie wie Datum- oder Zeichenfolgen-Funktionen anwenden, einen Fehler auslösen, der besagt, dass Sie zu einer Verbindung vom Typ Import wechseln müssen.  Wenn Sie Daten zur Abfragezeit transformieren müssen, sollten Sie abgeleitete Dimensionen und Metriken verwenden, damit Power BI die Transformationen nicht selbst durchführen muss.
+* Power BI Desktop stellt Datentransformationen über Power Query bereit.  Power Query funktioniert in erster Linie mit Verbindungen vom Typ Import, sodass bei vielen von Ihnen angewendeten Umwandlungen wie Datum- oder Zeichenfolgen-Funktionen ein Fehler ausgegeben wird, der besagt, dass Sie zu einer Verbindung vom Typ Import wechseln müssen.  Wenn Sie Daten zur Abfragezeit transformieren müssen, sollten Sie abgeleitete Dimensionen und Metriken verwenden, damit Power BI die Transformationen nicht selbst durchführen muss.
 * Power BI Desktop versteht nicht, wie Datums-/Uhrzeitspalten verarbeitet werden, sodass die Dimensionen **[!UICONTROL daterange *X *]**wie**[!UICONTROL daterangehour ]**und**[!UICONTROL daterangeminute ]**nicht unterstützt werden.
-* Power BI Desktop versucht standardmäßig, mehrere Verbindungen herzustellen, indem mehr Query Service-Sitzungen verwendet werden.  Sie sollten in die Projekteinstellungen einsteigen und parallele Abfragen deaktivieren.
-* Power BI Desktop führt alle Sortierungen und Begrenzungen clientseitig durch und verfügt außerdem über verschiedene Semantik für Top-Filter *X* , die gebundene Werte enthalten, sodass Sie nicht genau die gleiche Sortierung und Begrenzung erstellen können wie in Analysis Workspace.
+* Power BI Desktop versucht standardmäßig, mehrere Verbindungen herzustellen, indem mehr Query Service-Sitzungen verwendet werden.  Wechseln Sie zu den Projekteinstellungen und deaktivieren Sie die parallelen Abfragen.
+* Power BI Desktop führt alle Sortierungen und Begrenzungen clientseitig durch. Power BI Desktop verfügt auch über verschiedene Semantik für Top-Filter *X* , die gebundene Werte enthalten. Sie können also nicht die gleiche Sortierung und Begrenzung wie in Analysis Workspace erstellen.
 * Frühere Versionen der Power BI Desktop-Version vom Oktober 2024 brechen PostgreSQL-Datenquellen aus. Stellen Sie sicher, dass Sie die in diesem Artikel erwähnte Version verwenden.
 
 >[!TAB Tableau-Desktop]
 
-* Die Filterung nach Tableau Desktop Range of Dates ist exklusiv. Für Ihr Enddatum müssen Sie einen Tag nach dem Tag auswählen, für den Sie einen Bericht erstellen möchten.
+* Die Filterung nach Tableau Desktop Range of Dates ist exklusiv. Für Ihr Enddatum müssen Sie ein Datum nach dem Tag auswählen, für den Sie einen Bericht erstellen möchten.
 * Wenn Sie den Zeilen eines Arbeitsblatts standardmäßig eine Datums- oder Datums-/Uhrzeitdimension wie **[!UICONTROL Daterangemonth]** hinzufügen, bricht Tableau Desktop das Feld in eine Funktion **[!UICONTROL YEAR()]** ein.  Um das zu erhalten, was Sie möchten, müssen Sie diese Dimension auswählen und aus dem Dropdown-Menü die Datumsfunktion auswählen, die Sie verwenden möchten.  Ändern Sie beispielsweise **[!UICONTROL Year]** in **[!UICONTROL Month]**, wenn Sie versuchen, **[!UICONTROL Daterangemonth]** zu verwenden.
 * Die Begrenzung der Ergebnisse auf die Top *X* ist im Tableau-Desktop nicht offensichtlich. Sie können die Ergebnisse explizit einschränken oder ein berechnetes Feld und die Funktion **[!UICONTROL INDEX()]** verwenden.  Durch Hinzufügen eines Top *X* -Filters zu einer Dimension wird eine komplexe SQL-Konfiguration mithilfe eines inneren Joins generiert, der nicht unterstützt wird.
 

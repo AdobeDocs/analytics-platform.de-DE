@@ -4,10 +4,10 @@ description: Landingpage von Customer Journey Analytics.
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 7f67c497-386b-4442-a502-6b492f35c6e6
-source-git-commit: ce04e69d2c933f893eeeff04abb0f56fb4000e6f
-workflow-type: ht
-source-wordcount: '820'
-ht-degree: 100%
+source-git-commit: 8b90f74d64ef35f4a9f0f1177dab27c9680ccb4c
+workflow-type: tm+mt
+source-wordcount: '824'
+ht-degree: 95%
 
 ---
 
@@ -73,7 +73,7 @@ Neue abgeleitete Feldfunktionen (mathematische Funktionen, Weiter oder Zurück, 
 
 >[!TAB BI-Erweiterung*]
 
-Die BI-Erweiterung ermöglicht SQL-Zugriff auf Datenansichten, die Sie in Customer Journey Analytics definiert haben. Sie können nun Ihr bevorzugtes BI-Tool verwenden, um Berichte und Dashboards auf Basis derselben Datenansichten zu erstellen, die Customer Journey Analytics-Benutzende für ihre Analysis Workspace-Projekte verwenden.
+Die BI-Erweiterung ermöglicht SQL-Zugriff auf Datenansichten, die Sie in Customer Journey Analytics definiert haben. Sie können jetzt Ihr bevorzugtes BI-Tool verwenden, um Reporting- und Dashboards auf der Basis derselben Datenansichten zu erstellen, die Customer Journey Analytics-Benutzer für ihre Analysis Workspace-Projekte verwenden. [Anwendungsbeispiele](/help/use-cases/data-views/bi-extension-usecases.md) werden bereitgestellt.
 
 [![Bild](assets/learn-more-button.svg)](/help/data-views/bi-extension.md)
 
