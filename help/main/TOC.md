@@ -11,8 +11,8 @@ user-guide-description: Hier erhalten Sie Informationen zu Adobe Customer Journe
 breadcrumb-title: Handbuch zu Customer Journey Analytics
 source-git-commit: 3d75dcc61d76a02f6cd77a62417fb775db959265
 workflow-type: tm+mt
-source-wordcount: '1062'
-ht-degree: 92%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -47,9 +47,9 @@ ht-degree: 92%
       + [Senden von Daten an Platform](/help/getting-started/cja-upgrade/cja-upgrade-send-to-platform.md)
       + [Beibehalten historischer Daten](/help/getting-started/cja-upgrade/cja-upgrade-historical-data.md)
       + [Empfohlener Prozess](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md)
-      + [Analytics-Implementierung verstehen](/help/getting-started/cja-upgrade/cja-upgrade-analytics-implementation.md)
-      + [Erstellen von Lookup-Datensätzen für Classifications](/help/getting-started/cja-upgrade/cja-upgrade-dataset-lookup.md)
-      + [Abgeleitetes Marketing-Kanal-Feld erstellen](/help/getting-started/cja-upgrade/cja-upgrade-marketing-channel.md)
+      + [Informationen zur Analytics-Implementierung](/help/getting-started/cja-upgrade/cja-upgrade-analytics-implementation.md)
+      + [Erstellen von Lookup-Datensätzen für Klassifizierungen](/help/getting-started/cja-upgrade/cja-upgrade-dataset-lookup.md)
+      + [Erstellen eines abgeleiteten Marketing-Kanal-Felds](/help/getting-started/cja-upgrade/cja-upgrade-marketing-channel.md)
       + [Implementieren des Lader-Tags für die Web SDK-Erweiterung](/help/getting-started/cja-upgrade/cja-upgrade-tag-loader.md)
       + [Erstellen eines Tags für Ihre Eigenschaft](/help/getting-started/cja-upgrade/cja-upgrade-tag-property.md)
       + [Hinzufügen der Web SDK-Erweiterung zu Ihrem -Tag](/help/getting-started/cja-upgrade/cja-upgrade-tag-extension.md)
@@ -63,7 +63,7 @@ ht-degree: 92%
       + [Erstellen einer Verbindung](/help/getting-started/cja-upgrade/cja-upgrade-connection.md)
       + [Erstellen einer Datenansicht](/help/getting-started/cja-upgrade/cja-upgrade-dataview.md)
       + [Validieren des Datenflusses](/help/getting-started/cja-upgrade/cja-upgrade-validate.md)
-      + [Upgrade-Kurzbefehl: Migration zum Web SDK](/help/getting-started/cja-upgrade/cja-upgrade-shortcut-websdk.md)
+      + [Schnellerer Weg zum Upgrade: Migration zum Web SDK](/help/getting-started/cja-upgrade/cja-upgrade-shortcut-websdk.md)
       + [Erstellen eines XDM-Schemas für den Analytics-Quell-Connector](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-schema.md)
       + [Erstellen der Quell-Connector- und Zuordnungsfelder für Analytics](/help/getting-started/cja-upgrade/cja-upgrade-source-connector.md)
       + [Datensatz des Analytics-Quell-Connectors zur Verbindung hinzufügen](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-dataset.md)
@@ -146,7 +146,7 @@ ht-degree: 92%
       + [Hotkeys (Tastaturbefehle)](../analysis-workspace/build-workspace-project/fa-shortcut-keys.md)
       + [Farbpaletten](../analysis-workspace/build-workspace-project/color-palettes.md)
       + [Anzeigen der Dichte](../analysis-workspace/build-workspace-project/view-density.md)
-   + [Vorlagen verwenden](../analysis-workspace/templates/use-templates.md)
+   + [Verwenden von Vorlagen](../analysis-workspace/templates/use-templates.md)
    + Visualisierungen {#visualizations}
       + [Überblick](../analysis-workspace/visualizations/freeform-analysis-visualizations.md)
       + [Verwalten von Datenquellen](../analysis-workspace/visualizations/t-sync-visualization.md)

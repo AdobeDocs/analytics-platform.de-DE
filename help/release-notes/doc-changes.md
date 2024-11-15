@@ -6,8 +6,8 @@ solution: Customer Journey Analytics
 feature: Release Notes
 source-git-commit: 5f02b6eff63f7efcfbec586186506f2c50ec52d7
 workflow-type: tm+mt
-source-wordcount: '4216'
-ht-degree: 98%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -21,9 +21,9 @@ Die folgenden Aktualisierungen wurden seit der ersten Erstellung der Customer Jo
 | --- | --- |
 | **November 2024** | |
 | Anwendungsfälle für BI-Erweiterungen | Dokumentation zu mehreren Anwendungsfällen für die [BI-Erweiterung](/help/use-cases/data-views/bi-extension-usecases.md) für BI-Tools wie Power BI Desktop und Tableau Desktop. |
-| Zuordnen und Datenschutzanfragen | Es wurde ein Hinweis zu [bevorstehenden Änderungen im Auftrennungsprozess](/help/stitching/faq.md#frequently-asked-questions) hinzugefügt, die das Ergebnis von Datenschutzanfragen sind. |
+| Zuordnungen und Datenschutzanfragen | Es wurde ein Hinweis zu [bevorstehenden Änderungen des Verfahrens zum Aufheben der Zuordnung](/help/stitching/faq.md#frequently-asked-questions) hinzugefügt, die sich aufgrund von Datenschutzanfragen ergeben. |
 | **Oktober 2024** | |
-| Gemeinsam verwendete Geräte | Es wurde ein [Anwendungsfall-Artikel](/help/use-cases/stitching/shared-devices.md) hinzugefügt, der Kontext auf gemeinsam genutzten Geräten bietet, wie Daten von freigegebenen Geräten mithilfe des Stitching verarbeitet und gemindert werden können und wie die Belichtung freigegebener Geräte in Ihren Daten mithilfe von Query Service verstanden werden kann. |
+| Gemeinsam verwendete Geräte | Es wurde ein [Anwendungsfall-Artikel](/help/use-cases/stitching/shared-devices.md) hinzugefügt, der Informationen zu gemeinsam verwendeten Geräten bietet. Außerdem wird erklärt, wie Daten von gemeinsam verwendeten Geräten mithilfe von Zuordnungen gehandhabt und eingeschränkt werden und wie sich gemeinsam verwendete Geräte auf Daten auswirken. Hierzu wird der Abfrage-Service genutzt. |
 | Neue Informationen zu Anfragefaktoren in der Leistung von Analysis Workspace | In einem neuen Abschnitt [Anfragefaktoren](/help/technotes/optimizing-performance.md#request-factors) im Artikel [Optimieren der Leistung von Analysis Workspace](/help/technotes/optimizing-performance.md) wird erläutert, wie Anfragen verarbeitet werden und welche Faktoren die Verarbeitungszeiten beeinflussen. |
 | Workspace und Komponenten | Die Dokumentation zu Analysis Workspace-Projekten (Projekte, Visualisierungen und Bedienfelder) und Komponenten (Anmerkungen, Dimensionen, [berechnete] Metriken, Filter, Datumsbereiche, Warnhinweise, geplante Projekte und Zielgruppen) wurde aktualisiert. |
 | Geführte Analyse | Die Dokumentation wurde mit der Verfügbarkeit der [geführten Analyse](/help/guided-analysis/overview.md) von Analysis Workspace aus aktualisiert. |
@@ -118,7 +118,7 @@ Die folgenden Aktualisierungen wurden seit der ersten Erstellung der Customer Jo
 | **Juni 2023** | |
 | Kanalübergreifende Analyse und Zuordnung | Um die bevorstehenden Änderungen vorwegzunehmen, die die Zuordnung ermöglichen, und um weiter zu klären, wie die kanalübergreifende Analyse mithilfe der Zuordnung erhöht werden kann, wurde die Dokumentation zur Funktionalität der Cross-Channel-Analyse überarbeitet. Sie verweist nun auf die [Cross-Channel-Analyse](../use-cases/cross-channel/cross-channel.md) als Fähigkeit und Anwendungsfall von Customer Journey Analytics sowie auf die [Zuordnung](../stitching/overview.md) als eine wichtige Funktionalität zur Erreichung dieses Ziels. |
 | Zugriff von PowerBI und Tableau auf Customer Journey Analytics-Datenansichten | Die BI-Erweiterung für Customer Journey Analytics ermöglicht den SQL-Zugriff auf Datenansichten, die Sie in Customer Journey Analytics definiert haben. [Weitere Informationen](/help/data-views/bi-extension.md) |
-| Adobe Journey Optimizer-Datenansichten | Customer Journey Analytics-Admins haben in Customer Journey Analytics Zugriff auf einige zusätzliche Datenansichten mit dem Titel „AJO-Datenansicht (Sandbox-Name)“. [Weitere Informationen](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/reporting/channel-report/reporting-configuration). |
+| Adobe Journey Optimizer-Datenansichten | Customer Journey Analytics-Admins haben in Customer Journey Analytics Zugriff auf einige zusätzliche Datenansichten mit dem Titel „AJO-Datenansicht (Sandbox-Name)“. [Weitere Informationen](https://experienceleague.adobe.com/de/docs/journey-optimizer/using/reporting/channel-report/reporting-configuration). |
 | Währungsumrechnung | Die Dokumentation zur Unterstützung der [Währungsumrechnung](../data-views/component-settings/format.md#currency) wurde aktualisiert. |
 | Aktualisierungen zu berechneten Metriken | Die Dokumentation zu berechneten Metriken wurde wie folgt aktualisiert, um sie an die aktuellen Customer Journey Analytics-Funktionen anzupassen: <ul><li>Aktualisierte Liste der in Customer Journey Analytics verfügbaren [standardmäßig berechneten Metriken](/help/components/calc-metrics/default-calcmetrics.md)</li><li>Aktualisierte Screenshots und Verfahren in verschiedenen Artikeln zu berechneten Metriken </li></ul> |
 | **Mai 2023** | |
