@@ -5,9 +5,9 @@ exl-id: 9333ada2-b4d6-419e-9ee1-5c96f06a3bfd
 feature: Experience Platform Integration
 role: Admin
 source-git-commit: d5e8c75f1e3a207b625421a13219674f8da6c3f5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3020'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ Sie können von Journey Optimizer generierte Daten konfigurieren, um eine erweit
 
 ## Automatisches Konfigurieren der Integration von Journey Optimizer
 
-Journey Optimizer unterstützt die Verwendung von Customer Journey Analytics als Berichterstellungs-Engine. Weitere Informationen finden Sie unter [Erste Schritte mit der neuen Berichterstellungs-Oberfläche](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/reporting/channel-report/report-gs-cja) in der Dokumentation zu Journey Optimizer.
+Journey Optimizer unterstützt die Verwendung von Customer Journey Analytics als Berichterstellungs-Engine. Weitere Informationen finden Sie unter [Erste Schritte mit der neuen Berichterstellungs-Oberfläche](https://experienceleague.adobe.com/de/docs/journey-optimizer/using/reporting/channel-report/report-gs-cja) in der Dokumentation zu Journey Optimizer.
 
 Wenn Sie die Customer Journey Analytics-Berichterstellung für Journey Optimizer aktiviert haben, werden automatisch eine [Verbindung](/help/connections/overview.md) und eine [Datenansicht](/help/data-views/data-views.md) für die spezifische Sandbox erstellt.
 
