@@ -4,10 +4,10 @@ description: Zeigt zwei Methoden zur Schätzung der Nutzung und eine Methode zur
 role: Admin
 feature: Basics
 exl-id: 7a5d1173-8d78-4360-a97a-1ab0a60af135
-source-git-commit: 39e4c17336d3648cbf20cace535668d14510186f
+source-git-commit: 400dc032be5d491cade84b0e98d88ff8a5949a2f
 workflow-type: tm+mt
-source-wordcount: '881'
-ht-degree: 71%
+source-wordcount: '875'
+ht-degree: 69%
 
 ---
 
@@ -46,7 +46,7 @@ Möglicherweise benötigen Sie Informationen zur aktuellen Anzahl von Ereignisda
 
    >[!CAUTION]
    >
-   >   Diese Anzahl beinhaltet nur Ereignisdaten, nicht aber Profil- oder Lookup-Daten. Wenn Sie über Profil- und Lookup-Daten verfügen, ist die Anzahl etwas höher. Es gibt jedoch derzeit keine Möglichkeit, Berichte über die Nutzung von Profil- und Lookup-Daten in der Benutzeroberfläche zu erstellen. Diese Funktion ist für 2023 geplant.
+   >   Diese Anzahl beinhaltet nur Ereignisdaten, nicht aber Profil- oder Lookup-Daten. Wenn Sie über Profil- und Lookup-Daten verfügen, ist die Anzahl etwas höher. Es gibt jedoch derzeit keine Möglichkeit, Berichte über die Nutzung von Profil- und Suchdaten in der Benutzeroberfläche zu erstellen.
 
 1. Sobald Sie über die Summe aller Ereignisdatenzeilen verfügen, suchen Sie im Customer Journey Analytics-Vertrag, den Ihr Unternehmen mit Adobe unterzeichnet hat, nach der Berechtigung für „Datenzeilen“.
 
