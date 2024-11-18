@@ -7,10 +7,10 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: 424485a3-a076-4656-83b6-733f16cc2326
-source-git-commit: aedf7a2ad41b09521938b789dbaf1c193cdb661f
+source-git-commit: 5ce69400a01566728f374d68ac08a981adfd8b6e
 workflow-type: tm+mt
-source-wordcount: '818'
-ht-degree: 25%
+source-wordcount: '767'
+ht-degree: 27%
 
 ---
 
@@ -21,14 +21,6 @@ ht-degree: 25%
 >Führen Sie die Schritte auf dieser Seite erst aus, nachdem Sie alle vorherigen Aktualisierungsschritte ausgeführt haben. Sie können die [empfohlenen Aktualisierungsschritte](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) ausführen oder die für Ihr Unternehmen dynamisch generierten Aktualisierungsschritte mit dem Fragebogen [Adobe Analytics to Customer Journey Analytics Upgrade Fragenkatalog](https://gigazelle.github.io/cja-ttv/) ausführen.
 >
 >Nachdem Sie die Schritte auf dieser Seite ausgeführt haben, fahren Sie mit den empfohlenen Aktualisierungsschritten oder den dynamisch generierten Aktualisierungsschritten fort.
-
->[!NOTE]
->
->Für die Informationen auf dieser Seite wird Folgendes vorausgesetzt:
->
->* Sie aktualisieren von Adobe Analytics auf Customer Journey Analytics.
->* Sie verwenden das Web SDK für Ihre zukünftige Customer Journey Analytics-Datenerfassung.
->* Sie möchten den Analytics-Quell-Connector verwenden, um Ihre historischen Adobe-Analysedaten in Customer Journey Analytics zu übertragen.
 
 ## Erfahren Sie, wie der Analytics-Quell-Connector historische Daten in Customer Journey Analytics integrieren kann.
 

@@ -1,33 +1,49 @@
 ---
-title: Erstellen eines Schemas für Customer Journey Analytics
-description: Erfahren Sie mehr über den empfohlenen Pfad bei der Aktualisierung von Adobe Analytics auf Customer Journey Analytics.
+title: Schema für Customer Journey Analytics auswählen
+description: Erfahren Sie mehr über die verfügbaren Optionen bei der Auswahl eines Schemas zum Customer Journey Analytics und die Vor- und Nachteile jedes einzelnen Schemas
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 hide: true
 hidefromtoc: true
-source-git-commit: 711e92db7084592dc562eda3d0dcf33bcb4a62d4
+exl-id: a2b90ab2-2fcb-4bf4-a862-2f0675dc2fe2
+source-git-commit: 5ce69400a01566728f374d68ac08a981adfd8b6e
 workflow-type: tm+mt
-source-wordcount: '242'
-ht-degree: 59%
+source-wordcount: '387'
+ht-degree: 54%
 
 ---
 
-# Verwenden Ihres Adobe Analytics-Schemas mit Customer Journey Analytics
+# Schema für Customer Journey Analytics auswählen
 
 >[!NOTE]
 >
 >Diese Dokumentation sollte im Rahmen des Fragebogens [Adobe Analytics zum Customer Journey Analytics-Upgrade](https://gigazelle.github.io/cja-ttv/) verwendet werden.
 
-<!-- this page exists as the "Learn more" link in the info icon for the option "I am comfortable using my Adobe Analytics schema as a basis" -->
+<!-- this page exists as the "Learn more" link in the info icons for the options "I am comfortable using my Adobe Analytics schema as a basis" and "I want to use a schema tailored to my organization" -->
 
-Die Option zur Verwendung eines vorhandenen Adobe Analytics-Schemas mit Customer Journey Analytics ist nur verfügbar, wenn Ihre Adobe Analytics-Implementierung mit dem Adobe Experience Platform Web SDK konfiguriert ist. <!-- correct? Or can you do this with an AppMeasurement implementation?-->
+Bei der Aktualisierung auf Customer Journey Analytics empfiehlt Adobe, ein neues XDM-Schema zu erstellen, um es besser an die Anforderungen Ihres Unternehmens anzupassen, da Sie mit der Verwendung anderer Platform-Dienste beginnen. Alternativ können Sie Ihr vorhandenes Adobe Analytics-Schema verwenden.
 
-Beachten Sie die folgenden Vorteile und Nachteile der Verwendung Ihres Adobe Analytics-Schemas mit Customer Journey Analytics:
+Betrachten Sie die Vorteile und Nachteile jedes einzelnen.
+
+## Erstellen eines auf Ihr Unternehmen zugeschnittenen XDM-Schemas (empfohlen)
+
+Adobe empfiehlt, beim Upgrade auf Customer Journey Analytics ein neues XDM-Schema zu erstellen.
+
+| Vorteile | Nachteile |
+|----------|---------|
+| <ul><p>Vorteile der Aktualisierung auf Ihr eigenes XDM-Schema:</p><ul><li>Ein optimiertes Schema, das auf die Anforderungen Ihrer Organisation und die spezifischen von Ihnen verwendeten Platform-Anwendungen zugeschnitten ist.</li><p>Wenn Änderungen am Schema erforderlich sind, müssen Sie nicht Tausende nicht verwendeter Felder durchgehen, um das zu aktualisierende Feld zu finden.</p></ul> | <p>Nachteile der Aktualisierung auf Ihr eigenes XDM-Schema:</p><ul><li>Die Aktualisierung Ihres Schemas ist ein zeitaufwendiger Prozess, der erforderlich ist, bevor Sie mit dem Senden von Daten an Platform beginnen.</li></ul> |
+
+## Vorhandenes Adobe Analytics-Schema verwenden
+
+Die Option zur Verwendung Ihres bestehenden Adobe Analytics-Schemas mit Customer Journey Analytics ist nur verfügbar, wenn Ihre Adobe Analytics-Implementierung mit dem Adobe Experience Platform Web SDK konfiguriert ist. <!-- correct? Or can you do this with an AppMeasurement implementation?-->
 
 | Vorteile | Nachteile |
 |----------|---------|
 | <p>Vorteile der Verwendung des Adobe Analytics-Schemas:</p><ul><li>Einfachere Aktualisierung<p>Wenn Sie mit dem Adobe Experience Platform Web SDK bereits Daten an Adobe Analytics senden, können Sie Ihrem Datastream einen zusätzlichen Dienst hinzufügen, um Daten an Adobe Experience Platform zu senden (der dann in Ihrer Customer Journey Analytics-Konfiguration verwendet werden kann).</p></li></ul> | <p>Nachteile der Verwendung des Adobe Analytics-Schemas:</p><ul><li>Die Nutzung des Adobe Analytics-Schemas schränkt Sie zwar nicht in Bezug auf seine Verwendung mit anderen Platform-Anwendungen ein, führt aber zu einem Schema, das unnötig komplex ist. Dies liegt daran, dass das Adobe Analytics-Schema viele Adobe Analytics-spezifische Objekte enthält, die wahrscheinlich nicht von Ihrer Organisation verwendet werden.<p>Wenn Änderungen am Schema erforderlich sind, müssen Sie Tausende nicht verwendeter Felder durchgehen, um das zu aktualisierende Feld zu finden.</p></li></ul> |
+
+
+
 
 <!-- Not sure about any of this: 
 

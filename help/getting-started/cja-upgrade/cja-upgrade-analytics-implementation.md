@@ -7,10 +7,10 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: b9cff809-6df7-4d75-9bc1-0cc12074d355
-source-git-commit: aedf7a2ad41b09521938b789dbaf1c193cdb661f
+source-git-commit: 5ce69400a01566728f374d68ac08a981adfd8b6e
 workflow-type: tm+mt
-source-wordcount: '637'
-ht-degree: 18%
+source-wordcount: '590'
+ht-degree: 19%
 
 ---
 
@@ -18,13 +18,11 @@ ht-degree: 18%
 
 >[!NOTE]
 > 
->Führen Sie die Schritte auf dieser Seite erst aus, nachdem Sie alle vorherigen Aktualisierungsschritte ausgeführt haben. Sie können die [empfohlenen Aktualisierungsschritte](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) ausführen oder die für Ihr Unternehmen dynamisch generierten Aktualisierungsschritte mit dem Fragebogen [Adobe Analytics to Customer Journey Analytics Upgrade Fragenkatalog](https://gigazelle.github.io/cja-ttv/) ausführen.
->
->Nachdem Sie die Schritte auf dieser Seite ausgeführt haben, fahren Sie mit den empfohlenen Aktualisierungsschritten oder den dynamisch generierten Aktualisierungsschritten fort.
+>Verwenden Sie die Informationen auf dieser Seite, wenn Sie Fragen in der Checkliste für das [Customer Journey Analytics-Upgrade](https://gigazelle.github.io/cja-ttv/) beantworten.
 
-Es gibt verschiedene Möglichkeiten, auf Customer Journey Analytics zu aktualisieren. Es sind jedoch nicht alle Aktualisierungspfade für die einzelnen Typen von Adobe Analytics-Implementierungen verfügbar. Der empfohlene Aktualisierungspfad ist jedoch unabhängig von der Implementierung von Adobe Analytics in Ihrem Unternehmen verfügbar.
+Es gibt verschiedene Möglichkeiten, Adobe Analytics zu implementieren. Beim Upgrade auf Customer Journey Analytics sind nicht alle Aktualisierungspfade für alle Adobe Analytics-Implementierungen verfügbar. Der empfohlene Aktualisierungspfad ist jedoch unabhängig von der Implementierung von Adobe Analytics in Ihrem Unternehmen verfügbar.
 
-Verwenden Sie die folgenden Informationen, um Ihre aktuelle Adobe Analytics-Implementierung zu verstehen und zu erfahren, welche Aktualisierungspfade für Ihr Unternehmen verfügbar sind.
+Verwenden Sie die folgenden Informationen, um mehr über Ihre aktuelle Adobe Analytics-Implementierung zu erfahren und zu erfahren, welche Aktualisierungspfade für Ihr Unternehmen verfügbar sind.
 
 Wenden Sie sich an den Adobe-Support, wenn Sie konkretere Ratschläge, Anleitungen oder Unterstützung benötigen.
 
