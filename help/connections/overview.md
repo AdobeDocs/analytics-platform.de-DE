@@ -6,9 +6,9 @@ feature: Connections
 exl-id: 012371d7-aaef-4018-95ee-5c52083e9d8f
 role: Admin
 source-git-commit: 2f78905c2a1e94174a52269becc15474baf59f71
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '224'
-ht-degree: 70%
+ht-degree: 100%
 
 ---
 
@@ -24,20 +24,20 @@ Im Folgenden finden Sie eine Videoübersicht:
 
 ## Erforderliche Berechtigungen
 
-Zum Erstellen einer Customer Journey Analytics-Verbindung benötigen Sie die folgenden Berechtigungen. Weitere Informationen zu Berechtigungen finden Sie in der Dokumentation zu den [Adobe Admin Console](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/manage-permissions-and-roles.ug.html) - und [Adobe Experience Platform-Berechtigungen](https://experienceleague.adobe.com/de/docs/experience-platform/access-control/home) .
+Zum Erstellen einer Customer Journey Analytics-Verbindung benötigen Sie die folgenden Berechtigungen. Weitere Informationen zu Berechtigungen finden Sie in der Dokumentation zu [Adobe Admin Console](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/manage-permissions-and-roles.ug.html) und [Adobe Experience Platform-Berechtigungen](https://experienceleague.adobe.com/de/docs/experience-platform/access-control/home).
 
 ### In Adobe Admin Console:
 
-* Customer Journey Analytics: Produktadministrator
-* Adobe Experience Platform: Zum Produktprofil mit dem Namen *AEP-Default-All-Users* hinzugefügt
+* Customer Journey Analytics: Produktadmin
+* Adobe Experience Platform: Muss dem Produktprofil *AEP-Default-All-Users* hinzugefügt sein
 
 ### In Adobe Experience Platform-Berechtigungen:
 
 * Datenmodellierung: Schemas anzeigen, Schemas verwalten
 * Daten-Management: Datensätze anzeigen, Datensätze verwalten
 * Datenaufnahme: Quellen verwalten
-* Identity Management: Anzeigen von Identitäts-Namespaces
-* Sandboxes: Sandboxes, die in verwandten Customer Journey Analytics-Verbindungen verwendet werden
+* Identity Management: Identitäts-Namespaces anzeigen
+* Sandboxes: Sandboxes, die in zugehörigen Customer Journey Analytics-Verbindungen verwendet werden
 
 >[!IMPORTANT]
 >

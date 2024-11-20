@@ -5,9 +5,9 @@ exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
 source-git-commit: 5f02b6eff63f7efcfbec586186506f2c50ec52d7
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '4216'
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ Die folgenden Aktualisierungen wurden seit der ersten Erstellung der Customer Jo
 | Funktion | Beschreibung |
 | --- | --- |
 | **November 2024** | |
-| Anwendungsfälle für BI-Erweiterungen | Dokumentation zu mehreren Anwendungsfällen für die [BI-Erweiterung](/help/use-cases/data-views/bi-extension-usecases.md) für BI-Tools wie Power BI Desktop und Tableau Desktop. |
+| Anwendungsfälle für BI-Erweiterungen | Dokumentation zu mehreren [Anwendungsfällen für BI-Erweiterungen](/help/use-cases/data-views/bi-extension-usecases.md) für BI-Tools wie Power BI Desktop und Tableau Desktop. |
 | Zuordnungen und Datenschutzanfragen | Es wurde ein Hinweis zu [bevorstehenden Änderungen des Verfahrens zum Aufheben der Zuordnung](/help/stitching/faq.md#frequently-asked-questions) hinzugefügt, die sich aufgrund von Datenschutzanfragen ergeben. |
 | **Oktober 2024** | |
 | Gemeinsam verwendete Geräte | Es wurde ein [Anwendungsfall-Artikel](/help/use-cases/stitching/shared-devices.md) hinzugefügt, der Informationen zu gemeinsam verwendeten Geräten bietet. Außerdem wird erklärt, wie Daten von gemeinsam verwendeten Geräten mithilfe von Zuordnungen gehandhabt und eingeschränkt werden und wie sich gemeinsam verwendete Geräte auf Daten auswirken. Hierzu wird der Abfrage-Service genutzt. |
