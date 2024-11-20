@@ -1,18 +1,19 @@
 ---
 description: Eine Übersicht über die Verwendung von Standardvorlagen in Analysis Workspace.
-title: Vorlagen verwenden
+title: Verwenden von Vorlagen
 feature: Workspace Basics
 role: User, Admin
 hide: true
 hidefromtoc: true
-source-git-commit: 9f2f79e264d9cdd460751c50fe252bb7237682fd
+exl-id: d61f215d-9089-4014-9c5a-97f5d7134f34
+source-git-commit: 1345981ac78272935ffa8bfc50de8c41223a132f
 workflow-type: tm+mt
-source-wordcount: '13206'
+source-wordcount: '15295'
 ht-degree: 3%
 
 ---
 
-# Vorlagen verwenden
+# Verwenden von Vorlagen
 
 Vorlagen (oder Unternehmensvorlagen) in Analysis Workspace bieten schnelle Einblicke in die gängigsten Berichtsszenarien. Im Folgenden finden Sie einige Beispiele für Fragen, die Sie mit Vorlagen beantworten können:
 
@@ -523,14 +524,14 @@ Die folgenden Vorlagen sind verfügbar:
 
 | Vorlagenname | Warum diese Vorlage <!-- What do you do with it? What can it help you learn? and What are the potential actions? --> verwenden |
 | --- | --- | 
-| [!UICONTROL **Erste und Wiederholte Benutzer**] | Vergleich von erstmaligen Besuchern mit wiederkehrenden Besuchern anzeigen. <p>**Dies kann Ihnen** helfen, die Effektivität Ihrer Site bei der Aufrechterhaltung der Kundenloyalität oder die Rate, mit der Sie neue Kunden gewinnen, besser zu verstehen.</p><p>**Je nachdem, was Sie lernen, können Sie** eine beliebige Anzahl von Dingen ausführen, z. B. Anreize für zukünftige Käufe an erstmalige Besucher, um sie zur Rückkehr zu bewegen.</p><p>Diese Vorlage verwendet die </p> |
-| **Personen-ID/Namespace** | <p>**Dies hilft Ihnen**, besser zu verstehen</p><p>**Je nachdem, was Sie lernen, können Sie** eine beliebige Anzahl von Dingen ausführen, z. B. </p><p>Diese Vorlage verwendet die  </p> |
-| **Standortübersicht** | Zeigen Sie eine Übersicht über die Besucherposition in einer Zuordnungsvisualisierung an.<p>**Dies kann Ihnen** helfen, besser zu verstehen, wo sich Besucher befinden, die Ihre Site besuchen. </p><p>**Je nachdem, was Sie lernen, können Sie** eine beliebige Anzahl von Dingen ausführen, z. B. Marketing-Ressourcen an den Orten konzentrieren, an denen Sie das größte Interesse und die beste Gelegenheit sehen.</p><p>Diese Vorlage verwendet die  </p> |
+| [!UICONTROL **Erste und Wiederholte Benutzer**] | Vergleich von erstmaligen Besuchern mit wiederkehrenden Besuchern anzeigen. <p>**Dies kann Ihnen** helfen, die Effektivität Ihrer Site bei der Aufrechterhaltung der Kundenloyalität oder die Rate, mit der Sie neue Kunden gewinnen, besser zu verstehen.</p><p>**Je nachdem, was Sie lernen, können Sie** eine beliebige Anzahl von Dingen ausführen, z. B. Anreize für zukünftige Käufe an erstmalige Besucher, um sie zur Rückkehr zu bewegen.</p><!-- This template uses the --> |
+| **Personen-ID/Namespace** | <p>**Dies hilft Ihnen**, besser zu verstehen</p><p>**Je nachdem, was Sie lernen, können Sie** eine beliebige Anzahl von Dingen ausführen, z. B. </p><!-- This template uses the --> |
+| **Standortübersicht** | Zeigen Sie eine Übersicht über die Besucherposition in einer Zuordnungsvisualisierung an.<p>**Dies kann Ihnen** helfen, besser zu verstehen, wo sich Besucher befinden, die Ihre Site besuchen. </p><p>**Je nachdem, was Sie lernen, können Sie** eine beliebige Anzahl von Dingen ausführen, z. B. Marketing-Ressourcen an den Orten konzentrieren, an denen Sie das größte Interesse und die beste Gelegenheit sehen.</p><!-- This template uses the --> |
 | **Geo Countries** | Sehen Sie sich das Land an, aus dem die Besucher der Site stammen.<p>**Dies kann Ihnen** helfen, besser zu verstehen, was die beliebtesten Länder sind, aus denen Besucher Ihre Site besuchen.</p><p>**Je nachdem, was Sie lernen, können Sie** eine beliebige Anzahl von Maßnahmen treffen, z. B. die Verwendung der Daten, um sich auf die Marketing-Maßnahmen in diesen Ländern zu konzentrieren, oder sicherstellen, dass Ihr Site-Erlebnis in Ländern mit unterschiedlichen Hauptsprachen optimal ist.</p><p>Diese Vorlage verwendet die Dimension Länder . </p> |
 | **US-Bundesstaaten** | Sehen Sie sich den Staat (in den USA) an, aus dem die Besucher der Site stammen. Dies ähnelt der Vorlage Geo-Regionen , allerdings ist sie spezifisch für die USA.<p>**Dies kann Ihnen** helfen, die beliebtesten US-Bundesstaaten besser zu verstehen, von denen die Besucher Ihrer Site stammen.</p><p>**Je nachdem, was Sie lernen, können Sie** eine beliebige Anzahl von Maßnahmen ergreifen, z. B. die Verwendung der Daten, um sich auf Marketing-Maßnahmen in diesen Status zu konzentrieren.</p><p>Diese Vorlage verwendet die Dimension US-Bundesstaaten . </p> |
 | **Geo-Regionen** | Sehen Sie sich die geografische Region an, aus der die Besucher der Site stammen. Eine Region ist ein geografisches Gebiet, das kleiner als ein Land, aber größer als eine Stadt ist. In einigen Ländern ist unter einer Region ein Bundesstaat, eine Provinz oder eine Präfektur zu verstehen. In anderen Gebieten handelt es sich um ein konstituierendes Land, ein Departement oder eine großstädtische Region. <p>**Dies kann Ihnen** helfen, die beliebtesten Regionen besser zu verstehen, aus denen die Besucher Ihre Site besuchen.</p><p>**Basierend auf dem, was Sie lernen, können Sie** eine beliebige Anzahl von Dingen ausführen, z. B. die Daten verwenden, um sich auf Marketing-Maßnahmen in diesen Regionen zu konzentrieren, oder sicherstellen, dass Ihr Site-Erlebnis in Regionen mit unterschiedlichen Hauptsprachen optimal ist. </p><p>Diese Vorlage verwendet die Dimensionen ID (Variablen/Land) und Regionen . </p> |
-| **Geo-Städte** | Zeigen Sie die Stadt an, aus der die Besucher der Site stammen. <p>**Dies kann Ihnen** helfen, die beliebtesten Städte besser zu verstehen, von denen die Besucher Ihre Site besuchen.</p><p>**Je nachdem, was Sie lernen, können Sie** eine beliebige Anzahl von Dingen ausführen, z. B. die Daten verwenden, um sich auf Marketing-Maßnahmen in diesen Städten zu konzentrieren. </p><p>Diese Vorlage verwendet die Dimension &quot;Städte&quot; </p> |
-| **Geo US DMA** | Zeigen Sie die vorgesehenen Marketing-Gebiete (DMAs) in den USA an, aus denen die Besucher der Site stammen.<p>**Dies kann Ihnen** helfen, die beliebtesten Regionen besser zu verstehen, aus denen die Besucher Ihre Site besuchen.</p><p>**Basierend auf dem, was Sie lernen, können Sie** eine beliebige Anzahl von Dingen ausführen, z. B. die Daten verwenden, um sich auf Marketing-Maßnahmen in den erfolgreichsten Regionen zu konzentrieren. </p><p>Diese Vorlage verwendet die </p> |
+| **Geo-Städte** | Zeigen Sie die Stadt an, aus der die Besucher der Site stammen. <p>**Dies kann Ihnen** helfen, die beliebtesten Städte besser zu verstehen, von denen die Besucher Ihre Site besuchen.</p><p>**Je nachdem, was Sie lernen, können Sie** eine beliebige Anzahl von Dingen ausführen, z. B. die Daten verwenden, um sich auf Marketing-Maßnahmen in diesen Städten zu konzentrieren. </p><p>Diese Vorlage verwendet die Dimension Städte . </p> |
+| **Geo US DMA** | Zeigen Sie die vorgesehenen Marketing-Gebiete (DMAs) in den USA an, aus denen die Besucher der Site stammen.<p>**Dies kann Ihnen** helfen, die beliebtesten Regionen besser zu verstehen, aus denen die Besucher Ihre Site besuchen.</p><p>**Basierend auf dem, was Sie lernen, können Sie** eine beliebige Anzahl von Dingen ausführen, z. B. die Daten verwenden, um sich auf Marketing-Maßnahmen in den erfolgreichsten Regionen zu konzentrieren. </p><!-- This template uses the --> |
 | **Sprachen** | Zeigen Sie die wichtigsten Sprachen an, in denen Besucher Inhalte am liebsten sehen. <p>**Dies kann Ihnen** dabei helfen, die am häufigsten bevorzugten Sprachen der Besucher besser zu verstehen.</p><p>**Je nachdem, was Sie lernen, können Sie** eine beliebige Anzahl von Dingen ausführen, z. B. Lokalisierungs- oder Marketingbemühungen für die beliebtesten Sprachen.</p><p>Diese Vorlage verwendet die Dimension Sprache .</p> |
 | **Technologieübersicht** | <p>**Dies hilft Ihnen**, besser zu verstehen</p><p>**Je nachdem, was Sie lernen, können Sie** eine beliebige Anzahl von Dingen ausführen, z. B. </p><p>Diese Vorlage verwendet die </p> |
 | **Browser** | Zeigen Sie den Namen und die Version der wichtigsten Browser an, die für den Zugriff auf Ihre Site verwendet werden.<p>**Dies kann Ihnen** dabei helfen, die gängigsten Browser, die Besucher verwenden, besser zu verstehen.</p><p>**Je nachdem, was Sie lernen, können Sie** eine beliebige Anzahl von Maßnahmen ergreifen, z. B. die Verbesserung der Site-Qualität durch Testen neuer Versionen Ihrer Site mit den wichtigsten Browsern. Auf diese Weise können die Qualitätssicherungsbemühungen maximiert werden.</p><p>Diese Vorlage verwendet die Dimension Browser . </p> |
@@ -708,12 +709,14 @@ Die folgenden Vorlagen sind verfügbar:
 
 ### Mobile: Mobile App {#mobile-app}
 
+<!-- add contextual help for Mobile app screens and mobile app actions -->
+
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja-template--mobile-lifecycle-metrics-app-usage-template"
->title="Nutzung mobiler Apps"
->abstract=""
+>title="Zeigen Sie die Anzahl der Benutzer, Starts und ersten Starts in Ihrer App sowie die durchschnittliche Sitzungslänge an."
+>abstract="**Dies kann Ihnen** helfen, besser zu verstehen, wie viel Ihre App verwendet wird. <br/>**Je nachdem, was Sie lernen, können Sie** beliebig viele Dinge tun, z. B. die App-Leistung verbessern, damit sie auf die Nutzungsmenge skaliert werden kann."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -721,8 +724,8 @@ Die folgenden Vorlagen sind verfügbar:
 
 >[!CONTEXTUALHELP]
 >id="cja-template--mobile-app-journeys"
->title="Journey für mobile Apps"
->abstract=""
+>title="Zeigen Sie die markanten Nutzungsmuster für Ihre App an."
+>abstract="**Dies kann Ihnen** helfen, besser zu verstehen, wie Benutzer Ihre App verwenden. <br/>**Basierend auf dem, was Sie lernen, können Sie** beliebig viele Dinge tun, z. B. die Verbesserung, wie Benutzer von einem Bildschirm zum anderen gelangen können, um die häufigsten Workflows auszuwählen."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -730,8 +733,8 @@ Die folgenden Vorlagen sind verfügbar:
 
 >[!CONTEXTUALHELP]
 >id="cja-template--mobile-app-key-metrics"
->title="Mobile-App-Metriken"
->abstract=""
+>title="Zeigen Sie einige der häufigsten Mobile-App-Metriken an."
+>abstract="**Dies kann Ihnen** dabei helfen, die grundlegende Leistung Ihrer App besser zu verstehen.<br/>**Basierend auf dem, was Sie lernen, können Sie** eine beliebige Anzahl von Dingen ausführen, z. B. die allgemeine Gesundheit und Leistung Ihrer App bewerten."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -739,8 +742,8 @@ Die folgenden Vorlagen sind verfügbar:
 
 >[!CONTEXTUALHELP]
 >id="cja-template--mobile-app-messaging"
->title="Mobile-App-Nachrichten"
->abstract=""
+>title="Zeigen Sie Leistungsdaten für In-App-Nachrichten und Push-Nachrichten für Ihre App an."
+>abstract="**Dies kann Ihnen** helfen, besser zu verstehen, wie Benutzer In-App-Messaging-Funktionen verwenden und wie effektiv Push-Benachrichtigungen Traffic zu Ihrer App leiten.<br/>**Je nach Ihren Erkenntnissen können Sie** beliebig viele Dinge tun, z. B. die Verbesserung des Erlebnisses von In-App-Nachrichten-Push-Benachrichtigungen."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -748,8 +751,8 @@ Die folgenden Vorlagen sind verfügbar:
 
 >[!CONTEXTUALHELP]
 >id="cja-template--mobile-app-performance-template"
->title="Leistung mobiler Apps"
->abstract=""
+>title="Sehen Sie sich die Leistung Ihrer App an und erfahren Sie, wo Probleme bei Benutzern auftreten."
+>abstract="**Dies kann Ihnen** helfen, besser zu verstehen, ob Benutzer Ihrer App auf Langsamkeit oder eine beeinträchtigte Leistung stoßen. <br/>**Je nachdem, was Sie erfahren, können Sie** eine beliebige Anzahl von Maßnahmen ergreifen, z. B. vorhandene Probleme beheben oder die App-Leistung verbessern, bevor Probleme auftreten."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -757,8 +760,8 @@ Die folgenden Vorlagen sind verfügbar:
 
 >[!CONTEXTUALHELP]
 >id="cja-template--mobile-app-retention"
->title="Beibehaltung mobiler Apps"
->abstract=""
+>title="Zeigen Sie an, welche Benutzer die treuesten Benutzer Ihrer App sind und was sie in der App tun."
+>abstract="**Dies kann Ihnen** helfen, besser zu verstehen, wie Ihre treusten Benutzer Ihre App verwenden.<br/>**Je nachdem, was Sie lernen, können Sie** eine beliebige Anzahl von Maßnahmen durchführen, z. B. Ihre Marketing-Bemühungen für die Funktionen verbessern, die Ihre treusten Benutzer verwenden."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -766,14 +769,14 @@ Die folgenden Vorlagen sind verfügbar:
 
 | Vorlagenname | Warum diese Vorlage <!-- What do you do with it? What can it help you learn? and What are the potential actions? --> verwenden |
 | --- | --- | 
-| [!UICONTROL **Mobile App Screens**] | Zeigen Sie Informationen zu den Mobilgeräten an, die Benutzer beim Zugriff auf Ihre Site verwenden, z. B. Bildschirmgröße, Bildschirmbreite und Bildschirmhöhe. <p>**Dies kann Ihnen** helfen, besser zu verstehen, wie Personen Ihre Site erleben.</p><p>**Je nachdem, was Sie lernen, können Sie** eine beliebige Anzahl von Dingen ausführen, z. B. das Rendering Ihrer Site für die häufigsten Bildschirmgrößen optimieren.</p><p>Diese Vorlage verwendet die |
-| **Mobile App-Aktionen** | <p>**Dies hilft Ihnen**, besser zu verstehen</p><p>**Je nachdem, was Sie lernen, können Sie** eine beliebige Anzahl von Dingen ausführen, z. B. </p><p>Diese Vorlage verwendet die |
-| **Mobile App Usage** | <p>**Dies hilft Ihnen**, besser zu verstehen</p><p>**Je nachdem, was Sie lernen, können Sie** eine beliebige Anzahl von Dingen ausführen, z. B. </p><p>Diese Vorlage verwendet die |
-| **Journey der mobilen App** | <p>**Dies hilft Ihnen**, besser zu verstehen</p><p>**Je nachdem, was Sie lernen, können Sie** eine beliebige Anzahl von Dingen ausführen, z. B. </p><p>Diese Vorlage verwendet die |
-| **Mobile-App-Metriken** | <p>**Dies hilft Ihnen**, besser zu verstehen</p><p>**Je nachdem, was Sie lernen, können Sie** eine beliebige Anzahl von Dingen ausführen, z. B. </p><p>Diese Vorlage verwendet die |
-| **Mobile App Messaging** | <p>**Dies hilft Ihnen**, besser zu verstehen</p><p>**Je nachdem, was Sie lernen, können Sie** eine beliebige Anzahl von Dingen ausführen, z. B. </p><p>Diese Vorlage verwendet die |
-| **Leistung der mobilen App** | <p>**Dies hilft Ihnen**, besser zu verstehen</p><p>**Je nachdem, was Sie lernen, können Sie** eine beliebige Anzahl von Dingen ausführen, z. B. </p><p>Diese Vorlage verwendet die |
-| **Beibehaltung mobiler Apps** | <p>**Dies hilft Ihnen**, besser zu verstehen</p><p>**Je nachdem, was Sie lernen, können Sie** eine beliebige Anzahl von Dingen ausführen, z. B. </p><p>Diese Vorlage verwendet die |
+| [!UICONTROL **Mobile App Screens**] | Zeigen Sie die Anzahl der Ereignisse, Sitzungen und Personen an, die mit den einzelnen Bildschirmen der App verknüpft sind.<p>**Dies kann Ihnen** helfen, besser zu verstehen, welche Bildschirme auf Ihrer Site am beliebtesten sind.</p><p>**Je nachdem, was Sie lernen, können Sie** eine beliebige Anzahl von Dingen ausführen, z. B. Inhalte auf den beliebtesten Bildschirmen verbessern.</p><p>Diese Vorlage verwendet die Metriken für die Änderungen &quot;Ereignisse&quot;, &quot;Sitzungen&quot;, &quot;Personen&quot;und &quot;Prozent&quot;. Außerdem wird die Dimension &quot;Seitentitel&quot;verwendet.</p> |
+| **Mobile App-Aktionen** | Sehen Sie sich die Aktionen an, die Benutzer Ihrer mobilen App ausführen. <p>**Dies kann Ihnen** helfen, besser zu verstehen, wie Benutzer Ihre App verwenden, und welchen Wert sie daraus erhalten.</p><p>**Basierend auf dem, was Sie lernen, können Sie** eine beliebige Anzahl von Dingen ausführen, z. B. die Entwicklung von Funktionen verbessern, die die beliebtesten ergänzen oder verbessern.</p><p>Diese Vorlage verwendet die Metriken für die Änderungen &quot;Ereignisse&quot;, &quot;Sitzungen&quot;, &quot;Personen&quot;und &quot;Prozent&quot;. |
+| **Mobile App Usage** | Zeigen Sie die Anzahl der Benutzer, Starts und ersten Starts in Ihrer App sowie die durchschnittliche Sitzungslänge an.<p>**Dies kann Ihnen** helfen, besser zu verstehen, wie viel Ihre App verwendet wird. </p><p>**Je nachdem, was Sie lernen, können Sie** beliebig viele Dinge tun, z. B. die App-Leistung verbessern, damit sie auf die Nutzungsmenge skaliert werden kann.</p><!-- This template uses the --> |
+| **Journey der mobilen App** | Zeigen Sie die markanten Nutzungsmuster für Ihre App an. <p>**Dies kann Ihnen** helfen, besser zu verstehen, wie Benutzer Ihre App verwenden. </p><p>**Basierend auf dem, was Sie lernen, können Sie** beliebig viele Dinge tun, z. B. die Verbesserung, wie Benutzer von einem Bildschirm zum anderen gelangen können, um die häufigsten Workflows auszuwählen. </p><!-- This template uses the --> |
+| **Mobile-App-Metriken** | Zeigen Sie einige der häufigsten Mobile-App-Metriken an. <p>**Dies kann Ihnen** dabei helfen, die grundlegende Leistung Ihrer App besser zu verstehen.</p><p>**Basierend auf dem, was Sie lernen, können Sie** eine beliebige Anzahl von Dingen ausführen, z. B. die allgemeine Gesundheit und Leistung Ihrer App bewerten.</p><!-- This template uses the --> |
+| **Mobile App Messaging** | Zeigen Sie Leistungsdaten für In-App-Nachrichten und Push-Nachrichten für Ihre App an.<p>**Dies kann Ihnen** helfen, besser zu verstehen, wie Benutzer In-App-Messaging-Funktionen verwenden und wie effektiv Push-Benachrichtigungen Traffic zu Ihrer App leiten.</p><p>**Je nach Ihren Erkenntnissen können Sie** beliebig viele Dinge tun, z. B. die Verbesserung des Erlebnisses von In-App-Nachrichten-Push-Benachrichtigungen.</p><!-- This template uses the --> |
+| **Leistung der mobilen App** | Sehen Sie sich die Leistung Ihrer App an und erfahren Sie, wo Probleme bei Benutzern auftreten. <p>**Dies kann Ihnen** helfen, besser zu verstehen, ob Benutzer Ihrer App auf Langsamkeit oder eine beeinträchtigte Leistung stoßen. </p><p>**Je nachdem, was Sie erfahren, können Sie** eine beliebige Anzahl von Maßnahmen ergreifen, z. B. vorhandene Probleme beheben oder die App-Leistung verbessern, bevor Probleme auftreten.</p><!-- This template uses the --> |
+| **Beibehaltung mobiler Apps** | Zeigen Sie an, welche Benutzer die treuesten Benutzer Ihrer App sind und was sie in der App tun. <p>**Dies kann Ihnen** helfen, besser zu verstehen, wie Ihre treusten Benutzer Ihre App verwenden.</p><p>**Je nachdem, was Sie lernen, können Sie** eine beliebige Anzahl von Maßnahmen durchführen, z. B. Ihre Marketing-Bemühungen für die Funktionen verbessern, die Ihre treusten Benutzer verwenden.</p><!-- This template uses the --> |
 
 ### Mobile: Informationen zu Mobilgeräten {#mobile-devices}
 
@@ -822,45 +825,170 @@ Die folgenden Vorlagen sind verfügbar:
 | **Mobilgerätetyp** | Zeigen Sie die Mobilgerätetypen an, mit denen Benutzer auf Ihre Site zugreifen, z. B. Smartphones und Tablets.<p>**Dies kann Ihnen** dabei helfen, die verschiedenen Arten von Mobilgeräten besser zu verstehen, die für den Zugriff auf Ihre Site verwendet werden.</p><p>**Je nachdem, was Sie lernen, können Sie** eine beliebige Anzahl von Dingen ausführen, z. B. Ihre Site für die Mobilgerätetypen optimieren, die am häufigsten verwendet werden.</p><p>Diese Vorlage verwendet die Dimension Mobilgerätetyp .</p> |
 | **Hersteller** | Ermitteln Sie, welche Hersteller die Mobilgeräte herstellen, mit denen Benutzer auf Ihre Site zugreifen, z. B. Apple und Samsung.<p>**Dies kann Ihnen** helfen, besser zu verstehen, welche Hersteller bei Ihrer Benutzerbasis am beliebtesten sind.</p><p>**Basierend auf dem, was Sie lernen, können Sie** eine beliebige Anzahl von Dingen ausführen, z. B. Ihre Inhaltsbereitstellung auf Grundlage der Fähigkeiten verschiedener Hersteller anpassen, um ein reibungsloses Benutzererlebnis zu gewährleisten.</p><p>Diese Vorlage verwendet die Dimension Mobilgerätehersteller .</p> |
 
-### Zeitunterteilung
+### Zeitunterteilung {#time-parting}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-template--minuteOfHour"
+>title="Anzeigen der Anzahl der Ereignisse, Sitzungen und Personen auf Ihrer Site, aufgeschlüsselt nach Minuten. Wenn Sie beispielsweise einen Bericht mit einem Berichtszeitrahmen von einem einzelnen Tag haben, wird die erste Minute jeder Stunde des Tages in dasselbe Dimensionselement gruppiert."
+>abstract="**Dies kann Ihnen** helfen, Trends auf granularer Ebene besser zu verstehen.<br/>**Je nachdem, was Sie lernen, können Sie** eine beliebige Anzahl von Dingen ausführen, z. B. Ressourcen für Spitzenzeiten optimieren, bis auf die Minute.<br/>Diese Vorlage verwendet die Dimension Minute der Stunde ."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-template--hourOfDay"
+>title="Anzeigen von Ereignissen, Sitzungen und Personen auf Ihrer Site, aufgeschlüsselt nach Stunden des Tages. Wenn Sie beispielsweise einen Bericht haben, der sich vom 1. Januar bis zum 7. Januar erstreckt, wird die erste Stunde jedes Tages in dasselbe Dimensionselement gruppiert."
+>abstract="**Dies kann Ihnen** helfen, die Tageszeit besser zu verstehen, zu der Ihre Site am häufigsten und am wenigsten häufig besucht wird.<br/>**Je nachdem, was Sie lernen, können Sie** eine beliebige Anzahl von Dingen ausführen, z. B. Ihrer Site während hoher Traffic-Zeiten mehr Rechenressourcen zuweisen.<br/>Diese Vorlage verwendet die Dimension Stunde des Tages."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-template--am-pm"
+>title="Anzeigen von Ereignissen, Sitzungen und Personen auf Ihrer Site, aufgeschlüsselt nach AM und PM. Wenn Sie beispielsweise einen Bericht haben, der sich vom 1. Januar bis zum 7. Januar erstreckt, werden die AM-Stunden jedes Tages in dasselbe Dimensionselement gruppiert."
+>abstract="***Dies kann Ihnen** helfen, die Tageszeit besser zu verstehen, zu der Ihre Site am häufigsten und am wenigsten häufig besucht wird.<br/>**Je nachdem, was Sie lernen, können Sie** eine beliebige Anzahl von Dingen ausführen, z. B. Ihrer Site während hoher Traffic-Zeiten mehr Rechenressourcen zuweisen.<br/>Diese Vorlage verwendet die AM/PM-Dimension."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-template--dayOfWeek"
+>title="Anzeigen von Ereignissen, Sitzungen und Personen auf Ihrer Site, aufgeschlüsselt nach Wochentagen. Wenn Sie beispielsweise einen Bericht haben, der sich auf den Monat Januar erstreckt, wird jeder Wochentag in dasselbe Dimensionselement gruppiert."
+>abstract="**Dies kann Ihnen** helfen, besser zu verstehen, welche Wochentage Ihre Site am häufigsten und am seltensten besucht.<br/>**Je nachdem, was Sie lernen, können Sie** eine beliebige Anzahl von Dingen ausführen, z. B. Ihr Callcenter besser für Tage mit hohem Traffic-Aufkommen gestalten.<br/>Diese Vorlage verwendet die Dimension Wochentag ."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-template--dayOfMonth"
+>title="Anzeigen von Ereignissen, Sitzungen und Personen auf Ihrer Site, aufgeschlüsselt nach Tag des Monats. Wenn Sie beispielsweise einen Bericht haben, der sich auf ein ganzes Jahr erstreckt, wird jeder Tag des Monats in ein und dasselbe Dimensionselement gruppiert."
+>abstract="**Dies kann Ihnen** helfen, besser zu verstehen, welche Tage eines jeden Monats Ihre Site am häufigsten und am wenigsten häufig besucht.<br/>**Je nachdem, was Sie lernen, können Sie** eine beliebige Anzahl von Dingen ausführen, z. B. Ihr Callcenter besser für Tage mit hohem Traffic-Aufkommen gestalten.<br/>Diese Vorlage verwendet die Dimension Tag des Monats ."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-template--dayOfYear"
+>title="Zeigen Sie Ereignisse, Sitzungen und Personen auf Ihrer Site an, aufgeschlüsselt nach Tag des Jahres. Wenn Sie beispielsweise einen Bericht haben, der sich über mehrere Jahre erstreckt, wird jeder Tag des Jahres in ein und dasselbe Dimensionselement gruppiert."
+>abstract="**Dies kann Ihnen** helfen, besser zu verstehen, welche Tage eines jeden Jahres Ihre Site am häufigsten und am wenigsten häufig besucht.<br/>**Je nachdem, was Sie lernen, können Sie** eine beliebige Anzahl von Dingen ausführen, z. B. Ihr Callcenter besser für Tage mit hohem Traffic-Aufkommen gestalten.<br/>Diese Vorlage verwendet die Dimension Tag des Jahres ."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-template--weekdayWeekend"
+>title="Zeigen Sie Ereignisse, Sitzungen und Personen auf Ihrer Site an, aufgeschlüsselt nach Wochentagen und Wochenenden. Wenn Sie beispielsweise einen Bericht haben, der sich auf den Januar erstreckt, werden Wochentage und Wochenenden in separate Dimensionselemente gruppiert."
+>abstract="**Dies kann Ihnen** helfen, die Unterschiede im Site-Traffic für Wochentage und Wochenenden besser zu verstehen.<br/>**Je nachdem, was Sie lernen, können Sie** eine beliebige Anzahl von Dingen ausführen, z. B. Ihr Callcenter stärker an den Wochenenden zu beschäftigen, wenn der Bericht darauf hinweist, dass Wochenenden schlechter sind als Wochentage.<br/>Diese Vorlage verwendet die Dimension Wochentag/Wochenende ."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-template--weekOfYear"
+>title="Anzeigen von Ereignissen, Sitzungen und Personen auf Ihrer Site, aufgeschlüsselt nach Woche des Jahres. Wenn Sie beispielsweise einen Bericht haben, der sich über mehrere Jahre erstreckt, wird jede Woche in demselben Dimensionselement gruppiert."
+>abstract="**Dies kann Ihnen** helfen, besser zu verstehen, welche Wochen des Jahres Ihre Site am häufigsten und am wenigsten häufig besucht wird.<br/>**Je nachdem, was Sie lernen, können Sie** eine beliebige Anzahl von Dingen ausführen, z. B. Ihr Callcenter für Wochen mit hohem Traffic besser betreuen, z. B. während der Feiertage.<br/>Diese Vorlage verwendet die Dimension Woche des Jahres ."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-template--monthOfYear"
+>title="Anzeigen von Ereignissen, Sitzungen und Personen auf Ihrer Site, aufgeschlüsselt nach Monat des Jahres. Wenn Sie beispielsweise einen Bericht haben, der sich über mehrere Jahre erstreckt, wird jeder Monat in demselben Dimensionselement gruppiert."
+>abstract="**Dies kann Ihnen** helfen, besser zu verstehen, in welchen Monaten Ihre Site am häufigsten und am seltensten besucht wird.<br/>**Je nachdem, was Sie lernen, können Sie** eine beliebige Anzahl von Dingen ausführen, z. B. Ihr Callcenter für Monate mit hohem Traffic-Aufkommen besser betreuen, z. B. während der Feiertage.<br/>Diese Vorlage verwendet die Dimension &quot;Monat des Jahres&quot;."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-template--quarterOfYear"
+>title="Anzeigen von Ereignissen, Sitzungen und Personen auf Ihrer Site, aufgeschlüsselt nach Quartal des Jahres. Wenn Sie beispielsweise einen Bericht haben, der sich über mehrere Jahre erstreckt, wird jedes Quartal in demselben Dimensionselement gruppiert."
+>abstract="**Dies kann Ihnen** helfen, besser zu verstehen, welche Quartale Ihre Site am häufigsten und am seltensten besucht.<br/>**Basierend auf dem, was Sie lernen, können Sie** eine beliebige Anzahl von Dingen ausführen, z. B. die Zeit des Produktstarts, um historisch wenig Traffic-Viertel zu steigern.<br/>Diese Vorlage verwendet die Dimension &quot;Quartal des Jahres&quot;."
+
+<!-- markdownlint-enable MD034 -->
 
 Die folgenden Vorlagen sind verfügbar:
 
 | Vorlagenname | Warum diese Vorlage <!-- What do you do with it? What can it help you learn? and What are the potential actions? --> verwenden |
 | --- | --- | 
-| [!UICONTROL **Minute der Stunde**] | Anzeigen der Anzahl der Ereignisse, Sitzungen und Personen auf Ihrer Site, aufgeschlüsselt nach Minuten. Wenn Sie beispielsweise einen Bericht mit einem Berichtszeitrahmen von einem einzelnen Tag haben, wird die erste Minute jeder Stunde des Tages in dasselbe Dimensionselement gruppiert.<p>**Dies kann Ihnen** helfen, Trends auf granularer Ebene besser zu verstehen.</p><p>**Je nachdem, was Sie lernen, können Sie** eine beliebige Anzahl von Dingen ausführen, z. B. </p><p>Diese Vorlage verwendet die Dimension Minute der Stunde . |
-| **Stunde des Tages** | Anzeigen von Ereignissen, Sitzungen und Personen auf Ihrer Site, aufgeschlüsselt nach Stunden des Tages. Wenn Sie beispielsweise einen Bericht haben, der sich vom 1. Januar bis zum 7. Januar erstreckt, wird die erste Stunde jedes Tages in dasselbe Dimensionselement gruppiert.<p>**Dies kann Ihnen** helfen, die Tageszeit besser zu verstehen, zu der Ihre Site am häufigsten und am wenigsten häufig besucht wird.</p><p>**Je nachdem, was Sie lernen, können Sie** eine beliebige Anzahl von Dingen ausführen, z. B. Ihrer Site während hoher Traffic-Zeiten mehr Rechenressourcen zuweisen.</p><p>Diese Vorlage verwendet die Dimension Stunde des Tages. |
-| **Vormittag/Nachmittag** | Anzeigen von Ereignissen, Sitzungen und Personen auf Ihrer Site, aufgeschlüsselt nach AM und PM. Wenn Sie beispielsweise einen Bericht haben, der sich vom 1. Januar bis zum 7. Januar erstreckt, werden die AM-Stunden jedes Tages in dasselbe Dimensionselement gruppiert.<p>**Dies kann Ihnen** helfen, die Tageszeit besser zu verstehen, zu der Ihre Site am häufigsten und am wenigsten häufig besucht wird.</p><p>**Je nachdem, was Sie lernen, können Sie** eine beliebige Anzahl von Dingen ausführen, z. B. Ihrer Site während hoher Traffic-Zeiten mehr Rechenressourcen zuweisen.</p><p>Diese Vorlage verwendet die AM/PM-Dimension. |
-| **Wochentag** | Anzeigen von Ereignissen, Sitzungen und Personen auf Ihrer Site, aufgeschlüsselt nach Wochentagen. Wenn Sie beispielsweise einen Bericht haben, der sich auf den Monat Januar erstreckt, wird jeder Wochentag in dasselbe Dimensionselement gruppiert. <p>**Dies kann Ihnen** helfen, besser zu verstehen, welche Wochentage Ihre Site am häufigsten und am seltensten besucht.</p><p>**Je nachdem, was Sie lernen, können Sie** eine beliebige Anzahl von Dingen ausführen, z. B. Ihr Callcenter besser für Tage mit hohem Traffic-Aufkommen gestalten.</p><p>Diese Vorlage verwendet die Dimension Wochentag . |
-| **Tag des Monats** | Anzeigen von Ereignissen, Sitzungen und Personen auf Ihrer Site, aufgeschlüsselt nach Tag des Monats. Wenn Sie beispielsweise einen Bericht haben, der sich auf ein ganzes Jahr erstreckt, wird jeder Tag des Monats in ein und dasselbe Dimensionselement gruppiert. <p>**Dies kann Ihnen** helfen, besser zu verstehen, welche Tage eines jeden Monats Ihre Site am häufigsten und am wenigsten häufig besucht.</p><p>**Je nachdem, was Sie lernen, können Sie** eine beliebige Anzahl von Dingen ausführen, z. B. Ihr Callcenter besser für Tage mit hohem Traffic-Aufkommen gestalten.</p><p>Diese Vorlage verwendet die Dimension Tag des Monats . |
-| **Tag des Jahres** | Zeigen Sie Ereignisse, Sitzungen und Personen auf Ihrer Site an, aufgeschlüsselt nach Tag des Jahres. Wenn Sie beispielsweise einen Bericht haben, der sich über mehrere Jahre erstreckt, wird jeder Tag des Jahres in ein und dasselbe Dimensionselement gruppiert. <p>**Dies kann Ihnen** helfen, besser zu verstehen, welche Tage eines jeden Jahres Ihre Site am häufigsten und am wenigsten häufig besucht.</p><p>**Je nachdem, was Sie lernen, können Sie** eine beliebige Anzahl von Dingen ausführen, z. B. Ihr Callcenter besser für Tage mit hohem Traffic-Aufkommen gestalten.</p><p>Diese Vorlage verwendet die Dimension Tag des Jahres . |
-| **Wochentag/Wochenende** | Zeigen Sie Ereignisse, Sitzungen und Personen auf Ihrer Site an, aufgeschlüsselt nach Wochentagen und Wochenenden. Wenn Sie beispielsweise einen Bericht haben, der sich auf den Januar erstreckt, werden Wochentage und Wochenenden in separate Dimensionselemente gruppiert. <p>**Dies kann Ihnen** helfen, die Unterschiede im Site-Traffic für Wochentage und Wochenenden besser zu verstehen.</p><p>**Je nachdem, was Sie lernen, können Sie** eine beliebige Anzahl von Dingen ausführen, z. B. Ihr Callcenter stärker an den Wochenenden zu beschäftigen, wenn der Bericht darauf hinweist, dass Wochenenden schlechter sind als Wochentage.</p><p>Diese Vorlage verwendet die Dimension Wochentag/Wochenende . |
-| **Woche des Jahres** | Anzeigen von Ereignissen, Sitzungen und Personen auf Ihrer Site, aufgeschlüsselt nach Woche des Jahres. Wenn Sie beispielsweise einen Bericht haben, der sich über mehrere Jahre erstreckt, wird jede Woche in demselben Dimensionselement gruppiert.<p>**Dies kann Ihnen** helfen, besser zu verstehen, welche Wochen des Jahres Ihre Site am häufigsten und am wenigsten häufig besucht wird.</p><p>**Je nachdem, was Sie lernen, können Sie** eine beliebige Anzahl von Dingen ausführen, z. B. Ihr Callcenter für Wochen mit hohem Traffic besser betreuen, z. B. während der Feiertage.</p><p>Diese Vorlage verwendet die Dimension Woche des Jahres . |
-| **Monat des Jahres** | Anzeigen von Ereignissen, Sitzungen und Personen auf Ihrer Site, aufgeschlüsselt nach Monat des Jahres. Wenn Sie beispielsweise einen Bericht haben, der sich über mehrere Jahre erstreckt, wird jeder Monat in demselben Dimensionselement gruppiert.<p>**Dies kann Ihnen** helfen, besser zu verstehen, in welchen Monaten Ihre Site am häufigsten und am seltensten besucht wird.</p><p>**Je nachdem, was Sie lernen, können Sie** eine beliebige Anzahl von Dingen ausführen, z. B. Ihr Callcenter für Monate mit hohem Traffic-Aufkommen besser betreuen, z. B. während der Feiertage.</p><p>Diese Vorlage verwendet die Dimension Monat des Jahres . |
-| **Quartal des Jahres** | Anzeigen von Ereignissen, Sitzungen und Personen auf Ihrer Site, aufgeschlüsselt nach Quartal des Jahres. Wenn Sie beispielsweise einen Bericht haben, der sich über mehrere Jahre erstreckt, wird jedes Quartal in demselben Dimensionselement gruppiert.<p>**Dies kann Ihnen** helfen, besser zu verstehen, welche Quartale Ihre Site am häufigsten und am seltensten besucht.</p><p>**Basierend auf dem, was Sie lernen, können Sie** eine beliebige Anzahl von Dingen ausführen, z. B. die Zeit des Produktstarts, um historisch wenig Traffic-Viertel zu steigern.</p><p>Diese Vorlage verwendet die Dimension &quot;Quartal des Jahres&quot;. |
+| [!UICONTROL **Minute der Stunde**] | Anzeigen der Anzahl der Ereignisse, Sitzungen und Personen auf Ihrer Site, aufgeschlüsselt nach Minuten. Wenn Sie beispielsweise einen Bericht mit einem Berichtszeitrahmen von einem einzelnen Tag haben, wird die erste Minute jeder Stunde des Tages in dasselbe Dimensionselement gruppiert.<p>**Dies kann Ihnen** helfen, Trends auf granularer Ebene besser zu verstehen.</p><p>**Je nachdem, was Sie lernen, können Sie** eine beliebige Anzahl von Dingen ausführen, z. B. Ressourcen für Spitzenzeiten optimieren, bis auf die Minute.</p><p>Diese Vorlage verwendet die Dimension Minute der Stunde .</p> |
+| **Stunde des Tages** | Anzeigen von Ereignissen, Sitzungen und Personen auf Ihrer Site, aufgeschlüsselt nach Stunden des Tages. Wenn Sie beispielsweise einen Bericht haben, der sich vom 1. Januar bis zum 7. Januar erstreckt, wird die erste Stunde jedes Tages in dasselbe Dimensionselement gruppiert.<p>**Dies kann Ihnen** helfen, die Tageszeit besser zu verstehen, zu der Ihre Site am häufigsten und am wenigsten häufig besucht wird.</p><p>**Je nachdem, was Sie lernen, können Sie** eine beliebige Anzahl von Dingen ausführen, z. B. Ihrer Site während hoher Traffic-Zeiten mehr Rechenressourcen zuweisen.</p><p>Diese Vorlage verwendet die Dimension Stunde des Tages.</p> |
+| **Vormittag/Nachmittag** | Anzeigen von Ereignissen, Sitzungen und Personen auf Ihrer Site, aufgeschlüsselt nach AM und PM. Wenn Sie beispielsweise einen Bericht haben, der sich vom 1. Januar bis zum 7. Januar erstreckt, werden die AM-Stunden jedes Tages in dasselbe Dimensionselement gruppiert.<p>**Dies kann Ihnen** helfen, die Tageszeit besser zu verstehen, zu der Ihre Site am häufigsten und am wenigsten häufig besucht wird.</p><p>**Je nachdem, was Sie lernen, können Sie** eine beliebige Anzahl von Dingen ausführen, z. B. Ihrer Site während hoher Traffic-Zeiten mehr Rechenressourcen zuweisen.</p><p>Diese Vorlage verwendet die AM/PM-Dimension.</p> |
+| **Wochentag** | Anzeigen von Ereignissen, Sitzungen und Personen auf Ihrer Site, aufgeschlüsselt nach Wochentagen. Wenn Sie beispielsweise einen Bericht haben, der sich auf den Monat Januar erstreckt, wird jeder Wochentag in dasselbe Dimensionselement gruppiert. <p>**Dies kann Ihnen** helfen, besser zu verstehen, welche Wochentage Ihre Site am häufigsten und am seltensten besucht.</p><p>**Je nachdem, was Sie lernen, können Sie** eine beliebige Anzahl von Dingen ausführen, z. B. Ihr Callcenter besser für Tage mit hohem Traffic-Aufkommen gestalten.</p><p>Diese Vorlage verwendet die Dimension Wochentag .</p> |
+| **Tag des Monats** | Anzeigen von Ereignissen, Sitzungen und Personen auf Ihrer Site, aufgeschlüsselt nach Tag des Monats. Wenn Sie beispielsweise einen Bericht haben, der sich auf ein ganzes Jahr erstreckt, wird jeder Tag des Monats in ein und dasselbe Dimensionselement gruppiert. <p>**Dies kann Ihnen** helfen, besser zu verstehen, welche Tage eines jeden Monats Ihre Site am häufigsten und am wenigsten häufig besucht.</p><p>**Je nachdem, was Sie lernen, können Sie** eine beliebige Anzahl von Dingen ausführen, z. B. Ihr Callcenter besser für Tage mit hohem Traffic-Aufkommen gestalten.</p><p>Diese Vorlage verwendet die Dimension Tag des Monats .</p> |
+| **Tag des Jahres** | Zeigen Sie Ereignisse, Sitzungen und Personen auf Ihrer Site an, aufgeschlüsselt nach Tag des Jahres. Wenn Sie beispielsweise einen Bericht haben, der sich über mehrere Jahre erstreckt, wird jeder Tag des Jahres in ein und dasselbe Dimensionselement gruppiert. <p>**Dies kann Ihnen** helfen, besser zu verstehen, welche Tage eines jeden Jahres Ihre Site am häufigsten und am wenigsten häufig besucht.</p><p>**Je nachdem, was Sie lernen, können Sie** eine beliebige Anzahl von Dingen ausführen, z. B. Ihr Callcenter besser für Tage mit hohem Traffic-Aufkommen gestalten.</p><p>Diese Vorlage verwendet die Dimension Tag des Jahres .&lt;/> |
+| **Wochentag/Wochenende** | Zeigen Sie Ereignisse, Sitzungen und Personen auf Ihrer Site an, aufgeschlüsselt nach Wochentagen und Wochenenden. Wenn Sie beispielsweise einen Bericht haben, der sich auf den Januar erstreckt, werden Wochentage und Wochenenden in separate Dimensionselemente gruppiert. <p>**Dies kann Ihnen** helfen, die Unterschiede im Site-Traffic für Wochentage und Wochenenden besser zu verstehen.</p><p>**Je nachdem, was Sie lernen, können Sie** eine beliebige Anzahl von Dingen ausführen, z. B. Ihr Callcenter stärker an den Wochenenden zu beschäftigen, wenn der Bericht darauf hinweist, dass Wochenenden schlechter sind als Wochentage.</p><p>Diese Vorlage verwendet die Dimension Wochentag/Wochenende .</p> |
+| **Woche des Jahres** | Anzeigen von Ereignissen, Sitzungen und Personen auf Ihrer Site, aufgeschlüsselt nach Woche des Jahres. Wenn Sie beispielsweise einen Bericht haben, der sich über mehrere Jahre erstreckt, wird jede Woche in demselben Dimensionselement gruppiert.<p>**Dies kann Ihnen** helfen, besser zu verstehen, welche Wochen des Jahres Ihre Site am häufigsten und am wenigsten häufig besucht wird.</p><p>**Je nachdem, was Sie lernen, können Sie** eine beliebige Anzahl von Dingen ausführen, z. B. Ihr Callcenter für Wochen mit hohem Traffic besser betreuen, z. B. während der Feiertage.</p><p>Diese Vorlage verwendet die Dimension Woche des Jahres .</p> |
+| **Monat des Jahres** | Anzeigen von Ereignissen, Sitzungen und Personen auf Ihrer Site, aufgeschlüsselt nach Monat des Jahres. Wenn Sie beispielsweise einen Bericht haben, der sich über mehrere Jahre erstreckt, wird jeder Monat in demselben Dimensionselement gruppiert.<p>**Dies kann Ihnen** helfen, besser zu verstehen, in welchen Monaten Ihre Site am häufigsten und am seltensten besucht wird.</p><p>**Je nachdem, was Sie lernen, können Sie** eine beliebige Anzahl von Dingen ausführen, z. B. Ihr Callcenter für Monate mit hohem Traffic-Aufkommen besser betreuen, z. B. während der Feiertage.</p><p>Diese Vorlage verwendet die Dimension Monat des Jahres .</p> |
+| **Quartal des Jahres** | Anzeigen von Ereignissen, Sitzungen und Personen auf Ihrer Site, aufgeschlüsselt nach Quartal des Jahres. Wenn Sie beispielsweise einen Bericht haben, der sich über mehrere Jahre erstreckt, wird jedes Quartal in demselben Dimensionselement gruppiert.<p>**Dies kann Ihnen** helfen, besser zu verstehen, welche Quartale Ihre Site am häufigsten und am seltensten besucht.</p><p>**Basierend auf dem, was Sie lernen, können Sie** eine beliebige Anzahl von Dingen ausführen, z. B. die Zeit des Produktstarts, um historisch wenig Traffic-Viertel zu steigern.</p><p>Diese Vorlage verwendet die Dimension &quot;Quartal des Jahres&quot;.</p> |
 
-### Kanalübergreifend
+### Kanalübergreifend {#cross-channel}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-template--multiChannelOverview"
+>title="Anzeigen der Traffic-Verteilung über mehrere Kanäle."
+>abstract="**Dies kann Ihnen** helfen, besser zu verstehen, welche Kanäle Traffic und Interaktion erfolgreicher fördern. <br/>**Je nachdem, was Sie lernen, können Sie** eine beliebige Anzahl von Dingen ausführen, z. B. Marketing-Maßnahmen auf die Kanäle konzentrieren, die die höchste ROI erzielen.<br/>Diese Vorlage verwendet die Benutzer-, Sitzungs- und Ereignismetriken."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-template--callCenterDeflection"
+>title="Sehen Sie sich an, wie der Web-Traffic den Callcenter-Traffic beeinflusst."
+>abstract="**Dies kann Ihnen** helfen, besser zu verstehen, wie erfolgreich der Self-Service-Inhalt auf Ihrer Website den Traffic zu Ihrem Callcenter lenkt.<br/>**Basierend auf dem, was Sie lernen, können Sie** eine beliebige Anzahl von Dingen ausführen, z. B. den Self-Service-Inhalt verbessern, um den Traffic zu Ihrem Callcenter zu reduzieren, oder den ROI Ihres Self-Service-Inhalts messen, indem Sie den durch weniger Support-Aufrufe eingesparten Betrag berechnen.<br/>Diese Vorlage verwendet die Metriken Web-Sitzungen, Mobile-App-Sitzungen und Web+App-Sitzungen."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-template--webAppTemplate"
+>title="Anzeigen von Web-Traffic und mobilem Traffic"
+>abstract="**Dies kann Ihnen** dabei helfen, die Verteilung des Web- und mobilen Traffics auf Ihre Site besser zu verstehen.<br/>**Basierend auf Ihren Erkenntnissen können Sie** beliebig viele Dinge tun, z. B. mehr Ressourcen für Ihr App-Erlebnis zuweisen, wenn es ein bestimmtes Traffic-Niveau erreicht.<br/>Diese Vorlage verwendet die Metriken Web-Sitzungen, Mobile-App-Sitzungen und Web+App-Sitzungen."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-template--onlineOffline"
+>title="Anzeigen von Online- und Offline-Traffic gemeinsam."
+>abstract="**Dies kann Ihnen** helfen, die Verteilung des Online- und Offline-Traffics auf Ihre Site besser zu verstehen.<br/>**Je nachdem, was Sie lernen, können Sie** eine beliebige Anzahl von Dingen ausführen, z. B. mehr Ressourcen für Ihr Online-Erlebnis bereitstellen, wenn es ein bestimmtes Traffic-Niveau erreicht."
+
+<!-- markdownlint-enable MD034 -->
 
 Die folgenden Vorlagen sind verfügbar:
 
 | Vorlagenname | Warum diese Vorlage <!-- What do you do with it? What can it help you learn? and What are the potential actions? --> verwenden |
 | --- | --- | 
-| [!UICONTROL **Überblick über mehrere Kanäle**] | <p>**Dies hilft Ihnen**, besser zu verstehen</p><p>**Je nachdem, was Sie lernen, können Sie** eine beliebige Anzahl von Dingen ausführen, z. B. </p><p>Diese Vorlage verwendet die |
-| **Kanalübergreifender Vergleich** | <p>**Dies hilft Ihnen**, besser zu verstehen</p><p>**Je nachdem, was Sie lernen, können Sie** eine beliebige Anzahl von Dingen ausführen, z. B. </p><p>Diese Vorlage verwendet die |
-| **Callcenter-Erkennung (Web+Call Center)** | Sehen Sie sich an, wie der Web-Traffic den Callcenter-Traffic beeinflusst.<p>**Dies kann Ihnen** helfen, besser zu verstehen, wie erfolgreich der Self-Service-Inhalt auf Ihrer Website den Traffic zu Ihrem Callcenter lenkt.</p><p>**Basierend auf dem, was Sie lernen, können Sie** eine beliebige Anzahl von Dingen ausführen, z. B. den Self-Service-Inhalt verbessern, um den Traffic zu Ihrem Callcenter zu reduzieren, oder den ROI Ihres Self-Service-Inhalts messen, indem Sie den durch weniger Support-Aufrufe eingesparten Betrag berechnen.</p><p>Diese Vorlage verwendet die |
-| **Web+App** | Anzeigen von Web-Traffic und mobilem Traffic<p>**Dies kann Ihnen** dabei helfen, die Verteilung des Web- und mobilen Traffics auf Ihre Site besser zu verstehen.</p><p>**Basierend auf Ihren Erkenntnissen können Sie** beliebig viele Dinge tun, z. B. mehr Ressourcen für Ihr App-Erlebnis zuweisen, wenn es ein bestimmtes Traffic-Niveau erreicht.</p><p>Diese Vorlage verwendet die |
-| **Online/Offline** | Anzeigen von Online- und Offline-Traffic gemeinsam.<p>**Dies kann Ihnen** helfen, die Verteilung des Online- und Offline-Traffics auf Ihre Site besser zu verstehen.</p><p>**Je nachdem, was Sie lernen, können Sie** eine beliebige Anzahl von Dingen ausführen, z. B. mehr Ressourcen für Ihr Online-Erlebnis bereitstellen, wenn es ein bestimmtes Traffic-Niveau erreicht.</p><p>Diese Vorlage verwendet die |
+| [!UICONTROL **Überblick über mehrere Kanäle**] | Anzeigen der Traffic-Verteilung über mehrere Kanäle. <p>**Dies kann Ihnen** helfen, besser zu verstehen, welche Kanäle Traffic und Interaktion erfolgreicher fördern. </p><p>**Je nachdem, was Sie lernen, können Sie** eine beliebige Anzahl von Dingen ausführen, z. B. Marketing-Maßnahmen auf die Kanäle konzentrieren, die die höchste ROI erzielen.</p><p>Diese Vorlage verwendet die Benutzer-, Sitzungs- und Ereignismetriken.</p> |
+| **Callcenter-Erkennung (Web+Call Center)** | Sehen Sie sich an, wie der Web-Traffic den Callcenter-Traffic beeinflusst.<p>**Dies kann Ihnen** helfen, besser zu verstehen, wie erfolgreich der Self-Service-Inhalt auf Ihrer Website den Traffic zu Ihrem Callcenter lenkt.</p><p>**Basierend auf dem, was Sie lernen, können Sie** eine beliebige Anzahl von Dingen ausführen, z. B. den Self-Service-Inhalt verbessern, um den Traffic zu Ihrem Callcenter zu reduzieren, oder den ROI Ihres Self-Service-Inhalts messen, indem Sie den durch weniger Support-Aufrufe eingesparten Betrag berechnen.</p><p>Diese Vorlage verwendet die Metriken Web-Sitzungen, Mobile-App-Sitzungen und Web+App-Sitzungen.</p> |
+| **Web+App** | Anzeigen von Web-Traffic und mobilem Traffic<p>**Dies kann Ihnen** dabei helfen, die Verteilung des Web- und mobilen Traffics auf Ihre Site besser zu verstehen.</p><p>**Basierend auf Ihren Erkenntnissen können Sie** beliebig viele Dinge tun, z. B. mehr Ressourcen für Ihr App-Erlebnis zuweisen, wenn es ein bestimmtes Traffic-Niveau erreicht.</p><p>Diese Vorlage verwendet die Metriken Web-Sitzungen, Mobile-App-Sitzungen und Web+App-Sitzungen.</p> |
+| **Online/Offline** | Anzeigen von Online- und Offline-Traffic gemeinsam.<p>**Dies kann Ihnen** helfen, die Verteilung des Online- und Offline-Traffics auf Ihre Site besser zu verstehen.</p><p>**Je nachdem, was Sie lernen, können Sie** eine beliebige Anzahl von Dingen ausführen, z. B. mehr Ressourcen für Ihr Online-Erlebnis bereitstellen, wenn es ein bestimmtes Traffic-Niveau erreicht.</p><!-- This template uses the ... --> |
 
-### Andere Kanäle
+### Andere Kanäle {#other-channels}
 
 Die folgenden Vorlagen sind verfügbar:
 
 | Vorlagenname | Warum diese Vorlage <!-- What do you do with it? What can it help you learn? and What are the potential actions? --> verwenden |
 | --- | --- | 
 | [!UICONTROL **Callcenter-Dashboard**] | <p>**Dies hilft Ihnen**, besser zu verstehen</p><p>**Je nachdem, was Sie lernen, können Sie** eine beliebige Anzahl von Dingen ausführen, z. B. </p><p>Diese Vorlage verwendet die |
-| **POS/Offline** | Zeigen Sie POS- und Offline-Transaktionsdaten an.<p>**Dies hilft Ihnen**, besser zu verstehen</p><p>**Je nachdem, was Sie lernen, können Sie** eine beliebige Anzahl von Dingen ausführen, z. B. </p><p>Diese Vorlage verwendet die |
+| **POS/Offline** | Zeigen Sie POS-Transaktionsdaten (Point-of-Sale) an, einschließlich Umsatz, getätigten Bestellungen und verkauften Einheiten. Diese Vorlage enthält auch Visualisierungen, die Informationen über Top-Stores, Top-Produkte und Top-Produktkategorien sowie Online- und Offline-Verkäufe anzeigen. <p>**Dies kann Ihnen** helfen, besser zu verstehen, welche Produkte Sie am häufigsten verkaufen, und zwar über den Store und online.</p><p>**Basierend auf dem, was Sie lernen, können Sie** eine beliebige Anzahl von Dingen ausführen, z. B. mehr Marketing-Ressourcen zu Ihren Produkten und Kanälen mit der höchsten Leistung zuweisen.</p><p>Diese Vorlage verwendet die Metriken Benutzer, Umsatz und Bestellungen .</p> |
 | **E-Mail/AJO** | <p>**Dies hilft Ihnen**, besser zu verstehen</p><p>**Je nachdem, was Sie lernen, können Sie** eine beliebige Anzahl von Dingen ausführen, z. B. </p><p>Diese Vorlage verwendet die |
-| **Umfrage** | <p>**Dies hilft Ihnen**, besser zu verstehen</p><p>**Je nachdem, was Sie lernen, können Sie** eine beliebige Anzahl von Dingen ausführen, z. B. </p><p>Diese Vorlage verwendet die |
+| **Umfrage** | Anzeigen der Benutzerinteraktion für Ihre Umfragen. Sehen Sie sich die Anzahl der Starts und Beendigungen, die wichtigsten Fragen und Antworten sowie die Anzahl der ersten und wiederholten Teilnehmer an.<p>**Dies kann Ihnen** dabei helfen, die Interaktionsstufen und die Erfolgsrate Ihrer Umfragen besser zu verstehen.</p><p>**Basierend auf dem, was Sie lernen, können Sie** eine beliebige Anzahl von Dingen ausführen, z. B. zukünftige Umfragen so anpassen, dass eine bessere Beteiligung erreicht wird.</p><p>Diese Vorlage verwendet die Metriken Benutzer, Ereignisse, Umfragestarts, Umfragebeendigungen und Umfrageabschlussrate .</p> |
 
 ### AJO {#AJO-templates}
 
@@ -868,8 +996,8 @@ Die folgenden Vorlagen sind verfügbar:
 
 >[!CONTEXTUALHELP]
 >id="cja-template--ajo-campaign"
->title="AJO-Kampagnen"
->abstract=""
+>title="Zeigen Sie wichtige Metriken für Ihre Journey Optimizer-Kampagnen an, darunter E-Mail-Kampagnen, Experimente, In-App-Nachrichten, SMS usw."
+>abstract="**Dies kann Ihnen** dabei helfen, Details wie die Anzahl der Klicks und die Anzahl der zugestellten Nachrichten besser zu verstehen. So erhalten Sie einen umfassenden Einblick in die Effektivität und den Grad der Interaktion Ihrer Kampagne.<br/>**Je nachdem, was Sie lernen, können Sie** eine beliebige Anzahl von Dingen ausführen, z. B. Ihre Kampagnen auf der Grundlage der Interaktionsstufen Ihrer Zielgruppe anpassen."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -877,8 +1005,8 @@ Die folgenden Vorlagen sind verfügbar:
 
 >[!CONTEXTUALHELP]
 >id="cja-template--ajo-journey"
->title="AJO-Journeys"
->abstract=""
+>title="Zeigen Sie wichtige Metriken für Ihre Journey Optimizer-Journey an, darunter E-Mail-Journey, Experimente, In-App-Nachrichten, SMS und mehr."
+>abstract="**Dies kann Ihnen** dabei helfen, Details wie die Anzahl der Klicks und die Anzahl der zugestellten Nachrichten besser zu verstehen. So erhalten Sie einen umfassenden Einblick in die Effektivität Ihrer Journey und den Grad der Interaktion.<br/>**Je nachdem, was Sie lernen, können Sie** eine beliebige Anzahl von Dingen ausführen, z. B. Ihre Kampagnen auf der Grundlage der Interaktionsstufen Ihrer Zielgruppe anpassen."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -886,8 +1014,8 @@ Die folgenden Vorlagen sind verfügbar:
 
 >[!CONTEXTUALHELP]
 >id="cja-template--ajo-landing-page"
->title="AJO-Landingpages"
->abstract=""
+>title="Anzeigen von Benutzerverhalten, Interaktionsmustern, Konversionsraten und anderen Schlüsselmetriken."
+>abstract="**Dies kann Ihnen** helfen, die Effektivität Ihrer Landingpage besser zu verstehen. <br/>**Je nachdem, was Sie lernen, können Sie** eine beliebige Anzahl von Dingen ausführen, z. B. die Leistung Ihrer Landingpage optimieren."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -895,8 +1023,8 @@ Die folgenden Vorlagen sind verfügbar:
 
 >[!CONTEXTUALHELP]
 >id="cja-template--ajo-channel"
->title="AJO-Übersichtsbericht"
->abstract=""
+>title="Zeigen Sie eine ausführliche Zusammenfassung der Traffic- und Interaktionsmetriken für alle Kampagnen und Journey in Ihrer Umgebung an."
+>abstract="**Dies kann Ihnen** helfen, die Effektivität Ihrer Kampagnen und Journey besser zu verstehen. <br/>**Je nachdem, was Sie lernen, können Sie** eine beliebige Anzahl von Dingen ausführen, z. B. Ihre Kampagnen und Journey auf Grundlage der Interaktionsstufen Ihrer Zielgruppe anpassen."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -904,8 +1032,8 @@ Die folgenden Vorlagen sind verfügbar:
 
 >[!CONTEXTUALHELP]
 >id="cja-template--ajo-subscription"
->title="AJO-Abonnements"
->abstract=""
+>title="Anzeigen von Anmeldungen und Abmeldungen von Profilen, die bestimmten Listen zugeordnet sind."
+>abstract="**Dies kann Ihnen** helfen, die Effektivität verschiedener Abonnementkampagnen und -initiativen bei der Förderung von Interaktion und Konversionen besser zu verstehen.<br/>**Je nachdem, was Sie lernen, können Sie** eine beliebige Anzahl von Dingen ausführen, z. B. Ihre Abonnementkampagnen auf der Grundlage der Interaktionsstufen Ihrer Zielgruppe anpassen."
 
 <!-- markdownlint-enable MD034 -->
 
