@@ -6,14 +6,15 @@ solution: Customer Journey Analytics
 feature: Basics
 hide: true
 hidefromtoc: true
-source-git-commit: 8ef60cc3918b79919674e3c0478a2c1b1bd21d27
+exl-id: 83927cf0-b3b4-42b4-9ca5-0c81c091383f
+source-git-commit: daa07b603caa613ca49b61c2e8e461d558459f57
 workflow-type: tm+mt
 source-wordcount: '645'
-ht-degree: 46%
+ht-degree: 56%
 
 ---
 
-# Aktualisierungskürzel: Migrieren einer AppMeasurement- oder Analytics-Erweiterungsimplementierung zur Verwendung des Web SDK {#shortcut-migrate-websdk}
+# Schnellverfahren zur Aktualisierung: Migrieren der Implementierung einer AppMeasurement- oder Analytics-Erweiterung zur Web SDK-Verwendung {#shortcut-migrate-websdk}
 
 >[!NOTE]
 >
@@ -23,8 +24,8 @@ ht-degree: 46%
 
 >[!CONTEXTUALHELP]
 >id="cja_migrate_aa_to_websdk"
->title="Migrieren Ihrer Analytics-Implementierung zur Verwendung des Web SDK"
->abstract="Anstatt Daten über ein XDM-Objekt zu senden, können Sie alle Variablen im AppMeasurement-Format über das Datenobjekt senden. Mit diesem Tastaturbefehl können Sie weiterhin Ihre AppMeasurement-Logik verwenden, um Daten an Platform zu senden."
+>title="Migrieren der Analytics-Implementierung zur Web SDK-Verwendung"
+>abstract="Statt Daten über ein XDM-Objekt zu senden, können Sie alle Variablen im AppMeasurement-Format über das Datenobjekt senden. Mit diesem Schnellverfahren können Sie weiterhin Ihre AppMeasurement-Logik verwenden, um Daten an Platform zu senden."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -55,4 +56,3 @@ Die grundlegenden Schritte für die Migration einer AppMeasurement- oder Analyti
 1. (Optional) Erstellen Sie ein XDM-Schema für Ihre Organisation, wenn Sie Zeit dazu haben.
 
 1. (Bedingt) Wenn Sie ein XDM-Schema erstellt haben, verwenden Sie die Datastream-Zuordnung, um alle Felder im Datenobjekt Ihrem XDM-Schema zuzuordnen.
-
