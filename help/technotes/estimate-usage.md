@@ -4,10 +4,10 @@ description: Zeigt zwei Methoden zur Schätzung der Nutzung und eine Methode zur
 role: Admin
 feature: Basics
 exl-id: 7a5d1173-8d78-4360-a97a-1ab0a60af135
-source-git-commit: 400dc032be5d491cade84b0e98d88ff8a5949a2f
+source-git-commit: 191d1b7a4b851e93a44487dad4794709cbbd0374
 workflow-type: tm+mt
-source-wordcount: '875'
-ht-degree: 69%
+source-wordcount: '856'
+ht-degree: 68%
 
 ---
 
@@ -29,10 +29,6 @@ So verwalten Sie Ihre Customer Journey Analytics-Nutzung:
 ## Schätzen der Verbindungsgröße {#estimate-size}
 
 Möglicherweise benötigen Sie Informationen zur aktuellen Anzahl von Ereignisdatenzeilen in [!UICONTROL Customer Journey Analytics]. Gehen Sie **für jede der von Ihrem Unternehmen erstellten Verbindungen** wie folgt vor, um genaue Informationen zur Nutzung der Ereignisdatensätze (Datenzeilen) in Ihrem Unternehmen zu erhalten.
-
->[!NOTE]
->
->Machen Sie das am ersten Freitag eines jeden Monats aus, da Adobe Ihren aktuellen Nutzungsbericht an diesem Tag ausführt.
 
 1. Rufen Sie in [!UICONTROL Customer Journey Analytics] den Tab **[!UICONTROL Verbindungen]** auf.
 
