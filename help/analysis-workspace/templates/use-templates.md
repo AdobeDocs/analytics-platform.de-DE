@@ -6,9 +6,9 @@ role: User, Admin
 hide: true
 hidefromtoc: true
 exl-id: d61f215d-9089-4014-9c5a-97f5d7134f34
-source-git-commit: 1345981ac78272935ffa8bfc50de8c41223a132f
+source-git-commit: 658fce422d8d5b59d113b5aa512eedee987afd06
 workflow-type: tm+mt
-source-wordcount: '15295'
+source-wordcount: '15373'
 ht-degree: 58%
 
 ---
@@ -33,9 +33,17 @@ Im Folgenden wird beschrieben, wie Sie Vorlagen auf der Registerkarte [!UICONTRO
 
 1. Wählen Sie in Analysis Workspace die Registerkarte [!UICONTROL **Workspace**].
 
-1. Wählen Sie [!UICONTROL **Vorlagen**] aus.
+   ![Registerkarten für Vorlagen](assets/view-prebuilt-templates.png)
 
-   ![Registerkarte „Berichte“](assets/view-prebuilt-reports.png)
+1. Wählen Sie im Abschnitt [!UICONTROL **Vorlagen**] eine der folgenden Registerkarten aus:
+
+   * **[!UICONTROL Adobe templates]**: Zeigt alle Vorlagen an, die von Adobe bereitgestellt werden.
+
+   * **[!UICONTROL _login_company_name _templates]**: Zeigt alle Unternehmensvorlagen an, für die in Ihrem Unternehmen erstellt wurde.
+
+     Unternehmensvorlagen können nur von einem Administrator erstellt werden.
+
+1. Wählen Sie entweder das Spaltenansichtssymbol ![Spaltenansichtssymbol](assets/column-view-icon.png) oder das Kartenansichtssymbol ![Kartenansichtssymbol](assets/card-view-icon.png) aus, um Vorlagen in einer Spaltenansicht oder Kartenansicht anzuzeigen.
 
 1. Geben Sie im Suchfeld den Namen der Vorlage ein, die Sie finden möchten, und wählen Sie sie dann aus der Vorlagenliste aus.
 
@@ -61,19 +69,19 @@ Im Folgenden wird beschrieben, wie Sie Vorlagen auf der Registerkarte [!UICONTRO
 
 1. Wählen Sie die Vorlage aus, um einen Bericht auf der Basis der von Ihnen ausgewählten Vorlage zu erstellen.
 
-## Vorlagen anpassen und speichern {#use-reports}
+## Erstellen eines Projekts basierend auf einer Vorlage {#use-reports}
 
-Eine Vorlage passt möglicherweise nicht genau zu Ihren Anforderungen, kann Sie jedoch schließen. In diesen Fällen können Sie die Vorlage als Ausgangspunkt verwenden und sie dann an Ihre spezifischen Zwecke anpassen.
+Eine Vorlage passt möglicherweise nicht genau zu Ihren Anforderungen, kann Sie jedoch schließen. In diesen Fällen können Sie die Vorlage als Ausgangspunkt für Ihr Projekt verwenden und sie dann entsprechend Ihren spezifischen Zwecken anpassen.
 
 Wenn Sie nach den Änderungen von einer Vorlage weg navigieren, werden Sie aufgefordert, Ihre Änderungen zu speichern oder zu verwerfen. Durch das Speichern von Änderungen an einer Vorlage wird die Vorlage als neues Projekt gespeichert.
 
-So passen Sie eine Vorlage an und speichern sie:
+So passen Sie eine Vorlage an und speichern sie als Projekt:
 
 1. Wählen Sie in Adobe Analytics die Registerkarte [!UICONTROL **Workspace**] aus.
 
 1. Wählen Sie die Registerkarte [!UICONTROL **Vorlagen**] aus.
 
-1. Wählen Sie die Vorlage aus, die Sie anzeigen möchten. Wählen Sie zum Beispiel unter [!UICONTROL **Am beliebtesten**] den Bericht zu [!UICONTROL **Seiten**].
+1. Wählen Sie die Vorlage aus, die Sie anzeigen möchten. Wählen Sie beispielsweise unter &quot;[!UICONTROL **Am beliebtesten**]&quot;die Vorlage &quot;[!UICONTROL **Seiten**]&quot;aus.
 
    Die Seitenvorlage, wie in Analysis Workspace angezeigt, zeigt zwei [Visualisierungen](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md) ([Balkendiagramm](/help/analysis-workspace/visualizations/bar.md) und [Zusammenfassungsnummer](/help/analysis-workspace/visualizations/summary-number-change.md)) und eine [Freiformtabelle](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) an. Die verwendete Metrik ist „Vorkommen“.
 
@@ -82,7 +90,7 @@ So passen Sie eine Vorlage an und speichern sie:
 1. Führen Sie einen der folgenden Schritte aus:
 
    * Zeigen Sie die Vorlage an.
-   * Sie können ein oder mehrere Segmente oben in den Ablagebereich ziehen. Ziehen Sie beispielsweise das Segment [!UICONTROL **Mobile-Kunden**] und sehen Sie sich die Ergebnisse an.
+   * Ziehen Sie einen oder mehrere Filter in die Dropzone Filter oben. Ziehen Sie beispielsweise den Filter [!UICONTROL **Mobile Customers**] und zeigen Sie die Ergebnisse an.
    * Ändern Sie den Datumsbereich, indem Sie zum Kalender oben rechts gehen.
    * Fügen Sie Dimensionsaufschlüsselungen hinzu, ziehen Sie andere Metriken hinzu und passen Sie die Vorlage im Allgemeinen an Ihre Anforderungen an.
 
