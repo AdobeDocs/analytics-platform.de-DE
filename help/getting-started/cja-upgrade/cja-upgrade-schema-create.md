@@ -7,9 +7,9 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: 902e5890-f970-4f1a-b091-9c3e51a987db
-source-git-commit: ce19cf00d70220b6d7dcdfaeb1d4c9ec5c14e5dd
+source-git-commit: 8bcc6b3b2a1e6f75bd0c868f77a375913412f988
 workflow-type: tm+mt
-source-wordcount: '1072'
+source-wordcount: '1073'
 ht-degree: 48%
 
 ---
@@ -26,13 +26,13 @@ ht-degree: 48%
 >
 >Bevor Sie mit der Erstellung Ihres XDM-Schemas beginnen, wenden Sie sich an Ihr Datenteam und andere Beteiligte in Ihrer Organisation, um das ideale Schema für Customer Journey Analytics und die anderen von Ihnen verwendeten Adobe Experience Platform-Anwendungen zu ermitteln. Weitere Informationen finden Sie unter [Architektur Ihres Schemas für die Verwendung mit Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-schema-architect.md).
 
-Adobe empfiehlt, beim Upgrade auf Customer Journey Analytics ein Experience-Datenmodell (XDM)-Schema zu erstellen. Ein XDM-Schema ermöglicht ein optimiertes Schema, das auf die Bedürfnisse Ihres Unternehmens und die spezifischen von Ihnen verwendeten Platform-Anwendungen zugeschnitten ist. Wenn Änderungen am Schema erforderlich sind, müssen Sie nicht Tausende nicht verwendeter Felder durchgehen, um das zu aktualisierende Feld zu finden.
+Adobe empfiehlt beim Upgrade auf Customer Journey Analytics die Erstellung eines benutzerdefinierten Experience-Datenmodell (XDM)-Schemas. Ein benutzerdefiniertes Schema ermöglicht ein optimiertes Schema, das auf die Anforderungen Ihres Unternehmens und die spezifischen Platform-Anwendungen zugeschnitten ist, die Sie verwenden. Wenn Änderungen am Schema erforderlich sind, müssen Sie nicht Tausende nicht verwendeter Felder durchgehen, um das zu aktualisierende Feld zu finden.
 
 ## Erstellen des Schemas
 
 Das von Ihnen definierte XDM-Schema stellt das Modell der Daten dar, die Sie in Adobe Experience Platform erfassen.
 
-So erstellen Sie ein Schema:
+So erstellen Sie ein benutzerdefiniertes Schema:
 
 <!-- Should we single source this instead of duplicate it? The following steps were copied from: /help/data-ingestion/aepwebsdk.md-->
 

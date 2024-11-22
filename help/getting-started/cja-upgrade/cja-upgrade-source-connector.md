@@ -1,5 +1,5 @@
 ---
-title: Erstellen der Quell-Connector- und Zuordnungsfelder für Analytics
+title: Erstellen der Analytics-Quell-Connector- und Zuordnungsfelder
 description: Erfahren Sie, wie Sie den Analytics-Quell-Connector und die Zuordnungsfelder erstellen.
 role: Admin
 solution: Customer Journey Analytics
@@ -7,14 +7,14 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: f96565a2-f556-4b45-b88e-984613614d2e
-source-git-commit: aedf7a2ad41b09521938b789dbaf1c193cdb661f
+source-git-commit: 0a47796a8b673ef7074a4f9fe865ff59fcf50aab
 workflow-type: tm+mt
-source-wordcount: '636'
-ht-degree: 2%
+source-wordcount: '689'
+ht-degree: 8%
 
 ---
 
-# Erstellen der Quell-Connector- und Zuordnungsfelder für Analytics
+# Erstellen der Analytics-Quell-Connector- und Zuordnungsfelder
 
 >[!NOTE]
 > 
@@ -32,11 +32,15 @@ Um den Analytics-Quell-Connector zu verwenden, um historische Daten in Customer 
 
 1. [Erstellen eines XDM-Schemas für den Analytics-Quell-Connector](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-schema.md)
 
-1. Erstellen Sie die Felder Quell-Connector und Zuordnung für Analytics wie unten beschrieben.
+1. Wenn Sie noch keinen Analytics-Quell-Connector haben, erstellen Sie den Analytics-Quell-Connector und ordnen Sie Felder Ihrem XDM-Schema zu, wie unten beschrieben.
 
-1. [Datensatz des Analytics-Quell-Connectors zur Verbindung hinzufügen](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-dataset.md)
+   Oder
 
-## Erstellen der Quell-Connector- und Zuordnungsfelder für Analytics
+   Wenn Sie bereits über einen Analytics-Quell-Connector verfügen, ordnen Sie Felder vom Quell-Connector Ihrem XDM-Schema zu ](/help/getting-started/cja-upgrade/cja-upgrade-from-source-connector.md).[
+
+1. [Hinzufügen des Datensatzes des Analytics-Quell-Connectors zur Verbindung](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-dataset.md)
+
+## Erstellen der Analytics-Quell-Connector- und Zuordnungsfelder
 
 Nachdem Sie Ihr XDM-Schema erstellt haben, müssen Sie den Adobe Analytics-Quell-Connector erstellen, der für historische Daten verwendet werden soll. (Allgemeine Richtlinien zum Erstellen eines Quell-Connectors finden Sie unter [Erstellen einer Adobe Analytics-Quellverbindung in der Benutzeroberfläche](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=de).)
 
@@ -69,6 +73,8 @@ So erstellen Sie einen Adobe Analytics-Quell-Connector zur Verwendung für histo
    ![Schemafelder zuordnen](assets/schema-mapping.png)
 
    1. Wählen Sie im Feld **[!UICONTROL Source]** ein Adobe Analytics -Feld aus der Feldergruppe Adobe Analytics ExperienceEvent Template aus. Wählen Sie dann im Feld **[!UICONTROL Ziel]** das XDM-Feld aus, dem Sie es zuordnen möchten.
+
+      Nicht alle Adobe Analytics-Felder verfügen aufgrund der inhärenten Architekturunterschiede zwischen AppMeasurement und XDM über ein entsprechendes Feld in XDM.
 
    1. Wiederholen Sie diesen Vorgang für jedes Feld in der Feldergruppe &quot;Adobe Analytics ExperienceEvent Template&quot;, mit dem Sie Daten in Adobe Analytics erfassen.
 

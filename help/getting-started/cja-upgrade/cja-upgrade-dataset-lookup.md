@@ -7,9 +7,9 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: f5443ddd-81d0-43cc-99cb-215e7ddf5acf
-source-git-commit: 1e4c14334da54a5a6e4a0f36b3538c6e4d1a0b6f
+source-git-commit: 8bcc6b3b2a1e6f75bd0c868f77a375913412f988
 workflow-type: tm+mt
-source-wordcount: '853'
+source-wordcount: '847'
 ht-degree: 5%
 
 ---
@@ -28,7 +28,7 @@ Bei Verwendung des Analytics-Quell-Connectors werden einige standardmäßige Loo
 
 Um Daten bei Verwendung des Experience Platform Web SDK in Customer Journey Analytics zu klassifizieren, müssen Sie ein XDM-Schema und einen Lookup-Datensatz für jede Dimension erstellen, die Daten enthält, die Sie klassifizieren möchten.
 
-## Erstellen eines XDM-Schemas
+## Erstellen eines XDM-Schemas zur Verwendung mit dem Lookup-Datensatz
 
 Erstellen Sie ein neues XDM-Schema für jede Dimension, die Daten enthält, die Sie unter Customer Journey Analytics klassifizieren möchten. Wenn Sie den Lookup-Datensatz in einem späteren Schritt erstellen, verweist er auf dieses Schema.
 
@@ -100,7 +100,7 @@ So erstellen Sie einen Lookup-Datensatz zur Verwendung mit einem Schema in Custo
 
 ## Fügen Sie Ihrer Verbindung in Customer Journey Analytics den Lookup-Datensatz hinzu.
 
-Nachdem Sie [ein XDM-Schema erstellen](#create-an-xdm-schema-for-lookup-datasets) und [einen Lookup-Datensatz erstellen](#create-a-lookup-dataset), müssen Sie den Lookup-Datensatz zu Ihrer Verbindung in Customer Journey Analytics hinzufügen.
+Nachdem Sie [ein XDM-Schema erstellt haben](#create-an-xdm-schema-for-lookup-datasets) und [einen Lookup-Datensatz erstellt haben](#create-a-lookup-dataset), müssen Sie den Lookup-Datensatz zu Ihrer Verbindung in Customer Journey Analytics hinzufügen.
 
 Wiederholen Sie diesen Vorgang für jede Dimension, die Daten enthält, die Sie klassifizieren möchten.
 
@@ -120,9 +120,9 @@ So fügen Sie Ihren Lookup-Datensatz in Customer Journey Analytics zu Ihrer Verb
 
 1. Wählen Sie **[!UICONTROL Datensätze hinzufügen]** und dann **[!UICONTROL Speichern]** aus.
 
+   <!-- is there a step right in between here where you select the dataset -->
+
 1. Erstellen Sie mithilfe des Felds **[!UICONTROL Schlüssel]** und des Felds **[!UICONTROL Übereinstimmungsschlüssel]** eine Korrelation zwischen dem Feld in Ihrem Lookup-Datensatz und dem Feld in Ihrem Ereignis- oder Zusammenfassungsdatensatz.
 
 1. Nachdem alle Lookup-Datensätze zu Ihrer Verbindung in Customer Journey Analytics hinzugefügt wurden, führen Sie die [empfohlenen Aktualisierungsschritte](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) oder die dynamisch generierten Aktualisierungsschritte](https://gigazelle.github.io/cja-ttv/) aus.[
-
-1. Führen Sie die [empfohlenen Aktualisierungsschritte](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) oder die dynamisch generierten Aktualisierungsschritte](https://gigazelle.github.io/cja-ttv/) aus.[
 

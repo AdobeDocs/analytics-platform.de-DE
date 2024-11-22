@@ -6,10 +6,11 @@ solution: Customer Journey Analytics
 feature: Basics
 hide: true
 hidefromtoc: true
-source-git-commit: 33cfff3f675fc03c3444531e8426cb806cdf8559
+exl-id: f932110a-ca9d-40d1-9459-064ef9cd23da
+source-git-commit: 59089146b8e56db3b0b4084615f99dc65899b74f
 workflow-type: tm+mt
-source-wordcount: '216'
-ht-degree: 11%
+source-wordcount: '355'
+ht-degree: 7%
 
 ---
 
@@ -23,11 +24,23 @@ ht-degree: 11%
 
 Adobe empfiehlt, beim Upgrade auf Customer Journey Analytics ein Experience-Datenmodell (XDM)-Schema zu erstellen. Ein XDM-Schema ermöglicht ein optimiertes Schema, das auf die Bedürfnisse Ihres Unternehmens und die spezifischen von Ihnen verwendeten Platform-Anwendungen zugeschnitten ist. Wenn Änderungen am Schema erforderlich sind, müssen Sie nicht Tausende nicht verwendeter Felder durchgehen, um das zu aktualisierende Feld zu finden.
 
-Bevor Sie mit der Erstellung Ihres XDM-Schemas beginnen:
+Überprüfen Sie die folgenden Abschnitte, während Sie mit der Architektur Ihres XDM-Schemas beginnen.
 
-1. Identifizieren Sie Ihr Datenteam und andere Interessengruppen in Ihrer Organisation.
+## Vermeiden von Adobe Analytics-Einschränkungen in Ihrem XDM-Schema
 
-1. Legen Sie das ideale Schema für Ihr Unternehmen zum Customer Journey Analytics fest und berücksichtigen Sie dabei alle anderen Adobe Experience Platform-Anwendungen, die in Ihrem Unternehmen verwendet werden.
+Die zugrunde liegende Architektur von Customer Journey Analytics bietet viel mehr Flexibilität als Adobe Analytics. Das Erstellen eines neuen XDM-Schemas ist eine wichtige Methode, um diese Flexibilität zu entsperren. Stellen Sie beim Upgrade auf Customer Journey Analytics sicher, dass Sie keine unnötigen Adobe Analytics-Einschränkungen in Ihr Schema einfügen.
+
+| Adobe Analytics-Datenarchitektur | XDM-Schemaarchitektur |
+|---------|----------|
+| Individuelle Metriken werden der Analytics-Datenarchitektur hinzugefügt.<br/>In Adobe Analytics beispielsweise gibt es für jedes Ereignis einen anderen eVar. | Erstellen Sie einzelne Metriken in der Datenansicht anstatt im XDM-Schema. Dies bietet mehr Flexibilität in , wenn Sie Änderungen zu einem späteren Zeitpunkt vornehmen müssen.<br/>In der Customer Journey Analytics haben Sie beispielsweise ein einzelnes Ereignis im Schema und die Option zum Erstellen von Ereignissen in der Datenansicht. |
+| Props und eVars sind zum Erstellen benutzerdefinierter Variablen erforderlich. | B2 |
+| A3 | B3 |
+
+## Identifizieren Sie Ihr Datenteam und andere Interessengruppen in Ihrer Organisation.
+
+
+## Andere in Ihrem Unternehmen verwendete Adobe Experience Platform-Anwendungen berücksichtigen
+
+
 
 1. Führen Sie die [empfohlenen Aktualisierungsschritte](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) oder die dynamisch generierten Aktualisierungsschritte](https://gigazelle.github.io/cja-ttv/) aus.[
-
