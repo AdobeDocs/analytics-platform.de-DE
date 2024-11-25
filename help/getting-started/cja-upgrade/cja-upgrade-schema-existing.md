@@ -7,10 +7,10 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: a2b90ab2-2fcb-4bf4-a862-2f0675dc2fe2
-source-git-commit: 5ce69400a01566728f374d68ac08a981adfd8b6e
+source-git-commit: 45f2097d2f0657f623b825acb8d06ec6972f757f
 workflow-type: tm+mt
-source-wordcount: '387'
-ht-degree: 54%
+source-wordcount: '389'
+ht-degree: 49%
 
 ---
 
@@ -22,17 +22,17 @@ ht-degree: 54%
 
 <!-- this page exists as the "Learn more" link in the info icons for the options "I am comfortable using my Adobe Analytics schema as a basis" and "I want to use a schema tailored to my organization" -->
 
-Bei der Aktualisierung auf Customer Journey Analytics empfiehlt Adobe, ein neues XDM-Schema zu erstellen, um es besser an die Anforderungen Ihres Unternehmens anzupassen, da Sie mit der Verwendung anderer Platform-Dienste beginnen. Alternativ können Sie Ihr vorhandenes Adobe Analytics-Schema verwenden.
+Bei der Aktualisierung auf Customer Journey Analytics empfiehlt Adobe, ein benutzerdefiniertes Experience-Datenmodell (XDM)-Schema zu erstellen, um es besser an die Anforderungen Ihres Unternehmens anzupassen, da Sie mit der Verwendung anderer Platform-Dienste beginnen. Alternativ können Sie Ihr vorhandenes Adobe Analytics-Schema verwenden.
 
 Betrachten Sie die Vorteile und Nachteile jedes einzelnen.
 
-## Erstellen eines auf Ihr Unternehmen zugeschnittenen XDM-Schemas (empfohlen)
+## Erstellen Sie ein benutzerdefiniertes Schema, das auf Ihre Organisation zugeschnitten ist (empfohlen)
 
-Adobe empfiehlt, beim Upgrade auf Customer Journey Analytics ein neues XDM-Schema zu erstellen.
+Adobe empfiehlt, beim Upgrade auf Customer Journey Analytics ein benutzerdefiniertes Schema zu erstellen.
 
 | Vorteile | Nachteile |
 |----------|---------|
-| <ul><p>Vorteile der Aktualisierung auf Ihr eigenes XDM-Schema:</p><ul><li>Ein optimiertes Schema, das auf die Anforderungen Ihrer Organisation und die spezifischen von Ihnen verwendeten Platform-Anwendungen zugeschnitten ist.</li><p>Wenn Änderungen am Schema erforderlich sind, müssen Sie nicht Tausende nicht verwendeter Felder durchgehen, um das zu aktualisierende Feld zu finden.</p></ul> | <p>Nachteile der Aktualisierung auf Ihr eigenes XDM-Schema:</p><ul><li>Die Aktualisierung Ihres Schemas ist ein zeitaufwendiger Prozess, der erforderlich ist, bevor Sie mit dem Senden von Daten an Platform beginnen.</li></ul> |
+| <ul><p>Zu den Vorteilen der Aktualisierung auf Ihr eigenes benutzerdefiniertes Schema zählen:</p><ul><li>Ein optimiertes Schema, das auf die Anforderungen Ihrer Organisation und die spezifischen von Ihnen verwendeten Platform-Anwendungen zugeschnitten ist.</li><p>Wenn Änderungen am Schema erforderlich sind, müssen Sie nicht Tausende nicht verwendeter Felder durchgehen, um das zu aktualisierende Feld zu finden.</p></ul> | <p>Die Aktualisierung auf Ihr eigenes benutzerdefiniertes Schema hat folgende Nachteile:</p><ul><li>Die Aktualisierung Ihres Schemas ist ein zeitaufwendiger Prozess, der erforderlich ist, bevor Sie mit dem Senden von Daten an Platform beginnen.</li></ul> |
 
 ## Vorhandenes Adobe Analytics-Schema verwenden
 

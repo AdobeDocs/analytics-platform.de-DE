@@ -7,7 +7,7 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: f5443ddd-81d0-43cc-99cb-215e7ddf5acf
-source-git-commit: 8bcc6b3b2a1e6f75bd0c868f77a375913412f988
+source-git-commit: 45f2097d2f0657f623b825acb8d06ec6972f757f
 workflow-type: tm+mt
 source-wordcount: '847'
 ht-degree: 5%
@@ -26,11 +26,11 @@ ht-degree: 5%
 
 Bei Verwendung des Analytics-Quell-Connectors werden einige standardmäßige Lookup-Datensätze automatisch zur Berichtszeit angewendet. Weitere Informationen finden Sie unter [Hinzufügen von Standardsuchvorgängen zu Datensätzen](/help/connections/standard-lookups.md).
 
-Um Daten bei Verwendung des Experience Platform Web SDK in Customer Journey Analytics zu klassifizieren, müssen Sie ein XDM-Schema und einen Lookup-Datensatz für jede Dimension erstellen, die Daten enthält, die Sie klassifizieren möchten.
+Um bei Verwendung des Experience Platform Web SDK Daten in Customer Journey Analytics zu klassifizieren, müssen Sie ein benutzerdefiniertes Schema und einen Lookup-Datensatz für jede Dimension erstellen, die Daten enthält, die Sie klassifizieren möchten.
 
-## Erstellen eines XDM-Schemas zur Verwendung mit dem Lookup-Datensatz
+## Erstellen eines benutzerdefinierten Schemas zur Verwendung mit dem Lookup-Datensatz
 
-Erstellen Sie ein neues XDM-Schema für jede Dimension, die Daten enthält, die Sie unter Customer Journey Analytics klassifizieren möchten. Wenn Sie den Lookup-Datensatz in einem späteren Schritt erstellen, verweist er auf dieses Schema.
+Erstellen Sie für jede Dimension ein neues benutzerdefiniertes Schema, das Daten enthält, die Sie unter Customer Journey Analytics klassifizieren möchten. Wenn Sie den Lookup-Datensatz in einem späteren Schritt erstellen, verweist er auf dieses Schema.
 
 Wiederholen Sie diesen Vorgang für jede Dimension, die Daten enthält, die Sie klassifizieren möchten.
 
@@ -58,7 +58,7 @@ So erstellen Sie ein Schema zur Verwendung mit einem Lookup-Datensatz in Custome
 
 ## Lookup-Datensatz erstellen
 
-Nachdem Sie [ein XDM-Schema erstellt haben](#create-an-xdm-schema-for-lookup-datasets), das für einen Lookup-Datensatz verwendet werden soll, müssen Sie den Lookup-Datensatz erstellen und ihn Ihrem Schema zuordnen.
+Nachdem Sie [ein benutzerdefiniertes Schema erstellt haben](#create-a-custom-schema-to-use-with-the-lookup-dataset), das für einen Lookup-Datensatz verwendet werden soll, müssen Sie den Lookup-Datensatz erstellen und ihn Ihrem Schema zuordnen.
 
 Wiederholen Sie diesen Vorgang für jede Dimension, die Daten enthält, die Sie klassifizieren möchten.
 
@@ -100,7 +100,7 @@ So erstellen Sie einen Lookup-Datensatz zur Verwendung mit einem Schema in Custo
 
 ## Fügen Sie Ihrer Verbindung in Customer Journey Analytics den Lookup-Datensatz hinzu.
 
-Nachdem Sie [ein XDM-Schema erstellt haben](#create-an-xdm-schema-for-lookup-datasets) und [einen Lookup-Datensatz erstellt haben](#create-a-lookup-dataset), müssen Sie den Lookup-Datensatz zu Ihrer Verbindung in Customer Journey Analytics hinzufügen.
+Nachdem Sie [ein benutzerdefiniertes Schema ](#create-a-custom-schema-to-use-with-the-lookup-dataset) erstellt haben und [einen Lookup-Datensatz erstellt haben](#create-a-lookup-dataset), müssen Sie den Lookup-Datensatz zu Ihrer Verbindung im Customer Journey Analytics hinzufügen.
 
 Wiederholen Sie diesen Vorgang für jede Dimension, die Daten enthält, die Sie klassifizieren möchten.
 

@@ -1,20 +1,20 @@
 ---
-title: Erstellen eines Schemas für Customer Journey Analytics
-description: Erfahren Sie mehr über den empfohlenen Pfad bei der Aktualisierung von Adobe Analytics auf Customer Journey Analytics.
+title: Benutzerdefiniertes Schema für Customer Journey Analytics erstellen
+description: Erfahren Sie, wie Sie ein benutzerdefiniertes Schema für die Customer Journey Analytics erstellen
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: 902e5890-f970-4f1a-b091-9c3e51a987db
-source-git-commit: 8bcc6b3b2a1e6f75bd0c868f77a375913412f988
+source-git-commit: 45f2097d2f0657f623b825acb8d06ec6972f757f
 workflow-type: tm+mt
-source-wordcount: '1073'
+source-wordcount: '1083'
 ht-degree: 48%
 
 ---
 
-# Erstellen eines XDM-Schemas zur Verwendung mit Ihrer Customer Journey Analytics Web SDK-Implementierung
+# Erstellen eines benutzerdefinierten Schemas zur Verwendung mit Ihrer Customer Journey Analytics Web SDK-Implementierung
 
 >[!NOTE]
 > 
@@ -24,13 +24,13 @@ ht-degree: 48%
 
 >[!IMPORTANT]
 >
->Bevor Sie mit der Erstellung Ihres XDM-Schemas beginnen, wenden Sie sich an Ihr Datenteam und andere Beteiligte in Ihrer Organisation, um das ideale Schema für Customer Journey Analytics und die anderen von Ihnen verwendeten Adobe Experience Platform-Anwendungen zu ermitteln. Weitere Informationen finden Sie unter [Architektur Ihres Schemas für die Verwendung mit Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-schema-architect.md).
+>Bevor Sie mit der Erstellung Ihres benutzerdefinierten Schemas beginnen, wenden Sie sich an Ihr Datenteam und andere Interessengruppen in Ihrer Organisation, um das ideale Schema für Customer Journey Analytics und die anderen von Ihnen verwendeten Adobe Experience Platform-Anwendungen zu ermitteln. Weitere Informationen finden Sie unter [Architektur Ihres Schemas für die Verwendung mit Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-schema-architect.md).
 
-Adobe empfiehlt beim Upgrade auf Customer Journey Analytics die Erstellung eines benutzerdefinierten Experience-Datenmodell (XDM)-Schemas. Ein benutzerdefiniertes Schema ermöglicht ein optimiertes Schema, das auf die Anforderungen Ihres Unternehmens und die spezifischen Platform-Anwendungen zugeschnitten ist, die Sie verwenden. Wenn Änderungen am Schema erforderlich sind, müssen Sie nicht Tausende nicht verwendeter Felder durchgehen, um das zu aktualisierende Feld zu finden.
+Adobe empfiehlt die Erstellung eines benutzerdefinierten Experience-Datenmodell (XDM)-Schemas zur Verwendung mit dem Web SDK bei der Aktualisierung auf Customer Journey Analytics. Ein benutzerdefiniertes Schema ermöglicht ein optimiertes Schema, das auf die Anforderungen Ihres Unternehmens und die spezifischen Platform-Anwendungen zugeschnitten ist, die Sie verwenden. Wenn Änderungen am Schema erforderlich sind, müssen Sie nicht Tausende nicht verwendeter Felder durchgehen, um das zu aktualisierende Feld zu finden.
 
 ## Erstellen des Schemas
 
-Das von Ihnen definierte XDM-Schema stellt das Modell der Daten dar, die Sie in Adobe Experience Platform erfassen.
+Das benutzerdefinierte Schema, das Sie für Ihre Web SDK-Implementierung definieren, stellt das Modell der Daten dar, die Sie in Adobe Experience Platform erfassen.
 
 So erstellen Sie ein benutzerdefiniertes Schema:
 

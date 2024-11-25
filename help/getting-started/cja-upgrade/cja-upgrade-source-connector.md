@@ -7,10 +7,10 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: f96565a2-f556-4b45-b88e-984613614d2e
-source-git-commit: 0a47796a8b673ef7074a4f9fe865ff59fcf50aab
+source-git-commit: 45f2097d2f0657f623b825acb8d06ec6972f757f
 workflow-type: tm+mt
-source-wordcount: '689'
-ht-degree: 8%
+source-wordcount: '700'
+ht-degree: 7%
 
 ---
 
@@ -26,23 +26,23 @@ ht-degree: 8%
 
 Sie können den Analytics-Quell-Connector verwenden, um Adobe Analytics-Report Suite-Daten in Adobe Experience Platform zu importieren. Diese Daten können dann als historische Daten im Customer Journey Analytics verwendet werden.
 
-Bei diesem Vorgang wird davon ausgegangen, dass Sie beim Upgrade auf Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md) ein XDM-Schema erstellen möchten, da Sie ein optimiertes Schema wünschen, das auf die Anforderungen Ihres Unternehmens und die von Ihnen verwendeten spezifischen Platform-Anwendungen zugeschnitten ist.[
+Bei diesem Vorgang wird davon ausgegangen, dass Sie [ein benutzerdefiniertes Schema erstellen möchten, das mit Ihrer Customer Journey Analytics Web SDK-Implementierung](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md) verwendet werden soll, da Sie ein optimiertes Schema wünschen, das auf die Anforderungen Ihres Unternehmens und die spezifischen Plattformanwendungen zugeschnitten ist, die Sie verwenden.
 
 Um den Analytics-Quell-Connector zu verwenden, um historische Daten in Customer Journey Analytics zu importieren, müssen Sie Folgendes tun:
 
-1. [Erstellen eines XDM-Schemas für den Analytics-Quell-Connector](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-schema.md)
+1. [Benutzerdefiniertes Schema für den Analytics-Quell-Connector erstellen](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-schema.md)
 
-1. Wenn Sie noch keinen Analytics-Quell-Connector haben, erstellen Sie den Analytics-Quell-Connector und ordnen Sie Felder Ihrem XDM-Schema zu, wie unten beschrieben.
+1. Wenn Sie noch keinen Analytics-Quell-Connector haben, erstellen Sie den Analytics-Quell-Connector und ordnen Sie Felder Ihrem benutzerdefinierten Web SDK-Schema zu, wie unten beschrieben.
 
    Oder
 
-   Wenn Sie bereits über einen Analytics-Quell-Connector verfügen, ordnen Sie Felder vom Quell-Connector Ihrem XDM-Schema zu ](/help/getting-started/cja-upgrade/cja-upgrade-from-source-connector.md).[
+   Wenn Sie bereits über einen Analytics-Quell-Connector verfügen, ordnen Sie die Felder vom Quell-Connector Ihrem benutzerdefinierten Web SDK-Schema](/help/getting-started/cja-upgrade/cja-upgrade-from-source-connector.md) zu.[
 
 1. [Hinzufügen des Datensatzes des Analytics-Quell-Connectors zur Verbindung](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-dataset.md)
 
 ## Erstellen der Analytics-Quell-Connector- und Zuordnungsfelder
 
-Nachdem Sie Ihr XDM-Schema erstellt haben, müssen Sie den Adobe Analytics-Quell-Connector erstellen, der für historische Daten verwendet werden soll. (Allgemeine Richtlinien zum Erstellen eines Quell-Connectors finden Sie unter [Erstellen einer Adobe Analytics-Quellverbindung in der Benutzeroberfläche](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=de).)
+Nachdem Sie Ihr benutzerdefiniertes Schema erstellt haben, müssen Sie den Adobe Analytics-Quell-Connector erstellen, der für Verlaufsdaten verwendet werden soll. (Allgemeine Richtlinien zum Erstellen eines Quell-Connectors finden Sie unter [Erstellen einer Adobe Analytics-Quellverbindung in der Benutzeroberfläche](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=de).)
 
 So erstellen Sie einen Adobe Analytics-Quell-Connector zur Verwendung für historische Daten:
 
@@ -60,11 +60,11 @@ So erstellen Sie einen Adobe Analytics-Quell-Connector zur Verwendung für histo
 
 1. Wählen Sie oben rechts im Bildschirm **[!UICONTROL Weiter]** aus.
 
-1. Wählen Sie **[!UICONTROL Benutzerdefiniertes Schema]** und dann das Schema aus, das Sie in [Erstellen eines XDM-Schemas mit der Adobe Analytics-Feldergruppe](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-schema.md) erstellt haben. <!-- Deleted this, because I changed this from choosing the default schemawe're pointing them now at the schema they just created: "Adobe Experience Platform  automatically creates the schema and the corresponding dataset to map all standard fields from the selected Adobe Analytics report suite." -->
+1. Wählen Sie **[!UICONTROL Benutzerdefiniertes Schema]** und dann das Schema aus, das Sie anhand der Anweisungen unter [Benutzerdefiniertes Schema mit Adobe Analytics-Feldergruppe erstellen](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-schema.md) erstellt haben. <!-- Deleted this, because I changed this from choosing the default schemawe're pointing them now at the schema they just created: "Adobe Experience Platform  automatically creates the schema and the corresponding dataset to map all standard fields from the selected Adobe Analytics report suite." -->
 
    <!-- add screenshot -->
 
-1. Ordnen Sie jede Adobe Analytics-Dimension einer benutzerdefinierten XDM-Schemadimension zu.
+1. Ordnen Sie jede Adobe Analytics-Dimension einer benutzerdefinierten Schemadimension zu.
 
    1. Wählen Sie im Abschnitt **[!UICONTROL Standardfelder zuordnen]** die Registerkarte **[!UICONTROL Benutzerdefiniert]** aus.
 
@@ -72,7 +72,7 @@ So erstellen Sie einen Adobe Analytics-Quell-Connector zur Verwendung für histo
 
    ![Schemafelder zuordnen](assets/schema-mapping.png)
 
-   1. Wählen Sie im Feld **[!UICONTROL Source]** ein Adobe Analytics -Feld aus der Feldergruppe Adobe Analytics ExperienceEvent Template aus. Wählen Sie dann im Feld **[!UICONTROL Ziel]** das XDM-Feld aus, dem Sie es zuordnen möchten.
+   1. Wählen Sie im Feld **[!UICONTROL Source]** ein Adobe Analytics -Feld aus der Feldergruppe Adobe Analytics ExperienceEvent Template aus. Wählen Sie dann im Feld **[!UICONTROL Ziel]** das benutzerdefinierte Feld im XDM-Schema aus, dem Sie es zuordnen möchten.
 
       Nicht alle Adobe Analytics-Felder verfügen aufgrund der inhärenten Architekturunterschiede zwischen AppMeasurement und XDM über ein entsprechendes Feld in XDM.
 

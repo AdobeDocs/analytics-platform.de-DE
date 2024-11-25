@@ -1,20 +1,20 @@
 ---
-title: Erstellen eines XDM-Schemas für den Analytics-Quell-Connector
-description: Erfahren Sie, wie Sie ein XDM-Schema für den Analytics-Quell-Connector erstellen.
+title: Benutzerdefiniertes Schema für den Analytics-Quell-Connector erstellen
+description: Erfahren Sie, wie Sie ein benutzerdefiniertes Schema für den Analytics-Quell-Connector erstellen.
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: fad62c04-b435-466a-ab3c-cf2d174ddbfb
-source-git-commit: 8bcc6b3b2a1e6f75bd0c868f77a375913412f988
+source-git-commit: 45f2097d2f0657f623b825acb8d06ec6972f757f
 workflow-type: tm+mt
-source-wordcount: '537'
-ht-degree: 8%
+source-wordcount: '545'
+ht-degree: 3%
 
 ---
 
-# Erstellen eines XDM-Schemas für den Analytics-Quell-Connector
+# Benutzerdefiniertes Schema für den Analytics-Quell-Connector erstellen
 
 >[!NOTE]
 > 
@@ -26,13 +26,13 @@ ht-degree: 8%
 
 Sie können den Analytics-Quell-Connector verwenden, um Adobe Analytics-Report Suite-Daten in Adobe Experience Platform zu importieren. Diese Daten können dann als historische Daten im Customer Journey Analytics verwendet werden.
 
-Bei diesem Vorgang wird davon ausgegangen, dass Sie beim Upgrade auf Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md) ein XDM-Schema erstellen möchten, da Sie ein optimiertes Schema wünschen, das auf die Anforderungen Ihres Unternehmens und die von Ihnen verwendeten spezifischen Platform-Anwendungen zugeschnitten ist.[
+Bei diesem Vorgang wird davon ausgegangen, dass Sie [ein benutzerdefiniertes Schema erstellen möchten, das mit Ihrer Customer Journey Analytics Web SDK-Implementierung](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md) verwendet werden soll, da Sie ein optimiertes Schema wünschen, das auf die Anforderungen Ihres Unternehmens und die spezifischen Plattformanwendungen zugeschnitten ist, die Sie verwenden.
 
 Um den Analytics-Quell-Connector zu verwenden, um historische Daten in Customer Journey Analytics zu importieren, müssen Sie Folgendes tun:
 
-1. Erstellen Sie ein XDM-Schema für den Analytics-Quell-Connector, wie unten beschrieben.
+1. Erstellen Sie ein benutzerdefiniertes Schema für den Analytics-Quell-Connector, wie unten beschrieben.
 
-1. Wenn Sie noch keinen Analytics-Quell-Connector haben, erstellen Sie den Analytics-Quell-Connector und ordnen Sie Felder Ihrem XDM-Schema zu](/help/getting-started/cja-upgrade/cja-upgrade-source-connector.md).[
+1. Wenn Sie noch keinen Analytics-Quell-Connector haben, erstellen Sie den Analytics-Quell-Connector und ordnen Sie Felder Ihrem benutzerdefinierten Schema zu.](/help/getting-started/cja-upgrade/cja-upgrade-source-connector.md)[
 
    Oder
 
@@ -40,9 +40,9 @@ Um den Analytics-Quell-Connector zu verwenden, um historische Daten in Customer 
 
 1. [Hinzufügen des Datensatzes des Analytics-Quell-Connectors zur Verbindung](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-dataset.md)
 
-## Erstellen eines XDM-Schemas für den Analytics-Quell-Connector
+## Benutzerdefiniertes Schema für den Analytics-Quell-Connector erstellen
 
-Sie sollten bereits [ ein neues XDM-Schema erstellt haben](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md), damit Ihre Experience Platform Web SDK-Implementierung mit Customer Journey Analytics verwendet werden kann. Dieses Schema sollte alle Feldergruppen für Felder enthalten, für die Sie Daten erfassen möchten.
+Sie sollten bereits [ein neues benutzerdefiniertes Schema ](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md) erstellt haben, damit Ihre Experience Platform Web SDK-Implementierung mit Customer Journey Analytics verwendet werden kann. Dieses Schema sollte alle Feldergruppen für Felder enthalten, für die Sie Daten erfassen möchten.
 
 Jetzt müssen Sie dieselben Feldergruppen aus Ihrem Web SDK-Schema verwenden und sie zu einem neuen Schema hinzufügen, das Sie mit dem Analytics-Quell-Connector verwenden können.
 
@@ -52,9 +52,9 @@ Dieses Schema für den Analytics-Quell-Connector muss Folgendes enthalten:
 
 * Die Feldergruppe &quot;Adobe Analytics ExperienceEvent-Vorlage&quot;
 
-Erstellen des XDM-Schemas zur Verwendung mit dem Analytics-Quell-Connector:
+Erstellen des benutzerdefinierten Schemas zur Verwendung mit dem Analytics-Quell-Connector:
 
-1. Beginnen Sie in Adobe Experience Platform mit der Erstellung eines neuen XDM-Schemas, wie unter [Erstellen eines XDM-Schemas zur Verwendung mit Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md) beschrieben.
+1. Beginnen Sie in Adobe Experience Platform mit der Erstellung eines neuen benutzerdefinierten Schemas, wie unter [Erstellen eines benutzerdefinierten Schemas zur Verwendung mit Ihrer Customer Journey Analytics Web SDK-Implementierung](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md) beschrieben.
 
 1. Fügen Sie alle Feldergruppen (einschließlich aller benutzerdefinierten Feldergruppen) hinzu, die im Schema enthalten sind, das Sie für Ihre Web SDK-Implementierung erstellt haben.
 
