@@ -6,10 +6,10 @@ feature: Basics
 exl-id: c258fa39-c0b6-45a1-8547-79516c15a215
 mini-toc-levels: 3
 role: Admin
-source-git-commit: 8676497c9341e3ff74d1b82ca79bc1e73caf514f
+source-git-commit: 354bdb440e36dc990f54d887908f9fb9c0a50110
 workflow-type: tm+mt
-source-wordcount: '1469'
-ht-degree: 22%
+source-wordcount: '1549'
+ht-degree: 21%
 
 ---
 
@@ -65,6 +65,16 @@ Zusätzlich zum Hinzufügen als Produktadministrator zum **Customer Journey Anal
   | [!UICONTROL Identity Management] | [!UICONTROL Anzeigen von Identitäts-Namensräumen] | Schreibgeschützter Zugriff für Identitäts-Namensräume. |
 
   Weitere Informationen zu Experience Platform-Berechtigungen finden Sie unter [Berechtigungen für ein Produktprofil verwalten](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/ui/permissions).
+
+
+* Wenn Adobe Journey Optimizer in CJA integriert wurde, wo AJO-Verbindungen vorhanden sind, müssen auch Journey-Berechtigungen hinzugefügt werden, damit auf Verbindungen zugegriffen werden kann:
+
+  | Kategorie | Berechtigung | Beschreibung |
+  |---|---|---|
+  | [!UICONTROL Journeys] | [!UICONTROL Anzeigen von Journey-Ereignissen, Datenquellen und Aktionen] | Schreibgeschützter Zugriff auf Journey-Ereignisse, Journey benutzerdefinierter Aktionen und Journey-Datenquellen. |
+  | [!UICONTROL Journeys] | [!UICONTROL Verwalten von Journey-Ereignissen, Datenquellen und Aktionen] | Ereignisse, Quellen oder Aktionen lesen, erstellen, bearbeiten und löschen. |
+  | [!UICONTROL Journeys] | [!UICONTROL Journey anzeigen] | Schreibgeschützter Zugriff auf Journey. |
+  | [!UICONTROL Journeys] | [!UICONTROL Journey verwalten] | Journey lesen, erstellen, bearbeiten und löschen. |
 
 * Exportieren von Datensätzen in [Ziele](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/export-datasets)
 
