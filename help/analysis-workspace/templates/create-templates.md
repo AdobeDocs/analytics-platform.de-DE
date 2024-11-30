@@ -5,14 +5,15 @@ feature: Workspace Basics
 role: User, Admin
 hide: true
 hidefromtoc: true
-source-git-commit: 96844fae07734e979e9dd4689d5eded6a7a3b926
+exl-id: 23cdf02f-56a1-4465-ae7f-b3a1bcad28af
+source-git-commit: b9ab9a7cb07759f4be8eae0f1d29eba4d5fa1be3
 workflow-type: tm+mt
-source-wordcount: '458'
+source-wordcount: '573'
 ht-degree: 4%
 
 ---
 
-# Vorlagen erstellen und verwalten
+# Erstellen und Verwalten von Vorlagen
 
 Administratoren können Vorlagen erstellen und für andere Benutzer in ihrer Unternehmensanmeldung speichern, die sie verwenden können.
 
@@ -20,15 +21,13 @@ Personen in der Unternehmensanmeldung können diese Unternehmensvorlagen verwend
 
 ## Erstellen einer Vorlage
 
-<!-- is this only admins? -->
-
 So erstellen Sie eine neue Vorlage, die von Personen in Ihrem Anmeldeunternehmen verwendet werden kann:
 
 1. Erstellen Sie in Analysis Workspace ein Projekt in Ihrem gewünschten Zustand.
 
 1. Wählen Sie [!UICONTROL **Projekt**] > **[!UICONTROL Als Vorlage speichern...]**.
 
-   ![Unternehmensbericht](assets/company-template-save.png)
+   ![Firmenvorlage](assets/company-template-save.png)
 
 1. Geben Sie die folgenden Informationen im Dialogfeld [!UICONTROL Als Vorlage speichern] an:
 
@@ -45,11 +44,37 @@ So erstellen Sie eine neue Vorlage, die von Personen in Ihrem Anmeldeunternehmen
 
 Informationen dazu, wie Benutzer ein Projekt basierend auf einer Vorlage erstellen können, finden Sie unter [Erstellen eines Projekts basierend auf einer Vorlage](/help/analysis-workspace/templates/use-templates.md#create-a-project-based-on-a-template) in [Vorlagen verwenden](/help/analysis-workspace/templates/use-templates.md).
 
-## Verwalten von Unternehmensvorlagen
+## Vorlagen bearbeiten oder löschen
 
-Administratoren können Unternehmensvorlagen löschen, umbenennen, taggen und genehmigen.
+Administratoren können Unternehmensvorlagen bearbeiten oder löschen.
 
-So zeigen Sie Unternehmensvorlagen an und verwalten sie:
+1. Wählen Sie in Analysis Workspace die Registerkarte [!UICONTROL **Workspace**] und dann **[!UICONTROL _login_company_name _templates]**aus.
+
+1. Wenn Sie Vorlagen in einer Spaltenansicht anzeigen ![Spaltenansichtssymbol](assets/column-view-icon.png):
+
+   1. Markieren Sie die Vorlage, die Sie bearbeiten oder löschen möchten, und klicken Sie auf das Infosymbol neben dem Vorlagennamen.
+
+      ![Info zu Unternehmensvorlagen](assets/company-template-info.png)
+
+   1. Wählen Sie **[!UICONTROL Vorschau]** aus.
+
+   1. Wählen Sie das Symbol Mehr und dann **[!UICONTROL Bearbeiten]** oder **[!UICONTROL Löschen]** aus.
+
+      ![Vorlage bearbeiten oder löschen](assets/company-template-edit-delete.png)
+
+1. Wenn Sie Vorlagen in einer Kartenansicht anzeigen, ![Symbol für die Kartenansicht](assets/card-view-icon.png):
+
+   1. Suchen Sie die Vorlage, die Sie bearbeiten oder löschen möchten.
+
+      ![Kartenansicht der Unternehmensvorlage](assets/company-template-cards.png)
+
+   1. Wählen Sie das Symbol Mehr und dann **[!UICONTROL Bearbeiten]** oder **[!UICONTROL Löschen]** aus.
+
+      ![Bearbeiten oder Löschen der Firmenvorlagenkarte](assets/company-template-card-edit-delete.png)
+
+## Umbenennen, Taggen oder Genehmigen von Vorlagen
+
+Administratoren können Unternehmensvorlagen umbenennen, taggen und genehmigen.
 
 1. Wählen Sie in Analysis Workspace die Registerkarte [!UICONTROL **Workspace**] und dann in der linken Leiste die Registerkarte **[!UICONTROL Projekte]** aus.
 
@@ -61,24 +86,20 @@ So zeigen Sie Unternehmensvorlagen an und verwalten sie:
 
    Unternehmensvorlagen können über das ![Vorlagensymbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_FileTemplate_18_N.svg) identifiziert werden, das dem Vorlagennamen vorangeht.
 
-   <!-- Update screenshot -->
-
-   ![Filter für Unternehmensvorlagen anzeigen](assets/company-reports-filter.png)
-
-1. Wählen Sie in der Vorlagenliste eine oder mehrere Unternehmensvorlagen aus.
+   ![Filter für Unternehmensvorlagen anzeigen](assets/company-templates-filter.png)
 
 1. Klicken Sie auf das Symbol &quot;**...** elilpsis&quot;neben einer Vorlage, um die verfügbaren Optionen anzuzeigen.
 
-   <!-- Update screenshot -->
+   ![Aktionen auf Unternehmensvorlagen](assets/company-templates-actions.png)
 
-   ![Aktionen auf Unternehmensvorlagen](assets/company-reports-actions.png)
+1. Wählen Sie **[!UICONTROL Umbenennen]**, **[!UICONTROL Tag]** oder **[!UICONTROL Genehmigen]** aus.
 
-1. Wählen Sie **[!UICONTROL Löschen]**, **[!UICONTROL Umbenennen]**, **[!UICONTROL Tag]** oder **[!UICONTROL Genehmigen]**).
+   Sie können auch eine Vorlage löschen oder eine Vorlage löschen, wie unter [Vorlagen bearbeiten oder löschen](#edit-or-delete-templates) beschrieben.
 
 1. (Optional) Um zur regulären Ansicht zurückzukehren, deaktivieren Sie in der Filterleiste die Option **[!UICONTROL Unternehmensvorlagen]**.
 
 ## Zugriff auf eine Unternehmensvorlage
 
-Wie bei Vorlagen, die von Adobe bereitgestellt werden, können Sie auf Vorlagen zugreifen, die von Benutzern in Ihrem Unternehmen erstellt wurden.
+Wie bei Vorlagen, die von Adobe bereitgestellt werden, können Benutzer in der Organisation auf Vorlagen zugreifen, die von Administratoren erstellt werden.
 
 Informationen zum Zugriff auf eine Unternehmensvorlage finden Sie unter [Zugreifen auf und Ausführen einer Vorlage](/help/analysis-workspace/templates/use-templates.md#access-and-run-a-template) in [Vorlagen verwenden](/help/analysis-workspace/templates/use-templates.md).
