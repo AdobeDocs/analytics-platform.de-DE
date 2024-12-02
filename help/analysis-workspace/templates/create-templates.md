@@ -6,9 +6,9 @@ role: User, Admin
 hide: true
 hidefromtoc: true
 exl-id: 23cdf02f-56a1-4465-ae7f-b3a1bcad28af
-source-git-commit: b9ab9a7cb07759f4be8eae0f1d29eba4d5fa1be3
+source-git-commit: 8561f14d5b428e55614fe1465f75d2be6660468d
 workflow-type: tm+mt
-source-wordcount: '573'
+source-wordcount: '581'
 ht-degree: 4%
 
 ---
@@ -35,7 +35,7 @@ So erstellen Sie eine neue Vorlage, die von Personen in Ihrem Anmeldeunternehmen
    |---------|----------|
    | **[!UICONTROL Name]** | Geben Sie einen beschreibenden Namen für die Vorlage an. |
    | **[!UICONTROL Beschreibung]** | Geben Sie eine kurze Beschreibung für die Vorlage ein, in der die Verwendungszwecke beschrieben werden. |
-   | **[!UICONTROL Warum diese Vorlage verwenden]** | Geben Sie eine kurze Erläuterung an, um Mitarbeiter in der Organisation darüber zu informieren, wie diese Vorlage verwendet werden kann. |
+   | **[!UICONTROL Warum diese Vorlage verwenden]** | Geben Sie eine kurze Erläuterung an, um Mitarbeiter in der Organisation darüber zu informieren, wie diese Vorlage verwendet werden kann. Diese Erklärung wird auf der Vorschauseite der Vorlage angezeigt. |
    | **[!UICONTROL Kanäle]** | Wählen Sie die für diese Vorlage zutreffenden Kanäle aus. Sie können mehrere Kanäle auswählen: **[!UICONTROL Web]**, **[!UICONTROL Mobile]**, **[!UICONTROL Cross-Channel]**, **[!UICONTROL Callcenter]** und **[!UICONTROL In-store]**.<p>Die ausgewählten Auswahlmöglichkeiten bestimmen, wo die Vorlage angezeigt wird und welche Filter für Benutzer gelten, die über die Seite &quot;Organisationsvorlagen&quot;darauf zugreifen.</p> |
    | **[!UICONTROL Anwendungsbeispiele]** | Wählen Sie die Anwendungsfälle aus, die auf diese Vorlage zutreffen. Sie können mehrere Anwendungsfälle auswählen: **[!UICONTROL Interaktion]**, **[!UICONTROL Konversion]**, **[!UICONTROL Zielgruppe]** und **[!UICONTROL Akquise]**. <p>Die ausgewählten Auswahlmöglichkeiten bestimmen, wo die Vorlage angezeigt wird und welche Filter für Benutzer gelten, die über die Seite &quot;Organisationsvorlagen&quot;darauf zugreifen.</p> |
    | **[!UICONTROL Tags]** | Geben Sie alle Tags an, die Sie auf die Vorlage anwenden möchten. Benutzer können die Liste der Vorlagen nach den von Ihnen hinzugefügten Tags filtern. |

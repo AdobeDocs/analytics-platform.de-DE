@@ -6,10 +6,10 @@ role: User, Admin
 hide: true
 hidefromtoc: true
 exl-id: d61f215d-9089-4014-9c5a-97f5d7134f34
-source-git-commit: b9ab9a7cb07759f4be8eae0f1d29eba4d5fa1be3
+source-git-commit: 8561f14d5b428e55614fe1465f75d2be6660468d
 workflow-type: tm+mt
-source-wordcount: '15383'
-ht-degree: 79%
+source-wordcount: '15449'
+ht-degree: 78%
 
 ---
 
@@ -43,7 +43,11 @@ Im Folgenden wird beschrieben, wie Sie Vorlagen auf der Registerkarte [!UICONTRO
 
      Unternehmensvorlagen können nur von einem Administrator erstellt werden. Informationen zum Erstellen einer Unternehmensvorlage finden Sie unter [Erstellen und Verwalten von Vorlagen](/help/analysis-workspace/templates/create-templates.md).
 
-1. Wählen Sie entweder das Spaltenansichtssymbol ![Spaltenansichtssymbol](assets/column-view-icon.png) oder das Kartenansichtssymbol ![Kartenansichtssymbol](assets/card-view-icon.png) aus, um Vorlagen in einer Spaltenansicht oder Kartenansicht anzuzeigen.
+1. Verwenden Sie eine der folgenden Optionen, um die Ansicht der verfügbaren Vorlagen zu ändern:
+
+   * Wählen Sie entweder das Spaltenansichtssymbol ![Spaltenansichtssymbol](assets/column-view-icon.png) oder das Kartenansichtssymbol ![Kartenansichtssymbol](assets/card-view-icon.png) aus, um Vorlagen in einer Spaltenansicht oder Kartenansicht anzuzeigen.
+
+   * Wählen Sie bei Verwendung des Kartenansichtssymbols ![Kartenansicht ](assets/card-view-icon.png) aus den folgenden Sortierreihenfolgen: **[!UICONTROL Zuletzt verwendet]**, **[!UICONTROL Zuletzt verwendet]**, **[!UICONTROL Alphabetisch]**, **[!UICONTROL Kategorisch]**.
 
 1. Geben Sie im Suchfeld den Namen der Vorlage ein, die Sie finden möchten, und wählen Sie sie dann aus der Vorlagenliste aus.
 
@@ -57,17 +61,23 @@ Im Folgenden wird beschrieben, wie Sie Vorlagen auf der Registerkarte [!UICONTRO
 
    Eine Liste der verfügbaren Vorlagen finden Sie unten im Abschnitt [Verfügbare Vorlagen](#available-templates) .
 
-1. (Optional) Zeigen Sie Vorlagen an und verwenden Sie Vorlagen, die Komponenten enthalten, die in Ihrer Datenansicht nicht verfügbar sind. (Standardmäßig werden nur Vorlagen angezeigt, die Komponenten verwenden, die in Ihrer Datenansicht verfügbar sind.)
+1. (Optional) Zeigen Sie Vorlagen an und verwenden Sie Vorlagen, die Komponenten enthalten, die in Ihrer Datenansicht nicht verfügbar sind. (Standardmäßig werden Vorlagen nur angezeigt, wenn sie Komponenten verwenden, die in Ihrer Datenansicht verfügbar sind.)
 
-   1. Auswählen (Name der Filteroption?) , um Vorlagen anzuzeigen, die zusätzliche Komponenten erfordern.
+   1. Wählen Sie das Filtersymbol aus.
 
-      <!-- add screenshot -->
+   1. Wählen Sie **[!UICONTROL Nicht einsatzbereit]** aus, um Vorlagen anzuzeigen, die zusätzliche Komponenten erfordern.
 
-   1. Wählen Sie die Vorlage aus, die Sie verwenden möchten.
-
-   1. Wenn die Vorlage Komponenten enthält, die in Ihrer Datenansicht nicht verfügbar sind, wird eine Meldung angezeigt, die angibt, welche Komponenten fehlen. Klicken (Schaltfläche?) , um zur Datenansicht zu gelangen, wo Sie sie automatisch erstellen können. <!--how do you do this? Walk through the process -->
+      ![Verwenden einer Vorlage, die keine Komponenten enthält](assets/template-not-ready.png)
 
 1. Wählen Sie die Vorlage aus, um einen Bericht auf der Basis der von Ihnen ausgewählten Vorlage zu erstellen.
+
+1. (Bedingt) Wenn die Vorlage Komponenten enthält, die in Ihrer Datenansicht nicht verfügbar sind, wird das Dialogfeld Inkompatible Datenansicht angezeigt, in dem erklärt wird, dass die Datenansicht mit der Vorlage inkompatibel ist und angezeigt wird, welche Komponenten fehlen.
+
+   Führen Sie einen der folgenden Schritte aus:
+
+   * Wählen Sie im Dropdown-Menü **[!UICONTROL Datenansicht ändern]** eine andere Datenansicht aus.
+
+   * Wählen Sie **[!UICONTROL Weiter sowieso]** aus, um die Vorlage mit den fehlenden Komponenten anzuzeigen.
 
 ## Erstellen eines Projekts basierend auf einer Vorlage {#use-reports}
 
