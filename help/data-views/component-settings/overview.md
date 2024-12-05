@@ -6,9 +6,9 @@ solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
 source-git-commit: 1158064d46e09435ec2507c47e6e484306ac5a53
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '570'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -43,7 +43,7 @@ Die folgenden Informationen beschreiben die Einstellungen, die eine Datenansicht
 | [!UICONTROL Name der Komponente] | Erforderlich. Hier können Sie den benutzerfreundlichen Namen angeben, der in Analysis Workspace angezeigt wird. Sie können eine Komponente umbenennen, um ihr einen spezifischen Namen für die Datenansicht zu geben. |
 | [!UICONTROL Beschreibung] | Optional, jedoch empfohlen. Stellt Informationen über die Komponente für andere Benutzer bereit. |
 | [!UICONTROL Tags] | Optional. Ermöglicht das Taggen der Komponente mit benutzerdefinierten oder vordefinierten Tags zur einfacheren Suche/Filterung in der Analysis Workspace-Benutzeroberfläche. |
-| [!UICONTROL Kontextbeschriftungen] | Optional. Eine Dropdown-Liste der verfügbaren systemdefinierten Beschriftungen, die auf eine Komponente angewendet werden können. Diese Beschriftungen können erforderlich sein, um einen Satz von Komponenten zu definieren, die Sie in der Experimentierungsberichterstellung mit dem [Experimentierungs-Bedienfeld](/help/analysis-workspace/c-panels/experimentation.md) in Analysis Workspace-Projekten verwenden können. Weitere Informationen finden Sie unter [Integrieren mit Journey Optimizer](/help/integrations/ajo.md#data-view) und [Zielgruppenberichte](/help/integrations/at.md). |
+| [!UICONTROL Kontextbeschriftungen] | Optional. Eine Dropdown-Liste der verfügbaren systemdefinierten Beschriftungen, die auf eine Komponente angewendet werden können. Diese Labels können erforderlich sein, um einen Komponentensatz zu definieren, den Sie für Berichte zum Experimentieren mit dem [Bedienfeld „Experimentieren“](/help/analysis-workspace/c-panels/experimentation.md) in Analysis Workspace-Projekten verwenden können. Weitere Informationen finden Sie unter [Integrieren mit Journey Optimizer](/help/integrations/ajo.md#data-view) und [Zielgruppenberichte](/help/integrations/at.md). |
 | [!UICONTROL Schemafeldname] | Der Name des Schemafelds. |
 | [!UICONTROL Typ des Datensatzes] | Erforderlich. Ein nicht bearbeitbares Feld, das anzeigt, von welchem Datensatztyp (Ereignis, Suche oder Profil) die Komponente stammt. |
 | [!UICONTROL Datensatz] | Ein nicht bearbeitbares Feld, das anzeigt, aus welchem Datensatz die Komponente stammt. Dieses Feld kann mehrere Datensätze enthalten. |
