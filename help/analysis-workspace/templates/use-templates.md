@@ -6,9 +6,9 @@ role: User, Admin
 hide: true
 hidefromtoc: true
 exl-id: d61f215d-9089-4014-9c5a-97f5d7134f34
-source-git-commit: 8561f14d5b428e55614fe1465f75d2be6660468d
+source-git-commit: bf3eb96ac3c764c73f4131b8ddd05809994f08df
 workflow-type: tm+mt
-source-wordcount: '15449'
+source-wordcount: '15490'
 ht-degree: 78%
 
 ---
@@ -61,7 +61,11 @@ Im Folgenden wird beschrieben, wie Sie Vorlagen auf der Registerkarte [!UICONTRO
 
    Eine Liste der verfügbaren Vorlagen finden Sie unten im Abschnitt [Verfügbare Vorlagen](#available-templates) .
 
-1. (Optional) Zeigen Sie Vorlagen an und verwenden Sie Vorlagen, die Komponenten enthalten, die in Ihrer Datenansicht nicht verfügbar sind. (Standardmäßig werden Vorlagen nur angezeigt, wenn sie Komponenten verwenden, die in Ihrer Datenansicht verfügbar sind.)
+1. (Optional) Sie können Vorlagen anzeigen, die Komponenten enthalten, die in Ihrer Datenansicht nicht verfügbar sind. (Standardmäßig werden Vorlagen nur angezeigt, wenn sie Komponenten verwenden, die in Ihrer Datenansicht verfügbar sind.)
+
+   >[!NOTE]
+   >
+   >   Bevor Sie diese Vorlagen verwenden können, muss ein Administrator zunächst die erforderlichen Kontextbezeichnungen für diese fehlenden Komponenten zur Datenansicht hinzufügen. Weitere Informationen finden Sie unter [Hinzufügen fehlender Komponenten zur Datenansicht für eine bestimmte Vorlage](/help/analysis-workspace/templates/create-templates.md#add-missing-components-to-the-data-view-for-a-given-template) in [Vorlagen verwenden](/help/analysis-workspace/templates/create-templates.md).
 
    1. Wählen Sie das Filtersymbol aus.
 

@@ -6,10 +6,10 @@ role: User, Admin
 hide: true
 hidefromtoc: true
 exl-id: 23cdf02f-56a1-4465-ae7f-b3a1bcad28af
-source-git-commit: 8561f14d5b428e55614fe1465f75d2be6660468d
+source-git-commit: d1aee7ccdcea2794efd9db5d6dbf46cba4087030
 workflow-type: tm+mt
-source-wordcount: '581'
-ht-degree: 4%
+source-wordcount: '1041'
+ht-degree: 2%
 
 ---
 
@@ -48,7 +48,7 @@ Informationen dazu, wie Benutzer ein Projekt basierend auf einer Vorlage erstell
 
 Administratoren können Unternehmensvorlagen bearbeiten oder löschen.
 
-1. Wählen Sie in Analysis Workspace die Registerkarte [!UICONTROL **Workspace**] und dann **[!UICONTROL _login_company_name _templates]**aus.
+1. Wählen Sie in Analysis Workspace die Registerkarte [!UICONTROL **Workspace**] und dann in der linken Leiste unter **[!UICONTROL Vorlagen]** die Option **[!UICONTROL _login_company_name _templates]**.
 
 1. Wenn Sie Vorlagen in einer Spaltenansicht anzeigen ![Spaltenansichtssymbol](assets/column-view-icon.png):
 
@@ -67,6 +67,8 @@ Administratoren können Unternehmensvorlagen bearbeiten oder löschen.
    1. Suchen Sie die Vorlage, die Sie bearbeiten oder löschen möchten.
 
       ![Kartenansicht der Unternehmensvorlage](assets/company-template-cards.png)
+
+   1. Bewegen Sie den Mauszeiger über die Vorlage und wählen Sie dann **[!UICONTROL Vorschau]** aus.
 
    1. Wählen Sie das Symbol Mehr und dann **[!UICONTROL Bearbeiten]** oder **[!UICONTROL Löschen]** aus.
 
@@ -97,6 +99,73 @@ Administratoren können Unternehmensvorlagen umbenennen, taggen und genehmigen.
    Sie können auch eine Vorlage löschen oder eine Vorlage löschen, wie unter [Vorlagen bearbeiten oder löschen](#edit-or-delete-templates) beschrieben.
 
 1. (Optional) Um zur regulären Ansicht zurückzukehren, deaktivieren Sie in der Filterleiste die Option **[!UICONTROL Unternehmensvorlagen]**.
+
+## Hinzufügen fehlender Komponenten zur Datenansicht für eine bestimmte Vorlage
+
+Einige von Adobe bereitgestellte Vorlagen funktionieren standardmäßig nicht, da sie Komponenten enthalten, die nicht in Ihrer Datenansicht enthalten sind.
+
+Für jede fehlende Komponente ist in Ihrer Datenansicht eine passende Kontextbeschriftung verfügbar. Sie müssen entweder die passende Kontextbeschriftung zu einer Komponente hinzufügen, die sich bereits in Ihrer Datenansicht befindet, oder Sie müssen Ihrer Datenansicht eine neue Komponente hinzufügen und die Kontextbeschriftung hinzufügen.
+
+So fügen Sie fehlende Komponenten zu einer Vorlage hinzu:
+
+1. Wählen Sie in Analysis Workspace die Registerkarte [!UICONTROL **Workspace**] und dann in der linken Leiste unter **[!UICONTROL Vorlagen]** die Option **[!UICONTROL Adobe-Vorlagen]**.
+
+1. Wählen Sie das Filtersymbol aus, um die Liste der Vorlagen zu filtern.
+
+1. Wählen Sie **[!UICONTROL Nicht einsatzbereit]** aus, um Vorlagen anzuzeigen, für die Komponenten erforderlich sind, die sich nicht in Ihrer Datenansicht befinden.
+
+   ![Verwenden einer Vorlage, die keine Komponenten enthält](assets/template-not-ready.png)
+
+1. Suchen Sie eine Vorlage, die noch nicht für Ihre Datenansicht verwendet werden kann.
+
+1. Führen Sie einen der folgenden Schritte aus:
+
+   * **Wenn Sie Vorlagen in einer Spaltenansicht anzeigen** ![Spaltenansichtssymbol](assets/column-view-icon.png):
+
+      1. Wechseln Sie zu der Vorlage, die noch nicht für die Verwendung mit Ihrer Datenansicht bereit ist, und wählen Sie dann das Infosymbol neben dem Vorlagennamen aus.
+
+         ![Info zu Unternehmensvorlagen](assets/company-template-info.png)
+
+      1. Wählen Sie **[!UICONTROL Vorschau]** aus.
+
+         ![Vorlagenvorschauseite](assets/template-preview.png)
+
+   * **Wenn Sie Vorlagen in einer Kartenansicht anzeigen** ![Kartenansichtssymbol](assets/card-view-icon.png):
+
+      1. Suchen Sie die Vorlage, die noch nicht für Ihre Datenansicht verwendet werden kann.
+
+         ![Kartenansicht der Unternehmensvorlage](assets/company-template-cards.png)
+
+      1. Bewegen Sie den Mauszeiger über die Vorlage und wählen Sie dann **[!UICONTROL Vorschau]** aus.
+
+         ![Vorlagenvorschauseite](assets/template-preview.png)
+
+1. Im Abschnitt **[!UICONTROL Fehlende Komponenten]** wird eine Liste der Komponenten angezeigt, die in der Datenansicht fehlen. Wählen Sie **[!UICONTROL Diese Komponenten zur Datenansicht hinzufügen]** aus.
+
+   Die Konfigurationsseite für die Datenansicht wird in einer neuen Registerkarte angezeigt.
+
+1. Wählen Sie die Registerkarte **[!UICONTROL Komponenten]** für die Datenansicht aus.
+
+   ![Registerkarte &quot;Datenansichtskomponenten&quot;](assets/template-dataview.png)
+
+1. Führen Sie für jede Komponente, die in der Vorlage als fehlend aufgelistet wurde, auf der Registerkarte **[!UICONTROL Komponenten]** einen der folgenden Schritte aus:
+
+   * Wählen Sie im Abschnitt **[!UICONTROL Einbezogene Komponenten]** eine Komponente aus, die bereits in der Datenansicht enthalten ist und die Sie für die fehlende Komponente verwenden möchten.
+
+   * Fügen Sie der Datenansicht eine neue Komponente hinzu, die Sie für die fehlende Komponente verwenden möchten, und wählen Sie dann die Komponente aus.
+
+     Um der Datenansicht eine neue Komponente hinzuzufügen, suchen Sie in der Liste der Schemafelder und ziehen Sie sie in den Abschnitt **[!UICONTROL Einbezogene Komponenten]** .
+
+1. Suchen Sie bei ausgewählter Komponente das Dropdownmenü **[!UICONTROL Kontextbezeichnungen]** in der rechten Spalte.
+
+   ![Registerkarte &quot;Datenansichtskomponenten&quot;](assets/template-dataview-context-label.png)
+
+1. Wählen Sie im Dropdown-Menü **[!UICONTROL Kontextbezeichnungen]** die Kontextbeschriftung aus, die denselben Namen wie die fehlende Komponente hat.
+
+1. Wählen Sie **[!UICONTROL Speichern und fortfahren]** aus.
+
+1. Wiederholen Sie für jede fehlende Komponente den Prozess, die passende Kontextbeschriftung zu einer Komponente in der Datenansicht hinzuzufügen.
+
 
 ## Zugriff auf eine Unternehmensvorlage
 
