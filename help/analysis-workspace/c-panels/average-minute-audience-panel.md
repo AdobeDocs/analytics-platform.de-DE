@@ -4,10 +4,10 @@ description: Verwendung und Interpretation des Audience-Bedienfelds "Durchschnit
 feature: Panels
 role: User, Admin
 exl-id: c55b5534-a9a6-47f1-8b43-c8c0b8686c53
-source-git-commit: 1dff53e244e5d231e7075ce087705e33e0978096
+source-git-commit: 28a43ef92bee1359509c0c3f92d51a08653830c3
 workflow-type: tm+mt
-source-wordcount: '1796'
-ht-degree: 28%
+source-wordcount: '1789'
+ht-degree: 30%
 
 ---
 
@@ -20,7 +20,6 @@ ht-degree: 28%
 >title="Medien-Zielgruppendurchschnitt pro Minute"
 >abstract="Erstellen Sie ein Panel, um den Zielgruppendurchschnitt pro Minute für bestimmte Inhalte oder über einen bestimmten Zeitraum zu analysieren."
 
-
 <!-- markdownlint-enable MD034 -->
 
 <!-- markdownlint-disable MD034 -->
@@ -29,8 +28,6 @@ ht-degree: 28%
 >id="cja_workspace_mediaaverageminuteaudience_panel"
 >title="Medien-Zielgruppendurchschnitt pro Minute"
 >abstract="Zeigt die Leistung bestimmter Medieninhalte oder über einen benutzerdefinierten Zeitraum an.<br/><br/>**Allgemeine Parameter **<br/>**Metrik berechnen für**: Wählen Sie die für das Bedienfeld zu verwendende Metrik aus. Wählen Sie **Bestimmter Inhalt** aus, um den Zielgruppendurchschnitt pro Minute für bestimmte Inhalte oder Ereignisse basierend auf der Inhaltslänge zu analysieren. **Wählen Sie „Benutzerdefinierter Zeitraum“ aus**, um zu analysieren, wie sich der Zielgruppendurchschnitt pro Minute über einen benutzerdefinierten Zeitraum verändert.<br/>**Reporting-Dimension**: Wählen Sie diese Option aus, um einen Bericht nach der Dimension **Videoname** oder **Inhalts-ID** zu erstellen. Nur verfügbar, wenn Sie „Bestimmter Inhalt“ als Metrik ausgewählt haben.<br/>**Granularität**: Wählen Sie die Granularität für die Berichte aus. Nur verfügbar, wenn Sie „Benutzerdefinierter Zeitraum“ als Metrik ausgewählt haben.<br/>**Inhalt filtern nach (optional)**: Wählen Sie eine bestimmte Sendung, Staffel, Folge oder eine benutzerdefinierte Dimension aus, um den Inhalt zu filtern.<br/><br/>**Erweiterte Einstellungen **<br/>**Tabelleneinstellungen**: Legen Sie fest, ob Berechnungswerte in der Tabelle angezeigt werden sollen.<br/>**Besuchszeitmetrik**: Legen Sie fest, welche Besuchszeitmetrik für die Berechnung eines bestimmten Inhalts verwendet werden soll. Nur verfügbar, wenn Sie „Bestimmter Inhalt“ als Metrik ausgewählt haben."
->additional-url="https://experienceleague.adobe.com/de/docs/analytics/analyze/analysis-workspace/panels/average-minute-audience-panel#specific-content" text="Bestimmter Inhalt"
->additional-url="https://experienceleague.adobe.com/de/docs/analytics/analyze/analysis-workspace/panels/average-minute-audience-panel#custom-time-period" text="Benutzerdefinierter Zeitraum"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -59,7 +56,7 @@ Der Bereich Zielgruppe für durchschnittliche Medienminuten bietet im Vergleich 
 
   Wenn Sie diese Aktualisierung bei Verwendung der Metrik vornehmen, ist die Dauer-Classification nicht vorhanden (sofern die Classification nicht vorhanden war). Oder die Dauer-Classification ist veraltet (wenn die Classification vorhanden, aber nicht korrekt war).
 
-## Verwenden Sie stattdessen 
+## Verwenden
 
 So verwenden Sie ein Bedienfeld mit der durchschnittlichen Medienminuten-Audience ]**:**[!UICONTROL 
 
@@ -68,9 +65,9 @@ So verwenden Sie ein Bedienfeld mit der durchschnittlichen Medienminuten-Audienc
 1. Stellen Sie sicher, dass Sie eine Datenansicht für das Bedienfeld auswählen, für das im Add-on für Streaming-Mediensammlung Komponenten konfiguriert sind.
 
 
-1. Geben Sie die [Eingabe](#panel-input) für das Bedienfeld an.
+1. Legen Sie die [Eingabe](#panel-input) für das Bedienfeld fest.
 
-1. Beobachten Sie die [Ausgabe](#panel-output) für das Bedienfeld.
+1. Sehen Sie sich die [Ausgabe](#panel-output) für das Bedienfeld an.
 
 ### Bedienfeldeingabe
 
