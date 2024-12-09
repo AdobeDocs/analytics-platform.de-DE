@@ -5,10 +5,10 @@ exl-id: a89694c9-0909-440e-939c-b245fc4dd6bf
 solution: Customer Journey Analytics
 feature: Basics
 role: Admin
-source-git-commit: 39e4c17336d3648cbf20cace535668d14510186f
+source-git-commit: 928c79f9ccf30cc33e0f334f715bf3190a257019
 workflow-type: tm+mt
-source-wordcount: '377'
-ht-degree: 71%
+source-wordcount: '418'
+ht-degree: 64%
 
 ---
 
@@ -18,7 +18,7 @@ Beachten Sie Folgendes, bevor Sie Verbindungen, Datensätze oder Stapel in Custo
 
 | Wenn Sie... | Auswirkung |
 | --- | --- |
-| Löschen einer Verbindung in [!UICONTROL Customer Journey Analytics] | Eine Fehlermeldung weist darauf hin, dass<ul><li>für die gelöschte Verbindung erstellte Datenansichten nicht mehr funktionieren.</li><li> Ebenso funktionieren alle Arbeitsbereich-Projekte nicht mehr, die von den Datenansichten der gelöschten Verbindung abhängig sind.</li></ul>Beachten Sie, dass Sie keine Customer Journey Analytics-Verbindungen löschen können, die mit Adobe Experience Platform-Sandboxes verbunden sind, für die Sie keine Berechtigungen haben. Selbst wenn Sie über Berechtigungen für die Datenansichten verfügen, die auf diesen Verbindungen basieren, können Sie die Verbindungen erst löschen, wenn Ihnen Berechtigungen für die zugrunde liegenden Adobe Experience Platform-Sandboxes erteilt wurden. |
+| Löschen einer Verbindung in [!UICONTROL Customer Journey Analytics] | Eine Fehlermeldung weist darauf hin, dass<ul><li>für die gelöschte Verbindung erstellte Datenansichten nicht mehr funktionieren.</li><li> Ebenso funktionieren alle Arbeitsbereich-Projekte nicht mehr, die von den Datenansichten der gelöschten Verbindung abhängig sind.</li></ul>Beachten Sie, dass Sie keine Customer Journey Analytics-Verbindungen löschen können, die: <ul><li>sind an Adobe Experience Platform-Sandboxes gebunden, für die Sie keine Berechtigungen haben. Selbst wenn Sie über Berechtigungen für die Datenansichten verfügen, die auf diesen Verbindungen basieren, können Sie die Verbindungen erst löschen, wenn Ihnen Berechtigungen für die zugrunde liegenden Adobe Experience Platform-Sandboxes erteilt wurden.</li><li>Lassen Sie die folgende Kompatibilitätsoption für eine Datenansicht ausgewählt, die mit der Verbindung verknüpft ist: **[!UICONTROL Als Standarddatenansicht in Adobe Journey Optimizer festlegen]**<p>Weitere Informationen zu dieser Konfigurationsoption finden Sie unter [Kompatibilität](/help/data-views/create-dataview.md#compatibility) in [Erstellen oder Bearbeiten einer Datenansicht](/help/data-views/create-dataview.md)</p></li></ul> |
 | Datensatz in [!UICONTROL Adobe Experience Platform] löschen | Durch das Löschen eines Datensatzes in Adobe Experience Platform wird der Datenfluss von diesem Datensatz zu allen Verbindungen, die diesen Datensatz enthalten, angehalten. Alle Daten aus diesem Datensatz werden automatisch aus den zugehörigen Customer Journey Analytics-Verbindungen gelöscht. |
 | Löschen eines Datensatzes in [!UICONTROL Customer Journey Analytics] | Wenn Sie einen Datensatz aus einer Verbindung in Customer Journey Analytics löschen, funktionieren Datenansichten und Projekte, die auf diesen Datensatz angewiesen sind, nicht mehr. |
 | Löschen von einem Batch aus einem Datensatz (in [!UICONTROL Adobe Experience Platform]) | Wenn ein Batch aus einem [!UICONTROL Adobe Experience Platform]-Datensatz gelöscht wird, wird derselbe Batch aus allen [!UICONTROL Customer Journey Analytics]-Verbindungen entfernt, die diesen Batch enthalten. [!UICONTROL Customer Journey Analytics] wird über Batches benachrichtigt, die in [!UICONTROL Adobe Experience Platform] gelöscht wurden. |
