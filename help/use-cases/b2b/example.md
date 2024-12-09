@@ -5,16 +5,16 @@ solution: Customer Journey Analytics
 feature: Use Cases
 exl-id: e8ebf5e7-0b80-4d46-8a5f-b7ae832eda4f
 role: User
-source-git-commit: aa1615be6eaeb5c098659ec6b58829ca8efe64a4
+source-git-commit: 912e6a3200cdc8463667266f9cae75e4f6278337
 workflow-type: tm+mt
-source-wordcount: '1222'
-ht-degree: 9%
+source-wordcount: '1262'
+ht-degree: 8%
 
 ---
 
 # Beispiel für ein B2B-Projekt
 
-In diesem Artikel wird beschrieben, wie Sie B2B-Daten auf Profil-(Personen-)Ebene in Customer Journey Analytics einrichten, konfigurieren und Berichte dazu erstellen.
+Dieser Artikel veranschaulicht einen Anwendungsfall, bei dem Sie im Customer Journey Analytics im Kontext einer typischen B2B-Konfiguration Personendaten ordnungsgemäß melden möchten. Eine solche Konfiguration ist Teil des [Real-Time CDP B2B edition](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/intro/rtcdpb2b-intro/b2b-overview).  Im Anwendungsbeispiel wird beschrieben, wie Sie B2B-Daten auf Profilebene (Person) einrichten, konfigurieren und in Berichten auf Customer Journey Analytics-Ebene erstellen.
 
 ## Verbindung
 
@@ -41,7 +41,7 @@ Definieren Sie Ihre Verbindung, um alle relevanten B2B-Datensätze aus Experienc
 -->
 
 
-Die Beziehung zwischen den B2B-Lookup-Schemas, dem Profilschema und dem Ereignisschema wird in der B2B-Einrichtung innerhalb von Experience Platform definiert. Siehe Schemas in [Real-time Customer Data Platform B2B Edition](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/schemas/b2b) und [Definieren einer n:1-Beziehung zwischen zwei Schemas in Real-time Customer Data Platform B2B Edition](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/relationship-b2b).
+Die Beziehung zwischen den B2B-Lookup-Schemas, dem Profilschema und dem Ereignisschema wird in der B2B-Einrichtung innerhalb von Experience Platform definiert. Siehe Schemas in [Real-time Customer Data Platform B2B edition](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/schemas/b2b) und [Definieren einer n:1-Beziehung zwischen zwei Schemas in Real-time Customer Data Platform B2B edition](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/relationship-b2b).
 
 
 Um eine ordnungsgemäße Einrichtung einer Verbindung sicherzustellen, die personenbasierte Suchen Ihrer B2B-Daten unterstützt, verwenden Sie die folgende Abbildung für eine Übersicht und führen Sie die folgenden Schritte aus:
