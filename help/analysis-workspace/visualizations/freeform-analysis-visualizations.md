@@ -5,10 +5,10 @@ title: Visualisierungsübersicht
 feature: Visualizations
 exl-id: ca9e0561-7a54-487a-9fdc-3bcf34f9bdb1
 role: User
-source-git-commit: b85ad91a80f277aaf35f1e3aa3366a46f6478215
+source-git-commit: 4942c83e34b129e3718084601d5a733bcebf4de9
 workflow-type: tm+mt
-source-wordcount: '1617'
-ht-degree: 15%
+source-wordcount: '1616'
+ht-degree: 17%
 
 ---
 
@@ -23,13 +23,13 @@ Die folgenden Visualisierungstypen sind in Analysis Workspace verfügbar:
 | Symbol | Name | Beschreibung |
 | :---: | --- | ---| 
 | ![GraphArea](/help/assets/icons/GraphArea.svg) | [Bereich](/help/analysis-workspace/visualizations/area.md) | Eine Visualisierung eines Bereichsdiagramms. Wie ein Liniendiagramm, aber mit einem farbigen Bereich unterhalb der Linie. Verwenden Sie ein Flächendiagramm, wenn Sie mehrere Metriken darstellen und den Bereich visualisieren möchten, der durch die Schnittmenge von zwei oder mehr Metriken gebildet wird. |
-| ![GraphBarVertical](/help/assets/icons/GraphBarVertical.svg) | [Balken](/help/analysis-workspace/visualizations/bar.md) | Eine Balkendiagrammvisualisierung mit vertikalen Balken, die verschiedene Werte aus einer oder mehreren Metriken darstellen. |
+| ![VertikaleGrafikbalken](/help/assets/icons/GraphBarVertical.svg) | [Balken](/help/analysis-workspace/visualizations/bar.md) | Eine Balkendiagrammvisualisierung mit vertikalen Balken, die verschiedene Werte aus einer oder mehreren Metriken darstellen. |
 | ![GraphBarVertical](/help/assets/icons/GraphBarVerticalStacked.svg) | [Balken gestapelt](/help/analysis-workspace/visualizations/bar.md) | Eine gestapelte Balkendiagrammvisualisierung mit vertikalen Balken, die verschiedene Werte aus einer oder mehreren Metriken darstellt. |
-| ![GraphBullet](/help/assets/icons/GraphBullet.svg)</p> | [Aufzählungszeichen](/help/analysis-workspace/visualizations/bullet-graph.md) | Eine Visualisierung eines Lineardiagramms, die anzeigt, wie ein Wert, der Sie interessiert, im Vergleich zu anderen Leistungsbereichen (Zielen) liegt oder diese misst. |
-| ![TextNumbered](/help/assets/icons/TextNumbered.svg) | [Kohortentabelle](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md) | Eine Kohortenvisualisierung ist eine Personengruppe mit gemeinsamen Merkmalen innerhalb eines bestimmten Zeitraums. Eine Kohortentabelle ist für die Aufbewahrungs-, Abwanderungs- oder Latenzanalyse nützlich. |
-| ![Kombo](/help/assets/icons/ComboChart.svg) | [Kombo](combo-charts.md) | Mit einem Kombinationsdiagramm können Sie schnell eine Vergleichsvisualisierung erstellen, ohne zuvor eine Tabelle erstellen zu müssen. |
-| ![GraphDonut](/help/assets/icons/GraphDonut.svg) | [Ringdiagramm](/help/analysis-workspace/visualizations/donut.md) | Ähnlich wie bei einem Tortendiagramm zeigt eine Ringvisualisierung Daten als Teile oder Filter eines Ganzen an. |
-| ![ConversionTrichter](/help/assets/icons/ConversionFunnel.svg) | [Fallout](/help/analysis-workspace/visualizations/fallout/fallout-flow.md) | Eine Fallout-Visualisierung zeigt an, wo Personen eine vordefinierte Seitensequenz verlassen (ausgefallen) und weitergemacht (durchgeraten) haben. |
+| ![Aufzählungspunkte](/help/assets/icons/GraphBullet.svg)</p> | [Bullet](/help/analysis-workspace/visualizations/bullet-graph.md) | Eine Visualisierung eines Lineardiagramms, die anzeigt, wie ein Wert, der Sie interessiert, im Vergleich zu anderen Leistungsbereichen (Zielen) liegt oder diese misst. |
+| ![NummerierterText](/help/assets/icons/TextNumbered.svg) | [Kohortentabelle](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md) | Eine Kohortenvisualisierung ist eine Personengruppe mit gemeinsamen Merkmalen innerhalb eines bestimmten Zeitraums. Eine Kohortentabelle ist für die Aufbewahrungs-, Abwanderungs- oder Latenzanalyse nützlich. |
+| ![Kombination](/help/assets/icons/ComboChart.svg) | [Kombination](combo-charts.md) | Mit einem Kombinationsdiagramm können Sie schnell eine Vergleichsvisualisierung erstellen, ohne zuvor eine Tabelle erstellen zu müssen. |
+| ![Ringdiagramm](/help/assets/icons/GraphDonut.svg) | [Ringdiagramm](/help/analysis-workspace/visualizations/donut.md) | Ähnlich wie bei einem Tortendiagramm zeigt eine Ringvisualisierung Daten als Teile oder Filter eines Ganzen an. |
+| ![Konversionstrichter](/help/assets/icons/ConversionFunnel.svg) | [Fallout](/help/analysis-workspace/visualizations/fallout/fallout-flow.md) | Eine Fallout-Visualisierung zeigt an, wo Personen eine vordefinierte Seitensequenz verlassen (ausgefallen) und weitergemacht (durchgeraten) haben. |
 | ![GraphPathing](/help/assets/icons/GraphPathing.svg) | [Fluss](/help/analysis-workspace/visualizations/c-flow/flow.md) | Eine Flussvisualisierung zeigt exakte Kundenpfade durch Ihre Websites und Apps. |
 | ![ViewTable](/help/assets/icons/ViewTable.svg)</p> | [Freiformtabelle](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) | Eine Freiformtabellen-Visualisierung ist eine interaktive Visualisierung. Die Freiformtabellenvisualisierung bildet die Grundlage für die Datenanalyse in Workspace. |
 | ![GraphHistogramm](/help/assets/icons/Histogram.svg) | [Histogramm](/help/analysis-workspace/visualizations/histogram.md) | Eine Histogrammvisualisierung fasst Personen, Besuche oder Ereignisse basierend auf einem Metrikvolumen in Behälter zusammen. |
@@ -37,10 +37,10 @@ Die folgenden Visualisierungstypen sind in Analysis Workspace verfügbar:
 | ![GraphBarHorizontalStack](/help/assets/icons/GraphBarHorizontalStacked.svg) | [Horizontalbalken gestapelt](/help/analysis-workspace/visualizations/horizontal-bar.md) | Eine gestapelte horizontale Balkenvisualisierung zeigt horizontale Balken, die verschiedene Werte aus einer oder mehreren Metriken darstellen. |
 | ![Verzweigung3](/help/assets/icons/Branch3.svg) | [Journey canvas](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md) | Mit einer Journey-Arbeitsflächenvisualisierung können Sie die Journey analysieren und Einblicke in die gewinnen, die Sie Ihren Benutzern und Kunden bereitstellen. |
 | ![KeyMetrics](/help/assets/icons/KeyMetrics.svg) | [Zusammenfassung der Schlüsselmetriken](/help/analysis-workspace/visualizations/key-metric.md) | Eine Visualisierung der Schlüsselmetriken-Zusammenfassung kombiniert die Visualisierungen für Zeilen, Zusammenfassungen und Zusammenfassungsnummern. |
-| ![GraphTrend](/help/assets/icons/GraphTrend.svg) | [Linie](/help/analysis-workspace/visualizations/line.md) | Eine Linienvisualisierung stellt Metriken anhand einer Linie dar, die angibt, wie sich Werte über einen bestimmten Zeitraum ändern. Ein Liniendiagramm verwendet die Zeit entlang der X-Achse. |
-| ![GraphStreuung](/help/assets/icons/GraphScatter.svg) | [Streuung](/help/analysis-workspace/visualizations/scatterplot.md) | Eine Streudiagramm-Visualisierung zeigt die Beziehung zwischen Dimensionselementen und bis zu drei Metriken. |
+| ![Trends-Grafik](/help/assets/icons/GraphTrend.svg) | [Linie](/help/analysis-workspace/visualizations/line.md) | Eine Linienvisualisierung stellt Metriken anhand einer Linie dar, die angibt, wie sich Werte über einen bestimmten Zeitraum ändern. Ein Liniendiagramm verwendet die Zeit entlang der X-Achse. |
+| ![Streudiagramm](/help/assets/icons/GraphScatter.svg) | [Streuung](/help/analysis-workspace/visualizations/scatterplot.md) | Eine Streudiagramm-Visualisierung zeigt die Beziehung zwischen Dimensionselementen und bis zu drei Metriken. |
 | ![PageRule](/help/assets/icons/PageRule.svg) | [Bereichs header](section-header.md) | So identifizieren und artikulieren Sie Abschnitte in einem Bedienfeld. |
-| ![MoveUpDown](/help/assets/icons/MoveUpDown.svg) | [Zusammenfassungsänderung](/help/analysis-workspace/visualizations/summary-number-change.md) | Eine Visualisierung der Zusammenfassungsänderung zeigt die Änderung zwischen den ausgewählten Zellen als eine große Zahl oder einen großen Prozentsatz an. |
+| ![NachObenUnten](/help/assets/icons/MoveUpDown.svg) | [Zusammenfassungsänderung](/help/analysis-workspace/visualizations/summary-number-change.md) | Eine Visualisierung der Zusammenfassungsänderung zeigt die Änderung zwischen den ausgewählten Zellen als eine große Zahl oder einen großen Prozentsatz an. |
 | ![123](/help/assets/icons/123.svg)</p> | [Zusammenfassungszahl](/help/analysis-workspace/visualizations/summary-number-change.md) | Eine Visualisierung der Zusammenfassungsnummer zeigt die ausgewählte Zelle als eine große Zahl an. |
 | ![Text](/help/assets/icons/Text.svg) | [Text](/help/analysis-workspace/visualizations/text.md) | Mit einer Textvisualisierung können Sie benutzerdefinierten Text zu Ihrer Workspace hinzufügen. Hilfreich zum Hinzufügen zusätzlicher Kontexte zu Ihrer Analyse und zu Einblicken, zusätzlich zum Nutzen der Beschreibungen im Bedienfeld oder in Visualisierungen |
 | ![ModernGridView](/help/assets/icons/ModernGridView.svg) | [Treemap](/help/analysis-workspace/visualizations/treemap.md)<p> | Eine Treemap-Visualisierung zeigt hierarchische Daten (Baumstruktur) als Satz verschachtelter Rechtecke an. |
@@ -60,7 +60,7 @@ Die folgenden Visualisierungstypen sind in Analysis Workspace verfügbar:
 
    * Wählen Sie im Bereich, in dem Sie die Visualisierung hinzufügen möchten, ![Kreis hinzufügen](/help/assets/icons/AddCircle.svg) und wählen Sie dann das Symbol für die Visualisierung aus, die Sie hinzufügen möchten. Bewegen Sie den Mauszeiger über das Symbol für jede Visualisierung, um den Namen anzuzeigen.
 
-   * Fügen Sie ein [leeres Bedienfeld](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/panels/blank-panel) hinzu und wählen Sie dann die Visualisierung aus, die Sie hinzufügen möchten.
+   * Fügen Sie ein [leeres Bedienfeld](/help/analysis-workspace/c-panels/blank-panel.md) hinzu und wählen Sie dann die Visualisierung aus, die Sie hinzufügen möchten.
 
    * Wählen Sie im Kontextmenü einer vorhandenen Visualisierung in Ihrem Analysis Workspace-Projekt die Option **[!UICONTROL Visualisierung duplizieren]** oder **[!UICONTROL Visualisierung kopieren]** aus.
 
@@ -140,7 +140,7 @@ Verwenden Sie das Kontextmenü (über alternative Auswahl verfügbar, z. B. Rech
 
 | Option | Beschreibung |
 | --- | --- |
-| **[!UICONTROL Kopieren Sie die Visualisierung einfügen]** | Fügen Sie eine kopierte Visualisierung an einer anderen Stelle im Projekt oder in ein ganz anderes Projekt ein. |
+| **[!UICONTROL Kopierte Visualisierung einfügen]** | Fügen Sie eine kopierte Visualisierung an einer anderen Stelle im Projekt oder in ein ganz anderes Projekt ein. |
 | **[!UICONTROL Daten in die Zwischenablage kopieren]** | Kopieren Sie Daten aus der Visualisierung in die Zwischenablage. |
 | **[!UICONTROL Auswahl in Zwischenablage kopieren]** | Kopieren Sie die Auswahl aus der Visualisierung in die Zwischenablage. |
 | **[!UICONTROL Elemente als CSV-Datei herunterladen (*Dimensionsname*)]** | Laden Sie die Dimensionselemente (bis zu maximal 50.000) der Visualisierung auf Ihr lokales Gerät herunter. Maximal 50.000 Dimensionselemente für die ausgewählte Dimension. |

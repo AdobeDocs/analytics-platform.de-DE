@@ -4,10 +4,10 @@ description: Interaktion mit dynamischen und statischen Dimensionselementen in T
 feature: Visualizations
 exl-id: 7806f535-15c7-40f4-955a-724d9752969d
 role: User
-source-git-commit: 90d1c51c11f0ab4d7d61b8e115efa8257a985446
+source-git-commit: 4942c83e34b129e3718084601d5a733bcebf4de9
 workflow-type: tm+mt
-source-wordcount: '543'
-ht-degree: 49%
+source-wordcount: '542'
+ht-degree: 44%
 
 ---
 
@@ -21,7 +21,7 @@ Dynamische Dimensionselemente ändern sich im Laufe der Zeit und hängen von der
 
 Wenn Sie eine Dimension in eine Freiform-Tabelle ablegen, werden dynamische Zeilen zurückgegeben. Dynamische Zeilen stellen die obersten Elemente dar, die der Dimension für eine bestimmte Metrik und einen bestimmten Zeitraum entsprechen. Sie können eine Dimension auch in Freiform-Tabellenspalten ablegen und die Dimension wird automatisch in die fünf obersten Dimensionselemente erweitert.
 
-Wenn Sie beispielsweise die Dimension „Browser-Typ“ in die Tabelle ziehen, kehren die obersten Dimensionselemente des Browser-Typs (z. B. Microsoft, Apple, Google usw.) dynamisch zu den Tabellenzeilen zurück. Wenn sie in eine Spalte abgelegt wurde, werden die obersten 5 Browsertyp-Dimensionselemente dynamisch zurückgegeben.
+Wenn Sie beispielsweise die Dimension &quot;Browsertyp&quot;in die Tabelle ziehen, kehren die obersten Dimensionselemente des Browsertyps (z. B. Microsoft, Apple, Google usw.) dynamisch zu den Tabellenzeilen zurück. Wenn sie in eine Spalte abgelegt wurde, werden die obersten 5 Browsertyp-Dimensionselemente dynamisch zurückgegeben.
 
 Dynamische Dimensionselemente verfügen über die Zeilenfilteroption ![Filter](/help/assets/icons/Filter.svg) und einen ![Schließen](/help/assets/icons/Close.svg) und haben **nicht** eine Sperre ![LockClosed](/help/assets/icons/LockClosed.svg). <!--do they have the lock icon? --> Wenn Sie neben einem dynamischen Dimensionselement auf ![Schließen](/help/assets/icons/Close.svg) klicken, wird automatisch ein Filter angewendet. Weitere Informationen zum Anwenden von Filtern auf Tabellen finden Sie unter [Tabellen filtern und sortieren](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md).
 
@@ -53,4 +53,4 @@ Dimensionselemente aus verschiedenen Dimensionen können derselben Tabelle hinzu
 Dynamische und statische Zeilen verhalten sich in der Freiform-Gesamtzeile unterschiedlich. Standardmäßig:
 
 * Dynamische Zeilen werden serverseitig summiert und deduplizieren Metriken wie Sitzungen oder Personen.
-* Statische Zeilen werden Client-seitig summiert und deduplizieren **keine** Metriken. Um die Gesamtzeile Server-seitig zu berechnen, ändern Sie die Zeileneinstellung auf **Gesamtsumme anzeigen**. [Weitere Infos](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/freeform-table/workspace-totals.html?lang=de)
+* Statische Zeilen werden Client-seitig summiert und deduplizieren **keine** Metriken. Um die Gesamtzeile Server-seitig zu berechnen, ändern Sie die Zeileneinstellung auf **Gesamtsumme anzeigen**. [Weitere Infos](/help/analysis-workspace/visualizations/freeform-table/workspace-totals.md)

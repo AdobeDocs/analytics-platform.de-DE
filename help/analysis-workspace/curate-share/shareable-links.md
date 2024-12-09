@@ -5,10 +5,10 @@ title: Erstellen von freigebbaren Links
 exl-id: 6cfb5161-08e1-4583-ae79-4600b5531929
 feature: Curate and Share
 role: User
-source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
+source-git-commit: 4942c83e34b129e3718084601d5a733bcebf4de9
 workflow-type: tm+mt
-source-wordcount: '381'
-ht-degree: 67%
+source-wordcount: '379'
+ht-degree: 61%
 
 ---
 
@@ -18,9 +18,9 @@ Analysis Workspace bietet viele Möglichkeiten, ein Projekt für Ihre Benutzer f
 
 ## Abrufen eines Projekt-Links zur Freigabe für andere Workspace-Benutzende {#project-link}
 
-Um einen Link zu einem Projekt freizugeben, gehen Sie zum Projekt, das Sie freigeben möchten, und wählen Sie dann &quot;[!UICONTROL **Freigabe**]&quot;> &quot;[!UICONTROL **Projekt-Link abrufen**]&quot;(oder &quot;**Freigabe**&quot;> &quot;[!UICONTROL **Mit Workspace-Benutzern teilen**]&quot;> &quot;[!UICONTROL **Über Link freigeben**&quot;). Benutzende, für die Sie den Link freigeben, müssen sich anmelden.
+Um einen Link zu einem Projekt freizugeben, gehen Sie zum Projekt, das Sie freigeben möchten, und wählen Sie dann &quot;**[!UICONTROL Freigabe]**&quot;> &quot;**[!UICONTROL Projekt-Link abrufen]**&quot;(oder &quot;**[!UICONTROL Freigabe]**&quot;> &quot;**[!UICONTROL Mit Workspace-Benutzern teilen]**&quot;> &quot;**[!UICONTROL Über Link freigeben]**&quot;). Benutzende, für die Sie den Link freigeben, müssen sich anmelden.
 
-Wenn dem Empfänger bzw. der Empfängerin des Links keine [Projektrolle](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/share-projects.html?lang=de) zugewiesen wurde, erhalten Admins das Erlebnis **[!UICONTROL Kann bearbeiten]**, und Nicht-Admins erhalten **[!UICONTROL Kann duplizieren]**.
+Wenn dem Empfänger des Links keine [Projektrolle](/help/analysis-workspace/curate-share/share-projects.md) zugewiesen wurde, erhalten Administratoren **[!UICONTROL Original bearbeiten]** und Nicht-Administratoren erhalten **[!UICONTROL Kopie bearbeiten]** -Erlebnisse.
 
 ## Abrufen eines schreibgeschützten Links zur Freigabe für alle
 

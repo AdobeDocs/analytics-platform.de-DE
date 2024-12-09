@@ -4,10 +4,10 @@ title: Text
 feature: Visualizations
 exl-id: 51cb6b57-682f-4475-b829-75def725be43
 role: User
-source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
+source-git-commit: 4942c83e34b129e3718084601d5a733bcebf4de9
 workflow-type: tm+mt
-source-wordcount: '243'
-ht-degree: 25%
+source-wordcount: '242'
+ht-degree: 29%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 25%
 
 Um benutzerdefinierten Rich-Text zu Ihrem Workspace-Projekt hinzuzufügen, können Sie eine ![Text](/help/assets/icons/Text.svg) **[!UICONTROL Text]** -Visualisierung verwenden oder Beschreibungen für eine Visualisierung und einen Bereich verwenden.
 
-## Verwenden Sie stattdessen 
+## Verwenden
 
 Sie können die Textvisualisierung wie folgt verwenden:
 
@@ -45,7 +45,7 @@ Beim Bearbeiten des Textfelds oder der Beschreibung können Sie Schriftgrad (Üb
 
 ## Hyperlinks hinzufügen {#hyperlinks}
 
-Um einen Hyperlink hinzuzufügen, markieren Sie den Text und wählen Sie im Menü ![Link](/help/assets/icons/Link.svg) aus. Sie können Hyperlinks verwenden, um Ihre Projektempfänger weiter zu unterstützen. Hyperlinks können Links zu externen Websites, Dokumentationsseiten, [Workspace-Projekten, Bedienfeldern oder Visualisierungen](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/curate-share/shareable-links) usw. enthalten.
+Um einen Hyperlink hinzuzufügen, markieren Sie den Text und wählen Sie im Menü ![Link](/help/assets/icons/Link.svg) aus. Sie können Hyperlinks verwenden, um Ihre Projektempfänger weiter zu unterstützen. Hyperlinks können Links zu externen Websites, Dokumentationsseiten, [Workspace-Projekten, Bedienfeldern oder Visualisierungen](/help/analysis-workspace/curate-share/shareable-links.md) usw. enthalten.
 
 ![Textoptionen mit hervorgehobenem Link-Symbol.](assets/hyperlink.png)
 

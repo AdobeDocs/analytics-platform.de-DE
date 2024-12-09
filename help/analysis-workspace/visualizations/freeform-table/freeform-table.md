@@ -1,17 +1,17 @@
 ---
-title: Überblick über Freiformtabelle
+title: Überblick über Freiformtabellen
 description: Freiformtabellen sind die Grundlage für die Analyse von Daten in Workspace
 feature: Visualizations
 exl-id: e5ba9089-c575-47b3-af85-b8b2179396ac
 role: User
-source-git-commit: 519e7d583edc1eab9b6dd10fec024ac4bb2b93cf
+source-git-commit: 4942c83e34b129e3718084601d5a733bcebf4de9
 workflow-type: tm+mt
-source-wordcount: '761'
+source-wordcount: '754'
 ht-degree: 26%
 
 ---
 
-# Überblick über Freiformtabelle {#freeform-table-overview}
+# Überblick über Freiformtabellen {#freeform-table-overview}
 
 <!-- markdownlint-disable MD034 -->
 
@@ -23,7 +23,7 @@ ht-degree: 26%
 <!-- markdownlint-enable MD034 -->
 
 
-In Analysis Workspace bildet die Visualisierung einer ![Tabelle](/help/assets/icons/Table.svg) **[!UICONTROL Freiformtabelle]** die Grundlage für die interaktive Datenanalyse. Sie können eine Kombination von [Komponenten](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/components/analysis-workspace-components) per Drag und Drop in die Zeilen und Spalten ziehen, um eine benutzerdefinierte Tabelle für Ihre Analyse zu erstellen. Wenn jede Komponente abgelegt wird, wird die Tabelle sofort aktualisiert, damit Sie schnell analysieren und tiefer gehen können.
+In Analysis Workspace bildet die Visualisierung einer ![Tabelle](/help/assets/icons/Table.svg) **[!UICONTROL Freiformtabelle]** die Grundlage für die interaktive Datenanalyse. Sie können eine Kombination von [Komponenten](/help/components/overview.md) per Drag und Drop in die Zeilen und Spalten ziehen, um eine benutzerdefinierte Tabelle für Ihre Analyse zu erstellen. Wenn jede Komponente abgelegt wird, wird die Tabelle sofort aktualisiert, damit Sie schnell analysieren und tiefer gehen können.
 
 ![Freiformtabelle mit Komponenten in Zeilen und Spalten, einschließlich Besuchen und Online-Bestellungen für mehrere Webseiten.](assets/opening-section.png)
 
@@ -54,16 +54,16 @@ Es gibt verschiedene Arten, mit Freiformtabellen zu interagieren und sie anzupas
 ### Zeilen
 
 * Mit ![GraphBarVerticalAdd](/help/assets/icons/GraphBarVerticalAdd.svg) können Sie eine neue Visualisierung ](../freeform-analysis-visualizations.md#visualize) schnell aus einer oder mehreren Zeilen erstellen.[
-* Sie können mehr Zeilen in einen einzigen Bildschirm einpassen, indem Sie die [Anzeigedichte](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/build-workspace-project/view-density) des Projekts anpassen.
+* Sie können mehr Zeilen in einen einzigen Bildschirm einpassen, indem Sie die [Anzeigedichte](/help/analysis-workspace/build-workspace-project/view-density.md) des Projekts anpassen.
 * Jede Dimensionsreihe kann bis zu 400 Zeilen anzeigen, bevor die Paginierung erfolgt. Wählen Sie in der ersten Spaltenüberschrift die Zahl neben **[!UICONTROL Zeilen]** aus, um weitere Zeilen auf einer Seite anzuzeigen. Navigieren Sie mit ![ChevronRight](/help/assets/icons/ChevronRight.svg) in der ersten Spaltenüberschrift zu einer anderen Seite.
-* Sie können Zeilen nach zusätzlichen Komponenten aufschlüsseln. Um mehrere Zeilen gleichzeitig aufzuschlüsseln, wählen Sie mehrere Zeilen aus und ziehen Sie dann die nächste Komponente auf die ausgewählten Zeilen. Weitere Informationen zu [Aufschlüsselungen](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/components/dimensions/t-breakdown-fa).
-* Zeilen können [gefiltert](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/freeform-table/filter-and-sort) werden, um einen reduzierte Anzahl von Elementen anzuzeigen. Weitere Einstellungen finden Sie unter [Zeileneinstellungen](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings).
+* Sie können Zeilen nach zusätzlichen Komponenten aufschlüsseln. Um mehrere Zeilen gleichzeitig aufzuschlüsseln, wählen Sie mehrere Zeilen aus und ziehen Sie dann die nächste Komponente auf die ausgewählten Zeilen. Weitere Informationen zu [Aufschlüsselungen](/help/components/dimensions/t-breakdown-fa.md).
+* Zeilen können [gefiltert](/help/components/filters/filters-overview.md) werden, um einen reduzierte Anzahl von Elementen anzuzeigen. Weitere Einstellungen finden Sie unter [Zeileneinstellungen](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.md).
 
 ### Spalten
 
 * Komponenten können innerhalb von Spalten gestapelt werden, um gefilterte Metriken, tabellenübergreifende Analysen und mehr zu erstellen.
-* Die Ansicht jeder Spalte kann unter den [Spalteneinstellungen](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/visualizations/freeform-table/column-row-settings/column-settings) angepasst werden.
-* Im [Kontextmenü](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/analysis-workspace/navigating-workspace-projects/right-click-for-workspace-efficiency) sind mehrere Aktionen verfügbar. Das Menü enthält verschiedene Aktionen, je nachdem, ob Sie die Tabellenüberschrift, die Zeilen oder die Spalten auswählen.
+* Die Ansicht jeder Spalte kann unter den [Spalteneinstellungen](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/column-settings.md) angepasst werden.
+* Im [Kontextmenü](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu) sind mehrere Aktionen verfügbar. Das Menü enthält verschiedene Aktionen, je nachdem, ob Sie die Tabellenüberschrift, die Zeilen oder die Spalten auswählen.
 
 
 ## Einstellungen

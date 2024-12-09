@@ -4,9 +4,9 @@ title: Workspace-Summen
 feature: Visualizations
 exl-id: ba14b88c-44c2-45f6-b68f-f5c1263a89dd
 role: User
-source-git-commit: b9abcf48c5334d71639d7d96558a63611a4a491c
+source-git-commit: 4942c83e34b129e3718084601d5a733bcebf4de9
 workflow-type: tm+mt
-source-wordcount: '496'
+source-wordcount: '487'
 ht-degree: 18%
 
 ---
@@ -35,7 +35,7 @@ In Freiformtabellen wird auf jeder Unterteilungsebene eine Zeile insgesamt angez
 
 ## Anzeigesummen
 
-Unter ![Einstellung](/help/assets/icons/Setting.svg) **[!UICONTROL Spalteneinstellungen]** gibt es Optionen für **[!UICONTROL Summen anzeigen]** und **[!UICONTROL Gesamtsumme anzeigen]**. Wenn diese Einstellungen deaktiviert sind, werden Summen aus der Tabelle entfernt, was in Fällen gewünscht werden kann, in denen Summen keinen Sinn ergeben. Zum Beispiel in bestimmten Szenarien mit [berechneten Metriken](https://experienceleague.adobe.com/en/docs/analytics/components/calculated-metrics/calcmetrics-reference/cm-totals).
+Unter ![Einstellung](/help/assets/icons/Setting.svg) **[!UICONTROL Spalteneinstellungen]** gibt es Optionen für **[!UICONTROL Summen anzeigen]** und **[!UICONTROL Gesamtsumme anzeigen]**. Wenn diese Einstellungen deaktiviert sind, werden Summen aus der Tabelle entfernt, was in Fällen gewünscht werden kann, in denen Summen keinen Sinn ergeben.
 
 
 Die Gesamtwerte der statischen Zeile ](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/manual-vs-dynamic-rows.md) verhalten sich anders und werden mit ![Einstellung](/help/assets/icons/Setting.svg) **[!UICONTROL Zeileneinstellungen]** gesteuert.[
@@ -53,7 +53,7 @@ Siehe [Dynamische und statische Dimensionselemente in Freiformtabellen](column-r
 | Fragen | Antwort |
 |---|---|
 | Auf welchen *total* basieren die grauen Spaltenprozentsätze? | Diese *Gesamtsumme* hängt von der Einstellung **[!UICONTROL Prozentsätze]** unter **[!UICONTROL Zeileneinstellungen]** ab:<ul><li>Prozentsätze pro Spalte berechnen - Diese Einstellung ist die Standardeinstellung. Prozentsätze basieren auf der Tabellensumme.</li><li>Prozentsätze nach Zeile berechnen - Prozentsätze basieren auf der Gesamtsumme.</li></ul> |
-| Wie wirkt sich die Einstellung &quot;**[!UICONTROL Kein Wert einschließen&quot;]** auf die Gesamtwerte aus? | Wenn die Einstellung **[!UICONTROL Kein Wert einschließen]** deaktiviert ist, wird die Zeile **[!UICONTROL Kein Wert]** aus der Tabelle und dem Tabellengesamtwert entfernt und wird in alle berechneten Metriken übernommen, die Metriktypen [*Gesamt* verwenden](https://experienceleague.adobe.com/en/docs/analytics/components/calculated-metrics/calcmetric-workflow/m-metric-type-alloc) |
+| Wie wirkt sich die Einstellung &quot;**[!UICONTROL Kein Wert einschließen&quot;]** auf die Gesamtwerte aus? | Wenn die Einstellung &quot;**[!UICONTROL Kein Wert einschließen&quot;]**&quot;deaktiviert ist, wird die Zeile &quot;**[!UICONTROL Kein Wert]**&quot;aus der Tabelle und dem Tabellengesamtwert entfernt und wird in alle berechneten Metriken übernommen, die Metriktypen [*Gesamt* verwenden](/help/components/calc-metrics/cm-workflow/m-metric-type-alloc.md). |
 | Wenn benutzerdefinierte Tabellenfilter auf eine Freiformtabelle angewendet werden, werden alle berechneten Metriken und die bedingte Formatierung für den Filter berücksichtigt? | Derzeit nicht. **[!UICONTROL Include &quot;No value&quot;]** ist berücksichtigt, benutzerdefinierte Tabellenfilter haben jedoch keine Auswirkungen auf Folgendes:<ul><li>Der für die bedingte Formatierung verwendete Spaltenmaximum/-min-Bereich sucht über alle Daten hinweg.</li><li>Berechnete Metriken, die Metriktypen **[!UICONTROL Gesamtsumme]** nutzen.</li><li>Berechnete Metriken mit Funktionen, die über Zeilen in einer Freiformtabelle berechnen: Spaltensumme, Spaltenmax, Spaltenanzahl, -anzahl, Mittelwert, Median, Perzentil, Quartil, Zeilenanzahl, Standardabweichung, Varianz, Kumulativer, kumulativer Durchschnitt, Regressionsvarianten, T-Score, T-Test, Z-Score und Z-Test.</li></ul> |
 | Was spiegelt der Metriktyp **[!UICONTROL Gesamtsumme]** in berechneten Metriken wider? | **[!UICONTROL Gesamtsumme]** bezieht sich weiterhin auf den **[!UICONTROL Gesamtwert]** und spiegelt keine auf eine Tabelle angewendeten Filter oder den **[!UICONTROL Tabellengesamtwert]** wider. |
 | Welcher Gesamtwert wird angezeigt, wenn Daten entweder kopiert und aus einer Freiformtabelle eingefügt oder über CSV heruntergeladen werden? | Die Zeile insgesamt spiegelt nur den **[!UICONTROL Tabellengesamtwert]** wider und berücksichtigt die Einstellung für die Spalte **[!UICONTROL Summen anzeigen]** . |

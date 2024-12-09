@@ -5,10 +5,10 @@ title: Freigeben von Projekten
 feature: Curate and Share
 exl-id: ac4ed73a-e890-46cc-be08-4ccedf66b47d
 role: User
-source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
+source-git-commit: 4942c83e34b129e3718084601d5a733bcebf4de9
 workflow-type: tm+mt
-source-wordcount: '2047'
-ht-degree: 66%
+source-wordcount: '2042'
+ht-degree: 64%
 
 ---
 
@@ -109,7 +109,7 @@ Wenn es nicht gespeicherte Änderungen gibt, werden Sie aufgefordert, das Projek
 
    Oder
 
-   Wählen Sie **[!UICONTROL Kuratieren und freigeben]**, um die Projektkuratierung automatisch anzuwenden. (Wenn das Projekt bereits freigegeben wurde, wählen Sie **[!UICONTROL Kuratieren und aktualisieren]** aus.) Erhalten Sie weitere Informationen zur [Projektkuratierung](curate.md).
+   Wählen Sie **[!UICONTROL Kuratieren und freigeben]**, um die Projektkuratierung automatisch anzuwenden. (Wenn das Projekt bereits freigegeben wurde, wählen Sie **[!UICONTROL Kuratieren und aktualisieren]**.) Weitere Informationen zur [Projektkuratierung](curate.md).
 
 ## Freigeben eines Links zu einem Projekt
 
@@ -171,7 +171,7 @@ So geben Sie ein Analysis Workspace-Projekt für andere frei:
 
    Beim Auswählen dieser Option wird ein Link zum Projekt erstellt, der für alle freigegeben werden kann. Sie können den Zugriff auf das Projekt jederzeit deaktivieren, indem Sie diese Option deaktivieren.
 
-   Die für das Projekt verantwortliche Person ist auch für diesen Link verantwortlich. Die Link-Verantwortung kann nur dann an andere Benutzende übertragen werden, wenn die Projektverantwortung übertragen wird, wie unter [Übertragen von Benutzer-Assets oder Festlegen des Kontoablaufs](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/user-product-management/users-assets.html) im Analytics-Admin-Handbuch beschrieben.
+   Die für das Projekt verantwortliche Person ist auch für diesen Link verantwortlich. Der Linkeigentum kann nur dann an einen anderen Benutzer übertragen werden, wenn das Projekteigentum übertragen wird, wie unter [Übertragen von Benutzer-Assets](/help/tools/asset-transfer/transfer-assets.md) im Analytics Admin-Handbuch beschrieben.
 
 1. Wählen Sie aus, ob die folgende Sicherheitsoption aktiviert werden soll (diese Option kann von Ihrem Customer Journey Analytics-Administrator gesteuert werden):
 

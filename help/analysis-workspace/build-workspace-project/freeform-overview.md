@@ -5,10 +5,10 @@ title: Übersicht über Projekte
 feature: Workspace Basics
 exl-id: 2eeb615c-57a1-4469-8d4a-8a61956bd6e6
 role: User
-source-git-commit: 1dff53e244e5d231e7075ce087705e33e0978096
+source-git-commit: 4942c83e34b129e3718084601d5a733bcebf4de9
 workflow-type: tm+mt
-source-wordcount: '1628'
-ht-degree: 7%
+source-wordcount: '1627'
+ht-degree: 8%
 
 ---
 
@@ -32,7 +32,7 @@ Im Titelbereich können Sie ein Projekt erstellen, einen Ordner bearbeiten und e
 
   | Aktion | Beschreibung |
   |---|---|
-  | **[!UICONTROL Projekt erstellen]** | Wählen Sie &quot;[Neues Projekt erstellen](create-projects.md)&quot;aus. |
+  | **[!UICONTROL Erstellen eines Projekts]** | Wählen Sie &quot;[Neues Projekt erstellen](create-projects.md)&quot;aus. |
   | **[!UICONTROL Ordner erstellen]** | Wählen Sie &quot;[Erstellen eines neuen Ordners](workspace-folders/create-folders.md)&quot;aus. |
   | ![UserAdmin](/help/assets/icons/UserAdmin.svg) **[!UICONTROL Voreinstellungen bearbeiten]** | [Bearbeiten Sie die Voreinstellungen](/help/analysis-workspace/user-preferences.md) für alle Ihre Projekte. Wenn der Breadcrumb zu begrenztem Speicherplatz führt, ist diese Aktion Teil des Untermenüs ![Mehr](/help/assets/icons/More.svg) . |
   | **[!UICONTROL Projekte hinzufügen]** | Wählen Sie &quot;[add projects](workspace-folders/add-projects.md)&quot;zum aktuellen Ordner aus. Wenn der Breadcrumb zu begrenztem Speicherplatz führt, ist diese Aktion Teil des Untermenüs ![Mehr](/help/assets/icons/More.svg) . |
@@ -46,14 +46,14 @@ Im Titelbereich können Sie ein Projekt erstellen, einen Ordner bearbeiten und e
 ## Projektliste
 
 
-In der Projektliste werden alle Projekte angezeigt, die Ihnen gehören und für Sie freigegeben wurden. Die Liste enthält die folgenden Spalten:
+In der Projektliste werden alle Projekte angezeigt, die Ihnen gehören und für Sie freigegeben wurden. Die Liste umfasst die folgenden Spalten:
 
 | Spalte | Beschreibung |
 | --- | --- | 
 | ![SelectBox](/help/assets/icons/SelectBox.svg) | Wenn ein oder mehrere Projekte ausgewählt sind, wird am unteren Rand der Projektoberfläche eine blaue Aktionsleiste angezeigt. Weitere Informationen finden Sie unter [Aktionen](#actions) . |
-| ![StarOutline](/help/assets/icons/StarOutline.svg) | Wählen Sie diese Option aus, um ein Projekt mit ![Stern](/help/assets/icons/Star.svg) oder mit ![StarOutline](/help/assets/icons/StarOutline.svg) zu favorisieren. |
+| ![UnausgefüllterStern](/help/assets/icons/StarOutline.svg) | Wählen Sie diese Option aus, um ein Projekt mit ![Stern](/help/assets/icons/Star.svg) oder mit ![StarOutline](/help/assets/icons/StarOutline.svg) zu favorisieren. |
 | **[!UICONTROL Titel und Beschreibung]** | Um das Projekt zu bearbeiten, wählen Sie den Titellink aus, der das [Workspace-Projekt](/help/analysis-workspace/home.md) öffnet. Für Sie freigegebene Projekte werden mit ![Freigabe](/help/assets/icons/ShareAlt.svg) angegeben. Wählen Sie ![InfoOutline](/help/assets/icons/InfoOutline.svg) aus, um ein Popup-Menü mit weiteren Details zum Projekt anzuzeigen. Wählen Sie ![Mehr](/help/assets/icons/More.svg) aus, um ein Kontextmenü mit Aktionen zu öffnen. Weitere Informationen finden Sie unter [Aktionen](#actions) . |
-| **[!UICONTROL Typ]** | Ein Workspace-Projekt, ein Ordner ![FolderUser](/help/assets/icons/FolderUser.svg) oder eine [mobile Scorecard](https://experienceleague.adobe.com/en/docs/analytics/analyze/mobapp/home). |
+| **[!UICONTROL Typ]** | Ein Workspace-Projekt, ein Ordner ![FolderUser](/help/assets/icons/FolderUser.svg) oder eine [mobile Scorecard](/help/mobile-app/home.md). |
 | **[!UICONTROL Tags]** | Die auf das Projekt angewendeten Tags. |
 | Eingeplant | Gibt an, ob ein Projekt für die E-Mail-Versendung an Empfänger geplant ist. Optionen sind ![StatusGreen](/help/assets/icons/StatusGreen.svg) **[!UICONTROL On]** oder ![StatusGray](/help/assets/icons/StatusGray.svg) **[!UICONTROL Off]**. Siehe [Projektdaten an andere senden](/help/analysis-workspace/export/t-schedule-report.md). |
 | **[!UICONTROL Freigegebener Link (jeder)]** | Ob ein Projekt für andere freigegeben wird, auch für Personen, die keinen Zugriff auf Analysis Workspace haben. Optionen sind ![StatusGreen](/help/assets/icons/StatusGreen.svg) **[!UICONTROL Active]** oder ![StatusGray](/help/assets/icons/StatusGray.svg) **[!UICONTROL Inaktiv]**. Weitere Informationen finden Sie unter [Freigeben eines Projekts für andere (keine Anmeldung erforderlich)](/help/analysis-workspace/curate-share/share-projects.md#share-a-project-with-anyone-no-login-required) in [Freigeben von Projekten](/help/analysis-workspace/curate-share/share-projects.md) . |
@@ -90,7 +90,7 @@ Sie können Aktionen für ein oder mehrere Projekte über das Kontextmenü ![Meh
 | ![ArrowDown](/help/assets/icons/ArrowDown.svg) | **[!UICONTROL Nach unten verschieben]** | Verschieben Sie ein gebundenes Projekt oder einen Ordner in die Projektliste. |
 | ![Beschriftung](/help/assets/icons/Label.svg) | **[!UICONTROL Tag]** | Taggen Sie ein oder mehrere Projekte oder Ordner. Das Dialogfeld **[!UICONTROL Komponenten taggen]** wird angezeigt, um ein oder mehrere Tags auszuwählen. Wählen Sie **[!UICONTROL Speichern]** aus, um die Tags für die ausgewählten Projekte oder Ordner zu speichern. |
 | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | **[!UICONTROL Genehmigen]** oder **[!UICONTROL Nicht genehmigen]** | Genehmigen oder deaktivieren Sie ein Projekt. Nur Administratoren können Projekte genehmigen. |
-| ![FileCSV](/help/assets/icons/FileCSV.svg) | **[!UICONTROL CSV exportieren]** | Exportieren Sie die ausgewählten Projekte in eine CSV-Datei mit dem Namen &quot;`Project List.csv`&quot;. |
+| ![CSV-Datei](/help/assets/icons/FileCSV.svg) | **[!UICONTROL CSV exportieren]** | Exportieren Sie die ausgewählten Projekte in eine CSV-Datei mit dem Namen &quot;`Project List.csv`&quot;. |
 | ![ProjectAdd](/help/assets/icons/ProjectAdd.svg) | **[!UICONTROL Projekte hinzufügen]** | Fügen Sie einem ausgewählten Ordner ein oder mehrere Projekte hinzu. In **[!UICONTROL Projekte hinzufügen]** können Sie ein oder mehrere Projekte auswählen. Wählen Sie **[!UICONTROL Hinzufügen]** aus, um die Projekte zum Ordner hinzuzufügen. Weitere Informationen finden Sie unter [Hinzufügen von Projekten zu Ordnern](workspace-folders/add-projects.md#from-inside-a-folder) . |
 | ![FolderAddTo](/help/assets/icons/FolderAddTo.svg) | **[!UICONTROL Verschieben nach]** | Verschieben Sie ein oder mehrere ausgewählte Projekte in einen Ordner. Wählen Sie in &quot;**[!UICONTROL Ordner auswählen]**&quot;den Ordner aus, in den das ausgewählte Projekt verschoben werden soll, und wählen Sie &quot;**[!UICONTROL Verschieben]**&quot;. Weitere Informationen finden Sie unter [Hinzufügen von Projekten zu Ordnern](workspace-folders/add-projects.md#from-the-project-list) . |
 
@@ -104,7 +104,7 @@ Mit der Auswahl **[!UICONTROL Anzeigen]** können Sie das Erscheinungsbild der P
 
 * Um zu definieren, welche Spalten für die [Projektliste](#project-list) angezeigt werden sollen, wählen Sie ![ColumnSetting](/help/assets/icons/ColumnSetting.svg) aus und wählen Sie im Dialogfeld **[!UICONTROL Tabelle anpassen]** Spalten aus oder heben Sie die Auswahl auf. Wählen Sie **[!UICONTROL Anwenden]** aus, um die Anpassung anzuwenden. Weitere Informationen zu den Spalten finden Sie unter [Projektliste](#project-list) .
 
-## Filterbereich
+## Bedienfeld „Filter“
 
 Sie können die Projekte und Ordner in der [Projektliste](#project-list) mithilfe des ➍ Filterbereichs filtern. Verwenden Sie ![Filter](/help/assets/icons/Filter.svg), um den Filterbereich ein- oder auszublenden.
 
@@ -126,7 +126,7 @@ Das Filterbedienfeld besteht aus den folgenden Abschnitten.
 
 ### Inhaber
 
-| Verantwortlicher | Beschreibung |
+| Besitzer | Beschreibung |
 |---|---|
 | ![Inhaber](/help/analysis-workspace/build-workspace-project/assets/projects-filters-owners.png){width="300"} | Im Abschnitt **[!UICONTROL Inhaber]** können Sie nach Eigentümern filtern. <ul><li>Sie verwenden ![Suche](/help/assets/icons/Search.svg) *Inhaber durchsuchen*, um nach Eigentümern zu suchen, die Sie zum Filtern verwenden möchten.</li><li>Sie können mehrere Inhaber auswählen. Die verfügbaren Inhaber hängen von der Auswahl ab, die in anderen Abschnitten des Filterbereichs vorgenommen wurde.</li><li>Die Zahlen geben an:<ul><li>**3︎⃣**: Die Anzahl der Inhaber, die für die aus dem aktuellen Filter resultierenden Projekte verfügbar sind.</li><li>4︎⃣: Die Anzahl der Projekte, die mit dem jeweiligen Eigentümer verknüpft sind.</li></ul></li></ul> |
 
