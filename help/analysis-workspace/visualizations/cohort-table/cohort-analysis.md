@@ -1,17 +1,17 @@
 ---
-title: Überblick über die Kohortentabelle
+title: Überblick über Kohortentabellen
 description: Erfahren Sie, wie Sie eine Kohortentabelle für die Kohortenanalyse in Analysis Workspace verwenden.
 feature: Visualizations
 exl-id: 3e3a70cd-70ec-4d4d-81c3-7902716d0b01
 role: User
-source-git-commit: 590a3ddbe988d27341fe96a3fa866960d1641e24
+source-git-commit: c16ad9f490abed1e15e1012a5a9347e2628b7642
 workflow-type: tm+mt
-source-wordcount: '597'
-ht-degree: 37%
+source-wordcount: '641'
+ht-degree: 34%
 
 ---
 
-# Überblick über die Kohortentabelle {#cohort-table-overview}
+# Überblick über Kohortentabellen {#cohort-table-overview}
 
 <!-- markdownlint-disable MD034 -->
 
@@ -56,6 +56,8 @@ Beispiele für die Verwendung einer [!UICONTROL Kohortentabelle]:
 >[!IMPORTANT]
 >
 >[!UICONTROL Kohortenanalyse] unterstützt keine nicht filterbaren Metriken (einschließlich berechneter Metriken), nicht ganzzahlige Metriken (z. B. Umsatz) oder Vorfälle. In der Kohortenanalyse ] können nur Metriken verwendet werden, die in Filtern verwendet werden können, und sie können jeweils nur um 1 inkrementiert werden.[!UICONTROL 
+
+Kohortentabellen in Customer Journey Analytics unterstützen doppelte (oder numerisch basierte) Metriken. Beispielsweise kann &quot;Purchase.Value&quot;(Double) als Aufnahme-/Rückkehrmetrik verwendet werden. Darüber hinaus werden alle Metriken, die über den Analytics Source Connector an Adobe Experience Platform übergeben werden, ebenfalls verdoppelt.
 
 ## Funktionen der Kohortentabelle
 

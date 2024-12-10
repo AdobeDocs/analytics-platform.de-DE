@@ -4,7 +4,7 @@ title: Schnellfilter
 feature: Workspace Basics
 role: User
 exl-id: 549e5db5-fcdf-43c5-bc43-590144aee309
-source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
+source-git-commit: 4ce1b22cce3416b8a82e5c56e605475ae6c27d88
 workflow-type: tm+mt
 source-wordcount: '1168'
 ht-degree: 2%
@@ -94,7 +94,7 @@ Der Bedingungsbereich gibt die Bedingungen an (maximal drei). Für jede Bedingun
 | Schaltfläche | Beschreibung |
 |---|---|
 | **[!UICONTROL AND]**<br/>**[!UICONTROL OR]** | Nur verfügbar, wenn Sie mehrere Bedingungen definieren. Wählen Sie aus dem Dropdown-Menü ![ChevronDown](/help/assets/icons/ChevronDown.svg) zwischen den Bedingungen aus. Die Auswahl bestimmt die boolesche Logik für den Schnellfilter. Bei drei Bedingungen kann Logik nicht gemischt werden. Die boolesche Logik lautet entweder **[!UICONTROL AND]** oder **[!UICONTROL OR]**. |
-| ![AddCircle](/help/assets/icons/AddCircle.svg) | Fügt dem Schnellfilter eine weitere Bedingung hinzu. Diese Schaltfläche ist nur verfügbar, wenn Sie eine oder zwei Bedingungen für den Schnellfilter definiert haben. |
+| ![Hinzufügen](/help/assets/icons/AddCircle.svg) | Fügt dem Schnellfilter eine weitere Bedingung hinzu. Diese Schaltfläche ist nur verfügbar, wenn Sie eine oder zwei Bedingungen für den Schnellfilter definiert haben. |
 | **[!UICONTROL Anwenden]** | Wenden Sie die Änderungen auf den Schnellfilter an. |
 | **[!UICONTROL Builder öffnen]** | Sie werden mit dem Wert &quot;**[!UICONTROL Sind Sie sicher?&quot;zur Bestätigung aufgefordert.]** Dialogfeld. Wenn Sie **[!UICONTROL OK]** auswählen, können Sie Ihren Filter im [Quick filter Builder](#quick-filter-builder) nicht mehr ändern. Ihr Schnellfilter wird in **[!UICONTROL Filter]** umbenannt und verfügt jetzt über eine dunkelblaue, blaue, blaue Leiste auf der linken Seite.<br/>Der reguläre [Filter-Builder](filter-builder.md) wird mit der Option **[!UICONTROL geöffnet. Stellen Sie diesen Filter für alle Ihre Projekte zur Verfügung und fügen Sie ihn zu Ihrer Komponentenliste hinzu.]** <ul><li>Wenn Sie diese Option auswählen und **[!UICONTROL Anwenden]** auswählen, wird der Filter der Komponentenliste ![Filter](/help/assets/icons/Segmentation.svg) **[!UICONTROL Filter]** im Komponentenbereich hinzugefügt.</li><li>Wenn Sie diese Option nicht auswählen und **[!UICONTROL Anwenden]** auswählen, bleibt der Filter nur ein Workspace-Projektfilter.</li></ul> |
 | **[!UICONTROL Abbrechen]** | Wählen Sie diese Option aus, um die Erstellung oder Bearbeitung eines Schnellfilters abzubrechen. |
