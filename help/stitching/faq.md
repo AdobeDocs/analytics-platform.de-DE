@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 exl-id: f4115164-7263-40ad-9706-3b98d0bb7905
 role: Admin
-source-git-commit: 059a091fb41efee6f508b4260b1d943f881f5087
+source-git-commit: ae0e7a906700522d7babc1d573a0b4cdbf1be6fc
 workflow-type: tm+mt
-source-wordcount: '1871'
-ht-degree: 26%
+source-wordcount: '1910'
+ht-degree: 28%
 
 ---
 
@@ -16,7 +16,9 @@ ht-degree: 26%
 
 Im Folgenden finden Sie einige häufig gestellte Fragen zum Stitching:
 
-+++**Wie kann ich die Zuordnung verwenden, um zu sehen, wie sich Personen von einem Kanal zum anderen bewegen?**
+## Kanalübergreifend
+
++++ Wie kann ich das Stitching verwenden, um zu sehen, wie Benutzer von einem Kanal zum anderen wechseln?
 
 Sie können eine Flussvisualisierung mit der Dimension „Datensatz-ID“ verwenden.
 
@@ -29,13 +31,17 @@ Wenn Sie die Datensatz-ID-Dimensionselemente umbenennen möchten, können Sie ei
 
 +++
 
-+++**Wie weit reicht die Zuordnung von Besuchern zur Wiederholung zurück?**
+### Wiederholen
+
++++ Wie weit reicht die Zuordnung von wiedergegebenen Besuchern zurück?
 
 Das Lookback-Fenster für die Neuzuweisung hängt von der gewünschten Häufigkeit der Wiederholung der Daten ab. Wenn Sie beispielsweise die Zuordnung so einrichten, dass Daten einmal wöchentlich wiederholt werden, beträgt das Lookback-Fenster für die Neuzuweisung sieben Tage. Wenn Sie die Zuordnung so einrichten, dass Daten täglich wiederholt werden, beträgt das Lookback-Fenster für die Neuzuweisung einen Tag.
 
 +++
 
-+++**Wie werden gemeinsam genutzte Geräte gehandhabt?**
+## Freigegebene Geräte
+
++++ Wie werden freigegebene Geräte gehandhabt?
 
 In einigen Situationen ist es möglich, dass sich mehrere Personen von demselben Gerät aus anmelden. Beispiele dafür sind freigegebene Geräte zu Hause, freigegebene PCs in einer Bibliothek oder ein Terminal in einem Einzelhandelsgeschäft.
 
@@ -43,7 +49,9 @@ Die vorübergehende ID setzt die beständige ID außer Kraft, sodass freigegeben
 
 +++
 
-+++**Wie behandelt das Stitching Situationen, in denen eine einzelne Person über viele beständige IDs verfügt?**
+## Viele beständige IDs
+
++++ Wie behandelt das Stitching Situationen, in denen eine einzelne Person über viele beständige IDs verfügt?
 
 In einigen Fällen kann eine einzelne benutzende Person mit mehreren beständigen IDs verknüpft sein. Ein Beispiel ist eine Person, die häufig die Cookies des Browsers löscht oder den privaten/Inkognito-Modus des Browsers verwendet.
 
@@ -53,13 +61,17 @@ Für eine grafikbasierte Zuordnung kann eine einzelne Person im Identitätsdiagr
 
 +++
 
-+++**Wie lange dauert es, bis der neu zugewiesene Datensatz verfügbar ist, nachdem ich mein Adobe Account-Team mit den gewünschten Informationen kontaktiert habe?**
+## Stitching-Prozess
+
++++ Wie lange dauert es, bis der neu zugewiesene Datensatz verfügbar ist, nachdem ich meinem Adobe-Accountteam die gewünschten Informationen mitgeteilt habe?
 
 Die Live-Stitching-Funktion ist ca. eine Woche nach der Adobe-Aktivierung verfügbar. Die Verfügbarkeit der Aufstockung hängt von der Menge der vorhandenen Daten ab. Bei kleinen Datensätzen (weniger als 1 Million Ereignisse pro Tag) dauert es in der Regel einige Tage, während große Datensätze (1 Milliarde Ereignisse pro Tag) eine Woche oder länger benötigen können.
 
 +++
 
-+++**Was ist der Unterschied zwischen geräteübergreifender Analyse (eine Funktion in herkömmlichem Analytics) und kanalübergreifender Analyse?**
+## Geräteübergreifende Analyse versus kanalübergreifende Analyse
+
++++ Was ist der Unterschied zwischen geräteübergreifender Analyse (eine Funktion in herkömmlichem Analytics) und kanalübergreifender Analyse?
 
 [Geräteübergreifende Analysen](https://experienceleague.adobe.com/docs/analytics/components/cda/overview.html?lang=de) sind eine Funktion, die speziell für herkömmliche Adobe Analytics entwickelt wurde und Ihnen Aufschluss darüber gibt, wie Benutzer geräteübergreifend arbeiten. Sie bietet zwei Workflows zum Verknüpfen von Gerätedaten: die feldbasierte Zuordnung und das Gerätediagramm.
 
@@ -67,7 +79,9 @@ Die kanalübergreifende Analyse ist ein für das Customer Journey Analytics spez
 
 +++
 
-+++**Wie behandelt die Zuordnung Datenschutzanfragen?**
+## Datenschutz   
+
++++ Wie verarbeitet die Zuordnung Datenschutzanfragen?
 
 Adobe verarbeitet Datenschutzanfragen gemäß den nationalen und internationalen Gesetzen. Adobe bietet den [Adobe Experience Platform Privacy Service](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=de) für Datenzugriffs- und Löschanfragen. Die Anfragen gelten sowohl für die ursprünglichen als auch die neu zugewiesenen Datensätze.
 
@@ -147,7 +161,9 @@ Wenn eine Datenschutzanfrage für Kunden mit CustID Bob empfangen wird, werden d
 
 +++
 
-+++**Was passiert, wenn das Feld für die beständige ID in einem oder mehreren Ereignissen leer ist?**
+## Leere beständige ID-Werte
+
++++ Was passiert, wenn das Feld „Persistent ID“ in einem oder mehreren Ereignissen leer ist?
 
 Wenn das Feld &quot;Persistente ID&quot;bei einem Ereignis in einem Datensatz, der zugeordnet wird, leer ist, wird die zugeordnete ID für dieses Ereignis auf zwei Arten ermittelt:
 
@@ -157,7 +173,9 @@ Wenn das Feld &quot;Persistente ID&quot;bei einem Ereignis in einem Datensatz, d
 +++
 
 
-+++**Was passiert, wenn das Feld für die Verlaufs-ID in einem oder mehreren Ereignissen Platzhalterwerte wie &quot;Undefiniert&quot;aufweist?**
+## Undefinierte vorübergehende ID-Werte
+
++++ Was passiert, wenn das Feld für die Verlaufs-ID in einem oder mehreren Ereignissen Platzhalterwerte wie `Undefined` aufweist?
 
 Seien Sie vorsichtig mit &quot;Personen reduzieren&quot;, was auftritt, wenn die Zuordnung auf Daten angewendet wird, die Platzhalterwerte für Übergangs-IDs verwenden. In der folgenden Beispieltabelle werden nicht definierte Personen-IDs aus einem Datensatz, der aus einem CRM-System stammt, mit dem Wert &quot;Undefiniert&quot;ausgefüllt, was zu einer falschen Darstellung von Personen führt.
 
@@ -177,7 +195,9 @@ Seien Sie vorsichtig mit &quot;Personen reduzieren&quot;, was auftritt, wenn die
 
 +++
 
-+++**Wie vergleichen sich Metriken in Customer Journey Analytics zugeordneten Datensätzen mit ähnlichen Metriken in Customer Journey Analytics nicht zugeordneten Datensätzen und mit Adobe Analytics?**
+## Vergleich von Metriken
+
++++ Wie vergleichen sich Metriken in Customer Journey Analytics zugeordneten Datensätzen mit ähnlichen Metriken in Customer Journey Analytics nicht zugeordneten Datensätzen und mit Adobe Analytics?
 
 Bestimmte Metriken in Customer Journey Analytics ähneln den Metriken in herkömmlichem Analytics, andere unterscheiden sich jedoch je nach dem, was Sie vergleichen. In der folgenden Tabelle werden verschiedene häufig verwendete Metriken verglichen:
 
@@ -191,13 +211,18 @@ Andere Metriken können in Customer Journey Analytics und Adobe Analytics ähnli
 
 +++
 
-+++**Kann Customer Journey Analytics Identitätszuordnungsfelder verwenden?**
+## Identitätszuordnung
+
++++ Kann Customer Journey Analytics Identity Map-Felder verwenden?
 
 Nein, Customer Journey Analytics kann derzeit keine Identity Map-Felder zum Stitching verwenden.
 
 +++
 
-+++**Müssen Daten neu gezählt werden, um vom feldbasierten Stitching zum grafikbasierten Stitching zu wechseln?**
+## Wechsel zur grafisch basierten Zuordnung
+
++++ Müssen Daten neu erfasst werden, um von feldbasiertem Stitching zu grafischem Stitching zu wechseln?
+
 Daten müssen nicht in Experience Platform neu aufgenommen werden, sie müssen jedoch in Customer Journey Analytics neu konfiguriert werden. Führen Sie folgende Schritte aus:
 
 1. Richten Sie den neuen graphenbasierten zugeordneten Datensatz ein.
@@ -207,7 +232,9 @@ Daten müssen nicht in Experience Platform neu aufgenommen werden, sie müssen j
 
 +++
 
-+++**Gibt es irgendeine Unterbrechung bei vorhandenen Berichten?**
+## Berichtsunterbrechung
+
++++ Bestehen irgendwelche Störungen bei bestehenden Berichten?
 
 Nicht, wenn Sie die oben beschriebenen Schritte ausführen. Andernfalls bitten Sie Adobe Consulting um zusätzlichen Support.
 

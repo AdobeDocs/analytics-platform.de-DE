@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Use Cases
 role: Admin
 exl-id: 8b9c164e-01da-4b43-8e2c-99904223cae5
-source-git-commit: 40e4c3bd8f3c37e9a6143200b85ffe0ac4bcb2ca
+source-git-commit: ae0e7a906700522d7babc1d573a0b4cdbf1be6fc
 workflow-type: tm+mt
-source-wordcount: '781'
-ht-degree: 0%
+source-wordcount: '766'
+ht-degree: 1%
 
 ---
 
@@ -73,7 +73,7 @@ Im Allgemeinen unterstützt der Datenexport eine Reihe von Anwendungsfällen. Je
 
 | Anwendungsfälle für den Datenexport | Experience Platform und Customer Journey Analytics |
 |---|---|
-| **Datensicherung**<br/> Speichern Sie eine vollständige Kopie Ihrer digitalen Daten aus Compliance- oder Regelungsgründen. | **Experience Platform**: [**Exportieren Sie Datensätze**](export-datasets.md)<br/> Exportieren Sie in Experience Platform erfasste Daten direkt in Cloud-Ziele, und zwar zeitplanmäßig oder ad-hoc.<br/>*Die derzeit begrenzte Version wird voraussichtlich im Juni 2024 vollständig für Customer Journey Analytics-Kunden veröffentlicht.* |
+| **Datensicherung**<br/> Speichern Sie eine vollständige Kopie Ihrer digitalen Daten aus Compliance- oder Regelungsgründen. | **Experience Platform**: [**Exportieren Sie Datensätze**](export-datasets.md)<br/> Exportieren Sie in Experience Platform erfasste Daten direkt in Cloud-Ziele, und zwar zeitplanmäßig oder ad-hoc. |
 | **Datenvalidierung**<br/> Bewerten Sie Clickstream-Daten auf ihre Genauigkeit bei der Datenerfassung. | **Experience Platform**: [**Query Service (Data Distiller) und Export von Datensätzen**](queryservice-export-datasets.md)<br/> Interaktive PostgreSQL-Schnittstelle zum Ausführen von Ad-hoc-SQL-Abfragen mithilfe Ihres bevorzugten SQL-Tools zur Überprüfung der Daten in Ihren Datensätzen.<br/><br/>**Customer Journey Analytics**: [**Exportieren Sie die vollständige Tabelle**](export-full-table.md)<br/> Validieren Sie verarbeitete Daten aus CJA mit angewendeter Attribution und Sitzungserstellung. |
 | **Data Lake-, Data Warehouse- oder BI-Tools**<br/> Bringen Sie digitale Daten in Ihre eigenen BI-Tools oder in den Data Lake zur Verwendung mit zusätzlichen Datensätzen. | **Customer Journey Analytics**: [**BI-Erweiterung**](bi-extension.md)<br/> Fügen Sie Customer Journey Analytics verarbeitete Metriken zu Datenvisualisierungs-Tools wie Power BI hinzu und kombinieren Sie sie mit zusätzlichen Daten für benutzerdefinierte Berichte <br/><br/>**Experience Platform**: [**Abfragedienst (Data Distiller) und exportieren Sie Datensätze**](queryservice-export-datasets.md)<br> Generieren Sie benutzerdefinierte Clickstream-Daten mit SQL, die an Cloud-Ziele bereitgestellt werden. |
 | **Bereitschaft für KI/ML**<br/> Verbessern der Modelle und Aufgaben für künstliche Intelligenz/maschinelles Lernen mit Customer Journey Analytics-Daten. | **Customer Journey Analytics**: [**Exportieren Sie die vollständige Tabelle**](export-full-table.md)<br/> Exportieren Sie verarbeitete Dimensionen und Metriken aus der Customer Journey Analytics in Cloud-Ziele einmalig oder wiederkehrend, einschließlich berechneter Metriken und Segmentierung.<br/><br/>**Experience Platform**: [**Query Service (Data Distiller) und Export von Datensätzen**](queryservice-export-datasets.md)<br/> Generieren Sie benutzerdefinierte Clickstream-Daten mit SQL, um KI-/ML-Modelle anzureichern. |
