@@ -1,41 +1,42 @@
 ---
-title: Hinzufügen der XDM-Datenerfassungslogik zu Ihrem Tag
+title: Hinzufügen von XDM-Datenerfassungslogik zum Tag
 description: Erfahren Sie, wie Sie Ihrem Tag eine XDM-Datenerfassungslogik hinzufügen
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 hide: true
 hidefromtoc: true
-source-git-commit: ccc6df56771cd9f83bbd7a8570e32d7ed63a0ced
+exl-id: bc6c7568-8bd2-4ee1-ab1b-9fa1f6138811
+source-git-commit: 9849d686e886426124842ce210b423ac6c74fb89
 workflow-type: tm+mt
 source-wordcount: '1224'
-ht-degree: 48%
+ht-degree: 49%
 
 ---
 
-# Hinzufügen der XDM-Datenerfassungslogik zu Ihrem Tag
+# Hinzufügen von XDM-Datenerfassungslogik zum Tag
 
 >[!NOTE]
 > 
->Führen Sie die Schritte auf dieser Seite erst aus, nachdem Sie alle vorherigen Aktualisierungsschritte ausgeführt haben. Sie können die [empfohlenen Aktualisierungsschritte](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) ausführen oder die für Ihr Unternehmen dynamisch generierten Aktualisierungsschritte mit dem Fragebogen [Adobe Analytics to Customer Journey Analytics Upgrade Fragenkatalog](https://gigazelle.github.io/cja-ttv/) ausführen.
+>Befolgen Sie die Schritte auf dieser Seite erst, nachdem Sie alle vorherigen Upgrade-Schritte abgeschlossen haben. Sie können die [empfohlenen Upgrade-Schritte](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) ausführen oder die Upgrade-Schritte ausführen, die für Ihr Unternehmen mit dem [Fragebogen für das Upgrade von Adobe Analytics auf Customer Journey Analytics dynamisch generiert wurden](https://gigazelle.github.io/cja-ttv/).
 >
->Nachdem Sie die Schritte auf dieser Seite ausgeführt haben, fahren Sie mit den empfohlenen Aktualisierungsschritten oder den dynamisch generierten Aktualisierungsschritten fort.
+>Nachdem Sie die Schritte auf dieser Seite abgeschlossen haben, folgen Sie den empfohlenen Upgrade-Schritten oder den dynamisch generierten Upgrade-Schritten.
 
-Nachdem Sie [das Tag erstellt und die Web SDK-Erweiterung hinzugefügt haben](/help/getting-started/cja-upgrade/cja-upgrade-tag-property.md), müssen Sie es mit Datenelementen und Regeln konfigurieren, je nachdem, wie Sie Ihre Site verfolgen und Daten an Adobe Experience Platform senden möchten. Nachdem Sie Datenelemente und Regeln für Ihr Tag konfiguriert haben, können Sie es erstellen und veröffentlichen.
+Nachdem [das Tag erstellt und die Web SDK-Erweiterung hinzugefügt ](/help/getting-started/cja-upgrade/cja-upgrade-tag-property.md), müssen Sie es mit Datenelementen und Regeln konfigurieren, je nachdem, wie Sie Ihre Site verfolgen und Daten an Adobe Experience Platform senden möchten. Nachdem Sie Datenelemente und Regeln für Ihr Tag konfiguriert haben, können Sie es erstellen und veröffentlichen.
 
-## Datenelemente konfigurieren
+## Konfigurieren von Datenelementen
 
 Datenelemente sind die Bausteine Ihres Datenwörterbuchs (oder Ihrer Data Map). Verwenden Sie Datenelemente zum Erfassen, Organisieren und Bereitstellen von Daten in Marketing- und Werbe-Tools. Datenelemente richten Sie in Ihren Tags ein, die aus Ihrer Datenschicht lesen und zur Bereitstellung von Daten in Adobe Experience Platform verwendet werden können.
 
-Es gibt verschiedene Arten von Datenelementen. Richten Sie zunächst ein Datenelement ein, um den Seitennamen zu erfassen, den Personen auf Ihrer Site anzeigen. Richten Sie dann ein Datenelement ein, das auf die Experience Cloud-ID verweist. Definieren Sie abschließend ein XDM-Objektdatenelement.
+Es gibt verschiedene Arten von Datenelementen. Richten Sie zunächst ein Datenelement ein, um den Seitennamen zu erfassen, den sich Personen auf Ihrer Site ansehen. Richten Sie dann ein Datenelement ein, das auf die Experience Cloud-ID verweist. Definieren Sie abschließend ein XDM-Objektdatenelement.
 
-### Datenelement &quot;Seitenname&quot;
+### Datenelement für Seitennamen
 
 Gehen Sie folgendermaßen vor, um ein Datenelement für den Seitennamen zu definieren:
 
-1. Melden Sie sich mit Ihren Adobe ID-Anmeldedaten bei experience.adobe.com an.
+1. Melden Sie sich mit Ihren Adobe ID-Anmeldeinformationen bei experience.adobe.com an.
 
-1. Gehen Sie in Adobe Experience Platform zu **[!UICONTROL Datenerfassung]** > **[!UICONTROL Tags]**.
+1. Navigieren Sie in Adobe Experience Platform **[!UICONTROL Datenerfassung]** > **[!UICONTROL Tags]**.
 
 1. Wählen Sie das neu erstellte Tag aus der Liste der [!UICONTROL Tag-Eigenschaften] aus, um es zu öffnen.
 
@@ -43,7 +44,7 @@ Gehen Sie folgendermaßen vor, um ein Datenelement für den Seitennamen zu defin
 
 1. Wählen Sie **[!UICONTROL Datenelement hinzufügen]** aus.
 
-1. Geben Sie im Dialogfeld [!UICONTROL Datenelement erstellen] die folgenden Informationen an:
+1. Geben [!UICONTROL  im Dialogfeld „Datenelement erstellen] die folgenden Informationen an:
 
    * **[!UICONTROL Name]**: Der Name Ihres Datenelements. Zum Beispiel `Page Name`.
 
@@ -63,15 +64,15 @@ Gehen Sie folgendermaßen vor, um ein Datenelement für den Seitennamen zu defin
 
    Sie möchten jetzt ein Datenelement einrichten, das auf die Experience Cloud-ID verweist, die automatisch vom Adobe Experience Platform Web SDK bereitgestellt und über die Experience Cloud ID Service-Erweiterung verfügbar ist.
 
-1. Fahren Sie mit dem [ECID-Datenelement](#ecid-data-element) fort.
+1. Fahren Sie mit [ECID-Datenelement](#ecid-data-element) fort.
 
 ### ECID-Datenelement
 
 Gehen Sie folgendermaßen vor, um ein ECID-Datenelement zu definieren:
 
-1. Melden Sie sich mit Ihren Adobe ID-Anmeldedaten bei experience.adobe.com an.
+1. Melden Sie sich mit Ihren Adobe ID-Anmeldeinformationen bei experience.adobe.com an.
 
-1. Gehen Sie in Adobe Experience Platform zu **[!UICONTROL Datenerfassung]** > **[!UICONTROL Tags]**.
+1. Navigieren Sie in Adobe Experience Platform **[!UICONTROL Datenerfassung]** > **[!UICONTROL Tags]**.
 
 1. Wählen Sie das neu erstellte Tag aus der Liste der [!UICONTROL Tag-Eigenschaften] aus, um es zu öffnen.
 
@@ -79,11 +80,11 @@ Gehen Sie folgendermaßen vor, um ein ECID-Datenelement zu definieren:
 
 1. Wählen Sie **[!UICONTROL Datenelement hinzufügen]** aus.
 
-1. Geben Sie im Dialogfeld [!UICONTROL Datenelement erstellen] die folgenden Informationen an:
+1. Geben [!UICONTROL  im Dialogfeld „Datenelement erstellen] die folgenden Informationen an:
 
    * **[!UICONTROL Name]**: Der Name Ihres Datenelements. Zum Beispiel `ECID`.
 
-   * **[!UICONTROL Erweiterung]**: Wählen Sie **[!UICONTROL Experience Cloud ID-Dienst]** aus der Liste aus.
+   * **[!UICONTROL Erweiterung]**: Wählen Sie **[!UICONTROL Experience Cloud-ID-]** aus der Liste aus.
 
    * **[!UICONTROL Datenelementtyp]**: Wählen Sie **[!UICONTROL ECID]** aus der Liste aus.
 
@@ -99,9 +100,9 @@ Abschließend möchten Sie Ihre spezifischen Datenelemente dem zuvor definierten
 
 Gehen Sie folgendermaßen vor, um ein XDM-Objekt-Datenelement zu definieren:
 
-1. Melden Sie sich mit Ihren Adobe ID-Anmeldedaten bei experience.adobe.com an.
+1. Melden Sie sich mit Ihren Adobe ID-Anmeldeinformationen bei experience.adobe.com an.
 
-1. Gehen Sie in Adobe Experience Platform zu **[!UICONTROL Datenerfassung]** > **[!UICONTROL Tags]**.
+1. Navigieren Sie in Adobe Experience Platform **[!UICONTROL Datenerfassung]** > **[!UICONTROL Tags]**.
 
 1. Wählen Sie das neu erstellte Tag aus der Liste der [!UICONTROL Tag-Eigenschaften] aus, um es zu öffnen.
 
@@ -109,7 +110,7 @@ Gehen Sie folgendermaßen vor, um ein XDM-Objekt-Datenelement zu definieren:
 
 1. Wählen Sie **[!UICONTROL Datenelement hinzufügen]** aus.
 
-1. Geben Sie im Dialogfeld [!UICONTROL Datenelement erstellen] die folgenden Informationen an:
+1. Geben [!UICONTROL  im Dialogfeld „Datenelement erstellen] die folgenden Informationen an:
 
    * **[!UICONTROL Name]**: Der Name Ihres Datenelements. Zum Beispiel `XDM - Page View`.
 
@@ -117,9 +118,9 @@ Gehen Sie folgendermaßen vor, um ein XDM-Objekt-Datenelement zu definieren:
 
    * **[!UICONTROL Datenelementtyp]**: Wählen Sie **[!UICONTROL XDM-Objekt]** aus der Liste aus.
 
-   * **[!UICONTROL Sandbox]**: Wählen Sie Ihre Sandbox aus der Liste aus.
+   * **[!UICONTROL Sandbox]**: Wählen Sie Ihre Sandbox in der Liste aus.
 
-   * **[!UICONTROL Schema]**: Wählen Sie Ihr Schema aus der Liste aus.
+   * **[!UICONTROL Schema]**: Wählen Sie Ihr Schema in der Liste aus.
 
 1. Ordnen Sie das Attribut `identification > core > ecid`, das in Ihrem Schema definiert ist, dem ECID-Datenelement zu. Wählen Sie das Zylindersymbol aus, um das ECID-Datenelement in der Liste der Datenelemente einfach auswählen zu können.
 
@@ -144,15 +145,15 @@ Gehen Sie folgendermaßen vor, um eine Regel zu definieren:
 
 >[!NOTE]
 >
->Die folgenden Schritte sind ein Beispiel für die Definition einer Regel, die XDM-Daten sendet, die Werte aus anderen Datenelementen enthalten, an Adobe Experience Platform.
+>Die folgenden Schritte sind ein Beispiel für die Definition einer Regel, die XDM-Daten, die Werte aus anderen Datenelementen enthalten, an Adobe Experience Platform sendet.
 >
 >Sie können Regeln in Ihrem Tag auf unterschiedliche Weise verwenden, um (mithilfe Ihrer Datenelemente) Variablen zu bearbeiten.
 >
 >Weitere Informationen finden Sie unter [Regeln](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/rules.html?lang=de).
 
-1. Melden Sie sich mit Ihren Adobe ID-Anmeldedaten bei experience.adobe.com an.
+1. Melden Sie sich mit Ihren Adobe ID-Anmeldeinformationen bei experience.adobe.com an.
 
-1. Gehen Sie in Adobe Experience Platform zu **[!UICONTROL Datenerfassung]** > **[!UICONTROL Tags]**.
+1. Navigieren Sie in Adobe Experience Platform **[!UICONTROL Datenerfassung]** > **[!UICONTROL Tags]**.
 
 1. Wählen Sie das neu erstellte Tag aus der Liste der [!UICONTROL Tag-Eigenschaften] aus, um es zu öffnen.
 
@@ -160,11 +161,11 @@ Gehen Sie folgendermaßen vor, um eine Regel zu definieren:
 
 1. Wählen Sie **[!UICONTROL Neue Regel erstellen]** aus.
 
-1. Geben Sie im Dialogfeld [!UICONTROL Regel erstellen] die folgenden Informationen an:
+1. Geben [!UICONTROL  im Dialogfeld ]Regel erstellen“ die folgenden Informationen an:
 
    * **[!UICONTROL Name]**: Der Name der Regel. Zum Beispiel `Page View`.
 
-   * **[!UICONTROL Ereignisse]**: Wählen Sie **[!UICONTROL + Hinzufügen]** aus. Geben Sie dann im Dialogfeld [!UICONTROL Ereigniskonfiguration] die folgenden Informationen an. Wenn Sie fertig sind, wählen Sie **[!UICONTROL Änderungen beibehalten]** aus.
+   * **[!UICONTROL Ereignisse]**: Wählen Sie **[!UICONTROL + Hinzufügen]**. Geben Sie dann im Dialogfeld [!UICONTROL Ereigniskonfiguration] die folgenden Informationen an. Wenn Sie fertig sind, wählen Sie **[!UICONTROL Änderungen beibehalten]** aus.
 
       * **[!UICONTROL Erweiterung]**: Wählen Sie **[!UICONTROL Core]** aus der Liste aus.
 
@@ -172,15 +173,15 @@ Gehen Sie folgendermaßen vor, um eine Regel zu definieren:
 
         ![Regel – Ereigniskonfiguration](assets/event-windowloaded-pageview.png)
 
-   * **[!UICONTROL Aktionen]**: Wählen Sie **[!UICONTROL + Hinzufügen]** aus. Geben Sie dann im Dialogfeld [!UICONTROL Aktionskonfiguration] die folgenden Informationen an. Wenn Sie fertig sind, wählen Sie **[!UICONTROL Änderungen beibehalten]** aus.
+   * **[!UICONTROL Aktionen]**: Wählen Sie **[!UICONTROL + Hinzufügen]**. Geben Sie dann im Dialogfeld [!UICONTROL Aktionskonfiguration] die folgenden Informationen an. Wenn Sie fertig sind, wählen Sie **[!UICONTROL Änderungen beibehalten]** aus.
 
       * **[!UICONTROL Erweiterung]**: Wählen Sie **[!UICONTROL Adobe Experience Platform Web SDK]** aus der Liste aus.
 
       * **[!UICONTROL Aktionstyp]**: Wählen Sie **[!UICONTROL Ereignis senden]** aus der Liste aus.
 
-      * **[!UICONTROL Typ]**: Wählen Sie **[!UICONTROL web.webpageDetails.pageViews]** aus der Liste aus.
+      * **[!UICONTROL Type]**: Wählen Sie **[!UICONTROL web.webpagedetails.pageViews]** aus der Liste aus.
 
-      * **[!UICONTROL XDM data]**: Wählen Sie das Zylindersymbol und dann **[!UICONTROL XDM - Seitenansicht]** aus der Liste der Datenelemente.
+      * **[!UICONTROL XDM-]**: Wählen Sie das Zylindersymbol und dann **[!UICONTROL XDM - Seitenansicht]** aus der Liste der Datenelemente aus.
 
         ![Regel – Aktionskonfiguration](assets/action-pageview-xdm.png)
 
@@ -190,17 +191,17 @@ Gehen Sie folgendermaßen vor, um eine Regel zu definieren:
 
 1. Wählen Sie **[!UICONTROL Speichern]** aus.
 
-## Tag erstellen und veröffentlichen
+## Erstellen und Veröffentlichen eines Tags
 
 Nachdem Sie Datenelemente und Regeln definiert haben, müssen Sie Ihr Tag erstellen und veröffentlichen. Wenn Sie einen Bibliotheks-Build erstellen, müssen Sie ihn einer Umgebung zuweisen. Die Erweiterungen, Regeln und Datenelemente des Builds werden dann kompiliert und in die zugewiesene Umgebung eingefügt. Jede Umgebung bietet einen eindeutigen Einbettungs-Code, mit dem Sie den zugewiesenen Build in Ihre Website integrieren können.
 
-Adobe Experience Platform-Tags unterstützen einfache, komplexe Veröffentlichungs-Workflows, die für Ihre Bereitstellung des Adobe Experience Platform Web SDK geeignet sind. Weitere Informationen finden Sie unter [Veröffentlichung – Überblick](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/overview.html?lang=de).
+Adobe Experience Platform-Tags unterstützen einfache bis komplexe Veröffentlichungs-Workflows, die auch Ihre Bereitstellung von Adobe Experience Platform Web SDK unterstützen sollten. Weitere Informationen finden Sie unter [Veröffentlichung – Überblick](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/overview.html?lang=de).
 
 Gehen Sie folgendermaßen vor, um Ihr Tag zu erstellen und zu veröffentlichen:
 
-1. Melden Sie sich mit Ihren Adobe ID-Anmeldedaten bei experience.adobe.com an.
+1. Melden Sie sich mit Ihren Adobe ID-Anmeldeinformationen bei experience.adobe.com an.
 
-1. Gehen Sie in Adobe Experience Platform zu **[!UICONTROL Datenerfassung]** > **[!UICONTROL Tags]**.
+1. Navigieren Sie in Adobe Experience Platform **[!UICONTROL Datenerfassung]** > **[!UICONTROL Tags]**.
 
 1. Wählen Sie das neu erstellte Tag aus der Liste der [!UICONTROL Tag-Eigenschaften] aus, um es zu öffnen.
 
@@ -208,11 +209,11 @@ Gehen Sie folgendermaßen vor, um Ihr Tag zu erstellen und zu veröffentlichen:
 
 1. Wählen Sie **[!UICONTROL Arbeitsbibliothek auswählen]**, gefolgt von **[!UICONTROL Bibliothek hinzufügen...]** aus.
 
-1. Geben Sie im Dialogfeld [!UICONTROL Bibliothek erstellen] die folgenden Informationen an:
+1. Geben [!UICONTROL  im Dialogfeld ]Bibliothek erstellen“ die folgenden Informationen an:
 
    * **[!UICONTROL Name]**: Der Name der Bibliothek.
 
-   * **[!UICONTROL Umgebung]**: Wählen Sie **[!UICONTROL Entwicklung (Entwicklung)]** aus der Liste aus.
+   * **[!UICONTROL Umgebung]**: Wählen Sie **[!UICONTROL Entwicklung (development)]** aus der Liste aus.
 
 1. Wählen Sie **[!UICONTROL + Alle geänderten Ressourcen hinzufügen]** aus.
 
@@ -220,9 +221,8 @@ Gehen Sie folgendermaßen vor, um Ihr Tag zu erstellen und zu veröffentlichen:
 
 1. Wählen Sie **[!UICONTROL Speichern und in Entwicklung erstellen]** aus.
 
-   Ihr -Tag wird gespeichert und für Ihre Entwicklungsumgebung erstellt. Ein grüner Punkt kennzeichnet eine erfolgreiche Erstellung Ihres Tags in Ihrer Entwicklungsumgebung.
+   Ihr Tag wird gespeichert und für Ihre Entwicklungsumgebung erstellt. Ein grüner Punkt kennzeichnet eine erfolgreiche Erstellung Ihres Tags in Ihrer Entwicklungsumgebung.
 
 1. Sie können **[!UICONTROL ...]** auswählen, um die Bibliothek neu zu erstellen oder in eine Staging- oder Produktionsumgebung zu verschieben.
 
    ![Veröffentlichen – Bibliothek erstellen](assets/build-library.png)
-

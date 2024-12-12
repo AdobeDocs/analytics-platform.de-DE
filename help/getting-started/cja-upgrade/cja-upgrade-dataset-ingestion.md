@@ -1,48 +1,48 @@
 ---
-title: Überwachen der Datensatzaufnahme bei der Aktualisierung auf Customer Journey Analytics
-description: Erfahren Sie, wie Sie die Erfassung von Datensätzen bei der Aktualisierung auf Customer Journey Analytics überwachen
+title: Überwachen der Datensatzaufnahme beim Upgrade auf Customer Journey Analytics
+description: Erfahren Sie, wie Sie die Datensatzaufnahme beim Upgrade auf Customer Journey Analytics überwachen.
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 hide: true
 hidefromtoc: true
-source-git-commit: a5425eccff643cd45fd630172b0113e646b2a9cc
+exl-id: 35fcd213-d831-4da0-b946-f6f0d8561f60
+source-git-commit: f71f5b863a024d882a116a5fd3bf0fc433e5fe99
 workflow-type: tm+mt
-source-wordcount: '232'
+source-wordcount: '245'
 ht-degree: 0%
 
 ---
 
-# Überwachen der Datensatzaufnahme bei der Aktualisierung auf Customer Journey Analytics
+# Überwachen der Datensatzaufnahme beim Upgrade auf Customer Journey Analytics
 
 >[!NOTE]
 > 
->Führen Sie die Schritte auf dieser Seite erst aus, nachdem Sie alle vorherigen Aktualisierungsschritte ausgeführt haben. Sie können die [empfohlenen Aktualisierungsschritte](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) ausführen oder die für Ihr Unternehmen dynamisch generierten Aktualisierungsschritte mit dem Fragebogen [Adobe Analytics to Customer Journey Analytics Upgrade Fragenkatalog](https://gigazelle.github.io/cja-ttv/) ausführen.
+>Befolgen Sie die Schritte auf dieser Seite erst, nachdem Sie alle vorherigen Upgrade-Schritte abgeschlossen haben. Sie können die [empfohlenen Upgrade-Schritte](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) ausführen oder die Upgrade-Schritte ausführen, die für Ihr Unternehmen mit dem [Fragebogen für das Upgrade von Adobe Analytics auf Customer Journey Analytics dynamisch generiert wurden](https://gigazelle.github.io/cja-ttv/).
 >
->Nachdem Sie die Schritte auf dieser Seite ausgeführt haben, fahren Sie mit den empfohlenen Aktualisierungsschritten oder den dynamisch generierten Aktualisierungsschritten fort.
+>Nachdem Sie die Schritte auf dieser Seite abgeschlossen haben, folgen Sie den empfohlenen Upgrade-Schritten oder den dynamisch generierten Upgrade-Schritten.
 
 <!-- Should we single source this instead of duplicate it? The following steps were copied from: /help/data-ingestion/aepwebsdk.md-->
 
 Nachdem Sie Ihre Web SDK-Implementierung konfiguriert haben, müssen Sie die Status einzelner Batches überprüfen, um sicherzustellen, dass Daten in den Datensatz aufgenommen werden.
 
-1. Wählen Sie in der Experience Platform-Benutzeroberfläche im linken Navigationsbereich **[!UICONTROL Monitoring]** aus.
+1. Wählen Sie in der Experience Platform-Benutzeroberfläche **[!UICONTROL Überwachung]** im linken Navigationsbereich aus.
 
-   Das Monitoring-Dashboard wird angezeigt. In diesem Dashboard können Sie den Status eingehender Daten aus der Batch- oder Streaming-Erfassung anzeigen.
+   Das Überwachungs-Dashboard wird angezeigt. In diesem Dashboard können Sie den Status eingehender Daten aus der Batch- oder Streaming-Aufnahme anzeigen.
 
    <!-- insert screenshot -->
 
 1. Wählen Sie **[!UICONTROL Batch End-to-End]** aus, um eine Liste der Batches anzuzeigen.
 
-   Wenn keine Batches angezeigt werden, überprüfen Sie Ihre Web SDK-Implementierung, um sicherzustellen, dass die Daten korrekt an Adobe gesendet werden.
+   Wenn keine Batches angezeigt werden, überprüfen Sie Ihre Web SDK-Implementierung, um sicherzustellen, dass Daten korrekt an Adobe gesendet werden.
 
    <!-- insert screenshot -->
 
-1. Wählen Sie die Batch-Kennung für einen bestimmten Datensatz aus und überprüfen Sie dann, ob **[!UICONTROL Erfolg]** im Feld **[!UICONTROL Status]** angezeigt wird.
+1. Wählen Sie die Batch-ID für einen bestimmten Datensatz aus und überprüfen Sie dann, ob **[!UICONTROL Erfolg]** im Feld **[!UICONTROL Status]** angezeigt wird.
 
-   Wenn im Feld **[!UICONTROL Status]** der Wert **[!UICONTROL Fehlgeschlagen]** angezeigt wird, überprüfen Sie Ihre Web SDK-Implementierung, um sicherzustellen, dass die Daten korrekt an Adobe gesendet werden.
+   Wenn **[!UICONTROL Fehlgeschlagen]** im Feld **[!UICONTROL Status]** angezeigt wird, überprüfen Sie Ihre Web SDK-Implementierung, um sicherzustellen, dass die Daten korrekt an Adobe gesendet werden.
 
-   Wiederholen Sie diesen Schritt, um den Status jedes Batches zu überprüfen.
+   Wiederholen Sie diesen Schritt, um den Status jedes Stapels zu überprüfen.
 
-
-
+1. Fahren Sie mit den [empfohlenen Upgrade-Schritten](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) oder den [dynamisch generierten Upgrade-Schritten](https://gigazelle.github.io/cja-ttv/) fort.
 
