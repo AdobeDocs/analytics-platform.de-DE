@@ -5,10 +5,10 @@ exl-id: 53ef7485-9cae-4663-bf61-4eb77c126830
 feature: Adobe Product Analytics, Guided Analysis
 keywords: Produktanalysen
 role: User
-source-git-commit: d492220eaf12242a870f3826b31edd3d1ea99a3b
+source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '637'
+ht-degree: 7%
 
 ---
 
@@ -17,51 +17,51 @@ ht-degree: 0%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_guidedanalysis_activegrowth_button"
+>id="workspace_guidedanalysis_activegrowth_button"
 >title="Aktives Wachstum"
 >abstract="Identifizieren Sie, wer neu ist, bleibt, zurückkehrt oder inaktiv ist."
 
 <!-- markdownlint-enable MD034 -->
 
 
-Die Analyse ![PeopleGroup](/help/assets/icons/PeopleGroup.svg) **[!UICONTROL Aktives Wachstum]** bietet Einblicke in das Wachstum und die Akquise von Benutzern über einen bestimmten Zeitraum. Die horizontale Achse ist ein Zeitintervall, während die vertikale Achse eine Benutzermessung darstellt. Benutzer sind in vier Kategorien unterteilt:
+Die ![PeopleGroup](/help/assets/icons/PeopleGroup.svg) **[!UICONTROL Active growth]**-Analyse bietet Einblicke in das Wachstum und die Akquise von Nutzern in einem bestimmten Zeitraum. Die horizontale Achse ist ein Zeitintervall, während die vertikale Achse ein Maß für Benutzende ist. Die Benutzer sind in vier Kategorien unterteilt:
 
-* **[!UICONTROL Neu]**: Der Benutzer war während des aktuellen Zeitraums aktiv, jedoch nicht zuvor. Sehen Sie, wie weit die Analyse zurückblickt, indem Sie in der Diagrammlegende den Mauszeiger über _[!UICONTROL Neue Benutzer]_ bewegen. Der Lookback-Bereich wird basierend auf dem ausgewählten Datumsbereich und Intervall dynamisch bestimmt.
+* **[!UICONTROL Neu]**: Der Benutzer war im aktuellen Zeitraum aktiv, aber nicht zuvor. Sehen Sie, wie weit diese Analyse zurückblickt, indem Sie in der Diagrammlegende den Mauszeiger _[!UICONTROL Neue Benutzer]_ bewegen. Der Lookback-Bereich wird basierend auf dem ausgewählten Datumsbereich und Intervall dynamisch bestimmt.
 * **[!UICONTROL Wiederholen]**: Der Benutzer war im aktuellen und unmittelbar vorherigen Zeitraum aktiv.
-* **[!UICONTROL Zurück]**: Der Benutzer war im aktuellen Zeitraum aktiv und nicht im unmittelbar vorherigen Zeitraum aktiv, war aber zu einem früheren Zeitpunkt aktiv. Sehen Sie, wie weit die Analyse zurückblickt, indem Sie in der Diagrammlegende den Mauszeiger über _[!UICONTROL Zurückkehrende Benutzer]_ bewegen. Der Lookback-Bereich wird basierend auf dem ausgewählten Datumsbereich und Intervall dynamisch bestimmt.
-* **[!UICONTROL Dormant]**: Der Benutzer war im unmittelbar vorherigen Zeitraum aktiv, ist aber im aktuellen Zeitraum nicht aktiv. Dormant-Benutzer zählen nicht zur Gesamtanzahl aktiver Benutzer.
+* **[!UICONTROL Zurück]**: Der Benutzer war im aktuellen Zeitraum aktiv und im unmittelbar vorherigen Zeitraum nicht aktiv, war aber zu einem früheren Zeitpunkt aktiv. Sie können sehen, wie weit die Analyse zurückblickt, indem Sie den Mauszeiger über _[!UICONTROL Benutzer zurückgeben]_ in der Legende des Diagramms bewegen. Der Lookback-Bereich wird basierend auf dem ausgewählten Datumsbereich und Intervall dynamisch bestimmt.
+* **[!UICONTROL Inaktiv]**: Der/die Benutzende war unmittelbar im vorherigen Zeitraum aktiv, ist aber im aktuellen Zeitraum nicht aktiv. Inaktive Benutzende werden nicht zur Gesamtzahl der aktiven Benutzenden gezählt.
 
-Alle aktiven Benutzer (neu + Wiederholen + Rückgabe) werden als Teelichtenschatten über der horizontalen Achse angezeigt, während alle ruhenden Benutzer unter der horizontalen Achse orange dargestellt werden.
+Alle aktiven Benutzenden (Neu + Wiederholen + Zurück) werden über der horizontalen Achse als echte Schattierung angezeigt, während alle inaktiven Benutzenden unter der horizontalen Achse in Orange angezeigt werden.
 
 
 >[!VIDEO](https://video.tv.adobe.com/v/3421667/?learn=on)
 
-## Anwendungsbeispiele
+## Anwendungsfälle
 
-Anwendungsbeispiele für diese Analyse sind:
+Anwendungsfälle für diese Analyse sind:
 
-* **Benutzerbindung und -abwanderung:** Bietet eine klare Visualisierung der Zeiträume mit hoher oder niedriger Benutzerbindung. Die Erkennung dieser Zeiträume mit hoher oder niedriger Aufbewahrung kann Ihnen dabei helfen, Produktentscheidungen zu treffen, um eine hohe Beibehaltung zu fördern oder Abwanderung zu minimieren.
-* **Kampagnenbewertung**: Die Anzeige einer bestimmten Kampagne kann Ihnen dabei helfen zu verstehen, wie viel Traffic sie generiert hat und wie gut sie den Benutzern geholfen hat, aktiv zu bleiben.
-* **Analyse des Benutzerlebenszyklus**: Die Analyse des aktiven Benutzerwachstums während des gesamten Benutzerlebenszyklus kann dabei helfen, bestimmte Phasen zu identifizieren, in denen die Benutzerinteraktion abnimmt. Wenn beispielsweise eine hohe Anzahl ruhender Benutzer für Einzelpersonen in einer Onboarding-Phase vorhanden ist, kann dies auf Nutzungsprobleme oder die Notwendigkeit einer besseren produktinternen Anleitung hinweisen.
+* **Benutzerbindung und Abwanderung:** Bietet eine klare Visualisierung von Zeiträumen hoher oder niedriger Benutzerbindung. Wenn Sie diese Zeiten hoher oder niedriger Kundenbindung erkennen, können Sie Produktentscheidungen treffen, um eine hohe Kundenbindung zu fördern oder die Abwanderung zu minimieren.
+* **Kampagnenbewertung**: Die Anzeige einer bestimmten Kampagne hilft Ihnen zu verstehen, wie viel Traffic sie generiert hat und wie gut sie Benutzern geholfen hat, aktiv zu bleiben.
+* **Benutzerlebenszyklusanalyse**: Die Analyse des aktiven Benutzerwachstums im gesamten Benutzerlebenszyklus kann dabei helfen, bestimmte Phasen zu identifizieren, in denen die Benutzerinteraktion abnimmt. Wenn beispielsweise in einer Onboarding-Phase eine hohe Anzahl von inaktiven Benutzern für Einzelanwender vorhanden ist, kann dies auf Benutzerprobleme oder einen Bedarf an besserer produktinterner Anleitung hinweisen.
 
 ## Benutzeroberfläche
 
-Eine Übersicht über die Benutzeroberfläche der geführten Analyse finden Sie unter [Schnittstelle](../overview.md#interface) . Die folgenden Einstellungen beziehen sich auf diese Analyse:
+Siehe [Schnittstelle](../overview.md#interface) für einen Überblick über die Oberfläche der geführten Analyse. Die folgenden Einstellungen sind für diese Analyse spezifisch:
 
 ### Abfrageleiste
 
-In der Abfrageleiste können Sie die folgenden Komponenten konfigurieren:
+Mit der Abfrageleiste können Sie die folgenden Komponenten konfigurieren:
 
 * **[!UICONTROL Ansicht]**: Wechseln Sie zwischen dieser Analyse und [Nettowachstum](net-growth.md).
-* **[!UICONTROL Ereignisse]**: Das Ereignis, das Sie messen möchten. Da diese Analyse benutzerbasiert ist, wird ein Benutzer, der innerhalb des Zeitraums einmal mit dem Ereignis interagiert, als aktiver Benutzer gezählt. Sie können ein Ereignis in eine Abfrage einbeziehen.
-* **[!UICONTROL Zählt als]**: Die Zählmethode, die auf die ausgewählten Ereignisse angewendet werden soll. Zu den Optionen gehören [!UICONTROL Anzahl der Benutzer] und [!UICONTROL Prozentsatz der Benutzer].
+* **[!UICONTROL Ereignisse]**: Das Ereignis, das Sie messen möchten. Da diese Analyse benutzerbasiert ist, wird ein Benutzer, der innerhalb des Zeitraums mit dem Ereignis interagiert, als aktiver Benutzer gezählt. Sie können ein Ereignis in eine Abfrage einbeziehen.
+* **[!UICONTROL Zählt als]**: Die Zählmethode, die auf die ausgewählten Ereignisse angewendet werden soll.  Die Optionen umfassen [!UICONTROL Anzahl der ]) und [!UICONTROL Prozentsatz der ].
 * **[!UICONTROL Segmente]**: Das Segment, nach dem Sie Daten filtern möchten. Sie können ein Segment in eine Abfrage einbeziehen.
 
 ### Diagrammeinstellungen
 
-Die Analyse [!UICONTROL Aktives Wachstum] bietet die folgenden Diagrammeinstellungen, die im Menü über dem Diagramm angepasst werden können:
+Die [!UICONTROL Aktives Wachstum]-Analyse bietet die folgenden Diagrammeinstellungen, die im Menü über dem Diagramm angepasst werden können:
 
-* **[!UICONTROL Diagrammtyp]**: Der Typ der Visualisierung, die Sie verwenden möchten. Zu den Optionen gehören [!UICONTROL Gestapelter Balken] und [!UICONTROL Gestapelter Bereich].
+* **[!UICONTROL Diagrammtyp]**: Der Visualisierungstyp, den Sie verwenden möchten. Zu den Optionen gehören [!UICONTROL Gestapelter Balken] und [!UICONTROL Gestapelter Bereich].
 
 ### Zeitvergleich
 
@@ -71,8 +71,8 @@ Die Analyse [!UICONTROL Aktives Wachstum] bietet die folgenden Diagrammeinstellu
 
 Der gewünschte Datumsbereich für Ihre Analyse. Diese Einstellung umfasst zwei Komponenten:
 
-* **[!UICONTROL Intervall]**: Die Datumsgranularität, mit der Trenddaten angezeigt werden sollen. Gültige Optionen sind &quot;Stündlich&quot;, &quot;Täglich&quot;, &quot;Wöchentlich&quot;, &quot;Monatlich&quot;und &quot;Quartal&quot;. Derselbe Datumsbereich kann unterschiedliche Intervalle haben, die sich auf die Anzahl der Datenpunkte im Diagramm und die Anzahl der Spalten in der Tabelle auswirken. Wenn Sie beispielsweise eine Analyse betrachten, die sich auf drei Tage mit täglicher Granularität erstreckt, werden nur drei Datenpunkte angezeigt, während eine Analyse, die drei Tage mit stündlicher Granularität umfasst, 72 Datenpunkte anzeigen würde.
-* **[!UICONTROL Datum]**: Das Start- und Enddatum. Vorgaben für rollierende Datumsbereiche und zuvor gespeicherte benutzerdefinierte Bereiche stehen Ihnen zur Verfügung. Alternativ können Sie die Kalenderauswahl verwenden, um einen festen Datumsbereich auszuwählen.
+* **[!UICONTROL Intervall]**: Die Datumsgranularität, nach der Trend-Daten angezeigt werden sollen. Gültige Optionen sind stündlich, täglich, wöchentlich, monatlich und vierteljährlich. Derselbe Datumsbereich kann unterschiedliche Intervalle aufweisen, die sich auf die Anzahl der Datenpunkte im Diagramm und die Anzahl der Spalten in der Tabelle auswirken. Wenn Sie beispielsweise eine Analyse mit dreitägiger Granularität anzeigen, werden nur drei Datenpunkte angezeigt, während eine Analyse mit dreitägiger Granularität 72 Datenpunkte ergibt.
+* **[!UICONTROL Date]**: Das Start- und Enddatum. Rollierende Datumsbereichsvorgaben und zuvor gespeicherte benutzerdefinierte Bereiche stehen Ihnen zur Verfügung. Sie können auch den Kalenderselektor verwenden, um einen festen Datumsbereich auszuwählen.
 
 <!--
 ## Example

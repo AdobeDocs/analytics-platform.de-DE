@@ -4,23 +4,23 @@ title: Balken und Balken gestapelt
 feature: Visualizations
 exl-id: a4458694-0c90-4e44-88d5-575737a61c36
 role: User
-source-git-commit: e8d9132ec9920d649f6694f02f987deadb93b77d
+source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
 workflow-type: tm+mt
 source-wordcount: '174'
-ht-degree: 13%
+ht-degree: 30%
 
 ---
 
 # Balken (gestapelt)
 
-Die Balkenvisualisierung verfügt über eine standardmäßige und gestapelte Option.
+Die Balkenvisualisierung hat eine standardmäßige und eine gestapelte Option.
 
 ## Balken {#bar}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_bar_button"
+>id="workspace_bar_button"
 >title="Balken"
 >abstract="Erstellen Sie eine Balkenvisualisierung, um verschiedene Werte aus einer oder mehreren Metriken darzustellen."
 
@@ -29,34 +29,34 @@ Die Balkenvisualisierung verfügt über eine standardmäßige und gestapelte Opt
 
 Die Visualisierung ![GraphBarVertical](/help/assets/icons/GraphBarVertical.svg) **[!UICONTROL Bar]** zeigt vertikale Balken, die verschiedene Werte aus einer oder mehreren Metriken darstellen.
 
-![Visualisierung virtueller Balken mit mehreren Metriken, einschließlich Seitenansichten, Besuchen, Einstiegen und Ausstiegen.](assets/bar.png)
+![Visualisierung der virtuellen Leiste mit mehreren Metriken, einschließlich Seitenansichten, Besuche, Eintritte und Austritte.](assets/bar.png)
 
-Über ein Dropdown-Menü für die Granularität in den Visualisierungseinstellungen können Sie eine Trend-Visualisierung (z. B. Linie, Balken) von täglich zu wöchentlich zu monatlich usw. ändern.
+Über eine Dropdown-Liste für die Granularität in den Visualisierungseinstellungen können Sie eine Trend-Visualisierung (z. B. Linie, Balken) von täglich über wöchentlich bis monatlich ändern.
 
 ## Balken gestapelt {#bar-stacked}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_barstacked_button"
+>id="workspace_barstacked_button"
 >title="Balken gestapelt"
 >abstract="Erstellen Sie eine Balkenvisualisierung, um verschiedene Werte aus einer oder mehreren gestapelten Metriken darzustellen."
 
 <!-- markdownlint-enable MD034 -->
 
 
-Die Visualisierung ![GraphBarVerticalStack](/help/assets/icons/GraphBarVerticalStacked.svg) **[!UICONTROL Balken gestapelt]** ähnelt einem Balkendiagramm, wobei die Serienbalken jedoch übereinander gestapelt sind.
+Die ![GraphBarVerticalStacked](/help/assets/icons/GraphBarVerticalStacked.svg)**[!UICONTROL BarStacked]**-Visualisierung ist wie ein Balkendiagramm, aber mit den Serienbalken, die übereinander gestapelt sind.
 
 ![Gestapeltes Balkendiagramm mit mehreren Metriken.](assets/bar-stacked.png)
 
-Verwenden Sie die Option **[!UICONTROL 100 % gestapelt]** in ![Einstellung](/help/assets/icons/Setting.svg) **[!UICONTROL Einstellungen]** , um das Diagramm in eine 100 % gestapelte Visualisierung umzuwandeln.
+Verwenden Sie die Option **[!UICONTROL 100 % gestapelt]** in ![Einstellung](/help/assets/icons/Setting.svg) **[!UICONTROL Einstellungen]**, um das Diagramm in eine 100 % gestapelte Visualisierung umzuwandeln.
 
-![ Ein gestapeltes Balkendiagramm mit 100 %.](assets/bar-stacked100.png)
+![Ein gestapeltes Balkendiagramm von 100 %.](assets/bar-stacked100.png)
 
 >[!MORELIKETHIS]
 >
 >[Hinzufügen einer Visualisierung zu einem Bedienfeld](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
 >[Visualisierungseinstellungen](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
->[Kontextmenü &quot;Visualisierung&quot;](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
+>[Kontextmenü der Visualisierung](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
 >
 

@@ -1,21 +1,21 @@
 ---
-description: Erfahren Sie, wie Sie Spalteneinstellungen bearbeiten, um die Spaltenformatierung zu konfigurieren. Einige davon sind bedingt.
+description: Erfahren Sie, wie Sie Spalteneinstellungen bearbeiten, um die Spaltenformatierung zu konfigurieren, von denen einige bedingt sein können.
 title: Spalteneinstellungen
 feature: Visualizations
 exl-id: b41d8a12-e8d9-405c-ac71-6567397aec6b
 role: User
-source-git-commit: 6a279ac39e6b94200ff93ac1a3796d202e6349c7
+source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
 workflow-type: tm+mt
 source-wordcount: '882'
-ht-degree: 19%
+ht-degree: 21%
 
 ---
 
 # [!UICONTROL Spalteneinstellungen]
 
-Mit den [!UICONTROL Spalteneinstellungen] können Sie die Spaltenformatierung konfigurieren. Einige davon sind bedingt.
+[!UICONTROL Spalteneinstellungen] ermöglichen die Konfiguration der Spaltenformatierung, wobei einige davon bedingte Bedingungen sein können.
 
-+++ Sehen Sie sich ein Video an, um diese Funktion zu demonstrieren.
++++ Sehen Sie sich eine Videodemonstration dieser Funktion an.
 
 >[!VIDEO](https://video.tv.adobe.com/v/40382/?quality=12)
 
@@ -23,49 +23,49 @@ Mit den [!UICONTROL Spalteneinstellungen] können Sie die Spaltenformatierung ko
 
 +++
 
-Um auf die [!UICONTROL Spalteneinstellungen] zuzugreifen, wählen Sie ![Spalteneinstellungen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Settings_18_N.svg) in der Spaltenüberschrift aus.
+Um auf [!UICONTROL Spalteneinstellungen] zuzugreifen, wählen Sie ![Spalteneinstellungen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Settings_18_N.svg) in der Spaltenüberschrift aus.
 
 ![Spalteneinstellungen](assets/column-settings.png)
 
 
-Sie können Einstellungen für mehrere Spalten gleichzeitig bearbeiten. Wählen Sie mehrere Spalten aus und wählen Sie in einer der ausgewählten Spalten die Option ![Einstellung](/help/assets/icons/Setting.svg) aus. Jede Änderung, die Sie vornehmen, gilt für alle Spalten mit ausgewählten Zellen.
+Sie können Einstellungen für mehrere Spalten gleichzeitig bearbeiten. Wählen Sie mehrere Spalten aus und wählen ![Einstellung](/help/assets/icons/Setting.svg) in einer der ausgewählten Spalten aus. Jede Änderung, die Sie vornehmen, gilt für alle Spalten, in denen Zellen ausgewählt sind.
 
 | Option | Beschreibung |
 | --- | --- |
-| **[!UICONTROL Gesamtsumme anzeigen]** | Zeigt eine clientseitige Summe der Spalte an. Diese Gesamtsumme dedupliziert Metriken wie Sitzungen oder Personen **nicht**. |
+| **[!UICONTROL Summe anzeigen]** | Zeigt eine Client-seitige Summe der Spalte an. Diese Gesamtzahl dedupliziert **Metriken wie Sitzungen** Personen nicht. |
 | **[!UICONTROL Gesamtsumme anzeigen]** | Zeigt eine Server-seitige Summe der Spalte an. Die Gesamtsumme dedupliziert Metriken wie Sitzungen oder Personen. |
-| **[!UICONTROL Sparkline anzeigen]** | Zeigen Sie ein Liniendiagramm an der Spaltenüberschrift. |
-| **[!UICONTROL Nummer]** | Bestimmen Sie, ob in einer Zelle der numerische Wert für die Metrik angezeigt/ausgeblendet wird. Ist die Metrik beispielsweise „Seitenansichten“, ist der numerische Wert die Anzahl an Seitenansichten für dieses Zeilenelement. |
-| **[!UICONTROL Prozent]** | Bestimmen Sie, ob in einer Zelle der Prozentwert für die Metrik angezeigt/ausgeblendet wird. Wenn die Metrik beispielsweise &quot;Seitenansichten&quot;ist, ist der Prozentwert die Anzahl der Seitenansichten für das Zeilenelement dividiert durch die Gesamtanzahl der Seitenansichten für die Spalte.  Hinweis: Prozentsätze über 100 % sind möglich, um Genauigkeit zu gewährleisten. Die obere Grenze kann auf 1.000 % verschoben werden, um zu verhindern, dass die Spaltenbreite zu groß wird. |
-| **[!UICONTROL Anomalien anzeigen]** | Bestimmen Sie, ob die Anomalieerkennung für die Werte in dieser Spalte ausgeführt wird. |
-| **[!UICONTROL Vorschau anzeigen]** | Bestimmen Sie, ob die Prognosewerte in dieser Spalte angezeigt werden. |
-| **[!UICONTROL Umbruch Kopfzeilentext]** | Schließen Sie den Kopfzeilentext in Freiformtabellen ein, damit Kopfzeilen besser lesbar und Tabellen einfacher freizugeben sind. Wrapping ist für das PDF-Rendering und für Metriken mit langen Namen nützlich. Standardmäßig aktiviert. |
-| **[!UICONTROL Null nicht als Wert interpretieren]** | Stellen Sie bei Zellen mit einem 0-Wert fest, ob eine 0 oder eine leere Zelle angezeigt werden soll. Diese Interpretation ist nützlich, wenn Sie Daten für jeden Tag eines Monats betrachten und einige Tage in der Zukunft liegen.  Statt für zukünftige Daten 0 anzuzeigen, werden stattdessen leere Zellen angezeigt. Diagramme berücksichtigen diese Einstellung ebenfalls (d. h. die Diagramme zeigen keine Linie oder Balken mit 0 Werten an). |
-| **[!UICONTROL Hintergrund]** | Bestimmen Sie, ob in einer Zelle die gesamte Zellformatierung, einschließlich Balkendiagramm und bedingter Formatierung, ein-/ausgeblendet wird. |
-| **[!UICONTROL Balkendiagramm]** | Zeigt ein horizontales Balkendiagramm an, das den Zellenwert im Verhältnis zum Gesamtwert der Spalte darstellt. |
-| **[!UICONTROL Bedingte Formatierung]** | Bedingte Formatierung verwenden. Siehe den Abschnitt [Abschnitt](#conditional-formatting) unten. |
-| **[!UICONTROL Vorschau der Tabellenzelle]** | Eine Vorschau der Darstellung jeder Zelle mit den aktuell ausgewählten Formatierungsoptionen. |
-| **[!UICONTROL Nicht standardmäßiges Attributionsmodell verwenden]** | Verwenden Sie ein nicht standardmäßiges Attributionsmodell. Siehe den Abschnitt [Abschnitt](#use-non-default-attribution-model) unten. |
+| **[!UICONTROL Sparkline anzeigen]** | Ein Liniendiagramm in der Spaltenüberschrift anzeigen. |
+| **[!UICONTROL Nummer]** | Ermitteln Sie, ob eine Zelle den numerischen Wert für die Metrik ein- oder ausblendet. Ist die Metrik beispielsweise „Seitenansichten“, ist der numerische Wert die Anzahl an Seitenansichten für dieses Zeilenelement. |
+| **[!UICONTROL Prozent]** | Ermitteln Sie, ob eine Zelle den Prozentwert für die Metrik anzeigt/ausblendet. Wenn die Metrik beispielsweise Seitenansichten lautet, ist der Prozentwert die Anzahl der Seitenansichten für das Zeilenelement dividiert durch die Gesamtzahl der Seitenansichten für die Spalte.  Hinweis: Prozentsätze über 100 % sind möglich, um Genauigkeit sicherzustellen. Die Obergrenze der Obergrenze kann auf 1.000 % verschoben werden, um zu verhindern, dass die Spaltenbreite zu groß wird. |
+| **[!UICONTROL Anomalien anzeigen]** | Prüfen Sie, ob die Anomalieerkennung für die Werte in dieser Spalte ausgeführt wird. |
+| **[!UICONTROL Prognose anzeigen]** | Stellen Sie fest, ob Prognosewerte in dieser Spalte angezeigt werden. |
+| **[!UICONTROL Kopfzeilentext umbrechen]** | Betten Sie den Kopfzeilentext in Freiformtabellen ein, um die Lesbarkeit der Kopfzeilen und die Freigabe der Tabellen zu verbessern. Der Umbruch ist für das PDF-Rendering und für Metriken mit langen Namen nützlich. Standardmäßig aktiviert. |
+| **[!UICONTROL Null nicht als Wert interpretieren]** | Legen Sie für Zellen mit dem Wert 0 fest, ob eine 0- oder eine leere Zelle angezeigt werden soll. Diese Interpretation ist nützlich, wenn Sie Daten für jeden Tag eines Monats betrachten, und einige Tage liegen in der Zukunft.  Statt 0 für zukünftige Datumsangaben werden stattdessen leere Zellen angezeigt. Diagramme berücksichtigen auch diese Einstellung (d. h. die Diagramme zeigen keine Linie oder keinen Balken mit 0 Werten an). |
+| **[!UICONTROL Hintergrund]** | Ermitteln Sie, ob in einer Zelle alle Zellformatierungen ein-/ausgeblendet werden, einschließlich Balkendiagramm und bedingter Formatierung. |
+| **[!UICONTROL Balkendiagramm]** | Ein horizontales Balkendiagramm anzeigen, das den Zellenwert im Verhältnis zur Gesamtsumme der Spalte darstellt. |
+| **[!UICONTROL Bedingte Formatierung]** | Verwenden der bedingten Formatierung. Siehe [Abschnitt](#conditional-formatting) unten. |
+| **[!UICONTROL Vorschau der Tabellenzelle]** | Eine Vorschau der Darstellung der einzelnen Zellen mit den aktuell ausgewählten Formatierungsoptionen. |
+| **[!UICONTROL Nicht standardmäßiges Attributionsmodell verwenden]** | Verwenden Sie ein nicht standardmäßiges Attributionsmodell. Siehe [Abschnitt](#use-non-default-attribution-model) unten. |
 
 ## Bedingte Formatierung {#conditional-formatting}
 
-Die bedingte Formatierung gilt für Obergrenzen, Mittelwerte und Untergrenzen, die Sie definieren können. Das Anwenden bedingter Formatierung in Freiformtabellen ist auch bei Aufschlüsselungen automatisch aktiviert, es sei denn, die Beschränkungen für [!UICONTROL Benutzerdefiniert] sind aktiviert.
+Die bedingte Formatierung gilt für Obergrenzen, Mittelwerte und Untergrenzen, die Sie definieren können. Das Anwenden bedingter Formatierung in Freiformtabellen wird auch bei Aufschlüsselungen automatisch aktiviert, es sei denn[!UICONTROL Benutzerdefinierte] Beschränkungen sind ausgewählt.
 
-![ Bedingte Formatierung](./assets/conditional-formatting.png)
+![Bedingte Formatierung](./assets/conditional-formatting.png)
 
-| Optionen für die bedingte Formatierung | Beschreibung |
+| Bedingte Formatierungsoptionen | Beschreibung |
 | --- | --- |
-| **[!UICONTROL Prozentbeschränkungen verwenden]** | Ändern Sie das Limit, das auf Prozentsätzen basieren soll anstatt auf absoluten Werten. Der Prozentbegrenzungsbereich funktioniert für Metriken, die ausschließlich prozentbasiert sind (wie Absprungrate), sowie für Metriken mit einer Anzahl und einem Prozentsatz (wie Seitenansichten). |
+| **[!UICONTROL Prozentsätze verwenden]** | Ändern Sie das Limit, das auf Prozentsätzen basieren soll anstatt auf absoluten Werten. Der Bereich für die prozentuale Begrenzung funktioniert für Metriken, die ausschließlich prozentualbasiert sind (z. B. Absprungrate), und für Metriken, die eine Anzahl und einen Prozentsatz aufweisen (z. B. Seitenansichten). |
 | **[!UICONTROL Automatisch generiert]** | Obere/mittlere/untere Limits automatisch auf Basis der Daten berechnen. Die Obergrenze entspricht dem höchsten Wert in dieser Spalte. Die Untergrenze entspricht dem niedrigsten Wert und der Mittelpunkt ist der Durchschnittswert der Ober- und der Untergrenze. |
-| **[!UICONTROL Benutzerspezifisch]** | Weisen Sie **[!UICONTROL Obergrenze]**, **[!UICONTROL Mittelpunkt]** und **[!UICONTROL Untergrenze]** manuell zu. Durch Einschränkungen kann flexibel bestimmt werden, wann ein Spaltenwert gut, durchschnittlich oder schlecht wird. |
-| **[!UICONTROL Palette &quot;Bedingte Formatierung&quot;]** | Wenden Sie einen vorkonfigurierten Farbsatz auf Zellen an. Je nachdem, welches der vier ausgewählten Farbschemas verwendet wird, werden den hohen Werten, Mittelwerten und niedrigen Werten unterschiedliche Farben zugewiesen. <br> Wenn Sie eine Dimension in der Tabelle ersetzen, werden die Grenzwerte für die bedingte Formatierung zurückgesetzt. Wenn Sie eine Metrik ersetzen, werden die Grenzwerte für diese Spalte zurückgesetzt (dabei wird eine Metrik auf der X-Achse und eine Dimension auf der Y-Achse dargestellt). |
+| **[!UICONTROL Benutzerspezifisch]** | Weisen Sie **[!UICONTROL Obergrenze]**, **[!UICONTROL Mittelwert]** und **[!UICONTROL Untergrenze]** manuell zu. Beschränkungen bieten die Flexibilität, zu bestimmen, wann ein Spaltenwert gut, durchschnittlich oder schlecht wird. |
+| **[!UICONTROL Bedingte Formatierungspalette]** | Wenden Sie einen vorkonfigurierten Farbsatz auf Zellen an. Je nachdem, welches der vier ausgewählten Farbschemata verwendet wird, werden hohen, mittleren und niedrigen Werten unterschiedliche Farben zugewiesen. <br> Wenn Sie eine Dimension in der Tabelle ersetzen, werden die Grenzwerte für die bedingte Formatierung zurückgesetzt. Wenn Sie eine Metrik ersetzen, werden die Grenzwerte für diese Spalte zurückgesetzt (dabei wird eine Metrik auf der X-Achse und eine Dimension auf der Y-Achse dargestellt). |
 
 ## Nicht standardmäßiges Attributionsmodell verwenden {#use-non-default-attribution-model}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_freeformtable_column_usenondefaultattributionmodel"
+>id="workspace_freeformtable_column_usenondefaultattributionmodel"
 >title="Nicht standardmäßiges Attributionsmodell verwenden"
 >abstract="Aktivieren Sie ein nicht standardmäßiges Attributionsmodell für die ausgewählten Spalten."
 
@@ -74,7 +74,7 @@ Die bedingte Formatierung gilt für Obergrenzen, Mittelwerte und Untergrenzen, d
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_freeformtable_column_usenondefaultattributionmodel_disabled"
+>id="workspace_freeformtable_column_usenondefaultattributionmodel_disabled"
 >title="Nicht standardmäßiges Attributionsmodell verwenden"
 >abstract="Der nicht standardmäßige Attributionsmodus ist für diese Metrik nicht verfügbar."
 
@@ -82,29 +82,29 @@ Die bedingte Formatierung gilt für Obergrenzen, Mittelwerte und Untergrenzen, d
 
 
 
-Sie können das standardmäßige Attributionsmodell überschreiben, das in [Datenansichten](/help/data-views/component-settings/attribution.md) konfiguriert ist.
+Sie können das standardmäßige Attributionsmodell überschreiben, das in &quot;[&quot; konfiguriert ](/help/data-views/component-settings/attribution.md).
 
 >[!NOTE]
 >
->Beachten Sie beim Aktualisieren der Attribution einer Komponente auf ein nicht standardmäßiges Attributionsmodell Folgendes:
+>Beachten Sie Folgendes, wenn Sie die Attribution einer Komponente auf ein nicht standardmäßiges Attributionsmodell aktualisieren:
 >
 >* **Bei Verwendung der Komponente in einem Bericht mit *einer einzelnen Dimension*:** Die Attribution der Komponente ignoriert das Zuordnungsmodell, wenn ein nicht standardmäßiges Attributionsmodell verwendet wird.
 >
 >* **Bei Verwendung der Komponente in einem Bericht mit *mehreren Dimensionen*:** Die Attribution der Komponente behält das Zuordnungsmodell bei, wenn ein nicht standardmäßiges Attributionsmodell verwendet wird.
 >
->   Mehrere Dimensionen sind nur verfügbar, wenn [Daten in die Cloud exportieren](/help/analysis-workspace/export/export-cloud.md).
+>   Mehrere Dimensionen sind nur beim [Exportieren von Daten in die Cloud](/help/analysis-workspace/export/export-cloud.md) verfügbar.
 >
-> Weitere Informationen zur Zuordnung finden Sie unter [Einstellungen der Persistenz-Komponente](/help/data-views/component-settings/persistence.md).
+> Weitere Informationen zur Zuordnung finden Sie unter [Persistenz - Komponenteneinstellungen](/help/data-views/component-settings/persistence.md).
 
 So verwenden Sie ein nicht standardmäßiges Attributionsmodell für eine Metrik in einer Analysis Workspace:
 
-1. Wählen Sie **[!UICONTROL Nicht standardmäßiges Attributionsmodell verwenden]** aus. Wenn Sie das Attributionsmodell bereits ausgewählt haben, verwenden Sie **[!UICONTROL Bearbeiten]** , um es zu bearbeiten. Oder heben Sie die Auswahl auf, um zum standardmäßigen Attributionsmodell zurückzukehren.
+1. Wählen **[!UICONTROL Nicht-standardmäßiges Attributionsmodell verwenden]**. Wenn Sie bereits ausgewählt sind, verwenden **[!UICONTROL Bearbeiten]**, um das Attributionsmodell zu bearbeiten. Oder heben Sie die Auswahl auf, um zum standardmäßigen Attributionsmodell zurückzukehren.
 
-   ![Die Optionen für Spalteneinstellungen, die die Option &quot;Dateneinstellungen&quot;hervorheben: Verwenden Sie den nicht standardmäßigen Attributionsmodus.](assets/attribution-checkbox.png)
+   ![Die Spalteneinstellungsoptionen, in denen die Option „Dateneinstellungen“ hervorgehoben ist: Verwenden Sie einen nicht standardmäßigen Attributionsmodus.](assets/attribution-checkbox.png)
 
-2. Wählen Sie im Spaltenattributionsmodell ]**ein**[!UICONTROL  Modell ]**und ein**[!UICONTROL  Lookback-Fenster ]**aus.**[!UICONTROL  Das Lookback-Fenster bestimmt das Fenster der Datenzuordnung, das für jede Konversion angewendet wird.
+2. Wählen **[!UICONTROL im]** Spalten-Attributionsmodell“ ein **[!UICONTROL Modell]** und ein **[!UICONTROL Lookback-Fenster]**. Das Lookback-Fenster bestimmt das Fenster der Datenattribution, das für jede Konversion angewendet wird.
 
-   ![Die Optionen für das Spaltenattributionsmodell, bei denen die Option Linear ausgewählt ist,](assets/attribution-select.png)
+   ![Die Optionen des Spalten-Attributionsmodells mit Linear ausgewählt.](assets/attribution-select.png)
 
 
 ### Attributionsmodelle

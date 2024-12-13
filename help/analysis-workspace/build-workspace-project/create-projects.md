@@ -4,10 +4,10 @@ title: Erstellen von Projekten
 feature: Workspace Basics
 role: User
 exl-id: cc3d3ac9-c31f-4a8d-999c-78590512b57c
-source-git-commit: 519e7d583edc1eab9b6dd10fec024ac4bb2b93cf
+source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
 workflow-type: tm+mt
 source-wordcount: '412'
-ht-degree: 46%
+ht-degree: 100%
 
 ---
 
@@ -16,42 +16,42 @@ ht-degree: 46%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_project_countrepeatinstances"
->title="Wiederholte Instanzen zählen"
+>id="workspace_project_countrepeatinstances"
+>title="Wiederholungsinstanzen zählen"
 >abstract="Diese Einstellung legt fest, ob wiederholte Instanzen in Berichten gezählt werden sollen.<br/><br/>Hinweis: Diese Einstellung gilt nicht für Fluss- oder Fallout-Visualisierungen."
 
 <!-- markdownlint-enable MD034 -->
 
 
-Mit [Projekten](/help/analysis-workspace/build-workspace-project/freeform-overview.md) in Analysis Workspace können Sie geschäftskritische Analysen erstellen und anzeigen.  Diese Analysen können für Interessengruppen innerhalb oder außerhalb Ihres Unternehmens freigegeben werden.
+Mit [Projekten](/help/analysis-workspace/build-workspace-project/freeform-overview.md) in Analysis Workspace können Sie geschäftskritische Analysen erstellen und anzeigen.  Diese Analysen können für Stakeholderinnen und Stakeholder innerhalb oder außerhalb Ihrer Organisation freigegeben werden.
 
-1. Wählen Sie unter Customer Journey Analytics die Option **[!UICONTROL Workspace]** aus.
+1. Wählen Sie in Customer Journey Analytics die Option **[!UICONTROL Workspace]** aus.
 
-1. Wählen Sie im linken Bereich **[!UICONTROL Projekte]** und dann **[!UICONTROL Projekt erstellen]**.
+1. Wählen Sie im linken Bedienfeld die Option **[!UICONTROL Projekte]** und dann **[!UICONTROL Projekt erstellen]** aus.
 
 1. Wählen Sie **Leeres Workspace-Projekt** aus, um Ihr Workspace-Projekt mit einem Browser zu erstellen.
 
-   Weitere Informationen zum Erstellen eines mobilen Scorecard-Projekts, das Sie mit einer Mobile App für andere Interessengruppen freigeben können, finden Sie unter [Leere mobile Scorecard](/help/mobile-app/curator.md) . Weitere Informationen zu den verschiedenen verfügbaren Optionen zum Erstellen Ihres geführten Analyseprojekts finden Sie unter [Geführte Analyse](/help/guided-analysis/overview.md) .
+   Weitere Informationen zum Erstellen eines mobilen Scorecard-Projekts, das per App mit anderen Stakeholderinnen und Stakeholdern geteilt werden kann, finden Sie unter [Leere mobile Scorecard](/help/mobile-app/curator.md). Außerdem gibt es unter [Geführte Analyse](/help/guided-analysis/overview.md) weitere Informationen zu den verschiedenen verfügbaren Optionen zum Erstellen geführter Analyseprojekte.
 
 1. Wählen Sie [!UICONTROL **Erstellen**] aus.
 
 
-Nachdem Sie jetzt ein leeres Workspace-Projekt erstellt haben, sollten Sie mit der Benutzeroberfläche von [Analysis Workspace](/help/analysis-workspace/home.md) vertraut sein. Danach können Sie Ihr Projekt erstellen. Gehen Sie dazu wie folgt vor:
+Nachdem Sie nun ein leeres Workspace-Projekt erstellt haben, sollten Sie mit der Benutzeroberfläche von [Analysis Workspace](/help/analysis-workspace/home.md) vertraut sein. Wenn dem so ist, können Sie Ihr Projekt erstellen. Gehen Sie dazu wie folgt vor:
 
 ![Beispielprojekt](assets/example-project.png)
 
-* Fügen Sie [Bedienfelder](/help/analysis-workspace/c-panels/panels.md) zu Ihrem Projekt hinzu. Zum Beispiel der **[!DNL Example Panel]**-Befehl.
+* Fügen Sie dem Projekt [Bedienfelder](/help/analysis-workspace/c-panels/panels.md) hinzu, z. B. das **[!DNL Example Panel]** ➊.
 
-* Fügen Sie Ihren Bedienfeldern [Visualisierungen](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md) hinzu. Zum Beispiel:
-   * **[!DNL Line Graph]** ](/help/analysis-workspace/visualizations/line.md) Visualisierung der Linie[
-   * **[!DNL Countries]** [Freiformtabelle](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) visualisierung
-* Fügen Sie Ihren Visualisierungen [Komponenten](/help/components/overview.md) hinzu. Zum Beispiel:
-   * **[!DNL Store Country]** [dimension](/help/components/dimensions/overview.md) ➍
-   * **[!DNL People]** [metric](/help/components/apply-create-metrics.md) ➎
-   * **[!DNL Avg Order Value]** [berechnete Metrik](/help/components/calc-metrics/calc-metr-overview.md) ➏
-   * **[!DNL Mobile App Sessions]** [filter](/help/components/filters/filters-overview.md) ➐
-   * **[!DNL Last Month]** [Datumsbereich](/help/components/date-ranges/overview.md) ➑
-   * **[!DNL Example]** [annotation](/help/components/annotations/overview.md) ➒
+* Fügen Sie Ihren Bedienfeldern [Visualisierungen](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md) hinzu, z. B.:
+   * [Linienvisualisierungen](/help/analysis-workspace/visualizations/line.md) vom Typ **[!DNL Line Graph]** ➋
+   * [Freiformtabellen-Visualisierungen](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) vom Typ **[!DNL Countries]** ➌
+* Fügen Sie Ihren Visualisierungen [Komponenten](/help/components/overview.md) hinzu, z. B.:
+   * eine [Dimension](/help/components/dimensions/overview.md) vom Typ **[!DNL Store Country]** ➍
+   * eine [Metrik](/help/components/apply-create-metrics.md) vom Typ **[!DNL People]** ➎
+   * eine [berechnete Metrik](/help/components/calc-metrics/calc-metr-overview.md) vom Typ **[!DNL Avg Order Value]** ➏
+   * einen [Filter](/help/components/filters/filters-overview.md) vom Typ **[!DNL Mobile App Sessions]** ➐
+   * einen [Datumsbereich](/help/components/date-ranges/overview.md) vom Typ **[!DNL Last Month]** ➑
+   * eine [Anmerkung](/help/components/annotations/overview.md) vom Typ **[!DNL Example]** ➒
 
 
 ## Projektinfo und Einstellungen {#project-info-settings}
@@ -59,30 +59,30 @@ Nachdem Sie jetzt ein leeres Workspace-Projekt erstellt haben, sollten Sie mit d
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_project_repeatinstances"
->title="Wiederholte Instanzen zählen"
+>id="workspace_project_repeatinstances"
+>title="Wiederholungsinstanzen zählen"
 >abstract="Diese Einstellung legt fest, ob wiederholte Instanzen in Berichten gezählt werden sollen.<br/>Hinweis: Diese Einstellung gilt nicht für Fluss- oder Fallout-Visualisierungen."
 
 <!-- markdownlint-enable MD034 -->
 
 
-Die Projekteinstellungen enthalten Informationen auf Projektebene zum derzeit aktiven Projekt.
+Die Projekteinstellungen enthalten auf der Projektebene befindliche Informationen über das derzeit aktive Projekt.
 
-![Das Fenster Projektinfo und Einstellungen.](./assets/projectinfo.png)
+![Das Fenster „Projektinformationen und -einstellungen“](./assets/projectinfo.png)
 
 Zu den Einstellungen gehören:
 
 | Einstellung | Beschreibung |
 |---|---|
 | Projektname | Der Name des Projekts. Sie können auf den Namen doppelklicken, um ihn zu bearbeiten. |
-| Verantwortlicher | Name des Projektinhabers. |
+| Besitzer | Name des Projektbesitzer. |
 | Zuletzt geändert | Das Datum, an dem die letzte Änderung an dem Projekt vorgenommen wurde. |
 | Tags | Zeigt eine Liste aller Tags an, die auf ein Projekt angewendet wurden, um die Kategorisierung zu vereinfachen. |
 | Beschreibung | Eine Beschreibung hilft, den Zweck eines Projekts anzugeben. Sie können auf die Beschreibung doppelklicken, um sie zu bearbeiten. |
-| Wiederholte Instanzen zählen | Geben Sie an, ob Wiederholungsinstanzen in Berichten gezählt werden sollen. Hinweis: Diese Einstellung gilt nicht für Fluss- oder Fallout-Visualisierungen. |
-| Anmerkungen anzeigen | Geben Sie an, ob Anmerkungen für dieses Projekt angezeigt werden sollen. |
+| Wiederholungsinstanzen zählen | Diese Einstellung legt fest, ob Wiederholungsinstanzen in Berichten gezählt werden sollen. Hinweis: Diese Einstellung gilt nicht für Fluss- oder Fallout-Visualisierungen. |
+| Anmerkungen anzeigen | Legen Sie fest, ob Anmerkungen für dieses Projekt angezeigt werden sollen. |
 | [Projekt-Farbpalette](/help/analysis-workspace/build-workspace-project/color-palettes.md) | Sie können die in Workspace verwendete Farbpalette für Kategorien ändern, indem Sie aus den vordefinierten Paletten wählen, die für die Farbenblindheit optimiert wurden, oder indem Sie eine benutzerdefinierte Palette angeben. Diese Funktion betrifft vieles in Workspace, einschließlich der meisten Visualisierungen. |
-| [Dichte anzeigen](/help/analysis-workspace/build-workspace-project/view-density.md) | Ermöglicht die Anzeige weiterer Daten auf dem Bildschirm durch Reduzierung des vertikalen Abstands des linken Bedienfelds, der Freiformtabellen und der Kohortentabellen. |
+| [Dichte anzeigen](/help/analysis-workspace/build-workspace-project/view-density.md) | Mit dieser Option können Sie mehr Daten auf dem Bildschirm anzeigen, indem Sie den vertikalen Abstand des linken Bedienfelds, der Freiformtabellen und der Kohortentabellen reduzieren. |
 
 
 

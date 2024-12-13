@@ -4,7 +4,7 @@ description: Erfahren Sie, wie Sie eine Kohortentabelle für die Kohortenanalyse
 feature: Visualizations
 exl-id: 3e3a70cd-70ec-4d4d-81c3-7902716d0b01
 role: User
-source-git-commit: c16ad9f490abed1e15e1012a5a9347e2628b7642
+source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
 workflow-type: tm+mt
 source-wordcount: '641'
 ht-degree: 34%
@@ -16,7 +16,7 @@ ht-degree: 34%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_cohorttable_button"
+>id="workspace_cohorttable_button"
 >title="Kohortentabelle"
 >abstract="Erstellen Sie eine Kohortenvisualisierung, um Benutzende bei Abschluss eines Ereignisses zu gruppieren und die anhaltende Interaktion und Abwanderung im Zeitverlauf zu analysieren."
 
@@ -25,27 +25,27 @@ ht-degree: 34%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_cohorttable_panel"
+>id="workspace_cohorttable_panel"
 >title="Kohortentabelle"
 >abstract="Gruppieren Sie Benutzende bei Abschluss eines Ereignisses und analysieren Sie dann ihre anhaltenden Interaktionen und Abwanderungen im Zeitverlauf.<br/><br/>**Parameter **<br/>**Aufnahmekriterien**: Die Komponenten, die zur Definition der anfänglichen Besucherkohorten verwendet werden.<br/>**Rückkehrkriterien**: Die Komponenten, mit denen bestimmt wird, ob eine Besucherin bzw. ein Besucher zurückgekehrt ist."
 
 <!-- markdownlint-enable MD034 -->
 
 
-Eine *Kohorte* ist eine Personengruppe mit gemeinsamen Merkmalen innerhalb eines bestimmten Zeitraums. Eine Visualisierung der Kohortentabelle ![TextNummered](/help/assets/icons/TextNumbered.svg) **[!UICONTROL 3} ist nützlich, wenn Sie beispielsweise erfahren möchten, wie eine Kohorte mit einer Marke interagiert.]** Sie können problemlos Trend-Änderungen offenlegen und entsprechend reagieren. (Erläuterungen zur [!UICONTROL Kohortenanalyse] sind im Internet verfügbar, z. B. unter [Cohort Analysis 101](https://de.wikipedia.org/wiki/Cohort_analysis).)
+Eine *Kohorte* ist eine Personengruppe mit gemeinsamen Merkmalen innerhalb eines bestimmten Zeitraums. Eine ![TextNumbered](/help/assets/icons/TextNumbered.svg)**[!UICONTROL Kohortentabelle]** Visualisierung ist beispielsweise nützlich, wenn Sie erfahren möchten, wie eine Kohorte mit einer Marke interagiert. Sie können problemlos Trend-Änderungen offenlegen und entsprechend reagieren. (Erläuterungen zur [!UICONTROL Kohortenanalyse] sind im Internet verfügbar, z. B. unter [Cohort Analysis 101](https://de.wikipedia.org/wiki/Cohort_analysis).)
 
 Nachdem Sie einen Kohortenbericht erstellt haben, können Sie dessen Komponenten (bestimmte Dimensionen, Metriken und Filter) kuratieren und den Kohortenbericht dann für andere freigeben. Weitere Informationen finden Sie unter [Kuratieren und freigeben](/help/analysis-workspace/curate-share/curate.md).
 
-Beispiele für die Verwendung einer [!UICONTROL Kohortentabelle]:
+Beispiele für Möglichkeiten einer „Kohortentabelle:
 
 * Starten Sie Kampagnen, die dafür ausgelegt sind, eine erwünschte Aktion anzuregen.
 * Erhöhen Sie das Marketingbudget genau zum richtigen Zeitpunkt im Kundenlebenszyklus.
-* Erkennen Sie, wann eine Testphase oder ein Angebot beendet werden soll, um den Wert zu maximieren.
+* Erkennen Sie, wann Sie eine Testversion oder ein Angebot beenden müssen, um den Wert zu maximieren.
 * Gewinnen Sie Ideen für A/B-Tests in Bereichen wie Preisstruktur, Upgrade-Pfad usw.
 
-[!UICONTROL Kohortentabelle] ist für alle Customer Journey Analytics-Kunden mit Zugriffsrechten auf [!UICONTROL Analysis Workspace] verfügbar.
+[!UICONTROL Kohortentabelle] ist für alle Customer Journey Analytics-Kunden mit Zugriffsrechten auf [!UICONTROL Analysis Workspace verfügbar].
 
-+++ Sehen Sie sich eine Videodemonstration der Kohortentabelle an.
++++ Sehen Sie sich eine Videodemonstration zur Kohortentabelle an.
 
 >[!VIDEO](https://video.tv.adobe.com/v/23990/?quality=12)
 
@@ -55,43 +55,43 @@ Beispiele für die Verwendung einer [!UICONTROL Kohortentabelle]:
 
 >[!IMPORTANT]
 >
->[!UICONTROL Kohortenanalyse] unterstützt keine nicht filterbaren Metriken (einschließlich berechneter Metriken), nicht ganzzahlige Metriken (z. B. Umsatz) oder Vorfälle. In der Kohortenanalyse ] können nur Metriken verwendet werden, die in Filtern verwendet werden können, und sie können jeweils nur um 1 inkrementiert werden.[!UICONTROL 
+>[!UICONTROL Kohortenanalyse] unterstützt keine nicht filterbaren Metriken (einschließlich berechneter Metriken), Nicht-Ganzzahlmetriken (z. B. Umsatz) oder Vorfälle. In der Kohortenanalyse können nur Metriken verwendet werden[!UICONTROL  die in Filtern verwendet werden können] und sie können jeweils nur 1 inkrementiert werden.
 
-Kohortentabellen in Customer Journey Analytics unterstützen doppelte (oder numerisch basierte) Metriken. Beispielsweise kann &quot;Purchase.Value&quot;(Double) als Aufnahme-/Rückkehrmetrik verwendet werden. Darüber hinaus werden alle Metriken, die über den Analytics Source Connector an Adobe Experience Platform übergeben werden, ebenfalls verdoppelt.
+Kohortentabellen in Customer Journey Analytics unterstützen doppelbasierte (oder beliebige numerische) Metriken. Beispielsweise kann „Purchase.Value“ (ein doppelter Wert) als Einschluss-/Rückgabe-Metrik verwendet werden. Darüber hinaus sind alle Metriken, die über den Analytics Source Connector an Adobe Experience Platform übergeben werden, ebenfalls doppelt vorhanden.
 
-## Funktionen der Kohortentabelle
+## Kohortentabellen-Funktionen
 
 Die folgenden Fähigkeiten ermöglichen eine fein abgestimmte Kontrolle über die erstellten Kohorten:
 
-### Tabelle [!UICONTROL Treue]
+### [!UICONTROL Beibehaltung] Tabelle
 
-Eine Kohortentabelle vom Typ [!UICONTROL Bindung] gibt Personen zurück: Jede Datenzelle zeigt die Roh- und Prozentanzahl der Personen in der Kohorte, die die Aktion während dieses Zeitraums ausgeführt haben. Sie können bis zu 3 Metriken und bis zu 10 Filter einschließen.
+Eine [!UICONTROL Bindung] Kohortentabelle gibt Personen zurück: Jede Datenzelle zeigt die Rohanzahl und den Prozentsatz der Personen in der Kohorte an, die die Aktion während dieses Zeitraums ausgeführt haben. Sie können bis zu 3 Metriken und bis zu 10 Filter einschließen.
 
-![Ein Bericht zur Kohorte &quot;Rention&quot;, der die Einheiten und den Prozentsatz der Personen in der Kohorte anzeigt.](assets/retention-report.png)
+![Ein Kohortenbericht zur Rente, der die Einheiten und den Prozentsatz der Personen in der Kohorte ausgibt.](assets/retention-report.png)
 
-### [!UICONTROL Abwanderungstabelle]
+### [!UICONTROL Abwanderung] Tabelle
 
-Eine Kohortentabelle vom Typ [!UICONTROL Abwanderung] ist das Gegenteil einer Bindungstabelle und zeigt die Personen an, die abgewandert sind oder die Rückkehrkriterien für Ihre Kohorte im Laufe der Zeit nie erfüllt haben. Sie können bis zu 3 Metriken und bis zu 10 Filter einschließen.
+Eine [!UICONTROL Abwanderungs]-Kohortentabelle ist das Gegenteil einer Bindungstabelle und zeigt die Personen, die im Laufe der Zeit ausgefallen sind oder die Rückkehrkriterien für Ihre Kohorte nie erfüllt haben. Sie können bis zu 3 Metriken und bis zu 10 Filter einschließen.
 
-![Eine Abwanderungstabelle, die Einheiten und Prozentsatz der Personen anzeigt, die die Rückkehrkriterien für eine Kohorte nicht erfüllt haben.](assets/churn-report.png)
+![Eine Tabelle mit den Einheiten und dem Prozentsatz der Menschen, die die Rückkehrkriterien für eine Kohorte nicht erfüllten.](assets/churn-report.png)
 
 ### [!UICONTROL Rollierende Berechnung]
 
-Sie können die Bindung oder die Abwanderung anhand der vorherigen Spalte und nicht der eingeschlossenen Spalte berechnen, die als rollierende Berechnung bezeichnet wird.
+Sie können die Beibehaltung oder Abwanderung basierend auf der vorherigen Spalte berechnen, nicht basierend auf der eingeschlossenen Spalte, die als rollierende Berechnung bezeichnet wird.
 
-![Ein Kohortenaufbewahrungsbericht, der Berechnungen basierend auf einer vorherigen Datenspalte anzeigt.](assets/retention-report-rolling.png)
+![Ein Kohortenbeibehaltungsbericht, der Berechnungen zeigt, die auf einer vorherigen Datenspalte basieren.](assets/retention-report-rolling.png)
 
-### Tabelle [!UICONTROL Latenz]
+### [!UICONTROL Latenz]-Tabelle
 
-Eine Latenztabelle misst die verstrichene Zeit vor und nach dem Aufnahmeereignis. Die Messung der Latenz ist ein hervorragendes Werkzeug für die Vor- und Nachanalyse. Die Spalte **[!UICONTROL Aufnahme]** befindet sich in der Mitte der Tabelle und die Zeiträume vor und nach dem Aufnahmeereignis werden auf beiden Seiten angezeigt.
+Eine Latenztabelle misst die Zeit, die vor und nach dem Einschlussereignis verstrichen ist. Die Latenzmessung ist ein hervorragendes Tool für Vor- und Nachanalysen. Die Spalte **[!UICONTROL Aufnahme]** befindet sich in der Mitte der Tabelle und die Zeiträume vor und nach dem Aufnahmeereignis werden auf beiden Seiten angezeigt.
 
-![Ein Kohortenbericht, der die verstrichene Zeit vor und nach einem Ereignis anzeigt.](assets/retention-report-latency.png)
+![Ein Kohortenbericht, der die verstrichene Zeit vor und nach einem Ereignis zeigt.](assets/retention-report-latency.png)
 
-### [!UICONTROL Angepasste Dimensionskohorte]
+### [!UICONTROL Benutzerdefinierte Dimension] Kohorte
 
-Sie können Kohorten auf der Basis einer ausgewählten Dimension und nicht auf Grundlage zeitbasierter Kohorten erstellen (Standardeinstellung). Verwenden Sie Dimensionen wie [!UICONTROL Stadt geo], [!UICONTROL Marketing-Kanal], [!UICONTROL Kampagne], [!UICONTROL Produkt], [!UICONTROL Seite], [!UICONTROL Region] oder eine andere Dimension, um anzuzeigen, wie sich die Bindung ändert. Basierend auf den unterschiedlichen Werten dieser Dimensionen.
+Sie können Kohorten basierend auf einer ausgewählten Dimension und nicht auf zeitbasierten Kohorten erstellen (die der Standard sind). Verwenden Sie Dimensionen wie [!UICONTROL Stadt], [!UICONTROL Marketing-Kanal], [!UICONTROL Kampagne], [!UICONTROL Produkt], [!UICONTROL Seite], [!UICONTROL Region] oder jede andere Dimension, um Änderungen der Kundenbindung anzuzeigen. Basierend auf den verschiedenen Werten dieser Dimensionen.
 
-![Ein Kohortenbericht, der einen benutzerspezifischen Bericht mit ausgewählten Dimensionen anzeigt, nicht die standardmäßige zeitbasierte Kohorte.](assets/retention-dimensions.png)
+![Ein Kohortenbericht, der benutzerdefinierte Berichte mit ausgewählten Dimensionen zeigt, nicht die standardmäßige zeitbasierte Kohorte.](assets/retention-dimensions.png)
 
 >[!MORELIKETHIS]
 >

@@ -5,7 +5,7 @@ feature: Adobe Product Analytics, Guided Analysis
 keywords: Produktanalysen
 exl-id: c35a0ee0-e6b7-47b5-a5bc-308cde1585de
 role: User
-source-git-commit: d492220eaf12242a870f3826b31edd3d1ea99a3b
+source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
 workflow-type: tm+mt
 source-wordcount: '1259'
 ht-degree: 3%
@@ -17,71 +17,71 @@ ht-degree: 3%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_guidedanalysis_retention_button"
->title="Treue"
+>id="workspace_guidedanalysis_retention_button"
+>title="Kundentreue"
 >abstract="Messen Sie, wie viele Benutzende Ihr Produkt weiterhin verwenden."
 
 <!-- markdownlint-enable MD034 -->
 
-Die Analyse ![Bindung](/help/assets/icons/Retention.svg) **[!UICONTROL Bindung]** misst, wie Benutzer Ihr Produkt im Laufe der Zeit weiterhin verwenden. Dies kann Ihnen dabei helfen, die Anpassungsfähigkeit Ihres Produktmarktes zu verstehen. Die Analyse zählt Benutzer anhand von zwei wichtigen Ereignissen:
+Die Analyse ![Bindung](/help/assets/icons/Retention.svg) **[!UICONTROL Bindung]** misst, wie Benutzer Ihr Produkt im Laufe der Zeit weiterhin verwenden. Dies kann Ihnen helfen, Ihre Produktmarktanpassung zu verstehen. Die Analyse zählt Benutzende auf der Grundlage von zwei wichtigen Ereignissen:
 
 * Startereignis: Das Ereignis, mit dem Benutzer für die Aufnahme in Ihre Analyse qualifiziert werden.
-* Rückkehrereignis: Ein oder mehrere Ereignisse, mit denen ein Benutzer interagieren muss, um in Ihrer Analyse als wiederkehrender Benutzer zu zählen.
+* Rückkehrereignis : Ein oder mehrere Ereignisse, mit denen ein Benutzer interagieren muss, damit sie in Ihrer Analyse als wiederkehrender Benutzer gezählt werden.
 
-In dieser Analyse stellt die x-Achse des Diagramms die Zeit seit dem ersten Startereignis eines Benutzers und die y-Achse den Prozentsatz der Benutzer dar, die mit einem oder mehreren Rückkehrereignissen interagieren. Sie können die Beibehaltung und Abwanderung über mehrere Zeiträume hinweg anzeigen und die angezeigten Zeiträume können über die Abfrageeinstellungen angepasst werden. Unter dem Diagramm bietet eine Tabelle aggregierte Daten mit der Möglichkeit, einzelne Kohorten anzuzeigen. Dabei handelt es sich um eine Gruppe von Personen, die am selben Datum das Startereignis durchgeführt haben.
+Bei dieser Analyse stellt die X-Achse des Diagramms die Zeit seit dem ersten Startereignis einer Benutzerin oder eines Benutzers dar und die Y-Achse stellt den Prozentsatz der Benutzerinnen oder Benutzer dar, die mit einem oder mehreren Rückgabeereignissen interagieren. Sie können sowohl die Kundenbindung als auch die Abwanderung über verschiedene Zeiträume hinweg anzeigen. Die angezeigten Zeiträume können zudem über die Abfrageeinstellungen angepasst werden. Unterhalb des Diagramms enthält eine Tabelle aggregierte Daten mit der Option, einzelne Kohorten anzuzeigen, bei denen es sich um eine Gruppe von Personen handelt, die das Startereignis am selben Datum durchgeführt haben.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3430503/?learn=on)
 
 
-## Anwendungsbeispiele
+## Anwendungsfälle
 
-Anwendungsbeispiele für diese Analyse sind:
+Anwendungsfälle für diese Analyse sind:
 
-* **Kohortenanalyse**: Gruppieren Sie Benutzer anhand von Aktionen, die sie ausführen, z. B. Anmeldungen oder Käufe, in Kohorten. Sie können vergleichen, wie gut diese Gruppen erhalten bleiben, und bestimmen, wie das Benutzererlebnis der einzelnen Gruppen verbessert werden soll.
-* **Produktmarktanpassung**: Messen Sie die regelmäßige Nutzung Ihres Produkts und visualisieren Sie es als Treuekurven. Eine höhere Kundenbindung bedeutet eine höhere Produktmarktanpassung, und wenn sich Ihre Kurve herausflacht, zeigt dies, wie lange es dauert, bis Sie Ihre Anpassung erreichen. Sehen Sie sich diese Analyse auf einer übergeordneten Ebene an oder unterteilen Sie sie nach einzelnen Produktfunktionen, um tiefere Einblicke zu erhalten.
-* **Analyse des Anmeldedienstes**: Wenn Ihr Produkt ein Abonnement oder ein anderes Modell für wiederkehrenden Umsatz verwendet, können Sie den Prozentsatz der Benutzer sehen, die das meiste aus Ihrem Produkt machen. Sie können bestimmte Eigenschaften und Verhaltensweisen identifizieren, die diese Benutzer aufweisen.
-* **Benutzerinteraktion**: Evaluieren Sie, wie bestimmte Typen von Benutzern mit Ihrem Produkt interagieren, und vergleichen Sie nebeneinander, wie oft sie zurückkehren. Ein bestimmtes Segment mit geringerer Bindung als andere bietet Ihnen Einblicke in die Verbesserung potenzieller untergeordneter Erlebnisse, über die es möglicherweise verfügt.
+* **Kohortenanalyse**: Gruppieren Sie Benutzer basierend auf von ihnen durchgeführten Aktionen wie Anmeldungen oder Käufe in Kohorten. Sie können vergleichen, wie gut diese Gruppen beibehalten, und festlegen, wie das Benutzererlebnis jeder Gruppe verbessert werden soll.
+* **Produktmarktanpassung**: Messen Sie die regelmäßige Nutzung Ihres Produkts und visualisieren Sie sie als Aufbewahrungskurven. Eine höhere Kundenbindung bedeutet eine bessere Anpassung an den Produktmarkt und an der flacheren Kurve wird angezeigt, wie lange es dauert, bis die Anpassung erreicht ist. Sehen Sie sich diese Analyse auf einer allgemeinen Ebene an oder schlüsseln Sie sie nach den einzelnen Produktfunktionen auf, um tiefere Einblicke zu erhalten.
+* **Abonnement-**: Wenn Ihr Produkt ein Abonnement oder ein anderes Modell für den wiederkehrenden Umsatz verwendet, können Sie den Prozentsatz der Benutzer sehen, die das Beste aus Ihrem Produkt machen. Sie können bestimmte Qualitäten und Verhaltensweisen dieser Benutzenden identifizieren.
+* **Benutzerinteraktion**: Bewerten Sie, wie bestimmte Benutzertypen mit Ihrem Produkt interagieren, und vergleichen Sie nebeneinander, wie oft sie zurückkehren. Ein bestimmtes Segment mit einer geringeren Bindung als andere kann Ihnen Einblicke in die Verbesserung potenzieller unterdurchschnittlicher Erlebnisse bieten, die sie möglicherweise haben.
 
 ## Benutzeroberfläche
 
-Eine Übersicht über die Benutzeroberfläche der geführten Analyse finden Sie unter [Schnittstelle](../overview.md#interface) . Die folgenden Einstellungen beziehen sich auf diese Analyse:
+Siehe [Schnittstelle](../overview.md#interface) für einen Überblick über die Oberfläche der geführten Analyse. Die folgenden Einstellungen sind für diese Analyse spezifisch:
 
 ### Abfrageleiste
 
-In der Abfrageleiste können Sie die folgenden Komponenten konfigurieren:
+Mit der Abfrageleiste können Sie die folgenden Komponenten konfigurieren:
 
-* **[!UICONTROL Ereignis starten]**: Die Ereigniskriterien, mit denen ein Benutzer interagieren muss, um sich für die Aufnahme in Ihre Analyse zu qualifizieren. Benutzer, die mit dem Startereignis interagieren, werden in der Spalte &quot;Benutzer&quot;der Tabelle gezählt. Dieses Ereignis dient als Nenner für angezeigte Treueraten. Ein Ereignis wird unterstützt und Eigenschaftsfilter können nach Bedarf angewendet werden. Standardmäßig sind das Start- und das Rückkehrereignis verknüpft. Das bedeutet, dass ein Benutzer das ausgewählte Ereignis einmal ausführen muss, um in die Kohorte aufgenommen zu werden, und dann erneut als wiederkehrender Benutzer gezählt werden muss. Im Menü &quot;Mehr&quot;können Sie die Verknüpfung zwischen den Start- und den Rückgabeereignissen aufheben, wenn Sie möchten, dass sich die Rückkehraktion von der Einschlussaktion unterscheidet.
-* **[!UICONTROL Rückkehrereignisse]**: Die Ereigniskriterien, mit denen ein Benutzer interagieren muss, um in den Zeitspannen-Behältern als wiederkehrende Benutzer zu zählen. Sie können bis zu drei Rückkehrereignisse auswählen, um die Beibehaltung zu vergleichen.
-* **[!UICONTROL Zählt als]**: Die Zählmethode, die Sie auf die gespeicherten Benutzer anwenden möchten. Zu den Optionen zählen: 
-   * **[!UICONTROL Metrik]**: Zeigt die Anzahl der [!UICONTROL Benutzer] oder den [!UICONTROL Prozentsatz der Benutzer] an, die beibehalten wurden. Der Nenner für die berücksichtigten prozentualen Benutzer ist der eingeschlossene Benutzer für die Kohorte und ist für alle Dauer-Behälter gleich.
-   * **[!UICONTROL Zurückgeben]**: Ermöglicht Ihnen, zu steuern, wie wiederkehrende Benutzer gezählt werden. Zu den Optionen zählen: 
-      * **[!UICONTROL An oder nach]**: Diese Option wird häufig als &quot;ungebundene&quot;Bindung bezeichnet und zählt einen Benutzer, wenn er nach oder nach der angegebenen Dauer zurückkehrt. Beispiel: an Tag 7 oder jederzeit nach Tag 7. Diese Option ist hilfreich, um zu zeigen, wie Benutzer weiter interagieren, und dadurch eine reibungslosere Aufbewahrungskurve zu erzeugen.
-      * **[!UICONTROL Bei genau]**: Diese Option wird häufig als &quot;eingegrenzte&quot;Bindung bezeichnet und zählt einen Benutzer, wenn er genau zur angegebenen Dauer zurückkehrt. Zum Beispiel genau an Tag 7. Diese Option ist hilfreich, um anzuzeigen, wie Benutzer innerhalb bestimmter Zeitrahmen zurückkehren, und generiert eine Treuekurve mit mehr Abschwächung. Hinweis: Die Kohortenanalyse in Analysis Workspace verwendet die Zählung &quot;genau&quot;als Grundlage für die Analyse.
-   * **[!UICONTROL Jeder]**: Der Zeitraum, für den die einzelnen Zeitspannen-Behälter erstellt werden sollen. Zu den Optionen zählen: 
-      * **[!UICONTROL Tag/Woche/Monat]**: Die verfügbaren Optionen hängen vom ausgewählten Datumsbereich ab. Diese Optionen sind mit der Einstellung **[!UICONTROL Intervall]** identisch, wenn Sie den Datumsbereich auswählen und diese Einstellung automatisch aktualisieren.
-      * **[!UICONTROL Benutzerdefinierte Klammern]**: Diese Option ist nur für die Einstellung &quot;Bei jedem&quot;verfügbar. Damit können Sie Benutzer über einen größeren Zeitraum hinweg zählen, z. B. Tag 7-10 anstelle von nur Tag 7.
-   * **[!UICONTROL Dauer-Einstellungen]**: Ermöglicht die Steuerung der Dauer-Behälter, die in der Grafik und Tabelle angezeigt werden. Eine Dauer ist der Zeitraum nach dem Startereignis, in dem das Rückgabeereignis eingetreten ist. Hinweis: Benutzer, die sich für Dauer-Behälter qualifizieren, basieren auf der verstrichenen Zeit, nicht auf Kalendertagen. Wenn ein Benutzer beispielsweise für ein Ereignis am 6. September um 23:55 Uhr qualifiziert ist und dann am 7. September um 12:05 Uhr für ein Rückkehrereignis qualifiziert ist, werden diese nicht im Bereich für die Dauer von 1 Tagen angezeigt. Eine volle Zeitdauer von 24 Stunden muss verstreichen, bevor der Benutzer für den Zeitraum von 1 Tagen qualifiziert ist. Die verfügbaren Zeitspannen-Behälter hängen vom festgelegten Datumsbereich ab.
-      * **[!UICONTROL Automatische Dauer]** definiert automatisch die Dauer der Behälter basierend auf der Datumsbereichslänge und der Nähe zum aktuellen Tag, in dem sich der Datumsbereich befindet.
-      * **[!UICONTROL Benutzerdefinierte Dauern]** ermöglichen es Ihnen, die vier im Diagramm und in der Tabelle angezeigten Zeitspannen anzupassen.
-* **[!UICONTROL Segmente]**: Die Segmente, die Sie messen möchten. Jedes ausgewählte Segment fügt der Kohortentabelle eine Zeile hinzu. Sie können bis zu drei Segmente einbeziehen.
+* **[!UICONTROL Startereignis]**: Die Ereigniskriterien, mit denen ein Benutzer interagieren muss, um in Ihre Analyse aufgenommen zu werden. Benutzer, die mit dem Startereignis interagieren, werden in der Spalte „Benutzer“ der Tabelle gezählt. Dieses Ereignis dient als Nenner für die angezeigten Bindungsraten. Ein Ereignis wird unterstützt, und bei Bedarf können Eigenschaftsfilter angewendet werden. Standardmäßig sind das Start- und das Rückgabeereignis verknüpft. Das bedeutet, dass ein Benutzer das ausgewählte Ereignis nur einmal ausführen muss, um in die Kohorte aufgenommen zu werden, und anschließend erneut als wiederkehrender Benutzer gezählt werden muss. Im Menü Mehr können Sie die Verknüpfung zwischen Start- und Rückgabeereignissen aufheben, wenn sich die Rückgabeaktion von der Einschlussaktion unterscheiden soll.
+* **[!UICONTROL Ereignisse zurückgeben]**: Die Ereigniskriterien, mit denen ein Benutzer interagieren muss, damit sie als wiederkehrende Benutzer in den Gültigkeitsbereichen gezählt werden. Sie können bis zu drei Rückgabeereignisse auswählen, um die Kundenbindung zu vergleichen.
+* **[!UICONTROL Gezählt als]**: Die Zählmethode, die Sie auf die gespeicherten Benutzer anwenden möchten. Zu den Optionen zählen: 
+   * **[!UICONTROL Metrik]**: Zeigt die Anzahl [!UICONTROL Benutzer] oder den [!UICONTROL Prozentsatz der Benutzer] an. Der Nenner für die einbehaltenen prozentualen Benutzer sind die eingeschlossenen Benutzer für die Kohorte und sind für alle Dauer-Buckets gleich.
+   * **[!UICONTROL Wiederkehrend]**: Hiermit können Sie steuern, wie wiederkehrende Benutzende gezählt werden. Zu den Optionen zählen: 
+      * **[!UICONTROL On or After]**: Wird oft als „ungebundene“ Aufbewahrung bezeichnet. Diese Option zählt einen Benutzer, wenn er am oder nach der angegebenen Dauer zurückkehrt. Zum Beispiel an Tag 7 oder jederzeit nach Tag 7. Diese Option ist hilfreich, um zu zeigen, wie Benutzende weiterhin interagieren, und erzeugt dadurch eine glattere Bindungskurve.
+      * **[!UICONTROL Genau]**: Diese Option wird häufig als „begrenzte Aufbewahrung“ bezeichnet und zählt einen Benutzer, wenn er genau zur angegebenen Dauer zurückkehrt. Zum Beispiel genau an Tag 7. Diese Option ist hilfreich, um zu zeigen, wie Benutzer innerhalb bestimmter Zeitrahmen zurückkehren, und erzeugt eine Bindungskurve mit mehr Wellengang. Hinweis: Die Kohortenanalyse in Analysis Workspace verwendet eine „exakte“ Zählung als Grundlage für ihre Analyse.
+   * **[!UICONTROL Each]**: Der Zeitraum, in dem jeder Duration-Bucket definiert sein soll. Zu den Optionen zählen: 
+      * **[!UICONTROL Tag/Woche/Monat]**: Die verfügbaren Optionen hängen vom ausgewählten Datumsbereich ab. Diese Optionen sind identisch mit der Einstellung **[!UICONTROL Intervall]** bei Auswahl des Datumsbereichs und aktualisiert diese Einstellung automatisch.
+      * **[!UICONTROL Benutzerdefinierte Klammern]**: Diese Option ist nur für die Einstellung „Bei jedem“ verfügbar. Damit können Sie Benutzer über einen größeren Zeitraum hinweg zählen, z. B. Tag 7 bis 10 anstelle von Tag 7.
+   * **[!UICONTROL Dauereinstellungen]**: Ermöglicht die Steuerung der im Diagramm und in der Tabelle angezeigten Dauer-Buckets. Eine Dauer ist der Zeitraum nach dem Startereignis, in dem das Rückgabeereignis aufgetreten ist. Hinweis: Benutzende, die für einen Zeitraum-Bucket infrage kommen, basieren auf verstrichener Zeit und nicht auf Kalendertagen. Wenn sich ein(e) Benutzende(r) beispielsweise am 6. September um 23:55 Uhr für ein Ereignis qualifiziert und dann am 7. September um 12:05 Uhr für ein Rückgabeereignis qualifiziert, würden sie nicht im 1-Tages-Dauerbereich angezeigt. Es müssen volle 24 Stunden verstreichen, bevor der Benutzer sich für den 1-Tage-Dauerbereich qualifiziert. Die verfügbaren Dauer-Buckets hängen vom festgelegten Datumsbereich ab.
+      * **[!UICONTROL Automatische Dauer]** definiert automatisch die Dauer-Buckets basierend auf der Länge des Datumsbereichs und der Nähe zum aktuellen Tag, an dem der Datumsbereich liegt.
+      * **[!UICONTROL Benutzerdefinierte Dauer]** ermöglicht es Ihnen, die vier Dauer-Buckets anzupassen, die auf dem Diagramm und der Tabelle angezeigt werden.
+* **[!UICONTROL Segmente]**: Die Segmente, die Sie messen möchten. Jedes ausgewählte Segment fügt der Kohortentabelle eine Zeile hinzu. Sie können bis zu drei Segmente einschließen.
 
 ### Diagrammeinstellungen
 
-Die Analyse [!UICONTROL Bindung] bietet die folgenden Diagrammeinstellungen, die im Menü über dem Diagramm angepasst werden können:
+Die [!UICONTROL Beibehaltung]-Analyse bietet die folgenden Diagrammeinstellungen, die im Menü über dem Diagramm angepasst werden können:
 
-* **[!UICONTROL Diagrammtyp]**: Der Typ der Visualisierung, die Sie verwenden möchten. Zu den Optionen gehören [!UICONTROL Balken] und [!UICONTROL Linie].
+* **[!UICONTROL Diagrammtyp]**: Der Visualisierungstyp, den Sie verwenden möchten. Die Optionen umfassen [!UICONTROL Bar] und [!UICONTROL Line].
 
 ### Datumsbereich
 
 Der gewünschte Datumsbereich für Ihre Analyse. Diese Einstellung umfasst zwei Komponenten:
 
-* **[!UICONTROL Intervall]**: Die Datumsgranularität, mit der Sie Aufbewahrungsdaten anzeigen möchten. Gültige Optionen sind &quot;Täglich&quot;, &quot;Wöchentlich&quot;und &quot;Monatlich&quot;. Derselbe Datumsbereich kann unterschiedliche Intervalle haben, die sich auf die Optionen für den Zeitraumbehälter auswirken.
-* **[!UICONTROL Datum]**: Das Start- und Enddatum. Vorgaben für rollierende Datumsbereiche und zuvor gespeicherte benutzerdefinierte Bereiche stehen Ihnen zur Verfügung. Alternativ können Sie die Kalenderauswahl verwenden, um einen festen Datumsbereich auszuwählen.
+* **[!UICONTROL Intervall]**: Die Datumsgranularität, mit der Sie die Aufbewahrungsdaten anzeigen möchten. Gültige Optionen sind „Täglich“, „Wöchentlich“ und „Monatlich“. Derselbe Datumsbereich kann unterschiedliche Intervalle haben, die sich auf die Optionen für Dauer-Buckets auswirken.
+* **[!UICONTROL Date]**: Das Start- und Enddatum. Rollierende Datumsbereichsvorgaben und zuvor gespeicherte benutzerdefinierte Bereiche stehen Ihnen zur Verfügung. Sie können auch den Kalenderselektor verwenden, um einen festen Datumsbereich auszuwählen.
 
-Wenn Sie einen Datumsbereich auswählen, der nahe am aktuellen Tag liegt, werden Benutzer, die sich anfangs zu nah am aktuellen Tag engagieren, nicht einbezogen. Diese Analyse gibt allen Benutzern immer die Möglichkeit, in alle Zeitspannen-Buckets aufgenommen zu werden. Eine Meldung unter der Kalenderauswahl enthält Informationen zum Datumsbereich, in dem Benutzer interagieren, und zum Intervall, das nur für wiederkehrende Benutzer reserviert ist:
+Wenn Sie einen Datumsbereich auswählen, der nahe am aktuellen Tag liegt, werden Benutzende, die ursprünglich zu nahe am aktuellen Tag interagieren, nicht einbezogen. Diese Analyse gibt allen Nutzern immer die Chance, in alle Duration Buckets aufgenommen zu werden. Eine Nachricht unter der Kalenderauswahl enthält Informationen zum Datumsbereich, in dem Benutzende interagieren, und zum Intervall, das nur wiederkehrenden Benutzenden vorbehalten ist:
 
-* **[!UICONTROL Analysieren von Benutzern, die das Startereignis in [Datumsintervall]]** durchgeführt haben: Wenn ein Benutzer innerhalb dieses Datumsbereichs mit dem Ereignis interagiert, werden diese in die Analyse einbezogen. Dieser Datumsbereich garantiert allen Benutzern ausreichend Zeit, um sich für alle Zeitspannen-Behälter zu qualifizieren. Dieser Datumsbereich kann sich von Ihrer Auswahl unterscheiden, wenn er nahe dem aktuellen Tag liegt.
-* **[!UICONTROL Daten aus dem [Datumsintervall] sind für den Abschluss der Analyse reserviert]**: Wenn ein Benutzer innerhalb dieses Zeitraums zum ersten Mal interagiert, sind sie **nicht** in der Analyse enthalten. Für die letzten Datumsbereiche hätten diese Benutzer keine Möglichkeit, sich für alle Zeitspannen-Behälter zu qualifizieren. Für frühere Datumsbereiche waren diese Benutzer außerhalb des ausgewählten Datumsbereichs aktiv.
+* **[!UICONTROL Analysieren von Benutzenden, die das Startereignis im [Datumsintervall“ durchgeführt haben]]**: Wenn ein(e) Benutzende(r) innerhalb dieses Datumsbereichs mit dem Ereignis interagiert, werden sie in die Analyse einbezogen. Dieser Datumsbereich garantiert allen Benutzern genügend Zeit, um sich für alle Zeiträume zu qualifizieren. Dieser Datumsbereich kann sich von Ihrer Auswahl unterscheiden, wenn er nahe am aktuellen Tag liegt.
+* **[!UICONTROL Daten aus [Datumsintervall] sind reserviert, um die Analyse abzuschließen]**: Wenn ein(e) Benutzende(r) innerhalb dieses Zeitraums zum ersten Mal interagiert, werden sie **in die Analyse**. Für aktuelle Datumsbereiche hätten diese Benutzenden keine Möglichkeit, sich für alle Zeiträume zu qualifizieren. Für vergangene Datumsbereiche waren diese Benutzenden außerhalb des ausgewählten Datumsbereichs aktiv.
 
 <!--
 ## Example

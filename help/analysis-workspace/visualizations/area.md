@@ -4,7 +4,7 @@ title: Bereich und Bereich gestapelt
 feature: Visualizations
 exl-id: d9662b29-fc41-4074-8cf6-031202994ece
 role: User
-source-git-commit: 1dff53e244e5d231e7075ce087705e33e0978096
+source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
 workflow-type: tm+mt
 source-wordcount: '168'
 ht-degree: 32%
@@ -18,23 +18,23 @@ ht-degree: 32%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_area_button"
+>id="workspace_area_button"
 >title="Flächendiagramm"
 >abstract="Erstellen Sie eine Flächendiagrammvisualisierung, um die Schnittmenge mehrerer Metriken darzustellen."
 
 <!-- markdownlint-enable MD034 -->
 
 
-Die Visualisierung ![GraphArea](/help/assets/icons/GraphArea.svg) **[!UICONTROL Bereich]** ist wie ein Kantengraph, jedoch mit einem farbigen Bereich unterhalb der Linie. Fügen Sie ein Flächendiagramm hinzu, wenn Sie mehrere Metriken haben und den Bereich visualisieren möchten, der durch die Schnittmenge von zwei oder mehr Metriken ausgedrückt wird.
+Die ![GraphArea](/help/assets/icons/GraphArea.svg)**[!UICONTROL Area]**-Visualisierung ist wie ein Liniendiagramm, aber mit einem farbigen Bereich unterhalb der Linie. Fügen Sie ein Flächendiagramm hinzu, wenn Sie mehrere Metriken haben und das Gebiet visualisieren möchten, das durch die Schnittmenge aus zwei oder mehr Metriken ausgedrückt wird.
 
-![Flächenvisualisierung mit mehreren Metriken](assets/area.png)
+![Bereichsvisualisierung mit mehreren Metriken](assets/area.png)
 
 ## Bereich gestapelt {#area-stacked}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_areastacked_button"
+>id="workspace_areastacked_button"
 >title="Bereich gestapelt"
 >abstract="Erstellen Sie eine Flächendiagramm-Visualisierung, um die Stapelung mehrerer Metriken darzustellen."
 
@@ -43,11 +43,11 @@ Die Visualisierung ![GraphArea](/help/assets/icons/GraphArea.svg) **[!UICONTROL 
 
 
 
-Die Visualisierung ![GraphAreaStack](/help/assets/icons/GraphAreaStacked.svg) **[!UICONTROL Bereich gestapelt]** ist wie ein Bereich, aber jede Reihe beginnt oben in der vorherigen Reihe.
+Die ![GraphAreaStacked](/help/assets/icons/GraphAreaStacked.svg)Area **[!UICONTROL Stacked]**-Visualisierung ist wie ein Area, aber jede Serie beginnt am Anfang der vorherigen Serie.
 
-![Bereich gestapelt, der die einzelnen Serien oben in der vorherigen Serie anzeigt.](assets/area-stacked.png)
+![Bereich gestapelt, in dem jede Serie am Anfang der vorherigen Serie angezeigt wird.](assets/area-stacked.png)
 
-Verwenden Sie die Option **[!UICONTROL 100 % gestapelt]** in ![Einstellung](/help/assets/icons/Setting.svg) **[!UICONTROL Einstellungen]** , um das Diagramm in eine 100 % gestapelte Visualisierung umzuwandeln.
+Verwenden Sie die Option **[!UICONTROL 100 % gestapelt]** in ![Einstellung](/help/assets/icons/Setting.svg) **[!UICONTROL Einstellungen]**, um das Diagramm in eine 100 % gestapelte Visualisierung umzuwandeln.
 
 ![Bereich gestapelt mit einer 100 % gestapelten Visualisierung.](assets/area-stacked100.png)
 
@@ -55,5 +55,5 @@ Verwenden Sie die Option **[!UICONTROL 100 % gestapelt]** in ![Einstellung](/hel
 >
 >[Hinzufügen einer Visualisierung zu einem Bedienfeld](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
 >[Visualisierungseinstellungen](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
->[Kontextmenü &quot;Visualisierung&quot;](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
+>[Kontextmenü der Visualisierung](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
 >
