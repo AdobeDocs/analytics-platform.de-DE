@@ -4,9 +4,9 @@ description: Verwendung und Interpretation des Bedienfelds „Medien-Zielgruppen
 feature: Panels
 role: User, Admin
 exl-id: c55b5534-a9a6-47f1-8b43-c8c0b8686c53
-source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
+source-git-commit: 5121f0d395674ca3b9fed19278c5c0253354e9cc
 workflow-type: tm+mt
-source-wordcount: '1789'
+source-wordcount: '1787'
 ht-degree: 30%
 
 ---
@@ -34,7 +34,7 @@ ht-degree: 30%
 
 >[!NOTE]
 >
->Das Bedienfeld **[!UICONTROL Medien-Zielgruppendurchschnitt pro Minute]** ist nur für Kunden verfügbar, die das Add-on für Streaming-Mediensammlungen zum Customer Journey Analytics erworben haben.
+>Das Bedienfeld **[!UICONTROL Medien-Zielgruppendurchschnitt pro Minute]** steht nur Kunden zur Verfügung, die die Streaming-Mediensammlung zum Customer Journey Analytics erworben haben.
 >
 >Wenden Sie sich an Ihren Adobe-Kundenbetreuer oder Ihr Adobe-Kundenbetreuerteam, um weitere Informationen zu erhalten.
 >
@@ -62,8 +62,7 @@ So verwenden Sie ein Bedienfeld **[!UICONTROL Medien-Zielgruppendurchschnitt pro
 
 1. Erstellen Sie ein Bedienfeld **[!UICONTROL Medien-Zielgruppendurchschnitt pro Minute]**. Informationen zum Erstellen eines Bedienfelds finden Sie unter [Erstellen eines Bedienfelds](panels.md#create-a-panel).
 
-1. Stellen Sie sicher, dass Sie eine Datenansicht für das Bedienfeld auswählen, in dem Komponenten vom Add-on Streaming Media Collection konfiguriert sind.
-
+1. Stellen Sie sicher, dass Sie eine Datenansicht für das Bedienfeld auswählen, in dem Komponenten aus der Streaming-Mediensammlung konfiguriert sind.
 
 1. Legen Sie die [Eingabe](#panel-input) für das Bedienfeld fest.
 

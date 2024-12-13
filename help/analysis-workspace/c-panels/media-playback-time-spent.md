@@ -4,9 +4,9 @@ description: Verwendung und Interpretation des Panels „Bei Medienwiedergabe ve
 feature: Panels
 exl-id: de0fdbea-71f0-445b-a1e4-c7e895f142d4
 role: User
-source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
+source-git-commit: 5121f0d395674ca3b9fed19278c5c0253354e9cc
 workflow-type: tm+mt
-source-wordcount: '1128'
+source-wordcount: '1127'
 ht-degree: 56%
 
 ---
@@ -63,7 +63,7 @@ So verwenden Sie ein Bedienfeld **[!UICONTROL Mit Medienwiedergabe verbrachte Ze
 
 1. Erstellen Sie ein Bedienfeld **[!UICONTROL Mit Medienwiedergabe verbrachte Zeit]**. Informationen zum Erstellen eines Bedienfelds finden Sie unter [Erstellen eines Bedienfelds](panels.md#create-a-panel).
 
-1. Stellen Sie sicher, dass Sie eine Datenansicht für das Bedienfeld auswählen, in dem Komponenten vom Add-on Streaming Media Collection konfiguriert sind.
+1. Stellen Sie sicher, dass Sie eine Datenansicht für das Bedienfeld auswählen, in dem Komponenten aus der Streaming-Mediensammlung konfiguriert sind.
 
 1. Legen Sie die [Eingabe](#panel-input) für das Bedienfeld fest.
 

@@ -4,91 +4,91 @@ title: Journey-Arbeitsfläche
 feature: Visualizations
 role: User
 exl-id: be03c3b2-8faf-47b8-b3ab-e953202bf488
-source-git-commit: 820251833eae9fed1574a0010f726b0ba6e12cd1
+source-git-commit: 25969de61f23cf0690a130127fcc1442b9806a35
 workflow-type: tm+mt
-source-wordcount: '1654'
+source-wordcount: '1657'
 ht-degree: 1%
 
 ---
 
 # Überblick über die Journey-Arbeitsfläche
 
-Mit der Journey-Arbeitsflächenvisualisierung können Sie tief greifende Einblicke in die Journey erhalten, die Sie Ihren Benutzern und Kunden zur Verfügung stellen. Es ermöglicht Ihnen, eine Journey von Grund auf zu definieren oder eine von Journey Optimizer anzuzeigen, dann sehen Sie, wie die Menschen verlassen (fiel aus) oder weiter durch (fiel durch) die Journey.
+Die Journey-Arbeitsflächen-Visualisierung ermöglicht es Ihnen, die Journey zu analysieren und detaillierte Einblicke zu erhalten, die Sie Ihren Benutzenden und Kunden bieten. Damit können Sie eine Journey von Grund auf neu definieren oder eine von Journey Optimizer anzeigen und dann sehen, wie Personen die Journey verlassen (ausgefallen) oder weiter durchlaufen (durchgefallen) haben.
 
-Sie können [ Analysen von Journey erstellen, indem Sie eine beliebige Kombination aus Ereignissen, Dimensionselementen, Filtern und Datumsbereichen verwenden, um Journey-Knoten zu erstellen. ](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md) Verbinden Sie die Knoten, um den Journey zu erstellen, und schließen Sie mehrere Pfade und Entscheidungspunkte ein. Ziehen Sie Knoten auf die Arbeitsfläche, um die Ereignisse und Bedingungen der Journey neu anzuordnen. Daten werden bei Änderungen in Echtzeit aktualisiert.
+Sie können [Analysen von Benutzerereignissen erstellen](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md) indem Sie eine beliebige Kombination aus Journey, Dimensionselementen, Filtern und Datumsbereichen verwenden, um Journey-Knoten zu erstellen. Verbinden Sie die -Knoten, um den Journey-Fluss zu erstellen, und schließen Sie mehrere Pfade und Entscheidungspunkte ein. Ziehen Sie Knoten auf die Arbeitsfläche, um die Ereignisse und Bedingungen des Journey neu anzuordnen. Daten werden bei Änderungen in Echtzeit aktualisiert.
 
-[Knoten sind mit ](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md#logic-when-connecting-nodes) als &quot;letztendlichen Pfad&quot;verbunden. Das bedeutet, dass Besucher gezählt werden, solange sie sich schließlich von einem Knoten zum anderen bewegen, unabhängig von Ereignissen, die zwischen den beiden Knoten auftreten. Die Zeit, die Benutzern für das Verschieben entlang des Pfads zugewiesen wird, wird durch die Containereinstellung bestimmt.
+[Knoten sind ](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md#logic-when-connecting-nodes) „Eventueller Pfad“ verbunden, d. h. Besucher werden gezählt, solange sie letztendlich von einem Knoten zum anderen wechseln, unabhängig von Ereignissen, die zwischen den beiden Knoten auftreten. Die Zeit, die Benutzenden zum Verschieben auf dem Pfad zugewiesen wird, wird durch die Container-Einstellung bestimmt.
 
-![Journey canvas](assets/journey-canvas.png)
+![Journey-Arbeitsfläche](assets/journey-canvas.png)
 
 ## Wichtigste Funktionen
 
-Zu den wichtigsten Funktionen der Visualisierung der Journey-Arbeitsfläche gehören:
+Zu den wichtigsten Funktionen der Journey-Arbeitsflächen-Visualisierung gehören:
 
-* Tief greifende Analyse von Fallout und Fallthrough, die die komplexesten Journey-Benutzererlebnisse abdeckt.
+* Detaillierte Analyse der Fallout- und Fallthrough-Analyse, die auch die komplexesten Journey-Benutzerinnen und -Benutzer berücksichtigt.
 
-* Eine Arbeitsfläche zum Zuordnen und Visualisieren der verschiedenen Einstiegspunkte, Knoten und Pfade eines Journey-Benutzers.
+* Eine Arbeitsfläche zum Zuordnen und Visualisieren der verschiedenen Einstiegspunkte, Knoten und Pfade einer Journey.
 
-* Drag &amp; Drop von Interaktionen zum Hinzufügen von Komponenten zur Arbeitsfläche und zum Neupositionieren vorhandener Knoten.
+* Drag-and-Drop-Interaktionen zum Hinzufügen von Komponenten zur Arbeitsfläche und zum Neupositionieren vorhandener Knoten.
 
-* Die Option zum Erstellen von Analysen von Journey-Benutzern auf der Journey-Arbeitsfläche oder zum automatischen Erstellen dieser Analysen auf der Grundlage von Journey Optimizer-Journey.
+* Die Option, innerhalb der Journey-Arbeitsfläche Journey-Analysen zu erstellen oder diese automatisch auf der Grundlage von Journey Optimizer-Journey zu erstellen.
 
 ## Potenzielle Erkenntnisse
 
-Journey-Arbeitsfläche bietet umsetzbare Einblicke für die komplexesten Journey.
+Journey Canvas bietet umsetzbare Einblicke für die komplexesten Journey.
 
 ### Pfad mit der höchsten Konversionsrate {#conversion-rate-caption}
 
-Der auffälligste Einblick in die Journey-Arbeitsfläche wird als Beschriftung oben auf der Arbeitsfläche angezeigt.
+Der markanteste Einblick in die Journey-Leinwand wird oben auf der Leinwand selbst als Bildunterschrift angezeigt.
 
-Diese Beschriftung fasst zusammen, welche von allen Pfaden im Journey die höchste Konversionsrate aufwies.
+Diese Beschriftung fasst zusammen, welcher der Pfade auf der Journey die höchste Konversionsrate aufwies.
 
 Wenn die Journey mehrere Startknoten enthält, sieht die Beschriftung wie folgt aus:
 
-![Journey canvas insight caption](assets/journey-canvas-caption.png)
+![Journey Canvas Insight-Beschriftung](assets/journey-canvas-caption.png)
 
 Wenn die Journey einen einzelnen Startknoten enthält, sieht die Beschriftung wie folgt aus:
 
-![Journey canvas insight caption single start node](assets/journey-canvas-caption-singlestart.png)
+![Journey Canvas Insight-Beschriftung, einzelner Startknoten](assets/journey-canvas-caption-singlestart.png)
 
-Beachten Sie bei der Interpretation dieser Beschriftung Folgendes:
+Beachten Sie beim Interpretieren dieser Beschriftung Folgendes:
 
-* Ein _path_ wird als ein Startknoten definiert, der durch Pfeile mit einem Endknoten verbunden ist, wobei eine beliebige Anzahl von Knoten zwischen ihnen verbunden ist.
+* Ein _path_ wird als ein Startknoten definiert, der über Pfeile mit einem Endknoten verbunden ist, wobei eine beliebige Anzahl von Knoten zwischen ihnen verbunden ist.
 
-* Die Berechnung der Konversionsrate hängt vom Typ der Journey ab (die Anzahl der Start- und Endknoten im Journey sowie davon, ob sich die Pfade zwischen ihnen überschneiden).
+* Die Berechnung der Konversionsrate hängt vom Typ des Journey ab (die Anzahl der Start- und Endknoten in der Journey und ob sich die Pfade zwischen ihnen schneiden).
 
-  In der folgenden Tabelle wird beschrieben, wie Konversionsraten basierend auf dem Journey-Typ berechnet werden:
+  Die folgende Tabelle beschreibt, wie die Konversionsraten anhand des Journey-Typs berechnet werden:
 
-  | Journey-Typ | Berechnung der Konversionsrate | Beispiel |
+  | Journey-Typ | Berechnung des Umrechnungskurses | Beispiel |
   |---------|----------|---------|
-  | **Ein einzelner Startknoten und ein einzelner Endknoten** | Die Konversionsrate wird berechnet, indem die Zahl des Endknotens durch die des Anfangsknotens geteilt wird. | ![Journey mit mehreren Beginns, die in einen gemeinsamen Knoten konvertieren](assets/journey-canvas-single-path.png) |
-  | **Ein einzelner Startknoten und mehrere Endknoten** | Die Konversionsrate wird berechnet, indem der Endknoten mit der höchsten Zahl ermittelt und durch den Anfangsknoten geteilt wird. | ![Journey mit mehreren Beginns, die in einen gemeinsamen Knoten konvertieren](assets/journey-canvas-singlestart-multiend.png) |
-  | **Mehrere eigenständige Pfade mit jedem Pfad, der einen einzelnen Startknoten und einen einzelnen Endknoten enthält** | Die Konversionsrate wird berechnet, indem die Zahl des Endknotens durch die des Anfangsknotens geteilt wird. Der Pfad mit der höchsten Konversionsrate wird in der Beschriftung beschrieben. | ![Journey mit mehreren Beginns, die in einen gemeinsamen Knoten konvertieren](assets/journey-canvas-multi-start-separate.png) |
-  | **Mehrere Startknoten, die an einem beliebigen Punkt im Journey in einen gemeinsamen Knoten konvertieren** | Die Konversionsrate wird berechnet, indem der Endknoten mit der höchsten Nummer ermittelt und durch die Division der Nummer durch die des Anfangsknotens mit der niedrigsten Nummer geteilt wird. | ![Journey mit mehreren Beginns, die in einen gemeinsamen Knoten konvertieren](assets/journey-canvas-multi-start-converge.png) |
+  | **Ein einzelner Start- und ein einzelner Endknoten** | Die Konversionsrate wird berechnet, indem die Zahl des Endknotens durch die Zahl des Startknotens dividiert wird. | ![Journey mit mehreren Starts, die zu einem gemeinsamen Knoten konvergieren](assets/journey-canvas-single-path.png) |
+  | **Ein einzelner Start- und mehrere Endknoten** | Die Konversionsrate wird berechnet, indem der Endknoten mit der höchsten Zahl gefunden und durch die Zahl des Startknotens dividiert wird. | ![Journey mit mehreren Starts, die zu einem gemeinsamen Knoten konvergieren](assets/journey-canvas-singlestart-multiend.png) |
+  | **Mehrere eigenständige Pfade, wobei jeder Pfad einen einzelnen Start- und einen einzelnen Endknoten enthält** | Die Konversionsrate wird berechnet, indem die Zahl des Endknotens durch die Zahl des Startknotens dividiert wird. Der Pfad mit der höchsten Konversionsrate wird in der Beschriftung beschrieben. | ![Journey mit mehreren Starts, die zu einem gemeinsamen Knoten konvergieren](assets/journey-canvas-multi-start-separate.png) |
+  | **Mehrere Startknoten, die zu einem beliebigen Zeitpunkt im Journey zu einem gemeinsamen Knoten zusammenlaufen** | Die Konversionsrate wird berechnet, indem der Endknoten mit der höchsten Zahl gefunden und durch die Zahl des Startknotens mit der niedrigsten Zahl dividiert wird. | ![Journey mit mehreren Starts, die zu einem gemeinsamen Knoten konvergieren](assets/journey-canvas-multi-start-converge.png) |
 
 ### Fallthrough, Fallout und mehr
 
-Im Folgenden finden Sie einige Beispiele für weitere Einblicke, die Journey-Arbeitsfläche bieten kann. Sie können auswählen, ob diese Einblicke auf allen Personen in der Datenansicht, allen Personen, die die Journey gestartet haben, oder allen Personen aus dem vorherigen Knoten der Journey basieren.
+Im Folgenden finden Sie einige Beispiele für weitere Einblicke, die Journey-Arbeitsfläche bieten kann. Sie können auswählen, ob diese Einblicke auf allen Personen in der Datenansicht, allen Personen, die den Journey gestartet haben, oder allen Personen aus dem vorherigen Knoten des Journey basieren.
 
 #### Fall-through (Verbleib)
 
-* Anzahl und Prozentsatz der Personen, die die Journey abgeschlossen haben (am Endknoten angekommen)
+* Die Anzahl und der Prozentsatz der Personen, die die Journey abgeschlossen haben (am Endknoten angekommen)
 
-* Anzahl und Prozentsatz der Personen, die zu einem bestimmten Knoten der Journey gelangt sind
+* Die Anzahl und der Prozentsatz der Personen, die an einem bestimmten Knoten des Journey angekommen sind
 
-* Der häufigste Schritt, der nach oder vor einem bestimmten Knoten der Journey erfolgte
+* Der häufigste Schritt, der nach oder vor einem bestimmten Knoten des Journey erfolgte
 
 #### Fallout
 
-* Die Knoten der Journey, wo die Leute am häufigsten aus der Journey herausgefallen sind (sie kamen nie an einem der unmittelbar nächsten Knoten an)
+* Die Knoten des Journey, an denen die Personen am häufigsten aus dem Journey gefallen sind (kamen nie an einem der unmittelbar nächsten Knoten an)
 
 #### Zusätzliche Daten für jeden Knoten
 
-* Fügen Sie auf einem beliebigen Knoten der Journey eine Aufschlüsselungsdimension hinzu, um zusätzliche Daten für diesen Knoten anzuzeigen
+* Fügen Sie für jeden Knoten des Journey eine Aufschlüsselungsdimension hinzu, um zusätzliche Daten für diesen bestimmten Knoten anzuzeigen
 
-## Wählen Sie zwischen Journey-Arbeitsfläche, Fallout- oder Fluss-Visualisierungen
+## Wählen Sie zwischen Journey-Arbeitsfläche, Fallout oder Fluss -Visualisierungen
 
-Die Visualisierung der Journey-Arbeitsfläche weist Ähnlichkeiten mit der [Fallout-Visualisierung](/help/analysis-workspace/visualizations/fallout/fallout-flow.md) und der [Flussvisualisierung](/help/analysis-workspace/visualizations/c-flow/flow.md) auf, allerdings mit wichtigen Unterschieden.
+Die Journey-Arbeitsflächen-Visualisierung weist Ähnlichkeiten mit der [Fallout](/help/analysis-workspace/visualizations/fallout/fallout-flow.md) und der [Flow-Visualisierung](/help/analysis-workspace/visualizations/c-flow/flow.md) auf, jedoch mit wichtigen Unterschieden.
 
 ### Unterschiede verstehen
 
@@ -98,110 +98,110 @@ Die Visualisierung der Journey-Arbeitsfläche weist Ähnlichkeiten mit der [Fall
 
 ### Verwendung der Journey-Arbeitsfläche
 
-Journey-Arbeitsfläche ist für Folgendes unerlässlich:
+Journey Canvas ist wichtig für:
 
 * Fallout-Analyse mit Journey mit mehreren Einstiegspunkten und Pfaden.
 
-* Nicht lineare Journey mit mehreren Einstiegspunkten und Pfaden mit einer vordefinierten Seitensequenz.
+* Nichtlineare Journey mit mehreren Einstiegspunkten und Pfaden mit einer vordefinierten Seitensequenz.
 
-* Sondierende Ad-hoc-Analysen, die auf einer vordefinierten Journey basieren.
+* Explorative Ad-hoc-Analyse, die auf einem vordefinierten Journey basiert.
 
-* Analyse, für die eine andere primäre Metrik als Sitzung, Person oder Ereignisse erforderlich ist.
+* Analyse, für die eine andere primäre Metrik als Sitzung, Person oder Vorfälle erforderlich ist.
 
-* Detaillierte Analyse der Journey aus Adobe Journey Optimizer.
+* Detaillierte Analyse der Journey, die ihren Ursprung in Adobe Journey Optimizer haben.
 
-Verwenden Sie [die obige Tabelle](#understand-the-differences), um die Unterschiede zwischen Journey-Arbeitsfläche, Trichteranalyse und Flussvisualisierungen zu verstehen.
+Verwenden Sie [die obige ](#understand-the-differences)), um die Unterschiede zwischen Journey-Arbeitsfläche-, Fallout- und Fluss -Visualisierungen zu verstehen.
 
-## Journey Optimizer-Journey analysieren
+## Analysieren von Journey Optimizer Journey
 
 >[!NOTE]
 >
->Wenn Ihr Unternehmen keinen Zugriff auf Journey Optimizer hat, können Sie weiterhin [Analysen in der Journey-Arbeitsfläche](#build-analyses-in-customer-journey-analytics) erstellen.
+>Wenn Ihr Unternehmen keinen Zugriff auf Journey Optimizer hat, können Sie weiterhin [Analysen auf der Journey-Arbeitsfläche erstellen](#build-analyses-in-customer-journey-analytics).
 
-Die Analyse von Journey Optimizer-Journey in der Journey-Arbeitsfläche bietet tiefe, umsetzbare Einblicke in die Interaktion der Menschen mit einer Journey.
+Das Analysieren von Journey Optimizer-Journey auf der Journey-Arbeitsfläche bietet vertiefte, umsetzbare Einblicke in die Interaktion von Personen mit einer Journey.
 
-Wenn Sie eine Journey Optimizer-Journey auf der Journey-Arbeitsfläche analysieren, wird die Journey mit der gleichen Reihenfolge, Sequenz und Struktur angezeigt wie in Journey Optimizer. Wenn Sie Änderungen an einer Journey in der Journey-Arbeitsfläche vornehmen können, werden [Änderungen nicht mehr von Journey Optimizer](#synchronization-between-journey-optimizer-and-journey-canvas) synchronisiert.
+Wenn Sie eine Journey Optimizer-Journey auf der Journey-Arbeitsfläche analysieren, wird die Journey in der gleichen Reihenfolge, Reihenfolge und Struktur angezeigt wie in Journey Optimizer. Wenn Sie wesentliche Änderungen an einer Journey auf der Journey-Arbeitsfläche vornehmen, [werden Änderungen nicht mehr von Journey Optimizer synchronisiert](#synchronization-between-journey-optimizer-and-journey-canvas).
 
-### Vorteile der Analyse von Journey Optimizer-Journey mit Journey-Arbeitsfläche
+### Vorteile der Analyse von Journey Optimizer Journey mit Journey Canvas
 
-Journey-Arbeitsfläche bietet eine tiefgründige Analyse, die in Journey Optimizer nicht möglich ist.
+Journey Canvas bietet eine gründliche Analyse, die in Journey Optimizer nicht möglich ist.
 
-Die Verwendung der Journey-Arbeitsfläche zur Analyse von Journey, die in Journey Optimizer erstellt wurden, bietet verschiedene Vorteile:
+Die Verwendung der Journey-Arbeitsfläche zur Analyse von Journey , die in Journey Optimizer erstellt wurden, bietet verschiedene Vorteile:
 
-* Erstellen Sie Customer Journey Analytics-Ereignisse mit beliebigen Dimensionen, Metriken, Filtern oder Datumsbereichen.
+* Erstellen Sie Ereignisse mithilfe von Customer Journey Analytics-Dimensionen, -Metriken, -Filtern oder -Datumsbereichen.
 
   In Journey Optimizer muss ein technischer Anwender ein Ereignis erstellen, bevor es zu einer Journey hinzugefügt werden kann.
 
-* Erstellen Sie Zielgruppen basierend auf einem benutzerdefinierten Knoten, den Sie erstellen (startet den Customer Journey Analytics-Audience-Builder).
+* Erstellen Sie Zielgruppen basierend auf einem benutzerdefinierten Knoten, den Sie erstellen (startet den Customer Journey Analytics-Zielgruppen-Builder).
 
   In Journey Optimizer können Sie Zielgruppen nur für vordefinierte Aktivitäten erstellen.
 
-* Fallthrough und Fallout analysieren
+* Analyse von Fallthrough und Fallout
 
 * Aufschlüsseln von Ereignissen mit einer beliebigen Dimension
 
-* Ereignisse kombinieren
+* Kombinieren von Ereignissen
 
 * Ereignisse verbinden
 
 * Ereignisse umbenennen und löschen
 
-* Mehr
+* Viel mehr
 
 ### Synchronisation zwischen Journey Optimizer und Journey-Arbeitsfläche
 
-Nachdem Sie eine Analyse einer Journey Optimizer-Journey auf der Journey-Arbeitsfläche erstellt haben, werden die Daten nur in eine Richtung synchronisiert, von Journey Optimizer auf die Journey-Arbeitsfläche. Das bedeutet, dass Änderungen an einer Journey in der Journey-Arbeitsfläche nie in Journey Optimizer übernommen werden.
+Nachdem Sie eine Analyse einer Journey Optimizer-Journey auf der Journey-Arbeitsfläche erstellt haben, werden die Daten nur in eine Richtung synchronisiert, von Journey Optimizer zur Journey-Arbeitsfläche. Das bedeutet, dass Änderungen, die an einer Journey auf der Journey-Arbeitsfläche vorgenommen werden, nie in Journey Optimizer übernommen werden.
 
-Darüber hinaus werden Änderungen an einer Journey in Journey Optimizer nur dann mit der Journey-Arbeitsfläche synchronisiert, wenn die Journey in der Journey-Arbeitsfläche unverändert bleibt. Nachdem Sie eine Journey in der Journey-Arbeitsfläche geändert haben, werden alle Änderungen, die Sie an der Journey in Journey Optimizer vornehmen, nicht in der Journey-Arbeitsfläche angezeigt. Um die Änderungen auf der Journey-Arbeitsfläche zu sehen, können Sie die Journey in der Journey-Arbeitsfläche ](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md) löschen und [neu erstellen.
+Darüber hinaus werden Änderungen an einer Journey in Journey Optimizer mit der Journey-Arbeitsfläche synchronisiert [nur wenn die Journey auf der Journey-Arbeitsfläche nicht wesentlich geändert wurde](#differences-after-modifying-a-journey-in-journey-canvas). Nachdem Sie eine Journey auf der Journey-Arbeitsfläche geändert haben, werden alle Änderungen, die Sie an der Journey in Journey Optimizer vornehmen, nicht auf der Journey-Arbeitsfläche angezeigt. Um die Änderungen auf der Journey-Arbeitsfläche anzuzeigen, können Sie die Journey löschen und [in der Journey-Arbeitsfläche neu erstellen](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md).
 
-### Unterschiede nach der Änderung einer Journey in der Journey-Arbeitsfläche {#differences-after-modifying}
+### Unterschiede nach dem Ändern einer Journey auf der Journey-Arbeitsfläche {#differences-after-modifying}
 
 Nachdem Sie eine Journey Optimizer-Journey in der Journey-Arbeitsfläche geändert haben, können Änderungen an der Datenverarbeitung, den verfügbaren Funktionen und dem Synchronisierungsverhalten auftreten.
 
-Wenn Sie eine wesentliche Änderung an einer Journey Optimizer-Journey auf der Journey-Arbeitsfläche vornehmen, können Änderungen an der Datenverarbeitung, den verfügbaren Funktionen und dem Synchronisierungsverhalten auftreten. Eine wesentliche Änderung umfasst eine der folgenden Aspekte:
+Wenn Sie eine wesentliche Änderung an einer Journey Optimizer-Journey auf der Journey-Arbeitsfläche vornehmen, können Änderungen an der Datenverarbeitung, den verfügbaren Funktionen und dem Synchronisierungsverhalten auftreten. Eine wesentliche Änderung umfasst eine der folgenden:
 
 * Knoten hinzufügen oder entfernen
 
 * Hinzufügen oder Entfernen eines Pfeils zwischen Knoten
 
-* Komponenten auf einem Knoten ändern
+* Ändern von Komponenten auf einem Knoten
 
-Wenn Sie andere Änderungen an einer Journey Optimizer-Journey auf der Journey-Arbeitsfläche vornehmen, z. B. das Ziehen eines Knotens oder das Hinzufügen einer Aufschlüsselung, gelten die in den folgenden Abschnitten beschriebenen Unterschiede nicht.
+Wenn Sie andere Änderungen an einer Journey Optimizer-Journey auf der Journey-Arbeitsfläche vornehmen, z. B. einen Knoten ziehen oder eine Aufschlüsselung hinzufügen, gelten die in den folgenden Abschnitten beschriebenen Unterschiede nicht.
 
 >[!NOTE]
 >
->Um den Originalzustand der Journey wiederherzustellen, können Sie Strg+Z drücken, nachdem Sie Ihre erste Änderung in der Journey-Arbeitsfläche vorgenommen haben. Oder Sie können die Journey in der Journey-Arbeitsfläche ](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md) löschen und [neu erstellen
+>Um die Journey in den Originalzustand zurückzuversetzen, drücken Sie Strg+Z, nachdem Sie Ihre erste Änderung auf der Journey-Arbeitsfläche vorgenommen haben. Alternativ können Sie die Journey löschen und [auf der Journey-Arbeitsfläche neu erstellen](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md)
 
-#### Datenverarbeitungsunterschiede
+#### Unterschiede bei der Datenverarbeitung
 
-Nachdem Sie eine Journey Optimizer-Journey auf der Journey-Arbeitsfläche geändert haben, werden Sie möglicherweise Änderungen an Ihren Daten bemerken, wenn Ihre Journey Metriken enthält, die nicht standardmäßige Attributionsmodelle aufweisen.
+Nachdem Sie eine Journey Optimizer-Journey auf der Journey-Arbeitsfläche geändert haben, werden Sie möglicherweise Änderungen an Ihren Daten feststellen, wenn Ihre Journey Metriken enthält, die nicht standardmäßige Attributionsmodelle aufweisen.
 
-Dies liegt daran, dass Sie im Gegensatz zu Journey Optimizer mit der Journey-Arbeitsfläche mehrere Dimensionen innerhalb einer Journey anwenden können. Diese Funktion bedeutet, dass die [Metrikzuordnung](/help/data-views/component-settings/attribution.md) nicht unterstützt wird.
+Dies liegt daran, dass Sie im Gegensatz zu Journey Optimizer mit der Journey-Arbeitsfläche mehrere Dimensionen auf eine Journey anwenden können. Diese Funktion bedeutet, dass [Metrikattribution](/help/data-views/component-settings/attribution.md) nicht unterstützt wird.
 
 #### Funktionsunterschiede
 
-Nachdem Sie eine Journey Optimizer-Journey auf der Arbeitsfläche &quot;Journey&quot;geändert haben, ändern sich die Optionen, die im Dropdown-Feld [!UICONTROL **Pfeileinstellungen**] verfügbar sind, je nach Ihren Änderungen. Weitere Informationen finden Sie unter [Einstellungen konfigurieren](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md).
+Nachdem Sie eine Journey Optimizer-Journey auf der Journey-Arbeitsfläche geändert haben, ändern sich je nach Ihren Änderungen die Optionen, [!UICONTROL **in der**] „Pfeileinstellungen“ verfügbar sind. Weitere Informationen finden Sie unter [Konfigurieren von Einstellungen](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md).
 
-Das Feld [!UICONTROL **Knotentyp**] ist nur in Journey Optimizer verfügbar. Sie ist nicht verfügbar, wenn Sie eine Journey Optimizer-Journey auf der Journey-Arbeitsfläche anzeigen, unabhängig davon, ob Sie Änderungen an der Journey auf der Journey-Arbeitsfläche vornehmen.
+Das [!UICONTROL **Knotentyp**]-Feld ist nur in Journey Optimizer verfügbar. Sie ist nicht verfügbar, wenn Sie eine Journey Optimizer-Journey auf der Journey-Arbeitsfläche anzeigen, unabhängig davon, ob Sie Änderungen an der Journey auf der Journey-Arbeitsfläche vornehmen oder nicht.
 
-#### Unterschiede bei der Synchronisierung
+#### Synchronisationsunterschiede
 
-Änderungen, die an einer Journey in der Journey Optimizer-Arbeitsfläche vorgenommen wurden, werden nur dann mit der Journey-Arbeitsfläche synchronisiert, wenn die Journey in der Journey-Arbeitsfläche unverändert bleibt.
+Änderungen an einer Journey in Journey Optimizer werden nur dann mit der Journey-Arbeitsfläche synchronisiert, wenn die Journey auf der Journey-Arbeitsfläche unverändert bleibt.
 
-Nachdem Sie eine Journey Optimizer-Journey in der Journey-Arbeitsfläche geändert haben, werden alle Änderungen, die Sie an der Journey in Journey Optimizer vornehmen, nicht in der Arbeitsfläche zum Journey dargestellt. Um die Änderungen auf der Journey-Arbeitsfläche zu sehen, können Sie die Journey in der Journey-Arbeitsfläche ](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md) löschen und [neu erstellen.
+Nachdem Sie eine Journey Optimizer-Journey auf der Journey-Arbeitsfläche geändert haben, werden alle Änderungen, die Sie an der Journey in Journey Optimizer vornehmen, nicht auf der Journey-Arbeitsfläche angezeigt. Um die Änderungen auf der Journey-Arbeitsfläche anzuzeigen, können Sie die Journey löschen und [in der Journey-Arbeitsfläche neu erstellen](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md).
 
-### Terminologieunterschiede zwischen Journey Optimizer und Customer Journey Analytics
+### Terminologische Unterschiede zwischen Journey Optimizer und Customer Journey Analytics
 
-Bestimmte Begriffe, die eine Sache in Journey Optimizer bedeuten, bedeuten etwas Anderes im Customer Journey Analytics. Bei Verwendung der Journey-Arbeitsfläche werden die Customer Journey Analytics-Begriffe verwendet.
+Bestimmte Begriffe, die in Journey Optimizer etwas bedeuten, bedeuten etwas Anderes im Customer Journey Analytics. Bei Verwendung der Journey-Arbeitsfläche werden die Customer Journey Analytics-Begriffe verwendet.
 
 | Begriff | Journey-Arbeitsfläche | Journey Optimizer |
 |---------|----------|---------|
-| **Ereignis** | Eine von mehreren Standardmetriken, die in Customer Journey Analytics verfügbar sind. Diese Metrik zählt Dinge wie Umsatz, Abonnements oder generierte Leads. | Die Aktivitätskategorie, die eine personalisierte Journey Trigger, z. B. einen Online-Kauf. |
+| **Ereignis** | Eine von mehreren Standardmetriken, die im Customer Journey Analytics verfügbar sind. Diese Metrik zählt Dinge wie Umsatz, Abonnements oder generierte Leads. | Die Aktivitätskategorie, in der ein personalisierter Journey Trigger wird, z. B. ein Online-Kauf. |
 
-### Analysieren einer Journey Optimizer-Journey in der Journey-Arbeitsfläche
+### Analysieren einer Journey Optimizer-Journey auf der Journey-Arbeitsfläche
 
-Informationen zum Analysieren einer Journey Optimizer-Journey in der Journey-Arbeitsfläche finden Sie unter [Konfigurieren einer Visualisierung der Journey-Arbeitsfläche](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md).
+Informationen zum Analysieren einer Journey Optimizer-Journey auf der Journey-Arbeitsfläche finden Sie unter [Konfigurieren einer Journey-Arbeitsfläche](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md).
 
-## Erstellen von Analysen in der Journey-Arbeitsfläche
+## Erstellen von Analysen auf der Journey-Arbeitsfläche
 
-Sie können Analysen in der Journey-Arbeitsfläche erstellen, die auf beliebigen Dimensionen oder Metriken basieren, die in Analysis Workspace verfügbar sind. Sie können auch Journey analysieren, die in Journey Optimizer erstellt wurden. Weitere Informationen finden Sie unter [Konfigurieren einer Journey-Arbeitsflächenvisualisierung](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md).
+Sie können Analysen auf der Journey-Arbeitsfläche erstellen, die auf allen in Analysis Workspace verfügbaren Dimensionen oder Metriken basieren. Sie können auch Journey analysieren, die in Journey Optimizer erstellt wurden. Weitere Informationen finden Sie unter [Konfigurieren einer Journey-Arbeitsflächen-](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md).

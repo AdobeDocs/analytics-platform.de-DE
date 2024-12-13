@@ -4,9 +4,9 @@ description: Verwendung und Interpretation des Bedienfelds „Gleichzeitige Medi
 feature: Panels
 exl-id: a442fb9c-165f-4136-95e2-ce92b9280c25
 role: User
-source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
+source-git-commit: 5121f0d395674ca3b9fed19278c5c0253354e9cc
 workflow-type: tm+mt
-source-wordcount: '1208'
+source-wordcount: '1207'
 ht-degree: 47%
 
 ---
@@ -61,7 +61,7 @@ So verwenden Sie ein Bedienfeld **[!UICONTROL Gleichzeitige Medienbetrachter]**:
 
 1. Erstellen Sie ein Bedienfeld **[!UICONTROL Gleichzeitige Medienbetrachter]**. Informationen zum Erstellen eines Bedienfelds finden Sie unter [Erstellen eines Bedienfelds](panels.md#create-a-panel).
 
-1. Stellen Sie sicher, dass Sie eine Datenansicht für das Bedienfeld auswählen, in dem Komponenten vom Add-on Streaming Media Collection konfiguriert sind.
+1. Stellen Sie sicher, dass Sie eine Datenansicht für das Bedienfeld auswählen, in dem Komponenten aus der Streaming-Mediensammlung konfiguriert sind.
 
 1. Legen Sie die [Eingabe](#panel-input) für das Bedienfeld fest.
 
