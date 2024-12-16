@@ -5,10 +5,10 @@ exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: 7b51f9c0699a07051936e6e6ca493688d59e624e
-workflow-type: ht
-source-wordcount: '3747'
-ht-degree: 100%
+source-git-commit: 3a0c6c22422ca7f8d4f954f3d9711c5c3501cc03
+workflow-type: tm+mt
+source-wordcount: '3769'
+ht-degree: 97%
 
 ---
 
@@ -204,8 +204,6 @@ Wenden Sie sich an Ihre Admins, wenn Sie sich nicht sicher sind, welches Custome
 
 <!-- markdownlint-enable MD034 -->
 
-
-
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
@@ -232,6 +230,16 @@ Wenden Sie sich an Ihre Admins, wenn Sie sich nicht sicher sind, welches Custome
 >abstract="Mit dieser Option wird der Datensatz so transformiert, dass er für personenbezogene Suchvorgänge in B2B-Szenarien verwendet werden kann. Sobald diese Option aktiviert ist, ist die Transformation des Datensatzes nicht mehr umkehrbar."
 
 <!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_connection_connectionmap"
+>title="Verbindungs-Map"
+>abstract="Die Verbindungszuordnung visualisiert die Beziehungen zwischen Ereignis-, Personen-, Konto- und relevanten Lookup-Datensätzen (wie Opportunities, Kampagnenmitgliedern und mehr)."
+
+<!-- markdownlint-enable MD034 -->
+
 
 Mit dem neuen Workflow können Sie beim Erstellen einer Verbindung einen Experience Platform-Datensatz hinzufügen.
 
@@ -310,7 +318,7 @@ Es gibt verschiedene Datensatztypen: [!UICONTROL Ereignis]-, [!UICONTROL Profil]
 | Typ des Datensatzes | Beschreibung | Zeitstempel | Schema | Personen-ID |
 |---|---|---|---|---|
 | **[!UICONTROL Ereignis]** | Daten, die Ereignisse im Laufe der Zeit darstellen. Beispiele hierfür sind Web-Besuche, Interaktionen, Transaktionen, PoS-Daten, Umfragedaten, Ad-Impression-Daten usw. Diese Daten können etwa typische Clickstream-Daten mit einer Kunden- oder Cookie-ID und einem Zeitstempel sein. Bei Ereignisdaten können Sie entscheiden, welche ID als Personen-ID verwendet wird. | Wird automatisch auf das standardmäßige Zeitstempelfeld von ereignisbasierten Schemata in [!UICONTROL Experience Platform] gesetzt. | Jedes integrierte oder benutzerdefinierte Schema, das auf einer XDM-Klasse mit dem Verhalten „Zeitreihen“ basiert. Beispiele sind „XDM-Erlebnisereignis“ oder „XDM-Entscheidungsereignis“. | Sie können auswählen, welche Personen-ID Sie einbeziehen möchten. Für jedes in Experience Platform definierte Datensatzschema kann ein eigener Satz von einer oder mehreren Identitäten definiert und mit einem Identity-Namespace verknüpft werden. Jede dieser Identitäten kann als Personen-ID verwendet werden. Beispiele sind Cookie-ID, zugeordnete ID, Benutzer-ID und Trackingcode. |
-| **[!UICONTROL Suche]** | Sie können Datensätze als Suchvorgänge von Feldern in allen Datensatztypen hinzufügen: Profil-, Lookup- und Ereignisdatensätze. (Letztere wurden immer unterstützt.) Diese zusätzliche Funktion erweitert die Fähigkeit von Customer Journey Analytics, komplexe Datenmodelle, einschließlich B2B, zu unterstützen. Diese Daten werden verwendet, um nach Werten oder Schlüsseln in Ihren Ereignis-, Profil- oder Suchdaten zu suchen. Sie können bis zu zwei Ebenen von Suchvorgängen hinzufügen. (Beachten Sie Folgendes: [Abgeleitete Felder](/help/data-views/derived-fields/derived-fields.md) können nicht als übereinstimmende Schlüssel für Suchvorgänge in Verbindungen verwendet werden.) Beispielsweise können Sie Suchdaten hochladen, die numerische IDs in Ihren Ereignisdaten den Produktnamen zuordnen. Sehen Sie sich hierfür das [B2B-Beispiel](/help/use-cases/b2b/example.md) an. | -/- | Jedes integrierte oder benutzerdefinierte Schema, das auf einer XDM-Klasse mit dem Verhalten „Eintrag“ basiert, mit Ausnahme der Klasse „XDM-Individuelles Profil“. | -/- |
+| **[!UICONTROL Suche]** | Sie können Datensätze als Suchvorgänge von Feldern in allen Datensatztypen hinzufügen: Profil-, Lookup- und Ereignisdatensätze. (Letztere wurden immer unterstützt.) Diese zusätzliche Funktion erweitert die Fähigkeit von Customer Journey Analytics, komplexe Datenmodelle, einschließlich B2B, zu unterstützen. Diese Daten werden verwendet, um nach Werten oder Schlüsseln in Ihren Ereignis-, Profil- oder Suchdaten zu suchen. Sie können bis zu zwei Ebenen von Suchvorgängen hinzufügen. (Beachten Sie, [Abgeleitete Felder](/help/data-views/derived-fields/derived-fields.md) nicht als übereinstimmende Schlüssel für die Suche in Verbindungen verwendet werden können.) Sie können beispielsweise Suchdaten hochladen, die numerische IDs in Ihren Ereignisdaten Produktnamen zuordnen. Sehen Sie sich hierfür das [B2B-Beispiel](/help/use-cases/b2b/example.md) an. | -/- | Jedes integrierte oder benutzerdefinierte Schema, das auf einer XDM-Klasse mit dem Verhalten „Eintrag“ basiert, mit Ausnahme der Klasse „XDM-Individuelles Profil“. | -/- |
 | **[!UICONTROL Profil]** | Daten, die auf Personen, Benutzende oder Kundinnen bzw. Kunden in den [!UICONTROL Ereignisdaten] angewendet werden. Sie können beispielsweise CRM-Daten zu Ihren Kunden hochladen. | -/- | Jedes integrierte oder benutzerdefinierte Schema, das auf der Klasse „XDM-Individuelles Profil“ basiert. | Sie können auswählen, welche Personen-ID Sie einbeziehen möchten. Jeder Datensatz (ausgenommen Zusammenfassungsdatensätze), der in [!DNL Experience Platform] definiert ist, verfügt über einen eigenen Satz von einer oder mehreren definierten Personen-IDs. Beispiele sind Cookie-ID, zugeordnete ID, Benutzer-ID, Trackingcode usw.<br>![Personen-ID ](assets/person-id.png)**Hinweis**: Wenn Sie eine Verbindung erstellen, die Datensätze mit unterschiedlichen IDs enthält, spiegelt sich dies in der Berichterstattung wider. Um Datensätze zusammenzuführen, müssen Sie dieselbe Personen-ID verwenden. |
 | **Zusammenfassung** | Zeitreihendaten, die nicht an eine einzelne Personen-ID gebunden sind. Zusammenfassungsdaten stellen aggregierte Daten auf einer anderen Aggregationsebene dar, z. B. Kampagnen. Sie können diese Daten im Customer Journey Analytics verwenden, um verschiedene Anwendungsfälle zu unterstützen. Weitere Informationen finden Sie [Zusammenfassungsdaten](/help/data-views/summary-data.md). | Wird automatisch auf das standardmäßige Zeitstempelfeld von ereignisbasierten Schemata des Typs „Zusammenfassungsmetriken“ in Experience Platform gesetzt. Es wird nur die Granularität „Stündlich“ oder „Täglich“ unterstützt. | Jedes integrierte oder benutzerdefinierte Schema, das auf der Klasse „XDM-Zusammenfassungsmetriken“ basiert. | -/- |
 
@@ -341,7 +349,7 @@ Wenn Sie Identity Map auswählen, erhalten Sie zwei zusätzliche Konfigurationso
 | Option | Beschreibung |
 |---|---|
 | **[!UICONTROL Primären ID-Namespace verwenden]** | Mit dieser Option wird Customer Journey Analytics angewiesen, nach der Identität in der Identitätszuordnung zu suchen, die mit dem Attribut `primary=true` markiert ist, und diese Identität als Personen-ID für die entsprechende Zeile zu verwenden. Diese Identität ist der Primärschlüssel, der in Experience Platform für die Partitionierung verwendet wird. Sie ist auch der Hauptkandidat für die Customer Journey Analytics-Personen-ID (je nachdem, wie der Datensatz in einer Customer Journey Analytics-Verbindung konfiguriert ist). |
-| **[!UICONTROL Namespace]** | (Diese Option ist nur verfügbar, wenn Sie den primären Identity-Namespace nicht verwenden.) Identity-Namespaces sind eine Komponente von [Experience Platform Identity Service](https://experienceleague.adobe.com/de/docs/experience-platform/identity/features/namespaces). Namespaces dienen als Indikatoren für den Kontext, auf den sich eine Identität bezieht. Wenn Sie einen Namespace angeben, sucht Customer Journey Analytics in der Identitätszuordnung jeder Zeile nach diesem Namespace-Schlüssel und verwendet die Identität unter diesem Namespace als Personen-ID für die entsprechende Zeile. Da Customer Journey Analytics nicht alle Zeilen in einem Datensatz durchsuchen kann, um festzustellen, welche Namespaces vorhanden sind, werden alle möglichen Namespaces in der Dropdown-Liste angezeigt. Sie müssen wissen, welche Namespaces in den Daten angegeben sind. Diese Namespaces werden nicht automatisch erkannt. |
+| **[!UICONTROL Namespace]** | (Diese Option ist nur verfügbar, wenn Sie den Primären ID-Namespace nicht verwenden.) Identity-Namespaces sind eine Komponente des [Experience Platform Identity Service](https://experienceleague.adobe.com/de/docs/experience-platform/identity/features/namespaces). Namespaces dienen als Indikatoren für den Kontext, auf den sich eine Identität bezieht. Wenn Sie einen Namespace angeben, sucht Customer Journey Analytics in der Identitätszuordnung jeder Zeile nach diesem Namespace-Schlüssel und verwendet die Identität unter diesem Namespace als Personen-ID für die entsprechende Zeile. Da Customer Journey Analytics nicht alle Zeilen in einem Datensatz durchsuchen kann, um festzustellen, welche Namespaces vorhanden sind, werden alle möglichen Namespaces in der Dropdown-Liste angezeigt. Sie müssen wissen, welche Namespaces in den Daten angegeben sind. Diese Namespaces werden nicht automatisch erkannt. |
 
 {style="table-layout:auto"}
 
