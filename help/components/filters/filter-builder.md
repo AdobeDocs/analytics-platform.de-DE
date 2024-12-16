@@ -4,7 +4,7 @@ title: Erstellen von Filtern
 feature: Filters
 role: User
 exl-id: 160021f1-6942-4682-9114-d375307d9912
-source-git-commit: 8772f2dcd5f9c20ca9d366b8c172218f45e4713c
+source-git-commit: b1bf7dfa4b2b95c2b3c00b71719a93bc7394ed33
 workflow-type: tm+mt
 source-wordcount: '1494'
 ht-degree: 7%
@@ -25,7 +25,7 @@ ht-degree: 7%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_components_filter_datapreview"
+>id="cja_components_filters_datapreview"
 >title="Datenvorschau"
 >abstract="Vergleicht die Daten dieses Filters mit den Daten der Datenansicht. Der Vorschauprozentsatz basiert auf der Gesamtzahl der Daten in der Datenansicht aus den **90 Tagen**.<br><br/>Wenn die Vorschau nicht geladen wird, wird Ihre Verbindung möglicherweise noch aufgestockt."
 
