@@ -6,9 +6,9 @@ exl-id: 0a87518c-3608-44ad-b5e3-976f97560433
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: 3a0c6c22422ca7f8d4f954f3d9711c5c3501cc03
+source-git-commit: 94d3c5352d00269b760e8b7bdf5059eaaa9b0bd3
 workflow-type: tm+mt
-source-wordcount: '3364'
+source-wordcount: '3418'
 ht-degree: 14%
 
 ---
@@ -243,6 +243,25 @@ Wenn ein Datensatz in der Datensatztabelle ausgewählt ist, werden in einem Bedi
 >abstract="Sie können detaillierte Metriken nach Verbindung, Datensatz, Sandbox und Tags mit der Option anzeigen, eine CSV-Datei der Daten herunterzuladen."
 
 <!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_connections_usage_otherdatasets"
+>title="Andere Datensätze"
+>abstract="Seit Monaten vor September 2024 wurden Daten auf Datensatzebene erfasst und der Klarheit halber als *Andere Datensätze* angezeigt. Ab September 2024 werden Daten auf einer granularen Datensatzebene erfasst und *Andere Datensätze* werden nicht mehr angezeigt."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_connections_usage_unknowndatasetsorconnections"
+>title="Unbekannte Datensätze oder Verbindungen"
+>abstract="Unbekannte Datensätze oder Verbindungen werden unter Verwendung ihrer IDs angezeigt."
+
+<!-- markdownlint-enable MD034 -->
+
 
 
 
