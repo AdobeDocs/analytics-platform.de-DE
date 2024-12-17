@@ -6,10 +6,10 @@ exl-id: 0a87518c-3608-44ad-b5e3-976f97560433
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: 94d3c5352d00269b760e8b7bdf5059eaaa9b0bd3
+source-git-commit: 0b6a84820dc42b5e5009eaa254e5554712a952aa
 workflow-type: tm+mt
-source-wordcount: '3418'
-ht-degree: 14%
+source-wordcount: '3536'
+ht-degree: 13%
 
 ---
 
@@ -262,7 +262,32 @@ Wenn ein Datensatz in der Datensatztabelle ausgewählt ist, werden in einem Bedi
 
 <!-- markdownlint-enable MD034 -->
 
+<!-- markdownlint-disable MD034 -->
 
+>[!CONTEXTUALHELP]
+>id="cja_connections_usage_datanotavailable"
+>title="Daten nicht verfügbar"
+>abstract="Historische Daten vor September 2024 sind aufgrund von Systembeschränkungen nicht verfügbar. Metriken werden ab September 2024 erfasst und angezeigt. Das Diagramm zeigt die letzten 18 Monate auf der Timeline, und zukünftige Daten werden angezeigt, sobald die Daten verfügbar werden."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_connections_corereportablerows"
+>title="Berichtsfähige Zeilen zu Kerndaten"
+>abstract="Zeigt die Gesamtzahl der für die letzten 13 Monate verfügbaren Zeilen an. Beispielsweise zeigt die Zahl am 1. Februar 2024 die Gesamtzahl der verfügbaren Zeilen mit einem Ereignis-Zeitstempel von Januar 2023 bis Januar 2024 an."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_connections_historicalreportablerows"
+>title="Berichtsfähige Zeilen zu historischen Daten"
+>abstract="Zeigt die Gesamtzahl der verfügbaren Zeilen für den Zeitraum an, der älter als 13 Monate ist. Beispielsweise zeigt die Zahl am 1. Februar 2024 die Gesamtzahl der verfügbaren Zeilen mit einem Ereignis-Zeitstempel an, der älter als Januar 2023 ist."
+
+<!-- markdownlint-enable MD034 -->
 
 
 Die [!UICONTROL Usage]-Schnittstelle zeigt die Verwendung aufgenommener und berichtspflichtiger Zeilen über alle Verbindungen hinweg. Über diese Schnittstelle können Sie feststellen, ob Ihre Customer Journey Analytics-Nutzung den vertraglich vereinbarten Vorgaben entspricht. Zusätzlich zu Überwachungszwecken können Sie die Nutzungsbenutzeroberfläche verwenden, um die Verlängerung Ihrer Customer Journey Analytics-Lizenz zu planen.
