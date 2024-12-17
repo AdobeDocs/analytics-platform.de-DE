@@ -4,7 +4,7 @@ description: Mit dem Generator für berechnete Metriken können Sie statistische
 feature: Calculated Metrics
 exl-id: 63775753-337b-4dec-a3a2-a3a0ee9aac2e
 role: User
-source-git-commit: 2b6d7ba695390bd084fb3af7b5fa365f0bd90185
+source-git-commit: 1804f3dc4126007c1ff553f844d691c80623bb90
 workflow-type: tm+mt
 source-wordcount: '1636'
 ht-degree: 93%
@@ -191,7 +191,7 @@ Addiert alle numerischen Werte für eine Metrik innerhalb einer Spalte (über di
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_funcion_median"
+>id="calcmetrics_function_median"
 >title="Median"
 >abstract="Gibt den Medianwert für eine Metrik in einer Spalte zurück. Der Median ist die Zahl in der Mitte einer Zahlenfolge. Das heißt, die Hälfte der Zahlen hat Werte, die größer oder gleich dem Median sind, und die Hälfte ist kleiner oder gleich dem Median."
 
@@ -426,7 +426,7 @@ Die Summe der Spalten in jeder Zeile.
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_funcion_square_root"
+>id="calcmetrics_function_square_root"
 >title="Quadratwurzel"
 >abstract="Gibt die positive Quadratwurzel einer Zahl zurück. Die Quadratwurzel einer Zahl ist der Wert dieser Zahl hoch 1/2."
 
