@@ -4,10 +4,10 @@ description: Mit dem Generator für berechnete Metriken können Sie statistische
 feature: Calculated Metrics
 exl-id: 63775753-337b-4dec-a3a2-a3a0ee9aac2e
 role: User
-source-git-commit: 1a84fc71eb29ceabf3a3c5c3e333b78b882ea966
-workflow-type: ht
-source-wordcount: '1185'
-ht-degree: 100%
+source-git-commit: 2b6d7ba695390bd084fb3af7b5fa365f0bd90185
+workflow-type: tm+mt
+source-wordcount: '1636'
+ht-degree: 93%
 
 ---
 
@@ -38,7 +38,17 @@ Ein alternatives Szenario besteht darin, dass Sie zwei Metriken von Interesse ha
 
 
 
-## Absolutwert
+## Absolutwert {#absolute-value}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_absolute_value"
+>title="Absolutwert"
+>abstract="Gibt den Absolutwert einer Zahl zurück. Der Absolutwert einer Zahl ist die Zahl mit einem positiven Wert."
+
+<!-- markdownlint-enable MD034 -->
+
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL ABSOLUTE VALUE(metric)]**
 
@@ -49,7 +59,16 @@ Ein alternatives Szenario besteht darin, dass Sie zwei Metriken von Interesse ha
 | metric | Die Metrik, für die der absolute Wert berechnet werden soll. |
 
 
-## Spaltenmaximum
+## Spaltenmaximum {#column-maximum}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_column_maximum"
+>title="Spaltenmaximum"
+>abstract="Gibt den größten Wert in einem Satz aus Dimensionselementen für eine Metrikspalte zurück. MAXV wird vertikal innerhalb einer einzelnen Spalte (Metrik) über Dimensionselemente hinweg ausgewertet."
+
+<!-- markdownlint-enable MD034 -->
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL COLUMN MAXIMUM(metric, include_zeros)]**
 
@@ -61,7 +80,17 @@ Gibt den größten Wert in einem Satz aus Dimensionselementen für eine Metriksp
 | include_zeros | Gibt an, ob Nullwerte in die Berechnungen einbezogen werden sollen oder nicht. |
 
 
-## Spaltenminimum
+## Spaltenminimum {#column-minimum}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_column_minimum"
+>title="Spaltenminimum"
+>abstract="Gibt den kleinsten Wert in einem Satz aus Dimensionselementen für eine Metrikspalte zurück. MINV wird vertikal innerhalb einer einzelnen Spalte (Metrik) über Dimensionselemente hinweg ausgewertet."
+
+<!-- markdownlint-enable MD034 -->
+
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL COLUMN MINIMUM(metric, include_zeros)]**
 
@@ -73,7 +102,17 @@ Gibt den kleinsten Wert in einem Satz aus Dimensionselementen für eine Metriksp
 | include_zeros | Gibt an, ob Nullwerte in die Berechnungen einbezogen werden sollen oder nicht. |
 
 
-## Spaltensumme
+## Spaltensumme {#column-sum}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_column_sum"
+>title="Spaltensumme"
+>abstract="Addiert alle numerischen Werte für eine Metrik innerhalb einer Spalte (über die Elemente einer Dimension hinweg)."
+
+<!-- markdownlint-enable MD034 -->
+
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL COLUMN SUM(metric)]**
 
@@ -84,7 +123,17 @@ Addiert alle numerischen Werte für eine Metrik innerhalb einer Spalte (über di
 | metric | Erfordert mindestens eine Metrik, kann jedoch eine beliebige Anzahl von Metriken als Parameter verwenden. |
 
 
-## Anzahl
+## Anzahl {#count}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_count"
+>title="Anzahl"
+>abstract="Gibt die Zahl oder Anzahl der Werte ungleich null für eine Metrik innerhalb einer Spalte zurück (die Anzahl der eindeutigen Elemente innerhalb einer Dimension)."
+
+<!-- markdownlint-enable MD034 -->
+
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL COUNT(metric)]**
 
@@ -95,7 +144,16 @@ Addiert alle numerischen Werte für eine Metrik innerhalb einer Spalte (über di
 | metric | Die Metrik, die gezählt werden soll. |
 
 
-## Exponent
+## Exponent {#exponent}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_exponent"
+>title="Exponent"
+>abstract="Gibt e hoch eine angegebene Zahl zurück. Die Konstante e ist gleich 2,71828182845904 (der Basis des natürlichen Logarithmus). EXPONENT ist die Umkehrung von LN, der natürliche Logarithmus einer Zahl."
+
+<!-- markdownlint-enable MD034 -->
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL EXPONENT(metric)]**
 
@@ -106,7 +164,17 @@ Addiert alle numerischen Werte für eine Metrik innerhalb einer Spalte (über di
 | metric | Die Exponentialfunktion mit Basis „e“. |
 
 
-## Arithmetisches Mittel
+## Arithmetisches Mittel {#mean}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_mean"
+>title="Arithmetisches Mittel"
+>abstract="Gibt das arithmetische Mittel (bzw. den Durchschnitt) einer Metrik in einer Spalte zurück."
+
+<!-- markdownlint-enable MD034 -->
+
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL MEAN(metric, include_zeros)]**
 
@@ -118,7 +186,17 @@ Addiert alle numerischen Werte für eine Metrik innerhalb einer Spalte (über di
 | include_zeros | Gibt an, ob Nullwerte in die Berechnungen einbezogen werden sollen oder nicht. |
 
 
-## Median
+## Median {#median}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_funcion_median"
+>title="Median"
+>abstract="Gibt den Medianwert für eine Metrik in einer Spalte zurück. Der Median ist die Zahl in der Mitte einer Zahlenfolge. Das heißt, die Hälfte der Zahlen hat Werte, die größer oder gleich dem Median sind, und die Hälfte ist kleiner oder gleich dem Median."
+
+<!-- markdownlint-enable MD034 -->
+
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL MEDIAN(metric, include_zeros)]**
 
@@ -130,7 +208,17 @@ Addiert alle numerischen Werte für eine Metrik innerhalb einer Spalte (über di
 | include_zeros | Gibt an, ob Nullwerte in die Berechnungen einbezogen werden sollen oder nicht. |
 
 
-## Modulo
+## Modulo {#modulo}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_modulo"
+>title="Modulo"
+>abstract="Gibt den Rest bei der euklidischen Division von x durch y zurück. "
+
+<!-- markdownlint-enable MD034 -->
+
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL MODULO(metric_X, metric_Y)]**
 
@@ -157,7 +245,17 @@ Um sicherzustellen, dass Sie immer eine positive Zahl zu erhalten, verwenden Sie
 MODULO(MODULO(x,y)+y,y)
 ```
 
-## Perzentil
+## Perzentil {#percentile}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_percentile"
+>title="Perzentil"
+>abstract="Gibt das n-te Perzentil zurück, das einen Wert zwischen 0 und 100 darstellt. Wenn n &lt; 0 ist, verwendet die Funktion null. Wenn n > 100 ist, gibt die Funktion 100 zurück."
+
+<!-- markdownlint-enable MD034 -->
+
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL PERCENTILE(metric, k, include_zeros)]**
 
@@ -171,7 +269,16 @@ MODULO(MODULO(x,y)+y,y)
 
 
 
-## Potenzierungsoperator
+## Potenzierungsoperator {#power-operator}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_power_operator"
+>title="Potenzierungsoperator"
+>abstract="Gibt die y-te Potenz von x zurück."
+
+<!-- markdownlint-enable MD034 -->
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL POWER OPERATOR(metric_X, metrix_Y)]**
 
@@ -183,7 +290,17 @@ Gibt die y-te Potenz von x zurück.
 | metric_Y | Die Potenz, zu der metric_X erhoben werden soll. |
 
 
-## Quartil
+## Quartil {#quartile}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_quartile"
+>title="Quartil"
+>abstract="Gibt das Quartil der Werte für eine Metrik zurück. Beispielsweise können Quartile verwendet werden, um die 25 % der Produkte zu finden, die den höchsten Umsatz erzielen."
+
+<!-- markdownlint-enable MD034 -->
+
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL QUARTILE(metric, quartile, include_zeros)]**
 
@@ -196,7 +313,16 @@ Gibt die y-te Potenz von x zurück.
 | include_zeros | Gibt an, ob Nullwerte in die Berechnungen einbezogen werden sollen oder nicht. |
 
 
-## Runden
+## Runden {#round}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_round"
+>title="Runden"
+>abstract="Das Runden ohne den Parameter *number* hat den gleichen Effekt wie das Runden mit dem Parameter *number* von 0, also die Rundung auf die nächste Ganzzahl. Mit einem Parameter *number* gibt ROUND die auf *number* Ziffern rechts vom Dezimalzeichen gerundete Zahl zurück. Wenn *number* negativ ist, werden entsprechend viele Nullen links neben dem Dezimalzeichen zurückgegeben."
+
+<!-- markdownlint-enable MD034 -->
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL ROUND(metric, number)]**
 
@@ -216,15 +342,32 @@ ROUND( 314.15, -1) = 310
 ROUND( 314.15, -2) = 300
 ```
 
+## Zeilenanzahl {#row-count}
 
-## Zeilenanzahl
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_row_count"
+>title="Zeilenanzahl"
+>abstract="Gibt die Anzahl der Zeilen in einer bestimmten Spalte zurück (die Anzahl der innerhalb einer Dimension berichteten eindeutigen Elemente). *Individuelle Werte überschritten* wird als 1 gezählt."
+
+<!-- markdownlint-enable MD034 -->
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL ROW COUNT()]**
 
 Gibt die Anzahl der Zeilen in einer bestimmten Spalte zurück (die Anzahl der innerhalb einer Dimension berichteten eindeutigen Elemente). *Individuelle Werte überschritten* wird als 1 gezählt.
 
 
-## Zeilenmaximum
+## Zeilenmaximum {#row-max}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_row_max"
+>title="Zeilenmaximum"
+>abstract="Das Maximum der Spalten in jeder Zeile."
+
+<!-- markdownlint-enable MD034 -->
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL ROW MAX(metric, include_zeros)]**
 
@@ -235,7 +378,17 @@ Das Maximum der Spalten in jeder Zeile.
 | metric | Erfordert mindestens eine Metrik, kann jedoch eine beliebige Anzahl von Metriken als Parameter verwenden. |
 | include_zeros | Gibt an, ob Nullwerte in die Berechnungen einbezogen werden sollen oder nicht. |
 
-## Zeilenminimum
+
+## Zeilenminimum {#row-min}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_row_min"
+>title="Zeilenminimum"
+>abstract="Das Minimum der Spalten in jeder Zeile."
+
+<!-- markdownlint-enable MD034 -->
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL ROW MIN(metric, include_zeros)]**
 
@@ -248,7 +401,16 @@ Das Minimum der Spalten in jeder Zeile.
 
 
 
-## Zeilensumme
+## Zeilensumme {#row-sum}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_row_sum"
+>title="Zeilensumme"
+>abstract="Die Summe der Spalten in jeder Zeile."
+
+<!-- markdownlint-enable MD034 -->
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL ROW SUM(metric, include_zeros)]**
 
@@ -259,7 +421,17 @@ Die Summe der Spalten in jeder Zeile.
 | metric | Erfordert mindestens eine Metrik, kann jedoch eine beliebige Anzahl von Metriken als Parameter verwenden. |
 
 
-## Quadratwurzel
+## Quadratwurzel {#square-root}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_funcion_square_root"
+>title="Quadratwurzel"
+>abstract="Gibt die positive Quadratwurzel einer Zahl zurück. Die Quadratwurzel einer Zahl ist der Wert dieser Zahl hoch 1/2."
+
+<!-- markdownlint-enable MD034 -->
+
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL SQUARE ROOT(metric, include_zeros)]**
 
@@ -270,7 +442,16 @@ Die Summe der Spalten in jeder Zeile.
 | metric | Die Metrik, für die die Quadratwurzel berechnet werden soll. |
 
 
-## Standardabweichung
+## Standardabweichung {#standard-deviation}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_standard_deviation"
+>title="Standardabweichung"
+>abstract="Gibt die Standardabweichung (oder die Quadratwurzel der Schwankung) basierend auf einer Beispieldatenpopulation zurück."
+
+<!-- markdownlint-enable MD034 -->
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL STANDARD DEVIATION(metric, include_zeros)]**
 
@@ -282,7 +463,16 @@ Die Summe der Spalten in jeder Zeile.
 | include_zeros | Gibt an, ob Nullwerte in die Berechnungen einbezogen werden sollen oder nicht. |
 
 
-## Varianz
+## Varianz {#variance}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_variance"
+>title="Varianz"
+>abstract="Gibt die Schwankung basierend auf einer Beispieldatenpopulation zurück."
+
+<!-- markdownlint-enable MD034 -->
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL VARIANCE(metric, include_zeros)]**
 
@@ -320,9 +510,6 @@ Im Beispiel der folgenden Spalte mit drei Elementen:
 | 3 |
 
 Der Durchschnitt dieser Spalte ist 2. Die Varianz für die Spalte ist ((1 - 2)<sup>2</sup> + (2 - 2)<sup>2</sup> + (3 - 2)<sup>2</sup>/3) = 2/3.
-
-
-
 
 <!--
 
