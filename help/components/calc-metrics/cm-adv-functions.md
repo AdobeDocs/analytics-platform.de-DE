@@ -4,7 +4,7 @@ description: Greifen Sie auf diese Funktionen zu, indem Sie in der Dropdown-List
 feature: Calculated Metrics
 exl-id: 3689a499-817d-4a59-8a1f-5f7bda297268
 role: User
-source-git-commit: 1804f3dc4126007c1ff553f844d691c80623bb90
+source-git-commit: 30fd026a948eab62b034033b4163d3e2b27c47c3
 workflow-type: tm+mt
 source-wordcount: '4438'
 ht-degree: 29%
@@ -37,7 +37,7 @@ Ein alternatives Szenario besteht darin, dass Sie zwei Metriken von Interesse ha
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_and"
+>id="functions-and"
 >title="Und"
 >abstract="Verbindung. Wenn ungleich null ist, gilt dies als „true“ und wenn gleich null ist, wird dies als „false“ betrachtet. Die Ausgabe ist entweder 0 (false) oder 1 (true)."
 
@@ -57,7 +57,7 @@ Verbindung. Wenn ungleich null ist, gilt dies als „true“ und wenn gleich nul
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_approximate_count_distinct"
+>id="functions-count-distinct-metric"
 >title="Ungefähres Erfassen bestimmter"
 >abstract="Gibt die ungefähre Anzahl von Dimensionselementen für die ausgewählte Dimension zurück."
 
@@ -84,7 +84,7 @@ Ein gängiger Anwendungsfall für diese Funktion ist, wenn Sie eine ungefähre A
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_arc_cosine"
+>id="functions-acos"
 >title="Arkuskosinus"
 >abstract="Gibt den Arkuskosinus (oder umgekehrten Kosinus) einer Metrik zurück. Der Arkuskosinus ist der Winkel, dessen Kosinus die Zahl ist. Der zurückgegebene Winkel wird in Radianten im Bereich zwischen 0 (null) und Pi angegeben. Wenn Sie das Ergebnis von Radiant in Grad umrechnen möchten, multiplizieren Sie es mit 180/PI()."
 
@@ -107,7 +107,7 @@ Ein gängiger Anwendungsfall für diese Funktion ist, wenn Sie eine ungefähre A
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_arc_sine"
+>id="functions-asin"
 >title="Kreisbogensinus"
 >abstract="Gibt den Arkussinus (oder umgekehrten Sinus) einer Zahl zurück. Der Arkussinus ist der Winkel, dessen Sinus eine Zahl ist. Der zurückgegebene Winkel wird in Radianten im Bereich zwischen -Pi/2 und Pi/2 angegeben. Um den Arkussinus in Grad auszudrücken, multiplizieren Sie das Ergebnis mit 180/PI()"
 
@@ -130,7 +130,7 @@ Ein gängiger Anwendungsfall für diese Funktion ist, wenn Sie eine ungefähre A
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_arc_tangent"
+>id="functions-atan"
 >title="Arkustangens"
 >abstract="Gibt den Arkustangens (oder umgekehrten Tangens) einer Zahl zurück. Der Bogen ist der Winkel, dessen Tangente eine Zahl ist. Der zurückgegebene Winkel wird in Radianten im Bereich zwischen -Pi/2 und Pi/2 angegeben. Um den Arktangens in Grad auszudrücken, multiplizieren Sie das Ergebnis mit 180/PI()."
 
@@ -153,7 +153,7 @@ Ein gängiger Anwendungsfall für diese Funktion ist, wenn Sie eine ungefähre A
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_cdf_t"
+>id="functions-cdf-t"
 >title="Cdf-T"
 >abstract="Gibt die Wahrscheinlichkeit dafür zurück, dass eine Zufallsvariable mit studentischer t-Verteilung mit n Freiheitsgraden einen z-Wert hat, der unter dem Spaltenwert liegt."
 
@@ -184,7 +184,7 @@ CDF-T(x, ∞) ? cdf_z(x)
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_cdf_z"
+>id="functions-cdf-z"
 >title="Cdf-Z"
 >abstract="Gibt die Wahrscheinlichkeit dafür zurück, dass eine Zufallsvariable normaler Verteilung einen z-Wert hat, der unter dem Spaltenwert liegt."
 
@@ -213,7 +213,7 @@ CDF-Z(-3) ? 0.0013499
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_ceiling"
+>id="functions-ceil"
 >title="Ceiling (Obergrenze)"
 >abstract="Gibt die kleinste Ganzzahl zurück, die nicht kleiner als ein angegebener Wert ist. Beispiel: Wenn Sie keine Währungsdezimalzahlen für den Umsatz in Berichte aufnehmen möchten und ein Produkt einen Umsatz von 569,34 US-Dollar aufweist, können Sie mit der Formel CEILING(Umsatz) den Umsatz bis zum nächsten Dollar aufrunden (in diesem Fall 570 US-Dollar)."
 
@@ -233,7 +233,7 @@ CDF-Z(-3) ? 0.0013499
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_confidence"
+>id="functions-waskr-confidence"
 >title="Konfidenz"
 >abstract="Berechnen Sie die jederzeit gültige Konfidenz mithilfe der WASKR-Methode, wie in [Zeiteinheitliche zentrale Grenztheorie und asymptotische Konfidenzsequenzen](https://arxiv.org/pdf/2103.06476) beschrieben."
 
@@ -258,7 +258,7 @@ Konfidenz ist ein Maß dafür, wie hoch die Wahrscheinlichkeit ist, dass eine be
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_confidence_lower"
+>id="functions-waskr-confidence-interval-lower"
 >title="Konfidenz (untere Grenze)"
 >abstract="Berechnen Sie die jederzeit gültige Konfidenz **niedriger** mithilfe der WASKR-Methode, wie in [Zeiteinheitliche zentrale Grenztheorie und asymptotische Konfidenzsequenzen](https://arxiv.org/pdf/2103.06476) beschrieben."
 
@@ -282,7 +282,7 @@ Konfidenz ist ein Maß dafür, wie hoch die Wahrscheinlichkeit ist, dass eine be
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_confidence_upper"
+>id="functions-waskr-confidence-interval-upper"
 >title="Konfidenz (obere Grenze)"
 >abstract="Berechnen Sie die jederzeit gültige Konfidenz **upper** mithilfe der WASKR-Methode, wie in [Zeiteinheitliche zentrale Grenztheorie und asymptotische Konfidenzsequenzen](https://arxiv.org/pdf/2103.06476) beschrieben."
 
@@ -307,7 +307,7 @@ Konfidenz ist ein Maß dafür, wie hoch die Wahrscheinlichkeit ist, dass eine be
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_cosine"
+>id="functions-cos"
 >title="Kosinus"
 >abstract="Gibt den Kosinus des angegebenen Winkels zurück. Wenn der Winkel in Grad angegeben ist, multiplizieren Sie den Winkel mit PI()/180."
 
@@ -327,7 +327,7 @@ Konfidenz ist ein Maß dafür, wie hoch die Wahrscheinlichkeit ist, dass eine be
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_cube_root"
+>id="functions-cube-root"
 >title="Kubikwurzel"
 >abstract="Gibt die positive Kubikwurzel einer Zahl zurück. Die Kubikwurzel einer Zahl ist der Wert dieser Zahl hoch 1/3."
 
@@ -350,7 +350,7 @@ Gibt die positive Kubikwurzel einer Zahl zurück. Die Kubikwurzel einer Zahl ist
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_cumulative"
+>id="functions-cumul"
 >title="Kumulativ"
 >abstract="Gibt die Summe der letzten n Elemente der Spalte x zurück. Wenn n > 0 ist, werden die letzten n Elemente oder x addiert. Wenn n &lt; 0 ist, werden die vorangehenden Elemente addiert."
 
@@ -379,7 +379,7 @@ Gibt die Summe der letzten n Elemente der Spalte x zurück. Wenn n > 0 ist, werd
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_cumulative_average"
+>id="functions-cumul-avg"
 >title="Kumulativ (Durchschnitt)"
 >abstract="Gibt den Durchschnitt der letzten n Elemente der Spalte x zurück. Wenn n > 0 ist, werden die letzten n Elemente oder x addiert. Wenn n &lt; 0 ist, werden die vorangehenden Elemente addiert."
 
@@ -405,7 +405,7 @@ Gibt den Durchschnitt der letzten n Elemente der Spalte x zurück. Wenn n > 0 is
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_equal"
+>id="functions-eq"
 >title="Gleich"
 >abstract="Gleich. Die Ausgabe ist entweder 0 (false) oder 1 (true)."
 
@@ -431,7 +431,7 @@ Gleich. Die Ausgabe ist entweder 0 (false) oder 1 (true).
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_exponential_regression_correlation_coefficient"
+>id="functions-ls-corr-exp"
 >title="Exponentielle Regression: Korrelationskoeffizient"
 >abstract="Exponentielle Regression: Y = a exp(X) + b. Gibt den Korrelationskoeffizienten zurück."
 
@@ -454,7 +454,7 @@ Gleich. Die Ausgabe ist entweder 0 (false) oder 1 (true).
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_exponential_regression_predicted_y"
+>id="functions-ls-pred-exp"
 >title="Exponentielle Regression: Prognostiziert Y"
 >abstract="Exponentielle Regression: Y = a exp(X) + b. Gibt Y zurück."
 
@@ -478,7 +478,7 @@ Gleich. Die Ausgabe ist entweder 0 (false) oder 1 (true).
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_exponential_regression_intercept"
+>id="functions-ls-intercept-exp"
 >title="Exponentielle Regression: Intercept"
 >abstract="Exponentielle Regression: Y = a exp(X) + b. Gibt b zurück."
 
@@ -501,7 +501,7 @@ Gleich. Die Ausgabe ist entweder 0 (false) oder 1 (true).
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_exponential_regression_slope"
+>id="functions-ls-slope-exp"
 >title="Exponentielle Regression: Steigung"
 >abstract="Exponentielle Regression: Y = a exp(X) + b. Gibt a zurück."
 
@@ -525,7 +525,7 @@ Gleich. Die Ausgabe ist entweder 0 (false) oder 1 (true).
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_floor"
+>id="functions-floor"
 >title="Untergrenze"
 >abstract="Gibt die größte Ganzzahl zurück, die nicht größer als ein angegebener Wert ist. Beispiel: Wenn Sie keine Währungsdezimalzahlen für den Umsatz in Berichte aufnehmen möchten und ein Produkt einen Umsatz von 569,34 US-Dollar aufweist, können Sie mit der Formel FLOOR(Umsatz) den Umsatz bis zum nächsten Dollar abrunden (in diesem Fall 569 US-Dollar)."
 
@@ -545,7 +545,7 @@ Gleich. Die Ausgabe ist entweder 0 (false) oder 1 (true).
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_greater_than"
+>id="functions-gt"
 >title="Größer als"
 >abstract="Die Ausgabe ist entweder 0 (false) oder 1 (true)."
 
@@ -570,7 +570,7 @@ Die Ausgabe ist entweder 0 (false) oder 1 (true).
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_greater_than_or_equal"
+>id="functions-ge"
 >title="Größer gleich"
 >abstract="Größer als oder gleich. Die Ausgabe ist entweder 0 (false) oder 1 (true)."
 
@@ -596,7 +596,7 @@ Größer als oder gleich. Die Ausgabe ist entweder 0 (false) oder 1 (true).
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_hyperbolic_cosine"
+>id="functions-cosh"
 >title="Kosinus hyperbolicus"
 >abstract="Gibt den Hyperbelkosinus einer Zahl zurück."
 
@@ -619,7 +619,7 @@ Größer als oder gleich. Die Ausgabe ist entweder 0 (false) oder 1 (true).
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_hyperbolic_sine"
+>id="functions-sinh"
 >title="Sinus hyperbolicus"
 >abstract="Gibt den Hyperbelsinus einer Zahl zurück."
 
@@ -639,7 +639,7 @@ Größer als oder gleich. Die Ausgabe ist entweder 0 (false) oder 1 (true).
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_hyperbolic_tangent"
+>id="functions-tanh"
 >title="Tangente Hyperbolicus"
 >abstract="Gibt den Hyperbeltangens einer Zahl zurück."
 
@@ -659,7 +659,7 @@ Größer als oder gleich. Die Ausgabe ist entweder 0 (false) oder 1 (true).
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_if"
+>id="functions-if"
 >title="Wenn"
 >abstract="Wenn der Wert des Bedingungsparameters ungleich null (true) ist, ist das Ergebnis der Wert des Parameters value_if_true. Andernfalls ist dies der Wert des Parameters value_if_false."
 
@@ -683,7 +683,7 @@ Größer als oder gleich. Die Ausgabe ist entweder 0 (false) oder 1 (true).
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_less_than"
+>id="functions-lt"
 >title="Kleiner als"
 >abstract="Die Ausgabe ist entweder 0 (false) oder 1 (true)."
 
@@ -708,7 +708,7 @@ Die Ausgabe ist entweder 0 (false) oder 1 (true).
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_less_than_or_equal"
+>id="functions-le"
 >title="Kleiner gleich"
 >abstract="Kleiner oder gleich. Die Ausgabe ist entweder 0 (false) oder 1 (true)."
 
@@ -734,7 +734,7 @@ Kleiner oder gleich. Die Ausgabe ist entweder 0 (false) oder 1 (true).
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_lift"
+>id="functions-waskr-lift"
 >title="Anstieg"
 >abstract="Der Anstieg des Verhältnisses im Vergleich zum Kontrollwert."
 
@@ -753,7 +753,7 @@ Kleiner oder gleich. Die Ausgabe ist entweder 0 (false) oder 1 (true).
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_linear_regression_correlation_coefficient"
+>id="functions-ls-corr-linear"
 >title="Lineare Regression: Korrelationskoeffizient"
 >abstract="Lineare Regression: Y = a X + b. Gibt den Korrelationskoeffizienten zurück."
 
@@ -778,7 +778,7 @@ Kleiner oder gleich. Die Ausgabe ist entweder 0 (false) oder 1 (true).
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_linear_regression_intercept"
+>id="functions-ls-intercept-linear"
 >title="Lineare Regression: Intercept"
 >abstract="Lineare Regression: Y = a X + b. Gibt b zurück."
 
@@ -803,7 +803,7 @@ Kleiner oder gleich. Die Ausgabe ist entweder 0 (false) oder 1 (true).
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_linear_regression_predicted_y"
+>id="functions-ls-pred-linear"
 >title="Lineare Regression: Prognostiziertes Y"
 >abstract="Lineare Regression: Y = a X + b. Gibt Y zurück."
 
@@ -828,7 +828,7 @@ Kleiner oder gleich. Die Ausgabe ist entweder 0 (false) oder 1 (true).
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_linear_regression_slope"
+>id="functions-ls-slope-linear"
 >title="Lineare Regression: Steigung"
 >abstract="Lineare Regression: Y = a X + b. Gibt a zurück."
 
@@ -850,7 +850,7 @@ Kleiner oder gleich. Die Ausgabe ist entweder 0 (false) oder 1 (true).
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_log_base_ten"
+>id="functions-log10"
 >title="Protokoll-Basis 10"
 >abstract="Gibt den Logarithmus zur Basis 10 einer Zahl zurück."
 
@@ -872,7 +872,7 @@ Kleiner oder gleich. Die Ausgabe ist entweder 0 (false) oder 1 (true).
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_log_regression_coefficient"
+>id="functions-ls-corr-log"
 >title="Log-Regression: Korrelationskoeffizient"
 >abstract="Logistische Regression: Y = a ln(X) + b. Gibt den Korrelationskoeffizienten zurück."
 
@@ -894,7 +894,7 @@ Kleiner oder gleich. Die Ausgabe ist entweder 0 (false) oder 1 (true).
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_log_regression_intercept"
+>id="functions-ls-intercept-log"
 >title="Log-Regression: Intercept"
 >abstract="Log-Regression: Y = a ln(X) + b. Gibt b zurück."
 
@@ -917,7 +917,7 @@ Kleiner oder gleich. Die Ausgabe ist entweder 0 (false) oder 1 (true).
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_log_regression_predicted_y"
+>id="functions-ls-pred-log"
 >title="Protokollregression: Prognostiziertes Y"
 >abstract="Log-Regression: Y = a ln(X) + b. Gibt Y zurück."
 
@@ -940,7 +940,7 @@ Kleiner oder gleich. Die Ausgabe ist entweder 0 (false) oder 1 (true).
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_log_regression_slope"
+>id="functions-ls-slope-log"
 >title="Log-Regression: Steigung"
 >abstract="Log-Regression: Y = a ln(X) + b. Gibt a zurück."
 
@@ -963,7 +963,7 @@ Kleiner oder gleich. Die Ausgabe ist entweder 0 (false) oder 1 (true).
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_natural_log"
+>id="functions-log"
 >title="Natürlicher Logarithmus"
 >abstract="Gibt den natürlichen Logarithmus einer Zahl zurück. Natürliche Logarithmen basieren auf der Konstante e (2,71828182845904). LN ist die Umkehrung der Exponentialfunktion."
 
@@ -984,7 +984,7 @@ Gibt den natürlichen Logarithmus einer Zahl zurück. Natürliche Logarithmen ba
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_not"
+>id="functions-not"
 >title="Nicht"
 >abstract="Negation als boolescher Wert. Die Ausgabe ist entweder 0 (false) oder 1 (true)."
 
@@ -1005,7 +1005,7 @@ Negation als boolescher Wert. Die Ausgabe ist entweder 0 (false) oder 1 (true).
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_not_equal"
+>id="functions-ne"
 >title="Ungleich"
 >abstract="Ungleich. Die Ausgabe ist entweder 0 (false) oder 1 (true)."
 
@@ -1032,7 +1032,7 @@ Ungleich. Die Ausgabe ist entweder 0 (false) oder 1 (true).
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_or"
+>id="functions-or"
 >title="Oder"
 >abstract="Trennung. Wenn ungleich null ist, gilt dies als „true“ und wenn gleich null ist, wird dies als „false“ betrachtet. Die Ausgabe ist entweder 0 (false) oder 1 (true)."
 
@@ -1059,7 +1059,7 @@ Ungleich. Die Ausgabe ist entweder 0 (false) oder 1 (true).
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_pi"
+>id="functions-pi"
 >title="Pi"
 >abstract="Gibt PI zurück: 3,14159…"
 
@@ -1075,7 +1075,7 @@ Gibt PI zurück: 3,14159…
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_power_regression_correlation_coefficient"
+>id="functions-ls-corr-power"
 >title="Potenzregression: Korrelationskoeffizient"
 >abstract="Potenzregression: Y = b X ^ a. Gibt den Korrelationskoeffizienten zurück."
 
@@ -1098,7 +1098,7 @@ Gibt PI zurück: 3,14159…
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_power_regression_intercept"
+>id="functions-ls-intercept-power"
 >title="Potenzregression: Intercept"
 >abstract="Potenzregression: Y = b X ^ a. Gibt b zurück."
 
@@ -1122,7 +1122,7 @@ Gibt PI zurück: 3,14159…
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_power_regression_predicted_y"
+>id="functions-ls-pred-power"
 >title="Potenzregression: Prognostiziertes Y"
 >abstract="Potenzregression: Y = b X ^ a. Gibt Y zurück."
 
@@ -1145,7 +1145,7 @@ Gibt PI zurück: 3,14159…
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_power_regression_slope"
+>id="functions-ls-slope-power"
 >title="Leistungsregression: Steigung"
 >abstract="Potenzregression: Y = b X ^ a. Gibt a zurück."
 
@@ -1168,7 +1168,7 @@ Gibt PI zurück: 3,14159…
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_quadratic_regression_correlation_coefficient"
+>id="functions-ls-corr-quadratic"
 >title="Quadratische Regression: Korrelationskoeffizient"
 >abstract="Quadratische Regression: Y = (a + bX) ^ 2. Gibt den Korrelationskoeffizienten zurück."
 
@@ -1189,7 +1189,7 @@ Gibt PI zurück: 3,14159…
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_quadratic_regression_intercept"
+>id="functions-ls-intercept-quadratic"
 >title="Quadratische Regression: Intercept"
 >abstract="Quadratische Regression: Y = (a + bX) ^ 2. Gibt a zurück."
 
@@ -1211,7 +1211,7 @@ Gibt PI zurück: 3,14159…
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_quadratic_regression_predicted_y"
+>id="functions-ls-pred-quadratic"
 >title="Quadratische Regression: Vorhergesagtes Y"
 >abstract="Quadratische Regression: Y = (a + bX) ^ 2. Gibt Y zurück."
 
@@ -1233,7 +1233,7 @@ Gibt PI zurück: 3,14159…
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_quadratic_regression_slope"
+>id="functions-ls-slope-quadratic"
 >title="Quadratische Regression: Steigung"
 >abstract="Quadratische Regression: Y = (a + bX) ^ 2. Gibt b zurück."
 
@@ -1256,7 +1256,7 @@ Gibt PI zurück: 3,14159…
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_reciprocal_regression_correlation_coefficient"
+>id="functions-ls-corr-reciprocal"
 >title="Reziproke Regression: Korrelationskoeffizient"
 >abstract="Reziproke Regression: Y = a + b X ^ -1. Gibt den Korrelationskoeffizienten zurück."
 
@@ -1278,7 +1278,7 @@ Gibt PI zurück: 3,14159…
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_reciprocal_regression_intercept"
+>id="functions-ls-intercept-reciprocal"
 >title="Reziproke Regression: Intercept"
 >abstract="Reziproke Regression: Y = a + b X ^ -1. Gibt ein -Objekt zurück."
 
@@ -1300,7 +1300,7 @@ Gibt PI zurück: 3,14159…
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_reciprocal_regression_predicted_y"
+>id="functions-ls-pred-reciprocal"
 >title="Reziproke Regression: Prognostiziertes Y"
 >abstract="Reziproke Regression: Y = a + b X ^ -1. Gibt Y zurück."
 
@@ -1322,7 +1322,7 @@ Gibt PI zurück: 3,14159…
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_reciprocal_regression_slope"
+>id="functions-ls-slope-reciprocal"
 >title="Reziproke Regression: Steigung"
 >abstract="Reziproke Regression: Y = a + b X ^ -1. Gibt b zurück."
 
@@ -1346,7 +1346,7 @@ Gibt PI zurück: 3,14159…
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_sine"
+>id="functions-sin"
 >title="Sinus"
 >abstract="Gibt den Sinus des angegebenen Winkels zurück. Wenn der Winkel in Grad angegeben ist, multiplizieren Sie den Winkel mit PI()/180."
 
@@ -1370,7 +1370,7 @@ Gibt PI zurück: 3,14159…
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_t_score"
+>id="functions-t-score"
 >title="t-Transformation"
 >abstract="Die Abweichung vom [MITTELWERT](cm-functions.md#mean) geteilt durch die Standardabweichung. Alias für [Z-Score](#z-score)."
 
@@ -1391,7 +1391,7 @@ Die Abweichung vom [MITTELWERT](cm-functions.md#mean) geteilt durch die Standard
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_t_test"
+>id="functions-t-test"
 >title="t-Test"
 >abstract="Führt einen m-seitigen t-Test mit einem t-Wert von x und n Freiheitsgraden durch."
 
@@ -1438,7 +1438,7 @@ Der Rückgabewert ist die Wahrscheinlichkeit, die Teststatistik x zu erhalten, b
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_tangent"
+>id="functions-tan"
 >title="Tangens"
 >abstract="Gibt den Tangens des angegebenen Winkels zurück. Wenn der Winkel in Grad angegeben ist, multiplizieren Sie den Winkel mit PI()/180."
 
@@ -1459,7 +1459,7 @@ Gibt den Tangens des angegebenen Winkels zurück. Wenn der Winkel in Grad angege
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_z_score"
+>id="functions-z-score"
 >title="z-score"
 >abstract="Die Abweichung vom Mittelwert dividiert durch die Standardabweichung."
 
@@ -1493,7 +1493,7 @@ Dabei ist ***[!DNL x]*** der Rohwert, ***[!DNL μ]*** der Mittelwert der Populat
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_z_test"
+>id="functions-z-test"
 >title="z-Test"
 >abstract="Führt einen n-seitigen z-Test mit einem z-Wert von x durch."
 

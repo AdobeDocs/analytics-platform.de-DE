@@ -4,7 +4,7 @@ description: Mit dem Generator für berechnete Metriken können Sie statistische
 feature: Calculated Metrics
 exl-id: 63775753-337b-4dec-a3a2-a3a0ee9aac2e
 role: User
-source-git-commit: 1804f3dc4126007c1ff553f844d691c80623bb90
+source-git-commit: 47c5fc27d994667933103f864a253e086050bbf8
 workflow-type: tm+mt
 source-wordcount: '1636'
 ht-degree: 93%
@@ -43,7 +43,7 @@ Ein alternatives Szenario besteht darin, dass Sie zwei Metriken von Interesse ha
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_absolute_value"
+>id="functions-abs"
 >title="Absolutwert"
 >abstract="Gibt den Absolutwert einer Zahl zurück. Der Absolutwert einer Zahl ist die Zahl mit einem positiven Wert."
 
@@ -64,7 +64,7 @@ Ein alternatives Szenario besteht darin, dass Sie zwei Metriken von Interesse ha
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_column_maximum"
+>id="functions-col-max"
 >title="Spaltenmaximum"
 >abstract="Gibt den größten Wert in einem Satz aus Dimensionselementen für eine Metrikspalte zurück. MAXV wird vertikal innerhalb einer einzelnen Spalte (Metrik) über Dimensionselemente hinweg ausgewertet."
 
@@ -85,7 +85,7 @@ Gibt den größten Wert in einem Satz aus Dimensionselementen für eine Metriksp
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_column_minimum"
+>id="functions-col-min"
 >title="Spaltenminimum"
 >abstract="Gibt den kleinsten Wert in einem Satz aus Dimensionselementen für eine Metrikspalte zurück. MINV wird vertikal innerhalb einer einzelnen Spalte (Metrik) über Dimensionselemente hinweg ausgewertet."
 
@@ -107,7 +107,7 @@ Gibt den kleinsten Wert in einem Satz aus Dimensionselementen für eine Metriksp
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_column_sum"
+>id="functions-col-sum"
 >title="Spaltensumme"
 >abstract="Addiert alle numerischen Werte für eine Metrik innerhalb einer Spalte (über die Elemente einer Dimension hinweg)."
 
@@ -128,7 +128,7 @@ Addiert alle numerischen Werte für eine Metrik innerhalb einer Spalte (über di
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_count"
+>id="functions-count"
 >title="Anzahl"
 >abstract="Gibt die Zahl oder Anzahl der Werte ungleich null für eine Metrik innerhalb einer Spalte zurück (die Anzahl der eindeutigen Elemente innerhalb einer Dimension)."
 
@@ -149,7 +149,7 @@ Addiert alle numerischen Werte für eine Metrik innerhalb einer Spalte (über di
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_exponent"
+>id="functions-exp"
 >title="Exponent"
 >abstract="Gibt e hoch eine angegebene Zahl zurück. Die Konstante e ist gleich 2,71828182845904 (der Basis des natürlichen Logarithmus). EXPONENT ist die Umkehrung von LN, der natürliche Logarithmus einer Zahl."
 
@@ -169,7 +169,7 @@ Addiert alle numerischen Werte für eine Metrik innerhalb einer Spalte (über di
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_mean"
+>id="functions-mean"
 >title="Arithmetisches Mittel"
 >abstract="Gibt das arithmetische Mittel (bzw. den Durchschnitt) einer Metrik in einer Spalte zurück."
 
@@ -191,7 +191,7 @@ Addiert alle numerischen Werte für eine Metrik innerhalb einer Spalte (über di
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_median"
+>id="functions-median"
 >title="Median"
 >abstract="Gibt den Medianwert für eine Metrik in einer Spalte zurück. Der Median ist die Zahl in der Mitte einer Zahlenfolge. Das heißt, die Hälfte der Zahlen hat Werte, die größer oder gleich dem Median sind, und die Hälfte ist kleiner oder gleich dem Median."
 
@@ -213,7 +213,7 @@ Addiert alle numerischen Werte für eine Metrik innerhalb einer Spalte (über di
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_modulo"
+>id="functions-modulo"
 >title="Modulo"
 >abstract="Gibt den Rest bei der euklidischen Division von x durch y zurück. "
 
@@ -250,7 +250,7 @@ MODULO(MODULO(x,y)+y,y)
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_percentile"
+>id="functions-percentile"
 >title="Perzentil"
 >abstract="Gibt das n-te Perzentil zurück, das einen Wert zwischen 0 und 100 darstellt. Wenn n &lt; 0 ist, verwendet die Funktion null. Wenn n > 100 ist, gibt die Funktion 100 zurück."
 
@@ -274,7 +274,7 @@ MODULO(MODULO(x,y)+y,y)
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_power_operator"
+>id="functions-pow"
 >title="Potenzierungsoperator"
 >abstract="Gibt die y-te Potenz von x zurück."
 
@@ -295,7 +295,7 @@ Gibt die y-te Potenz von x zurück.
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_quartile"
+>id="functions-quartile"
 >title="Quartil"
 >abstract="Gibt das Quartil der Werte für eine Metrik zurück. Beispielsweise können Quartile verwendet werden, um die 25 % der Produkte zu finden, die den höchsten Umsatz erzielen."
 
@@ -318,7 +318,7 @@ Gibt die y-te Potenz von x zurück.
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_round"
+>id="functions-round"
 >title="Runden"
 >abstract="Das Runden ohne den Parameter *number* hat den gleichen Effekt wie das Runden mit dem Parameter *number* von 0, also die Rundung auf die nächste Ganzzahl. Mit einem Parameter *number* gibt ROUND die auf *number* Ziffern rechts vom Dezimalzeichen gerundete Zahl zurück. Wenn *number* negativ ist, werden entsprechend viele Nullen links neben dem Dezimalzeichen zurückgegeben."
 
@@ -347,7 +347,7 @@ ROUND( 314.15, -2) = 300
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_row_count"
+>id="functions-count-rows"
 >title="Zeilenanzahl"
 >abstract="Gibt die Anzahl der Zeilen in einer bestimmten Spalte zurück (die Anzahl der innerhalb einer Dimension berichteten eindeutigen Elemente). *Individuelle Werte überschritten* wird als 1 gezählt."
 
@@ -363,7 +363,7 @@ Gibt die Anzahl der Zeilen in einer bestimmten Spalte zurück (die Anzahl der in
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_row_max"
+>id="functions-row-max"
 >title="Zeilenmaximum"
 >abstract="Das Maximum der Spalten in jeder Zeile."
 
@@ -384,7 +384,7 @@ Das Maximum der Spalten in jeder Zeile.
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_row_min"
+>id="functions-row-min"
 >title="Zeilenminimum"
 >abstract="Das Minimum der Spalten in jeder Zeile."
 
@@ -406,7 +406,7 @@ Das Minimum der Spalten in jeder Zeile.
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_row_sum"
+>id="functions-row-sum"
 >title="Zeilensumme"
 >abstract="Die Summe der Spalten in jeder Zeile."
 
@@ -426,7 +426,7 @@ Die Summe der Spalten in jeder Zeile.
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_square_root"
+>id="functions-sqrt"
 >title="Quadratwurzel"
 >abstract="Gibt die positive Quadratwurzel einer Zahl zurück. Die Quadratwurzel einer Zahl ist der Wert dieser Zahl hoch 1/2."
 
@@ -447,7 +447,7 @@ Die Summe der Spalten in jeder Zeile.
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_standard_deviation"
+>id="functions-stdev"
 >title="Standardabweichung"
 >abstract="Gibt die Standardabweichung (oder die Quadratwurzel der Schwankung) basierend auf einer Beispieldatenpopulation zurück."
 
@@ -468,7 +468,7 @@ Die Summe der Spalten in jeder Zeile.
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_variance"
+>id="functions-variance"
 >title="Varianz"
 >abstract="Gibt die Schwankung basierend auf einer Beispieldatenpopulation zurück."
 
