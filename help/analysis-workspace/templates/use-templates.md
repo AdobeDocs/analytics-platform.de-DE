@@ -6,9 +6,9 @@ role: User, Admin
 hide: true
 hidefromtoc: true
 exl-id: d61f215d-9089-4014-9c5a-97f5d7134f34
-source-git-commit: 3ae10f81cb38500c035811542bc761f06688a130
+source-git-commit: 34b94eeeeb501f6c0deb982351b7c65e0a97bc68
 workflow-type: tm+mt
-source-wordcount: '17969'
+source-wordcount: '18106'
 ht-degree: 81%
 
 ---
@@ -1347,6 +1347,24 @@ Die folgenden Vorlagen sind verfügbar:
 | **Online/Offline** | Zeigen Sie Online- und Offline-Traffic zusammen an.<p>**Dies kann Ihnen helfen**, die Verteilung des Online- und Offline-Traffics auf Ihrer Website besser zu verstehen.</p><p>**Basierend auf Ihren Erkenntnissen können Sie** verschiedene Maßnahmen ergreifen, z. B. mehr Ressourcen für Ihre Online-Erfahrung bereitstellen, wenn diese ein bestimmtes Besucheraufkommen erreicht.</p><!-- This template uses the ... --> |
 
 ### Andere Kanäle {#other-channels}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-template--pointOfSale"
+>title="Zeigen Sie Transaktionsdaten zum Point-of-Sale (POS) an, einschließlich Umsatz, getätigter Bestellungen und verkaufter Einheiten. Diese Vorlage enthält auch Visualisierungen, die Informationen zu Top-Stores, Top-Produkten und Top-Produktkategorien sowie zu Online- und Offline-Verkäufen anzeigen."
+>abstract="**Dies kann Ihnen helfen** besser zu verstehen, welche Ihre meistverkauften Produkte sind, sowohl in Ihrem Geschäft als auch online.<br/>**Je nachdem, was Sie lernen** können Sie beliebig viele Dinge tun, z. B. Ihren leistungsstärksten Produkten und Kanälen mehr Marketing-Ressourcen zuweisen."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-template--survey"
+>title="Zeigen Sie die Benutzerinteraktion für Ihre Umfragen an. Zeigen Sie die Anzahl der Starts und Abschlüsse, die wichtigsten Fragen und Antworten und die Anzahl der ersten und wiederholten Teilnehmer an."
+>abstract="**Dies kann Ihnen helfen** die Interaktionsstufen und Erfolgsraten Ihrer Umfragen besser zu verstehen.<br/>**Je nachdem, was Sie lernen** können Sie beliebig viele Dinge tun, z. B. zukünftige Umfragen anpassen, um eine bessere Teilnahme zu erzielen."
+
+<!-- markdownlint-enable MD034 -->
 
 Die folgenden Vorlagen sind verfügbar:
 
