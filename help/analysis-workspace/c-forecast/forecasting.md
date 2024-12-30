@@ -15,14 +15,14 @@ ht-degree: 1%
 
 {{select-package}}
 
-Prognosen enthalten eine statistische Prognose für zeitreihenbezogene Daten, die auf den bereits in Customer Journey Analytics vorhandenen historischen Daten basieren. Prognosen können in Freiformtabellen und Liniendiagrammvisualisierungen angezeigt werden. Benutzer können steuern, ob Prognosen automatisch über ihre Benutzereinstellungen in der Customer Journey Analytics-Benutzeroberfläche eingeschlossen werden. Sie können sie auch in den Spalteneinstellungen pro Spalte aktivieren und deaktivieren. Nur die erste Spalte, die einer Tabelle hinzugefügt wurde, ist bereits für Prognosen aktiviert.
+Die Prognose umfasst eine statistische Prognose für zeitreihenbezogene Daten, die auf den bereits im Customer Journey Analytics vorhandenen historischen Daten basiert. Prognosen können in Freiformtabellen und Liniendiagrammvisualisierungen angezeigt werden. Benutzerinnen und Benutzer können über ihre Benutzervoreinstellungen in der Customer Journey Analytics-Benutzeroberfläche steuern, ob Prognosen automatisch einbezogen werden. Sie können sie auch pro Spalte in den Spalteneinstellungen aktivieren und deaktivieren. Nur in der ersten Spalte, die zu einer Tabelle hinzugefügt wird, ist die Prognose bereits aktiviert.
 
-Prognosen sind in &quot;Select&quot; und höheren Customer Journey Analytics-Lizenzstufen verfügbar.
+Prognosen sind in „Select“ und höheren Customer Journey Analytics-Lizenzstufen verfügbar.
 
-Sie können die Prognose für Folgendes nutzen:
+Sie können Prognosen für Folgendes nutzen:
 
-* **Planung**: Durch die Analyse von Trends und die Vorhersage künftiger Ergebnisse können Sie potenzielle Chancen und Bedrohungen identifizieren und Ihre Strategien entsprechend anpassen. Auf diese Weise können Sie Ressourcen effizienter und effektiver zuweisen.
-* **Budgeting**: Durch Vorhersage künftiger Einnahmen und Ausgaben können Sie sicherstellen, dass Teams über ausreichende Mittel verfügen, um ihre Kosten zu decken und in Wachstumschancen zu investieren.
-* **Risikomanagement**: Durch Antizipierung künftiger Ereignisse und Trends können Sie proaktive Schritte zur Risikominderung und Minimierung möglicher Verluste unternehmen.
-* **Ressourcenzuordnung**: Durch Vorhersage der künftigen Nachfrage können Sie sicherstellen, dass die erforderlichen Ressourcen verfügbar sind, um die Kundenanforderungen zu erfüllen, und Lagerausfälle oder Überbelegungen vermeiden.
-* **Leistungsbewertung**: Durch Vergleich der tatsächlichen Ergebnisse mit den prognostizierten Ergebnissen können Sie Bereiche für Verbesserungen identifizieren und die erforderlichen Anpassungen vornehmen.
+* **Planung**: Durch die Analyse von Trends und die Prognose zukünftiger Ergebnisse können potenzielle Chancen und Bedrohungen identifiziert und Ihre Strategien entsprechend angepasst werden. Dies kann Ihnen helfen, Ressourcen effizienter und effektiver zuzuweisen.
+* **Budgetierung**: Durch die Prognose künftiger Einnahmen und Ausgaben können Sie sicherstellen, dass die Teams über ausreichende Mittel verfügen, um ihre Kosten zu decken und in Wachstumschancen zu investieren.
+* **Risikomanagement**: Durch Antizipation künftiger Ereignisse und Trends können Sie proaktive Schritte unternehmen, um Risiken zu minimieren und potenzielle Verluste zu minimieren.
+* **Ressourcenzuordnung**: Durch die Prognose des zukünftigen Bedarfs können Sie sicherstellen, dass die erforderlichen Ressourcen zur Erfüllung der Kundenanforderungen verfügbar sind und Lagerbestände oder Überbestände vermeiden.
+* **Leistungsbewertung**: Durch den Vergleich der tatsächlichen Ergebnisse mit den prognostizierten Ergebnissen können Sie Bereiche identifizieren, in denen Verbesserungen möglich sind, und notwendige Anpassungen vornehmen.

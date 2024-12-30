@@ -1,7 +1,7 @@
 ---
-description: Informationen zur Inhaltsverzeichnisfunktionalität in einem Workspace-Projekt
+description: Informationen zur Inhaltsverzeichnisfunktion in einem Workspace-Projekt
 keywords: Analysis Workspace
-title: Inhaltsverzeichnis
+title: 'Inhaltsverzeichnis '
 feature: Workspace Basics
 role: User
 exl-id: 4eb7de7a-ec40-4a59-afc4-94131e91a35f
@@ -14,9 +14,9 @@ ht-degree: 4%
 
 # Inhaltsverzeichnis 
 
-Sie können ein Inhaltsverzeichnis für ein Projekt in Analysis Workspace anzeigen, mit dem Sie schnell zwischen allen Bereichen und Visualisierungen wechseln können, die im Projekt vorhanden sind. Das Inhaltsverzeichnis ist besonders hilfreich, wenn Sie größere Projekte anzeigen, die viele Bedienfelder und Visualisierungen enthalten.
+Sie können ein Inhaltsverzeichnis für ein Projekt in Analysis Workspace anzeigen, sodass Sie schnell zwischen allen Bedienfeldern und Visualisierungen wechseln können, die im Projekt vorhanden sind. Das Inhaltsverzeichnis ist besonders nützlich, wenn Sie größere Projekte anzeigen, die viele Bedienfelder und Visualisierungen enthalten.
 
-+++ Sehen Sie sich ein Video an, um diese Funktion zu demonstrieren.
++++ Sehen Sie sich eine Videodemonstration dieser Funktion an.
 
 >[!VIDEO](https://video.tv.adobe.com/v/26990/?learn=on)
 
@@ -24,20 +24,20 @@ Sie können ein Inhaltsverzeichnis für ein Projekt in Analysis Workspace anzeig
 
 >[!TIP]
 >
->Sie können die Visualisierung des Bereichs-Headers verwenden, um einen Abschnitt in einem Bereich zu identifizieren und zu artikulieren, der viele Visualisierungen enthält. Diese Abschnitt-Header werden auch als Einträge im Inhaltsverzeichnis angezeigt.
+>Sie können die Abschnittskopfzeilenvisualisierung verwenden, um einen Abschnitt innerhalb eines Bedienfelds, das viele Visualisierungen enthält, zu identifizieren und zu artikulieren. Diese Abschnittsüberschriften werden auch als Einträge im Inhaltsverzeichnis angezeigt.
 >
 
 
-So zeigen Sie das Inhaltsverzeichnis in einem Projekt an:
+So zeigen Sie das Inhaltsverzeichnis eines Projekts an:
 
-1. Navigieren Sie in Analysis Workspace zu dem Projekt, in dem das Inhaltsverzeichnis angezeigt werden soll.
+1. Wechseln Sie in Analysis Workspace zu dem Projekt, in dem Sie das Inhaltsverzeichnis anzeigen möchten.
 
-1. Wählen Sie im Schaltflächenbedienfeld ![ViewList](/help/assets/icons/ViewList.svg) **[!UICONTROL Inhaltsverzeichnis]** aus. Weitere Informationen finden Sie unter [Analysis Workspace - Übersicht](/help/analysis-workspace/home.md) .<br/>
+1. Wählen Sie im Schaltflächenbereich die Option ![ViewList](/help/assets/icons/ViewList.svg) **[!UICONTROL Table of contents]** aus. Weitere Informationen finden Sie unter {](/help/analysis-workspace/home.md)}Übersicht über Analysis Workspace<br/>[
 
-   Das &quot;**[!UICONTROL Inhaltsverzeichnis]**&quot; für das Projekt wird angezeigt und jedes Bedienfeld wird standardmäßig erweitert.
+   Das **[!UICONTROL Inhaltsverzeichnis]** für das Projekt wird angezeigt, und jedes Bedienfeld wird standardmäßig erweitert.
 
-1. Wählen Sie im Inhaltsverzeichnis **[!UICONTROL eine Visualisierung aus.<br/>]**
+1. Wählen **[!UICONTROL im Inhaltsverzeichnis]** Visualisierung aus.<br/>
 
-   Die ausgewählte Visualisierung wird automatisch zu scrollen und kurz hervorgehoben.
+   Die ausgewählte Visualisierung wird automatisch zu gescrollt und kurz hervorgehoben.
 
-   ![TOC hervorgehoben](assets/toc-highlighted.png)
+   ![Inhaltsverzeichnis hervorgehoben](assets/toc-highlighted.png)

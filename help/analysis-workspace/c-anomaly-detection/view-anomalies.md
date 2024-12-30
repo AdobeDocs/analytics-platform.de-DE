@@ -1,6 +1,6 @@
 ---
-description: Erfahren Sie, wie Sie Anomalien in einer Tabelle oder in einem Liniendiagramm anzeigen können.
-title: Anomalien in Analysis Workspace anzeigen
+description: Erfahren Sie, wie Sie Anomalien in einer Tabelle oder einem Liniendiagramm anzeigen.
+title: So zeigen Sie Anomalien in Analysis Workspace an
 feature: Anomaly Detection
 exl-id: a76fd967-e4ae-4616-83ce-19de67300f0c
 role: User
@@ -23,7 +23,7 @@ Sie können Anomalien in einer Freiformtabelle für Zeitreihen anzeigen.
 
 1. Klicken Sie auf eine Stelle außerhalb des Einstellungsmenü, um die aktualisierte Tabelle anzuzeigen.
 
-   ![Eine Benachrichtigung zur Anomalieerkennung, die angibt, dass 15 % unter den erwarteten Wert liegen.](assets/anomaly_detected.png)
+   ![Benachrichtigung zur Anomalieerkennung, die 15 % unter den Erwartungen liegt.](assets/anomaly_detected.png)
 
 1. Anomalien werden in der Tabelle wie folgt angezeigt:
 
@@ -35,7 +35,7 @@ Sie können Anomalien in einer Freiformtabelle für Zeitreihen anzeigen.
 
 ## Darstellen von Anomalien in einem Liniendiagramm {#line-chart}
 
-Ein Liniendiagramm ist die einzige Visualisierung, mit der Sie Anomalien anzeigen können.
+Ein Liniendiagramm ist die einzige Visualisierung, die die Anzeige von Anomalien ermöglicht.
 
 So stellen Sie Anomalien in einem Liniendiagramm dar:
 
@@ -47,7 +47,7 @@ So stellen Sie Anomalien in einem Liniendiagramm dar:
 
 1. Klicken Sie auf eine Stelle außerhalb des Einstellungsmenü, um das aktualisierte Liniendiagramm anzuzeigen.
 
-   ![Ein Liniendiagramm mit einer anormal erkannten Meldung, die angibt, dass 15 % über den erwarteten Wert liegen.](assets/anomaly_linechart.png)
+   ![Ein Liniendiagramm mit einer Meldung über eine erkannte Anomalie, die angibt, dass die erwarteten Werte um 15 % überschritten wurden.](assets/anomaly_linechart.png)
 
    Anomalien werden im Liniendiagramm wie folgt dargestellt:
 

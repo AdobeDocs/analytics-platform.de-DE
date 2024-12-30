@@ -13,33 +13,33 @@ ht-degree: 20%
 
 # Dichte anzeigen
 
-Durch die Anpassung der Anzeigedichte können Sie mehr Daten auf dem Bildschirm anzeigen, indem Sie den vertikalen Abstand des linken Bedienfelds, der Freiformtabellen und der Kohortentabellen reduzieren. Drei Optionen stehen zur Wahl:
+Durch die Anpassung der Anzeigedichte können Sie mehr Daten auf dem Bildschirm anzeigen, indem Sie den vertikalen Abstand zwischen dem linken Bedienfeld, Freiformtabellen und Kohortentabellen reduzieren. Drei Optionen stehen zur Wahl:
 
 >[!BEGINTABS]
 
->[!TAB Compact]
+>[!TAB Kompakt]
 
-Dies ist die Version mit der am meisten gekürzten Ansicht.
+Dies ist die Version mit der am kürzesten gefassten Ansicht.
 
-![ Die Dichte der kompakten Ansicht.](assets/view-density-compact.png)
+![Die kompakten Ansichtsdichten.](assets/view-density-compact.png)
 
->[!TAB Komfort]
-
-Dies ist die Ansicht, die Sie in Workspace gewohnt sind.
-
-![ Die Dehnungsgrenzen der erweiterten Ansicht.](assets/view-density-comfortable.png)
-
->[!TAB Erweitert]
+>[!TAB Komfortabel]
 
 Dies ist die Ansicht, die Sie in Workspace gewohnt sind.
 
-![ Die Dehnungsgrenzen der erweiterten Ansicht.](assets/view-density-expanded.png)
+![Die erweiterten Ansichtsdichten.](assets/view-density-comfortable.png)
+
+>[!TAB erweitert]
+
+Dies ist die Ansicht, die Sie in Workspace gewohnt sind.
+
+![Die erweiterten Ansichtsdichten.](assets/view-density-expanded.png)
 
 >[!ENDTABS]
 
 
 So stellen Sie die Anzeigedichte ein:
 
-1. Navigieren Sie in Workspace zu &quot;**[!UICONTROL Projekte]**&quot;> &quot;**[!UICONTROL Projektinformationen und Einstellungen]**&quot;.
+1. Navigieren Sie in Workspace zu **[!UICONTROL Projekte]** > **[!UICONTROL Projektinformationen und -einstellungen]**.
 
-1. Wählen Sie die Option **[!UICONTROL Dichte anzeigen]** und danach **[!UICONTROL Speichern]** aus.
+1. Wählen Sie **[!UICONTROL Option „Dichte anzeigen]** und anschließend **[!UICONTROL Speichern]** aus.

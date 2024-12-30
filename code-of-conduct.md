@@ -1,6 +1,8 @@
 ---
 source-git-commit: 46e050f3acb874d9276e43092f12daa7c013b778
-translation-type: tm+mt
+workflow-type: tm+mt
+source-wordcount: '427'
+ht-degree: 100%
 
 ---
 # Adobe-Verhaltenskodex
@@ -33,7 +35,7 @@ Projektverantwortliche sind dafür verantwortlich, die Standards für akzeptable
 
 Projektverantwortliche haben das Recht und die Aufgabe, Kommentare, Commits, Code, Wiki-Änderungen, Fehlermeldungen und andere Beiträge zu entfernen, zu bearbeiten oder abzulehnen, die dem Verhaltenscode widersprechen, oder Beitragende temporär oder dauerhaft zu sperren, wenn deren Verhaltensweisen als unangemessen, bedrohlich, beleidigend oder schädlich eingestuft werden.
 
-## Umfang
+## Anwendungsbereich
 
 Dieser Verhaltenskodex findet innerhalb von Projektbereichen und in öffentlichen Bereichen Anwendung, wenn Einzelpersonen das Projekt oder die Community repräsentieren. Beispiele für die Repräsentation eines Projekts oder der Community sind die Verwendung einer offiziellen Projekt-E-Mail-Adresse, die Veröffentlichung über ein offizielles Social-Media-Konto oder das Handeln als ernannter Vertreter bei einer Online- oder Offline-Veranstaltung. Die Repräsentation eines Projekts kann durch die Projektverantwortlichen genauer definiert und erläutert werden.
 
@@ -46,4 +48,4 @@ Gegen Projektverantwortliche, die den Verhaltenskodex nicht nach Treu und Glaube
 
 ## Attribution
 
-Dieser Kodex wurde aus dem [Contributor Covenant](https://contributor-covenant.org), Version 1.4, abgeleitet, der hier verfügbar ist: [https://contributor-covenant.org/version/1/4.](https://contributor-covenant.org/version/1/4/)
+Dieser Verhaltenskodex wurde basierend auf dem [Contributor Covenant](https://contributor-covenant.org), Version 1.4, aufgestellt, siehe [https://www.contributor-covenant.org/de/version/1/4/code-of-conduct](https://www.contributor-covenant.org/de/version/1/4/code-of-conduct/)

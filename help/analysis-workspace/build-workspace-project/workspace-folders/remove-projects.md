@@ -8,11 +8,11 @@ role: User
 source-git-commit: 6cf6fa977a2c5dee28dcfe6f9446d294a9d9fd0f
 workflow-type: tm+mt
 source-wordcount: '157'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
-# Projekte löschen
+# Löschen von Projekten
 
 <!-- Is this article still needed -->
 

@@ -56,7 +56,7 @@ Nach Auswahl des Modells und der Identifizierung der im Berichtszeitraum befindl
 
 Beachten Sie im folgenden Beispiel die deutliche Verbesserung der Performance an Weihnachten und Neujahr:
 
-![Zwei Liniendiagramme mit Leistungsänderungen mit und ohne Urlaubsleistung.](assets/anomaly_statistics.png)
+![Zwei Liniendiagramme, die Leistungsänderungen mit und ohne Feiertagsleistung zeigen.](assets/anomaly_statistics.png)
 
 ## Anomalieerkennung für Granularität „Stündlich“ 
 

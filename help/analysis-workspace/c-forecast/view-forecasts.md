@@ -1,6 +1,6 @@
 ---
 description: Erfahren Sie, wie Sie Prognosen in einer Tabelle oder einem Liniendiagramm anzeigen können.
-title: Anzeigen von Prognosen in Analysis Workspace
+title: So zeigen Sie Prognosen in Analysis Workspace an
 feature: Visualizations
 role: User
 exl-id: 4a8b602c-e6aa-4a46-bba9-642387e6af88
@@ -17,17 +17,17 @@ Sie können Prognosen in einer Freiformtabelle oder in einem Liniendiagramm anze
 
 ## Anzeigen von Prognosen in einer Tabelle
 
-Sie können Prognosen in einer Zeitreihen-Freiformtabelle anzeigen. Wenn [!UICONTROL Vorschau anzeigen] für die Freiformtabelle in [Benutzereinstellungen](../user-preferences.md) aktiviert ist, wird die Prognose für die erste Metrikspalte, die der Tabelle hinzugefügt wurde, automatisch angezeigt. Für jede zusätzliche Spalte:
+Sie können Prognosen in einer Zeitreihen-Freiformtabelle anzeigen. Wenn [!UICONTROL Prognose anzeigen] für die Freiformtabelle in [Benutzereinstellungen](../user-preferences.md) aktiviert ist, wird automatisch eine Prognose für die erste Metrikspalte angezeigt, die der Tabelle hinzugefügt wurde. Für jede zusätzliche Spalte:
 
-1. Wählen Sie das Symbol für die Spalteneinstellungen ![Spalteneinstellungen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Settings_18_N.svg) in der Spaltenüberschrift aus und stellen Sie sicher, dass in der Optionsliste die Option **[!UICONTROL Vorschau anzeigen]** ausgewählt ist. Weitere Informationen finden Sie unter [Spalteneinstellungen](../visualizations/freeform-table/column-row-settings/column-settings.md).
+1. Wählen Sie das Symbol für die Spalteneinstellungen ![Spalteneinstellungen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Settings_18_N.svg) in der Spaltenüberschrift aus und stellen Sie sicher, dass **[!UICONTROL Prognose anzeigen]** in der Optionsliste ausgewählt ist. Weitere Informationen finden Sie unter [Spalteneinstellungen](../visualizations/freeform-table/column-row-settings/column-settings.md).
 
-1. Klicken Sie außerhalb des Menüs **[!UICONTROL Spalteneinstellungen]** auf , um die Einstellung zu speichern und die aktualisierte Tabelle anzuzeigen.
+1. Klicken Sie außerhalb des Menüs **[!UICONTROL Spalteneinstellungen]**, um die Einstellung zu speichern und die aktualisierte Tabelle anzuzeigen.
 
-Die Vorausschätzungen sind in der Tabelle wie folgt dargestellt:
+Die Prognosen sind in der Tabelle wie folgt dargestellt:
 
-![Vorschau in Tabelle anzeigen](assets/show-forecast-table.png)
+![Prognose in Tabelle anzeigen](assets/show-forecast-table.png)
 
-* Der Prognosewert und -prozentsatz für jede Zelle werden in **dunkelgrau** angezeigt.
+* Der Prognosewert und der Prozentsatz für jede Zelle werden in **dunkelgrau** angezeigt.
 * Um einen Prognosewert anzugeben, ein Prognosesymbol <img src="./assets/forecast.svg" alt="Prognosesymbol" width="20" /> wird in der oberen rechten Ecke der Zelle angezeigt.
 
 
@@ -35,20 +35,20 @@ Die Vorausschätzungen sind in der Tabelle wie folgt dargestellt:
 
 Ein Liniendiagramm ist die einzige Visualisierung, mit der Sie Prognosen anzeigen können.
 
-1. Wählen Sie im Visualisierungs-Header das Einstellungssymbol ![Spalteneinstellungen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Settings_18_N.svg) aus und stellen Sie sicher, dass in der Optionsliste die Option **[!UICONTROL Vorschau anzeigen]** ausgewählt ist.
+1. Wählen Sie das Einstellungssymbol ![Spalteneinstellungen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Settings_18_N.svg) in der Visualisierungskopfzeile aus und stellen Sie sicher, dass **[!UICONTROL Prognose anzeigen]** in der Optionsliste ausgewählt ist.
 
-1. (optional) Damit die Prognosen das Diagramm korrekt skalieren können, wählen Sie **[!UICONTROL Vorschau zum Skalieren der Y-Achse zulassen]** aus. Diese Option ist standardmäßig nicht ausgewählt, da sie manchmal ein weniger lesbares Diagramm rendern kann.
+1. (Optional) Damit die Prognosen das Diagramm ordnungsgemäß skalieren können, wählen Sie **[!UICONTROL Prognose auf Y-Achse skalieren lassen]** aus. Diese Option ist standardmäßig nicht aktiviert, da dadurch unter Umständen ein Diagramm weniger gut lesbar wird.
 
-1. Klicken Sie außerhalb des Menüs **[!UICONTROL Einstellungen]** auf , um das aktualisierte Liniendiagramm anzuzeigen.
+1. Klicken Sie außerhalb des **[!UICONTROL Einstellungen]**, um das aktualisierte Liniendiagramm anzuzeigen.
 
 Die Prognosen werden im Liniendiagramm wie folgt angezeigt:
 
-![Vorschau in Liniendiagramm anzeigen](assets/show-forecast-linechart.png)
+![Prognose im Liniendiagramm anzeigen](assets/show-forecast-linechart.png)
 
-* Die aktuellen Werte für die Metriken im Liniendiagramm werden durch einen vertikalen Balken angezeigt. Wenn Sie den Mauszeiger über diese vertikale Zeile bewegen, wird ein Popup mit dem letzten aktuellen Datum angezeigt.
-* Prognostizierte Werte für eine oder mehrere Metriken werden über gepunktete Linien direkt in der vertikalen Leiste angezeigt. Sie können den Mauszeiger über einen Datenpunkt für eine Metrik bewegen. Dadurch wird ein Popup mit folgenden Elementen angezeigt:
+* Die aktuellen Werte für die Metriken im Liniendiagramm werden durch einen vertikalen Balken angezeigt. Wenn Sie den Mauszeiger über diese vertikale Linie bewegen, wird ein Popup mit dem letzten aktuellen Datum angezeigt.
+* Prognostizierte Werte für eine oder mehrere Metriken werden direkt über den vertikalen Balken mit gepunkteten Linien angezeigt. Sie können den Mauszeiger über einen beliebigen Datenpunkt für eine Metrik bewegen. Dadurch wird ein Popup angezeigt mit:
    * Datum der Prognose
-   * prognostizierter Wert für die Metrik
-   * Obergrenze des prognostizierten Werts für die Metrik
+   * Prognostizierter Wert für die Metrik
+   * Obere Grenze des prognostizierten Werts für die Metrik
    * Untergrenze des prognostizierten Werts für die Metrik
-* Der schattierte Bereich zeigt das Konfidenzband der Prognose.
+* Der schattierte Bereich zeigt das Konfidenzband der Prognose an.

@@ -8,13 +8,13 @@ role: User
 source-git-commit: 747e77b964006404d70b500b28ec44005d65d944
 workflow-type: tm+mt
 source-wordcount: '71'
-ht-degree: 73%
+ht-degree: 100%
 
 ---
 
 # Durchführen einer erweiterten Analyse
 
-Bevor Sie wie unten beschrieben mit der Erstellung von erweiterten Analyseberichten und -visualisierungen beginnen, sollten Sie die [grundlegende Analyse](/help/analysis-workspace/perform-basic-analysis.md) verstehen.
+Bevor Sie wie unten beschrieben mit der Erstellung von Berichten und Visualisierungen zur erweiterten Analyse beginnen, sollten Sie die [grundlegende Analyse](/help/analysis-workspace/perform-basic-analysis.md) verstanden haben.
 
 Die erweiterte Analyse nutzt Funktionen wie [Flussdiagramme](/help/analysis-workspace/visualizations/c-flow/flow.md), [Attribution](/help/analysis-workspace/c-panels/attribution.md), [Fallout-Diagramme](/help/analysis-workspace/visualizations/fallout/fallout-flow.md) und [Dimensionsaufschlüsselungen](/help/components/dimensions/t-breakdown-fa.md).
 

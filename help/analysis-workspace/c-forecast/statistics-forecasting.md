@@ -1,6 +1,6 @@
 ---
-description: Die Prognosen in Analysis Workspace verwenden eine Reihe fortschrittlicher statistischer Verfahren zur Bestimmung der Prognosewerte.
-title: In der Prognose verwendete statistische Verfahren
+description: Prognosen in Analysis Workspace verwenden eine Reihe fortschrittlicher statistischer Verfahren, um Prognosewerte zu bestimmen.
+title: Für Prognosen verwendete statistische Verfahren
 feature: Visualizations
 role: User
 exl-id: f042a6dd-6af5-4bdd-afc9-07546d8ded6e
@@ -13,16 +13,16 @@ ht-degree: 6%
 
 # Im Prognosedienst verwendete statistische Verfahren
 
-Der Prognosedienst unterstützt derzeit Prophet und funktioniert für die meisten Daten effizient und zuverlässig. Prophet ist ein von Meta entwickeltes Open-Source-Prognospaket. Sie dekomprimiert Daten in Komponenten für Trends, saisonale Effekte und Ereignisse. Das Prophet-Modell ist effizient und skaliert gut auf viele Prognoseanwendungen. Außerdem funktioniert das Modell robust gegen Ausreißer und fehlende Daten.
+Der Prognoseservice unterstützt derzeit Prophet und hat sich bei den meisten Daten als effizient und zuverlässig erwiesen. Prophet ist ein weit verbreitetes Open-Source-Prognosepaket, das von Meta entwickelt wurde. Sie zerlegt Daten in Komponenten für Trends, Saisonalen Ereignisse und Ereignisse. Das Prophet-Modell ist effizient und lässt sich gut auf viele Prognoseanwendungen skalieren. Außerdem arbeitet das Modell zuverlässig gegen Ausreißer und fehlende Daten.
 
-In Zukunft werden Modelle auf der Basis von Heuristik ausgewählt, z. B. Online Approximate Gaussian Process für Streaming-Daten oder NeuralProphet , wenn Benutzer die beste Vorhersagegenauigkeit angeben und längere Wartezeiten tolerieren können.
+In Zukunft gibt es Pläne, Modelle auszuwählen, die auf Heuristiken basieren, zum Beispiel wählen Sie Online Approximate Gauß Process für Streaming-Daten oder NeuralProphet, wenn Benutzer die beste Prognosegenauigkeit angeben und längere Wartezeiten tolerieren können.
 
-Der Dienst skaliert Daten automatisch herunter, wenn zu viele Datenpunkte vorhanden sind, um die Reaktionszeit sicherzustellen. Die Zielantwortzeit beträgt ca. 3 Sekunden. Wenn die Anzahl der Datenpunkte derzeit 5500 überschreitet, werden die Zeitreihendaten je nach Datenlänge adaptiv nach unten gesampelt. Die Ausgabe wird wieder in die ursprüngliche Datenfrequenz konvertiert, sodass der adaptive Sampling-Prozess keine Auswirkungen auf Benutzererlebnisse hat.
+Der Service skaliert Daten automatisch herunter, wenn zu viele Datenpunkte vorhanden sind, um die Reaktionszeit sicherzustellen. Die Ziel-Reaktionszeit ist auf ca. 3 Sekunden eingestellt. Wenn die Anzahl der Datenpunkte 5.500 überschreitet, werden die Zeitreihendaten derzeit adaptiv heruntergerechnet, je nach Länge der Daten. Die Ausgabe wird wieder in die ursprüngliche Datenfrequenz konvertiert, sodass der adaptive Sampling-Prozess keine Auswirkungen auf das Benutzererlebnis hat.
 
-Die Auswirkungen auf die Ferien werden berücksichtigt, wenn Daten aus mehreren Jahren verfügbar sind. Derzeit ist die Liste der fraglichen Feiertage:
+Die Auswirkungen auf die Feiertage werden berücksichtigt, wenn mehrjährige Daten verfügbar sind. Derzeit sind folgende Feiertage in Betracht zu ziehen:
 
 * Martin Luther King Day
-* Präsident Day
+* Tag der Präsidenten
 * Memorial Day (nur USA)
 * 4. Juli
 * Thanksgiving (nur USA)
@@ -30,13 +30,13 @@ Die Auswirkungen auf die Ferien werden berücksichtigt, wenn Daten aus mehreren 
 * Cyber Monday (nur USA)
 * Weihnachten
 
-Der Dienst kann auch eine einfache Anomalie (Ausreißer) entfernen, z. B. indem Datenpunkte entfernt werden, die außerhalb des sechs Sigma-Bereichs liegen. Dies ist standardmäßig nicht aktiviert, da davon ausgegangen wird, dass alle Datenpunkte gültig sind. Anomalien können sich negativ auf die Modellqualität auswirken, auch wenn das Eigenschaftsmodell gegenüber Ausreißern im Allgemeinen widerstandsfähig ist.
+Der Service kann auch eine einfache Anomalie (Ausreißer) entfernen, z. B. durch Entfernen von Datenpunkten, die außerhalb des Sechs-Sigma-Bereichs liegen. Dies ist nicht standardmäßig aktiviert, da davon ausgegangen wird, dass alle Datenpunkte gültig sind. Anomalien können sich negativ auf die Modellqualität auswirken, auch wenn das Prophet-Modell im Allgemeinen gegenüber Ausreißern widerstandsfähig ist.
 
-Der Dienst akzeptiert benutzerdefinierte saisonale Einstellungen, z. B. tägliche und wöchentliche Saisonabhängigkeit. Andernfalls wählt das Modell automatisch die Saisonabhängigkeit aus. Für unterschiedliche Datengranularität verwendet der Dienst verschiedene Längen historischer Daten, um Prognosemodelle zu erstellen. Beispielsweise ruft er für tägliche Daten mehr als ein Jahr Daten ab (sofern verfügbar). Für stündliche Daten werden Daten aus acht Wochen abgerufen (sofern verfügbar). Das Abrufen von Daten kann zeitaufwendig sein und manchmal zu längerer Wartezeit führen.
+Der Service akzeptiert benutzerspezifische Saisoneinstellungen, z. B. die tägliche und die wöchentliche Saisonalität. Andernfalls wählt das Modell automatisch die Saisonabhängigkeit aus. Für unterschiedliche Datengranularität verwendet der Service verschiedene Längen historischer Daten zum Erstellen von Prognosemodellen. Bei täglichen Daten ruft sie beispielsweise Daten aus mehr als einem Jahr ab (falls verfügbar). Für stündliche Daten werden Daten aus acht Wochen abgerufen (falls verfügbar). Das Abrufen von Daten kann zeitaufwendig sein und manchmal zu längerer Wartezeit führen.
 
-Die historischen Daten, die für eine andere Zeitgranularität erforderlich sind:
+Die für eine andere Zeitgranularität erforderlichen historischen Daten:
 
-| Granularität | Erforderliche historische Daten |
+| Granularität | Historische Daten erforderlich |
 |---|--:|
 | Minute | 3 Tage |
 | Stunde | 2 Wochen |
@@ -47,13 +47,13 @@ Die historischen Daten, die für eine andere Zeitgranularität erforderlich sind
 | Jahr | 8 Jahre |
 
 
-Das Prognosergebnis für jede angegebene Zeit enthält ein Prognoseintervall (definiert durch die untere und obere Grenze), das den künftigen beobachteten Wert von 95 % der Zeit enthalten soll, der häufig als Konfidenzintervall bezeichnet wird. Es gibt keine Grenze, wie weit der Dienst in die Zukunft vorhersagen kann. Die Unsicherheit bei den Prognosen steigt jedoch mit den Daten weiter in die Zukunft, was durch ein breiteres Prognoseintervall im Laufe der Zeit widergespiegelt wird.
+Das Prognoseergebnis für jeden angegebenen Zeitpunkt umfasst ein Prognoseintervall (definiert durch die untere und obere Grenze), das den zukünftigen beobachteten Wert zu 95 % der Zeit enthalten soll, häufig als Konfidenzintervall bezeichnet. Es gibt keine Begrenzung dafür, wie weit der Service in die Zukunft vorhersagen kann. Allerdings nimmt die Unsicherheit bei Prognosen mit Daten, die weiter in die Zukunft reichen, zu, was sich in einem größeren Prognoseintervall im Zeitverlauf widerspiegelt.
 
-Der Dienst stellt keine Annahmen über Benutzerdaten auf. Beispielsweise geht der Dienst nicht davon aus, dass die Daten nicht negativ sind. Dies bedeutet, dass die Prognosen und/oder ihre Grenzen negativ sein können, wenn die Daten einen starken Abwärtstrend aufweisen, auch wenn alle beobachteten Datenpunkte nicht negativ sind.
+Der Service geht in Bezug auf Benutzerdaten von keiner Annahme aus. Beispielsweise geht der Service nicht davon aus, dass die Daten nicht negativ sind. Dies bedeutet, dass die Prognosen und/oder deren Grenzen negativ sein können, wenn die Daten einen starken Abwärtstrend aufweisen, obwohl alle beobachteten Datenpunkte nicht negativ sind.
 
 
 ## Verweise
 
-1. Taylor, Sean J. und Benjamin Letham: *Vorhersagen im Maßstab.* Der amerikanische Statistiker 72.1 (2018): 37-45.
-1. Triebe, Oskar, et al.: *Neuralprophet: Erklärbare Vorhersagen im Maßstab.* arXiv preprint arXiv:2111.15397(2021).
-1. Zhang und Arbor: *Anomalieerkennung für Zeitreihen.* US-Patentanmeldung #18/057883.
+1. Taylor, Sean J. und Benjamin Letham: *Forecasting at scale.* The American Statistician 72.1 (2018): 37-45.
+1. Triebe, Oskar u. a.: *Neuralprophet: Erklärbare Vorhersagen in großem Maßstab.* arXiv-Vorabdruck arXiv:2111.15397(2021).
+1. Zhang and Arbor: *Zeitreihen-Anomalieerkennung.* US-#18/057883.

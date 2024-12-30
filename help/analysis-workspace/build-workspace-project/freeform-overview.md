@@ -14,31 +14,31 @@ ht-degree: 8%
 
 # Übersicht über Projekte
 
-Mit Workspace-Projekten können Sie Bedienfelder, Visualisierungen und Komponenten kombinieren, um Ihre Analyse zu gestalten und für andere in Ihrem Unternehmen freizugeben. Bevor Sie mit dem ersten Projekt beginnen, erfahren Sie, wie Sie auf Ihre Projekte zugreifen, darin navigieren und sie verwalten können.
+Mit Workspace-Projekten können Sie Bedienfelder, Visualisierungen und Komponenten kombinieren, um eine Analyse zu erstellen, und diese für andere Personen in Ihrem Unternehmen freigeben. Bevor Sie mit Ihrem ersten Projekt beginnen, erfahren Sie, wie Sie auf Ihre Projekte zugreifen, darin navigieren und sie verwalten können.
 
-Um auf Projekte im Customer Journey Analytics zuzugreifen, wählen Sie **[!UICONTROL Workspace]** aus.  Der Manager **[!UICONTROL Projekte]** listet alle Projekte auf, deren Inhaber Sie sind, sowie Projekte, die für Sie freigegeben wurden. Der Projektmanager mit der Projektliste ist auch die Standard-Landingpage für Customer Journey Analytics, sofern Sie unter Voreinstellungen nichts anderes konfiguriert haben.
+Um auf Projekte in Customer Journey Analytics zuzugreifen, wählen Sie **[!UICONTROL Workspace]** aus.  Der **[!UICONTROL Projekte]**-Manager listet alle Projekte auf, deren Inhaber Sie sind, bzw. Projekte, die für Sie freigegeben wurden. Der Projekt-Manager mit der Projektliste ist auch die standardmäßige Landingpage für das Customer Journey Analytics, es sei denn, in den Voreinstellungen wurde etwas Anderes konfiguriert.
 
 ![Projekt-Landingpage mit der Projektliste.](assets/projects.png)
 
 
 ## Titelbereich
 
-Im Titelbereich können Sie ein Projekt erstellen, einen Ordner bearbeiten und ein Bedienfeld mit zusätzlichen Kacheln ein- oder ausblenden.
+Im Titelbereich können ein Projekt erstellen, einen Ordner erstellen, Ihre Voreinstellungen bearbeiten und ein Bedienfeld mit zusätzlichen Kacheln ein- oder ausblenden.
 
-* Um einen linken Bereich ein- oder auszublenden, in dem Sie zwischen **[!UICONTROL Projekten]** und **[!UICONTROL Lernen]** wählen können, wählen Sie ![Leiste](/help/assets/icons/Rail.svg) aus.
-* Der Titel zeigt Projekte, die optional mit einem Pfad zum ausgewählten Ordner hinzugefügt werden. Beispiel: [!UICONTROL Projekte] > **[!UICONTROL Unternehmensordner]**. Sie können einzelne Unterordnerteile auswählen, um direkt zum jeweiligen Ordner zu gelangen.
-* Um Bausteine für ein [**[!UICONTROL leeres Projekt]**](create-projects.md), [**[!UICONTROL leeres mobiles Scorecard]**](/help/mobile-app/create-scorecard.md), [**[!UICONTROL geführte Analyse]**](/help/guided-analysis/overview.md), **[!UICONTROL Öffnen Sie die Dokumentation]** und **[!UICONTROL Versionshinweise öffnen]** anzuzeigen, wählen Sie ![ChevronDown](/help/assets/icons/ChevronDown.svg) **[!UICONTROL Mehr anzeigen]** aus. Um den Bereich mit Kacheln auszublenden, wählen Sie ![ChevronDown](/help/assets/icons/ChevronDown.svg) **[!UICONTROL Weniger anzeigen]**.
-* Je nachdem, was Sie anzeigen möchten, können Sie mit dem [Selektor anzeigen](#show-selector) die Voreinstellungen bearbeiten und Aktionen für den aktuellen Ordner ausführen, der in **[!UICONTROL Projekten]** angezeigt wird:
+* Um ein linkes Bedienfeld ein- oder auszublenden, in dem Sie zwischen **[!UICONTROL Projekten]** und **[!UICONTROL Lernen]** wählen können, wählen Sie ![Leiste](/help/assets/icons/Rail.svg).
+* Der Titel zeigt Projekte an, die optional mit einem Pfad zu dem ausgewählten Ordner hinzugefügt wurden. Beispiel: [!UICONTROL Projekte] > **[!UICONTROL Unternehmensordner]**. Sie können einzelne Unterordnerteile auswählen, um direkt zu dem jeweiligen Ordner zu gehen.
+* Um Kacheln für ein [**[!UICONTROL Leeres Projekt]**](create-projects.md), [**[!UICONTROL Leere mobile Scorecard]**](/help/mobile-app/create-scorecard.md), [**[!UICONTROL Geführte Analyse]**](/help/guided-analysis/overview.md), **[!UICONTROL Dokumentation öffnen]** und **[!UICONTROL Versionshinweise öffnen]**, wählen Sie ![](/help/assets/icons/ChevronDown.svg) ChevronDown **[!UICONTROL Mehr anzeigen]**. Um den Bereich mit Kacheln auszublenden, wählen Sie ![ChevronDown](/help/assets/icons/ChevronDown.svg) **[!UICONTROL Weniger anzeigen]**.
+* Je nachdem, was angezeigt werden soll, können Sie mit der [Auswahl anzeigen](#show-selector) die Voreinstellungen bearbeiten und Aktionen für den aktuellen Ordner durchführen, der in &quot;**[!UICONTROL &quot; sichtbar]**:
 
   | Aktion | Beschreibung |
   |---|---|
-  | **[!UICONTROL Erstellen eines Projekts]** | Wählen Sie &quot;[Neues Projekt erstellen](create-projects.md)&quot;aus. |
-  | **[!UICONTROL Ordner erstellen]** | Wählen Sie &quot;[Erstellen eines neuen Ordners](workspace-folders/create-folders.md)&quot;aus. |
-  | ![UserAdmin](/help/assets/icons/UserAdmin.svg) **[!UICONTROL Voreinstellungen bearbeiten]** | [Bearbeiten Sie die Voreinstellungen](/help/analysis-workspace/user-preferences.md) für alle Ihre Projekte. Wenn der Breadcrumb zu begrenztem Speicherplatz führt, ist diese Aktion Teil des Untermenüs ![Mehr](/help/assets/icons/More.svg) . |
-  | **[!UICONTROL Projekte hinzufügen]** | Wählen Sie &quot;[add projects](workspace-folders/add-projects.md)&quot;zum aktuellen Ordner aus. Wenn der Breadcrumb zu begrenztem Speicherplatz führt, ist diese Aktion Teil des Untermenüs ![Mehr](/help/assets/icons/More.svg) . |
-  | **[!UICONTROL Ordner umbenennen]** | [ Benennt den aktuellen Ordner um ](workspace-folders/manage-folders.md#rename-folders). |
-  | **[!UICONTROL Ordner verschieben]** | [Verschiebt](workspace-folders/manage-folders.md#move-folders) den aktuellen Ordner. |
-  | **[!UICONTROL Ordner löschen]** | [Löscht ](workspace-folders/manage-folders.md#delete-folders) den aktuellen Ordner. |
+  | **[!UICONTROL Erstellen eines Projekts]** | Wählen Sie aus[ um ein neues Projekt zu ](create-projects.md). |
+  | **[!UICONTROL Ordner erstellen]** | Wählen Sie aus[ um einen neuen Ordner zu ](workspace-folders/create-folders.md). |
+  | ![UserAdmin](/help/assets/icons/UserAdmin.svg) **[!UICONTROL Voreinstellungen bearbeiten]** | [Voreinstellungen bearbeiten](/help/analysis-workspace/user-preferences.md) für alle Ihre Projekte. Wenn der Breadcrumb zu begrenztem Platz führt, ist diese Aktion Teil des Untermenüs ![Mehr](/help/assets/icons/More.svg). |
+  | **[!UICONTROL Projekte hinzufügen]** | Wählen Sie aus[ um Projekte ](workspace-folders/add-projects.md) aktuellen Ordner hinzuzufügen. Wenn der Breadcrumb zu begrenztem Platz führt, ist diese Aktion Teil des Untermenüs ![Mehr](/help/assets/icons/More.svg). |
+  | **[!UICONTROL Ordner umbenannt]** | [Benennt](workspace-folders/manage-folders.md#rename-folders) den aktuellen Ordner um. |
+  | **[!UICONTROL Ordner verschieben]** | [Verschiebt ](workspace-folders/manage-folders.md#move-folders) aktuellen Ordner. |
+  | **[!UICONTROL Ordner löschen]** | [Löscht ](workspace-folders/manage-folders.md#delete-folders) aktuellen Ordner. |
 
 
 
@@ -46,67 +46,67 @@ Im Titelbereich können Sie ein Projekt erstellen, einen Ordner bearbeiten und e
 ## Projektliste
 
 
-In der Projektliste werden alle Projekte angezeigt, die Ihnen gehören und für Sie freigegeben wurden. Die Liste umfasst die folgenden Spalten:
+In der Projektliste werden alle Projekte angezeigt, deren Eigentümer Sie sind und die für Sie freigegeben wurden. Die Liste umfasst die folgenden Spalten:
 
 | Spalte | Beschreibung |
 | --- | --- | 
-| ![SelectBox](/help/assets/icons/SelectBox.svg) | Wenn ein oder mehrere Projekte ausgewählt sind, wird am unteren Rand der Projektoberfläche eine blaue Aktionsleiste angezeigt. Weitere Informationen finden Sie unter [Aktionen](#actions) . |
-| ![UnausgefüllterStern](/help/assets/icons/StarOutline.svg) | Wählen Sie diese Option aus, um ein Projekt mit ![Stern](/help/assets/icons/Star.svg) oder mit ![StarOutline](/help/assets/icons/StarOutline.svg) zu favorisieren. |
-| **[!UICONTROL Titel und Beschreibung]** | Um das Projekt zu bearbeiten, wählen Sie den Titellink aus, der das [Workspace-Projekt](/help/analysis-workspace/home.md) öffnet. Für Sie freigegebene Projekte werden mit ![Freigabe](/help/assets/icons/ShareAlt.svg) angegeben. Wählen Sie ![InfoOutline](/help/assets/icons/InfoOutline.svg) aus, um ein Popup-Menü mit weiteren Details zum Projekt anzuzeigen. Wählen Sie ![Mehr](/help/assets/icons/More.svg) aus, um ein Kontextmenü mit Aktionen zu öffnen. Weitere Informationen finden Sie unter [Aktionen](#actions) . |
-| **[!UICONTROL Typ]** | Ein Workspace-Projekt, ein Ordner ![FolderUser](/help/assets/icons/FolderUser.svg) oder eine [mobile Scorecard](/help/mobile-app/home.md). |
+| ![SelectBox](/help/assets/icons/SelectBox.svg) | Wenn ein oder mehrere Projekte ausgewählt sind, wird unten in der Projektoberfläche eine blaue Aktionsleiste angezeigt. Weitere Informationen finden [ unter ](#actions). |
+| ![UnausgefüllterStern](/help/assets/icons/StarOutline.svg) | Wählen Sie aus![ um ein Projekt ](/help/assets/icons/Star.svg)StarOutline“ oder ![StarOutline](/help/assets/icons/StarOutline.svg) zu bevorzugen. |
+| **[!UICONTROL Titel und Beschreibung]** | Um das Projekt zu bearbeiten, wählen Sie den Titel-Link aus, über den das [Workspace-Projekt geöffnet wird](/help/analysis-workspace/home.md). Für Sie freigegebene Projekte sind mit &quot;![&quot; ](/help/assets/icons/ShareAlt.svg). Wählen Sie ![InfoOutline](/help/assets/icons/InfoOutline.svg) aus, um ein Popup-Menü mit weiteren Details zum Projekt anzuzeigen. Wählen Sie ![Mehr](/help/assets/icons/More.svg), um ein Kontextmenü mit Aktionen zu öffnen. Weitere Informationen finden [ unter ](#actions). |
+| **[!UICONTROL Typ]** | Ein Workspace-Projekt, ein ![FolderUser](/help/assets/icons/FolderUser.svg)-Ordner oder eine [mobile Scorecard](/help/mobile-app/home.md). |
 | **[!UICONTROL Tags]** | Die auf das Projekt angewendeten Tags. |
-| Eingeplant | Gibt an, ob ein Projekt für die E-Mail-Versendung an Empfänger geplant ist. Optionen sind ![StatusGreen](/help/assets/icons/StatusGreen.svg) **[!UICONTROL On]** oder ![StatusGray](/help/assets/icons/StatusGray.svg) **[!UICONTROL Off]**. Siehe [Projektdaten an andere senden](/help/analysis-workspace/export/t-schedule-report.md). |
-| **[!UICONTROL Freigegebener Link (jeder)]** | Ob ein Projekt für andere freigegeben wird, auch für Personen, die keinen Zugriff auf Analysis Workspace haben. Optionen sind ![StatusGreen](/help/assets/icons/StatusGreen.svg) **[!UICONTROL Active]** oder ![StatusGray](/help/assets/icons/StatusGray.svg) **[!UICONTROL Inaktiv]**. Weitere Informationen finden Sie unter [Freigeben eines Projekts für andere (keine Anmeldung erforderlich)](/help/analysis-workspace/curate-share/share-projects.md#share-a-project-with-anyone-no-login-required) in [Freigeben von Projekten](/help/analysis-workspace/curate-share/share-projects.md) . |
-| **[!UICONTROL Projektrolle]** | Ihre Rolle für das Projekt. Die Optionen sind: Bearbeiten, Duplizieren, Anzeigen. Weitere Informationen finden Sie unter [Projektrollen](/help/analysis-workspace/curate-share/curate.md) . |
+| Eingeplant | Ob ein Projekt für die E-Mail an Empfänger geplant ist. Die Optionen sind ![StatusGreen](/help/assets/icons/StatusGreen.svg) **[!UICONTROL On]** oder ![StatusGrey](/help/assets/icons/StatusGray.svg) **[!UICONTROL Off]**. Siehe [Senden von Projektdaten an andere](/help/analysis-workspace/export/t-schedule-report.md). |
+| **[!UICONTROL Freigegebener Link (alle)]** | Ob ein Projekt für alle freigegeben wird, auch für Personen, die keinen Zugriff auf Analysis Workspace haben. Die Optionen sind ![StatusGreen](/help/assets/icons/StatusGreen.svg) **[!UICONTROL Active]** oder ![StatusGray](/help/assets/icons/StatusGray.svg) **[!UICONTROL Inaktiv]**. Weitere Informationen finden Sie [Freigeben eines Projekts für alle (keine Anmeldung erforderlich](/help/analysis-workspace/curate-share/share-projects.md#share-a-project-with-anyone-no-login-required) unter [Freigeben ](/help/analysis-workspace/curate-share/share-projects.md) Projekten). |
+| **[!UICONTROL Projektrolle]** | Ihre Rolle für das Projekt. Die Optionen sind: Bearbeiten, Duplizieren, Anzeigen. Weitere Informationen finden [ unter ](/help/analysis-workspace/curate-share/curate.md)Projektrollen“. |
 | **[!UICONTROL Datenansicht]** | Die Datenansicht, mit der das Projekt verknüpft ist. |
 | **[!UICONTROL Inhabende]** | Die Person, die dieses Projekt erstellt hat (entweder Sie oder eine Person, die das Projekt für Sie freigegeben hat). |
-| **[!UICONTROL Freigegeben für]** | Benutzer, für die das Projekt freigegeben wurde. |
+| **[!UICONTROL Freigegeben für]** | Benutzende, für die das Projekt freigegeben wurde. |
 | **[!UICONTROL Zuletzt geändert]** | Datum und Zeitpunkt der letzten Änderung des Projekts. |
-| **[!UICONTROL Zuletzt geöffnet]** | Datum und Uhrzeit des letzten Öffnens des Projekts. |
+| **[!UICONTROL Zuletzt geöffnet]** | Datum und Uhrzeit der letzten Öffnung des Projekts. |
 | **[!UICONTROL Projekt-ID]** | Die ID des Projekts. |
-| **[!UICONTROL Längster Datumsbereich]** | Der längste Datumsbereich eines der Bedienfelder oder Visualisierungen im Projekt. |
+| **[!UICONTROL Längster Datumsbereich]** | Der längste Datumsbereich von allen Bedienfeldern oder Visualisierungen im Projekt. |
 | **[!UICONTROL Anzahl der Abfragen]** | Die Gesamtzahl der im Projekt enthaltenen Abfragen. |
 | **[!UICONTROL Ort]** | Der Ordner, in dem sich das Projekt befindet. |
 
-Bewegen Sie den Mauszeiger über eine Spaltenüberschrift, um ![ChevronDown](/help/assets/icons/ChevronDown.svg) anzuzeigen, und wählen Sie im Kontextmenü die Option aus:
+Bewegen Sie den Mauszeiger über eine beliebige Spaltenüberschrift, um ![ChevronDown](/help/assets/icons/ChevronDown.svg) anzuzeigen, und wählen Sie aus dem Kontextmenü aus:
 
-* **[!UICONTROL Aufsteigende Sortierung]**
-* **[!UICONTROL Absteigende Sortierung]**
-* **[!UICONTROL Spaltengröße ändern]**. Es wird eine blaue Linie angezeigt, die Sie bei der Größenanpassung der Spalte unterstützt.
+* **[!UICONTROL Aufsteigend sortieren]**
+* **[!UICONTROL Absteigend sortieren]**
+* **[!UICONTROL Spaltengröße ändern]**. Eine blaue Linie wird angezeigt, um Ihnen zu helfen, die Größe der Spalte zu ändern.
 
 ### Aktionen
 
-Sie können Aktionen für ein oder mehrere Projekte über das Kontextmenü ![Mehr](/help/assets/icons/More.svg) oder die blaue Aktionsleiste ausführen.
+Sie können Aktionen für ein oder mehrere Projekte mithilfe des Kontextmenüs (![) ](/help/assets/icons/More.svg) der blauen Aktionsleiste durchführen.
 
 | Symbol | Aktion | Beschreibung |
 |:---:| ---|---|
-| ![CrossSize75](/help/assets/icons/Close.svg) | **[!UICONTROL *x *selected]** | Heben Sie die Auswahl der ausgewählten Projekte und Ordner auf und entfernen Sie die blaue Aktionsleiste. |
+| ![CrossSize75](/help/assets/icons/Close.svg) | **[!UICONTROL *x *ausgewählt]** | Heben Sie die Auswahl der ausgewählten Projekte und Ordner auf und entfernen Sie die blaue Aktionsleiste. |
 | ![Löschen](/help/assets/icons/Delete.svg) | **[!UICONTROL Löschen]** | Löschen Sie ein oder mehrere Projekte oder Ordner. Sie werden zur Bestätigung aufgefordert. |
-| ![Freigeben](/help/assets/icons/ShareAlt.svg) | **[!UICONTROL Freigeben]** | Freigeben eines Projekts. Weitere Informationen finden Sie unter [Projekt freigeben](/help/analysis-workspace/curate-share/share-projects.md) . |
-| ![Bearbeiten](/help/assets/icons/Edit.svg) | **[!UICONTROL Umbenennen]** | Benennen Sie ein Projekt um. Öffnet das Dialogfeld **[!UICONTROL Umbenennen: *Projektname *]**. Geben Sie einen neuen Namen ein und wählen Sie**[!UICONTROL Speichern ]**aus. |
-| ![Kopieren](/help/assets/icons/Copy.svg) | **[!UICONTROL Kopieren]** | Kopieren Sie ein oder mehrere Projekte. Das Projekt erhält denselben Namen und das Suffix `(Copy)`. |
-| ![PinOnff](/help/assets/icons/PinOff.svg) | **[!UICONTROL Pin]** oder **[!UICONTROL Unpin]** | Ein oder mehrere Projekte oder Ordner anheften oder entsperren. Angeheftete Projekte und Ordner werden oben in der Liste angezeigt und ignorieren die von Ihnen angegebene Sortierreihenfolge. |
-| ![arrowUp](/help/assets/icons/ArrowUp.svg) | **[!UICONTROL Nach oben verschieben]** | Verschieben Sie ein gebundenes Projekt oder einen Ordner in der Projektliste nach oben. |
-| ![ArrowDown](/help/assets/icons/ArrowDown.svg) | **[!UICONTROL Nach unten verschieben]** | Verschieben Sie ein gebundenes Projekt oder einen Ordner in die Projektliste. |
-| ![Beschriftung](/help/assets/icons/Label.svg) | **[!UICONTROL Tag]** | Taggen Sie ein oder mehrere Projekte oder Ordner. Das Dialogfeld **[!UICONTROL Komponenten taggen]** wird angezeigt, um ein oder mehrere Tags auszuwählen. Wählen Sie **[!UICONTROL Speichern]** aus, um die Tags für die ausgewählten Projekte oder Ordner zu speichern. |
-| ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | **[!UICONTROL Genehmigen]** oder **[!UICONTROL Nicht genehmigen]** | Genehmigen oder deaktivieren Sie ein Projekt. Nur Administratoren können Projekte genehmigen. |
-| ![CSV-Datei](/help/assets/icons/FileCSV.svg) | **[!UICONTROL CSV exportieren]** | Exportieren Sie die ausgewählten Projekte in eine CSV-Datei mit dem Namen &quot;`Project List.csv`&quot;. |
-| ![ProjectAdd](/help/assets/icons/ProjectAdd.svg) | **[!UICONTROL Projekte hinzufügen]** | Fügen Sie einem ausgewählten Ordner ein oder mehrere Projekte hinzu. In **[!UICONTROL Projekte hinzufügen]** können Sie ein oder mehrere Projekte auswählen. Wählen Sie **[!UICONTROL Hinzufügen]** aus, um die Projekte zum Ordner hinzuzufügen. Weitere Informationen finden Sie unter [Hinzufügen von Projekten zu Ordnern](workspace-folders/add-projects.md#from-inside-a-folder) . |
-| ![FolderAddTo](/help/assets/icons/FolderAddTo.svg) | **[!UICONTROL Verschieben nach]** | Verschieben Sie ein oder mehrere ausgewählte Projekte in einen Ordner. Wählen Sie in &quot;**[!UICONTROL Ordner auswählen]**&quot;den Ordner aus, in den das ausgewählte Projekt verschoben werden soll, und wählen Sie &quot;**[!UICONTROL Verschieben]**&quot;. Weitere Informationen finden Sie unter [Hinzufügen von Projekten zu Ordnern](workspace-folders/add-projects.md#from-the-project-list) . |
+| ![Freigeben](/help/assets/icons/ShareAlt.svg) | **[!UICONTROL Freigeben]** | Freigeben eines Projekts. Weitere Informationen finden [ unter ](/help/analysis-workspace/curate-share/share-projects.md) eines Projekts . |
+| ![Bearbeiten](/help/assets/icons/Edit.svg) | **[!UICONTROL Umbenennen]** | Benennen Sie ein Projekt um. Öffnet einen **[!UICONTROL Dialog *Umbenennen: (Projektname *]**. Geben Sie einen neuen Namen ein und wählen Sie**[!UICONTROL Speichern ]**. |
+| ![Kopieren](/help/assets/icons/Copy.svg) | **[!UICONTROL Kopieren]** | Kopieren Sie ein oder mehrere Projekte. Das Projekt erhält denselben Namen und dieselbe `(Copy)`. |
+| ![PinOnff](/help/assets/icons/PinOff.svg) | **[!UICONTROL Pin]** oder **[!UICONTROL Unpin]** | Fixieren oder Aufheben der Fixierung eines oder mehrerer Projekte oder Ordner. Angeheftete Projekte und Ordner werden oben in der Liste angezeigt und ignorieren die von Ihnen angegebene Sortierreihenfolge. |
+| ![ArrowUp](/help/assets/icons/ArrowUp.svg) | **[!UICONTROL Nach oben]** | Verschieben eines fixierten Projekts oder Ordners in der Projektliste nach oben. |
+| ![ArrowDown](/help/assets/icons/ArrowDown.svg) | **[!UICONTROL Nach unten]** | Verschieben Sie ein fixiertes Projekt oder einen fixierten Ordner in der Projektliste nach unten. |
+| ![Beschriftung](/help/assets/icons/Label.svg) | **[!UICONTROL Tag]** | Taggen Sie ein oder mehrere Projekte oder Ordner. Das **[!UICONTROL „Tag-]**&quot; wird angezeigt, um ein oder mehrere Tags auszuwählen. Klicken Sie **[!UICONTROL Speichern]**, um die Tags für die ausgewählten Projekte oder Ordner zu speichern. |
+| ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | **[!UICONTROL Genehmigen]** oder **[!UICONTROL Nicht genehmigen]** | Genehmigen eines Projekts oder Aufheben der Genehmigung Nur Administratoren können Projekte genehmigen. |
+| ![CSV-Datei](/help/assets/icons/FileCSV.svg) | **[!UICONTROL CSV exportieren]** | Exportieren Sie die ausgewählten Projekte in eine CSV-Datei mit dem Namen `Project List.csv`. |
+| ![ProjectAdd](/help/assets/icons/ProjectAdd.svg) | **[!UICONTROL Projekte hinzufügen]** | Ein oder mehrere Projekte zu einem ausgewählten Ordner hinzufügen. In **[!UICONTROL Projekte hinzufügen]** können Sie ein oder mehrere Projekte auswählen. Wählen Sie **[!UICONTROL Hinzufügen]** aus, um die Projekte zum Ordner hinzuzufügen. Weitere Informationen [ Sie unter „Hinzufügen ](workspace-folders/add-projects.md#from-inside-a-folder) Projekten zu Ordnern“. |
+| ![FolderAddTo](/help/assets/icons/FolderAddTo.svg) | **[!UICONTROL Verschieben nach]** | Verschiebt ein oder mehrere ausgewählte Projekte in einen Ordner. Wählen Sie **[!UICONTROL Ordner]**, in den das ausgewählte Projekt verschoben werden soll, und wählen Sie **[!UICONTROL Verschieben]** aus. Weitere Informationen [ Sie unter „Hinzufügen ](workspace-folders/add-projects.md#from-the-project-list) Projekten zu Ordnern“. |
 
 
 
 ## Selektor anzeigen
 
-Mit der Auswahl **[!UICONTROL Anzeigen]** können Sie das Erscheinungsbild der Projektoberfläche ändern. Der Selektor **[!UICONTROL Anzeigen]** definiert, welche Optionen im [Titelbereich](#title-area) verfügbar sind und welche Spalten in der [Projektliste](#project-list) angezeigt werden.
+Sie können das Erscheinungsbild der Benutzeroberfläche „Projekte“ mithilfe der **[!UICONTROL Anzeigen]**-Selektoren ändern. Der **[!UICONTROL Anzeigen]**-Selektor definiert, welche Optionen im [Titelbereich“ verfügbar sind ](#title-area) welche Spalten in der [Projektliste) angezeigt ](#project-list).
 
-* Um die für den [Titelbereich](#title-area) verfügbaren Optionen zu ändern, wählen Sie **[!UICONTROL Alle Projekte anzeigen]** **[!UICONTROL Alle Projekte]** oder **[!UICONTROL Anzeigen]** **[!UICONTROL Ordner und Projekte]** aus.
+* Um die verfügbaren Optionen für den Bereich [Titel](#title-area) zu ändern, wählen Sie **[!UICONTROL Anzeigen]** **[!UICONTROL Alle Projekte]** oder **[!UICONTROL Anzeigen]****[!UICONTROL Ordner und Projekte]**.
 
-* Um zu definieren, welche Spalten für die [Projektliste](#project-list) angezeigt werden sollen, wählen Sie ![ColumnSetting](/help/assets/icons/ColumnSetting.svg) aus und wählen Sie im Dialogfeld **[!UICONTROL Tabelle anpassen]** Spalten aus oder heben Sie die Auswahl auf. Wählen Sie **[!UICONTROL Anwenden]** aus, um die Anpassung anzuwenden. Weitere Informationen zu den Spalten finden Sie unter [Projektliste](#project-list) .
+* Um zu definieren, welche Spalten für die [Projektliste“ angezeigt werden sollen](#project-list) wählen Sie ![ColumnSetting](/help/assets/icons/ColumnSetting.svg) und wählen Sie im Dialogfeld **[!UICONTROL Tabelle anpassen]** Spalten aus oder heben Sie die Auswahl auf. Wählen Sie **[!UICONTROL Anwenden]** aus, um die Anpassung anzuwenden. Siehe [Projektliste](#project-list) für weitere Informationen zu den Spalten.
 
 ## Bedienfeld „Filter“
 
-Sie können die Projekte und Ordner in der [Projektliste](#project-list) mithilfe des ➍ Filterbereichs filtern. Verwenden Sie ![Filter](/help/assets/icons/Filter.svg), um den Filterbereich ein- oder auszublenden.
+Sie können die Projekte und Ordner in der [Projektliste) mithilfe ](#project-list) Filterbedienfelds filtern. Verwenden Sie zum Ein- oder Ausblenden des Filterbereichs ![Filter](/help/assets/icons/Filter.svg).
 
 Das Filterbedienfeld besteht aus den folgenden Abschnitten.
 
@@ -114,51 +114,51 @@ Das Filterbedienfeld besteht aus den folgenden Abschnitten.
 
 | Tags | Beschreibung |
 |---|---|
-| ![Tags](/help/analysis-workspace/build-workspace-project/assets/projects-filters-tags.png){width="300"} | Im Abschnitt **[!UICONTROL Tags]** können Sie nach Tags filtern. <ul><li>Sie verwenden ![Suche](/help/assets/icons/Search.svg) *Tags durchsuchen*, um nach Tags zu suchen, die Sie zum Filtern verwenden möchten.</li><li>Sie können mehr als ein Tag auswählen. Die verfügbaren Tags hängen von der Auswahl ab, die in anderen Abschnitten des Filterbereichs vorgenommen wurde.</li><li>Die Zahlen geben an:<ul><li>**2︎⃣**: Die Anzahl der Tags, die für die Projekte verfügbar sind, die aus dem aktuellen Filter resultieren.</li><li>7︎⃣: Die Anzahl der mit dem spezifischen Tag verknüpften Projekte.</li></ul></li></ul> |
+| ![Tags](/help/analysis-workspace/build-workspace-project/assets/projects-filters-tags.png){width="300"} | Im Abschnitt **[!UICONTROL Tags]** können Sie nach Tags filtern. <ul><li>Sie verwenden ![Suche](/help/assets/icons/Search.svg) *Tags suchen* um nach Tags zu suchen, die Sie zum Filtern verwenden möchten.</li><li>Sie können mehrere Tags auswählen. Die verfügbaren Tags hängen von Auswahlen ab, die in anderen Abschnitten im Filterbedienfeld vorgenommen wurden.</li><li>Die Zahlen geben Folgendes an:<ul><li>**2︎⃣**: Die Anzahl der Tags, die für die aus dem aktuellen Filter resultierenden Projekte verfügbar sind.</li><li>7︎⃣: Die Anzahl der mit dem jeweiligen Tag verknüpften Projekte.</li></ul></li></ul> |
 
 
 ### Datenansicht
 
 | Datenansicht | Beschreibung |
 |---|---|
-| ![Datenansichten](/help/analysis-workspace/build-workspace-project/assets/projects-filters-dataviews.png){width="300"} | Im Abschnitt **[!UICONTROL Datenansicht]** können Sie nach Datenansichten filtern. <ul><li>Sie verwenden ![Suche](/help/assets/icons/Search.svg) *Datenansichten durchsuchen*, um nach Datenansichten zu suchen, die Sie zum Filtern verwenden möchten.</li><li>Sie können mehrere Datenansichten auswählen. Die verfügbaren Datenansichten hängen von der Auswahl ab, die in anderen Abschnitten des Filterbereichs vorgenommen wurde.</li><li>Die Zahlen geben an:<ul><li>**3︎⃣**: Die Anzahl der für die Projekte verfügbaren Datenansichten, die aus dem aktuellen Filter resultieren.</li><li>4︎⃣: Die Anzahl der mit der spezifischen Datenansicht verknüpften Projekte.</li></ul></li></ul> |
+| ![Datenansichten](/help/analysis-workspace/build-workspace-project/assets/projects-filters-dataviews.png){width="300"} | Im **[!UICONTROL Datenansicht]** können Sie nach Datenansichten filtern. <ul><li>Sie verwenden ![Suche](/help/assets/icons/Search.svg) *Datenansichten suchen* um nach Datenansichten zu suchen, die Sie zum Filtern verwenden möchten.</li><li>Sie können mehrere Datenansichten auswählen. Die verfügbaren Datenansichten hängen von den Auswahlen ab, die in anderen Abschnitten im Filterbedienfeld vorgenommen wurden.</li><li>Die Zahlen geben Folgendes an:<ul><li>**3︎⃣**: Die Anzahl der Datenansichten, die für die aus dem aktuellen Filter resultierenden Projekte verfügbar sind.</li><li>4︎⃣: Die Anzahl der Projekte, die der spezifischen Datenansicht zugeordnet sind.</li></ul></li></ul> |
 
 
 ### Inhaber
 
 | Besitzer | Beschreibung |
 |---|---|
-| ![Inhaber](/help/analysis-workspace/build-workspace-project/assets/projects-filters-owners.png){width="300"} | Im Abschnitt **[!UICONTROL Inhaber]** können Sie nach Eigentümern filtern. <ul><li>Sie verwenden ![Suche](/help/assets/icons/Search.svg) *Inhaber durchsuchen*, um nach Eigentümern zu suchen, die Sie zum Filtern verwenden möchten.</li><li>Sie können mehrere Inhaber auswählen. Die verfügbaren Inhaber hängen von der Auswahl ab, die in anderen Abschnitten des Filterbereichs vorgenommen wurde.</li><li>Die Zahlen geben an:<ul><li>**3︎⃣**: Die Anzahl der Inhaber, die für die aus dem aktuellen Filter resultierenden Projekte verfügbar sind.</li><li>4︎⃣: Die Anzahl der Projekte, die mit dem jeweiligen Eigentümer verknüpft sind.</li></ul></li></ul> |
+| ![Inhaber](/help/analysis-workspace/build-workspace-project/assets/projects-filters-owners.png){width="300"} | Im Abschnitt **[!UICONTROL Verantwortlicher]** können Sie nach Verantwortlichen filtern. <ul><li>Sie verwenden ![Suche](/help/assets/icons/Search.svg) *Nach Inhabern suchen* um nach Inhabern zu suchen, die Sie zum Filtern verwenden möchten.</li><li>Sie können mehrere Besitzer auswählen. Die verfügbaren Besitzer hängen von den Auswahlen ab, die in anderen Abschnitten im Filterbedienfeld vorgenommen wurden.</li><li>Die Zahlen geben Folgendes an:<ul><li>**3︎⃣**: Die Anzahl der Verantwortlichen, die für die aus dem aktuellen Filter resultierenden Projekte verfügbar sind.</li><li>4︎⃣: Die Anzahl der Projekte, die dem jeweiligen Eigentümer zugeordnet sind.</li></ul></li></ul> |
 
 
 ### Typ
 
 | Typ | Beschreibung |
 |---|---|
-| ![Typ](/help/analysis-workspace/build-workspace-project/assets/projects-filters-type.png){width="300"} | Im Abschnitt **[!UICONTROL Typ]** können Sie nach dem Typ der Projekte oder Ordner filtern.<ul><li>Sie können eine oder mehrere der folgenden Optionen auswählen:<ul><li> **[!UICONTROL folder]**</li><li>**[!UICONTROL Analysis Workspace-Projekt]**</li><li>**[!UICONTROL Mobile Scorecard]**</li></ul> <li>Sie können mehrere Filter auswählen. Die anderen verfügbaren Filter hängen von der Auswahl ab, die in anderen Abschnitten des Filterbereichs vorgenommen wurde.</li><li>Die Zahlen geben an:<ul><li>**5︎⃣**: Die Anzahl der anderen Filter, die für die Projekte verfügbar sind, die aus dem aktuellen Filter resultieren.</li><li>4︎⃣: Die Anzahl der Projekte, die mit dem jeweiligen anderen Filter verknüpft sind.</li></ul></li></ul> |
+| ![Typ](/help/analysis-workspace/build-workspace-project/assets/projects-filters-type.png){width="300"} | Im Abschnitt **[!UICONTROL Typ]** können Sie nach dem Typ der Projekte oder Ordner filtern.<ul><li>Sie können eine oder mehrere der folgenden Optionen auswählen:<ul><li> **[!UICONTROL Ordner]**</li><li>**[!UICONTROL Analysis Workspace-Projekt]**</li><li>**[!UICONTROL Mobile Scorecard]**</li></ul> <li>Sie können mehr als einen anderen Filter auswählen. Die anderen verfügbaren Filter hängen von Auswahlen ab, die in anderen Abschnitten im Filterbedienfeld vorgenommen wurden.</li><li>Die Zahlen geben Folgendes an:<ul><li>**5︎⃣**: Die Anzahl weiterer Filter, die für die aus dem aktuellen Filter resultierenden Projekte verfügbar sind.</li><li>4︎⃣: Die Anzahl der Projekte, die dem jeweiligen anderen Filter zugeordnet sind.</li></ul></li></ul> |
 
 
-### Sonstige Filter
+### Andere Filter
 
-| Sonstige Filter | Beschreibung |
+| Andere Filter | Beschreibung |
 |---|---|
-| ![Sonstige Filter](/help/analysis-workspace/build-workspace-project/assets/projects-filters-others.png){width="300"} | Im Bereich **[!UICONTROL Sonstige Filter]** können Sie nach anderen vordefinierten Filtern filtern.<ul><li>Sie können eine oder mehrere der folgenden Optionen auswählen:<ul><li> **[!UICONTROL Alle anzeigen]**</li><li>**[!UICONTROL Für mich freigegeben]**</li><li>**[!UICONTROL Meine]**</li><li>**[!UICONTROL Genehmigt]**</li><li>**[!UICONTROL Favoriten]**</li></ul> Was Sie auswählen können, hängt von Ihrer Rolle und Ihren Berechtigungen ab.</li><li>Sie können mehrere Filter auswählen. Die anderen verfügbaren Filter hängen von der Auswahl ab, die in anderen Abschnitten des Filterbereichs vorgenommen wurde.</li><li>Die Zahlen geben an:<ul><li>**5︎⃣**: Die Anzahl der anderen Filter, die für die Projekte verfügbar sind, die aus dem aktuellen Filter resultieren.</li><li>4︎⃣: Die Anzahl der Projekte, die mit dem jeweiligen anderen Filter verknüpft sind.</li></ul></li></ul> |
+| ![Sonstige Filter](/help/analysis-workspace/build-workspace-project/assets/projects-filters-others.png){width="300"} | Im Abschnitt **[!UICONTROL Sonstige Filter]** können Sie nach anderen vordefinierten Filtern filtern.<ul><li>Sie können eine oder mehrere der folgenden Optionen auswählen:<ul><li> **[!UICONTROL Alle anzeigen]**</li><li>**[!UICONTROL Für mich freigegeben]**</li><li>**[!UICONTROL meins]**</li><li>**[!UICONTROL Genehmigt]**</li><li>**[!UICONTROL Favoriten]**</li></ul> Was Sie auswählen können, hängt von Ihrer Rolle und Ihren Berechtigungen ab.</li><li>Sie können mehr als einen anderen Filter auswählen. Die anderen verfügbaren Filter hängen von Auswahlen ab, die in anderen Abschnitten im Filterbedienfeld vorgenommen wurden.</li><li>Die Zahlen geben Folgendes an:<ul><li>**5︎⃣**: Die Anzahl weiterer Filter, die für die aus dem aktuellen Filter resultierenden Projekte verfügbar sind.</li><li>4︎⃣: Die Anzahl der Projekte, die dem jeweiligen anderen Filter zugeordnet sind.</li></ul></li></ul> |
 
 ## Durchsuchen
 
-Sie verwenden den ➎ Suchbereich , um mithilfe des Felds ![Suchen](/help/assets/icons/Search.svg) nach Projekten und Ordnern zu suchen. Beginnen Sie mit der Eingabe und die [Projektliste](#project-list) filtert automatisch Ihre Sucheingabe.
+Sie verwenden die ➎ Suchbereich , um mithilfe des Felds ![Suche](/help/assets/icons/Search.svg) nach Projekten und Ordnern zu suchen. Beginnen Sie mit der Eingabe und die [Projektliste](#project-list) wird automatisch nach Ihrer Sucheingabe gefiltert.
 
-Im Suchbereich werden auch die im Filterbereich angewendeten Filter angezeigt.
+Im Suchbereich werden auch die im Bedienfeld Filter angewendeten Filter angezeigt.
 
-* Um einen Filter zu entfernen, wählen Sie im Filter ![CrossSize75](/help/assets/icons/CrossSize75.svg) aus.
+* Um einen Filter zu entfernen, wählen Sie ![ Filter ](/help/assets/icons/CrossSize75.svg)CrossSize75) aus.
 * Um alle Filter zu entfernen, wählen Sie Alle löschen aus.
 
-Wenn der Platz auf die Anzeige der einzelnen Filter beschränkt ist, wird **[!UICONTROL Filterung nach *x* Filtern]** angezeigt.
+Wenn der Platz für die Anzeige der einzelnen Filter begrenzt ist, sehen Sie **[!UICONTROL Filtern nach *x* Filtern]**.
 
 * So entfernen Sie einen Filter:
 
-   1. Verwenden Sie oben **[!UICONTROL *x *Filter]**![ChevronDown](/help/assets/icons/ChevronDown.svg) , um ein Kontextmenü zu öffnen, das die Filtertypen und die einzelnen Filter auflistet.
-   1. Verwenden Sie ![CrossSize75](/help/assets/icons/CrossSize75.svg) , um einen Filter zu entfernen.
+   1. Verwenden Sie **[!UICONTROL *x *Filter]**![ChevronDown](/help/assets/icons/ChevronDown.svg), um ein Kontextmenü zu öffnen, in dem die Filtertypen und die einzelnen Filter aufgeführt sind.
+   1. Verwenden Sie ![CrossSize](/help/assets/icons/CrossSize75.svg), um einen Filter zu entfernen.
 
 
 <!--

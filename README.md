@@ -1,11 +1,11 @@
 ---
 source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
 workflow-type: tm+mt
-source-wordcount: '433'
+source-wordcount: '406'
 ht-degree: 98%
 
 ---
-# Beitragen zur Customer Journey Analytics-Dokumentation
+# Dokumentation zu Contribute zu Customer Journey Analytics
 
 Wir freuen uns über Beiträge unserer Community sowie von Adobe-Mitarbeitern, die nicht zum Dokumentationsteam gehören.
 
@@ -21,7 +21,7 @@ Wie Sie Beiträge einbringen, hängt davon ab, wer Sie sind und welche Art von �
 
 ### Geringfügige Änderungen
 
-Wenn Sie aus Gemeinschaftsgeist kleine Updates beitragen wollen, besuchen Sie den Artikel, und klicken Sie auf den Link **Bearbeiten** im Artikel, der zur GitHub-Quelle des Artikels führt. Verwenden Sie dann einfach die GitHub-Benutzeroberfläche, um Ihre Aktualisierungen vorzunehmen. Weitere Informationen finden Sie im allgemeinen [Adobe Docs-Contributor-Handbuch](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html).
+Wenn Sie aus Gemeinschaftsgeist kleine Updates beitragen wollen, besuchen Sie den Artikel, und klicken Sie auf den Link **Bearbeiten** im Artikel, der zur GitHub-Quelle des Artikels führt. Verwenden Sie dann einfach die GitHub-Benutzeroberfläche, um Ihre Aktualisierungen vorzunehmen. Weitere Informationen finden Sie im allgemeinen [Adobe Docs-Contributor-Handbuch](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=de).
 
 Kleinere Korrekturen oder Erläuterungen, die Sie für Dokumentation und Codebeispiele in diesem Repository senden, sind durch die Adobe-Nutzungsbedingungen abgedeckt.
 
@@ -41,18 +41,18 @@ Wenn Sie technischer Redakteur, Programmmanager oder Entwickler des Produktteams
 
 Community-Mitarbeiter können die GitHub-Benutzeroberfläche zur einfachen Bearbeitung oder zur Abspaltung des Repositorys verwenden, um umfangreiche Beiträge vorzunehmen.
 
-Weitere Informationen finden Sie im [Adobe Docs-Mitarbeiter-Handbuch](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html).
+Weitere Informationen finden Sie im [Adobe Docs-Mitarbeiter-Handbuch](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=de).
 
 ## Markdown zum Formatieren Ihres Themas verwenden
 
 Alle Artikel in diesem Repository verwenden GitHub Flavored Markdown. Wenn Sie mit Markdown nicht vertraut sind, lesen Sie:
 
-* [Markdown-Grundlagen](https://help.github.com/articles/markdown-basics/)
+* [Markdown-Grundlagen](https://docs.github.com/de/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github)
 * [Druckbares Markdown-Cheatsheet](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
 
 ## Bezeichnungen
 
 Im öffentlichen Repository werden automatisierte Bezeichnungen Pull-Anforderungen zugewiesen, damit wir den Arbeitsablauf für Pull-Anforderungen verwalten und Ihnen mitteilen können, was mit Ihrer Pull-Anforderung passiert:
 
-* **Änderung an Autor gesendet**: Der Autor wurde über die ausstehende Pull-Anforderung informiert.
-* **Bereit zum Zusammenführen**: Bereit zur Überprüfung durch unser Pull-Anforderung-Überprüfungsteam.
+* **Change sent to author**: Der Autor wurde über die ausstehende Pull-Anforderung informiert.
+* **ready-to-merge**: Bereit zur Überprüfung durch unser Pull-Anforderung-Überprüfungsteam.

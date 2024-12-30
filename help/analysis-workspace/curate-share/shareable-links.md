@@ -14,13 +14,13 @@ ht-degree: 61%
 
 # Erstellen von freigebbaren Links
 
-Analysis Workspace bietet viele Möglichkeiten, ein Projekt für Ihre Benutzer freizugeben, einschließlich der Möglichkeit, einen Link zu einem Projekt oder einem bestimmten Teil eines Projekts absurufen. Bei einigen Linktypen muss sich der Empfänger vor dem Zugriff auf das Projekt bei Customer Journey Analytics anmelden, bei anderen dagegen nicht.
+Analysis Workspace bietet viele Möglichkeiten, ein Projekt für Ihre Benutzer freizugeben, einschließlich der Möglichkeit, einen Link zu einem Projekt oder einem bestimmten Teil eines Projekts absurufen. Bei einigen Link-Typen muss sich der Empfänger vor dem Zugriff auf das Projekt beim Customer Journey Analytics anmelden, bei anderen nicht.
 
 ## Abrufen eines Projekt-Links zur Freigabe für andere Workspace-Benutzende {#project-link}
 
-Um einen Link zu einem Projekt freizugeben, gehen Sie zum Projekt, das Sie freigeben möchten, und wählen Sie dann &quot;**[!UICONTROL Freigabe]**&quot;> &quot;**[!UICONTROL Projekt-Link abrufen]**&quot;(oder &quot;**[!UICONTROL Freigabe]**&quot;> &quot;**[!UICONTROL Mit Workspace-Benutzern teilen]**&quot;> &quot;**[!UICONTROL Über Link freigeben]**&quot;). Benutzende, für die Sie den Link freigeben, müssen sich anmelden.
+Um einen Link für ein Projekt freizugeben, gehen Sie zu dem Projekt, das Sie freigeben möchten, und wählen Sie dann **[!UICONTROL Freigeben]** > **[!UICONTROL Projektlink abrufen]** (oder **[!UICONTROL Freigeben]** > **[!UICONTROL Für Workspace-Benutzer freigeben]** > **[!UICONTROL Über Link freigeben]**). Benutzende, für die Sie den Link freigeben, müssen sich anmelden.
 
-Wenn dem Empfänger des Links keine [Projektrolle](/help/analysis-workspace/curate-share/share-projects.md) zugewiesen wurde, erhalten Administratoren **[!UICONTROL Original bearbeiten]** und Nicht-Administratoren erhalten **[!UICONTROL Kopie bearbeiten]** -Erlebnisse.
+Wenn dem Empfänger des Links keine [Projektrolle“ zugewiesen wurde](/help/analysis-workspace/curate-share/share-projects.md) erhalten Administratoren **[!UICONTROL Original bearbeiten]** und Nicht-Administratoren **[!UICONTROL Kopie bearbeiten]** Erlebnisse.
 
 ## Abrufen eines schreibgeschützten Links zur Freigabe für alle
 
@@ -28,16 +28,16 @@ Sie können einen schreibgeschützten Link zu Analysis Workspace-Projekten für 
 
 Weitere Informationen finden Sie unter „Projekt für alle freigeben (keine Anmeldung erforderlich)“ im Artikel [Freigeben von Projekten](/help/analysis-workspace/curate-share/share-projects.md).
 
-## Bedienfeld- oder Visualisierungslink abrufen {#panel-link}
+## Abrufen eines Bedienfelds oder Visualisierungs-Links {#panel-link}
 
 Sie können auch einen Link zu einem bestimmten Teil eines Projekts freigeben, z. B. einem Bedienfeld oder einer individuellen Visualisierung. Dies wird manchmal auch als Intra-Linking bezeichnet. Dies kann nützlich sein, um die Aufmerksamkeit Ihrer Benutzerinnen und Benutzer auf wichtige Erkenntnisse im Projekt zu lenken.
 
-* Wählen Sie im Kontextmenü einer Bedienfeldkopfzeile die Option **[!UICONTROL Bereichslink abrufen]**
-* Wählen Sie im Kontextmenü einer Visualisierungs-Kopfzeile **[!UICONTROL Visualisierungslink abrufen]** aus.
+* Wählen Sie im Kontextmenü einer Bereichskopfzeile die Option **[!UICONTROL Bereichslink abrufen]**
+* Wählen Sie im Kontextmenü einer Visualisierungskopfzeile die Option **[!UICONTROL Visualisierungslink abrufen]**
 
 [Sehen Sie sich das Video an](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/visualizations/intra-linking-in-analysis-workspace.html?lang=de), wie Sie Links erstellen und diese verwenden, um Empfänger zu bestimmten Teilen Ihres Projekts zu führen.
 
-![Das Dropdown-Menü, nachdem Sie mit der rechten Maustaste auf die Kopfzeile geklickt haben, wobei der Link &quot;Visualisierung abrufen&quot;hervorgehoben ist.](assets/get-viz-link.png)
+![Das Dropdown-Menü, nachdem Sie mit der rechten Maustaste auf die Kopfzeile mit dem hervorgehobenen Link Visualisierung abrufen geklickt haben.](assets/get-viz-link.png)
 
 ## Links in Inhaltsverzeichnissen verwenden {#TOC}
 
@@ -45,4 +45,4 @@ Ein Tipp für die Nutzung der verschiedenen Link-Optionen besteht darin, immer e
 
 [Sehen Sie sich das Video an](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/navigating-workspace-projects/create-a-toc-in-analysis-workspace.html?lang=de), wie Sie mithilfe von Links und dem Rich-Text-Editor von Workspace ein Inhaltsverzeichnis erstellen.
 
-![Ein Projektinhaltsverzeichnis.](assets/toc.png)
+![Ein Projekt - Inhaltsverzeichnis.](assets/toc.png)

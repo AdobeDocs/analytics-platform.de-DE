@@ -14,9 +14,9 @@ ht-degree: 79%
 
 # Schreibgeschützte Projekte
 
-Sie können Projekte über den [Projektfreigabe-Workflow](/help/analysis-workspace/curate-share/share-projects.md) für Empfänger als „schreibgeschützt“ freigeben. Empfänger mit der Rolle „Kann anzeigen“ erhalten ein eingeschränkteres Projekterlebnis. Dies kann gewünscht werden, wenn Sie ein Projekt für Benutzer freigeben, die mit der Datenstruktur Ihres Unternehmens, Analysis Workspace oder Customer Journey Analytics im Allgemeinen weniger vertraut sind, aber dennoch Daten und Erkenntnisse in einer sicheren Umgebung nutzen möchten.
+Sie können Projekte über den [Projektfreigabe-Workflow](/help/analysis-workspace/curate-share/share-projects.md) für Empfänger als „schreibgeschützt“ freigeben. Empfänger mit der Rolle „Kann anzeigen“ erhalten ein eingeschränkteres Projekterlebnis. Dies kann wünschenswert sein, wenn Sie ein Projekt für Benutzende freigeben, die mit der Datenstruktur Ihres Unternehmens, Analysis Workspace oder Customer Journey Analytics im Allgemeinen nicht so vertraut sind, aber dennoch Daten und Erkenntnisse in einer sicheren Umgebung nutzen sollen.
 
-![ Ein schreibgeschütztes freigegebenes Projekt.](assets/view-only-project.png)
+![Ein schreibgeschütztes freigegebenes Projekt.](assets/view-only-project.png)
 
 ## Deaktivierte Interaktionen
 

@@ -13,7 +13,7 @@ ht-degree: 7%
 
 # Interdimensionale Flüsse
 
-Mithilfe eines interdimensionalen Flusses können Sie Benutzerpfade über verschiedene Dimensionen hinweg untersuchen. In diesem Artikel wird gezeigt, wie dieser Fluss für zwei Anwendungsfälle verwendet wird: Interaktionen und Ereignisse mobiler Apps und wie Kampagnen Webbesuche fördern
+Mithilfe eines interdimensionalen Flusses können Sie Benutzerpfade über verschiedene Dimensionen hinweg untersuchen. In diesem Artikel wird gezeigt, wie dieser Fluss für zwei Anwendungsfälle verwendet werden kann: Interaktionen mit Mobile Apps und Ereignisse und wie Kampagnen Web-Besuche fördern
 
 <!--
 A dimension label at the top of each Flow column makes using multiple dimensions in a flow visualization more intuitive:
@@ -21,36 +21,36 @@ A dimension label at the top of each Flow column makes using multiple dimensions
 ![An intero-dimensional flow highlighting multiple dimensions including Product, Page, OS version, and Time Spent.](assets/flow.png)
 -->
 
-## Interaktionen und Ereignisse mobiler Apps
+## Mobile-App-Interaktionen und -Ereignisse
 
-In diesem Beispielfluss wird die Dimension [!UICONTROL Bildschirmname] verwendet, um zu sehen, wie Benutzer die verschiedenen Bildschirme (Szenen) in der App verwenden. Der am häufigsten zurückgegebene Bildschirm ist **[!UICONTROL luma: content: ios: en: home]**, die Startseite der App:
+Die Dimension [!UICONTROL Bildschirmname] wird in diesem Beispielfluss verwendet, um zu sehen, wie Benutzer die verschiedenen Bildschirme (Szenen) in der App verwenden. Der obere Bildschirm ist **[!UICONTROL luma: content: ios: en: home]**, was die Startseite der App ist:
 
 ![Ein Fluss, der das hinzugefügte Element anzeigt.](assets/flowapp.png)
 
-Um die Interaktion zwischen Bildschirmen und Ereignistypen (z. B. zum Warenkorb, zu Käufen und anderen) in dieser App zu untersuchen, ziehen Sie die Dimension **[!UICONTROL Ereignistypen]** in den Arbeitsbereich:
+Um die Interaktion zwischen Bildschirmen und Ereignistypen (z. B. zum Warenkorb hinzufügen, Käufe und andere) in dieser App zu untersuchen, ziehen Sie die Dimension **[!UICONTROL Ereignistypen]** per Drag-and-Drop:
 
-* Ersetzen Sie zusätzlich zu jedem verfügbaren Schritt im Fluss diese Dimension:
+* Ersetzen Sie diese Dimension zusätzlich zu jedem verfügbaren Schritt im Fluss:
 
-  ![Ein Fluss, der die Dimension Seite anzeigt, die in mehrere Bereiche gezogen wurde.](assets/flowapp-replace.png)
+  ![Ein Fluss, der die Seitendimension anzeigt, die in mehrere Bereiche gezogen wurde.](assets/flowapp-replace.png)
 
-* Außerhalb der aktuellen Flussvisualisierung , um die Dimension hinzuzufügen:
+* Fügen Sie außerhalb der aktuellen Flussvisualisierung die Dimension hinzu:
 
-  ![Ein Fluss, der die Dimension Seite anzeigt, der zum Leerraum am Ende gezogen wurde.](assets/flowapp-add.png)
+  ![Ein Fluss, der die Seitendimension zeigt, die an den Leerraum am Ende gezogen wurde.](assets/flowapp-add.png)
 
-Die nachstehende Flussvisualisierung zeigt das Ergebnis des Hinzufügens der Dimension **[!UICONTROL Ereignistypen]**. Die Visualisierung bietet Einblicke, wie Benutzer mobiler Apps durch verschiedene Bildschirme der App navigieren, bevor sie Produkte zu einem Warenkorb hinzufügen, die Anwendung schließen, ein Angebot präsentieren und vieles mehr.
+Die folgende Flussvisualisierung zeigt das Ergebnis des Hinzufügens der Dimension **[!UICONTROL -]** . Die Visualisierung bietet Einblicke, wie sich Benutzer von Mobile Apps durch verschiedene Bildschirme in der App bewegen, bevor sie Produkte zu einem Warenkorb hinzufügen, die App schließen, ein Angebot erhalten und vieles mehr.
 
-![Ein fLow zeigt die Seitendimensionen oben in der Liste an.](assets/flowapp-result.png)
+![Ein Fluss, der die Ergebnisse der Seitendimension oben in der Liste anzeigt.](assets/flowapp-result.png)
 
-## Wie Kampagnen Webbesuche fördern
+## Wie Kampagnen zu Web-Besuchen führen
 
 Sie möchten analysieren, welche Kampagnen zu Besuchen auf der Website führen. Sie erstellen eine Flussvisualisierung mit dem **[!UICONTROL Kampagnennamen]** als Dimension
 
-![Dimension für Fluss-Webkampagnenname](assets/flowweb.png)
+![Dimension Fluss-Web-Kampagnenname ](assets/flowweb.png)
 
-Sie ersetzen die letzte Dimension **[!UICONTROL Kampagnenname]** durch die Dimension **[!UICONTROL Formatierter Seitenname]** und fügen am Ende der Flussvisualisierung eine weitere Dimension **[!UICONTROL Formatierter Seitenname]** hinzu.
+Sie ersetzen die letzte Dimension **[!UICONTROL Kampagnenname]** durch die Dimension **[!UICONTROL Formatierter Seitenname]** und fügen am Ende **[!UICONTROL Flussvisualisierung eine weitere Dimension Formatierter Seitenname]** hinzu.
 
-![Fluss-Webkampagnenname und Webseitendimension](assets/flowweb-replace.png)
+![Fluss-Web-Kampagnenname und Web-Seiten-Dimension](assets/flowweb-replace.png)
 
-Sie können mit dem Mauszeiger über einen der Flüsse fahren, um weitere Details anzuzeigen. Zum Beispiel, welche Kampagnen zu einem Warenkorb geführt haben.
+Sie können den Mauszeiger über einen der Flüsse bewegen, um weitere Details anzuzeigen. Beispielsweise welche Kampagnen zu einem Warenkorb-Checkout geführt haben.
 
-![Bewegen Sie den Mauszeiger über den Fluss des Webkampagnennamens und der Webseitendimension](assets/flowweb-hover.png)
+![Fluss-Web-Kampagnenname und -Web-Seiten-Dimension-Mauszeiger](assets/flowweb-hover.png)
