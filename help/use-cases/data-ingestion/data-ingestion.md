@@ -31,7 +31,7 @@ Dieser Workflow nutzt den Analytics-Quell-Connector und variiert je nachdem, ob 
 
 [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=de) ist eine Client-seitige JavaScript-Bibliothek, mit der Kunden von Adobe Experience Cloud mit den verschiedenen Services in Experience Cloud interagieren können.
 
-1. [Konfigurieren Sie die Adobe Experience Platform Web SDK-Erweiterung in Tags](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/sdk/overview.html?lang=de) , um Daten über das Adobe Experience Platform-Edge Network aus Web-Eigenschaften an die Adobe Experience Cloud zu senden.
+1. [Konfigurieren der Adobe Experience Platform Web SDK-Erweiterung in Tags](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/sdk/overview.html?lang=de) um Daten von Web-Eigenschaften über das Adobe Experience Platform-Edge Network an die Adobe Experience Cloud zu senden.
 1. Verwenden Sie [Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-getting-started.html?lang=de), um eine oder mehrere [Verbindungen](/help/connections/create-connection.md) und [Datenansichten](/help/data-views/data-views.md) zu erstellen, die in Ihr kanalübergreifendes Reporting einfließen werden.
 
 ## Daten mit Batch-Erfassung und Streaming-Erfassung einlesen
@@ -52,7 +52,7 @@ Adobe Experience Platform bringt Daten aus mehreren Quellen zusammen, um Markete
 
 In diesem Tutorial finden Sie detaillierte Schritte, wie Sie [Daten von Google Analytics mit Customer Journey Analytics analysieren](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial-v22/module12/ex5.html).
 
-## Verwenden Sie die Bulk-Dateneinfüge-API, um Daten in Analytics aufzunehmen, und erfassen Sie dann über den Analytics-Quell-Connector in Experience Platform.
+## Verwenden Sie die Bulk Data Insertion-API, um Daten in Analytics zu übertragen und dann über den Analytics-Quell-Connector in Experience Platform aufzunehmen
 
 1. [Verwenden Sie die Bulk Data Insertion API](https://www.adobe.io/apis/experiencecloud/analytics/docs.html#!AdobeDocs/analytics-2.0-apis/master/bdia.md), um Server-seitig gesammelte Daten an Adobe Analytics zu senden. Damit können Sie Dateien im CSV-Format senden, die Ereignisdaten enthalten.
 1. [Erstellen Sie einen Adobe Analytics-Quell-Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=de), um diese Verbraucherdaten in Adobe Experience Platform zu importieren.

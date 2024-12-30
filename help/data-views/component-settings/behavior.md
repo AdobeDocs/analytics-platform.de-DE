@@ -24,7 +24,7 @@ ht-degree: 90%
 <!-- markdownlint-enable MD034 -->
 
 
-Verhaltenseinstellungen sind sowohl für Dimensionen als auch für Metriken verfügbar. Die Verfügbarkeit der Einstellungen hängt vom Komponententyp und Schemadatyp ab.
+Verhaltenseinstellungen sind sowohl für Dimensionen als auch für Metriken verfügbar. Die Verfügbarkeit der Einstellungen hängt vom Komponententyp und Schemadatentyp ab.
 
 ![Verhaltenseinstellungen](../assets/behavior-settings.png)
 
@@ -38,7 +38,7 @@ Verhaltenseinstellungen sind sowohl für Dimensionen als auch für Metriken verf
 
 >[!NOTE]
 >
->Wenn Sie [!UICONTROL Kleinbuchstaben] für eine Such-Datensatzdimension aktivieren, können für dieselbe Kennung mehrere Suchwerte vorhanden sein. Wenn dieser Konflikt auftritt, verwendet Customer Journey Analytics den ersten von ASCII erfassten Wert (Werte in Großbuchstaben vor Kleinbuchstaben). Adobe rät davon ab, Such-Datensätze zu verwenden, die denselben Wert enthalten, wenn [!UICONTROL Kleinbuchstaben] aktiviert ist.
+>Wenn Sie [!UICONTROL Kleinbuchstaben] für eine Such-Datensatzdimension aktivieren, können für dieselbe Kennung mehrere Suchwerte vorhanden sein. In diesem Fall verwendet Customer Journey Analytics den ersten gesammelten ASCII-Wert (Werte in Großbuchstaben vor Kleinbuchstaben). Adobe rät davon ab, Such-Datensätze zu verwenden, die denselben Wert enthalten, wenn [!UICONTROL Kleinbuchstaben] aktiviert ist.
 
 ![Dimension mit Berücksichtigung von Groß-/Kleinschreibung](../assets/case-sens-workspace.png)
 

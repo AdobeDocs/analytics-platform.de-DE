@@ -1,77 +1,77 @@
 ---
-description: Mit dem Manager für berechnete Metriken können Sie Favoriten freigeben, filtern, taggen, genehmigen, kopieren, löschen und markieren.
+description: Mit dem Manager für berechnete Metriken können Sie freigeben, filtern, taggen, genehmigen, kopieren, löschen und als Favoriten markieren.
 title: Manager für berechnete Metriken
 feature: Calculated Metrics
 exl-id: 8b257ecc-a596-4b34-ac26-eda16835f1ba
 source-git-commit: 6a279ac39e6b94200ff93ac1a3796d202e6349c7
 workflow-type: tm+mt
 source-wordcount: '901'
-ht-degree: 6%
+ht-degree: 17%
 
 ---
 
 # Berechnete Metriken verwalten
 
-Sie können berechnete Metriken über eine zentrale Verwaltungsoberfläche von [!UICONTROL Berechnete Metriken] freigeben, filtern, taggen, genehmigen, umbenennen, kopieren, löschen, exportieren und als Favoriten markieren. So verwalten Sie berechnete Metriken:
+Sie können berechnete Metriken freigeben, filtern, taggen, genehmigen, umbenennen, kopieren, löschen, exportieren und berechnete Metriken über eine zentrale Verwaltungsoberfläche [!UICONTROL Berechnete ]&quot; als Favoriten markieren. So verwalten Sie berechnete Metriken:
 
 
-* Wählen Sie **[!UICONTROL Komponenten]** in der Hauptbenutzeroberfläche und dann **[!UICONTROL Berechnete Metriken]** aus.
+* Wählen Sie **[!UICONTROL Hauptbenutzeroberfläche]** Komponenten“ und dann **[!UICONTROL Berechnete Metriken]** aus.
 
 
 ## Manager für berechnete Metriken
 
-Der Manager für berechnete Metriken verfügt über die folgenden Elemente der Benutzeroberfläche:
+Der Manager für berechnete Metriken verfügt über die folgenden Schnittstellenelemente:
 
 
 ![Filterschnittstelle](assets/calculated-metrics-manager.png)
 
 ### Filterliste
 
-In der Filterliste werden alle berechneten Metriken angezeigt, die Ihnen gehören oder für Sie freigegeben wurden. Die Liste enthält die folgenden Spalten:
+Die Filterliste zeigt alle berechneten Metriken an, deren Inhaber Sie sind oder die für Sie freigegeben wurden. Die Liste umfasst die folgenden Spalten:
 
 <!-- I think this table incorrectly talks about quick calculated metrics -->
 
 | Spalte | Beschreibung |
 | --- | --- | 
-| ![StarOutline](/help/assets/icons/StarOutline.svg) | Wählen Sie diese Option aus, um ![Star](/help/assets/icons/Star.svg) oder eine berechnete Metrik für ![StarOutline](/help/assets/icons/StarOutline.svg) zu bevorzugen. Siehe [Berechnete Metrik als Favoriten markieren](/help/components/filters/filters-favorite.md) |
-| **[!UICONTROL Titel und Beschreibung]** | Um die berechnete Metrik zu bearbeiten, wählen Sie den Titel-Link aus, der den [Generator für berechnete Metriken](cm-build-metrics.md) öffnet. Eine freigegebene berechnete Metrik wird mit ![Freigabe](/help/assets/icons/ShareAlt.svg) angegeben. |
+| ![UnausgefüllterStern](/help/assets/icons/StarOutline.svg) | Wählen Sie aus![ um eine berechnete Metrik ](/help/assets/icons/Star.svg)StarOutline![ zu bevorzugen oder ](/help/assets/icons/StarOutline.svg). Siehe [Berechnete Metrik als Favorit markieren](/help/components/filters/filters-favorite.md) |
+| **[!UICONTROL Titel und Beschreibung]** | Um die berechnete Metrik zu bearbeiten, wählen Sie den Titel-Link aus, über den der [Generator für berechnete Metriken“ ](cm-build-metrics.md) wird. Eine freigegebene berechnete Metrik wird mit ![Freigabe](/help/assets/icons/ShareAlt.svg) angegeben. |
 | **[!UICONTROL Datenansicht]** | Die Datenansichten, für die diese berechnete Metrik gilt. |
-| **[!UICONTROL Inhabende]** | Inhaber der berechneten Metrik. Als Benutzer sehen Sie nur die Anmerkungen, deren Inhaber Sie sind, oder die Anmerkungen, die für Sie freigegeben wurden. |
+| **[!UICONTROL Inhabende]** | Inhaber der berechneten Metrik. Benutzende können nur die Anmerkungen sehen, die ihnen gehören oder die für sie freigegeben wurden. |
 | **[!UICONTROL Tags]** | Listet die Tags für diese berechnete Metrik auf. |
-| **[!UICONTROL Freigegeben für]** | Listet auf, für wie viele Einzelpersonen oder Gruppen Sie die berechnete Metrik freigegeben haben. Klicken Sie auf , um das Dialogfeld **[!UICONTROL Berechnete Metrik freigeben]** zu öffnen. Weitere Informationen finden Sie unter [Berechnete Metriken freigeben](cm-sharing.md) . |
-| **[!UICONTROL Datum geändert]** | Datum und Uhrzeit der letzten Änderung der berechneten Metrik. |
-| **[!UICONTROL Verwendet in]** | Zeigt an, wo berechnete Metriken derzeit verwendet werden und wie oft sie in den einzelnen Bereichen verwendet werden. <p>Wenn die berechnete Metrik beispielsweise in 40 Projekten und 2 Warnhinweisen verwendet wird, wird der Wert dieser Spalte als [!UICONTROL **42 Komponenten**] angezeigt. <p>Wählen Sie den Wert in dieser Spalte aus, um die Aufschlüsselung der Verwendung der berechneten Metriken anzuzeigen (z. B. [!UICONTROL **Projekte (40)**], [!UICONTROL **mobile Scorecards (2)**]). Darüber hinaus können Sie die Liste der Elemente anzeigen, in denen die berechneten Metriken verwendet werden. Sehen Sie sich beispielsweise die Liste der Projekte an, in denen sie verwendet werden, und klicken Sie auf den Link [!UICONTROL **Projekte (40)**] .</p><p>Jeder der folgenden Bereiche zeigt die Anzahl der Instanzen berechneter Metriken, die in diesem Bereich verwendet werden:</p> <ul><li>[!UICONTROL **Projekte**]<p>Enthält berechnete Metriken, die im Generator für berechnete Metriken ](/help/components/calc-metrics/cm-workflow/cm-build-metrics.md) erstellt wurden und für alle Projekte verfügbar sind.[</p></li><li>[!UICONTROL **Ad-hoc-Komponenten**]<p>Enthält berechnete Metriken, die [ als schnell berechnete Metriken erstellt wurden](/help/components/apply-create-metrics.md#create-calculated-metrics-for-a-single-project) und nur in einem einzelnen Projekt verfügbar sind.</p></li><li>[!UICONTROL **Geplante Projekte**]</li><li>[!UICONTROL **Mobile Scorecards**]</li><li>[!UICONTROL **Anmerkungen**]</li><li>[!UICONTROL **Report Builder**]<p>Bei Auswahl dieser Option wird eine CSV-Datei mit den folgenden Datenspalten heruntergeladen:</p><ul><li>Name des Report Builders</li><li>Zuletzt aufgerufen</li><li>Letzter Zugriff auf IMS-Benutzer-ID</li><li>Letzter Benutzername</li></ul></li></ul><p>Diese Informationen können Ihnen dabei helfen festzustellen, ob eine Komponente für Benutzer in Ihrer Organisation nützlich ist, wo sie verwendet wird und ob sie gelöscht oder geändert werden muss.</p><p>Beachten Sie Folgendes beim Anzeigen dieser Option:</p><ul><li>Diese Informationen sind nur für Systemadministratoren verfügbar.</li><li>Die Spalte [!UICONTROL **Verwendet in**] wird nicht standardmäßig angezeigt. Verwenden Sie ![ColumnSetting](/help/assets/icons/ColumnSetting.svg) , um die Anzeige dieser Spalte zu konfigurieren.</li><li>Diese Informationen enthalten keine Verwendung über die API oder Data Warehouse.</li><li>Wenn in dieser Spalte keine Daten für eine bestimmte Komponente vorhanden sind, sie jedoch das Datum [!UICONTROL **Zuletzt verwendet**] hat, wurde die Komponente möglicherweise in einer Analyse verwendet, ohne gespeichert zu werden.</li><li>Nutzungsinformationen sind ab September 2023 verfügbar.</li></ul><p>Sie können das [Datenwörterbuch](/help/components/data-dictionary/data-dictionary-overview.md) zusammen mit diesen Informationen verwenden, um die Verwendung von Komponenten in Ihrer Organisation zu verfolgen und besser zu verstehen.</p> |
-| **[!UICONTROL Zuletzt verwendet]** | Zeitpunkt der letzten Verwendung der berechneten Metrik. |
+| **[!UICONTROL Freigegeben für]** | Listet auf, für wie viele Einzelpersonen oder Gruppen Sie die berechnete Metrik freigegeben haben. Wählen Sie aus, um das Dialogfeld **[!UICONTROL Berechnete Metrik freigeben]** zu öffnen. Weitere Informationen [ Sie unter ](cm-sharing.md) berechneter Metriken freigeben . |
+| **[!UICONTROL Änderungsdatum]** | Datum und Uhrzeit der letzten Änderung der berechneten Metrik. |
+| **[!UICONTROL Verwendet in]** | Zeigt an, wo berechnete Metriken derzeit verwendet werden und wie oft sie in den einzelnen Bereichen verwendet werden. <p>Wenn die berechnete Metrik beispielsweise in 40 Projekten und 2 Warnhinweisen verwendet wird, wird der Wert dieser Spalte als [!UICONTROL **42 Komponenten**] angezeigt. <p>Wählen Sie den Wert in dieser Spalte aus, um die Aufschlüsselung anzuzeigen, wo die berechneten Metriken verwendet werden (z. B. [!UICONTROL **Projekte (40)**], [!UICONTROL **Mobile Scorecards (2)**]). Darüber hinaus können Sie die Liste der Elemente anzeigen, in denen die berechneten Metriken verwendet werden. Um beispielsweise die Liste der Projekte anzuzeigen, in denen sie verwendet werden, klicken Sie auf den Link [!UICONTROL **Projekte (40)**].</p><p>Jeder der folgenden Bereiche zeigt die Anzahl der Instanzen berechneter Metriken an, die in diesem Bereich verwendet werden:</p> <ul><li>[!UICONTROL **Projekte**]<p>Enthält berechnete Metriken, [ im Generator für berechnete Metriken erstellt wurden ](/help/components/calc-metrics/cm-workflow/cm-build-metrics.md) für alle Projekte verfügbar sind.</p></li><li>[!UICONTROL **Ad-hoc-Komponenten**]<p>Enthält berechnete Metriken, [ als schnelle berechnete Metriken erstellt wurden ](/help/components/apply-create-metrics.md#create-calculated-metrics-for-a-single-project) nur in einem einzigen Projekt verfügbar sind.</p></li><li>[!UICONTROL **Geplante Projekte**]</li><li>[!UICONTROL **Mobile Scorecards**]</li><li>[!UICONTROL **Anmerkungen**]</li><li>[!UICONTROL **Report Builder**]<p>Wenn Sie diese Option wählen, wird eine CSV-Datei mit den folgenden Datenspalten heruntergeladen:</p><ul><li>Name des Report Builders</li><li>Zuletzt aufgerufen</li><li>Zuletzt aufgerufene IMS-Benutzer-ID</li><li>Zuletzt aufgerufener Benutzername</li></ul></li></ul><p>Diese Informationen können Ihnen dabei helfen festzustellen, ob eine Komponente für Benutzende in Ihrer Organisation nützlich ist, wo sie verwendet wird und ob sie gelöscht oder geändert werden muss.</p><p>Beachten Sie Folgendes beim Anzeigen dieser Option:</p><ul><li>Diese Informationen stehen nur Systemadministratoren zur Verfügung.</li><li>Die Spalte [!UICONTROL **Verwendet in**] wird standardmäßig nicht angezeigt. Mit ![ColumnSetting](/help/assets/icons/ColumnSetting.svg) können Sie die Anzeige dieser Spalte konfigurieren.</li><li>Diese Informationen beinhalten keine Verwendung über die API oder die Data Warehouse.</li><li>Wenn in dieser Spalte keine Daten für eine bestimmte Komponente vorhanden sind, sie jedoch ein Datum [!UICONTROL **Zuletzt verwendet**] aufweist, wurde die Komponente möglicherweise in einer Analyse verwendet, ohne gespeichert zu werden.</li><li>Nutzungsinformationen sind ab September 2023 verfügbar.</li></ul><p>Sie können das [Datenwörterbuch](/help/components/data-dictionary/data-dictionary-overview.md) zusammen mit diesen Informationen verwenden, um zu verfolgen und besser zu verstehen, wie Komponenten in Ihrer Organisation verwendet werden.</p> |
+| **[!UICONTROL Zuletzt verwendet]** | Wann die berechnete Metrik zuletzt verwendet wurde. |
 
 {style="table-layout:auto"}
 
-Verwenden Sie ![ColumnSetting](/help/assets/icons/ColumnSetting.svg) , um anzugeben, welche Spalten angezeigt werden sollen.
+Verwenden Sie ![Spalteneinstellung](/help/assets/icons/ColumnSetting.svg), um die anzuzeigenden Spalten anzugeben.
 
-### Symbolleiste
+### Aktionsleiste
 
-Mithilfe der Aktionsleiste können Sie Filter bearbeiten. Die Aktionsleiste enthält die folgenden Aktionen:
+Über die Aktionsleiste können Sie Aktionen für Filter durchführen. Die Aktionsleiste ermöglicht die folgenden Aktionen:
 
 | Symbol | Aktion | Beschreibung |
 |:---:|---|---|
-| ![AddCircle](/help/assets/icons/AddCircle.svg) | **[!UICONTROL Hinzufügen]** | Fügen Sie mithilfe des [Generator für berechnete Metriken](cm-build-metrics.md) weitere berechnete Metriken hinzu. |
-| ![Durchsuchen](/help/assets/icons/Search.svg) | [!UICONTROL *Suche nach Titel*] | Wenn keine berechnete Metrik in der Liste ausgewählt ist, suchen Sie mithilfe dieses Suchfelds nach Filtern. |
-| ![Beschriftung](/help/assets/icons/Label.svg) | **[!UICONTROL Tag]** | Taggen Sie die ausgewählten berechneten Metriken. Wählen Sie im Dialogfeld **[!UICONTROL Berechnete Metrik taggen]** die Tags für die ausgewählte berechnete Metrik aus oder deaktivieren Sie sie. Wählen Sie **[!UICONTROL Speichern]** aus, um die Tags für die ausgewählten berechneten Metriken zu speichern. Weitere Informationen finden Sie unter [Berechnete Metriken taggen](cm-tagging.md) . |
-| ![Freigeben](/help/assets/icons/ShareAlt.svg) | **[!UICONTROL Freigeben]** | Geben Sie die ausgewählten berechneten Metriken frei. Im Dialogfeld **[!UICONTROL Berechnete Metriken freigeben]** können Sie ![Suchen](/help/assets/icons/Search.svg) *nach Personen oder Gruppen durchsuchen* oder Sie können **[!UICONTROL Organisation]** oder **[!UICONTROL Gruppen]** auswählen. Wählen Sie **[!UICONTROL Speichern]** aus, um Freigabedetails für die ausgewählten berechneten Metriken zu speichern. Weitere Informationen finden Sie unter [Berechnete Metriken freigeben](cm-sharing.md) . |
-| ![Löschen](/help/assets/icons/Delete.svg) | **[!UICONTROL Löschen]** | Löschen Sie die ausgewählten berechneten Metriken. Sie werden zur Bestätigung aufgefordert. |
-| ![Bearbeiten](/help/assets/icons/Edit.svg) | **[!UICONTROL Umbenennen]** | Benennen Sie eine einzelne ausgewählte berechnete Metrik um. Wenn diese Option aktiviert ist, können Sie die berechnete Metrik inline umbenennen. |
-| ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | **[!UICONTROL Genehmigen]** | Genehmigen Sie die ausgewählten berechneten Metriken. Siehe [Berechnete Metriken genehmigen](cm-approving.md). |
+| ![Hinzufügen](/help/assets/icons/AddCircle.svg) | **[!UICONTROL Hinzufügen]** | Fügen Sie weitere berechnete Metriken mithilfe des Builders für [ berechnete Metriken ](cm-build-metrics.md). |
+| ![Durchsuchen](/help/assets/icons/Search.svg) | [!UICONTROL *Nach Titel suchen*] | Wenn keine berechnete Metrik in der Liste ausgewählt ist, suchen Sie mithilfe dieses Suchfelds nach Filtern. |
+| ![Beschriftung](/help/assets/icons/Label.svg) | **[!UICONTROL Tag]** | Kennzeichnen Sie die ausgewählten berechneten Metriken. Wählen Sie im **[!UICONTROL Berechnete Metrik]** Tag) die Tags für die ausgewählte berechnete Metrik aus oder heben Sie die Auswahl auf. Wählen Sie **[!UICONTROL Speichern]**, um die Tags für die ausgewählten berechneten Metriken zu speichern. Weitere Informationen finden [ unter &quot;](cm-tagging.md) Metriken taggen“. |
+| ![Freigeben](/help/assets/icons/ShareAlt.svg) | **[!UICONTROL Freigeben]** | Geben Sie die ausgewählten berechneten Metriken frei. Im Dialogfeld **[!UICONTROL Berechnete Metriken freigeben]** können Sie ![Suchen](/help/assets/icons/Search.svg)*nach Einzelpersonen oder Gruppen* oder **[!UICONTROL Organisation]** oder **[!UICONTROL Gruppen]**. Wählen Sie **[!UICONTROL Speichern]**, um Freigabedetails für die ausgewählten berechneten Metriken zu speichern. Weitere Informationen [ Sie unter ](cm-sharing.md) berechneter Metriken freigeben . |
+| ![Löschen](/help/assets/icons/Delete.svg) | **[!UICONTROL Löschen]** | Löscht die ausgewählten berechneten Metriken. Sie werden zur Bestätigung aufgefordert. |
+| ![Bearbeiten](/help/assets/icons/Edit.svg) | **[!UICONTROL Umbenennen]** | Eine einzelne ausgewählte berechnete Metrik umbenennen. Wenn diese Option aktiviert ist, können Sie die berechnete Metrik inline umbenennen. |
+| ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | **[!UICONTROL Genehmigen]** | Genehmigen Sie die ausgewählten berechneten Metriken. Siehe [Genehmigen von berechneten Metriken](cm-approving.md). |
 | ![Kopieren](/help/assets/icons/Copy.svg) | **[!UICONTROL Kopieren]** | Kopieren Sie die ausgewählten berechneten Metriken. Neue berechnete Metriken werden mit demselben Namen und Suffix `(Copy)` erstellt |
-| ![FileCSV](/help/assets/icons/FileCSV.svg) | **[!UICONTROL In CSV exportieren]** | Exportieren Sie die berechneten Metriken in eine `Calculated  metric List.csv` -Datei. |
+| ![CSV-Datei](/help/assets/icons/FileCSV.svg) | **[!UICONTROL In CSV exportieren]** | Exportieren Sie die berechneten Metriken in eine `Calculated  metric List.csv`. |
 
 ### Aktive Filterleiste
 
-Die Filterleiste zeigt die aktiven Filter, die aus dem Filterbereich auf die Liste angewendet werden (falls vorhanden). Mit ![CrossSize75](/help/assets/icons/CrossSize75.svg) können Sie schnell einen Filter entfernen. Wenn mehr als ein Filter angegeben ist, können Sie alle Filter mit **[!UICONTROL Alle entfernen]** entfernen.
+In der Filterleiste werden die aktiven Filter angezeigt, die vom Bedienfeld Filter auf die Liste der berechneten Metriken angewendet wurden (falls vorhanden). Mit ![XGröße75](/help/assets/icons/CrossSize75.svg) können Sie schnell einen Filter entfernen. Wenn mehr als ein Filter angegeben ist, können Sie alle Filter mit **[!UICONTROL Alle entfernen]** entfernen.
 
-### Filterbereich
+### Bedienfeld „Filter“
 
-Sie können die Liste der berechneten Metrik mithilfe des linken Fensterbereichs ![Filter](/help/assets/icons/Filter.svg) **[!UICONTROL Filter]** filtern➍. Im Filterbereich werden der Filtertyp und die Anzahl der berechneten Metriken angezeigt, die den jeweiligen Filter berücksichtigen. Wählen Sie ![Filter](/help/assets/icons/Filter.svg) aus, um die Anzeige des Filterbereichs umzuschalten.
+Sie können die Liste der berechneten Metriken mithilfe des linken Bedienfelds ![Filter](/help/assets/icons/Filter.svg) **[!UICONTROL Filter]** filtern. Das Bedienfeld „Filter“ zeigt den Filtertyp und die Anzahl der berechneten Metriken an, die den spezifischen Filter berücksichtigen. Wählen Sie ![Filter](/help/assets/icons/Filter.svg) aus, um die Anzeige des Bedienfelds „Filter“ umzuschalten.
 
-Weitere Informationen finden Sie unter [Filtern der Liste berechneter Metriken](cm-filter.md) .
+Weitere Informationen [ Sie unter „Filtern ](cm-filter.md) Liste berechneter Metriken“.
 
 
 <!-- OLD CONTENT 

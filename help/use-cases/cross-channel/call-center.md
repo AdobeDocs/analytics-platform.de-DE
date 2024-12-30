@@ -42,14 +42,14 @@ Beim Importieren von Daten in die Platform können folgende Tipps hilfreich sein
 
 ## Ordnen Sie die Personen-IDs zu
 
-Customer Journey Analytics erfordert eine gemeinsame Kennung, um einen [kombinierten Datensatz](/help/connections/combined-dataset.md) zu generieren.
+Zum Customer Journey Analytics ist ein gemeinsamer Bezeichner erforderlich, um einen [kombinierten Datensatz“ ](/help/connections/combined-dataset.md).
 
 * Wenn Ihre Datensätze bereits für jedes Ereignis in beiden Datensätzen eine gemeinsame Kennung aufweisen, können Sie diesen Schritt überspringen und eine Verbindung erstellen.
-* Wenn einer Ihrer Datensätze nur für einige Ereignisse eine gemeinsame Kennung enthält, können Sie Daten mithilfe von [Zuordnung](/help/stitching/overview.md) für Schritte zuordnen, um eine kanalübergreifende Analyse für diese beiden Datensätze zu ermöglichen.
+* Wenn einer Ihrer Datensätze nur für einige Ereignisse eine gemeinsame Kennung hat, können Sie Daten mithilfe von [Zusammenfügung](/help/stitching/overview.md) für Schritte zusammenfügen, um die kanalübergreifende Analyse für diese beiden Datensätze zu aktivieren.
 
 ## Erstellen einer Verbindung in Customer Journey Analytics
 
-[Erstellen Sie eine Verbindung ](/help/connections/create-connection.md) im Customer Journey Analytics.
+[Erstellen einer Verbindung](/help/connections/create-connection.md) in Customer Journey Analytics.
 
 * Wenn die kanalübergreifende Analyse verwendet wird, steht Ihnen ein neuer zugeordneter Datensatz zur Verfügung. Verwenden Sie das neu erstellte Feld für die zugeordnete ID als die Personen-ID.
 * Andernfalls können Sie auch die ursprünglichen Web- und Callcenter-Datensätze für die Verbindung verwenden.

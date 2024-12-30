@@ -64,32 +64,32 @@ Im Folgenden finden Sie einige Möglichkeiten, wie Analytics-Administrierende da
 
 * Identifizierung von Komponenten, die noch nicht genehmigt sind.
 
-* Aktualisierung der Komponentenbeschreibungen direkt in Analysis Workspace. Alle Aktualisierungen, die an Komponentenbeschreibungen im Datenwörterbuch vorgenommen werden, werden in der Datenansicht angezeigt.
+* Aktualisierung der Komponentenbeschreibungen direkt in Analysis Workspace. Alle Aktualisierungen an Komponentenbeschreibungen im Datenwörterbuch werden in der Datenansicht angezeigt.
 
-  Ebenso spiegeln sich alle Aktualisierungen, die an Komponentenbeschreibungen in der Datenansicht vorgenommen wurden, in Analysis Workspace wider.
+  Ebenso werden alle Aktualisierungen an Komponentenbeschreibungen in der Datenansicht in Analysis Workspace übernommen.
 
-  Weitere Informationen zum Hinzufügen von Komponentenbeschreibungen in Analysis Workspace oder in einer Datenansicht finden Sie unter [Komponentenbeschreibungen hinzufügen](/help/components/add-component-descriptions.md).
+  Weitere Informationen zum Hinzufügen von Komponentenbeschreibungen in Analysis Workspace oder einer Datenansicht finden Sie unter [Hinzufügen von Komponentenbeschreibungen](/help/components/add-component-descriptions.md).
 
 ## Zugriff auf das Datenwörterbuch
 
 Sie können auf eine der folgenden Arten in Analysis Workspace auf das Datenwörterbuch zugreifen:
 
-![Symbol &quot;Datenwörterbuch&quot;im linken Bereich](assets/data-dictionary-access.png)
+![Datenwörterbuchsymbol im linken Bereich](assets/data-dictionary-access.png)
 
-* Von ![Lesezeichen](/help/assets/icons/Bookmark.svg) im Schaltflächenbedienfeld.
+* Von ![Lesezeichen](/help/assets/icons/Bookmark.svg) im Schaltflächenbereich.
 
 
 
-* Von ![Lesezeichen](/help/assets/icons/Bookmark.svg) im Info-Popup einer Komponente.
+* Von ![Lesezeichen](/help/assets/icons/Bookmark.svg) im Info-Pop-up einer Komponente.
 
 
 Detaillierte Informationen zu den verschiedenen verfügbaren Optionen im Datenwörterbuch finden Sie unter [Komponenteninformationen im Datenwörterbuch anzeigen](/help/components/data-dictionary/view-data-dictionary.md).
 
 ## Aktualisieren und Kuratieren des Datenwörterbuchs
 
-Customer Journey Analytics-Administratoren sind für die Pflege eines gesunden Datenwörterbuchs für ihre Organisation verantwortlich, wie in [Überwachen der Datenwörterbuchkonsistenz](/help/components/data-dictionary/monitor-data-dictionary-health.md) beschrieben.
+Customer Journey Analytics-Administratoren sind dafür verantwortlich, das Datenwörterbuch für ihre Organisation in einem guten Zustand zu halten, wie beschrieben unter [Überwachen des Zustands des Datenwörterbuchs](/help/components/data-dictionary/monitor-data-dictionary-health.md).
 
-Im Rahmen dieses Vorgangs können Customer Journey Analytics-Administratoren Informationen zu den einzelnen Komponenten im Datenwörterbuch bearbeiten, wie unter [Komponenteneinträge im Datenwörterbuch bearbeiten](/help/components/data-dictionary/edit-entries-data-dictionary.md) beschrieben.
+Im Rahmen dieses Prozesses können Customer Journey Analytics-Administratoren die Informationen zu den einzelnen Komponenten im Datenwörterbuch bearbeiten, wie beschrieben unter [Bearbeiten von Komponenteneinträgen im Datenwörterbuch](/help/components/data-dictionary/edit-entries-data-dictionary.md).
 
 ## Verschieben, Minimieren oder Schließen des Datenwörterbuchs
 

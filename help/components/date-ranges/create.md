@@ -7,7 +7,7 @@ role: User
 source-git-commit: df0fd0af8a22c84705c3dea11065132359dd80ff
 workflow-type: tm+mt
 source-wordcount: '513'
-ht-degree: 7%
+ht-degree: 39%
 
 ---
 
@@ -18,13 +18,13 @@ Jeder kann einen benutzerdefinierten Datumsbereich erstellen. Sie können einen 
 
 ![Erstellen einer Anmerkung](assets/create-date-range.png)
 
-* ?? Wählen Sie in der Hauptbenutzeroberfläche **[!UICONTROL Komponenten]** und dann **[!UICONTROL Datumsbereich]** aus. Wählen Sie ![AddCircle](/help/assets/icons/AddCircle.svg) [!UICONTROL **[!UICONTROL Add]**] aus dem [[!UICONTROL Datumsbereich] manager](/help/components/date-ranges/manage.md).
-* ?? Wählen Sie in einem Workspace-Projekt im Kontextmenü einer Visualisierung **[!UICONTROL Benutzerdefinierter Datumsbereich für diesen Datumsbereich]** aus.
-* ?? Wählen Sie in einem Workspace-Projekt **[!UICONTROL Komponenten]** aus dem Menü und dann **[!UICONTROL Datumsbereich erstellen]** aus.
-* ?? Verwenden Sie in einem Workspace-Projekt die Tastenkombination &quot;**[!UICONTROL Strg+Umschalt+D]**&quot;(Windows) bzw. &quot;**[!UICONTROL Umschalt+Befehl+D]**&quot;(macOS).
-* ?? Wählen Sie in einem Workspace-Projekt im linken Bedienfeld &quot;Komponenten&quot;unter ![Kalender](/help/assets/icons/Calendar.svg) **Datumsbereiche** die Option ![Hinzufügen](/help/assets/icons/Add.svg) aus.
+* ?? Wählen Sie in der Hauptbenutzeroberfläche **[!UICONTROL Komponenten]** und wählen Sie **[!UICONTROL Datumsbereich]**. Wählen Sie ![AddCircle](/help/assets/icons/AddCircle.svg) [!UICONTROL **[!UICONTROL Add]**] im [[!UICONTROL Datumsbereich]-Manager](/help/components/date-ranges/manage.md).
+* ?? Wählen Sie in einem Workspace-Projekt im Kontextmenü in einer Visualisierung **[!UICONTROL Benutzerdefinierter Datumsbereich für diesen Datumsbereich]** aus.
+* ?? Wählen Sie in einem Workspace-Projekt **[!UICONTROL Komponenten]** aus dem Menü und wählen Sie **[!UICONTROL Datumsbereich erstellen]**
+* ?? Verwenden Sie in einem Workspace-Projekt die Tastenkombination **[!UICONTROL Strg+Umschalt+D]** (Windows) oder **[!UICONTROL Umschalt+Befehl+D]** (macOS).
+* ?? Wählen Sie in einem Workspace-Projekt im linken Bedienfeld Komponenten ![Hinzufügen](/help/assets/icons/Add.svg) unter ![Kalender](/help/assets/icons/Calendar.svg) **Datumsbereiche**.
 
-Um die Anmerkung zu definieren, verwenden Sie den [[!UICONTROL Generator für Datumsbereiche]](#annotation-builder):
+Um die Anmerkung zu definieren, verwenden Sie den [[!UICONTROL Datumsbereichsersteller]](#annotation-builder):
 
 <!-- Should we really mention API here. If so, we can do it all over the place in the docs...
 | **Use the [Customer Journey Analytics Annotations API](https://developer.adobe.com/cja-apis/docs/endpoints/annotations/)** | The Customer Journey Analytics Annotations APIs allow you to create, update, or retrieve annotations programmatically through Adobe Developer. These APIs use the same data and methods that Adobe uses inside the product UI. |
@@ -45,39 +45,39 @@ Um die Anmerkung zu definieren, verwenden Sie den [[!UICONTROL Generator für Da
 
 
 
-Das Dialogfeld **[!UICONTROL Neuer Datumsbereich]** oder **[!UICONTROL Datumsbereich bearbeiten]** wird verwendet, um neue Datumsbereiche zu erstellen oder bestehende zu bearbeiten.
+Das Dialogfeld **[!UICONTROL Neuer Datumsbereich]** oder **[!UICONTROL Datumsbereich bearbeiten]** wird verwendet, um neue oder vorhandene Datumsbereiche zu erstellen.
 
 ![Fenster „Anmerkungsdetails“ mit Feldern und Optionen, die im nächsten Abschnitt beschrieben werden.](assets/edit-date-range.png)
 
 
-1. Geben Sie einen **[!UICONTROL Titel]** für den Datumsbereich an. Beispiel: **[!UICONTROL vierteljährlich]**.
-1. Geben Sie optional eine **[!UICONTROL Beschreibung]** an.
-1. Organisieren Sie den Filter, indem Sie einen oder mehrere **[!UICONTROL Tags]** erstellen oder anwenden. Beginnen Sie mit der Eingabe, um vorhandene Tags zu finden, die Sie auswählen können. Oder drücken Sie **[!UICONTROL EINGABETASTE]** , um ein neues Tag hinzuzufügen. Wählen Sie ![CrossSize75](/help/assets/icons/CrossSize75.svg) aus, um ein Tag zu entfernen. |
+1. Geben Sie einen **[!UICONTROL Titel]** für den Datumsbereich an. Beispiel: **[!UICONTROL Vierteljährlich]**.
+1. Geben Sie optional eine &quot;**[!UICONTROL &quot;]**.
+1. Organisieren Sie den Filter, indem Sie ein oder mehrere **[!UICONTROL Tags]** erstellen oder anwenden. Beginnen Sie mit der Eingabe, um nach vorhandenen Tags zu suchen, die Sie auswählen können. Oder drücken Sie **[!UICONTROL EINGABETASTE]**, um ein neues Tag hinzuzufügen. Wählen Sie ![CrossSize75](/help/assets/icons/CrossSize75.svg) aus, um ein Tag zu entfernen. |
 1. Wählen Sie einen **[!UICONTROL Datumsbereich]** aus, indem Sie zuerst das Startdatum und dann das Enddatum auswählen.
-Alternativ können Sie eine **[!UICONTROL Vorgabe]** aus dem Dropdown-Menü [!UICONTROL *Vorgabe auswählen*] auswählen.
+Alternativ können Sie eine **[!UICONTROL Voreinstellung]** aus dem Dropdown-Menü [!UICONTROL *Voreinstellung auswählen*] auswählen.
 
-1. Wählen Sie optional **[!UICONTROL Erweiterte Einstellungen anzeigen]** aus, um:
+1. Wählen Sie optional **[!UICONTROL Erweiterte Einstellungen einblenden]** für Folgendes aus:
 
-   * Geben Sie **[!UICONTROL Startzeit]** und **[!UICONTROL Endzeit]** außer den Standardwerten `12:00 AM` (`0:00`) und `11:59 PM` (`23:59`) an. Endzeiten umfassen immer 59 Sekunden. Für einen Datumsbereich, der viele Tage umfasst, gilt die Startzeit für den ersten Tag des Datumsbereichs und die Endzeit für den letzten Tag in Ihrem Datumsbereich. Verwenden Sie **[!UICONTROL (Zeitwerte zurücksetzen)]** , um die Start- und Endzeit auf ihre Standardwerte zurückzusetzen.
-   * **[!UICONTROL Verwenden Sie rollierende Datumswerte]**. Wenn diese Option aktiviert ist, werden voreingestellte Datumsbereiche wie **[!UICONTROL Letzte 7 volle Tage]** dynamisch als aktueller Fortschritt von Datum und Uhrzeit aktualisiert. Wenn diese Option deaktiviert ist, werden diese Vorgaben nach der Anwendung nicht aktualisiert.
+   * Geben Sie eine andere **[!UICONTROL Startzeit]** und **[!UICONTROL Endzeit]** als die Standardwerte `12:00 AM` (`0:00`) und `11:59 PM` (`23:59`) an. Endzeiten umfassen immer 59 Sekunden. Für einen Datumsbereich, der viele Tage umfasst, gilt die Startzeit für den ersten Tag des Datumsbereichs und die Endzeit gilt für den letzten Tag in Ihrem Datumsbereich. Verwenden Sie **[!UICONTROL (Zeitwerte zurücksetzen)]**, um die Start- und Endzeit auf ihre Standardwerte zurückzusetzen.
+   * **[!UICONTROL Rollierende Termine verwenden]**. Wenn diese Option aktiviert ist, werden voreingestellte Datumsbereiche wie **[!UICONTROL Letzte 7 volle Tage]** dynamisch als aktuelles Datum und aktueller Zeitfortschritt aktualisiert. Wenn diese Option deaktiviert ist, werden diese Vorgaben nach der Anwendung nicht aktualisiert.
 
-     Sie können den Text in eckigen Klammern auswählen (z. B. **[!UICONTROL Fester Start - Rollierender Quartalsstart]**), um den Bereich zu erweitern, und Details für **[!UICONTROL Start]** und **[!UICONTROL Ende]** angeben.
+     Sie können den Text in Klammern auswählen (z. B. **[!UICONTROL fester Start - vierteljährlich rollierend]**), um das Bedienfeld zu erweitern und Details für **[!UICONTROL Start]** und **[!UICONTROL Ende]** anzugeben.
 
      ![Rollierende Datumswerte](assets/rolliing-dates.png)
 
-      1. Wählen Sie **[!UICONTROL Start von]**, **[!UICONTROL Ende von]** oder **[!UICONTROL Fester Tag]** aus.
-      1. Wenn Sie **[!UICONTROL Beginn von]** oder **[!UICONTROL Ende von]** ausgewählt haben, können Sie einen vollständigen Ausdruck erstellen. Beispiel: **[!UICONTROL Ende von]** **[!UICONTROL aktuelles Quartal]** **[!UICONTROL minus]** `20` **[!UICONTROL Tage]**. Wählen Sie den entsprechenden Wert für jeden einzelnen Teil des Ausdrucks aus.
-         * Wählen Sie einen Wert für den aktuellen Wert aus. Beispiel: **[!UICONTROL Aktuelles Quartal]**.
-         * Wählen Sie einen Wert für die zusätzliche Berechnung aus. Beispiel: **[!UICONTROL minus]**.
+      1. Wählen Sie **[!UICONTROL Anfang von]**, **[!UICONTROL Ende von]** oder **[!UICONTROL Festgelegter Tag]** aus.
+      1. Wenn Sie **[!UICONTROL Anfang von]** oder **[!UICONTROL Ende von]** ausgewählt haben, können Sie einen vollständigen Ausdruck erstellen. Beispiel: **[!UICONTROL Ende vom]** **[!UICONTROL aktuelles Quartal]** **[!UICONTROL minus]** `20`**[!UICONTROL Tage]**. Wählen Sie den entsprechenden Wert für jeden einzelnen Teil des Ausdrucks aus.
+         * Wählen Sie einen Wert für den aktuellen Zeitraum aus, Beispiel: **[!UICONTROL aktuelles Quartal]**.
+         * Wählen Sie einen Wert für die zusätzliche Berechnung aus, Beispiel: **[!UICONTROL minus]**.
          * Wenn Sie eine zusätzliche Berechnung angegeben haben, geben Sie einen Wert an. Zum Beispiel `20`.
-         * Wenn Sie eine zusätzliche Berechnung angegeben haben, wählen Sie den Zeitraum aus, der für die Berechnung verwendet werden soll. Beispiel: **[!UICONTROL days]**.
+         * Wenn Sie eine zusätzliche Berechnung angegeben haben, wählen Sie den Zeitraum aus, der für die Berechnung verwendet werden soll. Beispiel: **[!UICONTROL Tage]**.
 
-     Wählen Sie **[!UICONTROL Details ausblenden]** aus, um die Details für die Berechnung rollierender Datumswerte auszublenden.
+     Wählen Sie **[!UICONTROL Details ausblenden]** aus, um die Details für die Berechnung rollierender Termine auszublenden.
 
-1. Wählen Sie :
-   * **[!UICONTROL Speichern]** zum Speichern des Datumsbereichs.
-   * **[!UICONTROL Speichern unter]** , um eine Kopie des Datumsbereichs zu speichern.
-   * **[!UICONTROL Abbrechen]** , um alle Änderungen abzubrechen, die Sie am Datumsbereich vorgenommen haben, oder um die Erstellung eines neuen Datumsbereichs abzubrechen.
+1. Auswählen :
+   * **[!UICONTROL Speichern]**, um den Datumsbereich zu speichern.
+   * **[!UICONTROL Speichern unter]**, um eine Kopie des Datumsbereichs zu speichern.
+   * **[!UICONTROL Abbrechen]** zum Abbrechen aller Änderungen, die Sie am Datumsbereich vorgenommen haben, oder zum Abbrechen der Erstellung eines neuen Datumsbereichs.
 
 
 <!--

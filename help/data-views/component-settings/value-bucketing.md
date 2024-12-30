@@ -18,8 +18,8 @@ ht-degree: 100%
 
 >[!CONTEXTUALHELP]
 >id="cja_dataview_component_dimension_valuebucketing"
->title="Wert-Bucketing"
->abstract="Verteilen Sie Werte in bestimmte Bucket-Bereiche. Diese Bereiche werden in Berichten als Dimensionselemente angezeigt."
+>title="Bucketing von Werten"
+>abstract="Sie können Werte zu spezifischen Bereichen zusammenfassen. Diese Bereiche werden in Berichten als Dimensionseinträge angezeigt."
 
 <!-- markdownlint-enable MD034 -->
 

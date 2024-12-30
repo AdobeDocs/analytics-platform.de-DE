@@ -1,6 +1,6 @@
 ---
 title: Customer Journey Analytics-Rechenzentren
-description: Erfahren Sie mehr über CJA-Rechenzentrumsstandorte auf der ganzen Welt.
+description: Erfahren Sie mehr über CJA-Standorte in Rechenzentren weltweit.
 solution: Customer Journey Analytics
 role: Admin
 exl-id: a41686bb-1a7b-4d27-8415-f4a1880b7de5
@@ -11,20 +11,20 @@ ht-degree: 3%
 
 ---
 
-# Customer Journey Analytics-Hosting-Standorte
+# Customer Journey Analytics-Hosting-Speicherorte
 
-Adobe Customer Journey Analytics wird in Rechenzentren der Unternehmensklasse von öffentlichen Cloud-Service-Anbietern in Nordamerika, Europa und APAC gehostet.
+Adobe Customer Journey Analytics wird in Rechenzentren der Unternehmensklasse von Anbietern öffentlicher Cloud-Services in Nordamerika, Europa und APAC gehostet.
 
-Nach der Bereitstellung bestimmen Kunden die Region, in der sich ihre Adobe Experience Platform-Daten befinden. Die Daten, die aus dem Adobe Experience Platform Data Lake in CJA erfasst werden, werden in derselben Region gespeichert.
+Bei der Bereitstellung bestimmen Kundinnen und Kunden die Region, in der sich ihre Adobe Experience Platform-Daten befinden. Die Daten, die aus dem Data Lake von Adobe Experience Platform in CJA aufgenommen werden, werden in derselben Region gespeichert.
 
-Weitere Informationen finden Sie unter [Regionale Datenerfassung](https://experienceleague.adobe.com/en/docs/core-services/interface/data-collection/rdc) in der Adobe Experience Cloud-Dokumentation.
+Weitere Informationen [ Sie in der ](https://experienceleague.adobe.com/en/docs/core-services/interface/data-collection/rdc) zu Adobe Experience Cloud unter „Regionale Datenerfassung“.
 
 ## Azure
 
 - Virginia, USA
-- Kanada, Zentralamerika
+- Zentralkanada
 - Niederlande
-- Australien Osten
-- Indien Central
+- Ostaustralien
+- Zentralindien
 - Vereinigtes Königreich
 

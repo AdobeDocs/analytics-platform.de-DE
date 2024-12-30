@@ -1,6 +1,6 @@
 ---
-title: Benutzerdefiniertes Schema für Customer Journey Analytics erstellen
-description: Erfahren Sie, wie Sie ein benutzerdefiniertes Schema für die Customer Journey Analytics erstellen
+title: Erstellen eines benutzerdefinierten Schemas zum Customer Journey Analytics
+description: Erfahren Sie, wie Sie ein benutzerdefiniertes Schema für das Customer Journey Analytics erstellen
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
@@ -18,15 +18,15 @@ ht-degree: 48%
 
 >[!NOTE]
 > 
->Führen Sie die Schritte auf dieser Seite erst aus, nachdem Sie alle vorherigen Aktualisierungsschritte ausgeführt haben. Sie können die [empfohlenen Aktualisierungsschritte](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) ausführen oder die für Ihr Unternehmen dynamisch generierten Aktualisierungsschritte mit dem Fragebogen [Adobe Analytics to Customer Journey Analytics Upgrade Fragenkatalog](https://gigazelle.github.io/cja-ttv/) ausführen.
+>Befolgen Sie die Schritte auf dieser Seite erst, nachdem Sie alle vorherigen Upgrade-Schritte abgeschlossen haben. Sie können die [empfohlenen Upgrade-Schritte](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) ausführen oder die Upgrade-Schritte ausführen, die für Ihr Unternehmen mit dem [Fragebogen für das Upgrade von Adobe Analytics auf Customer Journey Analytics dynamisch generiert wurden](https://gigazelle.github.io/cja-ttv/).
 >
->Nachdem Sie die Schritte auf dieser Seite ausgeführt haben, fahren Sie mit den empfohlenen Aktualisierungsschritten oder den dynamisch generierten Aktualisierungsschritten fort.
+>Nachdem Sie die Schritte auf dieser Seite abgeschlossen haben, folgen Sie den empfohlenen Upgrade-Schritten oder den dynamisch generierten Upgrade-Schritten.
 
 >[!IMPORTANT]
 >
->Bevor Sie mit der Erstellung Ihres benutzerdefinierten Schemas beginnen, wenden Sie sich an Ihr Datenteam und andere Interessengruppen in Ihrer Organisation, um das ideale Schema für Customer Journey Analytics und die anderen von Ihnen verwendeten Adobe Experience Platform-Anwendungen zu ermitteln. Weitere Informationen finden Sie unter [Architektur Ihres Schemas für die Verwendung mit Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-schema-architect.md).
+>Bevor Sie mit der Erstellung Ihres benutzerdefinierten Schemas beginnen, arbeiten Sie mit Ihrem Daten-Team und anderen Stakeholdern in Ihrem Unternehmen zusammen, um das ideale Schema-Design Ihres Unternehmens für das Customer Journey Analytics und die anderen von Ihnen verwendeten Adobe Experience Platform-Programme zu ermitteln. Weitere Informationen finden Sie unter [Entwickeln eines Schemas zur Verwendung mit Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-schema-architect.md).
 
-Adobe empfiehlt die Erstellung eines benutzerdefinierten Experience-Datenmodell (XDM)-Schemas zur Verwendung mit dem Web SDK bei der Aktualisierung auf Customer Journey Analytics. Ein benutzerdefiniertes Schema ermöglicht ein optimiertes Schema, das auf die Anforderungen Ihres Unternehmens und die spezifischen Platform-Anwendungen zugeschnitten ist, die Sie verwenden. Wenn Änderungen am Schema erforderlich sind, müssen Sie nicht Tausende nicht verwendeter Felder durchgehen, um das zu aktualisierende Feld zu finden.
+Adobe empfiehlt die Erstellung eines benutzerdefinierten Experience-Datenmodell-Schemas (XDM), das beim Upgrade auf Customer Journey Analytics mit der Web-SDK verwendet werden kann. Ein benutzerdefiniertes Schema ermöglicht ein optimiertes Schema, das auf die Anforderungen Ihres Unternehmens und die von Ihnen verwendeten Platform-Programme zugeschnitten ist. Wenn Änderungen am Schema erforderlich sind, müssen Sie nicht Tausende nicht verwendeter Felder durchgehen, um das zu aktualisierende Feld zu finden.
 
 ## Erstellen des Schemas
 
@@ -36,36 +36,36 @@ So erstellen Sie ein benutzerdefiniertes Schema:
 
 <!-- Should we single source this instead of duplicate it? The following steps were copied from: /help/data-ingestion/aepwebsdk.md-->
 
-1. Wählen Sie in Adobe Experience Platform in der linken Leiste **[!UICONTROL Schemas]** in [!UICONTROL DATENVERWALTUNG] aus.
+1. Wählen Sie in Adobe Experience Platform in der linken Leiste die Option **[!UICONTROL Schemata]** unter [!UICONTROL DATEN-MANAGEMENT].
 
 1. Wählen Sie **[!UICONTROL Schema erstellen]** aus.
 
-1. Wählen Sie im Schritt **[!UICONTROL Select a class]** des Assistenten Schema erstellen Folgendes:
+1. Im Schritt **[!UICONTROL Klasse auswählen]** des Assistenten „Schema erstellen“:
 
    1. Wählen Sie **[!UICONTROL Erlebnisereignis]** aus.
 
-      ![Erstellen eines Schemas, das Erlebnisereignis hervorhebt](assets/create-ee-schema-wizard-step-1.png)
+      ![Erstellen eines Schemas mit hervorgehobenen Erlebnisereignissen](assets/create-ee-schema-wizard-step-1.png)
 
       >[!INFO]
       >
-      >    Mit einem Erlebnisereignis-Schema wird das _Verhalten_ eines Profils modelliert (z. B. Name der Szene, Schaltfläche zum Hinzufügen zum Warenkorb). Das Schema „Individuelles Profil“ wird verwendet, um die _Attribute_ eines Profils zu modellieren (z. B. Name, E-Mail, Geschlecht).
+      >    Ein Erlebnisereignis-Schema wird zum Modellieren des _Verhaltens_ eines Profils verwendet (z. B. Szenenname, zum Warenkorb hinzuzufügende Schaltfläche). Das Schema „Individuelles Profil“ wird verwendet, um die _Attribute_ eines Profils zu modellieren (z. B. Name, E-Mail, Geschlecht).
 
    1. Klicken Sie auf **[!UICONTROL Weiter]**.
 
 
 1. Im Schritt [!UICONTROL Name und Überprüfung] des Assistenten [!UICONTROL Schema erstellen]:
 
-   1. Geben Sie einen **[!UICONTROL Anzeigenamen des Schemas]** und (optional) eine **[!UICONTROL Beschreibung]** ein.
+   1. Geben Sie einen **[!UICONTROL Anzeigenamen des Schemas]** für Ihr Schema und (optional) eine **[!UICONTROL Beschreibung]** ein.
 
-      ![Schema-Fenster mit dem Namen der Schemafelder erstellen](assets/create-ee-schema-wizard-step-2.png)
+      ![Fenster Schema erstellen mit dem Namen Ihrer Schemafelder](assets/create-ee-schema-wizard-step-2.png)
 
    1. Wählen Sie **[!UICONTROL Beenden]** aus.
 
-1. Fügen Sie alle Feldergruppen hinzu, die alle Felder enthalten, die Sie in Ihr Schema aufnehmen möchten.
+1. Fügen Sie alle Feldergruppen hinzu, die Felder enthalten, die Sie in Ihr Schema aufnehmen möchten.
 
    Feldergruppen sind wiederverwendbare Sammlungen von Objekten und Attributen, mit denen Sie Ihr Schema einfach erweitern können.
 
-   1. Wählen Sie im Abschnitt **[!UICONTROL Feldgruppen]** die Option **[!UICONTROL + Hinzufügen]** aus.
+   1. Wählen Sie im **[!UICONTROL Feldergruppen]** die Option **[!UICONTROL + Hinzufügen]**.
 
       ![Hinzufügen der Feldergruppe](assets/add-field-group-button.png)
 
@@ -85,13 +85,13 @@ So erstellen Sie ein benutzerdefiniertes Schema:
 
 1. (Optional) Wenn Sie benutzerdefinierte Felder haben, die Sie in Ihr Schema aufnehmen möchten, erstellen Sie eine benutzerdefinierte Feldergruppe und fügen Sie die benutzerdefinierten Felder zur Feldergruppe hinzu.
 
-   1. Wählen Sie im Abschnitt **[!UICONTROL Feldgruppen]** die Option **[!UICONTROL + Hinzufügen]** aus.
+   1. Wählen Sie im **[!UICONTROL Feldergruppen]** die Option **[!UICONTROL + Hinzufügen]**.
 
       ![Hinzufügen der Feldergruppe](assets/add-field-group-button.png)
 
-   1. Wählen Sie im Dialogfeld [!UICONTROL Feldergruppen hinzufügen] die Option **[!UICONTROL Neue Feldergruppe erstellen]**.
+   1. Wählen [!UICONTROL  Dialogfeld „Feldergruppen hinzufügen] die Option **[!UICONTROL Neue Feldergruppe erstellen]**.
 
-   1. Geben Sie einen Anzeigenamen und eine optionale Beschreibung an und wählen Sie dann **[!UICONTROL Feldgruppen hinzufügen]** aus.
+   1. Geben Sie einen Anzeigenamen und eine optionale Beschreibung ein und wählen Sie dann **[!UICONTROL Feldergruppen hinzufügen]** aus.
 
 1. Wählen Sie **[!UICONTROL +]** neben Ihrem Schemanamen im Bedienfeld [!UICONTROL Struktur] aus.
 
@@ -101,11 +101,11 @@ So erstellen Sie ein benutzerdefiniertes Schema:
 
    >[!NOTE]
    >
-   >Wenn diese Feldergruppe nicht verfügbar ist, suchen Sie nach einer anderen Feldergruppe, die Identitätsfelder enthält. Oder [erstellen Sie eine neue Feldergruppe](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/field-groups.html) und [fügen Sie der Feldergruppe neue Identitätsfelder hinzu](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/identity.html#define-a-identity-field) (z. B. `ecid`, `crmId` und andere, die Sie benötigen) und wählen Sie diese neue Feldergruppe aus.
+   >Wenn diese Feldergruppe nicht verfügbar ist, suchen Sie nach einer anderen Feldergruppe, die Identitätsfelder enthält. Oder [eine neue Feldergruppe erstellen](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/field-groups.html) und [neue Identitätsfelder hinzufügen](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/identity.html#define-a-identity-field) (z. B. `ecid`, `crmId` und andere benötigte) zur Feldergruppe hinzufügen und diese neue Feldergruppe auswählen.
 
    ![Identifizierungsobjekt](assets/identification-field.png)
 
-   Das Identifizierungsobjekt fügt Ihrem Schema Identifizierungsfunktionen hinzu. In Ihrem Fall möchten Sie Profile, die Ihre Site besuchen, mithilfe der Experience Cloud-ID und der E-Mail-Adresse identifizieren. Es gibt viele weitere Attribute, mit denen Sie die Identifizierung Ihrer Person verfolgen können (z. B. Kunden-ID, Treueprogramm-ID).
+   Das Identifizierungsobjekt fügt Ihrem Schema Identifizierungsfunktionen hinzu. In Ihrem Fall möchten Sie Profile, die Ihre Site besuchen, mithilfe der Experience Cloud-ID und der E-Mail-Adresse identifizieren. Es stehen eine Vielzahl weiterer Attribute zur Verfügung, um die Identifizierung Ihrer Person zu verfolgen (z. B. Kunden-ID, Treueprogramm-ID).
 
    Wählen Sie **[!UICONTROL Anwenden]** aus, um dieses Objekt zu Ihrem Schema hinzuzufügen.
 
@@ -127,7 +127,7 @@ So erstellen Sie ein benutzerdefiniertes Schema:
 
    Wählen Sie **[!UICONTROL Speichern]** aus.
 
-1. (Optional) Wenn Sie Customer Journey Analytics in RTCDP integrieren möchten, wählen Sie das Stammelement Ihres Schemas aus, das den Namen des Schemas anzeigt, und wählen Sie dann den Schalter **[!UICONTROL Profil]** aus.
+1. (Optional) Wenn Sie Customer Journey Analytics mit RTCDP integrieren möchten, wählen Sie das Stammelement Ihres Schemas aus, das den Namen des Schemas anzeigt, und wählen Sie dann den Umschalter **[!UICONTROL Profil]** aus.
 
    Sie werden aufgefordert, das Schema für das Profil zu aktivieren. Nach der Aktivierung werden Daten, die auf der Basis dieses Schemas in Datensätze aufgenommen werden, zum Echtzeit-Kundenprofil hinzugefügt.
 
@@ -135,7 +135,7 @@ So erstellen Sie ein benutzerdefiniertes Schema:
 
    >[!IMPORTANT]
    >
-   >Nachdem Sie ein Schema für ein Profil aktiviert haben, kann es für das Profil nicht deaktiviert werden.
+   >Nachdem Sie ein Schema für das Profil aktiviert haben, kann es nicht mehr für das Profil deaktiviert werden.
 
    ![Aktivieren eines Schemas für ein Profil](./assets/enable-for-profile.png)
 
@@ -153,10 +153,10 @@ So erstellen Sie ein benutzerdefiniertes Schema:
 
    * Fügen Sie ein Identifizierungsobjekt hinzu, das auf der Feldergruppe „Profile Core v2“ basiert.
 
-   * Definieren Sie die Experience Cloud-ID als primäre Kennung und die E-Mail als Kennung.
+   * Experience Cloud-ID als primäre Kennung und E-Mail als Kennung definieren.
 
    * Aktivieren Sie dieses Schema für das Profil
 
    Weitere Informationen zum Hinzufügen und Entfernen von Feldergruppen und einzelnen Feldern zu einem Schema finden Sie unter [Erstellen und Bearbeiten von Schemata über die Benutzeroberfläche](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html?lang=de).
 
-1. Führen Sie die [empfohlenen Aktualisierungsschritte](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) oder die dynamisch generierten Aktualisierungsschritte](https://gigazelle.github.io/cja-ttv/) aus.[
+1. Fahren Sie mit den [empfohlenen Upgrade-Schritten](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) oder den [dynamisch generierten Upgrade-Schritten](https://gigazelle.github.io/cja-ttv/) fort.

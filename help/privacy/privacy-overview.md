@@ -21,15 +21,15 @@ Die Integration zwischen Adobe Customer Journey Analytics und [Adobe Experience 
 
 Datenschutzbeschriftungen und -richtlinien, die für von Experience Platform genutzte Datensätze erstellt wurden, können im Datenansichts-Workflow von Customer Journey Analytics angezeigt werden. Diese Beschriftungen stoppen oder warnen Benutzer, die Metriken und/oder Dimensionen aus sensiblen Feldern erstellen.
 
-Darüber hinaus werden beim Exportieren von Daten aus Customer Journey Analytics (über Reporting, Export, API usw.) Warnhinweise oder Beschriftungen hinzugefügt, die Benutzer darauf hinweisen, dass ein Bericht sensible Informationen enthält, die auf bestimmte Weise behandelt werden müssen.
+Darüber hinaus werden beim Export von Daten vom Customer Journey Analytics (über Reporting, Export, API usw.) Warnhinweise oder Beschriftungen hinzugefügt, die Benutzer darauf hinweisen, dass ein Bericht sensible Informationen enthält, die auf bestimmte Weise behandelt werden müssen.
 
-Durch diese Integration können Sie die Compliance einfacher verwalten. Datenverantwortliche in Ihrem Unternehmen können Richtlinien festlegen, um die Nutzung zu beschränken. Daher können Ihre Customer Journey Analytics-Benutzer Daten in dem Bewusstsein, dass sie den von Data Stewards definierten Richtlinien entsprechen, sicherer verwenden.
+Durch diese Integration können Sie die Compliance einfacher verwalten. Datenverantwortliche in Ihrem Unternehmen können Richtlinien festlegen, um die Nutzung zu beschränken. Dadurch können Ihre Customer Journey Analytics-Benutzer Daten sicherer nutzen, da sie wissen, dass sie den von den Datenverwaltern festgelegten Richtlinien entsprechen.
 
 [Weitere Informationen](/help/data-views/data-governance.md)
 
 ## DSGVO
 
-Customer Journey Analytics wird nicht in den zentralen Service der Datenschutz-Grundverordnung (DSGVO) eingebunden, sondern übernimmt stattdessen alle in Experience Platform vorgenommenen Änderungen. Customer Journey Analytics ist auf Platform Data Lake angewiesen, um DSGVO-Löschanfragen zu erzwingen und Customer Journey Analytics zu benachrichtigen, wenn Anforderungen abgeschlossen sind. Alle Änderungen an den betroffenen Batches im Customer Journey Analytics für Ereignis-Datensätze werden mit Platform-Daten synchronisiert. Profil- und Lookup-Datensätze, die von DSGVO-Löschanfragen betroffen sind, werden nach jeder Löschanfrage vollständig neu erfasst. Löschanfragen werden in der Regel innerhalb von 7 Tagen nach einem Löschereignis im Data Lake abgeschlossen.
+Customer Journey Analytics wird nicht in den zentralen Service der Datenschutz-Grundverordnung (DSGVO) eingebunden, sondern übernimmt stattdessen alle in Experience Platform vorgenommenen Änderungen. Customer Journey Analytics hängt von Platform Data Lake ab, um DSGVO-Löschanfragen zu erzwingen und Customer Journey Analytics zu benachrichtigen, wenn Anfragen abgeschlossen sind. Alle Änderungen an betroffenen Batches in Customer Journey Analytics für Ereignis-Datensätze werden mit Platform-Daten synchronisiert. Profil- und Lookup-Datensätze, die von DSGVO-Löschanfragen betroffen sind, werden nach jeder Löschanfrage vollständig neu aufgenommen. Löschanfragen werden in der Regel innerhalb von 7 Tagen nach einem Löschereignis im Data Lake abgeschlossen.
 
 ## CCPA
 

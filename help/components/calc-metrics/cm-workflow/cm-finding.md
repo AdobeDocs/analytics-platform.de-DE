@@ -12,6 +12,6 @@ ht-degree: 34%
 
 # Metriken suchen
 
-Sie können Metriken in Analysis Workspace auf die gleiche Weise wie andere Komponententypen finden.
+Sie können Metriken in Analysis Workspace auf die gleiche Weise finden wie andere Komponententypen.
 
-Informationen zum Suchen von Komponenten finden Sie unter [Suchen](/help/components/overview.md#search) in der [Komponentenübersicht](/help/components/overview.md).
+Informationen zum Suchen von Komponenten finden Sie unter [Suchen](/help/components/overview.md#search) in [Komponentenübersicht](/help/components/overview.md).

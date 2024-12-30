@@ -16,16 +16,16 @@ Sie können Filter im Generator für berechnete Metriken stapeln und ersetzen.
 
 ## Stapeln von Filtern {#stack-filter}
 
-1. Beginnen Sie mit der Erstellung einer Metrik, wie unter [Berechnete Metriken erstellen](/help/components/calc-metrics/cm-workflow/cm-build-metrics.md) beschrieben.
+1. Beginnen Sie mit dem Erstellen einer Metrik, wie in [Berechnete Metriken erstellen](/help/components/calc-metrics/cm-workflow/cm-build-metrics.md) beschrieben.
 
-1. Ziehen Sie den neuen Filter in die Arbeitsfläche Definition und legen Sie ihn neben dem vorhandenen Filter ab:
+1. Legen Sie auf der Arbeitsfläche „Definition“ den neuen Filter neben dem vorhandenen Filter ab:
 
-   ![Arbeitsfläche &quot;Definition&quot;, auf der die Metrik &quot;US-Besucher&quot;neben den vorhandenen internationalen Besuchern abgelegt wird.](assets/segment-stack.png)
+   ![Arbeitsfläche mit der US-Besuchermetrik neben den bestehenden „International Visitors“ entfernt.](assets/segment-stack.png)
 
 ## Ersetzen eines Filters durch einen anderen {#replace-filter}
 
-1. Beginnen Sie mit der Erstellung einer Metrik, wie in [Metriken erstellen](/help/components/calc-metrics/cm-workflow/cm-build-metrics.md) beschrieben.
+1. Beginnen Sie mit dem Erstellen einer Metrik, wie in [Metriken erstellen](/help/components/calc-metrics/cm-workflow/cm-build-metrics.md) beschrieben.
 
-1. Legen Sie den neuen Filter auf der Arbeitsfläche &quot;Definition&quot;über den vorhandenen Filter ab:
+1. Legen Sie den neuen Filter auf der Arbeitsfläche „Definition“ auf dem vorhandenen Filter ab:
 
-   ![Arbeitsfläche &quot;Definition&quot;mit den USA-Besuchern, die auf der Metrik &quot;Internationale Besucher&quot;verworfen wurden.](assets/segment-replace.png)
+   ![Arbeitsfläche mit der Definition der US-Besucher, die über der Metrik „Internationale Besucher“ abgelegt wurden.](assets/segment-replace.png)

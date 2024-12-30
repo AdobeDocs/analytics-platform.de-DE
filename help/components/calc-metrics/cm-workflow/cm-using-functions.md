@@ -12,15 +12,15 @@ ht-degree: 23%
 
 # Funktionen verwenden
 
-Mit Funktionen können Sie Ihre Daten filtern, sortieren und eine einfache und komplexe statistische Analyse durchführen.
+Mit Funktionen können Sie Ihre Daten filtern, sortieren und einfache und komplexe statistische Analysen durchführen.
 
-Eine Liste aller Funktionen finden Sie unter [Grundlegende Funktionen](/help/components/calc-metrics/cm-functions.md) und [Erweiterte Funktionen](/help/components/calc-metrics/cm-adv-functions.md).
+Eine Liste aller Funktionen finden Sie unter [Grundfunktionen](/help/components/calc-metrics/cm-functions.md) und [Erweiterte Funktionen](/help/components/calc-metrics/cm-adv-functions.md).
 
 
 
 >[!NOTE]
 >
->Wenn Sie Funktionen in die Definition des Generators für berechnete Metriken aufnehmen, wenden Sie immer die Funktion an, bevor Sie Metriken oder Filter hineinziehen.
+>Wenn Sie Funktionen in die Definition des Generator für berechnete Metriken aufnehmen, wenden Sie die Funktion immer an, bevor Sie Metriken oder Filter hineinziehen.
 >
 
 

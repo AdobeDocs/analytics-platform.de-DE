@@ -1,15 +1,16 @@
 ---
 title: Hinzufügen des Datensatzes des Analytics-Quell-Connectors zur Verbindung
-description: Erfahren Sie, wie Sie den Analytics-Quell-Connector-Datensatz zur Verbindung hinzufügen.
+description: Erfahren Sie, wie Sie den Analytics-Quell-Connector-Datensatz zur Verbindung hinzufügen
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 hide: true
 hidefromtoc: true
-source-git-commit: 0a47796a8b673ef7074a4f9fe865ff59fcf50aab
+exl-id: 71b9da74-3597-4536-9e47-f18097dd917b
+source-git-commit: 87d997bbc179425c835604e06476c186a12c723b
 workflow-type: tm+mt
 source-wordcount: '104'
-ht-degree: 8%
+ht-degree: 12%
 
 ---
 
@@ -17,14 +18,12 @@ ht-degree: 8%
 
 >[!NOTE]
 > 
->Führen Sie die Schritte auf dieser Seite erst aus, nachdem Sie alle vorherigen Aktualisierungsschritte ausgeführt haben. Sie können die [empfohlenen Aktualisierungsschritte](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) ausführen oder die für Ihr Unternehmen dynamisch generierten Aktualisierungsschritte mit dem Fragebogen [Adobe Analytics to Customer Journey Analytics Upgrade Fragenkatalog](https://gigazelle.github.io/cja-ttv/) ausführen.
+>Befolgen Sie die Schritte auf dieser Seite erst, nachdem Sie alle vorherigen Upgrade-Schritte abgeschlossen haben. Sie können die [empfohlenen Upgrade-Schritte](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) ausführen oder die Upgrade-Schritte ausführen, die für Ihr Unternehmen mit dem [Fragebogen für das Upgrade von Adobe Analytics auf Customer Journey Analytics dynamisch generiert wurden](https://gigazelle.github.io/cja-ttv/).
 >
->Nachdem Sie die Schritte auf dieser Seite ausgeführt haben, fahren Sie mit den empfohlenen Aktualisierungsschritten oder den dynamisch generierten Aktualisierungsschritten fort.
+>Nachdem Sie die Schritte auf dieser Seite abgeschlossen haben, folgen Sie den empfohlenen Upgrade-Schritten oder den dynamisch generierten Upgrade-Schritten.
 
 <!-- need to work on this -->
 
-* **Tags:** Adobe Analytics-Erweiterung deaktivieren
+* **Tags:** Deaktivieren der Adobe Analytics-Erweiterung
 
-* **AppMeasurment:** Ersetzen Sie die AppMeasurement.js-Bibliothek s=newObject
-
-
+* **AppMeasurment:** Ersetzen Sie die Bibliothek &quot;AppMeasurement.js“ s=newObject

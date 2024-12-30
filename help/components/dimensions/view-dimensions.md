@@ -1,6 +1,6 @@
 ---
-description: Zeigt die obersten fünf Werte für nicht zeitabhängige Dimensionen (und 15 für zeitabhängige Dimensionen) an.
-title: Vorschau von Dimensionen in Customer Journey Analytics Workspace anzeigen
+description: 'Zeigt die obersten fünf Werte für nicht zeitabhängige Dimensionen (und 15 für zeitabhängige Dimensionen) an. '
+title: Anzeigen einer Vorschau von Dimensionen in Customer Journey Analytics Workspace
 feature: Dimensions
 exl-id: 3e620bfa-825c-4f25-956c-83c905c49f84
 role: User
@@ -15,7 +15,7 @@ ht-degree: 18%
 
 Sie können die [Komponenteninformationen](/help/components/use-components-in-workspace.md#component-info) für eine Komponente verwenden, um die obersten Elemente für eine Dimension anzuzeigen.
 
-![Komponenteninfo](../assets/component-info.png)
+![Komponenteninformationen](../assets/component-info.png)
 
 <!--
 Now, by default, we show dynamic values instead of static ones, with the option to turn them into static values. Other things to note:
@@ -31,7 +31,7 @@ Now, by default, we show dynamic values instead of static ones, with the option 
 
 ## Anzeige von Dimensionselementen
 
-Wenn Sie für eine Dimension im Komponentenbereich ![ChevronRight](/help/assets/icons/ChevronRight.svg) auswählen, wird eine Liste der zugehörigen Dimensionselemente angezeigt. Die Liste der Dimensionselemente zeigt normalerweise die obersten Elemente der letzten 30 Tage an. Wenn weitere Elemente verfügbar sind, wählen Sie außerhalb des ausgewählten Datumsbereichs für das Bedienfeld den Link aus, um weitere Elemente anzuzeigen. Beispiel: **[!UICONTROL Elemente aus dem letzten Monat anzeigen]**.
+Wenn Sie ![ChevronRight) für ](/help/assets/icons/ChevronRight.svg) Dimension im Bedienfeld „Komponenten“ auswählen, wird eine Liste mit den Dimensionselementen angezeigt. Die Liste der Dimensionselemente zeigt normalerweise die wichtigsten Elemente der letzten 30 Tage an. Wenn weitere Elemente verfügbar sind, wählen Sie außerhalb des für das Bedienfeld ausgewählten Datumsbereichs den Link aus, um weitere Elemente anzuzeigen. Beispiel: **[!UICONTROL Elemente aus dem letzten Monat anzeigen]**.
 
 ![Dimensionselemente anzeigen](assets/dimension-items.png)
 

@@ -1,12 +1,13 @@
 ---
-title: Erstellen eines Schemas für Customer Journey Analytics
-description: Erfahren Sie mehr über den empfohlenen Pfad bei der Aktualisierung von Adobe Analytics auf Customer Journey Analytics.
+title: Erstellen eines Schemas zum Customer Journey Analytics
+description: Erfahren Sie mehr über den empfohlenen Pfad beim Upgrade von Adobe Analytics auf Customer Journey Analytics
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 hide: true
 hidefromtoc: true
-source-git-commit: 33cfff3f675fc03c3444531e8426cb806cdf8559
+exl-id: 22d3e7b8-4a4d-48a8-a98d-5172a9876286
+source-git-commit: daa07b603caa613ca49b61c2e8e461d558459f57
 workflow-type: tm+mt
 source-wordcount: '1665'
 ht-degree: 89%
@@ -17,13 +18,13 @@ ht-degree: 89%
 
 >[!NOTE]
 > 
->Führen Sie die Schritte auf dieser Seite erst aus, nachdem Sie alle vorherigen Aktualisierungsschritte ausgeführt haben. Sie können die [empfohlenen Aktualisierungsschritte](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) ausführen oder die für Ihr Unternehmen dynamisch generierten Aktualisierungsschritte mit dem Fragebogen [Adobe Analytics to Customer Journey Analytics Upgrade Fragenkatalog](https://gigazelle.github.io/cja-ttv/) ausführen.
+>Befolgen Sie die Schritte auf dieser Seite erst, nachdem Sie alle vorherigen Upgrade-Schritte abgeschlossen haben. Sie können die [empfohlenen Upgrade-Schritte](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) ausführen oder die Upgrade-Schritte ausführen, die für Ihr Unternehmen mit dem [Fragebogen für das Upgrade von Adobe Analytics auf Customer Journey Analytics dynamisch generiert wurden](https://gigazelle.github.io/cja-ttv/).
 >
->Nachdem Sie die Schritte auf dieser Seite ausgeführt haben, fahren Sie mit den empfohlenen Aktualisierungsschritten oder den dynamisch generierten Aktualisierungsschritten fort.
+>Nachdem Sie die Schritte auf dieser Seite abgeschlossen haben, folgen Sie den empfohlenen Upgrade-Schritten oder den dynamisch generierten Upgrade-Schritten.
 
 <!-- Should we single source this instead of duplicate it? The following steps were copied from: /help/connections/create-connection.md -->
 
-Die folgenden Informationen erläutern, wie Sie eine Verbindung erstellen und konfigurieren sowie Experience Platform-Datensätze zu der von Ihnen erstellten Verbindung hinzufügen. Weitere Informationen zum Erstellen und Konfigurieren einer Verbindung finden Sie unter [Erstellen oder Bearbeiten einer Verbindung](/help/connections/create-connection.md).
+In den folgenden Informationen wird erläutert, wie Sie eine Verbindung erstellen und konfigurieren und wie Sie der erstellten Verbindung Experience Platform-Datensätze hinzufügen. Weitere Informationen zum Erstellen und Konfigurieren einer Verbindung finden Sie unter [Erstellen oder Bearbeiten einer Verbindung](/help/connections/create-connection.md).
 
 ## Erstellen und Konfigurieren der Verbindung {#create-connection}
 
@@ -103,7 +104,7 @@ Sie können beim Erstellen einer Verbindung einen Experience Platform-Datensatz 
    | **[!UICONTROL Datenquellentyp]** | Wählen Sie einen Datenquellentyp aus. <br/>Hierzu gehören: <ul><li>[!UICONTROL Web-Daten]</li><li>[!UICONTROL App-Daten]</li><li>[!UICONTROL PoS-Daten]</li><li>[!UICONTROL CRM-Daten]</li><li>[!UICONTROL Umfragedaten]</li><li>[!UICONTROL Callcenter-Daten]</li><li>[!UICONTROL Produktdaten]</li><li> [!UICONTROL Kontodaten]</li><li> [!UICONTROL Transaktionsdaten]</li><li>[!UICONTROL Kunden-Feedback-Daten]</li><li> [!UICONTROL Sonstige]</li></ul>Dieses Feld wird verwendet, um sich einen Überblick über die verwendeten Datenquellen zu verschaffen. |
    | **[!UICONTROL Importieren neuer Daten]** | Aktivieren Sie diese Option, wenn eine fortlaufende Verbindung hergestellt werden soll. Mit einer fortlaufenden Verbindung sind neue Daten-Batches, die den Datensätzen hinzugefügt werden, automatisch in Workspace verfügbar. |
    | **[!UICONTROL Aufstockung des Datensatzes]** | Aktivieren Sie **[!UICONTROL Aufstockung aller vorhandenen Daten]**, um sicherzustellen, dass alle vorhandenen Daten aufgestockt werden.<br/><br/>Wählen Sie **[!UICONTROL Aufstockung anfordern]** aus, um eine Aufstockung mit historischen Daten für einen bestimmten Zeitraum durchzuführen. Sie können bis zu 10 Aufstockungszeiträume für Datensätze definieren.<ol><li>Definieren Sie den Zeitraum durch Eingabe von Start- und Enddaten oder Auswahl von Datumsangaben mithilfe des ![Kalenders](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg).</li><li>Wählen Sie **[!UICONTROL Aufstockung in Warteschlange stellen]** aus, um die Aufstockung der Liste hinzuzufügen, oder **[!UICONTROL Abbrechen]**, um den Vorgang abzubrechen.</li></ol>Wählen Sie für jeden Eintrag ![Bearbeiten](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) aus, um den Zeitraum zu bearbeiten, oder ![Löschen](https://spectrum.adobe.com/static/icons/ui_18/CrossSize500.svg), um den Eintrag zu löschen.<br/><br/>Bei Aufstockungen:<ul><li>Sie können jeden Datensatz einzeln aufstocken.</li><li>Neue Daten, die einem Datensatz in der Verbindung hinzugefügt werden, werden priorisiert, sodass diese neuen Daten die geringste Latenz aufweisen.</li><li>Alle (historischen) Aufstockungsdaten werden langsamer importiert. Die Menge historischer Daten beeinflusst die Latenz.</li><li>Der Analytics-Quell-Connector importiert Daten aus bis zu 13 Monaten (unabhängig von ihrer Größe) für Produktions-Sandboxes. Die Aufstockung in Nicht-Produktions-Sandboxes ist dagegen auf 3 Monate beschränkt.</li></ul> |
-   | **[!UICONTROL Datensatz transformieren]** | Für bestimmte B2B-Lookup-Datensätze können Sie die Transformation eines Datensatzes für geeignete B2B-personenbasierte Berichtsszenarien aktivieren. |
+   | **[!UICONTROL Datensatz transformieren]** | Für bestimmte B2B-Lookup-Datensätze können Sie die Umwandlung eines Datensatzes für ordnungsgemäße B2B-Personenbasierte Reporting-Szenarien aktivieren. |
    | **[!UICONTROL Aufstockungsstatus]** | Mögliche Statusindikatoren sind:<ul><li>Erfolgreich</li><li>X Aufstockung(en) werden verarbeitet</li><li>Aus</li></ul> |
    | **[!UICONTROL Datensatz-ID]** | Diese ID wird automatisch generiert. |
    | **[!UICONTROL Beschreibung]** | Die Beschreibung, die diesem Datensatz bei seiner Erstellung gegeben wurde. |
@@ -115,5 +116,4 @@ Sie können beim Erstellen einer Verbindung einen Experience Platform-Datensatz 
 
    {style="table-layout:auto"}
 
-1. Führen Sie die [empfohlenen Aktualisierungsschritte](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) oder die dynamisch generierten Aktualisierungsschritte](https://gigazelle.github.io/cja-ttv/) aus.[
-
+1. Fahren Sie mit den [empfohlenen Upgrade-Schritten](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) oder den [dynamisch generierten Upgrade-Schritten](https://gigazelle.github.io/cja-ttv/) fort.

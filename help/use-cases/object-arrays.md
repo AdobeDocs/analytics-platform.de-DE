@@ -1,6 +1,6 @@
 ---
 title: Verwenden von Objekt-Arrays
-description: Erfahren Sie, wie Customer Journey Analytics Berichte zu Datenhierarchien erstellt.
+description: Erfahren Sie, wie Sie Berichte zu Datenhierarchien Customer Journey Analytics.
 exl-id: 59318da7-5408-4a9d-82aa-8bcbec7f7364
 solution: Customer Journey Analytics
 feature: Use Cases
@@ -14,13 +14,13 @@ ht-degree: 61%
 
 # Verwenden von Objekt-Arrays
 
-Manche Plattformschemas können Objekt-Arrays enthalten. Adobe Customer Journey Analytics unterstützt die Erfassung und Berichterstellung von Objekt-Arrays innerhalb von Ereignis-, Such- und Profildaten. Eines der häufigsten Beispiele ist ein Warenkorb, der mehrere Produkte enthält. Jedes Produkt hat einen Namen, eine Produktnummer, eine Kategorie, einen Preis, eine Menge und andere Dimensionen, die Sie verfolgen möchten. Alle diese Faktoren haben unterschiedliche Anforderungen, müssen jedoch alle in denselben Hit passen.
+Manche Plattformschemas können Objekt-Arrays enthalten. Adobe Customer Journey Analytics unterstützt die Aufnahme und das Reporting von Objekt-Arrays innerhalb von Ereignis-, Lookup- und Profildaten. Eines der häufigsten Beispiele ist ein Warenkorb, der mehrere Produkte enthält. Jedes Produkt hat einen Namen, eine Produktnummer, eine Kategorie, einen Preis, eine Menge und andere Dimensionen, die Sie verfolgen möchten. Alle diese Faktoren haben unterschiedliche Anforderungen, müssen jedoch alle in denselben Hit passen.
 
-In früheren Versionen von Adobe Analytics wurde dies durch die `products`-Variable erreicht. Dabei handelte es sich um eine verkettete Zeichenfolge, in der die Bestandteile eines Produkts durch Semikolons (`;`) getrennt waren, während die Produkte durch Kommas (`,`) getrennte waren. Dies war die einzige Variable mit eingeschränkter Unterstützung von „Objekt-Arrays“. Variablen mit mehreren Werten, wie z. B. Listenvariablen, konnten das Äquivalent zu Arrays unterstützen, sie konnten aber keine „Objekt-Arrays“ unterstützen. Customer Journey Analytics erweitert dieses Konzept durch die Unterstützung beliebig tiefer Hierarchien in einer Datenzeile, eine Funktion, die in keiner früheren Version von Adobe Analytics verfügbar ist.
+In früheren Versionen von Adobe Analytics wurde dies durch die `products`-Variable erreicht. Dabei handelte es sich um eine verkettete Zeichenfolge, in der die Bestandteile eines Produkts durch Semikolons (`;`) getrennt waren, während die Produkte durch Kommas (`,`) getrennte waren. Dies war die einzige Variable mit eingeschränkter Unterstützung von „Objekt-Arrays“. Variablen mit mehreren Werten, wie z. B. Listenvariablen, konnten das Äquivalent zu Arrays unterstützen, sie konnten aber keine „Objekt-Arrays“ unterstützen. Customer Journey Analytics erweitert dieses Konzept durch die Unterstützung beliebig tiefer Hierarchien innerhalb einer einzigen Datenzeile, eine Funktion, die in keiner vorherigen Version von Adobe Analytics verfügbar ist.
 
 ## Beispiel für dasselbe Ereignis
 
-Das folgende Ereignis ist ein JSON-Objekt, das einen Kauf eines Kunden aus einer Waschmaschine und einem Trockner darstellt.
+Das folgende Ereignis ist ein JSON-Objekt, das einen Kauf einer Waschmaschine und eines Trockners durch einen Kunden darstellt.
 
 ```json
 {
@@ -82,9 +82,9 @@ Beim Erstellen einer Datenansicht sind die folgenden Dimensionen und Metriken ve
    * Produkt: Garantie
    * Produkt: Garantie: Umsatz
 
-### Beispiele für dieselben Ereignisse (Reporting-Verhalten)
+### Beispiele für dasselbe Ereignis (Reporting-Verhalten)
 
-Unter Verwendung des oben genannten Ereignisses zeigen die folgenden Tabellen Workspace-Berichte mit einigen Dimensions- und Metrikkombinationen.
+Unter Verwendung des obigen Ereignisses zeigen die folgenden Tabellen Workspace-Berichte mit einigen Dimensions- und Metrikkombinationen.
 
 | `product : name` | `product : orders` | `product : revenue` |
 | --- | --- | --- |
@@ -92,7 +92,7 @@ Unter Verwendung des oben genannten Ereignisses zeigen die folgenden Tabellen Wo
 | `LG Dryer 2000` | `1` | `500` |
 | `Total` | `1` | `2100` |
 
-Customer Journey Analytics untersucht selektiv die Dimension und Metriken des Objekts basierend auf der Tabelle.
+Beim Customer Journey Analytics werden Dimension und Metriken des Objekts basierend auf der Tabelle selektiv betrachtet.
 
 ```diff
 {
@@ -246,7 +246,7 @@ Achten Sie auf die Bestellungen, die keinen mit ihnen verbundenen Namen haben. D
 
 ### Kombinieren von Metriken
 
-Customer Journey Analytics kombiniert nativ keine ähnlich benannten Metriken, wenn sie sich auf unterschiedlichen Objektebenen befinden.
+Customer Journey Analytics kombiniert nativ keine ähnlich benannten Metriken, wenn sie sich auf verschiedenen Objektebenen befinden.
 
 | `product : category` | `product : revenue` | `product : warranty : revenue` |
 | --- | --- | --- |
@@ -270,5 +270,5 @@ Durch Anwendung dieser berechneten Metrik werden die gewünschten Ergebnisse ang
 
 ## Einschränkungen
 
-Einschränkungen gelten für Arrays in Daten, die von Customer Journey Analytics verwendet und als Teil eines Schemas in Experience Platform modelliert werden. Siehe [Datenmodellbeschränkungen](https://experienceleague.adobe.com/en/docs/experience-platform/profile/guardrails#data-model-limits) und [Datengrößenbeschränkungen](https://experienceleague.adobe.com/en/docs/experience-platform/profile/guardrails#data-size-limits) in den [Standardgarantien für Echtzeit-Kundenprofildaten und -segmentierung](https://experienceleague.adobe.com/de/docs/experience-platform/profile/guardrails).
+Einschränkungen gelten für Arrays in Daten, die vom Customer Journey Analytics verwendet und als Teil eines Schemas im Experience Platform modelliert werden. Siehe [Datenmodellbeschränkungen](https://experienceleague.adobe.com/en/docs/experience-platform/profile/guardrails#data-model-limits) und [Datengrößenbeschränkungen](https://experienceleague.adobe.com/en/docs/experience-platform/profile/guardrails#data-size-limits) in den [Standardleitplanken für Echtzeit-Kundenprofildaten und -segmentierung](https://experienceleague.adobe.com/de/docs/experience-platform/profile/guardrails).
 

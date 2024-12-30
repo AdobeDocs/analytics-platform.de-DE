@@ -1,6 +1,6 @@
 ---
 title: Gemeinsam verwendete Geräte
-description: Erläuterung der Handhabung gemeinsam genutzter Geräte mithilfe von Stitching und anderen Verfahren.
+description: Erläuterung des Umgangs mit gemeinsam genutzten Geräten mithilfe von Stitching und anderen Techniken.
 solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
@@ -14,23 +14,23 @@ ht-degree: 7%
 
 # Gemeinsam verwendete Geräte
 
-Dieser Artikel bietet Kontext auf gemeinsam genutzten Geräten, wie Daten von gemeinsam genutzten Geräten mithilfe von [Stitching](/help/stitching/overview.md) verarbeitet und gemindert werden können und wie die Belichtung freigegebener Geräte in Ihren Daten mithilfe von Query Service nachvollzogen werden kann.
+In diesem Artikel erhalten Sie Informationen zum Kontext auf freigegebenen Geräten sowie dazu, wie Sie Daten von freigegebenen Geräten mithilfe von [Stitching](/help/stitching/overview.md) verarbeiten und minimieren können und wie Sie die Offenlegung freigegebener Geräte in Ihren Daten mithilfe des Abfrage-Service verstehen können.
 
-## Was ist ein freigegebenes Gerät?
+## Was ist ein gemeinsam genutztes Gerät?
 
-Ein gemeinsam genutztes Gerät ist ein Gerät, das von mehr als einer Person verwendet wird. Häufige Szenarien sind Geräte wie Tablets, Geräte, die in Kiosks verwendet werden, oder Computergeräte, die von Agenten in Callcentern gemeinsam genutzt werden.
+Ein gemeinsam genutztes Gerät ist ein Gerät, das von mehr als einer Person verwendet wird. Häufige Szenarien sind Geräte wie Tablets, Geräte, die in Kiosken verwendet werden, oder Computer-Geräte, die von Agenten in einem Callcenter gemeinsam genutzt werden.
 
-Wenn zwei Personen dasselbe Gerät verwenden und beide einen Kauf tätigen, können Beispielereignisdaten wie folgt aussehen:
+Wenn zwei Personen dasselbe Gerät verwenden und beide einen Kauf tätigen, können die Beispielereignisdaten wie folgt aussehen:
 
 | Ereignis | Zeitstempel | Seitenname | Geräte-ID | E-Mail |
 |--:|---|---|---|---|
 | 1 | 12.05.2023 12:01 | Startseite | `1234` | |
-| 2 | 2023-05-12 12:02 | Produktseite | `1234` | |
-| 3 | 2023-05-12 12:03 | Auftragserfolg | `1234` | `ryan@a.com` |
-| 4 | 2023-05-12 12:07 | Produktseite | `1234` | |
+| 2 | 12.05.2023 12:02 | Produktseite | `1234` | |
+| 3 | 12.05.2023 12:03 | Auftragserfolg | `1234` | `ryan@a.com` |
+| 4 | 12.05.2023 12:07 | Produktseite | `1234` | |
 | 5 | 12.05.2023 12:08 | Auftragserfolg | `1234` | `cassidy@a.com` |
 
-Wie Sie aus dieser Tabelle sehen können, beginnt nach der Authentifizierung bei den Ereignissen 3 und 5 eine Verknüpfung zwischen einer Geräte-ID und einer Personen-ID. Um die Auswirkungen von Marketing-Maßnahmen auf der Ebene der Person zu verstehen, müssen diese nicht authentifizierten Ereignisse der richtigen Person zugeordnet werden.
+Wie Sie aus dieser Tabelle sehen können, beginnt sich nach der Authentifizierung bei den Ereignissen 3 und 5 eine Verknüpfung zwischen einer Geräte-ID und einer Personen-ID zu bilden. Um die Auswirkungen von Marketing-Maßnahmen auf der Personenebene zu verstehen, müssen diese nicht authentifizierten Ereignisse der richtigen Person zugeordnet werden.
 
 <!--
 The order success (purchase) events assign the data accurately to the correct email. How this assignment impacts your analysis depends on how you perform analysis:
@@ -40,41 +40,41 @@ The order success (purchase) events assign the data accurately to the correct em
 
 -->
 
-## Verbessern der personenbezogenen Analyse
+## Personenzentrierte Analyse verbessern
 
-Der Stitching-Prozess behebt dieses Attributionsproblem, indem die ausgewählte Personen-ID (in den Beispieldaten die E-Mail) zu Ereignissen hinzugefügt wird, bei denen diese Kennung nicht vorhanden ist. Die Zuordnung nutzt eine Zuordnung zwischen Geräte-IDs und Personen-IDs, um sicherzustellen, dass sowohl authentifizierter als auch nicht authentifizierter Traffic in der Analyse verwendet werden kann, sodass er personenbezogen bleibt. Weitere Informationen finden Sie unter [Stitching](/help/stitching/overview.md) .
+Der Zuordnungsprozess behebt dieses Attributionsproblem, indem die ausgewählte Personenkennung (in den Beispieldaten die E-Mail) zu Ereignissen hinzugefügt wird, bei denen diese Kennung nicht vorhanden ist. Bei der Zuordnung wird eine Zuordnung zwischen Geräte-IDs und Personen-IDs genutzt, um sicherzustellen, dass sowohl authentifizierter als auch nicht authentifizierter Traffic bei der Analyse verwendet werden kann, sodass der Personen-Schwerpunkt erhalten bleibt. Weitere Informationen finden [ unter ](/help/stitching/overview.md).
 
-Durch die Zuordnung können freigegebene Gerätedaten entweder mithilfe der Attribution &quot;last-auth&quot;oder der Attribution &quot;device-split&quot;zugeordnet werden. Alle Versuche, einem bekannten Benutzer nicht authentifizierte Ereignisse zuzuordnen, sind nicht deterministisch.
+Bei der Zuordnung können freigegebene Gerätedaten entweder anhand der Attribution der letzten Authentifizierung oder anhand der Attribution auf Geräteaufteilung zugeordnet werden. Alle Versuche, nicht authentifizierte Ereignisse einem bekannten Benutzer zuzuordnen, sind nicht deterministisch.
 
 
-### Last-auth-Attribution
+### Attribution der letzten Authentifizierung
 
-Last-auth ordnet alle unbekannten Aktivitäten von einem gemeinsam genutzten Gerät dem Benutzer zu, der sich zuletzt authentifiziert hat. Der Experience Platform Identity-Dienst erstellt das Diagramm basierend auf der Attribution der letzten Autoren und wird als solches beim grafikbasierten Stitching verwendet. Weitere Informationen finden Sie unter [Übersicht über die Regeln für die Verknüpfung von Identitätsdiagrammen](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-graph-linking-rules/overview) .
+Last-auth schreibt alle unbekannten Aktivitäten eines gemeinsam genutzten Geräts dem Benutzer zu, der sich zuletzt authentifiziert hat. Der Experience Platform Identity Service erstellt das Diagramm basierend auf der Attribution der letzten Authentifizierung und wird als solche beim diagrammbasierten Stitching verwendet. Weitere [ finden Sie unter Übersicht ](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-graph-linking-rules/overview) Identitätsdiagramm-Verknüpfungsregeln.
 
-Wenn die Attribution &quot;last-auth&quot;zum Stitching verwendet wird, werden zugeordnete IDs aufgelöst, wie in der folgenden Tabelle dargestellt.
+Wenn die Attribution der letzten Authentifizierung beim Zusammenfügen verwendet wird, werden zusammengefügte IDs aufgelöst, wie in der folgenden Tabelle dargestellt.
 
 | Zeitstempel | Seitenname | Geräte-ID | E-Mail | Angeheftete ID |
 |---|---|---|---|---|
 | 12.05.2023 12:01 | Startseite | `1234` | | `cassidy@a.com` |
-| 2023-05-12 12:02 | Produktseite | `1234` | | `cassidy@a.com` |
-| 2023-05-12 12:03 | Auftragserfolg | `1234` | `ryan@a.com` | `cassidy@a.com` |
-| 2023-05-12 12:07 | Produktseite | `1234` | | `cassidy@a.com` |
+| 12.05.2023 12:02 | Produktseite | `1234` | | `cassidy@a.com` |
+| 12.05.2023 12:03 | Auftragserfolg | `1234` | `ryan@a.com` | `cassidy@a.com` |
+| 12.05.2023 12:07 | Produktseite | `1234` | | `cassidy@a.com` |
 | 12.05.2023 12:08 | Auftragserfolg | `1234` | `cassidy@a.com` | `cassidy@a.com` |
 | 13.05.2023 11:08 | Startseite | `1234` | | `cassidy@a.com` |
 
 
 ### Device-split
 
-Die Device-Split-Aktivität ordnet anonyme Aktivitäten von einem gemeinsam genutzten Gerät dem Benutzer in nächster Nähe zur anonymen Aktivität zu. Die Device-Split wird derzeit beim feldbasierten Stitching verwendet.
+Device-split schreibt die anonyme Aktivität eines gemeinsam genutzten Geräts dem Benutzer in der nächsten Nähe zur anonymen Aktivität zu. Device-split wird derzeit beim feldbasierten Stitching verwendet.
 
-Wenn beim Stitching die Attribution zwischen Geräten verwendet wird, werden zugeordnete IDs aufgelöst, wie in der folgenden Tabelle dargestellt.
+Wenn die Attribution „Device-Split“ beim Zusammenfügen verwendet wird, werden zusammengefügte IDs aufgelöst, wie in der folgenden Tabelle dargestellt.
 
 | Zeitstempel | Seitenname | Geräte-ID | E-Mail | Angeheftete ID |
 |---|---|---|---|---|
 | 12.05.2023 12:01 | Startseite | `1234` | | `ryan@a.com` |
-| 2023-05-12 12:02 | Produktseite | `1234` | | `ryan@a.com` |
-| 2023-05-12 12:03 | Auftragserfolg | `1234` | `ryan@a.com` | `ryan@a.com` |
-| 2023-05-12 12:07 | Produktseite | `1234` | | `ryan@a.com` |
+| 12.05.2023 12:02 | Produktseite | `1234` | | `ryan@a.com` |
+| 12.05.2023 12:03 | Auftragserfolg | `1234` | `ryan@a.com` | `ryan@a.com` |
+| 12.05.2023 12:07 | Produktseite | `1234` | | `ryan@a.com` |
 | 12.05.2023 12:08 | Auftragserfolg | `1234` | `cassidy@a.com` | `cassidy@a.com` |
 | 13.05.2023 11:08 | Startseite | `1234` | | `cassidy@a.com` |
 
@@ -99,15 +99,15 @@ When using ECID reset, Stitched IDs resolve as shown in the table below.
 
 -->
 
-## Gemeinsame Geräteerkennung
+## Freigegebene Geräteaufnahme
 
-Berücksichtigen Sie verschiedene Faktoren, um richtig zu verstehen, wie weit verbreitete gemeinsam genutzte Geräte in Ihrem Unternehmen sind. Darüber hinaus können Sie anhand des Gesamtbeitrags von Ereignissen von freigegebenen Geräten die Auswirkungen auf die für die Analyse verwendeten gesamten Ereignisdaten nachvollziehen.
+Beachten Sie mehrere Faktoren, um richtig zu verstehen, wie weit verbreitet freigegebene Geräte in Ihrer Organisation sind. Wenn Sie den Gesamtbeitrag von Ereignissen von gemeinsam genutzten Geräten verstehen, können Sie außerdem die Auswirkungen auf die für die Analyse verwendeten Gesamtereignisdaten besser verstehen.
 
-Um die Belichtung des gemeinsam genutzten Geräts zu verstehen, können Sie über die Durchführung der folgenden Abfragen nachdenken.
+Um zu verstehen, wie das freigegebene Gerät verfügbar ist, können Sie die folgenden Abfragen durchführen.
 
 1. **Identifizieren freigegebener Geräte**
 
-   Um die Anzahl der gemeinsam genutzten Geräte zu verstehen, führen Sie eine Abfrage durch, bei der die Geräte-IDs mit zwei oder mehr Personen-IDs gezählt werden. Dies hilft dabei, Geräte zu identifizieren, die von mehreren Personen verwendet werden.
+   Führen Sie eine Abfrage durch, um die Anzahl der freigegebenen Geräte zu verstehen, die die Geräte-IDs mit zwei oder mehr verknüpften Personen-IDs zählt. Dies hilft bei der Identifizierung von Geräten, die von mehreren Personen verwendet werden.
 
    ```sql
    SELECT COUNT(*)
@@ -123,7 +123,7 @@ Um die Belichtung des gemeinsam genutzten Geräts zu verstehen, können Sie übe
 
 2. **Zuordnung von Ereignissen zu freigegebenen Geräten**
 
-   Legen Sie für die identifizierten freigegebenen Geräte fest, wie viele Ereignisse von der Gesamtzahl diesen Geräten zugeordnet werden können. Diese Attribution bietet Einblicke in die Auswirkungen freigegebener Geräte auf Ihre Daten und die Auswirkungen auf die Analyse.
+   Bestimmen Sie für die identifizierten freigegebenen Geräte, wie viele Ereignisse in der Gesamtzahl diesen Geräten zugeordnet werden können. Diese Attribution bietet Einblicke in die Auswirkungen freigegebener Geräte auf Ihre Daten und die Auswirkungen auf die Analyse.
 
    ```sql
    SELECT COUNT(*) AS total_events,
@@ -148,9 +148,9 @@ Um die Belichtung des gemeinsam genutzten Geräts zu verstehen, können Sie übe
    ON events.persistent_id = shared_persistent_ids.persistent_id; 
    ```
 
-3. **Anonyme Ereignisse auf freigegebenen Geräten identifizieren**
+3. **Identifizieren anonymer Ereignisse auf freigegebenen Geräten**
 
-   Identifizieren Sie unter den Ereignissen, die freigegebenen Geräten zugeordnet sind, wie viele keine Personen-ID besitzen, und geben Sie anonyme Ereignisse an. Der von Ihnen gewählte Algorithmus (z. B. last-auth, device-split oder ECID-reset) zur Verbesserung der Datenqualität wirkt sich auf diese anonymen Ereignisse aus.
+   Identifizieren Sie unter den Ereignissen, die freigegebenen Geräten zugeordnet wurden, wie viele keine Personen-ID aufweisen, was auf anonyme Ereignisse hinweist. Der Algorithmus, den Sie zur Verbesserung der Datenqualität auswählen (z. B. last-auth, device-split oder ECID-reset), wirkt sich auf diese anonymen Ereignisse aus.
 
    ```sql
    SELECT COUNT(IF(shared_persistent_ids.persistent_id IS NOT NULL, 1, null)) shared_persistent_ids_events,
@@ -175,9 +175,9 @@ Um die Belichtung des gemeinsam genutzten Geräts zu verstehen, können Sie übe
    ON events.persistent_id = shared_persistent_ids.persistent_id; 
    ```
 
-4. **Berechnung der Exposition aufgrund einer Fehlklassifizierung des Ereignisses**
+4. **Berechnung der Exposition aufgrund einer Fehlklassifizierung von Ereignissen**
 
-   Schließlich ist zu beurteilen, mit welchem Risiko jeder Kunde aufgrund einer Fehleinstufung von Ereignissen konfrontiert sein könnte. Berechnen Sie den Prozentsatz anonymer Ereignisse über die Gesamtereignisse für jedes gemeinsam genutzte Gerät. Dies hilft dabei, die potenziellen Auswirkungen auf die Genauigkeit von Kundendaten zu verstehen.
+   Bewerten Sie abschließend das Risiko, dem jeder Kunde aufgrund einer Fehlklassifizierung von Ereignissen ausgesetzt sein könnte. Berechnen Sie den Prozentsatz der anonymen Ereignisse über die Gesamtzahl der Ereignisse für jedes freigegebene Gerät. Auf diese Weise lassen sich die potenziellen Auswirkungen auf die Genauigkeit von Kundendaten besser verstehen.
 
    ```sql
    SELECT COUNT(*) AS total_events,

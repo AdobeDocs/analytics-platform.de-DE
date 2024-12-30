@@ -1,6 +1,6 @@
 ---
 title: Verwenden von Filtern in Report Builder in Customer Journey Analytics
-description: Beschreibt die Verwendung von Filtern in Report Builder zum Customer Journey Analytics
+description: Beschreibt die Verwendung von Filtern im Report Builder für das Customer Journey Analytics
 role: User
 feature: Report Builder
 type: Documentation
@@ -25,7 +25,7 @@ Um einen Filter auf den gesamten Datenblock anzuwenden, doppelklicken Sie auf ei
 
 Um Filter auf einzelne Metriken anzuwenden, ziehen Sie einen Filter auf eine Metrik in der Tabelle. Sie können auch auf das Symbol **...** rechts neben einer Metrik im Tabellenbereich klicken und dann die **Filtermetrik** auswählen. Um angewendete Filter anzuzeigen, bewegen Sie den Mauszeiger über eine Metrik im Tabellenbereich oder wählen Sie sie aus. Metriken mit angewendeten Filtern zeigen ein Filtersymbol an.
 
-![Registerkarte &quot;Filter&quot;mit Metriken.](./assets/filter_by.png)
+![Registerkarte „Filter“ mit Metriken.](./assets/filter_by.png)
 
 ## Schnellbearbeitungs-Filter
 
@@ -37,11 +37,11 @@ So bearbeiten Sie Filter über das Bedienfeld „Schnellbearbeitung“
 
 1. Wählen Sie einen Zellenbereich aus einem oder mehreren Datenblöcken aus.
 
-   ![Schnellbearbeitungs-Filterbereich mit Filteroptionen für Datenansichten, Datumsbereich und Filter.](./assets/select_multiple_dbs.png)
+   ![Bedienfeld „Schnellbearbeitung“ mit Filteroptionen für Datenansichten, Datumsbereich und Filter.](./assets/select_multiple_dbs.png)
 
 1. Klicken Sie auf den Link „Filter“, um das Bedienfeld „Schnellbearbeitung – Filter“ zu öffnen.
 
-   ![das Bedienfeld &quot;Filter&quot;mit den Listen &quot;Filter hinzufügen&quot;und &quot;Angewendete Filter&quot;angezeigt.](./assets/quick_edit_filters.png)
+   ![das Bedienfeld „Filter“ mit dem Feld „Filter hinzufügen“ und den Listen „Angewendete Filter“.](./assets/quick_edit_filters.png)
 
 ### Hinzufügen oder Entfernen eines Filters
 
@@ -73,7 +73,7 @@ Sie können einen vorhandenen Filter durch einen anderen Filter ersetzen, um zu 
 
 1. Wählen Sie die Registerkarte **Ersetzen** im Bedienfeld „Schnellbearbeitungsfilter“.
 
-   ![Wählen Sie die Registerkarte &quot;Ersetzen&quot;.](./assets/replace_filter.png)
+   ![Wählen Sie die Registerkarte Ersetzen aus.](./assets/replace_filter.png)
 
 1. Suchen Sie mithilfe des Suchfelds **Suchliste** nach bestimmten Filtern.
 
@@ -83,7 +83,7 @@ Sie können einen vorhandenen Filter durch einen anderen Filter ersetzen, um zu 
 
    Wenn Sie einen Filter auswählen, wird dieser der Liste **Ersetzen durch**... hinzugefügt.
 
-   ![Die Registerkarte Ersetzen mit dem ausgewählten Datenblock Personen in App und die Liste Ersetzen mit der aktualisierten Liste wurde mit Personen in App überarbeitet.](./assets/replace_screen_new.png)
+   ![Die Registerkarte Ersetzen , auf der der Datenblock Personen in der App ausgewählt ist, und die Liste Ersetzen durch wurde aktualisiert, sodass „Personen in der App überarbeitet“ angezeigt wird.](./assets/replace_screen_new.png)
 
 1. Klicken Sie auf **Anwenden**.
 
@@ -91,44 +91,44 @@ Sie können einen vorhandenen Filter durch einen anderen Filter ersetzen, um zu 
 
 ### Definieren von Datenblockfiltern aus Zellen
 
-Datenblöcke können auf Filter aus einer Zelle verweisen. Mehrere Datenblöcke können für Filter auf dieselbe Zelle verweisen, sodass Sie Filter für mehrere Datenblöcke gleichzeitig einfach wechseln können.
+Datenblöcke können auf Filter aus einer Zelle verweisen. Mehrere Datenblöcke können dieselbe Zelle für Filter referenzieren, sodass Sie Filter für mehrere Datenblöcke gleichzeitig einfach umschalten können.
 
 So wenden Sie Filter aus einer Zelle an
 
-1. Navigieren Sie im Erstellungs- oder Bearbeitungsvorgang für Datenblöcke zu Schritt 2. Siehe [Erstellen eines Datenblocks](./create-a-data-block.md).
-1. Klicken Sie auf die Registerkarte **Filter** , um Filter zu definieren.
-1. Klicken Sie auf **Filter aus Zelle erstellen**.
+1. Navigieren Sie entweder beim Erstellen oder Bearbeiten von Datenblöcken zu Schritt 2. Siehe [Erstellen eines Datenblocks](./create-a-data-block.md).
+1. Klicken Sie auf **Filter**, um Filter zu definieren.
+1. Klicken Sie **Filter aus Zelle erstellen**.
 
-   ![Erstellen Sie einen Filter aus dem Zellensymbol.](./assets/create-filter-from-cell.png)
+   ![Filter aus Zellensymbol erstellen.](./assets/create-filter-from-cell.png)
 
 1. Wählen Sie die Zelle aus, aus der die Datenblöcke auf einen Filter verweisen sollen.
 
-1. Fügen Sie die Filterauswahl hinzu, die Sie der Zelle hinzufügen möchten, indem Sie entweder auf den Filter doppelklicken oder ihn per Drag-and-Drop in den Bereich Einbezogene Filter ziehen.
+1. Fügen Sie die Filterauswahl hinzu, die Sie der Zelle hinzufügen möchten, indem Sie entweder auf den Filter doppelklicken oder ihn per Drag-and-Drop in den Abschnitt Einbezogene Filter ziehen.
 
-   Hinweis: Es kann jeweils nur eine Auswahl für die jeweilige Zelle ausgewählt werden.
+   Hinweis: Für die jeweilige Zelle kann jeweils nur eine Auswahl ausgewählt werden.
 
-   ![Das Fenster Filter aus Zelle hinzufügen , in dem die enthaltenen Filter angezeigt werden.](./assets/select-filters.png)
+   ![Das Fenster Filter aus Zelle hinzufügen , das die eingeschlossenen Filter anzeigt.](./assets/select-filters.png)
 
-1. Klicken Sie auf **Anwenden** , um die Referenzzelle zu erstellen.
+1. Klicken Sie auf **Anwenden**, um die Referenzzelle zu erstellen.
 
-1. Fügen Sie auf der Registerkarte **Filter** den neu erstellten Referenz-Zellenfilter zu Ihrem Datenblock hinzu.
+1. Fügen **auf der Registerkarte** den neu erstellten Referenzzellenfilter zu Ihrem Datenblock hinzu.
 
-   Registerkarte ![Filter mit dem Filter Tabellenblatt1!J1(Alle Daten) wurde zur Tabelle hinzugefügt.](./assets/reference-cell-filter.png)
+   ![Registerkarte „Filter“ mit Sheet1!J1(All Data)-Filter, der zur Tabelle hinzugefügt wurde.](./assets/reference-cell-filter.png)
 
 1. Klicken Sie auf **Fertig stellen**.
 
-   Jetzt kann diese Zelle von anderen Datenblöcken in ihren Filtern referenziert werden. Um die Referenzzelle als Filter auf andere Datenblöcke anzuwenden, fügen Sie einfach im Filter -Tab die Zellenreferenz zu ihren Filtern hinzu.
+   Jetzt kann diese Zelle von anderen Datenblöcken in ihren Filtern referenziert werden. Um die Referenzzelle als Filter auf andere Datenblöcke anzuwenden, fügen Sie einfach den Zellverweis auf der Registerkarte Filter zu ihren Filtern hinzu.
 
-#### Verwenden Sie die Referenzzelle, um Datenblockfilter zu ändern.
+#### Verwenden der Referenzzelle zum Ändern von Datenblockfiltern
 
-1. Wählen Sie die Referenzzelle in Ihrer Tabelle aus.
+1. Wählen Sie die Referenzzelle im Arbeitsblatt aus.
 
-1. Klicken Sie auf den Link unter **Filter von Zelle** im Menü &quot;Schnellbearbeitung&quot;.
+1. Klicken Sie auf den Link unter **Filter aus Zelle** im Menü „Schnellbearbeitung“.
 
-   ![Filter aus Zellenlink mit Blatt1!J1 (Alle Daten)](./assets/filters-from-cell-link.png)
+   ![Filter aus Zellenlink zeigen Blatt1!J1 (Alle Daten)](./assets/filters-from-cell-link.png)
 
-1. Wählen Sie Ihren Filter aus dem Dropdownmenü aus.
+1. Wählen Sie Ihren Filter aus dem Dropdown-Menü aus.
 
-   ![Dropdown-Menü &quot;Filter&quot;](./assets/filter-drop-down.png)
+   ![Dropdown-Menü „Filter“](./assets/filter-drop-down.png)
 
 1. Klicken Sie auf **Anwenden**.

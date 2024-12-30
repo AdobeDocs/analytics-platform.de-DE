@@ -18,21 +18,21 @@ Sie können in Analysis Workspace Filter aus einem Touchpoint erstellen, Filter 
 
 >[!IMPORTANT]
 >
->Filter, die als Checkpoints in Fallout verwendet werden, müssen einen Container verwenden, der auf einer niedrigeren Ebene als der Gesamtkontext der Fallout-Visualisierung liegt. Bei einem personenbezogenen Fallout müssen Filter, die als Checkpoints verwendet werden, sitzungs- oder ereignisbasierte Filter sein. Bei einem Sitzungskontext-Fallout müssen Filter, die als Checkpoint verwendet werden, ereignisbasierte Filter sein. Wenn Sie eine ungültige Kombination verwenden, beträgt der Fallout 100 %. Wenn Sie einen inkompatiblen Filter als Touchpoint hinzufügen, wird eine Warnung zur Fallout-Visualisierung angezeigt. Bestimmte ungültige Filter-Container-Kombinationen führen zu ungültigen Fallout-Diagrammen, wie:
+>Filter, die als Checkpoints in Fallout verwendet werden, müssen einen Container verwenden, der auf einer niedrigeren Ebene als der Gesamtkontext der Fallout-Visualisierung liegt. Bei einem personenbezogenen Kontext-Fallout müssen als Checkpoints verwendete Filter sitzungs- oder ereignisbasierte Filter sein. Bei einem sitzungskontextbezogenen Fallout müssen Filter, die als Checkpoint verwendet werden, ereignisbasierte Filter sein. Wenn Sie eine ungültige Kombination verwenden, beträgt der Fallout 100 %. Wenn Sie einen inkompatiblen Filter als Touchpoint hinzufügen, wird eine Warnung an die Fallout-Visualisierung angezeigt. Bestimmte ungültige Filter-Container-Kombinationen führen zu ungültigen Fallout-Diagrammen, z. B.:
 >
->* Verwenden eines personenbasierten Filters als Touchpoint innerhalb einer Fallout-Visualisierung für Personen
->* Verwenden eines personenbasierten Filters als Touchpoint innerhalb einer Fallout-Visualisierung des Sitzungskontexts
->* Verwenden eines sitzungsbasierten Filters als Touchpoint innerhalb einer Fallout-Visualisierung des Sitzungskontexts
+>* Verwenden eines personenbasierten Filters als Touchpoint innerhalb einer Fallout-Visualisierung des Personenkontexts
+>* Verwenden eines personenbasierten Filters als Touchpoint innerhalb einer Fallout-Visualisierung mit Sitzungskontext
+>* Verwenden eines sitzungsbasierten Filters als Touchpoint innerhalb einer Sitzungskontext-Fallout-Visualisierung
 
 ## Erstellen eines Filters aus einem Touchpoint
 
-1. Erstellen Sie einen Filter aus einem bestimmten Touchpoint, an dem Sie interessiert sind und den Sie eventuell auch in andere Berichte übernehmen möchten. Klicken Sie mit der rechten Maustaste auf den Touchpoint und wählen Sie **[!UICONTROL Filter aus Touchpoint erstellen]** aus.
+1. Erstellen Sie einen Filter aus einem bestimmten Touchpoint, an dem Sie interessiert sind und den Sie eventuell auch in andere Berichte übernehmen möchten. Klicken Sie mit der rechten Maustaste auf den Touchpoint und wählen Sie **[!UICONTROL Filter aus Touchpoint erstellen]**.
 
-   ![Das Dropdown-Menü &quot;Touchpoint&quot;mit hervorgehobenem Symbol &quot;Segment aus Touchpoint erstellen&quot;.](assets/fallout-createfilter.png)
+   ![Das Dropdown-Menü „Touchpoint“ mit hervorgehobener Option „Segment aus Touchpoint erstellen“.](assets/fallout-createfilter.png)
 
-   Der [!UICONTROL Filter-Builder] wird geöffnet und ist vorab mit dem vordefinierten sequenziellen Filter gefüllt, der mit dem ausgewählten Touchpoint übereinstimmt:
+   Der [!UICONTROL Filter Builder] wird geöffnet und enthält bereits den vordefinierten sequenziellen Filter, der zu dem von Ihnen ausgewählten Touchpoint passt:
 
-   ![Der Filtergenerator zeigt den vorausgefüllten und vordefinierten sequenziellen Filter an.](assets/fallout-definefilter.png)
+   ![Der Filtergenerator zeigt den vorausgefüllten und den vordefinierten sequenziellen Filter an.](assets/fallout-definefilter.png)
 
 1. Geben Sie einen Titel und eine Beschreibung für den Filter ein und speichern Sie ihn.
 
@@ -42,7 +42,7 @@ Sie können in Analysis Workspace Filter aus einem Touchpoint erstellen, Filter 
 
 Wenn Sie zum Beispiel wissen möchten, wie der Trend bei Ihren Benutzern aus den USA aussieht und wie sich dies in der Fallout-Analyse auswirkt, ziehen Sie einfach den Filter „USA-Benutzer“ in den Fallout:
 
-![Der Filter &quot;US-Benutzer&quot;wurde ausgewählt und hervorgehoben, um ihn in den Fallout zu ziehen.](assets/fallout-addfilter.png)
+![Der Filter „US-Benutzer“ wurde ausgewählt und hervorgehoben, um ihn in den Fallout zu ziehen.](assets/fallout-addfilter.png)
 
 Oder Sie erstellen einen AND-Touchpoint, indem Sie den Filter „USA-Benutzer“ auf einen anderen Checkpoint ziehen.
 
@@ -50,12 +50,12 @@ Oder Sie erstellen einen AND-Touchpoint, indem Sie den Filter „USA-Benutzer“
 
 In der Fallout-Visualisierung können Sie eine unbegrenzte Anzahl von Filtern miteinander vergleichen.
 
-1. Wählen Sie die zu vergleichenden Filter im Bereich [!UICONTROL Filter] auf der linken Seite aus. Im Beispiel werden drei Filter ausgewählt: *Flugdetails: Seitenversion A*, *Flugdetails: Seitenversion B* und *Flugdetails: Seitenversion C*.
-1. Sie ziehen die drei Filter auf die Dropzone Filter oben in der Visualisierung.
+1. Wählen Sie die zu vergleichenden Filter im Bedienfeld &quot;[!UICONTROL &quot; ] der linken Seite aus. Im Beispiel sind drei Filter ausgewählt: *Flugdetails: Seitenversion A*, *Flugdetails: Seitenversion B* und *Flugdetails: Seitenversion C*.
+1. Sie ziehen die drei Filter auf den Ablegebereich für Filter oben in der Visualisierung.
 
 
-1. Optional: Sie können *Alle Besuche* als Standardbehälter beibehalten oder den Container löschen.
+1. Optional: Sie können *Alle Besuche* als Standard-Container beibehalten oder den Container löschen.
 
-   ![Der Fallout, der alle Besuche anzeigt, zusammen mit den beiden Filtern, die im vorherigen Schritt gezogen wurden.](assets/fallout-multiplefilters.png)
+   ![Der Fallout, der alle Besuche zusammen mit den beiden Filtern anzeigt, die im vorherigen Schritt gezogen wurden.](assets/fallout-multiplefilters.png)
 
-1. Sie können jetzt den Fallout über die drei Filter hinweg vergleichen, z. B. wo ein Filter eine bessere Leistung erzielt, oder andere Einblicke.
+1. Sie können jetzt den Fallout über die drei Filter hinweg vergleichen, z. B. wo ein Filter eine bessere Leistung als der andere hat, oder andere Einblicke erhalten.

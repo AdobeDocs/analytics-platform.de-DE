@@ -1,6 +1,6 @@
 ---
-title: Komponenteneinstellungen für Zusammenfassungsdaten
-description: Details und Informationen zum Konfigurieren von Dimensionen aus Datensätzen, um sicherzustellen, dass Sie ordnungsgemäß über Zusammenfassungsdaten berichten können.
+title: Einstellungen für Zusammenfassungsdatengruppen
+description: Details und Informationen zur Konfiguration von Dimensionen aus Datensätzen, um sicherzustellen, dass Sie ordnungsgemäß Berichte über Zusammenfassungsdaten erstellen können.
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
@@ -36,28 +36,28 @@ ht-degree: 25%
 
 Eine Zusammenfassungsdatengruppe erstellt eine Verknüpfung zwischen allen Dimensionen in der Gruppierung und wird verwendet, um Dimensionen aus Zusammenfassungsdatensätzen mit anderen Dimensionen für Berichte zu kombinieren.
 
-![Komponenteneinstellungen der Zusammenfassungsdatengruppe](/help/data-views/assets/summary-data-group.png)
+![Zusammenfassungsdatengruppen-Komponenteneinstellungen](/help/data-views/assets/summary-data-group.png)
 
-So erstellen Sie eine Dimensiongruppierung:
+So erstellen Sie eine Gruppierung von Dimensionen:
 
-1. Wählen Sie eine Dimension aus.
-1. Wählen Sie ![ChevronDown](/help/assets/icons/ChevronDown.svg) **[!UICONTROL Zusammenfassungsdatengruppe]** aus.
+1. Dimension auswählen.
+1. Wählen Sie ![ChevronDown](/help/assets/icons/ChevronDown.svg) **[!UICONTROL Datengruppe Zusammenfassung]**.
 1. Aktivieren Sie **[!UICONTROL Gruppierung erstellen]**.
-1. Wählen Sie aus der Dropdownliste **[!UICONTROL Dimension]** eine Dimension aus, die Sie mit der ausgewählten Dimension gruppieren möchten. Beachten Sie, dass in der Dropdown-Liste nur Dimensionen verfügbar sind, die Sie der Datenansicht bereits hinzugefügt haben.
-1. Aktivieren Sie optional **[!UICONTROL In Berichten ausblenden]** , um die gruppierte Dimension aus der Berichterstellung auszublenden. Die Aktivierung dieser Option ähnelt der Konfiguration von **[!UICONTROL In der Berichterstellung ausblenden]** für die gruppierte Dimension. Weitere Informationen finden Sie unter [Komponenteneinstellungen](overview.md) .
-1. Um der Gruppierung optional weitere Dimensionen hinzuzufügen, wählen Sie ![Hinzufügen](/help/assets/icons/Add.svg) **[!UICONTROL Dimension zur Gruppe hinzufügen]** aus.<br/>Sie können bis zu neun Dimensionen hinzufügen, da eine Zusammenfassungsdatengruppe maximal zehn Dimensionen hat.
+1. Wählen Sie eine Dimension aus der Dropdown ]**Liste**[!UICONTROL  Dimension aus, die Sie mit der ausgewählten Dimension aus dem ersten Schritt gruppieren möchten. Beachten Sie, dass nur Dimensionen, die Sie bereits zur Datenansicht hinzugefügt haben, in der Dropdown-Liste verfügbar sind.
+1. Optional können Sie **[!UICONTROL In Berichten ausblenden]** aktivieren, um die gruppierte Dimension in Berichten auszublenden. Die Aktivierung dieser Option ähnelt der Konfiguration von **[!UICONTROL In Berichten ausblenden]** für die gruppierte Dimension separat. Siehe [Komponenteneinstellungen](overview.md) für weitere Informationen.
+1. Um der Gruppierung optional zusätzliche Dimensionen hinzuzufügen, wählen Sie ![Hinzufügen](/help/assets/icons/Add.svg) **[!UICONTROL Dimension zur Gruppe hinzufügen]**.<br/>Sie können bis zu neun Dimensionen hinzufügen, da eine Datengruppe mit einer Zusammenfassung eine Beschränkung von zehn Dimensionen hat.
 
 ## Gleiche Komponenteneinstellungen
 
-Beim Gruppieren von Dimensionen müssen Sie sicherstellen, dass die Einstellungen für [!UICONTROL Unterzeichenfolge], [!UICONTROL Verhalten (Kleinbuchstaben)] und [!UICONTROL Ausschlusswerte einschließen] für die einzelnen Dimensionen, die Teil der Gruppe sind, identisch sind. Andernfalls kann jede Dimension der Gruppe vor der Gruppierung unterschiedliche Ergebnisse zurückgeben.
+Beim Gruppieren von Dimensionen müssen Sie sicherstellen, dass die Einstellungen für [!UICONTROL Teilzeichenfolge], [!UICONTROL Verhalten (Kleinbuchstaben)] und [!UICONTROL Ausschlusswerte einschließen] für jede der Dimensionen, die Teil der Gruppe sind, identisch sind. Andernfalls kann jede Dimension der Gruppe vor der Gruppierung möglicherweise andere Ergebnisse zurückgeben.
 z. B.:
 
-1. Sie haben eine Zusammenfassungsdatengruppe für `campaign_code` (Teil der Zusammenfassungsdaten) und `tracking_code` (Teil Ihrer Ereignisdaten) erstellt.
-1. Sie haben [!UICONTROL Verhalten (Kleinbuchstaben)] auf die Dimension `campaign_code`, nicht aber auf die Dimension `tracking_code` angewendet.
+1. Sie haben eine Zusammenfassungsdatengruppe für `campaign_code` (Teil der Zusammenfassungsdaten) und `tracking_code` (Teil der Ereignisdaten) erstellt.
+1. Sie haben [!UICONTROL Verhalten (Kleinbuchstaben)] auf die `campaign_code`, aber nicht auf die `tracking_code` angewendet.
 
-Werte in `tracking_code` können sich möglicherweise von `campaign_code` unterscheiden.
+Werte in `tracking_code` können möglicherweise anders als `campaign_code` angezeigt werden.
 
 >[!IMPORTANT]
 >
->Stellen Sie sicher, dass Sie nur Dimensionen aus einer Dimension gruppieren und keine Gruppierung aus mehreren Dimensionen anwenden. Wenn Sie beispielsweise eine Gruppierung durch Hinzufügen der Dimension `campaign_name` zur Dimension `tracking_code` erstellen, erstellen Sie keine Gruppierung für die Dimension `campaign_name` .
+>Stellen Sie sicher, dass Sie eine Gruppierung von Dimensionen nur aus einer Dimension durchführen und keine Gruppierung aus mehreren Dimensionen anwenden. Wenn Sie beispielsweise eine Gruppierung erstellen, indem Sie die Dimension `campaign_name` zur Dimension `tracking_code` hinzufügen, erstellen Sie nicht auch eine Gruppierung für die Dimension `campaign_name` .
 >

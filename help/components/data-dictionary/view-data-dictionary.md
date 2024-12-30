@@ -19,7 +19,7 @@ So zeigen Sie Informationen zu einer Komponente im Datenwörterbuch an:
 
 1. Wechseln Sie zum Analysis Workspace-Projekt, das die Komponente enthält, die Sie anzeigen möchten.
 
-1. Wählen Sie im linken Bereich von Analysis Workspace das Symbol [!UICONTROL **Datenwörterbuch**] aus. (Alternative Möglichkeiten für den Zugriff auf das Datenwörterbuch sind unter „Zugriff auf das Datenwörterbuch“ in [Datenwörterbuch – Überblick](/help/components/data-dictionary/data-dictionary-overview.md) beschrieben.)
+1. Wählen Sie [!UICONTROL **Symbol &quot;**]&quot; im linken Bereich von Analysis Workspace aus. (Alternative Möglichkeiten für den Zugriff auf das Datenwörterbuch sind unter „Zugriff auf das Datenwörterbuch“ in [Datenwörterbuch – Überblick](/help/components/data-dictionary/data-dictionary-overview.md) beschrieben.)
 
    Das Fenster „Datenwörterbuch“ wird angezeigt.
 
@@ -27,11 +27,11 @@ So zeigen Sie Informationen zu einer Komponente im Datenwörterbuch an:
 
    <!--double-check this screenshot. I mocked the admin view up a bit to get rid of the Dictionary health tab.-->
 
-1. Stellen Sie sicher, dass die Datenansicht mit der Komponente, die Sie anzeigen möchten, im Dropdown-Menü ausgewählt ist. Standardmäßig wird die Datenansicht angezeigt, in der Sie sich bereits befinden.
+1. Stellen Sie sicher, dass die Datenansicht, die die Komponente enthält, die Sie anzeigen möchten, im Dropdown-Menü ausgewählt ist. Standardmäßig wird die Datenansicht angezeigt, in der Sie sich bereits befinden.
 
 1. (Optional) Geben Sie im Suchfeld den Namen der Komponente ein, die Sie anzeigen möchten.
 
-   Der Komponententyp kann sowohl durch Farbe als auch durch ein Symbol identifiziert werden. **Dimensionen** ![Dimension-Symbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) sind orange, **Filter** ![Segmentsymbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Segmentation_18_N.svg) blau, **Datumsbereiche** ![Datumsbereichssymbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg) ist violett und **Metriken** ![Metriksymbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Event_18_N.svg) sind grün. Das Adobe-Symbol ![Adobe-Symbol](assets/default-calc-metric-icon.png) zeigt entweder eine Vorlage für berechnete Metriken oder eine Filtervorlage an, und das Taschenrechnersymbol ![Taschenrechnersymbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calculator_18_N.svg) zeigt eine berechnete Metrik an, die von Analytics-Admins in Ihrer Organisation erstellt wurde.
+   Der Komponententyp kann sowohl durch Farbe als auch durch ein Symbol identifiziert werden. **Dimension Dimensionen** ![Segmentsymbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) sind orange, **Filter** ![Segmentsymbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Segmentation_18_N.svg) sind blau, **Datumsbereiche** ![Datumsbereichssymbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg) sind violett und **** Metriken![Metriksymbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Event_18_N.svg) grün. Das Adobe-Symbol ![Adobe-Symbol](assets/default-calc-metric-icon.png) zeigt entweder eine Vorlage für berechnete Metriken oder eine Filtervorlage an, und das Taschenrechnersymbol ![Taschenrechnersymbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calculator_18_N.svg) zeigt eine berechnete Metrik an, die von Analytics-Admins in Ihrer Organisation erstellt wurde.
 
 {{dd-filter-criteria}}
 

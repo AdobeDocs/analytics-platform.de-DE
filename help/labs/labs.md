@@ -13,11 +13,11 @@ ht-degree: 81%
 
 # [!UICONTROL Labs]-Benutzerhandbuch
 
-[!UICONTROL Labs] ermöglicht eine schnellere Prototypisierung von Ideen in der Frühphase. Es handelt sich dabei um eine Kombination von Werkzeugen und Prozessen, die die Entwicklung transparent und kundenorientiert beschleunigt. Es ermöglicht es Benutzern, sich mit neuen Technologien zu beschäftigen, wertvolle Einblicke zu erhalten und die Entwicklung künftiger Funktionen und Prioritäten zu beeinflussen. Sie können Labs verwenden, um frühzeitig auf Adobe Customer Journey Analytics-Innovationen zugreifen zu können und zukünftige Funktionen im Rahmen Ihrer eigenen geschäftlichen Nutzungsszenarien und Daten zu bewerten.
+[!UICONTROL Labs] ermöglicht eine schnellere Prototypisierung von Ideen in der Frühphase. Es handelt sich dabei um eine Kombination von Werkzeugen und Prozessen, die die Entwicklung transparent und kundenorientiert beschleunigt. Es ermöglicht es Benutzern, sich mit neuen Technologien zu beschäftigen, wertvolle Einblicke zu erhalten und die Entwicklung künftiger Funktionen und Prioritäten zu beeinflussen. Sie können Labs verwenden, um frühzeitig auf Adobe Customer Journey Analytics-Innovationen zuzugreifen und bevorstehende Funktionen im Kontext Ihrer eigenen geschäftlichen Anwendungsfälle und Daten zu bewerten.
 
 >[!IMPORTANT]
 >
->Customer Journey Analytics Labs ist kein HIPAA-bereiter Dienst und darf nicht zur Verarbeitung vertraulicher personenbezogener Daten verwendet werden, einschließlich personenbezogener Gesundheitsdaten (z. B. personenbezogener Gesundheitsdaten oder PHI), die Ihr Unternehmen anderweitig für Customer Journey Analytics verwenden darf.
+>Customer Journey Analytics Labs ist kein HIPAA-fähiger Service und darf nicht zur Verarbeitung sensibler personenbezogener Daten verwendet werden, einschließlich zulässiger Gesundheitsdaten (z. B. persönlicher Gesundheitsinformationen oder PHI), die Ihr Unternehmen ansonsten in Customer Journey Analytics verwenden darf.
 
 ## Voraussetzungen
 
@@ -31,7 +31,7 @@ So greifen Sie auf [!UICONTROL Labs] zu:
 
 1. Wenn Sie noch keinen Zugriff auf [!UICONTROL Workspace] und [!UICONTROL Labs] haben, bitten Sie Ihren Administrator um Berechtigungen.
 
-1. Klicken Sie unter Customer Journey Analytics auf die Registerkarte **[!UICONTROL Labs]** .
+1. Klicken Sie im Customer Journey Analytics auf die Registerkarte **[!UICONTROL Labs]**.
 
 ## Prototyp bewerten
 
@@ -65,7 +65,7 @@ So starten und bewerten Sie einen Prototyp:
 
 1. Wenn Sie einen anderen Prototyp testen oder die Prototypumgebung verlassen möchten, klicken Sie oben rechts im Bildschirm auf **[!UICONTROL Prototyp verlassen]** und füllen Sie die kurze Umfrage zum Prototyp aus. Änderungen, die an einem Prototypprojekt vorgenommen wurden, gehen beim Verlassen der Prototypumgebung verloren.
 
-   ![Intelligentes Pfade-Feedback-Fenster](assets/short-survey.png)
+   ![Fenster „Intelligentes Pfadfeedback“](assets/short-survey.png)
 
 1. Klicken Sie auf **[!UICONTROL Senden]**, um zum Hauptportal „Vorschau“ zurückzukehren.
 

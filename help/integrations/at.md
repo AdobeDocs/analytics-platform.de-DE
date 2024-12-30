@@ -1,5 +1,5 @@
 ---
-title: Zielberichte
+title: Reporting zu Zielgruppen
 description: Integrieren von Adobe Target mit Customer Journey Analytics
 feature: Experience Platform Integration
 role: User
@@ -11,11 +11,11 @@ ht-degree: 41%
 
 ---
 
-# Zielberichte
+# Reporting zu Zielgruppen
 
-Mit der Zielberichterstellung in Customer Journey Analytics können Sie Adobe Target-Aktivitäten direkt im Customer Journey Analytics messen und darüber berichten. Diese Funktion ist mit der in Adobe Analytics (AA) über Analytics for Target (A4T) durchgeführten Ausführung vergleichbar, allerdings mit der Konnektivität zu Adobe Experience Platform (AEP).
+Mit dem Target-Reporting in Customer Journey Analytics können Sie Adobe Target-Aktivitäten direkt in Customer Journey Analytics messen und Berichte dazu erstellen. Diese Funktionalität ist vergleichbar mit der, die in Adobe Analytics (AA) über Analytics for Target (A4T) ausgeführt wird, jedoch mit der Verbindung zu Adobe Experience Platform (AEP).
 
-Durch das Hinzufügen des (standardmäßig unter Experience Platform verfügbaren) Target Classification-Lookup-Datensatzes zu einer Customer Journey Analytics-Verbindung haben Benutzer jetzt die richtige Exposition gegenüber den Berichterstellungs-Tools von Target, der Zielgruppen-Auftragsattribution und anderen Funktionen. Mit nur geringfügigen Vorbereitungen und Anpassungen innerhalb der Datenansicht der Customer Journey Analytics können diese Aktivitäten sofort für jeden Benutzer verfügbar gemacht werden, der Target-Daten direkt an CJA senden möchte.
+Durch das Hinzufügen des Suchdatensatzes der Target-Klassifizierung (der standardmäßig auf Experience Platform verfügbar ist) zu einer Customer Journey Analytics-Verbindung erhalten Anwender jetzt eine angemessene Offenlegung gegenüber Reporting-Tools von Target, der Attribution von Target-Bestellungen und anderen Funktionen. Wenn nur einige kleinere Vorbereitungen und Anpassungen in der Customer Journey Analytics-Datenansicht vorgenommen wurden, können diese Aktivitäten für alle Benutzenden, die Target-Daten direkt an CJA senden möchten, sofort verfügbar gemacht werden.
 
 ## Primäre Vorteile
 
@@ -25,13 +25,13 @@ Durch das Hinzufügen des (standardmäßig unter Experience Platform verfügbare
 
 ## Hinweise und Überlegungen
 
-Nachdem der Datensatz mit dem Ereignis-Datensatz für die Target-Klassifizierung zu einer CJA-Verbindung hinzugefügt wurde, müssen in der CJA-Datenansicht einige geringfügige Anpassungen vorgenommen werden, sobald diese Komponenten als Dimensionen hinzugefügt wurden, darunter:
+Nachdem der Zielklassifizierungsereignis-Datensatz zu einer CJA-Verbindung hinzugefügt wurde, müssen einige kleinere Anpassungen in der CJA-Datenansicht vorgenommen werden, sobald diese Komponenten als Dimensionen hinzugefügt wurden, darunter:
 
-* Festlegen der Persistenz, die der Verfolgung in Target ähnelt (wenden Sie sich an einen Target-Berater oder den Kunden, um die richtigen Einstellungen sicherzustellen).
+* Festlegen der Persistenz, sodass sie der Art des Trackings in Target ähnelt (wenden Sie sich an einen Target-Berater oder an den Kunden, um sicherzustellen, dass die Einstellungen korrekt sind).
 
-* Setzen der Persistenz auf ALLE , wodurch mehrere Target-Aktivitäten gleichzeitig verfolgt und nicht von künftigen oder früheren Aktivitäten überschrieben werden können.
+* Festlegen der Persistenz auf ALLE , sodass mehrere Target-Aktivitäten gleichzeitig verfolgt und nicht von zukünftigen oder vorherigen Aktivitäten überschrieben werden können.
 
-## Detailliertere Informationen
+## Ausführlichere Informationen
 
 Weitere Informationen finden Sie unter [Target-Reporting in Adobe Customer Journey Analytics](https://experienceleague.adobe.com/de/docs/target/using/integrate/cja/target-reporting-in-cja) in der Target-Dokumentation.
 

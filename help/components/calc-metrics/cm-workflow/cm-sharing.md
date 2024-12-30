@@ -12,34 +12,34 @@ ht-degree: 10%
 
 # Berechnete Metriken freigeben
 
-Im Manager für berechnete Metriken ](cm-manager.md) können Sie berechnete Metriken freigeben. [ Je nach Ihren Berechtigungen können Sie berechnete Metriken für Ihre gesamte Organisation, Gruppen oder einzelne Benutzer freigeben:
+Im [Manager für berechnete Metriken](cm-manager.md) können Sie berechnete Metriken freigeben. Je nach Ihren Berechtigungen können Sie berechnete Metriken für Ihre gesamte Organisation, Gruppen oder einzelne Benutzer freigeben:
 
 * **Administratoren**: Administratoren können berechnete Metriken für die gesamte Organisation, für Gruppen innerhalb einer Organisation und für einzelne Benutzer freigeben. Weitere Informationen finden Sie in der [Dokumentation zu Admin Console](https://helpx.adobe.com/de/enterprise/using/manage-products.html).
 * **Benutzer ohne Administratorrechte**: Benutzer ohne Administratorrechte können die von ihnen erstellte berechnete Metrik nur für einzelne Benutzer freigeben. |
 
 So geben Sie eine oder mehrere berechnete Metriken frei:
 
-1. Wählen Sie im Manager für berechnete Metriken ](cm-manager.md) mindestens eine der berechneten Metriken aus, die Sie freigeben möchten.[
-1. Wählen Sie in der Aktionsleiste ![Freigabe](/help/assets/icons/ShareAlt.svg) **[!UICONTROL Freigabe]** aus.
-1. Im Dialogfeld **[!UICONTROL Berechnete Metrik freigeben]** :
+1. Wählen [ im Manager für ](cm-manager.md) berechnete Metriken eine oder mehrere der berechneten Metriken aus, die Sie freigeben möchten.
+1. Wählen Sie in der Aktionsleiste ![Freigeben](/help/assets/icons/ShareAlt.svg) **[!UICONTROL Freigeben]** aus.
+1. Im Dialogfeld **[!UICONTROL Berechnete Metrik freigeben]**:
 
-   ![Dialogfeld &quot;Berechnete Metriken freigeben&quot;](assets/share-calculated-metrics-dialog.png)
+   ![Dialogfeld „Berechnete Metriken freigeben“](assets/share-calculated-metrics-dialog.png)
 
-   1. (Optional) Verwenden Sie ![Suche](/help/assets/icons/Search.svg) zu *Einzelpersonen oder Gruppen durchsuchen* und beschränken Sie die Liste der Gruppen oder Einzelanwender, für die Sie die berechneten Metriken freigeben möchten.
+   1. (Optional) Verwenden Sie ![Suche](/help/assets/icons/Search.svg), um *Einzelpersonen oder Gruppen suchen* die Liste der Gruppen oder Einzelpersonen, für die Sie die berechnete Metrik freigeben möchten, zu suchen und einzuschränken.
 
-   1. Wählen Sie eine oder mehrere Optionen im Abschnitt **[!UICONTROL Organisation]** oder **[!UICONTROL Gruppen]** aus oder suchen Sie nach einer oder mehreren Einzelpersonen und wählen Sie diese aus. Welche Optionen verfügbar sind, hängt von Ihrer Rolle ab.
+   1. Wählen Sie eine oder mehrere Optionen aus dem Abschnitt **[!UICONTROL Organisation]** oder **[!UICONTROL Gruppen]** oder suchen Sie nach einer oder mehreren Einzelpersonen und wählen Sie diese aus. Welche Optionen verfügbar sind, hängt von Ihrer Rolle ab.
 
-   1. Wählen Sie **[!UICONTROL Speichern]** aus, um die berechneten Metriken freizugeben. Wählen Sie **[!UICONTROL Abbrechen]** aus, um abzubrechen.
+   1. Wählen Sie **[!UICONTROL Speichern]** aus, um die berechneten Metriken freizugeben. Wählen Sie **[!UICONTROL Abbrechen]** zum Abbrechen aus.
 
 ## Best Practices
 
-Im Folgenden finden Sie einige Best Practices, wenn Sie berechnete Metriken freigeben und für wen Sie berechnete Metriken freigeben sollten.
+Im Folgenden finden Sie Best Practices für die Freigabe berechneter Metriken und für Personen, für die Sie berechnete Metriken freigeben sollten.
 
-* Geben Sie als Administrator eine berechnete Metrik nur dann für Alle frei, wenn Sie überzeugt sind, dass es jedem in Ihrer Organisation gut geht, die berechnete Metrik zu verwenden. Sie können auch erwägen, diese berechneten Metriken zu favorisieren. Weitere Informationen finden Sie unter [Kennzeichnen einer berechneten Metrik als Favoriten](cm-favorite.md) .
+* Geben Sie als Administrator eine berechnete Metrik nur dann für alle frei, wenn Sie überzeugt sind, dass die Verwendung der berechneten Metrik für alle Mitarbeiter in Ihrem Unternehmen annehmbar ist. Sie können auch in Betracht ziehen, diese berechneten Metriken zu bevorzugen. Weitere [ finden Sie unter „Markieren ](cm-favorite.md) berechneten Metrik als Favorit“.
 
-* Geben Sie als Administrator eine berechnete Metrik für eine bestimmte Gruppe frei, wenn diese berechnete Metrik Geschäftswert für den Teil der Benutzer dieser Gruppe bietet.
+* Geben Sie als Administrator eine berechnete Metrik für eine bestimmte Gruppe frei, wenn diese berechnete Metrik einen Geschäftswert für die Benutzer dieser Gruppe bietet.
 
-* Geben Sie als Administrator oder als einzelner Benutzer eine berechnete Metrik für eine oder mehrere Einzelanwender frei, um eine berechnete Metrik zu validieren. Wenn sich die Filter als nicht nützlich erweisen, können Sie die berechnete Metrik löschen.
+* Geben Sie als Administrator oder einzelner Benutzer eine berechnete Metrik für eine oder mehrere Personen frei, um eine berechnete Metrik zu validieren. Wenn sich die Filter als nicht nützlich erweisen, können Sie die berechnete Metrik löschen.
 
 
 <!--

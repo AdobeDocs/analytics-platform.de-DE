@@ -6,9 +6,9 @@ solution: Customer Journey Analytics
 exl-id: 5411f843-be3b-4059-a3b9-a4e1928ee8a9
 feature: Experience Platform Integration
 source-git-commit: c26829d7a53e9ba8d5faf731a8a1dca2e741bf21
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '959'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -67,7 +67,7 @@ Hier ist ein Beispiel für ein XDM-Schema, das als Teil eines vorhandenen oder n
 
 ![CAI-Schema](assets/cai-schema.png)
 
-(Beachten Sie, dass das Beispiel ein Profildatensatz ist. Derselbe Satz von Schemaobjekten wäre Teil eines Erlebnisereignis-Datensatzes, der von Customer Journey Analytics erfasst werden würde. Der Erlebnisereignis-Datensatz würde Zeitstempel als Score-Datum enthalten.) Jeder in diesem Modell bewertete Kunde hätte einen Score und ein mit ihm verknüpftes Score-Datum usw.
+(Beachten Sie, dass das Beispiel ein Profildatensatz ist. Derselbe Satz von Schemaobjekten wäre Teil eines Erlebnisereignis-Datensatzes, der von Customer Journey Analytics erfasst werden würde. Der Erlebnisereignis-Datensatz würde Zeitstempel als Bewertungsdatum enthalten.) Jeder in diesem Modell bewertete Kunde hätte einen Score, ein ScoreDate usw. ein mit ihm verknüpftes Score-Datum usw.
 
 ## Schritt 3: Erstellen von Datenansichten basierend auf diesen Verbindungen
 

@@ -15,8 +15,8 @@ ht-degree: 18%
 
 Sie können einen Filter als Favoriten markieren. Wenn Sie Filter als Favoriten markieren, können Sie Ihre Filter organisieren. Alle Benutzer können Filter bevorzugen.
 
-Um einen Filter zu favorisieren oder zu verweigern, gehen Sie in den [Filter-Manager](/help/components/filters/manage-filters.md):
+Um einen Filter zu favorisieren oder zu deaktivieren, gehen Sie im [Filter-Manager](/help/components/filters/manage-filters.md) folgendermaßen vor:
 
-* Wählen Sie ![StarOutline](/help/assets/icons/StarOutline.svg) als Favorit aus oder wählen Sie ![Star](/help/assets/icons/Star.svg) aus, um die Vorliebe für einen Filter aufzuheben.
+* Wählen Sie ![StarOutline](/help/assets/icons/StarOutline.svg) aus, um einen Filter zu bevorzugen, oder wählen Sie ![Star](/help/assets/icons/Star.svg) aus, um einen Filter zu bevorzugen.
 
-Sie können Ihre Filterliste nach Favoriten sortieren. Wählen Sie **[!UICONTROL Sonstige Filter]** aus dem Bereich ![Filter](/help/assets/icons/Filter.svg) **[!UICONTROL Filter]** und wählen Sie **[!UICONTROL Favoriten]** aus. Weitere Informationen finden Sie unter [Filtern der Filterliste](/help/components/filters/filters-filter.md) .
+Sie können Ihre Filterliste nach Favoriten sortieren. Wählen Sie **[!UICONTROL Sonstige Filter]** im Bedienfeld ![Filter](/help/assets/icons/Filter.svg) **[!UICONTROL Filter]** aus und wählen Sie **[!UICONTROL Favoriten]**. Weitere Informationen [ Sie unter „Filterliste ](/help/components/filters/filters-filter.md) Filtern“.

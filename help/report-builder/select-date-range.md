@@ -1,6 +1,6 @@
 ---
-title: So wählen Sie einen Datumsbereich in Report Builder in Customer Journey Analytics aus
-description: Beschreibt die Verwendung des Kalenders, rollierender Datumsangaben und benutzerdefinierter Ausdrücke in Report Builder zum Customer Journey Analytics
+title: Auswählen eines Datumsbereichs im Report Builder auf Customer Journey Analytics
+description: Beschreibt die Verwendung des Kalenders, rollierender Datumsangaben und benutzerdefinierter Ausdrücke im Report Builder zum Customer Journey Analytics
 role: User
 feature: Report Builder
 type: Documentation
@@ -36,11 +36,11 @@ Mit der Option „Von Zelle“ können Sie auf Daten verweisen, die in Zellen ei
 
 Sie können den aktuellen Tag für einen beliebigen Datumsbereich ausschließen.
 
-![Report Builder Quick edit panel with calendar selected and Exclude Today selected.](./assets/image17.png)
+![Report Builder-Schnellbearbeitungsbereich mit ausgewähltem Kalender und „Heute ausschließen“.](./assets/image17.png)
 
 ## Verwenden des Kalenders
 
-Wenn Sie den **Kalender** verwenden, zeigt das Datumsbereichsfeld den aktuellen Datumsbereich für die Datenblockanfrage an. Sie können Datumsangaben direkt in das Datumsbereichsfeld eingeben oder eine Datumsbereichsauswahloption verwenden.
+Wenn Sie den **Kalender** verwenden, zeigt das Datumsbereichsfeld den aktuellen Datumsbereich für die Datenblockanfrage an. Sie können Datumsangaben direkt in das Datumsbereichsfeld eingeben oder eine Datumsbereichsauswahl-Option verwenden.
 
 ### Feld „Datumsbereich“
 
@@ -62,7 +62,7 @@ So wählen Sie Datumsangaben mithilfe des Kalenders aus
 
 Um einen Datumsbereich rückwärts festzulegen, klicken Sie zuerst auf das Enddatum und dann auf das Startdatum.
 
-![Datumsbereich des Report Builders, der den Kalender sowie das Enddatum und das Startdatum anzeigt.](./assets/image18.png)
+Datumsbereich des Report Builders ![mit dem ausgewählten Kalender, dem Enddatum und dem Startdatum.](./assets/image18.png)
 
 ### Dropdown-Menü „Voreinstellung“
 
@@ -76,7 +76,7 @@ Mit der Option „Rollierende Datumswerte“ können Sie einen Datumsbereich mit
 
 1. Wählen Sie einen rollierenden Ausdruck für Ihr Start- und Enddatum aus.
 
-   ![Datumsbereich des Report Builders, in dem die Option Rollierende Datumswerte verwenden und der rollierende Ausdruck angezeigt wird.](./assets/image19.png)
+   Datumsbereich des ![Report Builders mit ausgewähltem „Rollierende Datumswerte verwenden“ und dem rollierenden Ausdruck.](./assets/image19.png)
 
    **Beginn von** – Ermöglicht die Auswahl des Anfangs eines Tages, einer Woche, eines Monats, eines Quartals oder eines Jahres.
 
@@ -86,13 +86,13 @@ Mit der Option „Rollierende Datumswerte“ können Sie einen Datumsbereich mit
 
 1. Wählen Sie als rollierenden Zeitraum Tag, Woche, Monat, Quartal oder Jahr aus.
 
-   ![Datumsbereich des Report Builders, der den ausgewählten aktuellen Tag anzeigt.](./assets/image20.png)
+   Datumsbereich des ![Report Builders, der den ausgewählten aktuellen Tag anzeigt.](./assets/image20.png)
 
 1. Fügen Sie Tage, Wochen, Monate, Quartale oder Jahre ab dem rollierenden Datum hinzu oder subtrahieren Sie diese.
 
    ![Datumsbereich des Report Builders, der den aktuellen Tag plus 14 ausgewählte Tage anzeigt.](./assets/image21.png)
 
-1. Klicken Sie auf Weiter , um den Datumsbereich festzulegen.
+1. Klicken Sie auf Weiter , um den Datumsbereich zu definieren.
 
    Verwenden Sie die Datumsvorschau, um zu bestätigen, dass der resultierende Datumsbereich der gewünschte Bereich ist.
 
@@ -106,7 +106,7 @@ Mit der Option für benutzerdefinierte Ausdrücke können Sie den Datumsbereich 
 
    Wenn Sie die Option **Benutzerdefinierte Ausdrücke verwenden** auswählen, sind die standardmäßigen Steuerelemente für rollierende Datumsbereiche deaktiviert.
 
-   ![Wählen Sie Benutzerdefinierten Ausdruck verwenden aus, der tm-1m bis td-1d anzeigt.](./assets/custom_expression.png)
+   ![Wählen Sie Benutzerdefinierte Ausdrücke verwenden aus, die tm-1m bis td-1d anzeigen.](./assets/custom_expression.png)
 
 1. Geben Sie einen benutzerdefinierten Ausdruck ein.
 
@@ -157,13 +157,13 @@ In der folgenden Tabelle sind Beispiele für Datumsausdrücke aufgeführt.
 | tm-1d | Letzter Tag des vorherigen Monats |
 | td-52w | Derselbe Tag vor 52 Wochen |
 | tm-11m-1d | Letzter Tag des gleichen Monats im letzten Jahr |
-| &quot;2020-09-06&quot; | 9. Sept. 2020 |
+| „2020-09-06“ | 9. Sept. 2020 |
 
 ## Datumsbereich aus Zelle
 
 Der Datumsbereich kann in Zellen eines Arbeitsblatts angegeben werden. Verwenden Sie die Option **Datumsbereich aus Zelle**, um das Start- und Enddatum des Datenblocks aus ausgewählten Zellen auszuwählen. Wenn Sie die Option **Aus Zelle** auswählen, zeigt das Bedienfeld die Felder **Von** und **Bis** an, in die Sie eine Zellenposition eingeben können.
 
-![Aus Zellenblatt1!H4 in Blatt1!I4](./assets/image23.png) auswählen
+![Aus Zelle auswählen Sheet1!H4 zu Sheet1!I4](./assets/image23.png)
 
 ## Heute ausschließen
 

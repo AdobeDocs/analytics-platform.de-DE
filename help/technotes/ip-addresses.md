@@ -16,13 +16,13 @@ ht-degree: 33%
 
 Einige Firewall-Konfigurationen blockieren IP-Adressen, die von den Adobe-Datenerfassungs-Servern oder -Servern stammen, die für den Datenzugriff zuständig sind. Sie können diese Liste von Bereichen verwenden, um die Firewall-Einstellungen Ihres Unternehmens so zu ändern, dass der Zugriff und das Senden von Daten aus Ihrem Unternehmen heraus möglich ist.
 
-Auf dieser Seite finden Sie IP-Adressen, die Sie Ihrer Zulassungsliste hinzufügen müssen, damit ausgehende Systeme funktionieren, z. B. [Daten an einen Cloud-Anbieter exportieren](/help/analysis-workspace/export/export-cloud.md).
+Diese Seite enthält IP-Adressen, die Sie Ihrer Zulassungsliste hinzufügen müssen, damit ausgehende Systeme funktionieren, z. B. [Exportieren von Daten an einen Cloud-Anbieter](/help/analysis-workspace/export/export-cloud.md).
 
 >[!IMPORTANT]
 >
->Adobe versucht zwar nach besten Kräften, dieses Dokument aktuell zu halten, kann aber nicht garantieren, dass die Liste der IP-Bereiche unverändert bleibt. Zu den möglichen Änderungen gehören das Wachstum und die Erweiterung des Unternehmens, eine Internet-Registrierung erfordert Änderungen an der Adobe IP-Adresszeile oder ein Internetdienstanbieter funktioniert nicht mehr.
+>Adobe tut sein Bestes, um dieses Dokument aktuell zu halten, kann jedoch nicht garantieren, dass die Liste der IP-Bereiche gleich bleibt. Zu den möglichen Änderungen gehören das Wachstum und die Ausweitung des Unternehmens, eine Internet-Registrierung erfordert Änderungen am IP-Adressraum der Adobe oder ein Internet-Service-Provider funktioniert nicht mehr.
 
-## VA7: Kunden in den USA und Amerika
+## VA7: Kunden aus den USA und Amerika
 
 | IP-Block (CIDR-Notation) |
 | --- |
@@ -141,6 +141,6 @@ Auf dieser Seite finden Sie IP-Adressen, die Sie Ihrer Zulassungsliste hinzufüg
 
 >[!MORELIKETHIS]
 >
->[Von Customer Journey Analytics](domains.md) verwendete Domänen
+>[Von Customer Journey Analytics verwendete Domains](domains.md)
 >
 >[Von der Adobe Experience Cloud verwendete IP-Adressen](https://experienceleague.adobe.com/en/docs/core-services/interface/data-collection/ip-addresses)

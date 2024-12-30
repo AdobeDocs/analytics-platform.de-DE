@@ -1,5 +1,5 @@
 ---
-description: Administratoren können über die Datenansicht Beschreibungen für Komponenten hinzufügen.
+description: Admins können mithilfe der Datenansicht Beschreibungen für Komponenten hinzufügen.
 title: Komponentenbeschreibungen hinzufügen
 feature: Components
 role: Admin
@@ -13,9 +13,9 @@ ht-degree: 14%
 
 # Komponentenbeschreibungen hinzufügen
 
-Beschreibungen helfen Benutzern dabei, die verschiedenen Komponenten beim Erstellen von Projekten in Analysis Workspace oder beim Anzeigen von Berichten zu verwenden.
+Mithilfe von Beschreibungen können Benutzende wissen, wie die verschiedenen Komponenten beim Erstellen von Projekten in Analysis Workspace oder beim Anzeigen von Berichten verwendet werden.
 
-Customer Journey Analytics-Administratoren können in einer Datenansicht oder mithilfe des Datenwörterbuchs Beschreibungen für Komponenten (Dimensionen, Metriken, Filter und Datumsbereiche) hinzufügen.
+Customer Journey Analytics-Administratoren können mithilfe des Datenwörterbuchs oder innerhalb einer Datenansicht Beschreibungen für Komponenten (Dimensionen, Metriken, Filter und Datumsbereiche) hinzufügen.
 
 ## Hinzufügen von Beschreibungen in einer Datenansicht
 
@@ -23,14 +23,14 @@ Sie können einer Komponente, die Sie Ihrer Datenansicht hinzugefügt haben, ein
 
 ## Hinzufügen von Beschreibungen mithilfe des Datenwörterbuchs
 
-Das Datenwörterbuch in Analysis Workspace hilft Benutzern und Administratoren, die Komponenten in ihrer Customer Journey Analytics-Umgebung zu verfolgen und besser zu verstehen. Das Datenwörterbuch bietet Administratoren die Möglichkeit, Komponentenbeschreibungen direkt in Analysis Workspace hinzuzufügen.
+Das Datenwörterbuch in Analysis Workspace hilft Benutzenden und Admins, die Komponenten in ihrer Customer Journey Analytics-Umgebung zu verfolgen und besser zu verstehen. Das Datenwörterbuch bietet Administrierenden die Möglichkeit, Komponentenbeschreibungen direkt in Analysis Workspace hinzuzufügen.
 
 Informationen zum Bearbeiten einer Komponente im Datenwörterbuch finden Sie unter [Bearbeiten von Komponenteneinträgen im Datenwörterbuch](/help/components/data-dictionary/edit-entries-data-dictionary.md).
 
-Allgemeine Informationen zum Datenwörterbuch finden Sie in der [Datenwörterbuchübersicht](/help/components/data-dictionary/data-dictionary-overview.md).
+Allgemeine Informationen zum Datenwörterbuch finden Sie unter [Datenwörterbuch - Übersicht](/help/components/data-dictionary/data-dictionary-overview.md).
 
 >[!MORELIKETHIS]
 >
->[Komponenteneinstellungen für die Datenansicht](/help/data-views/component-settings/overview.md)
->[Komponenteneinträge für Datenwörterbücher](/help/components/data-dictionary/edit-entries-data-dictionary.md)
+>[Einstellungen für die Datenansichtskomponente](/help/data-views/component-settings/overview.md)
+>[Komponenteneinträge für Datenwörterbuch](/help/components/data-dictionary/edit-entries-data-dictionary.md)
 >

@@ -1,5 +1,5 @@
 ---
-title: Abbrechen von Berichtsanforderungen im Reporting Activity Manager
+title: Abbrechen von Berichtsanfragen in Reporting Activity Manager
 description: Erfahren Sie, wie Sie Kapazitätsprobleme bei Spitzen während der Berichterstellung mit Reporting Activity Manager diagnostizieren und beheben können.
 solution: Customer Journey Analytics
 feature: Basics
@@ -12,150 +12,150 @@ ht-degree: 13%
 
 ---
 
-# Abbrechen von Berichtsanforderungen im Reporting Activity Manager
+# Abbrechen von Berichtsanfragen in Reporting Activity Manager
 
-Mit dem [!UICONTROL Reporting Activity Manager] können Administratoren Reporting-Anforderungen schnell diagnostizieren und abbrechen, um Probleme mit der Berichtskapazität während Spitzenzeiten der Berichterstellung zu beheben.
+Mit [!UICONTROL Reporting Activity Manager] können Administratoren Berichtsanfragen schnell diagnostizieren und abbrechen, um Probleme mit der Berichtskapazität während Spitzenzeiten beim Reporting zu beheben.
 
-Beachten Sie beim Abbrechen von Berichtsanforderungen Folgendes:
+Beachten Sie beim Abbrechen von Berichtsanfragen Folgendes:
 
-* Sie können bestimmte Anforderungen abbrechen, alle Anforderungen eines bestimmten Benutzers abbrechen oder alle Anforderungen im Zusammenhang mit einem bestimmten Projekt abbrechen.
+* Sie können bestimmte Anfragen abbrechen, alle Anfragen eines bestimmten Benutzers abbrechen oder alle Anfragen im Zusammenhang mit einem bestimmten Projekt abbrechen.
 
-* Wenn Sie Anforderungen abbrechen, können Sie auch nachfolgende Anforderungen für einen bestimmten Zeitraum einschränken.
+* Wenn Sie Anfragen abbrechen, können Sie auch nachfolgende Anfragen für einen bestimmten Zeitraum einschränken.
 
   Wenn Sie eine nachfolgende Anfrage einschränken, wird die Aktion im [Auditprotokoll](/help/privacy/audit-log.md) mit dem Aktionsnamen EMBARGO aufgezeichnet.
 
-* Sie können eine Anforderung nicht abbrechen, wenn die Spalte [!UICONTROL **Benutzer**] einer Anforderung als [!UICONTROL **Nicht erkannt**] angezeigt wird. In diesem Fall bedeutet dies, dass sich der Benutzer in einem Anmeldeunternehmen befindet, für das Sie keine Administratorberechtigungen haben.
+* Sie können eine Anfrage nicht abbrechen, wenn die Spalte [!UICONTROL **Benutzer**] einer Anfrage als [!UICONTROL **Nicht erkannt**] angezeigt wird. In diesem Fall bedeutet dies, dass sich der Benutzer in einer Unternehmensanmeldung befindet, für die Sie keine Administratorrechte haben.
 
-Weitere Informationen zum Reporting-Aktivitäts-Manager, einschließlich der wichtigsten Vorteile und Berechtigungsanforderungen, finden Sie unter [Übersicht über den Reporting-Aktivitäts-Manager](/help/reporting-activity-manager/reporting-activity-overview.md).
+Weitere Informationen zu Reporting Activity Manager, einschließlich der wichtigsten Vorteile und Berechtigungsanforderungen, finden Sie unter [Reporting Activity Manager - Übersicht](/help/reporting-activity-manager/reporting-activity-overview.md).
 
-## Bestimmte Anforderungen abbrechen
+## Abbrechen spezifischer Anfragen
 
-Sie können einzelne Anforderungen abbrechen, die eine große Menge an Berichtskapazität beanspruchen. Wenn Sie eine Anforderung abbrechen, können Sie sie für einen bestimmten Zeitraum weiter einschränken.
+Sie können einzelne Anfragen abbrechen, die eine große Menge an Berichtskapazität beanspruchen. Beim Abbrechen einer Anfrage können Sie diese für einen bestimmten Zeitraum weiter einschränken.
 
-1. Navigieren Sie unter Customer Journey Analytics zu **[!UICONTROL Tools]** > **[!UICONTROL Berichterstattungs-Aktivitäts-Manager]**.
+1. Gehen Sie in Customer Journey Analytics zu **[!UICONTROL Tools]** > **[!UICONTROL Reporting Activity Manager]**.
 
 1. Wählen Sie die Verbindung aus, bei der Sie Berichtsanfragen abbrechen möchten. <!--double-check this step-->
 
-   Weitere Informationen zu den auf dieser Seite verfügbaren Daten finden Sie unter [Berichtsaktivität im Reporting-Aktivitäts-Manager anzeigen](/help/reporting-activity-manager/reporting-activity.md).
+   Weitere Informationen zu den auf dieser Seite verfügbaren Daten finden Sie unter [Berichtsaktivität im Reporting Activity Manager anzeigen](/help/reporting-activity-manager/reporting-activity.md).
 
-1. Wählen Sie die Registerkarte [!UICONTROL **Anforderungen**] und dann eine oder mehrere Anforderungen aus.
+1. Wählen Sie die [!UICONTROL **Anfragen**] aus und wählen Sie dann eine oder mehrere Anfragen aus.
 
    <!-- add screenshot -->
 
-1. Wählen Sie [!UICONTROL **Anforderungen abbrechen**] aus.
+1. Wählen Sie [!UICONTROL **Anfragen abbrechen**] aus.
 
-   Das Dialogfeld [!UICONTROL **Abbrechen _x_ der Berichtsanforderungen**] wird angezeigt.
+   Das [!UICONTROL **Abbrechen _x_ Berichtanfragen**] wird angezeigt.
 
-1. Im Feld Abbruchsnachricht wird die Nachricht angezeigt, die Benutzern angezeigt wird, wenn ihre Anforderungen abgebrochen werden. Eine Standardnachricht wird bereitgestellt. Sie können die Standardnachricht aktualisieren, um zusätzliche Details anzugeben.
+1. Das Feld Abbruchsmeldung zeigt die Meldung an, die Benutzern angezeigt wird, wenn ihre Anfragen abgebrochen werden. Es wird eine Standardmeldung bereitgestellt. Sie können die Standardmeldung aktualisieren, um weitere Details anzugeben.
 
-1. (Optional) So beschränken Sie zukünftige Anforderungen für einen bestimmten Zeitraum:
+1. (Optional) So beschränken Sie zukünftige Anfragen für einen bestimmten Zeitraum:
 
-   1. Aktivieren Sie die Option zum [!UICONTROL **Einschränken nachfolgender Anforderungen**].
+   1. Aktivieren Sie die Option [!UICONTROL **Nachfolgende Anfragen einschränken**].
 
-      ![Anfrage &quot;Abbrechen 1&quot;mit der Meldung Einschränken der nachfolgenden ausgewählten Anforderungen und der Meldung &quot;Abbruch&quot;](assets/restrict-subsequent-requests.png).
+      ![Abbruch 1-Anfrage mit ausgewählter Option „Nachfolgende Anfragen einschränken“ und der Abbruchsmeldung.](assets/restrict-subsequent-requests.png)
 
    1. Wählen Sie aus den folgenden Optionen:
 
       | Option | Funktion |
       |---------|----------|
       | [!UICONTROL **Benutzer und Projekt**] | Benutzende, die mit den ausgewählten Anfragen verknüpft sind, werden vorübergehend von der Ausführung von Berichtsanfragen für die ausgewählten Projekte ausgeschlossen. |
-      | [!UICONTROL **Benutzer**] | Benutzende, die mit den ausgewählten Anträgen verknüpft sind, können vorübergehend keine weiteren Reporting-Anfragen stellen. |
+      | [!UICONTROL **Benutzende**] | Benutzende, die mit den ausgewählten Anträgen verknüpft sind, können vorübergehend keine weiteren Reporting-Anfragen stellen. |
       | [!UICONTROL **Projekt**] | Projekte, die mit den ausgewählten Anfragen verknüpft sind, werden vorübergehend von allen Reporting-Anfragen ausgeschlossen. |
-      | [!UICONTROL **Eingeschränkt für**] | Wählen Sie aus, wie lange Anforderungen eingeschränkt sein sollen. Sie können zwischen 1 Minute (Standard), 5 Minuten, 10 Minuten, 15 Minuten oder 30 Minuten wählen. <!-- double-check this --><p>Sie können eine Beschränkung nicht frühzeitig entfernen, nachdem sie festgelegt wurde.</p> |
+      | [!UICONTROL **Beschränkt für**] | Wählen Sie aus, wie lange Anforderungen eingeschränkt werden sollen. Sie können zwischen 1 Minute (Standard), 5 Minuten, 10 Minuten, 15 Minuten oder 30 Minuten wählen. <!-- double-check this --><p>Sie können eine Einschränkung nicht frühzeitig entfernen, nachdem sie festgelegt wurde.</p> |
 
       {style="table-layout:auto"}
 
-1. Wählen Sie [!UICONTROL **Mit Abbruch fortfahren**] aus.
+1. Wählen [!UICONTROL **Mit Abbruch fortfahren**].
 
-   In Analysis Workspace wird eine Benachrichtigung angezeigt, die Benutzer darüber informiert, dass die Anfrage abgebrochen wurde. Weitere Informationen dazu, wie dies in Analysis Workspace angezeigt wird, finden Sie unter [Erlebnis beim Zugriff auf einen abgebrochenen Bericht](#experience-when-users-access-a-cancelled-report).
+   In Analysis Workspace wird eine Benachrichtigung angezeigt, die den Benutzer darüber informiert, dass die Anfrage abgebrochen wurde. Weitere Informationen dazu, wie dies in Analysis Workspace angezeigt wird, finden Sie unter [Erlebnis, wenn Benutzende auf einen abgebrochenen Bericht zugreifen](#experience-when-users-access-a-cancelled-report).
 
-## Abbrechen von Anforderungen durch den Benutzer
+## Anfragen nach Benutzer abbrechen
 
-Sie können alle Anforderungen abbrechen, die mit einem oder mehreren Benutzern verknüpft sind. Beim Abbrechen von Anforderungen, die mit einem Benutzer verknüpft sind, können Sie die Anforderungen dieses Benutzers für einen bestimmten Zeitraum weiter einschränken.
+Sie können alle Anfragen abbrechen, die mit einem oder mehreren Benutzern verknüpft sind. Beim Abbrechen von Anfragen, die einem Benutzer zugeordnet sind, können Sie Anfragen von diesem Benutzer für einen bestimmten Zeitraum weiter einschränken.
 
-1. Navigieren Sie unter Customer Journey Analytics zu **[!UICONTROL Tools]** > **[!UICONTROL Berichterstattungs-Aktivitäts-Manager]**.
+1. Gehen Sie in Customer Journey Analytics zu **[!UICONTROL Tools]** > **[!UICONTROL Reporting Activity Manager]**.
 
 1. Wählen Sie die Verbindung aus, bei der Sie Berichtsanfragen abbrechen möchten. <!--double-check this step-->
 
-   Weitere Informationen zu den auf dieser Seite verfügbaren Daten finden Sie unter [Berichtsaktivität im Reporting-Aktivitäts-Manager anzeigen](/help/reporting-activity-manager/reporting-activity.md).
+   Weitere Informationen zu den auf dieser Seite verfügbaren Daten finden Sie unter [Berichtsaktivität im Reporting Activity Manager anzeigen](/help/reporting-activity-manager/reporting-activity.md).
 
-1. Wählen Sie die Registerkarte [!UICONTROL **Benutzer**] und dann einen oder mehrere Benutzer aus.
+1. Wählen Sie die [!UICONTROL **Benutzer**] und dann einen oder mehrere Benutzer aus.
 
    <!-- add screenshot -->
 
-1. Wählen Sie [!UICONTROL **Anforderungen abbrechen**] aus.
+1. Wählen Sie [!UICONTROL **Anfragen abbrechen**] aus.
 
-   Das Dialogfeld [!UICONTROL **Abbrechen _x_ der Berichtsanforderungen von x Benutzern**] wird angezeigt.
+   Das [!UICONTROL **Abbrechen _x_-Berichtsanfragen von x Benutzern**] wird angezeigt.
 
-1. Im Feld Abbruchsnachricht wird die Nachricht angezeigt, die Benutzern angezeigt wird, wenn ihre Anforderungen abgebrochen werden. Eine Standardnachricht wird bereitgestellt. Sie können die Standardnachricht aktualisieren, um zusätzliche Details anzugeben.
+1. Das Feld Abbruchsmeldung zeigt die Meldung an, die Benutzern angezeigt wird, wenn ihre Anfragen abgebrochen werden. Es wird eine Standardmeldung bereitgestellt. Sie können die Standardmeldung aktualisieren, um weitere Details anzugeben.
 
-1. (Optional) So beschränken Sie zukünftige Anforderungen für einen bestimmten Zeitraum:
+1. (Optional) So beschränken Sie zukünftige Anfragen für einen bestimmten Zeitraum:
 
-   1. Aktivieren Sie die Option zum [!UICONTROL **Einschränken nachfolgender Anforderungen**]
+   1. Aktivieren Sie die Option [!UICONTROL **Nachfolgende Anfragen einschränken**]
 
-      ![Anfrage &quot;Abbrechen 1&quot;mit der ausgewählten Option Folgende Anforderungen durch Benutzer beschränken einschränken.](assets/restrict-subsequent-requests-user.png)
+      ![1 Anfrage abbrechen, die die Option Nachfolgende Anfragen nach ausgewähltem Benutzer einschränken anzeigt.](assets/restrict-subsequent-requests-user.png)
 
    1. Wählen Sie aus den folgenden Optionen:
 
       | Option | Funktion |
       |---------|----------|
-      | [!UICONTROL **Benutzer und Projekt**] | Ausgewählte Benutzende können vorübergehend keine Berichtsanfragen für die verknüpften Projekte stellen. <p>Dies ist die am wenigsten restriktive Option.</p> |
-      | [!UICONTROL **Benutzer**] | Ausgewählte Benutzende können vorübergehend keine Berichtsanfragen stellen. |
+      | [!UICONTROL **Benutzer und Projekt**] | Ausgewählte Benutzende können vorübergehend keine Berichtsanfragen für die verknüpften Projekte stellen. <p>Dies ist die am wenigsten einschränkende Option.</p> |
+      | [!UICONTROL **Benutzende**] | Ausgewählte Benutzende können vorübergehend keine Berichtsanfragen stellen. |
       | [!UICONTROL **Projekt**] | Projekte, die mit den ausgewählten Benutzenden verbunden sind, werden von allen Berichtsanfragen ausgeschlossen, die von anderen Benutzenden gestellt werden. |
-      | [!UICONTROL **Eingeschränkt für**] | Wählen Sie aus, wie lange Anforderungen eingeschränkt sein sollen. Sie können zwischen 1 Minute (Standard), 5 Minuten, 10 Minuten, 15 Minuten oder 30 Minuten wählen. <!--double-check this--> <p>Sie können eine Beschränkung nicht frühzeitig entfernen, nachdem sie festgelegt wurde.</p> |
+      | [!UICONTROL **Beschränkt für**] | Wählen Sie aus, wie lange Anforderungen eingeschränkt werden sollen. Sie können zwischen 1 Minute (Standard), 5 Minuten, 10 Minuten, 15 Minuten oder 30 Minuten wählen. <!--double-check this--> <p>Sie können eine Einschränkung nicht frühzeitig entfernen, nachdem sie festgelegt wurde.</p> |
 
       {style="table-layout:auto"}
 
-1. Wählen Sie [!UICONTROL **Mit Abbruch fortfahren**] aus.
+1. Wählen [!UICONTROL **Mit Abbruch fortfahren**].
 
-   In Analysis Workspace wird eine Benachrichtigung angezeigt, die Benutzer darüber informiert, dass die Anfrage abgebrochen wurde. Weitere Informationen dazu, wie dies in Analysis Workspace angezeigt wird, finden Sie unter [Erlebnis beim Zugriff auf einen abgebrochenen Bericht](#experience-when-users-access-a-cancelled-report).
+   In Analysis Workspace wird eine Benachrichtigung angezeigt, die den Benutzer darüber informiert, dass die Anfrage abgebrochen wurde. Weitere Informationen dazu, wie dies in Analysis Workspace angezeigt wird, finden Sie unter [Erlebnis, wenn Benutzende auf einen abgebrochenen Bericht zugreifen](#experience-when-users-access-a-cancelled-report).
 
-## Anforderungen nach Projekt abbrechen
+## Anfragen nach Projekt abbrechen
 
-Sie können alle Anforderungen abbrechen, die mit einem oder mehreren Projekten verknüpft sind. Beim Abbrechen von Anforderungen, die mit einem Projekt verknüpft sind, können Sie die mit diesem Projekt verknüpften Anforderungen für einen bestimmten Zeitraum weiter einschränken.
+Sie können alle Anfragen abbrechen, die mit einem oder mehreren Projekten verknüpft sind. Beim Abbrechen von mit einem Projekt verknüpften Anfragen können Sie die mit diesem Projekt verknüpften Anfragen für einen bestimmten Zeitraum weiter einschränken.
 
-1. Navigieren Sie unter Customer Journey Analytics zu **[!UICONTROL Tools]** > **[!UICONTROL Berichterstattungs-Aktivitäts-Manager]**.
+1. Gehen Sie in Customer Journey Analytics zu **[!UICONTROL Tools]** > **[!UICONTROL Reporting Activity Manager]**.
 
 1. Wählen Sie die Verbindung aus, bei der Sie Berichtsanfragen abbrechen möchten. <!--double-check this step-->
 
-   Weitere Informationen zu den auf dieser Seite verfügbaren Daten finden Sie unter [Berichtsaktivität im Reporting-Aktivitäts-Manager anzeigen](/help/reporting-activity-manager/reporting-activity.md).
+   Weitere Informationen zu den auf dieser Seite verfügbaren Daten finden Sie unter [Berichtsaktivität im Reporting Activity Manager anzeigen](/help/reporting-activity-manager/reporting-activity.md).
 
-1. Wählen Sie die Registerkarte [!UICONTROL **Projekte**] und dann ein oder mehrere Projekte aus.
+1. Wählen Sie die [!UICONTROL **Projekte**] und wählen Sie dann ein oder mehrere Projekte aus.
 
    <!-- add screenshot -->
 
-1. Wählen Sie [!UICONTROL **Anforderungen abbrechen**] aus.
+1. Wählen Sie [!UICONTROL **Anfragen abbrechen**] aus.
 
-   Das Dialogfeld [!UICONTROL **Abbrechen _x_ für Berichtsanforderungen von x Projekten**] wird angezeigt.
+   Das [!UICONTROL **Abbrechen _x_-Berichtsanfragen von x Projekten**] wird angezeigt.
 
-1. Im Feld Abbruchsnachricht wird die Nachricht angezeigt, die Benutzern angezeigt wird, wenn ihre Anforderungen abgebrochen werden. Eine Standardnachricht wird bereitgestellt. Sie können die Standardnachricht aktualisieren, um zusätzliche Details anzugeben.
+1. Das Feld Abbruchsmeldung zeigt die Meldung an, die Benutzern angezeigt wird, wenn ihre Anfragen abgebrochen werden. Es wird eine Standardmeldung bereitgestellt. Sie können die Standardmeldung aktualisieren, um weitere Details anzugeben.
 
-1. (Optional) So beschränken Sie zukünftige Anforderungen für einen bestimmten Zeitraum:
+1. (Optional) So beschränken Sie zukünftige Anfragen für einen bestimmten Zeitraum:
 
-   1. Aktivieren Sie die Option zum [!UICONTROL **Einschränken nachfolgender Anforderungen**].
+   1. Aktivieren Sie die Option [!UICONTROL **Nachfolgende Anfragen einschränken**].
 
-      ![Anfrage &quot;Abbrechen 1&quot;mit der Meldung &quot;Einschränken nachfolgender Anforderungen nach Projekt&quot;](assets/restrict-subsequent-requests-project.png)
+      ![Abbruch einer Anfrage mit der Option „Nachfolgende Anfragen nach Projekt einschränken“](assets/restrict-subsequent-requests-project.png)
 
    1. Wählen Sie aus den folgenden Optionen:
 
       | Option | Funktion |
       |---------|----------|
-      | [!UICONTROL **Benutzer und Projekt**] | Ausgewählte Projekte werden vorübergehend von allen Berichtsanfragen der verknüpften Benutzenden ausgeschlossen.<p>Dies ist die am wenigsten restriktive Option.</p> |
-      | [!UICONTROL **Benutzer**] | Benutzende, die mit den ausgewählten Projekten verknüpft sind, können vorübergehend keine weiteren Berichtsanfragen stellen. |
-      | [!UICONTROL **Projekt**] | Ausgewählte Projekte sind vorübergehend von jeglichen Berichtsanfragen eines Benutzers ausgeschlossen. |
-      | [!UICONTROL **Eingeschränkt für**] | Wählen Sie aus, wie lange Anforderungen eingeschränkt sein sollen. Sie können zwischen 1 Minute (Standard), 5 Minuten, 10 Minuten, 15 Minuten oder 30 Minuten wählen. <!--double-check this--> <p>Sie können eine Beschränkung nicht frühzeitig entfernen, nachdem sie festgelegt wurde.</p> |
+      | [!UICONTROL **Benutzer und Projekt**] | Ausgewählte Projekte werden vorübergehend von allen Berichtsanfragen der verknüpften Benutzenden ausgeschlossen.<p>Dies ist die am wenigsten einschränkende Option.</p> |
+      | [!UICONTROL **Benutzende**] | Benutzende, die mit den ausgewählten Projekten verknüpft sind, können vorübergehend keine weiteren Berichtsanfragen stellen. |
+      | [!UICONTROL **Projekt**] | Ausgewählte Projekte werden vorübergehend von Berichtsanfragen anderer Benutzer ausgeschlossen. |
+      | [!UICONTROL **Beschränkt für**] | Wählen Sie aus, wie lange Anforderungen eingeschränkt werden sollen. Sie können zwischen 1 Minute (Standard), 5 Minuten, 10 Minuten, 15 Minuten oder 30 Minuten wählen. <!--double-check this--> <p>Sie können eine Einschränkung nicht frühzeitig entfernen, nachdem sie festgelegt wurde.</p> |
 
       {style="table-layout:auto"}
 
-1. Wählen Sie [!UICONTROL **Mit Abbruch fortfahren**] aus.
+1. Wählen [!UICONTROL **Mit Abbruch fortfahren**].
 
-   In Analysis Workspace wird eine Benachrichtigung angezeigt, die Benutzer darüber informiert, dass die Anfrage abgebrochen wurde. Weitere Informationen dazu, wie dies in Analysis Workspace angezeigt wird, finden Sie unter [Erlebnis beim Zugriff auf einen abgebrochenen Bericht](#experience-when-users-access-a-cancelled-report).
+   In Analysis Workspace wird eine Benachrichtigung angezeigt, die den Benutzer darüber informiert, dass die Anfrage abgebrochen wurde. Weitere Informationen dazu, wie dies in Analysis Workspace angezeigt wird, finden Sie unter [Erlebnis, wenn Benutzende auf einen abgebrochenen Bericht zugreifen](#experience-when-users-access-a-cancelled-report).
 
-## Anforderungen durch Anwendung abbrechen
+## Anfragen nach Anwendung abbrechen
 
-Sie können alle Anforderungen abbrechen, die mit einer oder mehreren Anwendungen verknüpft sind. Beim Abbrechen von mit einer Anwendung verknüpften Anforderungen können Sie die mit dieser Anwendung verknüpften Anforderungen für einen bestimmten Zeitraum weiter einschränken.
+Sie können alle Anfragen abbrechen, die mit einer oder mehreren Anwendungen verbunden sind. Beim Abbrechen von mit einer Anwendung verknüpften Anfragen können Sie die mit dieser Anwendung verknüpften Anfragen für einen bestimmten Zeitraum weiter einschränken.
 
-Zu den Anwendungen gehören:
+Die Anwendungen umfassen Folgendes:
 
 * Analysis Workspace-Benutzeroberfläche
 * Geplante Projekte im Workspace
@@ -164,61 +164,61 @@ Zu den Anwendungen gehören:
 * API-Aufrufe von der 2.0-API
 * Warnhinweise
 * Vollständiger Tabellenexport
-* Für alle Links freigeben
+* Für alle freigeben - Links
 * Geführte Analyse
 * Jede andere Anwendung, die die Analytics-Reporting-Engine abfragt
 
 So brechen Sie Anfragen nach Anwendung ab:
 
-1. Navigieren Sie unter Customer Journey Analytics zu **[!UICONTROL Tools]** > **[!UICONTROL Berichterstattungs-Aktivitäts-Manager]**.
+1. Gehen Sie in Customer Journey Analytics zu **[!UICONTROL Tools]** > **[!UICONTROL Reporting Activity Manager]**.
 
 1. Wählen Sie die Verbindung aus, bei der Sie Berichtsanfragen abbrechen möchten. <!--double-check this step-->
 
-   Weitere Informationen zu den auf dieser Seite verfügbaren Daten finden Sie unter [Berichtsaktivität im Reporting-Aktivitäts-Manager anzeigen](/help/reporting-activity-manager/reporting-activity.md).
+   Weitere Informationen zu den auf dieser Seite verfügbaren Daten finden Sie unter [Berichtsaktivität im Reporting Activity Manager anzeigen](/help/reporting-activity-manager/reporting-activity.md).
 
-1. Wählen Sie die Registerkarte [!UICONTROL **Anwendungen**] und dann eine oder mehrere Anwendungen aus.
+1. Wählen Sie die [!UICONTROL **Anwendungen**] und wählen Sie dann eine oder mehrere Anwendungen aus.
 
    <!-- add screenshot -->
 
-1. Wählen Sie [!UICONTROL **Anforderungen abbrechen**] aus.
+1. Wählen Sie [!UICONTROL **Anfragen abbrechen**] aus.
 
-   Das Dialogfeld [!UICONTROL **Abbrechen _x_ für Berichtsanforderungen von x Projekten**] wird angezeigt.
+   Das [!UICONTROL **Abbrechen _x_-Berichtsanfragen von x Projekten**] wird angezeigt.
 
-1. Im Feld Abbruchsnachricht wird die Nachricht angezeigt, die Benutzern angezeigt wird, wenn ihre Anforderungen abgebrochen werden. Eine Standardnachricht wird bereitgestellt. Sie können die Standardnachricht aktualisieren, um zusätzliche Details anzugeben.
+1. Das Feld Abbruchsmeldung zeigt die Meldung an, die Benutzern angezeigt wird, wenn ihre Anfragen abgebrochen werden. Es wird eine Standardmeldung bereitgestellt. Sie können die Standardmeldung aktualisieren, um weitere Details anzugeben.
 
-1. (Optional) So beschränken Sie zukünftige Anforderungen für einen bestimmten Zeitraum:
+1. (Optional) So beschränken Sie zukünftige Anfragen für einen bestimmten Zeitraum:
 
-   1. Aktivieren Sie die Option zum [!UICONTROL **Einschränken nachfolgender Anforderungen**]
+   1. Aktivieren Sie die Option [!UICONTROL **Nachfolgende Anfragen einschränken**]
 
-      ![Anfrage &quot;Abbrechen 1&quot;mit ausgewählter Option &quot;Einschränken nachfolgender Anforderungen nach Anwendung&quot;abbrechen.](assets/restrict-subsequent-requests-application.png)
+      ![Abbruch einer Anfrage, die die ausgewählte Option „Nachfolgende Anfragen nach Anwendung einschränken“ zeigt.](assets/restrict-subsequent-requests-application.png)
 
    1. Wählen Sie aus den folgenden Optionen:
 
       | Option | Funktion |
       |---------|----------|
-      | [!UICONTROL **Benutzer und Projekt**] | Ausgewählte Anwendungen sind vorübergehend auf Berichterstellungsanforderungen der assoziierten Benutzer und Projekte beschränkt.<p>Dies ist die am wenigsten restriktive Option.</p> |
-      | [!UICONTROL **Benutzer**] | Benutzer, die mit den ausgewählten Anwendungen verknüpft sind, können keine Berichterstellungsanfragen stellen. |
-      | [!UICONTROL **Projekt**] | Projekte, die mit den ausgewählten Anwendungen verknüpft sind, sind auf alle Berichterstellungsanforderungen eines Benutzers beschränkt. |
-      | [!UICONTROL **Eingeschränkt für**] | Wählen Sie aus, wie lange Anforderungen eingeschränkt sein sollen. Sie können zwischen 1 Minute (Standard), 5 Minuten, 10 Minuten, 15 Minuten oder 30 Minuten wählen. <!--double-check this--> <p>Sie können eine Beschränkung nicht frühzeitig entfernen, nachdem sie festgelegt wurde.</p> |
+      | [!UICONTROL **Benutzer und Projekt**] | Ausgewählte Programme werden vorübergehend von Berichtsanfragen der zugehörigen Benutzer und Projekte ausgeschlossen.<p>Dies ist die am wenigsten einschränkende Option.</p> |
+      | [!UICONTROL **Benutzende**] | Benutzerinnen und Benutzer, die mit den ausgewählten Programmen verknüpft sind, dürfen keine Berichtsanfragen stellen. |
+      | [!UICONTROL **Projekt**] | Projekte, die mit den ausgewählten Programmen verknüpft sind, sind von allen Berichtsanfragen eines Benutzers ausgeschlossen. |
+      | [!UICONTROL **Beschränkt für**] | Wählen Sie aus, wie lange Anforderungen eingeschränkt werden sollen. Sie können zwischen 1 Minute (Standard), 5 Minuten, 10 Minuten, 15 Minuten oder 30 Minuten wählen. <!--double-check this--> <p>Sie können eine Einschränkung nicht frühzeitig entfernen, nachdem sie festgelegt wurde.</p> |
 
       {style="table-layout:auto"}
 
-1. Wählen Sie [!UICONTROL **Mit Abbruch fortfahren**] aus.
+1. Wählen [!UICONTROL **Mit Abbruch fortfahren**].
 
-   In der Anwendung wird eine Benachrichtigung angezeigt (z. B. in Analysis Workspace), in der Benutzer darüber informiert werden, dass die Anfrage abgebrochen wurde. Weitere Informationen dazu, wie dies in Analysis Workspace angezeigt wird, finden Sie unter [Erlebnis beim Zugriff auf einen abgebrochenen Bericht](#experience-when-users-access-a-cancelled-report).
+   In der Anwendung (z. B. in Analysis Workspace) wird eine Benachrichtigung angezeigt, die den Benutzer darüber informiert, dass die Anfrage abgebrochen wurde. Weitere Informationen dazu, wie dies in Analysis Workspace angezeigt wird, finden Sie unter [Erlebnis, wenn Benutzende auf einen abgebrochenen Bericht zugreifen](#experience-when-users-access-a-cancelled-report).
 
-## Erlebnis beim Zugriff auf einen abgebrochenen Bericht
+## Erlebnis, wenn Benutzer auf einen abgebrochenen Bericht zugreifen
 
-In Analysis Workspace sehen Benutzer die folgenden Meldungen, wenn sie versuchen, auf einen Bericht oder eine Visualisierung zuzugreifen, der bzw. die von einem Abbruch betroffen ist:
+In Analysis Workspace sehen Benutzerinnen und Benutzer die folgenden Meldungen, wenn sie versuchen, auf einen Bericht oder eine Visualisierung zuzugreifen, der bzw. die von einem Abbruch betroffen ist:
 
-### Nachricht im Projekt
+### Nachricht zum Projekt
 
-Wenn Benutzer versuchen, auf ein Projekt zuzugreifen, das von einem Abbruch betroffen ist, wird ihnen eine Meldung angezeigt, dass der Bericht vorübergehend eingeschränkt ist:
+Wenn ein(e) Benutzende(r) versucht, auf ein Projekt zuzugreifen, das von einem Abbruch betroffen ist, wird eine Meldung angezeigt, die ihn/sie darüber informiert, dass der Bericht vorübergehend eingeschränkt ist:
 
-![Nachricht über den Abbruch des Projekts](assets/workspace-canceled-report.png)
+![Nachricht zum Projektabbruch](assets/workspace-canceled-report.png)
 
-### Meldung bei der Visualisierung
+### Nachricht zur Visualisierung
 
-Wenn Benutzer versuchen, auf eine Visualisierung zuzugreifen, die von einem Abbruch betroffen ist, wird ihnen eine Meldung angezeigt, dass die Datenverarbeitung für den Bericht vorübergehend eingeschränkt ist:
+Wenn ein(e) Benutzende(r) versucht, auf eine Visualisierung zuzugreifen, die von einem Abbruch betroffen ist, wird eine Meldung angezeigt, die ihn/sie darüber informiert, dass die Datenverarbeitung für den Bericht vorübergehend eingeschränkt ist:
 
-![Meldung über den Abbruch einer Visualisierung](assets/workspace-cancelled-visualization.png)
+![Nachricht zum Abbruch der Visualisierung](assets/workspace-cancelled-visualization.png)

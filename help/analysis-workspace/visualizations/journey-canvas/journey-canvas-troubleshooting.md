@@ -1,70 +1,71 @@
 ---
-description: Beispiele beim Konfigurieren einer Journey-Arbeitsflächenvisualisierung
-title: Beispiele für Journey-Arbeitsfläche
+description: Beispiele beim Konfigurieren einer Journey-Arbeitsflächen-Visualisierung
+title: Journey Canvas-Beispiele
 feature: Visualizations
 role: User
-source-git-commit: 820251833eae9fed1574a0010f726b0ba6e12cd1
+exl-id: f0ac3752-9244-4d9e-807b-e6471e6aa55b
+source-git-commit: daa07b603caa613ca49b61c2e8e461d558459f57
 workflow-type: tm+mt
 source-wordcount: '1287'
 ht-degree: 0%
 
 ---
 
-# Fehlerbehebung bei Journey Canvas
+# Fehlerbehebung für die Journey-Arbeitsfläche
 
-Mit der Journey-Arbeitsflächenvisualisierung können Sie tief greifende Einblicke in die Journey erhalten, die Sie Ihren Benutzern und Kunden zur Verfügung stellen.
+Die Journey-Arbeitsflächen-Visualisierung ermöglicht es Ihnen, die Journey zu analysieren und detaillierte Einblicke zu erhalten, die Sie Ihren Benutzenden und Kunden bieten.
 
-Weitere Informationen zum Journey-Arbeitsbereich finden Sie unter [Journey-Arbeitsfläche - Übersicht](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md) und [Journey-Arbeitsflächenvisualisierung konfigurieren](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md).
+Weitere Informationen zur Journey-Arbeitsfläche finden Sie unter [Übersicht über die Journey-Arbeitsfläche](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md) und [Konfigurieren einer Journey-Arbeitsfläche](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md).
 
-Die folgenden Informationen helfen Ihnen bei der Fehlerbehebung bei unbeabsichtigten Ergebnissen, die Ihnen möglicherweise angezeigt werden, z. B. Knoten, die später auf der Journey erscheinen und eine höhere Prozentzahl oder Anzahl aufweisen als Knoten, die früher auf der Journey erscheinen.
+Die folgenden Informationen helfen Ihnen bei der Fehlerbehebung bei unbeabsichtigten Ergebnissen, z. B. bei Knoten, die später im Journey erscheinen und einen höheren Prozentsatz oder eine höhere Anzahl aufweisen als Knoten, die früher im Journey enthalten sind.
 
-## Knoten mit einem höheren Prozentsatz oder Wert als vorherige Knoten
+## Knoten mit einem höheren Prozentsatz oder Wert als frühere Knoten
 
-Es ist möglich, in der Journey-Arbeitsfläche für Knoten, die später auf der Journey kommen, eine höhere Prozentzahl oder Anzahl anzuzeigen als Knoten, die früher auf der Journey auftreten.
+Auf der Journey-Arbeitsfläche ist es für Knoten, die später auf der Journey erscheinen, möglich, einen höheren Prozentsatz oder eine höhere Anzahl anzuzeigen als Knoten, die früher auf der Journey erscheinen.
 
-Anders ausgedrückt: Anders als bei Fallout-Visualisierungen, die immer trichter-förmig sind (wobei der Beitrag bei jedem Schritt reduziert wird), können Journey-Canvas-Visualisierungen in späteren Schritten des Journey eine höhere Beteiligung haben als in vorherigen Schritten.
+Anders ausgedrückt: Im Gegensatz zu Fallout-Visualisierungen, die immer trichterförmig sind (wobei die Beteiligung mit jedem Schritt abnimmt), können Journey-Arbeitsflächen-Visualisierungen eine höhere Beteiligung in späteren Journey-Schritten aufweisen als in vorherigen Schritten.
 
-Dies kann in den folgenden Szenarien eintreten:
+Dies kann in den folgenden Szenarien auftreten:
 
-* Bei Verwendung einer anderen primären Metrik als &quot;Personen oder Sitzungen&quot;
+* Wenn Sie eine andere primäre Metrik als Personen oder Sitzungen verwenden
 
-* Wenn mehrere Pfade in einen einzelnen Knoten konvertieren
+* Wenn mehrere Pfade zu einem einzelnen Knoten konvergieren
 
-### Die Journey verwendet eine andere primäre Metrik als Personen oder Sitzung
+### Der Journey verwendet eine andere primäre Metrik als „Personen“ oder „Sitzung“
 
-Da die Journey-Arbeitsfläche es Ihnen ermöglicht, eine beliebige Metrik als primäre Metrik zu verwenden, kann dies dazu führen, dass Knoten, die später im Journey erscheinen, eine höhere Prozentzahl oder eine höhere Anzahl von Knoten anzeigen als Knoten, die früher auf der Journey erscheinen.
+Da Sie auf der Journey-Arbeitsfläche jede beliebige Metrik als primäre Metrik verwenden können, kann dies dazu führen, dass Knoten, die erst später auf der Journey erscheinen, einen höheren Prozentsatz oder eine höhere Anzahl anzeigen als Knoten, die früher auf der Journey erscheinen.
 
 ![Journey mit Knoten mit einem höheren Prozentsatz als der vorherige Knoten](assets/journey-canvas-higher-percentage.png)
 
-Die in den folgenden Szenarien verwendete Journey wird mit den folgenden Einstellungen konfiguriert:
+Die in den folgenden Szenarien verwendete Journey wird mit diesen Einstellungen konfiguriert:
 
 * **[!UICONTROL Person]** wird als Container festgelegt
 
 * **[!UICONTROL Ereignis]** wird als primäre Metrik festgelegt
 
-#### Szenario 1: Benutzer A folgt dem Journey-Pfad in der ersten Sitzung. In einer nachfolgenden Sitzung verfügt der Benutzer über ein Ereignis, das nur mit einem späteren Knoten übereinstimmt.
+#### Szenario 1: Benutzer A folgt in der ersten Sitzung dem Journey-Pfad. In einer nachfolgenden Sitzung verfügt der Benutzer über ein Ereignis, das nur einem späteren Knoten entspricht.
 
-Angenommen, Benutzer A besucht die Site und schließt die Journey ab (Knoten 1: &quot;Site besuchen&quot; > Knoten 2: &quot;Produkt A anzeigen&quot; > Knoten 3: &quot;Auschecken&quot;). Da Benutzer A über ein Ereignis verfügte, das jedem Knoten der Journey in der richtigen Reihenfolge entsprach, wird ein Ereignis auf jedem Knoten der Journey gezählt.
+Angenommen, Benutzer A besucht die Site und schließt die Journey ab (Knoten 1: „Site besuchen“ > Knoten 2: „Produkt A anzeigen“ > Knoten 3: „Auschecken„). Da Benutzer A über ein Ereignis verfügt, das mit jedem Knoten der Journey übereinstimmt, wird auf jedem Knoten der Journey ein Ereignis gezählt.
 
-Nehmen wir nun an, dass Benutzer A die Site in einer späteren Sitzung erneut besucht. Da Benutzer A die Journey bereits in einer vorherigen Sitzung durch Befolgen des Journey-Pfads abgeschlossen hat, bedeutet dies, dass jedes Mal, wenn Benutzer A über ein Ereignis verfügt, das mit einem beliebigen Knoten im Journey übereinstimmt - selbst wenn Benutzer A in der aktuellen Sitzung nicht dem Pfad der Journey gefolgt ist - ein Ereignis auf den entsprechenden Knoten im Journey gezählt wird. Wenn beispielsweise Benutzer A auscheckt, wird ein Ereignis auf dem Knoten &quot;Auschecken&quot;gezählt. Dies kann zu einem höheren Prozentsatz und einer höheren Zahl auf dem Knoten &quot;Checkout&quot;als auf dem vorherigen Knoten &quot;Produkt A anzeigen&quot;führen.
+Nehmen wir nun an, dass Benutzer A die Website in einer späteren Sitzung erneut besucht. Da Anwender A den Journey bereits in einer vorherigen Sitzung durch Befolgen des Journey-Pfads abgeschlossen hat, bedeutet dies, dass jedes Mal, wenn Anwender A ein Ereignis hat, das mit einem beliebigen Knoten auf der Journey übereinstimmt - auch wenn Anwender A den Pfad der Journey in der aktuellen Sitzung nicht befolgt hat - ein Ereignis auf dem entsprechenden Knoten auf der Journey gezählt wird. Wenn Benutzer A beispielsweise auscheckt, wird ein Ereignis auf dem Knoten „Auschecken“ gezählt. Dies kann dazu führen, dass der Prozentsatz und die Zahl am Knoten „Auschecken“ höher sind als am vorherigen Knoten „Produkt A anzeigen“.
 
-In diesem Beispiel spielt die Journey-Containereinstellung &quot;Person&quot;eine entscheidende Rolle bei der Bestimmung, dass das Ereignis auf dem dritten Knoten (&quot;Checkout&quot;) in der nachfolgenden Sitzung gezählt wird.
+In diesem Beispiel spielt die Journey-Container-Einstellung „Person“ eine entscheidende Rolle bei der Bestimmung, dass das Ereignis auf dem dritten Knoten („Check Out„) in der nachfolgenden Sitzung gezählt wird.
 
-Wenn die Behältereinstellung auf &quot;Sitzung&quot;gesetzt worden wäre, wäre das Ereignis, das nur auf dem dritten Knoten im nachfolgenden Besuch stattfand, nicht in der Journey gezählt worden, da die auf der Journey angezeigten Statistiken auf eine einzelne definierte Sitzung für eine bestimmte Person beschränkt wären. Weitere Informationen zur Containereinstellung finden Sie unter [Erstellen einer Journey-Arbeitsflächenvisualisierung beginnen](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md#begin-building-a-journey-canvas-visualization) im Artikel [Konfigurieren einer Visualisierung der Journey-Arbeitsfläche](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md) .
+Wäre die Container-Einstellung alternativ auf „Sitzung“ festgelegt worden, würde das Ereignis, das nur auf dem dritten Knoten beim nachfolgenden Besuch stattgefunden hat, auf der Journey nicht gezählt werden, da die auf der Journey angezeigten Statistiken auf eine einzige definierte Sitzung für eine bestimmte Person beschränkt wären. Weitere Informationen zur Container-Einstellung finden Sie unter [Erstellen einer Journey-Arbeitsflächen](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md#begin-building-a-journey-canvas-visualization) im Artikel [Konfigurieren einer Journey-Arbeitsflächen-Visualisierung](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md)
 
 <!-- The time allotted for users to move along the path is determined by the container setting. Because "Person" is selected as the container setting in this example, people who followed the journey's path in one session (moving from Node 1 to Node 2 and to Node 3) met the criteria of the journey. On any subsequent visits to the site, any event they have that matches any node on the journey is counted on that node. -->
 
-#### Szenario 2: Benutzer B verlässt die Journey
+#### Szenario 2: Benutzer B fällt aus dem Journey
 
-Angenommen, Benutzer B besucht die Site und schließt die Journey nicht ab (besucht die Site, zeigt Produkt B an und checkt dann aus). In diesem Fall wird für den Startknoten &quot;Journey-Site besuchen&quot;ein Ereignis gezählt, aber für die verbleibenden Knoten wird ein-Ereignis nicht gezählt und Benutzer B verlässt die Journey. Auch wenn Benutzer B ausgecheckt ist, wird ein Ereignis nicht auf dem dritten Knoten (&quot;Checkout&quot;) gezählt, da Benutzer B die Journey nicht vor dem Auschecken durch Anzeigen von Produkt A abgeschlossen hat.
+Angenommen, Benutzer B besucht die Site und schließt die Journey nicht ab (besucht die Site, zeigt Produkt B an und checkt dann aus). In diesem Fall wird ein Ereignis für den Startknoten des Journey-Knotens „Site besuchen“ gezählt, aber ein Ereignis wird nicht für die verbleibenden Knoten gezählt, und Benutzende B fällt aus dem Journey. Obwohl Benutzer B ausgecheckt hat, wird ein Ereignis auf dem dritten Knoten nicht gezählt („Auschecken„), da Benutzer B die Journey nicht abgeschlossen hat, indem er sich Produkt A vor dem Auschecken angesehen hat.
 
-Dies liegt daran, dass Ereignisse nur dann für jeden Knoten gezählt werden, wenn die Benutzer dem Journey &quot;Endlicher Pfad&quot;folgen. Das bedeutet, dass Ereignisse nur gezählt werden, wenn die Person schließlich von einem Knoten zum anderen verschoben wurde, unabhängig von Ereignissen, die zwischen den beiden Knoten auftreten.
+Dies liegt daran, dass Ereignisse für jeden Knoten nur dann gezählt werden, wenn Personen dem „möglichen Pfad“ der Journey folgen. Das bedeutet, dass Ereignisse nur gezählt werden, wenn die Person letztendlich von einem Knoten zum anderen wechselt, unabhängig von Ereignissen, die zwischen den beiden Knoten auftreten.
 
-### Die Journey hat mehrere Pfade, die zu einem einzelnen Knoten konvertieren
+### Der Journey hat mehrere Pfade, die zu einem einzigen Knoten konvergieren
 
-Mit der Journey-Arbeitsfläche können Sie mehrere Startknoten in eine Journey einschließen, was zu mehreren Pfaden führt. Diese Pfade können in einen gemeinsamen Knoten konvertieren, was dazu führt, dass Knoten, die später im Journey auftreten, eine höhere Prozentzahl oder Anzahl aufweisen als Knoten, die früher auf der Journey erscheinen.
+Journey Canvas ermöglicht es Ihnen, mehrere Startknoten auf einer Journey zu speichern, was zu mehreren Pfaden führt. Diese Pfade können zu einem gemeinsamen Knoten zusammenlaufen, was dazu führen kann, dass Knoten, die später im Journey kommen, einen höheren Prozentsatz oder eine höhere Anzahl aufweisen als Knoten, die früher im Journey kommen.
 
-![Eine Journey mit mehreren Pfaden, die in einen einzelnen Knoten konvertieren](assets/journey-canvas-percentage-converge.png)
+![Ein Journey mit mehreren Pfaden, die zu einem einzigen Knoten konvergieren](assets/journey-canvas-percentage-converge.png)
 
 <!--
 
@@ -82,59 +83,59 @@ When a journey contains multiple paths that converge into a single node, the two
 
 ### Journey-Prozentsätze
 
-Während die auf jedem Knoten einer Journey angezeigten Zahlen unabhängig davon, was im Feld **[!UICONTROL Prozentwert]** ausgewählt ist, konstant bleiben, können sich die Prozentsätze selbst ändern.
+Die auf den einzelnen Knoten einer Journey angezeigten Zahlen bleiben unabhängig von der Auswahl im Feld **[!UICONTROL Prozentwert]** konstant.
 
-Die folgenden Abschnitte zeigen, wie sich die Prozentsätze für dieselbe Journey ändern können, je nachdem, welche der folgenden Optionen im Feld **[!UICONTROL Prozentwert]** ausgewählt ist:
+Die folgenden Abschnitte zeigen, wie sich die Prozentsätze für denselben Journey ändern können, je nachdem, welche der folgenden Optionen im Feld **[!UICONTROL Prozentwert]** ausgewählt ist:
 
-+++Prozentsatz des Startknotens
++++Prozent des Startknotens
 
-Die Knoten in diesem Journey enthalten die folgenden Statistiken, wenn das Feld **[!UICONTROL Prozentwert]** auf **[!UICONTROL Prozent des Startknotens]** festgelegt ist:
+Die Knoten in diesem Journey enthalten die folgenden Statistiken, wenn das Feld **[!UICONTROL Prozentwert]** auf „Prozent **[!UICONTROL Startknotens“]** ist:
 
 ![Journey mit Knoten mit einem höheren Prozentsatz als der vorherige Knoten](assets/journey-canvas-higher-percentage.png)
 
 | Knoten | Statistik |
 |---------|----------|
-| 1. Knoten - &quot;Besuchsite&quot; | In dieser Journey gab es 354.147 Ereignisse auf der Site innerhalb des Datumsbereichs der Berichterstellung, wie im Journey-Startknoten &quot;Site besuchen&quot;dargestellt. |
-| Knoten 2: &quot;Produkt A anzeigen&quot; | Von der Gesamtzahl der im Startknoten angezeigten Ereignisse entsprachen 14 % (48.394) der Ereignisse den Kriterien des zweiten Journey, &quot;Produkt A anzeigen&quot;. |
-| 3. Schritt - &quot;Auschecken&quot; | Von der Gesamtzahl der im Startknoten angezeigten Ereignisse entsprachen 32 % (113.782) der Ereignisse den Kriterien des dritten Journey-Knotens, &quot;Checkout&quot;. |
+| Knoten 1: „Site besuchen“ | Auf dieser Journey gab es 354.147 Ereignisse auf der Website innerhalb des Datumsbereichs für die Berichterstellung, wie auf dem Startknoten der Journey „Site besuchen“ dargestellt. |
+| Knoten 2: „Produkt A anzeigen“ | Von der Gesamtzahl der im Startknoten angezeigten Ereignisse entsprachen 14 % (48.394) den Kriterien des zweiten Journey-Knotens „Produkt A anzeigen“. |
+| Knoten 3 - „Auschecken“ | Von der Gesamtzahl der im Startknoten angezeigten Ereignisse entsprachen 32 % (113.782) den Kriterien des dritten Journey-Knotens „Checkout“. |
 
 +++
 
-+++Prozentsatz des vorherigen Knotens
++++Prozent des vorherigen Knotens
 
-Die Knoten in diesem Journey enthalten die folgenden Statistiken, wenn das Feld **[!UICONTROL Prozentwert]** auf **[!UICONTROL Prozent des vorherigen Knotens]** festgelegt ist:
+Die Knoten in diesem Journey enthalten die folgenden Statistiken, wenn das Feld **[!UICONTROL Prozentwert]** auf **[!UICONTROL Prozent des vorherigen Knotens eingestellt ist]**:
 
 ![Journey mit Knoten mit einem höheren Prozentsatz als der vorherige Knoten](assets/journey-canvas-percentage-previous.png)
 
 | Knoten | Statistik |
 |---------|----------|
-| 1. Knoten - &quot;Besuchsite&quot; | In dieser Journey gab es 354.147 Ereignisse auf der Site innerhalb des Datumsbereichs der Berichterstellung, wie im Journey-Startknoten &quot;Site besuchen&quot;dargestellt. |
-| Knoten 2: &quot;Produkt A anzeigen&quot; | Von der Gesamtzahl der im vorherigen Knoten angezeigten Ereignisse entsprachen 14 % (48.394) der Ereignisse den Kriterien des zweiten Journey, &quot;Produkt A anzeigen&quot;. |
-| 3. Schritt - &quot;Auschecken&quot; | Von der Gesamtzahl der im vorherigen Knoten angezeigten Ereignisse entsprachen mehr als 100 % (113.782) der Ereignisse den Kriterien des dritten Journey-Knotens &quot;Checkout&quot;. |
+| Knoten 1: „Site besuchen“ | Auf dieser Journey gab es 354.147 Ereignisse auf der Website innerhalb des Datumsbereichs für die Berichterstellung, wie auf dem Startknoten der Journey „Site besuchen“ dargestellt. |
+| Knoten 2: „Produkt A anzeigen“ | Von der Gesamtzahl der im vorherigen Knoten angezeigten Ereignisse entsprachen 14 % (48.394) den Kriterien des zweiten Journey-Knotens „Produkt A anzeigen“. |
+| Knoten 3 - „Auschecken“ | Von der Gesamtzahl der im vorherigen Knoten angezeigten Ereignisse entsprachen mehr als 100 % (113.782) den Kriterien des dritten Journey-Knotens „Auschecken“. |
 
 +++
 
-+++ % der Gesamtsumme
++++Prozent der Gesamtheit
 
-Die Knoten in diesem Journey enthalten die folgenden Statistiken, wenn das Feld **[!UICONTROL Prozentwert]** auf **[!UICONTROL Prozent des Gesamtwerts]** festgelegt ist:
+Die Knoten in dieser Journey enthalten die folgenden Statistiken, wenn das Feld **[!UICONTROL Prozentwert]** auf **[!UICONTROL Prozent der Gesamtheit]** gesetzt ist:
 
 ![Journey mit Knoten mit einem höheren Prozentsatz als der vorherige Knoten](assets/journey-canvas-percentage-total.png)
 
 | Knoten | Statistik |
 |---------|----------|
-| 1. Knoten - &quot;Besuchsite&quot; | In dieser Journey gab es 354.147 Ereignisse auf der Site innerhalb des Datumsbereichs der Berichterstellung, wie im Journey-Startknoten &quot;Site besuchen&quot;dargestellt. |
-| Knoten 2: &quot;Produkt A anzeigen&quot; | Von der Gesamtzahl der Ereignisse entsprachen weniger als 1 % (48 394) den Kriterien des zweiten Journey-Knotens &quot;Produkt A anzeigen&quot;. |
-| 3. Schritt - &quot;Auschecken&quot; | Von der Gesamtzahl der Ereignisse entsprachen 1% (113.782) den Kriterien des dritten Journey. &quot;Checkout&quot; |
+| Knoten 1: „Site besuchen“ | Auf dieser Journey gab es 354.147 Ereignisse auf der Website innerhalb des Datumsbereichs für die Berichterstellung, wie auf dem Startknoten der Journey „Site besuchen“ dargestellt. |
+| Knoten 2: „Produkt A anzeigen“ | Von der Gesamtzahl der Ereignisse entsprachen weniger als 1 % (48.394) den Kriterien des zweiten Journey-Knotens „Produkt A anzeigen“. |
+| Knoten 3 - „Auschecken“ | Von der Gesamtzahl der Ereignisse entsprachen 1 % (113.782) den Kriterien des dritten Journey-Knotens „Check out“. |
 
 +++
 
 ## Kompatibilität zwischen der Container-Metrik und der primären Metrik
 
-Sie können den Journey-Arbeitsflächencontainer so konfigurieren, dass er &quot;Person&quot;(die die Metrik für Personen verwendet) oder &quot;Sitzung&quot;(die die Metrik für Sitzungen verwendet) lautet.
+Sie können den Journey-Arbeitsflächen-Container als „Person“ (der die Metrik „Personen“ verwendet) oder „Sitzung“ (die die Metrik „Sitzungen“ verwendet) konfigurieren.
 
-Stellen Sie sicher, dass Sie eine primäre Metrik auswählen, die mit der aktuell ausgewählten Container-Metrik kompatibel ist. Die meisten Metriken sind mit den verfügbaren Containermetriken kompatibel. Einige Kombinationen aus Containermetriken und primären Metriken sollten jedoch vermieden werden.
+Stellen Sie sicher, dass Sie eine primäre Metrik auswählen, die mit der aktuell ausgewählten Container-Metrik kompatibel ist. Die meisten Metriken sind mit den verfügbaren Container-Metriken kompatibel. Einige Kombinationen aus Container-Metriken und primären Metriken sollten jedoch vermieden werden.
 
-Beispielsweise kann die Verwendung von Person als Container mit Sitzung als primäre Metrik zu unbeabsichtigten Ergebnissen führen.
+Die Verwendung von Person als Container mit Sitzung als primäre Metrik kann beispielsweise zu unbeabsichtigten Ergebnissen führen.
 
 <!--
 

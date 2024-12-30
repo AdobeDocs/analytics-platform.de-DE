@@ -32,16 +32,16 @@ Mit Einstellungen der [!UICONTROL Teilzeichenfolge]-Komponente können Sie mehre
 
 ## Von links/rechts
 
-Hiermit stellen Sie einen Teil einer Zeichenfolge je nach ihrer Position an den Beginn oder das Ende einer Zeichenfolge. Die Methoden **[!UICONTROL Von links]** und **[!UICONTROL Von rechts]** bieten zwei Dropdownlisten: **[!UICONTROL Von]** (wo die Ausgabe beginnt) und **[!UICONTROL bis]** (wo die Ausgabe endet).
+Hiermit stellen Sie einen Teil einer Zeichenfolge je nach ihrer Position an den Beginn oder das Ende einer Zeichenfolge. **[!UICONTROL Von links]** und **[!UICONTROL Von rechts]** bieten zwei Dropdown-Listen: **[!UICONTROL Von]** (wo die Ausgabe beginnt) und **[!UICONTROL Bis]** (wo die Ausgabe endet).
 
 * **[!UICONTROL Zeichenfolgen-Start]**: Der Beginn der Zeichenfolge.
 * **[!UICONTROL Zeichenfolge-Ende]**: Das Ende der Zeichenfolge.
 * **[!UICONTROL Position]**: Eine statische Anzahl von Zeichen je nach Methode von links oder rechts.
-* **[!UICONTROL Zeichenfolge]**: Ordnen Sie ein Zeichen oder eine Zeichenfolge zu, um den Beginn oder das Ende einer Zeichenfolge anzugeben. Diese Dropdownliste enthält auch zusätzliche Optionen:
+* **[!UICONTROL Zeichenfolge]**: Ordnen Sie ein Zeichen oder eine Zeichenfolge zu, um den Beginn oder das Ende einer Zeichenfolge anzugeben. In dieser Dropdown-Liste werden auch zusätzliche Optionen angezeigt:
    * **[!UICONTROL Übereinstimmung]**: Die zuzuordnende Zeichenfolge. Wenn die Eingabe nicht mit diesem Feld übereinstimmt, werden [keine Wertoptionen](no-value-options.md) angewendet.
    * **[!UICONTROL Index]**: Die **[!UICONTROL Übereinstimmungskriterien]** können in einer Zeichenfolge mehrmals vorkommen. Diese Ganzzahl bestimmt, welche Übereinstimmung je nach Methode die Ausgabe starten oder beenden soll. Beispiel: Ein Index von `1` stellt die erste Übereinstimmung dar. Wenn der Index höher ist als die Anzahl der verfügbaren Übereinstimmungen, werden [keine Wertoptionen](no-value-options.md) angewendet.
    * **[!UICONTROL Zeichenfolge einschließen]**: Ist dieses Kontrollkästchen aktiviert, wird die **[!UICONTROL Übereinstimmungszeichenfolge]** in der Ausgabe einbezogen.
-* **[!UICONTROL Länge]**: Eine Ganzzahl, die angibt, wie hoch die einzubeziehende Zeichenzahl nach der Startposition der Ausgabe sein soll. Nur verfügbar unter der Dropdownliste **[!UICONTROL bis]**.
+* **[!UICONTROL Länge]**: Eine Ganzzahl, die angibt, wie hoch die einzubeziehende Zeichenzahl nach der Startposition der Ausgabe sein soll. Nur in der Dropdown **[!UICONTROL Liste &quot;]**&quot; verfügbar.
 
 ## Trennzeichen
 
@@ -81,7 +81,7 @@ Wenden Sie reguläre Ausdrücke auf eine Dimension an, um den gewünschten Wert 
 * **[!UICONTROL Ausgabeformat]**: Ein optionales Feld, mit dem Sie Text hinzufügen oder die Regex-Untergruppenausgabe neu anordnen können. Wenn dieses Feld leer ist, ist die Zeichenfolgenausgabe der ausgewertete Regex-Ausdruck.
 * **[!UICONTROL Groß-/Kleinschreibung]**: Ist dieses Kontrollkästchen aktiviert, muss beim regulären Ausdruck die Groß-/Kleinschreibung beachtet werden.
 
-Customer Journey Analytics verwendet eine Untergruppe der Perl-Regex-Syntax. Wenn die Eingabe nicht mit dem regulären Ausdruck übereinstimmt und das **[!UICONTROL Ausgabeformat]** leer ist, werden [keine Wertoptionen](no-value-options.md) angewendet. Die folgenden Ausdrücke werden unterstützt:
+Customer Journey Analytics verwendet eine Teilmenge der Perl-Regex-Syntax. Wenn die Eingabe nicht mit dem regulären Ausdruck übereinstimmt und das **[!UICONTROL Ausgabeformat]** leer ist, werden [keine Wertoptionen](no-value-options.md) angewendet. Die folgenden Ausdrücke werden unterstützt:
 
 | Ausdruck | Beschreibung |
 | --- | --- |

@@ -31,13 +31,13 @@ Gehen Sie dazu folgendermaßen vor:
 
 >[!NOTE]
 >
->Diese Kurzanleitung ist eine vereinfachte Anleitung zur Aufnahme von Streaming-Daten in Adobe Experience Platform und zur Verwendung in Customer Journey Analytics. Es wird dringend empfohlen, die zusätzlichen Artikel zu lesen, auf die verwiesen wird.
+>Diese Kurzanleitung ist eine vereinfachte Anleitung zur Aufnahme von Streaming-Daten in Adobe Experience Platform und deren Verwendung im Customer Journey Analytics. Es wird dringend empfohlen, die zusätzlichen Artikel zu lesen, auf die verwiesen wird.
 
 ## Einrichten eines Schemas und eines Datensatzes
 
-Um Daten in Adobe Experience Platform zu erfassen, müssen Sie zunächst definieren, welche Daten Sie erfassen möchten. Alle in Adobe Experience Platform aufgenommenen Daten müssen einer standardmäßigen, denormalisierten Struktur entsprechen, damit sie von nachgelagerten Funktionen erkannt und genutzt werden können. Das Experience-Datenmodell (XDM) ist das Standard-Framework, das diese Struktur in Form von Schemata bereitstellt.
+Um Daten in Adobe Experience Platform aufzunehmen, müssen Sie zunächst definieren, welche Daten Sie erfassen möchten. Alle in Adobe Experience Platform aufgenommenen Daten müssen einer standardmäßigen, denormalisierten Struktur entsprechen, damit sie von nachgelagerten Funktionen erkannt und genutzt werden können. Das Experience-Datenmodell (XDM) ist das Standard-Framework, das diese Struktur in Form von Schemata bereitstellt.
 
-Nachdem Sie ein Schema definiert haben, verwenden Sie einen oder mehrere Datensätze, um die erfassten Daten zu speichern und zu verwalten. Ein Datensatz ist ein Speicher- und Verwaltungskonstrukt für eine Datenerfassung (normalerweise eine Tabelle), die ein Schema (Spalten) und Felder (Zeilen) enthält.
+Nachdem Sie ein Schema definiert haben, verwenden Sie einen oder mehrere Datensätze, um die erfassten Daten zu speichern und zu verwalten. Ein Datensatz ist ein Konstrukt zur Datenspeicherung und -verwaltung (in der Regel eine Tabelle), die ein Schema (Spalten) und Felder (Zeilen) enthält.
 
 Alle in Adobe Experience Platform aufgenommene Daten müssen einem vordefinierten Schema entsprechen, bevor sie als Datensatz gespeichert werden können.
 
@@ -60,14 +60,14 @@ Gehen Sie folgendermaßen vor, um das Schema einzurichten:
 
       >[!INFO]
       >
-      >    Mit einem Erlebnisereignis-Schema wird das _Verhalten_ eines Profils modelliert (z. B. Name der Szene, Schaltfläche zum Hinzufügen zum Warenkorb). Das Schema „Individuelles Profil“ wird verwendet, um die _Attribute_ eines Profils zu modellieren (z. B. Name, E-Mail, Geschlecht).
+      >    Ein Erlebnisereignis-Schema wird zum Modellieren des _Verhaltens_ eines Profils verwendet (z. B. Szenenname, zum Warenkorb hinzuzufügende Schaltfläche). Das Schema „Individuelles Profil“ wird verwendet, um die _Attribute_ eines Profils zu modellieren (z. B. Name, E-Mail, Geschlecht).
 
    1. Klicken Sie auf **[!UICONTROL Weiter]**.
 
 
 1. Im Schritt [!UICONTROL Name und Überprüfung] des Assistenten [!UICONTROL Schema erstellen]:
 
-   1. Geben Sie einen **[!UICONTROL Anzeigenamen des Schemas]** und (optional) eine **[!UICONTROL Beschreibung]** ein.
+   1. Geben Sie einen **[!UICONTROL Anzeigenamen des Schemas]** für Ihr Schema und (optional) eine **[!UICONTROL Beschreibung]** ein.
 
       ![Benennen des Schemas](./assets/create-pr-schema-wizard-step-2.png)
 
@@ -133,7 +133,7 @@ Weitere Informationen zum Hinzufügen und Entfernen von Feldergruppen und einzel
 
 ### Erstellen eines Datensatzes
 
-Mit Ihrem Schema haben Sie Ihr Datenmodell definiert. Jetzt müssen Sie das Konstrukt definieren, um diese Daten zu speichern und zu verwalten, was über Datensätze erfolgt.
+Mit Ihrem Schema haben Sie Ihr Datenmodell definiert. Jetzt müssen Sie das Konstrukt zum Speichern und Verwalten dieser Daten definieren, was über Datensätze erfolgt.
 
 Gehen Sie folgendermaßen vor, um einen Datensatz einzurichten:
 
@@ -194,7 +194,7 @@ Ihre Quellanwendung streamt Daten, die dem von Ihnen erstellten Schema entsprech
 }
 ```
 
-Um diese Daten in den erstellten Datensatz zu streamen, müssen Sie einen Streaming-Endpunkt definieren, an den diese Daten gesendet werden sollen. Ein Streaming-Endpunkt wird mithilfe eines Quell-Connectors für die HTTP-API erstellt.
+Um diese Daten in den von Ihnen erstellten Datensatz zu streamen, müssen Sie einen Streaming-Endpunkt definieren, an den diese Daten gesendet werden sollen. Ein Streaming-Endpunkt wird mithilfe eines HTTP-API-Quell-Connectors erstellt.
 
 Gehen Sie folgendermaßen vor, um einen Quell-Connector für die HTTP-API zu erstellen:
 
@@ -238,10 +238,10 @@ Gehen Sie folgendermaßen vor, um einen Quell-Connector für die HTTP-API zu ers
 
 Sie können die Streaming-Endpunkt-URL kopieren und sie zum Konfigurieren Ihrer Treueprogramm-Anwendung verwenden, um Daten in den Adobe Experience Platform-Treueprogramm-Datensatz zu streamen.
 
-Eine ausführlichere Anleitung finden Sie unter [Erstellen einer HTTP-API-Streaming-Verbindung mithilfe der Benutzeroberfläche](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/streaming/http.html) .
+In [Erstellen einer HTTP-API-Streaming-Verbindung über die Benutzeroberfläche](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/streaming/http.html) finden Sie ein umfassendes Tutorial, in dem Folgendes erklärt wird:
 
 - Verwendung der Authentifizierung,
-- Zuordnen von Daten, wenn Ihre eingehenden Daten nicht mit Ihrem XDM-Schema kompatibel sind, und
+- Zuordnen von Daten, wenn Ihre eingehenden Daten nicht mit Ihrem XDM-Schema kompatibel sind
 - Erfahren Sie, wie Sie einen Datensatz im Rahmen der Einrichtung des Streaming-Connectors erstellen.
 
 
@@ -352,7 +352,7 @@ Gehen Sie folgendermaßen vor, um ein Projekt zu erstellen:
 
    ![Workspace – Datenansicht auswählen](./assets/cja-projects-3.png).
 
-5. Um Ihren ersten Bericht zu erstellen, ziehen Sie Dimensionen und Metriken per Drag-and-Drop in die [!UICONTROL Freiformtabelle] im [!UICONTROL Bedienfeld] . Ziehen Sie beispielsweise `Program Points Balance` und `Page View` als Metriken sowie `email` als Dimension auf die Tabelle, um einen kurzen Überblick über die Profile zu erhalten, die Ihre Website besucht haben und Mitglieder des Treueprogramms sind, mit dem Treuepunkte gesammelt werden.
+5. Um Ihren ersten Bericht zu erstellen, ziehen Sie per Drag-and-Drop Dimensionen und Metriken auf die [!UICONTROL Freiformtabelle] im [!UICONTROL Panel] . Ziehen Sie beispielsweise `Program Points Balance` und `Page View` als Metriken sowie `email` als Dimension auf die Tabelle, um einen kurzen Überblick über die Profile zu erhalten, die Ihre Website besucht haben und Mitglieder des Treueprogramms sind, mit dem Treuepunkte gesammelt werden.
 
    ![Analysis Workspace – erster Bericht](./assets/cja-projects-5.png)
 

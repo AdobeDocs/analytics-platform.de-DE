@@ -13,7 +13,7 @@ ht-degree: 87%
 
 # Überwachen des Zustands des Datenwörterbuchs
 
-Customer Journey Analytics-Administratoren sind für die Pflege eines gesunden Datenwörterbuchs verantwortlich.
+Customer Journey Analytics-Admins sind dafür verantwortlich, das Datenwörterbuch in einem guten Zustand zu halten.
 
 ## Eigenschaften eines Datenwörterbuchs in gutem Zustand
 
@@ -37,7 +37,7 @@ So identifizieren Sie Probleme mit Ihrem Datenwörterbuch:
 
    Das Fenster „Datenwörterbuch“ wird angezeigt.
 
-   ![Ansicht des Datenwörterbuchadministrators mit dem Wörterbuchzustand](assets/data-dictionary-admin.png)
+   ![Administratoransicht des Datenwörterbuchs mit Zustand des Wörterbuchs](assets/data-dictionary-admin.png)
 
 1. Stellen Sie sicher, dass im Dropdown-Menü die richtige Datenansicht ausgewählt ist.
 

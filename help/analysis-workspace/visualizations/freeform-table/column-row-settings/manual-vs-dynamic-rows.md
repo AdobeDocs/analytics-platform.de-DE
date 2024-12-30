@@ -1,5 +1,5 @@
 ---
-title: Dynamische vs. statische Dimensionselemente
+title: Dynamische und statische Dimensionselemente im Vergleich
 description: Interaktion mit dynamischen und statischen Dimensionselementen in Tabellen
 feature: Visualizations
 exl-id: 7806f535-15c7-40f4-955a-724d9752969d
@@ -11,22 +11,22 @@ ht-degree: 44%
 
 ---
 
-# dynamische und statische Dimensionselemente
+# Dynamische und statische Dimensionselemente
 
-In Freiform-Tabellen können die Zeilen und Spalten verschiedene Komponentenwerte enthalten. Diese Werte können je nach der zu erstellenden Analyse dynamisch (im Zeitverlauf ändern) oder statisch (im Zeitverlauf unverändert) sein.
+In Freiform-Tabellen können die Zeilen und Spalten verschiedene Komponentenwerte enthalten. Diese Werte können dynamisch (Änderung im Zeitverlauf) oder statisch (keine Änderung im Zeitverlauf) sein, je nach der Analyse, die Sie erstellen möchten.
 
 ## Dynamische Dimensionselemente
 
-Dynamische Dimensionselemente ändern sich im Laufe der Zeit und hängen von der Metrik ab, nach der in der Freiformtabelle sortiert wird. Dynamische Dimensionselemente werden bevorzugt, wenn Sie die obersten Elemente für einen bestimmten Zeitraum analysieren möchten.
+Dynamische Dimensionselemente ändern sich im Laufe der Zeit und sind von der Metrik abhängig, nach der in der Freiformtabelle sortiert wird. Dynamische Dimensionselemente werden bevorzugt, wenn Sie die obersten Elemente für einen bestimmten Zeitraum analysieren möchten.
 
 Wenn Sie eine Dimension in eine Freiform-Tabelle ablegen, werden dynamische Zeilen zurückgegeben. Dynamische Zeilen stellen die obersten Elemente dar, die der Dimension für eine bestimmte Metrik und einen bestimmten Zeitraum entsprechen. Sie können eine Dimension auch in Freiform-Tabellenspalten ablegen und die Dimension wird automatisch in die fünf obersten Dimensionselemente erweitert.
 
-Wenn Sie beispielsweise die Dimension &quot;Browsertyp&quot;in die Tabelle ziehen, kehren die obersten Dimensionselemente des Browsertyps (z. B. Microsoft, Apple, Google usw.) dynamisch zu den Tabellenzeilen zurück. Wenn sie in eine Spalte abgelegt wurde, werden die obersten 5 Browsertyp-Dimensionselemente dynamisch zurückgegeben.
+Wenn Sie beispielsweise die Dimension „Browser-Typ“ in die Tabelle ziehen, kehren die oberen Dimensionselemente des Browser-Typs (z. B. Microsoft, Apple, Google usw.) dynamisch zu den Tabellenzeilen zurück. Wenn sie in eine Spalte abgelegt wurde, werden die obersten 5 Browsertyp-Dimensionselemente dynamisch zurückgegeben.
 
-Dynamische Dimensionselemente verfügen über die Zeilenfilteroption ![Filter](/help/assets/icons/Filter.svg) und einen ![Schließen](/help/assets/icons/Close.svg) und haben **nicht** eine Sperre ![LockClosed](/help/assets/icons/LockClosed.svg). <!--do they have the lock icon? --> Wenn Sie neben einem dynamischen Dimensionselement auf ![Schließen](/help/assets/icons/Close.svg) klicken, wird automatisch ein Filter angewendet. Weitere Informationen zum Anwenden von Filtern auf Tabellen finden Sie unter [Tabellen filtern und sortieren](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md).
+Dynamische Dimensionselemente verfügen über die Zeilenfilteroption ![Filter](/help/assets/icons/Filter.svg) und ein ![Schließen](/help/assets/icons/Close.svg) und **nicht** eine Sperre ![LockClosed](/help/assets/icons/LockClosed.svg). <!--do they have the lock icon? --> Wenn Sie neben ![ dynamischen Dimensionselement ](/help/assets/icons/Close.svg)Schließen“ klicken, wird automatisch ein Filter angewendet. Weitere Informationen zum Anwenden von Filtern auf Tabellen finden Sie unter [Tabellen filtern und sortieren](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md).
 
 
-![Eine Freiformtabelle, die das Filtersymbol hervorhebt.](assets/dynamic-items.png)
+![Eine Freiformtabelle mit hervorgehobenem Filtersymbol.](assets/dynamic-items.png)
 
 ## Statische Dimensionselemente
 
@@ -36,21 +36,21 @@ Jedes Mal, wenn Sie bestimmte Komponentenwerte (Dimension, Metrik, Filter, Datum
 
 Wenn Sie beispielsweise über bestimmte Browser-Typ-Elemente wie Microsoft und Apple ziehen, werden diese beiden Elemente immer in die Tabelle gezogen.
 
-Statische Dimensionselemente können auch erstellt werden, wenn Sie im Kontextmenü für ausgewählte Zeilen die Option **[!UICONTROL Nur ausgewählte Zeilen anzeigen]** auswählen.
+Statische Dimensionselemente können auch erstellt werden, wenn Sie **[!UICONTROL Nur ausgewählte Zeilen anzeigen]** aus dem Kontextmenü für ausgewählte Zeilen auswählen.
 
-Statische Dimensionselemente verfügen **nicht** über die Zeilenfilteroption. Stattdessen sind für jedes Element ein ![LockClosed](/help/assets/icons/LockClosed.svg) und ein ![Close](/help/assets/icons/Close.svg) vorhanden. Wählen Sie ![Schließen](/help/assets/icons/Close.svg) aus, um dieses Dimensionselement aus der Tabelle zu entfernen.
+Statische Dimensionselemente verfügen **nicht** über die Zeilenfilteroption. Stattdessen sind ![LockClosed](/help/assets/icons/LockClosed.svg) und ![Close](/help/assets/icons/Close.svg) für jedes Element vorhanden. Wählen Sie ![Schließen](/help/assets/icons/Close.svg) aus, um dieses Dimensionselement aus der Tabelle zu entfernen.
 
-![Eine Freiformtabelle, die den Browsertyp und die Microsoft-Zeile mit einem Schlosssymbol anzeigt: Dieses Dimensionselement ist statisch und ändert sich mit der Zeit nicht.](assets/static-items.png)
+![Eine Freiformtabelle, die den Browser-Typ und die Microsoft-Zeile mit einem Sperrsymbol anzeigt Hinweis: Dieses Dimensionselement ist statisch und ändert sich nicht mit der Zeit.](assets/static-items.png)
 
 ## Gemischte Dimensionselemente
 
-Dimensionselemente aus verschiedenen Dimensionen können derselben Tabelle hinzugefügt werden. In diesen Fällen lautet die Kopfzeile der Zeile &quot;**[!UICONTROL Gemischte Dimensionen]**&quot;. Diese Dimensionselemente sind statisch. Beispielsweise das Hinzufügen bestimmter Dimensionselemente aus der Dimension &quot;Browsergruppe&quot;und anderer Dimensionselemente aus der Dimension &quot;Browsername&quot;.
+Dimensionselemente aus verschiedenen Dimensionen können derselben Tabelle hinzugefügt werden. Die Zeilenüberschrift lautet **[!UICONTROL Gemischte Dimensionen]** in diesen Fällen. Diese Dimensionselemente sind statisch. Beispielsweise das Hinzufügen bestimmter Dimensionselemente aus der Dimension „Browser-Gruppe“ und anderer Dimensionselemente aus der Dimension „Browser-Name“.
 
-![Eine Freiformtabelle, die die Spalte &quot;Gemischte Dimensionen&quot;hervorhebt.](assets/mixed-dimensions.png)
+![Eine Freiformtabelle, in der die Spalte mit den gemischten Dimensionen hervorgehoben ist.](assets/mixed-dimensions.png)
 
 ## Freiform-Gesamtzeilen
 
 Dynamische und statische Zeilen verhalten sich in der Freiform-Gesamtzeile unterschiedlich. Standardmäßig:
 
-* Dynamische Zeilen werden serverseitig summiert und deduplizieren Metriken wie Sitzungen oder Personen.
+* Dynamische Zeilen werden Server-seitig zusammengefasst und Metriken wie Sitzungen oder Personen dedupliziert.
 * Statische Zeilen werden Client-seitig summiert und deduplizieren **keine** Metriken. Um die Gesamtzeile Server-seitig zu berechnen, ändern Sie die Zeileneinstellung auf **Gesamtsumme anzeigen**. [Weitere Infos](/help/analysis-workspace/visualizations/freeform-table/workspace-totals.md)

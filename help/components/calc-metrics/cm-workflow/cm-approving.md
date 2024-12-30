@@ -12,17 +12,17 @@ ht-degree: 22%
 
 # Berechnete Metriken genehmigen
 
-Im Manager für berechnete Metriken ](cm-manager.md) können Sie Filter genehmigen und deren Genehmigung aufheben. [ Berechnete Metriken können nur von Administratoren genehmigt werden.
+Im [Manager für berechnete Metriken](cm-manager.md) können Sie Filter genehmigen und die Genehmigung aufheben. Nur Administratoren können berechnete Metriken genehmigen.
 
-So genehmigen Sie berechnete Metriken:
+So validieren Sie berechnete Metriken:
 
-1. Wählen Sie im Manager für [berechnete Metriken](cm-approving.md) eine oder mehrere der berechneten Metriken aus, die Sie genehmigen möchten.
-1. Wählen Sie in der Aktionsleiste ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) **[!UICONTROL Approve]** aus. Die genehmigten berechneten Metriken werden mit ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) angegeben.
+1. Wählen [ im Manager für ](cm-approving.md) Metriken mindestens eine der berechneten Metriken aus, die Sie genehmigen möchten.
+1. Wählen Sie in der Aktionsleiste ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) **[!UICONTROL Genehmigen]** aus. Die genehmigten berechneten Metriken werden mit &quot;![&quot; ](/help/assets/icons/CheckmarkCircle.svg)
 
-So deaktivieren Sie berechnete Metriken:
+So heben Sie die Genehmigung für berechnete Metriken auf:
 
-1. Wählen Sie im [Filter-Manager](cm-approving.md) eine oder mehrere der berechneten Metriken aus, deren Genehmigung Sie aufheben möchten.
-1. Wählen Sie in der Aktionsleiste ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) **[!UICONTROL Unapprove]** aus.
+1. Wählen Sie [Filtermanager](cm-approving.md) eine oder mehrere der berechneten Metriken aus, deren Genehmigung Sie aufheben möchten.
+1. Wählen Sie in der Aktionsleiste ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) **[!UICONTROL Nicht genehmigen]** aus.
 
 
-Sie können Ihre Liste berechneter Metriken nach genehmigten berechneten Metriken filtern. Wählen Sie **[!UICONTROL Sonstige Filter]** aus dem Bereich ![Filter](/help/assets/icons/Filter.svg) **[!UICONTROL Filter]** und wählen Sie **[!UICONTROL Genehmigt]** aus. Weitere Informationen finden Sie unter [Filtern der Liste berechneter Metriken](/help/components/calc-metrics/cm-workflow/cm-filter.md) .
+Sie können Ihre Liste berechneter Metriken nach genehmigten berechneten Metriken filtern. Wählen Sie **[!UICONTROL Sonstige Filter]** im Bedienfeld ![Filter](/help/assets/icons/Filter.svg) **[!UICONTROL Filter]** aus und wählen Sie **[!UICONTROL Genehmigt]**. Weitere Informationen [ Sie unter „Filtern ](/help/components/calc-metrics/cm-workflow/cm-filter.md) Liste berechneter Metriken“.

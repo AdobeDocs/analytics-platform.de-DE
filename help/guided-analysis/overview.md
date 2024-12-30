@@ -6,7 +6,7 @@ exl-id: 1ac8157f-87e8-4d98-a2ca-f6beb68d9d6b
 feature: Guided Analysis
 role: User
 source-git-commit: 1e7d61f05a8351a1bd9e4d289c9d31906676f909
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1806'
 ht-degree: 100%
 

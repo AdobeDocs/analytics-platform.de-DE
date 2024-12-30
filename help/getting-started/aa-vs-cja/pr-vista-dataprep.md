@@ -7,7 +7,7 @@ role: User
 source-git-commit: 664576605b8be098a751609536e388c304c65513
 workflow-type: tm+mt
 source-wordcount: '545'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ Die [Datenvorbereitung](https://experienceleague.adobe.com/docs/experience-platf
 
 Daten, die erfasst und in Adobe Analytics gespeichert werden, können durch Verarbeitungsregeln oder VISTA-Regeln oder beide umgewandelt werden. Report Suites, die dann über den Analytics-Quell-Connector an Platform weitergeleitet werden, können jedoch mithilfe der Datenvorbereitung erneut umgewandelt werden. Dies kann aus verschiedenen Gründen wünschenswert sein:
 
-* **Beheben von Schemaunterschieden zwischen Report Suites zur Verwendung in Customer Journey Analytics und/oder RTCDP**. Beispiel: Eine Report Suite A definiert `eVar1` als &quot;Suchbegriff&quot;und Report Suite B definiert `eVar2` als &quot;Suchbegriff&quot;. Sie können die Datenvorbereitung verwenden, um die beiden unterschiedlichen eVars einem gemeinsamen Feld zuzuordnen, das Daten aus beiden eVars enthält. Dies ermöglicht es, [Report Suites mit verschiedenen Schemata](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/combine-report-suites.html?lang=de) in einer [Customer Journey Analytics-Verbindung](/help/connections/overview.md) oder zur Verwendung in [Real-time Customer Data Platform](https://experienceleague.adobe.com/docs/platform-learn/tutorials/application-services/rtcdp/understanding-the-real-time-customer-data-platform.html?lang=de) zu kombinieren.
+* **Beheben von Schemaunterschieden zwischen Report Suites zur Verwendung in Customer Journey Analytics und/oder RTCDP**. Beispiel: Report Suite A definiert `eVar1` als „Suchbegriff“ und Report Suite B definiert `eVar2` als „Suchbegriff“. Sie können die Datenvorbereitung verwenden, um die beiden unterschiedlichen eVars einem gemeinsamen Feld zuzuordnen, das Daten aus beiden eVars enthält. Dies ermöglicht es, [Report Suites mit verschiedenen Schemata](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/combine-report-suites.html?lang=de) in einer [Customer Journey Analytics-Verbindung](/help/connections/overview.md) oder zur Verwendung in [Real-time Customer Data Platform](https://experienceleague.adobe.com/docs/platform-learn/tutorials/application-services/rtcdp/understanding-the-real-time-customer-data-platform.html?lang=de) zu kombinieren.
 * **Zuordnen von `eVars`-Feldern zu semantisch aussagekräftigen Namen**. `eVars` und `props` aus dem Analytics-Quell-Connector werden Feldern wie _\_experience.analytics.customDimensions.eVars.eVar1_ zugeordnet. Die Datenvorbereitung kann für die Zuordnung von `eVar`- und `prop`-Feldern zu neuen Feldern verwendet werden, die aussagekräftigere Namen für Ihre Benutzenden haben oder Namen entsprechen, die aus anderen Datenquellen stammen. (Dies lässt sich auch auf andere Weise erreichen, z. B. durch Umbenennen der Felder in einer [Customer Journey Analytics-Datenansicht](/help/data-views/create-dataview.md).)
 * **Allgemeines Transformieren von Daten**. Die Datenvorbereitung verfügt über Hunderte von Zuordnungsfunktionen, mit denen neue Felder basierend auf den Daten, die über den Analytics-Quell-Connector eingehen, berechnet werden können. Sie können durch Trennzeichen getrennte Felder in separate Felder aufteilen. Sie können Felder kombinieren. Sie können Zeichenfolgen bearbeiten. Sie können Informationen basierend auf regulären Ausdrücken aus einem Feld extrahieren und vieles mehr.
 

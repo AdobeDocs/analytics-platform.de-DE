@@ -28,15 +28,15 @@ ht-degree: 81%
 
 [!UICONTROL Persistenz] ist die Fähigkeit, dass ein bestimmter Dimensionswert sich über das Ereignis hinaus auf eine Metrik beziehen kann. Dafür wird eine Kombination aus Zuordnung und Gültigkeit verwendet.
 
-![Fenster &quot;Datenansichten&quot;, in dem die Persistenzoptionen hervorgehoben werden](../assets/persistence.png)
+![Datenansichtsfenster mit Hervorhebung der Persistenzoptionen](../assets/persistence.png)
 
 * Mit **Zuordnung** können Sie festlegen, welcher Wert beibehalten wird, wenn mehrere Dimensionselemente gleichzeitig in einer Spalte beibehalten werden können.
 
   >[!NOTE]
   >
-  >Wenn Sie ein [ nicht standardmäßiges Attributionsmodell](/help/data-views/component-settings/attribution.md) für eine Metrik in einem Bericht festgelegt haben, ignoriert das Attributionsmodell die Zuordnung, die Sie für die Dimension für denselben Bericht festgelegt haben.
+  >Wenn Sie für [ Metrik in einem Bericht ein (nicht standardmäßiges](/help/data-views/component-settings/attribution.md)Attributionsmodell) festgelegt haben, ignoriert das Attributionsmodell die Zuordnung, die Sie für die Dimension für denselben Bericht festgelegt haben.
   >
-  >Bei einem [vollständigen Tabellenexport](/help/analysis-workspace/export/export-cloud.md) mit mehreren Dimensionen behält die Attribution jedoch die auf jede Dimension angewendeten Zuordnungsmodelle bei.
+  >Bei einem &quot;[ Tabellenexport“, ](/help/analysis-workspace/export/export-cloud.md) mehrere Dimensionen umfasst, behält Attribution jedoch die auf die einzelnen Dimensionen angewendeten Zuordnungsmodelle bei.
 
 * Mit **Gültigkeit** können Sie festlegen, wie lange ein Dimensionselement über das Ereignis hinaus bestehen bleibt, für das es festgelegt ist.
 
@@ -91,20 +91,20 @@ Details zu den verfügbaren Gültigkeitseinstellungen.
 * **Sitzung**: Läuft nach einer Sitzung ab. Standardgültigkeitsfenster.
 * **Person**: Läuft am Ende des Reporting-Fensters ab.
 * **Benutzerdefinierte Zeit**: Läuft nach einer festgelegten Zeitspanne ab (bis zu 90 Tage). Diese Ablaufoption ist nur für die Zuordnungsmodelle „Original“ und „Zuletzt verwendet“ verfügbar. Bei Verwendung der zeitbasierten Gültigkeitsdauer werden auch Werte vor dem Beginn des Reporting-Fensters (bis zu 90 Tage) berücksichtigt.
-* **Metrik**: Wenn diese Metrik in einem Ereignis angezeigt wird, laufen Sie den beibehaltenen Wert in der Dimension sofort ab. Sie können jede beliebige Metrik als Gültigkeitsende für diese Dimension verwenden. Diese Gültigkeitsoption ist nur für die Zuordnungseinstellungen „Original“ und „Zuletzt verwendet“ verfügbar.
+* **Metrik**: Wenn diese Metrik in einem Ereignis angezeigt wird, läuft der Wert in der Dimension sofort ab. Sie können jede beliebige Metrik als Gültigkeitsende für diese Dimension verwenden. Diese Gültigkeitsoption ist nur für die Zuordnungseinstellungen „Original“ und „Zuletzt verwendet“ verfügbar.
 
 ## [!UICONTROL Binding-Dimension]
 
-Eine Dropdown-Liste, mit der Sie die Persistenz eines Dimensionswerts an Dimensionswerte in einer anderen Dimension binden können. Gültige Optionen sind andere Dimensionen, die in der Datenansicht enthalten sind.
+Eine Dropdown-Liste, mit der Sie die Persistenz eines Dimensionswerts an Dimensionswerte in einer anderen Dimension binden können. Zu den gültigen Optionen gehören andere Dimensionen, die in der Datenansicht enthalten sind.
 
-Beispiele zur effektiven Verwendung von Bindungsdimensionen finden Sie unter [Verwenden von Bindungsdimensionen und -metriken in Customer Journey Analytics](../../use-cases/data-views/binding-dimensions-metrics.md).
+Siehe [Verwenden von Bindungsdimensionen und Metriken im Customer Journey Analytics](../../use-cases/data-views/binding-dimensions-metrics.md) für Beispiele zur effektiven Verwendung von Bindungsdimensionen.
 
 >[!VIDEO](https://video.tv.adobe.com/v/342694/?quality=12)
 
 ## [!UICONTROL Binding-Metrik]
 
-Eine Dropdown-Liste, in der Sie eine Metrik auswählen können, die als bindender Trigger fungiert. Gültige Optionen sind Metriken, die in der Datenansicht enthalten sind.
+Eine Dropdown-Liste, in der Sie eine Metrik auswählen können, die als Binding-Trigger fungiert. Zu den gültigen Optionen gehören Metriken, die in der Datenansicht enthalten sind.
 
 Diese Einstellung wird nur angezeigt, wenn die Binding-Dimension im Objekt-Array niedriger ist als die Komponente. Wenn in einem Ereignis eine Bindungsmetrik vorhanden ist, werden Dimensionswerte von der Ereignisebene auf die untere Schemaebene der Bindungsdimension kopiert.
 
-Weitere Informationen zur effektiven Verwendung von Bindungsmetriken finden Sie im zweiten Beispiel unter [Verwenden von Bindungsdimensionen und Metriken in Customer Journey Analytics](../../use-cases/data-views/binding-dimensions-metrics.md) .
+Siehe das zweite Beispiel unter [Verwenden von Bindungsdimensionen und Metriken im Customer Journey Analytics](../../use-cases/data-views/binding-dimensions-metrics.md) für weitere Informationen zur effektiven Verwendung von Bindungsmetriken.

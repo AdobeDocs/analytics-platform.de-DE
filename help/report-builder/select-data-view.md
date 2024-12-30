@@ -1,6 +1,6 @@
 ---
-title: Auswählen einer Datenansicht in Report Builder
-description: Beschreibt die Auswahl von Datenansichten in Adobe Report Builder
+title: Auswählen einer Datenansicht im Report Builder
+description: Beschreibt, wie Datenansichten in Adobe Report Builder ausgewählt werden
 role: User
 feature: Report Builder
 type: Documentation
@@ -19,40 +19,40 @@ Sie können eine Datenansicht aus der Dropdown-Liste auswählen oder eine Datena
 
 **Datenansicht aus Zelle auswählen**
 
-Durch die Auswahl einer Datenansicht aus einer Zelle wird es einfach, Datenblöcke mit unterschiedlichen Datenansichten zu aktualisieren. Wenn Ihr Unternehmen über mehrere Datenansichten verfügt, die in der Struktur ähnlich oder identisch sind, können Sie Datenblöcke mit einer aus einer Zelle ausgewählten Datenansicht aktualisieren, anstatt völlig neue Berichte mit separaten Datenblöcken zu erstellen. Dies ist auch hilfreich, wenn Sie komplexe Datenblockformate haben, die benutzerdefinierte Komponenten und Layouts enthalten.
+Durch die Auswahl einer Datenansicht aus einer Zelle können Datenblöcke einfach mit verschiedenen Datenansichten aktualisiert werden. Wenn Ihr Unternehmen über mehrere Datenansichten verfügt, die einander ähnlich oder in ihrer Struktur identisch sind, können Sie Datenblöcke mit einer aus einer Zelle ausgewählten Datenansicht aktualisieren, anstatt völlig neue Berichte mit separaten Datenblöcken zu erstellen. Dies ist auch hilfreich, wenn Sie komplizierte Datenblockformate haben, die benutzerdefinierte Komponenten und Layouts enthalten.
 
-Um eine Datenansicht aus einer Zelle auszuwählen, erstellen Sie zunächst einen Datenblock und weisen Sie einer Zelle außerhalb Ihres Datenblocks mehrere Datenansichten zu. Verwenden Sie dann die Datenansicht im Zellenbedienfeld, um Ihre Datenblöcke aus verschiedenen Datenansichten zu aktualisieren.
+Um eine Datenansicht aus einer Zelle auszuwählen, erstellen Sie zunächst einen Datenblock und weisen Sie einer Zelle außerhalb Ihres Datenblocks mehrere Datenansichten zu. Verwenden Sie dann das Bedienfeld Datenansicht aus Zelle , um Ihre Datenblöcke aus verschiedenen Datenansichten zu aktualisieren.
 
 1. Erstellen Sie einen Datenblock.
-Informationen zum Erstellen eines Datenblocks finden Sie unter [Erstellen eines Datenblocks](/help/report-builder/create-a-data-block.md).
+Weitere Informationen zum Erstellen eines Datenblocks finden Sie unter [Erstellen eines Datenblocks](/help/report-builder/create-a-data-block.md).
 
-1. Klicken Sie auf das Zellensymbol ** im Abschnitt *Datenansichten*.
+1. Klicken Sie auf *Zellensymbol* im Abschnitt *Datenansichten* .
 
-   ![Erstellen Sie ein neues Datenblock-Fenster mit hervorgehobenem Zellensymbol.](/help/report-builder/assets/cell-icon.png)
+   ![Fenster „Neuen Datenblock erstellen“ mit hervorgehobenem Zellensymbol.](/help/report-builder/assets/cell-icon.png)
 
 1. Wählen Sie eine Zellenposition aus, um die Datenansichten zur ausgewählten Zelle hinzuzufügen.
 
-   Möglicherweise möchten Sie eine Zelle weit genug weg von Ihren Datenblockzellen auswählen, damit sie sich nicht überschneidet.
+   Es empfiehlt sich, eine Zelle auszuwählen, die weit genug von den Datenblockzellen entfernt ist, damit sie sich nicht überschneiden.
 
 1. Bestätigen Sie die ausgewählte Zellenposition.
 
 1. Wählen Sie die Datenansichten aus, die Sie der Zelle zuweisen möchten.
 
-   ![Report Builder Quick edit panel, der die Datenansichten auswählen anzeigt.](/help/report-builder/assets/select-data-view.png)
+   ![Report Builder-Schnellbearbeitungsbereich mit den ausgewählten Datenansichten.](/help/report-builder/assets/select-data-view.png)
 
 1. Klicken Sie auf **Anwenden**.
 
-   Wenn Sie Ihren Datenblock fertig gestellt haben, können Sie ihn mit einer anderen Datenansicht aus der ausgewählten Zelle aktualisieren.
+   Wenn Sie den Datenblock fertig gestellt haben, können Sie ihn mithilfe einer anderen Datenansicht aus der ausgewählten Zelle aktualisieren.
 
-   **Ändern der Datenansicht aus der Zelle**
+   **Ändern Sie die Datenansicht aus der Zelle**
 
-1. Klicken Sie auf die Zellenposition der Datenansicht, die Sie in Schritt 3 ausgewählt haben.
+1. Klicken Sie auf die Position der Datenansichtszelle, die Sie in Schritt 3 ausgewählt haben.
 
    Es wird ein Dropdown-Menü mit den Datenansichten angezeigt, die Sie zuvor in Schritt 5 ausgewählt haben.
 
-1. Wählen Sie eine andere Datenansicht aus der Dropdownliste aus.
+1. Wählen Sie eine andere Datenansicht aus der Dropdown-Liste aus.
 
-1. (Optional) **Wählen Sie bei Änderung die Option Datenblock(e) aktualisieren** aus.
+1. (Optional) **Wählen Sie Datenblock/Datenblöcke bei** aktualisieren.
 
 1. Klicken Sie auf **Anwenden**.
 

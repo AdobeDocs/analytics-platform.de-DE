@@ -1,5 +1,5 @@
 ---
-description: Einrichten von Benutzern für die Verwendung der mobilen Adobe Analytics-Dashboard-App
+description: Einrichten von Benutzenden für die Verwendung der Adobe Analytics Dashboard Mobile App
 title: Einrichten von Führungskräften für die Verwendung von Dashboards
 feature: Analytics Dashboards
 role: User, Admin
@@ -27,7 +27,7 @@ In einigen Fällen benötigen die ausführenden Benutzer möglicherweise zusätz
 Damit ausführende Benutzer Zugriff auf Ihre Scorecards in der Mobile App haben, müssen folgende Voraussetzungen gegeben sein:
 
 * Auf den Geräten Ihrer Benutzer muss mindestens iOS-Version 10 oder Android-Version 4.4 (KitKat) installiert sein.
-* Sie haben eine gültige Anmeldung bei der Customer Journey Analytics.
+* Sie haben eine gültige Anmeldung bei Customer Journey Analytics.
 * Sie haben die mobilen Scorecards für Ihre Benutzer korrekt erstellt und freigegeben.
 * Ihre Benutzer müssen Zugriff auf die Komponenten haben, die die Scorecard enthält. Sie können bei der Freigabe Ihrer Scorecards eine Option auswählen, um **[!UICONTROL eingebettete Komponenten freizugeben]**.
 
@@ -35,23 +35,23 @@ Damit ausführende Benutzer Zugriff auf Ihre Scorecards in der Mobile App haben,
 
 >[!NOTE]
 >
->Obwohl die mobile App im App Store den Namen Adobe Analytics-Dashboard trägt, kann die App gleichermaßen mit mobilen Customer Journey Analytics-Scorecards verwendet werden.
+>Obwohl die Mobile App im App Store Adobe Analytics Dashboard heißt, kann sie auch mit Customer Journey Analytics-Mobile-Scorecards verwendet werden.
 
 **Für ausführende Benutzer mit iOS-Geräten:**
 
-Klicken Sie auf den folgenden Link (er ist auch unter Customer Journey Analytics unter **[!UICONTROL Tools]** > **[!UICONTROL Analytics-Dashboards (mobile Opp)]** verfügbar) und befolgen Sie die Anweisungen zum Herunterladen, Installieren und Öffnen der App:
+Klicken Sie auf den folgenden Link (er ist auch auf Customer Journey Analytics unter **[!UICONTROL Tools]** > **[!UICONTROL Analytics-Dashboards (Mobile Opp)]** verfügbar) und befolgen Sie die Anweisungen zum Herunterladen, Installieren und Öffnen der App:
 
 `[iOS link](https://apple.co/2zXq0aN)`
 
 **Für ausführende Benutzer mit Android-Geräten:**
 
-Klicken Sie auf den folgenden Link (er ist auch unter Customer Journey Analytics unter **[!UICONTROL Tools]** > **[!UICONTROL Analytics-Dashboards (mobile App)]** verfügbar) und befolgen Sie die Anweisungen zum Herunterladen, Installieren und Öffnen der App:
+Klicken Sie auf den folgenden Link (er ist auch auf Customer Journey Analytics unter **[!UICONTROL Tools]** > **[!UICONTROL Analytics-Dashboards (Mobile App)]** verfügbar) und befolgen Sie die Anweisungen zum Herunterladen, Installieren und Öffnen der App:
 
 `[Android link](https://bit.ly/2LM38Oo)`
 
-Nach dem Herunterladen und Installieren können sich ausführende Benutzer mit ihren vorhandenen Customer Journey Analytics-Anmeldedaten bei der App anmelden. Wir unterstützen sowohl Adobe als auch Enterprise/Federated IDs.
+Nach dem Download und der Installation können sich Führungskräfte mit ihren bestehenden Customer Journey Analytics-Anmeldedaten bei der App anmelden. Wir unterstützen sowohl Adobe- als auch Enterprise/Federated IDs.
 
-![Willkommensbildschirm der Adobe Analytics-Dashboards](assets/welcome.png)
+![Willkommensbildschirm für Adobe Analytics-Dashboards](assets/welcome.png)
 
 ## Ausführenden Benutzern helfen, auf Ihre Scorecard zuzugreifen
 
@@ -74,7 +74,7 @@ Nach dem Herunterladen und Installieren können sich ausführende Benutzer mit i
 
 Erklären Sie dem ausführenden Benutzer, wie die Kacheln in den von Ihnen freigegebenen Scorecards dargestellt werden.
 
-![Kacheln erklären, einschließlich des ausgewählten Datumsbereichs, Segmentfilters und der ausgewählten Metriken und Dimensionen](assets/newexplain.png)
+![Erläuterung der Kacheln, einschließlich Datumsbereich, Segmentfilter sowie ausgewählter Metriken und Dimensionen](assets/newexplain.png)
 
 ![Beispiel-Scorecard](assets/intro_scorecard.png)
 

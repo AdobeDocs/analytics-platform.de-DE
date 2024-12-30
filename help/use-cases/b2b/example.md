@@ -1,6 +1,6 @@
 ---
 title: Beispiel für ein B2B-Projekt
-description: Erfahren Sie, wie Sie B2B-Daten einrichten, konfigurieren und Berichte zu diesen erstellen
+description: Erfahren Sie, wie Sie B2B-Daten einrichten, konfigurieren und Berichte dazu erstellen
 solution: Customer Journey Analytics
 feature: Use Cases
 exl-id: e8ebf5e7-0b80-4d46-8a5f-b7ae832eda4f
@@ -14,24 +14,24 @@ ht-degree: 8%
 
 # Beispiel für ein B2B-Projekt
 
-Dieser Artikel veranschaulicht einen Anwendungsfall, bei dem Sie im Customer Journey Analytics im Kontext einer typischen B2B-Konfiguration Personendaten ordnungsgemäß melden möchten. Eine solche Konfiguration ist Teil des [Real-Time CDP B2B edition](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/intro/rtcdpb2b-intro/b2b-overview).  Im Anwendungsbeispiel wird beschrieben, wie Sie B2B-Daten auf Profilebene (Person) einrichten, konfigurieren und in Berichten auf Customer Journey Analytics-Ebene erstellen.
+Dieser Artikel veranschaulicht einen Anwendungsfall, bei dem Sie im Rahmen einer typischen B2B-Konfiguration ordnungsgemäß Berichte zum Customer Journey Analytics von Personendaten erstellen möchten. Eine solche Konfiguration ist Teil der [Real-Time CDP B2B edition](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/intro/rtcdpb2b-intro/b2b-overview).  In diesem Anwendungsbeispiel wird erläutert, wie B2B-Daten auf Profilebene (Personen) in Customer Journey Analytics eingerichtet und konfiguriert werden und wie Berichte dazu erstellt werden.
 
 ## Verbindung
 
-Definieren Sie Ihre Verbindung, um alle relevanten B2B-Datensätze aus Experience Platform einzuschließen. Datensätze, die Sie Ihrer Verbindung hinzufügen können:
+Definieren Sie Ihre Verbindung, um alle relevanten B2B-Datensätze vom Experience Platform einzuschließen. Datensätze, die Sie Ihrer Verbindung hinzufügen können:
 
 | Datensatz | Schema | Typ des Schemas | Basisklasse | Beschreibung |
 |---|---|---|---|---|
-| B2B-Aktivitätsdatensatz | B2B-Aktivitätsschema | Ereignis | XDM ExperienceEvent | Ein ExperienceEvent ist ein Faktendatensatz, in dem aufgezeichnet wird, was geschehen ist, einschließlich des Zeitpunkts und der Identität der beteiligten Person. ExperienceEvents kann entweder explizit (direkt beobachtbare menschliche Aktionen) oder implizit (ohne direkte menschliche Aktion ausgelöst) sein und ohne Aggregation oder Interpretation aufgezeichnet werden. Erlebnisereignisse sind für die Zeitdomänenanalyse von entscheidender Bedeutung, da sie die Beobachtung und Analyse von Änderungen ermöglichen, die in einem bestimmten Zeitfenster auftreten, und den Vergleich zwischen mehreren Zeitfenstern, um Trends zu verfolgen. |
-| B2B-Personendatensatz | B2B-Personenschema | Profil | Individuelles XDM-Profil | Ein individuelles XDM-Profil bildet eine einzige Darstellung der Attribute und Interessen sowohl identifizierter als auch teilweise identifizierter Personen. Weniger identifizierte Profile dürfen nur anonyme Verhaltenssignale wie Browser-Cookies enthalten, während hoch identifizierte Profile detaillierte persönliche Informationen wie Name, Geburtsdatum, Ort und E-Mail-Adresse enthalten können. Mit zunehmendem Profil wird es zu einem robusten Repository mit personenbezogenen Daten, Identifizierungsinformationen, Kontaktdaten und Kommunikationseinstellungen für eine Person. |
-| B2B-Kontodatensatz | B2B-Kontoschema | Suche | XDM Business Account | Ein XDM-Geschäftskonto ist eine standardmäßige Experience-Datenmodell (XDM)-Klasse, die die erforderlichen Mindesteigenschaften eines Geschäftskontos erfasst. Diese XDM-Klasse kann nur für Kunden mit B2B oder B2P Edition in das Profil aufgenommen werden. |
-| B2B-Angebotsdatensatz | Schema für B2B-Chancen | Suche | XDM Business Opportunity | XDM Business Opportunity ist eine standardmäßige Experience-Datenmodell (XDM)-Klasse, die die erforderlichen Mindesteigenschaften einer Geschäftschance erfasst. Diese XDM-Klasse kann nur für Kunden mit B2B oder B2P Edition in das Profil aufgenommen werden. |
-| B2B-Kampagnensatz | B2B-Kampagnenschema | Suche | XDM Business Campaign | XDM Business Campaign ist eine standardmäßige Experience-Datenmodell (XDM)-Klasse, die die erforderlichen Mindesteigenschaften einer Geschäftskampagne erfasst. Diese XDM-Klasse kann nur für Kunden mit B2B oder B2P Edition in das Profil aufgenommen werden. |
-| Datensatz der B2B-Marketingliste | B2B-Marketinglisten-Schema | Suche | XDM Business Marketing List | XDM Business Marketing List ist eine standardmäßige Experience-Datenmodell (XDM)-Klasse, die die erforderlichen Mindesteigenschaften einer Marketing-Liste erfasst. Marketinglisten ermöglichen es Ihnen, potenzielle Kunden zu priorisieren, die Ihr Produkt am ehesten kaufen. Diese XDM-Klasse kann nur für Kunden mit B2B oder B2P Edition in das Profil aufgenommen werden. |
-| Datensatz zur B2B-Konto-Personenbeziehung | B2B-Konto-Personalisierungsschema | Suche | XDM Business Account Person Relation | XDM Business Account Person Relation ist eine standardmäßige Experience-Datenmodell (XDM)-Klasse, die die erforderlichen Mindesteigenschaften einer Person erfasst, die mit einem Geschäftskonto verknüpft ist. |
-| Datensatz zu B2B-Chancen-Personenbeziehungen | B2B Opportunity Person Relationschema | Suche | XDM Business Opportunity Person Relation | XDM Business Opportunity Person Relation ist eine standardmäßige Experience-Datenmodell (XDM)-Klasse, die die erforderlichen Mindesteigenschaften einer Person erfasst, die mit einer Geschäftschance verknüpft ist. |
-| B2B Marketing List Member Datensatz | B2B Marketing List Member Schema | Suche | XDM-Marketing-Listenmitglieder | XDM Business Marketing List Members ist eine standardmäßige Experience-Datenmodell (XDM)-Klasse, die Mitglieder, Personen oder Kontakte beschreibt, die mit einer Marketingliste verknüpft sind. |
-| B2B Campaign-Mitgliederdatensatz | B2B Campaign-Mitgliederschema | Suche | XDM Business Campaign Members | XDM Business Campaign-Mitglieder sind eine standardmäßige Experience-Datenmodell (XDM)-Klasse, die einen Kontakt oder einen Lead beschreibt, der mit einer Geschäftskampagne verknüpft ist. |
+| B2B-Aktivitätsdatensatz | B2B-Aktivitätsschema | Ereignis | XDM ExperienceEvent | Ein ExperienceEvent ist eine Aufzeichnung von Ereignissen, einschließlich des Zeitpunkts und der Identität der beteiligten Person. ExperienceEvents können entweder explizit (direkt beobachtbare menschliche Aktionen) oder implizit (ohne direkte menschliche Aktion ausgelöst) sein und werden ohne Aggregation oder Interpretation aufgezeichnet. Erlebnisereignisse sind für die Zeitbereichsanalyse von entscheidender Bedeutung, da sie die Beobachtung und Analyse von Änderungen, die in einem bestimmten Zeitfenster auftreten, und den Vergleich zwischen mehreren Zeitfenstern ermöglichen, um Trends zu verfolgen. |
+| B2B-Personendatensatz | B2B-Personen-Schema | Profil | Individuelles XDM-Profil | Ein XDM Individual Profile bildet eine einzige Darstellung der Attribute und Interessen sowohl identifizierter als auch teilweise identifizierter Personen. Weniger identifizierte Profile können nur anonyme Verhaltenssignale enthalten, wie z. B. Browser-Cookies, während stark identifizierte Profile detaillierte persönliche Informationen wie Name, Geburtsdatum, Standort und E-Mail-Adresse enthalten können. Wenn ein Profil wächst, wird es zu einem robusten Speicher für persönliche Informationen, Identifizierungsinformationen, Kontaktdaten und Kommunikationsvoreinstellungen einer Person. |
+| B2B-Kontodatensatz | B2B-Kontoschema | Suche | XDM Business Account | Ein XDM Business-Konto ist eine standardmäßige Experience-Datenmodell (XDM)-Klasse, die die erforderlichen Mindesteigenschaften eines Geschäftskontos erfasst. Diese XDM-Klasse kann dem Profil nur dann hinzugefügt werden, wenn die B2B- oder B2P-Edition verwendet wird. |
+| B2B-Opportunity-Datensatz | B2B-Opportunity-Schema | Suche | XDM Business Opportunity | XDM Business Opportunity ist eine standardmäßige Experience-Datenmodell (XDM)-Klasse, die die erforderlichen Mindesteigenschaften einer Business Opportunity erfasst. Diese XDM-Klasse kann dem Profil nur dann hinzugefügt werden, wenn die B2B- oder B2P-Edition verwendet wird. |
+| B2B-Kampagnen-Datensatz | B2B-Kampagnenschema | Suche | XDM Business Campaign | XDM Business Campaign ist eine Standardklasse des XDM (Experience Data Model), die die erforderlichen Mindesteigenschaften einer Unternehmenskampagne erfasst. Diese XDM-Klasse kann dem Profil nur dann hinzugefügt werden, wenn die B2B- oder B2P-Edition verwendet wird. |
+| B2B-Marketing-Listen-Datensatz | B2B-Marketing-Listenschema | Suche | XDM Business Marketing List | XDM Business Marketing List ist eine standardmäßige Experience-Datenmodell (XDM)-Klasse, die die erforderlichen Mindesteigenschaften einer Marketing-Liste erfasst. Mithilfe von Marketing-Listen können Sie sich auf potenzielle Kunden konzentrieren, die am ehesten Ihr Produkt kaufen würden. Diese XDM-Klasse kann dem Profil nur dann hinzugefügt werden, wenn die B2B- oder B2P-Edition verwendet wird. |
+| B2B-Konto-Personen-Beziehungsdatensatz | B2B-Konto-Personen-Beziehungsschema | Suche | XDM Business Account Person Relation | XDM Business Account Person Relation ist eine Standardklasse des XDM (Experience Data Model), die die erforderlichen Mindesteigenschaften einer Person erfasst, die einem Geschäftskonto zugeordnet ist. |
+| B2B-Opportunity-Personenbeziehungsdatensatz | B2B-Opportunity-Personenbeziehungsschema | Suche | XDM Business Opportunity Person Relation | XDM Business Opportunity Person Relation ist eine Standardklasse des XDM (Experience Data Model), die die erforderlichen Mindesteigenschaften einer Person erfasst, die einer Geschäftschance zugeordnet ist. |
+| B2B-Marketing-Listenmitglied-Datensatz | B2B-Marketing-Listenmitglied-Schema | Suche | XDM Marketing List Members | XDM Business Marketing List Members ist eine Standardklasse des XDM (Experience-Datenmodell), die Mitglieder, Personen oder Kontakte beschreibt, die mit einer Marketing-Liste verknüpft sind. |
+| B2B-Kampagnenmitglied-Datensatz | B2B-Kampagnenmitglied-Schema | Suche | XDM Business Campaign Members | XDM Business Campaign Members ist eine Standardklasse des XDM (Experience Data Model), die einen Kontakt oder Lead beschreibt, der einer Unternehmenskampagne zugeordnet ist. |
 
 <!--
 | B2B Account Dataset | B2B Account Schema | Lookup | XDM Business Account | XDM Business Account is a standard Experience Data Model (XDM) class that captures the minimum required properties of a business account.  |
@@ -41,56 +41,56 @@ Definieren Sie Ihre Verbindung, um alle relevanten B2B-Datensätze aus Experienc
 -->
 
 
-Die Beziehung zwischen den B2B-Lookup-Schemas, dem Profilschema und dem Ereignisschema wird in der B2B-Einrichtung innerhalb von Experience Platform definiert. Siehe Schemas in [Real-time Customer Data Platform B2B edition](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/schemas/b2b) und [Definieren einer n:1-Beziehung zwischen zwei Schemas in Real-time Customer Data Platform B2B edition](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/relationship-b2b).
+Die Beziehung zwischen den B2B-Lookup-Schemas, dem Profilschema und dem Ereignisschema wird bei der B2B-Einrichtung in Experience Platform definiert. Siehe Schemata in [Real-time Customer Data Platform B2B edition](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/schemas/b2b) und [Definieren einer Viele-zu-eins-Beziehung zwischen zwei Schemata in Real-time Customer Data Platform B2B edition](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/relationship-b2b).
 
 
-Um eine ordnungsgemäße Einrichtung einer Verbindung sicherzustellen, die personenbasierte Suchen Ihrer B2B-Daten unterstützt, verwenden Sie die folgende Abbildung für eine Übersicht und führen Sie die folgenden Schritte aus:
+Um eine ordnungsgemäße Einrichtung einer Verbindung sicherzustellen, die personenbasierte Suchen Ihrer B2B-Daten unterstützt, verwenden Sie die folgende Abbildung für einen Überblick und führen Sie die folgenden Schritte aus:
 
-![B2B-Schemas kommentiert](assets/b2b-schemas-annotated.svg)
+![B2B-Schemata mit Anmerkungen](assets/b2b-schemas-annotated.svg)
 
-1. Fügen Sie Ihrer Verbindung Datensätze aus der obigen Tabelle hinzu.
-1. Für jeden Lookup-Datensatz, den Sie Ihrer Verbindung hinzufügen, müssen Sie die Beziehung zu einem Ereignis-Datensatz explizit mit dem Schlüssel **[!UICONTROL 1} und dem Schlüssel**[!UICONTROL &#x200B;Übereinstimmung ]**im Dialogfeld**[!UICONTROL  Datensatz bearbeiten ]**definieren.]**
-1. Aktivieren Sie für jeden Lookup-Datensatz, den Sie für personenbasierte B2B-Suchen transformieren möchten, **[!UICONTROL Datensatz transformieren]** , um sicherzustellen, dass die Daten für personenbasierte Suchen umgewandelt werden. Weitere Informationen finden Sie unter [Transform datasets for B2B lookups](/help/connections/transform-datasets-b2b-lookups.md) .
+1. Fügen Sie Datensätze aus der obigen Tabelle zu Ihrer Verbindung hinzu.
+1. Für jeden Lookup-Datensatz, den Sie Ihrer Verbindung hinzufügen, müssen Sie die Beziehung zu einem Ereignis-Datensatz explizit mit dem **[!UICONTROL Schlüssel]** und dem **[!UICONTROL Übereinstimmungsschlüssel]** im Dialogfeld **[!UICONTROL Datensatz bearbeiten]** definieren.
+1. Aktivieren Sie für jeden Lookup-Datensatz, den Sie für personenbasierte B2B-Suchen umwandeln möchten **[!UICONTROL die Option „Datensatz]**&quot;, um sicherzustellen, dass die Daten für personenbasierte Suchen umgewandelt werden. Weitere [ finden Sie unter „Transformieren von Datensätzen für B2B](/help/connections/transform-datasets-b2b-lookups.md)Suchen“.
 
-   ![Schlüssel - Abgleichschlüssel](assets/key-matchingkey.png)
+   ![Schlüssel - Passender Schlüssel](assets/key-matchingkey.png)
 
-   Die nachstehende Tabelle bietet eine Beispielübersicht der Werte [!UICONTROL Personen-ID], [!UICONTROL Schlüssel] und [!UICONTROL Schlüssel-Übereinstimmung] für jeden Datensatz.
+   Die nachstehende Tabelle bietet eine Beispielübersicht über die [!UICONTROL Personen-ID], [!UICONTROL Schlüssel] und [!UICONTROL Übereinstimmender Schlüssel] Werte für jeden Datensatz.
 
-   | Datensatz | Personen-ID | Schlüssel | Übereinstimmung mit Schlüssel<br/> (im Ereignis-Datensatz) |
+   | Datensatz | Personen-ID | Schlüssel | Übereinstimmender Schlüssel <br/>im Ereignisdatensatz) |
    |---|---|---|---| 
    | B2B-Aktivitätsdatensatz | SourceKey <br/>**personKey.sourceKey** | | |
    | B2B-Personendatensatz | SourceKey <br/>**b2b.personKey.sourceKey** | | |
-   | B2B-Kontodatensatz | | SourceKey <br/>**accountKey.sourceKey**❶ | SourceKey<br>(B2B Person Dataset)<br/>**b2b.accountKey.sourceKey**❶ |
-   | B2B-Angebotsdatensatz | | Source Key <br/>**OpportunityKey.sourceKey**❷ | SourceKey<br/>(B2B Opportunity Relation DataSet)<br/>**unityKey.sourceKey**❷ |
-   | B2B-Kampagnensatz | | SourceKey <br/>**campaignKey.sourceKey**❸ | SourceKey<br/>(B2B Campaign Member Datensatz)<br/>**campaignKey.sourceKey**❸<br/> |
-   | Datensatz der B2B-Marketingliste | | SourceKey <br/>**marketingListKey.sourceKey**❹ | SourceKey<br/>(B2B Marketing List Member Datensatz)<br/>**marketingListKey.sourceKey**❹ |
-   | Datensatz zur B2B-Konto-Personenbeziehung | | SourceKey <br/>**personKey.sourceKey**❺ | Source Key<br/>(Event datasets)<br/>**personKey.sourceKey**❺ |
-   | Datensatz zu B2B-Chancen-Personenbeziehungen | | SourceKey <br/>**personKey.sourceKey** y ❻ | Source Key<br/>(Event datasets)<br/>**personKey.sourceKey**❻ |
-   | B2B Campaign-Mitgliederdatensatz | | SourceKey <br/>**personKey.sourceKey**❼ | Source Key<br/>(Event datasets)<br/>**personKey.sourceKey**❼ |
-   | B2B Marketing List Member Datensatz | | SourceKey <br/>**personKey.sourceKey**❽ | Source Key<br/>(Event datasets)<br/>**personKey.sourceKey**❽ |
+   | B2B-Kontodatensatz | | SourceKey <br/>**accountKey.sourceKey**❶ | SourceKey<br>(B2B-Personen-Datensatz)<br/>**b2b.accountKey.sourceKey**❶ |
+   | B2B-Opportunity-Datensatz | | Source Key <br/>**OpportunityKey.sourceKey**❷ | SourceKey<br/>(B2B Opportunity Relation-Datensatz)<br/>**OpportunityKey.sourceKey**❷ |
+   | B2B-Kampagnen-Datensatz | | SourceKey <br/>**campaignKey.sourceKey**❸ | SourceKey<br/>(B2B-Kampagnenmitglied-Datensatz)<br/>**campaignKey.sourceKey**❸<br/> |
+   | B2B-Marketing-Listen-Datensatz | | SourceKey <br/>**marketingListKey.sourceKey**❹ | SourceKey<br/>(B2B-Marketing-Listenmitglied-Datensatz)<br/>**marketingListKey.sourceKey**❹ |
+   | B2B-Konto-Personen-Beziehungsdatensatz | | SourceKey <br/>**personKey.sourceKey**❺ | Source Key<br/>(Event datasets)<br/>**personKey.sourceKey**❺ |
+   | B2B-Opportunity-Personenbeziehungsdatensatz | | SourceKey <br/>**personKey.sourceKe** y❻ | Source Key<br/>(Event datasets)<br/>**personKey.sourceKey**❻ |
+   | B2B-Kampagnenmitglied-Datensatz | | SourceKey <br/>**personKey.sourceKey**❼ | Source Key<br/>(Event datasets)<br/>**personKey.sourceKey**❼ |
+   | B2B-Marketing-Listenmitglied-Datensatz | | SourceKey <br/>**personKey.sourceKey**❽ | Source Key<br/>(Event datasets)<br/>**personKey.sourceKey**❽ |
 
 {style="table-layout:auto"}
 
-Weitere Informationen zum Konfigurieren von Einstellungen für einen Datensatz finden Sie unter [Hinzufügen und Konfigurieren von Datensätzen](../../connections/create-connection.md) .
+Weitere [ zum Konfigurieren von Einstellungen für einen Datensatz finden ](../../connections/create-connection.md) unter „Hinzufügen und Konfigurieren von Datensätzen“.
 
 
 ## Datenansicht
 
 Um beim Erstellen Ihres Workspace-Projekts Zugriff auf relevante B2B-Dimensionen und -Metriken zu erhalten, müssen Sie Ihre Datenansicht entsprechend definieren.
 
-Sie können beispielsweise die folgenden Komponenten zu Ihrer Datenansicht hinzufügen, um sicherzustellen, dass Sie Berichte auf personenbasierter Ebene auf Ihre B2B-Daten erstellen können. Die Komponentennamen werden manchmal aus Gründen der Klarheit aus den ursprünglichen Schemanamen geändert.
+Sie können beispielsweise die folgenden Komponenten zu Ihrer Datenansicht hinzufügen, um sicherzustellen, dass Sie auf Personenebene Berichte zu Ihren B2B-Daten erstellen können. Die Komponentennamen werden manchmal geändert, um die Klarheit ausgehend von den ursprünglichen Schemanamen zu verbessern.
 
 +++Metriken
 
 | Name der Komponente | Datensatz | Datentyp | Pfad des Schemas |
 |---|---|---|---|
-| Jahresumsatz | B2B-Kontodatensatz | Double | accountOrganization.annualRevenue.amount |
+| Jährliche Kontoeinnahmen | B2B-Kontodatensatz | Double | accountOrganization.annualRevenue.amount |
 | Anzahl der Mitarbeiter | B2B-Kontodatensatz | Ganzzahl | accountOrganization.numberOfEmployees |
-| Tatsächliche Kampagnenkosten | B2B-Kampagnensatz | Double | actualCost.amount |
-| Geplante Kampagnenkosten | B2B-Kampagnensatz | Double | budgetedCost.amount |
-| Erwarteter Opportunity-Umsatz | B2B-Angebotsdatensatz | Double | expectedRevenue.amount |
-| Erwarteter Kampagnenumsatz | B2B-Kampagnensatz | Double | expectedRevenue.amount |
-| Opportunity Amount | B2B-Angebotsdatensatz | Double | opportunityAmount.amount |
+| Tatsächliche Kampagnenkosten | B2B-Kampagnen-Datensatz | Double | actualCost.amount |
+| Budgetierte Kampagnenkosten | B2B-Kampagnen-Datensatz | Double | budgetedCost.amount |
+| Erwarteter Opportunity-Umsatz | B2B-Opportunity-Datensatz | Double | expectedRevenue.amount |
+| Erwarteter Kampagnenumsatz | B2B-Kampagnen-Datensatz | Double | expectedRevenue.amount |
+| Opportunity-Betrag | B2B-Opportunity-Datensatz | Double | opportunityAmount.amount |
 
 +++
 
@@ -99,25 +99,25 @@ Sie können beispielsweise die folgenden Komponenten zu Ihrer Datenansicht hinzu
 | Name der Komponente | Datensatz | Datentyp | Pfad des Schemas |
 |---|---|---|---|
 | Kontoname | B2B-Kontodatensatz | Zeichenfolge | accountName |
-| Kampagnenname | B2B-Kampagnensatz | Zeichenfolge | campaignName |
-| Kanalname | B2B-Kampagnensatz | Zeichenfolge | channelName |
+| Kampagnenname | B2B-Kampagnen-Datensatz | Zeichenfolge | campaignName |
+| Kanalname | B2B-Kampagnen-Datensatz | Zeichenfolge | channelName |
 | Land | B2B-Kontodatensatz | Zeichenfolge | accountBillingAddress.country |
-| Prognostizierter Kategoriename | B2B-Angebotsdatensatz | Zeichenfolge | forecastCategoryName |
+| Name der Vorhersagekategorie | B2B-Opportunity-Datensatz | Zeichenfolge | forecastCategoryName |
 | Branche | B2B-Kontodatensatz | Zeichenfolge | accountOrganization.industry |
 | Last name | B2B-Personendatensatz | Zeichenfolge | person.name.lastName |
-| Name der Marketing-Liste | Datensatz der B2B-Marketingliste | Zeichenfolge | marketingListName |
-| Opportunity Name | B2B-Angebotsdatensatz | Zeichenfolge | OpportunityName |
-| Opportunity Stage | B2B-Angebotsdatensatz | Zeichenfolge | OpportunityStage |
-| Opportunity type | Datensatz vom Typ B2B-Chancen | Zeichenfolge | OpportunityType |
-| Webinar-Sitzungsname | B2B-Kampagnensatz | Zeichenfolge | webinarSessionName |
+| Marketing-Listenname | B2B-Marketing-Listen-Datensatz | Zeichenfolge | marketingListName |
+| Opportunity-Name | B2B-Opportunity-Datensatz | Zeichenfolge | OpportunityName |
+| Opportunity-Phase | B2B-Opportunity-Datensatz | Zeichenfolge | OpportunityStage |
+| Opportunity-Typ | B2B-Opportunity-Typ-Datensatz | Zeichenfolge | OpportunityType |
+| Name der Webinar-Sitzung | B2B-Kampagnen-Datensatz | Zeichenfolge | webinarSessionName |
 
 +++
 
 ## Workspace
 
-Nachdem Ihre Komponenten in der Datenansicht ordnungsgemäß definiert wurden, können Sie jetzt spezifische B2B-Berichte und -Visualisierungen in Ihrem Workspace-Projekt erstellen.
+Nachdem Sie Ihre Komponenten ordnungsgemäß in der Datenansicht definiert haben, können Sie jetzt spezifische B2B-Berichte und Visualisierungen in Ihrem Workspace-Projekt erstellen.
 
-Im Folgenden finden Sie einen Screenshot eines Beispielprojekts, das auf der oben beschriebenen Verbindungs- und Datenansicht basiert. Die Visualisierungsbeschreibungen erklären, welche der Freiformtabellen-Visualisierungen auf den umgewandelten B2B-Suchdaten basieren.
+Im Folgenden finden Sie einen Screenshot eines Beispielprojekts, das auf der oben beschriebenen Verbindung und Datenansicht basiert. Die Visualisierungsbeschreibungen erläutern, welche der Freiformtabellen-Visualisierungen auf den umgewandelten B2B-Lookup-Daten basieren.
 
 ![Beispielprojekt](assets/sample-workspace-project.png)
 

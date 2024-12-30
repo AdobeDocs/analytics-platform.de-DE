@@ -7,7 +7,7 @@ exl-id: 65c7bc26-7160-4bba-b764-5b0fa8686fca
 source-git-commit: 373d0c9989fb692da23efe371c65344093801140
 workflow-type: tm+mt
 source-wordcount: '496'
-ht-degree: 52%
+ht-degree: 100%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 52%
 
 Auf der Landingpage für Customer Journey Analytics finden Sie [!DNL Analysis Workspace] und eine Startseite für Projekt-Manager sowie einen Lernabschnitt, der Ihnen hilft, Customer-Journey-Daten besser zu verwalten.
 
-+++ Sehen Sie sich das Video für eine Einführung an.
++++ Sehen Sie sich ein Video zur Einführung an.
 
 >[!VIDEO](https://video.tv.adobe.com/v/334278/?quality=12)
 
@@ -33,18 +33,18 @@ Die Registarkarte **[!UICONTROL Lernen]** enthält praktische Video-Touren und T
 
 >[!TAB Projekte]
 
-![Einstiegsseite für Projekte](assets/landing-projects.png)
+![Landingpage „Projekte“](assets/landing-projects.png)
 
 >[!TAB Lernen]
 
-![Lern-Landingpage](assets/landing-learning.png)
+![Landingpage „Lernen“](assets/landing-learning.png)
 
 
 >[!ENDTABS]
 
 ## Projekte
 
-[!UICONTROL Projekte] fungieren als Startseite von [!UICONTROL Arbeitsbereich]. Auf der Registerkarte **[!UICONTROL Projekte]** werden der Ordner &quot;Unternehmen&quot;, alle von Ihnen erstellten persönlichen Ordner, Ihre Workspace-Projekte und mobile Scorecards angezeigt. Auf dieser Seite können Sie Ordner, Projekte und mobile Scorecards anzeigen, erstellen und ändern. Weitere Informationen finden Sie unter [Projekte](/help/analysis-workspace/build-workspace-project/freeform-overview.md) .
+[!UICONTROL Projekte] fungieren als Startseite von [!UICONTROL Workspace]. Auf der Registerkarte **[!UICONTROL Projekte]** werden der Firmenordner, alle von Ihnen erstellten persönlichen Ordner, Ihre Workspace-Projekte und mobile Scorecards angezeigt. Auf dieser Seite können Sie Ordner, Projekte und mobile Scorecards anzeigen, erstellen und ändern. Weitere Informationen finden Sie unter [Projekte](/help/analysis-workspace/build-workspace-project/freeform-overview.md).
 
 
 **[!UICONTROL Projekte]** sind benutzerdefinierte Entwürfe, die aus Datenkomponenten, Tabellen und Visualisierungen bestehen, die von Ihnen erstellt oder einer anderen Person für Sie erstellt und freigegeben wurden. [!UICONTROL Projekte] beziehen sich auch auf leere Projekte und leere mobile Scorecards.
@@ -53,7 +53,7 @@ Die Registarkarte **[!UICONTROL Lernen]** enthält praktische Video-Touren und T
 >
 >Einige der folgenden Einstellungen bleiben während der aktuellen und den nachfolgenden Sitzungen bestehen. Hierzu zählen die Registerkarte, die Filter und die Spalten, die ausgewählt wurden, sowie die Sortierrichtung der Spalte. Suchergebnisse sind nicht persistent.
 
-Weitere Informationen finden Sie unter [Projekte](/help/analysis-workspace/build-workspace-project/freeform-overview.md) .
+Weitere Informationen finden Sie unter [Projekte](/help/analysis-workspace/build-workspace-project/freeform-overview.md).
 
 <!--
 
@@ -113,27 +113,27 @@ Die Seite „Lernen“ enthält praktische Video-Touren und Tutorials sowie Link
 
 Auf der Seite „Lernen“ in Customer Journey Analytics erfahren Sie mehr über:
 
-* Anfängliche, mittlere oder erweiterte Funktionen und Anwendungsfälle im Customer Journey Analytics
-* So wechseln Sie nahtloser von Adobe Analytics zu Customer Journey Analytics
+* Funktionen und Anwendungsfälle auf der Ebene für Anfängerinnen bzw. Anfänger, mäßig Fortgeschrittene oder Fortgeschrittene
+* den nahtlosen Übergang von Adobe Analytics zu Customer Journey Analytics
 
 So greifen Sie auf den Lerninhalt zu:
 
-* Wählen Sie unter Customer Journey Analytics [!UICONTROL **Workspace**] aus dem oberen Menü und dann im linken Bereich [!UICONTROL **Lernen**] aus.
+* Wählen Sie unter Customer Journey Analytics die Option [!UICONTROL **Arbeitsbereich**] im oberen Menü und dann im linken Bedienfeld die Option [!UICONTROL **Lernen**] aus.
 
 ### Funktionen
 
-Die Lernseite bietet die folgenden Funktionen
+Das Seite „Lernen“ bietet die folgenden Funktionen:
 
-* **Inhalt filtern:** Verwenden Sie ![Filter](/help/assets/icons/Filter.svg) , um Lerninhalte nach **[!UICONTROL Typ]** (**[!UICONTROL Dokument]**, **[!UICONTROL Video]** und **[!UICONTROL Tours &amp; Tutorials]**) und **[!UICONTROL Erlebnisebene]** (**[!UICONTROL Beginner]**, **[!UICONTROL Intermediate zu filtern.]** oder **[!UICONTROL Erweitert]**).
-* **Fortschritt verfolgen:** Nachdem Sie ein Inhaltselement ausgewählt haben, wird ein ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) **[!UICONTROL Viewed]** -Tag angezeigt. Mit diesem Tag können Sie Ihren Fortschritt durch den Lerninhalt verfolgen. Sie können das Tag ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) **[!UICONTROL Viewed]** auswählen, um es aus einem Inhaltselement zu entfernen.
-* **Zusätzliche Inhalte anzeigen:** Wählen Sie beim Anzeigen eines Videos die Option **[!UICONTROL Mehr erfahren]** aus, um zugehörige Dokumentationsinhalte auf dem Experience League anzuzeigen. Wählen Sie auf der Seite „Lernen“ eine der folgenden Optionen aus, um weitere Inhalte anzuzeigen:
+* **Inhalt filtern:** Verwenden Sie ![Filter](/help/assets/icons/Filter.svg), um Lerninhalte nach **[!UICONTROL Typ]** (**[!UICONTROL Dokument]**, **[!UICONTROL Video]** und **[!UICONTROL Touren und Tutorials]**) und **[!UICONTROL Erfahrungsstufe]** (**[!UICONTROL Anfängerinnen und Anfänger]**, **[!UICONTROL Mäßig Fortgeschrittene]** oder **[!UICONTROL Fortgeschrittene]**) zu filtern.
+* **Fortschritt verfolgen:** Nachdem Sie ein Inhaltselement ausgewählt haben, wird das Tag ![HäkchenMitKreis](/help/assets/icons/CheckmarkCircle.svg) **[!UICONTROL Angesehen]** angezeigt. Mit diesem Tag können Sie Ihren Fortschritt durch den Lerninhalt verfolgen. Sie können das Tag ![HäkchenMitKreis](/help/assets/icons/CheckmarkCircle.svg) **[!UICONTROL Angesehen]** auswählen, um es aus einem Inhaltselement zu entfernen.
+* **Zusätzliche Inhalte anzeigen:** Wählen Sie beim Ansehen eines Videos die Schaltfläche **[!UICONTROL Weitere Informationen]** aus, um zugehörige Dokumentationsinhalte in Experience League anzuzeigen. Wählen Sie auf der Seite „Lernen“ eine der folgenden Optionen aus, um weitere Inhalte anzuzeigen:
    * **[!UICONTROL YouTube besuchen]:** Zeigen Sie die vollständige YouTube-Wiedergabeliste von Analysis Workspace an.
-   * [!UICONTROL **Besuch von Experience League**]: Sehen Sie sich die vollständige Customer Journey Analytics-Dokumentation auf dem Experience League an.
-* **Grundlagen für neue Benutzer:** Die Tour [!UICONTROL Workspace-Grundlagen lernen] wird neuen Benutzern empfohlen. Diese Tour führt Sie direkt zu Workspace und durch die gängigsten Aktionen. Diese Tour kann auch jederzeit in Workspace über die QuickInfo aus der Kopfzeile [Freiformbereich](/help/analysis-workspace/c-panels/freeform-panel.md) oder [Leeres Bedienfeld](/help/analysis-workspace/c-panels/blank-panel.md) neu gestartet werden.
+   * [!UICONTROL **Experience League besuchen:**] Sehen Sie die vollständige Customer Journey Analytics-Dokumentation in Experience League an.
+* **Grundlagen für neue Benutzende:** Neuen Benutzenden wird die Tour [!UICONTROL Verstehen der Grundlagen von Workspace] empfohlen. Diese Tour führt Sie direkt zu Workspace und erläutert die gängigsten Aktionen. Diese Tour kann auch jederzeit in Workspace über die QuickInfo in der Kopfzeile des Bedienfelds [Freiform](/help/analysis-workspace/c-panels/freeform-panel.md) oder des Bedienfelds [Leer](/help/analysis-workspace/c-panels/blank-panel.md) neu gestartet werden.
 
 ## Bevorzugte Landingpage
 
-Sie können Ihre bevorzugte Landingpage festlegen. Weitere Informationen finden Sie unter [Benutzereinstellungen](/help/analysis-workspace/user-preferences.md#general-preferences) .
+Sie können Ihre bevorzugte Landingpage festlegen. Weitere Informationen finden Sie unter [Benutzervoreinstellungen](/help/analysis-workspace/user-preferences.md#general-preferences).
 
 <!--
 ## Landing page FAQ {#landing-faq}

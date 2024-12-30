@@ -1,6 +1,6 @@
 ---
 title: Customer Journey Analytics Exportieren von Datensätzen
-description: Beschreibt, wie Sie mit den Datensätzen exportieren Ihre Daten sichern.
+description: Beschreibt die Verwendung der Exportdatensätze zum Sichern Ihrer Daten.
 solution: Customer Journey Analytics
 feature: Use Cases
 role: Admin
@@ -14,19 +14,19 @@ ht-degree: 6%
 
 # Exportieren von Datensätzen
 
-In diesem Artikel wird beschrieben, wie der [!DNL Customer Journey Analytics Export datasets] verwendet werden kann, um den folgenden [Anwendungsfall für den Datenexport](overview.md) zu implementieren:
+In diesem Artikel wird beschrieben, wie die [!DNL Customer Journey Analytics Export datasets] zur Implementierung des folgenden [Anwendungsfalls für den Datenexport“ verwendet ](overview.md) kann:
 
 - Datensicherung
 
 ## Einführung
 
-Durch den Export von Daten mit [!DNL Experience Platform Export datasets] können Sie Daten aus Ihren Customer Journey Analytics-Datenansichten an ein beliebiges Cloud-Speicher-Ziel exportieren.
+Durch den Export von Daten mit [!DNL Experience Platform Export datasets] können Sie Daten aus Ihren Customer Journey Analytics-Datenansichten in ein beliebiges Cloud-Speicher-Ziel exportieren.
 
 ![BI-Erweiterung](../assets/export-datasets.svg)
 
 ## Weitere Informationen
 
-Sie können Rohdatensätze vom Data Lake in Experience Platform zu Cloud-Speicher-Zielen exportieren. Dieser Export erfolgt in der Experience Platform Destinations-Terminologie, die als Datensatzexport-Ziele bezeichnet wird. Eine Übersicht finden Sie unter [Exportieren von Datensätzen in Cloud-Speicher-Ziele](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/export-datasets) .
+Sie können Rohdatensätze aus dem Data Lake in Experience Platform an Cloud-Speicher-Ziele exportieren. Dieser Export wird in der Terminologie für Experience Platform-Ziele als Datensatzexportziele bezeichnet. Siehe [Exportieren von Datensätzen zu Cloud-Speicher](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/export-datasets) für eine Übersicht.
 
 Die folgenden Cloud-Speicher-Ziele werden unterstützt:
 
@@ -40,66 +40,66 @@ Die folgenden Cloud-Speicher-Ziele werden unterstützt:
 
 ### Experience Platform-Benutzeroberfläche
 
-Sie können den Export Ihrer Datensätze über die Experience Platform-Benutzeroberfläche planen. In diesem Abschnitt werden die erforderlichen Schritte beschrieben.
+Sie können den Export Ihrer Datensätze über die Experience Platform-Benutzeroberfläche exportieren und planen. In diesem Abschnitt werden die beteiligten Schritte beschrieben.
 
 #### Ziel auswählen
 
-Wenn Sie das Cloud-Speicher-Ziel ermittelt haben, an das Sie den Datensatz exportieren möchten, wählen Sie [das Ziel ](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/export-datasets#select-destination) aus. Wenn Sie noch kein Ziel für Ihren bevorzugten Cloud-Speicher konfiguriert haben, müssen Sie [eine neue Zielverbindung erstellen](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/connect-destination).
+Wenn Sie das Cloud-Speicher-Ziel bestimmt haben, an das Sie den Datensatz exportieren möchten, [ Sie das Ziel ](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/export-datasets#select-destination). Wenn Sie noch kein Ziel für Ihren bevorzugten Cloud-Speicher konfiguriert haben, müssen Sie [eine neue Zielverbindung erstellen](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/connect-destination).
 
-Im Zuge der Konfiguration eines Ziels können Sie Folgendes definieren:
+Beim Konfigurieren eines Ziels können Sie Folgendes definieren:
 
 - Dateityp (JSON oder Parquet),
-- ob die resultierende Datei komprimiert werden soll oder nicht und
-- ob eine Manifestdatei enthalten sein soll oder nicht.
+- ob die resultierende Datei komprimiert werden soll oder nicht, und
+- Ob eine Manifestdatei eingeschlossen werden soll oder nicht.
 
 
 #### Datensatz auswählen
 
-Wenn Sie das Ziel ausgewählt haben, müssen Sie im nächsten Schritt **[!UICONTROL Datensätze auswählen]** Ihren Datensatz aus der Liste der Datensätze auswählen. Wenn Sie mehrere geplante Abfragen erstellen und möchten, dass die Datensätze an dasselbe Cloud-Speicher-Ziel gesendet werden, können Sie die entsprechenden Datensätze auswählen. Weitere Informationen finden Sie unter [Auswählen Ihrer Datensätze](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/export-datasets#select-datasets) .
+Wenn Sie das Ziel ausgewählt haben, müssen **[!UICONTROL im nächsten Schritt]** Auswählen von Datensätzen“ Ihren Datensatz aus der Liste der Datensätze auswählen. Wenn Sie mehrere geplante Abfragen erstellt haben und die Datensätze an dasselbe Cloud-Speicher-Ziel senden sollen, können Sie die entsprechenden Datensätze auswählen. Weitere [ finden Sie unter ](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/export-datasets#select-datasets) auswählen .
 
 #### Planen des Datensatzexports
 
-Schließlich möchten Sie den Export Ihres Datensatzes im Rahmen des Schritts **[!UICONTROL Planung]** planen. In diesem Schritt können Sie den Zeitplan definieren und festlegen, ob der Datensatzexport inkrementell sein soll oder nicht. Weitere Informationen finden Sie unter [Planen des Datensatzexports](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/export-datasets#scheduling) .
+Schließlich möchten Sie den Datensatzexport als Teil des Schritts „Planung ****. In diesem Schritt können Sie den Zeitplan definieren und festlegen, ob der Datensatzexport inkrementell erfolgen soll oder nicht. Weitere Informationen [ Sie unter „Planen ](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/export-datasets#scheduling) Datensatzexports“.
 
 
-#### Abgeschlossene Schritte
+#### Letzte Schritte
 
-[Überprüfen Sie Ihre Auswahl](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/export-datasets#review) und starten Sie den Export Ihres Datensatzes in das Cloud-Speicher-Ziel, wenn dies korrekt ist.
+[Überprüfen](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/export-datasets#review) Sie Ihre Auswahl und beginnen Sie, Ihren Datensatz an das Cloud-Speicher-Ziel zu exportieren.
 
-Zunächst müssen Sie [verifizieren](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/export-datasets#verify), dass der Datenexport erfolgreich war. Beim Exportieren von Datensätzen erstellt Experience Platform eine oder mehrere `.json` - oder `.parquet` -Dateien am Speicherort, der in Ihrem Ziel definiert ist. Erwarten Sie, dass neue Dateien entsprechend dem von Ihnen eingerichteten Exportplan an Ihrem Speicherort abgelegt werden. Experience Platform erstellt eine Ordnerstruktur am Speicherort, den Sie als Teil des ausgewählten Ziels angegeben haben, wo die exportierten Dateien abgelegt werden. Für jeden Exportzeitpunkt wird ein neuer Ordner nach folgendem Muster erstellt: `folder-name-you-provided/datasetID/exportTime=YYYYMMDDHHMM`. Der standardmäßige Dateiname wird nach dem Zufallsprinzip generiert, was sicherstellt, dass die Namen von exportierten Dateien eindeutig sind.
+Zunächst müssen Sie [ erfolgreichen ](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/export-datasets#verify) überprüfen. Beim Exportieren von Datensätzen erstellt Experience Platform eine oder mehrere `.json` oder `.parquet` Dateien an dem in Ihrem Ziel definierten Speicherort. Neue Dateien werden voraussichtlich entsprechend dem von Ihnen eingerichteten Exportzeitplan an Ihrem Speicherort abgelegt. Experience Platform erstellt eine Ordnerstruktur an dem Speicherort, den Sie als Teil des ausgewählten Ziels angegeben haben, und legt dort die exportierten Dateien ab. Für jeden Exportzeitpunkt wird ein neuer Ordner erstellt, der dem Muster folgt: `folder-name-you-provided/datasetID/exportTime=YYYYMMDDHHMM`. Der standardmäßige Dateiname wird nach dem Zufallsprinzip generiert, was sicherstellt, dass die Namen von exportierten Dateien eindeutig sind.
 
-### Flussdienst-API
+### Flow Service-API
 
-Alternativ können Sie den Export von Datensätzen mithilfe von APIs exportieren und planen. Die erforderlichen Schritte werden in [Exportieren von Datensätzen mithilfe der Flow Service-API](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/api/export-datasets) dokumentiert.
+Alternativ können Sie den Export von Datensätzen mithilfe von APIs exportieren und planen. Die hierfür erforderlichen Schritte werden in [Exportieren von Datensätzen mithilfe der Flow Service-API](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/api/export-datasets) dokumentiert.
 
 #### Erste Schritte
 
-Um Datensätze zu exportieren, stellen Sie sicher, dass Sie über die [erforderlichen Berechtigungen](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/api/export-datasets#permissions) verfügen. Überprüfen Sie außerdem, ob das Ziel, an das Sie Ihren Datensatz senden möchten, den Export von Datensätzen unterstützt. Anschließend müssen Sie [ die Werte für erforderliche und optionale Kopfzeilen ](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/api/export-datasets#gather-values-headers) erfassen, die Sie in den API-Aufrufen verwenden. Außerdem müssen Sie [die Verbindungsspezifikations- und Flussspezifikations-IDs des Ziels](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/api/export-datasets#gather-connection-spec-flow-spec) identifizieren, an das Sie Datensätze exportieren möchten.
+Um Datensätze zu exportieren, stellen Sie sicher, dass Sie über die [erforderlichen Berechtigungen](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/api/export-datasets#permissions) verfügen. Überprüfen Sie außerdem, ob das Ziel, an das Sie Ihren Datensatz senden möchten, das Exportieren von Datensätzen unterstützt. Anschließend müssen Sie [ Werte für erforderliche und optionale Kopfzeilen ](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/api/export-datasets#gather-values-headers), die Sie in den API-Aufrufen verwenden. Außerdem müssen Sie [die Verbindungsspezifikations- und Flussspezifikations-IDs des Ziels identifizieren](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/api/export-datasets#gather-connection-spec-flow-spec) für das Sie Datensätze exportieren möchten.
 
 #### Abrufen zulässiger Datensätze
 
-Sie können [ eine Liste der für den Export infrage kommenden Datensätze abrufen](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/api/export-datasets#retrieve-list-of-available-datasets) und mithilfe der API [`GET /connectionSpecs/{id}/configs`](https://developer.adobe.com/experience-platform-apis/references/destinations/#tag/Configurations/operation/getDatasets) überprüfen, ob Ihr Datensatz Teil dieser Liste ist.
+Sie können [eine Liste der geeigneten Datensätze abrufen](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/api/export-datasets#retrieve-list-of-available-datasets) um sie zu exportieren und mithilfe der [`GET /connectionSpecs/{id}/configs`](https://developer.adobe.com/experience-platform-apis/references/destinations/#tag/Configurations/operation/getDatasets)-API zu überprüfen, ob Ihr Datensatz Teil dieser Liste ist.
 
 
-#### Erstellen der Quellverbindung
+#### Quellverbindung erstellen
 
-Als Nächstes müssen Sie [eine Quellverbindung ](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/api/export-datasets#create-source-connection) für den Datensatz mit seiner eindeutigen ID erstellen, die Sie an das Cloud-Speicher-Ziel exportieren möchten. Sie verwenden die [`POST /sourceConnections`](https://developer.adobe.com/experience-platform-apis/references/destinations/#tag/Source-connections/operation/postSourceConnection) -API.
+Als Nächstes müssen Sie [Quellverbindung erstellen](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/api/export-datasets#create-source-connection) für den Datensatz unter Verwendung seiner eindeutigen ID, die Sie an das Cloud-Speicher-Ziel exportieren möchten. Sie verwenden die [`POST /sourceConnections`](https://developer.adobe.com/experience-platform-apis/references/destinations/#tag/Source-connections/operation/postSourceConnection)-API.
 
-#### Authentifizierung am Ziel (Basisverbindung erstellen)
+#### Beim Ziel authentifizieren (Basisverbindung erstellen)
 
-Sie müssen jetzt [eine Basisverbindung erstellen](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/api/export-datasets#create-base-connection), um die Anmeldeinformationen mithilfe der API [`POST /targetConection`](https://developer.adobe.com/experience-platform-apis/references/destinations/#tag/Target-connections/operation/postTargetConnection) für Ihr Cloud-Speicher-Ziel zu authentifizieren und sicher zu speichern.
+Sie müssen jetzt [eine Basisverbindung erstellen](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/api/export-datasets#create-base-connection) um die Anmeldeinformationen mithilfe der [`POST /targetConection`](https://developer.adobe.com/experience-platform-apis/references/destinations/#tag/Target-connections/operation/postTargetConnection)-API zu authentifizieren und sicher in Ihrem Cloud-Speicher-Ziel zu speichern.
 
 
 #### Exportparameter angeben
 
-Als Nächstes müssen Sie [eine zusätzliche Zielverbindung erstellen, in der die Exportparameter](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/api/export-datasets#create-target-connection) für Ihren Datensatz gespeichert werden, indem Sie die API [`POST /targetConection`](https://developer.adobe.com/experience-platform-apis/references/destinations/#tag/Target-connections/operation/postTargetConnection) erneut verwenden. Zu diesen Exportparametern gehören Speicherort, Dateiformat, Komprimierung und mehr.
+Als Nächstes müssen Sie [eine zusätzliche Zielverbindung erstellen, die die Exportparameter speichert](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/api/export-datasets#create-target-connection) für Ihren Datensatz, indem Sie erneut die [`POST /targetConection`](https://developer.adobe.com/experience-platform-apis/references/destinations/#tag/Target-connections/operation/postTargetConnection)-API verwenden. Zu diesen Exportparametern gehören Speicherort, Dateiformat, Komprimierung und mehr.
 
-#### Einrichten des Datenflusses
+#### Einrichten eines Datenflusses
 
-Richten Sie abschließend den Datenfluss ](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/api/export-datasets#create-dataflow) ein, um sicherzustellen, dass Ihr Datensatz mit der API [`POST /flows`](https://developer.adobe.com/experience-platform-apis/references/destinations/#tag/Dataflows/operation/postFlow) an Ihr Cloud-Speicher-Ziel exportiert wird. [ In diesem Schritt können Sie den Zeitplan für den Export mithilfe des Parameters `scheduleParams` definieren.
+Schließlich richten Sie [den Datenfluss) ein](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/api/export-datasets#create-dataflow) um sicherzustellen, dass Ihr Datensatz mithilfe der [`POST /flows`](https://developer.adobe.com/experience-platform-apis/references/destinations/#tag/Dataflows/operation/postFlow)-API in Ihr Cloud-Speicher-Ziel exportiert wird. In diesem Schritt können Sie den Zeitplan für den Export mithilfe des `scheduleParams` definieren.
 
-#### Validieren des Datenflusses
+#### Validieren eines Datenflusses
 
-Um [die erfolgreichen Ausführungen Ihres Datenflusses](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/api/export-datasets#get-dataflow-runs) zu überprüfen, verwenden Sie die API [`GET /runs`](https://developer.adobe.com/experience-platform-apis/references/destinations/#tag/Dataflow-runs/operation/getFlowRuns) und geben Sie die Datenfluss-ID als Abfrageparameter an. Diese Datenfluss-ID ist eine Kennung, die beim Einrichten des Datenflusses zurückgegeben wird.
+Um [erfolgreiche Ausführungen Ihres Datenflusses zu überprüfen](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/api/export-datasets#get-dataflow-runs) verwenden Sie die [`GET /runs`](https://developer.adobe.com/experience-platform-apis/references/destinations/#tag/Dataflow-runs/operation/getFlowRuns)-API und geben Sie die Datenfluss-ID als Abfrageparameter an. Diese Datenfluss-ID ist eine Kennung, die beim Einrichten des Datenflusses zurückgegeben wird.
 
-[Überprüfen](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/export-datasets#verify) Sie einen erfolgreichen Datenexport. Beim Exportieren von Datensätzen erstellt Experience Platform eine oder mehrere `.json` - oder `.parquet` -Dateien am Speicherort, der in Ihrem Ziel definiert ist. Erwarten Sie, dass neue Dateien entsprechend dem von Ihnen eingerichteten Exportplan an Ihrem Speicherort abgelegt werden. Experience Platform erstellt eine Ordnerstruktur am Speicherort, den Sie als Teil des ausgewählten Ziels angegeben haben, wo die exportierten Dateien abgelegt werden. Für jeden Exportzeitpunkt wird ein neuer Ordner nach folgendem Muster erstellt: `folder-name-you-provided/datasetID/exportTime=YYYYMMDDHHMM`. Der standardmäßige Dateiname wird nach dem Zufallsprinzip generiert, was sicherstellt, dass die Namen von exportierten Dateien eindeutig sind.
+[Überprüfen](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/export-datasets#verify) einen erfolgreichen Datenexport. Beim Exportieren von Datensätzen erstellt Experience Platform eine oder mehrere `.json` oder `.parquet` Dateien an dem in Ihrem Ziel definierten Speicherort. Neue Dateien werden voraussichtlich entsprechend dem von Ihnen eingerichteten Exportzeitplan an Ihrem Speicherort abgelegt. Experience Platform erstellt eine Ordnerstruktur an dem Speicherort, den Sie als Teil des ausgewählten Ziels angegeben haben, und legt dort die exportierten Dateien ab. Für jeden Exportzeitpunkt wird ein neuer Ordner erstellt, der dem Muster folgt: `folder-name-you-provided/datasetID/exportTime=YYYYMMDDHHMM`. Der standardmäßige Dateiname wird nach dem Zufallsprinzip generiert, was sicherstellt, dass die Namen von exportierten Dateien eindeutig sind.

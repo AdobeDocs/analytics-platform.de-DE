@@ -1,5 +1,5 @@
 ---
-description: Sie können einen Workflow einrichten, der die Genehmigung von Filtern für verschiedene Anwendungsebenen, für bestimmte Abteilungen oder Gruppen umfasst und mit Berichtserstellungsrichtlinien übereinstimmt.
+description: Sie können einen Workflow einrichten, der die Genehmigung von Filtern für verschiedene Anwendungsebenen, für bestimmte Abteilungen oder Gruppen sowie die Einhaltung von Berichtsrichtlinien umfasst.
 title: Genehmigen von Filtern
 feature: Filters
 exl-id: 3892ef54-3f24-4c7a-868f-f566efaea400
@@ -13,17 +13,17 @@ ht-degree: 3%
 
 # Genehmigen von Filtern
 
-Im [Filter-Manager](manage-filters.md) können Sie Filter genehmigen und deren Genehmigung aufheben. Nur Administratoren können Filter genehmigen.
+Im [Filter-Manager](manage-filters.md) können Sie Filter genehmigen und die Genehmigung aufheben. Nur Administratoren können Filter genehmigen.
 
 So validieren Sie Filter:
 
-1. Wählen Sie im [Filter-Manager](manage-filters.md) einen oder mehrere Filter aus, die Sie genehmigen möchten.
-1. Wählen Sie in der Aktionsleiste ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) **[!UICONTROL Approve]** aus. Die genehmigten Filter werden mit ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) angegeben.
+1. Wählen [ im ](manage-filters.md)-Manager einen oder mehrere der Filter aus, die Sie genehmigen möchten.
+1. Wählen Sie in der Aktionsleiste ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) **[!UICONTROL Genehmigen]** aus. Die genehmigten Filter sind durch &quot;![&quot; gekennzeichnet](/help/assets/icons/CheckmarkCircle.svg)
 
-So deaktivieren Sie Filter:
+So heben Sie die Genehmigung von Filtern auf:
 
-1. Wählen Sie im [Filter-Manager](manage-filters.md) mindestens einen Filter aus, dessen Genehmigung Sie aufheben möchten.
-1. Wählen Sie in der Aktionsleiste ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) **[!UICONTROL Unapprove]** aus.
+1. Wählen Sie [Filter-Manager](manage-filters.md) einen oder mehrere Filter aus, deren Genehmigung Sie aufheben möchten.
+1. Wählen Sie in der Aktionsleiste ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) **[!UICONTROL Nicht genehmigen]** aus.
 
 
-Sie können Ihre Filterliste nach genehmigten Filtern filtern. Wählen Sie **[!UICONTROL Sonstige Filter]** aus dem Bereich ![Filter](/help/assets/icons/Filter.svg) **[!UICONTROL Filter]** und wählen Sie **[!UICONTROL Genehmigt]** aus. Weitere Informationen finden Sie unter [Filtern der Filterliste](/help/components/filters/filters-filter.md) .
+Sie können Ihre Filterliste nach genehmigten Filtern filtern. Wählen Sie **[!UICONTROL Sonstige Filter]** im Bedienfeld ![Filter](/help/assets/icons/Filter.svg) **[!UICONTROL Filter]** aus und wählen Sie **[!UICONTROL Genehmigt]**. Weitere Informationen [ Sie unter „Filterliste ](/help/components/filters/filters-filter.md) Filtern“.

@@ -1,6 +1,6 @@
 ---
-title: historische Daten von Google Analytics erfassen
-description: Erläutert die Verwendung von Adobe Customer Journey Analytics zur Aufnahme Ihrer Google Analytics-Daten in Adobe Experience Platform.
+title: Aufnehmen von historischen Daten aus Google Analytics
+description: Hier wird erläutert, wie Sie mit Adobe Customer Journey Analytics Ihre Google Analytics-Daten in Adobe Experience Platform aufnehmen können.
 exl-id: 314378c5-b1d7-4c74-a241-786198fa0218
 solution: Customer Journey Analytics
 feature: Use Cases
@@ -8,12 +8,12 @@ role: Admin
 source-git-commit: 90d1c51c11f0ab4d7d61b8e115efa8257a985446
 workflow-type: tm+mt
 source-wordcount: '618'
-ht-degree: 88%
+ht-degree: 89%
 
 ---
 
 
-# historische Daten von Google Analytics erfassen
+# Aufnehmen von historischen Daten aus Google Analytics
 
 Auf dieser Seite wird beschrieben, wie Sie Ihre historischen Google Analytics-Daten in Adobe Experience Platform als Datensatz erfassen und so in einer Datenansicht in Customer Journey Analytics auf diesen Datensatz verweisen können. Sie können die Schritte auf dieser Seite mit [der Konfiguration einer Google Analytics-Implementierung](streaming.md) kombinieren, wodurch ein sich wiederholender Datensatz generiert wird. Kombinieren Sie diesen historischen Datensatz mit dem Datensatz Ihrer aktuellen Implementierung, um in Customer Journey Analytics eine lückenlose Datenansicht mit sowohl aktuellen als auch aufgestockten Daten zu erhalten.
 
@@ -78,11 +78,11 @@ Navigieren Sie in der Google Cloud Platform zu **Exportieren > In GCS exportiere
 
 >[!TIP]
 >
->Wenn Sie sowohl historische als auch Live-Streaming-Google Analytics-Daten importieren möchten, stellen Sie sicher, dass Sie für beide Datensätze dasselbe Schema verwenden. Sie können die Datensätze mithilfe eines [kombinierten Datensatzes](/help/connections/combined-dataset.md) in einer Customer Journey Analytics zusammenführen.
+>Wenn Sie sowohl historische als auch Live-Streaming-Google Analytics-Daten importieren möchten, stellen Sie sicher, dass Sie für beide Datensätze dasselbe Schema verwenden. Sie können die Datensätze auf einer Customer Journey Analytics mithilfe eines &quot;[ Datensatzes“ ](/help/connections/combined-dataset.md).
 
 Sie können die GA-Ereignisdaten einem vorhandenen, zuvor erstellten Datensatz zuordnen oder unter Verwendung eines beliebigen XDM-Schemas einen neuen Datensatz erstellen. Nachdem Sie das Schema ausgewählt haben, wendet Experience Platform maschinelles Lernen an, um jedes der Felder in den Daten von Google Analytics automatisch Ihrem [XDM-Schema](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=de#ui) vor-zuzuordnen.
 
-![Schemazuordnung, die die GA-Datenfelder und die Zielschemazuordnungen hervorhebt](../assets/schema-map.png)
+![Schemakarte mit Hervorhebung der GA-Datenfelder und der Zielschema-Zuordnungen](../assets/schema-map.png)
 
 Nachdem Sie die Felder Ihrem XDM-Schema zugeordnet haben, können Sie für diesen Import einen sich wiederholenden Zeitplan festlegen und während des Aufnahmevorgangs eine Fehlerprüfung anwenden. Durch diese Prüfung wird sichergestellt, dass keine Probleme mit den importierten Daten auftreten.
 
@@ -98,7 +98,7 @@ Bestimmte XDM-Felder in Platform benötigen das richtige Format, damit Daten kor
 
   ![Zeitstempel](../assets/timestamp.png)
 
-* **`_id`**: Dieses Feld muss einen Wert enthalten - Customer Journey Analytics spielt keine Rolle, was der Wert ist. Sie können einfach eine „1“ zu dem Feld hinzufügen:
+* **`_id`**: Dieses Feld muss einen Wert enthalten - welcher, spielt für Customer Journey Analytics keine Rolle. Sie können einfach eine „1“ zu dem Feld hinzufügen:
 
   ![ID](../assets/_id.png)
 

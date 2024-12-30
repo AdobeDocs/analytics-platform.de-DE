@@ -7,7 +7,7 @@ role: User
 source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
 workflow-type: tm+mt
 source-wordcount: '715'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -70,7 +70,7 @@ Weitere Informationen finden Sie unter [Sandboxes – Übersicht](https://experi
 
 Eine Adobe Experience Platform-Sandbox:
 
-* Bietet eine Möglichkeit, eine einzelne Adobe Experience Platform-Instanz in getrennte virtuelle Umgebungen (Entwicklung, Test, Staging, Produktion usw.) zu unterteilen, um die Entwicklung und Weiterentwicklung von Programmen für digitale Erlebnisse zu unterstützen.
+* Bietet die Möglichkeit, eine einzelne Adobe Experience Platform-Instanz in separate virtuelle Umgebungen (Entwicklung, Test, Staging, Produktion usw.) zu unterteilen, um die Entwicklung und Weiterentwicklung von Programmen für digitale Erlebnisse zu erleichtern.
 * Kann als Container betrachtet werden, der alle Daten und Programme für eine bestimmte Umgebung enthält.
 
 Einschränkungen einer Adobe Experience Platform-Sandbox:

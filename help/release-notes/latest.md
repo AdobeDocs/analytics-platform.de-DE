@@ -6,7 +6,7 @@ feature: Release Notes
 source-git-commit: 532f3a30e65d715f5b5b4caea85885a13d82641c
 workflow-type: tm+mt
 source-wordcount: '374'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -44,6 +44,6 @@ Report Builder: AN-361022
 
 * [Frühere Versionshinweise für Customer Journey Analytics 2024](/help/release-notes/2024.md)
 * [Versionshinweise zu Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/release-notes/latest.html?lang=de)
-* [Versionshinweise zur Streaming Media Collection](https://experienceleague.adobe.com/docs/media-analytics/using/additional-resources/release-notes.html?lang=de)
+* [Versionshinweise zur Streaming-Mediensammlung](https://experienceleague.adobe.com/docs/media-analytics/using/additional-resources/release-notes.html?lang=de)
 * [Versionshinweise zu Adobe Experience Cloud](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html?lang=de)
 * [Customer Journey Analytics – Aktualisierungen der Dokumentation](/help/release-notes/doc-changes.md)

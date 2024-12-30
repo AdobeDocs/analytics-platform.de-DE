@@ -17,7 +17,7 @@ Mit Metriken können Sie Datenpunkte in Analysis Workspace quantifizieren. Sie w
 
 ## Verwenden von Metriken in Analysis Workspace
 
-Metriken sind in ihrer Verwendung in Analysis Workspace flexibel. Ziehen Sie eine Metrik in eine leere Freiformtabelle, um die Trendansicht dieser Metrik über den Datumsbereich des Projekts anzuzeigen. Sie können auch eine Metrik ziehen, wenn eine Dimension vorhanden ist, um diese Metrik im Vergleich zu jedem Dimensionselement anzuzeigen. Wenn Sie eine Metrik auf eine vorhandene Metrik-Kopfzeile ziehen, wird sie ersetzt und durch Ziehen einer Metrik neben eine Kopfzeile können Sie beide Metriken nebeneinander sehen.
+Metriken können in Analysis Workspace flexibel verwendet werden. Ziehen Sie eine Metrik in eine leere Freiformtabelle, um die Entwicklung dieser Metrik über den Datumsbereich des Projekts anzuzeigen. Sie können auch eine Metrik ziehen, wenn eine Dimension vorhanden ist, um diese Metrik mit jedem Dimensionselement zu vergleichen. Wenn Sie eine Metrik über eine vorhandene Metrik-Kopfzeile ziehen, wird sie ersetzt, und wenn Sie eine Metrik neben einer Kopfzeile ziehen, können Sie beide Metriken nebeneinander sehen.
 
 Informationen zum Hinzufügen von Metriken und anderen Komponententypen zu Analysis Workspace finden Sie unter [Verwenden von Komponenten in Analysis Workspace](/help/components/use-components-in-workspace.md).
 
@@ -27,25 +27,25 @@ Informationen zum Hinzufügen von Metriken und anderen Komponententypen zu Analy
 Adobe bietet verschiedene Arten von Metriken zur Verwendung in Analysis Workspace:
 
 
-* **Standardmetriken**: Beispiel für Standardmetriken sind Personen, Sitzungen, Ereignisse.
+* **Standardmetriken**: Beispiel für Standardmetriken sind „Personen“, „Sitzungen“ und „Ereignisse“.
 
-  Im Gegensatz zu Adobe Analytics ermöglicht Customer Journey Analytics die flexible Definition von Standardmetriken im Rahmen einer Verbindung und einer Datenansicht.
+  Im Gegensatz zu Adobe Analytics können Sie mit Customer Journey Analytics Standardmetriken im Rahmen einer Verbindung und einer Datenansicht flexibel definieren.
 
-   * **Personen**: Die Metrik &quot;Personen&quot;in Customer Journey Analytics ist die Zählung für Personen-IDs. Je nachdem, was Sie beim Konfigurieren von Datensätzen in Ihrer Verbindung als Personen-ID auswählen, kann die Metrik für Personen unterschiedliche Bedeutungen haben.
+   * **Personen**: Die Personen -Metrik in Customer Journey Analytics entspricht der Anzahl der eindeutigen Personen-IDs. Je nachdem, was Sie bei der Konfiguration von Datensätzen in Ihrer Verbindung als Personen-ID auswählen, kann die Personen -Metrik unterschiedliche Bedeutungen haben.
    * **Sitzungen**: Die Sitzungsmetrik in Customer Journey Analytics wird im Rahmen der Konfiguration der Sitzungseinstellungen in Ihrer Datenansicht definiert. Siehe [Sitzungseinstellungen](/help/data-views/session-settings.md).
-   * **Ereignisse**: Die Ereignismetrik in Customer Journey Analytics besteht aus den Ereignissen, die Teil jedes Ereignis-Datensatzes sind, den Sie im Rahmen Ihrer Verbindung konfiguriert haben.
+   * **Ereignisse**: Die Ereignismetrik in Customer Journey Analytics besteht aus den Ereignissen, die Teil eines Ereignisdatensatzes sind, den Sie als Teil Ihrer Verbindung konfiguriert haben.
 
 * **Berechnete Metriken** ![Rechner](/help/assets/icons/Calculator.svg): Benutzerdefinierte Metriken, die auf Standardmetriken, statischen Zahlen oder algorithmischen Funktionen basieren.
 
 * **Vorlagen für berechnete Metriken** ![AdobeLogoSmall](/help/assets/icons/AdobeLogoSmall.svg) : Adobe-definierte Metriken, die sich ähnlich wie berechnete Metriken verhalten. Sie können sie unverändert in Workspace-Projekten verwenden oder eine Kopie speichern, um die Logik anzupassen. Siehe [Standardberechnete Metriken](calc-metrics/cm-workflow/../default-calcmetrics.md).
 
-Sie können sehen, ob eine Metrik für ![Genehmigungssymbol](https://spectrum.adobe.com/static/icons/ui_18/CheckmarkSize100.svg) genehmigt wurde oder nicht. Wenn Sie weitere Details zu einer Metrik wünschen, bewegen Sie den Mauszeiger über die Metrik und wählen Sie ![Infosymbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg) aus. Weitere Informationen finden Sie unter [Komponenteninformationen](use-components-in-workspace.md#component-info) .
+Sie können sehen, ob eine Metrik genehmigt wurde ![Symbol „Genehmigt](https://spectrum.adobe.com/static/icons/ui_18/CheckmarkSize100.svg) oder nicht. Wenn Sie weitere Details zu einer Metrik wünschen, bewegen Sie den Mauszeiger über die Metrik und wählen Sie ![Infosymbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg) aus. Siehe [Komponenteninformationen](use-components-in-workspace.md#component-info) für weitere Informationen.
 
 
 
 ## Berechnete Metriken 
 
-Berechnete Metriken ermöglichen es Ihnen, mithilfe einfacher Operatoren oder statistischer Funktionen einfach zu konfigurieren, wie sich Metriken zueinander verhalten. Weitere Informationen finden Sie unter [Übersicht über berechnete Metriken](/help/components/calc-metrics/calc-metr-overview.md) .
+Berechnete Metriken ermöglichen es Ihnen, die Beziehung zwischen Metriken einfach mithilfe einfacher Operatoren oder statistischer Funktionen zu konfigurieren. Weitere Informationen finden [ unter ](/help/components/calc-metrics/calc-metr-overview.md) Metriken - Übersicht .
 
 <!--
 
@@ -96,8 +96,8 @@ To create a calculated metric for a single project:
 
 ## Vergleichen von Metriken mit verschiedenen Attributionsmodellen
 
-Wenn Sie Attributionsmodelle für eine Metrik schnell und einfach miteinander vergleichen möchten, wählen Sie **[!UICONTROL Attributionsmodelle vergleichen]** aus dem Kontextmenü für eine Metrik.
+Wenn Sie Attributionsmodelle für eine Metrik schnell und einfach miteinander vergleichen möchten, wählen Sie **[!UICONTROL Attributionsmodelle vergleichen]** aus dem Kontextmenü für eine Metrik aus.
 
-![Workspace-Bedienfeld zur Hervorhebung von Vergleichsattributionsmodellen](assets/compare-attribution.png)
+![Workspace-Bedienfeld mit hervorgehobenen Attributionsmodellen vergleichen](assets/compare-attribution.png)
 
-Mit dieser Verknüpfung können Sie Attributionsmodelle schnell und einfach vergleichen.
+Mit dieser Tastenkombination können Sie Attributionsmodelle schnell und einfach vergleichen.

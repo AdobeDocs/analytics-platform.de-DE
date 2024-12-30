@@ -1,13 +1,13 @@
 ---
 cloud: Experience Cloud
 git-repo: https://github.com/AdobeDocs/analytics-platform.de-DE
-description: Diese Datei enthält Metadaten auf Repo-Ebene, die an die TOC.md-Dateien des Benutzerhandbuchs im Repository übergeben werden.
+description: Diese Datei enthält Metadaten auf Repo-Ebene, die an die im Repository enthaltenen TOC.md-Dateien des Benutzerhandbuchs weitergegeben werden.
 feature-set: Customer Journey Analytics
 role: User, Admin
 source-git-commit: edbad9c9d3dc0b48db5334828a18ef652d4a38aa
 workflow-type: tm+mt
-source-wordcount: '127'
-ht-degree: 84%
+source-wordcount: '125'
+ht-degree: 86%
 
 ---
 

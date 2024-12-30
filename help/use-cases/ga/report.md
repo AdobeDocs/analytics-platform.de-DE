@@ -1,5 +1,5 @@
 ---
-title: Bericht über Google Analytics-Daten
+title: Bericht zu Google Analytics-Daten
 description: Zeigt nützliche Berichte zu Google Analytics-Daten in Customer Journey Analytics an
 exl-id: a7ac3c8d-c0d9-4fc2-80d7-c2b388250586
 solution: Customer Journey Analytics
@@ -8,11 +8,11 @@ role: Admin
 source-git-commit: 90d1c51c11f0ab4d7d61b8e115efa8257a985446
 workflow-type: tm+mt
 source-wordcount: '682'
-ht-degree: 85%
+ht-degree: 86%
 
 ---
 
-# Bericht über Google Analytics-Daten
+# Bericht zu Google Analytics-Daten
 
 Sobald Daten in Customer Journey Analytics zur Verfügung stehen, bieten die folgenden Beispiele nützliche Szenarien für das Reporting über diese Daten.
 
@@ -28,7 +28,7 @@ Es kann ein Trend für die im Callcenter verbrachte Zeit über die letzten zwei 
 
 ![Anrufvolumen](../assets/call-volume.png)
 
-Die Verwendung der Dimension &quot;Anrufgrund&quot;kann Hinweise zur Verbesserung des Web-Erlebnisses geben und verhindern, dass Personen überhaupt anrufen. Das obige Beispiel zeigt, dass das Thema „Beschädigtes Produkt“ eine durchschnittliche Anrufzeit von fast 3 Minuten pro Anruf hat. Dies gibt Ihrem Unternehmen eine präzise Möglichkeit, das Kundenerlebnis zu verbessern und die Kosten für das Callcenter zu senken.
+Die Verwendung der Dimension „Anrufgrund“ kann Hinweise darauf geben, wie das Web-Erlebnis verbessert werden kann, um zu verhindern, dass Personen überhaupt anrufen. Das obige Beispiel zeigt, dass das Thema „Beschädigtes Produkt“ eine durchschnittliche Anrufzeit von fast 3 Minuten pro Anruf hat. Dies gibt Ihrem Unternehmen eine präzise Möglichkeit, das Kundenerlebnis zu verbessern und die Kosten für das Callcenter zu senken.
 
 Sie können sehen, welche Produkte die meisten Aufrufe an Ihr Callcenter verursachen und wie viele Kunden diese Aufrufe getätigt haben. Das Blasendiagramm zeigt, dass 20.000 Personen anriefen, mehr als 4 Stunden und 30 Minuten damit verbrachten, 33 Stück des Produkts „Herren T-Shirt mit kurzen Ärmeln“ zurückzugeben.
 
@@ -36,7 +36,7 @@ Sie können sehen, welche Produkte die meisten Aufrufe an Ihr Callcenter verursa
 
 Bei Anwendung der Dimensionsaufschlüsselung „Anrufgrund“ zeigt das Beispiel eine Dimensionsposition „Beschädigtes Produkt“. Der nächste Schritt besteht darin, sich mit der Abteilung der Qualitätskontrolle in Verbindung zu setzen und herauszufinden, warum die Kunden beschädigte T-Shirts erhalten haben.
 
-Man kann sich ansehen, welche Website-Seiten zu Anrufen im Callcenter geführt haben. Mit diesem Bericht kann man feststellen, wo auf der Website weniger optimale Erfahrungen gemacht wurden, und den Produktmanagern helfen, diese Herausforderungen zu lösen. Im folgenden Beispiel wird eine berechnete Metrik mit einem Beitragsattributionsmodell verwendet, um die Daten auf nur Sitzungen zu filtern, die mit einem Callcenter-Aufruf endeten.
+Man kann sich ansehen, welche Website-Seiten zu Anrufen im Callcenter geführt haben. Mit diesem Bericht kann man feststellen, wo auf der Website weniger optimale Erfahrungen gemacht wurden, und den Produktmanagern helfen, diese Herausforderungen zu lösen. Im folgenden Beispiel wird eine berechnete Metrik mit einem Teilnahme-Attributionsmodell verwendet, um die Daten nur in Sitzungen zu filtern, die mit einem Callcenter-Aufruf endeten.
 
 Das folgende Beispiel zeigt, dass die Seiten „Warenkorb“ und „Checkout-Informationen“ die meisten Anrufe verursachen.
 
@@ -48,7 +48,7 @@ Anhand der Kohortentabelle ist ersichtlich, wie lange es in der Regel dauert, bi
 
 ## Erweiterte Marketing-Attribution verwenden
 
-Mit Customer Journey Analytics können Sie komplexe Attributionsmodelle für kanalübergreifende Daten verwenden. Im folgenden Beispiel sehen Sie einen Vergleich der Anwendung von Erstkontakt, Letztkontakt, U-förmig und algorithmischer Attribution von Umsatz mit den Channel Grouping-Dimensionen von Google Analytics.
+Mit Customer Journey Analytics können Sie ausgefeilte Attributionsmodelle für kanalübergreifende Daten verwenden. Im folgenden Beispiel sehen Sie einen Vergleich der Anwendung von Erstkontakt, Letztkontakt, U-förmig und algorithmischer Attribution von Umsatz mit den Channel Grouping-Dimensionen von Google Analytics.
 
 ![Marketing-Attribution](../assets/mktg-attribution.png)
 
@@ -64,6 +64,6 @@ Sie können Ihren im Web und über Mobile Apps generierten Umsatz auch Ihren Goo
 
 ![Google-Anzeige](../assets/google-ad.png)
 
-Durch die Kombination von Datensätzen in Customer Journey Analytics können Sie in diesem Beispiel sehen, dass Online-Anzeigen Auswirkungen auf Produkte hatten, die in Ihrer App erworben wurden. In der folgenden Visualisierung sehen Sie, dass der Umsatz durch Google Ads über die Mobile App im Vergleich zum Internet allein zusätzliche 14.000 $ bis 15.000 $ ausmacht.
+Durch die Kombination von Datensätzen in Customer Journey Analytics können Sie in diesem Beispiel sehen, dass Online-Anzeigen Auswirkungen auf Produkte hatten, die in Ihrer Mobile App gekauft wurden. In der folgenden Visualisierung sehen Sie, dass der Umsatz durch Google Ads über die Mobile App im Vergleich zum Internet allein zusätzliche 14.000 $ bis 15.000 $ ausmacht.
 
 ![Google-Anzeige 2](../assets/google-ad2.png)

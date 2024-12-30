@@ -1,5 +1,5 @@
 ---
-title: Übersicht über die Berichterstellung in Activity Manager
+title: Übersicht über Reporting Activity Manager
 description: Erfahren Sie, wie Sie Kapazitätsprobleme bei Spitzen während der Berichterstellung mit Reporting Activity Manager diagnostizieren und beheben können.
 solution: Customer Journey Analytics
 feature: Basics
@@ -12,32 +12,32 @@ ht-degree: 16%
 
 ---
 
-# Übersicht über die Berichterstellung in Activity Manager
+# Übersicht über Reporting Activity Manager
 
 Der [!UICONTROL Reporting Activity Manager] ist für Administratoren verfügbar.
 
-Wenn die Berichtsleistung Ihres Unternehmens während Spitzenzeiten bei der Berichterstellung beeinträchtigt wird, können Sie mit dem Reporting Activity Manager Kapazitätsprobleme selbstdiagnostizieren und beheben, ohne die Adobe-Kundenunterstützung zu kontaktieren. Sie können einfach Berichtwarteschlangen in einer einzigen Oberfläche verwalten und sofort &#x200B; handeln, um das Benutzererlebnis zu verbessern.
+Wenn in Ihrem Unternehmen die Berichtsleistung zu Spitzenzeiten abnimmt, können Sie mit Reporting Activity Manager Kapazitätsprobleme selbst diagnostizieren und beheben, ohne dass Sie hierzu die Kundenunterstützung von Adobe kontaktieren müssen. Sie können Berichtswarteschlangen einfach in einer einzigen Oberfläche verwalten und sofort handeln&#x200B; &#x200B; um das Benutzererlebnis zu verbessern.
 
 ## Vorteile
 
 Reporting Activity Manager bietet die folgenden Vorteile:
 
-* Ermöglicht Ihnen die Überwachung und Verwaltung der Berichtskapazität für jede Verbindung in Ihrem Unternehmen.
-* Informiert Sie in Echtzeit über Ihre aktuelle Berichtskapazität für alle Verbindungen.
-* Enthält detaillierte Berichtinformationen zu aktuellen Berichtsanforderungen, unabhängig davon, ob sie sich in der Warteschlange befinden oder in Bearbeitung sind.
-* Ermöglicht Ihnen die Optimierung der Berichtswarteschlange durch Priorisierung einiger Berichtsanfragen und Abbruch von anderen, um Kapazitäten freizugeben. Er beantwortet Fragen wie: Ist dieser Bericht zum jetzigen Zeitpunkt notwendig oder kann ich ihn zugunsten dringender Berichte ablehnen?
-* Hier können Sie zukünftige Anforderungen für einen bestimmten Zeitraum einschränken. Sie können bestimmte Anforderungen einschränken oder alle Anforderungen eines bestimmten Benutzers oder Anforderungen einschränken, die mit einem bestimmten Projekt verknüpft sind.
+* Ermöglicht die Überwachung und Verwaltung der Berichtskapazität für jede Verbindung in Ihrem Unternehmen.
+* Informiert Sie in Echtzeit über Ihre aktuelle Berichtskapazität für Ihre Verbindungen.
+* Enthält detaillierte Berichtsinformationen zu aktuellen Berichtsanfragen, unabhängig davon, ob diese sich in der Warteschlange befinden oder in Bearbeitung sind.
+* Ermöglicht Ihnen die Optimierung der Berichtswarteschlange durch Priorisierung einiger Berichtsanfragen und Abbruch von anderen, um Kapazitäten freizugeben. Er beantwortet Fragen wie: Ist dieser Bericht zu diesem Zeitpunkt notwendig oder kann ich ihn zugunsten dringenderer Berichte absagen?
+* Ermöglicht die Einschränkung zukünftiger Anfragen für einen bestimmten Zeitraum. Sie können bestimmte Anfragen einschränken oder alle Anfragen eines bestimmten Benutzers oder die mit einem bestimmten Projekt verknüpften Anfragen einschränken.
 
 ## Zugriffsberechtigung
 
 <!-- update for CJA -->
 
-Zur Verwaltung der Berichtsaktivität müssen Sie über die Rolle Produkt-Admin verfügen. Weitere Informationen finden Sie unter [Customer Journey Analytics Access Control](/help/technotes/access-control.md).
+Um Berichtsaktivitäten zu verwalten, benötigen Sie die Rolle des Produktadministrators. Weitere Informationen finden Sie unter [Customer Journey Analytics-Zugriffssteuerung](/help/technotes/access-control.md).
 
 ## Anzeigen von Berichtsaktivität
 
-Informationen zum Anzeigen von Berichtsaktivitäten im Reporting Activity Manager finden Sie unter [Berichtsaktivität im Reporting Activity Manager anzeigen](/help/reporting-activity-manager/reporting-activity.md).
+Weitere Informationen zur Anzeige der Berichtsaktivität in Reporting Activity Manager finden Sie unter [Berichtsaktivität in Reporting Activity Manager anzeigen](/help/reporting-activity-manager/reporting-activity.md).
 
 ## Abbrechen von Berichtsanfragen
 
-Informationen zum Abbrechen von Berichtsanforderungen im Reporting Activity Manager finden Sie unter [Berichtsanforderungen im Reporting Activity Manager abbrechen](/help/reporting-activity-manager/reporting-activity-cancel-requests.md).
+Informationen zum Abbrechen von Berichtsanfragen in Reporting Activity Manager finden Sie unter [Abbrechen von Berichtsanfragen in Reporting Activity Manager](/help/reporting-activity-manager/reporting-activity-cancel-requests.md).

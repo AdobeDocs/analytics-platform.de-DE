@@ -1,5 +1,5 @@
 ---
-title: So konfigurieren Sie Einstellungen für Report Builder in Customer Journey Analytics
+title: Konfigurieren der Einstellungen für Report Builder auf Customer Journey Analytics
 description: Beschreibt, wie Einstellungen für Offline-Modus, Sprache, Datum und Fehlerbehebung festgelegt werden.
 role: Admin
 feature: Report Builder
@@ -25,7 +25,7 @@ So ändern Sie die Report Builder-Einstellungen
 
 1. Klicken Sie auf **Anwenden**.
 
-   ![Datumsbereich des Report Builders, in dem die Schaltfläche Abbrechen und Anwenden angezeigt wird.](./assets/image38.png)
+   Datumsbereich des ![Report Builders mit den Schaltflächen „Abbrechen“ und „Anwenden“.](./assets/image38.png)
 
 ## Offline-Modus
 
@@ -51,7 +51,7 @@ So wählen Sie die in der UI von Report Builder verwendete Sprache aus
 
 1. Wählen Sie eine Sprache aus dem Dropdown-Menü **Sprache** aus.
 
-   ![Datumsbereich des Report Builders, in dem die Sprachliste mit Englisch angezeigt wird.](./assets/image39.png)
+   Datumsbereich des Report Builders ![mit Sprachliste und ausgewähltem Englisch.](./assets/image39.png)
 
 1. Klicken Sie auf **Anwenden.**
 

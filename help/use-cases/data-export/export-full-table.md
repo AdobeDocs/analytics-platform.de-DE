@@ -1,6 +1,6 @@
 ---
-title: Customer Journey Analytics Exportieren einer vollständigen Tabelle
-description: Beschreibt die Verwendung der Funktion "Vollständige Tabelle exportieren", um Ihre Daten zu validieren oder Ihre Daten für KI/ML zu verwenden.
+title: Customer Journey Analytics Export Full Table
+description: Beschreibt, wie Sie die Funktion „Vollständige Tabelle exportieren“ verwenden können, um Ihre Daten zu validieren oder Ihre Daten für KI/ML zu verwenden.
 solution: Customer Journey Analytics
 feature: Use Cases
 role: Admin
@@ -14,7 +14,7 @@ ht-degree: 6%
 
 # Exportieren einer vollständigen Tabelle
 
-In diesem Artikel wird beschrieben, wie der [!DNL Customer Journey Analytics BI extension] verwendet werden kann, um den folgenden [Anwendungsfall für den Datenexport](overview.md) zu implementieren:
+In diesem Artikel wird beschrieben, wie die [!DNL Customer Journey Analytics BI extension] zur Implementierung des folgenden [Anwendungsfalls für den Datenexport“ verwendet ](overview.md) kann:
 
 - Datenvalidierung
 - Bereitschaft für KI/ML
@@ -27,6 +27,6 @@ Durch den Export von Daten mit [!DNL Customer Journey Analytics Full Table Expor
 
 ## Weitere Informationen
 
-Sie können den gesamten Inhalt einer von Ihnen in Analysis Workspace erstellten Freiformtabelle direkt in bestimmte Cloud-Ziele exportieren, indem Sie die Funktion Vollständige Tabelle exportieren verwenden.
+Sie können den vollständigen Inhalt einer beliebigen Freiformtabelle, die Sie in Analysis Workspace erstellen, direkt in bestimmte Cloud-Ziele exportieren, indem Sie die Funktion „Vollständige Tabelle exportieren“ verwenden.
 
-Weitere Informationen finden Sie in der ausführlichen Dokumentation zu [Customer Journey Analytics-Berichten in die Cloud exportieren](/help/analysis-workspace/export/export-cloud.md).
+Weitere Informationen finden Sie in der ausführlichen Dokumentation unter [Exportieren von Customer Journey Analytics-Berichten in die Cloud](/help/analysis-workspace/export/export-cloud.md).

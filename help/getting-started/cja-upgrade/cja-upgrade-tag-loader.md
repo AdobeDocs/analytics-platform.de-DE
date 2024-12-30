@@ -1,6 +1,6 @@
 ---
-title: Implementieren des Lader-Tags für die Web SDK-Erweiterung
-description: Erfahren Sie, wie Sie das Lader-Tag für die Web SDK-Erweiterung implementieren
+title: Implementieren des Loader-Tags für die Web SDK-Erweiterung
+description: Erfahren Sie, wie Sie das Loader-Tag für die Web SDK-Erweiterung implementieren
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
@@ -10,21 +10,21 @@ exl-id: 471ecd60-6e1e-4889-93bd-c654b35d40dc
 source-git-commit: 937a7f31361027438929194f8ccc5aee83c33bc0
 workflow-type: tm+mt
 source-wordcount: '249'
-ht-degree: 34%
+ht-degree: 41%
 
 ---
 
-# Implementieren des Lader-Tags für die Web SDK-Erweiterung
+# Implementieren des Loader-Tags für die Web SDK-Erweiterung
 
 >[!NOTE]
 > 
->Führen Sie die Schritte auf dieser Seite erst aus, nachdem Sie alle vorherigen Aktualisierungsschritte ausgeführt haben. Sie können die [empfohlenen Aktualisierungsschritte](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) ausführen oder die für Ihr Unternehmen dynamisch generierten Aktualisierungsschritte mit dem Fragebogen [Adobe Analytics to Customer Journey Analytics Upgrade Fragenkatalog](https://gigazelle.github.io/cja-ttv/) ausführen.
+>Befolgen Sie die Schritte auf dieser Seite erst, nachdem Sie alle vorherigen Upgrade-Schritte abgeschlossen haben. Sie können die [empfohlenen Upgrade-Schritte](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) ausführen oder die Upgrade-Schritte ausführen, die für Ihr Unternehmen mit dem [Fragebogen für das Upgrade von Adobe Analytics auf Customer Journey Analytics dynamisch generiert wurden](https://gigazelle.github.io/cja-ttv/).
 >
->Nachdem Sie die Schritte auf dieser Seite ausgeführt haben, fahren Sie mit den empfohlenen Aktualisierungsschritten oder den dynamisch generierten Aktualisierungsschritten fort.
+>Nachdem Sie die Schritte auf dieser Seite abgeschlossen haben, folgen Sie den empfohlenen Upgrade-Schritten oder den dynamisch generierten Upgrade-Schritten.
 
-Sie müssen Ihr Tag auf der Website installieren, die Sie verfolgen möchten. Dies bedeutet, dass Sie Code in das Kopfzeilen-Tag der Vorlage Ihrer Website einfügen.
+Sie müssen Ihr Tag auf der Website installieren, die Sie verfolgen möchten, was bedeutet, dass Sie Code in das Kopfzeilen-Tag der Vorlage Ihrer Website einfügen müssen.
 
-Im folgenden Prozess wird beschrieben, wie Sie den Code abrufen, der auf Ihr Tag verweist. Weitere Informationen finden Sie in den [Implementierungshandbüchern für Tags und Ereignisweiterleitung](https://experienceleague.adobe.com/en/docs/experience-platform/tags/get-started/implementation-guides) in der Experience Platform-Dokumentation.
+Im folgenden Prozess wird beschrieben, wie Sie den Code abrufen, der auf Ihr -Tag verweist. Weitere Informationen finden Sie in den [Implementierungshandbüchern für Tags und ](https://experienceleague.adobe.com/en/docs/experience-platform/tags/get-started/implementation-guides)) in der Experience Platform-Dokumentation.
 
 Gehen Sie folgendermaßen vor, um Code abzurufen, der auf Ihr Tag verweist:
 
@@ -46,4 +46,4 @@ Gehen Sie folgendermaßen vor, um Code abzurufen, der auf Ihr Tag verweist:
 
    Weitere Informationen finden Sie in [Umgebungen](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/environments/environments.html?lang=de?).
 
-1. Führen Sie die [empfohlenen Aktualisierungsschritte](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) oder die dynamisch generierten Aktualisierungsschritte](https://gigazelle.github.io/cja-ttv/) aus.[
+1. Fahren Sie mit den [empfohlenen Upgrade-Schritten](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) oder den [dynamisch generierten Upgrade-Schritten](https://gigazelle.github.io/cja-ttv/) fort.

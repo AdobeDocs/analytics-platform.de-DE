@@ -7,7 +7,7 @@ role: User
 source-git-commit: 5c5f276711f39abb1b3f3b955ad99e17cb0ac09c
 workflow-type: tm+mt
 source-wordcount: '542'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -19,7 +19,7 @@ Adobe Analytics-Daten enthalten mehrere Identitätsfelder. Drei wichtige Identit
 
 Die Adobe Analytics-ID (AAID) ist die primäre Gerätekennung in Adobe Analytics und ist garantiert bei jedem Ereignis vorhanden, das über den Analytics-Quell-Connector weitergeleitet wird. AAID wird manchmal als „veraltete Analytics-ID“ oder `s_vi` Cookie-ID bezeichnet. Eine AAID wird jedoch auch dann erstellt, wenn das `s_vi`-Cookie gar nicht vorhanden ist. AAID wird durch die Spalten `post_visid_high/post_visid_low` in [Adobe Analytics-Daten-Feeds](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference.html?lang=de#columns%2C-descriptions%2C-and-data-types) dargestellt.
 
-Im Analytics-Quell-Connector wird AAID in `HEX(post_visid_high) + "-" + HEX(post_visid_low)` umgewandelt. Das Feld „AAID“ für ein bestimmtes Ereignis enthält eine einzelne Identität, die einen von mehreren verschiedenen Typen besitzen kann, wie unter [Reihenfolge der Vorgänge für Analytics-IDs](https://experienceleague.adobe.com/de/docs/id-service/using/reference/analytics-reference/analytics-order-of-operations) beschrieben. (Innerhalb einer gesamten Report Suite kann AAID eine Mischung aus Typen über Ereignisse hinweg enthalten. Der Typ für jedes Ereignis wird in der Spalte `post_visid_type` in Analytics-Daten-Feeds angezeigt.) Siehe auch die [Datenspaltenreferenz](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference.html?lang=de).
+Im Analytics-Quell-Connector wird AAID in `HEX(post_visid_high) + "-" + HEX(post_visid_low)` umgewandelt. Das Feld „AAID“ für ein bestimmtes Ereignis enthält eine einzelne Identität, die einen von mehreren verschiedenen Typen besitzen kann, wie unter [Reihenfolge der Vorgänge für Analytics-IDs](https://experienceleague.adobe.com/de/docs/id-service/using/reference/analytics-reference/analytics-order-of-operations) beschrieben. (Innerhalb einer gesamten Report Suite kann AAID eine Mischung aus Typen über Ereignisse hinweg enthalten. Der Typ für jedes Ereignis wird in der Spalte `post_visid_type` in den Analytics-Daten-Feeds angezeigt.) Siehe auch: [Datenspaltenreferenz](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference.html?lang=de).
 
 ## ECID
 

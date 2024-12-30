@@ -1,5 +1,5 @@
 ---
-title: Hohe Kardinalitätsdimensionen
+title: Dimensionen hoher Kardinalität
 description: Erläutert, wie Customer Journey Analytics Dimensionen mit vielen eindeutigen Werten verarbeitet
 feature: Dimensions
 solution: Customer Journey Analytics
@@ -8,35 +8,35 @@ role: User
 source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
 workflow-type: tm+mt
 source-wordcount: '544'
-ht-degree: 6%
+ht-degree: 7%
 
 ---
 
-# Hohe Kardinalitätsdimensionen
+# Dimensionen hoher Kardinalität
 
-Bei Verwendung einer Dimension, die viele eindeutige Werte enthält, kann der resultierende Bericht zu viele eindeutige Dimensionselemente enthalten, die angezeigt oder berechnet werden können. Ergebnisse werden abgeschnitten, indem Dimensionselemente entfernt werden, die als am wenigsten wichtig erachtet werden. Diese Optimierungen erfolgen zur Gewährleistung der Projekt- und Produktleistung.
+Bei Verwendung einer Dimension, die viele eindeutige Werte enthält, kann der resultierende Bericht zu viele eindeutige Dimensionselemente enthalten, um sie anzuzeigen oder zu berechnen. Die Ergebnisse werden abgeschnitten, indem Dimensionselemente entfernt werden, die als am wenigsten wichtig erachtet werden. Diese Optimierungen werden vorgenommen, um die Projekt- und Produktleistung zu erhalten.
 
-Wenn Sie einen Bericht mit zu vielen eindeutigen Werten anfordern, zeigt Analysis Workspace in der Dimensionsüberschrift einen Indikator an, der angibt, dass nicht alle Dimensionselemente einbezogen werden. Beispiel: **[!UICONTROL Zeilen: 1-50 von mehr als 22.343.156]**. Das Keyword **[!UICONTROL more than]** zeigt an, dass eine Optimierung auf den Bericht angewendet wurde, um die wichtigsten Dimensionselemente zurückzugeben.
+Wenn Sie einen Bericht mit zu vielen eindeutigen Werten anfordern, zeigt Analysis Workspace in der Kopfzeile der Dimension einen Indikator an, der angibt, dass nicht alle Dimensionselemente enthalten sind. Beispiel: **[!UICONTROL : 1-50 von mehr als 22.343.156]**. Das **[!UICONTROL -Schlüsselwort]** more than“ zeigt an, dass der Bericht optimiert wurde, um die wichtigsten Dimensionselemente zurückzugeben.
 
-![Freiformtabelle in Workspace mit dem Keyword &quot;more than&quot;, um 1-50 von mehr als 22.343.156 anzuzeigen](assets/high-cardinality.png)
+![Freiformtabelle in Workspace mit dem Keyword „more than“, um 1-50 von mehr als 22.343.156 anzuzeigen](assets/high-cardinality.png)
 
-## Festlegen der anzuzeigenden Dimensionselemente
+## Bestimmen, welche Dimensionselemente angezeigt werden sollen
 
-Customer Journey Analytics verarbeitet Berichte zum Zeitpunkt ihrer Ausführung und verteilt den kombinierten Datensatz an mehrere Server. Die Daten pro Verarbeitungsserver werden nach Personen-ID gruppiert, d. h., ein einzelner Verarbeitungsserver enthält alle Daten für eine bestimmte Person. Sobald ein Server die Verarbeitung abgeschlossen hat, übergibt er seine Untergruppe verarbeiteter Daten an einen Aggregator-Server. Alle Teilmengen verarbeiteter Daten werden kombiniert und in Form eines Workspace-Berichts zurückgegeben.
+Customer Journey Analytics verarbeitet Berichte zum Zeitpunkt ihrer Ausführung und verteilt den kombinierten Datensatz an mehrere Server. Die Daten pro Verarbeitungs-Server werden nach Personen-ID gruppiert, d. h., ein einzelner Verarbeitungs-Server enthält alle Daten für eine bestimmte Person. Sobald ein Server die Verarbeitung abgeschlossen hat, übergibt er seine Teilmenge der verarbeiteten Daten an einen Aggregator-Server. Alle Teilmengen verarbeiteter Daten werden kombiniert und in Form eines Workspace-Berichts zurückgegeben.
 
-Wenn ein einzelner Server Daten verarbeitet, die einen eindeutigen Schwellenwert überschreiten, werden die Ergebnisse abgeschnitten, bevor die verarbeitete Teilmenge der Daten zurückgegeben wird. Abgeschnittene Dimensionselemente werden basierend auf der Metrik bestimmt, die für die Sortierung verwendet wird.
+Wenn ein einzelner Server Daten verarbeitet, die einen eindeutigen Schwellenwert überschreiten, werden die Ergebnisse gekürzt, bevor die verarbeitete Teilmenge der Daten zurückgegeben wird. Abgeschnittene Dimensionselemente werden basierend auf der Metrik bestimmt, die für die Sortierung verwendet wird.
 
-Wenn es sich bei der Sortiermetrik um eine berechnete Metrik handelt, verwendet der Server die Metriken innerhalb der berechneten Metrik, um zu bestimmen, welche Dimensionselemente abgeschnitten werden sollen. Da berechnete Metriken mehrere Metriken unterschiedlicher Wichtigkeit enthalten können, können die Ergebnisse weniger präzise sein. Beispielsweise werden bei der Berechnung von &quot;Umsatz pro Person&quot;der Gesamtbetrag der Einnahmen und die Gesamtzahl der Personen zurückgegeben und aggregiert, bevor die Division durchgeführt wird. Daher wählt jeder einzelne Verarbeitungsserver, welche Elemente entfernt werden sollen, ohne zu wissen, wie sich ihre Ergebnisse auf die Gesamtsortierung auswirken.
+Wenn es sich bei der Sortiermetrik um eine berechnete Metrik handelt, verwendet der Server die Metriken innerhalb der berechneten Metrik, um zu bestimmen, welche Dimensionselemente abgeschnitten werden sollen. Da berechnete Metriken mehrere Metriken unterschiedlicher Bedeutung enthalten können, können die Ergebnisse weniger genau sein. Beispielsweise werden bei der Berechnung des „Umsatzes pro Person“ der Gesamtbetrag der Einnahmen und die Gesamtzahl der Personen zurückgegeben und vor der Teilung aggregiert. Daher wählt jeder einzelne Verarbeitungs-Server aus, welche Elemente entfernt werden sollen, ohne zu wissen, wie sich die Ergebnisse auf die Sortierung insgesamt auswirken.
 
-Auch wenn einige einzelne Dimensionselemente in Berichten mit hoher Kardinalität fehlen, sind die Spaltensummen genau und nicht auf abgeschnittenen Daten basieren. Die Funktion &quot;Distinct Count&quot;(Distinct zählen) in berechneten Metriken wird auch nicht von abgeschnittenen Dimensionselementen beeinflusst.
+Obwohl einige einzelne Dimensionselemente in Berichten mit hoher Kardinalität fehlen können, sind die Spaltensummen korrekt und basieren nicht auf abgeschnittenen Daten. Die Funktion „Distinct Count“ in berechneten Metriken ist ebenfalls nicht von abgeschnittenen Dimensionselementen betroffen.
 
 ## Best Practices für Dimensionen mit hoher Kardinalität
 
-Die beste Möglichkeit, um Dimensionen mit hoher Kardinalität aufzunehmen, besteht darin, die Anzahl der Dimensionselemente zu begrenzen, die ein Bericht verarbeitet. Da alle Berichte zum Zeitpunkt ihrer Anforderung verarbeitet werden, können Sie die Berichtsparameter an die sofortigen Ergebnisse anpassen. Adobe empfiehlt eine der folgenden Optimierungen für Dimensionen mit hoher Kardinalität:
+Die beste Möglichkeit, Dimensionen mit hoher Kardinalität zu berücksichtigen, besteht darin, die Anzahl der Dimensionselemente zu begrenzen, die ein Bericht verarbeitet. Da alle Berichte zum Zeitpunkt ihrer Anforderung verarbeitet werden, können Sie die Berichtsparameter für sofortige Ergebnisse anpassen. Adobe empfiehlt eine der folgenden Optimierungen für Dimensionen mit hoher Kardinalität:
 
-* Verwenden Sie einen [Filter](/help/components/filters/create-filters.md). Filter werden angewendet, wenn jeder Server eine Untergruppe von Daten verarbeitet.
-* Verwenden Sie eine Suche. Aus dem Suchbegriff ausgeschlossene Dimension-Elemente werden aus den Berichtsergebnissen entfernt, sodass es wahrscheinlicher wird, dass Sie die gewünschten Dimensionselemente sehen.
+* Verwenden Sie einen [Filter](/help/components/filters/create-filters.md). Filter werden angewendet, wenn jeder Server eine Teilmenge von Daten verarbeitet.
+* Verwenden Sie eine Suche. Dimension Aus dem Suchbegriff ausgeschlossene Dimensionselemente werden aus den Berichtsergebnissen entfernt, sodass die Wahrscheinlichkeit höher ist, dass die gewünschten Dimensionselemente angezeigt werden.
 * Verwenden Sie eine Lookup-Datensatzdimension. Lookup-Datensatzdimensionen kombinieren Elemente von Ereignis-Datensatzdimensionen, die die Anzahl der zurückgegebenen eindeutigen Werte begrenzen.
-* Verwenden Sie die Komponenteneinstellung [Einbeziehen/Ausschließen](/help/data-views/component-settings/include-exclude-values.md) im Datenansichtsmanager.
-* Kürzen Sie den Datumsbereich der Anforderung. Wenn sich im Laufe der Zeit viele individuelle Werte ansammeln, kann die Verkürzung des Datumsbereichs des Workspace-Berichts die Anzahl der eindeutigen Werte begrenzen, die Server verarbeiten können.
-* Erwägen Sie die Verwendung von [Full Table Export](/help/analysis-workspace/export/export-cloud.md) , um alle Zeilen der Tabelle zurückzugeben.
+* Verwenden Sie die [Einschließen/ausschließen](/help/data-views/component-settings/include-exclude-values.md) im Datenansichts-Manager.
+* Kürzen Sie den Datumsbereich der Anfrage. Wenn im Laufe der Zeit viele eindeutige Werte gesammelt werden, kann eine Verkürzung des Datumsbereichs des Workspace-Berichts die Anzahl der eindeutigen Werte für die zu verarbeitenden Server einschränken.
+* Erwägen Sie [vollständigen Tabellenexport](/help/analysis-workspace/export/export-cloud.md), um alle Zeilen der Tabelle zurückzugeben.

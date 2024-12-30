@@ -6,9 +6,9 @@ solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
 source-git-commit: 0e4e4621abe02c022981e458282543908b2396c2
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1078'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -46,7 +46,7 @@ Mit Datenansichten können Sie die Schemaelement-Einstellungen spontan ändern, 
 * Sie können weitere schemabezogene Informationen zu Komponenten anzeigen, z. B.:
 
    * von welchem Datensatztyp („Ereignis“, „Profil“, „Lookup“, „Zusammenfassung“) die Komponente stammt
-   * auf welchem Schematyp (Zeichenfolge, Ganzzahl usw.) sie basiert und
+   * von welchem Schematyp (Zeichenfolge, Ganzzahl usw.) er stammt und
    * wie der Schemapfad (das XDM-Feld, auf dem sie basiert) lautet
 
 * Sie können eine Komponente taggen, um die Suche nach ihr in Workspace zu erleichtern.

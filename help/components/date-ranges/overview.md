@@ -36,47 +36,47 @@ Sie können auch einen Datumsbereich in einer Freiformtabelle als Metrik oder Di
 
 ![Verwendung des Datumsbereichs](/help/components/date-ranges/assets/date-ranges-usage.png)
 
-- **Metrik**. So können Sie beispielsweise eine Dimension für zwei verschiedene Monate mit einer bestimmten Metrik vergleichen.
-- **Dimension**. Zum Vergleich einer Metrik mit verschiedenen Dimensionselementen für die Datumsbereichsdimension.
+- **Metrik**. So vergleichen Sie beispielsweise eine Dimension für zwei verschiedene Monate mit einer bestimmten Metrik.
+- **Dimension**. So vergleichen Sie eine Metrik in verschiedenen Dimensionselementen für die Datumsbereichsdimension.
 
 >[!NOTE]
 >
->Wenn Sie Datumsbereiche in einer Freiformtabelle verwenden, überschreiben die Datumsbereiche den Kalender, der für den Bereich angegeben ist, zu dem die Freiformtabelle gehört.
+>Wenn Sie Datumsbereiche in einer Freiformtabelle verwenden, überschreiben die Datumsbereiche den Kalender, der für das Bedienfeld angegeben ist, zu dem die Freiformtabelle gehört.
 >
 
-Sie verwenden einen Datumsbereich wie [eine beliebige Komponente](/help/components/overview.md#analysis-workspace-components). Sie ziehen den Datumsbereich aus dem Komponentenbereich ![Kalender](/help/assets/icons/Calendar.svg) **[!UICONTROL Datumsbereiche]** und legen die Komponente auf:
+Sie verwenden einen Datumsbereich so, wie Sie [eine beliebige Komponente) ](/help/components/overview.md#analysis-workspace-components). Ziehen Sie den Datumsbereich aus dem Komponentenfeld ![Kalender](/help/assets/icons/Calendar.svg) **[!UICONTROL Datumsbereiche]** und legen Sie die Komponente ab:
 
-- **[!UICONTROL Kalender]**: Sie ![wechseln](/help/assets/icons/Switch.svg) **[!UICONTROL ersetzen]** die aktuelle Kalenderkonfiguration durch den Datumsbereich.
-- **Metrik-Spaltenüberschrift**: Sie ![wechseln](/help/assets/icons/Switch.svg) **[!UICONTROL ersetzen]** die Metrik, ![fügen](/help/assets/icons/Add.svg)**[!UICONTROL den Datumsbereich als Metrik hinzu ]**oder ![Filter](/help/assets/icons/Filter.svg)**[!UICONTROL  Filtern ]**die Metrik mithilfe der Datumsbereichskomponente.
-- **Spaltenüberschrift der Dimension**: Sie ![wechseln](/help/assets/icons/Switch.svg) **[!UICONTROL ersetzen]** die aktuellen Dimensionen. Die neue Dimension ist jetzt **[!UICONTROL Datumsbereiche]**. Sobald die Dimension Datumsbereiche ist, können Sie ![zusätzliche Datumsbereiche als Dimensionselemente hinzufügen](/help/assets/icons/Add.svg)**[!UICONTROL 2}.]**
-- **Dimension item**: Sie ![Aufschlüsselung](/help/assets/icons/Breakdown.svg) **[!UICONTROL Aufschlüsselung]** des jeweiligen Dimensionselements nach Datumsbereich.
+- **[!UICONTROL Kalender]**: Sie ![Umschalten](/help/assets/icons/Switch.svg) **[!UICONTROL Ersetzen]** die aktuelle Kalenderkonfiguration durch den Datumsbereich.
+- **Metrik-Spaltenüberschrift**: Sie ![Umschalten](/help/assets/icons/Switch.svg) **[!UICONTROL Ersetzen]** die Metrik, ![Hinzufügen](/help/assets/icons/Add.svg)**[!UICONTROL Hinzufügen ]**den Datumsbereich als Metrik oder ![Filter](/help/assets/icons/Filter.svg)**[!UICONTROL  Filter ]**die Metrik mithilfe der Datumsbereichskomponente.
+- **Spaltenüberschrift der Dimension**: Sie ![Umschalten](/help/assets/icons/Switch.svg) **[!UICONTROL Ersetzen]** die aktuellen Dimensionen. Die neue Dimension lautet jetzt **[!UICONTROL Datumsbereiche]**. Sobald es sich bei der Dimension um Datumsbereiche handelt, können ![Hinzufügen](/help/assets/icons/Add.svg)**[!UICONTROL Hinzufügen ]**zusätzliche Datumsbereiche als Dimensionselemente hinzufügen.
+- Dimension **Dimensionselement**: Sie ![Aufschlüsselung](/help/assets/icons/Breakdown.svg)**[!UICONTROL Aufschlüsselung]** das spezifische Dimensionselement nach dem Datumsbereich.
 
-Sie können auch eine Datumsbereichsspalte direkt in einer Freiformtabellen-Visualisierung hinzufügen:
+Sie können einer Freiformtabellen-Visualisierung auch direkt eine Datumsbereichsspalte hinzufügen:
 
-1. Wählen Sie in einer Metrikspalte aus dem Kontextmenü die Option:
+1. Wählen Sie in einer Metrikspalte aus dem Kontextmenü:
 
-   - **[!UICONTROL Spalte für den Zeitraum hinzufügen]**. Sie können zwischen vorgeschlagenen Optionen auswählen, die auf dem aktuellen Kalender basieren, oder einen [benutzerdefinierten Datumsbereich](#custom-date-ranges) erstellen.
-   - **[!UICONTROL Zeiträume vergleichen]**. Sie können zwischen einer vorgeschlagenen Option wählen, die auf dem aktuellen Kalender basiert, oder einen [benutzerdefinierten Datumsbereich](#custom-date-ranges) erstellen.
+   - **[!UICONTROL Spalte für Zeitraum hinzufügen]**. Sie können zwischen vorgeschlagenen Optionen wählen, die auf dem aktuellen Kalender basieren, oder einen [benutzerdefinierten Datumsbereich“ ](#custom-date-ranges).
+   - **[!UICONTROL Zeiträume vergleichen]**. Sie können zwischen einer vorgeschlagenen Option, die auf dem aktuellen Kalender basiert, und einem [benutzerdefinierten Datumsbereich“ ](#custom-date-ranges).
 
-1. Je nach Auswahl werden der Freiformtabelle zusätzliche Datumsbereichsspalten hinzugefügt.
+1. Je nach Ihrer Auswahl werden der Freiformtabelle zusätzliche Datumsbereichsspalten hinzugefügt.
 
-## Standarddatumsbereiche
+## Standardmäßige Datumsbereiche
 
-Analysis Workspace bietet eine Reihe von Standarddatumsbereichen.
+Analysis Workspace bietet eine Reihe von standardmäßigen Datumsbereichen.
 
 
 | Tag | Woche | Monat | Quartal | Jahr |
 |---|---|---|---|---|
 | Am aktuellen Tag | Diese Woche | Diesen Monat | Dieses Quartal | Dieses Jahr |
 | Am Vortag | Diese Woche (ohne heute) | Dieser Monat (ohne heute) | Dieses Quartal (ohne heute) | Dieses Jahr (ohne heute) |
-| Vor 2 Tagen | Vor 2 Wochen | Vor 2 Monaten |   |  |
-| Vor 3 Tagen | Vor 3 Wochen | Vor 3 Monaten |  | |
+| vor 2 Tagen | Vor 2 Wochen | vor 2 Monaten |   |  |
+| vor 3 Tagen | Vor 3 Wochen | vor 3 Monaten |  | |
 | Letzte 7 Tage | Letzte Woche | Letzter Monat | Letztes Quartal | Letztes Jahr |
 | Letzte 14 Tage | Letzte 2 volle Wochen | Letzte 2 volle Monate | Letzte 4 volle Quartale | |
-| Letzte 30 Tage | Letzte 3 volle Wochen | Letzte 3 volle Monate | | |
-| Letzte 60 Tage | Letzte 4 volle Wochen | Letzte 6 volle Monate | | |
-| Letzte 90 Tage | Letzte 12 volle Wochen | Letzte 12 volle Monate | | |
-| Letzte 7 volle Tage | Letzte 52 volle Wochen | Letzte 13 volle Monate | | |
+| Letzte 30 Tage | Letzte 3 volle Wochen | Letzte 3 Monate | | |
+| Letzte 60 Tage | Letzte 4 volle Wochen | Letzte 6 Monate | | |
+| Letzte 90 Tage | Letzte 12 volle Wochen | Letzte 12 Monate | | |
+| Letzte 7 volle Tage | Letzte 52 volle Wochen | Letzte 13 Monate | | |
 | Letzte 14 volle Tage | | | | |
 | Letzte 30 volle Tage | | | | |
 | Letzte 90 volle Tage | | | | |
@@ -85,6 +85,6 @@ Analysis Workspace bietet eine Reihe von Standarddatumsbereichen.
 
 ## Benutzerdefinierte Datumsbereiche
 
-Sie können eigene benutzerdefinierte Datumsbereiche erstellen. Unter [Datumsbereich erstellen](/help/components/date-ranges/create.md) finden Sie die verschiedenen Optionen zum Erstellen von Datumsbereichen. Anschließend erstellen, ändern und speichern Sie Datumsbereiche im [Generator für Datumsbereiche](create.md#date-range-builder).
+Sie können auch eigene benutzerdefinierte Datumsbereiche erstellen. Siehe [Datumsbereich erstellen](/help/components/date-ranges/create.md) für die verschiedenen verfügbaren Optionen zum Erstellen von Datumsbereichen. Anschließend erstellen, ändern und speichern Sie Datumsbereiche im [Datumsbereichsersteller](create.md#date-range-builder).
 
-Sie verwenden den [Datumsbereichsmanager](manage.md), um Datumsbereiche zu verwalten.
+Sie verwenden den [Datumsbereichsmanager](manage.md) um Datumsbereiche zu verwalten.

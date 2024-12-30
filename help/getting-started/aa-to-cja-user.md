@@ -8,7 +8,7 @@ exl-id: e4762cca-b2da-422b-b48f-2a5fec14c97f
 source-git-commit: a4b838f7813d78681eba072e4febd90ba0c7111d
 workflow-type: tm+mt
 source-wordcount: '1442'
-ht-degree: 99%
+ht-degree: 98%
 
 ---
 
@@ -24,7 +24,7 @@ Vieles beim Reporting hat sich nicht geändert.
 
 * Sie können weiterhin die Funktionen von [Analysis Workspace](/help/analysis-workspace/home.md) verwenden, um Ihre Daten zu analysieren. Der Arbeitsbereich funktioniert genauso wie im herkömmlichen Adobe Analytics.
 * Dieselbe Version von [Adobe Analytics-Dashboards](/help/mobile-app/home.md) ist verfügbar und funktioniert in Customer Journey Analytics und Adobe Analytics auf ähnliche Weise.
-* [Report Builder](/help/report-builder/report-buider-overview.md) verfügt über eine neue Benutzeroberfläche und läuft unter MS Windows, macOS und der Web-Version von Excel. (Vor dieser Version von Report Builder konnten Sie Report Builder nur dann auf Mac-Geräten verwenden, wenn das Programm auf VMware ausgeführt wurde.) Diese Version unterstützt die herkömmliche AA-Datenanfrage noch nicht.
+* [Report Builder](/help/report-builder/report-buider-overview.md) verfügt über eine neue Benutzeroberfläche und läuft unter MS Windows, macOS und der Web-Version von Excel. (Vor dieser Report Builder-Version konnten Sie in nur dann auf Mac verwenden, wenn es auf VMware ausgeführt wurde.) Diese Version unterstützt die herkömmliche AA-Datenanfrage noch nicht.
 
 ## Änderungen beim Reporting
 
@@ -92,7 +92,7 @@ Sie können auch mehrere Datenansichten haben, die auf derselben Verbindung basi
 
 ## Änderungen am Konzept der Klassifizierungen
 
-&quot;Classifications&quot;werden jetzt als *Lookup-Datensätze* bezeichnet. Lookup-Datensätze werden verwendet, um nach Werten oder Schlüsseln in Ihren Ereignis- oder Profildaten zu suchen. Beispielsweise können Sie Suchdaten hochladen, die numerische IDs in Ihren Ereignisdaten Produktnamen zuordnen.
+„Klassifizierungen“ werden jetzt als *Lookup-Datensätze* bezeichnet. Lookup-Datensätze werden verwendet, um nach Werten oder Schlüsseln in Ihren Ereignis- oder Profildaten zu suchen. Beispielsweise können Sie Suchdaten hochladen, die numerische IDs in Ihren Ereignisdaten den Produktnamen zuordnen.
 
 ## Änderungen am Konzept der Kundenattribute
 

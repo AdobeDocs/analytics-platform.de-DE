@@ -13,26 +13,26 @@ ht-degree: 10%
 # Berechnete Metriken taggen
 
 
-Im Manager für berechnete Metriken ](cm-manager.md) können Sie Tags verwenden, um berechnete Metriken zu organisieren. [ Administratoren können alle berechneten Metriken mit Tags versehen. Benutzer ohne Administratorrechte können nur die berechneten Metriken taggen, die sie erstellen oder für sie freigegeben wurden.
+Im [Manager für berechnete ](cm-manager.md)&quot; können Sie Tags verwenden, um berechnete Metriken zu organisieren. Admins können alle berechneten Metriken taggen. Nicht-Admins können nur die berechneten Metriken taggen, die sie erstellen oder die für sie freigegeben wurden.
 
-So taggen Sie eine oder mehrere berechnete Metriken:
+So kennzeichnen Sie eine oder mehrere berechnete Metriken:
 
-1. Wählen Sie im Manager für [berechnete Metriken](cm-manager.md) eine oder mehrere der berechneten Metriken aus, die Sie taggen möchten.
-1. Wählen Sie in der Aktionsleiste ![Beschriftungen](/help/assets/icons/Labels.svg) **[!UICONTROL Tag]** aus.
+1. Wählen [ im Manager für ](cm-manager.md) berechnete Metriken mindestens eine der berechneten Metriken aus, die Sie taggen möchten.
+1. Wählen Sie in der Aktionsleiste ![Kennzeichnungen](/help/assets/icons/Labels.svg) **[!UICONTROL Tag]** aus.
 1. Im Dialogfeld **[!UICONTROL Berechnete Metriken taggen]**
 
-   ![Dialogfeld für berechnete Metrik taggen](assets/tag-calculated-metric-dialog.png)
+   ![Dialogfeld „Berechnete Metrik taggen“](assets/tag-calculated-metric-dialog.png)
 
-   1. (Optional) Verwenden Sie ![Suchen](/help/assets/icons/Search.svg) , um nach der Liste der Tags zu suchen und diese einzuschränken.
+   1. (Optional) Verwenden Sie ![Suche](/help/assets/icons/Search.svg), um nach der Liste der Tags zu suchen und diese zu beschränken.
 
-   2. Basierend auf der Tag-Liste:
+   2. Basierend auf der Liste der Tags:
 
-      * einen oder mehrere vorhandene Tags aus der Liste auswählen oder
-      * Geben Sie ein neues Tag ein und drücken Sie **[!UICONTROL ENTER]**. Wiederholen Sie diesen Vorgang, um mehr als ein neues Tag hinzuzufügen.
+      * Wählen Sie ein oder mehrere vorhandene Tags aus der Liste aus oder
+      * geben Sie einen neuen Tag ein und drücken Sie **[!UICONTROL EINGABETASTE]**. Wiederholen Sie diesen Vorgang, um mehr als ein neues Tag hinzuzufügen.
 
-1. Wählen Sie **[!UICONTROL Speichern]** aus, um die Tags für die berechneten Metriken zu speichern. Wählen Sie **[!UICONTROL Abbrechen]** aus, um abzubrechen.
+1. Wählen Sie **[!UICONTROL Speichern]**, um die Tags für die berechneten Metriken zu speichern. Wählen Sie **[!UICONTROL Abbrechen]** zum Abbrechen aus.
 
-Nach dem Speichern werden die Tags im Feld [!UICONTROL Tag] für die ausgewählte berechnete Metrik im [Generator für berechnete Metriken](cm-tagging.md) aufgelistet.
+Nach dem Speichern werden die Tags im Feld [!UICONTROL Tag] für die ausgewählte berechnete Metrik im [Generator für berechnete Metriken](cm-tagging.md) aufgeführt.
 
 <!--
 

@@ -1,5 +1,5 @@
 ---
-description: Sie können Filter taggen, um sie zu organisieren.
+description: Sie können Filter taggen , um sie zu organisieren.
 title: Taggen von Filtern
 feature: Filters
 exl-id: d3b8d9f7-11a4-4eac-8c22-5c86601ec7f3
@@ -13,39 +13,39 @@ ht-degree: 2%
 
 # Taggen von Filtern
 
-Im [Filter-Manager](manage-filters.md) können Sie Filter mithilfe von Tags organisieren. Administratoren können alle Filter taggen. Nicht-Administratoren können nur die Filter taggen, die sie erstellen oder für sie freigegeben wurden.
+Im [Filter-Manager](manage-filters.md) können Sie Tags verwenden, um Filter zu organisieren. Admins können alle Filter taggen. Benutzerinnen und Benutzer ohne Administratorrechte können nur die von ihnen erstellten oder für sie freigegebenen Filter taggen.
 
-So taggen Sie einen oder mehrere Filter:
+So kennzeichnen Sie einen oder mehrere Filter:
 
-1. Wählen Sie im [Filter-Manager](manage-filters.md) mindestens einen Filter aus, den Sie taggen möchten.
-1. Wählen Sie in der Aktionsleiste ![Beschriftungen](/help/assets/icons/Labels.svg) **[!UICONTROL Tag]** aus.
-1. Im Dialogfeld **[!UICONTROL Tag-Filter]**:
+1. Wählen [ im ](manage-filters.md)-Manager einen oder mehrere der Filter aus, die Sie mit Tags versehen möchten.
+1. Wählen Sie in der Aktionsleiste ![Kennzeichnungen](/help/assets/icons/Labels.svg) **[!UICONTROL Tag]** aus.
+1. Im Dialogfeld **[!UICONTROL Tag-]**&quot;:
 
-   ![Dialogfeld &quot;Tag Filters&quot;](assets/tag-filter-dialog.png)
+   ![Dialogfeld „Tag-Filter“](assets/tag-filter-dialog.png)
 
-   1. (Optional) Verwenden Sie ![Suchen](/help/assets/icons/Search.svg) , um nach der Liste der Tags zu suchen und diese einzuschränken.
+   1. (Optional) Verwenden Sie ![Suche](/help/assets/icons/Search.svg), um nach der Liste der Tags zu suchen und diese zu beschränken.
 
-   2. Basierend auf der Tag-Liste:
+   2. Basierend auf der Liste der Tags:
 
-      * einen oder mehrere vorhandene Tags aus der Liste auswählen oder
-      * Geben Sie ein neues Tag ein und drücken Sie **[!UICONTROL ENTER]**. Wiederholen Sie diesen Vorgang, um mehr als ein neues Tag hinzuzufügen.
+      * Wählen Sie ein oder mehrere vorhandene Tags aus der Liste aus oder
+      * geben Sie einen neuen Tag ein und drücken Sie **[!UICONTROL EINGABETASTE]**. Wiederholen Sie diesen Vorgang, um mehr als ein neues Tag hinzuzufügen.
 
-1. Wählen Sie **[!UICONTROL Speichern]** aus, um die Tags für den Filter zu speichern. Wählen Sie **[!UICONTROL Abbrechen]** aus, um abzubrechen.
+1. Wählen **[!UICONTROL Speichern]**, um die Tags für den Filter zu speichern. Wählen Sie **[!UICONTROL Abbrechen]** zum Abbrechen aus.
 
-Nach dem Speichern werden die Tags im Feld [!UICONTROL Tag] für die ausgewählten Filter im [Filter-Builder](filter-builder.md) aufgelistet.
+Nach dem Speichern werden die Tags im Feld [!UICONTROL Tag] für die ausgewählten Filter im [Filter-Builder](filter-builder.md) aufgeführt.
 
 
-## Empfehlungen
+## Vorschläge
 
-Nachfolgend finden Sie einige Vorschläge zum Organisieren von Tags basierend auf:
+Im Folgenden finden Sie einige Vorschläge zum Organisieren von Tags basierend auf:
 
-* **Team**: Beispiel: Social Marketing, Mobile Marketing.
+* **Team**: z. B. Social Marketing, Mobile Marketing.
 
-* **Projekt**: Beispiel: Entrypage-Analyse.
+* **Projekt**: Zum Beispiel Einstiegsseitenanalyse.
 
-* **Kategorie**:. Zum Beispiel Männer, Frauen, Kinder.
+* **Kategorie**:. Männer, Frauen, Kinder zum Beispiel.
 
-* **Geografie**: Beispiel: USA, Kalifornien.
+* **Geografie**: Zum Beispiel: Vereinigte Staaten, Kalifornien.
 
-* **Workflow**: Beispiel: Genehmigung, Kuratierung
+* **Workflow**: Beispiel: zu genehmigen, zu kuratieren
 

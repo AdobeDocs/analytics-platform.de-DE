@@ -1,5 +1,5 @@
 ---
-description: Anzeigen und Verwalten von Scorecards für Analytics-Dashboards
+description: Anzeigen und Verwalten von Analytics-Dashboards - Scorecards
 title: Scorecards verwalten
 feature: Analytics Dashboards
 role: User, Admin
@@ -14,11 +14,11 @@ ht-degree: 66%
 
 # Scorecards verwalten
 
-In diesem Thema werden Kuratoren von Customer Journey Analytics-Daten angewiesen, wie Scorecard-Elemente angezeigt und verwaltet werden.
+In diesem Abschnitt erfahren Kuratoren, die Customer Journey Analytics-Daten erstellen, wie Scorecard-Elemente angezeigt und verwaltet werden.
 
 ## Anzeigen und Konfigurieren von Kacheleigenschaften {#tiles}
 
-Wenn Sie im Scorecard Builder auf eine Kachel klicken, zeigt die rechte Leiste die Eigenschaften und Eigenschaften an, die dieser Kachel und der zugehörigen Detailfolie zugeordnet sind. In dieser Leiste können Sie einen neuen **Titel** für die Kachel eingeben und die Kachel konfigurieren, indem Sie Filter anwenden. Segmente sind Filter im Customer Journey Analytics.
+Wenn Sie im Scorecard Builder auf eine Kachel klicken, zeigt die rechte Leiste die Eigenschaften und Merkmale an, die mit dieser Kachel und ihrer Detailfolie verbunden sind. In dieser Leiste können Sie einen neuen **Titel** für die Kachel eingeben und die Kachel konfigurieren, indem Sie Filter anwenden. Segmente sind Filter in Customer Journey Analytics.
 
 ![Kachel „Eigenschaften“](assets/properties-tile-new.png)
 
@@ -66,7 +66,7 @@ Um einer Detailfolie Text hinzuzufügen, wählen Sie ein Layout aus, für das da
 
 ## Entfernen von Komponenten {#remove}
 
-Um eine Komponente zu entfernen, die auf die gesamte Scorecard angewendet wird, klicken Sie auf eine beliebige Stelle außerhalb der Kacheln auf die Scorecard und entfernen Sie sie, indem Sie auf **x** klicken, der angezeigt wird, wenn Sie den Mauszeiger über die Komponente bewegen, wie unten für die **Erstbesuche** dargestellt:
+Um eine Komponente zu entfernen, die auf die gesamte Scorecard angewendet wird, klicken Sie außerhalb der Kacheln auf eine beliebige Stelle auf der Scorecard. Entfernen Sie die Komponente, indem Sie auf das **x** klicken, das angezeigt wird, wenn Sie den Mauszeiger über die Komponente bewegen, wie unten für die „Erstbesuche **dargestellt**:
 
 ![Entfernen von Komponenten](assets/new_remove.png)
 
@@ -74,13 +74,13 @@ Um eine Komponente zu entfernen, die auf die gesamte Scorecard angewendet wird, 
 
 Eine Daten-Story ist eine Sammlung unterstützender Datenpunkte, Geschäftskontexte und verwandter Metriken, die auf einem zentralen Thema oder einer zentralen Metrik basieren.
 
-Wenn Sie sich beispielsweise auf den Web-Traffic konzentrieren, kann es sich bei Ihrer wichtigsten Metrik um Besuche handeln, Sie können aber auch an neuen Personen und Einzelpersonen interessiert sein. Außerdem möchten Sie möglicherweise Daten sehen, die nach Web-Seite oder Gerätetyp aufgeschlüsselt sind, von dem der Traffic stammt. Daten-Storys in mobilen Scorecard-Projekten ermöglichen es Ihnen, die wichtigsten Metriken in den Vordergrund zu stellen und gleichzeitig die gesamte Story hinter den Metriken mithilfe mehrerer Detailfolien zu erzählen.
+Wenn Sie sich beispielsweise auf den Web-Traffic konzentrieren, können Besuche Ihre wichtigste Metrik sein, aber Sie sind möglicherweise auch an neuen Personen und Einzelpersonen interessiert. Vielleicht möchten Sie auch Daten sehen, die nach Web-Seite oder dem Gerätetyp aufgeschlüsselt sind, von dem der Traffic stammt. Daten-Storys in mobilen Scorecard-Projekten ermöglichen es Ihnen, die wichtigsten Metriken in den Vordergrund zu stellen und gleichzeitig die gesamte Story hinter den Metriken mithilfe mehrerer Detailfolien zu erzählen.
 
 Sehen Sie sich das Video an, um mehr über das Erstellen von Daten-Storys in Mobile-Scorecard-Projekten in Analysis Workspace zu erfahren.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3416392/?quality=12&learn=on)
 
-**So erstellen Sie einen Datenverlauf** {#data-story-create}
+**Erstellen einer Daten-Story** {#data-story-create}
 
 Erstellen Sie Ihre Daten-Story, indem Sie einer Kachel mehrere Detailfolien hinzufügen.
 
@@ -131,9 +131,9 @@ Um zwischen der Kachel und den Folien zu wechseln, tippen Sie auf die Navigation
 
 Sie können auch hin und her navigieren, indem Sie die Pfeile auf der Tastatur verwenden oder eine Komponente auswählen und links bzw. rechts auf dem Bildschirm gedrückt halten, um einen Bildlauf durchzuführen.
 
-## Vorschau der Scorecards {#preview}
+## Vorschau von Scorecards {#preview}
 
-Sie können eine Vorschau der Scorecard anzeigen, die nach ihrer Veröffentlichung in der Adobe Analytics-Dashboards-App angezeigt wird.
+Sie können eine Vorschau davon anzeigen, wie die Scorecard nach ihrer Veröffentlichung in der Adobe Analytics Dashboards App aussieht und funktioniert.
 
 1. Klicken Sie auf **[!UICONTROL Vorschau]** in der rechten oberen Ecke des Bildschirms.
 
@@ -157,7 +157,7 @@ So geben Sie die Scorecard für einen ausführenden Benutzer frei:
 
 1. Klicken Sie auf das Menü **[!UICONTROL Freigeben]** und wählen Sie **[!UICONTROL Scorecard freigeben]**.
 
-1. Füllen Sie die Felder im Formular **[!UICONTROL Mobile Scorecard freigeben]** aus, indem Sie:
+1. Füllen Sie im **[!UICONTROL Mobile Scorecard freigeben]** die Felder wie folgt aus:
 
    * den Namen der Scorecard angeben
    * eine Beschreibung der Scorecard angeben
@@ -168,27 +168,27 @@ So geben Sie die Scorecard für einen ausführenden Benutzer frei:
 
 ![Scorecards freigeben](assets/new_share.png)
 
-Nachdem Sie eine Scorecard freigegeben haben, können die Empfänger in den Analytics-Dashboards darauf zugreifen. Wenn Sie nachfolgende Änderungen an der Scorecard im Scorecard Builder vornehmen, werden diese automatisch in der freigegebenen Scorecard aktualisiert. Ausführende Benutzer sehen dann die Änderungen, nachdem sie die Scorecard in ihrer App aktualisiert haben.
+Nachdem Sie eine Scorecard freigegeben haben, können die Empfänger in den Analytics-Dashboards darauf zugreifen. Wenn Sie im Scorecard Builder nachfolgende Änderungen an der Scorecard vornehmen, werden diese automatisch in der freigegebenen Scorecard aktualisiert. Ausführende Benutzer sehen die Änderungen, nachdem sie die Scorecard in ihrer App aktualisiert haben.
 
 Wenn Sie die Scorecard durch Hinzufügen neuer Komponenten aktualisieren, sollten Sie die Scorecard erneut freigeben (und die Option zum **[!UICONTROL Freigeben eingebetteter Komponenten]** aktivieren), um sicherzustellen, dass die ausführenden Benutzer Zugriff auf diese Änderungen haben.
 
 ### Freigeben von Scorecards über einen freigebbaren Link
 
-Durch die Verwendung eines freigebbaren Links wird es einfach, eine Scorecard in einer E-Mail, einem Dokument oder einer Textnachrichten-App freizugeben. Über den freigebbaren Link können Empfänger die Scorecard auf ihrem Desktop oder in der mobilen Dashboards-App öffnen. Durch die gemeinsame Nutzung von Deep Linking können Sie Projekte einfacher freigeben und die Interaktion mit Ihren Stakeholdern steigern.
+Die Verwendung eines freigebbaren Links erleichtert die Freigabe einer Scorecard in einer E-Mail-, Dokument- oder Textnachrichten-App. Über den Freigabe-Link können Empfänger die Scorecard auf ihrem Desktop oder in der Dashboards-Mobile-App öffnen. Gemeinsame Deep-Linking erleichtert die Freigabe von Projekten und die Förderung der Interaktion mit Ihren Stakeholdern.
 
-So geben Sie eine Scorecard über einen freigebbaren Link frei
+So geben Sie eine Scorecard über einen Freigabe-Link frei
 
 1. Klicken Sie auf das Menü **[!UICONTROL Freigeben]** und wählen Sie **[!UICONTROL Scorecard freigeben]**.
 
    ![Scorecards freigeben](assets/share-scorecard.png)
 
-1. Kopieren Sie den Link und fügen Sie ihn in eine E-Mail, ein Dokument oder eine IM-App ein.
+1. Kopieren Sie den Link und fügen Sie ihn in eine E-Mail-, Dokument- oder IM-App ein.
 
-   Wenn ein Empfänger ein Desktop-Programm oder einen Browser verwendet, um den Link zu öffnen, wird das mobile Scorecard-Projekt in Workspace geöffnet.
+   Wenn ein Empfänger eine Desktop-Anwendung oder einen Browser verwendet, um den Link zu öffnen, wird das mobile Scorecard-Projekt in Workspace geöffnet.
 
-   Wenn ein Empfänger den Link auf einem Mobilgerät öffnet, wird die Scorecard direkt in der Adobe Analytics-Dashboards-App geöffnet.
+   Wenn ein Empfänger den Link auf einem Mobilgerät öffnet, wird die Scorecard direkt in der Adobe Analytics Dashboards App geöffnet.
 
-   Wenn ein Empfänger die App nicht heruntergeladen hat, wird er zur App-Liste im App Store- oder Google Play-Store weitergeleitet, wo er sie herunterladen kann.
+   Wenn ein Empfänger die Mobile App nicht heruntergeladen hat, wird er zur App-Liste im App Store oder Google Play Store weitergeleitet, wo er sie herunterladen kann.
 
 
 ## Dimensionselement des Typs [!UICONTROL Nicht angegeben] entfernen {#remove-dims}
@@ -198,27 +198,27 @@ Wenn Sie Dimensionselemente des Typs [!UICONTROL Nicht angegeben] aus Ihren Date
 1. Wählen Sie die richtige Kachel aus.
 1. Wählen Sie in der rechten Leiste unter **[!UICONTROL Drill-ins]** den Rechtspfeil neben dem Dimensionselement aus, für das Sie Elemente des Typs **[!UICONTROL Nicht angegeben]** entfernen möchten.
 
-   ![Eigenschaften mit Pfeil, der auf den Pfeil neben dem Dimensionsnamen zeigt.](assets/unspecified.png)
+   ![Eigenschaften mit Pfeil, der auf den Rechtspfeil neben dem Dimensionsnamen zeigt.](assets/unspecified.png)
 
 1. Klicken Sie auf das Symbol neben **[!UICONTROL Nicht angegeben]**, um nicht spezifizierte Daten aus Ihrem Reporting zu entfernen. (Sie können auch jedes andere Dimensionselement entfernen.)
 
-## Intelligente Beschriftungen in Scorecards anzeigen {#captions}
+## Anzeigen intelligenter Beschriftungen in Scorecards {#captions}
 
-Intelligente Untertitel können Nicht-Analytikern helfen, ohne die Hilfe von Analysten ihre Daten besser zu verstehen. Intelligente Untertitel verwenden fortschrittliches maschinelles Lernen und generative KI, um wertvolle Einblicke in natürliche Sprachen für Visualisierungen zu bieten.
+Intelligente Beschriftungen können Nicht-Analysten dabei helfen, ihre Daten ohne die Hilfe von Analysten besser zu verstehen. Intelligente Beschriftungen verwenden fortschrittliche Machine Learning-Algorithmen und generative KI, um wertvolle Erkenntnisse in natürlicher Sprache für Visualisierungen bereitzustellen.
 
-Diese Beschriftungen ermitteln wichtige statistische Einblicke in die Daten und formulieren sie in natürlicher Sprache, wodurch Nichtanalytiker ihre Datenkompetenz entwickeln können.
+Diese Untertitel wählen die wichtigsten statistischen Erkenntnisse aus den Daten aus und formulieren sie in natürlicher Sprache, wodurch Nicht-Analytiker ihre Datenkompetenz entwickeln können.
 
-Intelligente Beschriftungen sind für alle Visualisierungen in der Mobile App verfügbar, einschließlich Linien-, Ring-, Balkendiagramm- und Zusammenfassungsnummer.
+Intelligente Beschriftungen sind für alle Visualisierungen in der Mobile App verfügbar, einschließlich Linie, Ring, Balkendiagramm und Zusammenfassungsnummer.
 
-So zeigen Sie intelligente Untertitel in einer mobilen Scorecard an:
+So zeigen Sie intelligente Beschriftungen in einer mobilen Scorecard an:
 
-1. Klicken Sie in einer Scorecard auf eine Kachel. Klicken Sie in dieser Scorecard beispielsweise in das Liniendiagramm am unteren Rand.
+1. Klicken Sie in einer Scorecard auf eine Kachel. Klicken Sie in dieser Scorecard beispielsweise unten in das Liniendiagramm.
 
    ![Scorecard mit Linienvisualisierung](assets/caption1.png)
 
 1. Tippen Sie oben rechts auf das blaue Symbol, um die Beschriftungen zu generieren. Die Beschriftungen werden unter dem Liniendiagramm angezeigt.
 
-   ![Intelligente Beschriftung in Linienvisualisierung](assets/caption2.png)
+   ![Intelligente Beschriftung in der Linienvisualisierung](assets/caption2.png)
 
 1. Wischen Sie nach rechts, um alle intelligenten Beschriftungen anzuzeigen.
 
@@ -226,6 +226,6 @@ So zeigen Sie intelligente Untertitel in einer mobilen Scorecard an:
 
 1. Tippen Sie auf die schwarze Markierung in einer Beschriftung, um ein Problem zu melden, z. B. schädliche oder illegale Inhalte.
 
-   ![Berichtproblem mit Beschriftung](assets/caption-report.png)
+   ![Problem mit Beschriftung melden](assets/caption-report.png)
 
 1. Klicken Sie auf das X, um das Dialogfeld **[!UICONTROL Berichtsergebnisse]** zu verlassen.

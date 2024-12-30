@@ -20,24 +20,24 @@ Im [Filter-Manager](manage-filters.md) können Sie Filter freigeben. Abhängig v
 
 So geben Sie einen oder mehrere Filter frei:
 
-1. Wählen Sie im [Filter-Manager](manage-filters.md) einen oder mehrere der Filter aus, die Sie freigeben möchten.
-1. Wählen Sie in der Aktionsleiste ![Freigabe](/help/assets/icons/ShareAlt.svg) **[!UICONTROL Freigabe]** aus.
-1. Im Dialogfeld **[!UICONTROL Filter freigeben]** :
+1. Wählen [ im ](manage-filters.md)-Manager einen oder mehrere Filter aus, die Sie freigeben möchten.
+1. Wählen Sie in der Aktionsleiste ![Freigeben](/help/assets/icons/ShareAlt.svg) **[!UICONTROL Freigeben]** aus.
+1. Im Dialog **[!UICONTROL Filter freigeben]**:
 
-   ![Dialogfeld &quot;Filter freigeben&quot;](assets/share-filter-dialog.png)
+   ![Dialogfeld „Filter freigeben“](assets/share-filter-dialog.png)
 
-   1. (Optional) Verwenden Sie ![Suche](/help/assets/icons/Search.svg), um *Einzelpersonen oder Gruppen zu durchsuchen*, um die Liste der Gruppen oder Einzelanwender zu finden, für die Sie den Filter freigeben möchten.
+   1. (Optional) Verwenden Sie ![Suche](/help/assets/icons/Search.svg), um *Einzelpersonen oder Gruppen suchen* die Liste der Gruppen oder Einzelpersonen, für die Sie den Filter freigeben möchten, zu suchen und einzuschränken.
 
-   1. Wählen Sie eine oder mehrere Optionen im Abschnitt **[!UICONTROL Organisation]** oder **[!UICONTROL Gruppen]** aus oder suchen Sie nach einer oder mehreren Einzelpersonen und wählen Sie diese aus. Welche Optionen verfügbar sind, hängt von Ihrer Rolle ab.
+   1. Wählen Sie eine oder mehrere Optionen aus dem Abschnitt **[!UICONTROL Organisation]** oder **[!UICONTROL Gruppen]** oder suchen Sie nach einer oder mehreren Einzelpersonen und wählen Sie diese aus. Welche Optionen verfügbar sind, hängt von Ihrer Rolle ab.
 
-   1. Wählen Sie **[!UICONTROL Speichern]** aus, um die Filter freizugeben. Wählen Sie **[!UICONTROL Abbrechen]** aus, um abzubrechen.
+   1. Wählen Sie **[!UICONTROL Speichern]** aus, um die Filter freizugeben. Wählen Sie **[!UICONTROL Abbrechen]** zum Abbrechen aus.
 
 ## Best Practices
 
-Im Folgenden finden Sie einige Best Practices, wenn Sie Filter freigeben und für wen Sie Filter freigeben sollten.
+Im Folgenden finden Sie Best Practices für die Freigabe von Filtern und für die Freigabe von Filtern.
 
-* Geben Sie als Administrator einen Filter nur dann für Alle frei, wenn Sie überzeugt sind, dass die Verwendung der Filter für andere Personen in Ihrer Organisation von Vorteil ist. Sie können auch erwägen, diese Filter zu favorisieren. Weitere Informationen finden Sie unter [Filter als Favoriten markieren](filters-favorite.md) .
+* Geben Sie als Administrator nur dann einen Filter für alle frei, wenn Sie überzeugt sind, dass die Verwendung der Filter für alle in Ihrem Unternehmen geeignet ist. Sie können auch erwägen, diese Filter zu bevorzugen. Weitere [ finden Sie unter ](filters-favorite.md) als Favorit markieren .
 
-* Geben Sie als Administrator einen Filter für eine bestimmte Gruppe frei, wenn dieser Filter für den Teil der Benutzer dieser Gruppe einen Geschäftswert bietet
+* Geben Sie als Administrator einen Filter für eine bestimmte Gruppe frei, wenn dieser Filter einen geschäftlichen Nutzen für die Benutzer dieser Gruppe bietet
 
-* Geben Sie als Administrator oder als einzelner Benutzer einen Filter für eine oder mehrere Einzelanwender frei, um einen Filter zu validieren. Wenn sich die Filter als nicht nützlich erweisen, können Sie den Filter löschen.
+* Geben Sie als Administrator oder einzelner Benutzer einen Filter für eine oder mehrere Personen frei, um einen Filter zu validieren. Wenn sich die Filter als nicht nützlich erweisen, können Sie den Filter löschen.

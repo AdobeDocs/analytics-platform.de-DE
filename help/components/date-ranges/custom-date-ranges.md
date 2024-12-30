@@ -18,22 +18,22 @@ Dieser Artikel zeigt weitere Beispiele für benutzerdefinierte Datumsbereiche
 
 
 
-## Letzte zwei Monate
+## Letzte vor zwei Monaten
 
 +++ Details
 
 Sie möchten einen benutzerdefinierten Datumsbereich definieren, der vor zwei Monaten definiert wurde. Sie verwenden eine der Vorgaben.
 
-![Letzte 2 Monate vor ](assets/date-range-example-simple.png)
+![Letzte 2 Monate her](assets/date-range-example-simple.png)
 
 +++
 
 
-## Rollierend bis zum Ende der letzten Woche
+## Rollierend bis Ende letzter Woche
 
 +++ Details
 
-Sie möchten einen Datumsbereich definieren, der den Zeitraum zwischen dem aktuellen Tag vor einer Woche und dem Ende dieser letzten Woche definiert. Wenn heute beispielsweise Mittwoch, der 11. September 2024 ist. Sie möchten einen Datumsbereich zwischen Mittwoch, 4. September 2024 und Samstag, 7. September 2024 festlegen. September
+Sie möchten einen Datumsbereich definieren, der den Zeitraum zwischen dem aktuellen Tag vor einer Woche und dem Ende derselben letzten Woche definiert. Wenn heute beispielsweise Mittwoch, der 11. September 2024 ist. Sie möchten einen Datumsbereich von Mittwoch, 4. September 2024 bis Samstag, 7. September 2024. September
 
 ![Beispiel für einen Datumsbereich](assets/date-range-example.png)
 

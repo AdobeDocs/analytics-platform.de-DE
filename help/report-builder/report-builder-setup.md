@@ -1,6 +1,6 @@
 ---
 title: Einrichten von Report Builder in Customer Journey Analytics
-description: Beschreibt, wie Report Builder in Customer Journey Analytics eingerichtet wird
+description: Beschreibt das Einrichten von Report Builder in Customer Journey Analytics
 role: User
 feature: Report Builder
 type: Documentation
@@ -15,7 +15,7 @@ ht-degree: 87%
 
 # Einrichten von Report Builder
 
-Über das Excel-Add-in-Menü können Sie schnell auf den Report Builder zugreifen.
+Über das Excel-Add-in-Menü können Sie schnell auf Report Builder zugreifen.
 
 ## Voraussetzungen
 
@@ -72,7 +72,7 @@ So laden Sie das Report Builder-Add-in herunter und installieren es
 
 Wenden Sie sich an Ihre IT- oder Sicherheitsabteilung, um eine Genehmigung für das Report Builder-Add-in anzufordern. Nachdem die Genehmigung erteilt wurde, wählen Sie im Dialogfeld „Office-Add-Ins“ die Registerkarte „Admin Managed“ aus.
 
-![Die Registerkarte &quot;Admin Managed&quot;im Dialogfeld &quot;Office Add-Ins&quot;.](./assets/image1.png)
+![Die Registerkarte „Admin Managed“ im Dialogfeld „Office-Add-Ins“.](./assets/image1.png)
 
 Nach der Installation des Report Builder-Add-ins wird das Report Builder-Symbol im Excel-Band auf der Registerkarte „Start“ angezeigt.
 
@@ -88,7 +88,7 @@ Nachdem Sie das Report Builder for Excel-Add-in für Ihr Betriebssystem oder Ihr
 
 1. Klicken Sie in der Adobe Report Builder-Symbolleiste auf **Anmelden**.
 
-   ![Klicken Sie auf die Schaltfläche zum Anmelden des Report Builders.](./assets/rb_login.png)
+   ![Klicken Sie auf die Schaltfläche Report Builder-Anmeldung.](./assets/rb_login.png)
 
 1. Geben Sie Ihre Adobe Experience ID-Kontoinformationen ein. Ihre Kontoinformationen sollten mit Ihren Customer Journey Analytics-Anmeldedaten übereinstimmen.
 
@@ -114,6 +114,6 @@ Sie können sich über das Benutzerprofil von Report Builder abmelden.
 
 1. Klicken Sie auf das Avatar-Symbol, um Ihr Benutzerprofil anzuzeigen.
 
-   ![Ihr Benutzerprofilavatar und die Schaltfläche &quot;Abmelden&quot;.](./assets/image6.png)
+   ![Ihr Benutzerprofilavatar und die Schaltfläche Abmelden.](./assets/image6.png)
 
 1. Klicken Sie auf **Abmelden**.

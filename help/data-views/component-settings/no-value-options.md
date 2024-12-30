@@ -41,4 +41,4 @@ Mit Optionen für keinen Wert können Sie festlegen, wie Analysis Workspace Situ
 
 ## Blogpost
 
-Hier ist ein verwandter Blogpost über [Umgang mit &quot;no value&quot; in Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/handling-quot-no-value-quot-in-customer-journey-analytics/ba-p/597339).
+Hier ist ein Blogpost über [Umgang mit „no value“ auf Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/handling-quot-no-value-quot-in-customer-journey-analytics/ba-p/597339).

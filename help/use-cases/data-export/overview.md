@@ -1,6 +1,6 @@
 ---
 title: Anwendungsfälle für den Datenexport
-description: Verstehen verschiedener Anwendungsfälle für den Datenexport zum Customer Journey Analytics
+description: Verschiedene Anwendungsfälle für Datenexporte zum Customer Journey Analytics
 solution: Customer Journey Analytics
 feature: Use Cases
 role: Admin
@@ -14,66 +14,66 @@ ht-degree: 1%
 
 # Anwendungsfälle für den Datenexport
 
-In diesem Abschnitt finden Sie Anwendungsbeispiele für den Datenexport und die Implementierung dieser Anwendungsfälle mit einer oder mehreren Funktionen von Customer Journey Analytics oder Experience Platform. Jede Funktion wird in einem separaten Artikel näher beschrieben.
+In diesem Abschnitt finden Sie Anwendungsfälle für Datenexporte und erfahren, wie Sie diese Anwendungsfälle mit einer oder mehreren Funktionen von Customer Journey Analytics oder Experience Platform implementieren. Jede Funktion wird in einem separaten Artikel näher beschrieben.
 
 ## Einführung
 
-Einer der eindeutigen Unterschiede zwischen Adobe Analytics und Customer Journey Analytics besteht in der Verarbeitung von Daten für die Attribution und Sitzungserstellung. Weitere Informationen finden Sie unter [Datenverarbeitung in Adobe Analytics und Customer Journey Analytics vergleichen](/help/getting-started/aa-vs-cja/data-processing-comparisons.md) .
+Einer der einzigartigen Unterschiede zwischen Adobe Analytics und Customer Journey Analytics besteht in der Verarbeitung von Daten für die Attribution und Sitzungserstellung. Weitere [ finden Sie unter „Vergleich der Datenverarbeitung in Adobe Analytics ](/help/getting-started/aa-vs-cja/data-processing-comparisons.md) Customer Journey Analytics&quot;.
 
-### Adobe Analytics: Attribution der Sammlungszeit und Sitzungserstellung.
+### Adobe Analytics: Attribution und Sitzungserstellung der Erfassungszeit.
 
-In Adobe Analytics werden alle Ereignisse live und in Reihenfolge nach Geräte-ID verarbeitet, sodass Adobe Clickstream-Daten mit beibehaltenen oder zugewiesenen Werten zur Erfassungszeit generieren, speichern und exportieren kann, einschließlich:
+In Adobe Analytics werden alle Ereignisse live und in der richtigen Reihenfolge nach Geräte-ID verarbeitet, sodass Adobe Clickstream-Daten mit persistierten oder zugewiesenen Werten zur Erfassungszeit generieren, speichern und exportieren kann, darunter:
 
-* Persistenz der Dimension (z. B. Kampagnen-Trackingcodes, die nach 90 Tagen ablaufen).
+* Persistenz der Dimensionen (z. B. Kampagnen-Trackingcodes, die nach 90 Tagen ablaufen).
 * Besuchsnummer und Sitzungserstellung.
-* Dimensionen, berechnet durch Verarbeitungs- und VISTA-Regeln.
+* Werte der Dimension, berechnet durch Verarbeitungs- und VISTA-Regeln.
 
 Dies wirkt sich auf den Export von Daten aus Adobe Analytics aus:
 
 * Die Datenverarbeitung ist nach der ersten Erfassung statisch.
-* Datenfeeds enthalten &quot;Post&quot;-Spalten, die die Verarbeitung der Erfassungszeit widerspiegeln.
+* Daten-Feeds enthalten „Post“-Spalten, die die Verarbeitung zur Sammlungszeit widerspiegeln.
 
 
-### Customer Journey Analytics: Attribution und Sitzungserstellung der Abfragezeit
+### Customer Journey Analytics: Attribution und Sitzungserstellung zur Abfragezeit
 
-Unter Customer Journey Analytics werden Ereignisse nicht der Reihe nach erfasst und anstelle einer Geräte-ID wird eine Personen-ID verwendet, sodass Customer Journey Analytics die Attribution und Sitzungserstellung zum Zeitpunkt des Berichts aktualisieren kann. Diese Art der Datenerfassung bietet Flexibilität, z. B.:
+Beim Customer Journey Analytics werden Ereignisse nicht der Reihe nach erfasst, und anstelle einer Geräte-ID wird eine Personen-ID verwendet, sodass Customer Journey Analytics die Attribution und die Sitzungserstellung zum Zeitpunkt der Berichterstellung aktualisieren kann. Diese Art der Datenerfassung bietet Flexibilität, z. B.:
 
-* Durch die Zuordnung können _Daten täglich oder wöchentlich wiederholt werden_, wodurch anonyme Ereignisse bekannten Ereignissen zugeordnet werden. Weitere Informationen finden Sie unter [Stitching](../../stitching/overview.md) .
-* Die Sessionierung und beibehaltene Werte ändern sich jedes Mal
+* Beim Stitching können _Daten_ oder wöchentlich wiedergegeben werden, wobei anonyme Ereignisse bekannten Ereignissen zugeordnet werden. Weitere Informationen finden [ unter ](../../stitching/overview.md).
+* Sitzungserstellung und beibehaltene Werte ändern sich jedes Mal
    * neue Daten erfasst werden oder
-   * Beim Zuordnen werden Ereignisse zum Verlauf einer Person hinzugefügt.
+   * Das Zusammenfügen fügt Ereignisse zum Verlauf einer Person hinzu.
 
-Die Berichtszeitverarbeitung wirkt sich auf den Export von Daten von Customer Journey Analytics aus. Exporte, die beibehaltene Werte enthalten, stimmen nicht mit Customer Journey Analytics-Berichten überein, und die Werte werden im Laufe der Zeit verworfen.
+Die Berichtszeitverarbeitung wirkt sich auf den Datenexport vom Customer Journey Analytics aus. Exporte, die persistente Werte enthalten, stimmen nicht mit dem Customer Journey Analytics von Berichten überein, und Werte verschwinden mit der Zeit.
 
-Zur Konsistenz der Metriken wird die Verwendung der neuen Funktionen im Customer Journey Analytics bevorzugt. Im Allgemeinen übersteigt die Experience Platform- und Customer Journey Analytics-Datenexportfunktion die Daten-Feed-Funktion von Adobe Analytics. Experience Platform und Customer Journey Analytics bieten Folgendes:
+Aus Gründen der Metrikkonsistenz wird die Verwendung der neuen Funktionen beim Customer Journey Analytics bevorzugt. Im Allgemeinen übersteigen die Funktionen zum Exportieren von Experience Platform- und Customer Journey Analytics-Daten die Daten-Feed-Funktionen von Adobe Analytics. Experience Platform und Customer Journey Analytics bieten Folgendes:
 
-* neue Datenquellen und Verarbeitungen, die dem Datenexport unterliegen
+* Neue Datenquellen und Verarbeitungen, die dem Datenexport unterliegen
 
-   * nicht digitale Datenquellen einschließen,
-   * benutzerdefinierte Attribution und Sitzungserstellung auf der Grundlage von Geschäftsregeln anwenden und
-   * halten Sie die Journey der Kunden über das Stitching auf dem Laufenden.
+   * Nicht-digitale Datenquellen einschließen,
+   * benutzerdefinierte Attribution und Sitzungserstellung basierend auf Geschäftsregeln anwenden und
+   * Halten Sie die Journey der Kunden beim Zusammenfügen auf dem neuesten Stand.
 
-* Implementierung von maßgeschneiderten Anwendungsfällen für den Datenexport
+* Realisierung maßgeschneiderter Anwendungsfälle für den Datenexport
 
-   * Daten an die Stelle exportieren, an die Sie sie benötigen, einschließlich Business Intelligence-Tools (BI) und Cloud-Zielen;
-   * Daten mithilfe der BI-Tools-Integration mit Analysis Workspace synchronisieren lassen,
-   * keine Notwendigkeit besteht, die Verarbeitungslogik in Ihren eigenen Systemen zu replizieren,
-   * neue Unterstützung für berechnete Metriken, abgeleitete Felder und Segmentierung sowie
+   * Exportieren Sie Daten dorthin, wo Sie sie benötigen, einschließlich Business Intelligence (BI)-Tools und Cloud-Ziele,
+   * die Synchronisierung von Daten mit Analysis Workspace durch die Integration von BI-Tools,
+   * Keine Notwendigkeit, die Verarbeitungslogik in Ihren eigenen Systemen zu replizieren,
+   * Neue Unterstützung für berechnete Metriken, abgeleitete Felder und Segmentierung
 
-* Berücksichtigung von Sicherheit und Data Governance bei der Konzeption
+* Berücksichtigung von Sicherheit und Data Governance per Design
 
-   * den gesamten Datenexport nach Benutzer und Ziel überwachen,
-   * Festlegung von Beschränkungen dafür, welche Daten für den Export verfügbar sind, und
-   * Warnhinweise für Versandprobleme und Einschränkungen bei geplanten Versandfenstern festlegen.
+   * alle Datenexporte nach Benutzer und Ziel überwachen,
+   * Sie legt Grenzen für die Daten fest, die für den Export verfügbar sind.
+   * Warnhinweise für Versandprobleme und Einschränkungen bei terminierten Versandfenstern festlegen.
 
 
-## Anwendungsbeispiele und Funktionen
+## Anwendungsfälle und Funktionen
 
-Im Allgemeinen unterstützt der Datenexport eine Reihe von Anwendungsfällen. Jeder Anwendungsfall unterscheidet sich hinsichtlich der erforderlichen Daten und des Zugriffs und Exports auf diese Daten. Experience Platform und Customer Journey Analytics bieten eine Reihe von Funktionen, die entweder unabhängig oder kombiniert die verschiedenen Anwendungsfälle lösen können. Die nachstehende Tabelle bietet einen Überblick über die Anwendungsfälle für identifizierte Datenexporte und die Experience Platform- und Customer Journey Analytics-Funktionen zur Implementierung dieser Anwendungsfälle.
+Im Allgemeinen unterstützt der Datenexport eine Reihe von Anwendungsfällen. Jeder Anwendungsfall unterscheidet sich hinsichtlich der erforderlichen Daten und der Art und Weise, wie auf diese Daten zugegriffen werden kann und wie sie exportiert werden. Experience Platform und Customer Journey Analytics bieten eine Reihe von Funktionen, die entweder unabhängig voneinander oder kombiniert die verschiedenen Anwendungsfälle lösen können. Die nachstehende Tabelle bietet einen Überblick über identifizierte Anwendungsfälle für Datenexporte und die Experience Platform- und Customer Journey Analytics-Funktionen zur Implementierung dieser Anwendungsfälle.
 
-| Anwendungsfälle für den Datenexport | Experience Platform und Customer Journey Analytics |
+| Anwendungsfälle für den Datenexport | Experience Platform- und Customer Journey Analytics-Funktionen |
 |---|---|
-| **Datensicherung**<br/> Speichern Sie eine vollständige Kopie Ihrer digitalen Daten aus Compliance- oder Regelungsgründen. | **Experience Platform**: [**Exportieren Sie Datensätze**](export-datasets.md)<br/> Exportieren Sie in Experience Platform erfasste Daten direkt in Cloud-Ziele, und zwar zeitplanmäßig oder ad-hoc. |
-| **Datenvalidierung**<br/> Bewerten Sie Clickstream-Daten auf ihre Genauigkeit bei der Datenerfassung. | **Experience Platform**: [**Query Service (Data Distiller) und Export von Datensätzen**](queryservice-export-datasets.md)<br/> Interaktive PostgreSQL-Schnittstelle zum Ausführen von Ad-hoc-SQL-Abfragen mithilfe Ihres bevorzugten SQL-Tools zur Überprüfung der Daten in Ihren Datensätzen.<br/><br/>**Customer Journey Analytics**: [**Exportieren Sie die vollständige Tabelle**](export-full-table.md)<br/> Validieren Sie verarbeitete Daten aus CJA mit angewendeter Attribution und Sitzungserstellung. |
-| **Data Lake-, Data Warehouse- oder BI-Tools**<br/> Bringen Sie digitale Daten in Ihre eigenen BI-Tools oder in den Data Lake zur Verwendung mit zusätzlichen Datensätzen. | **Customer Journey Analytics**: [**BI-Erweiterung**](bi-extension.md)<br/> Fügen Sie Customer Journey Analytics verarbeitete Metriken zu Datenvisualisierungs-Tools wie Power BI hinzu und kombinieren Sie sie mit zusätzlichen Daten für benutzerdefinierte Berichte <br/><br/>**Experience Platform**: [**Abfragedienst (Data Distiller) und exportieren Sie Datensätze**](queryservice-export-datasets.md)<br> Generieren Sie benutzerdefinierte Clickstream-Daten mit SQL, die an Cloud-Ziele bereitgestellt werden. |
-| **Bereitschaft für KI/ML**<br/> Verbessern der Modelle und Aufgaben für künstliche Intelligenz/maschinelles Lernen mit Customer Journey Analytics-Daten. | **Customer Journey Analytics**: [**Exportieren Sie die vollständige Tabelle**](export-full-table.md)<br/> Exportieren Sie verarbeitete Dimensionen und Metriken aus der Customer Journey Analytics in Cloud-Ziele einmalig oder wiederkehrend, einschließlich berechneter Metriken und Segmentierung.<br/><br/>**Experience Platform**: [**Query Service (Data Distiller) und Export von Datensätzen**](queryservice-export-datasets.md)<br/> Generieren Sie benutzerdefinierte Clickstream-Daten mit SQL, um KI-/ML-Modelle anzureichern. |
+| **Datensicherung:**<br/> Sie eine vollständige Kopie Ihrer digitalen Daten für Compliance- oder behördliche Zwecke auf. | **Experience Platform**: [**Exportieren von Datensätzen**](export-datasets.md)<br/> Exportieren Sie in Experience Platform erfasste Daten direkt in Cloud-Ziele nach einem Zeitplan oder Ad-hoc. |
+| **Datenvalidierung**<br/> Auswerten von Clickstream-Daten auf Genauigkeit bei der Datenerfassung. | **Experience Platform**: [**Abfrage-Service (Data Distiller) und Datensätze exportieren**](queryservice-export-datasets.md)<br/> Interaktive PostgreSQL-Schnittstelle zum Ausführen von Ad-hoc-SQL-Abfragen mithilfe Ihres bevorzugten SQL-Tools zum Überprüfen der Daten in Ihren Datensätzen.<br/><br/>**Customer Journey Analytics**: [**Vollständige Tabelle exportieren**](export-full-table.md)<br/> Verarbeitete Daten aus CJA mit angewendeter Attribution und Sitzungserstellung validieren. |
+| **Data Lake, Data Warehouse oder BI-Tools**<br/> Bringen Sie digitale Daten in Ihre eigenen BI-Tools oder in den Data Lake zur Verwendung mit zusätzlichen Datensätzen. | **Customer Journey Analytics**: [**BI-Erweiterung**](bi-extension.md)<br/> Fügen Sie verarbeitete Customer Journey Analytics-Metriken zu Datenvisualisierungs-Tools wie Power BI hinzu und kombinieren Sie sie mit zusätzlichen Daten für benutzerdefinierte Berichte <br/><br/>**Experience Platform**: [**Abfrage-Service (Data Distiller) und Datensätze exportieren**](queryservice-export-datasets.md)<br> Generieren Sie benutzerdefinierte Clickstream-Daten mithilfe von SQL, die an Cloud-Ziele bereitgestellt werden sollen. |
+| **Bereitschaft für KI/ML**<br/> Verbesserung von Modellen und Aufgaben für künstliche Intelligenz/maschinelles Lernen mit Customer Journey Analytics-Daten. | **Customer Journey Analytics**: [**Vollständige Tabelle exportieren**](export-full-table.md)<br/> Exportieren Sie verarbeitete Customer Journey Analytics-Dimensionen und -Metriken einmal oder wiederholt an Cloud-Ziele, einschließlich berechneter Metriken und Segmentierung.<br/><br/>**Experience Platform**: [**Abfrage-Service (Data Distiller) und Exportieren von Datensätzen**](queryservice-export-datasets.md)<br/> Generieren von benutzerdefinierten Clickstream-Daten mithilfe von SQL zur Anreicherung von KI-/ML-Modellen. |

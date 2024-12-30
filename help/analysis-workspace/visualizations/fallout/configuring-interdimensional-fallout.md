@@ -1,5 +1,5 @@
 ---
-description: Mit der Trichteranalyse in Analysis Workspace können Sie Dimensionen und Metriken als Touchpoints in Trichtern und Workflows kombinieren. Fallouts bieten Ihnen mehr Flexibilität bei der Definition der Benutzerschritte, die Sie untersuchen möchten.
+description: Mit Fallout in Analysis Workspace können Sie Dimensionen und Metriken als Touchpoints in Trichtern und Workflows kombinieren. Fallouts bieten Ihnen mehr Flexibilität bei der Definition der Benutzerschritte, die Sie untersuchen möchten.
 title: Interdimensionaler Fallout
 feature: Visualizations
 exl-id: 7975324c-4efc-4c36-bc83-dcde85d2febc
@@ -13,18 +13,18 @@ ht-degree: 7%
 
 # Interdimensionaler Fallout
 
-Mit der Trichteranalyse in Analysis Workspace können Sie Dimensionen und Metriken als Touchpoints in Trichtern und Workflows kombinieren. Fallouts bieten Ihnen mehr Flexibilität bei der Definition der Benutzerschritte, die Sie untersuchen möchten.
+Mit Fallout in Analysis Workspace können Sie Dimensionen und Metriken als Touchpoints in Trichtern und Workflows kombinieren. Fallouts bieten Ihnen mehr Flexibilität bei der Definition der Benutzerschritte, die Sie untersuchen möchten.
 
-Beispielsweise können Sie zusätzlich zu einer Dimension &quot;Seite&quot;weitere Dimensionselemente (wie einen bestimmten Gerätenamen aus der Dimension Gerätename ) zu einer Fallout-Visualisierung hinzufügen. Durch die Kombination von Dimensionen können Sie visualisieren, wie Seiten und bestimmte Aktionen in den Pfaden von Kunden interagieren.
+Beispielsweise können Sie zusätzlich zu einer Seitendimension weitere Dimensionselemente (wie einen bestimmten Gerätenamen aus der Dimension Gerätename) zu einer Fallout-Visualisierung hinzufügen. Durch Kombinieren von Dimensionen können Sie visualisieren, wie Seiten und bestimmte Aktionen in den Pfaden der Kunden interagieren.
 
-![Die Ansicht &quot;Alle Besuche&quot;mit mehreren Dimensionen als Touchpoints.](assets/fallout-otherdimension.png)
+![Die Ansicht „Alle Besuche“, die mehrere Dimensionen als Touchpoints anzeigt.](assets/fallout-otherdimension.png)
 
 Der Fallout wird dynamisch aktualisiert und zeigt Ihnen den Fallout über mehrere Dimensionen hinweg an.
 
-Sie können auch Metriken hinzufügen. Sie können beispielsweise den Metrik-Aufruf hinzufügen, um nur Pfade für Benutzer anzuzeigen, für die es Aufrufe gibt und die das Callcenter kontaktiert haben:
+Sie können auch Metriken hinzufügen. Sie können beispielsweise die Metrik Aufruf hinzufügen, um nur Pfade für Benutzer anzuzeigen, für die Anrufe vorhanden sind und die sich an das Callcenter gewandt haben:
 
-![Die Ansicht &quot;Alle Besuche&quot;mit der hinzugefügten Metrik: &quot;Freigegebenes Foto&quot;.](assets/fallout-metrics.png)
+![Die Ansicht „Alle Besuche“, die die hinzugefügte Metrik „Freigegebenes Foto“ anzeigt.](assets/fallout-metrics.png)
 
-Sie können Dimensionen und Metriken kombinieren. Ziehen Sie eine andere Dimension oder Metrik auf eine vorhandene. Beispielsweise um die Auswirkungen von Personen zu verstehen, die über eine iPhone verfügen und das Callcenter kontaktiert haben.
+Sie können Dimensionen und Metriken kombinieren. Ziehen Sie eine andere Dimension oder Metrik auf eine vorhandene. Um beispielsweise die Auswirkungen auf Personen zu verstehen, die einen iPhone haben und das Callcenter kontaktiert haben.
 
-![Die Ansicht &quot;Alle Besuche&quot;mit dem hinzugefügten Aktionsnamen: Freigegebene UND freigegebene Fotometrik.](assets/fallout-combined.png)
+![Die Ansicht „Alle Besuche“, die den hinzugefügten Aktionsnamen anzeigt: Metrik „Freigegebene und freigegebene Fotos“.](assets/fallout-combined.png)

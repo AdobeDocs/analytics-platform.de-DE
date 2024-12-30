@@ -7,7 +7,7 @@ role: User
 source-git-commit: de04792035aa7c235751019ee9f9fe5b74b9b102
 workflow-type: tm+mt
 source-wordcount: '314'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -30,10 +30,10 @@ Im Folgenden finden Sie eine Liste der bekannten Einschränkungen in Analysis Wo
 
 ## Filter
 
-* Bestimmte Metriken und Dimensionen können nicht gefiltert werden, z. B. [!UICONTROL Ereignisse], [!UICONTROL Personen] usw.
-* In der [Dropzone des Bedienfelds](/help/analysis-workspace/c-panels/panels.md) erstellte Ad hoc-Filter sind eine Art Schnellfilter. Sie werden nicht im linken Bereich von Workspace oder im Komponenten-Manager für Filter angezeigt, es sei denn, sie werden veröffentlicht. Weitere Informationen finden Sie unter [Schnellfilter](/help/components/filters/quick-filters.md).
+* Bestimmte Metriken und Dimensionen können nicht gefiltert werden, wie etwa [!UICONTROL Ereignisse] und [!UICONTROL Personen].
+* Die in der [Dropzone des Bedienfelds](/help/analysis-workspace/c-panels/panels.md) erstellten Ad hoc-Filter sind eine Art Schnellfilter. Sie werden nicht im linken Bedienfeld von Workspace oder im Filterkomponenten-Manager angezeigt, es sei denn, sie werden veröffentlicht. Weitere Informationen finden Sie unter [Schnellfilter](/help/components/filters/quick-filters.md).
 
-## Berechnete Metriken 
+## Berechnete Metriken
 
 * Berechnete Metriken können in bestimmten Visualisierungen nicht verwendet werden. Siehe [Visualisierungen](#visualizations).
 * Berechnete Metriken können nicht im Bereich [!UICONTROL Attribution] verwendet werden, da berechnete Metriken selbst separate Attributionsmodelle enthalten können.

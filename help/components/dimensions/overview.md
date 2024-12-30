@@ -1,6 +1,6 @@
 ---
 title: Dimensionen – Übersicht
-description: Erfahren Sie, welche Dimensionen und wie sie beim Customer Journey Analytics verwendet werden.
+description: Erfahren Sie, was Dimensionen sind und wie sie beim Customer Journey Analytics verwendet werden.
 feature: Dimensions
 exl-id: 3592808b-17fd-401d-ab12-ff0308b21f45
 source-git-commit: d37734ae415722fc609715868c37a36f2becdbf6
@@ -12,13 +12,13 @@ ht-degree: 36%
 
 # Dimensionen – Übersicht
 
-Dimensionen sind ein Komponententyp in Customer Journey Analytics, der zur Datenanalyse verwendet wird. Sie verwenden beispielsweise Dimensionen, wenn Sie Berichte in [Analysis Workspace](/help/analysis-workspace/home.md) oder in [Report Builder](/help/report-builder/report-buider-overview.md) erstellen.
+Dimensionen sind ein Komponententyp in Customer Journey Analytics, der zur Datenanalyse verwendet wird. Sie verwenden Dimensionen beispielsweise beim Erstellen von Berichten in [Analysis Workspace](/help/analysis-workspace/home.md) oder im [Report Builder ](/help/report-builder/report-buider-overview.md).
 
-Customer Journey Analytics-Dimensionen sind unbegrenzt; Werte können numerisch, Text, Objekte, Listen oder Mischungen von allen sein.
+Customer Journey Analytics-Dimensionen sind von unbegrenztem Typ. Werte können numerisch, Text, Objekte, Listen oder Mischungen aus allen sein.
 
-Ein grundlegender Bericht unter Customer Journey Analytics zeigt Dimensionen-Zeilen (häufig Zeichenfolgenwerte) in Bezug auf eine Metrikspalte (häufig numerische Werte) an.
+Ein Basisbericht in Customer Journey Analytics zeigt Zeilen von Dimensionen (häufig Zeichenfolgenwerte) in einer Metrikspalte (häufig numerische Werte) an.
 
-Wenn Sie beispielsweise die Dimension Seite mit der Metrik für Personen kombinieren, erhalten Sie einen Rangbericht, der Ihre am häufigsten besuchten Seiten nach Personen anzeigt:
+Wenn Sie beispielsweise die Dimension Seite mit der Metrik Personen kombinieren, erhalten Sie einen Rangbericht, der Ihre am häufigsten besuchten Seiten nach Personen auflistet:
 
 | Seite | Personen |
 | --- | ---: |
@@ -31,7 +31,7 @@ Wenn Sie beispielsweise die Dimension Seite mit der Metrik für Personen kombini
 Jede Dimension stellt einen anderen Teil oder eine andere Facette Ihrer Site dar. Sie können eine oder mehrere dieser Dimensionen mit einer oder mehreren Metriken kombinieren, um einen gewünschten Bericht zu erstellen.
 
 
-## Dimensionen erstellen
+## Erstellen von Dimensionen
 
 Customer Journey Analytics-Administratoren können [Dimensionen in einer Datenansicht erstellen](/help/data-views/create-dataview.md#components).
 

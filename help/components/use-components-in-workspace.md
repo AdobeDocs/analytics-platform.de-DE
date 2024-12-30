@@ -1,5 +1,5 @@
 ---
-description: Erfahren Sie, wie Sie einem Projekt in Analysis Workspace Komponenten hinzufügen.
+description: Erfahren Sie, wie Sie in Analysis Workspace Komponenten zu einem Projekt hinzufügen
 title: Verwenden von Komponenten in Analysis Workspace
 feature: Components
 role: User
@@ -13,54 +13,54 @@ ht-degree: 7%
 
 # Verwenden von Komponenten in Analysis Workspace
 
-Komponenten bilden die tatsächlichen Daten eines Projekts in Analysis Workspace. Komponenten bestehen aus Dimensionen, Metriken, Filtern und Datumsbereichen. Sie können einem Projekt Komponenten hinzufügen, indem Sie sie in Visualisierungen oder Bedienfelder ziehen.
+Komponenten bilden die tatsächlichen Daten eines beliebigen Projekts in Analysis Workspace. Komponenten bestehen aus Dimensionen, Metriken, Filtern und Datumsbereichen. Sie können Komponenten zu einem Projekt hinzufügen, indem Sie sie in Visualisierungen oder Bedienfelder ziehen.
 
-Weitere Informationen zu den Komponententypen, die Sie hinzufügen können, finden Sie in der [Komponentenübersicht](/help/components/overview.md) .
+Weitere Informationen zu den [ Komponenten, ](/help/components/overview.md) Sie hinzufügen können, finden Sie unter „Komponentenübersicht“ .
 
 >[!TIP]
 >
->Informationen zu den einzelnen Komponenten finden Sie unter ![InfoOutline](/help/assets/icons/InfoOutline.svg). Weitere Informationen finden Sie unter [Komponenteninfo](#component-info)
+>Informationen zu den einzelnen Komponenten finden Sie unter ![InfoOutline](/help/assets/icons/InfoOutline.svg). Siehe [Komponenteninformationen](#component-info) für weitere Informationen
 
-## Komponenten zu einem Projekt hinzufügen
+## Hinzufügen von Komponenten zu einem Projekt
 
-1. [Erstellen Sie ein Projekt in Analysis Workspace](/help/analysis-workspace/build-workspace-project/create-projects.md).
+1. [Erstellen eines Projekts in Analysis Workspace](/help/analysis-workspace/build-workspace-project/create-projects.md).
 
-1. [Fügen Sie dem Projekt in Analysis Workspace ein Bedienfeld ](/help/analysis-workspace/c-panels/panels.md#create-a-panel) oder [ hinzu, um eine Visualisierung](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel) hinzuzufügen. Wenn Sie eine Komponente zu einem leeren Projekt hinzufügen, wurde bereits eine Freiformtabellenvisualisierung erstellt.
+1. [Bedienfeld hinzufügen](/help/analysis-workspace/c-panels/panels.md#create-a-panel) oder [Visualisierung hinzufügen](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel) zum Projekt in Analysis Workspace hinzufügen. Wenn Sie einem leeren Projekt eine Komponente hinzufügen, wird bereits eine Freiformtabellen-Visualisierung für Sie erstellt.
 
-1. Wählen Sie ![Kuratieren](/help/assets/icons/Curate.svg) **[!UICONTROL Komponenten]** aus dem Schaltflächenbedienfeld. Im linken Bereich werden alle verfügbaren Komponenten angezeigt. Weitere Informationen finden Sie unter [Schnittstelle](/help/analysis-workspace/home.md#interface) .
+1. Wählen ![Kuratieren](/help/assets/icons/Curate.svg) **[!UICONTROL Komponenten]** im Schaltflächenbereich aus. Im linken Bereich werden alle verfügbaren Komponenten angezeigt. Weitere Informationen finden [ unter ](/help/analysis-workspace/home.md#interface)Benutzeroberfläche“.
 
-1. Scrollen Sie zu der Komponente, die Sie hinzufügen möchten, oder suchen Sie sie und ziehen Sie sie in ein Bedienfeld oder eine Visualisierung innerhalb Ihres Projekts.
+1. Scrollen Sie nach der Komponente, die Sie hinzufügen möchten, oder suchen Sie sie, und ziehen Sie sie dann in ein Bedienfeld oder eine Visualisierung innerhalb Ihres Projekts.
 
-1. Sie können eine Komponente optional in die Dropzone des Filters in eine Bedienfeldüberschrift ziehen. Durch diese Drag &amp; Drop-Funktion wird die Komponente als Filter definiert und der Filter auf alle Inhalte im Bereich angewendet.
-Informationen dazu, wie Sie die Filter-Dropzone in einem Bedienfeld verwenden können, um Ihr Bedienfeld zu filtern, finden Sie unter [Dropzone](/help/analysis-workspace/c-panels/panels.md#drop-zone) in [Übersicht über Bedienfelder](/help/analysis-workspace/c-panels/panels.md).
+1. Optional können Sie eine Komponente in die Ablagefläche des Filters in einer Bedienfeldkopfzeile ziehen. Diese Drag-and-Drop-Funktion definiert die Komponente als Filter und wendet den Filter auf alle Inhalte im Bedienfeld an.
+Informationen dazu, wie Sie den Ablagebereich für Filter in einem Bedienfeld zum Filtern Ihres Bedienfelds verwenden können, finden Sie unter [Ablagebereich](/help/analysis-workspace/c-panels/panels.md#drop-zone) in [Bedienfelder - Übersicht](/help/analysis-workspace/c-panels/panels.md).
 
 1. Weitere Informationen finden Sie in den folgenden Abschnitten:
 
-   * [Dimensionen zu einem Projekt hinzufügen](#add-dimensions-to-a-project)
+   * [Hinzufügen von Dimensionen zu einem Projekt](#add-dimensions-to-a-project)
 
    * [Hinzufügen von Metriken zu einem Projekt](#add-metrics-to-a-project)
 
-   * [Filter zu einem Projekt hinzufügen](#add-filters-to-a-project)
+   * [Hinzufügen von Filtern zu einem Projekt](#add-filters-to-a-project)
 
    * [Hinzufügen von Datumsbereichen zu einem Projekt](#add-date-ranges-to-a-project)
 
-### Dimensionen zu einem Projekt hinzufügen
+### Hinzufügen von Dimensionen zu einem Projekt
 
-[Dimensionen](/help/components/dimensions/overview.md) sind Variablen im Customer Journey Analytics, die normalerweise Zeichenfolgenwerte enthalten. Im Gegensatz dazu enthalten [Metriken](/help/components/calc-metrics/calc-metr-overview.md) numerische Werte, die mit einer Dimension verknüpft sind. Ein Basisbericht zeigt Zeilen mit Zeichenfolgenwerten (Dimension) gegen eine Spalte mit numerischen Werten (Metrik) an.
+[Dimensionen ](/help/components/dimensions/overview.md) sind Variablen im Customer Journey Analytics, die normalerweise Zeichenfolgenwerte enthalten. Im Gegensatz dazu enthalten [Metriken](/help/components/calc-metrics/calc-metr-overview.md) numerische Werte, die mit einer Dimension verknüpft sind. Ein Basisbericht zeigt Zeilen mit Zeichenfolgenwerten (Dimension) gegen eine Spalte mit numerischen Werten (Metrik) an.
 
-1. Beginnen Sie mit dem Hinzufügen einer Dimension zu Ihrem Projekt in Analysis Workspace, wie unter [Hinzufügen von Komponenten zu einem Projekt](#add-components-to-a-project) beschrieben.
+1. Beginnen Sie, Ihrem Projekt in Analysis Workspace eine Dimension hinzuzufügen, wie in [Hinzufügen von Komponenten zu einem Projekt](#add-components-to-a-project) beschrieben.
 
-1. Wählen Sie eine der folgenden Methoden, um Dimensionen hinzuzufügen und den Datentyp zu bestimmen, den Sie analysieren möchten:
+1. Wählen Sie eine der folgenden Methoden, um Dimensionen hinzuzufügen, und bestimmen Sie den Datentyp, den Sie analysieren möchten:
 
    ![Dimension hinzufügen](/help/components/assets/add-dimension.gif)
 
-   * Ziehen Sie eine Dimension in eine Visualisierung (z. B. eine Freiformtabelle) in Analysis Workspace.
+   * Ziehen einer Dimension in eine Visualisierung (z. B. eine Freiformtabelle) in Analysis Workspace.
 
-   * Ziehen Sie eine oder mehrere Dimensionen aus dem linken Bereich in die Dropzone des Filters, um einen Schnellfilter zu erstellen, wie unter [Filter zu einem Projekt hinzufügen](#add-filters-to-a-project) beschrieben.
+   * Ziehen Sie eine oder mehrere Dimensionen aus dem linken Bedienfeld auf den Ablagebereich für Filter, um einen Schnellfilter zu erstellen, wie in [Hinzufügen von Filtern zu einem Projekt](#add-filters-to-a-project) beschrieben.
 
-1. Sie können Dimensionen und Dimensionselemente in Analysis Workspace optional mit anderen Komponenten aufschlüsseln. Weitere Informationen finden Sie unter [Aufschlüsseln von Dimensionen in Workspace](/help/components/dimensions/t-breakdown-fa.md).
+1. Sie können Dimensionen und Dimensionselemente in Analysis Workspace optional mit anderen Komponenten aufschlüsseln. Weitere Informationen finden Sie unter [Dimensionen in Workspace aufschlüsseln](/help/components/dimensions/t-breakdown-fa.md).
 
-Weitere Informationen zur Verwendung von Dimensionen in Analysis Workspace finden Sie unter [Dimensionen in der Vorschau anzeigen](/help/components/dimensions/view-dimensions.md), [Dimensionen aufschlüsseln](/help/components/dimensions/t-breakdown-fa.md) und [Dimensionen für die Zeitunterteilung](/help/components/dimensions/time-parting-dimensions.md).
+Weitere Informationen zur Verwendung von Dimensionen in Analysis Workspace finden Sie unter [Vorschau von Dimensionen](/help/components/dimensions/view-dimensions.md), [Dimensionen aufschlüsseln](/help/components/dimensions/t-breakdown-fa.md) und [Dimensionen für die Zeitunterteilung](/help/components/dimensions/time-parting-dimensions.md).
 
 ### Hinzufügen von Metriken zu einem Projekt
 
@@ -68,69 +68,69 @@ Mit Metriken können Sie Datenpunkte in Analysis Workspace quantifizieren. Sie w
 
 So fügen Sie einem Projekt in Analysis Workspace eine Metrik hinzu:
 
-1. Beginnen Sie mit dem Hinzufügen einer Metrik zu Ihrem Projekt in Analysis Workspace, wie unter [Komponenten zu einem Projekt hinzufügen](#add-components-to-a-project) beschrieben.
+1. Beginnen Sie mit dem Hinzufügen einer Metrik zu Ihrem Projekt in Analysis Workspace, wie unter [Hinzufügen von Komponenten zu einem Projekt](#add-components-to-a-project) beschrieben.
 
 
 
 1. Wählen Sie eine der folgenden Methoden, um eine Metrik in Analysis Workspace hinzuzufügen:
 
-   ![Hinzufügen einer Metrik](/help/components/assets/add-metric.gif)
+   ![Metrik hinzufügen](/help/components/assets/add-metric.gif)
 
-   * Ziehen Sie eine Metrik in den Ablagebereich der Metrik in einer leeren Freiformtabelle, um die Trendansicht dieser Metrik über den Datumsbereich des Projekts anzuzeigen.
+   * Ziehen Sie eine Metrik in die Metrik-Ablagezone in einer leeren Freiformtabelle, um die Entwicklung dieser Metrik über den Datumsbereich des Projekts anzuzeigen.
 
    * Ziehen Sie eine Metrik, wenn eine Dimension vorhanden ist, um diese Metrik für jedes Dimensionselement anzuzeigen.
 
    * Ziehen Sie eine Metrik auf eine vorhandene Metrik-Kopfzeile, um sie zu ersetzen.
 
-   * Ziehen Sie eine Metrik neben die rechte Seite einer vorhandenen Metrik-Kopfzeile, um die neue Metrik hinzuzufügen.
+   * Ziehen Sie eine Metrik neben die linke oder rechte Seite einer vorhandenen Metrik-Kopfzeile, um die neue Metrik hinzuzufügen.
 
-   * Ziehen Sie eine Metrik über oder unter eine vorhandene Metrik-Kopfzeile, um eine Metriküberlappung zu erstellen.
+   * Ziehen Sie eine Metrik über oder unter eine vorhandene Metrikkopfzeile, um eine Metriküberschneidung zu erstellen.
 
 
 Weitere Informationen zu Metriken finden Sie unter [Metriken](/help/components/apply-create-metrics.md).
 
-### Filter zu einem Projekt hinzufügen
+### Hinzufügen von Filtern zu einem Projekt
 
-[Filter](/help/components/filters/filters-overview.md) ermöglichen es Ihnen, Untergruppen von Personen, Sitzungen oder Ereignissen anhand von Merkmalen oder spezifischen Interaktionen zu identifizieren.
+[Filter](/help/components/filters/filters-overview.md) ermöglichen es Ihnen, Untergruppen von Personen, Sitzungen oder Ereignissen anhand von Merkmalen oder bestimmten Interaktionen zu identifizieren.
 
 Sie können Filter in Analysis Workspace auf eine der folgenden Arten verwenden:
 
-* Filter zu einem Bedienfeld hinzufügen
-Wenn Sie einem Bereich Filter hinzufügen, werden die Filter auf alle Inhalte im Bereich angewendet.
-Informationen dazu, wie Sie die Filter-Dropzone in einem Bedienfeld verwenden können, um Ihr Bedienfeld zu filtern, finden Sie unter [Dropzone](/help/analysis-workspace/c-panels/panels.md#drop-zone) in [Übersicht über Bedienfelder](/help/analysis-workspace/c-panels/panels.md).
+* Hinzufügen von Filtern zu einem Bedienfeld
+Wenn Sie einem Bedienfeld Filter hinzufügen, gelten die Filter für alle Inhalte im Bedienfeld.
+Informationen dazu, wie Sie den Ablagebereich für Filter in einem Bedienfeld zum Filtern Ihres Bedienfelds verwenden können, finden Sie unter [Ablagebereich](/help/analysis-workspace/c-panels/panels.md#drop-zone) in [Bedienfelder - Übersicht](/help/analysis-workspace/c-panels/panels.md).
 
-* Filter zu einer Visualisierung hinzufügen
-Wenn Sie einer Spalte in einer Freiformtabelle Filter hinzufügen, werden die Filter auf alle Inhalte in der Tabellenspalte angewendet. Sie können Filter auch als Teil einer Fallout-Visualisierung hinzufügen.
+* Hinzufügen von Filtern zu einer Visualisierung
+Wenn Sie einer Spalte in einer Freiformtabelle Filter hinzufügen, werden die Filter auf alle Inhalte in der Tabellenspalte angewendet. Sie können auch Filter als Teil einer Fallout-Visualisierung hinzufügen.
 
 * Verwenden von Filtern in Komponenten
-Wenn Sie Komponenten wie [berechnete Metriken](/help/components/calc-metrics/cm-workflow/metrics-with-segments.md), [Anmerkungen](/help/components/annotations/create-annotations.md#annotation-builder) oder sogar [Filter](/help/components/filters/filter-builder.md) definieren, können Sie Filter als Teil der Definition verwenden.
+Wenn Sie Komponenten wie [berechnete Metriken](/help/components/calc-metrics/cm-workflow/metrics-with-segments.md), [Anmerkungen](/help/components/annotations/create-annotations.md#annotation-builder) oder sogar [Filter) definieren](/help/components/filters/filter-builder.md) können Sie Filter als Teil der Definition verwenden.
 
 
 ### Hinzufügen von Datumsbereichen zu einem Projekt
 
-[Datumsbereiche](/help/components/date-ranges/overview.md) bestimmen den Berichtszeitrahmen in Analysis Workspace und können auf einen oder mehrere Bereiche innerhalb eines Projekts sowie auf einige Visualisierungen (wie die Freiformtabelle) angewendet werden.
+[Datumsbereiche](/help/components/date-ranges/overview.md) bestimmen den Berichtszeitrahmen in Analysis Workspace und können auf ein oder mehrere Bedienfelder innerhalb eines Projekts sowie auf einige Visualisierungen (wie die Freiformtabelle) angewendet werden.
 
 Jedes Bedienfeld enthält standardmäßig einen Datumsbereich. Es gibt mehrere Möglichkeiten, einen Datumsbereich für ein Bedienfeld zu aktualisieren. Eine Möglichkeit, einen Datumsbereich für ein Bedienfeld in Analysis Workspace zu aktualisieren, besteht darin, eine Datumsbereichskomponente aus dem linken Bedienfeld zu ziehen:
 
-1. Fügen Sie optional einen Datumsbereich zu Ihrem Projekt in Analysis Workspace hinzu, wie unter [Komponenten zu einem Projekt hinzufügen](#add-components-to-a-project) beschrieben.
+1. Optional können Sie einen Datumsbereich zu Ihrem Projekt in Analysis Workspace hinzufügen, wie unter [Hinzufügen von Komponenten zu einem Projekt](#add-components-to-a-project) beschrieben.
 
-1. Ziehen Sie einen Datumsbereich aus dem linken Bereich in den Bereich:
+1. Ziehen Sie per Drag-and-Drop einen Datumsbereich aus dem linken Panel auf:
 
    * Der aktuelle Datumsbereich, um den Datumsbereich für das Bedienfeld zu ändern.
 
      ![Einen Datumsbereich ablegen](assets/add-date-range.gif)
 
-   * Eine Metrik oder Dimension in einer Freiformtabellenvisualisierung. Weitere Informationen finden Sie unter [Verwenden von Datumsbereichen](/help/components/date-ranges/overview.md#use-date-ranges) .
+   * Eine Metrik oder Dimension in einer Freiformtabellenvisualisierung. Weitere Informationen [ Sie unter ](/help/components/date-ranges/overview.md#use-date-ranges) von Datumsbereichen .
 
-Weitere Informationen zur Verwendung und Verwaltung von Datumsbereichen in Analysis Workspace finden Sie unter [Übersicht über Datumsbereiche](/help/components/date-ranges/overview.md).
+Weitere Informationen zur Verwendung und Verwaltung von Datumsbereichen in Analysis Workspace finden Sie unter [Datumsbereiche - Übersicht](/help/components/date-ranges/overview.md).
 
 ## Komponenteninformationen
 
-Sie können den Mauszeiger über eine beliebige Komponente bewegen, um ![Mehr Infos](/help/assets/icons/InfoOutline.svg) anzuzeigen. Wenn diese Option aktiviert ist, wird ein Popup mit zusätzlichen Informationen zur Komponente angezeigt.
+Sie können den Mauszeiger über eine beliebige Komponente bewegen, um &quot;![ Informationen“ ](/help/assets/icons/InfoOutline.svg). Wenn diese Option ausgewählt ist, wird ein Popup mit zusätzlichen Informationen über die Komponente angezeigt.
 
-![Komponenteninfo](assets/component-info.png)
+![Komponenteninformationen](assets/component-info.png)
 
 Je nach Zugriffssteuerung haben Sie folgende Möglichkeiten:
 
-* Rufen Sie die Definition ![Lesezeichen](/help/assets/icons/Bookmark.svg) [!UICONTROL Datenwörterbuch] für die Komponente auf.
-* Rufen Sie den Komponenten-Builder ![Bearbeiten](/help/assets/icons/Edit.svg) oder die Datenansicht auf, in der die Komponente definiert ist.
+* Rufen Sie die ![Lesezeichen](/help/assets/icons/Bookmark.svg)[!UICONTROL  Datenwörterbuch]-Definition für die Komponente auf.
+* Greifen Sie auf ![ Komponenten](/help/assets/icons/Edit.svg)Builder oder die Datenansicht zu, in der die Komponente definiert ist.

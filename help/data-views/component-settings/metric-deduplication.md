@@ -18,7 +18,7 @@ ht-degree: 100%
 
 >[!CONTEXTUALHELP]
 >id="cja_dataview_component_metric_deduplication"
->title="Deduplizierung von Metriken"
+>title="Deduplizierung einer Metrik"
 >abstract="Konfigurieren Sie eine Metrik so, dass nur Werte gezählt werden, die nicht wiederholt auftreten."
 
 <!-- markdownlint-enable MD034 -->
