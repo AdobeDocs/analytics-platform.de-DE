@@ -9,7 +9,7 @@ role: Admin
 source-git-commit: 0b6a84820dc42b5e5009eaa254e5554712a952aa
 workflow-type: tm+mt
 source-wordcount: '3536'
-ht-degree: 13%
+ht-degree: 21%
 
 ---
 
@@ -211,7 +211,7 @@ Wenn ein Datensatz in der Datensatztabelle ausgewählt ist, werden in einem Bedi
 >[!CONTEXTUALHELP]
 >id="cja_connections_usage_keyusagemetrics"
 >title="Wichtige Nutzungsmetriken"
->abstract="Monatliche und gesamte Daten für Kern- und Verlaufszeilen bereitstellen."
+>abstract="Stellen Sie berichtsfähige Zeilen zu Kern- und historischen Daten pro Monat und insgesamt bereit."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -230,7 +230,7 @@ Wenn ein Datensatz in der Datensatztabelle ausgewählt ist, werden in einem Bedi
 >[!CONTEXTUALHELP]
 >id="cja_connections_usage_monthlyreportablerows"
 >title="Monatliche berichtsfähige Zeilen"
->abstract="Verfolgt die Anzahl der für das Reporting verfügbaren Zeilen. Berichterstattungsfähige Zeilen sind die aufgenommenen Zeilen abzüglich der Zeilen, die bei der Aufnahme übersprungen und gelöscht werden. Berichterstellbare Zeilen dienen als Schlüsselmetrik für die Abrechnung und Datennutzung."
+>abstract="Verfolgt die Anzahl der für das Reporting verfügbaren Zeilen. Berichtsfähige Zeilen sind die aufgenommenen Zeilen abzüglich der Zeilen, die bei der Aufnahme übersprungen und gelöscht wurden. Berichtsfähige Zeilen dienen als Schlüsselmetrik für die Rechnungsstellung und Datennutzung."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -240,7 +240,7 @@ Wenn ein Datensatz in der Datensatztabelle ausgewählt ist, werden in einem Bedi
 >[!CONTEXTUALHELP]
 >id="cja_connections_usage_detailbreakdown"
 >title="Detailaufschlüsselung."
->abstract="Sie können detaillierte Metriken nach Verbindung, Datensatz, Sandbox und Tags mit der Option anzeigen, eine CSV-Datei der Daten herunterzuladen."
+>abstract="Sie können detaillierte Metriken nach Verbindung, Datensatz, Sandbox und Tags mit der Option zum Herunterladen einer CSV-Datei der Daten anzeigen."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -249,7 +249,7 @@ Wenn ein Datensatz in der Datensatztabelle ausgewählt ist, werden in einem Bedi
 >[!CONTEXTUALHELP]
 >id="cja_connections_usage_otherdatasets"
 >title="Andere Datensätze"
->abstract="Seit Monaten vor September 2024 wurden Daten auf Datensatzebene erfasst und der Klarheit halber als *Andere Datensätze* angezeigt. Ab September 2024 werden Daten auf einer granularen Datensatzebene erfasst und *Andere Datensätze* werden nicht mehr angezeigt."
+>abstract="Vor September 2024 wurden Daten seit Monaten auf Datensatzebene erfasst. Sie werden der Klarheit halber als *andere Datensätze* angezeigt. Seit September 2024 werden Daten auf einer granularen Datensatzebene erfasst und *andere Datensätze* werden nicht mehr angezeigt."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -258,7 +258,7 @@ Wenn ein Datensatz in der Datensatztabelle ausgewählt ist, werden in einem Bedi
 >[!CONTEXTUALHELP]
 >id="cja_connections_usage_unknowndatasetsorconnections"
 >title="Unbekannte Datensätze oder Verbindungen"
->abstract="Unbekannte Datensätze oder Verbindungen werden unter Verwendung ihrer IDs angezeigt."
+>abstract="Unbekannte Datensätze oder Verbindungen werden mit ihren IDs angezeigt."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -267,7 +267,7 @@ Wenn ein Datensatz in der Datensatztabelle ausgewählt ist, werden in einem Bedi
 >[!CONTEXTUALHELP]
 >id="cja_connections_usage_datanotavailable"
 >title="Daten nicht verfügbar"
->abstract="Historische Daten vor September 2024 sind aufgrund von Systembeschränkungen nicht verfügbar. Metriken werden ab September 2024 erfasst und angezeigt. Das Diagramm zeigt die letzten 18 Monate auf der Timeline, und zukünftige Daten werden angezeigt, sobald die Daten verfügbar werden."
+>abstract="Historische Daten, die älter sind als September 2024, sind aufgrund von Systembeschränkungen nicht verfügbar. Metriken werden seit September 2024 erfasst und angezeigt. Das Diagramm zeigt die letzten 18 Monate auf der Timeline, und zukünftige Daten werden angezeigt, sobald die Daten verfügbar werden."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -285,7 +285,7 @@ Wenn ein Datensatz in der Datensatztabelle ausgewählt ist, werden in einem Bedi
 >[!CONTEXTUALHELP]
 >id="cja_connections_historicalreportablerows"
 >title="Berichtsfähige Zeilen zu historischen Daten"
->abstract="Zeigt die Gesamtzahl der verfügbaren Zeilen für den Zeitraum an, der älter als 13 Monate ist. Beispielsweise zeigt die Zahl am 1. Februar 2024 die Gesamtzahl der verfügbaren Zeilen mit einem Ereignis-Zeitstempel an, der älter als Januar 2023 ist."
+>abstract="Zeigt die Gesamtzahl der verfügbaren Zeilen für den Zeitraum an, der länger als 13 Monate zurückliegt. Beispielsweise zeigt die Zahl am 1. Februar 2024 die Gesamtzahl der verfügbaren Zeilen mit einem Ereignis-Zeitstempel an, der älter als Januar 2023 ist."
 
 <!-- markdownlint-enable MD034 -->
 

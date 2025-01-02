@@ -7,7 +7,7 @@ role: User
 source-git-commit: 47c5fc27d994667933103f864a253e086050bbf8
 workflow-type: tm+mt
 source-wordcount: '1636'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -45,7 +45,7 @@ Ein alternatives Szenario besteht darin, dass Sie zwei Metriken von Interesse ha
 >[!CONTEXTUALHELP]
 >id="functions-abs"
 >title="Absolutwert"
->abstract="Gibt den Absolutwert einer Zahl zurück. Der Absolutwert einer Zahl ist die Zahl mit einem positiven Wert."
+>abstract="Gibt den absoluten Wert einer Zahl zurück.  Der absolute Wert einer Zahl ist die Zahl mit einem positiven Wert."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -66,13 +66,13 @@ Ein alternatives Szenario besteht darin, dass Sie zwei Metriken von Interesse ha
 >[!CONTEXTUALHELP]
 >id="functions-col-max"
 >title="Spaltenmaximum"
->abstract="Gibt den größten Wert in einem Satz aus Dimensionselementen für eine Metrikspalte zurück. MAXV wird vertikal innerhalb einer einzelnen Spalte (Metrik) über Dimensionselemente hinweg ausgewertet."
+>abstract="Gibt den größten Wert in einem Satz aus Dimensionselementen für eine Metrikspalte zurück.  MAXV wird vertikal innerhalb einer einzelnen Spalte (Metrik) über Dimensionselemente hinweg ausgewertet."
 
 <!-- markdownlint-enable MD034 -->
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL COLUMN MAXIMUM(metric, include_zeros)]**
 
-Gibt den größten Wert in einem Satz aus Dimensionselementen für eine Metrikspalte zurück. MAXV wird vertikal innerhalb einer einzelnen Spalte (Metrik) über Dimensionselemente hinweg ausgewertet.
+Gibt den größten Wert in einem Satz aus Dimensionselementen für eine Metrikspalte zurück.  MAXV wird vertikal innerhalb einer einzelnen Spalte (Metrik) über Dimensionselemente hinweg ausgewertet.
 
 | Argument | Beschreibung |
 |---|---|
@@ -87,14 +87,14 @@ Gibt den größten Wert in einem Satz aus Dimensionselementen für eine Metriksp
 >[!CONTEXTUALHELP]
 >id="functions-col-min"
 >title="Spaltenminimum"
->abstract="Gibt den kleinsten Wert in einem Satz aus Dimensionselementen für eine Metrikspalte zurück. MINV wird vertikal innerhalb einer einzelnen Spalte (Metrik) über Dimensionselemente hinweg ausgewertet."
+>abstract="Gibt den kleinsten Wert in einem Satz aus Dimensionselementen für eine Metrikspalte zurück.  MINV wird vertikal innerhalb einer einzelnen Spalte (Metrik) über Dimensionselemente hinweg ausgewertet."
 
 <!-- markdownlint-enable MD034 -->
 
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL COLUMN MINIMUM(metric, include_zeros)]**
 
-Gibt den kleinsten Wert in einem Satz aus Dimensionselementen für eine Metrikspalte zurück. MINV wird vertikal innerhalb einer einzelnen Spalte (Metrik) über Dimensionselemente hinweg ausgewertet.
+Gibt den kleinsten Wert in einem Satz aus Dimensionselementen für eine Metrikspalte zurück.  MINV wird vertikal innerhalb einer einzelnen Spalte (Metrik) über Dimensionselemente hinweg ausgewertet.
 
 | Argument | Beschreibung |
 |---|---|
@@ -130,7 +130,7 @@ Addiert alle numerischen Werte für eine Metrik innerhalb einer Spalte (über di
 >[!CONTEXTUALHELP]
 >id="functions-count"
 >title="Anzahl"
->abstract="Gibt die Zahl oder Anzahl der Werte ungleich null für eine Metrik innerhalb einer Spalte zurück (die Anzahl der eindeutigen Elemente innerhalb einer Dimension)."
+>abstract="Gibt die Zahl (oder Anzahl) von Werten, die nicht null sind, für eine Metrik in einer Spalte zurück (die Anzahl der innerhalb einer Dimension berichteten eindeutigen Elemente)."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -151,7 +151,7 @@ Addiert alle numerischen Werte für eine Metrik innerhalb einer Spalte (über di
 >[!CONTEXTUALHELP]
 >id="functions-exp"
 >title="Exponent"
->abstract="Gibt e hoch eine angegebene Zahl zurück. Die Konstante e ist gleich 2,71828182845904 (der Basis des natürlichen Logarithmus). EXPONENT ist die Umkehrung von LN, der natürliche Logarithmus einer Zahl."
+>abstract="Gibt e potenziert mit einer gegebenen Zahl zurück. Die Konstante e entspricht 2,71828182845904, der Basis des natürlichen Logarithmus. EXPONENT ist die Umkehrung von LN, dem natürlichen Logarithmus einer Zahl."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -171,7 +171,7 @@ Addiert alle numerischen Werte für eine Metrik innerhalb einer Spalte (über di
 >[!CONTEXTUALHELP]
 >id="functions-mean"
 >title="Arithmetisches Mittel"
->abstract="Gibt das arithmetische Mittel (bzw. den Durchschnitt) einer Metrik in einer Spalte zurück."
+>abstract="Gibt das arithmetische Mittel (d. h. den Durchschnitt) für eine Metrik in einer Spalte zurück."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -193,7 +193,7 @@ Addiert alle numerischen Werte für eine Metrik innerhalb einer Spalte (über di
 >[!CONTEXTUALHELP]
 >id="functions-median"
 >title="Median"
->abstract="Gibt den Medianwert für eine Metrik in einer Spalte zurück. Der Median ist die Zahl in der Mitte einer Zahlenfolge. Das heißt, die Hälfte der Zahlen hat Werte, die größer oder gleich dem Median sind, und die Hälfte ist kleiner oder gleich dem Median."
+>abstract="Gibt den Median für eine Metrik in einer Spalte zurück. Der Median ist die Zahl in der Mitte einer Zahlenreihe. Das heißt, die Hälfte der Zahlen weist Werte auf, die größer oder gleich dem Median sind, und die Hälfte ist kleiner oder gleich dem Median."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -297,7 +297,7 @@ Gibt die y-te Potenz von x zurück.
 >[!CONTEXTUALHELP]
 >id="functions-quartile"
 >title="Quartil"
->abstract="Gibt das Quartil der Werte für eine Metrik zurück. Beispielsweise können Quartile verwendet werden, um die 25 % der Produkte zu finden, die den höchsten Umsatz erzielen."
+>abstract="Gibt das Quartil der Werte für eine Metrik zurück. Quartile können beispielsweise verwendet werden, um die 25 % der Produkte zu finden, die den höchsten Umsatz erzielen."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -428,7 +428,7 @@ Die Summe der Spalten in jeder Zeile.
 >[!CONTEXTUALHELP]
 >id="functions-sqrt"
 >title="Quadratwurzel"
->abstract="Gibt die positive Quadratwurzel einer Zahl zurück. Die Quadratwurzel einer Zahl ist der Wert dieser Zahl hoch 1/2."
+>abstract="Gibt die positive Quadratwurzel einer Zahl zurück. Die Quadratwurzel einer Zahl ist der Wert, wenn diese Zahl zur Potenz 1/2 erhoben wird."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -449,7 +449,7 @@ Die Summe der Spalten in jeder Zeile.
 >[!CONTEXTUALHELP]
 >id="functions-stdev"
 >title="Standardabweichung"
->abstract="Gibt die Standardabweichung (oder die Quadratwurzel der Schwankung) basierend auf einer Beispieldatenpopulation zurück."
+>abstract="Gibt die Standardabweichung (d. h. die Quadratwurzel der Varianz) basierend auf einer Stichprobenpopulation von Daten zurück."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -470,7 +470,7 @@ Die Summe der Spalten in jeder Zeile.
 >[!CONTEXTUALHELP]
 >id="functions-variance"
 >title="Varianz"
->abstract="Gibt die Schwankung basierend auf einer Beispieldatenpopulation zurück."
+>abstract="Gibt die Varianz basierend auf einer Stichprobenpopulation von Daten zurück."
 
 <!-- markdownlint-enable MD034 -->
 

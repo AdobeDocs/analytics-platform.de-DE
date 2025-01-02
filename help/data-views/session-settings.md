@@ -8,7 +8,7 @@ role: Admin
 source-git-commit: edd49ea60901acc0bb4ba603bbb9377aeee423fd
 workflow-type: tm+mt
 source-wordcount: '453'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 91%
 >[!CONTEXTUALHELP]
 >id="cja_dataview_settings_datapreview"
 >title="Datenvorschau"
->abstract="Vergleicht die Daten dieses Filters mit den Daten der Verbindung. Der Vorschauprozentsatz basiert auf der Gesamtzahl der Verbindungen der letzten 90 ****.<br><br/>Wenn die Vorschau nicht geladen wird, wird Ihre Verbindung möglicherweise noch aufgestockt."
+>abstract="Vergleicht die Daten dieses Filters mit den Daten der Verbindung. Der Prozentsatz der Vorschau basiert auf der Gesamtzahl in der Verbindung aus den **letzten 90 Tagen**.<br><br/>Wenn die Vorschau nicht geladen wird, wird Ihre Verbindung möglicherweise noch aufgestockt."
 
 <!-- markdownlint-enable MD034 -->
 

@@ -8,7 +8,7 @@ role: Admin
 source-git-commit: 3a0c6c22422ca7f8d4f954f3d9711c5c3501cc03
 workflow-type: tm+mt
 source-wordcount: '3769'
-ht-degree: 97%
+ht-degree: 98%
 
 ---
 
@@ -235,8 +235,8 @@ Wenden Sie sich an Ihre Admins, wenn Sie sich nicht sicher sind, welches Custome
 
 >[!CONTEXTUALHELP]
 >id="cja_connection_connectionmap"
->title="Verbindungs-Map"
->abstract="Die Verbindungszuordnung visualisiert die Beziehungen zwischen Ereignis-, Personen-, Konto- und relevanten Lookup-Datensätzen (wie Opportunities, Kampagnenmitgliedern und mehr)."
+>title="Verbindungszuordnung"
+>abstract="Die Verbindungszuordnung visualisiert die Beziehungen zwischen Ereignis-, Personen-, Konto- und relevanten Lookup-Datensätzen (wie Opportunitys, Kampagnenmitgliedern und mehr)."
 
 <!-- markdownlint-enable MD034 -->
 

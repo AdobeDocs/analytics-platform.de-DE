@@ -7,7 +7,7 @@ role: User
 source-git-commit: 30fd026a948eab62b034033b4163d3e2b27c47c3
 workflow-type: tm+mt
 source-wordcount: '4438'
-ht-degree: 29%
+ht-degree: 56%
 
 ---
 
@@ -39,26 +39,26 @@ Ein alternatives Szenario besteht darin, dass Sie zwei Metriken von Interesse ha
 >[!CONTEXTUALHELP]
 >id="functions-and"
 >title="Und"
->abstract="Verbindung. Wenn ungleich null ist, gilt dies als „true“ und wenn gleich null ist, wird dies als „false“ betrachtet. Die Ausgabe ist entweder 0 (false) oder 1 (true)."
+>abstract="Verbindung. „Ungleich null“ gilt als „True“ und „Gleich null“ gilt als „False“. Die Ausgabe ist entweder 0 (False) oder 1 (True)."
 
 <!-- markdownlint-enable MD034 -->
 
 ![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL AND(logical_test)]**
 
-Verbindung. Wenn ungleich null ist, gilt dies als „true“ und wenn gleich null ist, wird dies als „false“ betrachtet. Die Ausgabe ist entweder 0 (false) oder 1 (true).
+Verbindung. „Ungleich null“ gilt als „True“ und „Gleich null“ gilt als „False“. Die Ausgabe ist entweder 0 (False) oder 1 (True).
 
 | Argument | Beschreibung |
 |---|---|
 | Logical_test | Erfordert mindestens einen Parameter, kann jedoch eine beliebige Anzahl Parameter annehmen. Jeder Wert oder Ausdruck, der als TRUE oder FALSE ausgewertet werden kann |
 
 
-## Ungefähres Erfassen bestimmter {#approximate_count_distinct}
+## Ungefähre Zählung Verschiedener {#approximate_count_distinct}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="functions-count-distinct-metric"
->title="Ungefähres Erfassen bestimmter"
+>title="Ungefähre Zählung Verschiedener"
 >abstract="Gibt die ungefähre Anzahl von Dimensionselementen für die ausgewählte Dimension zurück."
 
 <!-- markdownlint-enable MD034 -->
@@ -79,14 +79,14 @@ Ein gängiger Anwendungsfall für diese Funktion ist, wenn Sie eine ungefähre A
 
 
 
-## Arkuskosinus {#arc-cosine}
+## Arcuscosinus {#arc-cosine}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="functions-acos"
->title="Arkuskosinus"
->abstract="Gibt den Arkuskosinus (oder umgekehrten Kosinus) einer Metrik zurück. Der Arkuskosinus ist der Winkel, dessen Kosinus die Zahl ist. Der zurückgegebene Winkel wird in Radianten im Bereich zwischen 0 (null) und Pi angegeben. Wenn Sie das Ergebnis von Radiant in Grad umrechnen möchten, multiplizieren Sie es mit 180/PI()."
+>title="Arcuscosinus"
+>abstract="Gibt den Arcuscosinus (d. h. die Umkehrung des Cosinus) einer Metrik zurück. Der Arcuscosinus ist der Winkel, dessen Cosinus eine gegebene Zahl ist. Der zurückgegebene Winkel wird in Radiant im Bereich von 0 (Null) bis pi angegeben. Wenn Sie das Ergebnis von Radianten in Grad umrechnen möchten, multiplizieren Sie es mit 180/PI()."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -102,14 +102,14 @@ Ein gängiger Anwendungsfall für diese Funktion ist, wenn Sie eine ungefähre A
 
 
 
-## Kreisbogensinus {#arc-sine}
+## Arcussinus {#arc-sine}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="functions-asin"
->title="Kreisbogensinus"
->abstract="Gibt den Arkussinus (oder umgekehrten Sinus) einer Zahl zurück. Der Arkussinus ist der Winkel, dessen Sinus eine Zahl ist. Der zurückgegebene Winkel wird in Radianten im Bereich zwischen -Pi/2 und Pi/2 angegeben. Um den Arkussinus in Grad auszudrücken, multiplizieren Sie das Ergebnis mit 180/PI()"
+>title="Arcussinus"
+>abstract="Gibt den Arcussinus (die Umkehrung des Sinus) einer Zahl zurück. Der Arcussinus ist der Winkel, dessen Sinus eine gegebene Zahl ist. Der zurückgegebene Winkel wird in Radiant im Bereich -pi/2 bis pi/2 angegeben. Um den Arcussinus in Grad auszudrücken, multiplizieren Sie das Ergebnis mit 180/PI()."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -132,7 +132,7 @@ Ein gängiger Anwendungsfall für diese Funktion ist, wenn Sie eine ungefähre A
 >[!CONTEXTUALHELP]
 >id="functions-atan"
 >title="Arkustangens"
->abstract="Gibt den Arkustangens (oder umgekehrten Tangens) einer Zahl zurück. Der Bogen ist der Winkel, dessen Tangente eine Zahl ist. Der zurückgegebene Winkel wird in Radianten im Bereich zwischen -Pi/2 und Pi/2 angegeben. Um den Arktangens in Grad auszudrücken, multiplizieren Sie das Ergebnis mit 180/PI()."
+>abstract="Gibt den Arkustangens, d. h. die Umkehrung des Tangens, einer Zahl zurück. Der Arkustangens ist der Winkel, dessen Tangens eine gegebene Zahl ist. Der zurückgegebene Winkel wird in Radiant im Bereich -pi/2 bis pi/2 angegeben. Um den Arkustangens in Grad auszudrücken, multiplizieren Sie das Ergebnis mit 180/PI()."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -155,13 +155,13 @@ Ein gängiger Anwendungsfall für diese Funktion ist, wenn Sie eine ungefähre A
 >[!CONTEXTUALHELP]
 >id="functions-cdf-t"
 >title="Cdf-T"
->abstract="Gibt die Wahrscheinlichkeit dafür zurück, dass eine Zufallsvariable mit studentischer t-Verteilung mit n Freiheitsgraden einen z-Wert hat, der unter dem Spaltenwert liegt."
+>abstract="Gibt die Wahrscheinlichkeit dafür zurück, dass eine Zufallsvariable mit studentscher t-Verteilung mit n Freiheitsgraden einen z-Wert hat, der unter dem Spaltenwert liegt."
 
 <!-- markdownlint-enable MD034 -->
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL CDF-T(Metrik, Zahl)]**
 
-Gibt die Wahrscheinlichkeit dafür zurück, dass eine Zufallsvariable mit studentischer t-Verteilung mit n Freiheitsgraden einen z-Wert hat, der unter dem Spaltenwert liegt.
+Gibt die Wahrscheinlichkeit dafür zurück, dass eine Zufallsvariable mit studentscher t-Verteilung mit n Freiheitsgraden einen z-Wert hat, der unter dem Spaltenwert liegt.
 
 | Argument | Beschreibung |
 |---|---|
@@ -186,13 +186,13 @@ CDF-T(x, ∞) ? cdf_z(x)
 >[!CONTEXTUALHELP]
 >id="functions-cdf-z"
 >title="Cdf-Z"
->abstract="Gibt die Wahrscheinlichkeit dafür zurück, dass eine Zufallsvariable normaler Verteilung einen z-Wert hat, der unter dem Spaltenwert liegt."
+>abstract="Gibt die Wahrscheinlichkeit dafür zurück, dass eine Zufallsvariable mit einer Normalverteilung einen z-Wert hat, der unter dem Spaltenwert liegt."
 
 <!-- markdownlint-enable MD034 -->
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL CDF-Z(Metrik, Zahl)]**
 
-Gibt die Wahrscheinlichkeit dafür zurück, dass eine Zufallsvariable normaler Verteilung einen z-Wert hat, der unter dem Spaltenwert liegt.
+Gibt die Wahrscheinlichkeit dafür zurück, dass eine Zufallsvariable mit einer Normalverteilung einen z-Wert hat, der unter dem Spaltenwert liegt.
 
 | Argument | Beschreibung |
 |---|---|
@@ -215,7 +215,7 @@ CDF-Z(-3) ? 0.0013499
 >[!CONTEXTUALHELP]
 >id="functions-ceil"
 >title="Ceiling (Obergrenze)"
->abstract="Gibt die kleinste Ganzzahl zurück, die nicht kleiner als ein angegebener Wert ist. Beispiel: Wenn Sie keine Währungsdezimalzahlen für den Umsatz in Berichte aufnehmen möchten und ein Produkt einen Umsatz von 569,34 US-Dollar aufweist, können Sie mit der Formel CEILING(Umsatz) den Umsatz bis zum nächsten Dollar aufrunden (in diesem Fall 570 US-Dollar)."
+>abstract="Gibt die kleinste Ganzzahl zurück, die nicht kleiner als ein angegebener Wert ist. Beispiel: Wenn Sie für den Umsatz keine Währungsdezimalzahlen in Berichte aufnehmen möchten und ein Produkt einen Umsatz von 569,34 US-Dollar aufweist, können Sie mit der Formel CEILING(Umsatz) den Umsatz auf den nächsten Dollar aufrunden (in diesem Fall 570 US-Dollar)."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -235,13 +235,13 @@ CDF-Z(-3) ? 0.0013499
 >[!CONTEXTUALHELP]
 >id="functions-waskr-confidence"
 >title="Konfidenz"
->abstract="Berechnen Sie die jederzeit gültige Konfidenz mithilfe der WASKR-Methode, wie in [Zeiteinheitliche zentrale Grenztheorie und asymptotische Konfidenzsequenzen](https://arxiv.org/pdf/2103.06476) beschrieben."
+>abstract="Berechnet die jederzeit gültige Konfidenz mithilfe der WASKR-Methode, wie in [Zeiteinheitlicher zentraler Grenzwertsatz und asymptotische Konfidenzintervalle (Time-uniform central limit theory and asymptotic confidence sequences)](https://arxiv.org/pdf/2103.06476) beschrieben."
 
 <!-- markdownlint-enable MD034 -->
 
 ![Effekt](/help/assets/icons/Effect.svg)**[!UICONTROL KONFIDENZ(Normalisierungs-Container, Erfolgsmetrik, Kontrolle, Signifikanz-Schwellenwert)]**
 
-Berechnen Sie die jederzeit gültige Konfidenz mithilfe der WASKR-Methode, wie in [Zeiteinheitliche zentrale Grenztheorie und asymptotische Konfidenzsequenzen](https://arxiv.org/pdf/2103.06476) beschrieben.
+Berechnet die jederzeit gültige Konfidenz mithilfe der WASKR-Methode, wie in [Zeiteinheitlicher zentraler Grenzwertsatz und asymptotische Konfidenzintervalle (Time-uniform central limit theory and asymptotic confidence sequences)](https://arxiv.org/pdf/2103.06476) beschrieben.
 
 Konfidenz ist ein Maß dafür, wie hoch die Wahrscheinlichkeit ist, dass eine bestimmte Variante mit der Kontrollvariante identisch ist. Bei einer höheren Konfidenz deutet weniger darauf hin, dass die Annahme stimmt, dass die Kontroll- und Nicht-Kontrollvariante die gleiche Performance aufweisen.
 
@@ -253,20 +253,20 @@ Konfidenz ist ein Maß dafür, wie hoch die Wahrscheinlichkeit ist, dass eine be
 | Signifikanzschwelle | Der Schwellenwert in dieser Funktion ist auf den Standardwert 95 % eingestellt. |
 
 
-## Konfidenz (untere Grenze) {#confidence-lower}
+## Confidence (Lower) {#confidence-lower}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="functions-waskr-confidence-interval-lower"
->title="Konfidenz (untere Grenze)"
->abstract="Berechnen Sie die jederzeit gültige Konfidenz **niedriger** mithilfe der WASKR-Methode, wie in [Zeiteinheitliche zentrale Grenztheorie und asymptotische Konfidenzsequenzen](https://arxiv.org/pdf/2103.06476) beschrieben."
+>title="Confidence (Lower)"
+>abstract="Berechnet die jederzeit gültige **niedrigere** Konfidenz mithilfe der WASKR-Methode, wie in [Zeiteinheitlicher zentraler Grenzwertsatz und asymptotische Konfidenzintervalle (Time-uniform central limit theory and asymptotic confidence sequences)](https://arxiv.org/pdf/2103.06476) beschrieben."
 
 <!-- markdownlint-enable MD034 -->
 
 ![Effekt](/help/assets/icons/Effect.svg)**[!UICONTROL KONFIDENZ(Normalisierungs-Container, Erfolgsmetrik, Kontrolle, Signifikanz-Schwellenwert)]**
 
-Berechnen Sie die jederzeit gültige Konfidenz **niedriger** mithilfe der WASKR-Methode, wie in [Zeiteinheitliche zentrale Grenztheorie und asymptotische Konfidenzsequenzen](https://arxiv.org/pdf/2103.06476) beschrieben.
+Berechnet die jederzeit gültige **niedrigere** Konfidenz mithilfe der WASKR-Methode, wie in [Zeiteinheitlicher zentraler Grenzwertsatz und asymptotische Konfidenzintervalle (Time-uniform central limit theory and asymptotic confidence sequences)](https://arxiv.org/pdf/2103.06476) beschrieben.
 
 Konfidenz ist ein Maß dafür, wie hoch die Wahrscheinlichkeit ist, dass eine bestimmte Variante mit der Kontrollvariante identisch ist. Bei einer höheren Konfidenz deutet weniger darauf hin, dass die Annahme stimmt, dass die Kontroll- und Nicht-Kontrollvariante die gleiche Performance aufweisen.
 
@@ -277,20 +277,20 @@ Konfidenz ist ein Maß dafür, wie hoch die Wahrscheinlichkeit ist, dass eine be
 | Kontrolle | Die Variante, mit der alle anderen Varianten im Experiment verglichen werden. Geben Sie den Namen des Dimensionselements der Kontrollvariante ein. |
 | Signifikanzschwelle | Der Schwellenwert in dieser Funktion ist auf den Standardwert 95 % eingestellt. |
 
-## Konfidenz (obere Grenze) {#confidence-upper}
+## Confidence (Upper) {#confidence-upper}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="functions-waskr-confidence-interval-upper"
->title="Konfidenz (obere Grenze)"
->abstract="Berechnen Sie die jederzeit gültige Konfidenz **upper** mithilfe der WASKR-Methode, wie in [Zeiteinheitliche zentrale Grenztheorie und asymptotische Konfidenzsequenzen](https://arxiv.org/pdf/2103.06476) beschrieben."
+>title="Confidence (Upper)"
+>abstract="Berechnet die jederzeit gültige **höhere** Konfidenz mithilfe der WASKR-Methode, wie in [Zeiteinheitlicher zentraler Grenzwertsatz und asymptotische Konfidenzintervalle (Time-uniform central limit theory and asymptotic confidence sequences)](https://arxiv.org/pdf/2103.06476) beschrieben."
 
 <!-- markdownlint-enable MD034 -->
 
 ![Effekt](/help/assets/icons/Effect.svg)**[!UICONTROL KONFIDENZ(Normalisierungs-Container, Erfolgsmetrik, Kontrolle, Signifikanz-Schwellenwert)]**
 
-Berechnen Sie die jederzeit gültige Konfidenz **upper** mithilfe der WASKR-Methode, wie in [Zeiteinheitliche zentrale Grenztheorie und asymptotische Konfidenzsequenzen](https://arxiv.org/pdf/2103.06476) beschrieben.
+Berechnet die jederzeit gültige **höhere** Konfidenz mithilfe der WASKR-Methode, wie in [Zeiteinheitlicher zentraler Grenzwertsatz und asymptotische Konfidenzintervalle (Time-uniform central limit theory and asymptotic confidence sequences)](https://arxiv.org/pdf/2103.06476) beschrieben.
 
 Konfidenz ist ein Maß dafür, wie hoch die Wahrscheinlichkeit ist, dass eine bestimmte Variante mit der Kontrollvariante identisch ist. Bei einer höheren Konfidenz deutet weniger darauf hin, dass die Annahme stimmt, dass die Kontroll- und Nicht-Kontrollvariante die gleiche Performance aufweisen.
 
@@ -302,14 +302,14 @@ Konfidenz ist ein Maß dafür, wie hoch die Wahrscheinlichkeit ist, dass eine be
 | Signifikanzschwelle | Der Schwellenwert in dieser Funktion ist auf den Standardwert 95 % eingestellt. |
 
 
-## Kosinus {#cosine}
+## Cosine {#cosine}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="functions-cos"
->title="Kosinus"
->abstract="Gibt den Kosinus des angegebenen Winkels zurück. Wenn der Winkel in Grad angegeben ist, multiplizieren Sie den Winkel mit PI()/180."
+>title="Cosine"
+>abstract="Gibt den Cosinus des gegebenen Winkels zurück. Wenn der Winkel in Grad angegeben ist, multiplizieren Sie den Winkel mit PI()/180."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -329,14 +329,14 @@ Konfidenz ist ein Maß dafür, wie hoch die Wahrscheinlichkeit ist, dass eine be
 >[!CONTEXTUALHELP]
 >id="functions-cube-root"
 >title="Kubikwurzel"
->abstract="Gibt die positive Kubikwurzel einer Zahl zurück. Die Kubikwurzel einer Zahl ist der Wert dieser Zahl hoch 1/3."
+>abstract="Gibt die positive Kubikwurzel einer Zahl zurück. Die Kubikwurzel einer Zahl ist der Wert, wenn diese Zahl zur Potenz 1/3 erhoben wird."
 
 <!-- markdownlint-enable MD034 -->
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL CUBE ROOT(metric)]**
 
 
-Gibt die positive Kubikwurzel einer Zahl zurück. Die Kubikwurzel einer Zahl ist der Wert dieser Zahl hoch 1/3.
+Gibt die positive Kubikwurzel einer Zahl zurück. Die Kubikwurzel einer Zahl ist der Wert, wenn diese Zahl zur Potenz 1/3 erhoben wird.
 
 
 | Argument | Beschreibung |
@@ -352,13 +352,13 @@ Gibt die positive Kubikwurzel einer Zahl zurück. Die Kubikwurzel einer Zahl ist
 >[!CONTEXTUALHELP]
 >id="functions-cumul"
 >title="Kumulativ"
->abstract="Gibt die Summe der letzten n Elemente der Spalte x zurück. Wenn n > 0 ist, werden die letzten n Elemente oder x addiert. Wenn n &lt; 0 ist, werden die vorangehenden Elemente addiert."
+>abstract="Gibt die Summe der letzten n Elemente der Spalte x zurück. Wenn n > 0 ist, werden die letzten n Elemente von x addiert. Wenn n &lt; 0 ist, werden die n vorangehenden Elemente addiert."
 
 <!-- markdownlint-enable MD034 -->
 
 ![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL CUMULATIVE(number, metric)]**
 
-Gibt die Summe der letzten n Elemente der Spalte x zurück. Wenn n > 0 ist, werden die letzten n Elemente oder x addiert. Wenn n &lt; 0 ist, werden die vorangehenden Elemente addiert.
+Gibt die Summe der letzten n Elemente der Spalte x zurück. Wenn n > 0 ist, werden die letzten n Elemente von x addiert. Wenn n &lt; 0 ist, werden die n vorangehenden Elemente addiert.
 
 | Argument | Beschreibung |
 | --- | --- |
@@ -374,20 +374,20 @@ Gibt die Summe der letzten n Elemente der Spalte x zurück. Wenn n > 0 ist, werd
 | Juli | 400$ | 1 100 $ | 600 $ |
 
 
-## Kumulativ (Durchschnitt) {#cumulative-average}
+## Cumulative (Average) {#cumulative-average}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="functions-cumul-avg"
->title="Kumulativ (Durchschnitt)"
->abstract="Gibt den Durchschnitt der letzten n Elemente der Spalte x zurück. Wenn n > 0 ist, werden die letzten n Elemente oder x addiert. Wenn n &lt; 0 ist, werden die vorangehenden Elemente addiert."
+>title="Cumulative (Average)"
+>abstract="Gibt den Durchschnitt der letzten n Elemente der Spalte x zurück. Wenn n > 0 ist, werden die letzten n Elemente von x addiert. Wenn n &lt; 0 ist, werden die vorangehenden Elemente n addiert."
 
 <!-- markdownlint-enable MD034 -->
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL KUMULATIVER DURCHSCHNITT(Zahl, Metrik)]**
 
-Gibt den Durchschnitt der letzten n Elemente der Spalte x zurück. Wenn n > 0 ist, werden die letzten n Elemente oder x addiert. Wenn n &lt; 0 ist, werden die vorangehenden Elemente addiert.
+Gibt den Durchschnitt der letzten n Elemente der Spalte x zurück. Wenn n > 0 ist, werden die letzten n Elemente von x addiert. Wenn n &lt; 0 ist, werden die vorangehenden Elemente n addiert.
 
 | Argument | Beschreibung |
 | --- | --- |
@@ -407,13 +407,13 @@ Gibt den Durchschnitt der letzten n Elemente der Spalte x zurück. Wenn n > 0 is
 >[!CONTEXTUALHELP]
 >id="functions-eq"
 >title="Gleich"
->abstract="Gleich. Die Ausgabe ist entweder 0 (false) oder 1 (true)."
+>abstract="Gleich.  Die Ausgabe ist entweder 0 (False) oder 1 (True)."
 
 <!-- markdownlint-enable MD034 -->
 
 ![EFFECT](/help/assets/icons/Effect.svg) **[!UICONTROL EQUAL()]**
 
-Gleich. Die Ausgabe ist entweder 0 (false) oder 1 (true).
+Gleich.  Die Ausgabe ist entweder 0 (False) oder 1 (True).
 
 
 | Argument | Beschreibung |
@@ -433,7 +433,7 @@ Gleich. Die Ausgabe ist entweder 0 (false) oder 1 (true).
 >[!CONTEXTUALHELP]
 >id="functions-ls-corr-exp"
 >title="Exponentielle Regression: Korrelationskoeffizient"
->abstract="Exponentielle Regression: Y = a exp(X) + b. Gibt den Korrelationskoeffizienten zurück."
+>abstract="Exponentielle Regression: Y = a exp(X) + b. Gibt den Korrelationskoeffizienten zurück."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -449,13 +449,13 @@ Gleich. Die Ausgabe ist entweder 0 (false) oder 1 (true).
 | metric_Y | Eine Metrik, die Sie mit metric_X korrelieren möchten |
 | include_zeros | Gibt an, ob Nullwerte in die Berechnungen einbezogen werden sollen |
 
-## Exponentielle Regression: Prognostiziert Y {#exponential-regression-predicted-y}
+## Exponentielle Regression: Vorhersage für Y {#exponential-regression-predicted-y}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="functions-ls-pred-exp"
->title="Exponentielle Regression: Prognostiziert Y"
+>title="Exponentielle Regression: Vorhersage für Y"
 >abstract="Exponentielle Regression: Y = a exp(X) + b. Gibt Y zurück."
 
 <!-- markdownlint-enable MD034 -->
@@ -473,13 +473,13 @@ Gleich. Die Ausgabe ist entweder 0 (false) oder 1 (true).
 | include_zeros | Gibt an, ob Nullwerte in die Berechnungen einbezogen werden sollen |
 
 
-## Exponentielle Regression: Intercept {#exponential-regression-intercept}
+## Exponentielle Regression: Schnittpunkt {#exponential-regression-intercept}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="functions-ls-intercept-exp"
->title="Exponentielle Regression: Intercept"
+>title="Exponentielle Regression: Schnittpunkt"
 >abstract="Exponentielle Regression: Y = a exp(X) + b. Gibt b zurück."
 
 <!-- markdownlint-enable MD034 -->
@@ -520,14 +520,14 @@ Gleich. Die Ausgabe ist entweder 0 (false) oder 1 (true).
 | include_zeros | Gibt an, ob Nullwerte in die Berechnungen einbezogen werden sollen |
 
 
-## Untergrenze {#floor}
+## Floor {#floor}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="functions-floor"
->title="Untergrenze"
->abstract="Gibt die größte Ganzzahl zurück, die nicht größer als ein angegebener Wert ist. Beispiel: Wenn Sie keine Währungsdezimalzahlen für den Umsatz in Berichte aufnehmen möchten und ein Produkt einen Umsatz von 569,34 US-Dollar aufweist, können Sie mit der Formel FLOOR(Umsatz) den Umsatz bis zum nächsten Dollar abrunden (in diesem Fall 569 US-Dollar)."
+>title="Floor"
+>abstract="Gibt die größte Ganzzahl zurück, die nicht größer als ein angegebener Wert ist. Beispiel: Wenn Sie für den Umsatz keine Währungsdezimalzahlen in Berichte aufnehmen möchten und ein Produkt einen Umsatz von 569,34 US-Dollar aufweist, können Sie mit der Formel FLOOR(Umsatz) den Umsatz auf den nächsten Dollar abrunden (in diesem Fall 569 US-Dollar)."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -547,13 +547,13 @@ Gleich. Die Ausgabe ist entweder 0 (false) oder 1 (true).
 >[!CONTEXTUALHELP]
 >id="functions-gt"
 >title="Größer als"
->abstract="Die Ausgabe ist entweder 0 (false) oder 1 (true)."
+>abstract="Die Ausgabe ist entweder 0 (False) oder 1 (True)."
 
 <!-- markdownlint-enable MD034 -->
 
 ![EFFECT](/help/assets/icons/Effect.svg) **[!UICONTROL GREATER THAN()]**
 
-Die Ausgabe ist entweder 0 (false) oder 1 (true).
+Die Ausgabe ist entweder 0 (False) oder 1 (True).
 
 | Argument | Beschreibung |
 |---|---|
@@ -572,13 +572,13 @@ Die Ausgabe ist entweder 0 (false) oder 1 (true).
 >[!CONTEXTUALHELP]
 >id="functions-ge"
 >title="Größer gleich"
->abstract="Größer als oder gleich. Die Ausgabe ist entweder 0 (false) oder 1 (true)."
+>abstract="Größer als oder gleich.  Die Ausgabe ist entweder 0 (False) oder 1 (True)."
 
 <!-- markdownlint-enable MD034 -->
 
 ![EFFECT](/help/assets/icons/Effect.svg) **[!UICONTROL GRÖSSER ODER GLEICH()]**
 
-Größer als oder gleich. Die Ausgabe ist entweder 0 (false) oder 1 (true).
+Größer als oder gleich.  Die Ausgabe ist entweder 0 (False) oder 1 (True).
 
 | Argument | Beschreibung |
 |---|---|
@@ -591,14 +591,14 @@ Größer als oder gleich. Die Ausgabe ist entweder 0 (false) oder 1 (true).
 
 
 
-## Kosinus hyperbolicus {#hyperbolic-cosine}
+## Hyperbolic Cosine {#hyperbolic-cosine}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="functions-cosh"
->title="Kosinus hyperbolicus"
->abstract="Gibt den Hyperbelkosinus einer Zahl zurück."
+>title="Hyperbolic Cosine"
+>abstract="Gibt den Cosinus hyperbolicus einer Zahl zurück."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -614,14 +614,14 @@ Größer als oder gleich. Die Ausgabe ist entweder 0 (false) oder 1 (true).
 
 
 
-## Sinus hyperbolicus {#hyperbolic-sine}
+## Hyperbolic Sine {#hyperbolic-sine}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="functions-sinh"
->title="Sinus hyperbolicus"
->abstract="Gibt den Hyperbelsinus einer Zahl zurück."
+>title="Hyperbolic Sine"
+>abstract="Gibt den Sinus hyperbolicus einer Zahl zurück."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -634,14 +634,14 @@ Größer als oder gleich. Die Ausgabe ist entweder 0 (false) oder 1 (true).
 | metric | Der Winkel im Bogenmaß, für den der hyperbolische Sinus gefunden werden soll |
 
 
-## Tangente Hyperbolicus {#hyperbolic-tangent}
+## Hyperbolic Tangent {#hyperbolic-tangent}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="functions-tanh"
->title="Tangente Hyperbolicus"
->abstract="Gibt den Hyperbeltangens einer Zahl zurück."
+>title="Hyperbolic Tangent"
+>abstract="Gibt den Tangens hyperbolicus einer Zahl zurück."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -661,7 +661,7 @@ Größer als oder gleich. Die Ausgabe ist entweder 0 (false) oder 1 (true).
 >[!CONTEXTUALHELP]
 >id="functions-if"
 >title="Wenn"
->abstract="Wenn der Wert des Bedingungsparameters ungleich null (true) ist, ist das Ergebnis der Wert des Parameters value_if_true. Andernfalls ist dies der Wert des Parameters value_if_false."
+>abstract="Wenn der Bedingungsparameter einen Wert ungleich null (true) aufweist, ist das Ergebnis der Wert des Parameters „value_if_true“. Andernfalls ist es der Wert des Parameters „value_if_false“."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -685,13 +685,13 @@ Größer als oder gleich. Die Ausgabe ist entweder 0 (false) oder 1 (true).
 >[!CONTEXTUALHELP]
 >id="functions-lt"
 >title="Kleiner als"
->abstract="Die Ausgabe ist entweder 0 (false) oder 1 (true)."
+>abstract="Die Ausgabe ist entweder 0 (False) oder 1 (True)."
 
 <!-- markdownlint-enable MD034 -->
 
 ![EFFECT](/help/assets/icons/Effect.svg) **[!UICONTROL LESS THAN()]**
 
-Die Ausgabe ist entweder 0 (false) oder 1 (true).
+Die Ausgabe ist entweder 0 (False) oder 1 (True).
 
 | Argument | Beschreibung |
 |---|---|
@@ -710,13 +710,13 @@ Die Ausgabe ist entweder 0 (false) oder 1 (true).
 >[!CONTEXTUALHELP]
 >id="functions-le"
 >title="Kleiner gleich"
->abstract="Kleiner oder gleich. Die Ausgabe ist entweder 0 (false) oder 1 (true)."
+>abstract="Kleiner als oder gleich.  Die Ausgabe ist entweder 0 (False) oder 1 (True)."
 
 <!-- markdownlint-enable MD034 -->
 
 ![EFFECT](/help/assets/icons/Effect.svg) **[!UICONTROL LESS THAN OR EQUAL()]**
 
-Kleiner oder gleich. Die Ausgabe ist entweder 0 (false) oder 1 (true).
+Kleiner als oder gleich.  Die Ausgabe ist entweder 0 (False) oder 1 (True).
 
 | Argument | Beschreibung |
 |---|---|
@@ -729,7 +729,7 @@ Kleiner oder gleich. Die Ausgabe ist entweder 0 (false) oder 1 (true).
 
 
 
-## #lift
+## Lift (#lift)
 
 <!-- markdownlint-disable MD034 -->
 
@@ -755,7 +755,7 @@ Kleiner oder gleich. Die Ausgabe ist entweder 0 (false) oder 1 (true).
 >[!CONTEXTUALHELP]
 >id="functions-ls-corr-linear"
 >title="Lineare Regression: Korrelationskoeffizient"
->abstract="Lineare Regression: Y = a X + b. Gibt den Korrelationskoeffizienten zurück."
+>abstract="Lineare Regression: Y = a X + b. Gibt den Korrelationskoeffizienten zurück."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -773,13 +773,13 @@ Kleiner oder gleich. Die Ausgabe ist entweder 0 (false) oder 1 (true).
 
 
 
-## Lineare Regression: Intercept {#linear-regression-intercept}
+## Lineare Regression: Schnittpunkt {#linear-regression-intercept}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="functions-ls-intercept-linear"
->title="Lineare Regression: Intercept"
+>title="Lineare Regression: Schnittpunkt"
 >abstract="Lineare Regression: Y = a X + b. Gibt b zurück."
 
 <!-- markdownlint-enable MD034 -->
@@ -798,13 +798,13 @@ Kleiner oder gleich. Die Ausgabe ist entweder 0 (false) oder 1 (true).
 
 
 
-## Lineare Regression: Prognostiziertes Y {#linear-regression-predicted-y}
+## Lineare Regression: Vorhersage für Y {#linear-regression-predicted-y}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="functions-ls-pred-linear"
->title="Lineare Regression: Prognostiziertes Y"
+>title="Lineare Regression: Vorhersage für Y"
 >abstract="Lineare Regression: Y = a X + b. Gibt Y zurück."
 
 <!-- markdownlint-enable MD034 -->
@@ -845,14 +845,14 @@ Kleiner oder gleich. Die Ausgabe ist entweder 0 (false) oder 1 (true).
 | include_zeros | Gibt an, ob Nullwerte in die Berechnungen einbezogen werden sollen |
 
 
-## Protokoll-Basis 10 {#log-base-ten}
+## Log Base 10 {#log-base-ten}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="functions-log10"
->title="Protokoll-Basis 10"
->abstract="Gibt den Logarithmus zur Basis 10 einer Zahl zurück."
+>title="Log Base 10"
+>abstract="Gibt den Logarithmus einer Zahl zur Basis 10 zurück."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -867,14 +867,14 @@ Kleiner oder gleich. Die Ausgabe ist entweder 0 (false) oder 1 (true).
 | metric | Die positive reelle Zahl, für die der Logarithmus der Basis 10 verwendet werden soll |
 
 
-## Log-Regression: Korrelationskoeffizient {#log-regression-correlation-coefficient}
+## Logarithmische Regression: Korrelationskoeffizient {#log-regression-correlation-coefficient}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="functions-ls-corr-log"
->title="Log-Regression: Korrelationskoeffizient"
->abstract="Logistische Regression: Y = a ln(X) + b. Gibt den Korrelationskoeffizienten zurück."
+>title="Logarithmische Regression: Korrelationskoeffizient"
+>abstract="Logarithmische Regression: Y = a ln(X) + b. Gibt den Korrelationskoeffizienten zurück."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -889,14 +889,14 @@ Kleiner oder gleich. Die Ausgabe ist entweder 0 (false) oder 1 (true).
 | include_zeros | Gibt an, ob Nullwerte in die Berechnungen einbezogen werden sollen |
 
 
-## Log-Regression: Intercept {#log-regression-intercept}
+## Logarithmische Regression: Schnittpunkt {#log-regression-intercept}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="functions-ls-intercept-log"
->title="Log-Regression: Intercept"
->abstract="Log-Regression: Y = a ln(X) + b. Gibt b zurück."
+>title="Logarithmische Regression: Schnittpunkt"
+>abstract="Logarithmische Regression: Y = a ln(X) + b. Gibt b zurück."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -912,14 +912,14 @@ Kleiner oder gleich. Die Ausgabe ist entweder 0 (false) oder 1 (true).
 
 
 
-## Protokollregression: Prognostiziertes Y {#log-regression-predicted-y}
+## Logarithmische Regression: Vorhersage für Y {#log-regression-predicted-y}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="functions-ls-pred-log"
->title="Protokollregression: Prognostiziertes Y"
->abstract="Log-Regression: Y = a ln(X) + b. Gibt Y zurück."
+>title="Logarithmische Regression: Vorhersage für Y"
+>abstract="Logarithmische Regression: Y = a ln(X) + b. Gibt Y zurück."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -935,14 +935,14 @@ Kleiner oder gleich. Die Ausgabe ist entweder 0 (false) oder 1 (true).
 
 
 
-## Log-Regression: Steigung {#log-regression-slope}
+## Logistische Regression: Steigung {#log-regression-slope}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="functions-ls-slope-log"
->title="Log-Regression: Steigung"
->abstract="Log-Regression: Y = a ln(X) + b. Gibt a zurück."
+>title="Logistische Regression: Steigung"
+>abstract="Logarithmische Regression: Y = a ln(X) + b. Gibt a zurück."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -965,13 +965,13 @@ Kleiner oder gleich. Die Ausgabe ist entweder 0 (false) oder 1 (true).
 >[!CONTEXTUALHELP]
 >id="functions-log"
 >title="Natürlicher Logarithmus"
->abstract="Gibt den natürlichen Logarithmus einer Zahl zurück. Natürliche Logarithmen basieren auf der Konstante e (2,71828182845904). LN ist die Umkehrung der Exponentialfunktion."
+>abstract="Gibt den natürlichen Logarithmus einer Zahl zurück. Natürliche Logarithmen basieren auf der Konstanten e (2.71828182845904). LN ist die Umkehrung der EXP-Funktion."
 
 <!-- markdownlint-enable MD034 -->
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL NATÜRLICHES LOG(metrisch)]**
 
-Gibt den natürlichen Logarithmus einer Zahl zurück. Natürliche Logarithmen basieren auf der Konstante e (2,71828182845904). LN ist die Umkehrung der Exponentialfunktion.
+Gibt den natürlichen Logarithmus einer Zahl zurück. Natürliche Logarithmen basieren auf der Konstanten e (2.71828182845904). LN ist die Umkehrung der EXP-Funktion.
 
 | Argument | Beschreibung |
 |---|---|
@@ -986,13 +986,13 @@ Gibt den natürlichen Logarithmus einer Zahl zurück. Natürliche Logarithmen ba
 >[!CONTEXTUALHELP]
 >id="functions-not"
 >title="Nicht"
->abstract="Negation als boolescher Wert. Die Ausgabe ist entweder 0 (false) oder 1 (true)."
+>abstract="Negation als boolescher Wert. Die Ausgabe ist entweder 0 (False) oder 1 (True)."
 
 <!-- markdownlint-enable MD034 -->
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL NICHT(logisch)]**
 
-Negation als boolescher Wert. Die Ausgabe ist entweder 0 (false) oder 1 (true).
+Negation als boolescher Wert. Die Ausgabe ist entweder 0 (False) oder 1 (True).
 
 | Argument | Beschreibung |
 |---|---|
@@ -1000,21 +1000,21 @@ Negation als boolescher Wert. Die Ausgabe ist entweder 0 (false) oder 1 (true).
 
 
 
-## Ungleich {#not-equal}
+## Not Equal {#not-equal}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="functions-ne"
->title="Ungleich"
->abstract="Ungleich. Die Ausgabe ist entweder 0 (false) oder 1 (true)."
+>title="Not Equal"
+>abstract="Ungleich.  Die Ausgabe ist entweder 0 (False) oder 1 (True)."
 
 <!-- markdownlint-enable MD034 -->
 
 ![EFFECT](/help/assets/icons/Effect.svg) **[!UICONTROL NOT EQUAL()]**
 
 
-Ungleich. Die Ausgabe ist entweder 0 (false) oder 1 (true).
+Ungleich.  Die Ausgabe ist entweder 0 (False) oder 1 (True).
 
 
 | Argument | Beschreibung |
@@ -1034,7 +1034,7 @@ Ungleich. Die Ausgabe ist entweder 0 (false) oder 1 (true).
 >[!CONTEXTUALHELP]
 >id="functions-or"
 >title="Oder"
->abstract="Trennung. Wenn ungleich null ist, gilt dies als „true“ und wenn gleich null ist, wird dies als „false“ betrachtet. Die Ausgabe ist entweder 0 (false) oder 1 (true)."
+>abstract="ODER-Verknüpfung. „Ungleich null“ gilt als „True“ und „Gleich null“ gilt als „False“. Die Ausgabe ist entweder 0 (False) oder 1 (True)."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -1061,13 +1061,13 @@ Ungleich. Die Ausgabe ist entweder 0 (false) oder 1 (true).
 >[!CONTEXTUALHELP]
 >id="functions-pi"
 >title="Pi"
->abstract="Gibt PI zurück: 3,14159…"
+>abstract="Gibt Pi zurück: 3,14159…"
 
 <!-- markdownlint-enable MD034 -->
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL PI()]**
 
-Gibt PI zurück: 3,14159…
+Gibt Pi zurück: 3,14159…
 
 
 ## Potenzregression: Korrelationskoeffizient {#power-regression-correlation-coefficient}
@@ -1093,13 +1093,13 @@ Gibt PI zurück: 3,14159…
 
 
 
-## Potenzregression: Intercept {#power-regression-intercept}
+## Potenzregression: Schnittpunkt {#power-regression-intercept}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="functions-ls-intercept-power"
->title="Potenzregression: Intercept"
+>title="Potenzregression: Schnittpunkt"
 >abstract="Potenzregression: Y = b X ^ a. Gibt b zurück."
 
 <!-- markdownlint-enable MD034 -->
@@ -1117,13 +1117,13 @@ Gibt PI zurück: 3,14159…
 | include_zeros | Gibt an, ob Nullwerte in die Berechnungen einbezogen werden sollen |
 
 
-## Potenzregression: Prognostiziertes Y {#power-regression-predicted-y}
+## Potenzregression: Vorhersage für Y {#power-regression-predicted-y}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="functions-ls-pred-power"
->title="Potenzregression: Prognostiziertes Y"
+>title="Potenzregression: Vorhersage für Y"
 >abstract="Potenzregression: Y = b X ^ a. Gibt Y zurück."
 
 <!-- markdownlint-enable MD034 -->
@@ -1140,13 +1140,13 @@ Gibt PI zurück: 3,14159…
 
 
 
-## Leistungsregression: Steigung {#power-regression-slope}
+## Potenzregression: Steigung {#power-regression-slope}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="functions-ls-slope-power"
->title="Leistungsregression: Steigung"
+>title="Potenzregression: Steigung"
 >abstract="Potenzregression: Y = b X ^ a. Gibt a zurück."
 
 <!-- markdownlint-enable MD034 -->
@@ -1184,13 +1184,13 @@ Gibt PI zurück: 3,14159…
 | metric_Y | Eine Metrik, die Sie mit metric_X korrelieren möchten |
 | include_zeros | Gibt an, ob Nullwerte in die Berechnungen einbezogen werden sollen |
 
-## Quadratische Regression: Intercept {#quadratic-regression-intercept}
+## Quadratische Regression: Schnittpunkt {#quadratic-regression-intercept}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="functions-ls-intercept-quadratic"
->title="Quadratische Regression: Intercept"
+>title="Quadratische Regression: Schnittpunkt"
 >abstract="Quadratische Regression: Y = (a + bX) ^ 2. Gibt a zurück."
 
 <!-- markdownlint-enable MD034 -->
@@ -1206,13 +1206,13 @@ Gibt PI zurück: 3,14159…
 | include_zeros | Gibt an, ob Nullwerte in die Berechnungen einbezogen werden sollen |
 
 
-## Quadratische Regression: Vorhergesagtes Y {#quadratic-regression-predicted-y}
+## Quadratische Regression: Vorhersage für Y {#quadratic-regression-predicted-y}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="functions-ls-pred-quadratic"
->title="Quadratische Regression: Vorhergesagtes Y"
+>title="Quadratische Regression: Vorhersage für Y"
 >abstract="Quadratische Regression: Y = (a + bX) ^ 2. Gibt Y zurück."
 
 <!-- markdownlint-enable MD034 -->
@@ -1273,14 +1273,14 @@ Gibt PI zurück: 3,14159…
 | include_zeros | Gibt an, ob Nullwerte in die Berechnungen einbezogen werden sollen |
 
 
-## Reziproke Regression: Intercept {#reciprocal-regression-intercept}
+## Reziproke Regression: Schnittpunkt {#reciprocal-regression-intercept}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="functions-ls-intercept-reciprocal"
->title="Reziproke Regression: Intercept"
->abstract="Reziproke Regression: Y = a + b X ^ -1. Gibt ein -Objekt zurück."
+>title="Reziproke Regression: Schnittpunkt"
+>abstract="Reziproke Regression: Y = a + b X ^ -1. Gibt a zurück."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -1295,13 +1295,13 @@ Gibt PI zurück: 3,14159…
 | include_zeros | Gibt an, ob Nullwerte in die Berechnungen einbezogen werden sollen |
 
 
-## Reziproke Regression: Prognostiziertes Y {#reciprocal-regression-predicted-y}
+## Reziproke Regression: Vorhersage für Y {#reciprocal-regression-predicted-y}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="functions-ls-pred-reciprocal"
->title="Reziproke Regression: Prognostiziertes Y"
+>title="Reziproke Regression: Vorhersage für Y"
 >abstract="Reziproke Regression: Y = a + b X ^ -1. Gibt Y zurück."
 
 <!-- markdownlint-enable MD034 -->
@@ -1341,14 +1341,14 @@ Gibt PI zurück: 3,14159…
 
 
 
-## Sinus {#sine}
+## Sine {#sine}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="functions-sin"
->title="Sinus"
->abstract="Gibt den Sinus des angegebenen Winkels zurück. Wenn der Winkel in Grad angegeben ist, multiplizieren Sie den Winkel mit PI()/180."
+>title="Sine"
+>abstract="Gibt den Sinus des gegebenen Winkels zurück. Wenn der Winkel in Grad angegeben ist, multiplizieren Sie den Winkel mit PI()/180."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -1372,13 +1372,13 @@ Gibt PI zurück: 3,14159…
 >[!CONTEXTUALHELP]
 >id="functions-t-score"
 >title="t-Transformation"
->abstract="Die Abweichung vom [MITTELWERT](cm-functions.md#mean) geteilt durch die Standardabweichung. Alias für [Z-Score](#z-score)."
+>abstract="Die Abweichung vom [ARITHMETISCHEN MITTEL](cm-functions.md#mean) geteilt durch die Standardabweichung. Alias für [Z-Score](#z-score)."
 
 <!-- markdownlint-enable MD034 -->
 
 ![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL T-SCORE(metric, include_zeros)]**
 
-Die Abweichung vom [MITTELWERT](cm-functions.md#mean) geteilt durch die Standardabweichung. Alias für [Z-Score](#z-score).
+Die Abweichung vom [ARITHMETISCHEN MITTEL](cm-functions.md#mean) geteilt durch die Standardabweichung. Alias für [Z-Score](#z-score).
 
 | Argument | Beschreibung |
 |---|---|
@@ -1440,13 +1440,13 @@ Der Rückgabewert ist die Wahrscheinlichkeit, die Teststatistik x zu erhalten, b
 >[!CONTEXTUALHELP]
 >id="functions-tan"
 >title="Tangens"
->abstract="Gibt den Tangens des angegebenen Winkels zurück. Wenn der Winkel in Grad angegeben ist, multiplizieren Sie den Winkel mit PI()/180."
+>abstract="Gibt den Tangens des gegebenen Winkels zurück. Wenn der Winkel in Grad angegeben ist, multiplizieren Sie den Winkel mit PI()/180."
 
 <!-- markdownlint-enable MD034 -->
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL TANGENS(metrisch)]**
 
-Gibt den Tangens des angegebenen Winkels zurück. Wenn der Winkel in Grad angegeben ist, multiplizieren Sie den Winkel mit PI()/180.
+Gibt den Tangens des gegebenen Winkels zurück. Wenn der Winkel in Grad angegeben ist, multiplizieren Sie den Winkel mit PI()/180.
 
 | Argument | Beschreibung |
 |---|---|
@@ -1454,14 +1454,14 @@ Gibt den Tangens des angegebenen Winkels zurück. Wenn der Winkel in Grad angege
 
 
 
-## z-score {#z-score}
+## Z-Score {#z-score}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="functions-z-score"
->title="z-score"
->abstract="Die Abweichung vom Mittelwert dividiert durch die Standardabweichung."
+>title="Z-Score"
+>abstract="Die Abweichung vom arithmetischen Mittel geteilt durch die Standardabweichung."
 
 <!-- markdownlint-enable MD034 -->
 
