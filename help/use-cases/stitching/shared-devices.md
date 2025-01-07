@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: a7d14968-33a2-46a8-8e32-fb6716650d0a
-source-git-commit: 81d1c6abbda63c4ac8cdcc96d1b730974b137ad9
+source-git-commit: 9118a3c20158b1a0373fab1b41595aa7b07075f6
 workflow-type: tm+mt
-source-wordcount: '659'
+source-wordcount: '658'
 ht-degree: 7%
 
 ---
@@ -49,7 +49,7 @@ Bei der Zuordnung können freigegebene Gerätedaten entweder anhand der Attribut
 
 ### Attribution der letzten Authentifizierung
 
-Last-auth schreibt alle unbekannten Aktivitäten eines gemeinsam genutzten Geräts dem Benutzer zu, der sich zuletzt authentifiziert hat. Der Experience Platform Identity Service erstellt das Diagramm basierend auf der Attribution der letzten Authentifizierung und wird als solche beim diagrammbasierten Stitching verwendet. Weitere [ finden Sie unter Übersicht ](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-graph-linking-rules/overview) Identitätsdiagramm-Verknüpfungsregeln.
+Last-auth schreibt alle unbekannten Aktivitäten eines gemeinsam genutzten Geräts dem Benutzer zu, der sich zuletzt authentifiziert hat. Der Experience Platform Identity Service erstellt das Diagramm basierend auf der Attribution der letzten Authentifizierung und wird als solche beim diagrammbasierten Stitching verwendet. Weitere [ finden Sie unter ](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-graph-linking-rules/identity-optimization-algorithm#identity-optimization-algorithm-details) für Identitätsdiagramme .
 
 Wenn die Attribution der letzten Authentifizierung beim Zusammenfügen verwendet wird, werden zusammengefügte IDs aufgelöst, wie in der folgenden Tabelle dargestellt.
 
@@ -65,7 +65,7 @@ Wenn die Attribution der letzten Authentifizierung beim Zusammenfügen verwendet
 
 ### Device-split
 
-Device-split schreibt die anonyme Aktivität eines gemeinsam genutzten Geräts dem Benutzer in der nächsten Nähe zur anonymen Aktivität zu. Device-split wird derzeit beim feldbasierten Stitching verwendet.
+Device-split schreibt anonyme Aktivität von einem gemeinsam genutzten Gerät dem neuesten bekannten Benutzer zu, der in der Vergangenheit gesucht hat. Device-split wird derzeit beim feldbasierten Stitching verwendet.
 
 Wenn die Attribution „Device-Split“ beim Zusammenfügen verwendet wird, werden zusammengefügte IDs aufgelöst, wie in der folgenden Tabelle dargestellt.
 

@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: ea5c9114-1fc3-4686-b184-2850acb42b5c
-source-git-commit: 9b0aceba409bcb8ace39c55a7b0243ebb54ce86e
+source-git-commit: 9118a3c20158b1a0373fab1b41595aa7b07075f6
 workflow-type: tm+mt
-source-wordcount: '1361'
-ht-degree: 8%
+source-wordcount: '1385'
+ht-degree: 7%
 
 ---
 
@@ -147,7 +147,7 @@ Die folgenden Voraussetzungen gelten speziell für das diagrammbasierte Stitchin
 Die folgenden Einschränkungen gelten speziell für das diagrammbasierte Stitching:
 
 - Zeitstempel werden bei der Abfrage der vorübergehenden ID unter Verwendung des angegebenen Namespace nicht berücksichtigt. Es ist also möglich, dass eine persistente ID mit einer vorübergehenden ID aus einem Datensatz verknüpft ist, der einen früheren Zeitstempel hat.
-- Keine Unterstützung für freigegebene Geräte. Wenn mehrere Identitäten zurückgegeben werden, indem das Identitätsdiagramm mithilfe eines Namespace abgefragt wird, wird die erste lexikografische Identität verwendet.
+- In Szenarien mit gemeinsam genutzten Geräten, in denen der Namespace im Diagramm mehrere Identitäten enthält, wird die erste lexikografische Identität verwendet. Wenn Namespace-Beschränkungen und -Prioritäten im Rahmen der Veröffentlichung von Diagrammverknüpfungsregeln konfiguriert werden, wird die Identität des letzten authentifizierten Benutzers verwendet. Weitere Informationen finden [ unter ](/help/use-cases/stitching/shared-devices.md) Geräte .
 - Es gibt eine feste Grenze von drei Monaten, bis Identitäten im Identitätsdiagramm aufgestockt werden. Sie würden Identitäten zum Aufstocken verwenden, falls Sie keine Experience Platform-Anwendung wie Real-time Customer Data Platform zum Ausfüllen des Identitätsdiagramms verwenden.
 - Es [ die „Leitplanken ](https://experienceleague.adobe.com/en/docs/experience-platform/identity/guardrails) Identity Service“. Siehe beispielsweise die folgenden [statischen Beschränkungen](https://experienceleague.adobe.com/en/docs/experience-platform/identity/guardrails#static-limits):
    - Maximale Anzahl von Identitäten in einem Diagramm: 50.
