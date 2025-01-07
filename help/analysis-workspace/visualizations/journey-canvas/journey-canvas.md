@@ -4,10 +4,10 @@ title: Journey-Arbeitsfläche
 feature: Visualizations
 role: User
 exl-id: be03c3b2-8faf-47b8-b3ab-e953202bf488
-source-git-commit: acbe705647e508bbc85f596c3165b1acd8cb15bb
+source-git-commit: 05e1b5e26d5a1dc1e46a675131185f0927c65f22
 workflow-type: tm+mt
-source-wordcount: '1766'
-ht-degree: 3%
+source-wordcount: '1759'
+ht-degree: 1%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 3%
 >[!CONTEXTUALHELP]
 >id="cja_journeycanvas_button"
 >title="Journey-Arbeitsfläche"
->abstract="Ähnlich wie bei Fallout zeigt diese Visualisierung, wie Personen eine Reihe von Touchpoints durchlaufen oder aus ihnen herausfallen. Verwenden Sie die Journey-Arbeitsfläche für Journeys mit mehreren Einstiegspunkten und Pfaden oder zur Analyse von Journeys, die in Journey Optimizer erstellt wurden."
+>abstract="Zeigt, wie Personen eine Reihe von Touchpoints durchlaufen oder aus ihr herausfallen. Verwenden Sie für Journey mit mehreren Einstiegspunkten und Pfaden oder zum Analysieren von in Journey Optimizer erstellten Journey."
 
 <!-- markdownlint-enable MD034 -->
 
