@@ -4,14 +4,34 @@ title: Journey-Arbeitsfläche
 feature: Visualizations
 role: User
 exl-id: be03c3b2-8faf-47b8-b3ab-e953202bf488
-source-git-commit: 25969de61f23cf0690a130127fcc1442b9806a35
+source-git-commit: acbe705647e508bbc85f596c3165b1acd8cb15bb
 workflow-type: tm+mt
-source-wordcount: '1657'
-ht-degree: 1%
+source-wordcount: '1766'
+ht-degree: 3%
 
 ---
 
-# Überblick über die Journey-Arbeitsfläche
+# Überblick über die Journey-Arbeitsfläche {#journey-canvas-overview}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_journeycanvas_button"
+>title="Journey-Arbeitsfläche"
+>abstract="Ähnlich wie bei Fallout zeigt diese Visualisierung, wie Personen eine Reihe von Touchpoints durchlaufen oder aus ihnen herausfallen. Verwenden Sie die Journey-Arbeitsfläche für Journeys mit mehreren Einstiegspunkten und Pfaden oder zur Analyse von Journeys, die in Journey Optimizer erstellt wurden."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_journeycanvas_panel"
+>title="Journey-Arbeitsfläche"
+>abstract="Analysieren, wie Personen eine definierte Journey durchlaufen oder aus ihr herausfallen. Erstellen Sie Analysen von Benutzerknoten, indem Sie ein flexibles Journey-Diagramm erstellen, das eine beliebige Ereigniskombination, Dimensionselemente und Filter darstellt. Ziehen Sie Knoten auf die Arbeitsfläche, um die Ereignisse und Bedingungen des Journey neu anzuordnen. Entsprechend werden die Daten aktualisiert. <br/><br/>Kunden mit Zugriff auf Adobe Journey Optimizer können bestehende Journey Optimizer-Journey analysieren"
+
+<!-- markdownlint-enable MD034 -->
+
+
 
 Die Journey-Arbeitsflächen-Visualisierung ermöglicht es Ihnen, die Journey zu analysieren und detaillierte Einblicke zu erhalten, die Sie Ihren Benutzenden und Kunden bieten. Damit können Sie eine Journey von Grund auf neu definieren oder eine von Journey Optimizer anzeigen und dann sehen, wie Personen die Journey verlassen (ausgefallen) oder weiter durchlaufen (durchgefallen) haben.
 
