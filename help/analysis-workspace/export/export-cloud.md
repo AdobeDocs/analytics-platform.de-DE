@@ -5,10 +5,10 @@ title: Exportieren von Customer Journey Analytics-Berichten in die Cloud
 feature: Curate and Share
 exl-id: 072eadcc-43ff-42e3-86ee-82062fa02eba
 role: User
-source-git-commit: de04792035aa7c235751019ee9f9fe5b74b9b102
+source-git-commit: 18a1cfcddfc8b2d1c70af57518c0b8d848b4ca5d
 workflow-type: tm+mt
-source-wordcount: '2205'
-ht-degree: 4%
+source-wordcount: '2226'
+ht-degree: 3%
 
 ---
 
@@ -178,6 +178,7 @@ Die folgenden Komponenten werden nicht unterstützt und Analysis Workspace forde
    * wurde aus einem Feld erstellt, das Teil eines [Arrays von Objekten](/help/use-cases/object-arrays.md) ist (ähnlich wie Variablen mit mehreren Werten in Adobe Analytics)
    * Hat [Persistenz aktiviert](/help/data-views/component-settings/persistence.md)
    * Verwendet keine [Bindungsdimension](/help/use-cases/data-views/binding-dimensions-metrics.md)
+* Mehrere Dimensionen, die aus Feldern stammen, die auf verschiedene [Objekt-Arrays](/help/use-cases/object-arrays.md) verweisen. (Mehrere Dimensionen, die auf dasselbe Array von Objekten verweisen, sind zulässig.)
 * Mehr als 5 Dimensionen und 5 Metriken pro Bericht (bis zu 5 Dimensionen und 5 Metriken werden unterstützt)
 * In Tabellenspalten:
    * Datumsbereiche
