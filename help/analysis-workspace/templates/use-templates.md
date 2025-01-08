@@ -9,7 +9,7 @@ exl-id: d61f215d-9089-4014-9c5a-97f5d7134f34
 source-git-commit: 34b94eeeeb501f6c0deb982351b7c65e0a97bc68
 workflow-type: tm+mt
 source-wordcount: '18106'
-ht-degree: 81%
+ht-degree: 82%
 
 ---
 
@@ -1346,14 +1346,14 @@ Die folgenden Vorlagen sind verfügbar:
 | **Web+App** | Zeigen Sie Web- und Mobil-Traffic zusammen an.<p>**Dies kann Ihnen helfen**, die Verteilung des Web- und Mobil-Traffics auf Ihrer Website besser zu verstehen.</p><p>**Basierend auf Ihren Erkenntnissen können Sie** verschiedene Maßnahmen ergreifen, z. B. mehr Ressourcen für Ihre mobile App bereitstellen, wenn diese ein bestimmtes Besucheraufkommen erreicht.</p><p>Diese Vorlage verwendet die Metriken Web-Sitzungen, Mobile-App-Sitzungen und Web+App-Cross-Channel-Sitzungen .</p> |
 | **Online/Offline** | Zeigen Sie Online- und Offline-Traffic zusammen an.<p>**Dies kann Ihnen helfen**, die Verteilung des Online- und Offline-Traffics auf Ihrer Website besser zu verstehen.</p><p>**Basierend auf Ihren Erkenntnissen können Sie** verschiedene Maßnahmen ergreifen, z. B. mehr Ressourcen für Ihre Online-Erfahrung bereitstellen, wenn diese ein bestimmtes Besucheraufkommen erreicht.</p><!-- This template uses the ... --> |
 
-### Andere Kanäle {#other-channels}
+### Sonstige Kanäle {#other-channels}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja-template--pointOfSale"
->title="Zeigen Sie Transaktionsdaten zum Point-of-Sale (POS) an, einschließlich Umsatz, getätigter Bestellungen und verkaufter Einheiten. Diese Vorlage enthält auch Visualisierungen, die Informationen zu Top-Stores, Top-Produkten und Top-Produktkategorien sowie zu Online- und Offline-Verkäufen anzeigen."
->abstract="**Dies kann Ihnen helfen** besser zu verstehen, welche Ihre meistverkauften Produkte sind, sowohl in Ihrem Geschäft als auch online.<br/>**Je nachdem, was Sie lernen** können Sie beliebig viele Dinge tun, z. B. Ihren leistungsstärksten Produkten und Kanälen mehr Marketing-Ressourcen zuweisen."
+>title="Zeigen Sie Transaktionsdaten zum Point of Sale (PoS) an, einschließlich Umsatz, getätigter Bestellungen und verkaufter Einheiten. Diese Vorlage enthält auch Visualisierungen, die Informationen zu Top-Stores, Top-Produkten und Top-Produktkategorien sowie zu Online- und Offline-Verkäufen anzeigen."
+>abstract="**Dies kann Ihnen helfen**, besser zu verstehen, was Ihre meistverkauften Produkte sind, sowohl im Geschäft als auch online.<br/>**Basierend auf Ihren Erkenntnissen können Sie** verschiedene Maßnahmen ergreifen, z. B. den leistungsstärksten Produkten und Kanälen mehr Marketing-Ressourcen zuweisen."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -1361,8 +1361,8 @@ Die folgenden Vorlagen sind verfügbar:
 
 >[!CONTEXTUALHELP]
 >id="cja-template--survey"
->title="Zeigen Sie die Benutzerinteraktion für Ihre Umfragen an. Zeigen Sie die Anzahl der Starts und Abschlüsse, die wichtigsten Fragen und Antworten und die Anzahl der ersten und wiederholten Teilnehmer an."
->abstract="**Dies kann Ihnen helfen** die Interaktionsstufen und Erfolgsraten Ihrer Umfragen besser zu verstehen.<br/>**Je nachdem, was Sie lernen** können Sie beliebig viele Dinge tun, z. B. zukünftige Umfragen anpassen, um eine bessere Teilnahme zu erzielen."
+>title="Zeigen Sie die Benutzerinteraktion für Ihre Umfragen an. Zeigen Sie die Anzahl der Starts und Abschlüsse, die wichtigsten Fragen und Antworten und die Anzahl der erstmaligen und wiederholten Teilnehmenden an."
+>abstract="**Dies kann Ihnen helfen**, die Interaktionsstufen und Erfolgsraten der Umfragen besser zu verstehen.<br/>**Basierend auf Ihren Erkenntnissen können Sie** verschiedene Maßnahmen ergreifen, z. B. zukünftige Umfragen anpassen, um die Teilnahme zu erhöhen."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -1371,9 +1371,9 @@ Die folgenden Vorlagen sind verfügbar:
 | Name der Vorlage | Gründe für die Verwendung dieser <!-- What do you do with it? What can it help you learn? and What are the potential actions? --> |
 | --- | --- | 
 | [!UICONTROL **Callcenter-Dashboard**] | <p>**Dies kann Ihnen helfen** besser zu verstehen</p><p>**Je nachdem, was Sie lernen, können** beliebig viele Dinge tun, z. B. </p><p>Diese Vorlage verwendet die |
-| **POS/Offline** | Zeigen Sie Transaktionsdaten zum Point-of-Sale (POS) an, einschließlich Umsatz, getätigter Bestellungen und verkaufter Einheiten. Diese Vorlage enthält auch Visualisierungen, die Informationen zu Top-Stores, Top-Produkten und Top-Produktkategorien sowie zu Online- und Offline-Verkäufen anzeigen. <p>**Dies kann Ihnen helfen** besser zu verstehen, welche Ihre meistverkauften Produkte sind, sowohl in Ihrem Geschäft als auch online.</p><p>**Je nachdem, was Sie lernen** können Sie beliebig viele Dinge tun, z. B. Ihren leistungsstärksten Produkten und Kanälen mehr Marketing-Ressourcen zuweisen.</p><p>Diese Vorlage verwendet die Metriken Benutzer, Umsatz und Bestellungen .</p> |
+| **POS/Offline** | Zeigen Sie Transaktionsdaten zum Point of Sale (PoS) an, einschließlich Umsatz, getätigter Bestellungen und verkaufter Einheiten. Diese Vorlage enthält auch Visualisierungen, die Informationen zu Top-Stores, Top-Produkten und Top-Produktkategorien sowie zu Online- und Offline-Verkäufen anzeigen. <p>**Dies kann Ihnen helfen**, besser zu verstehen, was Ihre meistverkauften Produkte sind, sowohl im Geschäft als auch online.</p><p>**Basierend auf Ihren Erkenntnissen können Sie** verschiedene Maßnahmen ergreifen, z. B. den leistungsstärksten Produkten und Kanälen mehr Marketing-Ressourcen zuweisen.</p><p>Diese Vorlage verwendet die Metriken Benutzer, Umsatz und Bestellungen .</p> |
 | **E-Mail/AJO** | <p>**Dies kann Ihnen helfen** besser zu verstehen</p><p>**Je nachdem, was Sie lernen, können** beliebig viele Dinge tun, z. B. </p><p>Diese Vorlage verwendet die |
-| **Umfrage** | Zeigen Sie die Benutzerinteraktion für Ihre Umfragen an. Zeigen Sie die Anzahl der Starts und Abschlüsse, die wichtigsten Fragen und Antworten und die Anzahl der ersten und wiederholten Teilnehmer an.<p>**Dies kann Ihnen helfen** die Interaktionsstufen und Erfolgsraten Ihrer Umfragen besser zu verstehen.</p><p>**Je nachdem, was Sie lernen** können Sie beliebig viele Dinge tun, z. B. zukünftige Umfragen anpassen, um eine bessere Teilnahme zu erzielen.</p><p>Diese Vorlage verwendet die Metriken Benutzer, Ereignisse, Umfragestarts, Umfrageabschlüsse und Umfrageabschlussrate .</p> |
+| **Umfrage** | Zeigen Sie die Benutzerinteraktion für Ihre Umfragen an. Zeigen Sie die Anzahl der Starts und Abschlüsse, die wichtigsten Fragen und Antworten und die Anzahl der erstmaligen und wiederholten Teilnehmenden an.<p>**Dies kann Ihnen helfen**, die Interaktionsstufen und Erfolgsraten der Umfragen besser zu verstehen.</p><p>**Basierend auf Ihren Erkenntnissen können Sie** verschiedene Maßnahmen ergreifen, z. B. zukünftige Umfragen anpassen, um die Teilnahme zu erhöhen.</p><p>Diese Vorlage verwendet die Metriken Benutzer, Ereignisse, Umfragestarts, Umfrageabschlüsse und Umfrageabschlussrate .</p> |
 
 ### AJO {#AJO-templates}
 
