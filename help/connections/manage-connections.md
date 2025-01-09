@@ -6,10 +6,10 @@ exl-id: 0a87518c-3608-44ad-b5e3-976f97560433
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: 0b6a84820dc42b5e5009eaa254e5554712a952aa
+source-git-commit: c5e5963e6dc4d97de012f825bbea4445cc72d622
 workflow-type: tm+mt
-source-wordcount: '3536'
-ht-degree: 21%
+source-wordcount: '3749'
+ht-degree: 20%
 
 ---
 
@@ -151,9 +151,9 @@ Die Schnittstelle Verbindungsdetails bietet eine detaillierte Ansicht des Status
 | Schema | Das Experience Platform-Schema, auf dem der Datensatz basiert. |
 | [!UICONTROL Importieren neuer Daten] | Der Status des Imports neuer Daten für den Datensatz: <p>![Status grün](assets/status-green.svg)   **[!UICONTROL _x _Ein]**wenn der Datensatz für den Import neuer Daten konfiguriert ist, und<p>![Status grau](assets/status-gray.svg)   **[!UICONTROL _x Aus_]** wenn der Datensatz so konfiguriert ist, dass er keinen neuen Datenimport importiert. |
 | [!UICONTROL Daten transformieren] | Der Umwandlungsstatus von anwendbaren B2B-Lookup-Datensätzen. Weitere Informationen finden Sie unter [Umwandeln von Datensätzen für B2B-Suchen](transform-datasets-b2b-lookups.md).<p>![Status grün](assets/status-green.svg)   **[!UICONTROL _x _Ein]**für entsprechende Datensätze, die für die Umwandlung aktiviert sind, <p>![Status grau](assets/status-gray.svg)   **[!UICONTROL _x Aus_]** für entsprechende Datensätze, die nicht für die Umwandlung aktiviert sind, und<p>**[!UICONTROL Nicht zutreffend]** für alle anderen Datensätze, nicht anwendbar für die Umwandlung. |
-| [!UICONTROL Aufstockungsdaten] | Der Status der Aufstockungsdaten für den Datensatz.<p>![Status rot](assets/status-red.svg)   **[!UICONTROL _x _Aufstockungen fehlgeschlagen]**für die Anzahl fehlgeschlagener Aufstockungen,<p>![Status rot](assets/status-orange.svg)   **[!UICONTROL _x _Aufstockungsverarbeitung]**für die Anzahl der Aufstockungsverarbeitung,<p>![Status grün](assets/status-green.svg)   **[!UICONTROL _x _Aufstockungen abgeschlossen]**für die Anzahl der abgeschlossenen Aufstockungen und<p>![Status grau](assets/status-gray.svg)   **[!UICONTROL _Aus_]** falls keine Aufstockungen konfiguriert sind. |
+| [!UICONTROL Aufstockungsdaten] | Der Status der Aufstockungsdaten für den Datensatz.<p>![Status rot](assets/status-red.svg)   **[!UICONTROL _x _Aufstockungen fehlgeschlagen]**für die Anzahl fehlgeschlagener Aufstockungen,<p>![Status rot](assets/status-orange.svg)   **[!UICONTROL _x _Aufstockungsverarbeitung]**für die Anzahl der verarbeiteten Aufstockungen,<p>![Status grün](assets/status-green.svg)   **[!UICONTROL _x _Aufstockungen abgeschlossen]**für die Anzahl der abgeschlossenen Aufstockungen und<p>![Status grau](assets/status-gray.svg)   **[!UICONTROL _Aus_]** falls keine Aufstockungen konfiguriert sind. |
 | [!UICONTROL Importieren neuer Daten] | Der Status des Imports neuer Daten für den Datensatz: <p>![Status grün](assets/status-green.svg)   **[!UICONTROL _x _Ein]**wenn der Datensatz für den Import neuer Daten konfiguriert ist, und<p>![Status grau](assets/status-gray.svg)   **[!UICONTROL _x Aus_]** wenn der Datensatz so konfiguriert ist, dass er keine neuen Daten importiert. |
-| [!UICONTROL Aufstockungsdaten] | Der Status der Aufstockungsdaten für den Datensatz.<p>![Status rot](assets/status-red.svg)   **[!UICONTROL _x _Aufstockungen fehlgeschlagen]**für die Anzahl fehlgeschlagener Aufstockungen,<p>![Status rot](assets/status-orange.svg)   **[!UICONTROL _x _Aufstockungsverarbeitung]**für die Anzahl der Aufstockungsverarbeitung,<p>![Status grün](assets/status-green.svg)   **[!UICONTROL _x _Aufstockungen abgeschlossen]**für die Anzahl der abgeschlossenen Aufstockungen und<p>![Status grau](assets/status-gray.svg)   **[!UICONTROL _Aus_]** falls keine Aufstockungen konfiguriert sind. |
+| [!UICONTROL Aufstockungsdaten] | Der Status der Aufstockungsdaten für den Datensatz.<p>![Status rot](assets/status-red.svg)   **[!UICONTROL _x _Aufstockungen fehlgeschlagen]**für die Anzahl fehlgeschlagener Aufstockungen,<p>![Status rot](assets/status-orange.svg)   **[!UICONTROL _x _Aufstockungsverarbeitung]**für die Anzahl der verarbeiteten Aufstockungen,<p>![Status grün](assets/status-green.svg)   **[!UICONTROL _x _Aufstockungen abgeschlossen]**für die Anzahl der abgeschlossenen Aufstockungen und<p>![Status grau](assets/status-gray.svg)   **[!UICONTROL _Aus_]** falls keine Aufstockungen konfiguriert sind. |
 
 >[!IMPORTANT]
 >
@@ -195,16 +195,16 @@ Wenn ein Datensatz in der Datensatztabelle ausgewählt ist, werden in einem Bedi
 | [!UICONTROL Gelöschte Datensätze] | Wie viele Datensätze wurden im ausgewählten Zeitraum gelöscht. |
 | [!UICONTROL Batches hinzugefügt] | Wie viele Datenstapel diesem Datensatz hinzugefügt wurden. |
 | [!UICONTROL Übersprungene Datensätze] | Wie viele Zeilen während der Aufnahme im ausgewählten Zeitraum übersprungen wurden.<p>Gründe für das Überspringen von Datensätzen sind: fehlende Zeitstempel, fehlende oder ungültige Personen-ID usw. Wird alle zehn Minuten aktualisiert.<p>Ungültige Personen-IDs (z. B. `undefined` oder `00000000` oder eine beliebige Kombination aus Zahlen und Buchstaben in einer [!UICONTROL Personen-ID], die in einem Ereignis mehr als eine Million Mal in einem bestimmten Monat auftritt) sind IDs, die keinem bestimmten Benutzer bzw. keiner bestimmten Person zugeordnet werden können. Diese Zeilen können nicht in das System aufgenommen werden und führen zu fehlerhafter Aufnahme und Berichterstellung. Um ungültige Personen-IDs zu beheben, haben Sie drei Möglichkeiten:<ul><li>Verwenden Sie [Zusammenfügen](/help/stitching/overview.md) um die Benutzer-IDs, die nicht definiert sind oder nur Nullen enthalten, mit gültigen Benutzer-IDs zu füllen.</li><li>Blenden Sie die Benutzer-ID aus, die dann während der Aufnahme übersprungen wird (was ungültigen oder Benutzer-IDs mit nur null vorzuziehen ist).</li><li>Korrigieren Sie alle ungültigen Benutzer-IDs in Ihrem System, bevor Sie die Daten aufnehmen.</li></ul> |
-| [!UICONTROL Zuletzt hinzugefügt] | Der Zeitpunkt, zu dem der letzte Stapel hinzugefügt wurde. |
+| [!UICONTROL Zuletzt hinzugefügt] | Der Zeitstempel, der dem letzten Batch hinzugefügt wurde. |
 | [!UICONTROL Importieren neuer Daten] | Der Status des Imports neuer Daten für den Datensatz: <p>![Status grün](assets/status-green.svg)   **[!UICONTROL _x _Ein]**wenn der Datensatz für den Import neuer Daten konfiguriert ist, und<p>![Status grau](assets/status-gray.svg)   **[!UICONTROL _x Aus_]** wenn der Datensatz so konfiguriert ist, dass er keine neuen Daten importiert. |
-| [!UICONTROL Aufstockungsdaten] | Der Status der Aufstockungsdaten für den Datensatz.<p>![Status rot](assets/status-red.svg)   **[!UICONTROL _x _Aufstockungen fehlgeschlagen]**für die Anzahl fehlgeschlagener Aufstockungen,<p>![Status rot](assets/status-orange.svg)   **[!UICONTROL _x _Aufstockungsverarbeitung]**für die Anzahl der Aufstockungsverarbeitung,<p>![Status grün](assets/status-green.svg)   **[!UICONTROL _x _Aufstockungen abgeschlossen]**für die Anzahl der abgeschlossenen Aufstockungen und<p>![Status grau](assets/status-gray.svg)   **[!UICONTROL _Aus_]** falls keine Aufstockungen konfiguriert sind.<p>Um ein Dialogfeld mit einer Übersicht über die früheren Aufstockungen für den Datensatz anzuzeigen, wählen Sie aus <img src="./assets/pastbackfill.svg" alt="Frühere Aufstockungen" width="15"/> **[!UICONTROL Frühere Aufstockungen]**. |
+| [!UICONTROL Aufstockungsdaten] | Der Status der Aufstockungsdaten für den Datensatz.<p>![Status rot](assets/status-red.svg)   **[!UICONTROL _x _Aufstockungen fehlgeschlagen]**für die Anzahl fehlgeschlagener Aufstockungen,<p>![Status rot](assets/status-orange.svg)   **[!UICONTROL _x _Aufstockungsverarbeitung]**für die Anzahl der verarbeiteten Aufstockungen,<p>![Status grün](assets/status-green.svg)   **[!UICONTROL _x _Aufstockungen abgeschlossen]**für die Anzahl der abgeschlossenen Aufstockungen und<p>![Status grau](assets/status-gray.svg)   **[!UICONTROL _Aus_]** falls keine Aufstockungen konfiguriert sind.<p>Um ein Dialogfeld mit einer Übersicht über die früheren Aufstockungen für den Datensatz anzuzeigen, wählen Sie aus <img src="./assets/pastbackfill.svg" alt="Frühere Aufstockungen" width="15"/> **[!UICONTROL Frühere Aufstockungen]**. |
 | [!UICONTROL Datenquellentyp] | Datenquellentyp, wie er beim Hinzufügen des Datensatzes zur Verbindung definiert wurde. |
 | [!UICONTROL Typ des Datensatzes] | Entweder [!UICONTROL Ereignis], [!UICONTROL Profil], [!UICONTROL Suche] oder [!UICONTROL Zusammenfassung]. [Weitere Infos](https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-connections/create-connection) |
 | [!UICONTROL Schema] | Das Experience Platform-Schema, auf dem dieser Datensatz basiert. |
 | [!UICONTROL Datensatz-ID] | Diese Datensatz-ID wird im Experience Platform generiert. |
 
 
-## Nutzung
+## Nutzung {#connections-usage}
 
 <!-- markdownlint-disable MD034 -->
 
@@ -212,7 +212,6 @@ Wenn ein Datensatz in der Datensatztabelle ausgewählt ist, werden in einem Bedi
 >id="cja_connections_usage_keyusagemetrics"
 >title="Wichtige Nutzungsmetriken"
 >abstract="Stellen Sie berichtsfähige Zeilen zu Kern- und historischen Daten pro Monat und insgesamt bereit."
-
 <!-- markdownlint-enable MD034 -->
 
 
@@ -222,7 +221,6 @@ Wenn ein Datensatz in der Datensatztabelle ausgewählt ist, werden in einem Bedi
 >id="cja_connections_usage_monthlyingestedrows"
 >title="Monatlich aufgenommene Zeilen"
 >abstract="Misst die Gesamtzahl der monatlich zum System hinzugefügten Datensätze, um Einblicke in das Datenwachstum und die Aufnahmeraten zu erhalten."
-
 <!-- markdownlint-enable MD034 -->
 
 <!-- markdownlint-disable MD034 -->
@@ -231,7 +229,6 @@ Wenn ein Datensatz in der Datensatztabelle ausgewählt ist, werden in einem Bedi
 >id="cja_connections_usage_monthlyreportablerows"
 >title="Monatliche berichtsfähige Zeilen"
 >abstract="Verfolgt die Anzahl der für das Reporting verfügbaren Zeilen. Berichtsfähige Zeilen sind die aufgenommenen Zeilen abzüglich der Zeilen, die bei der Aufnahme übersprungen und gelöscht wurden. Berichtsfähige Zeilen dienen als Schlüsselmetrik für die Rechnungsstellung und Datennutzung."
-
 <!-- markdownlint-enable MD034 -->
 
 
@@ -241,7 +238,6 @@ Wenn ein Datensatz in der Datensatztabelle ausgewählt ist, werden in einem Bedi
 >id="cja_connections_usage_detailbreakdown"
 >title="Detailaufschlüsselung."
 >abstract="Sie können detaillierte Metriken nach Verbindung, Datensatz, Sandbox und Tags mit der Option zum Herunterladen einer CSV-Datei der Daten anzeigen."
-
 <!-- markdownlint-enable MD034 -->
 
 <!-- markdownlint-disable MD034 -->
@@ -249,8 +245,7 @@ Wenn ein Datensatz in der Datensatztabelle ausgewählt ist, werden in einem Bedi
 >[!CONTEXTUALHELP]
 >id="cja_connections_usage_otherdatasets"
 >title="Andere Datensätze"
->abstract="Vor September 2024 wurden Daten seit Monaten auf Datensatzebene erfasst. Sie werden der Klarheit halber als *andere Datensätze* angezeigt. Seit September 2024 werden Daten auf einer granularen Datensatzebene erfasst und *andere Datensätze* werden nicht mehr angezeigt."
-
+>abstract="Für die Monate vor September 2024 wurden Daten auf Datensatzebene erfasst und der Klarheit halber als *Andere Datensätze* angezeigt. Seit September 2024 werden Daten auf einer granularen Datensatzebene erfasst und *andere Datensätze* werden nicht mehr angezeigt."
 <!-- markdownlint-enable MD034 -->
 
 <!-- markdownlint-disable MD034 -->
@@ -259,7 +254,6 @@ Wenn ein Datensatz in der Datensatztabelle ausgewählt ist, werden in einem Bedi
 >id="cja_connections_usage_unknowndatasetsorconnections"
 >title="Unbekannte Datensätze oder Verbindungen"
 >abstract="Unbekannte Datensätze oder Verbindungen werden mit ihren IDs angezeigt."
-
 <!-- markdownlint-enable MD034 -->
 
 <!-- markdownlint-disable MD034 -->
@@ -268,7 +262,6 @@ Wenn ein Datensatz in der Datensatztabelle ausgewählt ist, werden in einem Bedi
 >id="cja_connections_usage_datanotavailable"
 >title="Daten nicht verfügbar"
 >abstract="Historische Daten, die älter sind als September 2024, sind aufgrund von Systembeschränkungen nicht verfügbar. Metriken werden seit September 2024 erfasst und angezeigt. Das Diagramm zeigt die letzten 18 Monate auf der Timeline, und zukünftige Daten werden angezeigt, sobald die Daten verfügbar werden."
-
 <!-- markdownlint-enable MD034 -->
 
 <!-- markdownlint-disable MD034 -->
@@ -277,7 +270,6 @@ Wenn ein Datensatz in der Datensatztabelle ausgewählt ist, werden in einem Bedi
 >id="cja_connections_corereportablerows"
 >title="Berichtsfähige Zeilen zu Kerndaten"
 >abstract="Zeigt die Gesamtzahl der für die letzten 13 Monate verfügbaren Zeilen an. Beispielsweise zeigt die Zahl am 1. Februar 2024 die Gesamtzahl der verfügbaren Zeilen mit einem Ereignis-Zeitstempel von Januar 2023 bis Januar 2024 an."
-
 <!-- markdownlint-enable MD034 -->
 
 <!-- markdownlint-disable MD034 -->
@@ -286,41 +278,94 @@ Wenn ein Datensatz in der Datensatztabelle ausgewählt ist, werden in einem Bedi
 >id="cja_connections_historicalreportablerows"
 >title="Berichtsfähige Zeilen zu historischen Daten"
 >abstract="Zeigt die Gesamtzahl der verfügbaren Zeilen für den Zeitraum an, der länger als 13 Monate zurückliegt. Beispielsweise zeigt die Zahl am 1. Februar 2024 die Gesamtzahl der verfügbaren Zeilen mit einem Ereignis-Zeitstempel an, der älter als Januar 2023 ist."
-
 <!-- markdownlint-enable MD034 -->
 
 
-Die [!UICONTROL Usage]-Schnittstelle zeigt die Verwendung aufgenommener und berichtspflichtiger Zeilen über alle Verbindungen hinweg. Über diese Schnittstelle können Sie feststellen, ob Ihre Customer Journey Analytics-Nutzung den vertraglich vereinbarten Vorgaben entspricht. Zusätzlich zu Überwachungszwecken können Sie die Nutzungsbenutzeroberfläche verwenden, um die Verlängerung Ihrer Customer Journey Analytics-Lizenz zu planen.
+Die [!UICONTROL Usage]-Schnittstelle zeigt die Verwendung aufgenommener und berichtspflichtiger Zeilen über alle Verbindungen hinweg. Wenn sie nicht ausgewählt ist, wählen Sie die **[!UICONTROL Nutzung]**, um auf die Benutzeroberfläche zuzugreifen.
 
-Sie können einen Zeitraum (zwischen den letzten 6 Monaten, dem Jahr bis zum Datum oder den letzten 2 Jahren) und ein Intervall (zwischen monatlich oder vierteljährlich) zur Überwachung der Customer Journey Analytics-Nutzung auswählen. Die Benutzeroberfläche ist in zwei Abschnitte unterteilt:
+Über diese Schnittstelle können Sie feststellen, ob Ihre Customer Journey Analytics-Nutzung den vertraglich vereinbarten Vorgaben entspricht. Zusätzlich zu Überwachungszwecken können Sie die Nutzungsoberfläche verwenden, um die Verlängerung Ihrer Customer Journey Analytics-Lizenz zu planen.
 
-* Aufgenommene Zeilen: Gesamtzahl der Zeilen, die von Ereignis-Datensätzen über alle Customer Journey Analytics-Verbindungen hinweg aufgenommen/gesendet wurden, einschließlich der bei der Aufnahme übersprungenen Datensätze
-* Berichterstellbare Zeilen: Gesamtzahl der berichtspflichtigen Zeilen, die alle Ereignisdaten über alle Customer Journey Analytics-Verbindungen hinweg enthalten
+Die Benutzeroberfläche verwendet die folgenden Metriken
 
-![usage-view](assets/usage-view.png)
+| Metrikname | Beschreibung |
+|---|---|
+| Berichtsfähige Zeilen zu historischen Daten | Anzahl der Zeilen für den Zeitraum, der älter als 13 Monate ist. |
+| Berichtsfähige Zeilen zu Kerndaten | Anzahl der Zeilen in den letzten 13 Monaten. |
+| Aufgenommene Zeilen | Wie viele Zeilen im jeweiligen Zeitraum aufgenommen werden. |
+| Berichtsfähige Zeilen | Wie viele Datenzeilen haben Sie im Rahmen der Verbindung für den bestimmten Zeitraum? |
+| Kumulative Zeilen | Wie viele Zeilen bis zum angegebenen Monat aufgenommen werden. |
 
-Wählen Sie die **[!UICONTROL Nutzung]** aus, um auf die Benutzeroberfläche zuzugreifen.
-
-### Bericht zur Nutzung
-
-1. Wählen Sie einen **[!UICONTROL Zeitbereich]** aus. Sie können zwischen **[!UICONTROL Letzte 6 Monate]**, **[!UICONTROL Jahr bis heute]** oder **[!UICONTROL Letzte 2 Jahre]** wählen.
-1. Wählen Sie ein **[!UICONTROL Intervall]**. Sie können zwischen **[!UICONTROL monatlich]** oder **[!UICONTROL vierteljährlich]** wählen.
-
-Für [!UICONTROL aufgenommene Zeilen]:
-
-* In einem Bedienfeld werden die insgesamt aufgenommenen Zeilen angezeigt, die alle Ereignisdaten über alle Verbindungen hinweg enthalten, die an jedem 2. Tag eines Monats aktualisiert werden. Innerhalb des Bedienfelds:
-   * In einem Feld wird die Anzahl der aufgenommenen Zeilen für den letzten Monat und die Änderung in % (angegeben durch ▲ oder ▼) gegenüber dem Vormonat angezeigt.
-   * Ein Liniendiagramm zeigt die ◼︎ &quot;[!UICONTROL  aufgenommene Zeilen] an.<br/>Um ein Popup anzuzeigen, das die Anzahl der monatlich aufgenommenen Zeilen für einen Monat anzeigt, bewegen Sie den Mauszeiger über einen beliebigen Datenpunkt im Liniendiagramm.
+>[!NOTE]
+>
+>Die Daten werden ab Juli 2024 für die Kern-, Verlaufs- und Gesamtdatensätze erfasst. Wenden Sie sich an Ihren Account Manager, wenn Sie frühere historische Daten benötigen.
+>
 
 
-Für [!UICONTROL meldepflichtige Zeilen]:
 
-* In einem Bedienfeld werden alle meldepflichtigen Zeilen angezeigt, die alle Ereignisdaten über alle Verbindungen hinweg enthalten, die an jedem 2. Tag eines Monats aktualisiert werden. Innerhalb des Bedienfelds:
-   * Ein Feld zeigt die kumulative Gesamtzahl der berichtspflichtigen Zeilen an.
-   * Ein Feld zeigt die Gesamtzahl der berichtspflichtigen Zeilen für den letzten Monat und die Änderung in % (angegeben durch ▲ oder ▼) gegenüber dem Vormonat an.
-   * Ein Liniendiagramm zeigt die ◼︎ [!UICONTROL monatlich meldepflichtige Zeilen] an.<br/>Um ein Popup anzuzeigen, das die Anzahl der kumulativen berichtspflichtigen Zeilen für einen bestimmten Monat anzeigt, bewegen Sie den Mauszeiger über einen beliebigen Datenpunkt im Liniendiagramm.
-   * ein Liniendiagramm zeigt die ◼︎ [!UICONTROL Kumulative berichtspflichtige Zeilen] an.<br/>Um ein Popup anzuzeigen, das die Anzahl der monatlich zu meldenden Zeilen für einen Monat anzeigt, bewegen Sie den Mauszeiger über einen beliebigen Datenpunkt im Liniendiagramm.
+Die Benutzeroberfläche von besteht aus zwei Bereichen:
 
+* Das Bedienfeld **[!UICONTROL Schlüsselnutzungsmetriken]** enthält Berichtszeilen zu Kern- und Verlaufsdaten. Das Bedienfeld verfolgt auch prozentuale Änderungen gegenüber dem Vormonat für Kern- und historische Datenzeilen.
+
+  Das Bedienfeld wird in einer Visualisierung angezeigt:
+
+   * **[!UICONTROL Kerndaten - Berichterstellbare Zeilen]**.
+
+     Wie viele meldepflichtige Zeilen haben Sie in den letzten 13 Monaten? Die Zusammenfassungszahl ist die Anzahl der Core-Reporting-Zeilen (z. B. 741M) für den letzten Monat (z. B. Dezember 2024).
+
+   * **[!UICONTROL Berichtszeilen zu historischen Daten]**.
+
+     Wie viele meldepflichtige Zeilen gibt es für den Zeitraum, der älter als 13 Monate ist? Die Zusammenfassungszahl ist die Anzahl der historischen berichtspflichtigen Zeilen (z. B. 127M) für den letzten Monat (z. B. Dezember 2024).
+
+  Wenn Sie den Mauszeiger über einen gestapelten Balken in der Visualisierung bewegen, wird in einem Popup die Anzahl der Zeilen für diesen bestimmten Teil des Balkens angezeigt (z. B. ).
+
+
+  ![Schlüsselmetriken zur Nutzung](assets/usage-key-usage-metrics.png)
+
+* Ein kombiniertes Bedienfeld mit drei Unterfeldern für:
+
++++ Aufgenommene Zeilen
+
+  Das Unterbedienfeld **[!UICONTROL Aufgenommene Zeilen]** misst die Gesamtzahl der monatlich zum System hinzugefügten Datensätze und bietet so Einblicke in das Datenwachstum und die Aufnahmeraten. Das Unterbedienfeld bietet eine Zusammenfassung der insgesamt aufgenommenen Zeilen dieses Monats und der Änderung gegenüber dem Vormonat.
+
+  ![Aufgenommene Zeilen](assets/usage-ingested-rows.png)
+
+  Sie können den Mauszeiger über Datenpunkte in der Visualisierung bewegen, um ein Popup mit weiteren Details anzuzeigen.
+
++++
+
++++ Berichtsfähige Zeilen
+
+  Die **[!UICONTROL Berichterstellbare Zeilen]**-Visualisierung verfolgt die Anzahl der für das Reporting verfügbaren Zeilen, indem übersprungene und gelöschte Zeilen von erfassten Zeilen subtrahiert werden. Dies dient als Schlüsselmetrik für die Abrechnung und Datennutzung. Das Unterbedienfeld bietet zwei Zusammenfassungen:
+
+   * **[!UICONTROL Letzter Monat insgesamt]**: Eine Zusammenfassung der gesamten meldepflichtigen Zeilen bis zu diesem Monat.
+   * **[!UICONTROL Diesen Monat]**: Eine Zusammenfassung der gesamten berichtspflichtigen Zeilen dieses Monats und der Änderung gegenüber dem Vormonat.
+
+  ![Berichterstellbare Zeilen](assets/usage-reportable-rows.png)
+
+  Sie können den Mauszeiger über Datenpunkte in den Visualisierungen bewegen, um ein Popup mit weiteren Details anzuzeigen.
+
++++
+
++++ Detailaufschlüsselung
+
+  Sie können die Tabelle **[!UICONTROL Detailaufschlüsselung]** verwenden, um detaillierte Metriken nach Verbindung, Datensatz, Sandbox und Tags anzuzeigen. Datensätze werden mit IDs anstelle von Namen gemeldet, da Datensatznamen während eines Berichtszeitraums geändert werden können. Unbekannte Datensätze oder Verbindungen werden mit IDs gemeldet.
+
+  Für die Monate vor September 2024 wurden Daten auf Datensatzebene erfasst und der Klarheit halber als [!UICONTROL Andere Datensätze] angezeigt. Ab September 2024 werden Daten auf einer granularen Datensatzebene erfasst und [!UICONTROL Andere Datensätze] werden nicht mehr angezeigt.
+
+   * Um die Aufschlüsselung zu ändern, wählen Sie eine Kombination für **[!UICONTROL Anzeigen nach]** und **[!UICONTROL Aufschlüsselung nach]** aus.
+
+     | **[!UICONTROL Anzeigen nach]** Optionen | **[!UICONTROL Aufschlüsselung nach]** Optionen |
+     |---|---|
+     | **[!UICONTROL Verbindung]** | **[!UICONTROL -]** und **[!UICONTROL Datensatz]** |
+     | **[!UICONTROL Datensatz]** | **[!UICONTROL -]** |
+     | **[!UICONTROL Sandbox]** | **[!UICONTROL Verbindung]** |
+     | **[!UICONTROL Tag]** | **[!UICONTROL Verbindung]** |
+
+  ![Detailaufschlüsselung](assets/usage-detail-breakdown.png)
+
++++
+
+  Sie können einen **[!UICONTROL Zeitraum“ in]** definieren, über den berichtet werden soll. Wählen ![ den ](/help/assets/icons/Calendar.svg) mithilfe von „Kalender“ aus.
 
 >[!MORELIKETHIS]
 >
