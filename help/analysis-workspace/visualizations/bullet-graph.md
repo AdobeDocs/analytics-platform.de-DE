@@ -4,10 +4,10 @@ title: Lineardiagramm
 feature: Visualizations
 exl-id: b560389a-1149-4e16-b45a-0c6a1f7d0e1f
 role: User
-source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
+source-git-commit: b1cdaa871bf5040cf1cf436348b4ca03c5553a76
 workflow-type: tm+mt
-source-wordcount: '228'
-ht-degree: 64%
+source-wordcount: '232'
+ht-degree: 63%
 
 ---
 
@@ -19,6 +19,10 @@ ht-degree: 64%
 >id="workspace_bullet_goalvalue"
 >title="Zielwert"
 >abstract="**[!UICONTROL Hohes Ziel]** entspricht dem angestrebten Hauptziel. Mit **[!UICONTROL Niedriges Ziel]** und **[!UICONTROL Mittleres Ziel]** werden Bereiche unterhalb des Zielwerts [!UICONTROL Hohes Ziel] erstellt. Hinweis: Wenn die Option **[!UICONTROL Prozentsatz]** aktiviert ist, geben Sie Ziele als Ganzzahlen ein, z. B. `20`, wenn Ihr Ziel zwanzig Prozent ist."
+>additional-url="https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/bullet-graph" text="Aufzählungszeichen (Adobe Analytics)"
+
+<!-- markdownlint-enable MD034 -->
+
 
 <!-- markdownlint-enable MD034 -->
 
