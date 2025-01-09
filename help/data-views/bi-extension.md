@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: BI Extension
 role: Admin
 exl-id: ab7e1f15-ead9-46b7-94b7-f81802f88ff5
-source-git-commit: 8b90f74d64ef35f4a9f0f1177dab27c9680ccb4c
+source-git-commit: d7d16dbef202db9fdac08796dacc3368e0119456
 workflow-type: tm+mt
-source-wordcount: '3116'
-ht-degree: 60%
+source-wordcount: '3176'
+ht-degree: 59%
 
 ---
 
@@ -70,7 +70,7 @@ In Adobe Experience Platform:
 
 1. Wählen Sie ![Abfrage erstellen](assets/Smock_AddCircle_18_N.svg) **[!UICONTROL ** Abfrage erstellen **]** aus.
 
-1. Wählen Sie die `cja` **[!UICONTROL ** Datenbank **]** aus.
+1. Wählen Sie die `cja` für Ihre Sandbox aus der Liste der Datenbanken im Dropdown-Menü **[!UICONTROL Datenbank]** aus. Zum Beispiel `prod:cja`.
 
 1. Um die Abfrage auszuführen, geben Sie Ihre SQL-Anweisung ein und wählen Sie die ![Play](assets/Smock_Play_18_N.svg)-Schaltfläche (oder drücken Sie `[SHIFT]` + `[ENTER]`).
 
@@ -85,7 +85,7 @@ In Adobe Experience Platform:
 
    1. Wählen Sie **[!UICONTROL ** Anmeldeinformationen **]** aus der oberen Leiste aus.
 
-   1. Wählen Sie die `cja` **[!UICONTROL ** Datenbank **]** aus.
+   1. Wählen Sie die `cja` für Ihre Sandbox aus der Liste der Datenbanken im Dropdown-Menü **[!UICONTROL Datenbank]** aus. Zum Beispiel `prod:cja`.
 
    1. Um die Befehlszeichenfolge zu kopieren, verwenden Sie ![Kopieren](assets/Smock_Copy_18_N.svg) im Abschnitt **[!UICONTROL ** PSQL-Befehl **]**.
 
@@ -110,7 +110,7 @@ Derzeit wird die [!DNL Customer Journey Analytics BI extension] nur für Power B
 
    1. Wählen Sie **[!UICONTROL ** Anmeldeinformationen **]** aus der oberen Leiste aus.
 
-   1. Wählen Sie die `cja` **[!UICONTROL ** Datenbank **]** aus.
+   1. Wählen Sie die `cja` für Ihre Sandbox aus der Liste der Datenbanken im Dropdown-Menü **[!UICONTROL Datenbank]** aus. Zum Beispiel `prod:cja`.
 
    1. Verwenden Sie ![Kopieren](assets/Smock_Copy_18_N.svg), um jeden Parameter der Postgres-Anmeldeinformationen ([!UICONTROL Host], [!UICONTROL Port], [!UICONTROL Datenbank], [!UICONTROL Benutzername] und andere) zu kopieren, wenn sie in Power BI benötigt werden.
 
@@ -153,7 +153,7 @@ Derzeit wird die [!DNL Customer Journey Analytics BI extension] nur für Power B
 
    1. Wählen Sie **[!UICONTROL ** Anmeldeinformationen **]** aus der oberen Leiste aus.
 
-   1. Wählen Sie die ` cja` **[!UICONTROL ** Datenbank **]** aus.
+   1. Wählen Sie die `cja` für Ihre Sandbox aus der Liste der Datenbanken im Dropdown-Menü **[!UICONTROL Datenbank]** aus. Zum Beispiel `prod:cja`.
 
    1. Verwenden Sie ![Kopieren](assets/Smock_Copy_18_N.svg), um alle Postgres-Anmeldedaten-Parameter ([!UICONTROL Host], [!UICONTROL Port], [!UICONTROL Datenbank], [!UICONTROL Benutzername] und andere) bei Bedarf in Tableau Desktop zu kopieren.
 

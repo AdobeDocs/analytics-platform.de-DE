@@ -4,16 +4,24 @@ description: Listet Inhaltsaktualisierungen für Dokumentation zu Customer Journ
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 532f3a30e65d715f5b5b4caea85885a13d82641c
+source-git-commit: c5e5963e6dc4d97de012f825bbea4445cc72d622
 workflow-type: tm+mt
-source-wordcount: '4219'
-ht-degree: 99%
+source-wordcount: '4256'
+ht-degree: 98%
 
 ---
 
 # Customer Journey Analytics – Aktualisierungen der Dokumentation
 
 Die folgenden Aktualisierungen wurden seit der ersten Erstellung der Customer Journey Analytics-Dokumentation vorgenommen.
+
+## 2025
+
+| Funktion | Beschreibung |
+| --- | --- |
+| **Januar 2025** |  |
+| Nutzungsmetriken | Die Dokumentation zur verbesserten Benutzeroberfläche [Nutzungsmetriken](/help/connections/manage-connections.md#usage) wurde aktualisiert. |
+
 
 ## 2024
 
@@ -23,6 +31,7 @@ Die folgenden Aktualisierungen wurden seit der ersten Erstellung der Customer Jo
 | Anwendungsfälle für BI-Erweiterungen | Dokumentation zu mehreren [Anwendungsfällen für BI-Erweiterungen](/help/use-cases/data-views/bi-extension-usecases.md) für BI-Tools wie Power BI Desktop und Tableau Desktop. |
 | Zuordnungen und Datenschutzanfragen | Es wurde ein Hinweis zu [bevorstehenden Änderungen des Verfahrens zum Aufheben der Zuordnung](/help/stitching/faq.md#frequently-asked-questions) hinzugefügt, die sich aufgrund von Datenschutzanfragen ergeben. |
 | **Oktober 2024** | |
+| Verbesserte Benutzeroberfläche | Der Artikel zur verbesserten Benutzeroberfläche wurde aktualisiert, um Ihre [Verwendung aufgenommener und meldepflichtiger Zeilen über alle Verbindungen hinweg“ ](/help/connections/manage-connections.md#usage) |
 | Gemeinsam verwendete Geräte | Es wurde ein [Anwendungsfall-Artikel](/help/use-cases/stitching/shared-devices.md) hinzugefügt, der Informationen zu gemeinsam verwendeten Geräten bietet. Außerdem wird erklärt, wie Daten von gemeinsam verwendeten Geräten mithilfe von Zuordnungen gehandhabt und eingeschränkt werden und wie sich gemeinsam verwendete Geräte auf Daten auswirken. Hierzu wird der Abfrage-Service genutzt. |
 | Neue Informationen zu Anfragefaktoren in der Leistung von Analysis Workspace | In einem neuen Abschnitt [Anfragefaktoren](/help/technotes/optimizing-performance.md#request-factors) im Artikel [Optimieren der Leistung von Analysis Workspace](/help/technotes/optimizing-performance.md) wird erläutert, wie Anfragen verarbeitet werden und welche Faktoren die Verarbeitungszeiten beeinflussen. |
 | Workspace und Komponenten | Die Dokumentation zu Analysis Workspace-Projekten (Projekte, Visualisierungen und Bedienfelder) und Komponenten (Anmerkungen, Dimensionen, [berechnete] Metriken, Filter, Datumsbereiche, Warnhinweise, geplante Projekte und Zielgruppen) wurde aktualisiert. |
