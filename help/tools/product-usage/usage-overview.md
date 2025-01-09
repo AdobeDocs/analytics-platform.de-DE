@@ -2,9 +2,9 @@
 title: Übersicht über die Produktnutzung
 description: Insights und Berichte zur Verwendung von Customer Journey Analytics in Ihrem Unternehmen anzeigen.
 exl-id: 3806ca7c-ee90-4222-9ffd-2e791c4550e5
-source-git-commit: daa07b603caa613ca49b61c2e8e461d558459f57
+source-git-commit: 9e29a16fc8d2cfe9a7a2e926b5f592280b2c1c7a
 workflow-type: tm+mt
-source-wordcount: '336'
+source-wordcount: '367'
 ht-degree: 6%
 
 ---
@@ -25,6 +25,12 @@ Alle Datenerfassungs- und -einstellungen werden automatisch konfiguriert, sobald
 >[!IMPORTANT]
 >
 >Diese Funktion zählt für Ihre vertraglichen Zeilenbeschränkungen in Adobe Experience Platform. Stellen Sie sicher, dass Ihr Unternehmen die von dieser Funktion generierten Daten verarbeiten kann, bevor Sie sie aktivieren.
+
+## Produktnutzung aktivieren
+
+**[!UICONTROL Customer Journey Analytics]** > **[!UICONTROL Tools]** > **[!UICONTROL Produktnutzung]**
+
+Wenn Sie in Customer Journey Analytics zu diesem Abschnitt der Benutzeroberfläche navigieren, gelangen Sie zu [Dateneinstellungen](data-settings.md) wo Sie diese Funktion aktivieren können.
 
 ## Verfügbare Dimensionen
 
