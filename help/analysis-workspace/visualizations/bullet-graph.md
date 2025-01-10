@@ -4,11 +4,11 @@ title: Lineardiagramm
 feature: Visualizations
 exl-id: b560389a-1149-4e16-b45a-0c6a1f7d0e1f
 role: User
-badgePremium: label="Adobe Analytics-Version" url="https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/bullet-graph.html" tooltip="Adobe Analytics-Version dieses Artikels"
-source-git-commit: f13f5be06cfadc9ff875c378a0505b4f1f4469dd
+badgePremium: label="Adobe Analytics-Version ↗︎" url="https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/bullet-graph.html" tooltip="Wählen Sie aus, um die Adobe Analytics-Version dieses Artikels anzuzeigen."
+source-git-commit: 8278c29186f763729445928a41d5aa3ffe0d2eb4
 workflow-type: tm+mt
-source-wordcount: '242'
-ht-degree: 61%
+source-wordcount: '247'
+ht-degree: 59%
 
 ---
 
