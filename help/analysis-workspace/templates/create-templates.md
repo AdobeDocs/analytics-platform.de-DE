@@ -6,9 +6,9 @@ role: User, Admin
 hide: true
 hidefromtoc: true
 exl-id: 23cdf02f-56a1-4465-ae7f-b3a1bcad28af
-source-git-commit: d1aee7ccdcea2794efd9db5d6dbf46cba4087030
+source-git-commit: 27ce8f565688dc23a3f069a10078de55cd6da395
 workflow-type: tm+mt
-source-wordcount: '1041'
+source-wordcount: '1576'
 ht-degree: 2%
 
 ---
@@ -37,14 +37,16 @@ So erstellen Sie eine neue Vorlage, die von Personen in Ihrem Anmeldeunternehmen
    | **[!UICONTROL Beschreibung]** | Geben Sie eine kurze Beschreibung für die Vorlage an, die ihre Verwendungszwecke beschreibt. |
    | **[!UICONTROL Warum diese Vorlage verwenden]** | Geben Sie eine kurze Erklärung ab, um Personen in der Organisation darüber zu informieren, wie diese Vorlage verwendet werden könnte. Diese Erklärung wird auf der Vorschauseite der Vorlage angezeigt. |
    | **[!UICONTROL Kanäle]** | Wählen Sie alle Kanäle aus, die auf diese Vorlage zutreffen. Sie können mehrere Kanäle auswählen: **[!UICONTROL Web]**, **[!UICONTROL Mobile]**, **[!UICONTROL Cross-Channel]**, **[!UICONTROL Callcenter]** und **[!UICONTROL In-Store]**.<p>Die von Ihnen ausgewählten Auswahlmöglichkeiten bestimmen, wo die Vorlage angezeigt wird und welche Filter für Benutzer gelten, die über die Seite „Organisationsvorlagen“ darauf zugreifen.</p> |
-   | **[!UICONTROL Anwendungsbeispiele]** | Wählen Sie alle Anwendungsfälle aus, die für diese Vorlage gelten. Sie können mehrere Anwendungsfälle auswählen: **[!UICONTROL Interaktion]**, **[!UICONTROL Konversion]**, **[!UICONTROL Audience]** und **[!UICONTROL Akquise]**. <p>Die von Ihnen ausgewählten Auswahlmöglichkeiten bestimmen, wo die Vorlage angezeigt wird und welche Filter für Benutzer gelten, die über die Seite „Organisationsvorlagen“ darauf zugreifen.</p> |
+   | **[!UICONTROL Anwendungsbeispiele]** | Wählen Sie alle Anwendungsfälle aus, die für diese Vorlage gelten. Sie können mehrere Anwendungsfälle auswählen: **[!UICONTROL Interaktion]**, **[!UICONTROL Konversion]**, **[!UICONTROL Audience]**, **[!UICONTROL Akquise]** und **[!UICONTROL Journey Optimizer]**. <p>Die ausgewählten Auswahlen bestimmen den Speicherort der Vorlage auf der Seite „Organisationsvorlagen“. Benutzer können zur Vorlage navigieren oder die Liste nach Anwendungsfall filtern. </p><p>**Hinweis:** Auswahl von **[!UICONTROL Journey Optimizer]** macht die Vorlage auch in Adobe Journey Optimizer verfügbar. In Journey Optimizer ist auf der Seite **[!UICONTROL Berichte“ ein Dropdown]** Menü verfügbar, über das Benutzende diese Vorlage oder die Standardvorlage auswählen können. Weitere Informationen finden Sie unter [Erste Schritte mit der aktualisierten Berichterstellung](https://experienceleague.adobe.com/de/docs/journey-optimizer/using/reporting/channel-report/report-gs-cja) in der Dokumentation zu Journey Optimizer. |
+   | **[!UICONTROL Journey Optimizer-Aktivitätstyp]** | Wählen Sie den Journey Optimizer-Aktivitätstyp aus, der mit dieser Vorlage verknüpft werden soll **[!UICONTROL (Kampagnen]**, **[!UICONTROL Journey]**, **[!UICONTROL Landingpages]**, **[!UICONTROL Berichte]** oder **[!UICONTROL Abonnements]**. <p>Lassen Sie dieses Feld leer, wenn diese Vorlage mit allen Aktivitätstypen verknüpft werden soll.</p><p>Dieses Feld wird nur angezeigt, wenn **[!UICONTROL Journey Optimizer]** im Feld **[!UICONTROL Anwendungsfälle]** ausgewählt ist.</p> |
+   | **[!UICONTROL Journey Optimizer-Aktivität]** | Wählen Sie die Journey Optimizer-Aktivität aus, die mit dieser Vorlage verknüpft werden soll. <p>Lassen Sie dieses Feld leer, wenn diese Vorlage mit allen Aktivitäten des ausgewählten Aktivitätstyps verknüpft werden soll.</p><p>Dieses Feld wird nur angezeigt, wenn **[!UICONTROL Journey Optimizer]** im Feld **[!UICONTROL Anwendungsfälle]** ausgewählt ist.</p> |
    | **[!UICONTROL Tags]** | Geben Sie alle Tags an, die Sie auf die Vorlage anwenden möchten. Benutzer können die Liste der Vorlagen nach den von Ihnen hinzugefügten Tags filtern. |
 
 1. Wählen Sie [!UICONTROL **Als Vorlage speichern**].
 
 Informationen dazu, wie Benutzer ein Projekt basierend auf einer Vorlage erstellen können, finden Sie unter [Erstellen eines Projekts basierend auf einer Vorlage](/help/analysis-workspace/templates/use-templates.md#create-a-project-based-on-a-template) in [Verwenden von Vorlagen](/help/analysis-workspace/templates/use-templates.md).
 
-## Bearbeiten oder Löschen von Vorlagen
+## Bearbeiten oder Löschen einer Vorlage
 
 Admins können Unternehmensvorlagen bearbeiten oder löschen.
 
@@ -73,6 +75,25 @@ Admins können Unternehmensvorlagen bearbeiten oder löschen.
    1. Wählen Sie das Symbol Mehr und dann **[!UICONTROL Bearbeiten]** oder **[!UICONTROL Löschen]**.
 
       ![Bearbeiten oder Löschen der Karte „Unternehmensvorlage“](assets/company-template-card-edit-delete.png)
+
+1. Wenn Sie eine Vorlage bearbeiten, nehmen Sie die gewünschten Änderungen vor und klicken Sie auf [!UICONTROL **Projekt**] > **[!UICONTROL Als Vorlage speichern…]**.
+
+   ![Unternehmensvorlage](assets/company-template-save.png)
+
+1. Geben Sie im Dialogfeld [!UICONTROL Als Vorlage speichern] folgende Informationen ein:
+
+   | Feld | Beschreibung |
+   |---------|----------|
+   | **[!UICONTROL Name]** | Geben Sie einen beschreibenden Namen für die Vorlage an. |
+   | **[!UICONTROL Beschreibung]** | Geben Sie eine kurze Beschreibung für die Vorlage an, die ihre Verwendungszwecke beschreibt. |
+   | **[!UICONTROL Warum diese Vorlage verwenden]** | Geben Sie eine kurze Erklärung ab, um Personen in der Organisation darüber zu informieren, wie diese Vorlage verwendet werden könnte. Diese Erklärung wird auf der Vorschauseite der Vorlage angezeigt. |
+   | **[!UICONTROL Kanäle]** | Wählen Sie alle Kanäle aus, die auf diese Vorlage zutreffen. Sie können mehrere Kanäle auswählen: **[!UICONTROL Web]**, **[!UICONTROL Mobile]**, **[!UICONTROL Cross-Channel]**, **[!UICONTROL Callcenter]** und **[!UICONTROL In-Store]**. Wenn keine Kanäle ausgewählt sind, wird die Vorlage in alle Kanäle aufgenommen.<p>Die von Ihnen ausgewählten Auswahlmöglichkeiten bestimmen, wo die Vorlage angezeigt wird und welche Filter für Benutzer gelten, die über die Seite „Organisationsvorlagen“ darauf zugreifen.</p> |
+   | **[!UICONTROL Anwendungsbeispiele]** | Wählen Sie alle Anwendungsfälle aus, die für diese Vorlage gelten. Sie können mehrere Anwendungsfälle auswählen: **[!UICONTROL Interaktion]**, **[!UICONTROL Konversion]**, **[!UICONTROL Audience]**, **[!UICONTROL Akquise]** und **[!UICONTROL Journey Optimizer]**. <p>Die ausgewählten Auswahlen bestimmen den Speicherort der Vorlage auf der Seite „Organisationsvorlagen“. Benutzer können zur Vorlage navigieren oder die Liste nach Anwendungsfall filtern. </p><p>**Hinweis:** Auswahl von **[!UICONTROL Journey Optimizer]** macht die Vorlage auch in Adobe Journey Optimizer verfügbar. In Journey Optimizer ist auf der Seite **[!UICONTROL Berichte“ ein Dropdown]** Menü verfügbar, über das Benutzende diese Vorlage oder die Standardvorlage auswählen können. Weitere Informationen finden Sie unter [Erste Schritte mit der aktualisierten Berichterstellung](https://experienceleague.adobe.com/de/docs/journey-optimizer/using/reporting/channel-report/report-gs-cja) in der Dokumentation zu Journey Optimizer. |
+   | **[!UICONTROL Journey Optimizer-Aktivitätstyp]** | Wählen Sie den Journey Optimizer-Aktivitätstyp aus, der mit dieser Vorlage verknüpft werden soll **[!UICONTROL (Kampagnen]**, **[!UICONTROL Journey]**, **[!UICONTROL Landingpages]**, **[!UICONTROL Berichte]** oder **[!UICONTROL Abonnements]**. <p>Lassen Sie dieses Feld leer, wenn diese Vorlage mit allen Aktivitätstypen verknüpft werden soll.</p><p>Dieses Feld wird nur angezeigt, wenn **[!UICONTROL Journey Optimizer]** im Feld **[!UICONTROL Anwendungsfälle]** ausgewählt ist.</p> |
+   | **[!UICONTROL Journey Optimizer-Aktivität]** | Wählen Sie die Journey Optimizer-Aktivität aus, die mit dieser Vorlage verknüpft werden soll. <p>Lassen Sie dieses Feld leer, wenn diese Vorlage mit allen Aktivitäten des ausgewählten Aktivitätstyps verknüpft werden soll.</p><p>Dieses Feld wird nur angezeigt, wenn **[!UICONTROL Journey Optimizer]** im Feld **[!UICONTROL Anwendungsfälle]** ausgewählt ist.</p> |
+   | **[!UICONTROL Tags]** | Geben Sie alle Tags an, die Sie auf die Vorlage anwenden möchten. Benutzer können die Liste der Vorlagen nach den von Ihnen hinzugefügten Tags filtern. |
+
+1. Wählen Sie [!UICONTROL **Als Vorlage speichern**].
 
 ## Vorlagen umbenennen, taggen oder genehmigen
 
