@@ -4,10 +4,9 @@ title: Lineardiagramm
 feature: Visualizations
 exl-id: b560389a-1149-4e16-b45a-0c6a1f7d0e1f
 role: User
-badgePremium: label="Adobe Analytics-Version ↗︎" url="https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/bullet-graph.html" tooltip="Wählen Sie aus, um die Adobe Analytics-Version dieses Artikels anzuzeigen."
-source-git-commit: 8278c29186f763729445928a41d5aa3ffe0d2eb4
+source-git-commit: 9494d13d0f2d0205d2929796f5f0d8299fdefbc5
 workflow-type: tm+mt
-source-wordcount: '247'
+source-wordcount: '249'
 ht-degree: 59%
 
 ---
@@ -20,7 +19,6 @@ ht-degree: 59%
 >id="workspace_bullet_goalvalue"
 >title="Zielwert"
 >abstract="**[!UICONTROL Hohes Ziel]** entspricht dem angestrebten Hauptziel. Mit **[!UICONTROL Niedriges Ziel]** und **[!UICONTROL Mittleres Ziel]** werden Bereiche unterhalb des Zielwerts [!UICONTROL Hohes Ziel] erstellt. Hinweis: Wenn die Option **[!UICONTROL Prozentsatz]** aktiviert ist, geben Sie Ziele als Ganzzahlen ein, z. B. `20`, wenn Ihr Ziel zwanzig Prozent ist."
->additional-url="https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/bullet-graph.html" text="Aufzählungszeichen (Adobe Analytics)"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -32,6 +30,8 @@ ht-degree: 59%
 >abstract="Erstellen Sie eine Visualisierung als horizontales Säulendiagramm, um anzuzeigen, wie eine Metrik gegenüber Leistungsbereichen (Zielen) abschneidet."
 
 <!-- markdownlint-enable MD034 -->
+
+*In diesem Artikel wird die Visualisierung für Aufzählungszeichen in **Customer Journey Analytics.**. Siehe [Aufzählungszeichen](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/bullet-graph) für die **Adobe Analytics**-Version dieses Artikels.*
 
 Die ![GraphBullet](/help/assets/icons/GraphBullet.svg)**[!UICONTROL Bullet]**-Visualisierung zeigt, wie eine Metrik mit Leistungsbereichen (Zielen) verglichen wird oder wie sie mit diesen gemessen wird.
 
