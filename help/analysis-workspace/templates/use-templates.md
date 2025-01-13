@@ -6,10 +6,10 @@ role: User, Admin
 hide: true
 hidefromtoc: true
 exl-id: d61f215d-9089-4014-9c5a-97f5d7134f34
-source-git-commit: 065230672137c98015680e4a033a2f5ac3a1bc24
+source-git-commit: 15b278261cc24da46b209d1ce23f38745c06030b
 workflow-type: tm+mt
-source-wordcount: '19302'
-ht-degree: 77%
+source-wordcount: '19285'
+ht-degree: 73%
 
 ---
 
@@ -41,7 +41,7 @@ Die folgenden Informationen beschreiben, wie Sie in Analysis Workspace auf Vorla
 
    * **[!UICONTROL _login_company_name _templates]**: Zeigt alle Unternehmensvorlagen an, die für Ihre Organisation erstellt wurden.
 
-     Unternehmensvorlagen können nur von einem Administrator erstellt werden. Informationen zum Erstellen einer Unternehmensvorlage finden Sie unter [Erstellen und Verwalten von Vorlagen](/help/analysis-workspace/templates/create-templates.md).
+     Nur Administratoren können Unternehmensvorlagen erstellen. Informationen zum Erstellen einer Unternehmensvorlage finden Sie unter [Erstellen und Verwalten von Vorlagen](/help/analysis-workspace/templates/create-templates.md).
 
 1. Verwenden Sie eine der folgenden Optionen, um die Anzeige der verfügbaren Vorlagen zu ändern:
 
@@ -286,7 +286,7 @@ So greifen Sie auf alle verfügbaren vordefinierten Vorlagen zu:
 
 >[!CONTEXTUALHELP]
 >id="template--revenueOvertimeReport"
->title="Zeigen Sie den Geldbetrag der bei allen Bestellungen gekauften Produkte an. Die Daten werden für einen bestimmten Zeitraum angezeigt und mit früheren Zeiträumen verglichen."
+>title="Zeigen Sie den Geldbetrag aller bei allen Bestellungen gekauften Produkte an. Die Daten werden für einen bestimmten Zeitraum angezeigt und mit früheren Zeiträumen verglichen."
 >abstract="**Dies kann Ihnen helfen**, zu verstehen, wie der Umsatz im Laufe der Zeit zu- oder abnimmt. Sie können diese Metrik mit einer beliebigen Dimension kombinieren, um zu erfahren, welche Dimensionselemente zum Umsatz beigetragen haben. <br/>**Basierend auf Ihren Erkenntnissen können Sie** eine Reihe von Schritten ausführen, z. B. zukünftige Umsätze basierend auf früheren Trends planen. Sie können auch eine weitere Dimension hinzufügen, z. B. die Dimension „Trackingcode“, um zu erfahren, welche Kampagnen den meisten Umsatz generieren.<br/>Diese Vorlage verwendet die Dimension „Tag“ und die Metrik „Umsatz“."
 
 <!-- markdownlint-enable MD034 -->
@@ -296,7 +296,7 @@ So greifen Sie auf alle verfügbaren vordefinierten Vorlagen zu:
 >[!CONTEXTUALHELP]
 >id="template--ordersOvertimeReport"
 >title="Zeigen Sie die Gesamtanzahl der Kaufereignisse an. Die Daten werden für einen bestimmten Zeitraum angezeigt und mit früheren Zeiträumen verglichen."
->abstract="**Dies kann Ihnen helfen**, besser zu verstehen, wie das Interesse an Ihren Produkten und Services im Laufe der Zeit zu- oder abnimmt. Sie können ein Segment anwenden, um zu erfahren, welche Kundinnen und Kunden oder Regionen die meisten Bestellungen aufgeben und wie der Trend bei diesen Bestellungen im Laufe der Zeit aussieht.<br/>**Basierend auf Ihren Erkenntnissen können Sie** eine Reihe von Schritten ausführen, z. B. die Effektivität einer kürzlich gestarteten Marketing-Kampagne durch den Vergleich der Bestellungen vor und nach dem Start der Kampagne bewerten. Oder Sie vergleichen die jährlichen Bestellungen zu Feiertagen.<br/>Diese Vorlage verwendet die Dimension „Tag“ und die Metrik „Bestellungen“."
+>abstract="**Dies kann Ihnen helfen,** besser zu verstehen, wie das Interesse an Ihren Produkten und Dienstleistungen im Laufe der Zeit zunimmt oder abnimmt. Sie können ein Segment anwenden, um zu erfahren, welche Kundinnen und Kunden oder Regionen die meisten Bestellungen aufgeben und wie der Trend bei diesen Bestellungen im Laufe der Zeit aussieht.<br/>**Basierend auf Ihren Erkenntnissen können Sie** eine Reihe von Schritten ausführen, z. B. die Effektivität einer kürzlich gestarteten Marketing-Kampagne durch den Vergleich der Bestellungen vor und nach dem Start der Kampagne bewerten. Oder Sie vergleichen die jährlichen Bestellungen zu Feiertagen.<br/>Diese Vorlage verwendet die Dimension „Tag“ und die Metrik „Bestellungen“."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -318,7 +318,7 @@ Die folgenden Vorlagen sind verfügbar:
 | [!UICONTROL **Letztkontakt-Kanal**] | Zeigen Sie die neuesten Marketing-Kanäle an, zu denen Besuchende während ihres Interaktionszeitraums (standardmäßig 30 Tage) passen.<p>**Dies kann Ihnen dabei helfen**, zu verstehen, welche Marketing-Kanäle am effektivsten waren, um Personen zu Ihrer Site zu leiten und um Konversionen zu erreichen.</p><p>**Basierend auf Ihren Erkenntnissen können Sie** eine Reihe von Schritten ausführen, z. B. mehr Ressourcen für leistungsstarke Kanäle oder weniger Ressourcen für leistungsschwache Kanäle zuweisen.</p><p>Diese Vorlage verwendet die Dimension Letztkontakt-Kanal und die Metrik Unique Visitors .</p> |
 | [!UICONTROL **Letztkontakt-Kanaldetail**] | Zeigen Sie Details zu den neuesten Marketing-Kanälen an, zu denen Besuchende während ihres Interaktionszeitraums (standardmäßig 30 Tage) passen.<p>**Dies kann Ihnen dabei helfen**, nicht nur zu verstehen, welche Marketing-Kanäle am effektivsten waren, um Personen zu Ihrer Site zu leiten und Konversionen zu erreichen, sondern Sie erhalten auch Details zu diesen Marketing-Kanälen. Wenn beispielsweise ein Besucher zu Ihrer Site gelangt ist und mit dem Marketing-Kanal „Paid Search“ übereinstimmt, können Sie anhand des Kanaldetails sehen, welche Suchmaschine verwendet wurde oder nach welchem Schlüsselwort er gesucht hat.</p><p>**Basierend auf Ihren Erkenntnissen können Sie** eine Reihe von Schritten ausführen, z. B. mehr Ressourcen für leistungsstarke Kanäle oder weniger Ressourcen für leistungsschwache Kanäle zuweisen.</p><p>Diese Vorlage verwendet die Dimension Detail des Letztkontakt-Kanals und die Unique Visitors -Metrik.</p> |
 | [!UICONTROL **Umsatz**] | <!--duplicated in Web Conversion section-->Zeigen Sie den Geldbetrag der bei allen Bestellungen gekauften Produkte an. Die Daten werden für einen bestimmten Zeitraum angezeigt und mit früheren Zeiträumen verglichen.<p>**Dies kann Ihnen helfen**, zu verstehen, wie der Umsatz im Laufe der Zeit zu- oder abnimmt. Sie können diese Metrik mit einer beliebigen Dimension kombinieren, um zu erfahren, welche Dimensionselemente zum Umsatz beigetragen haben. </p><p>**Basierend auf Ihren Erkenntnissen können Sie** eine Reihe von Schritten ausführen, z. B. zukünftige Umsätze basierend auf früheren Trends planen. Sie können auch eine weitere Dimension hinzufügen, z. B. die Dimension „Trackingcode“, um zu erfahren, welche Kampagnen den meisten Umsatz generieren.</p><p>Diese Vorlage verwendet die Dimension Tag und die Metrik Umsatz .</p> |
-| [!UICONTROL **Bestellungen**] | <!--duplicated in Web Conversion section-->Zeigen Sie die Gesamtanzahl der Kaufereignisse an. Die Daten werden für einen bestimmten Zeitraum angezeigt und mit früheren Zeiträumen verglichen. <p>**Dies kann Ihnen helfen**, besser zu verstehen, wie das Interesse an Ihren Produkten und Services im Laufe der Zeit zu- oder abnimmt. Sie können ein Segment anwenden, um zu erfahren, welche Kundinnen und Kunden oder Regionen die meisten Bestellungen aufgeben und wie der Trend bei diesen Bestellungen im Laufe der Zeit aussieht.</p><p>**Basierend auf Ihren Erkenntnissen können Sie** eine Reihe von Schritten ausführen, z. B. die Effektivität einer kürzlich gestarteten Marketing-Kampagne durch den Vergleich der Bestellungen vor und nach dem Start der Kampagne bewerten. Oder Sie vergleichen die jährlichen Bestellungen zu Feiertagen.</p><p>Diese Vorlage verwendet die Dimension Tag und die Metrik Bestellungen .</p> |
+| [!UICONTROL **Bestellungen**] | <!--duplicated in Web Conversion section-->Zeigen Sie die Gesamtanzahl der Kaufereignisse an. Die Daten werden für einen bestimmten Zeitraum angezeigt und mit früheren Zeiträumen verglichen. <p>**Dies kann Ihnen helfen,** besser zu verstehen, wie das Interesse an Ihren Produkten und Dienstleistungen im Laufe der Zeit zunimmt oder abnimmt. Sie können ein Segment anwenden, um zu erfahren, welche Kundinnen und Kunden oder Regionen die meisten Bestellungen aufgeben und wie der Trend bei diesen Bestellungen im Laufe der Zeit aussieht.</p><p>**Basierend auf Ihren Erkenntnissen können Sie** eine Reihe von Schritten ausführen, z. B. die Effektivität einer kürzlich gestarteten Marketing-Kampagne durch den Vergleich der Bestellungen vor und nach dem Start der Kampagne bewerten. Oder Sie vergleichen die jährlichen Bestellungen zu Feiertagen.</p><p>Diese Vorlage verwendet die Dimension Tag und die Metrik Bestellungen .</p> |
 
 ### Web: Interaktion {#web-engagement}
 
@@ -382,7 +382,7 @@ Die folgenden Vorlagen sind verfügbar:
 
 >[!CONTEXTUALHELP]
 >id="aa-template--audio-consumption-template"
->title="Zeigen Sie Trends und Top-Metriken des Konsums von Audiomedien auf allen digitalen Geräten an."
+>title="Zeigen Sie Trends und Top-Metriken der Medienaudio-Nutzung auf allen digitalen Geräten an."
 >abstract="**Dies kann Ihnen helfen**, besser zu verstehen, wie Besuchende Audioinhalte auf Ihrer Site konsumieren.<br/>**Basierend auf Ihren Erkenntnissen können Sie** eine Reihe von Schritten ausführen, z. B. analysieren, welcher Inhalt am meisten konsumiert wird.<br/>Diese Vorlage verwendet die Dimension „Besuche“ und die Metrik „Unique Visitors“."
 
 <!-- markdownlint-enable MD034 -->
@@ -391,7 +391,7 @@ Die folgenden Vorlagen sind verfügbar:
 
 >[!CONTEXTUALHELP]
 >id="aa-template--media-recency-frequency-loyalty"
->title="Zeigen Sie Trends und Top-Metriken des Medienkonsums auf allen digitalen Geräten an."
+>title="Zeigen Sie Trends und Top-Metriken der Mediennutzung auf allen digitalen Geräten an."
 >abstract="**Dies kann Ihnen helfen**, besser zu verstehen, wie oft eine durchschnittliche Person Ihre Site besucht, mit welcher Häufigkeit Personen zur Site zurückkehren und wie viele Tage zwischen wiederkehrenden Besuchen vergehen.<br/>**Basierend auf Ihren Erkenntnissen können Sie** eine Reihe von Schritten ausführen, z. B. analysieren, welcher Inhalt am effektivsten dazu beiträgt, dass Personen zur Site zurückkehren.<br/>Diese Vorlage verwendet die Dimension „Besuche“ und die Metrik „Unique Visitors“."
 
 <!-- markdownlint-enable MD034 -->
@@ -401,7 +401,7 @@ Die folgenden Vorlagen sind verfügbar:
 >[!CONTEXTUALHELP]
 >id="aa-template--reloadsRankedReport"
 >title="Zeigen Sie an, wie oft ein Dimensionselement während eines Neuladens vorhanden war. Ein Besucher, der seinen Browser aktualisiert, stellt die häufigste Methode dar, eine Neuladung auszulösen."
->abstract="**Dies kann Ihnen helfen**, festzustellen, wann Probleme auf einer bestimmten Seite auftreten können, die Besuchende dazu auffordern würden, die Seite neu zu laden.<br/>**Basierend auf Ihren Erkenntnissen können Sie** eine Reihe von Schritten ausführen, z. B. bewerten, auf welchen Seiten Probleme auftreten, die behoben werden müssen.<br/>Diese Vorlage verwendet die Metrik „Neuladungen“."
+>abstract="**Auf diese Weise können Sie**, wann auf einer bestimmten Seite Probleme auftreten können, die einen Besucher zum Neuladen der Seite auffordern würden.<br/>**Basierend auf Ihren Erkenntnissen können Sie** eine Reihe von Schritten ausführen, z. B. bewerten, auf welchen Seiten Probleme auftreten, die behoben werden müssen.<br/>Diese Vorlage verwendet die Metrik „Neuladungen“."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -445,7 +445,7 @@ Die folgenden Vorlagen sind verfügbar:
 
 >[!CONTEXTUALHELP]
 >id="aa-template--formsPerformanceOverview"
->title="Anzeigen von Leistungsdaten für Ihre Adobe Experience Manager-Formulare."
+>title="Anzeigen von Leistungsdaten für Ihre Adobe Experience Manager Forms."
 >abstract="**Dies kann Ihnen helfen**, die Wertrealisierung von Adobe Experience Manager besser zu verstehen.<br/>**Basierend auf Ihren Erkenntnissen können Sie** eine Reihe von Schritten ausführen, z. B. die Einstellungen von Experience Manager optimieren."
 
 <!-- markdownlint-enable MD034 -->
@@ -502,7 +502,7 @@ Die folgenden Vorlagen sind verfügbar:
 >[!CONTEXTUALHELP]
 >id="template--page-summary-report"
 >title="Zeigen Sie wichtige Informationen zu einer Seite in Ihren Eigenschaften an. Zeigt Seitenansichten, eine Trend-Linie, eine Flussvisualisierung und mehr an."
->abstract="**Dies kann Ihnen helfen**, besser zu verstehen, wie Personen mit einer bestimmten Seite interagieren.<br/>**Basierend auf Ihren Erkenntnissen können Sie** eine Reihe von Schritten ausführen, z. B. die Leistung der Seite über einen bestimmten Zeitraum analysieren oder besser verstehen, was den Traffic zur Seite bringt.<br/>Diese Vorlage verwendet die Metrik „Seitenansichten“. Außerdem werden die Linienvisualisierung und die Flussvisualisierung verwendet."
+>abstract="**Dies kann Ihnen helfen**, besser zu verstehen, wie Personen mit einer bestimmten Seite interagieren.<br/>**Basierend auf Ihren Erkenntnissen können Sie** eine Reihe von Schritten ausführen, z. B. die Leistung der Seite über einen bestimmten Zeitraum analysieren oder besser verstehen, was den Traffic zur Seite bringt.<br/>Diese Vorlage verwendet die Metrik Seitenansichten . Außerdem werden die Linienvisualisierung und die Flussvisualisierung verwendet."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -535,7 +535,7 @@ Die folgenden Vorlagen sind verfügbar:
 | [!UICONTROL **Besucher**] | <!--duplicated in Most popular section-->Zeigen Sie die Gesamtanzahl der Unique Visitors an. Die Daten werden für einen bestimmten Zeitraum angezeigt und mit früheren Zeiträumen verglichen. <p>**Dies kann Ihnen helfen**, besser zu verstehen, wie die Reichweite und die Zielgruppengröße Ihrer Site im Laufe der Zeit oder im Vergleich mit einem früheren Zeitraum zu- oder abnimmt.</p><p>**Basierend auf Ihren Erkenntnissen können Sie** eine Reihe von Schritten ausführen, z. B. bewerten, ob eine kürzlich gestartete Marketing-Kampagne erfolgreich darin war, neue Personen auf die Site zu locken, indem Sie Unique Visitors vor und nach dem Start der Kampagne vergleichen. Oder Sie können die Anzahl der Personen vergleichen, die die Site jedes Jahr während der Feiertage besuchen.</p><p>Diese Vorlage verwendet die Dimension Tag und die Metrik Unique Visitors .</p> |
 | [!UICONTROL **Besuchszeit**] | Zeigen Sie die durchschnittliche Besuchszeit auf Ihrer Site während jedes Besuchs sowie die durchschnittliche Besuchszeit vor einem Erfolgsereignis an. Die Daten werden für einen bestimmten Zeitraum angezeigt und mit früheren Zeiträumen verglichen. <p>**Dies kann Ihnen helfen**, die Interaktionsstufen der Besuchenden besser zu verstehen und herauszufinden, wie viel Zeit Besuchende benötigen, um eine gewünschte Aktion durchzuführen, z. B. einen Kauf.</p><p>**Basierend auf Ihren Erkenntnissen können Sie** eine Reihe von Schritten ausführen, z. B. bewerten, ob Änderungen an Ihrer Site es den Besuchenden erleichtert, schnell ein Erfolgsereignis zu erreichen.</p><p>Diese Vorlage verwendet die Dimension Tag und die Metrik Aufgewendete Zeit pro Besuch (Sekunden) , die Dimension Tag und die Metrik Aufgewendete Zeit pro Besuch (Sekunden) .</p> |
 | [!UICONTROL **Site-Bereiche**] | <!--duplicated in Most popular section-->Zeigen Sie die beliebtesten oder leistungsstärksten Bereiche Ihrer Site an. <p>**Dies kann Ihnen helfen**, besser zu verstehen, welche Bereiche Ihrer Site am häufigsten besucht werden.</p><p>**Basierend auf Ihren Erkenntnissen können Sie** eine Reihe von Schritten ausführen, z. B. bewerten, welche Ihrer Produkte oder Services das meiste Interesse generieren.</p> <p>Diese Vorlage verwendet die Dimension Site-Bereich und die Metrik Besuche .</p> |
-| [!UICONTROL **Nutzung von Web-Inhalten**] | Zeigen Sie an, welche Web-Inhalte am häufigsten genutzt werden und für Benutzende interessant sind.<p>**Dies kann Ihnen helfen**, besser zu verstehen, wo Personen beim ersten Aufrufen der Site hingehen, welche Bereiche der Site von Personen am häufigsten besucht werden und welche Seiten Personen am wahrscheinlichsten von der Site wegführen.</p><p>**Basierend auf Ihren Erkenntnissen können Sie** beliebig viele Dinge tun, z. B. beurteilen, welche Pfade auf der Website Menschen zu den wichtigsten Seiten führen und welche Seiten die Menschen eher von der Website-<!-- not sure about these takeaways... --> wegführen.</p> <p>Diese Vorlage verwendet die Seitendimension und die Metrik Seitenansichten , die Metrik Besuche , die Metrik Unique Visitors , die Metrik Einstiegsrate , die Metrik Absprungrate , die Metrik Ausstiegsrate und die Metrik Inhaltsgeschwindigkeit . Außerdem werden Flussvisualisierungen für Eintritts-, Ausstiegs- und Top-Abschnitte verwendet.</p> |
+| [!UICONTROL **Nutzung von Web-Inhalten**] | Zeigen Sie an, welche Web-Inhalte am häufigsten genutzt werden und für Benutzende interessant sind.<p>**Dies kann Ihnen helfen**, besser zu verstehen, wo Personen beim ersten Aufrufen der Site hingehen, welche Bereiche der Site von Personen am häufigsten besucht werden und welche Seiten Personen am wahrscheinlichsten von der Site wegführen.</p><p>**Basierend auf Ihren Erkenntnissen können Sie** eine Reihe von Schritten ausführen, z. B. bewerten, welche Pfade auf der Site Personen zu den wichtigsten Seiten führen und welche Seiten Personen wahrscheinlicher von der Site wegführen.</p> <p>Diese Vorlage verwendet die Seitendimension und die Metrik Seitenansichten , die Metrik Besuche , die Metrik Unique Visitors , die Metrik Einstiegsrate , die Metrik Absprungrate , die Metrik Ausstiegsrate und die Metrik Inhaltsgeschwindigkeit . Außerdem werden Flussvisualisierungen für Eintritts-, Ausstiegs- und Top-Abschnitte verwendet.</p> |
 | [!UICONTROL **Nutzung von Medieninhalten**] | Zeigen Sie an, welche Medieninhalte am häufigsten genutzt werden und für Benutzende interessant sind.<p>**Dies kann Ihnen helfen**, besser zu verstehen, wo Personen beim ersten Aufrufen der Site hingehen, welche Bereiche der Site von Personen am häufigsten besucht werden und welche Seiten Personen am wahrscheinlichsten von der Site wegführen.</p><p>**Basierend auf Ihren Erkenntnissen können Sie** beliebig viele Dinge tun, z. B. beurteilen, welche Pfade auf der Website Menschen zu den wichtigsten Seiten führen und welche Seiten die Menschen eher von der Website-<!-- not sure about these takeaways... --> wegführen.</p> <p>Diese Vorlage verwendet die Seitendimension und die Metrik Seitenansichten , die Metrik Besuche , die Metrik Unique Visitors , die Metrik Einstiegsrate , die Metrik Absprungrate , die Metrik Ausstiegsrate und die Metrik Inhaltsgeschwindigkeit . Darüber hinaus werden Flussvisualisierungen für Eintritt-, Ausstiegs- und Top-Abschnitte verwendet. Eine Scatterplot-Visualisierung zeigt die Seitenansichten für die gängigsten Seiten an. Eine Balkenvisualisierung zeigt die Seitenansichten nach zusammengefasster Zeit an. Eine Linienvisualisierung stellt eine Trend-Ansicht der durchschnittlichen Besuchszeit auf der Site dar.</p> |
 | [!UICONTROL **Nächster und vorheriger Seitenfluss**] | Sehen Sie sich eine Flussvisualisierung der häufigsten Orte an, an die Personen unmittelbar nach dem Besuch und unmittelbar vor dem Besuch einer bestimmten Seite gehen. <p>**Dies kann Ihnen dabei helfen**, zu verstehen, wie sich der Traffic von einer bestimmten Seite zu anderen Teilen Ihrer Site bewegt. Außerdem können Sie die Pfade verstehen, die Personen nehmen, um zu einer bestimmten Seite zu gelangen.</p><p>**Basierend auf Ihren Erkenntnissen können Sie** eine Reihe von Schritten ausführen, z. B. bewerten, ob das Seiten-Design oder -Layout optimiert werden kann, um Personen zu wünschenswerteren Seiten zu leiten, z. B. zu einer Seite, auf der sie einen Kauf tätigen oder eine Rezension abgeben. Oder bewerten Sie, ob die Informationen auf der aktuellen Seite wahrscheinlich die Richtung oder die Aktionen angeben, nach denen Personen suchen, wenn sie von vorherigen Seiten kommen. Sie könnten auch bewerten, ob Seiten, die nicht als vorherige Seiten angezeigt werden, markantere Links zur aktuellen Seite benötigen.</p><p>Diese Vorlage verwendet das Bedienfeld Nächstes oder vorheriges Element .</p> |
 | **Seitenzusammenfassung** | Zeigen Sie wichtige Informationen zu einer Seite in Ihren Eigenschaften an. Zeigt Seitenansichten, eine Trend-Linie, eine Flussvisualisierung und mehr an.  <p>**Dies kann Ihnen helfen**, besser zu verstehen, wie Personen mit einer bestimmten Seite interagieren.</p><p>**Basierend auf Ihren Erkenntnissen können Sie** eine Reihe von Schritten ausführen, z. B. die Leistung der Seite über einen bestimmten Zeitraum analysieren oder besser verstehen, was den Traffic zur Seite bringt.</p><p>Diese Vorlage verwendet die Metrik Seitenansichten . Außerdem werden die Linienvisualisierung und die Flussvisualisierung verwendet.</p> |
@@ -550,7 +550,7 @@ Die folgenden Vorlagen sind verfügbar:
 
 >[!CONTEXTUALHELP]
 >id="aa-template--categoryRankedReport"
->title="Die Anzahl der Besuche anzeigen, die mit jeder Produktkategorie auf Ihrer Website verbunden sind. Dies ist nützlich für Implementierungen, die die Variable „products“ verwenden und Metriken rund um die Produktkategorie anzeigen möchten. Die Dimension, mit der diese Vorlage befüllt wird, kann absichtlich leer sein, wenn auf Ihrer Site keine Produkte vorhanden sind."
+>title="Die Anzahl der Besuche anzeigen, die mit jeder Produktkategorie auf Ihrer Website verbunden sind. Dies ist nützlich für Implementierungen, die die Produktvariable verwenden und Metriken zur Produktkategorie anzeigen möchten. Die Dimension, mit der diese Vorlage befüllt wird, kann absichtlich leer sein, wenn auf Ihrer Site keine Produkte vorhanden sind."
 >abstract="**Dies kann Ihnen helfen,** meistverkauften oder am häufigsten angezeigten Produkte besser zu verstehen. &lt;/br/>**Basierend auf Ihren Erkenntnissen können** beliebig viele Dinge tun, z. B. die Effektivität einer Marketing-Kampagne für ein bestimmtes Produkt messen.<br/>Diese Vorlage verwendet die Dimension Kategorie und die Metrik Besuche . "
 
 <!-- markdownlint-enable MD034 -->
@@ -559,8 +559,8 @@ Die folgenden Vorlagen sind verfügbar:
 
 >[!CONTEXTUALHELP]
 >id="aa-template--commerce-and-marketing-management"
->title="Zeigen Sie vorkonfigurierte Einzelhändler-Erkenntnisse in Ihre Handelsaktivitäten an, die Ihnen helfen, den Absatz zu steigern. Dies richtet sich vor allem an Benutzende von Magento, sie steh aber jedem Online-Einzelhändler zur Verfügung. "
->abstract="**Dies kann Ihnen helfen**, besser zu verstehen, wie Ihre Handelsaktivitäten zu den Absatzzahlen beitragen.<br/>**Basierend auf Ihren Erkenntnissen können Sie** eine Reihe von Schritten ausführen, z. B. Budget an Aktivitäten anpassen, die den meisten ROI erzielen."
+>title="Zeigen Sie vorkonfigurierte Einzelhändler-Erkenntnisse in Ihre Handelsaktivitäten an, die Ihnen helfen, den Absatz zu steigern. Diese Option richtet sich an Benutzende von Adobe Commerce, kann jedoch von jedem Online-Händler genutzt werden."
+>abstract="**Auf diese Weise können Sie** besser verstehen, wie Ihre Commerce-Aktivitäten zu den Verkaufszahlen beitragen.<br/>**Je nachdem, was Sie lernen** können Sie beliebig viele Dinge tun, z. B. Budgets an Aktivitäten anpassen, die den größten ROI erzielen."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -616,7 +616,7 @@ Die folgenden Vorlagen sind verfügbar:
 >[!CONTEXTUALHELP]
 >id="template--cartAdditionsOvertimeReport"
 >title="Zeigen Sie an, wie häufig Personen etwas zum Warenkorb hinzugefügt haben."
->abstract="**Dies kann Ihnen helfen**, den Teil des Konversionstrichters besser zu verstehen, in dem das Kundeninteresse an einem Produkt so hoch ist, dass es zum Warenkorb hinzugefügt wird.<br/>**Basierend auf Ihren Erkenntnissen können Sie** eine Reihe von Schritten ausführen, z. B. Produktempfehlungen für alle Kundinnen und Kunden verbessern. Dazu können Sie analysieren, welche Produkte häufig demselben Warenkorb hinzugefügt werden, und ähnliche Produkte auf der Grundlage von Artikeln vorschlagen, die bereits im Warenkorb enthalten sind."
+>abstract="**Dies kann Ihnen helfen**, den Teil des Konversionstrichters besser zu verstehen, in dem das Kundeninteresse an einem Produkt so hoch ist, dass es zum Warenkorb hinzugefügt wird.<br/>**Basierend auf Ihren Erkenntnissen können Sie** eine Reihe von Schritten ausführen, z. B. Produktempfehlungen für alle Kundinnen und Kunden verbessern. Dies kann durch die Analyse der Produkte, die häufig zu denselben Warenkörben hinzugefügt werden, und durch Vorschläge für verwandte Produkte, die auf Artikeln basieren, die sich bereits im Warenkorb befinden, erfolgen."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -699,7 +699,7 @@ Die folgenden Vorlagen sind verfügbar:
 >[!CONTEXTUALHELP]
 >id="aa-template--timeZoneRankedReport"
 >title="Zeigen Sie die wichtigsten Zeitzonen der Besuchenden an, die auf Ihre Site zugreifen."
->abstract="**Dies kann Ihnen helfen**, besser zu verstehen, in welchen Zeitzonen Ihre Besuchenden leben.<br/>**Basierend auf Ihren Erkenntnissen können Sie** eine Reihe von Schritten ausführen, z. B. die Site-Wartung für Zeiten einplanen, die sich auf die geringste Anzahl von Personen auswirken."
+>abstract="**Dies kann Ihnen helfen**, besser zu verstehen, in welchen Zeitzonen Ihre Besuchenden leben.<br/>**Je nachdem, was Sie lernen** können Sie beliebig viele Dinge tun, z. B. die Site-Wartung zu Zeiten anpassen, die die wenigsten Personen betreffen."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -798,7 +798,7 @@ Die folgenden Vorlagen sind verfügbar:
 >[!CONTEXTUALHELP]
 >id="aa-template--customerLoyaltyRankedReport"
 >title="Zeigen Sie die Anzahl der Besuchenden auf Ihrer Site an, die 0 frühere Käufe, 1 früheren Kauf, 2 frühere Käufe oder mehr als 3 frühere Käufe getätigt haben. "
->abstract="**Dies kann Ihnen helfen**, besser zu verstehen, wie sich Ihre Site auf das Kaufverhalten auswirkt. <br/>**Basierend auf Ihren Erkenntnissen können Sie** eine Reihe von Schritten ausführen, z. B. sich auf Besuchende konzentrieren, die für einen Kauf zurückkehren, sodass Sie ein ähnliches Verhalten bei neuen Besuchenden fördern können.<br/>Diese Vorlage verwendet die Dimension „Kundenloyalität“."
+>abstract="**Dies kann Ihnen helfen,** Auswirkungen Ihrer Site auf das Kaufverhalten besser zu verstehen.<br/>**Basierend auf Ihren Erkenntnissen können Sie** eine Reihe von Schritten ausführen, z. B. sich auf Besuchende konzentrieren, die für einen Kauf zurückkehren, sodass Sie ein ähnliches Verhalten bei neuen Besuchenden fördern können.<br/>Diese Vorlage verwendet die Dimension „Kundenloyalität“."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -966,7 +966,7 @@ Die folgenden Vorlagen sind verfügbar:
 >[!CONTEXTUALHELP]
 >id="aa-template--advertisingAnalyticsPaidSearch"
 >title="Zeigen Sie alle Google- und Bing-Paid Search-Daten nebeneinander an."
->abstract="**Dies kann Ihnen helfen**, den Umfang des an Ihre Site gesendeten Traffics besser zu verstehen und ob Kundinnen und Kunden konvertieren.<br/>**Basierend auf Ihren Erkenntnissen können Sie** eine Reihe von Schritten ausführen, z. B. die Kostenwirksamkeit einer Anzeigenkampagne schätzen."
+>abstract="**Dies kann Ihnen helfen**, den Umfang des an Ihre Site gesendeten Traffics besser zu verstehen und ob Kundinnen und Kunden konvertieren.<br/>**Je nachdem, was Sie lernen** können Sie beliebig viele Dinge tun, z. B. die Kosteneffizienz einer Anzeigenkampagne abschätzen."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -975,7 +975,7 @@ Die folgenden Vorlagen sind verfügbar:
 >[!CONTEXTUALHELP]
 >id="aa-template--searchEngineRankRankedReport"
 >title="Zeigen Sie an, durch welche Seiten der Suchergebnisse sich Besuchende geklickt haben, um Ihre Site zu erreichen. Wenn Ihre Site beispielsweise auf der zweiten Seite der Suchergebnisse einer Suchmaschine erscheint, ist das Dimensionselement für diese Variable „Suchseite 2“."
->abstract="**Dies kann Ihnen helfen**, besser zu verstehen, an welcher Stelle der Suchergebnisse Ihre Seiten angezeigt werden.<br/>**Basierend auf Ihren Erkenntnissen können Sie** eine Reihe von Schritten ausführen und Ihre SEO-Strategie verbessern, um sicherzustellen, dass Ihr Inhalt auf der ersten Seite der Suchergebnisse angezeigt wird."
+>abstract="**Dies kann Ihnen helfen,** besser zu verstehen, wie hoch Ihre Seiten in den Suchergebnissen rangieren.<br/>**Basierend auf dem, was Sie lernen** können Sie beliebig viele Dinge tun, z. B. Ihre SEO-Strategie verbessern, um sicherzustellen, dass Ihre Inhalte auf der ersten Seite der Suchergebnisse angezeigt werden."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -994,8 +994,8 @@ Die folgenden Vorlagen sind verfügbar:
 
 >[!CONTEXTUALHELP]
 >id="template--firstouchChannelRankedReport"
->title="Zeigen Sie die ersten Marketing-Kanäle an, zu denen Besuchende während ihres Interaktionszeitraums (standardmäßig 30 Tage) passen."
->abstract="**Dies kann Ihnen helfen**, besser zu verstehen, welche Marketing-Kanäle den anfänglichen Traffic zu Ihrer Site leiten.<br/>**Basierend auf Ihren Erkenntnissen können Sie** eine Reihe von Schritten ausführen, z. B. Marketing-Maßnahmen auf Bereiche konzentrieren, die am effektivsten sind.<br/>Diese Vorlage verwendet die Dimension „Erstkontaktkanal“."
+>title="Den ersten Marketing-Kanal anzeigen, dem eine Besucherin oder ein Besucher während ihres bzw. seines Interaktionszeitraums entspricht (standardmäßig 30 Tage)."
+>abstract="**Dies kann Ihnen helfen**, besser zu verstehen, welche Marketing-Kanäle den anfänglichen Traffic zu Ihrer Site leiten.<br/>**Basierend auf Ihren Erkenntnissen können Sie** eine Reihe von Schritten ausführen, z. B. Marketing-Maßnahmen auf Bereiche konzentrieren, die am effektivsten sind.<br/>Diese Vorlage verwendet die Dimension Erstkontakt-Kanal ."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -1040,7 +1040,7 @@ Die folgenden Vorlagen sind verfügbar:
 >[!CONTEXTUALHELP]
 >id="template--searchKeywordRankedReport"
 >title="Zeigen Sie die Keywords an, die Besuchende zum Erreichen Ihrer Site verwenden, unabhängig davon, ob es sich um Paid Search oder organische Suche handelt."
->abstract="**Dies kann Ihnen helfen**, die Keywords besser zu verstehen, die bei Suchvorgängen verwendet werden, die zu Sitetraffic führen. <br/>**Basierend auf Ihren Erkenntnissen können Sie** eine Reihe von Schritten ausführen, z. B. SEO-Lücken zwischen den verwendeten Keywords und den Keywords, die den Sitetraffic fördern, identifizieren und füllen.<br/>Diese Vorlage verwendet die Dimension „Suchbegriff“."
+>abstract="**Dies kann Ihnen helfen**, die Keywords besser zu verstehen, die bei Suchvorgängen verwendet werden, die zu Sitetraffic führen. <br/>**Basierend auf dem, was Sie lernen** können Sie eine beliebige Anzahl von Dingen tun, z. B. SEO-Lücken zwischen verwendeten Keywords und denen, die den Website-Traffic steuern, identifizieren und füllen.<br/>Diese Vorlage verwendet die Dimension „Suchbegriff“."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -1049,7 +1049,7 @@ Die folgenden Vorlagen sind verfügbar:
 >[!CONTEXTUALHELP]
 >id="template--searchPaidKeywordRankedReport"
 >title="Zeigen Sie die Suchbegriffe an, die Besuchende zum Erreichen Ihrer Site verwenden und die mit der Paid-Search-Erkennung übereinstimmen."
->abstract="**Dies kann Ihnen helfen**, die Keywords besser zu verstehen, die bei Suchvorgängen verwendet werden, die zu Sitetraffic führen. <br/>**Basierend auf Ihren Erkenntnissen können Sie** eine Reihe von Schritten ausführen, z. B. SEO-Lücken zwischen den verwendeten Keywords und den Keywords, die den Sitetraffic fördern, identifizieren und füllen. <br/>Diese Vorlage verwendet die Dimension „Suchbegriff – Paid“. "
+>abstract="**Dies kann Ihnen helfen**, die Keywords besser zu verstehen, die bei Suchvorgängen verwendet werden, die zu Sitetraffic führen. <br/>**Basierend auf dem, was Sie lernen** können Sie eine beliebige Anzahl von Dingen tun, z. B. SEO-Lücken zwischen verwendeten Keywords und denen, die den Website-Traffic steuern, identifizieren und füllen. <br/>Diese Vorlage verwendet die Dimension „Suchbegriff – Paid“. "
 
 <!-- markdownlint-enable MD034 -->
 
@@ -1058,7 +1058,7 @@ Die folgenden Vorlagen sind verfügbar:
 >[!CONTEXTUALHELP]
 >id="template--searchNaturalKeywordRankedReport"
 >title="Zeigen Sie die Suchbegriffe an, die Besuchende zum Erreichen Ihrer Site verwenden und die nicht mit der Paid-Search-Erkennung übereinstimmen."
->abstract="**Dies kann Ihnen helfen**, die Keywords besser zu verstehen, die bei Suchvorgängen verwendet werden, die zu Sitetraffic führen. <br/>**Basierend auf Ihren Erkenntnissen können Sie** eine Reihe von Schritten ausführen, z. B. SEO-Lücken zwischen den verwendeten Keywords und den Keywords, die den Sitetraffic fördern, identifizieren und füllen.<br/>Diese Vorlage verwendet die Dimension „Suchbegriff – Organisch“. "
+>abstract="**Dies kann Ihnen helfen**, die Keywords besser zu verstehen, die bei Suchvorgängen verwendet werden, die zu Sitetraffic führen. <br/>**Basierend auf dem, was Sie lernen** können Sie eine beliebige Anzahl von Dingen tun, z. B. SEO-Lücken zwischen verwendeten Keywords und denen, die den Website-Traffic steuern, identifizieren und füllen.<br/>Diese Vorlage verwendet die Dimension „Suchbegriff – Organisch“. "
 
 <!-- markdownlint-enable MD034 -->
 
@@ -1094,7 +1094,7 @@ Die folgenden Vorlagen sind verfügbar:
 >[!CONTEXTUALHELP]
 >id="template--referringDomainRankedReport"
 >title="Zeigen Sie an, durch welche Domains Besuchende sich klicken, um Ihre Site zu erreichen."
->abstract="**Dies kann Ihnen helfen**, besser zu verstehen, welche Sites von Drittanbietern den meisten Traffic zu Ihrer Site leiten. (Auf der externen Site muss ein Link vorhanden sein und Besuchende müssen darauf klicken, damit das Dimensionselement angezeigt wird.)<br/>**Basierend auf Ihren Erkenntnissen können Sie** eine Reihe von Schritten ausführen, z. B. Inhalte erstellen oder anpassen, um sie besser an die Interessen der Besuchenden von den verweisenden Top-Domains anzupassen. <br/>Diese Vorlage verwendet die Dimension „Verweisende Domain“."
+>abstract="**Dies kann Ihnen helfen**, besser zu verstehen, welche Sites von Drittanbietern den meisten Traffic zu Ihrer Site leiten. (Auf der externen Site muss ein Link vorhanden sein, auf den ein Besucher klicken muss, damit das Dimensionselement angezeigt wird.)<br/>**Basierend auf dem, was Sie lernen** können Sie beliebig viele Dinge tun, z. B. Inhalte erstellen oder anpassen, um sie besser an die Interessen der Besucher anzupassen, die aus Top-Referrer-Domains kommen. <br/>Diese Vorlage verwendet die Dimension „Verweisende Domain“."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -1111,7 +1111,7 @@ Die folgenden Vorlagen sind verfügbar:
 
 >[!CONTEXTUALHELP]
 >id="template--referrerRankedReport"
->title="Zeigen Sie an, auf welchen URLs sich die Besuchenden befanden, als sie sich zu Ihrer Site durchklickten. (Auf der externen URL muss ein Link vorhanden sein, und Besuchende müssen darauf klicken, damit das Dimensionselement angezeigt wird.)"
+>title="Zeigen Sie an, auf welchen URLs sich die Besuchenden befanden, als sie sich zu Ihrer Site durchklickten. (Ein Link muss in der externen URL vorhanden sein, und ein Besucher muss darauf klicken, damit das Dimensionselement angezeigt wird.)"
 >abstract="**Dies kann Ihnen helfen**, besser zu verstehen, welche spezifischen URLs den meisten Traffic zu Ihrer Site leiten. <br/>**Basierend auf Ihren Erkenntnissen können Sie** eine Reihe von Schritten ausführen, z. B. Inhalte erstellen oder anpassen, um sie besser an die Interessen der Besuchenden von den Top-URLs anzupassen. <br/>Diese Vorlage verwendet die Dimension „Verweisende Domain“.</p>"
 
 <!-- markdownlint-enable MD034 -->
@@ -1130,7 +1130,7 @@ Die folgenden Vorlagen sind verfügbar:
 | Name der Vorlage | Gründe für die Verwendung dieser <!-- What do you do with it? What can it help you learn? and What are the potential actions? --> |
 | --- | --- | 
 | [!UICONTROL **Marketing-Kanäle**] > [!UICONTROL **Kanalübersichtsbericht**] | Bei Verwendung der benutzerdefinierten Attribution zeigt diese Vorlage, wie Besuchende auf Ihre Site gelangen.<p>**Dies kann Ihnen helfen**, besser zu verstehen, welche Ihrer Marketing-Kanäle am effektivsten sind.</p><p>**Basierend auf Ihren Erkenntnissen können Sie** eine Reihe von Schritten ausführen, z. B. intensiver in effektive Marketing-Kanäle investieren und weniger effektive Marketing-Kanäle aufgeben.</p><p>Diese Vorlage verwendet die Dimension ID (Variablen/Marketing-Kanal) und die Umsatzmetrik.</p> |
-| [!UICONTROL **Marketing-Kanäle**] > [!UICONTROL **Erstkontakt-Kanal**] | Zeigen Sie die ersten Marketing-Kanäle an, zu denen Besuchende während ihres Interaktionszeitraums (standardmäßig 30 Tage) passen. <p>**Dies kann Ihnen helfen**, besser zu verstehen, welche Marketing-Kanäle den anfänglichen Traffic zu Ihrer Site leiten.</p><p>**Basierend auf Ihren Erkenntnissen können Sie** eine Reihe von Schritten ausführen, z. B. Marketing-Maßnahmen auf Bereiche konzentrieren, die am effektivsten sind.</p><p>Diese Vorlage verwendet die Dimension Erstkontakt-Kanal .</p> |
+| [!UICONTROL **Marketing-Kanäle**] > [!UICONTROL **Erstkontakt-Kanal**] | Den ersten Marketing-Kanal anzeigen, dem eine Besucherin oder ein Besucher während ihres bzw. seines Interaktionszeitraums entspricht (standardmäßig 30 Tage). <p>**Dies kann Ihnen helfen**, besser zu verstehen, welche Marketing-Kanäle den anfänglichen Traffic zu Ihrer Site leiten.</p><p>**Basierend auf Ihren Erkenntnissen können Sie** eine Reihe von Schritten ausführen, z. B. Marketing-Maßnahmen auf Bereiche konzentrieren, die am effektivsten sind.</p><p>Diese Vorlage verwendet die Dimension Erstkontakt-Kanal .</p> |
 | [!UICONTROL **Marketing-Kanäle**] > [!UICONTROL **Details des Erstkontakt-Kanals**] | Zeigen Sie Details zu den ersten Marketing-Kanälen an, zu denen Besuchende während ihres Interaktionszeitraums (standardmäßig 30 Tage) passen.<p>**Dies kann Ihnen helfen**, besser zu verstehen, was dazu beigetragen hat, dass der Treffer zu einem Marketing-Kanal passte. Wenn beispielsweise ein Besucher zu Ihrer Site gelangt ist und mit dem Marketing-Kanal „Paid Search“ übereinstimmt, können Sie anhand des Kanaldetails sehen, welche Suchmaschine verwendet wurde oder nach welchem Schlüsselwort er gesucht hat.</p><p>**Basierend auf Ihren Erkenntnissen können Sie** eine Reihe von Schritten ausführen, z. B. Marketing-Maßnahmen auf Bereiche konzentrieren, die am effektivsten sind.</p><p>Diese Vorlage verwendet die Dimension Detail des Erstkontaktkanals .</p> |
 | [!UICONTROL **Marketing-Kanäle**] > [!UICONTROL **Letztkontakt-Kanal**] | Zeigen Sie den neuesten Marketing-Kanal an, dem eine Besucherin oder ein Besucher während ihres bzw. seines Interaktionszeitraums entspricht (standardmäßig 30 Tage).<p>**Auf diese Weise können Sie** besser verstehen, welche Marketing-Kanäle den Traffic zu Ihrer Site leiten, der zu Konversionen führt.</p><p>**Basierend auf Ihren Erkenntnissen können Sie** eine Reihe von Schritten ausführen, z. B. Marketing-Maßnahmen auf Bereiche konzentrieren, die am effektivsten sind.</p><p>Diese Vorlage verwendet die Dimension Letztkontakt-Kanal .  </p> |
 | [!UICONTROL **Marketing-Kanäle**] > [!UICONTROL **Detail des Letztkontakt-Kanals**] | Details zum letzten Marketing-Kanal anzeigen, dem eine Besucherin oder ein Besucher während ihres bzw. seines Interaktionszeitraums (standardmäßig 30 Tage) entspricht<p>**Dies kann Ihnen helfen**, besser zu verstehen, was dazu beigetragen hat, dass der Treffer zu einem Marketing-Kanal passte. Wenn beispielsweise ein Besucher zu Ihrer Site gelangt ist und mit dem Marketing-Kanal „Paid Search“ übereinstimmt, können Sie anhand des Kanaldetails sehen, welche Suchmaschine verwendet wurde oder nach welchem Schlüsselwort er gesucht hat.</p><p>**Basierend auf Ihren Erkenntnissen können Sie** eine Reihe von Schritten ausführen, z. B. Marketing-Maßnahmen auf Bereiche konzentrieren, die am effektivsten sind. </p><p>Diese Vorlage verwendet die Dimension Detail des Letztkontaktkanals . </p> |
@@ -1138,15 +1138,15 @@ Die folgenden Vorlagen sind verfügbar:
 | [!UICONTROL **Kampagnen**] > [!UICONTROL **Kampagnen-Konversionstrichter**] | Anzeigen der Anzahl der Clickthroughs und Checkouts für Ihre Kampagnen. <p>**Auf diese Weise können Sie** besser verstehen, wie Marketing-Kampagnen die Konversion fördern.</p><p>**Je nachdem, was Sie lernen, können** beliebig viele Dinge tun, z. B. bestimmen, welche Marketing-Kampagnen den meisten ROI generieren.</p> |
 | [!UICONTROL **Kampagnen**] > [!UICONTROL **Kampagnenleistung**] | Zeigen Sie Details zur Leistung Ihrer Marketing-Kampagnen an.<p>**Dies kann Ihnen helfen**, mehr über die verschiedenen Erfolgsindikatoren zu erfahren, die mit Kampagnen verbunden sind, wie Umsatz, Produktansichten, Bestellungen usw.</p><p>**Je nachdem, was Sie lernen** können Sie beliebig viele Dinge tun, z. B. Marketing-Maßnahmen auf die Kampagnen konzentrieren, die den höchsten Umsatz erzielen. </p><p>Diese Vorlage verwendet die Metrik Umsatz , die Metrik Produktansichten , die Metrik Warenkorbhinzufügungen , die Metrik Bestellungen und die Metrik Einheiten . Außerdem werden die Dimension „Trackingcode“ und die Dimension „Verweisende Domain“ verwendet. </p> |
 | **Web-Akquise** | Sehen Sie sich an, wie Ihre Website Besuchende erhält.<p>**Dies kann Ihnen helfen**, die verschiedenen Faktoren besser zu verstehen, die zur Akquise führen, wie Suchbegriffe, verweisende Domain usw.</p><p>**Basierend auf Ihren Erkenntnissen können Sie** eine Reihe von Schritten ausführen, z. B. Marketing-Maßnahmen auf die effektivsten Kanäle konzentrieren.</p><p>Diese Vorlage verwendet die Metrik Absprungrate und die Metrik Absprünge . Außerdem werden die Dimension „Suchmaschine“, die Dimension „Suchbegriff“, die Dimension „Einstiegsseite“, die Dimension „Verweisende Domain“, die Dimension „Trackingcode“ und die Dimension „Verweisende Stelle“ verwendet.  </p> |
-| **Suchbegriffe - alle** | Zeigen Sie die Keywords an, die Besuchende zum Erreichen Ihrer Site verwenden, unabhängig davon, ob es sich um Paid Search oder organische Suche handelt. <p>**Dies kann Ihnen helfen**, die Keywords besser zu verstehen, die bei Suchvorgängen verwendet werden, die zu Sitetraffic führen.  </p><p>**Basierend auf Ihren Erkenntnissen können Sie** eine Reihe von Schritten ausführen, z. B. SEO-Lücken zwischen den verwendeten Keywords und den Keywords, die den Sitetraffic fördern, identifizieren und füllen.</p><p>Diese Vorlage verwendet die Suchbegriffdimension. </p> |
-| **Suchbegriffe - Paid** | Zeigen Sie die Suchbegriffe an, die Besuchende zum Erreichen Ihrer Site verwenden und die mit der Paid-Search-Erkennung übereinstimmen.<p>**Dies kann Ihnen helfen**, die Keywords besser zu verstehen, die bei Suchvorgängen verwendet werden, die zu Sitetraffic führen. </p><p>**Basierend auf Ihren Erkenntnissen können Sie** eine Reihe von Schritten ausführen, z. B. SEO-Lücken zwischen den verwendeten Keywords und den Keywords, die den Sitetraffic fördern, identifizieren und füllen. </p><p>Diese Vorlage verwendet die Dimension Suchbegriff - Paid . </p> |
-| **Suchbegriffe - Organisch** | Zeigen Sie die Suchbegriffe an, die Besuchende zum Erreichen Ihrer Site verwenden und die nicht mit der Paid-Search-Erkennung übereinstimmen.<p>**Dies kann Ihnen helfen**, die Keywords besser zu verstehen, die bei Suchvorgängen verwendet werden, die zu Sitetraffic führen. </p><p>**Basierend auf Ihren Erkenntnissen können Sie** eine Reihe von Schritten ausführen, z. B. SEO-Lücken zwischen den verwendeten Keywords und den Keywords, die den Sitetraffic fördern, identifizieren und füllen.</p><p>Diese Vorlage verwendet die Dimension Suchbegriff - Natur . </p> |
+| **Suchbegriffe - alle** | Zeigen Sie die Keywords an, die Besuchende zum Erreichen Ihrer Site verwenden, unabhängig davon, ob es sich um Paid Search oder organische Suche handelt. <p>**Dies kann Ihnen helfen**, die Keywords besser zu verstehen, die bei Suchvorgängen verwendet werden, die zu Sitetraffic führen.  </p><p>**Basierend auf dem, was Sie lernen** können Sie eine beliebige Anzahl von Dingen tun, z. B. SEO-Lücken zwischen verwendeten Keywords und denen, die den Website-Traffic steuern, identifizieren und füllen.</p><p>Diese Vorlage verwendet die Suchbegriffdimension. </p> |
+| **Suchbegriffe - Paid** | Zeigen Sie die Suchbegriffe an, die Besuchende zum Erreichen Ihrer Site verwenden und die mit der Paid-Search-Erkennung übereinstimmen.<p>**Dies kann Ihnen helfen**, die Keywords besser zu verstehen, die bei Suchvorgängen verwendet werden, die zu Sitetraffic führen. </p><p>**Basierend auf dem, was Sie lernen** können Sie eine beliebige Anzahl von Dingen tun, z. B. SEO-Lücken zwischen verwendeten Keywords und denen, die den Website-Traffic steuern, identifizieren und füllen. </p><p>Diese Vorlage verwendet die Dimension Suchbegriff - Paid . </p> |
+| **Suchbegriffe - Organisch** | Zeigen Sie die Suchbegriffe an, die Besuchende zum Erreichen Ihrer Site verwenden und die nicht mit der Paid-Search-Erkennung übereinstimmen.<p>**Dies kann Ihnen helfen**, die Keywords besser zu verstehen, die bei Suchvorgängen verwendet werden, die zu Sitetraffic führen. </p><p>**Basierend auf dem, was Sie lernen** können Sie eine beliebige Anzahl von Dingen tun, z. B. SEO-Lücken zwischen verwendeten Keywords und denen, die den Website-Traffic steuern, identifizieren und füllen.</p><p>Diese Vorlage verwendet die Dimension Suchbegriff - Natur . </p> |
 | **Suchmaschinen - alle** | Zeigen Sie die Suchmaschinen an, die Besuchende zum Erreichen Ihrer Site verwenden, unabhängig davon, ob dafür bezahlt wurde oder sie natürlich sind. <p>**Dies kann Ihnen helfen**, die Suchmaschinen besser zu verstehen, die bei Suchvorgängen verwendet werden, die zu Sitetraffic führen. </p><p>**Basierend auf Ihren Erkenntnissen können Sie** eine Reihe von Schritten ausführen, z. B. Ihre SEO-Bemühungen auf die Suchmaschinen konzentrieren, die den meisten Traffic zur Site leiten.</p><p>Diese Vorlage verwendet die Suchmaschinendimension. </p> |
 | **Suchmaschinen - Paid** | Zeigen Sie die Suchmaschinen an, die Besuchende zum Erreichen Ihrer Site verwenden und die mit der Paid-Search-Erkennung übereinstimmen.<p>**Dies kann Ihnen helfen**, die Suchmaschinen besser zu verstehen, die bei Suchvorgängen verwendet werden, die zu Sitetraffic führen.</p><p>**Basierend auf Ihren Erkenntnissen können Sie** eine Reihe von Schritten ausführen, z. B. Ihre SEO-Bemühungen auf die Suchmaschinen konzentrieren, die den meisten Traffic zur Site leiten. </p><p>Diese Vorlage verwendet die Dimension Suchmaschine - Bezahlt . </p> |
 | **Suchmaschinen - Organisch** | Zeigen Sie die Suchbegriffe an, die Besuchende zum Erreichen Ihrer Site verwenden und die nicht mit der Paid-Search-Erkennung übereinstimmen.<p>**Dies kann Ihnen helfen**, die Suchmaschinen besser zu verstehen, die bei Suchvorgängen verwendet werden, die zu Sitetraffic führen.</p><p>**Basierend auf Ihren Erkenntnissen können Sie** eine Reihe von Schritten ausführen, z. B. Ihre SEO-Bemühungen auf die Suchmaschinen konzentrieren, die den meisten Traffic zur Site leiten.</p><p>Diese Vorlage verwendet die Dimension Suchmaschine - Natur . </p> |
-| **Verweisende Domains** | Zeigen Sie an, durch welche Domains Besuchende sich klicken, um Ihre Site zu erreichen.<p>**Dies kann Ihnen helfen**, besser zu verstehen, welche Sites von Drittanbietern den meisten Traffic zu Ihrer Site leiten. (Auf der externen Site muss ein Link vorhanden sein und Besuchende müssen darauf klicken, damit das Dimensionselement angezeigt wird.)</p><p>**Basierend auf dem, was Sie lernen** können Sie beliebig viele Dinge tun, z. B. Inhalte erstellen oder anpassen, um sie besser an die Interessen der Besucher anzupassen, die von den wichtigsten verweisenden Domains kommen. </p><p>Diese Vorlage verwendet die Dimension Referrer Domain . </p> |
+| **Verweisende Domains** | Zeigen Sie an, durch welche Domains Besuchende sich klicken, um Ihre Site zu erreichen.<p>**Dies kann Ihnen helfen**, besser zu verstehen, welche Sites von Drittanbietern den meisten Traffic zu Ihrer Site leiten. (Auf der externen Site muss ein Link vorhanden sein, auf den ein Besucher klicken muss, damit das Dimensionselement angezeigt wird.)</p><p>**Basierend auf dem, was Sie lernen** können Sie beliebig viele Dinge tun, z. B. Inhalte erstellen oder anpassen, um sie besser an die Interessen der Besucher anzupassen, die von den wichtigsten verweisenden Domains kommen. </p><p>Diese Vorlage verwendet die Dimension Referrer Domain . </p> |
 | **Ursprüngliche Referrer-Domains** | Zeigen Sie die erste verweisende Domain an, durch die sich Personen zum Erreichen Ihrer Site geklickt haben. (Sobald sie festgelegt wurde, enthält sie denselben Wert für die gesamte Lebensdauer dieser Besucher-ID.)<p>**Dies kann Ihnen helfen**, besser zu verstehen, welche Drittanbieter-Sites den Traffic ursprünglich zu Ihrer Site leiten.</p><p>**Basierend auf dem, was Sie lernen** können Sie beliebig viele Dinge tun, z. B. Inhalte erstellen oder anpassen, um sie besser an die Interessen der Besucher anzupassen, die von den Top-Referrer-Domains kommen. </p><p>Diese Vorlage verwendet die Dimension „Ursprünglich verweisende Domain“. </p> |
-| **Verweisende Stellen** | Zeigen Sie an, auf welchen URLs sich die Besuchenden befanden, als sie sich zu Ihrer Site durchklickten. (Auf der externen URL muss ein Link vorhanden sein, und Besuchende müssen darauf klicken, damit das Dimensionselement angezeigt wird.)  <p>**Dies kann Ihnen helfen**, besser zu verstehen, welche spezifischen URLs den meisten Traffic zu Ihrer Site leiten. </p><p>**Basierend auf dem, was Sie lernen** können Sie beliebig viele Dinge tun, z. B. Inhalte erstellen oder anpassen, um sie besser an die Interessen der Besucher anzupassen, die von Top-URLs kommen. </p><p>Diese Vorlage verwendet die Dimension Referrer Domain . </p><p>Diese Vorlage verwendet die Dimension Referrer . </p> |
+| **Verweisende Stellen** | Zeigen Sie an, auf welchen URLs sich die Besuchenden befanden, als sie sich zu Ihrer Site durchklickten. (Ein Link muss in der externen URL vorhanden sein, und ein Besucher muss darauf klicken, damit das Dimensionselement angezeigt wird.)  <p>**Dies kann Ihnen helfen**, besser zu verstehen, welche spezifischen URLs den meisten Traffic zu Ihrer Site leiten. </p><p>**Basierend auf dem, was Sie lernen** können Sie beliebig viele Dinge tun, z. B. Inhalte erstellen oder anpassen, um sie besser an die Interessen der Besucher anzupassen, die von Top-URLs kommen. </p><p>Diese Vorlage verwendet die Dimension Referrer Domain . </p><p>Diese Vorlage verwendet die Dimension Referrer . </p> |
 | **Referrer-Typen** | Zeigen Sie an, durch welche generischen Kanäle Besuchende sich geklickt haben, um zu Ihrer Site zu gelangen. Adobe verwaltet die Regeln für jeden Kanal. Mögliche Kanäle sind Suchmaschinen, soziale Netzwerke, andere Websites, die Festplatte oder E-Mails.<p>**Dies kann Ihnen helfen**, besser zu verstehen, welche Referrer-Typen den meisten Traffic zu Ihrer Site leiten. </p><p>**Basierend auf Ihren Erkenntnissen können Sie** eine Reihe von Schritten ausführen, z. B. Inhalte erstellen oder anpassen, um sie besser an die Interessen der Besuchenden von einem bestimmten Kanal anzupassen. </p><p>Diese Vorlage verwendet die Dimension Referrer-Typ .</p> |
 
 ### Mobile: Mobile App {#mobile-app}
@@ -1165,7 +1165,7 @@ Die folgenden Vorlagen sind verfügbar:
 >[!CONTEXTUALHELP]
 >id="template--mobileappactions"
 >title="Sehen Sie sich die Aktionen an, die Benutzer mit Ihrer Mobile App durchführen."
->abstract="**Dies kann Ihnen helfen** besser zu verstehen, wie Personen Ihre App verwenden und welchen Nutzen sie daraus ziehen.<br/>**Je nachdem, was Sie lernen, können Sie** viele Dinge tun, z. B. Funktionen verbessern, die die beliebtesten ergänzen oder verbessern."
+>abstract="**Dies kann Ihnen helfen** besser zu verstehen, wie Personen Ihre App verwenden und welchen Nutzen sie daraus ziehen.<br/>**Je nachdem, was Sie lernen, können Sie** viele Dinge tun, z. B. Funktionen entwickeln, die die beliebtesten ergänzen oder verbessern."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -1194,7 +1194,7 @@ Die folgenden Vorlagen sind verfügbar:
 >[!CONTEXTUALHELP]
 >id="template--mobile-app-key-metrics"
 >title="Zeigen Sie einige der wichtigsten App-Metriken an."
->abstract="**Dies kann Ihnen dabei helfen**, die allgemeine Leistung Ihrer App besser zu überblicken.<br/>**Basierend auf Ihren Erkenntnissen können Sie** verschiedene Maßnahmen ergreifen, z. B. den allgemeinen Zustand und die Leistung Ihrer App beurteilen."
+>abstract="**Dies kann Ihnen helfen** die grundlegende Leistung Ihrer Mobile App besser zu verstehen.<br/>**Je nachdem, was Sie lernen** können Sie beliebig viele Dinge tun, z. B. den Gesamtzustand und die Leistung Ihrer App bewerten."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -1233,7 +1233,7 @@ Die folgenden Vorlagen sind verfügbar:
 | **Aktionen für Mobile Apps** | Sehen Sie sich die Aktionen an, die Benutzer mit Ihrer Mobile App durchführen. <p>**Dies kann Ihnen helfen** besser zu verstehen, wie Personen Ihre App verwenden und welchen Nutzen sie daraus ziehen.</p><p>**Je nachdem, was Sie lernen, können Sie** viele Dinge tun, z. B. Funktionen verbessern, die die beliebtesten ergänzen oder verbessern.</p><p>Diese Vorlage verwendet die Metriken „Ereignisse“, „Sitzungen“, „Personen“ und „Prozent Änderung“. |
 | **Mobile App-Nutzung** | Zeigen Sie die Anzahl der Benutzenden, Starts und ersten Starts in Ihrer App sowie die durchschnittliche Sitzungslänge an.<p>**Dies kann Ihnen dabei helfen** besser zu verstehen, wie viel Ihre App verwendet wird. </p><p>**Basierend auf Ihren Erkenntnissen können Sie** verschiedene Maßnahmen ergreifen, z. B. die App-Leistung verbessern, damit sie entsprechend der Nutzungsintensität skaliert werden kann.</p><!-- This template uses the --> |
 | **Journey von Mobile Apps** | Zeigen Sie die meistverbreiteten Nutzungsmuster für Ihre App an. <p>**Dies kann Ihnen helfen,** verstehen, wie Personen Ihre App verwenden. </p><p>**Basierend auf Ihren Erkenntnissen können Sie** verschiedene Maßnahmen ergreifen, z. B. die Art und Weise verbessern, wie die Benutzenden von einem Bildschirm zum anderen gelangen, um die gängigsten Workflows zu optimieren. </p><!-- This template uses the --> |
-| **Mobile-App-Metriken** | Zeigen Sie einige der wichtigsten App-Metriken an. <p>**Dies kann Ihnen dabei helfen**, die allgemeine Leistung Ihrer App besser zu überblicken.</p><p>**Basierend auf Ihren Erkenntnissen können Sie** verschiedene Maßnahmen ergreifen, z. B. den allgemeinen Zustand und die Leistung Ihrer App beurteilen.</p><!-- This template uses the --> |
+| **Mobile-App-Metriken** | Zeigen Sie einige der wichtigsten App-Metriken an. <p>**Dies kann Ihnen helfen** die grundlegende Leistung Ihrer Mobile App besser zu verstehen.</p><p>**Je nachdem, was Sie lernen** können Sie beliebig viele Dinge tun, z. B. den Gesamtzustand und die Leistung Ihrer App bewerten.</p><!-- This template uses the --> |
 | **Mobile-App-Nachrichten** | Zeigen Sie Leistungsdaten für In-App-Nachrichten und Push-Nachrichten für Ihre App an.<p>**Dies kann Ihnen helfen**, besser zu überblicken, wie Benutzende In-App-Messaging-Funktionen verwenden und wie effektiv Push-Benachrichtigungen Traffic zu Ihrer App leiten.</p><p>**Basierend auf Ihren Erkenntnissen können Sie** verschiedene Maßnahmen ergreifen, z. B. das Push-Benachrichtigungs-Erlebnis bei In-App-Nachrichten verbessern.</p><!-- This template uses the --> |
 | **Leistung von Mobile Apps** | Sehen Sie sich die Leistung Ihrer App an und finden Sie heraus, wo Probleme bei Benutzenden auftreten. <p>**Dies kann Ihnen helfen,** besser zu verstehen, wenn Personen, die Ihre App verwenden, auf Langsamkeit oder eine verminderte Leistung stoßen. </p><p>**Basierend auf Ihren Erkenntnissen können Sie** verschiedene Maßnahmen ergreifen, z. B. vorhandene Probleme beheben oder die App-Leistung verbessern und so Problemen vorbeugen.</p><!-- This template uses the --> |
 | **Beibehaltung von Mobile Apps** | Zeigen Sie an, welche Benutzenden Ihrer App die treuesten sind und was sie in der App tun. <p>**Dies kann Ihnen helfen**, die Nutzungsweisen Ihrer App durch Ihre treuesten Benutzenden zu überblicken.</p><p>**Basierend auf Ihren Erkenntnissen können Sie** verschiedene Maßnahmen ergreifen, z. B. intensivere Marketing-Maßnahmen für die Funktionen, die Ihre treusten Benutzenden verwenden.</p><!-- This template uses the --> |
@@ -1302,8 +1302,8 @@ Die folgenden Vorlagen sind verfügbar:
 
 >[!CONTEXTUALHELP]
 >id="cja-template--hourOfDay"
->title="Zeigen Sie Ereignisse, Sitzungen und Personen auf Ihrer Site aufgeschlüsselt nach Stunden des Tages an. Wenn es beispielsweise um einen Bericht für den Zeitraum 1. bis 7. Januar geht, wird die erste Stunde jedes Tages in dasselbe Dimensionselement einsortiert."
->abstract="**Dies kann Ihnen helfen**, zu überblicken, zu welchen Tageszeiten Ihre Site am häufigsten bzw. am wenigsten häufig besucht wird.<br/>**Basierend auf Ihren Erkenntnissen können Sie** verschiedene Maßnahmen ergreifen, z. B. Ihrer Site zu Zeiten mit viel Traffic mehr Rechenressourcen zuweisen.<br/>Diese Vorlage verwendet die Dimension „Stunde des Tages“."
+>title="Ereignisse, Sitzungen und Personen auf Ihrer Site anzeigen, aufgeschlüsselt nach Tageszeit. Wenn es beispielsweise um einen Bericht für den Zeitraum 1. bis 7. Januar geht, wird die erste Stunde jedes Tages in dasselbe Dimensionselement einsortiert."
+>abstract="**Dies kann Ihnen helfen** die Tageszeit besser zu verstehen, zu der Ihre Site am häufigsten und am seltensten besucht wird.<br/>**Basierend auf Ihren Erkenntnissen können Sie** verschiedene Maßnahmen ergreifen, z. B. Ihrer Site zu Zeiten mit viel Traffic mehr Rechenressourcen zuweisen.<br/>Diese Vorlage verwendet die Dimension „Stunde des Tages“."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -1312,7 +1312,7 @@ Die folgenden Vorlagen sind verfügbar:
 >[!CONTEXTUALHELP]
 >id="cja-template--am-pm"
 >title="Zeigen Sie Ereignisse, Sitzungen und Personen auf Ihrer Site aufgeschlüsselt nach 0–12 und 12–24 Uhr an. Wenn es beispielsweise um einen Bericht für den Zeitraum 1. bis 7. Januar geht, werden die Stunden von 0 bis 12 Uhr jedes Tages in dasselbe Dimensionselement einsortiert."
->abstract="***Dies kann Ihnen helfen**, zu überblicken, zu welcher Tageszeit Ihre Site am häufigsten bzw. am wenigsten häufig besucht wird.<br/>**Basierend auf Ihren Erkenntnissen können Sie** verschiedene Maßnahmen ergreifen, z. B. Ihrer Site zu Zeiten mit viel Traffic mehr Rechenressourcen zuweisen.<br/>Diese Vorlage verwendet die Dimension „Vor Mittag/nach Mittag“."
+>abstract="***Dies kann Ihnen helfen** die Tageszeit besser zu verstehen, zu der Ihre Site am häufigsten und am seltensten besucht wird.<br/>**Basierend auf Ihren Erkenntnissen können Sie** verschiedene Maßnahmen ergreifen, z. B. Ihrer Site zu Zeiten mit viel Traffic mehr Rechenressourcen zuweisen.<br/>Diese Vorlage verwendet die Dimension „Vor Mittag/nach Mittag“."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -1320,7 +1320,7 @@ Die folgenden Vorlagen sind verfügbar:
 
 >[!CONTEXTUALHELP]
 >id="cja-template--dayOfWeek"
->title="Zeigen Sie Ereignisse, Sitzungen und Personen auf Ihrer Site aufgeschlüsselt nach Wochentagen an. Wenn es beispielsweise um einen Bericht für den Januar geht, werden die Stunden jedes Wochentags in dasselbe Dimensionselement einsortiert."
+>title="Anzeigen von Ereignissen, Sitzungen und Personen auf Ihrer Site, aufgeschlüsselt nach Wochentag. Wenn es beispielsweise um einen Bericht für den Januar geht, werden die Stunden jedes Wochentags in dasselbe Dimensionselement einsortiert."
 >abstract="**Dies kann Ihnen helfen**, zu überblicken, an welchen Wochentagen Ihre Site am häufigsten bzw. am wenigsten häufig besucht wird.<br/>**Basierend auf Ihren Erkenntnissen können Sie** verschiedene Maßnahmen ergreifen, z. B. für Tage mit viel Traffic mehr Personal für Ihr Callcenter einplanen.<br/>Diese Vorlage verwendet die Dimension „Wochentag“."
 
 <!-- markdownlint-enable MD034 -->
@@ -1384,7 +1384,7 @@ Die folgenden Vorlagen sind verfügbar:
 | Name der Vorlage | Gründe für die Verwendung dieser <!-- What do you do with it? What can it help you learn? and What are the potential actions? --> |
 | --- | --- | 
 | [!UICONTROL **Minute der Stunde**] | Zeigen Sie die Anzahl der Ereignisse, Sitzungen und Personen auf Ihrer Site an, aufgeschlüsselt nach Minuten. Wenn es beispielsweise um einen Bericht mit einem Berichtszeitraum von einem einzelnen Tag geht, wird die erste Minute jeder Stunde dieses Tages in dasselbe Dimensionselement einsortiert.<p>**Dies kann Ihnen helfen**, Trends auf granularer Ebene besser zu überblicken.</p><p>**Basierend auf Ihren Erkenntnissen können Sie** verschiedene Maßnahmen ergreifen, z. B. Ressourcen für Spitzenzeiten bis auf die Minute genau optimieren.</p><p>Diese Vorlage verwendet die Dimension „Minute der Stunde“.</p> |
-| **Stunde des Tages** | Zeigen Sie Ereignisse, Sitzungen und Personen auf Ihrer Site aufgeschlüsselt nach Stunden des Tages an. Wenn es beispielsweise um einen Bericht für den Zeitraum 1. bis 7. Januar geht, wird die erste Stunde jedes Tages in dasselbe Dimensionselement einsortiert.<p>**Dies kann Ihnen helfen**, zu überblicken, zu welchen Tageszeiten Ihre Site am häufigsten bzw. am wenigsten häufig besucht wird.</p><p>**Basierend auf Ihren Erkenntnissen können Sie** verschiedene Maßnahmen ergreifen, z. B. Ihrer Site zu Zeiten mit viel Traffic mehr Rechenressourcen zuweisen.</p><p>Diese Vorlage verwendet die Dimension Stunde des Tages.</p> |
+| **Stunde des Tages** | Zeigen Sie Ereignisse, Sitzungen und Personen auf Ihrer Site aufgeschlüsselt nach Stunden des Tages an. Wenn es beispielsweise um einen Bericht für den Zeitraum 1. bis 7. Januar geht, wird die erste Stunde jedes Tages in dasselbe Dimensionselement einsortiert.<p>**Dies kann Ihnen helfen** die Tageszeit besser zu verstehen, zu der Ihre Site am häufigsten und am seltensten besucht wird.</p><p>**Basierend auf Ihren Erkenntnissen können Sie** verschiedene Maßnahmen ergreifen, z. B. Ihrer Site zu Zeiten mit viel Traffic mehr Rechenressourcen zuweisen.</p><p>Diese Vorlage verwendet die Dimension Stunde des Tages.</p> |
 | **Vormittag/Nachmittag** | Zeigen Sie Ereignisse, Sitzungen und Personen auf Ihrer Site aufgeschlüsselt nach 0–12 und 12–24 Uhr an. Wenn es beispielsweise um einen Bericht für den Zeitraum 1. bis 7. Januar geht, werden die Stunden von 0 bis 12 Uhr jedes Tages in dasselbe Dimensionselement einsortiert.<p>**Dies kann Ihnen helfen** die Tageszeit besser zu verstehen, zu der Ihre Site am häufigsten und am seltensten besucht wird.</p><p>**Basierend auf Ihren Erkenntnissen können Sie** verschiedene Maßnahmen ergreifen, z. B. Ihrer Site zu Zeiten mit viel Traffic mehr Rechenressourcen zuweisen.</p><p>Diese Vorlage verwendet die AM/PM-Dimension.</p> |
 | **Wochentag** | Zeigen Sie Ereignisse, Sitzungen und Personen auf Ihrer Site aufgeschlüsselt nach Wochentagen an. Wenn es beispielsweise um einen Bericht für den Januar geht, werden die Stunden jedes Wochentags in dasselbe Dimensionselement einsortiert. <p>**Dies kann Ihnen helfen**, zu überblicken, an welchen Wochentagen Ihre Site am häufigsten bzw. am wenigsten häufig besucht wird.</p><p>**Basierend auf Ihren Erkenntnissen können Sie** verschiedene Maßnahmen ergreifen, z. B. für Tage mit viel Traffic mehr Personal für Ihr Callcenter einplanen.</p><p>Diese Vorlage verwendet die Dimension Wochentag .</p> |
 | **Tag des Monats** | Zeigen Sie Ereignisse, Sitzungen und Personen auf Ihrer Site aufgeschlüsselt nach Tag des Monats an. Wenn es beispielsweise um einen Bericht für ein ganzes Jahr geht, wird jeder Tag eines Monats in dasselbe Dimensionselement einsortiert. <p>**Dies kann Ihnen helfen**, zu überblicken, an welchen Tagen jedes Monats Ihre Site am häufigsten bzw. am wenigsten häufig besucht wird.</p><p>**Basierend auf Ihren Erkenntnissen können Sie** verschiedene Maßnahmen ergreifen, z. B. für Tage mit viel Traffic mehr Personal für Ihr Callcenter einplanen.</p><p>Diese Vorlage verwendet die Dimension Tag des Monats .</p> |
@@ -1403,7 +1403,7 @@ Die folgenden Vorlagen sind verfügbar:
 >[!CONTEXTUALHELP]
 >id="cja-template--multiChannelOverview"
 >title="Zeigen Sie die Verteilung des Datenverkehrs auf mehrere Kanäle an."
->abstract="**Dies kann Ihnen helfen**, besser zu verstehen, welche Kanäle Traffic und Interaktion erfolgreicher fördern als andere. <br/>**Basierend auf Ihren Erkenntnissen können Sie** verschiedene Maßnahmen ergreifen, z. B. Ihre Marketing-Bemühungen auf die Kanäle konzentrieren, die die höchste Rendite erzielen.<br/>Diese Vorlage verwendet die Metriken für Benutzende, Sitzungen und Ereignisse."
+>abstract="**Dies kann Ihnen helfen**, besser zu verstehen, welche Kanäle Traffic und Interaktion erfolgreicher fördern als andere. <br/>**Je nachdem, was Sie lernen** können Sie beliebig viele Dinge tun, z. B. Marketing-Maßnahmen auf die Kanäle konzentrieren, die den höchsten ROI erzielen.<br/>Diese Vorlage verwendet die Metriken für Benutzende, Sitzungen und Ereignisse."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -1438,7 +1438,7 @@ Die folgenden Vorlagen sind verfügbar:
 
 | Name der Vorlage | Gründe für die Verwendung dieser <!-- What do you do with it? What can it help you learn? and What are the potential actions? --> |
 | --- | --- | 
-| [!UICONTROL **Überblick über mehrere Kanäle**] | Zeigen Sie die Verteilung des Datenverkehrs auf mehrere Kanäle an. <p>**Dies kann Ihnen helfen,** besser zu verstehen, welche Kanäle den Traffic und die Interaktion erfolgreicher fördern. </p><p>**Basierend auf Ihren Erkenntnissen können Sie** verschiedene Maßnahmen ergreifen, z. B. Ihre Marketing-Bemühungen auf die Kanäle konzentrieren, die die höchste Rendite erzielen.</p><p>Diese Vorlage verwendet die Metriken „Benutzer“, „Sitzung“ und „Ereignis“.</p> |
+| [!UICONTROL **Überblick über mehrere Kanäle**] | Zeigen Sie die Verteilung des Datenverkehrs auf mehrere Kanäle an. <p>**Dies kann Ihnen helfen,** besser zu verstehen, welche Kanäle den Traffic und die Interaktion erfolgreicher fördern. </p><p>**Je nachdem, was Sie lernen** können Sie beliebig viele Dinge tun, z. B. Marketing-Maßnahmen auf die Kanäle konzentrieren, die den höchsten ROI erzielen.</p><p>Diese Vorlage verwendet die Metriken „Benutzer“, „Sitzung“ und „Ereignis“.</p> |
 | **Web+App** | Zeigen Sie Web- und Mobil-Traffic zusammen an.<p>**Dies kann Ihnen helfen**, die Verteilung des Web- und Mobil-Traffics auf Ihrer Website besser zu verstehen.</p><p>**Basierend auf Ihren Erkenntnissen können Sie** verschiedene Maßnahmen ergreifen, z. B. mehr Ressourcen für Ihre mobile App bereitstellen, wenn diese ein bestimmtes Besucheraufkommen erreicht.</p><p>Diese Vorlage verwendet die Metriken Web-Sitzungen, Mobile-App-Sitzungen und Web+App-Cross-Channel-Sitzungen .</p> |
 | **Online/Offline** | Zeigen Sie Online- und Offline-Traffic zusammen an.<p>**Dies kann Ihnen helfen**, die Verteilung des Online- und Offline-Traffics auf Ihrer Website besser zu verstehen.</p><p>**Basierend auf Ihren Erkenntnissen können Sie** verschiedene Maßnahmen ergreifen, z. B. mehr Ressourcen für Ihre Online-Erfahrung bereitstellen, wenn diese ein bestimmtes Besucheraufkommen erreicht.</p><!-- This template uses the ... --> |
 | **Call-Center-** | Sehen Sie sich an, wie der Web-Traffic den Callcenter-Traffic beeinflusst.<p>**Dies kann Ihnen helfen**, besser zu verstehen, wie erfolgreich der Self-Service-Inhalt auf Ihrer Website den Traffic zu Ihrem Callcenter vermindert.</p><p>**Basierend auf Ihren Erkenntnissen können Sie** verschiedene Maßnahmen ergreifen, z. B. die Inhalte Ihres Self-Service-Angebots verbessern, um die Anzahl der Anrufe in Ihrem Callcenter zu verringern, oder den ROI Ihrer Self-Service-Inhalte messen, indem Sie die durch weniger Support-Anrufe eingesparten Kosten berechnen.</p><p>Diese Vorlage verwendet die Metriken Web-Sitzungen, Mobile-App-Sitzungen und Web+App-Cross-Channel-Sitzungen .</p> |
@@ -1459,7 +1459,7 @@ Die folgenden Vorlagen sind verfügbar:
 >[!CONTEXTUALHELP]
 >id="cja-template--pointOfSale"
 >title="Zeigen Sie Transaktionsdaten zum Point of Sale (PoS) an, einschließlich Umsatz, getätigter Bestellungen und verkaufter Einheiten. Diese Vorlage enthält auch Visualisierungen, die Informationen zu Top-Stores, Top-Produkten und Top-Produktkategorien sowie zu Online- und Offline-Verkäufen anzeigen."
->abstract="**Dies kann Ihnen helfen**, besser zu verstehen, was Ihre meistverkauften Produkte sind, sowohl im Geschäft als auch online.<br/>**Basierend auf Ihren Erkenntnissen können Sie** verschiedene Maßnahmen ergreifen, z. B. den leistungsstärksten Produkten und Kanälen mehr Marketing-Ressourcen zuweisen."
+>abstract="**Dies kann Ihnen helfen** besser zu verstehen, welche Ihre meistverkauften Produkte an allen Storestandorten und online sind.<br/>**Basierend auf Ihren Erkenntnissen können Sie** verschiedene Maßnahmen ergreifen, z. B. den leistungsstärksten Produkten und Kanälen mehr Marketing-Ressourcen zuweisen."
 
 <!-- markdownlint-enable MD034 -->
 
