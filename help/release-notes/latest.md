@@ -3,9 +3,9 @@ title: Aktuelle Versionshinweise zu Customer Journey Analytics anzeigen
 description: Neueste Versionshinweise zu Customer Journey Analytics
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: af9ed77160d1bf784d900d50055dded3e9f98eb1
+source-git-commit: f1474d55a262b25a76ac474db867cc9f0c2d2e36
 workflow-type: tm+mt
-source-wordcount: '373'
+source-wordcount: '374'
 ht-degree: 100%
 
 ---
@@ -21,7 +21,7 @@ Diese Versionshinweise beziehen sich auf den Veröffentlichungszeitraum vom 15.�
 | Funktion | Beschreibung | [Rollout-Beginn](releases.md) | [Allgemeine Verfügbarkeit](releases.md) |
 | ----------- | ---------- | ------- | ---- |
 | **Asset-Übertragung** | Ermöglicht die Übertragung der Eigentümerschaft an Komponenten wie Projekten, Filtern und berechneten Metriken an andere Benutzende, um Kontinuität und angemessenen Zugriff sicherzustellen. [Weitere Informationen](/help/tools/asset-transfer/transfer-assets.md) |  | 15. Oktober |
-| **Geführte Analyse: Einbetten in Workspace** | Die [geführte Analyse](https://experienceleague.adobe.com/de/docs/analytics-platform/using/guided-analysis/overview) ist jetzt direkt in Analysis Workspace verfügbar, sodass Benutzende Dashboards mit umfassenden Einblicken aus Bedienfeldern, Visualisierungen und geführten Analysen erstellen können. In einem neuen Bereich der linken Leiste können Sie neue geführte Analysen erstellen, die Sie Ihren Projekten hinzufügen können. Sie können auch auf gespeicherte geführte Analysen zugreifen, die in vielen Projekten als Bausteine wiederverwendet werden können. |   | 22. Januar 2025 |
+| **Geführte Analyse: Einbetten in Workspace** | Die [geführte Analyse](https://experienceleague.adobe.com/de/docs/analytics-platform/using/guided-analysis/overview) ist jetzt direkt in Analysis Workspace verfügbar, sodass Benutzende Dashboards mit umfassenden Einblicken aus Bedienfeldern, Visualisierungen und geführten Analysen erstellen können. In einem neuen Bereich der linken Leiste können Sie neue geführte Analysen erstellen, die Sie Ihren Projekten hinzufügen können. Sie können auch auf gespeicherte geführte Analysen zugreifen, die in vielen Projekten als Bausteine wiederverwendet werden können. | 2. Oktober 2024 | 23. Oktober 2024 |
 | **Produktnutzung** | Erfahren Sie, wie Ihr Unternehmen Customer Journey Analytics verwendet. Durch die Aktivierung dieser Funktion wird ein Datensatz in Adobe Experience Platform erstellt, der Daten erfasst, wenn Personen in Ihrem Unternehmen Analysis Workspace verwenden. Eine Verbindung und eine Datenansicht werden ebenfalls automatisch erstellt, sodass Sie auf verschiedene Dimensionen zugreifen können, darunter die Top-Projekttypen, die aktivsten Benutzenden und die beliebtesten in Projekten verwendeten Komponenten. [Weitere Informationen](/help/tools/product-usage/usage-overview.md) | 23. Oktober 2024 | Januar 2025 |
 | **Neue Informationen zu Anfragefaktoren bei der Leistung von Analysis Workspace** | Bei der Leistungsanalyse in Analysis Workspace ist jetzt ein neuer Abschnitt „Anfragefaktoren“ verfügbar. Weitere Informationen zur Verarbeitung von Anfragen und zu den verschiedenen Faktoren, die die Verarbeitungszeiten beeinflussen, finden Sie unter „Anfragefaktoren“ unter [Optimieren der Analysis Workspace-Leistung](https://experienceleague.adobe.com/de/docs/analytics-platform/using/technotes/optimizing-performance#request-factors). |  | 1. Oktober 2024 |
 
