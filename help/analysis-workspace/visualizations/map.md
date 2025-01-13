@@ -3,10 +3,10 @@ description: Verwenden Sie die Map-Visualisierung in einem Workspace-Projekt.
 title: Zuordnung
 feature: Visualizations
 role: User, Admin
-badgePremium: label="Adobe Analytics-Version" url="https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/map-visualization" tooltip="Wählen Sie aus, um die Adobe Analytics-Version dieses Artikels anzuzeigen."
+badgePremium: label="Adobe Analytics-Version" url="https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/map-visualization.html" tooltip="Wählen Sie aus, um die Adobe Analytics-Version dieses Artikels anzuzeigen."
 hide: true
 hidefromtoc: true
-source-git-commit: d05990b0eac6b08530b8526b3b48b722139be018
+source-git-commit: 3c3ef1c79e5863b74a3b7458c87d1f83f7188e5a
 workflow-type: tm+mt
 source-wordcount: '95'
 ht-degree: 13%
