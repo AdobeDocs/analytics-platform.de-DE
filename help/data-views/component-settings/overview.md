@@ -5,7 +5,7 @@ exl-id: 6300d289-d308-476e-aa4e-05cdae361bb2
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: 1158064d46e09435ec2507c47e6e484306ac5a53
+source-git-commit: e4e0c3cf2e865454837df6626c3b1b09f119f07f
 workflow-type: tm+mt
 source-wordcount: '570'
 ht-degree: 100%
@@ -17,7 +17,7 @@ ht-degree: 100%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_dataview_component_settings"
+>id="dataview_component_settings"
 >title="Komponenteneinstellungen"
 >abstract="Zeigen Sie den Namen, die Beschreibung und andere Einstellungen einer Komponente an und konfigurieren Sie sie.<br/><br/>**Parameter **<br/>**Komponente in Berichten verbergen**: Wenn Sie dieses Kontrollkästchen aktivieren, wird diese Komponente bei der Berichterstellung für Benutzende ohne Administratorrechte ausgeblendet. Admins können weiterhin darauf zugreifen, indem sie in einem Workspace-Projekt **[!UICONTROL Alle Komponenten zeigen]** auswählen."
 
@@ -26,7 +26,7 @@ ht-degree: 100%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_dataview_component_contextlabels"
+>id="dataview_component_contextlabels"
 >title="Kontext-Labels"
 >abstract="Das Entfernen eines Kontext-Labels kann sich auf bestimmte Bedienfelder oder Berichte auswirken, bei denen die Komponente erforderlich ist."
 

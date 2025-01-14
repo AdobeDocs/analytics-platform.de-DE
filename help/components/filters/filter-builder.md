@@ -4,7 +4,7 @@ title: Erstellen von Filtern
 feature: Filters
 role: User
 exl-id: 160021f1-6942-4682-9114-d375307d9912
-source-git-commit: 388708526204f0854b486643fa58d1f8504575aa
+source-git-commit: e4e0c3cf2e865454837df6626c3b1b09f119f07f
 workflow-type: tm+mt
 source-wordcount: '1494'
 ht-degree: 10%
@@ -16,7 +16,7 @@ ht-degree: 10%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_components_filters_createaudience"
+>id="components_filters_createaudience"
 >title="Erstellen einer Zielgruppe"
 >abstract="Zielgruppen können mithilfe eines Filters erstellt und zur Aktivierung für Adobe Experience Platform freigegeben werden."
 
@@ -25,7 +25,7 @@ ht-degree: 10%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_components_filters_datapreview"
+>id="components_filters_datapreview"
 >title="Datenvorschau"
 >abstract="Vergleicht die Daten dieses Filters mit den Daten der Datenansicht. Der Prozentsatz der Vorschau basiert auf der Gesamtzahl der Daten in der Datenansicht aus den **letzten 90 Tagen**.<br><br/>Wenn die Vorschau nicht geladen wird, wird Ihre Verbindung möglicherweise noch aufgestockt."
 
@@ -158,7 +158,7 @@ Oder Sie könnten 52 Filter definieren: 50 Filter für die US-Bundesstaaten, ein
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_components_filters_attribution_repeating"
+>id="components_filters_attribution_repeating"
 >title="Wiederholend"
 >abstract="Umfasst Instanzen und persistierte Werte für die Dimension."
 
@@ -167,7 +167,7 @@ Oder Sie könnten 52 Filter definieren: 50 Filter für die US-Bundesstaaten, ein
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_components_filters_attribution_instance"
+>id="components_filters_attribution_instance"
 >title="Instanz"
 >abstract="Umfasst Instanzen und persistierte Werte für die Dimension."
 
@@ -176,7 +176,7 @@ Oder Sie könnten 52 Filter definieren: 50 Filter für die US-Bundesstaaten, ein
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_components_filters_attribution_nonrepeatinginstance"
+>id="components_filters_attribution_nonrepeatinginstance"
 >title="Nicht wiederholende Instanz"
 >abstract="Umfasst einzigartige (sich nicht wiederholende) Instanzen für die Dimension."
 

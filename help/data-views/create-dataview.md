@@ -5,7 +5,7 @@ exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: 60daea2b6c376c417a998a986c8fdfdff85decd9
+source-git-commit: e4e0c3cf2e865454837df6626c3b1b09f119f07f
 workflow-type: tm+mt
 source-wordcount: '1899'
 ht-degree: 100%
@@ -44,7 +44,7 @@ So konfigurieren Sie eine neue oder vorhandene Datenansicht:
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_dataview_externalid"
+>id="dataview_externalid"
 >title="Externe ID"
 >abstract="Das Ändern der externen ID kann sich darauf auswirken, wie der Name der Datenansicht in externen Quellen angezeigt wird, z. B. in Business-Intelligence-Tools."
 
@@ -66,7 +66,7 @@ Stellt übergreifende Einstellungen für die Datenansicht bereit.
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_dataview_dataviewsinadobejourneyoptimizer"
+>id="dataview_dataviewsinadobejourneyoptimizer"
 >title="Datenansichten in Journey Optimizer"
 >abstract="Customer Journey Analytics muss eine Verbindung und eine Datenansicht verwenden, die mit Adobe Journey Optimizer kompatibel sind. Standardmäßig werden zu diesem Zweck automatisch eine Verbindung und eine Datenansicht erstellt.<br/>Alternativ kann diese Option aktiviert werden, um diese Datenansicht zur Standardansicht zu machen, die in der Adobe Journey Optimizer-Berichterstellung verwendet wird. Wenn diese Option aktiviert ist, werden alle notwendigen Komponenten, die für Journey Optimizer erforderlich sind, zu dieser Datenansicht hinzugefügt, und alle notwendigen Journey Optimizer-Datensätze werden zu der mit dieser Datenansicht verbundenen Verbindung hinzugefügt."
 >additional-url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/integrations/ajo#connection" text="Welche Komponenten und Datensätze hinzugefügt werden."

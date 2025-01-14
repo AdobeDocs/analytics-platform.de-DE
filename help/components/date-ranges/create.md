@@ -4,7 +4,7 @@ description: Datumsbereich zur Verwendung in Berichten erstellen.
 feature: Calendar
 exl-id: 3e4fa3cc-c14b-45e5-afbb-518ecfa0033e
 role: User
-source-git-commit: df0fd0af8a22c84705c3dea11065132359dd80ff
+source-git-commit: e4e0c3cf2e865454837df6626c3b1b09f119f07f
 workflow-type: tm+mt
 source-wordcount: '513'
 ht-degree: 39%
@@ -36,7 +36,7 @@ Um die Anmerkung zu definieren, verwenden Sie den [[!UICONTROL Datumsbereichsers
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_components_dateranges_endtime"
+>id="components_dateranges_endtime"
 >title="Endzeit"
 >abstract="Endzeiten umfassen immer 59 Sekunden."
 

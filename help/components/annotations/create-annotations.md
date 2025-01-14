@@ -4,7 +4,7 @@ description: Erstellen von Anmerkungen in Workspace.
 feature: Components
 exl-id: 68fef9b3-dc47-4e56-bea6-d1c4c39fb51b
 role: User, Admin
-source-git-commit: c56c77079aa21fb740fda6bec333731a1f82a48f
+source-git-commit: e4e0c3cf2e865454837df6626c3b1b09f119f07f
 workflow-type: tm+mt
 source-wordcount: '872'
 ht-degree: 100%
@@ -39,7 +39,7 @@ Verwenden Sie die Funktion zur [[!UICONTROL Anmerkungserstellung]](#annotation-b
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_components_annotations_details"
+>id="components_annotations_details"
 >title="Anmerkungsdetails"
 >abstract="Mit Anmerkungen können Sie Ihrer Organisation kontextbezogene Datennuancen und Einblicke effektiv übermitteln. Durch sie können Sie Kalenderereignisse an bestimmte Dimensionen/Metriken binden. "
 
@@ -48,7 +48,7 @@ Verwenden Sie die Funktion zur [[!UICONTROL Anmerkungserstellung]](#annotation-b
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_components_annotations_scope"
+>id="components_annotations_scope"
 >title="Anwendungsbereich"
 >abstract="Mit der Option „Umfang“ können Sie anpassen, welche Daten mit einer Anmerkung versehen werden. Berechnete Metriken und Segmente übernehmen nicht automatisch Anmerkungen, die auf die in ihren Definitionen verwendeten Komponenten angewendet werden. Sie können zu einer vorhandenen Anmerkung im Abschnitt „Umfang“ neue berechnete Metriken hinzufügen. Neue Segmente erfordern eine neue Anmerkung."
 

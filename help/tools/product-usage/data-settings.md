@@ -2,10 +2,10 @@
 title: Einstellungen für Produktnutzungsdaten
 description: Produktnutzungseinstellungen aktivieren, deaktivieren oder konfigurieren.
 exl-id: 85e2b515-78e6-41e8-9947-369b1e65e4fd
-source-git-commit: daa07b603caa613ca49b61c2e8e461d558459f57
+source-git-commit: e4e0c3cf2e865454837df6626c3b1b09f119f07f
 workflow-type: tm+mt
-source-wordcount: '318'
-ht-degree: 14%
+source-wordcount: '356'
+ht-degree: 23%
 
 ---
 
@@ -33,5 +33,15 @@ Folgende Einstellungen sind auf dieser Seite verfügbar:
 
 >[!CONTEXTUALHELP]
 >id="cja_product_usage_data_retention"
+>title="Überschreiben des Datenspeicherungsfensters"
+>abstract="Verkürzen Sie die Verfügbarkeit von Produktnutzungsdaten, um Kosten zu reduzieren oder Datenschutzrichtlinien einzuhalten."
+
+>[!CONTEXTUALHELP]
+>id="product_usage_sandbox"
+>title="Adobe Experience Platform-Sandbox"
+>abstract="Bestimmt die Adobe Experience Platform-Sandbox, unter der das Schema und der Datensatz erstellt werden."
+
+>[!CONTEXTUALHELP]
+>id="product_usage_data_retention"
 >title="Überschreiben des Datenspeicherungsfensters"
 >abstract="Verkürzen Sie die Verfügbarkeit von Produktnutzungsdaten, um Kosten zu reduzieren oder Datenschutzrichtlinien einzuhalten."

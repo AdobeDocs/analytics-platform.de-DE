@@ -7,10 +7,10 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: 83927cf0-b3b4-42b4-9ca5-0c81c091383f
-source-git-commit: daa07b603caa613ca49b61c2e8e461d558459f57
+source-git-commit: e4e0c3cf2e865454837df6626c3b1b09f119f07f
 workflow-type: tm+mt
-source-wordcount: '645'
-ht-degree: 56%
+source-wordcount: '690'
+ht-degree: 58%
 
 ---
 
@@ -24,6 +24,15 @@ ht-degree: 56%
 
 >[!CONTEXTUALHELP]
 >id="cja_migrate_aa_to_websdk"
+>title="Migrieren der Analytics-Implementierung zur Web SDK-Verwendung"
+>abstract="Statt Daten über ein XDM-Objekt zu senden, können Sie alle Variablen im AppMeasurement-Format über das Datenobjekt senden. Mit diesem Schnellverfahren können Sie weiterhin Ihre AppMeasurement-Logik verwenden, um Daten an Platform zu senden."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="migrate_aa_to_websdk"
 >title="Migrieren der Analytics-Implementierung zur Web SDK-Verwendung"
 >abstract="Statt Daten über ein XDM-Objekt zu senden, können Sie alle Variablen im AppMeasurement-Format über das Datenobjekt senden. Mit diesem Schnellverfahren können Sie weiterhin Ihre AppMeasurement-Logik verwenden, um Daten an Platform zu senden."
 

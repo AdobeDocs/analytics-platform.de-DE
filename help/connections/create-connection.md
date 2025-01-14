@@ -5,10 +5,10 @@ exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: 3a0c6c22422ca7f8d4f954f3d9711c5c3501cc03
+source-git-commit: e4e0c3cf2e865454837df6626c3b1b09f119f07f
 workflow-type: tm+mt
-source-wordcount: '3769'
-ht-degree: 98%
+source-wordcount: '4260'
+ht-degree: 97%
 
 ---
 
@@ -68,6 +68,59 @@ ht-degree: 98%
 
 <!-- markdownlint-enable MD034 -->
 
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="connections_recordsadded"
+>title="Hinzugefügte Einträge"
+>abstract="Die Anzahl der Datensätze (Zeilen), die einer Verbindung im für die entsprechenden Datensätze ausgewählten Zeitintervall hinzugefügt wurden."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="connections_recordsskipped"
+>title="Übersprungene Einträge"
+>abstract="Die Anzahl der Datensätze (Zeilen), die bei der Datenübertragung für eine Verbindung im für die entsprechenden Datensätze ausgewählten Zeitintervall übersprungen werden."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="connections_recordsdeleted"
+>title="Gelöschte Einträge"
+>abstract="Die Anzahl der Datensätze (Zeilen), die im ausgewählten Zeitintervall für die ausgewählten Datensätze aus einer Verbindung entfernt wurden."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="connection_lastadded"
+>title="Zuletzt hinzugefügt"
+>abstract="Zeitstempel des letzten Batches aus einem beliebigen Datensatz, der an eine Verbindung übertragen wurde."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="connection_enablerollingdatawindow"
+>title="Rollierendes Datenfenster aktivieren"
+>abstract="Definieren Sie die Datenspeicherung als rollierendes Fenster in Monaten auf Verbindungsebene."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="connection_averagenumberofdailyuses"
+>title="Durchschnittliche Anzahl der täglichen Nutzung"
+>abstract="Wählen Sie einen Bereich für die Anzahl der erwarteten täglichen Ereignisse für die gesamte Verbindung."
+
+<!-- markdownlint-enable MD034 -->
 
 
 Beim Workflow für die Erstellung und Bearbeitung von Verbindungen können alle Einstellungen zur Datensatz- und Verbindungskonfiguration mit einem unterstützenden Workflow zentral auf dem Bildschirm durchgeführt werden. Er ermöglicht Ihnen eine präzise Auswahl, Konfiguration und Prüfung von Datensätzen. Außerdem können Sie wichtige Informationen angeben, z. B. Datensatztyp, Größe, Schema, Datensatz-ID, Batch-Status, Aufstockungsstatus, Personen-IDs und vieles mehr, um das Risiko einer falschen Verbindungskonfiguration zu verringern. Im Folgenden finden Sie einen Überblick über die Funktionen:
@@ -140,7 +193,6 @@ Wenden Sie sich an Ihre Admins, wenn Sie sich nicht sicher sind, welches Custome
 
 <!-- markdownlint-enable MD034 -->
 
-
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
@@ -167,6 +219,16 @@ Wenden Sie sich an Ihre Admins, wenn Sie sich nicht sicher sind, welches Custome
 >abstract="Wählen Sie eine Konto-ID (die eindeutige Kennung für ein Konto) aus den verfügbaren Identitäten aus, die im Datensatzschema in Experience Platform definiert sind."
 
 <!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_connection_accountField"
+>title="Konto-Feld"
+>abstract="Wählen Sie ein Feld aus, das die Konto-ID (die eindeutige Kennung für ein Konto) darstellt."
+
+<!-- markdownlint-enable MD034 -->
+
 
 <!-- markdownlint-disable MD034 -->
 
@@ -235,6 +297,121 @@ Wenden Sie sich an Ihre Admins, wenn Sie sich nicht sicher sind, welches Custome
 
 >[!CONTEXTUALHELP]
 >id="cja_connection_connectionmap"
+>title="Verbindungszuordnung"
+>abstract="Die Verbindungszuordnung visualisiert die Beziehungen zwischen Ereignis-, Personen-, Konto- und relevanten Lookup-Datensätzen (wie Opportunitys, Kampagnenmitgliedern und mehr)."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="connection_primaryID"
+>title="Primäre ID "
+>abstract="Wählen Sie die richtige primäre ID für Ihre Verbindung aus: „Person“ für ein B2C-Szenario. „Konto“ für ein B2B-Szenario."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="connection_optionalContainers"
+>title="Optionale Container"
+>abstract="Wählen Sie weitere Container aus.<br/><br/>**[!UICONTROL Globales Konto ]**: ermöglicht die Konfiguration globaler Konten in einer Verbindung.<br/>**[!UICONTROL Opportunity]**: ermöglicht die Konfiguration von Opportunities in einer Verbindung.<br/>**[!UICONTROL Käufergruppe ]**: ermöglicht die Konfiguration von Käufergruppen in einer Verbindung."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="connection_personID"
+>title="Personen-ID"
+>abstract="Wählen Sie eine Personen-ID aus den verfügbaren Identitäten aus, die im Datensatzschema in Experience Platform definiert sind."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="connection_accountID"
+>title="Konto-ID"
+>abstract="Wählen Sie eine Konto-ID (die eindeutige Kennung für ein Konto) aus den verfügbaren Identitäten aus, die im Datensatzschema in Experience Platform definiert sind."
+
+<!-- markdownlint-enable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="connection_accountField"
+>title="Konto-Feld"
+>abstract="Wählen Sie ein Feld aus, das die Konto-ID (die eindeutige Kennung für ein Konto) darstellt."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="connection_globalAccountID"
+>title="Globale Konto-ID"
+>abstract="Wählen Sie eine globale Konto-ID (die eindeutige Kennung für ein globales Konto) aus den verfügbaren Identitäten aus, die im Datensatzschema in Experience Platform definiert sind."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="connection_opportunityID"
+>title="Opportunity-ID"
+>abstract="Wählen Sie eine Opportunity-ID (die eindeutige Kennung für eine Opportunity) aus den verfügbaren Identitäten aus, die im Datensatzschema in Experience Platform definiert sind."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="connection_buyingGroupID"
+>title="Käufergruppen-ID"
+>abstract="Wählen Sie eine Käufergruppen-ID (die eindeutige Kennung für eine Käufergruppe) aus den verfügbaren Identitäten aus, die im Datensatzschema in Experience Platform definiert sind."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="connection_matchingkey"
+>title="Passender Schlüssel"
+>abstract="Wählen Sie, wie Sie teilnehmen möchten: basierend auf einem passenden Schlüssel oder einem passenden Container.<br/><br/>**[!UICONTROL Passender Schlüssel ]**: Wählen Sie ein Feld aus, das einem der Ereignisdatensätze hinzugefügt werden soll. Wenn diese Liste leer ist, haben Sie wahrscheinlich keinen Ereignisdatensatz hinzugefügt oder konfiguriert.<br/>**[!UICONTROL Passender Container]**: Wählen Sie einen Container aus, der verwendet werden soll, um mit einem der Ereignis-Datensätze zu verknüpfen. Wenn diese Liste leer ist, haben Sie wahrscheinlich keinen oder mehrere Container konfiguriert."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="connection_importnewdata"
+>title="Neue Daten importieren"
+>abstract="Alle neuen Batches, die dem Experience Platform-Datensatz hinzugefügt werden, werden automatisch in diese Verbindung aufgenommen und für die Analyse verfügbar gemacht."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="connection_datasetbackfill"
+>title="Aufstockung des Datensatzes"
+>abstract="Mit dieser Option werden die vorhandenen (historischen) Daten von Experience Platform für diesen Datensatz in der Verbindung aufgestockt."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="connection_transformdataset"
+>title="Datensatz transformieren"
+>abstract="Mit dieser Option wird der Datensatz so transformiert, dass er für personenbezogene Suchvorgänge in B2B-Szenarien verwendet werden kann. Sobald diese Option aktiviert ist, ist die Transformation des Datensatzes nicht mehr umkehrbar."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="connection_connectionmap"
 >title="Verbindungszuordnung"
 >abstract="Die Verbindungszuordnung visualisiert die Beziehungen zwischen Ereignis-, Personen-, Konto- und relevanten Lookup-Datensätzen (wie Opportunitys, Kampagnenmitgliedern und mehr)."
 

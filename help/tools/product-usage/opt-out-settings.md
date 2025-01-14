@@ -2,10 +2,10 @@
 title: Einstellungen für Produktnutzungs-Opt-out
 description: Verwalten Sie Opt-out-Einstellungen für einzelne Benutzer in Ihrer Organisation.
 exl-id: 0ea24582-bab8-4a76-ac00-7c265423e8bb
-source-git-commit: daa07b603caa613ca49b61c2e8e461d558459f57
+source-git-commit: e4e0c3cf2e865454837df6626c3b1b09f119f07f
 workflow-type: tm+mt
-source-wordcount: '213'
-ht-degree: 7%
+source-wordcount: '222'
+ht-degree: 11%
 
 ---
 
@@ -26,5 +26,10 @@ Adobe verwendet eine Kombination aus Client- und Server-seitigem Tracking, um Pr
 
 >[!CONTEXTUALHELP]
 >id="cja_product_usage_opt_out_settings"
+>title="Opt-out-Benutzende"
+>abstract="Schließen Sie Benutzende vom Produktnutzungs-Tracking aus."
+
+>[!CONTEXTUALHELP]
+>id="product_usage_opt_out_settings"
 >title="Opt-out-Benutzende"
 >abstract="Schließen Sie Benutzende vom Produktnutzungs-Tracking aus."

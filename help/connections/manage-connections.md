@@ -6,10 +6,10 @@ exl-id: 0a87518c-3608-44ad-b5e3-976f97560433
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: c5e5963e6dc4d97de012f825bbea4445cc72d622
+source-git-commit: e4e0c3cf2e865454837df6626c3b1b09f119f07f
 workflow-type: tm+mt
-source-wordcount: '3749'
-ht-degree: 20%
+source-wordcount: '4023'
+ht-degree: 24%
 
 ---
 
@@ -278,6 +278,82 @@ Wenn ein Datensatz in der Datensatztabelle ausgewählt ist, werden in einem Bedi
 >id="cja_connections_historicalreportablerows"
 >title="Berichtsfähige Zeilen zu historischen Daten"
 >abstract="Zeigt die Gesamtzahl der verfügbaren Zeilen für den Zeitraum an, der länger als 13 Monate zurückliegt. Beispielsweise zeigt die Zahl am 1. Februar 2024 die Gesamtzahl der verfügbaren Zeilen mit einem Ereignis-Zeitstempel an, der älter als Januar 2023 ist."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="connections_usage_keyusagemetrics"
+>title="Wichtige Nutzungsmetriken"
+>abstract="Stellen Sie berichtsfähige Zeilen zu Kern- und historischen Daten pro Monat und insgesamt bereit."
+<!-- markdownlint-enable MD034 -->
+
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="connections_usage_monthlyingestedrows"
+>title="Monatlich aufgenommene Zeilen"
+>abstract="Misst die Gesamtzahl der monatlich zum System hinzugefügten Datensätze, um Einblicke in das Datenwachstum und die Aufnahmeraten zu erhalten."
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="connections_usage_monthlyreportablerows"
+>title="Monatliche berichtsfähige Zeilen"
+>abstract="Verfolgt die Anzahl der für das Reporting verfügbaren Zeilen. Berichtsfähige Zeilen sind die aufgenommenen Zeilen abzüglich der Zeilen, die bei der Aufnahme übersprungen und gelöscht wurden. Berichtsfähige Zeilen dienen als Schlüsselmetrik für die Rechnungsstellung und Datennutzung."
+<!-- markdownlint-enable MD034 -->
+
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="connections_usage_detailbreakdown"
+>title="Detailaufschlüsselung."
+>abstract="Sie können detaillierte Metriken nach Verbindung, Datensatz, Sandbox und Tags mit der Option zum Herunterladen einer CSV-Datei der Daten anzeigen."
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="connections_usage_otherdatasets"
+>title="Andere Datensätze"
+>abstract="Für die Monate vor September 2024 wurden Daten auf Datensatzebene erfasst und der Klarheit halber als *Andere Datensätze* angezeigt. Seit September 2024 werden Daten auf einer granularen Datensatzebene erfasst und *andere Datensätze* werden nicht mehr angezeigt."
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="connections_usage_unknowndatasetsorconnections"
+>title="Unbekannte Datensätze oder Verbindungen"
+>abstract="Unbekannte Datensätze oder Verbindungen werden mit ihren IDs angezeigt."
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="connections_usage_datanotavailable"
+>title="Daten nicht verfügbar"
+>abstract="Historische Daten, die älter sind als September 2024, sind aufgrund von Systembeschränkungen nicht verfügbar. Metriken werden seit September 2024 erfasst und angezeigt. Das Diagramm zeigt die letzten 18 Monate auf der Timeline, und zukünftige Daten werden angezeigt, sobald die Daten verfügbar werden."
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="connections_corereportablerows"
+>title="Berichtsfähige Zeilen zu Kerndaten"
+>abstract="Zeigt die Gesamtzahl der für die letzten 13 Monate verfügbaren Zeilen an. Beispielsweise zeigt die Zahl am 1. Februar 2024 die Gesamtzahl der verfügbaren Zeilen mit einem Ereignis-Zeitstempel von Januar 2023 bis Januar 2024 an."
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="connections_historicalreportablerows"
+>title="Berichtsfähige Zeilen zu historischen Daten"
+>abstract="Zeigt die Gesamtzahl der verfügbaren Zeilen für den Zeitraum an, der länger als 13 Monate zurückliegt. Beispielsweise zeigt die Zahl am 1. Februar 2024 die Gesamtzahl der verfügbaren Zeilen mit einem Ereignis-Zeitstempel an, der älter als Januar 2023 ist."
+
 <!-- markdownlint-enable MD034 -->
 
 

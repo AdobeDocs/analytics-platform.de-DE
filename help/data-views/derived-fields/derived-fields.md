@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Derived Fields
 exl-id: bcd172b2-cd13-421a-92c6-e8c53fa95936
 role: Admin
-source-git-commit: 64df8670418524be8879aa6362bb8b7c229025b6
+source-git-commit: e4e0c3cf2e865454837df6626c3b1b09f119f07f
 workflow-type: tm+mt
 source-wordcount: '8841'
 ht-degree: 17%
@@ -17,7 +17,7 @@ ht-degree: 17%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_dataview_derivedfields"
+>id="dataview_derivedfields"
 >title="Abgeleitete Felder"
 >abstract="Mit einem abgeleiteten Feld können Sie mithilfe eines anpassbaren Regel-Builders spontan Datenmanipulationen definieren. Anschließend können Sie dieses abgeleitete Feld als Komponente (Metrik oder Dimension) in Workspace verwenden oder in der Datenansicht als Komponente weiter definieren."
 
@@ -430,7 +430,7 @@ Details zu jeder unterstützten Funktion finden Sie unten unter:
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_dataview_derivedfields_casewhen"
+>id="dataview_derivedfields_casewhen"
 >title="Fall wenn"
 >abstract="Diese Funktion bietet die Möglichkeit, Bedingungen anzuwenden, die auf definierten Kriterien aus einem oder mehreren Feldern basieren. Anhand dieser Kriterien werden dann die Werte im neuen abgeleiteten Feld auf Grundlage der Reihenfolge der Bedingungen definiert."
 
@@ -670,7 +670,7 @@ Die folgenden Einschränkungen gelten für und werden bei der Auswahl *Auswahl* 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_dataview_derivedfields_classify"
+>id="dataview_derivedfields_classify"
 >title="Klassifizieren"
 >abstract="Diese Funktion bietet die Möglichkeit, einen Satz von Werten zu definieren, die per Texteingabe durch entsprechende Werte ersetzt werden."
 
@@ -815,7 +815,7 @@ Die folgende zusätzliche Funktion ist in der Benutzeroberfläche „Regel klass
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_dataview_derivedfields_concatenate"
+>id="dataview_derivedfields_concatenate"
 >title="Verketten"
 >abstract="Diese Funktion bietet die Möglichkeit, zwei oder mehr Felder, abgeleitete Felder oder benutzerseitig eingegebene Zeichenfolgenwerte in einem Feld mit definierten Trennzeichen zu kombinieren."
 
@@ -902,7 +902,7 @@ Sie definieren ein `Origin - Destination` Feld. Mit der Funktion [!UICONTROL CON
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_dataview_derivedfields_deduplicate"
+>id="dataview_derivedfields_deduplicate"
 >title="Deduplizieren"
 >abstract="Diese Funktion bietet die Möglichkeit, ein Feld so zu konfigurieren, dass Werte nicht wiederholt auf Sitzungs- oder Personenebene gezählt werden. Darüber hinaus kann mit einer Deduplizierungs-ID sichergestellt werden, dass auf Grundlage einer bestimmten ID (z. B. einer Kauf-ID) nur ein Wert verwendet wird (entweder die erste oder die letzte Instanz)."
 
@@ -997,7 +997,7 @@ Sie definieren ein neues `Tracking Code (deduplicated)` abgeleitetes Feld. Mit d
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_dataview_derivedfields_findandreplace"
+>id="dataview_derivedfields_findandreplace"
 >title="Suchen und Ersetzen"
 >abstract="Diese Funktion bietet die Möglichkeit, alle Werte in einem ausgewählten Feld per Suche zu ermitteln und diese Werte in einem neuen abgeleiteten Feld durch einen anderen Wert zu ersetzen."
 
@@ -1077,7 +1077,7 @@ Sie definieren ein `Email Marketing (updated)` Feld. Mit der Funktion [!UICONTRO
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_dataview_derivedfields_lookup"
+>id="dataview_derivedfields_lookup"
 >title="Suche"
 >abstract="Diese Funktion bietet die Möglichkeit, Felder aus einem Lookup-Datensatz mit einem übereinstimmenden Schlüssel zwischen Datensätzen zu verwenden."
 
@@ -1138,7 +1138,7 @@ Sie können schnell eine [!UICONTROL Lookup]-Funktion in den Regel-Builder einf�
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_dataview_derivedfields_lowercase"
+>id="dataview_derivedfields_lowercase"
 >title="Kleinschreibung"
 >abstract="Diese Funktion wandel die gesamte Zeichenkette in Kleinschreibung um."
 
@@ -1199,7 +1199,7 @@ Sie definieren ein `Product Names` Feld. Mit der Funktion [!UICONTROL LOWERCASE]
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_dataview_derivedfields_math"
+>id="dataview_derivedfields_math"
 >title="Math"
 >abstract="Diese Funktion bietet die Möglichkeit, mathematische Operationen für ein Feld durchzuführen. Mit ihr lassen sich grundlegende Rechenoperationen wie Addition, Subtraktion, Multiplikation und Division ausführen."
 
@@ -1290,7 +1290,7 @@ Verwenden Sie die mathematische Funktion für Berechnungen auf Trefferebene. Ver
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_dataview_derivedfields_mergefields"
+>id="dataview_derivedfields_mergefields"
 >title="Felder zusammenführen"
 >abstract="Diese Funktion bietet die Möglichkeit, Werte aus zwei verschiedenen Feldern in einer einzigen Dimension einzuschließen. Mithilfe der ersten Regel wird zunächst überprüft, ob der erste Wert festgelegt ist. Wenn nicht, wird der zweite Wert verwendet usw."
 
@@ -1366,7 +1366,7 @@ Sie müssen denselben Feldtyp in einer Regel vom Typ Felder zusammenführen ausw
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_dataview_derivedfields_nextprevious"
+>id="dataview_derivedfields_nextprevious"
 >title="Weiter oder zurück"
 >abstract="Diese Funktion bietet die Möglichkeit, den nächsten bzw. vorherigen Wert anzuzeigen, der für ein bestimmtes Feld erfasst wurde."
 
@@ -1448,7 +1448,7 @@ Sie können nur Felder auswählen, die zur Besuchs- oder Ereignistabelle gehöre
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_dataview_derivedfields_regexreplace"
+>id="dataview_derivedfields_regexreplace"
 >title="Regulären Ausdruck ersetzen"
 >abstract="Diese Funktion bietet die Möglichkeit, Teile einer Zeichenfolge mithilfe regulärer Ausdrücke zu extrahieren."
 
@@ -1555,7 +1555,7 @@ Sie können diese Sequenzen im [!UICONTROL Ausgabeformat] beliebig oft und in be
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_dataview_derivedfields_split"
+>id="dataview_derivedfields_split"
 >title="Split"
 >abstract="Diese Funktion bietet die Möglichkeit, ein Feld mithilfe eines Trennzeichens in mehrere Felder aufzuspalten."
 
@@ -1657,7 +1657,7 @@ Sie erstellen ein `Second Response` abgeleitetes Feld, um den letzten Wert aus d
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_dataview_derivedfields_summarize"
+>id="dataview_derivedfields_summarize"
 >title="Zusammenfassen"
 >abstract="Diese Funktion bietet die Möglichkeit, Werte auf Ereignis-, Sitzungs- oder Personenebene zu aggregieren. Je nach Feldtyp für das Auswahlfeld stehen verschiedene Optionen zur Verfügung."
 
@@ -1735,7 +1735,7 @@ Verwenden Sie die Zusammenfassungsfunktion für Berechnungen, die auf Ereignisse
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_dataview_derivedfields_trim"
+>id="dataview_derivedfields_trim"
 >title="Zuschneiden"
 >abstract="Diese Funktion bietet die Möglichkeit, Leer- oder Sonderzeichen entweder am Anfang oder am Ende einer Zeichenfolge zu entfernen. Außerdem kann die Anzahl der Zeichen angegeben werden, die für den zurückgegebenen Wert verwendet werden sollen (entweder vom Anfang oder vom Ende der Zeichenfolge aus gesehen)."
 
@@ -1857,7 +1857,7 @@ Sie erstellen ein `Store Identifier` Feld. Mit der Funktion [!UICONTROL TRIM] de
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_dataview_derivedfields_urlparse"
+>id="dataview_derivedfields_urlparse"
 >title="URL parsen"
 >abstract="Diese Funktion bietet die Möglichkeit, verschiedene Teile einer URL, einschließlich Host-, Pfad- oder Abfrageparameter, auszuparsen."
 
