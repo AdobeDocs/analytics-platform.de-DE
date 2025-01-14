@@ -4,14 +4,77 @@ title: Intelligente Beschriftungen
 feature: Visualizations
 exl-id: d32d3cda-ecbf-4ee7-a8b7-7c3c71b5df75
 role: User
-source-git-commit: c65efad313df660467f5738d3fcbbb327060a502
+source-git-commit: de0eca21fa1b4ac71a8273676e851b596cf911a8
 workflow-type: tm+mt
-source-wordcount: '630'
-ht-degree: 5%
+source-wordcount: '771'
+ht-degree: 20%
 
 ---
 
-# Intelligente Beschriftungen
+# Intelligente Beschriftungen {#intelligent-captions}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="workspace_intelligentcaptions_area"
+>title="Intelligente Beschriftungen: Bereich"
+>abstract="Es können Erkenntnisse in natürlicher Sprache generiert werden, um Daten für diese Visualisierung leichter verstehen und interpretieren zu können."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="workspace_intelligentcaptions_bar"
+>title="Intelligente Beschriftungen: Leiste"
+>abstract="Es können Erkenntnisse in natürlicher Sprache generiert werden, um Daten für diese Visualisierung leichter verstehen und interpretieren zu können."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="workspace_intelligentcaptions_donut"
+>title="Intelligente Beschriftungen: Ringdiagramm"
+>abstract="Es können Erkenntnisse in natürlicher Sprache generiert werden, um Daten für diese Visualisierung leichter verstehen und interpretieren zu können."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="workspace_intelligentcaptions_horizontalbar"
+>title="Intelligente Beschriftungen: Horizontaler Balken"
+>abstract="Es können Erkenntnisse in natürlicher Sprache generiert werden, um Daten für diese Visualisierung leichter verstehen und interpretieren zu können."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="workspace_intelligentcaptions_line"
+>title="Intelligente Beschriftungen: Zeile"
+>abstract="Es können Erkenntnisse in natürlicher Sprache generiert werden, um Daten für diese Visualisierung leichter verstehen und interpretieren zu können."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="workspace_intelligentcaptions_fallout"
+>title="Intelligente Beschriftungen: Fallout"
+>abstract="Es können Erkenntnisse in natürlicher Sprache generiert werden, um Daten für diese Visualisierung leichter verstehen und interpretieren zu können."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="workspace_intelligentcaptions_flow"
+>title="Intelligente Beschriftungen: Fluss"
+>abstract="Es können Erkenntnisse in natürlicher Sprache generiert werden, um Daten für diese Visualisierung leichter verstehen und interpretieren zu können."
+
+<!-- markdownlint-enable MD034 -->
 
 Intelligente Untertitel verwenden fortschrittliches maschinelles Lernen und generative KI, um wertvolle Einblicke in natürliche Sprachen für Workspace-Visualisierungen bereitzustellen. Die erste Version bietet automatisch generierte Einblicke für die [-](line.md). Weitere Visualisierungen folgen.
 
