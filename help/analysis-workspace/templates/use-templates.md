@@ -3,12 +3,10 @@ description: Eine Übersicht über die Verwendung von Standardvorlagen in Analys
 title: Verwenden von Vorlagen
 feature: Workspace Basics
 role: User, Admin
-hide: true
-hidefromtoc: true
 exl-id: d61f215d-9089-4014-9c5a-97f5d7134f34
-source-git-commit: e4e0c3cf2e865454837df6626c3b1b09f119f07f
+source-git-commit: c5c05e17ad3b3e2bbf643d47bd58cde5ac2de0cb
 workflow-type: tm+mt
-source-wordcount: '19285'
+source-wordcount: '19294'
 ht-degree: 73%
 
 ---
@@ -65,7 +63,9 @@ Die folgenden Informationen beschreiben, wie Sie in Analysis Workspace auf Vorla
 
    >[!NOTE]
    >
-   >   Bevor Sie diese Vorlagen verwenden können, muss ein Administrator zunächst die erforderlichen Kontextbeschriftungen für diese fehlenden Komponenten zur Datenansicht hinzufügen. Weitere Informationen finden Sie unter [Hinzufügen fehlender Komponenten zur Datenansicht für eine bestimmte Vorlage](/help/analysis-workspace/templates/create-templates.md#add-missing-components-to-the-data-view-for-a-given-template) unter [Verwenden von Vorlagen](/help/analysis-workspace/templates/create-templates.md).
+   >Bevor Sie diese Vorlagen verwenden können, muss ein Administrator zunächst die erforderlichen Kontextbeschriftungen für diese fehlenden Komponenten zur Datenansicht hinzufügen. Weitere Informationen finden Sie unter [Hinzufügen fehlender Komponenten zur Datenansicht für eine bestimmte Vorlage](/help/analysis-workspace/templates/create-templates.md#add-missing-components-to-the-data-view-for-a-given-template) unter [Verwenden von Vorlagen](/help/analysis-workspace/templates/create-templates.md).
+   >
+   >Weitere Informationen zu Kontextbeschriftungen finden Sie unter [Komponenteneinstellungen](/help/data-views/component-settings/overview.md).
 
    1. Wählen Sie das Filtersymbol aus.
 
