@@ -7,7 +7,7 @@ exl-id: be03c3b2-8faf-47b8-b3ab-e953202bf488
 source-git-commit: ca76f5ff27f11ccd1963709b57cc1bdf5fa7dbbe
 workflow-type: tm+mt
 source-wordcount: '1861'
-ht-degree: 1%
+ht-degree: 12%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 1%
 >[!CONTEXTUALHELP]
 >id="cja_journeycanvas_button"
 >title="Journey-Arbeitsfläche"
->abstract="Zeigt, wie Personen eine Reihe von Touchpoints durchlaufen oder aus ihr herausfallen. Verwenden Sie für Journey mit mehreren Einstiegspunkten und Pfaden oder zum Analysieren von in Journey Optimizer erstellten Journey."
+>abstract="Zeigt, wie Personen eine Reihe von Touchpoints durchlaufen oder aus ihr aussteigen. Zur Verwendung für Journeys mit mehreren Einstiegspunkten und Pfaden oder zum Analysieren von in Journey Optimizer erstellten Journeys."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -27,7 +27,7 @@ ht-degree: 1%
 >[!CONTEXTUALHELP]
 >id="cja_journeycanvas_panel"
 >title="Journey-Arbeitsfläche"
->abstract="Analysieren, wie Personen eine definierte Journey durchlaufen oder aus ihr herausfallen. Erstellen Sie Analysen von Benutzerknoten, indem Sie ein flexibles Journey-Diagramm erstellen, das eine beliebige Ereigniskombination, Dimensionselemente und Filter darstellt. Ziehen Sie Knoten auf die Arbeitsfläche, um die Ereignisse und Bedingungen des Journey neu anzuordnen. Entsprechend werden die Daten aktualisiert. <br/><br/>Kunden mit Zugriff auf Adobe Journey Optimizer können bestehende Journey Optimizer-Journey analysieren"
+>abstract="Analysieren Sie, wie Personen eine definierte Journey durchlaufen oder aus ihr aussteigen. Erstellen Sie Analysen von Benutzer-Journeys, indem Sie ein flexibles Diagramm mit Knoten und Pfeilen erstellen, die eine beliebige Kombination von Ereignissen, Dimensionselementen und Filtern darstellen. Sie können Knoten auf der Arbeitsfläche ziehen, um die Ereignisse und Bedingungen der Journey neu anzuordnen. Die Daten werden dabei entsprechend aktualisiert. <br/><br/>Kundinnen und Kunden mit Zugriff auf Adobe Journey Optimizer können vorhandene Journey Optimizer-Journeys analysieren"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -36,7 +36,7 @@ ht-degree: 1%
 >[!CONTEXTUALHELP]
 >id="journeycanvas_button"
 >title="Journey-Arbeitsfläche"
->abstract="Zeigt, wie Personen eine Reihe von Touchpoints durchlaufen oder aus ihr herausfallen. Verwenden Sie für Journey mit mehreren Einstiegspunkten und Pfaden oder zum Analysieren von in Journey Optimizer erstellten Journey."
+>abstract="Zeigt, wie Personen eine Reihe von Touchpoints durchlaufen oder aus ihr aussteigen. Zur Verwendung für Journeys mit mehreren Einstiegspunkten und Pfaden oder zum Analysieren von in Journey Optimizer erstellten Journeys."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -45,7 +45,7 @@ ht-degree: 1%
 >[!CONTEXTUALHELP]
 >id="journeycanvas_panel"
 >title="Journey-Arbeitsfläche"
->abstract="Analysieren, wie Personen eine definierte Journey durchlaufen oder aus ihr herausfallen. Erstellen Sie Analysen von Benutzerknoten, indem Sie ein flexibles Journey-Diagramm erstellen, das eine beliebige Ereigniskombination, Dimensionselemente und Filter darstellt. Ziehen Sie Knoten auf die Arbeitsfläche, um die Ereignisse und Bedingungen des Journey neu anzuordnen. Entsprechend werden die Daten aktualisiert. <br/><br/>Kunden mit Zugriff auf Adobe Journey Optimizer können bestehende Journey Optimizer-Journey analysieren"
+>abstract="Analysieren Sie, wie Personen eine definierte Journey durchlaufen oder aus ihr aussteigen. Erstellen Sie Analysen von Benutzer-Journeys, indem Sie ein flexibles Diagramm mit Knoten und Pfeilen erstellen, die eine beliebige Kombination von Ereignissen, Dimensionselementen und Filtern darstellen. Sie können Knoten auf der Arbeitsfläche ziehen, um die Ereignisse und Bedingungen der Journey neu anzuordnen. Die Daten werden dabei entsprechend aktualisiert. <br/><br/>Kundinnen und Kunden mit Zugriff auf Adobe Journey Optimizer können vorhandene Journey Optimizer-Journeys analysieren"
 
 <!-- markdownlint-enable MD034 -->
 
