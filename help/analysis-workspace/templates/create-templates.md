@@ -4,9 +4,9 @@ title: Verwenden von Vorlagen
 feature: Workspace Basics
 role: User, Admin
 exl-id: 23cdf02f-56a1-4465-ae7f-b3a1bcad28af
-source-git-commit: c5c05e17ad3b3e2bbf643d47bd58cde5ac2de0cb
+source-git-commit: 198d2670b2008cb669433753d5bfedd90f71c220
 workflow-type: tm+mt
-source-wordcount: '1599'
+source-wordcount: '1630'
 ht-degree: 2%
 
 ---
@@ -191,3 +191,10 @@ Hinzufügen fehlender Komponenten zu einer Vorlage:
 Wie bei Vorlagen, die vom Adobe bereitgestellt werden, können Benutzende in der Organisation auf Vorlagen zugreifen, die Administratoren erstellen.
 
 Informationen zum Zugriff auf eine Unternehmensvorlage finden Sie unter [Zugriff auf und Ausführen einer Vorlage](/help/analysis-workspace/templates/use-templates.md#access-and-run-a-template) unter [Verwenden von Vorlagen](/help/analysis-workspace/templates/use-templates.md).
+
+## Ausblenden der Registerkarte Vorlagen
+
+Admins können die Registerkarte Vorlagen für alle Benutzenden in ihrer Organisation ausblenden.
+
+1. Wechseln Sie zu **[!UICONTROL Customer Journey Analytics]** > **[!UICONTROL Komponenten]** > **[!UICONTROL Voreinstellungen]** > **[!UICONTROL Firma]**.
+1. Wählen Sie die Option **[!UICONTROL Registerkarte Vorlagen ausblenden]** aus.
