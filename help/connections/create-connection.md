@@ -5,7 +5,7 @@ exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: e4e0c3cf2e865454837df6626c3b1b09f119f07f
+source-git-commit: a530738bb02888d637e5ff4edaa1aa2535a9034c
 workflow-type: tm+mt
 source-wordcount: '4260'
 ht-degree: 97%
@@ -187,7 +187,7 @@ Wenden Sie sich an Ihre Admins, wenn Sie sich nicht sicher sind, welches Custome
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_connection_primaryID"
+>id="cja_connection_primaryid"
 >title="Primäre ID "
 >abstract="Wählen Sie die richtige primäre ID für Ihre Verbindung aus: „Person“ für ein B2C-Szenario. „Konto“ für ein B2B-Szenario."
 
@@ -196,7 +196,7 @@ Wenden Sie sich an Ihre Admins, wenn Sie sich nicht sicher sind, welches Custome
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_connection_optionalContainers"
+>id="cja_connection_optionalcontainers"
 >title="Optionale Container"
 >abstract="Wählen Sie weitere Container aus.<br/><br/>**[!UICONTROL Globales Konto ]**: ermöglicht die Konfiguration globaler Konten in einer Verbindung.<br/>**[!UICONTROL Opportunity]**: ermöglicht die Konfiguration von Opportunities in einer Verbindung.<br/>**[!UICONTROL Käufergruppe ]**: ermöglicht die Konfiguration von Käufergruppen in einer Verbindung."
 
@@ -205,7 +205,7 @@ Wenden Sie sich an Ihre Admins, wenn Sie sich nicht sicher sind, welches Custome
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_connection_personID"
+>id="cja_connection_personid"
 >title="Personen-ID"
 >abstract="Wählen Sie eine Personen-ID aus den verfügbaren Identitäten aus, die im Datensatzschema in Experience Platform definiert sind."
 
@@ -214,7 +214,7 @@ Wenden Sie sich an Ihre Admins, wenn Sie sich nicht sicher sind, welches Custome
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_connection_accountID"
+>id="cja_connection_accountid"
 >title="Konto-ID"
 >abstract="Wählen Sie eine Konto-ID (die eindeutige Kennung für ein Konto) aus den verfügbaren Identitäten aus, die im Datensatzschema in Experience Platform definiert sind."
 
@@ -223,7 +223,7 @@ Wenden Sie sich an Ihre Admins, wenn Sie sich nicht sicher sind, welches Custome
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_connection_accountField"
+>id="cja_connection_accountfield"
 >title="Konto-Feld"
 >abstract="Wählen Sie ein Feld aus, das die Konto-ID (die eindeutige Kennung für ein Konto) darstellt."
 
@@ -233,7 +233,7 @@ Wenden Sie sich an Ihre Admins, wenn Sie sich nicht sicher sind, welches Custome
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_connection_globalAccountID"
+>id="cja_connection_globalaccountid"
 >title="Globale Konto-ID"
 >abstract="Wählen Sie eine globale Konto-ID (die eindeutige Kennung für ein globales Konto) aus den verfügbaren Identitäten aus, die im Datensatzschema in Experience Platform definiert sind."
 
@@ -242,7 +242,7 @@ Wenden Sie sich an Ihre Admins, wenn Sie sich nicht sicher sind, welches Custome
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_connection_opportunityID"
+>id="cja_connection_opportunityid"
 >title="Opportunity-ID"
 >abstract="Wählen Sie eine Opportunity-ID (die eindeutige Kennung für eine Opportunity) aus den verfügbaren Identitäten aus, die im Datensatzschema in Experience Platform definiert sind."
 
@@ -251,7 +251,7 @@ Wenden Sie sich an Ihre Admins, wenn Sie sich nicht sicher sind, welches Custome
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_connection_buyingGroupID"
+>id="cja_connection_buyinggroupid"
 >title="Käufergruppen-ID"
 >abstract="Wählen Sie eine Käufergruppen-ID (die eindeutige Kennung für eine Käufergruppe) aus den verfügbaren Identitäten aus, die im Datensatzschema in Experience Platform definiert sind."
 
@@ -305,7 +305,7 @@ Wenden Sie sich an Ihre Admins, wenn Sie sich nicht sicher sind, welches Custome
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="connection_primaryID"
+>id="connection_primaryid"
 >title="Primäre ID "
 >abstract="Wählen Sie die richtige primäre ID für Ihre Verbindung aus: „Person“ für ein B2C-Szenario. „Konto“ für ein B2B-Szenario."
 
@@ -314,7 +314,7 @@ Wenden Sie sich an Ihre Admins, wenn Sie sich nicht sicher sind, welches Custome
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="connection_optionalContainers"
+>id="connection_optionalcontainers"
 >title="Optionale Container"
 >abstract="Wählen Sie weitere Container aus.<br/><br/>**[!UICONTROL Globales Konto ]**: ermöglicht die Konfiguration globaler Konten in einer Verbindung.<br/>**[!UICONTROL Opportunity]**: ermöglicht die Konfiguration von Opportunities in einer Verbindung.<br/>**[!UICONTROL Käufergruppe ]**: ermöglicht die Konfiguration von Käufergruppen in einer Verbindung."
 
@@ -323,7 +323,7 @@ Wenden Sie sich an Ihre Admins, wenn Sie sich nicht sicher sind, welches Custome
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="connection_personID"
+>id="connection_personid"
 >title="Personen-ID"
 >abstract="Wählen Sie eine Personen-ID aus den verfügbaren Identitäten aus, die im Datensatzschema in Experience Platform definiert sind."
 
@@ -332,14 +332,14 @@ Wenden Sie sich an Ihre Admins, wenn Sie sich nicht sicher sind, welches Custome
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="connection_accountID"
+>id="connection_accountid"
 >title="Konto-ID"
 >abstract="Wählen Sie eine Konto-ID (die eindeutige Kennung für ein Konto) aus den verfügbaren Identitäten aus, die im Datensatzschema in Experience Platform definiert sind."
 
 <!-- markdownlint-enable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="connection_accountField"
+>id="connection_accountfield"
 >title="Konto-Feld"
 >abstract="Wählen Sie ein Feld aus, das die Konto-ID (die eindeutige Kennung für ein Konto) darstellt."
 
@@ -348,7 +348,7 @@ Wenden Sie sich an Ihre Admins, wenn Sie sich nicht sicher sind, welches Custome
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="connection_globalAccountID"
+>id="connection_globalaccountid"
 >title="Globale Konto-ID"
 >abstract="Wählen Sie eine globale Konto-ID (die eindeutige Kennung für ein globales Konto) aus den verfügbaren Identitäten aus, die im Datensatzschema in Experience Platform definiert sind."
 
@@ -357,7 +357,7 @@ Wenden Sie sich an Ihre Admins, wenn Sie sich nicht sicher sind, welches Custome
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="connection_opportunityID"
+>id="connection_opportunityid"
 >title="Opportunity-ID"
 >abstract="Wählen Sie eine Opportunity-ID (die eindeutige Kennung für eine Opportunity) aus den verfügbaren Identitäten aus, die im Datensatzschema in Experience Platform definiert sind."
 
@@ -366,7 +366,7 @@ Wenden Sie sich an Ihre Admins, wenn Sie sich nicht sicher sind, welches Custome
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="connection_buyingGroupID"
+>id="connection_buyinggroupid"
 >title="Käufergruppen-ID"
 >abstract="Wählen Sie eine Käufergruppen-ID (die eindeutige Kennung für eine Käufergruppe) aus den verfügbaren Identitäten aus, die im Datensatzschema in Experience Platform definiert sind."
 
