@@ -4,7 +4,7 @@ title: Übersicht über Bedienfelder
 feature: Panels
 exl-id: be3e34a0-06c1-4200-b965-96084c2912fd
 role: User
-source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
+source-git-commit: 450d47a2baa43340f4cb9740f9703fb396b6e3e2
 workflow-type: tm+mt
 source-wordcount: '2126'
 ht-degree: 100%
@@ -155,7 +155,7 @@ Weitere Informationen finden Sie unter [Schnellfilter](/help/components/filters/
 
 +++ Sehen Sie sich ein Video an, in dem Dropdown-Filter erläutert werden.
 
->[!VIDEO](https://video.tv.adobe.com/v/23877?format=jpeg)
+>[!VIDEO](https://video.tv.adobe.com/v/23877?quality=12&learn=on)
 
 {{videoaa}}
 
