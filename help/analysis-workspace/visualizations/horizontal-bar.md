@@ -4,9 +4,9 @@ title: Horizontalbalken und Horizontalbalken gestapelt
 feature: Visualizations
 exl-id: 4d982430-5d43-482a-ab4e-ab1fc3616f0c
 role: User
-source-git-commit: c7cdeb29729af35d7554b19e395047b364f0b547
+source-git-commit: f8abf388e0cb1e2e2eb9ff69fed2c542a26dcd66
 workflow-type: tm+mt
-source-wordcount: '191'
+source-wordcount: '193'
 ht-degree: 31%
 
 ---
@@ -29,7 +29,7 @@ Die horizontale Balkenvisualisierung hat eine standardmäßige und eine gestapel
 
 >[!BEGINSHADEBOX]
 
-*In diesem Artikel werden die Visualisierungen „Horizontalbalken“ und „Horizontalbalken gestapelt“ in **Customer Journey Analytics.**. Siehe [Horizontalbalken und Horizontalbalken gestapelt](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/horizontal-bar) für die **Adobe Analytics**-Version dieses Artikels.*
+*In diesem Artikel werden die Visualisierungen „Horizontalbalken“ und „Horizontalbalken gestapelt“ in ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg)**Customer Journey Analytics.**.<br/>Siehe [Horizontalbalken und Horizontalbalken gestapelt](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/horizontal-bar) für die Version ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg)**Adobe Analytics**dieses Artikels.*
 
 >[!ENDSHADEBOX]
 

@@ -4,9 +4,9 @@ title: Experimentier-Bedienfeld
 feature: Panels
 exl-id: e11169b4-2c73-4dd4-bca7-c26189d60631
 role: User
-source-git-commit: c7cdeb29729af35d7554b19e395047b364f0b547
+source-git-commit: f8abf388e0cb1e2e2eb9ff69fed2c542a26dcd66
 workflow-type: tm+mt
-source-wordcount: '2174'
+source-wordcount: '2176'
 ht-degree: 20%
 
 ---
@@ -34,7 +34,7 @@ ht-degree: 20%
 
 >[!BEGINSHADEBOX]
 
-*In diesem Artikel wird das Bedienfeld „Experimentieren“ in **Customer Journey Analytics.**. Informationen [ Analytics for Target](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/panels/a4t-panel) finden Sie unter Analytics for Target-Bedienfeld **Analysieren von Adobe Target-Aktivitäten und -Erlebnissen in**Adobe Analytics*
+*In diesem Artikel wird das Bedienfeld „Experimentieren“ in ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg)**Customer Journey Analytics**dokumentiert.<br/>Informationen zum Analysieren von Adobe Target-Aktivitäten und -Erlebnissen in [Adobe Analytics](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/panels/a4t-panel) {5![](/help/assets/icons/AdobeAnalytics.svg) Adobe Analytics} finden Sie unter *****
 
 >[!ENDSHADEBOX]
 
