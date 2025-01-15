@@ -4,10 +4,10 @@ title: Sammelnummer und Sammeländerung
 feature: Visualizations
 exl-id: 8872fc58-0957-415d-9958-ce564612ce87
 role: User
-source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
+source-git-commit: c7cdeb29729af35d7554b19e395047b364f0b547
 workflow-type: tm+mt
-source-wordcount: '467'
-ht-degree: 51%
+source-wordcount: '496'
+ht-degree: 48%
 
 ---
 
@@ -23,6 +23,14 @@ ht-degree: 51%
 >abstract="Erstellen Sie eine Visualisierung, die die Summen und Zwischensummen anzeigt."
 
 <!-- markdownlint-enable MD034 -->
+
+
+>[!BEGINSHADEBOX]
+
+*In diesem Artikel werden die Visualisierung der Zusammenfassungsnummer und der Zusammenfassungsänderung in **Customer Journey Analytics.**. Siehe [Zusammenfassungsnummer und Zusammenfassungsänderung](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/summary-number-change) für die **Adobe Analytics**-Version dieses Artikels.*
+
+>[!ENDSHADEBOX]
+
 
 Verwenden Sie die Visualisierung ![Zusammenfassen](/help/assets/icons/123.svg) **[!UICONTROL Zusammenfassungsnummer]**, um eine große Zahl hervorzuheben, die in einem Projekt wichtig ist. Diese Visualisierung verhält sich mithilfe der zugehörigen Datenquelle wie folgt:
 

@@ -4,10 +4,10 @@ title: Venn
 feature: Visualizations
 exl-id: a0162164-a0cf-45b9-99b6-2a115e9a4e57
 role: User
-source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
+source-git-commit: c7cdeb29729af35d7554b19e395047b364f0b547
 workflow-type: tm+mt
-source-wordcount: '136'
-ht-degree: 30%
+source-wordcount: '157'
+ht-degree: 26%
 
 ---
 
@@ -21,6 +21,13 @@ ht-degree: 30%
 >abstract="Erstellen Sie eine Visualisierung eines Venn-Diagramms, um schnell zwei Elemente und die Größe ihrer Überschneidung visuell zu vergleichen."
 
 <!-- markdownlint-enable MD034 -->
+
+
+>[!BEGINSHADEBOX]
+
+*In diesem Artikel wird die Venn-Visualisierung in **Customer Journey Analytics.**. Siehe [Venn](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/venn) für die **Adobe Analytics**-Version dieses Artikels.*
+
+>[!ENDSHADEBOX]
 
 
 Bei der Visualisierung ![Typ](/help/assets/icons/TwoDots.svg) **[!UICONTROL Venn]** können Sie bis zu drei Filter und eine Metrik (aus dem Bedienfeld „Komponenten„) einfügen, um ein Venn-Diagramm zu erstellen.

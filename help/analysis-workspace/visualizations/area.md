@@ -4,14 +4,14 @@ title: Bereich und Bereich gestapelt
 feature: Visualizations
 exl-id: d9662b29-fc41-4074-8cf6-031202994ece
 role: User
-source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
+source-git-commit: c7cdeb29729af35d7554b19e395047b364f0b547
 workflow-type: tm+mt
-source-wordcount: '168'
-ht-degree: 32%
+source-wordcount: '193'
+ht-degree: 27%
 
 ---
 
-# Bereich und Bereich gestapelt
+# Bereich (gestapelt)
 
 ## Bereich {#area}
 
@@ -23,6 +23,13 @@ ht-degree: 32%
 >abstract="Erstellen Sie eine Flächendiagrammvisualisierung, um die Schnittmenge mehrerer Metriken darzustellen."
 
 <!-- markdownlint-enable MD034 -->
+
+
+>[!BEGINSHADEBOX]
+
+*In diesem Artikel werden die Visualisierungen „Bereich“ und „Bereich gestapelt“ in **Customer Journey Analytics.**. Siehe [Bereich und Bereich gestapelt](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/area) für die **Adobe Analytics**-Version dieses Artikels.*
+
+>[!ENDSHADEBOX]
 
 
 Die ![GraphArea](/help/assets/icons/GraphArea.svg)**[!UICONTROL Area]**-Visualisierung ist wie ein Liniendiagramm, aber mit einem farbigen Bereich unterhalb der Linie. Fügen Sie ein Flächendiagramm hinzu, wenn Sie mehrere Metriken haben und das Gebiet visualisieren möchten, das durch die Schnittmenge aus zwei oder mehr Metriken ausgedrückt wird.

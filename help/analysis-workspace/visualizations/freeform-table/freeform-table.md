@@ -4,10 +4,10 @@ description: Freiformtabellen sind die Grundlage für die Analyse von Daten in W
 feature: Visualizations
 exl-id: e5ba9089-c575-47b3-af85-b8b2179396ac
 role: User
-source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
+source-git-commit: c7cdeb29729af35d7554b19e395047b364f0b547
 workflow-type: tm+mt
-source-wordcount: '754'
-ht-degree: 26%
+source-wordcount: '777'
+ht-degree: 25%
 
 ---
 
@@ -21,6 +21,13 @@ ht-degree: 26%
 >abstract="Erstellen Sie eine leere Visualisierung einer Freiformtabelle, die Sie mithilfe von Dimensionen, Segmenten, Metriken und Datumsbereichen gestalten können. Sie können die Freiformtabelle als Grundlage für andere Visualisierungen verwenden."
 
 <!-- markdownlint-enable MD034 -->
+
+
+>[!BEGINSHADEBOX]
+
+*In diesem Artikel wird die Freiformtabellen-Visualisierung in **Customer Journey Analytics.**. Siehe [Freiformtabelle](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/freeform-table/freeform-table) für die **Adobe Analytics**-Version dieses Artikels.*
+
+>[!ENDSHADEBOX]
 
 
 In Analysis Workspace bildet ![ Visualisierung ](/help/assets/icons/Table.svg)Freiformtabelle **[!UICONTROL die]** für die interaktive Datenanalyse. Sie können eine Kombination von [Komponenten](/help/components/overview.md) per Drag und Drop in die Zeilen und Spalten ziehen, um eine benutzerdefinierte Tabelle für Ihre Analyse zu erstellen. Da jede Komponente abgelegt wird, wird die Tabelle sofort aktualisiert, damit Sie schnell analysieren und tiefer graben können.

@@ -4,9 +4,9 @@ title: Experimentier-Bedienfeld
 feature: Panels
 exl-id: e11169b4-2c73-4dd4-bca7-c26189d60631
 role: User
-source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
+source-git-commit: c7cdeb29729af35d7554b19e395047b364f0b547
 workflow-type: tm+mt
-source-wordcount: '2144'
+source-wordcount: '2174'
 ht-degree: 20%
 
 ---
@@ -31,6 +31,12 @@ ht-degree: 20%
 
 <!-- markdownlint-enable MD034 -->
 
+
+>[!BEGINSHADEBOX]
+
+*In diesem Artikel wird das Bedienfeld „Experimentieren“ in **Customer Journey Analytics.**. Informationen [ Analytics for Target](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/panels/a4t-panel) finden Sie unter Analytics for Target-Bedienfeld **Analysieren von Adobe Target-Aktivitäten und -Erlebnissen in**Adobe Analytics*
+
+>[!ENDSHADEBOX]
 
 
 Im Bedienfeld **[!UICONTROL Experimentieren]** können Analysten verschiedene Benutzererlebnisse, Marketing- oder Messaging-Variationen vergleichen, um zu ermitteln, welche am besten geeignet ist, um ein bestimmtes Ergebnis zu erzielen. Sie können den Anstieg und die Konfidenz von A/B-Experimenten von jeder beliebigen Experimentierplattform aus bewerten: online, offline, aus Adobe-Lösungen wie Target oder Journey Optimizer und sogar aus BYO-Daten (bring-your-own).

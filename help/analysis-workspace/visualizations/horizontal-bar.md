@@ -4,10 +4,10 @@ title: Horizontalbalken und Horizontalbalken gestapelt
 feature: Visualizations
 exl-id: 4d982430-5d43-482a-ab4e-ab1fc3616f0c
 role: User
-source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
+source-git-commit: c7cdeb29729af35d7554b19e395047b364f0b547
 workflow-type: tm+mt
-source-wordcount: '160'
-ht-degree: 38%
+source-wordcount: '191'
+ht-degree: 31%
 
 ---
 
@@ -25,6 +25,13 @@ Die horizontale Balkenvisualisierung hat eine standardmäßige und eine gestapel
 >abstract="Erstellen Sie eine Horizontalbalkenvisualisierung, um verschiedene Werte aus einer oder mehreren Metriken darzustellen."
 
 <!-- markdownlint-enable MD034 -->
+
+
+>[!BEGINSHADEBOX]
+
+*In diesem Artikel werden die Visualisierungen „Horizontalbalken“ und „Horizontalbalken gestapelt“ in **Customer Journey Analytics.**. Siehe [Horizontalbalken und Horizontalbalken gestapelt](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/horizontal-bar) für die **Adobe Analytics**-Version dieses Artikels.*
+
+>[!ENDSHADEBOX]
 
 
 Diese ![GraphBarHorizontal](/help/assets/icons/GraphBarHorizontal.svg)Horizontalbalken **[!UICONTROL -Visualisierung]** horizontale Balken, die verschiedene Werte aus einer oder mehreren Metriken darstellen.

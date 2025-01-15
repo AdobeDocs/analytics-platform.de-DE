@@ -4,10 +4,10 @@ title: Leeres Bedienfeld
 feature: Panels
 exl-id: b65d0031-b4c0-4400-8d67-9416f3c993b6
 role: User
-source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
+source-git-commit: c7cdeb29729af35d7554b19e395047b364f0b547
 workflow-type: tm+mt
-source-wordcount: '224'
-ht-degree: 100%
+source-wordcount: '246'
+ht-degree: 91%
 
 ---
 
@@ -22,6 +22,13 @@ ht-degree: 100%
 >additional-url="https://www.youtube.com/watch?v=SYaioiwBTrk" text="Bedienfelder in Analysis Workspace"
 
 <!-- markdownlint-enable MD034 -->
+
+
+>[!BEGINSHADEBOX]
+
+*Dieser Artikel dokumentiert das leere Bedienfeld in **Customer Journey Analytics**. Siehe [Leeres Bedienfeld](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/panels/blank-panel) für die **Adobe Analytics**-Version dieses Artikels.*
+
+>[!ENDSHADEBOX]
 
 
 Ein **[!UICONTROL leeres Bedienfeld]** präsentiert eine Auswahl von Bedienfeldern (gekennzeichnet durch ![Web-Seite](/help/assets/icons/WebPage.svg)) oder Visualisierungen, die Sie erstellen können, um eine vollständig angepasste Analyse zu erhalten.

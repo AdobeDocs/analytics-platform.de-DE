@@ -4,10 +4,10 @@ title: Histogramm
 feature: Visualizations
 exl-id: 5901eb15-51cf-45a0-a80b-5824adf33bdd
 role: User
-source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
+source-git-commit: c7cdeb29729af35d7554b19e395047b364f0b547
 workflow-type: tm+mt
-source-wordcount: '330'
-ht-degree: 37%
+source-wordcount: '351'
+ht-degree: 35%
 
 ---
 
@@ -21,6 +21,13 @@ ht-degree: 37%
 >abstract="Erstellen Sie eine Histogrammvisualisierung, um die Verteilung numerischer Daten in Bereichsgruppen darzustellen."
 
 <!-- markdownlint-enable MD034 -->
+
+
+>[!BEGINSHADEBOX]
+
+*In diesem Artikel wird die Histogrammvisualisierung in **Customer Journey Analytics.**. Siehe [Histogramm](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/histogram) für die **Adobe Analytics**-Version dieses Artikels.*
+
+>[!ENDSHADEBOX]
 
 
 Die ![Histogramm](/help/assets/icons/Histogram.svg)**[!UICONTROL Histogramm]**-Visualisierung ähnelt einer [!UICONTROL Balken]-Visualisierung, gruppiert jedoch Zahlen in Bereiche (Buckets). Analytics automatisiert diese Zusammenfassung von Zahlen zu Bereichen, wobei Sie jedoch die Einstellungen unter [Erweiterte Einstellungen](#advanced-settings) ändern können.
