@@ -4,9 +4,9 @@ title: Text
 feature: Visualizations
 exl-id: 51cb6b57-682f-4475-b829-75def725be43
 role: User
-source-git-commit: f8abf388e0cb1e2e2eb9ff69fed2c542a26dcd66
+source-git-commit: bf5853a1d23d6e648024016a64dc67d09da3fbb4
 workflow-type: tm+mt
-source-wordcount: '265'
+source-wordcount: '263'
 ht-degree: 27%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 27%
 
 >[!BEGINSHADEBOX]
 
-*In diesem Artikel wird die Textvisualisierung in ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg)**Customer Journey Analytics.**.<br/>Siehe [Text](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/text) für die ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg)**Adobe Analytics**-Version dieses Artikels.*
+*In diesem Artikel wird die Textvisualisierung in **Customer Journey Analytics.**.<br/>Siehe [Text](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/text) für die **Adobe Analytics**-Version dieses Artikels.*
 
 >[!ENDSHADEBOX]
 

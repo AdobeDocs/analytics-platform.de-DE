@@ -4,10 +4,10 @@ title: Histogramm
 feature: Visualizations
 exl-id: 5901eb15-51cf-45a0-a80b-5824adf33bdd
 role: User
-source-git-commit: f8abf388e0cb1e2e2eb9ff69fed2c542a26dcd66
+source-git-commit: bf5853a1d23d6e648024016a64dc67d09da3fbb4
 workflow-type: tm+mt
-source-wordcount: '353'
-ht-degree: 34%
+source-wordcount: '351'
+ht-degree: 35%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 34%
 
 >[!BEGINSHADEBOX]
 
-*In diesem Artikel wird die Histogrammvisualisierung in {![}CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg)**Customer Journey Analytics**.<br/>Siehe [Histogramm](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/histogram) für die ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg)**Adobe Analytics**-Version dieses Artikels.*
+*In diesem Artikel wird die Histogrammvisualisierung in **Customer Journey Analytics.**.<br/>Siehe [Histogramm](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/histogram) für die **Adobe Analytics**-Version dieses Artikels.*
 
 >[!ENDSHADEBOX]
 

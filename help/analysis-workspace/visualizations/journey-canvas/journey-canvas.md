@@ -4,10 +4,10 @@ title: Journey-Arbeitsfläche
 feature: Visualizations
 role: User
 exl-id: be03c3b2-8faf-47b8-b3ab-e953202bf488
-source-git-commit: ca76f5ff27f11ccd1963709b57cc1bdf5fa7dbbe
+source-git-commit: c7828617d45991f9f3ba946fc12e248ac172141d
 workflow-type: tm+mt
-source-wordcount: '1861'
-ht-degree: 12%
+source-wordcount: '1880'
+ht-degree: 11%
 
 ---
 
@@ -48,6 +48,12 @@ ht-degree: 12%
 >abstract="Analysieren Sie, wie Personen eine definierte Journey durchlaufen oder aus ihr aussteigen. Erstellen Sie Analysen von Benutzer-Journeys, indem Sie ein flexibles Diagramm mit Knoten und Pfeilen erstellen, die eine beliebige Kombination von Ereignissen, Dimensionselementen und Filtern darstellen. Sie können Knoten auf der Arbeitsfläche ziehen, um die Ereignisse und Bedingungen der Journey neu anzuordnen. Die Daten werden dabei entsprechend aktualisiert. <br/><br/>Kundinnen und Kunden mit Zugriff auf Adobe Journey Optimizer können vorhandene Journey Optimizer-Journeys analysieren"
 
 <!-- markdownlint-enable MD034 -->
+
+>[!BEGINSHADEBOX]
+
+*In diesem Artikel wird die Journey-Arbeitsflächen-Visualisierung in **Customer Journey Analytics.**.<br/>Es gibt keine entsprechende Visualisierung in **Adobe Analytics**.*
+
+>[!ENDSHADEBOX]
 
 Die Journey-Arbeitsflächen-Visualisierung ermöglicht es Ihnen, die Journey zu analysieren und detaillierte Einblicke zu erhalten, die Sie Ihren Benutzenden und Kunden bieten. Damit können Sie eine Journey von Grund auf neu definieren oder eine von Journey Optimizer anzeigen und dann sehen, wie Personen die Journey verlassen (ausgefallen) oder weiter durchlaufen (durchgefallen) haben.
 

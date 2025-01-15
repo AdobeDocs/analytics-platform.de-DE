@@ -4,10 +4,10 @@ description: Eine Visualisierung, die die Beziehung zwischen bis zu drei Metrike
 feature: Visualizations
 exl-id: c01386c9-c51f-46f3-b1a2-41a8d8996d04
 role: User
-source-git-commit: f8abf388e0cb1e2e2eb9ff69fed2c542a26dcd66
+source-git-commit: bf5853a1d23d6e648024016a64dc67d09da3fbb4
 workflow-type: tm+mt
-source-wordcount: '168'
-ht-degree: 67%
+source-wordcount: '166'
+ht-degree: 68%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 67%
 
 >[!BEGINSHADEBOX]
 
-*In diesem Artikel wird die Streuvisualisierung in {![}CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg)**Customer Journey Analytics**.<br/>Siehe [Streuung](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/scatterplot) für die ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg)**Adobe Analytics**-Version dieses Artikels.*
+*In diesem Artikel wird die Streuvisualisierung in **Customer Journey Analytics.**.<br/>Siehe [Streuung](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/scatterplot) für die **Adobe Analytics**-Version dieses Artikels.*
 
 >[!ENDSHADEBOX]
 

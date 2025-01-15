@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie eine Kohortentabelle für die Kohortenanalyse
 feature: Visualizations
 exl-id: 3e3a70cd-70ec-4d4d-81c3-7902716d0b01
 role: User
-source-git-commit: f8abf388e0cb1e2e2eb9ff69fed2c542a26dcd66
+source-git-commit: bf5853a1d23d6e648024016a64dc67d09da3fbb4
 workflow-type: tm+mt
-source-wordcount: '665'
+source-wordcount: '663'
 ht-degree: 33%
 
 ---
@@ -34,7 +34,7 @@ ht-degree: 33%
 
 >[!BEGINSHADEBOX]
 
-*In diesem Artikel wird die Kohortentabelle in {![}CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg)**Customer Journey Analytics**.<br/>Siehe [Kohortentabelle](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/cohort-table/cohort-analysis) für die Version ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg)**Adobe Analytics**dieses Artikels.*
+*In diesem Artikel wird die Kohortentabelle in **Customer Journey Analytics.**.<br/>Siehe [Kohortentabelle](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/cohort-table/cohort-analysis) für die **Adobe Analytics**-Version dieses Artikels.*
 
 >[!ENDSHADEBOX]
 

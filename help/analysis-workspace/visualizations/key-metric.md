@@ -4,9 +4,9 @@ title: Zusammenfassung einer Schlüsselmetrik
 feature: Visualizations
 exl-id: ef606c53-b370-419a-904b-573ee6d70a8d
 role: User
-source-git-commit: f8abf388e0cb1e2e2eb9ff69fed2c542a26dcd66
+source-git-commit: bf5853a1d23d6e648024016a64dc67d09da3fbb4
 workflow-type: tm+mt
-source-wordcount: '959'
+source-wordcount: '957'
 ht-degree: 36%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 36%
 
 >[!BEGINSHADEBOX]
 
-*In diesem Artikel wird die Visualisierung der Zusammenfassung der Schlüsselmetriken in ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg)**Customer Journey Analytics**dokumentiert.<br/>Siehe [Zusammenfassung der Schlüsselmetriken](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/key-metric) für die ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg)**Adobe Analytics**-Version dieses Artikels.*
+*In diesem Artikel wird die Visualisierung der Zusammenfassung der Schlüsselmetriken in **Customer Journey Analytics.**.<br/>Siehe [Zusammenfassung der Schlüsselmetriken](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/key-metric) für die **Adobe Analytics**-Version dieses Artikels.*
 
 >[!ENDSHADEBOX]
 
