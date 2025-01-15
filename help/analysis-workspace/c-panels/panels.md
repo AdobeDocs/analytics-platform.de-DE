@@ -4,10 +4,10 @@ title: Übersicht über Bedienfelder
 feature: Panels
 exl-id: be3e34a0-06c1-4200-b965-96084c2912fd
 role: User
-source-git-commit: 450d47a2baa43340f4cb9740f9703fb396b6e3e2
+source-git-commit: e61368765dde35e6d9beed7713a7a28db0c2af98
 workflow-type: tm+mt
-source-wordcount: '2126'
-ht-degree: 100%
+source-wordcount: '2159'
+ht-degree: 98%
 
 ---
 
@@ -149,17 +149,21 @@ Komponenten, die keine Filter sind, können ebenfalls direkt in den Ablagebereic
 
 Weitere Informationen finden Sie unter [Schnellfilter](/help/components/filters/quick-filters.md).
 
-![Ad-hoc-Filter, die veröffentlicht und in im Ablegebereich abgelegt werden.](assets/adhoc-segment-filter.png)
+![Ad-hoc-Filter, die veröffentlicht und in der Ablagefläche abgelegt werden](assets/adhoc-segment-filter.png)
 
 ### Dropdown-Filter
 
-+++ Sehen Sie sich ein Video an, in dem Dropdown-Filter erläutert werden.
-
 >[!VIDEO](https://video.tv.adobe.com/v/23877?quality=12&learn=on)
 
-{{videoaa}}
+In diesem Video werden die Funktionen von mit Adobe Analytics veranschaulicht. Die Funktion ist jedoch ähnlich auf Customer Journey Analytics verfügbar. Beachten Sie die folgenden terminologischen Unterschiede.
 
-+++
+| Adobe Analytics | Customer Journey Analytics |
+| --- | --- |
+| Segmente  | Filter |
+| Besucher | Person |
+| Besuch | Sitzung |
+| Treffer | Ereignis |
+
 
 #### Statische Dropdown-Filter
 
