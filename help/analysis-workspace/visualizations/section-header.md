@@ -4,10 +4,10 @@ description: Eine Visualisierung, die eine Abschnittsüberschrift in Ihr Workspa
 feature: Visualizations
 role: User
 exl-id: 7f815879-2b08-4650-a9ce-c55ca5824288
-source-git-commit: bf5853a1d23d6e648024016a64dc67d09da3fbb4
+source-git-commit: d556740383075b2ee4652a78d3d37d5bbc5f2225
 workflow-type: tm+mt
-source-wordcount: '70'
-ht-degree: 18%
+source-wordcount: '93'
+ht-degree: 13%
 
 ---
 
@@ -23,16 +23,12 @@ ht-degree: 18%
 <!-- markdownlint-enable MD034 -->
 
 
-<!-- uncomment when section header page in AA is available.
 >[!BEGINSHADEBOX]
 
 
-*This article documents the Section header visualization in **Customer Journey Analytics**.<br/>See [Section header](...) for the **Adobe Analytics** version of this article.*
+*In diesem Artikel wird die Visualisierung der Abschnittsüberschrift in **Customer Journey Analytics.**.<br/>Siehe [Abschnitt Kopfzeile](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/section-header) für die **Adobe Analytics**-Version dieses Artikels.*
 
 >[!ENDSHADEBOX]
-
--->
-
 
 Um Abschnitte innerhalb eines Bereichs zu identifizieren und zu artikulieren, können Sie eine ![PageRule](/help/assets/icons/PageRule.svg)Section **[!UICONTROL Header]**-Visualisierung an einer beliebigen Stelle innerhalb eines Bereichs einfügen.
 
