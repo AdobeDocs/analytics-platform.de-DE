@@ -817,7 +817,7 @@ Die folgende zusätzliche Funktion ist in der Benutzeroberfläche „Regel klass
 >[!CONTEXTUALHELP]
 >id="dataview_derivedfields_concatenate"
 >title="Verketten"
->abstract="Diese Funktion bietet die Möglichkeit, zwei oder mehr Felder, abgeleitete Felder oder benutzerseitig eingegebene Zeichenfolgenwerte in einem Feld mit definierten Trennzeichen zu kombinieren."
+>abstract="Diese Funktion bietet die Möglichkeit, zwei oder mehr Felder, abgeleitete Felder oder benutzerseitig eingegebene Zeichenfolgenwerte in einem Feld mit definierten Trennzeichen zu kombinieren"
 
 <!-- markdownlint-enable MD034 -->
 

@@ -109,7 +109,7 @@ Ein gängiger Anwendungsfall für diese Funktion ist, wenn Sie eine ungefähre A
 >[!CONTEXTUALHELP]
 >id="functions-asin"
 >title="Arcussinus"
->abstract="Gibt den Arcussinus (die Umkehrung des Sinus) einer Zahl zurück. Der Arcussinus ist der Winkel, dessen Sinus eine gegebene Zahl ist. Der zurückgegebene Winkel wird in Radiant im Bereich -pi/2 bis pi/2 angegeben. Um den Arcussinus in Grad auszudrücken, multiplizieren Sie das Ergebnis mit 180/PI()."
+>abstract="Gibt den Arcussinus (die Umkehrung des Sinus) einer Zahl zurück. Der Arcussinus ist der Winkel, dessen Sinus eine gegebene Zahl ist. Der zurückgegebene Winkel wird in Radiant im Bereich -pi/2 bis pi/2 angegeben. Um den Arcussinus in Grad auszudrücken, multiplizieren Sie das Ergebnis mit 180/PI()"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -407,13 +407,13 @@ Gibt den Durchschnitt der letzten n Elemente der Spalte x zurück. Wenn n > 0 is
 >[!CONTEXTUALHELP]
 >id="functions-eq"
 >title="Gleich"
->abstract="Gleich.  Die Ausgabe ist entweder 0 (False) oder 1 (True)."
+>abstract="Gleich. Die Ausgabe ist entweder 0 (False) oder 1 (True)."
 
 <!-- markdownlint-enable MD034 -->
 
 ![EFFECT](/help/assets/icons/Effect.svg) **[!UICONTROL EQUAL()]**
 
-Gleich.  Die Ausgabe ist entweder 0 (False) oder 1 (True).
+Gleich. Die Ausgabe ist entweder 0 (False) oder 1 (True).
 
 
 | Argument | Beschreibung |
@@ -572,13 +572,13 @@ Die Ausgabe ist entweder 0 (False) oder 1 (True).
 >[!CONTEXTUALHELP]
 >id="functions-ge"
 >title="Größer gleich"
->abstract="Größer als oder gleich.  Die Ausgabe ist entweder 0 (False) oder 1 (True)."
+>abstract="Größer als oder gleich. Die Ausgabe ist entweder 0 (False) oder 1 (True)."
 
 <!-- markdownlint-enable MD034 -->
 
 ![EFFECT](/help/assets/icons/Effect.svg) **[!UICONTROL GRÖSSER ODER GLEICH()]**
 
-Größer als oder gleich.  Die Ausgabe ist entweder 0 (False) oder 1 (True).
+Größer als oder gleich. Die Ausgabe ist entweder 0 (False) oder 1 (True).
 
 | Argument | Beschreibung |
 |---|---|
@@ -710,13 +710,13 @@ Die Ausgabe ist entweder 0 (False) oder 1 (True).
 >[!CONTEXTUALHELP]
 >id="functions-le"
 >title="Kleiner gleich"
->abstract="Kleiner als oder gleich.  Die Ausgabe ist entweder 0 (False) oder 1 (True)."
+>abstract="Kleiner als oder gleich. Die Ausgabe ist entweder 0 (False) oder 1 (True)."
 
 <!-- markdownlint-enable MD034 -->
 
 ![EFFECT](/help/assets/icons/Effect.svg) **[!UICONTROL LESS THAN OR EQUAL()]**
 
-Kleiner als oder gleich.  Die Ausgabe ist entweder 0 (False) oder 1 (True).
+Kleiner als oder gleich. Die Ausgabe ist entweder 0 (False) oder 1 (True).
 
 | Argument | Beschreibung |
 |---|---|
@@ -1007,14 +1007,14 @@ Negation als boolescher Wert. Die Ausgabe ist entweder 0 (False) oder 1 (True).
 >[!CONTEXTUALHELP]
 >id="functions-ne"
 >title="Not Equal"
->abstract="Ungleich.  Die Ausgabe ist entweder 0 (False) oder 1 (True)."
+>abstract="Ungleich. Die Ausgabe ist entweder 0 (False) oder 1 (True)."
 
 <!-- markdownlint-enable MD034 -->
 
 ![EFFECT](/help/assets/icons/Effect.svg) **[!UICONTROL NOT EQUAL()]**
 
 
-Ungleich.  Die Ausgabe ist entweder 0 (False) oder 1 (True).
+Ungleich. Die Ausgabe ist entweder 0 (False) oder 1 (True).
 
 
 | Argument | Beschreibung |

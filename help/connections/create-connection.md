@@ -8,7 +8,7 @@ role: Admin
 source-git-commit: a530738bb02888d637e5ff4edaa1aa2535a9034c
 workflow-type: tm+mt
 source-wordcount: '4260'
-ht-degree: 97%
+ht-degree: 98%
 
 ---
 
@@ -224,7 +224,7 @@ Wenden Sie sich an Ihre Admins, wenn Sie sich nicht sicher sind, welches Custome
 
 >[!CONTEXTUALHELP]
 >id="cja_connection_accountfield"
->title="Konto-Feld"
+>title="Kontofeld"
 >abstract="Wählen Sie ein Feld aus, das die Konto-ID (die eindeutige Kennung für ein Konto) darstellt."
 
 <!-- markdownlint-enable MD034 -->
@@ -340,7 +340,7 @@ Wenden Sie sich an Ihre Admins, wenn Sie sich nicht sicher sind, welches Custome
 
 >[!CONTEXTUALHELP]
 >id="connection_accountfield"
->title="Konto-Feld"
+>title="Kontofeld"
 >abstract="Wählen Sie ein Feld aus, das die Konto-ID (die eindeutige Kennung für ein Konto) darstellt."
 
 <!-- markdownlint-enable MD034 -->

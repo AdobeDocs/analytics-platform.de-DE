@@ -45,7 +45,7 @@ Ein alternatives Szenario besteht darin, dass Sie zwei Metriken von Interesse ha
 >[!CONTEXTUALHELP]
 >id="functions-abs"
 >title="Absolutwert"
->abstract="Gibt den absoluten Wert einer Zahl zurück.  Der absolute Wert einer Zahl ist die Zahl mit einem positiven Wert."
+>abstract="Gibt den absoluten Wert einer Zahl zurück. Der absolute Wert einer Zahl ist die Zahl mit einem positiven Wert."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -66,13 +66,13 @@ Ein alternatives Szenario besteht darin, dass Sie zwei Metriken von Interesse ha
 >[!CONTEXTUALHELP]
 >id="functions-col-max"
 >title="Spaltenmaximum"
->abstract="Gibt den größten Wert in einem Satz aus Dimensionselementen für eine Metrikspalte zurück.  MAXV wird vertikal innerhalb einer einzelnen Spalte (Metrik) über Dimensionselemente hinweg ausgewertet."
+>abstract="Gibt den größten Wert in einem Satz aus Dimensionselementen für eine Metrikspalte zurück. MAXV wird vertikal innerhalb einer einzelnen Spalte (Metrik) über Dimensionselemente hinweg ausgewertet."
 
 <!-- markdownlint-enable MD034 -->
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL COLUMN MAXIMUM(metric, include_zeros)]**
 
-Gibt den größten Wert in einem Satz aus Dimensionselementen für eine Metrikspalte zurück.  MAXV wird vertikal innerhalb einer einzelnen Spalte (Metrik) über Dimensionselemente hinweg ausgewertet.
+Gibt den größten Wert in einem Satz aus Dimensionselementen für eine Metrikspalte zurück. MAXV wird vertikal innerhalb einer einzelnen Spalte (Metrik) über Dimensionselemente hinweg ausgewertet.
 
 | Argument | Beschreibung |
 |---|---|
@@ -87,14 +87,14 @@ Gibt den größten Wert in einem Satz aus Dimensionselementen für eine Metriksp
 >[!CONTEXTUALHELP]
 >id="functions-col-min"
 >title="Spaltenminimum"
->abstract="Gibt den kleinsten Wert in einem Satz aus Dimensionselementen für eine Metrikspalte zurück.  MINV wird vertikal innerhalb einer einzelnen Spalte (Metrik) über Dimensionselemente hinweg ausgewertet."
+>abstract="Gibt den kleinsten Wert in einem Satz aus Dimensionselementen für eine Metrikspalte zurück. MINV wird vertikal innerhalb einer einzelnen Spalte (Metrik) über Dimensionselemente hinweg ausgewertet."
 
 <!-- markdownlint-enable MD034 -->
 
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL COLUMN MINIMUM(metric, include_zeros)]**
 
-Gibt den kleinsten Wert in einem Satz aus Dimensionselementen für eine Metrikspalte zurück.  MINV wird vertikal innerhalb einer einzelnen Spalte (Metrik) über Dimensionselemente hinweg ausgewertet.
+Gibt den kleinsten Wert in einem Satz aus Dimensionselementen für eine Metrikspalte zurück. MINV wird vertikal innerhalb einer einzelnen Spalte (Metrik) über Dimensionselemente hinweg ausgewertet.
 
 | Argument | Beschreibung |
 |---|---|
@@ -171,7 +171,7 @@ Addiert alle numerischen Werte für eine Metrik innerhalb einer Spalte (über di
 >[!CONTEXTUALHELP]
 >id="functions-mean"
 >title="Arithmetisches Mittel"
->abstract="Gibt das arithmetische Mittel (d. h. den Durchschnitt) für eine Metrik in einer Spalte zurück."
+>abstract="Gibt das arithmetische Mittel (d. h. den Durchschnitt) für eine Metrik in einer Spalte zurück"
 
 <!-- markdownlint-enable MD034 -->
 
