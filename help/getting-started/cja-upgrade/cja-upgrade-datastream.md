@@ -7,10 +7,10 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: f76d098d-d223-40e4-be81-d28e7581396b
-source-git-commit: daa07b603caa613ca49b61c2e8e461d558459f57
+source-git-commit: 41965bcd5ae8252fbf2ceda0d2b633ec6dc0e9a3
 workflow-type: tm+mt
-source-wordcount: '216'
-ht-degree: 27%
+source-wordcount: '256'
+ht-degree: 23%
 
 ---
 
@@ -27,6 +27,12 @@ ht-degree: 27%
 Ein Datenstrom stellt die Server-seitige Konfiguration bei der Implementierung der Adobe Experience Platform Web- und Mobile-SDKs dar. Beim Erfassen von Daten mit den Adobe Experience Platform SDKs werden Daten an das Adobe Experience Platform Edge Network gesendet. Es ist der Datenstrom, der bestimmt, an welche Services diese Daten weitergeleitet werden.
 
 Im vorliegenden Beispiel möchten Sie den Datenstrom so konfigurieren, dass die erfassten Daten an Ihren Datensatz in Adobe Experience Platform gesendet werden.
+
+>[!NOTE]
+>
+>Die folgenden Schritte sind nur für Adobe Analytics-Implementierungen mit AppMeasurement oder der Analytics-Erweiterung (Tags) erforderlich.
+>
+>Wenn Ihre Adobe Analytics-Implementierung die Web-SDK oder die Web-SDK-Erweiterung verwendet, ist der Datenstrom bereits in Ihrer Adobe Analytics-Umgebung vorhanden.
 
 Gehen Sie folgendermaßen vor, um einen Datenstrom einzurichten:
 

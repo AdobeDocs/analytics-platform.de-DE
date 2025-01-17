@@ -7,9 +7,9 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: 156df830-541d-4c92-9c49-98f346e040a7
-source-git-commit: 9a4442e495487c036c0aaaf1fc913571ae189ed2
+source-git-commit: cb6a439def7bf0fab1768fdd1c7d909b76b995d6
 workflow-type: tm+mt
-source-wordcount: '313'
+source-wordcount: '315'
 ht-degree: 24%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 24%
 
 Sie können die Tags-Funktion in Adobe Experience Platform verwenden, um Code zum Erfassen von Daten auf Ihrer Site zu implementieren. Mit dieser Tag-Management-Lösung können Sie Code zusammen mit anderen Tagging-Anforderungen bereitstellen. Tags ermöglichen die nahtlose Integration mit Adobe Experience Platform über die Adobe Experience Platform Web SDK-Erweiterung.
 
-Die folgenden Informationen beschreiben das Erstellen eines Tags für Ihre Eigenschaft. Weitere Informationen finden Sie unter [Konfigurieren der Tag-Erweiterung „Web SDK](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration) in der Experience Platform-Dokumentation. Der Web-SDK enthält nativ den [!UICONTROL Adobe Experience Cloud ID]Service, sodass Sie die ID-Service-Erweiterung nicht zu Ihrem Tag hinzufügen müssen.
+Die folgenden Informationen beschreiben, wie Sie ein Tag für Ihre Eigenschaft erstellen. Weitere Informationen finden Sie unter [Konfigurieren der Tag-Erweiterung „Web SDK](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration) in der Experience Platform-Dokumentation. Der Web-SDK enthält nativ den [!UICONTROL Adobe Experience Cloud ID]Service, sodass Sie die ID-Service-Erweiterung nicht zu Ihrem Tag hinzufügen müssen.
 
 Eine Eigenschaft ist im Wesentlichen ein Container, den Sie bei der Bereitstellung von Tags auf Ihrer Site mit Erweiterungen, Regeln, Datenelementen und Bibliotheken füllen. Viele Benutzer erstellen eine Eigenschaft für jede Website (oder Gruppe eng verwandter Sites), auf der sie denselben Satz von Tags bereitstellen möchten. Weitere Informationen zu Eigenschaften finden Sie unter [Eigenschaften](https://experienceleague.adobe.com/en/docs/experience-platform/tags/admin/companies-and-properties) in der Dokumentation zum Experience Platform von Datenerfassungen.
 

@@ -7,10 +7,10 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: 471ecd60-6e1e-4889-93bd-c654b35d40dc
-source-git-commit: 937a7f31361027438929194f8ccc5aee83c33bc0
+source-git-commit: cb6a439def7bf0fab1768fdd1c7d909b76b995d6
 workflow-type: tm+mt
-source-wordcount: '249'
-ht-degree: 41%
+source-wordcount: '285'
+ht-degree: 36%
 
 ---
 
@@ -27,6 +27,12 @@ Sie müssen Ihr Tag auf der Website installieren, die Sie verfolgen möchten, wa
 Im folgenden Prozess wird beschrieben, wie Sie den Code abrufen, der auf Ihr -Tag verweist. Weitere Informationen finden Sie in den [Implementierungshandbüchern für Tags und ](https://experienceleague.adobe.com/en/docs/experience-platform/tags/get-started/implementation-guides)) in der Experience Platform-Dokumentation.
 
 Gehen Sie folgendermaßen vor, um Code abzurufen, der auf Ihr Tag verweist:
+
+1. Melden Sie sich mit Ihren Adobe ID-Anmeldeinformationen bei experience.adobe.com an.
+
+1. Navigieren Sie in Adobe Experience Platform **[!UICONTROL Datenerfassung]** > **[!UICONTROL Tags]**.
+
+1. Wählen Sie auf **[!UICONTROL Seite]** Tag-Eigenschaften“ das neu erstellte Tag aus der Liste der Eigenschaften aus, um es zu öffnen.
 
 1. Wählen Sie **[!UICONTROL Umgebungen]** in der linken Leiste aus.
 

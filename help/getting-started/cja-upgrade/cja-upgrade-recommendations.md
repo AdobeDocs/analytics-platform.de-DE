@@ -7,18 +7,16 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: d35f8615-66f5-4823-b0b8-433852246dd2
-source-git-commit: f4fd3c1932a736577d480e86cad70f55de75cb21
+source-git-commit: cb6a439def7bf0fab1768fdd1c7d909b76b995d6
 workflow-type: tm+mt
-source-wordcount: '1596'
+source-wordcount: '1565'
 ht-degree: 7%
 
 ---
 
 # Upgrade von Adobe Analytics auf Customer Journey Analytics
 
-Beim Upgrade von Adobe Analytics auf Customer Journey Analytics empfiehlt Adobe eine neue Implementierung des Experience Platform Web SDK in Verbindung mit dem Analytics-Quell-Connector, wie unter [Empfohlene Upgrade-Schritte für die meisten Unternehmen](#recommended-upgrade-steps-for-most-organizations) beschrieben.
-
-Abhängig von verschiedenen Faktoren, wie z. B. Timeline- und Ressourcenbeschränkungen, sind die empfohlenen Upgrade-Schritte möglicherweise für Ihr Unternehmen nicht praktikabel. Verwenden Sie in diesem Fall den [Adobe Analytics to Customer Journey Analytics Upgrade Questionnaire](https://gigazelle.github.io/cja-ttv/), um Upgradeschritte dynamisch zu generieren, die auf die individuellen Umstände Ihres Unternehmens zugeschnitten sind.
+Beim Upgrade von Adobe Analytics auf Customer Journey Analytics folgen Sie den [empfohlenen Upgrade-Schritten](#recommended-upgrade-steps-for-most-organizations). Alternativ können Sie [Upgrade-Schritte dynamisch generieren](#dynamically-generate-upgrade-steps-for-your-organization) für die einzigartigen Umstände Ihres Unternehmens.
 
 ## Empfohlene Upgrade-Schritte für die meisten Unternehmen
 
@@ -100,9 +98,11 @@ Jeder Schritt bietet eine allgemeine Erklärung eines detaillierteren Prozesses.
 
    +++Tags
 
-   1. [Implementieren Sie das Lader-Tag auf Ihrer Site](/help/getting-started/cja-upgrade/cja-upgrade-tag-loader.md).
-
    1. [Erstellen Sie eine Tag-Eigenschaft und fügen Sie die Adobe Experience Platform Web SDK-Erweiterung hinzu](/help/getting-started/cja-upgrade/cja-upgrade-tag-property.md).
+
+   1. [Hinzufügen der Adobe Experience Platform Web SDK-Erweiterung zu Ihrer Tag-Eigenschaft](/help/getting-started/cja-upgrade/cja-upgrade-tag-extension.md)
+
+   1. [Implementieren Sie das Lader-Tag auf Ihrer Site](/help/getting-started/cja-upgrade/cja-upgrade-tag-loader.md).
 
    1. [Fügen Sie Ihrem Tag eine XDM-Datenerfassungslogik hinzu](/help/getting-started/cja-upgrade/cja-upgrade-tag-xdm.md).
 
@@ -120,11 +120,11 @@ Jeder Schritt bietet eine allgemeine Erklärung eines detaillierteren Prozesses.
 
 1. (Optional) Binden Sie Web-Daten mit Daten aus anderen Kanälen wie Callcenter-Daten.
 
-   Sie erreichen dies, indem Sie zusätzliche Datensätze zu Ihrer Customer Journey Analytics-Verbindung hinzufügen.
+   Sie erreichen dies, indem Sie zusätzliche Datensätze zu Ihrer Customer Journey Analytics-Verbindung hinzufügen, wie in [Callcenter- und Web-Daten importieren](/help/use-cases/cross-channel/call-center.md) beschrieben.
 
 1. [Erstellen einer Datenansicht auf Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-dataview.md).
 
-1. [Überprüfen Sie, ob Daten in den Customer Journey Analytics fließen](/help/getting-started/cja-upgrade/cja-upgrade-validate.md).
+1. [Überprüfen Sie, ob Daten auf Customer Journey Analytics in die Datenansicht fließen](/help/getting-started/cja-upgrade/cja-upgrade-validate.md).
 
 1. [Migrieren von Projekten und ](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/component-migration/prepare-component-migration).
 
