@@ -4,7 +4,7 @@ title: Horizontalbalken und Horizontalbalken gestapelt
 feature: Visualizations
 exl-id: 4d982430-5d43-482a-ab4e-ab1fc3616f0c
 role: User
-source-git-commit: c0c02b8ae1a614f3e623642a8671bb25d8a26f4f
+source-git-commit: 55b312552d32070875714a77e1177bf0da5f9d87
 workflow-type: tm+mt
 source-wordcount: '193'
 ht-degree: 31%
@@ -15,7 +15,7 @@ ht-degree: 31%
 
 >[!BEGINSHADEBOX]
 
-_In diesem Artikel werden die Visualisierungen Horizontalbalken und Horizontalbalken gestapelt in {_}![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics** dokumentiert.<br/>Siehe [Horizontalbalken und Horizontalbalken gestapelt](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/horizontal-bar) für die _![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg)_**Adobe Analytics**-Version dieses Artikels._
+_In diesem Artikel werden die Visualisierungen Horizontalbalken und Horizontalbalken gestapelt in {_}![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics** dokumentiert._<br/>_Siehe [Horizontalbalken und Horizontalbalken gestapelt](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/horizontal-bar) für die_![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**-Version dieses Artikels._
 
 >[!ENDSHADEBOX]
 

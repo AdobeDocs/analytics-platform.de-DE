@@ -4,9 +4,9 @@ title: Sammelnummer und Sammeländerung
 feature: Visualizations
 exl-id: 8872fc58-0957-415d-9958-ce564612ce87
 role: User
-source-git-commit: bf5853a1d23d6e648024016a64dc67d09da3fbb4
+source-git-commit: 55b312552d32070875714a77e1177bf0da5f9d87
 workflow-type: tm+mt
-source-wordcount: '496'
+source-wordcount: '498'
 ht-degree: 48%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 48%
 
 >[!BEGINSHADEBOX]
 
-*In diesem Artikel werden die Visualisierung der Zusammenfassungsnummer und der Zusammenfassungsänderung in **Customer Journey Analytics.**.<br/>Siehe [Zusammenfassungsnummer und Zusammenfassungsänderung](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/summary-number-change) für die **Adobe Analytics**-Version dieses Artikels.*
+_In diesem Artikel werden die Visualisierungen von Zusammenfassungsnummern und Zusammenfassungsänderungen in {_}![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics** dokumentiert._<br/>_Siehe [Zusammenfassungsnummer und Zusammenfassungsänderung](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/summary-number-change) für die_![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**-Version dieses Artikels._
 
 >[!ENDSHADEBOX]
 

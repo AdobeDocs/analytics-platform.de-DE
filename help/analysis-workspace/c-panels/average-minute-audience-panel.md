@@ -4,9 +4,9 @@ description: Verwendung und Interpretation des Bedienfelds „Medien-Zielgruppen
 feature: Panels
 role: User, Admin
 exl-id: c55b5534-a9a6-47f1-8b43-c8c0b8686c53
-source-git-commit: bf5853a1d23d6e648024016a64dc67d09da3fbb4
+source-git-commit: 55b312552d32070875714a77e1177bf0da5f9d87
 workflow-type: tm+mt
-source-wordcount: '1815'
+source-wordcount: '1817'
 ht-degree: 29%
 
 ---
@@ -33,7 +33,7 @@ ht-degree: 29%
 
 >[!BEGINSHADEBOX]
 
-*In diesem Artikel wird das Bedienfeld „Medien-Zielgruppendurchschnitt pro Minute“ in **Customer Journey Analytics.**.<br/>Siehe [Bedienfeld „Medien-Zielgruppendurchschnitt pro Minute](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/panels/average-minute-audience-panel) für die **Adobe Analytics**-Version dieses Artikels.*
+_In diesem Artikel wird das Bedienfeld „Medien-Zielgruppendurchschnitt pro Minute“ in_![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**_ dokumentiert.<br/>_Siehe [Bedienfeld „Medien-Zielgruppendurchschnitt pro Minute](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/panels/average-minute-audience-panel) für die_![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**-Version dieses Artikels._
 
 >[!ENDSHADEBOX]
 

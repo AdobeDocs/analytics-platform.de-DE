@@ -4,9 +4,9 @@ description: Eine Visualisierung, die eine Abschnittsüberschrift in Ihr Workspa
 feature: Visualizations
 role: User
 exl-id: 7f815879-2b08-4650-a9ce-c55ca5824288
-source-git-commit: d556740383075b2ee4652a78d3d37d5bbc5f2225
+source-git-commit: 55b312552d32070875714a77e1177bf0da5f9d87
 workflow-type: tm+mt
-source-wordcount: '93'
+source-wordcount: '95'
 ht-degree: 13%
 
 ---
@@ -26,7 +26,7 @@ ht-degree: 13%
 >[!BEGINSHADEBOX]
 
 
-*In diesem Artikel wird die Visualisierung der Abschnittsüberschrift in **Customer Journey Analytics.**.<br/>Siehe [Abschnitt Kopfzeile](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/section-header) für die **Adobe Analytics**-Version dieses Artikels.*
+_In diesem Artikel wird die Visualisierung der Abschnittskopfzeile in {_}![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics** dokumentiert._<br/>_Siehe [Abschnittsheader](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/section-header) für die_![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**-Version dieses Artikels._
 
 >[!ENDSHADEBOX]
 

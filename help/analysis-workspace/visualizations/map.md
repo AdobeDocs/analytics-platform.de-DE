@@ -7,7 +7,7 @@ badgePremium: label="Adobe Analytics-Version" url="https://experienceleague.adob
 hide: true
 hidefromtoc: true
 exl-id: 6656b34a-ae1e-4f9f-9c6d-13c54e49625c
-source-git-commit: 834296485a1e21cf15fb5d8162e421d28e2fcd21
+source-git-commit: 55b312552d32070875714a77e1177bf0da5f9d87
 workflow-type: tm+mt
 source-wordcount: '81'
 ht-degree: 53%
@@ -45,8 +45,7 @@ ht-degree: 53%
 
 >[!BEGINSHADEBOX]
 
-In {CustomerJourneyAnalytics} {![}Customer Journey Analytics](/help/assets/icons/CustomerJourneyAnalytics.svg) ist derzeit keine Zuordnungsvisualisierung **.**
-Siehe [Map](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/map-visualization) für die Dokumentation zur Kartenvisualisierung in ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) **Adobe Analytics**.
+_Derzeit ist keine Zuordnungsvisualisierung in {_}![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._<br/>_Siehe [Map](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/map-visualization) für die Dokumentation zur Kartenvisualisierung in_![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**._
 
 >[!ENDSHADEBOX]
 
