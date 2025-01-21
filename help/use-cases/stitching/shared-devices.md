@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: a7d14968-33a2-46a8-8e32-fb6716650d0a
-source-git-commit: 9118a3c20158b1a0373fab1b41595aa7b07075f6
+source-git-commit: f45a457d251767634e28984d7c75158dac6e51e8
 workflow-type: tm+mt
 source-wordcount: '658'
 ht-degree: 7%
@@ -20,7 +20,7 @@ In diesem Artikel erhalten Sie Informationen zum Kontext auf freigegebenen Gerä
 
 Ein gemeinsam genutztes Gerät ist ein Gerät, das von mehr als einer Person verwendet wird. Häufige Szenarien sind Geräte wie Tablets, Geräte, die in Kiosken verwendet werden, oder Computer-Geräte, die von Agenten in einem Callcenter gemeinsam genutzt werden.
 
-Wenn zwei Personen dasselbe Gerät verwenden und beide einen Kauf tätigen, können die Beispielereignisdaten wie folgt aussehen:
+Wenn zwei Personen dasselbe Gerät verwenden und beide einen authentifizierten Kauf tätigen, können die Beispielereignisdaten wie folgt aussehen:
 
 | Ereignis | Zeitstempel | Seitenname | Geräte-ID | E-Mail |
 |--:|---|---|---|---|
