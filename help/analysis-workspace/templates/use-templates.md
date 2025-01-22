@@ -4,9 +4,9 @@ title: Verwenden von Vorlagen
 feature: Workspace Basics
 role: User, Admin
 exl-id: d61f215d-9089-4014-9c5a-97f5d7134f34
-source-git-commit: 50d46d5b2d663e6f0b3951006db34bff0193417e
+source-git-commit: 91c982ac3a8b2286e3da78d50bdf1f378f75e7ec
 workflow-type: tm+mt
-source-wordcount: '19294'
+source-wordcount: '19288'
 ht-degree: 86%
 
 ---
@@ -31,7 +31,7 @@ Die folgenden Informationen beschreiben, wie Sie in Analysis Workspace auf Vorla
 
 1. Wählen Sie in Analysis Workspace die Registerkarte [!UICONTROL **Workspace**].
 
-   ![Registerkarten „Vorlagen](assets/view-prebuilt-templates.png)
+   ![Registerkarten „Vorlagen](assets/view-prebuilt-templates-full.png)
 
 1. Wählen [!UICONTROL **im Abschnitt**] eine der folgenden Registerkarten aus:
 
@@ -43,9 +43,9 @@ Die folgenden Informationen beschreiben, wie Sie in Analysis Workspace auf Vorla
 
 1. Verwenden Sie eine der folgenden Optionen, um die Anzeige der verfügbaren Vorlagen zu ändern:
 
-   * Wählen Sie aus, ob die Vorlagen in einer Spaltenansicht oder einer Kartenansicht angezeigt werden sollen, indem Sie entweder die Spaltenansicht ![Spaltenansichtssymbol](assets/column-view-icon.png) oder die Kartenansicht ![Kartenansichtssymbol](assets/card-view-icon.png) auswählen.
+   * Wählen Sie aus, ob Vorlagen in einer Spaltenansicht oder einer Kartenansicht angezeigt werden sollen, indem Sie entweder die Spaltenansicht ![AnsichtSpalte](/help/assets/icons/ViewColumn.svg) oder das Kartenansichtssymbol ![Karte](/help/assets/icons/Card.svg) auswählen.
 
-   * Wenn Sie die Kartenansicht (![) verwenden](assets/card-view-icon.png) wählen Sie aus den folgenden Sortierreihenfolgen: **[!UICONTROL Zuletzt verwendet]**, **[!UICONTROL Am beliebtesten]**, **[!UICONTROL Alphabetisch]**, **[!UICONTROL Kategorisch]**.
+   * Wenn Sie die Kartenansicht ![Karte](/help/assets/icons/Card.svg) verwenden, wählen Sie aus den folgenden Sortierreihenfolgen: **[!UICONTROL Zuletzt verwendet]**, **[!UICONTROL Am beliebtesten]**, **[!UICONTROL Alphabetisch]**, **[!UICONTROL Kategorisch]**.
 
 1. Geben Sie im Suchfeld zunächst den Namen der zu suchenden Vorlage ein und wählen Sie diese dann aus der Liste der Vorlagen aus.
 
