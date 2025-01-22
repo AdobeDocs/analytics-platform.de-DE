@@ -2,10 +2,10 @@
 title: Übersicht über die Produktnutzung
 description: Insights und Berichte zur Verwendung von Customer Journey Analytics in Ihrem Unternehmen anzeigen.
 exl-id: 3806ca7c-ee90-4222-9ffd-2e791c4550e5
-source-git-commit: 9e29a16fc8d2cfe9a7a2e926b5f592280b2c1c7a
+source-git-commit: ae22dc84406427567d45b670aa9737ea3a8b2f7b
 workflow-type: tm+mt
-source-wordcount: '367'
-ht-degree: 6%
+source-wordcount: '532'
+ht-degree: 12%
 
 ---
 
@@ -36,17 +36,96 @@ Wenn Sie in Customer Journey Analytics zu diesem Abschnitt der Benutzeroberfläc
 
 Wenn Sie die Produktnutzung aktivieren, sind die folgenden Dimensionen verfügbar. Wenn Sie Dimensionseinstellungen ändern möchten, erstellen Sie eine Kopie der systemeigenen Datenansicht und verwenden Sie die kopierte Datenansicht in Analysis Workspace.
 
-| Dimension | Beschreibung |
-| --- | --- |
-| Aktionsname | Die Art der Aktion, die der Benutzer ausgeführt hat. Sie können diese Dimension als beliebige Metrik verwenden, indem Sie in den Einstellungen für die Datenansicht eine Kopie erstellen. |
-| Verwendetes Attributionsmodell | Der Typ des Attributionsmodells, das die Komponente verwendet. |
-| Komponente | Ein abgeleitetes Feld, das den Komponententyp und den Komponentennamen enthält. |
-| Typ der Komponente | Der Typ der hinzugefügten, entfernten oder geänderten Komponente. |
-| Anmeldebenutzerin bzw. Anmeldebenutzer | Der Benutzer, der die Aktion durchgeführt hat. |
-| Verwendetes Bedienfeld | Das Bedienfeld, in dem die Komponente hinzugefügt, entfernt oder geändert wurde. |
-| Projektname | Der Anzeigename des Projekts. |
-| Projekttyp | Der Projekttyp. |
-| Benutzer-ID | Die Benutzer-ID, die das Ereignis ausgelöst hat. |
-| Verwendete Visualisierung | Die Visualisierung, die hinzugefügt, entfernt oder geändert wurde. |
+* **[!UICONTROL Aktionsname]**: Der Aktionstyp, den der Benutzer ausgeführt hat. Sie können diese Dimension als beliebige Metrik verwenden, indem Sie in den Einstellungen für die Datenansicht eine Kopie erstellen. Zu den Dimensionen gehören:
+   * [!UICONTROL Attribution hinzufügen]
+   * [!UICONTROL Komponente hinzufügen]
+   * [!UICONTROL Bedienfeld hinzufügen]
+   * [!UICONTROL Visualisierung hinzufügen]
+   * [!UICONTROL Erstellen einer neuen geführten Analyse]
+   * [!UICONTROL Neues Projekt erstellen]
+   * [!UICONTROL Komponenten kuratieren]
+   * [!UICONTROL CSV herunterladen]
+   * [!UICONTROL PDF herunterladen]
+   * [!UICONTROL Geführte Analyse laden]
+   * [!UICONTROL Projekt laden]
+   * [!UICONTROL Neue Scorecard geladen]
+   * [!UICONTROL Datenwörterbuch öffnen]
+   * [!UICONTROL Intelligente Untertitel öffnen]
+   * [!UICONTROL Projektfreigabe]
+   * [!UICONTROL Experimentier-Bedienfeld ausführen]
+   * [!UICONTROL Projekt speichern]
+   * [!UICONTROL Scorecard gespeichert]
+   * [!UICONTROL Datei senden]
+   * [!UICONTROL Datei planmäßig senden]
+   * [!UICONTROL Projekt für alle freigeben]
+   * [!UICONTROL Projekt für Workspace-Benutzer freigeben]
+* **[!UICONTROL Attributionsmodell verwendet]**: Der Typ des Attributionsmodells, das die Komponente verwendet. Zu den Dimensionen gehören:
+   * [!UICONTROL Letztkontakt]
+   * [!UICONTROL Erstkontakt]
+   * [!UICONTROL Linear]
+   * [!UICONTROL Beitrag]
+   * [!UICONTROL Selber Kontakt]
+   * [!UICONTROL U-förmig]
+   * [!UICONTROL J-Kurve]
+   * [!UICONTROL Umgekehrt J]
+   * [!UICONTROL Zeitverfall]
+   * [!UICONTROL Benutzerspezifisch]
+   * [!UICONTROL Algorithmisch]
+* **[!UICONTROL Komponentenname]**: Der Name der Komponente, die hinzugefügt, entfernt oder geändert wurde.
+* **[!UICONTROL Komponententyp]**: Der Typ der Komponente, die hinzugefügt, entfernt oder geändert wurde. Zu den Dimensionen gehören:
+   * [!UICONTROL Dimension]
+   * [!UICONTROL Metrik]
+   * [!UICONTROL Filter]
+   * [!UICONTROL Berechnete Kennzahl]
+   * [!UICONTROL Datumsbereich]
+   * [!UICONTROL Anmerkung]
+   * [!UICONTROL Warnhinweis]
+* **[!UICONTROL Benutzer anmelden]**: Der Benutzer, der die Aktion ausgeführt hat.
+* **[!UICONTROL Bedienfeld verwendet]**: Das Bedienfeld, in dem die Komponente hinzugefügt, entfernt oder geändert wurde. Zu den Dimensionen gehören:
+   * [!UICONTROL Attribution]
+   * [!UICONTROL Leeres Bedienfeld]
+   * [!UICONTROL Experimentieren]
+   * [!UICONTROL Freiform]
+   * [!UICONTROL Nächstes oder vorheriges Objekt]
+   * [!UICONTROL Quick Insights]
+   * [!UICONTROL Trends]
+   * [!UICONTROL Trichter]
+   * [!UICONTROL Benutzerwachstum]
+   * [!UICONTROL Auswirkungen]
+   * [!UICONTROL Benutzer-Stream]
+   * [!UICONTROL Kundentreue]
+   * [!UICONTROL Funktionsmatrix]
+* **[!UICONTROL Projektname]**: Der Anzeigename des Projekts.
+* **[!UICONTROL Projekttyp]** Der Projekttyp. Zu den Dimensionen gehören:
+   * `workspace-projects`
+   * `guided-analysis`
+   * `mobile-scorecard-builder`
+* **[!UICONTROL Benutzer-ID]**: Die Benutzer-ID, die das Ereignis ausgelöst hat.
+* **[!UICONTROL Verwendete Visualisierung]**: Die Visualisierung, die hinzugefügt, entfernt oder geändert wurde. Zu den Dimensionen gehören:
+   * [!UICONTROL Freiformtabelle]
+   * [!UICONTROL Kohortentabelle]
+   * [!UICONTROL Fallout]
+   * [!UICONTROL Fluss]
+   * [!UICONTROL Journey Canvas-Reportlet]
+   * [!UICONTROL Bereich]
+   * [!UICONTROL Bereiche gestapelt]
+   * [!UICONTROL Balken]
+   * [!UICONTROL Balken gestapelt]
+   * [!UICONTROL Bullet]
+   * [!UICONTROL Kombination]
+   * [!UICONTROL Ringdiagramm]
+   * [!UICONTROL Histogramm]
+   * [!UICONTROL Horizontalbalken]
+   * [!UICONTROL Horizontalbalken gestapelt]
+   * [!UICONTROL Zusammenfassung einer Schlüsselmetrik]
+   * [!UICONTROL Linie]
+   * [!UICONTROL Zuordnung]
+   * [!UICONTROL Streuung]
+   * [!UICONTROL Bereichs-Kopfzeile]
+   * [!UICONTROL Zusammenfassungsänderung]
+   * [!UICONTROL Zusammenfassungszahl]
+   * [!UICONTROL Text]
+   * [!UICONTROL Treemap]
+   * [!UICONTROL Venn]
 
 Die Produktnutzung verfolgt nicht einzelne Projektkomponenten, wenn ein Projekt lediglich geöffnet oder angezeigt wird. Die Benutzeraktion beim Öffnen eines Projekts wird jedoch verfolgt.
