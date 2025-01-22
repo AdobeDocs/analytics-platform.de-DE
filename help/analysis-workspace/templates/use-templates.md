@@ -4,7 +4,7 @@ title: Verwenden von Vorlagen
 feature: Workspace Basics
 role: User, Admin
 exl-id: d61f215d-9089-4014-9c5a-97f5d7134f34
-source-git-commit: 91c982ac3a8b2286e3da78d50bdf1f378f75e7ec
+source-git-commit: 75a6db5fde167235a86241cb6065602d7157c390
 workflow-type: tm+mt
 source-wordcount: '19288'
 ht-degree: 86%
@@ -1548,4 +1548,3 @@ Die folgenden Vorlagen sind verfügbar:
 | **Journey Optimizer-Landingpages** | Zeigen Sie Benutzerverhalten, Interaktionsmuster, Konversionsraten und andere wichtige Kennzahlen an.<p>**Dies kann Ihnen helfen** die Effektivität Ihrer Landingpage besser zu verstehen. </p><p>**Basierend auf Ihren Erkenntnissen können Sie** verschiedene Maßnahmen ergreifen, z. B. die Leistung Ihrer Landingpage optimieren.</p> |
 | **Journey Optimizer-Übersichtsbericht** | Zeigen Sie eine ausführliche Zusammenfassung der Traffic- und Interaktionsmetriken für alle Kampagnen und Journeys in Ihrer Umgebung an.<p>**Dies kann Ihnen helfen** die allgemeine Effektivität Ihrer Kampagnen und Journey besser zu verstehen. </p><p>**Basierend auf Ihren Erkenntnissen können Sie** verschiedene Maßnahmen ergreifen, z. B. Ihre Kampagnen und Journeys an die Interaktion Ihrer Zielgruppe anpassen.</p> |
 | **Journey Optimizer-Abonnements** | Zeigen Sie die Abonnements und Abmeldungen von Profilen an, die mit bestimmten Listen verknüpft sind.<p>**Dies kann Ihnen helfen**, die Wirksamkeit verschiedener Abonnementkampagnen und -initiativen zur Förderung von Interaktionen und Konversionen besser zu verstehen.</p><p>**Basierend auf Ihren Erkenntnissen können Sie** verschiedene Maßnahmen ergreifen, z. B. Ihre Abonnementkampagnen an die Interaktion Ihrer Zielgruppe anpassen.</p> |
-

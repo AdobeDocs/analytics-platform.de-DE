@@ -4,10 +4,10 @@ title: Intelligente Beschriftungen
 feature: Visualizations
 exl-id: d32d3cda-ecbf-4ee7-a8b7-7c3c71b5df75
 role: User
-source-git-commit: de0eca21fa1b4ac71a8273676e851b596cf911a8
+source-git-commit: 7d103e9d709ec076519360a4b43af44f061171e9
 workflow-type: tm+mt
-source-wordcount: '771'
-ht-degree: 20%
+source-wordcount: '868'
+ht-degree: 16%
 
 ---
 
@@ -76,7 +76,7 @@ ht-degree: 20%
 
 <!-- markdownlint-enable MD034 -->
 
-Intelligente Untertitel verwenden fortschrittliches maschinelles Lernen und generative KI, um wertvolle Einblicke in natürliche Sprachen für Workspace-Visualisierungen bereitzustellen. Die erste Version bietet automatisch generierte Einblicke für die [-](line.md). Weitere Visualisierungen folgen.
+Die Funktion für intelligente Beschriftungen verwendet die erweiterte generative KI , um wichtige Einblicke in die am häufigsten verwendeten Workspace-Visualisierungen in natürlicher Sprache zu erhalten.
 
 Intelligente Beschriftungen sind auf Folgendes ausgerichtet:
 
@@ -85,11 +85,10 @@ Intelligente Beschriftungen sind auf Folgendes ausgerichtet:
 
 ## Intelligente Beschriftungen starten {#launch}
 
-Um automatisch generierte Beschriftungen für eine Linienvisualisierung zu starten, wählen Sie ![AEMScreen](/help/assets/icons/AI.svg) **[!UICONTROL Intelligente Beschriftungen]** oben rechts in der Visualisierung.
+Um automatisch generierte intelligente Beschriftungen für eine Visualisierung zu starten, wählen Sie ![Intelligente Beschriftungen](/help/assets/icons/AI.svg) oben rechts in der Visualisierung aus. Diese Auswahl generiert Erkenntnisse in natürlicher Sprache.
 
-![Fenster „Analyse starten“ mit den intelligenten Beschriftungen für Produktansichten - Trend. ](assets/intell-caps-1.png)
+![Fenster „Analyse starten“ mit den intelligenten Beschriftungen für Produktansichten - Trend. ](assets/intelligent-captions.gif)
 
-Erkenntnisse in natürlicher Sprache werden generiert.
 
 Bedenken Sie Folgendes:
 
@@ -97,13 +96,28 @@ Bedenken Sie Folgendes:
 
 * Beschriftungen werden jedes Mal generiert, wenn sich die zugrunde liegenden ausgewählten Daten in der Tabelle ändern, die die Visualisierung ermöglicht.
 
-* Wenn die Tabelle mehrere Metriken enthält, werden Beschriftungen nur für die erste Metrik oder die Metrik generiert, die derzeit vom Benutzer ausgewählt wird.
+* Wenn eine verknüpfte Freiformtabelle mehrere Metriken enthält, werden Beschriftungen nur für die erste Metrik oder die Metrik generiert, die derzeit vom Benutzer ausgewählt wird. Es können jedoch Beschriftungen für mehrere Metriken für die Linien- und Bereichsvisualisierungen generiert werden.
 
 * Wenn Sie das Projekt an einem bestimmten Punkt speichern und später erneut laden, werden die Beschriftungen automatisch mit neuen Daten aktualisiert. Dasselbe gilt für geplante Projekte und das PDF von Dateien, die aus einem Projekt exportiert wurden.
 
-Im Folgenden finden Sie ein Beispiel dafür, wie intelligente Beschriftungen aussehen könnten:
 
-![Intelligente Beschriftungen für die Linienvisualisierung einschließlich Saisonalität, Min., Max., Spitze und Rückgang.](assets/captions.png)
+## Visualisierungen {#visualizations}
+
+Intelligente Beschriftungen werden in den folgenden Visualisierungen unterstützt:
+
+* [Line](line.md) (einschließlich mehrzeilig)
+* [Balken](bar.md)
+* [Horizontalbalken](horizontal-bar.md)
+* [Bereich](area.md) (einschließlich mehrerer Bereichslinien)
+* [Ringdiagramm](donut.md)
+* [Fallout](fallout/fallout-flow.md)
+* [Fluss](c-flow/flow.md)
+
+<!--
+Here is an example of what intelligent captions could look like:
+
+![Intelligent captions for Line visualization including Seasonality, Min, Max, Spike, and Decline.](assets/captions.png)
+-->
 
 ## Aktionen
 
@@ -111,15 +125,24 @@ Sie können die folgenden Aktionen für intelligente Beschriftungen ausführen:
 
 ### In Zwischenablage kopieren {#copy}
 
-Sie können die Untertitel in eine Zwischenablage kopieren und in einen PowerPoint oder andere Tools einfügen. Wählen ![ oben rechts ](/help/assets/icons/Copy.svg) Dialogfeld „Beschriftungen in Zwischenablage kopieren“ aus.
+Sie können die Untertitel in eine Zwischenablage kopieren und in einen PowerPoint oder andere Tools einfügen. Sie können einzelne Beschriftungen in der Einzelansicht kopieren, oder Sie können alle Beschriftungen gleichzeitig in die erweiterte Beschriftungsansicht kopieren.
+
+* Um die Beschriftungen zu kopieren![ wählen Sie oben ](/help/assets/icons/Copy.svg) im Dialogfeld „Beschriftungen“ die Option „Beschriftungen in Zwischenablage kopieren“ aus.
+
+### Alle oder einzelne intelligente Beschriftungen anzeigen  {#show-all-or-individual}
+
+Sie können alle intelligenten Beschriftungen gleichzeitig in einer erweiterten Ansicht anzeigen, oder Sie können einzelne intelligente Beschriftungen einzeln anzeigen.
+
+* Um alle intelligenten Beschriftungen anzuzeigen, wählen Sie ![Alle intelligenten Beschriftungen anzeigen](/help/assets/icons/Maximize.svg) aus.
+* Um einzelne intelligente Beschriftungen einzeln anzuzeigen, wählen Sie ![Einzelne intelligente Beschriftungen anzeigen](/help/assets/icons/Minimize.svg).
 
 ### Anzeige bearbeiten {#edit}
 
 Sie können die Anzeige von Beschriftungen bearbeiten, z. B. das Ausblenden oder Einblenden einer bestimmten Kategorie von Einblicken.
 
-1. Wählen ![ Dialogfeld „Intelligente Beschriftungen bearbeiten](/help/assets/icons/EditInLight.svg) aus.
+1. Wählen ![Sichtbarkeit intelligenter Beschriftungen bearbeiten](/help/assets/icons/EditInLight.svg) im Dialogfeld „Intelligente Beschriftungen“ aus.
 
-1. Schalten Sie zwischen ![Sichtbarkeit](/help/assets/icons/Visibility.svg) um, um eine bestimmte Einsicht anzuzeigen (z. B **[!UICONTROL Min]**), oder ![SichtbarkeitAus](/help/assets/icons/VisibilityOff.svg) um eine bestimmte Einsicht auszublenden (z. B. **[!UICONTROL Spike]**).
+1. Schalten Sie zwischen ![Sichtbarkeit ein/aus](/help/assets/icons/Visibility.svg) um eine bestimmte Einsicht anzuzeigen (z. B **[!UICONTROL Min]**) oder ![Sichtbarkeit ein/aus](/help/assets/icons/VisibilityOff.svg) um eine bestimmte Einsicht auszublenden (z. B. **[!UICONTROL Spike]**).
 
    ![Intelligente Beschriftungen bearbeiten](assets/edit-intelligent-captions.png)
 
@@ -128,7 +151,7 @@ Sie können die Anzeige von Beschriftungen bearbeiten, z. B. das Ausblenden oder
 
 ### Feedback geben
 
-Sie können Feedback zu den generierten intelligenten Beschriftungen geben.
+Sie können Feedback zu den generierten intelligenten Beschriftungen geben (Feedback kann nur in der erweiterten Beschriftungsansicht bereitgestellt werden).
 
 1. Wählen ![Weitere Aktionen](/help/assets/icons/More.svg) im Dialogfeld für intelligente Beschriftungen aus.
 
@@ -162,7 +185,7 @@ Die folgenden Parameter regeln den Zugriff auf intelligente Beschriftungen:
 
 * **Lösungszugriff**: Die Funktion für intelligente Beschriftungen ist auf Customer Journey Analytics verfügbar, aber nicht in Adobe Analytics.
 
-* **Vertragszugriff**: Wenn Sie keine intelligenten Beschriftungen verwenden können, wenden Sie sich an den Administrator oder den Adobe-Kontobeauftragten Ihres Unternehmens. Bevor Sie intelligente Beschriftungen in Ihrer Organisation verwenden können, müssen Sie bestimmten GenAI-bezogenen rechtlichen Begriffen zustimmen.
+* **Vertragszugriff**: Wenn Sie keine intelligenten Beschriftungen verwenden können, wenden Sie sich an den Administrator oder den Adobe-Kontobeauftragten Ihres Unternehmens (Admin). Bevor Sie intelligente Beschriftungen in Ihrer Organisation verwenden können, müssen Sie bestimmten rechtlichen Begriffen im Zusammenhang mit Generative AI zustimmen.
 
 * **Berechtigungen**: In der [!UICONTROL Adobe Admin Console] bestimmt die Berechtigung  Reporting-Tools **[!UICONTROL Intelligente Beschriftungen]** den Zugriff. Ein [Produktprofil-Administrator](https://helpx.adobe.com/de/enterprise/using/manage-product-profiles.html) muss diese Schritte in der [!UICONTROL Admin Console ausführen]:
    1. Navigieren Sie zu **[!UICONTROL Admin Console]** > **[!UICONTROL Produkte und Services]** > **[!UICONTROL Customer Journey Analytics]** > **[!UICONTROL Produktprofile]**.
