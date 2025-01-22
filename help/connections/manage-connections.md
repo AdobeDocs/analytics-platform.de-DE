@@ -48,17 +48,17 @@ Die folgenden Spalten oder Symbole sind in der Tabelle verfügbar.
 | [!UICONTROL Datensätze] | Eine oder mehrere Verknüpfungen zu den Datensätzen, die Teil der Verbindung sind. Sie können den Datensatz-Hyperlink auswählen, um den Datensatz in der Verbindung anzuzeigen. Wenn weitere Datensätze Teil der ausgewählten Verbindung sind, wählen Sie **[!UICONTROL +*x* more]** aus, um das Bedienfeld **[!UICONTROL Datensätze enthalten]** anzuzeigen. In diesem Bedienfeld werden Links zu allen Datensätzen und eine Option zum Suchen nach einem bestimmten Datensatz angezeigt, der Teil der Verbindung ist.<p><img src="./assets/datasets-included.png" alt="Enthaltene Datensätze" width="400"/><p>Wenn Sie einen Datensatznamen auswählen, wird der Datensatz in der Experience Platform-Benutzeroberfläche auf einer neuen Registerkarte geöffnet. |
 | [!UICONTROL Sandbox] | Die [Experience Platform-Sandbox](https://experienceleague.adobe.com/de/docs/experience-platform/sandbox/home) aus der diese Verbindung ihre Datensätze zieht. Diese Sandbox wurde beim erstmaligen Erstellen der Verbindung ausgewählt. Sie kann nicht geändert werden. |
 | [!UICONTROL Inhaber] | Die Person, die die Verbindung hergestellt hat. |
-| [!UICONTROL Importieren neuer Daten] | Der Status des Imports neuer Daten für Datensätze: <p>![Status grün](assets/status-green.svg))    **[!UICONTROL _x _Ein]**für Datensätze, die zum Importieren neuer Daten konfiguriert sind, und<p>![Status grau](assets/status-gray.svg)   **[!UICONTROL _x Aus_]** für Datensätze, die nicht für den Import neuer Daten konfiguriert sind. |
+| [!UICONTROL Importieren neuer Daten] | Der Status des Imports neuer Daten für Datensätze: <p>![Status grün](assets/status-green.svg))    **[!UICONTROL _x _Ein]** für Datensätze, die zum Importieren neuer Daten konfiguriert sind, und<p>![Status grau](assets/status-gray.svg)   **[!UICONTROL _x Aus_]** für Datensätze, die nicht für den Import neuer Daten konfiguriert sind. |
 | [!UICONTROL Erstellt am] | Der Zeitstempel, zu dem die Verbindung erstellt wurde. |
 | [!UICONTROL Zuletzt geändert] | Der Zeitstempel, wann die Verbindung zuletzt aktualisiert wurde. |
-| [!UICONTROL Aufstockungsdaten] | Der Status für die Aufstockung von Daten in allen Datensätzen.<p>![Status rot](assets/status-red.svg)   **[!UICONTROL _x _Aufstockungen fehlgeschlagen]**für die Anzahl der fehlgeschlagenen Aufstockungen über Datensätze hinweg,<p>![Status orange](assets/status-orange.svg)   **[!UICONTROL _x _Aufstockungsverarbeitung]**für die Anzahl der Verarbeitungs-Aufstockungen über Datensätze hinweg,<p>![Status grün](assets/status-green.svg)   **[!UICONTROL _x _Aufstockungen abgeschlossen]**für die Anzahl der abgeschlossenen Aufstockungen für Datensätze und<p>![Status grau](assets/status-gray.svg)   **[!UICONTROL _Aus_]** falls für die Datensätze in der Verbindung keine Aufstockungen definiert sind. |
+| [!UICONTROL Aufstockungsdaten] | Der Status für die Aufstockung von Daten in allen Datensätzen.<p>![Status rot](assets/status-red.svg)   **[!UICONTROL _x _Aufstockungen fehlgeschlagen]**für die Anzahl der fehlgeschlagenen Aufstockungen über Datensätze hinweg,<p>![Status orange](assets/status-orange.svg)   **[!UICONTROL _x _Aufstockungsverarbeitung]**für die Anzahl der Verarbeitungs-Aufstockungen über Datensätze hinweg,<p>![Status grün](assets/status-green.svg)   **[!UICONTROL _x _Aufstockungen abgeschlossen]** für die Anzahl der abgeschlossenen Aufstockungen für Datensätze und<p>![Status grau](assets/status-gray.svg)   **[!UICONTROL _Aus_]** falls für die Datensätze in der Verbindung keine Aufstockungen definiert sind. |
 
 Um zu konfigurieren, welche Spalten angezeigt werden sollen, wählen ![Spalteneinstellungen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ColumnSettings_18_N.svg) aus. Dadurch wird das Dialogfeld **Tabelle anpassen** angezeigt, in dem Sie Spalten in der Tabelle aktivieren oder deaktivieren können.
 
 ### Verbindung bearbeiten
 
 1. Klicken Sie ![Mehr](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) neben dem Verbindungsnamen
-1. Wählen ![ im ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) die Option **[!UICONTROL Bearbeiten]** aus.
+1. Wählen ![im](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) die Option **[!UICONTROL Bearbeiten]** aus.
 
 Alternativ haben Sie folgende Möglichkeiten:
 
@@ -93,7 +93,7 @@ Wenn Sie eine Verbindung löschen, zeigt das Bedienfeld **[!UICONTROL Verbindung
 
 Wählen Sie **[!UICONTROL Fortfahren]** aus, um die Verbindung zu löschen.
 
-Weitere Informationen [ Löschen einer Verbindung finden ](/help/technotes/deletion.md) unter „Auswirkungen des Löschens“.
+Weitere Informationen [Löschen einer Verbindung finden](/help/technotes/deletion.md) unter „Auswirkungen des Löschens“.
 
 
 ### Datenansicht für eine Verbindung erstellen
