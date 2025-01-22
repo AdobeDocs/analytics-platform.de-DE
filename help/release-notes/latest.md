@@ -1,38 +1,46 @@
 ---
-title: Aktuelle Versionshinweise zu Customer Journey Analytics anzeigen
-description: Neueste Versionshinweise zu Customer Journey Analytics
+title: Aktuelle Versionshinweise zu Customer Journey Analytics
+description: Aktuelle Customer Journey Analytics-Versionshinweise anzeigen
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: f1474d55a262b25a76ac474db867cc9f0c2d2e36
+source-git-commit: eff900722dc06d3bb272d1143c0e2344855e3c5c
 workflow-type: tm+mt
-source-wordcount: '374'
-ht-degree: 100%
+source-wordcount: '700'
+ht-degree: 29%
 
 ---
 
-# Aktuelle Versionshinweise zu Adobe Customer Journey Analytics (23. Oktober 2024)
+# Aktuelle Versionshinweise zu Adobe Customer Journey Analytics (Januar 2025)
 
-**Letzte Aktualisierung:** Dienstag, 13. Januar 2025
+**Letzte Aktualisierung:** Donnerstag, 22. Januar 2025
 
-Diese Versionshinweise beziehen sich auf den Veröffentlichungszeitraum vom 15. Oktober 2024 bis Ende 2024. Versionen von Adobe Customer Journey Analytics basieren auf einem [Modell der kontinuierlichen Bereitstellung](releases.md), das einen besser skalierbaren, schrittweisen Ansatz für die Implementierung von Funktionen ermöglicht. Dementsprechend werden diese Versionshinweise mehrmals im Monat aktualisiert. Bitte überprüfen Sie sie regelmäßig.
+Diese Versionshinweise decken den Veröffentlichungszeitraum vom 23. Oktober 2024 bis zum 30. Januar 2025 ab. Versionen von Adobe Customer Journey Analytics basieren auf einem [Modell der kontinuierlichen Bereitstellung](releases.md), das einen besser skalierbaren, schrittweisen Ansatz für die Implementierung von Funktionen ermöglicht. Dementsprechend werden diese Versionshinweise mehrmals im Monat aktualisiert. Bitte überprüfen Sie sie regelmäßig.
 
 ## Neue oder aktualisierte Funktionen
 
 | Funktion | Beschreibung | [Rollout-Beginn](releases.md) | [Allgemeine Verfügbarkeit](releases.md) |
 | ----------- | ---------- | ------- | ---- |
-| **Asset-Übertragung** | Ermöglicht die Übertragung der Eigentümerschaft an Komponenten wie Projekten, Filtern und berechneten Metriken an andere Benutzende, um Kontinuität und angemessenen Zugriff sicherzustellen. [Weitere Informationen](/help/tools/asset-transfer/transfer-assets.md) |  | 15. Oktober |
-| **Geführte Analyse: Einbetten in Workspace** | Die [geführte Analyse](https://experienceleague.adobe.com/de/docs/analytics-platform/using/guided-analysis/overview) ist jetzt direkt in Analysis Workspace verfügbar, sodass Benutzende Dashboards mit umfassenden Einblicken aus Bedienfeldern, Visualisierungen und geführten Analysen erstellen können. In einem neuen Bereich der linken Leiste können Sie neue geführte Analysen erstellen, die Sie Ihren Projekten hinzufügen können. Sie können auch auf gespeicherte geführte Analysen zugreifen, die in vielen Projekten als Bausteine wiederverwendet werden können. | 2. Oktober 2024 | 23. Oktober 2024 |
-| **Produktnutzung** | Erfahren Sie, wie Ihr Unternehmen Customer Journey Analytics verwendet. Durch die Aktivierung dieser Funktion wird ein Datensatz in Adobe Experience Platform erstellt, der Daten erfasst, wenn Personen in Ihrem Unternehmen Analysis Workspace verwenden. Eine Verbindung und eine Datenansicht werden ebenfalls automatisch erstellt, sodass Sie auf verschiedene Dimensionen zugreifen können, darunter die Top-Projekttypen, die aktivsten Benutzenden und die beliebtesten in Projekten verwendeten Komponenten. [Weitere Informationen](/help/tools/product-usage/usage-overview.md) | 23. Oktober 2024 | Januar 2025 |
-| **Neue Informationen zu Anfragefaktoren bei der Leistung von Analysis Workspace** | Bei der Leistungsanalyse in Analysis Workspace ist jetzt ein neuer Abschnitt „Anfragefaktoren“ verfügbar. Weitere Informationen zur Verarbeitung von Anfragen und zu den verschiedenen Faktoren, die die Verarbeitungszeiten beeinflussen, finden Sie unter „Anfragefaktoren“ unter [Optimieren der Analysis Workspace-Leistung](https://experienceleague.adobe.com/de/docs/analytics-platform/using/technotes/optimizing-performance#request-factors). |  | 1. Oktober 2024 |
-
+| **Das Erlebnis zur Nutzung von Verbindungen wurde aktualisiert** | Die **[!UICONTROL Nutzung]** in Verbindung bietet jetzt erweiterte Visualisierungen für diese Arten von berichtspflichtigen Zeilen: Kern-, aufgenommene und historische Daten. Sie können die Nutzungsdaten auch nach Verbindung, Datensatz, Sandbox oder Tag anzeigen und aufschlüsseln. [Weitere Informationen](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-connections/manage-connections#connections-usage) |  | Donnerstag, 15. Januar 2025 |
+| **API zum Migrieren von Adobe Analytics-Projekten und zugehörigen Komponenten zum Customer Journey Analytics** | Es ist jetzt eine API für die Migration Ihrer Adobe Analytics-Projekte verfügbar und enthält Komponenten zum Customer Journey Analytics. Zuvor war die Migration von Projekten und Komponenten nur über die Benutzeroberfläche verfügbar. [Weitere Infos](https://adobedocs.github.io/analytics-2.0-apis/?urls.primaryName=CJA%20Migration%20APIs). Wählen **CJA-Migrations** APIs) aus dem Dropdown-Menü aus. |  | Donnerstag, 15. Januar 2025 |
+| **Verwenden Sie benutzerdefinierte Vorlagen vom Customer Journey Analytics auf der Seite „Berichte“ in Journey Optimizer** | Sie können jetzt die neue Berichterstellungsoberfläche in Adobe Journey Optimizer anpassen, indem Sie eine Vorlage auf Customer Journey Analytics erstellen oder bearbeiten und anschließend die Vorlage speichern, die auf der Seite „Berichte“ in Journey Optimizer verwendet werden soll. Zuvor konnte die neue Berichterstellungsoberfläche in Adobe Journey Optimizer nicht angepasst werden. <p>Weitere Informationen finden Sie unter „Erstellen einer Vorlage“ oder „Bearbeiten oder Löschen einer Vorlage“ in [Erstellen und verwalten](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/templates/create-templates).  |  | Donnerstag, 15. Januar 2025 |
+| **Vorlagen in Analysis Workspace** | Vorlagen sind jetzt als Customer Journey Analytics verfügbar.<ul><li>**Vordefinierte Vorlagen**: Eine große Auswahl vordefinierter Vorlagen ist verfügbar. Mithilfe dieser Vorlagen können Sie schnell Einblicke in die gängigsten Reporting-Szenarien erhalten. Vordefinierte Vorlagen können so verwendet werden, wie sie sind. Oder sie können als Ausgangspunkt für ein Projekt verwendet werden, das dann besser an einen bestimmten Zweck angepasst werden kann. [Weitere Informationen](/help/analysis-workspace/templates/use-templates.md)</li><li>**Unternehmensvorlagen**: Administratoren können Unternehmensvorlagen erstellen, um die Anforderungen von Anwendungsfällen zu erfüllen, die für ihre Organisation spezifisch sind. Unternehmensvorlagen, die Administratoren erstellen, stehen Benutzern in ihrer Organisation zur Verfügung. [Weitere Informationen](/help/analysis-workspace/templates/create-templates.md)</li></ul> | Januar 15 | Freitag, 30. Januar 2025 |
+| **Produktnutzung** | Erfahren Sie, wie Ihr Unternehmen Customer Journey Analytics verwendet. Durch die Aktivierung dieser Funktion wird ein Datensatz in Adobe Experience Platform erstellt, der Daten erfasst, wenn Personen in Ihrem Unternehmen Analysis Workspace verwenden. Eine Verbindung und eine Datenansicht werden ebenfalls automatisch erstellt, sodass Sie auf verschiedene Dimensionen zugreifen können, darunter die Top-Projekttypen, die aktivsten Benutzenden und die beliebtesten in Projekten verwendeten Komponenten. [Weitere Informationen](/help/tools/product-usage/usage-overview.md) | 23. Oktober 2024 | 22. Januar 2025 |
+| **Intelligente Beschriftungen v2** | Intelligente Beschriftungen werden jetzt für die folgenden Visualisierungen unterstützt: Mehrzeilig, Balken, Horizontalbalken, Ringdiagramme, Fläche, Fluss und Fallout. Sie können auswählen, ob alle intelligenten Beschriftungen gleichzeitig in einer erweiterten Ansicht angezeigt werden sollen, oder Sie können einzelne intelligente Beschriftungen einzeln anzeigen. [Weitere Informationen](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/visualizations/intelligent-captions) |  | 22. Januar 2025 |
+| **Geführte Analysen zu Projekten aus der geführten Analyse hinzufügen** | Ermöglicht das Hinzufügen geführter Analysen zu Workspace-Projekten aus der geführten Analyse heraus. Sie können geführte Analysen auch direkt in Analysis Workspace hinzufügen. [Weitere Informationen](https://experienceleague.adobe.com/de/docs/analytics-platform/using/guided-analysis/overview) |  | 22. Januar 2025 |
+| **Mediensammlung: Adobe-Source-Connector-Aktualisierungen für neues XDM für Medienberichte** | Analytics Source Connector ordnet automatisch Streaming-Mediendaten in Adobe Analytics den Feldern zu, die von Web SDK verwendet werden. Derzeit werden die Daten sowohl den alten als auch den neuen Speicherorten zugeordnet, aber in Zukunft wird nur der neue Speicherort verwendet. (Link zur Dokumentation folgt) |  | Freitag, 30. Januar 2025 |
 
 ## Fehlerbehebungen in Customer Journey Analytics
 
-Zielgruppen: AN-359692
-Verbindungen: AN-360403
-Vollständiger Tabellenexport: AN-359785
-Berichterstellung: AN-350707; AN-355331; AN-359308; AN-359826; AN-359915; AN-360097; AN-360245
-Report Builder: AN-361022
+WARNHINWEISE: AN-363263; AN-364880; AN-365029; AN-365960
+Zielgruppen: AN-362564; AN-363254;
+Datenaufnahme: AN-362359; AN-362751
+Datenansichten: AN-362089; AN-365213; AN-365770; AN-366171
+Abgeleitete Felder: AN-359711; AN-362496
+Speicherort exportieren: AN-363999
+Vollständiger Tabellenexport: AN-363055
+Report Builder: AN-362937
+Workspace: AN-359012; AN-359145; AN-359914; AN-361455; AN-361934; AN-362469; AN-363460; AN-364714; AN-364918; AN-366277;
+
 
 ## Wichtige Hinweise für Customer Journey Analytics-Admins
 
