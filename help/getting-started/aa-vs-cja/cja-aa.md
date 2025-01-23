@@ -5,10 +5,10 @@ exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: Basics
 role: User
-source-git-commit: 8c4b42c0046068ba45a47ecd9c7eab2ed89028e5
+source-git-commit: 55da4faa73d708a450274c2b4d44c246ef5feb49
 workflow-type: tm+mt
-source-wordcount: '2386'
-ht-degree: 95%
+source-wordcount: '2417'
+ht-degree: 94%
 
 ---
 
@@ -33,7 +33,8 @@ In der folgenden Tabelle sind Funktionen aufgeführt, die in Customer Journey An
 | **Prognose** | Die [Prognose](/help/analysis-workspace/c-forecast/forecasting.md) ist eine KI/ML-Funktion, die eine statistische Prognose für zeitreihenbezogene Daten enthält, die auf den bereits in Customer Journey Analytics vorhandenen historischen Daten basiert. Prognosen können in Freiformtabellen und Liniendiagrammvisualisierungen angezeigt werden. |
 | **Geführte Analyse** | Mit [geführten Analysen](/help/guided-analysis/overview.md) können Benutzende hochwertige Daten und Erkenntnisse zur Customer Journey mithilfe geführter Workflows selbst bereitstellen, die auf den kanalübergreifenden Daten von Customer Journey Analytics basieren. |
 | **Intelligente Untertitel** | [Intelligente Beschriftungen](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/visualizations/intelligent-captions) Verwenden Sie fortschrittliches maschinelles Lernen und generative KI, um wertvolle Erkenntnisse in natürlicher Sprache für Workspace-Visualisierungen bereitzustellen. Intelligente Beschriftungen werden für die folgenden Visualisierungen unterstützt: Linie, Mehrzeilig, Balken, Horizontalbalken, Ringdiagramme, Fläche, Fluss und Fallout. |
-| **Produktnutzung** | [Produktnutzung]https://experienceleague.adobe.com/en/docs/analytics-platform/using/tools/product-usage/usage-overview() zeigt Ihnen, wie Ihr Unternehmen Customer Journey Analytics verwendet. |
+| **Journey-Arbeitsfläche** | [Journey-Arbeitsfläche](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/visualizations/journey-canvas/journey-canvas?lang=en) ist eine Visualisierung in Analysis Workspace, mit der Sie analysieren können, wie Personen eine definierte Journey durchlaufen oder aus ihr herausfallen. |
+| **Produktnutzung** | [Produktnutzung](https://experienceleague.adobe.com/en/docs/analytics-platform/using/tools/product-usage/usage-overview() zeigt Ihnen, wie Ihr Unternehmen Customer Journey Analytics verwendet. |
 | **Umwandlungen zum Zeitpunkt der Berichtserstellung** | [Datenansichten](/help/data-views/data-views.md) in Customer Journey Analytics ermöglichen eine weiter gehende Interpretation von Daten aus einer Verbindung. Sie können Daten ändern oder entfernen, ohne Ihre Implementierung zu ändern, Teilzeichenfolgen verwenden, um Dimensionen zu bearbeiten, Metriken aus beliebigen Werten erstellen oder Teilereignisse filtern. Alle diese Umwandlungen erfolgen zerstörungsfrei. Adobe Analytics bietet begrenzte Möglichkeiten durch Virtual Report Suites und benutzerdefinierte Sitzungslängen. |
 | **SQL-Zugriff** | Mit der Data Distiller-Option kann Customer Journey Analytics die Einschränkungen in Bezug auf die per Backend-Verarbeitung von Adobe erfassten Daten aufheben. Sie können Ihre Daten mit SQL ändern, unternehmensspezifische Werte und Datensätze erstellen und Ihre Entdeckungsreise fortsetzen. Analytics unterstützt keinen SQL-Zugriff auf seine Daten. |
 | **Zuordnung** | Die [Zuordnung](/help/stitching/overview.md) ist eine leistungsstarke Funktion, die die Eignung eines Ereignis-Datensatzes für die kanalübergreifende Analyse erhöht. Die kanalübergreifende Analyse ist ein Hauptanwendungsfall, den Customer Journey Analytics handhaben kann. So können Sie Berichte auf Basis einer gemeinsamen Kennung (Personen-ID) nahtlos kombinieren und für mehrere Datensätze aus verschiedenen Kanälen ausführen. |
@@ -46,6 +47,7 @@ In der folgenden Tabelle sind Funktionen aufgeführt, die in Customer Journey An
 | Adobe Analytics-Funktion | Hinweise zur CJA-Unterstützung |
 | --- | --- |
 | **Anomalieerkennung** | Vollständige Unterstützung |
+| **Asset-Übertragung** | Vollständige Unterstützung |
 | **Attribution IQ** | Vollständige Unterstützung |
 | **Bot-Erkennung** | [Vollständige Unterstützung](https://experienceleague.adobe.com/docs/experience-platform/datastreams/bot-detection.html?lang=de) |
 | **Berechnete Metriken** | Vollständige Unterstützung. Vorhandene berechnete Metriken im herkömmlichen Analysis Workspace werden nicht nach Customer Journey Analytics portiert. |
