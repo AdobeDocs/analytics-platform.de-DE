@@ -5,7 +5,7 @@ exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: Basics
 role: User
-source-git-commit: 55da4faa73d708a450274c2b4d44c246ef5feb49
+source-git-commit: c2e7b0595a719faa751e3cb39668006db0d89d48
 workflow-type: tm+mt
 source-wordcount: '2417'
 ht-degree: 94%
@@ -34,7 +34,7 @@ In der folgenden Tabelle sind Funktionen aufgeführt, die in Customer Journey An
 | **Geführte Analyse** | Mit [geführten Analysen](/help/guided-analysis/overview.md) können Benutzende hochwertige Daten und Erkenntnisse zur Customer Journey mithilfe geführter Workflows selbst bereitstellen, die auf den kanalübergreifenden Daten von Customer Journey Analytics basieren. |
 | **Intelligente Untertitel** | [Intelligente Beschriftungen](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/visualizations/intelligent-captions) Verwenden Sie fortschrittliches maschinelles Lernen und generative KI, um wertvolle Erkenntnisse in natürlicher Sprache für Workspace-Visualisierungen bereitzustellen. Intelligente Beschriftungen werden für die folgenden Visualisierungen unterstützt: Linie, Mehrzeilig, Balken, Horizontalbalken, Ringdiagramme, Fläche, Fluss und Fallout. |
 | **Journey-Arbeitsfläche** | [Journey-Arbeitsfläche](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/visualizations/journey-canvas/journey-canvas?lang=en) ist eine Visualisierung in Analysis Workspace, mit der Sie analysieren können, wie Personen eine definierte Journey durchlaufen oder aus ihr herausfallen. |
-| **Produktnutzung** | [Produktnutzung](https://experienceleague.adobe.com/en/docs/analytics-platform/using/tools/product-usage/usage-overview() zeigt Ihnen, wie Ihr Unternehmen Customer Journey Analytics verwendet. |
+| **Produktnutzung** | [Produktnutzung](https://experienceleague.adobe.com/de/docs/analytics-platform/using/tools/product-usage/usage-overview) zeigt Ihnen, wie Ihr Unternehmen Customer Journey Analytics verwendet. |
 | **Umwandlungen zum Zeitpunkt der Berichtserstellung** | [Datenansichten](/help/data-views/data-views.md) in Customer Journey Analytics ermöglichen eine weiter gehende Interpretation von Daten aus einer Verbindung. Sie können Daten ändern oder entfernen, ohne Ihre Implementierung zu ändern, Teilzeichenfolgen verwenden, um Dimensionen zu bearbeiten, Metriken aus beliebigen Werten erstellen oder Teilereignisse filtern. Alle diese Umwandlungen erfolgen zerstörungsfrei. Adobe Analytics bietet begrenzte Möglichkeiten durch Virtual Report Suites und benutzerdefinierte Sitzungslängen. |
 | **SQL-Zugriff** | Mit der Data Distiller-Option kann Customer Journey Analytics die Einschränkungen in Bezug auf die per Backend-Verarbeitung von Adobe erfassten Daten aufheben. Sie können Ihre Daten mit SQL ändern, unternehmensspezifische Werte und Datensätze erstellen und Ihre Entdeckungsreise fortsetzen. Analytics unterstützt keinen SQL-Zugriff auf seine Daten. |
 | **Zuordnung** | Die [Zuordnung](/help/stitching/overview.md) ist eine leistungsstarke Funktion, die die Eignung eines Ereignis-Datensatzes für die kanalübergreifende Analyse erhöht. Die kanalübergreifende Analyse ist ein Hauptanwendungsfall, den Customer Journey Analytics handhaben kann. So können Sie Berichte auf Basis einer gemeinsamen Kennung (Personen-ID) nahtlos kombinieren und für mehrere Datensätze aus verschiedenen Kanälen ausführen. |

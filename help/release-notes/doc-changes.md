@@ -4,10 +4,10 @@ description: Listet Inhaltsaktualisierungen für Dokumentation zu Customer Journ
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: c5e5963e6dc4d97de012f825bbea4445cc72d622
+source-git-commit: c2e7b0595a719faa751e3cb39668006db0d89d48
 workflow-type: tm+mt
-source-wordcount: '4256'
-ht-degree: 98%
+source-wordcount: '4402'
+ht-degree: 95%
 
 ---
 
@@ -21,7 +21,8 @@ Die folgenden Aktualisierungen wurden seit der ersten Erstellung der Customer Jo
 | --- | --- |
 | **Januar 2025** |  |
 | Nutzungsmetriken | Die Dokumentation zur verbesserten Benutzeroberfläche [Nutzungsmetriken](/help/connections/manage-connections.md#usage) wurde aktualisiert. |
-
+| Produktnutzung | [Produktnutzung](https://experienceleague.adobe.com/de/docs/analytics-platform/using/tools/product-usage/usage-overview) zeigt Ihnen, wie Ihr Unternehmen Customer Journey Analytics verwendet. |
+| Geführte Analyse | Die Dokumentation wurde mit der Verfügbarkeit von [Geführte Analyse](/help/guided-analysis/overview.md) aus der geführten Analyse aktualisiert. |
 
 ## 2024
 
@@ -31,15 +32,19 @@ Die folgenden Aktualisierungen wurden seit der ersten Erstellung der Customer Jo
 | Anwendungsfälle für BI-Erweiterungen | Dokumentation zu mehreren [Anwendungsfällen für BI-Erweiterungen](/help/use-cases/data-views/bi-extension-usecases.md) für BI-Tools wie Power BI Desktop und Tableau Desktop. |
 | Zuordnungen und Datenschutzanfragen | Es wurde ein Hinweis zu [bevorstehenden Änderungen des Verfahrens zum Aufheben der Zuordnung](/help/stitching/faq.md#frequently-asked-questions) hinzugefügt, die sich aufgrund von Datenschutzanfragen ergeben. |
 | **Oktober 2024** | |
+| Journey Canvas-Visualisierung | [Journey-Arbeitsfläche](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/visualizations/journey-canvas/journey-canvas?lang=en) ist eine Visualisierung in Analysis Workspace, mit der Sie analysieren können, wie Personen eine definierte Journey durchlaufen oder aus ihr herausfallen. |
+| Asset-Übertragung | Ermöglicht die [Übertragung der Verantwortung](https://experienceleague.adobe.com/en/docs/analytics-platform/using/tools/asset-transfer/transfer-assets) von Komponenten wie Projekten, Filtern und berechneten Metriken an andere Benutzer, um Kontinuität und angemessenen Zugriff sicherzustellen. |
 | Verbesserte Benutzeroberfläche | Der Artikel zur verbesserten Benutzeroberfläche wurde aktualisiert, um Ihre [Verwendung aufgenommener und meldepflichtiger Zeilen über alle Verbindungen hinweg“ ](/help/connections/manage-connections.md#usage) |
 | Gemeinsam verwendete Geräte | Es wurde ein [Anwendungsfall-Artikel](/help/use-cases/stitching/shared-devices.md) hinzugefügt, der Informationen zu gemeinsam verwendeten Geräten bietet. Außerdem wird erklärt, wie Daten von gemeinsam verwendeten Geräten mithilfe von Zuordnungen gehandhabt und eingeschränkt werden und wie sich gemeinsam verwendete Geräte auf Daten auswirken. Hierzu wird der Abfrage-Service genutzt. |
 | Neue Informationen zu Anfragefaktoren in der Leistung von Analysis Workspace | In einem neuen Abschnitt [Anfragefaktoren](/help/technotes/optimizing-performance.md#request-factors) im Artikel [Optimieren der Leistung von Analysis Workspace](/help/technotes/optimizing-performance.md) wird erläutert, wie Anfragen verarbeitet werden und welche Faktoren die Verarbeitungszeiten beeinflussen. |
 | Workspace und Komponenten | Die Dokumentation zu Analysis Workspace-Projekten (Projekte, Visualisierungen und Bedienfelder) und Komponenten (Anmerkungen, Dimensionen, [berechnete] Metriken, Filter, Datumsbereiche, Warnhinweise, geplante Projekte und Zielgruppen) wurde aktualisiert. |
 | Geführte Analyse | Die Dokumentation wurde mit der Verfügbarkeit der [geführten Analyse](/help/guided-analysis/overview.md) von Analysis Workspace aus aktualisiert. |
+| Aktualisierte Zielgruppen-Dokumentation | Beim [Erstellen einer Zielgruppe](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-components/audiences/publish?lang=en) aus einer Visualisierung in Analysis Workspace sind jetzt Bedienfeldfilter und Spaltenfilter als zusätzliche Kriterien enthalten. |
 | **September 2024** | |
 | Aktualisierung der Zusammenfassungsdaten | Die Zusammenfassungsdatenartikel wurden mit Informationen zur ordnungsgemäßen Verwendung von [Lookup-Daten](/help/data-views/summary-data.md#lookup-data) bei der Berichterstellung für Zusammenfassungsdaten aktualisiert. |
 | Aktualisierung der BI-Erweiterung | Der Abschnitt [Standardwerte und Begrenzungen](/help/data-views/bi-extension.md#defaults-and-limitations) wurde zur Dokumentation zur BI-Erweiterung hinzugefügt. |
 | Warnhinweise | Es wurde eine Dokumentation für die Funktion [Warnhinweise](/help/components/c-intelligent-alerts/intelligent-alerts.md) hinzugefügt, die jetzt in Customer Journey Analytics verfügbar ist. |
+| Zusätzliche Informationen in der Spalte „Wird verwendet in“ im Manager für berechnete Metriken und im Filter-Manager | Die Spalte „Verwendet in“ im [Manager für berechnete Metriken](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-components/cja-calcmetrics/cm-workflow/cm-manager?lang=en) und [Filtermanager](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-components/cja-filters/manage-filters?lang=en) enthält die folgenden neuen Berichtsbereiche: Report Builder und Ad-hoc-Komponenten |
 | **August 2024** | |
 | Beispiel für ein B2B-Projekt | Es wurde ein [Anwendungsfall](/help/use-cases/b2b/example.md) hinzugefügt, in dem beschrieben wird, wie B2B-Daten auf Profilebene (Person) eingerichtet, konfiguriert und in Berichten verwendet werden, wobei die neue Funktion zur [Transformation von Datensätzen für B2B-Suchvorgänge](/help/connections/transform-datasets-b2b-lookups.md) verwendet wird. |
 | Die Anwendungsfälle für den Datenexport wurden aktualisiert | Es wurden ausführlichere Abfragebeispiele zu [Abfrage-Service (Data Distiller) und Export-Datensätzen](/help/use-cases/data-export/queryservice-export-datasets.md) hinzugefügt, um zu veranschaulichen, wie die Attribution sitzungsübergreifend mithilfe eines Lookback-Fensters ordnungsgemäß angewendet wird. |
