@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie Customer Journey Analytics-Auditprotokolle an
 exl-id: 360609f2-b811-49ee-ad4a-a54ceb23bfa3
 feature: Privacy
 role: Admin
-source-git-commit: e4e0c3cf2e865454837df6626c3b1b09f119f07f
+source-git-commit: f3c95e57144037323bcc1dd212512b2dddeb833f
 workflow-type: tm+mt
-source-wordcount: '837'
-ht-degree: 66%
+source-wordcount: '932'
+ht-degree: 60%
 
 ---
 
@@ -63,22 +63,22 @@ Doppelklicken Sie auf die Info-Schaltfläche (i) neben einer Beschreibung.
 Die folgenden Informationen werden angezeigt:
 
 * **[!UICONTROL Aktionsname]**: Die durchgeführte Aktion. Mögliche Werte:
-   * API_REQUEST
-   * GENEHMIGEN
-   * ERSTELLEN
-   * DELETE
-   * BEARBEITEN
-   * EMBARGO
-   * EXPORT
-   * ORG_CHANGE
-   * AKTUALISIEREN
-   * TEILEN
-   * ÜBERTRAGUNG
-   * GENEHMIGUNG AUFHEBEN
-   * FREIGABE AUFHEBEN
+   * API_REQUEST: Jede Aktion, die eine Backend-API-Anfrage Trigger. Es werden Details zur API-Anfrage angezeigt.
+   * GENEHMIGEN: Es wurde eine „Validierung“ durchgeführt.
+   * CREATE: Es wurde eine „create“-Aktion ausgeführt.
+   * DELETE: Es wurde eine „Löschen“-Aktion ausgeführt.
+   * BEARBEITEN: Es wurde eine Aktion „Bearbeiten“ ausgeführt.
+   * EMBARGO:
+   * EXPORT: Eine „Export“-Aktion wurde ausgeführt.
+   * ORG_CHANGE: Es wurde eine Organisationsänderungsaktion durchgeführt.
+   * AKTUALISIEREN: Eine Aktion „Aktualisieren“ wurde ausgeführt.
+   * FREIGABE: Es wurde eine Aktion „Freigeben“ ausgeführt.
+   * TRANSFER: Ein Übertragungsvorgang wurde ausgeführt.
+   * GENEHMIGUNG AUFHEBEN: Es wurde eine Aktion zum Aufheben der Genehmigung ausgeführt.
+   * FREIGABE AUFHEBEN: Es wurde eine Aktion zum Aufheben der Freigabe ausgeführt.
 * **[!UICONTROL Erstellungsdatum]**: Datum und Uhrzeit der Durchführung der Aktion.
 * **[!UICONTROL Beschreibung]**: Eine Zusammenfassung der Aktion.
-* **[!UICONTROL Benutzername]**: Der Benutzer, der die Aktion durchgeführt hat.
+* **[!UICONTROL Benutzername]**: Der Benutzer, der die Aktion durchgeführt hat. Manchmal fehlt der Benutzername. Erwägen Sie, die Funktion [Produktnutzung](https://experienceleague.adobe.com/de/docs/analytics-platform/using/tools/product-usage/usage-overview) zu verwenden, da sie immer den Anmeldenamen enthält.
 * **[!UICONTROL Email]**: Die E-Mail-Adresse des Benutzers, der die Aktion durchgeführt hat.
 * **[!UICONTROL Komponentenname]**: Die Komponente, für die die Benutzerin oder der Benutzer eine Aktion durchgeführt hat.
 * **[!UICONTROL Komponententyp]**: Der Typ der Komponente. Mögliche Werte:
@@ -94,7 +94,7 @@ Die folgenden Informationen werden angezeigt:
    * FILTERN
    * IMS_ORG
    * MOBILGERÄT
-   * PROJEKT
+   * PROJEKT (Workspace)
    * BERICHT
    * SCHEDULED_PROJECT
    * BENUTZER
