@@ -7,7 +7,7 @@ role: User
 source-git-commit: 763f2849afee98e704a9f231ed7e203dd3be73f6
 workflow-type: tm+mt
 source-wordcount: '876'
-ht-degree: 16%
+ht-degree: 19%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 16%
 >[!CONTEXTUALHELP]
 >id="workspace_intelligentcaptions_area"
 >title="Intelligente Beschriftungen: Bereich"
->abstract="Es können Erkenntnisse in natürlicher Sprache generiert werden, um Daten für diese Visualisierung leichter verstehen und interpretieren zu können."
+>abstract="Generieren Sie Erkenntnisse in natürlicher Sprache, um Daten für diese Visualisierung leichter verstehen und interpretieren zu können."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -26,8 +26,8 @@ ht-degree: 16%
 
 >[!CONTEXTUALHELP]
 >id="workspace_intelligentcaptions_bar"
->title="Intelligente Beschriftungen: Leiste"
->abstract="Es können Erkenntnisse in natürlicher Sprache generiert werden, um Daten für diese Visualisierung leichter verstehen und interpretieren zu können."
+>title="Intelligente Beschriftungen: Balken"
+>abstract="Generieren Sie Erkenntnisse in natürlicher Sprache, um Daten für diese Visualisierung leichter verstehen und interpretieren zu können."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -36,7 +36,7 @@ ht-degree: 16%
 >[!CONTEXTUALHELP]
 >id="workspace_intelligentcaptions_donut"
 >title="Intelligente Beschriftungen: Ringdiagramm"
->abstract="Es können Erkenntnisse in natürlicher Sprache generiert werden, um Daten für diese Visualisierung leichter verstehen und interpretieren zu können."
+>abstract="Generieren Sie Erkenntnisse in natürlicher Sprache, um Daten für diese Visualisierung leichter verstehen und interpretieren zu können."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -44,8 +44,8 @@ ht-degree: 16%
 
 >[!CONTEXTUALHELP]
 >id="workspace_intelligentcaptions_horizontalbar"
->title="Intelligente Beschriftungen: Horizontaler Balken"
->abstract="Es können Erkenntnisse in natürlicher Sprache generiert werden, um Daten für diese Visualisierung leichter verstehen und interpretieren zu können."
+>title="Intelligente Beschriftungen: Horizontalbalken"
+>abstract="Generieren Sie Erkenntnisse in natürlicher Sprache, um Daten für diese Visualisierung leichter verstehen und interpretieren zu können."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -53,8 +53,8 @@ ht-degree: 16%
 
 >[!CONTEXTUALHELP]
 >id="workspace_intelligentcaptions_line"
->title="Intelligente Beschriftungen: Zeile"
->abstract="Es können Erkenntnisse in natürlicher Sprache generiert werden, um Daten für diese Visualisierung leichter verstehen und interpretieren zu können."
+>title="Intelligente Beschriftungen: Linie"
+>abstract="Generieren Sie Erkenntnisse in natürlicher Sprache, um Daten für diese Visualisierung leichter verstehen und interpretieren zu können."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -63,7 +63,7 @@ ht-degree: 16%
 >[!CONTEXTUALHELP]
 >id="workspace_intelligentcaptions_fallout"
 >title="Intelligente Beschriftungen: Fallout"
->abstract="Es können Erkenntnisse in natürlicher Sprache generiert werden, um Daten für diese Visualisierung leichter verstehen und interpretieren zu können."
+>abstract="Generieren Sie Erkenntnisse in natürlicher Sprache, um Daten für diese Visualisierung leichter verstehen und interpretieren zu können."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -72,7 +72,7 @@ ht-degree: 16%
 >[!CONTEXTUALHELP]
 >id="workspace_intelligentcaptions_flow"
 >title="Intelligente Beschriftungen: Fluss"
->abstract="Es können Erkenntnisse in natürlicher Sprache generiert werden, um Daten für diese Visualisierung leichter verstehen und interpretieren zu können."
+>abstract="Generieren Sie Erkenntnisse in natürlicher Sprache, um Daten für diese Visualisierung leichter verstehen und interpretieren zu können."
 
 <!-- markdownlint-enable MD034 -->
 
