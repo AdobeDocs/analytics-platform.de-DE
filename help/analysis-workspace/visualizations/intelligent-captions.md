@@ -4,9 +4,9 @@ title: Intelligente Beschriftungen
 feature: Visualizations
 exl-id: d32d3cda-ecbf-4ee7-a8b7-7c3c71b5df75
 role: User
-source-git-commit: 7d103e9d709ec076519360a4b43af44f061171e9
+source-git-commit: 763f2849afee98e704a9f231ed7e203dd3be73f6
 workflow-type: tm+mt
-source-wordcount: '868'
+source-wordcount: '876'
 ht-degree: 16%
 
 ---
@@ -82,6 +82,12 @@ Intelligente Beschriftungen sind auf Folgendes ausgerichtet:
 
 * Analysten, die Narrative benötigen, um sie mit anderen Benutzern zu teilen. Analysten benötigen diese Einblicke, um ihren Benutzern einen Kontext bieten zu können.
 * Geschäftsbenutzer, die schnell allgemeine Erkenntnisse gewinnen möchten.
+
+>[!BEGINSHADEBOX]
+
+Siehe ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Intelligente ](https://video.tv.adobe.com/v/3420131/?learn=on){target="_blank"}) für ein Demovideo.
+
+>[!ENDSHADEBOX]
 
 ## Intelligente Beschriftungen starten {#launch}
 
