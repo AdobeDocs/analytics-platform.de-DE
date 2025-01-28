@@ -4,7 +4,7 @@ title: Verwenden von Vorlagen
 feature: Workspace Basics
 role: User, Admin
 exl-id: d61f215d-9089-4014-9c5a-97f5d7134f34
-source-git-commit: 75a6db5fde167235a86241cb6065602d7157c390
+source-git-commit: c4ea1ffd6ffb21f972bb144fe6b56526ad4697ff
 workflow-type: tm+mt
 source-wordcount: '19288'
 ht-degree: 86%
@@ -947,8 +947,6 @@ Die folgenden Vorlagen sind verfügbar:
 | **Browser-Typen** | Zeigen Sie die Namen der Organisationen an, die die wichtigsten Browser erstellt haben, mit denen Personen auf Ihre Site zugreifen. Diese Vorlage unterscheidet sich insofern von der Vorlage „Browser“, als sie verschiedene Versionen desselben Browsers nicht als separate Dimensionselemente auflistet.<p>**Dies kann Ihnen helfen,** gängigsten Browser, die Besucher verwenden, besser zu verstehen</p><p>**Basierend auf Ihren Erkenntnissen können Sie** eine Reihe von Schritten ausführen, z. B. die Site-Qualität durch Testen neuer Versionen Ihrer Site mit den wichtigsten Browsern verbessern. Auf diese Weise können die Maßnahmen zur Qualitätssicherung maximiert werden. </p><p>Diese Vorlage verwendet die Dimension Browser-Typ . </p> |
 
 ### Web: Akquise {#web-acquisition}
-
-<!--CJA only-->
 
 <!--AA only-->
 

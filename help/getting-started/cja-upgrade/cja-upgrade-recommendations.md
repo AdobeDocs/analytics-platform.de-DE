@@ -7,9 +7,9 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: d35f8615-66f5-4823-b0b8-433852246dd2
-source-git-commit: cb6a439def7bf0fab1768fdd1c7d909b76b995d6
+source-git-commit: 2d9475c4aa3ca9ba92856182e8c93f59180d833a
 workflow-type: tm+mt
-source-wordcount: '1565'
+source-wordcount: '1587'
 ht-degree: 7%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 7%
 
 Beim Upgrade von Adobe Analytics auf Customer Journey Analytics folgen Sie den [empfohlenen Upgrade-Schritten](#recommended-upgrade-steps-for-most-organizations). Alternativ können Sie [Upgrade-Schritte dynamisch generieren](#dynamically-generate-upgrade-steps-for-your-organization) für die einzigartigen Umstände Ihres Unternehmens.
 
-## Empfohlene Upgrade-Schritte für die meisten Unternehmen
+## Empfohlene Upgrade-Schritte für die meisten Unternehmen {#upgrade-process}
 
 Das empfohlene Upgrade von Adobe Analytics auf Customer Journey Analytics ist eine neue Implementierung des Experience Platform Web SDK, der bevorzugten Datenerfassungsmethode für Customer Journey Analytics. In Verbindung mit dem Web SDK empfiehlt Adobe außerdem die Verwendung des Analytics-Quell-Connectors, um Sie beim Übergang zum Customer Journey Analytics zu unterstützen. Verwenden Sie den Analytics-Quell-Connector, um historische Adobe Analytics-Daten beizubehalten und einen direkten Datenvergleich durchzuführen.
 
@@ -28,7 +28,16 @@ Nachdem Sie über genügend historische Daten mit der Experience Platform Web SD
 >
 >Wenn die in diesem Abschnitt beschriebenen Upgrade-Schritte für Ihr Unternehmen nicht sinnvoll sind, verwenden Sie den [Adobe Analytics-to-Customer Journey Analytics-Upgrade-Fragebogen](https://gigazelle.github.io/cja-ttv/), um Upgrade-Schritte dynamisch zu generieren, die auf die individuellen Umstände Ihres Unternehmens zugeschnitten sind.
 
-### Empfohlener Upgrade-Prozess auf hoher Ebene
+### Empfohlener Upgrade-Prozess auf hoher Ebene {#high-level-upgade-process}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-historical-data"
+>title="Historische Daten aus Adobe Analytics"
+>abstract="Übertragen Sie Ihre historischen Adobe Analytics Report Suite-Daten in Adobe Experience Platform und Customer Journey Analytics."
+
+<!-- markdownlint-enable MD034 -->
 
 1. **Implementieren von Experience Platform Web SDK (für die fortlaufende Datenerfassung)**
 
@@ -54,7 +63,7 @@ Nachdem Sie über genügend historische Daten mit der Experience Platform Web SD
 
      Sie können den Analytics-Quell-Connector so lange ausführen, bis Sie mit den Unterschieden vertraut sind und sich damit vertraut machen. <!--elaborate on what those differences are? -->
 
-   Der Analytics-Quell-Connector als eigenständige Implementierung ist keine empfohlene langfristige Methode zur Verwendung von Customer Journey Analytics. Dies liegt an der hohen Latenz, überladenen und komplexen Schemata, der Abhängigkeit von der Adobe Analytics-Nomenklatur (Prop, eVar usw.) und der Schwierigkeit, schließlich vom Quell-Connector zur empfohlenen Web SDK-Implementierung zu wechseln.
+   Der Analytics-Quell-Connector als eigenständige Implementierung ist keine empfohlene langfristige Methode zur Verwendung von Customer Journey Analytics. Dies liegt an der hohen Latenz, überladenen und komplexen Schemata, der Abhängigkeit von der Adobe Analytics-Nomenklatur (Prop, eVar usw.) und der Schwierigkeit, schließlich vom Analytics-Quell-Connector zur empfohlenen Web SDK-Implementierung zu wechseln.
 
 ### Detaillierte empfohlene Upgrade-Schritte
 
