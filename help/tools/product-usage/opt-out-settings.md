@@ -2,7 +2,7 @@
 title: Einstellungen für Produktnutzungs-Opt-out
 description: Verwalten Sie Opt-out-Einstellungen für einzelne Benutzer in Ihrer Organisation.
 exl-id: 0ea24582-bab8-4a76-ac00-7c265423e8bb
-source-git-commit: e4e0c3cf2e865454837df6626c3b1b09f119f07f
+source-git-commit: e7534a1943307f5bbc92a845ddffe0651794b854
 workflow-type: tm+mt
 source-wordcount: '222'
 ht-degree: 11%
@@ -10,8 +10,6 @@ ht-degree: 11%
 ---
 
 # Einstellungen für Produktnutzungs-Opt-out {#product-usage-opt-out-settings}
-
-{{release-limited-testing}}
 
 Auf der _Opt-out_ Einstellungen“ können Sie Benutzer innerhalb Ihrer Organisation vom Produktnutzungs-Tracking ausschließen oder erneut einbeziehen. Sie ist nur für Produktadministratoren sichtbar.
 

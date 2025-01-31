@@ -2,7 +2,7 @@
 title: Einstellungen für Produktnutzungsdaten
 description: Produktnutzungseinstellungen aktivieren, deaktivieren oder konfigurieren.
 exl-id: 85e2b515-78e6-41e8-9947-369b1e65e4fd
-source-git-commit: e4e0c3cf2e865454837df6626c3b1b09f119f07f
+source-git-commit: e7534a1943307f5bbc92a845ddffe0651794b854
 workflow-type: tm+mt
 source-wordcount: '356'
 ht-degree: 23%
@@ -10,8 +10,6 @@ ht-degree: 23%
 ---
 
 # Einstellungen für Produktnutzungsdaten {#product-usage-data-settings}
-
-{{release-limited-testing}}
 
 Die _Dateneinstellungen_ übernimmt die Konfiguration der Produktnutzung. Mithilfe dieser Seite können Sie die Produktnutzung für Ihr Unternehmen aktivieren oder deaktivieren. Sie können auch konfigurieren, unter welcher Adobe Experience Platform-Sandbox der Datensatz erstellt wird, und das Datenaufbewahrungsfenster bei Bedarf überschreiben. Sie ist nur für Produktadministratoren sichtbar.
 
