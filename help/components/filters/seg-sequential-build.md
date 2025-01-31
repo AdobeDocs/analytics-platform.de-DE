@@ -3,9 +3,9 @@ description: Sequenzielle Filter sind Filter, die den THEN-Operator zum Definier
 title: Sequenzielle Filter
 feature: Filters
 exl-id: 64cb10b5-36f0-42c8-b687-ae5de5ced8b5
-source-git-commit: 8cf8af1d1d84f4db93ab627e76554f3fe618ef92
+source-git-commit: bd8c9951386608572d84006bd5465e57214c56d4
 workflow-type: tm+mt
-source-wordcount: '2459'
+source-wordcount: '2460'
 ht-degree: 3%
 
 ---
@@ -14,13 +14,15 @@ ht-degree: 3%
 
 Sequenzielle Filter erstellen Sie mit dem [!UICONTROL Then] logischen Operator zwischen Komponenten, Containern und Komponenten oder Containern. Der [!UICONTROL Dann] logische Operator impliziert, dass eine Filterbedingung auftritt, gefolgt von einer anderen.
 
-+++ In diesem Video wird die sequenzielle Segmentierung veranschaulicht.
 
->[!VIDEO](https://video.tv.adobe.com/v/25405/?quality=12)
+
+>[!BEGINSHADEBOX]
+
+Siehe ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Sequenzielle Segmentierung](https://video.tv.adobe.com/v/25405/?quality=12&learn=on){target="_blank"} für ein Demovideo.
 
 {{videoaa}}
 
-+++
+>[!ENDSHADEBOX]
 
 Ein sequenzieller Filter verfügt über einige [grundlegende Funktionen](#basics) und zusätzliche Optionen, die Sie konfigurieren können, um den sequenziellen Filter komplexer zu gestalten:
 

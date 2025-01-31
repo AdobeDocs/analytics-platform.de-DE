@@ -6,10 +6,10 @@ feature: Report Builder
 type: Documentation
 exl-id: 56bf524d-101d-4745-b2ef-9770c50f6774
 solution: Customer Journey Analytics
-source-git-commit: b9fd070c03df2947947227feb2de9cc7a5baf2c7
+source-git-commit: f9b9dcf87d781e0702b51e536b7edb4644720fa5
 workflow-type: tm+mt
-source-wordcount: '309'
-ht-degree: 100%
+source-wordcount: '321'
+ht-degree: 96%
 
 ---
 
@@ -43,7 +43,12 @@ Report Builder für Customer Journey Analytics ist für Excel auf den folgenden 
 
 ## Übersichtsvideo
 
->[!VIDEO](https://video.tv.adobe.com/v/337569/?quality=12&learn=on)
+
+>[!BEGINSHADEBOX]
+
+Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Report Builder für Customer Journey Analytics](https://video.tv.adobe.com/v/337569?quality=12&learn=on){target="_blank"} finden Sie ein Demovideo.
+
+>[!ENDSHADEBOX]
 
 Laden Sie Report Builder für Customer Journey Analytics aus dem 
 [Microsoft Store](https://www.microsoft.com/de-de/store/apps/windows) herunter.

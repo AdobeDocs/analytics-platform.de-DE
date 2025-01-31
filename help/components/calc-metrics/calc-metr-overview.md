@@ -4,10 +4,10 @@ description: Erfahren Sie mehr über gefilterte Metriken, die zum Zeitpunkt der 
 feature: Calculated Metrics
 exl-id: c9205c95-8b01-4177-a89c-038886f41d3d
 role: User
-source-git-commit: 8f3b30ca6d20d633669d7e9180884c24e0b9a52e
+source-git-commit: bd8c9951386608572d84006bd5465e57214c56d4
 workflow-type: tm+mt
-source-wordcount: '214'
-ht-degree: 100%
+source-wordcount: '212'
+ht-degree: 95%
 
 ---
 
@@ -15,11 +15,13 @@ ht-degree: 100%
 
 Berechnete Metriken sind benutzerdefinierte Metriken, die Sie aus vorhandenen Metriken erstellen können. Berechnete Metriken bieten eine flexible Möglichkeit zum Erstellen, Verwalten und Kuratieren benutzerdefinierter Metriken, mit denen Sie Ihre Daten analysieren können, ohne Ihre Implementierung ändern zu müssen.
 
-+++ Dieses Video bietet eine Einführung in die Verwendung berechneter Metriken.
 
->[!VIDEO](https://video.tv.adobe.com/v/31787/?learn=on)
 
-+++
+>[!BEGINSHADEBOX]
+
+Siehe ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Einführung in berechnete ](https://video.tv.adobe.com/v/31787/?quality=12&learn=on){target="_blank"}) für ein Demovideo.
+
+>[!ENDSHADEBOX]
 
 Ein typischer Workflow für berechnete Metriken besteht aus folgenden Aufgaben
 

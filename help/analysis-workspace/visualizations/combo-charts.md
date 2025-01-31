@@ -4,9 +4,9 @@ title: Visualisierung von Kombinationsdiagrammen
 feature: Visualizations
 exl-id: 06faa997-3a4e-4c41-b64e-64a15ada6552
 role: User
-source-git-commit: 55b312552d32070875714a77e1177bf0da5f9d87
+source-git-commit: 0859a35bb0f34800b970ff256bc9b740ffe424c9
 workflow-type: tm+mt
-source-wordcount: '602'
+source-wordcount: '603'
 ht-degree: 44%
 
 ---
@@ -30,7 +30,7 @@ _In diesem Artikel wird die Kombinationsvisualisierung in {_}![CustomerJourneyAn
 >[!ENDSHADEBOX]
 
 
-Mit ![ Visualisierung ](/help/assets/icons/ComboChart.svg)Kommentar **[!UICONTROL Kombinationsfeld]** ist es einfach, schnell eine Vergleichsvisualisierung zu erstellen, ohne zuerst eine Tabelle erstellen zu müssen. Sie können Trends in Ihren Daten einfach in einer Kombination aus Linie und Balken anzeigen.
+Die ![Kombinationsdiagramm](/help/assets/icons/ComboChart.svg)**[!UICONTROL Kombinations]**-Visualisierung macht es einfach, schnell eine Vergleichsvisualisierung zu erstellen, ohne zuerst eine Tabelle erstellen zu müssen. Sie können Trends in Ihren Daten einfach in einer Kombination aus Linie und Balken anzeigen.
 
 Verwenden Sie eine [!UICONTROL Kombination], um:
 

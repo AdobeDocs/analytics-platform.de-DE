@@ -5,10 +5,10 @@ role: User
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: e4762cca-b2da-422b-b48f-2a5fec14c97f
-source-git-commit: a4b838f7813d78681eba072e4febd90ba0c7111d
+source-git-commit: f9b9dcf87d781e0702b51e536b7edb4644720fa5
 workflow-type: tm+mt
-source-wordcount: '1442'
-ht-degree: 98%
+source-wordcount: '1454'
+ht-degree: 92%
 
 ---
 
@@ -40,9 +40,19 @@ Kundendaten in Experience Platform werden als Datensätze gespeichert, die aus e
 
 Customer Journey Analytics-Admis richten [Verbindungen](/help/connections/create-connection.md) zu Datensätzen in Experience Platform ein. Anschließend erstellen sie mithilfe dieser Verbindungen [Datenansichten](/help/data-views/data-views.md). Datenansichten ähneln konzeptionell den Virtual Report Suites und bilden die Grundlage für die Berichterstellung in Customer Journey Analytics. Da Experience Platform alle Daten für die Berichterstellung bereitstellt, fungieren Report Suites nicht mehr als Daten-Container.
 
-Mit einer Verbindung können Analytics-Admins Datensätze von Adobe Experience Platform in Customer Journey Analytics integrieren, wie im folgenden Video gezeigt wird:
+Mit einer Verbindung kann Ihr Analytics-Administrator Datensätze von Adobe Experience Platform in Customer Journey Analytics integrieren.
 
->[!VIDEO](https://video.tv.adobe.com/v/35111/?quality=12)
+
+<!-- Outdated UI
+
+>[!BEGINSHADEBOX]
+
+See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Configuring connections](https://video.tv.adobe.com/){target=&#34;_blank&#34;} for a demo video.
+
+>[!ENDSHADEBOX]
+
+-->
+
 
 Adobe bietet mehrere Möglichkeiten, Daten in Adobe Experience Platform zu importieren, wie etwa Report Suite-Daten über den Analytics-Quell-Connector oder das Web SDK. Vorhandene Implementierungen aus mehreren Report Suites können in Experience Platform zusammengefasst werden. Die auf diesen Datensätzen basierenden Verbindungen und Datenansichten können Daten kombinieren, die zuvor in separaten Report Suites vorhanden gewesen sind.
 
@@ -78,9 +88,14 @@ Zusätzlich zum geänderten Konzept der Segmente wurden auch Segment-Container a
 
 ## Änderungen am Konzept der berechneten Metriken
 
-Berechnete Metriken sind in Adobe Analytics und Customer Journey Analytics ähnlich benannt. Doch [!UICONTROL Customer Journey Analytics] verwendet keine eVars, Props oder Ereignisse mehr, sondern verwendet stattdessen ein Experience Platform-Schemaelement. Diese grundlegende Änderung bedeutet, dass keine der vorhandenen berechneten Metriken mit [!UICONTROL Customer Journey Analytics] kompatibel sind. Wenn Sie berechnete Adobe Analytics-Metriken in Customer Journey Analytics verschieben möchten, sehen Sie sich das folgende Video an:
+Berechnete Metriken sind in Adobe Analytics und Customer Journey Analytics ähnlich benannt. Doch [!UICONTROL Customer Journey Analytics] verwendet keine eVars, Props oder Ereignisse mehr, sondern verwendet stattdessen ein Experience Platform-Schemaelement. Diese grundlegende Änderung bedeutet, dass keine der vorhandenen berechneten Metriken mit [!UICONTROL Customer Journey Analytics. kompatibel ].
 
->[!VIDEO](https://video.tv.adobe.com/v/31788/?quality=12)
+
+>[!BEGINSHADEBOX]
+
+Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Verschieben berechneter Metriken von Adobe Analytics nach Customer Journey Analytics](https://video.tv.adobe.com/v/31788?quality=12&learn=on){target="_blank"} finden Sie ein Demovideo zum Verschieben berechneter Metriken.
+
+>[!ENDSHADEBOX]
 
 ## Änderungen an Einstellungen der Variablenattribution und der Gültigkeit
 
@@ -100,9 +115,14 @@ Sie können auch mehrere Datenansichten haben, die auf derselben Verbindung basi
 
 ## Änderungen bei der Besucheridentifizierung durch die Adobe
 
-Customer Journey Analytics erweitert die Konzepte von Identitäten über ECIDs hinaus und umfasst alle IDs, die Sie verwenden möchten, einschließlich Kunden-IDs, Cookie-IDs, zugeordneter IDs, Benutzer-IDs und Trackingcodes. Durch die Verwendung einer gemeinsamen Namespace-ID für mehrere Datensätze oder die Verwendung der [Zuordnungsfunktion](../stitching/overview.md) können Personen über verschiedene Datensätze hinweg miteinander verknüpft werden. Benutzende, die in Customer Journey Analytics ein Workspace-Projekt einrichten, müssen wissen, welche IDs in den verschiedenen Datensätzen verwendet werden. Sehen Sie sich das folgende Video an, in dem die Verwendung von Identitäten in Customer Journey Analytics erläutert wird:
+Customer Journey Analytics erweitert die Konzepte von Identitäten über ECIDs hinaus und umfasst alle IDs, die Sie verwenden möchten, einschließlich Kunden-IDs, Cookie-IDs, zugeordneter IDs, Benutzer-IDs und Trackingcodes. Durch die Verwendung einer gemeinsamen Namespace-ID für mehrere Datensätze oder die Verwendung der [Zuordnungsfunktion](../stitching/overview.md) können Personen über verschiedene Datensätze hinweg miteinander verknüpft werden. Benutzende, die in Customer Journey Analytics ein Workspace-Projekt einrichten, müssen wissen, welche IDs in den verschiedenen Datensätzen verwendet werden. Sehen Sie sich das folgende Video an, in dem die Verwendung von Identitäten beim Customer Journey Analytics erläutert wird
 
->[!VIDEO](https://video.tv.adobe.com/v/30750/?quality=12)
+
+>[!BEGINSHADEBOX]
+
+Siehe ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Verwenden von Identitäten auf Customer Journey Analytics](https://video.tv.adobe.com/v/30750/?quality=12&learn=on){target="_blank"} für ein Demovideo.
+
+>[!ENDSHADEBOX]
 
 ## Änderungen am Konzept des Dimensionselements „Low Traffic“
 

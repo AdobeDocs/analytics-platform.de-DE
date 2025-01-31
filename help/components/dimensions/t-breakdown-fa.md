@@ -6,10 +6,10 @@ feature: Dimensions
 exl-id: 6b433db3-02c1-4deb-916e-b01c0b79889e
 solution: Customer Journey Analytics
 role: User
-source-git-commit: c56c77079aa21fb740fda6bec333731a1f82a48f
+source-git-commit: f9b9dcf87d781e0702b51e536b7edb4644720fa5
 workflow-type: tm+mt
-source-wordcount: '523'
-ht-degree: 58%
+source-wordcount: '540'
+ht-degree: 52%
 
 ---
 
@@ -51,28 +51,49 @@ Dies ist das erwartete Verhalten, wenn Attributionsmodelle auf Aufschlüsselunge
 
 * Wenn im Spaltenbaum bereits Zuordnungen vorhanden sind, wirkt sich eine Änderung der Zuordnung nur auf diejenige aus, die Sie gerade bearbeiten.
 
-+++ Videos zur Illustration von Dimensionen und Aufschlüsselungen von Dimensionen anzeigen
+>[!BEGINSHADEBOX]
 
-Dimensionen in Analysis Workspace
-
->[!VIDEO](https://video.tv.adobe.com/v/23971)
-
-Aufschlüsselung der Dimension
-
->[!VIDEO](https://video.tv.adobe.com/v/23969)
-
-Hinzufügen von Dimensionen und Metriken zu Ihrem Projekt in Analysis Workspace:
-
->[!VIDEO](https://video.tv.adobe.com/v/30606)
-
-Arbeiten mit Dimensionen in einer Freiformtabelle:
-
->[!VIDEO](https://video.tv.adobe.com/v/40179)
-
-Aufschlüsselung der Dimension nach Position:
-
->[!VIDEO](https://video.tv.adobe.com/v/24033)
+Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Dimension in Analysis Workspace](https://video.tv.adobe.com/v/23971?quality=12&learn=on){target="_blank"} finden Sie ein Demovideo.
 
 {{videoaa}}
 
-+++
+>[!ENDSHADEBOX]
+
+
+>[!BEGINSHADEBOX]
+
+Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Aufschlüsselungen der Dimension ](https://video.tv.adobe.com/v/23969?quality=12&learn=on){target="_blank"} finden Sie ein Demovideo.
+
+{{videoaa}}
+
+>[!ENDSHADEBOX]
+
+
+>[!BEGINSHADEBOX]
+
+Siehe ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Hinzufügen von Dimensionen und ](https://video.tv.adobe.com/v/30606?quality=12&learn=on){target="_blank"}) für ein Demovideo.
+
+{{videoaa}}
+
+>[!ENDSHADEBOX]
+
+
+>[!BEGINSHADEBOX]
+
+Siehe ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Arbeiten mit Dimensionen in einer Freiformtabelle](https://video.tv.adobe.com/v/40179?quality=12&learn=on){target="_blank"} für ein Demovideo.
+
+{{videoaa}}
+
+>[!ENDSHADEBOX]
+
+
+>[!BEGINSHADEBOX]
+
+Siehe ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Aufschlüsselung der Dimensionen nach Position](https://video.tv.adobe.com/v/24033){target="_blank"} für ein Demovideo.
+
+{{videoaa}}
+
+>[!ENDSHADEBOX]
+
+
+

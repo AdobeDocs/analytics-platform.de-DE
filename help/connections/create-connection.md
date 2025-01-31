@@ -5,9 +5,9 @@ exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: a530738bb02888d637e5ff4edaa1aa2535a9034c
+source-git-commit: a2262e446a15ee58be2f3f674c77223368fc8f76
 workflow-type: tm+mt
-source-wordcount: '4260'
+source-wordcount: '4261'
 ht-degree: 98%
 
 ---
@@ -131,11 +131,13 @@ Beim Workflow für die Erstellung und Bearbeitung von Verbindungen können alle 
 * Sie können Datensätze bearbeiten, z. B. um eine weitere Aufstockung anzufordern.
 * Sie können für einzelne Datensätze vorhandene Daten importieren.
 
-+++ Video zum Veranschaulichen der Erstellung und Bearbeitung von Verbindungen
 
->[!VIDEO](https://video.tv.adobe.com/v/343044/?quality=12&learn=on)
+>[!BEGINSHADEBOX]
 
-+++
+Siehe ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Erstellen und Bearbeiten einer Verbindung](https://video.tv.adobe.com/v/343044/?quality=12&learn=on){target="_blank"} für ein Demovideo.
+
+>[!ENDSHADEBOX]
+
 
 ## Voraussetzungen
 

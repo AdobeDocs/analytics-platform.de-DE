@@ -4,10 +4,10 @@ title: Lineardiagramm
 feature: Visualizations
 exl-id: b560389a-1149-4e16-b45a-0c6a1f7d0e1f
 role: User
-source-git-commit: 55b312552d32070875714a77e1177bf0da5f9d87
+source-git-commit: bd8c9951386608572d84006bd5465e57214c56d4
 workflow-type: tm+mt
-source-wordcount: '251'
-ht-degree: 58%
+source-wordcount: '263'
+ht-degree: 56%
 
 ---
 
@@ -39,9 +39,18 @@ _In diesem Artikel wird die Visualisierung für Aufzählungszeichen in {_}![Cust
 
 Die ![GraphBullet](/help/assets/icons/GraphBullet.svg)**[!UICONTROL Bullet]**-Visualisierung zeigt, wie eine Metrik mit Leistungsbereichen (Zielen) verglichen wird oder wie sie mit diesen gemessen wird.
 
-![](assets/bullet.png)
+![Visualisierung mit horizontalen Säulendiagrammen](assets/bullet.png)
 
 Das Lineardiagramm enthält einen einzigen primären Messwert (z. B. aktueller Umsatz im Jahr) und ermöglicht Ihnen die Eingabe qualitativer Bereiche und Leistungsbereiche (z. B. im Vergleich zu einem Zielumsatz). Sie können hohe, mittlere und niedrige Zielbereiche angeben. Sie können Zielbereiche in &quot;![&quot; ](/help/assets/icons/Setting.svg) &quot;**[!UICONTROL &quot;]**.
+
+>[!BEGINSHADEBOX]
+
+Siehe ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Visualisierung von-Diagrammen](https://video.tv.adobe.com/v/23989/?quality=12/?quality=12&learn=on){target="_blank"} für ein Demovideo.
+
+{{videoaa}}
+
+>[!ENDSHADEBOX]
+
 
 ## Einstellungen
 

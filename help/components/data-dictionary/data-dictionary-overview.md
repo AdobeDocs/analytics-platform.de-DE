@@ -4,9 +4,9 @@ title: Datenwörterbuch – Überblick
 feature: Components
 role: User, Admin
 exl-id: 8e4b8169-7c7f-4a58-a6c6-70efb0c86ce8
-source-git-commit: e4e0c3cf2e865454837df6626c3b1b09f119f07f
+source-git-commit: 131b216f5b5f30048516d4b78e5f270701eb14d3
 workflow-type: tm+mt
-source-wordcount: '564'
+source-wordcount: '567'
 ht-degree: 76%
 
 ---
@@ -28,13 +28,15 @@ Das Datenwörterbuch in Analysis Workspace hilft Benutzenden und Admins, die Kom
 Analytics-Administratorinnen und -Administratoren sind dafür verantwortlich, Informationen über jede Komponenten im Datenwörterbuch zu kuratieren, um sie Benutzerinnen und Benutzern verfügbar zu machen.
 
 
-+++ Anzeigen eines Videos zur Veranschaulichung des Datenwörterbuchs
+>[!BEGINSHADEBOX]
 
->[!VIDEO](https://video.tv.adobe.com/v/3418028/?quality=12&learn=on)
+Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Datenwörterbuch für Analytics Workspace](https://video.tv.adobe.com/v/3418028/?quality=12&learn=on){target="_blank"} finden Sie ein Demovideo.
 
 {{videoaa}}
 
-+++
+>[!ENDSHADEBOX]
+
+
 
 ## Vorteile für Benutzende
 

@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie Hyperlinks für Dimensionselemente in einer F
 feature: Visualizations
 role: User
 exl-id: 24fc2d24-b8c2-4664-8b9c-beda284f9033
-source-git-commit: 90d1c51c11f0ab4d7d61b8e115efa8257a985446
+source-git-commit: bd8c9951386608572d84006bd5465e57214c56d4
 workflow-type: tm+mt
-source-wordcount: '1602'
+source-wordcount: '1607'
 ht-degree: 1%
 
 ---
@@ -17,19 +17,19 @@ Sie können Hyperlinks für Dimensionselemente erstellen, um sie in einer Freifo
 
 Diese Funktion ist besonders beim Erstellen von Hyperlinks für die folgenden Arten von Dimensionselementen nützlich:
 
-* Seitenelemente mit URL-Werten (z. B. die Dimension Dimensionen-URL )
+* Seitenelemente mit URL-Werten (z. B. die Dimension Dimensionen-URL ).
 
-* Dimension-Elemente, die Aufschlüsselungen mit URL-Werten enthalten (z. B. eine Seitennamendimension mit einer Aufschlüsselung einer Seiten-URL-Dimension)
+* Dimension-Elemente, die Aufschlüsselungen mit URL-Werten enthalten (z. B. eine Seitennamendimension mit einer Aufschlüsselung einer Seiten-URL-Dimension).
 
-* Elemente oder Aufschlüsselungen einer Dimension, deren Werte Teil einer URL sind (z. B. eine Seitennamendimension, die Teil einer URL ist)
+* Elemente oder Aufschlüsselungen einer Dimension, deren Werte Teil einer URL sind (z. B. eine Seitennamendimension, die Teil einer URL ist).
 
-+++ Sehen Sie sich eine Videodemonstration dieser Funktion an.
 
->[!VIDEO](https://video.tv.adobe.com/v/3430411/?learn=on)
+>[!BEGINSHADEBOX]
 
-{{videoaa}}
+Siehe ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Erstellen von Hyperlinks in einer Freiformtabelle](https://video.tv.adobe.com/v/3430411/?quality=12&learn=on){target="_blank"} für ein Demovideo.
 
-+++
+>[!ENDSHADEBOX]
+
 
 ## Erstellen von Hyperlinks
 

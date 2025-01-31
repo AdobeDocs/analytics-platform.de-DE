@@ -4,9 +4,9 @@ title: Übersicht über Bedienfelder
 feature: Panels
 exl-id: be3e34a0-06c1-4200-b965-96084c2912fd
 role: User
-source-git-commit: e61368765dde35e6d9beed7713a7a28db0c2af98
+source-git-commit: a2262e446a15ee58be2f3f674c77223368fc8f76
 workflow-type: tm+mt
-source-wordcount: '2159'
+source-wordcount: '2129'
 ht-degree: 98%
 
 ---
@@ -153,16 +153,13 @@ Weitere Informationen finden Sie unter [Schnellfilter](/help/components/filters/
 
 ### Dropdown-Filter
 
->[!VIDEO](https://video.tv.adobe.com/v/23877?quality=12&learn=on)
+>[!BEGINSHADEBOX]
 
-In diesem Video werden die Funktionen von mit Adobe Analytics veranschaulicht. Die Funktion ist jedoch ähnlich auf Customer Journey Analytics verfügbar. Beachten Sie die folgenden terminologischen Unterschiede.
+Siehe ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Dropdown-Filter](https://video.tv.adobe.com/v/23877?quality=12&learn=on){target="_blank"} für ein Demovideo.
 
-| Adobe Analytics | Customer Journey Analytics |
-| --- | --- |
-| Segmente  | Filter |
-| Besucher | Person |
-| Besuch | Sitzung |
-| Treffer | Ereignis |
+{{videoaa}}
+
+>[!ENDSHADEBOX]
 
 
 #### Statische Dropdown-Filter

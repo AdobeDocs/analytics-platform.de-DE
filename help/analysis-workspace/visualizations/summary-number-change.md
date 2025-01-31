@@ -4,14 +4,26 @@ title: Sammelnummer und Sammeländerung
 feature: Visualizations
 exl-id: 8872fc58-0957-415d-9958-ce564612ce87
 role: User
-source-git-commit: 55b312552d32070875714a77e1177bf0da5f9d87
+source-git-commit: bd8c9951386608572d84006bd5465e57214c56d4
 workflow-type: tm+mt
-source-wordcount: '498'
-ht-degree: 48%
+source-wordcount: '510'
+ht-degree: 47%
 
 ---
 
 # Zusammenfassungsnummer und Zusammenfassungsänderung
+
+>[!BEGINSHADEBOX]
+
+_In diesem Artikel werden die Visualisierungen von Zusammenfassungsnummern und Zusammenfassungsänderungen in {_}![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics** dokumentiert._<br/>_Siehe [Zusammenfassungsnummer und Zusammenfassungsänderung](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/summary-number-change) für die_![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**-Version dieses Artikels._
+
+>[!ENDSHADEBOX]
+
+>[!BEGINSHADEBOX]
+
+Siehe ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Visualisierung der Zusammenfassungsnummer und ](https://video.tv.adobe.com/v/335564/?quality=12&learn=on){target="_blank"} Zusammenfassungsänderung für ein Demovideo.
+
+>[!ENDSHADEBOX]
 
 ## Zusammenfassungszahl {#summary-number}
 
@@ -23,14 +35,6 @@ ht-degree: 48%
 >abstract="Erstellen Sie eine Visualisierung, die die Summen und Zwischensummen anzeigt."
 
 <!-- markdownlint-enable MD034 -->
-
-
->[!BEGINSHADEBOX]
-
-_In diesem Artikel werden die Visualisierungen von Zusammenfassungsnummern und Zusammenfassungsänderungen in {_}![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics** dokumentiert._<br/>_Siehe [Zusammenfassungsnummer und Zusammenfassungsänderung](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/summary-number-change) für die_![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**-Version dieses Artikels._
-
->[!ENDSHADEBOX]
-
 
 Verwenden Sie die Visualisierung ![Zusammenfassen](/help/assets/icons/123.svg) **[!UICONTROL Zusammenfassungsnummer]**, um eine große Zahl hervorzuheben, die in einem Projekt wichtig ist. Diese Visualisierung verhält sich mithilfe der zugehörigen Datenquelle wie folgt:
 

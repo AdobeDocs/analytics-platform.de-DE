@@ -5,10 +5,10 @@ exl-id: f4f692c9-5951-4fa2-8e9f-5eeff0f79d10
 solution: Customer Journey Analytics
 feature: Basics
 role: User, Admin
-source-git-commit: 39e4c17336d3648cbf20cace535668d14510186f
+source-git-commit: bd8c9951386608572d84006bd5465e57214c56d4
 workflow-type: tm+mt
-source-wordcount: '916'
-ht-degree: 100%
+source-wordcount: '952'
+ht-degree: 93%
 
 ---
 
@@ -20,9 +20,13 @@ Die allgemeine Architektur von Customer Journey Analytics ist im Folgenden darge
 
 ![In diesem Abschnitt wird die Architektur von Customer Journey Analytics erläutert](assets/cja-architecture.png)
 
-Im Folgenden finden Sie eine Videoübersicht zu Customer Journey Analytics:
 
->[!VIDEO](https://video.tv.adobe.com/v/30090/?quality=12)
+>[!BEGINSHADEBOX]
+
+Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Customer Journey Analysis: Analytics for the Experience Business](https://video.tv.adobe.com/v/30090/?quality=12&learn=on){target="_blank"} finden Sie ein Einführungsvideo zum Customer Journey Analytics.
+
+>[!ENDSHADEBOX]
+
 
 ## Vergleich von Customer Journey Analytics und herkömmlichem Adobe Analytics
 
@@ -88,11 +92,17 @@ Von der Datenerfassung bis zum direkten SQL-Zugriff sind mehrere Komponenten von
 
 ## Videos
 
-* Arbeiten mit Daten in Customer Journey Analytics:
 
-  >[!VIDEO](https://video.tv.adobe.com/v/32112/?quality=12)
+>[!BEGINSHADEBOX]
 
-* Architektur und Integrationen von Customer Journey Analytics:
+Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Arbeiten mit Daten auf Customer Journey Analytics](https://video.tv.adobe.com/v/32112/?quality=12&learn=on){target="_blank"} finden Sie ein Einführungsvideo zum Arbeiten mit Daten auf Customer Journey Analytics.
 
-  >[!VIDEO](https://video.tv.adobe.com/v/32483/?quality=12)
+>[!ENDSHADEBOX]
+
+>[!BEGINSHADEBOX]
+
+Siehe ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Architektur und Integration](https://video.tv.adobe.com/v/32483/?quality=12&learn=on){target="_blank"} für ein Einführungsvideo zur Architektur und Integration von Customer Journey Analytics..
+
+>[!ENDSHADEBOX]
+
 

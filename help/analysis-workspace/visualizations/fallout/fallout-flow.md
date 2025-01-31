@@ -4,9 +4,9 @@ title: Über Fallout-Berichte und -Visualisierungen
 feature: Visualizations
 exl-id: c4338821-64ac-4345-828a-15af18a95ea6
 role: User
-source-git-commit: 55b312552d32070875714a77e1177bf0da5f9d87
+source-git-commit: bd8c9951386608572d84006bd5465e57214c56d4
 workflow-type: tm+mt
-source-wordcount: '354'
+source-wordcount: '357'
 ht-degree: 30%
 
 ---
@@ -31,13 +31,15 @@ _In diesem Artikel wird die Fallout-Visualisierung in {_}![CustomerJourneyAnalyt
 
 Eine ![ConversionFunnel](/help/assets/icons/ConversionFunnel.svg)**[!UICONTROL Fallout]**-Visualisierung zeigt, wo Personen eine vordefinierte Folge von Seiten verlassen haben (ausfielen) und weiter durchlaufen haben (durchfielen).
 
-+++ Sehen Sie sich eine Videodemonstration zur Fallout[!UICONTROL Visualisierung ].
 
->[!VIDEO](https://video.tv.adobe.com/v/345883/?quality=12)
+>[!BEGINSHADEBOX]
+
+Siehe ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Erstellen eines Fallout-Visualisierungsberichts](https://video.tv.adobe.com/v/345883/?quality=12&learn=on){target="_blank"} für ein Demovideo.
 
 {{videoaa}}
 
-+++
+>[!ENDSHADEBOX]
+
 
 Fallout-Visualisierungen ermöglichen Ihnen Folgendes:
 

@@ -1,8 +1,8 @@
 ---
-source-git-commit: 8c975a37e6772ab3bae1f86c4ccad27ebf0596cc
+source-git-commit: a2262e446a15ee58be2f3f674c77223368fc8f76
 workflow-type: tm+mt
-source-wordcount: '3091'
-ht-degree: 24%
+source-wordcount: '3093'
+ht-degree: 23%
 
 ---
 # Snippets
@@ -57,14 +57,7 @@ Zu den verfügbaren Zeitvergleichsoptionen gehören der vorherige Zeitraum, 13 W
 
 ## Videodemonstration Adobe Analytics {#videoaa}
 
-In diesem Video werden die Funktionen von mit Adobe Analytics veranschaulicht. Die Funktion ist jedoch ähnlich auf Customer Journey Analytics verfügbar. Beachten Sie die folgenden terminologischen Unterschiede.
-
-| Adobe Analytics | Customer Journey Analytics |
-|:---:|:---:|
-| Segmente  | Filter |
-| Besucher | Person |
-| Besuch | Sitzung |
-| Treffer | Ereignis |
+*In diesem Video werden die Funktionen von mit Adobe Analytics veranschaulicht. Die Funktion ist jedoch ähnlich auf Customer Journey Analytics verfügbar. Achten Sie auf die terminologischen Unterschiede zwischen Adobe Analytics und Customer Journey Analytics (z. B. Segmente und Filter oder Besuche und Sitzungen).*
 
 
 ## Bedienfeld „Filter“ {#filterspanel}

@@ -3,9 +3,9 @@ description: Durch das Filtern einzelner Metriken können Sie Metriken innerhalb
 title: Gefilterte Metriken
 feature: Calculated Metrics
 exl-id: 37cc93df-9f51-42b3-918f-ed5864991621
-source-git-commit: 65eafd65358d9370b452338ce1036e59b3c69d1a
+source-git-commit: bd8c9951386608572d84006bd5465e57214c56d4
 workflow-type: tm+mt
-source-wordcount: '487'
+source-wordcount: '486'
 ht-degree: 1%
 
 ---
@@ -87,10 +87,12 @@ Wiederholen Sie die obigen Schritte für die internationale Version Ihrer berech
    ![Workspace-Freiformtabellen-Visualisierung, die Deutsche im Vergleich zu internationalen Personen zeigt](assets/workspace-german-vs-international-totals-percentage.png)
 
 
-+++ In diesem Video wird veranschaulicht, wie eine gefilterte berechnete Metrik als implementierungslose Metrik verwendet wird.
 
->[!VIDEO](https://video.tv.adobe.com/v/25407/?quality=12)
+>[!BEGINSHADEBOX]
+
+Siehe ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Verwenden einer gefilterten berechneten Metrik als implementierungslose Metrik](https://video.tv.adobe.com/v/25407?quality=12&learn=on){target="_blank"} für ein Demovideo.
 
 {{videoaa}}
 
-+++
+>[!ENDSHADEBOX]
+

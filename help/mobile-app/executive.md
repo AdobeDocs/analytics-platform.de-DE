@@ -5,18 +5,23 @@ feature: Analytics Dashboards
 role: User
 exl-id: 12901a76-cb88-45a5-81e9-59fb310328be
 solution: Customer Journey Analytics
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: a2262e446a15ee58be2f3f674c77223368fc8f76
 workflow-type: tm+mt
-source-wordcount: '1294'
-ht-degree: 75%
+source-wordcount: '1299'
+ht-degree: 73%
 
 ---
 
 # Schnellstarthandbuch für ausführende Benutzer
 
-Im Folgenden finden Sie Informationen zu Best Practices für die Verwendung und Anzeige von Analytics-Dashboards. In diesem Video werden diese Informationen veranschaulicht:
+Im Folgenden finden Sie Informationen zu Best Practices für die Verwendung und Anzeige von Analytics-Dashboards.
 
->[!VIDEO](https://video.tv.adobe.com/v/343460/)
+
+>[!BEGINSHADEBOX]
+
+Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Unterstützung von Führungskräften beim Zugriff auf mobile Scorecards](https://video.tv.adobe.com/v/343460/){target="_blank"} finden Sie ein Demovideo.
+
+>[!ENDSHADEBOX]
 
 Dieses Handbuch soll ausführenden Benutzern helfen, die Scorecards in den Analytics-Dashboards zu lesen und zu interpretieren. Das Programm ermöglicht es ausführenden Benutzern, eine umfassende Darstellung wichtiger Zusammenfassungsdaten schnell und einfach auf ihren eigenen Mobilgeräten anzuzeigen.
 

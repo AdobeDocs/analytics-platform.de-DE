@@ -5,10 +5,10 @@ exl-id: b8b234c6-a7d9-40e9-8380-1db09610b941
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: e4e0c3cf2e865454837df6626c3b1b09f119f07f
+source-git-commit: bd8c9951386608572d84006bd5465e57214c56d4
 workflow-type: tm+mt
-source-wordcount: '913'
-ht-degree: 81%
+source-wordcount: '921'
+ht-degree: 80%
 
 ---
 
@@ -99,7 +99,13 @@ Eine Dropdown-Liste, mit der Sie die Persistenz eines Dimensionswerts an Dimensi
 
 Siehe [Verwenden von Bindungsdimensionen und Metriken im Customer Journey Analytics](../../use-cases/data-views/binding-dimensions-metrics.md) für Beispiele zur effektiven Verwendung von Bindungsdimensionen.
 
->[!VIDEO](https://video.tv.adobe.com/v/342694/?quality=12)
+
+>[!BEGINSHADEBOX]
+
+Siehe ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Binding-Dimensionen](https://video.tv.adobe.com/v/342694/?quality=12&learn=on){target="_blank"} für ein Demovideo.
+
+>[!ENDSHADEBOX]
+
 
 ## [!UICONTROL Binding-Metrik]
 

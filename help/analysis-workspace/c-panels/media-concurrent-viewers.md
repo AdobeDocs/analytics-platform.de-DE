@@ -4,9 +4,9 @@ description: Verwendung und Interpretation des Bedienfelds „Gleichzeitige Medi
 feature: Panels
 exl-id: a442fb9c-165f-4136-95e2-ce92b9280c25
 role: User
-source-git-commit: 55b312552d32070875714a77e1177bf0da5f9d87
+source-git-commit: bd8c9951386608572d84006bd5465e57214c56d4
 workflow-type: tm+mt
-source-wordcount: '1235'
+source-wordcount: '1238'
 ht-degree: 46%
 
 ---
@@ -53,13 +53,13 @@ Sie können gleichzeitige Betrachter analysieren, um zu verstehen, wo Spitzenzei
 In Analysis Workspace bezeichnet die Metrik „Gleichzeitige Betrachter“ die Anzahl der eindeutigen Personen, die sich Ihre Medien-Streams zu einem bestimmten Zeitpunkt ansehen, unabhängig von der Anzahl der Sitzungen.
 
 
-+++ Sehen Sie sich eine Videodemonstration dieser Funktion an.
+>[!BEGINSHADEBOX]
 
->[!VIDEO](https://video.tv.adobe.com/v/330177/?quality=12)
+Siehe ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Bedienfeld „Gleichzeitige Medienbetrachter](https://video.tv.adobe.com/v/26990/?quality=12&learn=on){target="_blank"} für ein Demovideo.
 
 {{videoaa}}
 
-+++
+>[!ENDSHADEBOX]
 
 ## Verwenden
 

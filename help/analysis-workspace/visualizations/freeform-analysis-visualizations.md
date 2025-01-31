@@ -5,7 +5,7 @@ title: Visualisierungsübersicht
 feature: Visualizations
 exl-id: ca9e0561-7a54-487a-9fdc-3bcf34f9bdb1
 role: User
-source-git-commit: 4942c83e34b129e3718084601d5a733bcebf4de9
+source-git-commit: 0859a35bb0f34800b970ff256bc9b740ffe424c9
 workflow-type: tm+mt
 source-wordcount: '1616'
 ht-degree: 17%
@@ -126,8 +126,6 @@ Welche Visualisierungseinstellungen verfügbar sind, hängt von der Visualisieru
 | **[!UICONTROL Min. anzeigen]** | Den Minimalwert in der Visualisierung anzeigen. |
 | **[!UICONTROL Max. anzeigen]** | Den Maximalwert in der Visualisierung anzeigen. |
 | **[!UICONTROL Trendlinie anzeigen]** | Zeigt eine Trendlinie in der Visualisierung an. Wenn ausgewählt, können Sie den Typ der Trendlinie aus dem Dropdown-Menü auswählen. |
-
-
 
 Sie können die Einstellungen für alle von Ihnen erstellten Visualisierungen anpassen. Weitere Informationen finden Sie unter [Benutzervoreinstellungen](/help/analysis-workspace/user-preferences.md).
 

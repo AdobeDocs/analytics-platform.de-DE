@@ -6,10 +6,10 @@ feature: Workspace Basics
 exl-id: 9075518e-54fe-49a6-9601-aa9468187b8f
 solution: Customer Journey Analytics
 role: User
-source-git-commit: 763f2849afee98e704a9f231ed7e203dd3be73f6
+source-git-commit: bd8c9951386608572d84006bd5465e57214c56d4
 workflow-type: tm+mt
-source-wordcount: '1479'
-ht-degree: 99%
+source-wordcount: '1473'
+ht-degree: 95%
 
 ---
 
@@ -19,7 +19,7 @@ Mit Analysis Workspace können Sie schnell Analysen erstellen, um Erkenntnisse z
 
 >[!BEGINSHADEBOX]
 
-Siehe ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Analysis Workspace - Übersicht](https://video.tv.adobe.com/v/26266/?quality=12){target="_blank"} für ein Demovideo.
+Siehe ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Analysis Workspace - Übersicht](https://video.tv.adobe.com/v/26266/?quality=12&learn=on){target="_blank"} für ein Demovideo.
 
 >[!ENDSHADEBOX]
 
@@ -27,11 +27,11 @@ Siehe ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Analysis Works
 
 Das folgende Bild und die zugehörige Tabelle erläutern die Hauptelemente der Benutzeroberfläche von Analysis Workspace:
 
-![Fenster von Analysis Workspace mit Hervorhebung des ganz linken und linken Bedienfelds, der Arbeitsfläche und des Dropdown-Menüs der Datenansicht.](assets/analysis-workspace-overview.png)
+![Analysis Workspace-Fenster mit Hervorhebung der verschiedenen Abschnitte der Benutzeroberfläche](assets/analysis-workspace-overview.png)
 
 | Standort | Name und Funktion |
 |:---------:|----------|
-| ?? | Enthält den Projektnamen, eine Menüstruktur für den Zugriff auf die Funktionen, eine Schaltfläche ![Chevron nach links](/help/assets/icons/ChevronLeft.svg) zum Zurückkehren zur Projektliste und eine Schaltfläche **[!UICONTROL Freigabe]** zum [Freigeben Ihres Workspace-Projekts](/help/analysis-workspace/curate-share/share-projects.md). <br/>Sie können jederzeit den Namen Ihres Projekts (z. B. „Neues Projekt“) auswählen, um den Namen zu ändern. <br/>Wählen Sie ![Sternsymbol](/help/assets/icons/StarOutline.svg) aus, um Ihr Projekt als bevorzugtes Projekt ![Stern](/help/assets/icons/Star.svg) zu markieren. |
+| ?? | Enthält den Namen des Projekts, eine Menüstruktur für den Zugriff auf Funktionen, eine Schaltfläche ![Zurück](/help/assets/icons/ChevronLeft.svg), um zur Projektliste zurückzukehren, und eine Schaltfläche **[!UICONTROL Freigeben]** zum [Freigeben Ihres Workspace-Projekts](/help/analysis-workspace/curate-share/share-projects.md). <br/>Sie können jederzeit den Namen Ihres Projekts (z. B. „Neues Projekt“) auswählen, um den Namen zu ändern. <br/>Wählen Sie ![Nicht bevorzugen](/help/assets/icons/StarOutline.svg) aus, um Ihr Projekt als Lieblingsprojekt zu markieren ![Favorit](/help/assets/icons/Star.svg). |
 | ?? | **Schaltflächenbedienfeld:** Enthält Schaltflächen für den Zugriff auf die wichtigsten [Funktionen](#features) von Analysis Workspace:<ul><li>![WebSeite](/help/assets/icons/WebPage.svg) [[!UICONTROL Bedienfelder]](/help/analysis-workspace/c-panels/panels.md)</li><li>![Geführte Analyse](/help/assets/icons/GuidedAnalysis.svg) [[!UICONTROL Geführte Analyse]](/help/guided-analysis/overview.md)</li><li>![VertikaleGrafikbalken](/help/assets/icons/GraphBarVertical.svg) [[!UICONTROL Visualisierungen]](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md)</li><li>![Kuratieren](/help/assets/icons/Curate.svg) [[!UICONTROL Komponenten]](/help/components/overview.md)</li><li>![Ansichtsliste](/help/assets/icons/ViewList.svg) [[!UICONTROL Inhaltsverzeichnis]](/help/analysis-workspace/build-workspace-project/project-table-of-contents.md)</li><li>![Lesezeichen](/help/assets/icons/Bookmark.svg) [[!UICONTROL Datenwörterbuch]](/help/components/data-dictionary/data-dictionary-overview.md)</li></ul> |
 | ?? | **Linkes Bedienfeld:** Dieser Bereich enthält einzelne Bedienfelder, Visualisierungen, Komponenten oder Listen. Der Inhalt hängt von der im Schaltflächenbedienfeld ausgewählten Schaltfläche ab. |
 | ?? | **Arbeitsfläche:** Der Hauptbereich, in den Sie Inhalte aus dem linken Bedienfeld ziehen, um Ihr Projekt zu erstellen. Das Projekt wird dynamisch aktualisiert, wenn Sie Bedienfelder hinzufügen, Visualisierungen zu Bedienfeldern hinzufügen und Komponenten zu Visualisierungen hinzufügen. Sie können mehrere Bedienfelder erstellen und in jedem Bedienfeld können Sie mehrere Visualisierungen erstellen.<br/>Jedes Bedienfeld basiert auf einer ausgewählten Datenansicht. Die ausgewählte Datenansicht bestimmt verfügbare Komponenten wie Metriken und Dimensionen. Weitere Informationen finden Sie unter [Bedienfelder – Datenansicht](/help/analysis-workspace/c-panels/panels.md#data-view). |

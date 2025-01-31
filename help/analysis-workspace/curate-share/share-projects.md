@@ -5,10 +5,10 @@ title: Freigeben von Projekten
 feature: Curate and Share
 exl-id: ac4ed73a-e890-46cc-be08-4ccedf66b47d
 role: User
-source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
+source-git-commit: bd8c9951386608572d84006bd5465e57214c56d4
 workflow-type: tm+mt
-source-wordcount: '2042'
-ht-degree: 64%
+source-wordcount: '2053'
+ht-degree: 62%
 
 ---
 
@@ -40,13 +40,15 @@ Sie können ein Analysis Workspace-Projekt für die folgenden Personentypen frei
 
 Jede [Kuration](curate.md), die Sie vor der Freigabe vorgenommen haben, wird beim Öffnen des Projekts durch die Empfängerinnen bzw. Empfänger angezeigt.
 
-+++ Sehen Sie sich ein Video an, in dem gezeigt wird, wie die Projektfreigabe verwendet wird.
 
->[!VIDEO](https://video.tv.adobe.com/v/36207/?quality=12)
+>[!BEGINSHADEBOX]
+
+Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Projektfreigabe in Analysis Workspace](https://video.tv.adobe.com/v/36207/?quality=12&learn=on){target="_blank"} finden Sie ein Demovideo.
 
 {{videoaa}}
 
-+++
+>[!ENDSHADEBOX]
+
 
 ## Für Customer Journey Analytics-Benutzende und -Gruppen in der Organisation freigeben {#Add}
 
@@ -153,9 +155,13 @@ Sie können Personen[ die keinen Zugriff auf Customer Journey Analytics haben, ]
 >
 >* Die Funktion [!UICONTROL Für alle freigeben] ist sowohl für Healthcare Shield- als auch für Privacy &amp; Security Shield-Lizenzen blockiert.
 
-Die folgende Videodemonstration und die zugehörige Dokumentation beschreiben die Optionen im Zusammenhang mit der Freigabe eines Links für alle:
 
->[!VIDEO](https://video.tv.adobe.com/v/3420093/?learn=on)
+>[!BEGINSHADEBOX]
+
+Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Für alle freigeben](https://video.tv.adobe.com/v/3420093/?quality=12&learn=on){target="_blank"} finden Sie ein Demovideo.
+
+>[!ENDSHADEBOX]
+
 
 So geben Sie ein Analysis Workspace-Projekt für andere frei:
 
@@ -203,9 +209,16 @@ Wenn jemand ein Projekt für Sie freigibt, indem er einen Link freigibt (entwede
 
 ## Freigeben von eingebetteten Komponenten
 
-Im Folgenden finden Sie ein Video zum Thema:
+Sie können die eingebetteten Komponenten freigeben, die Teil Ihres Projekts sind.
 
->[!VIDEO](https://video.tv.adobe.com/v/24713/?quality=12)
+>[!BEGINSHADEBOX]
+
+Siehe ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Freigeben eingebetteter Komponenten in Analysis Workspace](https://video.tv.adobe.com/v/24713/?quality=12&learn=on){target="_blank"} für ein Demovideo.
+
+{{videoaa}}
+
+>[!ENDSHADEBOX]
+
 
 ## Häufig gestellte Fragen (FAQ) {#FAQs}
 

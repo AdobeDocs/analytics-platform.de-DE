@@ -5,9 +5,9 @@ exl-id: f9b0b3c2-7c88-4bef-af33-0d309cafe799
 solution: Customer Journey Analytics
 feature: Components
 role: User
-source-git-commit: 97b831d7eee477ee7ef0bf8ae65e6a415d243464
+source-git-commit: a2262e446a15ee58be2f3f674c77223368fc8f76
 workflow-type: tm+mt
-source-wordcount: '923'
+source-wordcount: '915'
 ht-degree: 100%
 
 ---
@@ -44,12 +44,6 @@ Um auf das Bedienfeld „Komponenten“ zuzugreifen, wählen Sie im Schaltfläch
 
 Informationen über die Verwendung von Komponenten in einem Projekt finden Sie unter [Erstellen eines Projekts](/help/analysis-workspace/home.md).
 
-
-+++ Sehen Sie sich ein Video an, in dem die Möglichkeiten von Komponenten veranschaulicht werden:
-
->[!VIDEO](https://video.tv.adobe.com/v/23979)
-
-+++
 
 ## Verwalten von Komponenten {#actions}
 

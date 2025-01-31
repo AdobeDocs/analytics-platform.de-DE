@@ -5,10 +5,10 @@ exl-id: 314378c5-b1d7-4c74-a241-786198fa0218
 solution: Customer Journey Analytics
 feature: Use Cases
 role: Admin
-source-git-commit: 90d1c51c11f0ab4d7d61b8e115efa8257a985446
+source-git-commit: f9b9dcf87d781e0702b51e536b7edb4644720fa5
 workflow-type: tm+mt
-source-wordcount: '618'
-ht-degree: 89%
+source-wordcount: '646'
+ht-degree: 86%
 
 ---
 
@@ -40,7 +40,13 @@ Die Datenstruktur in universellen Analytics-Eigenschaften unterscheidet sich von
 
 In den Universal Analytics-Eigenschaften werden die einzelnen Datensätze der Daten als Benutzersitzung und nicht als einzelne Ereignisse gespeichert. Eine SQL-Abfrage ist erforderlich, um die Universal Analytics-Daten in ein mit Adobe Experience Platform kompatibles Format umzuwandeln. Wenden Sie die Funktion `UNNEST` auf das Feld `hits` im GA-Schema an und speichern Sie sie als BigQuery-Tabelle.
 
->[!VIDEO](https://video.tv.adobe.com/v/332634)
+
+>[!BEGINSHADEBOX]
+
+Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Von Google Analytics zu Customer Journey Analytics - BigQuery](https://video.tv.adobe.com/v/332634?quality=12&learn=on){target="_blank"} finden Sie ein Demovideo.
+
+>[!ENDSHADEBOX]
+
 
 ```sql
 SELECT
@@ -74,7 +80,13 @@ Navigieren Sie in der Google Cloud Platform zu **Exportieren > In GCS exportiere
 1. Wählen Sie in Adobe Experience Platform auf der linken Seite **[!UICONTROL Quellen]**.
 1. Suchen Sie im Katalog nach der Option **[!UICONTROL Google Cloud Storage]**. Klicken Sie auf **[!UICONTROL Daten hinzufügen]**.
 
->[!VIDEO](https://video.tv.adobe.com/v/332676)
+
+>[!BEGINSHADEBOX]
+
+Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Importieren von Google Analytics-Daten in Adobe Experience Platform](https://video.tv.adobe.com/v/332676?quality=12&learn=on){target="_blank"} finden Sie ein Demovideo.
+
+>[!ENDSHADEBOX]
+
 
 >[!TIP]
 >

@@ -4,10 +4,10 @@ description: Eine Visualisierung, die die Beziehung zwischen bis zu drei Metrike
 feature: Visualizations
 exl-id: c01386c9-c51f-46f3-b1a2-41a8d8996d04
 role: User
-source-git-commit: 55b312552d32070875714a77e1177bf0da5f9d87
+source-git-commit: bd8c9951386608572d84006bd5465e57214c56d4
 workflow-type: tm+mt
-source-wordcount: '168'
-ht-degree: 67%
+source-wordcount: '177'
+ht-degree: 57%
 
 ---
 
@@ -30,7 +30,7 @@ _In diesem Artikel wird die Streuvisualisierung in {_}![CustomerJourneyAnalytics
 >[!ENDSHADEBOX]
 
 
-Die ![GraphScatter](/help/assets/icons/GraphScatter.svg)**[!UICONTROL Scatter]**-Visualisierung zeigt die Beziehung zwischen Dimensionselementen und bis zu drei Metriken. Sie erfordert drei Komponenten und unterstützt die Visualisierung von bis zu vier Komponenten.
+Die ![GraphScatter](/help/assets/icons/GraphScatter.svg)**[!UICONTROL Scatter]**-Visualisierung zeigt die Beziehung zwischen Dimensionselementen und bis zu drei Metriken. Die Visualisierung erfordert drei Komponenten und unterstützt die Visualisierung von bis zu vier Komponenten.
 
 * Die Zeilenkomponente (normalerweise eine Dimension) stellt jeden Punkt im Diagramm dar. Verschiedene Zeilen werden als verschiedenfarbige Punkte angezeigt.
 * Die Spalte ganz links (normalerweise eine Metrik) stellt die Position des Punkts auf der Y-Achse (vertikal) dar.
@@ -39,6 +39,14 @@ Die ![GraphScatter](/help/assets/icons/GraphScatter.svg)**[!UICONTROL Scatter]**
 * Alle nachfolgenden Spalten in einer Freiform-Tabelle werden von der Streudiagramm-Visualisierung ignoriert.
 
 ![Streudiagramm-Beispiel mit mehreren Dimensionselementen ](assets/scatter.png)
+
+
+>[!BEGINSHADEBOX]
+
+Siehe ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Streudiagramm-](https://video.tv.adobe.com/v/334459/?quality=12&learn=on){target="_blank"}) für ein Demovideo.
+
+>[!ENDSHADEBOX]
+
 
 >[!MORELIKETHIS]
 >

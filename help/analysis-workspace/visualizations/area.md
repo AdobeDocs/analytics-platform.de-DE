@@ -4,7 +4,7 @@ title: Bereich und Bereich gestapelt
 feature: Visualizations
 exl-id: d9662b29-fc41-4074-8cf6-031202994ece
 role: User
-source-git-commit: 5655c951422c4abbd7bd12686027968efea5c6ea
+source-git-commit: 0859a35bb0f34800b970ff256bc9b740ffe424c9
 workflow-type: tm+mt
 source-wordcount: '204'
 ht-degree: 25%
@@ -51,8 +51,6 @@ Die ![GraphArea](/help/assets/icons/GraphArea.svg)**[!UICONTROL Area]**-Visualis
 >abstract="Erstellen Sie eine Flächendiagramm-Visualisierung, um die Stapelung mehrerer Metriken darzustellen."
 
 <!-- markdownlint-enable MD034 -->
-
-
 
 
 Die ![GraphAreaStacked](/help/assets/icons/GraphAreaStacked.svg)Area **[!UICONTROL Stacked]**-Visualisierung ist wie ein Area, aber jede Serie beginnt am Anfang der vorherigen Serie.

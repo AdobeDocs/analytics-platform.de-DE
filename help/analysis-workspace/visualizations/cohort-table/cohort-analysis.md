@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie eine Kohortentabelle für die Kohortenanalyse
 feature: Visualizations
 exl-id: 3e3a70cd-70ec-4d4d-81c3-7902716d0b01
 role: User
-source-git-commit: 55b312552d32070875714a77e1177bf0da5f9d87
+source-git-commit: bd8c9951386608572d84006bd5465e57214c56d4
 workflow-type: tm+mt
-source-wordcount: '689'
+source-wordcount: '692'
 ht-degree: 30%
 
 ---
@@ -52,13 +52,15 @@ Beispiele für Möglichkeiten einer „Kohortentabelle:
 
 [!UICONTROL Kohortentabelle] ist für alle Customer Journey Analytics-Kunden mit Zugriffsrechten auf [!UICONTROL Analysis Workspace verfügbar].
 
-+++ Sehen Sie sich eine Videodemonstration zur Kohortentabelle an.
 
->[!VIDEO](https://video.tv.adobe.com/v/23990/?quality=12)
+>[!BEGINSHADEBOX]
+
+Siehe ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Kohortenanalyse in Analysis Workspace](https://video.tv.adobe.com/v/23990/?quality=12&learn=on){target="_blank"} für ein Demovideo.
 
 {{videoaa}}
 
-+++
+>[!ENDSHADEBOX]
+
 
 >[!IMPORTANT]
 >

@@ -4,10 +4,10 @@ title: Treemap
 feature: Visualizations
 exl-id: fc39d1a9-9e83-40f3-af28-f4803647ad0b
 role: User
-source-git-commit: 55b312552d32070875714a77e1177bf0da5f9d87
+source-git-commit: bd8c9951386608572d84006bd5465e57214c56d4
 workflow-type: tm+mt
-source-wordcount: '156'
-ht-degree: 27%
+source-wordcount: '164'
+ht-degree: 26%
 
 ---
 
@@ -37,6 +37,13 @@ Jeder Zweig des Baums erhält ein Rechteck, das kleinere Rechtecke enthält, die
 ![Treemap-Beispiel mit Kacheln kleinerer Rechtecke, die Unterzweige darstellen.](assets/treemap.png)
 
 Mit einer Treemap können Sie Muster sehen, die auf andere Weise schwer zu erkennen wären. Mithilfe der Farbe und Größe der Dimensionen können Sie entdecken, wie Dimensionen korreliert werden und ob eine bestimmte Dimension besonders relevant ist. Ein zweiter Vorteil von Baumkarten besteht darin, dass sie konstruktiv den Platz effizient nutzen.
+
+
+>[!BEGINSHADEBOX]
+
+Siehe ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Treemap-Visualisierung](https://video.tv.adobe.com/v/334458/?quality=12&learn=on){target="_blank"} für ein Demovideo.
+
+>[!ENDSHADEBOX]
 
 
 >[!MORELIKETHIS]
