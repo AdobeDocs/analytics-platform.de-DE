@@ -4,7 +4,7 @@ title: Intelligente Beschriftungen
 feature: Visualizations
 exl-id: d32d3cda-ecbf-4ee7-a8b7-7c3c71b5df75
 role: User
-source-git-commit: 5d391a73fb30ebc8f443f5a88357c866df03ce96
+source-git-commit: 4d566411778774d21be04c4f3d6cf2ffabed6db2
 workflow-type: tm+mt
 source-wordcount: '876'
 ht-degree: 19%
@@ -88,6 +88,7 @@ Intelligente Beschriftungen sind auf Folgendes ausgerichtet:
 Siehe ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Intelligente ](https://video.tv.adobe.com/v/3420131/?quality=12&learn=on){target="_blank"}) für ein Demovideo.
 
 >[!ENDSHADEBOX]
+
 
 ## Intelligente Beschriftungen starten {#launch}
 
