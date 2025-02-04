@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Connections
 role: Admin
 exl-id: 7729c1b9-b3ed-4662-a446-2088389bbd97
-source-git-commit: eef9b420f1016254dece0a916b82bc99e2ca866e
+source-git-commit: 32678fdedf1b384afce1998880af04f1af077943
 workflow-type: tm+mt
-source-wordcount: '365'
+source-wordcount: '413'
 ht-degree: 2%
 
 ---
@@ -30,9 +30,12 @@ Diese Umwandlung ist nur für Datensätze mit Daten für B2B-Lookup-Schemas verf
 
 So aktivieren Sie die Umwandlung für einen solchen Datensatz:
 
-![Transformations-Datensatz aktivieren](assets/transform-dataset.gif)
+![Transformations-Datensatz aktivieren](/help/connections/assets/transform.gif)
 
-* Stellen Sie sicher, dass Sie die richtige Kennung für **[!UICONTROL Schlüssel]** und **[!UICONTROL Übereinstimmungsschlüssel]** auswählen, z. B. `personKey.sourceKey`.
+* Überprüfen Sie für jeden Datensatz die empfohlenen Werte für **[!UICONTROL Schlüssel]** und **[!UICONTROL Übereinstimmungsschlüssel]**. Wenn Sie die Werte von den vorgeschlagenen Werten ändern, wird eine Warnung angezeigt, die Sie auffordert, fortzufahren. Sie müssen Folgendes sicherstellen:
+
+   * Der für „Schlüssel **ausgewählte Wert** auf dem Datentyp Personen-ID .
+   * Der Wert, den Sie für **Übereinstimmungsschlüssel** auswählen, wird als primäres Identitätsfeld für den Ereignis-Datensatz definiert.
 
 * Wählen Sie die Optionen für den Import neuer Daten und die Aufstockung des Datensatzes aus.
 
@@ -43,7 +46,7 @@ So aktivieren Sie die Umwandlung für einen solchen Datensatz:
 
   >[!IMPORTANT]
   >
-  >Nach dem Einschalten und dem Speichern der Verbindung ist die Umwandlung unumkehrbar. Sie können die Transformationseinstellung für einen Datensatz nach dem Speichern einer Verbindung nur ändern, indem Sie den Datensatz entfernen und erneut zur Verbindung hinzufügen.
+  >Nach dem Einschalten und dem Speichern der Verbindung ist die Umwandlung unumkehrbar. Die Konfiguration von Schlüssel, übereinstimmendem Schlüssel und Transform-Datensatz kann nicht geändert werden. Sie können den Datensatz nur entfernen, hinzufügen und dann neu konfigurieren.
 
 So aktivieren Sie die Umwandlung für einen oder mehrere Datensätze, die bereits Teil einer vorhandenen Verbindung sind:
 
