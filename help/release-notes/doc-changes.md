@@ -7,7 +7,7 @@ feature: Release Notes
 source-git-commit: c2e7b0595a719faa751e3cb39668006db0d89d48
 workflow-type: tm+mt
 source-wordcount: '4402'
-ht-degree: 95%
+ht-degree: 96%
 
 ---
 
@@ -54,7 +54,7 @@ Die folgenden Aktualisierungen wurden seit der ersten Erstellung der Customer Jo
 | Deduplizierungsfunktion für abgeleitete Felder | Es wurde eine Dokumentation für die Funktion [Deduplizieren](/help/data-views/derived-fields/derived-fields.md#deduplicate) für das abgeleitete Feld hinzugefügt. |
 | Aktualisierte allgemeine Fehlermeldungen | Es wurden kleinere Aktualisierungen an den [allgemeinen Fehlermeldungen](/help/analysis-workspace/workspace-faq/error-messages.md) vorgenommen. |
 | **Juni 2024** | |
-| Aktualisierter Produktname, der sich auf die Funktion zum Streaming von Medien bezieht | Instanzen von „Media Analytics“ und „Streaming Media“ wurden durch den Namen „Add-on für Streaming-Mediensammlungen“ und „Streaming-Mediensammlung“ ersetzt, wenn auf die Reihe von Funktionen zum Streaming von Medien verwiesen wird, die Streaming-Mediendaten erfassen und in Analysis Workspace anzeigen. <p>Diese Updates sind in der gesamten Customer Journey Analytics-Dokumentation sowie in der Dokumentation zur [-Mediensammlung ](https://experienceleague.adobe.com/de/docs/media-analytics/using/media-overview).</p> |
+| Aktualisierter Produktname, der sich auf die Funktion zum Streaming von Medien bezieht | Instanzen von „Media Analytics“ und „Streaming Media“ wurden durch den Namen „Add-on für Streaming Media Collection“ und „Streaming Media Collection“ ersetzt, wenn auf die Reihe von Funktionen zum Streaming von Medien verwiesen wird, die Streaming-Mediendaten erfassen und in Analysis Workspace anzeigen. <p>Diese Aktualisierungen sind in der gesamten Dokumentation zu Customer Journey Analytics sowie in der [Dokumentation zu Streaming Media Collection](https://experienceleague.adobe.com/de/docs/media-analytics/using/media-overview) verfügbar.</p> |
 | Grafikbasierte Zuordnung | Die [Dokumentation zur Zuordnung](/help/stitching/overview.md) wurde mit der Einführung der grafikbasierten Zuordnung aktualisiert und umstrukturiert. |
 | KI-Assistent | Es wurde eine [Dokumentation](../ai-assistant.md) zum KI-Assistenten für Customer Journey Analytics hinzugefügt. |
 | Transformieren der Datensätze für B2B-Suchvorgänge | Es wurde eine Dokumentation hinzugefügt, in der beschrieben wird, wie Sie [personenbasierte Suchen nach B2B-Daten](/help/connections//transform-datasets-b2b-lookups.md) (einschließlich Konten, Opportunitys, Marketing-Listen und Kampagnen) mithilfe der Transformation von B2B-Lookup-Datensätzen unterstützen. |

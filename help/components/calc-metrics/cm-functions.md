@@ -130,7 +130,7 @@ Addiert alle numerischen Werte für eine Metrik innerhalb einer Spalte (über di
 >[!CONTEXTUALHELP]
 >id="functions-count"
 >title="Anzahl"
->abstract="Gibt die Zahl (oder Anzahl) von Werten, die nicht null sind, für eine Metrik in einer Spalte zurück (die Anzahl der innerhalb einer Dimension berichteten eindeutigen Elemente)."
+>abstract="Gibt die Zahl oder Anzahl der Werte ungleich null für eine Metrik innerhalb einer Spalte zurück (die Anzahl der eindeutigen Elemente innerhalb einer Dimension)."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -171,7 +171,7 @@ Addiert alle numerischen Werte für eine Metrik innerhalb einer Spalte (über di
 >[!CONTEXTUALHELP]
 >id="functions-mean"
 >title="Arithmetisches Mittel"
->abstract="Gibt das arithmetische Mittel (d. h. den Durchschnitt) für eine Metrik in einer Spalte zurück"
+>abstract="Gibt das arithmetische Mittel (d. h. den Durchschnitt) für eine Metrik in einer Spalte zurück."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -193,7 +193,7 @@ Addiert alle numerischen Werte für eine Metrik innerhalb einer Spalte (über di
 >[!CONTEXTUALHELP]
 >id="functions-median"
 >title="Median"
->abstract="Gibt den Median für eine Metrik in einer Spalte zurück. Der Median ist die Zahl in der Mitte einer Zahlenreihe. Das heißt, die Hälfte der Zahlen weist Werte auf, die größer oder gleich dem Median sind, und die Hälfte ist kleiner oder gleich dem Median."
+>abstract="Gibt den Medianwert für eine Metrik in einer Spalte zurück. Der Median ist die Zahl in der Mitte einer Zahlenreihe. Das heißt, die Hälfte der Zahlen weist Werte auf, die größer oder gleich dem Median sind, und die Hälfte ist kleiner oder gleich dem Median."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -252,7 +252,7 @@ MODULO(MODULO(x,y)+y,y)
 >[!CONTEXTUALHELP]
 >id="functions-percentile"
 >title="Perzentil"
->abstract="Gibt das n-te Perzentil zurück, das einen Wert zwischen 0 und 100 darstellt. Wenn n &lt; 0 ist, verwendet die Funktion null. Wenn n > 100 ist, gibt die Funktion 100 zurück."
+>abstract="Gibt das n-te Perzentil zurück, das einen Wert zwischen 0 und 100 darstellt. Wenn n &lt; 0 ist, verwendet die Funktion null. Wenn n > 100 ist, gibt die Funktion 100 zurück."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -297,7 +297,7 @@ Gibt die y-te Potenz von x zurück.
 >[!CONTEXTUALHELP]
 >id="functions-quartile"
 >title="Quartil"
->abstract="Gibt das Quartil der Werte für eine Metrik zurück. Quartile können beispielsweise verwendet werden, um die 25 % der Produkte zu finden, die den höchsten Umsatz erzielen."
+>abstract="Gibt das Quartil der Werte für eine Metrik zurück. Quartile können beispielsweise verwendet werden, um die oberen 25 % der Produkte zu finden, die den höchsten Umsatz erzielen."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -449,7 +449,7 @@ Die Summe der Spalten in jeder Zeile.
 >[!CONTEXTUALHELP]
 >id="functions-stdev"
 >title="Standardabweichung"
->abstract="Gibt die Standardabweichung (d. h. die Quadratwurzel der Varianz) basierend auf einer Stichprobenpopulation von Daten zurück."
+>abstract="Gibt die Standardabweichung (oder die Quadratwurzel der Schwankung) basierend auf einer Beispieldatenpopulation zurück."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -470,7 +470,7 @@ Die Summe der Spalten in jeder Zeile.
 >[!CONTEXTUALHELP]
 >id="functions-variance"
 >title="Varianz"
->abstract="Gibt die Varianz basierend auf einer Stichprobenpopulation von Daten zurück."
+>abstract="Gibt die Schwankung basierend auf einer Beispieldatenpopulation zurück."
 
 <!-- markdownlint-enable MD034 -->
 
