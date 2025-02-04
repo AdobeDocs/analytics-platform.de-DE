@@ -4,10 +4,10 @@ description: Binden Sie die von Adobe Journey Optimizer generierten Daten ein un
 exl-id: 9333ada2-b4d6-419e-9ee1-5c96f06a3bfd
 feature: Experience Platform Integration
 role: Admin
-source-git-commit: d5e8c75f1e3a207b625421a13219674f8da6c3f5
+source-git-commit: 9149a072dc8af3fac0d5272fe84baabca7fb6058
 workflow-type: tm+mt
-source-wordcount: '3020'
-ht-degree: 100%
+source-wordcount: '3514'
+ht-degree: 94%
 
 ---
 
@@ -169,6 +169,31 @@ Sie können die folgenden Dimensionen in einer Datenansicht erstellen, um eine u
 | Landingpage-ID (AJO) | Eindeutige Kennung für die Landingpage. | Datensatz für Erlebnisereignisse beim AJO-E-Mail-Tracking | `_experience.customerJourneyManagement.`<br/>`messageInteraction.landingpage.landingPageID` | Komponententyp: Dimension |
 | Landingpage-Quelle (AJO) | Die Quelle der Landingpage. | Datensatz für Erlebnisereignisse beim AJO-E-Mail-Tracking | Abgeleitete Felder | Komponententyp: Dimension (abgeleitetes Feld) |
 | Link-URL (AJO) | Die von den Benutzenden angeklickte URL. | Datensatz für Erlebnisereignisse beim AJO-E-Mail-Tracking | `_experience.customerJourneyManagement.`<br/>`messageInteraction.urlID` | Komponententyp: Dimension |
+| Grund des Nachrichtenausschlusses (AJO) | Ausschlussgrund | Ereignisdatensatz mit Feedback zu AJO-Nachrichten | `_experience.customerJourneyManagement.`<br/>`messageDeliveryfeedback.`<br/>`messageExclusion.reason` | Komponententyp: Dimension |
+| Kategorie fehlgeschlagener Nachrichten (AJO) | Fehlerkategorie | Ereignisdatensatz mit Feedback zu AJO-Nachrichten | ` _experience.customerJourneyManagement.`<br/>`messageDeliveryfeedback.`<br/>`messageFailure.category` | Komponententyp: Dimension |
+| Grund für Fehlschlagen der Nachricht (AJO) | Grund des Fehlschlagens | Ereignisdatensatz mit Feedback zu AJO-Nachrichten | `_experience.customerJourneyManagement.`<br/>`messageDeliveryfeedback.`<br/>`messageFailure.reason` | Komponententyp: Dimension |
+| Typ des Nachrichtenfehlers (AJO) | Fehlertyp | Ereignisdatensatz mit Feedback zu AJO-Nachrichten | `_experience.customerJourneyManagement.`<br/>`messageDeliveryfeedback.`<br/>`messageFailure.type` | Komponententyp: Dimension |
+| Fehlerstatus der Nachricht (AJO) | Fehlerstatus | Ereignisdatensatz mit Feedback zu AJO-Nachrichten | `_experience.customerJourneyManagement.`<br/>`messageDeliveryfeedback.`<br/>`messageFailure.status` | Komponententyp: Dimension |
+| Nachrichten-ID (AJO) | Die Nachrichten-ID, mit der diese Daten verknüpft werden sollen. | AJO-Entitäts-Datensatz | `_experience.customerJourneyManagement.`<br/>`entities.channelDetails.messageID` | Komponententyp: Dimension |
+| Nachrichtenwiederholung (AJO) | Wiederholungsanzahl | Ereignisdatensatz mit Feedback zu AJO-Nachrichten | `_experience.customerJourneyManagement.`<br/>`messageDeliveryfeedback.retryCount` | Komponententyp: Dimension |
+| Knoten-ID (AJO) | Die Knoten-ID des Journey-Knotens. | AJO-Entitäts-Datensatz | `_experience.customerJourneyManagement.`<br/>`entities.journey.journeyNodeID` | Komponententyp: Dimension |
+| Knotenname (AJO) | Der Knotenname des Journey-Knotens. | AJO-Entitäts-Datensatz | `_experience.customerJourneyManagement.`<br/>`entities.journey.journeyNodeName` | Komponententyp: Dimension |
+| Knotentyp (AJO) | Der Knotentyp des Journey-Knotens. | AJO-Entitäts-Datensatz | `_experience.customerJourneyManagement.`<br/>`entities.journey.journeyNodeID` | Komponententyp: Dimension |
+| Betriebssystem (AJO) | Der Name des Betriebssystems. | Datensatz für Erlebnisereignisse beim AJO-Push-Tracking | `environment.operatingSystem` | Komponententyp: Dimension |
+| Betriebssystemversion (AJO) | Die Version des Betriebssystems | Datensatz für Erlebnisereignisse beim AJO-Push-Tracking | environment.operatingSystemVersion | Komponententyp: Dimension |
+| Push-Plattform (AJO) | Push-Anbieter-Service, z. B. APNs oder FCM. | AJO-E-Mail-Tracking-Erlebnisereignis-Datensatz, AJO-Nachrichten-Feedback-Ereignisdatensatz, AJO-Push-Tracking-Erlebnisereignis-Datensatz | `_experience.customerJourneyManagement.`<br/>`pushChannelContext.platform` | Komponententyp: Dimension |
+| Push-Titel (AJO) | Push-Titel, nicht personalisiert. | AJO-Entitätsdatensatz, AJO-Nachrichten-Feedback-Ereignisdatensatz, AJO-Push-Tracking-Erlebnisereignis-Datensatz | `_experience.customerJourneyManagement.`<br/>`entities.channelDetails.push.title | Component type: Dimension` |
+| Richtlinie zur Ablehnung der Einwilligung (AJO) | Name der entsprechenden zurückgewiesenen Einverständnisrichtlinie. | Journey-Schritt-Ereignisse | `_experience.journeyOrchestration.`<br/>`stepEvents.consent.rejectedPolicies.name` | Komponententyp: Dimension |
+| Eingehende SMS-Nachricht (AJO) | Eingehende SMS-Antwort, z. B. Anhalten, Starten, Abonnieren usw. | AJO-E-Mail-Tracking-Erlebnisereignis-Datensatz, AJO-Nachrichten-Feedback-Ereignisdatensatz, AJO-Push-Tracking-Erlebnisereignis-Datensatz | `_experience.customerJourneyManagement.`<br/>`smsChannelContext.inboundMessage` | Komponententyp: Dimension |
+| SMS-Nachrichtentyp (AJO) | SMS-Anbieter, z. B. Eingehend, inboundReply oder Senden. | AJO-E-Mail-Tracking-Erlebnisereignis-Datensatz, AJO-Nachrichten-Feedback-Ereignisdatensatz, AJO-Push-Tracking-Erlebnisereignis-Datensatz | ` _experience.customerJourneyManagement.`<br/>`smsChannelContext.messageType` | Komponententyp: Dimension |
+| SMS-Anbieter (AJO) | SMS-Anbieter, z. B. Sinch oder Twilio. | AJO-E-Mail-Tracking-Erlebnisereignis-Datensatz, AJO-Nachrichten-Feedback-Ereignisdatensatz, AJO-Push-Tracking-Erlebnisereignis-Datensatz | `_experience.customerJourneyManagement.`<br/>`smsChannelContext.messageType` | Komponententyp: Dimension |
+| Auswahltyp (AJO) | Die Kanaloberfläche, auf der die Nachricht angezeigt wurde. | Journey-Schrittereignisse, AJO-E-Mail-Tracking-Erlebnisereignis-Datensatz, AJO-Nachrichten-Feedback-Ereignisdatensatz, AJO-Push-Tracking-Erlebnisereignis-Datensatz | `_experience.decisioning.propositions.`<br/>`items.itemSelection.`<br/>`selectionDetail.selectionType` | Komponententyp: Dimension |
+| Abonnement-Listen-ID (AJO) | Eindeutige Kennung für Abonnement-Liste. | Datensatz für Erlebnisereignisse beim AJO-E-Mail-Tracking | `_experience.customerJourneyManagement.`<br/>`messageInteraction.subscription.`<br/>` subscriptionListID` | Komponententyp: Dimension |
+| Oberfläche (AJO) |  | Journey-Schrittereignisse, AJO-E-Mail-Tracking-Erlebnisereignis-Datensatz, AJO-Nachrichten-Feedback-Ereignisdatensatz, AJO-Push-Tracking-Erlebnisereignis-Datensatz | `_experience.decisioning.`<br/>`propositions.scope` | Komponententyp: Dimension |
+| Abwandlungs-ID (AJO) | Die ID der ausgewählten Abwandlung für das Experiment. | AJO-Entitäts-Datensatz | `_experience.customerJourneyManagement.`<br/>`entities.experiment.treatmentID` | Komponententyp: Dimension |
+| Abwandlungsname (AJO) | Der Name der ausgewählten Abwandlung für das Experiment. | AJO-Entitäts-Datensatz | `_experience.customerJourneyManagement.`<br/>`entities.experiment.treatmentName` | Komponententyp: Dimension |
+| URL-ID (AJO) | Eindeutige Kennung der URL, auf die die Benutzerin oder der Benutzer geklickt hat. | Datensatz für Erlebnisereignisse beim AJO-E-Mail-Tracking | `_experience.customerJourneyManagement.`<br/>`messageInteraction.urlID` | Komponententyp: Dimension |
+| URL-Titel (AJO) | Menschenfreundliche Kennzeichnung für URL. | Datensatz für Erlebnisereignisse beim AJO-E-Mail-Tracking | `_experience.customerJourneyManagement.`<br/>`messageInteraction.label` | Komponententyp: Dimension |
 
 {style="table-layout:auto"}
 
