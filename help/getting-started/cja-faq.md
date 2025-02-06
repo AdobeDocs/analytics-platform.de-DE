@@ -5,9 +5,9 @@ exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
 solution: Customer Journey Analytics
 feature: FAQ
 role: User
-source-git-commit: edbe0a1b3354b17defb9aef90564f2e36586b181
+source-git-commit: 408773de0fd157edf0cd7b8edc8a8873eff00eb0
 workflow-type: tm+mt
-source-wordcount: '2583'
+source-wordcount: '2582'
 ht-degree: 98%
 
 ---
@@ -132,7 +132,7 @@ Nein, Sie können eine beliebige ID verwenden, einschließlich eines Hash einer 
 >[!NOTE]
 >In Customer Journey Analytics gibt es keine feste Datengröße. Daher kann Adobe sich nicht auf eine standardmäßige Aufnahmezeit festlegen. Adobe arbeitet aktiv daran, diese Latenzen durch neue Updates und Aufnahmeoptimierung zu reduzieren.
 
-<ul><li>Live-Daten oder -Ereignisse: Werden innerhalb von 90 Minuten verarbeitet und aufgenommen, sobald Daten in Adobe Experience Platform verfügbar sind. (Batch-Größe &gt; 50 Millionen Zeilen: länger als 90 Minuten.) **Hinweis:** Wenn das Zusammenfügen aktiviert ist, kann die Aufnahme bis zu 3,25 Stunden dauern. Weitere Informationen finden Sie unter [Leitplanken](https://experienceleague.adobe.com/en/docs/analytics-platform/using/technotes/guardrails).</li><li>Kleine Aufstockungen: Innerhalb von sieben Tagen<li>Große Aufstockungen: Innerhalb von 30 Tagen</li></ul>
+<ul><li>Live-Daten oder -Ereignisse: Werden innerhalb von 90 Minuten verarbeitet und aufgenommen, sobald Daten in Adobe Experience Platform verfügbar sind. (Batch-Größe &gt; 50 Millionen Zeilen: länger als 90 Minuten.) Wenn das Zusammenfügen aktiviert ist, kann die Aufnahme bis zu 3,25 Stunden dauern.<p>Weitere Informationen finden Sie unter [Leitplanken](https://experienceleague.adobe.com/en/docs/analytics-platform/using/technotes/guardrails).</li><li>Kleine Aufstockungen: Innerhalb von sieben Tagen<li>Große Aufstockungen: Innerhalb von 30 Tagen</li></ul>
 
 Adobe hat kürzlich die Verarbeitung von Daten in Customer Journey Analytics geändert:
 
