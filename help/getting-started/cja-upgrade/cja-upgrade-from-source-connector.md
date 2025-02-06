@@ -1,5 +1,5 @@
 ---
-title: Wechsel vom Analytics-Quell-Connector zum Web SDK für Customer Journey Analytics
+title: Wechsel vom Analytics-Quell-Connector zum Web SDK für Customer Journey Analytics
 description: Erfahren Sie, wie Sie beim Upgrade auf Customer Journey Analytics vom Analytics-Quell-Connector zum Web SDK wechseln
 role: Admin
 solution: Customer Journey Analytics
@@ -10,18 +10,18 @@ exl-id: 4c0eef7d-7b0e-43b5-8126-d84d4fffd80c
 source-git-commit: a462bdbff59e8d83d6948ef882e66690624c4847
 workflow-type: tm+mt
 source-wordcount: '466'
-ht-degree: 0%
+ht-degree: 15%
 
 ---
 
-# Wechsel vom Analytics-Quell-Connector zum Web SDK für Customer Journey Analytics {#transition-from-source-connector}
+# Wechsel vom Analytics-Quell-Connector zum Web SDK für Customer Journey Analytics {#transition-from-source-connector}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-source-connector"
 >title="Implementierung des Analytics-Quell-Connectors"
->abstract="Mit dem Analytics-Quell-Connector können Sie mühelos Wert aus dem Customer Journey Analytics ziehen, Sie müssen jedoch sowohl für Adobe Analytics als auch für Customer Journey Analytics bezahlen. Dieser Leitfaden kann Ihnen dabei helfen, zu einer unabhängigen Web SDK-Implementierung zu gelangen."
+>abstract="Mit dem Analytics-Quell-Connector können Sie mit Customer Journey Analytics einen Mehrwert erzielen. Sie müssen jedoch sowohl für Adobe Analytics als auch für Customer Journey Analytics bezahlen. Dieser Leitfaden kann Sie bei zu einer unabhängigen Web SDK-Implementierung unterstützen."
 
 <!-- markdownlint-enable MD034 -->
 

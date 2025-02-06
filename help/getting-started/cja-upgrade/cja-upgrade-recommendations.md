@@ -10,7 +10,7 @@ exl-id: d35f8615-66f5-4823-b0b8-433852246dd2
 source-git-commit: 2d9475c4aa3ca9ba92856182e8c93f59180d833a
 workflow-type: tm+mt
 source-wordcount: '1587'
-ht-degree: 7%
+ht-degree: 10%
 
 ---
 
@@ -28,14 +28,14 @@ Nachdem Sie über genügend historische Daten mit der Experience Platform Web SD
 >
 >Wenn die in diesem Abschnitt beschriebenen Upgrade-Schritte für Ihr Unternehmen nicht sinnvoll sind, verwenden Sie den [Adobe Analytics-to-Customer Journey Analytics-Upgrade-Fragebogen](https://gigazelle.github.io/cja-ttv/), um Upgrade-Schritte dynamisch zu generieren, die auf die individuellen Umstände Ihres Unternehmens zugeschnitten sind.
 
-### Empfohlener Upgrade-Prozess auf hoher Ebene {#high-level-upgade-process}
+### Allgemein empfohlener Upgrade-Prozess {#high-level-upgade-process}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-historical-data"
 >title="Historische Daten aus Adobe Analytics"
->abstract="Übertragen Sie Ihre historischen Adobe Analytics Report Suite-Daten in Adobe Experience Platform und Customer Journey Analytics."
+>abstract="Nehmen Sie historische Daten aus Adobe Analytics-Report Suites in Adobe Experience Platform und Customer Journey Analytics auf."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -55,7 +55,7 @@ Nachdem Sie über genügend historische Daten mit der Experience Platform Web SD
 
    Mit dem Analytics-Quell-Connector können Sie:
 
-   * Übertragen Sie Ihre historischen Adobe Analytics Report Suite-Daten in Adobe Experience Platform und Customer Journey Analytics.
+   * Nehmen Sie historische Daten aus Adobe Analytics-Report Suites in Adobe Experience Platform und Customer Journey Analytics auf.
 
      Sie können den Analytics-Quell-Connector so lange ausführen, wie Sie die historischen Adobe Analytics-Daten beibehalten müssen.
 

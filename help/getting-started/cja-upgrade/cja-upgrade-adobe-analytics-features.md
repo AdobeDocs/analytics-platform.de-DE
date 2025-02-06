@@ -1,19 +1,20 @@
 ---
-title: Grundlegendes zur Unterstützung von Adobe Analytics-Funktionen beim Upgrade auf Customer Journey Analytics
+title: Weitere Informationen zur Unterstützung von Adobe Analytics-Funktionen beim Upgrade auf Customer Journey Analytics
 description: Erfahren Sie mehr über die Unterstützung von Adobe Analytics-Funktionen beim Upgrade auf Customer Journey Analytics
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 hide: true
 hidefromtoc: true
-source-git-commit: 1460cbd05cce793b25d026c413744508ab951147
+exl-id: 92053109-f80d-47ab-b011-c28a5411149c
+source-git-commit: 87df2fb92f238ce051ac5f6cc90e218737279471
 workflow-type: tm+mt
 source-wordcount: '434'
-ht-degree: 29%
+ht-degree: 59%
 
 ---
 
-# Grundlegendes zur Unterstützung von Adobe Analytics-Funktionen beim Upgrade auf Customer Journey Analytics {#feature-support-upgrade}
+# Weitere Informationen zur Unterstützung von Adobe Analytics-Funktionen beim Upgrade auf Customer Journey Analytics {#feature-support-upgrade}
 
 <!-- markdownlint-disable MD034 -->
 
@@ -38,7 +39,7 @@ ht-degree: 29%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-classification"
 >title="Klassifizierungsdaten"
->abstract="Daten als separate Dimensionen gruppieren oder kategorisieren."
+>abstract="Gruppieren oder kategorisieren Sie Daten als separate Dimensionen."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -47,7 +48,7 @@ ht-degree: 29%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-marketing-channels"
 >title="Marketing-Kanäle"
->abstract="Erstellen Sie Regeln, die kategorisieren, wie Kunden zu Ihrer Site gelangen."
+>abstract="Erstellen Sie Regeln, die kategorisieren, wie Kundschaft zu Ihrer Site gelangt."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -95,4 +96,3 @@ In der folgenden Liste werden nur die Funktionen angezeigt, die in der Checklist
 | [Daten-Feeds](https://experienceleague.adobe.com/en/docs/analytics/export/analytics-data-feed/data-feed-overview) | Der Datenexport der ersten Generation von Datensätzen ist über die [Experience Platform Data Access-API](https://experienceleague.adobe.com/docs/experience-platform/data-access/api.html?lang=de) und [Experience Platform-Ziele](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/export-datasets.html?lang=de) verfügbar. Diese Optionen ermöglichen den Export aller im Experience Platform Data Lake erfassten oder aufgenommenen Daten auf Ereignis-/Zeilenebene. Spalten zur Nachbearbeitung von Daten sind nicht verfügbar, da Post-Spalten zur Abfragezeit berechnet werden. Der Export von Post-Spalten ist über das Reporting verfügbar. |
 | [Data Warehouse](https://experienceleague.adobe.com/en/docs/analytics/export/data-warehouse/data-warehouse) | [Der vollständige Tabellenexport von Customer Journey Analytics](/help/analysis-workspace/export/export-cloud.md) ist die Weiterentwicklung von Data Warehouse-Berichten in Adobe Analytics, mit vielen neuen, häufig angeforderten Funktionen, die heute nicht in Data Warehouse verfügbar sind. |
 | [Streaming-Mediendaten](https://experienceleague.adobe.com/de/docs/media-analytics/using/media-overview) | Streaming-Mediendaten sind über den Analytics-Quell-Connector als Teil des Bedienfelds „Gleichzeitige Medienbetrachter“ und des Bedienfelds „Bei Medienwiedergabe verbrachte Zeit“ in Workspace verfügbar. |
-

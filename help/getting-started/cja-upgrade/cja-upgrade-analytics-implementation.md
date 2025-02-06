@@ -1,5 +1,5 @@
 ---
-title: Machen Sie sich mit Ihrer Adobe Analytics-Implementierung vertraut und erfahren Sie, wie sich dies auf Ihr Customer Journey Analytics-Upgrade auswirkt
+title: Weiter Informationen zu Ihrer Adobe Analytics-Implementierung und deren Wirkung auf Ihr Customer Journey Analytics-Upgrade
 description: Erfahren Sie mehr über den empfohlenen Pfad beim Upgrade von Adobe Analytics auf Customer Journey Analytics
 role: Admin
 solution: Customer Journey Analytics
@@ -10,18 +10,18 @@ exl-id: b9cff809-6df7-4d75-9bc1-0cc12074d355
 source-git-commit: a462bdbff59e8d83d6948ef882e66690624c4847
 workflow-type: tm+mt
 source-wordcount: '876'
-ht-degree: 11%
+ht-degree: 31%
 
 ---
 
-# Machen Sie sich mit Ihrer Adobe Analytics-Implementierung vertraut und erfahren Sie, wie sich dies auf Ihr Customer Journey Analytics-Upgrade auswirkt {#implementation-affects-upgrade}
+# Weiter Informationen zu Ihrer Adobe Analytics-Implementierung und deren Wirkung auf Ihr Customer Journey Analytics-Upgrade {#implementation-affects-upgrade}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-appmeasurement"
 >title="AppMeasurement (manuelle JS-Datei)"
->abstract="Eine JavaScript-Implementierung, die AppMeasurement.js auf einer Seite lädt und Daten mithilfe des s-Objekts (z. B. s.eVar1) an Adobe sendet."
+>abstract="Eine JavaScript-Implementierung, die AppMeasurement.js auf einer Seite lädt und Daten mithilfe des s-Objekts (z. B. s.eVar1) an Adobe sendet."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -29,8 +29,8 @@ ht-degree: 11%
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-analyticsextension"
->title="Adobe Analytics-Erweiterung (Tags)"
->abstract="Eine Tags-Implementierung, die die Adobe Experience Platform-Datenerfassung (früher Launch) lädt. Auf dem Tag ist die Adobe Analytics-Erweiterung installiert."
+>title="Adobe Analytics-Erweiterung (Tags)"
+>abstract="Eine Tags-Implementierung, die die Adobe Experience Platform-Datenerfassung (früher als Launch bekannt) lädt. Für das Tag ist die Adobe Analytics-Erweiterung installiert."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -39,7 +39,7 @@ ht-degree: 11%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-websdk"
 >title="Web SDK (alloy.js)"
->abstract="Eine JavaScript-Implementierung, die die Web-SDK-Bibliothek (alloy.js) auf einer Seite lädt und Daten mithilfe einer JSON-Payload an Adobe sendet."
+>abstract="Eine JavaScript-Implementierung, die die Web SDK-Bibliothek (alloy.js) auf einer Seite lädt und Daten mithilfe einer JSON-Payload an Adobe sendet."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -47,8 +47,8 @@ ht-degree: 11%
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-websdkextension"
->title="Web SDK-Erweiterung (Tags)"
->abstract="Eine Tags-Implementierung, die die Adobe Experience Platform-Datenerfassung (früher Launch) lädt. Auf dem Tag ist die Web SDK-Erweiterung installiert."
+>title="Web SDK-Erweiterung (Tag)"
+>abstract="Eine Tags-Implementierung, die die Adobe Experience Platform-Datenerfassung (früher als Launch bekannt) lädt. Für das Tag ist die Web SDK-Erweiterung installiert."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -57,7 +57,7 @@ ht-degree: 11%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-api"
 >title="Dateneinfüge-API"
->abstract="Eine Implementierung, die die Dateneinfüge-API oder die Bulk-Dateneinfüge-API verwendet."
+>abstract="Eine Implementierung, die die App zum Einfügen von Daten oder die App zum Einfügen von Massendaten verwendet."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -66,7 +66,7 @@ ht-degree: 11%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-mobilesdk"
 >title="Mobile SDK"
->abstract="Eine Implementierung, die die Adobe Experience Platform Mobile SDK verwendet."
+>abstract="Eine Implementierung, die das Adobe Experience Platform Mobile SDK verwendet."
 
 <!-- markdownlint-enable MD034 -->
 
