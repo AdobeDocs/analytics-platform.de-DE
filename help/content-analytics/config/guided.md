@@ -7,9 +7,9 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 4aff664c-3cd9-4591-8122-6ebff10e4a76
-source-git-commit: c63fa8f776fcf3390d312fb44ae6c422e7fa7222
+source-git-commit: 171520c961fe1c77b4fa8466523e10a810074910
 workflow-type: tm+mt
-source-wordcount: '1699'
+source-wordcount: '1696'
 ht-degree: 11%
 
 ---
@@ -92,7 +92,7 @@ Jede Konfiguration erfordert einen eindeutigen Namen. Zum Beispiel `Example Cont
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataview_header"
 >title="Datenansicht"
->abstract="Wählen Sie eine vorhandene Datenansicht vom Customer Journey Analytics aus, mit der Sie Ihre Inhaltsanalysedaten zusammenführen möchten.<br/>[Weitere Informationen](https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-dataviews/data-views){target=\"_blank\"}"
+>abstract="Wählen Sie eine vorhandene Datenansicht vom Customer Journey Analytics aus, mit der Sie Ihre Inhaltsanalysedaten zusammenführen möchten."
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataview_header_alt"
@@ -119,7 +119,7 @@ Wenn Sie eine vorhandene Konfiguration bearbeiten, zeigt die Liste nur Datenansi
 Eine Datenansicht ist an eine Customer Journey Analytics ([) ](/help/connections/overview.md). Und eine Verbindung basiert auf einer Sandbox in Ihrer Organisation. Nachdem Sie die Konfiguration gespeichert haben **[!UICONTROL wird]** Sandbox) basierend auf der ausgewählten Datenansicht automatisch mit dem Eigennamen der Sandbox ausgefüllt.
 
 
-### Erlebniserfassung und -definition
+### Erlebniserfassung und -definition {#onboarding-experiences}
 
 <!-- markdownlint-disable MD034 -->
 
