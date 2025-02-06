@@ -7,14 +7,23 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: c0513e4c-51fb-4b4c-8450-8e6bf7dda4e7
-source-git-commit: daa07b603caa613ca49b61c2e8e461d558459f57
+source-git-commit: 3b1012a302200192fd31fd6a9ed94f96323eb595
 workflow-type: tm+mt
-source-wordcount: '169'
+source-wordcount: '218'
 ht-degree: 0%
 
 ---
 
-# Überprüfen, ob Daten zum Customer Journey Analytics fließen
+# Überprüfen, ob Daten zum Customer Journey Analytics fließen {#validate-data}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-data-validate"
+>title="Überprüfen, ob Daten fließen"
+>abstract="Verwenden Sie die Verbindungsdetails, um zu überprüfen, ob Daten in den Customer Journey Analytics fließen.<br><br>Wenn alles richtig und fehlerfrei durchgeführt wurde, kann dieser Schritt in weniger als einem Tag durchgeführt werden. Wenn es mehrere Datenerfassungsprobleme gibt, kann die Fehlerbehebung erheblich länger dauern."
+
+<!-- markdownlint-enable MD034 -->
 
 >[!NOTE]
 > 

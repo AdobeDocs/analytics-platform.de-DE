@@ -7,14 +7,23 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: 424485a3-a076-4656-83b6-733f16cc2326
-source-git-commit: 0a47796a8b673ef7074a4f9fe865ff59fcf50aab
+source-git-commit: bb87226ee4b9acc433031f41997d403d49f48db3
 workflow-type: tm+mt
-source-wordcount: '889'
-ht-degree: 27%
+source-wordcount: '960'
+ht-degree: 25%
 
 ---
 
-# Hinzufügen des Datensatzes des Analytics-Quell-Connectors zur Verbindung
+# Hinzufügen des Datensatzes des Analytics-Quell-Connectors zur Verbindung {#upgrade-source-connector-dataset}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-source-connector-dataset"
+>title="Hinzufügen des Analytics-Quell-Connector-Datensatzes zu Ihrer Verbindung"
+>abstract="Nachdem sich nun historische Daten aus Ihrer Analytics Report Suite in Adobe Experience Platform befinden, fügen Sie diesen Datensatz zu Ihrer bestehenden Verbindung hinzu, die Sie beim anfänglichen Konfigurieren von Customer Journey Analytics erstellt haben. Sobald dieser Schritt abgeschlossen ist, stehen historische Daten in Customer Journey Analytics zur Verfügung.<br><br>Das Hinzufügen eines Datensatzes zu einer Verbindung in Customer Journey Analytics ist unkompliziert und dauert nur wenige Minuten."
+
+<!-- markdownlint-enable MD034 -->
 
 >[!NOTE]
 > 

@@ -7,14 +7,41 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: 902e5890-f970-4f1a-b091-9c3e51a987db
-source-git-commit: 45f2097d2f0657f623b825acb8d06ec6972f757f
+source-git-commit: 3b1012a302200192fd31fd6a9ed94f96323eb595
 workflow-type: tm+mt
-source-wordcount: '1083'
-ht-degree: 48%
+source-wordcount: '1335'
+ht-degree: 37%
 
 ---
 
-# Erstellen eines benutzerdefinierten Schemas zur Verwendung mit Ihrer Customer Journey Analytics Web SDK-Implementierung
+# Erstellen eines benutzerdefinierten Schemas zur Verwendung mit Ihrer Customer Journey Analytics Web SDK-Implementierung {#create-custom-schema}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-schema-create"
+>title="Erstellen des gewünschten benutzerdefinierten Schemas in Adobe Experience Platform"
+>abstract="Verwenden Sie die Adobe Experience Platform-Benutzeroberfläche, um ein Schema zu erstellen, sodass Adobe das richtige Format zum Speichern Ihrer Daten kennt.<br><br>Dieser Schritt beinhaltet die tatsächliche Erstellung des Schemas, die von Ihrer Organisation vereinbart wurde. Die geschätzte Zeit bis zur Erstellung Ihres Schemas in der Adobe Experience Platform-Benutzeroberfläche beträgt ca. eine Woche, je nach der Anzahl der zu erstellenden Dimensionen und Metriken."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-schema-create-default-aa"
+>title="Erstellen eines Schemas mithilfe der Adobe Analytics ExperienceEvent-Feldergruppe"
+>abstract="Verwenden Sie die Feldergruppe &quot;Adobe Analytics ExperienceEvent“, um in Adobe Experience Platform ein Schema zu erstellen, das alle von Adobe Analytics verwendeten Felder enthält.<br><br>Das Erstellen eines Schemas basierend auf der Adobe Analytics ExperienceEvent-Feldergruppe ist einfach und dauert nur einige Minuten."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-schema-profile"
+>title="Aktivieren des Schemas für das Profil"
+>abstract="Aktivieren Sie das Profil in Ihrem Schema zur Verwendung beim Adobe der Real-Time CDP. Dieser Schritt wird angezeigt, weil Sie ausgewählt haben, dass eine Integration mit Adobe Real-Time CDP erfolgen soll.<br><br>Da Sie bei diesem Schritt auf ein einzelnes Feld klicken müssen, dauert dieser Schritt nur einige Minuten."
+
+<!-- markdownlint-enable MD034 -->
 
 >[!NOTE]
 > 
@@ -26,7 +53,13 @@ ht-degree: 48%
 >
 >Bevor Sie mit der Erstellung Ihres benutzerdefinierten Schemas beginnen, arbeiten Sie mit Ihrem Daten-Team und anderen Stakeholdern in Ihrem Unternehmen zusammen, um das ideale Schema-Design Ihres Unternehmens für das Customer Journey Analytics und die anderen von Ihnen verwendeten Adobe Experience Platform-Programme zu ermitteln. Weitere Informationen finden Sie unter [Entwickeln eines Schemas zur Verwendung mit Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-schema-architect.md).
 
-Adobe empfiehlt die Erstellung eines benutzerdefinierten Experience-Datenmodell-Schemas (XDM), das beim Upgrade auf Customer Journey Analytics mit der Web-SDK verwendet werden kann. Ein benutzerdefiniertes Schema ermöglicht ein optimiertes Schema, das auf die Anforderungen Ihres Unternehmens und die von Ihnen verwendeten Platform-Programme zugeschnitten ist. Wenn Änderungen am Schema erforderlich sind, müssen Sie nicht Tausende nicht verwendeter Felder durchgehen, um das zu aktualisierende Feld zu finden.
+In den folgenden Abschnitten wird beschrieben, wie Sie ein Schema erstellen, das mit Customer Journey Analytics verwendet werden kann. Die folgenden Schemaoptionen sind verfügbar:
+
+* **Benutzerdefiniertes XDM-Schema:** (empfohlen) Ermöglicht ein optimiertes Schema, das auf die Anforderungen Ihres Unternehmens und die von Ihnen verwendeten Platform-Programme zugeschnitten ist. Alle erforderlichen zukünftigen Änderungen sind einfach.
+
+* **Adobe Analytics-Schema, das die Adobe Analytics ExperienceEvent-Feldergruppe verwendet:** Erfordert das Hinzufügen Tausender nicht benötigter Felder. Alle erforderlichen zukünftigen Änderungen sind schwieriger.
+
+Weitere Informationen zu diesen Schemaoptionen finden Sie unter [Schema zum Customer Journey Analytics auswählen](/help/getting-started/cja-upgrade/cja-upgrade-schema-existing.md).
 
 ## Erstellen des Schemas
 
@@ -80,6 +113,10 @@ So erstellen Sie ein benutzerdefiniertes Schema:
       Wählen Sie **[!UICONTROL Zurück]** aus, um die Vorschau zu schließen.
 
    1. (Optional) Wählen Sie alle zusätzlichen Feldergruppen aus, die Sie einbeziehen möchten.
+
+      Wenn Sie sich dafür entschieden haben, das standardmäßige Adobe Analytics-Schema zu verwenden, anstatt ein benutzerdefiniertes XDM-Schema zu erstellen, können Sie jetzt die Adobe Analytics ExperienceEvent-Feldergruppe hinzufügen. Beim Adobe wird jedoch empfohlen, ein benutzerdefiniertes XDM-Schema zu erstellen, anstatt diese Feldergruppe hinzuzufügen.
+
+      Weitere Informationen zu diesen Schemaoptionen finden Sie unter [Schema zum Customer Journey Analytics auswählen](/help/getting-started/cja-upgrade/cja-upgrade-schema-existing.md).
 
    1. Wählen Sie **[!UICONTROL Feldergruppen hinzufügen]** aus.
 

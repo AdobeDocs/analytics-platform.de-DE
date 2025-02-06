@@ -7,14 +7,32 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: a2b90ab2-2fcb-4bf4-a862-2f0675dc2fe2
-source-git-commit: 45f2097d2f0657f623b825acb8d06ec6972f757f
+source-git-commit: 971600fcc7d8a5aac4ad39812ab4a7af69d45ccc
 workflow-type: tm+mt
-source-wordcount: '389'
-ht-degree: 49%
+source-wordcount: '493'
+ht-degree: 38%
 
 ---
 
-# Schema für das Customer Journey Analytics auswählen
+# Schema für das Customer Journey Analytics auswählen {#choose-schema}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-schema-tailored"
+>title="Benutzerdefiniertes Schema verwenden"
+>abstract="(Empfohlen) Durch die Anpassung Ihres Schemas kann Ihr Unternehmen nur verfolgen, was Sie benötigen, und den Overhead vermeiden, der mit unübersichtlichen und nicht benötigten Feldern verbunden ist. Diese Option umfasst Feldergruppen, die von der Web-SDK hinzugefügt wurden, und benutzerdefinierte Feldergruppen für Ihr Unternehmen."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-schema-default"
+>title="Standardschema verwenden"
+>abstract="(Nicht empfohlen) Das Adobe Analytics-Schema enthält mehr als 1.000 Felder, was zu einer Überlastung und Komplexität des Schemas führen kann. Ihr Unternehmen wäre gezwungen, weiterhin das Konzept der Props und eVars einzuhalten, das ein Legacy-Konzept ist, das beim Customer Journey Analytics nicht verwendet wird. Die Integration mit anderen Adobe Experience Platform-Services ist schwieriger."
+
+<!-- markdownlint-enable MD034 -->
 
 >[!NOTE]
 >

@@ -5,14 +5,23 @@ exl-id: 285532b1-eb37-4984-9559-054a18515ddf
 solution: Customer Journey Analytics
 feature: Use Cases, Cross-Channel Analysis
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 668f17531b4b8a01acffdbb0edef07092859d100
 workflow-type: tm+mt
-source-wordcount: '482'
-ht-degree: 61%
+source-wordcount: '582'
+ht-degree: 51%
 
 ---
 
-# Kanalübergreifende Analyse
+# Kanalübergreifende Analyse {#cross-channel}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-additional-datasets"
+>title="Hinzufügen zusätzlicher Datensätze zu Ihrer Verbindung"
+>abstract="Nachdem Sie Daten zu einem Datensatz in Adobe Experience Platform hinzugefügt haben, können Sie diesen Datensatz zu Ihrer Verbindung in Customer Journey Analytics hinzufügen. Stellen Sie sicher, dass beim Hinzufügen von Daten aus anderen Kanälen diese dem Schema entsprechen, das Ihr Unternehmen verwendet.<br><br>Jeder Datensatz, den Sie hinzufügen, erfordert einen enormen Arbeitsaufwand, insbesondere um sicherzustellen, dass die eindeutige Kennung für jedes Ereignis vorhanden ist, und um sicherzustellen, dass die übergreifende Datenstruktur dem benutzerdefinierten Schema Ihres Unternehmens entspricht. Die Einrichtung dieses Workflows kann die Koordinierung über mehrere Monate hinweg über viele Teams innerhalb Ihrer Organisation hinweg erfordern."
+
+<!-- markdownlint-enable MD034 -->
 
 Die Cross-Channel-Analyse ermöglicht eine einzige konsolidierte Ansicht des Kundenverhaltens über verschiedene Kanäle hinweg, indem Daten aus verschiedenen Web-, Mobile- und Offline-Eigenschaften vereinheitlicht werden. Beispielsweise können Sie diese konsolidierte Ansicht verwenden, um Kundeninteraktionen auf Desktop- und Mobilgeräten zu analysieren, um das Kundenverhalten zu verstehen und Einblicke zu gewinnen, um digitale Kundenerlebnisse zu optimieren. Sie können auch kanalübergreifend Kundeninteraktionen analysieren, einschließlich digitaler und Offline-Kanäle wie Support-Interaktionen und In-Store-Käufe, um die Customer Journey besser zu verstehen und zu optimieren.
 

@@ -7,14 +7,23 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: d686dcdd-08d5-4e8f-8f0d-76c8c7b0427f
-source-git-commit: daa07b603caa613ca49b61c2e8e461d558459f57
+source-git-commit: bb87226ee4b9acc433031f41997d403d49f48db3
 workflow-type: tm+mt
-source-wordcount: '262'
-ht-degree: 33%
+source-wordcount: '298'
+ht-degree: 29%
 
 ---
 
-# Erstellen eines Datensatzes zur Verwendung mit Customer Journey Analytics
+# Erstellen eines Datensatzes zur Verwendung mit Customer Journey Analytics {#upgrade-create-dataset}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-dataset-create"
+>title="Erstellen eines Datensatzes in Adobe Experience Platform"
+>abstract="Ein Datensatz ist ein Speicherort, an dem sich erfasste Daten befinden. Erstellen Sie diesen Speicherort in Adobe Experience Platform.<br><br>Die Erstellung eines Datensatzes mit einem Schema im Hinterkopf dauert nur wenige Minuten."
+
+<!-- markdownlint-enable MD034 -->
 
 >[!NOTE]
 > 

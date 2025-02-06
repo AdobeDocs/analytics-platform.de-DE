@@ -7,14 +7,23 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: fad62c04-b435-466a-ab3c-cf2d174ddbfb
-source-git-commit: 45f2097d2f0657f623b825acb8d06ec6972f757f
+source-git-commit: 971600fcc7d8a5aac4ad39812ab4a7af69d45ccc
 workflow-type: tm+mt
-source-wordcount: '545'
+source-wordcount: '627'
 ht-degree: 3%
 
 ---
 
-# Erstellen eines benutzerdefinierten Schemas für den Analytics-Quell-Connector
+# Erstellen eines benutzerdefinierten Schemas für den Analytics-Quell-Connector {#create-custom-schema}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-source-connector-create-schema"
+>title="Erstellen eines Schemas für den Analytics-Quell-Connector"
+>abstract="Dieses Schema ist eine Kombination der Adobe Analytics ExperienceEvent-Feldergruppe mit allen Feldergruppen, aus denen das benutzerdefinierte Schema Ihres Unternehmens besteht. Damit können Sie die vom Analytics-Quell-Connector verwendeten Felder dem Schema Ihres Unternehmens zuordnen. Dies wird nur für Verlaufsdaten verwendet.<br><br>Die Erstellung dieses Schemas ist zwar technischer Natur, kann aber in Stunden abgeschlossen werden, möglicherweise schneller, wenn Sie genau wissen, aus welchen Feldergruppen das benutzerdefinierte Schema Ihres Unternehmens besteht."
+
+<!-- markdownlint-enable MD034 -->
 
 >[!NOTE]
 > 

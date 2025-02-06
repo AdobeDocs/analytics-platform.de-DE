@@ -7,14 +7,23 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: 22d3e7b8-4a4d-48a8-a98d-5172a9876286
-source-git-commit: daa07b603caa613ca49b61c2e8e461d558459f57
+source-git-commit: bb87226ee4b9acc433031f41997d403d49f48db3
 workflow-type: tm+mt
-source-wordcount: '1665'
-ht-degree: 89%
+source-wordcount: '1708'
+ht-degree: 87%
 
 ---
 
-# Erstellen und Konfigurieren einer Verbindung für die Verwendung mit Customer Journey Analytics
+# Erstellen und Konfigurieren einer Verbindung für die Verwendung mit Customer Journey Analytics {#upgrade-create-connection}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-connection"
+>title="Erstellen einer Verbindung in Customer Journey Analytics"
+>abstract="Mithilfe einer Verbindung können Sie Daten aus Adobe Experience Platform in ein Format übersetzen, das für das Customer Journey Analytics-Reporting optimiert ist. Das Erstellen einer Verbindung auf Customer Journey Analytics ist unkompliziert und dauert nur wenige Minuten."
+
+<!-- markdownlint-enable MD034 -->
 
 >[!NOTE]
 > 
@@ -73,7 +82,7 @@ Sie können beim Erstellen einer Verbindung einen Experience Platform-Datensatz 
    | Spalte | Beschreibung |
    |---|---|
    | Datensatz | Der Name des Datensatzes. Wählen Sie den Namen aus, um zum Datensatz in Experience Platform weitergeleitet zu werden. Wählen Sie ![Informationen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg) aus, um ein Popup-Fenster mit weiteren Details zum Datensatz anzuzeigen. Sie können **[!UICONTROL In Platform bearbeiten]** auswählen, um den Datensatz direkt in Experience Platform zu bearbeiten. |
-   | Datensatztyp | Der Typ des Datensatzes: „Ereignis“, „Profil“, „Suche“ oder „Lookup“. |
+   | Typ des Datensatzes | Der Typ des Datensatzes: „Ereignis“, „Profil“, „Suche“ oder „Lookup“. |
    | Anzahl der Einträge | Die Gesamtzahl der Einträge im Vormonat für den Datensatz in Experience Platform. |
    | Schema | Das Schema für den Datensatz. Wählen Sie den Namen aus, um zum Schema in Experience Platform weitergeleitet zu werden. |
    | Letzter Batch | Der Status des letzten Batches, der in Experience Platform aufgenommen wurde. Weitere Informationen finden Sie unter [Batch-Status](https://experienceleague.adobe.com/de/docs/experience-platform/ingestion/batch/troubleshooting#batch-states). |

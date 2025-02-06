@@ -7,14 +7,23 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: 35fcd213-d831-4da0-b946-f6f0d8561f60
-source-git-commit: f71f5b863a024d882a116a5fd3bf0fc433e5fe99
+source-git-commit: 3b1012a302200192fd31fd6a9ed94f96323eb595
 workflow-type: tm+mt
-source-wordcount: '245'
+source-wordcount: '336'
 ht-degree: 0%
 
 ---
 
-# Überwachen der Datensatzaufnahme beim Upgrade auf Customer Journey Analytics
+# Überwachen der Datensatzaufnahme beim Upgrade auf Customer Journey Analytics {#monitor-ingestion}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-dataset-validate"
+>title="Validieren von Daten im Datensatz"
+>abstract="Nachdem Sie nun Ihre Web SDK-Implementierung konfiguriert haben, können Sie den Datensatz-Aktivitäts-Manager verwenden, um aufgenommene und fehlgeschlagene Batches anzuzeigen. Wenn Sie hauptsächlich aufgenommene Batches sehen, ist dieser Schritt abgeschlossen. Wenn in erster Linie fehlgeschlagene Batches oder keine Batches angezeigt werden, überprüfen Sie Ihre Web SDK-Implementierung, um sicherzustellen, dass die Daten korrekt an Adobe gesendet werden.<br><br>Wenn alles richtig und fehlerfrei durchgeführt wurde, kann dieser Schritt in weniger als einem Tag durchgeführt werden. Wenn es mehrere Datenerfassungsprobleme gibt, kann die Fehlerbehebung erheblich länger dauern."
+
+<!-- markdownlint-enable MD034 -->
 
 >[!NOTE]
 > 

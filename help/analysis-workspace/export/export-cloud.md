@@ -5,14 +5,23 @@ title: Exportieren von Customer Journey Analytics-Berichten in die Cloud
 feature: Curate and Share
 exl-id: 072eadcc-43ff-42e3-86ee-82062fa02eba
 role: User
-source-git-commit: 18a1cfcddfc8b2d1c70af57518c0b8d848b4ca5d
+source-git-commit: 668f17531b4b8a01acffdbb0edef07092859d100
 workflow-type: tm+mt
-source-wordcount: '2226'
+source-wordcount: '2281'
 ht-degree: 3%
 
 ---
 
-# Exportieren von Customer Journey Analytics-Berichten in die Cloud
+# Exportieren von Customer Journey Analytics-Berichten in die Cloud {#full-table-export}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-full-table-export"
+>title="Erstellen vollständiger Tabellenexporte ähnlich wie beim Data Warehouse"
+>abstract="Vollständige Tabellenexporte sind verfügbar, sobald Daten in Analysis Workspace angezeigt werden. Sie können bei Bedarf vollständige Tabellenexporte erstellen oder planen.<br><br>Das Erstellen vollständiger Tabellenexporte dauert nur einige Minuten, wenn Sie bereits wissen, welche Daten in den Export aufgenommen werden sollen."
+
+<!-- markdownlint-enable MD034 -->
 
 Sie können vollständige Workspace-Tabellen vom Customer Journey Analytics exportieren und Exporte an bestimmte Cloud-Ziele senden.
 

@@ -7,14 +7,23 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: f76d098d-d223-40e4-be81-d28e7581396b
-source-git-commit: 41965bcd5ae8252fbf2ceda0d2b633ec6dc0e9a3
+source-git-commit: bb87226ee4b9acc433031f41997d403d49f48db3
 workflow-type: tm+mt
-source-wordcount: '256'
-ht-degree: 23%
+source-wordcount: '300'
+ht-degree: 20%
 
 ---
 
-# Erstellen eines Datenstroms zur Verwendung mit Customer Journey Analytics
+# Erstellen eines Datenstroms zur Verwendung mit Customer Journey Analytics {#upgrade-create-datastream}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-datastream-create"
+>title="Erstellen eines Datenstroms in Adobe Experience Platform"
+>abstract="Ein Datenstrom ist ein Zwischenspeicherort, an den Ihre Daten an alle konfigurierten Services weitergeleitet werden. Erstellen Sie diesen Speicherort in Adobe Experience Platform.<br><br>Die erste Erstellung eines Datenstroms in der Platform-Oberfläche dauert nur wenige Minuten."
+
+<!-- markdownlint-enable MD034 -->
 
 >[!NOTE]
 > 

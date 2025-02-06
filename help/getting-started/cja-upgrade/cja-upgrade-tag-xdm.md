@@ -7,14 +7,23 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: bc6c7568-8bd2-4ee1-ab1b-9fa1f6138811
-source-git-commit: 5b440a8029aab392739e573a680123d0bd8a1318
+source-git-commit: bb87226ee4b9acc433031f41997d403d49f48db3
 workflow-type: tm+mt
-source-wordcount: '1612'
-ht-degree: 32%
+source-wordcount: '1697'
+ht-degree: 31%
 
 ---
 
-# Hinzufügen von XDM-Datenerfassungslogik zum Tag
+# Hinzufügen von XDM-Datenerfassungslogik zum Tag {#upgrade-tag-xdm}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-tag-xdm"
+>title="Hinzufügen von XDM-Datenerfassungslogik zum Tag"
+>abstract="Wenn das Lader-Tag auf Ihrer Site installiert ist, können Sie Regeln und Datenelemente hinzufügen, um ein XDM-Objekt zu füllen, das an Adobe gesendet werden soll. Adobe empfiehlt, ein Lösungsentwurfsdokument zu verwalten, um zu verfolgen, wie Ihre Tags konfiguriert sind.<br><br>Dieser Schritt ist sehr aufwändig, da er die Einrichtung der gesamten Analytics-Logik für Ihre Eigenschaft umfasst. Rechnen Sie damit, einen Monat oder länger damit zu verbringen, die richtigen Tag-Regeln festzulegen, sie zu testen und auf Ihrer Site bereitzustellen."
+
+<!-- markdownlint-enable MD034 -->
 
 >[!NOTE]
 > 

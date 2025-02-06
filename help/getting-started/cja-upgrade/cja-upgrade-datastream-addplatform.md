@@ -7,14 +7,23 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: c6d49ca4-3d04-4c0f-accd-8666a587109d
-source-git-commit: 41965bcd5ae8252fbf2ceda0d2b633ec6dc0e9a3
+source-git-commit: bb87226ee4b9acc433031f41997d403d49f48db3
 workflow-type: tm+mt
-source-wordcount: '305'
-ht-degree: 31%
+source-wordcount: '353'
+ht-degree: 27%
 
 ---
 
-# Hinzufügen von Platform als Service zu Ihrem Datenstrom
+# Hinzufügen von Platform als Service zu Ihrem Datenstrom {#upgrade-addplatform-datastream}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-addplatform-datastream"
+>title="Hinzufügen von Adobe Experience Platform as a Cloud Service zum Datenstrom"
+>abstract="Ein Datenstrom benötigt einen oder mehrere Services, um Daten an zu senden. Richten Sie Adobe Experience Platform als Service in Ihrem Datenstrom ein.<br><br>Das Hinzufügen von Services zu einem Datenstrom ist ein einfacher Prozess, der nur wenige Minuten in Anspruch nimmt."
+
+<!-- markdownlint-enable MD034 -->
 
 >[!NOTE]
 > 

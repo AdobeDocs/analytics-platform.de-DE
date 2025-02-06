@@ -7,14 +7,23 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: 382d2b00-939a-4fff-be02-7a98d457a455
-source-git-commit: 9a4442e495487c036c0aaaf1fc913571ae189ed2
+source-git-commit: bb87226ee4b9acc433031f41997d403d49f48db3
 workflow-type: tm+mt
-source-wordcount: '341'
-ht-degree: 25%
+source-wordcount: '381'
+ht-degree: 23%
 
 ---
 
-# Hinzufügen der Web SDK-Erweiterung zum Tag
+# Hinzufügen der Web SDK-Erweiterung zum Tag {#upgrade-tag-extension}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-tag-extension"
+>title="Hinzufügen der Platform Web SDK-Erweiterung zur Tag-Eigenschaft"
+>abstract="Fügen Sie Ihrer Tag-Eigenschaft die Adobe Experience Platform Web SDK-Erweiterung hinzu. Das Hinzufügen der Web SDK-Erweiterung zu Ihrer Tag-Eigenschaft ist optimiert und dauert nur wenige Minuten."
+
+<!-- markdownlint-enable MD034 -->
 
 >[!NOTE]
 > 

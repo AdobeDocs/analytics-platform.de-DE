@@ -7,14 +7,23 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: 156df830-541d-4c92-9c49-98f346e040a7
-source-git-commit: cb6a439def7bf0fab1768fdd1c7d909b76b995d6
+source-git-commit: bb87226ee4b9acc433031f41997d403d49f48db3
 workflow-type: tm+mt
-source-wordcount: '315'
-ht-degree: 24%
+source-wordcount: '371'
+ht-degree: 20%
 
 ---
 
-# Erstellen eines Tags für die Eigenschaft
+# Erstellen eines Tags für die Eigenschaft {#upgrade-tag-property}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-tag-property"
+>title="Erstellen einer Tag-Eigenschaft in der Adobe Experience Platform-Datenerfassung"
+>abstract="Die Verwendung von Tags ist der typische Standard für die Datenerfassung. Erstellen Sie ein Tag in der Adobe Experience Platform-Benutzeroberfläche, damit Sie Datenerfassungsvariablen jederzeit aktualisieren können.<br><br>Die Erstellung einer Tag-Eigenschaft kann mit mehreren Klicks und nur wenigen Minuten abgeschlossen werden."
+
+<!-- markdownlint-enable MD034 -->
 
 >[!NOTE]
 > 

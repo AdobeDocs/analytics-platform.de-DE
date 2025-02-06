@@ -7,14 +7,23 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: 2a74da97-61cb-4c98-949b-3fc428839d70
-source-git-commit: ef6afb2872b88c82801ceb279dd757e6e1f5e78c
+source-git-commit: 3b1012a302200192fd31fd6a9ed94f96323eb595
 workflow-type: tm+mt
-source-wordcount: '332'
-ht-degree: 5%
+source-wordcount: '368'
+ht-degree: 4%
 
 ---
 
-# Erstellen eines von einem Marketing-Kanal abgeleiteten Felds zum Customer Journey Analytics
+# Erstellen eines von einem Marketing-Kanal abgeleiteten Felds zum Customer Journey Analytics {#create-marketing-channel-derived-field}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-marketing-channel"
+>title="Erstellen eines abgeleiteten Felds für einen Marketing-Kanal"
+>abstract="Abgeleitete Felder werden in einer Datenansicht erstellt.<br><br>Die Verwendung einer standardmäßigen Einrichtung für Marketing-Kanäle dauert nur einige Minuten. Das Erstellen einer hochgradig benutzerdefinierten Einrichtung für Marketing-Kanäle kann mehrere Stunden dauern."
+
+<!-- markdownlint-enable MD034 -->
 
 >[!NOTE]
 > 

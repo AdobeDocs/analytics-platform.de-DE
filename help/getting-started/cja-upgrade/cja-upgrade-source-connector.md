@@ -7,14 +7,32 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: f96565a2-f556-4b45-b88e-984613614d2e
-source-git-commit: 45f2097d2f0657f623b825acb8d06ec6972f757f
+source-git-commit: 971600fcc7d8a5aac4ad39812ab4a7af69d45ccc
 workflow-type: tm+mt
-source-wordcount: '700'
-ht-degree: 7%
+source-wordcount: '824'
+ht-degree: 6%
 
 ---
 
-# Erstellen der Analytics-Quell-Connector- und Zuordnungsfelder
+# Erstellen der Analytics-Quell-Connector- und Zuordnungsfelder {#create-source-connector}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-source-connector-create"
+>title="Erstellen des Analytics-Quell-Connectors"
+>abstract="Verwenden Sie den Analytics-Quell-Connector, um Report Suite-Daten zur Verwendung im Customer Journey Analytics aufzunehmen.<br><br>Das Erstellen des Analytics-Quell-Connectors dauert mit den Standardeinstellungen nur wenige Minuten."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-source-connector-map-fields"
+>title="Erstellen des Analytics-Quell-Connectors und Zuordnen von Schemafeldern"
+>abstract="Der Quell-Connector muss wissen, wie Adobe Analytics-Felder dem Schema Ihres Unternehmens zugeordnet werden. Verwenden Sie diese Schnittstelle, um den Quell-Connector mit dieser Zuordnung bereitzustellen. Dieser Schritt ist Teil des Hinzufügens historischer Daten zum Customer Journey Analytics.<br><br>Wie lange dieser Schritt dauert, hängt stark von der Anzahl der Dimensionen und Metriken ab, die Sie zuordnen müssen. Dieser Schritt ist nicht so schwer, wie er mühsam und repetitiv ist. Die Datenstrom-Zuordnung dauert voraussichtlich etwa eine Woche."
+
+<!-- markdownlint-enable MD034 -->
 
 >[!NOTE]
 > 
