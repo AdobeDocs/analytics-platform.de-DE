@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Administration
 role: Admin
 exl-id: f093ac54-7d31-449b-a441-a65856a1d535
-source-git-commit: 2dd215b0fe689c9370e9f5867fd1bd5fdee83d42
+source-git-commit: 22b95bce42ee9f04b828cf5b765f40008a1534b1
 workflow-type: tm+mt
 source-wordcount: '1760'
 ht-degree: 10%
@@ -236,7 +236,7 @@ Siehe auch Experience Platform [Leitplanken für den Datensatzexport](https://ex
 | Datenaufnahme in den Data Lake aus der Edge Network- oder Streaming-Aufnahme | &lt; 60 Minuten |
 | Datenaufnahme in den Data Lake vom Adobe Analytics Source-Connector | &lt; 2,25 Stunden |
 | Datenaufnahme in Customer Journey Analytics aus dem Data Lake | &lt; 90 Minuten |
-| Stitching (optionale Funktion; weitere Informationen [Stitching-Übersicht](../stitching/overview.md)) | 4 Stunden |
+| Stitching (optionale Funktion; weitere Informationen [Stitching-Übersicht](../stitching/overview.md)) | &lt; 4 Stunden |
 | Adobe Analytics Source Connector-Aufstockung von weniger als 10 Milliarden Ereignissen (maximal 13 Monate historischer Daten) | &lt; 4 Wochen |
 | Zielgruppenveröffentlichung im Echtzeit-Kundenprofil, einschließlich der automatischen Erstellung des Streaming-Segments, sodass das Segment bereit für den Empfang der Daten ist. | ≈ 60 Minuten |
 | Aktualisierungshäufigkeit für Zielgruppen | Einmalige Aktualisierung: Latenz von weniger als 5 Minuten.<br/>Aktualisierung alle 4 Stunden, täglich, wöchentlich, monatlich (die Latenz wird mit der Aktualisierungsrate in Verbindung gebracht). |
