@@ -5,10 +5,10 @@ feature: Workspace Basics
 exl-id: 6a934be7-0612-41ff-964e-77abc0b1efda
 solution: Customer Journey Analytics
 role: User
-source-git-commit: f75d2ed5130889f648628d0eec34556a47f1479b
+source-git-commit: 501a9fbd7c8abd8a63348c2c8d11b88b31a0f6df
 workflow-type: tm+mt
-source-wordcount: '3498'
-ht-degree: 99%
+source-wordcount: '3562'
+ht-degree: 97%
 
 ---
 
@@ -144,7 +144,7 @@ Einige dieser Einstellungen können auch für einzelne Projekte in Analysis Work
 >[!CONTEXTUALHELP]
 >id="workspace_prefs_defaulttablemetric"
 >title="Standard-Tabellenmetrik"
->abstract="Wählen Sie die Standardmetrik oder den Container aus, der für Freiformtabellen verwendet werden soll. Wenn die ausgewählte Datenansicht die ausgewählte Standardmetrik oder den ausgewählten Container nicht enthält, wechselt die Tabelle automatisch zu einer anderen primären Metrik."
+>abstract="Wählen Sie die Standardmetrik aus, die für Freiformtabellen verwendet werden soll. Wenn die ausgewählte Datenansicht die ausgewählte Standardmetrik nicht enthält, wechselt die Tabelle automatisch zu einer anderen primären Metrik."
 
 
 <!-- markdownlint-enable MD034 -->
@@ -181,7 +181,17 @@ Wählen Sie die verlinkten Abschnittstitel aus, um weitere Informationen und den
 | | Prozentuale Berechnung | <ul><li>Spalte</li><li>Zeile</li></ul> |
 | | Spaltensummen (nur statische Zeilen) | <ul><li>Summe der Zeilen anzeigen: Zeigt die Summe der einzelnen Zeileneinträge an </li><li>Gesamtsumme anzeigen: Zeigt die deduplizierte Summe der Zeilen an.</li></ul> |
 
-### Voreinstellungen für Visualisierungen
+### Voreinstellungen für Visualisierungen {#visalization-preferences}
+
+>[!CONTEXTUALHELP]
+>id="workspace_prefs_defaultflowcontainer"
+>title="Standard-Tabellenmetrik"
+>abstract="Wählen Sie den Standard-Container aus, der für Flussvisualisierungen verwendet werden soll. Wenn die ausgewählte Datenansicht den ausgewählten Standard-Container nicht enthält, wechselt die Flussvisualisierung automatisch zu einem anderen primären Container."
+
+>[!CONTEXTUALHELP]
+>id="workspace_prefs_defaultfalloutcontainer"
+>title="Standard-Tabellenmetrik"
+>abstract="Wählen Sie den Standard-Container aus, der für Fallout-Visualisierungen verwendet werden soll. Wenn die ausgewählte Datenansicht den ausgewählten Standard-Container nicht enthält, wechselt die Fallout-Visualisierung automatisch zu einem anderen primären Container."
 
 Sie können die Visualisierungsvoreinstellungen für alle in Analysis Workspace neu erstellten Projekte aktualisieren. Informationen zum Zugriff auf diese Voreinstellungen finden Sie unter [Aktualisieren von Voreinstellungen](#update-preferences).
 
