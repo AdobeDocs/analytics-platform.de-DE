@@ -5,10 +5,10 @@ feature: Workspace Basics
 exl-id: 6a934be7-0612-41ff-964e-77abc0b1efda
 solution: Customer Journey Analytics
 role: User
-source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
-workflow-type: ht
-source-wordcount: '3461'
-ht-degree: 100%
+source-git-commit: f75d2ed5130889f648628d0eec34556a47f1479b
+workflow-type: tm+mt
+source-wordcount: '3498'
+ht-degree: 99%
 
 ---
 
@@ -138,6 +138,17 @@ Einige dieser Einstellungen können auch für einzelne Projekte in Analysis Work
 >abstract="Wenn Sie **[!UICONTROL Prognose zeigen]** auswählen, wird die Prognose automatisch für die erste metrische Spalte ausgeführt, die zu einer Freiformtabellenvisualisierung der Zeitreihe hinzugefügt wurde."
 
 <!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="workspace_prefs_defaulttablemetric"
+>title="Standard-Tabellenmetrik"
+>abstract="Wählen Sie die Standardmetrik oder den Container aus, der für Freiformtabellen verwendet werden soll. Wenn die ausgewählte Datenansicht die ausgewählte Standardmetrik oder den ausgewählten Container nicht enthält, wechselt die Tabelle automatisch zu einer anderen primären Metrik."
+
+
+<!-- markdownlint-enable MD034 -->
+
 
 
 Sie können die Voreinstellungen für Freiformtabellen für alle neuen Projekte anpassen, die Sie in Analysis Workspace erstellen. Informationen zum Zugriff auf diese Voreinstellungen finden Sie unter [Aktualisieren von Voreinstellungen](#update-preferences).
