@@ -7,9 +7,9 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: 3d1e3b79-402d-44ff-86b3-be9fd5494e19
-source-git-commit: 3930b3dd1ba4e058f1a89308dbd0ccec57208359
+source-git-commit: 739d92a3e9b623e3f04bf28de8213f1c76d5036b
 workflow-type: tm+mt
-source-wordcount: '13075'
+source-wordcount: '13066'
 ht-degree: 2%
 
 ---
@@ -236,7 +236,7 @@ Tableau Desktop unterstützt die folgenden Szenarien für den `FLATTEN`. Weitere
          1. Benennen Sie Ihr Projekt in **[!UICONTROL Neues LookML-Projekt für dieses Modell erstellen]**. Für `example: example_looker_project`.
          1. Klicken Sie auf **[!UICONTROL Weiter]**.
       1. Wählen Sie in **[!UICONTROL Tabellen aus]**:
-         1. Wählen Sie **[!UICONTROL öffentlich]** und stellen Sie sicher, dass Ihre Customer Journey Analytics-Datenansicht ausgewählt ist. Beispiel: ![checkmark](/help/assets/icons/Checkmark.svg) **[!UICONTROL cc_data_view]**.
+         1. Wählen Sie **[!UICONTROL öffentlich]** und stellen Sie sicher, dass Ihre Customer Journey Analytics-Datenansicht ausgewählt ist. Beispiel: ![SelectBox](/help/assets/icons/SelectBox.svg) **[!UICONTROL cc_data_view]**.
          1. Klicken Sie auf **[!UICONTROL Weiter]**.
       1. Wählen Sie **[!UICONTROL Primäre Schlüssel aus]**:
          1. Klicken Sie auf **[!UICONTROL Weiter]**.
@@ -244,7 +244,7 @@ Tableau Desktop unterstützt die folgenden Szenarien für den `FLATTEN`. Weitere
          1. Stellen Sie sicher, dass Sie Ihre Ansicht auswählen. Beispiel: **[!UICONTROL cc_data_view.view]**.
          1. Klicken Sie auf **[!UICONTROL Weiter]**.
       1. Geben Sie **[!UICONTROL ➎ Modellnamen ein]**:
-         1. Benennen Sie Ihr Modell. Beispiel: `example_looker_mode`l.
+         1. Benennen Sie Ihr Modell. Beispiel: `example_looker_model`.
       1. Wählen Sie **[!UICONTROL Vervollständigen und Daten erkunden]**.
 
    Sie werden zur Benutzeroberfläche **[!UICONTROL Erkunden]** von Looker weitergeleitet, die bereit ist, die Daten zu untersuchen.
@@ -258,8 +258,8 @@ Looker unterstützt die folgenden Szenarien für den `FLATTEN`. Weitere Informat
 | FLATTEN-Parameter | Beispiel | Unterstützt | Bemerkungen |
 |---|---|:---:|---|
 | Keine | `prod:cja` | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | |
-| `?FLATTEN` | `prod:cja?FLATTEN` | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | **Empfohlene Option zum Verwenden!** |
-| `%3FFLATTEN` | `prod:cja%3FFLATTEN` | ![CloseCircle](/help/assets/icons/CloseCircle.svg) | Looker zeigt den Fehler an **[!UICONTROL „Wir konnten uns nicht mit den angegebenen Anmeldeinformationen authentifizieren. Bitte erneut versuchen.]** |
+| `?FLATTEN` | `prod:cja?FLATTEN` | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | |
+| `%3FFLATTEN` | `prod:cja%3FFLATTEN` | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | **Empfohlene Option zum Verwenden**. Hinweis: `%3FFLATTEN` ist eine URL-codierte Version von `?FLATTEN`. |
 
 ### Weitere Informationen
 
