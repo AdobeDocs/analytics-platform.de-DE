@@ -7,7 +7,7 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 4aff664c-3cd9-4591-8122-6ebff10e4a76
-source-git-commit: 7542e7a402c8e2f8d6e4c1e624f04ceb752cc27e
+source-git-commit: 3bf62bebebfe2ef52abbd29245ef6e8e65807491
 workflow-type: tm+mt
 source-wordcount: '1856'
 ht-degree: 10%
@@ -256,7 +256,7 @@ Für eine vorhandene Konfiguration können Sie die Tag-Eigenschaft nicht bearbei
 
 * Um zu bearbeiten, welche Assets bei der Datenerfassung für Content Analytics ein- oder ausgeschlossen werden sollen, wählen Sie ![Bearbeiten](/help/assets/icons/Edit.svg) **[!UICONTROL Bearbeiten]** unter **[!UICONTROL Asset]** aus.
 
-### Zusammenfassung
+### Zusammenfassung {#summary}
 
 Nachdem Sie alle erforderlichen Details bereitgestellt haben, enthält eine Zusammenfassung Details zu den Artefakten, die erstellt oder geändert werden.
 
@@ -266,7 +266,7 @@ Nachdem Sie alle erforderlichen Details bereitgestellt haben, enthält eine Zusa
 
 ![Zusammenfassung der Inhaltsanalysekonfiguration](../assets/aca-configuration-summary.png)
 
-### Aktionen
+### Aktionen {#actions}
 
 <!-- markdownlint-disable MD034 -->
 
