@@ -6,14 +6,22 @@ feature: Content Analytics
 role: User
 hide: true
 hidefromtoc: true
-source-git-commit: a2292c0c24aa86baedae0fe1835e552992eb0cae
+exl-id: 6e756ae8-b969-46f1-95b8-d8fbb0d058ed
+source-git-commit: 7542e7a402c8e2f8d6e4c1e624f04ceb752cc27e
 workflow-type: tm+mt
-source-wordcount: '275'
+source-wordcount: '317'
 ht-degree: 0%
 
 ---
 
 # Übersicht über das Reporting in Content Analytics
+
+>[!WARNING]
+>
+>Dieser Artikel ist eine vorläufige inoffizielle Entwurfsversion einer kommenden endgültigen Version und Teil der Inhaltsanalysedokumentation. Alle Inhalte unterliegen Änderungen und es können keinerlei rechtlichen Verpflichtungen aus der aktuellen Version dieses Artikels abgeleitet werden.
+>
+
+{{release-limited-testing}}
 
 Das Reporting zu Inhaltsanalysen erfolgt in Analysis Workspace. Eine bestimmte Workspace [Vorlage](#template) ist verfügbar, sodass Sie sofort auf ein vorausgefülltes Workspace-Projekt mit relevanten Inhalten zugreifen können.
 
