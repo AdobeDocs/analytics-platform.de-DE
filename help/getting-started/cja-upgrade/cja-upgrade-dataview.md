@@ -1,5 +1,5 @@
 ---
-title: Datenansicht im Customer Journey Analytics erstellen
+title: Erstellen einer Datenansicht in Customer Journey Analytics
 description: Erfahren Sie mehr über den empfohlenen Pfad beim Upgrade von Adobe Analytics auf Customer Journey Analytics
 role: Admin
 solution: Customer Journey Analytics
@@ -14,20 +14,20 @@ ht-degree: 20%
 
 ---
 
-# Datenansicht im Customer Journey Analytics erstellen {#upgrade-create-dataview}
+# Erstellen einer Datenansicht in Customer Journey Analytics {#upgrade-create-dataview}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-dataview"
->title="Datenansicht im Customer Journey Analytics erstellen"
+>title="Erstellen einer Datenansicht in Customer Journey Analytics"
 >abstract="Eine Datenansicht ist ein für Customer Journey Analytics spezifischer Container, mit dem Sie bestimmen können, wie Daten aus einer Verbindung interpretiert werden.<br><br>Während die anfängliche Erstellung der Datenansicht einige Minuten dauert, kann es mehrere Tage dauern, jede Dimension und Metrik mit den gewünschten Komponenteneinstellungen zu konfigurieren. Diese Einstellungen werden rückwirkend angepasst, sodass Ihr Unternehmen sie im Laufe der Zeit verfeinern kann."
 
 <!-- markdownlint-enable MD034 -->
 
 >[!NOTE]
 > 
->Befolgen Sie die Schritte auf dieser Seite erst, nachdem Sie alle vorherigen Upgrade-Schritte abgeschlossen haben. Sie können die [empfohlenen Upgrade-Schritte](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) ausführen oder die Upgrade-Schritte ausführen, die für Ihr Unternehmen mit dem [Fragebogen für das Upgrade von Adobe Analytics auf Customer Journey Analytics dynamisch generiert wurden](https://gigazelle.github.io/cja-ttv/).
+>Befolgen Sie die Schritte auf dieser Seite erst, nachdem Sie alle vorherigen Upgrade-Schritte abgeschlossen haben. Sie können die [empfohlenen Upgrade-Schritte](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) ausführen oder die Upgrade-Schritte ausführen, die für Ihr Unternehmen mit dem Fragebogen [Upgrade von Adobe Analytics auf Customer Journey Analytics dynamisch generiert ](https://gigazelle.github.io/cja-ttv/).
 >
 >Nachdem Sie die Schritte auf dieser Seite abgeschlossen haben, folgen Sie den empfohlenen Upgrade-Schritten oder den dynamisch generierten Upgrade-Schritten.
 
@@ -53,7 +53,7 @@ Erstellen einer Datenansicht:
 
    ![Registerkarte „Komponenten“](assets/dataview-components.png)
 
-1. Ziehen Sie auf der Registerkarte [!UICONTROL **Komponenten**] Schemaelemente aus der linken Leiste in den Abschnitt [!UICONTROL **Metriken**] oder den Abschnitt [!UICONTROL **Dimensionen**]. Die Schemaelemente, die Sie hinzufügen, werden zu Metriken oder Dimensionen in der Datenansicht.
+1. Ziehen Sie [!UICONTROL **der Registerkarte**] Schemaelemente aus der linken Leiste in den Abschnitt [!UICONTROL **Metriken**] oder den Abschnitt [!UICONTROL **Dimensionen**]. Die Schemaelemente, die Sie hinzufügen, werden zu Metriken oder Dimensionen in der Datenansicht.
 
    Detaillierte Informationen zu den Optionen, die beim Hinzufügen von Komponenten zu einer Datenansicht verfügbar sind, finden Sie unter [Komponenten](/help/data-views/create-dataview.md#components) in [Erstellen oder Bearbeiten einer Datenansicht](/help/data-views/create-dataview.md).
 

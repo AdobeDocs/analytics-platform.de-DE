@@ -1,5 +1,5 @@
 ---
-title: Erstellen eines Schemas zum Customer Journey Analytics
+title: Erstellen eines Schemas für Customer Journey Analytics
 description: Erfahren Sie mehr über den empfohlenen Pfad beim Upgrade von Adobe Analytics auf Customer Journey Analytics
 role: Admin
 solution: Customer Journey Analytics
@@ -21,13 +21,13 @@ ht-degree: 87%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-connection"
 >title="Erstellen einer Verbindung in Customer Journey Analytics"
->abstract="Mithilfe einer Verbindung können Sie Daten aus Adobe Experience Platform in ein Format übersetzen, das für das Customer Journey Analytics-Reporting optimiert ist. Das Erstellen einer Verbindung auf Customer Journey Analytics ist unkompliziert und dauert nur wenige Minuten."
+>abstract="Mithilfe einer Verbindung können Sie Daten aus Adobe Experience Platform in ein für Customer Journey Analytics-Berichte optimiertes Format übersetzen. Das Erstellen einer Verbindung in Customer Journey Analytics ist unkompliziert und dauert nur wenige Minuten."
 
 <!-- markdownlint-enable MD034 -->
 
 >[!NOTE]
 > 
->Befolgen Sie die Schritte auf dieser Seite erst, nachdem Sie alle vorherigen Upgrade-Schritte abgeschlossen haben. Sie können die [empfohlenen Upgrade-Schritte](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) ausführen oder die Upgrade-Schritte ausführen, die für Ihr Unternehmen mit dem [Fragebogen für das Upgrade von Adobe Analytics auf Customer Journey Analytics dynamisch generiert wurden](https://gigazelle.github.io/cja-ttv/).
+>Befolgen Sie die Schritte auf dieser Seite erst, nachdem Sie alle vorherigen Upgrade-Schritte abgeschlossen haben. Sie können die [empfohlenen Upgrade-Schritte](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) ausführen oder die Upgrade-Schritte ausführen, die für Ihr Unternehmen mit dem Fragebogen [Upgrade von Adobe Analytics auf Customer Journey Analytics dynamisch generiert ](https://gigazelle.github.io/cja-ttv/).
 >
 >Nachdem Sie die Schritte auf dieser Seite abgeschlossen haben, folgen Sie den empfohlenen Upgrade-Schritten oder den dynamisch generierten Upgrade-Schritten.
 

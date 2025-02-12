@@ -21,7 +21,7 @@ ht-degree: 6%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-source-connector-create"
 >title="Erstellen des Analytics-Quell-Connectors"
->abstract="Verwenden Sie den Analytics-Quell-Connector, um Report Suite-Daten zur Verwendung im Customer Journey Analytics aufzunehmen.<br><br>Das Erstellen des Analytics-Quell-Connectors dauert mit den Standardeinstellungen nur wenige Minuten."
+>abstract="Verwenden Sie den Analytics-Quell-Connector, um Report Suite-Daten zur Verwendung in Customer Journey Analytics aufzunehmen.<br><br>Das Erstellen des Analytics-Quell-Connectors dauert mit den Standardeinstellungen nur wenige Minuten."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -30,23 +30,23 @@ ht-degree: 6%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-source-connector-map-fields"
 >title="Erstellen des Analytics-Quell-Connectors und Zuordnen von Schemafeldern"
->abstract="Der Quell-Connector muss wissen, wie Adobe Analytics-Felder dem Schema Ihres Unternehmens zugeordnet werden. Verwenden Sie diese Schnittstelle, um den Quell-Connector mit dieser Zuordnung bereitzustellen. Dieser Schritt ist Teil des Hinzufügens historischer Daten zum Customer Journey Analytics.<br><br>Wie lange dieser Schritt dauert, hängt stark von der Anzahl der Dimensionen und Metriken ab, die Sie zuordnen müssen. Dieser Schritt ist nicht so schwer, wie er mühsam und repetitiv ist. Die Datenstrom-Zuordnung dauert voraussichtlich etwa eine Woche."
+>abstract="Der Quell-Connector muss wissen, wie Adobe Analytics-Felder dem Schema Ihres Unternehmens zugeordnet werden. Verwenden Sie diese Schnittstelle, um den Quell-Connector mit dieser Zuordnung bereitzustellen. Dieser Schritt ist Teil des Hinzufügens historischer Daten zu Customer Journey Analytics.<br><br>Wie lange dieser Schritt dauert, hängt stark von der Anzahl der Dimensionen und Metriken ab, die Sie zuordnen müssen. Dieser Schritt ist nicht so schwer, wie er mühsam und repetitiv ist. Die Datenstrom-Zuordnung dauert voraussichtlich etwa eine Woche."
 
 <!-- markdownlint-enable MD034 -->
 
 >[!NOTE]
 > 
->Befolgen Sie die Schritte auf dieser Seite erst, nachdem Sie alle vorherigen Upgrade-Schritte abgeschlossen haben. Sie können die [empfohlenen Upgrade-Schritte](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) ausführen oder die Upgrade-Schritte ausführen, die für Ihr Unternehmen mit dem [Fragebogen für das Upgrade von Adobe Analytics auf Customer Journey Analytics dynamisch generiert wurden](https://gigazelle.github.io/cja-ttv/).
+>Befolgen Sie die Schritte auf dieser Seite erst, nachdem Sie alle vorherigen Upgrade-Schritte abgeschlossen haben. Sie können die [empfohlenen Upgrade-Schritte](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) ausführen oder die Upgrade-Schritte ausführen, die für Ihr Unternehmen mit dem Fragebogen [Upgrade von Adobe Analytics auf Customer Journey Analytics dynamisch generiert ](https://gigazelle.github.io/cja-ttv/).
 >
 >Nachdem Sie die Schritte auf dieser Seite abgeschlossen haben, folgen Sie den empfohlenen Upgrade-Schritten oder den dynamisch generierten Upgrade-Schritten.
 
-## Verstehen, wie der Analytics-Quell-Connector Verlaufsdaten in Customer Journey Analytics importieren kann
+## Erfahren Sie, wie der Analytics-Quell-Connector historische Daten in Customer Journey Analytics importieren kann
 
 Sie können den Analytics-Quell-Connector verwenden, um Daten von Adobe Analytics Report Suites in Adobe Experience Platform zu importieren. Diese Daten können dann als Verlaufsdaten in Customer Journey Analytics verwendet werden.
 
-Bei diesem Prozess wird davon ausgegangen, dass Sie [ein benutzerdefiniertes Schema erstellen, das mit Ihrer Customer Journey Analytics Web SDK-Implementierung verwendet werden kann](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md) da Sie ein optimiertes Schema benötigen, das auf die Anforderungen Ihres Unternehmens und die von Ihnen verwendeten Platform-Programme zugeschnitten ist.
+Bei diesem Prozess wird davon ausgegangen, dass Sie [ein benutzerdefiniertes Schema zur Verwendung mit Ihrer Customer Journey Analytics Web SDK-Implementierung erstellen](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md), da Sie ein optimiertes Schema wünschen, das auf die Anforderungen Ihres Unternehmens und die von Ihnen verwendeten spezifischen Platform-Programme zugeschnitten ist.
 
-Um den Analytics-Quell-Connector zum Übertragen historischer Daten in Customer Journey Analytics zu verwenden, ist Folgendes erforderlich:
+Um den Analytics-Quell-Connector zu verwenden, um historische Daten in Customer Journey Analytics zu importieren, ist Folgendes erforderlich:
 
 1. [Erstellen eines benutzerdefinierten Schemas für den Analytics-Quell-Connector](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-schema.md)
 
@@ -70,9 +70,9 @@ So erstellen Sie einen Adobe Analytics-Quell-Connector zur Verwendung für Verla
 
 1. Wählen Sie **[!UICONTROL Daten hinzufügen]** in der Kachel Adobe Analytics aus.
 
-   ![Adobe Experience Platform-Fenster mit Hervorhebung von „Quellen“, &quot;Adobe-Anwendungen“ und „Daten hinzufügen“.](./assets/sources-overview.png)
+   ![Adobe Experience Platform-Fenster mit Hervorhebung von Quellen zusammen mit Adobe-Programmen und Daten hinzufügen.](./assets/sources-overview.png)
 
-1. Wählen Sie **[!UICONTROL Report Suite]** und dann aus der Liste der Report Suites die Report Suite aus, die die Verlaufsdaten enthält, die Sie zum Customer Journey Analytics verwenden möchten.
+1. Wählen Sie **[!UICONTROL Report Suite]** und dann aus der Liste der Report Suites die Report Suite aus, die die historischen Daten enthält, die Sie in Customer Journey Analytics verwenden möchten.
 
    ![Adobe Experience Platform-Fenster mit der Report Suite-Liste](./assets/report-suites.png)
 
@@ -92,7 +92,7 @@ So erstellen Sie einen Adobe Analytics-Quell-Connector zur Verwendung für Verla
 
    1. Wählen Sie im Feld **[!UICONTROL Source]** ein Adobe Analytics-Feld aus der Feldergruppe der Adobe Analytics ExperienceEvent-Vorlage aus. Wählen Sie dann im **[!UICONTROL Zielfeld]** das benutzerdefinierte Feld im XDM-Schema aus, dem Sie es zuordnen möchten.
 
-      Aufgrund der inhärenten Architekturunterschiede zwischen Adobe Analytics und XDM verfügen nicht alle AppMeasurement-Felder über ein entsprechendes Feld in XDM.
+      Aufgrund der inhärenten Architekturunterschiede zwischen AppMeasurement und XDM verfügen nicht alle Adobe Analytics-Felder über ein entsprechendes Feld in XDM.
 
    1. Wiederholen Sie diesen Vorgang für jedes Feld in der Feldergruppe der Adobe Analytics ExperienceEvent-Vorlage, das Sie zum Erfassen von Daten in Adobe Analytics verwenden.
 

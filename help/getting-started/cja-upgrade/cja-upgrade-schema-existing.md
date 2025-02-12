@@ -1,6 +1,6 @@
 ---
-title: Schema für das Customer Journey Analytics auswählen
-description: Erfahren Sie mehr über die verfügbaren Optionen bei der Auswahl eines Schemas für das Customer Journey Analytics und die Vor- und Nachteile jedes einzelnen Schemas
+title: Schema für Customer Journey Analytics auswählen
+description: Erfahren Sie mehr über die verfügbaren Optionen bei der Auswahl eines Schemas für Customer Journey Analytics und die Vor- und Nachteile jedes einzelnen Schemas
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
@@ -14,7 +14,7 @@ ht-degree: 38%
 
 ---
 
-# Schema für das Customer Journey Analytics auswählen {#choose-schema}
+# Schema für Customer Journey Analytics auswählen {#choose-schema}
 
 <!-- markdownlint-disable MD034 -->
 
@@ -30,17 +30,17 @@ ht-degree: 38%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-schema-default"
 >title="Standardschema verwenden"
->abstract="(Nicht empfohlen) Das Adobe Analytics-Schema enthält mehr als 1.000 Felder, was zu einer Überlastung und Komplexität des Schemas führen kann. Ihr Unternehmen wäre gezwungen, weiterhin das Konzept der Props und eVars einzuhalten, das ein Legacy-Konzept ist, das beim Customer Journey Analytics nicht verwendet wird. Die Integration mit anderen Adobe Experience Platform-Services ist schwieriger."
+>abstract="(Nicht empfohlen) Das Adobe Analytics-Schema enthält mehr als 1.000 Felder, was zu einer Überlastung und Komplexität des Schemas führen kann. Ihr Unternehmen wäre gezwungen, weiterhin das Konzept von Props und eVars einzuhalten, das ein Altkonzept ist, das in Customer Journey Analytics nicht verwendet wird. Die Integration mit anderen Adobe Experience Platform-Services ist schwieriger."
 
 <!-- markdownlint-enable MD034 -->
 
 >[!NOTE]
 >
->Diese Dokumentation sollte als Teil des Fragebogens zum [Upgrade von Adobe Analytics auf Customer Journey Analytics verwendet werden](https://gigazelle.github.io/cja-ttv/).
+>Diese Dokumentation sollte als Teil des Fragebogens zur Aktualisierung von [Adobe Analytics auf Customer Journey Analytics verwendet werden](https://gigazelle.github.io/cja-ttv/).
 
 <!-- this page exists as the "Learn more" link in the info icons for the options "I am comfortable using my Adobe Analytics schema as a basis" and "I want to use a schema tailored to my organization" -->
 
-Beim Upgrade auf Customer Journey Analytics empfiehlt Adobe, ein benutzerdefiniertes Experience-Datenmodell-Schema (XDM) zu erstellen, um es bei der Verwendung anderer Platform-Services besser an die Anforderungen Ihres Unternehmens anzupassen. Alternativ können Sie auch Ihr bestehendes Adobe Analytics-Schema verwenden.
+Beim Upgrade auf Customer Journey Analytics empfiehlt Adobe die Erstellung eines benutzerdefinierten Experience-Datenmodell (XDM)-Schemas, das bei der Verwendung anderer Platform-Services besser an die Anforderungen Ihres Unternehmens angepasst wird. Alternativ können Sie auch Ihr bestehendes Adobe Analytics-Schema verwenden.
 
 Berücksichtigen Sie die Vor- und Nachteile jedes einzelnen.
 

@@ -1,6 +1,6 @@
 ---
-title: Erstellen eines benutzerdefinierten Schemas zum Customer Journey Analytics
-description: Erfahren Sie, wie Sie ein benutzerdefiniertes Schema für das Customer Journey Analytics erstellen
+title: Erstellen eines benutzerdefinierten Schemas für Customer Journey Analytics
+description: Erfahren Sie, wie Sie ein benutzerdefiniertes Schema für Customer Journey Analytics erstellen
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
@@ -39,19 +39,19 @@ ht-degree: 37%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-schema-profile"
 >title="Aktivieren des Schemas für das Profil"
->abstract="Aktivieren Sie das Profil in Ihrem Schema zur Verwendung beim Adobe der Real-Time CDP. Dieser Schritt wird angezeigt, weil Sie ausgewählt haben, dass eine Integration mit Adobe Real-Time CDP erfolgen soll.<br><br>Da Sie bei diesem Schritt auf ein einzelnes Feld klicken müssen, dauert dieser Schritt nur einige Minuten."
+>abstract="Aktivieren Sie das Profil in Ihrem Schema zur Verwendung in der Adobe Real-Time CDP. Dieser Schritt wird angezeigt, weil Sie die Integration mit Adobe Real-Time CDP ausgewählt haben.<br><br>Da Sie bei diesem Schritt auf ein einzelnes Feld klicken müssen, dauert dieser Schritt nur einige Minuten."
 
 <!-- markdownlint-enable MD034 -->
 
 >[!NOTE]
 > 
->Befolgen Sie die Schritte auf dieser Seite erst, nachdem Sie alle vorherigen Upgrade-Schritte abgeschlossen haben. Sie können die [empfohlenen Upgrade-Schritte](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) ausführen oder die Upgrade-Schritte ausführen, die für Ihr Unternehmen mit dem [Fragebogen für das Upgrade von Adobe Analytics auf Customer Journey Analytics dynamisch generiert wurden](https://gigazelle.github.io/cja-ttv/).
+>Befolgen Sie die Schritte auf dieser Seite erst, nachdem Sie alle vorherigen Upgrade-Schritte abgeschlossen haben. Sie können die [empfohlenen Upgrade-Schritte](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) ausführen oder die Upgrade-Schritte ausführen, die für Ihr Unternehmen mit dem Fragebogen [Upgrade von Adobe Analytics auf Customer Journey Analytics dynamisch generiert ](https://gigazelle.github.io/cja-ttv/).
 >
 >Nachdem Sie die Schritte auf dieser Seite abgeschlossen haben, folgen Sie den empfohlenen Upgrade-Schritten oder den dynamisch generierten Upgrade-Schritten.
 
 >[!IMPORTANT]
 >
->Bevor Sie mit der Erstellung Ihres benutzerdefinierten Schemas beginnen, arbeiten Sie mit Ihrem Daten-Team und anderen Stakeholdern in Ihrem Unternehmen zusammen, um das ideale Schema-Design Ihres Unternehmens für das Customer Journey Analytics und die anderen von Ihnen verwendeten Adobe Experience Platform-Programme zu ermitteln. Weitere Informationen finden Sie unter [Entwickeln eines Schemas zur Verwendung mit Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-schema-architect.md).
+>Bevor Sie mit der Erstellung Ihres benutzerdefinierten Schemas beginnen, wenden Sie sich an Ihr Daten-Team und andere Beteiligte in Ihrem Unternehmen, um das ideale Schema-Design Ihres Unternehmens für Customer Journey Analytics und die anderen von Ihnen verwendeten Adobe Experience Platform-Programme zu ermitteln. Weitere Informationen finden Sie unter [Entwickeln eines Schemas zur Verwendung mit Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-schema-architect.md).
 
 In den folgenden Abschnitten wird beschrieben, wie Sie ein Schema erstellen, das mit Customer Journey Analytics verwendet werden kann. Die folgenden Schemaoptionen sind verfügbar:
 
@@ -59,7 +59,7 @@ In den folgenden Abschnitten wird beschrieben, wie Sie ein Schema erstellen, das
 
 * **Adobe Analytics-Schema, das die Adobe Analytics ExperienceEvent-Feldergruppe verwendet:** Erfordert das Hinzufügen Tausender nicht benötigter Felder. Alle erforderlichen zukünftigen Änderungen sind schwieriger.
 
-Weitere Informationen zu diesen Schemaoptionen finden Sie unter [Schema zum Customer Journey Analytics auswählen](/help/getting-started/cja-upgrade/cja-upgrade-schema-existing.md).
+Weitere Informationen zu diesen Schemaoptionen finden Sie unter [Schema für Customer Journey Analytics auswählen](/help/getting-started/cja-upgrade/cja-upgrade-schema-existing.md).
 
 ## Erstellen des Schemas
 
@@ -114,9 +114,9 @@ So erstellen Sie ein benutzerdefiniertes Schema:
 
    1. (Optional) Wählen Sie alle zusätzlichen Feldergruppen aus, die Sie einbeziehen möchten.
 
-      Wenn Sie sich dafür entschieden haben, das standardmäßige Adobe Analytics-Schema zu verwenden, anstatt ein benutzerdefiniertes XDM-Schema zu erstellen, können Sie jetzt die Adobe Analytics ExperienceEvent-Feldergruppe hinzufügen. Beim Adobe wird jedoch empfohlen, ein benutzerdefiniertes XDM-Schema zu erstellen, anstatt diese Feldergruppe hinzuzufügen.
+      Wenn Sie sich dafür entschieden haben, das standardmäßige Adobe Analytics-Schema zu verwenden, anstatt ein benutzerdefiniertes XDM-Schema zu erstellen, können Sie jetzt die Adobe Analytics ExperienceEvent-Feldergruppe hinzufügen. Adobe empfiehlt jedoch, ein benutzerdefiniertes XDM-Schema zu erstellen, anstatt diese Feldergruppe hinzuzufügen.
 
-      Weitere Informationen zu diesen Schemaoptionen finden Sie unter [Schema zum Customer Journey Analytics auswählen](/help/getting-started/cja-upgrade/cja-upgrade-schema-existing.md).
+      Weitere Informationen zu diesen Schemaoptionen finden Sie unter [Schema für Customer Journey Analytics auswählen](/help/getting-started/cja-upgrade/cja-upgrade-schema-existing.md).
 
    1. Wählen Sie **[!UICONTROL Feldergruppen hinzufügen]** aus.
 

@@ -1,6 +1,6 @@
 ---
-title: Erstellen von Lookup-Datensätzen zum Klassifizieren von Daten im Customer Journey Analytics
-description: Erfahren Sie, wie Sie Lookup-Datensätze erstellen, um Daten im Customer Journey Analytics zu klassifizieren
+title: Erstellen von Lookup-Datensätzen zum Klassifizieren von Daten in Customer Journey Analytics
+description: Erfahren Sie, wie Sie Such-Datensätze erstellen, um Daten in Customer Journey Analytics zu klassifizieren
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
@@ -14,24 +14,24 @@ ht-degree: 5%
 
 ---
 
-# Erstellen von Lookup-Datensätzen zum Klassifizieren von Daten im Customer Journey Analytics {#upgrade-lookup-dataset}
+# Erstellen von Lookup-Datensätzen zum Klassifizieren von Daten in Customer Journey Analytics {#upgrade-lookup-dataset}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-lookup-dataset-create"
 >title="Erstellen Sie für jede Dimension, die Klassifizierungsdaten enthält, einen Lookup-Datensatz"
->abstract="Ähnlich wie Klassifizierungsdaten in Adobe Analytics sind Lookup-Datensätze die Methode zum Klassifizieren von Daten in Customer Journey Analytics."
+>abstract="Ähnlich wie Klassifizierungsdaten in Adobe Analytics sind Lookup-Datensätze die Methode zur Klassifizierung von Daten in Customer Journey Analytics."
 
 <!-- markdownlint-enable MD034 -->
 
 >[!NOTE]
 > 
->Befolgen Sie die Schritte auf dieser Seite erst, nachdem Sie alle vorherigen Upgrade-Schritte abgeschlossen haben. Sie können die [empfohlenen Upgrade-Schritte](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) ausführen oder die Upgrade-Schritte ausführen, die für Ihr Unternehmen mit dem [Fragebogen für das Upgrade von Adobe Analytics auf Customer Journey Analytics dynamisch generiert wurden](https://gigazelle.github.io/cja-ttv/).
+>Befolgen Sie die Schritte auf dieser Seite erst, nachdem Sie alle vorherigen Upgrade-Schritte abgeschlossen haben. Sie können die [empfohlenen Upgrade-Schritte](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) ausführen oder die Upgrade-Schritte ausführen, die für Ihr Unternehmen mit dem Fragebogen [Upgrade von Adobe Analytics auf Customer Journey Analytics dynamisch generiert ](https://gigazelle.github.io/cja-ttv/).
 >
 >Nachdem Sie die Schritte auf dieser Seite abgeschlossen haben, folgen Sie den empfohlenen Upgrade-Schritten oder den dynamisch generierten Upgrade-Schritten.
 
-Ähnlich wie Klassifizierungsdaten in Adobe Analytics sind Lookup-Datensätze die Methode zum Klassifizieren von Daten in Customer Journey Analytics.
+Ähnlich wie Klassifizierungsdaten in Adobe Analytics sind Lookup-Datensätze die Methode zur Klassifizierung von Daten in Customer Journey Analytics.
 
 Bei Verwendung des Analytics-Quell-Connectors werden einige Datensätze für die Standardsuche zum Zeitpunkt der Berichterstellung automatisch angewendet. Weitere Informationen finden Sie unter [Hinzufügen von Standardsuchen zu Ihren Datensätzen](/help/connections/standard-lookups.md).
 
@@ -43,7 +43,7 @@ Erstellen Sie ein neues benutzerdefiniertes Schema für jede Dimension, die Date
 
 Wiederholen Sie diesen Vorgang für jede Dimension, die Daten enthält, die Sie klassifizieren möchten.
 
-So erstellen Sie ein Schema für die Verwendung mit einem Lookup-Datensatz in Customer Journey Analytics:
+So erstellen Sie ein Schema zur Verwendung mit einem Lookup-Datensatz in Customer Journey Analytics:
 
 1. Wählen Sie in Adobe Experience Platform **[!UICONTROL Schemata]** im Abschnitt **[!UICONTROL Daten-Management]** in der linken Leiste aus.
 
@@ -71,11 +71,11 @@ Nachdem Sie [benutzerdefiniertes Schema erstellen](#create-a-custom-schema-to-us
 
 Wiederholen Sie diesen Vorgang für jede Dimension, die Daten enthält, die Sie klassifizieren möchten.
 
-So erstellen Sie einen Lookup-Datensatz zur Verwendung mit einem Schema auf Customer Journey Analytics:
+So erstellen Sie einen Lookup-Datensatz zur Verwendung mit einem Schema in Customer Journey Analytics:
 
 >[!NOTE]
 >
->Der folgende Prozess verwendet eine CSV-Datei, um den Datensatz zu erstellen. Sie können auch jede andere Methode verwenden, die zum Importieren von Daten in Experience Platform verfügbar ist, z. B. das Einrichten eines Datenstroms.
+>Der folgende Prozess verwendet eine CSV-Datei, um den Datensatz zu erstellen. Sie können auch jede andere Methode verwenden, die für den Import von Daten in Experience Platform verfügbar ist, z. B. das Einrichten eines Datenstroms.
 
 1. Wählen Sie in Adobe Experience Platform **[!UICONTROL Workflows]** in der linken Leiste aus.
 
@@ -101,7 +101,7 @@ So erstellen Sie einen Lookup-Datensatz zur Verwendung mit einem Schema auf Cust
 
    Platform bietet automatisch intelligente Empfehlungen für automatisch zugeordnete Felder, die auf dem von Ihnen ausgewählten Zielschema oder Datensatz basieren. Sie können die Zuordnungsregeln manuell an Ihre Anwendungsfälle anpassen.
 
-   Weitere Informationen zum Zuordnungsprozess finden Sie unter [Zuordnen einer CSV-Datei zu einem vorhandenen XDM-Schema](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/tutorials/map-csv/existing-schema) in der Experience Platform-Dokumentation.
+   Weitere Informationen zum Zuordnungsprozess finden Sie unter [Zuordnen einer CSV-Datei zu einem vorhandenen XDM-Schema](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/tutorials/map-csv/existing-schema) in der Dokumentation zu Experience Platform.
 
 1. Wählen Sie **[!UICONTROL Beenden]** aus.
 
@@ -125,7 +125,7 @@ So fügen Sie den Lookup-Datensatz zu Ihrer Verbindung in Customer Journey Analy
 
 1. Wählen **[!UICONTROL Dialogfeld „Datensätze hinzufügen]** den von Ihnen erstellten Lookup-Datensatz aus und klicken Sie dann auf **[!UICONTROL Weiter]**.
 
-1. Wählen Sie im Feld **[!UICONTROL Personen-ID]** eine Personen-ID aus den verfügbaren Identitäten aus, die in dem Datensatzschema definiert sind, das Sie im Experience Platform konfiguriert haben. <!-- fill out other fields? -->
+1. Wählen Sie im Feld **[!UICONTROL Personen-ID]** eine Personen-ID aus den verfügbaren Identitäten aus, die in dem Datensatzschema definiert sind, das Sie in Experience Platform konfiguriert haben. <!-- fill out other fields? -->
 
 1. Wählen Sie **[!UICONTROL Datensätze hinzufügen]** und dann **[!UICONTROL Speichern]** aus.
 
@@ -133,5 +133,5 @@ So fügen Sie den Lookup-Datensatz zu Ihrer Verbindung in Customer Journey Analy
 
 1. Erstellen Sie mithilfe des Felds **[!UICONTROL Schlüssel]** und des Felds **[!UICONTROL Übereinstimmungsschlüssel]** eine Korrelation zwischen dem Feld in Ihrem Lookup-Datensatz und dem Feld in Ihrem Ereignis- oder Zusammenfassungsdatensatz.
 
-1. Nachdem alle Lookup-Datensätze in Customer Journey Analytics zu Ihrer Verbindung hinzugefügt wurden, folgen Sie den [empfohlenen Upgrade-](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) oder den [dynamisch generierten Upgrade-](https://gigazelle.github.io/cja-ttv/).
+1. Nachdem alle Lookup-Datensätze zu Ihrer Verbindung in Customer Journey Analytics hinzugefügt wurden, folgen Sie den [empfohlenen Upgrade-](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) oder den [dynamisch generierten Upgrade-](https://gigazelle.github.io/cja-ttv/).
 

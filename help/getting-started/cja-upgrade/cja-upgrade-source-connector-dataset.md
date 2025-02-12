@@ -21,23 +21,23 @@ ht-degree: 25%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-source-connector-dataset"
 >title="Hinzufügen des Analytics-Quell-Connector-Datensatzes zu Ihrer Verbindung"
->abstract="Nachdem sich nun historische Daten aus Ihrer Analytics Report Suite in Adobe Experience Platform befinden, fügen Sie diesen Datensatz zu Ihrer bestehenden Verbindung hinzu, die Sie beim anfänglichen Konfigurieren von Customer Journey Analytics erstellt haben. Sobald dieser Schritt abgeschlossen ist, stehen historische Daten in Customer Journey Analytics zur Verfügung.<br><br>Das Hinzufügen eines Datensatzes zu einer Verbindung in Customer Journey Analytics ist unkompliziert und dauert nur wenige Minuten."
+>abstract="Nachdem sich nun historische Daten aus Ihrer Analytics Report Suite in Adobe Experience Platform befinden, fügen Sie diesen Datensatz zu Ihrer bestehenden Verbindung hinzu, die Sie beim ersten Konfigurieren von Customer Journey Analytics erstellt haben. Sobald dieser Schritt abgeschlossen ist, stehen historische Daten in Customer Journey Analytics zur Verfügung.<br><br>Das Hinzufügen eines Datensatzes zu einer Verbindung in Customer Journey Analytics ist unkompliziert und dauert nur wenige Minuten."
 
 <!-- markdownlint-enable MD034 -->
 
 >[!NOTE]
 > 
->Befolgen Sie die Schritte auf dieser Seite erst, nachdem Sie alle vorherigen Upgrade-Schritte abgeschlossen haben. Sie können die [empfohlenen Upgrade-Schritte](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) ausführen oder die Upgrade-Schritte ausführen, die für Ihr Unternehmen mit dem [Fragebogen für das Upgrade von Adobe Analytics auf Customer Journey Analytics dynamisch generiert wurden](https://gigazelle.github.io/cja-ttv/).
+>Befolgen Sie die Schritte auf dieser Seite erst, nachdem Sie alle vorherigen Upgrade-Schritte abgeschlossen haben. Sie können die [empfohlenen Upgrade-Schritte](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) ausführen oder die Upgrade-Schritte ausführen, die für Ihr Unternehmen mit dem Fragebogen [Upgrade von Adobe Analytics auf Customer Journey Analytics dynamisch generiert ](https://gigazelle.github.io/cja-ttv/).
 >
 >Nachdem Sie die Schritte auf dieser Seite abgeschlossen haben, folgen Sie den empfohlenen Upgrade-Schritten oder den dynamisch generierten Upgrade-Schritten.
 
-## Verstehen, wie der Analytics-Quell-Connector Verlaufsdaten in Customer Journey Analytics importieren kann
+## Erfahren Sie, wie der Analytics-Quell-Connector historische Daten in Customer Journey Analytics importieren kann
 
 Sie können den Analytics-Quell-Connector verwenden, um Daten von Adobe Analytics Report Suites in Adobe Experience Platform zu importieren. Diese Daten können dann als Verlaufsdaten in Customer Journey Analytics verwendet werden.
 
 Bei diesem Prozess wird davon ausgegangen, dass Sie [beim Upgrade auf Customer Journey Analytics ein XDM-Schema erstellen](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md) weil Sie ein optimiertes Schema wünschen, das auf die Anforderungen Ihres Unternehmens und die von Ihnen verwendeten Platform-Programme zugeschnitten ist.
 
-Um den Analytics-Quell-Connector zum Übertragen historischer Daten in Customer Journey Analytics zu verwenden, ist Folgendes erforderlich:
+Um den Analytics-Quell-Connector zu verwenden, um historische Daten in Customer Journey Analytics zu importieren, ist Folgendes erforderlich:
 
 1. [Erstellen eines XDM-Schemas für den Analytics-Quell-Connector](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-schema.md)
 
@@ -53,7 +53,7 @@ Um den Analytics-Quell-Connector zum Übertragen historischer Daten in Customer 
 
 Nachdem Sie [einen Analytics-Quell-Connector für historische Daten erstellt](/help/getting-started/cja-upgrade/cja-upgrade-source-connector.md) wird automatisch ein Datensatz für die Analytics-Daten erstellt.
 
-Sie müssen diesen automatisch erstellten Datensatz zu derselben Verbindung hinzufügen, die Sie für Ihre Web SDK-Implementierung erstellt haben. Dadurch werden die Analytics-Daten in derselben Datenansicht im Customer Journey Analytics wie die Web SDK-Daten angezeigt.
+Sie müssen diesen automatisch erstellten Datensatz zu derselben Verbindung hinzufügen, die Sie für Ihre Web SDK-Implementierung erstellt haben. Dadurch werden die Analytics-Daten in dieselbe Datenansicht in Customer Journey Analytics wie die Web SDK-Daten eingefügt.
 
 So fügen Sie den automatisch erstellten Datensatz zu derselben Verbindung hinzu, die Sie für Ihre Web SDK-Implementierung erstellt haben:
 
@@ -96,7 +96,7 @@ So fügen Sie den automatisch erstellten Datensatz zu derselben Verbindung hinzu
 
 1. Wählen Sie **[!UICONTROL Abschnitt]** Aufstockung des Datensatzes“ **[!UICONTROL Aufstockung anfordern]** aus.
 
-1. Definieren Sie den Zeitraum, in dem die Aufstockung der Verbindung beim Customer Journey Analytics erfolgen soll, indem Sie das Start- und Enddatum eingeben oder das Kalendersymbol (![) ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg).
+1. Definieren Sie den Zeitraum, den die Aufstockung der Verbindung in Customer Journey Analytics einschließen soll, indem Sie das Start- und Enddatum eingeben oder das Kalendersymbol (![) ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg).
 
    Seien Sie beim Angeben der Daten, die Sie für die Aufstockung anfordern, explizit. Je nach verschiedenen Faktoren können Sie einen der folgenden Schritte ausführen:
 
@@ -114,7 +114,7 @@ So fügen Sie den automatisch erstellten Datensatz zu derselben Verbindung hinzu
 
 1. Wählen Sie **[!UICONTROL Datensätze hinzufügen]** und dann **[!UICONTROL Speichern]** aus, um die Verbindung zu speichern.
 
-1. (Bedingt) Wenn Sie Lookup-Datensätze verwenden, müssen Sie den Lookup-Datensatz erstellen und ihn Ihrer Verbindung hinzufügen. Weitere Informationen finden Sie unter [Erstellen von Lookup-Datensätzen zum Klassifizieren von Daten auf Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-dataset-lookup.md).
+1. (Bedingt) Wenn Sie Lookup-Datensätze verwenden, müssen Sie den Lookup-Datensatz erstellen und ihn Ihrer Verbindung hinzufügen. Weitere Informationen finden Sie unter [Erstellen von Such-Datensätzen zum Klassifizieren von Daten in Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-dataset-lookup.md).
 
    Dies ist nur erforderlich, wenn Sie dies nicht bereits bei der Konfiguration Ihrer Web SDK-Implementierung getan haben.
 

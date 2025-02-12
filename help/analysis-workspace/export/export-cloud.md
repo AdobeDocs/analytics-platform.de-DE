@@ -18,12 +18,12 @@ ht-degree: 3%
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-full-table-export"
->title="Erstellen vollständiger Tabellenexporte ähnlich wie beim Data Warehouse"
+>title="Erstellen vollständiger Tabellenexporte ähnlich wie in Data Warehouse"
 >abstract="Vollständige Tabellenexporte sind verfügbar, sobald Daten in Analysis Workspace angezeigt werden. Sie können bei Bedarf vollständige Tabellenexporte erstellen oder planen.<br><br>Das Erstellen vollständiger Tabellenexporte dauert nur einige Minuten, wenn Sie bereits wissen, welche Daten in den Export aufgenommen werden sollen."
 
 <!-- markdownlint-enable MD034 -->
 
-Sie können vollständige Workspace-Tabellen vom Customer Journey Analytics exportieren und Exporte an bestimmte Cloud-Ziele senden.
+Sie können vollständige Workspace-Tabellen aus Customer Journey Analytics exportieren und Exporte an bestimmte Cloud-Ziele senden.
 
 Es sind auch andere Methoden zum Exportieren von Customer Journey Analytics-Berichten verfügbar, wie unter [Exportübersicht](/help/analysis-workspace/export/export-project-overview.md) beschrieben.
 
@@ -125,7 +125,7 @@ Eine Manifestdatei mit dem Dateinamen `cja-export-{reportInstanceId}-{idx}.json.
 
 ## Vorteile des Exports in die Cloud
 
-Das Exportieren von Customer Journey Analytics-Daten in die Cloud ermöglicht Folgendes:
+Das Exportieren von Customer Journey Analytics-Daten in die Cloud ermöglicht Ihnen Folgendes:
 
 * Exportieren Sie an einen freigegebenen Speicherort, z. B. Adobe Experience Platform Data Landing Zone, Google Cloud Platform, Microsoft Azure, Amazon S3 oder Snowflake.
 
@@ -153,9 +153,9 @@ Stellen Sie sicher, dass Ihre Tabellen, Ihre Umgebung und Ihre Berechtigungen di
 
 * **Tabellen:** Alle Tabellen müssen mindestens eine Dimension in der Zeile und eine Metrik in jeder Spalte enthalten, damit sie durch einen vollständigen Tabellenexport unterstützt werden.
 
-* **Umgebung:** Stellen Sie sicher, dass [IP-Adressen](/help/technotes/ip-addresses.md) und [Domains](/help/technotes/domains.md), die vom Customer Journey Analytics verwendet werden, durch die Firewall ihrer Organisation zugelassen werden.
+* **Umgebung:** Stellen Sie sicher, dass [IP-Adressen](/help/technotes/ip-addresses.md) und [Domains](/help/technotes/domains.md), die von Customer Journey Analytics verwendet werden, durch die Firewall ihrer Organisation zugelassen werden.
 
-* **Berechtigungen:** In der Adobe Admin Console muss Benutzenden ein Produktprofil zugewiesen werden, das über die Berechtigung [!UICONTROL **Vollständiger Tabellenexport**] verfügt, um vollständige Tabellen exportieren zu können. Informationen zum Zuweisen einer Berechtigung zu einem Produktprofil in der Admin Console finden Sie unter [Berechtigung zum Customer Journey Analytics in Admin Console](/help/technotes/access-control.md).
+* **Berechtigungen:** In der Adobe Admin Console muss Benutzenden ein Produktprofil zugewiesen werden, das über die Berechtigung [!UICONTROL **Vollständiger Tabellenexport**] verfügt, um vollständige Tabellen exportieren zu können. Informationen zum Zuweisen einer Berechtigung zu einem Produktprofil in Admin Console finden Sie unter [Berechtigung für Customer Journey Analytics in Admin Console](/help/technotes/access-control.md).
 
   >[!NOTE]
   >
@@ -174,7 +174,7 @@ Die folgenden Funktionen werden nicht unterstützt und automatisch aus vollstän
 * Dynamische Dimensionen
 
   Weitere Informationen finden Sie unter [Dynamische und statische Dimensionselemente in Freiformtabellen](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/manual-vs-dynamic-rows.md).
-* Die Dimensionen in der ersten Aufschlüsselung werden konvertiert und als sekundäre Dimension in der Zeile der exportierten Tabelle hinzugefügt. Alle anderen Aufschlüsselungen sind nicht in der Tabelle enthalten
+* Dimensionen in der ersten Aufschlüsselung werden konvertiert und als sekundäre Dimension in der Zeile der exportierten Tabelle hinzugefügt. Alle anderen Aufschlüsselungen sind nicht in der Tabelle enthalten
 * Die Sortierung wird für die meisten Datensätze nicht unterstützt. Daten können für kleine Datensätze sortiert werden
 
 ### Nicht unterstützte Komponenten
@@ -216,9 +216,9 @@ Wenn in einem Bericht ein nicht standardmäßiges Attributionsmodell verwendet w
   >
   >Mehrdimensionale Berichte werden nur beim Exportieren von Daten in die Cloud unterstützt, wie in diesem Artikel beschrieben.
 
-## Vergleich des vollständigen Tabellenexports (in Customer Journey Analytics) in Data Warehouse (in Adobe Analytics)
+## Vergleich des vollständigen Tabellenexports (in Customer Journey Analytics) nach Data Warehouse (in Adobe Analytics)
 
-Wenn Sie zuvor Data Warehouse zum Exportieren von Adobe Analytics-Daten verwendet haben, können Sie in der folgenden Tabelle die Unterschiede zwischen dem Exportieren vollständiger Tabellen auf Customer Journey Analytics und dem Exportieren von Daten mit Data Warehouse auf Adobe Analytics verstehen.
+Wenn Sie Data Warehouse zuvor zum Exportieren von Adobe Analytics-Daten verwendet haben, können Sie anhand der folgenden Tabelle die Unterschiede zwischen dem Exportieren vollständiger Tabellen in Customer Journey Analytics und dem Exportieren von Daten mit Data Warehouse in Adobe Analytics besser verstehen.
 
 
 | Funktion | Vollständiger Tabellenexport in Customer Journey Analytics | Data Warehouse in Adobe Analytics |

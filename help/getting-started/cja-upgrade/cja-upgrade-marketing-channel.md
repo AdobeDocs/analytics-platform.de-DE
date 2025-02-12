@@ -1,6 +1,6 @@
 ---
-title: Erstellen eines von einem Marketing-Kanal abgeleiteten Felds zum Customer Journey Analytics
-description: Erfahren Sie, wie Sie ein abgeleitetes Feld für den Marketing-Kanal für das Customer Journey Analytics erstellen
+title: Erstellen eines von einem Marketing-Kanal abgeleiteten Felds für Customer Journey Analytics
+description: Erfahren Sie, wie Sie ein abgeleitetes Feld für einen Marketing-Kanal für Customer Journey Analytics erstellen
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
@@ -14,7 +14,7 @@ ht-degree: 4%
 
 ---
 
-# Erstellen eines von einem Marketing-Kanal abgeleiteten Felds zum Customer Journey Analytics {#create-marketing-channel-derived-field}
+# Erstellen eines von einem Marketing-Kanal abgeleiteten Felds für Customer Journey Analytics {#create-marketing-channel-derived-field}
 
 <!-- markdownlint-disable MD034 -->
 
@@ -27,13 +27,13 @@ ht-degree: 4%
 
 >[!NOTE]
 > 
->Befolgen Sie die Schritte auf dieser Seite erst, nachdem Sie alle vorherigen Upgrade-Schritte abgeschlossen haben. Sie können die [empfohlenen Upgrade-Schritte](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) ausführen oder die Upgrade-Schritte ausführen, die für Ihr Unternehmen mit dem [Fragebogen für das Upgrade von Adobe Analytics auf Customer Journey Analytics dynamisch generiert wurden](https://gigazelle.github.io/cja-ttv/).
+>Befolgen Sie die Schritte auf dieser Seite erst, nachdem Sie alle vorherigen Upgrade-Schritte abgeschlossen haben. Sie können die [empfohlenen Upgrade-Schritte](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) ausführen oder die Upgrade-Schritte ausführen, die für Ihr Unternehmen mit dem Fragebogen [Upgrade von Adobe Analytics auf Customer Journey Analytics dynamisch generiert ](https://gigazelle.github.io/cja-ttv/).
 >
 >Nachdem Sie die Schritte auf dieser Seite abgeschlossen haben, folgen Sie den empfohlenen Upgrade-Schritten oder den dynamisch generierten Upgrade-Schritten.
 
 Bei Verwendung des Analytics-Quell-Connectors fließen Daten von Marketing-Kanälen über diesen Connector in Customer Journey Analytics. Regeln für Marketing-Kanäle werden im herkömmlichen Adobe Analytics-Tool konfiguriert, und einige Regeln werden nicht unterstützt. Weitere Informationen finden Sie unter [Verwenden von Marketing-Kanal-Dimensionen](/help/use-cases/aa-data/marketing-channels.md).
 
-Um Marketing-Kanäle beim Customer Journey Analytics mit der Experience Platform Web SDK zu verwenden, können Sie abgeleitete Felder in einer Datenansicht verwenden, um dieselben Marketing-Kanäle und Verarbeitungsregeln für das Customer Journey Analytics neu zu erstellen.
+Um Marketing-Kanäle in Customer Journey Analytics bei Verwendung der Experience Platform Web SDK zu verwenden, können Sie abgeleitete Felder in einer Datenansicht verwenden, um dieselben Marketing-Kanäle und Verarbeitungsregeln für Customer Journey Analytics neu zu erstellen.
 
 1. Wählen Sie in Customer Journey Analytics die Datenansicht aus, der Sie Marketing-Kanäle hinzufügen möchten.
 
