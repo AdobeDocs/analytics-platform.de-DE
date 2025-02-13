@@ -10,7 +10,7 @@ exl-id: 4aff664c-3cd9-4591-8122-6ebff10e4a76
 source-git-commit: 3bf62bebebfe2ef52abbd29245ef6e8e65807491
 workflow-type: tm+mt
 source-wordcount: '1856'
-ht-degree: 10%
+ht-degree: 17%
 
 ---
 
@@ -71,7 +71,7 @@ Der Assistent für geführte Konfigurationen besteht aus vier Abschnitten ([Deta
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_details_button"
 >title="Details"
->abstract="Geben Sie einen Namen für die Verbindung an. In den **[!UICONTROL Datenansicht]**, **[!UICONTROL Erlebniserfassung und -definition]** und **[!UICONTROL Datenerfassung]** geben Sie weitere Details an, um sicherzustellen, dass die Inhaltsanalyse korrekt konfiguriert werden kann."
+>abstract="Geben Sie einen Namen für die Verbindung an. Geben Sie in den Abschnitten zu **[!UICONTROL Datenansicht]**, **[!UICONTROL Erlebniserfassung und -definition]** und **[!UICONTROL Datenerfassung]** weitere Details an, um sicherzustellen, dass die Inhaltsanalyse korrekt konfiguriert werden kann."
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_details_name_header"
@@ -92,17 +92,17 @@ Jede Konfiguration erfordert einen eindeutigen Namen. Zum Beispiel `Example Cont
 >[!CONTEXTUALHELP]
 >id="ac_onboarding_dataview_button"
 >title="Datenansicht"
->abstract="Für die Konfiguration von Content Analytics müssen Sie eine vorhandene Datenansicht auswählen. So können Sie Ihre Inhaltsanalysedaten mit anderen Daten zusammenführen."
+>abstract="Für die Konfiguration der Inhaltsanalyse müssen Sie eine vorhandene Datenansicht auswählen. So können Sie Ihre Inhaltsanalysedaten mit anderen Daten zusammenführen."
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataview_header"
 >title="Datenansicht"
->abstract="Wählen Sie eine vorhandene Datenansicht aus Customer Journey Analytics aus, mit der Sie Ihre Inhaltsanalysedaten zusammenführen möchten."
+>abstract="Wählen Sie eine vorhandene Datenansicht aus Customer Journey Analytics aus, mit der Ihre Inhaltsanalysedaten zusammengeführt werden sollen."
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataview_header_alt"
 >title="Datenansicht"
->abstract="Wählen Sie eine vorhandene Datenansicht aus Customer Journey Analytics aus, mit der Sie Ihre Inhaltsanalysedaten zusammenführen möchten.<br/>"
+>abstract="Wählen Sie eine vorhandene Datenansicht aus Customer Journey Analytics aus, mit der Ihre Inhaltsanalysedaten zusammengeführt werden sollen.<br/>"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -181,7 +181,7 @@ So bearbeiten Sie vorhandene Erlebnisse oder schließen neue Erlebnisse in eine 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_button"
 >title="Datenerfassung"
->abstract="Definieren Sie, welche Tag-Eigenschaft verwendet werden soll, oder erstellen Sie eine neue. Und definieren Sie die Seiten und Assets, die Sie mithilfe regulärer Ausdrücke ein- oder ausschließen möchten."
+>abstract="Definieren Sie, welche Tag-Eigenschaft verwendet werden soll, oder erstellen Sie eine neue. Definieren Sie zudem mithilfe regulärer Ausdrücke die ein- oder auszuschließenden Seiten und Assets."
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_tag_header"
