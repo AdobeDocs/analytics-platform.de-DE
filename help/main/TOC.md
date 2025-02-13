@@ -12,7 +12,7 @@ breadcrumb-title: Handbuch zu Customer Journey Analytics
 source-git-commit: 959e0b5d4a156d3ac81ac914612635880832ddd8
 workflow-type: tm+mt
 source-wordcount: '1129'
-ht-degree: 97%
+ht-degree: 98%
 
 ---
 
@@ -71,8 +71,8 @@ ht-degree: 97%
       + [Ausschließliche Verwendung des Analytics-Quell-Connectors](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-exclusively.md)
       + [Wechsel vom Analytics-Quell-Connector zum Web SDK](/help/getting-started/cja-upgrade/cja-upgrade-from-source-connector.md)
       + [AppMeasurement-Datenerfassung deaktivieren](/help/getting-started/cja-upgrade/cja-upgrade-disable-appmeasurement.md)
-      + [Upgrade von einer Analyselösung eines Drittanbieters](/help/getting-started/cja-upgrade/cja-upgrade-third-party-solution.md)
-      + [Adobe Analytics-Funktionsunterstützung beim Upgrade](/help/getting-started/cja-upgrade/cja-upgrade-adobe-analytics-features.md)
+      + [Upgrade über die Analyselösung eines Drittanbieters](/help/getting-started/cja-upgrade/cja-upgrade-third-party-solution.md)
+      + [Unterstützung von Adobe Analytics-Funktionen beim Upgrade](/help/getting-started/cja-upgrade/cja-upgrade-adobe-analytics-features.md)
       + [Adobe Analytics während und nach einem Upgrade](/help/getting-started/cja-upgrade/cja-upgrade-fully-move.md)
    + Vergleich mit Adobe Analytics {#cja-aa-comparison}
       + [Überblick](../getting-started/aa-vs-cja/overview.md)
