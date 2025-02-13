@@ -6,9 +6,9 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: e4762cca-b2da-422b-b48f-2a5fec14c97f
 source-git-commit: 4bf8c616965718426efe880865acb0e5054b6a31
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1454'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -24,7 +24,7 @@ Vieles beim Reporting hat sich nicht geändert.
 
 * Sie können weiterhin die Funktionen von [Analysis Workspace](/help/analysis-workspace/home.md) verwenden, um Ihre Daten zu analysieren. Der Arbeitsbereich funktioniert genauso wie im herkömmlichen Adobe Analytics.
 * Dieselbe Version von [Adobe Analytics-Dashboards](/help/mobile-app/home.md) ist verfügbar und funktioniert in Customer Journey Analytics und Adobe Analytics auf ähnliche Weise.
-* [Report Builder](/help/report-builder/report-buider-overview.md) verfügt über eine neue Benutzeroberfläche und läuft unter MS Windows, macOS und der Web-Version von Excel. (Vor dieser Report Builder-Version konnten Sie in nur dann auf Mac verwenden, wenn es auf VMware ausgeführt wurde.) Diese Version unterstützt die herkömmliche AA-Datenanfrage noch nicht.
+* [Report Builder](/help/report-builder/report-buider-overview.md) verfügt über eine neue Benutzeroberfläche und läuft unter MS Windows, macOS und der Web-Version von Excel. (Vor dieser Version von Report Builder konnten Sie Report Builder nur dann auf Mac-Geräten verwenden, wenn das Programm auf VMware ausgeführt wurde.) Diese Version unterstützt noch keine traditionelle AA-Datenanfrage.
 
 ## Änderungen beim Reporting
 
@@ -40,7 +40,7 @@ Kundendaten in Experience Platform werden als Datensätze gespeichert, die aus e
 
 Customer Journey Analytics-Admis richten [Verbindungen](/help/connections/create-connection.md) zu Datensätzen in Experience Platform ein. Anschließend erstellen sie mithilfe dieser Verbindungen [Datenansichten](/help/data-views/data-views.md). Datenansichten ähneln konzeptionell den Virtual Report Suites und bilden die Grundlage für die Berichterstellung in Customer Journey Analytics. Da Experience Platform alle Daten für die Berichterstellung bereitstellt, fungieren Report Suites nicht mehr als Daten-Container.
 
-Mit einer Verbindung kann Ihr Analytics-Administrator Datensätze von Adobe Experience Platform in Customer Journey Analytics integrieren.
+Mit einer Verbindung können Analytics-Admins Datensätze von Adobe Experience Platform in Customer Journey Analytics integrieren.
 
 
 <!-- Outdated UI
@@ -88,12 +88,12 @@ Zusätzlich zum geänderten Konzept der Segmente wurden auch Segment-Container a
 
 ## Änderungen am Konzept der berechneten Metriken
 
-Berechnete Metriken sind in Adobe Analytics und Customer Journey Analytics ähnlich benannt. Doch [!UICONTROL Customer Journey Analytics] verwendet keine eVars, Props oder Ereignisse mehr, sondern verwendet stattdessen ein Experience Platform-Schemaelement. Diese grundlegende Änderung bedeutet, dass keine der vorhandenen berechneten Metriken mit [!UICONTROL Customer Journey Analytics. kompatibel ].
+Berechnete Metriken sind in Adobe Analytics und Customer Journey Analytics ähnlich benannt. Doch [!UICONTROL Customer Journey Analytics] verwendet keine eVars, Props oder Ereignisse mehr, sondern verwendet stattdessen ein Experience Platform-Schemaelement. Diese grundlegende Änderung bedeutet, dass keine der vorhandenen berechneten Metriken mit [!UICONTROL Customer Journey Analytics] kompatibel ist. 
 
 
 >[!BEGINSHADEBOX]
 
-Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Verschieben berechneter Metriken von Adobe Analytics nach Customer Journey Analytics](https://video.tv.adobe.com/v/31788?quality=12&learn=on){target="_blank"} finden Sie ein Demovideo zum Verschieben berechneter Metriken.
+Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Verschieben der berechneten Metriken von Adobe Analytics nach Customer Journey Analytics](https://video.tv.adobe.com/v/31788?quality=12&learn=on){target="_blank"} finden Sie ein Demovideo zum Verschieben berechneter Metriken.
 
 >[!ENDSHADEBOX]
 
@@ -115,12 +115,12 @@ Sie können auch mehrere Datenansichten haben, die auf derselben Verbindung basi
 
 ## Änderungen bei der Besucheridentifizierung durch die Adobe
 
-Customer Journey Analytics erweitert die Konzepte von Identitäten über ECIDs hinaus und umfasst alle IDs, die Sie verwenden möchten, einschließlich Kunden-IDs, Cookie-IDs, zugeordneter IDs, Benutzer-IDs und Trackingcodes. Durch die Verwendung einer gemeinsamen Namespace-ID für mehrere Datensätze oder die Verwendung der [Zuordnungsfunktion](../stitching/overview.md) können Personen über verschiedene Datensätze hinweg miteinander verknüpft werden. Benutzende, die in Customer Journey Analytics ein Workspace-Projekt einrichten, müssen wissen, welche IDs in den verschiedenen Datensätzen verwendet werden. Sehen Sie sich das folgende Video an, in dem die Verwendung von Identitäten beim Customer Journey Analytics erläutert wird
+Customer Journey Analytics erweitert die Konzepte von Identitäten über ECIDs hinaus und umfasst alle IDs, die Sie verwenden möchten, einschließlich Kunden-IDs, Cookie-IDs, zugeordneter IDs, Benutzer-IDs und Trackingcodes. Durch die Verwendung einer gemeinsamen Namespace-ID für mehrere Datensätze oder die Verwendung der [Zuordnungsfunktion](../stitching/overview.md) können Personen über verschiedene Datensätze hinweg miteinander verknüpft werden. Benutzende, die in Customer Journey Analytics ein Workspace-Projekt einrichten, müssen wissen, welche IDs in den verschiedenen Datensätzen verwendet werden. Sehen Sie sich das folgende Video an, in dem die Verwendung von Identitäten in Customer Journey Analytics erläutert wird.
 
 
 >[!BEGINSHADEBOX]
 
-Siehe ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Verwenden von Identitäten auf Customer Journey Analytics](https://video.tv.adobe.com/v/30750/?quality=12&learn=on){target="_blank"} für ein Demovideo.
+Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Verwenden von Identitäten in Customer Journey Analytics](https://video.tv.adobe.com/v/30750/?quality=12&learn=on){target="_blank"} finden Sie ein Demovideo.
 
 >[!ENDSHADEBOX]
 

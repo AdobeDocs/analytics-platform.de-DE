@@ -6,9 +6,9 @@ solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
 source-git-commit: 4bf8c616965718426efe880865acb0e5054b6a31
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '673'
-ht-degree: 75%
+ht-degree: 100%
 
 ---
 
@@ -43,7 +43,7 @@ Die folgenden Informationen beschreiben die Einstellungen, die eine Datenansicht
 | [!UICONTROL Name der Komponente] | Erforderlich. Hier können Sie den benutzerfreundlichen Namen angeben, der in Analysis Workspace angezeigt wird. Sie können eine Komponente umbenennen, um ihr einen spezifischen Namen für die Datenansicht zu geben. |
 | [!UICONTROL Beschreibung] | Optional, jedoch empfohlen. Stellt Informationen über die Komponente für andere Benutzer bereit. |
 | [!UICONTROL Tags] | Optional. Ermöglicht das Taggen der Komponente mit benutzerdefinierten oder vordefinierten Tags zur einfacheren Suche/Filterung in der Analysis Workspace-Benutzeroberfläche. |
-| [!UICONTROL Kontextbeschriftungen] | Optional. Eine Dropdown-Liste der verfügbaren systemdefinierten Beschriftungen, die auf eine Komponente angewendet werden können. <p>Diese Kennzeichnungen können in den folgenden Situationen erforderlich sein:</p> <ul><li>Um einen Komponentensatz zu definieren, den Sie in Analysis Workspace-Projekten im Experimentier[Reporting über das Bedienfeld &quot;](/help/analysis-workspace/c-panels/experimentation.md)&quot; verwenden können.<p>Weitere Informationen finden Sie unter [Integration mit Journey Optimizer](/help/integrations/ajo.md#data-view) und [Target-Berichte](/help/integrations/at.md).</p></li><li>Bei Verwendung von Vorlagen, die von Adobe bereitgestellt werden. Standardmäßig funktionieren einige Vorlagen, die von Adobe bereitgestellt werden, nicht, da sie Komponenten enthalten, die sich nicht in Ihrer Datenansicht befinden.<p>Für jede fehlende Komponente ist eine entsprechende Kontextbeschriftung in Ihrer Datenansicht verfügbar. Sie müssen entweder die entsprechende Kontextbeschriftung zu einer Komponente hinzufügen, die sich bereits in Ihrer Datenansicht befindet, oder Sie müssen Ihrer Datenansicht eine neue Komponente hinzufügen und ihr die Kontextbeschriftung hinzufügen.</p><p>Weitere Informationen finden Sie unter [Hinzufügen fehlender Komponenten zur Datenansicht für eine bestimmte Vorlage](/help/analysis-workspace/templates/create-templates.md#add-missing-components-to-the-data-view-for-a-given-template) im Artikel &quot;[ und Vorlagen verwalten](/help/analysis-workspace/templates/create-templates.md).</p> |
+| [!UICONTROL Kontextbeschriftungen] | Optional. Eine Dropdown-Liste der verfügbaren systemdefinierten Labels, die auf eine Komponente angewendet werden können.  <p>Diese Labels können in den folgenden Situationen erforderlich sein:</p> <ul><li>Zum Definieren eines Komponentensatzes, den Sie für Berichte zum Experimentieren mit dem [Bedienfeld „Experimentieren“](/help/analysis-workspace/c-panels/experimentation.md) in Analysis Workspace-Projekten verwenden können. <p>Weitere Informationen finden Sie unter [Integrieren mit Journey Optimizer](/help/integrations/ajo.md#data-view) und [Zielgruppenberichte](/help/integrations/at.md).</p></li><li>Bei Verwendung von Vorlagen, die von Adobe bereitgestellt werden. Einige der von Adobe bereitgestellten Vorlagen funktionieren standardmäßig nicht, da sie Komponenten enthalten, die sich nicht in Ihrer Datenansicht befinden.<p>In Ihrer Datenansicht ist für jede fehlende Komponente ein entsprechendes Kontext-Label verfügbar. Sie müssen entweder das entsprechende Kontext-Label zu einer Komponente hinzufügen, die sich bereits in Ihrer Datenansicht befindet, oder Sie müssen Ihrer Datenansicht eine neue Komponente hinzufügen und dieser das Kontext-Label hinzufügen.</p><p>Weitere Informationen finden Sie unter [Hinzufügen fehlender Komponenten zur Datenansicht für eine bestimmte Vorlage](/help/analysis-workspace/templates/create-templates.md#add-missing-components-to-the-data-view-for-a-given-template) im Artikel [Erstellen und Verwalten von Vorlagen](/help/analysis-workspace/templates/create-templates.md).</p> |
 | [!UICONTROL Schemafeldname] | Der Name des Schemafelds. |
 | [!UICONTROL Typ des Datensatzes] | Erforderlich. Ein nicht bearbeitbares Feld, das anzeigt, von welchem Datensatztyp (Ereignis, Suche oder Profil) die Komponente stammt. |
 | [!UICONTROL Datensatz] | Ein nicht bearbeitbares Feld, das anzeigt, aus welchem Datensatz die Komponente stammt. Dieses Feld kann mehrere Datensätze enthalten. |
@@ -59,7 +59,7 @@ Die folgenden Informationen beschreiben die Einstellungen, die eine Datenansicht
 
 >[!BEGINSHADEBOX]
 
-Siehe ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Einstellungen für Komponententypen](https://video.tv.adobe.com/v/333112/?quality=12&learn=on){target="_blank"} für ein Demovideo.
+Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Einstellungen zum Komponententyp](https://video.tv.adobe.com/v/333112/?quality=12&learn=on){target="_blank"} finden Sie ein Demovideo.
 
 >[!ENDSHADEBOX]
 

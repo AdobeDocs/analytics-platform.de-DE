@@ -5,9 +5,9 @@ feature: Panels
 exl-id: be3e34a0-06c1-4200-b965-96084c2912fd
 role: User
 source-git-commit: a2262e446a15ee58be2f3f674c77223368fc8f76
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2129'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -149,13 +149,13 @@ Komponenten, die keine Filter sind, können ebenfalls direkt in den Ablagebereic
 
 Weitere Informationen finden Sie unter [Schnellfilter](/help/components/filters/quick-filters.md).
 
-![Ad-hoc-Filter, die veröffentlicht und in der Ablagefläche abgelegt werden](assets/adhoc-segment-filter.png)
+![Ad-hoc-Filter, die veröffentlicht und in im Ablegebereich abgelegt werden.](assets/adhoc-segment-filter.png)
 
 ### Dropdown-Filter
 
 >[!BEGINSHADEBOX]
 
-Siehe ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Dropdown-Filter](https://video.tv.adobe.com/v/23877?quality=12&learn=on){target="_blank"} für ein Demovideo.
+Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Dropdown-Filter](https://video.tv.adobe.com/v/23877?quality=12&learn=on){target="_blank"} finden Sie ein Demovideo.
 
 {{videoaa}}
 
