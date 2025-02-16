@@ -7,7 +7,7 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 4aff664c-3cd9-4591-8122-6ebff10e4a76
-source-git-commit: 3bf62bebebfe2ef52abbd29245ef6e8e65807491
+source-git-commit: b52f1bc824c9edd958699d57ccbd950bc36abe5c
 workflow-type: tm+mt
 source-wordcount: '1856'
 ht-degree: 17%
@@ -273,7 +273,7 @@ Nachdem Sie alle erforderlichen Details bereitgestellt haben, enthält eine Zusa
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_implementation_warning"
 >title="Onboarding-Implementierungswarnung"
->abstract="Dadurch wird Content Analytics teilweise basierend auf den Eingaben konfiguriert, die Sie in diesem Workflow bereitgestellt haben. Verschiedene andere Einstellungen werden automatisch ausgewählt, basierend auf dem, was im Allgemeinen für Inhaltsanalysen nützlich ist. Sie sollten die Einstellungen der einzelnen Artefakte überprüfen, um sicherzustellen, dass sie Ihren Anforderungen und Richtlinien entsprechen. <br/>Beachten Sie, dass keine Daten erfasst werden, bis die mit dieser Konfiguration verknüpfte Tag-Bibliothek manuell veröffentlicht wird.<br/>Beachten Sie außerdem, dass Adobe zum Ableiten von Bild- und Textattributen diese Attribute mithilfe der URL abruft, die zum Zeitpunkt des Benutzerbesuchs gemäß den von Ihnen implementierten Datenerfassungseinstellungen erfasst wurde."
+>abstract="Dadurch wird Content Analytics teilweise basierend auf den Eingaben konfiguriert, die Sie in diesem Workflow bereitgestellt haben. Verschiedene andere Einstellungen werden automatisch ausgewählt, basierend auf dem, was im Allgemeinen für Inhaltsanalysen nützlich ist. Sie sollten die Einstellungen der einzelnen Artefakte überprüfen, um sicherzustellen, dass sie Ihren Anforderungen und Richtlinien entsprechen. <br/><br/>Beachten Sie, dass keine Daten erfasst werden, bis die mit dieser Konfiguration verknüpfte Tag-Bibliothek manuell veröffentlicht wird.<br/><br/>Beachten Sie außerdem, dass Adobe zum Ableiten von Bild- und Textattributen diese Attribute mithilfe der URL abruft, die zum Zeitpunkt des Benutzerbesuchs gemäß den von Ihnen implementierten Datenerfassungseinstellungen erfasst wurde."
 
 <!-- markdownlint-enable MD034 -->
 
