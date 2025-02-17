@@ -1,14 +1,14 @@
 ---
 title: Customer Journey Analytics BI-Erweiterung
-description: Erfahren Sie, wie Sie mit dem Power BI oder Tableau Desktop mithilfe der Customer Journey Analytics BI-Erweiterung auf Datenansichten zugreifen können.
+description: Erfahren Sie, wie Sie mit Power BI oder Tableau Desktop mithilfe der Customer Journey Analytics BI-Erweiterung auf Datenansichten zugreifen können.
 solution: Customer Journey Analytics
 feature: BI Extension
 role: Admin
 exl-id: ab7e1f15-ead9-46b7-94b7-f81802f88ff5
-source-git-commit: d7d16dbef202db9fdac08796dacc3368e0119456
+source-git-commit: 30e3df15aecec0bab180cd06e0ae7c79f58cdf44
 workflow-type: tm+mt
-source-wordcount: '3176'
-ht-degree: 59%
+source-wordcount: '3620'
+ht-degree: 53%
 
 ---
 
@@ -36,22 +36,22 @@ Im Folgenden finden Sie zusätzliche Schritte zum Einrichten von CJA-Berechtigun
 
 Um ablaufende Anmeldeinformationen zu verwenden, können Sie:
 
-* Zugriff auf Experience Platform und Customer Journey Analytics gewähren.
+* Gewähren von Zugriff auf Experience Platform und Customer Journey Analytics.
 * Gewähren Sie Produktadministratorzugriff auf Customer Journey Analytics, damit Sie Verbindungen und Datenansichten anzeigen, bearbeiten, aktualisieren oder löschen können.
 
 Oder Sie können:
 
 * Gewähren Sie Zugriff auf die Datenansichten, auf die Sie zugreifen möchten.
-* Zugriff auf die Customer Journey Analytics BI-Erweiterung gewähren.
+* Gewähren des Zugriffs auf die Customer Journey Analytics BI-Erweiterung.
 
 ### Nicht ablaufende Anmeldedaten
 
 So verwenden Sie nicht ablaufende Anmeldeinformationen:
 
-* Erstellen Sie unbefristete Anmeldedaten auf Experience Platform.
+* Erstellen Sie unbefristete Anmeldedaten in Experience Platform.
 * Gewähren Sie Zugriff auf die nicht ablaufenden Anmeldeinformationen, indem Sie die unter &quot;[ Anmeldeinformationen“ ](#Expiring-credentials) Schritte ausführen.
 
-Siehe [Kunden-Journey-Zugriffssteuerung](../technotes/access-control.md) für weitere Informationen, insbesondere die [Produktadministrator-zusätzlichen Berechtigungen](../technotes/access-control.md#product-admin-additional-permissions) und [Customer Journey Analytics-Berechtigungen in der Admin Console ](../technotes/access-control.md#customer-journey-analytics-permissions-in-admin-console).
+Siehe [Kunden-Journey-Zugriffssteuerung](../technotes/access-control.md) für weitere Informationen, insbesondere die [Produktadministrator-zusätzlichen Berechtigungen](../technotes/access-control.md#product-admin-additional-permissions) und [Customer Journey Analytics-Berechtigungen in der Admin Console](../technotes/access-control.md#customer-journey-analytics-permissions-in-admin-console).
 
 
 ## Nutzung
@@ -124,9 +124,9 @@ Derzeit wird die [!DNL Customer Journey Analytics BI extension] nur für Power B
 
    1. Im Dialogfeld **[!UICONTROL ** PostgresSQL-Datenbank **]**:
 
-      1. Fügen Sie den **[!UICONTROL ** Host **]**-Parameter aus Experience Platform-Abfragen [!UICONTROL Anmeldeinformationen] in das Textfeld **[!UICONTROL ** Server **]** ein.
+      1. Fügen Sie den **[!UICONTROL ** Host **]**-Parameter aus den Experience Platform-[!UICONTROL  (]) in das Textfeld **[!UICONTROL ** Server **]** ein.
 
-      1. Fügen Sie den **[!UICONTROL ** Datenbank **]**-Parameter aus Experience Platform-Abfragen [!UICONTROL Anmeldeinformationen] in das Textfeld **[!UICONTROL ** Datenbank **]** ein.
+      1. Fügen Sie den **[!UICONTROL ** Datenbank **]**-Parameter aus den Experience Platform-[!UICONTROL  (]) in das Textfeld **[!UICONTROL ** Datenbank **]** ein.
 
          Fügen Sie `?FLATTEN` zum Parameter **[!UICONTROL ** Datenbank **]** hinzu, damit er sich beispielsweise liest wie `prod:cja?FLATTEN`. Weitere Informationen finden Sie unter [Reduzieren verschachtelter Datenstrukturen für die Verwendung mit BI-Tools von Drittanbietern](https://experienceleague.adobe.com/en/docs/experience-platform/query/key-concepts/flatten-nested-data).
 
@@ -141,7 +141,7 @@ Derzeit wird die [!DNL Customer Journey Analytics BI extension] nur für Power B
 
    Alle Dimensionen und Metriken, die mit einer oder mehreren ausgewählten Tabellen verknüpft sind, werden im rechten Bereich angezeigt und können in Ihren Visualisierungen verwendet werden.
 
-   Weitere Informationen sind unter [Verbinden von Power BI mit dem Abfrage-Service](https://experienceleague.adobe.com/en/docs/experience-platform/query/clients/power-bi) zu finden.
+   Weitere Informationen finden [ unter „Verbinden von Power BI mit ](https://experienceleague.adobe.com/en/docs/experience-platform/query/clients/power-bi) Service“. Siehe auch [Anwendungsfälle für BI-Erweiterungen](/help/use-cases/data-views/bi-extension-usecases.md) für ein detailliertes Beispiel.
 
 +++
 
@@ -165,9 +165,9 @@ Derzeit wird die [!DNL Customer Journey Analytics BI extension] nur für Power B
 
    1. Im Dialogfeld [!UICONTROL PostgresSQL]:
 
-      1. Fügen Sie den **[!UICONTROL ** Host **]**-Parameter aus Experience Platform-Abfragen [!UICONTROL Anmeldeinformationen] in das Textfeld **[!UICONTROL ** Server **]** ein.
+      1. Fügen Sie den **[!UICONTROL ** Host **]**-Parameter aus den Experience Platform[!UICONTROL Abfragen] in das Textfeld **[!UICONTROL ** Server **]** ein.
 
-      1. Fügen Sie den **[!UICONTROL ** Port **]** aus Experience Platform-Abfragen [!UICONTROL Anmeldeinformationen] in das Textfeld **[!UICONTROL ** Port **]** ein.
+      1. Fügen Sie den **[!UICONTROL ** Port **]** aus den Experience Platform-Abfragen [!UICONTROL Anmeldeinformationen] in das Textfeld **[!UICONTROL ** Port **]** ein.
 
       1. Fügen Sie den **[!UICONTROL ** Datenbank **]**-Parameter aus Experience Platform-Abfragen [!UICONTROL Anmeldeinformationen] in das Textfeld **[!UICONTROL ** Datenbank **]** ein.
 
@@ -187,13 +187,88 @@ Derzeit wird die [!DNL Customer Journey Analytics BI extension] nur für Power B
 
    Sie können jetzt mit den Daten aus den Datenansichtstabellen arbeiten, um Ihre Berichte und Visualisierungen zu erstellen.
 
-   Weitere Informationen erhalten Sie unter [Verbinden von Tableau mit dem Abfrage-Service](https://experienceleague.adobe.com/en/docs/experience-platform/query/clients/tableau).
+   Weitere Informationen finden [ unter „Verbinden von Tableau mit ](https://experienceleague.adobe.com/en/docs/experience-platform/query/clients/tableau) Service“. Siehe auch [Anwendungsfälle für BI-Erweiterungen](/help/use-cases/data-views/bi-extension-usecases.md) für ein detailliertes Beispiel.
+
++++
+
++++ Looker
+
+1. Nachschlagen der Details Ihrer PostgresSQL-Anmeldeinformationen in Adobe Experience Platform:
+
+   1. Wählen Sie **[!UICONTROL ** Abfragen **]** aus der linken Leiste (unter **[!UICONTROL ** DATEN-MANAGEMENT **]**) aus.
+
+   1. Wählen Sie **[!UICONTROL ** Anmeldeinformationen **]** aus der oberen Leiste aus.
+
+   1. Wählen Sie die `cja` für Ihre Sandbox aus der Liste der Datenbanken im Dropdown-Menü **[!UICONTROL Datenbank]** aus. Zum Beispiel `prod:cja`.
+
+   1. Verwenden Sie ![Kopieren](assets/Smock_Copy_18_N.svg), um alle Postgres-Anmeldedaten-Parameter ([!UICONTROL Host], [!UICONTROL Port], [!UICONTROL Datenbank], [!UICONTROL Benutzername] und andere) bei Bedarf in Looker zu kopieren.
+
+1. In Looker:
+
+   1. Wählen **[!UICONTROL Admin]** in der linken Leiste aus.
+   1. Wählen Sie **[!UICONTROL Verbindungen]** aus.
+   1. Wählen Sie **[!UICONTROL Verbindung hinzufügen]** aus.
+   1. Fügen **[!UICONTROL im Bildschirm „Datenbank mit Looker verbinden]** die entsprechenden Werte ein, wenn Sie Ihre neue Verbindung einrichten. Stellen Sie sicher **[!UICONTROL dass Sie „PostgreSQL 9.5+]**&quot; als Dialekt auswählen.
+   1. Wählen Sie **[!UICONTROL Test]** aus, um Ihre Verbindung zu testen.
+   1. Klicken Sie bei Erfolg auf **[!UICONTROL Aktualisieren]**, um Ihre Verbindung zu speichern.
+
+   Sie können jetzt mit den Daten aus den Datenansichtstabellen arbeiten, um Ihre Berichte und Visualisierungen zu erstellen.
+
+   Weitere Informationen finden [ unter „Verbinden von Looker ](https://experienceleague.adobe.com/en/docs/experience-platform/query/clients/looker) Query Service“. Siehe auch [Anwendungsfälle für BI-Erweiterungen](/help/use-cases/data-views/bi-extension-usecases.md) für ein detailliertes Beispiel.
+
++++
+
++++ Jupyter Notebook
+
+1. Nachschlagen der Details Ihrer PostgresSQL-Anmeldeinformationen in Adobe Experience Platform:
+
+   1. Wählen Sie **[!UICONTROL ** Abfragen **]** aus der linken Leiste (unter **[!UICONTROL ** DATEN-MANAGEMENT **]**) aus.
+
+   1. Wählen Sie **[!UICONTROL ** Anmeldeinformationen **]** aus der oberen Leiste aus.
+
+   1. Wählen Sie die `cja` für Ihre Sandbox aus der Liste der Datenbanken im Dropdown-Menü **[!UICONTROL Datenbank]** aus. Zum Beispiel `prod:cja`.
+
+   1. Verwenden Sie ![Kopieren](assets/Smock_Copy_18_N.svg), um alle Postgres-Anmeldedaten-Parameter ([!UICONTROL Host], [!UICONTROL Port], [!UICONTROL Database], [!UICONTROL Username] und andere) bei Bedarf in Jupyter Notebook zu kopieren.
+
+1. In Jupyter Notebook:
+
+   1. Stellen Sie sicher, dass Sie die erforderlichen Bibliotheken verwenden.
+   1. Verwenden Sie beim Einrichten und Ausführen der Verbindung die entsprechenden Werte.
+   1. Testen Sie die Verbindung, indem Sie eine entsprechende Abfrage ausführen.
+
+   Nach erfolgreicher Ausführung können Sie mit den Daten arbeiten, um Ihre Berichte und Visualisierungen zu erstellen.
+
+   Weitere Informationen finden [ unter „Verbinden von Jupyter-](https://experienceleague.adobe.com/en/docs/experience-platform/query/clients/jupyter-notebook) mit dem Abfrage-Service“. Siehe auch [Anwendungsfälle für BI-Erweiterungen](/help/use-cases/data-views/bi-extension-usecases.md) für ein detailliertes Beispiel.
+
++++
+
++++ RStudio
+
+1. Nachschlagen der Details Ihrer PostgresSQL-Anmeldeinformationen in Adobe Experience Platform:
+
+   1. Wählen Sie **[!UICONTROL ** Abfragen **]** aus der linken Leiste (unter **[!UICONTROL ** DATEN-MANAGEMENT **]**) aus.
+
+   1. Wählen Sie **[!UICONTROL ** Anmeldeinformationen **]** aus der oberen Leiste aus.
+
+   1. Wählen Sie die `cja` für Ihre Sandbox aus der Liste der Datenbanken im Dropdown-Menü **[!UICONTROL Datenbank]** aus. Zum Beispiel `prod:cja`.
+
+   1. Verwenden Sie ![Kopieren](assets/Smock_Copy_18_N.svg), um alle Postgres-Anmeldedaten-Parameter ([!UICONTROL Host], [!UICONTROL Port], [!UICONTROL Database], [!UICONTROL Username] und andere) bei Bedarf in Jupyter Notebook zu kopieren.
+
+1. In RStudio:
+
+   1. Stellen Sie sicher, dass Sie die erforderlichen Bibliotheken verwenden.
+   1. Verwenden Sie beim Einrichten und Ausführen der Verbindung die entsprechenden Werte.
+   1. Testen Sie die Verbindung, indem Sie eine entsprechende Abfrage ausführen.
+
+   Nach erfolgreicher Ausführung können Sie mit den Daten arbeiten, um Ihre Berichte und Visualisierungen zu erstellen.
+
+   Weitere Informationen finden [ unter „Verbinden von RStudio mit ](https://experienceleague.adobe.com/en/docs/experience-platform/query/clients/rstudio) Service“. Siehe auch [Anwendungsfälle für BI-Erweiterungen](/help/use-cases/data-views/bi-extension-usecases.md) für ein detailliertes Beispiel (bei dem stattdessen das RPostgres-Paket verwendet wird).
 
 +++
 
 Siehe [Verbinden von Clients mit dem Abfrage-Service](https://experienceleague.adobe.com/en/docs/experience-platform/query/clients/overview), um einen Überblick und weitere Informationen über die verschiedenen verfügbaren Tools zu erhalten.
 
-Siehe [Anwendungsfälle](/help/use-cases/data-views/bi-extension-usecases.md) über die Durchführung einer Reihe von Anwendungsfällen mit der Customer Journey Analytics BI-Erweiterung
+Siehe [Anwendungsfälle](/help/use-cases/data-views/bi-extension-usecases.md), wie Sie eine Reihe von Anwendungsfällen mit der Customer Journey Analytics BI-Erweiterung durchführen.
 
 ## Funktionalität
 
@@ -386,7 +461,7 @@ ORDER BY -metric1 DESC
 
 {style="table-layout:auto"}
 
-### Unterstützung der Dimension
+### Dimension-Funktionsunterstützung
 
 Diese Funktionen können für Dimensionen in der `WHERE`- oder `SELECT`-Klausel oder in bedingten Metriken verwendet werden.
 
