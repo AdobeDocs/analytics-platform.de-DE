@@ -7,10 +7,10 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 4aff664c-3cd9-4591-8122-6ebff10e4a76
-source-git-commit: b52f1bc824c9edd958699d57ccbd950bc36abe5c
+source-git-commit: cea253d3b1da080e6735989d59cc6eda44afc203
 workflow-type: tm+mt
-source-wordcount: '1856'
-ht-degree: 17%
+source-wordcount: '1911'
+ht-degree: 16%
 
 ---
 
@@ -148,13 +148,16 @@ Eine Datenansicht ist an eine Customer Journey Analytics ([) ](/help/connections
 >title="Erlebniserfassung und -definition"
 >abstract="Sie können die Einstellungen in der Adobe Content Analytics-Erweiterung in der Tag-Eigenschaft bearbeiten, die mit der ausgewählten Konfiguration verknüpft ist."
 
-
-
 <!-- markdownlint-enable MD034 -->
 
 In diesem Abschnitt können Sie auswählen, ob Erlebnisse in die mit Content Analytics erfassten Daten einbezogen werden sollen.  Ein Erlebnis ist der gesamte Text auf einer Web-Seite, der anhand der URL reproduzierbar ist, die der Benutzer verwendet hat, der diese Web-Seite ursprünglich besucht hat.
 
 Standardmäßig ist **[!UICONTROL Erlebnisse einschließen]** deaktiviert. Wenn diese Option aktiviert ist, müssen Sie festlegen, für welche URLs Erlebnisse eingeschlossen werden sollen.
+
+Erlebnisse sollten Sie nur dann einbeziehen, wenn Folgendes zutrifft:
+
+* Der Inhalt der Site wird nur von einer URL gesteuert.
+* Die Seiten auf der Website müssen unter Verwendung der Seiten-URL reproduzierbar sein.
 
 So schließen Sie Erlebnisse in eine neue oder nicht implementierte Konfiguration ein:
 
@@ -286,6 +289,7 @@ Wenn Sie eine Konfiguration erstellt oder bearbeitet haben, sind die folgenden A
    * **[!UICONTROL Adobe Experience Platform]**-Konfiguration:
       1. Die Erstellung von Schemas zur Modellierung von Content-Analytics-Ereignissen, Asset-Attributen und (falls konfiguriert) Erlebnisattributen.
       1. Die Erstellung von Datensätzen zur Erfassung von Content-Analytics-Ereignissen, Asset-Attributen und (falls konfiguriert) Erlebnisattributen.
+      1. Die Erstellung eines Datenflusses, der den Feature Service verwendet, um Inhaltsattribute aus Content Analytics-Ereignissen zu generieren und zu aktualisieren.
    * **[!UICONTROL Inhaltsanalyse]** Konfiguration:
       * Einrichtung eines Assembler-Prozesses für Funktionen basierend auf der Konfiguration.
    * **[!UICONTROL Customer Journey Analytics]**-Konfiguration:
