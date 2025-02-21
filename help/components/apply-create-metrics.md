@@ -4,9 +4,9 @@ title: Metriken
 feature: Metrics
 exl-id: 4edfb5d7-da20-4bd8-8041-387b291daf96
 role: User
-source-git-commit: 17d3e8ed5986348bb4ba50822dfd9bb43d5a7570
+source-git-commit: 84ab8434671ccbce12dce95e1164b9a25c7b8439
 workflow-type: tm+mt
-source-wordcount: '858'
+source-wordcount: '859'
 ht-degree: 8%
 
 ---
@@ -103,7 +103,7 @@ Erstellen einer berechneten Metrik für ein einzelnes Projekt:
 
    * [!UICONTROL **Multiplizieren**]: Erstellt eine neue Spalte, die die Werte der beiden ausgewählten Spalten multipliziert.
 
-   * [!UICONTROL **prozentuale Änderung**]: Erstellt eine neue Spalte, die die prozentuale Änderung der beiden ausgewählten Spalten anzeigt.
+   * [!UICONTROL **prozentuale Änderung**]: Erstellt eine neue Spalte, die die prozentuale Änderung zwischen den beiden ausgewählten Spalten anzeigt.
 
 [Berechnete Metriken: implementierungslose Metriken](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/components/calculated-metrics/calculated-metrics-implementationless-metrics.html?lang=de) (3:42)
 
