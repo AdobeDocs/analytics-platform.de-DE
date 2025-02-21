@@ -55,12 +55,10 @@ Stellen Sie vor der Konfiguration von Content Analytics sicher, dass die folgend
    * Sie haben ein klares Verständnis dafür, für welche (Art von) Assets Sie die Inhaltsinteraktionsanalyse und -einblicke erfassen möchten.
 
 
->>
-[!MORELIKETHIS]
->>
-* [Geführte Konfiguration](guided.md)
-* [Manuelle Konfiguration](manual.md)
-* [Zugriffskontrolle](/help/technotes/access-control.md)
+>[!MORELIKETHIS]
+>* [Geführte Konfiguration](guided.md)
+>* [Manuelle Konfiguration](manual.md)
+>* [Zugriffskontrolle](/help/technotes/access-control.md)
 >
 
 
