@@ -7,10 +7,10 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 2b2d1cc2-36da-4960-ab31-0a398d131ab8
-source-git-commit: ec0ea74df83bbd07b7e026d7b9d7114c7dc595ab
+source-git-commit: 20214cbebd9867a269c96f25f1a2c8b3bfa26a35
 workflow-type: tm+mt
-source-wordcount: '64'
-ht-degree: 0%
+source-wordcount: '125'
+ht-degree: 1%
 
 ---
 
@@ -23,7 +23,16 @@ ht-degree: 0%
 
 {{release-limited-testing}}
 
-*Und jetzt für etwas ganz anderes…*
+In diesem Artikel werden die manuellen Konfigurationsaktionen beschrieben, die Sie möglicherweise benötigen, um Änderungen an Ihrer Content Analytics-Implementierung vorzunehmen. Im Allgemeinen sollten Sie den [geführten Konfigurationsassistenten“ verwenden](guided.md) um Änderungen an Ihrer Implementierung vorzunehmen. Mit diesem Konfigurationsassistenten können jedoch nicht alle Änderungen vorgenommen werden.
+
+Die folgenden manuellen Konfigurationsaktionen sind verfügbar:
+
+## Veröffentlichen Sie
+
+Um eine Inhaltsanalysekonfiguration zu aktivieren, müssen Sie die zugehörige Tag-Eigenschaft veröffentlichen.
+
+
+## Ändern
 
 >[!MORELIKETHIS]
 >

@@ -7,10 +7,10 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 4aff664c-3cd9-4591-8122-6ebff10e4a76
-source-git-commit: ec0ea74df83bbd07b7e026d7b9d7114c7dc595ab
+source-git-commit: 82dacd2581450303b1b87d2a72f6f6ede987d367
 workflow-type: tm+mt
-source-wordcount: '1991'
-ht-degree: 19%
+source-wordcount: '2036'
+ht-degree: 18%
 
 ---
 
@@ -105,9 +105,14 @@ Jede Konfiguration erfordert einen eindeutigen Namen. Zum Beispiel `Example Cont
 >abstract="Wählen Sie eine vorhandene Datenansicht aus Customer Journey Analytics aus, mit der Ihre Inhaltsanalysedaten zusammengeführt werden sollen.<br/>"
 
 >[!CONTEXTUALHELP]
->id="aca_onboarding_dataview_change"
->title="Datenansicht auswählen"
+>id="aca_onboarding_dataview_change_content"
+>title="Neue Datenansicht"
 >abstract="Die Auswahl einer neuen Datenansicht führt zu einer Aktualisierung dieser Datenansicht, um Inhaltsanalysemetriken und -dimensionen einzuschließen. Bei Bedarf wird die zugehörige Verbindung auch aktualisiert, um Content Analytics-Datensätze einzuschließen. Die Verbindung und Datenansicht, die derzeit für Content Analytics konfiguriert sind, werden nicht geändert."
+
+>[!CONTEXTUALHELP]
+>id="aca_onboarding_dataview_change_title"
+>title="Neue Datenansicht"
+>abstract="Neue Datenansicht"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -144,12 +149,12 @@ Eine Datenansicht ist an eine Customer Journey Analytics ([) ](/help/connections
 >abstract="Erfassen von Erlebnissen in der Inhaltsanalyse"
 
 >[!CONTEXTUALHELP]
->id="aca_onboarding_experiences_url_header"
+>id="aca_onboarding_experiences_parameters_header"
 >title="Erlebniserfassung und -definition"
->abstract="Geben Sie URLs an, für die die folgenden Parameter gelten."
+>abstract="Geben Sie die Parameter an, die bestimmen, wie Inhalte auf Ihrer Website gerendert werden."
 
 >[!CONTEXTUALHELP]
->id="aca_onboarding_experiences_edit_button"
+>id="aca_onboarding_experiencecapture_edit_button"
 >title="Erlebniserfassung und -definition"
 >abstract="Sie können die Einstellungen in der Adobe Content Analytics-Erweiterung in der Tag-Eigenschaft bearbeiten, die mit der ausgewählten Konfiguration verknüpft ist."
 
@@ -194,7 +199,7 @@ So bearbeiten Sie vorhandene Erlebnisse oder schließen neue Erlebnisse in eine 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_tag_header"
 >title="Datenerfassung"
->abstract="Angeben einer Tag-Eigenschaft"
+>abstract="**Geben Sie eine Tag-Eigenschaft an**"
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_pages_excluded_boldheader"
@@ -228,7 +233,7 @@ So bearbeiten Sie vorhandene Erlebnisse oder schließen neue Erlebnisse in eine 
 
 <!-- markdownlint-enable MD034 -->
 
-#### Neue Konfiguration
+#### Neue Konfiguration {#new-configuration}
 
 In einer neuen Konfiguration müssen Sie definieren, welche Tag-Eigenschaft Sie verwenden möchten, oder eine neue Tag-Eigenschaft erstellen. Außerdem müssen Sie die Seiten und Assets definieren, die Sie mithilfe regulärer Ausdrücke ein- oder ausschließen möchten.
 
@@ -256,7 +261,7 @@ In einer neuen Konfiguration müssen Sie definieren, welche Tag-Eigenschaft Sie 
    * Geben Sie einen regulären Ausdruck für &quot;**[!UICONTROL &quot;]**. Beispiel: `(?!.*\b(store|help|admin)\b)`.
 
 
-#### Vorhandene Konfiguration
+#### Vorhandene Konfiguration {#existing-configuration}
 
 Für eine vorhandene Konfiguration können Sie die Tag-Eigenschaft nicht bearbeiten. Sie können jedoch die Seiten und Assets bearbeiten, die Sie ein- oder ausschließen möchten.
 
@@ -279,9 +284,19 @@ Nachdem Sie alle erforderlichen Details bereitgestellt haben, enthält eine Zusa
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="aca_onboarding_implementation_warning"
+>id="aca_onboarding_implementation_warning_content"
 >title="Onboarding-Implementierungswarnung"
 >abstract="Wenn Sie **[!UICONTROL Implementieren]** auswählen, konfigurieren Sie die Inhaltsanalyse basierend auf den Eingaben, die Sie in diesem Workflow bereitgestellt haben. Standardmäßig werden mehrere Einstellungen auf Grundlage dessen ausgewählt, was im Allgemeinen für Content Analytics nützlich ist. Als Datenverantwortlicher müssen Sie jedoch die Einstellungen der einzelnen Artefakte überprüfen, um zu bestätigen, dass die Einstellungen in Übereinstimmung mit Ihren Datenschutzrichtlinien, vertraglichen Rechten und Pflichten sowie den Einverständnisanforderungen nach geltendem Recht implementiert wurden.<br/><br/>Beachten Sie, dass Daten erst dann erfasst werden, wenn die mit dieser Konfiguration verknüpfte Tag-Bibliothek manuell veröffentlicht wird.<br/><br/>Um Bild- und Textattribute abzuleiten, ruft Adobe die Attribute wie folgt ab:<ol><li>Die URL, die zum Zeitpunkt des Site-Besuchs des Benutzers gemäß den von Ihnen konfigurierten Datenerfassungseinstellungen erfasst wurde, und</li><li>Die URL, unter der das Bild gehostet wird.</li></ol>Bilder, die auf Websites von Drittanbietern gehostet werden, dürfen nicht mit Tags versehen werden."
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="aca_onboarding_implementation_warning_title"
+>title="Bestätigung der Implementierung"
+>abstract="Bestätigung der Implementierung"
+
+<!-- markdownlint-enable MD034 -->
+
 
 <!-- markdownlint-enable MD034 -->
 
@@ -307,6 +322,11 @@ Wenn Sie eine Konfiguration erstellt oder bearbeitet haben, sind die folgenden A
       * Workspace wird eine Berichtsvorlage für Content Analytics hinzugefügt.
 * **[!UICONTROL Speichern]**: Änderungen an einer implementierten Konfiguration werden gespeichert und die Implementierung wird aktualisiert.
 * **[!UICONTROL Beenden]**. Beendet die geführte Konfiguration. Alle Änderungen an einer implementierten Konfiguration werden verworfen.
+
+
+## Veröffentlichen Sie {#publish}
+
+Um Ihre Content Analytics-Konfiguration zu aktivieren, müssen Sie [manuell](manual.md) die Tag-Eigenschaft veröffentlichen, die nach der Auswahl von **[!UICONTROL Implementieren]** als Teil des Assistenten für geführte Konfigurationen erstellt wird.
 
 >[!MORELIKETHIS]
 >
