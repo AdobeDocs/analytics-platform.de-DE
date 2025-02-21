@@ -3,10 +3,10 @@ title: Aktuelle Versionshinweise zu Customer Journey Analytics
 description: Anzeigen der neuesten Versionshinweise zu Customer Journey Analytics
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: e6f86bf3dee81d70300cb26a1593d0e40966a63b
+source-git-commit: f61e3c1563187a4852734fcca5ffbd21b70849f0
 workflow-type: tm+mt
-source-wordcount: '255'
-ht-degree: 67%
+source-wordcount: '254'
+ht-degree: 59%
 
 ---
 
@@ -21,7 +21,7 @@ Diese Versionshinweise beziehen sich auf den Veröffentlichungszeitraum vom Sams
 | Funktion | Beschreibung | [Rollout-Beginn](releases.md) | [Allgemeine Verfügbarkeit](releases.md) |
 | ----------- | ---------- | ------- | ---- |
 | **BI-Erweiterung - Erweiterte Unterstützung** | Die Customer Journey Analytics BI-Erweiterung [unterstützt jetzt Looker, Jupyter Notebook und R Studio](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-usecases/data-views/bi-extension-usecases). |   | Samstag, 24. Januar 2025 |
-| **Mediensammlung: Adobe Source Connector-Aktualisierungen für neues Berichterstellungs-XDM** | Der Analytics Source Connector ordnet Streaming-Mediendaten in Adobe Analytics automatisch den Feldern zu, die vom Web SDK verwendet werden. Zuvor wurden Daten sowohl den alten als auch den neuen Speicherorten zugeordnet, aber in Zukunft wird nur der neue Speicherort verwendet. [Weitere Informationen](https://experienceleague.adobe.com/en/docs/analytics/implementation/aep-edge/xdm-var-mapping) |  | 30. Januar 2025 |
+| **Mediensammlung: Adobe Source Connector-Aktualisierungen für neues Berichterstellungs-XDM** | Analytics Source Connector ordnet automatisch Streaming-Mediendaten in Adobe Analytics denselben Feldern zu, die von Web SDK verwendet werden. Zuvor wurden Daten sowohl den alten als auch den neuen Speicherorten zugeordnet, aber in Zukunft wird nur der neue Speicherort verwendet. [Weitere Informationen](https://experienceleague.adobe.com/en/docs/analytics/implementation/aep-edge/xdm-var-mapping) |  | 30. Januar 2025 |
 
 
 ## Fehlerbehebungen in Customer Journey Analytics
