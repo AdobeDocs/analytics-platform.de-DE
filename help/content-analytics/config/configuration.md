@@ -7,10 +7,10 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 3ea46223-c7d0-4b1f-bc84-4f35494f13a0
-source-git-commit: cea253d3b1da080e6735989d59cc6eda44afc203
+source-git-commit: ec0ea74df83bbd07b7e026d7b9d7114c7dc595ab
 workflow-type: tm+mt
-source-wordcount: '345'
-ht-degree: 22%
+source-wordcount: '373'
+ht-degree: 20%
 
 ---
 
@@ -25,6 +25,8 @@ ht-degree: 22%
 
 
 Um die Inhaltsanalyse für Ihr Unternehmen zu konfigurieren, verwenden Sie die Inhaltsanalyse [geführte Konfiguration](guided.md). Der Konfigurationsassistent führt Sie durch alle Schritte, die zum Einrichten der Voraussetzungen für eine automatische Konfiguration von Content Analytics erforderlich sind.
+
+Nach erfolgreicher Implementierung können Sie einige Änderungen mithilfe des Assistenten für geführte Konfigurationen vornehmen. Darüber hinaus [ jedoch möglicherweise ](manual.md)manuelle Änderungen“ erforderlich.
 
 ## Voraussetzungen
 
@@ -56,6 +58,8 @@ Stellen Sie vor der Konfiguration von Content Analytics sicher, dass die folgend
 >>
 [!MORELIKETHIS]
 >>
+* [Geführte Konfiguration](guided.md)
+* [Manuelle Konfiguration](manual.md)
 * [Zugriffskontrolle](/help/technotes/access-control.md)
 >
 
