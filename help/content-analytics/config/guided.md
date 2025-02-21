@@ -7,9 +7,9 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 4aff664c-3cd9-4591-8122-6ebff10e4a76
-source-git-commit: cea253d3b1da080e6735989d59cc6eda44afc203
+source-git-commit: ec0ea74df83bbd07b7e026d7b9d7114c7dc595ab
 workflow-type: tm+mt
-source-wordcount: '1911'
+source-wordcount: '1991'
 ht-degree: 16%
 
 ---
@@ -103,6 +103,11 @@ Jede Konfiguration erfordert einen eindeutigen Namen. Zum Beispiel `Example Cont
 >id="aca_onboarding_dataview_header_alt"
 >title="Datenansicht"
 >abstract="Wählen Sie eine vorhandene Datenansicht aus Customer Journey Analytics aus, mit der Ihre Inhaltsanalysedaten zusammengeführt werden sollen.<br/>"
+
+>[!CONTEXTUALHELP]
+>id="aca_onboarding_dataview_change"
+>title="Datenansicht auswählen"
+>abstract="Die Auswahl einer neuen Datenansicht führt zu einer Aktualisierung dieser Datenansicht, um Inhaltsanalysemetriken und -dimensionen einzuschließen. Bei Bedarf wird die zugehörige Verbindung auch aktualisiert, um Content Analytics-Datensätze einzuschließen. Die Verbindung und Datenansicht, die derzeit für Content Analytics konfiguriert sind, werden nicht geändert."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -276,7 +281,7 @@ Nachdem Sie alle erforderlichen Details bereitgestellt haben, enthält eine Zusa
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_implementation_warning"
 >title="Onboarding-Implementierungswarnung"
->abstract="Dadurch wird Content Analytics teilweise basierend auf den Eingaben konfiguriert, die Sie in diesem Workflow bereitgestellt haben. Verschiedene andere Einstellungen werden automatisch ausgewählt, basierend auf dem, was im Allgemeinen für Inhaltsanalysen nützlich ist. Sie sollten die Einstellungen der einzelnen Artefakte überprüfen, um sicherzustellen, dass sie Ihren Anforderungen und Richtlinien entsprechen. <br/><br/>Beachten Sie, dass keine Daten erfasst werden, bis die mit dieser Konfiguration verknüpfte Tag-Bibliothek manuell veröffentlicht wird.<br/><br/>Beachten Sie außerdem, dass Adobe zum Ableiten von Bild- und Textattributen diese Attribute mithilfe der URL abruft, die zum Zeitpunkt des Benutzerbesuchs gemäß den von Ihnen implementierten Datenerfassungseinstellungen erfasst wurde."
+>abstract="Wenn Sie **[!UICONTROL Implementieren]** auswählen, konfigurieren Sie die Inhaltsanalyse basierend auf den Eingaben, die Sie in diesem Workflow bereitgestellt haben. Standardmäßig werden mehrere Einstellungen auf Grundlage dessen ausgewählt, was im Allgemeinen für Content Analytics nützlich ist. Als Datenverantwortlicher müssen Sie jedoch die Einstellungen der einzelnen Artefakte überprüfen, um zu bestätigen, dass die Einstellungen in Übereinstimmung mit Ihren Datenschutzrichtlinien, vertraglichen Rechten und Pflichten sowie den Einverständnisanforderungen nach geltendem Recht implementiert wurden.<br/><br/>Beachten Sie, dass keine Daten erfasst werden, bis die mit dieser Konfiguration verknüpfte Tag-Bibliothek manuell veröffentlicht wird.<br/><br/>Um Bild- und Textattribute abzuleiten, ruft Adobe die Attribute wie folgt ab:<ol><li>Die URL, die zum Zeitpunkt des Site-Besuchs des Benutzers gemäß den von Ihnen konfigurierten Datenerfassungseinstellungen erfasst wurde, und</li><li>Die URL, unter der das Bild gehostet wird.</li></ol>Bilder, die auf Websites von Drittanbietern gehostet werden, dürfen nicht mit Tags versehen werden."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -285,27 +290,25 @@ Wenn Sie eine Konfiguration erstellt oder bearbeitet haben, sind die folgenden A
 
 * **[!UICONTROL Verwerfen]**: Alle Änderungen, die im Rahmen der Erstellung einer neuen Konfiguration oder der Bearbeitung einer vorhandenen Konfiguration vorgenommen wurden, werden verworfen.
 * **[!UICONTROL Für später speichern]**: Änderungen an einer neuen Konfiguration oder einer vorhandenen, noch nicht implementierten Konfiguration werden gespeichert. Sie können die Konfiguration zu einem späteren Zeitpunkt erneut aufrufen, um weitere Änderungen vorzunehmen, oder die Konfiguration implementieren.
-* **[!UICONTROL Implementieren]**: Änderungen an einer neuen Konfiguration oder einer vorhandenen, noch nicht implementierten Konfiguration werden gespeichert und implementiert. Die Implementierung besteht aus:
+* **[!UICONTROL Implementieren]**: Einstellungen für oder Änderungen an einer neuen Konfiguration oder einer vorhandenen, noch nicht implementierten Konfiguration werden gespeichert und implementiert. Die Implementierung besteht aus:
    * **[!UICONTROL Adobe Experience Platform]**-Konfiguration:
-      1. Die Erstellung von Schemas zur Modellierung von Content-Analytics-Ereignissen, Asset-Attributen und (falls konfiguriert) Erlebnisattributen.
-      1. Die Erstellung von Datensätzen zur Erfassung von Content-Analytics-Ereignissen, Asset-Attributen und (falls konfiguriert) Erlebnisattributen.
-      1. Die Erstellung eines Datenflusses, der den Feature Service verwendet, um Inhaltsattribute aus Content Analytics-Ereignissen zu generieren und zu aktualisieren.
-   * **[!UICONTROL Inhaltsanalyse]** Konfiguration:
-      * Einrichtung eines Assembler-Prozesses für Funktionen basierend auf der Konfiguration.
-   * **[!UICONTROL Customer Journey Analytics]**-Konfiguration:
-      1. Die ausgewählte Datenansicht wird aktualisiert und enthält jetzt die Dimension und Metriken der Inhaltsanalyse.
-      1. Die mit der ausgewählten Datenansicht verknüpfte Verbindung wird geändert, um Ereignis- und Attributdatensätze aus der Inhaltsanalyse einzuschließen.
-      1. Berichtsvorlagen für Content Analytics werden zu Workspace hinzugefügt.
+      * Die Erstellung von Schemas zur Modellierung von Content-Analytics-Ereignissen, Asset-Attributen und (falls konfiguriert) Erlebnisattributen.
+      * Die Erstellung von Datensätzen zur Erfassung von Content-Analytics-Ereignissen, Asset-Attributen und (falls konfiguriert) Erlebnisattributen.
+      * Die Erstellung eines Datenflusses, der den Feature Service verwendet, um Inhaltsattribute aus Content Analytics-Ereignissen zu generieren und zu aktualisieren.
    * **[!UICONTROL Datenerfassung]** Konfiguration:
-      1. Die neue oder vorhandene Tag-Eigenschaft ist so konfiguriert, dass sie die Datenerfassung in der Inhaltsanalyse unterstützt. Diese Konfiguration beinhaltet die Einbindung der Adobe Content Analytics-Erweiterung für Tags.
-      1. Ein Datenstrom wird für Content Analytics-Ereignisse erstellt.
-      1. Die Adobe Content Analytics-Erweiterung ist so konfiguriert, dass Inhaltsanalyseereignisse an den Datenstrom für Inhaltsanalysen gesendet werden.
-      1. Wenn die Web-SDK nicht für die Tags-Eigenschaft konfiguriert ist, wird eine neue Web-SDK-Konfiguration erstellt, um nur Content Analytics-Ereignisse zu senden.
-      1. Wenn die Web-SDK für diese Tag-Eigenschaft konfiguriert ist, werden an der vorhandenen Web-SDK-Konfiguration keine Änderungen vorgenommen.
+      * Die neue oder vorhandene Tag-Eigenschaft ist so konfiguriert, dass sie die Datenerfassung in der Inhaltsanalyse unterstützt. Diese Konfiguration beinhaltet die Einbindung der Adobe Content Analytics-Erweiterung für Tags.
+      * Ein Datenstrom wird für Content Analytics-Ereignisse erstellt.
+      * Die Adobe Content Analytics-Erweiterung ist so konfiguriert, dass Inhaltsanalyseereignisse an den Datenstrom für Inhaltsanalysen gesendet werden.
+      * Wenn die Web-SDK nicht für die Tags-Eigenschaft konfiguriert ist, wird eine neue Web-SDK-Konfiguration erstellt, um nur Content Analytics-Ereignisse zu senden.
+      * Wenn die Web-SDK für diese Tag-Eigenschaft konfiguriert ist, werden an der vorhandenen Web-SDK-Konfiguration keine Änderungen vorgenommen.
+   * **[!UICONTROL Customer Journey Analytics]**-Konfiguration:
+      * Die ausgewählte Datenansicht wird aktualisiert und enthält jetzt die Dimension und Metriken der Inhaltsanalyse.
+      * Die mit der ausgewählten Datenansicht verknüpfte Verbindung wird geändert, um Ereignis- und Attributdatensätze aus der Inhaltsanalyse einzuschließen.
+      * Workspace wird eine Berichtsvorlage für Content Analytics hinzugefügt.
 * **[!UICONTROL Speichern]**: Änderungen an einer implementierten Konfiguration werden gespeichert und die Implementierung wird aktualisiert.
 * **[!UICONTROL Beenden]**. Beendet die geführte Konfiguration. Alle Änderungen an einer implementierten Konfiguration werden verworfen.
 
 >[!MORELIKETHIS]
 >
->[Manuelle Konfiguration der Inhaltsanalyse](manual.md)
+>[Manuelle Konfiguration](manual.md)
 >
