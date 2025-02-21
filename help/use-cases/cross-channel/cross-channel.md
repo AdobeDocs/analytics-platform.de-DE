@@ -8,7 +8,7 @@ role: User
 source-git-commit: 668f17531b4b8a01acffdbb0edef07092859d100
 workflow-type: tm+mt
 source-wordcount: '582'
-ht-degree: 51%
+ht-degree: 68%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 51%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-additional-datasets"
 >title="Hinzufügen zusätzlicher Datensätze zu Ihrer Verbindung"
->abstract="Nachdem Sie Daten zu einem Datensatz in Adobe Experience Platform hinzugefügt haben, können Sie diesen Datensatz zu Ihrer Verbindung in Customer Journey Analytics hinzufügen. Stellen Sie sicher, dass beim Hinzufügen von Daten aus anderen Kanälen diese dem Schema entsprechen, das Ihr Unternehmen verwendet.<br><br>Jeder Datensatz, den Sie hinzufügen, erfordert einen enormen Arbeitsaufwand, insbesondere um sicherzustellen, dass die eindeutige Kennung für jedes Ereignis vorhanden ist, und um sicherzustellen, dass die übergreifende Datenstruktur dem benutzerdefinierten Schema Ihres Unternehmens entspricht. Die Einrichtung dieses Workflows kann die Koordinierung über mehrere Monate hinweg über viele Teams innerhalb Ihrer Organisation hinweg erfordern."
+>abstract="Nachdem Sie Daten zu einem Datensatz in Adobe Experience Platform hinzugefügt haben, können Sie diesen Datensatz zu Ihrer Verbindung in Customer Journey Analytics hinzufügen. Stellen Sie sicher, dass Daten, die aus anderen Kanälen hinzugefügt werden, dem Schema entsprechen, das Ihre Organisation verwendet.<br><br>Jeder Datensatz, den Sie hinzufügen, erfordert einen enormen Arbeitsaufwand, insbesondere um sicherzustellen, dass die eindeutige Kennung für jedes Ereignis vorhanden ist, und um sicherzustellen, dass die übergreifende Datenstruktur dem benutzerdefinierten Schema Ihrer Organisation entspricht. Die Einrichtung dieses Workflows kann die Koordination vieler Teams innerhalb Ihrer Organisation über mehrere Monate hinweg erfordern."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -32,7 +32,7 @@ Die Cross-Channel-Analyse ermöglicht eine einzige konsolidierte Ansicht des Kun
 1. [Erstellen Sie Schemata](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=de) für aufzunehmende Daten.
 1. [Erstellen Sie Datensätze](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/create-datasets-and-ingest-data.html?lang=de) für aufzunehmende Daten.
 1. [Daten in Experience Platform aufnehmen](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/understanding-data-ingestion.html?lang=de):
-   1. Ereignisbasierte Daten (![) von ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Events_18_N.svg) Website oder Mobile App über den Edge Network- oder Analytics-Quell-Connector.
+   1. Ereignisbasierte Daten (![) von ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Events_18_N.svg) Website oder Mobile App über den Edge Network oder Analytics Source Connector.
    2. Profildaten ![Profil](https://spectrum.adobe.com/static/icons/workflow_18/Smock_User_18_N.svg) (z. B. aus einem CRM-System, einer Callcenter-Anwendung oder einem Treueprogramm).
    3. Suchdaten ![Suche](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) (z. B. Produktname, Kategorie aus einem Produktinformationssystem).
 
@@ -40,7 +40,7 @@ Die Cross-Channel-Analyse ermöglicht eine einzige konsolidierte Ansicht des Kun
 1. Führen Sie eine benutzerdefinierte Datenvorbereitung durch, um sicherzustellen, dass ein gemeinsamer Schlüssel aus Zeitreihendaten in Customer Journey Analytics aufgenommen werden kann.
 1. Weisen Sie Suchdaten eine primäre ID zu, die mit einem Feld in den Ereignisdaten verknüpft werden kann. Zählt bei der Lizenzierung als Zeilen.
 1. Legen Sie dieselbe primäre ID für Profildaten als primäre ID der Ereignisdaten fest.
-1. [Verbindung herstellen](../../connections/overview.md) um die entsprechenden Datensätze von Experience Platform auf Customer Journey Analytics aufzunehmen.
+1. [Verbindung herstellen](../../connections/overview.md) um die relevanten Datensätze von Experience Platform in Customer Journey Analytics aufzunehmen.
 1. [Erstellen Sie eine Datenansicht](/help/data-views/create-dataview.md) für die Verbindung, um die spezifischen Dimensionen und Metriken auszuwählen, die in die Ansicht aufgenommen werden sollen. Die Einstellungen für Attribution und Zuordnung werden auch in der Datenansicht konfiguriert. Diese Einstellungen werden zur Berichtszeit berechnet.
 1. [Erstellen eines Projekts](/help/analysis-workspace/home.md) zum Konfigurieren von Dashboards und Berichten in Analysis Workspace.
 

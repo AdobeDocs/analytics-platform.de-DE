@@ -1,5 +1,5 @@
 ---
-title: Erstellen eines Schemas zum Customer Journey Analytics
+title: Erstellen eines Schemas für Customer Journey Analytics
 description: Erfahren Sie mehr über den empfohlenen Pfad beim Upgrade von Adobe Analytics auf Customer Journey Analytics
 role: Admin
 solution: Customer Journey Analytics
@@ -10,24 +10,24 @@ exl-id: f76d098d-d223-40e4-be81-d28e7581396b
 source-git-commit: bb87226ee4b9acc433031f41997d403d49f48db3
 workflow-type: tm+mt
 source-wordcount: '300'
-ht-degree: 20%
+ht-degree: 37%
 
 ---
 
-# Erstellen eines Datenstroms zur Verwendung mit Customer Journey Analytics {#upgrade-create-datastream}
+# Erstellen eines Datenstroms für Customer Journey Analytics {#upgrade-create-datastream}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-datastream-create"
 >title="Erstellen eines Datenstroms in Adobe Experience Platform"
->abstract="Ein Datenstrom ist ein Zwischenspeicherort, an den Ihre Daten an alle konfigurierten Services weitergeleitet werden. Erstellen Sie diesen Speicherort in Adobe Experience Platform.<br><br>Die erste Erstellung eines Datenstroms in der Platform-Oberfläche dauert nur wenige Minuten."
+>abstract="Ein Datenstrom ist ein Zwischenspeicherort, über den Ihre Daten an alle konfigurierten Services weitergegeben werden. Erstellen Sie diesen Speicherort in Adobe Experience Platform.<br><br>Die Ersterstellung eines Datenstroms in der Platform-Oberfläche dauert nur wenige Minuten."
 
 <!-- markdownlint-enable MD034 -->
 
 >[!NOTE]
 > 
->Befolgen Sie die Schritte auf dieser Seite erst, nachdem Sie alle vorherigen Upgrade-Schritte abgeschlossen haben. Sie können die [empfohlenen Upgrade-Schritte](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) ausführen oder die Upgrade-Schritte ausführen, die für Ihr Unternehmen mit dem [Fragebogen für das Upgrade von Adobe Analytics auf Customer Journey Analytics dynamisch generiert wurden](https://gigazelle.github.io/cja-ttv/).
+>Befolgen Sie die Schritte auf dieser Seite erst, nachdem Sie alle vorherigen Upgrade-Schritte abgeschlossen haben. Sie können die [empfohlenen Upgrade-Schritte](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) ausführen oder die Upgrade-Schritte ausführen, die für Ihr Unternehmen mit dem Fragebogen [Upgrade von Adobe Analytics auf Customer Journey Analytics dynamisch generiert ](https://gigazelle.github.io/cja-ttv/).
 >
 >Nachdem Sie die Schritte auf dieser Seite abgeschlossen haben, folgen Sie den empfohlenen Upgrade-Schritten oder den dynamisch generierten Upgrade-Schritten.
 
@@ -39,7 +39,7 @@ Im vorliegenden Beispiel möchten Sie den Datenstrom so konfigurieren, dass die 
 
 >[!NOTE]
 >
->Die folgenden Schritte sind nur für Adobe Analytics-Implementierungen mit AppMeasurement oder der Analytics-Erweiterung (Tags) erforderlich.
+>Die folgenden Schritte sind nur für Adobe Analytics-Implementierungen erforderlich, die AppMeasurement oder die Analytics-Erweiterung (Tags) verwenden.
 >
 >Wenn Ihre Adobe Analytics-Implementierung die Web-SDK oder die Web-SDK-Erweiterung verwendet, ist der Datenstrom bereits in Ihrer Adobe Analytics-Umgebung vorhanden.
 

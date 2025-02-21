@@ -10,7 +10,7 @@ exl-id: 4aff664c-3cd9-4591-8122-6ebff10e4a76
 source-git-commit: ec0ea74df83bbd07b7e026d7b9d7114c7dc595ab
 workflow-type: tm+mt
 source-wordcount: '1991'
-ht-degree: 16%
+ht-degree: 19%
 
 ---
 
@@ -219,12 +219,12 @@ So bearbeiten Sie vorhandene Erlebnisse oder schließen neue Erlebnisse in eine 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_experiences_edit_button"
 >title="Datenerfassung"
->abstract="Sie können die Seiteneinstellungen in der Adobe Content Analytics-Erweiterung in der Tag-Eigenschaft bearbeiten, die mit der ausgewählten Konfiguration verknüpft ist."
+>abstract="Sie können die Einstellungen für Seiten in der Adobe-Erweiterung zur Inhaltsanalyse in der Tag-Eigenschaft bearbeiten, die mit der ausgewählten Konfiguration verknüpft ist."
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_assets_edit_button"
 >title="Datenerfassung"
->abstract="Sie können die Einstellungen für Assets in der Adobe Content Analytics-Erweiterung in der Tag-Eigenschaft bearbeiten, die mit der ausgewählten Konfiguration verknüpft ist."
+>abstract="Sie können die Einstellungen für Assets in der Adobe-Erweiterung zur Inhaltsanalyse in der Tag-Eigenschaft bearbeiten, die mit der ausgewählten Konfiguration verknüpft ist."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -281,7 +281,7 @@ Nachdem Sie alle erforderlichen Details bereitgestellt haben, enthält eine Zusa
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_implementation_warning"
 >title="Onboarding-Implementierungswarnung"
->abstract="Wenn Sie **[!UICONTROL Implementieren]** auswählen, konfigurieren Sie die Inhaltsanalyse basierend auf den Eingaben, die Sie in diesem Workflow bereitgestellt haben. Standardmäßig werden mehrere Einstellungen auf Grundlage dessen ausgewählt, was im Allgemeinen für Content Analytics nützlich ist. Als Datenverantwortlicher müssen Sie jedoch die Einstellungen der einzelnen Artefakte überprüfen, um zu bestätigen, dass die Einstellungen in Übereinstimmung mit Ihren Datenschutzrichtlinien, vertraglichen Rechten und Pflichten sowie den Einverständnisanforderungen nach geltendem Recht implementiert wurden.<br/><br/>Beachten Sie, dass keine Daten erfasst werden, bis die mit dieser Konfiguration verknüpfte Tag-Bibliothek manuell veröffentlicht wird.<br/><br/>Um Bild- und Textattribute abzuleiten, ruft Adobe die Attribute wie folgt ab:<ol><li>Die URL, die zum Zeitpunkt des Site-Besuchs des Benutzers gemäß den von Ihnen konfigurierten Datenerfassungseinstellungen erfasst wurde, und</li><li>Die URL, unter der das Bild gehostet wird.</li></ol>Bilder, die auf Websites von Drittanbietern gehostet werden, dürfen nicht mit Tags versehen werden."
+>abstract="Wenn Sie **[!UICONTROL Implementieren]** auswählen, konfigurieren Sie die Inhaltsanalyse basierend auf den Eingaben, die Sie in diesem Workflow bereitgestellt haben. Standardmäßig werden mehrere Einstellungen auf Grundlage dessen ausgewählt, was im Allgemeinen für Content Analytics nützlich ist. Als Datenverantwortlicher müssen Sie jedoch die Einstellungen der einzelnen Artefakte überprüfen, um zu bestätigen, dass die Einstellungen in Übereinstimmung mit Ihren Datenschutzrichtlinien, vertraglichen Rechten und Pflichten sowie den Einverständnisanforderungen nach geltendem Recht implementiert wurden.<br/><br/>Beachten Sie, dass Daten erst dann erfasst werden, wenn die mit dieser Konfiguration verknüpfte Tag-Bibliothek manuell veröffentlicht wird.<br/><br/>Um Bild- und Textattribute abzuleiten, ruft Adobe die Attribute wie folgt ab:<ol><li>Die URL, die zum Zeitpunkt des Site-Besuchs des Benutzers gemäß den von Ihnen konfigurierten Datenerfassungseinstellungen erfasst wurde, und</li><li>Die URL, unter der das Bild gehostet wird.</li></ol>Bilder, die auf Websites von Drittanbietern gehostet werden, dürfen nicht mit Tags versehen werden."
 
 <!-- markdownlint-enable MD034 -->
 

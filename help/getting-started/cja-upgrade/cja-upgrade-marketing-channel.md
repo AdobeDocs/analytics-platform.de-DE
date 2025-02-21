@@ -10,7 +10,7 @@ exl-id: 2a74da97-61cb-4c98-949b-3fc428839d70
 source-git-commit: 3b1012a302200192fd31fd6a9ed94f96323eb595
 workflow-type: tm+mt
 source-wordcount: '368'
-ht-degree: 4%
+ht-degree: 19%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 4%
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-marketing-channel"
->title="Erstellen eines abgeleiteten Felds für einen Marketing-Kanal"
+>title="Erstellen eines von einem Marketing-Kanal abgeleiteten Felds"
 >abstract="Abgeleitete Felder werden in einer Datenansicht erstellt.<br><br>Die Verwendung einer standardmäßigen Einrichtung für Marketing-Kanäle dauert nur einige Minuten. Das Erstellen einer hochgradig benutzerdefinierten Einrichtung für Marketing-Kanäle kann mehrere Stunden dauern."
 
 <!-- markdownlint-enable MD034 -->

@@ -1,5 +1,5 @@
 ---
-title: Schema für Customer Journey Analytics auswählen
+title: Auswählen Ihres Schemas für Customer Journey Analytics
 description: Erfahren Sie mehr über die verfügbaren Optionen bei der Auswahl eines Schemas für Customer Journey Analytics und die Vor- und Nachteile jedes einzelnen Schemas
 role: Admin
 solution: Customer Journey Analytics
@@ -10,18 +10,18 @@ exl-id: a2b90ab2-2fcb-4bf4-a862-2f0675dc2fe2
 source-git-commit: 971600fcc7d8a5aac4ad39812ab4a7af69d45ccc
 workflow-type: tm+mt
 source-wordcount: '493'
-ht-degree: 38%
+ht-degree: 62%
 
 ---
 
-# Schema für Customer Journey Analytics auswählen {#choose-schema}
+# Auswählen Ihres Schemas für Customer Journey Analytics {#choose-schema}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-schema-tailored"
->title="Benutzerdefiniertes Schema verwenden"
->abstract="(Empfohlen) Durch die Anpassung Ihres Schemas kann Ihr Unternehmen nur verfolgen, was Sie benötigen, und den Overhead vermeiden, der mit unübersichtlichen und nicht benötigten Feldern verbunden ist. Diese Option umfasst Feldergruppen, die von der Web-SDK hinzugefügt wurden, und benutzerdefinierte Feldergruppen für Ihr Unternehmen."
+>title="Verwenden eines benutzerdefinierten Schemas"
+>abstract="(Empfohlen) Durch das Anpassen Ihres Schemas kann Ihre Organisation ausschließlich das verfolgen, was Sie benötigen, und den Aufwand vermeiden, der mit unübersichtlichen und nicht benötigten Feldern verbunden ist. Diese Option umfasst Feldergruppen, die vom Web-SDK hinzugefügt wurden, und benutzerdefinierte Feldergruppen für Ihre Organisation."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -29,8 +29,8 @@ ht-degree: 38%
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-schema-default"
->title="Standardschema verwenden"
->abstract="(Nicht empfohlen) Das Adobe Analytics-Schema enthält mehr als 1.000 Felder, was zu einer Überlastung und Komplexität des Schemas führen kann. Ihr Unternehmen wäre gezwungen, weiterhin das Konzept von Props und eVars einzuhalten, das ein Altkonzept ist, das in Customer Journey Analytics nicht verwendet wird. Die Integration mit anderen Adobe Experience Platform-Services ist schwieriger."
+>title="Verwenden des Standardschemas"
+>abstract="(Nicht empfohlen) Das Adobe Analytics-Schema enthält mehr als 1.000 Felder, was zu einem überladenen und komplexen Schema führen kann. Ihre Organisation wäre gezwungen, weiterhin das Konzept mit Eigenschaften und eVars einzuhalten. Dabei handelt es sich um ein veraltetes Konzept, das in Customer Journey Analytics nicht verwendet wird. Die Integration mit anderen Adobe Experience Platform-Services ist schwieriger."
 
 <!-- markdownlint-enable MD034 -->
 

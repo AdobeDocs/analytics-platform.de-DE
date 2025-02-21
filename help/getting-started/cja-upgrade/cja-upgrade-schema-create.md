@@ -10,7 +10,7 @@ exl-id: 902e5890-f970-4f1a-b091-9c3e51a987db
 source-git-commit: 3b1012a302200192fd31fd6a9ed94f96323eb595
 workflow-type: tm+mt
 source-wordcount: '1335'
-ht-degree: 37%
+ht-degree: 51%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 37%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-schema-create"
 >title="Erstellen des gewünschten benutzerdefinierten Schemas in Adobe Experience Platform"
->abstract="Verwenden Sie die Adobe Experience Platform-Benutzeroberfläche, um ein Schema zu erstellen, sodass Adobe das richtige Format zum Speichern Ihrer Daten kennt.<br><br>Dieser Schritt beinhaltet die tatsächliche Erstellung des Schemas, die von Ihrer Organisation vereinbart wurde. Die geschätzte Zeit bis zur Erstellung Ihres Schemas in der Adobe Experience Platform-Benutzeroberfläche beträgt ca. eine Woche, je nach der Anzahl der zu erstellenden Dimensionen und Metriken."
+>abstract="Verwenden Sie die Adobe Experience Platform-Benutzeroberfläche, um ein Schema zu erstellen, sodass Adobe das richtige Format zum Speichern Ihrer Daten kennt.<br><br>Dieser Schritt beinhaltet die tatsächliche Erstellung des Schemas, das von Ihrer Organisation vereinbart wurde. Die geschätzte Zeit zur Erstellung Ihres Schemas in der Adobe Experience Platform-Benutzeroberfläche beträgt je nach der Anzahl der zu erstellenden Dimensionen und Metriken ca. eine Woche."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -29,8 +29,8 @@ ht-degree: 37%
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-schema-create-default-aa"
->title="Erstellen eines Schemas mithilfe der Adobe Analytics ExperienceEvent-Feldergruppe"
->abstract="Verwenden Sie die Feldergruppe &quot;Adobe Analytics ExperienceEvent“, um in Adobe Experience Platform ein Schema zu erstellen, das alle von Adobe Analytics verwendeten Felder enthält.<br><br>Das Erstellen eines Schemas basierend auf der Adobe Analytics ExperienceEvent-Feldergruppe ist einfach und dauert nur einige Minuten."
+>title="Erstellen eines Schemas mithilfe der Feldergruppe „Adobe Analytics ExperienceEvent“"
+>abstract="Verwenden Sie die Feldergruppe „Adobe Analytics ExperienceEvent“, um in Adobe Experience Platform ein Schema zu erstellen, das alle von Adobe Analytics verwendeten Felder enthält.<br><br>Das Erstellen eines Schemas basierend auf der Feldergruppe „Adobe Analytics ExperienceEvent“ ist einfach und dauert nur einige Minuten."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -38,8 +38,8 @@ ht-degree: 37%
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-schema-profile"
->title="Aktivieren des Schemas für das Profil"
->abstract="Aktivieren Sie das Profil in Ihrem Schema zur Verwendung in der Adobe Real-Time CDP. Dieser Schritt wird angezeigt, weil Sie die Integration mit Adobe Real-Time CDP ausgewählt haben.<br><br>Da Sie bei diesem Schritt auf ein einzelnes Feld klicken müssen, dauert dieser Schritt nur einige Minuten."
+>title="Aktivieren Ihres Schemas für das Profil"
+>abstract="Aktivieren Sie das Profil in Ihrem Schema zur Verwendung in der Adobe Real-Time CDP. Dieser Schritt wird angezeigt, weil Sie die Integration mit Adobe Real-Time CDP ausgewählt haben.<br><br>Da Sie bei diesem Schritt auf ein einziges Feld klicken müssen, dauert dieser Schritt nur einige Minuten."
 
 <!-- markdownlint-enable MD034 -->
 

@@ -1,5 +1,5 @@
 ---
-title: Beurteilen, wie lange Sie Adobe Analytics nach dem Upgrade auf Customer Journey Analytics benötigen
+title: Beurteilen, wie lange Sie Adobe Analytics nach dem Upgrade auf Customer Journey Analytics noch benötigen
 description: Erfahren Sie, wie Sie auswerten können, wie lange Sie Adobe Analytics nach dem Upgrade auf Customer Journey Analytics benötigen
 role: Admin
 solution: Customer Journey Analytics
@@ -10,18 +10,18 @@ exl-id: 7142ef84-66a6-49eb-938b-b67c9b65bf93
 source-git-commit: 9d4d2419715308240d6e6c22751d8859eb34d474
 workflow-type: tm+mt
 source-wordcount: '927'
-ht-degree: 0%
+ht-degree: 19%
 
 ---
 
-# Beurteilen, wie lange Sie Adobe Analytics nach dem Upgrade auf Customer Journey Analytics benötigen {#evaluate-aa-needs}
+# Beurteilen, wie lange Sie Adobe Analytics nach dem Upgrade auf Customer Journey Analytics noch benötigen {#evaluate-aa-needs}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-fully-move"
 >title="Vollständiger Wechsel zu Customer Journey Analytics"
->abstract="(Empfohlen) Customer Journey Analytics zielt darauf ab, das primäre Analytics-Tool für Ihr Unternehmen zu sein. Ihr Unternehmen benötigt jedoch möglicherweise weiterhin Adobe Analytics, wenn es sich in hohem Maße auf Funktionen verlässt, die nur dem Tool dienen, und diese Workflows nicht geändert werden können."
+>abstract="(Empfohlen) Customer Journey Analytics sollte das primäre Analytics-Tool für Ihre Organisation sein. Ihre Organisation ist jedoch möglicherweise weiterhin auf Adobe Analytics angewiesen, wenn sie sich in hohem Maße auf Funktionen verlässt, die nur dieses Tool bietet, und diese Workflows nicht geändert werden können."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -29,8 +29,8 @@ ht-degree: 0%
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-keep-aa"
->title="Beide Analytics-Produkte beibehalten"
->abstract="(Nicht empfohlen) Wenn Sie diese Option auswählen, enthält Ihr Vertrag mit Adobe sowohl Adobe Analytics als auch Customer Journey Analytics, was für Ihr Unternehmen im Laufe der Zeit teurer werden kann."
+>title="Beibehalten beider Analytics-Produkte"
+>abstract="(Nicht empfohlen) Wenn Sie sich für diese Option entscheiden, enthält Ihr Vertrag mit Adobe sowohl Adobe Analytics als auch Customer Journey Analytics, was für Ihre Organisation im Laufe der Zeit kostspieliger werden kann."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -52,14 +52,14 @@ Bei der Entscheidung, ob und wann Ihr Unternehmen Adobe Analytics deaktivieren s
 | Verlaufsdaten aus Adobe Analytics aufbewahren | Adobe empfiehlt, Ihre Adobe Analytics-Umgebung für einen bestimmten Zeitraum mit dem Analytics-Quell-Connector zu konfigurieren, nachdem Ihre neue Customer Journey Analytics-Umgebung ausgeführt und Daten erfasst wurde. Dies ist die beste Möglichkeit, historische Adobe Analytics-Daten in Customer Journey Analytics zu importieren.<p>Nachdem Sie mit Ihrer neuen Web-SDK-Implementierung genügend historische Daten in Customer Journey Analytics erfasst haben, können Sie den Analytics-Quell-Connector vollständig entfernen. Tun Sie dies, wenn Sie sich ausschließlich auf die historischen Daten in verlassen können, die Sie mit der neuen Customer Journey Analytics Web SDK-Implementierung erfasst haben.</p><p>**Hinweis:** Adobe empfiehlt eine neue Implementierung von Web SDK für Ihre Customer Journey Analytics-Umgebung in Verbindung mit dem Analytics-Quell-Connector für Verlaufsdaten. [Weitere Informationen](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md)</p> |
 | Verwenden von Daten-Feeds oder anderen Adobe Analytics-Funktionen | Einige wenige Funktionen sind in Customer Journey Analytics noch nicht vollständig verfügbar. Wenn Sie Zugriff auf diese Funktionen benötigen, kann es erforderlich sein, Adobe Analytics zusammen mit Customer Journey Analytics zu verwenden, bis diese Funktionen verfügbar sind. <p>Zu den Funktionen, die in Customer Journey Analytics nicht vollständig verfügbar sind, gehören Daten-Feeds und Beitragsanalyse. Eine vollständige Liste der Funktionen, die noch nicht verfügbar sind, finden Sie unter [Customer Journey Analytics-Funktionsunterstützung](/help/getting-started/aa-vs-cja/cja-aa.md).</p> |
 
-## Prozess und Zeitrahmen der Deaktivierung von Adobe Analytics {#disable-adobe-analytics}
+## Prozess und Timeline der Deaktivierung von Adobe Analytics {#disable-adobe-analytics}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-disable-appmeasurement-third-pary"
->title="Deaktivieren eines Drittanbieter-Tag-Management-Systems"
->abstract="Wenn die Web-SDK-Daten voll funktionsfähig sind, wenden Sie sich an Ihren Tag-Administrator, um die AppMeasurement-Bibliothek aus dem Tag-Management-System eines Drittanbieters zu entfernen.<br><br>Die geschätzte Dauer für diesen Schritt hängt von der Einfachheit ab, AppMeasurement über Ihr Tag-Management-Produkt zu deaktivieren, sowie vom Veröffentlichungszyklus, den Ihr Unternehmen zur Bereitstellung und Verwaltung von Tag-Code verwendet."
+>title="Deaktivieren des Tag-Management-Systems eines Drittanbieters"
+>abstract="Wenn die Web-SDK-Daten voll funktionsfähig sind, wenden Sie sich an Ihre bzw. Ihren Tag-Admin, um die AppMeasurement-Bibliothek aus dem Tag-Management-System eines Drittanbieters zu entfernen.<br><br>Die geschätzte Dauer für diesen Schritt hängt davon ab, wie einfach sich AppMeasurement über Ihr Tag-Management-Produkt deaktivieren lässt, sowie vom Veröffentlichungszyklus, den Ihre Organisation zur Bereitstellung und Verwaltung von Tag-Code verwendet."
 
 <!-- markdownlint-enable MD034 -->
 

@@ -1,5 +1,5 @@
 ---
-title: Verwenden Sie den Analytics-Quell-Connector ausschließlich für das Upgrade auf Customer Journey Analytics
+title: Ausschließliches Verwenden des Analytics-Quell-Connectors zum Upgrade auf Customer Journey Analytics
 description: Erfahren Sie, wie Sie den Analytics-Quell-Connector erstellen und Felder zuordnen
 role: Admin
 solution: Customer Journey Analytics
@@ -10,18 +10,18 @@ exl-id: 34e5f97b-c936-4de6-acc9-5774bc908655
 source-git-commit: 971600fcc7d8a5aac4ad39812ab4a7af69d45ccc
 workflow-type: tm+mt
 source-wordcount: '414'
-ht-degree: 23%
+ht-degree: 39%
 
 ---
 
-# Verwenden Sie den Analytics-Quell-Connector ausschließlich für das Upgrade auf Customer Journey Analytics {#use-source-connector-exclusively}
+# Ausschließliches Verwenden des Analytics-Quell-Connectors zum Upgrade auf Customer Journey Analytics {#use-source-connector-exclusively}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-source-connector-exclusively"
->title="Nur Analytics-Quell-Connector verwenden"
->abstract="(Nicht empfohlen) Sie können nicht mit anderen Adobe Experience Platform-Services integrieren oder Adobe Analytics mit dem Analytics-Quell-Connector verlassen. Das Verbinden von Daten aus anderen Quellen erfordert wahrscheinlich das Zusammenfügen. Erfüllen Sie alle diese Anforderungen im Fragebogen, um diese Option auszuwählen."
+>title="Alleiniges Verwenden des Analytics-Quell-Connectors"
+>abstract="(Nicht empfohlen) Weder ist eine Integration mit anderen Adobe Experience Platform-Services noch ein Wechsel weg von Adobe Analytics mit dem Analytics-Quell-Connector möglich. Um Daten aus anderen Quellen zu verbinden, müssen diese wahrscheinlich zusammengefügt werden. Erfüllen Sie alle diese Anforderungen im Fragebogen, um diese Option auszuwählen."
 
 <!-- markdownlint-enable MD034 -->
 

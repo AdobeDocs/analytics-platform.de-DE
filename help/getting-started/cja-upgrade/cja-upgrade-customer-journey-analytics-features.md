@@ -9,7 +9,7 @@ hidefromtoc: true
 source-git-commit: f4440148d26e81938d029d4a077cd787c868f1be
 workflow-type: tm+mt
 source-wordcount: '284'
-ht-degree: 27%
+ht-degree: 54%
 
 ---
 
@@ -19,8 +19,8 @@ ht-degree: 27%
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-tie-data"
->title="Daten aus unterschiedlichen Quellen miteinander verknüpfen"
->abstract="(Empfohlen) Die Möglichkeit, Analysedaten aus anderen Kanälen zu kombinieren, ist der Hauptanwendungsfall für Customer Journey Analytics."
+>title="Verknüpfen von Daten aus unterschiedlichen Quellen"
+>abstract="(Empfohlen) Customer Journey Analytics dient vor allem dazu, Analysedaten aus anderen Kanälen zu kombinieren."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -28,8 +28,8 @@ ht-degree: 27%
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-stitch-datasets"
->title="Treffer aus mehreren Datensätzen zusammenfügen"
->abstract="Wenn einer Ihrer Datensätze keine primäre Kennung (z. B. eine Experience Cloud-ID) aufweist, können Sie diese Daten dennoch mithilfe einer anderen Dimension zusammenfügen, z. B. Anmeldename oder E-Mail-Adresse."
+>title="Zusammenfügen von Treffern aus mehreren Datensätzen"
+>abstract="Wenn einer Ihrer Datensätze keine primäre Kennung (z. B. eine Experience Cloud-ID) aufweist, können Sie diese Daten dennoch mithilfe einer anderen Dimension, z. B. Anmeldename oder E-Mail-Adresse, zusammenfügen."
 
 <!-- markdownlint-enable MD034 -->
 

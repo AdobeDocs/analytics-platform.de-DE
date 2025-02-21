@@ -10,7 +10,7 @@ exl-id: fad62c04-b435-466a-ab3c-cf2d174ddbfb
 source-git-commit: 971600fcc7d8a5aac4ad39812ab4a7af69d45ccc
 workflow-type: tm+mt
 source-wordcount: '627'
-ht-degree: 3%
+ht-degree: 20%
 
 ---
 
@@ -21,23 +21,23 @@ ht-degree: 3%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-source-connector-create-schema"
 >title="Erstellen eines Schemas für den Analytics-Quell-Connector"
->abstract="Dieses Schema ist eine Kombination der Adobe Analytics ExperienceEvent-Feldergruppe mit allen Feldergruppen, aus denen das benutzerdefinierte Schema Ihres Unternehmens besteht. Damit können Sie die vom Analytics-Quell-Connector verwendeten Felder dem Schema Ihres Unternehmens zuordnen. Dies wird nur für Verlaufsdaten verwendet.<br><br>Die Erstellung dieses Schemas ist zwar technischer Natur, kann aber in Stunden abgeschlossen werden, möglicherweise schneller, wenn Sie genau wissen, aus welchen Feldergruppen das benutzerdefinierte Schema Ihres Unternehmens besteht."
+>abstract="Dieses Schema ist eine Kombination der Adobe Analytics Experience-Ereignisfeldergruppe mit allen Feldergruppen, aus denen das benutzerdefinierte Schema Ihrer Organisation besteht. Damit können Sie die vom Analytics-Quell-Connector verwendeten Felder dem Schema Ihrer Organisation zuordnen. Dies wird nur für historische Daten genutzt.<br><br>Die Erstellung dieses Schemas ist zwar technischer Natur, kann aber in Stunden abgeschlossen werden, möglicherweise auch schneller, wenn Sie genau wissen, aus welchen Feldergruppen das benutzerdefinierte Schema Ihrer Organisation besteht."
 
 <!-- markdownlint-enable MD034 -->
 
 >[!NOTE]
 > 
->Befolgen Sie die Schritte auf dieser Seite erst, nachdem Sie alle vorherigen Upgrade-Schritte abgeschlossen haben. Sie können die [empfohlenen Upgrade-Schritte](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) ausführen oder die Upgrade-Schritte ausführen, die für Ihr Unternehmen mit dem [Fragebogen für das Upgrade von Adobe Analytics auf Customer Journey Analytics dynamisch generiert wurden](https://gigazelle.github.io/cja-ttv/).
+>Befolgen Sie die Schritte auf dieser Seite erst, nachdem Sie alle vorherigen Upgrade-Schritte abgeschlossen haben. Sie können die [empfohlenen Upgrade-Schritte](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) ausführen oder die Upgrade-Schritte ausführen, die für Ihr Unternehmen mit dem Fragebogen [Upgrade von Adobe Analytics auf Customer Journey Analytics dynamisch generiert ](https://gigazelle.github.io/cja-ttv/).
 >
 >Nachdem Sie die Schritte auf dieser Seite abgeschlossen haben, folgen Sie den empfohlenen Upgrade-Schritten oder den dynamisch generierten Upgrade-Schritten.
 
-## Verstehen, wie der Analytics-Quell-Connector Verlaufsdaten in Customer Journey Analytics importieren kann
+## Erfahren Sie, wie der Analytics-Quell-Connector historische Daten in Customer Journey Analytics importieren kann
 
 Sie können den Analytics-Quell-Connector verwenden, um Daten von Adobe Analytics Report Suites in Adobe Experience Platform zu importieren. Diese Daten können dann als Verlaufsdaten in Customer Journey Analytics verwendet werden.
 
-Bei diesem Prozess wird davon ausgegangen, dass Sie [ein benutzerdefiniertes Schema erstellen, das mit Ihrer Customer Journey Analytics Web SDK-Implementierung verwendet werden kann](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md) da Sie ein optimiertes Schema benötigen, das auf die Anforderungen Ihres Unternehmens und die von Ihnen verwendeten Platform-Programme zugeschnitten ist.
+Bei diesem Prozess wird davon ausgegangen, dass Sie [ein benutzerdefiniertes Schema zur Verwendung mit Ihrer Customer Journey Analytics Web SDK-Implementierung erstellen](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md), da Sie ein optimiertes Schema wünschen, das auf die Anforderungen Ihres Unternehmens und die von Ihnen verwendeten spezifischen Platform-Programme zugeschnitten ist.
 
-Um den Analytics-Quell-Connector zum Übertragen historischer Daten in Customer Journey Analytics zu verwenden, ist Folgendes erforderlich:
+Um den Analytics-Quell-Connector zu verwenden, um historische Daten in Customer Journey Analytics zu importieren, ist Folgendes erforderlich:
 
 1. Erstellen Sie ein benutzerdefiniertes Schema für den Analytics-Quell-Connector, wie unten beschrieben.
 

@@ -10,7 +10,7 @@ exl-id: 156df830-541d-4c92-9c49-98f346e040a7
 source-git-commit: bb87226ee4b9acc433031f41997d403d49f48db3
 workflow-type: tm+mt
 source-wordcount: '371'
-ht-degree: 20%
+ht-degree: 35%
 
 ---
 
@@ -21,21 +21,21 @@ ht-degree: 20%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-tag-property"
 >title="Erstellen einer Tag-Eigenschaft in der Adobe Experience Platform-Datenerfassung"
->abstract="Die Verwendung von Tags ist der typische Standard für die Datenerfassung. Erstellen Sie ein Tag in der Adobe Experience Platform-Benutzeroberfläche, damit Sie Datenerfassungsvariablen jederzeit aktualisieren können.<br><br>Die Erstellung einer Tag-Eigenschaft kann mit mehreren Klicks und nur wenigen Minuten abgeschlossen werden."
+>abstract="Tags zu verwenden, ist typischerweise der Standard für die Datenerfassung. Erstellen Sie ein Tag in der Adobe Experience Platform-Benutzeroberfläche, damit Sie Datenerfassungsvariablen jederzeit aktualisieren können.<br><br>Die Erstellung einer Tag-Eigenschaft kann mit mehreren Klicks und innerhalb weniger Minuten abgeschlossen werden."
 
 <!-- markdownlint-enable MD034 -->
 
 >[!NOTE]
 > 
->Befolgen Sie die Schritte auf dieser Seite erst, nachdem Sie alle vorherigen Upgrade-Schritte abgeschlossen haben. Sie können die [empfohlenen Upgrade-Schritte](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) ausführen oder die Upgrade-Schritte ausführen, die für Ihr Unternehmen mit dem [Fragebogen für das Upgrade von Adobe Analytics auf Customer Journey Analytics dynamisch generiert wurden](https://gigazelle.github.io/cja-ttv/).
+>Befolgen Sie die Schritte auf dieser Seite erst, nachdem Sie alle vorherigen Upgrade-Schritte abgeschlossen haben. Sie können die [empfohlenen Upgrade-Schritte](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) ausführen oder die Upgrade-Schritte ausführen, die für Ihr Unternehmen mit dem Fragebogen [Upgrade von Adobe Analytics auf Customer Journey Analytics dynamisch generiert ](https://gigazelle.github.io/cja-ttv/).
 >
 >Nachdem Sie die Schritte auf dieser Seite abgeschlossen haben, folgen Sie den empfohlenen Upgrade-Schritten oder den dynamisch generierten Upgrade-Schritten.
 
 Sie können die Tags-Funktion in Adobe Experience Platform verwenden, um Code zum Erfassen von Daten auf Ihrer Site zu implementieren. Mit dieser Tag-Management-Lösung können Sie Code zusammen mit anderen Tagging-Anforderungen bereitstellen. Tags ermöglichen die nahtlose Integration mit Adobe Experience Platform über die Adobe Experience Platform Web SDK-Erweiterung.
 
-Die folgenden Informationen beschreiben, wie Sie ein Tag für Ihre Eigenschaft erstellen. Weitere Informationen finden Sie unter [Konfigurieren der Tag-Erweiterung „Web SDK](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration) in der Experience Platform-Dokumentation. Der Web-SDK enthält nativ den [!UICONTROL Adobe Experience Cloud ID]Service, sodass Sie die ID-Service-Erweiterung nicht zu Ihrem Tag hinzufügen müssen.
+Die folgenden Informationen beschreiben, wie Sie ein Tag für Ihre Eigenschaft erstellen. Weitere Informationen finden Sie unter [Konfigurieren der Tag-Erweiterung „Web SDK](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration) in der Dokumentation zu Experience Platform. Der Web-SDK enthält nativ den [!UICONTROL Adobe Experience Cloud ID]Service, sodass Sie die ID-Service-Erweiterung nicht zu Ihrem Tag hinzufügen müssen.
 
-Eine Eigenschaft ist im Wesentlichen ein Container, den Sie bei der Bereitstellung von Tags auf Ihrer Site mit Erweiterungen, Regeln, Datenelementen und Bibliotheken füllen. Viele Benutzer erstellen eine Eigenschaft für jede Website (oder Gruppe eng verwandter Sites), auf der sie denselben Satz von Tags bereitstellen möchten. Weitere Informationen zu Eigenschaften finden Sie unter [Eigenschaften](https://experienceleague.adobe.com/en/docs/experience-platform/tags/admin/companies-and-properties) in der Dokumentation zum Experience Platform von Datenerfassungen.
+Eine Eigenschaft ist im Wesentlichen ein Container, den Sie bei der Bereitstellung von Tags auf Ihrer Site mit Erweiterungen, Regeln, Datenelementen und Bibliotheken füllen. Viele Benutzer erstellen eine Eigenschaft für jede Website (oder Gruppe eng verwandter Sites), auf der sie denselben Satz von Tags bereitstellen möchten. Weitere Informationen zu Eigenschaften finden Sie unter [Eigenschaften](https://experienceleague.adobe.com/en/docs/experience-platform/tags/admin/companies-and-properties) in der Dokumentation zur Datenerfassung in Experience Platform.
 
 So erstellen Sie ein Tag für Ihre Eigenschaft:
 

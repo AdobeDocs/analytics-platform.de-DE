@@ -10,18 +10,18 @@ exl-id: c0513e4c-51fb-4b4c-8450-8e6bf7dda4e7
 source-git-commit: 3b1012a302200192fd31fd6a9ed94f96323eb595
 workflow-type: tm+mt
 source-wordcount: '218'
-ht-degree: 0%
+ht-degree: 26%
 
 ---
 
-# Überprüfen, ob Daten an Customer Journey Analytics fließen {#validate-data}
+# Sicherstellen eines Datenflusses an Customer Journey Analytics {#validate-data}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-data-validate"
->title="Überprüfen, ob Daten fließen"
->abstract="Verwenden Sie die Verbindungsdetails, um zu überprüfen, ob Daten in Customer Journey Analytics fließen.<br><br>Wenn alles richtig und fehlerfrei durchgeführt wurde, kann dieser Schritt in weniger als einem Tag durchgeführt werden. Wenn es mehrere Datenerfassungsprobleme gibt, kann die Fehlerbehebung erheblich länger dauern."
+>title="Sicherstellen eines Datenflusses"
+>abstract="Verwenden Sie die Verbindungsdetails, um zu überprüfen, ob Daten in Customer Journey Analytics fließen.<br><br>Wenn alles richtig und fehlerfrei durchgeführt wurde, kann dieser Schritt in weniger als einem Tag durchgeführt werden. Wenn es mehrere Datenerfassungsprobleme gibt, kann die Fehlerbehebung deutlich länger dauern."
 
 <!-- markdownlint-enable MD034 -->
 

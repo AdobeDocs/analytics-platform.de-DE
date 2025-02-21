@@ -10,7 +10,7 @@ exl-id: bc6c7568-8bd2-4ee1-ab1b-9fa1f6138811
 source-git-commit: bb87226ee4b9acc433031f41997d403d49f48db3
 workflow-type: tm+mt
 source-wordcount: '1697'
-ht-degree: 31%
+ht-degree: 35%
 
 ---
 
@@ -21,13 +21,13 @@ ht-degree: 31%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-tag-xdm"
 >title="Hinzufügen von XDM-Datenerfassungslogik zum Tag"
->abstract="Wenn das Lader-Tag auf Ihrer Site installiert ist, können Sie Regeln und Datenelemente hinzufügen, um ein XDM-Objekt zu füllen, das an Adobe gesendet werden soll. Adobe empfiehlt, ein Lösungsentwurfsdokument zu verwalten, um zu verfolgen, wie Ihre Tags konfiguriert sind.<br><br>Dieser Schritt ist sehr aufwändig, da er die Einrichtung der gesamten Analytics-Logik für Ihre Eigenschaft umfasst. Rechnen Sie damit, einen Monat oder länger damit zu verbringen, die richtigen Tag-Regeln festzulegen, sie zu testen und auf Ihrer Site bereitzustellen."
+>abstract="Wenn das Loader-Tag auf Ihrer Site installiert ist, können Sie Regeln und Datenelemente hinzufügen, um ein XDM-Objekt aufzufüllen, das an Adobe gesendet werden soll. Adobe empfiehlt ein sogenanntes Solution Design Document, um nachzuverfolgen, wie Ihre Tags konfiguriert sind.<br><br>Dieser Schritt ist sehr aufwendig, da dabei die gesamte Analytics-Logik für die Eigenschaft aufgebaut wird. Voraussichtlich benötigen Sie mindestens einen Monat, um die richtigen Tag-Regeln festzulegen, sie zu testen und auf Ihrer Site bereitzustellen."
 
 <!-- markdownlint-enable MD034 -->
 
 >[!NOTE]
 > 
->Befolgen Sie die Schritte auf dieser Seite erst, nachdem Sie alle vorherigen Upgrade-Schritte abgeschlossen haben. Sie können die [empfohlenen Upgrade-Schritte](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) ausführen oder die Upgrade-Schritte ausführen, die für Ihr Unternehmen mit dem [Fragebogen für das Upgrade von Adobe Analytics auf Customer Journey Analytics dynamisch generiert wurden](https://gigazelle.github.io/cja-ttv/).
+>Befolgen Sie die Schritte auf dieser Seite erst, nachdem Sie alle vorherigen Upgrade-Schritte abgeschlossen haben. Sie können die [empfohlenen Upgrade-Schritte](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) ausführen oder die Upgrade-Schritte ausführen, die für Ihr Unternehmen mit dem Fragebogen [Upgrade von Adobe Analytics auf Customer Journey Analytics dynamisch generiert ](https://gigazelle.github.io/cja-ttv/).
 >
 >Nachdem Sie die Schritte auf dieser Seite abgeschlossen haben, folgen Sie den empfohlenen Upgrade-Schritten oder den dynamisch generierten Upgrade-Schritten.
 
@@ -39,7 +39,7 @@ Datenelemente sind die Bausteine Ihres Datenwörterbuchs (oder Ihrer Data Map). 
 
 In den folgenden Abschnitten werden empfohlene Datenelemente und andere gängige Datenelemente beschrieben, die Sie konfigurieren können.
 
-Es gibt verschiedene Arten von Datenelementen. Zwei häufig verwendete Datenelemente, die Sie konfigurieren können, sind: ein Datenelement, das den Seitennamen erfasst, den Personen auf Ihrer Site anzeigen, und ein weiteres, das die Experience Cloud-ID jeder Person erfasst, die Ihre Site besucht.
+Es gibt verschiedene Arten von Datenelementen. Zwei häufig verwendete Datenelemente, die Sie konfigurieren können, sind: eines, das den Seitennamen erfasst, den Personen auf Ihrer Site anzeigen, und ein anderes, das die Experience Cloud-ID jeder Person erfasst, die Ihre Site besucht.
 
 Nachdem Sie diese beiden Datenelemente konfiguriert haben, können Sie zusätzliche Datenelemente für die spezifischen Daten konfigurieren, die Sie erfassen möchten.
 
@@ -101,13 +101,13 @@ So erstellen Sie ein ECID-Datenelement:
 
 1. Wählen Sie das neu erstellte Tag aus der Liste der [!UICONTROL Tag-Eigenschaften] aus, um es zu öffnen.
 
-1. (Bedingt) Installieren Sie die Experience Cloud-ID-Service-Erweiterung, falls sie noch nicht installiert ist:
+1. (Bedingt) Installieren Sie die Experience Cloud ID Service-Erweiterung, falls sie noch nicht installiert ist:
 
    1. Wählen Sie **[!UICONTROL Erweiterungen]** in der linken Leiste aus.
 
-   1. Die **[!UICONTROL Installiert]** ist standardmäßig ausgewählt. Wenn die Kachel **[!UICONTROL Experience Cloud-ID-]** Dienst“ aufgeführt ist, fahren Sie mit Schritt 5 fort.
+   1. Die **[!UICONTROL Installiert]** ist standardmäßig ausgewählt. Wenn die Kachel **[!UICONTROL Experience Cloud ID Service]** aufgeführt ist, fahren Sie mit Schritt 5 fort.
 
-   1. Wenn die Kachel **[!UICONTROL Experience Cloud-ID]** Service nicht aufgeführt ist, wählen Sie die Registerkarte **[!UICONTROL Katalog]** aus.
+   1. Wenn die Kachel **[!UICONTROL Experience Cloud ID Service]** nicht aufgeführt ist, wählen Sie die Registerkarte **[!UICONTROL Katalog]** aus.
 
    1. Suchen Sie im Suchfeld nach **[!UICONTROL Experience Cloud ID Service]** und wählen Sie dann die Kachel aus, wenn sie angezeigt wird
 
@@ -121,7 +121,7 @@ So erstellen Sie ein ECID-Datenelement:
 
    * **[!UICONTROL Name]**: Der Name Ihres Datenelements. Zum Beispiel `ECID`.
 
-   * **[!UICONTROL Erweiterung]**: Wählen Sie **[!UICONTROL Experience Cloud-ID-]** aus der Liste aus.
+   * **[!UICONTROL Erweiterung]**: Wählen Sie **[!UICONTROL Experience Cloud ID Service]** aus der Liste aus.
 
    * **[!UICONTROL Datenelementtyp]**: Wählen Sie **[!UICONTROL ECID]** aus der Liste aus.
 

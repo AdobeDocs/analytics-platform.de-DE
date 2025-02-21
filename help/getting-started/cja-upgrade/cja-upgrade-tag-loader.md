@@ -10,7 +10,7 @@ exl-id: 471ecd60-6e1e-4889-93bd-c654b35d40dc
 source-git-commit: bb87226ee4b9acc433031f41997d403d49f48db3
 workflow-type: tm+mt
 source-wordcount: '362'
-ht-degree: 28%
+ht-degree: 49%
 
 ---
 
@@ -20,20 +20,20 @@ ht-degree: 28%
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-tag-loader"
->title="Implementieren des Lader-Tags auf Ihrer Site"
->abstract="Arbeiten Sie mit Ihrem Website-Entwicklungs-Team zusammen, um das Lader-Tag auf jeder Seite Ihrer Site zu installieren.<br><br>Die Ausführungszeit für diese Aufgabe hängt stark von der Reaktionszeit des Engineering-Teams ab, mit dem Sie den Code bereitstellen. Einige Organisationen mit sehr anpassungsfähigen Engineering-Teams können diesen Schritt in Tagen abschließen, während Entwicklungsteams mit einem umfangreichen Aufgabenrückstand möglicherweise einen Monat oder länger dauern können."
+>title="Implementieren des Loader-Tags auf Ihrer Site"
+>abstract="Arbeiten Sie mit Ihrem Website-Entwicklungs-Team zusammen, um das Loader-Tag auf jeder Seite Ihrer Site zu installieren.<br><br>Wie lange diese Aufgabe dauert, hängt stark von der Reaktionszeit des Engineering-Teams ab, mit dem Sie den Code bereitstellen. Einige Organisationen mit äußerst anpassungsfähigen Engineering-Teams können diesen Schritt in Tagen abschließen, während Engineering-Teams mit großem Aufgabenrückstand möglicherweise einen Monat oder länger brauchen."
 
 <!-- markdownlint-enable MD034 -->
 
 >[!NOTE]
 > 
->Befolgen Sie die Schritte auf dieser Seite erst, nachdem Sie alle vorherigen Upgrade-Schritte abgeschlossen haben. Sie können die [empfohlenen Upgrade-Schritte](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) ausführen oder die Upgrade-Schritte ausführen, die für Ihr Unternehmen mit dem [Fragebogen für das Upgrade von Adobe Analytics auf Customer Journey Analytics dynamisch generiert wurden](https://gigazelle.github.io/cja-ttv/).
+>Befolgen Sie die Schritte auf dieser Seite erst, nachdem Sie alle vorherigen Upgrade-Schritte abgeschlossen haben. Sie können die [empfohlenen Upgrade-Schritte](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) ausführen oder die Upgrade-Schritte ausführen, die für Ihr Unternehmen mit dem Fragebogen [Upgrade von Adobe Analytics auf Customer Journey Analytics dynamisch generiert ](https://gigazelle.github.io/cja-ttv/).
 >
 >Nachdem Sie die Schritte auf dieser Seite abgeschlossen haben, folgen Sie den empfohlenen Upgrade-Schritten oder den dynamisch generierten Upgrade-Schritten.
 
 Sie müssen Ihr Tag auf der Website installieren, die Sie verfolgen möchten, was bedeutet, dass Sie Code in das Kopfzeilen-Tag der Vorlage Ihrer Website einfügen müssen.
 
-Im folgenden Prozess wird beschrieben, wie Sie den Code abrufen, der auf Ihr -Tag verweist. Weitere Informationen finden Sie in den [Implementierungshandbüchern für Tags und ](https://experienceleague.adobe.com/en/docs/experience-platform/tags/get-started/implementation-guides)) in der Experience Platform-Dokumentation.
+Im folgenden Prozess wird beschrieben, wie Sie den Code abrufen, der auf Ihr -Tag verweist. Weitere Informationen finden Sie in den [Implementierungshandbüchern für Tags und ](https://experienceleague.adobe.com/en/docs/experience-platform/tags/get-started/implementation-guides)) in der Dokumentation zu Experience Platform.
 
 Gehen Sie folgendermaßen vor, um Code abzurufen, der auf Ihr Tag verweist:
 

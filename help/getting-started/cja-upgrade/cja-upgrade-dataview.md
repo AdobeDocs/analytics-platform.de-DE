@@ -10,7 +10,7 @@ exl-id: 832f3f9a-1836-43ac-8185-f22ae0ded3aa
 source-git-commit: bb87226ee4b9acc433031f41997d403d49f48db3
 workflow-type: tm+mt
 source-wordcount: '475'
-ht-degree: 20%
+ht-degree: 38%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 20%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-dataview"
 >title="Erstellen einer Datenansicht in Customer Journey Analytics"
->abstract="Eine Datenansicht ist ein für Customer Journey Analytics spezifischer Container, mit dem Sie bestimmen können, wie Daten aus einer Verbindung interpretiert werden.<br><br>Während die anfängliche Erstellung der Datenansicht einige Minuten dauert, kann es mehrere Tage dauern, jede Dimension und Metrik mit den gewünschten Komponenteneinstellungen zu konfigurieren. Diese Einstellungen werden rückwirkend angepasst, sodass Ihr Unternehmen sie im Laufe der Zeit verfeinern kann."
+>abstract="Eine Datenansicht ist ein für Customer Journey Analytics spezifischer Container, mit dem Sie bestimmen können, wie die aus einer Verbindung stammenden Daten interpretiert werden sollen.<br><br>Während die Ersterstellung der Datenansicht nur einige Minuten dauert, kann es mehrere Tage in Anspruch nehmen, jede Dimension und Metrik mit den gewünschten Komponenteneinstellungen zu konfigurieren. Diese Einstellungen werden rückwirkend angepasst, sodass Ihre Organisation sie im Laufe der Zeit verfeinern kann."
 
 <!-- markdownlint-enable MD034 -->
 

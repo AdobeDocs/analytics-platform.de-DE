@@ -10,7 +10,7 @@ exl-id: f5443ddd-81d0-43cc-99cb-215e7ddf5acf
 source-git-commit: bb87226ee4b9acc433031f41997d403d49f48db3
 workflow-type: tm+mt
 source-wordcount: '876'
-ht-degree: 5%
+ht-degree: 12%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 5%
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-lookup-dataset-create"
->title="Erstellen Sie für jede Dimension, die Klassifizierungsdaten enthält, einen Lookup-Datensatz"
+>title="Erstellen eines Lookup-Datensatzes für jede Dimension mit Klassifizierungsdaten"
 >abstract="Ähnlich wie Klassifizierungsdaten in Adobe Analytics sind Lookup-Datensätze die Methode zur Klassifizierung von Daten in Customer Journey Analytics."
 
 <!-- markdownlint-enable MD034 -->

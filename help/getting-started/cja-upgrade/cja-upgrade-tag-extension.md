@@ -10,7 +10,7 @@ exl-id: 382d2b00-939a-4fff-be02-7a98d457a455
 source-git-commit: bb87226ee4b9acc433031f41997d403d49f48db3
 workflow-type: tm+mt
 source-wordcount: '381'
-ht-degree: 23%
+ht-degree: 33%
 
 ---
 
@@ -20,20 +20,20 @@ ht-degree: 23%
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-tag-extension"
->title="Hinzufügen der Platform Web SDK-Erweiterung zur Tag-Eigenschaft"
->abstract="Fügen Sie Ihrer Tag-Eigenschaft die Adobe Experience Platform Web SDK-Erweiterung hinzu. Das Hinzufügen der Web SDK-Erweiterung zu Ihrer Tag-Eigenschaft ist optimiert und dauert nur wenige Minuten."
+>title="Hinzufügen der Platform Web SDK-Erweiterung zu Ihrer Tag-Eigenschaft"
+>abstract="Fügen Sie Ihrer Tag-Eigenschaft die Adobe Experience Platform Web SDK-Erweiterung hinzu. Der Vorgang zum Hinzufügen der Web SDK-Erweiterung zu Ihrer Tag-Eigenschaft ist optimiert und dauert nur wenige Minuten."
 
 <!-- markdownlint-enable MD034 -->
 
 >[!NOTE]
 > 
->Befolgen Sie die Schritte auf dieser Seite erst, nachdem Sie alle vorherigen Upgrade-Schritte abgeschlossen haben. Sie können die [empfohlenen Upgrade-Schritte](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) ausführen oder die Upgrade-Schritte ausführen, die für Ihr Unternehmen mit dem [Fragebogen für das Upgrade von Adobe Analytics auf Customer Journey Analytics dynamisch generiert wurden](https://gigazelle.github.io/cja-ttv/).
+>Befolgen Sie die Schritte auf dieser Seite erst, nachdem Sie alle vorherigen Upgrade-Schritte abgeschlossen haben. Sie können die [empfohlenen Upgrade-Schritte](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) ausführen oder die Upgrade-Schritte ausführen, die für Ihr Unternehmen mit dem Fragebogen [Upgrade von Adobe Analytics auf Customer Journey Analytics dynamisch generiert ](https://gigazelle.github.io/cja-ttv/).
 >
 >Nachdem Sie die Schritte auf dieser Seite abgeschlossen haben, folgen Sie den empfohlenen Upgrade-Schritten oder den dynamisch generierten Upgrade-Schritten.
 
 Sie können die Tags-Funktion in Adobe Experience Platform verwenden, um Code zum Erfassen von Daten auf Ihrer Site zu implementieren. Mit dieser Tag-Management-Lösung können Sie Code zusammen mit anderen Tagging-Anforderungen bereitstellen. Tags ermöglichen die nahtlose Integration mit Adobe Experience Platform über die Adobe Experience Platform Web SDK-Erweiterung.
 
-Im Folgenden wird beschrieben, wie Sie Ihrem Tag die Web SDK-Erweiterung hinzufügen. Weitere Informationen finden Sie unter [Konfigurieren der Tag-Erweiterung „Web SDK](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration) in der Experience Platform-Dokumentation. Der Web-SDK enthält nativ den [!UICONTROL Adobe Experience Cloud ID]Service, sodass Sie die ID-Service-Erweiterung nicht zu Ihrem Tag hinzufügen müssen.
+Im Folgenden wird beschrieben, wie Sie Ihrem Tag die Web SDK-Erweiterung hinzufügen. Weitere Informationen finden Sie unter [Konfigurieren der Tag-Erweiterung „Web SDK](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration) in der Dokumentation zu Experience Platform. Der Web-SDK enthält nativ den [!UICONTROL Adobe Experience Cloud ID]Service, sodass Sie die ID-Service-Erweiterung nicht zu Ihrem Tag hinzufügen müssen.
 
 Nachdem Sie [Tag erstellen](/help/getting-started/cja-upgrade/cja-upgrade-tag-property.md) müssen Sie es mit der Adobe Experience Platform Web SDK-Erweiterung konfigurieren. Dadurch wird sichergestellt, dass Sie Daten (über Ihren Datenstrom) an Adobe Experience Platform senden können.
 
