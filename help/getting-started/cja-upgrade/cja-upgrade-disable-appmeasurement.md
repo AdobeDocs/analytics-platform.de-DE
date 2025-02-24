@@ -7,14 +7,14 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: 71b9da74-3597-4536-9e47-f18097dd917b
-source-git-commit: 3b1012a302200192fd31fd6a9ed94f96323eb595
+source-git-commit: 9cfe89aef069d777424eb8a5d9ef8ae03a9d0486
 workflow-type: tm+mt
-source-wordcount: '182'
-ht-degree: 50%
+source-wordcount: '201'
+ht-degree: 43%
 
 ---
 
-# AppMeasurement-Datenerfassung deaktivieren {#disable-appmeasurement}
+# Adobe Analytics deaktivieren {#disable-appmeasurement}
 
 <!-- markdownlint-disable MD034 -->
 
@@ -31,7 +31,7 @@ ht-degree: 50%
 >
 >Nachdem Sie die Schritte auf dieser Seite abgeschlossen haben, folgen Sie den empfohlenen Upgrade-Schritten oder den dynamisch generierten Upgrade-Schritten.
 
-<!-- need to work on this -->
+Lesen Sie vor dem Deaktivieren von Adobe Analytics die Informationen unter [Evaluieren Sie, wann Adobe Analytics nach dem Upgrade auf Customer Journey Analytics deaktiviert werden soll](/help/getting-started/cja-upgrade/cja-upgrade-fully-move.md).
 
 * **Tags:** Deaktivieren der Adobe Analytics-Erweiterung
 

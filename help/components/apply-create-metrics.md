@@ -4,9 +4,9 @@ title: Metriken
 feature: Metrics
 exl-id: 4edfb5d7-da20-4bd8-8041-387b291daf96
 role: User
-source-git-commit: 1ffe01609b3ab0d96b79cc9297dda9ccf25bcbb6
+source-git-commit: defe6ad6fc796a230525ba9b178d744caf340e2f
 workflow-type: tm+mt
-source-wordcount: '860'
+source-wordcount: '864'
 ht-degree: 8%
 
 ---
@@ -43,11 +43,11 @@ Sie können sehen, ob eine Metrik genehmigt wurde ![Symbol „Genehmigt](https:/
 
 ## Vergleichen von Metriken mit verschiedenen Attributionsmodellen
 
-Wenn Sie Attributionsmodelle für eine Metrik schnell und einfach miteinander vergleichen möchten, wählen Sie **[!UICONTROL Attributionsmodelle vergleichen]** aus dem Kontextmenü für eine Metrik aus.
+Um ein Attributionsmodell für eine Metrik schnell mit einem anderen zu vergleichen, wählen Sie **[!UICONTROL Attributionsmodelle vergleichen]** aus dem Kontextmenü für eine Metrik aus.
 
 ![Workspace-Bedienfeld mit hervorgehobenen Attributionsmodellen vergleichen](assets/compare-attribution.png)
 
-Mit dieser Tastenkombination können Sie Attributionsmodelle schnell und einfach vergleichen.
+Mithilfe dieser Tastenkombination können Sie ein Attributionsmodell mit einem anderen vergleichen, ohne eine Metrik per Drag-and-Drop verschieben und zweimal konfigurieren zu müssen.
 
 ## Erstellen von berechneten Metriken
 
