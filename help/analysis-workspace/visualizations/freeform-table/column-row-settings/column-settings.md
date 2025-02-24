@@ -4,7 +4,7 @@ title: Spalteneinstellungen
 feature: Visualizations
 exl-id: b41d8a12-e8d9-405c-ac71-6567397aec6b
 role: User
-source-git-commit: 4bf8c616965718426efe880865acb0e5054b6a31
+source-git-commit: 141c95b23695c09dd194c61c7cef0ce34e05ac33
 workflow-type: tm+mt
 source-wordcount: '889'
 ht-degree: 21%
@@ -57,7 +57,7 @@ Die bedingte Formatierung gilt für Obergrenzen, Mittelwerte und Untergrenzen, d
 
 | Bedingte Formatierungsoptionen | Beschreibung |
 | --- | --- |
-| **[!UICONTROL Prozentsätze verwenden]** | Ändern Sie das Limit, das auf Prozentsätzen basieren soll anstatt auf absoluten Werten. Der Bereich für die prozentuale Begrenzung funktioniert für Metriken, die ausschließlich prozentualbasiert sind (z. B. Absprungrate), und für Metriken, die eine Anzahl und einen Prozentsatz aufweisen (z. B. Seitenansichten). |
+| **[!UICONTROL Prozentuale Limits verwenden]** | Ändern Sie das Limit, das auf Prozentsätzen basieren soll anstatt auf absoluten Werten. Der Bereich für die prozentuale Begrenzung funktioniert für Metriken, die ausschließlich prozentualbasiert sind (z. B. Absprungrate), und für Metriken, die eine Anzahl und einen Prozentsatz aufweisen (z. B. Seitenansichten). |
 | **[!UICONTROL Automatisch generiert]** | Obere/mittlere/untere Limits automatisch auf Basis der Daten berechnen. Die Obergrenze entspricht dem höchsten Wert in dieser Spalte. Die Untergrenze entspricht dem niedrigsten Wert und der Mittelpunkt ist der Durchschnittswert der Ober- und der Untergrenze. |
 | **[!UICONTROL Benutzerspezifisch]** | Weisen Sie **[!UICONTROL Obergrenze]**, **[!UICONTROL Mittelwert]** und **[!UICONTROL Untergrenze]** manuell zu. Beschränkungen bieten die Flexibilität, zu bestimmen, wann ein Spaltenwert gut, durchschnittlich oder schlecht wird. |
 | **[!UICONTROL Bedingte Formatierungspalette]** | Wenden Sie einen vorkonfigurierten Farbsatz auf Zellen an. Je nachdem, welches der vier ausgewählten Farbschemata verwendet wird, werden hohen, mittleren und niedrigen Werten unterschiedliche Farben zugewiesen. <br> Wenn Sie eine Dimension in der Tabelle ersetzen, werden die Grenzwerte für die bedingte Formatierung zurückgesetzt. Wenn Sie eine Metrik ersetzen, werden die Grenzwerte für diese Spalte zurückgesetzt (dabei wird eine Metrik auf der X-Achse und eine Dimension auf der Y-Achse dargestellt). |

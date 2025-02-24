@@ -4,10 +4,10 @@ description: Freiformtabellen sind die Grundlage für die Analyse von Daten in W
 feature: Visualizations
 exl-id: e5ba9089-c575-47b3-af85-b8b2179396ac
 role: User
-source-git-commit: 55b312552d32070875714a77e1177bf0da5f9d87
+source-git-commit: 141c95b23695c09dd194c61c7cef0ce34e05ac33
 workflow-type: tm+mt
 source-wordcount: '779'
-ht-degree: 25%
+ht-degree: 27%
 
 ---
 
@@ -103,7 +103,7 @@ Die folgenden [Kontextmenü](../freeform-analysis-visualizations.md#context-menu
 | **[!UICONTROL Objekte als CSV herunterladen (*Dimensionsname*)]** | Laden Sie sofort die Dimensionselemente (bis zu maximal 50.000) der Visualisierung auf Ihr lokales Gerät herunter. Maximal 50.000 Dimensionselemente für die ausgewählte Dimension. |
 | **[!UICONTROL Visualisierung kopieren]** | Kopieren Sie die Visualisierung, sodass Sie die Visualisierung an einer anderen Stelle innerhalb des Projekts oder in ein ganz anderes Projekt einfügen können. |
 | **[!UICONTROL Daten-CSV herunterladen]** | Laden Sie die angezeigten Daten der Visualisierung sofort auf Ihr lokales Gerät herunter. |
-| **[!UICONTROL vollständige Tabelle exportieren…]** | Exportieren Sie die vollständige Tabelle an bestimmte Cloud-Speicherorte. Siehe [Exportiert Customer Journey Analytics-Berichte in die Cloud](../../export/export-cloud.md) |
+| **[!UICONTROL Vollständige Tabelle exportieren…]** | Exportieren Sie die vollständige Tabelle an bestimmte Cloud-Speicherorte. Siehe [Exportiert Customer Journey Analytics-Berichte in die Cloud](../../export/export-cloud.md) |
 | **[!UICONTROL Visualisierung duplizieren]** | Erstellen Sie ein exaktes Duplikat der Visualisierung. |
 | **[!UICONTROL Beschreibung bearbeiten]** | Hinzufügen (oder Bearbeiten) einer Textbeschreibung für die Visualisierung. Siehe [Text](../text.md). |
 | **[!UICONTROL Visualisierungs-Link abrufen]** | Kopieren Sie einen Link und teilen Sie ihn direkt in der Visualisierung. Das Dialogfeld Link freigeben zeigt den Link an. Wählen Sie Kopieren aus, um den Link in die Zwischenablage zu kopieren. |
@@ -112,7 +112,7 @@ Die folgenden [Kontextmenü](../freeform-analysis-visualizations.md#context-menu
 
 >[!MORELIKETHIS]
 >
->[Hinzufügen einer Visualisierung zu einem Bedienfeld](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
+>[Hinzufügen einer Visualisierung in einem Panel](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
 >[Visualisierungseinstellungen](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
 >[Kontextmenü der Visualisierung](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
 >
