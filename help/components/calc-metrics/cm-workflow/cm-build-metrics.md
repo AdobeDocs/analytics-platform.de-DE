@@ -3,10 +3,10 @@ description: Der Generator für berechnete Metriken bietet eine Arbeitsfläche, 
 title: Bilden berechneter Metriken
 feature: Calculated Metrics
 exl-id: 4d03a51d-c676-483c-98e2-d7283e8d71b0
-source-git-commit: e4e0c3cf2e865454837df6626c3b1b09f119f07f
+source-git-commit: 1ffe01609b3ab0d96b79cc9297dda9ccf25bcbb6
 workflow-type: tm+mt
-source-wordcount: '1526'
-ht-degree: 11%
+source-wordcount: '1501'
+ht-degree: 12%
 
 ---
 
@@ -51,7 +51,7 @@ Das Dialogfeld **[!UICONTROL Generator für berechnete]**&quot; wird verwendet, 
    | Element | Beschreibung |
    | --- | --- |
    | **[!UICONTROL Datenansicht]** | Sie können die Datenansicht für die berechnete Metrik auswählen.  Die von Ihnen definierte berechnete Metrik ist in Workspace-Projekten verfügbar, die auf der ausgewählten Datenansicht basieren. |
-   | **[!UICONTROL Metrik „Nur Projekt“]** | Ein Infofeld, in dem erläutert wird, dass die Metrik nur in dem Projekt sichtbar ist, in dem sie erstellt wurde, und dass sie nicht zur Komponentenliste hinzugefügt wird. Aktivieren Sie **[!UICONTROL Diese Metrik für alle Projekte verfügbar machen und der Komponentenliste hinzufügen]** um diese Einstellung zu ändern. Dieses Infofeld wird nur angezeigt, wenn Sie eine Metrik in Workspace mit **[!UICONTROL Metrik aus Auswahl erstellen]** erstellen und eine Funktion (z. B. **[!UICONTROL Mittelwert]** oder **[!UICONTROL Median]**) ausgewählt haben. Verwenden Sie später die [Komponenteninformationen](/help/components/use-components-in-workspace.md#component-info) um diese erstellte Metrik zu bearbeiten. |
+   | **[!UICONTROL Metrik „Nur Projekt“]** | Oben in diesem Dialogfeld wird ein Informationsfeld angezeigt, wenn Sie eine berechnete Metrik bearbeiten, die für ein einzelnes Projekt erstellt wurde, wie in [Erstellen von berechneten Metriken für ein einzelnes Projekt](/help/components/apply-create-metrics.md#create-calculated-metrics-for-a-single-project) beschrieben. <p>Wenn Sie diese berechnete Metrik für alle Projekte verfügbar machen möchten, wählen Sie die Option **[!UICONTROL Diese Metrik für alle Projekte verfügbar machen und der Komponentenliste hinzufügen]**.</p> |
    | **[!UICONTROL Titel]** ![Erforderlich](/help/assets/icons/Required.svg) | Benennen Sie die berechnete Metrik, z. B. `Conversion Rate`. |
    | **[!UICONTROL Externe ID]** ![erforderlich](/help/assets/icons/Required.svg) | Der Name der berechneten Metrik bei Verwendung eines externen BI-Tools und der BI-Erweiterung. Der Wert wird automatisch als `undefined_xxx` definiert, es sei denn, Sie überschreiben den Wert. |
    | **[!UICONTROL Beschreibung]** | Geben Sie eine Beschreibung für den Filter an, z. B. `Calculated metric to define the conversion rate.` Es ist nicht erforderlich, die Formel für die berechnete Metrik zu beschreiben, da die Formel bereits automatisch in [!UICONTROL Zusammenfassung“ ]. |
@@ -67,8 +67,8 @@ Das Dialogfeld **[!UICONTROL Generator für berechnete]**&quot; wird verwendet, 
 1. Um zu überprüfen, ob Ihre Definition der berechneten Metrik korrekt ist, verwenden Sie die ständig aktualisierte **[!UICONTROL Vorschau]** der Ergebnisse der berechneten Metrik. Der **[!UICONTROL Vorschau]** deckt die letzten 90 Tage ab und bewertet die Definition Ihrer berechneten Metrik kontinuierlich.
 
    Die **[!UICONTROL Produktkompatibilität]** gibt an, ob die berechnete Metrik beim Experimentieren verwendet werden kann. Mögliche Werte sind:
-   * **[!UICONTROL Überall im Customer Journey Analytics]**: Die berechnete Metrik kann für das gesamte Customer Journey Analytics verwendet werden.
-   * **[!UICONTROL Überall im Customer Journey Analytics (ohne Experimentieren)]**: Die berechnete Metrik kann auf allen Customer Journey Analytics-Instanzen verwendet werden, mit Ausnahme des Experimentier-Bedienfelds.
+   * **[!UICONTROL Überall in Customer Journey Analytics]**: Die berechnete Metrik kann in ganz Customer Journey Analytics verwendet werden.
+   * **[!UICONTROL Überall in Customer Journey Analytics (ohne Experimentieren)]**: Die berechnete Metrik kann in ganz Customer Journey Analytics verwendet werden, mit Ausnahme des Bedienfelds „Experimentieren“.
 
 1. Auswählen:
    * **[!UICONTROL Speichern]**, um die berechnete Metrik zu speichern.
@@ -78,7 +78,7 @@ Das Dialogfeld **[!UICONTROL Generator für berechnete]**&quot; wird verwendet, 
 
 ## Definition Builder
 
-Mit dem Definition Builder können Sie per Drag-and-Drop Dimensionen, Metriken, Filter und Funktionen per Drag-and-Drop verschieben und benutzerdefinierte Metriken erstellen, die auf Container-Hierarchielogik, Regeln und Operatoren basieren. In dieser Konstruktion können Sie Standardmetriken, Adobe definierte Metriken, berechnete Metriken, Filter, Dimensionen und Funktionen verwenden. Alle diese Komponenten sind über das Bedienfeld „Komponenten“ im Generator für berechnete Metriken verfügbar. Darüber hinaus können Sie in der Definition Operatoren und Container verwenden.
+Mit dem Definition Builder können Sie per Drag-and-Drop Dimensionen, Metriken, Filter und Funktionen per Drag-and-Drop verschieben und benutzerdefinierte Metriken erstellen, die auf Container-Hierarchielogik, Regeln und Operatoren basieren. In dieser Konstruktion können Sie Standardmetriken, von Adobe definierte Metriken, berechnete Metriken, Filter, Dimensionen und Funktionen verwenden. Alle diese Komponenten sind über das Bedienfeld „Komponenten“ im Generator für berechnete Metriken verfügbar. Darüber hinaus können Sie in der Definition Operatoren und Container verwenden.
 
 ![Berechnete Metrik erstellen](/help/components/calc-metrics/cm-workflow/assets/create-calculated-metric.gif)
 
@@ -138,8 +138,8 @@ Sie verwenden das Konzept eines Filter-Containers, um eine [gefilterte Metrik“
 
 * So fügen Sie einen Filter-Container aus einer Dimension hinzu:
 
-   1. Ziehen Sie eine ![Dimensionen ](/help/assets/icons/Dimensions.svg) **[!UICONTROL Dimensionen]**-Komponente aus dem Komponentenbedienfeld auf **[!UICONTROL Ziehen Sie Metriken, Dimensionen, Dimensionselemente, Filter und/oder Funktionen per Drag-and-Drop hierher]**. Sie können den ![Suche](/help/assets/icons/Search.svg) in der Komponentenleiste verwenden, um nach bestimmten Komponenten zu suchen.
-   1. Definieren Sie **[!UICONTROL Popup Filter aus Dimension]** die Bedingung für den Filter. Wählen Sie in der Benutzerliste einen Wert aus, oder geben Sie einen Wert ein. Beispiel: **[!UICONTROL Monat]** **[!UICONTROL gleich]** ![ChevronDown](/help/assets/icons/ChevronDown.svg) `Sep 2024`.
+   1. Ziehen Sie eine Komponente ![Dimensionen](/help/assets/icons/Dimensions.svg) **[!UICONTROL Dimensionen]** aus dem Bedienfeld „Komponenten“ auf **[!UICONTROL Ziehen Sie Metriken, Dimensionen, Dimensionselemente, Filter und/oder Funktionen per Drag-and-Drop hierher]**. Sie können den ![Suche](/help/assets/icons/Search.svg) in der Komponentenleiste verwenden, um nach bestimmten Komponenten zu suchen.
+   1. Definieren **[!UICONTROL im Popup Filter aus Dimension erstellen]** die Bedingung für den Filter. Wählen Sie in der Benutzerliste einen Wert aus, oder geben Sie einen Wert ein. Beispiel: **[!UICONTROL Monat]** **[!UICONTROL gleich]** ![ChevronDown](/help/assets/icons/ChevronDown.svg) `Sep 2024`.
    1. Wählen Sie **[!UICONTROL Fertig]** aus. Ein Filter-Container wird der **[!UICONTROL Definition]** hinzugefügt.
 
 

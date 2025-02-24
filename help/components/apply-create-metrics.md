@@ -4,9 +4,9 @@ title: Metriken
 feature: Metrics
 exl-id: 4edfb5d7-da20-4bd8-8041-387b291daf96
 role: User
-source-git-commit: 84ab8434671ccbce12dce95e1164b9a25c7b8439
+source-git-commit: 1ffe01609b3ab0d96b79cc9297dda9ccf25bcbb6
 workflow-type: tm+mt
-source-wordcount: '859'
+source-wordcount: '860'
 ht-degree: 8%
 
 ---
@@ -63,7 +63,7 @@ Informationen zum Zugriff auf den Generator für berechnete Metriken finden Sie 
 
 ### Erstellen von berechneten Metriken für ein einzelnes Projekt
 
-Sie können schnell berechnete Metriken erstellen, die nur für das Projekt verfügbar sind, in dem sie erstellt wurden.
+Sie können schnell eine berechnete Metrik erstellen, die nur für das Projekt verfügbar ist, in dem sie erstellt wurde.
 
 Erstellen einer berechneten Metrik für ein einzelnes Projekt:
 
