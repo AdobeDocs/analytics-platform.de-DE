@@ -3,10 +3,10 @@ description: Der Generator für berechnete Metriken bietet eine Arbeitsfläche, 
 title: Bilden berechneter Metriken
 feature: Calculated Metrics
 exl-id: 4d03a51d-c676-483c-98e2-d7283e8d71b0
-source-git-commit: 1ffe01609b3ab0d96b79cc9297dda9ccf25bcbb6
+source-git-commit: 3c11f204b73ec1cc5c4c359b6cc5c88023c93e43
 workflow-type: tm+mt
-source-wordcount: '1501'
-ht-degree: 12%
+source-wordcount: '1705'
+ht-degree: 11%
 
 ---
 
@@ -31,6 +31,23 @@ ht-degree: 12%
 
 <!-- markdownlint-enable MD034 -->
 
+Customer Journey Analytics bietet eine Arbeitsfläche zum Ziehen und Ablegen von Dimensionen, Metriken, Filtern und Funktionen, um benutzerdefinierte Metriken basierend auf Container-Hierarchielogik, Regeln und Operatoren zu erstellen. Mit diesem integrierten Entwicklungstool können Sie einfache oder komplexe berechnete Metriken erstellen und speichern.
+
+## Mit dem Aufbau einer berechneten Metrik beginnen
+
+Sie können den Generator für berechnete Metriken verwenden, um berechnete Metriken zu erstellen oder zu bearbeiten. Wenn sie auf diese Weise erstellt werden, sind berechnete Metriken in der Komponentenliste verfügbar und können dann in Projekten in Ihrer gesamten Organisation verwendet werden. Alternativ können Sie schnell eine berechnete Metrik erstellen, die nur für das Projekt verfügbar ist, in dem sie erstellt wurde, wie unter [Erstellen berechneter Metriken für ein einzelnes Projekt](/help/components/apply-create-metrics.md#create-calculated-metrics-for-a-single-project) in [Metriken](/help/components/apply-create-metrics.md) beschrieben.
+
+Greifen Sie auf den Generator für berechnete Metriken zu, um mit der Erstellung einer berechneten Metrik zu beginnen, die in der Komponentenliste verfügbar ist.
+
+1. Greifen Sie auf eine der folgenden Arten auf den Generator für berechnete Metriken zu:
+
+   * Öffnen Sie in Analysis Workspace ein Projekt und wählen Sie **[!UICONTROL Komponenten]** > **[!UICONTROL Metrik erstellen]**.
+   * Öffnen Sie in Analysis Workspace ein Projekt und wählen Sie dann in der linken Leiste **Plus**-Symbol neben [!UICONTROL **Abschnitt**] Metriken“ aus.
+   * Gehen Sie [!DNL Customer Journey Analytics] zu **[!UICONTROL Komponenten]** > **[!UICONTROL Berechnete Metriken]** und wählen Sie dann **[!UICONTROL + Hinzufügen]** oben auf der Seite „Berechnete Metriken“ aus.
+
+1. Fahren Sie mit [Bereiche des Generator für berechnete Metriken](#areas-of-the-calculated-metrics-builder) fort.
+
+## Bereiche des Generators für berechnete Metriken
 
 Das Dialogfeld **[!UICONTROL Generator für berechnete]**&quot; wird verwendet, um neue berechnete Metriken zu erstellen oder vorhandene zu bearbeiten. Das Dialogfeld heißt **[!UICONTROL Neue berechnete Metrik]** oder **[!UICONTROL Berechnete Metrik bearbeiten]** für Metriken, die Sie über den Manager [[!UICONTROL Berechnete Metriken] erstellen oder verwalten](/help/components/calc-metrics/cm-workflow/cm-manager.md).
 
