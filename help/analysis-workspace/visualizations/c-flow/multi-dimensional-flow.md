@@ -4,7 +4,7 @@ title: Interdimensionale Flüsse
 feature: Visualizations
 exl-id: 459166b1-a522-45b6-9d2c-69e3409e442e
 role: User
-source-git-commit: 80522177d5258e4b5046b3872483ce2b482ae77d
+source-git-commit: 1eeba4dc9de52f2890cf25794e767f199a4aa04c
 workflow-type: tm+mt
 source-wordcount: '332'
 ht-degree: 7%
@@ -37,7 +37,7 @@ Um die Interaktion zwischen Bildschirmen und Ereignistypen (z. B. zum Warenkorb 
 
   ![Ein Fluss, der die Seitendimension zeigt, die an den Leerraum am Ende gezogen wurde.](assets/flowapp-add.png)
 
-Die folgende Flussvisualisierung zeigt das Ergebnis des Hinzufügens der Dimension **[!UICONTROL -]** . Die Visualisierung bietet Einblicke, wie sich Benutzer von Mobile Apps durch verschiedene Bildschirme in der App bewegen, bevor sie Produkte zu einem Warenkorb hinzufügen, die App schließen, ein Angebot erhalten und vieles mehr.
+Die folgende Flussvisualisierung zeigt das Ergebnis des Hinzufügens der Dimension **[!UICONTROL Ereignistypen]** . Die Visualisierung bietet Einblicke, wie sich Benutzer von Mobile Apps durch verschiedene Bildschirme in der App bewegen, bevor sie Produkte zu einem Warenkorb hinzufügen, die App schließen, ein Angebot erhalten und vieles mehr.
 
 ![Ein Fluss, der die Ergebnisse der Seitendimension oben in der Liste anzeigt.](assets/flowapp-result.png)
 
