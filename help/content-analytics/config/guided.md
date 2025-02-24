@@ -7,7 +7,7 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 4aff664c-3cd9-4591-8122-6ebff10e4a76
-source-git-commit: 023e7dda53cc60096076599d30a8dd78db1bfbd7
+source-git-commit: 4650718a067f68d4edfad3db71e822898f661648
 workflow-type: tm+mt
 source-wordcount: '2024'
 ht-degree: 18%
@@ -284,7 +284,6 @@ Nachdem Sie alle erforderlichen Details bereitgestellt haben, enthält eine Zusa
 >abstract="Wenn Sie **[!UICONTROL Implementieren]** auswählen, konfigurieren Sie die Inhaltsanalyse basierend auf den Eingaben, die Sie in diesem Workflow bereitgestellt haben. Standardmäßig werden mehrere Einstellungen auf Grundlage dessen ausgewählt, was im Allgemeinen für Content Analytics nützlich ist. Als Datenverantwortlicher müssen Sie jedoch die Einstellungen der einzelnen Artefakte überprüfen, um zu bestätigen, dass die Einstellungen in Übereinstimmung mit Ihren Datenschutzrichtlinien, vertraglichen Rechten und Pflichten sowie den Einverständnisanforderungen nach geltendem Recht implementiert wurden.<br/><br/>Beachten Sie, dass Daten erst dann erfasst werden, wenn die mit dieser Konfiguration verknüpfte Tag-Bibliothek manuell veröffentlicht wird.<br/><br/>Um Bild- und Textattribute abzuleiten, ruft Adobe die Attribute wie folgt ab:<ol><li>Die URL, die zum Zeitpunkt des Site-Besuchs des Benutzers gemäß den von Ihnen konfigurierten Datenerfassungseinstellungen erfasst wurde, und</li><li>Die URL, unter der das Bild gehostet wird.</li></ol>Bilder, die auf Websites von Drittanbietern gehostet werden, dürfen nicht mit Tags versehen werden."
 
 <!-- markdownlint-enable MD034 -->
-
 
 Wenn Sie eine Konfiguration erstellt oder bearbeitet haben, sind die folgenden Aktionen verfügbar.
 
