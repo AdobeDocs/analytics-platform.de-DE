@@ -5,9 +5,9 @@ feature: Workspace Basics
 exl-id: 6a934be7-0612-41ff-964e-77abc0b1efda
 solution: Customer Journey Analytics
 role: User
-source-git-commit: ef93e386e3c3e64a022805dcf8674b7fddf361a5
+source-git-commit: 827ab36b27eee1b0af46ff1c653f13b1accfe105
 workflow-type: tm+mt
-source-wordcount: '3635'
+source-wordcount: '3632'
 ht-degree: 96%
 
 ---
@@ -185,22 +185,22 @@ Wählen Sie die verlinkten Abschnittstitel aus, um weitere Informationen und den
 
 >[!CONTEXTUALHELP]
 >id="workspace_prefs_defaultflowcontainer"
->title="Standard-Tabellenmetrik"
+>title="Standard-Container"
 >abstract="Wählen Sie den Standard-Container aus, der für [!UICONTROL Fluss]-Visualisierungen verwendet werden soll. Wenn die ausgewählte Datenansicht den ausgewählten Standard-Container nicht enthält, wechselt die [!UICONTROL Fluss]-Visualisierung automatisch zu einem anderen primären Container."
 
 >[!CONTEXTUALHELP]
 >id="workspace_prefs_defaultfalloutcontainer"
->title="Standard-Tabellenmetrik"
+>title="Standard-Container"
 >abstract="Wählen Sie den Standard-Container aus, der für [!UICONTROL Fallout]-Visualisierungen verwendet werden soll. Wenn die ausgewählte Datenansicht den ausgewählten Standard-Container nicht enthält, wechselt die [!UICONTROL Fallout]-Visualisierung automatisch zu einem anderen primären Container."
 
 >[!CONTEXTUALHELP]
 >id="workspace_prefs_defaulthistogramcountingmethod"
->title="Standard-Tabellenmetrik"
+>title="Standard-Zählmethode"
 >abstract="Wählen Sie die standardmäßige Zählmethode aus, die für &quot;[!UICONTROL &quot;-] verwendet werden soll. Wenn die ausgewählte Datenansicht nicht die ausgewählte standardmäßige Zählmethode enthält, wechselt die [!UICONTROL Histogramm]-Visualisierung automatisch zu einer anderen primären Zählmethode."
 
 >[!CONTEXTUALHELP]
 >id="workspace_prefs_defaultjourneycanvascontainer"
->title="Standard-Tabellenmetrik"
+>title="Standard-Container"
 >abstract="Wählen Sie den Standard-Container aus, der für [!UICONTROL Journey Canvas-Visualisierungen verwendet ] soll. Wenn die ausgewählte Datenansicht den ausgewählten Standard-Container nicht enthält, wechselt die [!UICONTROL Journey Canvas]-Visualisierung automatisch zu einem anderen primären Container."
 
 
