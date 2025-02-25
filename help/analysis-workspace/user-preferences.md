@@ -5,10 +5,10 @@ feature: Workspace Basics
 exl-id: 6a934be7-0612-41ff-964e-77abc0b1efda
 solution: Customer Journey Analytics
 role: User
-source-git-commit: 501a9fbd7c8abd8a63348c2c8d11b88b31a0f6df
-workflow-type: ht
-source-wordcount: '3562'
-ht-degree: 100%
+source-git-commit: ef93e386e3c3e64a022805dcf8674b7fddf361a5
+workflow-type: tm+mt
+source-wordcount: '3635'
+ht-degree: 96%
 
 ---
 
@@ -186,12 +186,23 @@ Wählen Sie die verlinkten Abschnittstitel aus, um weitere Informationen und den
 >[!CONTEXTUALHELP]
 >id="workspace_prefs_defaultflowcontainer"
 >title="Standard-Tabellenmetrik"
->abstract="Wählen Sie den Standard-Container aus, der für Flussvisualisierungen verwendet werden soll. Wenn die ausgewählte Datenansicht den ausgewählten Standard-Container nicht enthält, wechselt die Flussvisualisierung automatisch zu einem anderen primären Container."
+>abstract="Wählen Sie den Standard-Container aus, der für [!UICONTROL Fluss]-Visualisierungen verwendet werden soll. Wenn die ausgewählte Datenansicht den ausgewählten Standard-Container nicht enthält, wechselt die [!UICONTROL Fluss]-Visualisierung automatisch zu einem anderen primären Container."
 
 >[!CONTEXTUALHELP]
 >id="workspace_prefs_defaultfalloutcontainer"
 >title="Standard-Tabellenmetrik"
->abstract="Wählen Sie den Standard-Container aus, der für Fallout-Visualisierungen verwendet werden soll. Wenn die ausgewählte Datenansicht den ausgewählten Standard-Container nicht enthält, wechselt die Fallout-Visualisierung automatisch zu einem anderen primären Container."
+>abstract="Wählen Sie den Standard-Container aus, der für [!UICONTROL Fallout]-Visualisierungen verwendet werden soll. Wenn die ausgewählte Datenansicht den ausgewählten Standard-Container nicht enthält, wechselt die [!UICONTROL Fallout]-Visualisierung automatisch zu einem anderen primären Container."
+
+>[!CONTEXTUALHELP]
+>id="workspace_prefs_defaulthistogramcountingmethod"
+>title="Standard-Tabellenmetrik"
+>abstract="Wählen Sie die standardmäßige Zählmethode aus, die für &quot;[!UICONTROL &quot;-] verwendet werden soll. Wenn die ausgewählte Datenansicht nicht die ausgewählte standardmäßige Zählmethode enthält, wechselt die [!UICONTROL Histogramm]-Visualisierung automatisch zu einer anderen primären Zählmethode."
+
+>[!CONTEXTUALHELP]
+>id="workspace_prefs_defaultjourneycanvascontainer"
+>title="Standard-Tabellenmetrik"
+>abstract="Wählen Sie den Standard-Container aus, der für [!UICONTROL Journey Canvas-Visualisierungen verwendet ] soll. Wenn die ausgewählte Datenansicht den ausgewählten Standard-Container nicht enthält, wechselt die [!UICONTROL Journey Canvas]-Visualisierung automatisch zu einem anderen primären Container."
+
 
 Sie können die Visualisierungsvoreinstellungen für alle in Analysis Workspace neu erstellten Projekte aktualisieren. Informationen zum Zugriff auf diese Voreinstellungen finden Sie unter [Aktualisieren von Voreinstellungen](#update-preferences).
 
