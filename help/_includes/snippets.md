@@ -1,8 +1,8 @@
 ---
-source-git-commit: a2262e446a15ee58be2f3f674c77223368fc8f76
+source-git-commit: 1ae4be09a07bd4991342daa43cc23fb966b68aaf
 workflow-type: tm+mt
-source-wordcount: '3093'
-ht-degree: 23%
+source-wordcount: '3184'
+ht-degree: 22%
 
 ---
 # Snippets
@@ -57,7 +57,7 @@ Zu den verfügbaren Zeitvergleichsoptionen gehören der vorherige Zeitraum, 13 W
 
 ## Videodemonstration Adobe Analytics {#videoaa}
 
-*In diesem Video werden die Funktionen von mit Adobe Analytics veranschaulicht. Die Funktion ist jedoch ähnlich auf Customer Journey Analytics verfügbar. Achten Sie auf die terminologischen Unterschiede zwischen Adobe Analytics und Customer Journey Analytics (z. B. Segmente und Filter oder Besuche und Sitzungen).*
+*In diesem Video werden die Funktionen von mit Adobe Analytics veranschaulicht. Die Funktion ist jedoch in ähnlicher Weise in Customer Journey Analytics verfügbar. Achten Sie auf die terminologischen Unterschiede zwischen Adobe Analytics und Customer Journey Analytics (z. B. Segmente und Filter oder Besuche und Sitzungen).*
 
 
 ## Bedienfeld „Filter“ {#filterspanel}
@@ -201,3 +201,17 @@ Verwenden Sie die folgenden Informationen, um die Visualisierung auszuwählen, d
 | **Adobe Journey Optimizer Journey** | Ja</br>Öffnen Sie Journey von Journey Optimizer aus, um sie gründlicher zu analysieren und anzupassen. | Nein | Nein |
 
 {style="table-layout:auto"}
+
+## Hinweis zur Checkliste für die Aktualisierung {#upgrade-note}
+
+>[!NOTE]
+> 
+>Verwenden Sie die Informationen auf dieser Seite bei der Beantwortung von Fragen in der Checkliste für das Customer Journey Analytics-Upgrade [](https://gigazelle.github.io/cja-ttv/).
+
+## Hinweis zur Checkliste für die Aktualisierung im nächsten Schritt {#upgrade-note-step}
+
+>[!NOTE]
+> 
+>Befolgen Sie die Schritte auf dieser Seite erst, nachdem Sie alle vorherigen Upgrade-Schritte abgeschlossen haben. Sie können die [empfohlenen Upgrade-Schritte](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) ausführen oder die Upgrade-Schritte ausführen, die für Ihr Unternehmen mit dem Fragebogen [Upgrade von Adobe Analytics auf Customer Journey Analytics dynamisch generiert ](https://gigazelle.github.io/cja-ttv/).
+>
+>Nachdem Sie die Schritte auf dieser Seite abgeschlossen haben, folgen Sie den empfohlenen Upgrade-Schritten oder den dynamisch generierten Upgrade-Schritten.

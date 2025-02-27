@@ -4,7 +4,7 @@ description: Erfahren Sie, wie Sie Zielgruppen in Customer Journey Analytics ver
 exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
 feature: Audiences
 role: User
-source-git-commit: e4e0c3cf2e865454837df6626c3b1b09f119f07f
+source-git-commit: e444474d9f859f59613caa8fad06998372cdf742
 workflow-type: tm+mt
 source-wordcount: '1973'
 ht-degree: 18%
@@ -61,9 +61,9 @@ ht-degree: 18%
 
 
 
-In diesem Abschnitt wird beschrieben, wie Sie Zielgruppen, die beim Customer Journey Analytics identifiziert wurden, in [Echtzeit-Kundenprofil) in Adobe Experience Platform ](https://experienceleague.adobe.com/de/docs/experience-platform/profile/home) Targeting und Personalisierung erstellen und veröffentlichen.
+In diesem Abschnitt wird beschrieben, wie Sie Zielgruppen, die in Customer Journey Analytics identifiziert wurden, im [Echtzeit-Kundenprofil](https://experienceleague.adobe.com/de/docs/experience-platform/profile/home) in Adobe Experience Platform erstellen und veröffentlichen, um Targeting und Personalisierung durchzuführen.
 
-Lesen Sie diesen [Überblick](/help/components/audiences/audiences-overview.md), um sich mit dem Konzept des Customer Journey Analytics-Zielgruppen vertraut zu machen.
+Lesen Sie diese [Übersicht](/help/components/audiences/audiences-overview.md), um sich mit dem Konzept der Customer Journey Analytics-Zielgruppen vertraut zu machen.
 
 ## Erstellen und Veröffentlichen einer Zielgruppe {#create}
 
@@ -71,7 +71,7 @@ Lesen Sie diesen [Überblick](/help/components/audiences/audiences-overview.md),
 
    | Erstellungsmethode | Details |
    | --- | --- |
-   | Innerhalb der **[!UICONTROL Zielgruppen]**-Oberfläche. | Wählen **[!UICONTROL Komponenten]** > **[!UICONTROL Zielgruppen]** aus dem Hauptmenü Customer Journey Analytics aus. Die Benutzeroberfläche „Zielgruppen“ wird angezeigt. Wählen Sie **[!UICONTROL Zielgruppe erstellen]** und der [!UICONTROL Audience Builder] wird geöffnet. |
+   | Innerhalb der **[!UICONTROL Zielgruppen]**-Oberfläche. | Wählen **[!UICONTROL Komponenten]** > **[!UICONTROL Zielgruppen]** aus dem Customer Journey Analytics-Hauptmenü aus. Die Benutzeroberfläche „Zielgruppen“ wird angezeigt. Wählen Sie **[!UICONTROL Zielgruppe erstellen]** und der [!UICONTROL Audience Builder] wird geöffnet. |
    | Von einer Visualisierung in Analysis Workspace | Viele Visualisierungen in Analysis Workspace ermöglichen es Ihnen, mithilfe des Kontextmenüs eine Zielgruppe zu erstellen. Sie können beispielsweise **[!UICONTROL Zielgruppe erstellen]** aus dem Kontextmenü eines Elements in einer [Freiformtabelle](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) oder eines Knotens auf der [Journey-Arbeitsfläche ](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md).<p>Mit dieser Methode wird der Filter im Audience Builder vorab mit der ausgewählten Dimension oder dem ausgewählten Dimensionselement ausgefüllt.</p><p>Mit den folgenden Visualisierungen können Sie mithilfe des Kontextmenüs eine Zielgruppe erstellen:</p><ul><li>[Kohortentabelle](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md)</li><li>[Fallout](/help/analysis-workspace/visualizations/fallout/fallout-flow.md)</li><li>[Fluss](/help/analysis-workspace/visualizations/c-flow/flow.md)</li><li>[Freiformtabelle](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)</li><li>[Journey-Arbeitsfläche](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md)</li><li>[Venn](/help/analysis-workspace/visualizations/venn.md)</li></ul><p>**Hinweis:** Zielgruppen können keine berechneten Metriken enthalten. Wenn Sie versuchen, eine Zielgruppe zu erstellen, die eine berechnete Metrik enthält, wird die berechnete Metrik nicht in die Zielgruppendefinition einbezogen.</p> |
    | Über die Benutzeroberfläche zur Erstellung/Bearbeitung von Filtern: | Markieren Sie das Kästchen **[!UICONTROL Zielgruppe über diesen Filter erstellen]**. Mit dieser Methode wird der Filter vorab ausgefüllt. Siehe [Filter erstellen](/help/components/filters/create-filters.md) für weitere Informationen. |
 
@@ -83,10 +83,10 @@ Lesen Sie diesen [Überblick](/help/components/audiences/audiences-overview.md),
 
 1. Wählen Sie **[!UICONTROL [!UICONTROL Beispiel-IDs anzeigen]]**, um ein Beispiel von IDs in dieser Zielgruppe anzuzeigen. Im Dialogfeld **[!UICONTROL Beispiel-IDs]** können Sie ![Suche](/help/assets/icons/Search.svg) [!UICONTROL *Beispiel-IDs suchen*] um nach Beispiel-IDs zu suchen.
 
-1. Überprüfen Sie Ihre Zielgruppenkonfiguration und wählen Sie **[!UICONTROL Publish]** aus.
-Sie erhalten eine Bestätigungsnachricht, dass die Zielgruppe veröffentlicht wurde. Es dauert nur ein bis zwei Minuten, bis diese Zielgruppe im Experience Platform angezeigt wird.
+1. Überprüfen Sie Ihre Zielgruppenkonfiguration und wählen Sie &quot;**[!UICONTROL &quot;]**.
+Sie erhalten eine Bestätigungsnachricht, dass die Zielgruppe veröffentlicht wurde. Es dauert nur ein bis zwei Minuten, bis diese Zielgruppe in Experience Platform angezeigt wird.
 
-1. Wählen **[!UICONTROL in derselben Nachricht „Zielgruppe in AEP]**&quot; aus und Sie gelangen zur [Segment-Benutzeroberfläche](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/overview) in Adobe Experience Platform. Weitere Informationen finden Sie unten.
+1. Wählen **[!UICONTROL in derselben Nachricht „Zielgruppe in AEP]**&quot; aus und Sie gelangen zur [Segment-Benutzeroberfläche](https://experienceleague.adobe.com/de/docs/experience-platform/segmentation/ui/overview) in Adobe Experience Platform. Weitere Informationen finden Sie unten.
 
 ## Audience Builder
 
@@ -122,11 +122,11 @@ Das Bedienfeld Datenvorschau enthält die folgenden Informationen.
 
 ## Was passiert, nachdem eine Zielgruppe erstellt und veröffentlicht wurde? {#after-audience-created}
 
-Nachdem Sie eine Zielgruppe auf Customer Journey Analytics erstellt und veröffentlicht haben, ist sie auf Experience Platform verfügbar. Ein Adobe Experience Platform-Streaming-Segment wird nur erstellt, wenn für Ihre Organisation Streaming-Segmentierung eingerichtet ist.
+Nachdem Sie eine Zielgruppe in Customer Journey Analytics erstellt und veröffentlicht haben, ist sie in Experience Platform verfügbar. Ein Adobe Experience Platform-Streaming-Segment wird nur erstellt, wenn für Ihre Organisation Streaming-Segmentierung eingerichtet ist.
 
 * Die Zielgruppe in Platform hat denselben Namen und dieselbe Beschreibung wie die Customer Journey Analytics-Zielgruppe. An den Namen wird die Customer Journey Analytics-Zielgruppen-ID angehängt, um sicherzustellen, dass die Zielgruppe eindeutig ist.
-* Alle Änderungen am Namen oder an der Beschreibung der Zielgruppe in Customer Journey Analytics werden auf Experience Platform übernommen.
-* Wenn eine Zielgruppe auf Customer Journey Analytics gelöscht wird, ist die Zielgruppe weiterhin auf Experience Platform verfügbar, bis die Profilmitgliedschaft der Zielgruppe abläuft. Die Profilmitgliedschaft läuft für einmalige Zielgruppen nach 420 Tagen und für wiederkehrende Zielgruppen nach 16 Tagen ab.
+* Alle Änderungen am Namen oder an der Beschreibung der Zielgruppe in Customer Journey Analytics werden in Experience Platform übernommen.
+* Wenn eine Zielgruppe in Customer Journey Analytics gelöscht wird, ist die Zielgruppe in Experience Platform weiterhin verfügbar, bis die Profilmitgliedschaft der Zielgruppe abläuft. Die Profilmitgliedschaft läuft für einmalige Zielgruppen nach 420 Tagen und für wiederkehrende Zielgruppen nach 16 Tagen ab.
 
 ## Latenzaspekte {#latency}
 
@@ -138,18 +138,18 @@ An verschiedenen Stellen vor, während und nach der Veröffentlichung von Zielgr
 | --- | --- | --- |
 | Nicht angezeigt | Adobe Analytics zu Analytics-Quell-Connector (A4T) | Bis zu 30 Minuten |
 | 1 | Datenaufnahme in den Data Lake (aus dem Analytics-Quell-Connector oder anderen Quellen) | Bis zu 90 Minuten |
-| 2 | Datenaufnahme aus dem Experience Platform Data Lake in den Customer Journey Analytics | Bis zu 90 Minuten |
+| 2 | Datenaufnahme aus dem Data Lake von Experience Platform in Customer Journey Analytics | Bis zu 90 Minuten |
 | 3 | Zielgruppenveröffentlichung im Echtzeit-Kundenprofil, einschließlich der automatischen Erstellung des Streaming-Segments, sodass das Segment bereit für den Empfang der Daten ist. | Ein paar Sekunden |
 | 4 | Aktualisierungshäufigkeit für Zielgruppen | <ul><li>Einmalige Aktualisierung (Latenz von weniger als 5 Minuten)</li><li>Aktualisierung alle 4 Stunden, täglich, wöchentlich, monatlich (die Latenz wird mit der Aktualisierungsrate in Verbindung gebracht) |
 | 5 | Erstellen eines Ziels in Adobe Experience Platform: Aktivieren des neuen Segments | 1–2 Stunden |
 
 {style="table-layout:auto"}
 
-## Verwenden von Customer Journey Analytics-Zielgruppen beim Experience Platform {#audiences-aep}
+## Verwenden von Customer Journey Analytics-Zielgruppen in Experience Platform {#audiences-aep}
 
-Customer Journey Analytics nimmt alle Namespace- und ID-Kombinationen aus Ihrer veröffentlichten Zielgruppe und streamt sie in Real-time Customer Data Platform . Beim Customer Journey Analytics wird die Zielgruppe entsprechend der beim Verbindungsaufbau gewählten [!UICONTROL Personen-ID“ mit dem primären Identitätssatz ] Experience Platform gesendet.
+Customer Journey Analytics nimmt alle Namespace- und ID-Kombinationen aus Ihrer veröffentlichten Zielgruppe und streamt sie in Real-Time Customer Data Platform . Customer Journey Analytics sendet die Zielgruppe an Experience Platform, wobei die primäre Identität auf den Wert festgelegt ist, der bei der Verbindungskonfiguration als [!UICONTROL Personen]ID ausgewählt wurde.
 
-Real-time Customer Data Platform untersucht dann jede Namespace/ID-Kombination und sucht nach einem Profil, zu dem sie gehören könnte. Ein Profil ist im Grunde eine Gruppe verknüpfter Namespaces, IDs und Geräte. Wenn ein Profil gefunden wird, werden der Namespace und die ID zu den anderen IDs in diesem Profil als Segmentzugehörigkeitsattribut hinzugefügt. Beispielsweise können <user@adobe.com> auf allen Geräten und Kanälen als Ziel ausgewählt werden. Wenn kein Profil gefunden wird, wird ein neues erstellt.
+Real-Time Customer Data Platform untersucht dann jede Namespace/ID-Kombination und sucht nach einem Profil, zu dem sie gehören könnte. Ein Profil ist im Grunde eine Gruppe verknüpfter Namespaces, IDs und Geräte. Wenn ein Profil gefunden wird, werden der Namespace und die ID zu den anderen IDs in diesem Profil als Segmentzugehörigkeitsattribut hinzugefügt. Beispielsweise können <user@adobe.com> auf allen Geräten und Kanälen als Ziel ausgewählt werden. Wenn kein Profil gefunden wird, wird ein neues erstellt.
 
 So zeigen Sie Customer Journey Analytics-Zielgruppen in Platform an:
 
@@ -161,32 +161,32 @@ So zeigen Sie Customer Journey Analytics-Zielgruppen in Platform an:
 
    ![Option „Zielgruppen“ im linken Bedienfeld](assets/aep-audiences.png)
 
-   * Sortieren Sie die Tabelle nach der Spalte **[!UICONTROL Herkunft]**, um Zielgruppen anzuzeigen, die [!UICONTROL **Customer Journey Analytics**] als Herkunft aufweisen.
+   * Sortieren Sie die Tabelle nach der Spalte **[!UICONTROL Herkunft]**, um Zielgruppen anzuzeigen, die [!UICONTROL **Customer Journey Analytics**] als Ursprung anzeigen.
 
    * Filtern Sie ![](/help/assets/icons/Filter.svg) nach **[!UICONTROL Herkunft]** und wählen Sie **[!UICONTROL Customer Journey Analytics]**.
 
    * Verwenden Sie das ![Suche](/help/assets/icons/Search.svg)-Suchfeld.
 
-Weitere Informationen zur Verwendung von Zielgruppen in Platform finden Sie [ Abschnitt „Zielgruppen](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/segment-builder) im [Handbuch zur Benutzeroberfläche von Segment Builder](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/segment-builder) in der Experience Platform-Dokumentation.
+Weitere Informationen zur Verwendung von Zielgruppen in Platform finden Sie im Abschnitt [Zielgruppen](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/segment-builder) im [Handbuch zur Benutzeroberfläche von Segment Builder](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/segment-builder) in der Dokumentation zu Experience Platform.
 
 
 ## Häufig gestellte Fragen (FAQ) {#faq}
 
 Häufig gestellte Fragen zur Veröffentlichung von Zielgruppen.
 
-+++**Was passiert, wenn eine Benutzerin bzw. ein Benutzer nicht mehr Mitglied einer Zielgruppe auf Customer Journey Analytics ist?**
++++**Was passiert, wenn eine Benutzerin bzw. ein Benutzer nicht mehr Mitglied einer Zielgruppe in Customer Journey Analytics ist?**
 
-In diesem Fall wird ein Beendigungsereignis von Customer Journey Analytics an Experience Platform gesendet.
-
-+++
-
-+++**Was passiert, wenn eine Zielgruppe auf Customer Journey Analytics gelöscht wird?**
-
-Wenn eine Customer Journey Analytics-Zielgruppe gelöscht wird, wird diese Zielgruppe nicht mehr in der Experience Platform-Benutzeroberfläche angezeigt. Profile, die mit dieser Zielgruppe verknüpft sind, werden jedoch nicht in Experience Platform gelöscht.
+In diesem Fall wird ein Exit-Ereignis von Customer Journey Analytics an Experience Platform gesendet.
 
 +++
 
-+++**Wenn in Real-time Customer Data Platform kein entsprechendes Profil vorhanden ist, wird dann ein neues Profil erstellt?**
++++**Was passiert, wenn eine Zielgruppe in Customer Journey Analytics gelöscht wird?**
+
+Wenn eine Customer Journey Analytics-Zielgruppe gelöscht wird, wird diese Zielgruppe nicht mehr in der Experience Platform-Benutzeroberfläche angezeigt. Profile, die mit dieser Zielgruppe verknüpft sind, werden jedoch in Experience Platform nicht gelöscht.
+
++++
+
++++**Wenn in Real-Time Customer Data Platform kein entsprechendes Profil vorhanden ist, wird dann ein neues Profil erstellt?**
 
 Ja.
 
@@ -194,7 +194,7 @@ Ja.
 
 +++**Sendet Customer Journey Analytics die Zielgruppendaten als Pipeline-Ereignisse oder als Einfachdatei, die auch an den Data Lake gesendet wird?**
 
-Customer Journey Analytics streamt die Daten über die Pipeline in Real-time Customer Data Platform, und diese Daten werden auch in einem Systemdatensatz im Data Lake erfasst.
+Customer Journey Analytics streamt die Daten über die Pipeline an Real-Time Customer Data Platform, und diese Daten werden auch in einem Systemdatensatz im Data Lake erfasst.
 
 +++
 
@@ -210,9 +210,9 @@ Siehe oben. Pro Customer Journey Analytics-Person wird nur eine Identität gesen
 
 +++
 
-+++**Verarbeitet Real-time Customer Data Platform auch die Customer Journey Analytics-Nachrichten? Kann Customer Journey Analytics einem Profilidentitätsdiagramm durch Zielgruppenfreigabe Identitäten hinzufügen?**
++++**Verarbeitet Real-Time Customer Data Platform auch die Customer Journey Analytics-Nachrichten? Kann Customer Journey Analytics einem Profilidentitätsdiagramm durch Zielgruppenfreigabe Identitäten hinzufügen?**
 
-Nein. Pro Person wird nur eine Identität gesendet, sodass Real-time Customer Data Platform keine Diagrammkanten nutzen kann.
+Nein. Pro Person wird nur eine Identität gesendet, sodass Real-Time Customer Data Platform keine Diagrammkanten nutzen kann.
 
 +++
 

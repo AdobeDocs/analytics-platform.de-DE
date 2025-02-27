@@ -6,9 +6,10 @@ solution: Customer Journey Analytics
 feature: Basics
 hide: true
 hidefromtoc: true
-source-git-commit: 5e80e68c6b5d3dca19dae21c6719b040b28afaf9
+exl-id: 3a0d03d1-def0-45e6-8eb2-115b88497e6d
+source-git-commit: 1ae4be09a07bd4991342daa43cc23fb966b68aaf
 workflow-type: tm+mt
-source-wordcount: '701'
+source-wordcount: '684'
 ht-degree: 9%
 
 ---
@@ -42,9 +43,7 @@ ht-degree: 9%
 
 <!-- markdownlint-enable MD034 -->
 
->[!NOTE]
-> 
->Verwenden Sie die Informationen auf dieser Seite bei der Beantwortung von Fragen in der Checkliste für das Customer Journey Analytics-Upgrade [](https://gigazelle.github.io/cja-ttv/).
+{{upgrade-note}}
 
 Beim Upgrade auf Customer Journey Analytics empfiehlt Adobe [eine neue Implementierung der Experience Platform Web SDK](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md). Abhängig von verschiedenen Faktoren, wie z. B. Timeline- und Ressourcenbeschränkungen, sind die empfohlenen Upgrade-Schritte für Ihr Unternehmen möglicherweise nicht praktikabel.
 
@@ -71,6 +70,3 @@ Die wichtigsten Schritte zum Senden Ihrer gesamten Datenschicht an Customer Jour
 1. Ordnen Sie jedes Datenschichtelement dem gewünschten XDM-Feld zu.
 
    Datenschichtelemente, die keinem XDM-Feld zugeordnet sind, werden dauerhaft gelöscht, da Adobe nicht weiß, wo und wie diese Daten gespeichert werden sollen.
-
-
-

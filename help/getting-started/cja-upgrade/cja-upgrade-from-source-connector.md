@@ -7,9 +7,9 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: 4c0eef7d-7b0e-43b5-8126-d84d4fffd80c
-source-git-commit: 892dffd831abd46c44c12bd6743a358e3cbd741d
+source-git-commit: 1ae4be09a07bd4991342daa43cc23fb966b68aaf
 workflow-type: tm+mt
-source-wordcount: '466'
+source-wordcount: '445'
 ht-degree: 15%
 
 ---
@@ -25,13 +25,11 @@ ht-degree: 15%
 
 <!-- markdownlint-enable MD034 -->
 
->[!NOTE]
-> 
->Verwenden Sie die Informationen auf dieser Seite bei der Beantwortung von Fragen in der Checkliste für das Customer Journey Analytics-Upgrade [](https://gigazelle.github.io/cja-ttv/).
+{{upgrade-note}}
 
 Die Verwendung des Analytics-Quell-Connectors als einzige Implementierung für Customer Journey Analytics hat inhärente Nachteile.
 
-Wenn Ihr Unternehmen bereits ein Upgrade auf Customer Journey Analytics durchgeführt hat, indem es nur die Analytics-Quell-Connector-Implementierung verwendet, empfiehlt Adobe die Umstellung auf eine Implementierung, die den Analytics-Quell-Connector (für historische Daten) in Verbindung mit einer neuen Implementierung der Web-SDK (für die fortlaufende Datenerfassung) verwendet.
+Wenn Ihr Unternehmen bereits ein Upgrade auf Customer Journey Analytics durchgeführt hat, indem es nur die Analytics-Quell-Connector-Implementierung verwendet, empfiehlt Adobe, zur fortlaufenden Datenerfassung auf eine neue Implementierung der Web-SDK überzugehen und den Analytics-Quell-Connector nur für Verlaufsdaten zu verwenden.
 
 ## Die Vor- und Nachteile der ausschließlichen Verwendung des Analytics-Quell-Connectors verstehen
 
