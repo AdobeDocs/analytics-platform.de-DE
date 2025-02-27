@@ -4,9 +4,9 @@ title: Journey-Arbeitsfläche
 feature: Visualizations
 role: User
 exl-id: be03c3b2-8faf-47b8-b3ab-e953202bf488
-source-git-commit: 55b312552d32070875714a77e1177bf0da5f9d87
+source-git-commit: 51a6341734163fdd6b994ae9cec53ef034959896
 workflow-type: tm+mt
-source-wordcount: '1881'
+source-wordcount: '1893'
 ht-degree: 11%
 
 ---
@@ -174,7 +174,7 @@ Die Verwendung der Journey-Arbeitsfläche zur Analyse von Journey , die in Journ
 
   In Journey Optimizer muss ein technischer Anwender ein Ereignis erstellen, bevor es zu einer Journey hinzugefügt werden kann.
 
-* Erstellen Sie Zielgruppen basierend auf einem benutzerdefinierten Knoten, den Sie erstellen (startet den Customer Journey Analytics-Zielgruppen-Builder).
+* Erstellen Sie Zielgruppen basierend auf einem benutzerdefinierten Knoten, den Sie erstellen (startet den Customer Journey Analytics Audience Builder).
 
   In Journey Optimizer können Sie Zielgruppen nur für vordefinierte Aktivitäten erstellen.
 
@@ -234,11 +234,11 @@ Nachdem Sie eine Journey Optimizer-Journey auf der Journey-Arbeitsfläche geänd
 
 ### Terminologische Unterschiede zwischen Journey Optimizer und Customer Journey Analytics
 
-Bestimmte Begriffe, die in Journey Optimizer etwas bedeuten, bedeuten etwas Anderes im Customer Journey Analytics. Bei Verwendung der Journey-Arbeitsfläche werden die Customer Journey Analytics-Begriffe verwendet.
+Bestimmte Begriffe, die in Journey Optimizer eine Sache bedeuten, bedeuten in Customer Journey Analytics etwas Anderes. Bei Verwendung der Journey-Arbeitsfläche werden die Customer Journey Analytics-Begriffe verwendet.
 
 | Begriff | Journey-Arbeitsfläche | Journey Optimizer |
 |---------|----------|---------|
-| **Ereignis** | Eine von mehreren Standardmetriken, die im Customer Journey Analytics verfügbar sind. Diese Metrik zählt Dinge wie Umsatz, Abonnements oder generierte Leads. | Die Aktivitätskategorie, in der ein personalisierter Journey Trigger wird, z. B. ein Online-Kauf. |
+| **Ereignis** | Eine von mehreren Standardmetriken, die in Customer Journey Analytics verfügbar sind. Diese Metrik zählt Dinge wie Umsatz, Abonnements oder generierte Leads. | Die Aktivitätskategorie, in der ein personalisierter Journey Trigger wird, z. B. ein Online-Kauf. |
 
 ### Analysieren einer Journey Optimizer-Journey auf der Journey-Arbeitsfläche
 
@@ -247,3 +247,9 @@ Informationen zum Analysieren einer Journey Optimizer-Journey auf der Journey-Ar
 ## Erstellen von Analysen auf der Journey-Arbeitsfläche
 
 Sie können Analysen auf der Journey-Arbeitsfläche erstellen, die auf allen in Analysis Workspace verfügbaren Dimensionen oder Metriken basieren. Sie können auch Journey analysieren, die in Journey Optimizer erstellt wurden. Weitere Informationen finden Sie unter [Konfigurieren einer Journey-Arbeitsflächen-](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md).
+
+
+>[!MORELIKETHIS]
+>
+> * [Anleitung zum Journey der Arbeitsflächen-Visualisierung in Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/a-guide-to-journey-canvas-visualization-in-adobe-customer/ba-p/737857)
+

@@ -5,10 +5,10 @@ exl-id: f4f692c9-5951-4fa2-8e9f-5eeff0f79d10
 solution: Customer Journey Analytics
 feature: Basics
 role: User, Admin
-source-git-commit: 4bf8c616965718426efe880865acb0e5054b6a31
-workflow-type: ht
-source-wordcount: '952'
-ht-degree: 100%
+source-git-commit: 51a6341734163fdd6b994ae9cec53ef034959896
+workflow-type: tm+mt
+source-wordcount: '991'
+ht-degree: 96%
 
 ---
 
@@ -92,7 +92,6 @@ Von der Datenerfassung bis zum direkten SQL-Zugriff sind mehrere Komponenten von
 
 ## Videos
 
-
 >[!BEGINSHADEBOX]
 
 Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Arbeiten mit Daten in Customer Journey Analytics](https://video.tv.adobe.com/v/32112/?quality=12&learn=on){target="_blank"} finden Sie ein Einführungsvideo zum Arbeiten mit Daten in Customer Journey Analytics.
@@ -105,4 +104,8 @@ Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Architektur un
 
 >[!ENDSHADEBOX]
 
+* [Adobe Customer Journey Analytics Crash-Kurs für Analysten](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/adobe-customer-journey-analytics-crash-course-for-analysts/ba-p/719261)
 
+* [Optimieren Ihres Denkens und Adobe Customer Journey Analytics-Workflows: Teammodelle für Unternehmen jeder Größe](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/optimizing-your-mindset-and-adobe-customer-journey-analytics/ba-p/721456)
+
+* [Building Organizational Readiness: A People-First Guide to Scaling Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/building-organizational-readiness-a-people-first-guide-to/ba-p/723273)
