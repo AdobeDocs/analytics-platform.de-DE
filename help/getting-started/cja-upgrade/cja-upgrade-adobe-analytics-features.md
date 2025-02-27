@@ -7,10 +7,10 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: 92053109-f80d-47ab-b011-c28a5411149c
-source-git-commit: 4f6b5531578fbc4ae0eef5dc4fb46c3c1b548417
+source-git-commit: 7a5414745f065ec29b59172dee4f723c0ce72e68
 workflow-type: tm+mt
-source-wordcount: '469'
-ht-degree: 52%
+source-wordcount: '464'
+ht-degree: 40%
 
 ---
 
@@ -109,6 +109,6 @@ In der folgenden Liste sind nur die Adobe Analytics-Funktionen aufgeführt, die 
 | [Activity Map-Überlagerung und Linktracking](https://experienceleague.adobe.com/en/docs/analytics/analyze/activity-map/overview) | Noch nicht verfügbar |
 | [Klassifizierungsdaten](https://experienceleague.adobe.com/en/docs/analytics/components/classifications/c-classifications) | Lookup-Datensätze sind die Methode zur Klassifizierung von Daten in Customer Journey Analytics.<p>[Erstellen Sie für jede Dimension, die Klassifizierungsdaten enthält, einen Lookup-Datensatz.](/help/getting-started/cja-upgrade/cja-upgrade-dataset-lookup.md)</p> |
 | [Marketing-Kanäle](https://experienceleague.adobe.com/en/docs/analytics/components/marketing-channels/c-getting-started-mchannel) | Abgeleitete Felder werden in einer Datenansicht erstellt. <p>[Erstellen eines abgeleiteten Felds für einen Marketing-Kanal.](/help/getting-started/cja-upgrade/cja-upgrade-marketing-channel.md)</p> |
-| [Daten-Feeds](https://experienceleague.adobe.com/en/docs/analytics/export/analytics-data-feed/data-feed-overview) | Der Datenexport der ersten Generation von Datensätzen ist über die [Experience Platform Data Access-API](https://experienceleague.adobe.com/docs/experience-platform/data-access/api.html?lang=de) und [Experience Platform-Ziele](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/export-datasets.html?lang=de) verfügbar. Diese Optionen ermöglichen den Export aller im Experience Platform Data Lake erfassten oder aufgenommenen Daten auf Ereignis-/Zeilenebene. Spalten zur Nachbearbeitung von Daten sind nicht verfügbar, da Post-Spalten zur Abfragezeit berechnet werden. Der Export von Post-Spalten ist über das Reporting verfügbar. |
+| [Daten-Feeds](https://experienceleague.adobe.com/en/docs/analytics/export/analytics-data-feed/data-feed-overview) | Experience Platform und Customer Journey Analytics bieten eine Reihe von Funktionen, die entweder unabhängig voneinander oder kombiniert die verschiedenen Exportanforderungen erfüllen können. Zu diesen Funktionen gehören die [Experience Platform Data Access API](https://experienceleague.adobe.com/docs/experience-platform/data-access/api.html?lang=de), [Experience Platform Destinations](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/export-datasets.html?lang=de), [Customer Journey Analytics Full Table Export](/help/analysis-workspace/export/export-cloud.md) und die Integration [BI-Tools](/help/data-views/bi-extension.md).<p>Weitere Informationen zu Exportoptionen finden Sie unter [Anwendungsfälle für den Datenexport](/help/use-cases/data-export/overview.md).</p> |
 | [Data Warehouse](https://experienceleague.adobe.com/en/docs/analytics/export/data-warehouse/data-warehouse) | [Der vollständige Tabellenexport von Customer Journey Analytics](/help/analysis-workspace/export/export-cloud.md) ist die Weiterentwicklung von Data Warehouse-Berichten in Adobe Analytics, mit vielen neuen, häufig angeforderten Funktionen, die heute nicht in Data Warehouse verfügbar sind. |
 | [Streaming-Mediendaten](https://experienceleague.adobe.com/de/docs/media-analytics/using/media-overview) | Streaming-Mediendaten sind über den Analytics-Quell-Connector als Teil des Bedienfelds „Gleichzeitige Medienbetrachter“ und des Bedienfelds „Bei Medienwiedergabe verbrachte Zeit“ in Workspace verfügbar. |
