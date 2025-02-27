@@ -7,14 +7,14 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: 902e5890-f970-4f1a-b091-9c3e51a987db
-source-git-commit: 3b1012a302200192fd31fd6a9ed94f96323eb595
+source-git-commit: 68ce73ddf805ec377fdb2c539683507f191c9249
 workflow-type: tm+mt
-source-wordcount: '1335'
-ht-degree: 51%
+source-wordcount: '1265'
+ht-degree: 52%
 
 ---
 
-# Erstellen eines benutzerdefinierten Schemas zur Verwendung mit Ihrer Customer Journey Analytics Web SDK-Implementierung {#create-custom-schema}
+# Erstellen eines benutzerdefinierten Schemas zur Verwendung mit Customer Journey Analytics {#create-custom-schema}
 
 <!-- markdownlint-disable MD034 -->
 
@@ -43,11 +43,7 @@ ht-degree: 51%
 
 <!-- markdownlint-enable MD034 -->
 
->[!NOTE]
-> 
->Befolgen Sie die Schritte auf dieser Seite erst, nachdem Sie alle vorherigen Upgrade-Schritte abgeschlossen haben. Sie können die [empfohlenen Upgrade-Schritte](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) ausführen oder die Upgrade-Schritte ausführen, die für Ihr Unternehmen mit dem Fragebogen [Upgrade von Adobe Analytics auf Customer Journey Analytics dynamisch generiert ](https://gigazelle.github.io/cja-ttv/).
->
->Nachdem Sie die Schritte auf dieser Seite abgeschlossen haben, folgen Sie den empfohlenen Upgrade-Schritten oder den dynamisch generierten Upgrade-Schritten.
+{{upgrade-note-step}}
 
 >[!IMPORTANT]
 >
