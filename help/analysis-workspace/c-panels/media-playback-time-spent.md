@@ -4,10 +4,10 @@ description: Verwendung und Interpretation des Panels „Bei Medienwiedergabe ve
 feature: Panels
 exl-id: de0fdbea-71f0-445b-a1e4-c7e895f142d4
 role: User
-source-git-commit: 4bf8c616965718426efe880865acb0e5054b6a31
+source-git-commit: 0cd9cd508d474df3dff176bca4596d0379ac86b4
 workflow-type: tm+mt
-source-wordcount: '1160'
-ht-degree: 55%
+source-wordcount: '1073'
+ht-degree: 49%
 
 ---
 
@@ -27,22 +27,22 @@ ht-degree: 55%
 >[!CONTEXTUALHELP]
 >id="workspace_mediaplaybacktimespent_panel"
 >title="Bei der Medienwiedergabe verbrachte Zeit"
->abstract="Analysieren Sie den Videokonsum im Zeitverlauf, wählen Sie verschiedene Granularitäten aus, schlüsseln Sie die Daten auf und vergleichen Sie sie.<br/><br/>**Granularität**: Wählen Sie aus, nach welchem Zeitraum gleichzeitige Betrachtende angezeigt werden sollen.<br/>**Zusammenfassende Zahlen der Bedienfelder (optional)**: Wählen Sie diese Option aus, um für jede Zeile zusammenfassende Zahlen mit Datums- oder Uhrzeitangaben anzuzeigen. „Maximum“ zeigt Details für die maximale Wiedergabedauer an. „Minimum“ zeigt Details für die minimale Wiedergabedauer an. „Summe“ zeigt Details zur Gesamtwiedergabedauer an.<br/>**Serienaufschlüsselung (optional)**: Schlüsseln Sie Visualisierungen nach Segmenten, Dimensionen, Dimensionselementen oder Datumsbereichen auf. Sie können jeweils bis zu 10 Zeilen anzeigen. Aufschlüsselungen sind auf eine einzelne Ebene beschränkt.<br/>**Zeitformat**: Wählen Sie diese Option aus, um das Zeitformat für Visualisierungen in Stunden oder Minuten anzuzeigen."
+>abstract="Analysieren Sie den Videokonsum im Zeitverlauf, wählen Sie verschiedene Granularitäten aus und schlüsseln Sie ihn optional mithilfe von Filtern, Dimensionen, Dimensionselementen oder Datumsbereichen auf und vergleichen Sie ihn."
 
 <!-- markdownlint-enable MD034 -->
 
 
 >[!BEGINSHADEBOX]
 
-_In diesem Artikel wird das Panel „Verbrachte Zeit bei der Medienwiedergabe“ in_![ CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**_ dokumentiert.<br/>_Siehe [Bedienfeld „Mit Medienwiedergabe verbrachte Zeit](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/panels/media-playback-time-spent) für die_![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**-Version dieses Artikels._
+_In diesem Artikel wird das Panel „Verbrachte Zeit bei der Medienwiedergabe“ in_![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**_.<br/>_Siehe [Bedienfeld „Mit Medienwiedergabe verbrachte Zeit](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/panels/media-playback-time-spent) für die_![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**-Version dieses Artikels._
 
 >[!ENDSHADEBOX]
 
 
 >[!NOTE]
 >
->Das Bedienfeld „Medien-Zielgruppendurchschnitt pro Minute“ ist nur für Kunden verfügbar, die das Add-on „Streaming Media Collection“ zum Customer Journey Analytics erworben haben.
->Weitere Informationen erhalten Sie von Ihrem Adobe-Kundenbetreuer oder Ihrem Adobe-Account-Team.
+>Das Bedienfeld „Medien-Zielgruppendurchschnitt pro Minute“ ist nur für Kunden verfügbar, die das Add-on „Streaming Media Collection“ für Customer Journey Analytics erworben haben.
+>Wenden Sie sich an Ihren Adobe-Vertriebsmitarbeiter oder Ihr Adobe-Accountteam, um weitere Informationen zu erhalten.
 >
 
 Das Bedienfeld **[!UICONTROL Bei Medienwiedergabe verbrachte Zeit]** ermöglicht die Analyse der Wiedergabe im Zeitverlauf, mit Details zu Spitzenzeiten, in denen gleichzeitige Aufrufe stattfanden, und der Möglichkeit, diese aufzuschlüsseln und zu vergleichen.

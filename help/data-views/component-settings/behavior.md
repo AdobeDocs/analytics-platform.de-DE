@@ -5,10 +5,10 @@ exl-id: 170f445f-1eac-4b70-8956-1afb0cb2d611
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: e4e0c3cf2e865454837df6626c3b1b09f119f07f
+source-git-commit: 0cd9cd508d474df3dff176bca4596d0379ac86b4
 workflow-type: tm+mt
-source-wordcount: '340'
-ht-degree: 90%
+source-wordcount: '334'
+ht-degree: 84%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 90%
 >[!CONTEXTUALHELP]
 >id="dataview_component_dimension_behavior"
 >title="Verhalten"
->abstract="Bestimmen Sie, wie Zeileneinträge in dieser Dimension aggregiert werden.<br/><br/>**Parameter **<br/>**Kleinbuchstaben**: Ermöglicht die Angabe, ob die Zeichenfolgenwerte im Feld in Kleinbuchstaben sein sollen."
+>abstract="Bestimmen Sie, wie Zeileneinträge in dieser Dimension aggregiert werden. Geben Sie an, ob die Zeichenfolgenwerte im Feld in Kleinbuchstaben geschrieben werden sollen."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -38,7 +38,7 @@ Verhaltenseinstellungen sind sowohl für Dimensionen als auch für Metriken verf
 
 >[!NOTE]
 >
->Wenn Sie [!UICONTROL Kleinbuchstaben] für eine Such-Datensatzdimension aktivieren, können für dieselbe Kennung mehrere Suchwerte vorhanden sein. In diesem Fall verwendet Customer Journey Analytics den ersten gesammelten ASCII-Wert (Werte in Großbuchstaben vor Kleinbuchstaben). Adobe rät davon ab, Such-Datensätze zu verwenden, die denselben Wert enthalten, wenn [!UICONTROL Kleinbuchstaben] aktiviert ist.
+>Wenn Sie [!UICONTROL Kleinbuchstaben] für eine Such-Datensatzdimension aktivieren, können für dieselbe Kennung mehrere Suchwerte vorhanden sein. Wenn dieser Konflikt auftritt, verwendet Customer Journey Analytics den ersten gesammelten ASCII-Wert (Werte in Großbuchstaben vor Kleinbuchstaben). Adobe rät davon ab, Such-Datensätze zu verwenden, die denselben Wert enthalten, wenn [!UICONTROL Kleinbuchstaben] aktiviert ist.
 
 ![Dimension mit Berücksichtigung von Groß-/Kleinschreibung](../assets/case-sens-workspace.png)
 

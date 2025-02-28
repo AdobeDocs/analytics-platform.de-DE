@@ -4,14 +4,20 @@ title: Konfigurieren einer Flussvisualisierung
 feature: Visualizations
 exl-id: 7055cbc9-19b3-40f0-b8d4-52d241224827
 role: User
-source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
+source-git-commit: 0cd9cd508d474df3dff176bca4596d0379ac86b4
 workflow-type: tm+mt
-source-wordcount: '1433'
+source-wordcount: '1446'
 ht-degree: 37%
 
 ---
 
-# Konfigurieren einer Flussvisualisierung
+# Konfigurieren einer Flussvisualisierung {#configure-a-flow-visualization}
+
+>[!CONTEXTUALHELP]
+>id="workspace_flow_container"
+>title="Fluss-Container"
+>abstract="Wählen Sie den Container aus, der für die Anzeige (der Zahlen) des Pfads verwendet werden soll."
+
 
 Flussvisualisierungen helfen Ihnen, die Journey zu verstehen, die von einem bestimmten Konversionsereignis auf Ihrer Website oder in Ihrer App stammt. Oder führen zu einem bestimmten Konversionsereignis. Die Visualisierung verfolgt einen Pfad durch Ihre Dimensionen (und Dimensionselemente) oder Metriken.
 
@@ -39,7 +45,7 @@ Sie können den Beginn oder das Ende des Pfads konfigurieren, an dem Sie interes
    >
    >Berechnete Metriken können nicht in den Feldern **[!UICONTROL Beginnt mit]** oder **[!UICONTROL Endet mit]** verwendet werden.
 
-1. Wenn Sie eine Metrik auswählen, müssen Sie auch eine &quot;[!UICONTROL **&quot;-Dimension angeben**] die als Pfad verwendet werden soll, der zu der ausgewählten Komponente führt oder von ihr stammt, wie hier dargestellt. Die Standardeinstellung ist [!UICONTROL **Seite**].
+1. Wenn Sie eine Metrik auswählen, müssen Sie auch einen [!UICONTROL **Pfad Dimension**] angeben, der als Pfad verwendet werden soll, der zu Ihrer ausgewählten Komponente führt oder von ihr stammt, wie hier dargestellt. Die Standardeinstellung ist [!UICONTROL **Seite**].
 
    ![Flusskonfiguration](assets/flow-configure.png)
 
@@ -141,12 +147,12 @@ Im folgenden Beispiel sind **alle** Vorkommen von *Produkthauptkategorie* und *Z
   Im folgenden Beispiel sind nur die **letzten** Vorkommen von *Produkthauptkategorie* und *Zum Warenkorb hinzufügen* in jedem Schritt des Flusses enthalten.
   ![Lint, Start](assets/limitonlast.png)
 * Die verwendete Reihe unterscheidet sich je nach Container. Bei Verwendung des **[!UICONTROL Person]**-Containers ist die Ereignisreihe die Sitzung. Bei Verwendung des **[!UICONTROL Sitzungs]**-Containers sind die Ereignisreihen alle Ereignisse für eine bestimmte Benutzerin oder einen bestimmten Benutzer im bereitgestellten Datumsbereich.
-* Die Option **[!UICONTROL Begrenzung auf erstes/letztes Auftreten]** kann in den erweiterten Einstellungen konfiguriert werden, wenn eine Metrik oder ein Element der Dimension in den Feldern **[!UICONTROL Beginnt mit]** oder **[!UICONTROL Endet mit]** verwendet wird.
+* Die Option **[!UICONTROL Begrenzung auf erstes/letztes Auftreten]** kann in den erweiterten Einstellungen konfiguriert werden, wenn eine Metrik oder ein Dimension-Element in den Feldern **[!UICONTROL Beginnt mit]** oder **[!UICONTROL Endet mit]** verwendet wird.
 
 
 >[!MORELIKETHIS]
 >
->[Hinzufügen einer Visualisierung zu einem Bedienfeld](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
+>[Hinzufügen einer Visualisierung in einem Panel](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
 >[Visualisierungseinstellungen](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
 >[Kontextmenü der Visualisierung](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
 >

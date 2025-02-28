@@ -4,10 +4,10 @@ description: Verwendung und Interpretation des Bedienfelds „Medien-Zielgruppen
 feature: Panels
 role: User, Admin
 exl-id: c55b5534-a9a6-47f1-8b43-c8c0b8686c53
-source-git-commit: 55b312552d32070875714a77e1177bf0da5f9d87
+source-git-commit: 0cd9cd508d474df3dff176bca4596d0379ac86b4
 workflow-type: tm+mt
-source-wordcount: '1817'
-ht-degree: 29%
+source-wordcount: '1677'
+ht-degree: 22%
 
 ---
 
@@ -27,21 +27,21 @@ ht-degree: 29%
 >[!CONTEXTUALHELP]
 >id="workspace_mediaaverageminuteaudience_panel"
 >title="Medien-Zielgruppendurchschnitt pro Minute"
->abstract="Zeigt die Leistung bestimmter Medieninhalte oder über einen benutzerdefinierten Zeitraum an.<br/><br/>**Allgemeine Parameter **<br/>**Metrik berechnen für**: Wählen Sie die für das Bedienfeld zu verwendende Metrik aus. Wählen Sie **Bestimmter Inhalt** aus, um den Zielgruppendurchschnitt pro Minute für bestimmte Inhalte oder Ereignisse basierend auf der Inhaltslänge zu analysieren. **Wählen Sie „Benutzerdefinierter Zeitraum“ aus**, um zu analysieren, wie sich der Zielgruppendurchschnitt pro Minute über einen benutzerdefinierten Zeitraum verändert.<br/>**Reporting-Dimension**: Wählen Sie diese Option aus, um einen Bericht nach der Dimension **Videoname** oder **Inhalts-ID** zu erstellen. Nur verfügbar, wenn Sie „Bestimmter Inhalt“ als Metrik ausgewählt haben.<br/>**Granularität**: Wählen Sie die Granularität für die Berichte aus. Nur verfügbar, wenn Sie „Benutzerdefinierter Zeitraum“ als Metrik ausgewählt haben.<br/>**Inhalt filtern nach (optional)**: Wählen Sie eine bestimmte Sendung, Staffel, Folge oder eine benutzerdefinierte Dimension aus, um den Inhalt zu filtern.<br/><br/>**Erweiterte Einstellungen **<br/>**Tabelleneinstellungen**: Legen Sie fest, ob Berechnungswerte in der Tabelle angezeigt werden sollen.<br/>**Besuchszeitmetrik**: Legen Sie fest, welche Besuchszeitmetrik für die Berechnung eines bestimmten Inhalts verwendet werden soll. Nur verfügbar, wenn Sie „Bestimmter Inhalt“ als Metrik ausgewählt haben."
+>abstract="Zeigt die Leistung bestimmter Medieninhalte oder die Leistung über einen benutzerdefinierten Zeitraum an. Geben Sie die Reporting-Dimension an und filtern Sie optional den Inhalt."
 
 <!-- markdownlint-enable MD034 -->
 
 >[!BEGINSHADEBOX]
 
-_In diesem Artikel wird das Bedienfeld „Medien-Zielgruppendurchschnitt pro Minute“ in_![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**_ dokumentiert.<br/>_Siehe [Bedienfeld „Medien-Zielgruppendurchschnitt pro Minute](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/panels/average-minute-audience-panel) für die_![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**-Version dieses Artikels._
+_In diesem Artikel wird das Bedienfeld „Medien-Zielgruppendurchschnitt pro Minute“ in_![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**_.<br/>_Siehe [Bedienfeld „Medien-Zielgruppendurchschnitt pro Minute](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/panels/average-minute-audience-panel) für die_![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**-Version dieses Artikels._
 
 >[!ENDSHADEBOX]
 
 >[!NOTE]
 >
->Das Bedienfeld **[!UICONTROL Medien-Zielgruppendurchschnitt pro Minute]** steht nur Kunden zur Verfügung, die die Streaming-Mediensammlung zum Customer Journey Analytics erworben haben.
+>Das Bedienfeld **[!UICONTROL Medien-Zielgruppendurchschnitt pro Minute]** steht nur Kunden zur Verfügung, die die Streaming-Mediensammlung für Customer Journey Analytics erworben haben.
 >
->Wenden Sie sich an Ihren Adobe-Kundenbetreuer oder Ihr Adobe-Kundenbetreuerteam, um weitere Informationen zu erhalten.
+>Wenden Sie sich an Ihren Adobe-Vertriebsmitarbeiter oder Ihr Adobe-Accountteam, um weitere Informationen zu erhalten.
 >
 
 In Analysis Workspace kann der Zielgruppendurchschnitt pro Minute Informationen zu folgenden Themen liefern

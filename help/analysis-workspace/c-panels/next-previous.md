@@ -4,10 +4,10 @@ title: Bedienfeld „Nächstes oder vorheriges Element“
 feature: Panels
 role: User, Admin
 exl-id: a5f6ce97-6720-4129-9ece-e2e834289d45
-source-git-commit: 55b312552d32070875714a77e1177bf0da5f9d87
+source-git-commit: 0cd9cd508d474df3dff176bca4596d0379ac86b4
 workflow-type: tm+mt
-source-wordcount: '469'
-ht-degree: 36%
+source-wordcount: '420'
+ht-degree: 19%
 
 ---
 
@@ -20,26 +20,29 @@ ht-degree: 36%
 >title="Nächstes oder vorheriges Objekt"
 >abstract="Erstellen Sie ein Bedienfeld, um mehr über die vorherigen Dimensionen zu erfahren, aus denen Personen kommen, oder über die nächste Dimension, zu der sie gehen."
 
-<!-- markdownlint-disable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="workspace_nextorpreviousitem_panel"
 >title="Nächstes oder vorheriges Objekt"
->abstract="Analysieren Sie, von wo Besuchende am häufigsten gekommen sind oder wohin sie als Nächstes gehen.<br/><br/>**Dimension**: Wählen Sie eine Dimension aus, z. B. **Seite**.<br/>**Dimensionselement**: Wählen Sie ein bestimmtes Dimensionselement aus, z. B. **Homepage**.<br/>**Richtung**: Wählen Sie **Weiter** aus, um die Dimensionselemente unmittelbar nach dem ausgewählten Dimensionselement anzuzeigen. Wählen Sie **Zurück** aus, um die Dimensionselemente anzuzeigen, die zu Ihrem ausgewählten Dimensionselement führen.<br/>**Container**: Wählen Sie **Sitzung** aus, um die nächsten/vorherigen Dimensionselemente innerhalb derselben Sitzung anzuzeigen, oder **Person**, um das nächste/vorherige Dimensionselement für dieselbe Person anzuzeigen."
+>abstract="Analysieren Sie, von welchen Orten die Besucher am häufigsten kamen oder als Nächstes gehen. Geben Sie die Dimension, das Dimensionselement, die Richtung und den Container an, der für die Visualisierung verwendet werden soll."
+
+
 
 <!-- markdownlint-enable MD034 -->
 
 >[!BEGINSHADEBOX]
 
-_In diesem Artikel wird das Bedienfeld Nächstes oder vorheriges Element in {_}![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics.**_.<br/>_Siehe [Bedienfeld „Nächstes oder vorheriges Element](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/panels/next-previous) für die_![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**-Version dieses Artikels._
+_In diesem Artikel wird das Bedienfeld Nächstes oder vorheriges Element in {_}![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**_.<br/>_Siehe [Bedienfeld „Nächstes oder vorheriges Element](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/panels/next-previous) für die_![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**-Version dieses Artikels._
 
 >[!ENDSHADEBOX]
 
 Das Bedienfeld **[!UICONTROL Nächstes oder vorheriges Element]** enthält eine Reihe von Tabellen und Visualisierungen, um das nächste oder vorherige Dimensionselement für eine bestimmte Dimension zu identifizieren. Vielleicht möchten Sie herausfinden, welche Seiten Kundinnen und Kunden am häufigsten besucht haben, nachdem sie die Startseite besucht haben.
 
-## Verwenden
+## Verwenden {#use}
+
+>[!CONTEXTUALHELP]
+>id="workspace_nextorpreviousitem_container"
+>title="Container"
+>abstract="Wählen Sie den Container aus, um den Umfang Ihrer Anfrage zu bestimmen."
 
 So verwenden Sie ein Bedienfeld **[!UICONTROL Nächstes oder vorheriges Element]**:
 

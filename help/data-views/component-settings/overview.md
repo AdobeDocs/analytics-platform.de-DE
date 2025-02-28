@@ -5,10 +5,10 @@ exl-id: 6300d289-d308-476e-aa4e-05cdae361bb2
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: 4bf8c616965718426efe880865acb0e5054b6a31
-workflow-type: ht
-source-wordcount: '673'
-ht-degree: 100%
+source-git-commit: 0cd9cd508d474df3dff176bca4596d0379ac86b4
+workflow-type: tm+mt
+source-wordcount: '669'
+ht-degree: 94%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 100%
 >[!CONTEXTUALHELP]
 >id="dataview_component_settings"
 >title="Komponenteneinstellungen"
->abstract="Zeigen Sie den Namen, die Beschreibung und andere Einstellungen einer Komponente an und konfigurieren Sie sie.<br/><br/>**Parameter **<br/>**Komponente in Berichten verbergen**: Wenn Sie dieses Kontrollkästchen aktivieren, wird diese Komponente bei der Berichterstellung für Benutzende ohne Administratorrechte ausgeblendet. Admins können weiterhin darauf zugreifen, indem sie in einem Workspace-Projekt **[!UICONTROL Alle Komponenten zeigen]** auswählen."
+>abstract="Zeigen Sie den Namen, die Beschreibung und andere Einstellungen für eine Komponente an und konfigurieren Sie sie. Aktivieren Sie dieses Kontrollkästchen, um diese Komponente im Reporting vor Benutzern ohne Administratorrechte auszublenden. Administratoren können weiterhin auf die Komponente zugreifen, indem sie **[!UICONTROL Alle Komponenten anzeigen]** in einem Workspace-Projekt auswählen."
 
 <!-- markdownlint-enable MD034 -->
 

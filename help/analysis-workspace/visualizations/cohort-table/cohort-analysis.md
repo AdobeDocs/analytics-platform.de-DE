@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie eine Kohortentabelle für die Kohortenanalyse
 feature: Visualizations
 exl-id: 3e3a70cd-70ec-4d4d-81c3-7902716d0b01
 role: User
-source-git-commit: 4bf8c616965718426efe880865acb0e5054b6a31
+source-git-commit: 0cd9cd508d474df3dff176bca4596d0379ac86b4
 workflow-type: tm+mt
-source-wordcount: '692'
-ht-degree: 30%
+source-wordcount: '705'
+ht-degree: 23%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 30%
 >[!CONTEXTUALHELP]
 >id="workspace_cohorttable_panel"
 >title="Kohortentabelle"
->abstract="Gruppieren Sie Benutzende bei Abschluss eines Ereignisses und analysieren Sie dann ihre anhaltenden Interaktionen und Abwanderungen im Zeitverlauf.<br/><br/>**Parameter **<br/>**Aufnahmekriterien**: Die Komponenten, die zur Definition der anfänglichen Besucherkohorten verwendet werden.<br/>**Rückkehrkriterien**: Die Komponenten, mit denen bestimmt wird, ob eine Besucherin bzw. ein Besucher zurückgekehrt ist."
+>abstract="Gruppieren Sie Benutzer nach Abschluss eines Ereignisses und analysieren Sie dann deren fortlaufende Interaktion und Abwanderung im Laufe der Zeit. Geben Sie zusätzliche Einstellungen wie Granularität, Typ der Kohortenanalyse und die Verwendung rollierender Berechnungen an. Sie können erweiterte Optionen festlegen, um eine Latenztabelle oder eine benutzerdefinierte Dimensionskohorte basierend auf einer ausgewählten Dimension zu erstellen."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -50,7 +50,7 @@ Beispiele für Möglichkeiten einer „Kohortentabelle:
 * Erkennen Sie, wann Sie eine Testversion oder ein Angebot beenden müssen, um den Wert zu maximieren.
 * Gewinnen Sie Ideen für A/B-Tests in Bereichen wie Preisstruktur, Upgrade-Pfad usw.
 
-[!UICONTROL Kohortentabelle] ist für alle Customer Journey Analytics-Kunden mit Zugriffsrechten auf [!UICONTROL Analysis Workspace verfügbar].
+[!UICONTROL Kohortentabelle] steht allen Customer Journey Analytics-Kunden mit Zugriffsrechten auf [!UICONTROL Analysis Workspace] zur Verfügung.
 
 
 >[!BEGINSHADEBOX]

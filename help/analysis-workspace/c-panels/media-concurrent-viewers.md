@@ -4,10 +4,10 @@ description: Verwendung und Interpretation des Bedienfelds „Gleichzeitige Medi
 feature: Panels
 exl-id: a442fb9c-165f-4136-95e2-ce92b9280c25
 role: User
-source-git-commit: bd8c9951386608572d84006bd5465e57214c56d4
+source-git-commit: 0cd9cd508d474df3dff176bca4596d0379ac86b4
 workflow-type: tm+mt
-source-wordcount: '1238'
-ht-degree: 46%
+source-wordcount: '1174'
+ht-degree: 40%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 46%
 >[!CONTEXTUALHELP]
 >id="workspace_mediaconcurrentviewers_button"
 >title="Gleichzeitige Medienbetrachtende"
->abstract="Erstellen Sie ein Panel, um den Zielgruppendurchschnitt pro Minute für bestimmte Inhalte oder über einen bestimmten Zeitraum zu analysieren."
+>abstract="Erstellen Sie ein Bedienfeld, um gleichzeitige Betrachter über einen bestimmten Zeitraum zu analysieren."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -27,7 +27,7 @@ ht-degree: 46%
 >[!CONTEXTUALHELP]
 >id="workspace_mediaconcurrentviewers_panel"
 >title="Gleichzeitige Medienbetrachtende"
->abstract="Analysieren Sie gleichzeitige Betrachtende im Zeitverlauf, zeigen Sie Informationen zum maximalen gleichzeitigen Zugriff an oder schlüsseln Sie Daten auf und vergleichen Sie sie.<br/><br>**Granularität**: Wählen Sie aus, nach welchem Zeitraum gleichzeitige Betrachtende angezeigt werden sollen.<br/>**Zusammenfassende Zahlen der Bedienfelder**:<br/>Wählen Sie diese Option aus, um für jede Zeile zusammenfassende Zahlen mit Datums- oder Uhrzeitangaben anzuzeigen. „Maximum“ zeigt Details zum maximalen gleichzeitigen Zugriff an. „Minimum“ zeigt Details für die minimale Wiedergabedauer an.<br/>**Serienaufschlüsselung (optional)**: Schlüsseln Sie Visualisierungen nach Segmenten, Dimensionen, Dimensionselementen oder Datumsbereichen auf. Sie können jeweils bis zu 10 Zeilen anzeigen. Aufschlüsselungen sind auf eine einzelne Ebene beschränkt."
+>abstract="Analyse der gleichzeitigen Betrachter im Zeitverlauf, Anzeige von Spitzenzeiten bei gleichzeitigen Ansichten und optional Aufschlüsselung und Vergleich mithilfe von Filtern, Dimensionen, Dimensionselementen oder Datumsbereichen."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -41,9 +41,9 @@ _In diesem Artikel wird das Bedienfeld „Gleichzeitige Medienbetrachter“ in {
 
 >[!NOTE]
 >
->Das Bedienfeld „Medien-Zielgruppendurchschnitt pro Minute“ ist nur für Kunden verfügbar, die das Add-on „Streaming Media Collection“ zum Customer Journey Analytics erworben haben.
+>Das Bedienfeld „Medien-Zielgruppendurchschnitt pro Minute“ ist nur für Kunden verfügbar, die das Add-on „Streaming Media Collection“ für Customer Journey Analytics erworben haben.
 >
->Wenden Sie sich an Ihren Adobe-Kundenbetreuer oder Ihr Adobe-Kundenbetreuerteam, um weitere Informationen zu erhalten.
+>Wenden Sie sich an Ihren Adobe-Vertriebsmitarbeiter oder Ihr Adobe-Accountteam, um weitere Informationen zu erhalten.
 >
 
 Das Bedienfeld **[!UICONTROL Gleichzeitige Medienbetrachter]** ermöglicht die Analyse gleichzeitiger Betrachter im Zeitverlauf mit Details zu Spitzenzeiten von gleichzeitigen Betrachtern und der Möglichkeit, diese aufzuschlüsseln und zu vergleichen.

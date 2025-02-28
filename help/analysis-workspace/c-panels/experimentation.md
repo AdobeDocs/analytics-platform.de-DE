@@ -1,13 +1,13 @@
 ---
-description: Erfahren Sie, wie Sie die Ergebnisse von A/B-Tests im Bedienfeld "Customer Journey Analytics-Experimentieren“ analysieren können.
+description: Erfahren Sie, wie Sie die Ergebnisse von A/B-Tests im Experimentier-Bedienfeld von Customer Journey Analytics analysieren können.
 title: Experimentier-Bedienfeld
 feature: Panels
 exl-id: e11169b4-2c73-4dd4-bca7-c26189d60631
 role: User
-source-git-commit: dbf0ef92069778f6c805fa4315864b2c2c4a6622
+source-git-commit: 0cd9cd508d474df3dff176bca4596d0379ac86b4
 workflow-type: tm+mt
-source-wordcount: '2183'
-ht-degree: 20%
+source-wordcount: '2141'
+ht-degree: 16%
 
 ---
 
@@ -27,14 +27,14 @@ ht-degree: 20%
 >[!CONTEXTUALHELP]
 >id="workspace_experimentation_panel"
 >title="Experimentieren"
->abstract="Vergleichen Sie verschiedene Benutzererfahrungen, Marketing- oder Messaging-Variationen, um zu bestimmen, welche am besten geeignet ist, um ein bestimmtes Ergebnis zu erzielen.<br/><br/>**Parameter **<br/>**Experiment**: Das Experiment, das analysiert wird.<br>**Kontrollvariante**: Die Kontrollvariante für das ausgewählte Experiment.<br/>**Erfolgsmetrik**: Bis zu 5 standardmäßige (nicht berechnete) Erfolgsmetriken zur Analyse des Experiments.<br/>**Normalisierungsmetrik**: Personen, Sitzungen oder Ereignisse. Diese Metrik (auch als Zählmethodik bezeichnet) wird zum Nenner der Steigerungsberechnung. Diese Metrik wirkt sich auch darauf aus, wie die Daten aggregiert werden, bevor die Konfidenzberechnung angewendet wird."
+>abstract="Vergleichen Sie verschiedene Benutzererlebnisse, Marketing- oder Messaging-Variationen, um zu bestimmen, welche am besten geeignet ist, um ein bestimmtes Ergebnis zu erzielen. Geben Sie das Experiment, die zu vergleichende Kontrollvariante, die Erfolgsmetrik und die Normalisierungsmetrik an. Legen Sie optional Ober- und Untergrenzen für die Konfidenz fest."
 
 <!-- markdownlint-enable MD034 -->
 
 
 >[!BEGINSHADEBOX]
 
-_In diesem Artikel wird das Experimentier-Bedienfeld in {_}![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics.**._<br/>_Siehe [Bedienfeld „Analytics for Target](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/panels/a4t-panel) für Informationen zur Analyse von Adobe Target-Aktivitäten und -Erlebnissen_![Adobe Analytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**._
+_In diesem Artikel wird das Experimentier-Bedienfeld in {_}![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._<br/>_Siehe [Bedienfeld „Analytics for Target](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/panels/a4t-panel) für Informationen zur Analyse von Adobe Target-Aktivitäten und -Erlebnissen_![Adobe Analytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**._
 
 >[!ENDSHADEBOX]
 
@@ -45,7 +45,7 @@ Lesen Sie mehr über die [Integration zwischen Adobe Customer Journey Analytics 
 
 ## Zugangssteuerung {#access}
 
-Das Bedienfeld Experimentieren steht allen Customer Journey Analytics-Anwendern zur Verfügung. Es sind keine Administratorrechte oder anderen Berechtigungen erforderlich. Die Voraussetzungen erfordern jedoch Aktionen, die nur Admins ausführen können.
+Das Bedienfeld „Experimentieren“ kann von allen Customer Journey Analytics-Benutzern verwendet werden. Es sind keine Administratorrechte oder anderen Berechtigungen erforderlich. Die Voraussetzungen erfordern jedoch Aktionen, die nur Admins ausführen können.
 
 ## Funktionen in berechneten Metriken
 
@@ -64,7 +64,7 @@ Nachdem Ihre Experimentierdaten in Adobe Experience Platform [aufgenommen](https
 
 ### Hinzufügen von Kontextbeschriftungen in Datenansichten
 
-In den Einstellungen für Customer Journey Analytics-Datenansichten können Administratoren [Kontextbeschriftungen](/help/data-views/component-settings/overview.md) zu einer Dimension oder Metrik hinzufügen, und Customer Journey Analytics-Services wie das Bedienfeld [!UICONTROL Experimentieren] können diese Beschriftungen für ihre Zwecke verwenden. Für das Bedienfeld „Experimentieren“ werden zwei vordefinierte Beschriftungen verwendet:
+In den Einstellungen für Datenansichten in Customer Journey Analytics können Administratoren [Kontextbeschriftungen](/help/data-views/component-settings/overview.md) zu einer Dimension oder Metrik hinzufügen, und Customer Journey Analytics-Services wie das Bedienfeld [!UICONTROL Experimentieren] können diese Beschriftungen für ihre Zwecke verwenden. Für das Bedienfeld „Experimentieren“ werden zwei vordefinierte Beschriftungen verwendet:
 
 * [!UICONTROL Experimentierexperiment]
 * [!UICONTROL Experimentiervariante]
@@ -101,7 +101,7 @@ So verwenden Sie das Bedienfeld „Experimentieren“:
 
    | Einstellung | Definition |
    | --- | --- |
-   | **[!UICONTROL Datumsbereich]** | Der Datumsbereich für das Experimentier-Bedienfeld wird automatisch auf der Grundlage des ersten Ereignisses festgelegt, das für das ausgewählte Experiment als Customer Journey Analytics empfangen wurde. Sie können den Datumsbereich bei Bedarf auf einen spezifischeren Zeitraum beschränken oder erweitern. |
+   | **[!UICONTROL Datumsbereich]** | Der Datumsbereich für das Bedienfeld Experimentieren wird automatisch auf der Grundlage des ersten Ereignisses festgelegt, das für das ausgewählte Experiment in Customer Journey Analytics empfangen wurde. Sie können den Datumsbereich bei Bedarf auf einen spezifischeren Zeitraum beschränken oder erweitern. |
    | **[!UICONTROL Experiment]** | Eine Reihe von Varianten eines Erlebnisses, die Endbenutzern präsentiert wurden, um zu bestimmen, welche am besten dauerhaft beibehalten werden sollte. Ein Experiment besteht aus zwei oder mehr Varianten, von denen eine als Kontrollvariante gilt. Diese Einstellung wird vorab mit den Dimensionen gefüllt, die in den Datenansichten mit der Beschriftung **[!UICONTROL Experiment]** gekennzeichnet wurden, sowie mit den Experimentdaten der letzten drei Monate. |
    | **[!UICONTROL Kontrollvariante]** | Eine von zwei oder mehr Änderungen im Erlebnis eines Endbenutzers, die verglichen werden, um die bessere Alternative zu ermitteln. Eine Variante muss als Kontrolle ausgewählt werden und nur eine Variante kann als Kontrollvariante betrachtet werden. Diese Einstellung wird vorab mit den Dimensionen gefüllt, die in den Datenansichten mit der Beschriftung **[!UICONTROL Variante]** gekennzeichnet wurden. Mit dieser Einstellung werden die Variantendaten abgerufen, die mit diesem Experiment verknüpft sind. |
    | **[!UICONTROL Erfolgsmetriken]** | Die Metrik(en), die ein Anwender verwendet, um Varianten zu vergleichen. Die Variante mit dem wünschenswertesten Ergebnis für die Konversionsmetrik (egal ob am höchsten oder am niedrigsten) wird zur *Variante mit der besten Performance* eines Experiments erklärt. Sie können bis zu 5 Metriken hinzufügen. |
@@ -152,7 +152,7 @@ Eine Konfidenzsequenz von 95 % enthält in 95 der 100 Experimente, die Sie durch
 
 ## Interpretieren nicht-randomisierter Dimensionen {#non-randomized}
 
-Beim Customer Journey Analytics können Analysten eine beliebige Dimension als Experiment auswählen. Aber wie interpretiert man eine Analyse, bei der die als Experiment gewählte Dimension nicht diejenige ist, für die die Personen randomisiert werden?
+Mit Customer Journey Analytics können Analysten eine beliebige Dimension als Experiment auswählen. Aber wie interpretiert man eine Analyse, bei der die als Experiment gewählte Dimension nicht diejenige ist, für die die Personen randomisiert werden?
 
 Betrachten Sie beispielsweise eine Anzeige, die eine Person sieht. Es könnte für Sie interessant sein, die Änderung an einer Metrik zu messen (z. B. durchschnittlicher Umsatz), wenn Sie Personen *Anzeige B* anstelle von *Anzeige A* anzeigen. Die Kausalwirkung der Anzeige von AD B anstelle von AD A ist für die Entscheidung über das Inverkehrbringen von zentraler Bedeutung. Dieser kausale Effekt kann als durchschnittlicher Umsatz über die gesamte Population gemessen werden, wenn Sie den Status quo der Anzeige von Anzeige A durch die alternative Strategie der Anzeige von Anzeige B ersetzt haben.
 
@@ -160,7 +160,7 @@ A/B-Tests sind in der Branche der Goldstandard für die objektive Messung der Au
 
 Betrachten wir nun eine Dimension, die durch Randomisierung nicht erreicht wird, zum Beispiel den US-Bundesstaat der Person. Die Menschen kommen hauptsächlich aus zwei Bundesstaaten, New York und Kalifornien. Der durchschnittliche Umsatz mit dem Verkauf einer Winterkleidungsmarke kann in den beiden Bundesstaaten aufgrund der Unterschiede im regionalen Wetter unterschiedlich sein. In einer solchen Situation kann das Wetter der wahre Kausalfaktor für den Verkauf von Winterkleidung sein und nicht die Tatsache, dass die geografischen Zustände von Personen unterschiedlich sind.
 
-Das Experimentier-Bedienfeld in Customer Journey Analytics ermöglicht die Analyse von Daten als durchschnittliche Umsatzdifferenz nach Status der Personen. In einer solchen Situation hat die Ausgabe keine kausale Interpretation. Eine solche Analyse kann jedoch weiterhin von Interesse sein. Er enthält eine Schätzung (zusammen mit Messgrößen für die Unsicherheit) der Differenz der durchschnittlichen Einnahmen der einzelnen Staaten.  Dieser Wert wird auch als &quot;*Hypothesentest“*. Die Ergebnisse dieser Analyse können interessant sein, müssen aber nicht unbedingt umsetzbar sein. Einfach deshalb, weil Sie Personen nicht randomisiert haben und manchmal auch nicht auf einen der möglichen Werte der Dimension randomisieren können.
+Im Experimentier-Bedienfeld in Customer Journey Analytics können Sie Daten als durchschnittliche Umsatzdifferenz nach Status der Personen analysieren. In einer solchen Situation hat die Ausgabe keine kausale Interpretation. Eine solche Analyse kann jedoch weiterhin von Interesse sein. Er enthält eine Schätzung (zusammen mit Messgrößen für die Unsicherheit) der Differenz der durchschnittlichen Einnahmen der einzelnen Staaten.  Dieser Wert wird auch als &quot;*Hypothesentest“*. Die Ergebnisse dieser Analyse können interessant sein, müssen aber nicht unbedingt umsetzbar sein. Einfach deshalb, weil Sie Personen nicht randomisiert haben und manchmal auch nicht auf einen der möglichen Werte der Dimension randomisieren können.
 
 Die folgende Abbildung stellt diese Situationen gegenüber:
 
@@ -184,7 +184,7 @@ Berechnete Metriken, die eine der folgenden Metriken oder Konstanten enthalten, 
 * Eine der folgenden Basismetriken:
    * Personen
 
-Berechnete Metriken, die nicht mit dem Bedienfeld „Experimentieren“ kompatibel sind, haben bei [!UICONTROL **Erstellung der berechneten Metrik den Wert Überall im Customer Journey Analytics (ohne Experimentieren**] im Feld [!UICONTROL **Produktkompatibilität**] . Informationen zum Erstellen einer berechneten Metrik finden Sie unter [Metriken erstellen](/help/components/calc-metrics/cm-workflow/cm-build-metrics.md).
+Customer Journey Analytics Berechnete Metriken, die nicht mit dem Bedienfeld „Experimentieren“ kompatibel sind, haben bei [!UICONTROL **Erstellung der berechneten Metrik den Wert Überall in (ohne Experimentieren**] im Feld [!UICONTROL **Produktkompatibilität**] . Informationen zum Erstellen einer berechneten Metrik finden Sie unter [Metriken erstellen](/help/components/calc-metrics/cm-workflow/cm-build-metrics.md).
 
 ## Verwenden von berechneten Metriken im Bedienfeld „Experimentieren“
 

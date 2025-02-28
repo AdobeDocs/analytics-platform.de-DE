@@ -4,10 +4,10 @@ description: Verwendung und Interpretation des Attributionsbedienfelds in Analys
 feature: Panels
 exl-id: 7fdec05b-5d99-48d1-ac1b-c243cb64e487
 role: User
-source-git-commit: 55b312552d32070875714a77e1177bf0da5f9d87
+source-git-commit: 1709bb2e262759376b0b0bb78444253968f9dac4
 workflow-type: tm+mt
-source-wordcount: '693'
-ht-degree: 47%
+source-wordcount: '661'
+ht-degree: 38%
 
 ---
 
@@ -18,20 +18,20 @@ ht-degree: 47%
 >[!CONTEXTUALHELP]
 >id="workspace_attribution_button"
 >title="Attribution"
->abstract="Vergleichen und visualisieren Sie im Handumdrehen eine beliebige Anzahl von Attributionsmodellen unter Verwendung verschiedener Dimensionen und Konversionskennzahlen"
+>abstract="Vergleichen und visualisieren Sie schnell eine beliebige Anzahl von Attributionsmodellen mithilfe von Erfolgsmetriken, Kanälen und Lookback-Fenstern."
 >additional-url="https://www.youtube.com/watch?v=Yu0hy2klzA0" text="Attribution IQ-Bedienfeld"
 
 >[!CONTEXTUALHELP]
 >id="workspace_attribution_panel"
 >title="Attributionsbedienfeld"
->abstract="Vergleichen und visualisieren Sie im Handumdrehen eine beliebige Anzahl von Attributionsmodellen unter Verwendung verschiedener Dimensionen und Konversionskennzahlen.<br/><br/>**Parameter **<br/>**Kanal**<br/> Die Dimension, der zugeschrieben werden soll. Bei dieser Dimension kann es sich um Marketing-Kanäle, Kampagnen oder beliebige andere Dimensionen handeln.<br/>**Modelle**<br/> Das Modell bestimmt, wie Credits zu Touchpoints zugewiesen werden.<br/>**Lookback-Fenster**<br/> Diese Einstellung bestimmt das Fenster der Datenattribution, das für jede Konversion gilt."
+>abstract="Schneller Vergleich und Visualisierung einer beliebigen Anzahl von Attributionsmodellen für eine Erfolgsmetrik. Wählen Sie den Kanal (Dimension), die einzuschließenden Modelle und das Lookback-Fenster aus."
 >additional-url="https://www.youtube.com/watch?v=Yu0hy2klzA0" text="Attribution IQ-Bedienfeld"
 
 <!-- markdownlint-enable MD034 -->
 
 >[!BEGINSHADEBOX]
 
-_In diesem Artikel wird das Attributionsbedienfeld in {_}![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics.**_.<br/>_Siehe [Attributionsbedienfeld](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/panels/attribution) für die_![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**-Version dieses Artikels._
+_In diesem Artikel wird das Attributionsbedienfeld in {_}![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**_.<br/>_Siehe [Attributionsbedienfeld](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/panels/attribution) für die_![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**-Version dieses Artikels._
 
 >[!ENDSHADEBOX]
 

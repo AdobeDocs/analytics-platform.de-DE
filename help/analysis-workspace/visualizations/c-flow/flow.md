@@ -4,10 +4,10 @@ title: Flussübersicht
 feature: Visualizations
 exl-id: 2ef325d9-1d82-46c9-86e3-6b2332548823
 role: User
-source-git-commit: 4bf8c616965718426efe880865acb0e5054b6a31
+source-git-commit: 0cd9cd508d474df3dff176bca4596d0379ac86b4
 workflow-type: tm+mt
-source-wordcount: '387'
-ht-degree: 46%
+source-wordcount: '326'
+ht-degree: 25%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 46%
 >[!CONTEXTUALHELP]
 >id="workspace_flow_panel"
 >title="Fluss"
->abstract="Analysieren Sie den Besuchs- oder Besucherfluss von einem Touchpoint zum nächsten.<br/><br/>**Parameter **<br/>**Beginnt mit**: Fügen Sie eine Dimension, ein Dimensionselement oder eine Metrik hinzu, um die am häufigsten auftretenden Touchpoints nach dem Auftreten der ausgewählten Komponente anzuzeigen.<br/>**Enthält**: Fügen Sie eine Dimension oder ein Dimensionselement hinzu, um die am häufigsten auftretenden Touchpoints vor und nach dem Auftreten der ausgewählten Komponente anzuzeigen.<br/>**Endet mit**: Fügen Sie eine Dimension, ein Dimensionselement oder eine Metrik hinzu, um die am häufigsten auftretenden Touchpoints vor dem Auftreten der ausgewählten Komponente anzuzeigen.<br/>**Pfaddimension**: Fügen Sie eine Dimension hinzu, die als Pfad verwendet werden soll, der zu der ausgewählten Komponente führt oder von dieser weg führt."
+>abstract="Analysieren Sie den Fluss der Besuche oder Besucher von einem Touchpoint zum nächsten. Geben Sie eine Komponente (Metrik, Dimension oder Element) an, mit der Sie beginnen möchten. Optional können Sie erweiterte Einstellungen definieren, um die Visualisierung weiter zu konfigurieren."
 
 <!-- markdownlint-enable MD034 -->
 

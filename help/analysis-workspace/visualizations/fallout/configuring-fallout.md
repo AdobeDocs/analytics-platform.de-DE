@@ -4,14 +4,15 @@ title: Fallout-Visualisierung konfigurieren
 feature: Visualizations
 exl-id: 3d888673-d7b1-45ef-bd3a-97b98466fb0e
 role: User
-source-git-commit: 664756b796e8915a701ccabfb5f250e777701b60
+source-git-commit: 0cd9cd508d474df3dff176bca4596d0379ac86b4
 workflow-type: tm+mt
-source-wordcount: '711'
-ht-degree: 37%
+source-wordcount: '734'
+ht-degree: 38%
 
 ---
 
-# Fallout-Visualisierung konfigurieren
+# Fallout-Visualisierung konfigurieren {#configure-fallout-visualization}
+
 
 Sie können die Touchpoints angeben, um eine mehrdimensionale Fallout-Sequenz zu erstellen. Ein Touchpoint ist im Allgemeinen eine Seite auf Ihrer Website. Touchpoints sind jedoch nicht auf Webseiten eingeschränkt. Sie können beispielsweise Ereignisse wie Einheiten sowie Einzelpersonen und wiederkehrende Besuche hinzufügen. Auch Dimensionen können Sie hinzufügen (wie Kategorie, Browsertyp oder interner Suchbegriff).
 
@@ -54,7 +55,12 @@ Sie können Pfade für Dimensionen, Metriken und Filter durchführen. Angenommen
    | **[!UICONTROL Nächstes Ereignis]** | Wird gezählt und landet beim nächsten Ereignis auf der nächsten Seite im Pfad. |
 
 
-## Einstellungen
+## Einstellungen {#settings}
+
+>[!CONTEXTUALHELP]
+>id="workspace_fallout_container"
+>title="Fallout-Container"
+>abstract="Container auswählen, um den Pfad zu analysieren. Diese Auswahl hilft Ihnen, Interaktionen und Einschränkungen der Analyse auf den ausgewählten Container zu verstehen."
 
 Im Rahmen der Visualisierung sind bestimmte Einstellungen verfügbar.
 
@@ -80,7 +86,7 @@ Im Rahmen der Visualisierung stehen spezifische Kontextmenüoptionen zur Verfüg
 
 >[!MORELIKETHIS]
 >
->[Hinzufügen einer Visualisierung zu einem Bedienfeld](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
+>[Hinzufügen einer Visualisierung in einem Panel](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
 >[Visualisierungseinstellungen](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
 >[Kontextmenü der Visualisierung](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
 >
