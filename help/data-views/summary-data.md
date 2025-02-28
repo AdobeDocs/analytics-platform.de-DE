@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
 exl-id: 417443ae-a1ab-483b-a8fd-cff5ee8b6263
-source-git-commit: 6cd4fadc28117ed88b68d17274ab8de2b0edff10
+source-git-commit: e2e04432682f94b18bf9ed25d15f906c05bfd59d
 workflow-type: tm+mt
-source-wordcount: '1135'
+source-wordcount: '1146'
 ht-degree: 7%
 
 ---
@@ -84,7 +84,7 @@ Wenn Sie einen Bericht mit einer Dimension erstellen möchten, die in einem zus�
 1. Fügen Sie das neu erstellte abgeleitete Feld als Dimensionskomponente zu Ihrer Datenansicht hinzu.
 1. Konfigurieren Sie die Dimensionskomponente „Kampagnenname“ (aus dem Lookup-Datensatz) so, dass sie eine Gruppierung von Zusammenfassungsdaten mit dem neu erstellten abgeleiteten Feld aufweist.
 
-Siehe [Aufnehmen und Erstellen von Berichten zu ](/help/use-cases/data-views/summary-data.md), Anwendungsfall für einen detaillierten Artikel zur Verwendung, Berichterstellung und Analyse von Zusammenfassungsdaten im Customer Journey Analytics.
+Im [Aufnehmen und Berichten von Zusammenfassungsdaten](/help/use-cases/data-views/summary-data.md) Anwendungsfall finden Sie einen detaillierten Artikel darüber, wie Sie Zusammenfassungsdaten in Customer Journey Analytics verwenden, darüber berichten und analysieren können.
 
 
 ## Voraussetzungen
@@ -93,7 +93,7 @@ Für eine ordnungsgemäße Verwendung von Zusammenfassungsdaten in Ihren Bericht
 
 ### Granularität und Zeitzone
 
-Beim Konfigurieren des Datensatzes, der die Zusammenfassungsdaten auf Customer Journey Analytics enthält, wird die Granularität automatisch von den Daten abgeleitet. Die Auswahlen für **[!UICONTROL Zeitstempel]** und **[!UICONTROL Zeitzone]** Dropdown-Liste sind deaktiviert, da beide von der Schemadefinition abgeleitet sind.
+Beim Konfigurieren des Datensatzes, der die Zusammenfassungsdaten in Customer Journey Analytics enthält, wird die Granularität automatisch aus den Daten abgeleitet. Die Auswahlen für **[!UICONTROL Zeitstempel]** und **[!UICONTROL Zeitzone]** Dropdown-Liste sind deaktiviert, da beide von der Schemadefinition abgeleitet sind.
 
 #### Granularität
 
@@ -104,7 +104,7 @@ Die stündliche und tägliche Granularität Ihrer Zusammenfassungsdaten in einem
 Die Zeitzone der Zusammenfassungsdaten wird auf der Zusammenfassungsschemaebene in Experience Platform definiert. Die Zeitzone gilt nur für stündliche granulare Daten.
 
 - Für die tägliche Granularität geht Experience Platform von UTC aus, es sei denn, im Zeitstempel ist ein Zeitzonenversatz enthalten. Beim Hinzufügen des Zusammenfassungsdatensatzes mit den Daten der täglichen Zusammenfassung ignoriert Customer Journey Analytics die im Schema festgelegte Zeitzonendefinition und berücksichtigt den mit dem Zeitstempel aus den Daten im Datensatz verknüpften Tag.
-- Für die Granularität „Stündlich“ berücksichtigt Customer Journey Analytics bei der Interpretation des Zeitstempels die Zeitzone, die im Zusammenfassungsdatenschema auf Experience Platform konfiguriert ist. Die nachstehende Tabelle enthält einige Beispiele für diese Interpretation.
+- Für die Granularität „Stündlich“ berücksichtigt Customer Journey Analytics bei der Interpretation des Zeitstempels die Zeitzone, die im Schema für Zusammenfassungsdaten in Experience Platform konfiguriert ist. Die nachstehende Tabelle enthält einige Beispiele für diese Interpretation.
 
   | Zeitstempel <br/>Quelldaten | timezone<br/>schema | timestamp<br/>experience<br/>platform | Zeitzone<br/> data<br/>view | Zeitstempel<br/>Kunde<br/>Journey<br>Analytics |
   |---|---|---|:---|---|
@@ -143,7 +143,7 @@ https://platform.adobe.io/data/foundation/schemaregistry/tenant/descriptors \
 | Variable | Wert |
 |---|---|
 | `$ACCESS_TOKEN`<br/>`$API_KEY`<br/>`$ORG_ID`<br/>`$SANDBOX_NAME` | Weitere [ zum Angeben von Werten für diese Variablen finden Sie ](https://experienceleague.adobe.com/en/docs/experience-platform/landing/platform-apis/api-authentication) „Authentifizieren und Zugreifen auf Experience Platform-APIs“. |
-| `$SCHEMA_ID` | Sie finden die ID Ihres Schemas in der Experience Platform-Benutzeroberfläche. Wählen Sie Ihr Zusammenfassungsschema aus der Liste der Schemata aus und suchen Sie im rechten Bedienfeld **[!UICONTROL API]** > **[!UICONTROL Schema-ID]**. Verwenden Sie diese ID als Wert. |
+| `$SCHEMA_ID` | Die ID Ihres Schemas finden Sie in der Benutzeroberfläche von Experience Platform. Wählen Sie Ihr Zusammenfassungsschema aus der Liste der Schemata aus und suchen Sie im rechten Bedienfeld **[!UICONTROL API]** > **[!UICONTROL Schema-ID]**. Verwenden Sie diese ID als Wert. |
 | `$GRANULARITY` | Geben Sie `hour` oder `day` als Wert an. |
 | `$TIMEZONE` | Geben Sie den richtigen Wert für die Zeitzonenkennung aus der Spalte TZ-Kennung in der [Liste der Zeitzonen der tz-Datenbank](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones) an. Beispiel: `America/Los_Angeles`. |
 
@@ -153,4 +153,6 @@ Stellen Sie sicher, dass die Komponenteneinstellungen für eine Datenzusammenfas
 
 >[!MORELIKETHIS]
 >
->Ein detailliertes Anwendungsbeispiel für [ Verwendung von Zusammenfassungsdaten und ](/help/use-cases/data-views/summary-data.md) Berichten zu Zusammenfassungsdaten finden Sie im Artikel „Verwenden von Zusammenfassungsdaten“.
+>- Ein detailliertes Anwendungsbeispiel für [ Verwendung von Zusammenfassungsdaten und ](/help/use-cases/data-views/summary-data.md) Berichten zu Zusammenfassungsdaten finden Sie im Artikel „Verwenden von Zusammenfassungsdaten“.
+>- Blog: [Wie Zusammenfassungsdaten Adobe Customer Journey Analytics-Datensätze verbessern](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/how-summary-data-enhances-adobe-customer-journey-analytics/ba-p/704635)
+

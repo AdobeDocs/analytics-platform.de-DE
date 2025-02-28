@@ -5,16 +5,16 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: ead96b72-40f1-4ce9-8d91-c8ceea6c4458
 role: Admin
-source-git-commit: ac1d8a191bbad049ada246937364aeb7f8b275a0
+source-git-commit: 8071e8d5e1ab7e9cfc5037d710361a4d10285704
 workflow-type: tm+mt
-source-wordcount: '943'
-ht-degree: 65%
+source-wordcount: '957'
+ht-degree: 64%
 
 ---
 
 # Übersicht über die Datenaufnahme
 
-Beim Aufnehmen von Daten in Customer Journey Analytics stehen Ihnen mehrere Optionen zur Verfügung. In einigen Szenarien sollen Daten aus Adobe Analytics verschoben, in anderen Daten in Adobe Experience Platform aufgenommen werden.
+Sie haben mehrere Möglichkeiten, um Daten in Customer Journey Analytics aufzunehmen. In einigen Szenarien sollen Daten aus Adobe Analytics verschoben, in anderen Daten in Adobe Experience Platform aufgenommen werden.
 
 >[!IMPORTANT]
 >
@@ -44,7 +44,7 @@ Im Folgenden finden Sie Kurzanleitungen für verschiedene Szenarien.
 
 ## Aufnahme-Priorisierung und Latenz
 
-Sie können Ihre Ereignisdaten innerhalb von 90 Minuten (SLT) in Customer Journey Analytics aufnehmen, unabhängig davon, ob die Daten 24 Stunden, 48 Stunden oder 7 Tage alt sind.
+Sie können Ihre Ereignisdaten in Customer Journey Analytics innerhalb von 90 Minuten (SLT) aufnehmen, unabhängig davon, ob die Daten 24 Stunden, 48 Stunden oder 7 Tage alt sind.
 
 Beachten Sie, dass sich diese Funktion je nach dem von Ihrem Unternehmen erworbenen SKU-Paket unterscheidet:
 
@@ -61,25 +61,25 @@ Sie haben Adobe Analytics bereits bereitgestellt und möchten diese Daten in Ado
 Weitere Informationen finden Sie unter [Aufnehmen und Verwenden von Daten aus Adobe Analytics](./analytics.md).
 
 
-## Aufnehmen und Verwenden von Daten über das Edge Network
+## Aufnehmen und Verwenden von Daten über Edge Network
 
 ### Verwenden der Adobe Experience Platform Web SDK
 
-Sie möchten Ihre Website mithilfe von Adobe-Technologie analysieren, migrieren möglicherweise von einer anderen Lösung oder beginnen, das Verhalten Ihrer Person zu verfolgen. Sie sollten die Best Practices von Adobe bei der Implementierung befolgen, bei der die Adobe Experience Platform SDKs und das Edge Network zur Aufnahme von Daten verwendet werden. Anschließend können Sie die aufgenommenen Daten mit Daten aus anderen Kanälen und Datenquellen in Customer Journey Analytics verwenden, kombinieren und analysieren.
+Sie möchten Ihre Website mithilfe von Adobe-Technologie analysieren und migrieren möglicherweise von einer anderen Lösung oder beginnen mit dem Tracking des Verhaltens Ihrer Person. Sie sollten die Best Practices von Adobe bei der Implementierung befolgen, bei der die Adobe Experience Platform SDKs und das Edge Network zur Aufnahme von Daten verwendet werden. Anschließend können Sie die aufgenommenen Daten mit Daten aus anderen Kanälen und Datenquellen in Customer Journey Analytics verwenden, kombinieren und analysieren.
 
 Weitere Informationen [ Sie unter „Aufnehmen und Verwenden von Daten über die Adobe Experience Platform Web](./aepwebsdk.md)SDK&quot;.
 
 ### Verwenden der Adobe Experience Platform Mobile SDK
 
-Sie möchten Ihre Mobile App mit Adobe-Technologie analysieren, migrieren möglicherweise von einer anderen Lösung oder beginnen damit, das Verhalten einer Person in der App von Grund auf zu verfolgen. Sie sollten die Best Practices von Adobe bei der Implementierung befolgen, bei der die Adobe Experience Platform SDKs und das Edge Network zur Aufnahme von Daten verwendet werden. Anschließend können Sie die aufgenommenen Daten mit Daten aus anderen Kanälen und Datenquellen in Customer Journey Analytics verwenden, kombinieren und analysieren.
+Sie möchten Ihre Mobile App mit Adobe-Technologie analysieren, migrieren möglicherweise von einer anderen Lösung oder beginnen mit der Verfolgung des Verhaltens einer Person in der App von Grund auf. Sie sollten die Best Practices von Adobe bei der Implementierung befolgen, bei der die Adobe Experience Platform SDKs und das Edge Network zur Aufnahme von Daten verwendet werden. Anschließend können Sie die aufgenommenen Daten mit Daten aus anderen Kanälen und Datenquellen in Customer Journey Analytics verwenden, kombinieren und analysieren.
 
 Weitere Informationen [ Sie unter „Aufnehmen und Verwenden von Daten über die Adobe Experience Platform SDK Mobile ](./aepmobilesdk.md)&quot;.
 
-### Verwenden der Adobe Experience Platform Edge Network Server-API
+### Verwenden der Adobe Experience Platform Edge Network-Server-API
 
-Sie möchten Ihre Desktop-Anwendung analysieren, das Spiel, wie es auf einer Spielkonsole gespielt wird, die Verwendung einer Video-Streaming-Anwendung auf einer Set-Top-Box oder Ihr IoT-Gerät mit Adobe-Technologie. Migrieren von einer anderen Lösung oder Beginnen Sie mit der Verfolgung des Verhaltens einer Person auf diesen Geräten von Grund auf. Sie sollten die Best Practices für die Implementierung von Adobe befolgen, bei der die Adobe Experience Platform Edge Network Server-APIs und das Edge Network verwendet werden, um die Daten aufzunehmen. Anschließend können Sie die aufgenommenen Daten mit Daten aus anderen Kanälen und Datenquellen in Customer Journey Analytics verwenden, kombinieren und analysieren.
+Sie möchten Ihre Desktop-Anwendung analysieren, das Spiel, wie es auf einer Spielkonsole gespielt wird, die Verwendung einer Video-Streaming-Anwendung auf einer Set-Top-Box oder Ihr IoT-Gerät mit Adobe-Technologie. Migrieren von einer anderen Lösung oder Beginnen Sie mit der Verfolgung des Verhaltens einer Person auf diesen Geräten von Grund auf. Sie sollten die Best Practices von Adobe für die Implementierung befolgen, bei der die Adobe Experience Platform Edge Network-Server-APIs und Edge Network verwendet werden, um die Daten aufzunehmen. Anschließend können Sie die aufgenommenen Daten mit Daten aus anderen Kanälen und Datenquellen in Customer Journey Analytics verwenden, kombinieren und analysieren.
 
-Weitere [ finden Sie unter „Aufnehmen und Verwenden von Daten über die Adobe Experience Platform Edge Network ](./serverapi.md)Server-API“.
+Weitere Informationen finden [ unter „Aufnehmen und Verwenden von Daten über die Adobe Experience Platform Edge Network](./serverapi.md)Server-API“.
 
 ## Aufnehmen und Verwenden von Batch-Daten
 
@@ -98,3 +98,8 @@ Weitere Informationen dazu finden Sie unter [Aufnehmen und Verwenden von Streami
 Sie verfügen über Daten aus einer Quelle, die von einem Quell-Connector unterstützt wird. Quell-Connectoren sind konfigurierbar und ermöglichen Ihnen, Daten von Adobe sowie First-Party- und Third-Party-Anwendungen in Adobe Experience Platform aufzunehmen. Eine Übersicht über die verfügbaren Quell-Connectoren finden Sie unter [Übersicht über Quell-Connectoren](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=de). Mithilfe des Quell-Connectors können Sie einfach Daten aus der Quelle in Adobe Experience Platform aufnehmen und diese dann mit Daten aus anderen Kanälen und Datenquellen in Customer Journey Analytics verwenden, kombinieren und analysieren.
 
 Weitere Informationen finden Sie unter [Aufnehmen und Verwenden von Daten über Quell-Connectoren](./sources.md).
+
+>[!MORELIKETHIS]
+>
+>Blog: [Ein genauerer Blick auf die Datenverarbeitung und -aufnahme in Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/a-closer-look-at-data-processing-amp-ingestion-in-adobe-customer/ba-p/665091)
+

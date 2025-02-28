@@ -5,10 +5,10 @@ exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: 4bf8c616965718426efe880865acb0e5054b6a31
-workflow-type: ht
-source-wordcount: '4261'
-ht-degree: 100%
+source-git-commit: 612fce23fe4cb9920c05f3253d69e543668a7cf1
+workflow-type: tm+mt
+source-wordcount: '4276'
+ht-degree: 99%
 
 ---
 
@@ -182,7 +182,6 @@ Wenden Sie sich an Ihre Admins, wenn Sie sich nicht sicher sind, welches Custome
    | **[!UICONTROL Aufstockungsdaten]** | Sie können die Aufstockung der Daten in einem Datensatz anfordern. Zum Beispiel können Sie anfragen, die Daten der letzten sieben Tage aufzustocken. Konfigurieren Sie den Datensatz ordnungsgemäß und testen Sie Ihre Verbindung. Wenn alle Einstellungen korrekt sind, können Sie alle verbleibenden Daten mühelos aufstocken.<p>Darüber hinaus können Sie den Import neuer Daten nach Datensatz aktivieren. |
    | **[!UICONTROL Aufstockungsstatus]** | Dieser Status gibt an, ob Aufstockungsdaten verarbeitet werden. |
 
-   {style="table-layout:auto"}
 
 ## Hinzufügen und Konfigurieren von Datensätzen {#add-dataset}
 
@@ -501,7 +500,9 @@ Es gibt verschiedene Datensatztypen: [!UICONTROL Ereignis]-, [!UICONTROL Profil]
 | **[!UICONTROL Profil]** | Daten, die auf Personen, Benutzende oder Kundinnen bzw. Kunden in den [!UICONTROL Ereignisdaten] angewendet werden. Sie können beispielsweise CRM-Daten zu Ihren Kunden hochladen. | -/- | Jedes integrierte oder benutzerdefinierte Schema, das auf der Klasse „XDM-Individuelles Profil“ basiert. | Sie können auswählen, welche Personen-ID Sie einbeziehen möchten. Jeder Datensatz (ausgenommen Zusammenfassungsdatensätze), der in [!DNL Experience Platform] definiert ist, verfügt über einen eigenen Satz von einer oder mehreren definierten Personen-IDs. Beispiele sind Cookie-ID, zugeordnete ID, Benutzer-ID, Trackingcode usw.<br>![Personen-ID ](assets/person-id.png)**Hinweis**: Wenn Sie eine Verbindung erstellen, die Datensätze mit unterschiedlichen IDs enthält, spiegelt sich dies in der Berichterstattung wider. Um Datensätze zusammenzuführen, müssen Sie dieselbe Personen-ID verwenden. |
 | **Zusammenfassung** | Zeitreihendaten, die nicht an eine einzelne Personen-ID gebunden sind. Zusammenfassungsdaten stellen aggregierte Daten auf einer anderen Aggregationsebene dar, z. B. Kampagnen. Sie können diese Daten im Customer Journey Analytics verwenden, um verschiedene Anwendungsfälle zu unterstützen. Weitere Informationen finden Sie [Zusammenfassungsdaten](/help/data-views/summary-data.md). | Wird automatisch auf das standardmäßige Zeitstempelfeld von ereignisbasierten Schemata des Typs „Zusammenfassungsmetriken“ in Experience Platform gesetzt. Es wird nur die Granularität „Stündlich“ oder „Täglich“ unterstützt. | Jedes integrierte oder benutzerdefinierte Schema, das auf der Klasse „XDM-Zusammenfassungsmetriken“ basiert. | -/- |
 
-{style="table-layout:auto"}
+>[!MORELIKETHIS]
+>
+>Blog: [So nutzen Sie Ereignis-, Lookup- und Profildatensätze in Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/how-to-leverage-event-lookup-and-profile-datasets-in-adobe/ba-p/681478)
 
 ## Verwenden von numerischen Feldern als Suchschlüssel und Nachschlagewerte {#numeric}
 
