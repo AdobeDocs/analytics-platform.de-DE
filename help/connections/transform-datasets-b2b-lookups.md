@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Connections
 role: Admin
 exl-id: 7729c1b9-b3ed-4662-a446-2088389bbd97
-source-git-commit: 32678fdedf1b384afce1998880af04f1af077943
+source-git-commit: 4ce2eb397e15dcb081f7b9695ba2332a3eb17659
 workflow-type: tm+mt
-source-wordcount: '413'
-ht-degree: 2%
+source-wordcount: '468'
+ht-degree: 4%
 
 ---
 
@@ -27,8 +27,19 @@ Diese Umwandlung ist nur für Datensätze mit Daten für B2B-Lookup-Schemas verf
 >
 >Pro ID sind maximal 10.000 Elemente zulässig. Diese Einschränkung bedeutet, dass Sie für jede Personen-ID nur über 10.000 Konten oder 10.000 Opportunitys oder 10.000 Marketing-Listen oder 10.000 Kampagnen verfügen können.
 
+>[!PREREQUISITES]
+>
+>Damit die Aufnahme ordnungsgemäß funktioniert, müssen Sie überprüfen, ob die B2B-Lookup-Datensätze Daten für die folgenden Felder enthalten (wie in den B2B-Lookup-Schemata definiert):
+>
+>| Datensatz, der schemakonforme Daten enthält | Mit Daten ausgefülltes Feld |
+>|---|---|
+>| XDM Business Account Person Relation | `accountPersonID` |
+>| XDM Business-Opportunity-Person | `opportunityPersonID` |
+>| XDM Business Marketing List | `marketingListMemberID` |
+>| XDM Business Campaign Members | `campaign.sourceKey` |
+>
 
-So aktivieren Sie die Umwandlung für einen solchen Datensatz:
+So aktivieren Sie die Umwandlung für einen B2B-Lookup-Datensatz:
 
 ![Transformations-Datensatz aktivieren](/help/connections/assets/transform.gif)
 
