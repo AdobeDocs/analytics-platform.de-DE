@@ -4,10 +4,10 @@ description: Greifen Sie auf diese Funktionen zu, indem Sie in der Dropdown-List
 feature: Calculated Metrics
 exl-id: 3689a499-817d-4a59-8a1f-5f7bda297268
 role: User
-source-git-commit: 30fd026a948eab62b034033b4163d3e2b27c47c3
+source-git-commit: 180129837fa326f600ebc3dc5a2a54fd6c3372cb
 workflow-type: tm+mt
-source-wordcount: '4438'
-ht-degree: 56%
+source-wordcount: '4542'
+ht-degree: 55%
 
 ---
 
@@ -418,8 +418,8 @@ Gleich. Die Ausgabe ist entweder 0 (False) oder 1 (True).
 
 | Argument | Beschreibung |
 |---|---|
-| metric_X | |
-| metric_Y | |
+| metric_X | Die Metrik, die Sie vergleichen möchten. |
+| metric_Y | Die Metrik, mit der verglichen werden soll. |
 
 ### Beispiel
 
@@ -557,8 +557,8 @@ Die Ausgabe ist entweder 0 (False) oder 1 (True).
 
 | Argument | Beschreibung |
 |---|---|
-| metric_X | |
-| metric_Y | |
+| metric_X | Die Basismetrik, die Sie zum Vergleich verwenden möchten. |
+| metric_Y | Die Metrik, mit der verglichen werden soll. |
 
 ### Beispiel
 
@@ -582,8 +582,8 @@ Größer als oder gleich. Die Ausgabe ist entweder 0 (False) oder 1 (True).
 
 | Argument | Beschreibung |
 |---|---|
-| metric_X |  |
-| metric_Y |  |
+| metric_X | Die Basismetrik, die Sie zum Vergleich verwenden möchten. |
+| metric_Y | Die Metrik, mit der verglichen werden soll. |
 
 ### Beispiel
 
@@ -695,8 +695,8 @@ Die Ausgabe ist entweder 0 (False) oder 1 (True).
 
 | Argument | Beschreibung |
 |---|---|
-| metric_X | |
-| metric_Y | |
+| metric_X | Die Metrik, die Sie vergleichen möchten. |
+| metric_Y | Die Metrik, mit der verglichen werden soll. |
 
 ### Beispiel
 
@@ -720,8 +720,8 @@ Kleiner als oder gleich. Die Ausgabe ist entweder 0 (False) oder 1 (True).
 
 | Argument | Beschreibung |
 |---|---|
-| metric_X | |
-| metric_Y | |
+| metric_X | Die Metrik, die Sie vergleichen möchten. |
+| metric_Y | Die Metrik, mit der verglichen werden soll. |
 
 ### Beispiel
 
@@ -1019,8 +1019,8 @@ Ungleich. Die Ausgabe ist entweder 0 (False) oder 1 (True).
 
 | Argument | Beschreibung |
 |---|---|
-| metric_X | |
-| metric_Y | |
+| metric_X | Die Metrik, die Sie vergleichen möchten. |
+| metric_Y | Die Metrik, mit der verglichen werden soll. |
 
 ### Beispiel
 
