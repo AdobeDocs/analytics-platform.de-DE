@@ -5,9 +5,9 @@ title: Freigeben von Projekten
 feature: Curate and Share
 exl-id: ac4ed73a-e890-46cc-be08-4ccedf66b47d
 role: User
-source-git-commit: 4bf8c616965718426efe880865acb0e5054b6a31
+source-git-commit: d47fabb35e6674b8accb6ce3b56cb13c334f4d96
 workflow-type: tm+mt
-source-wordcount: '2053'
+source-wordcount: '2070'
 ht-degree: 62%
 
 ---
@@ -30,7 +30,7 @@ Sie können ein Analysis Workspace-Projekt für die folgenden Personentypen frei
 
   Sie können den Zugriff zum Bearbeiten, Duplizieren oder Anzeigen freigeben
 
-* Benutzende und Gruppen in Ihrer Organisation, die keinen Zugriff auf Customer Journey Analytics haben
+* Benutzer und Gruppen in Ihrer Organisation, die keinen Zugriff auf Customer Journey Analytics haben
 
   Empfängerinnen und Empfänger haben schreibgeschützten Zugriff
 
@@ -50,9 +50,9 @@ Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Projektfreigab
 >[!ENDSHADEBOX]
 
 
-## Für Customer Journey Analytics-Benutzende und -Gruppen in der Organisation freigeben {#Add}
+## Für Customer Journey Analytics-Benutzende und -Gruppen in Ihrer Organisation freigeben {#Add}
 
-Sie können ein Projekt für bestehende Customer Journey Analytics-Benutzende oder -Gruppen in Ihrer Organisation freigeben. Wenn Sie ein Projekt wie in diesem Abschnitt beschrieben freigeben, müssen die Benutzenden, für die Sie es freigeben, bereits über ein Customer Journey Analytics-Konto verfügen.
+Sie können ein Projekt für bestehende Customer Journey Analytics-Benutzende oder -Gruppen in Ihrem Unternehmen freigeben. Wenn Sie ein Projekt wie in diesem Abschnitt beschrieben freigeben, müssen die Benutzenden, für die Sie es freigeben, bereits über ein Customer Journey Analytics-Konto verfügen.
 
 Sie können eine bestimmte Rolle für Benutzende oder Gruppen freigeben oder einen Link freigeben.
 
@@ -66,7 +66,7 @@ Beachten Sie beim Freigeben einer bestimmten Projektrolle für Benutzende und Gr
 
 * Projektrollen (**[!UICONTROL Original bearbeiten]**, **[!UICONTROL Kopie bearbeiten]** und **[!UICONTROL Schreibgeschützt]**) sind an die Benutzenden und die spezifische Projekt-ID gebunden. Projektrollen sind unabhängig von Benutzerberechtigungen, die in der [Adobe Experience Cloud Admin Console](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/admin-getting-started.html?lang=de) verwaltet werden.
 
-* Beim Customer Journey Analytics werden Gruppen durch Produktprofile in der [Adobe Experience Cloud Admin Console](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/admin-getting-started.html?lang=de) definiert. Die von Administrierenden durchgeführte Freigabe ist für jede Gruppe möglich, einschließlich „Alle“. Nichtadministrierende können Freigaben für Gruppen durchführen, denen sie angehören (mit Ausnahme von „Alle“).
+* In Customer Journey Analytics werden Gruppen durch Produktprofile in der [Adobe Experience Cloud Admin Console definiert](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/admin-getting-started.html?lang=de). Die von Administrierenden durchgeführte Freigabe ist für jede Gruppe möglich, einschließlich „Alle“. Nichtadministrierende können Freigaben für Gruppen durchführen, denen sie angehören (mit Ausnahme von „Alle“).
 
 * Benutzende, denen mehrere Rollen zugewiesen sind, erhalten immer die maximale Berechtigung. Dies kann vorkommen, wenn Benutzende sowohl als Einzelpersonen als auch als Gruppenmitglieder hinzugefügt werden. Wenn Benutzenden beispielsweise die Rolle **[!UICONTROL Original bearbeiten]** als Einzelpersonen und die Rolle **[!UICONTROL Schreibgeschützt]** als Gruppenmitgliedern zugewiesen wird, erhalten sie die Projektberechtigung **[!UICONTROL Original bearbeiten]**.
 
@@ -80,7 +80,7 @@ Beachten Sie beim Freigeben einer bestimmten Projektrolle für Benutzende und Gr
 
 So geben Sie eine bestimmte Projektrolle für Benutzende oder Gruppen in Ihrer Organisation frei:
 
-1. Wählen Sie beim Customer Journey Analytics die Registerkarte [!UICONTROL **Workspace**] und dann [!UICONTROL **Projekte**] im linken Bereich aus.
+1. Wählen Sie in Customer Journey Analytics die Registerkarte [!UICONTROL **Workspace**] und dann [!UICONTROL **Projekte**] im linken Bereich aus.
 
 1. Wählen Sie das Kontrollkästchen neben einem oder mehreren freizugebenden Projekten und dann [!UICONTROL **Freigeben**] aus.
 
@@ -117,7 +117,7 @@ Wenn es nicht gespeicherte Änderungen gibt, werden Sie aufgefordert, das Projek
 
 Beachten Sie bei der Freigabe eines Links, wie in diesem Abschnitt beschrieben, Folgendes:
 
-* Empfänger, die den Link verwenden, müssen sich bei Customer Journey Analytics anmelden, bevor sie Zugriff auf das Projekt erhalten.
+* Empfängerinnen und Empfänger, die den Link verwenden, müssen sich bei Customer Journey Analytics anmelden, bevor sie Zugriff auf das Projekt erhalten.
 
 * Wenn Empfängern oder Empfängerinnen keine Rolle zugewiesen wurde und sie einen [Link](/help/analysis-workspace/curate-share/shareable-links.md) zum Projekt erhalten (**[!UICONTROL Freigeben] > [!UICONTROL Projekt-Link abrufen]**), wird ihnen standardmäßig eine Rolle zugewiesen. Admins erhalten **[!UICONTROL Original bearbeiten]** und Nicht-Admins erhalten **[!UICONTROL Kopie bearbeiten]**.
 
@@ -153,8 +153,7 @@ Sie können Personen[ die keinen Zugriff auf Customer Journey Analytics haben, ]
 >
 >* Wenn viele Personen gleichzeitig versuchen, auf einen bestimmten Link zuzugreifen, ist das Projekt möglicherweise nicht mehr zugänglich. Standardmäßig können alle 5 Minuten mehr als 190 Personen auf einen einzelnen Link zugreifen. Sollte Ihr Unternehmen diese Grenze erreichen, warten Sie 5 Minuten und versuchen Sie dann erneut, den Link zu öffnen.
 >
->* Die Funktion [!UICONTROL Für alle freigeben] ist sowohl für Healthcare Shield- als auch für Privacy &amp; Security Shield-Lizenzen blockiert.
-
+>* Sowohl für [!DNL Healthcare Shield]- als auch für [!DNL Privacy & Security Shield]-Lizenzen ist für die Funktion [!UICONTROL Für alle freigeben] eine Experience Cloud-Authentifizierung erforderlich. Für [!DNL Healthcare Shield] Kunden wird eine Warnung zur HIPAA-Konformität angezeigt, Sie können diese Funktion jedoch nach der Authentifizierung bei Experience Cloud weiterhin verwenden.
 
 >[!BEGINSHADEBOX]
 
