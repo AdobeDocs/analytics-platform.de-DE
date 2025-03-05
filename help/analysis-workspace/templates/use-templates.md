@@ -4,9 +4,9 @@ title: Verwenden von Vorlagen
 feature: Workspace Basics
 role: User, Admin
 exl-id: d61f215d-9089-4014-9c5a-97f5d7134f34
-source-git-commit: 4c0a18bcaef0b9d6a4d2289fc0be20cfcfefff7d
+source-git-commit: a3817114534ddea434ee0c5b8147ba90e1d144dc
 workflow-type: tm+mt
-source-wordcount: '19477'
+source-wordcount: '19475'
 ht-degree: 86%
 
 ---
@@ -35,7 +35,7 @@ Die folgenden Informationen beschreiben, wie Sie in Analysis Workspace auf Vorla
 
 1. Wählen [!UICONTROL **im Abschnitt**] eine der folgenden Registerkarten aus:
 
-   * **[!UICONTROL Adobe-Vorlagen]**: Zeigt alle von Adobe bereitgestellten Vorlagen an.
+   * **[!UICONTROL Adobe-]**: Zeigt alle von Adobe bereitgestellten Vorlagen an.
 
    * **[!UICONTROL _login_company_name _templates]**: Zeigt alle Unternehmensvorlagen an, die für Ihre Organisation erstellt wurden.
 
@@ -550,7 +550,7 @@ Die folgenden Vorlagen sind verfügbar:
 | **Seitenzusammenfassung** | Zeigen Sie wichtige Informationen zu einer Seite in Ihren Eigenschaften an. Zeigt Seitenansichten, eine Trend-Linie, eine Flussvisualisierung und mehr an.  <p>**Dies kann Ihnen helfen**, besser zu verstehen, wie Personen mit einer bestimmten Seite interagieren.</p><p>**Basierend auf Ihren Erkenntnissen können Sie** eine Reihe von Schritten ausführen, z. B. die Leistung der Seite über einen bestimmten Zeitraum analysieren oder besser verstehen, was den Traffic zur Seite bringt.</p><p>Diese Vorlage verwendet die Metrik Seitenansichten . Außerdem werden die Linienvisualisierung und die Flussvisualisierung verwendet.</p> |
 | **Einstiegsseiten** | Zeigen Sie die wichtigsten Seiten an, auf die Personen beim ersten Besuch Ihrer Site zugreifen. <p>**Dies kann Ihnen helfen**, besser zu verstehen, welche Seiten den meisten Traffic zu Ihrer Site leiten, oder mehr über die ersten Eindrücke zu erfahren, die Besuchende auf Ihrer Site haben.</p><p>**Basierend auf Ihren Erkenntnissen können Sie** eine Reihe von Schritten ausführen, z. B. das erste Erlebnis optimieren, das Personen auf der Site haben, oder sicherstellen, dass die Seiten, die Personen beim Eintritt in Ihre Site zuerst sehen, einladend sind und die erforderlichen Links zu anderen Bereichen Ihrer Site bereitstellen.</p><p>Diese Vorlage verwendet die Metrik Sitzungen . Außerdem werden die Balkenvisualisierung und die Freiformtabellen-Visualisierung verwendet.</p> |
 | **Exitpages** | Zeigen Sie die wichtigsten Seiten an, auf die Personen unmittelbar vor dem Verlassen Ihrer Site zugreifen.<p>**Dies kann Ihnen helfen,** besser zu verstehen, welche Seiten die Personen von der Website wegführen. </p><p>**Basierend auf Ihren Erkenntnissen können Sie** eine Reihe von Schritten ausführen, z. B. gängige Exitpages aktualisieren, um das Erlebnis zu optimieren, das Personen vor dem Verlassen haben, oder Inhalte oder Links aufnehmen, um Personen dazu aufzufordern, auf Ihrer Site zu bleiben.</p><p>Diese Vorlage verwendet die Metrik Sitzungen . Außerdem werden die Balkenvisualisierung und die Freiformtabellen-Visualisierung verwendet.</p> |
-| **Übersicht zur Produktnutzung** (in Kürze verfügbar) | Sehen Sie sich an, wie Customer Journey Analytics in Ihrer Organisation verwendet wird. <p>**Dies kann Ihnen helfen**, besser zu verstehen, wie viele Personen Customer Journey Analytics verwenden, wie oft sie es verwenden und welche Nutzungs-Trends im Laufe der Zeit zu beobachten sind. Sie können auch die Anzahl der erstellten Projekte und Details zu diesen Projekten (z. B. welche Komponenten, Visualisierungen und Panels am häufigsten verwendet werden) sowie viele andere Nutzungsstatistiken anzeigen.</p><p>**Basierend auf Ihren Erkenntnissen können Sie** eine Reihe von Schritten ausführen, z. B. nicht verwendete Projekte oder Komponenten löschen oder Benutzerschulungen für beliebte Funktionen bereitstellen.</p> |
+| **Übersicht über die Produktnutzung** | Sehen Sie sich an, wie Customer Journey Analytics in Ihrer Organisation verwendet wird. <p>**Dies kann Ihnen helfen**, besser zu verstehen, wie viele Personen Customer Journey Analytics verwenden, wie oft sie es verwenden und welche Nutzungs-Trends im Laufe der Zeit zu beobachten sind. Sie können auch die Anzahl der erstellten Projekte und Details zu diesen Projekten (z. B. welche Komponenten, Visualisierungen und Panels am häufigsten verwendet werden) sowie viele andere Nutzungsstatistiken anzeigen.</p><p>**Basierend auf Ihren Erkenntnissen können Sie** eine Reihe von Schritten ausführen, z. B. nicht verwendete Projekte oder Komponenten löschen oder Benutzerschulungen für beliebte Funktionen bereitstellen.</p> |
 
 ### Web: Konversion {#web-conversion}
 
