@@ -5,9 +5,9 @@ title: Übersicht über Ordner
 feature: Workspace Basics
 exl-id: e12e271e-ce15-4535-bb48-1976395cf755
 role: User
-source-git-commit: 90d1c51c11f0ab4d7d61b8e115efa8257a985446
+source-git-commit: 8571fbcfddd18658306e264cef88a3f10861e069
 workflow-type: tm+mt
-source-wordcount: '435'
+source-wordcount: '416'
 ht-degree: 100%
 
 ---
@@ -49,12 +49,7 @@ Non-Admins have limited options.
 Im Folgenden finden Sie einige Richtlinien für die Arbeit mit dem Firmenordner:
 
 - Admins können Projekte zum Firmenordner hinzufügen oder ein neues Projekt erstellen und dieses im Firmenordner speichern. Nicht-Admins können sich die Inhalte des Firmenordners anzeigen lassen.
-
 - Admins können im Firmenordner Unterordner erstellen.
-
 - Admins können im Firmenordner einen Ordner löschen, den andere Admins erstellt haben. Admins müssen sich möglicherweise mit anderen Admins abstimmen, um den Zugriff auf Ordner und Projekte konsistent zu halten.
-
 - Wenn Admins ein Projekt in den Firmenordner verschieben, wird der Ordner für alle freigegeben, selbst wenn die ursprünglichen freigegebenen Berechtigungen eingeschränkt waren.
-- Wenn Admins ein Projekt aus dem Firmenordner verschieben, werden die ursprünglichen oder vorherigen Freigabeberechtigungen beibehalten.
-
 - Wenn Admins ein Projekt aus dem Firmenordner verschieben, werden die ursprünglichen oder vorherigen Freigabeberechtigungen beibehalten.
