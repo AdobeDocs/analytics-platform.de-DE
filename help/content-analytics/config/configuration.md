@@ -7,7 +7,7 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 3ea46223-c7d0-4b1f-bc84-4f35494f13a0
-source-git-commit: 596e54a559bac69214e1de3ea37da6177f110b7a
+source-git-commit: 35298dd6d18ebb07d104a608aeff06cb864ee1dc
 workflow-type: tm+mt
 source-wordcount: '597'
 ht-degree: 13%
@@ -39,10 +39,11 @@ Die Konfiguration von Content Analytics besteht aus den folgenden Schritten:
    * Datenerfassung
       * Es wird ein Datenstrom erstellt und ein Experience Platform-Service im Datenstrom konfiguriert, um Daten an den Content Analytics-Erlebnisereignis-Datensatz zu streamen.
       * Eine Tag-Eigenschaft wird erstellt, wobei die Adobe Content Analytics-Erweiterung für die richtige Sandbox, den richtigen Datenstrom und andere Konfigurationsoptionen im Konfigurationsassistenten konfiguriert ist.
-1. Nur wenn Sie die Tag-Eigenschaft manuell veröffentlichen, wird Content Analytics effektiv bereitgestellt und aktiviert.
+1. Nur wenn Sie [ Tag](manual.md)Eigenschaft manuell veröffentlichen, wird Content Analytics effektiv bereitgestellt und aktiviert.
+
 1. Sie können nur einige begrenzte Änderungen an einer implementierten Konfiguration mithilfe des Assistenten [Geführte Konfiguration](guided.md) vornehmen. Ändern Sie beispielsweise die [Datenansicht](/help/data-views/data-views.md).
 1. Sie können weitere Änderungen an einer implementierten Konfiguration über die [Adobe Content Analytics-Erweiterung](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview) in der zugehörigen Tag-Eigenschaft vornehmen.
-1. Nur wenn Sie die Tag-Eigenschaft manuell erneut veröffentlichen, werden die Konfigurationsänderungen aus Schritt 4 und 5 effektiv bereitgestellt und aktiviert.
+1. Nur wenn Sie [ Tag-Eigenschaft ](manual.md)manuell erneut veröffentlichen), werden die Konfigurationsänderungen aus Schritt 4 und 5 effektiv bereitgestellt und aktiviert.
 
 
 Stellen Sie vor der Konfiguration von Content Analytics sicher, dass die folgenden Voraussetzungen erfüllt sind:

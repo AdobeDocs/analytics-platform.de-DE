@@ -5,10 +5,10 @@ exl-id: ab91659b-a1e6-4f6b-8976-410cf894d1a0
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: 5807700b9fe10769bf86f5c4020dd7c23df6e616
+source-git-commit: cd31712c1dde1fc39f4d0dc81555c19b7690bcab
 workflow-type: tm+mt
-source-wordcount: '371'
-ht-degree: 64%
+source-wordcount: '430'
+ht-degree: 47%
 
 ---
 
@@ -16,12 +16,12 @@ ht-degree: 64%
 
 >[!IMPORTANT]
 >
->Standardsuchen sind nur für Analytics Source Connector-Datenquellen in Customer Journey Analytics verfügbar. Sie können sie mit standardmäßigen Adobe Analytics-Implementierungen, mit dem [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=de) oder mit den Datenerfassungs-APIs von Experience Platform verwenden.
+>Standardsuchen sind nur für Analytics-Quell-Connector-Datenquellen in Customer Journey Analytics verfügbar. Sie können sie mit standardmäßigen Adobe Analytics-Implementierungen, mit dem [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=de) oder mit den Datenerfassungs-APIs von Experience Platform verwenden.
 >
 
 Anhand von Standardsuchen (auch als von Adobe bereitgestellte Suchen bekannt) kann Customer Journey Analytics Berichte zu bestimmten Dimensionen/Attributen erstellen, die nicht für sich genommen, aber bei der Verknüpfung mit anderen Daten nützlich sind. Dies können beispielsweise Attribute von Smartphones oder Tablets und Attribute von Betriebssystem- und Browser-Dimensionen wie etwa die Versionsnummern von Browsern sein. Eine „Standardsuche“ ähnelt einem Lookup-Datensatz. Standardsuchen sind auf alle Experience Cloud-Organisationen anwendbar. Sie werden automatisch auf alle Ereignis-Datensätze angewendet, die bestimmte XDM-Schemafelder enthalten (die spezifischen Felder finden Sie unten). Für jeden Schema-Speicherort, den Adobe klassifiziert, gibt es einen Standard-Lookup-Datensatz.
 
-Im herkömmlichen Adobe Analytics werden diese Dimensionen eigenständig angezeigt. Beim Customer Journey Analytics hingegen müssen Sie diese Dimensionen beim Erstellen von Datenansichten aktiv einbeziehen. Im Verbindungs-Workflow wählen Sie einen Datensatz aus, der mit einem Schlüssel für die Standardsuche gekennzeichnet ist. In der Datenansichts-Benutzeroberfläche werden automatisch alle Dimensionen der Standardsuche einbezogen, die für Berichte verfügbar sind. Die Lookup-Dateien werden automatisch aktualisiert und stehen für alle Regionen und Accounts zur Verfügung. Sie werden in regionsspezifischen Organisationen gespeichert, die dem Kunden zugeordnet sind.
+Im herkömmlichen Adobe Analytics werden diese Dimensionen eigenständig angezeigt. In Customer Journey Analytics hingegen müssen Sie diese Dimensionen beim Erstellen von Datenansichten aktiv einbeziehen. Im Verbindungs-Workflow wählen Sie einen Datensatz aus, der mit einem Schlüssel für die Standardsuche gekennzeichnet ist. In der Datenansichts-Benutzeroberfläche werden automatisch alle Dimensionen der Standardsuche einbezogen, die für Berichte verfügbar sind. Die Lookup-Dateien werden automatisch aktualisiert und stehen für alle Regionen und Accounts zur Verfügung. Sie werden in regionsspezifischen Organisationen gespeichert, die dem Kunden zugeordnet sind.
 
 ## Verwenden von Standardsuchen mit Analytics Source Connector-Datensätzen
 
@@ -75,10 +75,15 @@ The catch here is that they can only populate those IDs today if they have a dir
 
 ## Bericht zu Dimensionen der Standardsuche
 
-Um einen Bericht zu den Dimensionen der Standardsuche zu erstellen, müssen Sie diese hinzufügen, wenn Sie eine Datenansicht in Customer Journey Analytics erstellen:
+Um Berichte zu Dimensionen der Standardsuche in Adobe zu erstellen, müssen Sie eine oder mehrere dieser Dimensionen hinzufügen, wenn Sie eine [Datenansicht](/help/data-views/data-views.md) in Customer Journey Analytics erstellen. In **[!UICONTROL Datenansicht]** > **[!UICONTROL Komponenten]**:
 
-![Erstellen Sie eine Datenansicht, die die Liste Komponenten hinzufügen anzeigt](assets/global-lookup.png)
+1. Wählen Sie **[!UICONTROL Schemafelder]** aus dem Dropdown-Menü in der linken Leiste aus.
+1. Wählen Sie **[!UICONTROL Adobe]** Suchenaus der Liste der Schemafelder-Container aus.
+1. Drilldown nach **[!UICONTROL Browser]**, **[!UICONTROL Mobile]** oder **[!UICONTROL Betriebssystem]**, bis Sie die Dimension finden, die Sie hinzufügen möchten.
+1. Ziehen Sie die Dimension in die Tabelle **[!UICONTROL Metriken]** oder **[!UICONTROL Dimensionen]** innerhalb der **[!UICONTROL Enthaltene Komponenten]**.
 
-Anschließend werden die Suchdaten in Arbeitsbereich angezeigt:
+   ![Erstellen Sie eine Datenansicht, die die Liste Komponenten hinzufügen anzeigt](assets/add-standard-lookup-dimension.gif)
+
+Anschließend können Sie die Suchdaten in Workspace verwenden:
 
 ![Freiformtabelle mit den Daten](assets/gl-reporting.png)

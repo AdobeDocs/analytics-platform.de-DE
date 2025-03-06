@@ -6,7 +6,8 @@ feature: Content Analytics
 role: User
 hide: true
 hidefromtoc: true
-source-git-commit: 2958efb16ed2f5dbd754b407ddb3b6bc2f7c1ee1
+exl-id: 79bf235a-6f6e-4b04-bcd8-1ff884536648
+source-git-commit: cd31712c1dde1fc39f4d0dc81555c19b7690bcab
 workflow-type: tm+mt
 source-wordcount: '1384'
 ht-degree: 17%
@@ -49,6 +50,9 @@ In den folgenden Tabellen ![KI generiert](/help/assets/icons/AI.svg) einen von K
 | Erlebnis – Horizontale Pixel-Tiefe | Quantifizierbarer Wert der horizontalen Pixeltiefe des Erlebnisses. | Dimension Von <br/> abgeleitetes Feld | \| anzeigen Kein Wert<br/>Zuletzt verwendet \| Sitzung |
 | Erlebnis – Vertikale Pixel-Tiefe | Quantifizierbarer Wert der vertikalen Pixeltiefe des Erlebnisses. | Dimension Von <br/> abgeleitetes Feld | \| anzeigen Kein Wert<br/>Zuletzt verwendet \| Sitzung |
 
+{style="table-layout:fixed"}
+
+
 
 ## Erlebnisattribute
 
@@ -68,6 +72,8 @@ In den folgenden Tabellen ![KI generiert](/help/assets/icons/AI.svg) einen von K
 | Erlebnis – Wortanzahl | ![KI generiert](/help/assets/icons/AI.svg) Anzahl der Wörter für das Erlebnis. | Metrik | Werte zählen<br/>Dezimalzahl \| Dezimalstellen: 0 |
 | Erlebnis – Wortanzahl pro Satz | ![KI generiert](/help/assets/icons/AI.svg) Anzahl der Wörter pro Satz für das Erlebnis. | Metrik | Werte zählen<br/>Dezimalzahl \| Dezimalstellen: 0 |
 
+{style="table-layout:fixed"}
+
 
 ## Erlebnisereignisse
 
@@ -75,6 +81,8 @@ In den folgenden Tabellen ![KI generiert](/help/assets/icons/AI.svg) einen von K
 |---|---|---|---|
 | Erlebnisansichten | Quantifizierbares Maß für die Anzahl der Ansichten des Erlebnisses. | Metrik | Werte zählen<br/>Dezimalzahl \| Dezimalstellen: 0 |
 | Erlebnis-Klicks | Quantifizierbares Maß für die Anzahl der Klicks des Erlebnisses. | Metrik | Werte zählen<br/>Dezimalzahl \| Dezimalstellen: 0 |
+
+{style="table-layout:fixed"}
 
 
 ## Asset-Metadaten
@@ -96,6 +104,8 @@ In den folgenden Tabellen ![KI generiert](/help/assets/icons/AI.svg) einen von K
 | Asset – Erstellungsdatum | Asset-Erstellungsdatum. | Dimension | Zuletzt verwendet \| Sitzung |
 | Asset – Zuletzt aktualisiert von | Kennung für die Asset-Aktualisierung. | Dimension | \| anzeigen Kein Wert<br/>Zuletzt verwendet \| Sitzung |
 | Asset – Zuletzt aktualisiert – Datum | Aktualisierungsdatum des Assets. | Dimension | Zuletzt verwendet \| Sitzung |
+
+{style="table-layout:fixed"}
 
 
 ## Asset-Attribute
@@ -119,6 +129,8 @@ In den folgenden Tabellen ![KI generiert](/help/assets/icons/AI.svg) einen von K
 | Asset – Lichtverhältnisse | ![KI generiert](/help/assets/icons/AI.svg) Beleuchtungszustand des Assets. Mögliche Werte sind: goldene Stunde, blaue Stunde, Mittag, Bewölkung, Nacht, High-Key, Low-Key, Tagesbeleuchtung, Glühlampe, fluoreszierend, farbig und Studio. | Dimension Von <br/> abgeleitetes Feld | \| anzeigen Kein Wert<br/>Zuletzt verwendet \| Sitzung |
 | Asset – Kameraeinstellung | ![KI-generiert](/help/assets/icons/AI.svg) Kameraeinstellung des Assets. Mögliche Werte sind: schnelle Verschlusszeit, lange Belichtung. Bokeh-Weichzeichnung, Bewegungsunschärfe, Neigungsverschiebungsunschärfe, Blitz, Weitwinkel, Schwarz-Weiß, Surreal, Doppelbelichtung, Makro und Normalmodus. | Dimension Von <br/> abgeleitetes Feld | \| anzeigen Kein Wert<br/>Zuletzt verwendet \| Sitzung |
 
+{style="table-layout:fixed"}
+
 
 ## Asset-Ereignisse
 
@@ -126,6 +138,8 @@ In den folgenden Tabellen ![KI generiert](/help/assets/icons/AI.svg) einen von K
 |---|---|---|---|
 | Asset-Ansichten | Quantifizierbares Maß für die Anzahl der Ansichten des Assets. | Metrik | Werte zählen<br/>Dezimalzahl \| Dezimalstellen: 0 |
 | Kreativelement-Klicks | Quantifizierbares Maß für die Anzahl der Klicks des Assets. | Metrik | Werte zählen<br/>Dezimalzahl \| Dezimalstellen: 0 |
+
+{style="table-layout:fixed"}
 
 
 <!--
@@ -137,6 +151,8 @@ In den folgenden Tabellen ![KI generiert](/help/assets/icons/AI.svg) einen von K
 | Experience Path Root | Root path to the experience. | Derived Field | |
 | Asset Location | Location of the asset. | Derived Field | |
 | Asset Percenption ID + Asset ID | Combiination of asset perception identifier and asset identifier | Derived Field | |
+
+{style="table-layout:fixed"}
 -->
 
 ## Berechnete Metriken 
@@ -145,3 +161,5 @@ In den folgenden Tabellen ![KI generiert](/help/assets/icons/AI.svg) einen von K
 |---|---|---|---|
 | Clickthrough-Rate für Assets | Asset-Klicks/-Ansichten | Berechnete Metrik | |
 | Clickthrough-Rate des Erlebnisses | Erlebnis-Klicks/Erlebnis-Ansichten | Berechnete Metrik | |
+
+{style="table-layout:fixed"}

@@ -1,11 +1,11 @@
 ---
-title: Verwenden von Zusammenfassungsdaten im Customer Journey Analytics
-description: Anwendungsfall, der alle Details zum Übertragen von Zusammenfassungsdaten in Customer Journey Analytics erklärt
+title: Verwenden von Zusammenfassungsdaten in Customer Journey Analytics
+description: Anwendungsfall, der alle Details zum Importieren von Zusammenfassungsdaten in Customer Journey Analytics erklärt
 solution: Customer Journey Analytics
 feature: Use Cases
 role: Admin
 exl-id: 80139806-618a-46ff-b2c4-32d7bb85a526
-source-git-commit: c56c77079aa21fb740fda6bec333731a1f82a48f
+source-git-commit: 35298dd6d18ebb07d104a608aeff06cb864ee1dc
 workflow-type: tm+mt
 source-wordcount: '5188'
 ht-degree: 8%
@@ -14,9 +14,9 @@ ht-degree: 8%
 
 # Verwenden von Zusammenfassungsdaten
 
-In diesem Anwendungsbeispiel erfahren Sie, wie Sie Zusammenfassungsdaten in Ihrem Reporting und in Ihrer Analyse verwenden. Der Anwendungsfall beschreibt alle Schritte, die zur Verwendung von Zusammenfassungsdaten im Customer Journey Analytics erforderlich sind:
+In diesem Anwendungsbeispiel erfahren Sie, wie Sie Zusammenfassungsdaten in Ihrem Reporting und in Ihrer Analyse verwenden. Der Anwendungsfall beschreibt alle Schritte, die zur Verwendung von Zusammenfassungsdaten in Customer Journey Analytics erforderlich sind:
 
-- [Aufnehmen](#ingest) Zusammenfassungsdaten und andere Datenquellen in Experience Platform.
+- [Aufnehmen](#ingest) von Zusammenfassungsdaten und anderen Datenquellen in Experience Platform.
 - Richten Sie Ihre [Verbindung](#connection) für die Zusammenfassungsdaten und andere Datenquellen ein.
 - Konfigurieren Sie Ihre [Datenansicht](#data-view), um Ihre Datenquellen zu kombinieren.
 - Berichte und Analysen in [Workspace](#workspace) zu Ihren kombinierten Daten durchführen.
@@ -25,40 +25,40 @@ Der Anwendungsfall enthält Beispieldaten für Zusammenfassungsdaten, Ereignisda
 
 ## Erfassen
 
-Für diesen Anwendungsfall verwenden Sie die folgenden Beispielzusammenfassungsdaten, die Zusammenfassungsdaten für die Ausführung von Kampagnen auf Facebook zeigen.
+Für diesen Anwendungsfall verwenden Sie die folgenden Beispielzusammenfassungsdaten, die Zusammenfassungsdaten für die Durchführung von Kampagnen auf Facebook zeigen.
 
 +++Zusammenfassungsdaten
 
 | _id | campaign_name | Kosten | Impression | campaign_id | network | ad_group | timestamp |
 |---|---|---:|---:|---|---|---|---|
-| 1 | 123 Kampagne | 100 | 5.000 | ABC123 | facebook | abc-adgroup | 18.07.2024:20:18.39.000Z |
-| 2 | 123 Kampagne | 50 | 4.000 | DEF123 | facebook | def-adgroup | 18.07.2024:20:18.39.000Z |
-| 3 | 123 Kampagne | 125 | 6000 | ghi123 | facebook | ghi-adgroup | 18.07.2024:20:18.39.000Z |
-| 4 | 456-Kampagne | 25 | 2500 | ABC456 | facebook | abc-adgroup | 18.07.2024:20:18.39.000Z |
-| 5 | 456-Kampagne | 10 | 1000 | DEF456 | facebook | def-adgroup | 18.07.2024:20:18.39.000Z |
-| 6 | 456-Kampagne | 115 | 5500 | GHI456 | facebook | ghi-adgroup | 18.07.2024:20:18.39.000Z |
-| 7 | 789-Kampagne | 200 | 9000 | ABC789 | facebook | abc-adgroup | 18.07.2024:20:18.39.000Z |
-| 8 | 789-Kampagne | 20 | 2.000 | DEF789 | facebook | def-adgroup | 18.07.2024:20:18.39.000Z |
-| 9 | 789-Kampagne | 225 | 12000 | GHI789 | facebook | ghi-adgroup | 18.07.2024:20:18.39.000Z |
-| 10 | 987-Kampagne | 125 | 10000 | ABC987 | facebook | abc-adgroup | 18.07.2024:20:18.39.000Z |
-| 11 | 987-Kampagne | 120 | 15000 | DEF987 | facebook | def-adgroup | 18.07.2024:20:18.39.000Z |
-| 12 | 987-Kampagne | 315 | 22500 | ghi987 | facebook | ghi-adgroup | 18.07.2024:20:18.39.000Z |
-| 13 | 654-Kampagne | 325 | 20000 | ABC654 | facebook | abc-adgroup | 18.07.2024:20:18.39.000Z |
-| 14 | 654-Kampagne | 320 | 25000 | DEF654 | facebook | def-adgroup | 18.07.2024:20:18.39.000Z |
-| 15 | 654-Kampagne | 315 | 22500 | ghi654 | facebook | ghi-adgroup | 18.07.2024:20:18.39.000Z |
-| 16 | 321-Kampagne | 25 | 2.000 | ABC321 | facebook | abc-adgroup | 18.07.2024:20:18.39.000Z |
-| 17 | 321-Kampagne | 20 | 2500 | DEF321 | facebook | def-adgroup | 18.07.2024:20:18.39.000Z |
-| 18 | 321-Kampagne | 15 | 2250 | ghi321 | facebook | ghi-adgroup | 18.07.2024:20:18.39.000Z |
+| 1 | 123 Kampagne | 100 | 5.000 | ABC123 | Facebook | abc-adgroup | 18.07.2024:20:18.39.000Z |
+| 2 | 123 Kampagne | 50 | 4.000 | DEF123 | Facebook | def-adgroup | 18.07.2024:20:18.39.000Z |
+| 3 | 123 Kampagne | 125 | 6000 | ghi123 | Facebook | ghi-adgroup | 18.07.2024:20:18.39.000Z |
+| 4 | 456-Kampagne | 25 | 2500 | ABC456 | Facebook | abc-adgroup | 18.07.2024:20:18.39.000Z |
+| 5 | 456-Kampagne | 10 | 1000 | DEF456 | Facebook | def-adgroup | 18.07.2024:20:18.39.000Z |
+| 6 | 456-Kampagne | 115 | 5500 | GHI456 | Facebook | ghi-adgroup | 18.07.2024:20:18.39.000Z |
+| 7 | 789-Kampagne | 200 | 9000 | ABC789 | Facebook | abc-adgroup | 18.07.2024:20:18.39.000Z |
+| 8 | 789-Kampagne | 20 | 2.000 | DEF789 | Facebook | def-adgroup | 18.07.2024:20:18.39.000Z |
+| 9 | 789-Kampagne | 225 | 12000 | GHI789 | Facebook | ghi-adgroup | 18.07.2024:20:18.39.000Z |
+| 10 | 987-Kampagne | 125 | 10000 | ABC987 | Facebook | abc-adgroup | 18.07.2024:20:18.39.000Z |
+| 11 | 987-Kampagne | 120 | 15000 | DEF987 | Facebook | def-adgroup | 18.07.2024:20:18.39.000Z |
+| 12 | 987-Kampagne | 315 | 22500 | ghi987 | Facebook | ghi-adgroup | 18.07.2024:20:18.39.000Z |
+| 13 | 654-Kampagne | 325 | 20000 | ABC654 | Facebook | abc-adgroup | 18.07.2024:20:18.39.000Z |
+| 14 | 654-Kampagne | 320 | 25000 | DEF654 | Facebook | def-adgroup | 18.07.2024:20:18.39.000Z |
+| 15 | 654-Kampagne | 315 | 22500 | ghi654 | Facebook | ghi-adgroup | 18.07.2024:20:18.39.000Z |
+| 16 | 321-Kampagne | 25 | 2.000 | ABC321 | Facebook | abc-adgroup | 18.07.2024:20:18.39.000Z |
+| 17 | 321-Kampagne | 20 | 2500 | DEF321 | Facebook | def-adgroup | 18.07.2024:20:18.39.000Z |
+| 18 | 321-Kampagne | 15 | 2250 | ghi321 | Facebook | ghi-adgroup | 18.07.2024:20:18.39.000Z |
 
 [![DataDownload](/help/assets/icons/DataDownload.svg)](./assets/summary-data.csv)
 
 +++
 
-Um die Zusammenfassungsdaten auf Customer Journey Analytics, in einem Bericht oder im Rahmen der Datenanalyse in Workspace zu verwenden, benötigen Sie
+Um die Zusammenfassungsdaten in Customer Journey Analytics, in einem Bericht oder im Rahmen der Datenanalyse in Workspace zu verwenden, benötigen Sie Folgendes
 
 - ein Zusammenfassungsschema in Experience Platform,
 - einen zusammenfassenden Datensatz in Experience Platform,
-- eine -Verbindung in Customer Journey Analytics, die für die Verwendung des Zusammenfassungsdatensatzes konfiguriert ist,
+- Eine Verbindung in Customer Journey Analytics, die für die Verwendung des Zusammenfassungsdatensatzes konfiguriert ist,
 - Eine Datenansicht in Customer Journey Analytics, korrekt konfiguriert mit Metriken und Dimensionen für die Zusammenfassungsdaten.
 
 Sie verwenden diese Zusammenfassungsdaten zusammen mit einem Datensatz für Ereignisdaten und einem Datensatz für Suchdaten.
@@ -338,7 +338,7 @@ Sie haben jetzt ein Schema definiert, in dem das Modell für Ihre Zusammenfassun
 
 ### Zusammenfassungsdatensatz
 
-Um Ihre Zusammenfassungsdaten auf Experience Platform zu speichern, müssen Sie zunächst einen Datensatz erstellen und dann Ihre Zusammenfassungsdaten in den Datensatz hochladen.
+Um Ihre Zusammenfassungsdaten in Experience Platform zu speichern, müssen Sie zunächst einen Datensatz erstellen und dann Ihre Zusammenfassungsdaten in den Datensatz hochladen.
 
 So erstellen Sie einen Datensatz:
 
@@ -383,7 +383,7 @@ In **[!UICONTROL Quellen]** > **[!UICONTROL Datenfluss - XX/XX/XXXX, XX:XX XX]**
 
 ## Verbindung
 
-Um Ihre Beispieldaten auf Customer Journey Analytics zu verwenden, erstellen Sie eine Verbindung, die den Beispielzusammenfassungsdatensatz von Experience Platform enthält.
+Um Ihre Beispieldaten in Customer Journey Analytics zu verwenden, erstellen Sie eine Verbindung, die den Beispielzusammenfassungsdatensatz aus Experience Platform enthält.
 
 
 1. Wählen Sie **[!UICONTROL Customer Journey Analytics]** aus der   ![App](/help/assets/icons/Apps.svg)   Programmumschalter.
@@ -423,9 +423,9 @@ Um Ihre Beispieldaten auf Customer Journey Analytics zu verwenden, erstellen Sie
 
 1. Klicken Sie im Bildschirm **[!UICONTROL Verbindungen]** > **[!UICONTROL Beispielverbindung mithilfe von Zusammenfassungsdaten]** auf **[!UICONTROL Speichern]**, um die Verbindung zu speichern.
 
-Die Daten aus den Datensätzen werden zum Customer Journey Analytics hinzugefügt, was einige Stunden dauern kann. Also bitte, seien Sie geduldig, bevor Sie fortfahren.
+Die Daten aus den Datensätzen werden zu Customer Journey Analytics hinzugefügt, was einige Stunden dauern kann. Also bitte, seien Sie geduldig, bevor Sie fortfahren.
 
-Stellen Sie nach einiger Zeit sicher, dass die Daten aus Ihren Datensätzen ordnungsgemäß in Customer Journey Analytics geladen sind.
+Überprüfen Sie nach einiger Zeit, ob die Daten aus Ihren Datensätzen ordnungsgemäß in Customer Journey Analytics geladen wurden.
 
 1. Wählen Sie **[!UICONTROL Customer Journey Analytics]** aus der   ![App](/help/assets/icons/Apps.svg)   Programmumschalter.
 1. Wählen **[!UICONTROL Verbindungen]** im oberen Menü aus.
@@ -434,7 +434,7 @@ Stellen Sie nach einiger Zeit sicher, dass die Daten aus Ihren Datensätzen ordn
    1. Wählen Sie ![Kalender](/help/assets/icons/Calendar.svg) und dann **[!UICONTROL Letzte 7 Tage]** aus.
    1. Wählen Sie **[!UICONTROL Anwenden]** aus.
 
-In der Liste **[!UICONTROL Datensätze]** sollten die Werte in der Spalte **[!UICONTROL Hinzugefügte Datensätze]** bestätigen, dass Daten aus Ihren Datensätzen jetzt Teil von Customer Journey Analytics sind.
+In der Liste der **[!UICONTROL Datensätze]** sollten die Werte in der Spalte **[!UICONTROL Hinzugefügte Datensätze]** bestätigen, dass Daten aus Ihren Datensätzen jetzt Teil von Customer Journey Analytics sind.
 
 ![Beispielverbindung für Zusammenfassungsdaten](../assets/example-connection-summary-data.png)
 
@@ -469,7 +469,7 @@ Um sicherzustellen, dass Sie Berichte zu den richtigen Daten in Workspace erstel
          |---|---|---|---|
          | Anzeigengruppe (Lookup) | Beispiel für Lookup-Datensatz | Zeichenfolge | *_tenant*.ad_group |
          | Anzeigengruppe (Zusammenfassung) | Beispiel für einen zusammenfassenden Datensatz | Zeichenfolge | *_tenant*.ad_group |
-         | Kampagnen-ID | Beispieldatensatz für Zusammenfassungsdaten | Zeichenfolge | *_tenant*.campaign_id |
+         | Kampagnen-ID | Beispiel für einen zusammenfassenden Datensatz | Zeichenfolge | *_tenant*.campaign_id |
          | Kampagnenname (Lookup) | Beispiel für Lookup-Datensatz | Zeichenfolge | *_tenant*.campaign_name |
          | Kampagnenname (Zusammenfassung) | Beispiel für einen zusammenfassenden Datensatz | Zeichenfolge | *_tenant*.campaign_name |
          | Netzwerk | Beispiel für einen zusammenfassenden Datensatz | Zeichenfolge | *_tenant*.network |
@@ -478,14 +478,14 @@ Um sicherzustellen, dass Sie Berichte zu den richtigen Daten in Workspace erstel
          | Trackingcode (Ereignis) | Beispiel für einen Ereignisdatensatz | Zeichenfolge | *_tenant*.tracking_code |
          | Trackingcode (Lookup) | Beispiel für Lookup-Datensatz | Zeichenfolge | *_tenant*.tracking_code |
 
-      1. Wählen Sie die Dimension **[!UICONTROL Trackingcode (Ereignis)]** in der Liste **[!UICONTROL Dimensionen]** aus. Im Bedienfeld Komponente :
+      1. Wählen Sie die Dimension **[!UICONTROL Trackingcode (Ereignis]** in der Liste **[!UICONTROL Dimensionen]** aus. Im Bedienfeld Komponente :
 
          ![Trackingcode-Zusammenfassungsdaten](../assets/tracking-code-summary-data.png)
          1. Erweitern Sie ![ChevronDown](/help/assets/icons/ChevronDown.svg) **[!UICONTROL Summary Data Group]**.
          1. Aktivieren Sie **[!UICONTROL Gruppierung erstellen]**.
          1. Wählen Sie **[!UICONTROL Kampagnenkennung]** aus der Dropdown-Liste **[!UICONTROL Dimension]** aus. Dieser Schritt stellt sicher, dass Ereignisdaten und Zusammenfassungsdaten für das Reporting ordnungsgemäß kombiniert werden.
-         1. Sie können optional &quot;**[!UICONTROL in Berichten ausblenden“]**. [!UICONTROL In Berichten ausblenden] stellt sicher, dass die ausgewählte Dimension ([!UICONTROL Kampagnen-ID]) in Analysis Workspace und anderen Customer Journey Analytics-Reporting-Tools ausgeblendet ist. Wenn Sie diese Option aktiviert haben, können Sie die Option überprüfen:
-            1. Wählen Sie die Dimension **[!UICONTROL Kampagnenkennung]** in der Liste **[!UICONTROL Dimensionen]** aus.
+         1. Sie können optional &quot;**[!UICONTROL in Berichten ausblenden“]**. [!UICONTROL In Berichten ausblenden] stellt sicher, dass die ausgewählte Dimension ([!UICONTROL Kampagnen-ID]) in Analysis Workspace und anderen Reporting-Tools von Customer Journey Analytics ausgeblendet ist. Wenn Sie diese Option aktiviert haben, können Sie die Option überprüfen:
+            1. Wählen Sie die Dimension **[!UICONTROL Kampagnen]** ID) in der Liste **[!UICONTROL Dimensionen]** aus.
             1. Sie werden feststellen **[!UICONTROL dass „Komponente in Berichten ausblenden]** in **[!UICONTROL Komponenteneinstellungen]** jetzt automatisch aktiviert ist.
 
       1. Erstellen Sie ein neues abgeleitetes Feld, z. B. `Campaign Name (Lookup Derived Field)`, um sicherzustellen, dass Sie Berichte in Workspace mithilfe der Dimension Kampagnenname (Lookup) aus dem Beispiel-Lookup-Datensatz erstellen können.
@@ -498,9 +498,9 @@ Um sicherzustellen, dass Sie Berichte zu den richtigen Daten in Workspace erstel
          1. Wählen Sie **[!UICONTROL campaign_name]** aus dem Dropdown **[!UICONTROL Menü „Zurückzugebende Werte]** aus.
          1. Wählen Sie **[!UICONTROL Speichern]** aus.
 
-      1. Dimension Fügen Sie das neu erstellte abgeleitete Feld **[!UICONTROL Kampagnenname (abgeleitetes Suchfeld)]** zur Komponentenliste **** hinzu.
+      1. Fügen Sie das neu erstellte abgeleitete Feld **[!UICONTROL Kampagnenname (abgeleitetes Nachschlagefeld)]** zur Komponentenliste **[!UICONTROL Dimensionen]** hinzu.
 
-      1. Wählen Sie die Dimension **[!UICONTROL Kampagnenname (Lookup)]** in der Liste **[!UICONTROL Dimensionen]** aus. Im Bedienfeld Komponente :
+      1. Wählen Sie die Dimension **[!UICONTROL Kampagnenname (Lookup]** in der Liste **[!UICONTROL Dimensionen]** aus. Im Bedienfeld Komponente :
 
          ![Datengruppe „Abgeleitetes Feld - Zusammenfassung](../assets/derived-field-summary-data-group.png)
 
@@ -551,7 +551,7 @@ Es wird eine leere Arbeitsfläche mit einem [!UICONTROL Freiform]-Bedienfeld ang
 
 1. Stellen Sie sicher, dass die für das Bedienfeld ausgewählte Datenansicht auf die Datenansicht verweist, die die Konfiguration für die Zusammenfassungsdaten enthält. Beispiel: **[!UICONTROL Datenansicht mit Zusammenfassungsdaten.]**
 1. Stellen Sie sicher, dass der Datumsbereich für die Daten gültig ist, zu denen Sie einen Bericht erstellen möchten. Beispiel: **[!UICONTROL Letzte 2 volle Monate]**.
-1. Ziehen Sie **[!UICONTROL Trackingcode (Ereignis)]** aus **[!UICONTROL Dimensionen]** und legen Sie die Dimension auf der leeren Freiformtabelle ab.
+1. Ziehen Sie **[!UICONTROL Trackingcode (Ereignis]** aus **[!UICONTROL Dimensionen]** und legen Sie die Dimension auf der leeren Freiformtabelle ab.
 1. Ziehen Sie **[!UICONTROL Bestellungen]** aus **[!UICONTROL Metriken]** und legen Sie die Metrik in der Spalte **[!UICONTROL Ereignisse]** ab, um diese Spalte in der Freiformtabelle zu ersetzen.
 1. Ziehen Sie **[!UICONTROL Umsatz]** aus **[!UICONTROL Metriken]** und legen Sie die Metrik ab, die als zusätzliche Spalte zur Freiformtabelle hinzugefügt werden soll.
 1. Ziehen Sie **[!UICONTROL Impressions (Zusammenfassung)]** aus **[!UICONTROL Metriken]** und legen Sie die Metrik ab, um sie als zusätzliche Spalte zur Freiformtabelle hinzuzufügen.
