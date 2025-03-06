@@ -6,10 +6,11 @@ solution: Customer Journey Analytics
 feature: Basics
 hide: true
 hidefromtoc: true
-source-git-commit: d745e0c3bc75ba6f9d29aedcdbaaae9aa17d6ab8
+exl-id: 0e508ce7-8f3b-41f1-808c-1348942c2716
+source-git-commit: 773c03dfec99abcabdc667c549cce0dc1b1aabc4
 workflow-type: tm+mt
-source-wordcount: '91'
-ht-degree: 5%
+source-wordcount: '182'
+ht-degree: 8%
 
 ---
 
@@ -20,7 +21,16 @@ ht-degree: 5%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-manual-implementation"
 >title="alloy.js zu Ihrer Site hinzufügen"
->abstract="Sie können Platform Web SDK manuell installieren, indem Sie den Basis-Code direkt zu jeder Seite in Ihrer Implementierung hinzufügen."
+>abstract="Sie können Platform Web SDK manuell installieren, indem Sie den Basis-Code direkt zu jeder Seite in Ihrer Implementierung hinzufügen. Arbeiten Sie dazu mit Ihrem Website-Entwicklungs-Team zusammen."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-manual-populate-xdm"
+>title="XDM-Objekt befüllen und an Datenstrom senden"
+>abstract="Dieser Schritt umfasst die gesamte JavaScript-Logik zum Senden von Daten an einen Datenstrom. Adobe empfiehlt, ein Lösungsentwurfsdokument zu verwalten, um zu verfolgen, wie das XDM-Objekt gefüllt wird. Rechnen Sie damit, einen Monat oder länger für die Festlegung der richtigen JSON-Payload-Werte, deren Tests und die Bereitstellung auf Ihrer Site zu reservieren. Da für diesen Schritt ein ständiger Kontakt mit Ihrem Engineering-Team erforderlich ist, kann es je nach Reaktion möglicherweise länger dauern."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -29,4 +39,3 @@ ht-degree: 5%
 Sie können Platform Web SDK manuell installieren, indem Sie den Basis-Code direkt zu jeder Seite in Ihrer Implementierung hinzufügen.
 
 Weitere Informationen finden Sie unter [Option 2: Installieren der vordefinierten eigenständigen Version](https://experienceleague.adobe.com/en/docs/experience-platform/edge/fundamentals/installing-the-sdk#option-2-installing-the-prebuilt-standalone-version) in [Installieren von Web SDK](https://experienceleague.adobe.com/en/docs/experience-platform/edge/fundamentals/installing-the-sdk) im Web SDK-Handbuch.
-

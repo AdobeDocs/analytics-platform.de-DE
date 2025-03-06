@@ -5,10 +5,10 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 1d17151b-3a12-468e-9a4f-9e5994599570
-source-git-commit: c64f7a1676f4fd3712e618e26357f430e7d9f019
+source-git-commit: 773c03dfec99abcabdc667c549cce0dc1b1aabc4
 workflow-type: tm+mt
 source-wordcount: '587'
-ht-degree: 55%
+ht-degree: 45%
 
 ---
 
@@ -26,7 +26,7 @@ Die Informationen auf dieser Seite decken Schritt 4 des Upgrade-Prozesses ab, wi
 | **Schritt 2: [Wählen Sie den Aktualisierungspfad](/help/getting-started/cja-upgrade/cja-upgrade-path.md)** | Beim Upgrade auf Customer Journey Analytics stehen verschiedene Methoden zur Verfügung. Wählen Sie je nach aktueller Adobe Analytics-Umgebung und den langfristigen Zielen Ihrer Organisation die für Ihre Organisation am besten geeignete Methode aus. |
 | **Schritt 3: [Senden von Daten an Adobe Experience Platform](/help/getting-started/cja-upgrade/cja-upgrade-send-to-platform.md)** | Der Prozess zum Senden von Daten an Adobe Experience Platform unterscheidet sich je nach Upgrade-Pfad, den Sie in Schritt 2 ausgewählt haben. |
 | <span class="preview">**Schritt 4: Beibehalten historischer Daten**</span> | <span class="preview">Die meisten Organisationen müssen ihre historischen Adobe Analytics-Daten über einen bestimmten Zeitraum aufbewahren. Dazu stehen verschiedene Optionen zur Verfügung.</span> |
-| **Schritt 5: [Durchführen zusätzlicher Implementierungsaufgaben](/help/getting-started/cja-getting-started.md)** | An dieser Stelle des Upgrade-Prozesses müssen Sie verschiedene Aufgaben ausführen, bevor Ihre Customer Journey Analytics-Umgebung einsatzbereit ist.<p>Diese zusätzlichen Aufgaben gelten für Upgrades von Adobe Analytics sowie für neue Customer Journey Analytics-Implementierungen.</p><p>Zu diesen Aufgaben zählen:</p><ul><li>Erfassen von Daten in Experience Platform</li><li>Erstellen von Verbindungen zwischen Platform-Datensätzen und Customer Journey Analytics</li><li>Erstellen von Datenansichten</li><li>Portieren der Reporting-API-Nutzung</li><li>Abrechnung für Daten-Feeds und Data Warehouse</li><li>Migrieren von Projekten und Komponenten</li><li>Planen des Benutzer-Onboardings</li></ul> <p>Weitere Informationen finden Sie unter [Customer Journey Analytics – Erste Schritte](/help/getting-started/cja-getting-started.md). |
+| **Schritt 5: [Durchführen zusätzlicher Implementierungsaufgaben](/help/getting-started/cja-getting-started.md)** | An dieser Stelle des Upgrade-Prozesses müssen Sie verschiedene Aufgaben ausführen, bevor Ihre Customer Journey Analytics-Umgebung einsatzbereit ist.<p>Diese zusätzlichen Aufgaben gelten für Upgrades von Adobe Analytics sowie neue Customer Journey Analytics-Implementierungen.</p><p>Zu diesen Aufgaben zählen:</p><ul><li>Erfassen von Daten in Experience Platform</li><li>Erstellen von Verbindungen zwischen Platform-Datensätzen und Customer Journey Analytics</li><li>Erstellen von Datenansichten</li><li>Portieren der Reporting-API-Nutzung</li><li>Abrechnung für Daten-Feeds und Data Warehouse</li><li>Migrieren von Projekten und Komponenten</li><li>Planen des Benutzer-Onboardings</li></ul> <p>Weitere Informationen finden Sie unter [Customer Journey Analytics – Erste Schritte](/help/getting-started/cja-getting-started.md). |
 
 {style="table-layout:auto"}
 
@@ -40,11 +40,11 @@ Wählen Sie eine der folgenden Optionen, um beim Wechsel von Adobe Analytics zu 
 
 ## Verwenden des Analytics-Quell-Connectors
 
-Sie können den [Analytics-Quell-Connector](/help/data-ingestion/analytics.md) verwenden, um historische Daten beizubehalten. Unabhängig vom ausgewählten Aktualisierungspfad (selbst wenn Sie das Upgrade mit der Web-SDK durchführen) können Sie den Analytics Source Connector verwenden, um historische Daten aus Ihrer Adobe Analytics-Umgebung beizubehalten.
+Sie können den [Analytics-Quell-Connector](/help/data-ingestion/analytics.md) verwenden, um historische Daten beizubehalten. Unabhängig vom ausgewählten Aktualisierungspfad (selbst wenn Sie das Upgrade mit der Web-SDK durchführen) können Sie den Analytics-Quell-Connector verwenden, um historische Daten aus Ihrer Adobe Analytics-Umgebung beizubehalten.
 
-Dabei werden die historischen Daten an einem eigenen dedizierten, von Ihren aktuellen Daten getrennten Speicherort abgelegt.
+Sie können den Analytics-Quell-Connector verwenden, um historische Daten beizubehalten, indem Sie historische Daten an einem eigenen dedizierten Speicherort getrennt von Ihren aktuellen Daten abrufen.
 
-Der Analytics-Quell-Connector muss so lange funktionieren, wie Sie Zugriff auf die historischen Daten benötigen.
+Der Analytics-Quell-Connector muss so lange funktionieren, wie Sie Zugriff auf die Verlaufsdaten benötigen.
 
 <!-- Another possibility in the future: Map historical data in a way that allows you to tie it to your new data.  Possible? Explain -->
 
@@ -60,7 +60,7 @@ Sie können Ihre vorhandene Adobe Analytics-Implementierung neben Ihrer neuen Cu
 
 An dieser Stelle des Upgrade-Prozesses müssen Sie verschiedene Implementierungsaufgaben durchführen, bevor Ihre Customer Journey Analytics-Umgebung einsatzbereit ist.
 
-Diese zusätzlichen Aufgaben gelten für Upgrades von Adobe Analytics sowie für neue Customer Journey Analytics-Implementierungen.
+Diese zusätzlichen Aufgaben gelten für Upgrades von Adobe Analytics sowie neue Customer Journey Analytics-Implementierungen.
 
 Zu diesen Aufgaben zählen:
 

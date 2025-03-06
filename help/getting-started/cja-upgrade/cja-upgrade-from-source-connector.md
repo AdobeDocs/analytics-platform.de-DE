@@ -7,10 +7,10 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: 4c0eef7d-7b0e-43b5-8126-d84d4fffd80c
-source-git-commit: 1ae4be09a07bd4991342daa43cc23fb966b68aaf
+source-git-commit: 773c03dfec99abcabdc667c549cce0dc1b1aabc4
 workflow-type: tm+mt
-source-wordcount: '445'
-ht-degree: 15%
+source-wordcount: '538'
+ht-degree: 14%
 
 ---
 
@@ -22,6 +22,15 @@ ht-degree: 15%
 >id="cja-upgrade-source-connector"
 >title="Implementierung des Analytics-Quell-Connectors"
 >abstract="Mit dem Analytics-Quell-Connector können Sie mit Customer Journey Analytics einen Mehrwert erzielen. Sie müssen jedoch sowohl für Adobe Analytics als auch für Customer Journey Analytics bezahlen. Dieser Leitfaden kann Sie bei zu einer unabhängigen Web SDK-Implementierung unterstützen."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-source-connector-delete"
+>title="Vorhandenen Analytics-Quell-Connector löschen"
+>abstract="Der Analytics-Quell-Connector, den Sie derzeit haben, ist nicht mit dem benutzerdefinierten Schema Ihrer Organisation kompatibel. Die Daten sind jedoch weiterhin in der Analytics Report Suite vorhanden. In diesem Schritt wird der aktuelle Analytics-Quell-Connector entfernt, damit Sie ihn in einem nachfolgenden Schritt mit dem richtigen Schema erneut erstellen können.<br><br>Bevor Sie den Quell-Connector löschen, sollten Sie sich mit anderen Personen in Ihrer Organisation abstimmen, um sicherzustellen, dass sich das Entfernen des Quell-Connectors nicht auf das Reporting in Ihrer Organisation auswirkt. Es kann mehrere Wochen dauern, bis diese Koordinierung abgeschlossen ist."
 
 <!-- markdownlint-enable MD034 -->
 
