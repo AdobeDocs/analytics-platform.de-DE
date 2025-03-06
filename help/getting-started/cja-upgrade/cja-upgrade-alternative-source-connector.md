@@ -10,18 +10,18 @@ exl-id: 34e5f97b-c936-4de6-acc9-5774bc908655
 source-git-commit: 1ae4be09a07bd4991342daa43cc23fb966b68aaf
 workflow-type: tm+mt
 source-wordcount: '413'
-ht-degree: 26%
+ht-degree: 41%
 
 ---
 
-# Upgrade-Alternative: Verwenden Sie den Analytics-Quell-Connector ausschließlich für das Upgrade auf Customer Journey Analytics {#use-source-connector-exclusively}
+# Alternative zum Upgrade: Ausschließliches Verwenden des Analytics-Quell-Connectors zum Upgrade auf Customer Journey Analytics {#use-source-connector-exclusively}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-source-connector-exclusively"
 >title="Alleiniges Verwenden des Analytics-Quell-Connectors"
->abstract="(Nicht empfohlen) Sie können den Analytics-Quell-Connector als einzigen Implementierungspfad für Customer Journey Analytics verwenden. <br><br>Mit dieser Option sparen Sie Implementierungszeit, indem Sie Daten schnell an Customer Journey Analytics senden. Es enthält jedoch verschiedene Mängel, wie z. B. eine höhere Latenz und Schwierigkeiten, Adobe Analytics in Zukunft zu verlassen."
+>abstract="(Nicht empfohlen) Sie können den Analytics-Quell-Connector als einzigen Implementierungspfad für Customer Journey Analytics verwenden. <br><br>Mit dieser Option sparen Sie zwar Implementierungszeit, indem Sie Daten schnell an Customer Journey Analytics senden. Sie hat jedoch verschiedene Nachteile, wie z. B. eine höhere Latenz und Schwierigkeiten, in Zukunft von Adobe Analytics zu wechseln."
 
 <!-- markdownlint-enable MD034 -->
 

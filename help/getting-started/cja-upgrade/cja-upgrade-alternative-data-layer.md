@@ -10,18 +10,18 @@ exl-id: 3a0d03d1-def0-45e6-8eb2-115b88497e6d
 source-git-commit: 1ae4be09a07bd4991342daa43cc23fb966b68aaf
 workflow-type: tm+mt
 source-wordcount: '684'
-ht-degree: 9%
+ht-degree: 44%
 
 ---
 
-# Upgrade-Alternative: Senden Sie Ihre Datenschicht an Customer Journey Analytics {#data-collection-data-layer}
+# Alternative zum Upgrade: Senden der Datenschicht an Customer Journey Analytics {#data-collection-data-layer}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-data-layer"
->title="Datenschicht an Adobe senden"
->abstract="Anstatt Daten über ein XDM-Objekt zu senden, können Sie über das Datenobjekt Ihre gesamte Datenschicht an Adobe senden.<br><br>Diese Option spart Implementierungszeit, da Sie Ihre Datenschicht XDM zuordnen können, anstatt ein XDM-Objekt von Grund auf neu zu befüllen. Diese Zuordnung ist jedoch sehr aufwändig, da eine erhebliche Datenmenge vorhanden ist, die Adobe nicht ohne weiteres interpretieren kann. Diese Option führt im Laufe der Zeit auch zu zusätzlicher Komplexität, da jedes Feld, das Sie später zu Ihren Daten hinzufügen, im Datenstrom XDM zugeordnet werden muss."
+>title="Senden der Datenschicht an Adobe"
+>abstract="Statt Daten über ein XDM-Objekt zu senden, können Sie die gesamte Datenschicht über das Datenobjekt an Adobe senden.<br><br>Mit dieser Option sparen Sie Implementierungszeit, da Sie die Datenschicht XDM zuordnen können, anstatt ein XDM-Objekt von Grund auf neu zu befüllen. Diese Zuordnung ist jedoch sehr aufwändig, da eine erhebliche Datenmenge vorhanden ist, die Adobe nicht ohne weiteres interpretieren kann. Außerdem führt diese Option im Laufe der Zeit zu zusätzlicher Komplexität, da jedes Feld, das Sie den Daten später hinzufügen, im Datenstrom XDM zugeordnet werden muss."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -30,7 +30,7 @@ ht-degree: 9%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-send-data-layer"
 >title="Senden der Datenschicht an Adobe"
->abstract="Konfigurieren Sie Ihre Implementierung so, dass Daten zum gewünschten Zeitpunkt an Adobe gesendet werden, und konfigurieren Sie die JSON-Payload so, dass sie vollständig Ihre Datenschicht ist."
+>abstract="Konfigurieren Sie die Implementierung so, dass Daten zum gewünschten Zeitpunkt an Adobe gesendet werden, und konfigurieren Sie die JSON-Payload so, dass sie Ihre vollständige Datenschicht ist."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -39,7 +39,7 @@ ht-degree: 9%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-data-layer-map"
 >title="Zuweisen jedes Datenschichtelements zu XDM"
->abstract="Ordnen Sie jedes Datenschichtelement dem gewünschten XDM-Feld zu. Datenschichtelemente, die keinem XDM-Feld zugeordnet sind, werden dauerhaft gelöscht, da Adobe nicht weiß, wo und wie diese Daten gespeichert werden sollen."
+>abstract="Ordnen Sie jedes Datenschichtelement dem gewünschten XDM-Feld zu. Alle Datenschichtelemente, die keinem XDM-Feld zugeordnet sind, werden dauerhaft verworfen, da Adobe nicht weiß, wo und wie diese Daten gespeichert werden sollen."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -65,8 +65,8 @@ Die Verwendung dieser Upgrade-Alternative hat folgende Vor- und Nachteile:
 
 Die wichtigsten Schritte zum Senden Ihrer gesamten Datenschicht an Customer Journey Analytics sind:
 
-1. Konfigurieren Sie Ihre Implementierung so, dass Daten zum gewünschten Zeitpunkt an Adobe gesendet werden, und konfigurieren Sie die JSON-Payload so, dass sie vollständig Ihre Datenschicht ist.
+1. Konfigurieren Sie die Implementierung so, dass Daten zum gewünschten Zeitpunkt an Adobe gesendet werden, und konfigurieren Sie die JSON-Payload so, dass sie Ihre vollständige Datenschicht ist.
 
 1. Ordnen Sie jedes Datenschichtelement dem gewünschten XDM-Feld zu.
 
-   Datenschichtelemente, die keinem XDM-Feld zugeordnet sind, werden dauerhaft gelöscht, da Adobe nicht weiß, wo und wie diese Daten gespeichert werden sollen.
+   Alle Datenschichtelemente, die keinem XDM-Feld zugeordnet sind, werden dauerhaft verworfen, da Adobe nicht weiß, wo und wie diese Daten gespeichert werden sollen.

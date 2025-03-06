@@ -8,7 +8,7 @@ role: User
 source-git-commit: 5e80e68c6b5d3dca19dae21c6719b040b28afaf9
 workflow-type: tm+mt
 source-wordcount: '581'
-ht-degree: 64%
+ht-degree: 68%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 64%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-additional-datasets"
 >title="Hinzufügen zusätzlicher Datensätze zu Ihrer Verbindung"
->abstract="Nachdem Sie Daten zu einem Datensatz in Adobe Experience Platform hinzugefügt haben, können Sie diesen Datensatz zu Ihrer Verbindung in Customer Journey Analytics hinzufügen. Stellen Sie sicher, dass Daten, die aus anderen Kanälen hinzugefügt werden, dem Schema entsprechen, das Ihre Organisation verwendet.<br><br>Jeder Datensatz, den Sie hinzufügen, erfordert einen enormen Arbeitsaufwand, insbesondere um sicherzustellen, dass die eindeutige Kennung für jedes Ereignis vorhanden ist, und um sicherzustellen, dass die übergreifende Datenstruktur dem benutzerdefinierten Schema Ihrer Organisation entspricht. Die Einrichtung dieses Workflows kann die Koordination vieler Teams innerhalb Ihrer Organisation über mehrere Monate hinweg erfordern."
+>abstract="Nachdem Sie Daten zu einem Datensatz in Adobe Experience Platform hinzufügen, können Sie diesen Datensatz zu Ihrer Verbindung in Customer Journey Analytics hinzufügen. Stellen Sie sicher, dass Daten, die aus anderen Kanälen hinzugefügt werden, dem Schema entsprechen, das Ihre Organisation verwendet.<br><br>Jeder Datensatz, den Sie hinzufügen, erfordert einen enormen Arbeitsaufwand, insbesondere um sicherzustellen, dass die eindeutige Kennung für jedes Ereignis vorhanden ist, und um sicherzustellen, dass die übergreifende Datenstruktur dem benutzerdefinierten Schema Ihrer Organisation entspricht. Die Einrichtung dieses Workflows kann die Koordination vieler Teams innerhalb Ihrer Organisation über mehrere Monate hinweg erfordern."
 
 <!-- markdownlint-enable MD034 -->
 

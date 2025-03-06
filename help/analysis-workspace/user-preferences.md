@@ -8,7 +8,7 @@ role: User
 source-git-commit: 827ab36b27eee1b0af46ff1c653f13b1accfe105
 workflow-type: tm+mt
 source-wordcount: '3632'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -186,7 +186,7 @@ Wählen Sie die verlinkten Abschnittstitel aus, um weitere Informationen und den
 >[!CONTEXTUALHELP]
 >id="workspace_prefs_defaultflowcontainer"
 >title="Standard-Container"
->abstract="Wählen Sie den Standard-Container aus, der für [!UICONTROL Fluss]-Visualisierungen verwendet werden soll. Wenn die ausgewählte Datenansicht den ausgewählten Standard-Container nicht enthält, wechselt die [!UICONTROL Fluss]-Visualisierung automatisch zu einem anderen primären Container."
+>abstract="Wählen Sie den Standard-Container aus, der für [!UICONTROL Flussvisualisierungen] verwendet werden soll. Wenn die ausgewählte Datenansicht den ausgewählten Standard-Container nicht enthält, wechselt die [!UICONTROL Flussvisualisierung] automatisch zu einem anderen primären Container."
 
 >[!CONTEXTUALHELP]
 >id="workspace_prefs_defaultfalloutcontainer"
@@ -196,12 +196,12 @@ Wählen Sie die verlinkten Abschnittstitel aus, um weitere Informationen und den
 >[!CONTEXTUALHELP]
 >id="workspace_prefs_defaulthistogramcountingmethod"
 >title="Standard-Zählmethode"
->abstract="Wählen Sie die standardmäßige Zählmethode aus, die für &quot;[!UICONTROL &quot;-] verwendet werden soll. Wenn die ausgewählte Datenansicht nicht die ausgewählte standardmäßige Zählmethode enthält, wechselt die [!UICONTROL Histogramm]-Visualisierung automatisch zu einer anderen primären Zählmethode."
+>abstract="Wählen Sie die Standard-Zählmethode aus, die für [!UICONTROL Histogramm]-Visualisierungen verwendet werden soll. Wenn die ausgewählte Datenansicht die ausgewählte Standard-Zählmethode nicht enthält, wechselt die [!UICONTROL Histogramm]-Visualisierung automatisch zu einem anderen primären Container."
 
 >[!CONTEXTUALHELP]
 >id="workspace_prefs_defaultjourneycanvascontainer"
 >title="Standard-Container"
->abstract="Wählen Sie den Standard-Container aus, der für [!UICONTROL Journey Canvas-Visualisierungen verwendet ] soll. Wenn die ausgewählte Datenansicht den ausgewählten Standard-Container nicht enthält, wechselt die [!UICONTROL Journey Canvas]-Visualisierung automatisch zu einem anderen primären Container."
+>abstract="Wählen Sie den Standard-Container aus, der für [!UICONTROL Journey-Arbeitsflächen]-Visualisierungen verwendet werden soll. Wenn die ausgewählte Datenansicht den ausgewählten Standard-Container nicht enthält, wechselt die [!UICONTROL Journey-Arbeitsflächen]-Visualisierung automatisch zu einem anderen primären Container."
 
 
 Sie können die Visualisierungsvoreinstellungen für alle in Analysis Workspace neu erstellten Projekte aktualisieren. Informationen zum Zugriff auf diese Voreinstellungen finden Sie unter [Aktualisieren von Voreinstellungen](#update-preferences).

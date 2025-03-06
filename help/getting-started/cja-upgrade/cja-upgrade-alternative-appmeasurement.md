@@ -10,18 +10,18 @@ exl-id: 0bf35c67-c8ae-4349-93fb-b9806c1064a8
 source-git-commit: 1ae4be09a07bd4991342daa43cc23fb966b68aaf
 workflow-type: tm+mt
 source-wordcount: '833'
-ht-degree: 19%
+ht-degree: 30%
 
 ---
 
-# Upgrade-Alternative: Verwenden der AppMeasurement-Datenerfassung mit der Experience Platform Web SDK und Customer Journey Analytics {#data-collection-appmeasurement}
+# Alternative zum Upgrade: Verwenden der AppMeasurement-Datenerfassung mit dem Experience Platform-Web-SDK und Customer Journey Analytics {#data-collection-appmeasurement}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-appmeasurement-logic"
->title="Verwenden der AppMeasurement-Logik mit der Web-SDK"
->abstract="Anstatt Daten über ein XDM-Objekt zu senden, senden Sie alle Ihre Variablen im AppMeasurement-Format über das Datenobjekt.<br><br>Mit dieser Option sparen Sie Implementierungszeit, da Sie Ihre AppMeasurement-Logik XDM zuordnen können, anstatt ein XDM-Objekt von Grund auf neu zu befüllen. Im Laufe der Zeit führt dies jedoch zu zusätzlicher Komplexität, da jedes Feld, das Sie in Zukunft hinzufügen, XDM im Datenstrom zugeordnet werden muss."
+>title="Verwenden der AppMeasurement-Logik mit dem Web-SDK"
+>abstract="Statt Daten über ein XDM-Objekt zu senden, senden Sie alle Variablen im AppMeasurement-Format über das Datenobjekt.<br><br>Mit dieser Option sparen Sie Implementierungszeit, da Sie die AppMeasurement-Logik XDM zuordnen können, anstatt ein XDM-Objekt von Grund auf neu zu befüllen. Im Laufe der Zeit führt dies jedoch zu zusätzlicher Komplexität, da jedes Feld, das Sie in Zukunft hinzufügen, im Datenstrom XDM zugeordnet werden muss."
 
 <!-- markdownlint-enable MD034 -->
 

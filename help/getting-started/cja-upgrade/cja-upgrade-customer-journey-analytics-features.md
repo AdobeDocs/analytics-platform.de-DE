@@ -10,7 +10,7 @@ exl-id: 4e6cacb9-4eca-4dfb-bce4-e69850507596
 source-git-commit: d745e0c3bc75ba6f9d29aedcdbaaae9aa17d6ab8
 workflow-type: tm+mt
 source-wordcount: '519'
-ht-degree: 27%
+ht-degree: 46%
 
 ---
 
@@ -38,7 +38,7 @@ ht-degree: 27%
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-stitch-customer-care"
->title="Adobe-Kundenunterstützung kontaktieren, um einen zusammengefügten Datensatz zu generieren"
+>title="Kontaktieren der Adobe-Kundenunterstützung, um einen zusammengefügten Datensatz zu generieren"
 >abstract="Wenn Sie über ein Feld verfügen, das eine Kennung enthält, die in mehreren Datensätzen vorhanden ist, aber nicht die primäre Kennung ist, können Sie diese verwenden, um einen neuen Datensatz mit einer konsistenten Kennung zu generieren."
 
 <!-- markdownlint-enable MD034 -->
@@ -47,8 +47,8 @@ ht-degree: 27%
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-integrate-rtcdp"
->title="Integration mit Real-time CDP"
->abstract="Profildaten aus verschiedenen Quellen kombinieren, um Zielgruppen und Segmente basierend auf Benutzereigenschaften zu generieren."
+>title="Integrieren mit Real-time CDP"
+>abstract="Kombinieren Sie Profildaten aus verschiedenen Quellen, um Zielgruppen und Segmente basierend auf Benutzereigenschaften zu generieren."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -56,7 +56,7 @@ ht-degree: 27%
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-integrate-target"
->title="Vorübergehende Integration mit Adobe Target"
+>title="Vorübergehendes Integrieren mit Adobe Target"
 >abstract="Adobe empfiehlt für Personalisierungs-Anwendungsfälle die Integration mit Adobe Journey Optimizer. Die Integration mit Adobe Target ist möglich, aber eine kurzfristige Lösung."
 
 <!-- markdownlint-enable MD034 -->
@@ -65,8 +65,8 @@ ht-degree: 27%
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-integrate-ajo"
->title="Integration mit Journey Optimizer"
->abstract="Bereitstellen von vernetzten, kontextuellen und personalisierten Erlebnissen für Kunden."
+>title="Integrieren mit Journey Optimizer"
+>abstract="Stellen Sie Ihren Kundinnen und Kunden vernetzte, kontextuelle und personalisierte Erlebnisse bereit."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -74,7 +74,7 @@ ht-degree: 27%
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-integrate-aam"
->title="Vorübergehend mit Adobe Audience Manager integrieren"
+>title="Vorübergehendes Integrieren mit Adobe Audience Manager"
 >abstract="Adobe empfiehlt für zielgruppenbasierte Anwendungsfälle die Integration mit Adobe Real-time CDP. Die Integration mit Audience Manager ist möglich, aber eine kurzfristige Lösung."
 
 <!-- markdownlint-enable MD034 -->

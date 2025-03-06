@@ -10,7 +10,7 @@ exl-id: 4aff664c-3cd9-4591-8122-6ebff10e4a76
 source-git-commit: 2958efb16ed2f5dbd754b407ddb3b6bc2f7c1ee1
 workflow-type: tm+mt
 source-wordcount: '2097'
-ht-degree: 25%
+ht-degree: 27%
 
 ---
 
@@ -194,7 +194,7 @@ So bearbeiten Sie vorhandene Erlebnisse oder schließen neue Erlebnisse in eine 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_tag_header"
 >title="Datenerfassung"
->abstract="**Geben Sie eine Tag-Eigenschaft an**"
+>abstract="**Angeben einer Tag-Eigenschaft**"
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_pages_excluded_boldheader"
@@ -308,7 +308,7 @@ Wenn Sie eine Konfiguration erstellt oder bearbeitet haben, sind die folgenden A
 * **[!UICONTROL Beenden]**. Beendet die geführte Konfiguration. Alle Änderungen an einer implementierten Konfiguration werden verworfen.
 
 
-## Veröffentlichen Sie {#publish}
+## Veröffentlichen {#publish}
 
 Um Ihre Content Analytics-Konfiguration zu aktivieren, müssen Sie [manuell](manual.md) die Tag-Eigenschaft veröffentlichen, die nach der Auswahl von **[!UICONTROL Implementieren]** als Teil des Assistenten für geführte Konfigurationen erstellt wird.
 

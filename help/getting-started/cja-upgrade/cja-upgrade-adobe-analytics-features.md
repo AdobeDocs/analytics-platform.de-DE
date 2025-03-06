@@ -10,7 +10,7 @@ exl-id: 92053109-f80d-47ab-b011-c28a5411149c
 source-git-commit: 7a5414745f065ec29b59172dee4f723c0ce72e68
 workflow-type: tm+mt
 source-wordcount: '464'
-ht-degree: 40%
+ht-degree: 50%
 
 ---
 
@@ -38,8 +38,8 @@ ht-degree: 40%
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-activity-map-support"
->title="Activity Map-Überlagerung wird noch nicht unterstützt"
->abstract="Activity Map Overlay-Unterstützung ist in Customer Journey Analytics noch nicht verfügbar. Es ist geplant, dass es in Zukunft verfügbar sein wird."
+>title="Unterstützung für Activity Map-Überlagerung ist noch nicht verfügbar"
+>abstract="Unterstützung für Activity Map-Überlagerung ist in Customer Journey Analytics noch nicht verfügbar. Es ist geplant, dass sie in Zukunft verfügbar sein wird."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -93,7 +93,7 @@ ht-degree: 40%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-component-migration"
 >title="Migrieren von Projekten und Komponenten"
->abstract="Adobe Analytics-Projekte und die zugehörigen Komponenten zu Customer Journey Analytics bringen."
+>abstract="Migrieren Sie Adobe Analytics-Projekte und alle enthaltenen Komponenten zu Customer Journey Analytics."
 
 <!-- markdownlint-enable MD034 -->
 
