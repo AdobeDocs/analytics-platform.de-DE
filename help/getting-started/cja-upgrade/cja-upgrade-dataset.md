@@ -7,10 +7,10 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: d686dcdd-08d5-4e8f-8f0d-76c8c7b0427f
-source-git-commit: 1ae4be09a07bd4991342daa43cc23fb966b68aaf
+source-git-commit: 4ba493ae40d417499a4ab584898ff533f17be755
 workflow-type: tm+mt
-source-wordcount: '232'
-ht-degree: 56%
+source-wordcount: '219'
+ht-degree: 60%
 
 ---
 
@@ -63,4 +63,4 @@ So erstellen Sie einen Datensatz:
 
    Weitere Informationen [ Anzeigen, Anzeigen, Erstellen und Löschen eines Datensatzes finden ](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/user-guide.html?lang=de) im Handbuch zur Datensatz-Benutzeroberfläche . Außerdem erfahren Sie, wie Sie einen Datensatz für das Echtzeit-Kundenprofil aktivieren.
 
-1. Fahren Sie mit den [empfohlenen Upgrade-Schritten](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) oder den [dynamisch generierten Upgrade-Schritten](https://gigazelle.github.io/cja-ttv/) fort.
+{{upgrade-final-step}}

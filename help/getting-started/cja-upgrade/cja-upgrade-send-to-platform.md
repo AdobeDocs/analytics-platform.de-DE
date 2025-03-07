@@ -4,10 +4,10 @@ description: Senden von Daten an Adobe Experience Platform beim Migrieren zu Cus
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: d9d7f186-9077-4372-94ad-8dd5b97779ca
-source-git-commit: 773c03dfec99abcabdc667c549cce0dc1b1aabc4
+source-git-commit: 765b6863cdafa06b54b76fbf0983afb4c14c21d4
 workflow-type: tm+mt
-source-wordcount: '811'
-ht-degree: 64%
+source-wordcount: '897'
+ht-degree: 58%
 
 ---
 
@@ -31,6 +31,9 @@ Die Informationen auf dieser Seite decken Schritt 3 des Upgrade-Prozesses ab, wi
 
 +++
 
+>[!AVAILABILITY]
+>
+>Die Informationen auf dieser Seite werden durch die folgenden umfassenderen Upgrade-Informationen ersetzt: <ul><li>**Empfohlene Upgrade-Schritte**<p>Detaillierte Informationen finden Sie unter [Empfohlener Pfad beim Upgrade von Adobe Analytics auf Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md).</p></li><li>**Customer Journey Analytics-Aktualisierungshandbuch**<p>Es ist ein neues Upgrade-Handbuch verfügbar, in dem dynamisch Upgrade-Schritte generiert werden, die für Ihr Unternehmen und Ihre individuellen Bedingungen maßgeschneidert sind.</p><p>Um über Customer Journey Analytics auf das Handbuch zuzugreifen, wählen Sie die Registerkarte **[!UICONTROL Workspace]** und dann **[!UICONTROL Upgrade auf Customer Journey Analytics]** im linken Bereich aus. Befolgen Sie die Anweisungen auf dem Bildschirm.</p></li></ul>
 
 Nachdem Sie [den für Ihr ](/help/getting-started/cja-upgrade/cja-upgrade-path.md) optimalen Aktualisierungspfad ausgewählt haben), können Sie mit dem Senden von Daten an Adobe Experience Platform beginnen, um sie in Customer Journey Analytics verfügbar zu machen.
 

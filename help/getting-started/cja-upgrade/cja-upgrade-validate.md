@@ -7,10 +7,10 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: c0513e4c-51fb-4b4c-8450-8e6bf7dda4e7
-source-git-commit: 1ae4be09a07bd4991342daa43cc23fb966b68aaf
+source-git-commit: 4ba493ae40d417499a4ab584898ff533f17be755
 workflow-type: tm+mt
-source-wordcount: '152'
-ht-degree: 38%
+source-wordcount: '139'
+ht-degree: 41%
 
 ---
 
@@ -39,6 +39,6 @@ Sie können überprüfen, ob die Verbindung aktiv ist und ob Daten an die Datena
 
 1. Unter [Verbindungsdetails](/help/connections/manage-connections.md#manage-connections) in [Verbindungen verwalten](/help/connections/manage-connections.md) finden Sie Informationen zu den verfügbaren Details für jede Verbindung.
 
-1. Fahren Sie mit den [empfohlenen Upgrade-Schritten](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) oder den [dynamisch generierten Upgrade-Schritten](https://gigazelle.github.io/cja-ttv/) fort.
+{{upgrade-final-step}}
 
 <!-- Should we duplicate the content here or single source it with /help/connections/manage-connections.md -->

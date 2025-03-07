@@ -6,7 +6,7 @@ solution: Customer Journey Analytics
 feature: Basics
 hide: true
 hidefromtoc: true
-source-git-commit: 967d8a957e722a080cd712ea7cf77f26660289da
+source-git-commit: 4ba493ae40d417499a4ab584898ff533f17be755
 workflow-type: tm+mt
 source-wordcount: '132'
 ht-degree: 80%
@@ -28,7 +28,9 @@ ht-degree: 80%
 
 Durch Nutzung modernster Technologien beim überwachten maschinellen Lernen und beim Deep Learning ermöglicht es die personalisierte Optimierung Business-Anwendenden (Marketing-Fachleuten), Geschäftsziele zu definieren und mithilfe ihrer Kundendaten geschäftsorientierte Modelle zu trainieren und so personalisierte Angebote unterbreiten und KPIs maximieren zu können.
 
-Weitere Informationen finden Sie unter [Modell für personalisierte Optimierung](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/rankings/ai-models/personalized-optimization-model) im Journey Optimizer-Handbuch.
+1. Befolgen Sie die Informationen unter [Modell für personalisierte Optimierung](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/rankings/ai-models/personalized-optimization-model) im Journey Optimizer-Handbuch.
+
+{{upgrade-final-step}}
 
 <!--
 

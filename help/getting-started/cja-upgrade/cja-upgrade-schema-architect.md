@@ -7,10 +7,10 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: f932110a-ca9d-40d1-9459-064ef9cd23da
-source-git-commit: 1ae4be09a07bd4991342daa43cc23fb966b68aaf
+source-git-commit: 765b6863cdafa06b54b76fbf0983afb4c14c21d4
 workflow-type: tm+mt
-source-wordcount: '460'
-ht-degree: 28%
+source-wordcount: '487'
+ht-degree: 26%
 
 ---
 
@@ -39,17 +39,23 @@ Lesen Sie die folgenden Abschnitte, wenn Sie mit der Architektur Ihres XDM-Schem
 
 Die zugrunde liegende Architektur von Customer Journey Analytics bietet viel mehr Flexibilität als Adobe Analytics. Die Erstellung eines neuen XDM-Schemas ist eine wichtige Möglichkeit, diese Flexibilität zu erschließen. Stellen Sie beim Upgrade auf Customer Journey Analytics sicher, dass Sie nicht unnötige Adobe Analytics-Einschränkungen in Ihr Schema übertragen.
 
+>[!NOTE]
+>
+>Die folgenden Informationen sind noch nicht vollständig. Es wird in naher Zukunft fertig gestellt sein.
+
 | Adobe Analytics-Datenarchitektur | XDM-Schemaarchitektur |
 |---------|----------|
 | Einzelne Metriken werden zur Analytics-Datenarchitektur hinzugefügt.<br/>In Adobe Analytics haben Sie beispielsweise für jedes Ereignis eine andere eVar. | Erstellen Sie einzelne Metriken in der Datenansicht anstatt im XDM-Schema. Dadurch erhalten Sie mehr Flexibilität bei , wenn Sie zu einem späteren Zeitpunkt Änderungen vornehmen müssen.<br/>In Customer Journey Analytics haben Sie beispielsweise ein einzelnes Ereignis im Schema und verwenden die Option „Ereignisse erstellen“ in der Datenansicht. |
-| Props und eVars sind erforderlich, um benutzerdefinierte Variablen zu erstellen. | B2 |
-| A3 | B3 |
+| Props und eVars sind erforderlich, um benutzerdefinierte Variablen zu erstellen. |  |
 
 ## Identifizieren Ihres Daten-Teams und anderer Stakeholder in Ihrem Unternehmen
 
+>[!NOTE]
+>
+>Diese Informationen sind noch nicht verfügbar. Es wird in naher Zukunft verfügbar sein.
 
 ## Erwägen anderer in Ihrem Unternehmen verwendeter Adobe Experience Platform-Anwendungen
 
-
-
-1. Fahren Sie mit den [empfohlenen Upgrade-Schritten](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) oder den [dynamisch generierten Upgrade-Schritten](https://gigazelle.github.io/cja-ttv/) fort.
+>[!NOTE]
+>
+>Diese Informationen sind noch nicht verfügbar. Es wird in naher Zukunft verfügbar sein.

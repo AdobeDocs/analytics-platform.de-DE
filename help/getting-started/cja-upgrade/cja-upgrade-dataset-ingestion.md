@@ -7,10 +7,10 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: 35fcd213-d831-4da0-b946-f6f0d8561f60
-source-git-commit: 1ae4be09a07bd4991342daa43cc23fb966b68aaf
+source-git-commit: 4ba493ae40d417499a4ab584898ff533f17be755
 workflow-type: tm+mt
-source-wordcount: '270'
-ht-degree: 40%
+source-wordcount: '257'
+ht-degree: 42%
 
 ---
 
@@ -49,5 +49,5 @@ Nachdem Sie Ihre Web SDK-Implementierung konfiguriert haben, müssen Sie die Sta
 
    Wiederholen Sie diesen Schritt, um den Status jedes Stapels zu überprüfen.
 
-1. Fahren Sie mit den [empfohlenen Upgrade-Schritten](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) oder den [dynamisch generierten Upgrade-Schritten](https://gigazelle.github.io/cja-ttv/) fort.
+{{upgrade-final-step}}
 

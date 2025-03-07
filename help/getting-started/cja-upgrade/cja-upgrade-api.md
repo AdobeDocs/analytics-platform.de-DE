@@ -6,9 +6,10 @@ solution: Customer Journey Analytics
 feature: Basics
 hide: true
 hidefromtoc: true
-source-git-commit: d745e0c3bc75ba6f9d29aedcdbaaae9aa17d6ab8
+exl-id: 13b413fd-2103-427a-b251-5b3a19046bdb
+source-git-commit: 4ba493ae40d417499a4ab584898ff533f17be755
 workflow-type: tm+mt
-source-wordcount: '113'
+source-wordcount: '115'
 ht-degree: 4%
 
 ---
@@ -28,5 +29,7 @@ ht-degree: 4%
 
 Sie können Platform Web SDK installieren, indem Sie das NPM-Paket installieren, um den Build-Prozess für Adobe Experience Platform Web SDK JavaScript zu steuern.
 
-Weitere Informationen finden Sie unter [Option 3: Verwenden des NPM-Pakets](https://experienceleague.adobe.com/en/docs/experience-platform/edge/fundamentals/installing-the-sdk#option-3-using-the-npm-package) in [Installieren von Web SDK](https://experienceleague.adobe.com/en/docs/experience-platform/edge/fundamentals/installing-the-sdk) im Web SDK-Handbuch.
+1. Befolgen Sie die Informationen im Abschnitt [Option 3: Verwenden des NPM-Pakets](https://experienceleague.adobe.com/en/docs/experience-platform/edge/fundamentals/installing-the-sdk#option-3-using-the-npm-package) in [Installieren von Web SDK](https://experienceleague.adobe.com/en/docs/experience-platform/edge/fundamentals/installing-the-sdk) im Web SDK-Handbuch.
+
+{{upgrade-final-step}}
 

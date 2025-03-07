@@ -7,10 +7,10 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: f5443ddd-81d0-43cc-99cb-215e7ddf5acf
-source-git-commit: 1ae4be09a07bd4991342daa43cc23fb966b68aaf
+source-git-commit: 4ba493ae40d417499a4ab584898ff533f17be755
 workflow-type: tm+mt
-source-wordcount: '810'
-ht-degree: 13%
+source-wordcount: '800'
+ht-degree: 14%
 
 ---
 
@@ -129,5 +129,7 @@ So fügen Sie den Lookup-Datensatz zu Ihrer Verbindung in Customer Journey Analy
 
 1. Erstellen Sie mithilfe des Felds **[!UICONTROL Schlüssel]** und des Felds **[!UICONTROL Übereinstimmungsschlüssel]** eine Korrelation zwischen dem Feld in Ihrem Lookup-Datensatz und dem Feld in Ihrem Ereignis- oder Zusammenfassungsdatensatz.
 
-1. Nachdem alle Lookup-Datensätze zu Ihrer Verbindung in Customer Journey Analytics hinzugefügt wurden, folgen Sie den [empfohlenen Upgrade-](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) oder den [dynamisch generierten Upgrade-](https://gigazelle.github.io/cja-ttv/).
+1. Wiederholen Sie diesen Vorgang, bis alle Lookup-Datensätze zu Ihrer Verbindung in Customer Journey Analytics hinzugefügt werden.
+
+{{upgrade-final-step}}
 

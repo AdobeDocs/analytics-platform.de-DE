@@ -9,9 +9,9 @@ index: true
 user-guide-title: Handbuch zu Customer Journey Analytics
 user-guide-description: Hier erhalten Sie Informationen zu Adobe Customer Journey Analytics und Erläuterungen zur Nutzung von Analysis Workspace mit Daten aus Experience Platform.
 breadcrumb-title: Handbuch zu Customer Journey Analytics
-source-git-commit: 439bc00f2a7e08c8b73a4caa3a3c7269a3a7f895
+source-git-commit: 5f0d99f4304f0be44036b271525cdbc3c791440b
 workflow-type: tm+mt
-source-wordcount: '1210'
+source-wordcount: '1216'
 ht-degree: 90%
 
 ---
@@ -90,6 +90,7 @@ ht-degree: 90%
          + [Customer Journey Analytics-Funktionen](/help/getting-started/cja-upgrade/cja-upgrade-customer-journey-analytics-features.md)
          + [Web SDK-Implementierungsoptionen](/help/getting-started/cja-upgrade/cja-upgrade-websdk-implementation.md)
          + [Konfigurieren von Adobe Analytics Web SDK für Platform](/help/getting-started/cja-upgrade/cja-upgrade-existing-adobe-analytics-websdk.md)
+         + [Verwenden der Personalisierung mit Adobe Journey Optimizer](/help/getting-started/cja-upgrade/cja-upgrade-personalization-journeyoptimizer.md)
    + Vergleich mit Adobe Analytics {#cja-aa-comparison}
       + [Überblick](../getting-started/aa-vs-cja/overview.md)
       + [Verwenden von Adobe Analytics-Daten](../getting-started/aa-vs-cja/aa-data-in-cja.md)
@@ -428,7 +429,7 @@ ht-degree: 90%
          + [Sitzungswiederholungen](/help/use-cases/third-party/quantum-metric/tie-session-replays.md)
          + [Verwenden von Heatmaps](/help/use-cases/third-party/quantum-metric/heatmap.md)
          + [Reibungsereignisse hinzufügen](/help/use-cases/third-party/quantum-metric/friction-events.md)
-         + [Source-Connector](/help/use-cases/third-party/quantum-metric/source-connector.md)
+         + [Quell-Connector](/help/use-cases/third-party/quantum-metric/source-connector.md)
    + Datenaufnahme {#data-ingestion}
       + [Aufnehmen und Verwenden von Marketo Engage-Daten](../use-cases/data-ingestion/marketo.md)
       + [Aufnehmen und Verwenden von Experience Platform-Zielgruppen](../use-cases/data-ingestion/ingest-aep-segments.md)

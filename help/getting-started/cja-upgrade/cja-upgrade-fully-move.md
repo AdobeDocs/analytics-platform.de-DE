@@ -7,7 +7,7 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: 7142ef84-66a6-49eb-938b-b67c9b65bf93
-source-git-commit: 967d8a957e722a080cd712ea7cf77f26660289da
+source-git-commit: 4ba493ae40d417499a4ab584898ff533f17be755
 workflow-type: tm+mt
 source-wordcount: '1067'
 ht-degree: 18%
@@ -135,3 +135,6 @@ Wenn Sie Adobe Analytics für die im obigen Abschnitt beschriebenen Zwecke nicht
    Nachdem Sie mit Ihrer neuen Web-SDK-Implementierung genügend historische Daten in Customer Journey Analytics erfasst haben, können Sie den Analytics-Quell-Connector vollständig entfernen.
 
    Tun Sie dies, wenn Sie die historischen Daten aus Ihrer Adobe Analytics-Umgebung nicht mehr über den Analytics-Quell-Connector benötigen und sich nur noch auf die historischen Daten verlassen können, die Sie mit der neuen Web SDK-Implementierung erfasst haben.
+
+{{upgrade-final-step}}
+
