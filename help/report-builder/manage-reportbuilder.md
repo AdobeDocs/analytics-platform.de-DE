@@ -6,10 +6,10 @@ feature: Report Builder
 type: Documentation
 solution: Customer Journey Analytics
 exl-id: 70103020-a4a9-43be-933c-bde5a6d088c8
-source-git-commit: 48f5e9d6c5d3a33a5bae45e841eb8364b7172876
+source-git-commit: bd2d45b9fc1380e36fc482ee75e1a9bbb26f6cf7
 workflow-type: tm+mt
 source-wordcount: '641'
-ht-degree: 71%
+ht-degree: 57%
 
 ---
 
@@ -32,7 +32,7 @@ Der Datenblock-Manager listet alle in einer Arbeitsmappe vorhandenen Datenblöck
 
 ## Sortieren der Datenblockliste
 
-Sie können die Datenblockliste nach einer angezeigten Spalte sortieren. Sie können beispielsweise die Datenvariablen nach Datenansichten, Blockierungslisten, Datumsbereich und anderen Variablen sortieren.
+Sie können die Datenblockliste nach einer angezeigten Spalte sortieren. Sie können die Datenvariablen beispielsweise nach Datenansichten, Blockierungslisten, Datumsbereich und anderen Variablen sortieren.
 
 Um die Datenblockliste zu sortieren, klicken Sie auf eine Spaltenüberschrift.
 
@@ -46,9 +46,9 @@ Verwenden Sie das Suchfeld, um in der Datenblocktabelle eine Suche durchzuführe
 
 ## Bearbeiten von Datenblöcken
 
-Sie können die Datenansicht, den Datumsbereich oder die auf einen oder mehrere Datenblöcke angewendeten Filter bearbeiten.
+Sie können die Datenansicht, den Datumsbereich oder die Segmente bearbeiten, die auf einen oder mehrere Datenblöcke angewendet wurden.
 
-Beispielsweise können Sie einen vorhandenen Filter in einem oder mehreren Datenblöcken durch einen neuen Filter ersetzen.
+Sie können beispielsweise ein vorhandenes Segment in einem oder mehreren Datenblöcken durch ein neues Segment ersetzen.
 
 1. Wählen Sie die zu aktualisierenden Datenblöcke aus. Sie können das Kontrollkästchen auf der obersten Ebene aktivieren, um alle Datenblöcke auszuwählen. Sie können aber auch einzelne Datenblöcke auswählen.
 
@@ -58,7 +58,7 @@ Beispielsweise können Sie einen vorhandenen Filter in einem oder mehreren Daten
 
    ![Das Fenster „Schnellbearbeitung“](./assets/image58.png)
 
-1. Wählen Sie einen Filter-Link aus, um Datenansichten, Datumsbereiche oder Filter zu aktualisieren.
+1. Wählen Sie einen Segment-Link aus, um Datenansichten, Datumsbereiche oder Segmente zu aktualisieren.
 
    ![Das Feld Segment hinzufügen im Fenster „Schnellbearbeitung“](./assets/image59.png)
 
@@ -83,7 +83,7 @@ Klicken Sie auf das Papierkorbsymbol, um einen ausgewählten Datenblock zu lösc
 
 ## Gruppieren von Datenblöcken
 
-Sie können Datenblöcke mithilfe des Dropdown-Menüs **Gruppieren nach** gruppieren. Alternativ können Sie auch auf einen Spaltentitel klicken. Um Datenblöcke nach Spalten zu sortieren, klicken Sie auf den Spaltentitel. Um Datenblöcke nach Gruppen zu gruppieren, wählen Sie einen Gruppennamen aus dem Dropdown-Menü **Gruppieren nach** aus. Der folgende Screenshot zeigt ein Beispiel für nach Blatt gruppierte Datenblöcke. Darin sind Datenblöcke zu sehen, die nach Blatt 1 und Blatt 2 gruppiert sind.  Dies ist beispielsweise nützlich, wenn ein Anwendungsfall zum Ersetzen von Filtern ausgeführt werden soll. Wenn auf jeden Datenblock mehrere Filter angewendet werden, ist es hilfreich, eine Gruppe zu erstellen, die alle Datenblöcke enthält, die Sie ersetzen möchten. Dann können Sie sie einfach gemeinsam auswählen und alle gleichzeitig bearbeiten.
+Sie können Datenblöcke mithilfe des Dropdown-Menüs **Gruppieren nach** gruppieren. Alternativ können Sie auch auf einen Spaltentitel klicken. Um Datenblöcke nach Spalten zu sortieren, klicken Sie auf den Spaltentitel. Um Datenblöcke nach Gruppen zu gruppieren, wählen Sie einen Gruppennamen aus dem Dropdown-Menü **Gruppieren nach** aus. Der folgende Screenshot zeigt ein Beispiel für nach Blatt gruppierte Datenblöcke. Darin sind Datenblöcke zu sehen, die nach Blatt 1 und Blatt 2 gruppiert sind.  Dies ist beispielsweise nützlich, wenn ein Anwendungsfall zum Ersetzen von Segmenten verwendet wird. Wenn auf jeden Datenblock mehrere Segmente angewendet werden, ist es hilfreich, eine Gruppe zu erstellen, die alle Datenblöcke enthält, die Sie ersetzen möchten. Dann können Sie sie einfach gemeinsam auswählen und alle gleichzeitig bearbeiten.
 
 ![Datenblock-Manager mit der Liste „Gruppieren nach Blatt“.](./assets/group-data-blocks.png)
 

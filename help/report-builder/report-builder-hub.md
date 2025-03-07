@@ -6,10 +6,10 @@ feature: Report Builder
 type: Documentation
 exl-id: 119bd0b5-0d07-407f-b6e9-ef43352bad31
 solution: Customer Journey Analytics
-source-git-commit: 48f5e9d6c5d3a33a5bae45e841eb8364b7172876
+source-git-commit: bd2d45b9fc1380e36fc482ee75e1a9bbb26f6cf7
 workflow-type: tm+mt
 source-wordcount: '491'
-ht-degree: 95%
+ht-degree: 88%
 
 ---
 
@@ -59,12 +59,12 @@ Wenn Sie die Datenansicht ändern, übernehmen alle Datenblöcke in der Auswahl 
 
 Um die Datenansicht zu ändern, wählen Sie eine neue Datenansicht aus dem Dropdown-Menü aus.
 
-![Der Report Builder-Hub mit dem Dropdown-Menü für die Datenansicht.](./assets/image16.png)
+![Der Report Builder-Hub mit dem Dropdown-Menü „Datenansicht“.](./assets/image16.png)
 
 ### Datumsbereich
 
 **Datumsbereich** zeigt den Datumsbereich für die ausgewählten Datenblöcke an. Wenn mehrere Datenblöcke mit mehreren Datumsbereichen ausgewählt sind, zeigt der Link für **Datumsbereich** *Mehrere* an.
 
-### Filter
+### Segmente 
 
-Der Link für **Filter** zeigt eine zusammenfassende Liste der Filter an, die von den ausgewählten Datenblöcken verwendet werden. Wenn mehrere Datenblöcke mit mehreren angewendeten Filtern ausgewählt sind, zeigt der Link für **Filter** *Mehrere* an.
+Der **Segmente**-Link zeigt eine zusammenfassende Liste der Segmente an, die von den ausgewählten Datenblöcken verwendet werden. Wenn mehrere Datenblöcke mit mehreren angewendeten Segmenten ausgewählt sind, wird der Link **Segmente** angezeigt *Mehrere*.
