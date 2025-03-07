@@ -6,10 +6,10 @@ feature: Report Builder
 type: Documentation
 exl-id: 46382621-d5e1-41d6-865c-782ec28a21fa
 solution: Customer Journey Analytics
-source-git-commit: c56c77079aa21fb740fda6bec333731a1f82a48f
+source-git-commit: 0d87f28aa4f8c1b16f46227abad7d374800dcb66
 workflow-type: tm+mt
 source-wordcount: '649'
-ht-degree: 68%
+ht-degree: 61%
 
 ---
 
@@ -43,13 +43,13 @@ Konfigurieren Sie die anfänglichen Datenblockparameter für die Position des Da
 
    ![Screenshot mit der Option „Datumsbereich“ und der Schaltfläche „Aktiv Weiter“.](./assets/choose_date_data_view3.png)
 
-   Nach der Konfiguration des Datenblocks können Sie Dimensionen, Metriken und Filter auswählen, um Ihren Datenblock zu erstellen. Die Registerkarten „Dimensionen“, „Metriken“ und „Filter“ werden über dem Bereich „Tabellen-Builder“ angezeigt.
+   Nach der Konfiguration des Datenblocks können Sie Dimensionen, Metriken und Segmente auswählen, um Ihren Datenblock zu erstellen. Die Registerkarten Dimensionen, Metriken und Segmente werden über dem Bereich Tabellen-Builder angezeigt.
 
 ## Datenblock erstellen
 
 Um den Datenblock zu erstellen, wählen Sie Berichtkomponenten aus und passen Sie dann das Layout an.
 
-1. Fügen Sie Dimensionen, Metriken und Filter hinzu.
+1. Dimensionen, Metriken und Segmente hinzufügen.
 
    Scrollen Sie in den Komponentenlisten oder verwenden Sie das Feld **Suchen**, um Komponenten zu finden. Ziehen Sie Komponenten per Drag &amp; Drop in den Tabellenbereich oder doppelklicken Sie auf einen Komponentennamen in der Liste, um die Komponente automatisch zum Tabellenbereich hinzuzufügen.
 
@@ -57,7 +57,7 @@ Um den Datenblock zu erstellen, wählen Sie Berichtkomponenten aus und passen Si
 
    - Dimensionskomponenten werden zum Bereich „Zeile“ oder zum Bereich „Spalte“ hinzugefügt, wenn bereits eine Dimension in den Spalten vorhanden ist.
    - Datumskomponenten werden dem Abschnitt „Spalte“ hinzugefügt.
-   - Filterkomponenten werden dem Abschnitt „Filter“ hinzugefügt.
+   - Segmentkomponenten werden zum Abschnitt Segmente hinzugefügt.
 
    **Startdatum als Dimension**
 

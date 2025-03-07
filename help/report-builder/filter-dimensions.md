@@ -1,12 +1,12 @@
 ---
-title: Filtern von Dimensionen im Report Builder
-description: Beschreibt die Verwendung von Filterdimensionen im Report Builder für das Customer Journey Analytics
+title: Filtern von Dimensionen in Report Builder
+description: Beschreibt die Verwendung von Filterdimensionen in Report Builder für Customer Journey Analytics
 role: User
 feature: Report Builder
 type: Documentation
 exl-id: 5730d5f3-de76-429f-81f5-ebe6b62a9480
 solution: Customer Journey Analytics
-source-git-commit: cbb48623212c2f3d8968dc6daca491761e2f4a9e
+source-git-commit: 0d87f28aa4f8c1b16f46227abad7d374800dcb66
 workflow-type: tm+mt
 source-wordcount: '1017'
 ht-degree: 88%
@@ -21,7 +21,7 @@ So ändern Sie die für jede Dimension zurückgegebenen Dimensionselemente
 
 1. Wählen Sie einen Datenblock aus und klicken Sie im Bedienfeld „Befehle“ auf „Datenblock bearbeiten“.
 
-1. Klicken Sie auf „Weiter“, um die Registerkarte „Dimensionen“ anzuzeigen.
+1. Klicken Sie **[!UICONTROL Weiter]**, um die Registerkarte Dimensionen anzuzeigen.
 
 1. Klicken Sie auf das Symbol **...** neben einem Komponentennamen in der Tabelle.
 
@@ -139,7 +139,7 @@ Mit der Option „Spezifisch“ können Sie für jede Dimension eine feste Liste
 
    ![Die Elemente aus der Liste der letzten 6 Monate anzeigen.](./assets/image34.png)
 
-   Nachdem die Daten der letzten 6 Monate geladen wurden, aktualisiert der Report Builder den Link zu **Elemente für die letzten 18 Monate anzeigen**.
+   Nachdem die Daten der letzten 6 Monate geladen wurden, aktualisiert Report Builder den Link zu **Elemente für die letzten 18 Monate anzeigen**.
 
 1. Wählen Sie ein Dimensionselement aus.
 
@@ -175,6 +175,6 @@ Ihre Auswahl kann leere Zellen oder Zellen mit Werten enthalten, die nicht mit e
 
 Klicken Sie auf der Registerkarte **Dimensionen** auf das Pfeilsymbol neben einem Dimensionsnamen, um die Liste der Dimensionselemente anzuzeigen.
 
-![Die Registerkarte &quot;Dimensionen&quot; und die Liste der Dimensionen.](./assets/dimensions_chevron.png)
+![Die Registerkarte „Dimensionen“ und die Liste der Dimensionen.](./assets/dimensions_chevron.png)
 
 Sie können Elemente per Drag &amp; Drop in die **Tabelle** ziehen oder auf einen Elementnamen doppelklicken, um ihn zum **Tabellen**-Builder hinzuzufügen.
