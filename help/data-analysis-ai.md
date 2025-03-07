@@ -7,7 +7,7 @@ feature: AI Tools
 hidefromtoc: true
 hide: true
 exl-id: 262d5f15-16cb-4851-a769-7dbd205b2f81
-source-git-commit: 99f82353e41180a0090e84e58593d63fc5cbe803
+source-git-commit: ac3ec479938acf509bbd26be282b75e75dd49c33
 workflow-type: tm+mt
 source-wordcount: '1650'
 ht-degree: 3%
@@ -36,7 +36,7 @@ Wenn Sie den KI-Assistenten zur Beantwortung datenorientierter Fragen in Analysi
 | **Verifizierbarkeit** | Die Datenverifizierbarkeit und -richtigkeit kann über die generierte Freiformtabelle und Datenvisualisierung bestätigt werden. Wenn ein(e) Benutzende(r) beispielsweise *Bestellungen im letzten Monat* fragt, können Sie bestätigen, dass im neu generierten Bedienfeld, in der Datenvisualisierung und in der Freiformtabelle die richtige Metrik („Bestellungen„) und der richtige Datumsbereich („letzter Monat„) ausgewählt wurden. |
 | **Feedback** | <ul><li>Daumen hoch</li><li>Daumen runter</li><li>Markierung</li></ul> |
 
-### Alpha-Funktionen, die nicht im Umfang enthalten sind
+### Beta-Funktionen, die nicht im Umfang enthalten sind
 
 | Nicht unterstützte Funktion | Beschreibung |
 | --- | --- |
@@ -78,9 +78,9 @@ See [Access control](/help/technotes/access-control.md#access-control) for more 
 
 3. Wählen Sie **[!UICONTROL Leeres Projekt]** im Banner oben auf der Projektseite aus, um ein neues leeres Projekt zu öffnen.
 
-4. Stellen Sie sicher, dass es sich bei der für das Bedienfeld ausgewählten Datenansicht um dieselbe Datenansicht handelt, die für die Verwendung mit dem KI-Assistenten für Alpha-Tests aktiviert wurde.
+4. Stellen Sie sicher, dass es sich bei der für das Bedienfeld ausgewählten Datenansicht um dieselbe Datenansicht handelt, die für die Verwendung mit dem KI-Assistenten für Beta-Tests aktiviert wurde.
 
-   Wenn Sie sich nicht sicher sind, wenden Sie sich an den Alpha Slack-Kanal.
+   Wenn Sie sich nicht sicher sind, wenden Sie sich an den Beta Slack-Kanal.
 
 5. Wählen Sie oben rechts auf der Seite das Chat-Symbol für den KI-Assistenten aus.
 
@@ -187,7 +187,7 @@ Diese Beispiele sollen Ihnen dabei helfen, sich damit vertraut zu machen, wie be
 | Linienvisualisierung | <ul><li>Trend</li><li>[Metrik] in [Zeitbereich]</li></ul> |
 | Balkenvisualisierung | <ul><li>[Metrik] von [Dimension]</li></ul> |
 
-## Erwartungen an Alpha-Tests und angefordertes Feedback
+## Erwartungen an Beta-Tests und angefordertes Feedback
 
 Überprüfen Sie nach dem Stellen jeder Frage sorgfältig die Antwort des Assistenten. Es ist wichtig, die generierten Visualisierungen umfassend zu bewerten, bevor Sie Feedback geben.
 

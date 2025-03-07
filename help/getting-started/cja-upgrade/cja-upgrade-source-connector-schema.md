@@ -7,9 +7,9 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: fad62c04-b435-466a-ab3c-cf2d174ddbfb
-source-git-commit: 4ba493ae40d417499a4ab584898ff533f17be755
+source-git-commit: ac3ec479938acf509bbd26be282b75e75dd49c33
 workflow-type: tm+mt
-source-wordcount: '548'
+source-wordcount: '587'
 ht-degree: 23%
 
 ---
@@ -22,6 +22,15 @@ ht-degree: 23%
 >id="cja-upgrade-source-connector-create-schema"
 >title="Erstellen eines Schemas für den Analytics-Quell-Connector"
 >abstract="Dieses Schema ist eine Kombination der Adobe Analytics Experience-Ereignisfeldergruppe mit allen Feldergruppen, aus denen das benutzerdefinierte Schema Ihrer Organisation besteht. Damit können Sie die vom Analytics-Quell-Connector verwendeten Felder dem Schema Ihrer Organisation zuordnen. Dies wird nur für historische Daten genutzt.<br><br>Die Erstellung dieses Schemas ist zwar technischer Natur, kann aber in Stunden abgeschlossen werden, möglicherweise auch schneller, wenn Sie genau wissen, aus welchen Feldergruppen das benutzerdefinierte Schema Ihrer Organisation besteht."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-source-connector-historical"
+>title="Analytics-Quell-Connector für historische Daten erstellen"
+>abstract="Sie können den Analytics-Quell-Connector verwenden, um Daten von Adobe Analytics Report Suites in Adobe Experience Platform zu importieren. Diese Daten können dann als Verlaufsdaten in Customer Journey Analytics verwendet werden."
 
 <!-- markdownlint-enable MD034 -->
 
