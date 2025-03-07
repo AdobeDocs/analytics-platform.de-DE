@@ -5,9 +5,9 @@ feature: Analytics Dashboards
 role: User
 exl-id: 12901a76-cb88-45a5-81e9-59fb310328be
 solution: Customer Journey Analytics
-source-git-commit: 4bf8c616965718426efe880865acb0e5054b6a31
+source-git-commit: d8286e34edba128113ba99602ba24eea67c5dea8
 workflow-type: tm+mt
-source-wordcount: '1299'
+source-wordcount: '1297'
 ht-degree: 73%
 
 ---
@@ -42,17 +42,17 @@ Um die App herunterzuladen und zu installieren, führen Sie die Schritte entspre
 
 >[!NOTE]
 >
->Obwohl die Mobile App im App Store Adobe Analytics Dashboard heißt, kann sie auch mit Customer Journey Analytics-Mobile-Scorecards verwendet werden.
+>Obwohl die Mobile App im App Store Adobe Analytics Dashboard heißt, kann sie auch mit Customer Journey Analytics Mobile Scorecards verwendet werden.
 
 **Für ausführende Benutzer mit iOS-Geräten:**
 
-Klicken Sie auf den folgenden Link (er ist auch auf Customer Journey Analytics unter **[!UICONTROL Tools]** > **[!UICONTROL Analytics-Dashboards (Mobile App)]** verfügbar) und befolgen Sie die Anweisungen zum Herunterladen, Installieren und Öffnen der App:
+Klicken Sie auf den folgenden Link (er ist auch in Customer Journey Analytics unter **[!UICONTROL Tools]** > **[!UICONTROL Analytics-Dashboards (Mobile App)]** verfügbar) und befolgen Sie die Anweisungen zum Herunterladen, Installieren und Öffnen der App:
 
 [iOS-Link](https://apple.co/2zXq0aN)
 
 **Für ausführende Benutzer mit Android-Geräten:**
 
-Klicken Sie auf den folgenden Link (er ist auch auf Customer Journey Analytics unter **[!UICONTROL Tools]** > **[!UICONTROL Analytics-Dashboards (Mobile App)]** verfügbar) und befolgen Sie die Anweisungen zum Herunterladen, Installieren und Öffnen der App:
+Klicken Sie auf den folgenden Link (er ist auch in Customer Journey Analytics unter **[!UICONTROL Tools]** > **[!UICONTROL Analytics-Dashboards (Mobile App)]** verfügbar) und befolgen Sie die Anweisungen zum Herunterladen, Installieren und Öffnen der App:
 
 [Android-Link](https://bit.ly/2LM38Oo)
 
@@ -64,7 +64,7 @@ Nach dem Herunterladen und der Installation können sich ausführende Benutzer m
 
 So verwenden Sie Dashboards:
 
-1. Melden Sie sich bei der Mobile App an. Der Anmeldebildschirm wird beim Start der Dashboards angezeigt. Befolgen Sie die Anweisungen mit Ihren bestehenden Customer Journey Analytics-Anmeldedaten. Adobe und Enterprise/Federated IDs werden unterstützt.
+1. Melden Sie sich bei der Mobile App an. Der Anmeldebildschirm wird beim Start der Dashboards angezeigt. Befolgen Sie die Eingabeaufforderungen mit Ihren bestehenden Customer Journey Analytics-Anmeldedaten. Adobe und Enterprise/Federated IDs werden unterstützt.
 
    ![Anmeldesequenz](assets/signseq.png)
 
@@ -120,11 +120,11 @@ So verwenden Sie Dashboards:
 
    * Je nachdem, auf welches Intervall Sie tippen (**Tag**, **Woche**, **Monat** oder **Jahr**), sehen Sie zwei Optionen für Datumsbereiche – entweder den aktuellen oder den unmittelbar vorhergehenden Zeitraum. Tippen Sie auf eine dieser beiden Optionen, um den ersten Bereich auszuwählen. Tippen Sie in der Liste unter **[!UICONTROL VERGLEICHEN MIT]** auf eine der angezeigten Optionen, um die Daten in diesem Zeitraum mit dem ersten von Ihnen ausgewählten Datumsbereich zu vergleichen. Tippen Sie oben rechts im Bildschirm auf **[!UICONTROL Fertig]**. Das Feld **[!UICONTROL Datumsbereiche]** und die Scorecard-Kacheln werden mit den neuen Vergleichsdaten aus den von Ihnen ausgewählten neuen Bereichen aktualisiert.
 
-1. Um einen Segmentfilter auf Ihre Scorecard anzuwenden, tippen Sie auf die Dropdown-Liste „Filter“ und wählen Sie ein Segment aus, das von Ihrem Kurator konfiguriert wurde. [Filter](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html?lang=de) in der App funktionieren genauso wie in Workspace.
+1. Um ein Segment auf Ihre Scorecard anzuwenden, tippen Sie auf die Dropdown-Liste „Segment“ und wählen Sie ein Segment aus, das von Ihrem Kurator konfiguriert wurde. [Segmente](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html?lang=de) in der App funktionieren genauso wie in Workspace.
 
-   ![Segmentfilter](assets/segment_filter.png)
+   ![Segment](assets/segment_filter.png)
 
-1. Fordern Sie eine Scorecard-Aktualisierung an. Wenn eine Scorecard nicht alle Metriken oder Aufschlüsselungen enthält, die für Sie von Interesse sein könnten, wenden Sie sich an Ihr Customer Journey Analytics-Team, damit die Scorecard aktualisiert wird. Nach der Aktualisierung können Sie die Karte auf dem Bildschirm nach unten ziehen, um sie zu aktualisieren und die kürzlich hinzugefügten Daten zu laden.
+1. [!UICONTROL Scorecard]-Aktualisierungen abrufen. Wenn eine [!UICONTROL Scorecard] nicht alle Metriken oder Aufschlüsselungen enthält, die für Sie von Interesse sein könnten, wenden Sie sich an Ihr Customer Journey Analytics-Team, damit die Scorecard aktualisiert wird. Nach der Aktualisierung können Sie die Karte auf dem Bildschirm nach unten ziehen, um sie zu aktualisieren und die kürzlich hinzugefügten Daten zu laden.
 
 1. So hinterlassen Sie Feedback zu dieser App:
 
@@ -157,8 +157,8 @@ Tippen Sie auf die Option und geben Sie im obersten Feld Ihre E-Mail-Adresse und
 
 | Begriff | Definition |
 |--- |--- |
-| Verbraucher | Führungskraft, die Schlüsselmetriken und Einblicke vom Customer Journey Analytics auf einem Mobilgerät anzeigt |
-| Kurator | Person, die mit der Datenerfassung und -auswertung vertraut ist, Einblicke aus Customer Journey Analytics erhält und verteilt und die Scorecards konfiguriert, die von Verbrauchern angezeigt werden |
+| Verbraucher | Führungskraft, die Schlüsselmetriken und Einblicke aus Customer Journey Analytics auf einem Mobilgerät anzeigt |
+| Kurator | Person, die mit der Datenerfassung und -auswertung vertraut ist, Einblicke aus Customer Journey Analytics erlangt und verteilt und die von Verbrauchern anzuzeigenden Scorecards konfiguriert |
 | Kuratierung | Der Vorgang der Erstellung oder Bearbeitung einer mobilen Scorecard mit relevanten Metriken, Dimensionen und anderen Komponenten für den Verbraucher |
 | Scorecard | Eine Ansicht der Dashboards mit einer oder mehreren Kacheln |
 | Kachel | Wiedergabe einer Metrik in einer Scorecard-Ansicht |

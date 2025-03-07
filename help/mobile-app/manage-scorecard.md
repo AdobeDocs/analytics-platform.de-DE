@@ -5,20 +5,20 @@ feature: Analytics Dashboards
 role: User, Admin
 solution: Customer Journey Analytics
 exl-id: 6a0de7db-689d-448d-b8e0-90af4a5ee325
-source-git-commit: 4bf8c616965718426efe880865acb0e5054b6a31
+source-git-commit: d8286e34edba128113ba99602ba24eea67c5dea8
 workflow-type: tm+mt
-source-wordcount: '1813'
-ht-degree: 65%
+source-wordcount: '1806'
+ht-degree: 64%
 
 ---
 
 # Scorecards verwalten
 
-In diesem Abschnitt erfahren Kuratoren, die Customer Journey Analytics-Daten erstellen, wie Scorecard-Elemente angezeigt und verwaltet werden.
+In diesem Abschnitt erfahren Kuratoren von Customer Journey Analytics-Daten, wie sie Scorecard-Elemente anzeigen und verwalten können.
 
 ## Anzeigen und Konfigurieren von Kacheleigenschaften {#tiles}
 
-Wenn Sie im Scorecard Builder auf eine Kachel klicken, zeigt die rechte Leiste die Eigenschaften und Merkmale an, die mit dieser Kachel und ihrer Detailfolie verbunden sind. In dieser Leiste können Sie einen neuen **Titel** für die Kachel eingeben und die Kachel konfigurieren, indem Sie Filter anwenden. Segmente sind Filter in Customer Journey Analytics.
+Wenn Sie im Scorecard Builder auf eine Kachel klicken, zeigt die rechte Leiste die Eigenschaften und Merkmale an, die mit dieser Kachel und ihrer Detailfolie verbunden sind. In dieser Leiste können Sie einen neuen **Titel** für die Kachel erstellen und die Kachel konfigurieren, indem Sie Segmente anwenden.
 
 ![Kachel „Eigenschaften“](assets/properties-tile-new.png)
 
@@ -109,7 +109,7 @@ Um eine Folie zu löschen, tippen Sie auf das Papierkorbsymbol.
 
 ### Anpassen einer Daten-Story {#customize-data-story}
 
-Mit Daten-Storys können Sie alles anpassen, sodass Sie Informationen, die Sie weitergeben möchten, freigeben und alles ausschließen können, was Sie nicht benötigen. Sie können Kacheln und einzelne Folien anpassen, um Filter hinzuzufügen, Aufschlüsselungen anzuzeigen, das Layout zu ändern und die Visualisierungen zu ändern.
+Mit Daten-Storys können Sie alles anpassen, sodass Sie Informationen, die Sie weitergeben möchten, freigeben und alles ausschließen können, was Sie nicht benötigen. Sie können Kacheln und einzelne Folien anpassen, um Segmente hinzuzufügen, Aufschlüsselungen anzuzeigen, das Layout zu ändern und die Visualisierungen zu ändern.
 
 **Anpassen von Kacheln**
 

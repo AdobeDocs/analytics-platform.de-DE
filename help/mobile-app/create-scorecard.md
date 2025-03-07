@@ -5,9 +5,9 @@ feature: Analytics Dashboards
 role: User, Admin
 exl-id: 12531600-7e88-4d56-a2a5-e5b346f91937
 solution: Customer Journey Analytics
-source-git-commit: 4bf8c616965718426efe880865acb0e5054b6a31
+source-git-commit: d8286e34edba128113ba99602ba24eea67c5dea8
 workflow-type: tm+mt
-source-wordcount: '2703'
+source-wordcount: '2689'
 ht-degree: 67%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 67%
 <!-- markdownlint-enable MD034 -->
 
 
-Die folgenden Informationen liefern Kuratoren von Customer Journey Analytics-Daten eine Anleitung dazu, wie Dashboards für Führungskräfte konfiguriert und dargestellt werden. Sehen Sie sich zunächst das Video zu Scorecard Builder für Analytics-Dashboards an:
+Die folgenden Informationen liefern Kuratoren von Customer Journey Analytics-Daten eine Anleitung dazu, wie Dashboards für ausführende Benutzer konfiguriert und dargestellt werden. Sehen Sie sich zunächst das Video zu Scorecard Builder für Analytics-Dashboards an:
 
 
 >[!BEGINSHADEBOX]
@@ -36,7 +36,7 @@ Siehe ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Erstellen eine
 
 >[!NOTE]
 >
->Die Screenshots der Analytics-Scorecard für diese Seite stammen aus der Adobe Analytics-Benutzeroberfläche und nicht aus dem Customer Journey Analytics. Die Benutzeroberflächen sind fast identisch.
+>Die Screenshots der Analytics-Scorecard für diese Seite stammen aus der Adobe Analytics-Benutzeroberfläche und nicht aus Customer Journey Analytics. Die Benutzeroberflächen sind fast identisch.
 
 Eine Analytics Scorecard zeigt wichtige Datenvisualisierungen für ausführende Benutzer in einem gekachelten Layout an, wie unten dargestellt:
 
@@ -91,13 +91,13 @@ Sie können beispielsweise geeignete Dimensionen (wie **[!DNL Marketing Channel]
 
 ![Neues Fenster für mobile Scorecards mit einem Pfeil, der von der Dimensionsliste auf den Scorecard-Bereich verweist.](assets/layer_dimensions.png)
 
-## Anwenden von Filtern {#filters}
+## Segmente anwenden {#segments}
 
-Um Filter auf einzelne Kacheln anzuwenden, ziehen Sie einen Filter (Segmente sind Filter im Customer Journey Analytics) aus dem linken Bedienfeld und legen Sie ihn direkt auf der Kachel ab.
+Um ein Segment auf einzelne Kacheln anzuwenden, ziehen Sie es aus dem linken Bereich und legen Sie es direkt auf der Kachel ab.
 
-Wenn Sie den Filter auf alle Kacheln in der Scorecard anwenden möchten, legen Sie die Kachel auf der Scorecard ab. Sie können auch Filter anwenden, indem Sie im Menü „Filter“ unterhalb der Datumsbereiche Filter auswählen. Sie [Filter für Ihre Scorecards konfigurieren und anwenden](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html?lang=de) genauso wie beim Customer Journey Analytics von Workspace.
+Wenn Sie das Segment auf alle Kacheln in der Scorecard anwenden möchten, legen Sie die Kachel auf der Scorecard ab. Sie können Segmente auch anwenden, indem Sie sie im Menü Segment unter den Datumsbereichen auswählen. Sie [Segmente für Ihre Scorecards konfigurieren und ](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html?lang=de), wie Sie es in Customer Journey Analytics Workspace tun würden.
 
-![Dropdown-Auswahl „Filter“ mit Hervorhebung der Build-Filter](assets/segment_ui.png)
+![Dropdown-Auswahl „Segment“ mit hervorgehobener Option zum Erstellen von Segmenten](assets/segment_ui.png)
 
 ## Datumsbereiche hinzufügen {#dates}
 
@@ -186,7 +186,7 @@ Wenn Sie Dimensionselemente des Typs [!UICONTROL Nicht angegeben] aus Ihren Date
 
 ## Anzeigen und Konfigurieren von Kacheleigenschaften {#tiles}
 
-Wenn Sie im Scorecard Builder auf eine Kachel klicken, zeigt die rechte Leiste die Eigenschaften und Merkmale an, die mit dieser Kachel und ihrer Detailfolie verbunden sind. In dieser Leiste können Sie einen neuen **Titel** für die Kachel eingeben und die Kachel konfigurieren, indem Sie Filter anwenden. Segmente sind Filter in Customer Journey Analytics.
+Wenn Sie im Scorecard Builder auf eine Kachel klicken, zeigt die rechte Leiste die Eigenschaften und Merkmale an, die mit dieser Kachel und ihrer Detailfolie verbunden sind. In dieser Leiste können Sie einen neuen **Titel** für die Kachel erstellen und die Kachel konfigurieren, indem Sie Segmente anwenden.
 
 ![Kachel „Eigenschaften“](assets/properties-tile-new.png)
 
@@ -281,7 +281,7 @@ Um eine Folie zu löschen, tippen Sie auf das Papierkorbsymbol.
 
 ### Anpassen einer Daten-Story {#customize-data-story}
 
-Mit Daten-Storys können Sie alles anpassen, sodass Sie Informationen, die Sie weitergeben möchten, freigeben und alles ausschließen können, was Sie nicht benötigen. Sie können Kacheln und einzelne Folien anpassen, um Filter hinzuzufügen, Aufschlüsselungen anzuzeigen, das Layout zu ändern und die Visualisierungen zu ändern.
+Mit Daten-Storys können Sie alles anpassen, sodass Sie Informationen, die Sie weitergeben möchten, freigeben und alles ausschließen können, was Sie nicht benötigen. Sie können Kacheln und einzelne Folien anpassen, um Segmente hinzuzufügen, Aufschlüsselungen anzuzeigen, das Layout zu ändern und die Visualisierungen zu ändern.
 
 **Anpassen von Kacheln**
 

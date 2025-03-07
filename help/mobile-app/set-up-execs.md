@@ -5,10 +5,10 @@ feature: Analytics Dashboards
 role: User, Admin
 exl-id: 647f192a-e317-4011-92bc-a8bb8494a3c7
 solution: Customer Journey Analytics
-source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+source-git-commit: d8286e34edba128113ba99602ba24eea67c5dea8
 workflow-type: tm+mt
-source-wordcount: '712'
-ht-degree: 74%
+source-wordcount: '711'
+ht-degree: 69%
 
 ---
 
@@ -20,14 +20,14 @@ In einigen Fällen benötigen die ausführenden Benutzer möglicherweise zusätz
 
 1. Richten Sie neue Benutzer in der [Experience Cloud Admin Console](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/product-profile.html?lang=de) ein.
 
-1. Um Scorecards freigeben zu können, müssen Sie App-Benutzern Berechtigungen für den Zugriff auf Scorecard-Komponenten wie Analysis Workspace, die Datenansichten, auf denen Scorecards basieren, sowie Filter, Metriken und Dimensionen gewähren.
+1. Um Scorecards freigeben zu können, müssen Sie App-Benutzern Berechtigungen für den Zugriff auf Scorecard-Komponenten wie Analysis Workspace, die Datenansichten, auf denen Scorecards basieren, sowie Segmente, Metriken und Dimensionen gewähren.
 
 ## Systemanforderungen von Mobile-App-Benutzern
 
 Damit ausführende Benutzer Zugriff auf Ihre Scorecards in der Mobile App haben, müssen folgende Voraussetzungen gegeben sein:
 
 * Auf den Geräten Ihrer Benutzer muss mindestens iOS-Version 10 oder Android-Version 4.4 (KitKat) installiert sein.
-* Sie haben eine gültige Anmeldung bei Customer Journey Analytics.
+* Sie verfügen über eine gültige Anmeldung bei Customer Journey Analytics.
 * Sie haben die mobilen Scorecards für Ihre Benutzer korrekt erstellt und freigegeben.
 * Ihre Benutzer müssen Zugriff auf die Komponenten haben, die die Scorecard enthält. Sie können bei der Freigabe Ihrer Scorecards eine Option auswählen, um **[!UICONTROL eingebettete Komponenten freizugeben]**.
 
@@ -35,21 +35,21 @@ Damit ausführende Benutzer Zugriff auf Ihre Scorecards in der Mobile App haben,
 
 >[!NOTE]
 >
->Obwohl die Mobile App im App Store Adobe Analytics Dashboard heißt, kann sie auch mit Customer Journey Analytics-Mobile-Scorecards verwendet werden.
+>Obwohl die Mobile App im App Store Adobe Analytics Dashboard heißt, kann sie auch mit Customer Journey Analytics Mobile Scorecards verwendet werden.
 
 **Für ausführende Benutzer mit iOS-Geräten:**
 
-Klicken Sie auf den folgenden Link (er ist auch auf Customer Journey Analytics unter **[!UICONTROL Tools]** > **[!UICONTROL Analytics-Dashboards (Mobile Opp)]** verfügbar) und befolgen Sie die Anweisungen zum Herunterladen, Installieren und Öffnen der App:
+Klicken Sie auf den folgenden Link (er ist auch in Customer Journey Analytics unter **[!UICONTROL Tools]** > **[!UICONTROL Analytics-Dashboards (Mobile Opp)]** verfügbar) und befolgen Sie die Anweisungen zum Herunterladen, Installieren und Öffnen der App:
 
 `[iOS link](https://apple.co/2zXq0aN)`
 
 **Für ausführende Benutzer mit Android-Geräten:**
 
-Klicken Sie auf den folgenden Link (er ist auch auf Customer Journey Analytics unter **[!UICONTROL Tools]** > **[!UICONTROL Analytics-Dashboards (Mobile App)]** verfügbar) und befolgen Sie die Anweisungen zum Herunterladen, Installieren und Öffnen der App:
+Klicken Sie auf den folgenden Link (er ist auch in Customer Journey Analytics unter **[!UICONTROL Tools]** > **[!UICONTROL Analytics-Dashboards (Mobile App)]** verfügbar) und befolgen Sie die Anweisungen zum Herunterladen, Installieren und Öffnen der App:
 
 `[Android link](https://bit.ly/2LM38Oo)`
 
-Nach dem Download und der Installation können sich Führungskräfte mit ihren bestehenden Customer Journey Analytics-Anmeldedaten bei der App anmelden. Wir unterstützen sowohl Adobe- als auch Enterprise/Federated IDs.
+Nach dem Herunterladen und der Installation können sich ausführende Benutzer mit ihren bestehenden Customer Journey Analytics-Anmeldedaten bei der App anmelden. Wir unterstützen sowohl Adobe als auch Enterprise/Federated IDs.
 
 ![Willkommensbildschirm für Adobe Analytics-Dashboards](assets/welcome.png)
 
@@ -74,7 +74,7 @@ Nach dem Download und der Installation können sich Führungskräfte mit ihren b
 
 Erklären Sie dem ausführenden Benutzer, wie die Kacheln in den von Ihnen freigegebenen Scorecards dargestellt werden.
 
-![Erläuterung der Kacheln, einschließlich Datumsbereich, Segmentfilter sowie ausgewählter Metriken und Dimensionen](assets/newexplain.png)
+![Erläuterung der Kacheln, einschließlich Datumsbereich, Segment sowie ausgewählter Metriken und Dimensionen](assets/newexplain.png)
 
 ![Beispiel-Scorecard](assets/intro_scorecard.png)
 
@@ -115,4 +115,4 @@ Wenn sich der ausführende Benutzer anmeldet und eine Meldung angezeigt wird, da
 * Der ausführende Benutzer hat möglicherweise die falsche Customer Journey Analytics-Sandbox ausgewählt oder
 * eventuell wurde die Scorecard nicht für den ausführenden Benutzer freigegeben.
 
-Stellen Sie sicher, dass sich der ausführende Benutzer bei der richtigen Customer Journey Analytics-Sandbox anmelden kann und dass die Scorecard freigegeben wurde.
+Vergewissern Sie sich, dass sich der ausführende Benutzer bei der richtigen Customer Journey Analytics-Sandbox anmelden kann und dass die Scorecard freigegeben wurde.
