@@ -9,9 +9,9 @@ index: true
 user-guide-title: Handbuch zu Customer Journey Analytics
 user-guide-description: Hier erhalten Sie Informationen zu Adobe Customer Journey Analytics und Erläuterungen zur Nutzung von Analysis Workspace mit Daten aus Experience Platform.
 breadcrumb-title: Handbuch zu Customer Journey Analytics
-source-git-commit: 0d87f28aa4f8c1b16f46227abad7d374800dcb66
+source-git-commit: cd0ff5f6c805dc75fc07cee87e104b84d411abc9
 workflow-type: tm+mt
-source-wordcount: '1216'
+source-wordcount: '1217'
 ht-degree: 90%
 
 ---
@@ -425,6 +425,7 @@ ht-degree: 90%
          + [Konfigurieren des Streaming-Vorgangs von Google Analytics-Daten](/help/use-cases/third-party/ga/streaming.md)
          + [Bericht zu Google Analytics-Daten](/help/use-cases/third-party/ga/report.md)
       + Quantum Metric {#qm}
+         + [Überblick](/help/use-cases/third-party/quantum-metric/qm-overview.md)
          + [Sitzungs-ID erfassen](/help/use-cases/third-party/quantum-metric/collect-session-id.md)
          + [Sitzungswiederholungen](/help/use-cases/third-party/quantum-metric/tie-session-replays.md)
          + [Verwenden von Heatmaps](/help/use-cases/third-party/quantum-metric/heatmap.md)
