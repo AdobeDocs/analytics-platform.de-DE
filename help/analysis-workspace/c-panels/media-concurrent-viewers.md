@@ -7,7 +7,7 @@ role: User
 source-git-commit: 0cd9cd508d474df3dff176bca4596d0379ac86b4
 workflow-type: tm+mt
 source-wordcount: '1174'
-ht-degree: 40%
+ht-degree: 43%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 40%
 >[!CONTEXTUALHELP]
 >id="workspace_mediaconcurrentviewers_button"
 >title="Gleichzeitige Medienbetrachtende"
->abstract="Erstellen Sie ein Bedienfeld, um gleichzeitige Betrachter über einen bestimmten Zeitraum zu analysieren."
+>abstract="Erstellen Sie ein Panel, um gleichzeitige Betrachtende über einen bestimmten Zeitraum zu analysieren."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -27,7 +27,7 @@ ht-degree: 40%
 >[!CONTEXTUALHELP]
 >id="workspace_mediaconcurrentviewers_panel"
 >title="Gleichzeitige Medienbetrachtende"
->abstract="Analyse der gleichzeitigen Betrachter im Zeitverlauf, Anzeige von Spitzenzeiten bei gleichzeitigen Ansichten und optional Aufschlüsselung und Vergleich mithilfe von Filtern, Dimensionen, Dimensionselementen oder Datumsbereichen."
+>abstract="Analysieren Sie die gleichzeitig Betrachtenden im Zeitverlauf, zeigen Sie Informationen zum maximalen gleichzeitigen Zugriff an oder schlüsseln Sie Daten mithilfe von Filtern, Dimensionen, Dimensionselementen oder Datumsbereichen auf und vergleichen Sie sie."
 
 <!-- markdownlint-enable MD034 -->
 

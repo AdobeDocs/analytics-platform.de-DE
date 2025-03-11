@@ -7,7 +7,7 @@ role: User
 source-git-commit: 0cd9cd508d474df3dff176bca4596d0379ac86b4
 workflow-type: tm+mt
 source-wordcount: '2141'
-ht-degree: 16%
+ht-degree: 18%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 16%
 >[!CONTEXTUALHELP]
 >id="workspace_experimentation_panel"
 >title="Experimentieren"
->abstract="Vergleichen Sie verschiedene Benutzererlebnisse, Marketing- oder Messaging-Variationen, um zu bestimmen, welche am besten geeignet ist, um ein bestimmtes Ergebnis zu erzielen. Geben Sie das Experiment, die zu vergleichende Kontrollvariante, die Erfolgsmetrik und die Normalisierungsmetrik an. Legen Sie optional Ober- und Untergrenzen für die Konfidenz fest."
+>abstract="Vergleichen Sie verschiedene Anwendererlebnisse bzw. Marketing- oder Messaging-Varianten miteinander, um zu ermitteln, was für ein bestimmtes Ergebnis die beste Lösung ist. Geben Sie das Experiment, die damit zu vergleichende Kontrollvariante, die Erfolgsmetrik und die Normalisierungsmetrik an. Legen Sie optional Ober- und Untergrenzen für die Konfidenz fest."
 
 <!-- markdownlint-enable MD034 -->
 

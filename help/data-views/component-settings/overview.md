@@ -8,7 +8,7 @@ role: Admin
 source-git-commit: 0cd9cd508d474df3dff176bca4596d0379ac86b4
 workflow-type: tm+mt
 source-wordcount: '669'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 94%
 >[!CONTEXTUALHELP]
 >id="dataview_component_settings"
 >title="Komponenteneinstellungen"
->abstract="Zeigen Sie den Namen, die Beschreibung und andere Einstellungen für eine Komponente an und konfigurieren Sie sie. Aktivieren Sie dieses Kontrollkästchen, um diese Komponente im Reporting vor Benutzern ohne Administratorrechte auszublenden. Administratoren können weiterhin auf die Komponente zugreifen, indem sie **[!UICONTROL Alle Komponenten anzeigen]** in einem Workspace-Projekt auswählen."
+>abstract="Zeigen Sie den Namen, die Beschreibung und andere Einstellungen einer Komponente an und konfigurieren Sie sie. Aktivieren Sie dieses Kontrollkästchen, um diese Komponente in Berichten für Benutzende ohne Administratorrechte auszublenden. Admins können weiterhin auf die Komponente zugreifen, indem sie in einem Workspace-Projekt auf **[!UICONTROL Alle Komponenten anzeigen]** klicken."
 
 <!-- markdownlint-enable MD034 -->
 

@@ -7,7 +7,7 @@ role: User
 source-git-commit: 0cd9cd508d474df3dff176bca4596d0379ac86b4
 workflow-type: tm+mt
 source-wordcount: '705'
-ht-degree: 23%
+ht-degree: 31%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 23%
 >[!CONTEXTUALHELP]
 >id="workspace_cohorttable_panel"
 >title="Kohortentabelle"
->abstract="Gruppieren Sie Benutzer nach Abschluss eines Ereignisses und analysieren Sie dann deren fortlaufende Interaktion und Abwanderung im Laufe der Zeit. Geben Sie zusätzliche Einstellungen wie Granularität, Typ der Kohortenanalyse und die Verwendung rollierender Berechnungen an. Sie können erweiterte Optionen festlegen, um eine Latenztabelle oder eine benutzerdefinierte Dimensionskohorte basierend auf einer ausgewählten Dimension zu erstellen."
+>abstract="Gruppieren Sie Benutzende auf Grundlage des Abschlusses eines Ereignisses und analysieren Sie dann ihre anhaltenden Interaktionen und Abwanderungen im Zeitverlauf. Geben Sie zusätzliche Einstellungen wie Granularität, Typ der Kohortenanalyse und die eventuelle Verwendung rollierender Berechnungen an. Sie können erweiterte Optionen festlegen, um eine Latenztabelle oder eine benutzerdefinierte Dimensionskohorte basierend auf einer ausgewählten Dimension zu erstellen."
 
 <!-- markdownlint-enable MD034 -->
 

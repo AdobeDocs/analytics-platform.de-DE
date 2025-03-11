@@ -8,7 +8,7 @@ role: Admin
 source-git-commit: 0cd9cd508d474df3dff176bca4596d0379ac86b4
 workflow-type: tm+mt
 source-wordcount: '334'
-ht-degree: 84%
+ht-degree: 90%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 84%
 >[!CONTEXTUALHELP]
 >id="dataview_component_dimension_behavior"
 >title="Verhalten"
->abstract="Bestimmen Sie, wie Zeileneinträge in dieser Dimension aggregiert werden. Geben Sie an, ob die Zeichenfolgenwerte im Feld in Kleinbuchstaben geschrieben werden sollen."
+>abstract="Bestimmen Sie, wie Zeileneinträge in dieser Dimension aggregiert werden sollen. Geben Sie an, ob die Zeichenfolgenwerte im Feld Kleinbuchstaben sein sollen."
 
 <!-- markdownlint-enable MD034 -->
 

@@ -8,7 +8,7 @@ role: Admin
 source-git-commit: 0cd9cd508d474df3dff176bca4596d0379ac86b4
 workflow-type: tm+mt
 source-wordcount: '356'
-ht-degree: 69%
+ht-degree: 74%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 69%
 >[!CONTEXTUALHELP]
 >id="dataview_component_dimension_includeexcludevalues"
 >title="Werte einschließen/ausschließen"
->abstract="Schränken Sie eine Dimension so ein, dass nur Werte eingeschlossen werden, die bestimmten Kriterien entsprechen. Ein- und Ausschlüsse erfolgen vor der Zuordnung und den Filtern in Berichten. Ermitteln Sie, ob bei der angegebenen Filterlogik zwischen Groß- und Kleinschreibung unterschieden wird."
+>abstract="Schränken Sie eine Dimension so ein, dass nur Werte eingeschlossen werden, die bestimmten Kriterien entsprechen. Ein- und Ausschlüsse erfolgen vor der Zuordnung und vor Filtern in Berichten. Bestimmen Sie, ob die angegebene Filterlogik von der Groß- und Kleinschreibung abhängig ist."
 
 <!-- markdownlint-enable MD034 -->
 

@@ -7,7 +7,7 @@ role: User
 source-git-commit: 1709bb2e262759376b0b0bb78444253968f9dac4
 workflow-type: tm+mt
 source-wordcount: '661'
-ht-degree: 38%
+ht-degree: 45%
 
 ---
 
@@ -18,13 +18,13 @@ ht-degree: 38%
 >[!CONTEXTUALHELP]
 >id="workspace_attribution_button"
 >title="Attribution"
->abstract="Vergleichen und visualisieren Sie schnell eine beliebige Anzahl von Attributionsmodellen mithilfe von Erfolgsmetriken, Kanälen und Lookback-Fenstern."
+>abstract="Vergleichen und visualisieren Sie im Handumdrehen eine beliebige Anzahl von Attributionsmodellen für eine Erfolgsmetrik, einen Kanal und das Lookback-Fenster."
 >additional-url="https://www.youtube.com/watch?v=Yu0hy2klzA0" text="Attribution IQ-Bedienfeld"
 
 >[!CONTEXTUALHELP]
 >id="workspace_attribution_panel"
 >title="Attributionsbedienfeld"
->abstract="Schneller Vergleich und Visualisierung einer beliebigen Anzahl von Attributionsmodellen für eine Erfolgsmetrik. Wählen Sie den Kanal (Dimension), die einzuschließenden Modelle und das Lookback-Fenster aus."
+>abstract="Vergleichen und visualisieren Sie im Handumdrehen eine beliebige Anzahl von Attributionsmodellen für eine Erfolgsmetrik. Wählen Sie den Kanal (Dimension), die einzuschließenden Modelle und das Lookback-Fenster aus."
 >additional-url="https://www.youtube.com/watch?v=Yu0hy2klzA0" text="Attribution IQ-Bedienfeld"
 
 <!-- markdownlint-enable MD034 -->

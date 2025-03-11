@@ -7,7 +7,7 @@ role: User
 source-git-commit: 0cd9cd508d474df3dff176bca4596d0379ac86b4
 workflow-type: tm+mt
 source-wordcount: '1073'
-ht-degree: 49%
+ht-degree: 51%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 49%
 >[!CONTEXTUALHELP]
 >id="workspace_mediaplaybacktimespent_panel"
 >title="Bei der Medienwiedergabe verbrachte Zeit"
->abstract="Analysieren Sie den Videokonsum im Zeitverlauf, wählen Sie verschiedene Granularitäten aus und schlüsseln Sie ihn optional mithilfe von Filtern, Dimensionen, Dimensionselementen oder Datumsbereichen auf und vergleichen Sie ihn."
+>abstract="Analysieren Sie den Videokonsum im Zeitverlauf, wählen Sie verschiedene Granularitäten aus, schlüsseln Sie die Daten optional mithilfe von Filtern, Dimensionen, Dimensionselementen oder Datumsbereichen auf und vergleichen Sie sie."
 
 <!-- markdownlint-enable MD034 -->
 

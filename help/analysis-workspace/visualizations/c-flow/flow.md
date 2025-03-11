@@ -7,7 +7,7 @@ role: User
 source-git-commit: 0cd9cd508d474df3dff176bca4596d0379ac86b4
 workflow-type: tm+mt
 source-wordcount: '326'
-ht-degree: 25%
+ht-degree: 36%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 25%
 >[!CONTEXTUALHELP]
 >id="workspace_flow_panel"
 >title="Fluss"
->abstract="Analysieren Sie den Fluss der Besuche oder Besucher von einem Touchpoint zum nächsten. Geben Sie eine Komponente (Metrik, Dimension oder Element) an, mit der Sie beginnen möchten. Optional können Sie erweiterte Einstellungen definieren, um die Visualisierung weiter zu konfigurieren."
+>abstract="Analysieren Sie den Besuchs- oder Besucherfluss von einem Touchpoint zum nächsten. Geben Sie eine Komponente (Metrik, Dimension oder Element) für den Beginn und für das Ende an. Optional können Sie erweiterte Einstellungen definieren, um die Visualisierung noch genauer zu konfigurieren."
 
 <!-- markdownlint-enable MD034 -->
 

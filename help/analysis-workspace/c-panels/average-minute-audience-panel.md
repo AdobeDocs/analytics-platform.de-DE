@@ -7,7 +7,7 @@ exl-id: c55b5534-a9a6-47f1-8b43-c8c0b8686c53
 source-git-commit: 0cd9cd508d474df3dff176bca4596d0379ac86b4
 workflow-type: tm+mt
 source-wordcount: '1677'
-ht-degree: 22%
+ht-degree: 23%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 22%
 >[!CONTEXTUALHELP]
 >id="workspace_mediaaverageminuteaudience_panel"
 >title="Medien-Zielgruppendurchschnitt pro Minute"
->abstract="Zeigt die Leistung bestimmter Medieninhalte oder die Leistung über einen benutzerdefinierten Zeitraum an. Geben Sie die Reporting-Dimension an und filtern Sie optional den Inhalt."
+>abstract="Zeigt die Leistung bestimmter Medieninhalte oder die Leistung über einen benutzerdefinierten Zeitraum an. Geben Sie die Reporting-Dimension an und filtern Sie optional die Inhalte."
 
 <!-- markdownlint-enable MD034 -->
 

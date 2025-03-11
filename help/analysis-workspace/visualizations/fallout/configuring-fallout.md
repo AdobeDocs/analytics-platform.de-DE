@@ -7,7 +7,7 @@ role: User
 source-git-commit: 0cd9cd508d474df3dff176bca4596d0379ac86b4
 workflow-type: tm+mt
 source-wordcount: '734'
-ht-degree: 38%
+ht-degree: 41%
 
 ---
 
@@ -60,7 +60,7 @@ Sie können Pfade für Dimensionen, Metriken und Filter durchführen. Angenommen
 >[!CONTEXTUALHELP]
 >id="workspace_fallout_container"
 >title="Fallout-Container"
->abstract="Container auswählen, um den Pfad zu analysieren. Diese Auswahl hilft Ihnen, Interaktionen und Einschränkungen der Analyse auf den ausgewählten Container zu verstehen."
+>abstract="Wählen Sie einen Container aus, um den Pfad zu analysieren. Diese Auswahl hilft Ihnen, Interaktionen zu verstehen, und schränkt die Analyse auf den ausgewählten Container ein."
 
 Im Rahmen der Visualisierung sind bestimmte Einstellungen verfügbar.
 

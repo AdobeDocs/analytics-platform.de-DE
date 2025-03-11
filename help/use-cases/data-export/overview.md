@@ -8,7 +8,7 @@ exl-id: 8b9c164e-01da-4b43-8e2c-99904223cae5
 source-git-commit: efb961c571ddcde1017e6bf2080fc2a97c28bb13
 workflow-type: tm+mt
 source-wordcount: '810'
-ht-degree: 1%
+ht-degree: 7%
 
 ---
 
@@ -20,8 +20,8 @@ ht-degree: 1%
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-data-feeds-step"
->title="Verwenden von Exportfunktionen ähnlich wie Daten-Feeds"
->abstract="Ein exakter Ersatz für Daten-Feeds ist in Customer Journey Analytics noch nicht verfügbar. Ähnliche Funktionen können jedoch mit Funktionen wie dem vollständigen Tabellenexport, dem Platform-Datensatzexport, der BI-Tool-Integration und der Reporting-API erreicht werden."
+>title="Verwenden von Exportfunktionen ähnlich den Daten-Feeds"
+>abstract="Ein exakter Ersatz für Daten-Feeds ist in Customer Journey Analytics noch nicht verfügbar. Eine ähnliche Funktionalität kann jedoch mit Funktionen wie dem vollständigen Tabellenexport, dem Platform-Datensatzexport, der BI-Tool-Integration und der Reporting-API erreicht werden."
 
 <!-- markdownlint-enable MD034 -->
 
