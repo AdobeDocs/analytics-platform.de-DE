@@ -4,13 +4,11 @@ description: Erfahren Sie mehr über Customer Journey Analytics-spezifische Funk
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
-hide: true
-hidefromtoc: true
 exl-id: 4e6cacb9-4eca-4dfb-bce4-e69850507596
-source-git-commit: d745e0c3bc75ba6f9d29aedcdbaaae9aa17d6ab8
+source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
 workflow-type: tm+mt
 source-wordcount: '519'
-ht-degree: 46%
+ht-degree: 57%
 
 ---
 
@@ -21,7 +19,7 @@ ht-degree: 46%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-tie-data"
 >title="Verknüpfen von Daten aus unterschiedlichen Quellen"
->abstract="(Empfohlen) Verknüpfen Sie Daten aus verschiedenen Web-, Mobile- und Offline-Eigenschaften, um eine einzige, konsolidierte Ansicht des Kundenverhaltens zu erstellen. Diese Möglichkeit, Analysedaten aus anderen Kanälen zu kombinieren, ist der Hauptanwendungsfall für Customer Journey Analytics."
+>abstract="(Empfohlen) Verknüpfen Sie Daten aus verschiedenen Web-, Mobile- und Offline-Eigenschaften, um eine einzige, konsolidierte Ansicht des Kundenverhaltens zu erstellen. Diese Fähigkeit, Analysedaten aus anderen Kanälen zu kombinieren, ist der wichtigste Anwendungsfall für Customer Journey Analytics."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -57,7 +55,7 @@ ht-degree: 46%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-integrate-target"
 >title="Vorübergehendes Integrieren mit Adobe Target"
->abstract="Adobe empfiehlt für Personalisierungs-Anwendungsfälle die Integration mit Adobe Journey Optimizer. Die Integration mit Adobe Target ist möglich, aber eine kurzfristige Lösung."
+>abstract="Adobe empfiehlt für Personalisierungs-Anwendungsfälle die Integration mit Adobe Journey Optimizer. Die Integration mit Adobe Target ist möglich, ist aber nur eine kurzfristige Lösung."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -75,7 +73,7 @@ ht-degree: 46%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-integrate-aam"
 >title="Vorübergehendes Integrieren mit Adobe Audience Manager"
->abstract="Adobe empfiehlt für zielgruppenbasierte Anwendungsfälle die Integration mit Adobe Real-time CDP. Die Integration mit Audience Manager ist möglich, aber eine kurzfristige Lösung."
+>abstract="Adobe empfiehlt für zielgruppenbasierte Anwendungsfälle die Integration mit Adobe Real-time CDP. Die Integration mit Audience Manager ist möglich, ist aber nur eine kurzfristige Lösung."
 
 <!-- markdownlint-enable MD034 -->
 

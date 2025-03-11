@@ -4,13 +4,11 @@ description: Erfahren Sie mehr über den empfohlenen Pfad beim Upgrade von Adobe
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
-hide: true
-hidefromtoc: true
 exl-id: b9cff809-6df7-4d75-9bc1-0cc12074d355
-source-git-commit: ff951b6ca03fc5be4d24651b8b8e4bdd06216274
+source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
 workflow-type: tm+mt
 source-wordcount: '939'
-ht-degree: 35%
+ht-degree: 31%
 
 ---
 
@@ -93,7 +91,7 @@ ht-degree: 35%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-determine-implementation"
 >title="Bestimmen des vorhandenen Implementierungstyps"
->abstract="Arbeiten Sie intern in Ihrem Unternehmen zusammen, um zu ermitteln, welchen Implementierungstyp Sie derzeit zum Senden von Daten an Adobe Analytics verwenden. Es ist wahrscheinlich, dass Sie mit der Person oder dem Team zusammenarbeiten, die bzw. das diese Informationen kennt, wenn Sie bereit sind, zu Customer Journey Analytics zu migrieren.<br><br>Nachdem Sie den Implementierungstyp ermittelt haben, den Ihr Unternehmen verwendet, ändern Sie Ihre Antwort im Fragebogen."
+>abstract="Arbeiten Sie intern in Ihrem Unternehmen zusammen, um zu ermitteln, welchen Implementierungstyp Sie derzeit zum Senden von Daten an Adobe Analytics verwenden. Arbeiten Sie beim Upgrade auf Customer Journey Analytics mit der Person oder dem Team zusammen, die bzw. das diese Informationen kennt.<br><br>Nachdem Sie die Art der Implementierung ermittelt haben, die Ihr Unternehmen verwendet, ändern Sie Ihre Antwort im Customer Journey Analytics-Aktualisierungshandbuch."
 
 <!-- markdownlint-enable MD034 -->
 

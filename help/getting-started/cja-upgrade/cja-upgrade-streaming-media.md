@@ -4,13 +4,11 @@ description: Erfahren Sie, wie Sie die Streaming Media Collection für Customer 
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
-hide: true
-hidefromtoc: true
 exl-id: b807099d-a61d-48f9-9fec-94ecc6b76213
-source-git-commit: f7b06838bbe5b1a5e304c6d0da6d34635391a90b
+source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
 workflow-type: tm+mt
 source-wordcount: '348'
-ht-degree: 0%
+ht-degree: 20%
 
 ---
 
@@ -21,7 +19,7 @@ ht-degree: 0%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-media-edge"
 >title="Einrichten und Implementieren von Media Edge"
->abstract="Wenn Sie die Streaming-Mediensammlung mit Customer Journey Analytics verwenden möchten, müssen Sie bei bestimmten Schritten des Aktualisierungsprozesses bestimmte Auswahlen treffen. Sie müssen beispielsweise die Feldergruppe MediaAnalytics Interactions Details zu Ihrem Schema hinzufügen, Media Analytics im Datenstrom aktivieren und vieles mehr."
+>abstract="Wenn Sie die Streaming-Mediensammlung mit Customer Journey Analytics verwenden möchten, müssen Sie an bestimmten Stellen des Aktualisierungsprozesses bestimmte Auswahlen treffen. Sie müssen beispielsweise die Feldergruppe „Details zu Medienanalyse-Interaktionen“ zu Ihrem Schema hinzufügen, die Medienanalyse im Datenstrom aktivieren und vieles mehr."
 
 <!-- markdownlint-enable MD034 -->
 

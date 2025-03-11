@@ -4,11 +4,10 @@ description: Erfahren Sie mehr über die Implementierungsoptionen von Web SDK be
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
-hide: true
-hidefromtoc: true
-source-git-commit: 1ac7059e76797b14c00993a2a46aa51b1ebfe6a2
+exl-id: 94a2bf2f-ad84-4f35-af8f-b8a5d9e5c607
+source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
 workflow-type: tm+mt
-source-wordcount: '349'
+source-wordcount: '350'
 ht-degree: 38%
 
 ---
@@ -47,7 +46,7 @@ ht-degree: 38%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-websdk-no-selection"
 >title="Web-SDK für die angegebene Eigenschaft implementieren"
->abstract="Wählen Sie den gewünschten Implementierungstyp im Fragebogen aus, um detailliertere Anweisungen zu erhalten."
+>abstract="Wählen Sie im Upgrade-Handbuch den gewünschten Implementierungstyp aus, um detailliertere Anweisungen zu erhalten."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -73,6 +72,3 @@ Es gibt drei unterstützte Möglichkeiten, Adobe Experience Platform Web SDK zu 
 * [NPM](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/install/npm): Installieren Sie Web SDK mithilfe des NPM-Package Managers auf Ihrer Site.
 
 SDK Weitere Informationen finden Sie unter [Übersicht über die Installation von Web ](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/install/overview) im Experience Platform Web SDK-Handbuch.
-
-
-
