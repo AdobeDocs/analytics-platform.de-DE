@@ -3,13 +3,19 @@ title: Anwendungsfälle für die Quantum Metric-Integration
 description: Erfahren Sie, wie Sie Quantum Metric-Daten mit dem Rest Ihrer Daten in Customer Journey Analytics kombinieren können.
 hide: true
 hidefromtoc: true
-source-git-commit: cd0ff5f6c805dc75fc07cee87e104b84d411abc9
+exl-id: a74e7143-e814-42c3-a706-b64427dc9ecb
+source-git-commit: be9a3325b3108e921841f7bc9ad529dd5ca395b6
 workflow-type: tm+mt
-source-wordcount: '31'
+source-wordcount: '133'
 ht-degree: 0%
 
 ---
 
 # Anwendungsfälle für die Quantum Metric-Integration
 
-Inhalt hier!
+Auf dieser Seite erfahren Sie, wie Sie Customer Journey Analytics (CJA) und Quantum Metric miteinander verknüpfen, um die Zusammenarbeit beider Produkte optimal zu nutzen.  Die behandelten Anwendungsfälle umfassen:
+
+1. [Quantum Metric-Sitzungs-ID in Customer Journey Analytics erfassen](collect-session-id.md), um Heatmapping- und Sitzungsreplay-Daten mit CJA zu verknüpfen.
+1. [Tie Quantum Metric-Sitzung wiederholt Daten in Customer Journey Analytics](tie-session-replays.md) um das „Warum“ hinter dem „Was“ besser zu verstehen.
+1. [Fügen Sie Quantum Metric-Fehler- und Friktionsereignisse ](friction-events.md), wie Langsamkeit und Fehler beim Laden von Seiten, Wutklicks und mehr zu den Verhaltensdaten von CJA hinzu, um der Analyse Tiefe zu verleihen.
+1. Interaktion auf Seitenebene besser verstehen, indem [ Quantum Metric-Heatmapping mit CJA-Daten verknüpft ](heatmap.md).
