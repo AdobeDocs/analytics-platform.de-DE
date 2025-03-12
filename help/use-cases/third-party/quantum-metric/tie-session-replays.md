@@ -6,10 +6,11 @@ solution: Customer Journey Analytics
 feature: Use Cases
 hidefromtoc: true
 hide: true
-source-git-commit: d71f39d25c52b0389d0441f238cb5b1809986b2d
+exl-id: fcc36457-4ce9-4c93-93e2-de03becfd5da
+source-git-commit: d722e88d163dd99aa7b98c6fa6cd75028d7d9e6f
 workflow-type: tm+mt
-source-wordcount: '167'
-ht-degree: 0%
+source-wordcount: '341'
+ht-degree: 1%
 
 ---
 
@@ -21,6 +22,29 @@ Durch die Verknüpfung von Quantum Metric-Sitzungswiederholungen mit CJA-Daten k
 
 In diesem Anwendungsfall müssen Sie die Sitzungs-ID der Quantum-Metrik zusammen mit dem Rest Ihrer Implementierung erfassen. Unter [Erfassen von Quantum Metric-Sitzungs-IDs in Customer Journey Analytics](collect-session-id.md) erfahren Sie, wie Sie Ihre Implementierung ändern können.
 
-## Anzeigen von Sitzungen aus Customer Journey Analytics
+## Schritt 1: Konfigurieren von Workspace für die Sitzungs-ID-Dimension
+
+Erstellen Sie eine Freiformtabelle in Workspace und konfigurieren Sie sie so, dass Sitzungs-ID-Werte direkte Links zu Quantum Metric sind.
+
+1. Melden Sie sich bei &quot;[.adobe.com“ ](https://experience.adobe.com).
+1. Navigieren Sie zu Customer Journey Analytics und wählen Sie **[!UICONTROL Workspace]** im oberen Menü.
+1. Wählen Sie ein vorhandenes Projekt aus oder erstellen Sie ein Projekt.
+1. Erstellen Sie eine [Freiformtabelle](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md).
+1. Ziehen Sie die Dimension Sitzungs-ID auf die Workspace-Arbeitsfläche.
+1. Klicken Sie mit der rechten Maustaste auf die Spaltenüberschrift der Dimension und wählen Sie **[!UICONTROL Hyperlinks für alle Dimensionselemente erstellen]** aus.
+1. Wählen Sie **[!UICONTROL Benutzerdefinierte URL erstellen]** aus.
+1. Fügen Sie die folgende URL-Struktur ein:
+
+   ```
+   https://adobe.quantummetric.com/#/replay/cookie:$value
+   ```
+
+1. Klicken Sie auf **[!UICONTROL Erstellen]**.
+
+Jede Sitzungs-ID ist jetzt ein klickbarer Link. Diese Links führen Sie zu Quantum Metric in einer neuen Registerkarte, wo Sie diese bestimmte Sitzung detaillierter analysieren können. Weitere [ zum Hinzufügen von Hyperlinks zu Analysis Workspace-Dimensionselementen finden Sie unter ](/help/analysis-workspace/visualizations/freeform-table/freeform-table-hyperlinks.md)Erstellen von Hyperlinks in einer Freiformtabelle“.
+
+## Schritt 2: Anzeigen von Sitzungen in Customer Journey Analytics
 
 Nachdem Sie den Workspace-Bericht mit klickbaren Links erstellt haben, können Sie in Customer Journey Analytics Filter verwenden, um interessante Sitzungen zu identifizieren, die Sie in Quantum Metric weiter analysieren können.
+Die Tabelle gibt alle Sitzungen in diesem Segment zurück, und Sie können auf eine beliebige Sitzung klicken, um sie in QM weiter zu erkunden.  Weitere Informationen zu Quantum Metric Session Replay finden Sie unter https://www.quantummetric.com/platform/session-replay
+
