@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: 5c52986c-7ff3-45b5-9039-2bfb6529238c
 role: Admin
-source-git-commit: 39e4c17336d3648cbf20cace535668d14510186f
+source-git-commit: 0e4ea634a604a65484a57f5af8021badb86a865a
 workflow-type: tm+mt
-source-wordcount: '192'
-ht-degree: 33%
+source-wordcount: '188'
+ht-degree: 34%
 
 ---
 
@@ -20,9 +20,9 @@ Diese Seite enthält IP-Adressen, die Sie Ihrer Zulassungsliste hinzufügen müs
 
 >[!IMPORTANT]
 >
->Adobe tut sein Bestes, um dieses Dokument aktuell zu halten, kann jedoch nicht garantieren, dass die Liste der IP-Bereiche gleich bleibt. Zu den möglichen Änderungen gehören das Wachstum und die Ausweitung des Unternehmens, eine Internet-Registrierung erfordert Änderungen am IP-Adressraum der Adobe oder ein Internet-Service-Provider funktioniert nicht mehr.
+>Adobe setzt dieses Dokument nach besten Kräften auf dem neuesten Stand, kann jedoch nicht garantieren, dass die Liste der IP-Bereiche gleich bleibt. Mögliche Änderungen umfassen das Wachstum und die Erweiterung des Unternehmens, eine Internet-Registrierung erfordert Änderungen am IP-Adressbereich von Adobe oder ein Internet-Service-Provider funktioniert nicht mehr.
 
-## VA7: Kunden aus den USA und Amerika
+## Kunden aus den USA und Amerika
 
 | IP-Block (CIDR-Notation) |
 | --- |
@@ -47,8 +47,9 @@ Diese Seite enthält IP-Adressen, die Sie Ihrer Zulassungsliste hinzufügen müs
 | `52.254.106.208/28` |
 | `20.186.185.227` |
 | `52.254.107.0/28` |
+| `66.117.18.0/24` |
 
-## NLD2: Europa
+## Europa
 
 | IP-Block (CIDR-Notation) |
 | --- |
@@ -76,7 +77,7 @@ Diese Seite enthält IP-Adressen, die Sie Ihrer Zulassungsliste hinzufügen müs
 | `40.74.7.208/28` |
 | `40.74.6.112/28` |
 
-## AUS5: Australien
+## Australien
 
 | IP-Block (CIDR-Notation) |
 | --- |
@@ -108,7 +109,7 @@ Diese Seite enthält IP-Adressen, die Sie Ihrer Zulassungsliste hinzufügen müs
 | `20.193.56.128/28` |
 | `20.227.32.175` |
 
-## CAN2: Kanada
+## Kanada
 
 | IP-Block (CIDR-Notation) |
 | --- |
