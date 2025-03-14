@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: BI Extension
 role: Admin
 exl-id: ab7e1f15-ead9-46b7-94b7-f81802f88ff5
-source-git-commit: 5fa4d47bcd42e4e392a7075076895826cf7061b1
+source-git-commit: 2f9cfc3fc7edaa21175d44dfb3f9bface5cf0d81
 workflow-type: tm+mt
-source-wordcount: '3618'
-ht-degree: 53%
+source-wordcount: '3247'
+ht-degree: 48%
 
 ---
 
@@ -322,20 +322,174 @@ In der folgenden Tabelle finden Sie Beispiele f체r die SQL, die Sie verwenden k�
 
 +++ Beispiele
 
-| Muster | Beispiel |
-|---|---|
-| Schema-Erkennung | <pre>SELECT * FROM dv1 WHERE 1=0</pre> |
-| Rangfolge oder Aufschl체sselung | <pre>SELECT dim1, SUM(metric1) AS m1<br/>FROM dv1<br/>WHERE \`timestamp\` BETWEEN &#39;2022-01-01&#39; AND &#39;2022-01-02&#39;<br/>GROUP BY dim1</pre><pre>SELECT dim1, SUM(metric1) AS m1<br/>FROM dv1<br/>WHERE \`timestamp\` BETWEEN &#39;2022-01-01&#39; AND &#39;2022-01-02&#39; AND<br/>  filterId = &#39;12345&#39;<br/>GROUP BY dim1</pre><pre>SELECT dim1, SUM(metric1) AS m1<br/>FROM dv1<br/>WHERE \`timestamp\` BETWEEN &#39;2022-01-01&#39; AND &#39;2022-01-02&#39; AND<br/>  AND (dim2 = &#39;A&#39; OR dim3 IN (&#39;X&#39;, &#39;Y&#39;, &#39;Z&#39;))<br/>GROUP BY dim1</pre> |
-| `HAVING` | <pre>SELECT dim1, SUM(metric1) AS m1<br/>FROM dv1<br/>WHERE \`timestamp\` BETWEEN &#39;2022-01-01&#39; AND &#39;2022-01-02&#39;<br/>GROUP BY dim1<br/>HAVING m1 > 100</pre> |
-| Eindeutige, obere <br/>Dimensionswerte | <pre>SELECT DISTINCT dim1 FROM dv1</pre><pre>SELECT dim1 AS dv1<br/>FROM dv1<br/>WHERE \`timestamp\` BETWEEN &#39;2022-01-01&#39; AND &#39;2022-01-02&#39;<br/>GROUP BY dim1</pre><pre>SELECT dim1 AS dv1<br/>FROM dv1<br/>WHERE \`timestamp\` >= &#39;2022-01-01&#39; AND \`timestamp\` &lt; &#39;2022-01-02&#39;<br/>GROUP BY dim1<br/>ORDER BY SUM(metric1)<br/>LIMIT 15</pre> |
-| Metriksummen | <pre>SELECT SUM(metric1) AS m1<br/>FROM dv1<br/>WHERE \`timestamp\` BETWEEN &#39;2022-01-01&#39; AND &#39;2022-01-02&#39;</pre> |
-| Mehrere Dimensionen<br/>Aufschl체sselungen<br/>und obere eindeutige Werte | <pre>SELECT dim1, dim2, SUM(metric1) AS m1<br/>FROM dv1<br/>WHERE \`timestamp\` BETWEEN &#39;2022-01-01&#39; AND &#39;2022-01-02&#39;<br/>GROUP BY dim1, dim2</pre><pre>SELECT dim1, dim2, SUM(metric1) AS m1<br/>FROM dv1<br/>WHERE \`timestamp\` BETWEEN &#39;2022-01-01&#39; AND &#39;2022-01-02&#39;<br/>GROUP BY 1, 2<br/>ORDER BY 1, 2</pre><pre>SELECT DISTINCT dim1, dim2<br/>FROM dv1</pre> |
-| subselect:<br/>filter additional<br/>results | <pre>SELECT dim1, m1<br/>FROM (<br/>  SELECT dim1, SUM(metric1) AS m1<br/>  FROM dv1<br/>  WHERE \`timestamp\` BETWEEN &#39;2022-01-01&#39; AND &#39;2022-01-02&#39;</br>  GROUP BY dim1<br/>)<br/>WHERE dim1 in (&#39;A&#39;, &#39;B&#39;)</pre> |
-| subselect:<br/>queryAcross<br/>data views | <pre>SELECT key, SUM(m1) AS total<br/>FROM (<br/>  SELECT dim1 AS key, SUM(metric1) AS m1<br/>  FROM dv1<br/>  WHERE \`timestamp\` BETWEEN &#39;2022-01-01&#39; AND &#39;2022-01-02&#39;<br/>  GROUP BY dim1<br/><br/>  UNION<br/><br/>  SELECT dim2 AS key, SUM(m1) AS m1<br/>  FROM dv2<br/>  WHERE \`timestamp\` BETWEEN &#39;2022-01-01&#39; AND &#39;2022-01-02&#39;<br/>  GROUP BY dim2<br/>GROUP BY key<br/>ORDER BY total</pre> |
-| Unterauswahl: <br/>Quelle mit mehreren Ebenen, <br/>Filtern<br/> und Aggregation | Geschichtet, mit den Unterauswahlen:<br><pre>SELECT rows.dim1, SUM(rows.m1) AS total<br/>FROM (<br/>  SELECT \_.dim1,\_.m1<br/>  FROM (<br/>    SELECT \* FROM dv1<br/>    WHERE \`timestamp\` BETWEEN &#39;2022-01-01&#39; AND &#39;2022-01-02&#39;<br/>  ) \_<br/>  WHERE \_.dim1 in (&#39;A&#39;, &#39;B&#39;, &#39;C&#39;)<br/>) rows<br/>GROUP BY 1<br/>ORDER BY total</pre><br/>Ebenen, die CTE WITH verwenden:<br/><pre>MIT ZEILEN ALS (<br/> MIT \_ AS (<br/>    SELECT * FROM data_ares<br/>    WO \`timestamp\` BETWEEN &#39;2021-01-01&#39; AND &#39;2021-02-01&#39;<br/> )<br/> SELECT \_.item, \_.units FROM \_<br/> WO \_.item NICHT NULL IST<br/>)<br/>SELECT rows.item, SUM(rows.units) AS units<br/>FROM rows.item IN (&#39;A&#39;, &#39;B&#39;, &#39;C&#39;)<br/>GROUP BY rows.item</pre> |
-| W채hlt aus, wo die<br/>Metriken vor<br/> den Dimensionen erscheinen oder mit<br/>den Dimensionen gemischt werden | <pre>SELECT SUM(metric1) AS m1, dim1<br/>FROM dv1<br/>WHERE \`timestamp\` BETWEEN &#39;2022-01-01&#39; AND &#39;2022-01-02&#39;<br/>GROUP BY 2</pre> |
-
-{style="table-layout:auto"}
+<table style="table-layout:auto">
+    <thead>
+        <tr>
+            <th>Muster</th>
+            <th>Beispiel</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Schema-Erkennung </td>
+            <td>
+                <pre><code>SELECT * FROM dv1 WHERE 1=0</code></pre>
+            </td>
+        </tr>
+        <tr>
+            <td>Rangfolge oder Aufschl체sselung </td>
+            <td>
+                <pre><code>SELECT dim1, SUM(metric1) AS m1
+FROM dv1
+WHERE `timestamp` BETWEEN '2022-01-01' AND '2022-01-02'
+GROUP BY dim1</code></pre>
+                <pre><code>SELECT dim1, SUM(metric1) AS m1
+FROM dv1
+WHERE `timestamp` BETWEEN '2022-01-01' AND '2022-01-02' AND
+  filterId = '12345'
+GROUP BY dim1</code></pre>
+                <pre><code>SELECT dim1, SUM(metric1) AS m1
+FROM dv1
+WHERE `timestamp` BETWEEN '2022-01-01' AND '2022-01-02' AND
+  AND (dim2 = 'A' OR dim3 IN ('X', 'Y', 'Z'))
+GROUP BY dim1</code></pre>
+            </td>
+        </tr>
+        <tr>
+            <td><code>HAVING</code> -Klausel </td>
+            <td>
+                <pre><code>SELECT dim1, SUM(metric1) AS m1
+FROM dv1
+WHERE `timestamp` BETWEEN '2022-01-01' AND '2022-01-02'
+GROUP BY dim1
+HAVING m1 > 100</code></pre>
+            </td>
+        </tr>
+        <tr>
+            <td>Unterschiedlich, oben 
+Dimensionswerte </td>
+            <td>
+                <pre><code>SELECT DISTINCT dim1 FROM dv1</code></pre>
+                <pre><code>SELECT dim1 AS dv1
+FROM dv1
+WHERE `timestamp` BETWEEN '2022-01-01' AND '2022-01-02'
+GROUP BY dim1</code></pre>
+                <pre><code>SELECT dim1 AS dv1
+FROM dv1
+WHERE `timestamp` >= '2022-01-01' AND `timestamp` < '2022-01-02'
+GROUP BY dim1
+ORDER BY SUM(metric1)
+LIMIT 15</code></pre>
+            </td>
+        </tr>
+        <tr>
+            <td>Metriksummen </td>
+            <td>
+                <pre><code>SELECT SUM(metric1) AS m1
+FROM dv1
+WHERE `timestamp` BETWEEN '2022-01-01' AND '2022-01-02'</code></pre>
+            </td>
+        </tr>
+        <tr>
+            <td>Mehrdimensional
+Aufschl체sselungen
+und Top-Distincts </td>
+            <td>
+                <pre><code>SELECT dim1, dim2, SUM(metric1) AS m1
+FROM dv1
+WHERE `timestamp` BETWEEN '2022-01-01' AND '2022-01-02'
+GROUP BY dim1, dim2</code></pre>
+                <pre><code>SELECT dim1, dim2, SUM(metric1) AS m1
+FROM dv1
+WHERE `timestamp` BETWEEN '2022-01-01' AND '2022-01-02'
+GROUP BY 1, 2
+ORDER BY 1, 2</code></pre>
+                <pre><code>SELECT DISTINCT dim1, dim2
+FROM dv1</code></pre>
+            </td>
+        </tr>
+        <tr>
+            <td>Unterauswahl:
+Zus채tzliche Filter
+Ergebnisse </td>
+            <td>
+                <pre><code>SELECT dim1, m1
+FROM (
+  SELECT dim1, SUM(metric1) AS m1
+  FROM dv1
+  WHERE `timestamp` BETWEEN '2022-01-01' AND '2022-01-02'</br>  GROUP BY dim1
+)
+WHERE dim1 in ('A', 'B')</code></pre>
+            </td>
+        </tr>
+        <tr>
+            <td>Unterauswahl:
+Querabfragen
+Datenansichten </td>
+            <td>
+                <pre><code>SELECT key, SUM(m1) AS total
+FROM (
+  SELECT dim1 AS key, SUM(metric1) AS m1
+  FROM dv1
+  WHERE `timestamp` BETWEEN '2022-01-01' AND '2022-01-02'
+  GROUP BY dim1
+<br>
+  UNION
+<br>
+  SELECT dim2 AS key, SUM(m1) AS m1
+  FROM dv2
+  WHERE `timestamp` BETWEEN '2022-01-01' AND '2022-01-02'
+  GROUP BY dim2
+)
+GROUP BY key
+ORDER BY total</code></pre>
+            </td>
+        </tr>
+        <tr>
+            <td>Unterauswahl: 
+Schichtenquelle, 
+Filtern, 
+und Aggregation </td>
+            <td>Ebenenweise mithilfe von Unterauswahlen:
+<pre><code>SELECT rows.dim1, SUM(rows.m1) AS total
+FROM (
+  SELECT _.dim1,_.m1
+  FROM (
+    SELECT * FROM dv1
+    WHERE `timestamp` BETWEEN '2022-01-01' AND '2022-01-02'
+  ) _
+  WHERE _.dim1 in ('A', 'B', 'C')
+) rows
+GROUP BY 1
+ORDER BY total</code></pre>
+Ebenen, die CTE verwenden MIT:
+<pre><code>WITH rows AS (
+  WITH _ AS (
+    SELECT * FROM data_ares
+    WHERE `timestamp` BETWEEN '2021-01-01' AND '2021-02-01'
+  )
+  SELECT _.item, _.units FROM _
+  WHERE _.item IS NOT NULL
+)
+SELECT rows.item, SUM(rows.units) AS units
+FROM rows WHERE rows.item in ('A', 'B', 'C')
+GROUP BY rows.item</code></pre>
+        </td>
+        </tr>
+        <tr>
+            <td>W채hlt aus, wo die
+Metriken kommen vor
+ oder werden mit gemischt
+Die Dimensionen </td>
+            <td>
+                <pre><code>SELECT SUM(metric1) AS m1, dim1
+FROM dv1
+WHERE `timestamp` BETWEEN '2022-01-01' AND '2022-01-02'
+GROUP BY 2</code></pre>
+            </td>
+        </tr>
+    </tbody>
+</table>
 
 +++
 
