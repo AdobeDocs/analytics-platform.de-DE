@@ -8,7 +8,7 @@ exl-id: 7142ef84-66a6-49eb-938b-b67c9b65bf93
 source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
 workflow-type: tm+mt
 source-wordcount: '1067'
-ht-degree: 18%
+ht-degree: 31%
 
 ---
 
@@ -36,7 +36,7 @@ ht-degree: 18%
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-disable-source-connector"
->title="Deaktivieren Sie den Analytics-Quell-Connector, um Daten ausschließlich aus der Web-SDK zu verwenden"
+>title="Deaktivieren des Analytics-Quell-Connectors, um Daten ausschließlich aus der Web-SDK zu verwenden"
 >abstract="Der Analytics-Quell-Connector wird verwendet, um einen direkten Datenvergleich, historische Daten und Zugriff auf einige Funktionen bereitzustellen, die in Customer Journey Analytics nicht vollständig verfügbar sind. Wenn Sie Adobe Analytics für diese Zwecke nicht mehr benötigen, können Sie den Analytics-Quell-Connector deaktivieren."
 
 <!-- markdownlint-enable MD034 -->
@@ -73,7 +73,7 @@ Bei der Entscheidung, ob und wann Ihr Unternehmen Adobe Analytics deaktivieren s
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-disable-analytics-tags"
 >title="Deaktivieren der Analytics-Erweiterung in Tags"
->abstract="Wenn Web SDK-Daten voll funktionsfähig sind, wenden Sie sich an Ihren Tags-Administrator, um die Adobe Analytics-Erweiterung aus der Tag-Eigenschaft zu entfernen. Vergewissern Sie sich zunächst, dass Ihre Benutzerinnen und Benutzer von Adobe Analytics zu Customer Journey Analytics gewechselt haben."
+>abstract="Wenn Web SDK-Daten voll funktionsfähig sind, wenden Sie sich an Ihre Tags-Admins, um die Adobe Analytics-Erweiterung aus der Tag-Eigenschaft zu entfernen. Vergewissern Sie sich zunächst, dass Ihre Benutzerinnen und Benutzer von Adobe Analytics zu Customer Journey Analytics gewechselt haben."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -81,8 +81,8 @@ Bei der Entscheidung, ob und wann Ihr Unternehmen Adobe Analytics deaktivieren s
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-disable-analytics-api"
->title="API-Datenerfassung für Adobe Analytics deaktivieren"
->abstract="Wenn Web SDK-Daten voll funktionsfähig sind, entfernen Sie den Adobe Analytics-Code gemeinsam mit dem entsprechenden Entwicklungsteam aus dem Projekt. Vergewissern Sie sich zunächst, dass Ihre Benutzerinnen und Benutzer von Adobe Analytics zu Customer Journey Analytics gewechselt haben."
+>title="Deaktivieren der API-Datenerfassung für Adobe Analytics"
+>abstract="Wenn Web SDK-Daten voll funktionsfähig sind, entfernen Sie den Adobe Analytics-Code gemeinsam mit dem entsprechenden Entwicklungs-Team aus dem Projekt. Vergewissern Sie sich zunächst, dass Ihre Benutzerinnen und Benutzer von Adobe Analytics zu Customer Journey Analytics gewechselt haben."
 
 <!-- markdownlint-enable MD034 -->
 

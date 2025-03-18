@@ -8,7 +8,7 @@ exl-id: 4c0eef7d-7b0e-43b5-8126-d84d4fffd80c
 source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
 workflow-type: tm+mt
 source-wordcount: '538'
-ht-degree: 14%
+ht-degree: 30%
 
 ---
 
@@ -27,8 +27,8 @@ ht-degree: 14%
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-source-connector-delete"
->title="Vorhandenen Analytics-Quell-Connector löschen"
->abstract="Der Analytics-Quell-Connector, den Sie derzeit haben, ist nicht mit dem benutzerdefinierten Schema Ihrer Organisation kompatibel. Die Daten sind jedoch weiterhin in der Analytics Report Suite vorhanden. In diesem Schritt wird der aktuelle Analytics-Quell-Connector entfernt, damit Sie ihn in einem nachfolgenden Schritt mit dem richtigen Schema erneut erstellen können.<br><br>Bevor Sie den Quell-Connector löschen, sollten Sie sich mit anderen Personen in Ihrer Organisation abstimmen, um sicherzustellen, dass sich das Entfernen des Quell-Connectors nicht auf das Reporting in Ihrer Organisation auswirkt. Es kann mehrere Wochen dauern, bis diese Koordinierung abgeschlossen ist."
+>title="Löschen des vorhandenen Analytics-Quell-Connectors"
+>abstract="Der derzeit genutzte Analytics-Quell-Connector ist nicht mit dem benutzerdefinierten Schema Ihres Unternehmens kompatibel. Die Daten sind jedoch weiterhin in der Analytics Report Suite vorhanden. In diesem Schritt wird der aktuelle Analytics-Quell-Connector entfernt, damit Sie ihn in einem nachfolgenden Schritt mit dem richtigen Schema erneut erstellen können.<br><br>Bevor Sie den Quell-Connector löschen, empfiehlt es sich, sich mit anderen in Ihrem Unternehmen abzustimmen, um sicherzustellen, dass sich das Entfernen des Quell-Connectors nicht auf das Reporting im Unternehmen auswirkt. Es kann mehrere Wochen dauern, bis diese Abstimmung abgeschlossen ist."
 
 <!-- markdownlint-enable MD034 -->
 

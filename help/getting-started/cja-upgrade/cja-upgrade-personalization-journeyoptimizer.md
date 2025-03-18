@@ -19,13 +19,13 @@ ht-degree: 80%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-personalization"
 >title="Verwenden des Personalisierungsobjekts für Adobe Journey Optimizer"
->abstract="Durch Nutzung modernster Technologien beim überwachten maschinellen Lernen und beim Deep Learning ermöglicht es die personalisierte Optimierung Business-Anwendenden (Marketing-Fachleuten), Geschäftsziele zu definieren und mithilfe ihrer Kundendaten geschäftsorientierte Modelle zu trainieren und so personalisierte Angebote unterbreiten und KPIs maximieren zu können."
+>abstract="Durch Nutzung modernster Technologien beim überwachten maschinellen Lernen und beim Deep Learning ermöglicht es die personalisierte Optimierung Business-Anwendenden (Marketing-Fachleuten), Geschäftsziele zu definieren und mithilfe ihrer Kundendaten geschäftsorientierte Modelle zu trainieren, sodass sie personalisierte Angebote unterbreiten und KPIs maximieren können."
 
 <!-- markdownlint-enable MD034 -->
 
 {{upgrade-note}}
 
-Durch Nutzung modernster Technologien beim überwachten maschinellen Lernen und beim Deep Learning ermöglicht es die personalisierte Optimierung Business-Anwendenden (Marketing-Fachleuten), Geschäftsziele zu definieren und mithilfe ihrer Kundendaten geschäftsorientierte Modelle zu trainieren und so personalisierte Angebote unterbreiten und KPIs maximieren zu können.
+Durch Nutzung modernster Technologien beim überwachten maschinellen Lernen und beim Deep Learning ermöglicht es die personalisierte Optimierung Business-Anwendenden (Marketing-Fachleuten), Geschäftsziele zu definieren und mithilfe ihrer Kundendaten geschäftsorientierte Modelle zu trainieren, sodass sie personalisierte Angebote unterbreiten und KPIs maximieren können.
 
 1. Befolgen Sie die Informationen unter [Modell für personalisierte Optimierung](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/rankings/ai-models/personalized-optimization-model) im Journey Optimizer-Handbuch.
 

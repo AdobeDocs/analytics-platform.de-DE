@@ -8,7 +8,7 @@ exl-id: 0bf35c67-c8ae-4349-93fb-b9806c1064a8
 source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
 workflow-type: tm+mt
 source-wordcount: '1302'
-ht-degree: 47%
+ht-degree: 50%
 
 ---
 
@@ -27,8 +27,8 @@ ht-degree: 47%
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-appmeasurement-logic-step"
->title="AppMeasurement-Logik so ändern, dass sie auf das Web-SDK verweist"
->abstract="Dieser Schritt wird angezeigt, weil Sie ausgewählt haben, einen Implementierungsbefehl zu verwenden. Kopieren Sie die AppMeasurement-Logik oder ändern Sie sie, um das Datenobjekt anstelle des s-Objekts zu füllen. Ändern Sie beispielsweise die Zuweisung von s.eVar1 zu „data“.__adobe.analytics.eVar1 und wiederholen Sie den Vorgang für alle Analytics-Variablen."
+>title="Ändern Sie Ihre AppMeasurement-Logik so, dass sie auf die Web-SDK verweist."
+>abstract="Dieser Schritt wird angezeigt, weil Sie sich entschieden haben, ein Schnellverfahren zur Implementierung zu nutzen. Kopieren Sie die AppMeasurement-Logik oder ändern Sie sie, um das Datenobjekt anstelle des s-Objekts zu füllen. Ändern Sie beispielsweise die Zuweisung von „s.eVar1“ zu „data.__adobe.analytics.eVar1“ und wiederholen Sie diesen Vorgang für alle Analytics-Variablen."
 
 <!-- markdownlint-enable MD034 -->
 

@@ -8,7 +8,7 @@ exl-id: 0e508ce7-8f3b-41f1-808c-1348942c2716
 source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
 workflow-type: tm+mt
 source-wordcount: '184'
-ht-degree: 26%
+ht-degree: 81%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 26%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-manual-implementation"
 >title="Hinzufügen von alloy.js zu Ihrer Site"
->abstract="Sie können Platform Web SDK manuell installieren, indem Sie den Basis-Code direkt zu jeder Seite in Ihrer Implementierung hinzufügen. Arbeiten Sie dazu mit Ihrem Website-Entwicklungs-Team zusammen."
+>abstract="Sie können das Platform Web SDK manuell installieren, indem Sie den Basis-Code direkt zu jeder Seite in Ihrer Implementierung hinzufügen. Arbeiten Sie dazu mit Ihrem Website-Entwicklungs-Team zusammen."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -27,8 +27,8 @@ ht-degree: 26%
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-manual-populate-xdm"
->title="XDM-Objekt befüllen und an Datenstrom senden"
->abstract="Dieser Schritt umfasst die gesamte JavaScript-Logik zum Senden von Daten an einen Datenstrom. Adobe empfiehlt, ein Lösungsentwurfsdokument zu verwalten, um zu verfolgen, wie das XDM-Objekt gefüllt wird. Rechnen Sie damit, einen Monat oder länger für die Festlegung der richtigen JSON-Payload-Werte, deren Tests und die Bereitstellung auf Ihrer Site zu reservieren. Da für diesen Schritt ein ständiger Kontakt mit Ihrem Engineering-Team erforderlich ist, kann es je nach Reaktion möglicherweise länger dauern."
+>title="Füllen eines XDM-Objekts und Senden an den Datenstrom"
+>abstract="Dieser Schritt umfasst die gesamte JavaScript-Logik zum Senden von Daten an einen Datenstrom. Adobe empfiehlt ein sogenanntes Solution Design Document, um nachzuverfolgen, das XDM-Objekt gefüllt wird. Voraussichtlich benötigen Sie mindestens einen Monat, um die richtigen JSON-Payload-Werte festzulegen, sie zu testen und auf Ihrer Site bereitzustellen. Da für diesen Schritt ein ständiger Kontakt mit Ihrem Engineering-Team erforderlich ist, kann es je nach Bearbeitungsgeschwindigkeit möglicherweise länger dauern."
 
 <!-- markdownlint-enable MD034 -->
 

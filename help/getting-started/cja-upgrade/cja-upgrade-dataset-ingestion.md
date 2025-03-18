@@ -8,7 +8,7 @@ exl-id: 35fcd213-d831-4da0-b946-f6f0d8561f60
 source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
 workflow-type: tm+mt
 source-wordcount: '221'
-ht-degree: 14%
+ht-degree: 33%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 14%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-dataset-validate"
 >title="Validieren von Daten im Datensatz"
->abstract="Nachdem Sie Ihre Implementierung konfiguriert haben, können Sie den Datensatz-Aktivitäts-Manager verwenden, um aufgenommene und fehlgeschlagene Batches anzuzeigen. Wenn Sie hauptsächlich aufgenommene Batches sehen, ist dieser Schritt abgeschlossen. Wenn in erster Linie fehlgeschlagene Batches oder keine Batches angezeigt werden, überprüfen Sie Ihre Implementierung, um sicherzustellen, dass die Daten korrekt an Adobe gesendet werden."
+>abstract="Nachdem Sie nun Ihre Implementierung konfiguriert haben, können Sie mit dem Datensatz-Aktivitäts-Manager die aufgenommenen und fehlgeschlagenen Batches anzeigen. Wenn Sie hauptsächlich aufgenommene Batches sehen, ist dieser Schritt abgeschlossen. Wenn Sie in erster Linie fehlgeschlagene Batches oder gar keine Batches sehen, überprüfen Sie Ihre Implementierung, um sicherzustellen, dass die Daten korrekt an Adobe gesendet werden."
 
 <!-- markdownlint-enable MD034 -->
 

@@ -8,7 +8,7 @@ exl-id: bc79ba1a-1153-4fe8-b265-9703a323c977
 source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
 workflow-type: tm+mt
 source-wordcount: '238'
-ht-degree: 22%
+ht-degree: 32%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 22%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-third-party"
 >title="Ein Produkt, das nicht Adobe Analytics ist"
->abstract="Eine Implementierung, die Daten für ein Produkt erfasst, das nicht Adobe Analytics ist, z. B. Google Analytics. Wenn Sie diese Option wählen, werden mehrere Optionen im Upgrade-Handbuch deaktiviert, die beim Upgrade auf Customer Journey Analytics von einem Nicht-Adobe Analytics-Produkt nicht angewendet werden können."
+>abstract="Eine Implementierung, die Daten für ein Produkt erfasst, das nicht Adobe Analytics ist, z. B. Google Analytics. Durch Auswahl dieser Option werden mehrere Optionen im Aktualisierungshandbuch deaktiviert, die beim Upgrade von einem Produkt, das nicht Adobe Analytics ist, auf Customer Journey Analytics nicht anwendbar sind."
 
 <!-- markdownlint-enable MD034 -->
 

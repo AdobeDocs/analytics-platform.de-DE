@@ -8,7 +8,7 @@ exl-id: 94a2bf2f-ad84-4f35-af8f-b8a5d9e5c607
 source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
 workflow-type: tm+mt
 source-wordcount: '350'
-ht-degree: 38%
+ht-degree: 58%
 
 ---
 
@@ -45,8 +45,8 @@ ht-degree: 38%
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-websdk-no-selection"
->title="Web-SDK für die angegebene Eigenschaft implementieren"
->abstract="Wählen Sie im Upgrade-Handbuch den gewünschten Implementierungstyp aus, um detailliertere Anweisungen zu erhalten."
+>title="Implementieren der Web-SDK für die angegebene Eigenschaft"
+>abstract="Wählen Sie im Aktualisierungshandbuch den gewünschten Implementierungstyp aus, um detailliertere Anweisungen zu erhalten."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -54,8 +54,8 @@ ht-degree: 38%
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-websdk-third-party"
->title="Web-SDK-Bibliothek zum Tag-Management-System eines Drittanbieters hinzufügen"
->abstract="Arbeiten Sie mit dem Administrator über Ihr Tag-Management-System zusammen, um die Web SDK-Bibliothek zu Ihrer Site hinzuzufügen.<br><br>Die Zeit bis zum Abschluss dieser Aufgabe hängt stark von der Reaktionsfähigkeit des für Ihr Tag-Management-System verantwortlichen Benutzers ab. Das Hinzufügen der Web-SDK-Bibliothek kann mit der zugehörigen Implementierungslogik gebündelt und während der standardmäßigen Versionszyklen Ihres Unternehmens bereitgestellt werden."
+>title="Hinzufügen der Web SDK-Bibliothek zu einem Drittanbieter-Tag-Management-System"
+>abstract="Arbeiten Sie mit den Admins für Ihr Tag-Management-System zusammen daran, die Web SDK-Bibliothek zu Ihrer Site hinzuzufügen.<br><br>Die Zeit bis zum Abschluss dieser Aufgabe hängt stark von der Reaktionsfähigkeit der für Ihr Tag-Management-System verantwortlichen Person ab. Das Hinzufügen der Web-SDK-Bibliothek kann mit der zugehörigen Implementierungslogik gebündelt und im Zuge der standardmäßigen Versionszyklen Ihres Unternehmens bereitgestellt werden."
 
 <!-- markdownlint-enable MD034 -->
 
