@@ -4,10 +4,10 @@ title: Verwenden von Vorlagen
 feature: Workspace Basics
 role: User, Admin
 exl-id: d61f215d-9089-4014-9c5a-97f5d7134f34
-source-git-commit: a3817114534ddea434ee0c5b8147ba90e1d144dc
+source-git-commit: 6480eb4cd5210cd9318614a507516bd3736da40a
 workflow-type: tm+mt
-source-wordcount: '19475'
-ht-degree: 86%
+source-wordcount: '19661'
+ht-degree: 85%
 
 ---
 
@@ -533,6 +533,16 @@ Die folgenden Vorlagen sind verfügbar:
 
 <!-- markdownlint-enable MD034 -->
 
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="template--content-analytics"
+>title="Erfahren Sie, welche Inhalts- und Inhaltsattribute die beste Leistung erbringen."
+>abstract="**Dies kann Ihnen helfen** zu erfahren, wie Ihre Inhalte auf einer granularen Ebene funktionieren. Sie können die Leistung einzelner Assets oder bestimmter Attribute überprüfen. Content Analytics verwendet KI, um automatisch Attribute zu generieren und Ihre Inhalte mit ihnen zu taggen. [Weitere Informationen](/help/content-analytics/content-analytics.md).<br/>**Je nachdem, was Sie lernen** können Sie eine beliebige Anzahl von Dingen durchführen, z. B. Hochleistungs-Assets auf Ihrer Startseite bewerben, Inhalte für bestimmte Segmente personalisieren, um leistungsstarke Attribute einzuschließen, oder Inhalte, die mittlerweile veraltet sind, rotieren."
+
+<!-- markdownlint-enable MD034 -->
+
+
 Die folgenden Vorlagen sind verfügbar:
 
 | Name der Vorlage | Gründe für die Verwendung dieser <!-- What do you do with it? What can it help you learn? and What are the potential actions? --> |
@@ -551,6 +561,7 @@ Die folgenden Vorlagen sind verfügbar:
 | **Einstiegsseiten** | Zeigen Sie die wichtigsten Seiten an, auf die Personen beim ersten Besuch Ihrer Site zugreifen. <p>**Dies kann Ihnen helfen**, besser zu verstehen, welche Seiten den meisten Traffic zu Ihrer Site leiten, oder mehr über die ersten Eindrücke zu erfahren, die Besuchende auf Ihrer Site haben.</p><p>**Basierend auf Ihren Erkenntnissen können Sie** eine Reihe von Schritten ausführen, z. B. das erste Erlebnis optimieren, das Personen auf der Site haben, oder sicherstellen, dass die Seiten, die Personen beim Eintritt in Ihre Site zuerst sehen, einladend sind und die erforderlichen Links zu anderen Bereichen Ihrer Site bereitstellen.</p><p>Diese Vorlage verwendet die Metrik Sitzungen . Außerdem werden die Balkenvisualisierung und die Freiformtabellen-Visualisierung verwendet.</p> |
 | **Exitpages** | Zeigen Sie die wichtigsten Seiten an, auf die Personen unmittelbar vor dem Verlassen Ihrer Site zugreifen.<p>**Dies kann Ihnen helfen,** besser zu verstehen, welche Seiten die Personen von der Website wegführen. </p><p>**Basierend auf Ihren Erkenntnissen können Sie** eine Reihe von Schritten ausführen, z. B. gängige Exitpages aktualisieren, um das Erlebnis zu optimieren, das Personen vor dem Verlassen haben, oder Inhalte oder Links aufnehmen, um Personen dazu aufzufordern, auf Ihrer Site zu bleiben.</p><p>Diese Vorlage verwendet die Metrik Sitzungen . Außerdem werden die Balkenvisualisierung und die Freiformtabellen-Visualisierung verwendet.</p> |
 | **Übersicht über die Produktnutzung** | Sehen Sie sich an, wie Customer Journey Analytics in Ihrer Organisation verwendet wird. <p>**Dies kann Ihnen helfen**, besser zu verstehen, wie viele Personen Customer Journey Analytics verwenden, wie oft sie es verwenden und welche Nutzungs-Trends im Laufe der Zeit zu beobachten sind. Sie können auch die Anzahl der erstellten Projekte und Details zu diesen Projekten (z. B. welche Komponenten, Visualisierungen und Panels am häufigsten verwendet werden) sowie viele andere Nutzungsstatistiken anzeigen.</p><p>**Basierend auf Ihren Erkenntnissen können Sie** eine Reihe von Schritten ausführen, z. B. nicht verwendete Projekte oder Komponenten löschen oder Benutzerschulungen für beliebte Funktionen bereitstellen.</p> |
+| **Inhaltsanalyse** | Erfahren Sie, welche Inhalts- und Inhaltsattribute die beste Leistung erbringen.<p>**Dies kann Ihnen helfen** zu erfahren, wie Ihre Inhalte auf einer granularen Ebene funktionieren. Sie können die Leistung einzelner Assets oder bestimmter Attribute überprüfen. Content Analytics verwendet KI, um automatisch Attribute zu generieren und Ihre Inhalte mit ihnen zu taggen. [Weitere Informationen](/help/content-analytics/content-analytics.md).</p><p>**Je nachdem, was Sie lernen** können Sie eine beliebige Anzahl von Dingen durchführen, z. B. Hochleistungs-Assets auf Ihrer Startseite bewerben, Inhalte für bestimmte Segmente personalisieren, um leistungsstarke Attribute einzuschließen, oder Inhalte, die mittlerweile veraltet sind, rotieren.</p> |
 
 ### Web: Konversion {#web-conversion}
 
