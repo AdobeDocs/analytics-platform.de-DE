@@ -7,9 +7,9 @@ role: Admin, User
 hide: true
 hidefromtoc: true
 exl-id: 0d3be50d-c635-459b-8b01-61d6d4ef0cdf
-source-git-commit: 8c257279353112df583b46d87ea17749a75867e2
+source-git-commit: 62491fcbf37961d33be92d209e5710bf9696c223
 workflow-type: tm+mt
-source-wordcount: '668'
+source-wordcount: '753'
 ht-degree: 0%
 
 ---
@@ -52,21 +52,29 @@ Content Analytics verwendet die folgenden Schlüsselbegriffe:
 
 Content Analytics verwendet Web-Bildansichtsdaten, die in Ereignisdatensätzen in Experience Platform erfasst wurden. Diese Daten können mithilfe der verschiedenen verfügbaren Methoden erfasst werden: Experience Platform Edge Network (Web SDK, Server API) oder Analytics Source Connector.
 
-![Inhaltsanalyse - Funktionsweise](assets/how-it-works.png)
+![Inhaltsanalyse - Funktionsweise](assets/aca-overview.gif)
 
 
-1. Wenn ein(e) Benutzende(r) eine Website besucht, zeichnet die für Inhaltsanalysen konfigurierte Experience Platform Web SDK Interaktionen mit Inhalten auf.
-1. Der Assembler-Service für Funktionen und der Identity Service verarbeiten die erneut besuchten Daten.
+1. Wenn ein(e) Benutzende(r) eine für Content Analytics konfigurierte Site besucht, zeichnet der Experience Platform Web SDK Interaktionen mit Inhalten auf.
+1. Der Assembler-Service für Funktionen und der Identity Service verarbeiten die erneut besuchten Daten. Dieser Prozess besteht aus einem Crawler, der die öffentlich zugänglichen Versionen der konfigurierten URLs erneut aufruft und KI-/ML-Services anwendet.
 1. Die Ergebnisse dieser Services (Komponenten, Attribute und Identitäten) werden verwendet, um die relevanten spezifischen Inhaltsanalysedatensätze in Experience Platform zu aktualisieren.
-1. Die Inhaltsanalysedaten können dann zusammen mit Verhaltensdaten und anderen Lookup-Datensätzen in einer Customer Journey Analytics-Konfiguration (Verbindung, Datenansicht und Workspace) verwendet werden. Diese Konfiguration bildet die Grundlage für die einzigartigen Einblicke auf Makroebene in Ihren Inhalt.
+1. Die Inhaltsanalysedaten sowie Verhaltensdaten und andere Lookup-Datensätze, die Sie beim Einrichten von Customer Journey Analytics verwenden (Kombination aus Verbindung, Datenansicht und Workspace). Dieses Setup bietet die Grundlage für die einzigartigen Einblicke auf Makroebene in Ihren Inhalt.
 
 >[!NOTE]
 >
->Content Analytics nutzt KI/ML. Die Ergebnisse (für die Darstellung von Erlebnissen und Assets) können ungenau sein.
+>Content Analytics nutzt KI-/ML-Services, die zu ungenauen oder irreführenden Ergebnissen führen können. Daher sollten Sie Ihr Urteilsvermögen nutzen, um KI/ML-generierte Ausgaben zu überprüfen und zu validieren.
+>
+>Sie können die Registerkarte **[!UICONTROL Feedback]** verwenden, die unter ![InfoOutline](/help/assets/icons/InfoOutline.svg) auf der Hauptbenutzeroberfläche verfügbar ist, um Feedback zu den KI/ML-generierten Ausgaben zu geben.
+>
+
+>[!NOTE]
+>
+>Wenn Sie das Privacy and Security Shield-Add-on lizenziert haben, beachten Sie, dass (alle aus Erlebnissen und Assets generierten Daten) vorbehaltlich Content Analyticss nicht von der DULE-Kennzeichnung oder von kundenverwalteten Schlüsseln abgedeckt werden.
 >
 
 
 >[!MORELIKETHIS]
 >
->[Content Analytics-Reporting](report/report.md)
+>[Content Analytics-Berichte](report/report.md)
 >[Konfigurieren von Inhaltsanalysen](config/configuration.md)
+>

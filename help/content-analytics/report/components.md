@@ -7,9 +7,9 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: 79bf235a-6f6e-4b04-bcd8-1ff884536648
-source-git-commit: cd31712c1dde1fc39f4d0dc81555c19b7690bcab
+source-git-commit: 62491fcbf37961d33be92d209e5710bf9696c223
 workflow-type: tm+mt
-source-wordcount: '1384'
+source-wordcount: '1390'
 ht-degree: 17%
 
 ---
@@ -33,7 +33,7 @@ Content Analytics fügt die folgenden Komponentenkategorien (Dimensionen, (berec
 * [Assets-Ereignisse](#asset-events)
 * [Berechnete Metriken ](#calculated-metrics)
 
-In den folgenden Tabellen ![KI generiert](/help/assets/icons/AI.svg) einen von KI/ML generierten Wert an.
+In den folgenden Tabellen ![KI generiert](/help/assets/icons/AI.svg) ein KI/ML generierter Wert.
 
 ## Erlebnis-Metadaten
 
@@ -63,7 +63,7 @@ In den folgenden Tabellen ![KI generiert](/help/assets/icons/AI.svg) einen von K
 | Erlebnis – Überzeugungsstrategien | ![KI generiert](/help/assets/icons/AI.svg) Überredungsstrategien, die im jeweiligen Erlebnis vorhanden sind. Die möglichen Werte sind: soziale Identität, sozialer Beweis, Autorität, Konkretheit, Fuß in der Tür, Überwindung von Reaktanz, Reziprozität, Verankerung und Vergleich, soziale Wirkung, Mangel und Anthropomorphismus. | Dimension Von <br/> abgeleitetes Feld | \| anzeigen Kein Wert<br/>Zuletzt verwendet \| Sitzung |
 | Erlebnis – Narrative | ![KI generiert](/help/assets/icons/AI.svg) Erzählungen, die das Erlebnis basierend auf der Relevanz aus der Sicht eines Marketing-Experten erstellt. | Dimension Von <br/> abgeleitetes Feld | \| anzeigen Kein Wert<br/>Zuletzt verwendet \| Sitzung |
 | Erlebnis – Töne | ![KI generiert](/help/assets/icons/AI.svg) Töne, die das Erlebnis basierend auf der Relevanz aus der Sicht eines Marketing-Experten erstellt | Dimension Von <br/> abgeleitetes Feld | \| anzeigen Kein Wert<br/>Zuletzt verwendet \| Sitzung |
-| Erlebnis – Marketing-Emotionen | ![KI generiert](/help/assets/icons/AI.svg) Die Emotion, die beim Lesen des Erlebnisses aufgerufen wird: Dringlichkeit, Exklusivität, Ermutigung, Herausforderung, Neugier, Leistung, Vertrauen, Einfachheit und Faszination. | Dimension Von <br/> abgeleitetes Feld | \| anzeigen Kein Wert<br/>Zuletzt verwendet \| Sitzung |
+| Erlebnis – Marketing-Emotionen | ![KI generiert](/help/assets/icons/AI.svg) Die Emotionen, die beim Lesen des als Teil des Erlebnisses verwendeten Texts aufgerufen werden: Dringlichkeit, Exklusivität, Ermutigung, Herausforderung, Neugier, Leistung, Vertrauen, Einfachheit und Faszination. | Dimension Von <br/> abgeleitetes Feld | \| anzeigen Kein Wert<br/>Zuletzt verwendet \| Sitzung |
 | Erlebnis – Anzahl der Emojis | ![KI generiert](/help/assets/icons/AI.svg) Anzahl der Emojis für das Erlebnis. | Metrik | Werte zählen<br/>Dezimalzahl \| Dezimalstellen: 0 |
 | Anzahl der Erlebnis-Hashtags | ![KI generiert](/help/assets/icons/AI.svg) Anzahl der Hashtags für das Erlebnis. | Metrik | Werte zählen<br/>Dezimalzahl \| Dezimalstellen: 0 |
 | Erlebnis – Satzanzahl | ![KI generiert](/help/assets/icons/AI.svg) Anzahl der Sätze für das Erlebnis. | Metrik | Werte zählen<br/>Dezimalzahl \| Dezimalstellen: 0 |
@@ -163,3 +163,4 @@ In den folgenden Tabellen ![KI generiert](/help/assets/icons/AI.svg) einen von K
 | Clickthrough-Rate des Erlebnisses | Erlebnis-Klicks/Erlebnis-Ansichten | Berechnete Metrik | |
 
 {style="table-layout:fixed"}
+

@@ -7,9 +7,9 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: 6e756ae8-b969-46f1-95b8-d8fbb0d058ed
-source-git-commit: 0cd9cd508d474df3dff176bca4596d0379ac86b4
+source-git-commit: 62491fcbf37961d33be92d209e5710bf9696c223
 workflow-type: tm+mt
-source-wordcount: '318'
+source-wordcount: '349'
 ht-degree: 0%
 
 ---
@@ -28,8 +28,9 @@ Das Reporting zu Inhaltsanalysen erfolgt in Analysis Workspace. Eine bestimmte W
 So starten Sie das Reporting zu Inhaltsanalysen von Grund auf neu:
 
 1. [Erstellen eines neuen](/help/analysis-workspace/build-workspace-project/create-projects.md) oder [Öffnen eines vorhandenen](/help/analysis-workspace/build-workspace-project/open-projects.md) Projekts in Workspace.
+1. Stellen Sie sicher[ dass Sie für die Berichterstellung in Content Analytics ](/help/analysis-workspace/c-panels/panels.md#data-view) Datenansicht auswählen. Content Analytics Content Analytics-Berichte sind nur für Datenansichten verfügbar, die für [ konfiguriert ](/help/content-analytics/config/configuration.md).
 1. Ziehen Sie ![ Visualisierung ](/help/assets/icons/Table.svg)Tabelle[/Freiformtabelle](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) auf die Arbeitsfläche.
-1. Verwenden Sie [spezifischen Inhaltsanalysekomponenten](components.md) und andere generische [Komponenten](/help/components/overview.md) (wie Filter, Datumsbereiche, Anmerkungen), um Ihre Inhaltsanalyseeinblicke zu erstellen.
+1. Verwenden Sie [spezifischen Inhaltsanalysekomponenten](components.md) und andere generische [Komponenten](/help/components/overview.md) (wie Filter, Datumsbereiche, Anmerkungen), um Ihre Inhaltsanalyseeinblicke zu erstellen. Verwenden Sie alternativ die Content Analytics-Vorlage.
 
 ## Miniaturen
 
@@ -49,7 +50,7 @@ So öffnen Sie die Vorschau mit den folgenden Details:
   |---|---|
   | ![Content Analytics Experience Preview](../assets/aca-experience-preview.png) | ![Vorschau von Content Analytics-Assets](../assets/aca-asset-preview.png) |
   | **[!UICONTROL Name des Erlebnisses]** | **[!UICONTROL Name des Assets]** |
-  | **[!UICONTROL Impressions (alle Zeiten)]**: Anzahl der Impressionen für das Erlebnis. | **[!UICONTROL Impressions (alle MES)]**: Anzahl der Impressionen für das Asset. |
+  | **[!UICONTROL Impressions (alle Zeiten)]**: Anzahl der Impressionen für das Erlebnis. | **[!UICONTROL Impressions (alle Zeiten)]**: Anzahl der Impressionen für das Asset. |
   | **[!UICONTROL Assets]**: Anzahl der Assets, die dieses Erlebnis enthält. Wählen Sie ![Aufschlüsselung](/help/assets/icons/Breakdown.svg) Aufschlüsselung aus, um die Assets zu überprüfen. | **[!UICONTROL Erlebnisse]**: Anzahl der Erlebnisse, in denen dieses Asset angezeigt wird. [Aufschlüsselung](/help/assets/icons/Breakdown.svg) Aufschlüsselung zur Überprüfung der Assets. |
   | **[!UICONTROL Erster Impression]**: Datum des ersten Impressions des Erlebnisses. | **[!UICONTROL Erste Impression]**: Datum der ersten Impression des Assets. |
   | **[!UICONTROL Letzte Impression]**: Datum der letzten Impression des Erlebnisses. | **[!UICONTROL Letzte Impression]**: Datum der letzten Impression des Assets. |
