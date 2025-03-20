@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Derived Fields
 exl-id: bcd172b2-cd13-421a-92c6-e8c53fa95936
 role: Admin
-source-git-commit: e2e04432682f94b18bf9ed25d15f906c05bfd59d
+source-git-commit: 261d4b5e18531f7971a894bc4cd571b764c625f1
 workflow-type: tm+mt
 source-wordcount: '8844'
 ht-degree: 17%
@@ -1570,7 +1570,7 @@ Teilt einen Wert von einem Feld in ein neues abgeleitetes Feld auf.
 
 | Eingabedatentyp | Eingabe | Enthaltene Operatoren | Limit | Ausgabe |
 |---|---|---|---|---|
-| <ul><li>Zeichenfolge</li><li>Numerisch</li></ul> | <ul><li>[!UICONTROL Feld]:</li><ul><li>Regeln</li><li>Standardfelder</li><li>Felder</li></ul></ul><ul><li>[!UICONTROL Methode]:</li><ul><li>Von links</li><li>Von rechts</li><li>In Array konvertieren</li></ul></li><li>Für Trennzeichen:<ul><li>Zeichenfolge</li></ul><li>Für Index:<ul><li>Numerisch</li></ul></li> | <p>-/-</p> | <p>5 Funktionen pro abgeleitetem Feld</p> | <p>Neues abgeleitetes Feld</p> |
+| <ul><li>Zeichenfolge</li><li>Numerisch</li></ul> | <ul><li>[!UICONTROL Feld]:</li><ul><li>Regeln</li><li>Standardfelder</li><li>Felder</li></ul></ul><ul><li>[!UICONTROL Methode]:</li><ul><li>Von links</li><li>Von rechts</li><li>In Array konvertieren</li></ul></li><li>Für Trennzeichen:<ul><li>Zeichenfolge</li></ul><li>Für Index:<ul><li>Numerisch</li></ul></li> | <p>-/-</p> | <p>2 Funktionen pro abgeleitetem Feld</p> | <p>Neues abgeleitetes Feld</p> |
 
 {style="table-layout:auto"}
 
@@ -1966,7 +1966,7 @@ Die folgenden Einschränkungen gelten generell für die Funktionen abgeleiteter 
 | <p>Felder zusammenführen</p> | <ul><li>2 Funktionen zum Zusammenführen von Feldern pro abgeleitetem Feld</li></ul> |
 | <p>Weiter oder zurück</p> | <ul><li>3 Nächste oder vorherige Funktionen pro abgeleitetem Feld</li></ul> |
 | <p>Regulären Ausdruck ersetzen</p> | <ul><li>1 Regex-Ersetzungsfunktion pro abgeleitetem Feld</li></ul> |
-| <p>Split</p> | <ul><li>5 Aufspaltungsfunktionen pro abgeleitetem Feld</li></ul> |
+| <p>Split</p> | <ul><li>2 Aufspaltungsfunktionen pro abgeleitetem Feld</li></ul> |
 | <p>Zusammenfassen</p> | <ul><li>3 Funktionen pro abgeleitetem Feld zusammenfassen</li></ul> |
 | <p>Zuschneiden</p> | <ul><li>1 Trimm-Funktion pro abgeleitetem Feld</li></ul> |
 | <p>URL-Parsen</p> | <ul><li>5 URL-Analysefunktionen pro abgeleitetem Feld</li></ul> |

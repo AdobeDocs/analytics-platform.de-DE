@@ -4,10 +4,10 @@ description: Erstellen von Anmerkungen in Workspace.
 feature: Components
 exl-id: 68fef9b3-dc47-4e56-bea6-d1c4c39fb51b
 role: User, Admin
-source-git-commit: e4e0c3cf2e865454837df6626c3b1b09f119f07f
-workflow-type: ht
-source-wordcount: '872'
-ht-degree: 100%
+source-git-commit: 261d4b5e18531f7971a894bc4cd571b764c625f1
+workflow-type: tm+mt
+source-wordcount: '873'
+ht-degree: 91%
 
 ---
 
@@ -21,11 +21,11 @@ Sie können Anmerkungen wie folgt erstellen:
 
 ![Erstellen einer Anmerkung](assets/create-annotation.png)
 
-* ?? Wählen Sie in der Hauptbenutzeroberfläche die Option **[!UICONTROL Komponenten]** und dann **[!UICONTROL Anmerkungen]** aus. Wählen Sie ![Hinzufügen](/help/assets/icons/AddCircle.svg) [!UICONTROL **[!UICONTROL Hinzufügen]**] im [[!UICONTROL Anmerkungs]-Manager](/help/components/annotations/manage-annotations.md) aus.
-* ?? Wählen Sie in einem Workspace-Projekt aus dem Kontextmenü einer Visualisierung die Option **[!UICONTROL Anmerkung aus Auswahl erstellen]** aus.
-* ?? Wählen Sie in einem Workspace-Projekt aus dem Kontextmenü eines Liniendiagramms die Option **[!UICONTROL Auswahl mit Anmerkungen versehen]** aus.
-* ?? Wählen Sie in einem Workspace-Projekt aus dem Menü die Option **[!UICONTROL Komponenten]** und dann **[!UICONTROL Anmerkung erstellen]** aus.
-* ?? Verwenden Sie in einem Workspace-Projekt den Tastaturbefehl **[!UICONTROL Strg+Umschalt+O]** (Windows) oder **[!UICONTROL Umschalt+Befehlstaste+O]** (macOS).
+* **A**. Wählen Sie in der Hauptbenutzeroberfläche **[!UICONTROL Komponenten]** und anschließend &quot;**[!UICONTROL &quot;]**. Wählen Sie ![Hinzufügen](/help/assets/icons/AddCircle.svg) [!UICONTROL **[!UICONTROL Hinzufügen]**] im [[!UICONTROL Anmerkungs]-Manager](/help/components/annotations/manage-annotations.md) aus.
+* **B**. Wählen Sie in einem Workspace-Projekt im Kontextmenü in einer Visualisierung die Option **[!UICONTROL Anmerkung aus Auswahl erstellen]** aus.
+* **C**. Wählen Sie in einem Workspace-Projekt im Kontextmenü in einem Liniendiagramm die Option **[!UICONTROL Anmerkungsauswahl]** aus.
+* **D**. Wählen Sie in einem Workspace-Projekt **[!UICONTROL Komponenten]** aus dem Menü aus und klicken Sie auf **[!UICONTROL Anmerkung erstellen]**.
+* **E**.  Verwenden Sie in einem Workspace-Projekt die Tastenkombination **[!UICONTROL Strg+Umschalt+O]** (Windows) oder **[!UICONTROL Umschalt+Befehl+O]** (macOS)
 
 Verwenden Sie die Funktion zur [[!UICONTROL Anmerkungserstellung]](#annotation-builder), um die Anmerkung zu definieren.
 

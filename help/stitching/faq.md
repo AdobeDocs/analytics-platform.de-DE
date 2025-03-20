@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 exl-id: f4115164-7263-40ad-9706-3b98d0bb7905
 role: Admin
-source-git-commit: 02026709480872216ee76e842045517822c59bff
+source-git-commit: 261d4b5e18531f7971a894bc4cd571b764c625f1
 workflow-type: tm+mt
 source-wordcount: '1919'
-ht-degree: 27%
+ht-degree: 28%
 
 ---
 
@@ -39,7 +39,7 @@ Das Lookback-Fenster für die Neuzuweisung hängt von der gewünschten Häufigke
 
 +++
 
-## Freigegebene Geräte
+## Gemeinsam verwendete Geräte
 
 +++ Wie werden freigegebene Geräte gehandhabt?
 
@@ -67,7 +67,7 @@ Bei der diagrammbasierten Zuordnung kann eine einzelne Person über viele bestä
 
 +++ Wie lange dauert es, bis der neu zugewiesene Datensatz verfügbar ist, nachdem ich meinem Adobe-Accountteam die gewünschten Informationen mitgeteilt habe?
 
-Die Echtzuordnung ist ca. eine Woche nach dem Adobe verfügbar. Die Verfügbarkeit der Aufstockung hängt von der Menge der vorhandenen Daten ab. Bei kleinen Datensätzen (weniger als 1 Million Ereignisse pro Tag) dauert es in der Regel einige Tage, während große Datensätze (1 Milliarde Ereignisse pro Tag) eine Woche oder länger benötigen können.
+Die Echtzeit-Zuordnung ist etwa eine Woche, nachdem Adobe die Zuordnung aktiviert hat, verfügbar. Die Verfügbarkeit der Aufstockung hängt von der Menge der vorhandenen Daten ab. Bei kleinen Datensätzen (weniger als 1 Million Ereignisse pro Tag) dauert es in der Regel einige Tage, während große Datensätze (1 Milliarde Ereignisse pro Tag) eine Woche oder länger benötigen können.
 
 +++
 
@@ -169,8 +169,8 @@ Wenn eine Datenschutzanfrage für einen Kunden mit CustID Bob empfangen wird, we
 
 Wenn das Feld „Persistente ID“ bei einem Ereignis in einem Datensatz, der zugeordnet wird, leer ist, wird die zugeordnete ID für dieses Ereignis auf eine dieser zwei Arten bestimmt:
 
-* Wenn das Feld Vorübergehende ID nicht leer ist, verwendet Customer Journey Analytics den Wert in der Vorübergehenden ID als zugeordnete ID.
-* Wenn das Feld Vorübergehende ID leer ist, lässt das Customer Journey Analytics auch die zugeordnete ID leer. In diesem Fall sind die Felder „Persistente ID“, „Vorübergehende ID“ und „Zugeordnete ID“ für das Ereignis leer. Diese Ereignistypen werden aus jeder Customer Journey Analytics-Verbindung herausgenommen, die den zugeordneten Datensatz verwendet, bei dem die zugeordnete ID als Personen-ID ausgewählt wurde.
+* Wenn das Feld „Vorübergehende ID“ nicht leer ist, verwendet Customer Journey Analytics den Wert in „Vorübergehende ID“ als zugeordnete ID.
+* Wenn das Feld Vorübergehende ID leer ist, lässt Customer Journey Analytics auch die zugeordnete ID leer. In diesem Fall sind die Felder „Persistente ID“, „Vorübergehende ID“ und „Zugeordnete ID“ für das Ereignis leer. Diese Ereignistypen werden aus jeder Customer Journey Analytics-Verbindung herausgenommen, die den zugeordneten Datensatz verwendet, bei dem die zugeordnete ID als Personen-ID ausgewählt wurde.
 
 +++
 
@@ -199,17 +199,17 @@ Seien Sie vorsichtig beim „Personen-Kollaps“, der auftritt, wenn das Zusamme
 
 ## Vergleich von Metriken
 
-+++ Wie lässt sich ein Vergleich zwischen Metriken in Customer Journey Analytics zugeordneten Datensätzen und ähnlichen Metriken beim Customer Journey Analytics nicht zugeordneter Datensätze und mit Adobe Analytics vornehmen?
++++ Wie lässt sich ein Vergleich zwischen Metriken in zugeordneten Customer Journey Analytics-Datensätzen und ähnlichen Metriken in nicht zugeordneten Customer Journey Analytics-Datensätzen und mit Adobe Analytics vornehmen?
 
-Bestimmte Metriken im Customer Journey Analytics ähneln den Metriken im herkömmlichen Analytics, andere unterscheiden sich jedoch je nachdem, was Sie vergleichen. In der folgenden Tabelle werden verschiedene häufig verwendete Metriken verglichen:
+Bestimmte Metriken in Customer Journey Analytics ähneln den Metriken im herkömmlichen Analytics, andere unterscheiden sich jedoch je nachdem, was Sie vergleichen. In der folgenden Tabelle werden verschiedene häufig verwendete Metriken verglichen:
 
 | **Zugeordnete Customer Journey Analytics-Daten** | **Nicht zugeordnete Customer Journey Analytics-Daten** | **Adobe Analytics** | **Analytics Ultimate mit CDA** |
 | ----- | ----- | ----- | ----- |
-| **Personen** = Anzahl unterschiedlicher Personen-IDs, bei denen die zusammengefügte ID als Personen-ID ausgewählt wird. Je nach Ergebnis des Zuordnungsprozesses kann **Personen** größer oder kleiner als **Unique Visitors** im herkömmlichen Adobe Analytics sein. | **Personen** = Anzahl unterschiedlicher Personen-IDs basierend auf der Spalte, die als Personen-ID ausgewählt wurde. **Personen** in den Analytics-Quell-Connector-Datensätzen ist ähnlich wie **Unique Visitors** im herkömmlichen Adobe Analytics, wenn `endUserIDs._experience.aaid.id` als Personen-ID im Customer Journey Analytics verwendet wird. | **Unique Visitors** = Anzahl unterschiedlicher Besucher-IDs. **Unique Visitors** ist möglicherweise nicht identisch mit der Anzahl der eindeutigen **ECID** s. | Siehe [Personen](https://experienceleague.adobe.com/docs/analytics/components/metrics/people.html?lang=de). |
+| **Personen** = Anzahl unterschiedlicher Personen-IDs, bei denen die zusammengefügte ID als Personen-ID ausgewählt wird. Je nach Ergebnis des Zuordnungsprozesses kann **Personen** größer oder kleiner als **Unique Visitors** im herkömmlichen Adobe Analytics sein. | **Personen** = Anzahl unterschiedlicher Personen-IDs basierend auf der Spalte, die als Personen-ID ausgewählt wurde. **Personen** in Datensätzen des Analytics-Quell-Connectors ist ähnlich wie **Unique Visitors** im herkömmlichen Adobe Analytics, wenn `endUserIDs._experience.aaid.id` als Personen-ID in Customer Journey Analytics verwendet wird. | **Unique Visitors** = Anzahl unterschiedlicher Besucher-IDs. **Unique Visitors** ist möglicherweise nicht identisch mit der Anzahl der eindeutigen **ECID** s. | Siehe [Personen](https://experienceleague.adobe.com/docs/analytics/components/metrics/people.html?lang=de). |
 | **Sitzungen**: Wird anhand der Sitzungseinstellungen in der Customer Journey Analytics-Datenansicht definiert. Der Zuordnungsprozess kann einzelne Sitzungen auf mehreren Geräten zu einer einzelnen Sitzung kombinieren. | **Sitzungen**: Wird anhand der in der Customer Journey Analytics-Datenansicht angegebenen Sitzungseinstellungen definiert. | **Besuche**: Siehe [Besuche](https://experienceleague.adobe.com/docs/analytics/components/metrics/visits.html?lang=de). | **Besuche**: Wird basierend auf den Sitzungseinstellungen definiert, die in der [Virtual Report Suite von CDA](https://experienceleague.adobe.com/docs/analytics/components/cda/setup.html?lang=de) angegeben sind. |
-| **Ereignisse** = Anzahl der Zeilen in den zugeordneten Daten in Customer Journey Analytics. Diese Metrik liegt normalerweise nahe bei **Vorfälle** im herkömmlichen Adobe Analytics. Beachten Sie jedoch die oben stehenden häufig gestellten Fragen zu Zeilen mit einer leeren persistenten ID. | **Ereignisse** = Anzahl der Zeilen in den nicht zugeordneten Daten in Customer Journey Analytics. Diese Metrik liegt normalerweise nahe bei **Vorfälle** im herkömmlichen Adobe Analytics. Beachten Sie jedoch, dass Ereignisse, die eine leere Personen-ID in den nicht zugeordneten Daten im Data Lake von Experience Platform haben, nicht im Customer Journey Analytics enthalten sind. | **Vorfälle**: Siehe [Vorfälle](https://experienceleague.adobe.com/docs/analytics/components/metrics/occurrences.html?lang=de). | **Vorfälle**: Siehe [Vorfälle](https://experienceleague.adobe.com/docs/analytics/components/metrics/occurrences.html?lang=de). |
+| **Ereignisse** = Anzahl der Zeilen in den zugeordneten Daten in Customer Journey Analytics. Diese Metrik liegt normalerweise nahe bei **Vorfälle** im herkömmlichen Adobe Analytics. Beachten Sie jedoch die oben stehenden häufig gestellten Fragen zu Zeilen mit einer leeren persistenten ID. | **Ereignisse** = Anzahl der Zeilen in den nicht zugeordneten Daten in Customer Journey Analytics. Diese Metrik liegt normalerweise nahe bei **Vorfälle** im herkömmlichen Adobe Analytics. Beachten Sie jedoch, dass Ereignisse, die in den nicht zugeordneten Daten im Data Lake von Experience Platform eine leere Personen-ID aufweisen, nicht in Customer Journey Analytics aufgenommen werden. | **Vorfälle**: Siehe [Vorfälle](https://experienceleague.adobe.com/docs/analytics/components/metrics/occurrences.html?lang=de). | **Vorfälle**: Siehe [Vorfälle](https://experienceleague.adobe.com/docs/analytics/components/metrics/occurrences.html?lang=de). |
 
-Andere Metriken können in Customer Journey Analytics und Adobe Analytics ähnlich sein. Beispielsweise ist die Gesamtanzahl für Adobe Analytics [benutzerspezifische Ereignisse](https://experienceleague.adobe.com/docs/analytics/components/metrics/custom-events.html?lang=de) 1-100 im herkömmlichen Adobe Analytics und Customer Journey Analytics (unabhängig davon, ob zugeordnet oder nicht zugeordnet) vergleichbar. [Funktionsunterschiede](/help/getting-started/aa-vs-cja/cja-aa.md)), z. B. die Deduplizierung zwischen Customer Journey Analytics und Adobe Analytics, können zu Diskrepanzen zwischen den beiden Produkten führen.
+Andere Metriken können in Customer Journey Analytics und Adobe Analytics ähnlich sein. Beispielsweise ist die Gesamtanzahl für Adobe Analytics [benutzerspezifische Ereignisse](https://experienceleague.adobe.com/docs/analytics/components/metrics/custom-events.html?lang=de) 1-100 im herkömmlichen Adobe Analytics und Customer Journey Analytics vergleichbar (unabhängig davon, ob zugeordnet oder nicht zugeordnet). [Funktionsunterschiede](/help/getting-started/aa-vs-cja/cja-aa.md)), z. B. die Deduplizierung zwischen Customer Journey Analytics und Adobe Analytics, können zu Diskrepanzen zwischen den beiden Produkten führen.
 
 +++
 
@@ -225,7 +225,7 @@ Nein, Customer Journey Analytics kann derzeit keine Identity Map-Felder zum Zusa
 
 +++ Müssen Daten erneut aufgenommen werden, um von feldbasierter Zuordnung zu diagrammbasierter Zuordnung zu wechseln?
 
-Daten müssen nicht erneut in Experience Platform erfasst werden, sondern müssen in Customer Journey Analytics neu konfiguriert werden. Führen Sie die folgenden Schritte aus:
+Daten müssen nicht erneut in Experience Platform aufgenommen werden. Sie müssen jedoch in Customer Journey Analytics neu konfiguriert werden. Führen Sie die folgenden Schritte aus:
 
 1. Richten Sie den neuen diagrammbasierten zugeordneten Datensatz ein.
 1. Konfigurieren Sie den neuen Datensatz als Teil einer neuen Verbindung in Customer Journey Analytics.
