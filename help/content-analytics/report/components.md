@@ -7,19 +7,16 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: 79bf235a-6f6e-4b04-bcd8-1ff884536648
-source-git-commit: 62491fcbf37961d33be92d209e5710bf9696c223
+source-git-commit: 01459765d84a46d170c1619ffeae184957bbf839
 workflow-type: tm+mt
-source-wordcount: '1390'
-ht-degree: 17%
+source-wordcount: '1350'
+ht-degree: 18%
 
 ---
 
 # Inhaltsanalysekomponenten
 
->[!WARNING]
->
->Dieser Artikel ist eine vorläufige inoffizielle Entwurfsversion einer kommenden endgültigen Version und Teil der Inhaltsanalysedokumentation. Alle Inhalte unterliegen Änderungen und es können keinerlei rechtlichen Verpflichtungen aus der aktuellen Version dieses Artikels abgeleitet werden.
->
+{{draft-aca}}
 
 {{release-limited-testing}}
 
@@ -33,7 +30,7 @@ Content Analytics fügt die folgenden Komponentenkategorien (Dimensionen, (berec
 * [Assets-Ereignisse](#asset-events)
 * [Berechnete Metriken ](#calculated-metrics)
 
-In den folgenden Tabellen ![KI generiert](/help/assets/icons/AI.svg) ein KI/ML generierter Wert.
+In den folgenden Tabellen ![KI generiert](/help/assets/icons/AI.svg) ein von KI/ML generiertes Attribut/Wert-Paar an.
 
 ## Erlebnis-Metadaten
 

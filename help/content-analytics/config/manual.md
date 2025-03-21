@@ -7,19 +7,16 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 2b2d1cc2-36da-4960-ab31-0a398d131ab8
-source-git-commit: 62491fcbf37961d33be92d209e5710bf9696c223
+source-git-commit: 01459765d84a46d170c1619ffeae184957bbf839
 workflow-type: tm+mt
-source-wordcount: '440'
+source-wordcount: '398'
 ht-degree: 1%
 
 ---
 
 # Manuelle Konfiguration von Content Analytics
 
->[!WARNING]
->
->Dieser Artikel ist eine vorläufige inoffizielle Entwurfsversion einer kommenden endgültigen Version und Teil der Inhaltsanalysedokumentation. Alle Inhalte unterliegen Änderungen und es können keinerlei rechtlichen Verpflichtungen aus der aktuellen Version dieses Artikels abgeleitet werden.
->
+{{draft-aca}}
 
 {{release-limited-testing}}
 
@@ -31,7 +28,7 @@ Die folgenden manuellen Konfigurationsaktionen sind verfügbar:
 
 So aktivieren Sie eine neue Konfiguration oder Änderungen, die Sie an einer vorhandenen Konfiguration vorgenommen haben:
 
-1. Sie müssen den [Publishing-Ablauf“ ](https://experienceleague.adobe.com/en/docs/experience-platform/tags/publish/overview){target="_blank"}. Die Bibliothek für die Tags-Eigenschaft mit Ihrer Content Analytics-Konfiguration wurde erfolgreich veröffentlicht. Nur dann werden Content Analytics-Daten für die Domains, Erlebnisse und Assets erfasst, die Sie konfiguriert haben.
+1. Sie müssen den [Publishing-Ablauf“ ](https://experienceleague.adobe.com/en/docs/experience-platform/tags/publish/overview){target="_blank"}. Die Bibliothek für die Tags-Eigenschaft mit Ihrer Content Analytics-Konfiguration wurde erfolgreich veröffentlicht.
 
 1. Sie müssen [ eingebetteten ](https://experienceleague.adobe.com/en/docs/experience-platform/tags/publish/environments/environments#installation) im `<head>` der Seiten in Ihrer Entwicklungs-, Staging- oder Veröffentlichungsumgebung installieren (je nach Content Analytics).
 
@@ -57,6 +54,10 @@ Sie verwenden die [Adobe Content Analytics-Erweiterung](https://experienceleague
   >
   >Stellen Sie sicher, dass die Sandbox und der Datenstrom, die Sie in der Adobe Content Analytics-Erweiterung konfigurieren, bereits mit der [geführten Konfiguration](guided.md) in einem früheren Schritt für Content Analytics konfiguriert sind. Durch diese Konfiguration wird sichergestellt, dass alle erforderlichen Artefakte verfügbar sind.<br/><br/>Stellen Sie außerdem sicher, dass Aktualisierungen für Sandboxes oder Datenströme eine andere Content Analytics-Konfiguration, die für die Verwendung derselben Sandbox oder derselben Datenströme konfiguriert ist, nicht beeinträchtigen.
   >
+
+* [Erlebniserfassung und -definition](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview?lang=en#configure-experience-capture-and-definition)
+
+  Sie können den regulären Ausdruck bearbeiten, um zu ändern, wie Sie .
 
 * [Ereignisfilterung](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-filtering){target="_blank"}
 

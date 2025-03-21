@@ -7,30 +7,27 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: 6e756ae8-b969-46f1-95b8-d8fbb0d058ed
-source-git-commit: df3a877feed82f6cbd181561da68837373bdafb8
+source-git-commit: 01459765d84a46d170c1619ffeae184957bbf839
 workflow-type: tm+mt
-source-wordcount: '1246'
+source-wordcount: '1253'
 ht-degree: 0%
 
 ---
 
 # Übersicht über das Reporting in Content Analytics
 
->[!WARNING]
->
->Dieser Artikel ist eine vorläufige inoffizielle Entwurfsversion einer kommenden endgültigen Version und Teil der Inhaltsanalysedokumentation. Alle Inhalte unterliegen Änderungen und es können keinerlei rechtlichen Verpflichtungen aus der aktuellen Version dieses Artikels abgeleitet werden.
->
+{{draft-aca}}
 
 {{release-limited-testing}}
 
-Das Reporting zu Inhaltsanalysen erfolgt in Analysis Workspace. Eine bestimmte Workspace [Vorlage](#template) ist verfügbar, sodass Sie sofort auf ein vorausgefülltes Workspace-Projekt mit relevanten Inhalten zugreifen können.
+Sie erstellen Berichte, führen Analysen durch und erhalten Einblicke in Content Analytics innerhalb von [Analysis Workspace](/help/analysis-workspace/home.md). Eine bestimmte Workspace [Vorlage](#template) ist verfügbar, sodass Sie sofort auf ein vorausgefülltes Workspace-Projekt mit relevanten Inhalten zugreifen können.
 
 So starten Sie das Reporting zu Inhaltsanalysen von Grund auf neu:
 
 1. [Erstellen eines neuen](/help/analysis-workspace/build-workspace-project/create-projects.md) oder [Öffnen eines vorhandenen](/help/analysis-workspace/build-workspace-project/open-projects.md) Projekts in Workspace.
 1. Stellen Sie sicher[ dass Sie für die Berichterstellung in Content Analytics ](/help/analysis-workspace/c-panels/panels.md#data-view) Datenansicht auswählen. Content Analytics Content Analytics-Berichte sind nur für Datenansichten verfügbar, die für [ konfiguriert ](/help/content-analytics/config/configuration.md).
 1. Ziehen Sie ![ Visualisierung ](/help/assets/icons/Table.svg)Tabelle[/Freiformtabelle](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) auf die Arbeitsfläche.
-1. Verwenden Sie [spezifischen Inhaltsanalysekomponenten](components.md) und andere generische [Komponenten](/help/components/overview.md) (wie Filter, Datumsbereiche, Anmerkungen), um Ihre Inhaltsanalyseeinblicke zu erstellen. Alternativ können Sie die [Inhaltsanalysevorlage“ ](#template).
+1. Verwenden Sie [spezifischen Inhaltsanalysekomponenten](components.md) und andere generische [Komponenten](/help/components/overview.md) (wie Filter, Datumsbereiche, Anmerkungen), um Ihre Inhaltsanalyseeinblicke zu erstellen.
 
 ## Miniaturen
 
@@ -38,9 +35,16 @@ Basierend auf den Inhaltsanalysedimensionen, die Sie in Ihrem Projekt verwenden,
 
 ![Content Analytics-Miniaturansichten](../assets/aca-thumbnails.png)
 
+So konfigurieren Sie die Anzeige von Miniaturansichten für eine Content Analytics-Dimension:
+
+* Bewegen Sie den Mauszeiger über eine Kopfzeile für eine Content Analytics-Dimension. Zum Beispiel **[!UICONTROL Asset-Name]** oder **[!UICONTROL Erlebnis-IDs]**.
+* Wählen Sie ![Einstellung](/help/assets/icons/Setting.svg) aus.
+* Aktivieren oder deaktivieren Sie im **[!UICONTROL Zeileneinstellung]**-Popup unter **[!UICONTROL Einstellungen]** die Option **[!UICONTROL Miniaturansichten anzeigen]**.
+
+
 ## Vorschau
 
-Für Dimensionen mit Miniaturen (z. B. Asset-Name, Erlebnisname und andere) können Sie ein Vorschau-Popup-Fenster öffnen.
+Für Zeilen mit einer Content Analytics-Dimension, die Miniaturansichten anzeigen, können Sie ein Vorschau-Popup-Fenster öffnen.
 
 So öffnen Sie die Vorschau mit den folgenden Details:
 
@@ -51,10 +55,10 @@ So öffnen Sie die Vorschau mit den folgenden Details:
   | ![Content Analytics Experience Preview](../assets/aca-experience-preview.png) | ![Vorschau von Content Analytics-Assets](../assets/aca-asset-preview.png) |
   | **[!UICONTROL Name des Erlebnisses]** | **[!UICONTROL Name des Assets]** |
   | **[!UICONTROL Impressions (alle Zeiten)]**: Anzahl der Impressionen für das Erlebnis. | **[!UICONTROL Impressions (alle Zeiten)]**: Anzahl der Impressionen für das Asset. |
-  | **[!UICONTROL Assets]**: Anzahl der Assets, die dieses Erlebnis enthält. Wählen Sie ![Aufschlüsselung](/help/assets/icons/Breakdown.svg) **[!UICONTROL Aufschlüsselung]** aus, um die Assets zu überprüfen. | **[!UICONTROL Erlebnisse]**: Anzahl der Erlebnisse, in denen dieses Asset angezeigt wird. ![Aufschlüsselung](/help/assets/icons/Breakdown.svg) **[!UICONTROL Aufschlüsselung]** um die Assets zu überprüfen. |
+  | **[!UICONTROL Assets]**: Anzahl der Assets, die dieses Erlebnis enthält. <br/>Wählen Sie ![Aufschlüsselung](/help/assets/icons/Breakdown.svg) **[!UICONTROL Aufschlüsselung]** aus, um die Assets zu überprüfen. | **[!UICONTROL Erlebnisse]**: Anzahl der Erlebnisse, in denen dieses Asset angezeigt wird. <br/>Wählen Sie ![Aufschlüsselung](/help/assets/icons/Breakdown.svg) **[!UICONTROL Aufschlüsselung]** aus, um die Assets zu überprüfen. |
   | **[!UICONTROL Erster Impression]**: Datum des ersten Impressions des Erlebnisses. | **[!UICONTROL Erste Impression]**: Datum der ersten Impression des Assets. |
   | **[!UICONTROL Letzte Impression]**: Datum der letzten Impression des Erlebnisses. | **[!UICONTROL Letzte Impression]**: Datum der letzten Impression des Assets. |
-  | **[!UICONTROL Erlebnisattribute]**: Die Attribute des Erlebnisses. | **[!UICONTROL Asset-]**: Die Attribute des Assets. |
+  | **[!UICONTROL Erlebnisattribute]**: Die [Attribute](/help/content-analytics/report/components.md#experience-attributes) des Erlebnisses. | **[!UICONTROL Asset-]**: Die [Attribute](/help/content-analytics/report/components.md#asset-attributes) des Assets. |
 
 
 ## Vorlage
@@ -72,7 +76,7 @@ So verwenden Sie die Vorlage:
 1. Wählen **[!UICONTROL im Dialogfeld Vorlage einrichten]** eine Metrik aus dem Dialogfeld **[!UICONTROL Konversionsmetrik auswählen]**. Beispiel: **[!UICONTROL Asset-CTR]**.
 1. Wählen Sie **[!UICONTROL Weiter]** aus.
 
-Ein **[!UICONTROL Content Analytics-Übersicht]**-Projekt wird in Workspace geöffnet. Das Projekt besteht aus vier Panels, die jeweils spezifische Fragen beantworten:
+Ein **[!UICONTROL Content Analytics-Übersicht]**-Projekt wird in Workspace geöffnet. Das Projekt besteht aus vier Bedienfeldern, in denen jedes Bedienfeld Freiformtabellen und Visualisierungen zur Beantwortung einer bestimmten Frage bereitstellt:
 
 * **Welche Inhalte erzielen die besten Ergebnisse?**
 In diesem Bedienfeld erfahren Sie, welche Erlebnisse und welche Assets in diesen Erlebnissen Interaktion und Konversion fördern. Erlebnisse sind eine vollständige Web-Seite, die zu einem bestimmten Zeitpunkt erfasst wird. Ein Erlebnis kann sowohl Text als auch mehrere einzelne Bild-Assets enthalten. Ein Asset ist ein einzelnes Bild.
@@ -129,18 +133,18 @@ Eine [-](/help/analysis-workspace/visualizations/line.md)-Visualisierung, die de
 Eine [Freiformtabelle“, ](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) die wichtigsten Erlebnisschlüsselwörter basierend auf der ausgewählten Konversionsmetrik anzeigt.
 
 * **Wo werden Assets auf meiner Site angezeigt?**
-Ein Bedienfeld, das aus einer Freiformtabelle besteht, in der angegeben ist, wo die meisten Assets auf Ihrer Site angezeigt werden.
+Ein Bedienfeld, das aus einer Freiformtabelle besteht, in der angegeben ist, wo die am häufigsten angezeigten Assets auf Ihrer Site erscheinen.
 
   Das Bedienfeld besteht aus einer Visualisierung:
 
    * **Wo werden die am häufigsten angezeigten Assets angezeigt?**
-Sie können jede Asset-ID nach Dimensionen aufschlüsseln, damit Sie besser verstehen können, wo dieses Bild angezeigt wird.
+Sie können jedes Asset nach Dimensionen aufschlüsseln, damit Sie besser verstehen können, wo dieses Bild angezeigt wird.
 
-     In diesem Beispiel [Freiformtabelle](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) (einschließlich [Miniaturen](#thumbnails) und [Vorschauen](#previews)) wird [!UICONTROL *Asset-Wahrnehmungs-ID*] anstelle von [!UICONTROL *Asset-ID*] verwendet. Manchmal kann dasselbe Bild mit einer anderen Bild-URL auf Ihrer Site dupliziert werden. Mit [!UICONTROL _Attribut „Asset_] Wahrnehmung“ können Sie diese Duplikate unter einer einzigen ID gruppieren. Da sich Assets auf einer Seite ändern können, wird jedes Asset nach [!UICONTROL _Erlebnis-ID_] aufgeschlüsselt, um zu ermitteln, auf welcher Version dieser Seite das Asset erschienen ist.
+     Im Beispiel [Freiformtabelle](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) (einschließlich [Miniaturen](#thumbnails) und [Vorschauen](#previews)) wird **[!UICONTROL Asset Perception ID]** anstelle von [!UICONTROL Asset ID] verwendet. Manchmal kann dasselbe Bild mit einer anderen Bild-URL auf Ihrer Site dupliziert werden. Mit [!UICONTROL  Attribut „Asset Perception ID] können diese Duplikate unter einer einzigen ID gruppiert werden.
 
-     Sie können [!UICONTROL _Erlebnis-ID_] durch andere Dimensionen ersetzen, die Ihnen dabei helfen, den Speicherort eines Asset-Speicherorts auf Ihrer Site zu verstehen. Beispiel: [!UICONTROL _Seitenname_], [!UICONTROL _Seiten-URL_] oder [!UICONTROL _Site-Bereich_].
+     Da sich Assets auf einer Seite ändern können, werden die einzelnen Assets nach **[!UICONTROL Erlebnis-ID]** aufgeschlüsselt, um zu ermitteln, auf welcher Version der Seite das Asset angezeigt wurde. Sie können [!UICONTROL Erlebnis-ID] durch andere Dimensionen ersetzen, die Ihnen dabei helfen, den Speicherort eines Assets auf Ihrer Site zu verstehen. Beispiel: [!UICONTROL Seitenname], [!UICONTROL Seiten-URL] oder [!UICONTROL Site-Bereich].
 
-     Sie können auch [!UICONTROL _Perception ID_] durch [!UICONTROL _Asset ID_] austauschen, um aufzuzeichnen, wo bestimmte Bild-URLs referenziert werden.
+     Sie können [!UICONTROL Asset Perception ID] auch durch [!UICONTROL Asset ID] ersetzen, um aufzuzeichnen, wo bestimmte Bild-URLs referenziert werden.
 
 
 >[!MORELIKETHIS]

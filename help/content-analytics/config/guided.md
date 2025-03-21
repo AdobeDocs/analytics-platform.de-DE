@@ -7,19 +7,16 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 4aff664c-3cd9-4591-8122-6ebff10e4a76
-source-git-commit: 5eb9136107ed872639b02df2549a2f81dee83e76
+source-git-commit: 01459765d84a46d170c1619ffeae184957bbf839
 workflow-type: tm+mt
-source-wordcount: '3295'
+source-wordcount: '3324'
 ht-degree: 13%
 
 ---
 
 # Geführte Konfiguration für Content Analytics
 
->[!WARNING]
->
->Dieser Artikel ist eine vorläufige inoffizielle Entwurfsversion einer kommenden endgültigen Version und Teil der Inhaltsanalysedokumentation. Alle Inhalte unterliegen Änderungen und es können keinerlei rechtlichen Verpflichtungen aus der aktuellen Version dieses Artikels abgeleitet werden.
->
+{{draft-aca}}
 
 {{release-limited-testing}}
 
@@ -29,12 +26,11 @@ Mit der geführten Konfiguration können Sie Content Analytics schnell und einfa
 >
 >Pro Sandbox kann in Ihrer Organisation nur eine Inhaltsanalysekonfiguration verwendet werden.
 
-
 So greifen Sie auf die Content Analytics-Konfiguration zu
 
 * Wählen **[!UICONTROL Daten-Management]** > **[!UICONTROL Inhaltsanalyse]** aus dem Hauptmenü in Customer Journey Analytics.
 
-Im Bildschirm „Content Analytics-Konfiguration“ sehen Sie eine Tabelle der vorhandenen Content Analytics-Konfigurationen.
+Auf dem Bildschirm **[!UICONTROL Content Analytics]** Konfigurationen wird eine Tabelle der bestehenden Content Analytics-Konfigurationen angezeigt.
 
 ![Inhaltsanalysekonfigurationen](../assets/aca-configuration-table.png)
 Für jede Konfiguration stehen die folgenden Details zur Verfügung:
@@ -54,11 +50,11 @@ Auf dem Bildschirm Inhaltsanalysekonfiguration **[!UICONTROL Konfiguration]** k�
 
 So erstellen Sie eine neue Konfiguration:
 
-* Wählen Sie **[!UICONTROL Konfiguration erstellen]** aus. Diese Aktion öffnet den Assistenten für geführte Konfigurationen.
+* Wählen Sie **[!UICONTROL Konfiguration erstellen]** aus. Diese Aktion öffnet den [Konfigurationsassistenten](#guided-configuration-wizard).
 
 So bearbeiten Sie eine vorhandene Konfiguration:
 
-* Wählen Sie ![Mehr](/help/assets/icons/More.svg) und dann ![Bearbeiten](/help/assets/icons/Edit.svg) **[!UICONTROL Bearbeiten]** für eine vorhandene Content Analytics-Konfiguration aus. Diese Aktion öffnet den Assistenten für geführte Konfigurationen.
+* Wählen Sie ![Mehr](/help/assets/icons/More.svg) und dann ![Bearbeiten](/help/assets/icons/Edit.svg) **[!UICONTROL Bearbeiten]** für eine vorhandene Content Analytics-Konfiguration aus. Diese Aktion öffnet den [Konfigurationsassistenten](#guided-configuration-wizard).
 
 ## Assistent für geführte Konfigurationen
 
@@ -142,14 +138,17 @@ Ihre Konfiguration erfordert die Auswahl einer &quot;[&quot; ](/help/data-views/
 
    Wenn Sie eine vorhandene Konfiguration bearbeiten, zeigt die Liste nur Datenansichten an, die in der Sandbox verfügbar sind, die bereits mit der vorhandenen Konfiguration verknüpft ist.
 
+   Sie können die folgenden Aktionen ausführen:
+
    * Um nach einer bestimmten Datenansicht zu suchen, verwenden Sie das Feld ![Suche](/help/assets/icons/Search.svg).
-   * Um die Liste der verfügbaren Datenansichten zu filtern, wählen Sie ![Filter anzeigen](/help/assets/icons/Filter.svg) aus. Sie können die Liste nach Verbindung, Eigentümer und Sandbox filtern.<br/>Verwenden Sie ![Ausblenden](/help/assets/icons/Filter.svg) **[!UICONTROL Filter ausblenden]**, um den Filterbereich auszublenden.
+   * Um die Liste der verfügbaren Datenansichten zu filtern, wählen Sie ![Filter anzeigen](/help/assets/icons/Filter.svg) aus. Sie können die Liste nach [!UICONTROL Verbindung], &quot;[!UICONTROL &quot; ] &quot;[!UICONTROL &quot; ].<br/>Verwenden Sie ![Ausblenden](/help/assets/icons/Filter.svg) **[!UICONTROL Filter ausblenden]**, um den Filterbereich auszublenden.
    * Um zu definieren, welche Spalten in der Tabelle angezeigt werden sollen, wählen Sie ![Spalteneinstellungen](/help/assets/icons/ColumnSetting.svg) aus. Wählen Sie aus, welche Spalten im Dialogfeld **[!UICONTROL Tabelle anpassen]** angezeigt werden sollen, und wählen Sie **[!UICONTROL Anwenden]**, um die Änderungen anzuwenden.
 
+1. Wählen Sie ![SelectBox](/help/assets/icons/SelectBox.svg) die Datenansicht aus, die Sie verwenden möchten.
 1. Klicken Sie **[!UICONTROL Speichern]**, um die ausgewählte Datenansicht zu bestätigen. Wählen Sie **[!UICONTROL Abbrechen]** zum Abbrechen aus.
 
 
-Eine Datenansicht ist an eine Customer Journey Analytics ([) ](/help/connections/overview.md). Und eine Verbindung basiert auf einer Sandbox in Ihrer Organisation. Nach dem Speichern der Konfiguration wird **[!UICONTROL Sandbox]** basierend auf der ausgewählten Datenansicht automatisch mit dem Eigennamen der Sandbox ausgefüllt.
+In Customer Journey Analytics ist eine Datenansicht an eine Customer Journey Analytics ([) ](/help/connections/overview.md). Und eine Verbindung basiert auf einer Sandbox in Ihrer Organisation. Nachdem Sie die Konfiguration gespeichert haben **[!UICONTROL wird]** Sandbox) basierend auf der ausgewählten Datenansicht automatisch mit dem Namen der Sandbox ausgefüllt.
 
 
 ### Erlebniserfassung und -definition {#onboarding-experiences}
@@ -192,7 +191,7 @@ So schließen Sie Erlebnisse in eine neue oder nicht implementierte Konfiguratio
 ![Erfassung und Definition der Erlebniskonfiguration für Content Analytics](../assets/aca-configuration-experience.png)
 
 1. Aktivieren Sie **[!UICONTROL Erlebnisse einschließen]**.
-1. Optional. Geben Sie die Parameter an, wie Inhalte auf Ihrer Website gerendert werden. Bei den Parametern handelt es sich um keine oder mehrere Kombinationen aus einem **[!UICONTROL regulären Domänenausdruck]** und **[!UICONTROL Abfrageparametern]**.
+1. Optional. Geben Sie die Parameter an, wie Inhalte auf Ihrer Website gerendert werden sollen. Bei den Parametern handelt es sich um keine oder mehrere Kombinationen aus einem **[!UICONTROL regulären Domänenausdruck]** und **[!UICONTROL Abfrageparametern]**.
    1. Geben Sie einen **[!UICONTROL Regulären Ausdruck der Domain]** ein, z. B. `/^(?!.*\b(store|help|admin)\b)/`. Stellen Sie sicher, dass Sie reguläre Ausdrücke mithilfe von `/` mit Escape-Zeichen versehen.
    1. Geben Sie eine kommagetrennte Liste von **[!UICONTROL Abfrageparametern]** an, z. B. `outdoors, patio, kitchen`.
 1. Wählen **[!UICONTROL Entfernen]** aus, wenn Sie eine Kombination aus regulären Domain-Ausdrücken und Abfrageparametern entfernen möchten.
@@ -271,8 +270,9 @@ In einer neuen Konfiguration müssen Sie definieren, ob Sie eine vorhandene Tags
   ![Neues Tag zur Datenerfassung in Content Analytics](../assets/aca-configuration-datacollection-newtag.png)
 
    1. Wählen Sie **[!UICONTROL Neu erstellen]** aus.
-   2. Geben Sie einen **[!UICONTROL Tag-Namen]** an, z. B. `ACA Test`.
-   3. Geben Sie **[!UICONTROL Domains]** an, z. B. `example.com`.
+   1. Geben Sie einen **[!UICONTROL Tag-Namen]** an, z. B. `ACA Test for Documentation`.
+  <!--1. Specify **[!UICONTROL Domains]**, for example, `example.com`. -->
+   1. Wählen Sie **[!UICONTROL Hinzufügen]** aus.
 
 * Wenn Sie sich dafür entschieden haben, Erlebnisse einzubeziehen, geben Sie an, welche Seiten bei der Datenerfassung für Content Analytics ein- oder ausgeschlossen werden sollen.
 
@@ -317,20 +317,671 @@ Wenn Sie eine Konfiguration erstellt oder bearbeitet haben, sind die folgenden A
 * **[!UICONTROL Verwerfen]**: Alle Änderungen, die im Rahmen der Erstellung einer neuen Konfiguration oder der Bearbeitung einer vorhandenen Konfiguration vorgenommen wurden, werden verworfen.
 * **[!UICONTROL Für später speichern]**: Änderungen an einer neuen Konfiguration oder einer vorhandenen, noch nicht implementierten Konfiguration werden gespeichert. Sie können die Konfiguration zu einem späteren Zeitpunkt erneut aufrufen, um weitere Änderungen vorzunehmen, oder die Konfiguration implementieren.
 * **[!UICONTROL Implementieren]**: Einstellungen für oder Änderungen an einer neuen Konfiguration oder einer vorhandenen, noch nicht implementierten Konfiguration werden gespeichert und implementiert. Die Implementierung besteht aus:
+
+   * **[!UICONTROL Customer Journey Analytics]**-Konfiguration:
+      * Die ausgewählte Datenansicht wird aktualisiert und enthält jetzt die Dimension und Metriken der Inhaltsanalyse.
+      * Die mit der ausgewählten Datenansicht verknüpfte Verbindung wird geändert, um Content Analytics-Ereignisse und -Attributdatensätze einzuschließen.
+      * Workspace wird eine Berichtsvorlage für Content Analytics hinzugefügt.
+
++++ Details
+
+     Details werden für die folgenden Szenarien bereitgestellt:
+
+      * **Tags** Eigenschaft existiert **✓** oder nicht **✕**.
+      * **Web SDK** Erweiterung für die Tags-Eigenschaft ist **✓** vorhanden **✕**.
+      * Adobe **Content Analytics**-Erweiterung für die Tag-Eigenschaft ist **✓** vorhanden oder **✕** nicht vorhanden.
+
+     <table style="table-layout:fixed">
+      <tr>
+        <th></th>
+        <th colspan="4">Szenarien:</th>
+      </tr>
+      <tr>
+        <th>
+          <strong>Wenn</strong>
+        </th>
+        <th>
+          <strong>✓ Tags<br>✓ Web SDK<br/>✓ Content Analytics</strong>
+        </th>
+        <th>
+          <strong>✓ Tags<br>✓ Web SDK<br/>✕ Content Analytics</strong>
+        </th>
+        <th>
+          <strong>✓Tags<br>✕ Web SDK<br/>✕ Content Analytics</strong>
+        </th>
+        <th>
+          <strong>✕ Tags<br>✕ Web SDK<br/>✕ Content Analytics</strong>
+        </th>
+      </tr>
+      <tbody>
+        <tr>
+          <td>Berichtsvorlage</td>
+          <td colspan="4">Eine Berichtsvorlage ist verfügbar</td>
+        </tr>
+        <tr>
+          <td>Datenansicht</td>
+          <td colspan="4">Geändert/erstellt, um ACA-Dimensionen und -Metriken zu erhalten</td>
+        </tr>
+        <tr>
+          <td>Verbindung</td>
+          <td colspan="4">Geändert, um ACA-Datensätze einzuschließen (ACA-Ereignisse, Asset-Attribute, Erlebnisattribute)</td>
+        </tr>
+      </tbody>
+    </table>
+
++++
+
    * **[!UICONTROL Adobe Experience Platform]**-Konfiguration:
       * Die Erstellung von Schemas zur Modellierung von Content-Analytics-Ereignissen, Asset-Attributen und (falls konfiguriert) Erlebnisattributen.
       * Die Erstellung von Datensätzen zur Erfassung von Content-Analytics-Ereignissen, Asset-Attributen und (falls konfiguriert) Erlebnisattributen.
       * Die Erstellung eines Datenflusses, der den Feature Service verwendet, um Inhaltsattribute aus Content Analytics-Ereignissen zu generieren und zu aktualisieren.
+
++++ Details
+
+     Details werden für die folgenden Szenarien bereitgestellt:
+
+      * **Tags** Eigenschaft existiert **✓** oder nicht **✕**.
+      * **Web SDK** Erweiterung für die Tags-Eigenschaft ist **✓** vorhanden **✕**.
+      * Adobe **Content Analytics**-Erweiterung für die Tag-Eigenschaft ist **✓** vorhanden oder **✕** nicht vorhanden.
+
+     <table style="table-layout:fixed">
+      <tr>
+        <th></th>
+        <th colspan="4">Szenarien:</th>
+      </tr>
+      <tr>
+        <th>
+          <strong>Wenn</strong>
+        </th>
+        <th>
+          <strong>✓ Tags<br>✓ Web SDK<br/>✓ Content Analytics</strong>
+        </th>
+        <th>
+          <strong>✓ Tags<br>✓ Web SDK<br/>✕ Content Analytics</strong>
+        </th>
+        <th>
+          <strong>✓Tags<br>✕ Web SDK<br/>✕ Content Analytics</strong>
+        </th>
+        <th>
+          <strong>✕ Tags<br>✕ Web SDK<br/>✕ Content Analytics</strong>
+        </th>
+      </tr>
+      <tbody>
+        <tr>
+          <td colspan="5"><strong><br/>Content Analytics-Ereignisschema</strong></td>
+        </tr>
+        <tr>
+          <td style="margin-left: 160.0px;">Name</td>
+          <td>Content Analytics-Ereignisse</td>
+          <td>Content Analytics-Ereignisse</td>
+          <td>Content Analytics-Ereignisse</td>
+          <td>Content Analytics-Ereignisse</td>
+        </tr>
+        <tr>
+          <td>Beschreibung</td>
+          <td><i>vorbestimmte Nachfrist</i></td>
+          <td><i>vorbestimmte Nachfrist</i></td>
+          <td><i>vorbestimmte Nachfrist</i></td>
+          <td><i>vorbestimmte Nachfrist</i></td>
+        </tr>
+        <tr>
+          <td>Profil aktiviert</td>
+          <td>Nein</td>
+          <td>Nein</td>
+          <td>Nein</td>
+          <td>Nein</td>
+        </tr>
+        <tr>
+          <td colspan="5"><strong><br/>Content Analytics-Ereignisdatensatz</strong></td>
+        </tr>
+        <tr>
+          <td>Name</td>
+          <td>Content Analytics-Ereignisse</td>
+          <td>Content Analytics-Ereignisse</td>
+          <td>Content Analytics-Ereignisse</td>
+          <td>Content Analytics-Ereignisse</td>
+        </tr>
+        <tr>
+          <td>Schema</td>
+          <td>Content Analytics-Ereignis</td>
+          <td>Content Analytics-Ereignis</td>
+          <td>Content Analytics-Ereignis</td>
+          <td>Content Analytics-Ereignis</td>
+        </tr>
+        <tr>
+          <td>Beschreibung</td>
+          <td><i>vorbestimmte Nachfrist</i></td>
+          <td><i>vorbestimmte Nachfrist</i></td>
+          <td><i>vorbestimmte Nachfrist</i></td>
+          <td><i>vorbestimmte Nachfrist</i></td>
+        </tr>
+        <tr>
+          <td>Tags</td>
+          <td><i>Leer?</i></td>
+          <td><i>Leer?</i></td>
+          <td><i>Leer?</i></td>
+          <td><i>Leer?</i></td>
+        </tr>
+        <tr>
+          <td>Systemdatensatz</td>
+          <td>?</td>
+          <td>?</td>
+          <td>?</td>
+          <td>?</td>
+        </tr>
+        <tr>
+          <td>Profil aktiviert</td>
+          <td>Nein</td>
+          <td>Nein</td>
+          <td>Nein</td>
+          <td>Nein</td>
+        </tr>
+        <tr>
+          <td>Data Governance (DULE-Kennzeichnungen)</td>
+          <td>?</td>
+          <td>?</td>
+          <td>?</td>
+          <td>?</td>
+        </tr>
+        <tr>
+          <td colspan="5"><strong><br/>Content Analytics Asset-Attributschema</strong></td>
+        </tr>
+        <tr>
+          <td>Name</td>
+          <td>Content Analytics-Asset-Attribute</td>
+          <td>Content Analytics-Asset-Attribute</td>
+          <td>Content Analytics-Asset-Attribute</td>
+          <td>Content Analytics-Asset-Attribute</td>
+        </tr>
+        <tr>
+          <td>Beschreibung</td>
+          <td><i>vorbestimmte Nachfrist</i></td>
+          <td><i>vorbestimmte Nachfrist</i></td>
+          <td><i>vorbestimmte Nachfrist</i></td>
+          <td><i>vorbestimmte Nachfrist</i></td>
+        </tr>
+        <tr>
+          <td>Profil aktiviert</td>
+          <td>Nein</td>
+          <td>Nein</td>
+          <td>Nein</td>
+          <td>Nein</td>
+        </tr>
+        <tr>
+          <td colspan="5"><strong><br/>Content Analytics Assets-Attributdatensatz</strong></td>
+        </tr>
+        <tr>
+          <td>Name</td>
+          <td>Content Analytics-Asset-Attribute</td>
+          <td>Content Analytics-Asset-Attribute</td>
+          <td>Content Analytics-Asset-Attribute</td>
+          <td>Content Analytics-Asset-Attribute</td>
+        </tr>
+        <tr>
+          <td>Schema</td>
+          <td>Content Analytics-Asset-Attribute</td>
+          <td>Content Analytics-Asset-Attribute</td>
+          <td>Content Analytics-Asset-Attribute</td>
+          <td>Content Analytics-Asset-Attribute</td>
+        </tr>
+        <tr>
+          <td>Beschreibung</td>
+          <td><i>vorbestimmte Nachfrist</i></td>
+          <td><i>vorbestimmte Nachfrist</i></td>
+          <td><i>vorbestimmte Nachfrist</i></td>
+          <td><i>vorbestimmte Nachfrist</i></td>
+        </tr>
+        <tr>
+          <td>Tags</td>
+          <td><i>Leer?</i></td>
+          <td><i>Leer?</i></td>
+          <td><i>Leer?</i></td>
+          <td><i>Leer?</i></td>
+        </tr>
+        <tr>
+          <td>Systemdatensatz</td>
+          <td>?</td>
+          <td>?</td>
+          <td>?</td>
+          <td>?</td>
+        </tr>
+        <tr>
+          <td>Profil aktiviert</td>
+          <td>Nein</td>
+          <td>Nein</td>
+          <td>Nein</td>
+          <td>Nein</td>
+        </tr>
+        <tr>
+          <td>Data Governance (DULE-Kennzeichnungen)</td>
+          <td>?</td>
+          <td>?</td>
+          <td>?</td>
+          <td>?</td>
+        </tr>
+        <tr>
+          <td colspan="5"><strong><br/>Content Analytics Experience Attributes-Schema</strong></td>
+        </tr>
+        <tr>
+          <td>Name</td>
+          <td>Content Analytics Experience-Attribute</td>
+          <td>Content Analytics Experience-Attribute</td>
+          <td>Content Analytics Experience-Attribute</td>
+          <td>Content Analytics Experience-Attribute</td>
+        </tr>
+        <tr>
+          <td>Beschreibung</td>
+          <td><i>vorbestimmte Nachfrist</i></td>
+          <td><i>vorbestimmte Nachfrist</i></td>
+          <td><i>vorbestimmte Nachfrist</i></td>
+          <td><i>vorbestimmte Nachfrist</i></td>
+        </tr>
+        <tr>
+          <td>Profil aktiviert</td>
+          <td>Nein</td>
+          <td>Nein</td>
+          <td>Nein</td>
+          <td>Nein</td>
+        </tr>
+        <tr>
+          <td colspan="5"><strong><br/>Content Analytics Experience Attributes-Datensatz</strong></td>
+        </tr>
+        <tr>
+          <td>Name</td>
+          <td>Content Analytics Experience-Attribute</td>
+          <td>Content Analytics Experience-Attribute</td>
+          <td>Content Analytics Experience-Attribute</td>
+          <td>Content Analytics Experience-Attribute</td>
+        </tr>
+        <tr>
+          <td>Schema</td>
+          <td>Content Analytics Experience-Attribute</td>
+          <td>Content Analytics Experience-Attribute</td>
+          <td>Content Analytics Experience-Attribute</td>
+          <td>Content Analytics Experience-Attribute</td>
+        </tr>
+        <tr>
+          <td>Beschreibung</td>
+          <td><i>vorbestimmte Nachfrist</i></td>
+          <td><i>vorbestimmte Nachfrist</i></td>
+          <td><i>vorbestimmte Nachfrist</i></td>
+          <td><i>vorbestimmte Nachfrist</i></td>
+        </tr>
+        <tr>
+          <td>Tags</td>
+          <td><i>Leer?</i></td>
+          <td><i>Leer?</i></td>
+          <td><i>Leer?</i></td>
+          <td><i>Leer?</i></td>
+        </tr>
+        <tr>
+          <td>Systemdatensatz</td>
+          <td>?</td>
+          <td>?</td>
+          <td>?</td>
+          <td>?</td>
+        </tr>
+        <tr>
+          <td>Profil aktiviert</td>
+          <td>Nein</td>
+          <td>Nein</td>
+          <td>Nein</td>
+          <td>Nein</td>
+        </tr>
+        <tr>
+          <td>Data Governance (DULE-Kennzeichnungen)</td>
+          <td>?</td>
+          <td>?</td>
+          <td>?</td>
+          <td>?</td>
+        </tr>
+      </tbody>
+    </table>
+
++++
+
    * **[!UICONTROL Datenerfassung]** Konfiguration:
       * Die neue oder vorhandene Tags-Eigenschaft ist so konfiguriert, dass sie die Datenerfassung in Content Analytics unterstützt. Diese Konfiguration beinhaltet die Einbindung der Adobe Content Analytics-Erweiterung für Tags.
       * Ein Datenstrom wird für Content Analytics-Ereignisse erstellt.
       * Die Adobe Content Analytics-Erweiterung ist so konfiguriert, dass Inhaltsanalyseereignisse an den Datenstrom für Inhaltsanalysen gesendet werden.
       * Wenn die Web-SDK nicht für die Tags-Eigenschaft konfiguriert ist, wird eine neue Web-SDK-Konfiguration erstellt, um nur Content Analytics-Ereignisse zu senden.
       * Wenn die Web-SDK für diese Tags-Eigenschaft konfiguriert ist, werden an der vorhandenen Web-SDK-Konfiguration keine Änderungen vorgenommen.
-   * **[!UICONTROL Customer Journey Analytics]**-Konfiguration:
-      * Die ausgewählte Datenansicht wird aktualisiert und enthält jetzt die Dimension und Metriken der Inhaltsanalyse.
-      * Die mit der ausgewählten Datenansicht verknüpfte Verbindung wird geändert, um Content Analytics-Ereignisse und -Attributdatensätze einzuschließen.
-      * Workspace wird eine Berichtsvorlage für Content Analytics hinzugefügt.
+
++++ Details
+
+     Details werden für die folgenden Szenarien bereitgestellt:
+
+      * **Tags** Eigenschaft existiert **✓** oder nicht **✕**.
+      * **Web SDK** Erweiterung für die Tags-Eigenschaft ist **✓** vorhanden **✕**.
+      * Adobe **Content Analytics**-Erweiterung für die Tag-Eigenschaft ist **✓** vorhanden oder **✕** nicht vorhanden.
+
+     <table style="table-layout:fixed">
+      <tr>
+        <th></th>
+        <th colspan="4">Szenarien:</th>
+      </tr>
+      <tr>
+        <th>
+          <strong>Wenn</strong>
+        </th>
+        <th>
+          <strong>✓ Tags<br>✓ Web SDK<br/>✓ Content Analytics</strong>
+        </th>
+        <th>
+          <strong>✓ Tags<br>✓ Web SDK<br/>✕ Content Analytics</strong>
+        </th>
+        <th>
+          <strong>✓Tags<br>✕ Web SDK<br/>✕ Content Analytics</strong>
+        </th>
+        <th>
+          <strong>✕ Tags<br>✕ Web SDK<br/>✕ Content Analytics</strong>
+        </th>
+      </tr>
+      <tbody>
+        <tr>
+          <td colspan="5"><strong><br/>Datenstrom</strong></td>
+        </tr>
+        <tr>
+          <td>Name</td>
+          <td><i>vorhandener Wert</i></td>
+          <td>Inhaltsanalyse</td>
+          <td>Inhaltsanalyse</td>
+          <td>Inhaltsanalyse</td>
+        </tr>
+        <tr>
+          <td>Beschreibung</td>
+          <td><i>vorhandener Wert</i></td>
+          <td><i>vorher ausgemacht</i></td>
+          <td><i>vorher ausgemacht</i></td>
+          <td><i>vorher ausgemacht</i></td>
+        </tr>
+        <tr>
+          <td>Zuordnungsschema</td>
+          <td><i>vorhandener Wert</i></td>
+          <td><i>vorher ausgemacht</i></td>
+          <td><i>vorher ausgemacht</i></td>
+          <td><i>vorher ausgemacht</i></td>
+        </tr>
+        <tr>
+          <td>Geolokalisierung und Netzwerksuche</td>
+          <td><i>Vorhandene Werte</i></td>
+          <td>Alle Optionen ausgeschaltet</td>
+          <td>Alle Optionen ausgeschaltet</td>
+          <td>Alle Optionen ausgeschaltet</td>
+        </tr>
+        <tr>
+          <td>Gerätesuche</td>
+          <td><i>vorhandener Wert</i></td>
+          <td>Keine Geräteinformationen erfassen</td>
+          <td>Keine Geräteinformationen erfassen</td>
+          <td>Keine Geräteinformationen erfassen</td>
+        </tr>
+        <tr>
+          <td>IP-Verschleierung</td>
+          <td><i>vorhandener Wert</i></td>
+          <td>Keine</td>
+          <td>Keine</td>
+          <td>Keine</td>
+        </tr>
+        <tr>
+          <td>First-Party-ID-Cookie</td>
+          <td><i>vorhandener Wert</i></td>
+          <td>Aus</td>
+          <td>Aus</td>
+          <td>Aus</td>
+        </tr>
+        <tr>
+          <td>Synchronisierung der Drittanbieter-ID</td>
+          <td><i>vorhandener Wert</i></td>
+          <td>Aus</td>
+          <td>Aus</td>
+          <td>Aus</td>
+        </tr>
+        <tr>
+          <td>Zugriffstyp</td>
+          <td><i>vorhandener Wert</i></td>
+          <td>Gemischte Authentifizierung</td>
+          <td>Gemischte Authentifizierung</td>
+          <td>Gemischte Authentifizierung</td>
+        </tr>
+        <tr>
+          <td>Media Analytics</td>
+          <td><i>vorhandener Wert</i></td>
+          <td>Aus</td>
+          <td>Aus</td>
+          <td>Aus</td>
+        </tr>
+            <tr>
+          <td>Bot-Erkennung</td>
+          <td><i>vorhandener Wert</i></td>
+          <td>Aus</td>
+          <td>Aus</td>
+          <td>Aus</td>
+        </tr>
+        <tr>
+          <td>Zuordnen</td>
+          <td><i>vorhandener Wert</i></td>
+          <td><i>Benutzer angegeben</i></td>
+          <td><i>Benutzer angegeben</i></td>
+          <td><i>Benutzer angegeben</i></td>
+        </tr>
+        <tr>
+          <td colspan="5"><strong><br/>Tags-Eigenschaft</strong><br/>Eine vorhandene Eigenschaft oder neue Eigenschaft. Name und Domain werden vom Benutzer angegeben.</td>
+        </tr>
+        <tr>
+          <td>Name</td>
+          <td><i>vorhandener Wert</i></td>
+          <td><i>vorhandener Wert</i></td>
+          <td><i>vorhandener Wert</i></td>
+          <td><i>vom Benutzer angegeben</i> (Standard: "Content Analytics„)</td>
+        </tr>
+        <tr>
+          <td>Domain</td>
+          <td><i>vorhandener Wert</i></td>
+          <td><i>vorhandener Wert</i></td>
+          <td><i>vorhandener Wert</i></td>
+          <td ><i>vorher ausgemacht</i></td>
+        </tr>
+        <tr>
+          <td colspan="5"><strong><br/>Tag-Bibliothek</strong></td>
+        </tr>
+        <tr>
+          <td>Name</td>
+          <td><i>vorhandener Wert</i></td>
+          <td><i>vorhandener Wert</i></td>
+          <td><i>vorhandener Wert</i></td>
+          <td>
+            <br/>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="5"><strong><br/>Web SDK-Erweiterung</strong></td>
+        </tr>
+        <tr>
+          <td>Name</td>
+          <td><i>vorhandener Wert</i></td>
+          <td><i>vorhandener Wert</i></td>
+          <td>Content Analytics - Web-SDK</td>
+          <td>Content Analytics - Web-SDK</td>
+        </tr>
+        <tr>
+          <td>IMS-Organisation</td>
+          <td><i>Automatisch befüllt</i></td>
+          <td><i>Automatisch befüllt</i></td>
+          <td><i>Automatisch befüllt</i></td>
+          <td><i>Automatisch befüllt</i></td>
+        </tr>
+        <tr>
+          <td>Edge-Domäne</td>
+          <td><i>vorhandener Wert<br/> Möglicherweise ist eine Aktualisierung erforderlich, um der AppMeasurement-Implementierung zu entsprechen</i></td>
+          <td><i>vorhandener Wert<br/> Möglicherweise ist eine Aktualisierung erforderlich, um der AppMeasurement-Implementierung zu entsprechen</i></td>
+          <td>
+            <a href="http://edge.adobedc.net">edge.adobedc.net</a>
+          </td>
+          <td>
+            <a href="http://edge.adobedc.net">edge.adobedc.net</a>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="5"><strong><br/>Datenströme</strong></td>
+        </tr>
+        <tr>
+          <td>Produktion</td>
+          <td><i>Vorhandene Wert<br/>Datenstrom-Überschreibung, die zum Senden an einen anderen Datenstrom verwendet wird</i></td>
+          <td><i>Vorhandene Wert<br/>Datenstrom-Überschreibung, die zum Senden an einen anderen Datenstrom verwendet wird</i></td>
+          <td><i>Benutzer angegeben</i>?</td>
+          <td><i>Benutzer angegeben</i>?</td>
+        </tr>
+        <tr>
+          <td>Staging</td>
+          <td><i>Vorhandene Wert<br/>Datenstrom-Überschreibung, die zum Senden an einen anderen Datenstrom verwendet wird</i></td>
+          <td><i>Vorhandene Wert<br/>Datenstrom-Überschreibung, die zum Senden an einen anderen Datenstrom verwendet wird</i></td>
+          <td><i>Benutzer angegeben</i>?</td>
+          <td><i>Benutzer angegeben</i>?</td>
+        </tr>
+        <tr>
+          <td>Entwicklung</td>
+          <td><i>Vorhandene Wert<br/>Datenstrom-Überschreibung, die zum Senden an einen anderen Datenstrom verwendet wird</i></td>
+          <td><i>Vorhandene Wert<br/>Datenstrom-Überschreibung, die zum Senden an einen anderen Datenstrom verwendet wird</i></td>
+          <td><i>Benutzer angegeben</i>?</td>
+          <td><i>Benutzer angegeben</i>?</td>
+        </tr>
+        <tr>
+          <td>Datenschutz   </td>
+          <td><i>vorhandener Wert</i></td>
+          <td><i>vorhandener Wert</i></td>
+          <td>In?</td>
+          <td>In?</td>
+        </tr>
+        <tr>
+          <td colspan="5"><strong><br/>Identität</strong></td>
+        </tr>
+        <tr>
+          <td>Migrieren von ECID</td>
+          <td><i>vorhandener Wert</i></td>
+          <td><i>vorhandener Wert</i></td>
+          <td>Geprüft</td>
+          <td>Geprüft</td>
+        </tr>
+        <tr>
+          <td>Verwenden von Drittanbieter-Cookies</td>
+          <td><i>vorhandener Wert</i></td>
+          <td><i>vorhandener Wert</i></td>
+          <td>Geprüft</td>
+          <td>Geprüft</td>
+        </tr>
+        <tr>
+          <td colspan="5"><strong><br/>Personalisierung</strong></td>
+        </tr>
+        <tr>
+          <td>Migrieren von Target von at.js zu Web SDK</td>
+          <td><i>vorhandener Wert</i></td>
+          <td><i>vorhandener Wert</i></td>
+          <td>ungebremst</td>
+          <td>ungebremst</td>
+        </tr>
+        <tr>
+          <td>Personalisierungsspeicher aktivieren</td>
+          <td><i>vorhandener Wert</i></td>
+          <td><i>vorhandener Wert</i></td>
+          <td>ungebremst</td>
+          <td>ungebremst</td>
+        </tr>
+        <tr>
+          <td>Automatische Klick-Sammlung für Adobe Journey Optimizer</td>
+          <td><i>vorhandener Wert</i></td>
+          <td><i>vorhandener Wert</i></td>
+          <td>Immer</td>
+          <td>Immer</td>
+        </tr>
+        <tr>
+          <td>Automatische Klick-Sammlung für Adobe Target</td>
+          <td><i>vorhandener Wert</i></td>
+          <td><i>vorhandener Wert</i></td>
+          <td>Nie</td>
+          <td>Nie</td>
+        </tr>
+        <tr>
+          <td colspan="5"><strong><br/>Datenerfassung</strong></td>
+        </tr>
+        <tr>
+          <td>Erfassen interner Link-Klicks</td>
+          <td><i>vorhandener Wert</i></td>
+          <td><i>vorhandener Wert</i></td>
+          <td>ungebremst</td>
+          <td>ungebremst</td>
+        </tr>
+        <tr>
+          <td>Erfassen externer Link-Klicks</td>
+          <td><i>vorhandener Wert</i></td>
+          <td><i>vorhandener Wert</i></td>
+          <td>ungebremst</td>
+          <td>ungebremst</td>
+        </tr>
+        <tr>
+          <td>Download-Links und Klicks erfassen</td>
+          <td><i>vorhandener Wert</i></td>
+          <td><i>vorhandener Wert</i></td>
+          <td>ungebremst</td>
+          <td>ungebremst</td>
+        </tr>
+        <tr>
+          <td>Beim Senden von Ereignisdaten Folgendes automatisch einschließen</td>
+          <td><i>vorhandener Wert</i></td>
+          <td><i>vorhandener Wert</i></td>
+          <td>Alle standardmäßigen Kontextinformationen</td>
+          <td>Alle standardmäßigen Kontextinformationen</td>
+        </tr>
+        <tr>
+          <td>Streaming-Medien</td>
+          <td><i>Vorhandene Werte</i></td>
+          <td><i>Vorhandene Werte</i></td>
+          <td>Leere Werte</td>
+          <td>Leere Werte</td>
+        </tr>
+        <tr>
+          <td>Überschreibungen der Datenstromkonfiguration</td>
+          <td><i>vorhandener Wert</i></td>
+          <td><i>vorhandener Wert</i></td>
+          <td>Konfiguration des Datenstroms abgleichen</td>
+          <td>Konfiguration des Datenstroms abgleichen</td>
+        </tr>
+        <tr>
+          <td>Erweiterte Einstellungen - Edge-Basispfad</td>
+          <td><i>vorhandener Wert</i></td>
+          <td><i>vorhandener Wert</i></td>
+          <td>ee</td>
+          <td>ee</td>
+        </tr>
+        <tr>
+          <td colspan="5"><strong><br/>Content Analytics-Erweiterung</strong></td>
+        </tr>
+        <tr>
+          <td>Datenströme</td>
+          <td><i>vorhandener Wert</i></td>
+          <td><i>vorher ausgemacht</i></td>
+          <td><i>vorher ausgemacht</i></td>
+          <td><i>vorher ausgemacht</i></td>
+        </tr>
+        <tr>
+          <td>Erlebniserfassung und -definition</td>
+          <td><i>vorhandener Wert</i></td>
+          <td><i>Benutzer angegeben</i></td>
+          <td><i>Benutzer angegeben</i></td>
+          <td><i>Benutzer angegeben</i></td>
+        </tr>
+        <tr>
+          <td>Ereignisfilterung</td>
+          <td><i>vorhandener Wert</i></td>
+          <td><i>Benutzer angegeben</i></td>
+          <td><i>Benutzer angegeben</i></td>
+          <td><i>Benutzer angegeben</i></td>
+        </tr>
+      </tbody>
+    </table>
+
++++
+
 * **[!UICONTROL Speichern]**: Änderungen an einer implementierten Konfiguration werden gespeichert und die Implementierung wird aktualisiert.
 * **[!UICONTROL Beenden]**. Beendet die geführte Konfiguration. Alle Änderungen an einer implementierten Konfiguration werden verworfen.
 
@@ -340,26 +991,28 @@ Wenn Sie eine Konfiguration erstellt oder bearbeitet haben, sind die folgenden A
 Um Ihre Content Analytics-Konfiguration zu aktivieren, müssen Sie die Tags-Eigenschaft veröffentlichen, die nach der Auswahl von **[!UICONTROL Implementieren]** [Manuell](manual.md) erstellt wird.
 
 
-## Onboarding-Einstellungen und -Konfigurationen
 
-Customer Journey Analytics Experience Platform In den folgenden Abschnitten werden die Einstellungen und Konfigurationen beschrieben, die im Rahmen der Implementierung einer Content Analytics](#customer-journey-analytics-cja)Konfiguration auf [](#experience-platform-aep), {[}und ](#data-collection-dc) angewendet werden.[
+<!--
+## Onboarding settings and configurations
 
-Details werden für die folgenden Szenarien bereitgestellt:
+The following sections outline the settings and configurations applied to [Customer Journey Analytics](#customer-journey-analytics-cja), [Experience Platform](#experience-platform-aep) and [Data Collection](#data-collection-dc) as part of the implementation of a Content Analytics configuration.
 
-* **Tags** Eigenschaft existiert **✓** oder nicht **✕**.
-* **Web SDK** Erweiterung für die Tags-Eigenschaft ist **✓** vorhanden **✕**.
-* Adobe **Content Analytics**-Erweiterung für die Tag-Eigenschaft ist **✓** vorhanden oder **✕** nicht vorhanden.
+Details are provided for the following scenarios:
+
+* **Tags** property exists **✓** or does not exist **✕**.
+* **Web SDK** extension for the Tags property exists **✓** or does not exist **✕**.
+* Adobe **Content Analytics** extension for the Tag property exists **✓** or does not exist **✕**.
 
 ### Customer Journey Analytics {#cja}
 
 <table style="table-layout:fixed">
   <tr>
     <th></th>
-    <th colspan="4">Szenarien:</th>
+    <th colspan="4">Scenarios:</th>
   </tr>
   <tr>
     <th>
-      <strong>Wenn</strong>
+      <strong>Setting</strong>
     </th>
     <th>
       <strong>✓ Tags<br>✓ Web SDK<br/>✓ Content Analytics</strong>
@@ -376,16 +1029,16 @@ Details werden für die folgenden Szenarien bereitgestellt:
   </tr>
   <tbody>
     <tr>
-      <td>Berichtsvorlage</td>
-      <td colspan="4">Eine Berichtsvorlage ist verfügbar</td>
+      <td>Report Template</td>
+      <td colspan="4">A report template is available</td>
     </tr>
     <tr>
-      <td>Datenansicht</td>
-      <td colspan="4">Geändert/erstellt, um ACA-Dimensionen und -Metriken zu erhalten</td>
+      <td>Data view</td>
+      <td colspan="4">Modified/Created to have ACA dimensions and metrics</td>
     </tr>
     <tr>
-      <td>Verbindung</td>
-      <td colspan="4">Geändert, um ACA-Datensätze einzuschließen (ACA-Ereignisse, Asset-Attribute, Erlebnisattribute)</td>
+      <td>Connection</td>
+      <td colspan="4">Modified to include ACA datasets (ACA events, Asset attributes, Experience Attribute)</td>
     </tr>
   </tbody>
 </table>
@@ -395,11 +1048,11 @@ Details werden für die folgenden Szenarien bereitgestellt:
 <table style="table-layout:fixed">
   <tr>
     <th></th>
-    <th colspan="4">Szenarien:</th>
+    <th colspan="4">Scenarios:</th>
   </tr>
   <tr>
     <th>
-      <strong>Wenn</strong>
+      <strong>Setting</strong>
     </th>
     <th>
       <strong>✓ Tags<br>✓ Web SDK<br/>✓ Content Analytics</strong>
@@ -416,228 +1069,228 @@ Details werden für die folgenden Szenarien bereitgestellt:
   </tr>
   <tbody>
     <tr>
-      <td colspan="5"><strong><br/>Content Analytics-Ereignisschema</strong></td>
+      <td colspan="5"><strong><br/>Content Analytics Events schema</strong></td>
     </tr>
     <tr>
       <td style="margin-left: 160.0px;">Name</td>
-      <td>Content Analytics-Ereignisse</td>
-      <td>Content Analytics-Ereignisse</td>
-      <td>Content Analytics-Ereignisse</td>
-      <td>Content Analytics-Ereignisse</td>
+      <td>Content Analytics Events</td>
+      <td>Content Analytics Events</td>
+      <td>Content Analytics Events</td>
+      <td>Content Analytics Events</td>
     </tr>
     <tr>
-      <td>Beschreibung</td>
-      <td><i>vorbestimmte Nachfrist</i></td>
-      <td><i>vorbestimmte Nachfrist</i></td>
-      <td><i>vorbestimmte Nachfrist</i></td>
-      <td><i>vorbestimmte Nachfrist</i></td>
+      <td>Description</td>
+      <td><i>predetermined tbd</i></td>
+      <td><i>predetermined tbd</i></td>
+      <td><i>predetermined tbd</i></td>
+      <td><i>predetermined tbd</i></td>
     </tr>
     <tr>
-      <td>Profil aktiviert</td>
-      <td>Nein</td>
-      <td>Nein</td>
-      <td>Nein</td>
-      <td>Nein</td>
+      <td>Profile enabled</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
     </tr>
     <tr>
-      <td colspan="5"><strong><br/>Content Analytics-Ereignisdatensatz</strong></td>
+      <td colspan="5"><strong><br/>Content Analytics Events dataset</strong></td>
     </tr>
     <tr>
       <td>Name</td>
-      <td>Content Analytics-Ereignisse</td>
-      <td>Content Analytics-Ereignisse</td>
-      <td>Content Analytics-Ereignisse</td>
-      <td>Content Analytics-Ereignisse</td>
+      <td>Content Analytics Events</td>
+      <td>Content Analytics Events</td>
+      <td>Content Analytics Events</td>
+      <td>Content Analytics Events</td>
     </tr>
     <tr>
       <td>Schema</td>
-      <td>Content Analytics-Ereignis</td>
-      <td>Content Analytics-Ereignis</td>
-      <td>Content Analytics-Ereignis</td>
-      <td>Content Analytics-Ereignis</td>
+      <td>Content Analytics Event</td>
+      <td>Content Analytics Event</td>
+      <td>Content Analytics Event</td>
+      <td>Content Analytics Event</td>
     </tr>
     <tr>
-      <td>Beschreibung</td>
-      <td><i>vorbestimmte Nachfrist</i></td>
-      <td><i>vorbestimmte Nachfrist</i></td>
-      <td><i>vorbestimmte Nachfrist</i></td>
-      <td><i>vorbestimmte Nachfrist</i></td>
+      <td>Description</td>
+      <td><i>predetermined tbd</i></td>
+      <td><i>predetermined tbd</i></td>
+      <td><i>predetermined tbd</i></td>
+      <td><i>predetermined tbd</i></td>
     </tr>
     <tr>
       <td>Tags</td>
-      <td><i>Leer?</i></td>
-      <td><i>Leer?</i></td>
-      <td><i>Leer?</i></td>
-      <td><i>Leer?</i></td>
+      <td><i>empty?</i></td>
+      <td><i>empty?</i></td>
+      <td><i>empty?</i></td>
+      <td><i>empty?</i></td>
     </tr>
     <tr>
-      <td>Systemdatensatz</td>
-      <td>?</td>
-      <td>?</td>
-      <td>?</td>
-      <td>?</td>
-    </tr>
-    <tr>
-      <td>Profil aktiviert</td>
-      <td>Nein</td>
-      <td>Nein</td>
-      <td>Nein</td>
-      <td>Nein</td>
-    </tr>
-    <tr>
-      <td>Data Governance (DULE-Kennzeichnungen)</td>
+      <td>System dataset</td>
       <td>?</td>
       <td>?</td>
       <td>?</td>
       <td>?</td>
     </tr>
     <tr>
-      <td colspan="5"><strong><br/>Content Analytics Asset-Attributschema</strong></td>
+      <td>Profile enabled</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>Data governance (DULE labels)</td>
+      <td>?</td>
+      <td>?</td>
+      <td>?</td>
+      <td>?</td>
+    </tr>
+    <tr>
+      <td colspan="5"><strong><br/>Content Analytics Asset Attributes schema</strong></td>
     </tr>
     <tr>
       <td>Name</td>
-      <td>Content Analytics-Asset-Attribute</td>
-      <td>Content Analytics-Asset-Attribute</td>
-      <td>Content Analytics-Asset-Attribute</td>
-      <td>Content Analytics-Asset-Attribute</td>
+      <td>Content Analytics Asset Attributes</td>
+      <td>Content Analytics Asset Attributes</td>
+      <td>Content Analytics Asset Attributes</td>
+      <td>Content Analytics Asset Attributes</td>
     </tr>
     <tr>
-      <td>Beschreibung</td>
-      <td><i>vorbestimmte Nachfrist</i></td>
-      <td><i>vorbestimmte Nachfrist</i></td>
-      <td><i>vorbestimmte Nachfrist</i></td>
-      <td><i>vorbestimmte Nachfrist</i></td>
+      <td>Description</td>
+      <td><i>predetermined tbd</i></td>
+      <td><i>predetermined tbd</i></td>
+      <td><i>predetermined tbd</i></td>
+      <td><i>predetermined tbd</i></td>
     </tr>
     <tr>
-      <td>Profil aktiviert</td>
-      <td>Nein</td>
-      <td>Nein</td>
-      <td>Nein</td>
-      <td>Nein</td>
+      <td>Profile enabled</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
     </tr>
     <tr>
-      <td colspan="5"><strong><br/>Content Analytics Assets-Attributdatensatz</strong></td>
+      <td colspan="5"><strong><br/>Content Analytics Assets Attributes dataset</strong></td>
     </tr>
     <tr>
       <td>Name</td>
-      <td>Content Analytics-Asset-Attribute</td>
-      <td>Content Analytics-Asset-Attribute</td>
-      <td>Content Analytics-Asset-Attribute</td>
-      <td>Content Analytics-Asset-Attribute</td>
+      <td>Content Analytics Asset Attributes</td>
+      <td>Content Analytics Asset Attributes</td>
+      <td>Content Analytics Asset Attributes</td>
+      <td>Content Analytics Asset Attributes</td>
     </tr>
     <tr>
       <td>Schema</td>
-      <td>Content Analytics-Asset-Attribute</td>
-      <td>Content Analytics-Asset-Attribute</td>
-      <td>Content Analytics-Asset-Attribute</td>
-      <td>Content Analytics-Asset-Attribute</td>
+      <td>Content Analytics Asset Attributes</td>
+      <td>Content Analytics Asset Attributes</td>
+      <td>Content Analytics Asset Attributes</td>
+      <td>Content Analytics Asset Attributes</td>
     </tr>
     <tr>
-      <td>Beschreibung</td>
-      <td><i>vorbestimmte Nachfrist</i></td>
-      <td><i>vorbestimmte Nachfrist</i></td>
-      <td><i>vorbestimmte Nachfrist</i></td>
-      <td><i>vorbestimmte Nachfrist</i></td>
+      <td>Description</td>
+      <td><i>predetermined tbd</i></td>
+      <td><i>predetermined tbd</i></td>
+      <td><i>predetermined tbd</i></td>
+      <td><i>predetermined tbd</i></td>
     </tr>
     <tr>
       <td>Tags</td>
-      <td><i>Leer?</i></td>
-      <td><i>Leer?</i></td>
-      <td><i>Leer?</i></td>
-      <td><i>Leer?</i></td>
+      <td><i>empty?</i></td>
+      <td><i>empty?</i></td>
+      <td><i>empty?</i></td>
+      <td><i>empty?</i></td>
     </tr>
     <tr>
-      <td>Systemdatensatz</td>
-      <td>?</td>
-      <td>?</td>
-      <td>?</td>
-      <td>?</td>
-    </tr>
-    <tr>
-      <td>Profil aktiviert</td>
-      <td>Nein</td>
-      <td>Nein</td>
-      <td>Nein</td>
-      <td>Nein</td>
-    </tr>
-    <tr>
-      <td>Data Governance (DULE-Kennzeichnungen)</td>
+      <td>System dataset</td>
       <td>?</td>
       <td>?</td>
       <td>?</td>
       <td>?</td>
     </tr>
     <tr>
-      <td colspan="5"><strong><br/>Content Analytics Experience Attributes-Schema</strong></td>
+      <td>Profile enabled</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>Data governance (DULE labels)</td>
+      <td>?</td>
+      <td>?</td>
+      <td>?</td>
+      <td>?</td>
+    </tr>
+    <tr>
+      <td colspan="5"><strong><br/>Content Analytics Experience Attributes schema</strong></td>
     </tr>
     <tr>
       <td>Name</td>
-      <td>Content Analytics Experience-Attribute</td>
-      <td>Content Analytics Experience-Attribute</td>
-      <td>Content Analytics Experience-Attribute</td>
-      <td>Content Analytics Experience-Attribute</td>
+      <td>Content Analytics Experience Attributes</td>
+      <td>Content Analytics Experience Attributes</td>
+      <td>Content Analytics Experience Attributes</td>
+      <td>Content Analytics Experience Attributes</td>
     </tr>
     <tr>
-      <td>Beschreibung</td>
-      <td><i>vorbestimmte Nachfrist</i></td>
-      <td><i>vorbestimmte Nachfrist</i></td>
-      <td><i>vorbestimmte Nachfrist</i></td>
-      <td><i>vorbestimmte Nachfrist</i></td>
+      <td>Description</td>
+      <td><i>predetermined tbd</i></td>
+      <td><i>predetermined tbd</i></td>
+      <td><i>predetermined tbd</i></td>
+      <td><i>predetermined tbd</i></td>
     </tr>
     <tr>
-      <td>Profil aktiviert</td>
-      <td>Nein</td>
-      <td>Nein</td>
-      <td>Nein</td>
-      <td>Nein</td>
+      <td>Profile enabled</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
     </tr>
     <tr>
-      <td colspan="5"><strong><br/>Content Analytics Experience Attributes-Datensatz</strong></td>
+      <td colspan="5"><strong><br/>Content Analytics Experience Attributes dataset</strong></td>
     </tr>
     <tr>
       <td>Name</td>
-      <td>Content Analytics Experience-Attribute</td>
-      <td>Content Analytics Experience-Attribute</td>
-      <td>Content Analytics Experience-Attribute</td>
-      <td>Content Analytics Experience-Attribute</td>
+      <td>Content Analytics Experience Attributes</td>
+      <td>Content Analytics Experience Attributes</td>
+      <td>Content Analytics Experience Attributes</td>
+      <td>Content Analytics Experience Attributes</td>
     </tr>
     <tr>
       <td>Schema</td>
-      <td>Content Analytics Experience-Attribute</td>
-      <td>Content Analytics Experience-Attribute</td>
-      <td>Content Analytics Experience-Attribute</td>
-      <td>Content Analytics Experience-Attribute</td>
+      <td>Content Analytics Experience Attributes</td>
+      <td>Content Analytics Experience Attributes</td>
+      <td>Content Analytics Experience Attributes</td>
+      <td>Content Analytics Experience Attributes</td>
     </tr>
     <tr>
-      <td>Beschreibung</td>
-      <td><i>vorbestimmte Nachfrist</i></td>
-      <td><i>vorbestimmte Nachfrist</i></td>
-      <td><i>vorbestimmte Nachfrist</i></td>
-      <td><i>vorbestimmte Nachfrist</i></td>
+      <td>Description</td>
+      <td><i>predetermined tbd</i></td>
+      <td><i>predetermined tbd</i></td>
+      <td><i>predetermined tbd</i></td>
+      <td><i>predetermined tbd</i></td>
     </tr>
     <tr>
       <td>Tags</td>
-      <td><i>Leer?</i></td>
-      <td><i>Leer?</i></td>
-      <td><i>Leer?</i></td>
-      <td><i>Leer?</i></td>
+      <td><i>empty?</i></td>
+      <td><i>empty?</i></td>
+      <td><i>empty?</i></td>
+      <td><i>empty?</i></td>
     </tr>
     <tr>
-      <td>Systemdatensatz</td>
+      <td>System dataset</td>
       <td>?</td>
       <td>?</td>
       <td>?</td>
       <td>?</td>
     </tr>
     <tr>
-      <td>Profil aktiviert</td>
-      <td>Nein</td>
-      <td>Nein</td>
-      <td>Nein</td>
-      <td>Nein</td>
+      <td>Profile enabled</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
     </tr>
     <tr>
-      <td>Data Governance (DULE-Kennzeichnungen)</td>
+      <td>Data governance (DULE labels)</td>
       <td>?</td>
       <td>?</td>
       <td>?</td>
@@ -647,16 +1300,16 @@ Details werden für die folgenden Szenarien bereitgestellt:
 </table>
 
 
-### Datenerfassung {#dc}
+### Data Collection {#dc}
 
 <table style="table-layout:fixed">
   <tr>
     <th></th>
-    <th colspan="4">Szenarien:</th>
+    <th colspan="4">Scenarios:</th>
   </tr>
   <tr>
     <th>
-      <strong>Wenn</strong>
+      <strong>Setting</strong>
     </th>
     <th>
       <strong>✓ Tags<br>✓ Web SDK<br/>✓ Content Analytics</strong>
@@ -673,142 +1326,142 @@ Details werden für die folgenden Szenarien bereitgestellt:
   </tr>
   <tbody>
     <tr>
-      <td colspan="5"><strong><br/>Datenstrom</strong></td>
+      <td colspan="5"><strong><br/>Datastream</strong></td>
     </tr>
     <tr>
       <td>Name</td>
-      <td><i>vorhandener Wert</i></td>
-      <td>Inhaltsanalyse</td>
-      <td>Inhaltsanalyse</td>
-      <td>Inhaltsanalyse</td>
+      <td><i>existing value</i></td>
+      <td>Content Analytics</td>
+      <td>Content Analytics</td>
+      <td>Content Analytics</td>
     </tr>
     <tr>
-      <td>Beschreibung</td>
-      <td><i>vorhandener Wert</i></td>
-      <td><i>vorher ausgemacht</i></td>
-      <td><i>vorher ausgemacht</i></td>
-      <td><i>vorher ausgemacht</i></td>
+      <td>Description</td>
+      <td><i>existing value</i></td>
+      <td><i>predetermined</i></td>
+      <td><i>predetermined</i></td>
+      <td><i>predetermined</i></td>
     </tr>
     <tr>
-      <td>Zuordnungsschema</td>
-      <td><i>vorhandener Wert</i></td>
-      <td><i>vorher ausgemacht</i></td>
-      <td><i>vorher ausgemacht</i></td>
-      <td><i>vorher ausgemacht</i></td>
+      <td>Mapping schema</td>
+      <td><i>existing value</i></td>
+      <td><i>predetermined</i></td>
+      <td><i>predetermined</i></td>
+      <td><i>predetermined</i></td>
     </tr>
     <tr>
-      <td>Geolokalisierung und Netzwerksuche</td>
-      <td><i>Vorhandene Werte</i></td>
-      <td>Alle Optionen ausgeschaltet</td>
-      <td>Alle Optionen ausgeschaltet</td>
-      <td>Alle Optionen ausgeschaltet</td>
+      <td>Geolocation and Network Lookup</td>
+      <td><i>existing values</i></td>
+      <td>All options off</td>
+      <td>All options off</td>
+      <td>All options off</td>
     </tr>
     <tr>
-      <td>Gerätesuche</td>
-      <td><i>vorhandener Wert</i></td>
-      <td>Keine Geräteinformationen erfassen</td>
-      <td>Keine Geräteinformationen erfassen</td>
-      <td>Keine Geräteinformationen erfassen</td>
+      <td>Device Lookup</td>
+      <td><i>existing value</i></td>
+      <td>Do not collect any device information</td>
+      <td>Do not collect any device information</td>
+      <td>Do not collect any device information</td>
     </tr>
     <tr>
-      <td>IP-Verschleierung</td>
-      <td><i>vorhandener Wert</i></td>
-      <td>Keine</td>
-      <td>Keine</td>
-      <td>Keine</td>
+      <td>IP Obfuscation</td>
+      <td><i>existing value</i></td>
+      <td>None</td>
+      <td>None</td>
+      <td>None</td>
     </tr>
     <tr>
-      <td>First-Party-ID-Cookie</td>
-      <td><i>vorhandener Wert</i></td>
-      <td>Aus</td>
-      <td>Aus</td>
-      <td>Aus</td>
+      <td>First Party ID Cookie</td>
+      <td><i>existing value</i></td>
+      <td>Off</td>
+      <td>Off</td>
+      <td>Off</td>
     </tr>
     <tr>
-      <td>Synchronisierung der Drittanbieter-ID</td>
-      <td><i>vorhandener Wert</i></td>
-      <td>Aus</td>
-      <td>Aus</td>
-      <td>Aus</td>
+      <td>Third Party ID Synch</td>
+      <td><i>existing value</i></td>
+      <td>Off</td>
+      <td>Off</td>
+      <td>Off</td>
     </tr>
     <tr>
-      <td>Zugriffstyp</td>
-      <td><i>vorhandener Wert</i></td>
-      <td>Gemischte Authentifizierung</td>
-      <td>Gemischte Authentifizierung</td>
-      <td>Gemischte Authentifizierung</td>
+      <td>Access Type</td>
+      <td><i>existing value</i></td>
+      <td>Mixed Authentication</td>
+      <td>Mixed Authentication</td>
+      <td>Mixed Authentication</td>
     </tr>
     <tr>
       <td>Media Analytics</td>
-      <td><i>vorhandener Wert</i></td>
-      <td>Aus</td>
-      <td>Aus</td>
-      <td>Aus</td>
+      <td><i>existing value</i></td>
+      <td>Off</td>
+      <td>Off</td>
+      <td>Off</td>
     </tr>
         <tr>
-      <td>Bot-Erkennung</td>
-      <td><i>vorhandener Wert</i></td>
-      <td>Aus</td>
-      <td>Aus</td>
-      <td>Aus</td>
+      <td>Bot Detection</td>
+      <td><i>existing value</i></td>
+      <td>Off</td>
+      <td>Off</td>
+      <td>Off</td>
     </tr>
     <tr>
-      <td>Zuordnen</td>
-      <td><i>vorhandener Wert</i></td>
-      <td><i>Benutzer angegeben</i></td>
-      <td><i>Benutzer angegeben</i></td>
-      <td><i>Benutzer angegeben</i></td>
+      <td>Mapping</td>
+      <td><i>existing value</i></td>
+      <td><i>user provided</i></td>
+      <td><i>user provided</i></td>
+      <td><i>user provided</i></td>
     </tr>
     <tr>
-      <td colspan="5"><strong><br/>Tags-Eigenschaft</strong><br/>Eine vorhandene Eigenschaft oder neue Eigenschaft. Name und Domain werden vom Benutzer angegeben.</td>
+      <td colspan="5"><strong><br/>Tags property</strong><br/>An existing property or new property. The name and domain are provided by the user.</td>
     </tr>
     <tr>
       <td>Name</td>
-      <td><i>vorhandener Wert</i></td>
-      <td><i>vorhandener Wert</i></td>
-      <td><i>vorhandener Wert</i></td>
-      <td><i>vom Benutzer angegeben</i> (Standard: "Content Analytics„)</td>
+      <td><i>existing value</i></td>
+      <td><i>existing value</i></td>
+      <td><i>existing value</i></td>
+      <td><i>user provided</i> (default "Content Analytics")</td>
     </tr>
     <tr>
       <td>Domain</td>
-      <td><i>vorhandener Wert</i></td>
-      <td><i>vorhandener Wert</i></td>
-      <td><i>vorhandener Wert</i></td>
-      <td ><i>vorher ausgemacht</i></td>
+      <td><i>existing value</i></td>
+      <td><i>existing value</i></td>
+      <td><i>existing value</i></td>
+      <td ><i>predetermined</i></td>
     </tr>
     <tr>
-      <td colspan="5"><strong><br/>Tag-Bibliothek</strong></td>
+      <td colspan="5"><strong><br/>Tags library</strong></td>
     </tr>
     <tr>
       <td>Name</td>
-      <td><i>vorhandener Wert</i></td>
-      <td><i>vorhandener Wert</i></td>
-      <td><i>vorhandener Wert</i></td>
+      <td><i>existing value</i></td>
+      <td><i>existing value</i></td>
+      <td><i>existing value</i></td>
       <td>
         <br/>
       </td>
     </tr>
     <tr>
-      <td colspan="5"><strong><br/>Web SDK-Erweiterung</strong></td>
+      <td colspan="5"><strong><br/>Web SDK Extension</strong></td>
     </tr>
     <tr>
       <td>Name</td>
-      <td><i>vorhandener Wert</i></td>
-      <td><i>vorhandener Wert</i></td>
-      <td>Content Analytics - Web-SDK</td>
-      <td>Content Analytics - Web-SDK</td>
+      <td><i>existing value</i></td>
+      <td><i>existing value</i></td>
+      <td>Content Analytics - Web SDK</td>
+      <td>Content Analytics - Web SDK</td>
     </tr>
     <tr>
-      <td>IMS-Organisation</td>
-      <td><i>Automatisch befüllt</i></td>
-      <td><i>Automatisch befüllt</i></td>
-      <td><i>Automatisch befüllt</i></td>
-      <td><i>Automatisch befüllt</i></td>
+      <td>IMS Org</td>
+      <td><i>automatically populated</i></td>
+      <td><i>automatically populated</i></td>
+      <td><i>automatically populated</i></td>
+      <td><i>automatically populated</i></td>
     </tr>
     <tr>
-      <td>Edge-Domäne</td>
-      <td><i>vorhandener Wert<br/> Möglicherweise ist eine Aktualisierung erforderlich, um der AppMeasurement-Implementierung zu entsprechen</i></td>
-      <td><i>vorhandener Wert<br/> Möglicherweise ist eine Aktualisierung erforderlich, um der AppMeasurement-Implementierung zu entsprechen</i></td>
+      <td>Edge Domain</td>
+      <td><i>existing value<br/>Might require an update to match the AppMeasurement implementation</i></td>
+      <td><i>existing value<br/>Might require an update to match the AppMeasurement implementation</i></td>
       <td>
         <a href="http://edge.adobedc.net">edge.adobedc.net</a>
       </td>
@@ -817,162 +1470,164 @@ Details werden für die folgenden Szenarien bereitgestellt:
       </td>
     </tr>
     <tr>
-      <td colspan="5"><strong><br/>Datenströme</strong></td>
+      <td colspan="5"><strong><br/>Datastreams</strong></td>
     </tr>
     <tr>
-      <td>Produktion</td>
-      <td><i>Vorhandene Wert<br/>Datenstrom-Überschreibung, die zum Senden an einen anderen Datenstrom verwendet wird</i></td>
-      <td><i>Vorhandene Wert<br/>Datenstrom-Überschreibung, die zum Senden an einen anderen Datenstrom verwendet wird</i></td>
-      <td><i>Benutzer angegeben</i>?</td>
-      <td><i>Benutzer angegeben</i>?</td>
+      <td>Production</td>
+      <td><i>existing value<br/>Datastream override used to send to a different datastream</i></td>
+      <td><i>existing value<br/>Datastream override used to send to a different datastream</i></td>
+      <td><i>user provided</i>?</td>
+      <td><i>user provided</i>?</td>
     </tr>
     <tr>
       <td>Staging</td>
-      <td><i>Vorhandene Wert<br/>Datenstrom-Überschreibung, die zum Senden an einen anderen Datenstrom verwendet wird</i></td>
-      <td><i>Vorhandene Wert<br/>Datenstrom-Überschreibung, die zum Senden an einen anderen Datenstrom verwendet wird</i></td>
-      <td><i>Benutzer angegeben</i>?</td>
-      <td><i>Benutzer angegeben</i>?</td>
+      <td><i>existing value<br/>Datastream override used to send to a different datastream</i></td>
+      <td><i>existing value<br/>Datastream override used to send to a different datastream</i></td>
+      <td><i>user provided</i>?</td>
+      <td><i>user provided</i>?</td>
     </tr>
     <tr>
-      <td>Entwicklung</td>
-      <td><i>Vorhandene Wert<br/>Datenstrom-Überschreibung, die zum Senden an einen anderen Datenstrom verwendet wird</i></td>
-      <td><i>Vorhandene Wert<br/>Datenstrom-Überschreibung, die zum Senden an einen anderen Datenstrom verwendet wird</i></td>
-      <td><i>Benutzer angegeben</i>?</td>
-      <td><i>Benutzer angegeben</i>?</td>
+      <td>Development</td>
+      <td><i>existing value<br/>Datastream override used to send to a different datastream</i></td>
+      <td><i>existing value<br/>Datastream override used to send to a different datastream</i></td>
+      <td><i>user provided</i>?</td>
+      <td><i>user provided</i>?</td>
     </tr>
     <tr>
-      <td>Datenschutz   </td>
-      <td><i>vorhandener Wert</i></td>
-      <td><i>vorhandener Wert</i></td>
+      <td>Privacy</td>
+      <td><i>existing value</i></td>
+      <td><i>existing value</i></td>
       <td>In?</td>
       <td>In?</td>
     </tr>
     <tr>
-      <td colspan="5"><strong><br/>Identität</strong></td>
+      <td colspan="5"><strong><br/>Identity</strong></td>
     </tr>
     <tr>
-      <td>Migrieren von ECID</td>
-      <td><i>vorhandener Wert</i></td>
-      <td><i>vorhandener Wert</i></td>
-      <td>Geprüft</td>
-      <td>Geprüft</td>
+      <td>Migrate ECID</td>
+      <td><i>existing value</i></td>
+      <td><i>existing value</i></td>
+      <td>Checked</td>
+      <td>Checked</td>
     </tr>
     <tr>
-      <td>Verwenden von Drittanbieter-Cookies</td>
-      <td><i>vorhandener Wert</i></td>
-      <td><i>vorhandener Wert</i></td>
-      <td>Geprüft</td>
-      <td>Geprüft</td>
+      <td>Use third-party cookies</td>
+      <td><i>existing value</i></td>
+      <td><i>existing value</i></td>
+      <td>Checked</td>
+      <td>Checked</td>
     </tr>
     <tr>
-      <td colspan="5"><strong><br/>Personalisierung</strong></td>
+      <td colspan="5"><strong><br/>Personalization</strong></td>
     </tr>
     <tr>
-      <td>Migrieren von Target von at.js zu Web SDK</td>
-      <td><i>vorhandener Wert</i></td>
-      <td><i>vorhandener Wert</i></td>
-      <td>ungebremst</td>
-      <td>ungebremst</td>
+      <td>Migrate Target from at.js to Web SDK</td>
+      <td><i>existing value</i></td>
+      <td><i>existing value</i></td>
+      <td>Unchecked</td>
+      <td>Unchecked</td>
     </tr>
     <tr>
-      <td>Personalisierungsspeicher aktivieren</td>
-      <td><i>vorhandener Wert</i></td>
-      <td><i>vorhandener Wert</i></td>
-      <td>ungebremst</td>
-      <td>ungebremst</td>
+      <td>Enable personalization storage</td>
+      <td><i>existing value</i></td>
+      <td><i>existing value</i></td>
+      <td>Unchecked</td>
+      <td>Unchecked</td>
     </tr>
     <tr>
-      <td>Automatische Klick-Sammlung für Adobe Journey Optimizer</td>
-      <td><i>vorhandener Wert</i></td>
-      <td><i>vorhandener Wert</i></td>
-      <td>Immer</td>
-      <td>Immer</td>
+      <td>Auto click collection for Adobe Journey Optimizer</td>
+      <td><i>existing value</i></td>
+      <td><i>existing value</i></td>
+      <td>Always</td>
+      <td>Always</td>
     </tr>
     <tr>
-      <td>Automatische Klick-Sammlung für Adobe Target</td>
-      <td><i>vorhandener Wert</i></td>
-      <td><i>vorhandener Wert</i></td>
-      <td>Nie</td>
-      <td>Nie</td>
+      <td>Auto click collection for Adobe Target</td>
+      <td><i>existing value</i></td>
+      <td><i>existing value</i></td>
+      <td>Never</td>
+      <td>Never</td>
     </tr>
     <tr>
-      <td colspan="5"><strong><br/>Datenerfassung</strong></td>
+      <td colspan="5"><strong><br/>Data Collection</strong></td>
     </tr>
     <tr>
-      <td>Erfassen interner Link-Klicks</td>
-      <td><i>vorhandener Wert</i></td>
-      <td><i>vorhandener Wert</i></td>
-      <td>ungebremst</td>
-      <td>ungebremst</td>
+      <td>Collect internal links clicks</td>
+      <td><i>existing value</i></td>
+      <td><i>existing value</i></td>
+      <td>Unchecked</td>
+      <td>Unchecked</td>
     </tr>
     <tr>
-      <td>Erfassen externer Link-Klicks</td>
-      <td><i>vorhandener Wert</i></td>
-      <td><i>vorhandener Wert</i></td>
-      <td>ungebremst</td>
-      <td>ungebremst</td>
+      <td>Collect external link clicks</td>
+      <td><i>existing value</i></td>
+      <td><i>existing value</i></td>
+      <td>Unchecked</td>
+      <td>Unchecked</td>
     </tr>
     <tr>
-      <td>Download-Links und Klicks erfassen</td>
-      <td><i>vorhandener Wert</i></td>
-      <td><i>vorhandener Wert</i></td>
-      <td>ungebremst</td>
-      <td>ungebremst</td>
+      <td>Collect download links clicks</td>
+      <td><i>existing value</i></td>
+      <td><i>existing value</i></td>
+      <td>Unchecked</td>
+      <td>Unchecked</td>
     </tr>
     <tr>
-      <td>Beim Senden von Ereignisdaten Folgendes automatisch einschließen</td>
-      <td><i>vorhandener Wert</i></td>
-      <td><i>vorhandener Wert</i></td>
-      <td>Alle standardmäßigen Kontextinformationen</td>
-      <td>Alle standardmäßigen Kontextinformationen</td>
+      <td>When sending event data, automatically include</td>
+      <td><i>existing value</i></td>
+      <td><i>existing value</i></td>
+      <td>All default context information</td>
+      <td>All default context information</td>
     </tr>
     <tr>
-      <td>Streaming-Medien</td>
-      <td><i>Vorhandene Werte</i></td>
-      <td><i>Vorhandene Werte</i></td>
-      <td>Leere Werte</td>
-      <td>Leere Werte</td>
+      <td>Streaming Media</td>
+      <td><i>existing values</i></td>
+      <td><i>existing values</i></td>
+      <td>Blank values</td>
+      <td>Blank values</td>
     </tr>
     <tr>
-      <td>Überschreibungen der Datenstromkonfiguration</td>
-      <td><i>vorhandener Wert</i></td>
-      <td><i>vorhandener Wert</i></td>
-      <td>Konfiguration des Datenstroms abgleichen</td>
-      <td>Konfiguration des Datenstroms abgleichen</td>
+      <td>Datastream Configuration Overrides</td>
+      <td><i>existing value</i></td>
+      <td><i>existing value</i></td>
+      <td>Match datastream configuration</td>
+      <td>Match datastream configuration</td>
     </tr>
     <tr>
-      <td>Erweiterte Einstellungen - Edge-Basispfad</td>
-      <td><i>vorhandener Wert</i></td>
-      <td><i>vorhandener Wert</i></td>
+      <td>Advanced Settings - Edge base path</td>
+      <td><i>existing value</i></td>
+      <td><i>existing value</i></td>
       <td>ee</td>
       <td>ee</td>
     </tr>
     <tr>
-      <td colspan="5"><strong><br/>Content Analytics-Erweiterung</strong></td>
+      <td colspan="5"><strong><br/>Content Analytics Extension</strong></td>
     </tr>
     <tr>
-      <td>Datenströme</td>
-      <td><i>vorhandener Wert</i></td>
-      <td><i>vorher ausgemacht</i></td>
-      <td><i>vorher ausgemacht</i></td>
-      <td><i>vorher ausgemacht</i></td>
+      <td>Datastreams</td>
+      <td><i>existing value</i></td>
+      <td><i>predetermined</i></td>
+      <td><i>predetermined</i></td>
+      <td><i>predetermined</i></td>
     </tr>
     <tr>
-      <td>Erlebniserfassung und -definition</td>
-      <td><i>vorhandener Wert</i></td>
-      <td><i>Benutzer angegeben</i></td>
-      <td><i>Benutzer angegeben</i></td>
-      <td><i>Benutzer angegeben</i></td>
+      <td>Experience Capturing & Definition</td>
+      <td><i>existing value</i></td>
+      <td><i>user provided</i></td>
+      <td><i>user provided</i></td>
+      <td><i>user provided</i></td>
     </tr>
     <tr>
-      <td>Ereignisfilterung</td>
-      <td><i>vorhandener Wert</i></td>
-      <td><i>Benutzer angegeben</i></td>
-      <td><i>Benutzer angegeben</i></td>
-      <td><i>Benutzer angegeben</i></td>
+      <td>Event Filtering</td>
+      <td><i>existing value</i></td>
+      <td><i>user provided</i></td>
+      <td><i>user provided</i></td>
+      <td><i>user provided</i></td>
     </tr>
   </tbody>
 </table>
+
+-->
 
 >[!MORELIKETHIS]
 >
