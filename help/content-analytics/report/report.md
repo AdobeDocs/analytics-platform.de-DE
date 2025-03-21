@@ -7,7 +7,7 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: 6e756ae8-b969-46f1-95b8-d8fbb0d058ed
-source-git-commit: 07487061881cacd6e4f79bd46581d179aca99347
+source-git-commit: dbbdfac312b1b7cbb6d8b6ce38a63f6d2bc18420
 workflow-type: tm+mt
 source-wordcount: '1263'
 ht-degree: 0%
@@ -76,7 +76,7 @@ So verwenden Sie die Vorlage:
 1. Wählen **[!UICONTROL im Dialogfeld Vorlage einrichten]** eine Metrik aus dem Dialogfeld **[!UICONTROL Konversionsmetrik auswählen]**. Beispiel: **[!UICONTROL Asset-CTR]**.
 1. Wählen Sie **[!UICONTROL Weiter]** aus.
 
-Ein **[!UICONTROL Content Analytics-Übersicht]**-Projekt wird in Workspace geöffnet. Das Projekt besteht aus vier Bedienfeldern, in denen jedes Bedienfeld Freiformtabellen und Visualisierungen zur Beantwortung einer bestimmten Frage bereitstellt:
+Ein **[!UICONTROL Content Analytics-]**-Projekt wird in [Analysis Workspace](/help/analysis-workspace/home.md) geöffnet. Das Projekt besteht aus vier [Bedienfeldern](/help/analysis-workspace/c-panels/panels.md) in denen jedes Bedienfeld [Freiformtabellen](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) und [Visualisierungen](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md) zur Beantwortung einer bestimmten Frage bereitstellt:
 
 * **Welche Inhalte erzielen die besten Ergebnisse?**
 In diesem Bedienfeld erfahren Sie, welche Erlebnisse und welche Assets in diesen Erlebnissen Interaktion und Konversion fördern. Erlebnisse sind eine vollständige Web-Seite, die zu einem bestimmten Zeitpunkt erfasst wird. Ein Erlebnis kann sowohl Text als auch mehrere einzelne Bild-Assets enthalten. Ein Asset ist ein einzelnes Bild.
@@ -85,9 +85,9 @@ In diesem Bedienfeld erfahren Sie, welche Erlebnisse und welche Assets in diesen
 
    * **Erlebnisse**
 
-      * **Experience CTR**: eine Visualisierung der Zusammenfassungsänderung, die den Experience CTR anzeigt.
-      * **Top-Konversionserlebnisse**: Eine horizontale Balkendiagrammvisualisierung, die die besten Konversionserlebnisse basierend auf der ausgewählten Konversionsmetrik zeigt.
-      * **Erlebnisse mit** Leistung: Eine Freiformtabelle (einschließlich Miniaturen und Vorschauen) für die Erlebnisse mit der besten Leistung.
+      * **Experience CTR**: eine Visualisierung [Zusammenfassungsänderung](/help/analysis-workspace/visualizations/summary-number-change.md) mit Experience CTR.
+      * **Top-Konvertierungserlebnisse**: Eine [horizontale Balken](/help/analysis-workspace/visualizations/horizontal-bar.md) Visualisierung, die die besten Konvertierungserlebnisse basierend auf der ausgewählten Konversionsmetrik zeigt.
+      * **Erlebnisse mit Top**: Eine [Freiformtabelle](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)(einschließlich [Miniaturen](#thumbnails) und [Vorschauen](#previews)) für die Erlebnisse mit der besten Leistung.
 
    * **Assets**
 
