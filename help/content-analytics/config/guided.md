@@ -7,9 +7,9 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 4aff664c-3cd9-4591-8122-6ebff10e4a76
-source-git-commit: 01459765d84a46d170c1619ffeae184957bbf839
+source-git-commit: e8ba272d2deb535374a47b61c22d58c4168ff50c
 workflow-type: tm+mt
-source-wordcount: '3324'
+source-wordcount: '3335'
 ht-degree: 13%
 
 ---
@@ -262,7 +262,7 @@ In einer neuen Konfiguration müssen Sie definieren, ob Sie eine vorhandene Tags
 
   ![Vorhandenes Tag zur Datenerfassung in Content Analytics](../assets/aca-configuration-datacollection-existingtag.png)
 
-   1. Wählen Sie **[!UICONTROL vorhanden]** aus.
+   1. Wählen Sie **[!UICONTROL Vorhandenes auswählen]**.
    2. Wählen Sie eine vorhandene Eigenschaft aus dem Dropdown **[!UICONTROL Menü „Eigenschaft für]**&quot; aus. Sie können mit der Eingabe beginnen, um nach den verfügbaren Optionen zu suchen und diese zu beschränken.
 
 * So erstellen Sie eine neue Tag-Eigenschaft:
@@ -271,16 +271,15 @@ In einer neuen Konfiguration müssen Sie definieren, ob Sie eine vorhandene Tags
 
    1. Wählen Sie **[!UICONTROL Neu erstellen]** aus.
    1. Geben Sie einen **[!UICONTROL Tag-Namen]** an, z. B. `ACA Test for Documentation`.
-  <!--1. Specify **[!UICONTROL Domains]**, for example, `example.com`. -->
-   1. Wählen Sie **[!UICONTROL Hinzufügen]** aus.
+   1. Geben Sie **[!UICONTROL Domains]** an, z. B. `example.com`.
 
 * Wenn Sie sich dafür entschieden haben, Erlebnisse einzubeziehen, geben Sie an, welche Seiten bei der Datenerfassung für Content Analytics ein- oder ausgeschlossen werden sollen.
 
-   * Geben Sie einen regulären Ausdruck für &quot;**[!UICONTROL &quot;]**. Beispiel: `/^(?!.*documentation).*/`, um alle Dokumentationsseiten von Content Analytics auszuschließen. Stellen Sie sicher, dass Sie reguläre Ausdrücke mithilfe von `/` mit Escape-Zeichen versehen.
+   * Geben Sie eine Zeichenfolge für reguläre Ausdrücke für (**[!UICONTROL ein-/auszuschließende Seiten]** an. Beispiel: `/^(?!.*documentation).*/`, um alle Dokumentationsseiten von Content Analytics auszuschließen. Stellen Sie sicher, dass Sie reguläre Ausdrücke mithilfe von `/` mit Escape-Zeichen versehen.
 
 * Geben Sie an, welche Assets bei der Datenerfassung für Content Analytics ein- oder ausgeschlossen werden sollen.
 
-   * Geben Sie einen regulären Ausdruck für &quot;**[!UICONTROL &quot;]**. Beispiel: `/^(?!.*(logo\.jpg|\.svg)).*$/`, um alle JPEG- und SVG-Logo-Bilder von Content Analytics auszuschließen. Stellen Sie sicher, dass Sie reguläre Ausdrücke mithilfe von `/` mit Escape-Zeichen versehen.
+   * Geben Sie eine Zeichenfolge für reguläre Ausdrücke für **[!UICONTROL Assets an, die ein-/ausgeschlossen werden]**. Beispiel: `/^(?!.*(logo\.jpg|\.svg)).*$/`, um alle JPEG- und SVG-Logo-Bilder von Content Analytics auszuschließen. Stellen Sie sicher, dass Sie reguläre Ausdrücke mithilfe von `/` mit Escape-Zeichen versehen.
 
 
 #### Vorhandene Konfiguration {#existing-configuration}
