@@ -4,7 +4,7 @@ description: Datumsbereich zur Verwendung in Berichten erstellen.
 feature: Calendar
 exl-id: 3e4fa3cc-c14b-45e5-afbb-518ecfa0033e
 role: User
-source-git-commit: a6295d550e0e357569d530b72fe50a58d7ecfbbe
+source-git-commit: 6e4f23d65a620104cfbd36fc9b4ccd06146f143c
 workflow-type: tm+mt
 source-wordcount: '533'
 ht-degree: 37%
@@ -23,7 +23,7 @@ Jeder kann einen benutzerdefinierten Datumsbereich erstellen. Sie können einen 
 * **C**. Wählen Sie in einem Workspace-Projekt **[!UICONTROL Komponenten]** aus dem Menü und wählen Sie **[!UICONTROL Datumsbereich erstellen]**
 * **D**. Verwenden Sie in einem Workspace-Projekt die Tastenkombination **[!UICONTROL Strg+Umschalt+D]** (Windows) oder **[!UICONTROL Umschalt+Befehl+D]** (macOS).
 * **E**. Wählen Sie in einem Workspace-Projekt im linken Bedienfeld Komponenten ![Hinzufügen](/help/assets/icons/Add.svg) unter ![Kalender](/help/assets/icons/Calendar.svg) **Datumsbereiche**.
-* F. Wählen Sie in einer unterstützten Visualisierung, z. B. einer Linienvisualisierung, im Kontextmenü zu einem Datenpunkt die Option **[!UICONTROL Anmerkungsauswahl]**.
+* **F**. Wählen Sie in einer unterstützten Visualisierung, z. B. einer Linienvisualisierung, im Kontextmenü zu einem Datenpunkt die Option **[!UICONTROL Anmerkungsauswahl]** aus.
 
 Um die Anmerkung zu definieren, verwenden Sie den [[!UICONTROL Datumsbereichsersteller]](#annotation-builder):
 

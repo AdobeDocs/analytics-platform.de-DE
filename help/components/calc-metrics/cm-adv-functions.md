@@ -4,10 +4,10 @@ description: Greifen Sie auf diese Funktionen zu, indem Sie in der Dropdown-List
 feature: Calculated Metrics
 exl-id: 3689a499-817d-4a59-8a1f-5f7bda297268
 role: User
-source-git-commit: 180129837fa326f600ebc3dc5a2a54fd6c3372cb
+source-git-commit: 6788275ba4bfcfbe385e45e6a20de996d8103393
 workflow-type: tm+mt
-source-wordcount: '4542'
-ht-degree: 55%
+source-wordcount: '4659'
+ht-degree: 54%
 
 ---
 
@@ -729,7 +729,7 @@ Kleiner als oder gleich. Die Ausgabe ist entweder 0 (False) oder 1 (True).
 
 
 
-## Lift (#lift)
+## Anstieg {#lift}
 
 <!-- markdownlint-disable MD034 -->
 
@@ -739,6 +739,10 @@ Kleiner als oder gleich. Die Ausgabe ist entweder 0 (False) oder 1 (True).
 >abstract="Der Anstieg des Verhältnisses im Vergleich zum Kontrollwert."
 
 <!-- markdownlint-enable MD034 -->
+
+![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL LIFT(Normalisierungs-Container, Erfolgsmetrik, Kontrolle)]**
+
+Der Anstieg des Verhältnisses im Vergleich zum Kontrollwert.
 
 | Argument | Beschreibung |
 | --- | --- |
@@ -1338,6 +1342,27 @@ Gibt Pi zurück: 3,14159…
 | metric_Y | Eine Metrik, die als unabhängige Daten gekennzeichnet werden soll |
 | include_zeros | Gibt an, ob Nullwerte in die Berechnungen einbezogen werden sollen |
 
+
+
+## Stichprobenvarianz
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="functions-waskr-variance-estimate"
+>title="Stichprobenvarianz"
+>abstract="Berechnet eine Schätzung der Stichprobenvarianz anhand der Formel (Summe(Metrik^2) / (N - 1)) - (Summe(Metrik))^2/(N*(N-1)). wobei N die Anzahl des Normalisierungsbehälters ist. <br/>Dies wird im Rahmen von *jederzeit gültigen* Konfidenzberechnungen verwendet. Im Allgemeinen ist diese Funktion nicht allein nützlich, kann aber verwendet werden, um Berechnungen zu überprüfen oder Konfidenzberechnungen durchzuführen *manuell*."
+
+![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL STICHPROBENVARIANZ(Normalisierungs-Container, Erfolgsmetrik)]**
+
+Berechnet eine Schätzung der Stichprobenvarianz.
+
+| Argument | Beschreibung |
+| --- | --- |
+| Normalisierungs-Container | Die Grundlage (Personen, Sitzungen oder Ereignisse) für die Ausführung eines Tests. |
+| Erfolgsmetrik | Die Kennzahl(en), die ein(e) Benutzende(r) verwendet, um Varianten zu vergleichen. |
+
+<!-- markdownlint-enable MD034 -->
 
 
 
