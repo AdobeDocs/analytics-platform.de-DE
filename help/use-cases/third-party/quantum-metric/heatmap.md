@@ -7,10 +7,10 @@ feature: Use Cases
 hidefromtoc: true
 hide: true
 exl-id: d861135f-42a4-45ac-8b11-41f151bfce92
-source-git-commit: 48c2b2eaa191948eda303f9ee236038484e4f2eb
+source-git-commit: b82a345fbae1a0ab2debf2c4eb580422745db473
 workflow-type: tm+mt
-source-wordcount: '383'
-ht-degree: 1%
+source-wordcount: '407'
+ht-degree: 0%
 
 ---
 
@@ -48,6 +48,6 @@ Sie müssen Anspruch auf das **UX Ops**-Paket von Quantum Metric haben, um auf d
 
 ## Anzeigen von Heatmaps durch Klicken auf Links in Customer Journey Analytics
 
-Nachdem Sie eine Seite gefunden haben, für die Sie Heatmapping erforschen möchten, können Sie sie auf das Bedienfeld anwenden, in dem sich Ihre URL befindet. Die Tabelle gibt eine URL zurück, mit der Sie Heatmaps für die betreffende Seite, Bildlauftiefe und Schlüsselzonen für die Interaktion untersuchen können.  Weitere Informationen zu Quantum Metric Heatmaps finden Sie unter [https://www.quantummetric.com/platform/interaction-heatmaps](https://www.quantummetric.com/platform/interaction-heatmaps)
+Nachdem Sie eine Seite gefunden haben, für die Sie Heatmapping erforschen möchten, können Sie sie auf das Bedienfeld anwenden, in dem sich Ihre URL befindet. Die Tabelle gibt eine URL zurück, mit der Sie Heatmaps für die betreffende Seite, Bildlauftiefe und Schlüsselzonen für die Interaktion untersuchen können.  Weitere Informationen zu Quantum Metric Heatmaps finden Sie unter [https://www.quantummetric.com/platform/interaction-heatmaps](https://www.quantummetric.com/platform/interaction-heatmaps).  Für weitere Ressourcen wenden Sie sich bitte an Ihren Kundenbetreuer von Quantum Metric oder senden Sie eine Anfrage über das Quantum Metric [Kundenanfrageportal](https://community.quantummetric.com/s/public-support-page).
 
 
