@@ -7,10 +7,10 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 3ea46223-c7d0-4b1f-bc84-4f35494f13a0
-source-git-commit: 17a7a9a602b92693b2ad6db10f60d3e77fef9724
+source-git-commit: d8d433be07c8cf97e5cf07338f1af6a04a25179f
 workflow-type: tm+mt
-source-wordcount: '561'
-ht-degree: 14%
+source-wordcount: '479'
+ht-degree: 1%
 
 ---
 
@@ -39,19 +39,9 @@ Stellen Sie vor dem Konfigurieren von Content Analytics sicher, dass die folgend
 
 * Sie haben den Benutzeragenten und die IP-Adresse für den in Content Analytics verwendeten Feature Service auf die Zulassungsliste gesetzt. Die zu konfigurierende Benutzeragenten-Zeichenfolge lautet: <code>AdobeFeatureIzation/1.0</code>.
 * Sie verfügen über die Rolle eines Customer Journey Analytics-Produktadministrators mit den zusätzlichen Berechtigungen zum Verwalten von Verbindungen und Datenansichten.
-* Sie verfügen über die erforderlichen Experience Platform-Berechtigungen:
-
-  | Kategorie | Berechtigung | Beschreibung |
-  |---|---|---|
-  | [!UICONTROL Datenerfassung] | Anzeigen von Datenströmen | Schreibgeschützter Zugriff auf Datenströme. |
-  | [!UICONTROL Datenerfassung] | Verwalten von Datenströmen | Zugriff auf das Lesen, Erstellen, Bearbeiten und Löschen von Datenströmen. |
-  | [!UICONTROL Datenmodellierung] | [!UICONTROL Anzeigen von Schemata] | Schreibgeschützter Zugriff auf Schemata und zugehörige Ressourcen. |
-  | [!UICONTROL Datenmodellierung] | [!UICONTROL Verwalten von Schemata] | Zugriff auf das Lesen, Erstellen, Bearbeiten und Löschen von Schemata und zugehörigen Ressourcen. |
-  | [!UICONTROL Daten-Management] | [!UICONTROL Anzeigen von Datensätzen] | Schreibgeschützter Zugriff auf Datensätze und Schemata. |
-  | [!UICONTROL Daten-Management] | [!UICONTROL Datensätze verwalten] | Zugriff auf das Lesen, Erstellen, Bearbeiten und Löschen von Datensätzen. Schreibgeschützter Zugriff auf Schemata. |
-  | [!UICONTROL Datenaufnahme] | [!UICONTROL Verwalten von Quellen] | Zugriff zum Lesen, Erstellen, Bearbeiten und Deaktivieren von Quellen. |
-  | [!UICONTROL Identity Management] | [!UICONTROL Anzeigen von Identitäts-Namensräumen] | Schreibgeschützter Zugriff für Identitäts-Namensräume. |
-
+* Sie müssen über [Berechtigungen für die Datenerfassung“ ](https://experienceleague.adobe.com/en/docs/experience-platform/collection/permissions){target="_blank"}. Diese Berechtigungen bestehen aus:
+   * [Experience Platform-Berechtigungen](https://experienceleague.adobe.com/en/docs/experience-platform/collection/permissions#adobe-experience-platform-permissions){target="_blank"}
+   * [Berechtigungen für die Datenerfassung in Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/collection/permissions#adobe-experience-platform-data-collection-permissions){target="_blank" }
 * Sie haben die folgenden wichtigen Konfigurationsoptionen sorgfältig geprüft:
 
    * Ihre Site ist für das Reporting zu Erlebnissen geeignet. Ein ordnungsgemäßes Reporting zu Erlebnissen ist nur möglich, wenn die folgenden Bedingungen erfüllt sind:
