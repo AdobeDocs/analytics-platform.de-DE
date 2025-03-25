@@ -6,9 +6,10 @@ solution: Customer Journey Analytics
 feature: Use Cases
 hidefromtoc: true
 hide: true
-source-git-commit: e6a77e75963fb43041c0533a28a9563a3849b8b0
+exl-id: 1b7d5159-39b2-4ba4-be64-f448ae53c70e
+source-git-commit: 10a70743d292e50ca5aea3225897e7097fa4fc8a
 workflow-type: tm+mt
-source-wordcount: '494'
+source-wordcount: '495'
 ht-degree: 0%
 
 ---
@@ -16,6 +17,8 @@ ht-degree: 0%
 # Hinzufügen von Quantum Metric Friction-Ereignissen zu Customer Journey Analytics
 
 Die Quantum-Metrik erfasst Friktionsereignisse wie Langsamkeit beim Laden der Seite, Seitenladefehler, Wutklicks und mehr. Diese Ereignisse können als komplementäre Ereignisse auf der Benutzer-Journey an Customer Journey Analytics übergeben werden. Mit diesen kombinierten Daten können Sie die Auswirkungen von Reibung auf nachgelagerte Metriken besser verstehen.
+
+## Voraussetzungen:
 
 Dieser Anwendungsfall hat zwei Anforderungen:
 
