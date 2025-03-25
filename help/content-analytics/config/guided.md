@@ -10,7 +10,7 @@ exl-id: 4aff664c-3cd9-4591-8122-6ebff10e4a76
 source-git-commit: ba386bf8055498ba1cecdd49890194dd2a7d69f9
 workflow-type: tm+mt
 source-wordcount: '3335'
-ht-degree: 13%
+ht-degree: 21%
 
 ---
 
@@ -72,7 +72,7 @@ Der Assistent für geführte Konfigurationen besteht aus vier Abschnitten ([Deta
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_details_name_header"
 >title="Details"
->abstract="In diesem Handbuch werden die Anforderungen für die Konfiguration von Content Analytics festgelegt. Geben Sie einen Namen für diese Konfiguration an."
+>abstract="In dieser Anleitung werden die Anforderungen für die Konfiguration der Inhaltsanalyse festgelegt. Geben Sie einen Namen für diese Konfiguration an."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -103,17 +103,17 @@ Jede Konfiguration erfordert einen eindeutigen Namen. Beispiel: `Example Content
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataview_change_dialog"
 >title="Neue Datenansicht"
->abstract="Die Auswahl einer neuen Datenansicht führt zu einer Aktualisierung dieser Datenansicht, um Content Analytics-Metriken und -Dimensionen einzuschließen. Bei Bedarf wird die zugehörige Verbindung ebenfalls aktualisiert, damit die Datensätze der Inhaltsanalyse berücksichtigt werden. Die Verbindung und Datenansicht, die aktuell für die Inhaltsanalyse konfiguriert sind, werden nicht geändert."
+>abstract="Die Auswahl einer neuen Datenansicht führt zu einer Aktualisierung dieser Datenansicht, um Metriken und Dimensionen der Inhaltsanalyse einzuschließen. Bei Bedarf wird die zugehörige Verbindung ebenfalls aktualisiert, damit die Datensätze der Inhaltsanalyse berücksichtigt werden. Die Verbindung und Datenansicht, die aktuell für die Inhaltsanalyse konfiguriert sind, werden nicht geändert."
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataview_current_cleanup_labels_dialog"
->title="Ausgewählte Datenansicht bereinigen"
->abstract="Sie haben eine Datenansicht ausgewählt, die bereits für Content Analytics bereitgestellt ist. Diese bestehende Content Analytics-Konfiguration wird entfernt und die Datenansicht wird mit Ihrer neuen Konfiguration bereitgestellt."
+>title="Bereinigen der ausgewählten Datenansicht"
+>abstract="Sie haben eine Datenansicht ausgewählt, die bereits für die Inhaltsanalyse bereitgestellt ist. Diese vorhandene Inhaltsanalysekonfiguration wird entfernt und die Datenansicht wird mit Ihrer neuen Konfiguration bereitgestellt."
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataview_prev_cleanup_labels_dialog"
->title="Vorherige Datenansicht bereinigen"
->abstract="Sie haben eine neue Datenansicht ausgewählt. Die Content Analytics-Konfiguration für die zuvor ausgewählte Datenansicht wird entfernt."
+>title="Bereinigen der vorherigen Datenansicht"
+>abstract="Sie haben eine neue Datenansicht ausgewählt. Die Inhaltsanalysekonfiguration für die zuvor ausgewählte Datenansicht wird entfernt."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -173,7 +173,7 @@ In Customer Journey Analytics ist eine Datenansicht an eine Customer Journey Ana
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_experiencecapture_edit_button"
 >title="Erlebniserfassung und -definition"
->abstract="Sie können die Einstellungen in der Adobe Content Analytics-Erweiterung in der Tags-Eigenschaft bearbeiten, die mit der aktuellen Konfiguration verknüpft ist."
+>abstract="Sie können die Einstellungen in der Adobe-Erweiterung für die Inhaltsanalyse in der Tag-Eigenschaft bearbeiten, die mit der aktuellen Konfiguration verknüpft ist."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -215,12 +215,12 @@ In diesem Abschnitt konfigurieren Sie, wie Sie Ihre Inhaltsanalysedaten erfassen
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_button"
 >title="Datenerfassung"
->abstract="Definieren Sie, welche Tags-Eigenschaft Sie verwenden möchten, oder erstellen Sie eine neue. Definieren Sie zudem mithilfe regulärer Ausdrücke die ein- oder auszuschließenden Seiten und Assets."
+>abstract="Definieren Sie, welche Tag-Eigenschaft verwendet werden soll, oder erstellen Sie eine neue. Definieren Sie zudem mithilfe regulärer Ausdrücke die ein- oder auszuschließenden Seiten und Assets."
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_tag_header"
 >title="Datenerfassung"
->abstract="**Geben Sie eine Tags-Eigenschaft an**"
+>abstract="**Angeben einer Tag-Eigenschaft**"
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_pages_excluded_boldheader"
@@ -245,12 +245,12 @@ In diesem Abschnitt konfigurieren Sie, wie Sie Ihre Inhaltsanalysedaten erfassen
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_experiences_edit_button"
 >title="Datenerfassung"
->abstract="Sie können die Seiteneinstellungen in der Adobe Content Analytics-Erweiterung in der Tags-Eigenschaft bearbeiten, die der aktuellen Konfiguration zugeordnet ist."
+>abstract="Sie können die Einstellungen für Seiten in der Adobe-Erweiterung für die Inhaltsanalyse in der Tag-Eigenschaft bearbeiten, die mit der aktuellen Konfiguration verknüpft ist."
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_assets_edit_button"
 >title="Datenerfassung"
->abstract="Sie können die Einstellungen für Assets in der Adobe Content Analytics-Erweiterung in der Tags-Eigenschaft bearbeiten, die mit der aktuellen Konfiguration verknüpft ist."
+>abstract="Sie können die Einstellungen für Assets in der Adobe-Erweiterung für die Inhaltsanalyse in der Tag-Eigenschaft bearbeiten, die mit der aktuellen Konfiguration verknüpft ist."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -307,7 +307,7 @@ Nachdem Sie alle erforderlichen Details bereitgestellt haben, enthält eine Zusa
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_implementation_warning_dialog"
 >title="Bestätigung der Implementierung"
->abstract="Wenn Sie **[!UICONTROL Implementieren]** auswählen, konfigurieren Sie die Inhaltsanalyse basierend auf den in diesem Workflow getätigten Eingaben. Standardmäßig werden mehrere Einstellungen ausgewählt, die darauf basieren, was im Allgemeinen für Content Analytics nützlich ist. Als Datenverantwortlicher müssen Sie jedoch die Einstellungen der einzelnen Artefakte überprüfen, um zu bestätigen, dass die Einstellungen gemäß Ihrer Datenschutzrichtlinie, Ihren vertraglichen Rechten und Pflichten und den Zustimmungsanforderungen nach geltendem Recht implementiert wurden.<br/><br/>Beachten Sie, dass Daten erst dann erfasst werden, wenn die mit dieser Konfiguration verknüpfte Tag-Bibliothek manuell veröffentlicht wird.<br/><br/>Um Bild- und Texteigenschaften abzuleiten, ruft Adobe die Attribute wie folgt ab:<ol><li>Die URL, die zum Zeitpunkt des Site-Besuchs des Benutzers gemäß den von Ihnen konfigurierten Datenerfassungseinstellungen erfasst wurde, und</li><li>der URL, unter der das Bild gehostet wird.</li></ol>Bilder, die auf Websites von Drittanbietern gehostet werden, dürfen nicht mit Tags versehen werden."
+>abstract="Wenn Sie **[!UICONTROL Implementieren]** auswählen, konfigurieren Sie die Inhaltsanalyse basierend auf den in diesem Workflow getätigten Eingaben. Standardmäßig werden mehrere Einstellungen auf Grundlage dessen ausgewählt, was im Allgemeinen für die Inhaltsanalyse nützlich ist. Als für die Daten verantwortliche Person müssen Sie jedoch die Einstellungen der einzelnen Artefakte überprüfen, um zu bestätigen, dass die Einstellungen in Übereinstimmung mit Ihrer Datenschutzrichtlinie, Ihren vertraglichen Rechten und Pflichten sowie den Einverständnisanforderungen nach geltendem Recht implementiert werden.<br/><br/>Beachten Sie, dass Daten erst dann erfasst werden, wenn die mit dieser Konfiguration verknüpfte Tag-Bibliothek manuell veröffentlicht wird.<br/><br/>Um Bild- und Textattribute abzuleiten, ruft Adobe die Attribute ab, und zwar mithilfe:<ol><li>der URL, die zum Zeitpunkt des Site-Besuchs von Benutzenden gemäß den von Ihnen konfigurierten Datenerfassungseinstellungen erfasst wurde, und</li><li>der URL, unter der das Bild gehostet wird.</li></ol>Bilder, die auf Websites von Drittanbietern gehostet werden, dürfen nicht mit Tags versehen werden."
 
 <!-- markdownlint-enable MD034 -->
 
