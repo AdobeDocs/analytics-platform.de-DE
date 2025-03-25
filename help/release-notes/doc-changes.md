@@ -5,9 +5,9 @@ exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
 source-git-commit: 40bbcb2868de509555faab8384f1cab45fd738a0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4664'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ Die folgenden Aktualisierungen wurden seit der ersten Erstellung der Customer Jo
 | Funktion | Beschreibung |
 | --- | --- |
 | **März 2025** | |
-| Anwendungsfälle für Quantenmetriken | Es wurden Anwendungsfälle für die Erfassung von Daten aus [Quantenmetrik](/help/use-cases/third-party/quantum-metric/collect-session-id.md) hinzugefügt. |
+| Anwendungsfälle für Quantum Metric | Es wurden Anwendungsfälle für die Erfassung von Daten aus der [Quantum Metric](/help/use-cases/third-party/quantum-metric/collect-session-id.md) hinzugefügt. |
 | **Februar 2025** |  |
 | Mediensammlung: Adobe Source Connector-Aktualisierungen für neues Medienberichterstellungs-XDM | Der Analytics Source Connector [ordnet Streaming-Mediendaten in Adobe Analytics](https://experienceleague.adobe.com/de/docs/analytics/implementation/aep-edge/xdm-var-mapping?lang=de) automatisch den Feldern zu, die vom Web SDK verwendet werden. Zuvor wurden die Daten sowohl den alten als auch den neuen Speicherorten zugeordnet, in Zukunft wird jedoch nur der neue Speicherort verwendet. |
 | BI-Erweiterung – Erweiterte Unterstützung | Die BI-Erweiterung für Customer Journey Analytics unterstützt jetzt [Looker, Jupyter Notebook und R Studio](https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-usecases/data-views/bi-extension-usecases?lang=de). |
@@ -30,7 +30,7 @@ Die folgenden Aktualisierungen wurden seit der ersten Erstellung der Customer Jo
 | Produktnutzung | [Produktnutzung](https://experienceleague.adobe.com/de/docs/analytics-platform/using/tools/product-usage/usage-overview) zeigt Ihnen, wie Ihre Organisation Customer Journey Analytics verwendet. |
 | Geführte Analyse | Die Dokumentation wurde mit Angaben zur Verfügbarkeit der [geführten Analyse](/help/guided-analysis/overview.md) innerhalb der geführten Analyse aktualisiert. |
 | Dokumentation zur Verwendung benutzerdefinierter Vorlagen aus Customer Journey Analytics auf der Seite „Berichte“ in Journey Optimizer | Sie können jetzt die neue Berichterstellungsoberfläche in Adobe Journey Optimizer anpassen, indem Sie [eine Vorlage in Customer Journey Analytics erstellen oder bearbeiten](https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-workspace/templates/create-templates?lang=de) und anschließend die Vorlage speichern, um sie auf der Seite „Berichte“ in Journey Optimizer zu verwenden. Zuvor konnte die neue Berichterstellungsoberfläche in Adobe Journey Optimizer nicht angepasst werden. |
-| Vorlagen in Analysis Workspace | In Customer Journey Analytics sind jetzt [vordefinierte Vorlagen](https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-workspace/templates/use-templates?lang=de) und [Unternehmensvorlagen](https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-workspace/templates/create-templates?lang=de) verfügbar. |
+| Vorlagen in Analysis Workspace | In Customer Journey Analytics sind jetzt [vordefinierte Vorlagen](https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-workspace/templates/use-templates) und [Unternehmensvorlagen](https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-workspace/templates/create-templates?lang=de) verfügbar. |
 | Intelligente Beschriftungen v2 | [Intelligente Beschriftungen](https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-workspace/visualizations/intelligent-captions?lang=de) werden jetzt für die folgenden Visualisierungen unterstützt: Mehrzeilig, Balken, Horizontalbalken, Ringdiagramme, Fläche, Fluss und Fallout. Sie können auswählen, ob alle intelligenten Beschriftungen gleichzeitig in einer erweiterten Ansicht angezeigt werden sollen, oder Sie können einzelne intelligente Beschriftungen einzeln anzeigen. |
 
 ## 2024
