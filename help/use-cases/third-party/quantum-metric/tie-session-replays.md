@@ -7,9 +7,9 @@ feature: Use Cases
 hidefromtoc: true
 hide: true
 exl-id: fcc36457-4ce9-4c93-93e2-de03becfd5da
-source-git-commit: 82d7702c57fdff86fa1f4b70d75e7ff7f019ec86
+source-git-commit: 752e8564c341cf02b5378a12a820f52ca6164a3d
 workflow-type: tm+mt
-source-wordcount: '383'
+source-wordcount: '365'
 ht-degree: 1%
 
 ---
@@ -41,10 +41,11 @@ Erstellen Sie eine Freiformtabelle in Workspace und konfigurieren Sie sie so, da
 
 1. Klicken Sie auf **[!UICONTROL Erstellen]**.
 
-Jede Sitzungs-ID ist jetzt ein klickbarer Link. Diese Links führen Sie zu Quantum Metric in einer neuen Registerkarte, wo Sie diese bestimmte Sitzung detaillierter analysieren können. Weitere [ zum Hinzufügen von Hyperlinks zu Analysis Workspace-Dimensionselementen finden Sie unter ](/help/analysis-workspace/visualizations/freeform-table/freeform-table-hyperlinks.md)Erstellen von Hyperlinks in einer Freiformtabelle“.
+Jede Sitzungs-ID ist jetzt ein klickbarer Link. Weitere [ zum Hinzufügen von Hyperlinks zu Analysis Workspace-Dimensionselementen finden Sie unter ](/help/analysis-workspace/visualizations/freeform-table/freeform-table-hyperlinks.md)Erstellen von Hyperlinks in einer Freiformtabelle“.
 
 ## Schritt 2: Anzeigen von Sitzungen in Customer Journey Analytics
 
-Nachdem Sie den Workspace-Bericht mit klickbaren Links erstellt haben, können Sie in Customer Journey Analytics Filter verwenden, um interessante Sitzungen zu identifizieren, die Sie in Quantum Metric weiter analysieren können.
-Die Tabelle gibt alle Sitzungen in diesem Segment zurück, und Sie können auf eine beliebige Sitzung klicken, um sie in QM weiter zu erkunden.  Weitere Informationen zur Quantum Metric-Sitzungswiederholung finden Sie unter [https://www.quantummetric.com/platform/session-replay](https://www.quantummetric.com/platform/session-replay). Für weitere Ressourcen wenden Sie sich bitte an Ihren Kundenbetreuer von Quantum Metric oder senden Sie eine Anfrage über das Quantum Metric [Kundenanfrageportal](https://community.quantummetric.com/s/public-support-page).
+Nachdem Sie ein interessantes Segment gefunden haben, für das Sie Sitzungswiederholungen untersuchen möchten, können Sie es auf das Bedienfeld anwenden, das Ihre Sitzungs-ID-Links enthält, und nach Segment filtern. Die Tabelle gibt alle Sitzungen in diesem Segment zurück, und Sie können auf eine beliebige Sitzung klicken, um sie in Quantum Metric weiter zu untersuchen.
+
+Weitere Informationen zur Quantum Metric-Sitzungswiederholung finden Sie unter [https://www.quantummetric.com/platform/session-replay](https://www.quantummetric.com/platform/session-replay). Für weitere Ressourcen wenden Sie sich bitte an Ihren Kundenbetreuer von Quantum Metric oder senden Sie eine Anfrage über das Quantum Metric [Kundenanfrageportal](https://community.quantummetric.com/s/public-support-page).
 
