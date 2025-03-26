@@ -5,10 +5,10 @@ exl-id: c7f226c5-0058-4151-9c9a-652b37266beb
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: e4e0c3cf2e865454837df6626c3b1b09f119f07f
+source-git-commit: 16e8668d88dda2784ba60a1fa4302225ceff190f
 workflow-type: tm+mt
-source-wordcount: '258'
-ht-degree: 93%
+source-wordcount: '329'
+ht-degree: 53%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 93%
 <!-- markdownlint-enable MD034 -->
 
 
-Mit Optionen für keinen Wert können Sie festlegen, wie Analysis Workspace Situationen handhabt, in denen ein Ereignis in einem Datensatz eine Metrik enthält, die Dimension jedoch keinen Wert enthielt. Sie können den Namen dieses Dimensionselements auswählen, es vollständig ausblenden oder es sogar als tatsächlichen Wert behandeln.
+[!UICONTROL Keine Wertoptionen] ermöglichen es Ihnen zu bestimmen, wie Analysis Workspace Situationen handhabt, in denen ein Ereignis in einem Datensatz eine Metrik enthält, die Dimension jedoch keinen Wert enthielt. Sie können den Namen dieses Dimensionselements auswählen, es vollständig ausblenden oder es sogar als tatsächlichen Wert behandeln.
 
 ![Keine Wertoptionen](../assets/no-value-options.png)
 
@@ -32,13 +32,20 @@ Mit Optionen für keinen Wert können Sie festlegen, wie Analysis Workspace Situ
 
 | Einstellung | Beschreibung |
 | --- | --- |
-| [!UICONTROL Falls angezeigt, „Kein Wert“ abrufen] | Ein Textfeld, mit dem Sie das Dimensionselement **[!UICONTROL Kein Wert]** in etwas anderes umbenennen können. |
-| [!UICONTROL Standardmäßig nicht „Kein Wert“ anzeigen] | Zeigt diesen Wert im Reporting nicht an. Metrikereignisse, die nicht an diese Dimension gebunden sind, sind im Bericht nicht sichtbar. |
-| [!UICONTROL Standardmäßig „Kein Wert“ anzeigen] | Zeigt diesen Wert im Reporting an. |
-| [!UICONTROL „Kein Wert“ als Wert behandeln] | Ersetzt leere Werte in den Daten durch den Text, den Sie unter [!UICONTROL Falls angezeigt, „Kein Wert“ abrufen] angegeben haben. Wenn Sie beispielsweise Mobilgerätetypen als Dimension haben, können Sie das Element **[!UICONTROL Kein Wert]** in „Desktop“ umbenennen. Beim Ändern dieses Felds in einen benutzerdefinierten Wert wird dieser benutzerdefinierte Wert als legitimer Zeichenfolgenwert behandelt. Wenn Sie also z. B. den Wert „Rot“ in dieses Feld eingeben, werden alle Instanzen der Zeichenfolge „Rot“, die in den Daten selbst vorkommen, auch unter demselben von Ihnen angegebenen Zeileneintrag erscheinen. |
+| **[!UICONTROL Falls angezeigt, „Kein Wert“ abrufen]** | Ein Textfeld, mit dem Sie das Dimensionselement **[!UICONTROL Kein Wert]** in etwas anderes umbenennen können. |
+| **[!UICONTROL Standardmäßig nicht „Kein Wert“ anzeigen]** | Zeigt diesen Wert im Reporting nicht an. Metrikereignisse, die nicht an diese Dimension gebunden sind, sind im Bericht nicht sichtbar. |
+| **[!UICONTROL Standardmäßig „Kein Wert“ anzeigen]** | Zeigt diesen Wert im Reporting an. |
+| **[!UICONTROL „Kein Wert“ als Wert behandeln]** | (Nicht unterstützt für numerische Dimensionen) Ersetzt leere Werte in den Daten durch den Text, den Sie unter „Wenn angezeigt[!UICONTROL  „Kein Wert“ aufrufen angegeben ]. Wenn Sie beispielsweise Mobilgerätetypen als Dimension haben, können Sie das Element **[!UICONTROL Kein Wert]** in „Desktop“ umbenennen. Beim Ändern dieses Felds in einen benutzerdefinierten Wert wird dieser benutzerdefinierte Wert als legitimer Zeichenfolgenwert behandelt. Wenn Sie also z. B. den Wert „Rot“ in dieses Feld eingeben, werden alle Instanzen der Zeichenfolge „Rot“, die in den Daten selbst vorkommen, auch unter demselben von Ihnen angegebenen Zeileneintrag erscheinen. |
 
-{style="table-layout:auto"}
+## Unterstützung von „Kein Wert“ für numerische Dimensionen {#numeric}
 
-## Blogpost
+Wenn Sie einen numerischen Wert als Dimension verwenden, können Sie
 
-Hier ist ein Blogpost über [Umgang mit „no value“ auf Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/handling-quot-no-value-quot-in-customer-journey-analytics/ba-p/597339).
+* Konfigurieren der Option „Kein Wert“ in einer Datenansicht. Beachten Sie, dass alle Konfigurationseinstellungen mit Ausnahme von &quot;**[!UICONTROL &quot; als Wert]** werden.
+* Verwenden Sie [!UICONTROL Einschließen von „Kein Wert“] für numerische Dimensionen in einer Freiformtabelle in Workspace.
+* Verwenden Sie im Filtergenerator die Operatoren „vorhanden“ oder „nicht vorhanden“ mit numerischen Dimensionen.
+
+>[!MORELIKETHIS]
+>
+>Im Folgenden finden Sie einen verwandten Blogpost über [Umgang mit „kein Wert“ in Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/handling-quot-no-value-quot-in-customer-journey-analytics/ba-p/597339).
+
