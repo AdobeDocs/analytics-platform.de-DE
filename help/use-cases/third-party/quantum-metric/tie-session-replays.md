@@ -7,7 +7,7 @@ feature: Use Cases
 hidefromtoc: true
 hide: true
 exl-id: fcc36457-4ce9-4c93-93e2-de03becfd5da
-source-git-commit: 752e8564c341cf02b5378a12a820f52ca6164a3d
+source-git-commit: 9563b13da52963eaf7b17050fb9a7cb3a47ef1ed
 workflow-type: tm+mt
 source-wordcount: '365'
 ht-degree: 1%
@@ -18,7 +18,7 @@ ht-degree: 1%
 
 Durch die Verknüpfung von Quantum Metric-Sitzungswiederholungen mit CJA-Daten können Kunden das „Warum“ hinter „dem Was“ besser verstehen.  Workspace kann verwendet werden, um Sitzungen mit Reibung zu ermitteln. Anschließend können Sie auf per Hyperlink verknüpfte Sitzungs-IDs klicken, um die Sitzungswiederholung in Quantum Metric zu untersuchen.  Diese Daten ermöglichen die Anzeige des Verhaltens innerhalb einer Sitzung und ein besseres Verständnis dessen, was die Reibung der Verbraucher antreibt.  Durch Sitzungswiederholungen im Zusammenhang mit CJA können Sie wichtige Zusammenhänge im Kundenverhalten in Ihrem Erlebnis erfassen.
 
-## Voraussetzungen
+## Voraussetzungen:
 
 In diesem Anwendungsfall müssen Sie die Sitzungs-ID der Quantum-Metrik zusammen mit dem Rest Ihrer Implementierung erfassen. Unter [Erfassen von Quantum Metric-Sitzungs-IDs in Customer Journey Analytics](collect-session-id.md) erfahren Sie, wie Sie Ihre Implementierung ändern können.
 
