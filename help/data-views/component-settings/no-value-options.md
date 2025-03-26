@@ -5,9 +5,9 @@ exl-id: c7f226c5-0058-4151-9c9a-652b37266beb
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: 16e8668d88dda2784ba60a1fa4302225ceff190f
+source-git-commit: 1a696662f10fddd42f3bbdbb79a6e735bf203bdf
 workflow-type: tm+mt
-source-wordcount: '329'
+source-wordcount: '331'
 ht-degree: 53%
 
 ---
@@ -41,9 +41,10 @@ ht-degree: 53%
 
 Wenn Sie einen numerischen Wert als Dimension verwenden, können Sie
 
-* Konfigurieren der Option „Kein Wert“ in einer Datenansicht. Beachten Sie, dass alle Konfigurationseinstellungen mit Ausnahme von &quot;**[!UICONTROL &quot; als Wert]** werden.
-* Verwenden Sie [!UICONTROL Einschließen von „Kein Wert“] für numerische Dimensionen in einer Freiformtabelle in Workspace.
-* Verwenden Sie im Filtergenerator die Operatoren „vorhanden“ oder „nicht vorhanden“ mit numerischen Dimensionen.
+* Konfigurieren der Option „Kein Wert“ in einer Datenansicht. Beachten Sie, dass alle oben gezeigten Konfigurationseinstellungen unterstützt werden, mit Ausnahme von **[!UICONTROL Kein Wert als Wert behandeln]**.
+* Verwenden Sie **[!UICONTROL Einschließen von „Kein Wert“]** für numerische Dimensionen in einer Freiformtabelle in Workspace.
+* Verwenden Sie im Filtergenerator die Operatoren **[!UICONTROL vorhanden]** oder **[!UICONTROL nicht vorhanden]** mit numerischen Dimensionen.
+
 
 >[!MORELIKETHIS]
 >
