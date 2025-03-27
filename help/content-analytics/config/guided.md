@@ -7,10 +7,10 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 4aff664c-3cd9-4591-8122-6ebff10e4a76
-source-git-commit: ba386bf8055498ba1cecdd49890194dd2a7d69f9
+source-git-commit: 20767a4672319602d35435aeedb76749a245e691
 workflow-type: tm+mt
-source-wordcount: '3335'
-ht-degree: 21%
+source-wordcount: '2428'
+ht-degree: 25%
 
 ---
 
@@ -28,7 +28,7 @@ Mit der geführten Konfiguration können Sie Content Analytics schnell und einfa
 
 So greifen Sie auf die Content Analytics-Konfiguration zu
 
-* Wählen **[!UICONTROL Daten-Management]** > **[!UICONTROL Inhaltsanalyse]** aus dem Hauptmenü in Customer Journey Analytics.
+* Wählen **[!UICONTROL Daten-Management]** > **[!UICONTROL Content Analytics-]** im Hauptmenü von Customer Journey Analytics aus.
 
 Auf dem Bildschirm **[!UICONTROL Content Analytics]** Konfigurationen wird eine Tabelle der bestehenden Content Analytics-Konfigurationen angezeigt.
 
@@ -42,7 +42,7 @@ Für jede Konfiguration stehen die folgenden Details zur Verfügung:
 | **[!UICONTROL Erstellt am]** | Der Zeitstempel, zu dem die Konfiguration erstellt wurde. |
 | **[!UICONTROL Geändert am]** | Der Zeitstempel, wann die Konfiguration zuletzt geändert wurde. |
 | **[!UICONTROL Sandbox]** | Die Sandbox in der Organisation, in der Content Analytics konfiguriert (geplant) und implementiert wird. |
-| **[!UICONTROL Status]** | Der Status der Konfiguration. Der Status kann lauten: <br/>![StatusGray](/help/assets/icons/StatusGray.svg) **[!UICONTROL Draft]**: Die Konfiguration wird für später gespeichert und nicht bereitgestellt.<br/>![StatusRed](/help/assets/icons/StatusRed.svg) **[!UICONTROL Failed]**: Die Konfiguration ist fehlgeschlagen. Sie müssen die Konfiguration bearbeiten und die erforderlichen Änderungen vornehmen.<br/>![StatusGreen](/help/assets/icons/StatusGreen.svg) **[!UICONTROL Complete]**: Die Konfiguration wurde abgeschlossen und erfolgreich implementiert. |
+| **[!UICONTROL Status]** | Der Status der Konfiguration. Der Status kann lauten: <br/>![StatusGray](/help/assets/icons/StatusGray.svg) **[!UICONTROL Draft]**: Die Konfiguration wird für später gespeichert und nicht bereitgestellt.<br/>![StatusRed](/help/assets/icons/StatusRed.svg) **[!UICONTROL Failed]**: Die Konfiguration ist fehlgeschlagen. Sie können auf **[!UICONTROL Bearbeiten]** klicken, um Informationen zum Fehler zu erhalten. Adobe geht proaktiv gegen fehlgeschlagene Implementierungen vor. Weitere Informationen erhalten Sie bei der Kundenunterstützung.<br/>![StatusGreen](/help/assets/icons/StatusGreen.svg) **[!UICONTROL Complete]**: Die Konfiguration wurde abgeschlossen und erfolgreich implementiert. |
 
 Sie können &quot;![&quot; verwenden](/help/assets/icons/ColumnSetting.svg) um die Tabelle anzupassen. Wählen Sie aus, welche Spalten im Dialogfeld **[!UICONTROL Tabelle anpassen]** angezeigt werden sollen, und wählen Sie **[!UICONTROL Anwenden]**, um die Änderungen anzuwenden.
 
@@ -134,7 +134,7 @@ Ihre Konfiguration erfordert die Auswahl einer &quot;[&quot; ](/help/data-views/
 
    ![Content Analytics-Konfiguration einer Datenansicht - Datenansichtstabelle](../assets/aca-configuration-dataview-dialog.png)
 
-   Für eine neue Konfiguration zeigt die Liste nur Datenansichten an, die mit Sandboxes verknüpft sind, die keine aktive Konfiguration haben.
+   Für eine neue Konfiguration zeigt die Liste nur Datenansichten an, die mit Sandboxes verknüpft sind, die keine aktive Konfiguration haben. Außerdem sehen Sie nur Datenansichten, die mit Sandboxes verknüpft sind, auf die Sie Zugriff haben, und Verbindungen, zu denen Sie berechtigt sind, sie zu ändern.
 
    Wenn Sie eine vorhandene Konfiguration bearbeiten, zeigt die Liste nur Datenansichten an, die in der Sandbox verfügbar sind, die bereits mit der vorhandenen Konfiguration verknüpft ist.
 
@@ -191,8 +191,8 @@ So schließen Sie Erlebnisse in eine neue oder nicht implementierte Konfiguratio
 ![Erfassung und Definition der Erlebniskonfiguration für Content Analytics](../assets/aca-configuration-experience.png)
 
 1. Aktivieren Sie **[!UICONTROL Erlebnisse einschließen]**.
-1. Optional. Geben Sie die Parameter an, wie Inhalte auf Ihrer Website gerendert werden sollen. Bei den Parametern handelt es sich um keine oder mehrere Kombinationen aus einem **[!UICONTROL regulären Domänenausdruck]** und **[!UICONTROL Abfrageparametern]**.
-   1. Geben Sie einen **[!UICONTROL Regulären Ausdruck der Domain]** ein, z. B. `/^(?!.*\b(store|help|admin)\b)/`. Stellen Sie sicher, dass Sie reguläre Ausdrücke mithilfe von `/` mit Escape-Zeichen versehen.
+1. Geben Sie optional die Parameter für das Rendern von Inhalten auf Ihrer Website an. Bei den Parametern handelt es sich um keine oder mehrere Kombinationen aus einem **[!UICONTROL regulären Domänenausdruck]** und **[!UICONTROL Abfrageparametern]**. Die Abfrageparameter geben an, welche Parameter sich auf den Inhalt auf Ihrer Seite auswirken. Mit dieser Eingabe kann Content Analytics alle Parameter ignorieren, die sich nicht auf den Inhalt der Seite auswirken, wenn ein eindeutiges Erlebnis definiert wird.
+   1. Geben Sie einen **[!UICONTROL Regulären Ausdruck der Domain]** ein, z. B. `/^(?!.*\b(store|help|admin)\b)/`. Stellen Sie sicher, dass Sie reguläre Ausdrücke mithilfe von `/` mit Escape-Zeichen versehen. Der reguläre Ausdruck der Domain gibt an, für welche URLs diese Parameter gelten. Beispielsweise können Sie mehrere Sites haben, und für jede Site steuern andere Parameter den Inhalt. Wenn die Abfrageparameter für alle Ihre Seiten gelten, können Sie `.*` verwenden, um alle Seiten anzugeben.
    1. Geben Sie eine kommagetrennte Liste von **[!UICONTROL Abfrageparametern]** an, z. B. `outdoors, patio, kitchen`.
 1. Wählen **[!UICONTROL Entfernen]** aus, wenn Sie eine Kombination aus regulären Domain-Ausdrücken und Abfrageparametern entfernen möchten.
 1. Wählen **[!UICONTROL Regex hinzufügen]** aus, wenn Sie eine weitere Kombination aus einem regulären Ausdruck und Abfrageparametern hinzufügen möchten.
@@ -201,7 +201,8 @@ So bearbeiten Sie vorhandene Erlebnisse oder schließen neue Erlebnisse in eine 
 
 ![Erfassung und Definition der Erlebniskonfiguration für Content Analytics](../assets/aca-configuration-experience-edit.png)
 
-* Wählen Sie ![Bearbeiten](/help/assets/icons/Edit.svg) **[!UICONTROL Bearbeiten]** aus, um die Konfiguration zum Erfassen von Erlebnissen in Content Analytics zu bearbeiten. Sie werden zur [Adobe Content Analytics-Erweiterung](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-filtering) in der Tags-Eigenschaft weitergeleitet, die der aktuellen Konfiguration zugeordnet ist.
+* Schalten Sie **[!UICONTROL Erlebnisse einschließen]** um die Verfügbarkeit von Erlebniskomponenten, Visualisierungen und Bedienfeldern in Analysis Workspace zu aktivieren oder zu deaktivieren.
+* Wählen Sie ![Bearbeiten](/help/assets/icons/Edit.svg) **[!UICONTROL Bearbeiten]** aus, um die Konfiguration der Datenerfassung für Erlebnisse in Content Analytics zu bearbeiten. Sie werden zur [Adobe Content Analytics-Erweiterung](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-filtering) in der Tags-Eigenschaft weitergeleitet, die der aktuellen Konfiguration zugeordnet ist.
 
 
 
@@ -322,322 +323,12 @@ Wenn Sie eine Konfiguration erstellt oder bearbeitet haben, sind die folgenden A
       * Die mit der ausgewählten Datenansicht verknüpfte Verbindung wird geändert, um Content Analytics-Ereignisse und -Attributdatensätze einzuschließen.
       * Workspace wird eine Berichtsvorlage für Content Analytics hinzugefügt.
 
-+++ Details
-
-     Details werden für die folgenden Szenarien bereitgestellt:
-
-      * **Tags** Eigenschaft existiert **✓** oder nicht **✕**.
-      * **Web SDK** Erweiterung für die Tags-Eigenschaft ist **✓** vorhanden **✕**.
-      * Adobe **Content Analytics**-Erweiterung für die Tag-Eigenschaft ist **✓** vorhanden oder **✕** nicht vorhanden.
-
-     <table style="table-layout:fixed">
-      <tr>
-        <th></th>
-        <th colspan="4">Szenarien:</th>
-      </tr>
-      <tr>
-        <th>
-          <strong>Wenn</strong>
-        </th>
-        <th>
-          <strong>✓ Tags<br>✓ Web SDK<br/>✓ Content Analytics</strong>
-        </th>
-        <th>
-          <strong>✓ Tags<br>✓ Web SDK<br/>✕ Content Analytics</strong>
-        </th>
-        <th>
-          <strong>✓Tags<br>✕ Web SDK<br/>✕ Content Analytics</strong>
-        </th>
-        <th>
-          <strong>✕ Tags<br>✕ Web SDK<br/>✕ Content Analytics</strong>
-        </th>
-      </tr>
-      <tbody>
-        <tr>
-          <td>Berichtsvorlage</td>
-          <td colspan="4">Eine Berichtsvorlage ist verfügbar</td>
-        </tr>
-        <tr>
-          <td>Datenansicht</td>
-          <td colspan="4">Geändert/erstellt, um ACA-Dimensionen und -Metriken zu erhalten</td>
-        </tr>
-        <tr>
-          <td>Verbindung</td>
-          <td colspan="4">Geändert, um ACA-Datensätze einzuschließen (ACA-Ereignisse, Asset-Attribute, Erlebnisattribute)</td>
-        </tr>
-      </tbody>
-    </table>
-
-+++
 
    * **[!UICONTROL Adobe Experience Platform]**-Konfiguration:
       * Die Erstellung von Schemas zur Modellierung von Content-Analytics-Ereignissen, Asset-Attributen und (falls konfiguriert) Erlebnisattributen.
       * Die Erstellung von Datensätzen zur Erfassung von Content-Analytics-Ereignissen, Asset-Attributen und (falls konfiguriert) Erlebnisattributen.
       * Die Erstellung eines Datenflusses, der den Feature Service verwendet, um Inhaltsattribute aus Content Analytics-Ereignissen zu generieren und zu aktualisieren.
 
-+++ Details
-
-     Details werden für die folgenden Szenarien bereitgestellt:
-
-      * **Tags** Eigenschaft existiert **✓** oder nicht **✕**.
-      * **Web SDK** Erweiterung für die Tags-Eigenschaft ist **✓** vorhanden **✕**.
-      * Adobe **Content Analytics**-Erweiterung für die Tag-Eigenschaft ist **✓** vorhanden oder **✕** nicht vorhanden.
-
-     <table style="table-layout:fixed">
-      <tr>
-        <th></th>
-        <th colspan="4">Szenarien:</th>
-      </tr>
-      <tr>
-        <th>
-          <strong>Wenn</strong>
-        </th>
-        <th>
-          <strong>✓ Tags<br>✓ Web SDK<br/>✓ Content Analytics</strong>
-        </th>
-        <th>
-          <strong>✓ Tags<br>✓ Web SDK<br/>✕ Content Analytics</strong>
-        </th>
-        <th>
-          <strong>✓Tags<br>✕ Web SDK<br/>✕ Content Analytics</strong>
-        </th>
-        <th>
-          <strong>✕ Tags<br>✕ Web SDK<br/>✕ Content Analytics</strong>
-        </th>
-      </tr>
-      <tbody>
-        <tr>
-          <td colspan="5"><strong><br/>Content Analytics-Ereignisschema</strong></td>
-        </tr>
-        <tr>
-          <td style="margin-left: 160.0px;">Name</td>
-          <td>Content Analytics-Ereignisse</td>
-          <td>Content Analytics-Ereignisse</td>
-          <td>Content Analytics-Ereignisse</td>
-          <td>Content Analytics-Ereignisse</td>
-        </tr>
-        <tr>
-          <td>Beschreibung</td>
-          <td><i>vorbestimmte Nachfrist</i></td>
-          <td><i>vorbestimmte Nachfrist</i></td>
-          <td><i>vorbestimmte Nachfrist</i></td>
-          <td><i>vorbestimmte Nachfrist</i></td>
-        </tr>
-        <tr>
-          <td>Profil aktiviert</td>
-          <td>Nein</td>
-          <td>Nein</td>
-          <td>Nein</td>
-          <td>Nein</td>
-        </tr>
-        <tr>
-          <td colspan="5"><strong><br/>Content Analytics-Ereignisdatensatz</strong></td>
-        </tr>
-        <tr>
-          <td>Name</td>
-          <td>Content Analytics-Ereignisse</td>
-          <td>Content Analytics-Ereignisse</td>
-          <td>Content Analytics-Ereignisse</td>
-          <td>Content Analytics-Ereignisse</td>
-        </tr>
-        <tr>
-          <td>Schema</td>
-          <td>Content Analytics-Ereignis</td>
-          <td>Content Analytics-Ereignis</td>
-          <td>Content Analytics-Ereignis</td>
-          <td>Content Analytics-Ereignis</td>
-        </tr>
-        <tr>
-          <td>Beschreibung</td>
-          <td><i>vorbestimmte Nachfrist</i></td>
-          <td><i>vorbestimmte Nachfrist</i></td>
-          <td><i>vorbestimmte Nachfrist</i></td>
-          <td><i>vorbestimmte Nachfrist</i></td>
-        </tr>
-        <tr>
-          <td>Tags</td>
-          <td><i>Leer?</i></td>
-          <td><i>Leer?</i></td>
-          <td><i>Leer?</i></td>
-          <td><i>Leer?</i></td>
-        </tr>
-        <tr>
-          <td>Systemdatensatz</td>
-          <td>?</td>
-          <td>?</td>
-          <td>?</td>
-          <td>?</td>
-        </tr>
-        <tr>
-          <td>Profil aktiviert</td>
-          <td>Nein</td>
-          <td>Nein</td>
-          <td>Nein</td>
-          <td>Nein</td>
-        </tr>
-        <tr>
-          <td>Data Governance (DULE-Kennzeichnungen)</td>
-          <td>?</td>
-          <td>?</td>
-          <td>?</td>
-          <td>?</td>
-        </tr>
-        <tr>
-          <td colspan="5"><strong><br/>Content Analytics Asset-Attributschema</strong></td>
-        </tr>
-        <tr>
-          <td>Name</td>
-          <td>Content Analytics-Asset-Attribute</td>
-          <td>Content Analytics-Asset-Attribute</td>
-          <td>Content Analytics-Asset-Attribute</td>
-          <td>Content Analytics-Asset-Attribute</td>
-        </tr>
-        <tr>
-          <td>Beschreibung</td>
-          <td><i>vorbestimmte Nachfrist</i></td>
-          <td><i>vorbestimmte Nachfrist</i></td>
-          <td><i>vorbestimmte Nachfrist</i></td>
-          <td><i>vorbestimmte Nachfrist</i></td>
-        </tr>
-        <tr>
-          <td>Profil aktiviert</td>
-          <td>Nein</td>
-          <td>Nein</td>
-          <td>Nein</td>
-          <td>Nein</td>
-        </tr>
-        <tr>
-          <td colspan="5"><strong><br/>Content Analytics Assets-Attributdatensatz</strong></td>
-        </tr>
-        <tr>
-          <td>Name</td>
-          <td>Content Analytics-Asset-Attribute</td>
-          <td>Content Analytics-Asset-Attribute</td>
-          <td>Content Analytics-Asset-Attribute</td>
-          <td>Content Analytics-Asset-Attribute</td>
-        </tr>
-        <tr>
-          <td>Schema</td>
-          <td>Content Analytics-Asset-Attribute</td>
-          <td>Content Analytics-Asset-Attribute</td>
-          <td>Content Analytics-Asset-Attribute</td>
-          <td>Content Analytics-Asset-Attribute</td>
-        </tr>
-        <tr>
-          <td>Beschreibung</td>
-          <td><i>vorbestimmte Nachfrist</i></td>
-          <td><i>vorbestimmte Nachfrist</i></td>
-          <td><i>vorbestimmte Nachfrist</i></td>
-          <td><i>vorbestimmte Nachfrist</i></td>
-        </tr>
-        <tr>
-          <td>Tags</td>
-          <td><i>Leer?</i></td>
-          <td><i>Leer?</i></td>
-          <td><i>Leer?</i></td>
-          <td><i>Leer?</i></td>
-        </tr>
-        <tr>
-          <td>Systemdatensatz</td>
-          <td>?</td>
-          <td>?</td>
-          <td>?</td>
-          <td>?</td>
-        </tr>
-        <tr>
-          <td>Profil aktiviert</td>
-          <td>Nein</td>
-          <td>Nein</td>
-          <td>Nein</td>
-          <td>Nein</td>
-        </tr>
-        <tr>
-          <td>Data Governance (DULE-Kennzeichnungen)</td>
-          <td>?</td>
-          <td>?</td>
-          <td>?</td>
-          <td>?</td>
-        </tr>
-        <tr>
-          <td colspan="5"><strong><br/>Content Analytics Experience Attributes-Schema</strong></td>
-        </tr>
-        <tr>
-          <td>Name</td>
-          <td>Content Analytics Experience-Attribute</td>
-          <td>Content Analytics Experience-Attribute</td>
-          <td>Content Analytics Experience-Attribute</td>
-          <td>Content Analytics Experience-Attribute</td>
-        </tr>
-        <tr>
-          <td>Beschreibung</td>
-          <td><i>vorbestimmte Nachfrist</i></td>
-          <td><i>vorbestimmte Nachfrist</i></td>
-          <td><i>vorbestimmte Nachfrist</i></td>
-          <td><i>vorbestimmte Nachfrist</i></td>
-        </tr>
-        <tr>
-          <td>Profil aktiviert</td>
-          <td>Nein</td>
-          <td>Nein</td>
-          <td>Nein</td>
-          <td>Nein</td>
-        </tr>
-        <tr>
-          <td colspan="5"><strong><br/>Content Analytics Experience Attributes-Datensatz</strong></td>
-        </tr>
-        <tr>
-          <td>Name</td>
-          <td>Content Analytics Experience-Attribute</td>
-          <td>Content Analytics Experience-Attribute</td>
-          <td>Content Analytics Experience-Attribute</td>
-          <td>Content Analytics Experience-Attribute</td>
-        </tr>
-        <tr>
-          <td>Schema</td>
-          <td>Content Analytics Experience-Attribute</td>
-          <td>Content Analytics Experience-Attribute</td>
-          <td>Content Analytics Experience-Attribute</td>
-          <td>Content Analytics Experience-Attribute</td>
-        </tr>
-        <tr>
-          <td>Beschreibung</td>
-          <td><i>vorbestimmte Nachfrist</i></td>
-          <td><i>vorbestimmte Nachfrist</i></td>
-          <td><i>vorbestimmte Nachfrist</i></td>
-          <td><i>vorbestimmte Nachfrist</i></td>
-        </tr>
-        <tr>
-          <td>Tags</td>
-          <td><i>Leer?</i></td>
-          <td><i>Leer?</i></td>
-          <td><i>Leer?</i></td>
-          <td><i>Leer?</i></td>
-        </tr>
-        <tr>
-          <td>Systemdatensatz</td>
-          <td>?</td>
-          <td>?</td>
-          <td>?</td>
-          <td>?</td>
-        </tr>
-        <tr>
-          <td>Profil aktiviert</td>
-          <td>Nein</td>
-          <td>Nein</td>
-          <td>Nein</td>
-          <td>Nein</td>
-        </tr>
-        <tr>
-          <td>Data Governance (DULE-Kennzeichnungen)</td>
-          <td>?</td>
-          <td>?</td>
-          <td>?</td>
-          <td>?</td>
-        </tr>
-      </tbody>
-    </table>
-
-+++
 
    * **[!UICONTROL Datenerfassung]** Konfiguration:
       * Die neue oder vorhandene Tags-Eigenschaft ist so konfiguriert, dass sie die Datenerfassung in Content Analytics unterstützt. Diese Konfiguration beinhaltet die Einbindung der Adobe Content Analytics-Erweiterung für Tags.
@@ -646,340 +337,6 @@ Wenn Sie eine Konfiguration erstellt oder bearbeitet haben, sind die folgenden A
       * Wenn die Web-SDK nicht für die Tags-Eigenschaft konfiguriert ist, wird eine neue Web-SDK-Konfiguration erstellt, um nur Content Analytics-Ereignisse zu senden.
       * Wenn die Web-SDK für diese Tags-Eigenschaft konfiguriert ist, werden an der vorhandenen Web-SDK-Konfiguration keine Änderungen vorgenommen.
 
-+++ Details
-
-     Details werden für die folgenden Szenarien bereitgestellt:
-
-      * **Tags** Eigenschaft existiert **✓** oder nicht **✕**.
-      * **Web SDK** Erweiterung für die Tags-Eigenschaft ist **✓** vorhanden **✕**.
-      * Adobe **Content Analytics**-Erweiterung für die Tag-Eigenschaft ist **✓** vorhanden oder **✕** nicht vorhanden.
-
-     <table style="table-layout:fixed">
-      <tr>
-        <th></th>
-        <th colspan="4">Szenarien:</th>
-      </tr>
-      <tr>
-        <th>
-          <strong>Wenn</strong>
-        </th>
-        <th>
-          <strong>✓ Tags<br>✓ Web SDK<br/>✓ Content Analytics</strong>
-        </th>
-        <th>
-          <strong>✓ Tags<br>✓ Web SDK<br/>✕ Content Analytics</strong>
-        </th>
-        <th>
-          <strong>✓Tags<br>✕ Web SDK<br/>✕ Content Analytics</strong>
-        </th>
-        <th>
-          <strong>✕ Tags<br>✕ Web SDK<br/>✕ Content Analytics</strong>
-        </th>
-      </tr>
-      <tbody>
-        <tr>
-          <td colspan="5"><strong><br/>Datenstrom</strong></td>
-        </tr>
-        <tr>
-          <td>Name</td>
-          <td><i>vorhandener Wert</i></td>
-          <td>Inhaltsanalyse</td>
-          <td>Inhaltsanalyse</td>
-          <td>Inhaltsanalyse</td>
-        </tr>
-        <tr>
-          <td>Beschreibung</td>
-          <td><i>vorhandener Wert</i></td>
-          <td><i>vorher ausgemacht</i></td>
-          <td><i>vorher ausgemacht</i></td>
-          <td><i>vorher ausgemacht</i></td>
-        </tr>
-        <tr>
-          <td>Zuordnungsschema</td>
-          <td><i>vorhandener Wert</i></td>
-          <td><i>vorher ausgemacht</i></td>
-          <td><i>vorher ausgemacht</i></td>
-          <td><i>vorher ausgemacht</i></td>
-        </tr>
-        <tr>
-          <td>Geolokalisierung und Netzwerksuche</td>
-          <td><i>Vorhandene Werte</i></td>
-          <td>Alle Optionen ausgeschaltet</td>
-          <td>Alle Optionen ausgeschaltet</td>
-          <td>Alle Optionen ausgeschaltet</td>
-        </tr>
-        <tr>
-          <td>Gerätesuche</td>
-          <td><i>vorhandener Wert</i></td>
-          <td>Keine Geräteinformationen erfassen</td>
-          <td>Keine Geräteinformationen erfassen</td>
-          <td>Keine Geräteinformationen erfassen</td>
-        </tr>
-        <tr>
-          <td>IP-Verschleierung</td>
-          <td><i>vorhandener Wert</i></td>
-          <td>Keine</td>
-          <td>Keine</td>
-          <td>Keine</td>
-        </tr>
-        <tr>
-          <td>First-Party-ID-Cookie</td>
-          <td><i>vorhandener Wert</i></td>
-          <td>Aus</td>
-          <td>Aus</td>
-          <td>Aus</td>
-        </tr>
-        <tr>
-          <td>Synchronisierung der Drittanbieter-ID</td>
-          <td><i>vorhandener Wert</i></td>
-          <td>Aus</td>
-          <td>Aus</td>
-          <td>Aus</td>
-        </tr>
-        <tr>
-          <td>Zugriffstyp</td>
-          <td><i>vorhandener Wert</i></td>
-          <td>Gemischte Authentifizierung</td>
-          <td>Gemischte Authentifizierung</td>
-          <td>Gemischte Authentifizierung</td>
-        </tr>
-        <tr>
-          <td>Media Analytics</td>
-          <td><i>vorhandener Wert</i></td>
-          <td>Aus</td>
-          <td>Aus</td>
-          <td>Aus</td>
-        </tr>
-            <tr>
-          <td>Bot-Erkennung</td>
-          <td><i>vorhandener Wert</i></td>
-          <td>Aus</td>
-          <td>Aus</td>
-          <td>Aus</td>
-        </tr>
-        <tr>
-          <td>Zuordnen</td>
-          <td><i>vorhandener Wert</i></td>
-          <td><i>Benutzer angegeben</i></td>
-          <td><i>Benutzer angegeben</i></td>
-          <td><i>Benutzer angegeben</i></td>
-        </tr>
-        <tr>
-          <td colspan="5"><strong><br/>Tags-Eigenschaft</strong><br/>Eine vorhandene Eigenschaft oder neue Eigenschaft. Name und Domain werden vom Benutzer angegeben.</td>
-        </tr>
-        <tr>
-          <td>Name</td>
-          <td><i>vorhandener Wert</i></td>
-          <td><i>vorhandener Wert</i></td>
-          <td><i>vorhandener Wert</i></td>
-          <td><i>vom Benutzer angegeben</i> (Standard: "Content Analytics„)</td>
-        </tr>
-        <tr>
-          <td>Domain</td>
-          <td><i>vorhandener Wert</i></td>
-          <td><i>vorhandener Wert</i></td>
-          <td><i>vorhandener Wert</i></td>
-          <td ><i>vorher ausgemacht</i></td>
-        </tr>
-        <tr>
-          <td colspan="5"><strong><br/>Tag-Bibliothek</strong></td>
-        </tr>
-        <tr>
-          <td>Name</td>
-          <td><i>vorhandener Wert</i></td>
-          <td><i>vorhandener Wert</i></td>
-          <td><i>vorhandener Wert</i></td>
-          <td>
-            <br/>
-          </td>
-        </tr>
-        <tr>
-          <td colspan="5"><strong><br/>Web SDK-Erweiterung</strong></td>
-        </tr>
-        <tr>
-          <td>Name</td>
-          <td><i>vorhandener Wert</i></td>
-          <td><i>vorhandener Wert</i></td>
-          <td>Content Analytics - Web-SDK</td>
-          <td>Content Analytics - Web-SDK</td>
-        </tr>
-        <tr>
-          <td>IMS-Organisation</td>
-          <td><i>Automatisch befüllt</i></td>
-          <td><i>Automatisch befüllt</i></td>
-          <td><i>Automatisch befüllt</i></td>
-          <td><i>Automatisch befüllt</i></td>
-        </tr>
-        <tr>
-          <td>Edge-Domäne</td>
-          <td><i>vorhandener Wert<br/> Möglicherweise ist eine Aktualisierung erforderlich, um der AppMeasurement-Implementierung zu entsprechen</i></td>
-          <td><i>vorhandener Wert<br/> Möglicherweise ist eine Aktualisierung erforderlich, um der AppMeasurement-Implementierung zu entsprechen</i></td>
-          <td>
-            <a href="http://edge.adobedc.net">edge.adobedc.net</a>
-          </td>
-          <td>
-            <a href="http://edge.adobedc.net">edge.adobedc.net</a>
-          </td>
-        </tr>
-        <tr>
-          <td colspan="5"><strong><br/>Datenströme</strong></td>
-        </tr>
-        <tr>
-          <td>Produktion</td>
-          <td><i>Vorhandene Wert<br/>Datenstrom-Überschreibung, die zum Senden an einen anderen Datenstrom verwendet wird</i></td>
-          <td><i>Vorhandene Wert<br/>Datenstrom-Überschreibung, die zum Senden an einen anderen Datenstrom verwendet wird</i></td>
-          <td><i>Benutzer angegeben</i>?</td>
-          <td><i>Benutzer angegeben</i>?</td>
-        </tr>
-        <tr>
-          <td>Staging</td>
-          <td><i>Vorhandene Wert<br/>Datenstrom-Überschreibung, die zum Senden an einen anderen Datenstrom verwendet wird</i></td>
-          <td><i>Vorhandene Wert<br/>Datenstrom-Überschreibung, die zum Senden an einen anderen Datenstrom verwendet wird</i></td>
-          <td><i>Benutzer angegeben</i>?</td>
-          <td><i>Benutzer angegeben</i>?</td>
-        </tr>
-        <tr>
-          <td>Entwicklung</td>
-          <td><i>Vorhandene Wert<br/>Datenstrom-Überschreibung, die zum Senden an einen anderen Datenstrom verwendet wird</i></td>
-          <td><i>Vorhandene Wert<br/>Datenstrom-Überschreibung, die zum Senden an einen anderen Datenstrom verwendet wird</i></td>
-          <td><i>Benutzer angegeben</i>?</td>
-          <td><i>Benutzer angegeben</i>?</td>
-        </tr>
-        <tr>
-          <td>Datenschutz   </td>
-          <td><i>vorhandener Wert</i></td>
-          <td><i>vorhandener Wert</i></td>
-          <td>In?</td>
-          <td>In?</td>
-        </tr>
-        <tr>
-          <td colspan="5"><strong><br/>Identität</strong></td>
-        </tr>
-        <tr>
-          <td>Migrieren von ECID</td>
-          <td><i>vorhandener Wert</i></td>
-          <td><i>vorhandener Wert</i></td>
-          <td>Geprüft</td>
-          <td>Geprüft</td>
-        </tr>
-        <tr>
-          <td>Verwenden von Drittanbieter-Cookies</td>
-          <td><i>vorhandener Wert</i></td>
-          <td><i>vorhandener Wert</i></td>
-          <td>Geprüft</td>
-          <td>Geprüft</td>
-        </tr>
-        <tr>
-          <td colspan="5"><strong><br/>Personalisierung</strong></td>
-        </tr>
-        <tr>
-          <td>Migrieren von Target von at.js zu Web SDK</td>
-          <td><i>vorhandener Wert</i></td>
-          <td><i>vorhandener Wert</i></td>
-          <td>ungebremst</td>
-          <td>ungebremst</td>
-        </tr>
-        <tr>
-          <td>Personalisierungsspeicher aktivieren</td>
-          <td><i>vorhandener Wert</i></td>
-          <td><i>vorhandener Wert</i></td>
-          <td>ungebremst</td>
-          <td>ungebremst</td>
-        </tr>
-        <tr>
-          <td>Automatische Klick-Sammlung für Adobe Journey Optimizer</td>
-          <td><i>vorhandener Wert</i></td>
-          <td><i>vorhandener Wert</i></td>
-          <td>Immer</td>
-          <td>Immer</td>
-        </tr>
-        <tr>
-          <td>Automatische Klick-Sammlung für Adobe Target</td>
-          <td><i>vorhandener Wert</i></td>
-          <td><i>vorhandener Wert</i></td>
-          <td>Nie</td>
-          <td>Nie</td>
-        </tr>
-        <tr>
-          <td colspan="5"><strong><br/>Datenerfassung</strong></td>
-        </tr>
-        <tr>
-          <td>Erfassen interner Link-Klicks</td>
-          <td><i>vorhandener Wert</i></td>
-          <td><i>vorhandener Wert</i></td>
-          <td>ungebremst</td>
-          <td>ungebremst</td>
-        </tr>
-        <tr>
-          <td>Erfassen externer Link-Klicks</td>
-          <td><i>vorhandener Wert</i></td>
-          <td><i>vorhandener Wert</i></td>
-          <td>ungebremst</td>
-          <td>ungebremst</td>
-        </tr>
-        <tr>
-          <td>Download-Links und Klicks erfassen</td>
-          <td><i>vorhandener Wert</i></td>
-          <td><i>vorhandener Wert</i></td>
-          <td>ungebremst</td>
-          <td>ungebremst</td>
-        </tr>
-        <tr>
-          <td>Beim Senden von Ereignisdaten Folgendes automatisch einschließen</td>
-          <td><i>vorhandener Wert</i></td>
-          <td><i>vorhandener Wert</i></td>
-          <td>Alle standardmäßigen Kontextinformationen</td>
-          <td>Alle standardmäßigen Kontextinformationen</td>
-        </tr>
-        <tr>
-          <td>Streaming-Medien</td>
-          <td><i>Vorhandene Werte</i></td>
-          <td><i>Vorhandene Werte</i></td>
-          <td>Leere Werte</td>
-          <td>Leere Werte</td>
-        </tr>
-        <tr>
-          <td>Überschreibungen der Datenstromkonfiguration</td>
-          <td><i>vorhandener Wert</i></td>
-          <td><i>vorhandener Wert</i></td>
-          <td>Konfiguration des Datenstroms abgleichen</td>
-          <td>Konfiguration des Datenstroms abgleichen</td>
-        </tr>
-        <tr>
-          <td>Erweiterte Einstellungen - Edge-Basispfad</td>
-          <td><i>vorhandener Wert</i></td>
-          <td><i>vorhandener Wert</i></td>
-          <td>ee</td>
-          <td>ee</td>
-        </tr>
-        <tr>
-          <td colspan="5"><strong><br/>Content Analytics-Erweiterung</strong></td>
-        </tr>
-        <tr>
-          <td>Datenströme</td>
-          <td><i>vorhandener Wert</i></td>
-          <td><i>vorher ausgemacht</i></td>
-          <td><i>vorher ausgemacht</i></td>
-          <td><i>vorher ausgemacht</i></td>
-        </tr>
-        <tr>
-          <td>Erlebniserfassung und -definition</td>
-          <td><i>vorhandener Wert</i></td>
-          <td><i>Benutzer angegeben</i></td>
-          <td><i>Benutzer angegeben</i></td>
-          <td><i>Benutzer angegeben</i></td>
-        </tr>
-        <tr>
-          <td>Ereignisfilterung</td>
-          <td><i>vorhandener Wert</i></td>
-          <td><i>Benutzer angegeben</i></td>
-          <td><i>Benutzer angegeben</i></td>
-          <td><i>Benutzer angegeben</i></td>
-        </tr>
-      </tbody>
-    </table>
-
-+++
 
 * **[!UICONTROL Speichern]**: Änderungen an einer implementierten Konfiguration werden gespeichert und die Implementierung wird aktualisiert.
 * **[!UICONTROL Beenden]**. Beendet die geführte Konfiguration. Alle Änderungen an einer implementierten Konfiguration werden verworfen.
@@ -987,7 +344,7 @@ Wenn Sie eine Konfiguration erstellt oder bearbeitet haben, sind die folgenden A
 
 ## Veröffentlichen {#publish}
 
-Um Ihre Content Analytics-Konfiguration zu aktivieren, müssen Sie [manuell](manual.md) die Tags-Eigenschaft veröffentlichen, die nach der Auswahl von **[!UICONTROL Implementieren]** erstellt wird.
+Um Daten für Ihre Content Analytics-Konfiguration zu erfassen, müssen Sie [manuell](manual.md) die Tags-Eigenschaft veröffentlichen, die nach der Auswahl von **[!UICONTROL Implementieren]** erstellt wird.
 
 
 >[!MORELIKETHIS]

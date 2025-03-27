@@ -7,10 +7,10 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: 79bf235a-6f6e-4b04-bcd8-1ff884536648
-source-git-commit: 01459765d84a46d170c1619ffeae184957bbf839
+source-git-commit: 20767a4672319602d35435aeedb76749a245e691
 workflow-type: tm+mt
-source-wordcount: '1350'
-ht-degree: 18%
+source-wordcount: '1194'
+ht-degree: 17%
 
 ---
 
@@ -44,8 +44,6 @@ In den folgenden Tabellen ![KI generiert](/help/assets/icons/AI.svg) ein von KI/
 | Erlebnis – URL der Miniaturansicht | URL für die Miniaturansicht des Erlebnisses. | Dimension | \| anzeigen Kein Wert<br/>Zuletzt verwendet \| Sitzung |
 | Erlebnis – Horizontale Prozentsatz-Tiefe | Quantifizierbarer Wert der horizontalen Prozenttiefe des Erlebnisses. | Dimension Von <br/> abgeleitetes Feld | \| anzeigen Kein Wert<br/>Zuletzt verwendet \| Sitzung |
 | Erlebnis – Vertikal – Prozentsatz – Tiefe | Quantifizierbarer Wert der vertikalen Prozenttiefe des Erlebnisses. | Dimension Von <br/> abgeleitetes Feld | \| anzeigen Kein Wert<br/>Zuletzt verwendet \| Sitzung |
-| Erlebnis – Horizontale Pixel-Tiefe | Quantifizierbarer Wert der horizontalen Pixeltiefe des Erlebnisses. | Dimension Von <br/> abgeleitetes Feld | \| anzeigen Kein Wert<br/>Zuletzt verwendet \| Sitzung |
-| Erlebnis – Vertikale Pixel-Tiefe | Quantifizierbarer Wert der vertikalen Pixeltiefe des Erlebnisses. | Dimension Von <br/> abgeleitetes Feld | \| anzeigen Kein Wert<br/>Zuletzt verwendet \| Sitzung |
 
 {style="table-layout:fixed"}
 
@@ -55,7 +53,6 @@ In den folgenden Tabellen ![KI generiert](/help/assets/icons/AI.svg) ein von KI/
 
 | Anrede/Titel | Beschreibung | Typ | Einstellungen |
 |---|---|---|---|
-| Erlebnis – Lesbarkeit – Wert | ![KI generiert](/help/assets/icons/AI.svg) Lesbarkeitswert für das Erlebnis. | Dimension | \| anzeigen Kein Wert<br/>Zuletzt verwendet \| Sitzung |
 | Erlebnis – Keywords | ![KI-generiert](/help/assets/icons/AI.svg) Schlüsselwörter für das Erlebnis. | Dimension Von <br> abgeleitetes Feld | \| anzeigen Kein Wert<br/>Zuletzt verwendet \| Sitzung |
 | Erlebnis – Überzeugungsstrategien | ![KI generiert](/help/assets/icons/AI.svg) Überredungsstrategien, die im jeweiligen Erlebnis vorhanden sind. Die möglichen Werte sind: soziale Identität, sozialer Beweis, Autorität, Konkretheit, Fuß in der Tür, Überwindung von Reaktanz, Reziprozität, Verankerung und Vergleich, soziale Wirkung, Mangel und Anthropomorphismus. | Dimension Von <br/> abgeleitetes Feld | \| anzeigen Kein Wert<br/>Zuletzt verwendet \| Sitzung |
 | Erlebnis – Narrative | ![KI generiert](/help/assets/icons/AI.svg) Erzählungen, die das Erlebnis basierend auf der Relevanz aus der Sicht eines Marketing-Experten erstellt. | Dimension Von <br/> abgeleitetes Feld | \| anzeigen Kein Wert<br/>Zuletzt verwendet \| Sitzung |
@@ -76,8 +73,8 @@ In den folgenden Tabellen ![KI generiert](/help/assets/icons/AI.svg) ein von KI/
 
 | Anrede/Titel | Beschreibung | Typ | Einstellungen |
 |---|---|---|---|
-| Erlebnisansichten | Quantifizierbares Maß für die Anzahl der Ansichten des Erlebnisses. | Metrik | Werte zählen<br/>Dezimalzahl \| Dezimalstellen: 0 |
-| Erlebnis-Klicks | Quantifizierbares Maß für die Anzahl der Klicks des Erlebnisses. | Metrik | Werte zählen<br/>Dezimalzahl \| Dezimalstellen: 0 |
+| Erlebnis – Ansichten | Quantifizierbares Maß für die Anzahl der Ansichten des Erlebnisses. | Metrik | Werte zählen<br/>Dezimalzahl \| Dezimalstellen: 0 |
+| Erlebnis – Klicks | Quantifizierbares Maß für die Anzahl der Klicks des Erlebnisses. | Metrik | Werte zählen<br/>Dezimalzahl \| Dezimalstellen: 0 |
 
 {style="table-layout:fixed"}
 
@@ -88,19 +85,12 @@ In den folgenden Tabellen ![KI generiert](/help/assets/icons/AI.svg) ein von KI/
 |---|---|---|---|
 | Asset-Quelle | Öffentlich zugängliche Quell-URL für das Asset. | Dimension | \| anzeigen Kein Wert<br/>Zuletzt verwendet \| Sitzung |
 | Element-ID | Eindeutige Kennung des Assets. Die Asset-Binärdatei bestimmt die Eindeutigkeit. Wenn sich die Asset-Binärdatei ändert, ändert sich die ID nicht. Die eindeutige ID kann die URL sein, es kann aber auch ein Hash erstellt werden. | Dimension | \| anzeigen Kein Wert<br/>Zuletzt verwendet \| Sitzung |
-| Asset-Name | Name des Assets. | Dimension | \| anzeigen Kein Wert<br/>Zuletzt verwendet \| Sitzung |
-| Asset-Typ | Typ des Assets. | Dimension | \| anzeigen Kein Wert<br/>Zuletzt verwendet \| Sitzung |
-| Asset – URL der Miniaturansicht | URL für die Miniaturansicht des Assets. | Dimension | \| anzeigen Kein Wert<br/>Zuletzt verwendet \| Sitzung |
 | Asset – HTML-Pfad | Verketteter HTML-Pfad für das Asset. | Dimension | \| anzeigen Kein Wert<br/>Zuletzt verwendet \| Sitzung |
 | Asset – Link-URL | Nächster Seitenanker für das Asset. | Dimension | \| anzeigen Kein Wert<br/>Zuletzt verwendet \| Sitzung |
 | Asset – Anzeigebreite | Anzeigebreite des Inhalts-Assets. | Dimension | \| anzeigen Kein Wert<br/>Zuletzt verwendet \| Sitzung |
 | Asset – Anzeigehöhe | Anzeigehöhe des Inhalts-Assets. | Dimension | \| anzeigen Kein Wert<br/>Zuletzt verwendet \| Sitzung |
 | Asset – Absolut – Links | Inhalts-Asset – Absolut – Links. | Dimension | \| anzeigen Kein Wert<br/>Zuletzt verwendet \| Sitzung |
 | Asset – Absolut – Oben | Inhalts-Asset – Absolut – Oben. | Dimension | \| anzeigen Kein Wert<br/>Zuletzt verwendet \| Sitzung |
-| Asset – Erstellt von | Kennung für die Asset-Erstellung. | Dimension | \| anzeigen Kein Wert<br/>Zuletzt verwendet \| Sitzung |
-| Asset – Erstellungsdatum | Asset-Erstellungsdatum. | Dimension | Zuletzt verwendet \| Sitzung |
-| Asset – Zuletzt aktualisiert von | Kennung für die Asset-Aktualisierung. | Dimension | \| anzeigen Kein Wert<br/>Zuletzt verwendet \| Sitzung |
-| Asset – Zuletzt aktualisiert – Datum | Aktualisierungsdatum des Assets. | Dimension | Zuletzt verwendet \| Sitzung |
 
 {style="table-layout:fixed"}
 
@@ -133,7 +123,7 @@ In den folgenden Tabellen ![KI generiert](/help/assets/icons/AI.svg) ein von KI/
 
 | Anrede/Titel | Beschreibung | Typ | Einstellungen |
 |---|---|---|---|
-| Asset-Ansichten | Quantifizierbares Maß für die Anzahl der Ansichten des Assets. | Metrik | Werte zählen<br/>Dezimalzahl \| Dezimalstellen: 0 |
+| Asset – Ansichten | Quantifizierbares Maß für die Anzahl der Ansichten des Assets. | Metrik | Werte zählen<br/>Dezimalzahl \| Dezimalstellen: 0 |
 | Kreativelement-Klicks | Quantifizierbares Maß für die Anzahl der Klicks des Assets. | Metrik | Werte zählen<br/>Dezimalzahl \| Dezimalstellen: 0 |
 
 {style="table-layout:fixed"}

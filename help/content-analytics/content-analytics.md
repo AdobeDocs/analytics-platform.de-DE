@@ -7,9 +7,9 @@ role: Admin, User
 hide: true
 hidefromtoc: true
 exl-id: 0d3be50d-c635-459b-8b01-61d6d4ef0cdf
-source-git-commit: 01459765d84a46d170c1619ffeae184957bbf839
+source-git-commit: 20767a4672319602d35435aeedb76749a245e691
 workflow-type: tm+mt
-source-wordcount: '758'
+source-wordcount: '820'
 ht-degree: 0%
 
 ---
@@ -39,10 +39,10 @@ Inhaltsanalysen bieten einen Mehrwert auf steigender Ebene:
 
 Content Analytics verwendet die folgenden Schlüsselbegriffe:
 
-![Assets und Erlebnisse](/help/content-analytics/assets//content-analytics-experience-asset.png)
+![Assets und Erlebnisse](/help/content-analytics/assets/content-analytics-experience-asset.png)
 
-* **Erlebnis**: Ein Erlebnis ist der gesamte Text auf einer Web-Seite, der anhand der URL reproduzierbar ist, die der ursprüngliche Benutzer verwendet hat, der die Web-Seite besucht hat. Jedes Erlebnis erhält eine eindeutige Kennung.
-* **Asset**: Ein Asset ist ein individuelles und eindeutiges Inhaltselement, z. B. ein Bild. Jedes Asset erhält außerdem eine eindeutige Kennung.
+* **Erlebnis**: Ein Erlebnis ist der gesamte Text auf einer Web-Seite, der anhand der URL reproduzierbar ist, die der ursprüngliche Benutzer verwendet hat, der die Web-Seite besucht hat. Jedes Erlebnis erhält eine eindeutige Kennung. Seitenänderungen, die zu Änderungen am HTML der Seite führen, führen zu einem neuen Erlebnis.
+* **Asset**: Ein Asset ist ein individuelles und eindeutiges Inhaltselement, z. B. ein Bild. Jedes Asset erhält außerdem eine eindeutige Kennung und eine Wahrnehmungs-ID. Eine Wahrnehmungs-ID ist eine Kennung, die für visuell identische Assets freigegeben wird. Perzeptive IDs helfen, Assets zu deduplizieren, die eine andere Asset-URL und daher eine andere Asset-ID haben können, aber wahrnehmbar identisch sind.
 * **Attribut**: Ein Attribut ist ein beschreibendes Metadatenelement, das mit einem Erlebnis oder Asset verknüpft ist. Beispiele für ein Attribut sind: Stil der Fotografie, Lesbarkeit, Überzeugungsstrategie, Objektfarbe, Hintergrundfarbe.
 
 ## Funktionsweise
@@ -52,7 +52,7 @@ Content Analytics verwendet Web-Bildansichtsdaten, die in Ereignisdatensätzen i
 ![Inhaltsanalyse - Funktionsweise](assets/aca-overview.gif)
 
 
-1. Wenn ein(e) Benutzende(r) eine Website [für Content Analytics konfiguriert](config/configuration.md) zeichnet der Experience Platform Web SDK Interaktionen mit Inhalten auf.
+1. Wenn ein(e) Benutzende(r) eine Website [für Content Analytics konfiguriert](config/configuration.md) zeichnet der Experience Platform Web SDK Impressionen und Interaktionen mit Inhalten auf.
 1. Der Identity Service und der Feature Service verarbeiten diese Interaktionen. Dieser Prozess besteht aus einem Crawler, der die öffentlich zugänglichen Versionen der konfigurierten URLs, die die Interaktionen definieren, erneut aufruft. Für alle diese gecrawlten URLs identifiziert der Identity Service die Erlebnisse und Assets eindeutig. Der Feature Service wendet KI-/ML-Services an, um Erlebnisse und Assets sowie Metadaten und Attribute zu ermitteln.
 1. Die Ergebnisse dieser Services ([Komponenten, Attribute und Identitäten](/help/content-analytics/report/components.md)) werden verwendet, um die relevanten spezifischen Inhaltsanalysedatensätze in Experience Platform zu aktualisieren.
 1. Die Inhaltsanalysedaten können Sie zusammen mit Verhaltensdaten und anderen Suchdaten in einer Customer Journey Analytics-Einrichtung verwenden ([Verbindung](/help/connections/overview.md), [Datenansicht](/help/data-views/data-views.md) und [Workspace](/help/analysis-workspace/home.md)). Dieses Setup bietet die Grundlage für die einzigartigen Einblicke auf Makroebene in Ihren Inhalt. <br/>Sie können Ihre Content Analytics-Berichte und -Analysen mithilfe der [Content Analytics-Vorlage starten](/help/content-analytics/report/report.md#template).

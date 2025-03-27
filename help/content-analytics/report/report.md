@@ -7,9 +7,9 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: 6e756ae8-b969-46f1-95b8-d8fbb0d058ed
-source-git-commit: dbbdfac312b1b7cbb6d8b6ce38a63f6d2bc18420
+source-git-commit: 20767a4672319602d35435aeedb76749a245e691
 workflow-type: tm+mt
-source-wordcount: '1263'
+source-wordcount: '1300'
 ht-degree: 0%
 
 ---
@@ -53,7 +53,7 @@ So öffnen Sie die Vorschau mit den folgenden Details:
   | Erlebnisvorschau | Asset-Vorschau |
   |---|---|
   | ![Content Analytics Experience Preview](../assets/aca-experience-preview.png) | ![Vorschau von Content Analytics-Assets](../assets/aca-asset-preview.png) |
-  | **[!UICONTROL Name des Erlebnisses]** | **[!UICONTROL Name des Assets]** |
+  | Name der Dimension (z. B. **[!UICONTROL Erlebnis-ID])** | Name der Asset-Dimension (z. B **[!UICONTROL „Asset-ID])** |
   | **[!UICONTROL Impressions (alle Zeiten)]**: Anzahl der Impressionen für das Erlebnis. | **[!UICONTROL Impressions (alle Zeiten)]**: Anzahl der Impressionen für das Asset. |
   | **[!UICONTROL Assets]**: Anzahl der Assets, die dieses Erlebnis enthält. <br/>Wählen Sie ![Aufschlüsselung](/help/assets/icons/Breakdown.svg) **[!UICONTROL Aufschlüsselung]** aus, um die Assets zu überprüfen. | **[!UICONTROL Erlebnisse]**: Anzahl der Erlebnisse, in denen dieses Asset angezeigt wird. <br/>Wählen Sie ![Aufschlüsselung](/help/assets/icons/Breakdown.svg) **[!UICONTROL Aufschlüsselung]** aus, um die Assets zu überprüfen. |
   | **[!UICONTROL Erster Impression]**: Datum des ersten Impressions des Erlebnisses. | **[!UICONTROL Erste Impression]**: Datum der ersten Impression des Assets. |
@@ -83,7 +83,12 @@ In diesem Bedienfeld erfahren Sie, welche Erlebnisse und welche Assets in diesen
 
   Das Bedienfeld besteht aus den folgenden Visualisierungen:
 
-   * **Erlebnisse**
+   * **Erfahrungen**.
+
+     >[!NOTE]
+     >
+     >Diese Visualisierungen werden nur angezeigt, wenn Sie [Erlebnisse“ in ](/help/content-analytics/config/guided.md#experience-capture-and-definition) Content Analytics-Konfiguration aufgenommen haben.
+     > 
 
       * **Experience CTR**: eine Visualisierung [Zusammenfassungsänderung](/help/analysis-workspace/visualizations/summary-number-change.md) mit Experience CTR.
       * **Top-Konvertierungserlebnisse**: Eine [horizontale Balken](/help/analysis-workspace/visualizations/horizontal-bar.md) Visualisierung, die die besten Konvertierungserlebnisse basierend auf der ausgewählten Konversionsmetrik zeigt.
@@ -117,7 +122,13 @@ Eine [-](/help/analysis-workspace/visualizations/line.md)-Visualisierung, die de
 Ein Beispiel [Freiformtabelle), ](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) die Leistung von Elementen aus einer einzelnen Asset-Attributkategorie vergleicht: Vordergrundfarben. Sie können dieses Asset-Attribut durch andere Dimensionen der Asset-Attributkategorie ersetzen.
 
 * **Welche Erlebnisattribute tragen zu Konversionen bei?**
-Während sich Asset-Attribute auf die visuellen Qualitäten von Bildern konzentrieren, konzentrieren sich Erlebnisattribute auf den Text Ihrer Seite. Mit den folgenden Visualisierungen können Sie untersuchen, welche Erlebnisattribute zur Konversion beitragen. Diese Attribute werden auch automatisch mithilfe von KI- und GenAI-Modellen zugewiesen.
+
+  >[!NOTE]
+  >
+  >Dieses Bedienfeld wird nur angezeigt, wenn Sie [Erlebnisse“ ](/help/content-analytics/config/guided.md#experience-capture-and-definition) Ihrer Content Analytics-Konfiguration haben.
+  > 
+
+  Während sich Asset-Attribute auf die visuellen Qualitäten von Bildern konzentrieren, konzentrieren sich Erlebnisattribute auf den Text Ihrer Seite. Mit den folgenden Visualisierungen können Sie untersuchen, welche Erlebnisattribute zur Konversion beitragen. Diese Attribute werden auch automatisch mithilfe von KI- und GenAI-Modellen zugewiesen.
 
   Das Bedienfeld besteht aus den folgenden Visualisierungen:
 
