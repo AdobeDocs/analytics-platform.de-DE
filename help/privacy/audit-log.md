@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie Customer Journey Analytics-Auditprotokolle an
 exl-id: 360609f2-b811-49ee-ad4a-a54ceb23bfa3
 feature: Privacy
 role: Admin
-source-git-commit: f3c95e57144037323bcc1dd212512b2dddeb833f
+source-git-commit: 9ed7b541ebb1a89b286040c4ea96025b08029499
 workflow-type: tm+mt
-source-wordcount: '932'
-ht-degree: 60%
+source-wordcount: '953'
+ht-degree: 58%
 
 ---
 
@@ -32,7 +32,7 @@ ht-degree: 60%
 <!-- markdownlint-enable MD034 -->
 
 
-Um die Transparenz und Sichtbarkeit der im System durchgeführten Aktivitäten zu erhöhen, ermöglicht Ihnen Adobe Customer Journey Analytics, die Benutzeraktivität für verschiedene Services und Funktionen in Form von „Audit-Protokollen“ zu überprüfen. Diese Protokolle bilden einen Prüfpfad, der Ihnen bei der Fehlerbehebung helfen kann und Ihrem Unternehmen ermöglicht, betriebliche Datenverwaltungsrichtlinien und gesetzliche Anforderungen wie den Health Insurance Portability and Accountability Act (HIPAA) einzuhalten.
+Um die Transparenz und Sichtbarkeit der im System durchgeführten Aktivitäten zu erhöhen, ermöglicht Ihnen Adobe Customer Journey Analytics, die Benutzeraktivität für verschiedene Services und Funktionen in Form von „Audit-Protokollen“ zu überprüfen. Diese Protokolle bilden ein Audit-Protokoll, das Ihnen bei der Fehlerbehebung helfen und Ihr Unternehmen dabei unterstützen kann, die Richtlinien zur Datenverwaltung in Unternehmen und die gesetzlichen Anforderungen wie den Health Insurance Portability and Accountability Act (HIPAA) einzuhalten.
 
 In einem Auditprotokoll wird festgehalten, **wer** **welche** Aktion **wann** ausgeführt hat. Jede in einem Protokoll aufgezeichnete Aktion enthält Metadaten, die den Aktionstyp, das Datum und die Uhrzeit, die E-Mail-ID des/der Benutzenden, der/die die Aktion ausgeführt hat, und zusätzliche Attribute des Aktionstyps angeben.
 
@@ -68,7 +68,7 @@ Die folgenden Informationen werden angezeigt:
    * CREATE: Es wurde eine „create“-Aktion ausgeführt.
    * DELETE: Es wurde eine „Löschen“-Aktion ausgeführt.
    * BEARBEITEN: Es wurde eine Aktion „Bearbeiten“ ausgeführt.
-   * EMBARGO:
+   * EMBARGO: Wenn Sie eine Anfrage im [Reporting Activity Manager](https://experienceleague.adobe.com/en/docs/analytics-platform/using/reporting-activity-manager/reporting-activity-cancel-requests) einschränken, wird die Aktion im Auditprotokoll unter EMBARGO aufgezeichnet.
    * EXPORT: Eine „Export“-Aktion wurde ausgeführt.
    * ORG_CHANGE: Es wurde eine Organisationsänderungsaktion durchgeführt.
    * AKTUALISIEREN: Eine Aktion „Aktualisieren“ wurde ausgeführt.
@@ -158,4 +158,4 @@ Sie können Auditprotokolle im CSV- oder JSON-Format herunterladen. Alle angewen
 
 ## Verwalten von Auditprotokollen in der API
 
-Alle Aktionen, die Sie in der Benutzeroberfläche ausführen können, können auch über API-Aufrufe ausgeführt werden. Weitere Informationen finden Sie im Referenzdokument zur [Customer Journey Analytics](https://developer.adobe.com/cja-apis/docs/api/#tag/Audit-Logs)API .
+Alle Aktionen, die Sie in der Benutzeroberfläche ausführen können, können auch über API-Aufrufe ausgeführt werden. Weitere Informationen finden Sie im Referenzdokument zur Customer Journey Analytics](https://developer.adobe.com/cja-apis/docs/api/#tag/Audit-Logs)API für [.
