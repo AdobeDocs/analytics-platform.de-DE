@@ -4,9 +4,9 @@ title: Verwenden von Vorlagen
 feature: Workspace Basics
 role: User, Admin
 exl-id: d61f215d-9089-4014-9c5a-97f5d7134f34
-source-git-commit: 6480eb4cd5210cd9318614a507516bd3736da40a
+source-git-commit: 32d7d2f21e2f906e25d0dfccd92d0be2f515d781
 workflow-type: tm+mt
-source-wordcount: '19661'
+source-wordcount: '19662'
 ht-degree: 85%
 
 ---
@@ -538,7 +538,7 @@ Die folgenden Vorlagen sind verfügbar:
 >[!CONTEXTUALHELP]
 >id="template--content-analytics"
 >title="Erfahren Sie, welche Inhalts- und Inhaltsattribute die beste Leistung erbringen."
->abstract="**Dies kann Ihnen helfen** zu erfahren, wie Ihre Inhalte auf einer granularen Ebene funktionieren. Sie können die Leistung einzelner Assets oder bestimmter Attribute überprüfen. Content Analytics verwendet KI, um automatisch Attribute zu generieren und Ihre Inhalte mit ihnen zu taggen. [Weitere Informationen](/help/content-analytics/content-analytics.md).<br/>**Je nachdem, was Sie lernen** können Sie eine beliebige Anzahl von Dingen durchführen, z. B. Hochleistungs-Assets auf Ihrer Startseite bewerben, Inhalte für bestimmte Segmente personalisieren, um leistungsstarke Attribute einzuschließen, oder Inhalte, die mittlerweile veraltet sind, rotieren."
+>abstract="**Dies kann Ihnen helfen** zu erfahren, wie Ihre Inhalte auf einer granularen Ebene funktionieren. Sie können die Leistung einzelner Assets oder bestimmter Attribute überprüfen. Content Analytics verwendet KI, um automatisch Attribute zu generieren und Ihre Inhalte mit ihnen zu taggen. [Weitere Informationen](https://experienceleague.adobe.com/en/docs/analytics-platform/using/content-analytics/content-analytics){target="_blank"}.<br/>**Je nachdem, was Sie lernen** können Sie eine beliebige Anzahl von Dingen durchführen, z. B. Hochleistungs-Assets auf Ihrer Startseite bewerben, Inhalte für bestimmte Segmente personalisieren, um leistungsstarke Attribute einzuschließen, oder Inhalte, die mittlerweile veraltet sind, rotieren."
 
 <!-- markdownlint-enable MD034 -->
 
