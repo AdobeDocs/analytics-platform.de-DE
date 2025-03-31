@@ -4,10 +4,10 @@ description: Landingpage von Customer Journey Analytics.
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 7f67c497-386b-4442-a502-6b492f35c6e6
-source-git-commit: c29b1b8678579b58c42fce2fc02fffd81c1a633f
+source-git-commit: ff9d8cbe25dca2bbf1ab41891c20476909516b66
 workflow-type: tm+mt
-source-wordcount: '864'
-ht-degree: 92%
+source-wordcount: '836'
+ht-degree: 91%
 
 ---
 
@@ -22,6 +22,12 @@ Mit Customer Journey Analytics können Sie steuern, wie Sie Ihre Online- und Off
 Werfen Sie einen Blick auf die neuesten Verbesserungen in Customer Journey Analytics und die Dokumentation! Eine umfassende Liste der Funktionen, Verbesserungen und Fehlerbehebungen finden Sie in den detaillierten [Versionshinweisen](../release-notes/latest.md). Besuchen Sie die [Seite zu den Dokumentationsaktualisierungen](../release-notes/doc-changes.md), um über die neuesten Änderungen auf dem Laufenden zu bleiben.
 
 >[!BEGINTABS]
+
+>[!TAB Content Analytics]
+
+Mit Adobe Content Analytics können Sie schnell und einfach große Mengen von Inhaltsdaten untersuchen, um Trends aufzudecken, Anomalien zu erkennen, Content-Ermüdung zu identifizieren und Erkenntnisse aus der Bereitstellung von Inhalten zu gewinnen.
+
+[![Bild](assets/learn-more-button.svg)](/help/content-analytics/content-analytics.md)
 
 >[!TAB KI-Assistent]
 
@@ -65,18 +71,6 @@ Durch die grafikbasierte Zuordnung können Sie das Identitätsdiagramm des Ident
 [![Bild](assets/learn-more-button.svg)](/help/stitching/overview.md#graph-based-stitching)
 
 *_Für grafikbasierte Zuordnung ist das Prime-Paket erforderlich._*
-
->[!TAB B2B-Suchen]
-
-Im Rahmen der Konfiguration einer Verbindung können Sie Datensätze für bestimmte B2B-Suchschemata transformieren, um personenbasierte Suchen nach B2B-Daten besser zu unterstützen.
-
-[![Bild](assets/learn-more-button.svg)](/help/connections/transform-datasets-b2b-lookups.md)
-
->[!TAB Abgeleitete Felder]
-
-Neue abgeleitete Feldfunktionen (mathematische Funktionen, Weiter oder Zurück, Zusammenfassen, Deduplizieren) und zusätzliche Funktionsvorlagen (wie Bounces, benutzerfreundlicher Datensatzname, Weihnachtszeit, monatliche Ziele, einfache Bot-Erkennung und andere) sind jetzt verfügbar.
-
-[![Bild](assets/learn-more-button.svg)](/help/data-views/derived-fields/derived-fields.md)
 
 >[!TAB BI-Erweiterung*]
 
