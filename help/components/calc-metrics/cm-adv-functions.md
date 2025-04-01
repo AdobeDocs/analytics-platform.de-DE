@@ -7,7 +7,7 @@ role: User
 source-git-commit: 6788275ba4bfcfbe385e45e6a20de996d8103393
 workflow-type: tm+mt
 source-wordcount: '4659'
-ht-degree: 54%
+ht-degree: 55%
 
 ---
 
@@ -1351,7 +1351,7 @@ Gibt Pi zurück: 3,14159…
 >[!CONTEXTUALHELP]
 >id="functions-waskr-variance-estimate"
 >title="Stichprobenvarianz"
->abstract="Berechnet eine Schätzung der Stichprobenvarianz anhand der Formel (Summe(Metrik^2) / (N - 1)) - (Summe(Metrik))^2/(N*(N-1)). wobei N die Anzahl des Normalisierungsbehälters ist. <br/>Dies wird im Rahmen von *jederzeit gültigen* Konfidenzberechnungen verwendet. Im Allgemeinen ist diese Funktion nicht allein nützlich, kann aber verwendet werden, um Berechnungen zu überprüfen oder Konfidenzberechnungen durchzuführen *manuell*."
+>abstract="Berechnet eine Schätzung der Stichprobenvarianz anhand der Formel (sum(metric^2) / (N - 1)) - (sum(metric))^2/(N*(N-1)). Wobei N die Anzahl des Normalisierungs-Containers ist. <br/>Dies wird im Rahmen von *jederzeit gültigen* Konfidenzberechnungen verwendet. Grundsätzlich ist diese Funktion allein nicht nützlich, sie kann aber verwendet werden, um Berechnungen zu überprüfen oder Konfidenzberechnungen *manuell* durchzuführen."
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL STICHPROBENVARIANZ(Normalisierungs-Container, Erfolgsmetrik)]**
 
