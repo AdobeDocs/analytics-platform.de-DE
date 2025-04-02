@@ -9,9 +9,9 @@ index: true
 user-guide-title: Handbuch zu Customer Journey Analytics
 user-guide-description: Hier erhalten Sie Informationen zu Adobe Customer Journey Analytics und Erläuterungen zur Nutzung von Analysis Workspace mit Daten aus Experience Platform.
 breadcrumb-title: Handbuch zu Customer Journey Analytics
-source-git-commit: cd0ff5f6c805dc75fc07cee87e104b84d411abc9
+source-git-commit: d835411beba3d40f67d2f93ee76aa5eda6f45041
 workflow-type: tm+mt
-source-wordcount: '1217'
+source-wordcount: '1219'
 ht-degree: 90%
 
 ---
@@ -70,7 +70,7 @@ ht-degree: 90%
       + [Erstellen einer Datenansicht](/help/getting-started/cja-upgrade/cja-upgrade-dataview.md)
       + [Erstellen eines abgeleiteten Marketing-Kanal-Felds](/help/getting-started/cja-upgrade/cja-upgrade-marketing-channel.md)
       + [Validieren des Datenflusses](/help/getting-started/cja-upgrade/cja-upgrade-validate.md)
-      + [Einrichten der Streaming-Mediensammlung](/help/getting-started/cja-upgrade/cja-upgrade-streaming-media.md)
+      + [Streaming-Mediensammlung einrichten](/help/getting-started/cja-upgrade/cja-upgrade-streaming-media.md)
       + Aufbewahren historischer Daten mit der Analytics-Quell-Connector-{#historical-data-source-connector}
          + [Erstellen eines XDM-Schemas für den Analytics-Quell-Connector](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-schema.md)
          + [Erstellen der Analytics-Quell-Connector- und Zuordnungsfelder](/help/getting-started/cja-upgrade/cja-upgrade-source-connector.md)
@@ -267,6 +267,7 @@ ht-degree: 90%
       + [Überblick](/help/content-analytics/config/configuration.md)
       + [Geführte Konfiguration](/help/content-analytics/config/guided.md)
       + [Manuelle Konfiguration](/help/content-analytics/config/manual.md)
+      + [Datenerfassung](/help/content-analytics/config/datacollection.md)
 
 + Analytics-Dashboards {#cja-dashboards}
    + [Überblick](../mobile-app/home.md)
