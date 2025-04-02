@@ -7,9 +7,9 @@ feature: AI Tools
 hidefromtoc: true
 hide: true
 exl-id: 262d5f15-16cb-4851-a769-7dbd205b2f81
-source-git-commit: 380ed5c9ee0c21ea9855a41728afec040637ce65
+source-git-commit: dff6355714f4e58917ccd995662e4fbae34ec69c
 workflow-type: tm+mt
-source-wordcount: '1900'
+source-wordcount: '1873'
 ht-degree: 3%
 
 ---
@@ -22,15 +22,15 @@ Wenn Sie den Data Insights-Agenten verwenden, um datenorientierte Fragen in Anal
 
 ![Data Insights-Agent im KI-Assistenten](assets/cja-ai-asst-da.gif)
 
-## Funktionen innerhalb und außerhalb des Projektumfangs für die Alpha-Version
+## Funktionen innerhalb und außerhalb des Projektumfangs für Beta
 
-### Alpha-Funktionen im Umfang
+### Beta-Funktionen im Umfang
 
 | Unterstützte Funktion | Beschreibung |
 | --- | --- |
 | **Erstellen und Aktualisieren von Visualisierungen** | Erzeugt eine Freiformtabelle und eine dazugehörige Visualisierung (z. B. Linie, Balken, Ringdiagramm usw.).<p>Beispiel: *Was ist der Gewinn für alle SKUs von Februar bis Mai?* |
 | **Unterstützte Visualisierungstypen** | <ul><li>Linie</li><li>Mehrzeilig</li><li>Freiformtabelle</li><li>Balken</li><li>Ringdiagramm</li><li>Zusammenfassungszahl</li></ul> |
-| **Out-of-Scope Prompt Detection** | Wenn Sie eine Eingabeaufforderung übermitteln, die außerhalb des Projektumfangs liegt, z. B. „Dieses Projekt exportieren“, antwortet der Assistent, indem er Ihnen mitteilt, dass die Frage außerhalb des Projektumfangs liegt. |
+| **Out-of-Scope Prompt Detection** | Wenn Sie eine Eingabeaufforderung übermitteln, die außerhalb des Bereichs liegt, z. B. „Dieses Projekt exportieren“, antwortet der Data Insights-Agent, indem er Ihnen mitteilt, dass die Frage außerhalb des Bereichs liegt. |
 | **Fragen klären** | Wenn Sie eine Frage stellen, die nicht genügend Kontext für den Data Insights-Agenten hat, um beantwortet zu werden, oder die zu generisch ist, antwortet der Data Insights-Agent mit einer klärenden Frage oder empfohlenen Optionen. Beispiele: <p>**Komponenten**<ul><li>Metrik: *Welche „Umsatz“-Metrik meinten Sie?*</li><li>Dimension: *Auf welche der folgenden „Regionen“ möchten Sie sich konzentrieren?*</li><li>Filter: *Welchen Filter „Konto“ wollten Sie anwenden?*</li><li>Datumsbereich: *Mit „letztem Monat“ meinen Sie den letzten vollen Monat oder die letzten 30 Tage?*</li></ul>**Dimension-Elemente**: Welchen „Store-Namen“ meinten Sie? (Beispiel: #5274, #2949 usw.) |
 | **Multi-Turn** | Der Data Insights-Agent antwortet auf eine Eingabeaufforderung mit dem Kontext früherer Eingabeaufforderungen, sodass Benutzende Visualisierungen aktualisieren und Fragen stellen können. Beispiel: <ul><li>Eingabeaufforderung 1: *Trendereignisse ab März.*</li><li>Eingabeaufforderung 2: *Zeigen Sie mir stattdessen die Daten von März bis April*</li></ul> |
 | **Verifizierbarkeit** | Die Datenverifizierbarkeit und -richtigkeit kann über die generierte Freiformtabelle und Datenvisualisierung bestätigt werden. Wenn ein(e) Benutzende(r) beispielsweise *Bestellungen im letzten Monat* fragt, können Sie bestätigen, dass im neu generierten Bedienfeld, in der Datenvisualisierung und in der Freiformtabelle die richtige Metrik („Bestellungen„) und der richtige Datumsbereich („letzter Monat„) ausgewählt wurden. |
@@ -41,7 +41,7 @@ Wenn Sie den Data Insights-Agenten verwenden, um datenorientierte Fragen in Anal
 | Nicht unterstützte Funktion | Beschreibung |
 | --- | --- |
 | **Inline-Zusammenfassung oder -Antwort** | Der Data Insights-Agent kann in der Chat-Leiste nicht mit einer zusammenfassenden Antwort auf eine Benutzeraufforderung antworten. Beispiel für Eingabeaufforderungen außerhalb des Bereichs:<ul><li>*Geben Sie mir eine Zusammenfassung der Erkenntnisse aus meiner letzten Eingabeaufforderung.*</li><li>*Fassen Sie die Highlights der Linienvisualisierung zusammen.*</li></ul> |
-| **Fragen klären** | Die Klärung von Fragen beschränkt sich auf Komponenten und Dimensionselemente. Der Data Insights-Agent kann Dinge wie Datenansichten, Visualisierungen, Datengranularität, Vergleich und Umfang nicht verdeutlichen. Wenn Klärungsfragen nicht verwendet werden können, verwendet der Assistent standardmäßig das, was Sie am wahrscheinlichsten verlangen. Wenn eine unerwartete Visualisierung oder Datengranularität zurückgegeben wird, können Sie die Funktion „Multi-Turn/Update“ verwenden, um die Visualisierung und die Daten anzupassen. |
+| **Fragen klären** | Die Klärung von Fragen beschränkt sich auf Komponenten und Dimensionselemente. Der Data Insights-Agent kann Dinge wie Datenansichten, Visualisierungen, Datengranularität, Vergleich und Umfang nicht verdeutlichen. Wenn Klärungsfragen nicht verwendet werden können, verwendet der Agent standardmäßig das, was Sie am wahrscheinlichsten anfordern. Wenn eine unerwartete Visualisierung oder Datengranularität zurückgegeben wird, können Sie die Funktion „Multi-Turn/Update“ verwenden, um die Visualisierung und die Daten anzupassen. |
 | **Workspace-Aktionen/-Funktionen** | Der Data Insights-Agent kann für eine Benutzerin oder einen Benutzer in Workspace keine Aktionen ausführen, abgesehen von der Erstellung und Aktualisierung von Visualisierungen. Sie kann beispielsweise keine der folgenden Aktionen ausführen:<ul><li>Schaltflächen der kontextuellen Aktionsbenutzeroberfläche (zum Diagramm hinzufügen, neues Bedienfeld, neue Tabelle)</li><li>Freigeben</li><li>Exportieren</li><li>Download</li><li>Benutzereinstellungen verwalten</li><li>Kuratieren</li><li>Datenansicht verwalten</li><li>Analytics Dashboards App</li><li>Attribution</li></ul> |
 | **Nicht unterstützte Visualisierungsarten** | <ul><li>Fluss</li><li>Fallout</li><li>Kohortentabelle</li><li>Bereich, Bereich gestapelt</li><li>Balken gestapelt</li><li>Horizontales Säulendiagramm</li><li>Kombination</li><li>Histogramm</li><li>Horizontalbalken, Horizontalbalken gestapelt</li><li>Zusammenfassung einer Schlüsselmetrik</li><li>Streuung</li><li>Zusammenfassende Änderung</li><li>Text</li><li>Baumkarte</li><li>Venn</li></ul> |
 
@@ -51,7 +51,7 @@ Die folgenden Parameter regeln den Zugriff auf den Data Insights-Agenten in Cust
 
 * **Lösungszugriff**: Der Data Insights Agent ist für Kunden von Customer Journey Analytics Prime und Ultimate verfügbar. Sie ist in Adobe Analytics nicht verfügbar.
 
-* **Vertragszugriff**: Wenn Sie den Data Insights-Agenten im KI-Assistenten nicht verwenden können, wenden Sie sich an den Administrator Ihres Unternehmens oder den Adobe-Kontobeauftragten. Bevor Ihr Unternehmen den Data Insights Agent im KI-Assistenten verwenden kann, müssen Sie bestimmten GenAI-bezogenen rechtlichen Bedingungen zustimmen.
+* **Vertragszugriff**: Wenn Sie den Data Insights-Agenten im KI-Assistenten nicht verwenden können, wenden Sie sich an den Administrator Ihres Unternehmens oder den Adobe-Kontobeauftragten. Bevor Ihr Unternehmen den Data Insights Agent verwenden kann, müssen Sie bestimmten GenAI-bezogenen rechtlichen Bedingungen zustimmen.
 
 * **Berechtigungen**: In der [!UICONTROL Adobe Admin Console] bestimmt die Berechtigung  Reporting-Tools **[!UICONTROL KI-Assistent]** Datenvisualisierung) den Zugriff auf dieses Tool. Ein [Produktprofil-Administrator](https://helpx.adobe.com/de/enterprise/using/manage-product-profiles.html) muss diese Schritte in der [!UICONTROL Admin Console ausführen]:
    1. Navigieren Sie zu **[!UICONTROL Admin Console]** > **[!UICONTROL Produkte und Services]** > **[!UICONTROL Customer Journey Analytics]** > **[!UICONTROL Produktprofile]**
@@ -90,7 +90,7 @@ Weitere Informationen [ Sie unter ](/help/technotes/access-control.md#access-con
 
    ![KI-Assistenten-Symbol](/help/assets/ai-asst-icon.png)
 
-6. Customer Journey Analytics Stellen Sie im Dialogfeld **[!UICONTROL Fragen über]**&quot; unten auf der Seite im KI-Assistenten eine Frage zur Datenvisualisierung.
+6. Stellen **[!UICONTROL im Dialogfeld &quot;]** über Customer Journey Analytics&quot; unten auf der Seite mithilfe des Data Insights-Agenten eine Frage zur Datenvisualisierung.
 
    Weitere Informationen finden Sie in den folgenden Beispielen.
 
@@ -102,7 +102,7 @@ Nehmen wir beispielsweise an, Sie sind an den Bestellungen interessiert, die Ihr
 
 ![KI-Eingabeaufforderung](/help/assets/ai-asst-prompt1.png)
 
-**Antwort:** Der Data Insights-Agent im KI-Assistenten sammelt Insights, indem er die Daten in der Datenansicht durchsucht, einschließlich der Metriken und Komponenten. Dadurch wird die Eingabeaufforderung in die richtigen Dimensionen und Metriken innerhalb des Datenbereichs übersetzt.
+**Antwort:** Der Data Insights-Agent sammelt Insights, indem er die Daten in der Datenansicht durchsucht, einschließlich der Metriken und Komponenten. Dadurch wird die Eingabeaufforderung in die richtigen Dimensionen und Metriken innerhalb des Datenbereichs übersetzt.
 
 Wie Sie sehen können, wurden automatisch ein Liniendiagramm und eine Freiformtabelle generiert, um Bestellungen für Juli anzuzeigen.
 
@@ -114,13 +114,13 @@ Als Nächstes möchten Sie sehen, wie Ihr Umsatz nach Region verglichen wird.
 
 **Prompt:** Geben Sie im Eingabeaufforderungsfenster *„Umsatz nach Region anzeigen“ ein*
 
-**Antwort:** Der Data Insights-Agent im KI-Assistenten versteht intelligent, dass Sie mit „Region“ „Kundenregion“ meinen. Es wird ein Balkendiagramm erstellt, das den Umsatz am besten nach Region zeigt:
+**Antwort:** Der Data Insights-Agent versteht auf intelligente Weise, dass Sie unter „Region“ „Kundenregion“ verstehen. Es wird ein Balkendiagramm erstellt, das den Umsatz am besten nach Region zeigt:
 
 ![Balkendiagramm](/help/assets/ai-asst-result2.png)
 
 ### Beispiel 3
 
-Als Nächstes möchten Sie nicht nur den Umsatz nach Region verstehen, sondern auch Daten für den Gewinn nach Region anzeigen. Anstatt die vorherige Eingabeaufforderung zu wiederholen, können Sie den KI-Assistenten bitten, die neueste Visualisierungs- und Freiformtabelle zu aktualisieren.
+Als Nächstes möchten Sie nicht nur den Umsatz nach Region verstehen, sondern auch Daten für den Gewinn nach Region anzeigen. Anstatt die vorherige Eingabeaufforderung zu wiederholen, können Sie den Data Insights-Agenten bitten, die neueste Visualisierung und Freiformtabelle zu aktualisieren.
 
 **Prompt:** Geben Sie im Eingabeaufforderungsfenster „Gewinn hinzufügen *ein*
 
@@ -134,7 +134,7 @@ Sehen wir uns abschließend den Umsatz nach Produktkategorie an.
 
 **Eingabeaufforderung:** Geben Sie im Eingabeaufforderungsfenster *„Umsatzanteil nach Produktkategorie“ ein*
 
-**Antwort:** Wieder wählt der Data Insights-Agent im KI-Assistenten die am besten geeignete Visualisierung aus, in diesem Fall die **[!UICONTROL Ringdiagramm]**-Visualisierung, um die Frage zu beantworten.
+**Antwort:** Wieder wählt der Data Insights-Agent die am besten geeignete Visualisierung aus, in diesem Fall die **[!UICONTROL Ringdiagramm]**-Visualisierung, um die Frage zu beantworten.
 
 ![Ringdiagramm](/help/assets/ai-asst-result3.png)
 
@@ -171,9 +171,9 @@ Um die besten Ergebnisse zu erzielen, beachten Sie die folgenden Richtlinien:
 
 * Stellen Sie direkte Fragen: Die direkte Formulierung von Fragen erleichtert es dem Data Insights-Agenten, klare, relevante Einblicke zu liefern. Im Folgenden finden Sie ein Beispiel für eine direkte Frage in einer Eingabeaufforderung: „Wie hoch ist der durchschnittliche Umsatz nach Produktkategorie in diesem Jahr?“
 
-Sehen Sie sich die folgende Tabelle mit Beispielbegriffen und -ausdrücken an, die Sie in Eingabeaufforderungen mit dem Data Insights-Agenten im KI-Assistenten verwenden können, zusammen mit den Antworttypen, die Sie erwarten können.
+Sehen Sie sich die folgende Tabelle mit Beispielbegriffen und -ausdrücken an, die Sie in Eingabeaufforderungen mit dem Data Insights Agent verwenden können, zusammen mit den Arten von Antworten, die Sie erwarten können.
 
-Diese Beispiele sollen Ihnen dabei helfen, sich damit vertraut zu machen, wie bestimmte Wörter oder Strukturen die Ausgabe des KI-Assistenten beeinflussen können, und so präzisere und wertvollere Einblicke sicherstellen. Der Data Insights-Agent im KI-Assistenten verwendet generative KI, sodass Visualisierungen oder ausgewählte Daten über ähnliche Eingabeaufforderungen hinweg leicht variieren können.
+Diese Beispiele sollen Ihnen dabei helfen, sich damit vertraut zu machen, wie bestimmte Wörter oder Strukturen die Ausgabe des Data Insight Agents beeinflussen können, und so präzisere und wertvollere Einblicke sicherstellen. Der Data Insights-Agent verwendet generative KI, sodass Visualisierungen oder ausgewählte Daten über ähnliche Eingabeaufforderungen hinweg leicht variieren können.
 
 | Gewünschtes Ergebnis | Beispielbegriffe und Ausdrücke |
 | --- | --- |
@@ -187,9 +187,9 @@ Diese Beispiele sollen Ihnen dabei helfen, sich damit vertraut zu machen, wie be
 
 Überprüfen Sie nach dem Stellen jeder Frage sorgfältig die Antwort des Assistenten. Es ist wichtig, die generierten Visualisierungen umfassend zu bewerten, bevor Sie Feedback geben.
 
-Beachten Sie beim Auswerten einer Antwort des Data Insights-Agenten im KI-Assistenten Folgendes:
+Beachten Sie beim Auswerten einer Antwort des Data Insights-Agenten Folgendes:
 
-* Antwort oder Vorlage der Chat-Leiste: Bewerten Sie die vom Assistenten bereitgestellte textliche Antwort. Ist die Antwort im Kontext Ihrer Eingabeaufforderung angemessen?
+* Antwort oder Vorlage der Chat-Leiste: Bewerten Sie die bereitgestellte textliche Antwort. Ist die Antwort im Kontext Ihrer Eingabeaufforderung angemessen?
 
 * Visualisierung/Diagramm: Bewertung der Visualisierung. Ist es die geeignete oder erwartete Visualisierung für Ihre Frage, oder hätten Sie eine andere Visualisierung erwartet?
 
@@ -203,4 +203,4 @@ Nach der Auswahl der Daumen hoch oder Daumen runter treffen Sie bitte eine Auswa
 
 ## Fragen und Kontakt
 
-* Senden Sie Fragen und Feedback über den Alpha Slack-Kanal: #cja-assistant-data-alpha
+* Senden Sie Fragen und Feedback über den Beta Slack-Kanal: #data-insights-agent-in-cja-beta
