@@ -6,13 +6,13 @@ feature: Content Analytics
 hide: true
 hidefromtoc: true
 role: Admin
-source-git-commit: d835411beba3d40f67d2f93ee76aa5eda6f45041
+exl-id: 584587e6-45fd-4fc3-a7a6-6685481ddee7
+source-git-commit: 795116d41e40bf89ebf31572fb718e2bcb58a6c8
 workflow-type: tm+mt
-source-wordcount: '463'
+source-wordcount: '499'
 ht-degree: 1%
 
 ---
-
 
 # Datenerfassung in Content Analytics
 
@@ -24,11 +24,13 @@ In diesem Artikel wird detailliert erläutert, wie Content Analytics Daten erfas
 Im Zusammenhang mit diesem Artikel werden die folgenden Definitionen verwendet:
 
 * **Erlebnis**: Ein Erlebnis wird als Textinhalt auf einer gesamten Web-Seite definiert. Für die Datenerfassung zeichnet Content Analytics die Erlebnis-ID auf. Content Analytics zeichnet den Text nicht auf.
-* **Asset**: Ein Bild. Content Analytics zeichnet die Asset-URL auf.
-* **Relevante URL**: Die Basis-URL plus alle Parameter, die den Inhalt auf der Seite steuern.
 * **Erlebnis-**: Eine eindeutige Kombination aus relevanter URL und Erlebnisversion.
    * Sie geben als Teil der [Konfiguration](configuration.md) an, welche Parameter für eine bestimmte vollständige URL relevant sind.
-   * Sie können die [Versionskennung](manual.md#versioning) definieren, die verwendet wird. Bei der Datenerfassung wird die Version nicht berücksichtigt. Es wird nur die relevante URL erfasst.
+   * Sie können die [Versionskennung](manual.md#versioning) definieren, die verwendet wird.
+* **Asset**: Ein Bild. Content Analytics zeichnet die Asset-URL auf.
+* **Asset-**: Die URL des Assets.
+* **Relevante URL**: Die Basis-URL plus alle Parameter, die den Inhalt auf der Seite steuern.
+
 
 ## Funktionalität
 
@@ -38,7 +40,7 @@ Die Content Analytics-Bibliothek erfasst Daten, wenn:
 * Die Seiten-URL wird in der [Content Analytics-Erweiterung](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview){target="_blank"} konfiguriert, die Teil der enthaltenen Tag-Bibliothek ist.
 
 
-### Content Analytics-Ereignis
+## Content Analytics-Ereignis
 
 Ein Content Analytics-Ereignis besteht aus:
 
@@ -50,7 +52,15 @@ Ein Content Analytics-Ereignis besteht aus:
 * Asset-Ansichten (falls vorhanden und konfiguriert)
 * Asset-Klicks (falls vorhanden und konfiguriert)
 
-#### Aufgezeichnete Ansichten oder Klicks
+
+Content Analytics-Ereignisse werden erfasst als eine Abfolge von:
+
+1. [Eine aufgezeichnete Ansicht oder ein aufgezeichneter Klick](#recorded-view-or-click).
+1. [Ein regelmäßiges oder spezifisches (Verhaltens-)Ereignis](#regular-or-specific-behaviorial-event).
+
+Content Analytics erfasst auf diese Weise Daten, die diese Sequenz widerspiegeln, anstatt eine Ansicht zu erfassen oder getrennt von der Erfassung des Ereignisses zu klicken, das unmittelbar auf diese Ansicht oder diesen Klick folgt. Diese Methode zur Erfassung von Inhaltsanalysedaten reduziert auch die Menge der erfassten Daten. Datenerfassung.
+
+### Aufgezeichnete Ansicht oder Klick
 
 Eine Asset-Ansicht wird aufgezeichnet, wenn:
 
@@ -73,26 +83,19 @@ Ein Erlebnis-Klick wird aufgezeichnet, wenn:
 * Jeder Klick auf einen Link auf der Seite, für den Erlebnisse aktiviert sind.
 
 
-#### Gesendete Ereignisse
+### Regelmäßiges oder spezifisches (verhaltensbezogenes) Ereignis
 
-Content Analytics-Ereignisse werden gesendet, wenn die beiden folgenden Bedingungen eintreten:
+Trigger zum Auslösen eines regulären oder bestimmten (verhaltensbezogenen) Ereignisses im Kontext von Content Analytics sind:
 
-* Inhalte werden gesendet, und zwar in folgenden Fällen:
-
-   * Eine Asset-Ansicht oder ein Klick wird aufgezeichnet.
-   * Eine Erlebnisansicht oder ein Klick wird aufgezeichnet.
-
-* Ein Trigger zum Senden eines Ereignisses wird ausgelöst, der auftritt, wenn:
-
-   * Web SDK oder AppMeasurement sendet ein -Ereignis.
-   * Die Sichtbarkeit ändert sich in ausgeblendet, z. B.:
-      * Seitenentladungen
-      * Registerkarte „Wechseln“
-      * Browser minimieren
-      * Browser schließen
-      * Sperrbildschirm
-   * Die URL ändert sich, was zu einer geänderten relevanten URL führt.
-   * Eine Asset-Ansicht überschreitet die Batch-Grenze von 32.
+* Web SDK oder AppMeasurement sendet ein -Ereignis.
+* Die Sichtbarkeit ändert sich in ausgeblendet, z. B.:
+   * Seitenentladungen
+   * Registerkarte „Wechseln“
+   * Browser minimieren
+   * Browser schließen
+   * Sperrbildschirm
+* Die URL ändert sich, was zu einer geänderten relevanten URL führt.
+* Eine Asset-Ansicht überschreitet die Batch-Grenze von 32.
 
 
 ## Schemata

@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin
 exl-id: 4aff664c-3cd9-4591-8122-6ebff10e4a76
-source-git-commit: ceb6ac97686165c2883ad8057730bb09e4d7ad16
+source-git-commit: 411cd199e758da57d94faa9efb7f488d05163750
 workflow-type: tm+mt
-source-wordcount: '2428'
+source-wordcount: '2469'
 ht-degree: 25%
 
 ---
@@ -249,6 +249,11 @@ In diesem Abschnitt konfigurieren Sie, wie Sie Ihre Inhaltsanalysedaten erfassen
 >title="Datenerfassung"
 >abstract="Sie können die Einstellungen für Assets in der Adobe-Erweiterung für die Inhaltsanalyse in der Tag-Eigenschaft bearbeiten, die mit der aktuellen Konfiguration verknüpft ist."
 
+>[!CONTEXTUALHELP]
+>id="aca_onboarding_datacollection_tags_disabled_description "
+>title="Tag-Eigenschaft deaktiviert"
+>abstract="Content Analytics-Erweiterung ist bereits aktiv."
+
 <!-- markdownlint-enable MD034 -->
 
 #### Neue Konfiguration {#new-configuration}
@@ -277,6 +282,11 @@ In einer neuen Konfiguration müssen Sie definieren, ob Sie eine vorhandene Tags
 * Geben Sie an, welche Assets bei der Datenerfassung für Content Analytics ein- oder ausgeschlossen werden sollen.
 
    * Geben Sie eine Zeichenfolge für reguläre Ausdrücke für **[!UICONTROL Assets an, die ein-/ausgeschlossen werden]**. Beispiel: `/^(?!.*(logo\.jpg|\.svg)).*$/`, um alle JPEG- und SVG-Logo-Bilder von Content Analytics auszuschließen. Stellen Sie sicher, dass Sie reguläre Ausdrücke mithilfe von `/` mit Escape-Zeichen versehen.
+
+>[!IMPORTANT]
+>
+>Falls Sie über eine bereits vorhandene Web SDK-Implementierung mit JavaScript verfügen und keine Tags verwenden, müssen Sie die automatisch eingeschlossene Web SDK-Erweiterung manuell aus der neu erstellten Tags-Eigenschaft entfernen.
+
 
 
 #### Vorhandene Konfiguration {#existing-configuration}
