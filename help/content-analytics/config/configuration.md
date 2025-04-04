@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin
 exl-id: 3ea46223-c7d0-4b1f-bc84-4f35494f13a0
-source-git-commit: 411cd199e758da57d94faa9efb7f488d05163750
+source-git-commit: d4803af9b71ec245f6c4b20e92a4a4c99f235f00
 workflow-type: tm+mt
-source-wordcount: '516'
+source-wordcount: '504'
 ht-degree: 0%
 
 ---
@@ -15,6 +15,7 @@ ht-degree: 0%
 # Konfigurieren von Inhaltsanalysen
 
 {{release-limited-testing}}
+
 
 Die Konfiguration von Content Analytics besteht aus den folgenden Schritten:
 
@@ -42,8 +43,8 @@ Stellen Sie vor dem Konfigurieren von Content Analytics sicher, dass die folgend
 * Sie haben die folgenden wichtigen Konfigurationsoptionen sorgfältig geprüft:
 
    * Ihre Site ist für das Reporting zu Erlebnissen geeignet. Ein ordnungsgemäßes Reporting zu Erlebnissen ist nur möglich, wenn die folgenden Bedingungen erfüllt sind:
-      * Sie können auf den Site-Inhalt nur über öffentlich zugängliche URLs zugreifen. Für den Zugriff auf die Website sind keine personalisierten Token, Cookies oder andere Mechanismen erforderlich, die nicht über die URL verfügbar sind.
-      * Die Seiten auf Ihrer Site sind mit der Seiten-URL reproduzierbar, und Sie wissen, welche optionalen URL-Parameter Erlebnisse fördern.
+      * Die Seiten auf der Website müssen unter Verwendung der Seiten-URL reproduzierbar sein.
+      * Der Textinhalt, der von einem bestimmten Benutzer angezeigt wird, kann mithilfe der Seiten-URL reproduziert werden und hängt nicht von Cookies oder anderen Personalisierungsmechanismen ab.
    * Sie haben ein klares Verständnis dafür, für welche Seiten Sie Inhaltsinteraktionsanalysen und Einblicke erfassen möchten.
    * Sie haben ein klares Verständnis dafür, für welche (Art von) Assets Sie die Inhaltsinteraktionsanalyse und -einblicke erfassen möchten.
 

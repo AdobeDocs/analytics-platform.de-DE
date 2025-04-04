@@ -7,14 +7,16 @@ hide: true
 hidefromtoc: true
 role: Admin
 exl-id: 584587e6-45fd-4fc3-a7a6-6685481ddee7
-source-git-commit: 795116d41e40bf89ebf31572fb718e2bcb58a6c8
+source-git-commit: d4803af9b71ec245f6c4b20e92a4a4c99f235f00
 workflow-type: tm+mt
-source-wordcount: '499'
+source-wordcount: '510'
 ht-degree: 1%
 
 ---
 
 # Datenerfassung in Content Analytics
+
+{{release-limited-testing}}
 
 In diesem Artikel wird detailliert erläutert, wie Content Analytics Daten erfasst
 
@@ -23,8 +25,8 @@ In diesem Artikel wird detailliert erläutert, wie Content Analytics Daten erfas
 
 Im Zusammenhang mit diesem Artikel werden die folgenden Definitionen verwendet:
 
-* **Erlebnis**: Ein Erlebnis wird als Textinhalt auf einer gesamten Web-Seite definiert. Für die Datenerfassung zeichnet Content Analytics die Erlebnis-ID auf. Content Analytics zeichnet den Text nicht auf.
-* **Erlebnis-**: Eine eindeutige Kombination aus relevanter URL und Erlebnisversion.
+* **Erlebnis**: Ein Erlebnis wird als Textinhalt auf einer gesamten Web-Seite definiert. Für die Datenerfassung zeichnet Content Analytics die Erlebnis-ID auf, die auf der Seiten-URL basiert. Später wird der Text auf der Seite über den Abrufdienst erfasst.
+* **Erlebnis-**: Eine eindeutige Kombination aus relevanter URL (Basis-URL plus alle Parameter, die den Inhalt auf der Seite steuern) und [Erlebnisversion](manual.md#versioning).
    * Sie geben als Teil der [Konfiguration](configuration.md) an, welche Parameter für eine bestimmte vollständige URL relevant sind.
    * Sie können die [Versionskennung](manual.md#versioning) definieren, die verwendet wird.
 * **Asset**: Ein Bild. Content Analytics zeichnet die Asset-URL auf.
@@ -64,7 +66,7 @@ Content Analytics erfasst auf diese Weise Daten, die diese Sequenz widerspiegeln
 
 Eine Asset-Ansicht wird aufgezeichnet, wenn:
 
-* Das Asset wurde gemäß der Konfiguration der ACA-Erweiterung nicht ausgeschlossen.
+* Das Asset wurde gemäß der Konfiguration der Content Analytics-Erweiterung nicht ausgeschlossen.
 * Das Asset wird mit 75 % angezeigt.
 * Dieses Asset wurde für diese Seite noch nicht aufgezeichnet.
 
@@ -100,7 +102,7 @@ Trigger zum Auslösen eines regulären oder bestimmten (verhaltensbezogenen) Ere
 
 ## Schemata
 
-Content Analytics-Daten werden in Datensätzen in Experience Platform basierend auf bestimmten Content Analytics-Schemata erfasst. Referenzschemata sind öffentlich verfügbar und werden in einer Standardimplementierung von Content Analytics verwendet.
+Content Analytics-Daten werden in Datensätzen in Experience Platform basierend auf bestimmten Content Analytics-Schemata erfasst. Referenzschemata sind öffentlich verfügbar:
 
 * [Schema für digitale Assets](https://github.com/adobe/xdm/blob/master/components/classes/digital-asset.schema.json)
 * [Schema für digitale Erlebnisse](https://github.com/adobe/xdm/blob/master/components/classes/digital-experience.schema.json)

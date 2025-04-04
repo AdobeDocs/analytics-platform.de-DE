@@ -5,16 +5,17 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin
 exl-id: 4aff664c-3cd9-4591-8122-6ebff10e4a76
-source-git-commit: 411cd199e758da57d94faa9efb7f488d05163750
+source-git-commit: 6f077ada9df1604b86fde21aa6b11b12160aeaa7
 workflow-type: tm+mt
-source-wordcount: '2469'
-ht-degree: 25%
+source-wordcount: '2493'
+ht-degree: 24%
 
 ---
 
 # Geführte Konfiguration für Content Analytics
 
 {{release-limited-testing}}
+
 
 Mit der geführten Konfiguration können Sie Content Analytics schnell und einfach konfigurieren. Die geführte Konfiguration verwendet einen Assistenten, um die Anforderungen für die automatische Konfiguration von Content Analytics für Ihr Unternehmen einzurichten. Im Bildschirm **[!UICONTROL Konfiguration]** können Sie entweder eine neue Konfiguration erstellen oder eine vorhandene Konfiguration bearbeiten.
 
@@ -179,15 +180,20 @@ Standardmäßig ist **[!UICONTROL Erlebnisse einschließen]** deaktiviert. Wenn 
 
 Erwägen Sie nur, Erlebnisse einzubeziehen, wenn Folgendes zutrifft:
 
-* Sie können auf den Site-Inhalt nur über öffentlich zugängliche URLs zugreifen. Für den Zugriff auf die Website sind keine personalisierten Token, Cookies oder andere Mechanismen erforderlich, die nicht über die URL verfügbar sind.
 * Die Seiten auf der Website müssen unter Verwendung der Seiten-URL reproduzierbar sein.
+* Der Textinhalt, der von einem bestimmten Benutzer angezeigt wird, kann mithilfe der Seiten-URL reproduziert werden und hängt nicht von Cookies oder anderen Personalisierungsmechanismen ab.
 
 So schließen Sie Erlebnisse in eine neue oder nicht implementierte Konfiguration ein:
 
 ![Erfassung und Definition der Erlebniskonfiguration für Content Analytics](../assets/aca-configuration-experience.png)
 
-1. Aktivieren Sie **[!UICONTROL Erlebnisse einschließen]**.
-1. Geben Sie optional die Parameter für das Rendern von Inhalten auf Ihrer Website an. Bei den Parametern handelt es sich um keine oder mehrere Kombinationen aus einem **[!UICONTROL regulären Domänenausdruck]** und **[!UICONTROL Abfrageparametern]**. Die Abfrageparameter geben an, welche Parameter sich auf den Inhalt auf Ihrer Seite auswirken. Mit dieser Eingabe kann Content Analytics alle Parameter ignorieren, die sich nicht auf den Inhalt der Seite auswirken, wenn ein eindeutiges Erlebnis definiert wird.
+1. Aktivieren Sie **[!UICONTROL Erlebnisse einschließen]**. Der Umschalter zum Aktivieren von Erlebnissen wirkt sich auf Folgendes aus:
+
+   * Datenerfassung in der Content Analytics-Erweiterung
+   * Der Prozess, der Erlebnisattribute aus Content Analytics-Ereignisdaten generiert
+   * Die Berichtsvorlage in Customer Journey Analytics.
+
+1. Geben Sie die Parameter an, wie Inhalte auf Ihrer Website gerendert werden sollen. Bei den Parametern handelt es sich um keine oder mehrere Kombinationen aus einem **[!UICONTROL regulären Domänenausdruck]** und **[!UICONTROL Abfrageparametern]**. Die Abfrageparameter geben an, welche Parameter sich auf den Inhalt auf Ihrer Seite auswirken. Mit dieser Eingabe kann Content Analytics alle Parameter ignorieren, die sich nicht auf den Inhalt der Seite auswirken, wenn ein eindeutiges Erlebnis definiert wird.
    1. Geben Sie einen **[!UICONTROL Regulären Ausdruck der Domain]** ein, z. B. `/^(?!.*\b(store|help|admin)\b)/`. Stellen Sie sicher, dass Sie reguläre Ausdrücke mithilfe von `/` mit Escape-Zeichen versehen. Der reguläre Ausdruck der Domain gibt an, für welche URLs diese Parameter gelten. Beispielsweise können Sie mehrere Sites haben, und für jede Site steuern andere Parameter den Inhalt. Wenn die Abfrageparameter für alle Ihre Seiten gelten, können Sie `.*` verwenden, um alle Seiten anzugeben.
    1. Geben Sie eine kommagetrennte Liste von **[!UICONTROL Abfrageparametern]** an, z. B. `outdoors, patio, kitchen`.
 1. Wählen **[!UICONTROL Entfernen]** aus, wenn Sie eine Kombination aus regulären Domain-Ausdrücken und Abfrageparametern entfernen möchten.
@@ -197,10 +203,9 @@ So bearbeiten Sie vorhandene Erlebnisse oder schließen neue Erlebnisse in eine 
 
 ![Erfassung und Definition der Erlebniskonfiguration für Content Analytics](../assets/aca-configuration-experience-edit.png)
 
-* Schalten Sie **[!UICONTROL Erlebnisse einschließen]** um die Verfügbarkeit von Erlebniskomponenten, Visualisierungen und Bedienfeldern in Analysis Workspace zu aktivieren oder zu deaktivieren.
-* Wählen Sie ![Bearbeiten](/help/assets/icons/Edit.svg) **[!UICONTROL Bearbeiten]** aus, um die Konfiguration der Datenerfassung für Erlebnisse in Content Analytics zu bearbeiten. Sie werden zur [Adobe Content Analytics-Erweiterung](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-filtering) in der Tags-Eigenschaft weitergeleitet, die der aktuellen Konfiguration zugeordnet ist.
+* Schalten Sie **[!UICONTROL Erlebnisse einschließen]** um die Verfügbarkeit von Erlebniskomponenten, Visualisierungen, Bedienfeldern und Vorlagen in Analysis Workspace zu aktivieren oder zu deaktivieren.
 
-
+* Wählen Sie ![Bearbeiten](/help/assets/icons/Edit.svg) **[!UICONTROL Bearbeiten]** aus, um die Konfiguration der Datenerfassung für Erlebnisse in Content Analytics weiter zu bearbeiten. Sie werden zur [Adobe Content Analytics-Erweiterung](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-filtering) in der Tags-Eigenschaft weitergeleitet, die der aktuellen Konfiguration zugeordnet ist.
 
 
 ### Datenerfassung {#onboarding-data-collection}
@@ -265,7 +270,8 @@ In einer neuen Konfiguration müssen Sie definieren, ob Sie eine vorhandene Tags
   ![Vorhandenes Tag zur Datenerfassung in Content Analytics](../assets/aca-configuration-datacollection-existingtag.png)
 
    1. Wählen Sie **[!UICONTROL Vorhandenes auswählen]**.
-   2. Wählen Sie eine vorhandene Eigenschaft aus dem Dropdown **[!UICONTROL Menü „Eigenschaft für]**&quot; aus. Sie können mit der Eingabe beginnen, um nach den verfügbaren Optionen zu suchen und diese zu beschränken.
+   2. Wählen Sie eine vorhandene Eigenschaft aus dem Dropdown **[!UICONTROL Menü „Eigenschaft für]**&quot; aus. Sie können mit der Eingabe beginnen, um nach den verfügbaren Optionen zu suchen und diese zu beschränken. Sie können keine Tags-Eigenschaft auswählen, die bereits von einer anderen implementierten Content Analytics-Konfiguration verwendet wird.
+
 
 * So erstellen Sie eine neue Tag-Eigenschaft:
 
@@ -275,13 +281,13 @@ In einer neuen Konfiguration müssen Sie definieren, ob Sie eine vorhandene Tags
    1. Geben Sie einen **[!UICONTROL Tag-Namen]** an, z. B. `ACA Test for Documentation`.
    1. Geben Sie **[!UICONTROL Domains]** an, z. B. `example.com`.
 
-* Wenn Sie sich dafür entschieden haben, Erlebnisse einzubeziehen, geben Sie an, welche Seiten bei der Datenerfassung für Content Analytics ein- oder ausgeschlossen werden sollen.
+* Geben Sie an, welche Seiten bei der Datenerfassung für Content Analytics ein- oder ausgeschlossen werden sollen.
 
-   * Geben Sie eine Zeichenfolge für reguläre Ausdrücke für (**[!UICONTROL ein-/auszuschließende Seiten]** an. Beispiel: `/^(?!.*documentation).*/`, um alle Dokumentationsseiten von Content Analytics auszuschließen. Stellen Sie sicher, dass Sie reguläre Ausdrücke mithilfe von `/` mit Escape-Zeichen versehen.
+  Geben Sie eine Zeichenfolge für reguläre Ausdrücke für (**[!UICONTROL ein-/auszuschließende Seiten]** an. <br/>Beispiel: `^(?!.*documentation).*`, um alle Dokumentationsseiten aus Content Analytics auszuschließen.
 
 * Geben Sie an, welche Assets bei der Datenerfassung für Content Analytics ein- oder ausgeschlossen werden sollen.
 
-   * Geben Sie eine Zeichenfolge für reguläre Ausdrücke für **[!UICONTROL Assets an, die ein-/ausgeschlossen werden]**. Beispiel: `/^(?!.*(logo\.jpg|\.svg)).*$/`, um alle JPEG- und SVG-Logo-Bilder von Content Analytics auszuschließen. Stellen Sie sicher, dass Sie reguläre Ausdrücke mithilfe von `/` mit Escape-Zeichen versehen.
+  Geben Sie eine Zeichenfolge für reguläre Ausdrücke für **[!UICONTROL Assets an, die ein-/ausgeschlossen werden]**. <br/>Beispiel: `^(?!.*(logo\.jpg|\.svg)).*$`, um alle JPEG- und SVG-Logobilder von Content Analytics auszuschließen.
 
 >[!IMPORTANT]
 >
@@ -318,11 +324,11 @@ Nachdem Sie alle erforderlichen Details bereitgestellt haben, enthält eine Zusa
 
 <!-- markdownlint-enable MD034 -->
 
-Wenn Sie eine Konfiguration erstellt oder bearbeitet haben, sind die folgenden Aktionen verfügbar.
+Wenn Sie eine Konfiguration erstellen oder bearbeiten, haben Sie die folgenden Optionen:
 
-* **[!UICONTROL Verwerfen]**: Alle Änderungen, die im Rahmen der Erstellung einer neuen Konfiguration oder der Bearbeitung einer vorhandenen Konfiguration vorgenommen wurden, werden verworfen.
-* **[!UICONTROL Für später speichern]**: Änderungen an einer neuen Konfiguration oder einer vorhandenen, noch nicht implementierten Konfiguration werden gespeichert. Sie können die Konfiguration zu einem späteren Zeitpunkt erneut aufrufen, um weitere Änderungen vorzunehmen, oder die Konfiguration implementieren.
-* **[!UICONTROL Implementieren]**: Einstellungen für oder Änderungen an einer neuen Konfiguration oder einer vorhandenen, noch nicht implementierten Konfiguration werden gespeichert und implementiert. Die Implementierung besteht aus:
+* **[!UICONTROL Verwerfen]**: Alle im Rahmen der Konfiguration vorgenommenen Änderungen werden verworfen.
+* **[!UICONTROL Für später speichern]**: Änderungen an einer Konfiguration werden gespeichert. Sie können die Konfiguration zu einem späteren Zeitpunkt erneut aufrufen, um weitere Änderungen vorzunehmen, oder die Konfiguration implementieren. Zum Speichern einer Konfiguration [!UICONTROL  nur ein Wert für ]Name“ erforderlich.
+* **[!UICONTROL Implementieren]**: Einstellungen für oder Änderungen an einer Konfiguration werden gespeichert und implementiert. Alle als &quot;![&quot; markierten ](/help/assets/icons/Required.svg) müssen über geeignete Werte verfügen. Die Implementierung besteht aus:
 
    * **[!UICONTROL Customer Journey Analytics]**-Konfiguration:
       * Die ausgewählte Datenansicht wird aktualisiert und enthält jetzt die Dimension und Metriken der Inhaltsanalyse.
