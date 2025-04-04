@@ -9,7 +9,7 @@ role: Admin
 source-git-commit: 7f2f2fc92c188c4cdfba7d87b7b64458daf2f0a6
 workflow-type: tm+mt
 source-wordcount: '4143'
-ht-degree: 25%
+ht-degree: 28%
 
 ---
 
@@ -361,17 +361,17 @@ Wenn ein Datensatz in der Datensatztabelle ausgewählt ist, werden in einem Bedi
 >[!CONTEXTUALHELP]
 >id="connections_breakdown_corereportablerows"
 >title="Berichtsfähige Zeilen zu Kerndaten"
->abstract="Die wichtigsten berichtspflichtigen Zeilen sind Momentaufnahmenwerte, keine aggregierten Gesamtwerte. Diese Werte werden basierend auf dem letzten Monat im ausgewählten Datumsbereich dynamisch aktualisiert. Wenn ein Kunde Januar bis März auswählt, spiegeln die Werte den Snapshot vom März wider."
+>abstract="Berichtsfähige Zeilen zu Kerndaten sind Momentaufnahmenwerte, keine aggregierten Gesamtwerte. Diese Werte werden basierend auf dem letzten Monat im ausgewählten Datumsbereich dynamisch aktualisiert. Bei der Auswahl von Januar bis März spiegeln die Werte die Momentaufnahme von März wider."
 
 >[!CONTEXTUALHELP]
 >id="connections_breakdown_historicalreportablerows"
 >title="Berichtsfähige Zeilen zu historischen Daten"
->abstract="Historisch berichtete Zeilen sind Momentaufnahmenwerte, keine aggregierten Gesamtwerte. Diese Werte werden basierend auf dem letzten Monat im ausgewählten Datumsbereich dynamisch aktualisiert. Wenn ein Kunde Januar bis März auswählt, spiegeln die Werte den Snapshot vom März wider."
+>abstract="Berichtsfähige Zeilen zu historischen Daten sind Momentaufnahmenwerte, keine aggregierten Gesamtwerte. Diese Werte werden basierend auf dem letzten Monat im ausgewählten Datumsbereich dynamisch aktualisiert. Bei der Auswahl von Januar bis März spiegeln die Werte die Momentaufnahme von März wider."
 
 >[!CONTEXTUALHELP]
 >id="connections_breakdown_cumulativereportablerows"
->title="Kumulierte berichtsfähige Zeilen"
->abstract="Kumulative berichtspflichtige Zeilen sind Momentaufnahmenwerte, keine aggregierten Gesamtwerte. Diese Werte werden basierend auf dem letzten Monat im ausgewählten Datumsbereich dynamisch aktualisiert. Wenn ein Kunde Januar bis März auswählt, spiegeln die Werte den Snapshot vom März wider."
+>title="Kumulative berichtsfähige Zeilen"
+>abstract="Kumulative berichtsfähige Zeilen sind Momentaufnahmenwerte, keine aggregierten Gesamtwerte. Diese Werte werden basierend auf dem letzten Monat im ausgewählten Datumsbereich dynamisch aktualisiert. Bei der Auswahl von Januar bis März spiegeln die Werte die Momentaufnahme von März wider."
 
 <!-- markdownlint-enable MD034 -->
 
