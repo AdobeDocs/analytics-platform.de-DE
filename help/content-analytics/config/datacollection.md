@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin
 exl-id: 584587e6-45fd-4fc3-a7a6-6685481ddee7
-source-git-commit: 89f7d8b388ab8c742712d748813520a51c736003
+source-git-commit: 02d24416bd1f56417005dfa1b693964073fb8a59
 workflow-type: tm+mt
-source-wordcount: '510'
+source-wordcount: '512'
 ht-degree: 1%
 
 ---
@@ -58,7 +58,7 @@ Content Analytics-Ereignisse werden erfasst als eine Abfolge von:
 1. [Eine aufgezeichnete Ansicht oder ein aufgezeichneter Klick](#recorded-view-or-click).
 1. [Ein regelmäßiges oder spezifisches (Verhaltens-)Ereignis](#regular-or-specific-behaviorial-event).
 
-Content Analytics erfasst auf diese Weise Daten, die diese Sequenz widerspiegeln, anstatt eine Ansicht zu erfassen oder getrennt von der Erfassung des Ereignisses zu klicken, das unmittelbar auf diese Ansicht oder diesen Klick folgt. Diese Methode zur Erfassung von Inhaltsanalysedaten reduziert auch die Menge der erfassten Daten. Datenerfassung.
+Content Analytics erfasst auf diese Weise Daten, die diese Sequenz widerspiegeln, anstatt eine Ansicht zu erfassen oder getrennt von der Erfassung des Ereignisses zu klicken, das unmittelbar auf diese Ansicht oder diesen Klick folgt. Diese Methode zur Erfassung von Inhaltsanalysedaten reduziert auch die Menge der erfassten Daten.
 
 ### Aufgezeichnete Ansicht oder Klick
 
@@ -71,7 +71,7 @@ Eine Asset-Ansicht wird aufgezeichnet, wenn:
 Ein Asset-Klick wird aufgezeichnet, wenn:
 
 * Das Asset wurde angezeigt.
-* Das Asset wurde gemäß der Konfiguration der ACA-Erweiterung nicht ausgeschlossen.
+* Das Asset wurde gemäß der Konfiguration der Content Analytics-Erweiterung nicht ausgeschlossen.
 * Ein Klick direkt auf das Asset, d. h. einen Link, der zu einer anderen Seite führt.
 
 Eine Erlebnisansicht wird aufgezeichnet, wenn:
@@ -95,7 +95,7 @@ Trigger zum Auslösen eines regulären oder bestimmten (verhaltensbezogenen) Ere
    * Browser schließen
    * Sperrbildschirm
 * Die URL ändert sich, was zu einer geänderten relevanten URL führt.
-* Eine Asset-Ansicht überschreitet die Batch-Grenze von 32.
+* Die Anzahl der aufgezeichneten und sendebereiten Asset-Ansichten überschreitet die Anzahl von 32.
 
 
 ## Schemata
