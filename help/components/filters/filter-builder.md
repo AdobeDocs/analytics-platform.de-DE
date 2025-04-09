@@ -1,12 +1,12 @@
 ---
-description: Der Filtergenerator bietet eine Arbeitsfläche zum Ziehen und Ablegen von Metrik -Dimensionen, -Filtern und -Ereignissen, um Personen basierend auf Container-Hierarchielogik, Regeln und Operatoren zu filtern. Mit diesem integrierten Entwicklungs-Tool können Sie einfache oder komplexe Filter erstellen und speichern, mit denen Personenattribute und Aktionen über Besuche und Ereignisse hinweg identifiziert werden.
+description: Der Filter Builder bietet eine Arbeitsfläche zum Ziehen und Ablegen von Metrikdimensionen, Filtern und Ereignissen, um Personen basierend auf Container-Hierarchielogik, Regeln und Operatoren zu filtern. Mit diesem integrierten Entwicklungs-Tool können Sie einfache oder komplexe Filter erstellen und speichern, mit denen Personenattribute und Aktionen über Besuche und Ereignisse hinweg identifiziert werden.
 title: Erstellen von Filtern
 feature: Filters
 role: User
 exl-id: 160021f1-6942-4682-9114-d375307d9912
-source-git-commit: 4bf8c616965718426efe880865acb0e5054b6a31
+source-git-commit: c94e97723a4ed30e675144e02196c93016b13235
 workflow-type: tm+mt
-source-wordcount: '1494'
+source-wordcount: '1570'
 ht-degree: 10%
 
 ---
@@ -76,7 +76,7 @@ Mit dem Definition Builder erstellen Sie Ihre Filterdefinition. In dieser Konstr
 Sie können den Typ und den Umfang Ihrer Definition konfigurieren:
 
 1. Um den Typ Ihrer Definition anzugeben, geben Sie an, ob Sie eine Ein- oder Ausschlussdefinition erstellen möchten. Wählen Sie ![Einstellung](/help/assets/icons/Setting.svg) **[!UICONTROL Optionen]** und aus dem Dropdown-Umschalter **[!UICONTROL Einschließen]** oder **[!UICONTROL Ausschließen]**.
-1. Um den Umfang Ihrer Definition anzugeben, wählen Sie aus dem Dropdown-Menü **[!UICONTROL Einschließen]** oder **[!UICONTROL Ausschließen]** aus, ob der Umfang der Definition **[!UICONTROL Ereignis]**, **[!UICONTROL Sitzung]** oder **[!UICONTROL Person]** sein soll.
+1. Um den Umfang Ihrer Definition anzugeben, wählen Sie aus dem Dropdown-Menü **[!UICONTROL Einschließen]** oder **[!UICONTROL Ausschließen]** aus, ob Sie den Umfang der Definition **[!UICONTROL Ereignis]**, **[!UICONTROL Sitzung]**, **[!UICONTROL Person]**, **[!UICONTROL Globales Konto]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}, **[!UICONTROL Konto]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}, **[!UICONTROL Opportunity]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"} oder **[!UICONTROL EinkaufsgruppeB2B edition [!BADGE ]** 24}]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"} möchten
 
 Sie können diese Einstellungen später jederzeit ändern.
 
@@ -84,11 +84,11 @@ Sie können diese Einstellungen später jederzeit ändern.
 
 Ein wichtiger Teil beim Erstellen Ihrer Filterdefinition ist die Verwendung von Dimensionen, Metriken, vorhandenen Filtern und Datumsbereichen. Alle diese Komponenten sind über das Bedienfeld „Komponenten“ im Filter-Builder verfügbar.
 
-![Mit dem Erstellen einer Definition beginnen](assets/start-building-filter.gif){width=100%}
+![Erstellen einer Definition](assets/start-building-filter.gif){width=100%}
 
 So fügen Sie eine Komponente hinzu:
 
-1. Ziehen Sie eine Komponente aus dem Bedienfeld „Komponenten“ auf **[!UICONTROL Ziehen Sie Metrik(en), Filter und/oder Dimensionen per Drag-and-Drop hierher]**. Sie können den ![Suche](/help/assets/icons/Search.svg) in der Komponentenleiste verwenden, um nach bestimmten Komponenten zu suchen.
+1. Ziehen Sie eine Komponente aus dem Bedienfeld Komponenten auf **[!UICONTROL Ziehen Sie Metrik(en), Filter und/oder Dimensionen per Drag-and-Drop hierher]**. Sie können den ![Suche](/help/assets/icons/Search.svg) in der Komponentenleiste verwenden, um nach bestimmten Komponenten zu suchen.
 1. Geben Sie Details für die Komponente an. Wählen Sie beispielsweise einen Wert unter **[!UICONTROL Wert auswählen]** aus. Oder geben Sie einen Wert ein. Was und wie Sie einen oder mehrere Werte angeben können, hängt von der Komponente und dem Operator ab.
 1. Ändern Sie optional den Standardoperator. Beispiel: von **[!UICONTROL gleich]** bis **[!UICONTROL gleich einem von]**. Unter [Benutzer](operators.md) finden Sie einen detaillierten Überblick über die verfügbaren Benutzer.
 
@@ -106,14 +106,14 @@ So löschen Sie eine Komponente:
 
 Sie können mehrere Komponenten in einem oder mehreren Containern gruppieren und Logiken innerhalb und zwischen Containern definieren. Mit Containern können Sie komplexe Definitionen für Ihren Filter erstellen.
 
-![Container hinzufügen](assets/add-container.gif){width=100%}
+![Container hinzufügen](assets/add-container.gif){Width=100%}
 
 * Um einen Container hinzuzufügen, wählen Sie **[!UICONTROL Container hinzufügen]** unter ![Einstellung](/help/assets/icons/Setting.svg) **[!UICONTROL Optionen]** aus.
 * Um eine vorhandene Komponente zum Container hinzuzufügen, ziehen Sie die Komponente per Drag-and-Drop in den Container.
 * Um dem Container eine weitere Komponente hinzuzufügen, ziehen Sie eine Komponente aus dem Komponentenbedienfeld in den Container. Verwenden Sie die blaue Einfügezeile als Anleitung.
 * Um eine weitere Komponente außerhalb des Containers hinzuzufügen, ziehen Sie eine Komponente aus dem Komponentenbereich außerhalb des Containers, aber innerhalb des Containers für die Hauptdefinition. Verwenden Sie die blaue Einfügezeile als Anleitung.
 * Um die Logik zwischen Komponenten in einem Container, zwischen Containern oder zwischen einem Container und einer Komponente zu ändern, wählen Sie die entsprechenden **[!UICONTROL Und]**, **[!UICONTROL Oder]**, **[!UICONTROL Dann]**. Wenn Sie Dann auswählen, wandeln Sie den Filter in einen sequenziellen Filter um. Siehe [Erstellen sequenzieller Filter](seg-sequential-build.md) für weitere Informationen.
-* Um die Container-Ebene zu wechseln, wählen ![WebPage](/help/assets/icons/WebPage.svg) **[!UICONTROL Event]**, ![Visit](/help/assets/icons/Visit.svg) **[!UICONTROL Session]** oder ![User](/help/assets/icons/User.svg)**[!UICONTROL Person]**.
+* Um die Container-Ebene zu wechseln, wählen Sie ![Globales ](/help/assets/icons/Globe.svg) **[!UICONTROL Globales Konto]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}, ![Konto](/help/assets/icons/Account.svg)**[!UICONTROL Konto]** [!BADGE B2B editionB2B edition B2B edition ]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}, ![Opportunity **(/help/assets/icons/Opportunity.svg)](/help/assets/icons/BuyingGroup.svg),]**]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}KaufGruppen![**[!UICONTROL Gruppen]** ]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"} ![ ](/help/assets/icons/WebPage.svg) **** ![ ](/help/assets/icons/Visit.svg) **** ![ ](/help/assets/icons/User.svg) ****,[!BADGE [!BADGE 
 
 Sie können ![Einstellung](/help/assets/icons/Setting.svg) in einem Container für die folgenden Aktionen verwenden:
 
@@ -135,7 +135,7 @@ Sie können Filter erstellen, die rollierende Datumsbereiche enthalten. Sie kön
 
 >[!BEGINSHADEBOX]
 
-Siehe ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Rollierende Datumsbereiche in Segmenten](https://video.tv.adobe.com/v/25403/?quality=12&learn=on){target="_blank"} für ein Demovideo.
+Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Rollierende Datumsbereiche in Segmenten](https://video.tv.adobe.com/v/25403/?quality=12&learn=on){target="_blank"} finden Sie ein Demovideo.
 
 >[!ENDSHADEBOX]
 
@@ -177,7 +177,7 @@ Oder Sie könnten 52 Filter definieren: 50 Filter für die US-Bundesstaaten, ein
 
 >[!CONTEXTUALHELP]
 >id="components_filters_attribution_nonrepeatinginstance"
->title="Nicht wiederholende Instanz"
+>title="Sich nicht wiederholende Instanz"
 >abstract="Umfasst einzigartige (sich nicht wiederholende) Instanzen für die Dimension."
 
 <!-- markdownlint-enable MD034 -->
@@ -213,7 +213,7 @@ In der folgenden Tabelle wird für jedes Attributionsmodell erläutert, welche e
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:--:|
 | Wiederholung (Standard) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![Entfernen](/help/assets/icons/Remove.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![Entfernen](/help/assets/icons/Remove.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![Entfernen](/help/assets/icons/Remove.svg) |
 | Instanz | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![Entfernen](/help/assets/icons/Remove.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![Entfernen](/help/assets/icons/Remove.svg) | ![Entfernen](/help/assets/icons/Remove.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![Entfernen](/help/assets/icons/Remove.svg) |
-| Nicht wiederholende Instanz | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![Entfernen](/help/assets/icons/Remove.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![Entfernen](/help/assets/icons/Remove.svg) | ![Entfernen](/help/assets/icons/Remove.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![Entfernen](/help/assets/icons/Remove.svg) |
+| Sich nicht wiederholende Instanz | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![Entfernen](/help/assets/icons/Remove.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![Entfernen](/help/assets/icons/Remove.svg) | ![Entfernen](/help/assets/icons/Remove.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![Entfernen](/help/assets/icons/Remove.svg) |
 
 Ein Beispielbericht zu Ereignissen, die die drei Filter verwenden, sieht wie folgt aus:
 

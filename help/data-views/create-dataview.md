@@ -5,10 +5,10 @@ exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: 4bf8c616965718426efe880865acb0e5054b6a31
-workflow-type: ht
-source-wordcount: '1900'
-ht-degree: 100%
+source-git-commit: c94e97723a4ed30e675144e02196c93016b13235
+workflow-type: tm+mt
+source-wordcount: '2120'
+ht-degree: 89%
 
 ---
 
@@ -34,9 +34,22 @@ So erstellen oder bearbeiten Sie eine Datenansicht:
 
 So konfigurieren Sie eine neue oder vorhandene Datenansicht:
 
+>[!BEGINTABS]
+
+>[!TAB Standard ]
+
+![Konfigurieren der Datenansicht](assets/dataview-configure.png)
+
+>[!TAB B2B edition]
+
+![Datenansicht B2B konfigurieren](assets/dataview-configure-b2b.png)
+
+>[!ENDTABS]
+
+
 1. Wählen Sie die Registerkarte **[!UICONTROL Konfigurieren]** aus (sofern noch nicht aktiv).
 
-   ![Konfigurieren der Datenansicht](assets/dataview-configure.png)
+
 1. Legen Sie Angaben für [!UICONTROL Einstellungen], [!UICONTROL Container] und [!UICONTROL Kalender] fest (siehe unten).
 1. Wählen Sie **[!UICONTROL Speichern und fortfahren]** aus, um mit der Konfiguration der neuen oder vorhandenen Datenansicht fortzufahren. Wählen Sie **[!UICONTROL Speichern]** aus, um die Konfiguration für die vorhandene Datenansicht zu speichern.
 
@@ -56,10 +69,10 @@ Stellt übergreifende Einstellungen für die Datenansicht bereit.
 
 | Einstellung | Beschreibung |
 | --- | --- |
-| [!UICONTROL **Verbindung**] | In diesem Feld wird die Datenansicht mit der zuvor eingerichteten Verbindung verknüpft, die einen oder mehrere Adobe Experience Platform-Datensätze enthält. |
-| [!UICONTROL **Name**] | Erforderlich. Der Name der Datenansicht. Dieser Wert wird in der Dropdown-Liste oben rechts in Analysis Workspace angezeigt. |
-| [!UICONTROL **Externe ID**] | Erforderlich. Der Name der Datenansicht, die Sie in externen Quellen verwenden können, beispielsweise in Business-Intelligence-Tools. Der Standardwert ist `unspecified`. Wenn Sie keine externe ID angeben, wird der Name aus dem Namen der Datenansicht erstellt, wobei Leerzeichen durch Unterstriche ersetzt werden. |
-| [!UICONTROL **Beschreibung**] | Optional. Adobe empfiehlt eine detaillierte Beschreibung, damit Benutzer verstehen, warum die Datenansicht vorhanden ist und für wen sie konzipiert ist. |
+| **[!UICONTROL Verbindung]** | In diesem Feld wird die Datenansicht mit der zuvor eingerichteten Verbindung verknüpft, die einen oder mehrere Adobe Experience Platform-Datensätze enthält. |
+| **[!UICONTROL Name]** | Erforderlich. Der Name der Datenansicht. Dieser Wert wird in der Dropdown-Liste oben rechts in Analysis Workspace angezeigt. |
+| **[!UICONTROL Externe ID]** | Erforderlich. Der Name der Datenansicht, die Sie in externen Quellen verwenden können, beispielsweise in Business-Intelligence-Tools. Der Standardwert ist `unspecified`. Wenn Sie keine externe ID angeben, wird der Name aus dem Namen der Datenansicht erstellt, wobei Leerzeichen durch Unterstriche ersetzt werden. |
+| **[!UICONTROL Beschreibung]** | Optional. Adobe empfiehlt eine detaillierte Beschreibung, damit Benutzer verstehen, warum die Datenansicht vorhanden ist und für wen sie konzipiert ist. |
 
 {style="table-layout:auto"}
 
@@ -92,9 +105,13 @@ Gibt den Namen der Container für die Datenansicht an. Container-Namen werden h�
 
 | Einstellung | Beschreibung |
 | --- | --- |
-| [!UICONTROL **Container-Name für Person**] | [!UICONTROL Person] (Standard). Der Container [!UICONTROL Person] enthält sämtliche Sitzungen und Ereignisse für Personen innerhalb des angegebenen Zeitrahmens. Wenn Ihr Unternehmen einen anderen Begriff verwendet (z. B. „Besucher“ oder „Benutzer“), können Sie den Container hier umbenennen. |
-| [!UICONTROL **Container-Name für Sitzung**] | [!UICONTROL Sitzung] (Standard). Mit dem Sitzungs-Container können Seiteninteraktionen, Kampagnen oder Konversionen für eine bestimmte [!UICONTROL Sitzung] identifiziert werden. Sie können diesen Container in „Besuch“ oder einen anderen von Ihrem Unternehmen bevorzugten Begriff umbenennen. |
-| [!UICONTROL **Container-Name für Ereignis**] | [!UICONTROL Ereignis] (Standard). Der Container [!UICONTROL Ereignis] definiert einzelne Ereignisse in einem Datensatz. Wenn Ihr Unternehmen einen anderen Begriff verwendet (z. B. „Hits“ oder „Seitenansichten“), können Sie den Container hier umbenennen. |
+| [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}<br/>**[!UICONTROL Global Account Container-Name ]** | `Global Account` (Standard) Der [!UICONTROL Globales Konto]-Container enthält alle Sitzungen und Ereignisse für globale Konten innerhalb des angegebenen Zeitraums. Wenn Ihr Unternehmen einen anderen Begriff verwendet, können Sie den Container hier umbenennen. |
+| [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}<br/>**[!UICONTROL Account-Container-Name ]** | `Account` (Standard) Der [!UICONTROL Konto]-Container enthält alle Sitzungen und Ereignisse für Konten innerhalb des angegebenen Zeitraums. Wenn Ihr Unternehmen einen anderen Begriff verwendet, können Sie den Container hier umbenennen. |
+| [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}<br/>**[!UICONTROL Opportunity-Container-Name ]** | `Opportunity` (Standard) Der [!UICONTROL Opportunity]-Container enthält alle Sitzungen und Ereignisse für Opportunitys innerhalb des angegebenen Zeitraums. Wenn Ihr Unternehmen einen anderen Begriff verwendet, können Sie den Container hier umbenennen. |
+| [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}<br/>**[!UICONTROL Einkaufsgruppen-Container-Name ]** | `Buying Group` (Standard) Der [!UICONTROL Einkaufsgruppe]-Container enthält alle Sitzungen und Ereignisse für den Kauf von Gruppen innerhalb eines bestimmten Zeitraums. Wenn Ihr Unternehmen einen anderen Begriff verwendet, können Sie den Container hier umbenennen. |
+| **[!UICONTROL Container-Name für Person]** | `Person` (Standard) Der Container [!UICONTROL Person] enthält sämtliche Sitzungen und Ereignisse für Personen innerhalb des angegebenen Zeitrahmens. Wenn Ihr Unternehmen einen anderen Begriff verwendet (z. B. „Besucher“ oder „Benutzer“), können Sie den Container hier umbenennen. |
+| **[!UICONTROL Container-Name für Sitzung]** | `Session` (Standard) Mit dem Sitzungs-Container können Seiteninteraktionen, Kampagnen oder Konversionen für eine bestimmte [!UICONTROL Sitzung] identifiziert werden. Sie können diesen Container in „Besuch“ oder einen anderen von Ihrem Unternehmen bevorzugten Begriff umbenennen. |
+| **[!UICONTROL Container-Name für Ereignis]** | `Event` (Standard) Der Container [!UICONTROL Ereignis] definiert einzelne Ereignisse in einem Datensatz. Wenn Ihr Unternehmen einen anderen Begriff verwendet (z. B. „Hits“ oder „Seitenansichten“), können Sie den Container hier umbenennen. |
 
 {style="table-layout:auto"}
 
@@ -179,5 +196,11 @@ Sie können Filter hinzufügen, die für die gesamte Datenansicht gelten. Dieser
 ### Sitzungseinstellungen
 
 Legen Sie den Zeitraum der Inaktivität zwischen Ereignissen fest, bevor eine Sitzung abläuft und eine neue gestartet wird. Ein Zeitraum ist erforderlich. Sie können optional auch den Start einer neuen Sitzung erzwingen, wenn ein Ereignis eine bestimmte Metrik enthält. Siehe [Sitzungseinstellungen](session-settings.md) für weitere Details.
+
+### Datenvorschau
+
+Die Datenvorschau vergleicht (für die verschiedenen Container) die Daten dieser Datenansicht mit den Daten der Verbindung. Der Vorschauprozentsatz basiert auf der Gesamtzahl der Verbindungen der letzten 90 Tage.
+
+Wenn die Vorschau nicht geladen wird, wird Ihre Verbindung möglicherweise noch aufgestockt.
 
 Nachdem alle gewünschten Einstellungen angegeben wurden, klicken Sie auf **[!UICONTROL Speichern und beenden]**.

@@ -5,10 +5,10 @@ exl-id: b8b234c6-a7d9-40e9-8380-1db09610b941
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: 4bf8c616965718426efe880865acb0e5054b6a31
+source-git-commit: c94e97723a4ed30e675144e02196c93016b13235
 workflow-type: tm+mt
-source-wordcount: '921'
-ht-degree: 80%
+source-wordcount: '1001'
+ht-degree: 73%
 
 ---
 
@@ -84,20 +84,26 @@ Details zu den verfügbaren Zuordnungseinstellungen.
   | Erster bekannter | C | C | C | C | C |
   | Letzter bekannter | A | A | A | A | A |
 
+
 ## [!UICONTROL Gültigkeits]-Einstellungen
 
 Details zu den verfügbaren Gültigkeitseinstellungen.
 
 * **Sitzung**: Läuft nach einer Sitzung ab. Standardgültigkeitsfenster.
-* **Person**: Läuft am Ende des Reporting-Fensters ab.
+* **Fenster „Personen-Reporting**: Läuft am Ende des Reporting-Fensters ab.
+* **Globales Kontoberichterstellungsfenster** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}: Läuft am Ende des Berichtsfensters ab.
+* **Kontoberichterstellungsfenster** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}: Läuft am Ende des Berichtsfensters ab.
+* **Opportunity-Reporting** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}: Läuft am Ende des Reporting-Fensters ab.
+* **Berichtsfenster für Einkaufsgruppen** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}: Läuft am Ende des Berichtsfensters ab.
 * **Benutzerdefinierte Zeit**: Läuft nach einer festgelegten Zeitspanne ab (bis zu 90 Tage). Diese Ablaufoption ist nur für die Zuordnungsmodelle „Original“ und „Zuletzt verwendet“ verfügbar. Bei Verwendung der zeitbasierten Gültigkeitsdauer werden auch Werte vor dem Beginn des Reporting-Fensters (bis zu 90 Tage) berücksichtigt.
 * **Metrik**: Wenn diese Metrik in einem Ereignis angezeigt wird, läuft der Wert in der Dimension sofort ab. Sie können jede beliebige Metrik als Gültigkeitsende für diese Dimension verwenden. Diese Gültigkeitsoption ist nur für die Zuordnungseinstellungen „Original“ und „Zuletzt verwendet“ verfügbar.
+
 
 ## [!UICONTROL Binding-Dimension]
 
 Eine Dropdown-Liste, mit der Sie die Persistenz eines Dimensionswerts an Dimensionswerte in einer anderen Dimension binden können. Zu den gültigen Optionen gehören andere Dimensionen, die in der Datenansicht enthalten sind.
 
-Siehe [Verwenden von Bindungsdimensionen und Metriken im Customer Journey Analytics](../../use-cases/data-views/binding-dimensions-metrics.md) für Beispiele zur effektiven Verwendung von Bindungsdimensionen.
+Siehe [Verwenden von Bindungsdimensionen und Metriken in Customer Journey Analytics](../../use-cases/data-views/binding-dimensions-metrics.md) für Beispiele zur effektiven Verwendung von Bindungsdimensionen.
 
 
 >[!BEGINSHADEBOX]
@@ -113,4 +119,4 @@ Eine Dropdown-Liste, in der Sie eine Metrik auswählen können, die als Binding-
 
 Diese Einstellung wird nur angezeigt, wenn die Binding-Dimension im Objekt-Array niedriger ist als die Komponente. Wenn in einem Ereignis eine Bindungsmetrik vorhanden ist, werden Dimensionswerte von der Ereignisebene auf die untere Schemaebene der Bindungsdimension kopiert.
 
-Siehe das zweite Beispiel unter [Verwenden von Bindungsdimensionen und Metriken im Customer Journey Analytics](../../use-cases/data-views/binding-dimensions-metrics.md) für weitere Informationen zur effektiven Verwendung von Bindungsmetriken.
+Siehe das zweite Beispiel unter [Verwenden von Bindungsdimensionen und Metriken in Customer Journey Analytics](../../use-cases/data-views/binding-dimensions-metrics.md) für weitere Informationen zur effektiven Verwendung von Bindungsmetriken.

@@ -4,10 +4,10 @@ title: Konfigurieren einer Flussvisualisierung
 feature: Visualizations
 exl-id: 7055cbc9-19b3-40f0-b8d4-52d241224827
 role: User
-source-git-commit: 0cd9cd508d474df3dff176bca4596d0379ac86b4
+source-git-commit: c94e97723a4ed30e675144e02196c93016b13235
 workflow-type: tm+mt
-source-wordcount: '1446'
-ht-degree: 37%
+source-wordcount: '1484'
+ht-degree: 90%
 
 ---
 
@@ -27,7 +27,7 @@ Sie können den Beginn oder das Ende des Pfads konfigurieren, an dem Sie interes
 
 ## Verwenden
 
-1. Fügen Sie eine Visualisierung ![GraphPathing](/help/assets/icons/GraphPathing.svg) **[!UICONTROL Flow]** hinzu. Siehe [Hinzufügen einer Visualisierung zu einem Bedienfeld](../freeform-analysis-visualizations.md#add-visualizations-to-a-panel).
+1. Fügen Sie eine ![GraphPathing](/help/assets/icons/GraphPathing.svg) **[!UICONTROL Flussvisualisierung]** hinzu. Weitere Informationen finden Sie unter [Hinzufügen einer Visualisierung in einem Bedienfeld](../freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
 
 1. Sie können Ihre Flussvisualisierung mithilfe einer der folgenden Optionen verankern:
 
@@ -35,31 +35,31 @@ Sie können den Beginn oder das Ende des Pfads konfigurieren, an dem Sie interes
    * [!UICONTROL **Enthält**] (Dimensionen oder Elemente) oder
    * [!UICONTROL **Endet mit**] (Metriken, Dimensionen oder Elemente)
 
-   Jede dieser Kategorien wird auf dem Bildschirm als *Ablagebereich“*. Sie können den Ablagebereich auf drei Arten füllen:
+   Jede dieser Kategorien wird auf dem Bildschirm als ein *Ablagebereich* angezeigt. Sie können den Ablagebereich auf drei Arten füllen:
 
    * Verwenden Sie das Dropdown-Menü, um Metriken oder Dimensionen auszuwählen.
-   * Ziehen Sie Dimensionen oder Metriken aus dem linken Bedienfeld.
-   * Beginnen Sie mit der Eingabe des Namens einer Dimension oder Metrik und wählen Sie sie dann aus, wenn sie in der Dropdown-Liste angezeigt wird.
+   * Ziehen Sie Dimensionen oder Metriken per Drag-and-Drop aus dem linken Bedienfeld.
+   * Beginnen Sie mit der Eingabe des Namens einer Dimension oder Metrik und wählen Sie diese dann aus, wenn sie in der Dropdown-Liste angezeigt wird.
 
    >[!IMPORTANT]
    >
-   >Berechnete Metriken können nicht in den Feldern **[!UICONTROL Beginnt mit]** oder **[!UICONTROL Endet mit]** verwendet werden.
+   >Berechnete Metriken können nicht in einem Feld **[!UICONTROL Beginnt mit]** oder **[!UICONTROL Endet mit]** verwendet werden.
 
-1. Wenn Sie eine Metrik auswählen, müssen Sie auch einen [!UICONTROL **Pfad Dimension**] angeben, der als Pfad verwendet werden soll, der zu Ihrer ausgewählten Komponente führt oder von ihr stammt, wie hier dargestellt. Die Standardeinstellung ist [!UICONTROL **Seite**].
+1. Wenn Sie eine Metrik auswählen, müssen Sie auch eine [!UICONTROL **Pfaddimension**] angeben, die als Pfad verwendet wird, der zu Ihrer ausgewählten Komponente hin oder von dieser weg führt, wie hier dargestellt. Die Standardeinstellung ist [!UICONTROL **Seite**].
 
    ![Flusskonfiguration](assets/flow-configure.png)
 
-1. (Optional) Wählen Sie **[!UICONTROL Erweiterte Einstellungen anzeigen]** aus, um eine der folgenden Optionen zu konfigurieren:
+1. (Optional) Wählen Sie **[!UICONTROL Erweiterte Einstellungen anzeigen]** aus, um die folgenden Optionen zu konfigurieren:
 
 
    | Einstellung | Beschreibung |
    | --- | --- |
    | **[!UICONTROL Beschriftungen umbrechen]** | Die Bezeichnungen der Flusselemente werden üblicherweise aus Platzgründen auf dem Bildschirm abgeschnitten. Aktivieren Sie dieses Kontrollkästchen, um die gesamte Bezeichnung anzuzeigen.  Standard = deaktiviert. |
-   | **[!UICONTROL Wiederholungsinstanzen einschließen]** | Flussvisualisierungen basieren auf Instanzen einer Dimension. Mit dieser Einstellung haben Sie die Möglichkeit, wiederholte Instanzen, z. B. das Neuladen von Seiten, ein- oder auszuschließen. Wiederholungen können jedoch nicht aus Flussvisualisierungen entfernt werden, die Dimensionen mit mehreren Werten enthalten, wie listVars, listProps, s.product, Merchandising-eVars usw. <p>Standardmäßig ist diese Option deaktiviert.</p> |
-   | **[!UICONTROL Begrenzung auf erstes/letztes Auftreten]** | Begrenzen Sie Pfade auf Pfade, die mit dem ersten oder letzten Vorkommen einer Dimension, eines Elements oder einer Metrik beginnen oder enden. Eine [ Erklärung finden Sie unter „Begrenzung auf erstes ](#example-scenario-for-limit-to-firstlast-occurrence) letztes Auftreten“. |
+   | **[!UICONTROL Wiederholungsinstanzen einschließen]** | Flussvisualisierungen basieren auf Instanzen einer Dimension. Diese Einstellung gibt Ihnen die Möglichkeit, wiederholte Instanzen ein- oder auszuschließen, z. B. Seitenneuladungen. Wiederholungen können jedoch nicht aus Flussvisualisierungen entfernt werden, die Dimensionen mit mehreren Werten enthalten, wie listVars, listProps, s.product, Merchandising-eVars usw. <p>Standardmäßig ist diese Option deaktiviert.</p> |
+   | **[!UICONTROL Begrenzung auf erstes/letztes Auftreten]** | Begrenzen Sie Pfade auf diejenigen, die mit dem ersten/letzten Auftreten einer Dimension, eines Elements oder einer Metrik beginnen oder enden. Eine ausführlichere Erläuterung finden Sie unter [Begrenzung auf erstes/letztes Auftreten](#example-scenario-for-limit-to-firstlast-occurrence). |
    | **[!UICONTROL Anzahl der Spalten]** | Die Anzahl der Spalten, die Ihr Flussdiagramm enthalten soll. Sie können maximal 5 Spalten angeben. |
    | **[!UICONTROL Erweiterte Elemente pro Spalte]** | Die Anzahl der Elemente, die jede Spalte enthalten soll. Sie können pro Spalte maximal 10 erweiterte Elemente angeben. |
-   | **[!UICONTROL Fluss-Container]** | Sie können zwischen **[!UICONTROL Sitzungen]** und **[!UICONTROL Person) wechseln]** um die Pfade zu analysieren. Mit diesen Einstellungen können Sie die Interaktion einer Person auf Personenebene (sitzungsübergreifend) verstehen oder die Analyse auf eine einzelne Sitzung beschränken. |
+   | **[!UICONTROL Fluss-Container]** | Zur Pfadanalyse können Sie zwischen **[!UICONTROL Globales Konto]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}, **[!UICONTROL Account]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}, **[!UICONTROL Opportunity]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}, **[!UICONTROL Buying Group]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}, **[!UICONTROL Sessions]** und **[!UICONTROL Person]** wechseln. Diese Einstellungen helfen Ihnen, die Interaktion einer Person auf Personenebene (über Sitzungen hinweg) zu verstehen oder die Analyse auf eine einzelne Sitzung zu beschränken. |
 
    >[!IMPORTANT]
    >
@@ -71,11 +71,11 @@ Sie können den Beginn oder das Ende des Pfads konfigurieren, an dem Sie interes
 
 ### Beispiel
 
-Angenommen, Sie möchten den Pfad nachverfolgen, den Benutzer von und zu den beliebtesten Seiten Ihrer Site gewählt haben.
+Angenommen, Sie möchten den Pfad verfolgen, den Benutzende zu und von den beliebtesten Seiten Ihrer Site eingeschlagen haben.
 
-1. Erstellen Sie eine Flussvisualisierung wie oben beschrieben.
+1. Erstellen Sie eine Flussvisualisierung, wie oben beschrieben.
 1. Ziehen Sie die Dimension [!UICONTROL **Seite**] in das Feld **[!UICONTROL Enthält]** und wählen Sie [!UICONTROL **Erstellen**] aus.
-1. Die Flussvisualisierung erstellt im Mittelpunkt der Visualisierung eine Seite, die im Fokusknoten am häufigsten angezeigt wird. Außerdem werden die obersten Seiten, die zu dieser Seite führen (links neben dem Fokusknoten), sowie die obersten Seiten, die von dieser Seite führen (rechts neben dem Fokusknoten) angezeigt.
+1. Die Flussvisualisierung wird mit der am häufigsten angezeigten Seite erstellt, die im Fokusknoten in der Mitte der Visualisierung angezeigt wird. Sie sehen auch die Top-Seiten, die zu dieser Seite führen (links neben dem Fokusknoten), sowie die Top-Seiten, die von dieser Seite weg führen (rechts neben dem Fokusknoten).
 1. Analysieren Sie die Daten im Fluss, wie unter [Konfigurieren](#configure) beschrieben.
 
 
@@ -83,32 +83,32 @@ Angenommen, Sie möchten den Pfad nachverfolgen, den Benutzer von und zu den bel
 
 Eine Zusammenfassung der Flusskonfiguration wird oben in den Visualisierungen angezeigt. Die Pfade in dem Diagramm sind proportional. Pfade mit mehr Aktivität werden dicker dargestellt.
 
-![Beispiel für eine Flussausgabe mit „Endet mit Besuchen“, Pfaddimension: Seite und Fluss-Container: Besucher.](assets/flow-output.png)
+![Beispiel für eine Flussausgabe mit „Endet mit“-Besuchen, Pfaddimension: Seite und Fluss-Container: Besucher.](assets/flow-output.png)
 
 Um die Daten weiter zu untersuchen, haben Sie mehrere Möglichkeiten:
 
 * Das Flussdiagramm ist interaktiv. Wenn Sie den Mauszeiger über das Diagramm halten, werden jeweils andere Details angezeigt.
 
-* Wenn Sie einen Knoten in dem Diagramm auswählen, werden die zugehörigen Details zu diesem Knoten angezeigt. Wählen Sie den Knoten erneut aus, um ihn zu reduzieren.
+* Wenn Sie einen Knoten in dem Diagramm auswählen, werden die zugehörigen Details zu diesem Knoten angezeigt. Wählen Sie den Knoten erneut aus, um ihn wieder zu reduzieren.
 
   ![Beispiel für ein interaktives Flussdiagramm mit Knotendetails.](assets/node-details.png)
 
-* Sie können eine Spalte so filtern, dass nur bestimmte Ergebnisse angezeigt werden, z. B. das Ein- und Ausschließen, die Angabe von Kriterien usw.
+* Sie können eine Spalte so filtern, dass nur bestimmte Ergebnisse angezeigt werden, z. B. das Ein- und Ausschließen, die Angabe von Kriterien usw.
 
 * Wählen Sie ![AddCircle](/help/assets/icons/AddCircle.svg) auf der linken oder rechten Seite aus, um eine Spalte zu erweitern.
 
-* Um die Ausgabe anzupassen, verwenden Sie die Optionen [Kontextmenü](#context-menu) .
+* Verwenden Sie zum Anpassen der Ausgabe die [Kontextmenü](#context-menu)-Optionen.
 
-* Um den Fluss zu bearbeiten oder ihn mit verschiedenen Optionen neu zu erstellen, wählen ![Bearbeiten](/help/assets/icons/Edit.svg) neben der Konfigurationsübersicht aus.
+* Um den Fluss zu bearbeiten oder ihn mit verschiedenen Optionen neu zu erstellen, wählen Sie ![Bearbeiten](/help/assets/icons/Edit.svg) neben der Konfigurationszusammenfassung aus.
 
 ## Filter
 
-Über jeder Spalte wird ein Filter ![Filter](/help/assets/icons/Filter.svg) angezeigt, wenn Sie den Mauszeiger darüber bewegen. Durch Auswahl des Filters rufen Sie dasselbe Filterdialogfeld ab, das in der Freiformtabelle vorhanden ist. Siehe [Filtern und Sortieren](freeform-table/../../freeform-table/filter-and-sort.md).
+Über jeder Spalte wird ein Filter ![Filter](/help/assets/icons/Filter.svg) angezeigt, wenn Sie den Mauszeiger darüber bewegen. Wenn Sie den Filter auswählen, sehen Sie dasselbe Filterdialogfeld, das heute auch in der Freiformtabelle vorhanden ist. Siehe [Filtern und Sortieren](freeform-table/../../freeform-table/filter-and-sort.md).
 
-* Verwenden Sie **[!UICONTROL Erweitert anzeigen]** um erweiterte Einstellungen so zu konfigurieren, dass bestimmte Kriterien mit einer Liste von Benutzern ein- oder ausgeschlossen werden. Weitere Informationen finden [ unter ](../freeform-table/filter-and-sort.md) und Sortieren .
-* Nachdem Sie eine Spalte gefiltert haben, spiegelt diese Spalte die Filterung wider. Ein blauer ![Filter](/help/assets/icons/FilterColored.svg) bedeutet, dass die Spalte gefiltert wird.  Der Filter reduziert entweder die Spalte, sodass nur das im Filter zulässige Element angezeigt wird. Oder es entfernt alle Elemente mit Ausnahme des Elements, das Sie in den Filter aufnehmen möchten.
-* Alle nachgelagerten und vorgelagerten Spalten bleiben bestehen, solange Daten in die verbleibenden Knoten fließen.
-* Um einen Filter zu entfernen, wählen Sie ![Filter](/help/assets/icons/Filter.svg) aus, um das Filtermenü zu öffnen. Entfernen Sie alle angewendeten Filter und wählen Sie **[!UICONTROL Speichern]** aus. Der Fluss sollte zum vorherigen, ungefilterten Status zurückkehren.
+* Verwenden Sie **[!UICONTROL Erweiterte Optionen anzeigen]** zum Konfigurieren der erweiterten Einstellungen, um bestimmte Kriterien in die Benutzerliste aufzunehmen oder auszuschließen. Weitere Informationen finden Sie unter [Filtern und sortieren](../freeform-table/filter-and-sort.md).
+* Nachdem Sie eine Spalte gefiltert haben, spiegelt diese spezifische Spalte die Filterung wider. Ein blauer ![Filter](/help/assets/icons/FilterColored.svg) bedeutet, dass die Spalte gefiltert wird.  Der Filter reduziert die Spalte entweder, um nur das im Filter zulässige Element anzuzeigen, oder er entfernt alle Elemente mit Ausnahme des Elements, das Sie im Filter verwenden möchten.
+* Alle vor- und nachgelagerten Spalten werden beibehalten, solange Daten in die verbleibenden Knoten fließen.
+* Um einen Filter zu entfernen, wählen Sie ![Filter](/help/assets/icons/Filter.svg) aus. Daraufhin wird das Filtermenü geöffnet. Entfernen Sie alle angewendeten Filter und wählen Sie **[!UICONTROL Speichern]** aus. Der Fluss sollte zum vorherigen, ungefilterten Status zurückkehren.
 
 ## Kontextmenü
 
@@ -117,11 +117,11 @@ Verwenden Sie ein Kontextmenü auf einem beliebigen Knoten in der Flussvisualisi
 | Option | Beschreibung |
 |--- |--- |
 | **[!UICONTROL Auf diesen Knoten fokussieren]** | Wechselt den Fokus auf den ausgewählten Knoten. Der Fokusknoten wird in der Mitte des Flussdiagramms angezeigt. |
-| **[!UICONTROL Neu starten]** | Kehren Sie zum Freiformdiagramm-Builder zurück, in dem Sie ein neues Flussdiagramm erstellen können. |
-| **[!UICONTROL Erstellen Sie einen Filter für diesen Pfad]** | Erstellen Sie einen Filter. Diese Auswahl führt Sie zum Filter-Builder, in dem Sie den neuen Filter konfigurieren können. |
+| **[!UICONTROL Neu starten]** | Bringt Sie wieder zurück in den Freiform-Diagramm-Builder, in dem Sie ein neues Flussdiagramm erstellen können. |
+| **[!UICONTROL Erstellen eines Filters für diesen Pfad]** | Erstellen Sie einen Filter. Mit dieser Auswahl gelangen Sie in den Filter-Builder, in dem Sie den neuen Filter konfigurieren können. |
 | **[!UICONTROL Aufschlüsselung]** | Hiermit können Sie den Knoten nach verfügbaren Dimensionen, Metriken oder Zeiten aufschlüsseln. |
-| **[!UICONTROL Filterspalte]** | Es werden dieselben Filteroptionen angezeigt, die auch in der Freiformtabelle verfügbar sind. Weitere Informationen zu den verfügbaren Optionen finden Sie im Abschnitt „Anwenden eines einfachen oder erweiterten Filters auf eine Tabelle“ in &quot;[ und Sortieren von Tabellen](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md). |
-| **[!UICONTROL Element ausschließen]** oder **[!UICONTROL Ausgeschlossene Elemente wiederherstellen]** | Entfernt einen bestimmten Knoten aus der Spalte und erstellt daraus automatisch einen Filter oben in der Spalte. Um das ausgeschlossene Element wiederherzustellen, wählen Sie im Kontextmenü die Option **[!UICONTROL Ausgeschlossenes Element wiederherstellen]** aus. Sie können den Filter auch oben in der Spalte öffnen und die Box mit dem Element entfernen, das Sie gerade ausgeschlossen haben. |
+| **[!UICONTROL Spalte filtern]** | Es werden dieselben Filteroptionen angezeigt, die auch in der Freiformtabelle verfügbar sind. Weitere Informationen zu den verfügbaren Optionen finden Sie im Abschnitt „Anwenden eines einfachen oder erweiterten Filters auf eine Tabelle“ in [Filtern und Sortieren von Tabellen](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md). |
+| **[!UICONTROL Element ausschließen]** oder **[!UICONTROL Ausgeschlossene Elemente wiederherstellen]** | Entfernt einen bestimmten Knoten aus der Spalte und erstellt daraus automatisch einen Filter oben in der Spalte. Um das ausgeschlossene Element wiederherzustellen, wählen Sie im Kontextmenü **[!UICONTROL Ausgeschlossenes Element wiederherstellen]** aus. Sie können den Filter auch oben in der Spalte öffnen und die Box mit dem Element entfernen, das Sie gerade ausgeschlossen haben. |
 | **[!UICONTROL Trend]** | Mit dieser Option erstellen Sie ein Trenddiagramm für den Knoten. |
 | **[!UICONTROL Nächste Spalte anzeigen]** / **[!UICONTROL Vorherige Spalte anzeigen]** | Zeigt die nächste (rechte) oder vorherige (linke) Spalte der Visualisierung an. |
 | **[!UICONTROL Spalte ausblenden]**n | Blendet die ausgewählte Spalte aus der Visualisierung aus. |
@@ -134,25 +134,25 @@ Verwenden Sie ein Kontextmenü auf einem beliebigen Knoten in der Flussvisualisi
 Beachten Sie bei Verwendung dieser Option Folgendes:
 
 * **[!UICONTROL Auf das erste/letzte Vorkommen beschränken]** zählt nur das erste/letzte Vorkommen in der Reihe. Alle anderen Vorkommen der Kriterien **[!UICONTROL Beginnt mit]** oder **[!UICONTROL Endet mit]** werden verworfen.
-* Bei Verwendung mit einem Fluss **[!UICONTROL Beginnt mit]** wird nur das erste Vorkommen einbezogen, das den Startkriterien entspricht.
-Im folgenden Beispiel sind **alle** Vorkommen von *Zum Warenkorb hinzufügen* und *Hauptproduktkategorie* in jedem Schritt des Flusses enthalten.
+* Bei Verwendung mit einem Fluss des Typs **[!UICONTROL Beginnt mit]** wird nur das erste Vorkommen einbezogen, das den enthaltenen Startkriterien entspricht.
+Im folgenden Beispiel sind **alle** Vorkommen von *Zum Warenkorb hinzufügen* und *Produkthauptkategorie* in jedem Schritt des Flusses enthalten.
   ![Keine Begrenzung, zuerst](assets/limitofffirst.png)
 
-  Im folgenden Beispiel sind nur die **ersten** Vorkommen von *Zum Warenkorb hinzufügen* und *Hauptproduktkategorie* in jedem Schritt des Flusses enthalten.
+  Im folgenden Beispiel sind nur die **ersten** Vorkommen von *Zum Warenkorb hinzufügen* und *Produkthauptkategorie* in jedem Schritt des Flusses enthalten.
   ![Lint, Start](assets/limitonfirst.png)
-* Bei Verwendung mit einem Fluss **[!UICONTROL Endet mit]** wird nur das letzte Vorkommen einbezogen, das den Endkriterien entspricht.
+* Bei Verwendung mit einem Fluss des Typs **[!UICONTROL Endet mit]** wird nur das letzte Vorkommen einbezogen, das den Endkriterien entspricht.
 Im folgenden Beispiel sind **alle** Vorkommen von *Produkthauptkategorie* und *Zum Warenkorb hinzufügen* in jedem Schritt des Flusses enthalten.
   ![Keine Begrenzung, zuerst](assets/limitofflast.png)
 
   Im folgenden Beispiel sind nur die **letzten** Vorkommen von *Produkthauptkategorie* und *Zum Warenkorb hinzufügen* in jedem Schritt des Flusses enthalten.
   ![Lint, Start](assets/limitonlast.png)
-* Die verwendete Reihe unterscheidet sich je nach Container. Bei Verwendung des **[!UICONTROL Person]**-Containers ist die Ereignisreihe die Sitzung. Bei Verwendung des **[!UICONTROL Sitzungs]**-Containers sind die Ereignisreihen alle Ereignisse für eine bestimmte Benutzerin oder einen bestimmten Benutzer im bereitgestellten Datumsbereich.
-* Die Option **[!UICONTROL Begrenzung auf erstes/letztes Auftreten]** kann in den erweiterten Einstellungen konfiguriert werden, wenn eine Metrik oder ein Dimension-Element in den Feldern **[!UICONTROL Beginnt mit]** oder **[!UICONTROL Endet mit]** verwendet wird.
+* Die verwendete Reihe unterscheidet sich je nach Container. Bei Verwendung des Containers **[!UICONTROL Person]** besteht die Ereignisreihe aus der Sitzung. Bei Verwendung des Containers **[!UICONTROL Sitzung]** besteht die Ereignisreihe aus allen Ereignissen einer bestimmten Person im bereitgestellten Datumsbereich.
+* Die Option **[!UICONTROL Begrenzung auf erstes/letztes Auftreten]** kann in den erweiterten Einstellungen konfiguriert werden, wenn ein Metrik- oder Dimensionselement in den Feldern **[!UICONTROL Beginnt mit]** oder **[!UICONTROL Endet mit]** verwendet wird.
 
 
 >[!MORELIKETHIS]
 >
->[Hinzufügen einer Visualisierung in einem Panel](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
+>[Hinzufügen einer Visualisierung zu einem Bedienfeld](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
 >[Visualisierungseinstellungen](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
 >[Kontextmenü der Visualisierung](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
 >

@@ -4,9 +4,9 @@ title: Experimentier-Bedienfeld
 feature: Panels
 exl-id: e11169b4-2c73-4dd4-bca7-c26189d60631
 role: User
-source-git-commit: 0cd9cd508d474df3dff176bca4596d0379ac86b4
+source-git-commit: 7e32ae7aa757a8ca47732416f0f883033611ea94
 workflow-type: tm+mt
-source-wordcount: '2141'
+source-wordcount: '2179'
 ht-degree: 18%
 
 ---
@@ -34,7 +34,7 @@ ht-degree: 18%
 
 >[!BEGINSHADEBOX]
 
-_In diesem Artikel wird das Experimentier-Bedienfeld in {_}![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._<br/>_Siehe [Bedienfeld „Analytics for Target](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/panels/a4t-panel) für Informationen zur Analyse von Adobe Target-Aktivitäten und -Erlebnissen_![Adobe Analytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**._
+_In diesem Artikel wird das Experimentier-Bedienfeld in {_}![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._<br/>_Siehe [Bedienfeld „Analytics for Target](https://experienceleague.adobe.com/de/docs/analytics/analyze/analysis-workspace/panels/a4t-panel) für Informationen zur Analyse von Adobe Target-Aktivitäten und -Erlebnissen_![Adobe Analytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**._
 
 >[!ENDSHADEBOX]
 
@@ -60,7 +60,7 @@ Um das Experimentier-Bedienfeld zu verwenden, müssen Sie die folgenden Vorausse
 Laut dem empfohlenen Datenschema sollten die Experimentdaten in einem -Objekt[Array gespeichert sein, ](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/fields/array) die Experiment- und Variantendaten in zwei separaten Dimensionen enthält. Beide Dimensionen müssen sich in einem **einzelnen** Objekt-Array befinden. Wenn sich Ihre Experimentierdaten in einer einzigen Dimension befinden (mit Experiment- und Variantendaten in einer begrenzten Zeichenfolge), können Sie die Einstellung [Teilzeichenfolge](/help/data-views/component-settings/substring.md) in Datenansichten verwenden, um die Dimension zur Verwendung im Bereich in zwei zu teilen.
 
 
-Nachdem Ihre Experimentierdaten in Adobe Experience Platform [aufgenommen](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/home) erstellt [eine Verbindung in Customer Journey Analytics](/help/connections/create-connection.md) zu einem oder mehreren Experimentierdatensätzen.
+Nachdem Ihre Experimentierdaten in Adobe Experience Platform [aufgenommen](https://experienceleague.adobe.com/de/docs/experience-platform/ingestion/home) erstellt [eine Verbindung in Customer Journey Analytics](/help/connections/create-connection.md) zu einem oder mehreren Experimentierdatensätzen.
 
 ### Hinzufügen von Kontextbeschriftungen in Datenansichten
 
@@ -105,7 +105,7 @@ So verwenden Sie das Bedienfeld „Experimentieren“:
    | **[!UICONTROL Experiment]** | Eine Reihe von Varianten eines Erlebnisses, die Endbenutzern präsentiert wurden, um zu bestimmen, welche am besten dauerhaft beibehalten werden sollte. Ein Experiment besteht aus zwei oder mehr Varianten, von denen eine als Kontrollvariante gilt. Diese Einstellung wird vorab mit den Dimensionen gefüllt, die in den Datenansichten mit der Beschriftung **[!UICONTROL Experiment]** gekennzeichnet wurden, sowie mit den Experimentdaten der letzten drei Monate. |
    | **[!UICONTROL Kontrollvariante]** | Eine von zwei oder mehr Änderungen im Erlebnis eines Endbenutzers, die verglichen werden, um die bessere Alternative zu ermitteln. Eine Variante muss als Kontrolle ausgewählt werden und nur eine Variante kann als Kontrollvariante betrachtet werden. Diese Einstellung wird vorab mit den Dimensionen gefüllt, die in den Datenansichten mit der Beschriftung **[!UICONTROL Variante]** gekennzeichnet wurden. Mit dieser Einstellung werden die Variantendaten abgerufen, die mit diesem Experiment verknüpft sind. |
    | **[!UICONTROL Erfolgsmetriken]** | Die Metrik(en), die ein Anwender verwendet, um Varianten zu vergleichen. Die Variante mit dem wünschenswertesten Ergebnis für die Konversionsmetrik (egal ob am höchsten oder am niedrigsten) wird zur *Variante mit der besten Performance* eines Experiments erklärt. Sie können bis zu 5 Metriken hinzufügen. |
-   | **[!UICONTROL Normalisierungsmetrik]** | Die Grundlage ([!UICONTROL Personen], [!UICONTROL Sitzungen] oder [!UICONTROL Ereignisse]) für die Ausführung eines Tests. Beispielsweise kann ein Test die Konversionsraten verschiedener Varianten vergleichen, bei denen **[!UICONTROL Konversionsrate]** als Seitenansicht berechnet wird |
+   | **[!UICONTROL Normalisierungsmetrik]** | Die Grundlage (**[!UICONTROL Globales Konto]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}, **[!UICONTROL Account]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}, **[!UICONTROL Opportunity]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}, **[!UICONTROL Einkaufsgruppe]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}, **[!UICONTROL People]**, **[!UICONTROL Sessions]** oder **[!UICONTROL Events]**), auf der ein Test ausgeführt wird. Beispielsweise kann ein Test die Konversionsraten verschiedener Varianten vergleichen, bei denen **[!UICONTROL Konversionsrate]** als Seitenansicht berechnet wird. |
    | **[!UICONTROL Obere/Untere Konfidenzgrenzen einschließen]** | Aktivieren Sie diese Option, um Ober- und Untergrenzen für Konfidenzstufen anzuzeigen. |
 
 
