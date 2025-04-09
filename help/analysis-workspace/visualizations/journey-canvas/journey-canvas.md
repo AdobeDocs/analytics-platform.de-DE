@@ -4,10 +4,10 @@ title: Journey-Arbeitsfläche
 feature: Visualizations
 role: User
 exl-id: be03c3b2-8faf-47b8-b3ab-e953202bf488
-source-git-commit: 51a6341734163fdd6b994ae9cec53ef034959896
+source-git-commit: d86396a5c02be682c784e0acd4387de3796bda96
 workflow-type: tm+mt
 source-wordcount: '1893'
-ht-degree: 11%
+ht-degree: 8%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 11%
 >[!CONTEXTUALHELP]
 >id="cja_journeycanvas_button"
 >title="Journey-Arbeitsfläche"
->abstract="Zeigt, wie Personen eine Reihe von Touchpoints durchlaufen oder aus ihr aussteigen. Zur Verwendung für Journeys mit mehreren Einstiegspunkten und Pfaden oder zum Analysieren von in Journey Optimizer erstellten Journeys."
+>abstract="Zeigt, wie Personen eine Reihe von Touchpoints durchlaufen oder aus ihr aussteigen. Verwenden Sie für Journey mit mehreren Einstiegspunkten und Pfaden oder zum Analysieren von in Journey Optimizer erstellten Journey."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -27,7 +27,7 @@ ht-degree: 11%
 >[!CONTEXTUALHELP]
 >id="cja_journeycanvas_panel"
 >title="Journey-Arbeitsfläche"
->abstract="Analysieren Sie, wie Personen eine definierte Journey durchlaufen oder aus ihr aussteigen. Erstellen Sie Analysen von Benutzer-Journeys, indem Sie ein flexibles Diagramm mit Knoten und Pfeilen erstellen, die eine beliebige Kombination von Ereignissen, Dimensionselementen und Filtern darstellen. Sie können Knoten auf der Arbeitsfläche ziehen, um die Ereignisse und Bedingungen der Journey neu anzuordnen. Die Daten werden dabei entsprechend aktualisiert. <br/><br/>Kundinnen und Kunden mit Zugriff auf Adobe Journey Optimizer können vorhandene Journey Optimizer-Journeys analysieren"
+>abstract="Analysieren Sie, wie Personen eine definierte Journey durchlaufen oder aus ihr aussteigen. Erstellen Sie Analysen von Benutzer-Journeys, indem Sie ein flexibles Diagramm mit Knoten und Pfeilen erstellen, die eine beliebige Kombination von Ereignissen, Dimensionselementen und Filtern darstellen. Sie können Knoten auf der Arbeitsfläche ziehen, um die Ereignisse und Bedingungen der Journey neu anzuordnen. Die Daten werden dabei entsprechend aktualisiert. <br/><br/>Kunden mit Zugriff auf Adobe Journey Optimizer können bestehende Journey Optimizer-Journey analysieren."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -36,7 +36,7 @@ ht-degree: 11%
 >[!CONTEXTUALHELP]
 >id="journeycanvas_button"
 >title="Journey-Arbeitsfläche"
->abstract="Zeigt, wie Personen eine Reihe von Touchpoints durchlaufen oder aus ihr aussteigen. Zur Verwendung für Journeys mit mehreren Einstiegspunkten und Pfaden oder zum Analysieren von in Journey Optimizer erstellten Journeys."
+>abstract="Zeigt, wie Personen eine Reihe von Touchpoints durchlaufen oder aus ihr aussteigen. Verwenden Sie für Journey mit mehreren Einstiegspunkten und Pfaden oder zum Analysieren von in Journey Optimizer erstellten Journey."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -45,7 +45,7 @@ ht-degree: 11%
 >[!CONTEXTUALHELP]
 >id="journeycanvas_panel"
 >title="Journey-Arbeitsfläche"
->abstract="Analysieren Sie, wie Personen eine definierte Journey durchlaufen oder aus ihr aussteigen. Erstellen Sie Analysen von Benutzer-Journeys, indem Sie ein flexibles Diagramm mit Knoten und Pfeilen erstellen, die eine beliebige Kombination von Ereignissen, Dimensionselementen und Filtern darstellen. Sie können Knoten auf der Arbeitsfläche ziehen, um die Ereignisse und Bedingungen der Journey neu anzuordnen. Die Daten werden dabei entsprechend aktualisiert. <br/><br/>Kundinnen und Kunden mit Zugriff auf Adobe Journey Optimizer können vorhandene Journey Optimizer-Journeys analysieren"
+>abstract="Analysieren Sie, wie Personen eine definierte Journey durchlaufen oder aus ihr aussteigen. Erstellen Sie Analysen von Benutzer-Journeys, indem Sie ein flexibles Diagramm mit Knoten und Pfeilen erstellen, die eine beliebige Kombination von Ereignissen, Dimensionselementen und Filtern darstellen. Sie können Knoten auf der Arbeitsfläche ziehen, um die Ereignisse und Bedingungen der Journey neu anzuordnen. Die Daten werden dabei entsprechend aktualisiert. <br/><br/>Kunden mit Zugriff auf Adobe Journey Optimizer können bestehende Journey Optimizer-Journey analysieren."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -55,9 +55,9 @@ _In diesem Artikel wird die Journey-Arbeitsflächen-Visualisierung in {_}![Custo
 
 >[!ENDSHADEBOX]
 
-Die Journey-Arbeitsflächen-Visualisierung ermöglicht es Ihnen, die Journey zu analysieren und detaillierte Einblicke zu erhalten, die Sie Ihren Benutzenden und Kunden bieten. Damit können Sie eine Journey von Grund auf neu definieren oder eine von Journey Optimizer anzeigen und dann sehen, wie Personen die Journey verlassen (ausgefallen) oder weiter durchlaufen (durchgefallen) haben.
+Die Journey-Arbeitsflächen-Visualisierung ermöglicht es Ihnen, die Journey zu analysieren und detaillierte Einblicke zu erhalten, die Sie Ihren Benutzenden und Kunden bieten. It allows you to define a journey from scratch or view one from Journey Optimizer, then see how people left (fell out) or continued through (fell through) the journey.
 
-Sie können [Analysen von Benutzerereignissen erstellen](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md) indem Sie eine beliebige Kombination aus Journey, Dimensionselementen, Filtern und Datumsbereichen verwenden, um Journey-Knoten zu erstellen. Verbinden Sie die -Knoten, um den Journey-Fluss zu erstellen, und schließen Sie mehrere Pfade und Entscheidungspunkte ein. Ziehen Sie Knoten auf die Arbeitsfläche, um die Ereignisse und Bedingungen des Journey neu anzuordnen. Daten werden bei Änderungen in Echtzeit aktualisiert.
+You can [build analyses of user journeys](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md) by using any combination of events, dimension items, filters, and date ranges to create journey nodes. Connect the nodes to create the journey&#39;s flow, and include multiple paths and decision points. Ziehen Sie Knoten auf die Arbeitsfläche, um die Ereignisse und Bedingungen des Journey neu anzuordnen. Daten werden bei Änderungen in Echtzeit aktualisiert.
 
 [Knoten sind ](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md#logic-when-connecting-nodes) „Eventueller Pfad“ verbunden, d. h. Besucher werden gezählt, solange sie letztendlich von einem Knoten zum anderen wechseln, unabhängig von Ereignissen, die zwischen den beiden Knoten auftreten. Die Zeit, die Benutzenden zum Verschieben auf dem Pfad zugewiesen wird, wird durch die Container-Einstellung bestimmt.
 
@@ -81,21 +81,21 @@ Journey Canvas bietet umsetzbare Einblicke für die komplexesten Journey.
 
 ### Pfad mit der höchsten Konversionsrate {#conversion-rate-caption}
 
-Der markanteste Einblick in die Journey-Leinwand wird oben auf der Leinwand selbst als Bildunterschrift angezeigt.
+Der markanteste insight auf der Journey-Arbeitsfläche wird als Beschriftung oben auf der Arbeitsfläche selbst angezeigt.
 
 Diese Beschriftung fasst zusammen, welcher der Pfade auf der Journey die höchste Konversionsrate aufwies.
 
 Wenn die Journey mehrere Startknoten enthält, sieht die Beschriftung wie folgt aus:
 
-![Journey Canvas Insight-Beschriftung](assets/journey-canvas-caption.png)
+![insight-Beschriftung der Journey-Arbeitsfläche](assets/journey-canvas-caption.png)
 
 Wenn die Journey einen einzelnen Startknoten enthält, sieht die Beschriftung wie folgt aus:
 
-![Journey Canvas Insight-Beschriftung, einzelner Startknoten](assets/journey-canvas-caption-singlestart.png)
+![Journey canvas insight caption single start node](assets/journey-canvas-caption-singlestart.png)
 
-Beachten Sie beim Interpretieren dieser Beschriftung Folgendes:
+Consider the following when interpreting this caption:
 
-* Ein _path_ wird als ein Startknoten definiert, der über Pfeile mit einem Endknoten verbunden ist, wobei eine beliebige Anzahl von Knoten zwischen ihnen verbunden ist.
+* A _path_ is defined as a start node that is connected by arrows to an end node, with any number of nodes connected between them.
 
 * Die Berechnung der Konversionsrate hängt vom Typ des Journey ab (die Anzahl der Start- und Endknoten in der Journey und ob sich die Pfade zwischen ihnen schneiden).
 
@@ -130,17 +130,17 @@ Im Folgenden finden Sie einige Beispiele für weitere Einblicke, die Journey-Arb
 
 ## Wählen Sie zwischen Journey-Arbeitsfläche, Fallout oder Fluss -Visualisierungen
 
-Die Journey-Arbeitsflächen-Visualisierung weist Ähnlichkeiten mit der [Fallout](/help/analysis-workspace/visualizations/fallout/fallout-flow.md) und der [Flow-Visualisierung](/help/analysis-workspace/visualizations/c-flow/flow.md) auf, jedoch mit wichtigen Unterschieden.
+The Journey canvas visualization has similarities with the [Fallout visualization](/help/analysis-workspace/visualizations/fallout/fallout-flow.md) and the [Flow visualization](/help/analysis-workspace/visualizations/c-flow/flow.md), but with important differences.
 
-### Unterschiede verstehen
+### Understand the differences
 
 <!-- Information in this snippet is shared between Journey canvas, Fallout, and Flow visualization docs -->
 
 {{journey-visualization-comparisons}}
 
-### Verwendung der Journey-Arbeitsfläche
+### When to use Journey canvas
 
-Journey Canvas ist wichtig für:
+Journey canvas is essential for:
 
 * Fallout-Analyse mit Journey mit mehreren Einstiegspunkten und Pfaden.
 
@@ -150,11 +150,11 @@ Journey Canvas ist wichtig für:
 
 * Analyse, für die eine andere primäre Metrik als Sitzung, Person oder Vorfälle erforderlich ist.
 
-* Detaillierte Analyse der Journey, die ihren Ursprung in Adobe Journey Optimizer haben.
+* Deeper analysis of journeys that originated in Adobe Journey Optimizer.
 
-Verwenden Sie [die obige ](#understand-the-differences)), um die Unterschiede zwischen Journey-Arbeitsfläche-, Fallout- und Fluss -Visualisierungen zu verstehen.
+Use [the table above](#understand-the-differences) to understand the differences between Journey canvas, Fallout, and Flow visualizations.
 
-## Analysieren von Journey Optimizer Journey
+## Analyze Journey Optimizer journeys
 
 >[!NOTE]
 >
@@ -238,15 +238,15 @@ Bestimmte Begriffe, die in Journey Optimizer eine Sache bedeuten, bedeuten in Cu
 
 | Begriff | Journey-Arbeitsfläche | Journey Optimizer |
 |---------|----------|---------|
-| **Ereignis** | Eine von mehreren Standardmetriken, die in Customer Journey Analytics verfügbar sind. Diese Metrik zählt Dinge wie Umsatz, Abonnements oder generierte Leads. | Die Aktivitätskategorie, in der ein personalisierter Journey Trigger wird, z. B. ein Online-Kauf. |
+| **Ereignis** | Eine von mehreren Standardmetriken, die in Customer Journey Analytics verfügbar sind. Diese Metrik zählt Dinge wie Umsatz, Abonnements oder generierte Leads. | The category of activity that triggers a personalized journey, such as an online purchase. |
 
-### Analysieren einer Journey Optimizer-Journey auf der Journey-Arbeitsfläche
+### Analyze a Journey Optimizer journey in Journey canvas
 
-Informationen zum Analysieren einer Journey Optimizer-Journey auf der Journey-Arbeitsfläche finden Sie unter [Konfigurieren einer Journey-Arbeitsfläche](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md).
+For information about analyzing a Journey Optimizer journey in Journey canvas, see [Configure a Journey canvas visualization](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md).
 
-## Erstellen von Analysen auf der Journey-Arbeitsfläche
+## Build analyses in Journey canvas
 
-Sie können Analysen auf der Journey-Arbeitsfläche erstellen, die auf allen in Analysis Workspace verfügbaren Dimensionen oder Metriken basieren. Sie können auch Journey analysieren, die in Journey Optimizer erstellt wurden. Weitere Informationen finden Sie unter [Konfigurieren einer Journey-Arbeitsflächen-](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md).
+You can build analyses in Journey canvas that are based on any dimensions or metrics that are available in Analysis Workspace. Sie können auch Journey analysieren, die in Journey Optimizer erstellt wurden. For more information, see [Configure a Journey canvas visualization](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md).
 
 
 >[!MORELIKETHIS]
