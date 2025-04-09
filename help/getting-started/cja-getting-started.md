@@ -1,18 +1,18 @@
 ---
-title: Customer Journey Analytics – Erste Schritte
+title: Customer Journey Analytics-Schnellstartanleitung
 description: Machen Sie sich mit den Voraussetzungen und dem Workflow vertraut, die für die Implementierung von Customer Journey Analytics erforderlich sind.
 exl-id: cab218c0-009c-4669-9dfb-f8872a7f066b
 solution: Customer Journey Analytics
 feature: Basics
 role: User
-source-git-commit: 01df8b8b55ff8e8c0826bf98adfbd85d3412e6bb
+source-git-commit: 7b824c914187854e9779ebdc51c5f5d6e77f6b16
 workflow-type: tm+mt
-source-wordcount: '787'
-ht-degree: 100%
+source-wordcount: '786'
+ht-degree: 99%
 
 ---
 
-# Customer Journey Analytics – Erste Schritte
+# Schnellstartanleitung
 
 Befolgen Sie diesen Workflow, um Customer Journey Analytics zu implementieren. Einige erste Aufgaben werden in Adobe Experience Platform und einige in Customer Journey Analytics ausgeführt.
 
