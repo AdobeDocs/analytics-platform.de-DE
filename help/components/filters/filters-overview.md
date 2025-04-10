@@ -4,7 +4,7 @@ description: Erfahren Sie, wofür Filter verwendet werden und wie Sie einen einf
 exl-id: 21183e98-6593-4b22-99c7-4a03231acfe9
 feature: Filters
 role: User
-source-git-commit: 5fbb228fc02304be2246f0b49cb49de7f160b227
+source-git-commit: 392ba2b9cfe090901c3dac12459f9bd8d51fdca7
 workflow-type: tm+mt
 source-wordcount: '1423'
 ht-degree: 8%
@@ -20,11 +20,11 @@ Filter können auf Folgendem basieren:
 
 - Attribute (Browser-Typ, Gerät, Anzahl der Besuche, Land, Geschlecht),
 - Interaktionen (Kampagnen, Keyword-Suche, Suchmaschine),
-- Ausstiege und Einstiege (Personen aus Facebook, einer definierten Landingpage, Referrer-Domain, Geofence-Ereignis),
+- Ausstiege und Einstiege (Personen aus Facebook, eine definierte Landingpage, Referrer-Domain, Geofence-Ereignis),
 - benutzerdefinierte Variablen (Formularfeld, definierte Kategorien, Kunden-ID),
 - und andere Kriterien.
 
-Siehe [Erstellen von Filtern](/help/components/filters/create-filters.md) für die verschiedenen verfügbaren Optionen zum Erstellen von Filtern. Anschließend erstellen, ändern und speichern Sie die Definition eines Filters im [Filter Builder](filter-builder.md). Alternativ können Sie Schnellfilter mit dem Schnellfilter[Generator ](quick-filters.md). Sie können auch Filter aus Visualisierungen in Workspace generieren, z. B. mithilfe der [Fallout](/help/analysis-workspace/visualizations/fallout/configuring-fallout.md#context-menu)-Visualisierung.
+Siehe [Erstellen von Filtern](/help/components/filters/create-filters.md) für die verschiedenen verfügbaren Optionen zum Erstellen von Filtern. Anschließend erstellen, ändern und speichern Sie die Definition eines Filters im [Filter Builder](filter-builder.md). Alternativ können Sie Schnellfilter mit dem Schnellfilter-[ erstellen](quick-filters.md). Sie können auch Filter aus Visualisierungen in Workspace generieren, z. B. mithilfe der [Fallout](/help/analysis-workspace/visualizations/fallout/configuring-fallout.md#context-menu)-Visualisierung.
 
 Sie verwenden den [Filter-Manager](manage-filters.md) um Filter zu verwalten.
 
@@ -41,7 +41,7 @@ Insbesondere als Administrator verbessert die ordnungsgemäße Planung von Filte
 
 - **Komponenten**: Entscheiden Sie, welche Komponenten in die Filterdefinition aufgenommen werden sollen und anhand welcher Werte die Bedingungen validiert werden sollen.
 
-- **Prozess**: Erwägen Sie einen Genehmigungsprozess für Ihren Filter. Es gibt keinen Genehmigungs-Workflow in Customer Journey Analytics. Sie können jedoch trotzdem einen Prozess organisieren, um zu bestimmen, ob Sie einen Filter genehmigen oder nicht.
+- **Prozess**: Erwägen Sie einen Genehmigungsprozess für Ihren Filter. In Customer Journey Analytics gibt es keinen Genehmigungs-Workflow, Sie können jedoch trotzdem einen Prozess organisieren, um zu bestimmen, ob Sie einen Filter genehmigen oder nicht.
 
 - **Modularität**: Filter mit Blick auf Modularität definieren. Die Benutzer Ihrer Filter können also einfach [Filter stapeln](filter-builder.md#stack-filters) um leistungsstarke neue Filter zu erstellen.
 
@@ -62,7 +62,7 @@ Mit regulären Filtern können Sie Daten (Personen, Sitzungen, Ereignisse) anhan
 
 >[!IMPORTANT]
 >
->Sie müssen über das Paket **Auswählen** verfügen, um kanalübergreifende sequenzielle Filter zu erstellen. Wenden Sie sich an Ihren Administrator, wenn Sie nicht sicher sind, welches Customer Journey Analytics-Paket Sie haben.
+>Sie müssen über das Paket **Auswählen** verfügen, um kanalübergreifende sequenzielle Filter zu erstellen. Wenden Sie sich an Ihren Administrator, wenn Sie sich nicht sicher sind, welches Customer Journey Analytics-Paket Sie haben.
 
 Mit sequenziellen Filtern können Sie Daten (Personen, Sitzungen, Ereignisse) anhand der Navigation (Seitenansichten auf Ihrer Site, Interaktionen mit Szenen in Ihrer Mobile App oder mithilfe eines Menüs in einer Set-Top-Box) identifizieren. Mit sequenziellen Filtern können Sie beispielsweise identifizieren, was eine Person mag und was sie meidet. Sie verwenden den logischen Operator Dann , um einen sequenziellen Filter zu definieren. Siehe [Sequenzielle Filter](seg-sequential-build.md) für weitere Informationen.
 
