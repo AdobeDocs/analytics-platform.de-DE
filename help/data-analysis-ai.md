@@ -7,10 +7,10 @@ feature: AI Tools
 hidefromtoc: true
 hide: true
 exl-id: 262d5f15-16cb-4851-a769-7dbd205b2f81
-source-git-commit: dff6355714f4e58917ccd995662e4fbae34ec69c
+source-git-commit: a9ad08ea053b1213ac98d3e77be3d4816c0999bf
 workflow-type: tm+mt
-source-wordcount: '1873'
-ht-degree: 3%
+source-wordcount: '1878'
+ht-degree: 5%
 
 ---
 
@@ -43,7 +43,7 @@ Wenn Sie den Data Insights-Agenten verwenden, um datenorientierte Fragen in Anal
 | **Inline-Zusammenfassung oder -Antwort** | Der Data Insights-Agent kann in der Chat-Leiste nicht mit einer zusammenfassenden Antwort auf eine Benutzeraufforderung antworten. Beispiel für Eingabeaufforderungen außerhalb des Bereichs:<ul><li>*Geben Sie mir eine Zusammenfassung der Erkenntnisse aus meiner letzten Eingabeaufforderung.*</li><li>*Fassen Sie die Highlights der Linienvisualisierung zusammen.*</li></ul> |
 | **Fragen klären** | Die Klärung von Fragen beschränkt sich auf Komponenten und Dimensionselemente. Der Data Insights-Agent kann Dinge wie Datenansichten, Visualisierungen, Datengranularität, Vergleich und Umfang nicht verdeutlichen. Wenn Klärungsfragen nicht verwendet werden können, verwendet der Agent standardmäßig das, was Sie am wahrscheinlichsten anfordern. Wenn eine unerwartete Visualisierung oder Datengranularität zurückgegeben wird, können Sie die Funktion „Multi-Turn/Update“ verwenden, um die Visualisierung und die Daten anzupassen. |
 | **Workspace-Aktionen/-Funktionen** | Der Data Insights-Agent kann für eine Benutzerin oder einen Benutzer in Workspace keine Aktionen ausführen, abgesehen von der Erstellung und Aktualisierung von Visualisierungen. Sie kann beispielsweise keine der folgenden Aktionen ausführen:<ul><li>Schaltflächen der kontextuellen Aktionsbenutzeroberfläche (zum Diagramm hinzufügen, neues Bedienfeld, neue Tabelle)</li><li>Freigeben</li><li>Exportieren</li><li>Download</li><li>Benutzereinstellungen verwalten</li><li>Kuratieren</li><li>Datenansicht verwalten</li><li>Analytics Dashboards App</li><li>Attribution</li></ul> |
-| **Nicht unterstützte Visualisierungsarten** | <ul><li>Fluss</li><li>Fallout</li><li>Kohortentabelle</li><li>Bereich, Bereich gestapelt</li><li>Balken gestapelt</li><li>Horizontales Säulendiagramm</li><li>Kombination</li><li>Histogramm</li><li>Horizontalbalken, Horizontalbalken gestapelt</li><li>Zusammenfassung einer Schlüsselmetrik</li><li>Streuung</li><li>Zusammenfassende Änderung</li><li>Text</li><li>Baumkarte</li><li>Venn</li></ul> |
+| **Nicht unterstützte Visualisierungsarten** | <ul><li>Fluss</li><li>Fallout</li><li>Kohortentabelle</li><li>Bereich, Bereich gestapelt</li><li>Balken gestapelt</li><li>Bullet</li><li>Kombination</li><li>Histogramm</li><li>Horizontalbalken, Horizontalbalken gestapelt</li><li>Zusammenfassung einer Schlüsselmetrik</li><li>Streuung</li><li>Zusammenfassende Änderung</li><li>Text</li><li>Baumkarte</li><li>Venn</li></ul> |
 
 ## Verwalten des Zugriffs auf den Data Insights-Agenten in Customer Journey Analytics
 
@@ -53,18 +53,18 @@ Die folgenden Parameter regeln den Zugriff auf den Data Insights-Agenten in Cust
 
 * **Vertragszugriff**: Wenn Sie den Data Insights-Agenten im KI-Assistenten nicht verwenden können, wenden Sie sich an den Administrator Ihres Unternehmens oder den Adobe-Kontobeauftragten. Bevor Ihr Unternehmen den Data Insights Agent verwenden kann, müssen Sie bestimmten GenAI-bezogenen rechtlichen Bedingungen zustimmen.
 
-* **Berechtigungen**: In der [!UICONTROL Adobe Admin Console] bestimmt die Berechtigung  Reporting-Tools **[!UICONTROL KI-Assistent]** Datenvisualisierung) den Zugriff auf dieses Tool. Ein [Produktprofil-Administrator](https://helpx.adobe.com/de/enterprise/using/manage-product-profiles.html) muss diese Schritte in der [!UICONTROL Admin Console ausführen]:
+* **Berechtigungen**: In der [!UICONTROL Adobe Admin Console] bestimmt die Berechtigung  Reporting-Tools **[!UICONTROL KI-Assistent]** Datenvisualisierung) den Zugriff auf dieses Tool. Sie als [Produktprofil-Admin](https://helpx.adobe.com/de/enterprise/using/manage-product-profiles.html) müssen diese Schritte in der [!UICONTROL Admin Console] ausführen:
    1. Navigieren Sie zu **[!UICONTROL Admin Console]** > **[!UICONTROL Produkte und Services]** > **[!UICONTROL Customer Journey Analytics]** > **[!UICONTROL Produktprofile]**
    1. Wählen Sie den Titel des Produktprofils aus, für das Sie Zugriff auf [!UICONTROL KI-Assistent: Produktkenntnisse] gewähren möchten.
-   1. Wählen Sie im spezifischen Produktprofil die Option **[!UICONTROL Berechtigungen]** aus.
+   1. Wählen Sie im entsprechenden Produktprofil die Option **[!UICONTROL Berechtigungen]** aus.
    1. Wählen Sie ![Bearbeiten](/help/assets/icons/Edit.svg) aus, um **[!UICONTROL Reporting-Tools]** zu bearbeiten.
-   1. Wählen Sie ![AddCircle](/help/assets/icons/AddCircle.svg) aus, um **KI-Assistent:**) zu **[!UICONTROL Enthaltene Berechtigungselemente]** hinzuzufügen.
+   1. Wählen Sie ![AddCircle](/help/assets/icons/AddCircle.svg) aus, um **KI-Assistent:** und **KI-Assistent: Datenanalyse** zu **[!UICONTROL Enthaltene Berechtigungselemente]** hinzuzufügen.
 
       ![Berechtigung hinzufügen](assets/ai-assistant-permissions.png).
 
-   1. Wählen **[!UICONTROL Speichern]**, um die Berechtigungen zu speichern.
+   1. Wählen Sie **[!UICONTROL Speichern]** aus, um die Berechtigungen zu speichern.
 
-Weitere Informationen [ Sie unter ](/help/technotes/access-control.md#access-control)Zugriffssteuerung“.
+Weitere Informationen finden Sie unter [Zugriffssteuerung](/help/technotes/access-control.md#access-control).
 
 ## Zugreifen auf den Data Insights-Agenten im KI-Assistenten
 
