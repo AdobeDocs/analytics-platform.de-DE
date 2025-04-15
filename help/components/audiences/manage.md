@@ -76,7 +76,7 @@ So bearbeiten Sie eine Zielgruppe:
 
 ## Aktionen
 
-Die folgenden Aktionen werden im Manager für geplante Projekte häufig ausgeführt: Sie können Aktionen im Kontextmenü auswählen:
+Die folgenden Aktionen werden im Manager für geplante Projekte häufig ausgeführt. Sie können Aktionen im Kontextmenü auswählen:
 
 | Symbol | Aktion | Beschreibung |
 |:---:|---|---|

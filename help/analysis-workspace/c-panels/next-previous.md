@@ -1,17 +1,17 @@
 ---
-description: Ein Bedienfeld, das die nächsten oder vorherigen Dimensionselemente für eine bestimmte Dimension anzeigt.
-title: Bedienfeld „Nächstes oder vorheriges Objekt“
+description: Ein Panel, das die nächsten oder vorherigen Dimensionselemente für eine bestimmte Dimension anzeigt.
+title: Panel „Nächstes oder vorheriges Objekt“
 feature: Panels
 role: User, Admin
 exl-id: a5f6ce97-6720-4129-9ece-e2e834289d45
 source-git-commit: c94e97723a4ed30e675144e02196c93016b13235
 workflow-type: tm+mt
 source-wordcount: '457'
-ht-degree: 82%
+ht-degree: 88%
 
 ---
 
-# Bedienfeld „Nächstes oder vorheriges Objekt“ {#next-or-previous-item-panel}
+# Panel „Nächstes oder vorheriges Objekt“ {#next-or-previous-item-panel}
 
 <!-- markdownlint-disable MD034 -->
 
@@ -31,11 +31,11 @@ ht-degree: 82%
 
 >[!BEGINSHADEBOX]
 
-_In diesem Artikel wird das Bedienfeld Nächstes oder vorheriges Element in {_}![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**_.<br/>_Siehe [Bedienfeld „Nächstes oder vorheriges Element](https://experienceleague.adobe.com/de/docs/analytics/analyze/analysis-workspace/panels/next-previous) für die_![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**-Version dieses Artikels._
+_In diesem Artikel wird das Panel Nächstes oder vorheriges Objekt in_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**_ beschrieben.<br/>_Unter [Panel Nächstes oder vorheriges Objekt](https://experienceleague.adobe.com/de/docs/analytics/analyze/analysis-workspace/panels/next-previous) finden Sie die Version dieses Artikels für_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**._
 
 >[!ENDSHADEBOX]
 
-Das Bedienfeld **[!UICONTROL Nächstes oder vorheriges Objekt]** enthält eine Reihe von Tabellen und Visualisierungen, um das nächste oder vorherige Dimensionselement für eine bestimmte Dimension zu identifizieren. Nehmen wir an, Sie möchten erkunden, welche Seiten Kundinnen und Kunden nach dem Besuch der Startseite am häufigsten besucht haben.
+Das Panel **[!UICONTROL Nächstes oder vorheriges Objekt]** enthält eine Reihe von Tabellen und Visualisierungen, um das nächste oder vorherige Dimensionselement für eine bestimmte Dimension zu identifizieren. Nehmen wir an, Sie möchten erkunden, welche Seiten Kundinnen und Kunden nach dem Besuch der Startseite am häufigsten besucht haben.
 
 ## Verwenden {#use}
 
@@ -44,19 +44,19 @@ Das Bedienfeld **[!UICONTROL Nächstes oder vorheriges Objekt]** enthält eine R
 >title="Container"
 >abstract="Wählen Sie den Container aus, um den Umfang Ihrer Anfrage zu bestimmen."
 
-So verwenden Sie das Bedienfeld **[!UICONTROL Nächstes oder vorheriges Objekt]**:
+So verwenden Sie das Panel **[!UICONTROL Nächstes oder vorheriges Objekt]**:
 
-1. Erstellen Sie das Bedienfeld **[!UICONTROL Nächstes oder vorheriges Objekt]**. Informationen zum Erstellen eines Bedienfelds finden Sie unter [Erstellen eines Bedienfelds](panels.md#create-a-panel).
+1. Erstellen Sie das Panel **[!UICONTROL Nächstes oder vorheriges Objekt]**. Informationen zum Erstellen eines Bedienfelds finden Sie unter [Erstellen eines Bedienfelds](panels.md#create-a-panel).
 
 1. Legen Sie die [Eingabe](#panel-input) für das Bedienfeld fest.
 
 1. Sehen Sie sich die [Ausgabe](#panel-output) für das Bedienfeld an.
 
-### Bedienfeldeingabe
+### Panel-Eingabe
 
-Sie können das Bedienfeld [!UICONTROL Nächstes oder vorheriges Objekt] mithilfe der folgenden Eingabeeinstellungen konfigurieren:
+Sie können das Panel [!UICONTROL Nächstes oder vorheriges Objekt] mithilfe der folgenden Eingabeeinstellungen konfigurieren:
 
-![Bedienfeld „Nächstes oder vorheriges Objekt“](assets/next-or-previous-item.png)
+![Panel Nächstes oder vorheriges Objekt](assets/next-or-previous-item.png)
 
 | Eingabe | Beschreibung |
 | --- | --- |
@@ -67,14 +67,14 @@ Sie können das Bedienfeld [!UICONTROL Nächstes oder vorheriges Objekt] mithilf
 
 {style="table-layout:auto"}
 
-Wählen Sie **[!UICONTROL Erstellen]** aus, um das Bedienfeld zu erstellen.
+Wählen Sie **[!UICONTROL Erstellen]** aus, um das Panel zu erstellen.
 
-### Bedienfeldausgabe
+### Panel-Ausgabe
 
-Das Bedienfeld [!UICONTROL Nächstes oder vorheriges Objekt] gibt einen umfangreichen Satz von Daten und Visualisierungen zurück, damit Sie besser verstehen können, welche Ereignisse bestimmten Dimensionselementen folgen oder vorausgehen.
+Das Panel [!UICONTROL Nächstes oder vorheriges Objekt] gibt einen umfangreichen Satz von Daten und Visualisierungen zurück, damit Sie besser verstehen können, welche Ereignisse bestimmten Dimensionselementen folgen oder vorausgehen.
 
 
-![Bedienfeldausgabe für „Nächstes/Vorheriges“](assets/next-or-previous-item-output.png)
+![Panel-Ausgabe für Nächstes/Vorheriges](assets/next-or-previous-item-output.png)
 
 
 | Visualisierung | Beschreibung |

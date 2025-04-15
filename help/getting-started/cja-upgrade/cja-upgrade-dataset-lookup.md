@@ -1,6 +1,6 @@
 ---
 title: Erstellen von Lookup-Datensätzen zum Klassifizieren von Daten in Customer Journey Analytics
-description: Erfahren Sie, wie Sie Such-Datensätze erstellen, um Daten in Customer Journey Analytics zu klassifizieren
+description: Erfahren Sie, wie Sie Lookup-Datensätze erstellen, um Daten in Customer Journey Analytics zu klassifizieren
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
@@ -8,7 +8,7 @@ exl-id: f5443ddd-81d0-43cc-99cb-215e7ddf5acf
 source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
 workflow-type: tm+mt
 source-wordcount: '800'
-ht-degree: 14%
+ht-degree: 98%
 
 ---
 
@@ -19,83 +19,83 @@ ht-degree: 14%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-lookup-dataset-create"
 >title="Erstellen eines Lookup-Datensatzes für jede Dimension mit Klassifizierungsdaten"
->abstract="Ähnlich wie Klassifizierungsdaten in Adobe Analytics sind Lookup-Datensätze die Methode zur Klassifizierung von Daten in Customer Journey Analytics."
+>abstract="Ähnlich wie Klassifizierungsdaten in Adobe Analytics sind Lookup-Datensätze die Methode zum Klassifizieren von Daten in Customer Journey Analytics."
 
 <!-- markdownlint-enable MD034 -->
 
 {{upgrade-note-step}}
 
-Ähnlich wie Klassifizierungsdaten in Adobe Analytics sind Lookup-Datensätze die Methode zur Klassifizierung von Daten in Customer Journey Analytics.
+Ähnlich wie Klassifizierungsdaten in Adobe Analytics sind Lookup-Datensätze die Methode zum Klassifizieren von Daten in Customer Journey Analytics.
 
-Bei Verwendung des Analytics-Quell-Connectors werden einige Datensätze für die Standardsuche zum Zeitpunkt der Berichterstellung automatisch angewendet. Weitere Informationen finden Sie unter [Hinzufügen von Standardsuchen zu Ihren Datensätzen](/help/connections/standard-lookups.md).
+Bei Verwendung des Analytics-Quell-Connectors werden einige standardmäßige Lookup-Datensätze zum Zeitpunkt der Berichterstellung automatisch angewendet. Weitere Informationen finden Sie unter [Hinzufügen von Standardsuchen zu Ihren Datensätzen](/help/connections/standard-lookups.md).
 
-Um Daten in Customer Journey Analytics bei Verwendung der Experience Platform Web SDK zu klassifizieren, müssen Sie ein benutzerdefiniertes Schema und einen Lookup-Datensatz für jede Dimension erstellen, die Daten enthält, die Sie klassifizieren möchten.
+Um Daten in Customer Journey Analytics bei Verwendung des Experience Platform Web SDK zu klassifizieren, müssen Sie ein benutzerdefiniertes Schema und einen Lookup-Datensatz für jede Dimension erstellen, die zu klassifizierende Daten enthält.
 
-## Erstellen eines benutzerdefinierten Schemas zur Verwendung mit dem Lookup-Datensatz
+## Erstellen eines benutzerdefinierten Schemas für den Lookup-Datensatz
 
-Erstellen Sie ein neues benutzerdefiniertes Schema für jede Dimension, die Daten enthält, die Sie in Customer Journey Analytics klassifizieren möchten. Wenn Sie den Lookup-Datensatz in einem späteren Schritt erstellen, verweist er auf dieses Schema.
+Erstellen Sie ein neues benutzerdefiniertes Schema für jede Dimension, die Daten enthält, die in Customer Journey Analytics klassifiziert werden sollen. Wenn Sie den Lookup-Datensatz in einem späteren Schritt erstellen, verweist er auf dieses Schema.
 
-Wiederholen Sie diesen Vorgang für jede Dimension, die Daten enthält, die Sie klassifizieren möchten.
+Wiederholen Sie diesen Vorgang für jede Dimension, die zu klassifizierende Daten enthält.
 
-So erstellen Sie ein Schema zur Verwendung mit einem Lookup-Datensatz in Customer Journey Analytics:
+So erstellen Sie ein Schema für einen Lookup-Datensatz in Customer Journey Analytics:
 
-1. Wählen Sie in Adobe Experience Platform **[!UICONTROL Schemata]** im Abschnitt **[!UICONTROL Daten-Management]** in der linken Leiste aus.
+1. Wählen Sie in Adobe Experience Platform im Abschnitt **[!UICONTROL Daten-Management]** in der linken Leiste die Option **[!UICONTROL Schemata]** aus.
 
 1. Wählen Sie **[!UICONTROL Schema erstellen]** aus.
 
-   ![Schaltfläche „Schema erstellen“](assets/schema-create.png)
+   ![Schaltfläche Schema erstellen](assets/schema-create.png)
 
-1. Wählen Sie **[!UICONTROL Manuell]** aus. Auf diese Weise können Sie Ihrem Schema manuell Felder und Feldergruppen hinzufügen. Wählen **[!UICONTROL Auswählen]**, um mit der nächsten Seite des Erstellungsassistenten fortzufahren.
+1. Wählen Sie **[!UICONTROL Manuell]** aus. Dadurch können Sie Ihrem Schema manuell Felder und Feldergruppen hinzufügen. Wählen Sie **[!UICONTROL Auswählen]**, um mit der nächsten Seite des Erstellungsassistenten fortzufahren.
 
-1. Wählen Sie auf der **[!UICONTROL Schemadetails]** die Option **[!UICONTROL Sonstige]** und dann **[!UICONTROL Benutzerdefiniert]** aus.
+1. Wählen Sie auf der Seite **[!UICONTROL Schemadetails]** die Option **[!UICONTROL Sonstige]** und dann **[!UICONTROL Benutzerdefiniert]** aus.
 
-   ![Benutzerdefiniert erstellen](assets/schema-custom.png)
+   ![Benutzerdefinierte Erstellung](assets/schema-custom.png)
 
 1. Wählen Sie **[!UICONTROL Klasse erstellen]** aus.
 
    <!-- add screenshot -->
 
-1. Geben **[!UICONTROL im Dialogfeld „Klasse erstellen]** einen Namen und eine Beschreibung für das Schema an, wählen Sie **[!UICONTROL Datensatz]** und dann **[!UICONTROL Erstellen]** aus.
+1. Geben Sie im Dialogfeld **[!UICONTROL Klasse erstellen]** einen Namen und eine Beschreibung für das Schema an. Wählen Sie **[!UICONTROL Eintrag]** und dann **[!UICONTROL Erstellen]** aus.
 
-1. Fahren Sie mit [Lookup-Datensatz erstellen](#create-a-lookup-dataset) fort.
+1. Fahren Sie mit [Erstellen eines Lookup-Datensatzes](#create-a-lookup-dataset) fort.
 
 ## Erstellen eines Lookup-Datensatzes
 
-Nachdem Sie [benutzerdefiniertes Schema erstellen](#create-a-custom-schema-to-use-with-the-lookup-dataset) um für einen Lookup-Datensatz zu verwenden, müssen Sie den Lookup-Datensatz erstellen und ihn Ihrem Schema zuordnen.
+Nach der [Erstellung eines benutzerdefiniertes Schemas](#create-a-custom-schema-to-use-with-the-lookup-dataset) für einen Lookup-Datensatz müssen Sie den Lookup-Datensatz erstellen und Ihrem Schema zuordnen.
 
-Wiederholen Sie diesen Vorgang für jede Dimension, die Daten enthält, die Sie klassifizieren möchten.
+Wiederholen Sie diesen Vorgang für jede Dimension, die zu klassifizierende Daten enthält.
 
-So erstellen Sie einen Lookup-Datensatz zur Verwendung mit einem Schema in Customer Journey Analytics:
+So erstellen Sie einen Lookup-Datensatz für ein Schema in Customer Journey Analytics:
 
 >[!NOTE]
 >
->Der folgende Prozess verwendet eine CSV-Datei, um den Datensatz zu erstellen. Sie können auch jede andere Methode verwenden, die für den Import von Daten in Experience Platform verfügbar ist, z. B. das Einrichten eines Datenstroms.
+>Beim folgenden Prozess wird eine CSV-Datei verwendet, um den Datensatz zu erstellen. Sie können auch eine andere Methode verwenden, die für den Import von Daten in Experience Platform verfügbar ist, z. B. die Einrichtung eines Datenstroms.
 
-1. Wählen Sie in Adobe Experience Platform **[!UICONTROL Workflows]** in der linken Leiste aus.
+1. Wählen Sie in Adobe Experience Platform die Option **[!UICONTROL Workflows]** in der linken Leiste aus.
 
-   ![Benutzerdefiniert erstellen](assets/lookup-dataset-workflows.png)
+   ![Benutzerdefinierte Erstellung](assets/lookup-dataset-workflows.png)
 
-1. Wählen Sie **[!UICONTROL CSV zu XDM-Schema zuordnen]** aus und klicken Sie dann auf **[!UICONTROL Starten]**.
+1. Wählen Sie **[!UICONTROL CSV-Datei einem XDM-Schema zuordnen]** und dann **[!UICONTROL Starten]** aus.
 
-1. Wählen **[!UICONTROL Abschnitt „Datensatzdetails]** die Option **[!UICONTROL Neuer Datensatz]** aus.
+1. Wählen Sie im Abschnitt **[!UICONTROL Datensatz-Details]** die Option **[!UICONTROL Neuer Datensatz]** aus.
 
-1. Geben Sie einen Namen und eine Beschreibung für Ihren Datensatz an.
+1. Geben Sie einen Namen und eine Beschreibung für den Datensatz an.
 
-1. Wählen Sie im Feld **[!UICONTROL Schema]** das Schema aus, das Sie für Lookup-Datensätze erstellt haben, wie in [Erstellen eines Schemas für Lookup-Datensätze](#create-a-schema-for-lookup-datasets) beschrieben.
+1. Wählen Sie im Feld **[!UICONTROL Schema]** das Schema aus, das Sie für Lookup-Datensätze erstellt haben, wie unter [Erstellen eines Schemas für Lookup-Datensätze](#create-a-schema-for-lookup-datasets) beschrieben.
 
 1. Klicken Sie auf **[!UICONTROL Weiter]**.
 
-1. Wählen Sie auf der Seite **[!UICONTROL CSV zu XDM-Schema zuordnen]** im Abschnitt **[!UICONTROL Dateien hochladen]** die Option **[!UICONTROL Dateien auswählen]** aus und durchsuchen Sie dann Ihr Dateisystem nach der Datei, die die Klassifizierungsinformationen für die Dimension enthält, für die Sie Klassifizierungsdaten anwenden möchten. Dies kann beispielsweise eine Tabelle sein, die die Feld-IDs und die entsprechenden Feldnamen auflistet. <!-- correct? How can I better explain what this file is?-->
+1. Wählen Sie auf der Seite **[!UICONTROL CSV-Datei einem XDM-Schema zuordnen]** im Abschnitt **[!UICONTROL Dateien hochladen]** die Option **[!UICONTROL Dateien auswählen]** aus und durchsuchen Sie dann Ihr Dateisystem nach der Datei mit den Klassifizierungsinformationen für die Dimension, für die Klassifizierungsdaten angewendet werden sollen. Dies kann beispielsweise eine Tabelle sein, in der die Feld-IDs und die entsprechenden Feldnamen aufgelistet sind. <!-- correct? How can I better explain what this file is?-->
 
-   ![CSV-Datei zuordnen](assets/lookup-map-csv.png)
+   ![Zuordnen der CSV-Datei](assets/lookup-map-csv.png)
 
-1. Wählen Sie **[!UICONTROL Weiter]**
+1. Wählen Sie **[!UICONTROL Weiter]** aus
 
-1. Überprüfen Sie nach dem Hochladen der Datei die Zuordnungen, um sicherzustellen, dass sie korrekt sind. Die Spalten der CSV-Datei werden unter **[!UICONTROL Source-Daten]** und die zugehörigen XDM-Schemafelder unter &quot;**[!UICONTROL &quot;]**.
+1. Überprüfen Sie nach dem Datei-Upload die Zuordnungen, um sicherzustellen, dass sie korrekt sind. Die Spalten der CSV-Datei werden unter **[!UICONTROL Quelldaten]** aufgeführt, die entsprechenden XDM-Schemafelder unter **[!UICONTROL Zielfeld]**.
 
    Platform bietet automatisch intelligente Empfehlungen für automatisch zugeordnete Felder, die auf dem von Ihnen ausgewählten Zielschema oder Datensatz basieren. Sie können die Zuordnungsregeln manuell an Ihre Anwendungsfälle anpassen.
 
-   Weitere Informationen zum Zuordnungsprozess finden Sie unter [Zuordnen einer CSV-Datei zu einem vorhandenen XDM-Schema](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/tutorials/map-csv/existing-schema) in der Dokumentation zu Experience Platform.
+   Weitere Informationen zum Zuordnungsprozess finden Sie unter [Zuordnen einer CSV-Datei zu einem vorhandenen XDM-Schema](https://experienceleague.adobe.com/de/docs/experience-platform/ingestion/tutorials/map-csv/existing-schema) in der Dokumentation zu Experience Platform.
 
 1. Wählen Sie **[!UICONTROL Beenden]** aus.
 
@@ -103,21 +103,21 @@ So erstellen Sie einen Lookup-Datensatz zur Verwendung mit einem Schema in Custo
 
 ## Hinzufügen des Lookup-Datensatzes zu Ihrer Verbindung in Customer Journey Analytics
 
-Nachdem Sie [ein benutzerdefiniertes Schema erstellt](#create-a-custom-schema-to-use-with-the-lookup-dataset) und [einen Lookup-Datensatz erstellt](#create-a-lookup-dataset) müssen Sie den Lookup-Datensatz zu Ihrer Verbindung in Customer Journey Analytics hinzufügen.
+Nachdem Sie [ein benutzerdefiniertes Schema erstellt](#create-a-custom-schema-to-use-with-the-lookup-dataset) und [einen Lookup-Datensatz erstellt](#create-a-lookup-dataset) haben, müssen Sie den Lookup-Datensatz zu Ihrer Verbindung in Customer Journey Analytics hinzufügen.
 
-Wiederholen Sie diesen Vorgang für jede Dimension, die Daten enthält, die Sie klassifizieren möchten.
+Wiederholen Sie diesen Vorgang für jede Dimension, die zu klassifizierende Daten enthält.
 
 So fügen Sie den Lookup-Datensatz zu Ihrer Verbindung in Customer Journey Analytics hinzu:
 
 1. Rufen Sie in Customer Journey Analytics die Registerkarte **[!UICONTROL Verbindungen]** auf.
 
-1. Klicken Sie ![Mehr](assets/More.svg)Symbol neben der Verbindung, der Sie den Lookup-Datensatz hinzufügen möchten, und klicken Sie dann auf **[!UICONTROL Bearbeiten]**.
+1. Wählen Sie ![Mehr-Symbol](assets/More.svg) neben der Verbindung, der Sie den Lookup-Datensatz hinzufügen möchten, und klicken Sie dann auf **[!UICONTROL Bearbeiten]**.
 
    <!-- add screenshot -->
 
 1. Wählen Sie **[!UICONTROL Datensätze hinzufügen]** aus.
 
-1. Wählen **[!UICONTROL Dialogfeld „Datensätze hinzufügen]** den von Ihnen erstellten Lookup-Datensatz aus und klicken Sie dann auf **[!UICONTROL Weiter]**.
+1. Wählen Sie im Dialogfeld **[!UICONTROL Datensätze hinzufügen]** den von Ihnen erstellten Lookup-Datensatz hinzu und wählen Sie dann **[!UICONTROL Weiter]**.
 
 1. Wählen Sie im Feld **[!UICONTROL Personen-ID]** eine Personen-ID aus den verfügbaren Identitäten aus, die in dem Datensatzschema definiert sind, das Sie in Experience Platform konfiguriert haben. <!-- fill out other fields? -->
 
@@ -125,7 +125,7 @@ So fügen Sie den Lookup-Datensatz zu Ihrer Verbindung in Customer Journey Analy
 
    <!-- is there a step right in between here where you select the dataset -->
 
-1. Erstellen Sie mithilfe des Felds **[!UICONTROL Schlüssel]** und des Felds **[!UICONTROL Übereinstimmungsschlüssel]** eine Korrelation zwischen dem Feld in Ihrem Lookup-Datensatz und dem Feld in Ihrem Ereignis- oder Zusammenfassungsdatensatz.
+1. Erstellen Sie mithilfe des Felds **[!UICONTROL Schlüssel]** und des Felds **[!UICONTROL Passender Schlüssel]** eine Korrelation zwischen dem Feld in Ihrem Lookup-Datensatz und dem Feld in Ihrem Ereignis- oder Zusammenfassungsdatensatz.
 
 1. Wiederholen Sie diesen Vorgang, bis alle Lookup-Datensätze zu Ihrer Verbindung in Customer Journey Analytics hinzugefügt werden.
 

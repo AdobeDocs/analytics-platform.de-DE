@@ -7,7 +7,7 @@ exl-id: 7f67c497-386b-4442-a502-6b492f35c6e6
 source-git-commit: ff9d8cbe25dca2bbf1ab41891c20476909516b66
 workflow-type: tm+mt
 source-wordcount: '836'
-ht-degree: 91%
+ht-degree: 99%
 
 ---
 
@@ -45,7 +45,7 @@ Die geführte Analyse ist jetzt direkt in Analysis Workspace verfügbar, sodass 
 
 >[!TAB Intelligente Beschriftungen v2]
 
-Intelligente Beschriftungen werden jetzt mit zusätzlichen Verbesserungen der Benutzeroberfläche für [Linien](/help/analysis-workspace/visualizations/line.md) (einschließlich mehrzeiliger), [Balken](/help/analysis-workspace/visualizations/bar.md), [Horizontalbalken](/help/analysis-workspace/visualizations/horizontal-bar.md), [Bereich](/help/analysis-workspace/visualizations/area.md) (einschließlich mehrerer Bereichslinien), [Ringdiagramm](/help/analysis-workspace/visualizations/donut.md), [Fallout](/help/analysis-workspace/visualizations/fallout/fallout-flow.md) und [Fluss](/help/analysis-workspace/visualizations/c-flow/flow.md) unterstützt.
+Intelligente Beschriftungen werden jetzt mit zusätzlichen Verbesserungen der Benutzeroberfläche unterstützt für die Visualisierungen [Linie](/help/analysis-workspace/visualizations/line.md) (einschließlich mehrerer Linien), [Balken](/help/analysis-workspace/visualizations/bar.md), [Horizontalbalken](/help/analysis-workspace/visualizations/horizontal-bar.md), [Bereich](/help/analysis-workspace/visualizations/area.md) (einschließlich mehrerer Bereichslinien), [Ring](/help/analysis-workspace/visualizations/donut.md), [Fallout](/help/analysis-workspace/visualizations/fallout/fallout-flow.md) und [Fluss](/help/analysis-workspace/visualizations/c-flow/flow.md).
 
 [![Bild](assets/learn-more-button.svg)](/help/components/c-intelligent-alerts/intelligent-alerts.md)
 
@@ -66,7 +66,7 @@ Ermöglicht das Einbinden von Zeitreihendaten, die über keine Personen-ID verf�
 
 >[!TAB Grafikbasierte Zuordnung*]
 
-Durch die grafikbasierte Zuordnung können Sie das Identitätsdiagramm des Identity Service von Experience Platform verwenden, um eine bessere Ansicht der Customer Journey zu erhalten, indem Sie: <ul><li>Datensätze mit verschiedenen Kennungen verknüpfen, ohne zusätzliche Daten extrahieren, transformieren und laden zu müssen, um eine einzelne Kennung widerzuspiegeln.</li> <li>Die Abdeckung der bevorzugten oder goldenen Identität für einen einzelnen Datensatz durch die gemeinsame Nutzung von Identitäten über Datensätze hinweg verbessern.</li><li>Die in Real-time Customer Data Platform und Journey Optimizer erstellten Profile mit Personen in Customer Journey Analytics abstimmen.</li></ul>
+Durch die grafikbasierte Zuordnung können Sie das Identitätsdiagramm des Identity Service von Experience Platform verwenden, um eine bessere Ansicht der Customer Journey zu erhalten, indem Sie: <ul><li>Datensätze mit verschiedenen Kennungen verknüpfen, ohne zusätzliche Daten extrahieren, transformieren und laden zu müssen, um eine einzelne Kennung widerzuspiegeln.</li> <li>Die Abdeckung der bevorzugten oder goldenen Identität für einen einzelnen Datensatz durch die gemeinsame Nutzung von Identitäten über Datensätze hinweg verbessern</li><li>Die in Real-time Customer Data Platform und Journey Optimizer erstellten Profile mit Personen in Customer Journey Analytics abstimmen.</li></ul>
 
 [![Bild](assets/learn-more-button.svg)](/help/stitching/overview.md#graph-based-stitching)
 
@@ -74,7 +74,7 @@ Durch die grafikbasierte Zuordnung können Sie das Identitätsdiagramm des Ident
 
 >[!TAB BI-Erweiterung*]
 
-Die BI-Erweiterung ermöglicht SQL-Zugriff auf Datenansichten, die Sie in Customer Journey Analytics definiert haben. Sie können jetzt Ihr bevorzugtes BI-Tool (Power BI Desktop, Tableau Desktop, Looker, Juyter Notebook und RStudio) verwenden, um Berichte und Dashboards zu erstellen, die auf denselben Datenansichten basieren, die Customer Journey Analytics-Benutzende mit ihren Analysis Workspace-Projekten verwenden. [Anwendungsfälle](/help/use-cases/data-views/bi-extension-usecases.md) werden bereitgestellt.
+Die BI-Erweiterung ermöglicht SQL-Zugriff auf Datenansichten, die Sie in Customer Journey Analytics definiert haben. Sie können jetzt Ihr bevorzugtes BI-Tool (Power BI Desktop, Tableau Desktop, Looker, Juyter Notebook und RStudio) verwenden, um Berichte und Dashboards auf Basis derselben Datenansichten zu erstellen, die Customer Journey Analytics-Benutzende für ihre Analysis Workspace-Projekte verwenden. [Anwendungsfälle](/help/use-cases/data-views/bi-extension-usecases.md) werden bereitgestellt.
 
 [![Bild](assets/learn-more-button.svg)](/help/data-views/bi-extension.md)
 

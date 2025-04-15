@@ -1,6 +1,6 @@
 ---
 title: Erstellen eines Schemas für Customer Journey Analytics
-description: Erfahren Sie mehr über den empfohlenen Pfad beim Upgrade von Adobe Analytics auf Customer Journey Analytics
+description: Erfahren Sie mehr über den empfohlenen Pfad für das Upgrade von Adobe Analytics auf Customer Journey Analytics
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
@@ -8,18 +8,18 @@ exl-id: d686dcdd-08d5-4e8f-8f0d-76c8c7b0427f
 source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
 workflow-type: tm+mt
 source-wordcount: '219'
-ht-degree: 60%
+ht-degree: 100%
 
 ---
 
-# Erstellen eines Datensatzes für Customer Journey Analytics {#upgrade-create-dataset}
+# Erstellen eines Datensatzes zur Verwendung mit Customer Journey Analytics {#upgrade-create-dataset}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-dataset-create"
->title="Erstellen eines Datensatzes in Adobe Experience Platform"
->abstract="Ein Datensatz entspricht einem Speicherort, an dem sich erfasste Daten befinden. Erstellen Sie diesen Speicherort in Adobe Experience Platform.<br><br>Die Erstellung eines Datensatzes unter Berücksichtigung eines Schemas dauert nur wenige Minuten."
+>title="Datensatz in Adobe Experience Platform erstellen"
+>abstract="Ein Datensatz ist ein Speicherort, an dem sich erfasste Daten befinden. Erstellen Sie diesen Speicherort in Adobe Experience Platform.<br><br>Die Erstellung eines Datensatzes unter Berücksichtigung eines Schemas dauert nur wenige Minuten."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -31,7 +31,7 @@ Ein Datensatz ist das Konstrukt, das die Daten speichert und verwaltet, die Sie 
 
 So erstellen Sie einen Datensatz:
 
-1. Wählen Sie in Adobe Experience Platform in der linken Leiste die Option **[!UICONTROL Datensätze]** unter [!UICONTROL DATEN-MANAGEMENT].
+1. Wählen Sie in Adobe Experience Platform in der linken Leiste in [!UICONTROL Daten-Management] die Option **[!UICONTROL Datensätze]** aus.
 
 1. Wählen Sie **[!UICONTROL Erstellen eines Datensatzes]** aus.
 
@@ -59,6 +59,6 @@ So erstellen Sie einen Datensatz:
 
    ![Aktivieren eines Schemas für ein Profil](assets/aepwebsdk-dataset-profile.png)
 
-   Weitere Informationen [ Anzeigen, Anzeigen, Erstellen und Löschen eines Datensatzes finden ](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/user-guide.html?lang=de) im Handbuch zur Datensatz-Benutzeroberfläche . Außerdem erfahren Sie, wie Sie einen Datensatz für das Echtzeit-Kundenprofil aktivieren.
+   Im [Handbuch zur Datensatz-Benutzeroberfläche](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/user-guide.html?lang=de) können Sie nachlesen, wie ein Datensatz angezeigt, in der Vorschau angesehen, erstellt und gelöscht werden kann. SIe finden ebenfalls Informationen dazu, wie ein Datensatz für das Echtzeit-Kundenprofil aktiviert wird.
 
 {{upgrade-final-step}}

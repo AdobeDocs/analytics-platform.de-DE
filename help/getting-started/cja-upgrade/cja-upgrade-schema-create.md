@@ -8,7 +8,7 @@ exl-id: 902e5890-f970-4f1a-b091-9c3e51a987db
 source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
 workflow-type: tm+mt
 source-wordcount: '1252'
-ht-degree: 54%
+ht-degree: 100%
 
 ---
 
@@ -18,8 +18,8 @@ ht-degree: 54%
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-schema-create"
->title="Erstellen des gewünschten benutzerdefinierten Schemas in Adobe Experience Platform"
->abstract="Verwenden Sie die Adobe Experience Platform-Benutzeroberfläche, um ein Schema zu erstellen, sodass Adobe das richtige Format zum Speichern Ihrer Daten kennt.<br><br>Dieser Schritt beinhaltet die tatsächliche Erstellung des Schemas, das von Ihrer Organisation vereinbart wurde. Die geschätzte Zeit zur Erstellung Ihres Schemas in der Adobe Experience Platform-Benutzeroberfläche beträgt je nach der Anzahl der zu erstellenden Dimensionen und Metriken ca. eine Woche."
+>title="Gewünschtes benutzerdefiniertes Schema in Adobe Experience Platform erstellen"
+>abstract="Verwenden Sie die Adobe Experience Platform-Benutzeroberfläche, um ein Schema zu erstellen, sodass Adobe das richtige Format zum Speichern Ihrer Daten kennt.<br><br>Dieser Schritt umfasst die tatsächliche Erstellung des Schemas, das von Ihrer Organisation vereinbart wurde. Die geschätzte Zeit bis zur Erstellung Ihres Schemas in der Benutzeroberfläche von Adobe Experience Platform beträgt abhängig von der Anzahl der zu erstellenden Dimensionen und Metriken ca. eine Woche."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -27,8 +27,8 @@ ht-degree: 54%
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-schema-create-default-aa"
->title="Erstellen eines Schemas mithilfe der Feldergruppe „Adobe Analytics ExperienceEvent“"
->abstract="Verwenden Sie die Feldergruppe „Adobe Analytics ExperienceEvent“, um in Adobe Experience Platform ein Schema zu erstellen, das alle von Adobe Analytics verwendeten Felder enthält.<br><br>Das Erstellen eines Schemas basierend auf der Feldergruppe „Adobe Analytics ExperienceEvent“ ist einfach und dauert nur einige Minuten."
+>title="Schema mithilfe der Adobe Analytics-Feldergruppe erstellen"
+>abstract="Verwenden Sie die Feldgruppe „Adobe Analytics ExperienceEvent“, um in Adobe Experience Platform ein Schema zu erstellen, das alle von Adobe Analytics verwendeten Felder enthält.<br><br>Das Erstellen eines Schemas basierend auf der Adobe Analytics ExperienceEvent-Feldgruppe ist einfach und dauert nur einige Minuten."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -36,8 +36,8 @@ ht-degree: 54%
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-schema-profile"
->title="Aktivieren Ihres Schemas für das Profil"
->abstract="Aktivieren Sie das Profil in Ihrem Schema zur Verwendung in der Adobe Real-Time CDP. Dieser Schritt wird angezeigt, weil Sie die Integration mit Adobe Real-Time CDP ausgewählt haben.<br><br>Da Sie bei diesem Schritt auf ein einziges Feld klicken müssen, dauert dieser Schritt nur einige Minuten."
+>title="Ihr Schema für das Profil aktivieren"
+>abstract="Aktivieren Sie das Profil in Ihrem Schema zur Verwendung in der Adobe Real-Time CDP. Dieser Schritt wird angezeigt, weil Sie die Integration mit Adobe Real-Time CDP ausgewählt haben.<br><br>Da Sie bei diesem Schritt auf ein einzelnes Feld klicken müssen, dauert dieser Schritt nur einige Minuten."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -45,25 +45,25 @@ ht-degree: 54%
 
 >[!IMPORTANT]
 >
->Bevor Sie mit der Erstellung Ihres benutzerdefinierten Schemas beginnen, wenden Sie sich an Ihr Daten-Team und andere Beteiligte in Ihrem Unternehmen, um das ideale Schema-Design Ihres Unternehmens für Customer Journey Analytics und die anderen von Ihnen verwendeten Adobe Experience Platform-Programme zu ermitteln. Weitere Informationen finden Sie unter [Entwickeln eines Schemas zur Verwendung mit Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-schema-architect.md).
+>Bevor Sie mit der Erstellung Ihres benutzerdefinierten Schemas beginnen, wenden Sie sich an Ihr Daten-Team und andere Beteiligte in Ihrem Unternehmen, um das ideale Schema-Design Ihres Unternehmens für Customer Journey Analytics und die anderen von Ihnen verwendeten Adobe Experience Platform-Programme zu ermitteln. Weitere Informationen finden Sie unter [Planen Ihres Schemas zur Verwendung mit Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-schema-architect.md).
 
 In den folgenden Abschnitten wird beschrieben, wie Sie ein Schema erstellen, das mit Customer Journey Analytics verwendet werden kann. Die folgenden Schemaoptionen sind verfügbar:
 
-* **Benutzerdefiniertes XDM-Schema:** (empfohlen) Ermöglicht ein optimiertes Schema, das auf die Anforderungen Ihres Unternehmens und die von Ihnen verwendeten Platform-Programme zugeschnitten ist. Alle erforderlichen zukünftigen Änderungen sind einfach.
+* **Benutzerdefiniertes XDM-Schema** (empfohlen): Bietet ein optimiertes Schema, das auf die Anforderungen Ihrer Organisation und die von Ihnen verwendeten spezifischen Platform-Anwendungen zugeschnitten ist. Alle erforderlichen zukünftigen Änderungen sind einfach.
 
-* **Adobe Analytics-Schema, das die Adobe Analytics ExperienceEvent-Feldergruppe verwendet:** Erfordert das Hinzufügen Tausender nicht benötigter Felder. Alle erforderlichen zukünftigen Änderungen sind schwieriger.
+* **Adobe Analytics-Schema, das die Adobe Analytics ExperienceEvent-Feldgruppe verwendet:** Erfordert das Hinzufügen Tausender nicht benötigter Felder. Alle erforderlichen zukünftigen Änderungen sind schwieriger.
 
-Weitere Informationen zu diesen Schemaoptionen finden Sie unter [Schema für Customer Journey Analytics auswählen](/help/getting-started/cja-upgrade/cja-upgrade-schema-existing.md).
+Weitere Informationen zu diesen Schemaoptionen finden Sie unter [Auswählen Ihres Schemas für Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-schema-existing.md).
 
 ## Erstellen des Schemas
 
-Das benutzerdefinierte Schema, das Sie für Ihre Web SDK-Implementierung definieren, stellt das Modell der Daten dar, die Sie in Adobe Experience Platform erfassen.
+Das benutzerdefinierte Schema, das Sie für Ihre Web-SDK-Implementierung definieren, stellt das Modell der Daten dar, die Sie in Adobe Experience Platform erfassen.
 
-So erstellen Sie ein benutzerdefiniertes Schema:
+So erstellen Sie ein benutzerspezifisches Schema:
 
 <!-- Should we single source this instead of duplicate it? The following steps were copied from: /help/data-ingestion/aepwebsdk.md-->
 
-1. Wählen Sie in Adobe Experience Platform in der linken Leiste die Option **[!UICONTROL Schemata]** unter [!UICONTROL DATEN-MANAGEMENT].
+1. Wählen Sie in Adobe Experience Platform in der linken Leiste in [!UICONTROL Daten-Management] die Option **[!UICONTROL Schemata]** aus.
 
 1. Wählen Sie **[!UICONTROL Schema erstellen]** aus.
 
@@ -71,28 +71,28 @@ So erstellen Sie ein benutzerdefiniertes Schema:
 
    1. Wählen Sie **[!UICONTROL Erlebnisereignis]** aus.
 
-      ![Erstellen eines Schemas mit hervorgehobenen Erlebnisereignissen](assets/create-ee-schema-wizard-step-1.png)
+      ![Erstellen eines Schemas mit hervorgehobenem Erlebnisereignis](assets/create-ee-schema-wizard-step-1.png)
 
       >[!INFO]
       >
-      >    Ein Erlebnisereignis-Schema wird zum Modellieren des _Verhaltens_ eines Profils verwendet (z. B. Szenenname, zum Warenkorb hinzuzufügende Schaltfläche). Das Schema „Individuelles Profil“ wird verwendet, um die _Attribute_ eines Profils zu modellieren (z. B. Name, E-Mail, Geschlecht).
+      >    Ein Erlebnisereignis-Schema wird zum Modellieren des _Verhaltens_ eines Profils verwendet (z. B. Szenenname, Schaltfläche zum Hinzufügen von Artikeln zum Warenkorb). Das Schema „Individuelles Profil“ wird verwendet, um die _Attribute_ eines Profils zu modellieren (z. B. Name, E-Mail, Geschlecht).
 
    1. Klicken Sie auf **[!UICONTROL Weiter]**.
 
 
-1. Im Schritt [!UICONTROL Name und Überprüfung] des Assistenten [!UICONTROL Schema erstellen]:
+1. Im [!UICONTROL Schritt „Name und Überprüfung“] des Assistenten [!UICONTROL Schema erstellen]:
 
-   1. Geben Sie einen **[!UICONTROL Anzeigenamen des Schemas]** für Ihr Schema und (optional) eine **[!UICONTROL Beschreibung]** ein.
+   1. Geben Sie einen **[!UICONTROL Schema-Anzeigenamen]** für Ihr Schema und (optional) eine **[!UICONTROL Beschreibung]** ein.
 
-      ![Fenster Schema erstellen mit dem Namen Ihrer Schemafelder](assets/create-ee-schema-wizard-step-2.png)
+      ![Fenster „Schema erstellen“ mit dem Namen Ihrer Schemafelder](assets/create-ee-schema-wizard-step-2.png)
 
    1. Wählen Sie **[!UICONTROL Beenden]** aus.
 
-1. Fügen Sie alle Feldergruppen hinzu, die Felder enthalten, die Sie in Ihr Schema aufnehmen möchten.
+1. Fügen Sie alle Feldgruppen hinzu, die Felder enthalten, die Sie in Ihr Schema aufnehmen möchten.
 
    Feldergruppen sind wiederverwendbare Sammlungen von Objekten und Attributen, mit denen Sie Ihr Schema einfach erweitern können.
 
-   1. Wählen Sie im **[!UICONTROL Feldergruppen]** die Option **[!UICONTROL + Hinzufügen]**.
+   1. Wählen Sie im Abschnitt **[!UICONTROL Feldgruppen]** die Option **[!UICONTROL + Hinzufügen]** aus.
 
       ![Hinzufügen der Feldergruppe](assets/add-field-group-button.png)
 
@@ -106,23 +106,23 @@ So erstellen Sie ein benutzerdefiniertes Schema:
 
       Wählen Sie **[!UICONTROL Zurück]** aus, um die Vorschau zu schließen.
 
-   1. (Optional) Wählen Sie alle zusätzlichen Feldergruppen aus, die Sie einbeziehen möchten.
+   1. (Optional) Wählen Sie alle zusätzlichen Feldgruppen aus, die Sie einbeziehen möchten.
 
-      Wenn Sie sich dafür entschieden haben, das standardmäßige Adobe Analytics-Schema zu verwenden, anstatt ein benutzerdefiniertes XDM-Schema zu erstellen, können Sie jetzt die Adobe Analytics ExperienceEvent-Feldergruppe hinzufügen. Adobe empfiehlt jedoch, ein benutzerdefiniertes XDM-Schema zu erstellen, anstatt diese Feldergruppe hinzuzufügen.
+      Wenn Sie sich dafür entschieden haben, das standardmäßige Adobe Analytics-Schema zu verwenden, anstatt ein benutzerdefiniertes XDM-Schema zu erstellen, können Sie jetzt die Adobe Analytics ExperienceEvent-Feldgruppe hinzufügen. Adobe empfiehlt jedoch, ein benutzerdefiniertes XDM-Schema zu erstellen, anstatt diese Feldgruppe hinzuzufügen.
 
-      Weitere Informationen zu diesen Schemaoptionen finden Sie unter [Schema für Customer Journey Analytics auswählen](/help/getting-started/cja-upgrade/cja-upgrade-schema-existing.md).
+      Weitere Informationen zu diesen Schemaoptionen finden Sie unter [Auswählen Ihres Schemas für Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-schema-existing.md).
 
    1. Wählen Sie **[!UICONTROL Feldergruppen hinzufügen]** aus.
 
-1. (Optional) Wenn Sie benutzerdefinierte Felder haben, die Sie in Ihr Schema aufnehmen möchten, erstellen Sie eine benutzerdefinierte Feldergruppe und fügen Sie die benutzerdefinierten Felder zur Feldergruppe hinzu.
+1. (Optional) Wenn Sie benutzerdefinierte Felder in Ihr Schema aufnehmen möchten, erstellen Sie eine benutzerdefinierte Feldgruppe und fügen Sie die benutzerdefinierten Felder zur Feldgruppe hinzu.
 
-   1. Wählen Sie im **[!UICONTROL Feldergruppen]** die Option **[!UICONTROL + Hinzufügen]**.
+   1. Wählen Sie im Abschnitt **[!UICONTROL Feldgruppen]** die Option **[!UICONTROL + Hinzufügen]** aus.
 
       ![Hinzufügen der Feldergruppe](assets/add-field-group-button.png)
 
-   1. Wählen [!UICONTROL  Dialogfeld „Feldergruppen hinzufügen] die Option **[!UICONTROL Neue Feldergruppe erstellen]**.
+   1. Wählen Sie im Dialogfeld [!UICONTROL Feldgruppen hinzufügen] die Option **[!UICONTROL Neue Feldgruppe erstellen]** aus.
 
-   1. Geben Sie einen Anzeigenamen und eine optionale Beschreibung ein und wählen Sie dann **[!UICONTROL Feldergruppen hinzufügen]** aus.
+   1. Geben Sie einen Anzeigenamen und eine optionale Beschreibung ein und wählen Sie dann **[!UICONTROL Feldgruppen hinzufügen]** aus.
 
 1. Wählen Sie **[!UICONTROL +]** neben Ihrem Schemanamen im Bedienfeld [!UICONTROL Struktur] aus.
 
@@ -132,11 +132,11 @@ So erstellen Sie ein benutzerdefiniertes Schema:
 
    >[!NOTE]
    >
-   >Wenn diese Feldergruppe nicht verfügbar ist, suchen Sie nach einer anderen Feldergruppe, die Identitätsfelder enthält. Oder [eine neue Feldergruppe erstellen](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/field-groups.html) und [neue Identitätsfelder hinzufügen](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/identity.html#define-a-identity-field) (z. B. `ecid`, `crmId` und andere benötigte) zur Feldergruppe hinzufügen und diese neue Feldergruppe auswählen.
+   >Wenn diese Feldgruppe nicht verfügbar ist, suchen Sie nach einer anderen Feldgruppe mit Identitätsfeldern. Oder [erstellen Sie eine neue Feldgruppe](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/ui/resources/field-groups) und [fügen Sie neue Identitätsfelder](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/ui/fields/identity#define-a-identity-field) (z. B. `ecid`, `crmId` und andere benötigte Felder) zur Feldgruppe hinzu und wählen Sie diese neue Feldgruppe aus.
 
    ![Identifizierungsobjekt](assets/identification-field.png)
 
-   Das Identifizierungsobjekt fügt Ihrem Schema Identifizierungsfunktionen hinzu. In Ihrem Fall möchten Sie Profile, die Ihre Site besuchen, mithilfe der Experience Cloud-ID und der E-Mail-Adresse identifizieren. Es stehen eine Vielzahl weiterer Attribute zur Verfügung, um die Identifizierung Ihrer Person zu verfolgen (z. B. Kunden-ID, Treueprogramm-ID).
+   Das Identifizierungsobjekt fügt Ihrem Schema Identifizierungsfunktionen hinzu. In Ihrem Fall möchten Sie Profile, die Ihre Website besuchen, mithilfe der Experience Cloud-ID und der E-Mail-Adresse identifizieren. Daneben stehen auch noch viele weitere Attribute zum Tracken der Personenidentifizierung zur Verfügung (z. B. Kunden-ID, Treueprogramm-ID).
 
    Wählen Sie **[!UICONTROL Anwenden]** aus, um dieses Objekt zu Ihrem Schema hinzuzufügen.
 
@@ -162,7 +162,7 @@ So erstellen Sie ein benutzerdefiniertes Schema:
 
    Sie werden aufgefordert, das Schema für das Profil zu aktivieren. Nach der Aktivierung werden Daten, die auf der Basis dieses Schemas in Datensätze aufgenommen werden, zum Echtzeit-Kundenprofil hinzugefügt.
 
-   Weitere Informationen finden Sie im Abschnitt [Aktivieren des Schemas zur Verwendung im Echtzeit-Kundenprofil](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html#profile).
+   Weitere Informationen finden Sie im Abschnitt [Aktivieren des Schemas zur Verwendung im Echtzeit-Kundenprofil](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/tutorials/create-schema-ui#profile).
 
    >[!IMPORTANT]
    >
@@ -184,7 +184,7 @@ So erstellen Sie ein benutzerdefiniertes Schema:
 
    * Fügen Sie ein Identifizierungsobjekt hinzu, das auf der Feldergruppe „Profile Core v2“ basiert.
 
-   * Experience Cloud-ID als primäre Kennung und E-Mail als Kennung definieren.
+   * Definieren Sie die Experience Cloud-ID als primäre Kennung und die E-Mail als Kennung.
 
    * Aktivieren Sie dieses Schema für das Profil
 

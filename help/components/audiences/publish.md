@@ -84,7 +84,7 @@ Lesen Sie diesen [Überblick](/help/components/audiences/audiences-overview.md),
 1. Wählen Sie **[!UICONTROL [!UICONTROL Beispiel-IDs anzeigen]]** aus, um Beispiel-IDs in dieser Zielgruppe anzuzeigen. Im Dialogfeld **[!UICONTROL Beispiel-IDs]** können Sie über ![Search](/help/assets/icons/Search.svg) [!UICONTROL *Beispiel-IDs suchen*] nach Beispiel-IDs suchen.
 
 1. Überprüfen Sie Ihre Zielgruppenkonfiguration und wählen Sie **[!UICONTROL Veröffentlichen]** aus.
-Sie erhalten eine Nachricht mit der Bestätigung, dass die Zielgruppe veröffentlicht wird. Es dauert nur ein bis zwei Minuten, bis die Veröffentlichung dieser Zielgruppe in Experience Platform angezeigt wird. 
+Sie erhalten eine Nachricht mit der Bestätigung, dass die Zielgruppe veröffentlicht wird. Es dauert nur ein bis zwei Minuten, bis die Veröffentlichung dieser Zielgruppe in Experience Platform angezeigt wird.
 
 1. Wählen Sie in derselben Nachricht die Option **[!UICONTROL Zielgruppe in AEP anzeigen]** aus. Dadurch gelangen Sie zur [Segment-Benutzeroberfläche](https://experienceleague.adobe.com/de/docs/experience-platform/segmentation/ui/overview) in Adobe Experience Platform. Weitere Informationen finden Sie unten.
 

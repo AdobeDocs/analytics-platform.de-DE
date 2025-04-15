@@ -1,6 +1,6 @@
 ---
 title: Überwachen der Datensatzaufnahme beim Upgrade auf Customer Journey Analytics
-description: Erfahren Sie, wie Sie die Datensatzaufnahme beim Upgrade auf Customer Journey Analytics überwachen
+description: Erfahren Sie, wie Sie historische Daten beim Upgrade auf Customer Journey Analytics überwachen können
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
@@ -8,7 +8,7 @@ exl-id: 35fcd213-d831-4da0-b946-f6f0d8561f60
 source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
 workflow-type: tm+mt
 source-wordcount: '221'
-ht-degree: 33%
+ht-degree: 69%
 
 ---
 
@@ -29,9 +29,9 @@ ht-degree: 33%
 
 Nachdem Sie Ihre Web SDK- oder API-Implementierung konfiguriert haben, müssen Sie die Status einzelner Batches überprüfen, um sicherzustellen, dass Daten in den Datensatz aufgenommen werden.
 
-1. Wählen Sie in der Benutzeroberfläche von Experience Platform **[!UICONTROL Überwachung]** im linken Navigationsbereich aus.
+1. Wählen Sie in der Benutzeroberfläche von Experience Platform im linken Navigationsbereich auf **[!UICONTROL Monitoring]**.
 
-   Das Überwachungs-Dashboard wird angezeigt. In diesem Dashboard können Sie den Status eingehender Daten aus der Batch- oder Streaming-Aufnahme anzeigen.
+   Das Dashboard „Monitoring“ wird angezeigt. Auf dem Dashboard können Sie die Status von aus der Batch- oder Streaming-Aufnahme eingehenden Daten anzeigen.
 
    <!-- insert screenshot -->
 
@@ -45,7 +45,7 @@ Nachdem Sie Ihre Web SDK- oder API-Implementierung konfiguriert haben, müssen S
 
    Wenn **[!UICONTROL Fehlgeschlagen]** im Feld **[!UICONTROL Status]** angezeigt wird, überprüfen Sie Ihre Implementierung, um sicherzustellen, dass die Daten korrekt an Adobe gesendet werden.
 
-   Wiederholen Sie diesen Schritt, um den Status jedes Stapels zu überprüfen.
+   Wiederholen Sie diesen Schritt, um den Status von jedem Batch zu überprüfen.
 
 {{upgrade-final-step}}
 

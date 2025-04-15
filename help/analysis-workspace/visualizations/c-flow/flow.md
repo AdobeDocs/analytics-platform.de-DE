@@ -1,5 +1,5 @@
 ---
-description: Erfahren Sie mehr über die Flow-Funktion, die Kundenpfade durch Ihre Websites und Programme zeigt.
+description: Erfahren Sie mehr über die Flussfunktion, die Kundenpfade durch Ihre Websites und Programme anzeigt.
 title: Flussübersicht
 feature: Visualizations
 exl-id: 2ef325d9-1d82-46c9-86e3-6b2332548823
@@ -7,7 +7,7 @@ role: User
 source-git-commit: 0cd9cd508d474df3dff176bca4596d0379ac86b4
 workflow-type: tm+mt
 source-wordcount: '326'
-ht-degree: 36%
+ht-degree: 100%
 
 ---
 
@@ -30,23 +30,23 @@ ht-degree: 36%
 
 >[!BEGINSHADEBOX]
 
-_In diesem Artikel wird die Flussvisualisierung in {_}![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._<br/>_Siehe [Fluss](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/flow/flow) für die_![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**-Version dieses Artikels._
+_In diesem Artikel wird die Visualisierung „Fluss“ in_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics** beschrieben._<br/>_Unter [Fluss](https://experienceleague.adobe.com/de/docs/analytics/analyze/analysis-workspace/visualizations/flow/flow) finden Sie die Version dieses Artikels für_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**._
 
 >[!ENDSHADEBOX]
 
 
-Die Visualisierung ![GraphPathing](/help/assets/icons/GraphPathing.svg) **[!UICONTROL Flow]** zeigt Kundenpfade durch Ihre Websites und Programme.
+Die ![GraphPathing](/help/assets/icons/GraphPathing.svg) Visualisierung **[!UICONTROL Fluss]** zeigt Kundenpfade durch Ihre Websites und Programme an.
 
 Mit der Visualisierung können Sie:
 
-* Visualisieren Sie die Kunden-Journey über Ihre Website oder Ihr Programm.
-* Analysieren, wo Kunden vor und nach bestimmten Checkpoints wie Eintritt, bestimmter Dimension oder Austritt navigieren.
-* Erstellen Sie Filter, indem Sie einen bestimmten Punkt in einem ausgewählten Pfad angeben.
+* Die Customer Journey durch Ihre Website oder Ihr Programm visualisieren.
+* Analysieren, wohin Kundinnen und Kunden vor und nach festgelegten Checkpoints navigieren, wie zum Beispiel Einstieg, eine bestimmte Dimension oder Ausstieg.
+* Filter erstellen, indem Sie einen bestimmten Punkt in einem ausgewählten Pfad angeben.
 
 
 >[!BEGINSHADEBOX]
 
-Siehe ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Erstellen einer Flussvisualisierung](https://video.tv.adobe.com/v/346063/?quality=12&learn=on){target="_blank"} für ein Demovideo.
+Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Erstellen einer Visualisierung „Fluss“](https://video.tv.adobe.com/v/346063/?quality=12&learn=on){target="_blank"} finden Sie ein Demovideo.
 
 {{videoaa}}
 
@@ -61,25 +61,25 @@ Jede Spalte könnte eine andere Dimension anzeigen. Ziehen Sie einen Dimension p
 
 >[!MORELIKETHIS]
 >
->[Flussvisualisierung konfigurieren](/help/analysis-workspace/visualizations/c-flow/create-flow.md).
+>[Konfigurieren einer Visualisierung „Fluss“](/help/analysis-workspace/visualizations/c-flow/create-flow.md).
 >
 
-## Wählen Sie zwischen Flow-, Fallout- oder Journey-Arbeitsflächen-Visualisierungen
+## Wählen Sie zwischen den Visualisierungen „Fluss“, „Fallout“ oder „Journey-Arbeitsfläche“
 
-Die Flussvisualisierung weist Ähnlichkeiten mit der [Fallout-Visualisierung](/help/analysis-workspace/visualizations/fallout/fallout-flow.md) und der [Journey-](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md) auf, jedoch mit wichtigen Unterschieden.
+Die Visualisierung „Fluss“ weist Ähnlichkeiten mit der Visualisierung [Fallout](/help/analysis-workspace/visualizations/fallout/fallout-flow.md) und der Visualisierung [Journey-Arbeitsflächen](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md) auf, jedoch mit wichtigen Unterschieden.
 
-### Unterschiede verstehen
+### Informationen zu den Unterschieden
 
 <!-- Information in this snippet is shared between Journey canvas, Fallout, and Flow visualization docs -->
 
 {{journey-visualization-comparisons}}
 
-### Verwendung von Flow
+### Wann „Fluss“ eingesetzt werden sollte
 
-Flussvisualisierungen eignen sich am besten für:
+Visualisierungen vom Typ „Fluss“ eignen sich am besten für:
 
-* Explorative Ad-hoc-Analyse für den unmittelbar nächsten Touchpoint auf dem Pfad. (Verwenden Sie die Journey-Arbeitsfläche für Journeys mit einer vordefinierten Seitensequenz oder für Seiten, die einen eventuellen Pfad verwenden.)
+* Explorative Ad-hoc-Analysen für den unmittelbar nächsten Touchpoint auf dem Pfad. (Verwenden Sie die Journey-Arbeitsfläche für Journeys mit einer vordefinierten Seitensequenz oder für Seiten, die einen endgültigen Pfad verwenden.)
 
-* Nichtlineare Journey mit mehreren Einstiegspunkten und Pfaden. (Verwenden Sie die Journey-Arbeitsfläche für Journey mit einer vordefinierten Seitensequenz.)
+* Nichtlineare Journey mit mehreren Einstiegspunkten und Pfaden. (Verwenden Sie die Journey-Arbeitsfläche für Journeys mit einer vordefinierten Seitensequenz.)
 
-Verwenden Sie [Tabelle oben](#understand-the-differences) um die Unterschiede zwischen Fluss-, Fallout- und Journey-Arbeitsfläche zu verstehen.
+Verwenden Sie [die Tabelle oben](#understand-the-differences), um die Unterschiede zwischen Fluss-, Fallout- und Journey-Arbeitsfläche zu verstehen.

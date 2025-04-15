@@ -66,7 +66,7 @@ ht-degree: 86%
       + Implementieren von Web SDK mit Tags {#create-tags}
          + [Erstellen eines Tags für die Eigenschaft](/help/getting-started/cja-upgrade/cja-upgrade-tag-property.md)
          + [Hinzufügen der Web SDK-Erweiterung zum Tag](/help/getting-started/cja-upgrade/cja-upgrade-tag-extension.md)
-         + [Implementieren des Loader-Tags für die Web SDK-Erweiterung](/help/getting-started/cja-upgrade/cja-upgrade-tag-loader.md)
+         + [Implementieren des Loader-Tags für die Web-SDK-Erweiterung](/help/getting-started/cja-upgrade/cja-upgrade-tag-loader.md)
          + [Hinzufügen von XDM-Datenerfassungslogik zum Tag](/help/getting-started/cja-upgrade/cja-upgrade-tag-xdm.md)
       + [Manuelles Implementieren von Web SDK](/help/getting-started/cja-upgrade/cja-upgrade-manual.md)
       + [Implementieren von Web SDK mit der API](/help/getting-started/cja-upgrade/cja-upgrade-api.md)
@@ -77,8 +77,8 @@ ht-degree: 86%
       + [Streaming-Mediensammlung einrichten](/help/getting-started/cja-upgrade/cja-upgrade-streaming-media.md)
       + Aufbewahren historischer Daten mit dem Analytics-Quell-Connector {#historical-data-source-connector}
          + [Erstellen eines XDM-Schemas für den Analytics-Quell-Connector](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-schema.md)
-         + [Erstellen der Analytics-Quell-Connector- und Zuordnungsfelder](/help/getting-started/cja-upgrade/cja-upgrade-source-connector.md)
-         + [Hinzufügen des Datensatzes des Analytics-Quell-Connectors zur Verbindung](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-dataset.md)
+         + [Erstellen des Analytics-Quell-Connectors und Zuordnen von Feldern](/help/getting-started/cja-upgrade/cja-upgrade-source-connector.md)
+         + [Hinzufügen des Analytics-Quell-Connector-Datensatzes zur Verbindung](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-dataset.md)
       + [Auswerten, wann Adobe Analytics deaktiviert werden soll](/help/getting-started/cja-upgrade/cja-upgrade-fully-move.md)
       + [Deaktivieren von Adobe Analytics](/help/getting-started/cja-upgrade/cja-upgrade-disable-appmeasurement.md)
       + Alternative Upgrade-Methoden {#alternative-upgrade-methods}
@@ -209,7 +209,7 @@ ht-degree: 86%
          + [Fehlerbehebung](../analysis-workspace/visualizations/journey-canvas/journey-canvas-troubleshooting.md)
       + [Bereich (gestapelt)](../analysis-workspace/visualizations/area.md)
       + [Balken (gestapelt)](../analysis-workspace/visualizations/bar.md)
-      + [Horizontales Säulendiagramm](../analysis-workspace/visualizations/bullet-graph.md)
+      + [Bullet](../analysis-workspace/visualizations/bullet-graph.md)
       + [Kombination](../analysis-workspace/visualizations/combo-charts.md)
       + [Ringdiagramm](../analysis-workspace/visualizations/donut.md)
       + [Histogramm](../analysis-workspace/visualizations/histogram.md)
@@ -231,7 +231,7 @@ ht-degree: 86%
       + [Freiform](../analysis-workspace/c-panels/freeform-panel.md)
       + [Medien-Zielgruppendurchschnitt pro Minute](/help/analysis-workspace/c-panels/average-minute-audience-panel.md)
       + [Gleichzeitige Medienbetrachtende](../analysis-workspace/c-panels/media-concurrent-viewers.md)
-      + [Bei der Medienwiedergabe verbrachte Zeit](../analysis-workspace/c-panels/media-playback-time-spent.md)
+      + [Verbrachte Zeit bei der Medienwiedergabe](../analysis-workspace/c-panels/media-playback-time-spent.md)
       + [Nächstes oder vorheriges Objekt](../analysis-workspace/c-panels/next-previous.md)
       + [Quick Insights](../analysis-workspace/c-panels/quickinsight.md)
    + Kuratieren, Freigeben und Planen von Projekten {#curate-share}
@@ -253,7 +253,7 @@ ht-degree: 86%
       + [Überblick](../analysis-workspace/c-forecast/forecasting.md)
       + [Anzeigen von Prognosen](../analysis-workspace/c-forecast/view-forecasts.md)
       + [Statistische Verfahren](../analysis-workspace/c-forecast/statistics-forecasting.md)
-   + [Inhaltsverzeichnis ](../analysis-workspace/build-workspace-project/project-table-of-contents.md)
+   + [Inhaltsverzeichnis](../analysis-workspace/build-workspace-project/project-table-of-contents.md)
    + [Benutzervoreinstellungen](../analysis-workspace/user-preferences.md)
    + Häufig gestellte Fragen zu Workspace und mehr {#workspace-faq}
       + [Häufig gestellte Fragen](../analysis-workspace/workspace-faq/faq.md)
@@ -292,7 +292,7 @@ ht-degree: 86%
    + [Nettowachstum](../guided-analysis/types/net-growth.md)
    + [Auswirkungen der Version](../guided-analysis/types/release-impact.md)
    + [Kundentreue](../guided-analysis/types/retention.md)
-   + [Timeline](../guided-analysis/types/timeline.md)
+   + [Zeitleiste](../guided-analysis/types/timeline.md)
    + [Trends](../guided-analysis/types/trends.md)
    + [Anwendungsfälle für Branchen](../guided-analysis/industry-use-cases.md)
    + [Häufig gestellte Fragen](../guided-analysis/faq.md)
@@ -311,7 +311,7 @@ ht-degree: 86%
    + Zielgruppen {#audiences}
       + [Überblick über Zielgruppen](../components/audiences/audiences-overview.md)
       + [Erstellen und Veröffentlichen von Zielgruppen](../components/audiences/publish.md)
-      + [Verwalten von Audiences](../components/audiences/manage.md)
+      + [Verwalten von Zielgruppen](../components/audiences/manage.md)
    + Dimensionen {#dimensions}
       + [Dimensionen – Übersicht](../components/dimensions/overview.md)
       + [Dimensionsvorschau](../components/dimensions/view-dimensions.md)
@@ -331,13 +331,13 @@ ht-degree: 86%
       + [Filter als Favoriten markieren](../components/filters/filters-favorite.md)
       + [Genehmigen von Filtern](../components/filters/filters-approve.md)
       + [Kopieren von Filtern](../components/filters/filters-copy.md)
-      + [Filter verwalten](../components/filters/manage-filters.md)
+      + [Verwalten von Filtern](../components/filters/manage-filters.md)
       + [Operatoren](../components/filters/operators.md)
-   + Berechnete Metriken  {#cja-calcmetrics}
+   + Berechnete Metriken {#cja-calcmetrics}
       + [Überblick](../components/calc-metrics/calc-metr-overview.md)
       + Workflow bei berechneten Metriken {#cm-workflow}
          + [Erstellen von berechneten Metriken](../components/calc-metrics/cm-workflow/cm-workflow.md)
-         + [Bilden berechneter Metriken](../components/calc-metrics/cm-workflow/cm-build-metrics.md)
+         + [Erstellen berechneter Metriken](../components/calc-metrics/cm-workflow/cm-build-metrics.md)
          + [Metriken suchen](../components/calc-metrics/cm-workflow/cm-finding.md)
          + [Metriktyp und Attribution](../components/calc-metrics/cm-workflow/m-metric-type-alloc.md)
          + [Erstellen einer Teilnahmemetrik](../components/calc-metrics/cm-workflow/participation-metric.md)
@@ -396,7 +396,7 @@ ht-degree: 86%
 
 + Reporting Activity Manager {#reporting-activity-manager}
    + [Überblick](../reporting-activity-manager/reporting-activity-overview.md)
-   + [Anzeigen von Berichtsaktivität](../reporting-activity-manager/reporting-activity.md)
+   + [Anzeigen der Berichtsaktivität](../reporting-activity-manager/reporting-activity.md)
    + [Abbrechen von Berichtsanfragen](../reporting-activity-manager/reporting-activity-cancel-requests.md)
 
 + Stitching {#stitching}

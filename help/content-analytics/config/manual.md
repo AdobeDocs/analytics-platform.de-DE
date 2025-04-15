@@ -1,6 +1,6 @@
 ---
-title: Manuelle Konfiguration von Content Analytics
-description: Manuelles Konfigurieren von Content Analytics
+title: Manuelle Konfiguration der Inhaltsanalyse
+description: Manuelles Konfigurieren der Inhaltsanalyse
 solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin
@@ -8,11 +8,11 @@ exl-id: 2b2d1cc2-36da-4960-ab31-0a398d131ab8
 source-git-commit: d4803af9b71ec245f6c4b20e92a4a4c99f235f00
 workflow-type: tm+mt
 source-wordcount: '430'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
 
-# Manuelle Konfiguration von Content Analytics
+# Manuelle Konfiguration der Inhaltsanalyse
 
 {{release-limited-testing}}
 

@@ -8,7 +8,7 @@ role: Admin
 source-git-commit: c94e97723a4ed30e675144e02196c93016b13235
 workflow-type: tm+mt
 source-wordcount: '1001'
-ht-degree: 73%
+ht-degree: 91%
 
 ---
 
@@ -28,15 +28,15 @@ ht-degree: 73%
 
 [!UICONTROL Persistenz] ist die Fähigkeit, dass ein bestimmter Dimensionswert sich über das Ereignis hinaus auf eine Metrik beziehen kann. Dafür wird eine Kombination aus Zuordnung und Gültigkeit verwendet.
 
-![Datenansichtsfenster mit Hervorhebung der Persistenzoptionen](../assets/persistence.png)
+![Datenansichtsfenster mit hervorgehobenen Persistenz-Optionen](../assets/persistence.png)
 
 * Mit **Zuordnung** können Sie festlegen, welcher Wert beibehalten wird, wenn mehrere Dimensionselemente gleichzeitig in einer Spalte beibehalten werden können.
 
   >[!NOTE]
   >
-  >Wenn Sie für [ Metrik in einem Bericht ein (nicht standardmäßiges](/help/data-views/component-settings/attribution.md)Attributionsmodell) festgelegt haben, ignoriert das Attributionsmodell die Zuordnung, die Sie für die Dimension für denselben Bericht festgelegt haben.
+  >Wenn Sie für eine Metrik in einem Bericht ein [nicht standardmäßiges Attributionsmodell](/help/data-views/component-settings/attribution.md) festgelegt haben, ignoriert das Attributionsmodell die Zuordnung, die Sie in der Dimension für denselben Bericht festgelegt haben.
   >
-  >Bei einem &quot;[ Tabellenexport“, ](/help/analysis-workspace/export/export-cloud.md) mehrere Dimensionen umfasst, behält Attribution jedoch die auf die einzelnen Dimensionen angewendeten Zuordnungsmodelle bei.
+  >Bei einem [vollständigen Tabellenexport](/help/analysis-workspace/export/export-cloud.md) mit mehreren Dimensionen behält die Attribution jedoch die auf die einzelnen Dimensionen angewendeten Zuordnungsmodelle bei.
 
 * Mit **Gültigkeit** können Sie festlegen, wie lange ein Dimensionselement über das Ereignis hinaus bestehen bleibt, für das es festgelegt ist.
 
@@ -73,9 +73,9 @@ Details zu den verfügbaren Zuordnungseinstellungen.
   | Dimension | Treffer 1 | Treffer 2 | Treffer 3 | Treffer 4 | Treffer 5 |
   | --- | --- | --- | --- | --- | --- |
   | Datensatzwerte | A | B | C |  | A |
-  | Zuordnung Alle | A  | A,B | A,B,C | A,B,C | A,B,C |
+  | Zuordnung Alle | A | A,B | A,B,C | A,B,C | A,B,C |
 
-* **[!UICONTROL Erster bekannter]** und **[!UICONTROL Letzter bekannter]**: (19. Januar 2022) Diese beiden Zuordnungsmodelle erfüllen die Anwendungsfälle der Dimensionen „Einstieg“ und „Ausstieg“. Sie wenden den ersten oder letzten beobachteten Wert für eine Dimension innerhalb eines bestimmten Persistenzbereichs (Sitzung, Person oder benutzerspezifischer Zeitraum mit Lookback) auf alle Ereignisse innerhalb des angegebenen Bereichs an. Beispiel:
+* **[!UICONTROL Erster bekannter]** und **[!UICONTROL Letzter bekannter]**: (19. Januar 2022) Diese beiden Zuordnungsmodelle erfüllen die Anwendungsfälle der Dimensionen Einstieg und Ausstieg. Sie wenden den ersten oder letzten beobachteten Wert für eine Dimension innerhalb eines bestimmten Persistenzbereichs (Sitzung, Person oder benutzerspezifischer Zeitraum mit Lookback) auf alle Ereignisse innerhalb des angegebenen Bereichs an. Beispiel:
 
   | Dimension | Treffer 1 | Treffer 2 | Treffer 3 | Treffer 4 | Treffer 5 |
   | --- | --- | --- | --- | --- | --- |
@@ -96,27 +96,27 @@ Details zu den verfügbaren Gültigkeitseinstellungen.
 * **Opportunity-Reporting** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}: Läuft am Ende des Reporting-Fensters ab.
 * **Berichtsfenster für Einkaufsgruppen** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}: Läuft am Ende des Berichtsfensters ab.
 * **Benutzerdefinierte Zeit**: Läuft nach einer festgelegten Zeitspanne ab (bis zu 90 Tage). Diese Ablaufoption ist nur für die Zuordnungsmodelle „Original“ und „Zuletzt verwendet“ verfügbar. Bei Verwendung der zeitbasierten Gültigkeitsdauer werden auch Werte vor dem Beginn des Reporting-Fensters (bis zu 90 Tage) berücksichtigt.
-* **Metrik**: Wenn diese Metrik in einem Ereignis angezeigt wird, läuft der Wert in der Dimension sofort ab. Sie können jede beliebige Metrik als Gültigkeitsende für diese Dimension verwenden. Diese Gültigkeitsoption ist nur für die Zuordnungseinstellungen „Original“ und „Zuletzt verwendet“ verfügbar.
+* **Metrik**: Wenn diese Metrik in einem Ereignis angezeigt wird, läuft der persistente Wert in der Dimension sofort ab. Sie können jede beliebige Metrik als Gültigkeitsende für diese Dimension verwenden. Diese Gültigkeitsoption ist nur für die Zuordnungseinstellungen „Original“ und „Zuletzt verwendet“ verfügbar.
 
 
 ## [!UICONTROL Binding-Dimension]
 
-Eine Dropdown-Liste, mit der Sie die Persistenz eines Dimensionswerts an Dimensionswerte in einer anderen Dimension binden können. Zu den gültigen Optionen gehören andere Dimensionen, die in der Datenansicht enthalten sind.
+Eine Dropdown-Liste, mit der Sie die Persistenz eines Dimensionswerts an Dimensionswerte in einer anderen Dimension binden können. Gültige Optionen umfassen andere Dimensionen, die in der Datenansicht enthalten sind.
 
-Siehe [Verwenden von Bindungsdimensionen und Metriken in Customer Journey Analytics](../../use-cases/data-views/binding-dimensions-metrics.md) für Beispiele zur effektiven Verwendung von Bindungsdimensionen.
+Beispiele für die effektive Verwendung von Bindungsdimensionen finden Sie in [Verwenden von Bindungsdimensionen und Metriken in Customer Journey Analytics](../../use-cases/data-views/binding-dimensions-metrics.md).
 
 
 >[!BEGINSHADEBOX]
 
-Siehe ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Binding-Dimensionen](https://video.tv.adobe.com/v/342694/?quality=12&learn=on){target="_blank"} für ein Demovideo.
+Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Bindungsdimensionen](https://video.tv.adobe.com/v/342694/?quality=12&learn=on){target="_blank"} finden Sie ein Demovideo.
 
 >[!ENDSHADEBOX]
 
 
 ## [!UICONTROL Binding-Metrik]
 
-Eine Dropdown-Liste, in der Sie eine Metrik auswählen können, die als Binding-Trigger fungiert. Zu den gültigen Optionen gehören Metriken, die in der Datenansicht enthalten sind.
+Eine Dropdown-Liste, in der Sie eine Metrik auswählen können, die als bindender Trigger fungiert. Zu den gültigen Optionen gehören die Metriken, die in der Datenansicht enthalten sind.
 
 Diese Einstellung wird nur angezeigt, wenn die Binding-Dimension im Objekt-Array niedriger ist als die Komponente. Wenn in einem Ereignis eine Bindungsmetrik vorhanden ist, werden Dimensionswerte von der Ereignisebene auf die untere Schemaebene der Bindungsdimension kopiert.
 
-Siehe das zweite Beispiel unter [Verwenden von Bindungsdimensionen und Metriken in Customer Journey Analytics](../../use-cases/data-views/binding-dimensions-metrics.md) für weitere Informationen zur effektiven Verwendung von Bindungsmetriken.
+Im zweiten Beispiel unter [Verwenden von Bindungsdimensionen und Metriken in Customer Journey Analytics](../../use-cases/data-views/binding-dimensions-metrics.md) finden Sie weitere Informationen zur effektiven Verwendung von Bindungsmetriken.

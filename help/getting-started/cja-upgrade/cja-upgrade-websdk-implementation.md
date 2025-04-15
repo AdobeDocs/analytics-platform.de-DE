@@ -1,6 +1,6 @@
 ---
-title: Weitere Informationen zu Web SDK-Implementierungsoptionen beim Upgrade auf Customer Journey Analytics
-description: Erfahren Sie mehr über die Implementierungsoptionen von Web SDK beim Upgrade auf Customer Journey Analytics
+title: Weitere Informationen zu Optionen für die Web-SDK-Implementierung beim Upgrade auf Customer Journey Analytics
+description: Erfahren Sie mehr über die Optionen für die Web-SDK-Implementierung beim Upgrade auf Customer Journey Analytics
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
@@ -8,18 +8,18 @@ exl-id: 94a2bf2f-ad84-4f35-af8f-b8a5d9e5c607
 source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
 workflow-type: tm+mt
 source-wordcount: '350'
-ht-degree: 58%
+ht-degree: 100%
 
 ---
 
-# Weitere Informationen zu Web SDK-Implementierungsoptionen beim Upgrade auf Customer Journey Analytics {#web-sdk-implementation-options}
+# Weitere Informationen zu Optionen für die Web-SDK-Implementierung beim Upgrade auf Customer Journey Analytics {#web-sdk-implementation-options}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-websdk-js"
->title="Web SDK JavaScript-Bibliothek (alloy.js)"
->abstract="Fügen Sie die Web SDK-Bibliothek (alloy.js) auf jeder Seite Ihrer Site ein."
+>title="Web-SDK-JavaScript-Bibliothek (alloy.js)"
+>abstract="Fügen Sie die Web-SDK-Bibliothek (alloy.js) auf jeder Seite Ihrer Website ein."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -28,7 +28,7 @@ ht-degree: 58%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-websdk-tags"
 >title="Web SDK-Tag-Erweiterung"
->abstract="(Empfohlen) Wenn Sie noch keine Tags verwenden, installieren Sie den Tag-Loader auf Ihrer Site. Wenn Sie bereits Tags verwenden, können Sie die Web SDK-Erweiterung zu Ihrer Tag-Eigenschaft hinzufügen. Diese Option umfasst Implementierungen, bei denen Tags in der Datenerfassung von Adobe Experience Platform und in Tag-Management-Systemen von Drittanbietern verwendet werden."
+>abstract="(Empfohlen) Wenn Sie noch keine Tags verwenden, installieren Sie den Tag Loader auf Ihrer Website. Wenn Sie bereits Tags verwenden, können Sie die Web-SDK-Erweiterung zu Ihrer Tag-Eigenschaft hinzufügen. Diese Option umfasst Implementierungen, bei denen Tags in der Datenerfassung von Adobe Experience Platform und in Tag-Management-Systemen von Drittanbietern verwendet werden."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -61,14 +61,14 @@ ht-degree: 58%
 
 {{upgrade-note}}
 
-Der empfohlene Upgrade-Prozess von Adobe Analytics auf Customer Journey Analytics ist eine neue Implementierung der Experience Platform Web SDK, der bevorzugten Datenerfassungsmethode für Customer Journey Analytics.
+Der empfohlene Prozess für das Upgrade von Adobe Analytics auf Customer Journey Analytics ist eine neue Implementierung des Experience Platform-Web-SDK, der bevorzugten Datenerfassungsmethode für Customer Journey Analytics.
 
-Es gibt drei unterstützte Möglichkeiten, Adobe Experience Platform Web SDK zu verwenden:
+Es werden drei Möglichkeiten unterstützte, um das Adobe Experience Platform-Web-SDK zu verwenden:
 
-* [Web-SDK-Tag](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/install/extension)Erweiterung: Adobe empfiehlt die Verwendung dieser Methode. Installieren Sie einen Tag-Loader auf Ihrer Site und konfigurieren Sie dann Ihre Implementierung über die Datenerfassungs-Benutzeroberfläche von Adobe Experience Platform.
+* [Web-SDK-Tag-Erweiterung](https://experienceleague.adobe.com/de/docs/experience-platform/web-sdk/install/extension): Adobe empfiehlt, diese Methode zu verwenden. Installieren Sie einen Tag Loader auf Ihrer Website und konfigurieren Sie dann Ihre Implementierung über die Datenerfassungs-Benutzeroberfläche von Adobe Experience Platform.
 
-* [Web SDK JavaScript-Bibliothek](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/install/library): Verweisen Sie auf eine CDN-gehostete Bibliotheksdatei oder hosten Sie die Bibliotheksdatei mithilfe Ihrer eigenen Infrastruktur. Aufrufe an die -Bibliothek im Code auf Ihrer Site.
+* [Web-SDK-JavaScript-Bibliothek](https://experienceleague.adobe.com/de/docs/experience-platform/web-sdk/install/library): Verweisen Sie auf eine vom CDN gehostete Bibliotheksdatei oder hosten Sie die Bibliotheksdatei mithilfe Ihrer eigenen Infrastruktur. Rufen Sie die Bibliothek im Code auf Ihrer Site auf.
 
-* [NPM](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/install/npm): Installieren Sie Web SDK mithilfe des NPM-Package Managers auf Ihrer Site.
+* [NPM](https://experienceleague.adobe.com/de/docs/experience-platform/web-sdk/install/npm): Installieren Sie das Web-SDK mithilfe des NPM-Package Managers auf Ihrer Website.
 
-SDK Weitere Informationen finden Sie unter [Übersicht über die Installation von Web ](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/install/overview) im Experience Platform Web SDK-Handbuch.
+Weitere Informationen finden Sie unter [Überblick über die Web-SDK-Installation ](https://experienceleague.adobe.com/de/docs/experience-platform/web-sdk/install/overview) im Web SDK-Handbuch in Experience Platform.
