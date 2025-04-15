@@ -4,10 +4,10 @@ description: Verwenden und Interpretieren des Panels „Medien-Zielgruppendurchs
 feature: Panels
 role: User, Admin
 exl-id: c55b5534-a9a6-47f1-8b43-c8c0b8686c53
-source-git-commit: 0cd9cd508d474df3dff176bca4596d0379ac86b4
+source-git-commit: 0101986bb86c49776a044f754d912dc1bcb9422c
 workflow-type: tm+mt
 source-wordcount: '1677'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 100%
 >[!CONTEXTUALHELP]
 >id="workspace_mediaaverageminuteaudience_panel"
 >title="Medien-Zielgruppendurchschnitt pro Minute"
->abstract="Zeigt die Leistung bestimmter Medieninhalte oder die Leistung über einen benutzerdefinierten Zeitraum an. Geben Sie die Reporting-Dimension an und filtern Sie optional die Inhalte."
+>abstract="Zeigt die Leistung bestimmter Medieninhalte oder die Leistung über einen benutzerdefinierten Zeitraum an. Geben Sie die Reporting-Dimension und optional den Segmentinhalt an."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -82,7 +82,7 @@ Verwenden Sie die in diesem Abschnitt beschriebenen Eingabeeinstellungen, um das
    | Einstellung | Beschreibung |
    |---------|------------|
    | **Datumsbereich des Panels** | Der Datumsbereich des Panels ist standardmäßig [!UICONTROL **Dieser Monat**]. Sie können ihn so verändern, dass Sie einen einzelnen Tag oder viele Monate auf einmal betrachten können. <br></br> Diese Visualisierung ist auf 1.440 Datenzeilen beschränkt (z. B. 24 Stunden bei einer Granularität auf Minutenebene). Wenn eine Kombination aus Datumsbereich und Granularität mehr als 1.440 Zeilen zur Folge hat, wird die Granularität automatisch aktualisiert, um den vollständigen Datumsbereich anzuzeigen. |
-   | [!UICONTROL **Segment (oder eine beliebige andere Komponente) hier ablegen**] | Wie andere Panels filtert diese Einstellung Ihre Auswahl anhand von Segmenten, die Sie erstellt haben. Diese Einstellung ist eine hervorragende Möglichkeit, sich bestimmte Plattformen, Livestreams oder andere gängige Mediensegmente anzusehen. |
+   | [!UICONTROL **Segment (oder eine beliebige andere Komponente) hier ablegen**] | Wie andere Bedienfelder segmentiert diese Einstellung Ihre Auswahl basierend auf Segmenten, die Sie erstellt haben. Diese Einstellung ist eine hervorragende Möglichkeit, sich bestimmte Plattformen, Livestreams oder andere gängige Mediensegmente anzusehen. |
    | [!UICONTROL **Metrik berechnen für**] | Wählen Sie aus, ob der Zielgruppendurchschnitt pro Minute für [**[!UICONTROL Bestimmter Inhalt]**](#specific-content) angezeigt werden soll. Alternativ können Sie den Zielgruppendurchschnitt pro Minute für einen [**[!UICONTROL benutzerdefinierten Zeitraum]**](#custom-time-period) anzeigen.<br/><br/>Wählen Sie [!UICONTROL **Benutzerdefinierter Zeitraum**] aus: <ul><li>wenn die Dauer nicht verfügbar ist oder </li><li>wenn Sie den Zielgruppendurchschnitt pro Minute für eine Zeitreihe mit mehreren Inhalten anzeigen möchten oder</li><li>für Inhalte, denen keine bestimmte Dauer zugewiesen ist, (z. B. während eines Livestreams oder Ereignisses)</li></ul></li></li></ul> <p>Diese Einstellung ändert den Workflow und die Berichtsausgabe.</p> |
 
 1. Fahren Sie abhängig von der Option, die Sie in der Dropdown-Liste [!UICONTROL **Metrik berechnen für**] auswählen, mit [Bestimmter Inhalt](#specific-content) oder [Benutzerdefinierter Zeitraum](#custom-time-period) fort.
