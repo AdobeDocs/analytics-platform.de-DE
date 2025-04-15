@@ -4,10 +4,10 @@ title: Herunterladen von Customer Journey Analytics-Daten
 feature: Curate and Share
 exl-id: 1d8384ca-888c-482c-ab3e-d1b579217560
 role: User
-source-git-commit: cd4722cc2eb95d7d5e4000361c8f96a30a3589e9
-workflow-type: ht
+source-git-commit: 0101986bb86c49776a044f754d912dc1bcb9422c
+workflow-type: tm+mt
 source-wordcount: '1194'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -80,7 +80,7 @@ Wenn Sie mehr als die 400 sichtbaren Zeilen mit Daten in einer Tabelle analysier
 
 >[!TIP]
 >
-> Wenn Ihre Dimension 50.000 Elemente überschreitet, laden Sie die Datei mit unterschiedlichen Sortierkriterien herunter oder wenden Sie einen Filter an. Sortieren Sie z. B. absteigend nach Besuchen in einem Download und dann aufsteigend nach Besuchen in einem zweiten Download. Dieser Tipp hilft Ihnen beim Abrufen von längeren Elementen.
+> Wenn Ihre Dimension 50.000 Elemente überschreitet, laden Sie die Datei mit unterschiedlichen Sortiermetriken herunter oder wenden Sie ein Segment an. Sortieren Sie z. B. absteigend nach Besuchen in einem Download und dann aufsteigend nach Besuchen in einem zweiten Download. Dieser Tipp hilft Ihnen beim Abrufen von längeren Elementen.
 
 Während eines Downloads können Sie mehrere Aufgaben im Projekt ausführen und sogar zu einem neuen Workspace-Projekt auf derselben Registerkarte navigieren. Der Download wird angehalten, wenn Sie eine neue Browser-Registerkarte öffnen. Der Download wird abgebrochen, wenn Sie Workspace vollständig verlassen oder die Browser-Registerkarte schließen.
 
@@ -90,7 +90,7 @@ Während eines Downloads können Sie mehrere Aufgaben im Projekt ausführen und 
 
 Die Eigenschaften der Tabelle werden wie folgt auf die heruntergeladene Datei angewendet:
 
-* Alle Bedienfeldfilter werden als Filter angewendet.
+* Alle Bedienfeldsegmente werden als Filter angewendet.
 * Aufschlüsselungen **oberhalb** der ausgewählten Dimension in der Tabelle werden als Filter über jeder einzelnen Spalte angezeigt.
 * Aufschlüsselungen **unterhalb** der ausgewählten Dimension in der Tabelle werden entfernt.
 

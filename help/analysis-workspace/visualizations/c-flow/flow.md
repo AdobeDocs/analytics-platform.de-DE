@@ -4,10 +4,10 @@ title: Flussübersicht
 feature: Visualizations
 exl-id: 2ef325d9-1d82-46c9-86e3-6b2332548823
 role: User
-source-git-commit: 0cd9cd508d474df3dff176bca4596d0379ac86b4
+source-git-commit: 0101986bb86c49776a044f754d912dc1bcb9422c
 workflow-type: tm+mt
 source-wordcount: '326'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -41,7 +41,7 @@ Mit der Visualisierung können Sie:
 
 * Die Customer Journey durch Ihre Website oder Ihr Programm visualisieren.
 * Analysieren, wohin Kundinnen und Kunden vor und nach festgelegten Checkpoints navigieren, wie zum Beispiel Einstieg, eine bestimmte Dimension oder Ausstieg.
-* Filter erstellen, indem Sie einen bestimmten Punkt in einem ausgewählten Pfad angeben.
+* Erstellen Sie Segmente, indem Sie einen bestimmten Punkt in einem ausgewählten Pfad angeben.
 
 
 >[!BEGINSHADEBOX]

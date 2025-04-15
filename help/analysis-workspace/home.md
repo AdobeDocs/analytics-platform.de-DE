@@ -6,10 +6,10 @@ feature: Workspace Basics
 exl-id: 9075518e-54fe-49a6-9601-aa9468187b8f
 solution: Customer Journey Analytics
 role: User
-source-git-commit: 261d4b5e18531f7971a894bc4cd571b764c625f1
+source-git-commit: ab78583eb36d6158630724fbab9eb8148bcdbe23
 workflow-type: tm+mt
 source-wordcount: '1473'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -33,7 +33,7 @@ Das folgende Bild und die zugehörige Tabelle erläutern die Hauptelemente der B
 |:---------:|----------|
 | A  | Enthält den Projektnamen, eine Menüstruktur für den Zugriff auf die Funktionen, eine Schaltfläche ![Zurück-Schaltfläche](/help/assets/icons/ChevronLeft.svg) zum Zurückkehren zur Projektliste und eine Schaltfläche **[!UICONTROL Freigabe]** zum [Freigeben Ihres Workspace-Projekts](/help/analysis-workspace/curate-share/share-projects.md). <br/>Sie können jederzeit den Namen Ihres Projekts (z. B. „Neues Projekt“) auswählen, um den Namen zu ändern. <br/>Wählen Sie ![Favorisierung aufheben](/help/assets/icons/StarOutline.svg) aus, um Ihr Projekt als bevorzugtes Projekt ![Favorisieren](/help/assets/icons/Star.svg) zu markieren. |
 | B | **Schaltflächenbedienfeld:** Enthält Schaltflächen für den Zugriff auf die wichtigsten [Funktionen](#features) von Analysis Workspace:<ul><li>![WebSeite](/help/assets/icons/WebPage.svg) [[!UICONTROL Bedienfelder]](/help/analysis-workspace/c-panels/panels.md)</li><li>![Geführte Analyse](/help/assets/icons/GuidedAnalysis.svg) [[!UICONTROL Geführte Analyse]](/help/guided-analysis/overview.md)</li><li>![VertikaleGrafikbalken](/help/assets/icons/GraphBarVertical.svg) [[!UICONTROL Visualisierungen]](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md)</li><li>![Kuratieren](/help/assets/icons/Curate.svg) [[!UICONTROL Komponenten]](/help/components/overview.md)</li><li>![Ansichtsliste](/help/assets/icons/ViewList.svg) [[!UICONTROL Inhaltsverzeichnis]](/help/analysis-workspace/build-workspace-project/project-table-of-contents.md)</li><li>![Lesezeichen](/help/assets/icons/Bookmark.svg) [[!UICONTROL Datenwörterbuch]](/help/components/data-dictionary/data-dictionary-overview.md)</li></ul> |
-| C  | **Linkes Bedienfeld:** Dieser Bereich enthält einzelne Bedienfelder, Visualisierungen, Komponenten oder Listen. Der Inhalt hängt von der im Schaltflächenbedienfeld ausgewählten Schaltfläche ab. |
+| C | **Linkes Bedienfeld:** Dieser Bereich enthält einzelne Bedienfelder, Visualisierungen, Komponenten oder Listen. Der Inhalt hängt von der im Schaltflächenbedienfeld ausgewählten Schaltfläche ab. |
 | D | **Arbeitsfläche:** Der Hauptbereich, in den Sie Inhalte aus dem linken Bedienfeld ziehen, um Ihr Projekt zu erstellen. Das Projekt wird dynamisch aktualisiert, wenn Sie Bedienfelder hinzufügen, Visualisierungen zu Bedienfeldern hinzufügen und Komponenten zu Visualisierungen hinzufügen. Sie können mehrere Bedienfelder erstellen und in jedem Bedienfeld können Sie mehrere Visualisierungen erstellen.<br/>Jedes Bedienfeld basiert auf einer ausgewählten Datenansicht. Die ausgewählte Datenansicht bestimmt verfügbare Komponenten wie Metriken und Dimensionen. Weitere Informationen finden Sie unter [Bedienfelder – Datenansicht](/help/analysis-workspace/c-panels/panels.md#data-view). |
 
 ## Funktionen
@@ -106,7 +106,7 @@ Eine Übersicht über die verfügbaren Menüs finden Sie in den nachfolgenden Ta
 
 | **[!UICONTROL Komponenten]** | Mac-Tastaturbefehl | Windows-Tastaturbefehl | Beschreibung |
 |---|---|---|---|
-| **[!UICONTROL Filter erstellen…]** | **[!UICONTROL *Umschalt+Befehlstaste+E *]** | **[!UICONTROL *Umschalt+Strg+E *]** | Erstellen eines neuen [Filters](/help/components/filters/create-filters.md). |
+| **[!UICONTROL Segment erstellen…]** | **[!UICONTROL *Umschalt+Befehlstaste+E *]** | **[!UICONTROL *Umschalt+Strg+E *]** | Erstellen Sie ein neues [Segment](/help/components/filters/create-filters.md). |
 | **[!UICONTROL Metrik erstellen…]** | **[!UICONTROL *Umschalt+Befehlstaste+C *]** | **[!UICONTROL *Umschalt+Strg+C *]** | Erstellen einer neuen [berechneten Metrik](/help/components/calc-metrics/calc-metr-overview.md). |
 | **[!UICONTROL Datumsbereich erstellen]** | **[!UICONTROL *Umschalt+Befehlstaste+D *]** | **[!UICONTROL *Umschalt+Strg+D *]** | Erstellen eines neuen [Datumsbereichs](/help/components/date-ranges/overview.md). |
 | **[!UICONTROL Anmerkung erstellen...]** | **[!UICONTROL *Umschalt+Befehlstaste+O *]** | **[!UICONTROL *Umschalt+Strg+O *]** | Erstellen einer neuen [Anmerkung](/help/components/annotations/overview.md) |

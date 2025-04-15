@@ -4,7 +4,7 @@ title: Freigeben - Übersicht
 feature: Curate and Share
 exl-id: d7f92e59-18e9-43cd-8121-3c970434aaee
 role: User
-source-git-commit: df0fd0af8a22c84705c3dea11065132359dd80ff
+source-git-commit: 0101986bb86c49776a044f754d912dc1bcb9422c
 workflow-type: tm+mt
 source-wordcount: '171'
 ht-degree: 56%
@@ -23,4 +23,4 @@ Sie können Projekte als PDF- oder CSV-Dateien für Empfängerinnen und Empfäng
 | **[!UICONTROL Für alle freigeben]** | Gewähren Sie Personen, die keinen Zugriff auf Customer Journey Analytics haben, schreibgeschützten Zugriff auf Analysis Workspace-Projekte. [Weitere Informationen](/help/analysis-workspace/curate-share/share-projects.md) |
 | **[!UICONTROL Datei exportieren]** | Senden Sie ein Projekt als CSV- oder PDF-Datei sofort an bestimmte Empfänger und Empfängerinnen. [Weitere Informationen](/help/analysis-workspace/export/t-schedule-report.md) |
 | **[!UICONTROL Dateiexport planen]** | Senden Sie ein Projekt als CSV- oder PDF-Datei planmäßig an bestimmte Empfänger. [Weitere Infos](/help/analysis-workspace/export/t-schedule-report.md) |
-| **[!UICONTROL Projektdaten kuratieren]** | Beschränken Sie die in einem Projekt verfügbaren Komponenten (Dimensionen, Metriken, Filter, Datumsbereiche). [Weitere Informationen](/help/analysis-workspace/curate-share/curate.md) |
+| **[!UICONTROL Projektdaten kuratieren]** | Beschränken Sie die in einem Projekt verfügbaren Komponenten (Dimensionen, Metriken, Segmente, Datumsbereiche). [Weitere Informationen](/help/analysis-workspace/curate-share/curate.md)  |

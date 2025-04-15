@@ -1,8 +1,8 @@
 ---
-source-git-commit: 3f84fd36c4859a4325774be2a6cb8793cda2295e
+source-git-commit: d91a00036cbbfa21c7d0a772ccbefb2ab37a4c59
 workflow-type: tm+mt
-source-wordcount: '3506'
-ht-degree: 33%
+source-wordcount: '3796'
+ht-degree: 30%
 
 ---
 # Snippets
@@ -41,10 +41,10 @@ ht-degree: 33%
 
 | Option | Funktion |
 |---------|----------|
-| **[!UICONTROL Empfohlen]** | Sortieren Sie Komponenten für jeden Typ (Dimension, Metrik, Filter und Datumsbereich) basierend auf ihrer Empfehlung. Komponenten, die am häufigsten und zuletzt von Ihnen oder anderen in Ihrer Organisation verwendet werden, werden weiter oben in jeder Liste angezeigt. |
-| **[!UICONTROL Zuletzt geändert]** | Sortieren Sie Komponenten für jeden Typ (Dimension, Metrik, Filter und Datumsbereich) basierend auf ihrem Datum der letzten Änderung. Komponenten, die zuletzt geändert wurden, werden höher in jeder Liste angezeigt. |
-| **[!UICONTROL Alphabetisch]** | Sortieren Sie die Komponenten für jeden Typ (Dimension, Metrik, Filter und Datumsbereich) in aufsteigender alphabetischer Reihenfolge. |
-| **[!UICONTROL Kategorisch]** | Sortieren Sie Komponenten für jeden Typ (Dimension, Metrik, Filter und Datumsbereich) basierend auf ihrer Kategorie. Beispielsweise kuratierte versus nicht kuratierte Datenansichtskomponenten. |
+| **[!UICONTROL Empfohlen]** | Sortieren Sie Komponenten für jeden Typ (Dimension, Metrik, Segment und Datumsbereich) basierend auf ihrer Empfehlung. Komponenten, die am häufigsten und zuletzt von Ihnen oder anderen in Ihrer Organisation verwendet werden, werden weiter oben in jeder Liste angezeigt. |
+| **[!UICONTROL Zuletzt geändert]** | Sortieren Sie Komponenten für jeden Typ (Dimension, Metrik, Segment und Datumsbereich) basierend auf ihrem letzten Änderungsdatum. Komponenten, die zuletzt geändert wurden, werden höher in jeder Liste angezeigt. |
+| **[!UICONTROL Alphabetisch]** | Sortieren Sie die Komponenten für jeden Typ (Dimension, Metrik, Segment und Datumsbereich) in aufsteigender alphabetischer Reihenfolge. |
+| **[!UICONTROL Kategorisch]** | Sortieren Sie Komponenten für jeden Typ (Dimension, Metrik, Segment und Datumsbereich) basierend auf ihrer Kategorie. Beispielsweise kuratierte versus nicht kuratierte Datenansichtskomponenten. |
 
 {style="table-layout:auto"}
 
@@ -57,7 +57,7 @@ Zu den verfügbaren Zeitvergleichsoptionen gehören der vorherige Zeitraum, 13 W
 
 ## Videodemonstration Adobe Analytics {#videoaa}
 
-*In diesem Video werden die Funktionen von mit Adobe Analytics veranschaulicht. Die Funktion ist jedoch in ähnlicher Weise in Customer Journey Analytics verfügbar. Achten Sie auf die terminologischen Unterschiede zwischen Adobe Analytics und Customer Journey Analytics (z. B. Segmente und Filter oder Besuche und Sitzungen).*
+*In diesem Video werden die Funktionen von mit Adobe Analytics veranschaulicht. Die Funktion ist jedoch in ähnlicher Weise in Customer Journey Analytics verfügbar. Achten Sie auf die terminologischen Unterschiede zwischen Adobe Analytics und Customer Journey Analytics (z. B. „Besuche“ und „Sitzungen„)*
 
 
 ## Bedienfeld „Filter“ {#filterspanel}
@@ -138,13 +138,13 @@ Ein Lookback-Fenster ist der Zeitraum, der für eine Konversion rückblickend be
 * **30 Tage**: Sieht bis zu 30 Tage nach dem Zeitpunkt der Konvertierung zurück.
 * **60 Tage**: Sieht bis zu 60 Tage nach dem Zeitpunkt der Konvertierung zurück.
 * **90 Tage**: Sieht bis zu 90 Tage nach dem Zeitpunkt der Konvertierung zurück.
-* **13 Monate** [!BADGE B2B edition]{type=Informative}
+* **13 Monate** [!BADGE B2B edition]{type=Informative}: Schaut bis zu 13 Monate nach der Konvertierung zurück.
 * **Sitzung**: Schaut zurück auf den Anfang der Sitzung, in der eine Konversion stattgefunden hat. Sitzungs-Lookback-Fenster berücksichtigen das [Sitzungs-Timeout](/help/data-views/create-dataview.md#session-settings) in einer Datenansicht.
 * **Person (Reporting-Fenster)**: Zeigt alle Besuche bis zum ersten des Monats des aktuellen Datumsbereichs an. Wenn der Datumsbereich des Berichts beispielsweise der 15. September bis zum 30. September ist, umfasst der Datumsbereich des Personen-Lookback den 1. September bis zum 30. September. Wenn Sie dieses Lookback-Fenster verwenden, können Sie gelegentlich sehen, dass Dimensionselemente Datumsangaben außerhalb Ihres Reporting-Fensters zugeordnet werden.
-* **Globales Konto (Reporting-Fenster)** [!BADGE B2B edition]{type=Informative}
-* **Konten (Reporting-Fenster)** [!BADGE B2B edition]{type=Informative}
-* **Opportunity (Reporting-Fenster)** [!BADGE B2B edition]{type=Informative}
-* **Einkaufsgruppe (Reporting-Fenster)** [!BADGE B2B edition]{type=Informative}
+* **Globales Konto (Reporting-Fenster)** [!BADGE B2B edition]{type=Informative}: Zeigt alle globalen Konten bis zum ersten des Monats des aktuellen Datumsbereichs zurück an. Wenn der Datumsbereich des Berichts beispielsweise der 15. September bis zum 30. September ist, umfasst der Datumsbereich für die globale Kontosuche den 1. September bis zum 30. September. Wenn Sie dieses Lookback-Fenster verwenden, können Sie gelegentlich sehen, dass Dimensionselemente Datumsangaben außerhalb Ihres Reporting-Fensters zugeordnet werden.
+* **Konten (Reporting-Fenster)** [!BADGE B2B edition]{type=Informative}: Zeigt alle Konten bis zum ersten des Monats des aktuellen Datumsbereichs zurück an. Wenn der Datumsbereich des Berichts beispielsweise der 15. September bis zum 30. September ist, umfasst der Datumsbereich des Konto-Lookback 1. September bis zum 30. September. Wenn Sie dieses Lookback-Fenster verwenden, können Sie gelegentlich sehen, dass Dimensionselemente Datumsangaben außerhalb Ihres Reporting-Fensters zugeordnet werden.
+* **Opportunity (Reporting-Fenster)** [!BADGE B2B edition]{type=Informative}: Zeigt alle Opportunitys bis zum ersten des Monats des aktuellen Datumsbereichs an. Wenn der Datumsbereich des Berichts beispielsweise der 15. September bis zum 30. September ist, umfasst der Datumsbereich der Opportunity-Lookback den 1. September bis zum 30. September. Wenn Sie dieses Lookback-Fenster verwenden, können Sie gelegentlich sehen, dass Dimensionselemente Datumsangaben außerhalb Ihres Reporting-Fensters zugeordnet werden.
+* **Einkaufsgruppe (Reporting-Fenster)** [!BADGE B2B edition]{type=Informative}: Zeigt alle Einkaufsgruppen bis zum ersten des Monats des aktuellen Datumsbereichs an. Wenn der Datumsbereich des Berichts beispielsweise der 15. September bis zum 30. September ist, umfasst der Datumsbereich für die Rückschau der Einkaufsgruppe den 1. September bis zum 30. September. Wenn Sie dieses Lookback-Fenster verwenden, können Sie gelegentlich sehen, dass Dimensionselemente Datumsangaben außerhalb Ihres Reporting-Fensters zugeordnet werden.
 * **Benutzerdefinierte Zeit:** Ermöglicht es Ihnen, ein benutzerdefiniertes Lookback-Fenster festzulegen, das anzeigt, wann eine Konversion stattgefunden hat. Sie können die Anzahl der Minuten, Stunden, Tage, Wochen, Monate oder Quartale angeben. Wenn beispielsweise am 20. Februar eine Konversion stattgefunden hat, würden in einem Lookback-Fenster von fünf Tagen alle Dimensions-Touchpoints vom 15. bis 20. Februar im Attributionsmodell ausgewertet.
 
 ## Attributionsbeispiel {#attribution-example}
@@ -235,7 +235,7 @@ Verwenden Sie die folgenden Informationen, um die Visualisierung auszuwählen, d
 
 >[!AVAILABILITY]
 >
->Die in diesem Artikel beschriebene Funktion und alle anderen Artikel oder Funktionen, die mit [!BADGE B2B edition gekennzeichnet sind]{type=Informative}<br/>Außerdem: [!BADGE B2B edition]{type=Informative}[!BADGE B2B edition]{type=Informative}<br/>Dieser Hinweis wird entfernt, wenn die Funktion allgemein verfügbar ist. Informationen zum Customer Journey Analytics-Veröffentlichungsprozess finden Sie unter [Customer Journey Analytics-Funktionsversionen](/help/release-notes/releases.md).
+>Die in diesem Artikel beschriebene Funktion und alle anderen Artikel oder Funktionen, die mit [!BADGE B2B edition} gekennzeichnet ]{type=Informative}.  befindet sich in der eingeschränkten Testphase der Version und ist möglicherweise noch nicht in Ihrer Umgebung verfügbar. <br/>Außerdem können sich die [!BADGE B2B edition]{type=Informative}-Funktionen und die Dokumentation der [!BADGE B2B edition]{type=Informative}-Funktionen ändern, sodass daraus keine rechtlichen Verpflichtungen abgeleitet werden können.<br/>Dieser Hinweis wird entfernt, wenn die Funktion allgemein verfügbar ist. Informationen zum Customer Journey Analytics-Veröffentlichungsprozess finden Sie unter [Customer Journey Analytics-Funktionsversionen](/help/release-notes/releases.md).
 >
 
 
@@ -243,4 +243,4 @@ Verwenden Sie die folgenden Informationen, um die Visualisierung auszuwählen, d
 
 >[!INFO]
 >
-In dieser Dokumentation sind bestimmte B2B-Artikel oder -Funktionen, die nur mit Customer Journey Analytics B2B edition verfügbar sind, mit [!BADGE B2B edition gekennzeichnet]{type=Informative}
+>In dieser Dokumentation sind bestimmte B2B-Artikel oder -Funktionen, die nur mit Customer Journey Analytics B2B edition verfügbar sind, mit [!BADGE B2B edition]{type=Informative} gekennzeichnet.

@@ -1,13 +1,13 @@
 ---
-description: Bei der Venn-Visualisierung können Sie bis zu drei Filter (aus Komponenten) und eine Metrik durch Drag-and-Drop einfügen, um ein Venn-Diagramm zu erstellen.
+description: Bei der Venn-Visualisierung können Sie bis zu 3 Segmente (aus Komponenten) und eine Metrik einfügen, um ein Venn-Diagramm zu erstellen.
 title: Venn
 feature: Visualizations
 exl-id: a0162164-a0cf-45b9-99b6-2a115e9a4e57
 role: User
-source-git-commit: 4bf8c616965718426efe880865acb0e5054b6a31
-workflow-type: ht
+source-git-commit: 0101986bb86c49776a044f754d912dc1bcb9422c
+workflow-type: tm+mt
 source-wordcount: '167'
-ht-degree: 100%
+ht-degree: 73%
 
 ---
 
@@ -30,11 +30,11 @@ _In diesem Artikel wird die Visualisierung Venn in_ ![CustomerJourneyAnalytics](
 >[!ENDSHADEBOX]
 
 
-Bei der ![Typ](/help/assets/icons/TwoDots.svg) Visualisierung **[!UICONTROL Venn]** können Sie bis zu drei Filter und eine Metrik (aus dem Panel Komponenten) einfügen, um ein Venn-Diagramm zu erstellen.
+Bei der Visualisierung ![Typ](/help/assets/icons/TwoDots.svg) **[!UICONTROL Venn]** können Sie bis zu drei Segmente und eine Metrik (aus dem Bedienfeld „Komponenten„) einfügen, um ein Venn-Diagramm zu erstellen.
 
-![Visualisierung Venn mit drei Filtern](assets/venn.png)
+![Venn-Visualisierung, die drei Segmente enthält.](assets/venn.png)
 
-Sie können den Mauszeiger über die Filter bewegen, um mehr Details zu Prozentzahlen und vieles mehr anzuzeigen.
+Sie können den Mauszeiger über die Segmente bewegen, um mehr insight in Prozentzahlen und mehr zu erhalten.
 
 Um eine [!UICONTROL Freiformtabelle] aus der Visualisierung [!UICONTROL Venn] zu generieren, wählen Sie das farbige Symbol ![StatusOrange](/help/assets/icons/StatusOrange.svg) neben dem Header **[!UICONTROL Venn]** und dann die Option **[!UICONTROL Datenquelle zeigen]** aus. Es wird eine Freiformtabelle **[!UICONTROL Venn-Daten]** mit den Daten angezeigt, die zum Erstellen der Visualisierung [!UICONTROL Venn] verwendet wurden.
 

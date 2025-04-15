@@ -1,13 +1,13 @@
 ---
-description: Die Ringdiagramm-Visualisierung zeigt Daten als Teile oder Filter eines Ganzen an.
+description: Die Ringdiagramm-Visualisierung zeigt Daten als Teile oder Segmente eines Ganzen an.
 title: Ringdiagramm
 feature: Visualizations
 exl-id: 97b846a6-3a38-48c7-b686-b792bb882fdb
 role: User
-source-git-commit: 4bf8c616965718426efe880865acb0e5054b6a31
-workflow-type: ht
+source-git-commit: 0101986bb86c49776a044f754d912dc1bcb9422c
+workflow-type: tm+mt
 source-wordcount: '122'
-ht-degree: 100%
+ht-degree: 66%
 
 ---
 
@@ -30,9 +30,9 @@ _In diesem Artikel wird die Visualisierung Ringdiagramm in_ ![CustomerJourneyAna
 >[!ENDSHADEBOX]
 
 
-Ähnlich einem Tortendiagramm zeigt die Visualisierung ![GraphDonut](/help/assets/icons/GraphDonut.svg) **[!UICONTROL Ringdiagramm]** die Daten als Teile oder Filter eines Ganzen an. Eine Visualisierung vom Typ „Ringdiagramm“ kann für den Vergleich der prozentualen Anteile eines Ganzen verwendet werden, typischerweise bei einer geringen Anzahl an Werten.
+Ähnlich einem Tortendiagramm zeigt die Visualisierung ![GraphDonut](/help/assets/icons/GraphDonut.svg) **[!UICONTROL Donut]** die Daten als Teile oder Segmente eines Ganzen. Eine Visualisierung vom Typ „Ringdiagramm“ kann für den Vergleich der prozentualen Anteile eines Ganzen verwendet werden, typischerweise bei einer geringen Anzahl an Werten.
 
-![Ein Ringdiagramm mit Daten als Teile oder Filter eines Ganzen.](assets/donut.png)
+![Ein Ringdiagramm, das Daten als Teile oder Segmente eines Ganzen anzeigt.](assets/donut.png)
 
 
 >[!BEGINSHADEBOX]

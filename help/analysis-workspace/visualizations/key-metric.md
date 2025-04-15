@@ -4,10 +4,10 @@ title: Zusammenfassung einer Schlüsselmetrik
 feature: Visualizations
 exl-id: ef606c53-b370-419a-904b-573ee6d70a8d
 role: User
-source-git-commit: 55b312552d32070875714a77e1177bf0da5f9d87
-workflow-type: ht
+source-git-commit: 0101986bb86c49776a044f754d912dc1bcb9422c
+workflow-type: tm+mt
 source-wordcount: '959'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -61,7 +61,7 @@ Diese Visualisierung eignet sich für eine Vielzahl gängiger Anwendungsfälle, 
    | **[!UICONTROL Metrik]** | Wählen Sie die Metrik aus, die Sie überprüfen möchten. Alle Metriken werden unterstützt. |
    | **[!UICONTROL Primärer Datumsbereich]** | Der aktuelle Datumsbereich für die Freiformtabelle.<p>Wählen Sie aus allen verfügbaren Datumsbereichen in Ihrer Datenansicht.</p> <p>Wählen Sie [!UICONTROL **Datumsbereich der Panels**] aus, wenn Sie denselben Datumsbereich verwenden möchten, der in dem Panel verwendet wird, in dem sich die Visualisierung befindet.</p> |
    | **[!UICONTROL Vergleichsdatumsbereich]** | Der Datumsbereich, den Sie mit dem primären Datumsbereich vergleichen möchten. |
-   | **[!UICONTROL Filter (optional)]** | Jeder Filter, an dem Sie für diese Zusammenfassung interessiert sind. |
+   | **[!UICONTROL Filter (optional)]** | Jedes Segment, an dem Sie für diese Zusammenfassung interessiert sind. |
 
    {style="table-layout:auto"}
 
@@ -153,7 +153,7 @@ Nach dem Erstellen der Visualisierung können Sie die ursprüngliche Konfigurati
 
    Sie gelangen nun zurück zur ursprünglichen Konfigurationsansicht.
 
-1. Ändern Sie die Metrik, den primären Datumsbereich, den Vergleichs-Datumsbereich oder den Filter nach Belieben.
+1. Ändern Sie die Metrik, den primären Datumsbereich, den Vergleichsdatumsbereich oder das Segment nach Belieben.
 
 >[!MORELIKETHIS]
 >

@@ -5,10 +5,10 @@ title: Visualisierungsübersicht
 feature: Visualizations
 exl-id: ca9e0561-7a54-487a-9fdc-3bcf34f9bdb1
 role: User
-source-git-commit: 0859a35bb0f34800b970ff256bc9b740ffe424c9
-workflow-type: ht
+source-git-commit: 0101986bb86c49776a044f754d912dc1bcb9422c
+workflow-type: tm+mt
 source-wordcount: '1616'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -28,7 +28,7 @@ Die folgenden Visualisierungstypen sind in Analysis Workspace verfügbar:
 | ![Aufzählungspunkte](/help/assets/icons/GraphBullet.svg)</p> | [Bullet](/help/analysis-workspace/visualizations/bullet-graph.md) | Eine Visualisierung „Bullet-Diagramm“, die zeigt, wie ein Wert, der Sie interessiert, im Vergleich zu anderen Leistungsbereichen (Zielen) liegt oder ausfällt. |
 | ![NummerierterText](/help/assets/icons/TextNumbered.svg) | [Kohortentabelle](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md) | Eine Visualisierung „Kohorte“ ist eine Personengruppe mit gemeinsamen Merkmalen innerhalb eines vorgegebenen Zeitraums. Eine Kohortentabelle ist nützlich für die Analyse von Verweildauer, Abwanderung oder Latenz. |
 | ![Kombination](/help/assets/icons/ComboChart.svg) | [Kombination](combo-charts.md) | Mit einem Kombinationsdiagramm können Sie schnell und einfach eine Visualisierung vom Typ „Vergleich“ erstellen, ohne zuerst eine Tabelle erstellen zu müssen. |
-| ![Ringdiagramm](/help/assets/icons/GraphDonut.svg) | [Ringdiagramm](/help/analysis-workspace/visualizations/donut.md) | Ähnlich einem Tortendiagramm zeigt eine Visualisierung „Ringdiagramm“ die Daten als Teile oder Filter eines Ganzen. |
+| ![Ringdiagramm](/help/assets/icons/GraphDonut.svg) | [Ringdiagramm](/help/analysis-workspace/visualizations/donut.md) | Ähnlich einem Tortendiagramm zeigt eine Ringvisualisierung die Daten als Teile oder Segmente eines Ganzen. |
 | ![Konversionstrichter](/help/assets/icons/ConversionFunnel.svg) | [Fallout](/help/analysis-workspace/visualizations/fallout/fallout-flow.md) | Eine Visualisierung „Fallout“ zeigt, wo Personen eine Site verlassen haben und wo sie eine vorab definierte Folge von Seiten passiert haben (d. h., wo sie verblieben sind). |
 | ![GraphPathing](/help/assets/icons/GraphPathing.svg) | [Fluss](/help/analysis-workspace/visualizations/c-flow/flow.md) | Eine Visualisierung vom Typ „Fluss“ zeigt genaue Kundenpfade durch Ihre Websites und Apps an. |
 | ![ViewTable](/help/assets/icons/ViewTable.svg)</p> | [Freiformtabelle](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) | Eine Visualisierung „Freiformtabelle“ ist eine interaktive Visualisierung. Die Visualisierung „Freiformtabelle“ bildet die Grundlage für die Datenanalyse in Workspace. |
@@ -44,7 +44,7 @@ Die folgenden Visualisierungstypen sind in Analysis Workspace verfügbar:
 | ![123](/help/assets/icons/123.svg)</p> | [Zusammenfassungszahl](/help/analysis-workspace/visualizations/summary-number-change.md) | Eine Visualisierung vom Typ „Zusammenfassungszahl“ zeigt die ausgewählte Zelle als eine große Zahl an. |
 | ![Text](/help/assets/icons/Text.svg) | [Text](/help/analysis-workspace/visualizations/text.md) | Eine Visualisierung vom Typ „Text“ ermöglicht es Ihnen, benutzerdefinierten Text zu Ihrem Arbeitsbereich hinzuzufügen. Hilfreich zum Hinzufügen zusätzlicher Kontexte zu Ihrer Analyse und zu Einblicken, zusätzlich zum Nutzen der Beschreibungen im Bedienfeld oder in Visualisierungen |
 | ![ModernGridView](/help/assets/icons/ModernGridView.svg) | [Treemap](/help/analysis-workspace/visualizations/treemap.md)<p> | Eine Visualisierung „Baumkarte“ zeigt hierarchische (baumstrukturierte) Daten als Satz verschachtelter Rechtecke an. |
-| ![Typ](/help/assets/icons/TwoDots.svg) | [Venn](/help/analysis-workspace/visualizations/venn.md) | Eine Visualisierung vom Typ „Venn“ verwendet Kreise zur Darstellung der Metriküberschneidung von bis zu drei Filtern. |
+| ![Typ](/help/assets/icons/TwoDots.svg) | [Venn](/help/analysis-workspace/visualizations/venn.md) | Eine Venn-Visualisierung verwendet Kreise, um die Metriküberschneidung von bis zu drei Segmenten darzustellen. |
 
 <!-- Add beneath Horizontal bar in the table above: | [Journey canvas](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md) | Similar to Fallout, Journey canvas shows where persons left (fell out) and continued through (fell through) a predefined sequence of pages. <p>Unlike Fallout, Journey canvas supports not only linear journeys, but any number of entry points and paths. Furthermore, journeys can be created in Adobe Journey Optimizer and then analyzed in Journey canvas.</p> | -->
 
@@ -158,6 +158,6 @@ Einige Visualisierungen (z. B. „Kohortentabelle“, „Fallout“, „Fluss�
 
 ## Visualisieren
 
-Wenn Sie sich nicht sicher sind, welche Visualisierung Sie auswählen sollen, bewegen Sie den Mauszeiger über eine beliebige Freiformtabellenzeile und klicken Sie auf das dann erscheinende Symbol ![GraphBarVerticalAdd](/help/assets/icons/GraphBarVerticalAdd.svg) **[!UICONTROL Visualisieren]**. Dies ist die schnellste Möglichkeit, eine Visualisierung hinzuzufügen. Analysis Workspace sucht nach der Visualisierung, die aufgrund der vorhandenen Fakten am besten zu Ihren Daten passt. Wenn Sie beispielsweise eine einzelne Zeile ausgewählt haben, wird ein Trend-[Liniendiagramm](line.md) erstellt. Wenn Sie drei Filterzeilen ausgewählt haben, wird ein [Venn](venn.md)-Diagramm erstellt.
+Wenn Sie sich nicht sicher sind, welche Visualisierung Sie auswählen sollen, bewegen Sie den Mauszeiger über eine beliebige Freiformtabellenzeile und klicken Sie auf das dann erscheinende Symbol ![GraphBarVerticalAdd](/help/assets/icons/GraphBarVerticalAdd.svg) **[!UICONTROL Visualisieren]**. Dies ist die schnellste Möglichkeit, eine Visualisierung hinzuzufügen. Analysis Workspace sucht nach der Visualisierung, die aufgrund der vorhandenen Fakten am besten zu Ihren Daten passt. Wenn Sie beispielsweise eine einzelne Zeile ausgewählt haben, wird ein Trend-[Liniendiagramm](line.md) erstellt. Wenn Sie drei Segmentzeilen ausgewählt haben, wird ein &quot;[&quot;-](venn.md) erstellt.
 
 ![Schnellvisualisierung](assets/quick-viz.png)

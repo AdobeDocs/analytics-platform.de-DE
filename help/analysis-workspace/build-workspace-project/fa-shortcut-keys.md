@@ -5,8 +5,8 @@ feature: Workspace Basics
 title: Wie Workspace-Tastaturbefehle verwendet werden
 exl-id: de99a92b-701c-4cdc-a0c2-a70972a19499
 role: User
-source-git-commit: a757ea4fc9bf8b13a8ce3001cf8639245d213e1c
-workflow-type: ht
+source-git-commit: ab78583eb36d6158630724fbab9eb8148bcdbe23
+workflow-type: tm+mt
 source-wordcount: '402'
 ht-degree: 100%
 
@@ -46,7 +46,7 @@ Beachten Sie, dass auf Ihrer Tastatur möglicherweise die folgenden Symbole verw
 | Warnhinweis erstellen | **[!UICONTROL *Befehlstaste+Umschalt+A *]** | **[!UICONTROL *Strg+Umschalt+A *]** |
 | Berechnete Metrik erstellen | **[!UICONTROL *Befehlstaste+Umschalt+C *]** | **[!UICONTROL *Strg+Umschalt+C *]** |
 | Datumsbereich erstellen | **[!UICONTROL *Befehlstaste+Umschalt+D *]** | **[!UICONTROL *Strg+Umschalt+D *]** |
-| Filter erstellen | **[!UICONTROL *Befehlstaste+Umschalt+E *]** | **[!UICONTROL *Strg+Umschalt+E *]** |
+| Erstellen eines Segments | **[!UICONTROL *Befehlstaste+Umschalt+E *]** | **[!UICONTROL *Strg+Umschalt+E *]** |
 | Alle löschen | **[!UICONTROL *Alt+W *]** | **[!UICONTROL *Wahltaste+W *]** |
 | Kopieren | **[!UICONTROL *Wahltaste+C *]** | **[!UICONTROL *Strg+C *]** |
 | Wiederherstellen | **[!UICONTROL *Befehlstaste+Umschalt+Z *]** | **[!UICONTROL *Strg+Umschalt+Z *]** |

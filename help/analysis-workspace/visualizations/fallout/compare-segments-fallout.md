@@ -1,20 +1,20 @@
 ---
-description: Sie können in Analysis Workspace Filter aus einem Touchpoint erstellen, Filter als Touchpoints hinzufügen und wichtige Workflows über verschiedene Filter hinweg vergleichen.
-keywords: Fallout und Filter;Filter in Fallout-Analyse;Filter in Fallout vergleichen
-title: Anwenden von Filtern in der Fallout-Analyse
+description: Sie können in Analysis Workspace Segmente aus einem Touchpoint erstellen, Segmente als Touchpoints hinzufügen und wichtige Workflows über verschiedene Segmente hinweg vergleichen.
+keywords: Fallout und Segmente;Segmente in Fallout-Analyse;Segmente im Fallout vergleichen
+title: Segmente in der Fallout-Analyse anwenden
 feature: Visualizations
 exl-id: 85b1024f-acd2-43b7-b4b1-b10961ba43e8
 role: User
-source-git-commit: 6a279ac39e6b94200ff93ac1a3796d202e6349c7
+source-git-commit: 0101986bb86c49776a044f754d912dc1bcb9422c
 workflow-type: tm+mt
 source-wordcount: '462'
-ht-degree: 43%
+ht-degree: 36%
 
 ---
 
-# Anwenden von Filtern in der Fallout-Analyse
+# Segmente in der Fallout-Analyse anwenden
 
-Sie können in Analysis Workspace Filter aus einem Touchpoint erstellen, Filter als Touchpoints hinzufügen und wichtige Workflows über verschiedene Filter hinweg vergleichen.
+In Analysis Workspace können Sie Segmente aus einem Touchpoint erstellen, Filter als Touchpoint hinzufügen und wichtige Workflows über verschiedene Filter hinweg vergleichen.
 
 >[!IMPORTANT]
 >

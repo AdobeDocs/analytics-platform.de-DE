@@ -4,10 +4,10 @@ title: Bedienfeld „Quick Insights“
 feature: Panels
 exl-id: 09ebc3af-34ac-4f1f-8a5d-90da008f8697
 role: User
-source-git-commit: 55b312552d32070875714a77e1177bf0da5f9d87
-workflow-type: ht
+source-git-commit: 0101986bb86c49776a044f754d912dc1bcb9422c
+workflow-type: tm+mt
 source-wordcount: '1153'
-ht-degree: 100%
+ht-degree: 94%
 
 ---
 
@@ -37,10 +37,10 @@ Wenn Sie [!UICONTROL Analysis Workspace] zum ersten Mal verwenden, stellen Sie s
 * Welche Visualisierungen sind am nützlichsten?
 * Welche Dimensionen und Metriken können Erkenntnisse erleichtern?
 * Wo werden Elemente per Drag-and-Drop eingefügt?
-* Wo werden Filter erstellt?
+* wo ein Segment erstellt werden soll,
 * und vieles mehr.
 
-Um bei der Beantwortung dieser Fragen zu helfen, nutzt [!UICONTROL Quick Insights] einen Algorithmus, der Ihnen die beliebtesten Dimensionen, Metriken, Filter und Datumsbereiche präsentiert, die Ihr Unternehmen verwendet. Dieser Algorithmus basiert auf der Verwendung von Datenkomponenten durch Ihr eigenes Unternehmen in [!UICONTROL Analysis Workspace]. In der Dropdown-Liste werden Dimensionen, Metriken und Filter angezeigt, die als [!UICONTROL BELIEBT] gekennzeichnet sind, wie im Folgenden gezeigt:
+Um bei der Beantwortung dieser Fragen zu helfen, nutzt [!UICONTROL Quick Insights] einen Algorithmus, der Ihnen die beliebtesten Dimensionen, Metriken, Segmente und Datumsbereiche präsentiert, die Ihr Unternehmen verwendet. Dieser Algorithmus basiert auf der Verwendung von Datenkomponenten durch Ihr eigenes Unternehmen in [!UICONTROL Analysis Workspace]. In der Dropdown-Liste werden Dimensionen, Metriken und Segmente angezeigt[!UICONTROL  die mit ]POPULAR“ gekennzeichnet sind, wie im Folgenden gezeigt:
 
 ![Das Bedienfeld „Quick Insights“.](assets/popular-tag.png)
 
@@ -48,7 +48,7 @@ Um bei der Beantwortung dieser Fragen zu helfen, nutzt [!UICONTROL Quick Insight
 
 * Ordnungsgemäßes Erstellen einer Datentabelle und einer zugehörigen Visualisierung in [!UICONTROL Analysis Workspace].
 * Vertrautmachen mit der Terminologie und dem Vokabular für grundlegende Komponenten und Bestandteile von [!UICONTROL Analysis Workspace].
-* Ausführen einfacher Aufschlüsselungen von Dimensionen, Hinzufügen mehrerer Metriken oder Vergleichen von Filtern in einer [!UICONTROL Freiformtabelle].
+* Ausführen einfacher Aufschlüsselungen von Dimensionen, Hinzufügen mehrerer Metriken oder Vergleichen von Segmenten in einer [!UICONTROL Freiformtabelle].
 * Ändern oder Ausprobieren verschiedener Visualisierungstypen, um das Suchwerkzeug für Ihre Analyse schnell und intuitiv zu finden.
 
 ## Grundlegende Terminologie
@@ -62,7 +62,7 @@ Im Folgenden finden Sie einige grundlegende Begriffe, mit denen Sie vertraut sei
 | [!UICONTROL Metrik] | Metriken sind quantitative Informationen über Aktivitäten von Personen wie Ansichten, Clickthroughs, Neuladungen, durchschnittliche Besuchszeit, Einheiten, Bestellungen, Umsatz usw. |
 | **[!UICONTROL Visualisierung]** | Workspace bietet [eine Reihe von Visualisierungen](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md), um visuelle Darstellungen Ihrer Daten zu erstellen. Zum Beispiel Balkendiagramme, Ringdiagramme, Histogramme, Liniendiagramme, Karten, Streudiagramme und andere. |
 | **[!UICONTROL Dimensionsaufschlüsselung]** | Mit einer Dimensionsaufschlüsselung können Sie eine Dimension nach anderen Dimensionen aufschlüsseln. Sie können beispielsweise die US-Bundesstaaten nach Mobilgeräten aufschlüsseln, um die Besuche durch Mobilgeräte pro Bundesstaat zu erhalten. Oder Sie können Mobilgeräte nach Mobilgerätetypen, Regionen, internen Kampagnen und mehr aufschlüsseln. |
-| **[!UICONTROL Filter]** | Mit Filtern können Personenuntergruppen anhand von Merkmalen oder Website-Interaktionen identifiziert werden. Zum Beispiel können Sie [!UICONTROL Personen]-Filter basierend auf folgenden Merkmalen erstellen: <li>Attribute: Browser-Typ, Gerät, Anzahl der Besuche, Land, Geschlecht; oder</li><li>Interaktionen: Kampagnen, Keyword-Suche, Suchmaschine; oder</li><li>Ausstiege und Eintritte: Personen aus Facebook, einer definierten Landingpage, einer Referrer Domain; oder</li><li> Benutzerdefinierte Variablen: Formularfeld, definierte Kategorien, Kunden-ID. |
+| **[!UICONTROL Filter]** | Mit Filtern können Personenuntergruppen anhand von Merkmalen oder Website-Interaktionen identifiziert werden. Sie können beispielsweise Segmente [!UICONTROL Personen] basierend auf erstellen. <li>Attribute: Browser-Typ, Gerät, Anzahl der Besuche, Land, Geschlecht; oder</li><li>Interaktionen: Kampagnen, Keyword-Suche, Suchmaschine; oder</li><li>Ausstiege und Eintritte: Personen aus Facebook, einer definierten Landingpage, einer Referrer Domain; oder</li><li> Benutzerdefinierte Variablen: Formularfeld, definierte Kategorien, Kunden-ID. |
 
 ## Verwenden
 
@@ -83,7 +83,7 @@ Wählen Sie die gewünschten Bausteine aus:
 
 * **[!UICONTROL Analysieren]**: Zum Festlegen einer Dimension (orange)
 * **[!UICONTROL Nach]**: Zum Festlegen einer Metrik (grün)
-* **[!UICONTROL Filtern nach]**: Zum Festlegen eines Filters (blau)
+* **[!UICONTROL Segment nach]** - Segment angeben (blau)
 * **[!UICONTROL Am]**: Zum Festlegen eines Datumsbereichs (violett).
 
 Sie müssen mindestens eine Dimension und eine Metrik auswählen, damit die Visualisierung ordnungsgemäß funktioniert.
@@ -105,7 +105,7 @@ Wählen Sie **[!UICONTROL Löschen]** aus, um alle Eingabefelder zu löschen.
 
    ![Die Freiformtabelle, die die Dimension vertikal und die Metrik horizontal anzeigt.](assets/quick-insights-output.png)
 
-   * Eine Freiformtabelle mit der Dimension („Ländercode“) und Metrik („Sitzungen“), gefiltert nach Web-Sitzungen für die letzten 12 Monate.
+   * Eine Freiformtabelle mit der Dimension (Länder-Code) und Metrik (Sitzungen), segmentiert nach Web-Sitzungen für die letzten 12 Monate.
 
    * Eine begleitende Visualisierung, in diesem Fall ein [Balkendiagramm](/help/analysis-workspace/visualizations/bar.md). Die erstellte Visualisierung basiert auf dem Datentyp, den Sie der Tabelle hinzugefügt haben. Für zeitbasierte Daten (z. B. [!UICONTROL Sitzungen] pro Tag/Monat) wird standardmäßig ein [!UICONTROL Liniendiagramm] verwendet. Für alle nicht zeitbasierten Daten (z. B. [!UICONTROL Sitzungen] pro [!UICONTROL Gerät]) wird standardmäßig ein [!UICONTROL Balkendiagramm] verwendet. Sie können den Visualisierungstyp ändern, indem Sie auf den Dropdown-Pfeil neben dem Visualisierungstyp klicken.
 
@@ -121,7 +121,7 @@ Weitere nützliche Hinweise werden im [!UICONTROL Quick Insights Builder] angeze
 
   ![Die Benachrichtigung zum Bedienfeld „Quick Insights“ wird angezeigt, nachdem Sie auf das Hilfesymbol geklickt haben.](assets/qibuilder4.png)
 
-* Sie können mehrere Dimensionen und Metriken analysieren, Filter kombinieren oder vergleichen und einen Datumsbereich angeben:
+* Sie können mehrere Dimensionen und Metriken analysieren, Segmente kombinieren oder vergleichen und einen Datumsbereich angeben:
 
   ![Quick Insights Builder-Ergebnis](assets/qibuilder-result.png)
 
@@ -129,7 +129,7 @@ Weitere nützliche Hinweise werden im [!UICONTROL Quick Insights Builder] angeze
 
    * Weitere Metriken **[!UICONTROL nach]** hinzufügen: Sie können bis zu zwei weitere Metriken hinzufügen. Siehe ➍ und ➎.
 
-   * **[!UICONTROL Filtern nach]**: Sie können bis zu zwei weitere Filter hinzufügen. Sie können beispielsweise „Buchungen“ als Filter hinzufügen und diesen Filter mit den von Ihnen verglichenen Filtern für Personen, die die häufig fliegen, und Personen, die zum ersten Mal fliegen, kombinieren. Siehe ➏, ➐ und ➑.
+   * **[!UICONTROL Segment nach]**: Sie können bis zu 2 weitere Segmente hinzufügen. Sie können beispielsweise „Buchungen“ als Segment hinzufügen und dieses Segment mit den von Ihnen verglichenen Segmenten für Personen, die häufig fliegen, und Personen, die zum ersten Mal fliegen, kombinieren. Siehe ➏, ➐ und ➑.
 
    * Am: Sie können den Datumsbereich festlegen. Siehe ➒.
 

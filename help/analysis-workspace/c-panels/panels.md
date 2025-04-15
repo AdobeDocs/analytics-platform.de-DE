@@ -4,10 +4,10 @@ title: Übersicht über Bedienfelder
 feature: Panels
 exl-id: be3e34a0-06c1-4200-b965-96084c2912fd
 role: User
-source-git-commit: a2262e446a15ee58be2f3f674c77223368fc8f76
-workflow-type: ht
+source-git-commit: 305ae20c48ddf0f2032b8f92a016eb92427016ed
+workflow-type: tm+mt
 source-wordcount: '2129'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -85,7 +85,7 @@ Wenn Sie ein neues Panel erstellen, basiert die Standarddatenansicht auf der Dat
 
 >[!IMPORTANT]
 >
->Die ausgewählte Datenansicht legt fest, welche Dimensionen, Metriken und Filter zum Erstellen von Visualisierungen in einem Panel verfügbar sind.
+>Die ausgewählte Datenansicht bestimmt, welche Dimensionen, Metriken und Segmente für die Erstellung von Visualisierungen in einem Bedienfeld verfügbar sind.
 >
 >
 >Wenn Sie eine Datenansicht für ein Panel wechseln, sind einige Komponenten in dieser neuen Datenansicht möglicherweise nicht verfügbar. Diese Änderung kann dazu führen, dass Ihre Visualisierung nicht ordnungsgemäß gerendert wird. Möglicherweise werden Warnungen wie diese angezeigt:
@@ -100,7 +100,7 @@ Der Panel-Kalender steuert den Reporting-Datumsbereich für Tabellen und Visuali
 
 >[!NOTE]
 >
->Wenn eine Komponente des ![Kalender](/help/assets/icons/Calendar.svg)-Datumsbereichs in einer Visualisierung oder einem Panel verwendet wird (z. B. als Filter), überschreibt die Datumsbereichskomponente den Panel-Kalender.
+>Wenn eine Komponente des ![Kalender](/help/assets/icons/Calendar.svg)-Datumsbereichs in einer Visualisierung oder einem Bedienfeld verwendet wird (z. B. als Segment), überschreibt die Datumsbereichskomponente den Bedienfeldkalender.
 >
 
 
@@ -134,22 +134,22 @@ Wählen Sie **[!UICONTROL Auf alle Panels anwenden]** aus, um den Datumsbereich 
 
 ## Ablegebereich {#dropzone}
 
-Mit dem Ablegebereich eines Bedienfelds können Sie Filter und Dropdown-Filter auf alle Tabellen und Visualisierungen innerhalb eines Bedienfelds anwenden. Sie können einen oder mehrere Filter auf ein Bedienfeld anwenden.
+Mithilfe des Ablegebereichs eines Bedienfelds können Sie Segment- und Dropdown-Segmente auf alle Tabellen und Visualisierungen innerhalb eines Bedienfelds anwenden. Sie können ein oder mehrere Segmente auf ein Bedienfeld anwenden.
 
 ### Filter
 
-Ziehen Sie beliebige Filter aus dem linken Bedienfeld in den Ablagebereich des Bedienfelds, um das Bedienfeld zu filtern.  Wiederholen Sie diesen Vorgang, um dem Bedienfeld weitere Filter hinzuzufügen. Filter werden oben im Bedienfeld nebeneinander angezeigt.
+Ziehen Sie beliebige Segmente per Drag-and-Drop aus dem linken Bedienfeld in den Ablagebereich des Bedienfelds, um das Bedienfeld zu segmentieren.  Wiederholen Sie diesen Vorgang, um dem Bedienfeld weitere Segmente hinzuzufügen. Filter werden oben im Bedienfeld nebeneinander angezeigt.
 
-![Das linke Bedienfeld mit verfügbaren Metriken und der in den Ablegebereich des Bedienfelds gezogenen Metrik für mobile Kundschaft](assets/segment-filter.png)
+![Das linke Bedienfeld mit verfügbaren Metriken und der in den Ablegebereich des Bedienfelds gezogenen Metrik für mobile Kundschaft.](assets/segment-filter.png)
 
-#### Schnellfilter
+#### Schnellsegmente
 
-Komponenten, die keine Filter sind, können ebenfalls direkt in den Ablagebereich gezogen werden, um Schnellfilter zu erstellen. Dadurch müssen Sie nicht [Generator filtern](/help/components/filters/filter-builder.md) aufrufen, was Zeit und Mühe spart. Auf diese Weise erstellte Filter werden automatisch als Filter auf Ereignisebene definiert. Diese Definition kann schnell geändert werden, indem Sie neben dem Filternamen die Option ![Bearbeiten](/help/assets/icons/Edit.svg) auswählen.
+Komponenten, die keine Segmente sind, können auch direkt in den Ablagebereich gezogen werden, um Schnellsegmente zu erstellen, wodurch Sie sich das mühsame Aufrufen des [Segment Builders](/help/components/filters/filter-builder.md) ersparen können. Auf diese Weise erstellte Filter werden automatisch als Segmente auf Ereignisebene definiert. Diese Definition kann schnell geändert werden, indem Sie neben dem Segmentnamen die Option ![Bearbeiten](/help/assets/icons/Edit.svg) auswählen.
 
 
-Weitere Informationen finden Sie unter [Schnellfilter](/help/components/filters/quick-filters.md).
+Weitere Informationen finden Sie unter [Schnellsegmente](/help/components/filters/quick-filters.md).
 
-![Ad-hoc-Filter, die veröffentlicht und in im Ablegebereich abgelegt werden.](assets/adhoc-segment-filter.png)
+![Ad-hoc-Segmente, die veröffentlicht und in der Ablagefläche abgelegt werden](assets/adhoc-segment-filter.png)
 
 ### Dropdown-Filter
 
@@ -162,57 +162,57 @@ Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Dropdown-Filte
 >[!ENDSHADEBOX]
 
 
-#### Statische Dropdown-Filter
+#### Statische Dropdown-Segmente
 
-Statische Dropdown-Filter ermöglichen Ihnen eine kontrollierte Interaktion mit den Daten. Sie können beispielsweise einen Dropdown-Filter für Typen von Mobilgeräten hinzufügen, damit Sie das Bedienfeld nach Tablet, Mobiltelefon oder Desktop filtern können.
+Statische Dropdown-Segmente ermöglichen Ihnen eine kontrollierte Interaktion mit den Daten. Sie können beispielsweise ein Dropdown-Segment für Gerätetypen hinzufügen, damit Sie das Bedienfeld nach Tablet, Handy oder Desktop segmentieren können.
 
-Statische Dropdown-Filter können auch verwendet werden, um mehrere Projekte in einem Projekt zu bündeln. Wenn Sie z. B. mehrere Versionen desselben Projekts mit unterschiedlichen Filtern je nach Land verwenden, können Sie alle Versionen in einem Projekt zusammenfassen und einen Dropdown-Filter „Land“ hinzufügen.
+Statische Dropdown-Segmente können auch verwendet werden, um mehrere Projekte in einem Projekt zu bündeln. Wenn Sie beispielsweise mehrere Versionen desselben Projekts mit unterschiedlichen Ländersegmenten verwenden, können Sie alle Versionen in einem Projekt zusammenfassen und ein Dropdown-Segment „Land“ hinzufügen.
 
-![Statische Dropdown-Filter, die den Filter „Direkt“ für den Marktkanal hervorgehoben anzeigen. ](assets/dropdown-filter-intro.png)
+![Statische Dropdown-Segmente mit hervorgehobenem Segment „Direkt“ im Marktkanal. ](assets/dropdown-filter-intro.png)
 
-##### Erstellen von statischen Dropdown-Filtern
+##### Erstellen von statischen Dropdown-Segmenten
 
-* Wählen Sie für Dropdown-Filter mit Dimensionselementen eine einzelne Dimension aus dem linken Bedienfeld aus und legen Sie sie im Ablagebereich des Bedienfelds ab, während Sie ⇧ (*Umschalt*) gedrückt halten. Durch diesen Vorgang wird ein Dropdown-Filter mit allen Dimensionselementen erstellt, die mit dieser Dimension verknüpft sind.
+* Wählen Sie für Dropdown-Segmente mit Dimensionselementen eine einzelne Dimension aus dem linken Bedienfeld aus und legen Sie sie im Ablagebereich des Bedienfelds ab, während Sie ⇧ (*Umschalt*) gedrückt halten. Dadurch wird ein Dropdown-Segment mit allen Dimensionselementen erstellt, die mit dieser Dimension verknüpft sind.
 
-  Wenn der Dropdown-Filter nur bestimmte Dimensionselemente enthalten soll, die mit einer Dimension verknüpft sind, wählen Sie im linken Panel neben der gewünschten Dimension das Symbol mit dem Pfeil nach rechts aus. Durch diese Aktion werden alle verfügbaren Dimensionselemente offengelegt. Wählen Sie mithilfe von ⇧+![Auswählen](/help/assets/icons/Select.svg) (*Umschalt* + *Auswählen*) oder ^+![Auswählen](/help/assets/icons/Select.svg) (*Steuerung* + *Auswählen*) mehrere Dimensionselemente aus dieser Liste aus und legen Sie sie dann bei im Ablegebereich des Panels ab, **während Sie ⇧ gedrückt halten**.
+  Wenn das Dropdown-Segment nur bestimmte Dimensionselemente enthalten soll, die mit einer Dimension verknüpft sind, wählen Sie im linken Bedienfeld neben der gewünschten Dimension das Symbol mit dem Pfeil nach rechts aus. Durch diese Aktion werden alle verfügbaren Dimensionselemente offengelegt. Wählen Sie mithilfe von ⇧+![Auswählen](/help/assets/icons/Select.svg) (*Umschalt* + *Auswählen*) oder ^+![Auswählen](/help/assets/icons/Select.svg) (*Steuerung* + *Auswählen*) mehrere Dimensionselemente aus dieser Liste aus und legen Sie sie dann bei im Ablegebereich des Panels ab, **während Sie ⇧ gedrückt halten**.
 
-* Wählen Sie für Dropdown-Filter, die einen einzelnen Komponententyp verwenden (z. B. nur Dimensionen, nur Filter oder nur Metriken), im linken Panel mehrere Elemente desselben Typs mithilfe von ⇧+![Auswählen](/help/assets/icons/Select.svg) oder ^+![Auswählen](/help/assets/icons/Select.svg) aus. Legen Sie die Elemente dann im Ablegebereich des Panels ab, **während Sie ⇧ gedrückt halten**.
+* Wählen Sie für Dropdown-Segmente, die einen einzelnen Komponententyp verwenden (z. B. nur Dimensionen, nur Segmente oder nur Metriken), im linken Bedienfeld mehrere Elemente desselben Typs mithilfe von ⇧+![Auswählen](/help/assets/icons/Select.svg) oder ^+![Auswählen](/help/assets/icons/Select.svg) aus. Legen Sie die Elemente dann im Ablegebereich des Panels ab, **während Sie ⇧ gedrückt halten**.
 
-  Mit den von Ihnen ausgewählten Komponenten wird ein einzelner Dropdown-Filter erstellt.
+  Mit den von Ihnen ausgewählten Komponenten wird ein einzelnes Dropdown-Segment erstellt.
 
-* Wählen Sie für Dropdown-Filter, die gemischte Komponententypen (etwa 2 Metriken und 3 Filter) verwenden, mithilfe von ⇧+![Auswählen](/help/assets/icons/Select.svg) oder ^+![Auswählen](/help/assets/icons/Select.svg) aus. Legen Sie die Auswahl im Ablegebereich des Panels ab, **während Sie ⇧ gedrückt halten**. In diesem Kontext werden alle Komponententypen als separate Dropdown-Filter behandelt. Wenn Sie beispielsweise sowohl Metriken als auch Dimensionselemente in Ihre Auswahl aufnehmen, werden zwei separate Dropdown-Filter erstellt: Der eine enthält Dimensionselemente und der andere Metriken.
+* Wählen Sie für Dropdown-Segmente, die gemischte Komponententypen (etwa 2 Metriken und 3 Filter) verwenden, mithilfe von ⇧+![Auswählen](/help/assets/icons/Select.svg) oder ^+![Auswählen](/help/assets/icons/Select.svg) mehrere Komponenten aus. Legen Sie die Auswahl im Ablegebereich des Bedienfelds ab, **während Sie ⇧ gedrückt halten**. In diesem Kontext werden alle Komponententypen als separate Dropdown-Segmente behandelt. Wenn Sie beispielsweise sowohl Metriken als auch Dimensionselemente in Ihre Auswahl aufnehmen, werden zwei separate Dropdown-Segmente erstellt: Das eine enthält Dimensionselemente und das andere Metriken.
 
-Ein Dropdown-Filter bietet die folgenden Kontextmenüoptionen:
+Ein Dropdown-Segment bietet die folgenden Kontextmenüoptionen:
 
-* **[!UICONTROL Dropdown-Filter löschen]**: Entfernt den Dropdown-Filter aus dem Panel.
-* **[!UICONTROL Label löschen]**: Entfernt den Text, der über einem Dropdown-Filter angezeigt wird.  Um das Label zu ändern, bewegen Sie den Mauszeiger über das Label und wählen Sie ![Label des Dropdown-Filters bearbeiten](/help/assets/icons/Edit.svg) aus.
-* **[!UICONTROL Titel hinzufügen]**: Wenn Sie einem Projekt einen Dropdown-Filter hinzufügen, wird für einen Titel automatisch der Komponentenname festgelegt. Wenn Sie den Titel löschen, können Sie ihn mit dieser Option erneut hinzufügen.
-* **[!UICONTROL Auswahl erforderlich]**: Erfordert, dass im Bedienfeld ein Filter festgelegt ist.
+* **[!UICONTROL Dropdown löschen]**: Entfernt das Dropdown-Segment aus dem Bedienfeld.
+* **[!UICONTROL Label löschen]**: Entfernt den Text, der über einem Dropdown-Segment angezeigt wird.  Um das Label zu ändern, bewegen Sie den Mauszeiger über das Label und wählen Sie ![Label des Dropdown-Segments bearbeiten](/help/assets/icons/Edit.svg) aus.
+* **[!UICONTROL Label hinzufügen]**: Wenn Sie einem Projekt ein Dropdown-Segment hinzufügen, wird als Label automatisch der Komponentenname festgelegt. Wenn Sie das Label löschen, können Sie es mit dieser Option erneut hinzufügen.
+* **[!UICONTROL Auswahl erforderlich]**: Erfordert, dass im Bedienfeld ein Segment festgelegt ist.
 
-##### Verwenden statischer Dropdown-Filter
+##### Verwenden statischer Dropdown-Segmente
 
-Benutzende können das Dropdown-Filtermenü auf eine der folgenden Arten verwenden, um das Panel zu filtern:
+Benutzende können das Dropdown-Segmentmenü auf eine der folgenden Arten verwenden, um das Bedienfeld zu segmentieren:
 
-* Wenden Sie einen einzelnen Filter auf das Bedienfeld an, indem Sie ihn über den Dropdown-Filter auswählen.
+* Anwenden eines einzelnen Segments auf das Bedienfeld, indem es über das Dropdown-Segment ausgewählt wird.
 
-* Wenden Sie mehrere Filter auf das Bedienfeld an, indem Sie mehr als einen Filter über den Dropdown-Filter auswählen. Das Bedienfeld wird gefiltert, um alle ausgewählten Filter einzuschließen.
+* Anwenden mehrerer Segmente auf das Bedienfeld, indem mehr als ein Segment über das Dropdown-Segment ausgewählt wird. Das Bedienfeld wird segmentiert, um alle ausgewählten Segmente einzuschließen.
 
 
-#### Dynamische Dropdown-Filter
+#### Dynamische Dropdown-Segmente
 
-Dynamische Dropdown-Filter ermöglichen es Ihnen, verfügbare Werte basierend auf Daten innerhalb des Berichtsbereichs des Bedienfelds und Werte in anderen Dropdown-Filtern zu bestimmen. Sie können beispielsweise zwei dynamische Dropdown-Filter mit einer Dimension „Länder“ und einer Dimension „Städte“ erstellen. Wenn Sie ein Land aus der Dropdown-Liste **[!UICONTROL Länder]** auswählen, wird die Dropdown-Liste **[!UICONTROL Städte]** dynamisch angepasst, sodass nur Städte in diesem Land angezeigt werden.
+Dynamische Dropdown-Segmente ermöglichen es Ihnen, verfügbare Werte basierend auf Daten innerhalb des Berichtsbereichs des Bedienfelds und Werten in anderen Dropdown-Segmenten zu bestimmen. Sie können beispielsweise zwei dynamische Dropdown-Filter mit einer Dimension „Länder“ und einer Dimension „Städte“ erstellen. Wenn Sie ein Land aus der Dropdown-Liste **[!UICONTROL Länder]** auswählen, wird die Dropdown-Liste **[!UICONTROL Städte]** dynamisch angepasst, sodass nur Städte in diesem Land angezeigt werden.
 
-Dieses Konzept gilt für alle Dimensionen. Es werden nur Dimensionselemente, die innerhalb des Datumsbereichs des Bedienfelds erscheinen, und ausgewählte Filter angezeigt.  In statischen Dropdown-Filtern ausgewählte Dimensionen wirken sich auf verfügbare Werte in dynamischen Dropdown-Filtern aus. Das Gegenteil ist jedoch nicht der Fall: In dynamischen Dropdown-Filtern ausgewählte Dimensionselemente wirken sich nicht auf verfügbare Werte in statischen Dropdown-Filtern aus.
+Dieses Konzept gilt für alle Dimensionen. Es sind nur Dimensionselemente, die innerhalb des Datumsbereichs des Bedienfelds angezeigt werden, sowie ausgewählte Segmente sichtbar.  Die in statischen Dropdown-Segmenten ausgewählten Dimensionen wirken sich auf die verfügbaren Werte in dynamischen Dropdown-Segmenten aus. Das Gegenteil ist jedoch nicht der Fall: In dynamischen Dropdown-Segmenten ausgewählte Dimensionselemente wirken sich nicht auf die verfügbaren Werte in statischen Dropdown-Segmenten aus.
 
-Eine manuelle Auswahl von Dimensionselementen ist verfügbar, wenn Sie erwarten, dass ein bestimmtes Dimensionselement in Zukunft erfasst wird. Sie können auch einen dynamischen Dropdown-Filter löschen, sodass dieser keinen Wert enthält, wodurch andere dynamische Dropdown-Filter mehr Werte enthalten können. Wählen Sie **[!UICONTROL Alle zurücksetzen]** aus, um die Auswahl aus allen Dropdown-Filtern für dieses Bedienfeld zu löschen.
+Eine manuelle Auswahl von Dimensionselementen ist verfügbar, wenn Sie erwarten, dass ein bestimmtes Dimensionselement in Zukunft erfasst wird. Sie können auch ein dynamisches Dropdown-Segment löschen, sodass dieses keinen Wert enthält, wodurch andere dynamische Dropdown-Segmente mehr Werte enthalten können. Wählen Sie **[!UICONTROL Alle zurücksetzen]** aus, um die Auswahl aus allen Dropdown-Segmenten für dieses Bedienfeld zu löschen.
 
-So erstellen Sie einen dynamischen Dropdown-Filter:
+So erstellen Sie ein dynamisches Dropdown-Segment:
 
-* Ziehen Sie eine einzelne Dimension per Drag-and-Drop in den Ablegebereich des Panels, **während Sie ⇧ gedrückt halten**.
+* Ziehen Sie eine einzelne Dimension per Drag-and-Drop in den Ablegebereich des Bedienfelds, **während Sie ⇧ gedrückt halten**.
 
-Beachten Sie, dass dynamische Dropdown-Filter nicht für Metriken, Filter oder Datumsbereiche verfügbar sind.
+Beachten Sie, dass dynamische Dropdown-Segmente nicht für Metriken, Segmente oder Datumsbereiche verfügbar sind.
 
-Ein dynamischer Dropdown-Filter bietet dieselben Kontextmenüoptionen wie statische Dropdown-Filter.
+Ein dynamisches Dropdown-Segment bietet dieselben Kontextmenüoptionen wie statische Dropdown-Segmente.
 
 
 ## Kontextmenü

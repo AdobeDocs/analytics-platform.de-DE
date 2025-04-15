@@ -5,10 +5,10 @@ title: Anwendungsfälle für die Kohortenanalyse
 feature: Visualizations
 exl-id: f559d4b4-b682-4306-b111-22acb26fe0a0
 role: User
-source-git-commit: 388042e24a7b9d33ac88e05a68689308e6258339
+source-git-commit: 0101986bb86c49776a044f754d912dc1bcb9422c
 workflow-type: tm+mt
 source-wordcount: '973'
-ht-degree: 51%
+ht-degree: 52%
 
 ---
 
@@ -40,15 +40,15 @@ Sie arbeiten bei Adobe.com und bieten ein kostenloses Creative Cloud-Abonnement 
 
 **Rückkehrmetrik**: Kauf der zahlungspflichtigen Creative Cloud
 
-Mit [!UICONTROL Kohortenanalyse] konnten Sie beispielsweise sehen, dass zwischen 8 % und 10 % der kostenlosen Creative Cloud-Nutzer im ersten Monat nach der Installation ein Upgrade durchführen. Unabhängig davon, wann die Benutzer installiert haben. 12–15 % führen im zweiten Monat der Verwendung ein Upgrade durch. Danach lassen die Upgrades merklich nach: 4–5 % im dritten Monat, 3–4 % im vierten Monat und 1–2 % im fünften Monat.
+Mithilfe [!UICONTROL Kohortenanalyse] konnten Sie beispielsweise sehen, dass im ersten Monat nach der Installation zwischen 8 % und 10 % der kostenlosen Creative Cloud-Benutzenden ein Upgrade durchführen. Unabhängig davon, wann die Benutzer installiert haben. 12–15 % führen im zweiten Monat der Verwendung ein Upgrade durch. Danach lassen die Upgrades merklich nach: 4–5 % im dritten Monat, 3–4 % im vierten Monat und 1–2 % im fünften Monat.
 
 Sie wollen in Monat drei keine potenziellen Kunden verlieren. Sie haben also eine E-Mail-Kampagne eingerichtet, die dazu dient, Mitte des dritten Monats eine Auswahl von Benutzern anzusprechen. Anbieten eines Gutscheins in Höhe von 50 $ für Benutzer, die noch kein Upgrade durchgeführt haben.
 
-Schauen Sie einige Monate später wieder in Ihren Kohortenanalyseberichten vorbei. Bei Kohorten, die sich nach dem Start der Kampagne gebildet haben, ist die Konversionsrate auf Paid-Creative Cloud-Abonnements im dritten Monat von 4-5% auf 13-14% gestiegen. Dieser Anstieg der Konversionsrate resultiert in Hunderttausenden von Dollar pro Kohorte, für jede monatliche Kohorte, die ab diesem Zeitpunkt drei Monate erreicht.
+Schauen Sie einige Monate später wieder in Ihren Kohortenanalyseberichten vorbei. Bei Kohorten, die nach dem Start der Kampagne gebildet wurden, ist die Konversionsrate auf bezahlte Creative Cloud-Abonnements im dritten Monat von 4-5% auf 13-14% gestiegen. Dieser Anstieg der Konversionsrate resultiert in Hunderttausenden von Dollar pro Kohorte, für jede monatliche Kohorte, die ab diesem Zeitpunkt drei Monate erreicht.
 
-## Anwendungsfall für komplexe Kohortenfilter
+## Anwendungsfall für komplexe Kohortensegmente
 
-Eine große Hotelkette zielt auf mehrere Kundengruppen für Promotionen ab und verfolgt sie auf Grundlage der Leistung nach. Um die besten Gruppen von Benutzerkohorten zu identifizieren, die angesprochen werden sollen, sollten sehr spezifische Kohortengruppen erstellt werden. Mithilfe der erweiterten [!UICONTROL Einschluss] und [!UICONTROL Rückgabe]-Kriterien innerhalb der [!UICONTROL Kohorten]-Tabellen kann die Hotelkette genau die richtigen Kohortengruppierungen mit mehreren Metriken und Filtern definieren. So kann die Hotelkette leistungsschwache Kundengruppen identifizieren, um Kunden mit Aktionen und Angeboten anzusprechen, um die Buchungen zu erhöhen.
+Eine große Hotelkette zielt auf mehrere Kundengruppen für Promotionen ab und verfolgt sie auf Grundlage der Leistung nach. Um die besten Gruppen von Benutzerkohorten zu identifizieren, die angesprochen werden sollen, sollten sehr spezifische Kohortengruppen erstellt werden. Mithilfe der erweiterten [!UICONTROL Einschluss] und [!UICONTROL Rückgabe]-Kriterien innerhalb der [!UICONTROL Kohorten]-Tabellen kann die Hotelkette genau die richtigen Kohortengruppierungen mit mehreren Metriken und Segmenten definieren. So kann die Hotelkette leistungsschwache Kundengruppen identifizieren, um Kunden mit Aktionen und Angeboten anzusprechen, um die Buchungen zu erhöhen.
 
 ## Anwendungsfall zur Annahme der App-Version
 
@@ -56,12 +56,12 @@ Ein großes Versicherungsunternehmen fördert die Kundenbindung durch die Nutzun
 
 ## Anwendungsfall zur Kampagnentreue
 
-Ein internationales Medienunternehmen verwendet Zielgruppen-Kampagnen, um Benutzer auf die verschiedenen Plattformen zu leiten und so die Interaktion zu fördern. Die Werbeausgaben pro Plattform basieren auf der Kundeninteraktion und -bindung, daher sind erfolgreiche Kampagnen entscheidend für den Erfolg des Unternehmens. Sie verwenden die neue Funktion [!UICONTROL Benutzerdefinierte Dimension ] Kohortentabellen in [!UICONTROL Kohortentabellen] um verschiedene Kampagnen nebeneinander zu vergleichen und so zu ermitteln, welche Kampagnen am effektivsten Benutzende gewinnen und binden können, um die Interaktion zu steigern. Anschließend kann festgestellt werden, welche Aspekte zum Erfolg einer Kampagne beitragen. Diese Erkenntnisse können dann auf andere Kampagnen angewendet werden, um die Interaktion auf den verschiedenen Plattformen zu fördern.
+Ein internationales Medienunternehmen verwendet Zielgruppen-Kampagnen, um Benutzer auf die verschiedenen Plattformen zu leiten und so die Interaktion zu fördern. Die Werbeausgaben pro Plattform basieren auf der Kundeninteraktion und -bindung, daher sind erfolgreiche Kampagnen entscheidend für den Erfolg des Unternehmens. Sie verwenden die neue Funktion [!UICONTROL Benutzerdefinierte Dimension] Kohortentabellen in [!UICONTROL Kohortentabellen] um verschiedene Kampagnen nebeneinander zu vergleichen und so zu ermitteln, welche Kampagnen am effektivsten Benutzende gewinnen und binden können, um die Interaktion zu steigern. Anschließend kann festgestellt werden, welche Aspekte zum Erfolg einer Kampagne beitragen. Diese Erkenntnisse können dann auf andere Kampagnen angewendet werden, um die Interaktion auf den verschiedenen Plattformen zu fördern.
 
 ## Anwendungsfall einer Produkteinführung
 
-Ein großer Kleidungseinzelhändler verfügt über viele spezifische Kundenfilter, durch die große Teile des Unternehmensumsatzes gefördert werden. Für jeden Filter werden spezifische Produkte unter Berücksichtigung des jeweiligen Filters entwickelt und hergestellt. Bei jeder Produkteinführung soll identifiziert werden, wie das neue Produkt die Verkäufe in den verschiedenen Kohorten im Laufe der Zeit gesteigert hat. Mit der neuen Einstellung [!UICONTROL Latenztabelle] in der [!UICONTROL Kohortenanalyse] können das Verhalten und der Umsatz eines bestimmten Kundenfilters vor und nach der Markteinführung analysiert werden. Anhand dieser Informationen kann festgestellt werden, durch welche Produkte neue Umsätze generiert werden und welche bei den Kunden weniger beliebt sind.
+Ein großer Kleidungseinzelhändler verfügt über viele spezifische Kundensegmente, durch die große Teile des Unternehmensumsatzes gefördert werden. Für jedes Segment werden spezifische Produkte unter Berücksichtigung des jeweiligen Segments entwickelt und hergestellt. Mit jedem Produkt-Launch soll identifiziert werden, wie das neue Produkt im Laufe der Zeit den Verkauf in verschiedenen Kohorten gefördert hat. Mit der neuen Einstellung [!UICONTROL Latenztabelle] in der [!UICONTROL Kohortenanalyse] können das Verhalten und der Umsatz eines bestimmten Kundensegments vor und nach der Markteinführung analysiert werden. Anhand dieser Informationen kann festgestellt werden, durch welche Produkte neue Umsätze generiert werden und welche bei der Kundschaft weniger beliebt sind.
 
-## Individuelle Klebrigkeit - Anwendungsfall für die meisten treuen Benutzer
+## Anwendungsfall „Individuelle Treue – die meisten treuen Benutzenden“
 
-Bei einer großen Fluggesellschaft hängt der Erfolg und Umsatz zu einem großen Teil von wiederkehrenden und treuen Kunden ab. In vielen Fällen machen treue Reisende den Großteil des Umsatzes aus und die Bindung dieser Kunden ist entscheidend für den langfristigen Erfolg. Oft kann es sich schwierig gestalten herauszufinden, welche die treuesten und beständigsten Kunden sind. Mithilfe der neuen Einstellung [!UICONTROL Rollierende Berechnung] in der [!UICONTROL Kohortenanalyse] kann die Fluggesellschaft jedoch Filter für treue Kunden analysieren und herausfinden, welche Reisenden Monat für Monat zu Wiederholungskäufern wurden. Die Fluggesellschaft ist auch in der Lage, diese Reisenden mit Prämien und Vergünstigungen für ihre Treue anzusprechen. Darüber hinaus kann die Fluggesellschaft durch die Umstellung des Kohortentyps von Bindung auf Abwanderung feststellen, welche Kunden Monat für Monat keine Wiederholungskäufer sind, und diese Kunden mit Werbeaktionen ansprechen. So kann die Fluggesellschaft wieder mit diesen Kunden in Kontakt treten und sicherstellen, dass sie auch in Zukunft treue Kunden bleiben.
+Bei einer großen Fluggesellschaft hängt der Erfolg und Umsatz zu einem großen Teil von wiederkehrenden und treuen Kunden ab. In vielen Fällen machen treue Reisende den Großteil des Umsatzes aus und die Bindung dieser Kunden ist entscheidend für den langfristigen Erfolg. Oft kann es sich schwierig gestalten herauszufinden, welche die treuesten und beständigsten Kunden sind. Mithilfe der neuen Einstellung [!UICONTROL Rollierende Berechnung] in der [!UICONTROL Kohortenanalyse] kann die Fluggesellschaft jedoch Segmente treuer Kunden analysieren und herausfinden, welche Reisenden Monat für Monat zu Wiederholungskäufern wurden. Die Fluggesellschaft ist auch in der Lage, diese Reisenden mit Prämien und Vergünstigungen für ihre Treue anzusprechen. Darüber hinaus kann die Fluggesellschaft durch die Umstellung des Kohortentyps von Bindung auf Abwanderung feststellen, welche Kunden Monat für Monat keine Wiederholungskäufer sind, und diese Kunden mit Werbeaktionen ansprechen. So kann die Fluggesellschaft wieder mit diesen Kunden in Kontakt treten und sicherstellen, dass sie auch in Zukunft treue Kunden bleiben.
