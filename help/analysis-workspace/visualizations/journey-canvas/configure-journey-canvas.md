@@ -4,9 +4,9 @@ title: Journey-Arbeitsfläche
 feature: Visualizations
 role: User
 exl-id: 53984934-6fba-4f15-aeeb-d91039260553
-source-git-commit: 2b291c4aabfd6857dc29af0338760be80f179384
+source-git-commit: a909804e066339750c2271f6c65c108a6a6199f8
 workflow-type: tm+mt
-source-wordcount: '6222'
+source-wordcount: '6225'
 ht-degree: 1%
 
 ---
@@ -45,7 +45,7 @@ Weitere Informationen zur Journey-Arbeitsfläche finden ](/help/analysis-workspa
 
    | Feld | Funktion |
    |---------|----------|
-   | [!UICONTROL **Primäre Metrik**] | Bestimmt die Metrik, die bei der Berechnung der Prozentwerte und Zahlenwerte für jeden Knoten im Journey verwendet wird.<p>**Hinweis**: Der Umfang der in den einzelnen Prozentsätzen und Zahlenwerten enthaltenen Daten wird durch die Metrik bestimmt, die Sie im Feld **[!UICONTROL Journey-Arbeitsflächen-Container]** auswählen. Wenn beispielsweise **[!UICONTROL Person]** als Container festgelegt ist, umfassen die auf der Journey angezeigten Statistiken mehrere Sitzungen für eine bestimmte Person. Wenn **[!UICONTROL Sitzung]** als Container festgelegt ist, sind die auf der Journey angezeigten Statistiken auf eine einzige definierte Sitzung für eine bestimmte Person beschränkt.</p><p>Im Folgenden finden Sie Beispiele dafür, wie sich die primäre Metrik auf den Prozentsatz und die Zahlenwerte der einzelnen Knoten auswirkt:</p><ul><li>Wenn _Personen_ die primäre Metrik ist und _Person_ der Container ist, bewegen sich nur die Personen im Journey, deren Ereignis den Kriterien jedes aufeinander folgenden Knotens im Journey entspricht. Fallout tritt auf einem Knoten auf, wenn eine Person nie an einem der unmittelbar nächsten Knoten im Journey ankommt. Sie haben möglicherweise andere Aktionen auf der Site durchgeführt, erfüllten jedoch nicht die Kriterien, die von einem der unmittelbar folgenden Knoten definiert wurden.</li><li>Wenn _&quot;Personen&quot;_ die primäre Kennzahl und _&quot;Sitzung&quot;_ die Container ist, werden nur die Personen mit einer Ereignis, die den Kriterien der einzelnen Knoten in der Journey entspricht, innerhalb einer einzigen Sitzung durch die Journey verschoben. Fallout tritt auf einer Knoten auf, wenn eine Person innerhalb einer einzigen Sitzung nie einen der unmittelbar nächsten Knoten in der Journey erreicht hat. Sie hätten innerhalb der Sitzung möglicherweise andere Aktionen auf der Website ausgeführt, aber sie erfüllten nicht die Kriterien, die von einem der unmittelbar folgen Knoten definiert wurden.</li></ul> <p>Die Hauptmetrik wirkt sich auf die folgenden Aspekte der Journey-Arbeitsflächen-Visualisierung aus:</p><ul><li>Die Gesamtzahl, die auf jedem Knoten angezeigt wird.  <p>Wenn beispielsweise Ereignisse die primäre Metrik ist, zeigt jeder Knoten die Anzahl der Personen an, die ein Ereignis hatten, das den Kriterien dieses Knotens entspricht (und jeden vorherigen Knoten, der in der Journey dazu führte).</p></li><li>Der auf jedem Knoten angezeigte Prozentsatz. (Nachdem die Visualisierung erstellt wurde, können Sie das Dropdown-Menü **[!UICONTROL Prozentwert]** verwenden, um entweder den Prozentsatz der Summe, den Prozentsatz des vorherigen Knotens oder den Prozentsatz des Startknotens anzuzeigen.)<p>Wenn beispielsweise Ereignisse die primäre Metrik ist, zeigt jeder Knoten den Prozentsatz der Personen an, die ein Ereignis hatten, das den Kriterien dieses Knotens entspricht (und jeden vorherigen Knoten, der in der Journey dazu führte).</p></li><li>Wenn eine Dimension zur Visualisierung hinzugefügt wird, werden die drei wichtigsten Knoten der Visualisierung hinzugefügt, basierend auf der primären Metrik.</li></ul> |
+   | [!UICONTROL **Primäre Metrik**] | Bestimmt die Metrik, die bei der Berechnung der Prozentwerte und Zahlenwerte für jeden Knoten im Journey verwendet wird.<p>**Hinweis**: Der Umfang der in den einzelnen Prozentsätzen und Zahlenwerten enthaltenen Daten wird durch die Metrik bestimmt, die Sie im Feld **[!UICONTROL Journey-Arbeitsflächen-Container]** auswählen. Wenn beispielsweise **[!UICONTROL Person]** als Container festgelegt ist, umfassen die auf der Journey angezeigten Statistiken mehrere Sitzungen für eine bestimmte Person. Wenn **[!UICONTROL Sitzung]** als Container festgelegt ist, sind die auf der Journey angezeigten Statistiken auf eine einzige definierte Sitzung für eine bestimmte Person beschränkt.</p><p>Im Folgenden finden Sie Beispiele dafür, wie sich die primäre Metrik auf den Prozentsatz und die Zahlenwerte der einzelnen Knoten auswirkt:</p><ul><li>Wenn _Personen_ die primäre Metrik ist und _Person_ der Container ist, bewegen sich nur die Personen im Journey, deren Ereignis den Kriterien jedes aufeinander folgenden Knotens im Journey entspricht. Fallout tritt auf einem Knoten auf, wenn eine Person nie an einem der unmittelbar nächsten Knoten im Journey ankommt. Sie haben möglicherweise andere Aktionen auf der Site durchgeführt, erfüllten jedoch nicht die Kriterien, die von einem der unmittelbar folgenden Knoten definiert wurden.</li><li>Wenn _Personen_ die primäre Metrik ist und _Sitzung_ der Container ist, bewegen sich nur die Personen im Journey, deren Ereignis den Kriterien der einzelnen Knoten auf dem Journey innerhalb einer einzigen Sitzung entspricht. Fallout tritt auf einem Knoten auf, wenn eine Person innerhalb einer einzigen Sitzung nie zu einem der unmittelbar nächsten Knoten auf dem Journey gelangt ist. Sie haben möglicherweise andere Aktionen auf der Site innerhalb der Sitzung durchgeführt, aber sie erfüllten nicht die Kriterien, die von einem der unmittelbar folgenden Knoten definiert wurden.</li></ul> <p>Die Hauptmetrik wirkt sich auf die folgenden Aspekte der Journey-Arbeitsflächen-Visualisierung aus:</p><ul><li>Die Gesamtzahl, die auf jedem Knoten angezeigt wird.  <p>Wenn beispielsweise Ereignisse die primäre Metrik ist, zeigt jeder Knoten die Anzahl der Personen an, die ein Ereignis hatten, das den Kriterien dieses Knotens entspricht (und jeden vorherigen Knoten, der in der Journey dazu führte).</p></li><li>Der auf jedem Knoten angezeigte Prozentsatz. (Nachdem die Visualisierung erstellt wurde, können Sie das Dropdown-Menü **[!UICONTROL Prozentwert]** verwenden, um entweder den Prozentsatz der Summe, den Prozentsatz des vorherigen Knotens oder den Prozentsatz des Startknotens anzuzeigen.)<p>Wenn beispielsweise Ereignisse die primäre Metrik ist, zeigt jeder Knoten den Prozentsatz der Personen an, die ein Ereignis hatten, das den Kriterien dieses Knotens entspricht (und jeden vorherigen Knoten, der in der Journey dazu führte).</p></li><li>Wenn eine Dimension zur Visualisierung hinzugefügt wird, werden die drei wichtigsten Knoten der Visualisierung hinzugefügt, basierend auf der primären Metrik.</li></ul> |
    | [!UICONTROL **Sekundäre Metrik**] | Bestimmt die sekundäre Metrik, die bei der Berechnung der Prozentwerte und Zahlenwerte für jeden Knoten im Journey verwendet wird. Die sekundäre Metrik ist optional. <p>**Hinweis**: Der Umfang der in den einzelnen Prozentsätzen und Zahlenwerten enthaltenen Daten wird durch die Metrik bestimmt, die Sie im Feld **[!UICONTROL Journey-Arbeitsflächen-Container]** auswählen. Wenn beispielsweise **[!UICONTROL Person]** als Container festgelegt ist, umfassen die auf der Journey angezeigten Statistiken mehrere Sitzungen für eine bestimmte Person. Wenn **[!UICONTROL Sitzung]** als Container festgelegt ist, sind die auf der Journey angezeigten Statistiken auf eine einzige definierte Sitzung für eine bestimmte Person beschränkt.</p><p>Wenn eine sekundäre Metrik konfiguriert wird, wirkt sich dies auf die folgenden Aspekte der Journey-Arbeitsflächen-Visualisierung aus:</p><ul><li>Die Gesamtzahl, die auf jedem Knoten unter der primären Metrik angezeigt wird. <p>Wenn beispielsweise Konten die sekundäre Metrik ist, wird die Anzahl der Konten auf dem Knoten für alle Personen angezeigt, die diesen Knoten auf der Journey erreicht haben.</p></li><li>Der Prozentsatz, der für jeden Knoten unter der primären Metrik angezeigt wird. (Nachdem die Visualisierung erstellt wurde, können Sie entweder den Prozentsatz der Gesamtzahl oder des Startknotens anzeigen.)</li><p>Wenn beispielsweise „Sitzungen“ die sekundäre Metrik ist, zeigt jeder Knoten den Prozentsatz der Sitzungen an, die diesen Knoten auf der Journey erreicht haben (entweder den Prozentsatz der Gesamtzahl oder des Startknotens).</p></li></ul> |
    | [!UICONTROL **Journey Optimizer Journey**]<!-- name? --> | Wählen Sie die Journey Optimizer-Journey aus, die Sie als Grundlage für Ihre Analyse auf der Journey-Arbeitsfläche verwenden möchten. Journey mit einem der folgenden Status sind verfügbar: Live, Stopped oder Beendet <p>Alternativ können Sie diese Option leer lassen, wenn Sie eine leere Arbeitsfläche benötigen, auf der Sie Ihre Analyse in Analysis Workspace erstellen können.</p> <p>Wenn Sie eine Journey Optimizer-Journey auf der Journey-Arbeitsfläche analysieren, wird die Journey in der gleichen Reihenfolge, Reihenfolge und Struktur angezeigt wie in Journey Optimizer. Weitere Informationen finden Sie unter [Analysieren von Journey Optimizer-Journey](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md#analyze-journey-optimizer-journeys) in [Übersicht über die Journey-Arbeitsfläche](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md).</p><p>**Hinweis**: Diese Option wird nur angezeigt, wenn Journey Optimizer-Daten in derselben Datenansicht erkannt werden, die im Analysis Workspace-Bedienfeld ausgewählt ist, in dem Sie die Visualisierung hinzufügen. Informationen zum Ändern der Datenansicht in einem Bedienfeld in Analysis Workspace finden Sie unter [Übersicht über Analysis Workspace](/help/analysis-workspace/home.md).</p> |
 
@@ -57,11 +57,11 @@ Weitere Informationen zur Journey-Arbeitsfläche finden ](/help/analysis-workspa
 
 1. Wählen Sie [!UICONTROL **Erstellen**] aus.
 
-   Wenn Sie eine Journey Optimizer-Journey ausgewählt haben, wird die Journey in der gleichen Reihenfolge, Reihenfolge und Struktur angezeigt wie in Journey Optimizer. (Only users with access to Journey optimizer can select a Journey Optimizer journey.)
+   Wenn Sie eine Journey Optimizer-Journey ausgewählt haben, wird die Journey in der gleichen Reihenfolge, Reihenfolge und Struktur angezeigt wie in Journey Optimizer. (Nur Benutzer mit Zugriff auf Journey Optimizer können eine Journey Optimizer-Journey auswählen.)
 
    <!-- add screen shot -->
 
-   Wenn Sie keine Journey Optimizer-Journey ausgewählt haben, wird eine leere Arbeitsfläche angezeigt, auf der Sie mit dem Hinzufügen von Knoten zur Journey beginnen können. (Only users with access to Journey optimizer can select a Journey Optimizer journey.)
+   Wenn Sie keine Journey Optimizer-Journey ausgewählt haben, wird eine leere Arbeitsfläche angezeigt, auf der Sie mit dem Hinzufügen von Knoten zur Journey beginnen können. (Nur Benutzer mit Zugriff auf Journey Optimizer können eine Journey Optimizer-Journey auswählen.)
 
    <!-- add screen shot -->
 
@@ -84,10 +84,10 @@ So konfigurieren Sie Einstellungen für die Journey-Arbeitsflächen-Visualisieru
 
    | Einstellung | Funktion |
    |---------|----------|
-   | [!UICONTROL **Prozentwert**] | Der auf jedem Knoten im Journey angezeigte Prozentwert.<p>![Prozentwert](assets/journey-canvas-percentage.png)</p> <p>Beachten Sie beim Konfigurieren der auf den Knoten auf der Journey angezeigten Prozentwerte Folgendes:</p><ul><li>Für die primäre Metrik wird auf jedem Knoten ein Prozentsatz angezeigt. Ein Prozentsatz wird auch für die sekundäre Metrik angezeigt, wenn eine konfiguriert ist. (Weitere Informationen zu den Einstellungen der primären und sekundären Metrik finden Sie unter [Erstellen einer Journey-Arbeitsflächen-Visualisierung](#begin-building-a-journey-canvas-visualization).)</li><li>Der Prozentsatz umfasst alle Personen oder Sitzungen, die in der Datenansicht innerhalb des Datumsbereichs des Bedienfelds enthalten sind. Ob _Personen_ oder _Sitzungen_ verwendet wird, hängt von der Container-Einstellung ab. (Weitere Informationen zur Container-Einstellung finden Sie unter [Erstellen einer Journey-Arbeitsflächen-Visualisierung](#begin-building-a-journey-canvas-visualization).)</li></ul> <p>Wählen Sie aus den folgenden Optionen:</p> <ul><li>[!UICONTROL **Prozent Beginn Knoten**]: Berechnet die für jeden Knoten angezeigten Prozentwerte im Verhältnis zum Beginn Knoten. Prozentsätze basieren auf der ausgewählten primären und sekundären Kennzahl. <p>Eine _Beginn Knoten_ ist eine Knoten, der keine verbundenen Knoten vorausgehen.</p><p>Eine Journey kann mehrere Beginn Knoten enthalten. Wird jedoch [!UICONTROL **Prozent der**]) verwendet, wenn die Journey zwei oder mehr Startknoten enthält, die zu einem gemeinsamen Knoten führen. Wenn Sie [!UICONTROL **Prozent des Startknotens**] verwenden möchten, aktualisieren Sie die Journey, damit jeder Knoten auf der Journey auf einen einzelnen Startknoten zurückverfolgt werden kann.</p></li><li>[!UICONTROL **Prozent des vorherigen Knotens**]: Berechnet die Prozentsätze, die auf jedem Knoten in Bezug auf den vorherigen Knoten angezeigt werden. Prozentsätze basieren auf der ausgewählten primären und sekundären Metrik.</li><li>[!UICONTROL **Prozent der**]: Berechnet die Prozentsätze, die auf jedem Knoten in Bezug auf alle Daten in der Datenansicht angezeigt werden. Prozentsätze basieren auf der ausgewählten primären und sekundären Metrik.</li></ul> |
-   | [!UICONTROL **Pfeileinstellungen**] | Die Pfeile, die zwischen den Knoten auf der Journey-Arbeitsfläche angezeigt werden, können so konfiguriert werden, dass benutzerdefinierte Beschriftungen und Werte angezeigt werden. <p>![Pfeileinstellungen](assets/journey-canvas-arrow-settings.png)</p><p>_Beschriftungen_ sind benutzerdefinierte Namen, die auf Pfeilen angezeigt werden. Auf einem Pfeil wird nur eine einzige Beschriftung angezeigt. Kennzeichnungen können eine der folgenden sein und werden in der folgenden Reihenfolge angezeigt:</p><ol><li>Ein benutzerdefinierter Name, der von der Journey-Arbeitsfläche hinzugefügt wurde (wie unter [Hinzufügen oder Aktualisieren einer Beschriftung auf einem Pfeil](#add-or-update-a-label-on-an-arrow) beschrieben)</li><li>Ein Journey Optimizer-Label</li><li>Eine Journey Optimizer-Bedingung</li></ol><p>_Werte_ sind die Zahlen und Prozentsätze, die auf den Pfeilen angezeigt werden. Sie geben die Personen oder Sitzungen an, die auf dem Journey von einem Knoten zum nächsten verschoben wurden. (Mit anderen Worten, diejenigen, die nicht aus dem Journey gefallen sind.) </p><p>The following options are available for journeys that did not originate from Journey Optimizer and for Journey Optimizer journeys that have not been significantly modified in Journey canvas: (Significant modifications include adding or removing nodes, adding or removing arrows, or changing the components of a node.)</p><ul><li>[!UICONTROL **Keine Beschriftungen**]: Auf den Pfeilen auf der Journey werden keine Beschriftungen angezeigt. </br> This option is available only if the journey has been modified in </li><li>[!UICONTROL **Nur Beschriftungen**]: Beschriftungen werden auf den Pfeilen auf der Journey angezeigt.</li></ul><p>Die folgenden Optionen sind für Journey Optimizer-Journey verfügbar, die in der Journey-Arbeitsfläche erheblich geändert wurden: (Zu den wichtigen Änderungen gehören das Hinzufügen oder Entfernen von Knoten, das Hinzufügen oder Entfernen von Pfeilen oder das Ändern der Knotenkomponenten.)(**Hinweis**: Diese Optionen werden nur angezeigt, wenn Journey Optimizer-Daten in derselben Datenansicht erkannt werden, die im Analysis Workspace-Bedienfeld ausgewählt ist, in dem Sie die Visualisierung hinzufügen. Informationen zum Ändern der Datenansicht in einem Bedienfeld in Analysis Workspace finden Sie unter [Übersicht über Analysis Workspace](/help/analysis-workspace/home.md).)</p><ul><li>[!UICONTROL **Keine Beschriftungen oder Werte**]: Auf der Journey werden keine Beschriftungen oder Werte auf Pfeilen angezeigt.</li><li>[!UICONTROL **Nur Beschriftungen**]: Auf den Pfeilen auf der Journey werden nur Beschriftungen angezeigt. Werte werden nicht angezeigt.</li><li>[!UICONTROL **Nur Werte**]: Auf der Journey werden nur Werte auf den Pfeilen angezeigt. Bezeichnungen werden nicht angezeigt.</li><li>[!UICONTROL **Werte und Beschriftungen**]: Sowohl Beschriftungen als auch Werte werden auf den Pfeilen auf der Journey angezeigt.</li></ul> |
+   | [!UICONTROL **Prozentwert**] | Der auf jedem Knoten im Journey angezeigte Prozentwert.<p>![Prozentwert](assets/journey-canvas-percentage.png)</p> <p>Beachten Sie beim Konfigurieren der auf den Knoten auf der Journey angezeigten Prozentwerte Folgendes:</p><ul><li>Für die primäre Metrik wird auf jedem Knoten ein Prozentsatz angezeigt. Ein Prozentsatz wird auch für die sekundäre Metrik angezeigt, wenn eine konfiguriert ist. (Weitere Informationen zu den Einstellungen der primären und sekundären Metrik finden Sie unter [Erstellen einer Journey-Arbeitsflächen-Visualisierung](#begin-building-a-journey-canvas-visualization).)</li><li>Der Prozentsatz umfasst alle Personen oder Sitzungen, die in der Datenansicht innerhalb des Datumsbereichs des Bedienfelds enthalten sind. Ob _Personen_ oder _Sitzungen_ verwendet wird, hängt von der Container-Einstellung ab. (Weitere Informationen zur Container-Einstellung finden Sie unter [Erstellen einer Journey-Arbeitsflächen-Visualisierung](#begin-building-a-journey-canvas-visualization).)</li></ul> <p>Wählen Sie aus den folgenden Optionen:</p> <ul><li>[!UICONTROL **Prozent des Startknotens**]: Berechnet die Prozentsätze, die für jeden Knoten in Bezug auf den Startknoten angezeigt werden. Prozentsätze basieren auf der ausgewählten primären und sekundären Metrik. <p>Ein _Startknoten_ ist ein Knoten, dem keine verbundenen Knoten vorangestellt sind.</p><p>Ein Journey kann mehrere Startknoten enthalten. Wird jedoch [!UICONTROL **Prozent der**]) verwendet, wenn die Journey zwei oder mehr Startknoten enthält, die zu einem gemeinsamen Knoten führen. Wenn Sie [!UICONTROL **Prozent des Startknotens**] verwenden möchten, aktualisieren Sie die Journey, damit jeder Knoten auf der Journey auf einen einzelnen Startknoten zurückverfolgt werden kann.</p></li><li>[!UICONTROL **Prozent des vorherigen Knotens**]: Berechnet die Prozentsätze, die auf jedem Knoten in Bezug auf den vorherigen Knoten angezeigt werden. Prozentsätze basieren auf der ausgewählten primären und sekundären Metrik.</li><li>[!UICONTROL **Prozent der**]: Berechnet die Prozentsätze, die auf jedem Knoten in Bezug auf alle Daten in der Datenansicht angezeigt werden. Prozentsätze basieren auf der ausgewählten primären und sekundären Metrik.</li></ul> |
+   | [!UICONTROL **Pfeileinstellungen**] | Die Pfeile, die zwischen den Knoten auf der Journey-Arbeitsfläche angezeigt werden, können so konfiguriert werden, dass benutzerdefinierte Beschriftungen und Werte angezeigt werden. <p>![Pfeileinstellungen](assets/journey-canvas-arrow-settings.png)</p><p>_Beschriftungen_ sind benutzerdefinierte Namen, die auf Pfeilen angezeigt werden. Auf einem Pfeil wird nur eine einzige Beschriftung angezeigt. Kennzeichnungen können eine der folgenden sein und werden in der folgenden Reihenfolge angezeigt:</p><ol><li>Ein benutzerdefinierter Name, der von der Journey-Arbeitsfläche hinzugefügt wurde (wie unter [Hinzufügen oder Aktualisieren einer Beschriftung auf einem Pfeil](#add-or-update-a-label-on-an-arrow) beschrieben)</li><li>Ein Journey Optimizer-Label</li><li>Eine Journey Optimizer-Bedingung</li></ol><p>_Werte_ sind die Zahlen und Prozentsätze, die auf den Pfeilen angezeigt werden. Sie geben die Personen oder Sitzungen an, die auf dem Journey von einem Knoten zum nächsten verschoben wurden. (Mit anderen Worten, diejenigen, die nicht aus dem Journey gefallen sind.) </p><p>Die folgenden Optionen sind für Journey verfügbar, die nicht aus Journey Optimizer stammen, und für Journey Optimizer-Journey, die auf der Journey-Arbeitsfläche nicht wesentlich geändert wurden: (Zu den wichtigen Änderungen gehören das Hinzufügen oder Entfernen von Knoten, das Hinzufügen oder Entfernen von Pfeilen oder das Ändern der Komponenten eines Knotens.)</p><ul><li>[!UICONTROL **Keine Beschriftungen**]: Auf den Pfeilen auf der Journey werden keine Beschriftungen angezeigt. </br> Diese Option ist nur verfügbar, wenn die Journey geändert wurde in </li><li>[!UICONTROL **Nur Beschriftungen**]: Beschriftungen werden auf den Pfeilen auf der Journey angezeigt.</li></ul><p>Die folgenden Optionen sind für Journey Optimizer-Journey verfügbar, die in der Journey-Arbeitsfläche erheblich geändert wurden: (Zu den wichtigen Änderungen gehören das Hinzufügen oder Entfernen von Knoten, das Hinzufügen oder Entfernen von Pfeilen oder das Ändern der Knotenkomponenten.)(**Hinweis**: Diese Optionen werden nur angezeigt, wenn Journey Optimizer-Daten in derselben Datenansicht erkannt werden, die im Analysis Workspace-Bedienfeld ausgewählt ist, in dem Sie die Visualisierung hinzufügen. Informationen zum Ändern der Datenansicht in einem Bedienfeld in Analysis Workspace finden Sie unter [Übersicht über Analysis Workspace](/help/analysis-workspace/home.md).)</p><ul><li>[!UICONTROL **Keine Beschriftungen oder Werte**]: Auf der Journey werden keine Beschriftungen oder Werte auf Pfeilen angezeigt.</li><li>[!UICONTROL **Nur Beschriftungen**]: Auf den Pfeilen auf der Journey werden nur Beschriftungen angezeigt. Werte werden nicht angezeigt.</li><li>[!UICONTROL **Nur Werte**]: Auf der Journey werden nur Werte auf den Pfeilen angezeigt. Bezeichnungen werden nicht angezeigt.</li><li>[!UICONTROL **Werte und Beschriftungen**]: Sowohl Beschriftungen als auch Werte werden auf den Pfeilen auf der Journey angezeigt.</li></ul> |
    | [!UICONTROL **Fallout anzeigen**] | Fallout-Daten zeigen einen Prozentsatz und eine Anzahl an, die aus jedem Knoten des Journey herausfallen. Fallout-Daten basieren auf der Metrik, die den Container-Einstellungen der Journey zugeordnet ist; sie basieren nicht auf der primären oder sekundären Metrik. <p>![Fallout](assets/journey-canvas-fallout.png)</p><p>Standardmäßig lautet der Container _Person_, sodass die für Fallout-Daten verwendete Metrik _Personen_ lautet. Wenn der Container in _Sitzung_ geändert wird, wird für Fallout-Daten _Sitzungen_ usw. verwendet.</p><p>Wenn beispielsweise _Person_ als Container-Einstellung festgelegt ist, zeigt Fallout den Prozentsatz und die Anzahl der Personen auf jedem Knoten der Journey an, die nie auf einem der unmittelbar nächsten Knoten angekommen sind. Sie haben möglicherweise andere Aktionen auf der Site durchgeführt, erfüllten jedoch nicht die Kriterien, die von einem der unmittelbar folgenden Knoten definiert wurden.</p> <p>Weitere Informationen zur Einstellung des Journey-Arbeitsflächen-Containers finden Sie unter [Erstellen einer Journey-Arbeitsflächen-Visualisierung](#begin-building-a-journey-canvas-visualization). |
-   | **Zoomsteuerelemente** | Die folgenden Zoom-Steuerelemente sind in der oberen rechten Ecke der Arbeitsfläche verfügbar:<ul><li>**Vergrößern** ![Vergrößern-Symbol](assets/zoom-in-icon.png): Vergrößert bestimmte Bereiche der Visualisierung.<p>Sie können auch Maussteuerelemente verwenden, z. B. Pinch auf einem Trackpad.</p></li><li>**Zoom out** ![zoom out icon](assets/zoom-out-icon.png): Shrinks the visualization to allow more room on the canvas.<p>Sie können auch Maussteuerelemente verwenden, z. B. Pinch auf einem Trackpad.</p></li><li>**Bildschirm anpassen** ![Symbol für Bildschirm anpassen](assets/fill-screen-icon.png): Passt die aktuellen Zoom- und Schwenkeinstellungen an, um den Bildschirm mit der vollständigen Visualisierung zu füllen.</li></ul><p>Um nach dem Vergrößern oder Verkleinern ein- und auszuschwenken, klicken Sie mit der Maus und ziehen Sie die Maus an die gewünschte Position.</p> |
+   | **Zoomsteuerelemente** | Die folgenden Zoom-Steuerelemente sind in der oberen rechten Ecke der Arbeitsfläche verfügbar:<ul><li>**Vergrößern** ![Vergrößern-Symbol](assets/zoom-in-icon.png): Vergrößert bestimmte Bereiche der Visualisierung.<p>Sie können auch Maussteuerelemente verwenden, z. B. Pinch auf einem Trackpad.</p></li><li>**Auszoomen** ![Auszoomen-Symbol](assets/zoom-out-icon.png): Verkleinert die Visualisierung, um mehr Platz auf der Arbeitsfläche zu schaffen.<p>Sie können auch Maussteuerelemente verwenden, z. B. Pinch auf einem Trackpad.</p></li><li>**Bildschirm anpassen** ![Symbol für Bildschirm anpassen](assets/fill-screen-icon.png): Passt die aktuellen Zoom- und Schwenkeinstellungen an, um den Bildschirm mit der vollständigen Visualisierung zu füllen.</li></ul><p>Um nach dem Vergrößern oder Verkleinern ein- und auszuschwenken, klicken Sie mit der Maus und ziehen Sie die Maus an die gewünschte Position.</p> |
 
 1. Fahren Sie mit [Knoten hinzufügen](#add-nodes) fort.
 
@@ -110,11 +110,11 @@ Sie können Knoten wie folgt erstellen: indem Sie Workspace-Komponenten von der 
    | Typ der Komponente | Platzierung der Komponente | Aktualisierungen der Visualisierung nach dem Hinzufügen eines Knotens |
    |---------|----------|----------|
    | Metrik | Leerer Bereich der Arbeitsfläche | Der Knoten zeigt an, wo die Komponente abgelegt wurde, ohne Verbindung zu vorhandenen Knoten. |
-   | Metrik | Eine vorhandene Knoten | Die Komponente wird automatisch mit dem vorhandenen Knoten kombiniert. (Siehe [Kombinieren von ](#combine-nodes)) für weitere Informationen.)</p> |
-   | Metrik | Ein Pfeil zwischen zwei vorhandenen Knoten | Die Knoten wird zwischen den beiden vorhandenen Knoten angezeigt, auf der die Komponente abgelegt wurde und mit beiden vorhandenen Knoten verbunden ist. (Siehe [Verbinden Sie Knoten,](#connect-nodes) um weitere Informationen zu erhalten.)</p> |
+   | Metrik | Ein vorhandener Knoten | Die Komponente wird automatisch mit dem vorhandenen Knoten kombiniert. (Siehe [Kombinieren von ](#combine-nodes)) für weitere Informationen.)</p> |
+   | Metrik | Ein Pfeil zwischen zwei vorhandenen Knoten | Der Knoten wird zwischen den beiden vorhandenen Knoten angezeigt, auf denen die Komponente abgelegt wurde, und ist mit beiden vorhandenen Knoten verbunden. (Weitere Informationen finden [ unter &quot;](#connect-nodes)&quot;.)</p> |
    | Dimension | Leerer Bereich der Arbeitsfläche | 3 Knoten werden für die drei wichtigsten Dimensionselemente erstellt, in denen die Komponente abgelegt wurde, ohne Verbindung zu vorhandenen Knoten. (**Hinweis:** Wenn nur 1 oder 2 Knoten angezeigt werden, bedeutet dies, dass nur für 1 oder 2 der Dimensionselemente Daten verfügbar sind. Wenn keine Knoten angezeigt werden, bedeutet dies, dass für keines der Dimensionselemente Daten verfügbar sind. Versuchen Sie in diesem Fall, ihn zu einem anderen Punkt der Journey hinzuzufügen, den Datumsbereich der Visualisierung anzupassen oder eine andere Dimension auszuwählen.)<p>Halten Sie die Umschalttaste gedrückt, wenn Sie die Dimension auf der Arbeitsfläche ablegen, um sie als einen einzelnen Knoten mit drei Dimensionselementen hinzuzufügen.</p><p></p> |
    | Dimension | Ein vorhandener Knoten | Eine Aufschlüsselung wird automatisch auf den Knoten angewendet, wobei die fünf wichtigsten Dimensionselemente angezeigt werden.<!--what happens if you hold Shift?--><p>Um die Aufschlüsselung in einer neuen Freiformtabellen-Visualisierung anzuzeigen, klicken Sie auf den [!UICONTROL **In einer Freiformtabelle öffnen**] auf dem Knoten .</p> |
-   | Dimension | Ein Pfeil, der zwei vorhandene Knoten verbindet | 3 nodes are created for the top 3 dimension items that follow the first event after the first node (of people/sessions who eventually reach the second node). The nodes display between the two existing nodes where the component was dropped and each node is connected to both existing nodes. (**Hinweis:** Wenn nur 1 oder 2 Knoten angezeigt werden, bedeutet dies, dass nur für 1 oder 2 der Dimensionselemente Daten verfügbar sind. Wenn keine Knoten angezeigt werden, bedeutet dies, dass für keines der Dimensionselemente Daten verfügbar sind. Versuchen Sie in diesem Fall, ihn zu einem anderen Punkt der Journey hinzuzufügen, den Datumsbereich der Visualisierung anzupassen oder eine andere Dimension auszuwählen.)<p>Halten Sie die Umschalttaste gedrückt, wenn Sie die Dimension auf der Arbeitsfläche ablegen, um sie als einen einzelnen Knoten mit drei Dimensionselementen hinzuzufügen. (Weitere Informationen finden [ unter &quot;](#connect-nodes)&quot;.)</p> |
+   | Dimension | Ein Pfeil, der zwei vorhandene Knoten verbindet | 3 Knoten werden für die drei wichtigsten Dimensionselemente erstellt, die dem ersten Ereignis nach dem ersten Knoten folgen (von Personen/Sitzungen, die schließlich den zweiten Knoten erreichen). Die Knoten werden zwischen den beiden vorhandenen Knoten angezeigt, auf denen die Komponente abgelegt wurde, und jeder Knoten ist mit beiden vorhandenen Knoten verbunden. (**Hinweis:** Wenn nur 1 oder 2 Knoten angezeigt werden, bedeutet dies, dass nur für 1 oder 2 der Dimensionselemente Daten verfügbar sind. Wenn keine Knoten angezeigt werden, bedeutet dies, dass für keines der Dimensionselemente Daten verfügbar sind. Versuchen Sie in diesem Fall, ihn zu einem anderen Punkt der Journey hinzuzufügen, den Datumsbereich der Visualisierung anzupassen oder eine andere Dimension auszuwählen.)<p>Halten Sie die Umschalttaste gedrückt, wenn Sie die Dimension auf der Arbeitsfläche ablegen, um sie als einen einzelnen Knoten mit drei Dimensionselementen hinzuzufügen. (Weitere Informationen finden [ unter &quot;](#connect-nodes)&quot;.)</p> |
    | Dimensionselement | Leerer Bereich der Arbeitsfläche | Der Knoten zeigt an, wo die Komponente abgelegt wurde, ohne Verbindung zu vorhandenen Knoten. |
    | Dimensionselement | Ein vorhandener Knoten | Die Komponente wird automatisch mit dem vorhandenen Knoten kombiniert. |
    | Dimensionselement | Ein Pfeil, der zwei vorhandene Knoten verbindet | Der Knoten wird zwischen den beiden vorhandenen Knoten angezeigt, auf denen die Komponente abgelegt wurde, und ist mit beiden vorhandenen Knoten verbunden. (Weitere Informationen finden [ unter &quot;](#connect-nodes)&quot;.)</p> |
@@ -124,9 +124,9 @@ Sie können Knoten wie folgt erstellen: indem Sie Workspace-Komponenten von der 
    | Datumsbereich | Leerer Bereich der Arbeitsfläche | Der Knoten zeigt an, wo die Komponente abgelegt wurde, ohne Verbindung zu anderen Knoten.<p>Zu den auf dem Knoten angezeigten Zahlen und Prozentsätzen gehört die Gesamtanzahl der primären Metrik, gefiltert nach dem ausgewählten Datumsbereich.</p> <p>Wenn beispielsweise Personen als primäre Metrik für den Journey ausgewählt ist, werden durch Hinzufügen eines Datumsbereichs von „Diesen Monat“ zu einem leeren Bereich der Arbeitsfläche alle Personen angezeigt, die im aktuellen Monat ein Ereignis hatten.</p> |
    | Datumsbereich | Ein vorhandener Knoten | Wendet den Datumsbereich auf den vorhandenen Knoten an. |
    | Datumsbereich | Ein Pfeil, der zwei Knoten verbindet | Der Knoten wird zwischen den beiden vorhandenen Knoten angezeigt, auf denen die Komponente abgelegt wurde, und ist mit beiden vorhandenen Knoten verbunden. (Weitere Informationen finden [ unter &quot;](#connect-nodes)&quot;.)</p><p>Wendet den Datumsbereich auf den Punkt des Pfads an, an dem die Komponente abgelegt wurde.</p> |
-   | Mehrere Komponenten | A blank area of the canvas | **Wenn keine der Komponenten Dimensionen sind:**<p>Jede Komponente wird als separater Knoten angezeigt, in dem die Komponenten entfernt wurden, ohne Verbindung zu vorhandenen Knoten.</p><p>Halten Sie die Umschalttaste gedrückt, wenn Sie die Komponenten auf der Arbeitsfläche ablegen, um sie als einen kombinierten Knoten hinzuzufügen. </p><p>**Wenn eine der Komponenten, die Sie hinzufügen, Dimensionen sind:**</p><p>Jede Komponente wird als separater Knoten angezeigt, in dem die Komponenten entfernt wurden, ohne Verbindung zu vorhandenen Knoten.</p><p>Es kann jeweils nur ein Dimension hinzugefügt werden. Wenn die Dimension hinzugefügt wird, werden 3 Knoten für die drei Dimensionselemente erstellt, in denen die Komponente am häufigsten abgelegt wurde.</p><p>Halten Sie die Umschalttaste gedrückt, wenn Sie die Komponenten auf der Arbeitsfläche ablegen, um sie als eine kombinierte Knoten hinzuzufügen. Die ersten 3 Dimension Elemente werden mit jeder Knoten kombiniert. (Siehe [Kombinieren Sie Knoten,](#combine-nodes) um weitere Informationen anzuzeigen.)</p> |
+   | Mehrere Komponenten | Ein leerer Bereich der Arbeitsfläche | **Wenn keine der Komponenten Dimensionen sind:**<p>Jede Komponente wird als separater Knoten angezeigt, in dem die Komponenten entfernt wurden, ohne Verbindung zu vorhandenen Knoten.</p><p>Halten Sie die Umschalttaste gedrückt, wenn Sie die Komponenten auf der Arbeitsfläche ablegen, um sie als einen kombinierten Knoten hinzuzufügen. </p><p>**Wenn eine der Komponenten, die Sie hinzufügen, Dimensionen sind:**</p><p>Jede Komponente wird als separater Knoten angezeigt, in dem die Komponenten entfernt wurden, ohne Verbindung zu vorhandenen Knoten.</p><p>Es kann jeweils nur eine Dimension hinzugefügt werden. Wenn die Dimension hinzugefügt wird, werden 3 Knoten für die drei Dimensionselemente erstellt, in denen die Komponente am häufigsten abgelegt wurde.</p><p>Halten Sie die Umschalttaste gedrückt, wenn Sie die Komponenten auf der Arbeitsfläche ablegen, um sie als einen kombinierten Knoten hinzuzufügen. Die drei wichtigsten Dimensionselemente werden mit jedem Knoten kombiniert. (Siehe [Kombinieren von ](#combine-nodes)) für weitere Informationen.)</p> |
    | Mehrere Komponenten | Ein vorhandener Knoten | Alle Komponenten werden mit dem vorhandenen Knoten kombiniert.<p>Wenn es sich bei einer der Komponenten, die Sie hinzufügen, um Dimensionen handelt, werden die drei wichtigsten Dimensionselemente mit dem Knoten kombiniert.</p> <p>Es kann jeweils nur eine Dimension hinzugefügt werden.</p> |
-   | Mehrere Komponenten | Ein Pfeil, der zwei vorhandene Knoten verbindet | **Wenn keine der Komponenten Dimensionen sind:**<p>Jede Komponente wird als separater Knoten angezeigt, in dem die Komponenten abgelegt wurden und jeder Knoten mit beiden vorhandenen Knoten verbunden ist. (Weitere Informationen finden [ unter &quot;](#connect-nodes)&quot;.)</p><p>Halten Sie die Umschalttaste gedrückt, wenn Sie die Komponenten auf der Arbeitsfläche ablegen, um sie als einen kombinierten Knoten hinzuzufügen. (Components must be of the same type to be combined into a single node.) (See [Combine nodes](#combine-nodes) for more information.)</p><p>**If any of the components you are adding are dimensions:**</p><p>Jede Komponente wird als separater Knoten angezeigt, in dem die Komponenten abgelegt wurden und jeder Knoten mit beiden vorhandenen Knoten verbunden ist.</p><p>Es kann jeweils nur eine Dimension hinzugefügt werden. Wenn die Dimension hinzugefügt wird, werden 3 Knoten für die drei wichtigsten Elemente der Dimension erstellt, die dem ersten Ereignis nach dem ersten Knoten folgen (Personen oder Sitzungen, die schließlich den zweiten Knoten erreichen). Jeder Knoten ist mit beiden vorhandenen Knoten verbunden. (Weitere Informationen finden [ unter &quot;](#connect-nodes)&quot;.)</p><p>Halten Sie die Umschalttaste gedrückt, wenn Sie die Komponenten auf der Arbeitsfläche ablegen, um sie als einen kombinierten Knoten hinzuzufügen. Die drei wichtigsten Dimensionselemente werden mit jedem Knoten kombiniert, und jeder Knoten ist mit beiden vorhandenen Knoten verbunden. (Siehe [Kombinieren von ](#combine-nodes)) für weitere Informationen.)</p> |
+   | Mehrere Komponenten | Ein Pfeil, der zwei vorhandene Knoten verbindet | **Wenn keine der Komponenten Dimensionen sind:**<p>Jede Komponente wird als separater Knoten angezeigt, in dem die Komponenten abgelegt wurden und jeder Knoten mit beiden vorhandenen Knoten verbunden ist. (Weitere Informationen finden [ unter &quot;](#connect-nodes)&quot;.)</p><p>Halten Sie die Umschalttaste gedrückt, wenn Sie die Komponenten auf der Arbeitsfläche ablegen, um sie als einen kombinierten Knoten hinzuzufügen. (Komponenten müssen vom gleichen Typ sein, damit sie in einem einzelnen Knoten kombiniert werden können.) (Weitere Informationen finden [ unter &quot;](#combine-nodes) kombinieren“.)</p><p>**Wenn eine der Komponenten, die Sie hinzufügen, Dimensionen sind:**</p><p>Jede Komponente wird als separater Knoten angezeigt, in dem die Komponenten abgelegt wurden und jeder Knoten mit beiden vorhandenen Knoten verbunden ist.</p><p>Es kann jeweils nur eine Dimension hinzugefügt werden. Wenn die Dimension hinzugefügt wird, werden 3 Knoten für die drei wichtigsten Elemente der Dimension erstellt, die dem ersten Ereignis nach dem ersten Knoten folgen (Personen oder Sitzungen, die schließlich den zweiten Knoten erreichen). Jeder Knoten ist mit beiden vorhandenen Knoten verbunden. (Weitere Informationen finden [ unter &quot;](#connect-nodes)&quot;.)</p><p>Halten Sie die Umschalttaste gedrückt, wenn Sie die Komponenten auf der Arbeitsfläche ablegen, um sie als einen kombinierten Knoten hinzuzufügen. Die drei wichtigsten Dimensionselemente werden mit jedem Knoten kombiniert, und jeder Knoten ist mit beiden vorhandenen Knoten verbunden. (Siehe [Kombinieren von ](#combine-nodes)) für weitere Informationen.)</p> |
 
    Knoten werden als rechteckiges Feld mit den folgenden Informationen angezeigt:
 
@@ -146,7 +146,7 @@ Sie können Knoten wie folgt erstellen: indem Sie Workspace-Komponenten von der 
 
 ### Zeigt die obersten Knoten basierend auf vorhandenen Knoten an
 
-Sie können die obersten Knoten automatisch basierend auf den Knoten anzeigen, die sich bereits auf der Arbeitsfläche befinden. Sie können die obersten Knoten zur Journey-Arbeitsfläche hinzufügen oder sie in einer Freiformtabelle anzeigen.
+Sie können die unmittelbar wichtigsten Knoten automatisch basierend auf den Knoten anzeigen, die sich bereits auf der Arbeitsfläche befinden. Sie können die obersten Knoten zur Journey-Arbeitsfläche hinzufügen oder sie in einer Freiformtabelle anzeigen.
 
 Journey Canvas verwendet die primäre Metrik bei der Bestimmung der anzuzeigenden Knoten.
 
@@ -158,7 +158,7 @@ Diese Option ist für die folgenden Objekte auf der Arbeitsfläche verfügbar:
 
 #### Top-Knoten nach einem vorhandenen Knoten anzeigen
 
-Sie können einen Knoten auswählen und die obersten Dimensionselemente anzeigen, die danach auf der Journey erscheinen. Sie können die drei wichtigsten Dimensionselemente als separate Knoten zur Journey-Arbeitsfläche hinzufügen oder Sie können alle obersten Dimensionselemente in einer Freiformtabelle anzeigen.
+Sie können einen Knoten auswählen und die Top-Dimensionselemente anzeigen, die unmittelbar danach auf dem Journey erscheinen. Sie können die drei wichtigsten Dimensionselemente als separate Knoten zur Journey-Arbeitsfläche hinzufügen oder Sie können alle obersten Dimensionselemente in einer Freiformtabelle anzeigen.
 
 1. Klicken Sie mit der rechten Maustaste auf den Knoten, in dem die Dimensionselemente angezeigt werden sollen, die auf der Journey am häufigsten danach angezeigt werden.
 
@@ -168,17 +168,17 @@ Sie können einen Knoten auswählen und die obersten Dimensionselemente anzeigen
 
 1. Wählen Sie aus, wo die Dimensionselemente angezeigt werden sollen:
 
-   * [!UICONTROL **Auf Journey-Arbeitsfläche**]: Fügt die drei wichtigsten Knoten auf der Arbeitsfläche hinzu, die hinter diesem Knoten auf der Journey stehen. Jede Knoten ist mit der Knoten verbunden, die Sie als separate Verzweigung im Arbeitsfläche ausgewählt haben.
+   * [!UICONTROL **Auf Journey-Arbeitsfläche**]: Fügt die drei wichtigsten Knoten auf der Arbeitsfläche hinzu, die hinter diesem Knoten auf der Journey stehen. Jeder Knoten ist mit dem Knoten verbunden, den Sie als separate Verzweigung auf der Arbeitsfläche ausgewählt haben.
 
-   * [!UICONTROL **In einer Freiform-Tabelle**]: Erstellt eine Freiform-Tabellenvisualisierung mit allen Top-Dimension-Elementen, die nach diesem Knoten in der Journey kommen.
+   * [!UICONTROL **In einer Freiformtabelle**]: Erstellt eine Freiformtabellen-Visualisierung, die alle Top-Dimensionselemente anzeigt, die nach diesem Knoten auf der Journey kommen.
 
 1. Wählen Sie die gewünschte Dimension aus der Liste der Dimensionen aus.
 
-   Je nachdem, was Sie im vorherigen Schritt ausgewählt haben, werden die ersten 3 Dimension Elemente dem Arbeitsfläche als 3 separate Knoten hinzugefügt, oder alle Top-Dimension-Elemente werden in einer Freiformtabelle angezeigt.
+   Je nachdem, was Sie im vorherigen Schritt ausgewählt haben, werden die drei wichtigsten Dimensionselemente als drei separate Knoten zur Arbeitsfläche hinzugefügt oder alle oberen Dimensionselemente werden in einer Freiformtabelle angezeigt.
 
-#### Anzeigen obersten Knoten vor einer vorhandenen Knoten
+#### Top-Knoten vor einem vorhandenen Knoten anzeigen
 
-Sie können einen Knoten auswählen und die obersten Dimensionselemente anzeigen, die ihm auf der Journey vorangestellt werden. Sie können die drei wichtigsten Dimensionselemente als separate Knoten zur Journey-Arbeitsfläche hinzufügen oder Sie können alle obersten Dimensionselemente in einer Freiformtabelle anzeigen.
+Sie können einen Knoten auswählen und die obersten Dimensionselemente anzeigen, die unmittelbar davor auf der Journey zu sehen sind. Sie können die drei wichtigsten Dimensionselemente als separate Knoten zur Journey-Arbeitsfläche hinzufügen oder Sie können alle obersten Dimensionselemente in einer Freiformtabelle anzeigen.
 
 1. Klicken Sie mit der rechten Maustaste auf den Knoten, in dem die Dimensionselemente angezeigt werden sollen, die auf der Journey oben vor ihm stehen.
 
@@ -188,7 +188,7 @@ Sie können einen Knoten auswählen und die obersten Dimensionselemente anzeigen
 
 1. Wählen Sie aus, wo die Dimensionselemente angezeigt werden sollen:
 
-   * [!UICONTROL **In Journey canvas**]: Adds the top 3 nodes to the canvas that come before this node in the journey. Jeder Knoten ist mit dem Knoten verbunden, den Sie als separate Verzweigung auf der Arbeitsfläche ausgewählt haben.
+   * [!UICONTROL **Auf der Journey-Arbeitsfläche**]: Fügt die drei wichtigsten Knoten auf der Arbeitsfläche hinzu, die vor diesem Knoten auf der Journey liegen. Jeder Knoten ist mit dem Knoten verbunden, den Sie als separate Verzweigung auf der Arbeitsfläche ausgewählt haben.
 
    * [!UICONTROL **In einer Freiformtabelle**]: Erstellt eine Freiformtabellen-Visualisierung, die alle Top-Dimensionselemente anzeigt, die vor diesem Knoten auf der Journey stehen.
 
@@ -200,11 +200,11 @@ Sie können einen Knoten auswählen und die obersten Dimensionselemente anzeigen
 
 Sie können einen Pfeil auswählen und die oberen Dimensionselemente anzeigen, die zwischen zwei vorhandenen Knoten auf der Journey liegen. Sie können die drei wichtigsten Dimensionselemente als separate Knoten zur Journey-Arbeitsfläche hinzufügen oder Sie können alle obersten Dimensionselemente in einer Freiformtabelle anzeigen.
 
-1. Klicken Sie mit der rechten Maustaste auf den Pfeil zwischen den beiden Knoten, in denen die obersten Dimension Elemente angezeigt werden sollen.
+1. Klicken Sie mit der rechten Maustaste auf den Pfeil zwischen den beiden Knoten, in denen die oberen Dimensionselemente angezeigt werden sollen.
 
-1. Wählen Sie Anzeigen obersten Knoten zwischen diesen Knoten **]aus[!UICONTROL **.
+1. Wählen Sie [!UICONTROL **Top-Knoten zwischen diesen Knoten anzeigen**].
 
-1. Wählen Sie aus, wo die Dimension Elemente angezeigt werden sollen:
+1. Wählen Sie aus, wo die Dimensionselemente angezeigt werden sollen:
 
    * [!UICONTROL **In Journey Canvas**]: Fügt die drei wichtigsten Knoten zur Arbeitsfläche hinzu, die zwischen den zwei vorhandenen Knoten liegen. Jeder Knoten ist mit den umliegenden Knoten als separater Zweig auf der Arbeitsfläche verbunden.
 
@@ -226,9 +226,9 @@ So duplizieren Sie Knoten:
 
 1. Wählen Sie einen oder mehrere Knoten aus, die Sie duplizieren möchten.
 
-   To select multiple nodes, hold Command (on Mac) or Ctrl (on Windows).
+   Um mehrere Knoten auszuwählen, halten Sie die Befehlstaste (Mac) oder die Strg-Taste (Windows) gedrückt.
 
-1. Right-click one of the selected nodes, then select [!UICONTROL **Duplicate**].
+1. Klicken Sie mit der rechten Maustaste auf einen der ausgewählten Knoten und wählen Sie dann [!UICONTROL **Duplizieren**].
 
 ## Entwerfen der Journey
 
@@ -262,11 +262,11 @@ Sie können einen der folgenden Schritte ausführen, um Knoten auf der Journey-A
 
 #### Logik beim Kombinieren von Knoten
 
-Die Logik, die auf Knoten angewendet wird, wenn sie kombiniert werden, unterscheidet sich je nachdem, welche Komponententypen Sie kombinieren:
+Die Logik, die auf Knoten angewendet wird, wenn sie kombiniert werden, unterscheidet sich je nachdem, welche Komponententypen Sie kombinieren, wie folgt:
 
 >[!TIP]
 >
->Sie können die Logik einer kombinierten Knoten Ansicht, indem Sie mit der rechten Maustaste auf die Knoten klicken und dann Erstellen Filter aus Knoten **]auswählen[!UICONTROL **. The logic is shown in the [!UICONTROL **Definition**] section.
+>Sie können die Logik eines kombinierten Knotens anzeigen, indem Sie mit der rechten Maustaste auf den Knoten klicken und dann [!UICONTROL **Filter aus Knoten erstellen**] auswählen. Die Logik wird im Abschnitt [!UICONTROL **Definition**] angezeigt.
 
 
 | Zu kombinierende Komponententypen | Verwendete Logik (Operator) |
@@ -274,9 +274,9 @@ Die Logik, die auf Knoten angewendet wird, wenn sie kombiniert werden, untersche
 | Metrik + Metrik | Verbunden mit ODER |
 | Dimension-Element + Dimension-Element (aus derselben übergeordneten Dimension) | Verbunden mit ODER |
 | Dimension-Element + Dimension-Element (aus verschiedenen übergeordneten Dimensionen) | Verbunden mit UND |
-| Filter + Filter | Mit UND verknüpft |
-| Dimension + Metrik, Datum Bereich oder Filtern | Mit UND verknüpft |
-| Datum Bereich + Metrik, Filtern oder Dimension | Mit UND verknüpft |
+| Filter + Filter | Verbunden mit UND |
+| Dimension + Metrik, Datumsbereich oder Filter | Verbunden mit UND |
+| Datumsbereich + Metrik, Filter oder Dimension | Verbunden mit UND |
 | Filter + Metrik, Datumsbereich oder Dimension | Verbunden mit UND |
 
 ### Knoten verbinden
@@ -285,9 +285,9 @@ Sie können Knoten verbinden, die sich bereits auf der Arbeitsfläche befinden, 
 
 Sie verbinden -Knoten, um die Ereignissequenz der Journey zu definieren.
 
-#### Arrows between nodes
+#### Pfeile zwischen Knoten
 
-Nodes are connected by an arrow. Sowohl die Pfeilrichtung als auch die Breite sind von Bedeutung:
+Knoten werden durch einen Pfeil verbunden. Sowohl die Pfeilrichtung als auch die Breite sind von Bedeutung:
 
 * **Direction**: Gibt die Ereignissequenz der Journey an
 
@@ -299,9 +299,9 @@ Nodes are connected by an arrow. Sowohl die Pfeilrichtung als auch die Breite si
 
 Wenn Sie Knoten auf der Journey-Arbeitsfläche verbinden, werden sie mithilfe des THEN-Operators verbunden. Dies wird auch als [sequenzielle Filterung“ ](/help/components/filters/seg-sequential-build.md).
 
-Knoten werden als &quot;eventueller Pfad&quot; verbunden, was bedeutet, dass Besucher so lange gezählt werden, wie sie sich schließlich von einem Knoten zum anderen bewegen, unabhängig von Ereignissen zwischen den 2 Knoten. Die Zeit, die dem Benutzer zur Verfügung steht, um sich entlang der Pfad zu bewegen, wird durch die Einstellung &quot;Container&quot; bestimmt. <!-- It can also be controlled by [adding a time constraint](#add-a-time-constraint-between-nodes). -->
+Knoten sind als „endgültiger Pfad“ verbunden, d. h. Besucher werden gezählt, solange sie letztendlich von einem Knoten zum anderen wechseln, unabhängig von Ereignissen, die zwischen den beiden Knoten auftreten. Die Zeit, die Benutzenden zum Verschieben auf dem Pfad zugewiesen wird, wird durch die Container-Einstellung bestimmt. <!-- It can also be controlled by [adding a time constraint](#add-a-time-constraint-between-nodes). -->
 
-Sie können die Logik verbundener Knoten Ansicht, indem Sie mit der rechten Maustaste auf die Knoten klicken und dann Erstellen Filter aus Knoten **]auswählen[!UICONTROL **. Die Logik wird im [!UICONTROL **Abschnitt &quot;Definition**] &quot; dargestellt.
+Sie können die Logik von verbundenen Knoten anzeigen, indem Sie mit der rechten Maustaste auf den Knoten klicken und dann [!UICONTROL **Filter aus Knoten erstellen**] auswählen. Die Logik wird im Abschnitt [!UICONTROL **Definition**] angezeigt.
 
 #### Vorhandene Knoten verbinden
 
@@ -376,9 +376,9 @@ To change the color of a node or arrow:
 
 -->
 
-### Rename a node
+### Umbenennen eines Knotens
 
-When you drag a component to a Journey canvas visualization, it creates a node with the same name as the component name. Sie können den Knoten umbenennen, damit er besser zum Schritt des Journey passt, den der Knoten darstellt.
+Wenn Sie eine Komponente auf eine Journey-Arbeitsflächen-Visualisierung ziehen, wird ein Knoten mit demselben Namen wie der Komponentenname erstellt. Sie können den Knoten umbenennen, damit er besser zum Schritt des Journey passt, den der Knoten darstellt.
 
 Die Option zum Umbenennen ist für die folgenden Objekte auf der Arbeitsfläche verfügbar:
 
@@ -406,7 +406,7 @@ Die Option zum Hinzufügen oder Aktualisieren einer Beschriftung ist für die fo
 
 So fügen Sie einem Pfeil eine Beschriftung hinzu:
 
-1. Klicken Sie in einer Journey Arbeitsfläche-Visualisierung mit der rechten Maustaste auf den Pfeil an der Stelle, an der Sie eine Bezeichnung hinzufügen möchten.
+1. Klicken Sie in einer Journey-Arbeitsflächen-Visualisierung mit der rechten Maustaste auf den Pfeil, dem Sie eine Beschriftung hinzufügen möchten.
 
 1. Wählen Sie **[!UICONTROL Bezeichnung hinzufügen]** aus.
 
@@ -418,7 +418,7 @@ So aktualisieren Sie eine vorhandene Beschriftung auf einem Pfeil:
 
 1. Klicken Sie in einer Journey-Arbeitsflächen-Visualisierung mit der rechten Maustaste auf den Pfeil, dem Sie eine Beschriftung hinzufügen möchten.
 
-1. Wählen Sie Beschriftung ]**aktualisieren aus**[!UICONTROL .
+1. Wählen Sie **[!UICONTROL Bezeichnung aktualisieren]** aus.
 
 1. Geben Sie einen Namen für die Bezeichnung ein und drücken Sie dann die Eingabetaste.
 
@@ -436,7 +436,7 @@ Die Option zum Anwenden einer Aufschlüsselung auf Ihre Daten ist für die folge
 
 * Mehrere Pfeile zwischen Knoten
 
-Beachten Sie Folgendes, wenn Sie eine Aufschlüsselung anwenden:
+Beachten Sie beim Anwenden einer Aufschlüsselung Folgendes:
 
 * Aufschlüsselungen werden auf die primäre Metrik angewendet. Die sekundäre Metrik ist nicht betroffen.
 
@@ -446,9 +446,9 @@ Beachten Sie Folgendes, wenn Sie eine Aufschlüsselung anwenden:
 
 * Aufschlüsselungsdaten werden aktualisiert, wenn Änderungen an einem früheren Punkt der Journey vorgenommen werden.
 
-#### Apply a breakdown to one or more nodes or arrows
+#### Anwenden einer Aufschlüsselung auf einen oder mehrere Knoten oder Pfeile
 
-1. In a Journey canvas visualization, select one or more nodes where you want to apply a breakdown, then right-click one of the selected nodes.
+1. Wählen Sie in einer Journey-Arbeitsflächen-Visualisierung mindestens einen Knoten aus, auf den Sie eine Aufschlüsselung anwenden möchten, und klicken Sie dann mit der rechten Maustaste auf einen der ausgewählten Knoten.
 
    Oder
 
@@ -466,7 +466,7 @@ Beachten Sie Folgendes, wenn Sie eine Aufschlüsselung anwenden:
 
 1. Wählen Sie die Dimension aus, die Sie für die Aufschlüsselung verwenden möchten.
 
-   Wenn Sie sich dafür entschieden haben, die Aufschlüsselung in Journey Arbeitsfläche zu Ansicht, werden die Top 5 Dimension Elemente in der Knoten angezeigt. Auf der Knoten ist eine Option verfügbar, um die Aufschlüsselung in einer Freiformtabelle zu öffnen.
+   Wenn Sie die Aufschlüsselung auf der Journey-Arbeitsfläche anzeigen möchten, werden die fünf häufigsten Dimensionselemente auf dem Knoten angezeigt. Auf dem Knoten ist eine Option verfügbar, um die Aufschlüsselung in einer Freiformtabelle zu öffnen.
 
    Wenn Sie die Aufschlüsselung in einer Freiformtabelle anzeigen möchten, werden die oberen Dimensionselemente in einer neuen Freiformtabelle unmittelbar über der Journey-Arbeitsflächen-Visualisierung angezeigt.
 
@@ -526,7 +526,7 @@ Die Option „Trend“ ist für die folgenden Objekte auf der Arbeitsfläche ver
 
 * Mehrere Knoten
 
-* The arrows between nodes
+* Die Pfeile zwischen den Knoten
 
 * Mehrere Pfeile zwischen Knoten
 
@@ -546,9 +546,9 @@ So zeigen Sie Trenddaten an:
 
 Sie können einen neuen Filter auf der Grundlage eines Knotens oder Pfeils innerhalb eines Journey erstellen. Nachdem der Filter erstellt wurde, können Sie ihn an einer beliebigen Stelle in Analysis Workspace verwenden.
 
-Filter, die aus der Customer Journey erstellt werden Arbeitsfläche sequenzielle Filterung](/help/components/filters/seg-sequential-build.md) verwenden[. Dies bedeutet, dass der Filter den DANN-Operator verwendet verknüpfen, um die Sequenz der Ereignisse (die Journey) zusammenzuzählen, die Personen durchlaufen haben und die zu dem ausgewählten Knoten oder Pfeil führen. Alle Ereignisse, die mit dem ausgewählten Knoten oder Pfeil übereinstimmen, werden in den Filter aufgenommen.
+Auf der Journey-Arbeitsfläche erstellte Filter verwenden [sequenzielle Filterung](/help/components/filters/seg-sequential-build.md). Das bedeutet, dass der Filter den Operator THEN verwendet, um die Ereignissequenz (die Journey), durch die Personen geströmt sind, zu verknüpfen, was zum ausgewählten Knoten oder Pfeil führt. Alle Ereignisse, die mit dem ausgewählten Knoten oder Pfeil übereinstimmen, werden in den Filter aufgenommen.
 
-Wenn Sie einen Filter erstellen, der auf einer Knoten basiert, in die mehrere Pfade fließen, werden alle Pfade in den Filter einbezogen. Separate Pfade werden mit dem OR-Operator verbunden.
+Wenn Sie einen Filter basierend auf einem Knoten erstellen, in den mehrere Pfade fließen, sind alle Pfade im Filter enthalten. Separate Pfade werden mit dem OR-Operator verbunden.
 
 Erstellen eines Filters:
 
@@ -564,7 +564,7 @@ Erstellen eines Filters:
 
 ### Knoten löschen
 
-You can delete one or more nodes at a time within a journey. Wenn Sie einen Knoten löschen, der zwischen zwei Knoten auf dem Journey verbunden ist, werden die zwei verbleibenden Knoten direkt verbunden.
+Sie können einen oder mehrere Knoten auf einmal innerhalb eines Journey löschen. Wenn Sie einen Knoten löschen, der zwischen zwei Knoten auf dem Journey verbunden ist, werden die zwei verbleibenden Knoten direkt verbunden.
 
 So löschen Sie Knoten auf der Journey-Arbeitsfläche:
 
