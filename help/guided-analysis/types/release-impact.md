@@ -6,9 +6,9 @@ keywords: Produktanalysen
 exl-id: 93e6e4f1-bbe4-4a6c-8ec3-54d1f9a8b847
 role: User
 source-git-commit: bd8c9951386608572d84006bd5465e57214c56d4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '530'
-ht-degree: 10%
+ht-degree: 100%
 
 ---
 
@@ -23,45 +23,45 @@ ht-degree: 10%
 
 <!-- markdownlint-enable MD034 -->
 
-Die Analyse ![Release](/help/assets/icons/Release.svg) **[!UICONTROL Release Impact]** zeigt einen Vergleich der Leistung von Schlüsselindikatoren vor und nach einem bestimmten Datum. Die horizontale Achse dieses Berichts ist ein Zeitintervall, während die vertikale Achse die gewünschten Schlüsselindikatoren misst. Ein vertikaler Balken in der Mitte des Diagramms stellt das Datum dar, mit dem Sie vor und nach dem Vergleich beginnen möchten. Dieses Datum stellt in der Regel eine wesentliche Änderung am Produkt dar, an dem Sie messen möchten, z. B. eine Aktualisierung des Produkts oder einen Kampagnen-Launch.
+Die Analyse der ![Release](/help/assets/icons/Release.svg) **[!UICONTROL Auswirkungen der Version]** zeigt einen Vergleich der Leistung von Schlüsselindikatoren vor und nach einem bestimmten Datum. Die horizontale Achse dieses Berichts ist ein Zeitintervall, die vertikale Achse ein Maß für die gewünschten Schlüsselindikatoren. Ein vertikaler Balken in der Mitte des Diagramms stellt das Datum dar, mit dem Sie die Leistung davor und danach vergleichen möchten. Dieses Datum stellt in der Regel eine wesentliche Änderung am Produkt dar, für die Sie die Messung durchführen möchten, z. B. eine Aktualisierung des Produkts oder ein Kampagnen-Launch.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3421665/?quality=12&learn=on)
 
 ## Anwendungsfälle
 
-Anwendungsfälle für diese Analyse sind:
+Zu den Anwendungsfällen für diese Analyse gehören:
 
-* **Gesamtleistungsbewertung:** Vergleichen von allgemeinen Schlüsselindikatoren, wie z. B. Interaktionsmessungen, kann Ihnen dabei helfen festzustellen, ob eine bestimmte Version insgesamt erfolgreich war.
-* **Monitoring**: Verfolgen Sie wichtige Metriken, von denen Sie erwarten würden, dass sie unverändert bleiben, wenn Änderungen vorgenommen werden, z. B. Ladezeit oder Anzahl der Anmeldungen. Verwenden Sie diese Analyse, um sie vor und nach einer Veröffentlichung zu vergleichen und sicherzustellen, dass dies keine unbeabsichtigten Folgen hat.
-* **Funktionsübernahme**: Wenn ein Produkt-Update auf die Verbesserung einer bestimmten Funktion ausgerichtet ist, können Sie diese Analyse verwenden, um die Nutzung dieser Funktion vor und nach dem Produkt-Update direkt zu vergleichen.
-* **Fehlererkennung**: Die Verfolgung der Fehleranzahl vor und nach einer Veröffentlichung kann einen frühen Indikator für Kundenprobleme bieten. Wenn Sie unmittelbar nach einer Veröffentlichung eine Zunahme von Fehlern bemerken, können Sie mit Technik- oder Entwicklungs-Teams zusammenarbeiten, um das Problem zu identifizieren und zu beheben und so weitere Auswirkungen auf Kunden zu verhindern.
+* **Bewertung der Gesamtleistung:** Durch den Vergleich von allgemeinen Schlüsselindikatoren, z. B. Interaktionsmessungen, können Sie ermitteln, ob eine bestimmte Version insgesamt erfolgreich war.
+* **Monitoring**: Verfolgen Sie wichtige Metriken, von denen Sie erwarten würden, dass sie nach Änderungen unverändert bleiben, z. B. die Ladezeit oder Anzahl der Anmeldungen. Verwenden Sie diese Analyse, um Metriken vor und nach einer Version zu vergleichen und sicherzustellen, dass sie keine unbeabsichtigten Folgen hat.
+* **Funktionsübernahme**: Wenn eine Produktaktualisierung auf die Verbesserung einer bestimmten Funktion ausgerichtet ist, können Sie die Nutzung dieser Funktion vor und nach der Produktaktualisierung mithilfe dieser Analyse vergleichen.
+* **Fehlererkennung**: Die Verfolgung der Fehleranzahl vor und nach einer Version kann einen frühen Indikator für Kundenprobleme bereitstellen. Wenn Sie unmittelbar nach einer Version eine Zunahme von Fehlern bemerken, können Sie das Problem zusammen mit Engineering- oder Entwicklungs-Teams identifizieren und beheben und so weitere Auswirkungen auf die Kundschaft verhindern.
 
 ## Benutzeroberfläche
 
-Siehe [Schnittstelle](../overview.md#interface) für einen Überblick über die Oberfläche der geführten Analyse. Die folgenden Einstellungen sind für diese Analyse spezifisch:
+Einen Überblick über die Benutzeroberfläche für die geführte Analyse erhalten Sie unter [Benutzeroberfläche](../overview.md#interface). Die folgenden Einstellungen sind für diese Analyse spezifisch:
 
 ### Abfrageleiste
 
 Mit der Abfrageleiste können Sie die folgenden Komponenten konfigurieren:
 
-* **[!UICONTROL Anzeigen]**: Wechseln zwischen dieser Analyse und [Auswirkung bei der ersten Verwendung](first-use-impact.md).
-* **[!UICONTROL Schlüsselindikatoren]**: Die Ereignisse, die pro Benutzer gemessen werden sollen. Jeder ausgewählte Schlüsselindikator wird als farbige Linie dargestellt. Der Tabelle wird eine Zeile hinzugefügt, die das Ereignis darstellt. Sie können bis zu drei Ereignisse einbeziehen.
-* **[!UICONTROL Zählt als]**: Die Zählmethode, die auf die ausgewählten Ereignisse angewendet werden soll.  Die Optionen umfassen [!UICONTROL Ereignisse pro ]), [!UICONTROL Prozentsatz der ][!UICONTROL  Ereignisse], [!UICONTROL Sitzungen] und [!UICONTROL Benutzer].
-* **[!UICONTROL Faktoren]**: Das Datum, das Sie vor und nach dem vergleichen möchten.
-* **[!UICONTROL Segmente]**: Das Segment, das Sie messen möchten. Das ausgewählte Segment filtert Ihre Daten so, dass es sich nur auf die Personen konzentriert, die Ihren Segmentkriterien entsprechen.
+* **[!UICONTROL Ansicht]**: Wechseln Sie zwischen dieser Analyse und [Wirkung der ersten Verwendung](first-use-impact.md).
+* **[!UICONTROL Schlüsselindikatoren]**: Die Ereignisse, die pro Person gemessen werden sollen. Jeder ausgewählte Schlüsselindikator wird als farbige Linie dargestellt. Der Tabelle wird eine Zeile hinzugefügt, die das Ereignis darstellt. Sie können bis zu drei Ereignisse einbeziehen.
+* **[!UICONTROL Zählt als]**: Die Zählmethode, die auf die ausgewählten Ereignisse angewendet werden soll. Zu den Optionen gehören [!UICONTROL Ereignisse pro nutzender Person], [!UICONTROL Prozentualer Anteil der Benutzenden], [!UICONTROL Ereignisse], [!UICONTROL Sitzungen] und [!UICONTROL Benutzende].
+* **[!UICONTROL Faktoren]**: Das Datum, vor. bzw. nach dem Sie den Vergleich durchführen möchten.
+* **[!UICONTROL Segmente]**: Das Segment, das Sie messen möchten. Bei der Filterung Ihrer Daten fokussiert das ausgewählte Segment nur die Personen, die Ihren Segmentkriterien entsprechen.
 
 ### Diagrammeinstellungen
 
-Die [!UICONTROL Release Impact]-Analyse bietet die folgenden Diagrammeinstellungen, die im Menü über dem Diagramm angepasst werden können:
+Die Analyse der [!UICONTROL Auswirkungen der Version] bietet die folgenden Diagrammeinstellungen, die im Menü über dem Diagramm angepasst werden können:
 
-* **[!UICONTROL Diagrammtyp]**: Der Visualisierungstyp, den Sie verwenden möchten. Die Optionen umfassen [!UICONTROL Line] und [!UICONTROL Bar].
+* **[!UICONTROL Diagrammtyp]**: Der Visualisierungstyp, der verwendet werden soll. Die Optionen umfassen [!UICONTROL Linie] und [!UICONTROL Balken].
 
 ### Datumsbereich
 
-Die Datumsauswahl in der Auswirkungsanalyse funktioniert anders als andere Analysen, da sich der Bericht um das in der Abfrageleiste angegebene Datum dreht. Die folgenden Optionen sind verfügbar:
+Die Datumsauswahl in der Wirkungsanalyse funktioniert anders als bei anderen Analysen, da sich der Bericht um das in der Abfrageleiste angegebene Datum dreht. Die folgenden Optionen sind verfügbar:
 
-* **[!UICONTROL Intervall]**: Die Datumsgranularität, nach der Trend-Daten angezeigt werden sollen. Gültige Optionen sind [!UICONTROL täglich], [!UICONTROL wöchentlich], [!UICONTROL monatlich] und [!UICONTROL vierteljährlich]. Eine Änderung des Intervalls wirkt sich auf die Optionen aus, die für den Zeitraum vor und nach dem Zeitraum verfügbar sind.
-* **[!UICONTROL Vor und nach dem Zeitraum]**: Der Zeitraum, der vor und nach dem in der Abfrageleiste angegebenen Datum analysiert werden muss. Die verfügbaren Optionen hängen von der Auswahl [!UICONTROL Intervall] ab.
+* **[!UICONTROL Intervall]**: Die Datumsgranularität, nach der Trend-Daten angezeigt werden sollen. Gültige Optionen sind [!UICONTROL Täglich], [!UICONTROL Wöchentlich], [!UICONTROL Monatlich] und [!UICONTROL Quartalsweise]. Eine Änderung des Intervalls wirkt sich auf die Optionen aus, die für den Zeitraum „Vor und nach dem Zeitraum“ verfügbar sind.
+* **[!UICONTROL Vor und nach dem Zeitraum]**: Der Zeitraum, der vor und nach dem in der Abfrageleiste angegebenen Datum analysiert werden muss. Die verfügbaren Optionen hängen vom gewählten [!UICONTROL Intervall] ab.
 
 
 <!--

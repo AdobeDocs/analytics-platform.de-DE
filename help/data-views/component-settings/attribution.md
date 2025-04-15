@@ -6,9 +6,9 @@ solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
 source-git-commit: e4e0c3cf2e865454837df6626c3b1b09f119f07f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '847'
-ht-degree: 29%
+ht-degree: 100%
 
 ---
 
@@ -24,14 +24,14 @@ ht-degree: 29%
 <!-- markdownlint-enable MD034 -->
 
 
-Mit Attribution können Sie anpassen, wie Dimensionselemente für Erfolgsereignisse angerechnet werden.
+Attribution ermöglicht die Anpassung der Anrechnung von Dimensionselementen für Erfolgsereignisse.
 
-![Datenansichtsfenster mit hervorgehobener Option „Attribution festlegen“](../assets/attribution-settings.png)
+![Datenansichtsfenster mit hervorgehobener Option Attribution festlegen](../assets/attribution-settings.png)
 
-z. B.:
+Zum Beispiel:
 
-1. Eine Person auf Ihrer Site klickt auf einen Paid Search-Link, um eine Ihrer Produktseiten aufzurufen. Er fügt das Produkt zum Warenkorb hinzu, kauft es jedoch nicht.
-2. Am nächsten Tag sehen sie einen Social-Media-Beitrag von einem ihrer Freunde. Er klickt auf den Link und schließt den Kauf ab.
+1. Eine Person au Ihrer Site klickt auf einen Paid Search-Link zu einer Ihrer Produktseiten. Sie fügt das Produkt zum Warenkorb hinzu, kauft es jedoch nicht.
+2. Am nächsten Tag sieht sie einen Social Media-Beitrag von einer Freundin bzw. einem Freund. Sie klickt auf den Link und schließt den Kauf ab.
 
 In einigen Berichten möchten Sie die Bestellung eventuell Paid Search zuordnen. In anderen Berichten möchten Sie die Bestellung eventuell Social Media zuordnen. Mithilfe von Attribution können Sie diesen Aspekt der Berichterstattung steuern.
 
@@ -53,13 +53,13 @@ Sie können ein standardmäßiges Attributionsmodell für eine bestimmte Metrik 
 
 So aktualisieren Sie das standardmäßige Attributionsmodell einer Komponente:
 
-1. Wechseln Sie zur Datenansicht, die die Komponente enthält, deren standardmäßiges Attributionsmodell Sie aktualisieren möchten.
+1. Wechseln Sie zu zur Datenansicht mit der Komponente, deren standardmäßiges Attributionsmodell Sie aktualisieren möchten.
 
 1. Wählen Sie die Komponente aus und erweitern Sie dann den Abschnitt Attribution auf der rechten Seite des Bildschirms.
 
-   ![Datenansichtsfenster mit hervorgehobener Option „Attribution festlegen“](../assets/attribution-settings.png)
+   ![Datenansichtsfenster mit hervorgehobener Option Attribution festlegen](../assets/attribution-settings.png)
 
-1. Wählen [!UICONTROL **Attribution festlegen**] und wählen Sie dann das Attributionsmodell [!UICONTROL **Dropdown-Menü Attributionsmodell**] aus.
+1. Wählen Sie [!UICONTROL **Attribution festlegen**] und wählen Sie dann das Attributionsmodell im Dropdown-Menü [!UICONTROL **Attributionsmodell**] aus.
 
    Unter [Attributionsmodelle](#attribution-models) erfahren Sie mehr über die einzelnen Attributionsmodelle.
 
@@ -67,11 +67,11 @@ So aktualisieren Sie das standardmäßige Attributionsmodell einer Komponente:
 
 >[!TIP]
 >
->Wenn Ihr Unternehmen verlangt, dass eine Metrik über mehrere Attributionseinstellungen verfügt, können Sie einen der folgenden Schritte ausführen:
+>Wenn Ihre Organisation verlangt, dass eine Metrik über mehrere Attributionseinstellungen verfügt, können Sie einen der folgenden Schritte ausführen:
 >
-> * Kopieren Sie die Metrik in die Datenansicht mit jeder gewünschten Attributionseinstellung. Sie können dieselbe Metrik mehrmals in eine Datenansicht einbeziehen, sodass jede Metrik eine andere Einstellung erhält. Achten Sie darauf, jede Metrik entsprechend zu kennzeichnen, damit Analysten bei der Berichterstellung den Unterschied zwischen diesen Metriken verstehen.
+> * Kopieren Sie die Metrik in die Datenansicht mit jeder gewünschten Attributionseinstellung. Sie können dieselbe Metrik mehrmals in eine Datenansicht einschließen, sodass jede Metrik eine andere Einstellung erhält. Achten Sie darauf, jede Metrik entsprechend zu kennzeichnen, damit Analystinnen und Analysten bei der Berichterstellung den Unterschied zwischen diesen Metriken erkennen.
 >
-> * Überschreiben Sie die Metrik in Analysis Workspace. Wählen Sie in den [Spalteneinstellungen](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/column-settings.md) einer Metrik **[!UICONTROL Nicht-Standard-Attributionsmodell verwenden]** um das Attributionsmodell und das Lookback-Fenster der Metrik für diesen spezifischen Bericht zu ändern.
+> * Überschreiben Sie die Metrik in Analysis Workspace. Wählen Sie in den [Spalteneinstellungen](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/column-settings.md) einer Metrik **[!UICONTROL Nicht standardmäßiges Zuordnungsmodell verwenden]** aus, um das Attributionsmodell und das Lookback-Fenster der Metrik für diesen spezifischen Bericht zu ändern.
 
 ## Attributionsmodelle {#attribution-models}
 
@@ -95,33 +95,33 @@ So aktualisieren Sie das standardmäßige Attributionsmodell einer Komponente:
 
 ## Attributionsbeispiel {#attribution-example}
 
-Siehe folgendes Beispiel:
+Sehen Sie sich folgendes Beispiel an:
 
-1. Am 15. September kommt eine Person über eine Paid-Search-Anzeige auf Ihre Website und verlässt sie.
-1. Am 18. September kommt die Person über einen Social-Media-Link, den sie von einem Freund erhalten hat, wieder auf Ihre Website. Er fügt mehrere Artikel zum Warenkorb hinzu, erwirbt aber nichts.
+1. Am 15. September gelangt eine Person über eine Paid Search-Anzeige zu Ihrer Site und verlässt sie dann.
+1. Am 18. September gelangt die Person über einen Link in sozialen Medien, den er von einer Freundin oder einem Freund erhalten hat, erneut auf Ihre Site. Er fügt mehrere Artikel zum Warenkorb hinzu, erwirbt aber nichts.
 1. Am 24. September sendet Ihr Marketing-Team eine E-Mail mit einem Coupon für einige der Artikel im Warenkorb. Der Coupon wird angewendet, der Besucher ruft aber mehrere andere Websites auf, um zu sehen, ob andere Coupons verfügbar sind. Er findet einen weiteren über eine Display-Anzeige und kauft dann letztendlich für 50 Euro ein.
 
 Je nach Lookback-Fenster und Attributionsmodell erhalten Kanäle eine unterschiedliche Gewichtung. Im Folgenden finden Sie einige Beispiele:
 
-* Mit **Erstkontakt** und einem **Sitzungs-Lookback-Fenster** betrachtet die Attribution nur den dritten Besuch. E-Mail kam vor Display-Anzeige, sodass E-Mail 100 % des Kaufs von 50 Euro zugeschrieben werden.
+* Bei Verwendung von **Erstkontakt** und einem **Sitzungs-Lookback-Fenster** betrachtet die Attribution nur den dritten Besuch. E-Mail kam vor Display-Anzeige, sodass E-Mail 100 % des Kaufs von 50 US-Dollar zugeschrieben werden.
 
-* Mit **Erstkontakt** und einem **Personen-Lookback-Fenster** untersucht die Attribution alle drei Besuche. Paid Search kam zuerst, sodass Paid Search 100 % des Kaufs von 50 Euro zugeschrieben werden.
+* Mithilfe von **Erstkontakt** und einem **Personen-Lookback-Fenster** betrachtet die Attribution alle drei Besuche. Paid Search kam zuerst, sodass Paid Search 100 % des Kaufs von 50 $ zugeschrieben werden.
 
-* Mit **linear** und einem **Sitzungs-Lookback-Fenster** wird die Gutschrift auf E-Mail und Anzeige aufgeteilt. Beide Kanäle erhalten jeweils einen Kredit von 25 Dollar.
-Bei Verwendung **linear** und eines **Personen-Lookback-Fensters** wird die Gutschrift auf Paid Search, Social, E-Mail und Display aufgeteilt. Jedem Kanal werden für diesen Kauf 12,50 Euro zugeschrieben.
+* Bei Verwendung eines **linearen** Fensters und eines **Sitzungs-Lookback-Fensters** wird die Gewichtung zwischen E-Mail und Display-Anzeige aufgeteilt. Beiden Kanälen werden jeweils 25 $ zugeschrieben.
+Die Gewichtung wird mithilfe eines **linearen** Fensters und eines **Personen-Lookback-Fensters** zwischen Paid Search, Social Media, E-Mail und Display-Anzeige aufgeteilt. Jedem Kanal werden für diesen Kauf 12,50 $ zugeschrieben.
 
-* Mithilfe **J-förmigen** und eines **Personen-Lookback-Fensters** wird die Gutschrift auf Paid Search, Social, E-Mail und Display aufgeteilt.
+* Mithilfe des **J-förmigen** Fensters und eines **Personen-Lookback-Fensters** wird die Gewichtung zwischen Paid Search, Social Media und Display-Anzeige aufgeteilt.
 
    * Der Display-Anzeige werden 60 %, also 30 Euro, zugeschrieben.
    * Paid Search werden 20 %, also 10 Euro, zugeschrieben.
    * Die restlichen 20 % werden zwischen Social Media und E-Mail aufgeteilt (jeweils 5 Euro).
 
-* Mithilfe **Zeitverfalls** und eines **Personen-Lookback-Fensters** wird die Gutschrift auf Paid Search, Social, E-Mail und Display aufgeteilt. Verwendung der standardmäßigen 7-Tage-Halbwertszeit:
+* Bei Verwendung von **Zeitverfall** und einem **Personen-Lookback-Fenster** wird die Gewichtung zwischen Paid Search, Social Media, E-Mail und Display-Anzeige aufgeteilt. Verwendung der standardmäßigen 7-Tage-Halbwertszeit:
 
-   * Intervall von null Tagen zwischen Touchpoint-Display und Konversion. `2^(-0/7) = 1`
-   * Lücke von null Tagen zwischen E-Mail-Touchpoint und Konversion. `2^(-0/7) = 1`
-   * Lücke von sechs Tagen zwischen Social Touchpoint und Konversion. `2^(-6/7) = 0.552`
-   * Intervall von neun Tagen zwischen Paid Search-Touchpoint und Konversion. `2^(-9/7) = 0.41`
+   * Abstand von null Tagen zwischen Display-Touchpoint und Konversion. `2^(-0/7) = 1`
+   * Abstand von null Tagen zwischen E-Mail-Touchpoint und Konversion. `2^(-0/7) = 1`
+   * Abstand von sechs Tagen zwischen Social Media-Touchpoint und Konversion. `2^(-6/7) = 0.552`
+   * Abstand von 9 Tagen zwischen Paid Search-Touchpoint und Konversion. `2^(-9/7) = 0.41`
    * Die Normalisierung dieser Werte führt zu Folgendem:
 
       * Display-Anzeige: 33,8 %, 16,88 Euro
@@ -129,6 +129,6 @@ Bei Verwendung **linear** und eines **Personen-Lookback-Fensters** wird die Guts
       * Social Media: 18,6 %, 9,32 Euro
       * Paid Search: 13,8 %, 6,92 Euro
 
-Konversionsereignisse, die in der Regel Ganzzahlen aufweisen, werden aufgeteilt, wenn das Guthaben zu mehr als einem Kanal gehört. Wenn beispielsweise zwei Kanäle zu einer Reihenfolge beitragen, die ein lineares Attributionsmodell verwendet, erhalten beide Kanäle 0,5 dieser Reihenfolge. Diese partiellen Metriken werden für alle Personen summiert und dann zur Berichterstellung auf die nächste Ganzzahl gerundet.
+Konversionsereignisse, die in der Regel Ganzzahlen aufweisen, werden aufgeteilt, wenn die Gewichtung mehr als einem Kanal zugeschrieben wird. Wenn beispielsweise zwei Kanäle mit einem linearen Attributionsmodell zu einer Bestellung beitragen, erhalten beide Kanäle 0,5 dieser Bestellung. Diese Teilmetriken werden über alle Personen summiert und dann zur Berichterstellung auf die nächste Ganzzahl gerundet.
 
 

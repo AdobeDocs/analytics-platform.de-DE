@@ -5,9 +5,9 @@ feature: Components
 role: User, Admin
 exl-id: 8e4b8169-7c7f-4a58-a6c6-70efb0c86ce8
 source-git-commit: 4bf8c616965718426efe880865acb0e5054b6a31
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '567'
-ht-degree: 76%
+ht-degree: 100%
 
 ---
 
@@ -30,7 +30,7 @@ Analytics-Administratorinnen und -Administratoren sind dafür verantwortlich, In
 
 >[!BEGINSHADEBOX]
 
-Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Datenwörterbuch für Analytics Workspace](https://video.tv.adobe.com/v/3418028/?quality=12&learn=on){target="_blank"} finden Sie ein Demovideo.
+Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Datenwörterbuch für Analysis Workspace](https://video.tv.adobe.com/v/3418028/?quality=12&learn=on){target="_blank"} finden Sie ein Demovideo.
 
 {{videoaa}}
 
@@ -66,7 +66,7 @@ Im Folgenden finden Sie einige Möglichkeiten, wie Analytics-Administrierende da
 
 * Identifizierung von Komponenten, die noch nicht genehmigt sind.
 
-* Aktualisierung der Komponentenbeschreibungen direkt in Analysis Workspace. Alle Aktualisierungen an Komponentenbeschreibungen im Datenwörterbuch werden in der Datenansicht angezeigt.
+* Aktualisierung der Komponentenbeschreibungen direkt in Analysis Workspace. Alle Aktualisierungen an Komponentenbeschreibungen im Datenwörterbuch werden in der Datenansicht übernommen.
 
   Ebenso werden alle Aktualisierungen an Komponentenbeschreibungen in der Datenansicht in Analysis Workspace übernommen.
 
@@ -76,22 +76,22 @@ Im Folgenden finden Sie einige Möglichkeiten, wie Analytics-Administrierende da
 
 Sie können auf eine der folgenden Arten in Analysis Workspace auf das Datenwörterbuch zugreifen:
 
-![Datenwörterbuchsymbol im linken Bereich](assets/data-dictionary-access.png)
+![Datenwörterbuchsymbol im linken Panel](assets/data-dictionary-access.png)
 
-* Von ![Lesezeichen](/help/assets/icons/Bookmark.svg) im Schaltflächenbereich.
+* über ![Lesezeichen](/help/assets/icons/Bookmark.svg) im Schaltflächen-Panel.
 
 
 
-* Von ![Lesezeichen](/help/assets/icons/Bookmark.svg) im Info-Pop-up einer Komponente.
+* über ![Lesezeichen](/help/assets/icons/Bookmark.svg) im Info-Pop-up einer Komponente.
 
 
 Detaillierte Informationen zu den verschiedenen verfügbaren Optionen im Datenwörterbuch finden Sie unter [Komponenteninformationen im Datenwörterbuch anzeigen](/help/components/data-dictionary/view-data-dictionary.md).
 
 ## Aktualisieren und Kuratieren des Datenwörterbuchs
 
-Customer Journey Analytics-Administratoren sind dafür verantwortlich, das Datenwörterbuch für ihre Organisation in einem guten Zustand zu halten, wie beschrieben unter [Überwachen des Zustands des Datenwörterbuchs](/help/components/data-dictionary/monitor-data-dictionary-health.md).
+Customer Journey Analytics-Admins sind dafür verantwortlich, das Datenwörterbuch für ihre Organisation in einem guten Zustand zu halten, wie unter [Überwachen des Zustands des Datenwörterbuchs](/help/components/data-dictionary/monitor-data-dictionary-health.md) beschrieben.
 
-Im Rahmen dieses Prozesses können Customer Journey Analytics-Administratoren die Informationen zu den einzelnen Komponenten im Datenwörterbuch bearbeiten, wie beschrieben unter [Bearbeiten von Komponenteneinträgen im Datenwörterbuch](/help/components/data-dictionary/edit-entries-data-dictionary.md).
+Im Rahmen dieses Prozesses können Customer Journey Analytics-Admins die Informationen zu den einzelnen Komponenten im Datenwörterbuch bearbeiten, wie unter [Bearbeiten von Komponenteneinträgen im Datenwörterbuch](/help/components/data-dictionary/edit-entries-data-dictionary.md) beschrieben.
 
 ## Verschieben, Minimieren oder Schließen des Datenwörterbuchs
 
@@ -101,7 +101,7 @@ Sie können das Datenwörterbuchfenster auf eine der folgenden Arten verändern:
 
 * in einen beliebigen Bereich in Analysis Workspace ziehen
 
-  Wenn Sie Analysis Workspace schließen und erneut öffnen, bleibt das Datenwörterbuchfenster an der Stelle, an die Sie es zuletzt verschoben haben.<!--True?-->
+  Wenn Sie Analysis Workspace schließen und erneut öffnen, bleibt das Datenwörterbuchfenster an der Stelle, an die Sie es zuletzt verschoben haben. <!--True?-->
 
 * minimieren
 

@@ -1,13 +1,13 @@
 ---
-description: Erfahren Sie mehr über Fallout-Berichte und Visualisierungen.
-title: Über Fallout-Berichte und -Visualisierungen
+description: Erfahren Sie mehr über Fallout-Berichte und -Visualisierungen.
+title: Informationen zu Fallout-Berichten und -Visualisierungen
 feature: Visualizations
 exl-id: c4338821-64ac-4345-828a-15af18a95ea6
 role: User
 source-git-commit: 4bf8c616965718426efe880865acb0e5054b6a31
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '357'
-ht-degree: 30%
+ht-degree: 100%
 
 ---
 
@@ -25,59 +25,59 @@ ht-degree: 30%
 
 >[!BEGINSHADEBOX]
 
-_In diesem Artikel wird die Fallout-Visualisierung in {_}![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._<br/>_Siehe [Fallout](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/fallout/fallout-flow) für die_![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**-Version dieses Artikels._
+_In diesem Artikel wird die Visualisierung Fallout in_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics** beschrieben._<br/>_Unter [Fallout](https://experienceleague.adobe.com/de/docs/analytics/analyze/analysis-workspace/visualizations/fallout/fallout-flow) finden Sie die Version dieses Artikels für_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**._
 
 >[!ENDSHADEBOX]
 
-Eine ![ConversionFunnel](/help/assets/icons/ConversionFunnel.svg)**[!UICONTROL Fallout]**-Visualisierung zeigt, wo Personen eine vordefinierte Folge von Seiten verlassen haben (ausfielen) und weiter durchlaufen haben (durchfielen).
+Eine ![ConversionFunnel](/help/assets/icons/ConversionFunnel.svg) Visualisierung **[!UICONTROL Fallout]** zeigt, wo Personen eine Site verlassen haben und wo sie eine vorab definierte Folge von Seiten passiert haben (d. h., wo sie verblieben sind).
 
 
 >[!BEGINSHADEBOX]
 
-Siehe ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Erstellen eines Fallout-Visualisierungsberichts](https://video.tv.adobe.com/v/345883/?quality=12&learn=on){target="_blank"} für ein Demovideo.
+Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Erstellen einer Visualisierung Fallout](https://video.tv.adobe.com/v/345883/?quality=12&learn=on){target="_blank"} finden Sie ein Demovideo.
 
 {{videoaa}}
 
 >[!ENDSHADEBOX]
 
 
-Fallout-Visualisierungen ermöglichen Ihnen Folgendes:
+Mit Visualisierungen vom Typ „Fallout“ können Sie:
 
 * Eine Gegenüberstellung zweier verschiedener Filter im gleichen Bericht vornehmen.
-* Trichterschritte (Touchpoints) per Drag-and-Drop verschieben (und neu anordnen).
-* Werte aus verschiedenen Dimensionen und Metriken mischen und abgleichen.
-* Erstellen eines mehrdimensionalen Fallout-Berichts
-* Identifizieren Sie, wohin Kundinnen und Kunden sofort nach einem Fallout gehen.
+* Trichterschritte (Touchpoints) per Drag-and-Drop bewegen (und neu anordnen).
+* Werte aus unterschiedlichen Dimensionen und Metriken mischen und kombinieren.
+* Einen multidimensionalen Fallout-Bericht erstellen.
+* Feststellen, wohin Kundinnen und Kunden unmittelbar nach dem Ausstieg navigieren.
 
 Die Fallout-Funktion zeigt Konversions- und Fallout-Raten zwischen den einzelnen Schritten oder Touchpoints in einer Sequenz an.
 
-Sie können beispielsweise die Fallout-Punkte einer Person während eines Kaufvorgangs verfolgen. Wählen Sie einfach einen Start-Touchpoint und einen End-Touchpoint aus und fügen Sie Zwischen-Touchpoints hinzu, um einen Website-Navigationspfad zu erstellen. Sie können aber auch multidimensionale Fallouts vornehmen.
+So können Sie beispielsweise die Fallout-Punkte einer Person während eines Kaufprozesses nachverfolgen. Wählen Sie einfach einen Start-Touchpoint und einen End-Touchpoint aus und fügen Sie Zwischen-Touchpoints hinzu, um einen Website-Navigationspfad zu erstellen. Sie können aber auch multidimensionale Fallouts vornehmen.
 
-## Wählen Sie zwischen Fallout-, Fluss- und Journey-Arbeitsflächen-Visualisierungen
+## Auswählen zwischen Visualisierungen vom Typ „Fallout“, „Fluss“ und „Journey-Arbeitsfläche“
 
-Die Fallout-Visualisierung weist Ähnlichkeiten mit der [Flussvisualisierung](/help/analysis-workspace/visualizations/c-flow/flow.md) und der [Journey-](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md) auf.
+Die Visualisierung „Fallout“ weist Ähnlichkeiten mit der [Visualisierung Fluss](/help/analysis-workspace/visualizations/c-flow/flow.md) und der [Visualisierung Journey-Arbeitsfläche](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md) auf.
 
-### Unterschiede verstehen
+### Informationen zu den Unterschieden
 
 <!-- Information in this snippet is shared between Journey canvas, Fallout, and Flow visualization docs -->
 
 {{journey-visualization-comparisons}}
 
-### Verwendung von Fallout
+### Wann „Fallout“ eingesetzt werden sollte
 
-Sowohl Fallout- als auch [Journey-Canvas](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md)-Visualisierungen sind für die Analyse von hilfreich:
+Sowohl Visualisierungen vom Typ „Fallout“ als auch vom Typ [Journey-Arbeitsfläche](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md) sind für die Analyse hilfreich:
 
 * Konversionssätze durch bestimmte Abläufe auf Ihrer Site (wie z. B. ein Kauf- oder Registrierungsablauf).
-* Allgemeiner Traffic-Fluss mit breiterem Umfang: Von den Personen, die die Homepage besucht haben, zeigt dieser Fluss an, wie viele eine Suche durchgeführt haben. Und wie viele von ihnen schauten schließlich auf einen bestimmten Gegenstand.
+* Allgemeiner Traffic-Fluss mit breiterem Umfang: Dieser Fluss zeigt an, wie viele der Personen, die die Homepage besucht haben, eine Suche durchgeführt haben. Anschließend wird angezeigt, wie viele von ihnen sich schließlich einen bestimmten Artikel angesehen haben.
 * Korrelationen zwischen Ereignissen auf Ihrer Site. Korrelationen zeigen, welcher Prozentsatz von Personen, die die Datenschutzrichtlinien durchlasen, ein Produkt kauften.
 
-Fallout-Visualisierungen eignen sich am besten für:
+Visualisierungen vom Typ Fallout eignen sich am besten für:
 
-* Fallout-Analyse mit Journey mit einer vordefinierten Seitensequenz und einem einzigen Einstiegspunkt und Pfad. (Verwenden Sie die Journey-Arbeitsfläche für Journey mit mehreren Einstiegspunkten und Pfaden.)
+* Fallout-Analysen mit Journeys und einer vordefinierten Seitensequenz sowie einem einzigen Einstiegspunkt und Pfad. (Verwenden Sie die Journey-Arbeitsfläche für Journeys mit mehreren Einstiegspunkten und Pfaden.)
 
-* Journey, bei denen Sie zwei verschiedene Filter im selben Bericht nebeneinander vergleichen müssen.
+* Journeys, in denen Sie eine Gegenüberstellung zweier verschiedener Filter im gleichen Bericht vornehmen.
 
-Verwenden Sie [die obige ](#understand-the-differences)), um die Unterschiede zwischen Journey-Arbeitsfläche-, Fallout- und Fluss -Visualisierungen zu verstehen.
+Verwenden Sie [die Tabelle oben](#understand-the-differences), um die Unterschiede zwischen der Visualisierung Journey-Arbeitsfläche, Fallout und Fluss zu verstehen.
 
 >[!MORELIKETHIS]
 >

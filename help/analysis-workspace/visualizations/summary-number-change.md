@@ -1,27 +1,27 @@
 ---
-description: Verwenden Sie die Visualisierungen von Zusammenfassungsnummern und Zusammenfassungsänderungen, um wichtige Datenpunkte in einem Projekt anzuzeigen.
+description: Verwenden Sie die Visualisierungen „Zusammenfassungszahl“ und „Zusammenfassungsänderung“, um wichtige Datenpunkte in einem Projekt anzuzeigen.
 title: Sammelnummer und Sammeländerung
 feature: Visualizations
 exl-id: 8872fc58-0957-415d-9958-ce564612ce87
 role: User
 source-git-commit: 4bf8c616965718426efe880865acb0e5054b6a31
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '510'
-ht-degree: 47%
+ht-degree: 100%
 
 ---
 
-# Zusammenfassungsnummer und Zusammenfassungsänderung
+# Sammelnummer und Sammeländerung
 
 >[!BEGINSHADEBOX]
 
-_In diesem Artikel werden die Visualisierungen von Zusammenfassungsnummern und Zusammenfassungsänderungen in {_}![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics** dokumentiert._<br/>_Siehe [Zusammenfassungsnummer und Zusammenfassungsänderung](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/summary-number-change) für die_![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**-Version dieses Artikels._
+_In diesem Artikel werden die Visualisierungen von Zusammenfassungszahlen und Zusammenfassungsänderungen in_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics** beschrieben._<br/>_Unter [Zusammenfassungszahl und Zusammenfassungsänderung](https://experienceleague.adobe.com/de/docs/analytics/analyze/analysis-workspace/visualizations/summary-number-change) finden Sie die Version dieses Artikels für_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**._
 
 >[!ENDSHADEBOX]
 
 >[!BEGINSHADEBOX]
 
-Siehe ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Visualisierung der Zusammenfassungsnummer und ](https://video.tv.adobe.com/v/335564/?quality=12&learn=on){target="_blank"} Zusammenfassungsänderung für ein Demovideo.
+Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Visualisierungen von Zusammenfassungszahlen und Zusammenfassungsänderungen](https://video.tv.adobe.com/v/335564/?quality=12&learn=on){target="_blank"} finden Sie ein Demovideo.
 
 >[!ENDSHADEBOX]
 
@@ -36,20 +36,20 @@ Siehe ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Visualisierung
 
 <!-- markdownlint-enable MD034 -->
 
-Verwenden Sie die Visualisierung ![Zusammenfassen](/help/assets/icons/123.svg) **[!UICONTROL Zusammenfassungsnummer]**, um eine große Zahl hervorzuheben, die in einem Projekt wichtig ist. Diese Visualisierung verhält sich mithilfe der zugehörigen Datenquelle wie folgt:
+Verwenden Sie die Visualisierung ![Summary](/help/assets/icons/123.svg) **[!UICONTROL Zusammenfassungszahl]**, um eine große Zahl hervorzuheben, die in einem Projekt wichtig ist. Diese Visualisierung verhält sich mithilfe der zugehörigen Datenquelle wie folgt:
 
 * Wenn keine Zelle ausgewählt ist, wird die gesamte Spalte ausgewählt.
 * Wenn eine einzelne Zelle ausgewählt ist, wird die Zusammenfassung für diese Zelle angezeigt.
 * Wenn mehr als eine Zelle ausgewählt ist, wird die zuerst ausgewählte Zelle angezeigt.
 * Wenn die Spalte ausgewählt ist, wird der erste Zellenwert in der Spalte verwendet.
 
-![Visualisierung der Zusammenfassungszahl](asses/../assets/summary-number.png)
+![Visualisierung „Zusammenfassungszahl“](asses/../assets/summary-number.png)
 
-Im Rahmen der Visualisierungseinstellungen sind spezifische Optionen für Zusammenfassungsnummern verfügbar.
+Im Rahmen der Visualisierungseinstellungen sind bestimmte Optionen für die Zusammenfassungszahl verfügbar.
 
 | Option | Definition |
 |--- |--- |
-| **[!UICONTROL Wert kürzen]** | Wählen Sie **[!UICONTROL Wert abkürzen]**, um den Zahlenwert intelligent zu kürzen. Wenn ausgewählt, geben Sie eine Zahl ein, um den Betrag der Abkürzung zu definieren. Beispiel:<br/><table><tr><td>**Ausgangswert**</td><td>**Abkürzungswert**</td><td>**Ergebnis**</td></tr><tr><td>12 011 141,25 $</td><td>Nicht ausgewählt</td><td  align="right">12 011 141,25 $</td></tr><tr><td>12 011 141,25 $</td><td>Ausgewählt, auf `0` gesetzt</td><td align="right">12 Mio. $</td></tr><tr><td>12 011 141,25 $</td><td> Ausgewählt, auf `1` gesetzt</td><td  align="right">12,0 Mio. $</td></tr><tr><td>12 011 141,25 $</td><td>Ausgewählt, auf `2` gesetzt</td><td align="right">12,01 Mio. $</td></tr><tr><td>12 011 141,25 $</td><td>Ausgewählt, auf `3` gesetzt</td><td align="right">12,011 Mio. $</td></tr></table> |
+| **[!UICONTROL Wert kürzen]** | Wählen Sie **[!UICONTROL Wert abkürzen]**, um den Zahlenwert intelligent zu kürzen. Wenn diese Option ausgewählt ist, geben Sie eine Zahl ein, um den Umfang der Abkürzung zu definieren. Beispiel:<br/><table><tr><td>**Originalwert**</td><td>**Abgekürzter Wert**</td><td>**Ergebnis**</td></tr><tr><td>12.011.141,25 USD</td><td>Nicht ausgewählt</td><td  align="right">12.011.141,25 USD</td></tr><tr><td>12.011.141,25 USD</td><td>Ausgewählt, auf `0` gesetzt</td><td align="right">12 Mio. USD</td></tr><tr><td>12.011.141,25 USD</td><td> Ausgewählt, auf `1` gesetzt</td><td  align="right">12,0 Mio. USD</td></tr><tr><td>12.011.141,25 USD</td><td>Ausgewählt, auf `2` gesetzt</td><td align="right">12,01 Mio. USD</td></tr><tr><td>12.011.141,25 USD</td><td>Ausgewählt, auf `3` gesetzt</td><td align="right">12,01 Mio. USD</td></tr></table> |
 | **[!UICONTROL Wert zusammenfassen nach]** | Wählen Sie diese Option, um für ausgewählte Daten das Maximum, das Minimum, den Mittelwert, den Median oder die Summe anzuzeigen. |
 
 ## Zusammenfassungsänderung {#summary-change}
@@ -80,20 +80,20 @@ Diese Visualisierung verhält sich folgendermaßen:
 * Wenn die Spalte ausgewählt ist, wird der erste Wert mit sich selbst verglichen, sodass eine Änderung von 0 angezeigt wird.
 
 
-![Visualisierung der Zusammenfassungsänderung mit dem Delta zwischen zwei Zahlen.s](assets/summary-change.png)
+![Visualisierung „Zusammenfassungsänderung“ mit dem Delta zwischen zwei Zahlen.](assets/summary-change.png)
 
 
-Im Rahmen der Visualisierungseinstellungen sind bestimmte **[!UICONTROL Zusammenfassungsänderungsoptionen]** verfügbar.
+Im Rahmen der Visualisierungseinstellungen sind bestimmte **[!UICONTROL Optionen für die Zusammenfassungsänderung]** verfügbar.
 
 | Option | Definition |
 |--- |--- |
-| **[!UICONTROL Prozentuale Veränderung anzeigen]** | Zeigt die prozentuale Änderung zwischen den beiden Zahlen an. |
-| **[!UICONTROL Rohdifferenz anzeigen]** | Den Rohunterschied zwischen den 2 Zahlen anzeigen. Mit dieser Option können Sie auch Werte kürzen und bis zu 3 Dezimalstellen anzeigen. |
-| **[!UICONTROL Wert kürzen]** | Wählen Sie **[!UICONTROL Wert abkürzen]**, um den geänderten Wert intelligent zu kürzen. Wenn ausgewählt, geben Sie eine Zahl ein, um den Betrag der Abkürzung zu definieren. Beispiel:<br/><table><tr><td>**Ausgangswert**</td><td>**Abkürzungswert**</td><td>**Ergebnis**</td></tr><tr><td>12 011 141,25 $</td><td>Nicht ausgewählt</td><td  align="right">12 011 141,25 $</td></tr><tr><td>12 011 141,25 $</td><td>Ausgewählt, auf `0` gesetzt</td><td align="right">12 Mio. $</td></tr><tr><td>12 011 141,25 $</td><td> Ausgewählt, auf `1` gesetzt</td><td  align="right">12,0 Mio. $</td></tr><tr><td>12 011 141,25 $</td><td>Ausgewählt, auf `2` gesetzt</td><td align="right">12,01 Mio. $</td></tr><tr><td>12 011 141,25 $</td><td>Ausgewählt, auf `3` gesetzt</td><td align="right">12,011 Mio. $</td></tr></table> |
+| **[!UICONTROL Prozentänderung zeigen]** | Zeigen Sie die prozentuale Änderung zwischen den beiden Zahlen an. |
+| **[!UICONTROL Rohdifferenz anzeigen]** | Zeigen Sie die Rohdifferenz zwischen den beiden Zahlen an. Mit dieser Option können Sie auch Werte kürzen und bis zu 3 Dezimalstellen anzeigen. |
+| **[!UICONTROL Wert kürzen]** | Wählen Sie **[!UICONTROL Wert abkürzen]**, um den geänderten Wert intelligent zu kürzen. Wenn diese Option ausgewählt ist, geben Sie eine Zahl ein, um den Umfang der Abkürzung zu definieren. Beispiel:<br/><table><tr><td>**Originalwert**</td><td>**Abgekürzter Wert**</td><td>**Ergebnis**</td></tr><tr><td>12.011.141,25 USD</td><td>Nicht ausgewählt</td><td  align="right">12.011.141,25 USD</td></tr><tr><td>12.011.141,25 USD</td><td>Ausgewählt, auf `0` gesetzt</td><td align="right">12 Mio. USD</td></tr><tr><td>12.011.141,25 USD</td><td> Ausgewählt, auf `1` gesetzt</td><td  align="right">12,0 Mio. USD</td></tr><tr><td>12.011.141,25 USD</td><td>Ausgewählt, auf `2` gesetzt</td><td align="right">12,01 Mio. USD</td></tr><tr><td>12.011.141,25 USD</td><td>Ausgewählt, auf `3` gesetzt</td><td align="right">12,01 Mio. USD</td></tr></table> |
 
 >[!MORELIKETHIS]
 >
->[Hinzufügen einer Visualisierung zu einem Bedienfeld](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
+>[Hinzufügen einer Visualisierung zu einem Panel](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
 >[Visualisierungseinstellungen](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
 >[Kontextmenü der Visualisierung](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
 >

@@ -1,13 +1,13 @@
 ---
 title: Abschnittskopfzeile
-description: Eine Visualisierung, die eine Abschnittsüberschrift in Ihr Workspace-Projekt einfügen.
+description: Eine Visualisierung, mit der eine Abschnittskopfzeile in Ihr Workspace-Projekt eingefügt wird.
 feature: Visualizations
 role: User
 exl-id: 7f815879-2b08-4650-a9ce-c55ca5824288
 source-git-commit: 55b312552d32070875714a77e1177bf0da5f9d87
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '95'
-ht-degree: 13%
+ht-degree: 100%
 
 ---
 
@@ -26,20 +26,20 @@ ht-degree: 13%
 >[!BEGINSHADEBOX]
 
 
-_In diesem Artikel wird die Visualisierung der Abschnittskopfzeile in {_}![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics** dokumentiert._<br/>_Siehe [Abschnittsheader](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/section-header) für die_![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**-Version dieses Artikels._
+_In diesem Artikel wird die Visualisierung „Abschnittskopfzeile“ in_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics** beschrieben._<br/>_Unter [Abschnittskopfzeile](https://experienceleague.adobe.com/de/docs/analytics/analyze/analysis-workspace/visualizations/section-header) finden Sie die Version dieses Artikels für_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**._
 
 >[!ENDSHADEBOX]
 
-Um Abschnitte innerhalb eines Bereichs zu identifizieren und zu artikulieren, können Sie eine ![PageRule](/help/assets/icons/PageRule.svg)Section **[!UICONTROL Header]**-Visualisierung an einer beliebigen Stelle innerhalb eines Bereichs einfügen.
+Um Abschnitte innerhalb eines Panels zu identifizieren und zu gliedern, können Sie eine ![PageRule](/help/assets/icons/PageRule.svg)Visualisierung **[!UICONTROL Abschnittskopfzeile]** an einer beliebigen Stelle in einem Bedienfeld einfügen.
 
-![Bereichs-Kopfzeile](/help/analysis-workspace/visualizations/assets/section-header.png)
+![Abschnittskopfzeile](/help/analysis-workspace/visualizations/assets/section-header.png)
 
-Um den Text der Abschnittsüberschrift zu ändern, wählen Sie einfach die **[!UICONTROL Abschnittsüberschrift]** aus.
+Um den Text des Abschnitts-Headers zu ändern, wählen Sie einfach den **[!UICONTROL Abschnittskopfzeile]** aus.
 
 
 >[!MORELIKETHIS]
 >
->[Hinzufügen einer Visualisierung zu einem Bedienfeld](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
+>[Hinzufügen einer Visualisierung zu einem Panel](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
 >[Visualisierungseinstellungen](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
 >[Kontextmenü der Visualisierung](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
 >

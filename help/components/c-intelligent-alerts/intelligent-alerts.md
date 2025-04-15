@@ -1,42 +1,42 @@
 ---
-description: Warnhinweise ermöglichen eine granulare Steuerung der Benachrichtigungen und die Integration in die Anomalieerkennung.
-title: Warnhinweise – Übersicht
+description: Warnhinweise ermöglichen eine granulare Steuerung der Benachrichtigungen und eine Integration mit der Anomalieerkennung.
+title: Überblick über Warnhinweise
 feature: Workspace Basics
 role: User, Admin
 exl-id: 029be0c8-ec78-4bb7-a6cd-bb303b5ac82a
 source-git-commit: daa07b603caa613ca49b61c2e8e461d558459f57
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '359'
-ht-degree: 43%
+ht-degree: 100%
 
 ---
 
-# Warnhinweise – Übersicht
+# Überblick über Warnhinweise
 
 Warnhinweise in Customer Journey Analytics ermöglichen es Ihnen, sich über geänderte Prozentsätze oder bestimmte Datenpunkte benachrichtigen zu lassen.
 
-Je nach Customer Journey Analytics-Paket können Sie auch Warnhinweise verwenden, die basierend auf Schwellenwerten für Anomalien ausgelöst werden. Diese Warnhinweise (auch als „intelligente Warnhinweise“ bezeichnet) bieten granulare Steuerelemente, die in die [Anomalieerkennung“ integriert ](/help/analysis-workspace/c-anomaly-detection/anomaly-detection.md) und bei Bedarf ausgelöst werden.
+Je nach Customer Journey Analytics-Paket können Sie auch Warnhinweise verwenden, die basierend auf Schwellenwerten für Anomalien ausgelöst werden. Diese Warnhinweise (auch als „intelligente Warnhinweise“ bezeichnet) bieten granulare Steuerelemente, die mit der [Anomalieerkennung](/help/analysis-workspace/c-anomaly-detection/anomaly-detection.md) integriert sind und ausgelöst werden, wenn Sie sie am dringendsten benötigen.
 
-Warnhinweise ermöglichen Folgendes:
+Mithilfe von Warnhinweisen können Sie:
 
 * In einer Vorschau anzeigen, wie oft ein Warnhinweis ausgelöst wird
 * Warnhinweise per E-Mail oder SMS mit Links zu automatisch erstellten Projekten in Analysis Workspace verschicken
-* „Gestapelte“ Warnhinweise erstellen, die mehrere Metriken in einem Warnhinweis vereinen.
-* Erstellen von Warnhinweisen basierend auf Anomalien (Schwellenwerte von 90 %, 95 %, 99 %, 99,75 % und 99,9 %; prozentuale Veränderung; über/unter) (nur für Customer Journey Analytics-Kunden mit einem Select-, Prime- oder Ultimate-Paket verfügbar)
+* „Gestapelte“ Warnhinweise erstellen, die mehrere Metriken in einem Warnhinweis vereinen
+* Warnhinweise basierend auf Anomalien erstellen (Schwellenwerte von 90 %, 95 %, 99 %, 99,75 % und 99,9 %; prozentuale Veränderung; über/unter) (nur für Adobe Analytics-Kundschaft mit einem Select-, Prime- oder Ultimate-Paket verfügbar)
 
 Das folgende Video-Tutorial bietet einen grundlegenden Überblick über Warnhinweise: [Warnhinweise](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/data-science/intelligent-alerts.html?lang=de) (5:34)
 
-## Verstehen, wie sich Warnhinweise beim Customer Journey Analytics von Adobe Analytics unterscheiden
+## Informationen zu den Unterschieden zwischen Warnhinweisen in Customer Journey Analytics und Adobe Analytics
 
 Die Verwendung von Warnhinweisen in Customer Journey Analytics ist nahezu identisch mit der Verwendung von Warnhinweisen in Adobe Analytics. Es gibt jedoch wichtige Unterschiede.
 
-Weitere Informationen finden Sie unter [Warnhinweise - Funktionsvergleich: Customer Journey Analytics und Adobe Analytics](/help/components/c-intelligent-alerts/alerts-feature-comparison.md).
+Weitere Informationen finden Sie unter [Warnhinweise – Funktionsvergleich: Customer Journey Analytics und Adobe Analytics](/help/components/c-intelligent-alerts/alerts-feature-comparison.md).
 
 ## Anomalie-Suche nach Warnungen
 
 >[!NOTE]
 >
->Die Verwendung von Warnhinweisen mit Anomalieerkennung (auch _intelligente Warnhinweise_ genannt) ist nur für Unternehmen mit einem Customer Journey Analytics Select-, Prime- oder Ultimate-Paket verfügbar.
+>Die Verwendung von Warnhinweisen mit Anomalieerkennung (auch als _intelligente Warnhinweise_ bezeichnet) ist nur für Organisationen mit einem Customer Journey Analytics Select-, Prime- oder Ultimate-Paket verfügbar.
 
 Wenn ein Warnhinweis eine Anomalieerkennung verwendet, hängt der Trainings-Zeitraum von der für den Warnhinweis ausgewählten Granularität ab.
 
@@ -49,7 +49,7 @@ Weitere Informationen finden Sie unter [In der Anomalieerkennung verwendete stat
 
 ## Erstellen von Warnhinweisen
 
-Informationen zum Erstellen von Warnhinweisen im Customer Journey Analytics finden Sie unter [Erstellen von Warnhinweisen](/help/components/c-intelligent-alerts/alert-builder.md).
+Informationen zum Erstellen von Warnhinweisen in Customer Journey Analytics finden Sie unter [Erstellen von Warnhinweisen](/help/components/c-intelligent-alerts/alert-builder.md).
 
 >[!IMPORTANT]
 >
@@ -57,6 +57,6 @@ Informationen zum Erstellen von Warnhinweisen im Customer Journey Analytics find
 
 ## Verwalten von Warnhinweisen
 
-Sie können vorhandene Warnhinweise im Warnhinweis-Manager verwalten. Sie können verschiedene Verwaltungsaufgaben für Warnhinweise ausführen, z. B. Taggen, Umbenennen, Löschen und mehr.
+Sie können vorhandene Warnhinweise im Warnhinweis-Manager verwalten. Sie können verschiedene Verwaltungsaufgaben für Warnhinweise ausführen, z. B. Tagging, Umbenennen, Löschen und mehr.
 
 Weitere Informationen zum Verwalten vorhandener Warnhinweise in Customer Journey Analytics finden Sie unter [Verwalten von Warnhinweisen](/help/components/c-intelligent-alerts/alert-manager.md).

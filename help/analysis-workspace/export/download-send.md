@@ -1,37 +1,37 @@
 ---
 description: Sie können Daten von Analysis Workspace durch Kopieren oder in PDF- und CSV-Formaten herunterladen.
-title: Customer Journey Analytics-Daten herunterladen
+title: Herunterladen von Customer Journey Analytics-Daten
 feature: Curate and Share
 exl-id: 1d8384ca-888c-482c-ab3e-d1b579217560
 role: User
 source-git-commit: cd4722cc2eb95d7d5e4000361c8f96a30a3589e9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1194'
-ht-degree: 64%
+ht-degree: 100%
 
 ---
 
-# Customer Journey Analytics-Daten herunterladen
+# Herunterladen von Customer Journey Analytics-Daten
 
-Sie können Customer Journey Analytics-Daten auf Ihre Workstation herunterladen. Dies kann in Form von kopierten Daten, CSV oder PDF erfolgen. Eine PDF wird in der Regel bevorzugt, wenn Sie in der heruntergeladenen Datei enthaltene Visualisierungen verwenden möchten. CSV- und kopierte Daten werden bevorzugt, wenn Sie Daten in Textform verwenden möchten.
+Sie können Customer Journey Analytics-Daten auf Ihre persönliche Workstation herunterladen. Diese Daten können in Form kopierter Daten, CSV- oder PDF-Dateien vorliegen. Eine PDF wird normalerweise bevorzugt, wenn Sie möchten, dass Visualisierungen in der heruntergeladenen Datei enthalten sind. CSV- und kopierte Daten werden bevorzugt, wenn Sie Daten in Textform verwenden möchten.
 
 Es sind auch andere Methoden zum Exportieren von Customer Journey Analytics-Daten verfügbar, wie unter [Exportübersicht](/help/analysis-workspace/export/export-project-overview.md) beschrieben.
 
-## Als CSV oder PDF herunterladen {#download-project}
+## Herunterladen als CSV oder PDF {#download-project}
 
 Beachten Sie beim Herunterladen von Projekten Folgendes:
 
 * Beim Herunterladen von Projekten als CSV- oder PDF-Datei kann das Projekt gespeichert oder nicht gespeichert werden, wenn Sie einen Projekt-Download anfordern. Es können jedoch nur gespeicherte Projekte [geplant](/help/analysis-workspace/export/t-schedule-report.md) sein.
 
 * Beim Herunterladen von Projekten als PDF:
-   * Der Export von Downloads kann mehrere Minuten dauern, da das Projekt auf Adobe-Servern erneut ausgeführt wird, bevor es im PDF-Format gerendert wird. Wir empfehlen, das Projekt nicht zu verlassen, bis die PDF-Datei in Ihren Browser heruntergeladen wurde. Sie können jedoch beim Warten weiterhin Änderungen am Projekt vornehmen. Wenn die Ausgabe einer PDF-Datei länger als 5 Minuten dauert, werden Sie aufgefordert, diese stattdessen per E-Mail zu erhalten.
+   * Der Export von Downloads kann mehrere Minuten dauern, da das Projekt auf den Adobe-Servern erneut ausgeführt wird, bevor es im PDF-Format ausgegeben wird. Wir empfehlen, das Projekt nicht zu verlassen, bis die PDF-Datei in Ihren Browser heruntergeladen wurde. Sie können jedoch beim Warten weiterhin Änderungen am Projekt vornehmen. Wenn die Ausgabe einer PDF-Datei länger als 5 Minuten dauert, werden Sie aufgefordert, diese stattdessen per E-Mail zu erhalten.
    * Downloads werden als einzelne Seite ohne Seitenumbruch gerendert.
    * PDF-Renderings enthalten den Inhalt der Seite in Workspace. Wenn ein Projekt Visualisierungen und Bedienfelder in benutzerdefinierter Größe enthält, müssen Sie diese so ändern, dass die Größe automatisch bestimmt wird (Schaltfläche in der oberen rechten Ecke), damit der Inhalt nicht abgeschnitten wird.
-   * Alle [Hyperlinks](/help/analysis-workspace/visualizations/freeform-table/freeform-table-hyperlinks.md) die in Freiformtabellen vorhanden sind, funktionieren auf der heruntergeladenen PDF nicht.
+   * Alle [Hyperlinks](/help/analysis-workspace/visualizations/freeform-table/freeform-table-hyperlinks.md), die in Freiformtabellen vorhanden sind, funktionieren in der heruntergeladenen PDF nicht.
 
-Herunterladen eines Projekts als CSV- oder PDF-Datei:
+So laden Sie ein Projekt als CSV- oder PDF-Datei herunter:
 
-1. Führen Sie einen der folgenden Schritte aus, je nachdem, in welchem Format der Download erfolgen soll:
+1. Führen Sie je nach dem Format, in dem Sie das Projekt benötigen, einen der folgenden Schritte aus:
 
    * **PDF:** Wählen Sie **[!UICONTROL Projekt]** > **[!UICONTROL PDF herunterladen]** aus.
 
@@ -39,15 +39,15 @@ Herunterladen eines Projekts als CSV- oder PDF-Datei:
 
    * **CSV:** Wählen Sie **[!UICONTROL Projekt]** > **[!UICONTROL CSV herunterladen]** aus.
 
-     Wählen Sie diese Option, wenn die heruntergeladene Datei nur aus Text bestehen soll.
+     Wählen Sie diese Option aus, wenn die heruntergeladene Datei nur aus Text bestehen soll.
 
-   ![Das Dropdown-Menü „Projekt“ mit hervorgehobenen Optionen „CSV herunterladen“ und &quot;PDF herunterladen“.](assets/download-project.png)
+   ![Das Dropdown-Menü Projekt mit den hervorgehobenen Optionen CSV herunterladen und „PDF herunterladen.](assets/download-project.png)
 
 1. (Bedingt) Wenn Sie sich für den Download einer PDF entschieden haben, wird eine Nachricht angezeigt, sobald das Projekt heruntergeladen werden kann. Wählen Sie [!UICONTROL **Herunterladen**] aus.
 
-## In die Zwischenablage kopieren (Hotkey: Strg+C) {#copy-data}
+## Kopieren in die Zwischenablage (Hotkey: Strg+C) {#copy-data}
 
-Mit der Rechtsklick-Option **[!UICONTROL In Zwischenablage kopieren]** können Sie Customer Journey Analytics-Daten schnell aus Workspace kopieren und in ein Tool eines Drittanbieters einfügen.
+Mit der Rechtsklick-Option **[!UICONTROL In Zwischenablage kopieren]** können Sie Customer Journey Analytics-Daten schnell aus Workspace kopieren und im Tool eines Drittanbieters einfügen.
 
 * Wenn die angezeigte Tabelle kopiert werden soll, klicken Sie mit der rechten Maustaste auf die Tabellenkopfzeile und wählen Sie **Daten in die Zwischenablage kopieren**.
 * Wenn Sie möchten, dass nur ein Teil der Daten kopiert wird, wählen Sie ihn in der Tabelle aus, und klicken Sie dann mit der rechten Maustaste auf >**Auswahl in Zwischenablage kopieren**.
@@ -57,13 +57,13 @@ Mit der Rechtsklick-Option **[!UICONTROL In Zwischenablage kopieren]** können S
 >Sie können den Hotkey `Ctrl+C` verwenden, um Ihre Auswahl in die Zwischenablage zu kopieren, und dann `Ctrl+V`, um es in ein Tool eines Drittanbieters einzufügen.
 
 
-![Die Option Auswahl in Zwischenablage kopieren . ](assets/copy-selection.png)
+![Die Option Auswahl in die Zwischenablage kopieren. ](assets/copy-selection.png)
 
 ## Als CSV herunterladen {#download-data}
 
 Mit der Rechtsklick-Option **[!UICONTROL Daten als CSV herunterladen]** können Sie eine Tabelle mit Customer Journey Analytics-Daten oder die Datenquelle einer beliebigen Visualisierung als CSV herunterladen.
 
-* Klicken Sie in der Kopfzeile einer Tabelle oder Visualisierung mit der rechten Maustaste und wählen Sie **[!UICONTROL Daten als CSV herunterladen]** aus. Dadurch werden die angezeigten Customer Journey Analytics-Daten in der Tabelle oder die zugrunde liegende Datenquelle für eine Visualisierung als CSV heruntergeladen.
+* Klicken Sie in der Kopfzeile einer Tabelle oder Visualisierung mit der rechten Maustaste und wählen Sie **[!UICONTROL Daten als CSV herunterladen]** aus. Dadurch werden die in der Tabelle angezeigten Customer Journey Analytics-Daten bzw. die zugrunde liegende Datenquelle für eine Visualisierung als CSV heruntergeladen.
 
   >[!NOTE]
   >
@@ -84,7 +84,7 @@ Wenn Sie mehr als die 400 sichtbaren Zeilen mit Daten in einer Tabelle analysier
 
 Während eines Downloads können Sie mehrere Aufgaben im Projekt ausführen und sogar zu einem neuen Workspace-Projekt auf derselben Registerkarte navigieren. Der Download wird angehalten, wenn Sie eine neue Browser-Registerkarte öffnen. Der Download wird abgebrochen, wenn Sie Workspace vollständig verlassen oder die Browser-Registerkarte schließen.
 
-![Die Option „Elemente als CSV (Seite) herunterladen“.](assets/download-items.png)
+![Die Option Objekte als CSV herunterladen (Seite).](assets/download-items.png)
 
 ### Datei mit heruntergeladenen Elementen {#items-file}
 
@@ -96,7 +96,7 @@ Die Eigenschaften der Tabelle werden wie folgt auf die heruntergeladene Datei an
 
 Im obigen Beispiel werden Seitenelemente mit dem Bedienfeldfilter („Neue Besucher-Kunden“) heruntergeladen und die darüber liegenden Komponenten („Marketing-Kanal = E-Mail“) als Filter angewendet, während die darunter liegenden Komponenten („Typ des Mobilgeräts“) aus der heruntergeladenen CSV-Datei entfernt werden.
 
-![Die heruntergeladene CSV-Datei wurde in Excel geöffnet.](assets/downloaded-file.png)
+![Die heruntergeladene CSV-Datei, geöffnet in Excel.](assets/downloaded-file.png)
 
 ### Download-Benachrichtigungen {#notifications}
 
@@ -106,11 +106,11 @@ Sobald die Datei abgeschlossen ist, wird eine Benachrichtigung angezeigt und die
 
 Wenn Sie mehrere Downloads gleichzeitig anfordern, erhalten Sie eine Benachrichtigung, dass jeder weitere Download in die Warteschlange gestellt wird, bis der vorherige Download abgeschlossen ist.
 
-![Die Download-Statusbenachrichtigung, die den abgeschlossenen Prozentsatz und einen Link zum Abbrechen des Downloads anzeigt.](assets/toast.png)
+![Die Benachrichtigung zum Download-Status, die den abgeschlossenen Prozentsatz und einen Link zum Abbrechen des Downloads anzeigt.](assets/toast.png)
 
 ## Herunterladen sensibler Daten {#sensitive}
 
-Wenn die **[!UICONTROL Download erzwingen]**-[Data Governance-](/help/data-views/data-governance.md) in der Datenansicht, über die Sie Bericht erstatten, aktiviert ist, werden beim Herunterladen (z. B. beim Versenden von E-Mails oder beim Freigeben von PDF-Dateien) von Workspace-Projekten die als sensibel gekennzeichneten Datenfelder durchleuchtet. Sie können diese Felder in Workspace weiterhin analysieren, aber wenn Sie versuchen, ein Projekt per E-Mail zu versenden oder anderweitig freizugeben, werden die blockierten Felder in der .pdf- oder .csv-Datei als leer angezeigt.
+Wenn die **[!UICONTROL Download erzwingen]**-[Data-Governance-Richtlinie](/help/data-views/data-governance.md) in der Datenansicht aktiviert ist, über die Sie Bericht erstatten, werden beim Herunterladen (z. B. beim Versenden von E-Mails oder beim Austausch von PDF-Dateien) von Workspace-Projekten die als sensibel gekennzeichneten Datenfelder durchleuchtet. Sie können diese Felder in Workspace weiterhin analysieren, aber wenn Sie versuchen, ein Projekt per E-Mail zu versenden oder anderweitig freizugeben, werden die blockierten Felder in der .pdf- oder .csv-Datei als leer angezeigt.
 
 Wenn als sensibel gekennzeichnete Datenfelder in der [!UICONTROL Datenansicht] enthalten sind, ist die Option zum Auswählen und Kopieren von Daten auf dem Bildschirm für alle Daten in der [!UICONTROL Datenansicht] eingeschränkt.
 

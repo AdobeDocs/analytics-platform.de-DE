@@ -5,35 +5,35 @@ feature: Workspace Basics
 exl-id: b02672e2-0728-472b-97fe-14637ab1c2df
 role: User
 source-git-commit: 373d0c9989fb692da23efe371c65344093801140
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '110'
-ht-degree: 20%
+ht-degree: 100%
 
 ---
 
 # Dichte anzeigen
 
-Durch die Anpassung der Anzeigedichte können Sie mehr Daten auf dem Bildschirm anzeigen, indem Sie den vertikalen Abstand zwischen dem linken Bedienfeld, Freiformtabellen und Kohortentabellen reduzieren. Drei Optionen stehen zur Wahl:
+Durch die Anpassung der Anzeigedichte können Sie mehr Daten auf dem Bildschirm anzeigen, indem Sie den vertikalen Abstand des linken Panels, der Freiformtabellen und der Kohortentabellen reduzieren. Drei Optionen stehen zur Wahl:
 
 >[!BEGINTABS]
 
 >[!TAB Kompakt]
 
-Dies ist die Version mit der am kürzesten gefassten Ansicht.
+Die Version mit der am stärksten komprimierten Anzeige.
 
-![Die kompakten Ansichtsdichten.](assets/view-density-compact.png)
+![Anzeigedichte „Kompakt“.](assets/view-density-compact.png)
 
 >[!TAB Komfortabel]
 
-Dies ist die Ansicht, die Sie in Workspace gewohnt sind.
+Die aus Workspace bekannte Ansicht.
 
-![Die erweiterten Ansichtsdichten.](assets/view-density-comfortable.png)
+![Anzeigedichte „Komfortabel“.](assets/view-density-comfortable.png)
 
->[!TAB erweitert]
+>[!TAB Erweitert]
 
-Dies ist die Ansicht, die Sie in Workspace gewohnt sind.
+Die aus Workspace bekannte Ansicht.
 
-![Die erweiterten Ansichtsdichten.](assets/view-density-expanded.png)
+![Anzeigedichte „Erweitert“.](assets/view-density-expanded.png)
 
 >[!ENDTABS]
 
@@ -42,4 +42,4 @@ So stellen Sie die Anzeigedichte ein:
 
 1. Navigieren Sie in Workspace zu **[!UICONTROL Projekte]** > **[!UICONTROL Projektinformationen und -einstellungen]**.
 
-1. Wählen Sie **[!UICONTROL Option „Dichte anzeigen]** und anschließend **[!UICONTROL Speichern]** aus.
+1. Wählen Sie die Option **[!UICONTROL Dichte anzeigen]** und anschließend **[!UICONTROL Speichern]** aus.

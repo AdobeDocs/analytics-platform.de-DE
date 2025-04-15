@@ -1,45 +1,45 @@
 ---
-title: Übersicht über die Produktnutzung
-description: Insights und Berichte zur Verwendung von Customer Journey Analytics in Ihrem Unternehmen anzeigen.
+title: Produktnutzungsübersicht
+description: Zeigen Sie Erkenntnisse und Berichte dazu an, wie Ihre Organisation Customer Journey Analytics nutzt.
 exl-id: 3806ca7c-ee90-4222-9ffd-2e791c4550e5
 source-git-commit: e7534a1943307f5bbc92a845ddffe0651794b854
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '523'
-ht-degree: 13%
+ht-degree: 100%
 
 ---
 
-# Übersicht über die Produktnutzung
+# Produktnutzungsübersicht
 
-Die Produktnutzung bietet Ihrem Unternehmen die Möglichkeit, Analysedaten darüber anzuzeigen, wie Ihr Unternehmen Customer Journey Analytics verwendet. Es ist für alle Organisationen verfügbar, die Customer Journey Analytics verwenden. Nach der Aktivierung werden die folgenden Adobe Experience Platform-Komponenten automatisch erstellt und für Sie verbunden. Diese Komponenten sind alle im Besitz des Systems, schreibgeschützt und können nicht bearbeitet werden.
+Die Produktnutzung bietet Ihrer Organisation die Möglichkeit, Analysedaten zur Verwendung von Customer Journey Analytics anzuzeigen. Sie steht allen Organisationen zur Verfügung, die Customer Journey Analytics nutzen. Nach der Aktivierung werden die folgenden Adobe Experience Platform-Komponenten automatisch erstellt und für Sie verbunden. Diese Komponenten sind alle im Besitz des Systems, schreibgeschützt und können nicht bearbeitet werden:
 
-* Ein Schema in Adobe Experience Platform
-* Ein Datensatz in Adobe Experience Platform
-* Eine Verbindung in Customer Journey Analytics
-* Eine Datenansicht auf Customer Journey Analytics
+* ein Schema in Adobe Experience Platform
+* ein Datensatz in Adobe Experience Platform
+* eine Verbindung in Customer Journey Analytics
+* eine Datenansicht in Customer Journey Analytics
 
-Alle Datenerfassungs- und -einstellungen werden automatisch konfiguriert, sobald sie aktiviert sind. Jedes Mal, wenn ein Benutzer eine Aktion in Analysis Workspace vornimmt, wird diese Aktion verfolgt und steht für das Reporting zur Verfügung.
+Alle Datenerfassungs- und Einrichtungsoptionen werden nach der Aktivierung automatisch konfiguriert. Jede benutzerseitige Aktion in Analysis Workspace wird verfolgt und steht zum Reporting zur Verfügung.
 
 >[!IMPORTANT]
 >
->Diese Funktion zählt für Ihre vertraglichen Zeilenbeschränkungen in Adobe Experience Platform. Stellen Sie sicher, dass Ihr Unternehmen die von dieser Funktion generierten Daten verarbeiten kann, bevor Sie sie aktivieren.
+>Diese Funktion zählt für Ihre vertraglichen Zeilenbeschränkungen in Adobe Experience Platform. Stellen Sie sicher, dass Ihre Organisation die von dieser Funktion generierten Daten verarbeiten kann, bevor Sie sie aktivieren.
 
 ## Produktnutzung aktivieren
 
 **[!UICONTROL Customer Journey Analytics]** > **[!UICONTROL Tools]** > **[!UICONTROL Produktnutzung]**
 
-Wenn Sie in Customer Journey Analytics zu diesem Abschnitt der Benutzeroberfläche navigieren, gelangen Sie zu [Dateneinstellungen](data-settings.md) wo Sie diese Funktion aktivieren können.
+Wenn Sie zu diesem Abschnitt der Benutzeroberfläche in Customer Journey Analytics navigieren, gelangen Sie zu den [Dateneinstellungen](data-settings.md). Dort können Sie diese Funktion aktivieren.
 
 ## Verfügbare Dimensionen
 
 Wenn Sie die Produktnutzung aktivieren, sind die folgenden Dimensionen verfügbar. Wenn Sie Dimensionseinstellungen ändern möchten, erstellen Sie eine Kopie der systemeigenen Datenansicht und verwenden Sie die kopierte Datenansicht in Analysis Workspace.
 
-* **[!UICONTROL Aktionsname]**: Der Aktionstyp, den der Benutzer ausgeführt hat. Sie können diese Dimension als beliebige Metrik verwenden, indem Sie in den Einstellungen für die Datenansicht eine Kopie erstellen. Zu den Dimensionen gehören:
+* **[!UICONTROL Aktionsname]**: Der Aktionstyp, den die Benutzerin bzw. der Benutzer ausgeführt hat. Sie können diese Dimension als beliebige Metrik verwenden, indem Sie in den Einstellungen für die Datenansicht eine Kopie erstellen. Zu den Dimensionselementen gehören:
    * [!UICONTROL Attribution hinzufügen]
    * [!UICONTROL Komponente hinzufügen]
-   * [!UICONTROL Bedienfeld hinzufügen]
+   * [!UICONTROL Panel hinzufügen]
    * [!UICONTROL Visualisierung hinzufügen]
-   * [!UICONTROL Erstellen einer neuen geführten Analyse]
+   * [!UICONTROL Neue geführte Analyse erstellen]
    * [!UICONTROL Neues Projekt erstellen]
    * [!UICONTROL Komponenten kuratieren]
    * [!UICONTROL CSV herunterladen]
@@ -48,29 +48,29 @@ Wenn Sie die Produktnutzung aktivieren, sind die folgenden Dimensionen verfügba
    * [!UICONTROL Projekt laden]
    * [!UICONTROL Neue Scorecard geladen]
    * [!UICONTROL Datenwörterbuch öffnen]
-   * [!UICONTROL Intelligente Untertitel öffnen]
+   * [!UICONTROL Intelligente Beschriftungen öffnen]
    * [!UICONTROL Projektfreigabe]
-   * [!UICONTROL Experimentier-Bedienfeld ausführen]
+   * [!UICONTROL Panel „Experiment durchführen“]
    * [!UICONTROL Projekt speichern]
    * [!UICONTROL Scorecard gespeichert]
    * [!UICONTROL Datei senden]
    * [!UICONTROL Datei planmäßig senden]
    * [!UICONTROL Projekt für alle freigeben]
-   * [!UICONTROL Projekt für Workspace-Benutzer freigeben]
-* **[!UICONTROL Attributionsmodell verwendet]**: Der Typ des Attributionsmodells, das die Komponente verwendet. Zu den Dimensionen gehören:
+   * [!UICONTROL Projekt für Workspace-Benutzende freigeben]
+* **[!UICONTROL Verwendetes Attributionsmodell]**: Der Typ des Attributionsmodells, das von der Komponente verwendet wird. Zu den Dimensionselementen gehören:
    * [!UICONTROL Letztkontakt]
    * [!UICONTROL Erstkontakt]
    * [!UICONTROL Linear]
    * [!UICONTROL Beitrag]
-   * [!UICONTROL Selber Kontakt]
-   * [!UICONTROL U-förmig]
+   * [!UICONTROL Gleicher Kontaktpunkt]
+   * [!UICONTROL U-Form]
    * [!UICONTROL J-Kurve]
-   * [!UICONTROL Umgekehrt J]
+   * [!UICONTROL Umgekehrtes J]
    * [!UICONTROL Zeitverfall]
    * [!UICONTROL Benutzerspezifisch]
    * [!UICONTROL Algorithmisch]
-* **[!UICONTROL Komponentenname]**: Der Name der Komponente, die hinzugefügt, entfernt oder geändert wurde.
-* **[!UICONTROL Komponententyp]**: Der Typ der Komponente, die hinzugefügt, entfernt oder geändert wurde. Zu den Dimensionen gehören:
+* **[!UICONTROL Name der Komponente]**: Der Name der Komponente, die hinzugefügt, entfernt oder geändert wurde.
+* **[!UICONTROL Typ der Komponente]**: Der Typ der Komponente, die hinzugefügt, entfernt oder geändert wurde. Zu den Dimensionselementen gehören:
    * [!UICONTROL Dimension]
    * [!UICONTROL Metrik]
    * [!UICONTROL Filter]
@@ -78,8 +78,8 @@ Wenn Sie die Produktnutzung aktivieren, sind die folgenden Dimensionen verfügba
    * [!UICONTROL Datumsbereich]
    * [!UICONTROL Anmerkung]
    * [!UICONTROL Warnhinweis]
-* **[!UICONTROL Benutzer anmelden]**: Der Benutzer, der die Aktion ausgeführt hat.
-* **[!UICONTROL Bedienfeld verwendet]**: Das Bedienfeld, in dem die Komponente hinzugefügt, entfernt oder geändert wurde. Zu den Dimensionen gehören:
+* **[!UICONTROL Anmeldebenutzerin bzw. Anmeldebenutzer]**: Die Benutzerin bzw. der Benutzer, die bzw. der die Aktion ausgeführt hat.
+* **[!UICONTROL Verwendetes Bedienfeld]**: Das Panel, in dem die Komponente hinzugefügt, entfernt oder geändert wurde. Zu den Dimensionselementen gehören:
    * [!UICONTROL Attribution]
    * [!UICONTROL Leeres Bedienfeld]
    * [!UICONTROL Experimentieren]
@@ -94,16 +94,16 @@ Wenn Sie die Produktnutzung aktivieren, sind die folgenden Dimensionen verfügba
    * [!UICONTROL Kundentreue]
    * [!UICONTROL Funktionsmatrix]
 * **[!UICONTROL Projektname]**: Der Anzeigename des Projekts.
-* **[!UICONTROL Projekttyp]** Der Projekttyp. Zu den Dimensionen gehören:
+* **[!UICONTROL Projekttyp]**: Der Projekttyp. Zu den Dimensionselementen gehören:
    * `workspace-projects`
    * `guided-analysis`
    * `mobile-scorecard-builder`
-* **[!UICONTROL Verwendete Visualisierung]**: Die Visualisierung, die hinzugefügt, entfernt oder geändert wurde. Zu den Dimensionen gehören:
+* **[!UICONTROL Verwendete Visualisierung]**: Die Visualisierung, die hinzugefügt, entfernt oder geändert wurde. Zu den Dimensionselementen gehören:
    * [!UICONTROL Freiformtabelle]
    * [!UICONTROL Kohortentabelle]
    * [!UICONTROL Fallout]
    * [!UICONTROL Fluss]
-   * [!UICONTROL Journey Canvas-Reportlet]
+   * [!UICONTROL Journey-Arbeitsflächen-Reportlet]
    * [!UICONTROL Bereich]
    * [!UICONTROL Bereiche gestapelt]
    * [!UICONTROL Balken]
@@ -114,11 +114,11 @@ Wenn Sie die Produktnutzung aktivieren, sind die folgenden Dimensionen verfügba
    * [!UICONTROL Histogramm]
    * [!UICONTROL Horizontalbalken]
    * [!UICONTROL Horizontalbalken gestapelt]
-   * [!UICONTROL Zusammenfassung einer Schlüsselmetrik]
+   * [!UICONTROL Zusammenfassung der Schlüsselmetriken]
    * [!UICONTROL Linie]
    * [!UICONTROL Zuordnung]
    * [!UICONTROL Streuung]
-   * [!UICONTROL Bereichs-Kopfzeile]
+   * [!UICONTROL Abschnittskopfzeile]
    * [!UICONTROL Zusammenfassungsänderung]
    * [!UICONTROL Zusammenfassungszahl]
    * [!UICONTROL Text]

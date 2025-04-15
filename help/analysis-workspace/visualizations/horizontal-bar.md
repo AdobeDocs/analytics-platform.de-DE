@@ -5,9 +5,9 @@ feature: Visualizations
 exl-id: 4d982430-5d43-482a-ab4e-ab1fc3616f0c
 role: User
 source-git-commit: 55b312552d32070875714a77e1177bf0da5f9d87
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '193'
-ht-degree: 31%
+ht-degree: 100%
 
 ---
 
@@ -15,11 +15,11 @@ ht-degree: 31%
 
 >[!BEGINSHADEBOX]
 
-_In diesem Artikel werden die Visualisierungen Horizontalbalken und Horizontalbalken gestapelt in {_}![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics** dokumentiert._<br/>_Siehe [Horizontalbalken und Horizontalbalken gestapelt](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/horizontal-bar) für die_![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**-Version dieses Artikels._
+_In diesem Artikel werden die Visualisierungen Horizontalbalken und Horizontalbalken gestapelt in_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics** beschrieben._<br/>_Unter [Horizontalbalken und Horizontalbalken gestapelt](https://experienceleague.adobe.com/de/docs/analytics/analyze/analysis-workspace/visualizations/horizontal-bar) finden Sie die Version dieses Artikels für_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**._
 
 >[!ENDSHADEBOX]
 
-Die horizontale Balkenvisualisierung hat eine standardmäßige und eine gestapelte Option.
+Die Visualisierung „Horizontalbalken“ bietet die Optionen „Standardmäßig“ und „Gestapelt“.
 
 ## Horizontalbalken {#horizontal-bar}
 
@@ -33,7 +33,7 @@ Die horizontale Balkenvisualisierung hat eine standardmäßige und eine gestapel
 <!-- markdownlint-enable MD034 -->
 
 
-Diese ![GraphBarHorizontal](/help/assets/icons/GraphBarHorizontal.svg)Horizontalbalken **[!UICONTROL -Visualisierung]** horizontale Balken, die verschiedene Werte aus einer oder mehreren Metriken darstellen.
+Die ![GraphBarHorizontal](/help/assets/icons/GraphBarHorizontal.svg) Visualisierung **[!UICONTROL Horizontalbalken]** zeigt horizontale Balken, die verschiedene Werte aus einer oder mehreren Metriken darstellen.
 
 ![Horizontaler Balken mit Metriken wie Seitenansichten, Seitengeschwindigkeit, Besuche, Einstiege und Ausstiege.](assets/horizontal-bar.png)
 
@@ -49,18 +49,18 @@ Diese ![GraphBarHorizontal](/help/assets/icons/GraphBarHorizontal.svg)Horizontal
 <!-- markdownlint-enable MD034 -->
 
 
-Die ![GraphBarHorizontalStacked](/help/assets/icons/GraphBarHorizontalStacked.svg)**[!UICONTROL Horizontalbalken gestapelt]**-Visualisierung entspricht der [!UICONTROL Horizontalbalken], die Serienbalken erscheinen jedoch gestapelt.
+Die ![GraphBarHorizontalStacked](/help/assets/icons/GraphBarHorizontalStacked.svg) Visualisierung **[!UICONTROL Horizontalbalken gestapelt]** entspricht der Visualisierung [!UICONTROL Horizontalbalken], aber die Serien sind hier gestapelt.
 
 ![Ein gestapelter horizontaler Balken mit Seitenansichten, Besuchen, Einstiegen und Ausstiegen.](assets/horizontal-bar-stacked.png)
 
-Verwenden Sie die Option **[!UICONTROL 100 % gestapelt]** in ![Einstellung](/help/assets/icons/Setting.svg) **[!UICONTROL Einstellungen]**, um das Diagramm in eine 100 % gestapelte Visualisierung umzuwandeln.
+Verwenden Sie die Option **[!UICONTROL 100 % gestapelt]** in den ![Einstellung](/help/assets/icons/Setting.svg) **[!UICONTROL Einstellungen]**, um das Diagramm in eine 100 % gestapelte Visualisierung umzuwandeln.
 
-![Horizontalbalken gestapelt 100%](assets/horizontal-bar-stacked100.png)
+![Horizontalbalken 100 % gestapelt](assets/horizontal-bar-stacked100.png)
 
 
 >[!MORELIKETHIS]
 >
->[Hinzufügen einer Visualisierung zu einem Bedienfeld](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
+>[Hinzufügen einer Visualisierung zu einem Panel](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
 >[Visualisierungseinstellungen](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
 >[Kontextmenü der Visualisierung](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
 >

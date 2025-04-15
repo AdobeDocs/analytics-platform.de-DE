@@ -1,5 +1,5 @@
 ---
-description: Senden Sie ein Analysis Workspace-Projekt per E-Mail oder planen Sie die Bereitstellung.
+description: Versenden Sie ein Projekt aus Analysis Workspace per E-Mail oder planen Sie die Bereitstellung.
 keywords: Analysis Workspace
 title: Berichte per E-Mail an Dritte senden
 feature: Curate and Share
@@ -7,13 +7,13 @@ mini-toc-levels: 3
 exl-id: 36b5133a-2cd3-4cf1-a6fa-93a02dba276a
 role: User
 source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1034'
-ht-degree: 58%
+ht-degree: 100%
 
 ---
 
-# Dateien an andere senden
+# Dateien An andere senden
 
 Sie können Customer Journey Analytics-Berichte als Dateien per E-Mail an ausgewählte Benutzende senden. Sie können Dateien ad hoc senden oder Sie können Dateien so konfigurieren, dass sie nach einem Zeitplan gesendet werden. Dateien können im CSV- oder PDF-Format gesendet werden.
 
@@ -23,7 +23,7 @@ Es sind auch andere Methoden zum Exportieren von Customer Journey Analytics-Date
 
 ## Datei jetzt senden {#now}
 
-So senden Sie eine Datei sofort per E-Mail an Empfänger:
+So senden Sie eine Datei sofort per E-Mail an die Empfangenden:
 
 1. Klicken Sie auf **[!UICONTROL Freigeben] > [!UICONTROL Datei exportieren]**.
 1. Geben Sie den Dateityp an:
@@ -39,7 +39,7 @@ So senden Sie eine Datei sofort per E-Mail an Empfänger:
 
 ## Datei nach Zeitplan senden {#schedule}
 
-So senden Sie eine Datei nach einem wiederkehrenden Zeitplan per E-Mail an Empfänger:
+So senden Sie eine Datei basierend auf einem wiederkehrenden Zeitplan per E-Mail an die Empfangenden:
 
 1. Klicken Sie auf **[!UICONTROL Freigeben] > [!UICONTROL Dateiexport planen]**.
 1. Geben Sie den Dateityp an (CSV oder PDF).
@@ -50,13 +50,13 @@ So senden Sie eine Datei nach einem wiederkehrenden Zeitplan per E-Mail an Empf�
 1. Geben Sie die Versandhäufigkeit an. Jede Häufigkeit ermöglicht unterschiedliche Anpassungen.
 1. Klicken Sie auf **[!UICONTROL Planmäßig senden]**.
 
-![Das Fenster „Datei senden“ und die angezeigten Planungsoptionen zeigen die Einstellungen „Beginn am“, „Ende am“ und „Tägliche Häufigkeit“ an.](assets/send-file.JPG)
+![Das Fenster Datei senden und die angezeigten Planungsoptionen zeigen die Einstellungen Startet am, Endet am und Täglicher Versand an.](assets/send-file.JPG)
 
 ## Manager für geplante Projekte {#manager}
 
-Geplante Analysis Workspace-Projekte können unter **[!UICONTROL Analysen] > [!UICONTROL Komponenten] > [!UICONTROL Geplante Projekte]** verwaltet werden.
+Geplante Analysis Workspace-Projekte können unter **[!UICONTROL Analytics] > [!UICONTROL Komponenten] > [!UICONTROL Geplante Projekte]** verwaltet werden.
 
-Im Manager für geplante Projekte können wiederkehrende Projektzeitpläne bearbeitet und gelöscht werden. Suchen Sie in der Suchleiste oder mithilfe der Filteroptionen im linken Bereich nach einem Zeitplan. Sie können nach Tag, genehmigten Zeitplänen, Inhabern und mehr filtern.
+Im Manager für geplante Projekte können wiederkehrende Projektzeitpläne bearbeitet und gelöscht werden. Suchen Sie in der Suchleiste oder mithilfe der Filteroptionen im linken Panel nach einem Zeitplan. Sie können nach Tag, genehmigten Zeitplänen, Inhabern und mehr filtern.
 
 | Feld | Beschreibung |
 | --- | --- |
@@ -65,10 +65,10 @@ Im Manager für geplante Projekte können wiederkehrende Projektzeitpläne bearb
 | [!UICONTROL Titel und Beschreibung] | Titel und Beschreibung dieses Projekts. |
 | [!UICONTROL Inhabende] | Die Person, die das Projekt erstellt hat und dafür verantwortlich ist. |
 | [!UICONTROL Tags] | (Optional) Mit Tagging können Projekte praktisch organisiert werden. Alle Benutzer können Tags erstellen und eines oder mehrere Tags auf ein Projekt anwenden. Sie sehen Tags jedoch nur für die Projekte, deren Verantwortlicher Sie sind oder die für Sie freigegeben wurden. |
-| [!UICONTROL Zugestellt an] | Die Empfängerinnen bzw. Empfänger dieses geplanten Projekts. |
-| [!UICONTROL Ablaufdatum] | Sie können das Ablaufdatum unabhängig von der Häufigkeit des Zeitplans auf bis zu ein Jahr festlegen. |
+| [!UICONTROL Gesendet an] | Die Empfängerinnen bzw. Empfänger dieses geplanten Projekts. |
+| [!UICONTROL Ablaufdatum] | Sie können das Ablaufdatum auf bis zu ein Jahr festlegen, unabhängig von der Häufigkeit des Zeitplans. |
 | [!UICONTROL Häufigkeit] | Wie oft Sie dieses geplante Projekt an die Empfängerinnen bzw. Empfänger senden möchten. |
-| [!UICONTROL Ausführungszeit] | Zu welcher Tageszeit dieses geplante Projekt gesendet wird.  |
+| [!UICONTROL Durchführungszeit] | Zu welcher Tageszeit dieses geplante Projekt gesendet wird. |
 | [!UICONTROL Anzahl der Abfragen] | Die Anzahl der Abfragen für dieses Projekt. |
 
 Die folgenden Aktionen werden im Manager für geplante Projekte häufig ausgeführt:
@@ -78,11 +78,11 @@ Die folgenden Aktionen werden im Manager für geplante Projekte häufig ausgefü
 | **[!UICONTROL Zeitplan bearbeiten]** | Klicken Sie auf den Titel des Zeitplans, um seine Versandeinstellungen zu aktualisieren. |
 | **[!UICONTROL Zeitplan löschen]** | Wählen Sie das geplante Projekt in der Liste aus und klicken Sie dann im Menü auf „Löschen“. Dadurch wird der ausgewählte Zeitplan für das Projekt gelöscht. Das Projekt selbst wird nicht gelöscht. |
 | **[!UICONTROL Tags hinzufügen]** | Wählen Sie das geplante Projekt in der Liste aus und wählen Sie dann „Taggen“ oder „Genehmigen“ aus, um Ihre Zeitpläne zu organisieren und die Suche zu vereinfachen. |
-| **[!UICONTROL Fehlgeschlagene Zeitpläne anzeigen]** | Navigieren Sie zum linken Bedienfeld > Andere Filter > Fehlgeschlagene Zeitpläne werden angezeigt. |
-| **[!UICONTROL Abgelaufene Zeitpläne anzeigen]** | Navigieren Sie zum linken Bedienfeld > Andere Filter > Abgelaufen , um Zeitpläne anzuzeigen, die abgelaufen sind. Klicken Sie auf den Titel des Zeitplans, um einen neuen Versandplan einzurichten. |
+| **[!UICONTROL Fehlgeschlagene Zeitpläne anzeigen]** | Navigieren Sie zum linken Panel > „Andere Filter“ > „Fehlgeschlagen“, um Zeitpläne anzuzeigen, die fehlgeschlagen sind. |
+| **[!UICONTROL Abgelaufene Zeitpläne anzeigen]** | Navigieren Sie zum linken Panel > „Andere Filter“ > „Abgelaufen“, um Zeitpläne anzuzeigen, die abgelaufen sind. Klicken Sie auf den Titel des Zeitplans, um einen neuen Versandplan einzurichten. |
 | **[!UICONTROL Zeitplan-ID anzeigen]** | Navigieren Sie oben rechts zu den Spaltenoptionen und fügen Sie der Tabelle die Spalte „Zeitplan-ID“ hinzu. Die Zeitplan-ID ist oft zum Debugging nützlich. |
 
-Im Manager für geplante Projekte werden die Elemente angezeigt, die von einem bestimmten Benutzer erstellt wurden. Wenn das Benutzerkonto in der Anwendung deaktiviert ist, werden alle geplanten Sendungen gestoppt.
+Im Manager für geplante Projekte werden die Elemente angezeigt, die von einem bestimmten Benutzer erstellt wurden. Wenn das Benutzerkonto in der Anwendung deaktiviert wird, werden alle geplanten Bereitstellungen gestoppt.
 Weitere Informationen finden Sie unter [Geplante Projekte](/help/components/scheduled-projects-manager.md).
 
 ## Passwortschutz für ein geplantes Projekt {#password}
@@ -99,34 +99,34 @@ Weitere Informationen finden Sie unter [Geplante Projekte](/help/components/sche
 
 >[!NOTE]
 >
->Die Option, ein geplantes Projekt mit einem Passwort zu schützen, wird nur für Customer Journey Analytics-Kunden angezeigt, die das [Healthcare Shield](https://business.adobe.com/solutions/industries/healthcare.html)-Add-on-Produkt erworben haben.
+>Die Option, ein geplantes Projekt mit einem Passwort zu schützen, wird nur für Customer Journey Analytics-Kunden angezeigt, die das [Healthcare Shield](https://business.adobe.com/solutions/industries/healthcare.html)-Add-on-Produkt gekauft haben.
 
 Adobe verwendet das Passwort zum Verschlüsseln geplanter Projekte, unabhängig davon, ob sie im .pdf- oder .csv-Format gesendet werden.
 
-Nachdem Ihr Unternehmen die Healthcare Shield-SKU erworben und für sie aktiviert wurde, wird die Aufforderung zur Erstellung eines Passworts für ein geplantes Projekt unter folgenden Umständen angezeigt:
+Nachdem Ihr Unternehmen die Healthcare Shield-Produktnummer erworben hat und mit ihr verknüpft wurde, wird die Aufforderung zur Erstellung eines Passworts für ein geplantes Projekt unter den folgenden Bedingungen angezeigt:
 
 * Wenn jemand ein neues geplantes Projekt erstellt.
 
-* Wenn ein vorhandenes geplantes Projekt kurz vor dem Senden steht. Das aktuell geplante Projekt wird deaktiviert, bis der Passwortschutz eingerichtet ist. Der Eigentümer des geplanten Projekts erhält eine E-Mail, in der er über diese Anforderung informiert wird.
+* Wenn ein vorhandenes geplantes Projekt kurz vor dem Senden steht. Das aktuell geplante Projekt wird deaktiviert, bis der Passwortschutz eingerichtet ist. Die Inhaberin oder der Inhaber des geplanten Projekts erhält eine E-Mail, in der sie bzw. er über diese Anforderung informiert wird.
 
-![Das Fenster „Geplantes Projekt bearbeiten“ und die Benachrichtigung zur Kennwortverschlüsselung geben an, dass Ihr Unternehmen eine Kennwortverschlüsselung benötigt.](assets/password.png)
+![Das Fenster Geplantes Projekt bearbeiten und die Benachrichtigung zur Passwortverschlüsselung mit dem Hinweis, dass Ihre Organisation eine Passwortverschlüsselung benötigt.](assets/password.png)
 
 ### Passwortanforderungen
 
-Die Passwortanforderungen entsprechen den Adobe-Standards und erfordern mindestens 8 Zeichen mit mindestens einer Zahl und einem Sonderzeichen.
+Die Passwortanforderungen entsprechen dem Adobe-Standard und schreiben mindestens acht Zeichen mit mindestens einer Zahl und einem Sonderzeichen vor.
 
 ### Passwortschutz für ein neues geplantes Projekt
 
-1. Nachdem Sie Ihr Projekt gespeichert haben, gehen Sie zu **[!UICONTROL Freigeben]** > **[!UICONTROL Datei jetzt senden]** oder **[!UICONTROL Freigeben]** > **[!UICONTROL Datei planmäßig senden]**.
+1. Nachdem Sie Ihr Projekt gespeichert haben, navigieren Sie zu **[!UICONTROL Freigeben]** > **[!UICONTROL Jetzt Datei senden]** oder **[!UICONTROL Freigeben]** > **[!UICONTROL Datei nach Zeitplan senden]**.
 1. Befolgen Sie die oben stehenden Anweisungen unter [Datei jetzt senden](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/t-schedule-report.html?lang=de#now) oder [Datei planmäßig senden](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/t-schedule-report.html?lang=de#schedule).
 
 ### Passwortschutz für ein vorhandenes geplantes Projekt
 
-Vor der Planung eines Projekts erhält der Projektinhaber eine E-Mail wie die folgende:
+Vor der Planung eines Projekts erhält die Inhaberin oder der Inhaber des Projekts eine E-Mail wie die folgende:
 
-![Die Customer Journey Analytics-E-Mail-Benachrichtigung, die angibt, dass für Ihr Unternehmen eine Kennwortverschlüsselung erforderlich ist.](assets/email-password.png)
+![Die Customer Journey Analytics-E-Mail-Benachrichtigung mit dem Hinweis, dass für eine Passwortverschlüsselung für Ihre Organisation erforderlich ist.](assets/email-password.png)
 
 1. Melden Sie sich bei Customer Journey Analytics an.
-1. Wählen **[!UICONTROL Geplantes Projekt anzeigen]**.
+1. Wählen Sie **[!UICONTROL Geplantes Projekt anzeigen]** aus.
 1. Geben Sie in **[!UICONTROL Geplantes Projekt bearbeiten]** ein Passwort ein und bestätigen Sie es.
-1. Teilen Sie den Empfängern des geplanten Projekts dieses Kennwort mit. Verteilen Sie das Kennwort nicht an Personen, die keine Empfänger des geplanten Projekts sind.
+1. Teilen Sie den Empfangenden des geplanten Projekts dieses Passwort mit. Geben Sie das Passwort nicht an Personen weiter, die keine Empfangenden des geplanten Projekts sind.

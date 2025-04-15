@@ -6,9 +6,9 @@ feature: Data Views
 exl-id: a763027e-68f7-4f0a-8082-85db5283c8e3
 role: Admin
 source-git-commit: e4e0c3cf2e865454837df6626c3b1b09f119f07f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '921'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -32,7 +32,7 @@ Mit Einstellungen der [!UICONTROL Teilzeichenfolge]-Komponente können Sie mehre
 
 ## Von links/rechts
 
-Hiermit stellen Sie einen Teil einer Zeichenfolge je nach ihrer Position an den Beginn oder das Ende einer Zeichenfolge. **[!UICONTROL Von links]** und **[!UICONTROL Von rechts]** bieten zwei Dropdown-Listen: **[!UICONTROL Von]** (wo die Ausgabe beginnt) und **[!UICONTROL Bis]** (wo die Ausgabe endet).
+Hiermit stellen Sie einen Teil einer Zeichenfolge je nach ihrer Position an den Beginn oder das Ende einer Zeichenfolge. Die Methoden **[!UICONTROL Von links]** und **[!UICONTROL Von rechts]** verfügen über zwei Dropdown-Listen: **[!UICONTROL Von]** (wo die Ausgabe beginnt) und **[!UICONTROL Bis]** (wo die Ausgabe endet).
 
 * **[!UICONTROL Zeichenfolgen-Start]**: Der Beginn der Zeichenfolge.
 * **[!UICONTROL Zeichenfolge-Ende]**: Das Ende der Zeichenfolge.
@@ -41,7 +41,7 @@ Hiermit stellen Sie einen Teil einer Zeichenfolge je nach ihrer Position an den 
    * **[!UICONTROL Übereinstimmung]**: Die zuzuordnende Zeichenfolge. Wenn die Eingabe nicht mit diesem Feld übereinstimmt, werden [keine Wertoptionen](no-value-options.md) angewendet.
    * **[!UICONTROL Index]**: Die **[!UICONTROL Übereinstimmungskriterien]** können in einer Zeichenfolge mehrmals vorkommen. Diese Ganzzahl bestimmt, welche Übereinstimmung je nach Methode die Ausgabe starten oder beenden soll. Beispiel: Ein Index von `1` stellt die erste Übereinstimmung dar. Wenn der Index höher ist als die Anzahl der verfügbaren Übereinstimmungen, werden [keine Wertoptionen](no-value-options.md) angewendet.
    * **[!UICONTROL Zeichenfolge einschließen]**: Ist dieses Kontrollkästchen aktiviert, wird die **[!UICONTROL Übereinstimmungszeichenfolge]** in der Ausgabe einbezogen.
-* **[!UICONTROL Länge]**: Eine Ganzzahl, die angibt, wie hoch die einzubeziehende Zeichenzahl nach der Startposition der Ausgabe sein soll. Nur in der Dropdown **[!UICONTROL Liste &quot;]**&quot; verfügbar.
+* **[!UICONTROL Länge]**: Eine Ganzzahl, die angibt, wie hoch die einzubeziehende Zeichenzahl nach der Startposition der Ausgabe sein soll. Nur verfügbar in der Dropdown-Liste **[!UICONTROL Bis]**.
 
 ## Trennzeichen
 
@@ -81,7 +81,7 @@ Wenden Sie reguläre Ausdrücke auf eine Dimension an, um den gewünschten Wert 
 * **[!UICONTROL Ausgabeformat]**: Ein optionales Feld, mit dem Sie Text hinzufügen oder die Regex-Untergruppenausgabe neu anordnen können. Wenn dieses Feld leer ist, ist die Zeichenfolgenausgabe der ausgewertete Regex-Ausdruck.
 * **[!UICONTROL Groß-/Kleinschreibung]**: Ist dieses Kontrollkästchen aktiviert, muss beim regulären Ausdruck die Groß-/Kleinschreibung beachtet werden.
 
-Customer Journey Analytics verwendet eine Teilmenge der Perl-Regex-Syntax. Wenn die Eingabe nicht mit dem regulären Ausdruck übereinstimmt und das **[!UICONTROL Ausgabeformat]** leer ist, werden [keine Wertoptionen](no-value-options.md) angewendet. Die folgenden Ausdrücke werden unterstützt:
+Customer Journey Analytics verwendet eine Untergruppe der Perl-Regex-Syntax. Wenn die Eingabe nicht mit dem regulären Ausdruck übereinstimmt und das **[!UICONTROL Ausgabeformat]** leer ist, werden [keine Wertoptionen](no-value-options.md) angewendet. Die folgenden Ausdrücke werden unterstützt:
 
 | Ausdruck | Beschreibung |
 | --- | --- |
@@ -121,7 +121,7 @@ Ausgabe-Platzhalter werden ebenfalls unterstützt. Sie können diese Sequenzen i
 | --- | --- |
 | `$&` | Gibt aus, was mit dem gesamten Ausdruck übereinstimmt. |
 | `$n` | Gibt aus, was mit dem n-ten Unterausdruck übereinstimmt. Beispiel: `$1` gibt den ersten Unterausdruck aus. |
-| ``$` `` | Gibt den Text zwischen dem Ende der letzten gefundenen Übereinstimmung (oder dem Beginn des Textes aus, wenn keine vorherige Übereinstimmung gefunden wurde) und dem Beginn der aktuellen Übereinstimmung aus. |
+| ``$` `` | Gibt den Text zwischen dem Ende der letzten gefundenen Übereinstimmung (oder dem Beginn des Textes, wenn keine vorherige Übereinstimmung gefunden wurde) und dem Beginn der aktuellen Übereinstimmung aus. |
 | `$+` | Gibt aus, was mit dem letzten markierten Unterausdruck im regulären Ausdruck übereinstimmt. |
 | `$$` | Gibt das Zeichenfolgenzeichen `"$"` aus. |
 

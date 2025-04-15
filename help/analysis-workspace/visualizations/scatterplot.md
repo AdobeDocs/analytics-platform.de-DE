@@ -5,9 +5,9 @@ feature: Visualizations
 exl-id: c01386c9-c51f-46f3-b1a2-41a8d8996d04
 role: User
 source-git-commit: 4bf8c616965718426efe880865acb0e5054b6a31
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '177'
-ht-degree: 57%
+ht-degree: 100%
 
 ---
 
@@ -25,12 +25,12 @@ ht-degree: 57%
 
 >[!BEGINSHADEBOX]
 
-_In diesem Artikel wird die Streuvisualisierung in {_}![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._<br/>_Siehe [Streuung](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/scatterplot) für die_![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**-Version dieses Artikels._
+_In diesem Artikel wird die Visualisierung „Streuung“ in_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics** beschrieben._<br/>_Unter [Streuung](https://experienceleague.adobe.com/de/docs/analytics/analyze/analysis-workspace/visualizations/scatterplot) finden Sie die Version dieses Artikels für_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**._
 
 >[!ENDSHADEBOX]
 
 
-Die ![GraphScatter](/help/assets/icons/GraphScatter.svg)**[!UICONTROL Scatter]**-Visualisierung zeigt die Beziehung zwischen Dimensionselementen und bis zu drei Metriken. Die Visualisierung erfordert drei Komponenten und unterstützt die Visualisierung von bis zu vier Komponenten.
+Die Visualisierung ![GraphScatter](/help/assets/icons/GraphScatter.svg) **[!UICONTROL Streuung]** zeigt die Beziehung zwischen Dimensionselementen und bis zu drei Metriken an. Die Visualisierung drei Komponenten und unterstützt die Visualisierung von bis zu vier Komponenten.
 
 * Die Zeilenkomponente (normalerweise eine Dimension) stellt jeden Punkt im Diagramm dar. Verschiedene Zeilen werden als verschiedenfarbige Punkte angezeigt.
 * Die Spalte ganz links (normalerweise eine Metrik) stellt die Position des Punkts auf der Y-Achse (vertikal) dar.
@@ -43,14 +43,14 @@ Die ![GraphScatter](/help/assets/icons/GraphScatter.svg)**[!UICONTROL Scatter]**
 
 >[!BEGINSHADEBOX]
 
-Siehe ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Streudiagramm-](https://video.tv.adobe.com/v/334459/?quality=12&learn=on){target="_blank"}) für ein Demovideo.
+Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Visualisierung „Streudiagramm“](https://video.tv.adobe.com/v/334459/?quality=12&learn=on){target="_blank"} finden Sie ein Demovideo.
 
 >[!ENDSHADEBOX]
 
 
 >[!MORELIKETHIS]
 >
->[Hinzufügen einer Visualisierung zu einem Bedienfeld](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
+>[Hinzufügen einer Visualisierung zu einem Panel](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
 >[Visualisierungseinstellungen](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
 >[Kontextmenü der Visualisierung](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
 >

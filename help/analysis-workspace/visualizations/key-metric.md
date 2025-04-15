@@ -5,9 +5,9 @@ feature: Visualizations
 exl-id: ef606c53-b370-419a-904b-573ee6d70a8d
 role: User
 source-git-commit: 55b312552d32070875714a77e1177bf0da5f9d87
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '959'
-ht-degree: 36%
+ht-degree: 100%
 
 ---
 
@@ -25,22 +25,22 @@ ht-degree: 36%
 
 >[!BEGINSHADEBOX]
 
-_In diesem Artikel wird die Visualisierung der Zusammenfassung der Schlüsselmetriken in {_}![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._<br/>_Siehe [Zusammenfassung der Schlüsselmetriken](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/key-metric) für die_![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**-Version dieses Artikels._
+_In diesem Artikel wird die Visualisierung der Zusammenfassung der Schlüsselmetriken in_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics** beschrieben._<br/>_Unter [Zusammenfassung der Schlüsselmetriken](https://experienceleague.adobe.com/de/docs/analytics/analyze/analysis-workspace/visualizations/key-metric) finden Sie die Version dieses Artikels für_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**._
 
 >[!ENDSHADEBOX]
 
 
-Mit der Visualisierung ![KeyMetrics](/help/assets/icons/KeyMetrics.svg) **[!UICONTROL Key Metric Summary]** können Sie sehen, wie sich eine wichtige Metrik innerhalb eines einzigen Zeitrahmens entwickelt. Außerdem können Sie damit die Leistung von Metriken über zwei Zeitrahmen hinweg vergleichen. Sie bietet die Vorteile mehrerer Visualisierungen, die in einer Visualisierung kombiniert werden:
+Mit der ![KeyMetrics](/help/assets/icons/KeyMetrics.svg) **[!UICONTROL Zusammenfassung der Schlüsselmetriken]** können Sie sehen, wie sich eine wichtige Metrik innerhalb eines einzigen Zeitrahmens entwickelt. Außerdem können Sie damit die Leistung von Metriken über zwei Zeitrahmen hinweg vergleichen. Sie bietet die Vorteile mehrerer Visualisierungen, die in einer Visualisierung kombiniert werden:
 
-* **[!UICONTROL Linie]** Visualisierung zeigt, wie die Metrik für die primären und Vergleichsdatumsbereiche trendet
+* Die Visualisierung **[!UICONTROL Linie]** zeigt, wie sich die Metrik für den primären und den Vergleichs-Datumsbereich entwickelt
 
-* **[!UICONTROL Zusammenfassende prozentuale Änderung]** zeigt die Zunahme oder Abnahme der Metrik zwischen dem primären und dem Vergleichsdatumsbereich
+* **[!UICONTROL Zusammenfassende prozentuale Änderung]** zeigt die Zunahme oder Abnahme der Metrik zwischen dem primären und dem Vergleichs-Datumsbereich
 
 * Aktueller Gesamtwert ([!UICONTROL **Summenzahl**]) für die Metrik
 
-## Anwendungsbeispiele
+## Anwendungsfälle
 
-Diese Visualisierung behandelt verschiedene gängige Anwendungsfälle, darunter:
+Diese Visualisierung eignet sich für eine Vielzahl gängiger Anwendungsfälle, darunter:
 
 * Ein Analyst, der versucht zu verstehen, wie die Entwicklung der Chancen in diesem Monat im Vergleich zum gleichen Zeitraum des letzten Jahres aussah.
 
@@ -50,27 +50,27 @@ Diese Visualisierung behandelt verschiedene gängige Anwendungsfälle, darunter:
 
 ## Verwenden
 
-1. Fügen Sie eine Visualisierung ![KeyMetrics](/help/assets/icons/KeyMetrics.svg) **[!UICONTROL Key Metric Summary]** hinzu. Siehe [Hinzufügen einer Visualisierung zu einem Bedienfeld](freeform-analysis-visualizations.md#add-visualizations-to-a-panel).
+1. Fügen Sie eine Visualisierung ![KeyMetrics](/help/assets/icons/KeyMetrics.svg) **[!UICONTROL Zusammenfassung der Schlüsselmetriken]** hinzu. Siehe [Hinzufügen einer Visualisierung zu einem Panel](freeform-analysis-visualizations.md#add-visualizations-to-a-panel).
 
-1. Konfigurieren Sie die Visualisierung, indem Sie eine **[!UICONTROL Metrik]** einen **[!UICONTROL Primären]**, einen **[!UICONTROL Vergleichsdatumsbereich]** (optional) und einen **[!UICONTROL Filter]** (optional) auswählen:
+1. Konfigurieren Sie die Visualisierung, indem Sie eine **[!UICONTROL Metrik]**, einen **[!UICONTROL primären Datumsbereich]**, einen **[!UICONTROL Vergleichs-Datumsbereich]** (optional) und einen **[!UICONTROL Filter]** (optional) auswählen:
 
-   ![Konfiguration der Schlüsselmetrik mit den Optionen für die Metrik, den primären Datumsbereich, den Vergleichsdatumsbereich und das Segment.](assets/key-metrics-config.png)
+   ![Konfiguration der Schlüsselmetrik mit den Optionen für die Metrik, den primären Datumsbereich, den Vergleichs-Datumsbereich und das Segment.](assets/key-metrics-config.png)
 
    | Option | Beschreibung |
    | --- | --- |
    | **[!UICONTROL Metrik]** | Wählen Sie die Metrik aus, die Sie überprüfen möchten. Alle Metriken werden unterstützt. |
-   | **[!UICONTROL Primärer Datumsbereich]** | Der aktuelle Datumsbereich für die Freiformtabelle.<p>Wählen Sie aus allen verfügbaren Datumsbereichen in Ihrer Datenansicht.</p> <p>Wählen Sie [!UICONTROL **Datumsbereich des Bedienfelds**] aus, wenn Sie denselben Datumsbereich verwenden möchten, der in dem Bedienfeld verwendet wird, in dem sich die Visualisierung befindet.</p> |
+   | **[!UICONTROL Primärer Datumsbereich]** | Der aktuelle Datumsbereich für die Freiformtabelle.<p>Wählen Sie aus allen verfügbaren Datumsbereichen in Ihrer Datenansicht.</p> <p>Wählen Sie [!UICONTROL **Datumsbereich der Panels**] aus, wenn Sie denselben Datumsbereich verwenden möchten, der in dem Panel verwendet wird, in dem sich die Visualisierung befindet.</p> |
    | **[!UICONTROL Vergleichsdatumsbereich]** | Der Datumsbereich, den Sie mit dem primären Datumsbereich vergleichen möchten. |
-   | **[!UICONTROL Filter (optional)]** | Alle Filter, die für diese Zusammenfassung von Interesse sind. |
+   | **[!UICONTROL Filter (optional)]** | Jeder Filter, an dem Sie für diese Zusammenfassung interessiert sind. |
 
    {style="table-layout:auto"}
 
    >[!NOTE]
    >
-   >Wenn das Feld [!UICONTROL **Primärer Datumsbereich**] auf [!UICONTROL **Datumsbereich des Bedienfelds**] festgelegt ist, kann der **[!UICONTROL Vergleichsdatumsbereich]** automatisch aktualisiert werden, je nachdem, ob die gewählte Option **[!UICONTROL Vergleichsdatumsbereich]** relativ zum primären Datumsbereich oder fest ist.
+   >Wenn das Feld [!UICONTROL **Primärer Datumsbereich**] auf [!UICONTROL **Datumsbereich der Panels**] festgelegt ist, kann der **[!UICONTROL Vergleichs-Datumsbereich]** automatisch aktualisiert werden, je nachdem, ob die gewählte Option **[!UICONTROL Vergleichs-Datumsbereich]** relativ zum primären Datumsbereich oder fest ist.
    >
-   >* **Relativ:** Wenn das Feld **[!UICONTROL Vergleichsdatumsbereich]** auf eine Option gesetzt ist, die relativ zum primären Datumsbereich ist ([!UICONTROL **Vortag**], [!UICONTROL **Vorletzter Wochentag**], [!UICONTROL **Selber Tag vor 4 Wochen**] usw.), bewirkt jede Aktualisierung des Felds [!UICONTROL **Primärer Datumsbereich**], dass der **[!UICONTROL Vergleichsdatumsbereich]** automatisch auf den Zeitraum aktualisiert wird, der unmittelbar auf den Datumsbereich des Bedienfelds folgt.
-   >* **Behoben:** Wenn das Feld [!UICONTROL **Vergleichsdatumsbereich**] auf einen festen Datumsbereich eingestellt ist (z. B. **3. Februar 2023**), haben Änderungen am Feld [!UICONTROL **Primärer Datumsbereich**] oder am Datumsbereich des Bedienfelds keine Auswirkungen auf den [!UICONTROL **Vergleichsdatumsbereich**]. Alle Aktualisierungen des Datumsbereichs des Bedienfelds führen jedoch dazu, dass der [!UICONTROL **Primäre**] automatisch aktualisiert wird.
+   >* **Relativ:** Wenn das Feld **[!UICONTROL Vergleichs-Datumsbereich]** auf eine Option gesetzt ist, die relativ zum primären Datumsbereich ist ([!UICONTROL **Vortag**], [!UICONTROL **Selber Tag in der letzten Woche**], [!UICONTROL **Selber Tag vor 4 Wochen**] usw.), bewirkt jede Aktualisierung des Felds [!UICONTROL **Primärer Datumsbereich**], dass der **[!UICONTROL Vergleichs-Datumsbereich]** automatisch auf den Zeitraum aktualisiert wird, der unmittelbar auf den Datumsbereich des Panels folgt.
+   >* **Fest:** Wenn das Feld [!UICONTROL **Vergleichs-Datumsbereich**] auf einen festen Datumsbereich eingestellt ist (z. B. **3. Februar 2023**), haben Änderungen am Feld [!UICONTROL **Primärer Datumsbereich**] oder am Datumsbereich des Panels keine Auswirkungen auf den [!UICONTROL **Vergleichs-Datumsbereich**]. Allerdings führt jede Aktualisierung des Datumsbereichs des Panels dazu, dass der [!UICONTROL **primäre Datumsbereich**] automatisch aktualisiert wird.
 
 1. Wählen Sie **[!UICONTROL Erstellen]** aus.
 
@@ -103,11 +103,11 @@ When you change the panel's date range to '4 days ago', the comparison date rang
 
 Die Ausgabe der Zusammenfassung der Schlüsselmetriken sieht wie folgt aus:
 
-![Ausgabe einer Schlüsselmetrik mit der Metrik, der Zusammenfassungsänderung, der Zusammenfassungsnummer und den Liniendiagrammen.](assets/key-metrics.png)
+![Ausgabe einer Schlüsselmetrik mit der Metrik, der Zusammenfassungsänderung, der Zusammenfassungszahl und den Liniendiagrammen.](assets/key-metrics.png)
 
-Beachten Sie beim Anzeigen der Ausgabe Folgendes:
+Beachten Sie Folgendes beim Anzeigen dieser Ausgabe:
 
-* Das **[!UICONTROL Vorheriger Zeitraum]** Liniendiagramm (immer grau dargestellt) entspricht dem **[!UICONTROL Vergleichsdatumsbereich]** im Konfigurationsschritt.
+* Das Liniendiagramm **[!UICONTROL Vorheriger Zeitraum]** (immer grau dargestellt) entspricht dem **[!UICONTROL Vergleichs-Datumsbereich]** im Konfigurationsschritt.
 
 * Wenn während der Konfiguration kein Vergleichsdatumsbereich angegeben ist, oder in den Visualisierungseinstellungen ausgeblendet wird, wird nur das Liniendiagramm für den primären Datumsbereich angezeigt. Die Zusammenfassungsänderung ist ausgeblendet.
 
@@ -118,11 +118,11 @@ Beachten Sie beim Anzeigen der Ausgabe Folgendes:
 
 Nach dem Erstellen der Visualisierung können Sie die ursprüngliche Konfiguration bearbeiten.
 
-1. Wählen ![Bearbeiten](/help/assets/icons/Edit.svg) **[!UICONTROL Visualisierung konfigurieren]** oben in der Visualisierung aus.
+1. Wählen Sie oben auf der Visualisierung ![Bearbeiten](/help/assets/icons/Edit.svg) **[!UICONTROL Visualisierung konfigurieren]** aus.
 
-   Sie gelangen zurück zum ursprünglichen Konfigurationsdialogfeld.
+   Sie gelangen zurück zum ursprünglichen Dialog für die Konfiguration.
 
-1. Ändern Sie die Einstellungen wie gewünscht. Mit **[!UICONTROL Zurücksetzen]** werden die aktuellen Einstellungen zurückgesetzt. Wählen Sie **[!UICONTROL Erstellen]** aus, um die Visualisierung neu zu erstellen.
+1. Ändern Sie die Einstellungen wie gewünscht. Wählen Sie **[!UICONTROL Zurücksetzen]** aus, um die aktuellen Einstellungen zurückzusetzen. Wählen Sie **[!UICONTROL Erstellen]** aus, um die Visualisierung neu zu erstellen.
 
 ## Einstellungen
 
@@ -134,29 +134,29 @@ Im Rahmen der Visualisierungseinstellungen sind spezifische Einstellungen für d
 | **[!UICONTROL Zahlenwert hervorheben]** | Anzeige der Zusammenfassungsanzahl in hervorgehobener fetter Schrift in der Mitte der Visualisierung |
 | **[!UICONTROL Legende eingeblendet]** | Ein- oder Ausblenden der Legende am unteren Rand der Visualisierung |
 | **[!UICONTROL Anmerkungen anzeigen]** | Von einem Administrator hinzugefügte Anmerkungen anzeigen oder ausblenden |
-| **[!UICONTROL Titel ausblenden]** | Blenden Sie den Titel der Visualisierung aus. |
+| **[!UICONTROL Titel ausblenden]** | Blendet den Titel der Visualisierung aus. |
 | **[!UICONTROL Prozentsätze]** | Zeigt die Visualisierung in Prozent anstelle einer Zahl an. |
-| **[!UICONTROL Trendlinien anzeigen]** | Zeigt Trendlinien in der Visualisierung an. |
-| **[!UICONTROL Max. und Min. für Trendlinien anzeigen]** | Ein- und Ausblenden von Minimal- und Maximalwerten in Primär- und Vergleichsliniendiagrammen |
-| **[!UICONTROL Vergleichsprozentsatz und Trendlinie anzeigen]** | Vergleichsdaten ein- oder ausblenden. Wenn diese Option ausgeblendet ist, werden sowohl das Vergleichszeilendiagramm als auch die Zusammenfassungsänderungsobjekte ausgeblendet. |
+| **[!UICONTROL Trend-Linien anzeigen]** | Zeigt Trend-Linien in der Visualisierung an. |
+| **[!UICONTROL Max. und Min. auf Trend-Linien anzeigen]** | Ein- und Ausblenden von Minimal- und Maximalwerten in Primär- und Vergleichsliniendiagrammen |
+| **[!UICONTROL Vergleichsprozentsatz und Trendlinie anzeigen]** | Vergleichsdaten ein- oder ausblenden. Wenn diese Option ausgeblendet ist, werden sowohl das Vergleichs-Liniendiagramm als auch die Zusammenfassungsänderung der Objekte ausgeblendet. |
 | **[!UICONTROL Gesamtanzahl anzeigen]** | Zusammenfassungsnummer anzeigen oder ausblenden |
 | **[!UICONTROL Rohdifferenz anzeigen]** | Rohdifferenz zwischen dem Gesamtwert der Metrik im primären Datumsbereich und im sekundären Datumsbereich anzeigen oder ausblenden |
-| **[!UICONTROL Wert kürzen]** | Wählen Sie **[!UICONTROL Wert abkürzen]**, um den Zahlenwert intelligent zu kürzen. Wenn ausgewählt, geben Sie eine Zahl ein, um den Betrag der Abkürzung zu definieren. Beispiel:<br/><table><tr><td>**Ausgangswert**</td><td>**Abkürzung**</td><td>**Ergebnis**</td></tr><tr><td>12 011 141,25 $</td><td>Nicht ausgewählt</td><td align="right">12 011 141,25 $</td></tr><tr><td>12 011 141,25 $</td><td>ausgewählt, auf 1 gesetzt</td><td align="right">12 Mio. $</td></tr><tr><td>12 011 141,25 $</td><td>ausgewählt, auf 2 gesetzt</td><td align="right">12,0 Mio. $</td></tr><tr><td>12 011 141,25 $</td><td>ausgewählt, auf 2 gesetzt</td><td align="right">12,011 Mio. $</td></tr><tr><td>12 011 141,25 $</td><td>Wählen Sie, setzen Sie auf 3</td><td align="right">12,011 Mio. $</td></tr></table> |
+| **[!UICONTROL Wert kürzen]** | Wählen Sie **[!UICONTROL Wert abkürzen]**, um den Zahlenwert intelligent zu kürzen. Wenn diese Option ausgewählt ist, geben Sie eine Zahl ein, um den Umfang der Abkürzung zu definieren. Beispiel:<br/><table><tr><td>**Originalwert**</td><td>**Abkürzung**</td><td>**Ergebnis**</td></tr><tr><td>12.011.141,25 USD</td><td>Nicht ausgewählt</td><td align="right">12.011.141,25 USD</td></tr><tr><td>12.011.141,25 USD</td><td>Ausgewählt, auf 1 gesetzt</td><td align="right">12 Mio. USD</td></tr><tr><td>12.011.141,25 USD</td><td>Ausgewählt, auf 2 gesetzt</td><td align="right">12,0 Mio. USD</td></tr><tr><td>12.011.141,25 USD</td><td>Ausgewählt, auf 2 gesetzt</td><td align="right">12,01 Mio. USD</td></tr><tr><td>12.011.141,25 USD</td><td>Ausgewählt, auf 3 gesetzt</td><td align="right">12,01 Mio. USD</td></tr></table> |
 
 ## Visualisierung bearbeiten
 
 Nach dem Erstellen der Visualisierung können Sie die ursprüngliche Konfiguration noch bearbeiten.
 
-1. Klicken Sie auf das Stiftsymbol in der oberen rechten Ecke der Visualisierung (neben dem Zahnradsymbol für Einstellungen).
+1. Klicken Sie oben rechts in der Visualisierung auf das Stiftsymbol (neben dem Zahnradsymbol für die Einstellungen).
 
    ![Bearbeitungssymbol für Visualisierungen](assets/edit-icon.png)
 
    Sie gelangen nun zurück zur ursprünglichen Konfigurationsansicht.
 
-1. Ändern Sie die Metrik, den primären Datumsbereich, den Vergleichsdatumsbereich oder den Filter nach Bedarf.
+1. Ändern Sie die Metrik, den primären Datumsbereich, den Vergleichs-Datumsbereich oder den Filter nach Belieben.
 
 >[!MORELIKETHIS]
 >
->[Hinzufügen einer Visualisierung zu einem Bedienfeld](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
+>[Hinzufügen einer Visualisierung zu einem Panel](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
 >[Visualisierungseinstellungen](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
 >[Kontextmenü der Visualisierung](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
