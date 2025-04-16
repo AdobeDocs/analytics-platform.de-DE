@@ -4,10 +4,10 @@ title: Erstellen von Projekten
 feature: Workspace Basics
 role: User
 exl-id: cc3d3ac9-c31f-4a8d-999c-78590512b57c
-source-git-commit: ab78583eb36d6158630724fbab9eb8148bcdbe23
+source-git-commit: 04586de02765ddeba72aca3132b9eca5d22aced7
 workflow-type: tm+mt
-source-wordcount: '412'
-ht-degree: 99%
+source-wordcount: '463'
+ht-degree: 88%
 
 ---
 
@@ -65,6 +65,15 @@ Nachdem Sie nun ein leeres Workspace-Projekt erstellt haben, sollten Sie mit der
 
 <!-- markdownlint-enable MD034 -->
 
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="workspace_project_commenting"
+>title="Kommentieren zulassen"
+>abstract="Wenn diese Option aktiviert ist, ist in der rechten Leiste des Projekts in Analysis Workspace ein Kommentarbereich verfügbar."
+
+<!-- markdownlint-enable MD034 -->
+
 
 Die Projekteinstellungen enthalten auf der Projektebene befindliche Informationen über das derzeit aktive Projekt.
 
@@ -83,6 +92,7 @@ Zu den Einstellungen gehören:
 | Anmerkungen anzeigen | Legen Sie fest, ob Anmerkungen für dieses Projekt angezeigt werden sollen. |
 | [Projekt-Farbpalette](/help/analysis-workspace/build-workspace-project/color-palettes.md) | Sie können die in Workspace verwendete Farbpalette für Kategorien ändern, indem Sie aus den vordefinierten Paletten wählen, die für die Farbenblindheit optimiert wurden, oder indem Sie eine benutzerdefinierte Palette angeben. Diese Funktion betrifft vieles in Workspace, einschließlich der meisten Visualisierungen. |
 | [Dichte anzeigen](/help/analysis-workspace/build-workspace-project/view-density.md) | Mit dieser Option können Sie mehr Daten auf dem Bildschirm anzeigen, indem Sie den vertikalen Abstand des linken Bedienfelds, der Freiformtabellen und der Kohortentabellen reduzieren. |
+| Kommentieren zulassen | Wenn diese Option aktiviert ist, ist in der rechten Leiste des Projekts in Analysis Workspace ein Kommentarbereich verfügbar. Weitere Informationen finden Sie unter [Hinzufügen und Verwalten von Kommentaren in Projekten](/help/analysis-workspace/build-workspace-project/comment-projects.md). |
 
 
 

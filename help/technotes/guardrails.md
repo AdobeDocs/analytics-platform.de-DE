@@ -1,20 +1,20 @@
 ---
 title: Customer Journey Analytics-Leitplanken
-description: Informationen zu den Schutzmechanismen für Customer Journey Analytics
+description: Erfahren Sie mehr über die Leitplanken für Customer Journey Analytics
 solution: Customer Journey Analytics
 feature: Administration
 role: Admin
 exl-id: f093ac54-7d31-449b-a441-a65856a1d535
-source-git-commit: 22b95bce42ee9f04b828cf5b765f40008a1534b1
+source-git-commit: fbe351bdf6ce451a5c5b5aac4d7cbc2a4c0ba7e5
 workflow-type: tm+mt
-source-wordcount: '1760'
+source-wordcount: '1808'
 ht-degree: 10%
 
 ---
 
 # Customer Journey Analytics-Leitplanken
 
-Dieses Dokument enthält Grenzwerte für verschiedene Komponenten von Customer Journey Analytics. Informationen zu Leitplanken, Bereichsparametern und Berechtigungen finden Sie unter [Produktbeschreibung für Customer Journey Analytics](https://helpx.adobe.com/de/legal/product-descriptions/customer-journey-analytics.html) oder [Produktbeschreibung für Adobe Analytics-Add-on: Customer Journey Analytics](https://helpx.adobe.com/de/legal/product-descriptions/adobe-analytics-addon-customer-journey-analytics.html).
+In diesem Dokument werden Grenzwerte für verschiedene Komponenten von Customer Journey Analytics festgelegt. Informationen zu Leitplanken, Bereichsparametern und Berechtigungen finden Sie unter [Produktbeschreibung für Customer Journey Analytics](https://helpx.adobe.com/de/legal/product-descriptions/customer-journey-analytics.html) oder [Produktbeschreibung für Adobe Analytics-Add-on: Customer Journey Analytics](https://helpx.adobe.com/de/legal/product-descriptions/adobe-analytics-addon-customer-journey-analytics.html).
 
 ## Arten von Beschränkungen
 
@@ -22,12 +22,12 @@ In diesem Dokument gibt es zwei Arten von Standardbeschränkungen:
 
 | Art der Leitplanke | Beschreibung |
 |----------|---------|
-| **Leistungs-Leitplanken (weiches Limit)** | Leistungs-Leitplanken sind Nutzungsbeschränkungen, die sich auf den Umfang Ihrer Anwendungsfälle beziehen. Beim Überschreiten der Leistungsleitplanken kann es zu Leistungseinbußen und Latenzzeiten kommen. Adobe ist nicht für eine solche Leistungsbeeinträchtigung verantwortlich. Kunden, die eine Leistungsschutzmaßnahme durchgängig überschreiten, können sich dafür entscheiden, zusätzliche Kapazität zu lizenzieren, um eine Leistungsbeeinträchtigung zu vermeiden. |
-| **Vom System erzwungene Leitplanken (feste Grenze)** | Systemerzwungene Leitplanken werden von der Customer Journey Analytics-Benutzeroberfläche oder der API erzwungen. Dies sind Beschränkungen, die Sie nicht überschreiten können, da die Benutzeroberfläche und die API Sie daran hindern oder einen Fehler zurückgeben. |
+| **Leistungs-Leitplanken (weiches Limit)** | Leistungs-Leitplanken sind Nutzungsbeschränkungen, die sich auf den Umfang Ihrer Anwendungsfälle beziehen. Beim Überschreiten der Leistungsleitplanken kann es zu Leistungseinbußen und Latenzzeiten kommen. Adobe ist für eine solche Leistungsbeeinträchtigung nicht verantwortlich. Kunden, die eine Leistungsschutzmaßnahme durchgängig überschreiten, können sich dafür entscheiden, zusätzliche Kapazität zu lizenzieren, um eine Leistungsbeeinträchtigung zu vermeiden. |
+| **Vom System erzwungene Leitplanken (feste Grenze)** | Systemerzwungene Leitplanken werden von der Customer Journey Analytics-Benutzeroberfläche oder -API erzwungen. Dies sind Beschränkungen, die Sie nicht überschreiten können, da die Benutzeroberfläche und die API Sie daran hindern oder einen Fehler zurückgeben. |
 
 {style="table-layout:auto"}
 
-Einige der Funktionen und ihr Wert für das Limit hängen vom Customer Journey Analytics-Paket ab, zu dem Sie berechtigt sind.
+Einige der Funktionen und ihr zugehöriger Wert für das Limit hängen vom Customer Journey Analytics-Paket ab, zu dem Sie berechtigt sind.
 
 >[!NOTE]
 >
@@ -53,6 +53,10 @@ Einige der Funktionen und ihr Wert für das Limit hängen vom Customer Journey A
 | Bedienfelder pro Projekt | 15 | Vom System erzwungene Leitplanke | Maximale Anzahl von [Bedienfeldern](../analysis-workspace/home.md#panels) pro Projekt. |
 | Visualisierungen pro Bedienfeld | 25 | Vom System erzwungene Leitplanke | Maximale Anzahl von [Visualisierungen](../analysis-workspace/home.md#visualizations) pro Bedienfeld. |
 | Abgeleitete Felder pro Freiformtabelle | 5 | Vom System erzwungene Leitplanke | Maximale Anzahl verschiedener abgeleiteter Felder in einer einzelnen Freiformtabelle. |
+| Kommentare pro Projekt | 1.000 | Vom System erzwungene Leitplanke | Maximale Anzahl an Kommentaren pro Projekt. |
+| Antworten pro Kommentar | 100 | Vom System erzwungene Leitplanke | Maximale Anzahl von Antworten pro Kommentar. |
+| Bilder pro Kommentar | 5 | Vom System erzwungene Leitplanke | Maximale Anzahl von Bildern pro Kommentar. |
+| Bildgröße | 2 | Vom System erzwungene Leitplanke | Maximale Upload-Größe pro Bild in MB |
 
 {style="table-layout:auto"}
 
@@ -81,7 +85,7 @@ Einige der Funktionen und ihr Wert für das Limit hängen vom Customer Journey A
 
 {style="table-layout:auto"}
 
-Siehe auch Experience Platform von [Real-time Customer Data Platform-Schutzmechanismen](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=de).
+Siehe auch Experience Platform [Leitplanken für die Echtzeit-Kundendatenplattform](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=de).
 
 
 ## Automatisierte Datensatzgültigkeit
@@ -102,7 +106,7 @@ Siehe auch Experience Platform von [Real-time Customer Data Platform-Schutzmecha
 | Datenansichten | 2.000 | Vom System erzwungene Leitplanke | Maximale Anzahl [Datenansichten](../data-views/data-views.md) für eine Organisation. |
 | Datenansichten | 500-1000 | Vom System erzwungene Leitplanke | Maximale Anzahl von Datenansichten für eine Verbindung. Der Wert variiert je nach Customer Journey Analytics-Paket (siehe Produktbeschreibung). |
 | Datensätze | 100 | Vom System erzwungene Leitplanke | Maximale Anzahl [Datensätze](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html?lang=de) pro Verbindung |
-| Verbindungen | 1000 | Vom System erzwungene Leitplanke | Maximale Anzahl von [Verbindungen](../connections/overview.md) für eine Organisation. |
+| Verbindungen | 1.000 | Vom System erzwungene Leitplanke | Maximale Anzahl von [Verbindungen](../connections/overview.md) für eine Organisation. |
 | Connection Title | 500 | Vom System erzwungene Leitplanke | Maximale Zeichenanzahl für einen Verbindungstitel. |
 | Metriken | 5.000 | Vom System erzwungene Leitplanke | Maximale Anzahl von Metriken in einer Datenansicht. |
 | Dimensionen | 5.000 | Vom System erzwungene Leitplanke | Maximale Anzahl von Dimensionen in einer Datenansicht. |
@@ -122,7 +126,7 @@ Siehe auch Experience Platform von [Real-time Customer Data Platform-Schutzmecha
 | Felder | 10.000 | Vom System erzwungene Leitplanke | Maximale Anzahl von Eigenschaften oder Feldern pro Zeile in einem Datensatz. |
 | Eindeutige Zeichenfolgen | 10 Million | Vom System erzwungene Leitplanke | Maximale Anzahl eindeutiger Schlüssel pro Lookup-Datensatz. |
 | Zeilen | 1 Million | Vom System erzwungene Leitplanke | Maximale Anzahl von Zeilen pro eindeutiger Personen-ID in einem bestimmten Monat innerhalb einer Verbindung. |
-| Zeilengröße | 2 | Leistungs-Schutzmaßnahme/Vom System erzwungene Schutzmaßnahme | Durchschnittliche Größe in Kilobyte pro Datenzeile, die in Customer Journey Analytics aufgenommen wird (weiche Grenze). Eine statische Begrenzung für die Zeilengröße wird durch Leitplanken für die Datenaufnahme im Experience Platform bestimmt. |
+| Zeilengröße | 2 | Leistungs-Schutzmaßnahme/Vom System erzwungene Schutzmaßnahme | Durchschnittliche Größe in Kilobyte pro Datenzeile, die in Customer Journey Analytics aufgenommen wird (weiche Grenze). Eine statische Begrenzung für die Zeilengröße wird durch Leitplanken für die Datenaufnahme in Experience Platform bestimmt. |
 
 {style="table-layout:auto"}
 
@@ -203,7 +207,7 @@ Siehe auch Experience Platform [Leitplanken für den Datensatzexport](https://ex
 | Name | Wert | Art von Limit | Beschreibung |
 |---|--:|---|---|
 | Größe der Arbeitsmappen-Datei | 5 | Vom System erzwungene Leitplanke | Maximale Dateigröße in MB einer geplanten Arbeitsmappe. |
-| Datenblöcke | 1000 | Vom System erzwungene Leitplanke | Maximale Anzahl von [Datenblöcken](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/manage-reportbuilder.html?lang=de) pro Arbeitsmappe. |
+| Datenblöcke | 1.000 | Vom System erzwungene Leitplanke | Maximale Anzahl von [Datenblöcken](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/manage-reportbuilder.html?lang=de) pro Arbeitsmappe. |
 | Metriken | 20 | Vom System erzwungene Leitplanke | Maximale Anzahl von Metriken pro Datenblock. |
 | Datumsbereich | 13 | Vom System erzwungene Leitplanke | Maximale Anzahl von Monaten, die ein Datumsbereich pro Datenblock umfassen kann. |
 | Zeilen | 50.000 | Vom System erzwungene Leitplanke | Maximale Zeilenanzahl pro Datenblock. |
@@ -226,14 +230,14 @@ Siehe auch Experience Platform [Leitplanken für den Datensatzexport](https://ex
 
 >[!NOTE]
 >
->Die folgenden Verarbeitungszeiten sind Leitplanken, keine vertraglichen Service Level Agreements (SLAs). Die Latenz variiert je nach Kundenkonfiguration, Datenvolumen und Kundenanwendungen. Häufig sind die tatsächlichen Verarbeitungszeiten schneller. Lesen Sie Ihren Customer Journey Analytics-Vertrag für Ihre spezifischen Vertragsbedingungen und SLAs. Experience Platform Weitere Informationen finden Sie unter [ (](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html) für die Datenaufnahme).
+>Die folgenden Verarbeitungszeiten sind Leitplanken, keine vertraglichen Service Level Agreements (SLAs). Die Latenz variiert je nach Kundenkonfiguration, Datenvolumen und Kundenanwendungen. Häufig sind die tatsächlichen Verarbeitungszeiten schneller. Die spezifischen Vertragsbedingungen und SLAs finden Sie in Ihrem Customer Journey Analytics-Vertrag. Weitere Informationen finden Sie [ Experience Platform ](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html)Leitplanken für die Datenaufnahme).
 
 | Datenfluss | Erwartete Latenz |
 |---|---|
 | Adobe Analytics zu Adobe Analytics Source Connector (A4T-fähig) | &lt; 30 Minuten |
 | Adobe Analytics Source Connector für Echtzeit-Kundenprofil (A4T nicht aktiviert) | &lt; 2 Minuten |
 | Adobe Analytics Source Connector für Echtzeit-Kundenprofil (A4T aktiviert) | &lt; 30 Minuten |
-| Datenaufnahme in den Data Lake aus der Edge Network- oder Streaming-Aufnahme | &lt; 60 Minuten |
+| Datenaufnahme in den Data Lake von Edge Network oder Streaming-Aufnahme | &lt; 60 Minuten |
 | Datenaufnahme in den Data Lake vom Adobe Analytics Source-Connector | &lt; 2,25 Stunden |
 | Datenaufnahme in Customer Journey Analytics aus dem Data Lake | &lt; 90 Minuten |
 | Stitching (optionale Funktion; weitere Informationen [Stitching-Übersicht](../stitching/overview.md)) | &lt; 4 Stunden |
