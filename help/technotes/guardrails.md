@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Administration
 role: Admin
 exl-id: f093ac54-7d31-449b-a441-a65856a1d535
-source-git-commit: fbe351bdf6ce451a5c5b5aac4d7cbc2a4c0ba7e5
+source-git-commit: 3b4917dade478f327ee3f532c5d72c4ca7656067
 workflow-type: tm+mt
-source-wordcount: '1808'
+source-wordcount: '1760'
 ht-degree: 10%
 
 ---
@@ -53,14 +53,23 @@ Einige der Funktionen und ihr zugehöriger Wert für das Limit hängen vom Custo
 | Bedienfelder pro Projekt | 15 | Vom System erzwungene Leitplanke | Maximale Anzahl von [Bedienfeldern](../analysis-workspace/home.md#panels) pro Projekt. |
 | Visualisierungen pro Bedienfeld | 25 | Vom System erzwungene Leitplanke | Maximale Anzahl von [Visualisierungen](../analysis-workspace/home.md#visualizations) pro Bedienfeld. |
 | Abgeleitete Felder pro Freiformtabelle | 5 | Vom System erzwungene Leitplanke | Maximale Anzahl verschiedener abgeleiteter Felder in einer einzelnen Freiformtabelle. |
-| Kommentare pro Projekt | 1.000 | Vom System erzwungene Leitplanke | Maximale Anzahl an Kommentaren pro Projekt. |
-| Antworten pro Kommentar | 100 | Vom System erzwungene Leitplanke | Maximale Anzahl von Antworten pro Kommentar. |
-| Bilder pro Kommentar | 5 | Vom System erzwungene Leitplanke | Maximale Anzahl von Bildern pro Kommentar. |
-| Bildgröße | 2 | Vom System erzwungene Leitplanke | Maximale Upload-Größe pro Bild in MB |
 
 {style="table-layout:auto"}
 
+
 <!--
+
+Add this to the table above, change - for pipe : (End of April, 2025 when project commenting is GA)
+
+Comments per project - 1,000 - System-enforced Guardrail - Maximum number of comments per project. 
+Replies per comment - 100 - System-enforced Guardrail - Maximum number of replies per comment. 
+Images per comment - 5 - System-enforced Guardrail - Maximum number of images per comment. 
+Image size - 2 - System-enforced Guardrail - Maximim upload size per image in MB 
+
+-->
+
+<!--
+
 ## Attribution AI
 
 | Name |  Value | Description | PD? |
@@ -69,7 +78,6 @@ Einige der Funktionen und ihr zugehöriger Wert für das Limit hängen vom Custo
 | Region based iterations | 10 | Maximum number of region-based iterations of each Attribution AI model. | ![check](https://spectrum.adobe.com/static/icons/ui_18/CheckmarkSize100.svg)  | 
 | Export Insights batches | 12 | Maximum number of export batches times the number of authorized Attribution AI Insights per year. | ![check](https://spectrum.adobe.com/static/icons/ui_18/CheckmarkSize100.svg) | 
 
-{style="table-layout:auto"}
 -->
 
 ## Zielgruppen
