@@ -1,5 +1,5 @@
 ---
-source-git-commit: d91a00036cbbfa21c7d0a772ccbefb2ab37a4c59
+source-git-commit: 5311106f486a30dbc7f06b3ef60dc7e666d2fe03
 workflow-type: tm+mt
 source-wordcount: '3796'
 ht-degree: 30%
@@ -235,7 +235,7 @@ Verwenden Sie die folgenden Informationen, um die Visualisierung auszuwählen, d
 
 >[!AVAILABILITY]
 >
->Die in diesem Artikel beschriebene Funktion und alle anderen Artikel oder Funktionen, die mit [!BADGE B2B edition} gekennzeichnet ]{type=Informative}.  befindet sich in der eingeschränkten Testphase der Version und ist möglicherweise noch nicht in Ihrer Umgebung verfügbar. <br/>Außerdem können sich die [!BADGE B2B edition]{type=Informative}-Funktionen und die Dokumentation der [!BADGE B2B edition]{type=Informative}-Funktionen ändern, sodass daraus keine rechtlichen Verpflichtungen abgeleitet werden können.<br/>Dieser Hinweis wird entfernt, wenn die Funktion allgemein verfügbar ist. Informationen zum Customer Journey Analytics-Veröffentlichungsprozess finden Sie unter [Customer Journey Analytics-Funktionsversionen](/help/release-notes/releases.md).
+>Die in diesem Artikel beschriebene Funktion sowie alle anderen Artikel oder Funktionen, die mit [!BADGE B2B edition]{type=Informative} gekennzeichnet sind, befinden sich in der eingeschränkten Testphase der Veröffentlichung und sind möglicherweise noch nicht in Ihrer Umgebung verfügbar. <br/>Außerdem können sich die [!BADGE B2B edition]{type=Informative}-Funktionen und die Dokumentation der [!BADGE B2B edition]{type=Informative}-Funktionen ändern, sodass daraus keine rechtlichen Verpflichtungen abgeleitet werden können.<br/>Dieser Hinweis wird entfernt, wenn die Funktion allgemein verfügbar ist. Informationen zum Customer Journey Analytics-Veröffentlichungsprozess finden Sie unter [Customer Journey Analytics-Funktionsversionen](/help/release-notes/releases.md).
 >
 
 
