@@ -3,7 +3,7 @@ description: Erfahren Sie, wie Sie berechnete Metriken erstellen.
 title: Erstellen von berechneten Metriken
 feature: Calculated Metrics
 exl-id: 55ed36c1-99ca-400a-bc2b-661994cbf720
-source-git-commit: 261d4b5e18531f7971a894bc4cd571b764c625f1
+source-git-commit: 53069702055e0adf7abf9061c592fb15772ded73
 workflow-type: tm+mt
 source-wordcount: '224'
 ht-degree: 2%
@@ -12,9 +12,9 @@ ht-degree: 2%
 
 # Erstellen von berechneten Metriken
 
-Standardmäßig können nur Administratoren berechnete Metriken erstellen. Benutzer haben die Berechtigung, berechnete Metriken anzuzeigen, ähnlich wie Benutzer andere Komponenten anzeigen (z. B. Filter, Anmerkungen).
+Standardmäßig können nur Administratoren berechnete Metriken erstellen. Benutzer haben die Berechtigung, berechnete Metriken anzuzeigen, ähnlich wie Benutzer andere Komponenten anzeigen (z. B. Segmente, Anmerkungen usw.).
 
-Workspace Administratoren können jedoch über die [**[!UICONTROL Admin Console]** die Berechtigung „Erstellung berechneter Metriken **[!UICONTROL für Reporting-]**&quot; in **[!UICONTROL Berechtigungen für CJA-]** bearbeiten](/help/technotes/access-control.md#user-level-access).
+Administratoren können jedoch über die [**[!UICONTROL die Berechtigung]** Erstellung berechneter Metriken **[!UICONTROL für Reporting-Tools]** in **[!UICONTROL Berechtigungen für CJA Workspace Admin Console bearbeiten]** für Benutzende ](/help/technotes/access-control.md#user-level-access).
 
 
 Sie können eine berechnete Metrik wie folgt erstellen:

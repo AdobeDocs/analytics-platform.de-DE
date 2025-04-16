@@ -3,7 +3,7 @@ description: Mit Funktionen können Sie Daten filtern/sortieren und eine statist
 title: Funktionen verwenden
 feature: Calculated Metrics
 exl-id: 7a41aa4e-90c6-4242-a801-2eef6b524cfe
-source-git-commit: 1a84fc71eb29ceabf3a3c5c3e333b78b882ea966
+source-git-commit: 53069702055e0adf7abf9061c592fb15772ded73
 workflow-type: tm+mt
 source-wordcount: '64'
 ht-degree: 23%
@@ -20,7 +20,7 @@ Eine Liste aller Funktionen finden Sie unter [Grundfunktionen](/help/components/
 
 >[!NOTE]
 >
->Wenn Sie Funktionen in die Definition des Generator für berechnete Metriken aufnehmen, wenden Sie die Funktion immer an, bevor Sie Metriken oder Filter hineinziehen.
+>Wenn Sie Funktionen in die Definition des Generator für berechnete Metriken aufnehmen, wenden Sie die Funktion immer an, bevor Sie Metriken oder Segmente hineinziehen.
 >
 
 
