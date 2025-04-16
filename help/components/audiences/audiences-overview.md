@@ -4,10 +4,10 @@ description: Erfahren Sie mehr über das Konzept der Zielgruppenveröffentlichun
 exl-id: 30404bfc-0ee7-4f01-842c-7e6156dc0b45
 feature: Audiences
 role: User, Admin
-source-git-commit: 1dff53e244e5d231e7075ce087705e33e0978096
-workflow-type: ht
-source-wordcount: '506'
-ht-degree: 100%
+source-git-commit: 9393be88ab7320adb5bd046701667f638673af5e
+workflow-type: tm+mt
+source-wordcount: '404'
+ht-degree: 87%
 
 ---
 
@@ -29,9 +29,7 @@ Die Zielgruppen, die Sie in Customer Journey Analytics erstellen, müssen nicht 
 
 **Zielgruppe**: Ein Satz oder eine Liste von Identitäten, die sowohl einen Namespace als auch eine spezifische ID für diesen Namespace haben. Zielgruppen können aus Adobe Experience Platform und Anwendungen, die darauf aufsetzen (z. B. Customer Journey Analytics), extrahiert werden. Zielgruppen können gemischte Namespaces enthalten.
 
-**Filter**: Ein Regelsatz, mit dem bei der Auswertung eines Datensatzes über einen bestimmten Zeitraum eine Teilmenge von Daten erzeugt wird. Bei der Erstellung einer Zielgruppe kann ein Filter verwendet werden, wenn auch andere unterstützende Services genutzt werden. Filter werden in Customer Journey Analytics definiert und verwaltet.
-
-**Filter** im Vergleich zu **Segmenten**: Customer Journey Analytics verwendet *Filter* anstelle von *Segmenten*. Bei beiden handelt es sich zwar um einen Regelsatz, der eine ähnliche Logik enthalten kann, das erzeugte Ergebnis ist jedoch ein anderes. Ein Filter wird verwendet, um einen Datensatz für Analysezwecke einzugrenzen. Ein Segment wird verwendet, um eine Liste von Identitäten zu erstellen, die zur Aktivierung verwendet werden können. Segmente erzeugen Zielgruppen im Echtzeit-Kundenprofil, Filter (allein) dagegen nicht. Bei der Veröffentlichung von Customer Journey Analytics-Zielgruppen wird ein Customer Journey Analytics-Filter verwendet, um eine Zielgruppe zu erstellen, die vom Echtzeit-Kundenprofil genutzt werden kann.
+**Segment**: Ein Regelsatz, mit dem bei der Auswertung eines Datensatzes über einen bestimmten Zeitraum eine Teilmenge von Daten erzeugt wird. Ein Segment kann beim Erstellen einer Zielgruppe verwendet werden, wenn es mit anderen unterstützenden Services kombiniert wird. Segmente werden in Customer Journey Analytics definiert und verwaltet.
 
 ## Zugriffsberechtigungen
 

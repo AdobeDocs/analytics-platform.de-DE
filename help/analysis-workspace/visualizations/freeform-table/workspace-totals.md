@@ -4,10 +4,10 @@ title: Workspace-Summen
 feature: Visualizations
 exl-id: ba14b88c-44c2-45f6-b68f-f5c1263a89dd
 role: User
-source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
-workflow-type: ht
+source-git-commit: 770320a0b16d26e0755203a3524b000db30cac82
+workflow-type: tm+mt
 source-wordcount: '487'
-ht-degree: 100%
+ht-degree: 78%
 
 ---
 
@@ -27,8 +27,8 @@ In Freiformtabellen wird auf jeder Unterteilungsebene eine Zeile insgesamt angez
 
 ![Freiformtabelle mit hervorgehobener Gesamt- und Tabellensumme.](assets/total-row.png)
 
-* **[!UICONTROL Tabellensumme]** ➊: Dieser Gesamtwert entspricht in der Regel der [!UICONTROL Gesamtsumme] oder einer Teilmenge davon. Er spiegelt alle Tabellenfilter wider, die innerhalb der Freiformtabelle angewendet werden, einschließlich der Option [!UICONTROL Keine einschließen].
-* **[!UICONTROL Gesamtsumme]** (**[!UICONTROL „von“]**-*Zahl*) ➋: Dieser Gesamtwert stellt alle erfassten Ereignisse dar. Wenn ein Filter entweder auf Panel-Ebene oder in der Freiformtabelle angewendet wird, passt sich diese Summe an, sodass alle Ereignisse wiedergegeben werden, die den Filterkriterien entsprechen.
+* **[!UICONTROL Tabellensumme]** ➊: Dieser Gesamtwert entspricht in der Regel der [!UICONTROL Gesamtsumme] oder einer Teilmenge davon. Die Summe spiegelt alle Tabellensegmente wider, die in der Freiformtabelle angewendet wurden, einschließlich der Option [!UICONTROL Ohne einschließen].
+* **[!UICONTROL Gesamtsumme]** (**[!UICONTROL „von“]**-*Zahl*) ➋: Dieser Gesamtwert stellt alle erfassten Ereignisse dar. Wenn ein Segment entweder auf Bedienfeldebene oder in der Freiformtabelle angewendet wird, passt sich diese Summe an, um alle Ereignisse wiederzugeben, die den Segmentkriterien entsprechen.
 
 
 
@@ -54,6 +54,6 @@ Siehe [Dynamische und statische Dimensionselemente in Freiformtabellen](column-r
 |---|---|
 | Auf welcher *Summe* basieren die grauen Spaltenprozentsätze? | Diese *Summe* hängt von der Einstellung **[!UICONTROL Prozentsatz]** unter **[!UICONTROL Zeileneinstellungen]** ab:<ul><li>Prozentsätze nach Spalte berechnen: Diese Einstellung ist die Standardeinstellung. Prozentsätze basieren auf der Tabellensumme.</li><li>Prozentsätze nach Zeile berechnen: Prozentsätze werden auf Basis der Gesamtsumme berechnet.</li></ul> |
 | Wie wirkt sich die Einstellung **[!UICONTROL „Kein Wert“ einschließen]** auf die Gesamtsumme aus? | Wenn die Einstellung **[!UICONTROL „Kein Wert“ einschließen]** deaktiviert ist, wird die Zeile **[!UICONTROL Kein Wert]** aus der Tabelle und der Tabellensumme entfernt und wird in alle berechneten Metriken übernommen, die [*Gesamt* als Metriktypen verwenden](/help/components/calc-metrics/cm-workflow/m-metric-type-alloc.md). |
-| Wenn benutzerdefinierte Tabellenfilter auf eine Freiformtabelle angewendet werden, werden alle berechneten Metriken und die bedingte Formatierung für den Filter berücksichtigt? | Derzeit nicht. **[!UICONTROL „Kein Wert“ einschließen]** wird berücksichtigt, benutzerdefinierte Tabellenfilter haben jedoch keine Auswirkungen auf Folgendes:<ul><li>Maximaler/minimaler Spaltenbereich, der bei der bedingten Formatierung verwendet wird, wird über alle Daten hinweg angezeigt.</li><li>Berechnete Metriken, die Metriktypen **[!UICONTROL Gesamtsumme]** nutzen.</li><li>Berechnete Metriken mit Funktionen, die über Berechnungen für alle Zeilen in einer Freiformtabelle durchführen – d. h. Spaltensumme, Spaltenmaximum, Spaltenminimum, Anzahl, Mittelwert, Median, Perzentil, Quartil, Zeilenzahl, Standardabweichung, Varianz, kumulativer Wert, kumulativer Durchschnitt, Regressionsvarianten, T-Score, T-Test, Z-Score und Z-Test.</li></ul> |
-| Was spiegelt der Metriktyp **[!UICONTROL Gesamtsumme]** in berechneten Metriken wider? | Die **[!UICONTROL Gesamtsumme]** bezieht sich weiterhin auf die **[!UICONTROL Gesamtsumme]** und spiegelt keine Filter wider, die auf eine Tabelle oder die **[!UICONTROL Tabellensumme]** angewendet wurden. |
+| Wenn benutzerdefinierte Tabellensegmente auf eine Freiformtabelle angewendet werden, werden die Segmente in allen meinen berechneten Metriken und der bedingten Formatierung berücksichtigt? | Derzeit nicht. **[!UICONTROL Einschließen von „Kein Wert]** wird berücksichtigt, aber benutzerdefinierte Tabellensegmente haben keine Auswirkungen auf Folgendes:<ul><li>Maximaler/minimaler Spaltenbereich, der bei der bedingten Formatierung verwendet wird, wird über alle Daten hinweg angezeigt.</li><li>Berechnete Metriken, die Metriktypen **[!UICONTROL Gesamtsumme]** nutzen.</li><li>Berechnete Metriken mit Funktionen, die über Berechnungen für alle Zeilen in einer Freiformtabelle durchführen – d. h. Spaltensumme, Spaltenmaximum, Spaltenminimum, Anzahl, Mittelwert, Median, Perzentil, Quartil, Zeilenzahl, Standardabweichung, Varianz, kumulativer Wert, kumulativer Durchschnitt, Regressionsvarianten, T-Score, T-Test, Z-Score und Z-Test.</li></ul> |
+| Was spiegelt der Metriktyp **[!UICONTROL Gesamtsumme]** in berechneten Metriken wider? | **[!UICONTROL Gesamtsumme]** bezieht sich weiterhin auf die **[!UICONTROL Gesamtsumme]** und spiegelt nicht die Segmente wider, die auf eine Tabelle oder die **[!UICONTROL Tabellensumme]**. |
 | Welcher Gesamtwert wird angezeigt, wenn Daten entweder kopiert und aus einer Freiformtabelle eingefügt oder über CSV heruntergeladen werden? | Die Zeile insgesamt spiegelt nur die **[!UICONTROL Tabellensumme]** wider und berücksichtigt die Einstellung **[!UICONTROL Summen anzeigen]**. |

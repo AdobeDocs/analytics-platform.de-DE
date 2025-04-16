@@ -5,10 +5,10 @@ exl-id: f9b0b3c2-7c88-4bef-af33-0d309cafe799
 solution: Customer Journey Analytics
 feature: Components
 role: User
-source-git-commit: a2262e446a15ee58be2f3f674c77223368fc8f76
-workflow-type: ht
-source-wordcount: '915'
-ht-degree: 100%
+source-git-commit: 9393be88ab7320adb5bd046701667f638673af5e
+workflow-type: tm+mt
+source-wordcount: '913'
+ht-degree: 93%
 
 ---
 
@@ -23,7 +23,7 @@ So verwalten Sie Komponenten über die Haupt-Benutzeroberfläche von Customer Jo
 
 Sie können die folgenden Komponenten verwalten:
 
-* [Filter](filters/filters-overview.md): Erstellen, verwalten, teilen und verwenden Sie leistungsstarke, zielgerichtete Filter für Ihre Berichte. Mit Filtern können Sie Teilmengen von Personen anhand von Merkmalen oder Interaktionen identifizieren.
+* [Segmente](filters/filters-overview.md): Erstellen, verwalten, teilen und wenden Sie leistungsstarke, zielgerichtete Zielgruppensegmente auf Ihre Berichte an. Mit Filtern können Sie Teilmengen von Personen anhand von Merkmalen oder Interaktionen identifizieren.
 * [Berechnete Metriken:](calc-metrics/calc-metr-overview.md) Verwenden Sie Metriken und Formeln als neue Komponenten für die Berichterstellung
 * [Datumsbereiche](date-ranges/create.md): Passen Sie die von Analysis Workspace vorgeschlagenen Datumsbereiche an und präzisieren Sie diese.
 * [Anmerkungen](/help/components/annotations/overview.md): Informieren Sie andere Benutzerinnen und Benutzer in Ihrem Unternehmen über die kontextbezogene Bedeutung von Daten und Erkenntnissen.
@@ -36,7 +36,7 @@ Sie können die folgenden Komponenten verwalten:
 
 ## Analysis Workspace-Komponenten
 
-Komponenten in Analysis Workspace bestehen aus Metriken, Dimensionen, Filtern und Datumsbereichen, die Sie per Drag-and-Drop auf Bedienfelder und Visualisierungen in Ihrem Workspace-Projekt anwenden können. Wenn Sie benutzerdefinierte Komponenten erstellen, z. B. eine benutzerdefinierte Metrik oder einen benutzerdefinierten Datumsbereich, werden sie zu diesen Bedienfeldern hinzugefügt.
+Komponenten in Analysis Workspace bestehen aus Metriken, Dimensionen, Segmenten und Datumsbereichen, die Sie per Drag-and-Drop auf Bereiche und Visualisierungen in Ihrem Workspace-Projekt ziehen können. Wenn Sie benutzerdefinierte Komponenten erstellen, z. B. eine benutzerdefinierte Metrik oder einen benutzerdefinierten Datumsbereich, werden sie zu diesen Bedienfeldern hinzugefügt.
 
 Um auf das Bedienfeld „Komponenten“ zuzugreifen, wählen Sie im Schaltflächenbedienfeld die Option ![Kuratieren](/help/assets/icons/Curate.svg) **[!UICONTROL Komponenten]** aus.
 
@@ -61,7 +61,7 @@ Sie können Komponenten verwalten, entweder einzeln oder durch Auswahl mehrerer 
    >Sie können mehrere Komponenten auswählen, indem Sie die **[!UICONTROL Umschalttaste]** gedrückt halten oder indem Sie die **[!UICONTROL Befehlstaste]** (macOS) bzw. die **[!UICONTROL Strg-Taste]** (Windows) gedrückt halten.
 
 
-   ![Liste der Aktionen für Komponenten inklusive: Tag, Favorit, Genehmigen, Freigeben und Löschen.](assets/component-menu.gif){width=100%}
+   ![Liste der Komponentenaktionen inklusive: Tag, Favorit, Genehmigung, Freigabe und Löschen.](assets/component-menu.gif){width=100%}
 
    | Komponentenaktion | Beschreibung |
    |--- |--- |
@@ -69,10 +69,10 @@ Sie können Komponenten verwalten, entweder einzeln oder durch Auswahl mehrerer 
    | ![Stern](/help/assets/icons/Star.svg) [!UICONTROL **Zu Favoriten hinzufügen**] | Fügen Sie die Komponente zu Ihrer Favoritenliste hinzu. Genauso wie nach Tags können Sie im linken Bedienfeld auch nach Favoriten suchen und diese in den Komponenten-Managern als Filter verwenden. |
    | ![UnausgefüllterStern](/help/assets/icons/StarOutline.svg) **[!UICONTROL Aus Favoriten entfernen]** | Entfernen Sie die Komponente aus Ihrer Favoritenliste.  |
    | ![Häkchen](/help/assets/icons/Checkmark.svg) [!UICONTROL **Genehmigen**] | Markieren Sie Komponenten als „Genehmigt“, um Ihren Benutzerinnen und Benutzern zu signalisieren, dass die Komponente vom Unternehmen genehmigt ist. Wie Tags können Sie im linken Bedienfeld anhand des Status „Genehmigt“ suchen und filtern. Mit einem ![Häkchen](/help/assets/icons/Checkmark.svg) werden genehmigte Komponenten gekennzeichnet. |
-   | ![Freigeben](/help/assets/icons/ShareAlt.svg) [!UICONTROL **Freigeben**] | Geben Sie Komponenten für Benutzeden in Ihrer Organisation frei. Diese Option ist nur für benutzerdefinierte Komponenten verfügbar, wie z. B. Filter oder berechnete Metriken. |
-   | ![Löschen](/help/assets/icons/Delete.svg) [!UICONTROL **Löschen**] | Löschen Sie Komponenten, die Sie nicht mehr benötigen. Diese Option ist nur für benutzerdefinierte Komponenten verfügbar, wie z. B. Filter oder berechnete Metriken. |
+   | ![Freigeben](/help/assets/icons/ShareAlt.svg) [!UICONTROL **Freigeben**] | Freigeben von Komponenten für Benutzer in Ihrer Organisation. Diese Option steht nur für benutzerdefinierte Komponenten zur Verfügung, beispielsweise für Segmente oder berechnete Metriken. |
+   | ![Löschen](/help/assets/icons/Delete.svg) [!UICONTROL **Löschen**] | Löschen Sie Komponenten, die Sie nicht mehr benötigen. Diese Option steht nur für benutzerdefinierte Komponenten zur Verfügung, beispielsweise für Segmente oder berechnete Metriken. |
 
-Benutzerdefinierte Komponenten können auch über ihre jeweiligen Komponenten-Manager verwaltet werden. Weitere Informationen finden Sie unter [Verwalten von Filtern](/help/components/filters/manage-filters.md).
+Benutzerdefinierte Komponenten können auch über ihre jeweiligen Komponenten-Manager verwaltet werden. Siehe zum Beispiel [Segmente verwalten](/help/components/filters/manage-filters.md).
 
 ## Verwalten der Komponentenliste
 
@@ -84,7 +84,7 @@ Sie können die Komponentenliste im linken Bedienfeld von Analysis Workspace dur
 
 2. Geben Sie im Suchfeld den Namen der Komponente ein, die Sie in Ihrem Projekt verwenden möchten.
 
-   Der jeweilige Komponententyp ist farblich und mit einem Symbol gekennzeichnet. **Dimensionen** ![Dimensionssymbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) sind orange, **Filter** ![Filtersymbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Segmentation_18_N.svg) sind blau, **Datumsbereiche** ![Datumsbereichssymbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg) sind violett und **Metriken** ![Metriksymbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Event_18_N.svg) sind grün.<br/>Das Adobe-Symbol ![AdobeLogo](/help/assets/icons/AdobeLogoSmall.svg) steht entweder für eine Vorlage für berechnete Metriken oder eine Filtervorlage. Das Taschenrechnersymbol ![Taschenrechnersymbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calculator_18_N.svg) gibt eine berechnete Metrik an, die administratorseitig in Ihrer Organisation erstellt wurde.
+   Der jeweilige Komponententyp ist farblich und mit einem Symbol gekennzeichnet. **Dimensionen** ![Dimensionssymbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) sind orange, **Filter** ![Filtersymbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Segmentation_18_N.svg) sind blau, **Datumsbereiche** ![Datumsbereichssymbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg) sind violett und **Metriken** ![Metriksymbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Event_18_N.svg) sind grün.<br/>Das Adobe-Symbol ![AdobeLogo](/help/assets/icons/AdobeLogoSmall.svg) zeigt entweder eine Vorlage für berechnete Metriken oder eine Segmentvorlage an. Das Taschenrechnersymbol ![Taschenrechnersymbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calculator_18_N.svg) gibt eine berechnete Metrik an, die administratorseitig in Ihrer Organisation erstellt wurde.
 
 3. Wählen Sie aus der Dropdown-Liste die gewünschte Komponente aus.
 
@@ -102,7 +102,7 @@ Sie können die Komponentenliste im linken Bedienfeld von Analysis Workspace dur
    | ![Stern](/help/assets/icons/Star.svg) | **[!UICONTROL Favoriten]** | Nur Komponenten anzeigen, die sich in Ihrer Favoritenliste befinden. <br/>Weitere Informationen zum Hinzufügen von Komponenten zu Ihrer Favoritenliste finden Sie unter [Verwalten von Komponenten](#manage-components). |
    | ![Dimensionen](/help/assets/icons/Dimensions.svg) | **[!UICONTROL Dimensionen]** | Nur Komponenten anzeigen, die Dimensionen sind. |
    | ![Ereignis](/help/assets/icons/Event.svg) | **[!UICONTROL Metriken]** | Nur Komponenten anzeigen, die Metriken sind. |
-   | ![Segmentierung](/help/assets/icons/Segmentation.svg) | **[!UICONTROL Filter]** | Nur Komponenten anzeigen, die Filter sind. |
+   | ![Segmentierung](/help/assets/icons/Segmentation.svg) | **[!UICONTROL Segmente]** | Nur Komponenten anzeigen, die Segmente sind. |
    | ![Kalender](/help/assets/icons/Calendar.svg) | **[!UICONTROL Datumsbereiche]** | Nur Komponenten anzeigen, die Datumsbereiche sind.  |
    | ![Beschriftung](/help/assets/icons/Label.svg) | **[!UICONTROL *Tag-Name *]** | Nur Komponenten mit den jeweilig ausgewählten Tags anzeigen. Für Adobe-Vorlagen, bei denen es sich um die [standardmäßig berechneten Metriken](/help/components/calc-metrics/default-calcmetrics.md) von Adobe handelt, ist ein dediziertes Tag verfügbar. |
 

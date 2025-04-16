@@ -4,7 +4,7 @@ title: Komponentenbeschreibungen hinzufügen
 feature: Components
 role: Admin
 exl-id: 99d531cd-50e9-4e6c-adad-a66b606fd877
-source-git-commit: a0e301130cf7f8c4b3be17dfe52648fde5ee4fe4
+source-git-commit: 770320a0b16d26e0755203a3524b000db30cac82
 workflow-type: tm+mt
 source-wordcount: '170'
 ht-degree: 14%
@@ -15,7 +15,7 @@ ht-degree: 14%
 
 Mithilfe von Beschreibungen können Benutzende wissen, wie die verschiedenen Komponenten beim Erstellen von Projekten in Analysis Workspace oder beim Anzeigen von Berichten verwendet werden.
 
-Customer Journey Analytics-Administratoren können mithilfe des Datenwörterbuchs oder innerhalb einer Datenansicht Beschreibungen für Komponenten (Dimensionen, Metriken, Filter und Datumsbereiche) hinzufügen.
+Customer Journey Analytics-Admins können mithilfe des Datenwörterbuchs oder innerhalb einer Datenansicht Beschreibungen für Komponenten (Dimensionen, Metriken, Segmente und Datumsbereiche) hinzufügen.
 
 ## Hinzufügen von Beschreibungen in einer Datenansicht
 

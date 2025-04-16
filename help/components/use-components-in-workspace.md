@@ -4,7 +4,7 @@ title: Verwenden von Komponenten in Analysis Workspace
 feature: Components
 role: User
 exl-id: 97bdfb9e-a27e-4a6b-b6cc-21a292398037
-source-git-commit: c56c77079aa21fb740fda6bec333731a1f82a48f
+source-git-commit: 3cbf30778ff0fbb4198db16cbbabf3d62a87d384
 workflow-type: tm+mt
 source-wordcount: '952'
 ht-degree: 7%
@@ -13,7 +13,7 @@ ht-degree: 7%
 
 # Verwenden von Komponenten in Analysis Workspace
 
-Komponenten bilden die tatsächlichen Daten eines beliebigen Projekts in Analysis Workspace. Komponenten bestehen aus Dimensionen, Metriken, Filtern und Datumsbereichen. Sie können Komponenten zu einem Projekt hinzufügen, indem Sie sie in Visualisierungen oder Bedienfelder ziehen.
+Komponenten bilden die tatsächlichen Daten eines beliebigen Projekts in Analysis Workspace. Komponenten bestehen aus Dimensionen, Metriken, Segmenten und Datumsbereichen. Sie können Komponenten zu einem Projekt hinzufügen, indem Sie sie in Visualisierungen oder Bedienfelder ziehen.
 
 Weitere Informationen zu den [ Komponenten, ](/help/components/overview.md) Sie hinzufügen können, finden Sie unter „Komponentenübersicht“ .
 
@@ -31,8 +31,8 @@ Weitere Informationen zu den [ Komponenten, ](/help/components/overview.md) Sie 
 
 1. Scrollen Sie nach der Komponente, die Sie hinzufügen möchten, oder suchen Sie sie, und ziehen Sie sie dann in ein Bedienfeld oder eine Visualisierung innerhalb Ihres Projekts.
 
-1. Optional können Sie eine Komponente in die Ablagefläche des Filters in einer Bedienfeldkopfzeile ziehen. Diese Drag-and-Drop-Funktion definiert die Komponente als Filter und wendet den Filter auf alle Inhalte im Bedienfeld an.
-Informationen dazu, wie Sie den Ablagebereich für Filter in einem Bedienfeld zum Filtern Ihres Bedienfelds verwenden können, finden Sie unter [Ablagebereich](/help/analysis-workspace/c-panels/panels.md#drop-zone) in [Bedienfelder - Übersicht](/help/analysis-workspace/c-panels/panels.md).
+1. Optional können Sie eine Komponente in den Segmentablagebereich in einer Bedienfeldkopfzeile ziehen. Diese Drag-and-Drop-Funktion definiert die Komponente als Segment und wendet das Segment auf alle Inhalte im Bedienfeld an.
+Informationen dazu, wie Sie den Segment-Ablagebereich in einem Bedienfeld verwenden können, um Ihr Bedienfeld zu segmentieren, finden Sie unter [Ablagebereich](/help/analysis-workspace/c-panels/panels.md#drop-zone) in [Bedienfelder - Übersicht](/help/analysis-workspace/c-panels/panels.md).
 
 1. Weitere Informationen finden Sie in den folgenden Abschnitten:
 
@@ -40,13 +40,13 @@ Informationen dazu, wie Sie den Ablagebereich für Filter in einem Bedienfeld zu
 
    * [Hinzufügen von Metriken zu einem Projekt](#add-metrics-to-a-project)
 
-   * [Hinzufügen von Filtern zu einem Projekt](#add-filters-to-a-project)
+   * [Segmente zu einem Projekt hinzufügen](#add-segments-to-a-project)
 
    * [Hinzufügen von Datumsbereichen zu einem Projekt](#add-date-ranges-to-a-project)
 
 ### Hinzufügen von Dimensionen zu einem Projekt
 
-[Dimensionen ](/help/components/dimensions/overview.md) sind Variablen im Customer Journey Analytics, die normalerweise Zeichenfolgenwerte enthalten. Im Gegensatz dazu enthalten [Metriken](/help/components/calc-metrics/calc-metr-overview.md) numerische Werte, die mit einer Dimension verknüpft sind. Ein Basisbericht zeigt Zeilen mit Zeichenfolgenwerten (Dimension) gegen eine Spalte mit numerischen Werten (Metrik) an.
+[Dimensionen](/help/components/dimensions/overview.md) sind Variablen in Customer Journey Analytics, die normalerweise Zeichenfolgenwerte enthalten. Im Gegensatz dazu enthalten [Metriken](/help/components/calc-metrics/calc-metr-overview.md) numerische Werte, die mit einer Dimension verknüpft sind. Ein Basisbericht zeigt Zeilen mit Zeichenfolgenwerten (Dimension) gegen eine Spalte mit numerischen Werten (Metrik) an.
 
 1. Beginnen Sie, Ihrem Projekt in Analysis Workspace eine Dimension hinzuzufügen, wie in [Hinzufügen von Komponenten zu einem Projekt](#add-components-to-a-project) beschrieben.
 
@@ -56,7 +56,7 @@ Informationen dazu, wie Sie den Ablagebereich für Filter in einem Bedienfeld zu
 
    * Ziehen einer Dimension in eine Visualisierung (z. B. eine Freiformtabelle) in Analysis Workspace.
 
-   * Ziehen Sie eine oder mehrere Dimensionen aus dem linken Bedienfeld auf den Ablagebereich für Filter, um einen Schnellfilter zu erstellen, wie in [Hinzufügen von Filtern zu einem Projekt](#add-filters-to-a-project) beschrieben.
+   * Ziehen Sie eine oder mehrere Dimensionen aus dem linken Bedienfeld in den Ablegebereich für Segmente, um ein Schnellsegment zu erstellen, wie in [Hinzufügen von Segmenten zu einem Projekt“ ](#add-filters-to-a-project).
 
 1. Sie können Dimensionen und Dimensionselemente in Analysis Workspace optional mit anderen Komponenten aufschlüsseln. Weitere Informationen finden Sie unter [Dimensionen in Workspace aufschlüsseln](/help/components/dimensions/t-breakdown-fa.md).
 
@@ -93,17 +93,17 @@ Weitere Informationen zu Metriken finden Sie unter [Metriken](/help/components/a
 
 [Filter](/help/components/filters/filters-overview.md) ermöglichen es Ihnen, Untergruppen von Personen, Sitzungen oder Ereignissen anhand von Merkmalen oder bestimmten Interaktionen zu identifizieren.
 
-Sie können Filter in Analysis Workspace auf eine der folgenden Arten verwenden:
+Sie können Segmente in Analysis Workspace auf eine der folgenden Arten verwenden:
 
-* Hinzufügen von Filtern zu einem Bedienfeld
-Wenn Sie einem Bedienfeld Filter hinzufügen, gelten die Filter für alle Inhalte im Bedienfeld.
-Informationen dazu, wie Sie den Ablagebereich für Filter in einem Bedienfeld zum Filtern Ihres Bedienfelds verwenden können, finden Sie unter [Ablagebereich](/help/analysis-workspace/c-panels/panels.md#drop-zone) in [Bedienfelder - Übersicht](/help/analysis-workspace/c-panels/panels.md).
+* Segmente zu einem Bedienfeld hinzufügen
+Wenn Sie Segmente zu einem Bedienfeld hinzufügen, gelten die Segmente für alle Inhalte im Bedienfeld.
+Informationen dazu, wie Sie den Segment-Ablagebereich in einem Bedienfeld verwenden können, um Ihr Bedienfeld zu segmentieren, finden Sie unter [Ablagebereich](/help/analysis-workspace/c-panels/panels.md#drop-zone) in [Bedienfelder - Übersicht](/help/analysis-workspace/c-panels/panels.md).
 
-* Hinzufügen von Filtern zu einer Visualisierung
-Wenn Sie einer Spalte in einer Freiformtabelle Filter hinzufügen, werden die Filter auf alle Inhalte in der Tabellenspalte angewendet. Sie können auch Filter als Teil einer Fallout-Visualisierung hinzufügen.
+* Hinzufügen von Segmenten zu einer Visualisierung
+Wenn Sie einer Spalte in einer Freiformtabelle Segmente hinzufügen, werden die Segmente auf alle Inhalte in der Tabellenspalte angewendet. Sie können Segmente auch als Teil einer Fallout-Visualisierung hinzufügen.
 
-* Verwenden von Filtern in Komponenten
-Wenn Sie Komponenten wie [berechnete Metriken](/help/components/calc-metrics/cm-workflow/metrics-with-segments.md), [Anmerkungen](/help/components/annotations/create-annotations.md#annotation-builder) oder sogar [Filter) definieren](/help/components/filters/filter-builder.md) können Sie Filter als Teil der Definition verwenden.
+* Verwenden von Segmenten in Komponenten
+Wenn Sie Komponenten wie [berechnete Metriken](/help/components/calc-metrics/cm-workflow/metrics-with-segments.md), [Anmerkungen](/help/components/annotations/create-annotations.md#annotation-builder) oder sogar [Segmente) definieren](/help/components/filters/filter-builder.md) können Sie Filter als Teil der Definition verwenden.
 
 
 ### Hinzufügen von Datumsbereichen zu einem Projekt

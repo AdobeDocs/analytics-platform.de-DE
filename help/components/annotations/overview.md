@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Components
 exl-id: a87f6968-27a5-4595-be4f-0a38e03b9398
 role: User
-source-git-commit: 664576605b8be098a751609536e388c304c65513
+source-git-commit: 3cbf30778ff0fbb4198db16cbbabf3d62a87d384
 workflow-type: tm+mt
 source-wordcount: '318'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -24,7 +24,7 @@ Anmerkungen können für Folgendes gelten:
 
 * ein einzelnes Datum oder einen Datumsbereich.
 
-* Ihren gesamten Datensatz oder bestimmte Metriken, Dimensionen oder Filter.
+* Ihr gesamter Datensatz oder bestimmte Metriken, Dimensionen oder Segmente.
 
 * das Projekt, in dem Anmerkungen erstellt werden (Standard), oder alle Projekte.
 

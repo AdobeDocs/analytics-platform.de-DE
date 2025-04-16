@@ -4,7 +4,7 @@ title: Journey-Arbeitsfläche
 feature: Visualizations
 role: User
 exl-id: 53984934-6fba-4f15-aeeb-d91039260553
-source-git-commit: a909804e066339750c2271f6c65c108a6a6199f8
+source-git-commit: 770320a0b16d26e0755203a3524b000db30cac82
 workflow-type: tm+mt
 source-wordcount: '6225'
 ht-degree: 1%
@@ -101,7 +101,7 @@ Sie können Knoten wie folgt erstellen: indem Sie Workspace-Komponenten von der 
 
 1. Öffnen Sie in Analysis Workspace eine vorhandene Journey-Arbeitsflächen-Visualisierung oder beginnen [ mit dem Erstellen einer neuen](#begin-building-a-journey-canvas-visualization).
 
-1. Ziehen Sie Metriken, Dimensionen, Dimensionselemente, Filter oder Datumsbereiche aus der linken Leiste auf die Arbeitsfläche. Metriken, die auf einem [abgeleiteten Feld“ ](/help/data-views/derived-fields/derived-fields.md), werden unterstützt. Berechnete Metriken sowie Metriken oder Dimensionen, die auf einem [Zusammenfassungsdatensatz“ basieren](/help/data-views/summary-data.md) werden jedoch nicht unterstützt.
+1. Ziehen Sie Metriken, Dimensionen, Dimensionselemente, Segmente oder Datumsbereiche aus der linken Leiste auf die Arbeitsfläche. Metriken, die auf einem [abgeleiteten Feld“ ](/help/data-views/derived-fields/derived-fields.md), werden unterstützt. Berechnete Metriken sowie Metriken oder Dimensionen, die auf einem [Zusammenfassungsdatensatz“ basieren](/help/data-views/summary-data.md) werden jedoch nicht unterstützt.
 
    Sie können mehrere Komponenten in der linken Leiste auswählen, indem Sie die Umschalttaste gedrückt halten oder die Befehlstaste (Mac) oder die Strg-Taste (Windows) gedrückt halten.
 
@@ -118,10 +118,10 @@ Sie können Knoten wie folgt erstellen: indem Sie Workspace-Komponenten von der 
    | Dimensionselement | Leerer Bereich der Arbeitsfläche | Der Knoten zeigt an, wo die Komponente abgelegt wurde, ohne Verbindung zu vorhandenen Knoten. |
    | Dimensionselement | Ein vorhandener Knoten | Die Komponente wird automatisch mit dem vorhandenen Knoten kombiniert. |
    | Dimensionselement | Ein Pfeil, der zwei vorhandene Knoten verbindet | Der Knoten wird zwischen den beiden vorhandenen Knoten angezeigt, auf denen die Komponente abgelegt wurde, und ist mit beiden vorhandenen Knoten verbunden. (Weitere Informationen finden [ unter &quot;](#connect-nodes)&quot;.)</p> |
-   | Filter | Leerer Bereich der Arbeitsfläche | Der Knoten zeigt an, wo die Komponente abgelegt wurde, ohne dass eine Verbindung zu anderen Knoten bestand.<p>Zu den auf dem Knoten angezeigten Zahlen und Prozentsätzen gehört die Gesamtanzahl der primären Metrik, gefiltert nach dem ausgewählten Filter.</p> <p>Wenn beispielsweise Personen als primäre Metrik für den Journey ausgewählt ist, werden durch Hinzufügen des Filters „Heute“ zu einem leeren Bereich der Arbeitsfläche alle Personen angezeigt, die heute ein Ereignis hatten.</p> |
-   | Filter | Ein vorhandener Knoten | Wendet den Filter auf den vorhandenen Knoten an. |
-   | Filter | Ein Pfeil, der zwei Knoten verbindet | Der Knoten wird zwischen den beiden vorhandenen Knoten angezeigt, auf denen die Komponente abgelegt wurde, und ist mit beiden vorhandenen Knoten verbunden. (Weitere Informationen finden [ unter &quot;](#connect-nodes)&quot;.)</p><p>Wendet den Filter auf den Punkt des Pfads an, an dem die Komponente abgelegt wurde.</p> |
-   | Datumsbereich | Leerer Bereich der Arbeitsfläche | Der Knoten zeigt an, wo die Komponente abgelegt wurde, ohne Verbindung zu anderen Knoten.<p>Zu den auf dem Knoten angezeigten Zahlen und Prozentsätzen gehört die Gesamtanzahl der primären Metrik, gefiltert nach dem ausgewählten Datumsbereich.</p> <p>Wenn beispielsweise Personen als primäre Metrik für den Journey ausgewählt ist, werden durch Hinzufügen eines Datumsbereichs von „Diesen Monat“ zu einem leeren Bereich der Arbeitsfläche alle Personen angezeigt, die im aktuellen Monat ein Ereignis hatten.</p> |
+   | Filter | Leerer Bereich der Arbeitsfläche | Der Knoten zeigt an, wo die Komponente abgelegt wurde, ohne dass eine Verbindung zu anderen Knoten bestand.<p>Zu den Zahlen und Prozentsätzen, die auf dem Knoten angezeigt werden, gehört die Gesamtsumme der primären Metrik, segmentiert nach dem ausgewählten Segment.</p> <p>Wenn zum Beispiel Personen als primäre Metrik für den Journey ausgewählt ist, werden durch Hinzufügen eines Segments von Heute zu einem leeren Bereich der Arbeitsfläche alle Personen angezeigt, die heute ein Ereignis hatten.</p> |
+   | Filter | Ein vorhandener Knoten | Wendet das Segment auf den vorhandenen Knoten an. |
+   | Filter | Ein Pfeil, der zwei Knoten verbindet | Der Knoten wird zwischen den beiden vorhandenen Knoten angezeigt, auf denen die Komponente abgelegt wurde, und ist mit beiden vorhandenen Knoten verbunden. (Weitere Informationen finden [ unter &quot;](#connect-nodes)&quot;.)</p><p>Wendet das Segment auf den Punkt auf dem Pfad an, auf dem die Komponente abgelegt wurde.</p> |
+   | Datumsbereich | Leerer Bereich der Arbeitsfläche | Der Knoten zeigt an, wo die Komponente abgelegt wurde, ohne Verbindung zu anderen Knoten.<p>Zu den auf dem Knoten angezeigten Zahlen und Prozentsätzen gehört die Gesamtanzahl der primären Metrik, segmentiert nach dem ausgewählten Datumsbereich.</p> <p>Wenn beispielsweise Personen als primäre Metrik für den Journey ausgewählt ist, werden durch Hinzufügen eines Datumsbereichs von „Diesen Monat“ zu einem leeren Bereich der Arbeitsfläche alle Personen angezeigt, die im aktuellen Monat ein Ereignis hatten.</p> |
    | Datumsbereich | Ein vorhandener Knoten | Wendet den Datumsbereich auf den vorhandenen Knoten an. |
    | Datumsbereich | Ein Pfeil, der zwei Knoten verbindet | Der Knoten wird zwischen den beiden vorhandenen Knoten angezeigt, auf denen die Komponente abgelegt wurde, und ist mit beiden vorhandenen Knoten verbunden. (Weitere Informationen finden [ unter &quot;](#connect-nodes)&quot;.)</p><p>Wendet den Datumsbereich auf den Punkt des Pfads an, an dem die Komponente abgelegt wurde.</p> |
    | Mehrere Komponenten | Ein leerer Bereich der Arbeitsfläche | **Wenn keine der Komponenten Dimensionen sind:**<p>Jede Komponente wird als separater Knoten angezeigt, in dem die Komponenten entfernt wurden, ohne Verbindung zu vorhandenen Knoten.</p><p>Halten Sie die Umschalttaste gedrückt, wenn Sie die Komponenten auf der Arbeitsfläche ablegen, um sie als einen kombinierten Knoten hinzuzufügen. </p><p>**Wenn eine der Komponenten, die Sie hinzufügen, Dimensionen sind:**</p><p>Jede Komponente wird als separater Knoten angezeigt, in dem die Komponenten entfernt wurden, ohne Verbindung zu vorhandenen Knoten.</p><p>Es kann jeweils nur eine Dimension hinzugefügt werden. Wenn die Dimension hinzugefügt wird, werden 3 Knoten für die drei Dimensionselemente erstellt, in denen die Komponente am häufigsten abgelegt wurde.</p><p>Halten Sie die Umschalttaste gedrückt, wenn Sie die Komponenten auf der Arbeitsfläche ablegen, um sie als einen kombinierten Knoten hinzuzufügen. Die drei wichtigsten Dimensionselemente werden mit jedem Knoten kombiniert. (Siehe [Kombinieren von ](#combine-nodes)) für weitere Informationen.)</p> |
@@ -238,7 +238,7 @@ Nachdem Knoten zur Arbeitsfläche hinzugefügt wurden, können Sie sie neu anord
 
 ### Knoten neu anordnen
 
-Journey auf der Journey-Arbeitsfläche bestehen aus einem flexiblen Diagramm von Knoten und Pfeilen, die eine beliebige Kombination von Ereignissen, Dimensionselementen und Filtern darstellen.
+Journey auf der Journey-Arbeitsfläche bestehen aus einem flexiblen Diagramm von Knoten und Pfeilen, die eine beliebige Kombination von Ereignissen, Dimensionselementen und Segmenten darstellen.
 
 Sie können Knoten auf die Arbeitsfläche ziehen, um die Ereignisse und Bedingungen des Journey neu anzuordnen.
 
@@ -266,7 +266,7 @@ Die Logik, die auf Knoten angewendet wird, wenn sie kombiniert werden, untersche
 
 >[!TIP]
 >
->Sie können die Logik eines kombinierten Knotens anzeigen, indem Sie mit der rechten Maustaste auf den Knoten klicken und dann [!UICONTROL **Filter aus Knoten erstellen**] auswählen. Die Logik wird im Abschnitt [!UICONTROL **Definition**] angezeigt.
+>Sie können die Logik eines kombinierten Knotens anzeigen, indem Sie mit der rechten Maustaste auf den Knoten klicken und dann [!UICONTROL **Segment aus Knoten erstellen**] auswählen. Die Logik wird im Abschnitt [!UICONTROL **Definition**] angezeigt.
 
 
 | Zu kombinierende Komponententypen | Verwendete Logik (Operator) |
@@ -297,11 +297,11 @@ Knoten werden durch einen Pfeil verbunden. Sowohl die Pfeilrichtung als auch die
 
 #### Logik beim Verbinden von Knoten
 
-Wenn Sie Knoten auf der Journey-Arbeitsfläche verbinden, werden sie mithilfe des THEN-Operators verbunden. Dies wird auch als [sequenzielle Filterung“ ](/help/components/filters/seg-sequential-build.md).
+Wenn Sie Knoten auf der Journey-Arbeitsfläche verbinden, werden sie mithilfe des THEN-Operators verbunden. Dies wird auch als [sequenzielle Segmentierung“ ](/help/components/filters/seg-sequential-build.md).
 
 Knoten sind als „endgültiger Pfad“ verbunden, d. h. Besucher werden gezählt, solange sie letztendlich von einem Knoten zum anderen wechseln, unabhängig von Ereignissen, die zwischen den beiden Knoten auftreten. Die Zeit, die Benutzenden zum Verschieben auf dem Pfad zugewiesen wird, wird durch die Container-Einstellung bestimmt. <!-- It can also be controlled by [adding a time constraint](#add-a-time-constraint-between-nodes). -->
 
-Sie können die Logik von verbundenen Knoten anzeigen, indem Sie mit der rechten Maustaste auf den Knoten klicken und dann [!UICONTROL **Filter aus Knoten erstellen**] auswählen. Die Logik wird im Abschnitt [!UICONTROL **Definition**] angezeigt.
+Sie können die Logik von verbundenen Knoten anzeigen, indem Sie mit der rechten Maustaste auf den Knoten klicken und dann [!UICONTROL **Segment aus Knoten erstellen**] auswählen. Die Logik wird im Abschnitt [!UICONTROL **Definition**] angezeigt.
 
 #### Vorhandene Knoten verbinden
 
@@ -542,25 +542,25 @@ So zeigen Sie Trenddaten an:
 
 1. Wählen Sie [!UICONTROL **Trend**] aus.
 
-### Erstellen eines Filters basierend auf einem Knoten oder Pfeil
+### Erstellen eines Segments basierend auf einem Knoten oder Pfeil
 
-Sie können einen neuen Filter auf der Grundlage eines Knotens oder Pfeils innerhalb eines Journey erstellen. Nachdem der Filter erstellt wurde, können Sie ihn an einer beliebigen Stelle in Analysis Workspace verwenden.
+Sie können ein neues Segment auf der Grundlage eines Knotens oder Pfeils innerhalb eines Journey erstellen. Nachdem das Segment erstellt wurde, können Sie es an einer beliebigen Stelle in Analysis Workspace verwenden.
 
-Auf der Journey-Arbeitsfläche erstellte Filter verwenden [sequenzielle Filterung](/help/components/filters/seg-sequential-build.md). Das bedeutet, dass der Filter den Operator THEN verwendet, um die Ereignissequenz (die Journey), durch die Personen geströmt sind, zu verknüpfen, was zum ausgewählten Knoten oder Pfeil führt. Alle Ereignisse, die mit dem ausgewählten Knoten oder Pfeil übereinstimmen, werden in den Filter aufgenommen.
+Auf der Journey-Arbeitsfläche erstellte Filter verwenden [sequenzielle Segmentierung](/help/components/filters/seg-sequential-build.md). Das bedeutet, dass das Segment den THEN-Operator verwendet, um die Ereignissequenz (die Journey), durch die Personen geströmt sind, zu verknüpfen, die zum ausgewählten Knoten oder Pfeil geführt haben. Alle Ereignisse, die mit dem ausgewählten Knoten oder Pfeil übereinstimmen, sind im Segment enthalten.
 
-Wenn Sie einen Filter basierend auf einem Knoten erstellen, in den mehrere Pfade fließen, sind alle Pfade im Filter enthalten. Separate Pfade werden mit dem OR-Operator verbunden.
+Wenn Sie ein Segment basierend auf einem Knoten erstellen, in den mehrere Pfade fließen, sind alle Pfade im Segment enthalten. Separate Pfade werden mit dem OR-Operator verbunden.
 
-Erstellen eines Filters:
+So erstellen Sie ein Segment:
 
-1. Klicken Sie in einer Journey-Arbeitsflächen-Visualisierung mit der rechten Maustaste auf den Knoten oder Pfeil, den/den Sie zum Erstellen des Filters verwenden möchten.
+1. Klicken Sie in einer Journey-Arbeitsflächen-Visualisierung mit der rechten Maustaste auf den Knoten oder Pfeil, den Sie zum Erstellen des Segments verwenden möchten.
 
-1. Wählen Sie [!UICONTROL **Filter aus Knoten erstellen**] oder [!UICONTROL **Filter aus Pfeil erstellen**].
+1. Wählen Sie [!UICONTROL **Segment aus Knoten erstellen**] oder [!UICONTROL **Segment aus Pfeil erstellen**].
 
-   Der Filter-Builder wird angezeigt. Im Abschnitt [!UICONTROL **Definition**] wird die Filterdefinition basierend auf dem ausgewählten Knoten oder Pfeil und seinem Kontext innerhalb der Journey erstellt.
+   Der Filter-Builder wird angezeigt. Im Abschnitt [!UICONTROL **Definition**] wird die Segmentdefinition basierend auf dem ausgewählten Knoten oder Pfeil und seinem Kontext innerhalb der Journey erstellt.
 
-1. Geben Sie einen Titel für den Filter an und nehmen Sie andere Änderungen vor. Weitere Informationen zum Erstellen eines Filters finden Sie unter [Filter Builder](/help/components/filters/filter-builder.md).
+1. Geben Sie einen Titel für das Segment an und nehmen Sie andere Änderungen vor. Weitere Informationen zum Erstellen eines Segments finden Sie unter [Filter Builder](/help/components/filters/filter-builder.md).
 
-1. Wählen Sie [!UICONTROL **Speichern**], um den Filter zu speichern.
+1. Wählen Sie [!UICONTROL **Speichern**] aus, um das Segment zu speichern.
 
 ### Knoten löschen
 

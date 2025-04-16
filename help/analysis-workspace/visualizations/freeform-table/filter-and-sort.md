@@ -4,10 +4,10 @@ title: Filtern und Sortieren von Tabellen
 feature: Visualizations
 exl-id: 3af637ec-bb6c-49b7-a7b3-e1d310e71101
 role: User
-source-git-commit: 590a3ddbe988d27341fe96a3fa866960d1641e24
-workflow-type: ht
-source-wordcount: '846'
-ht-degree: 100%
+source-git-commit: 770320a0b16d26e0755203a3524b000db30cac82
+workflow-type: tm+mt
+source-wordcount: '844'
+ht-degree: 99%
 
 ---
 
@@ -94,7 +94,7 @@ So filtern Sie Daten in Freiformtabellen:
 
 1. Wählen Sie **[!UICONTROL Anwenden]** aus, um die Daten zu filtern. Wählen Sie **[!UICONTROL Löschen]** aus, um alle Eingaben zu löschen. Wählen Sie **[!UICONTROL Abbrechen]** aus, um den Vorgang abzubrechen und das Dialogfeld zu schließen. <br/>Ein farbiges ![Filter](/help/assets/icons/FilterColored.svg) **Filtersymbol** weist auf Details hin und zeigt diese an, wenn ein Filter auf die Tabelle angewendet wird.
 
-### Verwenden von Zielgruppenfiltern
+### Verwenden von Zielgruppensegmenten
 
 Weitere Informationen finden Sie unter [Filter – Überblick](/help/components/filters/filters-overview.md).
 

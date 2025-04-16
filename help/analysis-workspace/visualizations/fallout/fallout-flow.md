@@ -4,10 +4,10 @@ title: Informationen zu Fallout-Berichten und -Visualisierungen
 feature: Visualizations
 exl-id: c4338821-64ac-4345-828a-15af18a95ea6
 role: User
-source-git-commit: 4bf8c616965718426efe880865acb0e5054b6a31
-workflow-type: ht
+source-git-commit: 770320a0b16d26e0755203a3524b000db30cac82
+workflow-type: tm+mt
 source-wordcount: '357'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
@@ -43,7 +43,7 @@ Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Erstellen eine
 
 Mit Visualisierungen vom Typ „Fallout“ können Sie:
 
-* Eine Gegenüberstellung zweier verschiedener Filter im gleichen Bericht vornehmen.
+* eine Gegenüberstellung zweier verschiedener Segmente im gleichen Bericht vornehmen
 * Trichterschritte (Touchpoints) per Drag-and-Drop bewegen (und neu anordnen).
 * Werte aus unterschiedlichen Dimensionen und Metriken mischen und kombinieren.
 * Einen multidimensionalen Fallout-Bericht erstellen.
@@ -75,7 +75,7 @@ Visualisierungen vom Typ Fallout eignen sich am besten für:
 
 * Fallout-Analysen mit Journeys und einer vordefinierten Seitensequenz sowie einem einzigen Einstiegspunkt und Pfad. (Verwenden Sie die Journey-Arbeitsfläche für Journeys mit mehreren Einstiegspunkten und Pfaden.)
 
-* Journeys, in denen Sie eine Gegenüberstellung zweier verschiedener Filter im gleichen Bericht vornehmen.
+* Journey, bei denen Sie zwei verschiedene Segmente im selben Bericht nebeneinander vergleichen müssen.
 
 Verwenden Sie [die Tabelle oben](#understand-the-differences), um die Unterschiede zwischen der Visualisierung Journey-Arbeitsfläche, Fallout und Fluss zu verstehen.
 

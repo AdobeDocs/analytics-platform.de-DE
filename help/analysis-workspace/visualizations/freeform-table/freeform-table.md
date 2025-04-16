@@ -4,10 +4,10 @@ description: Freiformtabellen sind die Grundlage für die Analyse von Daten in W
 feature: Visualizations
 exl-id: e5ba9089-c575-47b3-af85-b8b2179396ac
 role: User
-source-git-commit: 141c95b23695c09dd194c61c7cef0ce34e05ac33
+source-git-commit: 770320a0b16d26e0755203a3524b000db30cac82
 workflow-type: tm+mt
 source-wordcount: '779'
-ht-degree: 99%
+ht-degree: 94%
 
 ---
 
@@ -46,7 +46,7 @@ Am schnellsten können Sie eine Tabelle erstellen, indem Sie Komponenten direkt 
 
 ## Freiformtabellen-Builder
 
-Wenn Sie Ihrer Tabelle lieber zuerst mehrere Komponenten hinzufügen und dann die Daten rendern möchten, können Sie **[!UICONTROL Tabellengenerator aktivieren]** auswählen. Wenn der Generator aktiviert ist, können Sie für komplexere Fragen Tabellen mit Dimensionen, Unterteilungen, Metriken und Filtern per Drag-and-Drop erstellen. Die Daten werden nach Auswahl von **[!UICONTROL Erstellen]** aktualisiert.
+Wenn Sie Ihrer Tabelle lieber zuerst mehrere Komponenten hinzufügen und dann die Daten rendern möchten, können Sie **[!UICONTROL Tabellengenerator aktivieren]** auswählen. Wenn der Builder aktiviert ist, können Sie Dimensionen, Aufschlüsselungen, Metriken und Segmente per Drag-and-Drop verschieben, um Tabellen zu erstellen, die komplexere Fragen beantworten. Die Daten werden nach Auswahl von **[!UICONTROL Erstellen]** aktualisiert.
 
 ![Ein Freiformtabellen-Builder mit ](assets/table-builder.png)
 
@@ -56,7 +56,7 @@ Es gibt verschiedene Arten, mit Freiformtabellen zu interagieren und sie anzupas
 
 ### Filtern und Sortieren
 
-* Sie können die Daten in einer Tabelle [filtern und sortieren](filter-and-sort.md).
+* Sie können [ Daten ](filter-and-sort.md) einer Tabelle segmentieren und sortieren.
 
 ### Zeilen
 
@@ -64,11 +64,11 @@ Es gibt verschiedene Arten, mit Freiformtabellen zu interagieren und sie anzupas
 * Sie können mehr Zeilen in einen einzigen Bildschirm einpassen, indem Sie die [Anzeigedichte](/help/analysis-workspace/build-workspace-project/view-density.md) des Projekts anpassen.
 * Jede Dimensionsreihe kann bis zu 400 Zeilen anzeigen, bevor die Paginierung erfolgt. Wählen Sie die Zahl neben **[!UICONTROL Zeilen]** in der ersten Spaltenüberschrift aus, um weitere Zeilen auf einer Seite anzuzeigen. Navigieren Sie mit ![ChevronRight](/help/assets/icons/ChevronRight.svg) in der ersten Spaltenüberschrift zu einer anderen Seite.
 * Sie können Zeilen nach zusätzlichen Komponenten aufschlüsseln. Um mehrere Zeilen gleichzeitig aufzuschlüsseln, wählen Sie mehrere Zeilen aus und ziehen Sie dann die nächste Komponente auf die ausgewählten Zeilen. Weitere Informationen zu [Aufschlüsselungen](/help/components/dimensions/t-breakdown-fa.md).
-* Zeilen können [gefiltert](/help/components/filters/filters-overview.md) werden, um einen reduzierte Anzahl von Elementen anzuzeigen. Weitere Einstellungen finden Sie unter [Zeileneinstellungen](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.md).
+* Zeilen können [segmentiert](/help/components/filters/filters-overview.md) sein, um einen reduzierten Satz von Elementen anzuzeigen. Weitere Einstellungen finden Sie unter [Zeileneinstellungen](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.md).
 
 ### Spalten
 
-* Komponenten können innerhalb von Spalten gestapelt werden, um gefilterte Metriken, tabellenübergreifende Analysen und mehr zu erstellen.
+* Komponenten können innerhalb von Spalten gestapelt werden, um segmentierte Metriken, tabellenübergreifende Analysen und mehr zu erstellen.
 * Die Ansicht jeder Spalte kann unter den [Spalteneinstellungen](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/column-settings.md) angepasst werden.
 * Über das [Kontextmenü](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu) sind verschiedene Aktionen verfügbar. Das Menü enthält verschiedene Aktionen, je nachdem, ob Sie die Tabellenüberschrift, die Zeilen oder die Spalten auswählen.
 
