@@ -1,33 +1,33 @@
 ---
 title: Content Analytics-Reporting
-description: Berichte zur Inhaltsanalyse erstellen
+description: Berichte zu Content Analytics
 solution: Customer Journey Analytics
 feature: Content Analytics
 role: User
 exl-id: 6e756ae8-b969-46f1-95b8-d8fbb0d058ed
-source-git-commit: b4325135ec05737a75027ded70e96f599eb0220c
+source-git-commit: bc2c959497230d7672d43d5cd409ca62d4627d6a
 workflow-type: tm+mt
 source-wordcount: '1300'
 ht-degree: 0%
 
 ---
 
-# Übersicht über das Reporting in Content Analytics
+# Übersicht über Content Analytics-Berichte
 
 {{release-limited-testing}}
 
 Sie erstellen Berichte, führen Analysen durch und erhalten Einblicke in Content Analytics innerhalb von [Analysis Workspace](/help/analysis-workspace/home.md). Eine bestimmte Workspace [Vorlage](#template) ist verfügbar, sodass Sie sofort auf ein vorausgefülltes Workspace-Projekt mit relevanten Inhalten zugreifen können.
 
-So starten Sie das Reporting zu Inhaltsanalysen von Grund auf neu:
+So starten Sie das Reporting über Content Analytics von Grund auf neu:
 
 1. [Erstellen eines neuen](/help/analysis-workspace/build-workspace-project/create-projects.md) oder [Öffnen eines vorhandenen](/help/analysis-workspace/build-workspace-project/open-projects.md) Projekts in Workspace.
 1. Stellen Sie sicher[ dass Sie für die Berichterstellung in Content Analytics ](/help/analysis-workspace/c-panels/panels.md#data-view) Datenansicht auswählen. Content Analytics Content Analytics-Berichte sind nur für Datenansichten verfügbar, die für [ konfiguriert ](/help/content-analytics/config/configuration.md).
 1. Ziehen Sie ![ Visualisierung ](/help/assets/icons/Table.svg)Tabelle[/Freiformtabelle](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) auf die Arbeitsfläche.
-1. Verwenden Sie [spezifischen Inhaltsanalysekomponenten](components.md) und andere generische [Komponenten](/help/components/overview.md) (wie Filter, Datumsbereiche, Anmerkungen), um Ihre Inhaltsanalyseeinblicke zu erstellen.
+1. Verwenden Sie [spezifischen Content Analytics](components.md)Komponenten und andere generische [Komponenten](/help/components/overview.md) (wie Segmente, Datumsbereiche, Anmerkungen), um Ihre Inhaltsanalyseeinblicke zu erstellen.
 
 ## Miniaturen
 
-Basierend auf den Inhaltsanalysedimensionen, die Sie in Ihrem Projekt verwenden, werden Miniaturansichten für Assets und Dimensionen angezeigt.
+Basierend auf den Content Analytics-spezifischen Dimensionen, die Sie in Ihrem Projekt verwenden, werden Miniaturansichten für Assets und Dimensionen angezeigt.
 
 ![Content Analytics-Miniaturansichten](../assets/aca-thumbnails.png)
 
@@ -48,7 +48,7 @@ So öffnen Sie die Vorschau mit den folgenden Details:
 
   | Erlebnisvorschau | Asset-Vorschau |
   |---|---|
-  | ![Content Analytics Experience Preview](../assets/aca-experience-preview.png) | ![Vorschau von Content Analytics-Assets](../assets/aca-asset-preview.png) |
+  | ![Content Analytics Experience Preview](../assets/aca-experience-preview.png) | ![Content Analytics Asset-Vorschau](../assets/aca-asset-preview.png) |
   | Name der Dimension (z. B. **[!UICONTROL Erlebnis-ID])** | Name der Asset-Dimension (z. B **[!UICONTROL „Asset-ID])** |
   | **[!UICONTROL Impressions (alle Zeiten)]**: Anzahl der Impressionen für das Erlebnis. | **[!UICONTROL Impressions (alle Zeiten)]**: Anzahl der Impressionen für das Asset. |
   | **[!UICONTROL Assets]**: Anzahl der Assets, die dieses Erlebnis enthält. <br/>Wählen Sie ![Aufschlüsselung](/help/assets/icons/Breakdown.svg) **[!UICONTROL Aufschlüsselung]** aus, um die Assets zu überprüfen. | **[!UICONTROL Erlebnisse]**: Anzahl der Erlebnisse, in denen dieses Asset angezeigt wird. <br/>Wählen Sie ![Aufschlüsselung](/help/assets/icons/Breakdown.svg) **[!UICONTROL Aufschlüsselung]** aus, um die Assets zu überprüfen. |
@@ -67,7 +67,7 @@ So verwenden Sie die Vorlage:
 
 1. Wählen Sie **[!UICONTROL Workspace]** aus dem Hauptmenü aus.
 1. Stellen Sie sicher, dass Sie eine Datenansicht ausgewählt haben, die für Content Analytics konfiguriert ist.
-1. Suchen Sie nach oder verwenden Sie Filter (**[!UICONTROL Web]** für **[!UICONTROL Kanal]** und **[!UICONTROL Interaktion]** für **[!UICONTROL Anwendungsfall]**, um die Vorlage **[!UICONTROL Inhaltsanalytik]** zu finden und auszuwählen.
+1. Suchen Sie nach Segmenten (**[!UICONTROL Web]** für **[!UICONTROL Kanal]** und **[!UICONTROL Interaktion]** für **[!UICONTROL Anwendungsfall]**) und wählen Sie die Vorlage **[!UICONTROL Content Analytics]** aus.
 1. Wählen Sie **[!UICONTROL Vorlage verwenden]** aus.
 1. Wählen **[!UICONTROL im Dialogfeld Vorlage einrichten]** eine Metrik aus dem Dialogfeld **[!UICONTROL Konversionsmetrik auswählen]**. Beispiel: **[!UICONTROL Asset-CTR]**.
 1. Wählen Sie **[!UICONTROL Weiter]** aus.

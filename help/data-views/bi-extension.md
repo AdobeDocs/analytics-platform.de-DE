@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: BI Extension
 role: Admin
 exl-id: ab7e1f15-ead9-46b7-94b7-f81802f88ff5
-source-git-commit: 2f9cfc3fc7edaa21175d44dfb3f9bface5cf0d81
+source-git-commit: bc2c959497230d7672d43d5cd409ca62d4627d6a
 workflow-type: tm+mt
 source-wordcount: '3247'
-ht-degree: 98%
+ht-degree: 92%
 
 ---
 
@@ -519,7 +519,7 @@ Aufgrund der zugrunde liegenden Funktionsweise von Customer Journey Analytics is
 
 #### Bedingte Metriken
 
-Sie können die Klausel `IF` oder `CASE` in der Funktion `SUM` oder `COUNT` einbetten, um eine zusätzliche Filterung hinzuzufügen, die spezifisch für eine ausgewählte Metrik ist. Das Hinzufügen dieser Klauseln ähnelt dem Anwenden eines Filters auf eine Metrikspalte in einer Workspace-Berichtstabelle.
+Sie können eine `IF`- oder `CASE`-Klausel in die `SUM`- oder `COUNT`-Funktionen einbetten, um eine zusätzliche Segmentierung hinzuzufügen, die für eine ausgewählte Metrik spezifisch ist. Das Hinzufügen dieser Klauseln ähnelt dem Anwenden eines Segments auf eine Metrikspalte in einer Workspace-Berichtstabelle.
 
 Beispiele:
 
@@ -556,26 +556,26 @@ Die spezielle Spalte `timestamp` wird verwendet, um die Datumsbereiche für die 
 * Wenn nur ein Maximum angegeben wird (`timestamp < X` oder `timestamp <= X`), reicht der Bereich von X bis die 30 Tage vor X.
 * Wenn nichts angegeben wird, umfasst der Bereich die letzten 30 Tage bis jetzt.
 
-Der Zeitstempelbereich wird im RankedRequest in einen globalen Datumsbereichsfilter konvertiert.
+Der Zeitstempelbereich wird in der Rangfolgenanfrage in ein globales Segment für den Datumsbereich konvertiert.
 Das Zeitstempelfeld kann auch als Datums-/Uhrzeitfunktion verwendet werden, um den Zeitstempel des Ereignisses zu analysieren und zu kürzen.
 
 #### Datumsbereich
 
-Die Sonderspalte `daterange` funktioniert ähnlich wie `timestamp`, die Filterung ist jedoch hier auf volle Tage beschränkt. `daterange` ist ebenfalls optional und hat denselben Standardbereich wie `timestamp`.
+Die `daterange` Spalte funktioniert ähnlich wie `timestamp`. Die Segmentierung ist jedoch auf volle Tage beschränkt. `daterange` ist ebenfalls optional und hat denselben Standardbereich wie `timestamp`.
 Das Feld `daterange` kann auch in Datums-/Uhrzeitfunktionen verwendet werden, um das Datum des Ereignisses zu analysieren und ggf. zu kürzen.
 
-Die Sonderspalte `daterangeName` kann verwendet werden, um Ihre Abfrage mithilfe eines benannten Datumsbereichs wie `Last Quarter` zu filtern.
+Die `daterangeName` Spalte kann verwendet werden, um Ihre Abfrage mithilfe eines benannten Datumsbereichs wie `Last Quarter` zu segmentieren.
 
 >[!NOTE]
 >
 >Power BI unterstützt keine Metriken vom Typ `daterange`, die weniger als einen Tag umfassen (Stunde, 30 Minuten, 5 Minuten usw.).
 >
 
-#### Filter-ID
+#### Segment-ID
 
-Die spezielle Spalte `filterId` ist optional und wird verwendet, um einen extern definierten Filter auf die Abfrage anzuwenden. Das Anwenden eines extern definierten Filters auf eine Abfrage ähnelt dem Ziehen eines Filters auf ein Bedienfeld in Workspace. Mehrere Filter-IDs können durch Verbinden mit `AND` verwendet werden.
+Die Spalte Speziell `filterId` ist optional und wird verwendet, um ein extern definiertes Segment auf die Abfrage anzuwenden. Das Anwenden eines extern definierten Segments auf eine Abfrage ähnelt dem Ziehen eines Segments in einen Bereich in Workspace. Es können mehrere Segment-IDs verwendet werden, indem sie `AND` werden.
 
-Zusammen mit `filterId` können Sie `filterName` verwenden, um den Namen eines Filters anstelle der ID zu verwenden.
+Neben `filterId` können Sie `filterName` verwenden, um den Namen eines Segments anstelle der ID zu verwenden.
 
 ### Klausel „Where“
 
@@ -583,11 +583,11 @@ Die Klausel `WHERE` wird in drei Schritten umgesetzt:
 
 1. Suche des Datumsbereichs aus dem Sonderfeld `timestamp`, `daterange` oder `daterangeName`.
 
-1. Suchen nach den extern definierten Elementen `filterId` oder `filterName`, die in die Filterung einbezogen werden sollen.
+1. Suchen Sie alle extern definierten `filterId` oder `filterName`, die in das Segment aufgenommen werden sollen.
 
-1. Umwandeln der verbleibenden Ausdrücke in Ad-hoc-Filter.
+1. Wandeln Sie die verbleibenden Ausdrücke in Ad-hoc-Segmente um.
 
-Die Umsetzung erfolgt durch Parsen der ersten Ebene von `AND`s in der `WHERE`-Klausel. Jeder Ausdruck mit `AND` auf oberster Ebene muss mit einem der oben genannten übereinstimmen. Alles, was tiefer als die erste Ebene der `AND`-Operatoren ist, oder, wenn die `WHERE`-Klausel auf der obersten Ebene `OR`-Operatoren verwendet, wird als Ad-hoc-Filter behandelt.
+Die Umsetzung erfolgt durch Parsen der ersten Ebene von `AND`s in der `WHERE`-Klausel. Jeder Ausdruck mit `AND` auf oberster Ebene muss mit einem der oben genannten übereinstimmen. Alles, was tiefer als die erste Ebene von `AND`s liegt oder wenn die `WHERE`-Klausel `OR`s auf der obersten Ebene verwendet, wird als Ad-hoc-Segment gehandhabt.
 
 ### Sortierreihenfolge
 

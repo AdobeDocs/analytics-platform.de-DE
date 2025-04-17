@@ -5,10 +5,10 @@ exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: 03e9fb37684f8796a18a76dc0a93c4e14e6e7640
+source-git-commit: bc2c959497230d7672d43d5cd409ca62d4627d6a
 workflow-type: tm+mt
 source-wordcount: '2125'
-ht-degree: 88%
+ht-degree: 85%
 
 ---
 
@@ -101,7 +101,7 @@ Dieser Abschnitt ist nur für Admins sichtbar, denen Journey Optimizer bereitges
 
 ### Container
 
-Gibt den Namen der Container für die Datenansicht an. Container-Namen werden häufig in [Filtern](/help/components/filters/filters-overview.md#Filter-containers) verwendet.
+Gibt den Namen der Container für die Datenansicht an. Container-Namen werden häufig in &quot;[&quot; ](/help/components/filters/filters-overview.md#Filter-containers).
 
 | Einstellung | Beschreibung |
 | --- | --- |
@@ -185,13 +185,13 @@ Sie können ![Filtersymbol](https://spectrum.adobe.com/static/icons/workflow_18/
 ## Einstellungen
 
 1. Wählen Sie die Registerkarte **[!UICONTROL Einstellungen]** aus.
-1. Konfigurieren Sie Filter, die auf die gesamte Datenansicht angewendet werden sollen. Siehe [Einstellungen (Filter)](#settings-filters) unten.
+1. Konfigurieren Sie Segmente, die auf Ihre gesamte Datenansicht angewendet werden sollen. Siehe [Einstellungen (Segmente)](#settings-filters) unten.
 1. Konfigurieren Sie Sitzungs-Timeout und Metriken. Siehe [Sitzungseinstellungen](#session-settings) unten.
 1. Wählen Sie **[!UICONTROL Speichern und fortfahren]** aus, um mit der Konfiguration der neuen oder vorhandenen Datenansicht fortzufahren. Wählen Sie **[!UICONTROL Speichern]** aus, um die Konfiguration für die vorhandene Datenansicht zu speichern.
 
-### Einstellungen (Filter)
+### Einstellungen (Segmente)
 
-Sie können Filter hinzufügen, die für die gesamte Datenansicht gelten. Dieser Filter wird auf alle Berichte angewendet, die Sie in Arbeitsbereich ausführen. Ziehen Sie einen Filter aus der Liste in das Feld [!UICONTROL Filter hinzufügen] in der linken Leiste.
+Sie können Segmente hinzufügen, die für eine gesamte Datenansicht gelten. Dieses Segment wird auf alle Berichte angewendet, die Sie in Workspace ausführen. Ziehen Sie ein Segment aus der Liste in das Feld [!UICONTROL Segmente hinzufügen] in der linken Leiste.
 
 ### Sitzungseinstellungen
 

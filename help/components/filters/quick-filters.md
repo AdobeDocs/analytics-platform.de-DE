@@ -4,10 +4,10 @@ title: Schnellsegmente
 feature: Workspace Basics
 role: User
 exl-id: 549e5db5-fcdf-43c5-bc43-590144aee309
-source-git-commit: 716d6423c0cc8b91aa4951952191e0fd0e627c0f
+source-git-commit: bc2c959497230d7672d43d5cd409ca62d4627d6a
 workflow-type: tm+mt
 source-wordcount: '1171'
-ht-degree: 59%
+ht-degree: 30%
 
 ---
 
@@ -65,18 +65,18 @@ Unten finden Sie ein Beispiel für den Quick Segment Builder. Im Beispiel wird d
 
 ![Quick Segment Builder](assets/quick-filter-builder.png)
 
-Der Schnellfilter-Generator besteht aus den folgenden Bereichen und Schaltflächen.
+Der Builder für Schnellsegmente besteht aus den folgenden Bereichen und Schaltflächen.
 
 ### Kopfzeilenbereich
 
-Der Kopfzeilenbereich bestimmt den Namen, den Typ und den Umfang des Schnellfilters. Außerdem wird ein Fenster mit den Ergebnissen des Schnellfilters angezeigt.
+Der Kopfzeilenbereich bestimmt den Namen, den Typ und den Umfang des Schnellsegments. Außerdem wird eine visuelle Darstellung der Ergebnisse des Schnellsegments angezeigt.
 
 | Element | Beschreibung |
 |---|---|
-| **[!UICONTROL Name]** | Der Name wird automatisch aus der Schnellfilterdefinition abgeleitet. |
-| **[!UICONTROL Personen]** <br/>![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) ![Alert](/help/assets/icons/Alert.svg) | Vorschau der aus dem Schnellfilter resultierenden Daten. Ein Balken und ein Prozentwert liefern Erkenntnisse darüber, wie viele der Gesamtdaten Teil des Ergebnisses des Schnellfilters sind. Ein rotes Symbol ![Alert](/help/assets/icons/Alert.svg) signalisiert, dass der Schnellfilter keine Daten zurückgibt. |
-| **[!UICONTROL Einbeziehen]**<br/>**[!UICONTROL Ausschließen]** | Wählen Sie im Dropdown ![ChevronDown](/help/assets/icons/ChevronDown.svg) aus, ob die Ergebnisse des Schnellfilters aus den Daten im Panel ein- oder ausgeschlossen werden sollen. |
-| **[!UICONTROL Ereignis]**<br/>**[!UICONTROL Sitzung]**<br/>**[!UICONTROL Person]** | Wählen Sie im Dropdown ![ChevronDown](/help/assets/icons/ChevronDown.svg) den Umfang des Schnellfilters aus. |
+| **[!UICONTROL Name]** | Der Name wird automatisch aus der Schnellsegmentdefinition abgeleitet. |
+| **[!UICONTROL Personen]** <br/>![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) ![Alert](/help/assets/icons/Alert.svg) | Vorschau der visuellen Daten, die aus dem Schnellsegment resultieren. Ein Balken und ein Prozentwert geben insight an, wie viel der Gesamtdaten Teil des Ergebnisses des Schnellsegments ist. Ein rotes ![Warnhinweis](/help/assets/icons/Alert.svg) signalisiert, dass das Schnellsegment keine Daten zurückgibt. |
+| **[!UICONTROL Einbeziehen]**<br/>**[!UICONTROL Ausschließen]** | Wählen Sie aus dem Dropdown-![ChevronDown](/help/assets/icons/ChevronDown.svg) aus, ob Sie die Ergebnisse des Schnellsegments aus den Daten im Bedienfeld einschließen oder ausschließen möchten. |
+| **[!UICONTROL Ereignis]**<br/>**[!UICONTROL Sitzung]**<br/>**[!UICONTROL Person]** | Wählen Sie aus dem Dropdown-![ChevronDown](/help/assets/icons/ChevronDown.svg) den Umfang des Schnellsegments aus. |
 
 ### Bedingungsbereich
 
@@ -88,25 +88,25 @@ Der Bedingungsbereich gibt die Bedingungen an (maximal drei). Für jede Bedingun
 | **[!UICONTROL *Komponente *]** | Das Komponentenfeld für die Bedingung. Sie können über [!UICONTROL *Zum Hinzufügen eingeben*] eine Komponente eingeben, eine Komponente aus der Liste auswählen oder eine Komponente per Drag-and-Drop aus dem Panel „Komponente“ ziehen. Sie können ähnliche Komponenten nur im Komponentenfeld der Bedingung ablegen. Beispielsweise können Sie eine Dimensionskomponente nur aus dem Panel „Komponente“ in einer Dimensionsbedingung ablegen. <br/>Sie können per Drag-and-Drop auch eine vorhandene Komponente ersetzen.<br/>Wählen Sie ![CrossSize75](/help/assets/icons/CrossSize75.svg) aus, um die Komponente aus dem Komponentenfeld zu löschen. |
 | **[!UICONTROL *Operator *]** | Der Operator für die Komponente. Weitere Informationen finden Sie unter [Operatoren](operators.md). Nur für Dimensionen und Metriken verfügbar. |
 | **[!UICONTROL *value *]** | Der Wert für die Bedingung. Je nach ausgewähltem Operator kann der Wert aus einer Liste ausgewählt werden oder Sie geben einen Wert ein. |
-| ![CrossSize75](/help/assets/icons/CrossSize75.svg) | Wählen Sie diese Option aus, um eine Bedingung aus dem Schnellfilter zu löschen. |
+| ![CrossSize75](/help/assets/icons/CrossSize75.svg) | Wählen Sie diese Option aus, um eine Bedingung aus dem Schnellsegment zu löschen. |
 
 ### Schaltflächen
 
 | Schaltfläche | Beschreibung |
 |---|---|
-| **[!UICONTROL UND]**<br/>**[!UICONTROL ODER]** | Nur verfügbar, wenn Sie mehrere Bedingungen definieren. Wählen Sie im Dropdown ![ChevronDown](/help/assets/icons/ChevronDown.svg) zwischen den Bedingungen. Die Auswahl bestimmt die boolesche Logik für den Schnellfilter. Logik kann nicht gemischt werden, wenn drei Bedingungen vorliegen. Die boolesche Logik lautet entweder **[!UICONTROL UND]** oder **[!UICONTROL ODER]**. |
-| ![Hinzufügen](/help/assets/icons/AddCircle.svg) | Hierdurch wird Ihrem Schnellfilter eine weitere Bedingung hinzugefügt. Diese Schaltfläche ist nur verfügbar, wenn Sie eine oder zwei Bedingungen für den Schnellfilter definiert haben. |
-| **[!UICONTROL Anwenden]** | Wenden Sie die Änderungen auf den Schnellfilter an. |
-| **[!UICONTROL Builder öffnen]** | Sie werden im Dialogfeld **[!UICONTROL Sind Sie sicher?]** zur Bestätigung aufgefordert. Wenn Sie **[!UICONTROL OK]** auswählen, können Sie Ihren Filter nicht länger im [Schnellfilteraufbau](#quick-filter-builder) ändern. Ihr Schnellfilter wird in **[!UICONTROL Filter]** umbenannt und hat jetzt einen dunkelblauen, dünnen linken Balken.<br/>Der reguläre [Filteraufbau](filter-builder.md) wird mit der Option **[!UICONTROL Diesen Filter für alle Projekte verfügbar machen und zur Komponentenliste hinzufügen]** geöffnet. <ul><li>Wenn Sie diese Option auswählen und **[!UICONTROL Anwenden]** wählen, wird der Filter der Komponentenliste ![Filter](/help/assets/icons/Segmentation.svg) **[!UICONTROL Filter]** im Panel „Komponente“ hinzugefügt.</li><li>Wenn Sie diese Option nicht auswählen und **[!UICONTROL Anwenden]** wählen, bleibt der Filter ein reiner Workspace-Projektfilter.</li></ul> |
-| **[!UICONTROL Abbrechen]** | Wählen Sie diese Option aus, um die Erstellung oder Bearbeitung eines Schnellfilters abzubrechen. |
+| **[!UICONTROL UND]**<br/>**[!UICONTROL ODER]** | Nur verfügbar, wenn Sie mehrere Bedingungen definieren. Wählen Sie im Dropdown ![ChevronDown](/help/assets/icons/ChevronDown.svg) zwischen den Bedingungen. Die Auswahl bestimmt die boolesche Logik für das Schnellsegment. Logik kann nicht gemischt werden, wenn drei Bedingungen vorliegen. Die boolesche Logik lautet entweder **[!UICONTROL UND]** oder **[!UICONTROL ODER]**. |
+| ![Hinzufügen](/help/assets/icons/AddCircle.svg) | Fügt eine weitere Bedingung zu Ihrem Schnellsegment hinzu. Diese Schaltfläche ist nur verfügbar, wenn Sie eine oder zwei Bedingungen für das Schnellsegment definiert haben. |
+| **[!UICONTROL Anwenden]** | Wenden Sie die Änderungen auf das Schnellsegment an. |
+| **[!UICONTROL Builder öffnen]** | Sie werden im Dialogfeld **[!UICONTROL Sind Sie sicher?]** zur Bestätigung aufgefordert. Wenn Sie **[!UICONTROL OK]** auswählen, können Sie Ihr Segment nicht mehr in [Quick Segment Builder](#quick-filter-builder) ändern. Ihr Schnellsegment wird in **[!UICONTROL Segment]** umbenannt und hat jetzt einen dunkelblauen, dünnen linken Balken.<br/>Der reguläre [Segment Builder](filter-builder.md) wird mit der Option geöffnet, **[!UICONTROL Dieses Segment für alle Projekte verfügbar zu machen und es zur Komponentenliste]**. <ul><li>Wenn Sie diese Option auswählen und **[!UICONTROL Anwenden]** wählen, wird das Segment der Komponentenliste ![Segment](/help/assets/icons/Segmentation.svg) **[!UICONTROL Filter]** im Komponentenbereich hinzugefügt.</li><li>Wenn Sie diese Option nicht auswählen und auf **[!UICONTROL Übernehmen]** klicken, bleibt das Segment ein reines Workspace-Projektsegment.</li></ul> |
+| **[!UICONTROL Abbrechen]** | Wählen Sie diese Option aus, um die Erstellung oder Bearbeitung eines Schnellsegments abzubrechen. |
 
-## Schnellfilter im Vergleich zu Filtern
+## Schnellsegmente im Vergleich zu Segmenten
 
-Schnellfilter entsprechen genau ihrem Namen. Sie können Schnellfilter schnell inline erstellen und bearbeiten und sehen die Auswirkungen sofort in Ihrem Panel.
+Schnellsegmente werden genau so benannt wie sie. Sie können Schnellsegmente schnell inline erstellen und bearbeiten und die Auswirkungen sofort in Ihrem Bedienfeld sehen.
 
-Filter bieten im Vergleich zu Schnellfiltern die folgenden Vorteile.
+Segmente haben im Vergleich zu Schnellsegmenten die folgenden Vorteile.
 
-* Filter können für alle Workspace-Projekte verfügbar gemacht werden
-* Filter unterstützen eine höhere Komplexität durch die Verwendung verschachtelter und hierarchischer Container und Sequenzen (durch Verwendung von Sequenzfiltern).
+* Segmente können für alle Workspace-Projekte verfügbar gemacht werden
+* Segmente unterstützen eine höhere Komplexität bei der Verwendung verschachtelter und hierarchischer Container und Sequenzen (unter Verwendung von Sequenzsegmenten).
 
 
