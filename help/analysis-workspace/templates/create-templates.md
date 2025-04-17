@@ -4,10 +4,10 @@ title: Verwenden von Vorlagen
 feature: Workspace Basics
 role: User, Admin
 exl-id: 23cdf02f-56a1-4465-ae7f-b3a1bcad28af
-source-git-commit: 0101986bb86c49776a044f754d912dc1bcb9422c
+source-git-commit: 0f4b396bb44612ef52b640ffaeba6aa5aeace423
 workflow-type: tm+mt
-source-wordcount: '1630'
-ht-degree: 98%
+source-wordcount: '1774'
+ht-degree: 89%
 
 ---
 
@@ -17,7 +17,16 @@ Admins können Vorlagen erstellen und sie zur Verwendung für andere Benutzende 
 
 Personen im Anmeldeunternehmen können diese Unternehmensvorlagen wie in [Verwenden von Vorlagen](/help/analysis-workspace/templates/use-templates.md) beschrieben verwenden.
 
-## Erstellen einer Vorlage
+## Erstellen einer Vorlage {#create-templates}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="use-case-ajo-template"
+>title="Vorlage in Journey Optimizer verwenden"
+>abstract="Wenn Sie diese Vorlage in Journey Optimizer verwenden, wird die Datenansicht verwendet, die in Adobe Journey Optimizer als Standarddatenansicht festgelegt ist, unabhängig von der Datenansicht, die mit dieser Vorlage in Customer Journey Analytics ausgewählt wurde."
+
+<!-- markdownlint-enable MD034 -->
 
 So erstellen Sie eine neue Vorlage, die von Personen in Ihrem Anmeldeunternehmen verwendet werden kann:
 
@@ -86,7 +95,7 @@ Admins können Unternehmensvorlagen bearbeiten oder löschen.
    | **[!UICONTROL Beschreibung]** | Geben Sie eine kurze Beschreibung für die Vorlage an, die ihre Verwendungszwecke beschreibt. |
    | **[!UICONTROL Warum diese Vorlage verwenden?]** | Liefern Sie eine kurze Erklärung, in der Sie Personen in der Organisation darüber informieren, wie diese Vorlage verwendet werden könnte. Diese Erklärung wird auf der Vorschauseite der Vorlage angezeigt. |
    | **[!UICONTROL Kanäle]** | Wählen Sie alle Kanäle aus, die auf diese Vorlage zutreffen. Sie können mehrere Kanäle auswählen: **[!UICONTROL Web]**, **[!UICONTROL Mobile]**, **[!UICONTROL Kanalübergreifend]**, **[!UICONTROL Callcenter]** und **[!UICONTROL In-store]**. Wenn keine Kanäle ausgewählt sind, wird die Vorlage in alle Kanälen aufgenommen.<p>Ihre Auswahl bestimmt, wo die Vorlage angezeigt wird und welche Filter für Benutzende gelten, die über die Seite „Organisationsvorlagen“ darauf zugreifen.</p> |
-   | **[!UICONTROL Anwendungsbeispiele]** | Wählen Sie alle Anwendungsfälle aus, die für diese Vorlage gelten. Sie können mehrere Anwendungsszenarien auswählen: **[!UICONTROL Interaktion]**, **[!UICONTROL Konversion]**, **[!UICONTROL Zielgruppe]**, **[!UICONTROL Akquise]** und **[!UICONTROL Journey Optimizer]**. <p>Ihre Auswahl bestimmt die Position der Vorlage auf der Seite „Organisationsvorlagen“. Benutzende können zur Vorlage navigieren oder die Liste nach Anwendungsfall filtern. </p><p>**Hinweis:** Wenn Sie **[!UICONTROL Journey Optimizer]** auswählen, wird die Vorlage auch in Adobe Journey Optimizer verfügbar. In Journey Optimizer ist auf der Seite **[!UICONTROL Berichte]** ein Dropdown-Menü verfügbar, über das Benutzende diese Vorlage oder die Standardvorlage auswählen können. Weitere Informationen finden Sie unter [Erste Schritte mit dem aktualisierten Reporting-Erlebnis](https://experienceleague.adobe.com/de/docs/journey-optimizer/using/reporting/channel-report/report-gs-cja) in der Dokumentation zu Journey Optimizer. |
+   | **[!UICONTROL Anwendungsbeispiele]** | Wählen Sie alle Anwendungsfälle aus, die für diese Vorlage gelten. Sie können mehrere Anwendungsszenarien auswählen: **[!UICONTROL Interaktion]**, **[!UICONTROL Konversion]**, **[!UICONTROL Zielgruppe]**, **[!UICONTROL Akquise]** und **[!UICONTROL Journey Optimizer]**. <p>Ihre Auswahl bestimmt die Position der Vorlage auf der Seite „Organisationsvorlagen“. Benutzende können zur Vorlage navigieren oder die Liste nach Anwendungsfall filtern. </p><p>**Hinweis** Wenn Sie die Option **[!UICONTROL Journey Optimizer]** auswählen, ist die Vorlage zur Verwendung in Adobe Journey Optimizer verfügbar. In Journey Optimizer ist auf der Seite **[!UICONTROL Berichte]** ein Dropdown-Menü verfügbar, über das Benutzende diese Vorlage oder die Standardvorlage auswählen können. Weitere Informationen finden Sie unter [Erste Schritte mit dem aktualisierten Reporting-Erlebnis](https://experienceleague.adobe.com/de/docs/journey-optimizer/using/reporting/channel-report/report-gs-cja) in der Dokumentation zu Journey Optimizer.</p><p>Beachten Sie bei der Auswahl der Option Journey Optimizer Folgendes:</p><ul><li>Diese Option ist nur verfügbar, wenn Journey Optimizer-Daten in der Datenansicht vorhanden sind, die Sie in Customer Journey Analytics verwenden.</li><li>Wenn Sie diese Vorlage in Journey Optimizer verwenden, wird die Datenansicht verwendet, die in Adobe Journey Optimizer als Standarddatenansicht festgelegt ist, unabhängig von der Datenansicht, die mit dieser Vorlage in Customer Journey Analytics ausgewählt wurde. <br/>Weitere Informationen zum Festlegen einer Datenansicht als Standarddatenansicht in Journey Optimizer finden Sie unter [Kompatibilität](/help/data-views/create-dataview.md#compatibility) in [Erstellen oder Bearbeiten einer Datenansicht](/help/data-views/create-dataview.md).</li></ul> |
    | **[!UICONTROL Journey Optimizer-Aktivitätstyp]** | Wählen Sie den Journey Optimizer-Aktivitätstyp aus, der mit dieser Vorlage verknüpft werden soll: **[!UICONTROL Kampagnen]**, **[!UICONTROL Journeys]**, **[!UICONTROL Landingpages]**, **[!UICONTROL Berichte]** oder **[!UICONTROL Abonnements]**. <p>Lassen Sie dieses Feld leer, wenn diese Vorlage mit allen Aktivitätstypen verknüpft werden soll.</p><p>Dieses Feld wird nur angezeigt, wenn im Feld **[!UICONTROL Anwendungsfälle]** die Option **[!UICONTROL Journey Optimizer]** ausgewählt ist.</p> |
    | **[!UICONTROL Journey Optimizer-Aktivität]** | Wählen Sie die Journey Optimizer-Aktivität aus, die mit dieser Vorlage verknüpft werden soll. <p>Lassen Sie dieses Feld leer, wenn diese Vorlage mit allen Aktivitäten des ausgewählten Aktivitätstyps verknüpft werden soll.</p><p>Dieses Feld wird nur angezeigt, wenn im Feld **[!UICONTROL Anwendungsfälle]** die Option **[!UICONTROL Journey Optimizer]** ausgewählt ist.</p> |
    | **[!UICONTROL Tags]** | Geben Sie alle Tags an, die Sie auf die Vorlage anwenden möchten. Die Benutzenden können die Liste der Vorlagen nach den von Ihnen hinzugefügten Tags filtern. |
