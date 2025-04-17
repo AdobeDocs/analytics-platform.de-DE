@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin
 exl-id: 4aff664c-3cd9-4591-8122-6ebff10e4a76
-source-git-commit: 5d08fac8f99e173420ecb977b91f4cb320568094
+source-git-commit: e79094d974e4e91b044611f997c0e4215487d74f
 workflow-type: tm+mt
 source-wordcount: '2580'
 ht-degree: 46%
@@ -218,7 +218,7 @@ So schließen Sie Erlebnisse in eine neue oder nicht implementierte Konfiguratio
 1. Wählen **[!UICONTROL Regex hinzufügen]** aus, wenn Sie eine weitere Kombination aus einem regulären Ausdruck und Abfrageparametern hinzufügen möchten.
 
 
-### Implementierte Konfiguration {#implemented-experiences-configuration}
+#### Implementierte Konfiguration {#implemented-experiences-configuration}
 
 So bearbeiten Sie vorhandene Erlebnisse oder schließen neue Erlebnisse in eine implementierte Konfiguration ein:
 
