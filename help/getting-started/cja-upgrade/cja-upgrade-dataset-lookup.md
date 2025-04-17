@@ -5,10 +5,10 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: f5443ddd-81d0-43cc-99cb-215e7ddf5acf
-source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
+source-git-commit: 03e9fb37684f8796a18a76dc0a93c4e14e6e7640
 workflow-type: tm+mt
-source-wordcount: '800'
-ht-degree: 98%
+source-wordcount: '806'
+ht-degree: 96%
 
 ---
 
@@ -109,7 +109,7 @@ Wiederholen Sie diesen Vorgang für jede Dimension, die zu klassifizierende Date
 
 So fügen Sie den Lookup-Datensatz zu Ihrer Verbindung in Customer Journey Analytics hinzu:
 
-1. Rufen Sie in Customer Journey Analytics die Registerkarte **[!UICONTROL Verbindungen]** auf.
+1. Wählen Sie in Customer Journey Analytics **[!UICONTROL Verbindungen]**, optional unter **[!UICONTROL Datenverwaltung]** im oberen Menü aus.
 
 1. Wählen Sie ![Mehr-Symbol](assets/More.svg) neben der Verbindung, der Sie den Lookup-Datensatz hinzufügen möchten, und klicken Sie dann auf **[!UICONTROL Bearbeiten]**.
 

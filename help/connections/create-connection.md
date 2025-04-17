@@ -5,9 +5,9 @@ exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: c94e97723a4ed30e675144e02196c93016b13235
+source-git-commit: 03e9fb37684f8796a18a76dc0a93c4e14e6e7640
 workflow-type: tm+mt
-source-wordcount: '4902'
+source-wordcount: '4906'
 ht-degree: 83%
 
 ---
@@ -120,7 +120,6 @@ ht-degree: 83%
 >title="Durchschnittliche Anzahl der täglichen Nutzung"
 >abstract="Wählen Sie einen Bereich für die Anzahl der erwarteten täglichen Ereignisse für die gesamte Verbindung."
 
-<!-- markdownlint-enable MD034 -->
 
 
 Beim Workflow für die Erstellung und Bearbeitung von Verbindungen können alle Einstellungen zur Datensatz- und Verbindungskonfiguration mit einem unterstützenden Workflow zentral auf dem Bildschirm durchgeführt werden. Er ermöglicht Ihnen eine präzise Auswahl, Konfiguration und Prüfung von Datensätzen. Außerdem können Sie wichtige Informationen angeben, z. B. Datensatztyp, Größe, Schema, Datensatz-ID, Batch-Status, Aufstockungsstatus, Personen-IDs und vieles mehr, um das Risiko einer falschen Verbindungskonfiguration zu verringern. Im Folgenden finden Sie einen Überblick über die Funktionen:
@@ -154,7 +153,7 @@ Wenden Sie sich an Ihre Admins, wenn Sie sich nicht sicher sind, welches Custome
 
 ## Erstellen und Konfigurieren der Verbindung {#create-connection}
 
-1. Wählen Sie in Customer Journey Analytics **[!UICONTROL Verbindungen]** aus dem Hauptmenü aus.
+1. Wählen Sie in Customer Journey Analytics **[!UICONTROL Verbindungen]**, optional unter **[!UICONTROL Datenverwaltung]** im oberen Menü aus.
 1. Wählen Sie **[!UICONTROL Neue Verbindung erstellen]** aus.
 
 >[!BEGINTABS]
@@ -169,7 +168,7 @@ Wenden Sie sich an Ihre Admins, wenn Sie sich nicht sicher sind, welches Custome
 
 >[!ENDTABS]
 
-Im Bildschirm &quot; **[!UICONTROL Verbindungen]** &quot; > **[!UICONTROL Nicht benannt Verbindungen]** :
+Im Bildschirm **[!UICONTROL Verbindungen]** > **[!UICONTROL Nicht benannte Verbindung]**:
 
 1. Konfigurieren Sie die Verbindungseinstellungen.
 
@@ -177,14 +176,14 @@ Im Bildschirm &quot; **[!UICONTROL Verbindungen]** &quot; > **[!UICONTROL Nicht 
    | --- | --- |
    | **[!UICONTROL Name der Verbindung]** | Geben Sie einen eindeutigen Namen für die Verbindung ein. |
    | **[!UICONTROL Beschreibung der Verbindung]** | Beschreiben Sie den Zweck dieser Verbindung. |
-   | [!BADGE Primäre ID der B2B-Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}<br/>**** | Wählen Sie die richtige primäre ID für Ihre Verbindung aus: <ul><li>![Benutzerperson](/help/assets/icons/User.svg) **** für ein B2C Szenario</li><li> ![Building](/help/assets/icons/Building.svg) **[!UICONTROL Account]** für ein B2B-Szenario.</li></ul> |
+   | [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}<br/>**[!UICONTROL Primäre ID ]** | Wählen Sie die richtige primäre ID für Ihre Verbindung aus: <ul><li>![Benutzer](/help/assets/icons/User.svg) **[!UICONTROL Person]** für ein B2C-Szenario</li><li> ![Building](/help/assets/icons/Building.svg) **[!UICONTROL Account]** für ein B2B-Szenario.</li></ul> |
    | [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}<br/>**[!UICONTROL Optionale Container ]** | Wählen Sie weitere Container aus.<ul><li>**[!UICONTROL Globales Konto]**: ermöglicht die Konfiguration globaler Konten in einer Verbindung.</li><li>**[!UICONTROL Opportunity]**: ermöglicht die Konfiguration von Opportunities in einer Verbindung.</li><li>**[!UICONTROL Käufergruppe]**: ermöglicht die Konfiguration von Käufergruppen in einer Verbindung.</li><ul> |
    | **[!UICONTROL Sandbox]** | Wählen Sie eine Sandbox in Experience Platform aus, die die Datensätze enthält, zu denen Sie eine Verbindung herstellen möchten.<p>Adobe Experience Platform bietet [Sandboxes](https://experienceleague.adobe.com/de/docs/experience-platform/sandbox/home) bereit, die eine einzelne Platform-Instanz in separate virtuelle Umgebungen aufteilen, um die Entwicklung und Weiterentwicklung von Programmen für digitale Erlebnisse zu erleichtern. Sie können sich Sandboxes als „Datensilos“ vorstellen. Sandboxes dienen der Steuerung des Zugriffs auf Datensätze.<p>Nachdem Sie die Sandbox ausgewählt haben, werden in der linken Leiste alle Datensätze in der Sandbox angezeigt, aus denen Sie Daten abrufen können. |
    | **[!UICONTROL Rollierendes Datenfenster aktivieren]** | Wenn diese Option aktiviert ist, können Sie auf Verbindungsebene die Customer Journey Analytics-Datenspeicherung als rollierendes Fenster in Monaten (z. B. 1 Monat, 3 Monate und 6 Monate) definieren.<p>Die Datenaufbewahrung basiert auf Zeitstempeln für Ereignis-Datensätze und gilt nur für Ereignis-Datensätze. Für Profil- oder Lookup-Datensätze gibt es keine rollierenden Datenfenstereinstellungen, da keine entsprechenden Zeitstempel vorhanden sind. Wenn Ihre Verbindung jedoch Profil- oder Suchdatensätze enthält (neben einem oder mehreren Ereignisdatensätzen), werden diese Daten über denselben Zeitraum gespeichert.<p> Der Hauptvorteil besteht darin, dass Sie nur Daten speichern oder Berichte dazu erstellen, die anwendbar und nützlich sind, und ältere Daten löschen, die nicht mehr nützlich sind. Dies hilft Ihnen, Ihre vertraglichen Beschränkungen einzuhalten und das Risiko bezüglich Kostendeckung zu reduzieren.<p>Wenn Sie die Standardeinstellung unverändert (d. h. deaktiviert) lassen, hat die Adobe Experience Platform-Einstellung zur Datenspeicherung Vorrang vor der Aufbewahrungsfrist. Wenn also in Experience Platform Daten von einem Zeitraum von 25 Monaten enthalten sind, erhält Customer Journey Analytics durch Aufstockung Daten von einem Zeitraum von 25 Monaten. Wenn Sie in Platform 10 dieser Monate löschen, werden in Customer Journey Analytics die verbleibenden 15 Monate beibehalten. |
-   | **[!UICONTROL Hinzufügen von Datensätzen]** (siehe unten) | hinzufügen Datasets, wenn in der Datensatz Tabelle keine Datasets vorhanden sind. Andernfalls sehen Sie eine Liste der Datensätze, die Sie bereits im Rahmen der Erstellung der Verbindung hinzugefügt haben. |
+   | **[!UICONTROL Hinzufügen von Datensätzen]** (siehe unten) | Datensätze hinzufügen, wenn in der Datensatztabelle keine Datensätze angezeigt werden. Andernfalls wird eine Liste der Datensätze angezeigt, die Sie bereits beim Erstellen der Verbindung hinzugefügt haben. |
 
 
-   Für die von Ihnen konfigurierten Datensätze zeigt die Tabelle der Datensätze die folgenden Spalten an:
+   Für die von Ihnen konfigurierten Datensätze zeigt die Tabelle der Datensätze die folgenden Spalten:
 
    | Spalte | Beschreibung |
    |---|---|
@@ -197,9 +196,9 @@ Im Bildschirm &quot; **[!UICONTROL Verbindungen]** &quot; > **[!UICONTROL Nicht 
    | **[!UICONTROL Datenquellentyp]** | Der Datenquellentyp des Datensatzes. Gilt nicht für Zusammenfassungsdatensätze. |
    | [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}<br/>**[!UICONTROL Account-ID ]** | Die Konto-ID, die zur Unterstützung des kontobasierten Reportings für den Datensatz verwendet wird. |
    | [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}<br/>**[!UICONTROL Global-Konto-ID ]** | Die globale Konto-ID, die zum Nachschlagen globaler Kontodaten verwendet wird. |
-   | [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL Buying Group ID ]** | Die Einkaufsgruppen-ID, mit der nach Einkaufsgruppendaten gesucht wird. |
-   | [!BADGE B2B edition-]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL -ID ]** | Die Opportunity-ID, die zum Nachschlagen von Opportunity-Daten verwendet wird. |
-   | **[!UICONTROL Personen-ID]** | Die Personen-ID, mit der personenbasierte Berichte für die Datensatz unterstützt werden. |
+   | [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}<br/>**[!UICONTROL Buying Group ID ]** | Die Einkaufsgruppen-ID, mit der nach Einkaufsgruppendaten gesucht wird. |
+   | [!BADGE B2B edition-]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}<br/>**[!UICONTROL -ID ]** | Die Opportunity-ID, die zum Nachschlagen von Opportunity-Daten verwendet wird. |
+   | **[!UICONTROL Personen-ID]** | Die Personen-ID, die zur Unterstützung des personenbasierten Reportings für den Datensatz verwendet wird. |
    | **[!UICONTROL Schlüssel]** | Nur für Lookup-Datensätze (z. B. _id). |
    | **[!UICONTROL Übereinstimmender Schlüssel]** | Nur für Lookup-Datensätze (z. B. _id). |
    | **[!UICONTROL Neue Daten importieren]** | Auf „Ein“ oder „Aus“ einstellen. |
@@ -442,7 +441,6 @@ Im Bildschirm &quot; **[!UICONTROL Verbindungen]** &quot; > **[!UICONTROL Nicht 
 >title="Verbindungszuordnung"
 >abstract="Die Verbindungszuordnung visualisiert die Beziehungen zwischen Ereignis-, Personen-, Konto- und relevanten Lookup-Datensätzen (wie Opportunites, Kampagnenmitgliedern und mehr)."
 
-<!-- markdownlint-enable MD034 -->
 
 
 Mit dem Workflow können Sie beim Erstellen einer Verbindung einen oder mehrere Experience Platform-Datensätze hinzufügen.
@@ -450,7 +448,7 @@ Mit dem Workflow können Sie beim Erstellen einer Verbindung einen oder mehrere 
 
 1. Wählen Sie im Dialogfeld „Verbindungseinstellungen“ die Option **[!UICONTROL Datensätze hinzufügen]** aus.
 
-1. Im Schritt ➊ **[!UICONTROL Datensätze]** auswählen sehen Sie eine Liste der Experience Platform Datensätze.
+1. Im Schritt Auswählen **[!UICONTROL Datensätzen]** wird eine Liste der Experience Platform-Datensätze angezeigt.
 
    ![Auswählen von Datensätzen](assets/select-datasets.png)
 
@@ -475,9 +473,9 @@ Mit dem Workflow können Sie beim Erstellen einer Verbindung einen oder mehrere 
 1. Wählen Sie einen oder mehrere Datensätze und anschließend die Option **[!UICONTROL Weiter]** aus. Sie [ jeden ](#configure-datasets) Datensätze konfigurieren. Mindestens ein Ereignisdatensatz muss Teil der Verbindung sein.
 
 
-## Datensätze konfigurieren
+## Konfigurieren von Datensätzen
 
-Sie konfigurieren jeden der ausgewählten Datensätze nacheinander im Schritt ➋ **[!UICONTROL Datensatzeinstellungen]** des **[!UICONTROL Dialogs hinzufügen Datensätze]** .
+Sie können die einzelnen ausgewählten Datensätze im Schritt „Datensatzeinstellungen **[!UICONTROL des Dialogfelds „Datensätze hinzufügen]** einzeln ****.
 
 >[!BEGINTABS]
 
@@ -495,13 +493,13 @@ Sie konfigurieren jeden der ausgewählten Datensätze nacheinander im Schritt �
 | --- | --- |
 | [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}<br/>**[!UICONTROL Account-ID ]** | Nur für Ereignis-Datensätze und für Lookup-Datensätze verfügbar, die [durch einen Container zugeordnet](/help/getting-started/cja-b2b-concepts-features.md#match-by-container-or-field). Wählen Sie eine Konto-ID (die eindeutige Kennung für ein Konto) aus den verfügbaren Identitäten aus, die im Datensatzschema in Experience Platform definiert sind. |
 | [!BADGE B2B edition-]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}<br/>**[!UICONTROL -ID ]** | Nur für Ereignis-Datensätze verfügbar. Wählen Sie eine Opportunity-ID (die eindeutige Kennung für eine Opportunity) aus den verfügbaren Identitäten aus, die im Datensatzschema in Experience Platform definiert sind. |
-| [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}<br/>**[!UICONTROL Buying Group ID ]** | Nur für Ereignis Datensätze verfügbar. Wählen Sie eine Käufergruppen-ID (die eindeutige Kennung für eine Käufergruppe) aus den verfügbaren Identitäten aus, die im Datensatzschema in Experience Platform definiert sind. |
+| [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}<br/>**[!UICONTROL Buying Group ID ]** | Nur für Ereignis-Datensätze verfügbar. Wählen Sie eine Käufergruppen-ID (die eindeutige Kennung für eine Käufergruppe) aus den verfügbaren Identitäten aus, die im Datensatzschema in Experience Platform definiert sind. |
 | **[!UICONTROL Personen-ID]** | Nur für Ereignis- und Profildatensätze verfügbar. Wählen Sie eine Personen-ID aus der Dropdown-Liste der verfügbaren Identitäten aus. Diese Identitäten wurden im Datensatzschema in Experience Platform definiert. Weitere Informationen zur Verwendung von Identity Map als Personen-ID finden Sie weiter unten.<p>Wenn keine Personen-IDs zur Auswahl stehen, bedeutet das, dass eine oder mehrere Personen-IDs im Schema nicht definiert wurden. Weitere Informationen finden Sie unter [Definieren von Identitätsfeldern in der Benutzeroberfläche](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/ui/fields/identity). <p>Beim Wert für die ausgewählte Personen-ID wird zwischen Groß- und Kleinschreibung unterschieden. Beispielsweise sind `abc123` und `ABC123` zwei verschiedene Werte. |
 | **[!UICONTROL Zeitstempel]** | Nur für Ereignis- und Zusammenfassungsdatensätze wird diese Einstellung automatisch auf das standardmäßige Zeitstempelfeld von ereignisbasierten Schemata in Experience Platform gesetzt. |
 | **[!UICONTROL Schlüssel]** | Nur für Lookup-Datensätze verfügbar. Der für einen Lookup-Datensatz zu verwendende Schlüssel. |
 | [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"} **[!UICONTROL übereinstimmender Schlüsseltyp]** | Auswählen, wie die Datensätze verbunden werden sollen: basierend auf einem Feld **[!UICONTROL Übereinstimmung nach]** oder **[!UICONTROL Übereinstimmung nach Container]**. Weitere Informationen finden [ unter „Übereinstimmung nach ](/help/getting-started/cja-b2b-concepts-features.md#match-by-container-or-field) des Felds“. |
-| **[!UICONTROL Passender Schlüssel]** | Nur für Such- oder Profildatensätze verfügbar. Der passende Schlüssel, der in einem der Ereignisdatensätze hinzugefügt werden soll. Wenn diese Liste leer ist, haben Sie wahrscheinlich keinen Ereignis-Datensatz hinzugefügt oder konfiguriert. <br/><br/>[!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}<br/>Wählen Sie je nach ausgewähltem **[!UICONTROL übereinstimmender]**) den entsprechenden Wert aus:<ul><li>**[!UICONTROL Übereinstimmung nach Feld]**: Wählen Sie ein Feld aus, das mit einem der Ereignis Datensätze verknüpft werden soll. Wenn diese Liste leer ist, haben Sie wahrscheinlich keinen Ereignisdatensatz hinzugefügt oder konfiguriert.</li><li>**[!UICONTROL Nach Container]** abgleichen: Wählen Sie eine Container aus, die für die Verbindung mit einem der Ereignis Datensätze verwendet werden soll. Die zur Auswahl stehenden Container werden durch die Container bestimmt, die Sie im Rahmen der Verbindungseinrichtung eingeschlossen haben. Wenn diese Liste leer ist, haben Sie wahrscheinlich keinen oder mehrere Container konfiguriert.</li></ul> |
-| [!BADGE Feld &quot;B2B Edition-Konto]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL &quot;]** | Die Konto-ID, die für das kontobasierte Reporting verwendet werden soll. |
+| **[!UICONTROL Passender Schlüssel]** | Nur für Such- oder Profildatensätze verfügbar. Der passende Schlüssel, der in einem der Ereignisdatensätze hinzugefügt werden soll. Wenn diese Liste leer ist, haben Sie wahrscheinlich keinen Ereignis-Datensatz hinzugefügt oder konfiguriert. <br/><br/>[!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}<br/>Wählen Sie je nach ausgewähltem **[!UICONTROL übereinstimmender]**) den entsprechenden Wert aus:<ul><li>**[!UICONTROL Übereinstimmung nach Feld]**: Wählen Sie ein Feld aus, das mit einem der Ereignisdatensätze verbunden werden soll. Wenn diese Liste leer ist, haben Sie wahrscheinlich keinen Ereignisdatensatz hinzugefügt oder konfiguriert.</li><li>**[!UICONTROL Übereinstimmung nach Container]**: Wählen Sie einen Container aus, der zum Verbinden mit einem der Ereignisdatensätze verwendet werden soll. Die Container, die ausgewählt werden können, werden durch die Container bestimmt, die Sie beim Einrichten der Verbindung einbezogen haben. Wenn diese Liste leer ist, haben Sie wahrscheinlich keinen oder mehrere Container konfiguriert.</li></ul> |
+| Feld {0]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}<br/>**[!UICONTROL B2B edition-Konto ]**[!BADGE  | Die Konto-ID, die für das kontobasierte Reporting verwendet werden soll. |
 | **[!UICONTROL Zeitzone]** | Nur für Zusammenfassungsdaten verfügbar. Wählen Sie die entsprechende Zeitzone für die Zeitreihen-Zusammenfassungsdaten aus. |
 | **[!UICONTROL Datenquellentyp]** | Wählen Sie einen Datenquellentyp aus. <br/>Hierzu gehören: <ul><li>[!UICONTROL Web-Daten]</li><li>[!UICONTROL App-Daten]</li><li>[!UICONTROL PoS-Daten]</li><li>[!UICONTROL CRM-Daten]</li><li>[!UICONTROL Umfragedaten]</li><li>[!UICONTROL Callcenter-Daten]</li><li>[!UICONTROL Produktdaten]</li><li> [!UICONTROL Kontodaten]</li><li> [!UICONTROL Transaktionsdaten]</li><li>[!UICONTROL Kunden-Feedback-Daten]</li><li> [!UICONTROL Sonstige]</li></ul>Dieses Feld wird verwendet, um sich einen Überblick über die verwendeten Datenquellen zu verschaffen. |
 | **[!UICONTROL Importieren neuer Daten]** | Aktivieren Sie diese Option, wenn eine fortlaufende Verbindung hergestellt werden soll. Mit einer fortlaufenden Verbindung sind neue Daten-Batches, die den Datensätzen hinzugefügt werden, automatisch in Workspace verfügbar. |
@@ -509,18 +507,18 @@ Sie konfigurieren jeden der ausgewählten Datensätze nacheinander im Schritt �
 | **[!UICONTROL Datensatz transformieren]** | Für bestimmte B2B-Lookup-Datensätze können Sie die Umwandlung eines Datensatzes für geeignete personenbasierte B2B-Reporting-Szenarien aktivieren. Weitere Informationen finden Sie unter [Umwandeln von Datensätzen für B2B-Suchen](transform-datasets-b2b-lookups.md). |
 | **[!UICONTROL Batch-Status]** | Mögliche Statusindikatoren sind:<ul><li>Erfolgreich</li><li>X Aufstockung(en) werden verarbeitet</li><li>Aus</li></ul> |
 | **[!UICONTROL Datensatz-ID]** | Diese ID wird automatisch generiert. |
-| **[!UICONTROL Beschreibung]** | Die Beschreibung, die diesem Datensatz beim Erstellen der Datensatz gegeben wurde. |
+| **[!UICONTROL Beschreibung]** | Die Beschreibung, die diesem Datensatz bei der Erstellung des Datensatzes gegeben wurde. |
 | **[!UICONTROL Anzahl der Datensätze]** | Die Größe des Datensatzes. |
 | **[!UICONTROL Schema]** | Das Schema, auf dessen Grundlage der Datensatz in Adobe Experience Platform erstellt wurde. |
 | **[!UICONTROL Datensatz]** | Der Name des Datensatzes. |
 | **[!UICONTROL Vorschau: *Datensatzname *]** | Vorschau des Datensatzes für die ersten 10 Zeilen und die ersten 10 Spalten. |
-| **[!UICONTROL Entfernen]** | Sie können den Datensatz löschen oder entfernen und die [!UICONTROL Personen-ID] oder [!UICONTROL Konto-ID] [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} ändern, ohne die gesamte Verbindung zu löschen. Durch Löschen oder Entfernen reduzieren sich die Kosten für die Datenaufnahme sowie der aufwändige Prozess der Neuerstellung der gesamten Verbindung und der zugehörigen Datenansichten. |
+| **[!UICONTROL Entfernen]** | Sie können den Datensatz löschen oder entfernen und die [!UICONTROL Personen-ID] oder [!UICONTROL Konto-ID] [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"} ändern, ohne die gesamte Verbindung zu löschen. Durch Löschen oder Entfernen reduzieren sich die Kosten für die Datenaufnahme sowie der aufwändige Prozess der Neuerstellung der gesamten Verbindung und der zugehörigen Datenansichten. |
 
 {style="table-layout:auto"}
 
 ## Verbindungsvorschau {#preview}
 
-Um die von Ihnen erstellte Verbindung zu Vorschau, wählen Sie im Dialogfeld Verbindung Einstellungen die Option PageSearch **(/help/assets/icons/PageSearch.svg) Verbindung Vorschau]** aus![.
+Um die von Ihnen erstellte Verbindung in der Vorschau anzuzeigen, wählen Sie ![PageSearch](/help/assets/icons/PageSearch.svg) **[!UICONTROL Verbindungsvorschau]** im Dialogfeld Verbindungseinstellungen aus.
 
 ![Verbindungsvorschau](assets/create-conn4.png)
 
@@ -529,13 +527,13 @@ Diese Vorschau enthält einige Spalten zur Verbindungskonfiguration. Welche Spal
 
 ## Verbindungszuordnung
 
-[!BADGE B2B Auflage]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}
+[!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}
 
-Um eine Karte der Beziehungen zwischen den Datasets anzuzeigen, die Teil Ihrer Verbindung sind, wählen Sie im Dialogfeld Verbindung Einstellungen die Option GraphPathing **(/help/assets/icons/GraphPathing.svg) Verbindung Karte]** aus![.
+Um eine Zuordnung der Beziehungen zwischen den Datensätzen anzuzeigen, die Teil Ihrer Verbindung sind, wählen Sie ![GraphPathing](/help/assets/icons/GraphPathing.svg) **[!UICONTROL Verbindungszuordnung]** im Dialogfeld Verbindungseinstellungen aus.
 
-![Verbindung Karte](assets/connectionmap.png)
+![Verbindungszuordnung](assets/connectionmap.png)
 
-Diese Karte hilft Ihnen, besser zu verstehen, wie Sie Ihre Verbindung definiert und die Beziehung zwischen Ihren Ereignis-, Profil- und Suchdatensätzen mithilfe von Kennungen eingerichtet haben.
+Diese Zuordnung hilft Ihnen, ein besseres Verständnis davon zu erhalten, wie Sie Ihre Verbindung definiert haben, und die Beziehung zwischen Ihren Ereignis-, Profil- und Lookup-Datensätzen mithilfe von Kennungen einzurichten.
 
 ## Datensatztypen {#dataset-types}
 
@@ -547,16 +545,16 @@ Diese Karte hilft Ihnen, besser zu verstehen, wie Sie Ihre Verbindung definiert 
 
 Es gibt verschiedene Datensatztypen: [!UICONTROL Ereignis]-, [!UICONTROL Profil], [!UICONTROL Lookup]- und [!UICONTROL Zusammenfassungsdaten].
 
-| Typ des Datensatzes | Beschreibung | Zeitstempel | Schema | Personen-ID <br/> Konto-ID [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} |
+| Typ des Datensatzes | Beschreibung | Zeitstempel | Schema | Personen-ID <br/> Konto-ID [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"} |
 |---|---|---|---|---|
-| **[!UICONTROL Ereignis]** | Daten, die Ereignisse im Laufe der Zeit darstellen. Beispiele hierfür sind Web-Besuche, Interaktionen, Transaktionen, PoS-Daten, Umfragedaten, Ad-Impression-Daten usw. Diese Daten können etwa typische Clickstream-Daten mit einer Kunden- oder Cookie-ID und einem Zeitstempel sein. Bei Ereignisdaten können Sie entscheiden, welche ID als Personen-ID verwendet wird. | Wird automatisch auf das standardmäßige Zeitstempelfeld von ereignisbasierten Schemata in [!UICONTROL Experience Platform] gesetzt. | Jedes integrierte oder benutzerdefinierte Schema, das auf einer XDM-Klasse mit dem Verhalten „Zeitreihen“ basiert. Beispiele sind „XDM-Erlebnisereignis“ oder „XDM-Entscheidungsereignis“. | Sie können auswählen, welche Personen-ID oder Konto-ID [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}  Sie einschließen möchten. Für jedes in Experience Platform definierte Datensatzschema kann ein eigener Satz von einer oder mehreren Identitäten definiert und mit einem Identity-Namespace verknüpft werden. Jede dieser Identitäten kann als Personen-ID oder Konto-ID [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"} verwendet werden. Beispiele sind Cookie-ID, zugewiesene ID, Benutzer-ID, Tracking-Symbol, Konto-ID [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"} usw. |
+| **[!UICONTROL Ereignis]** | Daten, die Ereignisse im Laufe der Zeit darstellen. Beispiele hierfür sind Web-Besuche, Interaktionen, Transaktionen, PoS-Daten, Umfragedaten, Ad-Impression-Daten usw. Diese Daten können etwa typische Clickstream-Daten mit einer Kunden- oder Cookie-ID und einem Zeitstempel sein. Bei Ereignisdaten können Sie entscheiden, welche ID als Personen-ID verwendet wird. | Wird automatisch auf das standardmäßige Zeitstempelfeld von ereignisbasierten Schemata in [!UICONTROL Experience Platform] gesetzt. | Jedes integrierte oder benutzerdefinierte Schema, das auf einer XDM-Klasse mit dem Verhalten „Zeitreihen“ basiert. Beispiele sind „XDM-Erlebnisereignis“ oder „XDM-Entscheidungsereignis“. | Sie können auswählen, welche Personen-ID oder Konto-ID [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"} Sie einbeziehen möchten. Für jedes in Experience Platform definierte Datensatzschema kann ein eigener Satz von einer oder mehreren Identitäten definiert und mit einem Identity-Namespace verknüpft werden. Jede dieser Identitäten kann als Personen-ID oder Konto-ID [!BADGE B2B edition verwendet ]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}. Beispiele sind Cookie-ID, zugeordnete ID, Benutzer-ID, Trackingcode, Konto-ID [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"} usw. |
 | **[!UICONTROL Suche]** | Sie können Datensätze als Suchvorgänge von Feldern in allen Datensatztypen hinzufügen: Profil-, Lookup- und Ereignisdatensätze. (Letztere wurden immer unterstützt.) Diese zusätzliche Funktion erweitert die Fähigkeit von Customer Journey Analytics, komplexe Datenmodelle, einschließlich B2B, zu unterstützen. Diese Daten werden verwendet, um nach Werten oder Schlüsseln in Ihren Ereignis-, Profil- oder Suchdaten zu suchen. Sie können bis zu zwei Ebenen von Suchvorgängen hinzufügen. (Beachten Sie Folgendes: [Abgeleitete Felder](/help/data-views/derived-fields/derived-fields.md) können nicht als übereinstimmende Schlüssel für die Suche in Verbindungen verwendet werden.) Beispielsweise können Sie Suchdaten hochladen, die numerische IDs in Ihren Ereignisdaten Produktnamen zuordnen. Sehen Sie sich hierfür das [B2B-Beispiel](/help/use-cases/b2b/example.md) an. | -/- | Jedes integrierte oder benutzerdefinierte Schema, das auf einer XDM-Klasse mit dem Verhalten „Eintrag“ basiert, mit Ausnahme der Klasse „XDM-Individuelles Profil“. | -/- |
-| **[!UICONTROL Profil]** | Daten, die in den (Ereignis-)Daten auf Ihr Konto, Personen, Benutzer oder [!UICONTROL  angewendet ]. Sie können beispielsweise CRM-Daten zu Ihren Kunden hochladen. | -/- | Jedes integrierte oder benutzerdefinierte Schema, das auf der Klasse „XDM-Individuelles Profil“ basiert. | Sie können auswählen, welche Personen-ID/Konto-ID [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} Sie einbeziehen möchten. Jeder Datensatz (mit Ausnahme von Zusammenfassungsdatensätzen), der in [!DNL Experience Platform] definiert ist, verfügt über einen eigenen Satz von einer oder mehreren definierten Personen-IDs oder Konto-IDs [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}. Beispielsweise Cookie-ID, zugeordnete ID, Benutzer-ID, Trackingcode-Konto-ID usw.<br>![Personen-ID ](assets/person-id.png)**Hinweis**: Wenn Sie eine Verbindung erstellen, die Datensätze mit unterschiedlichen IDs enthält, spiegelt sich dies in der Berichterstattung wider. Zum Zusammenführen von Datensätzen müssen Sie dieselbe Personen- oder Konto-ID [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} verwenden. |
+| **[!UICONTROL Profil]** | Daten, die in den (Ereignis-)Daten auf Ihr Konto, Personen, Benutzer oder [!UICONTROL  angewendet ]. Sie können beispielsweise CRM-Daten zu Ihren Kunden hochladen. | -/- | Jedes integrierte oder benutzerdefinierte Schema, das auf der Klasse „XDM-Individuelles Profil“ basiert. | Sie können auswählen, welche Personen-ID/Konto-ID [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"} Sie einbeziehen möchten. Jeder Datensatz (mit Ausnahme von Zusammenfassungsdatensätzen), der in [!DNL Experience Platform] definiert ist, verfügt über einen eigenen Satz von einer oder mehreren definierten Personen-IDs oder Konto-IDs [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}. Beispielsweise Cookie-ID, zugeordnete ID, Benutzer-ID, Trackingcode-Konto-ID usw.<br>![Personen-ID ](assets/person-id.png)**Hinweis**: Wenn Sie eine Verbindung erstellen, die Datensätze mit unterschiedlichen IDs enthält, spiegelt sich dies in der Berichterstattung wider. Zum Zusammenführen von Datensätzen müssen Sie dieselbe Personen-ID oder Konto-ID [!BADGE B2B edition verwenden]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}. |
 | **Zusammenfassung** | Zeitreihendaten, die nicht an eine einzelne Personen-ID gebunden sind. Zusammenfassungsdaten stellen aggregierte Daten auf einer anderen Aggregationsebene dar, z. B. Kampagnen. Sie können diese Daten im Customer Journey Analytics verwenden, um verschiedene Anwendungsfälle zu unterstützen. Weitere Informationen finden Sie [Zusammenfassungsdaten](/help/data-views/summary-data.md). | Wird automatisch auf das standardmäßige Zeitstempelfeld von ereignisbasierten Schemata des Typs „Zusammenfassungsmetriken“ in Experience Platform gesetzt. Es wird nur die Granularität „Stündlich“ oder „Täglich“ unterstützt. | Jedes integrierte oder benutzerdefinierte Schema, das auf der Klasse „XDM-Zusammenfassungsmetriken“ basiert. | -/- |
 
 >[!MORELIKETHIS]
 >
->Blog: [Nutzung von Ereignis-, Such- und Profildatensätzen in Adobe Systems Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/how-to-leverage-event-lookup-and-profile-datasets-in-adobe/ba-p/681478)
+>Blog: [So nutzen Sie Ereignis-, Lookup- und Profildatensätze in Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/how-to-leverage-event-lookup-and-profile-datasets-in-adobe/ba-p/681478)
 
 ## Verwenden von numerischen Feldern als Suchschlüssel und Nachschlagewerte {#numeric}
 

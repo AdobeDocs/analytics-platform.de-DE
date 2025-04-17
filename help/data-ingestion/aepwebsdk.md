@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: 0b595e9e-0dcf-4c70-ac6d-5a2322824328
 role: Admin
-source-git-commit: 9849d686e886426124842ce210b423ac6c74fb89
+source-git-commit: 03e9fb37684f8796a18a76dc0a93c4e14e6e7640
 workflow-type: tm+mt
-source-wordcount: '3543'
-ht-degree: 83%
+source-wordcount: '3551'
+ht-degree: 88%
 
 ---
 
@@ -34,7 +34,7 @@ Gehen Sie dazu folgendermaßen vor:
 
 >[!NOTE]
 >
-> Diese Kurzanleitung ist eine vereinfachte Anleitung zur Aufnahme von auf Ihrer Site erfassten Daten in Adobe Experience Platform und deren Verwendung im Customer Journey Analytics. Es wird dringend empfohlen, die zusätzlichen Artikel zu lesen, auf die verwiesen wird.
+> Diese Kurzanleitung ist eine vereinfachte Anleitung zur Aufnahme von auf Ihrer Site erfassten Daten in Adobe Experience Platform und deren Verwendung in Customer Journey Analytics. Es wird dringend empfohlen, die zusätzlichen Artikel zu lesen, auf die verwiesen wird.
 
 
 ## Einrichten eines Schemas und eines Datensatzes
@@ -60,20 +60,20 @@ Gehen Sie folgendermaßen vor, um das Schema einzurichten:
 
    1. Wählen Sie **[!UICONTROL Erlebnisereignis]** aus.
 
-      ![Erstellen eines Schemas mit hervorgehobenen Erlebnisereignissen](./assets/create-ee-schema-wizard-step-1.png)
+      ![Erstellen eines Schemas mit hervorgehobenem Erlebnisereignis](./assets/create-ee-schema-wizard-step-1.png)
 
       >[!INFO]
       >
-      >    Ein Erlebnisereignis-Schema wird zum Modellieren des _Verhaltens_ eines Profils verwendet (z. B. Szenenname, zum Warenkorb hinzuzufügende Schaltfläche). Das Schema „Individuelles Profil“ wird verwendet, um die _Attribute_ eines Profils zu modellieren (z. B. Name, E-Mail, Geschlecht).
+      >    Ein Erlebnisereignis-Schema wird zum Modellieren des _Verhaltens_ eines Profils verwendet (z. B. Szenenname, Schaltfläche zum Hinzufügen von Artikeln zum Warenkorb). Das Schema „Individuelles Profil“ wird verwendet, um die _Attribute_ eines Profils zu modellieren (z. B. Name, E-Mail, Geschlecht).
 
    1. Klicken Sie auf **[!UICONTROL Weiter]**.
 
 
-1. Im Schritt [!UICONTROL Name und Überprüfung] des Assistenten [!UICONTROL Schema erstellen]:
+1. Im [!UICONTROL Schritt „Name und Überprüfung“] des Assistenten [!UICONTROL Schema erstellen]:
 
-   1. Geben Sie einen **[!UICONTROL Anzeigenamen des Schemas]** für Ihr Schema und (optional) eine **[!UICONTROL Beschreibung]** ein.
+   1. Geben Sie einen **[!UICONTROL Schema-Anzeigenamen]** für Ihr Schema und (optional) eine **[!UICONTROL Beschreibung]** ein.
 
-      ![Fenster Schema erstellen mit dem Namen Ihrer Schemafelder](./assets/create-ee-schema-wizard-step-2.png)
+      ![Fenster „Schema erstellen“ mit dem Namen Ihrer Schemafelder](./assets/create-ee-schema-wizard-step-2.png)
 
    1. Wählen Sie **[!UICONTROL Beenden]** aus.
 
@@ -105,11 +105,11 @@ Gehen Sie folgendermaßen vor, um das Schema einzurichten:
 
    >[!NOTE]
    >
-   >Wenn diese Feldergruppe nicht verfügbar ist, suchen Sie nach einer anderen Feldergruppe, die Identitätsfelder enthält. Oder [eine neue Feldergruppe erstellen](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/field-groups.html) und [neue Identitätsfelder hinzufügen](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/identity.html#define-a-identity-field) (z. B. `ecid`, `crmId` und andere benötigte) zur Feldergruppe hinzufügen und diese neue Feldergruppe auswählen.
+   >Wenn diese Feldgruppe nicht verfügbar ist, suchen Sie nach einer anderen Feldgruppe mit Identitätsfeldern. Oder [erstellen Sie eine neue Feldgruppe](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/ui/resources/field-groups) und [fügen Sie neue Identitätsfelder](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/ui/fields/identity#define-a-identity-field) (z. B. `ecid`, `crmId` und andere benötigte Felder) zur Feldgruppe hinzu und wählen Sie diese neue Feldgruppe aus.
 
    ![Identifizierungsobjekt](./assets/identification-field.png)
 
-   Das Identifizierungsobjekt fügt Ihrem Schema Identifizierungsfunktionen hinzu. In Ihrem Fall möchten Sie Profile, die Ihre Site besuchen, mithilfe der Experience Cloud-ID und der E-Mail-Adresse identifizieren. Es stehen eine Vielzahl weiterer Attribute zur Verfügung, um die Identifizierung Ihrer Person zu verfolgen (z. B. Kunden-ID, Treueprogramm-ID).
+   Das Identifizierungsobjekt fügt Ihrem Schema Identifizierungsfunktionen hinzu. In Ihrem Fall möchten Sie Profile, die Ihre Website besuchen, mithilfe der Experience Cloud-ID und der E-Mail-Adresse identifizieren. Daneben stehen auch noch viele weitere Attribute zum Tracken der Personenidentifizierung zur Verfügung (z. B. Kunden-ID, Treueprogramm-ID).
 
    Wählen Sie **[!UICONTROL Anwenden]** aus, um dieses Objekt zu Ihrem Schema hinzuzufügen.
 
@@ -135,7 +135,7 @@ Gehen Sie folgendermaßen vor, um das Schema einzurichten:
 
    Sie werden aufgefordert, das Schema für das Profil zu aktivieren. Nach der Aktivierung werden Daten, die auf der Basis dieses Schemas in Datensätze aufgenommen werden, zum Echtzeit-Kundenprofil hinzugefügt.
 
-   Weitere Informationen finden Sie im Abschnitt [Aktivieren des Schemas zur Verwendung im Echtzeit-Kundenprofil](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html#profile).
+   Weitere Informationen finden Sie im Abschnitt [Aktivieren des Schemas zur Verwendung im Echtzeit-Kundenprofil](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/tutorials/create-schema-ui#profile).
 
    >[!IMPORTANT]
    >
@@ -157,7 +157,7 @@ Um diese Profildaten zu erfassen, gehen Sie folgendermaßen vor:
 
 - Fügen Sie ein Identifizierungsobjekt hinzu, das auf der Feldergruppe „Profile Core v2“ basiert.
 
-- Experience Cloud-ID als primäre Kennung und E-Mail als Kennung definieren.
+- Definieren Sie die Experience Cloud-ID als primäre Kennung und die E-Mail als Kennung.
 
 - Aktivieren Sie dieses Schema für das Profil
 
@@ -201,7 +201,7 @@ Im [Handbuch zur Datensatz-Benutzeroberfläche](https://experienceleague.adobe.c
 
 ## Einrichten eines Datenstroms
 
-Ein Datenstrom stellt die Server-seitige Konfiguration bei der Implementierung der Adobe Experience Platform Web- und Mobile-SDKs dar. Beim Erfassen von Daten mit den Adobe Experience Platform SDKs werden Daten an das Adobe Experience Platform Edge Network gesendet. Es ist der Datenstrom, der bestimmt, an welche Services diese Daten weitergeleitet werden.
+Ein Datenstrom stellt die Server-seitige Konfiguration bei der Implementierung der Adobe Experience Platform Web- und Mobile-SDKs dar. Beim Erfassen von Daten mit den Adobe Experience Platform SDKs werden Daten an das Adobe Experience Platform Edge Network gesendet. Dabei bestimmt der Datenstrom, an welche Dienste diese Daten weitergeleitet werden.
 
 Im vorliegenden Beispiel möchten Sie, dass die auf der Website erfassten Daten an Ihren Datensatz in Adobe Experience Platform gesendet werden.
 
@@ -260,7 +260,7 @@ Wählen Sie das neu erstellte Tag aus der Liste der [!UICONTROL Tag-Eigenschafte
 
 #### **Erweiterungen**
 
-Um sicherzustellen, dass Sie Daten (über Ihren Datenstrom) an Adobe Experience Platform senden können, fügen Sie Ihrem Tag die Erweiterung Adobe Platform Web SDK hinzu.
+Um sicherzustellen, dass Sie Daten (über Ihren Datenstrom) an Adobe Experience Platform senden können, fügen Sie Ihrem Tag die Adobe Platform Web SDK-Erweiterung hinzu.
 
 Gehen Sie folgendermaßen vor, um die Adobe Experience Platform Web SDK-Erweiterung zu erstellen und zu konfigurieren:
 
@@ -280,7 +280,7 @@ Gehen Sie folgendermaßen vor, um die Adobe Experience Platform Web SDK-Erweiter
 
 Weitere Informationen finden Sie unter [Konfigurieren der Adobe Experience Platform Web SDK-Erweiterung](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration.html).
 
-Der Web-SDK enthält nativ den [!UICONTROL Adobe Experience Cloud ID]Service, sodass Sie die ID-Service-Erweiterung nicht zu Ihrem Tag hinzufügen müssen.
+Das Web SDK enthält nativ den [!UICONTROL Adobe Experience Cloud ID Service], sodass Sie die ID-Service-Erweiterung nicht zu Ihrem Tag hinzufügen müssen.
 
 #### **Datenelemente**
 
@@ -493,7 +493,7 @@ Mithilfe einer Verbindung können Sie Datensätze aus Adobe Experience Platform 
 
 Gehen Sie folgendermaßen vor, um eine Verbindung zu erstellen:
 
-1. Wählen Sie in der Customer Journey Analytics-Benutzeroberfläche die Option **[!UICONTROL Verbindungen]** in der oberen Navigation aus.
+1. Wählen Sie in der Benutzeroberfläche von Customer Journey Analytics **[!UICONTROL Verbindungen]**, optional unter **[!UICONTROL Datenverwaltung]** im oberen Menü aus.
 
 2. Wählen Sie **[!UICONTROL Neue Verbindung erstellen]** aus.
 
@@ -539,7 +539,7 @@ Eine Datenansicht ist ein für Customer Journey Analytics spezifischer Container
 
 Gehen Sie folgendermaßen vor, um eine Datenansicht zu erstellen:
 
-1. Wählen Sie in der Customer Journey Analytics-Benutzeroberfläche die Option **[!UICONTROL Datenansichten]** in der oberen Navigationsleiste.
+1. Wählen Sie in der Customer Journey Analytics **[!UICONTROL Benutzeroberfläche im oberen Menü]** Datenansichten **[!UICONTROL optional unter Datenverwaltung]** aus.
 
 2. Wählen Sie **[!UICONTROL Neue Datenansicht erstellen]**.
 
@@ -576,7 +576,7 @@ Analysis Workspace ist ein flexibles Browsertool, mit dem Sie schnell Analysen e
 
 Gehen Sie folgendermaßen vor, um ein Projekt zu erstellen:
 
-1. Wählen Sie in der Customer Journey Analytics-Benutzeroberfläche die Option **[!UICONTROL Projekte]** in der oberen Navigationsleiste.
+1. Wählen Sie in der Benutzeroberfläche von Customer Journey Analytics **[!UICONTROL Projekte]** im oberen Menü aus.
 
 2. Wählen Sie **[!UICONTROL Projekte]** in der linken Navigation aus.
 
@@ -600,4 +600,4 @@ Weitere Informationen zum Erstellen von Projekten und zum Durchführen einer Ana
 
 >[!SUCCESS]
 >
->Sie haben jetzt alle Schritte ausgeführt. Definieren Sie zunächst, welche Daten erfasst werden sollen (Schema) und wo sie in Adobe Experience Platform gespeichert werden sollen (Datensatz). Anschließend haben Sie einen Datenstrom auf dem Edge Network konfiguriert, um sicherzustellen, dass Daten an diesen Datensatz weitergeleitet werden können. Anschließend haben Sie Ihr Tag definiert und bereitgestellt. Dieses enthält die Erweiterungen (Adobe Experience Platform Web SDK, Experience Cloud ID Service), Datenelemente und Regeln, anhand derer Daten auf Ihrer Website erfasst und an Ihren Datenstrom weitergeleitet werden. Sie haben eine Verbindung in Customer Journey Analytics definiert, um Ihre Website-Tracking-Daten und andere Daten zu verwenden. Durch die Definition Ihrer Datenansicht konnten Sie festlegen, welche Dimension und Metriken verwendet werden sollen. Abschließend haben Sie Ihr erstes Projekt erstellt, in dem Ihre Daten visualisiert und analysiert wurden.
+>Sie haben jetzt alle Schritte ausgeführt. Definieren Sie zunächst, welche Daten erfasst werden sollen (Schema) und wo sie in Adobe Experience Platform gespeichert werden sollen (Datensatz). Anschließend haben Sie einen Datenstrom auf der Edge Network konfiguriert, um sicherzustellen, dass Daten an diesen Datensatz weitergeleitet werden können. Anschließend haben Sie Ihr Tag definiert und bereitgestellt. Dieses enthält die Erweiterungen (Adobe Experience Platform Web SDK, Experience Cloud ID Service), Datenelemente und Regeln, anhand derer Daten auf Ihrer Website erfasst und an Ihren Datenstrom weitergeleitet werden. Sie haben eine Verbindung in Customer Journey Analytics definiert, um Ihre Website-Tracking-Daten und andere Daten zu verwenden. Durch die Definition Ihrer Datenansicht konnten Sie festlegen, welche Dimension und Metriken verwendet werden sollen. Abschließend haben Sie Ihr erstes Projekt erstellt, in dem Ihre Daten visualisiert und analysiert wurden.

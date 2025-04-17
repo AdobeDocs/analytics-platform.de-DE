@@ -6,9 +6,10 @@ solution: Customer Journey Analytics
 feature: Use Cases
 hidefromtoc: true
 hide: true
-source-git-commit: d71f39d25c52b0389d0441f238cb5b1809986b2d
+exl-id: ea8795fe-f5aa-458f-9e01-53ff1ffe6372
+source-git-commit: 03e9fb37684f8796a18a76dc0a93c4e14e6e7640
 workflow-type: tm+mt
-source-wordcount: '405'
+source-wordcount: '413'
 ht-degree: 1%
 
 ---
@@ -34,7 +35,7 @@ Weitere Informationen finden Sie unter {](https://experienceleague.adobe.com/en/
 Beim Erstellen eines Quell-Connectors für Quantum-Metrikdaten wird automatisch ein Datensatz in Adobe Experience Platform erstellt. Fügen Sie diesen Datensatz zu einer neuen oder vorhandenen [Verbindung](/help/connections/overview.md) in Customer Journey Analytics hinzu.
 
 1. Melden Sie sich bei &quot;[.adobe.com“ ](https://experience.adobe.com).
-1. Navigieren Sie zu Customer Journey Analytics und wählen **[!UICONTROL Verbindungen]** im oberen Menü aus.
+1. Navigieren Sie zu Customer Journey Analytics und wählen **[!UICONTROL Verbindungen]** optional unter **[!UICONTROL Daten-Management]** im oberen Menü aus.
 1. Geben Sie der Verbindung einen Namen und fügen Sie den Quantum-Metrik-Datensatz zur Verbindung hinzu.
 1. Klicken Sie auf **[!UICONTROL Speichern]**.
 
@@ -46,7 +47,7 @@ Beim Erstellen eines Quell-Connectors für Quantum-Metrikdaten wird automatisch 
 Erstellen Sie eine [Datenansicht](/help/data-views/data-views.md) um Dimensions- und Metrikeinstellungen zu konfigurieren.
 
 1. Melden Sie sich bei &quot;[.adobe.com“ ](https://experience.adobe.com).
-1. Navigieren Sie zu Customer Journey Analytics und wählen **[!UICONTROL Datenansichten]** im oberen Menü aus.
+1. Navigieren Sie zu Customer Journey Analytics und wählen **[!UICONTROL Datenansichten]** optional unter **[!UICONTROL Daten-Management]** im oberen Menü aus.
 1. Wählen Sie die gewünschte Datenansicht aus oder erstellen Sie eine Datenansicht.
 1. Suchen Sie die gewünschten Quantenmetrik -Dimensionen und -Metriken in der Liste Schemafelder auf der rechten Seite und ziehen Sie sie in den Bereich Dimensionen und Metriken in der Mitte.
 1. Verwenden Sie den rechten Bereich, um jede gewünschte Dimension und Metrik zu konfigurieren.

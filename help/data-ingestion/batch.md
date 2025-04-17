@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: dd46adee-821f-489c-9350-abcfffe7cc3c
 role: Admin
-source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
+source-git-commit: 03e9fb37684f8796a18a76dc0a93c4e14e6e7640
 workflow-type: tm+mt
-source-wordcount: '1948'
-ht-degree: 87%
+source-wordcount: '1956'
+ht-degree: 88%
 
 ---
 
@@ -30,7 +30,7 @@ Gehen Sie dazu folgendermaßen vor:
 
 >[!NOTE]
 >
->Diese Kurzanleitung ist eine vereinfachte Anleitung zur Aufnahme von Batch-Daten in Adobe Experience Platform und deren Verwendung im Customer Journey Analytics. Es wird dringend empfohlen, die zusätzlichen Artikel zu lesen, auf die verwiesen wird.
+>Diese Kurzanleitung ist eine vereinfachte Anleitung zur Aufnahme von Batch-Daten in Adobe Experience Platform und deren Verwendung in Customer Journey Analytics. Es wird dringend empfohlen, die zusätzlichen Artikel zu lesen, auf die verwiesen wird.
 
 ## Einrichten eines Schemas und eines Datensatzes
 
@@ -59,14 +59,14 @@ Gehen Sie folgendermaßen vor, um das Schema einzurichten:
 
       >[!INFO]
       >
-      >    Ein Erlebnisereignis-Schema wird zum Modellieren des _Verhaltens_ eines Profils verwendet (z. B. Szenenname, zum Warenkorb hinzuzufügende Schaltfläche). Das Schema „Individuelles Profil“ wird verwendet, um die _Attribute_ eines Profils zu modellieren (z. B. Name, E-Mail, Geschlecht).
+      >    Ein Erlebnisereignis-Schema wird zum Modellieren des _Verhaltens_ eines Profils verwendet (z. B. Szenenname, Schaltfläche zum Hinzufügen von Artikeln zum Warenkorb). Das Schema „Individuelles Profil“ wird verwendet, um die _Attribute_ eines Profils zu modellieren (z. B. Name, E-Mail, Geschlecht).
 
    1. Klicken Sie auf **[!UICONTROL Weiter]**.
 
 
-1. Im Schritt [!UICONTROL Name und Überprüfung] des Assistenten [!UICONTROL Schema erstellen]:
+1. Im [!UICONTROL Schritt „Name und Überprüfung“] des Assistenten [!UICONTROL Schema erstellen]:
 
-   1. Geben Sie einen **[!UICONTROL Anzeigenamen des Schemas]** für Ihr Schema und (optional) eine **[!UICONTROL Beschreibung]** ein.
+   1. Geben Sie einen **[!UICONTROL Schema-Anzeigenamen]** für Ihr Schema und (optional) eine **[!UICONTROL Beschreibung]** ein.
 
       ![Benennen des Schemas](./assets/create-pr-schema-wizard-step-2.png)
 
@@ -118,7 +118,7 @@ Gehen Sie folgendermaßen vor, um das Schema einzurichten:
 
    Sie werden aufgefordert, das Schema für das Profil zu aktivieren. Nach der Aktivierung werden Daten, die auf der Basis dieses Schemas in Datensätze aufgenommen werden, zum Echtzeit-Kundenprofil hinzugefügt.
 
-   Weitere Informationen finden Sie im Abschnitt [Aktivieren des Schemas zur Verwendung im Echtzeit-Kundenprofil](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html#profile).
+   Weitere Informationen finden Sie im Abschnitt [Aktivieren des Schemas zur Verwendung im Echtzeit-Kundenprofil](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/tutorials/create-schema-ui#profile).
 
    >[!IMPORTANT]
    >
@@ -235,7 +235,7 @@ Mithilfe einer Verbindung können Sie Datensätze aus Adobe Experience Platform 
 
 Gehen Sie folgendermaßen vor, um eine Verbindung zu erstellen:
 
-1. Wählen Sie in der Customer Journey Analytics-Benutzeroberfläche die Option **[!UICONTROL Verbindungen]** in der oberen Navigation aus.
+1. Wählen Sie in der Benutzeroberfläche von Customer Journey Analytics **[!UICONTROL Verbindungen]**, optional unter **[!UICONTROL Datenverwaltung]** im oberen Menü aus.
 
 2. Wählen Sie **[!UICONTROL Neue Verbindung erstellen]** aus.
 
@@ -281,7 +281,7 @@ Eine Datenansicht ist ein für Customer Journey Analytics spezifischer Container
 
 Gehen Sie folgendermaßen vor, um eine Datenansicht zu erstellen:
 
-1. Wählen Sie in der Customer Journey Analytics-Benutzeroberfläche die Option **[!UICONTROL Datenansichten]** in der oberen Navigationsleiste.
+1. Wählen Sie in der Customer Journey Analytics **[!UICONTROL Benutzeroberfläche im oberen Menü]** Datenansichten **[!UICONTROL optional unter Datenverwaltung]** aus.
 
 2. Wählen Sie **[!UICONTROL Neue Datenansicht erstellen]**.
 
@@ -318,7 +318,7 @@ Analysis Workspace ist ein flexibles Browsertool, mit dem Sie schnell Analysen e
 
 Gehen Sie folgendermaßen vor, um ein Projekt zu erstellen:
 
-1. Wählen Sie in der Customer Journey Analytics-Benutzeroberfläche die Option **[!UICONTROL Projekte]** in der oberen Navigationsleiste.
+1. Wählen Sie in der Benutzeroberfläche von Customer Journey Analytics **[!UICONTROL Projekte]** im oberen Menü aus.
 
 2. Wählen Sie **[!UICONTROL Projekte]** in der linken Navigation aus.
 

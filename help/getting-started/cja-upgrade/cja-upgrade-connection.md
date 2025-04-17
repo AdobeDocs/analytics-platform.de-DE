@@ -5,10 +5,10 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 22d3e7b8-4a4d-48a8-a98d-5172a9876286
-source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
+source-git-commit: 03e9fb37684f8796a18a76dc0a93c4e14e6e7640
 workflow-type: tm+mt
-source-wordcount: '1629'
-ht-degree: 100%
+source-wordcount: '1635'
+ht-degree: 99%
 
 ---
 
@@ -31,7 +31,7 @@ Im Folgenden wird erläutert, wie Sie eine Verbindung erstellen und konfiguriere
 
 ## Erstellen und Konfigurieren der Verbindung {#create-connection}
 
-1. Rufen Sie in Customer Journey Analytics die Registerkarte **[!UICONTROL Verbindungen]** auf.
+1. Wählen Sie in Customer Journey Analytics **[!UICONTROL Verbindungen]**, optional unter **[!UICONTROL Datenverwaltung]** im oberen Menü aus.
 1. Wählen Sie **[!UICONTROL Neue Verbindung erstellen]** aus.
 
    ![Unbenannte Verbindungseinstellungen](assets/create-conn1.png)

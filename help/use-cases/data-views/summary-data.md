@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Use Cases
 role: Admin
 exl-id: 80139806-618a-46ff-b2c4-32d7bb85a526
-source-git-commit: 35298dd6d18ebb07d104a608aeff06cb864ee1dc
+source-git-commit: 03e9fb37684f8796a18a76dc0a93c4e14e6e7640
 workflow-type: tm+mt
-source-wordcount: '5188'
-ht-degree: 8%
+source-wordcount: '5200'
+ht-degree: 15%
 
 ---
 
@@ -31,15 +31,15 @@ Für diesen Anwendungsfall verwenden Sie die folgenden Beispielzusammenfassungsd
 
 | _id | campaign_name | Kosten | Impression | campaign_id | network | ad_group | timestamp |
 |---|---|---:|---:|---|---|---|---|
-| 1 | 123 Kampagne | 100 | 5.000 | ABC123 | Facebook | abc-adgroup | 18.07.2024:20:18.39.000Z |
-| 2 | 123 Kampagne | 50 | 4.000 | DEF123 | Facebook | def-adgroup | 18.07.2024:20:18.39.000Z |
+| 1 | 123 Kampagne | 100 | 5.000 | abc123 | Facebook | abc-adgroup | 18.07.2024:20:18.39.000Z |
+| 2 | 123 Kampagne | 50 | 4.000 | def123 | Facebook | def-adgroup | 18.07.2024:20:18.39.000Z |
 | 3 | 123 Kampagne | 125 | 6000 | ghi123 | Facebook | ghi-adgroup | 18.07.2024:20:18.39.000Z |
 | 4 | 456-Kampagne | 25 | 2500 | ABC456 | Facebook | abc-adgroup | 18.07.2024:20:18.39.000Z |
-| 5 | 456-Kampagne | 10 | 1000 | DEF456 | Facebook | def-adgroup | 18.07.2024:20:18.39.000Z |
+| 5 | 456-Kampagne | 10 | 1.000 | def456 | Facebook | def-adgroup | 18.07.2024:20:18.39.000Z |
 | 6 | 456-Kampagne | 115 | 5500 | GHI456 | Facebook | ghi-adgroup | 18.07.2024:20:18.39.000Z |
 | 7 | 789-Kampagne | 200 | 9000 | ABC789 | Facebook | abc-adgroup | 18.07.2024:20:18.39.000Z |
 | 8 | 789-Kampagne | 20 | 2.000 | DEF789 | Facebook | def-adgroup | 18.07.2024:20:18.39.000Z |
-| 9 | 789-Kampagne | 225 | 12000 | GHI789 | Facebook | ghi-adgroup | 18.07.2024:20:18.39.000Z |
+| 9 | 789-Kampagne | 225 | 12000 | ghi789 | Facebook | ghi-adgroup | 18.07.2024:20:18.39.000Z |
 | 10 | 987-Kampagne | 125 | 10000 | ABC987 | Facebook | abc-adgroup | 18.07.2024:20:18.39.000Z |
 | 11 | 987-Kampagne | 120 | 15000 | DEF987 | Facebook | def-adgroup | 18.07.2024:20:18.39.000Z |
 | 12 | 987-Kampagne | 315 | 22500 | ghi987 | Facebook | ghi-adgroup | 18.07.2024:20:18.39.000Z |
@@ -69,18 +69,18 @@ Ereignisdaten sind im Beispielereignisdatensatz verfügbar. Die Beispieldaten se
 
 | timestamp | _id | page_name | person_id | tracking_code | Bestellungen | REVENUE_AMOUNT |
 |---|---:|---|---|---|---:|---:|
-| 18.07.2024:15:19.39+00:00 | 1 | Startseite | person-1abc123 | ABC123 |  |  |
+| 18.07.2024:15:19.39+00:00 | 1 | Startseite | person-1abc123 | abc123 |  |  |
 | 18.07.2024:15:19.39+00:00 | 2 | Bestätigungsseite | person-1abc123 |  | 1 | 174,25 |
-| 18.07.2024:15:19.39+00:00 | 3 | Startseite | person-2def123 | DEF123 |  |  |
+| 18.07.2024:15:19.39+00:00 | 3 | Startseite | person-2def123 | def123 |  |  |
 | 18.07.2024:15:19.39+00:00 | 4 | Startseite | person-3ghi123 | ghi123 |  |  |
 | 18.07.2024:15:19.39+00:00 | 5 | Bestätigungsseite | person-3ghi123 |  | 1 | 149,25 |
 | 18.07.2024:15:19.39+00:00 | 6 | Startseite | person-4abc456 | ABC456 |  |  |
-| 18.07.2024:15:19.39+00:00 | 7 | Startseite | person-5def456 | DEF456 |  |  |
+| 18.07.2024:15:19.39+00:00 | 7 | Startseite | person-5def456 | def456 |  |  |
 | 18.07.2024:15:19.39+00:00 | 8 | Startseite | person-6ghi456 | GHI456 |  |  |
 | 18.07.2024:15:19.39+00:00 | 9 | Bestätigungsseite | person-6ghi456 |  | 1 | 159,25 |
 | 18.07.2024:15:19.39+00:00 | 10 | Startseite | person-7abc789 | ABC789 |  |  |
 | 18.07.2024:15:19.39+00:00 | 11 | Startseite | person-8def789 | DEF789 |  |  |
-| 18.07.2024:15:19.39+00:00 | 12 | Startseite | person-9ghi789 | GHI789 |  |  |
+| 18.07.2024:15:19.39+00:00 | 12 | Startseite | person-9ghi789 | ghi789 |  |  |
 | 18.07.2024:15:19.39+00:00 | 13 | Bestätigungsseite | person-9ghi789 |  | 1 | 124,25 |
 | 18.07.2024:15:19.39+00:00 | 14 | Startseite | person-10abc987 | ABC987 |  |  |
 | 18.07.2024:15:19.39+00:00 | 15 | Startseite | person-11def987 | DEF987 |  |  |
@@ -92,12 +92,12 @@ Ereignisdaten sind im Beispielereignisdatensatz verfügbar. Die Beispieldaten se
 | 18.07.2024:15:19.39+00:00 | 21 | Startseite | person-16abc321 | ABC321 |  |  |
 | 18.07.2024:15:19.39+00:00 | 22 | Startseite | person-17def321 | DEF321 |  |  |
 | 18.07.2024:15:19.39+00:00 | 23 | Startseite | person-18ghi321 | ghi321 |  |  |
-| 18.07.2024:15:19.39+00:00 | 24 | Startseite | person-19abc123 | ABC123 |  |  |
-| 18.07.2024:15:19.39+00:00 | 25 | Startseite | person-20def123 | DEF123 |  |  |
+| 18.07.2024:15:19.39+00:00 | 24 | Startseite | person-19abc123 | abc123 |  |  |
+| 18.07.2024:15:19.39+00:00 | 25 | Startseite | person-20def123 | def123 |  |  |
 | 18.07.2024:15:19.39+00:00 | 26 | Startseite | person-21ghi123 | ghi123 |  |  |
 | 18.07.2024:15:19.39+00:00 | 27 | Bestätigungsseite | person-21ghi123 |  | 1 | 149,25 |
 | 18.07.2024:15:19.39+00:00 | 28 | Startseite | person-22abc456 | ABC456 |  |  |
-| 18.07.2024:15:19.39+00:00 | 29 | Startseite | person-23def456 | DEF456 |  |  |
+| 18.07.2024:15:19.39+00:00 | 29 | Startseite | person-23def456 | def456 |  |  |
 | 18.07.2024:15:19.39+00:00 | 30 | Startseite | person-24ghi456 | GHI456 |  |  |
 | 18.07.2024:15:19.39+00:00 | 31 | Startseite | person-25abc789 | ABC789 |  |  |
 | 18.07.2024:15:19.39+00:00 | 32 | Bestätigungsseite | person-25abc789 |  | 1 | 139,25 |
@@ -113,7 +113,7 @@ Ereignisdaten sind im Beispielereignisdatensatz verfügbar. Die Beispieldaten se
 | 18.07.2024:15:19.39+00:00 | 42 | Bestätigungsseite | person-33ghi456 |  | 1 | 174,25 |
 | 18.07.2024:15:19.39+00:00 | 43 | Startseite | person-34abc789 | ABC789 |  |  |
 | 18.07.2024:15:19.39+00:00 | 44 | Startseite | person-35def789 | DEF789 |  |  |
-| 18.07.2024:15:19.39+00:00 | 45 | Startseite | person-36ghi789 | GHI789 |  |  |
+| 18.07.2024:15:19.39+00:00 | 45 | Startseite | person-36ghi789 | ghi789 |  |  |
 | 18.07.2024:15:19.39+00:00 | 46 | Bestätigungsseite | person-36ghi789 |  | 1 | 149,25 |
 | 18.07.2024:15:19.39+00:00 | 47 | Startseite | person-37abc987 | ABC987 |  |  |
 | 18.07.2024:15:19.39+00:00 | 48 | Startseite | person-38def987 | DEF987 |  |  |
@@ -125,12 +125,12 @@ Ereignisdaten sind im Beispielereignisdatensatz verfügbar. Die Beispieldaten se
 | 18.07.2024:15:19.39+00:00 | 54 | Startseite | person-43abc321 | ABC321 |  |  |
 | 18.07.2024:15:19.39+00:00 | 55 | Startseite | person-44def321 | DEF321 |  |  |
 | 18.07.2024:15:19.39+00:00 | 56 | Startseite | person-45ghi321 | ghi321 |  |  |
-| 18.07.2024:15:19.39+00:00 | 57 | Startseite | person-46abc123 | ABC123 |  |  |
+| 18.07.2024:15:19.39+00:00 | 57 | Startseite | person-46abc123 | abc123 |  |  |
 | 18.07.2024:15:19.39+00:00 | 58 | Bestätigungsseite | person-46abc123 |  | 1 | 174,25 |
-| 18.07.2024:15:19.39+00:00 | 59 | Startseite | person-47def123 | DEF123 |  |  |
+| 18.07.2024:15:19.39+00:00 | 59 | Startseite | person-47def123 | def123 |  |  |
 | 18.07.2024:15:19.39+00:00 | 60 | Startseite | person-48ghi123 | ghi123 |  |  |
 | 18.07.2024:15:19.39+00:00 | 61 | Startseite | person-49abc456 | ABC456 |  |  |
-| 18.07.2024:15:19.39+00:00 | 62 | Startseite | person-50def456 | DEF456 |  |  |
+| 18.07.2024:15:19.39+00:00 | 62 | Startseite | person-50def456 | def456 |  |  |
 | 18.07.2024:15:19.39+00:00 | 63 | Startseite | person-51ghi456 | GHI456 |  |  |
 | 18.07.2024:15:19.39+00:00 | 64 | Startseite | person-52abc789 | ABC789 |  |  |
 | 18.07.2024:15:19.39+00:00 | 65 | Bestätigungsseite | person-52abc789 |  | 1 | 149,25 |
@@ -138,18 +138,18 @@ Ereignisdaten sind im Beispielereignisdatensatz verfügbar. Die Beispieldaten se
 | 18.07.2024:15:19.39+00:00 | 67 | Startseite | person-54def987 | DEF987 |  |  |
 | 18.07.2024:15:19.39+00:00 | 68 | Startseite | person-55ghi987 | ghi987 |  |  |
 | 18.07.2024:15:19.39+00:00 | 69 | Bestätigungsseite | person-55ghi987 |  | 1 | 124,25 |
-| 18.07.2024:15:19.39+00:00 | 70 | Startseite | person-56abc123 | ABC123 |  |  |
-| 18.07.2024:15:19.39+00:00 | 71 | Startseite | person-57def123 | DEF123 |  |  |
+| 18.07.2024:15:19.39+00:00 | 70 | Startseite | person-56abc123 | abc123 |  |  |
+| 18.07.2024:15:19.39+00:00 | 71 | Startseite | person-57def123 | def123 |  |  |
 | 18.07.2024:15:19.39+00:00 | 72 | Bestätigungsseite | person-57def123 |  | 1 | 174,25 |
 | 18.07.2024:15:19.39+00:00 | 73 | Startseite | person-58ghi123 | ghi123 |  |  |
 | 18.07.2024:15:19.39+00:00 | 74 | Startseite | person-59abc456 | ABC456 |  |  |
 | 18.07.2024:15:19.39+00:00 | 75 | Bestätigungsseite | person-59abc456 |  | 1 | 149,25 |
-| 18.07.2024:15:19.39+00:00 | 76 | Startseite | person-60def456 | DEF456 |  |  |
+| 18.07.2024:15:19.39+00:00 | 76 | Startseite | person-60def456 | def456 |  |  |
 | 18.07.2024:15:19.39+00:00 | 77 | Startseite | person-61ghi456 | GHI456 |  |  |
 | 18.07.2024:15:19.39+00:00 | 78 | Startseite | person-62abc789 | ABC789 |  |  |
 | 18.07.2024:15:19.39+00:00 | 79 | Bestätigungsseite | person-62abc789 |  | 1 | 159,25 |
 | 18.07.2024:15:19.39+00:00 | 80 | Startseite | person-63def789 | DEF789 |  |  |
-| 18.07.2024:15:19.39+00:00 | 81 | Startseite | person-64ghi789 | GHI789 |  |  |
+| 18.07.2024:15:19.39+00:00 | 81 | Startseite | person-64ghi789 | ghi789 |  |  |
 | 18.07.2024:15:19.39+00:00 | 82 | Startseite | person-65abc987 | ABC987 |  |  |
 | 18.07.2024:15:19.39+00:00 | 83 | Bestätigungsseite | person-65abc987 |  | 1 | 124,25 |
 | 18.07.2024:15:19.39+00:00 | 84 | Startseite | person-66def987 | DEF987 |  |  |
@@ -161,12 +161,12 @@ Ereignisdaten sind im Beispielereignisdatensatz verfügbar. Die Beispieldaten se
 | 18.07.2024:15:19.39+00:00 | 90 | Bestätigungsseite | person-71abc321 |  | 1 | 174,25 |
 | 18.07.2024:15:19.39+00:00 | 91 | Startseite | person-72def321 | DEF321 |  |  |
 | 18.07.2024:15:19.39+00:00 | 92 | Startseite | person-73ghi321 | ghi321 |  |  |
-| 18.07.2024:15:19.39+00:00 | 93 | Startseite | person-74abc123 | ABC123 |  |  |
-| 18.07.2024:15:19.39+00:00 | 94 | Startseite | person-75def123 | DEF123 |  |  |
+| 18.07.2024:15:19.39+00:00 | 93 | Startseite | person-74abc123 | abc123 |  |  |
+| 18.07.2024:15:19.39+00:00 | 94 | Startseite | person-75def123 | def123 |  |  |
 | 18.07.2024:15:19.39+00:00 | 95 | Startseite | person-76ghi123 | ghi123 |  |  |
 | 18.07.2024:15:19.39+00:00 | 96 | Startseite | person-77abc456 | ABC456 |  |  |
 | 18.07.2024:15:19.39+00:00 | 97 | Bestätigungsseite | person-77abc456 |  | 1 | 149,25 |
-| 18.07.2024:15:19.39+00:00 | 98 | Startseite | person-78def456 | DEF456 |  |  |
+| 18.07.2024:15:19.39+00:00 | 98 | Startseite | person-78def456 | def456 |  |  |
 | 18.07.2024:15:19.39+00:00 | 99 | Startseite | person-79ghi456 | GHI456 |  |  |
 | 18.07.2024:15:19.39+00:00 | 100 | Startseite | person-80abc789 | ABC789 |  |  |
 | 18.07.2024:15:19.39+00:00 | 101 | Startseite | person-81abc987 | ABC987 |  |  |
@@ -182,7 +182,7 @@ Ereignisdaten sind im Beispielereignisdatensatz verfügbar. Die Beispieldaten se
 | 18.07.2024:15:19.39+00:00 | 111 | Startseite | person-89abc789 | ABC789 |  |  |
 | 18.07.2024:15:19.39+00:00 | 112 | Bestätigungsseite | person-89abc789 |  | 1 | 174,25 |
 | 18.07.2024:15:19.39+00:00 | 113 | Startseite | person-90def789 | DEF789 |  |  |
-| 18.07.2024:15:19.39+00:00 | 114 | Startseite | person-91ghi789 | GHI789 |  |  |
+| 18.07.2024:15:19.39+00:00 | 114 | Startseite | person-91ghi789 | ghi789 |  |  |
 | 18.07.2024:15:19.39+00:00 | 115 | Startseite | person-92abc987 | ABC987 |  |  |
 | 18.07.2024:15:19.39+00:00 | 116 | Bestätigungsseite | person-92abc987 |  | 1 | 149,25 |
 | 18.07.2024:15:19.39+00:00 | 117 | Startseite | person-93def987 | DEF987 |  |  |
@@ -194,12 +194,12 @@ Ereignisdaten sind im Beispielereignisdatensatz verfügbar. Die Beispieldaten se
 | 18.07.2024:15:19.39+00:00 | 123 | Startseite | person-98abc321 | ABC321 |  |  |
 | 18.07.2024:15:19.39+00:00 | 124 | Startseite | person-99def321 | DEF321 |  |  |
 | 18.07.2024:15:19.39+00:00 | 125 | Startseite | person-100ghi321 | ghi321 |  |  |
-| 18.07.2024:15:19.39+00:00 | 126 | Startseite | person-101abc123 | ABC123 |  |  |
-| 18.07.2024:15:19.39+00:00 | 127 | Startseite | person-102def123 | DEF123 |  |  |
+| 18.07.2024:15:19.39+00:00 | 126 | Startseite | person-101abc123 | abc123 |  |  |
+| 18.07.2024:15:19.39+00:00 | 127 | Startseite | person-102def123 | def123 |  |  |
 | 18.07.2024:15:19.39+00:00 | 128 | Bestätigungsseite | person-102def123 |  | 1 | 174,25 |
 | 18.07.2024:15:19.39+00:00 | 129 | Startseite | person-103ghi123 | ghi123 |  |  |
 | 18.07.2024:15:19.39+00:00 | 130 | Startseite | person-104abc456 | ABC456 |  |  |
-| 18.07.2024:15:19.39+00:00 | 131 | Startseite | person-105def456 | DEF456 |  |  |
+| 18.07.2024:15:19.39+00:00 | 131 | Startseite | person-105def456 | def456 |  |  |
 | 18.07.2024:15:19.39+00:00 | 132 | Startseite | person-106ghi456 | GHI456 |  |  |
 | 18.07.2024:15:19.39+00:00 | 133 | Startseite | person-107abc789 | ABC789 |  |  |
 | 18.07.2024:15:19.39+00:00 | 134 | Startseite | person-108abc987 | ABC987 |  |  |
@@ -219,11 +219,11 @@ Ereignisdaten sind im Beispielereignisdatensatz verfügbar. Die Beispieldaten se
 | 18.07.2024:15:19.39+00:00 | 148 | Startseite | person-118def321 | DEF321 |  |  |
 | 18.07.2024:15:19.39+00:00 | 149 | Bestätigungsseite | person-118def321 |  | 1 | 124,25 |
 | 18.07.2024:15:19.39+00:00 | 150 | Startseite | person-119ghi321 | ghi321 |  |  |
-| 18.07.2024:15:19.39+00:00 | 151 | Startseite | person-120abc123 | ABC123 |  |  |
-| 18.07.2024:15:19.39+00:00 | 152 | Startseite | person-121def123 | DEF123 |  |  |
+| 18.07.2024:15:19.39+00:00 | 151 | Startseite | person-120abc123 | abc123 |  |  |
+| 18.07.2024:15:19.39+00:00 | 152 | Startseite | person-121def123 | def123 |  |  |
 | 18.07.2024:15:19.39+00:00 | 153 | Startseite | person-122ghi123 | ghi123 |  |  |
 | 18.07.2024:15:19.39+00:00 | 154 | Startseite | person-123abc456 | ABC456 |  |  |
-| 18.07.2024:15:19.39+00:00 | 155 | Startseite | person-124def456 | DEF456 |  |  |
+| 18.07.2024:15:19.39+00:00 | 155 | Startseite | person-124def456 | def456 |  |  |
 | 18.07.2024:15:19.39+00:00 | 156 | Bestätigungsseite | person-124def456 |  | 1 | 174,25 |
 | 18.07.2024:15:19.39+00:00 | 157 | Startseite | person-125ghi456 | GHI456 |  |  |
 | 18.07.2024:15:19.39+00:00 | 158 | Startseite | person-126abc789 | ABC789 |  |  |
@@ -239,7 +239,7 @@ Ereignisdaten sind im Beispielereignisdatensatz verfügbar. Die Beispieldaten se
 | 18.07.2024:15:19.39+00:00 | 168 | Bestätigungsseite | person-134ghi456 |  | 1 | 139,25 |
 | 18.07.2024:15:19.39+00:00 | 169 | Startseite | person-135abc789 | ABC789 |  |  |
 | 18.07.2024:15:19.39+00:00 | 170 | Startseite | person-136def789 | DEF789 |  |  |
-| 18.07.2024:15:19.39+00:00 | 171 | Startseite | person-137ghi789 | GHI789 |  |  |
+| 18.07.2024:15:19.39+00:00 | 171 | Startseite | person-137ghi789 | ghi789 |  |  |
 | 18.07.2024:15:19.39+00:00 | 172 | Startseite | person-138abc987 | ABC987 |  |  |
 | 18.07.2024:15:19.39+00:00 | 173 | Bestätigungsseite | person-138abc987 |  | 1 | 124,25 |
 | 18.07.2024:15:19.39+00:00 | 174 | Startseite | person-139def987 | DEF987 |  |  |
@@ -253,21 +253,21 @@ Ereignisdaten sind im Beispielereignisdatensatz verfügbar. Die Beispieldaten se
 
 +++
 
-+++ Lookup data
++++ Lookup-Daten
 
 Lookup-Daten sind im Beispiel-Lookup-Datensatz verfügbar. Die Beispieldaten sehen wie folgt aus:
 
 | _id | tracking_code | ad_group | campaign_name |
 |---|---|---|---|
-| 1 | ABC123 | abc-adgroup | 123 Kampagne |
-| 2 | DEF123 | def-adgroup | 123 Kampagne |
+| 1 | abc123 | abc-adgroup | 123 Kampagne |
+| 2 | def123 | def-adgroup | 123 Kampagne |
 | 3 | ghi123 | ghi-adgroup | 123 Kampagne |
 | 4 | ABC456 | abc-adgroup | 456-Kampagne |
-| 5 | DEF456 | def-adgroup | 456-Kampagne |
+| 5 | def456 | def-adgroup | 456-Kampagne |
 | 6 | GHI456 | ghi-adgroup | 456-Kampagne |
 | 7 | ABC789 | abc-adgroup | 789-Kampagne |
 | 8 | DEF789 | def-adgroup | 789-Kampagne |
-| 9 | GHI789 | ghi-adgroup | 789-Kampagne |
+| 9 | ghi789 | ghi-adgroup | 789-Kampagne |
 | 10 | ABC987 | abc-adgroup | 987-Kampagne |
 | 11 | DEF987 | def-adgroup | 987-Kampagne |
 | 12 | ghi987 | ghi-adgroup | 987-Kampagne |
@@ -387,7 +387,7 @@ Um Ihre Beispieldaten in Customer Journey Analytics zu verwenden, erstellen Sie 
 
 
 1. Wählen Sie **[!UICONTROL Customer Journey Analytics]** aus der   ![App](/help/assets/icons/Apps.svg)   Programmumschalter.
-1. Wählen **[!UICONTROL Verbindungen]** im oberen Menü aus.
+1. Wählen **[!UICONTROL Verbindungen]**, optional unter **[!UICONTROL Datenverwaltung]** im oberen Menü aus.
 1. Wählen Sie **[!UICONTROL Neue Verbindung erstellen]** aus.
 1. In **[!UICONTROL Verbindungen]** > **[!UICONTROL Nicht benannte Verbindung]**:
    1. Geben Sie einen **[!UICONTROL Verbindungsnamen]** ein, z. B. `Example Connection Using Summary Data`.
@@ -428,7 +428,7 @@ Die Daten aus den Datensätzen werden zu Customer Journey Analytics hinzugefügt
 Überprüfen Sie nach einiger Zeit, ob die Daten aus Ihren Datensätzen ordnungsgemäß in Customer Journey Analytics geladen wurden.
 
 1. Wählen Sie **[!UICONTROL Customer Journey Analytics]** aus der   ![App](/help/assets/icons/Apps.svg)   Programmumschalter.
-1. Wählen **[!UICONTROL Verbindungen]** im oberen Menü aus.
+1. Wählen **[!UICONTROL Verbindungen]**, optional unter **[!UICONTROL Datenverwaltung]** im oberen Menü aus.
 1. Wählen Sie Ihre Verbindung aus, z **[!UICONTROL B. Verbindung mit Zusammenfassungsdaten]**.
 1. Wählen Sie einen entsprechenden Datumsbereich unter **[!UICONTROL Verbindung]** > **[!UICONTROL Beispielverbindung mit Zusammenfassungsdaten]** aus.
    1. Wählen Sie ![Kalender](/help/assets/icons/Calendar.svg) und dann **[!UICONTROL Letzte 7 Tage]** aus.
@@ -443,7 +443,7 @@ In der Liste der **[!UICONTROL Datensätze]** sollten die Werte in der Spalte **
 Um sicherzustellen, dass Sie Berichte zu den richtigen Daten in Workspace erstellen können, sollten Sie eine Datenansicht mit den entsprechenden Metriken und Dimensionen erstellen.
 
 1. Wählen Sie **[!UICONTROL Customer Journey Analytics]** aus der   ![App](/help/assets/icons/Apps.svg)   Programmumschalter.
-1. Wählen **[!UICONTROL Datenansichten]** aus dem oberen Menü aus.
+1. Wählen **[!UICONTROL Datenansichten]** optional unter **[!UICONTROL Daten-Management]** im oberen Menü aus.
 1. Wählen Sie **[!UICONTROL Neue Datenansicht erstellen]**.
 1. Gehen Sie **[!UICONTROL Datenansichten]** durch die Assistenten-Bildschirme, um Ihre Datenansicht zu konfigurieren.
    1. Im Schritt **[!UICONTROL Konfigurieren]** von **[!UICONTROL Datenansichten]**:
@@ -459,7 +459,7 @@ Um sicherzustellen, dass Sie Berichte zu den richtigen Daten in Workspace erstel
          | Name der Komponente | Datensatz | Datentyp des Schemas | Pfad des Schemas |
          |---|---|---|---|
          | Kosten | Beispiel für einen zusammenfassenden Datensatz | Double | *_tenant*.cost |
-         | Impressions | Beispiel für einen zusammenfassenden Datensatz | Ganzzahl | *_tenant*.impression |
+         | Impressionen | Beispiel für einen zusammenfassenden Datensatz | Ganzzahl | *_tenant*.impression |
          | Bestellungen | Beispiel für einen Ereignisdatensatz | Ganzzahl | *_tenant*.orders |
          | Umsatz | Beispiel für einen Ereignisdatensatz | Double | *_tenant*.venue_amount |
 
@@ -585,7 +585,7 @@ Fügen Sie Ihre berechneten Metriken zu Ihrem Bericht hinzu.
       1. Aktivieren Sie **[!UICONTROL Bedingte Formatierung]**.
          1. Wählen **[!UICONTROL Automatisch generiert]** aus.
          1. Wählen Sie eine bevorzugte **[!UICONTROL Bedingte Formatierungspalette]**.
-   1. Wählen **[!UICONTROL Speichern]**, um das Projekt zu speichern.
+   1. Wählen Sie **[!UICONTROL Speichern]** aus, um Ihr Projekt zu speichern.
 
 Wenn Sie einen Bericht über den Kampagnennamen und nicht über den Trackingcode (Ereignis) erstellen möchten, führen Sie die folgenden Schritte aus:
 

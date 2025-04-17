@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: 813d3213-86b3-431a-821c-174e5e36d032
 role: Admin
-source-git-commit: 1564c91616015311393a643fe7fcecd429cf3a36
+source-git-commit: 03e9fb37684f8796a18a76dc0a93c4e14e6e7640
 workflow-type: tm+mt
-source-wordcount: '2041'
-ht-degree: 78%
+source-wordcount: '2049'
+ht-degree: 79%
 
 ---
 
@@ -32,7 +32,7 @@ Gehen Sie dazu folgendermaßen vor:
 
 >[!NOTE]
 >
->Diese Kurzanleitung ist eine vereinfachte Anleitung zur Aufnahme von Daten in Adobe Experience Platform mithilfe eines Quell-Connectors und deren Verwendung im Customer Journey Analytics. Es wird dringend empfohlen, die zusätzlichen Artikel zu lesen, auf die verwiesen wird.
+>Diese Kurzanleitung ist eine vereinfachte Anleitung zur Aufnahme von Daten in Adobe Experience Platform mithilfe eines Quell-Connectors und deren Verwendung in Customer Journey Analytics. Es wird dringend empfohlen, die zusätzlichen Artikel zu lesen, auf die verwiesen wird.
 
 
 ## Einrichten eines Schemas und eines Datensatzes
@@ -62,14 +62,14 @@ Gehen Sie folgendermaßen vor, um das Schema einzurichten:
 
       >[!INFO]
       >
-      >    Ein Erlebnisereignis-Schema wird zum Modellieren des _Verhaltens_ eines Profils verwendet (z. B. Szenenname, zum Warenkorb hinzuzufügende Schaltfläche). Das Schema „Individuelles Profil“ wird verwendet, um die _Attribute_ eines Profils zu modellieren (z. B. Name, E-Mail, Geschlecht).
+      >    Ein Erlebnisereignis-Schema wird zum Modellieren des _Verhaltens_ eines Profils verwendet (z. B. Szenenname, Schaltfläche zum Hinzufügen von Artikeln zum Warenkorb). Das Schema „Individuelles Profil“ wird verwendet, um die _Attribute_ eines Profils zu modellieren (z. B. Name, E-Mail, Geschlecht).
 
    1. Klicken Sie auf **[!UICONTROL Weiter]**.
 
 
-1. Im Schritt [!UICONTROL Name und Überprüfung] des Assistenten [!UICONTROL Schema erstellen]:
+1. Im [!UICONTROL Schritt „Name und Überprüfung“] des Assistenten [!UICONTROL Schema erstellen]:
 
-   1. Geben Sie einen **[!UICONTROL Anzeigenamen des Schemas]** für Ihr Schema und (optional) eine **[!UICONTROL Beschreibung]** ein.
+   1. Geben Sie einen **[!UICONTROL Schema-Anzeigenamen]** für Ihr Schema und (optional) eine **[!UICONTROL Beschreibung]** ein.
 
       ![Fenster Schema erstellen mit den Feldern zum Benennen des Schemas ](./assets/create-pr-schema-wizard-step-2.png)
 
@@ -119,7 +119,7 @@ Gehen Sie folgendermaßen vor, um das Schema einzurichten:
 
    Sie werden aufgefordert, das Schema für das Profil zu aktivieren. Nach der Aktivierung werden Daten, die auf der Basis dieses Schemas in Datensätze aufgenommen werden, zum Echtzeit-Kundenprofil hinzugefügt.
 
-   Weitere Informationen finden Sie im Abschnitt [Aktivieren des Schemas zur Verwendung im Echtzeit-Kundenprofil](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html#profile).
+   Weitere Informationen finden Sie im Abschnitt [Aktivieren des Schemas zur Verwendung im Echtzeit-Kundenprofil](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/tutorials/create-schema-ui#profile).
 
    >[!IMPORTANT]
    >
@@ -176,7 +176,7 @@ Abhängig davon, woher Sie Ihre Treueprogramm-Daten erhalten, wählen Sie einen 
 
 Sie können Daten aus einer Vielzahl von Quellen aufnehmen. Im Folgenden sind nur einige der vielen verfügbaren Quellen aufgeführt:
 
-- Adobe-Programme (zu den Quell-Connectoren gehören [Adobe Analytics](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/analytics), [Adobe Audience Manager](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/audience-manager) und mehr)
+- Adobe-Programme (Quell-Connectoren umfassen [Adobe Analytics](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/analytics), [Adobe Audience Manager](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/audience-manager) und mehr)
 
 - Cloud-Speicher (Quell-Connectoren umfassen [Amazon S3](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/cloud-storage/s3), [Azure Blob](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/cloud-storage/blob) und mehr)
 
@@ -225,7 +225,7 @@ Mithilfe einer Verbindung können Sie Datensätze aus Adobe Experience Platform 
 
 Gehen Sie folgendermaßen vor, um eine Verbindung zu erstellen:
 
-1. Wählen Sie in der Customer Journey Analytics-Benutzeroberfläche die Option **[!UICONTROL Verbindungen]** in der oberen Navigation aus.
+1. Wählen Sie in der Benutzeroberfläche von Customer Journey Analytics **[!UICONTROL Verbindungen]**, optional unter **[!UICONTROL Datenverwaltung]** im oberen Menü aus.
 
 1. Wählen Sie **[!UICONTROL Neue Verbindung erstellen]** aus.
 
@@ -271,7 +271,7 @@ Eine Datenansicht ist ein für Customer Journey Analytics spezifischer Container
 
 Gehen Sie folgendermaßen vor, um eine Datenansicht zu erstellen:
 
-1. Wählen Sie in der Customer Journey Analytics-Benutzeroberfläche die Option **[!UICONTROL Datenansichten]** in der oberen Navigationsleiste.
+1. Wählen Sie in der Customer Journey Analytics **[!UICONTROL Benutzeroberfläche im oberen Menü]** Datenansichten **[!UICONTROL optional unter Datenverwaltung]** aus.
 
 2. Wählen Sie **[!UICONTROL Neue Datenansicht erstellen]**.
 
@@ -308,7 +308,7 @@ Analysis Workspace ist ein flexibles Browsertool, mit dem Sie schnell Analysen e
 
 Gehen Sie folgendermaßen vor, um ein Projekt zu erstellen:
 
-1. Wählen Sie in der Customer Journey Analytics-Benutzeroberfläche die Option **[!UICONTROL Projekte]** in der oberen Navigationsleiste.
+1. Wählen Sie in der Benutzeroberfläche von Customer Journey Analytics **[!UICONTROL Projekte]** im oberen Menü aus.
 
 2. Wählen Sie **[!UICONTROL Projekte]** in der linken Navigation aus.
 

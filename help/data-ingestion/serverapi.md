@@ -1,20 +1,20 @@
 ---
-title: Aufnehmen von Daten über die Adobe Experience Platform Edge Network Server API
-description: Erläuterung der Datenaufnahme in Customer Journey Analytics über die Adobe Experience Platform Edge Network Server-API und das Edge Network
+title: Aufnehmen von Daten über die Adobe Experience Platform Edge Network Server-API
+description: Erläuterung der Datenaufnahme in Customer Journey Analytics über die Adobe Experience Platform Edge Network-Server-API und die Edge Network
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 6bfb7254-5bb7-45c6-86a2-0651a0d222fa
 role: Admin
-source-git-commit: 90d1c51c11f0ab4d7d61b8e115efa8257a985446
+source-git-commit: 03e9fb37684f8796a18a76dc0a93c4e14e6e7640
 workflow-type: tm+mt
-source-wordcount: '2348'
-ht-degree: 59%
+source-wordcount: '2356'
+ht-degree: 63%
 
 ---
 
 # Aufnehmen von Daten über die Edge Network Server-API
 
-In dieser Kurzanleitung wird erläutert, wie Sie Tracking-Daten von Geräten wie IoT-Geräten, Set-Top-Boxen, Spielekonsolen und Desktop-Programmen mithilfe der Adobe Experience Platform Edge Network Server-API und Edge Network direkt in Adobe Experience Platform aufnehmen können. Verwenden Sie diese Daten dann auf Customer Journey Analytics.
+In dieser Kurzanleitung wird erläutert, wie Sie Tracking-Daten von Geräten wie IoT-Geräten, Set-Top-Boxen, Spielekonsolen und Desktop-Programmen mithilfe der Adobe Experience Platform Edge Network-Server-API und Edge Network direkt in Adobe Experience Platform aufnehmen können. Verwenden Sie diese Daten dann in Customer Journey Analytics.
 
 Gehen Sie dazu wie folgt vor:
 
@@ -34,7 +34,7 @@ Gehen Sie dazu wie folgt vor:
 
 >[!NOTE]
 >
->Diese Kurzanleitung ist eine vereinfachte Anleitung zur Aufnahme von Daten, die von einer Anwendung oder einem Spiel, das auf einem IoT-Gerät, einer Set-Top-Box, einer Spielekonsole oder einem Desktop ausgeführt wird, erfasst wurden, in Adobe Experience Platform und zur Verwendung im Customer Journey Analytics. Es wird dringend empfohlen, die zusätzlichen Artikel zu lesen, auf die verwiesen wird.
+>Diese Kurzanleitung ist eine vereinfachte Anleitung zur Aufnahme von Daten, die von einer Anwendung oder einem Spiel, das auf einem IoT-Gerät, einer Set-Top-Box, einer Spielekonsole oder einem Desktop ausgeführt wird, erfasst wurden, in Adobe Experience Platform und zur Verwendung in Customer Journey Analytics. Es wird dringend empfohlen, die zusätzlichen Artikel zu lesen, auf die verwiesen wird.
 
 
 ## Einrichten eines Schemas und eines Datensatzes
@@ -64,14 +64,14 @@ Gehen Sie folgendermaßen vor, um das Schema einzurichten:
 
       >[!INFO]
       >
-      >    Ein Erlebnisereignis-Schema wird zum Modellieren des _Verhaltens_ eines Profils verwendet (z. B. Szenenname, zum Warenkorb hinzuzufügende Schaltfläche). Das Schema „Individuelles Profil“ wird verwendet, um die _Attribute_ eines Profils zu modellieren (z. B. Name, E-Mail, Geschlecht).
+      >    Ein Erlebnisereignis-Schema wird zum Modellieren des _Verhaltens_ eines Profils verwendet (z. B. Szenenname, Schaltfläche zum Hinzufügen von Artikeln zum Warenkorb). Das Schema „Individuelles Profil“ wird verwendet, um die _Attribute_ eines Profils zu modellieren (z. B. Name, E-Mail, Geschlecht).
 
    1. Klicken Sie auf **[!UICONTROL Weiter]**.
 
 
-1. Im Schritt [!UICONTROL Name und Überprüfung] des Assistenten [!UICONTROL Schema erstellen]:
+1. Im [!UICONTROL Schritt „Name und Überprüfung“] des Assistenten [!UICONTROL Schema erstellen]:
 
-   1. Geben Sie einen **[!UICONTROL Anzeigenamen des Schemas]** für Ihr Schema und (optional) eine **[!UICONTROL Beschreibung]** ein.
+   1. Geben Sie einen **[!UICONTROL Schema-Anzeigenamen]** für Ihr Schema und (optional) eine **[!UICONTROL Beschreibung]** ein.
 
       ![Benennen des Schemas](./assets/create-ee-schema-wizard-step-2.png)
 
@@ -105,7 +105,7 @@ Gehen Sie folgendermaßen vor, um das Schema einzurichten:
 
    >[!NOTE]
    >
-   >Wenn diese Feldergruppe nicht verfügbar ist, suchen Sie nach einer anderen Feldergruppe, die Identitätsfelder enthält. Oder [eine neue Feldergruppe erstellen](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/field-groups.html) und [neue Identitätsfelder hinzufügen](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/identity.html#define-a-identity-field) (z. B. `ecid`, `crmId` und andere benötigte) zur Feldergruppe hinzufügen und diese neue Feldergruppe auswählen.
+   >Wenn diese Feldgruppe nicht verfügbar ist, suchen Sie nach einer anderen Feldgruppe mit Identitätsfeldern. Oder [erstellen Sie eine neue Feldgruppe](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/ui/resources/field-groups) und [fügen Sie neue Identitätsfelder](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/ui/fields/identity#define-a-identity-field) (z. B. `ecid`, `crmId` und andere benötigte Felder) zur Feldgruppe hinzu und wählen Sie diese neue Feldgruppe aus.
 
    ![Identifizierungsobjekt](./assets/identification-field-gaming.png)
 
@@ -135,7 +135,7 @@ Gehen Sie folgendermaßen vor, um das Schema einzurichten:
 
    Sie werden aufgefordert, das Schema für das Profil zu aktivieren. Nach der Aktivierung werden Daten, die auf der Basis dieses Schemas in Datensätze aufgenommen werden, zum Echtzeit-Kundenprofil hinzugefügt.
 
-   Weitere Informationen finden Sie im Abschnitt [Aktivieren des Schemas zur Verwendung im Echtzeit-Kundenprofil](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html#profile).
+   Weitere Informationen finden Sie im Abschnitt [Aktivieren des Schemas zur Verwendung im Echtzeit-Kundenprofil](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/tutorials/create-schema-ui#profile).
 
    >[!IMPORTANT]
    >
@@ -157,7 +157,7 @@ Um Profildaten zu erfassen, gehen Sie folgendermaßen vor:
 
 - Fügen Sie ein Identifizierungsobjekt hinzu, das auf der Feldergruppe „Profile Core v2“ basiert.
 
-- Experience Cloud-ID als primäre Kennung und E-Mail als Kennung definieren.
+- Definieren Sie die Experience Cloud-ID als primäre Kennung und die E-Mail als Kennung.
 
 - Aktivieren Sie dieses Schema für das Profil
 
@@ -201,7 +201,7 @@ Im [Handbuch zur Datensatz-Benutzeroberfläche](https://experienceleague.adobe.c
 
 ## Einrichten eines Datenstroms
 
-Ein Datenstrom stellt die Server-seitige Konfiguration bei der Implementierung der Adobe Experience Platform Web- und Mobile-SDKs und der Adobe Experience Platform Edge Network Server-API dar. Beim Erfassen von Daten mit den Adobe Experience Platform SDKs und Edge Network-Server-APIs werden Daten an das Adobe Experience Platform-Edge Network gesendet. Es ist der Datenstrom, der bestimmt, an welche Services diese Daten weitergeleitet werden.
+Ein Datenstrom stellt die Server-seitige Konfiguration bei der Implementierung der Adobe Experience Platform Web- und Mobile-SDKs und der Adobe Experience Platform Edge Network Server-API dar. Beim Erfassen von Daten mit den Adobe Experience Platform SDKs und Edge Network-Server-APIs werden Daten an die Adobe Experience Platform Edge Network gesendet. Dabei bestimmt der Datenstrom, an welche Dienste diese Daten weitergeleitet werden.
 
 In Ihrem Setup möchten Sie, dass die Daten, die Sie aus dem Spiel erfassen, an Ihren Datensatz in Adobe Experience Platform gesendet werden.
 
@@ -235,9 +235,9 @@ Ihr Datenstrom ist jetzt so konfiguriert, dass die aus Ihrem Spiel erfassten Dat
 
 Weitere Informationen um Konfigurieren eines Datenstroms und zum Umgang mit sensiblen Daten finden Sie unter [Übersicht über Datenströme](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html?lang=de).
 
-## Edge Network-Server-API verwenden
+## Verwenden der Edge Network Server-API
 
-Bei der Entwicklung Ihres Spiels können Sie der Adobe Experience Platform Edge Network Server-API ggf. relevante Aufrufe hinzufügen.
+Bei der Entwicklung Ihres Spiels können Sie gegebenenfalls relevante Aufrufe an die Adobe Experience Platform Edge Network-Server-API hinzufügen.
 
 Um beispielsweise die Punktzahl des Players zu aktualisieren, würden Sie Folgendes verwenden:
 
@@ -270,9 +270,9 @@ curl -X POST "https://server.adobedc.net/ee/v2/interact?dataStreamId={DATASTREAM
 }'
 ```
 
-In der Beispieldatenanforderung verweist `{DATASTREAM_ID}` auf die POST des Beispiel-Datenstroms, den Sie zuvor konfiguriert haben. `{sandbox}` ist der eindeutige Name Ihrer Sandbox, der den Pfad zur benutzerdefinierten Feldergruppe Blindlicht identifiziert.
+In der Beispiel-POST-Anfrage verweist `{DATASTREAM_ID}` auf die Kennung des zuvor konfigurierten Beispiel-Datenstroms. `{sandbox}` ist der eindeutige Name Ihrer Sandbox, der den Pfad zur benutzerdefinierten Feldergruppe Blindlicht identifiziert.
 
-Weitere Informationen [ Verwendung der ](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/data-collection/interactive-data-collection.html?lang=de)-API für den Edge Network [Server finden Sie unter ](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/data-collection/non-interactive-data-collection.html)Interaktive Datenerfassung) und „Nicht interaktive“.
+Weitere Informationen zur Verwendung [ Edge Network](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/data-collection/interactive-data-collection.html?lang=de)Server-API finden [ unter „Interaktive Datenerfassung](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/data-collection/non-interactive-data-collection.html) und „Nicht interaktive“.
 
 ## Einrichten einer Verbindung
 
@@ -282,7 +282,7 @@ Mithilfe einer Verbindung können Sie Datensätze aus Adobe Experience Platform 
 
 Gehen Sie folgendermaßen vor, um eine Verbindung zu erstellen:
 
-1. Wählen Sie in der Customer Journey Analytics-Benutzeroberfläche die Option **[!UICONTROL Verbindungen]** in der oberen Navigation aus.
+1. Wählen Sie in der Benutzeroberfläche von Customer Journey Analytics **[!UICONTROL Verbindungen]**, optional unter **[!UICONTROL Datenverwaltung]** im oberen Menü aus.
 
 2. Wählen Sie **[!UICONTROL Neue Verbindung erstellen]** aus.
 
@@ -324,7 +324,7 @@ Eine Datenansicht ist ein für Customer Journey Analytics spezifischer Container
 
 Gehen Sie folgendermaßen vor, um eine Datenansicht zu erstellen:
 
-1. Wählen Sie in der Customer Journey Analytics-Benutzeroberfläche die Option **[!UICONTROL Datenansichten]** in der oberen Navigationsleiste.
+1. Wählen Sie in der Customer Journey Analytics **[!UICONTROL Benutzeroberfläche im oberen Menü]** Datenansichten **[!UICONTROL optional unter Datenverwaltung]** aus.
 
 2. Wählen Sie **[!UICONTROL Neue Datenansicht erstellen]**.
 
@@ -359,7 +359,7 @@ Analysis Workspace ist ein flexibles Browsertool, mit dem Sie schnell Analysen e
 
 Gehen Sie folgendermaßen vor, um ein Projekt zu erstellen:
 
-1. Wählen Sie in der Customer Journey Analytics-Benutzeroberfläche die Option **[!UICONTROL Projekte]** in der oberen Navigationsleiste.
+1. Wählen Sie in der Benutzeroberfläche von Customer Journey Analytics **[!UICONTROL Projekte]** im oberen Menü aus.
 
 2. Wählen Sie **[!UICONTROL Projekte]** in der linken Navigation aus.
 
@@ -381,4 +381,4 @@ Weitere Informationen zum Erstellen von Projekten und zum Durchführen einer Ana
 
 >[!SUCCESS]
 >
->Sie haben jetzt alle Schritte ausgeführt. Definieren Sie zunächst, welche Daten erfasst werden sollen (Schema) und wo sie in Adobe Experience Platform gespeichert werden sollen (Datensatz). Sie haben einen Datenstrom auf dem Edge Network konfiguriert, um sicherzustellen, dass Daten an diesen Datensatz weitergeleitet werden können. Anschließend haben Sie die Edge Network-Server-API verwendet, um diese Daten an Ihren Datenstrom zu senden. Sie haben eine Verbindung in Customer Journey Analytics definiert, um Ihre Spieldaten und andere Daten zu verwenden. Mit der Definition Ihrer Datenansicht konnten Sie festlegen, welche Dimension und Metriken verwendet werden sollen. Abschließend haben Sie Ihr erstes Projekt erstellt, in dem Ihre Spieldaten visualisiert und analysiert wurden.
+>Sie haben jetzt alle Schritte ausgeführt. Definieren Sie zunächst, welche Daten erfasst werden sollen (Schema) und wo sie in Adobe Experience Platform gespeichert werden sollen (Datensatz). Sie haben einen Datenstrom auf der Edge Network konfiguriert, um sicherzustellen, dass Daten an diesen Datensatz weitergeleitet werden können. Anschließend haben Sie die Edge Network-Server-API verwendet, um diese Daten an Ihren Datenstrom zu senden. Sie haben eine Verbindung in Customer Journey Analytics definiert, um Ihre Spieldaten und andere Daten zu verwenden. Mit der Definition Ihrer Datenansicht konnten Sie festlegen, welche Dimension und Metriken verwendet werden sollen. Abschließend haben Sie Ihr erstes Projekt erstellt, in dem Ihre Spieldaten visualisiert und analysiert wurden.

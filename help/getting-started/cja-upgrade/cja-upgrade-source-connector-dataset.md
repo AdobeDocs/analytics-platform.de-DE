@@ -5,10 +5,10 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 424485a3-a076-4656-83b6-733f16cc2326
-source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
+source-git-commit: 03e9fb37684f8796a18a76dc0a93c4e14e6e7640
 workflow-type: tm+mt
-source-wordcount: '881'
-ht-degree: 100%
+source-wordcount: '887'
+ht-degree: 98%
 
 ---
 
@@ -51,7 +51,7 @@ Sie müssen diesen automatisch erstellten Datensatz zu derselben Verbindung hinz
 
 So fügen Sie den automatisch erstellten Datensatz zu derselben Verbindung hinzu, die Sie für Ihre Web-SDK-Implementierung erstellt haben:
 
-1. Rufen Sie in Customer Journey Analytics die Registerkarte **[!UICONTROL Verbindungen]** auf.
+1. Wählen Sie in Customer Journey Analytics **[!UICONTROL Verbindungen]**, optional unter **[!UICONTROL Datenverwaltung]** im oberen Menü aus.
 
 1. Wählen Sie die Verbindung aus, die Sie [für Ihre Web-SDK-Implementierung erstellt haben](/help/getting-started/cja-upgrade/cja-upgrade-connection.md).
 
