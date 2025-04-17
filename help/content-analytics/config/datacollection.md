@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin
 exl-id: 584587e6-45fd-4fc3-a7a6-6685481ddee7
-source-git-commit: e3753cfde5e57a86229d0a42a125afcc118bc479
+source-git-commit: 981cd0c01d775acbd71cada7efed4911b4bcb157
 workflow-type: tm+mt
-source-wordcount: '512'
+source-wordcount: '518'
 ht-degree: 1%
 
 ---
@@ -26,7 +26,7 @@ Im Zusammenhang mit diesem Artikel werden die folgenden Definitionen verwendet:
 * **Erlebnis**: Ein Erlebnis wird als Textinhalt auf einer gesamten Web-Seite definiert. Für die Datenerfassung zeichnet Content Analytics die Erlebnis-ID auf, die auf der Seiten-URL basiert. Später wird der Text auf der Seite über den Abrufdienst erfasst.
 * **Erlebnis-**: Eine eindeutige Kombination aus relevanter URL (Basis-URL plus alle Parameter, die den Inhalt auf der Seite steuern) und [Erlebnisversion](manual.md#versioning).
    * Sie geben als Teil der [Konfiguration](configuration.md) an, welche Parameter für eine bestimmte vollständige URL relevant sind.
-   * Sie können die [Versionskennung](manual.md#versioning) definieren, die verwendet wird.
+   * Sie definieren eine [Versionskennung](manual.md#versioning), damit Sie Änderungen an Ihren Erlebnissen ordnungsgemäß erfassen können.
 * **Asset**: Ein Bild. Content Analytics zeichnet die Asset-URL auf.
 * **Asset-**: Die URL des Assets.
 * **Relevante URL**: Die Basis-URL plus alle Parameter, die den Inhalt auf der Seite steuern.
@@ -83,9 +83,9 @@ Ein Erlebnis-Klick wird aufgezeichnet, wenn:
 * Jeder Klick auf einen Link auf der Seite, für den Erlebnisse aktiviert sind.
 
 
-### Regelmäßiges oder spezifisches (verhaltensbezogenes) Ereignis
+### Regelmäßiges oder spezifisches (Verhaltens-)Ereignis
 
-Trigger zum Auslösen eines regulären oder bestimmten (verhaltensbezogenen) Ereignisses im Kontext von Content Analytics sind:
+Trigger zum Auslösen eines regulären oder spezifischen (Verhaltens-)Ereignisses im Kontext von Content Analytics sind:
 
 * Web SDK oder AppMeasurement sendet ein -Ereignis.
 * Die Sichtbarkeit ändert sich in ausgeblendet, z. B.:

@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin
 exl-id: 4aff664c-3cd9-4591-8122-6ebff10e4a76
-source-git-commit: 6e59b029542b7b4353f03b6dd083e25955aacc7b
+source-git-commit: 5d08fac8f99e173420ecb977b91f4cb320568094
 workflow-type: tm+mt
-source-wordcount: '2571'
+source-wordcount: '2580'
 ht-degree: 46%
 
 ---
@@ -145,7 +145,7 @@ Ihre Konfiguration erfordert die Auswahl einer [Datenansicht](/help/data-views/d
 1. Klicken Sie **[!UICONTROL Speichern]**, um die ausgewählte Datenansicht zu bestätigen. Wählen Sie zum Abbrechen **[!UICONTROL Abbrechen]** aus.
 
 
-In Customer Journey Analytics ist eine [Datenansicht](/help/data-views/data-views.md) an eine Customer Journey Analytics ([) ](/help/connections/overview.md). Und eine Verbindung basiert auf einer Sandbox in Ihrer Organisation. Nachdem Sie die Konfiguration gespeichert haben **[!UICONTROL wird]** Sandbox) basierend auf der ausgewählten Datenansicht automatisch mit dem Namen der Sandbox ausgefüllt.
+In Customer Journey Analytics ist eine [Datenansicht](/help/data-views/data-views.md) an eine Customer Journey Analytics ([) ](/help/connections/overview.md). Und eine Verbindung basiert auf einer Sandbox in Ihrer Organisation. Nachdem Sie die Konfiguration gespeichert haben **[!UICONTROL wird]** Feld „Sandbox“ basierend auf der ausgewählten Datenansicht automatisch mit dem Namen der Sandbox ausgefüllt.
 
 
 ### Erlebniserfassung und -definition {#onboarding-experiences}
@@ -180,7 +180,7 @@ In Customer Journey Analytics ist eine [Datenansicht](/help/data-views/data-view
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_experiencecapture_edit_button"
 >title="Erlebniserfassung und -definition"
->abstract="Sie müssen die Einstellungen für die Erlebnisdatenerfassung in der Adobe Content Analytics-Erweiterung in der Tags-Eigenschaft bearbeiten, die mit der aktuellen Konfiguration verknüpft ist."
+>abstract="Sie müssen die Einstellungen für die Erlebnisdatenerfassung in der Adobe Content Analytics-Erweiterung bearbeiten."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -192,6 +192,14 @@ Erwägen Sie nur, Erlebnisse einzubeziehen, wenn Folgendes zutrifft:
 
 * Die Seiten auf der Website müssen unter Verwendung der Seiten-URL reproduzierbar sein.
 * Der Textinhalt, der von einem bestimmten Benutzer angezeigt wird, kann mithilfe der Seiten-URL reproduziert werden und hängt nicht von Cookies oder anderen Personalisierungsmechanismen ab.
+
+>[!IMPORTANT]
+>
+>Implementieren Sie die [Content Analytics](manual.md#versioning)Versionierung, um Änderungen zu erfassen, die Sie an den Erlebnissen (Seiten) vornehmen, die Content Analytics unterliegen.
+
+
+
+#### Neue Konfiguration {#new-experiences-configuration}
 
 So schließen Sie Erlebnisse in eine neue oder nicht implementierte Konfiguration ein:
 
@@ -208,6 +216,9 @@ So schließen Sie Erlebnisse in eine neue oder nicht implementierte Konfiguratio
    1. Geben Sie eine durch Kommas getrennte Liste von **[!UICONTROL Abfrageparametern]** an, z. B. `outdoors, patio, kitchen`.
 1. Wählen Sie **[!UICONTROL Entfernen]** aus, wenn Sie eine Kombination aus regulärem Domain-Ausdruck und Abfrageparametern entfernen möchten.
 1. Wählen **[!UICONTROL Regex hinzufügen]** aus, wenn Sie eine weitere Kombination aus einem regulären Ausdruck und Abfrageparametern hinzufügen möchten.
+
+
+### Implementierte Konfiguration {#implemented-experiences-configuration}
 
 So bearbeiten Sie vorhandene Erlebnisse oder schließen neue Erlebnisse in eine implementierte Konfiguration ein:
 
@@ -304,7 +315,8 @@ In einer neuen Konfiguration müssen Sie definieren, ob Sie eine vorhandene Tags
 
 >[!IMPORTANT]
 >
->Wenn Sie über eine bestehende Web SDK-Implementierung verfügen, die die [JavaScript-](https://experienceleague.adobe.com/de/docs/experience-platform/web-sdk/install/library)Bibliothek) verwendet und nicht die [Tags-Erweiterung](https://experienceleague.adobe.com/de/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration) verwendet, müssen Sie die automatisch eingeschlossene Web SDK-Erweiterung manuell aus der neu erstellten Tags-Eigenschaft entfernen.
+>Entfernen Sie manuell die automatisch eingeschlossene Web SDK-Erweiterung aus der neu erstellten Tags-Eigenschaft, falls Sie über eine bestehende Web SDK-Implementierung verfügen, die die [JavaScript](https://experienceleague.adobe.com/de/docs/experience-platform/web-sdk/install/library)Bibliothek anstelle der [Tags-Erweiterung) ](https://experienceleague.adobe.com/de/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration).
+>
 
 
 
