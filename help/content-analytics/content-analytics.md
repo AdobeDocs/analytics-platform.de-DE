@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin, User
 exl-id: 0d3be50d-c635-459b-8b01-61d6d4ef0cdf
-source-git-commit: 1acb6ee56ec3d1c5ae21bb857205a0b9cc66cea0
+source-git-commit: 28a0abd3415a167e6dd3de3b77bd49b78fc003cd
 workflow-type: tm+mt
-source-wordcount: '821'
-ht-degree: 50%
+source-wordcount: '858'
+ht-degree: 48%
 
 ---
 
@@ -65,10 +65,15 @@ Die Inhaltsanalyse verwendet Web-Bildansichtsdaten, die in Ereignisdatensätzen 
 >Wenn Sie das Privacy and Security Shield-Add-on lizenziert haben, beachten Sie, dass (alle aus Erlebnissen und Assets generierten Daten) vorbehaltlich Content Analyticss nicht von der DULE-Kennzeichnung oder von kundenverwalteten Schlüsseln abgedeckt werden.
 >
 
+>[!NOTE]
+>
+>Content Analytics [sendet zusätzliche Ereignisse](config/datacollection.md#content-analytics-event) die sich höchstwahrscheinlich auf jede Absprungratendefinition auswirken, die auf der Anzahl der Ereignisse in einer Sitzung oder einer Seite basiert.
+>
 
 >[!MORELIKETHIS]
 >
 >[Reporting für die Inhaltsanalyse](report/report.md)
 >[Konfigurieren der Inhaltsanalyse](config/configuration.md)
+>[Berechnen von Bounces und Absprungraten in Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/calculating-bounces-amp-bounce-rate-in-adobe-customer-journey/ba-p/706446#M454)
 >
 
