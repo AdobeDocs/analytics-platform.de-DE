@@ -5,7 +5,7 @@ feature: Dimensions
 solution: Customer Journey Analytics
 exl-id: 17b275a5-c2c2-48ee-b663-e7fe76f79456
 role: User
-source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
+source-git-commit: 4bfa32ba3a7902d31edefab17a00206f922a8382
 workflow-type: tm+mt
 source-wordcount: '544'
 ht-degree: 7%
@@ -34,8 +34,8 @@ Obwohl einige einzelne Dimensionselemente in Berichten mit hoher Kardinalität f
 
 Die beste Möglichkeit, Dimensionen mit hoher Kardinalität zu berücksichtigen, besteht darin, die Anzahl der Dimensionselemente zu begrenzen, die ein Bericht verarbeitet. Da alle Berichte zum Zeitpunkt ihrer Anforderung verarbeitet werden, können Sie die Berichtsparameter für sofortige Ergebnisse anpassen. Adobe empfiehlt eine der folgenden Optimierungen für Dimensionen mit hoher Kardinalität:
 
-* Verwenden Sie einen [Filter](/help/components/filters/create-filters.md). Filter werden angewendet, wenn jeder Server eine Teilmenge von Daten verarbeitet.
-* Verwenden Sie eine Suche. Dimension Aus dem Suchbegriff ausgeschlossene Dimensionselemente werden aus den Berichtsergebnissen entfernt, sodass die Wahrscheinlichkeit höher ist, dass die gewünschten Dimensionselemente angezeigt werden.
+* Verwenden Sie ein [Segment](/help/components/filters/create-filters.md). Segmente gelten zu dem Zeitpunkt, zu dem jeder Server eine Teilmenge von Daten verarbeitet.
+* Verwenden Sie eine Suche. Dimension-Elemente, die vom Suchbegriff ausgeschlossen sind, werden aus den Berichtsergebnissen entfernt, sodass die Wahrscheinlichkeit höher ist, dass die gewünschten Dimensionselemente angezeigt werden.
 * Verwenden Sie eine Lookup-Datensatzdimension. Lookup-Datensatzdimensionen kombinieren Elemente von Ereignis-Datensatzdimensionen, die die Anzahl der zurückgegebenen eindeutigen Werte begrenzen.
 * Verwenden Sie die [Einschließen/ausschließen](/help/data-views/component-settings/include-exclude-values.md) im Datenansichts-Manager.
 * Kürzen Sie den Datumsbereich der Anfrage. Wenn im Laufe der Zeit viele eindeutige Werte gesammelt werden, kann eine Verkürzung des Datumsbereichs des Workspace-Berichts die Anzahl der eindeutigen Werte für die zu verarbeitenden Server einschränken.

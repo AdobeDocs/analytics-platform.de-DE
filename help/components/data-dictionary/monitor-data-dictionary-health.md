@@ -4,10 +4,10 @@ title: Überwachen des Zustands des Datenwörterbuchs
 feature: Components
 role: Admin
 exl-id: 8bc89ac7-078d-469d-8627-3905823d4100
-source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+source-git-commit: 4bfa32ba3a7902d31edefab17a00206f922a8382
 workflow-type: tm+mt
 source-wordcount: '241'
-ht-degree: 87%
+ht-degree: 78%
 
 ---
 
@@ -49,6 +49,6 @@ So identifizieren Sie Probleme mit Ihrem Datenwörterbuch:
 
    * [!UICONTROL **Komponenten sind nicht mit Daten verbunden**]
 
-   Abhängig von Ihrer Auswahl wird der entsprechende Filter auf das Datenwörterbuch angewendet, sodass nur die relevanten Komponenten angezeigt werden.
+   Je nach Auswahl wird das entsprechende Segment auf das Datenwörterbuch angewendet, und es werden nur die relevanten Komponenten angezeigt.
 
 1. Bearbeiten Sie eine beliebige Komponente, um den Zustand des Datenwörterbuchs zu verbessern. Informationen zum Bearbeiten einer Komponente im Datenwörterbuch finden Sie unter [Bearbeiten von Komponenteneinträgen im Datenwörterbuch](/help/components/data-dictionary/edit-entries-data-dictionary.md).

@@ -1,29 +1,29 @@
 ---
-description: Sie können einen Workflow einrichten, der die Genehmigung von Filtern für verschiedene Anwendungsebenen, für bestimmte Abteilungen oder Gruppen sowie die Einhaltung von Berichtsrichtlinien umfasst.
-title: Genehmigen von Filtern
+description: Sie können einen Workflow einrichten, der die Genehmigung von Segmenten für verschiedene Anwendungsebenen, für bestimmte Abteilungen oder Gruppen sowie die Einhaltung von Berichtsrichtlinien umfasst.
+title: Segmente genehmigen
 feature: Filters
 exl-id: 3892ef54-3f24-4c7a-868f-f566efaea400
 role: User
-source-git-commit: 65eafd65358d9370b452338ce1036e59b3c69d1a
+source-git-commit: 4bfa32ba3a7902d31edefab17a00206f922a8382
 workflow-type: tm+mt
 source-wordcount: '131'
 ht-degree: 3%
 
 ---
 
-# Genehmigen von Filtern
+# Segmente genehmigen
 
-Im [Filter-Manager](manage-filters.md) können Sie Filter genehmigen und die Genehmigung aufheben. Nur Administratoren können Filter genehmigen.
+In [Segment-Manager](manage-filters.md) können Sie Segmente genehmigen und die Genehmigung aufheben. Nur Administratoren können Segmente genehmigen.
 
-So validieren Sie Filter:
+So genehmigen Sie Segmente:
 
-1. Wählen [ im ](manage-filters.md)-Manager einen oder mehrere der Filter aus, die Sie genehmigen möchten.
-1. Wählen Sie in der Aktionsleiste ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) **[!UICONTROL Genehmigen]** aus. Die genehmigten Filter sind durch &quot;![&quot; gekennzeichnet](/help/assets/icons/CheckmarkCircle.svg)
+1. Wählen [ im ](manage-filters.md)-Manager eines oder mehrere der Segmente aus, die Sie genehmigen möchten.
+1. Wählen Sie in der Aktionsleiste ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) **[!UICONTROL Genehmigen]** aus. Die genehmigten Segmente werden mit &quot;![&quot; ](/help/assets/icons/CheckmarkCircle.svg)
 
-So heben Sie die Genehmigung von Filtern auf:
+So heben Sie die Genehmigung für Segmente auf:
 
-1. Wählen Sie [Filter-Manager](manage-filters.md) einen oder mehrere Filter aus, deren Genehmigung Sie aufheben möchten.
+1. Wählen Sie [Segment-Manager](manage-filters.md) eines oder mehrere der Segmente aus, deren Genehmigung Sie aufheben möchten.
 1. Wählen Sie in der Aktionsleiste ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) **[!UICONTROL Nicht genehmigen]** aus.
 
 
-Sie können Ihre Filterliste nach genehmigten Filtern filtern. Wählen Sie **[!UICONTROL Sonstige Filter]** im Bedienfeld ![Filter](/help/assets/icons/Filter.svg) **[!UICONTROL Filter]** aus und wählen Sie **[!UICONTROL Genehmigt]**. Weitere Informationen [ Sie unter „Filterliste ](/help/components/filters/filters-filter.md) Filtern“.
+Sie können Ihre Segmentliste nach genehmigten Segmenten segmentieren. Wählen Sie **[!UICONTROL Andere Segmente]** im Bedienfeld ![Segment](/help/assets/icons/Filter.svg) **[!UICONTROL Segment]** aus und wählen Sie **[!UICONTROL Genehmigt]**. Weitere Informationen [ Sie unter ](/help/components/filters/filters-filter.md) der Segmentliste .

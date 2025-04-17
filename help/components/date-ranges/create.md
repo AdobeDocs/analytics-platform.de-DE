@@ -4,10 +4,10 @@ description: Datumsbereich zur Verwendung in Berichten erstellen.
 feature: Calendar
 exl-id: 3e4fa3cc-c14b-45e5-afbb-518ecfa0033e
 role: User
-source-git-commit: 3f9c185c86f2ae2727881d0d74ca54815867adb1
+source-git-commit: 4bfa32ba3a7902d31edefab17a00206f922a8382
 workflow-type: tm+mt
 source-wordcount: '533'
-ht-degree: 81%
+ht-degree: 79%
 
 ---
 
@@ -53,7 +53,7 @@ Das Dialogfeld **[!UICONTROL Neuer Datumsbereich]** oder **[!UICONTROL Datumsber
 
 1. Geben Sie einen **[!UICONTROL Titel]** für den Datumsbereich ein: z. B. **[!UICONTROL Quartalsweise]**.
 1. Geben Sie optional eine **[!UICONTROL Beschreibung]** an.
-1. Organisieren Sie den Filter, indem Sie ein oder mehrere **[!UICONTROL Tags]** erstellen oder anwenden. Beginnen Sie mit der Eingabe, um nach vorhandenen Tags zu suchen, die Sie auswählen können. Oder drücken Sie die **[!UICONTROL Eingabetaste]**, um ein neues Tag hinzuzufügen. Wählen Sie ![CrossSize75](/help/assets/icons/CrossSize75.svg) aus, um ein Tag zu entfernen. |
+1. Organisieren Sie das Segment, indem Sie ein oder mehrere **[!UICONTROL Tags“ erstellen oder]**. Beginnen Sie mit der Eingabe, um nach vorhandenen Tags zu suchen, die Sie auswählen können. Oder drücken Sie die **[!UICONTROL Eingabetaste]**, um ein neues Tag hinzuzufügen. Wählen Sie ![CrossSize75](/help/assets/icons/CrossSize75.svg) aus, um ein Tag zu entfernen. |
 1. Wählen Sie einen **[!UICONTROL Datumsbereich]** aus, indem Sie zuerst das Startdatum und dann das Enddatum auswählen.
 Alternativ können Sie eine **[!UICONTROL Voreinstellung]** aus dem Dropdown-Menü [!UICONTROL *Voreinstellung auswählen*] auswählen.
 

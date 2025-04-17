@@ -5,10 +5,10 @@ title: Verwalten von Cloud-Exportspeicherorten und -Konten
 feature: Components
 exl-id: 8e82fe6f-99df-4360-8693-99692aac002b
 role: User, Admin
-source-git-commit: 8fc8e3e4057663bd4bdf38e41bb3129df442f749
+source-git-commit: 4bfa32ba3a7902d31edefab17a00206f922a8382
 workflow-type: tm+mt
-source-wordcount: '1370'
-ht-degree: 1%
+source-wordcount: '1371'
+ht-degree: 3%
 
 ---
 
@@ -20,11 +20,11 @@ Informationen zum Erstellen eines neuen Speicherorts finden Sie unter [Konfiguri
 
 ## Filtern und Suchen von Standorten
 
-Um die benötigten Informationen zu finden, können Sie entweder die Liste der Standorte filtern oder nach einem Standort suchen.
+Um die benötigten Informationen zu finden, können Sie entweder nach der Liste der Standorte filtern oder nach einem Standort suchen.
 
 ### Filtern der Standortliste
 
-1. Wählen Sie beim Customer Journey Analytics [!UICONTROL **Komponenten**] > [!UICONTROL **Exporte**] aus.
+1. Wählen Sie in Customer Journey Analytics [!UICONTROL **Komponenten**] > [!UICONTROL **Exporte**] aus.
 
 1. Wählen Sie die [!UICONTROL **Standorte**] aus.
 
@@ -36,7 +36,7 @@ Um die benötigten Informationen zu finden, können Sie entweder die Liste der S
 
    | Filter | Beschreibung |
    |---------|----------|
-   | [!UICONTROL **Standorttyp**]<!--should this be changed to Account type?--> | Der Kontotyp, mit dem der Speicherort verknüpft ist. Die folgenden Kontotypen können verfügbar sein: <ul><li>[!UICONTROL **AEP-Data Landing Zone**]</li><li>[!UICONTROL **Amazon S3-Rollen-ARN**]</li><li>[!UICONTROL **Azure SAS**]</li><li>[!UICONTROL **Azure RBAC**]</li><li>[!UICONTROL **Google Cloud Platform**]</li><li>[!UICONTROL **Snowflake**]</li></ul> |
+   | [!UICONTROL **Standorttyp**]<!--should this be changed to Account type?--> | Der Kontotyp, mit dem der Speicherort verknüpft ist. Die folgenden Kontotypen können verfügbar sein: <ul><li>[!UICONTROL **AEP Data Landing Zone**]</li><li>[!UICONTROL **Amazon S3 Role ARN**]</li><li>[!UICONTROL **Azure SAS**]</li><li>[!UICONTROL **Azure RBAC**]</li><li>[!UICONTROL **Google Cloud Platform**]</li><li>[!UICONTROL **Snowflake**]</li></ul> |
    | [!UICONTROL **Konto**] | Der Name des Kontos, mit dem der Speicherort verknüpft ist. |
    | [!UICONTROL **Erstellt von**] | Die E-Mail-Adresse des Benutzers, der den Standort erstellt hat. |
 
@@ -44,7 +44,7 @@ Um die benötigten Informationen zu finden, können Sie entweder die Liste der S
 
 ### Suchen nach Standorten
 
-1. Wählen Sie beim Customer Journey Analytics [!UICONTROL **Komponenten**] > [!UICONTROL **Exporte**] aus.
+1. Wählen Sie in Customer Journey Analytics [!UICONTROL **Komponenten**] > [!UICONTROL **Exporte**] aus.
 
 1. Wählen Sie die [!UICONTROL **Standorte**] aus.
 
@@ -58,7 +58,7 @@ Ein Speicherort kann nur von dem Benutzer, der ihn erstellt hat, oder von einem 
 
 So bearbeiten Sie einen Speicherort:
 
-1. Wählen Sie beim Customer Journey Analytics [!UICONTROL **Komponenten**] > [!UICONTROL **Exporte**] aus.
+1. Wählen Sie in Customer Journey Analytics [!UICONTROL **Komponenten**] > [!UICONTROL **Exporte**] aus.
 
 1. Wählen Sie die [!UICONTROL **Standorte**] aus.
 
@@ -78,7 +78,7 @@ Wenn Sie einen Speicherort löschen, werden alle Exporte, die diesen Speicherort
 
 So löschen Sie einen Speicherort:
 
-1. Wählen Sie beim Customer Journey Analytics [!UICONTROL **Komponenten**] > [!UICONTROL **Exporte**] aus.
+1. Wählen Sie in Customer Journey Analytics [!UICONTROL **Komponenten**] > [!UICONTROL **Exporte**] aus.
 
 1. Wählen Sie die [!UICONTROL **Standorte**] aus.
 
@@ -104,7 +104,7 @@ Ein Konto kann nur von dem Benutzer, der es erstellt hat, oder von einem Systema
 
 So bearbeiten Sie ein Konto:
 
-1. Wählen Sie beim Customer Journey Analytics [!UICONTROL **Komponenten**] > [!UICONTROL **Exporte**] aus.
+1. Wählen Sie in Customer Journey Analytics [!UICONTROL **Komponenten**] > [!UICONTROL **Exporte**] aus.
 
 1. Wählen Sie die [!UICONTROL **Speicherort-Konten**] aus.
 
@@ -122,7 +122,7 @@ Nachdem Sie ein Konto erstellt haben, können Sie alle zugehörigen Kontoschlüs
 
 So zeigen Sie die mit einem Exportkonto verknüpften Schlüssel an:
 
-1. Wählen Sie beim Customer Journey Analytics [!UICONTROL **Komponenten**] > [!UICONTROL **Exporte**] aus.
+1. Wählen Sie in Customer Journey Analytics [!UICONTROL **Komponenten**] > [!UICONTROL **Exporte**] aus.
 
 1. Wählen Sie die [!UICONTROL **Speicherort-Konten**] aus.
 
@@ -134,7 +134,7 @@ So zeigen Sie die mit einem Exportkonto verknüpften Schlüssel an:
 
 ## Löschen von Konten
 
-1. Wählen Sie beim Customer Journey Analytics [!UICONTROL **Komponenten**] > [!UICONTROL **Exporte**] aus.
+1. Wählen Sie in Customer Journey Analytics [!UICONTROL **Komponenten**] > [!UICONTROL **Exporte**] aus.
 
 1. Wählen Sie die [!UICONTROL **Speicherort-Konten**] aus.
 
@@ -154,13 +154,13 @@ Systemadministratoren können Benutzer daran hindern, Konten und Standorte zu er
 
 ### Konfigurieren, ob Benutzer Konten erstellen und bearbeiten können
 
-Standardmäßig können alle Benutzerinnen und Benutzer im Unternehmen Konten erstellen und Konten bearbeiten, die sie in Ihrer Customer Journey Analytics-Umgebung erstellen, wie in [Konfigurieren von Cloud-Exportkonten](/help/components/exports/cloud-export-accounts.md) beschrieben.
+Standardmäßig können alle Benutzerinnen und Benutzer im Unternehmen in Ihrer Customer Journey Analytics-Umgebung Konten erstellen und Konten bearbeiten, wie in [Konfigurieren von Cloud-Exportkonten](/help/components/exports/cloud-export-accounts.md) beschrieben.
 
 Sie können das Erstellen von Konten durch Benutzer einschränken. Wenn Sie dies tun, können Benutzer weiterhin alle Konten verwenden, die sie bereits erstellt haben, sie können sie jedoch nicht mehr bearbeiten. Von Benutzern erstellte Konten können gelöscht werden, wie unter [Löschen eines Kontos](#delete-an-account) beschrieben.
 
 So verhindern Sie, dass alle Benutzer Konten erstellen und bearbeiten:
 
-1. Wählen Sie beim Customer Journey Analytics **[!UICONTROL Komponenten]** > **[!UICONTROL Exporte]** und klicken Sie dann auf die Registerkarte [!UICONTROL **Admin-Einstellungen**].
+1. Wählen Sie in Customer Journey Analytics **[!UICONTROL Komponenten]** > **[!UICONTROL Exporte]** und klicken Sie dann auf die Registerkarte [!UICONTROL **Admin-Einstellungen**].
 
 1. Deaktivieren Sie im Abschnitt [!UICONTROL **Standortkonten**] die Option [!UICONTROL **Benutzern das Erstellen und Verwalten von Standortkonten ermöglichen**].
 
@@ -170,13 +170,13 @@ So verhindern Sie, dass alle Benutzer Konten erstellen und bearbeiten:
 
 ### Konfigurieren, ob Benutzer Standorte erstellen und bearbeiten können
 
-Standardmäßig können alle Benutzerinnen und Benutzer im Unternehmen Speicherorte erstellen und Speicherorte bearbeiten, die sie in Ihrer Customer Journey Analytics-Umgebung erstellen, wie in [Konfigurieren von Cloud-Exportspeicherorten](/help/components/exports/cloud-export-locations.md) beschrieben.
+Standardmäßig können alle Benutzerinnen und Benutzer im Unternehmen Standorte erstellen und Standorte bearbeiten, die sie in Ihrer Customer Journey Analytics-Umgebung erstellen, wie in [Konfigurieren von Cloud-Exportspeicherorten](/help/components/exports/cloud-export-locations.md) beschrieben.
 
 Sie können Benutzer daran hindern, Standorte zu erstellen. Wenn Sie dies tun, können Benutzerinnen und Benutzer weiterhin alle Speicherorte verwenden, die sie bereits erstellt haben, sie können sie jedoch nicht mehr bearbeiten. Sie können von Benutzern erstellte Speicherorte löschen, wie unter [Löschen von Speicherorten](#delete-a-location) beschrieben.
 
 So verhindern Sie, dass alle Benutzer Standorte erstellen und bearbeiten:
 
-1. Wählen Sie beim Customer Journey Analytics **[!UICONTROL Komponenten]** > **[!UICONTROL Exporte]** und klicken Sie dann auf die Registerkarte [!UICONTROL **Admin-Einstellungen**].
+1. Wählen Sie in Customer Journey Analytics **[!UICONTROL Komponenten]** > **[!UICONTROL Exporte]** und klicken Sie dann auf die Registerkarte [!UICONTROL **Admin-Einstellungen**].
 
 1. Deaktivieren Sie im [!UICONTROL **Standorte**] die Option [!UICONTROL **Benutzern das Erstellen und Verwalten von Standorten ermöglichen**].
 
@@ -215,15 +215,15 @@ Löschen von Konten:
 
 So beschränken Sie die Kontotypen, die Benutzern beim Erstellen und Verwenden von Konten zur Verfügung stehen:
 
-1. Wählen Sie beim Customer Journey Analytics **[!UICONTROL Komponenten]** > **[!UICONTROL Exporte]** und klicken Sie dann auf die Registerkarte [!UICONTROL **Admin-Einstellungen**].
+1. Wählen Sie in Customer Journey Analytics **[!UICONTROL Komponenten]** > **[!UICONTROL Exporte]** und klicken Sie dann auf die Registerkarte [!UICONTROL **Admin-Einstellungen**].
 
 1. Suchen Sie den Abschnitt [!UICONTROL **Zulässige**]).
 
    Die folgenden Kontotypen stehen Benutzern standardmäßig zur Verfügung. Heben Sie die Auswahl eines dieser Kontotypen auf, deren Verwendung für Benutzer eingeschränkt werden soll.
 
-   * [!UICONTROL **AEP-Data Landing Zone**]
+   * [!UICONTROL **AEP Data Landing Zone**]
 
-   * [!UICONTROL **Amazon S3-Rollen-ARN**]
+   * [!UICONTROL **Amazon S3 Role ARN**]
 
    * [!UICONTROL **Google Cloud Platform**]
 
