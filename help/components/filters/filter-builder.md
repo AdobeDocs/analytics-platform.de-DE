@@ -1,24 +1,24 @@
 ---
-description: Der Filtergenerator bietet eine Arbeitsfläche zum Drag-and-Drop von Metrikdimensionen, Filtern und Ereignissen, um Besuchende anhand von Container-Hierarchielogik, Regeln und Operatoren zu filtern. Mit diesem integrierten Entwicklungs-Tool können Sie einfache oder komplexe Filter erstellen und speichern, mit deren Hilfe Pesronenattribute und Aktionen bei Besuchen und Ereignissen identifiziert werden.
-title: Erstellen von Filtern
+description: Segment Builder bietet eine Arbeitsfläche, auf der Metrikdimensionen, Segmente und Ereignisse basierend auf Container-Hierarchielogik, Regeln und Operatoren per Drag-and-Drop an Personen segmentiert werden können. Mit diesem integrierten Entwicklungs-Tool können Sie einfache oder komplexe Segmente erstellen und speichern, die Personenattribute und Aktionen über Besuche und Ereignisse hinweg identifizieren.
+title: Segmente erstellen
 feature: Filters
 role: User
 exl-id: 160021f1-6942-4682-9114-d375307d9912
-source-git-commit: c94e97723a4ed30e675144e02196c93016b13235
+source-git-commit: 4bfa32ba3a7902d31edefab17a00206f922a8382
 workflow-type: tm+mt
-source-wordcount: '1570'
-ht-degree: 91%
+source-wordcount: '1571'
+ht-degree: 46%
 
 ---
 
-# Erstellen von Filtern {#build-filters}
+# Segmente erstellen {#build-segments}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="components_filters_createaudience"
 >title="Erstellen einer Zielgruppe"
->abstract="Zielgruppen können mithilfe eines Filters erstellt und zur Aktivierung für Adobe Experience Platform freigegeben werden."
+>abstract="Zielgruppen können aus einem Segment erstellt und für die Adobe Experience Platform freigegeben werden, damit sie aktiviert werden können."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -27,23 +27,23 @@ ht-degree: 91%
 >[!CONTEXTUALHELP]
 >id="components_filters_datapreview"
 >title="Datenvorschau"
->abstract="Vergleicht die Daten dieses Filters mit den Daten der Datenansicht. Der Prozentsatz der Vorschau basiert auf der Gesamtzahl der Daten in der Datenansicht aus den **letzten 90 Tagen**.<br><br/>Wenn die Vorschau nicht geladen wird, wird Ihre Verbindung möglicherweise noch aufgestockt."
+>abstract="Vergleicht die Daten dieses Segments mit den Daten der Datenansicht. Der Prozentsatz der Vorschau basiert auf der Gesamtzahl der Daten in der Datenansicht aus den **letzten 90 Tagen**.<br><br/>Wenn die Vorschau nicht geladen wird, wird Ihre Verbindung möglicherweise noch aufgestockt."
 
 <!-- markdownlint-enable MD034 -->
 
 
 
-Das Dialogfeld **[!UICONTROL Generator filtern]** wird zum Erstellen neuer oder Bearbeiten vorhandener Filter verwendet. Das Dialogfeld heißt **[!UICONTROL Neuer Filter]** oder **[!UICONTROL Filter bearbeiten]** bei Filtern, die Sie über den [[!UICONTROL Filter]-Manager](/help/components/filters/manage-filters.md) erstellen oder verwalten.
+Das Dialogfeld **[!UICONTROL Segment Builder]** wird verwendet, um neue Segmente zu erstellen oder vorhandene Segmente zu bearbeiten. Das Dialogfeld heißt **[!UICONTROL Neues Segment]** oder **[!UICONTROL Segment bearbeiten]** für Segmente, die Sie über den [[!UICONTROL Segment]Manager erstellen oder verwalten](/help/components/filters/manage-filters.md).
 
 >[!BEGINTABS]
 
->[!TAB Filtergenerator]
+>[!TAB Segment Builder]
 
-![Fenster Filterdetails mit Feldern und Optionen, die im nächsten Abschnitt beschrieben werden.](assets/filter-builder.png)
+![Fenster „Segmentdetails“ mit Feldern und Optionen, die im nächsten Abschnitt beschrieben werden.](assets/filter-builder.png)
 
->[!TAB Erstellen oder Bearbeiten von Filtern]
+>[!TAB Segment erstellen oder bearbeiten]
 
-![Fenster Filterdetails mit Feldern und Optionen, die im nächsten Abschnitt beschrieben werden.](assets/create-edit-filter.png)
+![Fenster „Segmentdetails“ mit Feldern und Optionen, die im nächsten Abschnitt beschrieben werden.](assets/create-edit-filter.png)
 
 >[!ENDTABS]
 
@@ -51,27 +51,27 @@ Das Dialogfeld **[!UICONTROL Generator filtern]** wird zum Erstellen neuer oder 
 
    | Element | Beschreibung |
    | --- | --- |
-   | **[!UICONTROL Datenansicht]** | Sie können die Datenansicht für den Filter auswählen.  Der von Ihnen definierte Filter ist als Filter auf der Registerkarte [Einstellungen](/help/data-views/create-dataview.md#settings-filters) einer Datenansicht verfügbar. |
-   | **[!UICONTROL Filter nur für das Projekt]** | Ein Informationsfeld, mit dem erklärt wird, dass der Filter nur in dem Projekt sichtbar ist, in dem er erstellt wurde, und dass der Filter nicht zu Ihrer Komponentenliste hinzugefügt wird. Aktivieren Sie **[!UICONTROL Diesen Filter für alle Projekte verfügbar machen und der Komponentenliste hinzufügen]**, um diese Einstellung zu ändern. Dieses Infofeld wird nur angezeigt, wenn Sie einen [Schnellfilter](quick-filters.md) erstellen und diesen mithilfe von **[!UICONTROL Builder öffnen]** in der Oberfläche [!UICONTROL Schnellfilter] in einen regulären Filter umwandeln. |
-   | **[!UICONTROL Titel]** ![Erforderlich](/help/assets/icons/Required.svg) | Benennen Sie den Filter, beispielsweise mit `Last month mobile customers`. |
-   | **[!UICONTROL Beschreibung]** | Geben Sie eine Beschreibung für den Filter ein, z. B. `Filter to define the mobile customers for the last month`. |
-   | **[!UICONTROL Tags]** | Organisieren Sie den Filter, indem Sie ein oder mehrere Tags erstellen oder anwenden. Beginnen Sie mit der Eingabe, um nach vorhandenen Tags zu suchen, die Sie auswählen können. Oder drücken Sie die **[!UICONTROL Eingabetaste]**, um ein neues Tag hinzuzufügen. Wählen Sie ![CrossSize75](/help/assets/icons/CrossSize75.svg) aus, um ein Tag zu entfernen. |
-   | **[!UICONTROL Definition]** ![Required](/help/assets/icons/Required.svg) | Definieren Sie Ihren Filter mit dem [Definition Builder](#definition-builder). |
+   | **[!UICONTROL Datenansicht]** | Sie können die Datenansicht für das Segment auswählen.  Das von Ihnen definierte Segment ist als Segment in der Registerkarte [Einstellungen](/help/data-views/create-dataview.md#settings-filters) einer Datenansicht verfügbar. |
+   | **[!UICONTROL Segment nur für Projekte]** | Ein Informationsfeld, in dem erläutert wird, dass das Segment nur in dem Projekt sichtbar ist, in dem es erstellt wurde, und nicht zur Komponentenliste hinzugefügt wird. Aktivieren Sie **[!UICONTROL Dieses Segment für alle Projekte verfügbar machen und der Komponentenliste hinzufügen]** um diese Einstellung zu ändern. Dieses Infofeld wird nur angezeigt, wenn Sie ein [Schnellsegment](quick-filters.md) erstellen und das Schnellsegment mithilfe von **[!UICONTROL Open Builder]** in der [!UICONTROL Schnellsegment]-Oberfläche in ein reguläres Segment umwandeln. |
+   | **[!UICONTROL Titel]** ![Erforderlich](/help/assets/icons/Required.svg) | Benennen Sie das Segment, z. B. `Last month mobile customers`. |
+   | **[!UICONTROL Beschreibung]** | Geben Sie eine Beschreibung für das Segment an, z. B. `Filter to define the mobile customers for the last month`. |
+   | **[!UICONTROL Tags]** | Organisieren Sie das Segment, indem Sie ein oder mehrere Tags erstellen oder anwenden. Beginnen Sie mit der Eingabe, um nach vorhandenen Tags zu suchen, die Sie auswählen können. Oder drücken Sie die **[!UICONTROL Eingabetaste]**, um ein neues Tag hinzuzufügen. Wählen Sie ![CrossSize75](/help/assets/icons/CrossSize75.svg) aus, um ein Tag zu entfernen. |
+   | **[!UICONTROL Definition]** ![Required](/help/assets/icons/Required.svg) | Definieren Sie Ihr Segment mit dem [Definition Builder](#definition-builder). |
 
    {style="table-layout:auto"}
 
-1. Um zu überprüfen, ob Ihre Filterdefinition korrekt ist, verwenden Sie die ständig aktualisierte Vorschau der Ergebnisse des Filters oben rechts.
-1. Um eine Zielgruppe aus dem Filter zu erstellen und die Zielgruppe für Experience Platform freizugeben, wählen Sie **[!UICONTROL Zielgruppe aus Filter erstellen]** aus. Weitere Informationen finden Sie unter [ Erstellen und Veröffentlichen von Zielgruppen](/help/components/audiences/publish.md).
+1. Um sicherzustellen, dass Ihre Segmentdefinition korrekt ist, verwenden Sie die ständig aktualisierte Vorschau der Ergebnisse des Segments oben rechts.
+1. Um eine Zielgruppe aus dem Segment zu erstellen und die Zielgruppe für Experience Platform freizugeben, wählen Sie **[!UICONTROL Zielgruppe aus Segment erstellen]** aus. Weitere Informationen finden Sie unter [ Erstellen und Veröffentlichen von Zielgruppen](/help/components/audiences/publish.md).
 1. Wählen Sie Folgendes aus:
-   * **[!UICONTROL Speichern]**: Speichert den Filter.
-   * **[!UICONTROL Speichern unter]**: Speichert eine Kopie des Filters.
-   * **[!UICONTROL Löschen]**: Löscht den Filter.
-   * **[!UICONTROL Abbrechen]**: Verwirft alle Änderungen, die Sie an einem Filter vorgenommen haben, oder bricht die Erstellung eines neuen Filters ab.
+   * **[!UICONTROL Speichern]**, um das Segment zu speichern.
+   * **[!UICONTROL Speichern unter]**, um eine Kopie des Segments zu speichern.
+   * **[!UICONTROL Löschen]**, um das Segment zu löschen.
+   * **[!UICONTROL Abbrechen]**, um alle an dem Segment vorgenommenen Änderungen rückgängig zu machen oder die Erstellung eines neuen Segments abzubrechen.
 
 
 ## Definition Builder
 
-Mit dem Definition Builder erstellen Sie Ihre Filterdefinition. Dabei verwenden Sie Komponenten, Container, Operatoren und Logik.
+Mit dem Definition Builder erstellen Sie eine Segmentdefinition. Dabei verwenden Sie Komponenten, Container, Operatoren und Logik.
 
 Sie können den Typ und den Umfang Ihrer Definition konfigurieren:
 
@@ -82,13 +82,13 @@ Sie können diese Einstellungen später jederzeit ändern.
 
 ### Komponenten
 
-Ein wichtiger Teil beim Erstellen Ihrer Filterdefinition ist die Verwendung von Dimensionen, Metriken, vorhandenen Filtern und Datumsbereichen. Alle diese Komponenten sind über das Panel „Komponenten“ im Filteraufbau verfügbar.
+Ein wichtiger Teil beim Erstellen Ihrer Segmentdefinition ist die Verwendung von Dimensionen, Metriken, vorhandenen Segmenten und Datumsbereichen. Alle diese Komponenten sind über das Panel „Komponenten“ im Filteraufbau verfügbar.
 
 ![Erstellen einer Definition](assets/start-building-filter.gif){width=100%}
 
 So fügen Sie eine Komponente hinzu:
 
-1. Ziehen Sie eine Komponente aus dem Panel „Komponenten“ auf **[!UICONTROL Metrik(en), Filter und/oder Dimensionen per Drag-and-Drop hierher ziehen]**. Sie können die ![Suche](/help/assets/icons/Search.svg) in der Komponentenleiste verwenden, um nach bestimmten Komponenten zu suchen.
+1. Ziehen Sie eine Komponente aus dem Bedienfeld „Komponenten“ per Drag **[!UICONTROL and-Drop auf „Metrik(en), Segment(e) und/oder Dimensionen hierher ziehen und ablegen]**. Sie können die ![Suche](/help/assets/icons/Search.svg) in der Komponentenleiste verwenden, um nach bestimmten Komponenten zu suchen.
 1. Geben Sie Details für die Komponente an. Wählen Sie beispielsweise einen Wert über **[!UICONTROL Wert auswählen]** aus. Oder geben Sie einen Wert ein. Wie Sie einen oder mehrere Werte und welche Werte Sie angeben können, hängt von der Komponente und dem Operator ab.
 1. Ändern Sie optional den Standardoperator. Beispiel: von **[!UICONTROL ist gleich]** zu **[!UICONTROL ist gleich eines von]**. Unter [Operatoren](operators.md) finden Sie einen detaillierten Überblick über die verfügbaren Operatoren.
 
@@ -104,7 +104,7 @@ So löschen Sie eine Komponente:
 
 ### Container
 
-Sie können mehrere Komponenten in einem oder mehreren Containern gruppieren und Logik innerhalb und zwischen Containern definieren. Mit Containern können Sie komplexe Definitionen für Ihren Filter erstellen.
+Sie können mehrere Komponenten in einem oder mehreren Containern gruppieren und Logik innerhalb und zwischen Containern definieren. Mit Containern können Sie komplexe Definitionen für Ihr Segment erstellen.
 
 ![Container hinzufügen](assets/add-container.gif){Width=100%}
 
@@ -112,7 +112,7 @@ Sie können mehrere Komponenten in einem oder mehreren Containern gruppieren und
 * Um eine vorhandene Komponente zum Container hinzuzufügen, ziehen Sie die Komponente per Drag-and-Drop in den Container.
 * Um dem Container eine weitere Komponente hinzuzufügen, ziehen Sie eine Komponente per Drag-and-Drop aus dem Panel „Komponente“ in den Container. Verwenden Sie die blaue Linie zum Einfügen als Orientierung.
 * Um eine weitere Komponente außerhalb des Containers hinzuzufügen, ziehen Sie eine Komponente per Drag-and-Drop aus dem Panel „Komponente“ außerhalb des Containers, aber innerhalb des Containers für die Hauptdefinition. Verwenden Sie die blaue Linie zum Einfügen als Orientierung.
-* Um die Logik zwischen Komponenten in einem Container, zwischen Containern oder zwischen einem Container und einer Komponente zu ändern, wählen Sie die entsprechende Option **[!UICONTROL Und]**, **[!UICONTROL Oder]**, **[!UICONTROL Dann]**. Wenn Sie „Dann“ auswählen, wandeln Sie den Filter in einen sequenziellen Filter um. Weitere Informationen finden Sie unter [Erstellen eines sequenziellen Filters](seg-sequential-build.md).
+* Um die Logik zwischen Komponenten in einem Container, zwischen Containern oder zwischen einem Container und einer Komponente zu ändern, wählen Sie die entsprechende Option **[!UICONTROL Und]**, **[!UICONTROL Oder]**, **[!UICONTROL Dann]**. Wenn Sie Dann auswählen, wandeln Sie das Segment in ein sequenzielles Segment um. Weitere Informationen [ Sie unter &quot;](seg-sequential-build.md) Segment erstellen“.
 * Um die Container-Ebene zu wechseln, wählen Sie ![Globales ](/help/assets/icons/Globe.svg) **[!UICONTROL Globales Konto]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}, ![Konto](/help/assets/icons/Account.svg)**[!UICONTROL Konto]** [!BADGE B2B editionB2B edition B2B edition ]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}, ![Opportunity **(/help/assets/icons/Opportunity.svg)](/help/assets/icons/BuyingGroup.svg),]**]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}KaufGruppen![**[!UICONTROL Gruppen]** ]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"} ![ ](/help/assets/icons/WebPage.svg) **** ![ ](/help/assets/icons/Visit.svg) **** ![ ](/help/assets/icons/User.svg) ****,[!BADGE [!BADGE 
 
 Sie können ![Einstellung](/help/assets/icons/Setting.svg) in einem Container für die folgenden Aktionen verwenden:
@@ -120,15 +120,15 @@ Sie können ![Einstellung](/help/assets/icons/Setting.svg) in einem Container f�
 | Container-Aktion | Beschreibung |
 |---|---|
 | **[!UICONTROL Behälter hinzufügen]** | Fügen Sie dem Container einen verschachtelten Container hinzu. |
-| **[!UICONTROL Ausschließen]** | Schließen Sie das Ergebnis aus dem Container in der Filterdefinition aus. Ein dünner roter Balken auf der linken Seite kennzeichnet einen Container „Ausschließen.“ |
-| **[!UICONTROL Einschließlich]** | Beziehen Sie das Ergebnis aus dem Container in die Filterdefinition ein. Die Standardeinstellung lautet „Einbeziehen“. Ein dünner grauer Balken auf der linken Seite kennzeichnet einen Container „Einbeziehen“. |
+| **[!UICONTROL Ausschließen]** | Schließen Sie das Ergebnis aus dem Container in der Segmentdefinition aus. Ein dünner roter Balken auf der linken Seite kennzeichnet einen Container „Ausschließen.“ |
+| **[!UICONTROL Einschließlich]** | Fügen Sie das Ergebnis aus dem Container in die Segmentdefinition ein. Die Standardeinstellung lautet „Einbeziehen“. Ein dünner grauer Balken auf der linken Seite kennzeichnet einen Container „Einbeziehen“. |
 | **[!UICONTROL Container benennen]** | Benennen Sie den Container ausgehend von seiner Standardbeschreibung um. Geben Sie einen Namen in das Textfeld ein. Wenn Sie keine Eingabe vornehmen, wird die Standardbeschreibung verwendet. |
 | **[!UICONTROL Container löschen]** | Löschen Sie den Container aus der Definition. |
 
 
 ## Datumsbereiche
 
-Sie können Filter erstellen, die rollierende Datumsbereiche enthalten. Sie können also Fragen zu laufenden Kampagnen oder Ereignissen beantworten. Sie können beispielsweise einen Filter erstellen, der *alle, die in den vergangenen 60 Tagen Online-Käufe getätigt haben*, beinhaltet.
+Sie können Segmente erstellen, die rollierende Datumsbereiche enthalten. Auf diese Weise können Sie Fragen zu laufenden Kampagnen oder Ereignissen beantworten. Sie können beispielsweise ein Segment erstellen, das Folgendes enthält *alle, die in den letzten 60 Tagen einen Online-Kauf getätigt haben*.
 
 ![Filter mit rollierendem Datumsbereich](assets/filter-rolling-date-range.gif)
 
@@ -140,17 +140,17 @@ Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Rollierende Da
 >[!ENDSHADEBOX]
 
 
-## Stapeln von Filtern {#stack}
+## Stapelung von Segmenten {#stack}
 
-Sie können einen Filter mithilfe von Filtern erstellen. Wenn Sie Filter in einem Filter verwenden, können Sie Ihren Filter optimieren und die Komplexität reduzieren.
+Sie können ein Segment mithilfe von Segmenten erstellen. Wenn Sie Segmente in einem Segment verwenden, können Sie Ihr Segment optimieren und die Komplexität reduzieren.
 
-Angenommen, Sie möchten nach Gerätetyp (2) und US-Bundesstaaten (50) filtern. Die erste Möglichkeit: Sie erstellen 100 Filter, d. h. jeweils eine eindeutige Kombination aus Gerätetyp (Mobiltelefon oder Tablet) und US-Bundesstaat. Um die kalifornischen Tablet-Benutzenden abzurufen, würden Sie dann einen der 100 Filter verwenden:
+Angenommen, Sie möchten eine Segmentierung anhand der Kombination aus Gerätetyp (2) und US-Status (50) vornehmen. Sie können entweder 100 Segmente erstellen, jedes für die eindeutige Kombination aus Gerätetyp (Mobiltelefon versus Tablet) und US-Bundesstaat. Um die Tablet-Benutzer in Kalifornien zu erhalten, verwenden Sie eines der 100 Segmente:
 
-![Einfacher Filter für Kalifornien und den Gerätetyp „Tablet“](assets/filter-ca-tablet-single.png)
+![Einfaches Segment für Kalifornien und Tablet](assets/filter-ca-tablet-single.png)
 
-Die zweite Möglichkeit: Sie definieren 52 Filter, d. h. 50 Filter für die US-Bundesstaaten sowie jeweils einen für den Gerätetyp „Mobiltelefon“ und „Tablet“. Stapeln Sie dann die Filter, um die gleichen Ergebnisse zu erhalten. Um die kalifornischen Tablet-Benutzenden abzurufen, würden Sie zwei Filter stapeln:
+Oder Sie könnten 52 Segmente definieren: 50 Segmente für die US-Bundesstaaten, eines für Mobiltelefone und eines für Tablet-Computer. Stapeln Sie dann die Segmente, um die gleichen Ergebnisse zu erhalten. Um die kalifornischen Tablet-Benutzer zu erhalten, stapeln Sie zwei Segmente:
 
-![Gestapelter Filter für Kalifornien und den Gerätetyp „Tablet“](assets/filter-ca-tablet-stacked.png)
+![Gestapeltes Segment für CA und Tablet](assets/filter-ca-tablet-stacked.png)
 
 
 ## Attribution {#attribution}
@@ -184,7 +184,7 @@ Die zweite Möglichkeit: Sie definieren 52 Filter, d. h. 50 Filter für die U
 
 
 
-Wenn Sie eine Dimension im Filtergenerator verwenden, können Sie das Attributionsmodell für diese Dimension angeben. Das von Ihnen ausgewählte Attributionsmodell bestimmt, ob Daten für die Bedingung qualifiziert sind, die Sie für die Dimensionskomponente angegeben haben.
+Wenn Sie eine Dimension in Segment Builder verwenden, haben Sie die Möglichkeit, das Attributionsmodell für diese Dimension anzugeben. Das von Ihnen ausgewählte Attributionsmodell bestimmt, ob Daten für die Bedingung qualifiziert sind, die Sie für die Dimensionskomponente angegeben haben.
 
 Wählen Sie in der Dimensionskomponente das Symbol ![Setting](/help/assets/icons/Setting.svg) und dann eines der Attributionsmodelle aus dem Popup aus:
 
@@ -195,11 +195,11 @@ Wählen Sie in der Dimensionskomponente das Symbol ![Setting](/help/assets/icons
 | **[!UICONTROL Sich nicht wiederholende Instanz]** | Schließen Sie eindeutige (sich nicht wiederholende) Instanzwerte für die Dimension ein, um die Qualifizierung zu bestimmen. |
 
 
-![Attributionsmodell für Dimension beim Erstellen eines Filters](assets/filter-dimension-attribution.png)
+![Attributionsmodell auf Dimension beim Erstellen eines Segments](assets/filter-dimension-attribution.png)
 
 ### Beispiel
 
-Als Teil einer Filterdefinition haben Sie die folgende Bedingung angegeben: Seitenname ist gleich Frauen. Dies ist ähnlich wie im obigen Beispiel. Sie wiederholen diese Filterdefinition mit den beiden anderen Attributionsmodellen. Sie haben also drei Filter mit jeweils einem eigenen Attributionsmodell:
+Als Teil einer Segmentdefinition haben Sie die folgende Bedingung angegeben: Seitenname ist gleich Frauen. Ähnlich wie im obigen Beispiel. Sie wiederholen diese Segmentdefinition mithilfe der beiden anderen Attributionsmodelle. Sie haben also drei Segmente mit jeweils einem eigenen Attributionsmodell:
 
 * „Frauen“-Seite – Attribution – Wiederholung (Standard)
 * „Frauen“-Seite – Attribution – Instanz
@@ -215,6 +215,6 @@ In der folgenden Tabelle wird für jedes Attributionsmodell angegeben, welche ei
 | Instanz | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![Entfernen](/help/assets/icons/Remove.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![Entfernen](/help/assets/icons/Remove.svg) | ![Entfernen](/help/assets/icons/Remove.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![Entfernen](/help/assets/icons/Remove.svg) |
 | Sich nicht wiederholende Instanz | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![Entfernen](/help/assets/icons/Remove.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![Entfernen](/help/assets/icons/Remove.svg) | ![Entfernen](/help/assets/icons/Remove.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![Entfernen](/help/assets/icons/Remove.svg) |
 
-Ein Beispielbericht zu Ereignissen, die die drei Filter verwenden, sieht wie folgt aus:
+Ein Beispielbericht zu Ereignissen, die die drei Segmente verwenden, sieht wie folgt aus:
 
-![Filtern der Ergebnisse für ein Attributionsmodell](assets/filter-dimension-attribution-results.png)
+![Ergebnisse des Segmentzuordnungsmodells](assets/filter-dimension-attribution-results.png)
