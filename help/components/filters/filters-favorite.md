@@ -1,22 +1,22 @@
 ---
-description: Das Kennzeichnen von Filtern als Favoriten bietet eine weitere Möglichkeit, diese für eine einfache Verwendung zu organisieren.
-title: Filter als Favoriten markieren
+description: Das Kennzeichnen von Segmenten als Favoriten bietet eine weitere Möglichkeit, diese für eine einfache Verwendung zu organisieren.
+title: Segmente als Favoriten markieren
 feature: Filters
 exl-id: b13457dd-06e5-4316-af7e-edcf4ee46408
 role: User
-source-git-commit: 8f3b30ca6d20d633669d7e9180884c24e0b9a52e
+source-git-commit: 716d6423c0cc8b91aa4951952191e0fd0e627c0f
 workflow-type: tm+mt
 source-wordcount: '96'
 ht-degree: 18%
 
 ---
 
-# Filter als Favoriten markieren
+# Segmente als Favoriten markieren
 
-Sie können einen Filter als Favoriten markieren. Wenn Sie Filter als Favoriten markieren, können Sie Ihre Filter organisieren. Alle Benutzer können Filter bevorzugen.
+Sie können ein Segment als Favorit markieren. Wenn Sie Segmente als Favoriten markieren, können Sie Ihre Segmente organisieren. Alle Benutzer können Segmente bevorzugen.
 
-Um einen Filter zu favorisieren oder zu deaktivieren, gehen Sie im [Filter-Manager](/help/components/filters/manage-filters.md) folgendermaßen vor:
+Um ein Segment zu begünstigen oder zu ungünstigen, gehen Sie im [Segment-Manager](/help/components/filters/manage-filters.md) folgendermaßen vor:
 
-* Wählen Sie ![StarOutline](/help/assets/icons/StarOutline.svg) aus, um einen Filter zu bevorzugen, oder wählen Sie ![Star](/help/assets/icons/Star.svg) aus, um einen Filter zu bevorzugen.
+* Wählen Sie ![StarOutline](/help/assets/icons/StarOutline.svg) aus, um ein Segment zu bevorzugen, oder wählen Sie ![Star](/help/assets/icons/Star.svg) aus, um es zu bevorzugen.
 
-Sie können Ihre Filterliste nach Favoriten sortieren. Wählen Sie **[!UICONTROL Sonstige Filter]** im Bedienfeld ![Filter](/help/assets/icons/Filter.svg) **[!UICONTROL Filter]** aus und wählen Sie **[!UICONTROL Favoriten]**. Weitere Informationen [ Sie unter „Filterliste ](/help/components/filters/filters-filter.md) Filtern“.
+Sie können Ihre Segmentliste nach Favoriten sortieren. Wählen Sie **[!UICONTROL Andere Segmente]** im Bedienfeld ![Segment](/help/assets/icons/Filter.svg) **[!UICONTROL Segment]** aus und wählen Sie **[!UICONTROL Favoriten]**. Weitere Informationen [ Sie unter ](/help/components/filters/filters-filter.md) der Segmentliste .

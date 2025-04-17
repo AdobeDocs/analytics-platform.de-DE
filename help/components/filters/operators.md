@@ -1,10 +1,10 @@
 ---
 title: Operatoren
-description: Bestimmen Sie, wie eine Komponente mit einem Wert in einem Filter interagiert.
+description: Bestimmen, wie eine Komponente mit einem Wert innerhalb eines Segments interagiert
 exl-id: 744c7450-d6e9-4f78-a306-fe725ea0fa18
 feature: Filters
 role: User
-source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
+source-git-commit: 716d6423c0cc8b91aa4951952191e0fd0e627c0f
 workflow-type: tm+mt
 source-wordcount: '624'
 ht-degree: 54%
@@ -39,7 +39,7 @@ Mit dem Filter-Builder können Sie Werte für Komponenten mithilfe ausgewählter
 
 ## Distinct Count-Operatoren
 
-Sie können nach einer bestimmten Anzahl von Elementen innerhalb einer Dimension filtern. Sie können beispielsweise Filter für Personen erstellen, die mehr als 5 verschiedene Produkte oder Besuche angesehen haben, bei denen mehr als 5 verschiedene Seiten angezeigt wurden.
+Sie können nach einer bestimmten Anzahl von Elementen innerhalb einer Dimension segmentieren. Sie können beispielsweise Segmente für Personen erstellen, die mehr als 5 verschiedene Produkte oder Besuche angesehen haben, bei denen mehr als 5 verschiedene Seiten angezeigt wurden.
 
 | Operator | Beschreibung |
 | --- | --- |

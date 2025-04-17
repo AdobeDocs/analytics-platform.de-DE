@@ -1,20 +1,20 @@
 ---
-title: Filterübersicht
-description: Erfahren Sie, wofür Filter verwendet werden und wie Sie einen einfachen Filter erstellen.
+title: Segmentierung – Übersicht
+description: Erfahren Sie, wofür Segmente verwendet werden und wie Sie ein einfaches Segment erstellen.
 exl-id: 21183e98-6593-4b22-99c7-4a03231acfe9
 feature: Filters
 role: User
-source-git-commit: 392ba2b9cfe090901c3dac12459f9bd8d51fdca7
+source-git-commit: 716d6423c0cc8b91aa4951952191e0fd0e627c0f
 workflow-type: tm+mt
-source-wordcount: '1423'
-ht-degree: 8%
+source-wordcount: '1428'
+ht-degree: 7%
 
 ---
 
 
-# Filterübersicht
+# Segmentierung – Übersicht
 
-Mit Customer Journey Analytics können Sie leistungsstarke, zielgerichtete Zielgruppenfilter für Ihre Berichte erstellen, verwalten, freigeben und anwenden. Mit Filtern können Sie Untergruppen von Personen, Sitzungen oder Ereignissen anhand von Merkmalen oder Interaktionen identifizieren. Filter sind als kodifizierte Zielgruppeneinblicke konzipiert, die Sie für Ihre speziellen Anforderungen erstellen und dann überprüfen, bearbeiten und mit anderen Team-Mitgliedern austauschen können.
+Mit Customer Journey Analytics können Sie leistungsstarke, zielgerichtete Zielgruppensegmente erstellen, verwalten, freigeben und auf Ihre Berichte anwenden. Mit Filtern können Sie Untergruppen von Personen, Sitzungen oder Ereignissen anhand von Merkmalen oder Interaktionen identifizieren. Filter sind als kodifizierte Zielgruppeneinblicke konzipiert, die Sie für Ihre speziellen Anforderungen erstellen und dann überprüfen, bearbeiten und mit anderen Team-Mitgliedern austauschen können.
 
 Filter können auf Folgendem basieren:
 
@@ -24,60 +24,60 @@ Filter können auf Folgendem basieren:
 - benutzerdefinierte Variablen (Formularfeld, definierte Kategorien, Kunden-ID),
 - und andere Kriterien.
 
-Siehe [Erstellen von Filtern](/help/components/filters/create-filters.md) für die verschiedenen verfügbaren Optionen zum Erstellen von Filtern. Anschließend erstellen, ändern und speichern Sie die Definition eines Filters im [Filter Builder](filter-builder.md). Alternativ können Sie Schnellfilter mit dem Schnellfilter-[ erstellen](quick-filters.md). Sie können auch Filter aus Visualisierungen in Workspace generieren, z. B. mithilfe der [Fallout](/help/analysis-workspace/visualizations/fallout/configuring-fallout.md#context-menu)-Visualisierung.
+Unter [Segmente erstellen](/help/components/filters/create-filters.md) finden Sie die verschiedenen Optionen zum Erstellen von Segmenten. Anschließend erstellen, ändern und speichern Sie die Definition eines Segments im [Segment Builder](filter-builder.md). Alternativ können Sie Schnellsegmente mit dem [Quick Segment Builder“ ](quick-filters.md). Außerdem können Sie Segmente auch aus Visualisierungen in Workspace generieren, z. B. mithilfe der [Fallout](/help/analysis-workspace/visualizations/fallout/configuring-fallout.md#context-menu)-Visualisierung.
 
-Sie verwenden den [Filter-Manager](manage-filters.md) um Filter zu verwalten.
+Sie verwenden den [Segment-Manager](manage-filters.md), um Segmente zu verwalten.
 
-## Filter planen
+## Segmente planen
 
-Insbesondere als Administrator verbessert die ordnungsgemäße Planung von Filtern die Chancen, dass die Filter verwendet werden. Beachten Sie bei der Planung von Filtern Folgendes:
+Insbesondere für Admins verbessert die ordnungsgemäße Planung von Segmenten die Chancen, dass die Segmente verwendet werden. Beachten Sie bei der Planung von Segmenten Folgendes:
 
-- **Zielgruppe**: Wer wird Ihre Filter verwenden? Stellen Sie sicher, dass Sie eine gute Filterbeschreibung bereitstellen, damit die Zielgruppe Folgendes versteht:
-   - Wofür ist dieser Filter nützlich?
+- **Zielgruppe**: Wer wird Ihre Segmente verwenden? Stellen Sie sicher, dass Sie eine gute Segmentbeschreibung bereitstellen, damit die Zielgruppe Folgendes versteht:
+   - Wofür ist dieses Segment nützlich?
 
-   - Wann sollte dieser Filter benutzt werden?
+   - Wann sollte dieses Segment benutzt werden?
 
-- **Umfang**: Welcher [Filter-Container](#filter-containers) repräsentiert die Daten, nach denen Sie suchen? Benutzen Sie den kleinstmöglichen Container.
+- **Umfang**: Welcher [Segment-Container](#filter-containers) repräsentiert die Daten, nach denen Sie suchen, am besten? Benutzen Sie den kleinstmöglichen Container.
 
-- **Komponenten**: Entscheiden Sie, welche Komponenten in die Filterdefinition aufgenommen werden sollen und anhand welcher Werte die Bedingungen validiert werden sollen.
+- **Komponenten**: Entscheiden Sie, welche Komponenten in die Segmentdefinition aufgenommen werden sollen und anhand welcher Werte die Bedingungen validiert werden sollen.
 
-- **Prozess**: Erwägen Sie einen Genehmigungsprozess für Ihren Filter. In Customer Journey Analytics gibt es keinen Genehmigungs-Workflow, Sie können jedoch trotzdem einen Prozess organisieren, um zu bestimmen, ob Sie einen Filter genehmigen oder nicht.
+- **Prozess**: Erwägen Sie einen Genehmigungsprozess für Ihre Segmente. In Customer Journey Analytics gibt es keinen Genehmigungs-Workflow, Sie können jedoch trotzdem einen Prozess organisieren, um zu bestimmen, ob Sie ein Segment genehmigen oder nicht.
 
-- **Modularität**: Filter mit Blick auf Modularität definieren. Die Benutzer Ihrer Filter können also einfach [Filter stapeln](filter-builder.md#stack-filters) um leistungsstarke neue Filter zu erstellen.
+- **Modularität**: Definieren Sie Segmente unter Berücksichtigung der Modularität. Die Benutzer Ihrer Segmente sollten in der Lage sein, einfach [Segmente zu stapeln](filter-builder.md#stack-filters) um leistungsstarke neue Segmente zu erstellen.
 
 
-## Filtertypen
+## Segmenttypen
 
-Sie können drei Filtertypen erstellen:
+Sie können drei Segmenttypen erstellen:
 
-### Schnellfilter
+### Schnellsegmente
 
-Mit Schnellfiltern können Sie Daten innerhalb eines bestimmten Workspace-Projekts problemlos untersuchen, ohne dass ein Filter im [Filtergenerator“ erstellt ](/help/components/filters/create-filters.md) muss. Sie definieren Ihren Filter direkt in der Workspace-Oberfläche. Weitere Informationen finden [ unter ](quick-filters.md)Schnellfilter“.
+Schnellsegmente ermöglichen Ihnen, Daten innerhalb eines bestimmten Workspace-Projekts einfach zu untersuchen, ohne dass ein Segment in [Segment Builder“ erstellt ](/help/components/filters/create-filters.md) muss. Sie definieren Ihr Segment direkt in der Workspace-Benutzeroberfläche. Weitere Informationen finden [ unter ](quick-filters.md)Schnellsegmente“.
 
-### Reguläre Filter
+### Reguläre Segmente
 
-Mit regulären Filtern können Sie Daten (Personen, Sitzungen, Ereignisse) anhand einer oder mehrerer Bedingungen identifizieren. Bei mehr als einer Bedingung verwenden Sie logische Operatoren wie Und und Oder, um den Filter weiter zu definieren. Sie können Container verwenden, um Bedingungen zu gruppieren und komplexere Filter zu erstellen. Weitere Informationen finden [ unter ](filter-builder.md)Filtergenerator“.
+Mit regulären Segmenten können Sie Daten (Personen, Sitzungen, Ereignisse) anhand einer oder mehrerer Bedingungen identifizieren. Wenn Sie mehr als eine Bedingung haben, verwenden Sie logische Operatoren wie Und und Oder, um das Segment weiter zu definieren. Sie können Container verwenden, um Bedingungen zu gruppieren und komplexere Segmente zu erstellen. Weitere Informationen finden [ unter ](filter-builder.md)Segment Builder“.
 
-### Sequenzielle Filter
+### Sequenzielle Segmente
 
 >[!IMPORTANT]
 >
->Sie müssen über das Paket **Auswählen** verfügen, um kanalübergreifende sequenzielle Filter zu erstellen. Wenden Sie sich an Ihren Administrator, wenn Sie sich nicht sicher sind, welches Customer Journey Analytics-Paket Sie haben.
+>Sie müssen über das Paket **Auswählen** verfügen, um sequenzielle kanalübergreifende Segmente zu erstellen. Wenden Sie sich an Ihre Admins, wenn Sie sich nicht sicher sind, welches Customer Journey Analytics-Paket Sie besitzen.
 
-Mit sequenziellen Filtern können Sie Daten (Personen, Sitzungen, Ereignisse) anhand der Navigation (Seitenansichten auf Ihrer Site, Interaktionen mit Szenen in Ihrer Mobile App oder mithilfe eines Menüs in einer Set-Top-Box) identifizieren. Mit sequenziellen Filtern können Sie beispielsweise identifizieren, was eine Person mag und was sie meidet. Sie verwenden den logischen Operator Dann , um einen sequenziellen Filter zu definieren. Siehe [Sequenzielle Filter](seg-sequential-build.md) für weitere Informationen.
+Mit sequenziellen Segmenten können Sie Daten (Personen, Sitzungen, Ereignisse) anhand der Navigation (Seitenansichten auf Ihrer Site, Interaktionen mit Szenen in Ihrer Mobile App oder mithilfe eines Menüs in einer Set-Top-Box) identifizieren. Sequenzielle Segmente helfen Ihnen beispielsweise dabei, zu erkennen, was eine Person mag und was sie meidet. Sie verwenden den logischen Operator Then, um ein sequenzielles Segment zu definieren. Weitere Informationen finden [ unter ](seg-sequential-build.md) von Segmenten.
 
 
 <!--
-An example of a complex sequential filter if you want to find the persons that 
+An example of a complex sequential segment if you want to find the persons that 
 
 | Session One | Session Two | Session Three |
 | --- | --- | --- |
 | The person went to the main landing page A, excluded the campaign page B, and then viewed the Product page C.| The person again went to the main landing page A, excluded the campaign page B, and went again to the Product page C, and then to a new page D. | The person entered and followed that same path as in the first and second visits, then excluded page F to go directly to a targeted product on page G. |
 -->
 
-## Filter-Container {#containers}
+## Segment-Container {#containers}
 
-Filter basieren auf einer Hierarchie auf Personen-, Sitzungs- und Ereignisebene, wobei ein verschachteltes Container-Modell verwendet wird. Mit verschachtelten Containern können Sie Bedingungen zwischen und innerhalb der Container definieren.
+Segmente basieren auf einer Hierarchie auf Personen-, Sitzungs- und Ereignisebene, wobei ein verschachteltes Container-Modell verwendet wird. Mit verschachtelten Containern können Sie Bedingungen zwischen und innerhalb der Container definieren.
 
 
 <table style="table-layout: fixed; border: none;" width="100%">
@@ -107,19 +107,19 @@ Filter basieren auf einer Hierarchie auf Personen-, Sitzungs- und Ereignisebene,
 > - Der **Ereignis**-Container wird in Adobe Analytics als **Treffer**-Container bezeichnet.
 >
 
-Ein Filter legt Bedingungen fest, um Personen, Sitzungen oder Ereignisse anhand von Bedingungen zu filtern. Beispielsweise Bedingungen zum Filtern von Personen anhand von Personenmerkmalen und Navigationseigenschaften. Um die Daten weiter aufzuschlüsseln, können Sie nach bestimmten Sitzungen, Seitenansichtsereignissen, Bildschirmtipps, Menüoptionen in einer Set-Top-Box und mehr filtern. Sie können aber auch nach Attributen filtern, die Sie aus einem CRM- oder Treuesystem aufgenommen haben. Der [Filtergenerator](/help/components/filters/filter-builder.md) bietet eine einfache Schnittstelle zum Erstellen dieser Teilmengen und zum Anwenden von Bedingungen in verschachtelten, hierarchischen Personen-, Sitzungs- oder Ereignis-Containern.
+Ein Segment legt Bedingungen fest, um Personen, Sitzungen oder Ereignisse basierend auf Bedingungen zu segmentieren. Bedingungen zum Segmentieren von Personen basieren beispielsweise auf Personeneigenschaften und Navigationseigenschaften. Um die Daten weiter aufzuschlüsseln, können Sie Sitzungen, Seitenansichtsereignisse, Bildschirmtipps, Menüoptionen in einer Set-Top-Box usw. segmentieren. Sie können auch nach Attributen segmentieren, die Sie aus einem CRM- oder Treuesystem aufgenommen haben. Der [Segment Builder](/help/components/filters/filter-builder.md) bietet eine einfache Schnittstelle zum Erstellen dieser Untergruppen und zum Anwenden von Bedingungen in verschachtelten, hierarchischen Personen-, Sitzungs- oder Ereignis-Containern.
 
-Die im Filtergenerator verwendete Container[Architektur definiert ](/help/components/filters/filter-builder.md) Person als den äußersten Container. Der Container enthält übergreifende Daten, die für die Person über Sitzungen und Ereignisse wie Seitenansichten, Bildschirme von Mobile Apps oder Menübildschirme in einer Set-Top-Box hinweg spezifisch sind. Mit einem verschachtelten Sitzungs-Container können Sie Regeln festlegen, mit denen die Daten der Person auf der Grundlage von Sitzungen aufgeschlüsselt werden. Mit einem verschachtelten Ereignis-Container können Sie Personeninformationen auf der Grundlage einzelner Interaktionen aufschlüsseln. Jeder Container ermöglicht Berichte über den Verlauf einer Person, nach Sitzungen aufgeschlüsselte Interaktionen oder aufgeschlüsselte einzelne Ereignisse.
+Die im Segmentaufbau verwendete Container[Architektur definiert ](/help/components/filters/filter-builder.md) Person als den äußersten Container. Dieser Container enthält übergreifende Daten, die für die Person über Sitzungen und Ereignisse wie Seitenansichten, Bildschirme für Mobile Apps oder Menübildschirme in einer Set-Top-Box hinweg spezifisch sind. Mit einem verschachtelten Sitzungs-Container können Sie Regeln festlegen, mit denen die Daten der Person auf der Grundlage von Sitzungen aufgeschlüsselt werden. Mit einem verschachtelten Ereignis-Container können Sie Personeninformationen auf der Grundlage einzelner Interaktionen aufschlüsseln. Jeder Container ermöglicht Berichte über den Verlauf einer Person, nach Sitzungen aufgeschlüsselte Interaktionen oder aufgeschlüsselte einzelne Ereignisse.
 
 ### Personen-Container
 
-Der Container Person enthält jede Sitzung und jedes Ereignis für die Personen, die für die im Container angegebene Bedingung qualifiziert sind. Wenn Sie einen Filter mit einer einfachen Bedingung wie `Page Name equals Checkout` definieren, löst der Container Person auf zu:
+Der Container Person enthält jede Sitzung und jedes Ereignis für die Personen, die für die im Container angegebene Bedingung qualifiziert sind. Wenn Sie ein Segment mit einer einfachen Bedingung wie `Page Name equals Checkout` definieren, löst der Container Person auf zu:
 
 - Alle Personen, die die Seite mit dem Namen `Checkout` besucht haben.
 - Alle Sitzungen für diese Personen.
 - Alle Ereignisdaten für diese Personen.
 
-Als am breitesten definierter Container geben Berichte, die auf der Ebene des Personen-Containers generiert werden, Ereignisse und Sitzungen für alle Personen zurück, die für den Filter qualifiziert sind. Der Container Person ist am anfälligsten für Änderungen basierend auf definierten Datumsbereichen.
+Als am breitesten definierter Container geben Berichte, die auf der Ebene des Personen-Containers generiert wurden, Ereignisse und Sitzungen für alle Personen zurück, die für den Filter qualifiziert sind. Der Container Person ist am anfälligsten für Änderungen basierend auf definierten Datumsbereichen.
 Personen-Container können Werte enthalten, die auf dem Gesamtverlauf einer Person basieren:
 
 - Tage vor dem ersten Kauf.
@@ -128,7 +128,7 @@ Personen-Container können Werte enthalten, die auf dem Gesamtverlauf einer Pers
 
 ### Sitzungs-Container
 
-Mit dem Sitzungs-Container können Seiteninteraktionen oder Mobile-App-Interaktionen, Kampagnen oder Konversionen für eine bestimmte Sitzung identifiziert werden. Der Sitzungs-Container ist der am häufigsten verwendete Container, da er Verhaltensweisen für die gesamte Sitzung erfasst, sobald die Regel erfüllt wird. Mit dem Sitzungs-Container können Sie auch definieren, welche Sitzungen Sie beim Erstellen und Anwenden eines Filters ein- oder ausschließen möchten.  Wenn Sie einen Filter mit einer einfachen Bedingung wie `Page Name equals Checkout` definieren, wird der Sitzungs-Container aufgelöst zu:
+Mit dem Sitzungs-Container können Seiteninteraktionen oder Mobile-App-Interaktionen, Kampagnen oder Konversionen für eine bestimmte Sitzung identifiziert werden. Der Sitzungs-Container ist der am häufigsten verwendete Container, da er Verhaltensweisen für die gesamte Sitzung erfasst, sobald die Regel erfüllt wird. Mit dem Sitzungs-Container können Sie auch definieren, welche Sitzungen Sie beim Erstellen und Anwenden eines Segments ein- oder ausschließen möchten.  Wenn Sie ein Segment mit einer einfachen Bedingung wie `Page Name equals Checkout` definieren, wird der Sitzungs-Container aufgelöst zu:
 
 - Alle Sitzungen, in denen eine Seite mit dem Namen `Checkout` besucht wird.
 - Alle Ereignisdaten für diese Sitzungen.
@@ -150,7 +150,7 @@ Mit Datenansichten in Customer Journey Analytics können Sie festlegen, wie lang
 
 ### Ereignis-Container
 
-Der Ereignis-Container definiert, welche Seite, Mobile App oder andere Arten von Ereignissen Sie in einen Filter einschließen oder daraus ausschließen möchten. Dies ist der engste verfügbare Container, mit dem Sie spezifische Klicks, Seitenansichten und Tippen auf eine Schaltfläche in einer Mobile App identifizieren können, bei der eine Bedingung erfüllt ist. Mit dem Ereignis-Container können Sie einen einzelnen Trackingcode anzeigen oder das Verhalten in einem bestimmten Bereich Ihrer Mobile App isolieren. Möglicherweise möchten Sie auch einen bestimmten Wert bestimmen, wenn eine Aktion auftritt, z. B. den Marketing-Kanal, wenn eine Bestellung aufgegeben wurde. Wenn Sie einen Filter mit einer einfachen Bedingung wie `Page Name equals Checkout` definieren, wird der Ereignis-Container aufgelöst zu:
+Der Ereignis-Container definiert, welche Seite, Mobile App oder andere Ereignistypen Sie in ein Segment einbeziehen oder daraus ausschließen möchten. Es ist der schmalste der verfügbaren Behälter. Damit können Sie bestimmte Klicks, Seitenansichten und Tippen auf eine Schaltfläche in einer Mobile App identifizieren, für die eine Bedingung erfüllt ist. Mit dem Ereignis-Container können Sie einen einzelnen Trackingcode anzeigen oder das Verhalten in einem bestimmten Bereich Ihrer Mobile App isolieren. Möglicherweise möchten Sie auch einen bestimmten Wert bestimmen, wenn eine Aktion auftritt, z. B. den Marketing-Kanal, wenn eine Bestellung aufgegeben wurde. Wenn Sie ein Segment mit einer einfachen Bedingung wie `Page Name equals Checkout` definieren, wird der Ereignis-Container aufgelöst zu:
 
 - Alle Seitenansichtsereignisse, bei denen der Seitenname `Checkout` entspricht.
 
@@ -164,19 +164,19 @@ Ereignis-Container enthalten wertbasierte Aufschlüsselungen einzelner Seiten f�
 
 ### Logischer Gruppen-Container
 
-Mit der Logikgruppe können Sie Bedingungen in einem einzigen sequenziellen Filtercheckpoint gruppieren. Als Teil der Sequenz wird die Logik, die in dem als &quot;[!UICONTROL &quot; identifizierten Container definiert ], nach einem vorherigen sequenziellen Checkpoint und vor einem nachfolgenden sequenziellen Checkpoint ausgewertet. Siehe [Logikgruppe](seg-sequential-build.md#logic-group) für weitere Informationen.
+Mit der logischen Gruppe können Sie Bedingungen in einem einzigen sequenziellen Segment-Checkpoint gruppieren. Als Teil der Sequenz wird die Logik, die in dem als &quot;[!UICONTROL &quot; identifizierten Container definiert ], nach einem vorherigen sequenziellen Checkpoint und vor einem nachfolgenden sequenziellen Checkpoint ausgewertet. Siehe [Logikgruppe](seg-sequential-build.md#logic-group) für weitere Informationen.
 
 ### Container verschachteln
 
-Wenn Sie Container in anderen Containern erstellen, erstellen Sie tatsächlich einen Filter innerhalb eines Filters. Die folgende Logik wird auf verschachtelte Container angewendet:
+Wenn Sie Container in anderen Containern erstellen, erstellen Sie tatsächlich ein Segment innerhalb eines Segments. Die folgende Logik wird auf verschachtelte Container angewendet:
 
 1. Bestimmen, welche Daten enthalten sind, indem der äußerste Container verwendet wird. Daten, die nicht mit dieser äußeren Regel übereinstimmen, werden im Bericht verworfen.
-2. Wenden Sie die verschachtelte Filterdefinition auf die verbleibenden Daten an. Die verschachtelte Filterdefinition gilt NICHT für Daten, die die erste Definition verworfen hat.
-3. Wiederholen, bis alle verschachtelten Container-Filterdefinitionen berechnet wurden. Die verbleibenden Daten werden dann in das Ergebnis aufgenommen und für das Reporting verwendet.
+2. Wenden Sie die verschachtelte Segmentdefinition auf die verbleibenden Daten an. Die verschachtelte Segmentdefinition gilt NICHT für Daten, die die erste Definition verworfen hat.
+3. Wiederholen Sie diesen Vorgang, bis alle Segmentdefinitionen des verschachtelten Containers berechnet wurden. Die verbleibenden Daten werden dann in das Ergebnis aufgenommen und für das Reporting verwendet.
 
 >[!NOTE]
 >
->Wenn Sie einen Filter in einem Filter verschachteln (Sie ziehen beispielsweise einen Filter aus dem Bedienfeld Komponenten auf Ihre Filterdefinition), wird ein Container mit einer Kopie (nicht einer Referenz) der gezogenen Filterdefinition erstellt.
+>Wenn Sie ein Segment innerhalb eines Segments verschachteln (Sie ziehen beispielsweise ein Segment aus dem Bedienfeld „Komponenten“ auf Ihre Segmentdefinition), wird ein Container mit einer Kopie (nicht einer Referenz) der gezogenen Segmentdefinition erstellt.
 
 <!--
 You can use nesting between containers and between conditions within a container. Here is what you can nest in each container:
@@ -187,20 +187,20 @@ You can use nesting between containers and between conditions within a container
 | Session | Session
 
 
-## Out-of-the-box filter template {#template}
+## Out-of-the-box segment template {#template}
 
 Traditional Analytics comes with numerous out-of-the-box templates and calculated metrics. Many of them do not apply in Customer Journey Analytics, or have to be renamed or recreated. Others depend on a solution for context-aware variables in Customer Journey Analytics.
 
 | Filter Name | Description |
 | --- | --- |
-| All Data | All Data is a required filter that gets dynamically added to reporting when a metric is added to the row of a Freeform table. |
+| All Data | All Data is a required segment that gets dynamically added to reporting when a metric is added to the row of a Freeform table. |
 -->
 
 >[!MORELIKETHIS]
 >
->[Filter erstellen](create-filters.md)
->[Filtergenerator](filter-builder.md)
->[Schnellfilter](quick-filters.md)
->[Sequenzielle Filter](seg-sequential-build.md)
->[Filter verwalten](manage-filters.md)
+>[Segmente erstellen](create-filters.md)
+>[Segment Builder](filter-builder.md)
+>[Schnellsegmente](quick-filters.md)
+>[Sequenzielle ](seg-sequential-build.md)
+>[Segmente verwalten](manage-filters.md)
 >

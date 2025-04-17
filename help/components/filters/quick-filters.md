@@ -1,19 +1,19 @@
 ---
-description: Verwenden von Schnellfiltern in Analysis Workspace für Customer Journey Analytics
-title: Schnellfilter
+description: Verwenden von Schnellsegmenten in Analysis Workspace für Customer Journey Analytics
+title: Schnellsegmente
 feature: Workspace Basics
 role: User
 exl-id: 549e5db5-fcdf-43c5-bc43-590144aee309
-source-git-commit: 4bf8c616965718426efe880865acb0e5054b6a31
-workflow-type: ht
-source-wordcount: '1170'
-ht-degree: 100%
+source-git-commit: 716d6423c0cc8b91aa4951952191e0fd0e627c0f
+workflow-type: tm+mt
+source-wordcount: '1171'
+ht-degree: 59%
 
 ---
 
-# Schnellfilter
+# Schnellsegmente
 
-Schnellfilter ermöglichen es Ihnen, Daten innerhalb eines Workspace-Projekts schnell zu untersuchen, ohne dass ein Filter im [filter builder](/help/components/filters/create-filters.md) erstellt werden muss.
+Schnellsegmente ermöglichen es Ihnen, Daten innerhalb eines Workspace-Projekts schnell zu untersuchen, ohne dass ein Segment in [Segment Builder“ erstellt ](/help/components/filters/create-filters.md) muss.
 
 
 
@@ -24,46 +24,46 @@ See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Schnellsegmente 
 >[!ENDSHADEBOX]
 
 
-Beachten Sie bei der Verwendung von Schnellfiltern Folgendes:
+Beachten Sie bei der Verwendung von Schnellsegmenten Folgendes:
 
-* Schnellfilter werden direkt in einem Workspace-Projekt erstellt. Daher gilt ein Schnellfilter nur für das Workspace-Projekt, in dem Sie den Schnellfilter erstellen. Die Schnellfilter in Ihrem Workspace-Projekt sind nicht in anderen Projekten verfügbar und können nicht für andere Benutzende freigegeben werden.
-* Sie können nur drei Bedingungen als Teil eines Schnellfilters angeben.
-* Schnellfilter unterstützen keine verschachtelten Container oder sequenziellen Bedingungen.
-* Sie können Schnellfilter in einem freigegebenen Workspace-Projekt bearbeiten. Auf diese Weise können andere Benutzende die Schnellfilter in einem Workspace-Projekt bearbeiten, das Sie für diese Benutzenden freigegeben haben.
+* Schnellsegmente werden direkt in einem Workspace-Projekt erstellt. Daher gilt ein Schnellsegment nur für das Workspace-Projekt, in dem Sie das Schnellsegment erstellen. Die Schnellsegmente in Ihrem Workspace-Projekt sind nicht in anderen Projekten verfügbar und können nicht für andere Benutzer freigegeben werden.
+* Sie können nur drei Bedingungen als Teil eines Schnellsegments angeben.
+* Schnellsegmente unterstützen keine verschachtelten Container oder sequenziellen Bedingungen.
+* Sie können Schnellsegmente in einem freigegebenen Workspace-Projekt bearbeiten. Andere Benutzer können die Schnellsegmente in einem Workspace-Projekt bearbeiten, das Sie für diese Benutzer freigegeben haben.
 
 ## Erstellen
 
-Schnellfilter werden auf Panels angewendet. Sie können für jedes Panel in Ihrem Workspace-Projekt einen oder mehrere Schnellfilter erstellen. Alle Analysis Workspace-Benutzenden können Schnellfilter erstellen.
+Schnellsegmente werden auf Bedienfelder angewendet. Sie können für jedes Bedienfeld in Ihrem Workspace-Projekt ein oder mehrere Schnellsegmente erstellen. Jeder Benutzer in Analysis Workspace kann Schnellsegmente erstellen.
 
-So erstellen Sie einen Schnellfilter:
+So erstellen Sie ein Schnellsegment:
 
-* Wählen Sie oben im Panel ![FilterAdd](/help/assets/icons/FilterAdd.svg) aus. <br/>Bearbeiten Sie dann den Filter direkt im [Schnellfilteraufbau](#quick-filter-builder).
-* Ziehen Sie eine Komponente aus dem Panel „Komponente“ in den Filter-Ablagebereich im Header des Panels. Bewegen Sie den Mauszeiger nach dem Ablegen über den Filter und wählen Sie ![Bearbeiten](/help/assets/icons/Edit.svg) aus, um den Filter im [Schnellfilteraufbau](#quick-filter-builder) zu bearbeiten.
+* Wählen ![ oben ](/help/assets/icons/FilterAdd.svg) Bedienfeld „SegmentHinzufügen“ aus. <br/>Bearbeiten Sie dann das Segment direkt im [Quick Segment Builder](#quick-filter-builder).
+* Ziehen Sie eine Komponente aus dem Bedienfeld „Komponente“ in den Ablegebereich für Segmente in der Kopfzeile des Bedienfelds. Bewegen Sie nach dem Ablegen den Mauszeiger über das Segment und wählen Sie ![Bearbeiten](/help/assets/icons/Edit.svg) aus, um das Segment im [Quick Segment Builder“ ](#quick-filter-builder) bearbeiten.
 
-Beachten Sie beim Erstellen eines Schnellfilters per Drag-and-Drop Folgendes:
+Beachten Sie beim Erstellen eines Schnellsegments per Drag-and-Drop Folgendes:
 
-* Es werden nicht alle Komponententypen unterstützt. Berechnete Metriken werden nicht unterstützt. Es werden nur Dimensionen und Metriken unterstützt, aus denen Sie Filter erstellen können.
-* Für Dimensionen und Metrikkomponenten erstellt der [Schnellfilteraufbau](#quick-filter-builder) automatisch eine `exists`-Bedingung. Wenn Sie beispielsweise `City` ziehen und ablegen, wird die Bedingung `City exists` erstellt.
-* Für Dimensionswerte erstellt der [Schnellfilteraufbau](#quick-filter-builder) automatisch eine `equals`-Bedingung. Wenn Sie beispielsweise `amsterdam` aus der Dimension `City` ziehen und ablegen, wird die Bedingung `City equals amsterdam` erstellt.
-* Wenn Sie `unspecified` oder `none` ziehen und ablegen, erstellt der [Schnellfilteraufbau](#quick-filter-builder) automatisch eine `does not exist`-Bedingung.
+* Es werden nicht alle Komponententypen unterstützt. Berechnete Metriken werden nicht unterstützt, und nur Dimensionen und Metriken, aus denen Sie Segmente erstellen können, werden unterstützt.
+* Für Dimensionen und Metrikkomponenten erstellt [Quick Segment Builder](#quick-filter-builder) automatisch eine `exists`. Wenn Sie beispielsweise `City` ziehen und ablegen, wird die Bedingung `City exists` erstellt.
+* Für Dimensionswerte erstellt [Quick Segment Builder](#quick-filter-builder) automatisch eine `equals`. Wenn Sie beispielsweise `amsterdam` aus der Dimension `City` ziehen und ablegen, wird die Bedingung `City equals amsterdam` erstellt.
+* Wenn Sie `unspecified` oder `none` per Drag-and-Drop verschieben, erstellt [Quick Segment Builder](#quick-filter-builder) automatisch eine `does not exist`.
 
-Die von Ihnen erstellten Schnellfilter werden oben im Panel angezeigt. Schnellfilter haben einen hellblauen, dünnen linken Balken. Wenn sich ein Schnellfilter im Bearbeitungsmodus mit dem [Schnellfilteraufbau](#quick-filter-builder) befindet, ist der Hintergrund des Schnellfilters hellblau.
+Die von Ihnen erstellten Schnellsegmente werden oben im Bedienfeld angezeigt. Schnellsegmente haben einen hellblauen, dünnen linken Balken. Wenn sich ein Schnellsegment im Bearbeitungsmodus mit dem [Quick Segment Builder](#quick-filter-builder) befindet, wird der Hintergrund des Schnellsegments hellblau dargestellt.
 
-Die Ergebnisse der Schnellfilter, die Sie in einem Panel erstellen, werden (mithilfe der UND-Logik) auf alle Visualisierungen angewendet, die Teil des Panels sind.
+Die Ergebnisse der Schnellsegmente, die Sie in einem Bedienfeld erstellen, werden (mithilfe der UND-Logik) auf alle Visualisierungen angewendet, die Teil des Bedienfelds sind.
 
 
 ## Verwalten
 
-Um einen Schnellfilter zu verwalten, bewegen Sie den Mauszeiger über den entsprechenden **[!UICONTROL Schnellfilter]**.
+Um ein Schnellsegment zu verwalten, bewegen Sie den Mauszeiger über das spezifische **[!UICONTROL Schnellsegment]**.
 
-* Wählen Sie ![Bearbeiten](/help/assets/icons/Edit.svg) aus, um den [Schnellfilteraufbau](#quick-filter-builder) zu öffnen und den Schnellfilter zu bearbeiten.
-* Wählen Sie ![InfoOutline](/help/assets/icons/InfoOutline.svg) aus, um ein Popup zu öffnen. Das Popup zeigt Informationen zum Filter an. Sie können **[!UICONTROL Für alle Projekte verfügbar machen und Ihrer Komponentenliste hinzufügen]** auswählen, um den Filter zur Komponentenliste ![Filter](/help/assets/icons/Segmentation.svg) **[!UICONTROL Filter]** im Panel „Komponente“ hinzuzufügen. Das Dialogfeld **[!UICONTROL Schnellfilter speichern]** wird angezeigt und fordert Sie auf, einen Namen für den Filter anzugeben. Wählen Sie **[!UICONTROL Speichern]** aus, um fortzufahren. Ihr [!UICONTROL Schnellfilter] wird zu einem **[!UICONTROL Filter]**. Sie können den Filter nicht mehr mit dem [Schnellfilteraufbau](#quick-filter-builder) bearbeiten. Stattdessen müssen Sie den Filter als regulären Filter mit dem [Filteraufbau](filter-builder.md) bearbeiten.
+* Wählen Sie ![Bearbeiten](/help/assets/icons/Edit.svg) aus, um [Quick Segment Builder](#quick-filter-builder) zu öffnen und das Schnellsegment zu bearbeiten.
+* Wählen Sie ![InfoOutline](/help/assets/icons/InfoOutline.svg) aus, um ein Popup zu öffnen. Das Popup zeigt Informationen zum Filter an. Sie können auf **[!UICONTROL Für alle Projekte verfügbar machen und der Komponentenliste hinzufügen]** klicken, um das Segment der Komponentenliste ![Segment](/help/assets/icons/Segmentation.svg) **[!UICONTROL Segmente]** im Komponentenbereich hinzuzufügen. Ein Dialogfeld **[!UICONTROL Schnellsegment speichern]** wird angezeigt, in dem Sie aufgefordert werden, einen Namen für das Segment anzugeben. Wählen Sie **[!UICONTROL Speichern]** aus, um fortzufahren. Ihr [!UICONTROL Schnellsegment] wird zu einem **[!UICONTROL Segment]**. Das Segment kann nicht mehr mit dem [Quick Segment Builder“ bearbeitet ](#quick-filter-builder). Stattdessen müssen Sie das Segment als reguläres Segment bearbeiten, indem Sie den [Segment Builder“ ](filter-builder.md).
 
-## Schnellfilteraufbau
+## Quick Segment Builder
 
-Unten finden Sie ein Beispiel für den Schnellfilteraufbau. Im Beispiel wird der Generator für einen Schnellfilter mit dem Namen `Call Reason = Order Change AND Online Orders is greater than or equal 1` geöffnet. Beide Schnellfilter oben gelten für das Panel [!UICONTROL Dashboard für durchschnittliche Bestellwerte] und für alle darin enthaltenen Visualisierungen, wie die Freiformtabelle [!UICONTROL Durchschnittlicher Bestellwert pro Land].
+Unten finden Sie ein Beispiel für den Quick Segment Builder. Im Beispiel wird der Generator für einen Schnellfilter mit dem Namen `Call Reason = Order Change AND Online Orders is greater than or equal 1` geöffnet. Beide Schnellfilter oben gelten für das Panel [!UICONTROL Dashboard für durchschnittliche Bestellwerte] und für alle darin enthaltenen Visualisierungen, wie die Freiformtabelle [!UICONTROL Durchschnittlicher Bestellwert pro Land].
 
-![Schnellfilter-Generator](assets/quick-filter-builder.png)
+![Quick Segment Builder](assets/quick-filter-builder.png)
 
 Der Schnellfilter-Generator besteht aus den folgenden Bereichen und Schaltflächen.
 
