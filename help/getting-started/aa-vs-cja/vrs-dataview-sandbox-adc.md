@@ -4,10 +4,10 @@ description: Erfahren Sie mehr über virtuelle Reporting-Umgebungen und Sandbox-
 exl-id: 8f0358d1-85fe-4e1e-8724-8a7caa16328c
 feature: Basics
 role: User
-source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
+source-git-commit: eb9b749a5c61da3b4b5d2eeeed93bf5e4702a415
 workflow-type: tm+mt
 source-wordcount: '715'
-ht-degree: 96%
+ht-degree: 93%
 
 ---
 
@@ -48,14 +48,14 @@ Weitere Informationen finden Sie unter [Datenansichten – Übersicht](https://e
 
 Eine Datenansicht:
 
-* Kann auf Customer Journey Analytics-Filtern basieren.
+* Kann auf Customer Journey Analytics-Segmenten basieren.
 * Kann auf zerstörungsfreie Weise auf historische und neue Daten angewendet werden.
 * Ermöglicht die Erstellung einer oder mehrerer virtueller Ansichten auf Basis einer Customer Journey Analytics-Verbindung, die von verschiedenen Unternehmens-Teams verwendet werden können.
 * Kann verwendet werden, um den Zugriff auf verschiedene Arten von Daten für verschiedene Benutzende in Customer Journey Analytics zu steuern und diese Daten zu kuratieren.
 * Bietet leistungsstarke, zerstörungsfreie Optionen zum Transformieren und Verbessern von Daten, die über eine Customer Journey Analytics-Verbindung in Customer Journey Analytics eingehen.
 * Basiert auf den Customer Journey Analytics-Funktionen für die Verarbeitung zum Zeitpunkt der Berichtserstellung.
 * Ermöglicht Benutzern das Erstellen einer benutzerdefinierten Definition für „Sitzung“.
-* Wird zur Berichtslaufzeit angewendet, ähnlich wie eine Filterauswertung. Dies geschieht, _nachdem_ der Quell-Connector (z. B. Adobe Analytics) Daten in einen Datensatz im Adobe Experience Platform Data Lake geschrieben hat und _nachdem_ die Daten über eine Customer Journey Analytics-Verbindung in Customer Journey Analytics aufgenommen wurden.
+* Wird zur Berichtslaufzeit angewendet, ähnlich wie eine Segmentauswertung. Dies geschieht, _nachdem_ der Quell-Connector (z. B. Adobe Analytics) Daten in einen Datensatz im Adobe Experience Platform Data Lake geschrieben hat und _nachdem_ die Daten über eine Customer Journey Analytics-Verbindung in Customer Journey Analytics aufgenommen wurden.
 * Ermöglicht eine unbegrenzte Anzahl von Variablen, allerdings kann die Kuratierung einschränken, welche Variablen für Benutzer verfügbar sind.
 * Ermöglicht die benutzerdefinierte Benennung von Containern für Ereignisse, Sitzungen und Personen.
 * Unterstützt benutzerdefinierte Kalenderoptionen.
