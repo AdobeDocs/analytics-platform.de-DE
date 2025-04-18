@@ -5,10 +5,10 @@ exl-id: b8b234c6-a7d9-40e9-8380-1db09610b941
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: 9c1a8c51aa3e23412e5b04d3ab1571a9d1c7612e
+source-git-commit: 220ebd7dbc3fa75d221690cd6e5828bd94395434
 workflow-type: tm+mt
 source-wordcount: '1053'
-ht-degree: 79%
+ht-degree: 77%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 79%
 >[!CONTEXTUALHELP]
 >id="dataview_component_dimension_persistence"
 >title="Persistenz"
->abstract="Konfigurieren Sie das standardmäßige Zuordnungsmodell, das auf eine Dimension angewendet wird. Die Zuordnung erfolgt vor den Filtern in Berichten. Weitere Informationen finden Sie unter [Zuweisungseinstellungen](/help/data-views/component-settings/persistence.md#allocation-settings), [Ablaufeinstellungen](/help/data-views/component-settings/persistence.md#expiration-settings), [Bindungsdimension](/help/data-views/component-settings/persistence.md#binding-dimension) und [Bindungsmetriken](/help/data-views/component-settings/persistence.md#binding-metric)."
+>abstract="Konfigurieren Sie das standardmäßige Zuordnungsmodell, das auf eine Dimension angewendet wird. Die Zuordnung erfolgt im Reporting vor Segmenten. Weitere Informationen finden Sie unter [Zuweisungseinstellungen](/help/data-views/component-settings/persistence.md#allocation-settings), [Ablaufeinstellungen](/help/data-views/component-settings/persistence.md#expiration-settings), [Bindungsdimension](/help/data-views/component-settings/persistence.md#binding-dimension) und [Bindungsmetriken](/help/data-views/component-settings/persistence.md#binding-metric)."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -40,7 +40,7 @@ ht-degree: 79%
 
 * Mit **Gültigkeit** können Sie festlegen, wie lange ein Dimensionselement über das Ereignis hinaus bestehen bleibt, für das es festgelegt ist.
 
-[!UICONTROL Persistenz] ist nur für Dimensionen verfügbar und rückwirkend für die Daten, auf die sie angewendet wird. Es handelt sich um eine sofortige Datenumwandlung, die vor der Anwendung von Filtern oder anderen Analysevorgängen erfolgt.
+[!UICONTROL Persistenz] ist nur für Dimensionen verfügbar und rückwirkend für die Daten, auf die sie angewendet wird. Es handelt sich um eine sofortige Datenumwandlung, die vor der Anwendung von Segmentierungen oder anderen Analysevorgängen erfolgt.
 
 | Einstellung | Beschreibung |
 | --- | --- |
