@@ -5,16 +5,16 @@ exl-id: 6ecbae45-9add-4554-8d83-b06ad016fea9
 solution: Customer Journey Analytics
 feature: Data Views
 role: User
-source-git-commit: 629935d66b0f2c5731806a68cc2fcda5fb11fc9a
+source-git-commit: 9f954709a3dde01b4e01581e34aece07fe0256b1
 workflow-type: tm+mt
-source-wordcount: '1372'
+source-wordcount: '1364'
 ht-degree: 33%
 
 ---
 
 # Anwendungsfälle von Datenansichten
 
-Diese Anwendungsfälle veranschaulichen die Flexibilität und Leistungsfähigkeit von Datenansichten im Customer Journey Analytics.
+Diese Anwendungsfälle veranschaulichen die Flexibilität und Leistungsfähigkeit von Datenansichten in Customer Journey Analytics.
 
 ## Verwenden von Metriken für Bindungsdimensionen
 
@@ -39,9 +39,9 @@ Wenn Sie beispielsweise eine Datenansicht erstellen, können Sie eine Metrik [!U
 1. Öffnen Sie den **[!UICONTROL Werte einschließen/ausschließen]** und geben Sie Folgendes an:
    1. Aktivieren Sie **[!UICONTROL Einschließen/ausschließen-Werte festlegen]**.
    1. Wählen Sie **[!UICONTROL Wenn alle Kriterien erfüllt sind]** unter **[!UICONTROL Übereinstimmung]** aus.
-   1. `confirmation` angeben. Dieser Text für page_title gibt an, dass diese Seite mit der Bestellung verbunden ist. Nach Überprüfung aller Seitentitel, die diese Kriterien erfüllen, wird für jede Instanz ein `1` gezählt. Das Ergebnis ist eine neue Metrik (keine berechnete Metrik). Eine Metrik mit eingeschlossenen/ausgeschlossenen Werten kann überall dort verwendet werden, wo auch jede andere Metrik verwendet werden kann. Sie funktioniert mit Attribution IQ, Filtern und überall sonst, wo Sie Standardmetriken verwenden können.
+   1. `confirmation` angeben. Dieser Text für page_title gibt an, dass diese Seite mit der Bestellung verbunden ist. Nach Überprüfung aller Seitentitel, die diese Kriterien erfüllen, wird für jede Instanz ein `1` gezählt. Das Ergebnis ist eine neue Metrik (keine berechnete Metrik). Eine Metrik mit eingeschlossenen/ausgeschlossenen Werten kann überall dort verwendet werden, wo auch jede andere Metrik verwendet werden kann. Es funktioniert mit Attribution IQ, Segmenten und überall dort, wo Sie Standardmetriken verwenden können.
 
-   ![Dimension für Metrik](../assets/string-to-metric.gif){width=100%}
+   ![Dimension zu Metrik](../assets/string-to-metric.gif){width=100%}
 1. Sie können darüber hinaus ein Zuordnungsmodell für diese Metrik angeben, beispielsweise [!UICONTROL Letztkontakt] mit einem [!UICONTROL Lookback-Fenster] von [!UICONTROL Sitzung].
 Sie können auch eine weitere Metrik [!UICONTROL Bestellungen] aus demselben Feld erstellen und ein anderes Attributionsmodell angeben. Beispielsweise [!UICONTROL Erstkontakt] und ein anderes [!UICONTROL Lookback-Fenster] wie [!UICONTROL 30 Tage].
 
@@ -49,11 +49,11 @@ Ein weiteres Beispiel wäre die Verwendung der Personen-ID, einer Dimension, als
 
 ## Verwenden von Ganzzahlen als Dimensionen {#integers}
 
-Zuvor wurden Ganzzahlen automatisch als Metriken im Customer Journey Analytics behandelt. Jetzt können numerische Zeichen (einschließlich benutzerdefinierter Ereignisse aus Adobe Analytics) als Dimensionen behandelt werden. Siehe folgendes Beispiel:
+Zuvor wurden in Customer Journey Analytics Ganzzahlen automatisch als Metriken behandelt. Jetzt können numerische Zeichen (einschließlich benutzerdefinierter Ereignisse aus Adobe Analytics) als Dimensionen behandelt werden. Siehe folgendes Beispiel:
 
 
 
-1. Ziehen Sie die Ganzzahl **[!UICONTROL Dauer]** in den Abschnitt **[!UICONTROL Dimensionen]** unter [!UICONTROL Enthaltene Komponenten]:
+1. Ziehen Sie die Ganzzahl **[!UICONTROL Dauer]** in den Abschnitt **[!UICONTROL Dimensionen]** unter [!UICONTROL Eingeschlossene Komponenten]:
 1. Sie können jetzt **[!UICONTROL Wertgruppierung]** hinzufügen, um diese Dimension in Berichten in zusammengefasster Form darzustellen. Ohne Gruppierung würde jede Instanz dieser Dimension als Zeilenelement im Workspace-Reporting angezeigt.
    ![Ganzzahl zu Dimension](../assets/integer-to-dimension.gif){width=100%}
 

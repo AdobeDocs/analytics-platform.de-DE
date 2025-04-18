@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Data Views
 role: User
 exl-id: 3d1e3b79-402d-44ff-86b3-be9fd5494e19
-source-git-commit: 220d48cd35d065b38dac441ce4155fa162a07533
+source-git-commit: 9f954709a3dde01b4e01581e34aece07fe0256b1
 workflow-type: tm+mt
 source-wordcount: '14697'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
@@ -34,9 +34,9 @@ Die folgenden Anwendungsfälle sind dokumentiert:
    * [Rangfolge einzelner Dimensionen](#single-dimension-ranked)
    * [Rangfolge mehrerer Dimensionen](#multiple-dimension-ranked)
    * [Unterschiedliche Dimensionswerte zählen](#count-distinct-dimension-values)
-   * [Verwenden von Datumsbereichsnamen zum Filtern](#use-date-range-names-to-filter)
-   * [Filternamen zum Filtern verwenden](#use-filter-names-to-filter)
-   * [Verwenden von Dimensionswerten zum Filtern](#use-dimension-values-to-filter)
+   * [Segmentieren von Datumsbereichsnamen](#use-date-range-names-to-segment)
+   * [Segmentnamen zur Segmentierung verwenden](#use-segment-names-to-segment)
+   * [Segmentieren von Dimensionswerten](#use-dimension-values-to-segment)
    * [Sortieren](#sort)
    * [Beschränkungen](#limits)
 
@@ -122,7 +122,7 @@ Ersetzen Sie diese Beispielobjekte durch Objekte, die für Ihre spezifische Umge
 
 ### REDUZIEREN
 
-Power BI Desktop unterstützt die folgenden Szenarien für den `FLATTEN`. Weitere Informationen [ Sie unter „Reduzieren ](https://experienceleague.adobe.com/en/docs/experience-platform/query/key-concepts/flatten-nested-data) verschachtelten Daten“.
+Power BI Desktop unterstützt die folgenden Szenarien für den `FLATTEN`. Weitere Informationen [ Sie unter „Reduzieren ](https://experienceleague.adobe.com/de/docs/experience-platform/query/key-concepts/flatten-nested-data) verschachtelten Daten“.
 
 | FLATTEN-Parameter | Beispiel | Unterstützt | Bemerkungen |
 |---|---|:---:|---|
@@ -133,8 +133,8 @@ Power BI Desktop unterstützt die folgenden Szenarien für den `FLATTEN`. Weiter
 ### Weitere Informationen
 
 * [Voraussetzungen](/help/data-views/bi-extension.md#prerequisites)
-* [Handbuch zu Anmeldeinformationen](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/credentials)
-* [Verbinden von Power BI mit dem Abfrage-Service](https://experienceleague.adobe.com/en/docs/experience-platform/query/clients/power-bi).
+* [Handbuch zu Anmeldeinformationen](https://experienceleague.adobe.com/de/docs/experience-platform/query/ui/credentials)
+* [Verbinden von Power BI mit dem Abfrage-Service](https://experienceleague.adobe.com/de/docs/experience-platform/query/clients/power-bi).
 
 
 
@@ -176,7 +176,7 @@ Power BI Desktop unterstützt die folgenden Szenarien für den `FLATTEN`. Weiter
 
 ### REDUZIEREN
 
-Tableau Desktop unterstützt die folgenden Szenarien für den `FLATTEN`. Weitere Informationen [ Sie unter „Reduzieren ](https://experienceleague.adobe.com/en/docs/experience-platform/query/key-concepts/flatten-nested-data) verschachtelten Daten“.
+Tableau Desktop unterstützt die folgenden Szenarien für den `FLATTEN`. Weitere Informationen [ Sie unter „Reduzieren ](https://experienceleague.adobe.com/de/docs/experience-platform/query/key-concepts/flatten-nested-data) verschachtelten Daten“.
 
 | FLATTEN-Parameter | Beispiel | Unterstützt | Bemerkungen |
 |---|---|:---:|---|
@@ -187,8 +187,8 @@ Tableau Desktop unterstützt die folgenden Szenarien für den `FLATTEN`. Weitere
 ### Weitere Informationen
 
 * [Voraussetzungen](/help/data-views/bi-extension.md#prerequisites)
-* [Handbuch zu Anmeldeinformationen](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/credentials)
-* [Verbinden von Tableau Desktop mit dem Abfrage-Service](https://experienceleague.adobe.com/en/docs/experience-platform/query/clients/tableau).
+* [Handbuch zu Anmeldeinformationen](https://experienceleague.adobe.com/de/docs/experience-platform/query/ui/credentials)
+* [Verbinden von Tableau Desktop mit dem Abfrage-Service](https://experienceleague.adobe.com/de/docs/experience-platform/query/clients/tableau).
 
 
 >[!TAB Looker]
@@ -204,9 +204,9 @@ Tableau Desktop unterstützt die folgenden Szenarien für den `FLATTEN`. Weitere
 
 1. Bei Looker anmelden
 
-   1. Wählen **[!UICONTROL Admin]** in der linken Leiste aus.
+   1. Wählen Sie **[!UICONTROL Admin]** in der linken Leiste aus.
    1. Wählen Sie **[!UICONTROL Verbindungen]** aus.
-   1. Wählen Sie **[!UICONTROL Verbindung hinzufügen]** aus.
+   1. Wählen Sie **[!UICONTROL Datensätze hinzufügen]** aus.
    1. Im Bildschirm **[!UICONTROL Datenbank mit Looker verbinden]**.
 
       ![Looker-Verbindung zur Datenbank](assets/looker-connect.png){zoomable="yes"}
@@ -253,7 +253,7 @@ Tableau Desktop unterstützt die folgenden Szenarien für den `FLATTEN`. Weitere
 
 ### REDUZIEREN
 
-Looker unterstützt die folgenden Szenarien für den `FLATTEN`. Weitere Informationen [ Sie unter „Reduzieren ](https://experienceleague.adobe.com/en/docs/experience-platform/query/key-concepts/flatten-nested-data) verschachtelten Daten“.
+Looker unterstützt die folgenden Szenarien für den `FLATTEN`. Weitere Informationen [ Sie unter „Reduzieren ](https://experienceleague.adobe.com/de/docs/experience-platform/query/key-concepts/flatten-nested-data) verschachtelten Daten“.
 
 | FLATTEN-Parameter | Beispiel | Unterstützt | Bemerkungen |
 |---|---|:---:|---|
@@ -264,7 +264,7 @@ Looker unterstützt die folgenden Szenarien für den `FLATTEN`. Weitere Informat
 ### Weitere Informationen
 
 * [Voraussetzungen](/help/data-views/bi-extension.md#prerequisites)
-* [Handbuch zu Anmeldeinformationen](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/credentials)
+* [Handbuch zu Anmeldeinformationen](https://experienceleague.adobe.com/de/docs/experience-platform/query/ui/credentials)
 
 
 >[!TAB Jupyter-Notebook]
@@ -292,7 +292,7 @@ Looker unterstützt die folgenden Szenarien für den `FLATTEN`. Weitere Informat
    %config SqlMagic.style = '_DEPRECATED_DEFAULT'
    ```
 
-1. Geben Sie in einer neuen Zelle die Konfigurationsparameter für Ihre Verbindung ein. Verwenden Sie ![Kopieren](/help/assets/icons/Copy.svg), um Werte aus dem Bedienfeld **[!UICONTROL Abfrage]** **[!UICONTROL Ablaufende Anmeldeinformationen]** von Experience Platform in die für die Konfigurationsparameter erforderlichen Werte zu kopieren und einzufügen. z. B.:
+1. Geben Sie in einer neuen Zelle die Konfigurationsparameter für Ihre Verbindung ein. Verwenden Sie ![Kopieren](/help/assets/icons/Copy.svg), um Werte aus dem Bedienfeld **[!UICONTROL Abfrage]** **[!UICONTROL Ablaufende Anmeldeinformationen]** von Experience Platform in die für die Konfigurationsparameter erforderlichen Werte zu kopieren und einzufügen. Zum Beispiel:
 
    ```
    import ipywidgets as widgets
@@ -360,7 +360,7 @@ Looker unterstützt die folgenden Szenarien für den `FLATTEN`. Weitere Informat
 
 ### REDUZIEREN
 
-Jupyter Notebook unterstützt die folgenden Szenarien für den `FLATTEN`. Weitere Informationen [ Sie unter „Reduzieren ](https://experienceleague.adobe.com/en/docs/experience-platform/query/key-concepts/flatten-nested-data) verschachtelten Daten“.
+Jupyter Notebook unterstützt die folgenden Szenarien für den `FLATTEN`. Weitere Informationen [ Sie unter „Reduzieren ](https://experienceleague.adobe.com/de/docs/experience-platform/query/key-concepts/flatten-nested-data) verschachtelten Daten“.
 
 | FLATTEN-Parameter | Beispiel | Unterstützt | Bemerkungen |
 |---|---|:---:|---|
@@ -371,7 +371,7 @@ Jupyter Notebook unterstützt die folgenden Szenarien für den `FLATTEN`. Weiter
 ### Weitere Informationen
 
 * [Voraussetzungen](/help/data-views/bi-extension.md#prerequisites)
-* [Handbuch zu Anmeldeinformationen](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/credentials)
+* [Handbuch zu Anmeldeinformationen](https://experienceleague.adobe.com/de/docs/experience-platform/query/ui/credentials)
 
 >[!TAB RStudio]
 
@@ -386,7 +386,7 @@ Jupyter Notebook unterstützt die folgenden Szenarien für den `FLATTEN`. Weiter
 
 1. Starten Sie RStudio.
 1. Erstellen Sie eine neue Markdown-Datei für R oder laden Sie [diese Beispiel-Markdown-Datei für R ](assets/BI-Extension.Rmd.zip).
-1. Geben Sie in Ihrem ersten Chunk die folgenden Anweisungen zwischen ` ```{r} ` und ` ``` ` ein. Verwenden Sie ![Kopieren](/help/assets/icons/Copy.svg), um Werte aus dem Bedienfeld **[!UICONTROL Abfrage]** **[!UICONTROL Ablaufende Anmeldeinformationen]** von Experience Platform in die Werte zu kopieren, die für die verschiedenen Parameter erforderlich sind, z. B. `host`, `dbname` und `user`. z. B.:
+1. Geben Sie in Ihrem ersten Chunk die folgenden Anweisungen zwischen ` ```{r} ` und ` ``` ` ein. Verwenden Sie ![Kopieren](/help/assets/icons/Copy.svg), um Werte aus dem Bedienfeld **[!UICONTROL Abfrage]** **[!UICONTROL Ablaufende Anmeldeinformationen]** von Experience Platform in die Werte zu kopieren, die für die verschiedenen Parameter erforderlich sind, z. B. `host`, `dbname` und `user`. Zum Beispiel:
 
    ```R
    library(rstudioapi)
@@ -446,7 +446,7 @@ Jupyter Notebook unterstützt die folgenden Szenarien für den `FLATTEN`. Weiter
 
 ### REDUZIEREN
 
-RStudio unterstützt die folgenden Szenarien für den `FLATTEN`. Weitere Informationen [ Sie unter „Reduzieren ](https://experienceleague.adobe.com/en/docs/experience-platform/query/key-concepts/flatten-nested-data) verschachtelten Daten“.
+RStudio unterstützt die folgenden Szenarien für den `FLATTEN`. Weitere Informationen [ Sie unter „Reduzieren ](https://experienceleague.adobe.com/de/docs/experience-platform/query/key-concepts/flatten-nested-data) verschachtelten Daten“.
 
 | FLATTEN-Parameter | Beispiel | Unterstützt | Bemerkungen |
 |---|---|:---:|---|
@@ -457,7 +457,7 @@ RStudio unterstützt die folgenden Szenarien für den `FLATTEN`. Weitere Informa
 ### Weitere Informationen
 
 * [Voraussetzungen](/help/data-views/bi-extension.md#prerequisites)
-* [Handbuch zu Anmeldeinformationen](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/credentials)
+* [Handbuch zu Anmeldeinformationen](https://experienceleague.adobe.com/de/docs/experience-platform/query/ui/credentials)
 
 >[!ENDTABS]
 
@@ -2914,11 +2914,11 @@ Bei den meisten Customer Journey Analytics-Visualisierungen bietet Power BI Desk
 | ![GraphHistogramm](/help/assets/icons/Histogram.svg) | [Histogramm](/help/analysis-workspace/visualizations/histogram.md) |  |
 | ![GraphBarHorizontal](/help/assets/icons/GraphBarHorizontal.svg) | [Horizontalbalken](/help/analysis-workspace/visualizations/horizontal-bar.md) | [Cluster-Balkendiagramm](https://learn.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-types-for-reports-and-q-and-a#bar-and-column-charts) |
 | ![GraphBarHorizontalStacked](/help/assets/icons/GraphBarHorizontalStacked.svg) | [Horizontalbalken gestapelt](/help/analysis-workspace/visualizations/horizontal-bar.md) | [Gestapeltes Balkendiagramm und 100 % gestapeltes Balkendiagramm](https://learn.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-types-for-reports-and-q-and-a#bar-and-column-charts) |
-| ![Zweig3](/help/assets/icons/Branch3.svg) | [Journey-Arbeitsfläche](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md) | [Zersetzungsbaum](https://learn.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-types-for-reports-and-q-and-a#decomposition-tree) |
+| ![Branch3](/help/assets/icons/Branch3.svg) | [Journey-Arbeitsfläche](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md) | [Zersetzungsbaum](https://learn.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-types-for-reports-and-q-and-a#decomposition-tree) |
 | ![KeyMetrics](/help/assets/icons/KeyMetrics.svg) | [Zusammenfassung einer Schlüsselmetrik](/help/analysis-workspace/visualizations/key-metric.md) |  |
 | ![Trends-Grafik](/help/assets/icons/GraphTrend.svg) | [Linie](/help/analysis-workspace/visualizations/line.md) | [Liniendiagramm](https://learn.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-types-for-reports-and-q-and-a#line-charts) |
 | ![Streudiagramm](/help/assets/icons/GraphScatter.svg) | [Streuung](/help/analysis-workspace/visualizations/scatterplot.md) | [Streudiagramm](https://learn.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-types-for-reports-and-q-and-a#scatter) |
-| ![PageRule](/help/assets/icons/PageRule.svg) | [Bereichs-Kopfzeile](/help/analysis-workspace/visualizations/section-header.md) | [Textfeld](https://learn.microsoft.com/en-us/power-bi/paginated-reports/report-design/textbox/add-move-or-delete-a-text-box-report-builder-and-service) |
+| ![PageRule](/help/assets/icons/PageRule.svg) | [Abschnittskopfzeile](/help/analysis-workspace/visualizations/section-header.md) | [Textfeld](https://learn.microsoft.com/en-us/power-bi/paginated-reports/report-design/textbox/add-move-or-delete-a-text-box-report-builder-and-service) |
 | ![NachObenUnten](/help/assets/icons/MoveUpDown.svg) | [Zusammenfassungsänderung](/help/analysis-workspace/visualizations/summary-number-change.md) | [Karte](https://learn.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-types-for-reports-and-q-and-a#cards) |
 | ![123](/help/assets/icons/123.svg)</p> | [Zusammenfassungszahl](/help/analysis-workspace/visualizations/summary-number-change.md) | [Karte](https://learn.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-types-for-reports-and-q-and-a#cards) |
 | ![Text](/help/assets/icons/Text.svg) | [Text](/help/analysis-workspace/visualizations/text.md) | [Textfeld](https://learn.microsoft.com/en-us/power-bi/paginated-reports/report-design/textbox/add-move-or-delete-a-text-box-report-builder-and-service) |
@@ -2997,11 +2997,11 @@ Für die meisten Customer Journey Analytics-Visualisierungen bietet Tableau Desk
 | ![GraphHistogramm](/help/assets/icons/Histogram.svg) | [Histogramm](/help/analysis-workspace/visualizations/histogram.md) | [Histogramm](https://help.tableau.com/current/pro/desktop/en-us/buildexamples_histogram.htm) |
 | ![GraphBarHorizontal](/help/assets/icons/GraphBarHorizontal.svg) | [Horizontalbalken](/help/analysis-workspace/visualizations/horizontal-bar.md) | [Balkendiagramm](https://help.tableau.com/current/pro/desktop/en-us/buildexamples_bar.htm) |
 | ![GraphBarHorizontalStacked](/help/assets/icons/GraphBarHorizontalStacked.svg) | [Horizontalbalken gestapelt](/help/analysis-workspace/visualizations/horizontal-bar.md) | [Balkendiagramm](https://help.tableau.com/current/pro/desktop/en-us/buildexamples_bar.htm) |
-| ![Zweig3](/help/assets/icons/Branch3.svg) | [Journey-Arbeitsfläche](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md) | |
+| ![Branch3](/help/assets/icons/Branch3.svg) | [Journey-Arbeitsfläche](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md) | |
 | ![KeyMetrics](/help/assets/icons/KeyMetrics.svg) | [Zusammenfassung einer Schlüsselmetrik](/help/analysis-workspace/visualizations/key-metric.md) |  |
 | ![Trends-Grafik](/help/assets/icons/GraphTrend.svg) | [Linie](/help/analysis-workspace/visualizations/line.md) | [Liniendiagramm](https://help.tableau.com/current/pro/desktop/en-us/buildexamples_line.htm) |
 | ![Streudiagramm](/help/assets/icons/GraphScatter.svg) | [Streuung](/help/analysis-workspace/visualizations/scatterplot.md) | [Streudiagramm](https://help.tableau.com/current/pro/desktop/en-us/buildexamples_scatter.htm) |
-| ![PageRule](/help/assets/icons/PageRule.svg) | [Bereichs-Kopfzeile](/help/analysis-workspace/visualizations/section-header.md) |  |
+| ![PageRule](/help/assets/icons/PageRule.svg) | [Abschnittskopfzeile](/help/analysis-workspace/visualizations/section-header.md) |  |
 | ![NachObenUnten](/help/assets/icons/MoveUpDown.svg) | [Zusammenfassungsänderung](/help/analysis-workspace/visualizations/summary-number-change.md) | |
 | ![123](/help/assets/icons/123.svg)</p> | [Zusammenfassungszahl](/help/analysis-workspace/visualizations/summary-number-change.md) | |
 | ![Text](/help/assets/icons/Text.svg) | [Text](/help/analysis-workspace/visualizations/text.md) | |
@@ -3061,11 +3061,11 @@ Bei den meisten Customer Journey Analytics-Visualisierungen bietet der Looker gl
 | ![GraphHistogramm](/help/assets/icons/Histogram.svg) | [Histogramm](/help/analysis-workspace/visualizations/histogram.md) | |
 | ![GraphBarHorizontal](/help/assets/icons/GraphBarHorizontal.svg) | [Horizontalbalken](/help/analysis-workspace/visualizations/horizontal-bar.md) | [Balkendiagramm](https://cloud.google.com/looker/docs/bar-options) |
 | ![GraphBarHorizontalStacked](/help/assets/icons/GraphBarHorizontalStacked.svg) | [Horizontalbalken gestapelt](/help/analysis-workspace/visualizations/horizontal-bar.md) | [Balkendiagramm](https://cloud.google.com/looker/docs/bar-options) |
-| ![Zweig3](/help/assets/icons/Branch3.svg) | [Journey-Arbeitsfläche](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md) |  |
+| ![Branch3](/help/assets/icons/Branch3.svg) | [Journey-Arbeitsfläche](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md) |  |
 | ![KeyMetrics](/help/assets/icons/KeyMetrics.svg) | [Zusammenfassung einer Schlüsselmetrik](/help/analysis-workspace/visualizations/key-metric.md) |  |
 | ![Trends-Grafik](/help/assets/icons/GraphTrend.svg) | [Linie](/help/analysis-workspace/visualizations/line.md) | [Liniendiagramm](https://cloud.google.com/looker/docs/line-options) |
 | ![Streudiagramm](/help/assets/icons/GraphScatter.svg) | [Streuung](/help/analysis-workspace/visualizations/scatterplot.md) | [Streudiagramm](https://cloud.google.com/looker/docs/scatter-options) |
-| ![PageRule](/help/assets/icons/PageRule.svg) | [Bereichs-Kopfzeile](/help/analysis-workspace/visualizations/section-header.md) |  |
+| ![PageRule](/help/assets/icons/PageRule.svg) | [Abschnittskopfzeile](/help/analysis-workspace/visualizations/section-header.md) |  |
 | ![NachObenUnten](/help/assets/icons/MoveUpDown.svg) | [Zusammenfassungsänderung](/help/analysis-workspace/visualizations/summary-number-change.md) | [Einzelwert](https://cloud.google.com/looker/docs/single-value-options) |
 | ![123](/help/assets/icons/123.svg)</p> | [Zusammenfassungszahl](/help/analysis-workspace/visualizations/summary-number-change.md) | [Einzelwert](https://cloud.google.com/looker/docs/single-value-options) |
 | ![Text](/help/assets/icons/Text.svg) | [Text](/help/analysis-workspace/visualizations/text.md) | [Einzelwert](https://cloud.google.com/looker/docs/single-value-options) |
@@ -3116,7 +3116,7 @@ Jedes der unterstützten BI-Tools hat einige Einschränkungen bei der Arbeit mit
 >[!TAB Looker]
 
 * Looker verfügt über eine Einstellung für die maximale Anzahl von Verbindungen pro Knoten, die zwischen 5 und 100 liegen muss.  Sie können diesen Wert nicht auf 1 setzen.  Diese Einstellung bedeutet, dass eine Looker-Verbindung immer mindestens 5 der verfügbaren Query Service-Sitzungen verwendet.
-* Mit Looker können Sie ein Projekt mit einer Ansicht erstellen, die auf einer Customer Journey Analytics-Datenansicht basiert. Looker erstellt dann mithilfe von LookerML ein Modell basierend auf den Dimensionen und Metriken, die in der Datenansicht verfügbar sind.  Diese Projektansicht wird nicht automatisch entsprechend der Quelle aktualisiert.  Wenn Sie Änderungen oder Ergänzungen an den Dimensionen, Metriken, berechneten Metriken oder Filtern der CJA-Datenansicht vornehmen, werden diese Änderungen nicht automatisch in der Suche angezeigt.  Sie müssen die Projektansicht manuell aktualisieren oder ein neues Projekt erstellen.
+* Mit Looker können Sie ein Projekt mit einer Ansicht erstellen, die auf einer Customer Journey Analytics-Datenansicht basiert. Looker erstellt dann mithilfe von LookerML ein Modell basierend auf den Dimensionen und Metriken, die in der Datenansicht verfügbar sind.  Diese Projektansicht wird nicht automatisch entsprechend der Quelle aktualisiert.  Wenn Sie Änderungen oder Ergänzungen an den Dimensionen, Metriken, berechneten Metriken oder Filtern der CJA-Datenansicht vornehmen, werden diese Änderungen nicht automatisch in Looker angezeigt.  Sie müssen die Projektansicht manuell aktualisieren oder ein neues Projekt erstellen.
 * Das Benutzererlebnis des Lookers in Datums- oder Datums-/Uhrzeitfeldern wie **[!UICONTROL DateRange]** oder **[!UICONTROL DateRangeDay]** ist verwirrend.
 * Der Datumsbereich des Lookers ist exklusiv anstatt inklusiv.  Der **[!UICONTROL bis (before)]** ist grau, sodass Sie diesen Aspekt verpassen könnten.  Für Ihren Endtag müssen Sie einen nach dem Tag auswählen, an dem Sie einen Bericht erstellen möchten.
 * Looker behandelt Ihre Metriken nicht automatisch als Metriken.  Wenn Sie eine Metrik auswählen, versucht der Looker standardmäßig, die Metrik als Dimension in der Abfrage zu behandeln.  Um eine Metrik als Metrik zu behandeln, müssen Sie ein benutzerdefiniertes Feld wie oben dargestellt erstellen. Als Tastaturbefehl können Sie **[!UICONTROL ⋮]**, **[!UICONTROL Aggregat]** und dann **[!UICONTROL Summe]** auswählen.

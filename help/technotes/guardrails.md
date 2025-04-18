@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Administration
 role: Admin
 exl-id: f093ac54-7d31-449b-a441-a65856a1d535
-source-git-commit: 3b4917dade478f327ee3f532c5d72c4ca7656067
+source-git-commit: 9f954709a3dde01b4e01581e34aece07fe0256b1
 workflow-type: tm+mt
 source-wordcount: '1760'
 ht-degree: 10%
@@ -84,7 +84,7 @@ Image size - 2 - System-enforced Guardrail - Maximim upload size per image in MB
 
 | Name | Wert | Art von Limit | Beschreibung |
 |---|--:|---|---|
-| Zielgruppenfilter | 20 | Vom System erzwungene Leitplanke | Maximale Anzahl von [Filtern](../components/filters/filters-overview.md) pro Zielgruppe |
+| Zielgruppensegmente | 20 | Vom System erzwungene Leitplanke | Maximale Anzahl [Segmente](../components/filters/filters-overview.md) pro Zielgruppe. |
 | Anzahl der Zielgruppenidentitäten | 20 Million | Vom System erzwungene Leitplanke | Maximale Anzahl von Identitäten pro Zielgruppe. |
 | Häufigkeit der Zielgruppenaktualisierung | 4 | Vom System erzwungene Leitplanke | Die maximale Häufigkeit in Stunden, in [ eine ](../components/audiences/audiences-overview.md) aktualisiert werden kann. |
 | Lookback-Fenster zur Zielgruppenaktualisierung | 90 | Vom System erzwungene Leitplanke | Maximale Anzahl von Tagen für das Aktualisierungs-Lookback-Fenster |
@@ -183,18 +183,18 @@ Siehe auch Experience Platform [Leitplanken für den Datensatzexport](https://ex
 | Lookback-Fenster/Wiederholungshäufigkeit | 1/1 - 30/7 | Vom System erzwungene Leitplanke | Maximales Lookback-Fenster in Tagen/Wiederholungshäufigkeit. Der Wert variiert je nach Customer Journey Analytics-Paket (siehe Produktbeschreibung). |
 
 
-## Filter und berechnete Metriken
+## Segmente und berechnete Metriken
 
 | Name | Wert | Art von Limit | Beschreibung |
 |---|--:|---|---|
-| Container pro Filter | 50 | Vom System erzwungene Leitplanke | Maximale Anzahl an Containern pro Filter. |
+| Container pro Filter | 50 | Vom System erzwungene Leitplanke | Maximale Anzahl von Containern pro Segment. |
 | Metriken pro berechneter Metrik | 25 | Vom System erzwungene Leitplanke | Maximale Anzahl von Metriken pro berechneter Metrik. |
-| Metriken und Dimensionen pro Filter | 25 | Vom System erzwungene Leitplanke | Maximale Anzahl eindeutiger Metriken und Dimensionen pro Filter. |
-| Verschachtelte Container pro Filter | 10 | Vom System erzwungene Leitplanke | Maximale Anzahl verschachtelter Container pro Filter. |
-| Regeln pro Filter | 100 | Vom System erzwungene Leitplanke | Maximale Anzahl von Regeln pro Filter. |
-| Zeichenfolgenvergleiche pro Dimension und Filter | 100 | Vom System erzwungene Leitplanke | Maximale Anzahl von Zeichenfolgenvergleichen pro Dimension pro Filter. |
+| Metriken und Dimensionen pro Filter | 25 | Vom System erzwungene Leitplanke | Maximale Anzahl eindeutiger Metriken und Dimensionen pro Segment. |
+| Verschachtelte Container pro Filter | 10 | Vom System erzwungene Leitplanke | Maximale Anzahl verschachtelter Container pro Segment. |
+| Regeln pro Segment | 100 | Vom System erzwungene Leitplanke | Maximale Anzahl von Regeln pro Segment. |
+| Zeichenfolgenvergleiche pro Dimension und Segment | 100 | Vom System erzwungene Leitplanke | Maximale Anzahl von Zeichenfolgenvergleichen pro Dimension und Segment. |
 | Berechnete Metriken | 6.000 | Vom System erzwungene Leitplanke | Maximale Anzahl berechneter Metriken für eine Organisation. |
-| Filter | 50.000 | Vom System erzwungene Leitplanke | Maximale Anzahl von Filtern, die Sie für eine Organisation definieren können. |
+| Segmente | 50.000 | Vom System erzwungene Leitplanke | Maximale Anzahl von Segmenten, die Sie für eine Organisation definieren können. |
 | API-Aufrufe | 120 | Vom System erzwungene Leitplanke | API-Anfragen pro Minute (12 Anfragen alle 6 Sekunden). |
 
 {style="table-layout:auto"}
@@ -205,7 +205,7 @@ Siehe auch Experience Platform [Leitplanken für den Datensatzexport](https://ex
 | Name | Wert | Art von Limit | Beschreibung |
 |---|--:|---|---|
 | Kacheln | 16 | Vom System erzwungene Leitplanke | Maximale Anzahl an Kacheln pro Scorecard |
-| Filter | 10 | Vom System erzwungene Leitplanke | Maximale Anzahl an Filtern pro Scorecard. |
+| Segmente | 10 | Vom System erzwungene Leitplanke | Maximale Anzahl von Segmenten pro Scorecard. |
 | Dimensionen | 10 | Vom System erzwungene Leitplanke | Maximale Anzahl von Dimensionen pro Scorecard. |
 
 {style="table-layout:auto"}

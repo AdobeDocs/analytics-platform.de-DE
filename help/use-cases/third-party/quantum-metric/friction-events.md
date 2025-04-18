@@ -7,7 +7,7 @@ feature: Use Cases
 hidefromtoc: true
 hide: true
 exl-id: 1b7d5159-39b2-4ba4-be64-f448ae53c70e
-source-git-commit: 1774ef63e3578f7016a95716fcfa11a0c7c627ce
+source-git-commit: 9f954709a3dde01b4e01581e34aece07fe0256b1
 workflow-type: tm+mt
 source-wordcount: '552'
 ht-degree: 0%
@@ -66,4 +66,4 @@ Mögliche Ideen für Analysen sind:
 
 * Trend von Reibungsereignisdaten im Zeitverlauf
 * Fügen Sie in einer Fallout- oder Trichtervisualisierung Customer Journey Analytics-Ereignisse als einige Schritte und Quantenmetrik-Reibungsereignisse als andere hinzu. Dieser Bericht zeigt an, wo Besucherinnen und Besucher am häufigsten in Schwierigkeiten geraten.
-* Erstellen und Anwenden eines Filters für Besucherinnen und Besucher, für die Reibungsereignisse auftreten, um eine tiefere Analyse zu ermöglichen
+* Erstellen und Anwenden eines Segments für Besucher, die Reibungsereignisse für eine tiefer gehende Analyse erleben

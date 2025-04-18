@@ -7,9 +7,9 @@ feature: Use Cases
 hidefromtoc: true
 hide: true
 exl-id: fcc36457-4ce9-4c93-93e2-de03becfd5da
-source-git-commit: 25a2c549c27918f80202bde4cd30e305f4a295f3
+source-git-commit: 9f954709a3dde01b4e01581e34aece07fe0256b1
 workflow-type: tm+mt
-source-wordcount: '676'
+source-wordcount: '674'
 ht-degree: 1%
 
 ---
@@ -77,6 +77,6 @@ Jede Sitzungs-ID ist jetzt ein klickbarer Link. Weitere [ zum Hinzufügen von Hy
 
 ## Schritt 5: Sessions aus Customer Journey Analytics anzeigen
 
-Nachdem Sie ein interessantes Segment gefunden haben, das Sie erneut untersuchen möchten, können Sie es auf das Bedienfeld anwenden, das Ihre Sitzungs-ID-Links enthält, und nach Segment filtern. Die Tabelle gibt alle Sitzungen in diesem Segment zurück, und Sie können auf eine beliebige Sitzung klicken, um sie in Quantum Metric weiter zu untersuchen.
+Nachdem Sie ein interessantes Segment gefunden haben, das Sie erneut untersuchen möchten, können Sie es auf das Bedienfeld anwenden, das Ihre Sitzungs-ID-Links und das Segment enthält. Die Tabelle gibt alle Sitzungen in diesem Segment zurück, und Sie können auf eine beliebige Sitzung klicken, um sie in Quantum Metric weiter zu untersuchen.
 
 Weitere Informationen finden [ unter „Das Enterprise Guide to Session Replay](https://www.quantummetric.com/resources/ebook/the-enterprise-guide-to-session-replay) auf Quantum Metric. Sie können sich auch an Ihren Kundenbetreuer von Quantum Metric wenden oder eine Anfrage über das [Quantum Metric Customer Request Portal) ](https://community.quantummetric.com/s/public-support-page).

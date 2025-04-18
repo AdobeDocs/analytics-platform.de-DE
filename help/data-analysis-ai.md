@@ -7,7 +7,7 @@ feature: AI Tools
 hidefromtoc: true
 hide: true
 exl-id: 262d5f15-16cb-4851-a769-7dbd205b2f81
-source-git-commit: ab78583eb36d6158630724fbab9eb8148bcdbe23
+source-git-commit: 9f954709a3dde01b4e01581e34aece07fe0256b1
 workflow-type: tm+mt
 source-wordcount: '1878'
 ht-degree: 5%
@@ -31,7 +31,7 @@ Wenn Sie den Data Insights-Agenten verwenden, um datenorientierte Fragen in Anal
 | **Erstellen und Aktualisieren von Visualisierungen** | Erzeugt eine Freiformtabelle und eine dazugehörige Visualisierung (z. B. Linie, Balken, Ringdiagramm usw.).<p>Beispiel: *Was ist der Gewinn für alle SKUs von Februar bis Mai?* |
 | **Unterstützte Visualisierungstypen** | <ul><li>Linie</li><li>Mehrzeilig</li><li>Freiformtabelle</li><li>Balken</li><li>Ringdiagramm</li><li>Zusammenfassungszahl</li></ul> |
 | **Out-of-Scope Prompt Detection** | Wenn Sie eine Eingabeaufforderung übermitteln, die außerhalb des Bereichs liegt, z. B. „Dieses Projekt exportieren“, antwortet der Data Insights-Agent, indem er Ihnen mitteilt, dass die Frage außerhalb des Bereichs liegt. |
-| **Fragen klären** | Wenn Sie eine Frage stellen, die nicht genügend Kontext für den Data Insights-Agenten hat, um beantwortet zu werden, oder die zu generisch ist, antwortet der Data Insights-Agent mit einer klärenden Frage oder empfohlenen Optionen. Beispiele: <p>**Komponenten**<ul><li>Metrik: *Welche „Umsatz“-Metrik meinten Sie?*</li><li>Dimension: *Auf welche der folgenden „Regionen“ möchten Sie sich konzentrieren?*</li><li>Filter: *Welches „Konto“-Segment wollten Sie anwenden?*</li><li>Datumsbereich: *Mit „letztem Monat“ meinen Sie den letzten vollen Monat oder die letzten 30 Tage?*</li></ul>**Dimension-Elemente**: Welchen „Store-Namen“ meinten Sie? (Beispiel: #5274, #2949 usw.) |
+| **Fragen klären** | Wenn Sie eine Frage stellen, die nicht genügend Kontext für den Data Insights-Agenten hat, um beantwortet zu werden, oder die zu generisch ist, antwortet der Data Insights-Agent mit einer klärenden Frage oder empfohlenen Optionen. Beispiele: <p>**Komponenten**<ul><li>Metrik: *Welche „Umsatz“-Metrik meinten Sie?*</li><li>Dimension: *Auf welche der folgenden „Regionen“ möchten Sie sich konzentrieren?*</li><li>Segment: *Welches „Konto“-Segment wollten Sie anwenden?*</li><li>Datumsbereich: *Mit „letztem Monat“ meinen Sie den letzten vollen Monat oder die letzten 30 Tage?*</li></ul>**Dimension-Elemente**: Welchen „Store-Namen“ meinten Sie? (Beispiel: #5274, #2949 usw.) |
 | **Multi-Turn** | Der Data Insights-Agent antwortet auf eine Eingabeaufforderung mit dem Kontext früherer Eingabeaufforderungen, sodass Benutzende Visualisierungen aktualisieren und Fragen stellen können. Beispiel: <ul><li>Eingabeaufforderung 1: *Trendereignisse ab März.*</li><li>Eingabeaufforderung 2: *Zeigen Sie mir stattdessen die Daten von März bis April*</li></ul> |
 | **Verifizierbarkeit** | Die Datenverifizierbarkeit und -richtigkeit kann über die generierte Freiformtabelle und Datenvisualisierung bestätigt werden. Wenn ein(e) Benutzende(r) beispielsweise *Bestellungen im letzten Monat* fragt, können Sie bestätigen, dass im neu generierten Bedienfeld, in der Datenvisualisierung und in der Freiformtabelle die richtige Metrik („Bestellungen„) und der richtige Datumsbereich („letzter Monat„) ausgewählt wurden. |
 | **Feedback** | <ul><li>Daumen hoch</li><li>Daumen runter</li><li>Markierung</li></ul> |

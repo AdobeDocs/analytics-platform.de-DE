@@ -5,10 +5,10 @@ role: User
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: ae66cd06-7ec1-4174-a3cf-939c3a66b840
-source-git-commit: eb9b749a5c61da3b4b5d2eeeed93bf5e4702a415
+source-git-commit: 9f954709a3dde01b4e01581e34aece07fe0256b1
 workflow-type: tm+mt
-source-wordcount: '1649'
-ht-degree: 95%
+source-wordcount: '1648'
+ht-degree: 92%
 
 ---
 
@@ -56,7 +56,7 @@ Customer Journey Analytics verwendet eine eigene leistungsstarke Architektur, di
 
 Die Reporting-Engine ist von grundlegender Bedeutung für Customer Journey Analytics, denn sie erlaubt es Ihnen, schrittweise mit allen Customer-Journey-Daten innerhalb dieser Reporting-Engine zu interagieren und darauf zu reagieren. Customer Journey Analytics verfügt über einen umfangreichen Satz an Komponenten, mit denen Sie dies visuell und per Drag-and-Drop erreichen können. Mit BI-Visualisierungs-Tools können Sie innerhalb der Grenzen von in SQL vorbereiteten Daten (wie durch die IT definiert) Erkundungen anstellen. Mit Customer Journey Analytics können Sie Daten in beliebig viele Teile zerlegen, ohne zur IT zurückkehren zu müssen, um eine weitere SQL-Ansicht erstellen zu lassen.
 
-„Schrittweise“ ist hier ein Schlüsselkonzept: Im Gegensatz zu den meisten Visualisierungen in BI-Tools können Sie mit der visuellen Drag-and-Drop-Benutzeroberfläche in Customer Journey Analytics Ihre Daten kontinuierlich für Ihre spezifischen Anforderungen aufteilen: Sie können interaktiv visuelle Abfragen mit relevanten Metriken, Dimensionen, Filtern (Segmenten), Berechnungen, Timelines, Anmerkungen und anderen Analysewerten erstellen.
+„Schrittweise“ ist hier ein Schlüsselkonzept: Im Gegensatz zu den meisten Visualisierungen in BI-Tools können Sie mit der visuellen Drag-and-Drop-Benutzeroberfläche in Customer Journey Analytics Ihre Daten kontinuierlich für Ihre spezifischen Anforderungen fortlaufend aufschlüsseln: Sie können interaktiv visuelle Abfragen mit relevanten Metriken, Dimensionen, Segmenten, Berechnungen, Zeitachsen, Anmerkungen und anderen Analysewerten erstellen.
 
 In diese Visualisierungskomponenten integriert sind intelligente Funktionen wie:
 

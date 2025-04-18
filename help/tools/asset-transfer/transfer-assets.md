@@ -4,7 +4,7 @@ description: Erfahren Sie, wie Sie Komponenten von einem Benutzer auf einen ande
 role: Admin
 solution: Customer Journey Analytics
 exl-id: c5ed81ea-1d55-4193-9bb1-a2a93ebde91f
-source-git-commit: daa07b603caa613ca49b61c2e8e461d558459f57
+source-git-commit: 9f954709a3dde01b4e01581e34aece07fe0256b1
 workflow-type: tm+mt
 source-wordcount: '545'
 ht-degree: 0%
@@ -13,13 +13,13 @@ ht-degree: 0%
 
 # Übertragen von Assets
 
-Mit dem Asset Transfer-Tool können Sie den Besitz von Assets an andere Benutzer übertragen. Assets kann Komponenten wie Projekte, Filter, Datumsbereiche, berechnete Metriken, Anmerkungen, Warnhinweise und geplante Projekte enthalten.
+Mit dem Asset Transfer-Tool können Sie den Besitz von Assets an andere Benutzer übertragen. Assets kann Komponenten wie Projekte, Segmente, Datumsbereiche, berechnete Metriken, Anmerkungen, Warnhinweise und geplante Projekte enthalten.
 
-Assets sind häufig an einen einzelnen Eigentümer gebunden und können in einigen Fällen, z. B. bei Filtern und berechneten Metriken, nicht einmal von Administratoren bearbeitet oder freigegeben werden. Wenn Benutzer das Unternehmen verlassen oder sich ihre Rolle ändert, kann es erforderlich werden, das Eigentum an diesen Assets auf andere Benutzer zu übertragen, um Kontinuität und angemessenen Zugriff sicherzustellen.
+Assets sind häufig an einen einzelnen Eigentümer gebunden und können in einigen Fällen, z. B. bei Segmenten und berechneten Metriken, nicht einmal von Administratoren bearbeitet oder freigegeben werden. Wenn Benutzer das Unternehmen verlassen oder sich ihre Rolle ändert, kann es erforderlich werden, das Eigentum an diesen Assets auf andere Benutzer zu übertragen, um Kontinuität und angemessenen Zugriff sicherzustellen.
 
-## Zugriffsberechtigung
+## Zugriffsberechtigungen
 
-Für das Customer Journey Analytics ist die Berechtigung des Produktadministrators für die Asset-Übertragung erforderlich.
+Für die Asset-Übertragung ist die Berechtigung eines Produktadministrators für Customer Journey Analytics erforderlich.
 
 ## Übertragen von Assets
 
@@ -51,7 +51,7 @@ Für das Customer Journey Analytics ist die Berechtigung des Produktadministrato
 
    >[!NOTE]
    >
-   >    Beim Übertragen von Assets, die auf andere Komponenten verweisen (z. B. Projekte, die auf andere Filter und berechnete Metriken verweisen), werden Komponenten, die nicht dem aktuellen Projektbesitzer gehören, nur für den Empfänger freigegeben. Das Eigentum an allen anderen Komponenten geht auf den Empfänger über.
+   >    Beim Übertragen von Assets, die auf andere Komponenten verweisen (z. B. Projekte, die auf andere Segmente und berechnete Metriken verweisen), werden Komponenten, die nicht dem aktuellen Projektbesitzer gehören, nur für den Empfänger freigegeben. Das Eigentum an allen anderen Komponenten geht auf den Empfänger über.
 
 1. Um _alle_ Assets in einem Ordner auszuwählen, aktivieren Sie das Kontrollkästchen neben **[!UICONTROL Name]** oben in der Tabelle.
 
@@ -79,13 +79,13 @@ Es gibt drei mögliche Ergebnisse für eine Übertragung:
 
 Einer der wichtigsten Anwendungsfälle für die Asset-Übertragung ist das Upgrade von Adobe Analytics auf Customer Journey Analytics.
 
-Mit [ Funktion „Komponentenmigration](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/component-migration/component-migration) in Adobe Analytics können Projekte, für die Administratoren verantwortlich sind, zu anderen Administratoren migriert werden. Alle Komponenten dieser Projekte werden dann im Customer Journey Analytics neu erstellt, und der Empfängeradministrator ist für alle diese Komponenten verantwortlich, unabhängig davon, wer sie erstellt hat.
+Mit [ Funktion „Komponentenmigration](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/component-migration/component-migration) in Adobe Analytics können Projekte, für die Administratoren verantwortlich sind, zu anderen Administratoren migriert werden. Alle Komponenten dieser Projekte werden dann in Customer Journey Analytics neu erstellt, und der Empfängeradministrator ist für alle diese Komponenten verantwortlich, unabhängig davon, wer sie erstellt hat.
 
 Mit diesem Asset Transfer Tool können Administratoren anschließend Komponenten ihren rechtmäßigen Besitzern neu zuweisen, unabhängig davon, ob sie Administratoren sind oder nicht.
 
 >[!IMPORTANT]
 >
->Sie können zwar Komponenten mit diesem Tool übertragen, aber als Administrator müssen Sie dennoch sicherstellen, dass der Empfänger Zugriff auf die Datenansichten hat, die zum Anzeigen/Verwenden dieser Komponenten erforderlich sind. In der Admin Console [ können Sie Berechtigungen anzeigen und zuweisen](https://helpx.adobe.com/de/enterprise/using/admin-console.html).
+>Sie können zwar Komponenten mit diesem Tool übertragen, aber als Administrator müssen Sie dennoch sicherstellen, dass der Empfänger Zugriff auf die Datenansichten hat, die zum Anzeigen/Verwenden dieser Komponenten erforderlich sind. In der [Admin Console können Sie Berechtigungen anzeigen und zuweisen](https://helpx.adobe.com/de/enterprise/using/admin-console.html).
 
 ## In CSV exportieren
 

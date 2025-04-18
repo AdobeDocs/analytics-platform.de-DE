@@ -5,7 +5,7 @@ feature: Workspace Basics
 exl-id: 6a934be7-0612-41ff-964e-77abc0b1efda
 solution: Customer Journey Analytics
 role: User
-source-git-commit: 191693bc970fcf59ee51706365abde0ee30e3d3d
+source-git-commit: 9f954709a3dde01b4e01581e34aece07fe0256b1
 workflow-type: tm+mt
 source-wordcount: '3873'
 ht-degree: 75%
@@ -36,7 +36,7 @@ Die allgemeinen Voreinstellungen gelten für Ihre Customer Journey Analytics-Erf
 | --- | --- |
 | **[!UICONTROL Landingpage]** | Wählen Sie aus, welche Seite beim Zugriff auf Customer Journey Analytics als Standardseite angezeigt werden soll: <ul><li>Projektliste (Standard)</li><li>Leeres Projekt</li><li>Geführte Analyse von Blank Trends</li><li>Bestimmtes Projekt, das aus einer Liste ausgewählt wurde</li></ul> |
 | **[!UICONTROL Tipps]** | Zeigt Tipps in einem blauen Feld im rechten unteren Bereich von Analysis Workspace an. <p>Standardmäßig ist diese Option aktiviert.</p> |
-| **[!UICONTROL Komponenten, die in Gruppen im linken Panel angezeigt werden]** | Wählen Sie aus, wie viele Komponenten jeder Komponentengruppe im Komponentenmenü im linken Panel angezeigt werden sollen. <p>Wenn Sie „0“ für eine Komponentengruppe auswählen, ist die Komponentengruppe nicht mehr über das linke Panel zugänglich.</p><p>Standardmäßig werden für jede der folgenden Komponentengruppen fünf Komponenten angezeigt:</p> <ul><li>Dimensionen</li><li>Metriken</li><li>Filter</li><li>Datumsbereiche</li></ul> <p>Weitere Informationen zu Komponenten in Analysis Workspace finden Sie unter [Komponentenübersicht](/help/components/overview.md).</p> |
+| **[!UICONTROL Komponenten, die in Gruppen im linken Panel angezeigt werden]** | Wählen Sie aus, wie viele Komponenten jeder Komponentengruppe im Komponentenmenü im linken Panel angezeigt werden sollen. <p>Wenn Sie „0“ für eine Komponentengruppe auswählen, ist die Komponentengruppe nicht mehr über das linke Panel zugänglich.</p><p>Standardmäßig werden für jede der folgenden Komponentengruppen fünf Komponenten angezeigt:</p> <ul><li>Dimensionen</li><li>Metriken</li><li>Segmente</li><li>Datumsbereiche</li></ul> <p>Weitere Informationen zu Komponenten in Analysis Workspace finden Sie unter [Komponentenübersicht](/help/components/overview.md).</p> |
 
 ### IMS-Organisations-Voreinstellungen {#ims-organization-preferences}
 

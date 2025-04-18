@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: 1f5b2a42-162e-45a7-9fd4-8c1557f48bb8
 role: Admin
-source-git-commit: a530738bb02888d637e5ff4edaa1aa2535a9034c
-workflow-type: ht
+source-git-commit: 9f954709a3dde01b4e01581e34aece07fe0256b1
+workflow-type: tm+mt
 source-wordcount: '2043'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -51,11 +51,11 @@ Weitere Informationen zum Reporting Activity Manager, einschließlich der wichti
 
    ![Berichtsaktivität mit der Warteschlange für Berichte](assets/reporting-activity-monthly.png)
 
-1. (Optional) Sie können die Liste der Verbindungen durchsuchen oder filtern:
+1. (Optional) Sie können die Liste der Verbindungen durchsuchen oder segmentieren:
 
    * Wenn Sie nach einer bestimmten Verbindung suchen möchten, verwenden Sie das Suchfeld. Beginnen Sie mit der Eingabe des Namens oder der ID der Verbindung. Die Liste der Verbindungen wird während der Eingabe aktualisiert.
 
-   * Wählen Sie ![Filter](/help/assets/icons/Filter.svg) aus, um die Liste mit den Filteroptionen zu erweitern. Sie können nach [!UICONTROL **Favoriten**] oder [!UICONTROL **Status**] filtern.
+   * Wählen Sie ![Filter](/help/assets/icons/Filter.svg) aus, um die Liste der Segmentoptionen zu erweitern. Sie können nach [!UICONTROL **Favoriten**] oder [!UICONTROL **Status**] filtern.
 
      Um eine Verbindung als Favoriten zu markieren, wählen Sie das Sternsymbol links neben dem Namen der Verbindung aus.
 

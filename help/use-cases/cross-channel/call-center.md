@@ -5,10 +5,10 @@ exl-id: 48546227-029c-4cf9-9b7e-66d547769270
 solution: Customer Journey Analytics
 feature: Use Cases
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 9f954709a3dde01b4e01581e34aece07fe0256b1
 workflow-type: tm+mt
 source-wordcount: '1141'
-ht-degree: 95%
+ht-degree: 88%
 
 ---
 
@@ -42,7 +42,7 @@ Beim Importieren von Daten in die Platform können folgende Tipps hilfreich sein
 
 ## Ordnen Sie die Personen-IDs zu
 
-Zum Customer Journey Analytics ist ein gemeinsamer Bezeichner erforderlich, um einen [kombinierten Datensatz“ ](/help/connections/combined-dataset.md).
+Customer Journey Analytics erfordert eine gemeinsame Kennung, um einen [kombinierten Datensatz“ ](/help/connections/combined-dataset.md).
 
 * Wenn Ihre Datensätze bereits für jedes Ereignis in beiden Datensätzen eine gemeinsame Kennung aufweisen, können Sie diesen Schritt überspringen und eine Verbindung erstellen.
 * Wenn einer Ihrer Datensätze nur für einige Ereignisse eine gemeinsame Kennung hat, können Sie Daten mithilfe von [Zusammenfügung](/help/stitching/overview.md) für Schritte zusammenfügen, um die kanalübergreifende Analyse für diese beiden Datensätze zu aktivieren.
@@ -69,11 +69,11 @@ Die folgenden Visualisierungen können verwendet werden, um Einblicke aus Ihrem 
 
 In dieser Visualisierung können Sie die Qualität der Datenzuordnung in der kanalübergreifenden Analyse erkennen.
 
-1. Erstellen Sie zwei Filter. Die in diesen beiden Filtern verwendete Variable ist dieselbe wie die oben erwähnte, die die Datenquelle jedes Ereignisses widerspiegelt. Weitere Informationen finden Sie unter [Filter erstellen](/help/components/filters/create-filters.md).
+1. Erstellen Sie zwei Segmente. Die in diesen beiden Segmenten verwendete Variable ist dieselbe oben erwähnte Variable, die die Datenquelle jedes Ereignisses widerspiegelt. Weitere [ finden Sie unter ](/help/components/filters/create-filters.md) erstellen .
    * Personen-Container, bei dem die Datensatz-ID mit Ihren Web-Daten übereinstimmt
    * Personen-Container, bei dem die Datensatz-ID mit Ihren Callcenter-Daten übereinstimmt
 2. Ziehen Sie in Analysis Workspace eine [Venn](/help/analysis-workspace/visualizations/venn.md)-Visualisierung auf die Arbeitsbereich-Arbeitsfläche.
-3. Ziehen Sie die beiden neu erstellten Filter in den Bereich **[!UICONTROL Filter hinzufügen]** und die Metrik „Personen“ in den Bereich **[!UICONTROL Metrik hinzufügen]**.
+3. Ziehen Sie die beiden neu erstellten Segmente in den Bereich **[!UICONTROL Filter hinzufügen]** und die Metrik „Personen“ in den Bereich **[!UICONTROL Metrik hinzufügen]**.
 
 In der entsprechenden Venn-Visualisierung wird die Anzahl der Personen in Ihrem Datensatz angezeigt, die sowohl Web- als auch Callcenter-Daten enthalten. Je größer die Überschneidung, desto mehr Personen wurden erfolgreich zugeordnet. Die Bereiche, die sich nicht überschneiden, stellen Personen dar, die sich ausschließlich in einem der beiden Datensätze befinden.
 
@@ -93,8 +93,8 @@ Der resultierende Bericht zeigt die wichtigsten Seiten an, die Anufe an Ihr Call
 Sie können die Einblicke in diese Tabelle weiter verbessern, indem Sie Anrufe nach Grund oder Kategorie aufteilen.
 
 1. Klicken Sie in der Komponentenliste unter der Dimension „Grund des Anrufs“ auf den Pfeil nach rechts. Diese Aktion zeigt individuelle Dimensionswerte an.
-2. Ziehen Sie den/die gewünschten Dimensionswert(e) unter die Metrik „Anrufe“, die diese Metrik nach jedem jeweiligen Anrufgrund filtert.
-3. Wiederholen Sie diesen Vorgang für jeden Anrufgrund, den Sie detailliert anzeigen möchten. Verwenden Sie den Filter „Alle Sitzungen“, um die Gesamtsumme anzuzeigen.
+2. Ziehen Sie den/die gewünschten Dimensionswert(e) unter die Metrik „Anrufe“, die diese Metrik nach jedem jeweiligen Anrufgrund segmentiert.
+3. Wiederholen Sie diesen Vorgang für jeden Anrufgrund, den Sie detailliert anzeigen möchten. Verwenden Sie das Segment „Alle Sitzungen“, um die Gesamtsumme anzuzeigen.
 
 <!-- screenshot -->
 
@@ -139,10 +139,10 @@ step 2:
 
 Slide 4
 
-Create a bunch of filters - facets to their business. Filters were used because they didn't have all of these in the same dimension, so they could create everything in this report as a single dimension (really filters)
+Create a bunch of segments - facets to their business. Segments were used because they didn't have all of these in the same dimension, so they could create everything in this report as a single dimension (really segments)
 
 wanted to understand when someone interacts with a facet, whats the highest percentage of people that abandon that channel to call them. not from volume perspective, but percentage perspective.
 
-use sequential filters, but you lose the ability to use attribution IQ
+use sequential segments, but you lose the ability to use attribution IQ
 
 ## What to do when you've found insight -->
