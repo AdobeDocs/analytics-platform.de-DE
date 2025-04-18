@@ -7,26 +7,24 @@ feature: Use Cases
 hidefromtoc: true
 hide: true
 exl-id: d861135f-42a4-45ac-8b11-41f151bfce92
-source-git-commit: b82a345fbae1a0ab2debf2c4eb580422745db473
+source-git-commit: 25a2c549c27918f80202bde4cd30e305f4a295f3
 workflow-type: tm+mt
-source-wordcount: '407'
-ht-degree: 0%
+source-wordcount: '362'
+ht-degree: 1%
 
 ---
 
 # Verwenden von Quantum Metric-Heatmaps mit Customer Journey Analytics
 
-Durch die Verknüpfung von Quantum Metric Heatmapping mit CJA-Daten können Sie die Interaktion auf Seitenebene besser verstehen und Seiten basierend auf dem Verbraucherverhalten optimieren. Workspace kann verwendet werden, um Verbraucherbenutzerflüsse zu verstehen und zu sehen, welchen Pfaden Verbraucherinnen und Verbraucher von einer Seite zur nächsten folgen. Anschließend können Sie auf Hyperlink-Seiten-URLs klicken, um zu visualisieren, wie Heatmap-Benutzer mit dem Inhalt interagieren.  Durch die Verknüpfung von Quantum Metric Heatmapping mit CJA können Sie nun Interaktionen auf Seitenebene mit Geschäftsergebnissen verknüpfen und Ihre Analyse auf die nächste Ebene bringen.
+Durch die Verknüpfung von Quantum Metric Heatmapping mit CJA-Daten können Sie die Interaktion auf Seitenebene besser verstehen und Seiten basierend auf dem Verbraucherverhalten optimieren. Workspace kann verwendet werden, um Verbraucherbenutzerflüsse zu verstehen und zu sehen, welchen Pfaden Verbraucherinnen und Verbraucher von einer Seite zur nächsten folgen. Anschließend können Sie auf Hyperlink-Seiten-URLs klicken, um zu visualisieren, wie Heatmap-Benutzer mit dem Inhalt interagieren. Durch die Verknüpfung von Quantum Metric Heatmapping mit CJA können Sie nun Interaktionen auf Seitenebene mit Geschäftsergebnissen verknüpfen und Ihre Analyse auf die nächste Ebene bringen.
 
 Die Tabelle gibt alle Sitzungen in diesem Segment zurück, und Sie können auf eine beliebige Sitzung klicken, um sie in QM weiter zu erkunden.  Weitere Informationen zu Quantum Metric Session Replay finden Sie unter https://www.quantummetric.com/platform/session-replay
 
 ## Voraussetzungen
 
-In diesem Anwendungsfall müssen Sie die Sitzungs-ID der Quantum-Metrik zusammen mit dem Rest Ihrer Implementierung erfassen. Unter [Erfassen von Quantum Metric-Sitzungs-IDs in Customer Journey Analytics](collect-session-id.md) erfahren Sie, wie Sie Ihre Implementierung ändern können.
-
 Sie müssen Anspruch auf das **UX Ops**-Paket von Quantum Metric haben, um auf die Heatmap-Funktionen von Quantum Metric zugreifen zu können.
 
-## Erstellen Sie eine Freiformtabelle in Workspace und konfigurieren Sie sie so, dass Sitzungs-ID-Werte direkte Links zu Quantum Metric sind.
+## Schritt 1: Erstellen Sie eine Freiformtabelle in Workspace und konfigurieren Sie sie so, dass Sitzungs-ID-Werte direkte Links zur Quantum-Metrik sind.
 
 1. Melden Sie sich bei &quot;[.adobe.com“ ](https://experience.adobe.com).
 1. Navigieren Sie zu Customer Journey Analytics und wählen Sie **[!UICONTROL Workspace]** im oberen Menü.
@@ -42,12 +40,8 @@ Sie müssen Anspruch auf das **UX Ops**-Paket von Quantum Metric haben, um auf d
    ```
 
 1. Klicken Sie auf **[!UICONTROL Erstellen]**.
+1. Testen Sie einen der Links, um zu sehen, ob er in der URL geöffnet wird, wobei die Quantum Metric-Erweiterung sichtbar ist. Diese Links werden in einer neuen Registerkarte geöffnet, sodass Ihr Workspace-Projekt geöffnet bleibt.
 
-1. Klicken Sie auf Erstellen und testen Sie dann einen der Links, um zu sehen, ob er in der URL geöffnet wird, während die QM-Erweiterung geöffnet wird. Hinweis - Es wird in einer separaten Registerkarte geöffnet, sodass Sie Ihre Arbeit nicht verlieren.
+## Schritt 2: Heatmaps durch Anklicken von Links in Customer Journey Analytics anzeigen
 
-
-## Anzeigen von Heatmaps durch Klicken auf Links in Customer Journey Analytics
-
-Nachdem Sie eine Seite gefunden haben, für die Sie Heatmapping erforschen möchten, können Sie sie auf das Bedienfeld anwenden, in dem sich Ihre URL befindet. Die Tabelle gibt eine URL zurück, mit der Sie Heatmaps für die betreffende Seite, Bildlauftiefe und Schlüsselzonen für die Interaktion untersuchen können.  Weitere Informationen zu Quantum Metric Heatmaps finden Sie unter [https://www.quantummetric.com/platform/interaction-heatmaps](https://www.quantummetric.com/platform/interaction-heatmaps).  Für weitere Ressourcen wenden Sie sich bitte an Ihren Kundenbetreuer von Quantum Metric oder senden Sie eine Anfrage über das Quantum Metric [Kundenanfrageportal](https://community.quantummetric.com/s/public-support-page).
-
-
+Nachdem Sie eine Seite gefunden haben, auf der Sie Heatmapping erforschen möchten, können Sie sie auf das gewünschte Bedienfeld anwenden. Die Tabelle gibt eine URL zurück, mit der Sie Heatmaps, Bildlauftiefen und Schlüsselzonen für die Interaktion mit Quantum Metric untersuchen können. Weitere Informationen finden [ unter „Quantum Metric ](https://www.quantummetric.com/platform/interaction-heatmaps) - Produktübersicht“. Sie können sich auch an Ihren Kundenbetreuer von Quantum Metric wenden oder eine Anfrage über das [Quantum Metric Customer Request Portal) ](https://community.quantummetric.com/s/public-support-page).

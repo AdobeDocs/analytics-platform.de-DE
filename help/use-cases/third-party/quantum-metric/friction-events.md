@@ -1,15 +1,15 @@
 ---
 title: Hinzufügen von Quantum Metric Friction-Ereignissen zu Customer Journey Analytics
-description: Fügen Sie den Einblicken in Customer Journey Analytics mithilfe von Reibungsereignissen, die in Quantum Metric erfasst wurden, Tiefen hinzu.
+description: Fügen Sie den Verhaltensdaten von Customer Journey Analytics erfasste Friktionsereignisse der Quantum-Metrik hinzu, um den Einblicken in CJA Tiefe zu verleihen.
 role: User, Admin
 solution: Customer Journey Analytics
 feature: Use Cases
 hidefromtoc: true
 hide: true
 exl-id: 1b7d5159-39b2-4ba4-be64-f448ae53c70e
-source-git-commit: 03e9fb37684f8796a18a76dc0a93c4e14e6e7640
+source-git-commit: 1774ef63e3578f7016a95716fcfa11a0c7c627ce
 workflow-type: tm+mt
-source-wordcount: '499'
+source-wordcount: '552'
 ht-degree: 0%
 
 ---
@@ -27,15 +27,20 @@ Dieser Anwendungsfall hat zwei Anforderungen:
 
 ## Schritt 1: Erfassen von Reibungsereignissen mit der Quantum Metric-Tag-Erweiterung
 
-Das CSM-Team für Quantum Metric kann Ihnen dabei helfen, die richtigen Schemaelemente zu bestimmen, die hinzugefügt werden sollen, und Sie anweisen, Ihre Implementierung zu ändern, um die gewünschten Daten zur Verwendung in Customer Journey Analytics zu erfassen. Weitere Informationen erhalten Sie von Ihrem Quantum Metric Customer Success Manager.
+Anweisungen [ Einrichten Ihrer Tags für das Einschließen von Quantenmetrikdaten finden Sie unter ](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/analytics/quantum-metric)Quantum Metric-Erweiterung“ im Adobe Experience Platform Destinations-Handbuch. Durch die Verwendung dieser Erweiterung werden mehr Zeilen in einen vorhandenen Datensatz übergeben.
 
-Am Ende sollten Sie damit beginnen, den Namen des Friktionsereignisses in einem Feld zu verfolgen.
+Verwenden Sie Tags in der Adobe Experience Platform-Datenerfassung, um den Namen des Reibungsereignisses manuell festzulegen, sodass es in das XDM-Objekt aufgenommen und analysiert werden kann. Eine Möglichkeit, dies zu tun, besteht im benutzerdefinierten Code der Regel:
 
-## Schritt 2: Bestätigen der eingeschlossenen Datensatzfelder
+```js
+_satellite.setVar('qm_error_name','error rage click');
+return true;
+```
 
-Vergewissern Sie sich, dass die Datensätze in Ihrer Verbindung jetzt die Quantum Metric-Sitzungs-ID im gewünschten Datensatz haben.
+Fügen Sie dann das dynamisch festgelegte Datenelement zu Ihrem XDM-Objekt hinzu:
 
-## Schritt 3: Hinzufügen einer oder mehrerer Dimensionen und Metriken zur Datenansicht in Customer Journey Analytics
+![Screenshot mit dem Quantenmetrik-Fehlernamen](assets/error-name.png)
+
+## Schritt 2: Hinzufügen einer oder mehrerer Dimensionen und Metriken zur Datenansicht in Customer Journey Analytics
 
 Bearbeiten Sie die vorhandene Datenansicht, um die Sitzungs-ID als verfügbare Dimension in Customer Journey Analytics hinzuzufügen.
 
@@ -45,8 +50,9 @@ Bearbeiten Sie die vorhandene Datenansicht, um die Sitzungs-ID als verfügbare D
 1. Suchen Sie die Liste Quantum Metric Friction Event Field auf der linken Seite und ziehen Sie sie in den Bereich Metriken in der Mitte.
 1. Legen Sie im rechten Bereich die Einstellung [Werte einschließen/ausschließen](/help/data-views/component-settings/include-exclude-values.md) auf die gewünschten Reibungsereignisse fest, die Sie verfolgen möchten. Sie können derselben Metrik mehrere Reibungsereignisse hinzufügen, um sie zu kombinieren. Sie können auch eine weitere Kopie des Felds Reibungsereignisse in den Bereich Metriken ziehen, um andere Reibungsereignisse als separate Metrik zu verfolgen.
 1. Nachdem Sie alle gewünschten Dimensionen und Metriken erstellt haben, klicken Sie auf **[!UICONTROL Speichern]**.
+1. Eine vollständige Liste der Fehlerereignisse finden Sie in der Dokumentation zu Ihrer Quantum-Metrik. Wenn Sie weitere Fragen haben, wenden Sie sich an Ihren Kundenbetreuer von Quantum Metric oder senden Sie eine Anfrage über das [Quantum Metric Customer Request Portal](https://community.quantummetric.com/s/public-support-page).
 
-## Schritt 4: Verwenden Sie die Dimension und Metriken für den Rest Ihrer Daten in Analysis Workspace.
+## Schritt 3: Verwenden Sie die Dimension und Metriken mit den übrigen Daten in Analysis Workspace
 
 Wenn Quantum Metric Friction-Ereignisdaten zusammen mit den anderen Besucherdaten erfasst werden, können Sie sie genau wie jede andere Dimension oder Metrik in Customer Journey Analytics verwenden.
 
