@@ -5,10 +5,10 @@ role: User
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: ae66cd06-7ec1-4174-a3cf-939c3a66b840
-source-git-commit: 8b7fedb9625ba60af1fea0b1580d32d2366081b8
+source-git-commit: 220ebd7dbc3fa75d221690cd6e5828bd94395434
 workflow-type: tm+mt
 source-wordcount: '1649'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -42,7 +42,7 @@ Sie können Customer Journey Analytics verwenden, um Fragen mithilfe der visuell
 
 Customer Journey Analytics verwendet eine eigene leistungsstarke Architektur, die die Analyse auf hunderte oder sogar tausende Server verteilt, um Daten in Analysis Workspace innerhalb von Sekunden anzuzeigen. Zu den bedeutenden Eigenschaften dieser Verarbeitungsarchitektur gehören unter anderem:
 
-* **Optimiert für individuelle kundenbezogene Abfragen**: Technisch betrachtet speichert Customer Journey Analytics die Daten in einer verteilten Reporting-Engine, die umfassend das Caching nutzt. Diese Engine ist auf responsive Abfragen von Ereignisdaten auf individueller Ebene ausgerichtet und daher perfekt auf kundenbezogene Abfragen optimiert. Die Reporting-Engine speichert Daten in spaltenorientierten Bitmap-Indizes, die eine schnelle, spontane Berechnung der aggregierten Metriken ermöglichen. Sie verfügt über eine umfangreiche Filter-Engine, die eine leistungsstarke Segmentierung/Zielgruppenanalyse ermöglicht. Sie besitzt außerdem ein grundlegendes Verständnis der Sequenz zwischen Datenpunkten, das bei der Analyse des Verhaltens über diese Datenpunkte hinweg (in der Reihenfolge, in der Dinge aufgetreten sind) und für die Zuweisung der Attribution mithilfe verschiedener, komplexer Modelle nützlich ist.
+* **Optimiert für individuelle kundenbezogene Abfragen**: Technisch betrachtet speichert Customer Journey Analytics die Daten in einer verteilten Reporting-Engine, die umfassend das Caching nutzt. Diese Engine ist auf responsive Abfragen von Ereignisdaten auf individueller Ebene ausgerichtet und daher perfekt auf kundenbezogene Abfragen optimiert. Die Reporting-Engine speichert Daten in spaltenorientierten Bitmap-Indizes, die eine schnelle, spontane Berechnung der aggregierten Metriken ermöglichen. Sie verfügt über eine umfangreiche Segmentierungs-Engine, die eine leistungsstarke Segmentierung/Zielgruppenanalyse ermöglicht. Sie besitzt außerdem ein grundlegendes Verständnis der Sequenz zwischen Datenpunkten, das bei der Analyse des Verhaltens über diese Datenpunkte hinweg (in der Reihenfolge, in der Dinge aufgetreten sind) und für die Zuweisung der Attribution mithilfe verschiedener, komplexer Modelle nützlich ist.
 
 * **Schnelle Anwendung komplexer Pfade und Filter**: Die Reporting-Engine arbeitet mit teilweise sortierten, hierarchischen Datensätzen (z. B. Person -> Sitzungen -> Ereignisse). Alle Daten für ein Objekt der obersten Ebene (einzelne Profile) befinden sich auf einem einzigen Verarbeitungsknoten, um präzise Ergebnisse zu erzielen. Diese Aufteilung ermöglicht die schnelle Anwendung komplexer Pfade und Filter. Komplexe Vorgänge wie Sitzungserstellung, Attribution, zustandsorientierte Persistenz von Datenattributen und komplexe Datenbearbeitungsoptionen werden skaliert und mit kurzer Berichtszeit ausgeführt. In der BI-Welt erfordern diese Arten von Vorgängen normalerweise, dass für jeden Anwendungsfall neue OLAP-Cubes erstellt werden. Die Reporting-Engine von Customer Journey Analytics ermöglicht den ungehinderten Zugriff auf den gesamten Datensatz bei jeder Abfrage, was zu vollständig korrelierten Daten führt, ohne dass vorzeitiges Cubing erforderlich ist.
 

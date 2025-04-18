@@ -8,7 +8,7 @@ hide: true
 hidefromtoc: true
 badgePremium: label="B2B edition"
 exl-id: df2cc922-d214-49b9-8fdb-443cc1dac05b
-source-git-commit: 3812b10e558c1b8a3ee4fe474405543c68433d8e
+source-git-commit: 220ebd7dbc3fa75d221690cd6e5828bd94395434
 workflow-type: tm+mt
 source-wordcount: '819'
 ht-degree: 0%
@@ -23,7 +23,7 @@ In diesem Artikel werden allgemeine Konzepte und Funktionen für Datensätze und
 
 Datensätze sind die Quellen einer Verbindung. Beim Einrichten einer Verbindung definieren Sie Datensätze als Teil dieser Verbindung.
 
-Container werden in Customer Journey Analytics verwendet, um Funktionen wie Filter, berechnete Metriken und erweiterte Analysefunktionen zu unterstützen und zu erleichtern.
+Container werden in Customer Journey Analytics verwendet, um Funktionen wie Segmente, berechnete Metriken und erweiterte Analysefunktionen zu unterstützen und zu erleichtern.
 
 
 

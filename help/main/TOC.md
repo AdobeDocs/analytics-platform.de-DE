@@ -9,7 +9,7 @@ index: true
 user-guide-title: Handbuch zu Customer Journey Analytics
 user-guide-description: Hier erhalten Sie Informationen zu Adobe Customer Journey Analytics und Erläuterungen zur Nutzung von Analysis Workspace mit Daten aus Experience Platform.
 breadcrumb-title: Handbuch zu Customer Journey Analytics
-source-git-commit: 1774ef63e3578f7016a95716fcfa11a0c7c627ce
+source-git-commit: 2581ff0f3d149a539ed730a941ce1b6288e9af0e
 workflow-type: tm+mt
 source-wordcount: '1214'
 ht-degree: 86%
@@ -199,7 +199,7 @@ ht-degree: 86%
          + [Überblick](../analysis-workspace/visualizations/fallout/fallout-flow.md)
          + [Konfigurieren](../analysis-workspace/visualizations/fallout/configuring-fallout.md)
          + [Interdimensionaler Fallout](../analysis-workspace/visualizations/fallout/configuring-interdimensional-fallout.md)
-         + [Anwenden von Filtern](../analysis-workspace/visualizations/fallout/compare-segments-fallout.md)
+         + [Segmente anwenden](../analysis-workspace/visualizations/fallout/compare-segments-fallout.md)
       + Fluss {#flow}
          + [Überblick](../analysis-workspace/visualizations/c-flow/flow.md)
          + [Konfigurieren](../analysis-workspace/visualizations/c-flow/create-flow.md)
@@ -320,19 +320,19 @@ ht-degree: 86%
       + [Dimensionen für die Zeitunterteilung](../components/dimensions/time-parting-dimensions.md)
       + [Dimensionen hoher Kardinalität](../components/dimensions/high-cardinality.md)
    + [Metriken](../components/apply-create-metrics.md)
-   + Filter {#cja-filters}
+   + Segmente {#cja-segments}
       + [Überblick](../components/filters/filters-overview.md)
-      + [Erstellen von Filtern](../components/filters/create-filters.md)
-      + [Erstellen von Filtern](../components/filters/filter-builder.md)
-      + [Schnellfilter](../components/filters/quick-filters.md)
-      + [Sequenzielle Filter](../components/filters/seg-sequential-build.md)
-      + [Freigeben von Filtern](../components/filters/filters-share.md)
-      + [Taggen von Filtern](../components/filters/filters-tag.md)
-      + [Filtern der Filterliste](../components/filters/filters-filter.md)
-      + [Filter als Favoriten markieren](../components/filters/filters-favorite.md)
-      + [Genehmigen von Filtern](../components/filters/filters-approve.md)
-      + [Kopieren von Filtern](../components/filters/filters-copy.md)
-      + [Verwalten von Filtern](../components/filters/manage-filters.md)
+      + [Erstellen von Segmenten](../components/filters/create-filters.md)
+      + [Erstellen von Segmenten](../components/filters/filter-builder.md)
+      + [Schnellsegmente](../components/filters/quick-filters.md)
+      + [Sequenzielle Segmente](../components/filters/seg-sequential-build.md)
+      + [Segmente freigeben](../components/filters/filters-share.md)
+      + [Segmente taggen](../components/filters/filters-tag.md)
+      + [Filtern der Segmentliste](../components/filters/filters-filter.md)
+      + [Segmente als Favoriten markieren](../components/filters/filters-favorite.md)
+      + [Segmente genehmigen](../components/filters/filters-approve.md)
+      + [Segmente kopieren](../components/filters/filters-copy.md)
+      + [Segmente verwalten](../components/filters/manage-filters.md)
       + [Operatoren](../components/filters/operators.md)
    + Berechnete Metriken {#cja-calcmetrics}
       + [Überblick](../components/calc-metrics/calc-metr-overview.md)
@@ -342,8 +342,8 @@ ht-degree: 86%
          + [Metriken suchen](../components/calc-metrics/cm-workflow/cm-finding.md)
          + [Metriktyp und Attribution](../components/calc-metrics/cm-workflow/m-metric-type-alloc.md)
          + [Erstellen einer Teilnahmemetrik](../components/calc-metrics/cm-workflow/participation-metric.md)
-         + [Gefilterte Metriken](../components/calc-metrics/cm-workflow/metrics-with-segments.md)
-         + [Filter stapeln und ersetzen](../components/calc-metrics/cm-workflow/cm-stack-seg.md)
+         + [Segmentierte Metriken](../components/calc-metrics/cm-workflow/metrics-with-segments.md)
+         + [Segmente stapeln und ersetzen](../components/calc-metrics/cm-workflow/cm-stack-seg.md)
          + [Berechnete Metriken filtern](../components/calc-metrics/cm-workflow/cm-filter.md)
          + [Berechnete Metriken als Favoriten markieren](../components/calc-metrics/cm-workflow/cm-favorite.md)
          + [Kopieren von berechneten Metriken](../components/calc-metrics/cm-workflow/cm-copy.md)
