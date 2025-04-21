@@ -4,7 +4,7 @@ title: Segmente freigeben
 feature: Filters
 exl-id: c8559c7b-f886-4046-9bd6-80778882afcc
 role: User
-source-git-commit: 716d6423c0cc8b91aa4951952191e0fd0e627c0f
+source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
 workflow-type: tm+mt
 source-wordcount: '297'
 ht-degree: 11%
@@ -22,9 +22,9 @@ Freigeben eines oder mehrerer Segmente:
 
 1. Wählen [ im ](manage-filters.md)-Manager eines oder mehrere der Segmente aus, die Sie freigeben möchten.
 1. Wählen Sie in der Aktionsleiste ![Freigeben](/help/assets/icons/ShareAlt.svg) **[!UICONTROL Freigeben]** aus.
-1. Im Dialog **[!UICONTROL Filter freigeben]**:
+1. Im Dialogfeld **[!UICONTROL Segmente freigeben]**:
 
-   ![Dialogfeld „Filter freigeben“](assets/share-filter-dialog.png)
+   ![Dialogfeld „Segment freigeben“](assets/share-filter-dialog.png)
 
    1. (Optional) Verwenden Sie ![Suche](/help/assets/icons/Search.svg), um *Einzelpersonen oder Gruppen suchen* die Liste der Gruppen oder Einzelpersonen, für die Sie das Segment freigeben möchten, zu suchen und einzuschränken.
 

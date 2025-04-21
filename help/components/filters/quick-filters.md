@@ -4,7 +4,7 @@ title: Schnellsegmente
 feature: Workspace Basics
 role: User
 exl-id: 549e5db5-fcdf-43c5-bc43-590144aee309
-source-git-commit: eb9b749a5c61da3b4b5d2eeeed93bf5e4702a415
+source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
 workflow-type: tm+mt
 source-wordcount: '1171'
 ht-degree: 26%
@@ -97,7 +97,7 @@ Der Bedingungsbereich gibt die Bedingungen an (maximal drei). Für jede Bedingun
 | **[!UICONTROL UND]**<br/>**[!UICONTROL ODER]** | Nur verfügbar, wenn Sie mehrere Bedingungen definieren. Wählen Sie im Dropdown ![ChevronDown](/help/assets/icons/ChevronDown.svg) zwischen den Bedingungen. Die Auswahl bestimmt die boolesche Logik für das Schnellsegment. Logik kann nicht gemischt werden, wenn drei Bedingungen vorliegen. Die boolesche Logik lautet entweder **[!UICONTROL UND]** oder **[!UICONTROL ODER]**. |
 | ![Hinzufügen](/help/assets/icons/AddCircle.svg) | Fügt eine weitere Bedingung zu Ihrem Schnellsegment hinzu. Diese Schaltfläche ist nur verfügbar, wenn Sie eine oder zwei Bedingungen für das Schnellsegment definiert haben. |
 | **[!UICONTROL Anwenden]** | Wenden Sie die Änderungen auf das Schnellsegment an. |
-| **[!UICONTROL Builder öffnen]** | Sie werden im Dialogfeld **[!UICONTROL Sind Sie sicher?]** zur Bestätigung aufgefordert. Wenn Sie **[!UICONTROL OK]** auswählen, können Sie Ihr Segment nicht mehr in [Quick Segment Builder](#quick-filter-builder) ändern. Ihr Schnellsegment wird in **[!UICONTROL Segment]** umbenannt und hat jetzt einen dunkelblauen, dünnen linken Balken.<br/>Der reguläre [Segment Builder](filter-builder.md) wird mit der Option geöffnet, **[!UICONTROL Dieses Segment für alle Projekte verfügbar zu machen und es zur Komponentenliste]**. <ul><li>Wenn Sie diese Option auswählen und **[!UICONTROL Anwenden]** wählen, wird das Segment der Komponentenliste ![Segment](/help/assets/icons/Segmentation.svg) **[!UICONTROL Filter]** im Komponentenbereich hinzugefügt.</li><li>Wenn Sie diese Option nicht auswählen und auf **[!UICONTROL Übernehmen]** klicken, bleibt das Segment ein reines Workspace-Projektsegment.</li></ul> |
+| **[!UICONTROL Builder öffnen]** | Sie werden im Dialogfeld **[!UICONTROL Sind Sie sicher?]** zur Bestätigung aufgefordert. Wenn Sie **[!UICONTROL OK]** auswählen, können Sie Ihr Segment nicht mehr in [Quick Segment Builder](#quick-filter-builder) ändern. Ihr Schnellsegment wird in **[!UICONTROL Segment]** umbenannt und hat jetzt einen dunkelblauen, dünnen linken Balken.<br/>Der reguläre [Segment Builder](filter-builder.md) wird mit der Option geöffnet, **[!UICONTROL Dieses Segment für alle Projekte verfügbar zu machen und es zur Komponentenliste]**. <ul><li>Wenn Sie diese Option auswählen und **[!UICONTROL Anwenden]** wählen, wird das Segment zur Komponentenliste ![Segment](/help/assets/icons/Segmentation.svg) **[!UICONTROL Segment]** im Komponentenbereich hinzugefügt.</li><li>Wenn Sie diese Option nicht auswählen und auf **[!UICONTROL Übernehmen]** klicken, bleibt das Segment ein reines Workspace-Projektsegment.</li></ul> |
 | **[!UICONTROL Abbrechen]** | Wählen Sie diese Option aus, um die Erstellung oder Bearbeitung eines Schnellsegments abzubrechen. |
 
 ## Schnellsegmente im Vergleich zu Segmenten

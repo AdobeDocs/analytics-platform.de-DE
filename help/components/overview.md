@@ -5,10 +5,10 @@ exl-id: f9b0b3c2-7c88-4bef-af33-0d309cafe799
 solution: Customer Journey Analytics
 feature: Components
 role: User
-source-git-commit: 9393be88ab7320adb5bd046701667f638673af5e
+source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
 workflow-type: tm+mt
 source-wordcount: '913'
-ht-degree: 93%
+ht-degree: 89%
 
 ---
 
@@ -23,7 +23,7 @@ So verwalten Sie Komponenten über die Haupt-Benutzeroberfläche von Customer Jo
 
 Sie können die folgenden Komponenten verwalten:
 
-* [Segmente](filters/filters-overview.md): Erstellen, verwalten, teilen und wenden Sie leistungsstarke, zielgerichtete Zielgruppensegmente auf Ihre Berichte an. Mit Filtern können Sie Teilmengen von Personen anhand von Merkmalen oder Interaktionen identifizieren.
+* [Segmente](filters/filters-overview.md): Erstellen, verwalten, teilen und wenden Sie leistungsstarke, zielgerichtete Zielgruppensegmente auf Ihre Berichte an. Mit Segmenten können Sie Untergruppen von Personen anhand von Merkmalen oder Interaktionen identifizieren.
 * [Berechnete Metriken:](calc-metrics/calc-metr-overview.md) Verwenden Sie Metriken und Formeln als neue Komponenten für die Berichterstellung
 * [Datumsbereiche](date-ranges/create.md): Passen Sie die von Analysis Workspace vorgeschlagenen Datumsbereiche an und präzisieren Sie diese.
 * [Anmerkungen](/help/components/annotations/overview.md): Informieren Sie andere Benutzerinnen und Benutzer in Ihrem Unternehmen über die kontextbezogene Bedeutung von Daten und Erkenntnissen.
@@ -84,7 +84,7 @@ Sie können die Komponentenliste im linken Bedienfeld von Analysis Workspace dur
 
 2. Geben Sie im Suchfeld den Namen der Komponente ein, die Sie in Ihrem Projekt verwenden möchten.
 
-   Der jeweilige Komponententyp ist farblich und mit einem Symbol gekennzeichnet. **Dimensionen** ![Dimensionssymbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) sind orange, **Filter** ![Filtersymbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Segmentation_18_N.svg) sind blau, **Datumsbereiche** ![Datumsbereichssymbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg) sind violett und **Metriken** ![Metriksymbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Event_18_N.svg) sind grün.<br/>Das Adobe-Symbol ![AdobeLogo](/help/assets/icons/AdobeLogoSmall.svg) zeigt entweder eine Vorlage für berechnete Metriken oder eine Segmentvorlage an. Das Taschenrechnersymbol ![Taschenrechnersymbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calculator_18_N.svg) gibt eine berechnete Metrik an, die administratorseitig in Ihrer Organisation erstellt wurde.
+   Der jeweilige Komponententyp ist farblich und mit einem Symbol gekennzeichnet. **Dimensionen** ![Dimension-Symbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) sind orange, **** Segmente![Segment-Symbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Segmentation_18_N.svg) sind blau, **Datumsbereiche**![ Datumsbereichssymbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg) sind violett und **** Metriken![Metriksymbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Event_18_N.svg) sind grün.<br/>Das Adobe-Symbol ![AdobeLogo](/help/assets/icons/AdobeLogoSmall.svg) zeigt entweder eine Vorlage für berechnete Metriken oder eine Segmentvorlage an. Das Taschenrechnersymbol ![Taschenrechnersymbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calculator_18_N.svg) gibt eine berechnete Metrik an, die administratorseitig in Ihrer Organisation erstellt wurde.
 
 3. Wählen Sie aus der Dropdown-Liste die gewünschte Komponente aus.
 

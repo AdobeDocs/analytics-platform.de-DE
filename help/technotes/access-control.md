@@ -6,7 +6,7 @@ feature: Basics
 exl-id: c258fa39-c0b6-45a1-8547-79516c15a215
 mini-toc-levels: 3
 role: Admin
-source-git-commit: 9f954709a3dde01b4e01581e34aece07fe0256b1
+source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
 workflow-type: tm+mt
 source-wordcount: '1549'
 ht-degree: 23%
@@ -124,7 +124,7 @@ Die **[!UICONTROL Berechtigungen]** ist Teil jedes Produktprofils in der [Admin 
 | [!UICONTROL Reporting-Tools] | [!UICONTROL Zugriff auf Analysis Workspace] | Benutzern Zugriff auf [Analysis Workspace ](/help/analysis-workspace/home.md). |
 | [!UICONTROL Reporting-Tools] | [!UICONTROL Zugriff auf geführte Analysen] | Ermöglicht Benutzenden den Zugriff auf [Geführte Analyse](/help/guided-analysis/overview.md). |
 | [!UICONTROL Reporting-Tools] | [!UICONTROL Erstellung berechneter Metriken] | Ermöglicht Benutzenden die Erstellung [berechneter Metriken](/help/components/calc-metrics/calc-metr-overview.md). Benutzer können nur die von ihnen erstellten berechneten Metriken taggen, freigeben, löschen, umbenennen, genehmigen oder die Genehmigung aufheben oder die für sie freigegebenen berechneten Metriken berechnen. |
-| [!UICONTROL Reporting-Tools] | [!UICONTROL Filter-Erstellung] | Benutzenden die Erstellung von [Segmenten](/help/components/filters/filters-overview.md) ermöglichen. Benutzer können nur die Segmente, die sie erstellen, oder die Segmente, die für sie freigegeben wurden, taggen, freigeben, löschen, umbenennen, genehmigen oder die Genehmigung aufheben. |
+| [!UICONTROL Reporting-Tools] | [!UICONTROL Erstellung von Segmenten] | Benutzenden die Erstellung von [Segmenten](/help/components/filters/filters-overview.md) ermöglichen. Benutzer können nur die Segmente, die sie erstellen, oder die Segmente, die für sie freigegeben wurden, taggen, freigeben, löschen, umbenennen, genehmigen oder die Genehmigung aufheben. |
 | [!UICONTROL Reporting-Tools] | [!UICONTROL Labs-Zugriff] | Ermöglicht Benutzenden den Zugriff auf die [Labs](/help/labs/labs.md) in Customer Journey Analytics. |
 | [!UICONTROL Reporting-Tools] | [!UICONTROL Anmerkungserstellung] | Benutzern die Erstellung von [Anmerkungen](/help/components/annotations/overview.md) ermöglichen. Benutzer können nur die Anmerkungen taggen, freigeben, löschen und umbenennen, die sie erstellen oder die für sie freigegeben sind. |
 | [!UICONTROL Reporting-Tools] | [!UICONTROL Zielgruppenansicht] | Benutzern die Ansicht [Zielgruppen](/help/components/audiences/audiences-overview.md) ermöglichen. |

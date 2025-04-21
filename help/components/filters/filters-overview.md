@@ -4,19 +4,19 @@ description: Erfahren Sie, wofür Segmente verwendet werden und wie Sie ein einf
 exl-id: 21183e98-6593-4b22-99c7-4a03231acfe9
 feature: Filters
 role: User
-source-git-commit: 716d6423c0cc8b91aa4951952191e0fd0e627c0f
+source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
 workflow-type: tm+mt
 source-wordcount: '1428'
-ht-degree: 7%
+ht-degree: 5%
 
 ---
 
 
 # Segmentierung – Übersicht
 
-Mit Customer Journey Analytics können Sie leistungsstarke, zielgerichtete Zielgruppensegmente erstellen, verwalten, freigeben und auf Ihre Berichte anwenden. Mit Filtern können Sie Untergruppen von Personen, Sitzungen oder Ereignissen anhand von Merkmalen oder Interaktionen identifizieren. Filter sind als kodifizierte Zielgruppeneinblicke konzipiert, die Sie für Ihre speziellen Anforderungen erstellen und dann überprüfen, bearbeiten und mit anderen Team-Mitgliedern austauschen können.
+Mit Customer Journey Analytics können Sie leistungsstarke, zielgerichtete Zielgruppensegmente erstellen, verwalten, freigeben und auf Ihre Berichte anwenden. Mit Segmenten können Sie Untergruppen von Personen, Sitzungen oder Ereignissen anhand von Merkmalen oder Interaktionen identifizieren. Segmente sind als kodierte Zielgruppeneinblicke konzipiert, die Sie für Ihre spezifischen Anforderungen erstellen und dann überprüfen, bearbeiten und für andere Team-Mitglieder freigeben können.
 
-Filter können auf Folgendem basieren:
+Segmente können auf Folgendem basieren:
 
 - Attribute (Browser-Typ, Gerät, Anzahl der Besuche, Land, Geschlecht),
 - Interaktionen (Kampagnen, Keyword-Suche, Suchmaschine),
@@ -119,7 +119,7 @@ Der Container Person enthält jede Sitzung und jedes Ereignis für die Personen,
 - Alle Sitzungen für diese Personen.
 - Alle Ereignisdaten für diese Personen.
 
-Als am breitesten definierter Container geben Berichte, die auf der Ebene des Personen-Containers generiert wurden, Ereignisse und Sitzungen für alle Personen zurück, die für den Filter qualifiziert sind. Der Container Person ist am anfälligsten für Änderungen basierend auf definierten Datumsbereichen.
+Als am breitesten definierter Container geben Berichte, die auf der Ebene des Personen-Containers generiert wurden, Ereignisse und Sitzungen für alle Personen zurück, die für das Segment qualifiziert sind. Der Container Person ist am anfälligsten für Änderungen basierend auf definierten Datumsbereichen.
 Personen-Container können Werte enthalten, die auf dem Gesamtverlauf einer Person basieren:
 
 - Tage vor dem ersten Kauf.
@@ -191,7 +191,7 @@ You can use nesting between containers and between conditions within a container
 
 Traditional Analytics comes with numerous out-of-the-box templates and calculated metrics. Many of them do not apply in Customer Journey Analytics, or have to be renamed or recreated. Others depend on a solution for context-aware variables in Customer Journey Analytics.
 
-| Filter Name | Description |
+| Segment Name | Description |
 | --- | --- |
 | All Data | All Data is a required segment that gets dynamically added to reporting when a metric is added to the row of a Freeform table. |
 -->

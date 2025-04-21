@@ -3,9 +3,9 @@ description: Erfahren Sie, wie Sie berechnete Metriken erstellen.
 title: Erstellen von berechneten Metriken
 feature: Calculated Metrics
 exl-id: 55ed36c1-99ca-400a-bc2b-661994cbf720
-source-git-commit: 53069702055e0adf7abf9061c592fb15772ded73
+source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
 workflow-type: tm+mt
-source-wordcount: '224'
+source-wordcount: '225'
 ht-degree: 2%
 
 ---
@@ -19,7 +19,7 @@ Administratoren können jedoch über die [**[!UICONTROL die Berechtigung]** Erst
 
 Sie können eine berechnete Metrik wie folgt erstellen:
 
-![Möglichkeiten zum Erstellen eines Filters](assets/create-metric.png)
+![Möglichkeiten zum Erstellen einer berechneten Metrik](assets/create-metric.png)
 
 * **A**. Wählen Sie in der Hauptbenutzeroberfläche die Option **[!UICONTROL Komponenten]** und wählen Sie **[!UICONTROL Berechnete Metriken]**. Wählen Sie ![AddCircle](/help/assets/icons/AddCircle.svg) [!UICONTROL **[!UICONTROL Add]**] aus dem [[!UICONTROL Manager für berechnete ]](/help/components/calc-metrics/cm-workflow/cm-manager.md).
 * **B**. Wählen Sie in einem Workspace-Projekt im linken Bedienfeld Komponenten ![Hinzufügen](/help/assets/icons/Add.svg) unter ![Ereignis](/help/assets/icons/Event.svg) **Metriken**.

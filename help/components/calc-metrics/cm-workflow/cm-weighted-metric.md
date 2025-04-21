@@ -3,7 +3,7 @@ description: Zeigt Beispiele für berechnete Metriken.
 title: Beispiele für berechnete Metriken
 feature: Calculated Metrics
 exl-id: 5e73ab52-627a-4064-bfb7-354c0ba1e4ee
-source-git-commit: 8f3b30ca6d20d633669d7e9180884c24e0b9a52e
+source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
 workflow-type: tm+mt
 source-wordcount: '235'
 ht-degree: 5%
@@ -20,10 +20,10 @@ Sie möchten die Absprungrate berechnen.
 
 +++ Details
 
-Die Definition eines Bounces ist Thema einer anderen Diskussion, aber in diesem Beispiel definieren Sie einen Filter für unzustellbare Ereignisse, bei dem Sitzungsbeginn gleich 1 und Sitzungsende gleich 1 ist. Mit diesem Filter definieren Sie die Rate der nicht zugestellten Sitzungen für Sitzungen.
+Die Definition eines Bounces ist Thema einer anderen Diskussion, aber in diesem Beispiel definieren Sie ein Segment für Bounce-Ereignisse, bei dem Sitzungsbeginn gleich 1 und Sitzungsende gleich 1 ist. Sie verwenden dieses Segment, um die Rate der nicht zugestellten Sitzungen zu definieren.
 
 
-### Filter
+### Segment
 
 ![Bounce-Ereignisse](assets/example-bounce-bouncedevents.png)
 
@@ -36,9 +36,9 @@ Die Definition eines Bounces ist Thema einer anderen Diskussion, aber in diesem 
 
 Alternativ können Sie eine [Absprungrate“ mithilfe abgeleiteter Felder ](/help/data-views/derived-fields/derived-fields.md#bounces).
 
-Abgeleitete Felder sind Teil einer Datenansicht, was den Vorteil hat, dass nicht jeder Benutzer die Definition einer Metrik für die Absprungrate überschreiben oder ändern kann. Dieser Vorteil führte auch zu einer Einschränkung. Benutzende, die keinen Zugriff auf eine Datenansicht haben, können keine abgeleiteten Felder verwenden und müssen auf Filter und berechnete Metriken zurückgreifen, um eine Absprungrate zu definieren.
+Abgeleitete Felder sind Teil einer Datenansicht, was den Vorteil hat, dass nicht jeder Benutzer die Definition einer Metrik für die Absprungrate überschreiben oder ändern kann. Dieser Vorteil führte auch zu einer Einschränkung. Benutzende, die keinen Zugriff auf eine Datenansicht haben, können keine abgeleiteten Felder verwenden und müssen auf Segmente und berechnete Metriken zurückgreifen, um eine Absprungrate zu definieren.
 
-Weitere Hintergrundinformationen zur Berechnung von Bounces und Bounce-Raten in Customer Journey Analytics finden Sie in diesem [Blogpost](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/calculating-bounces-amp-bounce-rate-in-adobe-customer-journey/ba-p/706446).
+Weitere Hintergrundinformationen zur Berechnung von Bounces und Absprungraten in Customer Journey Analytics finden Sie in diesem [Blogpost](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/calculating-bounces-amp-bounce-rate-in-adobe-customer-journey/ba-p/706446).
 
 +++
 

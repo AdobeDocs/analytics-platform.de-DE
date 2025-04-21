@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Derived Fields
 exl-id: bcd172b2-cd13-421a-92c6-e8c53fa95936
 role: Admin
-source-git-commit: 261d4b5e18531f7971a894bc4cd571b764c625f1
+source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
 workflow-type: tm+mt
 source-wordcount: '8844'
 ht-degree: 99%
@@ -643,7 +643,7 @@ Sie definieren ein abgeleitetes `Trip Duration (bucketed)`-Feld. Sie erstellen d
 
 ## Weitere Informationen {#casewhen-more-info}
 
-Customer Journey Analytics verwendet eine verschachtelte Container-Struktur, die nach dem [XDM](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/home) (Experience-Datenmodell) von Adobe Experience Platform modelliert ist. Weitere Hintergrundinformationen finden Sie unter [Container](../create-dataview.md#containers) und [Filter-Container](../../components/filters/filters-overview.md#filter-containers). Dieses Container-Modell ist zwar von Natur aus flexibel, weist aber einige Einschränkungen bei der Verwendung des Regel-Builders auf.
+Customer Journey Analytics verwendet eine verschachtelte Container-Struktur, die nach dem [XDM](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/home) (Experience-Datenmodell) von Adobe Experience Platform modelliert ist. Weitere [ finden ](../create-dataview.md#containers) unter [Container](../../components/filters/filters-overview.md#filter-containers) und Segmentcontainer). Dieses Container-Modell ist zwar von Natur aus flexibel, weist aber einige Einschränkungen bei der Verwendung des Regel-Builders auf.
 
 Customer Journey Analytics verwendet das folgende standardmäßige Container-Modell:
 

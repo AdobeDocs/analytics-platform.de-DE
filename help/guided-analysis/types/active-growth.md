@@ -5,10 +5,10 @@ exl-id: 53ef7485-9cae-4663-bf61-4eb77c126830
 feature: Adobe Product Analytics, Guided Analysis
 keywords: Produktanalysen
 role: User
-source-git-commit: bd8c9951386608572d84006bd5465e57214c56d4
-workflow-type: ht
+source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
+workflow-type: tm+mt
 source-wordcount: '637'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -55,7 +55,7 @@ Mit der Abfrageleiste können Sie die folgenden Komponenten konfigurieren:
 * **[!UICONTROL Ansicht]**: Wechseln Sie zwischen dieser Analyse und [Nettowachstum](net-growth.md).
 * **[!UICONTROL Ereignisse]**: Die Ereignisse, die gemessen werden sollen. Da diese Analyse benutzerbasiert ist, wird eine Person, die innerhalb des Zeitraums mit dem Ereignis interagiert, zur Gruppe der aktiven Benutzenden gezählt. Sie können ein Ereignis in eine Abfrage einbeziehen.
 * **[!UICONTROL Zählt als]**: Die Zählmethode, die auf die ausgewählten Ereignisse angewendet werden soll. Zu den Optionen gehören [!UICONTROL Anzahl der Benutzenden ] und [!UICONTROL Prozentualer Anteil der Benutzenden].
-* **[!UICONTROL Segmente]**: Das Segment, nach dem Daten gefiltert werden sollen. Sie können ein Segment in eine Abfrage einbeziehen.
+* **[!UICONTROL Segmente]**: Das Segment, nach dem Daten segmentiert werden sollen. Sie können ein Segment in eine Abfrage einbeziehen.
 
 ### Diagrammeinstellungen
 

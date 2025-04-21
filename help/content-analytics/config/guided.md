@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin
 exl-id: 4aff664c-3cd9-4591-8122-6ebff10e4a76
-source-git-commit: bc2c959497230d7672d43d5cd409ca62d4627d6a
+source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
 workflow-type: tm+mt
 source-wordcount: '2580'
 ht-degree: 46%
@@ -138,7 +138,7 @@ Ihre Konfiguration erfordert die Auswahl einer [Datenansicht](/help/data-views/d
    Sie können die folgenden Aktionen ausführen:
 
    * Um nach einer bestimmten Datenansicht zu suchen, verwenden Sie das Feld ![Suche](/help/assets/icons/Search.svg).
-   * Um die Liste der verfügbaren Datenansichten zu segmentieren, wählen Sie ![Segmente anzeigen](/help/assets/icons/Filter.svg) aus. Sie können die Liste in &quot;[!UICONTROL &quot;, &quot;]&quot;, &quot;[!UICONTROL &quot; ] &quot;[!UICONTROL &quot; ].<br/>Verwenden Sie ![Ausblenden](/help/assets/icons/Filter.svg) **[!UICONTROL Ausblenden von]**, um den Segmentbereich auszublenden.
+   * Um die Liste der verfügbaren Datenansichten zu segmentieren, wählen Sie ![Segmente anzeigen](/help/assets/icons/Filter.svg) aus. Sie können die Liste nach [!UICONTROL Verbindung], &quot;[!UICONTROL &quot; ] &quot;[!UICONTROL &quot; ].<br/>Verwenden Sie ![Ausblenden](/help/assets/icons/Filter.svg) **[!UICONTROL Ausblenden von]**, um den Segmentbereich auszublenden.
    * Um zu definieren, welche Spalten in der Tabelle angezeigt werden sollen, wählen Sie ![Spalteneinstellungen](/help/assets/icons/ColumnSetting.svg) aus. Wählen Sie aus, welche Spalten im Dialogfeld **[!UICONTROL Tabelle anpassen]** angezeigt werden sollen, und wählen Sie **[!UICONTROL Anwenden]** aus, um die Änderungen anzuwenden.
 
 1. Wählen Sie ![SelectBox](/help/assets/icons/SelectBox.svg) die Datenansicht aus, die Sie verwenden möchten.

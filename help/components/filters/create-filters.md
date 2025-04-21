@@ -4,7 +4,7 @@ description: Grundlegendes zur Benutzeroberfläche zur Segmenterstellung.
 exl-id: b6a921d5-7dd3-4230-88b8-5f1cd313b791
 feature: Filters
 role: User
-source-git-commit: 4bfa32ba3a7902d31edefab17a00206f922a8382
+source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
 workflow-type: tm+mt
 source-wordcount: '262'
 ht-degree: 1%
@@ -23,8 +23,8 @@ Sie können ein Segment wie folgt erstellen:
 
 ![Möglichkeiten zum Erstellen eines Segments](assets/create-filter.png)
 
-* **A**. Wählen Sie in der Hauptbenutzeroberfläche **[!UICONTROL Komponenten]** und wählen Sie **[!UICONTROL Segmente]** aus. Wählen Sie ![AddCircle](/help/assets/icons/AddCircle.svg) [!UICONTROL **[!UICONTROL Add]**] im [[!UICONTROL Filter]Manager](/help/components/filters/manage-filters.md).
-* **B**. Wählen Sie in einem Workspace-Projekt im linken Bereich „Komponenten“ die Option ![Hinzufügen](/help/assets/icons/Add.svg) unter ![Segment](/help/assets/icons/Segmentation.svg) **Filter**.
+* **A**. Wählen Sie in der Hauptbenutzeroberfläche **[!UICONTROL Komponenten]** und wählen Sie **[!UICONTROL Segmente]** aus. Wählen Sie ![AddCircle](/help/assets/icons/AddCircle.svg) [!UICONTROL **[!UICONTROL Add]**] im [[!UICONTROL Segment]Manager](/help/components/filters/manage-filters.md).
+* **B**. Wählen Sie in einem Workspace-Projekt im linken Bereich „Komponenten“ die Option ![Hinzufügen](/help/assets/icons/Add.svg) unter ![Segment](/help/assets/icons/Segmentation.svg) **Segmente**.
 * **C**. Wählen Sie in einem Workspace-Projekt im Kontextmenü in einer Visualisierung die Option **[!UICONTROL Segment aus Auswahl erstellen]** aus.
 * **D**. Wählen Sie in einem Workspace-Projekt **[!UICONTROL Komponenten]** aus dem Menü und wählen Sie **[!UICONTROL Segment erstellen]**.
 * **E**. Verwenden Sie in einem Workspace-Projekt die Tastenkombination **[!UICONTROL Umschalt+Befehlstaste+E]** (macOS) oder **[!UICONTROL Umschalt+Strg+E]** (Windows).

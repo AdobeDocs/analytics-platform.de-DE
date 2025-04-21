@@ -3,7 +3,7 @@ description: Durch die Segmentierung einzelner Metriken können Sie Metriken inn
 title: Segmentierte Metriken
 feature: Calculated Metrics
 exl-id: 37cc93df-9f51-42b3-918f-ed5864991621
-source-git-commit: 2f87afb9c87b0436ee40cc67a04d99d4f4f10e74
+source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
 workflow-type: tm+mt
 source-wordcount: '484'
 ht-degree: 1%
@@ -39,7 +39,7 @@ In den folgenden Abschnitten erfahren Sie, wie Sie mithilfe segmentierter Metrik
 
    Ihr Segment könnte wie folgt aussehen.
 
-   ![Filter Deutschland](assets/filter-germany.png)
+   ![Segment Deutschland](assets/filter-germany.png)
 
 1. Zurück im Generator für berechnete Metriken verwenden Sie das Segment , um die berechnete Metrik zu aktualisieren.
 
@@ -52,7 +52,7 @@ Wiederholen Sie die obigen Schritte für die internationale Version Ihrer berech
 
    Ihr Segment sollte wie folgt aussehen.
 
-   ![Filter Deutschland](assets/filter-not-germany.png)
+   ![Segment Deutschland](assets/filter-not-germany.png)
 
 1. Zurück im Generator für berechnete Metriken verwenden Sie das Segment , um die berechnete Metrik zu aktualisieren.
 

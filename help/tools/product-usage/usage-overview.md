@@ -2,8 +2,8 @@
 title: Produktnutzungsübersicht
 description: Zeigen Sie Erkenntnisse und Berichte dazu an, wie Ihre Organisation Customer Journey Analytics nutzt.
 exl-id: 3806ca7c-ee90-4222-9ffd-2e791c4550e5
-source-git-commit: e7534a1943307f5bbc92a845ddffe0651794b854
-workflow-type: ht
+source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
+workflow-type: tm+mt
 source-wordcount: '523'
 ht-degree: 100%
 
@@ -73,7 +73,7 @@ Wenn Sie die Produktnutzung aktivieren, sind die folgenden Dimensionen verfügba
 * **[!UICONTROL Typ der Komponente]**: Der Typ der Komponente, die hinzugefügt, entfernt oder geändert wurde. Zu den Dimensionselementen gehören:
    * [!UICONTROL Dimension]
    * [!UICONTROL Metrik]
-   * [!UICONTROL Filter]
+   * [!UICONTROL Segment]
    * [!UICONTROL Berechnete Kennzahl]
    * [!UICONTROL Datumsbereich]
    * [!UICONTROL Anmerkung]

@@ -1,12 +1,12 @@
 ---
-description: Der Generator für berechnete Metriken bietet eine Arbeitsfläche, in der Sie Dimensionen, Metriken, Filter und Funktionen per Drag-and-Drop verschieben können, um benutzerdefinierte Metriken basierend auf Container-Hierarchielogik, Regeln und Operatoren zu erstellen. Mit diesem integrierten Entwicklungstool können Sie einfache berechnete Metriken oder komplexe, erweiterte berechnete Metriken erstellen und speichern.
+description: Der Generator für berechnete Metriken bietet eine Arbeitsfläche, mit der Sie Dimensionen, Segmente und Funktionen per Drag-and-Drop verschieben können, um benutzerdefinierte Metriken basierend auf Containerhierarchielogik, Regeln und Operatoren zu erstellen. Mit diesem integrierten Entwicklungs-Tool können Sie einfache berechnete Metriken oder komplexe, erweiterte berechnete Metriken erstellen und speichern.
 title: Erstellen berechneter Metriken
 feature: Calculated Metrics
 exl-id: 4d03a51d-c676-483c-98e2-d7283e8d71b0
-source-git-commit: 53069702055e0adf7abf9061c592fb15772ded73
+source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
 workflow-type: tm+mt
 source-wordcount: '1705'
-ht-degree: 72%
+ht-degree: 71%
 
 ---
 
@@ -156,7 +156,7 @@ Sie verwenden das Konzept eines Segment-Containers, um eine [segmentierte Metrik
 * So fügen Sie einen Segment-Container aus einer Dimension hinzu:
 
    1. Ziehen Sie eine Komponente ![Dimensionen](/help/assets/icons/Dimensions.svg) **[!UICONTROL Dimensionen]** aus dem Bedienfeld „Komponenten“ auf **[!UICONTROL Ziehen Sie Metriken, Dimensionen, Dimensionselemente, Segmente und/oder Funktionen per Drag-and-Drop hierher]**. Sie können ![Search](/help/assets/icons/Search.svg) in der Komponentenleiste verwenden, um nach bestimmten Komponenten zu suchen.
-   1. Definieren **[!UICONTROL im Popup Filter aus Dimension]** die Bedingung für das Segment. Wählen Sie in der Liste der Operatoren einen Wert aus oder geben Sie einen Wert ein, z. B. **[!UICONTROL Monat]** **[!UICONTROL gleich]** ![ChevronDown](/help/assets/icons/ChevronDown.svg) `Sep 2024`.
+   1. Definieren Sie **[!UICONTROL Popup Segment aus Dimension]** die Bedingung für das Segment. Wählen Sie in der Liste der Operatoren einen Wert aus oder geben Sie einen Wert ein, z. B. **[!UICONTROL Monat]** **[!UICONTROL gleich]** ![ChevronDown](/help/assets/icons/ChevronDown.svg) `Sep 2024`.
    1. Wählen Sie **[!UICONTROL Fertig]** aus. Ein Segment-Container wird der **[!UICONTROL Definition]** hinzugefügt.
 
 
@@ -165,11 +165,11 @@ Sie verwenden das Konzept eines Segment-Containers, um eine [segmentierte Metrik
    * Ziehen Sie eine Komponente ![Segmentierung](/help/assets/icons/Segmentation.svg) **[!UICONTROL Segmente]** aus dem Bedienfeld „Komponenten“ auf **[!UICONTROL Ziehen Sie Metriken, Dimensionen, Dimensionselemente, Segmente und/oder Funktionen per Drag-and-Drop hierher]**. Sie können den ![Suche](/help/assets/icons/Search.svg) in der Komponentenleiste verwenden, um nach bestimmten Segmenten zu suchen.
 Der **[!UICONTROL Definition“ wird automatisch ein Segment-Container]** den Namen des Segments hinzugefügt.
 
-   * Ziehen Sie eine Komponente ![Segmentation](/help/assets/icons/Segmentation.svg) **[!UICONTROL Filter]** aus dem Panel „Komponenten“ in einen generischen Container. Der Container wird in einen Segment-Container geändert.
+   * Ziehen Sie eine Komponente ![Segmentierung](/help/assets/icons/Segmentation.svg)**[!UICONTROL Segment]** aus dem Bedienfeld „Komponenten“ in einen generischen Container. Der Container wird in einen Segment-Container geändert.
 
    * Wählen Sie ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Hinzufügen]** in einem Container aus:
 
-      1. Wählen Sie **[!UICONTROL Filter]** aus. Ein Segment-Container wird der **[!UICONTROL Definition]** hinzugefügt.
+      1. Wählen Sie **[!UICONTROL Segment]** aus. Ein Segment-Container wird der **[!UICONTROL Definition]** hinzugefügt.
       1. Wählen Sie im neuen Segment-Container ein Segment aus dem Dropdown [!UICONTROL *Menü Auswählen…*] aus.
 
   >[!TIP]
@@ -182,7 +182,7 @@ So entfernen Sie ein Segment aus einem Container:
 
 * Klicken Sie ![Schließen](/help/assets/icons/Close.svg) neben dem Segmentnamen.
 
-Weitere Informationen und Beispiele finden Sie unter [Gefilterte Metriken](metrics-with-segments.md).
+Siehe [Segmentierte Metriken](metrics-with-segments.md) für weitere Details und Beispiele.
 
 #### Funktions-Container
 
@@ -218,6 +218,6 @@ Wählen Sie zum Löschen eines Containers ![Close](/help/assets/icons/Close.svg)
 >[!MORELIKETHIS]
 >
 >[Funktionen verwenden](cm-using-functions.md)
->[Filter](/help/components/filters/filters-overview.md)
+>[Segmente ](/help/components/filters/filters-overview.md)
 >
 

@@ -5,7 +5,7 @@ exl-id: 48546227-029c-4cf9-9b7e-66d547769270
 solution: Customer Journey Analytics
 feature: Use Cases
 role: User
-source-git-commit: 9f954709a3dde01b4e01581e34aece07fe0256b1
+source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
 workflow-type: tm+mt
 source-wordcount: '1141'
 ht-degree: 88%
@@ -73,7 +73,7 @@ In dieser Visualisierung können Sie die Qualität der Datenzuordnung in der kan
    * Personen-Container, bei dem die Datensatz-ID mit Ihren Web-Daten übereinstimmt
    * Personen-Container, bei dem die Datensatz-ID mit Ihren Callcenter-Daten übereinstimmt
 2. Ziehen Sie in Analysis Workspace eine [Venn](/help/analysis-workspace/visualizations/venn.md)-Visualisierung auf die Arbeitsbereich-Arbeitsfläche.
-3. Ziehen Sie die beiden neu erstellten Segmente in den Bereich **[!UICONTROL Filter hinzufügen]** und die Metrik „Personen“ in den Bereich **[!UICONTROL Metrik hinzufügen]**.
+3. Ziehen Sie die beiden neu erstellten Segmente in den Bereich **[!UICONTROL Segment hinzufügen]** und die Metrik „Personen“ in den Bereich **[!UICONTROL Metrik hinzufügen]**.
 
 In der entsprechenden Venn-Visualisierung wird die Anzahl der Personen in Ihrem Datensatz angezeigt, die sowohl Web- als auch Callcenter-Daten enthalten. Je größer die Überschneidung, desto mehr Personen wurden erfolgreich zugeordnet. Die Bereiche, die sich nicht überschneiden, stellen Personen dar, die sich ausschließlich in einem der beiden Datensätze befinden.
 

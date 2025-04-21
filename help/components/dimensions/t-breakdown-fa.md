@@ -6,7 +6,7 @@ feature: Dimensions
 exl-id: 6b433db3-02c1-4deb-916e-b01c0b79889e
 solution: Customer Journey Analytics
 role: User
-source-git-commit: 4bfa32ba3a7902d31edefab17a00206f922a8382
+source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
 workflow-type: tm+mt
 source-wordcount: '540'
 ht-degree: 60%
@@ -21,7 +21,7 @@ Sie können Ihre Daten für Ihre spezifischen Anforderungen unbegrenzt aufschlü
 
    ![Schrittergebnis, das die Option Warnhinweis aus Auswahl erstellen anzeigt.](assets/breakdown.png)
 
-1. Wählen Sie aus dem Untermenü **[!UICONTROL Dimensionen]**, **[!UICONTROL Metriken]**, **[!UICONTROL Filter]** oder **[!UICONTROL Datumsbereiche]** und wählen Sie dann ein Element aus.
+1. Wählen Sie aus dem Untermenü **[!UICONTROL Dimensionen]**, **[!UICONTROL Metriken]**, **[!UICONTROL Segmente]** oder **[!UICONTROL Datumsbereiche]** und wählen Sie dann ein Element aus.
 
 Sie können Metriken nach Dimensionselementen oder Zielgruppensegmenten über ausgewählte Zeiträume aufschlüsseln. Sie können auch noch granularer aufschlüsseln.
 

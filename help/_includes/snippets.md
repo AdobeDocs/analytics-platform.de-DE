@@ -1,5 +1,5 @@
 ---
-source-git-commit: b14bc43a0cdf4901c5df171a116943beb2124991
+source-git-commit: be615a45a68b47f95517992cc4268a887ac1110a
 workflow-type: tm+mt
 source-wordcount: '3796'
 ht-degree: 30%
@@ -199,8 +199,8 @@ Verwenden Sie die folgenden Informationen, um die Visualisierung auszuwählen, d
 | **Nichtlineare Journey mit mehreren Einstiegspunkten und Pfaden** | Ja | Nein | Ja |
 | **Primäre Metrik** | Jede Metrik, einschließlich berechneter Metriken. | Nur Sitzung oder Person | Nur Vorfälle (Pfadansichten) |
 | **Sekundäre Metrik** | Ja<p>Jede Metrik, einschließlich berechneter Metriken.</p> | Nein | Nein |
-| **Komponentenunterstützung in Knoten oder Touchpoints** | Metriken, Dimensionselemente, Filter und Datumsbereiche. | Metriken, Dimensionselemente, Filter und Datumsbereiche. | Nur Dimensionselemente (mit Ausnahme des Start- und Endkontaktpunkts) |
-| **Filter vergleichen** | Nein | Ja<p>Eine Gegenüberstellung zweier verschiedener Filter im gleichen Bericht vornehmen.</p> | Nein |
+| **Komponentenunterstützung in Knoten oder Touchpoints** | Metriken, Dimensionselemente, Segmente und Datumsbereiche. | Metriken, Dimensionselemente, Segmente und Datumsbereiche. | Nur Dimensionselemente (mit Ausnahme des Start- und Endkontaktpunkts) |
+| **Segmente vergleichen** | Nein | Ja<p>eine Gegenüberstellung zweier verschiedener Segmente im gleichen Bericht vornehmen</p> | Nein |
 | **Drag-and-Drop-Komponenteninteraktion** | Ja | Ja | Nein |
 | **Adobe Journey Optimizer Journey** | Ja</br> Öffnen Sie Journey aus Journey Optimizer, um sie gründlicher zu analysieren und anzupassen. | Nein | Nein |
 

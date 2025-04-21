@@ -3,7 +3,7 @@ description: Sequenzielle Segmente sind Segmente, die den THEN-Operator zum Defi
 title: Sequenzielle Segmente
 feature: Filters
 exl-id: 64cb10b5-36f0-42c8-b687-ae5de5ced8b5
-source-git-commit: bc2c959497230d7672d43d5cd409ca62d4627d6a
+source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
 workflow-type: tm+mt
 source-wordcount: '2459'
 ht-degree: 4%
@@ -43,7 +43,7 @@ Ein sequenzielles Segment verfügt über einige [grundlegende Funktionen](#basic
 
 
 
-Die Grundlagen zum Erstellen eines sequenziellen Segments unterscheiden sich nicht vom Erstellen eines regulären Segments mit dem [Segment Builder](filter-builder.md). Sie können den [Definition-Builder](filter-builder.md#definition-builder) verwenden, um Ihre Segmentdefinition zu erstellen. In dieser Konstruktion verwenden Sie Komponenten, Container, Operatoren und Logik. Ein reguläres Segment wird zu einem sequenziellen Filter, sobald Sie den Operator **[!UICONTROL Dann]** in der Hauptdefinition oder in einem der Container auswählen, die Sie im [Definitionsgenerator“ verwenden](filter-builder.md#definition-builder).
+Die Grundlagen zum Erstellen eines sequenziellen Segments unterscheiden sich nicht vom Erstellen eines regulären Segments mit dem [Segment Builder](filter-builder.md). Sie können den [Definition-Builder](filter-builder.md#definition-builder) verwenden, um Ihre Segmentdefinition zu erstellen. In dieser Konstruktion verwenden Sie Komponenten, Container, Operatoren und Logik. Ein reguläres Segment wird zu einem sequenziellen Segment, sobald Sie den **[!UICONTROL Then]**-Operator in der Hauptdefinition oder in einem der Container auswählen, die Sie im [Definition-Builder) ](filter-builder.md#definition-builder).
 
 ### Beispiele
 

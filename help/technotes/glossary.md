@@ -5,7 +5,7 @@ exl-id: 7f8aac93-0103-4ead-b25b-3d9994a271af
 solution: Customer Journey Analytics
 feature: Basics
 role: User
-source-git-commit: 9f954709a3dde01b4e01581e34aece07fe0256b1
+source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
 workflow-type: tm+mt
 source-wordcount: '309'
 ht-degree: 96%
@@ -22,7 +22,7 @@ Einige Begriffe in Customer Journey Analytics weichen von der bisherigen Verwend
 | Profildatensatz | Kundenattribut | Wenn Sie Daten von Unternehmenskunden in einer CRM-Datenbank (CRM = Customer Relationship Management) erfassen, können Sie diese Daten in einen Profildatensatz in Adobe Experience Platform hochladen. Nachdem Sie eine Verbindung zu diesem Datensatz in Customer Journey Analytics hergestellt und eine Datenansicht erstellt haben, können Sie die Daten in Arbeitsbereich nutzen. |
 | Experience Cloud-Organisation | Anmeldeunternehmen | Siehe [Organisationen und Kontoverknüpfung](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/organizations.html?lang=de#topic_C31CB834F109465A82ED57FF0563B3F1). |
 | nicht angegeben | Report Suite | Report Suites im traditionellen Sinne von Adobe Analytics existieren nicht mehr. Stattdessen erstellen Sie (virtuelle) [Datenansichten](/help/data-views/create-dataview.md) aus den Platform-Datensätzen, mit denen Sie Verbindungen hergestellt haben. |
-| Segment | Segment | Segmente, die früher Filter waren. Sie wurden in „Segmente“ umbenannt. |
+| Segment | Segment | Segmente waren früher „Filter“. Sie wurden in „Segmente“ umbenannt. |
 | Datenansicht | Virtual Report Suite | In Adobe Analytics ist eine Virtual Report Suite eine gefilterte Ansicht einer übergeordneten Report Suite. Der Hauptunterschied zwischen einer Virtual Report Suite und einer Datenansicht in Customer Journey Analytics besteht darin, dass die Virtual Report Suite eine Untergruppe einer „Basis“- oder „übergeordneten“ Report Suite ist und daher einige ihrer Einstellungen übernimmt. Da es keine übergeordneten/Basis-Report Suites mehr gibt, definieren Sie Datenansichten mit ihren eigenen Einstellungen. |
 
 ## Glossar zu Adobe Experience Platform

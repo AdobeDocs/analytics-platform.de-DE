@@ -4,10 +4,10 @@ title: Segmente erstellen
 feature: Filters
 role: User
 exl-id: 160021f1-6942-4682-9114-d375307d9912
-source-git-commit: 4bfa32ba3a7902d31edefab17a00206f922a8382
+source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
 workflow-type: tm+mt
 source-wordcount: '1571'
-ht-degree: 46%
+ht-degree: 45%
 
 ---
 
@@ -54,7 +54,7 @@ Das Dialogfeld **[!UICONTROL Segment Builder]** wird verwendet, um neue Segmente
    | **[!UICONTROL Datenansicht]** | Sie können die Datenansicht für das Segment auswählen.  Das von Ihnen definierte Segment ist als Segment in der Registerkarte [Einstellungen](/help/data-views/create-dataview.md#settings-filters) einer Datenansicht verfügbar. |
    | **[!UICONTROL Segment nur für Projekte]** | Ein Informationsfeld, in dem erläutert wird, dass das Segment nur in dem Projekt sichtbar ist, in dem es erstellt wurde, und nicht zur Komponentenliste hinzugefügt wird. Aktivieren Sie **[!UICONTROL Dieses Segment für alle Projekte verfügbar machen und der Komponentenliste hinzufügen]** um diese Einstellung zu ändern. Dieses Infofeld wird nur angezeigt, wenn Sie ein [Schnellsegment](quick-filters.md) erstellen und das Schnellsegment mithilfe von **[!UICONTROL Open Builder]** in der [!UICONTROL Schnellsegment]-Oberfläche in ein reguläres Segment umwandeln. |
    | **[!UICONTROL Titel]** ![Erforderlich](/help/assets/icons/Required.svg) | Benennen Sie das Segment, z. B. `Last month mobile customers`. |
-   | **[!UICONTROL Beschreibung]** | Geben Sie eine Beschreibung für das Segment an, z. B. `Filter to define the mobile customers for the last month`. |
+   | **[!UICONTROL Beschreibung]** | Geben Sie eine Beschreibung für das Segment an, z. B. `Segment to define the mobile customers for the last month`. |
    | **[!UICONTROL Tags]** | Organisieren Sie das Segment, indem Sie ein oder mehrere Tags erstellen oder anwenden. Beginnen Sie mit der Eingabe, um nach vorhandenen Tags zu suchen, die Sie auswählen können. Oder drücken Sie die **[!UICONTROL Eingabetaste]**, um ein neues Tag hinzuzufügen. Wählen Sie ![CrossSize75](/help/assets/icons/CrossSize75.svg) aus, um ein Tag zu entfernen. |
    | **[!UICONTROL Definition]** ![Required](/help/assets/icons/Required.svg) | Definieren Sie Ihr Segment mit dem [Definition Builder](#definition-builder). |
 
@@ -82,7 +82,7 @@ Sie können diese Einstellungen später jederzeit ändern.
 
 ### Komponenten
 
-Ein wichtiger Teil beim Erstellen Ihrer Segmentdefinition ist die Verwendung von Dimensionen, Metriken, vorhandenen Segmenten und Datumsbereichen. Alle diese Komponenten sind über das Panel „Komponenten“ im Filteraufbau verfügbar.
+Ein wichtiger Teil beim Erstellen Ihrer Segmentdefinition ist die Verwendung von Dimensionen, Metriken, vorhandenen Segmenten und Datumsbereichen. Alle diese Komponenten sind über das Bedienfeld „Komponenten“ in Segment Builder verfügbar.
 
 ![Erstellen einer Definition](assets/start-building-filter.gif){width=100%}
 
@@ -130,7 +130,7 @@ Sie können ![Einstellung](/help/assets/icons/Setting.svg) in einem Container f�
 
 Sie können Segmente erstellen, die rollierende Datumsbereiche enthalten. Auf diese Weise können Sie Fragen zu laufenden Kampagnen oder Ereignissen beantworten. Sie können beispielsweise ein Segment erstellen, das Folgendes enthält *alle, die in den letzten 60 Tagen einen Online-Kauf getätigt haben*.
 
-![Filter mit rollierendem Datumsbereich](assets/filter-rolling-date-range.gif)
+![Segment mit rollierendem Datumsbereich](assets/filter-rolling-date-range.gif)
 
 
 >[!BEGINSHADEBOX]

@@ -5,9 +5,9 @@ exl-id: 6ecbae45-9add-4554-8d83-b06ad016fea9
 solution: Customer Journey Analytics
 feature: Data Views
 role: User
-source-git-commit: 9f954709a3dde01b4e01581e34aece07fe0256b1
+source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
 workflow-type: tm+mt
-source-wordcount: '1364'
+source-wordcount: '1362'
 ht-degree: 33%
 
 ---
@@ -69,7 +69,7 @@ Sie können eine numerische Dimension verwenden, um Metriken in Ihre [!UICONTROL
 
 ## Filtern von Unterereignissen {#sub-event}
 
-Diese Funktion gilt speziell für Array-basierte Felder. Mit der Ein-/Ausschlussfunktion können Sie Filter auf der Ebene von Unterereignissen durchführen, während im Filter Builder erstellte Filter (Segmente) nur Filter auf Ereignisebene ermöglichen. Sie können also die Filterung von Unterereignissen durchführen, indem Sie Einschließen/Ausschließen in Datenansichten verwenden und dann auf Ereignisebene in einem Filter auf diese neue Metrik/Dimension verweisen.
+Diese Funktion gilt speziell für Array-basierte Felder. Mit der Ein-/Ausschlussfunktion können Sie Filter auf der Ebene von Unterereignissen durchführen, während Segmente, die in Segment Builder erstellt wurden, Ihnen nur Filter auf der Ereignisebene bieten. Sie können die Filterung von Unterereignissen durchführen, indem Sie Einschließen/Ausschließen in Datenansichten verwenden und dann auf der Ereignisebene in einem Segment auf diese neue Metrik/Dimension verweisen.
 
 Verwenden Sie beispielsweise die Ein-/Ausschlussfunktion in Datenansichten, um sich nur auf Produkte zu konzentrieren, die einen Umsatz von mehr als 50 US-Dollar generiert haben. Wenn Sie also eine Bestellung haben, die einen Produktkauf im Wert von 50 US-Dollar und einen Produktkauf im Wert von 25 US-Dollar enthält, entfernt die Ein-/Ausschlussfunktion den Produktkauf im Wert von 25 US-Dollar und nicht die gesamte Bestellung.
 

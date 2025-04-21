@@ -5,10 +5,10 @@ exl-id: b6f92d47-6c09-4338-9dc5-b30bbfbe9f7f
 feature: Guided Analysis
 keywords: Produktanalysen
 role: User
-source-git-commit: eb9b749a5c61da3b4b5d2eeeed93bf5e4702a415
+source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
 workflow-type: tm+mt
 source-wordcount: '439'
-ht-degree: 95%
+ht-degree: 92%
 
 ---
 
@@ -48,7 +48,7 @@ Die Hauptterminologie der geführten Analyse und von [Analysis Workspace](../ana
 | Benutzende | Personen |
 | Dimension | Dimension |
 | Dimensionselement | Dimensionselement |
-| Segment | Filter |
+| Segment | Segment |
 | Filter | Berichtsfilter |
 | Berechnete Metrik, Metriken | Berechnete Metrik |
 
@@ -60,7 +60,7 @@ Die Hauptterminologie der geführten Analyse und von [Analysis Workspace](../ana
 
 [Analysis Workspace](../analysis-workspace/home.md) und die geführte Analyse verwenden zwar dieselben zugrunde liegenden Daten, aber die Art und Weise, wie Sie mit jedem Tool Abfragen dieser Daten erstellen können, ist unterschiedlich.
 
-* **Analysis Workspace ist ein dimensionszentriertes Erlebnis.** Die Tabellen bestehen normalerweise aus dimensionalen Zeilen, während Spalten normalerweise Metriken sind. Filter können sowohl in Zeilen als auch in Spalten angewendet werden, um die gewünschten Daten zu erhalten.
+* **Analysis Workspace ist ein dimensionszentriertes Erlebnis.** Die Tabellen bestehen normalerweise aus dimensionalen Zeilen, während Spalten normalerweise Metriken sind. Segmente können sowohl in Zeilen als auch in Spalten angewendet werden, um die gewünschten Daten zu erhalten.
 
 * **Die geführte Analyse ist ein Ereignis und ein benutzerzentriertes Erlebnis.** jede Analyse beginnt mit der Auswahl von Ereignissen, dann können Dimensionen und Segmente hinzugefügt werden, um diese Ereignisdaten zu verfeinern.
 

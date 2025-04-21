@@ -4,10 +4,10 @@ title: Verwalten von Warnhinweisen
 feature: Workspace Basics
 role: User, Admin
 exl-id: 174c3ebd-a77b-4403-ae9a-bb0cff4bcca6
-source-git-commit: daa07b603caa613ca49b61c2e8e461d558459f57
+source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
 workflow-type: tm+mt
-source-wordcount: '567'
-ht-degree: 19%
+source-wordcount: '565'
+ht-degree: 21%
 
 ---
 
@@ -18,14 +18,14 @@ Sie können Warnhinweise über eine zentrale Verwaltungsoberfläche von [!UICONT
 
 * Wählen Sie **[!UICONTROL Hauptbenutzeroberfläche]** Komponenten“ und dann **[!UICONTROL Warnhinweise]** aus.
 
-Der Warnhinweis-Manager ist ähnlich wie der [Filter-](/help/components/filters/manage-filters.md) und der [Manager für berechnete Metriken](/help/components/calc-metrics/cm-workflow/cm-manager.md) strukturiert.
+Der Warnhinweis-Manager ist wie der [Segment-Manager](/help/components/filters/manage-filters.md) und der [Manager für berechnete Metriken](/help/components/calc-metrics/cm-workflow/cm-manager.md) strukturiert.
 
 
 ## Warnhinweis-Manager
 
 Der Warnhinweis-Manager verfügt über die folgenden Elemente der Benutzeroberfläche:
 
-![Filterschnittstelle](assets/alerts-manager.png)
+![Benutzeroberfläche für Filter](assets/alerts-manager.png)
 
 ### Liste der Warnhinweise
 
@@ -60,7 +60,7 @@ Sie können Aktionen für Warnhinweise mithilfe der Aktionsleiste durchführen. 
 | ![Bearbeiten](/help/assets/icons/Edit.svg) | **[!UICONTROL Umbenennen]** | Umbenennen eines einzelnen ausgewählten Warnhinweises. Wenn ausgewählt, können Sie den Warnhinweis inline umbenennen. |
 | ![Kopieren](/help/assets/icons/Copy.svg) | **[!UICONTROL Kopieren]** | Kopieren Sie den ausgewählten Warnhinweis. Neue Warnhinweise werden mit demselben Namen und derselben Suffix-`(Copy)` erstellt. |
 | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | **[!UICONTROL Aktivieren]** oder **[!UICONTROL Deaktivieren]** | Aktivieren oder Deaktivieren der ausgewählten Warnhinweise. |
-| ![Aktualisieren](/help/assets/icons/Refresh.svg) | **[!UICONTROL Verlängern]** | Verlängert das Ablaufdatum des Warnhinweises. Das Ablaufdatum liegt unabhängig vom ursprünglichen Ablaufdatum 1 Jahr ab dem Tag, an dem Sie diese Option auswählen. |
+| ![Aktualisieren](/help/assets/icons/Refresh.svg) | **[!UICONTROL Verlängern]** | Verlängert das Ablaufdatum für einen Warnhinweis. Das Ablaufdatum liegt unabhängig vom ursprünglichen Ablaufdatum 1 Jahr ab dem Tag, an dem Sie diese Option auswählen. |
 | ![CSV-Datei](/help/assets/icons/FileCSV.svg) | **[!UICONTROL In CSV exportieren]** | Exportieren Sie die Warnhinweise in eine `Alerts List.csv`. |
 
 
@@ -69,7 +69,7 @@ Sie können Aktionen für Warnhinweise mithilfe der Aktionsleiste durchführen. 
 In der Filterleiste werden die aktiven Filter angezeigt, die vom Filterbereich auf die Liste der Warnhinweise angewendet wurden (falls vorhanden). Mit ![XGröße75](/help/assets/icons/CrossSize75.svg) können Sie schnell einen Filter entfernen. Wenn mehr als ein Filter angegeben ist, können Sie alle Filter mit **[!UICONTROL Alle entfernen]** entfernen.
 
 
-### Bedienfeld „Filter“
+### Panel „Filter“
 
 Sie können die Liste der Warnhinweise mithilfe des linken Bedienfelds ![Filter](/help/assets/icons/Filter.svg) **[!UICONTROL Filter]** filtern. Das Bedienfeld „Filter“ zeigt den Filtertyp und die Anzahl der Warnhinweise an, die den spezifischen Filter berücksichtigen.
 
@@ -119,4 +119,4 @@ Verwenden Sie die [Warnhinweiserstellung](alert-builder.md#alert-builder), um de
 
 Wenn Sie ein Problem mit einem Warnhinweis beheben, geben Sie die JID-Nummer (Job Instance ID) an den Adobe-Support an. Die JID-Nummer befindet sich am unteren Rand der E-Mail-Benachrichtigung, die Sie erhalten.
 
-![Warnungs-E-Mail](assets/alerts-email.PNG)
+![Warninweis-E-Mail](assets/alerts-email.PNG)

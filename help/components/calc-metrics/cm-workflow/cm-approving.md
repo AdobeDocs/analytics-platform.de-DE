@@ -3,10 +3,10 @@ description: Im Manager für berechnete Metriken können Sie einen Arbeitsablauf
 title: Berechnete Metriken genehmigen
 feature: Calculated Metrics
 exl-id: da55bb2b-9d42-4fba-add4-655f7f7c7ef6
-source-git-commit: 53069702055e0adf7abf9061c592fb15772ded73
+source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
 workflow-type: tm+mt
-source-wordcount: '145'
-ht-degree: 22%
+source-wordcount: '146'
+ht-degree: 21%
 
 ---
 
@@ -21,7 +21,7 @@ So validieren Sie berechnete Metriken:
 
 So heben Sie die Genehmigung für berechnete Metriken auf:
 
-1. Wählen Sie [Filtermanager](cm-approving.md) eine oder mehrere der berechneten Metriken aus, deren Genehmigung Sie aufheben möchten.
+1. Wählen [ im Manager für ](cm-approving.md) berechnete Metriken mindestens eine der berechneten Metriken aus, deren Genehmigung Sie aufheben möchten.
 1. Wählen Sie in der Aktionsleiste ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) **[!UICONTROL Nicht genehmigen]** aus.
 
 

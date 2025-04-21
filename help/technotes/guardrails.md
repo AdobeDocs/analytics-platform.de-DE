@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Administration
 role: Admin
 exl-id: f093ac54-7d31-449b-a441-a65856a1d535
-source-git-commit: 9f954709a3dde01b4e01581e34aece07fe0256b1
+source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
 workflow-type: tm+mt
 source-wordcount: '1760'
 ht-degree: 10%
@@ -187,10 +187,10 @@ Siehe auch Experience Platform [Leitplanken für den Datensatzexport](https://ex
 
 | Name | Wert | Art von Limit | Beschreibung |
 |---|--:|---|---|
-| Container pro Filter | 50 | Vom System erzwungene Leitplanke | Maximale Anzahl von Containern pro Segment. |
+| Container pro Segment | 50 | Vom System erzwungene Leitplanke | Maximale Anzahl von Containern pro Segment. |
 | Metriken pro berechneter Metrik | 25 | Vom System erzwungene Leitplanke | Maximale Anzahl von Metriken pro berechneter Metrik. |
-| Metriken und Dimensionen pro Filter | 25 | Vom System erzwungene Leitplanke | Maximale Anzahl eindeutiger Metriken und Dimensionen pro Segment. |
-| Verschachtelte Container pro Filter | 10 | Vom System erzwungene Leitplanke | Maximale Anzahl verschachtelter Container pro Segment. |
+| Metriken und Dimensionen pro Segment | 25 | Vom System erzwungene Leitplanke | Maximale Anzahl eindeutiger Metriken und Dimensionen pro Segment. |
+| Verschachtelte Container pro Segment | 10 | Vom System erzwungene Leitplanke | Maximale Anzahl verschachtelter Container pro Segment. |
 | Regeln pro Segment | 100 | Vom System erzwungene Leitplanke | Maximale Anzahl von Regeln pro Segment. |
 | Zeichenfolgenvergleiche pro Dimension und Segment | 100 | Vom System erzwungene Leitplanke | Maximale Anzahl von Zeichenfolgenvergleichen pro Dimension und Segment. |
 | Berechnete Metriken | 6.000 | Vom System erzwungene Leitplanke | Maximale Anzahl berechneter Metriken für eine Organisation. |

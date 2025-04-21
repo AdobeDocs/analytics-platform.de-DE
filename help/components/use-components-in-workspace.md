@@ -4,7 +4,7 @@ title: Verwenden von Komponenten in Analysis Workspace
 feature: Components
 role: User
 exl-id: 97bdfb9e-a27e-4a6b-b6cc-21a292398037
-source-git-commit: 3cbf30778ff0fbb4198db16cbbabf3d62a87d384
+source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
 workflow-type: tm+mt
 source-wordcount: '952'
 ht-degree: 7%
@@ -89,9 +89,9 @@ So fügen Sie einem Projekt in Analysis Workspace eine Metrik hinzu:
 
 Weitere Informationen zu Metriken finden Sie unter [Metriken](/help/components/apply-create-metrics.md).
 
-### Hinzufügen von Filtern zu einem Projekt
+### Segmente zu einem Projekt hinzufügen
 
-[Filter](/help/components/filters/filters-overview.md) ermöglichen es Ihnen, Untergruppen von Personen, Sitzungen oder Ereignissen anhand von Merkmalen oder bestimmten Interaktionen zu identifizieren.
+[Segmente](/help/components/filters/filters-overview.md) ermöglichen es Ihnen, Untergruppen von Personen, Sitzungen oder Ereignissen basierend auf Merkmalen oder bestimmten Interaktionen zu identifizieren.
 
 Sie können Segmente in Analysis Workspace auf eine der folgenden Arten verwenden:
 
@@ -103,7 +103,7 @@ Informationen dazu, wie Sie den Segment-Ablagebereich in einem Bedienfeld verwen
 Wenn Sie einer Spalte in einer Freiformtabelle Segmente hinzufügen, werden die Segmente auf alle Inhalte in der Tabellenspalte angewendet. Sie können Segmente auch als Teil einer Fallout-Visualisierung hinzufügen.
 
 * Verwenden von Segmenten in Komponenten
-Wenn Sie Komponenten wie [berechnete Metriken](/help/components/calc-metrics/cm-workflow/metrics-with-segments.md), [Anmerkungen](/help/components/annotations/create-annotations.md#annotation-builder) oder sogar [Segmente) definieren](/help/components/filters/filter-builder.md) können Sie Filter als Teil der Definition verwenden.
+Wenn Sie Komponenten wie [berechnete Metriken](/help/components/calc-metrics/cm-workflow/metrics-with-segments.md), [Anmerkungen](/help/components/annotations/create-annotations.md#annotation-builder) oder sogar [Segmente) definieren](/help/components/filters/filter-builder.md) können Sie Segmente als Teil der Definition verwenden.
 
 
 ### Hinzufügen von Datumsbereichen zu einem Projekt
