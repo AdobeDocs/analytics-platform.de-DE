@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin, User
 exl-id: 0d3be50d-c635-459b-8b01-61d6d4ef0cdf
-source-git-commit: 28a0abd3415a167e6dd3de3b77bd49b78fc003cd
+source-git-commit: feb253b20820112d5aa4b4eee31cff74d99fa186
 workflow-type: tm+mt
-source-wordcount: '858'
-ht-degree: 48%
+source-wordcount: '855'
+ht-degree: 44%
 
 ---
 
@@ -43,15 +43,15 @@ Die Inhaltsanalyse verwendet die folgenden Schlüsselbegriffe:
 
 ## Funktionsweise
 
-Die Inhaltsanalyse verwendet Web-Bildansichtsdaten, die in Ereignisdatensätzen in Experience Platform erfasst wurden. Diese Daten können mithilfe der verschiedenen verfügbaren Methoden erfasst werden: Experience Platform Edge Network (Web-SDK, Server API) oder Analytics-Quell-Connector.
+Content Analytics verwendet Web-Bildansichtsdaten in Ereignisdatensätzen in Experience Platform, um [Inhaltsereignisdaten zu erfassen](config/datacollection.md). und kombiniert diese Inhaltserfassung mit der (vorhandenen) Datenerfassungsimplementierung von Verhaltensdaten.
 
 ![Inhaltsanalyse - Funktionsweise](assets/aca-overview.gif)
-
 
 1. Wenn ein(e) Benutzende(r) eine Website [für Content Analytics konfiguriert](config/configuration.md) zeichnet der Experience Platform Web SDK Impressionen und Interaktionen mit Inhalten auf.
 1. Der Identity Service und der Feature Service verarbeiten diese Interaktionen. Dieser Prozess besteht aus einem Abrufdienst, der die öffentlich zugänglichen Versionen der konfigurierten URLs, die die Interaktionen definieren, erneut aufruft. Für alle abgerufenen URLs identifiziert der Identity Service die Erlebnisse und Assets eindeutig. Der Feature Service wendet KI-/ML-Services an, um Erlebnisse und Assets sowie Metadaten und Attribute zu ermitteln.
 1. Die Ergebnisse dieser Services ([Komponenten, Attribute und Identitäten](/help/content-analytics/report/components.md)) werden verwendet, um die relevanten spezifischen Inhaltsanalysedatensätze in Experience Platform zu aktualisieren.
 1. Die Inhaltsanalysedaten können Sie zusammen mit Verhaltensdaten und anderen Suchdaten in einer Customer Journey Analytics-Einrichtung verwenden ([Verbindung](/help/connections/overview.md), [Datenansicht](/help/data-views/data-views.md) und [Workspace](/help/analysis-workspace/home.md)). Dieses Setup bietet die Grundlage für die einzigartigen Einblicke auf Makroebene in Ihren Inhalt. <br/>Sie können Ihre Content Analytics-Berichte und -Analysen mithilfe der [Content Analytics-Vorlage starten](/help/content-analytics/report/report.md#template).
+
 
 >[!NOTE]
 >

@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin
 exl-id: 584587e6-45fd-4fc3-a7a6-6685481ddee7
-source-git-commit: 981cd0c01d775acbd71cada7efed4911b4bcb157
+source-git-commit: feb253b20820112d5aa4b4eee31cff74d99fa186
 workflow-type: tm+mt
-source-wordcount: '518'
+source-wordcount: '567'
 ht-degree: 1%
 
 ---
@@ -34,10 +34,13 @@ Im Zusammenhang mit diesem Artikel werden die folgenden Definitionen verwendet:
 
 ## Funktionalität
 
+Content Analytics erfordert, dass Experience Platform Edge Network Web SDK Inhaltsereignisdaten erfasst. Diese Ereignisdatenerfassung wird mit der (vorhandenen) Datenerfassung von Verhaltensereignisdaten über Mechanismen wie Experience Platform Edge Network (Web-SDK, Server-API) oder Analytics Source Connector (z. B. mit AppMeasurement) kombiniert.
+
 Die Content Analytics-Bibliothek erfasst Daten, wenn:
 
 * Content Analytics ist in der Tag-Bibliothek enthalten, die auf der Seite geladen wird.
 * Die Seiten-URL wird in der [Content Analytics-Erweiterung](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview){target="_blank"} konfiguriert, die Teil der enthaltenen Tag-Bibliothek ist.
+
 
 
 ## Content Analytics-Ereignis
