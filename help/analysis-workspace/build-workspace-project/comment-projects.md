@@ -5,9 +5,10 @@ feature: Workspace Basics
 role: User
 hide: true
 hidefromtoc: true
-source-git-commit: 11e6d5a2aace4554b48c05c2316061de1e628108
+exl-id: 05f69a1c-31c2-40d8-ae8b-a084169897b1
+source-git-commit: ca619cfd0c4f4329c7069e387b5b4d919a53e9fb
 workflow-type: tm+mt
-source-wordcount: '1627'
+source-wordcount: '1683'
 ht-degree: 0%
 
 ---
@@ -24,6 +25,10 @@ Mithilfe von Kommentaren in Analysis Workspace können Sie im Rahmen eines Analy
 >* **Organisation:** Der Customer Journey Analytics-Administrator kann diese Funktion für das Unternehmen deaktivieren, wie unter [ beschrieben](/help/analysis-workspace/user-preferences.md).
 
 ## Kommentare anzeigen
+
+Sie können Kommentare im Kommentarbereich in der rechten Leiste oder über das Kommentar-Badge anzeigen, falls vorhanden.
+
+![Anzeigen von Kommentaren in Analysis Workspace](assets/workspace-comments-view.png)
 
 ### Anzeigen von Kommentaren im Kommentarbereich
 
@@ -61,6 +66,12 @@ So kommentieren Sie einen bestimmten Bereich des Projekts (z. B. einen Metrikwer
 
 1. Wenn das Projekt in Analysis Workspace geöffnet ist, klicken Sie mit der rechten Maustaste auf den Bereich des Projekts, in den Sie den Kommentar einfügen möchten.
 
+   Alle Visualisierungen unterstützen Kommentar-Badges in der Visualisierungskopfzeile, aber nur die folgenden Visualisierungen unterstützen Kommentar-Badges zu bestimmten Datenpunkten innerhalb der Visualisierung:
+
+   * Freiformtabelle
+   * Kohortentabelle
+   * Linie
+
    <!--add screenshot-->
 
 1. Wählen Sie **[!UICONTROL Kommentar hinzufügen]** aus.
@@ -97,6 +108,8 @@ Die Kommentarfunktion in Analysis Workspace erleichtert die Zusammenarbeit mit a
 
 1. Geben Sie das @-Symbol ein und beginnen Sie dann mit der Eingabe des Vornamens, Nachnamens oder der E-Mail-Adresse der Person, die Sie einbeziehen möchten.
 
+   ![Tag-Benutzer](assets/comments-tag-user.png)
+
 1. Wählen Sie den Namen der Person aus, wenn er im Dropdown-Menü angezeigt wird.
 
 Beachten Sie Folgendes, wenn Sie das @-Symbol verwenden, um Personen in einen Kommentar einzuschließen:
@@ -122,6 +135,38 @@ Beachten Sie Folgendes, wenn Sie das @-Symbol verwenden, um Personen in einen Ko
 1. (Optional) Benachrichtigen Sie eine andere Person über Ihren Kommentar, indem Sie das @-Symbol gefolgt von ihrem Namen eingeben. Weitere Informationen zur Verwendung des @-Symbols, um andere zu benachrichtigen, finden Sie unter [Andere in einen Kommentar einbeziehen](#include-others-in-a-comment).
 
 1. Klicken Sie auf **[!UICONTROL Übermitteln]**.
+
+## Platzieren eines Abzeichens für einen vorhandenen Kommentar
+
+Wenn ein Kommentar im Kommentarbereich in der rechten Leiste verfügbar ist, aber noch kein Abzeichen im Projekt hat, können Sie das Abzeichen hinzufügen.
+
+1. Wenn das Projekt in Analysis Workspace geöffnet ist, wählen Sie das Symbol für den Kommentarbereich ![Symbol für den Kommentarbereich](assets/comments-area-icon.png) in der rechten Leiste von Analysis Workspace.
+
+1. Wählen Sie das Symbol Mehr ![comment-more-icon](assets/comment-more-icon.png) neben dem Kommentar aus, für den Sie ein Abzeichen platzieren möchten, und wählen Sie dann **[!UICONTROL Abzeichen platzieren]**.
+
+1. Wählen Sie den Bereich des Projekts aus, in dem Sie das Abzeichen für den vorhandenen Kommentar platzieren möchten.
+
+   Ein **Kommentar-**![Kommentar-Badge](assets/comment-indicator.png) wird im Bereich des von Ihnen ausgewählten Workspace-Projekts platziert. Der Kommentar wird auch oben im Kommentarbereich in der rechten Leiste angezeigt.
+
+   Weitere [ finden Sie unter ](#view-comment-badges-in-a-project) in einem Projekt anzeigen .
+
+So entfernen Sie ein Abzeichen:
+
+1. Wählen Sie das Abzeichen aus, das Sie entfernen möchten, und wählen Sie dann **[!UICONTROL Abzeichen entfernen]** aus.
+
+   Das Badge wird entfernt, der Kommentar ist jedoch weiterhin im Kommentarbereich in der rechten Leiste verfügbar.
+
+## Verschieben eines Abzeichens für einen vorhandenen Kommentar
+
+Sie können ein Kommentarzeichen verschieben, das bereits für einen vorhandenen Kommentar platziert ist.
+
+1. Wenn das Projekt in Analysis Workspace geöffnet ist, suchen Sie das Abzeichen für den Kommentar, den Sie verschieben möchten.
+
+1. Klicken Sie mit der rechten Maustaste auf das Abzeichen und wählen Sie **[!UICONTROL Platzierung verschieben]**.
+
+1. Wählen Sie den Bereich des Projekts aus, in dem Sie das Abzeichen platzieren möchten.
+
+<!-- add section about adding images to comments. will be available at GA. Include that "you can have a maximum of 5 images per comment, and each image can be up to 2 MB." -->
 
 ## Link zu einem Kommentar kopieren
 
@@ -182,36 +227,3 @@ So lösen Sie einen Kommentar auf:
 Standardmäßig werden aufgelöste Kommentare im Kommentarbereich ausgeblendet. So zeigen Sie aufgelöste Kommentare an:
 
 1. Wählen Sie im Kommentarbereich das Filtersymbol aus und heben Sie dann die Auswahl der Option **[!UICONTROL Aufgelöste Kommentare ausblenden]** auf.
-
-## Platzieren eines Abzeichens für einen vorhandenen Kommentar
-
-Wenn ein Kommentar im Kommentarbereich in der rechten Leiste verfügbar ist, aber noch kein Abzeichen im Projekt hat, können Sie das Abzeichen hinzufügen.
-
-1. Wenn das Projekt in Analysis Workspace geöffnet ist, wählen Sie das Symbol für den Kommentarbereich ![Symbol für den Kommentarbereich](assets/comments-area-icon.png) in der rechten Leiste von Analysis Workspace.
-
-1. Wählen Sie das Symbol Mehr ![comment-more-icon](assets/comment-more-icon.png) neben dem Kommentar aus, für den Sie ein Abzeichen platzieren möchten, und wählen Sie dann **[!UICONTROL Abzeichen platzieren]**.
-
-1. Wählen Sie den Bereich des Projekts aus, in dem Sie das Abzeichen für den vorhandenen Kommentar platzieren möchten.
-
-   Ein **Kommentar-**![Kommentar-Badge](assets/comment-indicator.png) wird im Bereich des von Ihnen ausgewählten Workspace-Projekts platziert. Der Kommentar wird auch oben im Kommentarbereich in der rechten Leiste angezeigt.
-
-   Weitere [ finden Sie unter ](#view-comment-badges-in-a-project) in einem Projekt anzeigen .
-
-So entfernen Sie ein Abzeichen:
-
-1. Wählen Sie das Abzeichen aus, das Sie entfernen möchten, und wählen Sie dann **[!UICONTROL Abzeichen entfernen]** aus.
-
-   Das Badge wird entfernt, der Kommentar ist jedoch weiterhin im Kommentarbereich in der rechten Leiste verfügbar.
-
-## Verschieben eines Abzeichens für einen vorhandenen Kommentar
-
-Sie können ein Kommentarzeichen verschieben, das bereits für einen vorhandenen Kommentar platziert ist.
-
-1. Wenn das Projekt in Analysis Workspace geöffnet ist, suchen Sie das Abzeichen für den Kommentar, den Sie verschieben möchten.
-
-1. Klicken Sie mit der rechten Maustaste auf das Abzeichen und wählen Sie **[!UICONTROL Platzierung verschieben]**.
-
-1. Wählen Sie den Bereich des Projekts aus, in dem Sie das Abzeichen platzieren möchten.
-
-<!-- add section about adding images to comments. will be available at GA. Include that "you can have a maximum of 5 images per comment, and each image can be up to 2 MB." -->
-
