@@ -5,7 +5,7 @@ title: Segmente in der Fallout-Analyse anwenden
 feature: Visualizations
 exl-id: 85b1024f-acd2-43b7-b4b1-b10961ba43e8
 role: User
-source-git-commit: 770320a0b16d26e0755203a3524b000db30cac82
+source-git-commit: b14bc43a0cdf4901c5df171a116943beb2124991
 workflow-type: tm+mt
 source-wordcount: '462'
 ht-degree: 38%
@@ -18,7 +18,7 @@ Sie können in Analysis Workspace Segmente aus einem Touchpoint erstellen, Segme
 
 >[!IMPORTANT]
 >
->Filter, die als Checkpoints in Fallout verwendet werden, müssen einen Container verwenden, der auf einer niedrigeren Ebene als der Gesamtkontext der Fallout-Visualisierung liegt. Bei einem personenbezogenen Kontext-Fallout müssen Segmente, die als Checkpoints verwendet werden, sitzungs- oder ereignisbasierte Segmente sein. Bei einem Sitzungskontext-Fallout müssen Segmente, die als Checkpoint verwendet werden, ereignisbasierte Segmente sein. Wenn Sie eine ungültige Kombination verwenden, beträgt der Fallout 100 %. Wenn Sie ein inkompatibles Segment als Touchpoint hinzufügen, wird eine Warnung an die Fallout-Visualisierung angezeigt. Bestimmte ungültige Segment-Container-Kombinationen führen zu ungültigen Fallout-Diagrammen, z. B.:
+>Segmente, die als Checkpoints in Fallout verwendet werden, müssen einen Container verwenden, der auf einer niedrigeren Ebene liegt als der Gesamtkontext der Fallout-Visualisierung. Bei einem personenbezogenen Kontext-Fallout müssen Segmente, die als Checkpoints verwendet werden, sitzungs- oder ereignisbasierte Segmente sein. Bei einem Sitzungskontext-Fallout müssen Segmente, die als Checkpoint verwendet werden, ereignisbasierte Segmente sein. Wenn Sie eine ungültige Kombination verwenden, beträgt der Fallout 100 %. Wenn Sie ein inkompatibles Segment als Touchpoint hinzufügen, wird eine Warnung an die Fallout-Visualisierung angezeigt. Bestimmte ungültige Segment-Container-Kombinationen führen zu ungültigen Fallout-Diagrammen, z. B.:
 >
 >* Verwenden eines personenbasierten Segments als Touchpoint innerhalb einer Fallout-Visualisierung des Personenkontexts
 >* Verwenden eines personenbasierten Segments als Touchpoint innerhalb einer Fallout-Visualisierung mit Sitzungskontext
@@ -30,9 +30,9 @@ Sie können in Analysis Workspace Segmente aus einem Touchpoint erstellen, Segme
 
    ![Das Dropdown-Menü „Touchpoint“ mit hervorgehobener Option „Segment aus Touchpoint erstellen“.](assets/fallout-createfilter.png)
 
-   Der [!UICONTROL Filter Builder] wird geöffnet und enthält vorab das vordefinierte sequenzielle Segment, das dem von Ihnen ausgewählten Touchpoint entspricht:
+   Der [!UICONTROL Segment Builder] wird geöffnet und enthält vorab das vordefinierte sequenzielle Segment, das dem von Ihnen ausgewählten Touchpoint entspricht:
 
-   ![Der Filtergenerator zeigt das vorausgefüllte und vordefinierte sequenzielle Segment an.](assets/fallout-definefilter.png)
+   ![Segment Builder zeigt das vorausgefüllte und vordefinierte sequenzielle Segment an.](assets/fallout-definefilter.png)
 
 1. Geben Sie einen Titel und eine Beschreibung für das Segment ein, und speichern Sie es.
 
@@ -50,8 +50,8 @@ Oder Sie erstellen einen AND-Touchpoint, indem Sie das Segment „USA-Benutzer�
 
 In der Fallout-Visualisierung können Sie eine unbegrenzte Anzahl von Segmenten miteinander vergleichen.
 
-1. Wählen Sie die zu vergleichenden Segmente aus dem Bedienfeld [!UICONTROL Filter] auf der linken Seite aus. Im Beispiel werden drei Segmente ausgewählt: *Flugdetails: Seitenversion A*, *Flugdetails: Seitenversion B* und *Flugdetails: Seitenversion C*.
-1. Sie ziehen die drei Segmente auf den Ablegebereich für Filter oben in der Visualisierung.
+1. Wählen Sie die zu vergleichenden Segmente aus dem Bedienfeld [!UICONTROL Segment] auf der linken Seite aus. Im Beispiel werden drei Segmente ausgewählt: *Flugdetails: Seitenversion A*, *Flugdetails: Seitenversion B* und *Flugdetails: Seitenversion C*.
+1. Ziehen Sie die drei Segmente in den Ablegebereich für Segmente am oberen Rand der Visualisierung.
 
 
 1. Optional: Sie können *Alle Besuche* als Standard-Container beibehalten oder den Container löschen.

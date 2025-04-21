@@ -4,7 +4,7 @@ title: Journey-Arbeitsfläche
 feature: Visualizations
 role: User
 exl-id: 53984934-6fba-4f15-aeeb-d91039260553
-source-git-commit: 770320a0b16d26e0755203a3524b000db30cac82
+source-git-commit: b14bc43a0cdf4901c5df171a116943beb2124991
 workflow-type: tm+mt
 source-wordcount: '6225'
 ht-degree: 1%
@@ -118,9 +118,9 @@ Sie können Knoten wie folgt erstellen: indem Sie Workspace-Komponenten von der 
    | Dimensionselement | Leerer Bereich der Arbeitsfläche | Der Knoten zeigt an, wo die Komponente abgelegt wurde, ohne Verbindung zu vorhandenen Knoten. |
    | Dimensionselement | Ein vorhandener Knoten | Die Komponente wird automatisch mit dem vorhandenen Knoten kombiniert. |
    | Dimensionselement | Ein Pfeil, der zwei vorhandene Knoten verbindet | Der Knoten wird zwischen den beiden vorhandenen Knoten angezeigt, auf denen die Komponente abgelegt wurde, und ist mit beiden vorhandenen Knoten verbunden. (Weitere Informationen finden [ unter &quot;](#connect-nodes)&quot;.)</p> |
-   | Filter | Leerer Bereich der Arbeitsfläche | Der Knoten zeigt an, wo die Komponente abgelegt wurde, ohne dass eine Verbindung zu anderen Knoten bestand.<p>Zu den Zahlen und Prozentsätzen, die auf dem Knoten angezeigt werden, gehört die Gesamtsumme der primären Metrik, segmentiert nach dem ausgewählten Segment.</p> <p>Wenn zum Beispiel Personen als primäre Metrik für den Journey ausgewählt ist, werden durch Hinzufügen eines Segments von Heute zu einem leeren Bereich der Arbeitsfläche alle Personen angezeigt, die heute ein Ereignis hatten.</p> |
-   | Filter | Ein vorhandener Knoten | Wendet das Segment auf den vorhandenen Knoten an. |
-   | Filter | Ein Pfeil, der zwei Knoten verbindet | Der Knoten wird zwischen den beiden vorhandenen Knoten angezeigt, auf denen die Komponente abgelegt wurde, und ist mit beiden vorhandenen Knoten verbunden. (Weitere Informationen finden [ unter &quot;](#connect-nodes)&quot;.)</p><p>Wendet das Segment auf den Punkt auf dem Pfad an, auf dem die Komponente abgelegt wurde.</p> |
+   | Segment | Leerer Bereich der Arbeitsfläche | Der Knoten zeigt an, wo die Komponente abgelegt wurde, ohne dass eine Verbindung zu anderen Knoten bestand.<p>Zu den Zahlen und Prozentsätzen, die auf dem Knoten angezeigt werden, gehört die Gesamtsumme der primären Metrik, segmentiert nach dem ausgewählten Segment.</p> <p>Wenn zum Beispiel Personen als primäre Metrik für den Journey ausgewählt ist, werden durch Hinzufügen eines Segments von Heute zu einem leeren Bereich der Arbeitsfläche alle Personen angezeigt, die heute ein Ereignis hatten.</p> |
+   | Segment | Ein vorhandener Knoten | Wendet das Segment auf den vorhandenen Knoten an. |
+   | Segment | Ein Pfeil, der zwei Knoten verbindet | Der Knoten wird zwischen den beiden vorhandenen Knoten angezeigt, auf denen die Komponente abgelegt wurde, und ist mit beiden vorhandenen Knoten verbunden. (Weitere Informationen finden [ unter &quot;](#connect-nodes)&quot;.)</p><p>Wendet das Segment auf den Punkt auf dem Pfad an, auf dem die Komponente abgelegt wurde.</p> |
    | Datumsbereich | Leerer Bereich der Arbeitsfläche | Der Knoten zeigt an, wo die Komponente abgelegt wurde, ohne Verbindung zu anderen Knoten.<p>Zu den auf dem Knoten angezeigten Zahlen und Prozentsätzen gehört die Gesamtanzahl der primären Metrik, segmentiert nach dem ausgewählten Datumsbereich.</p> <p>Wenn beispielsweise Personen als primäre Metrik für den Journey ausgewählt ist, werden durch Hinzufügen eines Datumsbereichs von „Diesen Monat“ zu einem leeren Bereich der Arbeitsfläche alle Personen angezeigt, die im aktuellen Monat ein Ereignis hatten.</p> |
    | Datumsbereich | Ein vorhandener Knoten | Wendet den Datumsbereich auf den vorhandenen Knoten an. |
    | Datumsbereich | Ein Pfeil, der zwei Knoten verbindet | Der Knoten wird zwischen den beiden vorhandenen Knoten angezeigt, auf denen die Komponente abgelegt wurde, und ist mit beiden vorhandenen Knoten verbunden. (Weitere Informationen finden [ unter &quot;](#connect-nodes)&quot;.)</p><p>Wendet den Datumsbereich auf den Punkt des Pfads an, an dem die Komponente abgelegt wurde.</p> |
@@ -274,10 +274,10 @@ Die Logik, die auf Knoten angewendet wird, wenn sie kombiniert werden, untersche
 | Metrik + Metrik | Verbunden mit ODER |
 | Dimension-Element + Dimension-Element (aus derselben übergeordneten Dimension) | Verbunden mit ODER |
 | Dimension-Element + Dimension-Element (aus verschiedenen übergeordneten Dimensionen) | Verbunden mit UND |
-| Filter + Filter | Verbunden mit UND |
-| Dimension + Metrik, Datumsbereich oder Filter | Verbunden mit UND |
-| Datumsbereich + Metrik, Filter oder Dimension | Verbunden mit UND |
-| Filter + Metrik, Datumsbereich oder Dimension | Verbunden mit UND |
+| Segment + Segment | Verbunden mit UND |
+| Dimension + Metrik, Datumsbereich oder Segment | Verbunden mit UND |
+| Datumsbereich + Metrik, Segment oder Dimension | Verbunden mit UND |
+| Segment + Metrik, Datumsbereich oder Dimension | Verbunden mit UND |
 
 ### Knoten verbinden
 
@@ -546,7 +546,7 @@ So zeigen Sie Trenddaten an:
 
 Sie können ein neues Segment auf der Grundlage eines Knotens oder Pfeils innerhalb eines Journey erstellen. Nachdem das Segment erstellt wurde, können Sie es an einer beliebigen Stelle in Analysis Workspace verwenden.
 
-Auf der Journey-Arbeitsfläche erstellte Filter verwenden [sequenzielle Segmentierung](/help/components/filters/seg-sequential-build.md). Das bedeutet, dass das Segment den THEN-Operator verwendet, um die Ereignissequenz (die Journey), durch die Personen geströmt sind, zu verknüpfen, die zum ausgewählten Knoten oder Pfeil geführt haben. Alle Ereignisse, die mit dem ausgewählten Knoten oder Pfeil übereinstimmen, sind im Segment enthalten.
+Segmente, die auf der Journey-Arbeitsfläche erstellt wurden, verwenden [sequenzielle Segmentierung](/help/components/filters/seg-sequential-build.md). Das bedeutet, dass das Segment den THEN-Operator verwendet, um die Ereignissequenz (die Journey), durch die Personen geströmt sind, zu verknüpfen, die zum ausgewählten Knoten oder Pfeil geführt haben. Alle Ereignisse, die mit dem ausgewählten Knoten oder Pfeil übereinstimmen, sind im Segment enthalten.
 
 Wenn Sie ein Segment basierend auf einem Knoten erstellen, in den mehrere Pfade fließen, sind alle Pfade im Segment enthalten. Separate Pfade werden mit dem OR-Operator verbunden.
 
@@ -556,9 +556,9 @@ So erstellen Sie ein Segment:
 
 1. Wählen Sie [!UICONTROL **Segment aus Knoten erstellen**] oder [!UICONTROL **Segment aus Pfeil erstellen**].
 
-   Der Filter-Builder wird angezeigt. Im Abschnitt [!UICONTROL **Definition**] wird die Segmentdefinition basierend auf dem ausgewählten Knoten oder Pfeil und seinem Kontext innerhalb der Journey erstellt.
+   Der Segment Builder wird angezeigt. Im Abschnitt [!UICONTROL **Definition**] wird die Segmentdefinition basierend auf dem ausgewählten Knoten oder Pfeil und seinem Kontext innerhalb der Journey erstellt.
 
-1. Geben Sie einen Titel für das Segment an und nehmen Sie andere Änderungen vor. Weitere Informationen zum Erstellen eines Segments finden Sie unter [Filter Builder](/help/components/filters/filter-builder.md).
+1. Geben Sie einen Titel für das Segment an und nehmen Sie andere Änderungen vor. Weitere Informationen zum Erstellen eines Segments finden Sie unter [Segment Builder](/help/components/filters/filter-builder.md).
 
 1. Wählen Sie [!UICONTROL **Speichern**] aus, um das Segment zu speichern.
 

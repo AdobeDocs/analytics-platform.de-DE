@@ -4,7 +4,7 @@ title: Übersicht über Bedienfelder
 feature: Panels
 exl-id: be3e34a0-06c1-4200-b965-96084c2912fd
 role: User
-source-git-commit: 305ae20c48ddf0f2032b8f92a016eb92427016ed
+source-git-commit: b14bc43a0cdf4901c5df171a116943beb2124991
 workflow-type: tm+mt
 source-wordcount: '2129'
 ht-degree: 97%
@@ -136,26 +136,26 @@ Wählen Sie **[!UICONTROL Auf alle Panels anwenden]** aus, um den Datumsbereich 
 
 Mithilfe des Ablegebereichs eines Bedienfelds können Sie Segment- und Dropdown-Segmente auf alle Tabellen und Visualisierungen innerhalb eines Bedienfelds anwenden. Sie können ein oder mehrere Segmente auf ein Bedienfeld anwenden.
 
-### Filter
+### Segmente 
 
-Ziehen Sie beliebige Segmente per Drag-and-Drop aus dem linken Bedienfeld in den Ablagebereich des Bedienfelds, um das Bedienfeld zu segmentieren.  Wiederholen Sie diesen Vorgang, um dem Bedienfeld weitere Segmente hinzuzufügen. Filter werden oben im Bedienfeld nebeneinander angezeigt.
+Ziehen Sie beliebige Segmente per Drag-and-Drop aus dem linken Bedienfeld in den Ablagebereich des Bedienfelds, um das Bedienfeld zu segmentieren.  Wiederholen Sie diesen Vorgang, um dem Bedienfeld weitere Segmente hinzuzufügen. Segmente werden oben im Bedienfeld nebeneinander angezeigt.
 
 ![Das linke Bedienfeld mit verfügbaren Metriken und der in den Ablegebereich des Bedienfelds gezogenen Metrik für mobile Kundschaft.](assets/segment-filter.png)
 
 #### Schnellsegmente
 
-Komponenten, die keine Segmente sind, können auch direkt in den Ablagebereich gezogen werden, um Schnellsegmente zu erstellen, wodurch Sie sich das mühsame Aufrufen des [Segment Builders](/help/components/filters/filter-builder.md) ersparen können. Auf diese Weise erstellte Filter werden automatisch als Segmente auf Ereignisebene definiert. Diese Definition kann schnell geändert werden, indem Sie neben dem Segmentnamen die Option ![Bearbeiten](/help/assets/icons/Edit.svg) auswählen.
+Komponenten, die keine Segmente sind, können auch direkt in den Ablagebereich gezogen werden, um Schnellsegmente zu erstellen, wodurch Sie sich das mühsame Aufrufen des [Segment Builders](/help/components/filters/filter-builder.md) ersparen können. Die auf diese Weise erstellten Segmente werden automatisch als Segmente auf Ereignisebene definiert. Diese Definition kann schnell geändert werden, indem Sie neben dem Segmentnamen die Option ![Bearbeiten](/help/assets/icons/Edit.svg) auswählen.
 
 
 Weitere Informationen finden Sie unter [Schnellsegmente](/help/components/filters/quick-filters.md).
 
 ![Ad-hoc-Segmente, die veröffentlicht und in der Ablagefläche abgelegt werden](assets/adhoc-segment-filter.png)
 
-### Dropdown-Filter
+### Dropdown-Segmente
 
 >[!BEGINSHADEBOX]
 
-Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Dropdown-Filter](https://video.tv.adobe.com/v/23877?quality=12&learn=on){target="_blank"} finden Sie ein Demovideo.
+Siehe ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Dropdown-Segmente](https://video.tv.adobe.com/v/23877?quality=12&learn=on){target="_blank"} für ein Demovideo.
 
 {{videoaa}}
 

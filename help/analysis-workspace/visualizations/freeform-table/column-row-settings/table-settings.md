@@ -4,10 +4,10 @@ title: Zeileneinstellungen
 feature: Visualizations
 exl-id: a9438d83-498d-4b22-9e5e-c357bd3a2680
 role: User
-source-git-commit: 770320a0b16d26e0755203a3524b000db30cac82
+source-git-commit: b14bc43a0cdf4901c5df171a116943beb2124991
 workflow-type: tm+mt
 source-wordcount: '1046'
-ht-degree: 93%
+ht-degree: 92%
 
 ---
 
@@ -66,12 +66,12 @@ Die folgenden zusätzlichen Kontextmenüoptionen sind verfügbar, wenn ein oder 
 | **[!UICONTROL Hyperlink erstellen]** | Zum Erstellen eines Hyperlinks für das Element. Siehe [Hyperlinks für Dimensionen in einer Freiformtabelle](../freeform-table-hyperlinks.md) |
 | **[!UICONTROL Hyperlink bearbeiten]** | Zum Bearbeiten eines Hyperlinks für das Element. Siehe [Hyperlinks für Dimensionen in einer Freiformtabelle](../freeform-table-hyperlinks.md) |
 | **[!UICONTROL Hyperlink entfernen]** | Zum Entfernen eines Hyperlinks für das Element. Siehe [Hyperlinks für Dimensionen in einer Freiformtabelle](../freeform-table-hyperlinks.md) |
-| **[!UICONTROL Aufschlüsselung]** | Zum Aufschlüsseln des Dimensionselements. Treffen Sie eine Auswahl aus der Liste der **[!UICONTROL Dimensionen]**, **[!UICONTROL Metriken]**, **[!UICONTROL Filter]** oder **[!UICONTROL Datumsbereiche]** aus. Suchen Sie alternativ mit *Suchen* nach einer Komponente. |
+| **[!UICONTROL Aufschlüsselung]** | Zum Aufschlüsseln des Dimensionselements. Wählen Sie aus der Liste **[!UICONTROL Dimensionen]**, **[!UICONTROL Metriken]**, **[!UICONTROL Segmente]** oder **[!UICONTROL Datumsbereiche]**. Suchen Sie alternativ mit *Suchen* nach einer Komponente. |
 | **[!UICONTROL Auswahl löschen]** | Zum Löschen der ausgewählten Zeilen (Elemente). |
 | **[!UICONTROL Trend-Auswahl]** | Zum Erstellen einer Trend-Liniendiagramm-Visualisierung für die Auswahl. |
 | **[!UICONTROL Nur ausgewählte Zeilen anzeigen]** | Zum Anzeigen von nur den ausgewählten Zeilen in der Visualisierung. |
 | **[!UICONTROL Alle Zeilen anzeigen]** | Zum Anzeigen aller Zeilen in der Visualisierung. |
-| **[!UICONTROL Segment aus Auswahl erstellen]** | Öffnen Sie den **[!UICONTROL Filter-Builder]**, um ein Segment aus der Auswahl zu erstellen. |
+| **[!UICONTROL Segment aus Auswahl erstellen]** | Öffnen Sie den **[!UICONTROL Segment Builder]**, um ein Segment aus der Auswahl zu erstellen. |
 | **[!UICONTROL Zielgruppe aus Auswahl erstellen]** | Öffnen Sie das Dialogfeld **[!UICONTROL Zielgruppe erstellen]**, um eine Zielgruppe aus der Auswahl zu erstellen. |
 
 Die folgenden Kontextmenüoptionen sind bei Auswahl der Kopfzeile einer Metrikspalte verfügbar.
@@ -85,7 +85,7 @@ Die folgenden Kontextmenüoptionen sind bei Auswahl der Kopfzeile einer Metriksp
 | **[!UICONTROL Attributionsmodell vergleichen]** | Geben Sie ein neues Attributionsmodell an und vergleichen Sie es mit dem Attributionsmodell für die ausgewählte Spalte. Es wird eine neue Spalte mit den neuen Attributionsmodell-Metriken hinzugefügt. Außerdem wird eine Spalte „Prozentänderung“ zum Vergleich hinzugefügt. |
 | **[!UICONTROL Spaltenbreiten zurücksetzen]** | Zum Zurücksetzen der Spaltenbreiten auf die Standardbreite. |
 | **[!UICONTROL Anmerkung aus Auswahl erstellen]** | Zum Öffnen der **[!UICONTROL Anmerkungsdetails]**, um eine Anmerkung hinzuzufügen. |
-| **[!UICONTROL Segment aus Auswahl erstellen]** | Öffnen Sie den **[!UICONTROL Filter-Builder]**, um ein Segment aus der Auswahl zu erstellen. |
+| **[!UICONTROL Segment aus Auswahl erstellen]** | Öffnen Sie den **[!UICONTROL Segment Builder]**, um ein Segment aus der Auswahl zu erstellen. |
 | **[!UICONTROL Zielgruppe aus Auswahl erstellen]** | Öffnen Sie das Dialogfeld **[!UICONTROL Zielgruppe erstellen]**, um eine Zielgruppe aus der Auswahl zu erstellen. |
 
 ## Zeilenhöhe ändern

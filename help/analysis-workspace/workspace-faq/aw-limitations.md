@@ -4,10 +4,10 @@ title: Bekannte Einschränkungen in Analysis Workspace
 feature: FAQ
 exl-id: 334cfe24-a4b2-43be-94df-5a2df90612f0
 role: User
-source-git-commit: 770320a0b16d26e0755203a3524b000db30cac82
+source-git-commit: b14bc43a0cdf4901c5df171a116943beb2124991
 workflow-type: tm+mt
-source-wordcount: '314'
-ht-degree: 79%
+source-wordcount: '313'
+ht-degree: 73%
 
 ---
 
@@ -18,7 +18,7 @@ Im Folgenden finden Sie eine Liste der bekannten Einschränkungen in Analysis Wo
 ## Tabellen
 
 * Datumsvergleichsspalten können nicht hinzugefügt werden, wenn Datumsbereiche oder Metriken als Tabellenzeilen verwendet werden.
-* „Metrik aus Auswahl erstellen“ ist deaktiviert, wenn Filter als Zeilen einer Tabelle verwendet werden. Darüber hinaus sollte die Option „Metrik aus Auswahl erstellen“ nicht auf datumsorientierte Spalten angewendet werden.
+* „Metrik aus Auswahl erstellen“ ist deaktiviert, wenn Segmente als Zeilen einer Tabelle verwendet werden. Darüber hinaus sollte die Option „Metrik aus Auswahl erstellen“ nicht auf datumsorientierte Spalten angewendet werden.
 * Bedingte Formatierung für Aufschlüsselungszeilen kann keine benutzerdefinierten Bereiche verwenden.
 * Tabellengesamtzeilen können nicht als Trend-Ansicht dargestellt werden, wenn die Einstellung für die Berechnung der Summen durch Addition der Zeilenwerte angewendet wird (üblicherweise bei statischen Zeilenelementen).
 
@@ -28,10 +28,10 @@ Im Folgenden finden Sie eine Liste der bekannten Einschränkungen in Analysis Wo
 * [!UICONTROL Fluss]: Einstiegs-/Ausstiegsdimensionen, z. B. [!UICONTROL Entrypage], können nicht im Fluss verwendet werden.
 * [!UICONTROL Kohorte]: Nur Ganzzahlen können als Kohortenkriterien verwendet werden.
 
-## Filter
+## Segmente
 
 * Bestimmte Metriken und Dimensionen können nicht segmentiert werden, wie [!UICONTROL Ereignisse], [!UICONTROL Personen] usw.
-* Ad-hoc-Segmente, die in der [Ablagefläche des Bedienfelds](/help/analysis-workspace/c-panels/panels.md) erstellt werden, sind eine Art von Schnellsegmenten. Sie werden nicht im linken Bedienfeld von Workspace oder im Filterkomponenten-Manager angezeigt, es sei denn, sie werden veröffentlicht. Weitere Informationen finden Sie unter [Schnellsegmente](/help/components/filters/quick-filters.md).
+* Ad-hoc-Segmente, die in der [Ablagefläche des Bedienfelds](/help/analysis-workspace/c-panels/panels.md) erstellt werden, sind eine Art von Schnellsegmenten. Sie werden nicht im linken Bereich von Workspace oder im Segment-Manager angezeigt, es sei denn, sie werden veröffentlicht. Weitere Informationen finden Sie unter [Schnellsegmente](/help/components/filters/quick-filters.md).
 
 ## Berechnete Metriken
 

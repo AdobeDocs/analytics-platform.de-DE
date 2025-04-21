@@ -4,10 +4,10 @@ title: Zusammenfassung einer Schlüsselmetrik
 feature: Visualizations
 exl-id: ef606c53-b370-419a-904b-573ee6d70a8d
 role: User
-source-git-commit: 0101986bb86c49776a044f754d912dc1bcb9422c
+source-git-commit: b14bc43a0cdf4901c5df171a116943beb2124991
 workflow-type: tm+mt
 source-wordcount: '959'
-ht-degree: 98%
+ht-degree: 96%
 
 ---
 
@@ -52,7 +52,7 @@ Diese Visualisierung eignet sich für eine Vielzahl gängiger Anwendungsfälle, 
 
 1. Fügen Sie eine Visualisierung ![KeyMetrics](/help/assets/icons/KeyMetrics.svg) **[!UICONTROL Zusammenfassung der Schlüsselmetriken]** hinzu. Siehe [Hinzufügen einer Visualisierung zu einem Panel](freeform-analysis-visualizations.md#add-visualizations-to-a-panel).
 
-1. Konfigurieren Sie die Visualisierung, indem Sie eine **[!UICONTROL Metrik]**, einen **[!UICONTROL primären Datumsbereich]**, einen **[!UICONTROL Vergleichs-Datumsbereich]** (optional) und einen **[!UICONTROL Filter]** (optional) auswählen:
+1. Konfigurieren Sie die Visualisierung, indem Sie eine **[!UICONTROL Metrik]** einen **[!UICONTROL Primären]**, einen **[!UICONTROL Vergleichsdatumsbereich]** (optional) und einen **[!UICONTROL Segment]** (optional) auswählen:
 
    ![Konfiguration der Schlüsselmetrik mit den Optionen für die Metrik, den primären Datumsbereich, den Vergleichs-Datumsbereich und das Segment.](assets/key-metrics-config.png)
 
@@ -61,7 +61,7 @@ Diese Visualisierung eignet sich für eine Vielzahl gängiger Anwendungsfälle, 
    | **[!UICONTROL Metrik]** | Wählen Sie die Metrik aus, die Sie überprüfen möchten. Alle Metriken werden unterstützt. |
    | **[!UICONTROL Primärer Datumsbereich]** | Der aktuelle Datumsbereich für die Freiformtabelle.<p>Wählen Sie aus allen verfügbaren Datumsbereichen in Ihrer Datenansicht.</p> <p>Wählen Sie [!UICONTROL **Datumsbereich der Panels**] aus, wenn Sie denselben Datumsbereich verwenden möchten, der in dem Panel verwendet wird, in dem sich die Visualisierung befindet.</p> |
    | **[!UICONTROL Vergleichsdatumsbereich]** | Der Datumsbereich, den Sie mit dem primären Datumsbereich vergleichen möchten. |
-   | **[!UICONTROL Filter (optional)]** | Jedes Segment, an dem Sie für diese Zusammenfassung interessiert sind. |
+   | **[!UICONTROL Segment (optional)]** | Jedes Segment, an dem Sie für diese Zusammenfassung interessiert sind. |
 
    {style="table-layout:auto"}
 

@@ -4,10 +4,10 @@ title: Konfigurieren einer Flussvisualisierung
 feature: Visualizations
 exl-id: 7055cbc9-19b3-40f0-b8d4-52d241224827
 role: User
-source-git-commit: 770320a0b16d26e0755203a3524b000db30cac82
+source-git-commit: b14bc43a0cdf4901c5df171a116943beb2124991
 workflow-type: tm+mt
 source-wordcount: '1484'
-ht-degree: 88%
+ht-degree: 87%
 
 ---
 
@@ -118,7 +118,7 @@ Verwenden Sie ein Kontextmenü auf einem beliebigen Knoten in der Flussvisualisi
 |--- |--- |
 | **[!UICONTROL Auf diesen Knoten fokussieren]** | Wechselt den Fokus auf den ausgewählten Knoten. Der Fokusknoten wird in der Mitte des Flussdiagramms angezeigt. |
 | **[!UICONTROL Neu starten]** | Bringt Sie wieder zurück in den Freiform-Diagramm-Builder, in dem Sie ein neues Flussdiagramm erstellen können. |
-| **[!UICONTROL Erstellen eines Filters für diesen Pfad]** | Erstellen Sie einen Filter. Mit dieser Auswahl gelangen Sie in den Filter-Builder, in dem Sie den neuen Filter konfigurieren können. |
+| **[!UICONTROL Erstellen Sie ein Segment für diesen Pfad]** | Erstellen eines Segments. Diese Auswahl führt Sie zum Segment Builder, in dem Sie das neue Segment konfigurieren können. |
 | **[!UICONTROL Aufschlüsselung]** | Hiermit können Sie den Knoten nach verfügbaren Dimensionen, Metriken oder Zeiten aufschlüsseln. |
 | **[!UICONTROL Spalte filtern]** | Es werden dieselben Filteroptionen angezeigt, die auch in der Freiformtabelle verfügbar sind. Weitere Informationen zu den verfügbaren Optionen finden Sie im Abschnitt „Anwenden eines einfachen oder erweiterten Filters auf eine Tabelle“ in [Filtern und Sortieren von Tabellen](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md). |
 | **[!UICONTROL Element ausschließen]** oder **[!UICONTROL Ausgeschlossene Elemente wiederherstellen]** | Entfernt einen bestimmten Knoten aus der Spalte und erstellt daraus automatisch einen Filter oben in der Spalte. Um das ausgeschlossene Element wiederherzustellen, wählen Sie im Kontextmenü **[!UICONTROL Ausgeschlossenes Element wiederherstellen]** aus. Sie können das Segment auch oben in der Spalte öffnen und die Box mit dem Element entfernen, das Sie gerade ausgeschlossen haben. |

@@ -4,7 +4,7 @@ title: Verwenden von Vorlagen
 feature: Workspace Basics
 role: User, Admin
 exl-id: d61f215d-9089-4014-9c5a-97f5d7134f34
-source-git-commit: 004804eace69ec72f824603ec0d7b82470b19041
+source-git-commit: b14bc43a0cdf4901c5df171a116943beb2124991
 workflow-type: tm+mt
 source-wordcount: '19662'
 ht-degree: 99%
@@ -67,7 +67,7 @@ Im Folgenden wird beschrieben, wie Sie über die Registerkarte [!UICONTROL Vorla
    >
    >Weitere Informationen zu Kontext-Labels finden Sie unter [Komponenteneinstellungen](/help/data-views/component-settings/overview.md).
 
-   1. Wählen Sie das Filtersymbol aus. 
+   1. Wählen Sie das Segmentsymbol aus.
 
    1. Wählen Sie **[!UICONTROL Nicht einsatzbereit]** aus, um Vorlagen anzuzeigen, für die zusätzliche Komponenten erforderlich sind.
 
@@ -106,7 +106,7 @@ So passen Sie eine Vorlage an und speichern sie als Projekt:
 1. Führen Sie einen der folgenden Schritte aus:
 
    * Zeigen Sie die Vorlage an.
-   * Sie können einen oder mehrere Filter oben in den Ablagebereich „Filter“ ziehen. Ziehen Sie beispielsweise den Filter [!UICONTROL **Mobile-Kunden**] und sehen Sie sich die Ergebnisse an.
+   * Sie können ein oder mehrere Segmente oben in den Ablagebereich ziehen. Ziehen Sie beispielsweise das Segment [!UICONTROL **Mobile-Kunden**] und sehen Sie sich die Ergebnisse an.
    * Ändern Sie den Datumsbereich, indem Sie zum Kalender oben rechts gehen.
    * Fügen Sie Dimensionsaufschlüsselungen hinzu, ziehen Sie andere Metriken hinzu und passen Sie die Vorlage allgemein entsprechend Ihren Anforderungen an.
 

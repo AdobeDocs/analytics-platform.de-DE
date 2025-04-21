@@ -5,10 +5,10 @@ title: Exportieren von Customer Journey Analytics-Berichten in die Cloud
 feature: Curate and Share
 exl-id: 072eadcc-43ff-42e3-86ee-82062fa02eba
 role: User
-source-git-commit: a7bd67894b02174d980a730086f89df97b524356
+source-git-commit: b14bc43a0cdf4901c5df171a116943beb2124991
 workflow-type: tm+mt
 source-wordcount: '2285'
-ht-degree: 99%
+ht-degree: 98%
 
 ---
 
@@ -183,7 +183,7 @@ Die folgenden Funktionen werden nicht unterstützt und automatisch aus vollstän
 Die folgenden Komponenten werden nicht unterstützt und Analysis Workspace fordert Sie auf, sie aus Ihrer Tabelle zu entfernen, wenn Sie einen vollständigen Tabellenexport durchführen:
 
 * Berechnete Metriken, die grundlegende oder erweiterte Funktionen in der Metrikdefinition verwenden (weitere Informationen finden Sie unter [Grundlegende Funktionen](/help/components/calc-metrics/cm-functions.md) und [Erweiterte Funktionen](/help/components/calc-metrics/cm-adv-functions.md))
-* Komponenten, die von einer bzw. einem Admin eingeschränkt wurden, können nicht exportiert werden (weitere Informationen finden Sie im Abschnitt *Filtern nach Data Governance-Richtlinien in Datenansichten* unter [Beschriftungen und Richtlinien](/help/data-views/data-governance.md))
+* Komponenten, die von einem Administrator am Export gehindert wurden (weitere Informationen finden Sie im Abschnitt *Segment zu Data Governance* Richtlinien in [Kennzeichnungen und ](/help/data-views/data-governance.md))
 * Jede Dimension, die alle der folgenden Kriterien erfüllt:
    * Wurde aus einem Feld erstellt, das Teil eines [Arrays von Objekten](/help/use-cases/object-arrays.md) ist (ähnlich wie Variablen mit mehreren Werten in Adobe Analytics)
    * Hat [Persistenz aktiviert](/help/data-views/component-settings/persistence.md)
@@ -197,7 +197,7 @@ Die folgenden Komponenten werden nicht unterstützt und Analysis Workspace forde
    * Berechnete Metriken
    * Metriken
    * Datumsbereiche
-   * Filter
+   * Segmente
 
 ### Attributionsverhalten
 
