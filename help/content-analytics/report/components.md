@@ -1,11 +1,11 @@
 ---
 title: Inhaltsanalysekomponenten
-description: Details zu den spezifischen Inhaltsanalysekomponenten, wie Dimensionen, (berechnete) Metriken und abgeleitete Felder
+description: Details zu den spezifischen Content Analytics-Komponenten, wie Dimensionen, (berechnete) Metriken und abgeleitete Felder
 solution: Customer Journey Analytics
 feature: Content Analytics
 role: User
 exl-id: 79bf235a-6f6e-4b04-bcd8-1ff884536648
-source-git-commit: 0731eadd403ecb428d36492b83351aa0e696b41f
+source-git-commit: 6d23203468032510446711ff5a874fd149531a9a
 workflow-type: tm+mt
 source-wordcount: '910'
 ht-degree: 22%
@@ -13,8 +13,6 @@ ht-degree: 22%
 ---
 
 # Inhaltsanalysekomponenten
-
-{{release-limited-testing}}
 
 Content Analytics fügt die folgenden Komponentenkategorien (Dimensionen, (berechnete) Metriken, abgeleitete Felder) zu den bereits verfügbaren Komponenten in Customer Journey Analytics hinzu:
 
@@ -24,7 +22,7 @@ Content Analytics fügt die folgenden Komponentenkategorien (Dimensionen, (berec
 * [Asset-Metadaten](#asset-metadata)
 * [Asset-Attribute](#asset-attributes)
 * [Assets-Ereignisse](#asset-events)
-* [Berechnete Metriken ](#calculated-metrics)
+* [Berechnete Metriken](#calculated-metrics)
 
 In den folgenden Tabellen ![KI generiert](/help/assets/icons/AI.svg) ein von KI/ML generiertes Attribut/Wert-Paar an.
 
@@ -137,7 +135,7 @@ In den folgenden Tabellen ![KI generiert](/help/assets/icons/AI.svg) ein von KI/
 {style="table-layout:fixed"}
 -->
 
-## Berechnete Metriken 
+## Berechnete Metriken
 
 | Anrede/Titel | Beschreibung | Typ |
 |---|---|---|

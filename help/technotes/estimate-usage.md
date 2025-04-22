@@ -4,10 +4,10 @@ description: Erläutert die Verwaltung der Verwendung von Customer Journey Analy
 role: Admin
 feature: Basics
 exl-id: 7a5d1173-8d78-4360-a97a-1ab0a60af135
-source-git-commit: 5311106f486a30dbc7f06b3ef60dc7e666d2fe03
+source-git-commit: 6d23203468032510446711ff5a874fd149531a9a
 workflow-type: tm+mt
-source-wordcount: '256'
-ht-degree: 42%
+source-wordcount: '258'
+ht-degree: 37%
 
 ---
 
@@ -25,7 +25,7 @@ Der Hauptvorteil besteht darin, dass Sie nur Daten speichern oder Berichte dazu 
 
 Wenn Sie die Standardeinstellung unverändert, d. h. deaktiviert, lassen, wird die Aufbewahrungsdauer durch die Datenaufbewahrungseinstellung von Adobe Experience Platform ersetzt. Wenn Sie in Experience Platform Daten von einem Zeitraum von 25 Monaten haben, erhalten Customer Journey Analytics durch Aufstockung Daten von einem Zeitraum von 25 Monaten. Wenn Sie in Platform 10 dieser Monate löschen, werden in Customer Journey Analytics die verbleibenden 15 Monate beibehalten.
 
-Die Datenaufbewahrung basiert auf Zeitstempeln für Ereignis-Datensätze und gilt nur für Ereignis-Datensätze. Für Profil- oder Lookup-Datensätze gibt es keine rollierenden Datenfenstereinstellungen, da keine entsprechenden Zeitstempel vorhanden sind. Wenn Ihre Verbindung Profil- oder Lookup-Datensätze enthält, werden die Daten basierend auf Ihren Datenaufbewahrungseinstellungen für die Ereignis-Datensatz-Zeitstempel in Customer Journey Analytics beibehalten, da sie mit Ereignis-Datensätzen verbunden sind.
+Die Datenaufbewahrung basiert auf Zeitstempeln und gilt nur für Ereignis-Datensätze und Zusammenfassungsdaten-Datensätze. Für Profil- oder Lookup-Datensätze gibt es keine rollierenden Datenfenstereinstellungen, da keine entsprechenden Zeitstempel vorhanden sind. Wenn Ihre Verbindung Profil- oder Lookup-Datensätze enthält, werden die Daten basierend auf Ihren Datenaufbewahrungseinstellungen für die Ereignis-Datensatz-Zeitstempel in Customer Journey Analytics beibehalten, da sie mit Ereignis-Datensätzen verbunden sind.
 
 
 >[!MORELIKETHIS]
