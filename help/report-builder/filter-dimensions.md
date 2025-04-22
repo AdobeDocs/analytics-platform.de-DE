@@ -6,12 +6,13 @@ feature: Report Builder
 type: Documentation
 exl-id: 5730d5f3-de76-429f-81f5-ebe6b62a9480
 solution: Customer Journey Analytics
-source-git-commit: 0d87f28aa4f8c1b16f46227abad7d374800dcb66
+source-git-commit: 56ac1c5a6d13a972aed90cab79cbc5f794cedc9e
 workflow-type: tm+mt
-source-wordcount: '1017'
-ht-degree: 88%
+source-wordcount: '1013'
+ht-degree: 71%
 
 ---
+
 
 # Dimensionen filtern
 
@@ -21,47 +22,58 @@ So ändern Sie die für jede Dimension zurückgegebenen Dimensionselemente
 
 1. Wählen Sie einen Datenblock aus und klicken Sie im Bedienfeld „Befehle“ auf „Datenblock bearbeiten“.
 
-1. Klicken Sie **[!UICONTROL Weiter]**, um die Registerkarte Dimensionen anzuzeigen.
+1. Wählen Sie **[!UICONTROL Weiter]**, um die Registerkarte „Dimensionen“ anzuzeigen.
 
-1. Klicken Sie auf das Symbol **...** neben einem Komponentennamen in der Tabelle.
+1. Wählen Sie ![MehrKlein](/help/assets/icons/MoreSmall.svg) neben einem Komponentennamen in der Tabelle aus.
 
    ![Optionen für das Symbol mit den Auslassungspunkten.](./assets/image27.png)
 
-1. Wählen Sie **Filterdimension** im Popup-Menü aus, um den Bereich **Filterdimension** anzuzeigen.
+1. Wählen **Filterdimension** im Popup-Menü aus, um den Bereich **Filterdimension** anzuzeigen.
 
-1. Wählen Sie **Am beliebtesten** oder **Spezifisch**.
+1. Wählen Sie **Am beliebtesten** oder **Spezifisch**.
 
    ![Die im Bereich „Filterdimension“ ausgewählte spezifische Option.](./assets/image28.png)
 
 1. Wählen Sie je nach ausgewähltem Filtertyp die gewünschten Optionen aus.
 
-1. Klicken Sie auf **Anwenden**, um den Filter hinzuzufügen.
+1. Klicken Sie **Anwenden**, um den Filter hinzuzufügen.
 
    Report Builder zeigt eine Benachrichtigung zur Bestätigung des hinzugefügten Filters an.
 
-Um angewendete Filter anzuzeigen, bewegen Sie den Mauszeiger über eine Dimension. Dimensionen mit angewendeten Filtern zeigen rechts neben dem Namen der Dimension ein Filtersymbol an.
+Um angewendete Filter anzuzeigen, bewegen Sie den Mauszeiger über eine Dimension. Dimensionen mit angewendeten Filtern zeigen ![ Filtersymbol ](/help/assets/icons/Filter.svg)Filter) neben dem Dimension-Namen an.
+
+## Filter und Sortierreihenfolge ändern
+
+Neben der Metrik zum Filtern und Sortieren des Datenblocks wird ein Pfeil angezeigt. Die Pfeilrichtung gibt an, ob die Metrik in auf- oder absteigender Reihenfolge sortiert wird.
+
+Um die Sortierrichtung zu ändern, wählen Sie den Pfeil neben der Metrik aus.
+
+So ändern Sie die zum Filtern und Sortieren des Datenblocks verwendete Metrik:
+
+1. Bewegen Sie den Mauszeiger über die gewünschte Metrikkomponente im Tabellen-Builder, um zusätzliche Optionen anzuzeigen.
+
+2. Wählen Sie den Pfeil auf der bevorzugten Metrik aus.
+
+   ![Der Tabellen-Builder und die Metriken.](./assets/image30.png)
+
+
 
 ## Filtertyp
 
 Es gibt zwei Möglichkeiten, Dimensionselemente zu filtern: „Am beliebtesten“ und „Spezifisch“.
 
-## Am beliebtesten
+### Am beliebtesten
 
 Mit der Option „Am beliebtesten“ können Sie Dimensionselemente basierend auf Metrikwerten dynamisch filtern. Die beliebteste Filterung gibt die am höchsten bewerteten Dimensionselemente basierend auf Metrikwerten zurück. Standardmäßig werden die ersten 10 Dimensionselemente aufgelistet, sortiert nach der ersten Metrik, die zum Datenblock hinzugefügt wurde.
 
 ![Die beliebteste Option.](./assets/image29.png)
 
 
-### Seiten- und Zeilenoptionen
+**Seiten- und Zeilenoptionen**
 
 Verwenden Sie die Felder **Seite** und **Zeilen**, um Daten in sequenzielle Gruppen oder Seiten zu unterteilen. Auf diese Weise können Sie andere Rangzeilenwerte als die höchsten Werte in Ihren Bericht ziehen. Diese Funktion ist besonders nützlich, um Daten über die Zeilenbegrenzung von 50.000 hinaus abzurufen.
 
-#### Standardeinstellungen für Seite und Zeilen
-
-- Seite = 1
-- Zeilen = 10
-
-Die Standardeinstellungen für Seite und Zeilen geben an, dass jede Seite 10 Datenzeilen enthält. Seite 1 gibt die 10 wichtigsten Elemente zurück, Seite 2 die nächsten 10 Elemente usw.
+Der Standardwert für Seite ist 1 und für Zeilen ist 10. Diese Standardwerte implizieren, dass jede Seite 10 Datenzeilen enthält. Seite 1 gibt die 10 wichtigsten Elemente zurück, Seite 2 die nächsten 10 Elemente usw.
 
 In der folgenden Tabelle finden Sie Beispiele für Seiten- und Zeilenwerte sowie die resultierende Ausgabe.
 
@@ -73,16 +85,16 @@ In der folgenden Tabelle finden Sie Beispiele für Seiten- und Zeilenwerte sowie
 | 2 | 100 | Elemente 101-200 |
 | 2 | 50.000 | Elemente 50.001-100.000 |
 
-#### Mindest- und Höchstwerte
+Die Mindest- und Höchstwerte sind:
 
 - Startseite: Min. = 1, Max.: 50 Mio.
 - Anzahl Zeilen: Min. = 1, Max.: 50.000
 
 ### „Kein Wert“ einschließen
 
-In Customer Journey Analytics sammeln einige Dimensionen den Eintrag „kein Wert“. Mit diesem Filter können Sie diese Werte aus Berichten ausschließen. Sie können beispielsweise eine Klassifizierung wie die Klassifizierung „Produktname“ basierend auf dem Produkt-SKU-Schlüssel erstellen. Wenn eine bestimmte Produkt-SKU nicht mit ihrer spezifischen Produktnamenklassifizierung eingerichtet wurde, wird der Produktnamenwert auf „kein Wert“ gesetzt.
+In Customer Journey Analytics erfassen einige Dimensionen den Eintrag „Kein Wert“. Mit diesem Filter können Sie diese Werte aus Berichten ausschließen. Sie können beispielsweise eine Klassifizierung wie die Klassifizierung „Produktname“ basierend auf dem Produkt-SKU-Schlüssel erstellen. Wenn eine bestimmte Produkt-SKU nicht mit ihrer spezifischen Produktnamenklassifizierung eingerichtet wurde, wird der Produktnamenwert auf „kein Wert“ gesetzt.
 
-Einschließen von „**Kein Wert**“ ist standardmäßig ausgewählt. Deaktivieren Sie diese Option, um Einträge ohne Wert auszuschließen.
+**[!UICONTROL Einschließen von „Kein Wert]** ist standardmäßig ausgewählt. Deaktivieren Sie diese Option, um Einträge ohne Wert auszuschließen.
 
 ### Nach Kriterien filtern
 
@@ -96,34 +108,19 @@ So legen Sie Filterkriterien fest
 
 1. Geben Sie einen Wert in das Suchfeld ein.
 
-1. Klicken Sie auf „Zeile hinzufügen“, um die Auswahl zu bestätigen und ein weiteres Kriterienelement hinzuzufügen.
+1. Wählen Sie ![Hinzufügen](/help/assets/icons/Add.svg) **[!UICONTROL Zeile hinzufügen]** aus, um die Auswahl zu bestätigen und ein weiteres Kriterienelement hinzuzufügen.
 
-1. Klicken Sie auf das Löschsymbol, um ein Kriterienelement zu entfernen.
+1. Wählen Sie ![CrossSize75](/help/assets/icons/CrossSize75.svg) aus, um ein Kriterienelement zu entfernen.
 
    Sie können bis zu 10 Kriterienelemente einbeziehen.
 
-### Filter und Sortierreihenfolge ändern
-
-Neben der Metrik zum Filtern und Sortieren des Datenblocks wird ein Pfeil angezeigt. Die Pfeilrichtung gibt an, ob die Metrik am größten > am wenigsten oder am wenigsten > am größten sortiert wird.
-
-Um die Sortierrichtung zu ändern, klicken Sie auf den Pfeil neben der Metrik. 
-
-So ändern Sie die zum Filtern und Sortieren des Datenblocks verwendete Metrik:
-
-1. Bewegen Sie den Mauszeiger über die gewünschte Metrikkomponente im Tabellen-Builder, um zusätzliche Optionen anzuzeigen.
-
-2. Klicken Sie auf den Pfeil der gewünschten Metrik. 
-
-   ![Der Tabellen-Builder und die Metriken.](./assets/image30.png)
-
-
-## Spezifische Filter
+### Spezifische Filter
 
 Mit der Option „Spezifisch“ können Sie für jede Dimension eine feste Liste von Dimensionselementen erstellen. Verwenden Sie den Filtertyp **Spezifisch**, um die genauen Dimensionselemente anzugeben, die in Ihren Filter aufgenommen werden sollen. Sie können Elemente aus einer Liste oder aus einem Zellenbereich auswählen.
 
 ![Die spezifischen Optionen und ausgewählten Elemente.](./assets/image32.png)
 
-### Aus Liste
+#### Aus Liste
 
 1. Wählen Sie die Option **Aus Liste** aus, um nach Dimensionselementen zu suchen und diese auszuwählen.
 
@@ -157,7 +154,7 @@ Mit der Option „Spezifisch“ können Sie für jede Dimension eine feste Liste
 
    Report Builder aktualisiert die Liste, um die angewendeten spezifischen Filter anzuzeigen.
 
-### Aus Zellenbereich
+#### Aus Zellenbereich
 
 Wählen Sie die Option **Aus Zellenbereich** aus, um einen Zellenbereich auszuwählen, der die Liste der abzugleichenden Dimensionselemente enthält.
 

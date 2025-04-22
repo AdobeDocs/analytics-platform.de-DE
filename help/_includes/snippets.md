@@ -1,7 +1,7 @@
 ---
-source-git-commit: be615a45a68b47f95517992cc4268a887ac1110a
+source-git-commit: a85efff8720d8fdf02b0d1290fedf17654be48e3
 workflow-type: tm+mt
-source-wordcount: '3796'
+source-wordcount: '3759'
 ht-degree: 30%
 
 ---
@@ -58,12 +58,6 @@ Zu den verfügbaren Zeitvergleichsoptionen gehören der vorherige Zeitraum, 13 W
 ## Videodemonstration Adobe Analytics {#videoaa}
 
 *In diesem Video werden die Funktionen von mit Adobe Analytics veranschaulicht. Die Funktion ist jedoch in ähnlicher Weise in Customer Journey Analytics verfügbar. Achten Sie auf die terminologischen Unterschiede zwischen Adobe Analytics und Customer Journey Analytics (z. B. „Besuche“ und „Sitzungen„)*
-
-
-## Panel „Filter“ {#filterspanel}
-
-1. Wählen Sie ![Filter](/help/assets/icons/Filter.svg) aus, um das Bedienfeld „Filter“ zu öffnen. Wenn Sie mehr Platz für die Filterliste benötigen, können Sie ![Filter](/help/assets/icons/Filter.svg) erneut auswählen, um das Bedienfeld zu schließen.
-1. Wählen Sie Filter aus einem der verfügbaren Filterabschnitte aus.
 
 
 ## Tag-Filterabschnitt {#tagfiltersection}

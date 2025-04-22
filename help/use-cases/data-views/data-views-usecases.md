@@ -5,7 +5,7 @@ exl-id: 6ecbae45-9add-4554-8d83-b06ad016fea9
 solution: Customer Journey Analytics
 feature: Data Views
 role: User
-source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
+source-git-commit: f0786cfa74453693078c7d30d647a96bf1d98d07
 workflow-type: tm+mt
 source-wordcount: '1362'
 ht-degree: 33%
@@ -39,7 +39,7 @@ Wenn Sie beispielsweise eine Datenansicht erstellen, können Sie eine Metrik [!U
 1. Öffnen Sie den **[!UICONTROL Werte einschließen/ausschließen]** und geben Sie Folgendes an:
    1. Aktivieren Sie **[!UICONTROL Einschließen/ausschließen-Werte festlegen]**.
    1. Wählen Sie **[!UICONTROL Wenn alle Kriterien erfüllt sind]** unter **[!UICONTROL Übereinstimmung]** aus.
-   1. `confirmation` angeben. Dieser Text für page_title gibt an, dass diese Seite mit der Bestellung verbunden ist. Nach Überprüfung aller Seitentitel, die diese Kriterien erfüllen, wird für jede Instanz ein `1` gezählt. Das Ergebnis ist eine neue Metrik (keine berechnete Metrik). Eine Metrik mit eingeschlossenen/ausgeschlossenen Werten kann überall dort verwendet werden, wo auch jede andere Metrik verwendet werden kann. Es funktioniert mit Attribution IQ, Segmenten und überall dort, wo Sie Standardmetriken verwenden können.
+   1. `confirmation` angeben. Dieser Text für &quot;**[!UICONTROL _title]** zeigt an, dass diese Seite mit der Bestellung verbunden ist. Nach Überprüfung aller Seitentitel, die diese Kriterien erfüllen, wird für jede Instanz ein `1` gezählt. Das Ergebnis ist eine neue Metrik (keine berechnete Metrik). Eine Metrik mit eingeschlossenen/ausgeschlossenen Werten kann überall dort verwendet werden, wo auch jede andere Metrik verwendet werden kann. Es funktioniert mit Attribution IQ, Segmenten und überall dort, wo Sie Standardmetriken verwenden können.
 
    ![Dimension zu Metrik](../assets/string-to-metric.gif){width=100%}
 1. Sie können darüber hinaus ein Zuordnungsmodell für diese Metrik angeben, beispielsweise [!UICONTROL Letztkontakt] mit einem [!UICONTROL Lookback-Fenster] von [!UICONTROL Sitzung].
@@ -69,7 +69,7 @@ Sie können eine numerische Dimension verwenden, um Metriken in Ihre [!UICONTROL
 
 ## Filtern von Unterereignissen {#sub-event}
 
-Diese Funktion gilt speziell für Array-basierte Felder. Mit der Ein-/Ausschlussfunktion können Sie Filter auf der Ebene von Unterereignissen durchführen, während Segmente, die in Segment Builder erstellt wurden, Ihnen nur Filter auf der Ereignisebene bieten. Sie können die Filterung von Unterereignissen durchführen, indem Sie Einschließen/Ausschließen in Datenansichten verwenden und dann auf der Ereignisebene in einem Segment auf diese neue Metrik/Dimension verweisen.
+Diese Funktion gilt speziell für Array-basierte Felder. Mit der Ein-/Ausschlussfunktion können Sie auf der Ebene der Unterereignisse filtern, während Ihnen in Segment Builder erstellte Segmente nur eine Segmentierung auf Ereignisebene geben. Sie können die Filterung von Unterereignissen durchführen, indem Sie Einschließen/Ausschließen in Datenansichten verwenden und dann auf der Ereignisebene in einem Segment auf diese neue Metrik/Dimension verweisen.
 
 Verwenden Sie beispielsweise die Ein-/Ausschlussfunktion in Datenansichten, um sich nur auf Produkte zu konzentrieren, die einen Umsatz von mehr als 50 US-Dollar generiert haben. Wenn Sie also eine Bestellung haben, die einen Produktkauf im Wert von 50 US-Dollar und einen Produktkauf im Wert von 25 US-Dollar enthält, entfernt die Ein-/Ausschlussfunktion den Produktkauf im Wert von 25 US-Dollar und nicht die gesamte Bestellung.
 

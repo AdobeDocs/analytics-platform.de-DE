@@ -4,7 +4,7 @@ title: Segmente erstellen
 feature: Filters
 role: User
 exl-id: 160021f1-6942-4682-9114-d375307d9912
-source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
+source-git-commit: 463ddbba0bd6765bd5fde1b2098c5603b48b10e4
 workflow-type: tm+mt
 source-wordcount: '1571'
 ht-degree: 45%
@@ -20,17 +20,10 @@ ht-degree: 45%
 >title="Erstellen einer Zielgruppe"
 >abstract="Zielgruppen können aus einem Segment erstellt und für die Adobe Experience Platform freigegeben werden, damit sie aktiviert werden können."
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="components_filters_datapreview"
 >title="Datenvorschau"
 >abstract="Vergleicht die Daten dieses Segments mit den Daten der Datenansicht. Der Prozentsatz der Vorschau basiert auf der Gesamtzahl der Daten in der Datenansicht aus den **letzten 90 Tagen**.<br><br/>Wenn die Vorschau nicht geladen wird, wird Ihre Verbindung möglicherweise noch aufgestockt."
-
-<!-- markdownlint-enable MD034 -->
-
 
 
 Das Dialogfeld **[!UICONTROL Segment Builder]** wird verwendet, um neue Segmente zu erstellen oder vorhandene Segmente zu bearbeiten. Das Dialogfeld heißt **[!UICONTROL Neues Segment]** oder **[!UICONTROL Segment bearbeiten]** für Segmente, die Sie über den [[!UICONTROL Segment]Manager erstellen oder verwalten](/help/components/filters/manage-filters.md).
@@ -155,32 +148,23 @@ Oder Sie könnten 52 Segmente definieren: 50 Segmente für die US-Bundesstaaten,
 
 ## Attribution {#attribution}
 
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="components_filters_attribution_repeating"
 >title="Wiederholend"
 >abstract="Umfasst Instanzen und persistierte Werte für die Dimension."
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="components_filters_attribution_instance"
 >title="Instanz"
 >abstract="Umfasst Instanzen und persistierte Werte für die Dimension."
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="components_filters_attribution_nonrepeatinginstance"
 >title="Sich nicht wiederholende Instanz"
 >abstract="Umfasst einzigartige (sich nicht wiederholende) Instanzen für die Dimension."
 
-<!-- markdownlint-enable MD034 -->
 
 
 
@@ -218,3 +202,5 @@ In der folgenden Tabelle wird für jedes Attributionsmodell angegeben, welche ei
 Ein Beispielbericht zu Ereignissen, die die drei Segmente verwenden, sieht wie folgt aus:
 
 ![Ergebnisse des Segmentzuordnungsmodells](assets/filter-dimension-attribution-results.png)
+
+<!-- markdownlint-enable MD034 -->

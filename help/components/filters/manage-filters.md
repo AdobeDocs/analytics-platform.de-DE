@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie Segmente in Customer Journey Analytics verwal
 exl-id: b8869560-0cf1-4e5d-a03c-dfca85d05e66
 feature: Filters
 role: User
-source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
+source-git-commit: f0786cfa74453693078c7d30d647a96bf1d98d07
 workflow-type: tm+mt
 source-wordcount: '884'
-ht-degree: 32%
+ht-degree: 33%
 
 ---
 
@@ -64,12 +64,12 @@ Verwenden Sie ![Spalteneinstellung](/help/assets/icons/ColumnSetting.svg), um di
 | ![Kopieren](/help/assets/icons/Copy.svg) **[!UICONTROL Kopieren]** | Kopiert das ausgewählte Segment. Neue Segmente werden mit demselben Namen und derselben `(Copy)` erstellt. |
 | ![CSV-Datei](/help/assets/icons/FileCSV.svg) **[!UICONTROL In CSV exportieren]** | Exportieren Sie die Segmente in eine `Segments List.csv`. |
 
-### Aktiver Segmentbalken
+### Aktive Filterleiste
 
-In der Segmentleiste werden die aktiven Segmente angezeigt, die vom Bedienfeld Segment auf die Liste der Segmente angewendet wurden (falls vorhanden). Mit (CrossSize75![ können Sie ein Segment schnell ](/help/assets/icons/CrossSize75.svg). Wenn mehr als ein Segment angegeben ist, können Sie mit „Alle entfernen **[!UICONTROL alle Segmente]**.
+Die Filterleiste die aktiven Segmente an, die vom Filterbedienfeld auf die Segmentliste (falls vorhanden) angewendet wurden. Mit ![XGröße75](/help/assets/icons/CrossSize75.svg) können Sie schnell einen Filter entfernen. Wenn mehr als ein Filter angegeben ist, können Sie mit „Alle entfernen **[!UICONTROL alle Filter]**.
 
-### Bedienfeld „Segment“
+### Panel „Filter“
 
-Sie können die Segmentliste mithilfe des linken Bedienfelds ![Segment](/help/assets/icons/Filter.svg) **[!UICONTROL Filter]** segmentieren. Das Bedienfeld „Segment“ zeigt den Segmenttyp und die Anzahl der Segmente an, die das jeweilige Segment berücksichtigen. Wählen Sie ![Segment](/help/assets/icons/Filter.svg) aus, um das Segment -Bedienfeld ein-/auszublenden.
+Sie können die Liste der Segmente mithilfe des linken Bedienfelds ![Filter](/help/assets/icons/Filter.svg) **[!UICONTROL Filter]** filtern. Das Bedienfeld „Filter“ zeigt den Filtertyp und die Anzahl der Segmente an, die den spezifischen Filter berücksichtigen. Wählen Sie ![Filter](/help/assets/icons/Filter.svg) aus, um die Anzeige des Bedienfelds „Filter“ umzuschalten.
 
 Weitere [ finden Sie unter ](filters-filter.md) der Segmentliste .

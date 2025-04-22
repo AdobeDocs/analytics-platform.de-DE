@@ -6,7 +6,7 @@ feature: Basics
 exl-id: c258fa39-c0b6-45a1-8547-79516c15a215
 mini-toc-levels: 3
 role: Admin
-source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
+source-git-commit: f0786cfa74453693078c7d30d647a96bf1d98d07
 workflow-type: tm+mt
 source-wordcount: '1549'
 ht-degree: 23%
@@ -159,8 +159,8 @@ Sie können einem Teamleiter eines Drittanbieters, mit dem Ihr Unternehmen zusam
 
 Benutzerinnen und Benutzern soll nur der Zugriff auf Daten eines Tages gewährt werden. So könnte der Zugriff auf diese speziellen Zeilen beschränkt werden:
 
-1. Erstellen Sie in [!UICONTROL Einstellungen] einen Filter für eine bestimmte Datenansicht, wobei [!UICONTROL Tag] dem Datum entspricht, an dem die Daten zugänglich sein sollen. Weitere Informationen [ Sie unter ](/help/data-views/create-dataview.md#settings-filters)Datenansicht erstellen“.
-1. Speichern Sie die Datenansicht, die den Filter auf den Datenteil der Datensätze in der zugrunde liegenden Verbindung anwendet. Alle Zeilen, die nicht der Filterdefinition entsprechen, werden automatisch aus der Datenansicht ausgeschlossen und stehen Analysis Workspace bei Verwendung dieser Datenansicht nicht zur Verfügung.
+1. Erstellen Sie ein Segment in [!UICONTROL Einstellungen] einer bestimmten Datenansicht, wobei [!UICONTROL Tag] dem Datum entspricht, an dem die Daten zugänglich sein sollen. Weitere Informationen [ Sie unter ](/help/data-views/create-dataview.md#settings-filters)Datenansicht erstellen“.
+1. Speichern Sie die Datenansicht, die das Segment auf den Datenteil der Datensätze in der zugrunde liegenden Verbindung anwendet. Alle Zeilen, die nicht zur Segmentdefinition passen, werden automatisch aus der Datenansicht ausgeschlossen und stehen Analysis Workspace bei Verwendung dieser Datenansicht nicht zur Verfügung.
 1. Erstellen Sie ein neues [Produktprofil](#product-profile-admin-role) in der Admin Console, fügen Sie Benutzer zum Produktprofil hinzu und nehmen Sie nur diese spezifische Datenansicht in das Produktprofil auf.
 
 ### Zugriffskontrolle auf Wertebene

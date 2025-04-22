@@ -4,10 +4,10 @@ title: Verwenden von Vorlagen
 feature: Workspace Basics
 role: User, Admin
 exl-id: 23cdf02f-56a1-4465-ae7f-b3a1bcad28af
-source-git-commit: b98cd4dc73e57f9ae5704a5d9e529ae3b518576c
+source-git-commit: f0786cfa74453693078c7d30d647a96bf1d98d07
 workflow-type: tm+mt
 source-wordcount: '1850'
-ht-degree: 84%
+ht-degree: 83%
 
 ---
 
@@ -110,7 +110,7 @@ Admins können Unternehmensvorlagen umbenennen, taggen und genehmigen.
 
 1. Wählen Sie das Filtersymbol aus, um die Liste der Projekte zu filtern.
 
-1. Wählen Sie in der Filterleiste **ANDERE FILTER** und danach **Unternehmensvorlagen** aus.
+1. Wählen Sie in der Filterleiste die Option **[!UICONTROL Sonstige Filter]** und wählen Sie dann **[!UICONTROL Unternehmensvorlagen]**.
 
    Eine Liste der Unternehmensvorlagen wird angezeigt. Alle regulären Projekte werden nicht angezeigt, es sei denn, sie sind angeheftet.
 

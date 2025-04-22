@@ -4,9 +4,9 @@ description: Erfahren Sie, wofür Segmente verwendet werden und wie Sie ein einf
 exl-id: 21183e98-6593-4b22-99c7-4a03231acfe9
 feature: Filters
 role: User
-source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
+source-git-commit: 463ddbba0bd6765bd5fde1b2098c5603b48b10e4
 workflow-type: tm+mt
-source-wordcount: '1428'
+source-wordcount: '1474'
 ht-degree: 5%
 
 ---
@@ -160,6 +160,14 @@ Ereignis-Container enthalten wertbasierte Aufschlüsselungen einzelner Seiten f�
 - Listen-Props
 - Listendimensionen
 - Merchandising-Dimensionen (im Kontext von Ereignissen)
+
+
+
+### B2B-Container
+
+[!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}
+
+Wenn Sie Zugriff auf [Customer Journey Analytics B2B edition](/help/getting-started/cja-b2b-edition.md) haben, stehen zusätzliche Container zur Verwendung in Segmenten zur Verfügung. Weitere Informationen zur Verwendung dieser zusätzlichen Container finden Sie unter „B2B[Konzepte und -Funktionen](/help/getting-started/cja-b2b-concepts-features.md).
 
 
 ### Logischer Gruppen-Container
