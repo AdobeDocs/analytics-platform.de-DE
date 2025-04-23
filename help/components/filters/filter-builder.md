@@ -1,10 +1,10 @@
 ---
 description: Segment Builder bietet eine Arbeitsfläche, auf der Metrikdimensionen, Segmente und Ereignisse basierend auf Container-Hierarchielogik, Regeln und Operatoren per Drag-and-Drop an Personen segmentiert werden können. Mit diesem integrierten Entwicklungs-Tool können Sie einfache oder komplexe Segmente erstellen und speichern, die Personenattribute und Aktionen über Besuche und Ereignisse hinweg identifizieren.
 title: Segmente erstellen
-feature: Filters
+feature: Filters, Segments
 role: User
 exl-id: 160021f1-6942-4682-9114-d375307d9912
-source-git-commit: 463ddbba0bd6765bd5fde1b2098c5603b48b10e4
+source-git-commit: 85a22d1e57925f0512ce0cc658cfba1008339d91
 workflow-type: tm+mt
 source-wordcount: '1571'
 ht-degree: 45%

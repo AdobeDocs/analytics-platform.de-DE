@@ -1,9 +1,9 @@
 ---
 description: Sequenzielle Segmente sind Segmente, die den THEN-Operator zum Definieren der Sequenz von Segmentbedingungen verwenden.
 title: Sequenzielle Segmente
-feature: Filters
+feature: Filters, Segments
 exl-id: 64cb10b5-36f0-42c8-b687-ae5de5ced8b5
-source-git-commit: 463ddbba0bd6765bd5fde1b2098c5603b48b10e4
+source-git-commit: 85a22d1e57925f0512ce0cc658cfba1008339d91
 workflow-type: tm+mt
 source-wordcount: '2459'
 ht-degree: 4%
