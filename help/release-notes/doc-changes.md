@@ -4,10 +4,10 @@ description: Listet Inhaltsaktualisierungen für Dokumentation zu Customer Journ
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
+source-git-commit: b880c63d22cec0e7de4f313eef72e86f41e85eca
 workflow-type: tm+mt
-source-wordcount: '4716'
-ht-degree: 94%
+source-wordcount: '5057'
+ht-degree: 91%
 
 ---
 
@@ -21,9 +21,16 @@ Die folgenden Aktualisierungen wurden seit der ersten Erstellung der Customer Jo
 | --- | --- |
 | **April 2025** | |
 | Anzeigen und Verwalten der Nutzung | Die Dokumentation zur [Anzeige](/help/connections/manage-connections.md#usage) und [Verwaltung](/help/technotes/estimate-usage.md) der Customer Journey Analytics-Nutzung wurde überarbeitet |
-| Content Analytics | [Dokumentation](/help/content-analytics/content-analytics.md) für Adobe Content Analytics. Mit Content Analytics können Sie schnell und einfach große Mengen an Inhaltsdaten untersuchen, um Trends aufzudecken, Anomalien zu erkennen, Content-Ermüdung zu identifizieren und Erkenntnisse aus der Bereitstellung von Inhalten zu gewinnen. |
+| Adobe Content Analytics | Mit [Content Analytics](/help/content-analytics/content-analytics.md) können Sie schnell und einfach große Mengen von Inhaltsdaten untersuchen, um Trends aufzudecken, Anomalien zu erkennen, die Ermüdung von Inhalten zu identifizieren und Erkenntnisse aus der Offenlegung von Inhalten zu gewinnen. |
+| XDM-Felder zum Erfassen von Streaming-Mediendaten in Adobe Experience Platform wurden aktualisiert | Beim Erfassen von Streaming-Mediendaten in Adobe Experience Platform sollten die XDM-Feldpfade, die unter der Überschrift „XDM-Feldpfad“ der Dokumentation zu Streaming-Medienparametern angezeigt werden, nicht mehr verwendet werden. Diese Feldpfade befinden sich auf den folgenden Seiten und sind als „Veraltet“ gekennzeichnet: [Audio- und Videoparameter](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/audio-video-parameters), [Anzeigenparameter](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/ad-parameters), [Kapitelparameter](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/chapter-parameters), [Player-](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/player-state-parameters) und [Qualitätsparameter](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/quality-parameters). |
+| Mediensammlung: Adobe Source Connector-Aktualisierungen für neues Medienberichterstellungs-XDM | Der Analytics Source Connector ordnet Streaming-Mediendaten in Adobe Analytics automatisch den Feldern zu, die vom Web SDK verwendet werden. Zuvor wurden die Daten sowohl den alten als auch den neuen Speicherorten zugeordnet, in Zukunft wird jedoch nur der neue Speicherort verwendet. [Weitere Informationen](https://experienceleague.adobe.com/de/docs/analytics/implementation/aep-edge/xdm-var-mapping) |
+| **Terminologieänderung: „Filter“ zu „Segmenten“** | Zuvor wurden in Adobe Customer Journey Analytics Segmente als „Filter“ bezeichnet. Diese Terminologie wurde nun an Adobe Analytics angepasst. „Filter“ werden jetzt als „Segmente“ bezeichnet. (Natürlich werden Suchfilter weiterhin als „Filter“ bezeichnet.) Die Benutzeroberfläche und die Dokumentation wurden aktualisiert. |
 | **März 2025** | |
 | Anwendungsfälle für Quantum Metric | Es wurden Anwendungsfälle für die Erfassung von Daten aus der [Quantum Metric](/help/use-cases/third-party/quantum-metric/qm-overview.md) hinzugefügt. |
+| Vorlage zur Produktnutzung | Mit einer neuen Workspace-Vorlage können Sie anzeigen, wie das Customer Journey Analytics-Produkt in Ihrer Organisation verwendet wird. [Weitere Informationen](https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-workspace/templates/use-templates). |
+| Handbuch für das Upgrade auf Customer Journey Analytics | Ermöglicht die Erstellung eines schrittweisen Leitfadens für das Upgrade von Adobe Analytics auf Customer Journey Analytics. Um mit der Erstellung Ihres benutzerdefinierten Handbuchs zu beginnen, melden Sie sich bei [!DNL Customer Journey Analytics] an und wählen Sie dann **[!UICONTROL Upgrade auf Customer Journey Analytics]** auf der Registerkarte **[!UICONTROL Workspace]** aus. [Weitere Informationen](https://experienceleague.adobe.com/de/docs/analytics-platform/using/compare-aa-cja/upgrade-to-cja/cja-upgrade-recommendations#recommended-upgrade-steps-for-most-organizations) |
+| Aktualisierungen des Zeileneintrags „Kein Wert“ in numerischen Dimensionen | Bei numerischen Dimensionen können Sie mit dieser Aktualisierung das Dimensionselement „Kein Wert“ in einem Segment verwenden und eine Aufschlüsselung in einem Bericht für den Zeileneintrag „Kein Wert“ durchführen. [Weitere Informationen](https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-dataviews/component-settings/no-value-options#numeric) |
+| Mediensammlung: Adobe Source Connector-Aktualisierungen für neues Medienberichterstellungs-XDM | Der Analytics Source Connector ordnet Streaming-Mediendaten in Adobe Analytics automatisch den Feldern zu, die vom Web SDK verwendet werden. Zuvor wurden die Daten sowohl den alten als auch den neuen Speicherorten zugeordnet, in Zukunft wird jedoch nur der neue Speicherort verwendet. [Weitere Informationen](https://experienceleague.adobe.com/de/docs/analytics/implementation/aep-edge/xdm-var-mapping) |
 | **Februar 2025** |  |
 | Mediensammlung: Adobe Source Connector-Aktualisierungen für neues Medienberichterstellungs-XDM | Der Analytics Source Connector [ordnet Streaming-Mediendaten in Adobe Analytics](https://experienceleague.adobe.com/de/docs/analytics/implementation/aep-edge/xdm-var-mapping?lang=de) automatisch den Feldern zu, die vom Web SDK verwendet werden. Zuvor wurden die Daten sowohl den alten als auch den neuen Speicherorten zugeordnet, in Zukunft wird jedoch nur der neue Speicherort verwendet. |
 | BI-Erweiterung – Erweiterte Unterstützung | Die BI-Erweiterung für Customer Journey Analytics unterstützt jetzt [Looker, Jupyter Notebook und R Studio](https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-usecases/data-views/bi-extension-usecases?lang=de). |
