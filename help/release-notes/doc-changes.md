@@ -7,7 +7,7 @@ feature: Release Notes
 source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
 workflow-type: tm+mt
 source-wordcount: '4716'
-ht-degree: 93%
+ht-degree: 94%
 
 ---
 
@@ -20,8 +20,8 @@ Die folgenden Aktualisierungen wurden seit der ersten Erstellung der Customer Jo
 | Funktion | Beschreibung |
 | --- | --- |
 | **April 2025** | |
-| Anzeigen und Verwalten der Nutzung | Die Dokumentation zur Verwendung von [ (Anzeigen](/help/connections/manage-connections.md#usage) und [) ](/help/technotes/estimate-usage.md) Customer Journey Analytics wurde überarbeitet |
-| Inhaltsanalyse | [Dokumentation](/help/content-analytics/content-analytics.md) für Adobe Content Analytics. Mit Content Analytics können Sie schnell und einfach große Mengen von Inhaltsdaten untersuchen, um Trends aufzudecken, Anomalien zu erkennen, die Ermüdung von Inhalten zu identifizieren und Erkenntnisse aus der Offenlegung von Inhalten zu gewinnen. |
+| Anzeigen und Verwalten der Nutzung | Die Dokumentation zur [Anzeige](/help/connections/manage-connections.md#usage) und [Verwaltung](/help/technotes/estimate-usage.md) der Customer Journey Analytics-Nutzung wurde überarbeitet |
+| Content Analytics | [Dokumentation](/help/content-analytics/content-analytics.md) für Adobe Content Analytics. Mit Content Analytics können Sie schnell und einfach große Mengen an Inhaltsdaten untersuchen, um Trends aufzudecken, Anomalien zu erkennen, Content-Ermüdung zu identifizieren und Erkenntnisse aus der Bereitstellung von Inhalten zu gewinnen. |
 | **März 2025** | |
 | Anwendungsfälle für Quantum Metric | Es wurden Anwendungsfälle für die Erfassung von Daten aus der [Quantum Metric](/help/use-cases/third-party/quantum-metric/qm-overview.md) hinzugefügt. |
 | **Februar 2025** |  |
@@ -194,7 +194,7 @@ Die folgenden Aktualisierungen wurden seit der ersten Erstellung der Customer Jo
 | Datum | Beschreibung der Aktualisierung |
 | --- | --- |
 | **Dezember 2022** |  |
-| 16. Dezember 2022 | Neuer Artikel [Verwalten der Datennutzung in Customer Journey Analytics](/help/technotes/estimate-usage.md). |
+| 16. Dezember 2022 | Neues Thema zum [Verwalten der Customer Journey Analytics-Datennutzung](/help/technotes/estimate-usage.md). |
 | **Oktober 2022** | |
 | Oktober 2022 | Neuer Artikel zum [Passwortschutz geplanter Projekte](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/t-schedule-report.html?lang=de#password). Diese Funktion dient zur Unterstützung der [HIPAA-Bereitschaft](https://www.adobe.com/trust/compliance/hipaa-ready.html). |
 | Oktober 2022 | Neuer Artikel zu [kundenverwalteten Schlüsseln](/help/privacy/cmk.md). Diese Funktion dient zur Unterstützung der [HIPAA-Bereitschaft](https://www.adobe.com/trust/compliance/hipaa-ready.html). |
