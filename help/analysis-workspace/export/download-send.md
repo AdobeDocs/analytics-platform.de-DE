@@ -4,7 +4,7 @@ title: Herunterladen von Customer Journey Analytics-Daten
 feature: Curate and Share
 exl-id: 1d8384ca-888c-482c-ab3e-d1b579217560
 role: User
-source-git-commit: 0101986bb86c49776a044f754d912dc1bcb9422c
+source-git-commit: 9a15cb4d771892ff656fe72b8e53d890a3fd99f7
 workflow-type: tm+mt
 source-wordcount: '1194'
 ht-degree: 98%
@@ -94,7 +94,7 @@ Die Eigenschaften der Tabelle werden wie folgt auf die heruntergeladene Datei an
 * Aufschlüsselungen **oberhalb** der ausgewählten Dimension in der Tabelle werden als Filter über jeder einzelnen Spalte angezeigt.
 * Aufschlüsselungen **unterhalb** der ausgewählten Dimension in der Tabelle werden entfernt.
 
-Im obigen Beispiel werden Seitenelemente mit dem Bedienfeldfilter („Neue Besucher-Kunden“) heruntergeladen und die darüber liegenden Komponenten („Marketing-Kanal = E-Mail“) als Filter angewendet, während die darunter liegenden Komponenten („Typ des Mobilgeräts“) aus der heruntergeladenen CSV-Datei entfernt werden.
+Im obigen Beispiel werden Page-Elemente mit dem Bedienfeldsegment („New Visitor Customers“) heruntergeladen und die darüber liegenden Komponenten („Marketing Channel = Email“) als Filter angewendet, während die darunter liegenden Komponenten („Mobile Device Type“) aus der heruntergeladenen CSV entfernt werden.
 
 ![Die heruntergeladene CSV-Datei, geöffnet in Excel.](assets/downloaded-file.png)
 

@@ -4,10 +4,10 @@ title: Filtern und Sortieren von Tabellen
 feature: Visualizations
 exl-id: 3af637ec-bb6c-49b7-a7b3-e1d310e71101
 role: User
-source-git-commit: 770320a0b16d26e0755203a3524b000db30cac82
+source-git-commit: 9a15cb4d771892ff656fe72b8e53d890a3fd99f7
 workflow-type: tm+mt
 source-wordcount: '844'
-ht-degree: 99%
+ht-degree: 98%
 
 ---
 
@@ -31,7 +31,7 @@ Sie können mehrere Methoden verwenden, um Zeilen aus einer Freiformtabelle zu f
 
 - Ausschließen bestimmter Zeilen aus einer Tabelle
 - Anwenden von Filtern auf eine Tabelle
-- Verwenden von Zielgruppenfiltern
+- Verwenden von Zielgruppensegmenten
 
 Sehen Sie sich unbedingt an, wie sich die einzelnen Methoden auf die [Gesamtwerte von Freiformtabellen](/help/analysis-workspace/visualizations/freeform-table/workspace-totals.md) auswirken.
 
@@ -96,7 +96,7 @@ So filtern Sie Daten in Freiformtabellen:
 
 ### Verwenden von Zielgruppensegmenten
 
-Weitere Informationen finden Sie unter [Filter – Überblick](/help/components/filters/filters-overview.md).
+Weitere Informationen finden [ unter ](/help/components/filters/filters-overview.md)Segmentierung - Übersicht“.
 
 ## Sortieren von Tabellen
 
