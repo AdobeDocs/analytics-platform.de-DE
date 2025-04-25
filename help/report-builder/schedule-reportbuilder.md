@@ -6,20 +6,20 @@ feature: Report Builder
 type: Documentation
 solution: Customer Journey Analytics
 exl-id: 7429d8f9-1e8f-4fbd-8b04-cbe7adbff3e2
-source-git-commit: 4bf8c616965718426efe880865acb0e5054b6a31
+source-git-commit: 6dd8a70293161ff58361953a7e48a98834b7abe0
 workflow-type: tm+mt
-source-wordcount: '1178'
-ht-degree: 84%
+source-wordcount: '1105'
+ht-degree: 13%
 
 ---
 
-# Erstellen von Zeitplänen für Arbeitsmappen
+# Arbeitsmappen planen
 
-Nachdem Sie Ihre Arbeitsmappe gespeichert und Ihre Analyse abgeschlossen haben, können Sie die Arbeitsmappe mithilfe der Zeitplanfunktion für andere in Ihrem Team freigeben. Mit der Zeitplanfunktion können Sie einen Zeitplan erstellen, anhand dessen die Daten in der Arbeitsmappe automatisch aktualisiert werden und die Excel-Arbeitsmappe (.xlsx) als E-Mail-Anhang an Ihre ausgewählte Zielgruppe gesendet wird. Durch die Einrichtung eines Zeitplans erhalten die Empfänger und Empfängerinnen automatisch regelmäßige Aktualisierungen. Sie können die Zeitplanfunktion auch verwenden, um die Arbeitsmappe nur einmal zu senden, ohne automatische Aktualisierungen festzulegen.
+Nachdem Sie Ihre Arbeitsmappe gespeichert und Ihre Analyse abgeschlossen haben, können Sie Ihre Arbeitsmappe mithilfe der Zeitplanfunktion für andere in Ihrem Team freigeben. Mit der Zeitplanfunktion können Sie einen Zeitplan erstellen, der die Daten in der Arbeitsmappe automatisch aktualisiert. Senden Sie die Excel-Arbeitsmappendatei per E-Mail als Anhang an Ihre angegebene Zielgruppe zu einem bestimmten Zeitpunkt. Durch die Einrichtung eines Zeitplans erhalten die Empfänger und Empfängerinnen automatisch regelmäßige Aktualisierungen. Sie können die Zeitplanfunktion auch verwenden, um die Arbeitsmappe nur einmal zu senden, ohne automatische Aktualisierungen festzulegen.
 
-Für eine Arbeitsmappe können mehrere Zeitpläne erstellt werden. So können Sie beispielsweise eine Arbeitsmappe täglich an Ihr Team und einmal wöchentlich an Ihren Vorgesetzten senden, indem Sie zwei verschiedene Zeitpläne erstellen.
+Für eine Arbeitsmappe können mehrere Zeitpläne erstellt werden. Sie erstellen beispielsweise zwei Zeitpläne, um einmal wöchentlich eine Arbeitsmappe an Ihr Team und Ihren Vorgesetzten zu senden.
 
-Außerdem können Sie mit der Zeitplanfunktion einen Passwortschutz für eine Arbeitsmappe einrichten und zuvor geplante Arbeitsmappen bearbeiten.
+Mit der Zeitplanfunktion können Sie auch einen Passwortschutz für eine Arbeitsmappe einrichten und zuvor geplante Arbeitsmappen bearbeiten.
 
 
 >[!BEGINSHADEBOX]
@@ -31,104 +31,152 @@ Siehe ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Arbeitsmappen 
 
 ## Festlegen eines Zeitplans für eine Arbeitsmappe
 
-Verwenden Sie im Report Builder-Hub die Schaltfläche „Aufgabe planen“, um schnell einen Zeitplan zu erstellen, sodass eine Excel-Arbeitsmappe (.xlsx) automatisch an eine Einzelperson oder eine Gruppe gesendet wird.
+So planen Sie eine Arbeitsmappe:
 
-1. Klicken Sie im Report Builder-Hub auf die Schaltfläche „Planen“.
+1. Wählen Sie **[!UICONTROL Zeitplan]** im Report Builder-Hub aus, um einen Zeitplan zu erstellen, damit Sie automatisch eine Excel-Arbeitsmappe (.xlsx) an eine Einzelperson oder eine Gruppe verteilen können.
 
-   ![Klicken Sie auf die Schaltfläche Zeitplan , um einen Zeitplan zu erstellen.](./assets/schedule-button.png){width="55%"}
+   ![Wählen Sie die Schaltfläche „Zeitplan“, um einen Zeitplan zu erstellen.](./assets/schedule.png){zoomable="yes"}
 
-1. Klicken Sie oben links auf „Arbeitsmappe planen“ oder auf die Plusschaltfläche, um eine neue Arbeitsmappe mit Zeitplan zu erstellen.
+1. Wählen Sie **[!UICONTROL Arbeitsmappe planen]** oder ![Hinzufügen](/help/assets/icons/Add.svg), um eine neue geplante Arbeitsmappe zu erstellen.
 
-   ![Das Fenster „Arbeitsmappen planen“.](./assets/schedule-workbook.png){width="55%"}
+   ![Das Fenster „Arbeitsmappen planen“.](./assets/schedule-workbook.png){zoomable="yes"}
 
    Im Zeitplanfenster werden einige vordefinierte Informationen zur Arbeitsmappe angezeigt, z. B. der Arbeitsmappenname und das Datum der letzten Änderung der Arbeitsmappe.
 
-   ![Der Zeitplanbereich.](./assets/schedule-pane.png){width="55%"}
+### Datei
 
-1. (Optional) Geben Sie einen Dateinamen ein.
+Im Abschnitt **[!UICONTROL Datei]** geben Sie Details zum Dateityp, zum Dateinamen und zu einem Kennwort zum Schutz der Datei an.
 
-   Der Dateiname der Arbeitsmappe entspricht standardmäßig dem Namen der Arbeitsmappe. Sie können ihn jedoch bei Bedarf ändern. Das könnte beispielsweise der Fall sein, wenn Sie dieselbe Arbeitsmappe an mehrere Zielgruppen senden und für eine bestimmte Zielgruppe eine etwas benutzerfreundlichere Bezeichnung wählen möchten.
+![Der Zeitplanbereich.](./assets/schedule-pane.png){zoomable="yes"}
 
-1. (Optional) Wählen Sie **Zeitstempel an Dateinamen anhängen**.
+1. Verwenden ![TableSelect](/help/assets/icons/TableSelect.svg), um die aktuelle Arbeitsmappe auszuwählen, falls noch nicht ausgewählt.
 
-   Sie können einen Zeitstempel an den Dateinamen anhängen, um das Datum der Aktualisierung der Arbeitsmappe anzugeben. Dies ist hilfreich, wenn Sie schnell feststellen möchten, welche Version einer Arbeitsmappe an einem bestimmten Datum gesendet wurde. In der **Dateinamenvorschau** ist zu sehen, wie der Dateiname der Arbeitsmappe beim Versand in der E-Mail angezeigt wird. Das Zeitstempelformat ist JJJ-MM-TT.
+1. (Optional) Geben Sie einen **[!UICONTROL Dateinamen]** ein.
 
-1. (Optional) Wählen Sie **.zip-Komprimierung**, um die Datei zu komprimieren und einen Passwortschutz für die Datei einzurichten.
+   Der Dateiname der Arbeitsmappe entspricht standardmäßig dem Namen der Arbeitsmappe. Sie können den Dateinamen jedoch bei Bedarf ändern.
 
-   Wenn Sie diese Auswahl treffen, werden Sie beim Öffnen der Datei aufgefordert, ein Passwort einzugeben. Dies ist hilfreich, wenn Sie Bedenken hinsichtlich der Datensicherheit haben und die Arbeitsmappe mit einem Passwort schützen möchten. Wenn Sie die Datei mit einem Passwort schützen möchten, wählen Sie **.zip-Komprimierung** aus. Das Passwort muss mindestens 8 Zeichen lang sein und eine Zahl und ein Sonderzeichen enthalten.
+1. Wählen Sie einen **[!UICONTROL Dateityp]** aus.
 
-   ![Geben Sie im Feld Kennwortschutz für die Arbeitsmappe ein Kennwort ein.](./assets/zip-compression.png){width="55%"}
+   * **[!UICONTROL Excel]**
+   * **[!UICONTROL PDF]**
+   * **[!UICONTROL CSV]**
 
-1. Eingeben der **Empfänger und Empfängerinnen**. Sie können entweder den Namen einer in Ihrem Unternehmen bekannten Person oder eine E-Mail-Adresse einer unternehmensinternen oder -externen Person eingeben.
+   Beachten Sie bei Auswahl **[!UICONTROL CSV]**, dass die geplante Arbeitsmappe als ZIP-Anlage gesendet wird. Einige E-Mail-Administratoren im Unternehmen blockieren möglicherweise E-Mails mit ZIP-Anhängen. Dementsprechend wird eine Warnung angezeigt.
+
+1. (Optional) Wählen Sie **[!UICONTROL Zeitstempel an Dateinamen anhängen]**.
+
+   Sie können einen Zeitstempel an den Dateinamen anhängen, um das Datum der Aktualisierung der Arbeitsmappe anzugeben. Ein Zeitstempel ist hilfreich, um zu sehen, welche Version einer Arbeitsmappe an einem bestimmten Datum gesendet wurde. Wenn diese Option aktiviert ist, können Sie zwischen folgenden Optionen wählen:
+
+   * **[!UICONTROL ISO-Datumsformat]**, was dazu führt, dass `YYYY-MM-DD` an den Dateinamen angehängt wird.
+   * **[!UICONTROL ISO-Datumsformat + Zeitstempel]** was dazu führt, dass `YYYY-MM-DD_HH-MM-SS` an den Dateinamen angehängt wird.
+
+<!-- Does no longer seem to be an option? 
+1. (Optional) Select **.zip compression** to compress the file and set up password protection on the file.
+
+    When you make this selection, you're prompted to enter a password to open the file. This is helpful if you have concerns about data security and you want to password protect the workbook. Protecting the file with a password requires you to select **.zip compression**. The password must be at least 8 characters and contain a number and a special character.
+
+    ![Enter a password in the Password protect the workbook field.](./assets/zip-compression.png){zoomable="yes"}{width="55%"}
+-->
+
+1. Geben Sie in „Kennwort **[!UICONTROL die Arbeitsmappe schützen“ ein]** ein. Ein gültiges Kennwort muss mindestens 8 Zeichen, eine Zahl und ein Sonderzeichen enthalten. Wählen Sie ![VisibilityOff](/help/assets/icons/VisibilityOff.svg) aus, um das Kennwort anzuzeigen, und ![Visibility](/help/assets/icons/Visibility.svg), um das Kennwort auszublenden (Standard).
+
+
+### E-Mail
+
+Im Abschnitt **[!UICONTROL E-Mail]** geben Sie die Empfänger, den Betreff und die Beschreibung der E-Mail an.
+
+![E-Mail-Einstellungen planen](assets/schedule-email.png){zoomable="yes"}
+
+1. Eingeben der **Empfänger und Empfängerinnen**. Sie können den Namen einer in Ihrem Unternehmen bekannten Person eingeben. Sie können auch eine E-Mail-Adresse einer Person eingeben, die nicht zu Ihrem Unternehmen gehört.
 
 1. Geben Sie den **Betreff** Ihrer E-Mail und eine Beschreibung ein. Der Betreff verwendet standardmäßig den Namen der Arbeitsmappen-Datei. Sie können den Betreff jedoch bei Bedarf ändern. Im Beschreibungsabschnitt können Sie Informationen hinzufügen.
 
-   ![Geben Sie im Feld „Betreff“ einen Betreff ein.](./assets/recipients-subject.png){width="55%"}
+1. Sie können optional eine Beschreibung im Textbereich **[!UICONTROL Beschreibung]** eingeben.
 
-1. Aktivieren Sie die Zeitplanoptionen, um das Datum und die Uhrzeit festzulegen, zu denen die Arbeitsmappe per E-Mail an Ihre Empfänger und Empfängerinnen gesendet werden soll.
 
-   Wählen Sie das Start- und Enddatum sowie den Zeitrahmen aus. Dies kann das heutige Datum oder ein Datum in der Zukunft sein.
+### Zeitplan
 
-   Wählen Sie aus dem Dropdown-Menü die **Häufigkeit** aus. Sie können die Häufigkeit auf stündlich, täglich, wöchentlich, monatlich oder jährlich an einem bestimmten Tag einstellen. Sie können beispielsweise einen Zeitplan einrichten, um die Arbeitsmappe am ersten Sonntagabend des Monats zu senden, sodass Ihre Empfänger und Empfängerinnen die E-Mail am Montagmorgen in ihrem Posteingang haben.
+Im Abschnitt **[!UICONTROL Zeitplan]** können Sie den Zeitplan definieren, nach dem die E-Mails mit der Arbeitsmappe an Ihre Empfänger gesendet werden sollen.
 
-   ![Häufigkeit auswählen, um den Bericht zu planen.](./assets/frequency.png){width="55%"}
+![Zeitplandefinition](assets/schedule-enable.png){zoomable="yes"}
 
-1. Nachdem Sie den Zeitplan festgelegt haben, klicken Sie auf **Planmäßig senden**.
+1. Wählen Sie **[!UICONTROL Planungsoptionen anzeigen]**, um einen Zeitplan zu definieren.
 
-   ![Klicken Sie auf Planmäßig senden.](./assets/send-on-schedule.png){width="55%"}
+1. Geben Sie in &quot;**[!UICONTROL am“ ein]** ein. Wählen Sie alternativ ![Kalender](/help/assets/icons/Calendar.svg) aus, um ein Startdatum aus dem Kalender auszuwählen.
 
-   Im Report Builder-Abschnitt wird unten eine Bestätigungsmitteilung angezeigt, und die zeitlich geplante Arbeitsmappe wird auf der Registerkarte „Arbeitsmappen“ aufgeführt.
+1. Geben Sie in „Endet am **[!UICONTROL ein Enddatum]**. Wählen Sie alternativ ![Kalender](/help/assets/icons/Calendar.svg) aus, um ein Enddatum aus dem Kalender auszuwählen.
 
-   ![Bestätigungs-Popup](./assets/confirmation-toast.png){width="55%"}
+1. Wählen Sie eine **[!UICONTROL Häufigkeit]** aus. Je nach ausgewählter Häufigkeit stehen Ihnen zusätzliche Optionen zur Verfügung. Siehe Tabelle unten.
 
-## Einmaliges Senden der Arbeitsmappe
+   | Häufigkeit | Optionen |
+   |---|---|
+   | **[!UICONTROL Stündlich senden]** | Geben Sie einen Wert für **[!UICONTROL Alle Stunden senden]** ein. |
+   | **[!UICONTROL Täglich senden]** | Wählen Sie eine **[!UICONTROL Tägliche Häufigkeit]** aus: **[!UICONTROL Täglich senden]**, **[!UICONTROL Täglich senden]** oder **[!UICONTROL Benutzerdefinierte Häufigkeit]**.<br/>Wenn Sie **[!UICONTROL Benutzerdefinierte Häufigkeit]** auswählen, geben Sie einen Wert für **[!UICONTROL Alle Tage senden]** ein. |
+   | **[!UICONTROL Wöchentlich senden]** | Geben Sie einen Wert für **[!UICONTROL Nach jeder Anzahl von Wochen senden]** ein. und wählen Sie einen **[!UICONTROL Wochentag]**. |
+   | **[!UICONTROL Monatlich nach Wochentag senden]** | Wählen Sie einen **[!UICONTROL Wochentag]** und eine **[!UICONTROL Woche des Monats]** aus. |
+   | **[!UICONTROL Monatlich nach Tag des Monats senden]** | Wählen Sie einen Wert unter **[!UICONTROL An diesem Tag des Monats senden]** aus. |
+   | **[!UICONTROL Jährlich nach Tag des Monats senden]** | Wählen Sie einen **[!UICONTROL Wochentag]**, eine **[!UICONTROL Woche des Monats]** und einen **[!UICONTROL Monatstag des Jahres]** aus. |
+   | **[!UICONTROL Jährlich nach bestimmtem Datum senden]** | Wählen Sie einen **[!UICONTROL Monat des Jahres]** und wählen Sie einen Wert aus **[!UICONTROL An diesem Tag des Monats senden]**. |
 
-Sie können die Arbeitsmappe auch nur ein einziges Mal versenden.
+### Senden
 
-1. Deaktivieren Sie die Option **Planungsoptionen anzeigen**.
+So senden Sie die Arbeitsmappe:
 
-   ![Deaktivieren Sie die Option Planungsoptionen anzeigen , um eine Arbeitsmappe nur einmal zu senden.](./assets/send-now.png){width="40%"}
+* Wenn Sie keinen Zeitplan mit **[!UICONTROL Planungsoptionen anzeigen]** definiert haben, wählen Sie **[!UICONTROL Jetzt senden]** aus, um die Arbeitsmappe sofort per E-Mail zu senden.
+* Wenn Sie einen Zeitplan mit **[!UICONTROL Planungsoptionen anzeigen]** definiert haben, wählen Sie **[!UICONTROL Planmäßig senden]** aus, um die Arbeitsmappe mithilfe des von Ihnen definierten Zeitplans per E-Mail zu senden.
 
-1. Klicken Sie auf **Jetzt senden**.
+In beiden Fällen wird unten im Report Builder-Hub ein Bestätigungsfoast angezeigt.
 
-## Anzeigen und Bearbeiten geplanter Arbeitsmappen
+Um den Versand der Arbeitsmappe abzubrechen, wählen Sie **[!UICONTROL Abbrechen]** aus.
 
-Sie können alle geplanten Arbeitsmappen auf der Registerkarte „Arbeitsmappen“ anzeigen und verwalten.
 
-1. Klicken Sie im Report Builder-Hub im Bereich „Zeitplan“ auf die Registerkarte „Arbeitsmappen“. In dieser Ansicht finden Sie eine Liste aller geplanten Arbeitsmappen.
+## Anzeigen und Verwalten geplanter Arbeitsmappen
 
-1. Wählen Sie eine Arbeitsmappe aus. Es werden verschiedene Tools angezeigt, mit denen Sie die Arbeitsmappe bearbeiten, die geplante Aufgabe bearbeiten, die geplante Aufgabe anhalten und neu starten, einen Bericht zu geplanten Aufgaben herunterladen oder die geplante Aufgabe löschen können.
+Sie können alle geplanten Arbeitsmappen auf der Registerkarte „Arbeitsmappen **[!UICONTROL anzeigen und]**.
 
-   ![Screenshot mit den Symbolen für den Arbeitsmappen-Zeitplan.](./assets/schedule-icons.png){width="20%"}
+1. Wählen Sie **[!UICONTROL Zeitplan]** im Report Builder-Hub aus.
 
-* (Optional) Klicken Sie auf das Stiftsymbol, um die Aufgabe Arbeitsmappen-Zeitplan zu bearbeiten.
+1. Wählen Sie die **[!UICONTROL Arbeitsmappen]** aus. Es wird eine Liste aller geplanten Arbeitsmappen angezeigt.
 
-* (Optional) Klicken Sie auf das Uhrensymbol, um den Verlauf jeder geplanten Aufgabe anzuzeigen.
+   ![Geplante Arbeitsmappe](assets/scheduled-workbooks.png){zoomable="yes"}
 
-* (Optional) Klicken Sie auf das Pausensymbol, um die Verteilungszeitplanaufgabe anzuhalten und neu zu starten. Dies ist hilfreich, wenn Sie die Arbeitsmappe vor ihrem Versand ändern müssen. Klicken Sie erneut auf das Pausensymbol, wenn Sie den Versand neu starten möchten.
+   Sie können den Mauszeiger über das Symbol bewegen, um den Status einer geplanten Arbeitsmappe anzuzeigen.
 
-* (Optional) Klicken Sie auf das Symbol Herunterladen , um eine Kopie der Aufgabe „Arbeitsmappen-Zeitplan“ herunterzuladen.
+   Verwenden Sie ![Suche](/help/assets/icons/Search.svg), um nach bestimmten geplanten Arbeitsmappen zu suchen.
+Mit ![ColumnSetting](/help/assets/icons/ColumnSetting.svg) können Sie festlegen, welche Spalten angezeigt werden sollen.
 
-* (Optional) Klicken Sie auf den Papierkorb, um die geplante Aufgabe zu löschen.
+1. Eine oder mehrere Arbeitsmappen auswählen.
 
-  ![Screenshot mit der Liste der geplanten Aufgaben.](./assets/selected-workbook.png){width="40%"}
+   ![Arbeitsmappen planen ausgewählt](assets/scheduled-workbooks-selected.png){zoomable="yes"}
 
-## Überprüfen des Status geplanter Aufgaben
+   Die folgenden Optionen sind verfügbar:
 
-In der Verlaufsansicht können Sie den Status jeder geplanten Aufgabe überprüfen. Für jede geplante Aufgabe wird in einer eigenen Zeile die Statusänderung festgehalten. Im folgenden Beispiel wurde *der neue stündliche Zeitplan* am 5. Januar um 15:04 Uhr gestartet. Um 15:05 Uhr waren die Aktualisierung und der Versand an die Empfänger und Empfängerinnen erfolgreich abgeschlossen. Die nächste Arbeitsmappe, *Fehlerhafte Arbeitsmappe*, meldete einen Fehler während des Aktualisierungsprozesses. Wenn eine Arbeitsmappe nicht gesendet werden kann, hilft Ihnen die Registerkarte „Verlauf“ bei der Fehlerbehebung, da sie anzeigt, wo im Prozess der Fehler aufgetreten ist. In diesem Fall ist der Fehler wahrscheinlich auf einen Datenblockfehler, vielleicht eine fehlende Komponente, zurückzuführen, sodass die Arbeitsmappe nicht erfolgreich aktualisiert werden konnte.
+   | Option | Beschreibung |
+   |---|---|
+   | ![Bearbeiten](/help/assets/icons/Edit.svg) | Bearbeiten Sie den Zeitplan für eine ausgewählte Arbeitsmappe. |
+   | ![Verlauf](/help/assets/icons/History.svg) | Zeigt den Verlauf der ausgewählten Arbeitsmappen an. |
+   | ![Pause](/help/assets/icons/Pause.svg) | Aussetzen des Zeitplans ausgewählter Arbeitsmappen. |
+   | ![Play](/help/assets/icons/Play.svg) | Setzt den Zeitplan der ausgewählten Arbeitsmappen fort. |
+   | ![Herunterladen](/help/assets/icons/Download.svg) | Die ausgewählte Arbeitsmappe in eine neue Arbeitsmappe herunterladen. |
+   | ![Löschen](/help/assets/icons/Delete.svg) | Löscht den Zeitplan der ausgewählten Arbeitsmappen. |
 
-Ein grünes Häkchen bedeutet, dass die Arbeitsmappe erfolgreich gesendet wurde. Ein Ausrufezeichen in einem roten Dreieck gibt an, dass ein Fehler aufgetreten ist.
 
-Sie können auswählen, welche Spalten in der Registerkarte „Verlauf“ angezeigt werden sollen, indem Sie rechts neben der Suchleiste auf das Spalteneinstellungssymbol klicken.
+## Verlauf und Status geplanter Arbeitsmappen
 
-![Klicken Sie auf das Spaltensymbol, um bestimmte Spalten ein- oder auszublenden.](./assets/history.png){width="55%"}
+Sie können den Verlauf und den Status geplanter Arbeitsmappen auf der Registerkarte **[!UICONTROL Verlauf]** anzeigen.
 
-Sie können den Verlauf so filtern, dass nur der Verlauf einer einzigen geplanten Arbeitsmappen angezeigt wird. Gehen Sie dazu zur Registerkarte „Arbeitsmappen“, wählen Sie die Arbeitsmappe aus und klicken Sie auf das Verlaufsymbol.
+1. Wählen Sie **[!UICONTROL Zeitplan]** im Report Builder-Hub aus.
 
-Sie können den Verlauf einer bestimmten Arbeitsmappe auch auf der Registerkarte „Arbeitsmappen“ einsehen. Wählen Sie dazu auf der Registerkarte „Arbeitsmappen“ die entsprechende Arbeitsmappe aus und klicken Sie auf das Verlaufsymbol.
+1. Wählen Sie die **[!UICONTROL Verlauf]** aus. Es wird eine Liste aller geplanten Arbeitsmappen angezeigt.
 
-![Das Verlaufssymbol für Arbeitsmappen](./assets/history2.png){width="55%"}
+   ![Geplanter Verlauf](assets/scheduled-workbooks-history.png){zoomable="yes"}
 
-Der Arbeitsmappen-Filter wird dann oben im Verlauf angezeigt. Um wieder den Verlauf aller geplanten Aufgaben anzuzeigen, klicken Sie auf das x neben dem Filter.
+   Verwenden Sie ![Suche](/help/assets/icons/Search.svg), um in der Liste nach bestimmten Arbeitsmappen zu suchen.
+Mit ![ColumnSetting](/help/assets/icons/ColumnSetting.svg) können Sie festlegen, welche Spalten angezeigt werden sollen.
 
-![Der Arbeitsmappen-Filter.](./assets/history3.png){width="55%"}
+   Auf **[!UICONTROL Registerkarte]** Verlauf“ können Sie den Status jeder geplanten Aufgabe überprüfen. In einer separaten Zeile wird die Statusänderung für jede geplante Aufgabe dokumentiert.
+
+   * Eine ![CheckmarkCircleGreen](/help/assets/icons/CheckmarkCircleGreen.svg) zeigt an, dass die Arbeitsmappe erfolgreich gesendet wurde.
+   * Ein ![AlertRed](/help/assets/icons/AlertRed.svg) zeigt an, dass ein Fehler aufgetreten ist.
+
+Alternativ können Sie ![Verlauf](/help/assets/icons/History.svg) für eine oder mehrere ausgewählte Arbeitsmappen auf der Registerkarte **[!UICONTROL Arbeitsmappen]** auswählen. Diese Aktion zeigt die Registerkarte **[!UICONTROL Verlauf]** mit einer nach Ihrer Auswahl gefilterten Liste an. Wählen Sie ![CrossSize75](/help/assets/icons/CrossSize75.svg) aus, um einen Filter zu entfernen.

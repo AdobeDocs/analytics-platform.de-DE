@@ -9,10 +9,10 @@ index: true
 user-guide-title: Handbuch zu Customer Journey Analytics
 user-guide-description: Hier erhalten Sie Informationen zu Adobe Customer Journey Analytics und Erläuterungen zur Nutzung von Analysis Workspace mit Daten aus Experience Platform.
 breadcrumb-title: Handbuch zu Customer Journey Analytics
-source-git-commit: 2581ff0f3d149a539ed730a941ce1b6288e9af0e
+source-git-commit: 9794779894fbecb433c16d108c555c5f81a4b491
 workflow-type: tm+mt
 source-wordcount: '1214'
-ht-degree: 86%
+ht-degree: 83%
 
 ---
 
@@ -263,7 +263,7 @@ ht-degree: 86%
       + [Administrationsanforderungen](../analysis-workspace/workspace-faq/frequently-asked-questions-analysis-workspace.md)
       + [Barrierefreiheit](../analysis-workspace/workspace-faq/aw-accessibility.md)
 
-+ Inhaltsanalyse {#content-analytics}
++ Content Analytics {#content-analytics}
    + [Überblick](/help/content-analytics/content-analytics.md)
    + Bericht {#report}
       + [Überblick](/help/content-analytics/report/report.md)
@@ -384,14 +384,14 @@ ht-degree: 86%
 + Report Builder {#cja-reportbuilder}
    + [Überblick](../report-builder/report-buider-overview.md)
    + [Einrichten von Report Builder](../report-builder/report-builder-setup.md)
-   + [Datenblock erstellen](../report-builder/create-a-data-block.md)
-   + [Report Builder-Hub](../report-builder/report-builder-hub.md)
+   + [Erstellen eines Datenblocks](../report-builder/create-a-data-block.md)
+   + [Report Builder Hub](../report-builder/report-builder-hub.md)
    + [Datenansicht auswählen](../report-builder/select-data-view.md)
-   + [Auswählen eines Datumsbereichs](../report-builder/select-date-range.md)
+   + [Datumsbereich auswählen](../report-builder/select-date-range.md)
    + [Arbeiten mit Segmenten](../report-builder/work-with-filters.md)
-   + [Filtern von Dimensionen](../report-builder/filter-dimensions.md)
-   + [Verwalten von Datenblöcken](../report-builder/manage-reportbuilder.md)
-   + [Erstellen von Zeitplänen für Arbeitsmappen](../report-builder/schedule-reportbuilder.md)
+   + [Filterdimensionen](../report-builder/filter-dimensions.md)
+   + [Datenblöcke verwalten](../report-builder/manage-reportbuilder.md)
+   + [Arbeitsmappen planen](../report-builder/schedule-reportbuilder.md)
    + [Eingeschränkte Beschriftungen](../report-builder/restricted-labels.md)
    + [Report Builder-Einstellungen](../report-builder/report-builder-settings.md)
 

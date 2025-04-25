@@ -6,65 +6,70 @@ feature: Report Builder
 type: Documentation
 exl-id: 119bd0b5-0d07-407f-b6e9-ef43352bad31
 solution: Customer Journey Analytics
-source-git-commit: bd2d45b9fc1380e36fc482ee75e1a9bbb26f6cf7
+source-git-commit: 065cf61d80ceb3c921ea666ba299e56fb044335b
 workflow-type: tm+mt
-source-wordcount: '491'
-ht-degree: 88%
+source-wordcount: '541'
+ht-degree: 26%
 
 ---
 
-# Report Builder-Hub
+# Report Builder Hub
+
+Der Report Builder-Hub ist der rechte Bereich, der in Ihrer Excel-Arbeitsmappe angezeigt wird, wenn Sie ![AdobeLogoRedonWhite](/help/assets/icons/AdobeLogoRedOnWhite.svg) **[!UICONTROL Report Builder]** in der Excel-Multifunktionsleiste auswählen.
 
 Verwenden Sie den Report Builder-Hub, um Datenblöcke zu erstellen, zu aktualisieren, zu löschen und zu verwalten.
 
-Der Report Builder-Hub enthält die Schaltflächen „Erstellen“ und „Verwalten“ sowie die Liste BEFEHLE und die Bedienfelder zur SCHNELLBEARBEITUNG.
+Der Report Builder-Hub enthält die Schaltflächen ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Create]**, ![TableManage](/help/assets/icons/TableManage.svg) **[!UICONTROL Manage]** und ![Calendar](/help/assets/icons/Calendar.svg)**[!UICONTROL Schedule]**, das **[!UICONTROL Commands]**-Bedienfeld und das **[!UICONTROL Quick Edit]**-Bedienfeld.
 
-<img src="./assets/hub51.png" width="50%" alt="Report Builder-Hub"/>
+![Report Builder Hub](assets/hub51.png){zoomable="yes"}
 
 
-## Die Schaltflächen „Erstellen“ und „Verwalten“
+Auswählen
 
-Verwenden Sie die Schaltflächen „Erstellen“ oder „Verwalten“, um neue Datenblöcke zu erstellen oder vorhandene Datenblöcke zu verwalten.
+* ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Create]**, um [neue Datenblöcke zu erstellen](create-a-data-block.md).
+* ![TableManage](/help/assets/icons/TableManage.svg) **[!UICONTROL Manage]** zum [Verwalten vorhandener Datenblöcke](manage-reportbuilder.md).
+* ![Kalender](/help/assets/icons/Calendar.svg) **[!UICONTROL Zeitplan]** zum [Verwalten von Zeitplänen zum Senden Ihrer Arbeitsmappe per E-Mail](schedule-reportbuilder.md).
 
-## Bedienfeld „Befehle“
+## Befehlsfenster
 
-Verwenden Sie das Bedienfeld „Befehle“, um auf Befehle zuzugreifen, die mit den ausgewählten Zellen oder einer vorherigen Aktion kompatibel sind.
+Verwenden Sie das Bedienfeld **[!UICONTROL Befehle]**, um auf Befehle zuzugreifen, die mit den ausgewählten Zellen oder einer vorherigen Aktion kompatibel sind.
 
-![Bedienfeld „Befehle“ im Report Builder-Hub](./assets/hub1.png)
-
-### Befehle
-
-| Angezeigte Befehle | Verfügbar wenn… | Zweck |
+| Befehle | Verfügbar wenn… | Zweck |
 |------|------------------|--------|
-| Datenblock erstellen | Eine oder mehrere Zellen sind in der Arbeitsmappe ausgewählt. | Dient zum Erstellen eines Datenblocks |
-| Datenblock bearbeiten | Die ausgewählte Zelle bzw. der ausgewählte Zellenbereich ist nur Teil eines Datenblocks. | Dient zum Bearbeiten eines Datenblocks |
-| Datenblock aktualisieren | Die Auswahl enthält mindestens einen Datenblock. Mit dem Befehl werden nur die Datenblöcke in der Auswahl aktualisiert. | Wird zum Aktualisieren eines oder mehrerer Datenblöcke verwendet |
-| Alle Datenblöcke aktualisieren | Die Arbeitsmappe enthält einen oder mehrere Datenblöcke. | Wird zum Aktualisieren aller Datenblöcke in der Arbeitsmappe verwendet |
-| Datenblock kopieren | Die ausgewählte Zelle oder der ausgewählte Zellbereich ist Teil eines oder mehrerer Datenblöcke. | Dient zum Kopieren eines Datenblocks |
-| Datenblock löschen | Die ausgewählte Zelle bzw. der ausgewählte Zellenbereich ist nur Teil eines Datenblocks. | Dient zum Löschen eines Datenblocks |
+| ![Bearbeiten](/help/assets/icons/Edit.svg) **[!UICONTROL Datenblock bearbeiten]** | Die ausgewählte Zelle bzw. der ausgewählte Zellenbereich ist nur Teil eines Datenblocks. | Dient zum Bearbeiten eines Datenblocks. |
+| ![Aktualisieren](/help/assets/icons/Refresh.svg) **[!UICONTROL Datenblock aktualisieren]** | Die Auswahl enthält mindestens einen Datenblock. Der Befehl aktualisiert nur die Datenblöcke in der Auswahl. | Dient zum Aktualisieren eines oder mehrerer Datenblöcke. |
+| ![DocumentRefresh](/help/assets/icons/DocumentRefresh.svg) **[!UICONTROL Alle Datenblöcke aktualisieren]** | Die Arbeitsmappe enthält einen oder mehrere Datenblöcke. | Dient zum Aktualisieren aller Datenblöcke in der Arbeitsmappe |
+| ![Senden](/help/assets/icons/Send.svg) **[!UICONTROL Arbeitsmappe senden]** | Die Arbeitsmappe enthält einen oder mehrere Datenblöcke. | Dient zum Senden der Arbeitsmappe als Datei per E-Mail. |
+| ![Kopieren](/help/assets/icons/Copy.svg) **[!UICONTROL Datenblock kopieren]** | Die ausgewählte Zelle oder der ausgewählte Zellbereich ist Teil eines oder mehrerer Datenblöcke. | Dient zum Kopieren eines Datenblocks. |
+| ![Cut](/help/assets/icons/Cut.svg) **[!UICONTROL Datenblock ausschneiden]** | Die ausgewählte Zelle oder der ausgewählte Zellbereich ist Teil eines oder mehrerer Datenblöcke. | Verwenden Sie , um einen Datenblock auszuschneiden. |
+| ![Löschen](/help/assets/icons/Delete.svg) **[!UICONTROL Datenblock löschen]** | Die ausgewählte Zelle bzw. der ausgewählte Zellenbereich ist nur Teil eines Datenblocks. | Zum Löschen eines Datenblocks verwenden |
 
 ## Bedienfeld „Schnellbearbeitung“
 
-Wenn Sie einen oder mehrere Datenblöcke in einem Arbeitsblatt auswählen, zeigt Report Builder das Bedienfeld „Schnellbearbeitung“ an. Sie können das Bedienfeld „Schnellbearbeitung“ verwenden, um Parameter in einem Datenblock zu ändern oder Parameter in mehreren Datenblöcken gleichzeitig zu ändern.
+Wenn Sie einen oder mehrere Datenblöcke in einem Arbeitsblatt auswählen, zeigt Report Builder das Bedienfeld &quot;**[!UICONTROL &quot;]**. Sie können das Bedienfeld **[!UICONTROL Schnellbearbeitung]** verwenden, um Parameter in einem oder mehreren Datenblöcken gleichzeitig zu ändern.
 
-![Das Bedienfeld „Schnellbearbeitung“ in Report Builder](./assets/hub2.png)
-
-Die mithilfe der Schnellbearbeitungs-Bereiche vorgenommenen Änderungen gelten für alle ausgewählten Datenblöcke.
+Die Änderungen, die Sie bei Verwendung der **[!UICONTROL Schnellbearbeitung]**-Abschnitte vornehmen, gelten für alle ausgewählten Datenblöcke.
 
 ### Datenansichten
 
-Datenblöcke rufen Daten aus einer ausgewählten Datenansicht ab. Wenn mehrere Datenblöcke in einem Arbeitsblatt ausgewählt sind und sie keine Daten aus derselben Datenansicht abrufen, zeigt der Link für **Datenansichten** *Mehrere* an.
+Datenblöcke rufen Daten aus einer ausgewählten Datenansicht ab. Wenn mehrere Datenblöcke in einem Arbeitsblatt ausgewählt sind und sie keine Daten aus derselben Datenansicht abrufen, wird der **Datenansichten**-Link **[!UICONTROL _Mehrere_]** angezeigt.
 
-Wenn Sie die Datenansicht ändern, übernehmen alle Datenblöcke in der Auswahl die neue Datenansicht. Komponenten im Datenblock werden mit der neuen Datenansicht abgeglichen, die beispielsweise auf einer ID basiert, die mit ```evars``` übereinstimmt). Wenn eine Komponente nicht in einem Datenblock gefunden wird, wird eine Warnmeldung angezeigt und die Komponente wird aus dem Datenblock entfernt.
+Wenn Sie die Datenansicht ändern, übernehmen alle Datenblöcke in der Auswahl die neue Datenansicht. Komponenten im Datenblock werden basierend auf der ID mit der neuen Datenansicht abgeglichen. Wenn eine Komponente nicht in einem Datenblock gefunden wird, wird die Komponente entfernt und durch **[!UICONTROL Ungültiger Wert]** ersetzt oder ![AlertRed](/help/assets/icons/AlertRed.svg) wird für die spezifische Komponente angezeigt.
 
-Um die Datenansicht zu ändern, wählen Sie eine neue Datenansicht aus dem Dropdown-Menü aus.
+Um die Datenansicht zu ändern, wählen Sie eine neue Datenansicht aus dem **[!UICONTROL Datenansicht]** Dropdown-Menü aus.
 
-![Der Report Builder-Hub mit dem Dropdown-Menü „Datenansicht“.](./assets/image16.png)
 
 ### Datumsbereich
 
-**Datumsbereich** zeigt den Datumsbereich für die ausgewählten Datenblöcke an. Wenn mehrere Datenblöcke mit mehreren Datumsbereichen ausgewählt sind, zeigt der Link für **Datumsbereich** *Mehrere* an.
+**Datumsbereich** zeigt den Datumsbereich für die ausgewählten Datenblöcke an. Wenn mehrere Datenblöcke mit mehreren Datumsbereichen ausgewählt sind, zeigt der Link **[!UICONTROL Datumsbereich]** &quot;**[!UICONTROL _&quot;_]**.
 
-### Segmente 
+### Segmente
 
-Der **Segmente**-Link zeigt eine zusammenfassende Liste der Segmente an, die von den ausgewählten Datenblöcken verwendet werden. Wenn mehrere Datenblöcke mit mehreren angewendeten Segmenten ausgewählt sind, wird der Link **Segmente** angezeigt *Mehrere*.
+Der **Segmente**-Link zeigt eine zusammenfassende Liste der Segmente an, die von den ausgewählten Datenblöcken verwendet werden. Wenn mehrere Datenblöcke mit mehreren angewendeten Segmenten ausgewählt sind, wird der Link **Segmente** angezeigt **[!UICONTROL _Mehrere_]**.
+
+>[!MORELIKETHIS]
+>
+>[Datenansichten auswählen](select-data-view.md)
+>[Datumsbereich auswählen](select-date-range.md)
+>[Arbeiten mit Filtern](work-with-filters.md)
+>

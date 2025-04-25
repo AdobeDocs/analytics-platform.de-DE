@@ -4,10 +4,10 @@ description: Listet Inhaltsaktualisierungen für Dokumentation zu Customer Journ
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: b880c63d22cec0e7de4f313eef72e86f41e85eca
+source-git-commit: 9cda9a2b8d5ec876a1c4a5c539daa1e0624a4460
 workflow-type: tm+mt
-source-wordcount: '5057'
-ht-degree: 91%
+source-wordcount: '5066'
+ht-degree: 90%
 
 ---
 
@@ -20,6 +20,7 @@ Die folgenden Aktualisierungen wurden seit der ersten Erstellung der Customer Jo
 | Funktion | Beschreibung |
 | --- | --- |
 | **April 2025** | |
+| Report Builder | Die Dokumentation zu [Report Builder} wurde ](/help/report-builder/report-buider-overview.md) und aktualisiert. |
 | Anzeigen und Verwalten der Nutzung | Die Dokumentation zur [Anzeige](/help/connections/manage-connections.md#usage) und [Verwaltung](/help/technotes/estimate-usage.md) der Customer Journey Analytics-Nutzung wurde überarbeitet |
 | Adobe Content Analytics | Mit [Content Analytics](/help/content-analytics/content-analytics.md) können Sie schnell und einfach große Mengen von Inhaltsdaten untersuchen, um Trends aufzudecken, Anomalien zu erkennen, die Ermüdung von Inhalten zu identifizieren und Erkenntnisse aus der Offenlegung von Inhalten zu gewinnen. |
 | XDM-Felder zum Erfassen von Streaming-Mediendaten in Adobe Experience Platform wurden aktualisiert | Beim Erfassen von Streaming-Mediendaten in Adobe Experience Platform sollten die XDM-Feldpfade, die unter der Überschrift „XDM-Feldpfad“ der Dokumentation zu Streaming-Medienparametern angezeigt werden, nicht mehr verwendet werden. Diese Feldpfade befinden sich auf den folgenden Seiten und sind als „Veraltet“ gekennzeichnet: [Audio- und Videoparameter](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/audio-video-parameters), [Anzeigenparameter](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/ad-parameters), [Kapitelparameter](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/chapter-parameters), [Player-](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/player-state-parameters) und [Qualitätsparameter](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/quality-parameters). |

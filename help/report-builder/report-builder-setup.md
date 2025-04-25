@@ -6,16 +6,16 @@ feature: Report Builder
 type: Documentation
 exl-id: 99aedc28-05d5-4fc1-8c32-6e5d1d3b0f84
 solution: Customer Journey Analytics
-source-git-commit: 9efad7c7808a7a68bc25fc5f1700f4e4f8e18614
+source-git-commit: 065cf61d80ceb3c921ea666ba299e56fb044335b
 workflow-type: tm+mt
-source-wordcount: '494'
-ht-degree: 87%
+source-wordcount: '529'
+ht-degree: 26%
 
 ---
 
 # Einrichten von Report Builder
 
-Über das Excel-Add-in-Menü können Sie schnell auf Report Builder zugreifen.
+In diesem Artikel werden die Anforderungen für die Verwendung von Report Builder for Customer Journey Analytics in Microsoft Excel beschrieben. und wie das Add-In installiert und eingerichtet wird.
 
 ## Voraussetzungen
 
@@ -31,20 +31,20 @@ Report Builder für Customer Journey Analytics wird von den folgenden Betriebssy
 - Windows 10 Version 1904 oder höher
 - Excel-Version 2106 oder höher
 
-  Alle Windows-Desktop-Excel-Benutzer müssen Microsoft Edge Webview2 installieren, um das Add-in verwenden zu können. So installieren Sie den Controller:
+  Alle Windows-Desktop-Excel-Benutzer müssen Microsoft Edge Webview2 installieren, um das Add-in verwenden zu können. Zur Installation:
 
-   1. Öffnen von <https://aka.ms/webview2installer>.
-   1. Wählen Sie das Evergreen Standalone-Installationsprogramm aus und laden Sie es herunter.
-   1. Folgen Sie den Anweisungen bei der Installation.
+   1. Öffnen von <https://developer.microsoft.com/en-us/microsoft-edge/webview2/>.
+   1. Wählen Sie die entsprechende Version des **[!UICONTROL Evergreen Standalone Installer]** für Ihre Plattform aus und laden Sie sie herunter.
+   1. Führen Sie das Installationsprogramm aus und befolgen Sie die Installationsanweisungen.
 
 ### Web Office
 
-- Unterstützt alle Browser und Versionen
+- Unterstützt alle Browser und Versionen.
 
 
 ## Report Builder Excel-Add-in
 
-Sie müssen das Excel-Add-in für Report Builder installieren, um Report Builder für Customer Journey Analytics verwenden zu können. Nachdem Sie das Excel-Add-in für Report Builder installiert haben, können Sie über eine geöffnete Excel-Arbeitsmappe auf Report Builder zugreifen.
+Installieren Sie das Report Builder Excel-Add-in, um Report Builder für Customer Journey Analytics zu verwenden. Nachdem Sie das Report Builder Excel-Add-in installiert haben, können Sie über eine geöffnete Excel-Arbeitsmappe auf Report Builder zugreifen.
 
 ### Herunterladen und Installieren des Report Builder-Add-ins
 
@@ -52,68 +52,70 @@ So laden Sie das Report Builder-Add-in herunter und installieren es
 
 1. Starten Sie Excel und öffnen Sie eine neue Arbeitsmappe.
 
-1. Wählen Sie „Einfügen“ > „Add-ins abrufen“ aus.
+1. Wählen **[!UICONTROL Einfügen]** > **[!UICONTROL Add-Ins]** > **[!UICONTROL Add-Ins abrufen]** aus dem Hauptmenü aus.
 
-1. Wählen Sie im Dialogfeld „Office-Add-ins“ die Registerkarte „Store“ aus.
+1. Wählen Sie im Dialogfeld „Office-Add-ins“ die Registerkarte **[!UICONTROL Store]** aus.
 
-1. Suchen Sie nach „Report Builder“ und klicken Sie auf „Hinzufügen“.
+1. Suchen Sie nach `Report Builder` und wählen Sie **[!UICONTROL Hinzufügen]** aus.
 
-1. Klicken Sie im Dialogfeld „Lizenzbedingungen“ und „Datenschutzrichtlinien“ auf „Weiter“.
+1. Wählen Sie im Dialogfeld Lizenzbedingungen und Datenschutzrichtlinien die Option **[!UICONTROL Weiter]**.
 
-**Wenn die Registerkarte „Store“ nicht angezeigt wird**
+Wenn die **[!UICONTROL Store]**-Registerkarte nicht angezeigt wird:
 
-1. Wählen Sie in Excel „Datei“ > „Konto“ > „Einstellungen verwalten“ aus.
+1. Wählen Sie in Excel **[!UICONTROL Datei]** > **[!UICONTROL Konto]** > **[!UICONTROL Einstellungen verwalten]** aus dem Hauptmenü aus.
 
-1. Aktivieren Sie das Kontrollkästchen neben „Optionale verbundene Erlebnisse aktivieren“
+1. Aktivieren Sie das Kontrollkästchen neben **[!UICONTROL Optionale verbundene Erlebnisse aktivieren]**.
 
 1. Starten Sie Excel neu.
 
-**Wenn Ihre Organisation den Zugriff auf den Microsoft Store blockiert**
+Wenn Ihr Unternehmen den Zugriff auf den Microsoft Store blockiert:
 
-Wenden Sie sich an Ihre IT- oder Sicherheitsabteilung, um eine Genehmigung für das Report Builder-Add-in anzufordern. Nachdem die Genehmigung erteilt wurde, wählen Sie im Dialogfeld „Office-Add-Ins“ die Registerkarte „Admin Managed“ aus.
+- Wenden Sie sich an Ihre IT- oder Sicherheitsabteilung, um eine Genehmigung für das Report Builder-Add-in anzufordern. Nachdem die Genehmigung erteilt wurde, wählen Sie im Dialogfeld **[!UICONTROL Add-Ins]** die Registerkarte **[!UICONTROL Admin Managed]** aus.
 
-![Die Registerkarte „Admin Managed“ im Dialogfeld „Office-Add-Ins“.](./assets/image1.png)
+  ![Die Registerkarte „Admin Managed“ im Dialogfeld „Office-Add-Ins“.](./assets/image1.png){zoomable="yes"}
 
-Nach der Installation des Report Builder-Add-ins wird das Report Builder-Symbol im Excel-Band auf der Registerkarte „Start“ angezeigt.
+Nach der Installation des Report Builder-Add-Ins wird das Symbol ![AdobeLogoRedonWhite](/help/assets/icons/AdobeLogoRedOnWhite.svg) **[!UICONTROL Report Builder]** im Excel-Menüband unter der Registerkarte **[!UICONTROL Startseite]** angezeigt.
 
-![Das Report Builder-Symbol in Excel](./assets/rb_app_icon.png)
+![Das Report Builder-Symbol in Excel](./assets/rb_app_icon.png){zoomable="yes"}
+
 
 ## Anmelden bei Report Builder
 
-Nachdem Sie das Report Builder for Excel-Add-in für Ihr Betriebssystem oder Ihren Browser installiert haben, führen Sie die folgenden Schritte aus, um sich bei Report Builder anzumelden.
+Nachdem Sie das Report Builder for Excel-Add-in für Ihre Betriebsplattform oder Ihren Browser installiert haben, führen Sie die folgenden Schritte aus, um sich bei Report Builder anzumelden.
 
 1. Öffnen Sie eine Excel-Arbeitsmappe.
 
-1. Klicken Sie auf das Report Builder-Symbol, um Report Builder zu starten.
+1. Wählen Sie ![AdobeLogoRedOnWhite](/help/assets/icons/AdobeLogoRedOnWhite.svg) **[!UICONTROL Report Builder]** aus, um Report Builder zu starten.
 
-1. Klicken Sie in der Adobe Report Builder-Symbolleiste auf **Anmelden**.
+1. Wählen Sie in der Adobe Report Builder-Symbolleiste **[!UICONTROL Anmelden]** aus.
 
-   ![Klicken Sie auf die Schaltfläche Report Builder-Anmeldung.](./assets/rb_login.png)
+   ![Klicken Sie auf die Schaltfläche Report Builder-Anmeldung.](./assets/rb_login.png){zoomable="yes"}
 
-1. Geben Sie Ihre Adobe Experience ID-Kontoinformationen ein. Ihre Kontoinformationen sollten mit Ihren Customer Journey Analytics-Anmeldedaten übereinstimmen.
+1. Geben Sie Ihre Adobe-Kontoinformationen ein. Ihre Kontoinformationen sollten mit Ihren Customer Journey Analytics-Anmeldedaten übereinstimmen.
 
-   ![Ihr Anmeldesymbol und Ihre Organisation.](./assets/image4.png)
+   ![Ihr Anmeldesymbol und Ihre Organisation.](./assets/image4.png){zoomable="yes"}
 
 Nach der Anmeldung werden Ihr Anmeldesymbol und Ihre Organisation oben im Bedienfeld angezeigt
 
+
 ## Wechseln von Organisationen
 
-Bei der ersten Anmeldung werden Sie bei der Ihrem Profil zugewiesenen Standardorganisation angemeldet.
+Bei der ersten Anmeldung werden Sie bei der Ihrem Profil zugewiesenen Standardorganisation oder der Organisation angemeldet, die Sie im Rahmen des Anmeldevorgangs ausgewählt haben.
 
-1. Klicken Sie auf den Namen der Organisation, die bei der Anmeldung angezeigt wird.
+1. Wählen Sie den Namen der Organisation aus, der bei der Anmeldung angezeigt wird.
 
 1. Wählen Sie eine Organisation aus der Liste der verfügbaren Organisationen aus. Es werden nur Organisationen aufgelistet, auf die Sie Zugriff haben.
 
-   ![Die Liste der Organisationen, auf die Sie zugreifen können.](./assets/image5.png)
+   ![Die Liste der Organisationen, auf die Sie zugreifen können.](./assets/image5.png){zoomable="yes"}
 
 ## Abmelden
 
-Sie können sich über das Benutzerprofil von Report Builder abmelden.
+So melden Sie sich von Report Builder ab:
 
 1. Speichern Sie die Änderungen in allen geöffneten Arbeitsmappen.
 
-1. Klicken Sie auf das Avatar-Symbol, um Ihr Benutzerprofil anzuzeigen.
+1. Wählen Sie das Avatar-Symbol aus, um Ihr Benutzerprofil anzuzeigen.
 
-   ![Ihr Benutzerprofilavatar und die Schaltfläche Abmelden.](./assets/image6.png)
+   ![Ihr Benutzerprofilavatar und die Schaltfläche Abmelden.](./assets/image6.png){zoomable="yes"}
 
-1. Klicken Sie auf **Abmelden**.
+1. Wählen Sie **[!UICONTROL Abmelden]** aus.

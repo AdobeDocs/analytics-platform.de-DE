@@ -5,7 +5,7 @@ exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: bc2c959497230d7672d43d5cd409ca62d4627d6a
+source-git-commit: 6213cc09800743a1f7cb4828d71ee731439e529b
 workflow-type: tm+mt
 source-wordcount: '2125'
 ht-degree: 85%
@@ -191,7 +191,7 @@ Sie können ![Filtersymbol](https://spectrum.adobe.com/static/icons/workflow_18/
 
 ### Einstellungen (Segmente)
 
-Sie können Segmente hinzufügen, die für eine gesamte Datenansicht gelten. Dieses Segment wird auf alle Berichte angewendet, die Sie in Workspace ausführen. Ziehen Sie ein Segment aus der Liste in das Feld [!UICONTROL Segmente hinzufügen] in der linken Leiste.
+Sie können Segmente hinzufügen, die für eine gesamte Datenansicht gelten. Dieses Segment wird auf alle Berichte angewendet, die Sie in Workspace ausführen. Ziehen Sie ein Segment aus der Liste in das Feld **[!UICONTROL Segmente hinzufügen]** in der linken Leiste.
 
 ### Sitzungseinstellungen
 

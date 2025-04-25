@@ -6,92 +6,85 @@ feature: Report Builder
 type: Documentation
 solution: Customer Journey Analytics
 exl-id: 70103020-a4a9-43be-933c-bde5a6d088c8
-source-git-commit: bd2d45b9fc1380e36fc482ee75e1a9bbb26f6cf7
+source-git-commit: 9794779894fbecb433c16d108c555c5f81a4b491
 workflow-type: tm+mt
-source-wordcount: '641'
-ht-degree: 57%
+source-wordcount: '522'
+ht-degree: 21%
 
 ---
 
-# Verwalten von Datenblöcken in Report Builder
+# Datenblöcke verwalten
 
-Mit dem Datenblock-Manager können Sie alle Datenblöcke einer Arbeitsmappe anzeigen und verwalten. Der Datenblock-Manager bietet Such-, Filter- und Sortierfunktionen, mit denen Sie bestimmte Datenblöcke schnell finden können. Nach Auswahl eines oder mehrerer Datenblöcke können Sie diese bearbeiten, löschen oder aktualisieren.
+Sie können alle Datenblöcke in einer Arbeitsmappe mit dem [!UICONTROL Datenblock-Manager“ anzeigen und ]. Der [!UICONTROL Datenblock-Manager] bietet Such-, Filter- und Sortierfunktionen, mit denen Sie bestimmte Datenblöcke finden können. Nach Auswahl eines oder mehrerer Datenblöcke können Sie diese bearbeiten, löschen oder aktualisieren.
 
-![Der Bildschirm „Datenblock-Manager“.](./assets/image52.png)
+## Datenblöcke anzeigen
 
-## Anzeigen von Datenblöcken
+Um eine Tabelle anzuzeigen, die alle Datenblöcke in einer Arbeitsmappe auflistet, wählen Sie ![TableManage](/help/assets/icons/TableManage.svg) **[!UICONTROL Manage]**.
 
-Klicken Sie auf **Verwalten**, um eine Liste aller Datenblöcke in einer Arbeitsmappe anzuzeigen.
+![Die Option „Verwalten“, um eine Liste aller Datenblöcke anzuzeigen.](./assets/image53.png){zoomable="yes"}
+
+Der **[!UICONTROL Datenblock-Manager]** zeigt eine Tabelle mit allen in einer Arbeitsmappe vorhandenen Datenblöcken an.
+
+![Die Liste aller in einer Arbeitsmappe vorhandenen Datenblöcke.](./assets/image52.png){zoomable="yes"}
+
+Sie können mit ![ColumnSetting](/help/assets/icons/ColumnSetting.svg) auswählen, welche Spalten angezeigt werden sollen.
+
+## Datenblöcke sortieren
+
+Sie können die Datenblocktabelle nach einer angezeigten Spalte sortieren. Sie können Datenblöcke beispielsweise nach Datenansichten, Segmenten, Datumsbereich und anderen Variablen sortieren.
+
+Um die Datenblocktabelle zu sortieren, wählen Sie eine Spaltenüberschrift aus. Wählen Sie dieselbe Spaltenüberschrift aus, um die Sortierreihenfolge umzukehren.
 
 
-![Die Option „Verwalten“, um eine Liste aller Datenblöcke anzuzeigen.](./assets/image53.png)
+## Datenblöcke suchen
 
-Der Datenblock-Manager listet alle in einer Arbeitsmappe vorhandenen Datenblöcke auf. 
+Suchen Sie mithilfe ![ Felds ](/help/assets/icons/Search.svg)Suche **[!UICONTROL _Suche_]** nach beliebigen Elementen in der Datenblocktabelle. Sie können beispielsweise nach Metriken suchen, die in den Datenblöcken oder in der Datenansicht enthalten sind. Sie können auch nach Datumsangaben suchen, die in den Spalten „Datumsbereich“, „Änderungsdatum“ oder „Datum des letzten Durchgang“ angezeigt werden.
 
-![Die Liste aller in einer Arbeitsmappe vorhandenen Datenblöcke.](./assets/image52.png)
 
-## Sortieren der Datenblockliste
+## Datenblöcke bearbeiten
 
-Sie können die Datenblockliste nach einer angezeigten Spalte sortieren. Sie können die Datenvariablen beispielsweise nach Datenansichten, Blockierungslisten, Datumsbereich und anderen Variablen sortieren.
-
-Um die Datenblockliste zu sortieren, klicken Sie auf eine Spaltenüberschrift.
-
-![Datenblöcke sortieren.](./assets/image54.png)
-
-## Durchsuchen der Datenblockliste
-
-Verwenden Sie das Suchfeld, um in der Datenblocktabelle eine Suche durchzuführen. Sie können beispielsweise nach Metriken suchen, die in den Datenblöcken oder in der Datenansicht enthalten sind. Sie können auch nach Datumsangaben suchen, die in den Spalten „Datumsbereich“, „Änderungsdatum“ oder „Datum des letzten Durchgang“ angezeigt werden.
-
-![Verwenden des Suchfelds, um nach Elementen in der Datenblocktabelle zu suchen.](./assets/image55.png)
-
-## Bearbeiten von Datenblöcken
-
-Sie können die Datenansicht, den Datumsbereich oder die Segmente bearbeiten, die auf einen oder mehrere Datenblöcke angewendet wurden.
+Sie können Datenansichten und Datumsbereiche in Datenblöcken bearbeiten. Oder die auf Datenblöcke angewendeten Segmente.
 
 Sie können beispielsweise ein vorhandenes Segment in einem oder mehreren Datenblöcken durch ein neues Segment ersetzen.
 
 1. Wählen Sie die zu aktualisierenden Datenblöcke aus. Sie können das Kontrollkästchen auf der obersten Ebene aktivieren, um alle Datenblöcke auszuwählen. Sie können aber auch einzelne Datenblöcke auswählen.
 
-   ![Das Stiftsymbol „Bearbeiten“](./assets/image56.png)
+   ![Das Stiftsymbol „Bearbeiten“](./assets/image56.png){zoomable="yes"}
 
-1. Klicken Sie auf das Bearbeitungssymbol, um das Fenster „Schnellbearbeitung“ anzuzeigen.
+1. Wählen Sie ![Bearbeiten](/help/assets/icons/Edit.svg) aus, um das Fenster **[!UICONTROL Schnellbearbeitung]** anzuzeigen.
 
-   ![Das Fenster „Schnellbearbeitung“](./assets/image58.png)
+   ![Das Fenster „Schnellbearbeitung“](./assets/image58.png){zoomable="yes"}
 
-1. Wählen Sie einen Segment-Link aus, um Datenansichten, Datumsbereiche oder Segmente zu aktualisieren.
+1. Wählen Sie einen Link aus, um Datenansichten, Datumsbereiche oder Segmente zu aktualisieren. In **[!UICONTROL Schnellbearbeitung]** - **[!UICONTROL Segmente]** können Sie die Segmente für die ausgewählten Datenblöcke hinzufügen, entfernen oder aktualisieren.
 
-   ![Das Feld Segment hinzufügen im Fenster „Schnellbearbeitung“](./assets/image59.png)
+   ![Das Feld Segment hinzufügen im Fenster „Schnellbearbeitung“](./assets/image59.png){zoomable="yes"}
 
-## Aktualisieren von Datenblöcken
+## Datenblöcke aktualisieren
 
-Klicken Sie auf das Aktualisierungssymbol, um die Datenblöcke in der Liste zu aktualisieren.
+Wählen Sie ![Aktualisieren](/help/assets/icons/Refresh.svg), um die Datenblocktabelle zu aktualisieren.
 
-<img src="./assets/refresh-icon.png" width="15%" alt="Aktualisierungssymbol"/>
+Um zu überprüfen, ob ein Datenblock aktualisiert wurde, rufen Sie das Aktualisierungsstatus-Symbol auf:
 
-Um zu überprüfen, ob ein Datenblock aktualisiert wurde, rufen Sie das Aktualisierungsstatus-Symbol auf.
+- Ein erfolgreich aktualisierter Datenblock zeigt einen ![CheckmarkCircleGreen](/help/assets/icons/CheckmarkCircleGreen.svg) an.
 
-Bei einem erfolgreich aktualisierten Datenblock wird ein Häkchen in einem grünen Kreis angezeigt: <img src="./assets/refresh-success.png" width="5%" alt="Grüner Kreis mit Häkchen"/>.
-
-Bei einem Datenblock, der nicht aktualisiert werden konnte, wird das Warnsymbol angezeigt: <img src="./assets/refresh-failure.png" width="5%" alt="Rotes Dreieck mit Ausrufezeichen"/>. Auf diese Weise lässt sich leicht erkennen, ob Datenblöcke Fehler aufweisen.
+- Bei einem Datenblock, der nicht aktualisiert werden konnte, wird ein ![AlertRed](/help/assets/icons/AlertRed.svg) angezeigt.
 
 
-![Datenblock-Manager, der den Aktualisierungsstatus für jeden aufgelisteten Datenblock anzeigt.](./assets/image512.png)
+## Datenblöcke löschen
 
-## Löschen von Datenblöcken
+Löschen eines oder mehrerer Datenblöcke:
 
-Klicken Sie auf das Papierkorbsymbol, um einen ausgewählten Datenblock zu löschen.
+1. Einen oder mehrere Datenblöcke auswählen.
+1. Wählen Sie ![Löschen](/help/assets/icons/Delete.svg) aus.
+1. Wählen Sie **[!UICONTROL Dialogfeld]** Datenblock löschen **** oder **[!UICONTROL Abbrechen]**, um den Löschvorgang abzubrechen.
 
-## Gruppieren von Datenblöcken
+## Datenblöcke gruppieren
 
-Sie können Datenblöcke mithilfe des Dropdown-Menüs **Gruppieren nach** gruppieren. Alternativ können Sie auch auf einen Spaltentitel klicken. Um Datenblöcke nach Spalten zu sortieren, klicken Sie auf den Spaltentitel. Um Datenblöcke nach Gruppen zu gruppieren, wählen Sie einen Gruppennamen aus dem Dropdown-Menü **Gruppieren nach** aus. Der folgende Screenshot zeigt ein Beispiel für nach Blatt gruppierte Datenblöcke. Darin sind Datenblöcke zu sehen, die nach Blatt 1 und Blatt 2 gruppiert sind.  Dies ist beispielsweise nützlich, wenn ein Anwendungsfall zum Ersetzen von Segmenten verwendet wird. Wenn auf jeden Datenblock mehrere Segmente angewendet werden, ist es hilfreich, eine Gruppe zu erstellen, die alle Datenblöcke enthält, die Sie ersetzen möchten. Dann können Sie sie einfach gemeinsam auswählen und alle gleichzeitig bearbeiten.
+Sie können Datenblöcke mithilfe des Dropdown-Menüs **[!UICONTROL Gruppieren nach]** gruppieren oder einen Spaltentitel auswählen.
 
-![Datenblock-Manager mit der Liste „Gruppieren nach Blatt“.](./assets/group-data-blocks.png)
+Um Datenblöcke nach Spalten zu sortieren, wählen Sie den Spaltentitel aus. Um Datenblöcke nach Gruppen zu gruppieren, wählen Sie einen Gruppennamen aus dem Dropdown-Menü **[!UICONTROL Gruppieren nach]** aus. Der folgende Screenshot zeigt beispielsweise Datenblöcke, die nach Datenansicht gruppiert sind.
 
-## Ändern der Ansicht von Datenblock-Manager
+Sie können Gruppierung verwenden, um schnell Datenblöcke auszuwählen, für die Sie ein gemeinsames Element ändern möchten, z. B. ein Segment.
 
-Sie können auswählen, welche Spalten im Fenster „Datenblock-Manager“ angezeigt werden sollen.
+![Datenblock-Manager mit der Liste „Gruppieren nach Blatt“.](./assets/group-data-blocks.png){zoomable="yes"}
 
-
-Klicken Sie auf das <img src="./assets/image515.png" width="3%" alt="Symbol für Spaltenliste"/>-Symbol der Spaltenliste, um auszuwählen, welche Spalten im Datenblock-Manager aufgeführt werden. Wählen Sie einen Spaltennamen aus, um die entsprechende Spalte anzuzeigen. Heben Sie die Auswahl des Spaltennamens auf, um die Spalte aus der Ansicht zu entfernen.
-
-![Datenblock-Manager mit der Spaltenliste](./assets/image516.png)

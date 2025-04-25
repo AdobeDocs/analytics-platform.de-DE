@@ -6,14 +6,14 @@ feature: Report Builder
 type: Documentation
 exl-id: 46382621-d5e1-41d6-865c-782ec28a21fa
 solution: Customer Journey Analytics
-source-git-commit: 56ac1c5a6d13a972aed90cab79cbc5f794cedc9e
+source-git-commit: 7d3300336a955facc230f335d1452096700ea98b
 workflow-type: tm+mt
-source-wordcount: '718'
-ht-degree: 47%
+source-wordcount: '777'
+ht-degree: 23%
 
 ---
 
-# Datenblock erstellen
+# Erstellen eines Datenblocks
 
 Ein *Datenblock* ist die Datentabelle, die von einer einzelnen Datenanforderung erstellt wird. Eine Report Builder-Arbeitsmappe kann mehrere Datenblöcke enthalten. Wenn Sie einen Datenblock erstellen, konfigurieren Sie ihn zunächst und erstellen Sie dann den Build.
 
@@ -23,13 +23,14 @@ Konfigurieren Sie die anfänglichen Datenblockparameter für die Position des Da
 
 1. Wählen Sie ![Kreis hinzufügen](/help/assets/icons/AddCircle.svg) **[!UICONTROL Erstellen]**.
 
-   ![Screenshot mit der Option „Datenblock erstellen“.](./assets/create-datablock.png)
+   ![Screenshot mit der Option „Datenblock erstellen“](./assets/create-data-block.png){zoomable="yes"}
+
 
 1. Legen Sie den **[!UICONTROL Speicherort des Datenblocks]** fest.
 
-   Die Option „Datenblock-Speicherort“ definiert den Speicherort des Arbeitsblatts, an dem Report Builder die Daten zu Ihrem Arbeitsblatt hinzufügt.
+   Die Option Datenblock-Speicherort definiert den Speicherort des Arbeitsblatts, an dem Report Builder die Daten zu Ihrem Arbeitsblatt hinzufügt.
 
-   Um den Speicherort des Datenblocks anzugeben, wählen Sie eine einzelne Zelle im Arbeitsblatt aus oder geben Sie eine Zellenadresse ein, z. B. `a3`, `\\\$a3`, `a\\\$3` oder `sheet1!a2`. Die angegebene Zelle ist die obere linke Ecke des Datenblocks, wenn die Daten abgerufen werden.
+   Um den Speicherort des Datenblocks anzugeben, wählen Sie eine einzelne Zelle im Arbeitsblatt aus oder geben Sie eine Zellenadresse ein, z. B. `a3`, `\\\$a3`, `a\\\$3` oder `sheet1!a2`. Die angegebene Zelle wird zur oberen linken Ecke des Datenblocks, wenn die Daten abgerufen werden.
 
    Verwenden ![DataBlockSelector](/help/assets/icons/DataBlockSelector.svg), um eine Datenblockposition aus der aktuell ausgewählten Zelle im Blatt auszuwählen.
 
@@ -41,69 +42,79 @@ Konfigurieren Sie die anfänglichen Datenblockparameter für die Position des Da
 
 1. Legen Sie den **[!UICONTROL Datumsbereich]** fest.
 
-   Mit der Option „Datumsbereich“ können Sie einen Datumsbereich auswählen. Datumsbereiche können fest oder rollierend sein. Weitere Informationen zu Datumsbereichsoptionen finden Sie unter [Einen Datumsbereich auswählen](select-date-range.md).
+   Mit **[!UICONTROL Option]** Datumsbereich) können Sie einen Datumsbereich auswählen. Datumsbereiche können fest oder rollierend sein.
 
-   Wählen Sie **[!UICONTROL Kalender]** aus, um einen Datenbereich mithilfe von ![Kalender](/help/assets/icons/Calendar.svg) auszuwählen, oder geben Sie einen Datumsbereich manuell ein. Optional können Sie eine Vorgabe aus dem Dropdown-Menü „Suchvorgaben“ auswählen.
+   Wählen Sie **[!UICONTROL Kalender]** aus, um einen Datenbereich mithilfe von ![Kalender](/help/assets/icons/Calendar.svg) auszuwählen, oder geben Sie einen Datumsbereich manuell ein. Optional können Sie eine Vorgabe aus dem Dropdown **[!UICONTROL _Menü &quot;_]**&quot; auswählen.
 
    Wählen Sie **[!UICONTROL Aus Zelle]**, um Start- und Enddaten basierend auf einer Zelle im aktuellen Blatt zu definieren.
 
-1. Klicken Sie auf **Weiter**.
+   Weitere Informationen zu Datumsbereichsoptionen finden Sie unter [Einen Datumsbereich auswählen](select-date-range.md).
+
+1. Klicken Sie auf **[!UICONTROL Weiter]**.
 
    ![Screenshot mit der Option „Datumsbereich“ und der Schaltfläche „Aktiv Weiter“.](./assets/choose_date_data_view3.png)
 
-   Nach der Konfiguration des Datenblocks können Sie Dimensionen, Metriken und Segmente auswählen, um Ihren Datenblock zu erstellen. Die Registerkarten Dimensionen, Metriken und Segmente werden über dem Bereich Tabellen-Builder angezeigt.
+   Nach der Konfiguration des Datenblocks können Sie Dimensionen, Metriken und Segmente auswählen, um Ihren Datenblock zu erstellen. Die **[!UICONTROL Dimensionen]**, **[!UICONTROL Metriken]** und **[!UICONTROL Segmente]** werden über dem Bereich **[!UICONTROL Tabelle]** angezeigt.
 
 ## Datenblock erstellen
 
 Um den Datenblock zu erstellen, wählen Sie Berichtkomponenten aus und passen Sie dann das Layout an.
 
-1. Dimensionen, Metriken und Segmente hinzufügen.
+1. Fügen Sie **[!UICONTROL Dimensionen]**, **[!UICONTROL Metriken]** und **[!UICONTROL Segmente]** hinzu.
 
-   Scrollen Sie in den Komponentenlisten oder verwenden Sie das Feld **Suchen**, um Komponenten zu finden. Ziehen Sie Komponenten per Drag &amp; Drop in den Tabellenbereich oder doppelklicken Sie auf einen Komponentennamen in der Liste, um die Komponente automatisch zum Tabellenbereich hinzuzufügen.
+   Scrollen Sie in den Komponentenlisten oder verwenden Sie das Feld ![Suchen](/help/assets/icons/Search.svg) **[!UICONTROL _Komponenten suchen_]**, um Komponenten zu finden. Ziehen Sie Komponenten per Drag-and[!UICONTROL Drop in den Bereich ]Tabelle“ oder doppelwählen Sie einen Komponentennamen in der Liste aus, um die Komponente dem Bereich [!UICONTROL Tabelle] hinzuzufügen.
 
    Doppelklicken Sie auf eine Komponente, um sie einem Standardabschnitt der Tabelle hinzuzufügen.
 
-   - Dimensionskomponenten werden zum Bereich „Zeile“ oder zum Bereich „Spalte“ hinzugefügt, wenn bereits eine Dimension in den Spalten vorhanden ist.
-   - Datumskomponenten werden dem Abschnitt „Spalte“ hinzugefügt.
-   - Segmentkomponenten werden zum Abschnitt Segmente hinzugefügt.
-
-### Startdatum als Dimension
-
-Legen Sie das Startdatum als Dimension fest, um das Startdatum Ihres Datenblocks eindeutig zu identifizieren. Dies ist hilfreich, wenn Sie einen regelmäßig geplanten Bericht mit einem rollierenden Datumsbereich haben oder wenn Sie einen unkonventionellen Datumsbereich haben und Sie das Startdatum löschen müssen.
-
-![Screenshot mit dem Startdatum in der Liste der Dimensionen.](./assets/start-date-dimension.png)
+   - Dimension-Komponenten werden dem Abschnitt ![TableSelectRow](/help/assets/icons/TableSelectRow.svg) **[!UICONTROL Row]** oder dem Abschnitt ![TableSelectColumn](/help/assets/icons/TableSelectColumn.svg) **[!UICONTROL Column]** hinzugefügt, wenn die Dimension bereits in den Spalten vorhanden ist.
+   - Datumskomponenten werden dem Abschnitt ![TableSelectColumn](/help/assets/icons/TableSelectColumn.svg) **[!UICONTROL Column]** hinzugefügt.
+   - Segmentkomponenten werden zum Abschnitt ![Segmentierung](/help/assets/icons/Segmentation.svg)**[!UICONTROL Segmente]** hinzugefügt.
+   - Metrikkomponenten werden zum Abschnitt ![Ereignis](/help/assets/icons/Event.svg)**[!UICONTROL Werte]** hinzugefügt.
 
 1. Ordnen Sie die Elemente im Tabellenbereich an, um das Layout Ihres Datenblocks anzupassen.
 
-   Ziehen Sie Komponenten per Drag &amp; Drop in den Tabellenbereich, um sie neu anzuordnen, oder klicken Sie mit der rechten Maustaste auf einen Komponentennamen und wählen Sie im Optionsmenü die Option aus.
+   Ziehen Sie Komponenten per Drag-and-Drop in jede Liste im Tabellenbereich, um die Komponenten neu anzuordnen, oder wählen Sie ![MehrKlein](/help/assets/icons/MoreSmall.svg) und wählen Sie ![Pfeil](/help/assets/icons/ArrowUp.svg) Nach oben, ![PfeilNach unten](/help/assets/icons/ArrowDown.svg) Nach unten und mehr aus, um Komponenten innerhalb einer Liste zu verschieben.
 
    Wenn Sie Komponenten zur Tabelle hinzufügen, wird eine Vorschau des Datenblocks an der Stelle des Datenblocks im Arbeitsblatt angezeigt. Das Layout der Datenblock-Vorschau wird automatisch aktualisiert, wenn Sie in der Tabelle Elemente hinzufügen, verschieben oder entfernen.
 
    ![Screenshot mit den hinzugefügten Komponenten und dem aktualisierten Arbeitsblatt.](./assets/image10.png)
 
-### Zeilen- und Spaltenüberschriften anzeigen oder ausblenden
 
-1. Wählen Sie das Symbol **[!UICONTROL Tabelle]** ![Einstellung](/help/assets/icons/Setting.svg)Einstellungen aus.
+1. Legen Sie optional das **[!UICONTROL Startdatum]** als Dimension fest, um das Startdatum Ihres Datenblocks zu identifizieren. Das Hinzufügen der Startdaten als Dimension ist hilfreich, wenn Sie einen regelmäßig terminierten Bericht mit einem rollierenden Datumsbereich haben. Oder wenn Sie einen unkonventionellen Datumsbereich haben und Sie das Startdatum explizit angeben müssen.
 
-   ![Screenshot mit der Option „Tabelleneinstellungen“](./assets/table-settings.png)
+   ![Screenshot mit dem Startdatum in der Liste der Dimensionen.](./assets/start-date-dimension.png)
 
-1. Aktivieren oder deaktivieren Sie die Option, um Zeilen- und Spaltenüberschriften anzuzeigen. Die Kopfzeilen werden standardmäßig angezeigt.
+1. Optional können Sie Zeilen- und Spaltenüberschriften ein- oder ausblenden. Gehen Sie dazu wie folgt vor:
 
-### Dimensionsbeschriftungen und Metrikkopfzeilen ein- oder ausblenden
+   1. Wählen Sie das Symbol **[!UICONTROL Tabelle]** ![Einstellung](/help/assets/icons/Setting.svg)Einstellungen aus.
 
-Wählen Sie das Symbol mit den Auslassungspunkten entweder für die Dimensionen oder für die Spaltenüberschriften aus, um die Einstellungen anzuzeigen.
+      ![Screenshot mit der Option „Tabelleneinstellungen“](./assets/table-settings.png)
 
-![Das Symbol mit den Auslassungspunkten im Zeilenabschnitt.](./assets/row-heading.png)
+   1. Aktivieren oder deaktivieren Sie die Option **[!UICONTROL Zeilen- und Spaltenüberschriften anzeigen]**. Die Kopfzeilen werden standardmäßig angezeigt.
 
-1. Wählen Sie ![VisibilityOff](/help/assets/icons/VisibilityOff.svg) **[!UICONTROL Hide]** oder ![Visibility](/help/assets/icons/Visibility.svg) **[!UICONTROL Show]** aus, um die Dimensionsbeschriftungen oder Spaltenüberschriften umzuschalten. Alle Beschriftungen werden standardmäßig angezeigt.
+1. Optional können Sie auch Dimensionsbeschriftungen und Metrikkopfzeilen ein- oder ausblenden. Gehen Sie dazu wie folgt vor:
 
-1. Wählen Sie **[!UICONTROL Beenden]** aus.
+   1. Wählen Sie ![MehrKlein](/help/assets/icons/MoreSmall.svg) auf der Dimensionsbeschriftung oder in der Spaltenüberschrift aus, um das Kontextmenü anzuzeigen.
+
+      ![Das Symbol mit den Auslassungspunkten im Zeilenabschnitt.](./assets/row-heading.png)
+
+   1. Wählen Sie ![VisibilityOff](/help/assets/icons/VisibilityOff.svg) **[!UICONTROL Hide]** oder ![Visibility](/help/assets/icons/Visibility.svg) **[!UICONTROL Show]** aus, um die Dimensionsbeschriftung oder Spaltenüberschrift umzuschalten. Alle Beschriftungen werden standardmäßig angezeigt.
+
+1. Wählen **[!UICONTROL Beenden]**, um die Konfiguration Ihres Datenblocks abzuschließen.
+
+1. Eine Verarbeitungsmeldung **[!UICONTROL #BUSY]** wird angezeigt, während die Analysedaten abgerufen werden.
+
+   ![Die Verarbeitungsmeldung.](./assets/image11.png)
+
+1. Report Builder ruft die Daten ab und zeigt den abgeschlossenen Datenblock im Arbeitsblatt an.
+
+   ![Der abgeschlossene Datenblock.](./assets/image12.png)
 
 
-Eine Verarbeitungsmeldung wird angezeigt, während die Analysedaten abgerufen werden.
-
-![Die Verarbeitungsmeldung.](./assets/image11.png)
-
-Report Builder ruft die Daten ab und zeigt den abgeschlossenen Datenblock im Arbeitsblatt an.
-
-![Der abgeschlossene Datenblock.](./assets/image12.png)
+>[!MORELIKETHIS]
+>
+>[Datenansicht auswählen](select-data-view.md)
+>[Datumsbereich auswählen](select-date-range.md)
+>[Filterdimensionen](filter-dimensions.md)
+>[Arbeiten mit Segmenten](work-with-filters.md)
+>
