@@ -4,9 +4,9 @@ description: Listet Inhaltsaktualisierungen für Dokumentation zu Customer Journ
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 9cda9a2b8d5ec876a1c4a5c539daa1e0624a4460
+source-git-commit: f3e1f5190024a38dc26199061fb7f466b8d0c472
 workflow-type: tm+mt
-source-wordcount: '5066'
+source-wordcount: '5088'
 ht-degree: 90%
 
 ---
@@ -20,6 +20,8 @@ Die folgenden Aktualisierungen wurden seit der ersten Erstellung der Customer Jo
 | Funktion | Beschreibung |
 | --- | --- |
 | **April 2025** | |
+| Anwendungsfall für die Produktanalyse | [Produktanalyse in Customer Journey Analytics&quot; ](/help/use-cases/product-analysis.md). |
+| Freigegebene Metriken und Dimensionen | Es wurde Dokumentation für die Funktion [Freigegebene Metriken und Dimensionen](/help/data-views/shared-metrics-dimensions/smd-overview.md) hinzugefügt. |
 | Report Builder | Die Dokumentation zu [Report Builder} wurde ](/help/report-builder/report-buider-overview.md) und aktualisiert. |
 | Anzeigen und Verwalten der Nutzung | Die Dokumentation zur [Anzeige](/help/connections/manage-connections.md#usage) und [Verwaltung](/help/technotes/estimate-usage.md) der Customer Journey Analytics-Nutzung wurde überarbeitet |
 | Adobe Content Analytics | Mit [Content Analytics](/help/content-analytics/content-analytics.md) können Sie schnell und einfach große Mengen von Inhaltsdaten untersuchen, um Trends aufzudecken, Anomalien zu erkennen, die Ermüdung von Inhalten zu identifizieren und Erkenntnisse aus der Offenlegung von Inhalten zu gewinnen. |
