@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: ea5c9114-1fc3-4686-b184-2850acb42b5c
-source-git-commit: 9237549aabe73ec98fc42d593e899c98e12eb194
+source-git-commit: e0e80723e21b7e8c460c05ec39b699eef00abb8b
 workflow-type: tm+mt
 source-wordcount: '1540'
 ht-degree: 7%
@@ -29,7 +29,7 @@ Diagrammbasiertes Stitching unterstützt die Verwendung der [`identifyMap` Felde
 
   Im folgenden Beispiel führen die Namespaces und Identitäten zu einer sortierten primären Identitätsliste und schließlich zur ausgewählten Identität.
 
-  <table>
+  <table style="table-layout:auto">
      <tr>
        <th>Namespaces</th>
        <th>Liste der Identitäten</th>
@@ -44,7 +44,7 @@ Diagrammbasiertes Stitching unterstützt die Verwendung der [`identifyMap` Felde
      </tr>
    </table>
 
-  <table>
+  <table style="table-layout:auto">
     <tr>
       <th>Sortierte Identitätsliste</th>
       <th>Ausgewählte Identität</th>
@@ -60,7 +60,7 @@ Diagrammbasiertes Stitching unterstützt die Verwendung der [`identifyMap` Felde
 
   Im folgenden Beispiel führen die Namespaces und Identitäten zu einer sortierten Identitätsliste für den ausgewählten Namespace (ECID) und schließlich zur ausgewählten Identität.
 
-  <table>
+  <table style="table-layout:auto">
      <tr>
        <th>Namespaces</th>
        <th>Liste der Identitäten</th>
@@ -75,7 +75,7 @@ Diagrammbasiertes Stitching unterstützt die Verwendung der [`identifyMap` Felde
      </tr>
    </table>
 
-  <table>
+  <table style="table-layout:auto">
     <tr>
       <th>Sortierte Identitätsliste</th>
       <th>Ausgewählte Identität</th>

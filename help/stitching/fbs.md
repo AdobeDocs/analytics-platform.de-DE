@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: e5cb55e7-aed0-4598-a727-72e6488f5aa8
-source-git-commit: 9237549aabe73ec98fc42d593e899c98e12eb194
+source-git-commit: e0e80723e21b7e8c460c05ec39b699eef00abb8b
 workflow-type: tm+mt
 source-wordcount: '1779'
 ht-degree: 15%
@@ -29,7 +29,7 @@ Die feldbasierte Zuordnung unterstützt die Verwendung der [`identifyMap` Felder
 
   Im folgenden Beispiel führen die Namespaces und Identitäten zu einer sortierten primären Identitätsliste und schließlich zur ausgewählten Identität.
 
-  <table>
+  <table style="table-layout:auto">
      <tr>
        <th>Namespaces</th>
        <th>Liste der Identitäten</th>
@@ -44,7 +44,7 @@ Die feldbasierte Zuordnung unterstützt die Verwendung der [`identifyMap` Felder
      </tr>
    </table>
 
-  <table>
+  <table style="table-layout:auto">
     <tr>
       <th>Sortierte Identitätsliste</th>
       <th>Ausgewählte Identität</th>
@@ -62,7 +62,7 @@ Die feldbasierte Zuordnung unterstützt die Verwendung der [`identifyMap` Felder
 
   Im folgenden Beispiel führen die Namespaces und Identitäten zu einer sortierten Identitätsliste für den ausgewählten Namespace (ECID) und schließlich zur ausgewählten Identität.
 
-  <table>
+  <table style="table-layout:auto">
      <tr>
        <th>Namespaces</th>
        <th>Liste der Identitäten</th>
@@ -77,7 +77,7 @@ Die feldbasierte Zuordnung unterstützt die Verwendung der [`identifyMap` Felder
      </tr>
    </table>
 
-  <table>
+  <table style="table-layout:auto">
     <tr>
       <th>Sortierte Identitätsliste</th>
       <th>Ausgewählte Identität</th>
