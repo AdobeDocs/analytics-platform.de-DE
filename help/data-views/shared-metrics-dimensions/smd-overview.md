@@ -2,7 +2,7 @@
 title: Übersicht über freigegebene Metriken und Dimensionen
 description: Verwenden Sie dieselbe Dimension oder Metrikreferenz für mehrere Datenansichten.
 exl-id: 998a9f9b-cfa7-4b97-b32b-d50e35d01b39
-source-git-commit: 5fd023f988e485f04654869a982e02cb0f3e52a1
+source-git-commit: 4bb24fae7c7d53a0fde3bb2dc35ef27f91701d5a
 workflow-type: tm+mt
 source-wordcount: '1245'
 ht-degree: 0%
@@ -89,7 +89,7 @@ Aktivieren Sie das Kontrollkästchen neben einer Komponente, um alle verfügbare
 ![Vorschau der verfügbaren Aktionen](assets/smd-actions.png)
 
 * ![Bleistiftsymbol](/help/assets/icons/Edit.svg) **[!UICONTROL Bearbeiten]**: Öffnen Sie die ausgewählten Dimensionen und Metriken im [freigegebenen Komponenten-Editor](shared-component-editor.md), mit dem Sie ihre [ anpassen können](/help/data-views/component-settings/overview.md). Wenn Sie mehrere Komponenten zur Bearbeitung auswählen, werden sie alle im Komponenten-Editor geöffnet. Sie können im Komponenten-Editor Komponenten umschalten und auf sie klicken, um dasselbe Feld für mehrere Komponenten zu bearbeiten.
-* ![Freigabesymbol](/help/assets/icons/Share.svg) **[!UICONTROL Für Datenansicht(en) freigeben]**: Öffnet ein Fenster, das alle in der ausgewählten Verbindung verfügbaren Datenansichten anzeigt. Aktivieren Sie das Kontrollkästchen für jede Datenansicht, in der Sie diese Komponente verfügbar machen möchten, und klicken Sie dann auf **[!UICONTROL Freigeben]**.
+* ![Freigabesymbol](/help/assets/icons/ShareAlt.svg) **[!UICONTROL Für Datenansicht(en) freigeben]**: Öffnet ein Fenster, das alle in der ausgewählten Verbindung verfügbaren Datenansichten anzeigt. Aktivieren Sie das Kontrollkästchen für jede Datenansicht, in der Sie diese Komponente verfügbar machen möchten, und klicken Sie dann auf **[!UICONTROL Freigeben]**.
 * ![Symbol „Freigabe aufheben](/help/assets/icons/SaveTo.svg) **[!UICONTROL Freigabe für Datenansicht(en) aufheben]**: Öffnet ein Fenster, das alle Datenansichten anzeigt, für die diese Komponente derzeit freigegeben ist. Aktivieren Sie das Kontrollkästchen für jede Datenansicht, aus der Sie die Verfügbarkeit dieser Komponente entfernen möchten, und klicken Sie dann auf **[!UICONTROL Freigabe aufheben]**.
 * ![Symbol „Duplizieren](/help/assets/icons/Copy.svg) **[!UICONTROL Duplizieren]**: Erstellt eine Kopie der ausgewählten Komponenten. Für duplizierte Komponenten wird eine neue Komponenten-ID generiert.
 * ![Löschsymbol](/help/assets/icons/Delete.svg) **[!UICONTROL Löschen]**: Entfernt die ausgewählten Komponenten aus der Benutzeroberfläche. Wenn die ausgewählten Komponenten für Datenansichten freigegeben sind, werden sie aufgehoben.
