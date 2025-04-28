@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: ea5c9114-1fc3-4686-b184-2850acb42b5c
-source-git-commit: 9118a3c20158b1a0373fab1b41595aa7b07075f6
+source-git-commit: 9237549aabe73ec98fc42d593e899c98e12eb194
 workflow-type: tm+mt
-source-wordcount: '1385'
+source-wordcount: '1540'
 ht-degree: 7%
 
 ---
@@ -15,9 +15,77 @@ ht-degree: 7%
 # Diagrammbasierte Zuordnung
 
 
-Bei der diagrammbasierten Zuordnung geben Sie einen Ereignis-Datensatz sowie die persistente ID (Cookie) und den Namespace der vorübergehenden ID (Personen-ID) für diesen Datensatz an. Diagrammbasiertes Stitching erstellt eine neue Spalte für die zusammengefügte ID im neuen zusammengefügten Datensatz. Verwendet dann die persistente ID , um das Identitätsdiagramm mithilfe des angegebenen Namespace aus dem Experience Platform Identity Service abzufragen und die zugeordnete ID zu aktualisieren.
+Bei der diagrammbasierten Zuordnung geben Sie einen Ereignis-Datensatz sowie die persistente ID (Cookie) und den Namespace der vorübergehenden ID (Personen-ID) für diesen Datensatz an. Diagrammbasiertes Stitching erstellt eine neue Spalte für die zusammengefügte ID im neuen zusammengefügten Datensatz. und verwendet dann die persistente ID, um das Identitätsdiagramm mithilfe des angegebenen Namespace aus dem Experience Platform Identity Service abzufragen und die zugeordnete ID zu aktualisieren.
 
 ![Diagrammbasiertes Stitching](/help/stitching/assets/gbs.png)
+
+## IdentityMap
+
+Diagrammbasiertes Stitching unterstützt die Verwendung der [`identifyMap` Feldergruppe ](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition#identity) folgenden Szenarien:
+
+- Verwendung der primären Identität in `identityMap` Namespace zum Definieren der persistenten ID:
+   - Wenn mehrere primäre Identitäten in verschiedenen Namespaces gefunden werden, werden die Identitäten in den Namespaces lexigrafisch sortiert und die erste Identität wird ausgewählt.
+   - Wenn mehrere primäre Identitäten in einem einzigen Namespace gefunden werden, wird die erste lexikografische primäre Identität ausgewählt, die verfügbar ist.
+
+  Im folgenden Beispiel führen die Namespaces und Identitäten zu einer sortierten primären Identitätsliste und schließlich zur ausgewählten Identität.
+
+  <table>
+     <tr>
+       <th>Namespaces</th>
+       <th>Liste der Identitäten</th>
+     </tr>
+     <tr>
+       <td>ECID</td>
+       <td><pre lang="json"><code>[<br/>&nbsp;&nbsp;{"id": "ecid-3"},<br/>&nbsp;&nbsp;{"id": "ecid-2", "primary": true},<br/>&nbsp;&nbsp;{"id": "ecid-1", "primary": true}<br/>&nbsp;]</code></pre></td>
+     </tr>
+     <tr>
+       <td>CCID</td>
+       <td><pre lang="json"><code>[<br/>&nbsp;&nbsp;{"id": "ccid-1"},<br/>&nbsp;&nbsp;{"id": "ccid-2", "primary": true}<br/>]</code></pre></td>
+     </tr>
+   </table>
+
+  <table>
+    <tr>
+      <th>Sortierte Identitätsliste</th>
+      <th>Ausgewählte Identität</th>
+    </tr>
+    <tr>
+      <td><pre lang="json"><code>PrimaryIdentities [<br/>&nbsp;&nbsp;{"id": "ccid-2", "namespace": "CCID"},<br/>&nbsp;&nbsp;{"id": "ecid-1", "namespace": "ECID"},<br/>&nbsp;&nbsp;{"id": "ecid-2", "namespace": "ECID"}<br/>]<br/>NonPrimaryIdentities [<br/>&nbsp;&nbsp;{"id": "ccid-1", "namespace": "CCID"},<br/>&nbsp;&nbsp;{"id": "ecid-3", "namespace": "ECID"}<br/>]</code></pre></td>
+      <td><pre lang="json"><code>"id": "ccid-2",<br/>"namespace": "CCID"</code></pre></td>
+    </tr>
+  </table>
+
+- Verwendung `identityMap` Namespace zum Definieren der persistenten ID:
+   - Wenn mehrere Werte für persistentID in einem `identityMap` Namespace gefunden werden, wird die erste lexikografische verfügbare Identität verwendet.
+
+  Im folgenden Beispiel führen die Namespaces und Identitäten zu einer sortierten Identitätsliste für den ausgewählten Namespace (ECID) und schließlich zur ausgewählten Identität.
+
+  <table>
+     <tr>
+       <th>Namespaces</th>
+       <th>Liste der Identitäten</th>
+     </tr>
+     <tr>
+       <td>ECID</td>
+       <td><pre lang="json"><code>[<br/>&nbsp;&nbsp;{"id": "ecid-3"},<br/>&nbsp;&nbsp;{"id": "ecid-2", "primary": true},<br/>&nbsp;&nbsp;{"id": "ecid-1", "primary": true}<br/>]</code></pre></td>
+     </tr>
+     <tr>
+       <td>CCID</td>
+       <td><pre lang="json"><code>[<br/>&nbsp;&nbsp;{"id": "ccid-1"},<br/>&nbsp;&nbsp;{"id": "ccid-2", "primary": true}<br/>]</code></pre></td>
+     </tr>
+   </table>
+
+  <table>
+    <tr>
+      <th>Sortierte Identitätsliste</th>
+      <th>Ausgewählte Identität</th>
+    </tr>
+    <tr>
+      <td><pre lang="json"><code>[<br/>&nbsp;&nbsp;"id": "ecid-1",<br/>&nbsp;&nbsp;"id": "ecid-2",<br/>&nbsp;&nbsp;"id": "ecid-3"<br/>]</code></pre></td>
+      <td><pre lang="json"><code>"id": "ecid-1",<br/>"namespace": "ECID"</code></pre></td>
+    </tr>
+  </table>
+
 
 ## Funktionsweise des diagrammbasierten Stitching
 
@@ -135,11 +203,11 @@ Die folgenden Voraussetzungen gelten speziell für das diagrammbasierte Stitchin
 
 - Der Ereignisdatensatz in Adobe Experience Platform, auf den Sie eine Zuordnung anwenden möchten, muss eine Spalte aufweisen, die einen Besucher in jeder Zeile identifiziert, die **persistente ID**. Beispielsweise eine Besucher-ID, die von einer Adobe Analytics AppMeasurement-Bibliothek generiert wurde, oder eine vom Experience Platform Identity Service generierte ECID.
 - Die persistente ID muss auch [als Identität definiert) ](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/ui/fields/identity) Schema sein.
-- Das Identitätsdiagramm vom Experience Platform Identity Service muss einen Namespace aufweisen (z. B. `Email` oder `Phone`), den Sie beim Zusammenfügen verwenden möchten, um die **vorübergehende ID** aufzulösen. Experience Platform Weitere Informationen finden Sie unter [](https://experienceleague.adobe.com/de/docs/experience-platform/identity/home) Identity Service erstellen.
+- Das Identitätsdiagramm aus Experience Platform Identity Service muss über einen Namespace verfügen (z. B. `Email` oder `Phone`), den Sie beim Zusammenfügen verwenden möchten, um die **vorübergehende ID** aufzulösen. Weitere Informationen finden Sie unter {](https://experienceleague.adobe.com/de/docs/experience-platform/identity/home)}Experience Platform Identity Service.[
 
 >[!NOTE]
 >
->Für **grafisches Stitching** Sie keine Real-time Customer Data Platform-Lizenz. Das Paket **Prime** oder höher von Customer Journey Analytics enthält die erforderlichen Experience Platform Identity Service-Berechtigungen.
+>Für **diagrammbasierte** benötigen Sie keine Real-time Customer Data Platform-Lizenz. Das Paket **Prime** oder höher von Customer Journey Analytics enthält die erforderlichen Experience Platform Identity Service-Berechtigungen.
 
 
 ## Einschränkungen

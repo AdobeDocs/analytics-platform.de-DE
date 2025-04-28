@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: a04c74ab-606e-45a9-a3e4-0d476c8d2426
-source-git-commit: 157f70353f60da3fec83e016e7a09f69f7f514cf
+source-git-commit: 7cd0bd94ec45b1570d0be765d95b25defa3e1b87
 workflow-type: tm+mt
-source-wordcount: '418'
-ht-degree: 10%
+source-wordcount: '462'
+ht-degree: 9%
 
 ---
 
@@ -23,7 +23,7 @@ Das Customer Journey Analytics-Paket, zu dem Sie berechtigt sind, bestimmt die v
 | | Customer Journey Analytics-<br/> | Customer Journey Analytics<br/>Prime | Customer Journey Analytics<br/>Ultimate |
 |---|---|---|---|
 | Verfügbare Stitching-Methoden | <li>Feldbasiertes Stitching</li> | <li>Feldbasiertes Stitching</li><li>Grafikbasierte Zuordnung</li> | <li>Feldbasiertes Stitching</li><li>Grafikbasierte Zuordnung</li> |
-| Einmaliges Zusammenfügen der Aufstockungsdauer | 13 Monate | 13 Monate | 25 Monate |
+| Einmaliges Zusammenfügen der Aufstockungsdauer | 13 Monate | 13 Monate | 25 Monate |
 | Lookback-Fenster und Wiederholungshäufigkeit | <li>1 Tag, jeden Tag</li><li>Bis zu 7 Tage, wöchentlich</li> | <li>1 Tag, jeden Tag</li><li>Bis zu 14 Tage, wöchentlich</li> | <li>1 Tag, jeden Tag</li><li>Bis zu 30 Tage, wöchentlich</li> |
 | Maximal zulässige Anzahl von Datensätzen für das Zusammenfügen | 5 | 15 | 50 |
 
@@ -34,7 +34,12 @@ Das Customer Journey Analytics-Paket, zu dem Sie berechtigt sind, bestimmt die v
    - Eine Anfrage zum Aktivieren der Zuordnung.
    - Die Datensatz-ID für den Datensatz, den Sie neu zuweisen möchten.
    - Der Spaltenname (Identitätspfad und Namespace) der persistenten ID für den gewünschten Datensatz (die Kennung, die in jeder Zeile angezeigt wird).
-   - Bei feldbasiertem Stitching der Spaltenname der vorübergehenden ID für den gewünschten Datensatz (die Personenkennung, die auch als Link zwischen Datensätzen im Kontext einer Verbindung dient). Bei der diagrammbasierten Zuordnung der Identity-Namespace, der für die Abfrage des Identitätsdiagramms verwendet werden soll.
+   - Wenn der Datensatz `identityMap` unterstützt:
+      - Geben Sie für das feldbasierte Stitching den Namespace sowohl für die persistenten als auch für die vorübergehenden IDs an.
+      - Geben Sie für das diagrammbasierte Stitching den Namespace für die persistente ID und den Identity-Namespace an, der für die Abfrage des Identitätsdiagramms verwendet werden soll.
+   - Wenn der Datensatz `identityMap` nicht unterstützt:
+      - Bei feldbasiertem Stitching der Spaltenname der vorübergehenden ID für den gewünschten Datensatz (die Personenkennung, die auch als Link zwischen Datensätzen im Kontext einer Verbindung dient).
+      - Bei der diagrammbasierten Zuordnung der Identity-Namespace, der für die Abfrage des Identitätsdiagramms verwendet werden soll.
    - Ihre Voreinstellung für Lookback-Fenster und Wiederholungshäufigkeit. In Ihrem Customer Journey Analytics-Paket finden Sie [Optionen](#options) verfügbar.
    - Sandbox-Name.
 
