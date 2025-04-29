@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: e5cb55e7-aed0-4598-a727-72e6488f5aa8
-source-git-commit: e0e80723e21b7e8c460c05ec39b699eef00abb8b
+source-git-commit: 98432804b71805c3714423dff577bbf80d5c92d1
 workflow-type: tm+mt
 source-wordcount: '1779'
 ht-degree: 15%
@@ -21,7 +21,7 @@ Bei der feldbasierten Zuordnung geben Sie einen Ereignis-Datensatz sowie die per
 
 ## IdentityMap
 
-Die feldbasierte Zuordnung unterstützt die Verwendung der [`identifyMap` Feldergruppe ](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition#identity) folgenden Szenarien:
+Die feldbasierte Zuordnung unterstützt die Verwendung der [`identityMap` Feldergruppe ](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition#identity) folgenden Szenarien:
 
 - Verwendung der primären Identität in `identityMap` Namespace zum Definieren der persistenten ID:
    - Wenn mehrere primäre Identitäten in verschiedenen Namespaces gefunden werden, werden die Identitäten in den Namespaces lexigrafisch sortiert und die erste Identität wird ausgewählt.
