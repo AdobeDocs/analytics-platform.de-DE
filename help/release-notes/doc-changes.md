@@ -4,10 +4,10 @@ description: Listet Inhaltsaktualisierungen für Dokumentation zu Customer Journ
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 1a88be1f79bc6dc07f849af5f32f3472105ee3ed
+source-git-commit: 8a8244bff45017a4b021599df6ff3dc37cf8e1c6
 workflow-type: tm+mt
-source-wordcount: '5103'
-ht-degree: 90%
+source-wordcount: '5133'
+ht-degree: 89%
 
 ---
 
@@ -20,6 +20,7 @@ Die folgenden Aktualisierungen wurden seit der ersten Erstellung der Customer Jo
 | Funktion | Beschreibung |
 | --- | --- |
 | **April 2025** | |
+| Erhöhte Exportbeschränkungen für vollständige Tabellen | Die Anzahl [ Spalten](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/export/export-cloud#comparison-of-full-table-export-in-customer-journey-analytics-to-data-warehouse-in-adobe-analytics) die Kundinnen und Kunden mit vollständigem Tabellenexport verwenden können, wurde von 5 Dimensionen und 5 Metriken auf 10 Dimensionen und 10 Metriken geändert. |
 | Verbindungen | Die Dokumentation zu Kunden-Journey-Verbindungen für bevorstehende Kunden-Journey-B2B edition wurde überarbeitet und aktualisiert. |
 | Anwendungsfall für die Produktanalyse | [Produktanalyse in Customer Journey Analytics&quot; ](/help/use-cases/product-analysis.md). |
 | Freigegebene Metriken und Dimensionen | Es wurde Dokumentation für die Funktion [Freigegebene Metriken und Dimensionen](/help/data-views/shared-metrics-dimensions/smd-overview.md) hinzugefügt. |

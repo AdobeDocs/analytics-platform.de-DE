@@ -5,7 +5,7 @@ title: Exportieren von Customer Journey Analytics-Berichten in die Cloud
 feature: Curate and Share
 exl-id: 072eadcc-43ff-42e3-86ee-82062fa02eba
 role: User
-source-git-commit: b14bc43a0cdf4901c5df171a116943beb2124991
+source-git-commit: 158d75f81490edca2b5219a9b3ede2fbcdcc5901
 workflow-type: tm+mt
 source-wordcount: '2285'
 ht-degree: 98%
@@ -189,7 +189,7 @@ Die folgenden Komponenten werden nicht unterstützt und Analysis Workspace forde
    * Hat [Persistenz aktiviert](/help/data-views/component-settings/persistence.md)
    * Verwendet keine [Bindungsdimension](/help/use-cases/data-views/binding-dimensions-metrics.md)
 * Mehrere Dimensionen, die aus Feldern stammen, die auf verschiedene [Arrays von Objekten](/help/use-cases/object-arrays.md) verweisen. (Mehrere Dimensionen, die auf dasselbe Array von Objekten verweisen, sind zulässig.)
-* Mehr als 5 Dimensionen und 5 Metriken pro Bericht (bis zu 5 Dimensionen und 5 Metriken werden unterstützt)
+* Mehr als 10 Dimensionen und 10 Metriken pro Bericht (bis zu 10 Dimensionen und 10 Metriken werden unterstützt)
 * In Tabellenspalten:
    * Datumsbereiche
    * Dimensionen
@@ -227,8 +227,8 @@ Wenn Sie Data Warehouse zuvor zum Exportieren von Adobe Analytics-Daten verwende
 | Erstellen eines benutzerspezifischen Berichts | Ja | Ja |
 | Berechnete Metriken | Ja | Nein |
 | Segmente | Ja | Begrenzt |
-| Dimensionen | Limit von 5 | Unbegrenzt |
-| Metriken | Limit von 5 | Unbegrenzt |
+| Dimensionen | Limit von 10 | Unbegrenzt |
+| Metriken | Limit von 10 | Unbegrenzt |
 | Berichtszeilen | Je nach Stufe ein Limit von 3 Millionen, 30 Millionen, 150 Millionen oder 300 Millionen | Unbegrenzt |
 | Anzahl der Berichte | Unbegrenzt | Unbegrenzt |
 | Ad-hoc-Versand (einmalig) | Ja | Ja |
