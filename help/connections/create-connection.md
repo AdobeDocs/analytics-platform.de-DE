@@ -5,10 +5,10 @@ exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: e4ddb98b800457e407bb414ed4929c5d5018cf30
+source-git-commit: 836c793ae74185728af03636b0ba3e838f46f05d
 workflow-type: tm+mt
-source-wordcount: '6723'
-ht-degree: 60%
+source-wordcount: '6794'
+ht-degree: 59%
 
 ---
 
@@ -210,6 +210,8 @@ Im Bildschirm **[!UICONTROL Verbindungen]** > **[!UICONTROL *Name der Verbindung
 
 Im Bildschirm **[!UICONTROL Verbindungen]** > **[!UICONTROL *Name der Verbindung *]**:
 
+![Unbenannte Verbindungseinstellungen](assets/create-conn1-b2b.png)
+
 1. Konfigurieren Sie die Verbindungseinstellungen.
 
    | Einstellung | Beschreibung |
@@ -217,7 +219,7 @@ Im Bildschirm **[!UICONTROL Verbindungen]** > **[!UICONTROL *Name der Verbindung
    | **[!UICONTROL Name der Verbindung]** | Geben Sie einen eindeutigen Namen für die Verbindung ein. |
    | **[!UICONTROL Beschreibung der Verbindung]** | Beschreiben Sie den Zweck dieser Verbindung. |
    | **[!UICONTROL Tags]** | Geben Sie Tags an, um Ihrer Verbindung Tags hinzuzufügen, damit Sie diese Tags verwenden können, um die Verbindung in einem späteren Schritt zu suchen. |
-   | **[!UICONTROL Primäre ID]** | Wählen Sie die richtige primäre ID für Ihre Verbindung aus: <ul><li>![Benutzer](/help/assets/icons/User.svg) **[!UICONTROL Person]** für ein B2C-Szenario</li><li> ![Building](/help/assets/icons/Building.svg) **[!UICONTROL Account]** für ein B2B-Szenario.</li></ul>.<br/>Sobald Sie einen oder mehrere Datensätze zu Ihrer Verbindung hinzufügen, können Sie die primäre ID nicht mehr ändern. <br/>Die Auswahl der primären ID definiert, ob die Verbindung personenbasiert oder kontenbasiert ist. Die Verbindungsbasis bestimmt die verfügbaren [Einstellungen](#dataset-settings) für bestimmte Typen von Datensätzen. |
+   | **[!UICONTROL Primäre ID]** | Wählen Sie die richtige primäre ID für Ihre Verbindung aus: <ul><li>![Benutzer](/help/assets/icons/User.svg) **[!UICONTROL Person]** für eine personenbasierte Verbindung, die Sie normalerweise in einem B2C-Szenario verwenden.</li><li> ![Building](/help/assets/icons/Building.svg) **[!UICONTROL Account]** für eine Account-basierte Verbindung, die Sie normalerweise in einem B2B-Szenario verwenden.</li></ul>Sobald Sie Ihrer Verbindung einen oder mehrere Datensätze hinzufügen, können Sie die primäre ID nicht mehr ändern. <br/>Die Auswahl der primären ID legt fest, ob die Verbindung personenbasiert oder kontobasiert ist. Die Verbindungsbasis bestimmt die verfügbaren [Einstellungen](#dataset-settings) für bestimmte Typen von Datensätzen. |
    | **[!UICONTROL Optionale Container]** | Wenn Sie &quot;![ ](/help/assets/icons/Building.svg)&quot; **[!UICONTROL Konto]** als **[!UICONTROL Primäre ID]** ausgewählt haben, wählen Sie zusätzliche Container aus.<ul><li>**[!UICONTROL Globales Konto]**: ermöglicht die Konfiguration globaler Konten in einer Verbindung.</li><li>**[!UICONTROL Opportunity]**: ermöglicht die Konfiguration von Opportunities in einer Verbindung.</li><li>**[!UICONTROL Käufergruppe]**: ermöglicht die Konfiguration von Käufergruppen in einer Verbindung.</li><ul> |
    | **[!UICONTROL Sandbox]** | Wählen Sie eine Sandbox in Experience Platform aus, die die Datensätze enthält, zu denen Sie eine Verbindung herstellen möchten.<p>Adobe Experience Platform bietet [Sandboxes](https://experienceleague.adobe.com/de/docs/experience-platform/sandbox/home) bereit, die eine einzelne Platform-Instanz in separate virtuelle Umgebungen aufteilen, um die Entwicklung und Weiterentwicklung von Programmen für digitale Erlebnisse zu erleichtern. Sie können sich Sandboxes als „Datensilos“ vorstellen. Sandboxes dienen der Steuerung des Zugriffs auf Datensätze.<p>Nachdem Sie die Sandbox ausgewählt haben, werden in der linken Leiste alle Datensätze in der Sandbox angezeigt, aus denen Sie Daten abrufen können. |
    | **[!UICONTROL Rollierendes Datenfenster aktivieren]** | Wenn diese Option aktiviert ist, können Sie auf Verbindungsebene die Customer Journey Analytics-Datenspeicherung als rollierendes Fenster in Monaten (z. B. 1 Monat, 3 Monate und 6 Monate) definieren.<p>Die Datenaufbewahrung basiert auf Zeitstempeln für Ereignis-Datensätze und gilt nur für Ereignis-Datensätze. Für Profil- oder Lookup-Datensätze gibt es keine rollierenden Datenfenstereinstellungen, da keine entsprechenden Zeitstempel vorhanden sind. Wenn Ihre Verbindung jedoch Profil- oder Suchdatensätze enthält (neben einem oder mehreren Ereignisdatensätzen), werden diese Daten über denselben Zeitraum gespeichert.<p> Der Hauptvorteil besteht darin, dass Sie nur Daten speichern oder Berichte dazu erstellen, die anwendbar und nützlich sind, und ältere Daten löschen, die nicht mehr nützlich sind. Dies hilft Ihnen, Ihre vertraglichen Beschränkungen einzuhalten und das Risiko bezüglich Kostendeckung zu reduzieren.<p><ul><li>Wenn Sie die Standardeinstellung unverändert (d. h. deaktiviert) lassen, hat die Adobe Experience Platform-Einstellung zur Datenspeicherung Vorrang vor der Aufbewahrungsfrist. Wenn also in Experience Platform Daten von einem Zeitraum von 25 Monaten enthalten sind, erhält Customer Journey Analytics durch Aufstockung Daten von einem Zeitraum von 25 Monaten. Wenn Sie in Platform 10 dieser Monate löschen, werden in Customer Journey Analytics die verbleibenden 15 Monate beibehalten.</li><li>Wenn Sie ein rollierendes Datenfenster aktivieren, geben Sie in **[!UICONTROL Anzahl der Monate auswählen]** die Anzahl der Monate an, für die Sie das rollierende Datenfenster aktivieren. |
@@ -463,7 +465,7 @@ Sie [einen oder mehrere Datensätze hinzufügen](#add-datasets) oder [vorhandene
 >[!CONTEXTUALHELP]
 >id="connection_datasetbackfill"
 >title="Aufstockung des Datensatzes"
->abstract="Mit dieser Option werden die vorhandenen (historischen) Daten von Experience Platform für diesen Datensatz in der Verbindung aufgestockt."
+>abstract="Diese Option füllt die vorhandenen (historischen) Daten aus Experience Platform für diesen Datensatz in der Verbindung auf."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -483,7 +485,7 @@ Sie [einen oder mehrere Datensätze hinzufügen](#add-datasets) oder [vorhandene
 >title="Verbindungszuordnung"
 >abstract="Die Verbindungszuordnung visualisiert die Beziehungen zwischen Ereignis-, Personen-, Konto- und relevanten Lookup-Datensätzen (wie Opportunites, Kampagnenmitgliedern und mehr)."
 
-## Hinzufügen von Datensätzen
+### Hinzufügen von Datensätzen
 
 Sie können beim Erstellen oder Bearbeiten einer Verbindung einen oder mehrere Experience Platform-Datensätze hinzufügen.
 
@@ -513,7 +515,7 @@ Sie können beim Erstellen oder Bearbeiten einer Verbindung einen oder mehrere E
    * Um Details zu einem Datensatz anzuzeigen, wählen Sie ![InfoOutline](/help/assets/icons/InfoOutline.svg) aus.
 
 
-1. Wählen Sie einen oder mehrere Datensätze und anschließend die Option **[!UICONTROL Weiter]** aus. Mindestens ein Ereignisdatensatz muss Teil der Verbindung sein.
+1. Wählen Sie einen oder mehrere Datensätze und anschließend die Option **[!UICONTROL Weiter]** aus. Mindestens ein Ereignis- oder Zusammenfassungsdatensatz muss Teil der Verbindung sein.
 
 1. Konfigurieren Sie [Einstellungen für jeden der ausgewählten Datensätze](#dataset-settings) einzeln im Schritt **[!UICONTROL Einstellungen für Datensätze]** des Dialogfelds **[!UICONTROL Datensätze hinzufügen]**.
 
@@ -540,7 +542,7 @@ Um einen Datensatz zu bearbeiten, der bereits für eine Verbindung konfiguriert 
 
 ### Datensatzeinstellungen
 
-Wenn Sie Datensätze hinzufügen oder einen vorhandenen Datensatz bearbeiten, konfigurieren Sie die Datensatzeinstellungen für jeden Datensatz. Die verfügbaren Einstellungen hängen vom [Typ des Datensatzes](#dataset-types) und bei einigen Datensatztypen vom Verbindungstyp (personenbasiert oder [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}-kontenbasiert) ab.
+Wenn Sie Datensätze hinzufügen oder einen vorhandenen Datensatz bearbeiten, konfigurieren Sie die Datensatzeinstellungen für jeden Datensatz. Die verfügbaren Einstellungen hängen vom [Typ des Datensatzes](#dataset-types) und bei einigen Datensatztypen vom Verbindungstyp (personenbasiert oder [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"} kontobasiert) ab.
 
 Alle Datensätze und Datensatztypen verfügen über [allgemeine Einstellungen und Details](#general-dataset-settings-and-details) z. B. ob neue Daten importiert und Aufstockungen angefordert werden sollen oder nicht.
 
@@ -558,8 +560,8 @@ Für einen Ereignis-Datensatz in einer personenbasierten Verbindung können Sie 
 | --- | --- |
 | **[!UICONTROL Personen-ID]** | Wählen Sie eine Personen-ID aus der Dropdown-Liste der verfügbaren Identitäten aus. Diese Identitäten wurden im Datensatzschema in Experience Platform definiert. Unter [Verwenden von Identity Map als Personen-ID](#id-map) finden Sie Informationen zur Verwendung von Identity Map als Personen-ID.<p>Wenn keine Personen-IDs zur Auswahl stehen, bedeutet dies, dass keine Personen-IDs im Schema definiert sind. Weitere Informationen finden Sie unter [Definieren von Identitätsfeldern in der Benutzeroberfläche](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/ui/fields/identity). <p>Beim Wert für die ausgewählte Personen-ID wird zwischen Groß- und Kleinschreibung unterschieden. Beispielsweise sind `abc123` und `ABC123` zwei verschiedene Werte. |
 | **[!UICONTROL Zeitstempel]** | Diese Einstellung wird in Experience Platform automatisch auf das standardmäßige Zeitstempelfeld von ereignisbasierten Schemata festgelegt. |
-| **[!UICONTROL Datenquellentyp]** | Wählen Sie einen Datenquellentyp aus. <br/>Hierzu gehören: <ul><li>[!UICONTROL Web-Daten]</li><li>[!UICONTROL App-Daten]</li><li>[!UICONTROL PoS-Daten]</li><li>[!UICONTROL CRM-Daten]</li><li>[!UICONTROL Umfragedaten]</li><li>[!UICONTROL Callcenter-Daten]</li><li>[!UICONTROL Produktdaten]</li><li> [!UICONTROL Kontodaten]</li><li> [!UICONTROL Transaktionsdaten]</li><li>[!UICONTROL Kunden-Feedback-Daten]</li><li> [!UICONTROL Sonstige]</li></ul>Dieses Feld wird verwendet, um sich einen Überblick über die verwendeten Datenquellen zu verschaffen. |
-| **[!UICONTROL Beschreibung der Datenquelle]** | Beschreiben Sie die Datenquelle, wenn Sie Sonstige als Datenquellentyp ausgewählt haben. |
+| **[!UICONTROL Datenquellentyp]** | Wählen Sie einen Datenquellentyp aus. Zu den Datenquelltypen gehören: <ul><li>[!UICONTROL Web-Daten]</li><li>[!UICONTROL App-Daten]</li><li>[!UICONTROL PoS-Daten]</li><li>[!UICONTROL CRM-Daten]</li><li>[!UICONTROL Umfragedaten]</li><li>[!UICONTROL Callcenter-Daten]</li><li>[!UICONTROL Produktdaten]</li><li> [!UICONTROL Kontodaten]</li><li> [!UICONTROL Transaktionsdaten]</li><li>[!UICONTROL Kunden-Feedback-Daten]</li><li> [!UICONTROL Sonstige]</li></ul>Dieses Feld wird verwendet, um sich einen Überblick über die verwendeten Datenquellen zu verschaffen. |
+| **[!UICONTROL Beschreibung der Datenquelle]** | Eine Beschreibung der Datenquelle, wenn Sie Sonstige als Datenquellentyp ausgewählt haben. |
 
 
 ##### Kontobasierte Verbindung
@@ -572,14 +574,14 @@ Für einen Ereignis-Datensatz in einer kontobasierten Verbindung können Sie Fol
 
 | Einstellung | Beschreibung |
 | --- | --- |
-| **[!UICONTROL Konto-ID]** | Wählen Sie eine Konto-ID (die eindeutige Kennung für ein Konto) aus den verfügbaren Identitäten aus, die im Datensatzschema in der Experience Platform definiert sind. |
-| **[!UICONTROL Globale Konto-ID]** | Wählen Sie eine Konto-ID (die eindeutige Kennung für ein Konto) aus den verfügbaren Identitäten aus, die im Datensatzschema in der Experience Platform definiert sind. |
+| **[!UICONTROL Konto-ID]** | Wählen Sie eine globale Konto-ID (die eindeutige Kennung für ein Konto) aus den verfügbaren Identitäten aus, die im Datensatzschema in der Experience Platform definiert sind. Trifft zu, wenn Sie Ihrer Verbindung ein globales Konto als Container hinzugefügt haben. |
+| **[!UICONTROL Globale Konto-ID]** | Wählen Sie eine Konto-ID (die eindeutige Kennung für ein Konto) aus den verfügbaren Identitäten aus, die im Datensatzschema in der Experience Platform definiert sind. Gilt, wenn Sie Ihrer Verbindung kein globales Konto als Container hinzugefügt haben. |
 | **[!UICONTROL Opportunity-ID]** | Wählen Sie eine Opportunity-ID (die eindeutige Kennung für eine Opportunity) aus den verfügbaren Identitäten aus, die im Datensatzschema in der Experience Platform definiert sind. |
 | **[!UICONTROL Einkaufsgruppen-ID]** | Wählen Sie eine Einkaufsgruppen-ID (die eindeutige Kennung für eine Einkaufsgruppe) aus den verfügbaren Identitäten aus, die im Datensatzschema in der Experience Platform definiert sind. |
 | **[!UICONTROL Personen-ID]** | Wählen Sie eine Personen-ID aus der Dropdown-Liste der verfügbaren Identitäten aus. Diese Identitäten wurden im Datensatzschema in Experience Platform definiert. Unter [Verwenden von Identity Map als Personen-ID](#id-map) finden Sie Informationen zur Verwendung von Identity Map als Personen-ID.<p>Wenn keine Personen-IDs zur Auswahl stehen, bedeutet das, dass eine oder mehrere Personen-IDs im Schema nicht definiert wurden. Weitere Informationen finden Sie unter [Definieren von Identitätsfeldern in der Benutzeroberfläche](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/ui/fields/identity). <p>Beim Wert für die ausgewählte Personen-ID wird zwischen Groß- und Kleinschreibung unterschieden. Beispielsweise sind `abc123` und `ABC123` zwei verschiedene Werte. |
 | **[!UICONTROL Zeitstempel]** | Diese Einstellung wird in Experience Platform automatisch auf das standardmäßige Zeitstempelfeld von ereignisbasierten Schemata festgelegt. |
-| **[!UICONTROL Datenquellentyp]** | Wählen Sie einen Datenquellentyp aus. <br/>Hierzu gehören: <ul><li>[!UICONTROL Web-Daten]</li><li>[!UICONTROL App-Daten]</li><li>[!UICONTROL PoS-Daten]</li><li>[!UICONTROL CRM-Daten]</li><li>[!UICONTROL Umfragedaten]</li><li>[!UICONTROL Callcenter-Daten]</li><li>[!UICONTROL Produktdaten]</li><li> [!UICONTROL Kontodaten]</li><li> [!UICONTROL Transaktionsdaten]</li><li>[!UICONTROL Kunden-Feedback-Daten]</li><li> [!UICONTROL Sonstige]</li></ul>Dieses Feld wird verwendet, um sich einen Überblick über die verwendeten Datenquellen zu verschaffen. |
-| **[!UICONTROL Beschreibung der Datenquelle]** | Beschreiben Sie die Datenquelle, wenn Sie Sonstige als Datenquellentyp ausgewählt haben. |
+| **[!UICONTROL Datenquellentyp]** | Wählen Sie einen Datenquellentyp aus. Zu den Datenquelltypen gehören: <ul><li>[!UICONTROL Web-Daten]</li><li>[!UICONTROL App-Daten]</li><li>[!UICONTROL PoS-Daten]</li><li>[!UICONTROL CRM-Daten]</li><li>[!UICONTROL Umfragedaten]</li><li>[!UICONTROL Callcenter-Daten]</li><li>[!UICONTROL Produktdaten]</li><li> [!UICONTROL Kontodaten]</li><li> [!UICONTROL Transaktionsdaten]</li><li>[!UICONTROL Kunden-Feedback-Daten]</li><li> [!UICONTROL Sonstige]</li></ul>Dieses Feld wird verwendet, um sich einen Überblick über die verwendeten Datenquellen zu verschaffen. |
+| **[!UICONTROL Beschreibung der Datenquelle]** | Eine Beschreibung der Datenquelle, wenn Sie Sonstige als Datenquellentyp ausgewählt haben. |
 
 
 #### Profildatensatz
@@ -594,9 +596,9 @@ Für einen Profildatensatz in einer personenbasierten Verbindung geben Sie Folge
 
 | Einstellung | Beschreibung |
 | --- | --- |
-| **[!UICONTROL Personen-ID]** | Wählen Sie eine Personen-ID aus der Dropdown-Liste der verfügbaren Identitäten aus. Diese Identitäten wurden im Datensatzschema in Experience Platform definiert. Unter [Verwenden von Identity Map als Personen-ID](#id-map) finden Sie Informationen zur Verwendung von Identity Map als Personen-ID.<p>Wenn keine Personen-IDs zur Auswahl stehen, bedeutet dies, dass keine Personen-IDs im Schema definiert wurden. Weitere Informationen finden Sie unter [Definieren von Identitätsfeldern in der Benutzeroberfläche](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/ui/fields/identity). <p>Beim Wert für die ausgewählte Personen-ID wird zwischen Groß- und Kleinschreibung unterschieden. Beispielsweise sind `abc123` und `ABC123` zwei verschiedene Werte. |
-| **[!UICONTROL Datenquellentyp]** | Wählen Sie einen Datenquellentyp aus. <br/>Hierzu gehören: <ul><li>[!UICONTROL Web-Daten]</li><li>[!UICONTROL App-Daten]</li><li>[!UICONTROL PoS-Daten]</li><li>[!UICONTROL CRM-Daten]</li><li>[!UICONTROL Umfragedaten]</li><li>[!UICONTROL Callcenter-Daten]</li><li>[!UICONTROL Produktdaten]</li><li> [!UICONTROL Kontodaten]</li><li> [!UICONTROL Transaktionsdaten]</li><li>[!UICONTROL Kunden-Feedback-Daten]</li><li> [!UICONTROL Sonstige]</li></ul>Dieses Feld wird verwendet, um sich einen Überblick über die verwendeten Datenquellen zu verschaffen. |
-| **[!UICONTROL Beschreibung der Datenquelle]** | Beschreiben Sie die Datenquelle, wenn Sie Sonstige als Datenquellentyp ausgewählt haben. |
+| **[!UICONTROL Personen-ID]** | Wählen Sie eine Personen-ID aus der Dropdown-Liste der verfügbaren Identitäten aus. Diese Identitäten wurden im Datensatzschema in Experience Platform definiert. Unter [Verwenden von Identity Map als Personen-ID](#id-map) finden Sie Informationen zur Verwendung von Identity Map als Personen-ID.<p>Wenn keine Personen-IDs zur Auswahl stehen, werden im Schema keine Personen-IDs definiert. Weitere Informationen finden Sie unter [Definieren von Identitätsfeldern in der Benutzeroberfläche](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/ui/fields/identity). <p>Beim Wert für die ausgewählte Personen-ID wird zwischen Groß- und Kleinschreibung unterschieden. Beispielsweise sind `abc123` und `ABC123` zwei verschiedene Werte. |
+| **[!UICONTROL Datenquellentyp]** | Wählen Sie einen Datenquellentyp aus. Zu den Datenquelltypen gehören: <ul><li>[!UICONTROL Web-Daten]</li><li>[!UICONTROL App-Daten]</li><li>[!UICONTROL PoS-Daten]</li><li>[!UICONTROL CRM-Daten]</li><li>[!UICONTROL Umfragedaten]</li><li>[!UICONTROL Callcenter-Daten]</li><li>[!UICONTROL Produktdaten]</li><li> [!UICONTROL Kontodaten]</li><li> [!UICONTROL Transaktionsdaten]</li><li>[!UICONTROL Kunden-Feedback-Daten]</li><li> [!UICONTROL Sonstige]</li></ul>Dieses Feld wird verwendet, um sich einen Überblick über die verwendeten Datenquellen zu verschaffen. |
+| **[!UICONTROL Beschreibung der Datenquelle]** | Eine Beschreibung der Datenquelle, wenn Sie Sonstige als Datenquellentyp ausgewählt haben. |
 
 #### Kontobasierte Verbindung
 
@@ -606,10 +608,11 @@ Für einen Profildatensatz in einer kontobasierten Verbindung geben Sie Folgende
 
 | Einstellung | Beschreibung |
 | --- | --- |
-| **[!UICONTROL Personen-ID]** | Wählen Sie eine Personen-ID aus der Dropdown-Liste der verfügbaren Identitäten aus. Diese Identitäten wurden im Datensatzschema in Experience Platform definiert. Unter [Verwenden von Identity Map als Personen-ID](#id-map) finden Sie Informationen zur Verwendung von Identity Map als Personen-ID.<p>Wenn keine Personen-IDs zur Auswahl stehen, bedeutet dies, dass keine Personen-IDs im Schema definiert wurden. Weitere Informationen finden Sie unter [Definieren von Identitätsfeldern in der Benutzeroberfläche](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/ui/fields/identity). <p>Beim Wert für die ausgewählte Personen-ID wird zwischen Groß- und Kleinschreibung unterschieden. Beispielsweise sind `abc123` und `ABC123` zwei verschiedene Werte. |
-| **[!UICONTROL Konto-ID]** | Wählen Sie in der Dropdown-Liste der verfügbaren Identitäten eine Konto-ID aus, die zur Unterstützung des Account-basierten Reportings für den Datensatz verwendet wird. |
-| **[!UICONTROL Datenquellentyp]** | Wählen Sie einen Datenquellentyp aus. <br/>Hierzu gehören: <ul><li>[!UICONTROL Web-Daten]</li><li>[!UICONTROL App-Daten]</li><li>[!UICONTROL PoS-Daten]</li><li>[!UICONTROL CRM-Daten]</li><li>[!UICONTROL Umfragedaten]</li><li>[!UICONTROL Callcenter-Daten]</li><li>[!UICONTROL Produktdaten]</li><li> [!UICONTROL Kontodaten]</li><li> [!UICONTROL Transaktionsdaten]</li><li>[!UICONTROL Kunden-Feedback-Daten]</li><li> [!UICONTROL Sonstige]</li></ul>Dieses Feld wird verwendet, um sich einen Überblick über die verwendeten Datenquellen zu verschaffen. |
-| **[!UICONTROL Beschreibung der Datenquelle]** | Beschreiben Sie die Datenquelle, wenn Sie Sonstige als Datenquellentyp ausgewählt haben. |
+| **[!UICONTROL Personen-ID]** | Wählen Sie eine Personen-ID aus der Dropdown-Liste der verfügbaren Identitäten aus. Diese Identitäten wurden im Datensatzschema in Experience Platform definiert. Unter [Verwenden von Identity Map als Personen-ID](#id-map) finden Sie Informationen zur Verwendung von Identity Map als Personen-ID.<p>Wenn keine Personen-IDs zur Auswahl stehen, werden im Schema keine Personen-IDs definiert. Weitere Informationen finden Sie unter [Definieren von Identitätsfeldern in der Benutzeroberfläche](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/ui/fields/identity). <p>Beim Wert für die ausgewählte Personen-ID wird zwischen Groß- und Kleinschreibung unterschieden. Beispielsweise sind `abc123` und `ABC123` zwei verschiedene Werte. |
+| **[!UICONTROL Feld Globales Konto]** | Wählen Sie aus der Dropdown-Liste der verfügbaren Identitäten ein globales Kontofeld aus, um kontobasiertes Reporting für den Datensatz zu unterstützen. Trifft zu, wenn Sie Ihrer Verbindung ein globales Konto als Container hinzugefügt haben. |
+| **[!UICONTROL Feld Konto]** | Wählen Sie aus der Dropdown-Liste der verfügbaren Identitäten ein Kontofeld aus, um kontobasiertes Reporting für den Datensatz zu unterstützen. Gilt, wenn Sie Ihrer Verbindung kein globales Konto als Container hinzugefügt haben. |
+| **[!UICONTROL Datenquellentyp]** | Wählen Sie einen Datenquellentyp aus. Zu den Datenquelltypen gehören: <ul><li>[!UICONTROL Web-Daten]</li><li>[!UICONTROL App-Daten]</li><li>[!UICONTROL PoS-Daten]</li><li>[!UICONTROL CRM-Daten]</li><li>[!UICONTROL Umfragedaten]</li><li>[!UICONTROL Callcenter-Daten]</li><li>[!UICONTROL Produktdaten]</li><li> [!UICONTROL Kontodaten]</li><li> [!UICONTROL Transaktionsdaten]</li><li>[!UICONTROL Kunden-Feedback-Daten]</li><li> [!UICONTROL Sonstige]</li></ul>Dieses Feld wird verwendet, um sich einen Überblick über die verwendeten Datenquellen zu verschaffen. |
+| **[!UICONTROL Beschreibung der Datenquelle]** | Eine Beschreibung der Datenquelle, wenn Sie Sonstige als Datenquellentyp ausgewählt haben. |
 
 #### Lookup-Datensatz
 
@@ -617,7 +620,7 @@ Die spezifischen Einstellungen für einen Lookup-Datensatz hängen vom Verbindun
 
 ##### Personenbasierte Verbindung
 
-![Einstellungen für Lookup-Ereignis-Datensatz basierend auf Personen](assets/lookup-dataset-settings-b2c.png)
+![Einstellungen für Lookup-Ereignis-Datensätze personenbasiert](assets/lookup-dataset-settings-b2c.png)
 
 Für einen Lookup-Datensatz in einer personenbasierten Verbindung geben Sie Folgendes an:
 
@@ -625,8 +628,8 @@ Für einen Lookup-Datensatz in einer personenbasierten Verbindung geben Sie Folg
 |---|---|
 | **[!UICONTROL Schlüssel]** | Der für einen Lookup-Datensatz zu verwendende Schlüssel. |
 | **[!UICONTROL Passender Schlüssel]** | Der passende Schlüssel, der in einem der Ereignisdatensätze hinzugefügt werden soll. Wenn diese Liste leer ist, haben Sie wahrscheinlich keinen Ereignisdatensatz hinzugefügt oder konfiguriert. |
-| **[!UICONTROL Datenquellentyp]** | Wählen Sie einen Datenquellentyp aus. <br/>Hierzu gehören: <ul><li>[!UICONTROL Web-Daten]</li><li>[!UICONTROL App-Daten]</li><li>[!UICONTROL PoS-Daten]</li><li>[!UICONTROL CRM-Daten]</li><li>[!UICONTROL Umfragedaten]</li><li>[!UICONTROL Callcenter-Daten]</li><li>[!UICONTROL Produktdaten]</li><li> [!UICONTROL Kontodaten]</li><li> [!UICONTROL Transaktionsdaten]</li><li>[!UICONTROL Kunden-Feedback-Daten]</li><li> [!UICONTROL Sonstige]</li></ul>Dieses Feld wird verwendet, um sich einen Überblick über die verwendeten Datenquellen zu verschaffen. |
-| **[!UICONTROL Beschreibung der Datenquelle]** | Beschreiben Sie die Datenquelle, wenn Sie Sonstige als Datenquellentyp ausgewählt haben. |
+| **[!UICONTROL Datenquellentyp]** | Wählen Sie einen Datenquellentyp aus. Zu den Datenquelltypen gehören: <ul><li>[!UICONTROL Web-Daten]</li><li>[!UICONTROL App-Daten]</li><li>[!UICONTROL PoS-Daten]</li><li>[!UICONTROL CRM-Daten]</li><li>[!UICONTROL Umfragedaten]</li><li>[!UICONTROL Callcenter-Daten]</li><li>[!UICONTROL Produktdaten]</li><li> [!UICONTROL Kontodaten]</li><li> [!UICONTROL Transaktionsdaten]</li><li>[!UICONTROL Kunden-Feedback-Daten]</li><li> [!UICONTROL Sonstige]</li></ul>Dieses Feld wird verwendet, um sich einen Überblick über die verwendeten Datenquellen zu verschaffen. |
+| **[!UICONTROL Beschreibung der Datenquelle]** | Eine Beschreibung der Datenquelle, wenn Sie Sonstige als Datenquellentyp ausgewählt haben. |
 | **[!UICONTROL Datensatz transformieren]** | Für bestimmte B2B-Lookup-Datensätze können Sie die Umwandlung eines Datensatzes für geeignete personenbasierte B2B-Reporting-Szenarien aktivieren. Weitere Informationen finden Sie unter [Umwandeln von Datensätzen für B2B-Suchen](transform-datasets-b2b-lookups.md). |
 
 
@@ -635,7 +638,7 @@ Für einen Lookup-Datensatz in einer personenbasierten Verbindung geben Sie Folg
 
 [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}
 
-![Kontobasierte Lookup-Ereignis-Datensatz-Einstellungen](assets/lookup-dataset-settings-b2b.png)
+![Kontobasierte Einstellungen für Lookup-Ereignis-Datensätze](assets/lookup-dataset-settings-b2b.png)
 
 Für einen Lookup-Datensatz in einer kontobasierten Verbindung können Sie Folgendes angeben:
 
@@ -675,25 +678,6 @@ Wenn Sie einen Datensatz löschen, werden Sie über die Auswirkungen des Lösche
 
 Wenn Sie in der Benutzeroberfläche ![Verlauf](/help/assets/icons/History.svg) **[!UICONTROL Frühere Aufstockungen]** auswählen, zeigt ein Dialogfeld **[!UICONTROL Frühere Aufstockungen: _Name des Datensatzes_]**die neuesten Aufstockungen aus dem Datensatz an.
 
-## Verbindungsvorschau {#preview}
-
-Um die von Ihnen erstellte Verbindung in der Vorschau anzuzeigen, wählen Sie ![PageSearch](/help/assets/icons/PageSearch.svg) **[!UICONTROL Verbindungsvorschau]** im Dialogfeld Verbindungseinstellungen aus.
-
-![Verbindungsvorschau](assets/create-conn4.png)
-
-Diese Vorschau enthält einige Spalten zur Verbindungskonfiguration. Welche Spaltentypen angezeigt werden, hängt von Ihren individuellen Datensätzen ab.
-
-
-## Verbindungszuordnung
-
-[!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}
-
-Um eine Zuordnung der Beziehungen zwischen den Datensätzen anzuzeigen, die Teil Ihrer Verbindung sind, wählen Sie ![GraphPathing](/help/assets/icons/GraphPathing.svg) **[!UICONTROL Verbindungszuordnung]** im Dialogfeld Verbindungseinstellungen aus.
-
-![Verbindungszuordnung](assets/connectionmap.png)
-
-Diese Zuordnung hilft Ihnen, besser zu verstehen, wie Sie Ihre Verbindung definiert haben und die Beziehung zwischen Ihren Ereignis-, Profil-, Lookup- und Zusammenfassungsdatensätzen mithilfe von IDs einzurichten.
-
 ## Datensatztypen {#dataset-types}
 
 [!UICONTROL Customer Journey Analytics] legt für jeden Datensatz, den Sie dieser Verbindung hinzufügen, automatisch den Datensatztyp anhand der eingehenden Daten fest.
@@ -711,9 +695,25 @@ Es gibt verschiedene Datensatztypen: [!UICONTROL Ereignis]-, [!UICONTROL Profil]
 | **[!UICONTROL Profil]** | Daten, die in den (Ereignis-)Daten auf Ihr Konto, Personen, Benutzer oder [!UICONTROL  angewendet ]. Sie können beispielsweise CRM-Daten zu Ihren Kunden hochladen. | -/- | Jedes integrierte oder benutzerdefinierte Schema, das auf der Klasse *XDM Individual Profile* basiert. | Sie können auswählen, welche Personen-ID/Konto-ID [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"} Sie einbeziehen möchten. Jeder Datensatz (mit Ausnahme von Zusammenfassungsdatensätzen), der in [!DNL Experience Platform] definiert ist, verfügt über einen eigenen Satz von einer oder mehreren definierten Personen-IDs oder Konto-IDs [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}. Beispielsweise Cookie-ID, zugeordnete ID, Benutzer-ID, Trackingcode, Konto-ID usw.<br>![Personen-ID ](assets/person-id.png)**Hinweis**: Wenn Sie eine Verbindung erstellen, die Datensätze mit unterschiedlichen IDs enthält, spiegelt sich dies in der Berichterstattung wider. Zum Zusammenführen von Datensätzen müssen Sie dieselbe Personen-ID oder Konto-ID [!BADGE B2B edition verwenden]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}. |
 | **Zusammenfassung** | Zeitreihendaten, die keiner einzelnen Personen-ID zugeordnet sind. Zusammenfassungsdaten stellen aggregierte Daten auf einer anderen Aggregationsebene dar, z. B. Kampagnen. Sie können diese Daten im Customer Journey Analytics verwenden, um verschiedene Anwendungsfälle zu unterstützen. Weitere Informationen finden Sie [Zusammenfassungsdaten](/help/data-views/summary-data.md). | Automatisches Festlegen auf das standardmäßige Zeitstempelfeld aus ereignisbasierten Zusammenfassungsmetrikschemata in Experience Platform. Es wird nur die Granularität „Stündlich“ oder „Täglich“ unterstützt. | Jedes integrierte oder benutzerdefinierte Schema, das auf der Klasse *XDM Summary Metrics* basiert. | k. A. |
 
->[!MORELIKETHIS]
->
->Blog: [So nutzen Sie Ereignis-, Lookup- und Profildatensätze in Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/how-to-leverage-event-lookup-and-profile-datasets-in-adobe/ba-p/681478)
+## Verbindungsvorschau {#preview}
+
+Um die von Ihnen erstellte Verbindung in der Vorschau anzuzeigen, wählen Sie ![PageSearch](/help/assets/icons/PageSearch.svg) **[!UICONTROL Verbindungsvorschau]** im Dialogfeld Verbindungseinstellungen aus.
+
+![Verbindungsvorschau](assets/create-conn4.png)
+
+Diese Vorschau enthält einige Spalten zur Verbindungskonfiguration. Welche Spaltentypen angezeigt werden, hängt von Ihren individuellen Datensätzen ab.
+
+
+## Verbindungszuordnung
+
+[!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}
+
+Um eine Zuordnung der Beziehungen zwischen den Datensätzen anzuzeigen, die Teil Ihrer Verbindung sind, wählen Sie ![GraphPathing](/help/assets/icons/GraphPathing.svg) **[!UICONTROL Verbindungszuordnung]** im Dialogfeld Verbindungseinstellungen aus.
+
+![Verbindungszuordnung](assets/connectionmap.png)
+
+Diese Zuordnung hilft Ihnen, ein besseres Verständnis davon zu erhalten, wie Sie Ihre Verbindung definiert haben, und die Beziehung zwischen Ihren Ereignis-, Profil-, Lookup- und Zusammenfassungsdatensätzen mithilfe von IDs einzurichten.
+
 
 ## Verwenden von numerischen Feldern als Suchschlüssel und Nachschlagewerte {#numeric}
 
@@ -779,5 +779,10 @@ Beim Erstellen einer Verbindung können Sie große Datensätze zu Suchzwecken hi
 Sie können eine algorithmische Bereinigung eines großen Lookup-Datensatzes anfordern. Bei dieser algorithmischen Bereinigung bleiben nur Daten im Lookup-Datensatz, die mit den Schlüsseln in Ihrem Ereignisdatensatz übereinstimmen. Auf diese Weise müssen Sie nicht den gesamten unbereinigten Lookup-Datensatz laden. Alte oder seltener verwendete Elemente werden entfernt, was sich geringfügig auf Berichte auswirken kann, jedoch erhebliche Vorteile bringt. Der Algorithmus bezieht die letzten 90 Tage ein und führt wöchentlich Aktualisierungen durch.
 
 Wenden Sie sich an Ihr Adobe-Support-Team, um weitere Informationen zu erhalten und diese Funktion zu aktivieren.
+
+
+>[!MORELIKETHIS]
+>
+>Blog: [So nutzen Sie Ereignis-, Lookup- und Profildatensätze in Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/how-to-leverage-event-lookup-and-profile-datasets-in-adobe/ba-p/681478)
 
 ![Freigeben](/help/assets/icons/Share.svg)

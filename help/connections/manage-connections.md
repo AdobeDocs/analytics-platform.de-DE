@@ -6,10 +6,10 @@ exl-id: 0a87518c-3608-44ad-b5e3-976f97560433
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: e4ddb98b800457e407bb414ed4929c5d5018cf30
+source-git-commit: 836c793ae74185728af03636b0ba3e838f46f05d
 workflow-type: tm+mt
-source-wordcount: '4307'
-ht-degree: 79%
+source-wordcount: '4135'
+ht-degree: 65%
 
 ---
 
@@ -41,19 +41,19 @@ Die folgenden Spalten oder Symbole sind in der Tabelle verfügbar.
 
 | Spalte oder Symbol | Beschreibung |
 | --- | --- |
-| **[!UICONTROL _Name_]** | Der Anzeigename der Verbindung. Um die Details der Verbindung anzuzeigen, wählen Sie den Hyperlink-Namen aus. Siehe [Verbindungsdetails](#connection-details). |
+| **[!UICONTROL _Name_]** | Der Anzeigename der Verbindung. Wählen Sie den Hyperlink-Namen aus, um die [Details der Verbindung“ ](#connection-details). |
 | ![Information](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg) | Um Informationen zu [!UICONTROL enthaltenen Datensätzen], [!UICONTROL Sandbox], der oder dem [!UICONTROL Verantwortlichen] usw. anzuzeigen, wählen Sie ![Information](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg) neben dem Verbindungsnamen aus.<p>Ein Popup-Fenster zeigt Details zum Datensatz an. <p>![Popup mit Verbindungsinformationen](assets/connection-info-popup.png) |
 | ![Mehr](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) | Wählen Sie ![Mehr](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg), um ein Kontextmenü zu öffnen. Folgende Optionen stehen zur Auswahl: <p>![Bearbeiten](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) **[!UICONTROL Bearbeiten]**, um [ Verbindung ](#edit-a-connection) bearbeiten.<p>![Löschen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Delete_18_N.svg) **[!UICONTROL Löschen]** um eine Verbindung [löschen](#delete-a-connection).<p>![Datenansicht](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataAdd_18_N.svg) **[!UICONTROL Neue Datenansicht erstellen]** um [eine neue Datenansicht zu erstellen](#create-a-data-view) für die Verbindung.<p>![GraphPathing](/help/assets/icons/GraphPathing.svg) **[!UICONTROL Verbindungszuordnung]** zum Anzeigen einer [Verbindungszuordnung](#map-a-connection) für die Verbindung. |
-| [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}<br/>**[!UICONTROL Verbindungstyp ]** | Gibt an, ob die Verbindung auf **[!UICONTROL Person]** oder einer **[!UICONTROL Account]**-basierten Verbindung basiert. |
+| [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}<br/>**[!UICONTROL Verbindungstyp ]** | Der Verbindungstyp: **[!UICONTROL personenbasierte]** oder **[!UICONTROL Account]**-basierte Verbindung. |
 | **[!UICONTROL Datensätze]** | Ein oder mehrere Links zu den Datensätzen, die Teil der Verbindung sind. Sie können den Datensatz-Hyperlink auswählen, um den Datensatz in der Verbindung anzuzeigen. Wenn weitere Datensätze Teil der ausgewählten Verbindung sind, wählen Sie **[!UICONTROL +*x* mehr]** aus, um das Panel **[!UICONTROL Enthaltene Datensätze]** anzuzeigen. In diesem Bedienfeld werden Links zu allen Datensätzen und eine Option zum ![Suchen](/help/assets/icons/Search.svg) nach bestimmten Datensätzen angezeigt, die Teil der Verbindung sind.<p>![Datensätze enthalten](assets/datasets-included.png)<p>Wählen Sie einen Datensatznamen aus, um den Datensatz in der Benutzeroberfläche von Experience Platform in einer neuen Registerkarte zu öffnen. |
-| **[!UICONTROL Sandbox]** | Die [Experience Platform-Sandbox](https://experienceleague.adobe.com/de/docs/experience-platform/sandbox/home), aus der diese Verbindung ihre Datensätze abruft. Diese Sandbox wurde beim erstmaligen Erstellen der Verbindung ausgewählt. Sie kann nicht geändert werden. |
+| **[!UICONTROL Sandbox]** | Die [Experience Platform-Sandbox](https://experienceleague.adobe.com/de/docs/experience-platform/sandbox/home), aus der diese Verbindung ihre Datensätze abruft. Sie wählen diese Sandbox aus, als Sie die Verbindung erstellt haben. Sie können die Sandbox nicht mehr ändern, sobald eine Verbindung gespeichert wurde. |
 | **[!UICONTROL Inhaber]** | Die Person, die die Verbindung hergestellt hat. |
 | **[!UICONTROL Importieren neuer Daten]** | Der Status des Imports neuer Daten für Datensätze: <p>![Status grün](assets/status-green.svg)   **[!UICONTROL _x _Ein]**für Datensätze, die zum Importieren neuer Daten konfiguriert sind, und<p>![Status gray](assets/status-gray.svg)   **[!UICONTROL _x Aus_]** für Datensätze, die nicht für den Import neuer Daten konfiguriert sind. |
 | **[!UICONTROL Erstellt am]** | Der Zeitstempel, wann die Verbindung erstellt wurde. |
 | **[!UICONTROL Zuletzt geändert]** | Der Zeitstempel, wann die Verbindung zuletzt aktualisiert wurde. |
 | **[!UICONTROL Aufstockungsdaten]** | Der Status für die Aufstockung von Daten in allen Datensätzen:<p>![Status red](assets/status-red.svg)   **[!UICONTROL _x _Aufstockungen fehlgeschlagen]**für die Anzahl der datensatzübergreifend fehlgeschlagenen Aufstockungen über Datensätze,<p>![Status orange](assets/status-orange.svg)   **[!UICONTROL _x _Aufstockungen werden verarbeitet]**für die Anzahl der datensatzübergreifend verarbeiteten Aufstockungen,<p>![Status grün](assets/status-green.svg)   **[!UICONTROL _x _Aufstockungen abgeschlossen]**für die Anzahl der abgeschlossenen Aufstockungen für Datensätze,<p>![Status gray](assets/status-gray.svg)   **[!UICONTROL _Aus_]**, falls für die Datensätze in der Verbindung keine Aufstockungen definiert sind. |
 
-Um zu konfigurieren, welche Spalten angezeigt werden sollen, wählen Sie ![Column settings](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ColumnSettings_18_N.svg) aus. Dadurch wird das Dialogfeld **Tabelle anpassen** angezeigt, in dem Sie Spalten in der Tabelle aktivieren oder deaktivieren können.
+Um zu konfigurieren, welche Spalten in der Tabelle angezeigt werden sollen, wählen Sie ![Spalteneinstellungen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ColumnSettings_18_N.svg) aus. Wählen Sie im Dialogfeld Tabelle anpassen die anzuzeigenden Spalten aus.
 
 ### Verbindung bearbeiten
 
@@ -67,13 +67,6 @@ Sie können auch wie folgt vorgehen:
 1. Wählen Sie die Verbindungszeile aus.
 
 1. Wählen ![Bearbeiten](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) **[!UICONTROL Bearbeiten]** in der blauen Aktionsleiste aus.
-
-Wenn Sie eine Verbindung bearbeiten, können Sie:
-
-* Starten und beenden Sie den Import neuer Daten.
-* Eine Verbindung umbenennen.
-* Aktualisieren Sie die Datensätze.
-* Entfernen Sie Datensätze aus den Verbindungen.
 
 Weitere Informationen finden Sie unter [Erstellen oder Bearbeiten einer Verbindung](create-connection.md).
 
@@ -106,7 +99,7 @@ Weitere Informationen zum Löschen einer Verbindung finden Sie unter [Auswirkung
 
 ### Erstellen einer Datenschicht für eine Verbindung
 
-So erstellen Sie eine neue Datenansicht für eine Verbindung:
+So erstellen Sie eine Datenansicht für eine Verbindung:
 
 1. Wählen Sie ![More](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) neben dem Verbindungsnamen aus.
 1. Wählen Sie ![Add data view](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataAdd_18_N.svg) **[!UICONTROL Neue Datenansicht erstellen]** aus.
@@ -142,34 +135,32 @@ In der Benutzeroberfläche mit den Verbindungsdetails erhalten Sie einen sehr de
 | Benutzeroberfläche | Beschreibung |
 | --- | --- |
 | ![Bearbeiten](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) **[!UICONTROL Verbindung bearbeiten]** | Um die Details einer Verbindung zu bearbeiten, wählen Sie ![Edit](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) **[!UICONTROL Verbindung bearbeiten]** aus. Weitere Informationen finden Sie unter [Erstellen oder Bearbeiten einer Verbindung](create-connection.md). |
-| **[!UICONTROL *Datensatzauswahl *]** | Ermöglicht die Auswahl eines Datensatzes oder aller Datensätze in der Verbindung. Datensätze können nicht mehrmals ausgewählt werden. Die Standardeinstellung ist **[!UICONTROL Alle Datensätze]**. |
-| **[!UICONTROL *Datumsbereichsauswahl *]** | Bearbeiten Sie das Start- und Enddatum oder wählen Sie ![Calendar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg) aus, um die Datumsbereichsauswahl zu öffnen. Wählen Sie in der Datumsbereichsauswahl einen Datumsbereich aus, indem Sie einen der vordefinierten Zeiträume verwenden (z. B. **[!UICONTROL Letzte 6 Monate]**), oder legen Sie das Start- und Enddatum über den Kalender fest. Wählen Sie **[!UICONTROL Anwenden]** aus, um den neuen Datumsbereich auf die Verbindungsdetails anzuwenden. |
-| **[!UICONTROL Verfügbare Einträge von Ereignisdaten]** | Die Gesamtzahl der für das Reporting verfügbaren Ereignisdatensätze **für die gesamte Verbindung**. Diese Anzahl ist unabhängig von Kalendereinstellungen. Sie ändert sich, wenn Sie einen Datensatz aus der Datensatzauswahl auswählen, oder durch die Auswahl eines Datensatzes in der Tabelle. Es gibt eine Latenz von 1–2 Stunden, bis die Daten nach dem Hinzufügen in Berichten angezeigt werden. |
+| **[!UICONTROL *Datensatzauswahl *]** | Wählen Sie einen oder alle Datensätze aus, um Details für in der Verbindung anzuzeigen. Datensätze können nicht mehrmals ausgewählt werden. Die Standardeinstellung ist **[!UICONTROL Alle Datensätze]**. |
+| **[!UICONTROL *Datumsbereichsauswahl *]** | Wählen Sie einen Datenbereich aus, um Details für in der Verbindung anzuzeigen. Bearbeiten Sie das Start- und Enddatum oder wählen Sie ![Calendar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg) aus, um die Datumsbereichsauswahl zu öffnen. Wählen Sie in der Datumsbereichsauswahl einen Datumsbereich aus, indem Sie einen der vordefinierten Zeiträume verwenden (z. B. **[!UICONTROL Letzte 6 Monate]**), oder legen Sie das Start- und Enddatum über den Kalender fest. Wählen Sie **[!UICONTROL Anwenden]** aus, um den neuen Datumsbereich auf die Verbindungsdetails anzuwenden. |
+| **[!UICONTROL Verfügbare Einträge von Ereignisdaten]** | Die Gesamtzahl der für das Reporting verfügbaren Ereignisdatensätze **für die gesamte Verbindung**. Diese Anzahl ist unabhängig von einem Datumsbereich oder einer Datensatzauswahl. |
 | [!UICONTROL **[!UICONTROL Metriken]**] | Fasst die hinzugefügten, übersprungenen und gelöschten Ereignis-, Lookup-, Profil- und Zusammenfassungs-Datensatzeinträge sowie die Anzahl der hinzugefügten Batches zusammen. Diese Metriken basieren auf **dem ausgewählten Datensatz und Datumsbereich**.<p>Wählen Sie **[!UICONTROL Detail überprüfen]** aus, um das Popup **[!UICONTROL Übersprungenes Detail überprüfen]** anzuzeigen. Im Popup werden die Anzahl der übersprungenen Datensätze und der Grund für alle Ereignisdatensätze oder ausgewählten Datensätze aufgeführt.<p>![Übersprungene Datensätze](assets/skipped-records.png)<p>Wählen Sie das Popup ![Info](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg) mit weiteren Informationen aus. Aus einigen übersprungenen Gründen, z. B. [!UICONTROL Leere Besucher-ID], zeigt das Popup **[!UICONTROL Beispiel-PSQL für EQS]** (Experience Platform für Abfrage-Service) an, die Sie in [Abfrage-Service](https://experienceleague.adobe.com/de/docs/experience-platform/query/home) verwenden können, um die übersprungenen Datensätze im Datensatz abzufragen. Wählen Sie ![Copy](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) **[!UICONTROL Muster-PSQL für EQS kopieren]** aus, um die SQL zu kopieren. |
-| **[!UICONTROL Hinzugefügte Datensätze]** | Gibt an, wie viele Zeilen im ausgewählten Zeitraum **für den ausgewählten Datensatz und Datumsbereich** hinzugefügt wurden. Aktualisierungen alle 10 Minuten. |
-| **[!UICONTROL Übersprungene Datensätze]** | Gibt an, wie viele Zeilen im ausgewählten Zeitraum **für den ausgewählten Datensatz und Datumsbereich** übersprungen wurden. B2B edition Gründe für das Überspringen von Datensätzen sind: fehlende Zeitstempel, fehlende oder ungültige Personen-ID oder Konto-ID [!BADGE ]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"} usw. Aktualisierungen alle 10 Minuten. <p>Ungültige IDs (z. B. `undefined` oder `00000000` oder eine beliebige Kombination aus Zahlen und Buchstaben in einer [!UICONTROL Personen-ID], die in einem Ereignis mehr als eine Million Mal in einem bestimmten Monat auftritt) sind IDs, die keinem bestimmten Benutzer bzw. keiner bestimmten Person zugeordnet werden können. Diese Zeilen können nicht in das System aufgenommen werden und führen zu Fehlern bei Datenaufnahme und Reporting. Um ungültige Personen- oder Konto-IDs [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"} zu beheben, haben Sie drei Möglichkeiten:<ul><li>Verwenden Sie die [Zuordnungsfunktion](/help/stitching/overview.md), um die Benutzer-IDs, die nicht definiert sind oder nur Nullen enthalten, mit gültigen Benutzer-IDs aufzufüllen.</li><li>Blenden Sie Benutzer-IDs aus, die dann während der Aufnahme übersprungen werden (was ungültigen oder Benutzer-IDs mit nur null vorzuziehen ist).</li><li>Korrigieren Sie alle ungültigen Benutzer-IDs in Ihrem System, bevor Sie die Daten aufnehmen.</li></ul> |
-| **[!UICONTROL Gelöschte Datensätze]** | Gibt an, wie viele Zeilen im ausgewählten Zeitraum **für den ausgewählten Datensatz und Datumsbereich** gelöscht wurden. Beispielsweise könnte jemand einen Datensatz in [!DNL Experience Platform] gelöscht haben. Aktualisierungen alle 10 Minuten.<p>In einigen Szenarien kann dieser Wert auch ersetzte Datensätze enthalten, wie etwa bei der Zuordnung oder bei einigen Aktualisierungen von Lookup-Datensätzen. Sehen Sie sich dieses Beispiel an:</p><ul><li>Sie laden einen Datensatz in einen Datensatz vom Typ „XDM-Profil für Einzelpersonen“ hoch, der von Customer Journey Analytics als Profil-Lookup-Daten aufgenommen wird. In den Verbindungsdetails wird für diesen Datensatz angezeigt, dass ein Datensatz hinzugefügt wurde.</li><li>Sie laden ein Duplikat des ursprünglichen Datensatzes in denselben AEP-Datensatz hoch, der jetzt zwei Datensätze enthält. Customer Journey Analytics nimmt den zusätzlichen Datensatz aus dem Profil- oder Konto-[!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"} Lookup-Datensatz auf. Da für diese Personen-ID oder Konto-ID [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"} bereits ein Profil- oder Kontodatensatz in die Verbindung aufgenommen wurde, löscht Customer Journey Analytics seine frühere Version und fügt die neuen Profildaten hinzu. In den Verbindungsdetails würde diese Aktion bedeuten, dass 1 Datensatz hinzugefügt und 1 Datensatz gelöscht wird, da Customer Journey Analytics nur die neuesten Profilsuchdaten für eine aufgenommene Personen-ID oder Konto-ID [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"} beibehält.</li><li>Insgesamt enthält der AEP-Datensatz zwei Datensätze, die zufällig identisch sind. Separat zeigen die Customer Journey Analytics-Verbindungsdetails den Status der aufgenommenen Daten an: Für diesen Profildatensatz wurden zwei Datensätze hinzugefügt und ein Datensatz gelöscht. </li></ul> |
-| ![Durchsuchen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) | Das Datensatz-Suchfeld. Sie können die Datensatztabelle nach dem Datensatznamen oder der [!UICONTROL Datensatz-ID] durchsuchen. |
-| [!UICONTROL Datensatztabelle] | Zeigt die Datensätze an, die Teil der Verbindung sind. Weitere Erläuterungen finden Sie in der unten stehenden Tabelle. |
+| **[!UICONTROL Hinzugefügte Datensätze]** | Eine Visualisierung, die angibt, wie viele Zeilen im ausgewählten Zeitraum hinzugefügt wurden **für den ausgewählten Datensatz und Datumsbereich**. Aktualisierungen alle 10 Minuten. |
+| **[!UICONTROL Übersprungene Datensätze]** | Eine Visualisierung, die anzeigt, wie viele Zeilen im ausgewählten Zeitraum übersprungen wurden **für den ausgewählten Datensatz und den ausgewählten Datumsbereich**. B2B edition Gründe für das Überspringen von Datensätzen sind: fehlende Zeitstempel, fehlende oder ungültige Personen-ID oder Konto-ID [!BADGE ]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"} usw. Aktualisierungen alle 10 Minuten. <p>Ungültige IDs (z. B. `undefined` oder `00000000` oder eine beliebige Kombination aus Zahlen und Buchstaben in einer [!UICONTROL Personen-ID], die in einem Ereignis mehr als eine Million Mal in einem bestimmten Monat auftritt) sind IDs, die keinem bestimmten Benutzer bzw. keiner bestimmten Person zugeordnet werden können. Diese Zeilen können nicht in das System aufgenommen werden und führen zu Fehlern bei Datenaufnahme und Reporting. Um ungültige Personen- oder Konto-IDs [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"} zu beheben, haben Sie drei Möglichkeiten:<ul><li>Verwenden Sie die [Zuordnungsfunktion](/help/stitching/overview.md), um die Benutzer-IDs, die nicht definiert sind oder nur Nullen enthalten, mit gültigen Benutzer-IDs aufzufüllen.</li><li>Blenden Sie Benutzer-IDs aus, die dann während der Aufnahme übersprungen werden (was ungültigen oder Benutzer-IDs mit nur null vorzuziehen ist).</li><li>Korrigieren Sie alle ungültigen Benutzer-IDs in Ihrem System, bevor Sie die Daten aufnehmen.</li></ul> |
+| **[!UICONTROL Gelöschte Datensätze]** | Eine Visualisierung, die anzeigt, wie viele Zeilen im ausgewählten Zeitraum gelöscht wurden **für den ausgewählten Datensatz und Datumsbereich**. Beispielsweise könnte jemand einen Datensatz in [!DNL Experience Platform] gelöscht haben. Aktualisierungen alle 10 Minuten.<p>In einigen Szenarien kann dieser Wert auch ersetzte Datensätze enthalten, wie etwa bei der Zuordnung oder bei einigen Aktualisierungen von Lookup-Datensätzen. Sehen Sie sich dieses Beispiel an:</p><ul><li>Sie laden einen Datensatz in einen Datensatz vom Typ „XDM-Profil für Einzelpersonen“ hoch, der von Customer Journey Analytics als Profil-Lookup-Daten aufgenommen wird. In den Verbindungsdetails wird für diesen Datensatz angezeigt, dass ein Datensatz hinzugefügt wurde.</li><li>Sie laden ein Duplikat des ursprünglichen Datensatzes in denselben AEP-Datensatz hoch, der jetzt zwei Datensätze enthält. Customer Journey Analytics nimmt den zusätzlichen Datensatz aus dem Profil- oder Konto-[!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"} Lookup-Datensatz auf. Da für diese Personen-ID oder Konto-ID [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"} bereits ein Profil- oder Kontodatensatz in die Verbindung aufgenommen wurde, löscht Customer Journey Analytics seine frühere Version und fügt die neuen Profildaten hinzu. In den Verbindungsdetails würde diese Aktion bedeuten, dass 1 Datensatz hinzugefügt und 1 Datensatz gelöscht wird, da Customer Journey Analytics nur die neuesten Profilsuchdaten für eine aufgenommene Personen-ID oder Konto-ID [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"} beibehält.</li><li>Insgesamt enthält der AEP-Datensatz zwei Datensätze, die zufällig identisch sind. Separat zeigen die Customer Journey Analytics-Verbindungsdetails den Status der aufgenommenen Daten an: Für diesen Profildatensatz wurden zwei Datensätze hinzugefügt und ein Datensatz gelöscht. </li></ul> |
+| ![Durchsuchen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) | Das Datensatz-Suchfeld. Sie können die Datensatztabelle nach Datensatznamen oder Datensatz-ID durchsuchen. |
+| [!UICONTROL Datensatztabelle] | Die Datensätze, die Teil der Verbindung sind. Weitere Erläuterungen finden Sie in der unten stehenden Tabelle. Wählen Sie ![SelectBox](/help/assets/icons/SelectBox.svg) einen einzelnen Datensatz aus, um nur Verbindungsdetails für den ausgewählten Datensatz anzuzeigen. Dies entspricht der Auswahl eines Datensatzes aus der **[!UICONTROL _Datensatzauswahl_]**. |
 
-Die Tabelle Datensätze zeigt die folgenden Spalten an:
+Die Tabelle Datensätze zeigt für jeden Datensatz die folgenden Spalten an:
 
 | Spalte | Beschreibung |
 | --- | --- |
-| **[!UICONTROL Datensätze]** | Der Name des Datensatzes, der Teil der Verbindung ist. Sie können den Hyperlink auswählen, um den Datensatz in der Experience Platform-Benutzeroberfläche auf einer neuen Registerkarte zu öffnen. Sie können die Zeile auswählen oder das Kontrollkästchen aktivieren, um nur Details für den ausgewählten Datensatz anzuzeigen. |
-| **[!UICONTROL Datensatz-ID]** | Wird automatisch von Experience Platform generiert. |
-| **[!UICONTROL Hinzugefügte Datensätze]** | Die Anzahl der Datensatzeinträge (Zeilen), die im ausgewählten Zeitintervall zu einer Verbindung hinzugefügt wurden. |
-| **[!UICONTROL Übersprungene Datensätze]** | Die Anzahl der Datensatzeinträge (Zeilen), die bei der Datenübertragung für eine Verbindung im ausgewählten Zeitintervall übersprungen wurden. |
-| **[!UICONTROL Gelöschte Datensätze]** | Die Anzahl der Datensatzeinträge (Zeilen), die im ausgewählten Zeitintervall aus einer Verbindung entfernt wurden. |
-| **[!UICONTROL Batches hinzugefügt]** | Die Anzahl der Datensatz-Batches, die einer Verbindung hinzugefügt wurden. |
-| **[!UICONTROL Zuletzt hinzugefügt]** | Der Zeitstempel des letzten Batches aus einem beliebigen Datensatz, der einer Verbindung hinzugefügt wurde. |
-| **[!UICONTROL Datenquellentyp]** | Der Quellentyp des Datensatzes. Sie definieren den Quellentyp beim Erstellen einer Verbindung. |
-| **[!UICONTROL Typ des Datensatzes]** | Der Datensatztyp für diesen Datensatz. Mögliche Typen sind [!UICONTROL Ereignis], [!UICONTROL Profil], [!UICONTROL Lookup] oder [!UICONTROL Zusammenfassung]. [Weitere Infos](https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-connections/create-connection) |
+| **[!UICONTROL Datensätze]** | Der Name des Datensatzes. Sie können den Hyperlink auswählen, um den Datensatz in der Experience Platform-Benutzeroberfläche auf einer neuen Registerkarte zu öffnen. Sie können die Zeile auswählen oder das Kontrollkästchen aktivieren, um nur Details für den ausgewählten Datensatz anzuzeigen. |
+| **[!UICONTROL Datensatz-ID]** | Die von Experience Platform generierte Datensatz-ID. |
+| **[!UICONTROL Hinzugefügte Datensätze]** | Die Anzahl der Datensatzdatensätze (Zeilen), die einer Verbindung während des ausgewählten Datumsbereichs hinzugefügt wurden. |
+| **[!UICONTROL Übersprungene Datensätze]** | Die Anzahl der bei der Datenübertragung für eine Verbindung übersprungenen Datensatzdatensätze (Zeilen) im ausgewählten Datumsbereich. |
+| **[!UICONTROL Gelöschte Datensätze]** | Die Anzahl der Datensätze (Zeilen), die während des ausgewählten Datumsbereichs aus einer Verbindung entfernt wurden. |
+| **[!UICONTROL Batches hinzugefügt]** | Die Anzahl der Batches, die einer Verbindung im ausgewählten Datumsbereich hinzugefügt wurden. |
+| **[!UICONTROL Zuletzt hinzugefügt]** | Der Zeitstempel des letzten Batches, der einer Verbindung hinzugefügt wurde. |
+| **[!UICONTROL Datenquellentyp]** | Der Quelltyp. Sie definieren den Quelltyp, wenn Sie einen Datensatz zu einer Verbindung hinzufügen. |
+| **[!UICONTROL Typ des Datensatzes]** | Der [Datensatztyp](create-connection.md#dataset-types). Der Typ kann [!UICONTROL Ereignis], [!UICONTROL Profil], [!UICONTROL Suche] oder [!UICONTROL Zusammenfassung]. |
 | **[!UICONTROL Schema]** | Das Experience Platform-Schema, auf dem der Datensatz basiert. |
 | **[!UICONTROL Importieren neuer Daten]** | Der Status des Imports neuer Daten für den Datensatz: <p>![Status green](assets/status-green.svg)   **[!UICONTROL _x _Ein]**, wenn der Datensatz für den Import neuer Daten konfiguriert ist,<p>![Status gray](assets/status-gray.svg)   **[!UICONTROL _x Aus_]**, wenn der Datensatz so konfiguriert ist, dass keine neuen Daten importiert werden. |
 | **[!UICONTROL Umwandeln von Daten]** | Der Umwandlungsstatus von entsprechenden B2B-Lookup-Datensätzen. Weitere Informationen finden Sie unter [Umwandeln von Datensätzen für B2B-Suchen](transform-datasets-b2b-lookups.md).<p>![Status green](assets/status-green.svg)   **[!UICONTROL _x _Ein]**für entsprechende Datensätze, die für die Umwandlung aktiviert sind, <p>![Status gray](assets/status-gray.svg)   **[!UICONTROL _x Aus_]** für entsprechende Datensätze, die nicht für die Umwandlung aktiviert sind,<p>**[!UICONTROL Nicht zutreffend]** für alle anderen Datensätze, nicht für eine Umwandlung in Frage kommen. |
-| **[!UICONTROL Aufstockungsdaten]** | Der Status der Aufstockungsdaten für den Datensatz.<p>![Status red](assets/status-red.svg)   **[!UICONTROL _x _Aufstockungen fehlgeschlagen]**für die Anzahl der fehlgeschlagenen Aufstockungen,<p>![Status orange](assets/status-orange.svg)   **[!UICONTROL _x _Aufstockungen werden verarbeitet]**für die Anzahl der verarbeiteten Aufstockungen,<p>![Status green](assets/status-green.svg)   **[!UICONTROL _x _Aufstockungen abgeschlossen]**für die Anzahl der abgeschlossenen Aufstockungen,<p>![Status gray](assets/status-gray.svg)   **[!UICONTROL _Aus_]**, falls keine Aufstockungen konfiguriert sind. |
-| **[!UICONTROL Importieren neuer Daten]** | Der Status des Imports neuer Daten für den Datensatz: <p>![Status green](assets/status-green.svg)   **[!UICONTROL _x _Ein]**, wenn der Datensatz für den Import neuer Daten konfiguriert ist,<p>![Status gray](assets/status-gray.svg)   **[!UICONTROL _x Aus_]**, wenn der Datensatz so konfiguriert ist, dass keine neuen Daten importiert werden. |
 | **[!UICONTROL Aufstockungsdaten]** | Der Status der Aufstockungsdaten für den Datensatz.<p>![Status red](assets/status-red.svg)   **[!UICONTROL _x _Aufstockungen fehlgeschlagen]**für die Anzahl der fehlgeschlagenen Aufstockungen,<p>![Status orange](assets/status-orange.svg)   **[!UICONTROL _x _Aufstockungen werden verarbeitet]**für die Anzahl der verarbeiteten Aufstockungen,<p>![Status green](assets/status-green.svg)   **[!UICONTROL _x _Aufstockungen abgeschlossen]**für die Anzahl der abgeschlossenen Aufstockungen,<p>![Status gray](assets/status-gray.svg)   **[!UICONTROL _Aus_]**, falls keine Aufstockungen konfiguriert sind. |
 
 >[!IMPORTANT]
@@ -179,24 +170,26 @@ Die Tabelle Datensätze zeigt die folgenden Spalten an:
 
 #### Panel „Verbindung“
 
-Wenn kein Datensatz in der Datensatztabelle ausgewählt ist, werden in einem Panel auf der rechten Seite der Benutzeroberfläche „Verbindung“ Verbindungsoptionen und -details angezeigt.
+Wenn kein einzelner Datensatz in der Datensatztabelle ausgewählt ist, zeigt der rechte Bereich Verbindungsoptionen und -details an.
 
 | Optionen | Beschreibung |
 | --- | --- |
-| ![Refresh](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Refresh_18_N.svg) [!UICONTROL Aktualisieren] | Um die Verbindung zu aktualisieren und die Anzeige kürzlich hinzugefügter Datensätze zuzulassen, wählen Sie ![Refresh](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Refresh_18_N.svg) **[!UICONTROL Aktualisieren]** aus. |
+| ![Refresh](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Refresh_18_N.svg) **[!UICONTROL Aktualisieren]** | Um die Verbindung zu aktualisieren und die Anzeige kürzlich hinzugefügter Datensätze zuzulassen, wählen Sie ![Refresh](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Refresh_18_N.svg) **[!UICONTROL Aktualisieren]** aus. |
 | ![Löschen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Delete_18_N.svg) **[!UICONTROL Löschen]** | [Löschen](#delete-a-connection) Sie diese Verbindung. |
 | ![Add data view](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataAdd_18_N.svg) **[!UICONTROL Datenansicht erstellen]** | [Erstellen Sie eine Datenansicht](#create-a-data-view) auf Grundlage dieser Verbindung. Weitere Informationen finden Sie unter [Datenansichten](https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-dataviews/data-views). |
 | **[!UICONTROL Name der Verbindung]** | Der Anzeigename der Verbindung. |
-| **[!UICONTROL Beschreibung der Verbindung]** | Eine Beschreibung für die Verbindung. |
-| **[!UICONTROL Sandbox]** | Die [Experience Platform-Sandbox](https://experienceleague.adobe.com/de/docs/experience-platform/sandbox/home), aus der diese Verbindung ihre Datensätze abruft. Diese Sandbox wurde beim erstmaligen Erstellen der Verbindung ausgewählt. Sie kann nicht geändert werden. |
-| **[!UICONTROL Verbindungs-ID]** | Diese ID wird in Experience Platform generiert. Sie können ![Copy](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) verwenden, um die ID zu kopieren. |
-| **[!UICONTROL Datenaufrufe, die Verbindungen verwenden]** | Listet alle Datenansichten auf, die diese Verbindung verwenden. |
+| **[!UICONTROL Beschreibung der Verbindung]** | Die Beschreibung der Verbindung. |
+| **[!UICONTROL Sandbox]** | Die [Experience Platform-Sandbox](https://experienceleague.adobe.com/de/docs/experience-platform/sandbox/home), aus der diese Verbindung ihre Datensätze abruft. Sie wählen diese Sandbox aus, als Sie die Verbindung erstellt haben. Sie können die Sandbox nicht mehr ändern, sobald eine Verbindung gespeichert wurde. |
+| **[!UICONTROL Verbindungs-ID]** | Eine generierte Kennung für die Verbindung. Sie können ![Kopieren](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) verwenden, um den Wert zu kopieren. |
+| [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}<br/>**[!UICONTROL Primärer ID-Typ ]** | Der primäre ID-Typ für die Verbindung **[!UICONTROL (Person]** für eine personenbasierte Verbindung, **[!UICONTROL Konto]** für eine kontobasierte Verbindung. |
+| [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}<br/>**[!UICONTROL Containers ]** | Die konfigurierten Container für die Verbindung. |
+| **[!UICONTROL Datenaufrufe, die Verbindungen verwenden]** | Die Datenansichten, die diese Verbindung verwenden. |
 | **[!UICONTROL Importieren neuer Daten]** | Der Status des Imports neuer Daten für Datensätze: <p>![Status green](assets/status-green.svg)   **[!UICONTROL _x _Ein]**für die Anzahl der Datensätze, die für den Import neuer Daten konfiguriert sind,<p>![Status gray](assets/status-gray.svg)   **[!UICONTROL _x Aus_]** für die Anzahl der Datensätze, für die der Import neuer Daten deaktiviert ist. |
 | **[!UICONTROL Aufstockungsdaten]** | Der Status der Aufstockungsdaten für Datensätze:<p>![Status red](assets/status-red.svg)   **[!UICONTROL _x _Aufstockungen fehlgeschlagen]**für die Anzahl der datensatzübergreifend fehlgeschlagenen Aufstockungen,<p>![Status orange](assets/status-orange.svg)   **[!UICONTROL _x _Aufstockungen werden verarbeitet]**für die Anzahl der datensatzübergreifend verarbeiteten Aufstockungen,<p>![Status green](assets/status-green.svg)   **[!UICONTROL _x _Aufstockungen abgeschlossen]**für die Anzahl der abgeschlossenen Aufstockungen für Datensätze,<p>![Status gray](assets/status-gray.svg)   **[!UICONTROL _Aus_]**, falls für die Datensätze in der Verbindung keine Aufstockungen definiert sind. |
 | **[!UICONTROL Umwandeln von Daten]** | Der Umwandlungsstatus von entsprechenden B2B-Lookup-Datensätzen. Weitere Informationen finden Sie unter [Umwandeln von Datensätzen für B2B-Suchen](transform-datasets-b2b-lookups.md).<p>![Status green](assets/status-green.svg)   **[!UICONTROL _x _Ein]**für die Anzahl der für die Umwandlung aktivierten Datensätze. |
 | **[!UICONTROL Erstellt von]** | Der Name der Person, die die Verbindung erstellt hat. |
 | **[!UICONTROL Zuletzt geändert]** | Der Zeitstempel der letzten Änderung der Verbindung. |
-| **[!UICONTROL Zuletzt geändert von]** | Die Person, die die Verbindung zuletzt geändert hat. |
+| **[!UICONTROL Zuletzt geändert von]** | Der Name der Person, die die Verbindung zuletzt geändert hat. |
 
 #### Panel „Datensatz“
 
@@ -204,22 +197,24 @@ Wenn eine Datensatzzeile in der Datensatztabelle ausgewählt ist, zeigt ein Bedi
 
 | Details | Beschreibung |
 | --- | --- |
-| **[!UICONTROL Personen-ID]** | Eine Identität, die im Datensatzschema in der Experience Platform definiert ist. Dabei handelt es sich um die Personen-ID, die Sie bei der Erstellung der Verbindung ausgewählt haben. Wenn Sie eine Verbindung erstellen, die Datensätze mit unterschiedlichen IDs enthält, wird dies beim Reporting berücksichtigt. Um Datensätze zusammenzuführen, müssen Sie datensatzübergreifend dieselbe Personen-ID verwenden. |
+| [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}<br/>**[!UICONTROL Global-Konto-ID ]** | Die Identität, die Sie als globale Konto-ID für die Verbindung angegeben haben. Gilt nur für eine kontobasierte Verbindung, für die ein Container für ein globales Konto konfiguriert ist. |
+| [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}<br/>**[!UICONTROL Account-ID ]** | Die Identität, die Sie als Konto-ID für die Verbindung angegeben haben. Gilt nur für eine kontobasierte Verbindung, für die kein globaler Konto-Container konfiguriert ist. |
+| **[!UICONTROL Personen-ID]** | Die Identität, die Sie als Personen-ID für die Verbindung angegeben haben. |
 | **[!UICONTROL Schlüssel]** | Der Schlüssel, den Sie für einen Lookup-Datensatz angegeben haben. |
 | **[!UICONTROL Übereinstimmender Schlüssel]** | Der übereinstimmende Schlüssel, den Sie für einen Lookup-Datensatz angegeben haben. |
 | **[!UICONTROL Zeitstempel]** | Der für einen Ereignisdatensatz definierte Zeitstempel. |
 | **[!UICONTROL Verfügbare Datensätze]** | Die Gesamtzahl der Zeilen, die für diesen Datensatz in dem im Kalender ausgewählten Zeitraum aufgenommen wurden. Es gibt keine Latenz im Hinblick darauf, ab wann die Daten nach dem Hinzufügen in Berichten angezeigt werden. Wenn Sie jedoch eine völlig neue Verbindung erstellen, gibt es eine [Latenz](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2c-overview/cja-faq). |
-| **[!UICONTROL Hinzugefügte Datensätze]** | Wie viele Zeilen im ausgewählten Zeitraum hinzugefügt wurden. |
-| **[!UICONTROL Gelöschte Datensätze]** | Wie viele Datensätze im ausgewählten Zeitraum gelöscht wurden. |
-| **[!UICONTROL Batches hinzugefügt]** | Wie viele Datenstapel diesem Datensatz hinzugefügt wurden. |
-| **[!UICONTROL Übersprungene Datensätze]** | Wie viele Zeilen während der Aufnahme im ausgewählten Zeitraum übersprungen wurden.<p>Gründe für das Überspringen von Datensätzen sind: fehlende Zeitstempel, fehlende oder ungültige Personen-ID oder Konto-ID [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"} usw. Aktualisierungen alle 10 Minuten.<p>Ungültige IDs (z. B. `undefined` oder `00000000` oder eine beliebige Kombination aus Zahlen und Buchstaben in einer [!UICONTROL Personen-ID], die in einem Ereignis mehr als eine Million Mal in einem bestimmten Monat auftritt) sind IDs, die keinem bestimmten Benutzer bzw. keiner bestimmten Person zugeordnet werden können. Diese Zeilen können nicht in das System aufgenommen werden und führen zu Fehlern bei Datenaufnahme und Reporting. Um ungültige Personen- oder Konto-IDs zu beheben, haben Sie drei Optionen:<ul><li>Verwenden Sie die [Zuordnungsfunktion](/help/stitching/overview.md), um die Benutzer-IDs, die nicht definiert sind oder nur Nullen enthalten, mit gültigen Benutzer-IDs aufzufüllen.</li><li>Blenden Sie die Benutzer-ID aus, die dann bei der Datenaufnahme übersprungen wird (was Benutzer-IDs vorzuziehen ist, die ungültig sind oder nur Nullen enthalten).</li><li>Korrigieren Sie alle ungültigen Benutzer-IDs in Ihrem System, bevor Sie die Daten aufnehmen.</li></ul> |
-| **[!UICONTROL Zuletzt hinzugefügt]** | Der Zeitstempel, wann der letzte Batch hinzugefügt wurde. |
+| **[!UICONTROL Hinzugefügte Datensätze]** | Die Anzahl der Datensatzdatensätze (Zeilen), die einer Verbindung während des ausgewählten Datumsbereichs hinzugefügt wurden. |
+| **[!UICONTROL Übersprungene Datensätze]** | Die Anzahl der bei der Datenübertragung für eine Verbindung übersprungenen Datensatzdatensätze (Zeilen) im ausgewählten Datumsbereich. |
+| **[!UICONTROL Batches hinzugefügt]** | Die Anzahl der Batches, die einer Verbindung hinzugefügt wurden. |
+| **[!UICONTROL Gelöschte Datensätze]** | Die Anzahl der Datensätze (Zeilen), die während des ausgewählten Datumsbereichs aus einer Verbindung entfernt wurden. |
+| **[!UICONTROL Zuletzt hinzugefügt]** | Der Zeitstempel des letzten Batches, der einer Verbindung hinzugefügt wurde. |
 | **[!UICONTROL Importieren neuer Daten]** | Der Status des Imports neuer Daten für den Datensatz: <p>![Status green](assets/status-green.svg)   **[!UICONTROL _x _Ein]**, wenn der Datensatz für den Import neuer Daten konfiguriert ist,<p>![Status gray](assets/status-gray.svg)   **[!UICONTROL _x Aus_]**, wenn der Datensatz so konfiguriert ist, dass keine neuen Daten importiert werden. |
 | **[!UICONTROL Aufstockungsdaten]** | Der Status der Aufstockungsdaten für den Datensatz.<p>![Status red](assets/status-red.svg)   **[!UICONTROL _x _Aufstockungen fehlgeschlagen]**für die Anzahl der fehlgeschlagenen Aufstockungen,<p>![Status orange](assets/status-orange.svg)   **[!UICONTROL _x _Aufstockungen werden verarbeitet]**für die Anzahl der verarbeiteten Aufstockungen,<p>![Status green](assets/status-green.svg)   **[!UICONTROL _x _Aufstockungen abgeschlossen]**für die Anzahl der abgeschlossenen Aufstockungen,<p>![Status gray](assets/status-gray.svg)   **[!UICONTROL _Aus_]**, falls keine Aufstockungen konfiguriert sind.<p>Um ein Dialogfeld mit einer Übersicht über die früheren Aufstockungen für den Datensatz anzuzeigen, wählen Sie <img src="./assets/pastbackfill.svg" alt="Frühere Aufstockungen" width="15"/> **[!UICONTROL Frühere Aufstockungen]** aus. |
-| **[!UICONTROL Datenquellentyp]** | Der Datenquellentyp, wie beim Hinzufügen des Datensatzes zur Verbindung definiert. |
-| **[!UICONTROL Typ des Datensatzes]** | Entweder [!UICONTROL Ereignis], [!UICONTROL Profil], [!UICONTROL Lokup] oder [!UICONTROL Zusammenfassung]. [Weitere Infos](https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-connections/create-connection) |
+| **[!UICONTROL Datenquellentyp]** | Datenquellentyp, wie er beim Hinzufügen des Datensatzes zur Verbindung definiert wurde. |
+| **[!UICONTROL Typ des Datensatzes]** | Der [Datensatztyp](create-connection.md#dataset-types). |
 | **[!UICONTROL Schema]** | Das Experience Platform-Schema, auf dem dieser Datensatz basiert. |
-| **[!UICONTROL Datensatz-ID]** | Diese Datensatz-ID wird in Experience Platform generiert. |
+| **[!UICONTROL Datensatz-ID]** | Die Datensatz-ID, wie in Experience Platform generiert. |
 
 
 ## Nutzung {#connections-usage}
@@ -287,7 +282,7 @@ Wenn eine Datensatzzeile in der Datensatztabelle ausgewählt ist, zeigt ein Bedi
 >[!CONTEXTUALHELP]
 >id="cja_connections_corereportablerows"
 >title="Berichtsfähige Zeilen zu Kerndaten"
->abstract="Zeigt die Gesamtzahl der für die letzten 13 Monate verfügbaren Zeilen an. Beispielsweise zeigt die Zahl am 1. Februar 2024 die Gesamtzahl der verfügbaren Zeilen mit einem Ereignis-Zeitstempel von Januar 2023 bis Januar 2024 an."
+>abstract="Die Gesamtzahl der für die letzten 13 Monate verfügbaren Zeilen. Beispielsweise zeigt die Zahl am 1. Februar 2024 die Gesamtzahl der verfügbaren Zeilen mit einem Ereignis-Zeitstempel von Januar 2023 bis Januar 2024 an."
 <!-- markdownlint-enable MD034 -->
 
 <!-- markdownlint-disable MD034 -->
@@ -295,7 +290,7 @@ Wenn eine Datensatzzeile in der Datensatztabelle ausgewählt ist, zeigt ein Bedi
 >[!CONTEXTUALHELP]
 >id="cja_connections_historicalreportablerows"
 >title="Berichtsfähige Zeilen zu historischen Daten"
->abstract="Zeigt die Gesamtzahl der verfügbaren Zeilen für den Zeitraum an, der länger als 13 Monate zurückliegt. Beispielsweise zeigt die Zahl am 1. Februar 2024 die Gesamtzahl der verfügbaren Zeilen mit einem Ereignis-Zeitstempel an, der älter als Januar 2023 ist."
+>abstract="Die Gesamtzahl der verfügbaren Zeilen für den Zeitraum, der älter als 13 Monate ist. Beispielsweise zeigt die Zahl am 1. Februar 2024 die Gesamtzahl der verfügbaren Zeilen mit einem Ereignis-Zeitstempel an, der älter als Januar 2023 ist."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -362,7 +357,7 @@ Wenn eine Datensatzzeile in der Datensatztabelle ausgewählt ist, zeigt ein Bedi
 >[!CONTEXTUALHELP]
 >id="connections_corereportablerows"
 >title="Berichtsfähige Zeilen zu Kerndaten"
->abstract="Zeigt die Gesamtzahl der für die letzten 13 Monate verfügbaren Zeilen an. Beispielsweise zeigt die Zahl am 1. Februar 2024 die Gesamtzahl der verfügbaren Zeilen mit einem Ereignis-Zeitstempel von Januar 2023 bis Januar 2024 an."
+>abstract="Die Gesamtzahl der für die letzten 13 Monate verfügbaren Zeilen. Beispielsweise zeigt die Zahl am 1. Februar 2024 die Gesamtzahl der verfügbaren Zeilen mit einem Ereignis-Zeitstempel von Januar 2023 bis Januar 2024 an."
 <!-- markdownlint-enable MD034 -->
 
 <!-- markdownlint-disable MD034 -->
@@ -370,7 +365,7 @@ Wenn eine Datensatzzeile in der Datensatztabelle ausgewählt ist, zeigt ein Bedi
 >[!CONTEXTUALHELP]
 >id="connections_historicalreportablerows"
 >title="Berichtsfähige Zeilen zu historischen Daten"
->abstract="Zeigt die Gesamtzahl der verfügbaren Zeilen für den Zeitraum an, der länger als 13 Monate zurückliegt. Beispielsweise zeigt die Zahl am 1. Februar 2024 die Gesamtzahl der verfügbaren Zeilen mit einem Ereignis-Zeitstempel an, der älter als Januar 2023 ist."
+>abstract="Die Gesamtzahl der verfügbaren Zeilen für den Zeitraum, der älter als 13 Monate ist. Beispielsweise zeigt die Zahl am 1. Februar 2024 die Gesamtzahl der verfügbaren Zeilen mit einem Ereignis-Zeitstempel an, der älter als Januar 2023 ist."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -464,7 +459,7 @@ Die Benutzeroberfläche „Nutzung“ besteht aus zwei Panels:
 
   Sie können die Tabelle **[!UICONTROL Detailaufschlüsselung]** verwenden, um detaillierte Metriken nach Verbindung, Datensatz, Sandbox und Tags anzuzeigen. Über Datensätze wird mit IDs anstelle von Namen berichtet, da Datensatznamen während eines Berichtszeitraums geändert werden können. Über unbekannte Datensätze oder Verbindungen wird mithilfe von IDs berichtet.
 
-  Seit Monaten vor September 2024 wurden Daten auf Datensatzebene erfasst. Sie werden der Klarheit halber als [!UICONTROL andere Datensätze] angezeigt. Seit September 2024 werden Daten auf einer granularen Datensatzebene erfasst und [!UICONTROL andere Datensätze] werden nicht mehr angezeigt.
+  Seit Monaten vor September 2024 wurden Daten auf Datensatzebene erfasst. Sie werden der Klarheit halber als [!UICONTROL andere Datensätze] angezeigt. Ab September 2024 werden Daten auf einer granularen Datensatzebene erfasst und [!UICONTROL Andere Datensätze] werden nicht mehr angezeigt.
 
    * Um die Aufschlüsselung zu ändern, wählen Sie eine Kombination für **[!UICONTROL Anzeigen nach]** und **[!UICONTROL Aufschlüsselung nach]** aus.
 
