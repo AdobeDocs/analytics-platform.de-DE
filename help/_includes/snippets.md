@@ -1,8 +1,8 @@
 ---
-source-git-commit: a85efff8720d8fdf02b0d1290fedf17654be48e3
+source-git-commit: 3ca1004fc1bbe3b60f32348d7da84718aef3a057
 workflow-type: tm+mt
-source-wordcount: '3759'
-ht-degree: 30%
+source-wordcount: '4061'
+ht-degree: 33%
 
 ---
 # Snippets
@@ -238,3 +238,19 @@ Verwenden Sie die folgenden Informationen, um die Visualisierung auszuwählen, d
 >[!INFO]
 >
 >In dieser Dokumentation sind bestimmte B2B-Artikel oder -Funktionen, die nur mit Customer Journey Analytics B2B edition verfügbar sind, mit [!BADGE B2B edition]{type=Informative} gekennzeichnet.
+
+
+## Allgemeine Datensatzeinstellungen {#common-dataset-settings}
+
+| Einstellung | Beschreibung |
+|---|---|
+| **[!UICONTROL Importieren neuer Daten]** | Aktivieren Sie diese Option, wenn eine fortlaufende Verbindung hergestellt werden soll. Mit einer fortlaufenden Verbindung sind neue Daten-Batches, die den Datensätzen hinzugefügt werden, automatisch in Workspace verfügbar. |
+| **[!UICONTROL Aufstockung des Datensatzes]** | Aktivieren Sie **[!UICONTROL Aufstockung aller vorhandenen Daten]**, um sicherzustellen, dass alle vorhandenen Daten aufgestockt werden.<br/><br/>Wählen Sie **[!UICONTROL Aufstockung anfordern]** aus, um eine Aufstockung mit historischen Daten für einen bestimmten Zeitraum durchzuführen. Sie können bis zu 10 Aufstockungszeiträume für Datensätze definieren.<ol><li>Definieren Sie den Zeitraum durch Eingabe von Start- und Enddaten oder Auswahl von Datumsangaben mithilfe des ![Kalenders](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg).</li><li>Wählen Sie **[!UICONTROL Aufstockung in Warteschlange stellen]** aus, um die Aufstockung der Liste hinzuzufügen, oder **[!UICONTROL Abbrechen]**, um den Vorgang abzubrechen.</li></ol>Wählen Sie für jeden Eintrag ![Bearbeiten](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) aus, um den Zeitraum zu bearbeiten, oder ![Löschen](https://spectrum.adobe.com/static/icons/ui_18/CrossSize500.svg), um den Eintrag zu löschen.<br/><br/>Bei Aufstockungen:<ul><li>Sie können jeden Datensatz einzeln aufstocken.</li><li>Neue Daten, die einem Datensatz in der Verbindung hinzugefügt werden, werden priorisiert, sodass diese neuen Daten die geringste Latenz aufweisen.</li><li>Alle (historischen) Aufstockungsdaten werden langsamer importiert. Die Menge historischer Daten beeinflusst die Latenz.</li><li>Der Analytics-Quell-Connector importiert Daten aus bis zu 13 Monaten (unabhängig von ihrer Größe) für Produktions-Sandboxes. Die Aufstockung in Nicht-Produktions-Sandboxes ist dagegen auf 3 Monate beschränkt.</li></ul> |
+| **[!UICONTROL Batch-Status]** | Mögliche Statusindikatoren sind:<ul><li>Erfolgreich</li><li>X Aufstockung(en) werden verarbeitet</li><li>Aus</li></ul> |
+| **[!UICONTROL Datensatz-ID]** | Diese ID wird automatisch generiert. |
+| **[!UICONTROL Beschreibung]** | Die Beschreibung, die diesem Datensatz bei der Erstellung des Datensatzes gegeben wurde. |
+| **[!UICONTROL Anzahl der Datensätze]** | Die Größe des Datensatzes. |
+| **[!UICONTROL Schema]** | Das Schema, auf dessen Grundlage der Datensatz in Adobe Experience Platform erstellt wurde. |
+| **[!UICONTROL Datensatz]** | Der Name des Datensatzes. |
+| **[!UICONTROL Vorschau: *Datensatzname *]** | Vorschau des Datensatzes für die ersten 10 Zeilen und die ersten 10 Spalten. |
+| ![RemoveCircle](/help/assets/icons/RemoveCircle.svg) **[!UICONTROL Remove]** | Sie können [Datensatz löschen](/help/connections/create-connection.md#delete-a-dataset) ohne die gesamte Verbindung zu löschen. Das Löschen eines Datensatzes aus einer Verbindung reduziert die Kosten für die Datenaufnahme und den aufwändigen Prozess der Neuerstellung der gesamten Verbindung und der zugehörigen Datenansichten. |
