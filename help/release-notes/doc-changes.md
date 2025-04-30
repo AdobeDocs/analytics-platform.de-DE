@@ -4,9 +4,9 @@ description: Listet Inhaltsaktualisierungen für Dokumentation zu Customer Journ
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 5fd023f988e485f04654869a982e02cb0f3e52a1
+source-git-commit: 1a88be1f79bc6dc07f849af5f32f3472105ee3ed
 workflow-type: tm+mt
-source-wordcount: '5088'
+source-wordcount: '5103'
 ht-degree: 90%
 
 ---
@@ -20,6 +20,7 @@ Die folgenden Aktualisierungen wurden seit der ersten Erstellung der Customer Jo
 | Funktion | Beschreibung |
 | --- | --- |
 | **April 2025** | |
+| Verbindungen | Die Dokumentation zu Kunden-Journey-Verbindungen für bevorstehende Kunden-Journey-B2B edition wurde überarbeitet und aktualisiert. |
 | Anwendungsfall für die Produktanalyse | [Produktanalyse in Customer Journey Analytics&quot; ](/help/use-cases/product-analysis.md). |
 | Freigegebene Metriken und Dimensionen | Es wurde Dokumentation für die Funktion [Freigegebene Metriken und Dimensionen](/help/data-views/shared-metrics-dimensions/smd-overview.md) hinzugefügt. |
 | Report Builder | Die Dokumentation zu [Report Builder} wurde ](/help/report-builder/report-buider-overview.md) und aktualisiert. |

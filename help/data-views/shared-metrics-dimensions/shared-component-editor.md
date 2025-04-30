@@ -1,7 +1,8 @@
 ---
 title: Freigegebener Komponenten-Editor
 description: Erstellen oder bearbeiten Sie freigegebene Dimensionen und Metriken.
-source-git-commit: d2c6605cc440c293aca279c1583bac964055d277
+exl-id: 3f6a808a-d6ac-4a47-a5e2-63b9f17952e8
+source-git-commit: 62df631eeac40f2009304d91c93950c38a260dab
 workflow-type: tm+mt
 source-wordcount: '390'
 ht-degree: 0%
@@ -19,7 +20,7 @@ Mit dem Editor für freigegebene Komponenten können Sie freigegebene Dimensione
 
 Oben rechts befinden sich drei Schaltflächen:
 
-* **[!UICONTROL Schließen]** oder **[!UICONTROL Abbrechen]**: Wenn alle Änderungen gespeichert wurden, wird der Editor durch Klicken auf **[!UICONTROL Schließen]** geschlossen. Wenn es ungespeicherte Änderungen gibt, wird mit der Schaltfläche **[!UICONTROL Abbrechen] der Editor geschlossen, ohne dass diese Änderungen gespeichert werden.
+* **[!UICONTROL Schließen]** oder **[!UICONTROL Abbrechen]**: Wenn alle Änderungen gespeichert wurden, wird der Editor durch Klicken auf **[!UICONTROL Schließen]** geschlossen. Wenn es ungespeicherte Änderungen gibt, wird mit der Schaltfläche **[!UICONTROL Abbrechen]** der Editor geschlossen, ohne dass diese Änderungen gespeichert werden.
 * **[!UICONTROL Speichern]**: Speichert alle Komponenten und lässt den Editor geöffnet.
 * **[!UICONTROL Speichern und beenden]**: Speichert alle Komponenten und schließt den Editor.
 
