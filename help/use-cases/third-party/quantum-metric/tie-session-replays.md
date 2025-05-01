@@ -7,10 +7,10 @@ feature: Use Cases
 hidefromtoc: true
 hide: true
 exl-id: fcc36457-4ce9-4c93-93e2-de03becfd5da
-source-git-commit: 9f954709a3dde01b4e01581e34aece07fe0256b1
+source-git-commit: d48a6fc306a84eeeb189e1b272bfded7ed26ed70
 workflow-type: tm+mt
-source-wordcount: '674'
-ht-degree: 1%
+source-wordcount: '811'
+ht-degree: 2%
 
 ---
 
@@ -24,39 +24,74 @@ Bei diesen Schritten wird davon ausgegangen, dass Sie Tags in der Datenerfassung
 
 Weitere Informationen finden [ in der Dokumentation ](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/analytics/quantum-metric)Quantum Metric-Tag-Erweiterung“.
 
-## Schritt 1: Erfassen Sie die Quantum Metric-Sitzungs-ID mithilfe der Quantum Metric Tags-Erweiterung
+## Schritt 1: Erstellen Sie ein Schemafeld für Quanten-Metrikdaten
+
+Dieser Anwendungsfall erfordert ein dediziertes Schemafeld, an das Daten gesendet werden. Sie können dieses Feld an einer beliebigen Stelle in Ihrem Schema erstellen und nach Belieben benennen. Beispielwerte werden bereitgestellt, wenn Ihr Unternehmen keine Voreinstellung für Name oder Speicherort hat.
+
+1. Melden Sie sich bei &quot;[.adobe.com“ ](https://experience.adobe.com).
+1. Navigieren Sie **[!UICONTROL Datenerfassung]** > **[!UICONTROL Schemata]**.
+1. Wählen Sie das gewünschte Schema aus der Liste aus.
+1. Wählen Sie das ![Feldsymbol hinzufügen](/help/assets/icons/AddCircle.svg) neben dem gewünschten Objekt aus. Beispiel: neben `Implementation Details`.
+1. Geben Sie rechts den gewünschten &quot;[!UICONTROL &quot; ]. Zum Beispiel `qmSessionId`.
+1. Geben Sie den gewünschten [!UICONTROL Anzeigenamen] ein. Zum Beispiel `Quantum Metric session ID`.
+1. Wählen Sie [!UICONTROL Typ] als **[!UICONTROL Zeichenfolge]**.
+1. Wählen Sie **[!UICONTROL Speichern]** aus.
+
+## Schritt 2: Erfassen Sie die Quantum Metric-Sitzungs-ID mithilfe der Quantum Metric-Tag-Erweiterung
 
 Führen Sie diese Schritte aus, um die Quantum Metric-Sitzungs-ID an die Daten anzuhängen, die Sie an Adobe Experience Platform senden.
 
-1. Verwenden Sie die Quantum Metric-Erweiterung in der Tags-Benutzeroberfläche, um Daten an Quantum Metric zu senden.
-1. Erstellen Sie vier Datenelemente:
-   1. Eine, die die Sitzungs-ID der Quantum-Metrik aus dem Cookie von Quantum Metric mit dem Namen `QuantumMetricSessionID` erfasst
-   1. Eine, die die Quantum Metric-Sitzungs-ID aus `localStorage` extrahiert. Manchmal wird dieses Datenelement schneller geladen als das Cookie, das im anderen Datenelement gesetzt ist.
-   1. Verwenden Sie den Datenelement-Assistenten oder die benutzerdefinierte JavaScript, um den `s` aus dem `localStorage` Datenelement zu extrahieren.
-   1. Eine, die Logik verwendet, um zunächst nach dem Cookie-Datenelement zu suchen und es an einen XDM-Objektpfad zurückzugeben, falls vorhanden. Wenn nicht definiert, versuchen Sie, das extrahierte Datenelement `localStorage` zu überprüfen.
-1. Senden Sie das endgültige Quantum Metric-Sitzungs-ID-Datenelement an das XDM-Objekt, das bei jedem Ereignis gesendet wird.
+1. Melden Sie sich bei &quot;[.adobe.com“ ](https://experience.adobe.com).
+1. Navigieren Sie **[!UICONTROL Datenerfassung]** > **[!UICONTROL Tags]**.
+1. Wählen Sie die gewünschte Tag-Eigenschaft aus.
+1. Wählen Sie **[!UICONTROL Datenelemente]** und dann **[!UICONTROL Datenelement hinzufügen]** aus.
+1. Stellen Sie die folgenden Einstellungen ein:
+   * **[!UICONTROL Name]**: `Quantum Metric session ID`
+   * **[!UICONTROL Erweiterung]**: [!UICONTROL Core]
+   * **[!UICONTROL Datenelementtyp]**: [!UICONTROL Benutzerdefinierter Code]
+1. Klicken Sie auf **[!UICONTROL Editor öffnen]** und fügen Sie den folgenden Code ein:
+
+   ```js
+   // Check for the presence of the Quantum Metric session ID cookie
+   const qmCookie = _satellite.cookie.get("QuantumMetricSessionID");
+   if(qmCookie != null) return qmCookie;
+   // If a cookie is not set, check local storage
+   const qmLocalStorage = JSON.parse(localStorage.getItem("QM_S") || "{}");
+   if (qmLocalStorage?.s != null) return qmLocalStorage.s;
+   ```
+
+1. Wählen Sie **[!UICONTROL Speichern]** aus.
+
+## Schritt 3: Zuordnen des Datenelements zum gewünschten XDM-Schemafeld
+
+Nachdem das Datenelement nun über Logik zum Abrufen des gewünschten Werts verfügt, ordnen Sie das Datenelement dem XDM-Objekt zu.
+
+1. Wählen Sie in der Tag-Eigenschaft **[!UICONTROL Datenelemente]** aus und wählen Sie dann das Datenelement aus, in dem sich Ihr XDM-Objekt befindet.
+1. Navigieren Sie in der rechten Spalte dieses Datenelements zu dem Pfad, der beim Erstellen des Schemafelds festgelegt wurde.
+1. Legen Sie den Wert auf den Namen des Datenelements fest, das von Prozentzeichen umgeben ist. Zum Beispiel `%Quantum Metric session ID%`.
+1. Wählen Sie **[!UICONTROL Speichern]** aus.
+1. Fügen Sie eine Bibliothek hinzu und veröffentlichen Sie Ihre Änderungen dann in der Produktionsumgebung.
+
+Wenn Ihr XDM-Objekt bereits in einer Konfiguration für die Aktion „Ereignis senden“ enthalten ist, werden Ihnen bei der Veröffentlichung der Änderungen Daten angezeigt.
 
 >[!NOTE]
+>
 >Manchmal läuft Web SDK schneller als der Quantum-Metrik-Code. In diesen Fällen wird die Sitzungs-ID beim nachfolgenden Treffer gesendet. Wenn ein Besucher abspringt, wird die Sitzungs-ID in diesen Instanzen nicht erfasst.
-
-## Schritt 2: Bestätigen der eingeschlossenen Datensatzfelder
-
-Vergewissern Sie sich, dass die Datensätze in Ihrer Verbindung jetzt die Quantum Metric-Sitzungs-ID im gewünschten Datensatz haben.
 
 ## Schritt 3: Quantum Metric-Sitzungs-ID als verfügbare Dimension hinzufügen
 
-Bearbeiten Sie die vorhandene Datenansicht, um die Sitzungs-ID als verfügbare Dimension in Customer Journey Analytics hinzuzufügen.
+Sobald die oben genannten Änderungen in Ihrer Implementierung veröffentlicht wurden, bearbeiten Sie Ihre bestehende Datenansicht, um die Sitzungs-ID als verfügbare Dimension in Customer Journey Analytics hinzuzufügen.
 
 1. Melden Sie sich bei &quot;[.adobe.com“ ](https://experience.adobe.com).
 1. Navigieren Sie zu Customer Journey Analytics und wählen **[!UICONTROL Datenansichten]** im oberen Menü aus.
 1. Wählen Sie die gewünschte vorhandene Datenansicht aus.
-1. Suchen Sie die Liste Quantum Metric Session ID Field auf der linken Seite und ziehen Sie sie in den Bereich „Dimensionen“ in der Mitte.
-1. Legen Sie im rechten Bereich die Einstellung [Persistenz](/help/data-views/component-settings/persistence.md) auf „Sitzung“ fest.
-1. Klicken Sie auf **[!UICONTROL Speichern]**.
+1. Suchen Sie das Feld Quantum Metric-Sitzungs-ID auf der linken Seite und ziehen Sie es in den Bereich „Dimensionen“ in der Mitte.
+1. Legen Sie im rechten Bereich die Einstellung [Persistenz](/help/data-views/component-settings/persistence.md) auf `Session` fest.
+1. Wählen Sie **[!UICONTROL Speichern]** aus.
 
-## Schritt 4: Konfigurieren von Workspace für die Sitzungs-ID-Dimension
+## Schritt 4: Konfigurieren von Analysis Workspace für die Sitzungs-ID-Dimension
 
-Erstellen Sie eine Freiformtabelle in Workspace und konfigurieren Sie sie so, dass Sitzungs-ID-Werte direkte Links zu Quantum Metric sind.
+Erstellen Sie eine Freiformtabelle in Workspace und konfigurieren Sie sie so, dass die Sitzungs-ID-Werte direkt mit der Quantum-Metrik verknüpft sind.
 
 1. Melden Sie sich bei &quot;[.adobe.com“ ](https://experience.adobe.com).
 1. Navigieren Sie zu Customer Journey Analytics und wählen Sie **[!UICONTROL Workspace]** im oberen Menü.
@@ -77,6 +112,6 @@ Jede Sitzungs-ID ist jetzt ein klickbarer Link. Weitere [ zum Hinzufügen von Hy
 
 ## Schritt 5: Sessions aus Customer Journey Analytics anzeigen
 
-Nachdem Sie ein interessantes Segment gefunden haben, das Sie erneut untersuchen möchten, können Sie es auf das Bedienfeld anwenden, das Ihre Sitzungs-ID-Links und das Segment enthält. Die Tabelle gibt alle Sitzungen in diesem Segment zurück, und Sie können auf eine beliebige Sitzung klicken, um sie in Quantum Metric weiter zu untersuchen.
+Sobald Sie ein interessantes Segment gefunden haben, das Sie erneut durchsuchen möchten, können Sie es auf das Bedienfeld anwenden, das Ihre Sitzungs-ID-Links enthält. Die Tabelle gibt alle Sitzungen in diesem Segment zurück, und Sie können auf eine beliebige Sitzung klicken, um sie in Quantum Metric weiter zu untersuchen.
 
 Weitere Informationen finden [ unter „Das Enterprise Guide to Session Replay](https://www.quantummetric.com/resources/ebook/the-enterprise-guide-to-session-replay) auf Quantum Metric. Sie können sich auch an Ihren Kundenbetreuer von Quantum Metric wenden oder eine Anfrage über das [Quantum Metric Customer Request Portal) ](https://community.quantummetric.com/s/public-support-page).
