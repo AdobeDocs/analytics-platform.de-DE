@@ -2,10 +2,10 @@
 title: Produktnutzungsübersicht
 description: Zeigen Sie Erkenntnisse und Berichte dazu an, wie Ihre Organisation Customer Journey Analytics nutzt.
 exl-id: 3806ca7c-ee90-4222-9ffd-2e791c4550e5
-source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
+source-git-commit: a4615907f61b4d63393a9481fdd7b45b7b9b6262
 workflow-type: tm+mt
-source-wordcount: '523'
-ht-degree: 100%
+source-wordcount: '591'
+ht-degree: 88%
 
 ---
 
@@ -126,3 +126,11 @@ Wenn Sie die Produktnutzung aktivieren, sind die folgenden Dimensionen verfügba
    * [!UICONTROL Venn]
 
 Die Produktnutzung verfolgt nicht einzelne Projektkomponenten, wenn ein Projekt lediglich geöffnet oder angezeigt wird. Die Benutzeraktion beim Öffnen eines Projekts wird jedoch verfolgt.
+
+## Verfügbare Vorlage
+
+Es ist eine [Adobe](/help/analysis-workspace/templates/use-templates.md)Vorlage verfügbar, die die automatisch aus dieser Funktion generierten Komponenten verwendet.
+
+**[!UICONTROL Adobe]** > **[!UICONTROL Sonstige]** > **[!UICONTROL Produktverwendungsübersicht]**
+
+Wählen Sie die Datenansicht aus, die automatisch von der Produktnutzung im Datenansichtsselektor erstellt wurde, und wählen Sie dann die Vorlage **[!UICONTROL Produktverwendungsübersicht]**. Wählen Sie **[!UICONTROL Vorschau]** aus, um zu sehen, welche Bedienfelder die Vorlage verwendet, und erfahren Sie mehr über ideale Anwendungsfälle, oder wählen Sie **[!UICONTROL Vorlage verwenden]** aus, um sie in Analysis Workspace zu öffnen.
