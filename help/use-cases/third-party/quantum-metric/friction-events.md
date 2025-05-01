@@ -7,10 +7,10 @@ feature: Use Cases
 hidefromtoc: true
 hide: true
 exl-id: 1b7d5159-39b2-4ba4-be64-f448ae53c70e
-source-git-commit: 9f954709a3dde01b4e01581e34aece07fe0256b1
+source-git-commit: 11dc62cda2ceb7afabd3abd0944420601c8fa235
 workflow-type: tm+mt
-source-wordcount: '552'
-ht-degree: 0%
+source-wordcount: '665'
+ht-degree: 1%
 
 ---
 
@@ -25,7 +25,20 @@ Dieser Anwendungsfall hat zwei Anforderungen:
 * Sie müssen über eine Berechtigung für das **Dev Ops**-Paket von Quantum Metric verfügen.
 * Sie müssen Tags in der Adobe Experience Platform-Datenerfassung verwenden.
 
-## Schritt 1: Erfassen von Reibungsereignissen mit der Quantum Metric-Tag-Erweiterung
+## Schritt 1: Erstellen Sie ein Schemafeld für Quantum Metric-Reibungsereignisse
+
+Dieser Anwendungsfall erfordert ein dediziertes Schemafeld, an das Daten gesendet werden. Sie können dieses Feld an einer beliebigen Stelle in Ihrem Schema erstellen und nach Belieben benennen. Beispielwerte werden bereitgestellt, wenn Ihr Unternehmen keine Voreinstellung für Name oder Speicherort hat.
+
+1. Melden Sie sich bei &quot;[.adobe.com“ ](https://experience.adobe.com).
+1. Navigieren Sie **[!UICONTROL Datenerfassung]** > **[!UICONTROL Schemata]**.
+1. Wählen Sie das gewünschte Schema aus der Liste aus.
+1. Wählen Sie das ![Feldsymbol hinzufügen](/help/assets/icons/AddCircle.svg) neben dem gewünschten Objekt aus. Beispiel: neben `Implementation Details`.
+1. Geben Sie auf der rechten Seite den gewünschten [!UICONTROL Name] ein. Zum Beispiel `qmErrorName`.
+1. Geben Sie den gewünschten [!UICONTROL Anzeigenamen] ein. Zum Beispiel `Quantum Metric error name`.
+1. Wählen Sie [!UICONTROL Typ] als **[!UICONTROL Zeichenfolge]**.
+1. Wählen Sie **[!UICONTROL Speichern]** aus.
+
+## Schritt 2: Erfassen von Reibungsereignissen mit der Quantum Metric-Tag-Erweiterung
 
 Anweisungen [ Einrichten Ihrer Tags für das Einschließen von Quantenmetrikdaten finden Sie unter ](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/analytics/quantum-metric)Quantum Metric-Erweiterung“ im Adobe Experience Platform Destinations-Handbuch. Durch die Verwendung dieser Erweiterung werden mehr Zeilen in einen vorhandenen Datensatz übergeben.
 
@@ -40,7 +53,7 @@ Fügen Sie dann das dynamisch festgelegte Datenelement zu Ihrem XDM-Objekt hinzu
 
 ![Screenshot mit dem Quantenmetrik-Fehlernamen](assets/error-name.png)
 
-## Schritt 2: Hinzufügen einer oder mehrerer Dimensionen und Metriken zur Datenansicht in Customer Journey Analytics
+## Schritt 3: Hinzufügen einer oder mehrerer Dimensionen und Metriken zur Datenansicht in Customer Journey Analytics
 
 Bearbeiten Sie die vorhandene Datenansicht, um die Sitzungs-ID als verfügbare Dimension in Customer Journey Analytics hinzuzufügen.
 
@@ -52,7 +65,7 @@ Bearbeiten Sie die vorhandene Datenansicht, um die Sitzungs-ID als verfügbare D
 1. Nachdem Sie alle gewünschten Dimensionen und Metriken erstellt haben, klicken Sie auf **[!UICONTROL Speichern]**.
 1. Eine vollständige Liste der Fehlerereignisse finden Sie in der Dokumentation zu Ihrer Quantum-Metrik. Wenn Sie weitere Fragen haben, wenden Sie sich an Ihren Kundenbetreuer von Quantum Metric oder senden Sie eine Anfrage über das [Quantum Metric Customer Request Portal](https://community.quantummetric.com/s/public-support-page).
 
-## Schritt 3: Verwenden Sie die Dimension und Metriken mit den übrigen Daten in Analysis Workspace
+## Schritt 4: Verwenden Sie die Dimension und Metriken für den Rest Ihrer Daten in Analysis Workspace.
 
 Wenn Quantum Metric Friction-Ereignisdaten zusammen mit den anderen Besucherdaten erfasst werden, können Sie sie genau wie jede andere Dimension oder Metrik in Customer Journey Analytics verwenden.
 
@@ -62,7 +75,7 @@ Wenn Quantum Metric Friction-Ereignisdaten zusammen mit den anderen Besucherdate
 1. Erstellen Sie eine [Freiformtabelle](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md).
 1. Ziehen Sie die gewünschten Dimensionen und Metriken zur Analyse auf die Workspace-Arbeitsfläche.
 
-Mögliche Ideen für Analysen sind:
+Zu den möglichen Analyseideen gehören:
 
 * Trend von Reibungsereignisdaten im Zeitverlauf
 * Fügen Sie in einer Fallout- oder Trichtervisualisierung Customer Journey Analytics-Ereignisse als einige Schritte und Quantenmetrik-Reibungsereignisse als andere hinzu. Dieser Bericht zeigt an, wo Besucherinnen und Besucher am häufigsten in Schwierigkeiten geraten.
