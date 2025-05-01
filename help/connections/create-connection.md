@@ -5,10 +5,10 @@ exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
+source-git-commit: f13d0f7afcfe2ebb334062b79b409219169c1aee
 workflow-type: tm+mt
-source-wordcount: '6794'
-ht-degree: 58%
+source-wordcount: '6802'
+ht-degree: 57%
 
 ---
 
@@ -331,8 +331,8 @@ Sie [einen oder mehrere Datensätze hinzufügen](#add-datasets) oder [vorhandene
 
 >[!CONTEXTUALHELP]
 >id="cja_connection_matchingkey"
->title="Passender Schlüssel"
->abstract="Wählen Sie, wie Sie teilnehmen möchten: basierend auf einem passenden Schlüssel oder einem passenden Container.<br/><br/>**[!UICONTROL Passender Schlüssel ]**: Wählen Sie ein Feld aus, das einem der Ereignisdatensätze hinzugefügt werden soll. Wenn diese Liste leer ist, haben Sie wahrscheinlich keinen Ereignisdatensatz hinzugefügt oder konfiguriert.<br/>**[!UICONTROL Passender Container]**: Wählen Sie einen Container aus, der verwendet werden soll, um mit einem der Ereignis-Datensätze zu verknüpfen. Wenn diese Liste leer ist, haben Sie wahrscheinlich keinen oder mehrere Container konfiguriert."
+>title="Zur Übereinstimmung verwendeter Schlüsseltyp"
+>abstract="Auswahl der Art der Zusammenführung: basierend auf einer Übereinstimmung nach Feld oder Übereinstimmung nach Container.<br/><br/>**[!UICONTROL Übereinstimmung nach Feld ]**: Wählen Sie ein Feld aus, das mit einem der Ereignisdatensätze verbunden werden soll. Wenn diese Liste leer ist, haben Sie wahrscheinlich keinen Ereignisdatensatz hinzugefügt oder konfiguriert.<br/>**[!UICONTROL Übereinstimmung nach Container]**: Wählen Sie einen Container aus, der zum Verbinden mit einem der Ereignisdatensätze verwendet werden soll. Wenn diese Liste leer ist, haben Sie wahrscheinlich keinen oder mehrere Container konfiguriert."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -446,8 +446,8 @@ Sie [einen oder mehrere Datensätze hinzufügen](#add-datasets) oder [vorhandene
 
 >[!CONTEXTUALHELP]
 >id="connection_matchingkey"
->title="Passender Schlüssel"
->abstract="Wählen Sie, wie Sie teilnehmen möchten: basierend auf einem passenden Schlüssel oder einem passenden Container.<br/><br/>**[!UICONTROL Passender Schlüssel ]**: Wählen Sie ein Feld aus, das einem der Ereignisdatensätze hinzugefügt werden soll. Wenn diese Liste leer ist, haben Sie wahrscheinlich keinen Ereignisdatensatz hinzugefügt oder konfiguriert.<br/>**[!UICONTROL Passender Container]**: Wählen Sie einen Container aus, der verwendet werden soll, um mit einem der Ereignis-Datensätze zu verknüpfen. Wenn diese Liste leer ist, haben Sie wahrscheinlich keinen oder mehrere Container konfiguriert."
+>title="Zur Übereinstimmung verwendeter Schlüsseltyp"
+>abstract="Auswahl der Art der Zusammenführung: basierend auf einer Übereinstimmung nach Feld oder Übereinstimmung nach Container.<br/><br/>**[!UICONTROL Übereinstimmung nach Feld ]**: Wählen Sie ein Feld aus, das mit einem der Ereignisdatensätze verbunden werden soll. Wenn diese Liste leer ist, haben Sie wahrscheinlich keinen Ereignisdatensatz hinzugefügt oder konfiguriert.<br/>**[!UICONTROL Übereinstimmung nach Container]**: Wählen Sie einen Container aus, der zum Verbinden mit einem der Ereignisdatensätze verwendet werden soll. Wenn diese Liste leer ist, haben Sie wahrscheinlich keinen oder mehrere Container konfiguriert."
 
 <!-- markdownlint-enable MD034 -->
 
