@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin
 exl-id: 584587e6-45fd-4fc3-a7a6-6685481ddee7
-source-git-commit: 6d23203468032510446711ff5a874fd149531a9a
+source-git-commit: f39cf7c386c42488d6607154fc7922911df5527c
 workflow-type: tm+mt
-source-wordcount: '567'
+source-wordcount: '602'
 ht-degree: 1%
 
 ---
@@ -57,7 +57,7 @@ Ein Content Analytics-Ereignis besteht aus:
 Content Analytics-Ereignisse werden erfasst als eine Abfolge von:
 
 1. [Eine aufgezeichnete Ansicht oder ein aufgezeichneter Klick](#recorded-view-or-click).
-1. [Ein regelmäßiges oder spezifisches (Verhaltens-)Ereignis](#regular-or-specific-behaviorial-event).
+1. [Ein Trigger zum Senden eines Content Analytics-Ereignisses](#trigger-to-send-a-content-analytics-event).
 
 Content Analytics erfasst auf diese Weise Daten, die diese Sequenz widerspiegeln, anstatt eine Ansicht zu erfassen oder getrennt von der Erfassung des Ereignisses zu klicken, das unmittelbar auf diese Ansicht oder diesen Klick folgt. Diese Methode zur Erfassung von Inhaltsanalysedaten reduziert auch die Menge der erfassten Daten.
 
@@ -84,11 +84,11 @@ Ein Erlebnis-Klick wird aufgezeichnet, wenn:
 * Jeder Klick auf einen Link auf der Seite, für den Erlebnisse aktiviert sind.
 
 
-### Regelmäßiges oder spezifisches (Verhaltens-)Ereignis
+### Trigger zum Senden eines Content Analytics-Ereignisses
 
-Trigger zum Auslösen eines regulären oder spezifischen (Verhaltens-)Ereignisses im Kontext von Content Analytics sind:
+Um die Anzahl der Aufrufe zu reduzieren, die die Seite verlassen, sammelt Content Analytics Informationen, sendet diese jedoch nicht sofort. Es werden Informationen zu Inhaltsinteraktionen erfasst und ein Ereignis, das diese Informationen enthält, wird nur gesendet, wenn einer der folgenden Trigger auftritt:
 
-* Web SDK oder AppMeasurement sendet ein -Ereignis.
+* Web SDK oder AppMeasurement sendet ein -Ereignis. Der Zeitstempel dieses Ereignisses lautet
 * Die Sichtbarkeit ändert sich in ausgeblendet, z. B.:
    * Seitenentladungen
    * Registerkarte „Wechseln“

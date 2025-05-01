@@ -4,10 +4,10 @@ description: Landingpage von Customer Journey Analytics.
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 7f67c497-386b-4442-a502-6b492f35c6e6
-source-git-commit: 220ebd7dbc3fa75d221690cd6e5828bd94395434
+source-git-commit: f39cf7c386c42488d6607154fc7922911df5527c
 workflow-type: tm+mt
-source-wordcount: '836'
-ht-degree: 96%
+source-wordcount: '884'
+ht-degree: 90%
 
 ---
 
@@ -28,6 +28,12 @@ Werfen Sie einen Blick auf die neuesten Verbesserungen in Customer Journey Analy
 Mit Adobe Content Analytics können Sie schnell und einfach große Mengen von Inhaltsdaten untersuchen, um Trends aufzudecken, Anomalien zu erkennen, Content-Ermüdung zu identifizieren und Erkenntnisse aus der Bereitstellung von Inhalten zu gewinnen.
 
 [![Bild](assets/learn-more-button.svg)](/help/content-analytics/content-analytics.md)
+
+>[!TAB Freigegebene Metriken und Dimensionen]
+
+Freigegebene Metriken und Dimensionen bieten einen zentralen Speicherort zum Verwalten von Dimensionen und Metriken, die in einer beliebigen Anzahl von Datenansichten verwendet werden können. Diese Komponenten sind besonders für Organisationen nützlich, die mehrere Datenansichten verwenden, insbesondere wenn diese Datenansichten gemeinsame Komponenteneinstellungen haben.
+
+[![Bild](assets/learn-more-button.svg)](/help/data-views/shared-metrics-dimensions/smd-overview.md)
 
 >[!TAB KI-Assistent]
 
@@ -54,6 +60,7 @@ Intelligente Beschriftungen werden jetzt mit zusätzlichen Verbesserungen der Be
 Warnhinweise ermöglichen es Ihnen, sich über geänderte Prozentsätze oder bestimmte Datenpunkte benachrichtigen zu lassen. Beispielsweise können Sie eine Vorschau anzeigen, wie oft ein Warnhinweis ausgelöst wird, Warnhinweise per E-Mail oder SMS versenden oder gestapelte Warnhinweise erstellen.
 
 [![Bild](assets/learn-more-button.svg)](/help/components/c-intelligent-alerts/intelligent-alerts.md)
+
 
 >[!TAB Zusammenfassungsdaten]
 
