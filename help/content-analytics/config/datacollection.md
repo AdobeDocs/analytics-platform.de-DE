@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin
 exl-id: 584587e6-45fd-4fc3-a7a6-6685481ddee7
-source-git-commit: d695fcb8dbd98675914c687f3dfaf8c5f0017073
+source-git-commit: 63c6a5d6148c1562b7f6ac8e4a1cac5919e2dd2e
 workflow-type: tm+mt
 source-wordcount: '602'
 ht-degree: 1%
@@ -15,7 +15,6 @@ ht-degree: 1%
 # Datenerfassung in Content Analytics
 
 In diesem Artikel wird ausführlich erläutert, wie Content Analytics Daten erfasst
-
 
 ## Definitionen
 
@@ -40,7 +39,6 @@ Die Content Analytics-Bibliothek erfasst Daten, wenn:
 * Die Seiten-URL wird in der [Content Analytics-Erweiterung](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview){target="_blank"} konfiguriert, die Teil der enthaltenen Tag-Bibliothek ist.
 
 
-
 ## Content Analytics-Ereignis
 
 Ein Content Analytics-Ereignis besteht aus:
@@ -52,7 +50,6 @@ Ein Content Analytics-Ereignis besteht aus:
 * Erlebnis-Klicks (falls vorhanden und falls konfiguriert)
 * Asset-Ansichten (falls vorhanden und konfiguriert)
 * Asset-Klicks (falls vorhanden und konfiguriert)
-
 
 Content Analytics-Ereignisse werden erfasst als eine Abfolge von:
 
@@ -86,7 +83,7 @@ Ein Erlebnis-Klick wird aufgezeichnet, wenn:
 
 ### Trigger zum Senden eines Content Analytics-Ereignisses
 
-Um die Anzahl der Aufrufe zu reduzieren, die die Seite verlassen, sammelt Content Analytics Informationen, sendet diese jedoch nicht sofort. Es werden Informationen zu Inhaltsinteraktionen erfasst und ein Ereignis, das diese Informationen enthält, wird nur gesendet, wenn einer der folgenden Trigger auftritt:
+Um die Anzahl der Aufrufe zu reduzieren, die die Seite verlassen, sammelt Content Analytics Informationen, sendet diese jedoch nicht sofort. Informationen zu Inhaltsinteraktionen werden erfasst und ein Ereignis, das diese Informationen enthält, wird nur gesendet, wenn einer der folgenden Trigger auftritt:
 
 * Web SDK oder AppMeasurement sendet ein -Ereignis. Der Zeitstempel dieses Ereignisses lautet
 * Die Sichtbarkeit ändert sich in ausgeblendet, z. B.:

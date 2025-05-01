@@ -4,7 +4,7 @@ description: Landingpage von Customer Journey Analytics.
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 7f67c497-386b-4442-a502-6b492f35c6e6
-source-git-commit: f39cf7c386c42488d6607154fc7922911df5527c
+source-git-commit: e16bfa01dd3bedc96a147b2510ba33f4b88b01b9
 workflow-type: tm+mt
 source-wordcount: '884'
 ht-degree: 90%
@@ -25,7 +25,7 @@ Werfen Sie einen Blick auf die neuesten Verbesserungen in Customer Journey Analy
 
 >[!TAB Content Analytics]
 
-Mit Adobe Content Analytics können Sie schnell und einfach große Mengen von Inhaltsdaten untersuchen, um Trends aufzudecken, Anomalien zu erkennen, Content-Ermüdung zu identifizieren und Erkenntnisse aus der Bereitstellung von Inhalten zu gewinnen.
+Mit Content Analytics können Sie schnell und einfach große Mengen an Inhaltsdaten untersuchen, um Trends aufzudecken, Anomalien zu erkennen, Content-Ermüdung zu identifizieren und Erkenntnisse aus der Bereitstellung von Inhalten zu gewinnen.
 
 [![Bild](assets/learn-more-button.svg)](/help/content-analytics/content-analytics.md)
 

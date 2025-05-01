@@ -8,7 +8,7 @@ hide: true
 hidefromtoc: true
 badgePremium: label="B2B edition"
 exl-id: df2cc922-d214-49b9-8fdb-443cc1dac05b
-source-git-commit: f13d0f7afcfe2ebb334062b79b409219169c1aee
+source-git-commit: e16bfa01dd3bedc96a147b2510ba33f4b88b01b9
 workflow-type: tm+mt
 source-wordcount: '1052'
 ht-degree: 0%
@@ -90,3 +90,4 @@ Wenn ein Datensatzdatensatz ein Feld vom Typ Übereinstimmung verwendet, wird de
 ## Bericht zu Personen- und Account-basierten Daten
 
 Wenn Sie Berichte zu personenbasierten Containern (und Personenidentitäten) und kontobasierten Containern (und Kontoidentitäten) erstellen möchten, sollten Sie zwei separate Verbindungen innerhalb von Customer Journey Analytics einrichten. Eine Verbindung, bei der Sie Person als Primäre ID auswählen, und eine Verbindung, bei der Sie Account als Primäre ID auswählen. Customer Journey Analytics unterstützt keine personenbasierten und kontobasierten Berichte aus einer einzelnen Container-Hierarchie.
+
