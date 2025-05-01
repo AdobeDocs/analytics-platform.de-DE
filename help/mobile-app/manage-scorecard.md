@@ -5,10 +5,10 @@ feature: Analytics Dashboards
 role: User, Admin
 solution: Customer Journey Analytics
 exl-id: 6a0de7db-689d-448d-b8e0-90af4a5ee325
-source-git-commit: d8286e34edba128113ba99602ba24eea67c5dea8
+source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
 workflow-type: tm+mt
 source-wordcount: '1806'
-ht-degree: 64%
+ht-degree: 84%
 
 ---
 
@@ -34,7 +34,7 @@ Aufschlüsselungen verfeinern Ihre Analyse, indem sie die Metriken nach Dimensio
 
 ![Aufschlüsselungsansicht](assets/break_view.png)
 
-Jede der Kachel hinzugefügte Dimension wird in einer Dropdown-Liste in der Detailansicht der App angezeigt. Der ausführende Benutzer kann dann aus den in der Dropdown-Liste aufgelisteten Optionen eine Auwahl treffen.
+Jede der Kachel hinzugefügte Dimension wird in einem Dropdown-Menü in der Detailansicht der App angezeigt. Der ausführende Benutzer kann dann aus den im Dropdown-Menü aufgelisteten Optionen auswählen.
 
 ## Anpassen von Detailfolien {#customize-detail-slide}
 
@@ -42,7 +42,7 @@ Benutzerdefinierte Detailansichten ermöglichen es Ihnen, Ihre Zielgruppe mit no
 
 >[!BEGINSHADEBOX]
 
-Siehe ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Benutzerdefinierte Detailansichten](https://video.tv.adobe.com/v/3410002?quality=12&learn=on){target="_blank"} für ein Demovideo.
+Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Benutzerdefinierte Detailansichten](https://video.tv.adobe.com/v/3410002?quality=12&learn=on){target="_blank"} finden Sie ein Demovideo.
 
 >[!ENDSHADEBOX]
 
@@ -71,7 +71,7 @@ Um einer Detailfolie Text hinzuzufügen, wählen Sie ein Layout aus, für das da
 
 ## Entfernen von Komponenten {#remove}
 
-Um eine Komponente zu entfernen, die auf die gesamte Scorecard angewendet wird, klicken Sie außerhalb der Kacheln auf eine beliebige Stelle auf der Scorecard. Entfernen Sie die Komponente, indem Sie auf das **x** klicken, das angezeigt wird, wenn Sie den Mauszeiger über die Komponente bewegen, wie unten für die „Erstbesuche **dargestellt**:
+Um eine Komponente zu entfernen, die auf die gesamte Scorecard angewendet wird, klicken Sie außerhalb der Kacheln auf eine beliebige Stelle auf der Scorecard. Entfernen Sie die dann die Komponente, indem Sie auf das **x** klicken, das angezeigt wird, wenn Sie den Mauszeiger über die Komponente bewegen, wie unten für die **Erstbesuche** dargestellt:
 
 ![Entfernen von Komponenten](assets/new_remove.png)
 
@@ -79,7 +79,7 @@ Um eine Komponente zu entfernen, die auf die gesamte Scorecard angewendet wird, 
 
 Eine Daten-Story ist eine Sammlung unterstützender Datenpunkte, Geschäftskontexte und verwandter Metriken, die auf einem zentralen Thema oder einer zentralen Metrik basieren.
 
-Wenn Sie sich beispielsweise auf den Web-Traffic konzentrieren, können Besuche Ihre wichtigste Metrik sein, aber Sie sind möglicherweise auch an neuen Personen und Einzelpersonen interessiert. Vielleicht möchten Sie auch Daten sehen, die nach Web-Seite oder dem Gerätetyp aufgeschlüsselt sind, von dem der Traffic stammt. Daten-Storys in mobilen Scorecard-Projekten ermöglichen es Ihnen, die wichtigsten Metriken in den Vordergrund zu stellen und gleichzeitig die gesamte Story hinter den Metriken mithilfe mehrerer Detailfolien zu erzählen.
+Wenn Sie sich beispielsweise auf den Webtraffic konzentrieren, können Besuche Ihre wichtigste Metrik sein. Neue Personen oder Unique Persons sind für Sie aber möglicherweise ebenfalls interessant. Vielleicht möchten Sie auch Daten sehen, die nach Web-Seite oder dem Gerätetyp aufgeschlüsselt sind, von dem der Traffic stammt. Daten-Storys in mobilen Scorecard-Projekten ermöglichen es Ihnen, die wichtigsten Metriken in den Vordergrund zu stellen und gleichzeitig die gesamte Story hinter den Metriken mithilfe mehrerer Detailfolien zu erzählen.
 
 Sehen Sie sich das Video an, um mehr über das Erstellen von Daten-Storys in Mobile-Scorecard-Projekten in Analysis Workspace zu erfahren.
 
@@ -130,7 +130,7 @@ Sie können die Visualisierung für einzelne Folien in einer Daten-Story ändern
 
 ### Vorschau einer Daten-Story {#preview-data-story}
 
-Nachdem Sie eine Daten-Story erstellt haben, verwenden Sie die Schaltfläche **Vorschau**, um eine Daten-Story so anzuzeigen und mit ihr zu interagieren, als würden Sie eine App nutzen. Informationen zur Vorschau Ihrer Daten-Story finden Sie unter [Vorschau einer Scorecard](#preview).
+Nachdem Sie eine Daten-Story erstellt haben, verwenden Sie die Schaltfläche **Vorschau**, um eine Daten-Story so anzuzeigen und mit ihr zu interagieren, als würden Sie eine App nutzen. Informationen zur Vorschau Ihrer Daten-Story finden Sie unter [Vorschau einer Scorecard](#preview)
 
 ### Navigieren zwischen Kacheln und Folien {#navigate-tiles-slides}
 
@@ -142,9 +142,9 @@ Um zwischen der Kachel und den Folien zu wechseln, tippen Sie auf die Navigation
 
 Sie können auch hin und her navigieren, indem Sie die Pfeile auf der Tastatur verwenden oder eine Komponente auswählen und links bzw. rechts auf dem Bildschirm gedrückt halten, um einen Bildlauf durchzuführen.
 
-## Vorschau von Scorecards {#preview}
+## Anzeigen von Scorecards in einer Vorschau {#preview}
 
-Sie können eine Vorschau davon anzeigen, wie die Scorecard nach ihrer Veröffentlichung in der Adobe Analytics Dashboards App aussieht und funktioniert.
+Sie können eine Vorschau davon anzeigen, wie die Scorecard nach ihrer Veröffentlichung in der Adobe Analytics-Dashboards-App aussieht und funktioniert.
 
 1. Klicken Sie auf **[!UICONTROL Vorschau]** in der rechten oberen Ecke des Bildschirms.
 
@@ -162,13 +162,13 @@ Sie können eine Vorschau davon anzeigen, wie die Scorecard nach ihrer Veröffen
 
    * Klicken und halten Sie, um das Drücken und Halten des Fingers auf dem Bildschirm des Smartphones zu simulieren. Dies ist für die Interaktion mit den Visualisierungen in der Detailansicht nützlich.
 
-## Scorecards freigeben {#share}
+## Freigeben von Scorecards {#share}
 
-So geben Sie die Scorecard für einen ausführenden Benutzer frei:
+So geben Sie die Scorecard für eine Führungskraft frei:
 
 1. Klicken Sie auf das Menü **[!UICONTROL Freigeben]** und wählen Sie **[!UICONTROL Scorecard freigeben]**.
 
-1. Füllen Sie im **[!UICONTROL Mobile Scorecard freigeben]** die Felder wie folgt aus:
+1. Füllen Sie die Felder im Formular **[!UICONTROL Mobile Scorecard freigeben]** aus, indem Sie:
 
    * den Namen der Scorecard angeben
    * eine Beschreibung der Scorecard angeben
@@ -179,15 +179,15 @@ So geben Sie die Scorecard für einen ausführenden Benutzer frei:
 
 ![Scorecards freigeben](assets/new_share.png)
 
-Nachdem Sie eine Scorecard freigegeben haben, können die Empfänger in den Analytics-Dashboards darauf zugreifen. Wenn Sie im Scorecard Builder nachfolgende Änderungen an der Scorecard vornehmen, werden diese automatisch in der freigegebenen Scorecard aktualisiert. Ausführende Benutzer sehen die Änderungen, nachdem sie die Scorecard in ihrer App aktualisiert haben.
+Nachdem Sie eine Scorecard freigegeben haben, können die Empfänger in den Analytics-Dashboards darauf zugreifen. Wenn Sie in Scorecard Builder nachträgliche Änderungen an der Scorecard vornehmen, werden diese automatisch in der freigegebenen Scorecard aktualisiert. Führungskräfte sehen die Änderungen, nachdem sie die Scorecard in ihrer App aktualisiert haben.
 
 Wenn Sie die Scorecard durch Hinzufügen neuer Komponenten aktualisieren, sollten Sie die Scorecard erneut freigeben (und die Option zum **[!UICONTROL Freigeben eingebetteter Komponenten]** aktivieren), um sicherzustellen, dass die ausführenden Benutzer Zugriff auf diese Änderungen haben.
 
-### Freigeben von Scorecards über einen freigebbaren Link
+### Freigeben von Scorecards über einen Freigabe-Link
 
-Die Verwendung eines freigebbaren Links erleichtert die Freigabe einer Scorecard in einer E-Mail-, Dokument- oder Textnachrichten-App. Über den Freigabe-Link können Empfänger die Scorecard auf ihrem Desktop oder in der Dashboards-Mobile-App öffnen. Gemeinsame Deep-Linking erleichtert die Freigabe von Projekten und die Förderung der Interaktion mit Ihren Stakeholdern.
+Die Verwendung eines Freigabe-Links erleichtert die Freigabe einer Scorecard in einer E-Mail-, Dokument- oder Textnachrichten-App. Über den Freigabe-Link können Empfängerinnen und Empfänger die Scorecard auf ihrem Desktop oder in der Dashboards-App öffnen. Deeplinks, die freigegeben werden können, erleichtern die Freigabe von Projekten und fördern die Interaktion mit Ihren Stakeholdern.
 
-So geben Sie eine Scorecard über einen Freigabe-Link frei
+So geben Sie eine Scorecard über einen Freigabe-Link frei:
 
 1. Klicken Sie auf das Menü **[!UICONTROL Freigeben]** und wählen Sie **[!UICONTROL Scorecard freigeben]**.
 
@@ -195,11 +195,11 @@ So geben Sie eine Scorecard über einen Freigabe-Link frei
 
 1. Kopieren Sie den Link und fügen Sie ihn in eine E-Mail-, Dokument- oder IM-App ein.
 
-   Wenn ein Empfänger eine Desktop-Anwendung oder einen Browser verwendet, um den Link zu öffnen, wird das mobile Scorecard-Projekt in Workspace geöffnet.
+   Wenn der Link von einer Empfängerin oder einem Empfänger über eine Desktop-Anwendung oder einen Browser aufgerufen wird, wird das mobile Scorecard-Projekt in Workspace geöffnet.
 
-   Wenn ein Empfänger den Link auf einem Mobilgerät öffnet, wird die Scorecard direkt in der Adobe Analytics Dashboards App geöffnet.
+   Wenn der Link von einer Empfängerin oder einem Empfänger auf einem Mobilgerät aufgerufen, wird die Scorecard direkt in der Adobe Analytics-Dashboards-App geöffnet.
 
-   Wenn ein Empfänger die Mobile App nicht heruntergeladen hat, wird er zur App-Liste im App Store oder Google Play Store weitergeleitet, wo er sie herunterladen kann.
+   Wenn eine Empfängerin oder ein Empfänger die App nicht heruntergeladen hat, wird diese Person zur App-Liste im App Store oder Google Play Store weitergeleitet, wo sie sie herunterladen kann.
 
 
 ## Dimensionselement des Typs [!UICONTROL Nicht angegeben] entfernen {#remove-dims}
@@ -209,7 +209,7 @@ Wenn Sie Dimensionselemente des Typs [!UICONTROL Nicht angegeben] aus Ihren Date
 1. Wählen Sie die richtige Kachel aus.
 1. Wählen Sie in der rechten Leiste unter **[!UICONTROL Drill-ins]** den Rechtspfeil neben dem Dimensionselement aus, für das Sie Elemente des Typs **[!UICONTROL Nicht angegeben]** entfernen möchten.
 
-   ![Eigenschaften mit Pfeil, der auf den Rechtspfeil neben dem Dimensionsnamen zeigt.](assets/unspecified.png)
+   ![Eigenschaften mit einem Pfeil, der auf den Pfeil nach rechts neben dem Dimensionsnamen zeigt.](assets/unspecified.png)
 
 1. Klicken Sie auf das Symbol neben **[!UICONTROL Nicht angegeben]**, um nicht spezifizierte Daten aus Ihrem Reporting zu entfernen. (Sie können auch jedes andere Dimensionselement entfernen.)
 

@@ -5,10 +5,10 @@ title: Hinzufügen oder Verschieben von Ordnern
 feature: Workspace Basics
 exl-id: 4008d087-e183-4b07-bc6f-e5f30e69afd8
 role: User
-source-git-commit: 98a92fff2a0fae7ad3e6d94e61f8babed3c11eb7
+source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
 workflow-type: tm+mt
-source-wordcount: '257'
-ht-degree: 100%
+source-wordcount: '258'
+ht-degree: 93%
 
 ---
 
@@ -29,7 +29,7 @@ So verschieben Sie Projekte aus der [Projektliste](/help/analysis-workspace/buil
 
 1. Wählen Sie ![OrdnerHinzufügen](/help/assets/icons/FolderAddTo.svg) **Verschieben nach** aus der Liste der möglichen [Aktionen](/help/analysis-workspace/build-workspace-project/freeform-overview.md#actions) aus. Das Dialogfeld **[!UICONTROL Ordner auswählen]** wird angezeigt.
 
-1. Wählen Sie im Dropdown-Menü **[!UICONTROL Ordner]** einen Ordnernamen aus. Über das Dropdown können Sie die Ordnerhierarchie durchgehen, um einen Unterordner auf jeder Ebene auszuwählen.
+1. Wählen Sie im Dropdown-Menü **[!UICONTROL Ordner]** einen Ordnernamen aus. Über das Dropdown-Menü können Sie die Ordnerhierarchie durchlaufen, um einen Unterordner auf einer beliebigen Ebene auszuwählen.
 
    ![In der Ansicht „Ordner auswählen“ werden das Dropdown-Menü und die verfügbaren Unterordner angezeigt.](/help/analysis-workspace/build-workspace-project/assets/add-projects.png)
 

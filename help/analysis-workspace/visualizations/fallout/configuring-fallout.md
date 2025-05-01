@@ -4,10 +4,10 @@ title: Fallout-Visualisierung konfigurieren
 feature: Visualizations
 exl-id: 3d888673-d7b1-45ef-bd3a-97b98466fb0e
 role: User
-source-git-commit: 770320a0b16d26e0755203a3524b000db30cac82
+source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
 workflow-type: tm+mt
 source-wordcount: '735'
-ht-degree: 97%
+ht-degree: 95%
 
 ---
 
@@ -25,7 +25,7 @@ Sie können Pfade für Dimensionen, Metriken und Segmente erstellen. Beispiel: A
 ## Verwenden
 
 1. Fügen Sie eine Visualisierung des Typs ![ConversionFunnel](/help/assets/icons/ConversionFunnel.svg) **[!UICONTROL Fallout]** hinzu. Weitere Informationen finden Sie unter [Hinzufügen einer Visualisierung in einem Bedienfeld](../freeform-analysis-visualizations.md#add-visualizations-to-a-panel).
-1. Ziehen Sie eine Seite, z. B. die Startseite, aus der Dimension „Seite“ in das Dropdown-Menü *Touchpoint hinzufügen*.
+1. Ziehen Sie eine Seite, z. B. die Startseite, aus der Dimension Seite in das Dropdown *Menü* Touchpoint hinzufügen“.
 
    ![Die Startseite aus der Dimension „Seite“, die in das Feld „Touchpoint hinzufügen“ gezogen wurde.](assets/fallout-drag.png)
 

@@ -6,7 +6,7 @@ feature: Report Builder
 type: Documentation
 solution: Customer Journey Analytics
 exl-id: bf765144-34f8-465b-b06d-53e4ca91014a
-source-git-commit: 9794779894fbecb433c16d108c555c5f81a4b491
+source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
 workflow-type: tm+mt
 source-wordcount: '383'
 ht-degree: 1%
@@ -15,7 +15,7 @@ ht-degree: 1%
 
 # Datenansicht auswählen
 
-Sie können eine Datenansicht aus der Dropdown-Liste auswählen oder eine Datenansicht aus einer Zelle auswählen und Ihren Datenblock automatisch mit einer neuen Datenansicht aktualisieren.
+Sie können eine Datenansicht aus dem Dropdown-Menü auswählen oder eine Datenansicht aus einer Zelle auswählen und Ihren Datenblock automatisch mit einer neuen Datenansicht aktualisieren.
 
 ## Datenansicht aus einer Zelle auswählen
 

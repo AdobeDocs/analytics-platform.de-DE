@@ -4,10 +4,10 @@ title: Bedienfeld „Quick Insights“
 feature: Panels
 exl-id: 09ebc3af-34ac-4f1f-8a5d-90da008f8697
 role: User
-source-git-commit: b14bc43a0cdf4901c5df171a116943beb2124991
+source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
 workflow-type: tm+mt
-source-wordcount: '1153'
-ht-degree: 94%
+source-wordcount: '1154'
+ht-degree: 91%
 
 ---
 
@@ -40,7 +40,7 @@ Wenn Sie [!UICONTROL Analysis Workspace] zum ersten Mal verwenden, stellen Sie s
 * wo ein Segment erstellt werden soll,
 * und vieles mehr.
 
-Um bei der Beantwortung dieser Fragen zu helfen, nutzt [!UICONTROL Quick Insights] einen Algorithmus, der Ihnen die beliebtesten Dimensionen, Metriken, Segmente und Datumsbereiche präsentiert, die Ihr Unternehmen verwendet. Dieser Algorithmus basiert auf der Verwendung von Datenkomponenten durch Ihr eigenes Unternehmen in [!UICONTROL Analysis Workspace]. In der Dropdown-Liste werden Dimensionen, Metriken und Segmente angezeigt[!UICONTROL  die mit ]POPULAR“ gekennzeichnet sind, wie im Folgenden gezeigt:
+Um bei der Beantwortung dieser Fragen zu helfen, nutzt [!UICONTROL Quick Insights] einen Algorithmus, der Ihnen die beliebtesten Dimensionen, Metriken, Segmente und Datumsbereiche präsentiert, die Ihr Unternehmen verwendet. Dieser Algorithmus basiert auf der Verwendung von Datenkomponenten durch Ihr eigenes Unternehmen in [!UICONTROL Analysis Workspace]. Tatsächlich werden Dimensionen, Metriken und Segmente mit dem Tag [!UICONTROL POPULAR] im Dropdown-Menü angezeigt, wie hier gezeigt:
 
 ![Das Bedienfeld „Quick Insights“.](assets/popular-tag.png)
 
@@ -94,7 +94,7 @@ Sie haben drei Möglichkeiten, um die Bausteine festzulegen:
 
 * Ziehen Sie Komponenten aus dem linken Bedienfeld und legen Sie sie ab.
 * Beginnen Sie mit der Eingabe in eines der Bausteinfelder. Wenn eine Eingabe gefunden wird, wird das Bausteinfeld automatisch mit möglichen Werten aufgefüllt.
-* Geben Sie ein Dropdown für Bausteine an (z. B. `Country` in **[!UICONTROL Analysieren]**) und suchen Sie in der Liste der möglichen Werte (mit ![Chevron nach rechts](/help/assets/icons/ChevronRight.svg)) nach dem zu verwendenden Wert (z. B. **[!UICONTROL Länder-Code]**).
+* Geben Sie ein Dropdown-Menü für Bausteine an (z. B. `Country` in **[!UICONTROL Analysieren]**) und suchen Sie in der Liste der möglichen Werte (mit ![ChevronRight](/help/assets/icons/ChevronRight.svg)) nach dem gewünschten Wert (z. B. **[!UICONTROL Länder-Code]**).
 
 Wählen Sie **[!UICONTROL Löschen]** aus, um alle Eingabefelder zu löschen.
 

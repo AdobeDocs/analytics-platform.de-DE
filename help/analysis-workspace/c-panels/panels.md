@@ -4,10 +4,10 @@ title: Übersicht über Bedienfelder
 feature: Panels
 exl-id: be3e34a0-06c1-4200-b965-96084c2912fd
 role: User
-source-git-commit: b14bc43a0cdf4901c5df171a116943beb2124991
+source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
 workflow-type: tm+mt
 source-wordcount: '2129'
-ht-degree: 97%
+ht-degree: 94%
 
 ---
 
@@ -77,7 +77,7 @@ Sie haben folgende Möglichkeiten:
 
 ## Datenansicht
 
-Jedes Panel ist mit einer [Datenansicht](/help/data-views/data-views.md) verknüpft, die durch den ![Daten](/help/assets/icons/Data.svg)-**[!UICONTROL *Namen der Datenansicht *]**im Dropdown-Menü oben rechts im Panel identifiziert wird.
+Jedes Bedienfeld ist mit einer [Datenansicht](/help/data-views/data-views.md) verknüpft, die durch ![Daten](/help/assets/icons/Data.svg) **[!UICONTROL *Name der Datenansicht *]**im Dropdown-Menü oben rechts im Bedienfeld identifiziert wird.
 
 Wenn Sie ein leeres Workspace-Projekt erstellen, ist die Standarddatenansicht für das erste Panel die Datenansicht, an der Sie zuletzt in Customer Journey Analytics gearbeitet haben.
 
@@ -107,7 +107,7 @@ Der Panel-Kalender steuert den Reporting-Datumsbereich für Tabellen und Visuali
 ![Das Kalenderfenster mit dem ausgewählten Datumsbereich.](assets/panel-calendar.png)
 
 1. Wählen Sie einen Datumsbereich aus, indem Sie zuerst das Startdatum und dann das Enddatum auswählen.
-Alternativ können Sie eine **[!UICONTROL Voreinstellung]** aus dem Dropdown-Menü [!UICONTROL *Voreinstellung auswählen*] auswählen.
+Alternativ können Sie eine **[!UICONTROL Vorgabe]** aus dem Dropdown-Menü [!UICONTROL *Vorgabe auswählen*] auswählen.
 
 1. Wählen Sie optional **[!UICONTROL Erweiterte Einstellungen einblenden]** für Folgendes aus:
 
@@ -200,7 +200,7 @@ Benutzende können das Dropdown-Segmentmenü auf eine der folgenden Arten verwen
 
 #### Dynamische Dropdown-Segmente
 
-Dynamische Dropdown-Segmente ermöglichen es Ihnen, verfügbare Werte basierend auf Daten innerhalb des Berichtsbereichs des Bedienfelds und Werten in anderen Dropdown-Segmenten zu bestimmen. Sie können beispielsweise zwei dynamische Dropdown-Filter mit einer Dimension „Länder“ und einer Dimension „Städte“ erstellen. Wenn Sie ein Land aus der Dropdown-Liste **[!UICONTROL Länder]** auswählen, wird die Dropdown-Liste **[!UICONTROL Städte]** dynamisch angepasst, sodass nur Städte in diesem Land angezeigt werden.
+Dynamische Dropdown-Segmente ermöglichen es Ihnen, verfügbare Werte basierend auf Daten innerhalb des Berichtsbereichs des Bedienfelds und Werten in anderen Dropdown-Segmenten zu bestimmen. Sie können beispielsweise zwei dynamische Dropdown-Filter mit einer Dimension „Länder“ und einer Dimension „Städte“ erstellen. Wenn Sie ein Land aus dem Dropdownmenü **[!UICONTROL Länder]** auswählen, wird das **[!UICONTROL Städte]**-Dropdown-Menü dynamisch angepasst, sodass nur Städte innerhalb dieses Landes angezeigt werden.
 
 Dieses Konzept gilt für alle Dimensionen. Es sind nur Dimensionselemente, die innerhalb des Datumsbereichs des Bedienfelds angezeigt werden, sowie ausgewählte Segmente sichtbar.  Die in statischen Dropdown-Segmenten ausgewählten Dimensionen wirken sich auf die verfügbaren Werte in dynamischen Dropdown-Segmenten aus. Das Gegenteil ist jedoch nicht der Fall: In dynamischen Dropdown-Segmenten ausgewählte Dimensionselemente wirken sich nicht auf die verfügbaren Werte in statischen Dropdown-Segmenten aus.
 

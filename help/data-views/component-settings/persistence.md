@@ -5,10 +5,10 @@ exl-id: b8b234c6-a7d9-40e9-8380-1db09610b941
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: 220ebd7dbc3fa75d221690cd6e5828bd94395434
+source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
 workflow-type: tm+mt
 source-wordcount: '1053'
-ht-degree: 77%
+ht-degree: 74%
 
 ---
 
@@ -101,7 +101,7 @@ Details zu den verfügbaren Gültigkeitseinstellungen.
 
 ## [!UICONTROL Binding-Dimension]
 
-Eine Dropdown-Liste, mit der Sie die Persistenz eines Dimensionswerts an Dimensionswerte in einer anderen Dimension binden können. Gültige Optionen umfassen andere Dimensionen, die in der Datenansicht enthalten sind.
+Ein Dropdown-Menü, mit dem Sie die Persistenz eines Dimensionswerts an Dimensionswerte in einer anderen Dimension binden können. Gültige Optionen umfassen andere Dimensionen, die in der Datenansicht enthalten sind.
 
 Beispiele für die effektive Verwendung von Bindungsdimensionen finden Sie in [Verwenden von Bindungsdimensionen und Metriken in Customer Journey Analytics](../../use-cases/data-views/binding-dimensions-metrics.md).
 
@@ -115,7 +115,7 @@ Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Bindungsdimens
 
 ## [!UICONTROL Binding-Metrik]
 
-Eine Dropdown-Liste, in der Sie eine Metrik auswählen können, die als bindender Trigger fungiert. Zu den gültigen Optionen gehören die Metriken, die in der Datenansicht enthalten sind.
+Ein Dropdown-Menü, über das Sie eine Metrik auswählen können, die als Bindungs-Trigger fungiert. Zu den gültigen Optionen gehören die Metriken, die in der Datenansicht enthalten sind.
 
 Diese Einstellung wird nur angezeigt, wenn die Binding-Dimension im Objekt-Array niedriger ist als die Komponente. Wenn in einem Ereignis eine Bindungsmetrik vorhanden ist, werden Dimensionswerte von der Ereignisebene auf die untere Schemaebene der Bindungsdimension kopiert.
 

@@ -5,10 +5,10 @@ title: Verwalten von Ordnern in Analysis Workspace
 feature: Workspace Basics
 exl-id: dcc78e0e-49d6-40bf-a606-9a7f3f19911c
 role: User
-source-git-commit: 664756b796e8915a701ccabfb5f250e777701b60
+source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
 workflow-type: tm+mt
 source-wordcount: '427'
-ht-degree: 100%
+ht-degree: 91%
 
 ---
 
@@ -44,7 +44,7 @@ So verschieben Sie Ordner in Workspace:
 * Wählen Sie in der [Projektliste](/help/analysis-workspace/build-workspace-project/freeform-overview.md#project-list) einen Ordner aus, den Sie verschieben möchten.
 
    1. Wählen Sie im Kontextmenü ![Mehr](/help/assets/icons/More.svg) des ausgewählten Ordners oder auf der blauen Aktionsleiste unter den verfügbaren [Aktionen](/help/analysis-workspace/build-workspace-project/freeform-overview.md#actions) die Option **[!UICONTROL Verschieben nach]** aus.
-   1. Wählen Sie im Dialogfeld **[!UICONTROL Ordner auswählen]** einen Ordner aus dem Dropdown-Menü **[!UICONTROL Ordner]** aus, in den der Ordner verschoben werden soll.
+   1. Wählen **[!UICONTROL im Dialogfeld &quot;]** auswählen“ einen Ordner aus dem Dropdown-Menü **[!UICONTROL Ordner]** aus, in den der Ordner verschoben werden soll.
 
    1. Wählen Sie **[!UICONTROL Verschieben]** aus. 
 
@@ -52,7 +52,7 @@ So verschieben Sie Ordner in Workspace:
 
    1. Wählen Sie im [Titelbereich](/help/analysis-workspace/build-workspace-project/freeform-overview.md#title-area) die Option ![Mehr](/help/assets/icons/More.svg) und dann **[!UICONTROL Ordner verschieben]** aus.
 
-   1. Wählen Sie im Dialogfeld **[!UICONTROL Ordner auswählen]** einen Ordner aus dem Dropdown-Menü **[!UICONTROL Ordner]** aus, in den der Ordner verschoben werden soll.
+   1. Wählen **[!UICONTROL im Dialogfeld &quot;]** auswählen“ einen Ordner aus dem Dropdown-Menü **[!UICONTROL Ordner]** aus, in den der Ordner verschoben werden soll.
 
    1. Wählen Sie **[!UICONTROL Verschieben]** aus.
 

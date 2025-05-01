@@ -6,7 +6,7 @@ feature: Report Builder
 type: Documentation
 exl-id: 5730d5f3-de76-429f-81f5-ebe6b62a9480
 solution: Customer Journey Analytics
-source-git-commit: 6dd8a70293161ff58361953a7e48a98834b7abe0
+source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
 workflow-type: tm+mt
 source-wordcount: '997'
 ht-degree: 33%
@@ -109,7 +109,7 @@ Sie können Dimensionselemente danach filtern, ob alle Kriterien erfüllt sind o
 
 So legen Sie Filterkriterien fest:
 
-1. Wählen Sie einen Operator aus der Dropdown-Liste Operator aus. Standardmäßig ist **[!UICONTROL Enthält den]**) ausgewählt
+1. Wählen Sie im Dropdown-Menü Operator einen Operator aus. Standardmäßig ist **[!UICONTROL Enthält den]**) ausgewählt
 
    ![Die Benutzerliste.](./assets/image31.png){zoomable="yes"}
 

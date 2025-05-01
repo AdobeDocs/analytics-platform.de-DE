@@ -4,10 +4,10 @@ title: Visualisierung von Kombinationsdiagrammen
 feature: Visualizations
 exl-id: 06faa997-3a4e-4c41-b64e-64a15ada6552
 role: User
-source-git-commit: 0101986bb86c49776a044f754d912dc1bcb9422c
+source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
 workflow-type: tm+mt
 source-wordcount: '603'
-ht-degree: 98%
+ht-degree: 95%
 
 ---
 
@@ -52,7 +52,7 @@ Bedenken Sie Folgendes:
 
 1. Fügen Sie eine Visualisierung des Typs ![Comment](/help/assets/icons/ComboChart.svg) [!UICONTROL Kombination] hinzu. Siehe [Hinzufügen einer Visualisierung zu einem Panel](freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
 
-1. Wählen Sie aus den Dropdown-Listen eine Dimension für die X-Achse und eine Metrik für die Y-Achse aus.
+1. Wählen Sie aus den Dropdown-Menüs eine Dimension für die X-Achse und eine Metrik für die Y-Achse aus.
 
 1. Wählen Sie den Typ des [!UICONTROL Linienvergleichs] aus, den Sie verwenden möchten.
 

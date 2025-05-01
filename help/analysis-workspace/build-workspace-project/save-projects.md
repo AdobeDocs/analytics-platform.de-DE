@@ -4,10 +4,10 @@ title: Projekte speichern
 feature: Workspace Basics
 role: User
 exl-id: d751057e-6a5f-4605-abc1-9259a1f95a28
-source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
-workflow-type: ht
+source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
+workflow-type: tm+mt
 source-wordcount: '851'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -42,7 +42,7 @@ Um ein Projekt manuell zu speichern, wählen Sie, während das Projekt geöffnet
       * **[!UICONTROL Name]** (erforderlich): Name Ihres Projekts.
       * **[!UICONTROL Beschreibung]**: Eine Beschreibung Ihres Projekts.
       * **[!UICONTROL Tags]**: Suchen Sie im Feld [!UICONTROL *Tags suchen*] nach Tags oder fügen Sie neue Tags mit **[!UICONTROL ENTER]** hinzu.
-      * **[!UICONTROL Ordner]**: Wählen Sie einen Ordner aus dem Dropdown-Menü [!UICONTROL *Ordner auswählen*] aus. Wenn Sie keinen Ordner angeben, wird das Projekt im aktuellen Ordner gespeichert, aus dem Sie ein neues Projekt erstellt haben.
+      * **[!UICONTROL Ordner]**: Wählen Sie einen Ordner aus [!UICONTROL *Dropdown-Menü*] Ordner auswählen“ aus. Wenn Sie keinen Ordner angeben, wird das Projekt im aktuellen Ordner gespeichert, aus dem Sie ein neues Projekt erstellt haben.
       * **[!UICONTROL Versionshinweise]**. Fügen Sie Versionshinweise im Textbereich *Hinweise hinzufügen* hinzu.
 
    1. Wählen Sie **[!UICONTROL Speichern]** aus, um Ihr Projekt zu speichern.
@@ -78,8 +78,8 @@ Um ein Projekt manuell zu speichern, wählen Sie, während das Projekt geöffnet
 
       * **[!UICONTROL Name]** (erforderlich): Name Ihres Projekts.
       * **[!UICONTROL Beschreibung]**: Eine Beschreibung Ihres Projekts.
-      * **[!UICONTROL Tags]**. Suchen Sie im Feld [!UICONTROL *Tags suchen*] nach Tags oder fügen Sie neue Tags mit **[!UICONTROL ENTER]** hinzu.
-      * **[!UICONTROL Ordner]**. Wählen Sie einen Ordner aus dem Dropdown-Menü [!UICONTROL *Ordner auswählen*] aus. Wenn Sie keinen Ordner angeben, wird das Projekt im aktuellen Ordner gespeichert, aus dem Sie ein neues Projekt erstellt haben.
+      * **[!UICONTROL Tags]**: Suchen Sie im Feld [!UICONTROL *Tags suchen*] nach Tags oder fügen Sie neue Tags mit **[!UICONTROL ENTER]** hinzu.
+      * **[!UICONTROL Ordner]**: Wählen Sie einen Ordner aus [!UICONTROL *Dropdown-Menü*] Ordner auswählen“ aus. Wenn Sie keinen Ordner angeben, wird das Projekt im aktuellen Ordner gespeichert, aus dem Sie ein neues Projekt erstellt haben.
       * **[!UICONTROL Versionshinweise]**. Fügen Sie Versionshinweise im Textbereich *Hinweise hinzufügen* hinzu.
 
    1. Wählen Sie **[!UICONTROL Speichern]** aus, um Ihr Projekt zu speichern.

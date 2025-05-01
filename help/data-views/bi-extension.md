@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: BI Extension
 role: Admin
 exl-id: ab7e1f15-ead9-46b7-94b7-f81802f88ff5
-source-git-commit: bc2c959497230d7672d43d5cd409ca62d4627d6a
+source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
 workflow-type: tm+mt
 source-wordcount: '3247'
-ht-degree: 92%
+ht-degree: 89%
 
 ---
 
@@ -70,7 +70,7 @@ In Adobe Experience Platform:
 
 1. Wählen Sie ![Abfrage erstellen](assets/Smock_AddCircle_18_N.svg) **[!UICONTROL ** Abfrage erstellen **]** aus.
 
-1. Wählen Sie die `cja`-Datenbank für Ihre Sandbox aus der Liste der Datenbanken im Dropdown-Menü **[!UICONTROL Datenbank]** aus. Zum Beispiel `prod:cja`.
+1. Wählen Sie die `cja` für Ihre Sandbox aus der Liste der Datenbanken im Dropdown **[!UICONTROL Menü]** Datenbank“ aus. Zum Beispiel `prod:cja`.
 
 1. Um die Abfrage auszuführen, geben Sie Ihre SQL-Anweisung ein und wählen Sie die Schaltfläche ![Wiedergabe](assets/Smock_Play_18_N.svg) (oder drücken Sie `[SHIFT]` + `[ENTER]`).
 
@@ -85,7 +85,7 @@ In Adobe Experience Platform:
 
    1. Wählen Sie **[!UICONTROL ** Anmeldeinformationen **]** aus der oberen Leiste aus.
 
-   1. Wählen Sie die `cja`-Datenbank für Ihre Sandbox aus der Liste der Datenbanken im Dropdown-Menü **[!UICONTROL Datenbank]** aus. Zum Beispiel `prod:cja`.
+   1. Wählen Sie die `cja` für Ihre Sandbox aus der Liste der Datenbanken im Dropdown **[!UICONTROL Menü]** Datenbank“ aus. Zum Beispiel `prod:cja`.
 
    1. Um die Befehlszeichenfolge zu kopieren, verwenden Sie ![Kopieren](assets/Smock_Copy_18_N.svg) im Abschnitt **[!UICONTROL ** PSQL-Befehl **]**.
 
@@ -110,7 +110,7 @@ Derzeit wird die [!DNL Customer Journey Analytics BI extension] für die unten a
 
    1. Wählen Sie **[!UICONTROL ** Anmeldeinformationen **]** aus der oberen Leiste aus.
 
-   1. Wählen Sie die `cja`-Datenbank für Ihre Sandbox aus der Liste der Datenbanken im Dropdown-Menü **[!UICONTROL Datenbank]** aus. Zum Beispiel `prod:cja`.
+   1. Wählen Sie die `cja` für Ihre Sandbox aus der Liste der Datenbanken im Dropdown **[!UICONTROL Menü]** Datenbank“ aus. Zum Beispiel `prod:cja`.
 
    1. Verwenden Sie ![Kopieren](assets/Smock_Copy_18_N.svg), um jeden Parameter der Postgres-Anmeldeinformationen ([!UICONTROL Host], [!UICONTROL Port], [!UICONTROL Datenbank], [!UICONTROL Benutzername] und andere) zu kopieren, wenn sie in Power BI benötigt werden.
 
@@ -153,7 +153,7 @@ Derzeit wird die [!DNL Customer Journey Analytics BI extension] für die unten a
 
    1. Wählen Sie **[!UICONTROL ** Anmeldeinformationen **]** aus der oberen Leiste aus.
 
-   1. Wählen Sie die `cja`-Datenbank für Ihre Sandbox aus der Liste der Datenbanken im Dropdown-Menü **[!UICONTROL Datenbank]** aus. Zum Beispiel `prod:cja`.
+   1. Wählen Sie die `cja` für Ihre Sandbox aus der Liste der Datenbanken im Dropdown **[!UICONTROL Menü]** Datenbank“ aus. Zum Beispiel `prod:cja`.
 
    1. Verwenden Sie ![Kopieren](assets/Smock_Copy_18_N.svg), um jeden Parameter der Postgres-Anmeldedaten ([!UICONTROL Host], [!UICONTROL Port], [!UICONTROL Datenbank], [!UICONTROL Benutzername] und andere) bei Bedarf in Tableau Desktop zu kopieren.
 
@@ -199,7 +199,7 @@ Derzeit wird die [!DNL Customer Journey Analytics BI extension] für die unten a
 
    1. Wählen Sie **[!UICONTROL ** Anmeldeinformationen **]** aus der oberen Leiste aus.
 
-   1. Wählen Sie die `cja`-Datenbank für Ihre Sandbox aus der Liste der Datenbanken im Dropdown-Menü **[!UICONTROL Datenbank]** aus. Zum Beispiel `prod:cja`.
+   1. Wählen Sie die `cja` für Ihre Sandbox aus der Liste der Datenbanken im Dropdown **[!UICONTROL Menü]** Datenbank“ aus. Zum Beispiel `prod:cja`.
 
    1. Verwenden Sie ![Kopieren](assets/Smock_Copy_18_N.svg), um jeden Parameter der Postgres-Anmeldedaten ([!UICONTROL Host], [!UICONTROL Port], [!UICONTROL Datenbank], [!UICONTROL Benutzername] und andere) bei Bedarf in Looker zu kopieren.
 
@@ -226,7 +226,7 @@ Derzeit wird die [!DNL Customer Journey Analytics BI extension] für die unten a
 
    1. Wählen Sie **[!UICONTROL ** Anmeldeinformationen **]** aus der oberen Leiste aus.
 
-   1. Wählen Sie die `cja`-Datenbank für Ihre Sandbox aus der Liste der Datenbanken im Dropdown-Menü **[!UICONTROL Datenbank]** aus. Zum Beispiel `prod:cja`.
+   1. Wählen Sie die `cja` für Ihre Sandbox aus der Liste der Datenbanken im Dropdown **[!UICONTROL Menü]** Datenbank“ aus. Zum Beispiel `prod:cja`.
 
    1. Verwenden Sie ![Kopieren](assets/Smock_Copy_18_N.svg), um jeden Parameter der Postgres-Anmeldedaten ([!UICONTROL Host], [!UICONTROL Port], [!UICONTROL Datenbank], [!UICONTROL Benutzername] und andere) zu kopieren, wenn sie in Jupyter Notebook werden.
 
@@ -250,7 +250,7 @@ Derzeit wird die [!DNL Customer Journey Analytics BI extension] für die unten a
 
    1. Wählen Sie **[!UICONTROL ** Anmeldeinformationen **]** aus der oberen Leiste aus.
 
-   1. Wählen Sie die `cja`-Datenbank für Ihre Sandbox aus der Liste der Datenbanken im Dropdown-Menü **[!UICONTROL Datenbank]** aus. Zum Beispiel `prod:cja`.
+   1. Wählen Sie die `cja` für Ihre Sandbox aus der Liste der Datenbanken im Dropdown **[!UICONTROL Menü]** Datenbank“ aus. Zum Beispiel `prod:cja`.
 
    1. Verwenden Sie ![Kopieren](assets/Smock_Copy_18_N.svg), um jeden Parameter der Postgres-Anmeldedaten ([!UICONTROL Host], [!UICONTROL Port], [!UICONTROL Datenbank], [!UICONTROL Benutzername] und andere) zu kopieren, wenn sie in Jupyter Notebook werden.
 

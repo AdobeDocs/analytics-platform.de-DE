@@ -3,10 +3,10 @@ description: Der Generator für berechnete Metriken bietet eine Arbeitsfläche, 
 title: Erstellen berechneter Metriken
 feature: Calculated Metrics
 exl-id: 4d03a51d-c676-483c-98e2-d7283e8d71b0
-source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
+source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
 workflow-type: tm+mt
 source-wordcount: '1705'
-ht-degree: 71%
+ht-degree: 70%
 
 ---
 
@@ -170,7 +170,7 @@ Der **[!UICONTROL Definition“ wird automatisch ein Segment-Container]** den Na
    * Wählen Sie ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Hinzufügen]** in einem Container aus:
 
       1. Wählen Sie **[!UICONTROL Segment]** aus. Ein Segment-Container wird der **[!UICONTROL Definition]** hinzugefügt.
-      1. Wählen Sie im neuen Segment-Container ein Segment aus dem Dropdown [!UICONTROL *Menü Auswählen…*] aus.
+      1. Wählen Sie im neuen Segment-Container ein Segment aus dem [!UICONTROL *Auswählen…*] Dropdown-Menü aus.
 
   >[!TIP]
   >
@@ -196,7 +196,7 @@ Um einen Funktions-Container hinzuzufügen, können Sie wie folgt vorgehen:
 * Wählen Sie ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Hinzufügen]** in einem Container aus:
 
    1. Wählen Sie **[!UICONTROL Funktion]**.
-   1. Wählen Sie im Container eine Funktion aus dem Dropdown-Menü [!UICONTROL *Auswählen...*] aus. 
+   1. Wählen Sie im Container eine Funktion aus dem [!UICONTROL *Auswählen…*] Dropdown-Menü aus.
 
 Der Funktions-Container ist nach der Funktionskomponente benannt. Beispiel: ![Function](/help/assets/icons/Effect.svg) **[!UICONTROL SQUARE ROOT (metric)]**. Wählen Sie ![InfoOutline](/help/assets/icons/InfoOutline.svg) aus, um ein Popup mit weiteren Details zur Funktion anzuzeigen. Wählen Sie **[!UICONTROL Weitere Informationen]** aus, um weitere Informationen zur Funktion zu erhalten.
 

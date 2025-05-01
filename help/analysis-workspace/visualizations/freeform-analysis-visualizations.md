@@ -5,10 +5,10 @@ title: Visualisierungsübersicht
 feature: Visualizations
 exl-id: ca9e0561-7a54-487a-9fdc-3bcf34f9bdb1
 role: User
-source-git-commit: 0101986bb86c49776a044f754d912dc1bcb9422c
+source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
 workflow-type: tm+mt
 source-wordcount: '1616'
-ht-degree: 97%
+ht-degree: 96%
 
 ---
 
@@ -125,7 +125,7 @@ Welche Visualisierungseinstellungen verfügbar sind, ist von der jeweiligen Visu
 | **[!UICONTROL Prognose anzeigen]** | Verbessern Sie Liniendiagramme und Freiformtabellen durch Anzeige von Prognosewerten. |
 | **[!UICONTROL Min. zeigen]** | Zeigen Sie den Minimalwert in der Visualisierung an. |
 | **[!UICONTROL Max. zeigen]** | Zeigen Sie den Maximalwert in der Visualisierung an. |
-| **[!UICONTROL Trend-Linie anzeigen]** | Zeigen Sie eine Trend-Linie in der Visualisierung. Wenn diese Option ausgewählt ist, können Sie den Typ der Trend-Linie aus dem Dropdown-Menü auswählen. |
+| **[!UICONTROL Trend-Linie anzeigen]** | Zeigen Sie eine Trend-Linie in der Visualisierung. Wenn ausgewählt, können Sie den Typ der Trendlinie aus dem Dropdown-Menü auswählen. |
 
 Sie können die Einstellungen für alle von Ihnen erstellten Visualisierungen anpassen. Weitere Informationen finden Sie unter [Benutzervoreinstellungen](/help/analysis-workspace/user-preferences.md).
 

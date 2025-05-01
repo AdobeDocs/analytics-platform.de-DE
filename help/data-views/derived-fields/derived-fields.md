@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Derived Fields
 exl-id: bcd172b2-cd13-421a-92c6-e8c53fa95936
 role: Admin
-source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
+source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
 workflow-type: tm+mt
-source-wordcount: '8844'
-ht-degree: 99%
+source-wordcount: '8857'
+ht-degree: 98%
 
 ---
 
@@ -1948,7 +1948,7 @@ Die folgenden Einschränkungen gelten generell für die Funktionalität „Abgel
 
 - Beim Definieren von Regeln für ein abgeleitetes Feld können Sie maximal zehn verschiedene Schemafelder (ohne Standardfelder) verwenden.
    - Von diesen maximal zehn verschiedenen Schemafeldern sind nur maximal drei Lookup-Schema- oder Profilschemafelder zulässig.
-- Pro Customer Journey Analytics-Verbindung können maximal 100 abgeleitete Felder verwendet werden.
+- Je nach zu lizenzierendem Package kann eine maximale Anzahl abgeleiteter Felder pro Customer Journey Analytics-Verbindung vorhanden sein. Weitere Informationen [ Sie unter ](https://helpx.adobe.com/de/legal/product-descriptions/customer-journey-analytics.html){target="_blank"}Produktbeschreibung“.
 
 
 ### Zusammenfassung der Funktionsbeschränkungen

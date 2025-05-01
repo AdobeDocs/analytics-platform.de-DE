@@ -4,10 +4,10 @@ title: Segmente erstellen
 feature: Filters, Segments
 role: User
 exl-id: 160021f1-6942-4682-9114-d375307d9912
-source-git-commit: 85a22d1e57925f0512ce0cc658cfba1008339d91
+source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
 workflow-type: tm+mt
-source-wordcount: '1571'
-ht-degree: 45%
+source-wordcount: '1572'
+ht-degree: 43%
 
 ---
 
@@ -68,8 +68,8 @@ Mit dem Definition Builder erstellen Sie eine Segmentdefinition. Dabei verwenden
 
 Sie können den Typ und den Umfang Ihrer Definition konfigurieren:
 
-1. Um den Typ Ihrer Definition anzugeben, geben Sie an, ob Sie eine Ein- oder Ausschlussdefinition erstellen möchten. Wählen Sie ![Einstellung](/help/assets/icons/Setting.svg) **[!UICONTROL Optionen]** und über den Dropdown-Umschalter **[!UICONTROL Einbeziehen]** oder **[!UICONTROL Ausschließen]**.
-1. Um den Umfang Ihrer Definition anzugeben, wählen Sie aus dem Dropdown-Menü **[!UICONTROL Einschließen]** oder **[!UICONTROL Ausschließen]** aus, ob Sie den Umfang der Definition **[!UICONTROL Ereignis]**, **[!UICONTROL Sitzung]**, **[!UICONTROL Person]**, **[!UICONTROL Globales Konto]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}, **[!UICONTROL Konto]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}, **[!UICONTROL Opportunity]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"} oder **[!UICONTROL EinkaufsgruppeB2B edition [!BADGE ]** 24}]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"} möchten
+1. Um den Typ Ihrer Definition anzugeben, geben Sie an, ob Sie eine Ein- oder Ausschlussdefinition erstellen möchten. Wählen Sie ![Einstellung](/help/assets/icons/Setting.svg) **[!UICONTROL Optionen]** und aus dem Dropdown-Menü **[!UICONTROL Einschließen]** oder **[!UICONTROL Ausschließen]**.
+1. Um den Umfang Ihrer Definition anzugeben, wählen Sie aus dem Dropdown-Menü **[!UICONTROL Einschließen]** oder **[!UICONTROL Ausschließen]** aus, ob Sie den Umfang der Definition **[!UICONTROL Ereignis]**, **[!UICONTROL Sitzung]**, **[!UICONTROL Person]**, **[!UICONTROL Globales Konto]** [!BADGE B2B editionB2B edition B2B edition ]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"} oder **** ]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"} Einkaufsgruppe]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}224}B2B edition **** ]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"} **** möchten[!BADGE [!BADGE [!BADGE 
 
 Sie können diese Einstellungen später jederzeit ändern.
 
@@ -87,7 +87,7 @@ So fügen Sie eine Komponente hinzu:
 
 So bearbeiten Sie eine Komponente:
 
-* Wählen Sie im Dropdown-Menü „Operator“ einen neuen Operator für die Komponente aus.
+* Wählen Sie im Dropdown-Menü Operator einen neuen Operator für die Komponente aus.
 * Wählen Sie ggf. einen anderen Wert für den Operator aus oder geben Sie ihn an.
 * Wenn der Komponententyp eine Dimension ist, können Sie das Attributionsmodell definieren. Weitere Informationen finden Sie unter [Attributionsmodell](#attribution-models).
 

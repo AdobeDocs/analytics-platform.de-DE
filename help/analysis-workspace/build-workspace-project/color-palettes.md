@@ -4,10 +4,10 @@ title: Visualisierungsfarbpalette
 feature: Workspace Basics
 exl-id: c3c208b9-84a5-4620-ba3c-7e483215e698
 role: User
-source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
-workflow-type: ht
+source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
+workflow-type: tm+mt
 source-wordcount: '214'
-ht-degree: 100%
+ht-degree: 92%
 
 ---
 
@@ -39,6 +39,6 @@ Beachten Sie:
 ## So ändern Sie Ihre Farbpalette:
 
 1. Navigieren Sie zu **[!UICONTROL Arbeitsbereich]** > **[!UICONTROL Projekt]** > **[!UICONTROL Projektinformationen und -einstellungen]**.
-1. Aus der Dropdown-Liste **[!UICONTROL Projekt-Farbpalette]** können Sie eines von fünf voreingestellten Farbschemata auswählen.
+1. Aus dem Dropdown **[!UICONTROL Menü]** Projektfarbpalette“ können Sie eines der vordefinierten Farbschemata auswählen.
 1. Um Ihre eigene Palette festzulegen, wählen Sie **[!UICONTROL Benutzerdefinierte Palette]** unter den voreingestellten Optionen aus.
 1. Geben Sie bis zu 16 kommagetrennte Hexadezimalwerte ein (z. B. `#00a4e4`), um Ihre eigene Farbpalette zu erstellen. Wenn Sie beispielsweise nur vier Werte angeben, werden Farben in Visualisierungen mit mehr Farben automatisch wiederholt.

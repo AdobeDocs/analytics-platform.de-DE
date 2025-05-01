@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Data Views
 exl-id: a763027e-68f7-4f0a-8082-85db5283c8e3
 role: Admin
-source-git-commit: 220ebd7dbc3fa75d221690cd6e5828bd94395434
+source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
 workflow-type: tm+mt
 source-wordcount: '921'
-ht-degree: 98%
+ht-degree: 94%
 
 ---
 
@@ -32,16 +32,16 @@ Mit Einstellungen der [!UICONTROL Teilzeichenfolge]-Komponente können Sie mehre
 
 ## Von links/rechts
 
-Hiermit stellen Sie einen Teil einer Zeichenfolge je nach ihrer Position an den Beginn oder das Ende einer Zeichenfolge. Die Methoden **[!UICONTROL Von links]** und **[!UICONTROL Von rechts]** verfügen über zwei Dropdown-Listen: **[!UICONTROL Von]** (wo die Ausgabe beginnt) und **[!UICONTROL Bis]** (wo die Ausgabe endet).
+Hiermit stellen Sie einen Teil einer Zeichenfolge je nach ihrer Position an den Beginn oder das Ende einer Zeichenfolge. **[!UICONTROL Von links]** und **[!UICONTROL Von rechts]** verfügen über zwei Dropdown-Menüs: **[!UICONTROL Von]** (wo die Ausgabe beginnt) und **[!UICONTROL Bis]** (wo die Ausgabe endet).
 
 * **[!UICONTROL Zeichenfolgen-Start]**: Der Beginn der Zeichenfolge.
 * **[!UICONTROL Zeichenfolge-Ende]**: Das Ende der Zeichenfolge.
 * **[!UICONTROL Position]**: Eine statische Anzahl von Zeichen je nach Methode von links oder rechts.
-* **[!UICONTROL Zeichenfolge]**: Ordnen Sie ein Zeichen oder eine Zeichenfolge zu, um den Beginn oder das Ende einer Zeichenfolge anzugeben. In dieser Dropdown-Liste werden auch zusätzliche Optionen angezeigt:
+* **[!UICONTROL Zeichenfolge]**: Ordnen Sie ein Zeichen oder eine Zeichenfolge zu, um den Beginn oder das Ende einer Zeichenfolge anzugeben. In diesem Dropdown-Menü werden auch zusätzliche Optionen angezeigt:
    * **[!UICONTROL Übereinstimmung]**: Die zuzuordnende Zeichenfolge. Wenn die Eingabe nicht mit diesem Feld übereinstimmt, werden [keine Wertoptionen](no-value-options.md) angewendet.
    * **[!UICONTROL Index]**: Die **[!UICONTROL Übereinstimmungskriterien]** können in einer Zeichenfolge mehrmals vorkommen. Diese Ganzzahl bestimmt, welche Übereinstimmung je nach Methode die Ausgabe starten oder beenden soll. Beispiel: Ein Index von `1` stellt die erste Übereinstimmung dar. Wenn der Index höher ist als die Anzahl der verfügbaren Übereinstimmungen, werden [keine Wertoptionen](no-value-options.md) angewendet.
    * **[!UICONTROL Zeichenfolge einschließen]**: Ist dieses Kontrollkästchen aktiviert, wird die **[!UICONTROL Übereinstimmungszeichenfolge]** in der Ausgabe einbezogen.
-* **[!UICONTROL Länge]**: Eine Ganzzahl, die angibt, wie hoch die einzubeziehende Zeichenzahl nach der Startposition der Ausgabe sein soll. Nur verfügbar in der Dropdown-Liste **[!UICONTROL Bis]**.
+* **[!UICONTROL Länge]**: Eine Ganzzahl, die angibt, wie hoch die einzubeziehende Zeichenzahl nach der Startposition der Ausgabe sein soll. Nur im Dropdown-Menü &quot;**[!UICONTROL &quot;]**.
 
 ## Trennzeichen
 

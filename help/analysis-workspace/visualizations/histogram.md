@@ -4,10 +4,10 @@ title: Histogramm
 feature: Visualizations
 exl-id: 5901eb15-51cf-45a0-a80b-5824adf33bdd
 role: User
-source-git-commit: c94e97723a4ed30e675144e02196c93016b13235
+source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
 workflow-type: tm+mt
 source-wordcount: '394'
-ht-degree: 81%
+ht-degree: 76%
 
 ---
 
@@ -37,7 +37,7 @@ Die Visualisierung ![Histogram](/help/assets/icons/Histogram.svg) **[!UICONTROL 
 So erstellen Sie ein Histogramm:
 
 1. Fügen Sie eine Visualisierung ![Histogram](/help/assets/icons/Histogram.svg) **[!UICONTROL Histogramm]** hinzu. Siehe [Hinzufügen einer Visualisierung zu einem Panel](freeform-analysis-visualizations.md#add-visualizations-to-a-panel).
-1. Ziehen Sie eine Metrik aus der Komponentenliste **[!UICONTROL Metriken]** oder wählen Sie eine Metrik aus dem Dropdown-Menü [!UICONTROL *Metrik hinzufügen*] aus.
+1. Ziehen Sie eine Metrik aus **[!UICONTROL Komponentenliste]** Metriken“ oder wählen Sie eine Metrik aus dem [!UICONTROL *Metrik hinzufügen*] Dropdown-Menü aus.
 1. (Optional) Wählen Sie **[!UICONTROL Erweiterte Einstellungen einblenden]** aus. Weitere Informationen finden Sie unter [Erweiterte Einstellungen](#advanced-settings).
 1. Wählen Sie **[!UICONTROL Erstellen]** aus.
 

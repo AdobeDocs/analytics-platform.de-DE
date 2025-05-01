@@ -2,9 +2,9 @@
 title: Freigegebener Komponenten-Editor
 description: Erstellen oder bearbeiten Sie freigegebene Dimensionen und Metriken.
 exl-id: 3f6a808a-d6ac-4a47-a5e2-63b9f17952e8
-source-git-commit: 62df631eeac40f2009304d91c93950c38a260dab
+source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
 workflow-type: tm+mt
-source-wordcount: '390'
+source-wordcount: '393'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ Die Benutzeroberfläche umfasst drei Hauptspalten/Abschnitte:
 
 * **Schemafeldauswahl**: Suchen Sie die gewünschten Schemafelder und ziehen Sie sie in den Bereich Enthaltene Komponenten .
    * **Verbindung**: Die aktive Verbindung. Ändern Sie die aktive Verbindung im [Manager für freigegebene Metriken und Dimensionen](smd-overview.md).
-   * **Dropdown-Liste der Komponenten**: Sie können zwischen der Auswahl [!UICONTROL Schemafelder] (neue freigegebene Dimensionen und Metriken) oder [!UICONTROL Metriken und Dimensionen] (vorhandene freigegebene Komponenten) wählen.
+   * **Komponentenliste**: Sie können zwischen der Auswahl [!UICONTROL Schemafelder] (neue freigegebene Dimensionen und Metriken) oder [!UICONTROL Metriken und Dimensionen] (vorhandene freigegebene Komponenten) aus dem Dropdown-Menü wählen.
    * **Suche**: Verwenden Sie das ![Suchsymbol](/help/assets/icons/Search.svg) Textsuche, um das gewünschte Schemafeld oder die freigegebene Komponente nach Namen zu suchen. Sie können auch Filter ![Filtersymbol](/help/assets/icons/Filter.svg) verwenden, um die Liste der Komponenten einzugrenzen. Der `Is not deprecated` ist standardmäßig aktiv.
    * **Abgeleitetes Feld erstellen**: Ermöglicht das [Erstellen eines abgeleiteten Felds](/help/data-views/derived-fields/derived-fields.md).
 * **Enthaltene Komponenten**: Die Komponenten, die Sie für die Freigabe konfigurieren. Beim Erstellen gemeinsam genutzter Komponenten können Sie mehrere Schemafelder in diesen Bereich ziehen, um mehrere Komponenten gleichzeitig zu erstellen. Beim Bearbeiten freigegebener Komponenten können Sie mehrere zu bearbeitende Komponenten auswählen. Daraufhin werden alle in diesem Bereich ausgewählten Komponenten aufgelistet.

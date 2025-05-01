@@ -5,10 +5,10 @@ exl-id: f9b0b3c2-7c88-4bef-af33-0d309cafe799
 solution: Customer Journey Analytics
 feature: Components
 role: User
-source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
+source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
 workflow-type: tm+mt
 source-wordcount: '913'
-ht-degree: 89%
+ht-degree: 88%
 
 ---
 
@@ -86,7 +86,7 @@ Sie können die Komponentenliste im linken Bedienfeld von Analysis Workspace dur
 
    Der jeweilige Komponententyp ist farblich und mit einem Symbol gekennzeichnet. **Dimensionen** ![Dimension-Symbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) sind orange, **** Segmente![Segment-Symbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Segmentation_18_N.svg) sind blau, **Datumsbereiche**![ Datumsbereichssymbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg) sind violett und **** Metriken![Metriksymbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Event_18_N.svg) sind grün.<br/>Das Adobe-Symbol ![AdobeLogo](/help/assets/icons/AdobeLogoSmall.svg) zeigt entweder eine Vorlage für berechnete Metriken oder eine Segmentvorlage an. Das Taschenrechnersymbol ![Taschenrechnersymbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calculator_18_N.svg) gibt eine berechnete Metrik an, die administratorseitig in Ihrer Organisation erstellt wurde.
 
-3. Wählen Sie aus der Dropdown-Liste die gewünschte Komponente aus.
+3. Wählen Sie die Komponente aus dem Dropdown-Menü aus.
 
 ### Filter
 

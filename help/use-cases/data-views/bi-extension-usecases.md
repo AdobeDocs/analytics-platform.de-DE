@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Data Views
 role: User
 exl-id: 3d1e3b79-402d-44ff-86b3-be9fd5494e19
-source-git-commit: 463ddbba0bd6765bd5fde1b2098c5603b48b10e4
+source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
 workflow-type: tm+mt
 source-wordcount: '14696'
 ht-degree: 3%
@@ -87,7 +87,7 @@ Ersetzen Sie diese Beispielobjekte durch Objekte, die für Ihre spezifische Umge
    1. Navigieren Sie zu Ihrer Experience Platform-Sandbox.
    1. Wählen Sie ![Abfragen](/help/assets/icons/DataSearch.svg) **[!UICONTROL Abfragen]** in der linken Leiste aus.
    1. Wählen Sie **[!UICONTROL Registerkarte]** Anmeldeinformationen“ in der Benutzeroberfläche **[!UICONTROL Abfragen]** aus.
-   1. Wählen Sie `prod:cja` aus dem Dropdown **[!UICONTROL Menü &quot;]**&quot;.
+   1. Wählen Sie `prod:cja` aus dem Dropdown **[!UICONTROL Menü]** Datenbank“ aus.
 
       ![Anmeldeinformationen für den Abfrage-Service](assets/queryservice-credentials.png){zoomable="yes"}
 
@@ -106,7 +106,7 @@ Ersetzen Sie diese Beispielobjekte durch Objekte, die für Ihre spezifische Umge
    1. Im Dialogfeld **[!UICONTROL PostgreSQL-Datenbank]** - **[!UICONTROL Datenbank]**:
       ![PowerBI Desktop-Benutzer und -Kennwort](assets/powerbi-userpassword.png){zoomable="yes"}
       1. Verwenden Sie ![Kopieren](/help/assets/icons/Copy.svg), um die Werte **[!UICONTROL Benutzername]** und **[!UICONTROL Kennwort]** aus dem Bedienfeld &quot;**** Abfrage **[!UICONTROL Ablaufende Anmeldeinformationen]** von Experience Platform in die Felder **[!UICONTROL Benutzername]** und **[!UICONTROL Kennwort]** zu kopieren. Wenn Sie eine [nicht ablaufende Berechtigung](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/credentials?lang=en#use-credential-to-connect) verwenden, verwenden Sie das Kennwort Ihrer nicht ablaufenden Berechtigung.
-      1. Stellen Sie sicher, dass das Dropdown-Menü für **[!UICONTROL Wählen Sie, auf welche Ebene diese Einstellungen angewendet werden sollen]** auf den **[!UICONTROL Server]** eingestellt ist, den Sie zuvor definiert haben.
+      1. Stellen Sie sicher, dass das Dropdown-Menü für **[!UICONTROL Wählen Sie, auf welche Ebene diese Einstellungen angewendet werden sollen]** auf den **[!UICONTROL Server]** festgelegt ist, den Sie zuvor definiert haben.
       1. Wählen Sie **[!UICONTROL Verbinden]** aus.
    1. Im **[!UICONTROL Navigator]** werden die Datenansichten abgerufen. Dieser Abruf kann einige Zeit dauern. Nach dem Abrufen sehen Sie Folgendes in Power BI Desktop.
       ![Power BI-Desktop-Ladedaten](assets/powerbi-navigator-load.png){zoomable="yes"}
@@ -146,7 +146,7 @@ Power BI Desktop unterstützt die folgenden Szenarien für den `FLATTEN`. Weiter
    1. Navigieren Sie zu Ihrer Experience Platform-Sandbox.
    1. Wählen Sie ![Abfragen](/help/assets/icons/DataSearch.svg) **[!UICONTROL Abfragen]** in der linken Leiste aus.
    1. Wählen Sie **[!UICONTROL Registerkarte]** Anmeldeinformationen“ in der Benutzeroberfläche **[!UICONTROL Abfragen]** aus.
-   1. Wählen Sie `prod:cja` aus dem Dropdown **[!UICONTROL Menü &quot;]**&quot;.
+   1. Wählen Sie `prod:cja` aus dem Dropdown **[!UICONTROL Menü]** Datenbank“ aus.
 
       ![Anmeldeinformationen für den Abfrage-Service](assets/queryservice-credentials.png){zoomable="yes"}
 
@@ -198,7 +198,7 @@ Tableau Desktop unterstützt die folgenden Szenarien für den `FLATTEN`. Weitere
    1. Navigieren Sie zu Ihrer Experience Platform-Sandbox.
    1. Wählen Sie ![Abfragen](/help/assets/icons/DataSearch.svg) **[!UICONTROL Abfragen]** in der linken Leiste aus.
    1. Wählen Sie **[!UICONTROL Registerkarte]** Anmeldeinformationen“ in der Benutzeroberfläche **[!UICONTROL Abfragen]** aus.
-   1. Wählen Sie `prod:cja` aus dem Dropdown **[!UICONTROL Menü &quot;]**&quot;.
+   1. Wählen Sie `prod:cja` aus dem Dropdown **[!UICONTROL Menü]** Datenbank“ aus.
 
       ![Anmeldeinformationen für den Abfrage-Service](assets/queryservice-credentials.png){zoomable="yes"}
 
@@ -274,7 +274,7 @@ Looker unterstützt die folgenden Szenarien für den `FLATTEN`. Weitere Informat
    1. Navigieren Sie zu Ihrer Experience Platform-Sandbox.
    1. Wählen Sie ![Abfragen](/help/assets/icons/DataSearch.svg) **[!UICONTROL Abfragen]** in der linken Leiste aus.
    1. Wählen Sie **[!UICONTROL Registerkarte]** Anmeldeinformationen“ in der Benutzeroberfläche **[!UICONTROL Abfragen]** aus.
-   1. Wählen Sie `prod:cja` aus dem Dropdown **[!UICONTROL Menü &quot;]**&quot;.
+   1. Wählen Sie `prod:cja` aus dem Dropdown **[!UICONTROL Menü]** Datenbank“ aus.
 
       ![Anmeldeinformationen für den Abfrage-Service](assets/queryservice-credentials.png){zoomable="yes"}
 
@@ -380,7 +380,7 @@ Jupyter Notebook unterstützt die folgenden Szenarien für den `FLATTEN`. Weiter
    1. Navigieren Sie zu Ihrer Experience Platform-Sandbox.
    1. Wählen Sie ![Abfragen](/help/assets/icons/DataSearch.svg) **[!UICONTROL Abfragen]** in der linken Leiste aus.
    1. Wählen Sie **[!UICONTROL Registerkarte]** Anmeldeinformationen“ in der Benutzeroberfläche **[!UICONTROL Abfragen]** aus.
-   1. Wählen Sie `prod:cja` aus dem Dropdown **[!UICONTROL Menü &quot;]**&quot;.
+   1. Wählen Sie `prod:cja` aus dem Dropdown **[!UICONTROL Menü]** Datenbank“ aus.
 
       ![Anmeldeinformationen für den Abfrage-Service](assets/queryservice-credentials.png){zoomable="yes"}
 
@@ -527,9 +527,9 @@ Bedienfeld „Täglicher Trend“ für ![Customer Journey Analytics](assets/cja_
       ![Tableau Desktop-Filter](assets/uc2-tableau-filter.png){zoomable="yes"}
 
    1. Ziehen Sie **[!UICONTROL daterangeday]** per Drag-and-Drop aus der Liste **[!UICONTROL Tabellen]** in den Bereich **[!UICONTROL Daten]** und legen Sie den Eintrag im Feld neben **[!UICONTROL Spalten]** ab.
-      * Wählen Sie **[!UICONTROL Tag]** aus dem Dropdown **[!UICONTROL Menü daterangeday]** aus, sodass der Wert auf &quot;**[!UICONTROL (daterangeday)]** aktualisiert wird.
+      * Wählen Sie **[!UICONTROL Tag]** aus dem **[!UICONTROL -Menü]** daterangeday“ aus, sodass der Wert auf &quot;**[!UICONTROL (daterangeday)]** aktualisiert wird.
    1. Ziehen Sie **[!UICONTROL Vorfälle]** per Drag-and-Drop aus der Liste **[!UICONTROL Tabellen (*Kennzahlennamen*)]** in den Bereich **[!UICONTROL Daten]** und legen Sie den Eintrag im Feld neben **[!UICONTROL Zeilen]** ab. Der Wert wird automatisch in **[!UICONTROL SUM(Occurrences)]** umgewandelt.
-   1. Ändern Sie **[!UICONTROL Standard]** im Dropdown-Menü **[!UICONTROL Anpassen]** in der Symbolleiste auf **[!UICONTROL Gesamte]**).
+   1. Ändern Sie **[!UICONTROL Standard]** über das Dropdown **[!UICONTROL Menü**[!UICONTROL  Anpassen ]**in der Symbolleiste auf Gesamte Ansicht]**.
 
       Ihr Tableau-Desktop sollte wie folgt aussehen.
 
@@ -541,7 +541,7 @@ Bedienfeld „Täglicher Trend“ für ![Customer Journey Analytics](assets/cja_
 1. Stellen Sie sicher, dass **[!UICONTROL Daten]**-Blatt ausgewählt ist. In der **[!UICONTROL Daten]** Ansicht:
    1. Wählen Sie **[!UICONTROL oben]** die Option „Anzeigen“ aus und wählen Sie **[!UICONTROL Texttabelle]** (Visualisierung oben links) aus, um den Inhalt der Datenansicht in eine Tabelle zu ändern.
    1. Wählen Sie **[!UICONTROL Zeilen und Spalten austauschen]** in der Symbolleiste aus.
-   1. Ändern Sie **[!UICONTROL Standard]** im Dropdown-Menü **[!UICONTROL Anpassen]** in der Symbolleiste auf **[!UICONTROL Gesamte]**).
+   1. Ändern Sie **[!UICONTROL Standard]** über das Dropdown **[!UICONTROL Menü**[!UICONTROL  Anpassen ]**in der Symbolleiste auf Gesamte Ansicht]**.
 
       Ihr Tableau-Desktop sollte wie folgt aussehen.
 
@@ -666,7 +666,7 @@ Ein Beispiel **[!UICONTROL Bedienfeld „Stündlicher]**&quot; für den Anwendun
    1. Ziehen Sie **[!UICONTROL daterangehour]** per Drag-and-Drop aus der Liste **[!UICONTROL Tabellen]** in den Bereich **[!UICONTROL Daten]** und legen Sie den Eintrag im Feld neben **[!UICONTROL Spalten]** ab.
       * Wählen Sie **[!UICONTROL Mehr]** > **[!UICONTROL Stunden]** aus dem **[!UICONTROL daterangeday]** Dropdown-Menü aus, sodass der Wert auf **[!UICONTROL HOUR(daterangeday)]** aktualisiert wird.
    1. Ziehen Sie **[!UICONTROL Vorfälle]** per Drag-and-Drop aus der Liste **[!UICONTROL Tabellen (*Kennzahlennamen*)]** in den Bereich **[!UICONTROL Daten]** und legen Sie den Eintrag im Feld neben **[!UICONTROL Zeilen]** ab. Der Wert wird automatisch in **[!UICONTROL SUM(Occurrences)]** umgewandelt.
-   1. Ändern Sie **[!UICONTROL Standard]** im Dropdown-Menü **[!UICONTROL Anpassen]** in der Symbolleiste auf **[!UICONTROL Gesamte]**).
+   1. Ändern Sie **[!UICONTROL Standard]** über das Dropdown **[!UICONTROL Menü**[!UICONTROL  Anpassen ]**in der Symbolleiste auf Gesamte Ansicht]**.
 
       Ihr Tableau-Desktop sollte wie folgt aussehen.
 
@@ -678,7 +678,7 @@ Ein Beispiel **[!UICONTROL Bedienfeld „Stündlicher]**&quot; für den Anwendun
 1. Stellen Sie sicher, dass **[!UICONTROL Daten]**-Blatt ausgewählt ist. In der **[!UICONTROL Daten]** Ansicht:
    1. Wählen Sie **[!UICONTROL oben]** die Option „Anzeigen“ aus und wählen Sie **[!UICONTROL Texttabelle]** (Visualisierung oben links) aus, um den Inhalt der Datenansicht in eine Tabelle zu ändern.
    1. Ziehen Sie **[!UICONTROL HOUR(DateRangeDay)]** von **[!UICONTROL Columns]** nach **[!UICONTROL Rows]**.
-   1. Ändern Sie **[!UICONTROL Standard]** im Dropdown-Menü **[!UICONTROL Anpassen]** in der Symbolleiste auf **[!UICONTROL Gesamte]**).
+   1. Ändern Sie **[!UICONTROL Standard]** über das Dropdown **[!UICONTROL Menü**[!UICONTROL  Anpassen ]**in der Symbolleiste auf Gesamte Ansicht]**.
 
       Ihr Tableau-Desktop sollte wie folgt aussehen.
 
@@ -832,9 +832,9 @@ Visualisierung des monatlichen Customer Journey Analytics-Trends ![](assets/cja_
       ![Tableau Desktop-Filter](assets/uc4-tableau-filter.png){zoomable="yes"}
 
    1. Ziehen Sie **[!UICONTROL daterangeday]** per Drag-and-Drop aus der Liste **[!UICONTROL Tabellen]** in den Bereich **[!UICONTROL Daten]** und legen Sie den Eintrag im Feld neben **[!UICONTROL Spalten]** ab.
-      * Wählen Sie **[!UICONTROL MONTH]** aus dem Dropdown **[!UICONTROL Menü daterangeday]** aus, sodass der Wert auf **[!UICONTROL MONTH(daterangeday)]** aktualisiert wird.
+      * Wählen Sie **[!UICONTROL MONTH]** aus dem Dropdown **[!UICONTROL Menü daterangeday]**, sodass der Wert auf &quot;**[!UICONTROL (daterangeday)]** aktualisiert wird.
    1. Ziehen Sie **[!UICONTROL Vorfälle]** per Drag-and-Drop aus der Liste **[!UICONTROL Tabellen (*Kennzahlennamen*)]** in den Bereich **[!UICONTROL Daten]** und legen Sie den Eintrag im Feld neben **[!UICONTROL Zeilen]** ab. Der Wert wird automatisch in **[!UICONTROL SUM(Occurrences)]** umgewandelt.
-   1. Ändern Sie **[!UICONTROL Standard]** im Dropdown-Menü **[!UICONTROL Anpassen]** in der Symbolleiste auf **[!UICONTROL Gesamte]**).
+   1. Ändern Sie **[!UICONTROL Standard]** über das Dropdown **[!UICONTROL Menü**[!UICONTROL  Anpassen ]**in der Symbolleiste auf Gesamte Ansicht]**.
 
       Ihr Tableau-Desktop sollte wie folgt aussehen.
 
@@ -846,7 +846,7 @@ Visualisierung des monatlichen Customer Journey Analytics-Trends ![](assets/cja_
 1. Stellen Sie sicher, dass **[!UICONTROL Daten]**-Blatt ausgewählt ist. In der Datenansicht
    1. Wählen Sie **[!UICONTROL oben]** die Option „Anzeigen“ aus und wählen Sie **[!UICONTROL Texttabelle]** (Visualisierung oben links) aus, um den Inhalt der Datenansicht in eine Tabelle zu ändern.
    1. Ziehen Sie **[!UICONTROL MONTH(daterangeday)]** von **[!UICONTROL Columns]** nach **[!UICONTROL Rows]**.
-   1. Ändern Sie **[!UICONTROL Standard]** im Dropdown-Menü **[!UICONTROL Anpassen]** in der Symbolleiste auf **[!UICONTROL Gesamte]**).
+   1. Ändern Sie **[!UICONTROL Standard]** über das Dropdown **[!UICONTROL Menü**[!UICONTROL  Anpassen ]**in der Symbolleiste auf Gesamte Ansicht]**.
 
       Ihr Tableau-Desktop sollte wie folgt aussehen.
 
@@ -1045,7 +1045,7 @@ Visualisierung mit einer Rangansicht für ![Customer Journey Analytics-Dimension
 1. Stellen Sie sicher, dass **[!UICONTROL Daten]**-Blatt ausgewählt ist.
    1. Klicken Sie **[!UICONTROL oben]** auf „Anzeigen“ und wählen Sie **[!UICONTROL Texttabelle]** (Visualisierung oben links) aus, um den Inhalt der beiden Diagramme in eine Tabelle zu ändern.
    1. Um den Kaufumsatz in absteigender Reihenfolge zu bestellen, bewegen Sie den Mauszeiger über **[!UICONTROL Kaufumsatz]** in der Tabelle und wählen Sie ![SortOrderDown](/help/assets/icons/SortOrderDown.svg) aus.
-   1. Wählen Sie **[!UICONTROL Gesamte Ansicht]** aus dem Dropdown-Menü **[!UICONTROL Anpassen]** aus.
+   1. Wählen **[!UICONTROL Gesamte Ansicht]** aus dem **[!UICONTROL -]**-Menü aus.
 
    Ihr Tableau-Desktop sollte wie folgt aussehen.
 
@@ -1075,19 +1075,19 @@ Visualisierung mit einer Rangansicht für ![Customer Journey Analytics-Dimension
 1. Im Abschnitt **[!UICONTROL ‣ Benutzerdefinierte Felder]** in der linken Leiste:
    1. Wählen Sie **[!UICONTROL Benutzerdefinierte Kennzahl]** aus dem Dropdown-Menü **[!UICONTROL + Hinzufügen]** aus.
    1. Im Dialogfeld **[!UICONTROL Benutzerdefinierte Kennzahl erstellen]**:
-      1. Wählen Sie **[!UICONTROL Dropdown]** Menü **[!UICONTROL Zu messendes Feld]** „Kaufumsatz“ aus.
-      1. Wählen Sie **[!UICONTROL Summe]** aus dem Dropdown-Menü **[!UICONTROL Kennzahlentyp]** aus.
+      1. Wählen **[!UICONTROL im Dropdown]** Menü **[!UICONTROL Feld zur Messung]** die Option „Kaufumsatz“ aus.
+      1. Wählen Sie **[!UICONTROL Summe]** aus **[!UICONTROL Dropdown-Menü Kennzahlentyp]** aus.
       1. Geben Sie einen benutzerdefinierten Feldnamen für „Name **[!UICONTROL ein]**. Beispiel: `Purchase Revenue`.
       1. Wählen Sie die **[!UICONTROL Felddetails]** aus.
-      1. Wählen Sie **[!UICONTROL Dezimalstellen]** aus dem Dropdown-Menü **[!UICONTROL Format]** und stellen Sie sicher, dass `0` in **[!UICONTROL Dezimalstellen]**.
+      1. Wählen Sie **[!UICONTROL Dezimalstellen]** aus dem Dropdown-Menü **[!UICONTROL Format]** aus und stellen Sie sicher, dass `0` in **[!UICONTROL Dezimalstellen]** eingegeben wird.
          ![Benutzerdefiniertes Metrikfeld für Looker](assets/uc5-looker-customfield.png){zoomable="yes"}
       1. Wählen Sie **[!UICONTROL Speichern]** aus.
-   1. Wählen Sie **[!UICONTROL Benutzerdefinierte Kennzahl]** noch einmal aus dem Dropdown-Menü **[!UICONTROL + Hinzufügen]** aus. Im Dialogfeld **[!UICONTROL Benutzerdefinierte Kennzahl erstellen]**:
-      1. Wählen Sie **[!UICONTROL Dropdown]** Menü **[!UICONTROL Zu messendes Feld]** aus.
-      1. Wählen Sie **[!UICONTROL Summe]** aus dem Dropdown-Menü **[!UICONTROL Kennzahlentyp]** aus.
+   1. Wählen Sie **[!UICONTROL Benutzerdefinierte Kennzahl]** erneut aus dem Dropdown-Menü **[!UICONTROL + Hinzufügen]** aus. Im Dialogfeld **[!UICONTROL Benutzerdefinierte Kennzahl erstellen]**:
+      1. Wählen **[!UICONTROL aus]** Dropdown-Menü **[!UICONTROL Zu messendes Feld]** die Option „Bestellungen“ aus.
+      1. Wählen Sie **[!UICONTROL Summe]** aus **[!UICONTROL Dropdown-Menü Kennzahlentyp]** aus.
       1. Geben Sie einen benutzerdefinierten Feldnamen für „Name **[!UICONTROL ein]**. Beispiel: `Sum of Purchases`.
       1. Wählen Sie die **[!UICONTROL Felddetails]** aus.
-      1. Wählen Sie **[!UICONTROL Dezimalstellen]** aus dem Dropdown-Menü **[!UICONTROL Format]** und stellen Sie sicher, dass `0` in **[!UICONTROL Dezimalstellen]**.
+      1. Wählen Sie **[!UICONTROL Dezimalstellen]** aus dem Dropdown-Menü **[!UICONTROL Format]** aus und stellen Sie sicher, dass `0` in **[!UICONTROL Dezimalstellen]** eingegeben wird.
       1. Wählen Sie **[!UICONTROL Speichern]** aus.
    1. Beide Felder werden automatisch zur Datenansicht hinzugefügt.
 1. Wählen Sie **[!UICONTROL + Filter]** aus, um einen weiteren **[!UICONTROL Filter]** hinzuzufügen und die Daten zu begrenzen.
@@ -1263,7 +1263,7 @@ Ein Beispiel **[!UICONTROL Bedienfeld „Mehrere Dimension]** Rang“ für den A
    1. Bestellungen ziehen und neben „Zeilen **[!UICONTROL ablegen]**. Der Wert ändert sich in **[!UICONTROL SUM(purchases)]**.
    1. Wählen Sie **[!UICONTROL SUM(Purchases)]** und wählen Sie im Dropdown-Menü **[!UICONTROL Dual Axis]**.
    1. Wählen Sie **[!UICONTROL SUM(Purchases]** in **[!UICONTROL Marks]** und wählen Sie **[!UICONTROL Line]** aus dem Dropdown-Menü aus.
-   1. Wählen Sie **[!UICONTROL SUM(Kaufumsatz)]** in **[!UICONTROL Marken]** und wählen Sie **[!UICONTROL Balken]** aus dem Dropdown-Menü aus.
+   1. Wählen Sie **[!UICONTROL SUM(Purchase Revenue)]** in **[!UICONTROL Marks]** und wählen Sie **[!UICONTROL Bar]** aus dem Dropdown-Menü aus.
    1. Wählen Sie **[!UICONTROL Gesamte Ansicht]** aus dem Menü **[!UICONTROL Anpassen]** aus.
    1. Wählen Sie den **[!UICONTROL Kaufumsatz]** im Diagramm aus und stellen Sie sicher, dass der Kaufumsatz in aufsteigender Reihenfolge angezeigt wird.
 
@@ -1282,9 +1282,9 @@ Ein Beispiel **[!UICONTROL Bedienfeld „Mehrere Dimension]** Rang“ für den A
    1. Ziehen Sie **[!UICONTROL Produktkategorie]** aus dem Bereich **[!UICONTROL Daten]** in **[!UICONTROL Zeilen]**.
    1. Ziehen Sie **[!UICONTROL Produktname]** aus dem Bereich **[!UICONTROL Daten]** nach **[!UICONTROL Zeilen]** neben **[!UICONTROL Produktkategorie]**.
    1. Um die beiden horizontalen Balken in eine Tabelle zu ändern, wählen Sie **[!UICONTROL Texttabelle]** unter **[!UICONTROL Anzeigen]** aus.
-   1. Um die Anzahl der Produkte zu begrenzen, wählen Sie **[!UICONTROL Bestellungen]** unter **[!UICONTROL Kennzahlen]** aus. Wählen Sie im Dropdown-Menü **[!UICONTROL Filter]** aus.
+   1. Um die Anzahl der Produkte zu begrenzen, wählen Sie **[!UICONTROL Bestellungen]** unter **[!UICONTROL Kennzahlen]** aus. Wählen Sie aus dem Dropdown-Menü **[!UICONTROL Filter]** aus.
    1. Wählen Sie im **[!UICONTROL Filter \[Bestellungen\]]** die Option **[!UICONTROL Mindestens]** aus und geben Sie `7000` ein. Wählen Sie **[!UICONTROL Übernehmen]** und **[!UICONTROL OK]** aus.
-   1. Wählen **[!UICONTROL Breite anpassen]** aus **[!UICONTROL Dropdown-Menü]** Anpassen“ aus.
+   1. Wählen **[!UICONTROL Breite anpassen]** aus **[!UICONTROL Dropdown]** Menü Anpassen aus.
 
       Ihr Tableau-Desktop sollte wie folgt aussehen.
 
@@ -1299,9 +1299,9 @@ Ein Beispiel **[!UICONTROL Bedienfeld „Mehrere Dimension]** Rang“ für den A
    1. Ziehen Sie **[!UICONTROL Produktkategorie]** aus dem Bereich **[!UICONTROL Daten]** nach **[!UICONTROL Spalten]**.
    1. Ziehen Sie **[!UICONTROL Produktname]** aus dem Bereich **[!UICONTROL Daten]** nach **[!UICONTROL Spalten]**.
    1. Um die beiden vertikalen Balkendiagramme in eine Baumkarte zu ändern, wählen Sie **[!UICONTROL Baumkarte]** unter **[!UICONTROL Anzeigen]** aus.
-   1. Um die Anzahl der Produkte zu begrenzen, wählen Sie **[!UICONTROL Bestellungen]** unter **[!UICONTROL Kennzahlen]** aus. Wählen Sie im Dropdown-Menü **[!UICONTROL Filter]** aus.
+   1. Um die Anzahl der Produkte zu begrenzen, wählen Sie **[!UICONTROL Bestellungen]** unter **[!UICONTROL Kennzahlen]** aus. Wählen Sie aus dem Dropdown-Menü **[!UICONTROL Filter]** aus.
    1. Wählen Sie im **[!UICONTROL Filter \[Bestellungen\]]** die Option **[!UICONTROL Mindestens]** aus und geben Sie `7000` ein. Wählen Sie **[!UICONTROL Übernehmen]** und **[!UICONTROL OK]** aus.
-   1. Wählen **[!UICONTROL Breite anpassen]** aus dem Dropdown-Menü **[!UICONTROL Anpassen]** aus.
+   1. Wählen **[!UICONTROL Breite anpassen]** aus dem Dropdown **[!UICONTROL Menü]** Anpassen“.
 
       Ihr Tableau-Desktop sollte wie folgt aussehen.
 
@@ -1333,19 +1333,19 @@ Ein Beispiel **[!UICONTROL Bedienfeld „Mehrere Dimension]** Rang“ für den A
 1. Im Abschnitt **[!UICONTROL ‣ Benutzerdefinierte Felder]** in der linken Leiste:
    1. Wählen Sie **[!UICONTROL Benutzerdefinierte Kennzahl]** aus dem Dropdown-Menü **[!UICONTROL + Hinzufügen]** aus.
    1. Im Dialogfeld **[!UICONTROL Benutzerdefinierte Kennzahl erstellen]**:
-      1. Wählen Sie **[!UICONTROL Dropdown]** Menü **[!UICONTROL Zu messendes Feld]** „Kaufumsatz“ aus.
-      1. Wählen Sie **[!UICONTROL Summe]** aus dem Dropdown-Menü **[!UICONTROL Kennzahlentyp]** aus.
+      1. Wählen **[!UICONTROL im Dropdown]** Menü **[!UICONTROL Feld zur Messung]** die Option „Kaufumsatz“ aus.
+      1. Wählen Sie **[!UICONTROL Summe]** aus **[!UICONTROL Dropdown-Menü Kennzahlentyp]** aus.
       1. Geben Sie einen benutzerdefinierten Feldnamen für „Name **[!UICONTROL ein]**. Beispiel: `Sum of Purchase Revenue`.
       1. Wählen Sie die **[!UICONTROL Felddetails]** aus.
-      1. Wählen Sie **[!UICONTROL Dezimalstellen]** aus dem Dropdown-Menü **[!UICONTROL Format]** und stellen Sie sicher, dass `0` in **[!UICONTROL Dezimalstellen]**.
+      1. Wählen Sie **[!UICONTROL Dezimalstellen]** aus dem Dropdown-Menü **[!UICONTROL Format]** aus und stellen Sie sicher, dass `0` in **[!UICONTROL Dezimalstellen]** eingegeben wird.
          ![Benutzerdefiniertes Metrikfeld für Looker](assets/uc5-looker-customfield.png){zoomable="yes"}
       1. Wählen Sie **[!UICONTROL Speichern]** aus.
-   1. Wählen Sie **[!UICONTROL Benutzerdefinierte Kennzahl]** noch einmal aus dem Dropdown-Menü **[!UICONTROL + Hinzufügen]** aus. Im Dialogfeld **[!UICONTROL Benutzerdefinierte Kennzahl erstellen]**:
-      1. Wählen Sie **[!UICONTROL Dropdown]** Menü **[!UICONTROL Zu messendes Feld]** aus.
-      1. Wählen Sie **[!UICONTROL Summe]** aus dem Dropdown-Menü **[!UICONTROL Kennzahlentyp]** aus.
+   1. Wählen Sie **[!UICONTROL Benutzerdefinierte Kennzahl]** erneut aus dem Dropdown-Menü **[!UICONTROL + Hinzufügen]** aus. Im Dialogfeld **[!UICONTROL Benutzerdefinierte Kennzahl erstellen]**:
+      1. Wählen **[!UICONTROL aus]** Dropdown-Menü **[!UICONTROL Zu messendes Feld]** die Option „Bestellungen“ aus.
+      1. Wählen Sie **[!UICONTROL Summe]** aus **[!UICONTROL Dropdown-Menü Kennzahlentyp]** aus.
       1. Geben Sie einen benutzerdefinierten Feldnamen für „Name **[!UICONTROL ein]**. Beispiel: `Sum of Purchases`.
       1. Wählen Sie die **[!UICONTROL Felddetails]** aus.
-      1. Wählen Sie **[!UICONTROL Dezimalstellen]** aus dem Dropdown-Menü **[!UICONTROL Format]** und stellen Sie sicher, dass `0` in **[!UICONTROL Dezimalstellen]**.
+      1. Wählen Sie **[!UICONTROL Dezimalstellen]** aus dem Dropdown-Menü **[!UICONTROL Format]** aus und stellen Sie sicher, dass `0` in **[!UICONTROL Dezimalstellen]** eingegeben wird.
       1. Wählen Sie **[!UICONTROL Speichern]** aus.
    1. Beide Felder werden automatisch zur Datenansicht hinzugefügt.
 1. Wählen Sie **[!UICONTROL Abschnitt]** die Option **[!UICONTROL + Filter]** aus. Im Dialogfeld **[!UICONTROL Filter hinzufügen]**. Wählen Sie **[!UICONTROL ‣ Benutzerdefinierte Felder]** und dann **[!UICONTROL Kaufumsatz]**.
@@ -1487,7 +1487,7 @@ Alternativ können Sie die Funktion „Distinct Count“ von Power BI verwenden.
    1. Ziehen Sie **[!UICONTROL DateRangeDay]** und legen Sie neben **[!UICONTROL Spalten]** ab. Wählen Sie **[!UICONTROL DateRangeDay]** und wählen Sie im Dropdown-Menü **[!UICONTROL Day]** aus.
    1. Um die Visualisierungslinien einer Tabelle zu ändern, wählen Sie **[!UICONTROL Texttabelle]** unter **[!UICONTROL Anzeigen]** aus.
    1. Wählen Sie **[!UICONTROL Zeilen und Spalten austauschen]** in der Symbolleiste aus.
-   1. Wählen **[!UICONTROL Breite anpassen]** aus dem Dropdown-Menü **[!UICONTROL Anpassen]** aus.
+   1. Wählen **[!UICONTROL Breite anpassen]** aus dem Dropdown **[!UICONTROL Menü]** Anpassen“.
 
       Ihr Tableau-Desktop sollte wie folgt aussehen.
 
@@ -1499,7 +1499,7 @@ Alternativ können Sie die Funktion „Distinct Count“ von Power BI verwenden.
 
 1. Stellen Sie sicher, dass Sie die Ansicht **[!UICONTROL Karte]** ausgewählt haben.
 1. Wählen Sie **[!UICONTROL DAY(DateRangeDay)]** und wählen Sie im Dropdown-Menü **[!UICONTROL Month]**. Der Wert ändert sich in **[!UICONTROL MONTH(DateRangeDay)]**.
-1. Wählen Sie **[!UICONTROL SUM(CM Product Name Count Distinct)]** in **[!UICONTROL Marks]** und aus dem Dropdown-Menü **[!UICONTROL Format]** aus.
+1. Wählen Sie **[!UICONTROL SUM(CM Product Name Count Distinct)]** in **[!UICONTROL Marks]** und wählen Sie aus dem Dropdown-Menü **[!UICONTROL Format]**.
 1. Um die Schriftgröße zu ändern, wählen Sie im Bereich **[!UICONTROL Format SUM(CM Product Name Count Distinct)]** die Option **[!UICONTROL Font]** in **[!UICONTROL Default]** und wählen Sie **[!UICONTROL 72]** für die Schriftgröße aus.
 1. Um die Zahl auszurichten, wählen Sie **[!UICONTROL Automatisch]** neben **[!UICONTROL Ausrichtung]** und setzen **[!UICONTROL Horizontal]** auf Zentriert.
 1. Um ganze Zahlen zu verwenden, wählen Sie **[!UICONTROL 123.456]** neben **[!UICONTROL Zahlen]** und wählen Sie **[!UICONTROL Zahl (Benutzerdefiniert)]**. Legen Sie **[!UICONTROL Dezimalstellen]** auf `0` fest.
@@ -1640,7 +1640,7 @@ Beachten Sie, dass der in der Freiformtabellen-Visualisierung definierte Datumsb
    1. Ziehen Sie **[!UICONTROL Eintrag]** Vorfälle“ aus der Liste **[!UICONTROL Tabellen]** und legen Sie den Eintrag im Feld neben **[!UICONTROL Spalten]** ab. Der Wert ändert sich in **[!UICONTROL SUM(Occurrences)]**.
    1. Wählen Sie **[!UICONTROL Texttabelle]** unter **[!UICONTROL Anzeigen]** aus.
    1. Wählen Sie **[!UICONTROL Zeilen und Spalten austauschen]** in der Symbolleiste aus.
-   1. Wählen **[!UICONTROL Breite anpassen]** aus dem Dropdown-Menü **[!UICONTROL Anpassen]** aus.
+   1. Wählen **[!UICONTROL Breite anpassen]** aus dem Dropdown **[!UICONTROL Menü]** Anpassen“.
 
       Ihr Tableau-Desktop sollte wie folgt aussehen.
 
@@ -1799,7 +1799,7 @@ Es wird eine Visualisierung mit **[!UICONTROL Fehler beim Abrufen von Daten für
    1. Ziehen Sie **[!UICONTROL Produktname]** aus der Liste **[!UICONTROL Tabellen]** in **[!UICONTROL Zeilen]**.
    1. Ziehen Sie **[!UICONTROL Eintrag]** Vorfälle“ aus der Liste **[!UICONTROL Tabellen]** und legen Sie den Eintrag im Feld neben **[!UICONTROL Spalten]** ab. Der Wert ändert sich in **[!UICONTROL SUM(Occurrences)]**.
    1. Wählen Sie **[!UICONTROL Texttabelle]** unter **[!UICONTROL Anzeigen]** aus.
-   1. Wählen **[!UICONTROL Breite anpassen]** aus dem Dropdown-Menü **[!UICONTROL Anpassen]** aus.
+   1. Wählen **[!UICONTROL Breite anpassen]** aus dem Dropdown **[!UICONTROL Menü]** Anpassen“.
 
       Ihr Tableau-Desktop sollte wie folgt aussehen.
 
@@ -1969,7 +1969,7 @@ Es wird eine Visualisierung mit **[!UICONTROL Fehler beim Abrufen von Daten für
    1. Ziehen Sie **[!UICONTROL Produktname]** aus der Liste **[!UICONTROL Tabellen]** in **[!UICONTROL Zeilen]**.
    1. Ziehen Sie **[!UICONTROL Eintrag]** Vorfälle“ aus der Liste **[!UICONTROL Tabellen]** und legen Sie den Eintrag im Feld neben **[!UICONTROL Spalten]** ab. Der Wert ändert sich in **[!UICONTROL SUM(Occurrences)]**.
    1. Wählen Sie **[!UICONTROL Texttabelle]** unter **[!UICONTROL Anzeigen]** aus.
-   1. Wählen **[!UICONTROL Breite anpassen]** aus dem Dropdown-Menü **[!UICONTROL Anpassen]** aus.
+   1. Wählen **[!UICONTROL Breite anpassen]** aus dem Dropdown **[!UICONTROL Menü]** Anpassen“.
 
       Ihr Tableau-Desktop sollte wie folgt aussehen.
 
@@ -2015,7 +2015,7 @@ Es wird eine Visualisierung mit **[!UICONTROL Fehler beim Abrufen von Daten für
 
    ![Jupyter Notebook-Ergebnisse](assets/uc10-jupyter-input.png){zoomable="yes"}
 
-1. Wählen **[!UICONTROL Jagd]** aus dem Dropdown-Menü aus.
+1. Wählen **[!UICONTROL aus]** Dropdown-Menü „Jagd“ aus.
 
 1. Geben Sie die folgenden Anweisungen in eine neue Zelle ein.
 
@@ -2209,7 +2209,7 @@ limit 1000001
    1. Ziehen Sie **[!UICONTROL Eintrag]** Bestellungen“ aus der Liste **[!UICONTROL Tabellen]** und legen Sie ihn im Feld neben **[!UICONTROL Spalten]**. Der Wert ändert sich in **[!UICONTROL SUM(purchases)]**.
    1. Ziehen Sie **[!UICONTROL Kaufumsatz]**-Eintrag aus der Liste **[!UICONTROL Tabellen]** und legen Sie den Eintrag im Feld neben **[!UICONTROL Spalten]** neben **[!UICONTROL SUM(Bestellungen)]**. Der Wert ändert sich in **[!UICONTROL SUM(Purchase Revenue)]**.
    1. Wählen Sie **[!UICONTROL Texttabelle]** unter **[!UICONTROL Anzeigen]** aus.
-   1. Wählen **[!UICONTROL Breite anpassen]** aus dem Dropdown-Menü **[!UICONTROL Anpassen]** aus.
+   1. Wählen **[!UICONTROL Breite anpassen]** aus dem Dropdown **[!UICONTROL Menü]** Anpassen“.
    1. Wählen Sie die Spaltenüberschrift **[!UICONTROL Umsatz]** und sortieren Sie die Tabelle in dieser Spalte in absteigender Reihenfolge.
 
       Ihr Tableau-Desktop sollte wie folgt aussehen.
@@ -2242,11 +2242,11 @@ GROUP BY 1
 1. Im Abschnitt **[!UICONTROL ‣ Benutzerdefinierte Felder]** in der linken Leiste:
    1. Wählen Sie **[!UICONTROL Benutzerdefinierte Kennzahl]** aus dem Dropdown-Menü **[!UICONTROL + Hinzufügen]** aus.
    1. Im Dialogfeld **[!UICONTROL Benutzerdefinierte Kennzahl erstellen]**:
-      1. Wählen Sie **[!UICONTROL Dropdown]** Menü **[!UICONTROL Zu messendes Feld]** „Kaufumsatz“ aus.
-      1. Wählen Sie **[!UICONTROL Summe]** aus dem Dropdown-Menü **[!UICONTROL Kennzahlentyp]** aus.
+      1. Wählen **[!UICONTROL im Dropdown]** Menü **[!UICONTROL Feld zur Messung]** die Option „Kaufumsatz“ aus.
+      1. Wählen Sie **[!UICONTROL Summe]** aus **[!UICONTROL Dropdown-Menü Kennzahlentyp]** aus.
       1. Geben Sie einen benutzerdefinierten Feldnamen für „Name **[!UICONTROL ein]**. Beispiel: `Sum of Purchase Revenue`.
       1. Wählen Sie die **[!UICONTROL Felddetails]** aus.
-      1. Wählen Sie **[!UICONTROL Dezimalstellen]** aus dem Dropdown-Menü **[!UICONTROL Format]** und stellen Sie sicher, dass `0` in **[!UICONTROL Dezimalstellen]**.
+      1. Wählen Sie **[!UICONTROL Dezimalstellen]** aus dem Dropdown-Menü **[!UICONTROL Format]** aus und stellen Sie sicher, dass `0` in **[!UICONTROL Dezimalstellen]** eingegeben wird.
          ![Benutzerdefiniertes Metrikfeld für Looker](assets/uc5-looker-customfield.png){zoomable="yes"}
       1. Wählen Sie **[!UICONTROL Speichern]** aus.
 1. Wählen Sie **[!UICONTROL ↓]** (**[!UICONTROL absteigend, Sortierreihenfolge: 1]**) in der Spalte **[!UICONTROL Kaufumsatz]** aus.
@@ -2477,14 +2477,14 @@ limit 1000001
    1. Ziehen Sie **[!UICONTROL Produktname]** aus der Liste **[!UICONTROL Tabellen]** in **[!UICONTROL Zeilen]**.
    1. Ziehen Sie **[!UICONTROL Eintrag]** Vorfälle“ aus der Liste **[!UICONTROL Tabellen]** und legen Sie den Eintrag im Feld neben **[!UICONTROL Spalten]** ab. Der Wert ändert sich in **[!UICONTROL SUM(Occurrences)]**.
    1. Wählen Sie **[!UICONTROL Texttabelle]** unter **[!UICONTROL Anzeigen]** aus.
-   1. Wählen **[!UICONTROL Breite anpassen]** aus dem Dropdown-Menü **[!UICONTROL Anpassen]** aus.
+   1. Wählen **[!UICONTROL Breite anpassen]** aus dem Dropdown **[!UICONTROL Menü]** Anpassen“.
    1. Wählen Sie **[!UICONTROL Produktname]** in **[!UICONTROL Zeilen]** aus. Wählen **[!UICONTROL Filter]** aus dem Dropdown-Menü aus.
       1. Wählen **[!UICONTROL Dialogfeld \[Produktname\]]** die Registerkarte **[!UICONTROL Oben]** aus.
       1. Wählen Sie **[!UICONTROL Nach Feld:]** **[!UICONTROL Oben]** `5`**[!UICONTROL nach Vorfällen]****[!UICONTROL Summe]**.
       1. Wählen Sie **[!UICONTROL Übernehmen]** und **[!UICONTROL OK]** aus.
 
          ![AlertRed](/help/assets/icons/AlertRed.svg) Sie bemerken, dass die Tabelle verschwindet. Die Auswahl der fünf häufigsten Produktnamen nach Vorkommen funktioniert **nicht** mit diesem Filter ordnungsgemäß.
-      1. Wählen Sie den **[!UICONTROL Produktnamen]** in der **[!UICONTROL Filter]**-Bibliothek aus und klicken Sie im Dropdown-Menü auf **[!UICONTROL Entfernen]**. Die Tabelle wird erneut angezeigt.
+      1. Wählen Sie den **[!UICONTROL Produktnamen]** in der **[!UICONTROL Filter]**-Bibliothek und wählen Sie im Dropdown-Menü **[!UICONTROL Entfernen]**. Die Tabelle wird erneut angezeigt.
    1. Wählen Sie **[!UICONTROL SUM(Vorfälle)]** im **[!UICONTROL Marks]**-Regal aus. Wählen **[!UICONTROL Filter]** aus dem Dropdown-Menü aus.
       1. Wählen Sie im **[!UICONTROL Filter \[Vorfälle\]]** die Option **[!UICONTROL Mindestens]** aus.
       1. Geben Sie `47.799` als Wert ein. Dieser Wert stellt sicher, dass nur die fünf wichtigsten Elemente in der Tabelle angezeigt werden. Wählen Sie **[!UICONTROL Übernehmen]** und **[!UICONTROL OK]** aus.
@@ -2720,7 +2720,7 @@ Die Customer Journey Analytics-Objekte sind in der Seitenleiste **[!UICONTROL Da
 
 **Dimensionen**
 Dimensionen aus Customer Journey Analytics werden durch den [!UICONTROL Komponentennamen] gekennzeichnet. Der [!UICONTROL Komponentenname] wird in Ihrer Customer Journey Analytics-Datenansicht definiert. Beispielsweise verfügt die Dimension **[!UICONTROL Produktname]** in Customer Journey Analytics über einen [!UICONTROL Komponentennamen] **[!UICONTROL Produktnamen]**, der der Name für die Dimension in Tableau ist. Alle Dimensionen werden durch **[!UICONTROL Abc]** gekennzeichnet.
-Datumsbereichsdimensionen aus Customer Journey Analytics wie **[!UICONTROL Tag]**, **[!UICONTROL Woche]**, **[!UICONTROL Monat]** und mehr sind verfügbar als **[!UICONTROL DateRangeDay]**, **[!UICONTROL DateRangeWeek]**, **[!UICONTROL DateRangeMonth]** und mehr. Wenn Sie eine Datumsbereichsdimension verwenden, müssen Sie im Dropdown-Menü eine entsprechende Definition von Datum oder Uhrzeit auswählen, die auf diese Datumsbereichsdimension angewendet werden soll. Beispiel: **[!UICONTROL Jahr]**, **[!UICONTROL Quartal]**, **[!UICONTROL Monat]**, **[!UICONTROL Tag]**.
+Datumsbereichsdimensionen aus Customer Journey Analytics wie **[!UICONTROL Tag]**, **[!UICONTROL Woche]**, **[!UICONTROL Monat]** und mehr sind verfügbar als **[!UICONTROL DateRangeDay]**, **[!UICONTROL DateRangeWeek]**, **[!UICONTROL DateRangeMonth]** und mehr. Wenn Sie eine Datumsbereichsdimension verwenden, müssen Sie eine entsprechende Definition von Datum oder Uhrzeit auswählen, die auf diese Datumsbereichsdimension aus dem Dropdown-Menü angewendet werden soll. Beispiel: **[!UICONTROL Jahr]**, **[!UICONTROL Quartal]**, **[!UICONTROL Monat]**, **[!UICONTROL Tag]**.
 
 **Metriken**
 Metriken aus Customer Journey Analytics werden durch den [!UICONTROL Komponentennamen“ ]. Der [!UICONTROL Komponentenname] wird in Ihrer Customer Journey Analytics-Datenansicht definiert. Beispielsweise verfügt die Metrik **[!UICONTROL Kaufumsatz]** in Customer Journey Analytics über einen [!UICONTROL Komponentennamen] **[!UICONTROL Kaufumsatz]**, der der Name für die Metrik in Tableau ist. Alle Metriken werden durch **[!UICONTROL #]** identifiziert. Wenn Sie eine Metrik in einer beliebigen Visualisierung verwenden, wird die Metrik in **[!UICONTROL Summe(*metrik*)]**.

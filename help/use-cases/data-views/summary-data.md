@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Use Cases
 role: Admin
 exl-id: 80139806-618a-46ff-b2c4-32d7bb85a526
-source-git-commit: 03e9fb37684f8796a18a76dc0a93c4e14e6e7640
+source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
 workflow-type: tm+mt
-source-wordcount: '5200'
+source-wordcount: '5202'
 ht-degree: 15%
 
 ---
@@ -313,7 +313,7 @@ So fügen Sie eine Feldergruppe mit den Feldern für Ihre Beispieldaten hinzu:
 1. Wählen Sie ![AddCircle](/help/assets/icons/AddCircle.svg) neben dem Schemanamen **[!UICONTROL Beispiel-Zusammenfassungsdatenschema]**. Ein **[!UICONTROL Feldeigenschaften]** Bedienfeld wird geöffnet, in dem Sie Details zu einem Feld hinzufügen können.
    1. Geben Sie einen **[!UICONTROL Feldnamen]** ein: `campaign_id`
    1. Geben Sie einen **[!UICONTROL Anzeigenamen]** ein: `campaign_id`
-   1. Wählen Sie einen **[!UICONTROL Typ]** aus der **[!UICONTROL Datentyp auswählen]** Dropdown-Liste: **[!UICONTROL Zeichenfolge]**
+   1. Wählen Sie einen **[!UICONTROL Typ]** aus dem **[!UICONTROL Datentyp auswählen]** Dropdown-Menü: **[!UICONTROL Zeichenfolge]**
    1. Stellen Sie sicher **[!UICONTROL dass]** Zuweisen zu **[!UICONTROL Feldergruppe]** ausgewählt ist, und wählen Sie **[!UICONTROL Beispielzusammenfassungsdaten]** aus dem Dropdown-Menü aus.
    1. Scrollen Sie nach unten zum unteren Rand und wählen Sie **[!UICONTROL Anwenden]** aus.
 1. Wiederholen Sie den vorherigen Schritt für die anderen Felder der Zusammenfassungsdaten. Die richtigen Werte finden Sie in der Tabelle unten.
@@ -362,7 +362,7 @@ So laden Sie Ihre Beispieldaten in diesen Datensatz hoch:
    1. Wählen **[!UICONTROL Launch]** im Bedienfeld **[!UICONTROL CSV zu XDM-Schema]**.
 1. Im Schritt **[!UICONTROL Datenflussdetails]** des Assistenten **[!UICONTROL Workflows]** > **[!UICONTROL CSV zu XDM-Schema]**:
    1. Wählen Sie **[!UICONTROL Vorhandener Datensatz]** für **[!UICONTROL Zieldatensatz]** aus.
-   1. Wählen Sie **[!UICONTROL Beispielzusammenfassungsdatensatz]** aus der Dropdown-Liste aus.
+   1. Wählen Sie **[!UICONTROL Beispiel-Zusammenfassungsdatensatz]** aus dem Dropdown-Menü aus.
    1. Klicken Sie auf **[!UICONTROL Weiter]**.
 1. Im Schritt **[!UICONTROL Daten auswählen]** des Assistenten **[!UICONTROL Workflows]** > **[!UICONTROL CSV zu XDM-Schema]**:
    1. Ziehen Sie Ihre Datei mit Zusammenfassungsdaten im CSV-Format per Drag-and-Drop auf **[!UICONTROL Dateien per Drag-and-Drop]**. Alternativ können Sie **[!UICONTROL Dateien auswählen]** verwenden, um Ihre Datei auszuwählen.
@@ -391,8 +391,8 @@ Um Ihre Beispieldaten in Customer Journey Analytics zu verwenden, erstellen Sie 
 1. Wählen Sie **[!UICONTROL Neue Verbindung erstellen]** aus.
 1. In **[!UICONTROL Verbindungen]** > **[!UICONTROL Nicht benannte Verbindung]**:
    1. Geben Sie einen **[!UICONTROL Verbindungsnamen]** ein, z. B. `Example Connection Using Summary Data`.
-   1. Wählen Sie aus der Dropdown-Liste Sandbox die Sandbox aus, die den von Ihnen erstellten Datensatz und die anderen Datensätze enthält, die Sie einbeziehen möchten.
-   1. Wählen Sie **[!UICONTROL weniger als 1 Million]** aus der Dropdown-Liste **[!UICONTROL Durchschnittliche Anzahl]** täglichen Ereignisse“ aus.
+   1. Wählen Sie aus dem Dropdown-Menü Sandbox die Sandbox aus, die den von Ihnen erstellten Datensatz und die anderen Datensätze enthält, die Sie einbeziehen möchten.
+   1. Wählen Sie **[!UICONTROL weniger als 1 Million]** aus **[!UICONTROL Dropdown-Menü Durchschnittliche Anzahl]** täglichen Ereignisse“ aus.
    1. Wählen Sie **[!UICONTROL Datensätze hinzufügen]** aus.
    1. Im Schritt **[!UICONTROL Auswählen von]**&quot; des Assistenten **[!UICONTROL Hinzufügen von]**&quot;:
       1. Suchen ![Suchen](/help/assets/icons/Search.svg) und wählen Sie **[!UICONTROL Beispielzusammenfassungsdatensatz]**, **[!UICONTROL Beispielereignisdatensatz]** und **[!UICONTROL Beispiel-Lookup-Datensatz]**.
@@ -483,7 +483,7 @@ Um sicherzustellen, dass Sie Berichte zu den richtigen Daten in Workspace erstel
          ![Trackingcode-Zusammenfassungsdaten](../assets/tracking-code-summary-data.png)
          1. Erweitern Sie ![ChevronDown](/help/assets/icons/ChevronDown.svg) **[!UICONTROL Summary Data Group]**.
          1. Aktivieren Sie **[!UICONTROL Gruppierung erstellen]**.
-         1. Wählen Sie **[!UICONTROL Kampagnenkennung]** aus der Dropdown-Liste **[!UICONTROL Dimension]** aus. Dieser Schritt stellt sicher, dass Ereignisdaten und Zusammenfassungsdaten für das Reporting ordnungsgemäß kombiniert werden.
+         1. Wählen Sie **[!UICONTROL Kampagnenkennung]** aus dem Dropdown-Menü {2 ]**Dimension} aus.**[!UICONTROL  Dieser Schritt stellt sicher, dass Ereignisdaten und Zusammenfassungsdaten für das Reporting ordnungsgemäß kombiniert werden.
          1. Sie können optional &quot;**[!UICONTROL in Berichten ausblenden“]**. [!UICONTROL In Berichten ausblenden] stellt sicher, dass die ausgewählte Dimension ([!UICONTROL Kampagnen-ID]) in Analysis Workspace und anderen Reporting-Tools von Customer Journey Analytics ausgeblendet ist. Wenn Sie diese Option aktiviert haben, können Sie die Option überprüfen:
             1. Wählen Sie die Dimension **[!UICONTROL Kampagnen]** ID) in der Liste **[!UICONTROL Dimensionen]** aus.
             1. Sie werden feststellen **[!UICONTROL dass „Komponente in Berichten ausblenden]** in **[!UICONTROL Komponenteneinstellungen]** jetzt automatisch aktiviert ist.
@@ -493,8 +493,8 @@ Um sicherzustellen, dass Sie Berichte zu den richtigen Daten in Workspace erstel
          ![Abgeleitetes Feld für den Kampagnennamen](../aa-data/../assets/summary-derived-field.png)
 
          1. Wählen Sie **[!UICONTROL campaign_id]** für **[!UICONTROL value]** aus.
-         1. Wählen Sie **[!UICONTROL Beispiel-Lookup-]**) aus dem **[!UICONTROL -Menü]** Lookup-Datensatz“.
-         1. Wählen Sie **[!UICONTROL tracking_code]** aus dem Dropdown-Menü **[!UICONTROL Übereinstimmungsschlüssel]** aus.
+         1. Wählen Sie **[!UICONTROL Beispiel-Lookup-]**) aus dem **[!UICONTROL Dropdown-Menü]** Lookup-Datensatz“.
+         1. Wählen Sie **[!UICONTROL tracking_code]** aus dem Dropdown **[!UICONTROL Menü]**&#x200B;Übereinstimmungsschlüssel“ aus.
          1. Wählen Sie **[!UICONTROL campaign_name]** aus dem Dropdown **[!UICONTROL Menü „Zurückzugebende Werte]** aus.
          1. Wählen Sie **[!UICONTROL Speichern]** aus.
 
@@ -506,27 +506,27 @@ Um sicherzustellen, dass Sie Berichte zu den richtigen Daten in Workspace erstel
 
          1. Erweitern Sie ![ChevronDown](/help/assets/icons/ChevronDown.svg) **[!UICONTROL Summary Data Group]**.
          1. Aktivieren Sie **[!UICONTROL Gruppierung erstellen]**.
-         1. Wählen Sie **[!UICONTROL Kampagnenname (abgeleitetes Suchfeld)]** der Dropdown-Liste **[!UICONTROL Dimension]** aus. Dadurch wird sichergestellt, dass der Kampagnenname (Lookup) aus dem Beispiel-Lookup-Datensatz sicher in Berichten verwendet werden kann (siehe [Workspace](#workspace)).
+         1. Wählen Sie **[!UICONTROL Kampagnenname (abgeleitetes Suchfeld)]** Dropdown-Menü {2 ]**Dimension} aus.**[!UICONTROL  Dadurch wird sichergestellt, dass der Kampagnenname (Lookup) aus dem Beispiel-Lookup-Datensatz sicher in Berichten verwendet werden kann (siehe [Workspace](#workspace)).
 
       1. Wählen Sie die **[!UICONTROL Umsatz]** aus der Liste **[!UICONTROL Metriken]** aus. Im Bedienfeld Komponente :
 
          ![Zusammenfassungsdaten zum Umsatz](../assets/revenue-summary-data.png)
          1. Entfalten Sie ![ChevronDown](/help/assets/icons/ChevronDown.svg) **[!UICONTROL Attribution]**.
-            1. Wählen Sie ![AttributeLastTouch](/help/assets/icons/AttributeLastTouch.svg) **[!UICONTROL Last Touch]** aus der Dropdown **[!UICONTROL Liste &quot;]**&quot; aus.
-            1. Wählen Sie **[!UICONTROL 30 Tag]** aus der **[!UICONTROL Lookback-Fenster]** Dropdown-Liste aus.
+            1. Wählen ![AttributeLastTouch](/help/assets/icons/AttributeLastTouch.svg) **[!UICONTROL Last Touch]** aus dem **[!UICONTROL Attributionsmodell]** Dropdown-Menü aus.
+            1. Wählen Sie **[!UICONTROL 30 Tag]** aus dem **[!UICONTROL Lookback-Fenster]** Dropdown-Menü aus.
          1. Entfalten ![ChevronDown](/help/assets/icons/ChevronDown.svg) **Format**.
-            1. Wählen Sie **[!UICONTROL Währung]** aus der **[!UICONTROL Format]** Dropdown-Liste aus.
-            1. Wählen Sie **[!UICONTROL 2]** aus der Dropdown-Liste **[!UICONTROL Dezimalstellen]** aus.
+            1. Wählen Sie **[!UICONTROL Währung]** aus dem Dropdown-Menü **[!UICONTROL Format]** aus.
+            1. Wählen Sie **[!UICONTROL 2]** aus dem Dropdown-Menü **[!UICONTROL Dezimalstellen]** aus.
 
       1. Wählen Sie die **[!UICONTROL Bestellungen]** aus der Liste **[!UICONTROL Metriken]** aus. Im Bedienfeld Komponente :
 
          ![Auftragszusammenfassungsdaten](../assets/orders-summary-data.png)
          1. Entfalten Sie ![ChevronDown](/help/assets/icons/ChevronDown.svg) **[!UICONTROL Attribution]**.
-            1. Wählen Sie ![AttributeLastTouch](/help/assets/icons/AttributeLastTouch.svg) **[!UICONTROL Last Touch]** aus der Dropdown **[!UICONTROL Liste &quot;]**&quot; aus.
-            1. Wählen Sie **[!UICONTROL 30 Tag]** aus der **[!UICONTROL Lookback-Fenster]** Dropdown-Liste aus.
+            1. Wählen ![AttributeLastTouch](/help/assets/icons/AttributeLastTouch.svg) **[!UICONTROL Last Touch]** aus dem **[!UICONTROL Attributionsmodell]** Dropdown-Menü aus.
+            1. Wählen Sie **[!UICONTROL 30 Tag]** aus dem **[!UICONTROL Lookback-Fenster]** Dropdown-Menü aus.
          1. Entfalten ![ChevronDown](/help/assets/icons/ChevronDown.svg) **[!UICONTROL Format]**.
-            1. Wählen Sie **[!UICONTROL Dezimal]** aus der Dropdown-Liste **[!UICONTROL Format]** aus.
-            1. Wählen Sie **[!UICONTROL ▲ Gut (grün]** aus der Dropdown-Liste **[!UICONTROL Aufwärts-Trend anzeigen als]** aus.
+            1. Wählen Sie **[!UICONTROL Dezimal]** aus dem **[!UICONTROL Format]** Dropdown-Menü aus.
+            1. Wählen Sie **[!UICONTROL ▲ Gut (grün]** aus dem Dropdown **[!UICONTROL Menü „Aufwärts-Trend anzeigen als]** aus.
 
       1. Wählen Sie **[!UICONTROL Speichern und fortfahren]** aus.
 

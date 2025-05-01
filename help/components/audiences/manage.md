@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie Zielgruppen in Customer Journey Analytics ver
 exl-id: 0cc50f64-40b5-4245-a9bb-a60fc90f507a
 feature: Audiences
 role: User
-source-git-commit: 65dcbf63d9e155cb7e04bf9a550151a37b8457e6
+source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
 workflow-type: tm+mt
 source-wordcount: '768'
-ht-degree: 79%
+ht-degree: 76%
 
 ---
 
@@ -80,7 +80,7 @@ Die folgenden Aktionen werden im Manager für geplante Projekte häufig ausgefü
 
 | Symbol | Aktion | Beschreibung |
 |:---:|---|---|
-| ![Bezeichnungen](/help/assets/icons/Labels.svg) | **[!UICONTROL Tag]** | Versehen Sie die ausgewählten Zielgruppen mit Tags. Wählen Sie im Dialogfeld **[!UICONTROL Tags aktualisieren: *Zielgruppenname *]**im Dropdown-Menü die Option „Tags“ aus oder geben Sie einen oder mehrere neue Tags ein. Wählen Sie zum Speichern**[!UICONTROL Speichern ]**aus. |
+| ![Bezeichnungen](/help/assets/icons/Labels.svg) | **[!UICONTROL Tag]** | Versehen Sie die ausgewählten Zielgruppen mit Tags. Wählen **[!UICONTROL im Dialogfeld Tags aktualisieren: *Zielgruppenname *]**die Option Tags aus dem Dropdown-Menü aus oder geben Sie einen oder mehrere neue Tags ein. Wählen Sie zum Speichern**[!UICONTROL Speichern ]**aus. |
 | ![Löschen](/help/assets/icons/Delete.svg) | **[!UICONTROL Löschen]** | Löschen Sie die ausgewählten Zielgruppen. |
 | ![Bearbeiten](/help/assets/icons/Edit.svg) | **[!UICONTROL Umbenennen]** | Benennen Sie die ausgewählte Zielgruppe um. Verwenden Sie das Dialogfeld **[!UICONTROL Umbenennen: *Zielgruppenname *]**, um die Zielgruppe umzubenennen, und wählen Sie zum Speichern**[!UICONTROL Speichern ]**aus. |
 

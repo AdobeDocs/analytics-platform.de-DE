@@ -5,10 +5,10 @@ feature: Analytics Dashboards
 role: User, Admin
 exl-id: 12531600-7e88-4d56-a2a5-e5b346f91937
 solution: Customer Journey Analytics
-source-git-commit: e0615e3b4b1a4f0cd675de4bf4bb84d73eab8b8c
+source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
 workflow-type: tm+mt
 source-wordcount: '2698'
-ht-degree: 96%
+ht-degree: 95%
 
 ---
 
@@ -203,7 +203,7 @@ Aufschlüsselungen verfeinern Ihre Analyse, indem sie die Metriken nach Dimensio
 
 ![Aufschlüsselungsansicht](assets/break_view.png)
 
-Jede der Kachel hinzugefügte Dimension wird in einer Dropdown-Liste in der Detailansicht der App angezeigt. Der ausführende Benutzer kann dann aus den in der Dropdown-Liste aufgelisteten Optionen eine Auwahl treffen.
+Jede der Kachel hinzugefügte Dimension wird in einem Dropdown-Menü in der Detailansicht der App angezeigt. Der ausführende Benutzer kann dann aus den im Dropdown-Menü aufgelisteten Optionen auswählen.
 
 ## Anpassen von Detailfolien {#customize-detail-slide}
 

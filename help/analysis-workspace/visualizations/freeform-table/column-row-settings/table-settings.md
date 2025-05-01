@@ -4,10 +4,10 @@ title: Zeileneinstellungen
 feature: Visualizations
 exl-id: a9438d83-498d-4b22-9e5e-c357bd3a2680
 role: User
-source-git-commit: b14bc43a0cdf4901c5df171a116943beb2124991
+source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
 workflow-type: tm+mt
 source-wordcount: '1046'
-ht-degree: 92%
+ht-degree: 89%
 
 ---
 
@@ -36,9 +36,9 @@ So ändern Sie die Anzahl der angezeigten Zeilen:
 
 1. Klicken Sie auf die Zahl neben **[!UICONTROL Zeilen]** oberhalb der ersten Spalte der Tabelle.
 
-   ![Freiformtabelle mit der Dropdown-Liste für die Anzahl der angezeigten Zeilen. „400 Zeilen“ ist ausgewählt.](assets/change-row-count.gif)
+   ![Freiformtabelle mit dem Dropdown-Menü von für die Anzahl der angezeigten Zeilen. „400 Zeilen“ ist ausgewählt.](assets/change-row-count.gif)
 
-1. Wählen Sie aus der Dropdown-Liste die Anzahl der Zeilen aus, die die Tabelle anzeigen soll.
+1. Wählen Sie aus dem Dropdown-Menü die Anzahl der Zeilen aus, die die Tabelle anzeigen soll.
 
 
 ## Kontextmenü

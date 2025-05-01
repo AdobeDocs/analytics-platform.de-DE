@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
 exl-id: c39ee568-97f6-4925-ae18-3d4a9dfdb6f5
-source-git-commit: e4e0c3cf2e865454837df6626c3b1b09f119f07f
-workflow-type: ht
+source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
+workflow-type: tm+mt
 source-wordcount: '376'
-ht-degree: 100%
+ht-degree: 89%
 
 ---
 
@@ -43,7 +43,7 @@ So erstellen Sie eine Gruppierung von Dimensionen:
 1. Wählen Sie eine Dimension aus.
 1. Wählen Sie ![ChevronDown](/help/assets/icons/ChevronDown.svg) **[!UICONTROL Zusammenfassungsdatengruppe]**.
 1. Aktivieren Sie **[!UICONTROL Gruppierung erstellen]**.
-1. Wählen Sie eine Dimension aus der Dropdown-Liste **[!UICONTROL Dimension]** aus, die Sie mit der ausgewählten Dimension aus dem ersten Schritt gruppieren möchten. Beachten Sie, dass in der Dropdown-Liste nur Dimensionen verfügbar sind, die Sie bereits zur Datenansicht hinzugefügt haben.
+1. Wählen Sie eine Dimension aus dem Dropdown-]****[!UICONTROL  Dimensionaus, die Sie mit der ausgewählten Dimension aus dem ersten Schritt gruppieren möchten. Beachten Sie, dass nur Dimensionen, die Sie bereits zur Datenansicht hinzugefügt haben, über das Dropdown-Menü verfügbar sind.
 1. Optional können Sie **[!UICONTROL In Berichten verbergen]** aktivieren, um die gruppierte Dimension in Berichten auszublenden. Die Aktivierung dieser Option ähnelt der separaten Konfiguration von **[!UICONTROL In Berichten verbergen]** für die gruppierte Dimension. Weitere Informationen finden Sie unter [Komponenteneinstellungen](overview.md).
 1. Um der Gruppierung optional zusätzliche Dimensionen hinzuzufügen, wählen Sie ![Add](/help/assets/icons/Add.svg) **[!UICONTROL Dimension zu Gruppe hinzufügen]**.<br/>Sie können bis zu neun Dimensionen hinzufügen, da eine Zusammenfassungsdatengruppe auf zehn Dimensionen begrenzt ist.
 

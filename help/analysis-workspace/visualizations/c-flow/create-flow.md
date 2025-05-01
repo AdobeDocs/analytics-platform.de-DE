@@ -4,10 +4,10 @@ title: Konfigurieren einer Flussvisualisierung
 feature: Visualizations
 exl-id: 7055cbc9-19b3-40f0-b8d4-52d241224827
 role: User
-source-git-commit: b14bc43a0cdf4901c5df171a116943beb2124991
+source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
 workflow-type: tm+mt
 source-wordcount: '1484'
-ht-degree: 87%
+ht-degree: 86%
 
 ---
 
@@ -39,7 +39,7 @@ Sie können den Beginn oder das Ende des Pfads konfigurieren, an dem Sie interes
 
    * Verwenden Sie das Dropdown-Menü, um Metriken oder Dimensionen auszuwählen.
    * Ziehen Sie Dimensionen oder Metriken per Drag-and-Drop aus dem linken Bedienfeld.
-   * Beginnen Sie mit der Eingabe des Namens einer Dimension oder Metrik und wählen Sie diese dann aus, wenn sie in der Dropdown-Liste angezeigt wird.
+   * Beginnen Sie mit der Eingabe des Namens einer Dimension oder Metrik und wählen Sie ihn aus, wenn er im Dropdown-Menü angezeigt wird.
 
    >[!IMPORTANT]
    >

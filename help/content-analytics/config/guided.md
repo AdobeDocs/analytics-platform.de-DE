@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin
 exl-id: 4aff664c-3cd9-4591-8122-6ebff10e4a76
-source-git-commit: 6d23203468032510446711ff5a874fd149531a9a
+source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
 workflow-type: tm+mt
 source-wordcount: '2580'
 ht-degree: 46%
@@ -291,7 +291,7 @@ In einer neuen Konfiguration müssen Sie definieren, ob Sie eine vorhandene Tags
   ![Vorhandenes Tag bei der Datenerfassung der Inhaltsanalyse](../assets/aca-configuration-datacollection-existingtag.png)
 
    1. Wählen Sie **[!UICONTROL Vorhandenes auswählen]**.
-   2. Wählen Sie eine vorhandene Eigenschaft aus dem Dropdown **[!UICONTROL Menü „Eigenschaft für]**&quot; aus. Sie können mit der Eingabe beginnen, um nach den verfügbaren Optionen zu suchen und diese zu beschränken. Sie können keine Tags-Eigenschaft auswählen, die bereits von einer anderen implementierten Content Analytics-Konfiguration verwendet wird.
+   2. Wählen Sie eine vorhandene Eigenschaft aus dem Dropdown **[!UICONTROL Menü „Eigenschaft]** Tags“ aus. Sie können mit der Eingabe beginnen, um nach den verfügbaren Optionen zu suchen und diese zu beschränken. Sie können keine Tags-Eigenschaft auswählen, die bereits von einer anderen implementierten Content Analytics-Konfiguration verwendet wird.
 
 
 * So erstellen Sie eine neue Tag-Eigenschaft:
