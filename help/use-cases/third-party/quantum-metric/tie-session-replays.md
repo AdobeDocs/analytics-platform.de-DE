@@ -7,9 +7,9 @@ feature: Use Cases
 hidefromtoc: true
 hide: true
 exl-id: fcc36457-4ce9-4c93-93e2-de03becfd5da
-source-git-commit: d48a6fc306a84eeeb189e1b272bfded7ed26ed70
+source-git-commit: a03505aeb56f99b28f50819765a496705876b89c
 workflow-type: tm+mt
-source-wordcount: '811'
+source-wordcount: '812'
 ht-degree: 2%
 
 ---
@@ -24,7 +24,7 @@ Bei diesen Schritten wird davon ausgegangen, dass Sie Tags in der Datenerfassung
 
 Weitere Informationen finden [ in der Dokumentation ](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/analytics/quantum-metric)Quantum Metric-Tag-Erweiterung“.
 
-## Schritt 1: Erstellen Sie ein Schemafeld für Quanten-Metrikdaten
+## Schritt 1: Erstellen Sie ein Schemafeld für die Quantum Metric-Sitzungs-ID
 
 Dieser Anwendungsfall erfordert ein dediziertes Schemafeld, an das Daten gesendet werden. Sie können dieses Feld an einer beliebigen Stelle in Ihrem Schema erstellen und nach Belieben benennen. Beispielwerte werden bereitgestellt, wenn Ihr Unternehmen keine Voreinstellung für Name oder Speicherort hat.
 
@@ -32,7 +32,7 @@ Dieser Anwendungsfall erfordert ein dediziertes Schemafeld, an das Daten gesende
 1. Navigieren Sie **[!UICONTROL Datenerfassung]** > **[!UICONTROL Schemata]**.
 1. Wählen Sie das gewünschte Schema aus der Liste aus.
 1. Wählen Sie das ![Feldsymbol hinzufügen](/help/assets/icons/AddCircle.svg) neben dem gewünschten Objekt aus. Beispiel: neben `Implementation Details`.
-1. Geben Sie rechts den gewünschten &quot;[!UICONTROL &quot; ]. Zum Beispiel `qmSessionId`.
+1. Geben Sie auf der rechten Seite den gewünschten [!UICONTROL Name] ein. Zum Beispiel `qmSessionId`.
 1. Geben Sie den gewünschten [!UICONTROL Anzeigenamen] ein. Zum Beispiel `Quantum Metric session ID`.
 1. Wählen Sie [!UICONTROL Typ] als **[!UICONTROL Zeichenfolge]**.
 1. Wählen Sie **[!UICONTROL Speichern]** aus.
