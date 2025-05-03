@@ -4,14 +4,34 @@ title: Konfigurieren einer Flussvisualisierung
 feature: Visualizations
 exl-id: 7055cbc9-19b3-40f0-b8d4-52d241224827
 role: User
-source-git-commit: 915c1ecff6dcbe42a6ed81c74f4ec5b4a24eaaa5
+source-git-commit: 2a2e158c0eb0f60591a92ed98572bbb6c344e3be
 workflow-type: tm+mt
-source-wordcount: '1525'
-ht-degree: 85%
+source-wordcount: '1684'
+ht-degree: 79%
 
 ---
 
 # Konfigurieren einer Flussvisualisierung {#configure-a-flow-visualization}
+
+>[!CONTEXTUALHELP]
+>id="workspace_flow_startswith"
+>title="Beginnt mit"
+>abstract="Dieses Feld kann nur beim ersten Build festgelegt werden. Um dieses Feld zu aktualisieren, wählen Sie **[!UICONTROL Zurücksetzen]** aus, um eine neue Flussvisualisierung zu erstellen."
+
+>[!CONTEXTUALHELP]
+>id="workspace_flow_contains"
+>title="Enthält"
+>abstract="Dieses Feld kann nur beim ersten Build festgelegt werden. Um dieses Feld zu aktualisieren, wählen Sie **[!UICONTROL Zurücksetzen]** aus, um eine neue Flussvisualisierung zu erstellen."
+
+>[!CONTEXTUALHELP]
+>id="workspace_flow_endswith"
+>title="Endet mit"
+>abstract="Dieses Feld kann nur beim ersten Build festgelegt werden. Um dieses Feld zu aktualisieren, wählen Sie **[!UICONTROL Zurücksetzen]** aus, um eine neue Flussvisualisierung zu erstellen."
+
+>[!CONTEXTUALHELP]
+>id="workspace_flow_pathingdimension"
+>title="Pfaddimension"
+>abstract="Wählen Sie eine Dimension aus, die als Pfad verwendet werden soll, der zu der ausgewählten Komponente hin- oder von ihr wegführt."
 
 >[!CONTEXTUALHELP]
 >id="workspace_flow_container"
@@ -25,8 +45,23 @@ ht-degree: 85%
 
 >[!CONTEXTUALHELP]
 >id="workspace_flow_include_repeats_default"
->title="Wiederholungen einschließen "
+>title="Wiederholungen einschließen"
 >abstract="Flussvisualisierungen basieren auf Instanzen einer Dimension. Mit dieser Einstellung haben Sie die Möglichkeit, wiederholte Instanzen ein- oder auszuschließen, z. B.: Seitenneuladungen."
+
+>[!CONTEXTUALHELP]
+>id="workspace_flow_limit_occurrence"
+>title="Begrenzung auf erstes/letztes Auftreten"
+>abstract="Die Ergebnisse sind auf Pfade beschränkt, wenn der erste/letzte Touchpoint ein Ein-/Austritt ist."
+
+>[!CONTEXTUALHELP]
+>id="workspace_flow_numberofcolumns"
+>title="Anzahl der Spalten"
+>abstract="Dieses Feld kann nur beim ersten Build festgelegt werden. Um dieses Feld zu aktualisieren, wählen Sie **[!UICONTROL Zurücksetzen]** aus, um eine neue Flussvisualisierung zu erstellen."
+
+>[!CONTEXTUALHELP]
+>id="workspace_flow_itemsexpandedpercolumn"
+>title="Erweiterte Elemente pro Spalte"
+>abstract="Dieses Feld kann nur beim ersten Build festgelegt werden. Um dieses Feld zu aktualisieren, wählen Sie **[!UICONTROL Zurücksetzen]** aus, um eine neue Flussvisualisierung zu erstellen."
 
 
 
