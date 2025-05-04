@@ -5,10 +5,10 @@ title: Verwalten von Datenquellen
 feature: Visualizations
 exl-id: f9e89bef-0e78-49c7-8b7b-1fefd709c0cd
 role: User
-source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
+source-git-commit: 8f9c03607130bdeaf6cb7a32d8dd465712a47ea5
 workflow-type: tm+mt
-source-wordcount: '416'
-ht-degree: 96%
+source-wordcount: '437'
+ht-degree: 92%
 
 ---
 
@@ -29,6 +29,15 @@ ht-degree: 96%
 >id="workspace_freeformtable_lockselection_showtable"
 >title="Tabelle anzeigen"
 >abstract="Wenn Sie **[!UICONTROL Tabelle anzeigen]** auswählen, wird eine neue Datenquelle für Ihre aktuelle Visualisierung generiert, die von der ursprünglichen Datenquelle getrennt ist."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="workspace_freeformtable_showtable"
+>title="Tabelle anzeigen"
+>abstract="Wählen Sie **[!UICONTROL Tabelle anzeigen]**, um eine neue Datenquelle für Ihre aktuelle Visualisierung zu generieren, die von der ursprünglichen Datenquelle getrennt ist."
 
 <!-- markdownlint-enable MD034 -->
 
