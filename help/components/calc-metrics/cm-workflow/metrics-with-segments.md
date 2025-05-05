@@ -90,7 +90,7 @@ Wiederholen Sie die obigen Schritte für die internationale Version Ihrer berech
 
 >[!BEGINSHADEBOX]
 
-Siehe ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Verwenden einer segmentierten berechneten Metrik als implementierungslose Metrik](https://video.tv.adobe.com/v/25407?quality=12&learn=on){target="_blank"} für ein Demovideo.
+Siehe ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Verwenden einer segmentierten berechneten Metrik als implementierungslose Metrik](https://video.tv.adobe.com/v/37931?quality=12&learn=on&captions=ger){target="_blank"} für ein Demovideo.
 
 {{videoaa}}
 
