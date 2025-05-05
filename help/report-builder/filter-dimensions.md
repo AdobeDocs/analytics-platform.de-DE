@@ -46,7 +46,7 @@ Um angewendete Filter anzuzeigen, bewegen Sie den Mauszeiger über eine Dimensio
 
 ## Filter und Sortierreihenfolge ändern
 
-Neben ![ Metrik, die zum Filtern ](/help/assets/icons/ArrowUp.svg) Sortieren des Datenblocks verwendet ](/help/assets/icons/ArrowDown.svg), wird ein „ArrowUp“ oder ![ArrowDown“ angezeigt. Die Pfeilrichtung gibt an, ob die Metrik in auf- oder absteigender Reihenfolge sortiert wird.
+Neben ![ Metrik, die zum Filtern ](/help/assets/icons/ArrowUp.svg) Sortieren des Datenblocks verwendet ![&#128279;](/help/assets/icons/ArrowDown.svg), wird ein „ArrowUp“ oder ArrowDown“ angezeigt. Die Pfeilrichtung gibt an, ob die Metrik in auf- oder absteigender Reihenfolge sortiert wird.
 
 Sortierreihenfolge ändern:
 

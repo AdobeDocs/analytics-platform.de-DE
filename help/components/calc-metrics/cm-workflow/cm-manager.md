@@ -12,7 +12,7 @@ ht-degree: 30%
 
 # Berechnete Metriken verwalten
 
-Sie können berechnete Metriken freigeben, filtern, taggen, genehmigen, umbenennen, kopieren, löschen, exportieren und berechnete Metriken über eine zentrale Verwaltungsoberfläche [!UICONTROL Berechnete ]&quot; als Favoriten markieren. So verwalten Sie berechnete Metriken:
+Sie können berechnete Metriken freigeben, filtern, taggen, genehmigen, umbenennen, kopieren, löschen, exportieren und berechnete Metriken über eine zentrale Verwaltungsoberfläche [!UICONTROL Berechnete &#x200B;]&quot; als Favoriten markieren. So verwalten Sie berechnete Metriken:
 
 
 * Wählen Sie **[!UICONTROL Hauptbenutzeroberfläche]** Komponenten“ und dann **[!UICONTROL Berechnete Metriken]** aus.

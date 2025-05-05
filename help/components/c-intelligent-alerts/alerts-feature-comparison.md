@@ -57,4 +57,4 @@ In Adobe Analytics sind die folgenden Optionen verfügbar:
 
 * Öffnen Sie ein Projekt in Analysis Workspace und wählen Sie **[!UICONTROL Komponenten]** > **[!UICONTROL Warnhinweis erstellen]** aus.
 
-* Öffnen Sie ein Projekt in Analysis Workspace und verwenden Sie dann den folgenden Tastaturbefehl: **[!UICONTROL *Strg *]**+**[!UICONTROL * Umschalt *]** + **[!UICONTROL *a *]**(Windows) oder**[!UICONTROL * cmd *]** + **[!UICONTROL *Umschalt *]**+**[!UICONTROL * a *]** (macOS).
+* Öffnen Sie ein Projekt in Analysis Workspace und verwenden Sie dann den folgenden Tastaturbefehl: **[!UICONTROL *Strg *]**+**[!UICONTROL * Umschalt *]** + **[!UICONTROL *a *]**(Windows) oder&#x200B;**[!UICONTROL * cmd *]** + **[!UICONTROL *Umschalt *]**+**[!UICONTROL * a *]** (macOS).

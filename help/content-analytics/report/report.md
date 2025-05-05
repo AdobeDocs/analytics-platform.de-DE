@@ -145,7 +145,7 @@ Ein Bedienfeld, das aus einer Freiformtabelle besteht, in der angegeben ist, wo 
    * **Wo werden die am häufigsten angezeigten Assets angezeigt?**
 Sie können jedes Asset nach Dimensionen aufschlüsseln, damit Sie besser verstehen können, wo dieses Bild angezeigt wird.
 
-     Im Beispiel [Freiformtabelle](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) (einschließlich [Miniaturen](#thumbnails) und [Vorschauen](#previews)) wird **[!UICONTROL Asset Perception ID]** anstelle von [!UICONTROL Asset ID] verwendet. Manchmal kann dasselbe Bild mit einer anderen Bild-URL auf Ihrer Site dupliziert werden. Mit [!UICONTROL  Attribut „Asset Perception ID] können diese Duplikate unter einer einzigen ID gruppiert werden.
+     Im Beispiel [Freiformtabelle](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) (einschließlich [Miniaturen](#thumbnails) und [Vorschauen](#previews)) wird **[!UICONTROL Asset Perception ID]** anstelle von [!UICONTROL Asset ID] verwendet. Manchmal kann dasselbe Bild mit einer anderen Bild-URL auf Ihrer Site dupliziert werden. Mit [!UICONTROL &#x200B; Attribut „Asset Perception ID] können diese Duplikate unter einer einzigen ID gruppiert werden.
 
      Da sich Assets auf einer Seite ändern können, werden die einzelnen Assets nach **[!UICONTROL Erlebnis-ID]** aufgeschlüsselt, um zu ermitteln, auf welcher Version der Seite das Asset angezeigt wurde. Sie können [!UICONTROL Erlebnis-ID] durch andere Dimensionen ersetzen, die Ihnen dabei helfen, den Speicherort eines Assets auf Ihrer Site zu verstehen. Beispiel: [!UICONTROL Seitenname], [!UICONTROL Seiten-URL] oder [!UICONTROL Site-Bereich].
 

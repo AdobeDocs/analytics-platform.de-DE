@@ -390,7 +390,7 @@ Wenn Sie das Ziel ausgewählt haben, müssen **[!UICONTROL nächsten Schritt]** 
 
 #### Planen des Datensatzexports
 
-Schließlich möchten Sie den Datensatzexport als Teil des Schritts „Planung ****. In diesem Schritt können Sie den Zeitplan definieren und festlegen, ob der Ausgabedatensatz-Export inkrementell erfolgen soll oder nicht. Weitere Informationen [ Sie unter „Planen ](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/export-datasets#scheduling) Datensatzexports“.
+Schließlich möchten Sie den Datensatzexport als Teil des Schritts „Planung **&#x200B;**. In diesem Schritt können Sie den Zeitplan definieren und festlegen, ob der Ausgabedatensatz-Export inkrementell erfolgen soll oder nicht. Weitere Informationen [ Sie unter „Planen ](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/export-datasets#scheduling) Datensatzexports“.
 
 
 #### Letzte Schritte

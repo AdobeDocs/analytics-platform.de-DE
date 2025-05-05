@@ -203,7 +203,7 @@ Die folgenden Voraussetzungen gelten speziell für das diagrammbasierte Stitchin
 
 - Der Ereignisdatensatz in Adobe Experience Platform, auf den Sie eine Zuordnung anwenden möchten, muss eine Spalte aufweisen, die einen Besucher in jeder Zeile identifiziert, die **persistente ID**. Beispielsweise eine Besucher-ID, die von einer Adobe Analytics AppMeasurement-Bibliothek generiert wurde, oder eine vom Experience Platform Identity Service generierte ECID.
 - Die persistente ID muss auch [als Identität definiert) ](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/ui/fields/identity) Schema sein.
-- Das Identitätsdiagramm aus Experience Platform Identity Service muss über einen Namespace verfügen (z. B. `Email` oder `Phone`), den Sie beim Zusammenfügen verwenden möchten, um die **vorübergehende ID** aufzulösen. Weitere Informationen finden Sie unter {](https://experienceleague.adobe.com/de/docs/experience-platform/identity/home)}Experience Platform Identity Service.[
+- Das Identitätsdiagramm aus Experience Platform Identity Service muss über einen Namespace verfügen (z. B. `Email` oder `Phone`), den Sie beim Zusammenfügen verwenden möchten, um die **vorübergehende ID** aufzulösen. Weitere Informationen finden Sie unter {[&#128279;](https://experienceleague.adobe.com/de/docs/experience-platform/identity/home)}Experience Platform Identity Service.
 
 >[!NOTE]
 >

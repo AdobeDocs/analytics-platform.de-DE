@@ -37,7 +37,7 @@ Im Folgenden finden Sie eine Liste der bekannten Einschränkungen in Analysis Wo
 
 * Berechnete Metriken können in bestimmten Visualisierungen nicht verwendet werden. Siehe [Visualisierungen](#visualizations).
 * Berechnete Metriken können nicht im Bereich [!UICONTROL Attribution] verwendet werden, da berechnete Metriken selbst separate Attributionsmodelle enthalten können.
-* Bestimmte Komponenten und Operatoren sind nicht verfügbar, wenn eine berechnete Metrik aus Workspace erstellt wird (im Gegensatz zu Komponenten [!UICONTROL  Segmente]). Beispiel: [!UICONTROL IP-Adresse].
+* Bestimmte Komponenten und Operatoren sind nicht verfügbar, wenn eine berechnete Metrik aus Workspace erstellt wird (im Gegensatz zu Komponenten [!UICONTROL &#x200B; Segmente]). Beispiel: [!UICONTROL IP-Adresse].
 
 ## Datumsbereiche
 

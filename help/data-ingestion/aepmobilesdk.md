@@ -85,7 +85,7 @@ Gehen Sie folgendermaßen vor, um das Schema einzurichten:
 
       Feldergruppen sind wiederverwendbare Sammlungen von Objekten und Attributen, mit denen Sie Ihr Schema einfach erweitern können.
 
-   1. Wählen Sie [!UICONTROL  Dialogfeld Feldergruppen hinzufügen ] Feldergruppe **[!UICONTROL AEP Mobile SDK ExperienceEvent]** aus der Liste aus.
+   1. Wählen Sie [!UICONTROL &#x200B; Dialogfeld Feldergruppen hinzufügen &#x200B;] Feldergruppe **[!UICONTROL AEP Mobile SDK ExperienceEvent]** aus der Liste aus.
 
       ![AEP Mobile Lifecycle Details-Feldergruppe](./assets/select-aepmobilesdk-experienceevent.png)
 
@@ -274,7 +274,7 @@ So erstellen und konfigurieren Sie die Adobe Experience Platform Mobile SDK-Erwe
 
    ![Erweiterungskonfiguration für AEP Mobile SDK](./assets/aepmobilesdk-extension-datastream.png)
 
-1. Geben Sie Ihre **[!UICONTROL Edge Network-Domain]** unter &quot;[!UICONTROL -Konfiguration“ ]. Verwenden Sie in der Regel `<organizationName>.data.adobedc.net`.
+1. Geben Sie Ihre **[!UICONTROL Edge Network-Domain]** unter &quot;[!UICONTROL -Konfiguration“ &#x200B;]. Verwenden Sie in der Regel `<organizationName>.data.adobedc.net`.
 
 1. Wählen Sie **[!UICONTROL Speichern]** aus.
 
@@ -411,7 +411,7 @@ So erhalten Sie Code-Anweisungen, in denen die Einrichtung Ihrer Mobile App und 
 
 2. Wählen Sie in der Liste der Umgebungen die richtige Install (![)-](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Box_18_N.svg) aus.
 
-   Wählen Sie [!UICONTROL  Dialogfeld „Mobile-]&quot; die entsprechende Plattform ([!UICONTROL iOS], [!UICONTROL Android]). Verwenden Sie dann die Schaltfläche ![Kopieren](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) neben jedem der relevanten Code-Snippets, die Sie zum Einrichten und Initialisieren Ihrer Mobile App verwenden möchten:
+   Wählen Sie [!UICONTROL &#x200B; Dialogfeld „Mobile-]&quot; die entsprechende Plattform ([!UICONTROL iOS], [!UICONTROL Android]). Verwenden Sie dann die Schaltfläche ![Kopieren](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) neben jedem der relevanten Code-Snippets, die Sie zum Einrichten und Initialisieren Ihrer Mobile App verwenden möchten:
 
    ![Umgebung](./assets/environment-mobile.png)
 

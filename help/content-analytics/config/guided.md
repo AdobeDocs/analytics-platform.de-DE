@@ -135,7 +135,7 @@ Ihre Konfiguration erfordert die Auswahl einer [Datenansicht](/help/data-views/d
    Sie können die folgenden Aktionen ausführen:
 
    * Um nach einer bestimmten Datenansicht zu suchen, verwenden Sie das Feld ![Suche](/help/assets/icons/Search.svg).
-   * Um die Liste der verfügbaren Datenansichten zu filtern, wählen Sie ![Filter anzeigen](/help/assets/icons/Filter.svg) aus. Sie können die Liste nach [!UICONTROL Verbindung], &quot;[!UICONTROL &quot; ] &quot;[!UICONTROL &quot; ].<br/>Verwenden Sie ![Ausblenden](/help/assets/icons/Filter.svg) **[!UICONTROL Ausblenden von]**, um den Segmentbereich auszublenden.
+   * Um die Liste der verfügbaren Datenansichten zu filtern, wählen Sie ![Filter anzeigen](/help/assets/icons/Filter.svg) aus. Sie können die Liste nach [!UICONTROL Verbindung], &quot;[!UICONTROL &quot; &#x200B;] &quot;[!UICONTROL &quot; &#x200B;].<br/>Verwenden Sie ![Ausblenden](/help/assets/icons/Filter.svg) **[!UICONTROL Ausblenden von]**, um den Segmentbereich auszublenden.
    * Um zu definieren, welche Spalten in der Tabelle angezeigt werden sollen, wählen Sie ![Spalteneinstellungen](/help/assets/icons/ColumnSetting.svg) aus. Wählen Sie aus, welche Spalten im Dialogfeld **[!UICONTROL Tabelle anpassen]** angezeigt werden sollen, und wählen Sie **[!UICONTROL Anwenden]** aus, um die Änderungen anzuwenden.
 
 1. Wählen Sie ![SelectBox](/help/assets/icons/SelectBox.svg) die Datenansicht aus, die Sie verwenden möchten.
@@ -219,7 +219,7 @@ So schließen Sie Erlebnisse in eine neue oder nicht implementierte Konfiguratio
 
 So bearbeiten Sie vorhandene Erlebnisse oder schließen neue Erlebnisse in eine implementierte Konfiguration ein:
 
-Erfassung und Definition der Content Analytics-Konfiguration für das Erlebnis](../assets/aca-configuration-experience-edit.png)![
+Erfassung und Definition der Content Analytics-Konfiguration für das Erlebnis![&#128279;](../assets/aca-configuration-experience-edit.png)
 
 * Schalten Sie **[!UICONTROL Erlebnisse einschließen]** um:
 
@@ -349,7 +349,7 @@ Nachdem Sie alle erforderlichen Details bereitgestellt haben, enthält eine Zusa
 Wenn Sie eine Konfiguration erstellen oder bearbeiten, haben Sie die folgenden Optionen:
 
 * **[!UICONTROL Verwerfen]**: Alle im Rahmen der Konfiguration vorgenommenen Änderungen werden verworfen.
-* **[!UICONTROL Für später speichern]**: Änderungen an einer Konfiguration werden gespeichert. Sie können die Konfiguration zu einem späteren Zeitpunkt erneut aufrufen, um weitere Änderungen vorzunehmen, oder die Konfiguration implementieren. Zum Speichern einer Konfiguration [!UICONTROL  nur ein Wert für ]Name“ erforderlich.
+* **[!UICONTROL Für später speichern]**: Änderungen an einer Konfiguration werden gespeichert. Sie können die Konfiguration zu einem späteren Zeitpunkt erneut aufrufen, um weitere Änderungen vorzunehmen, oder die Konfiguration implementieren. Zum Speichern einer Konfiguration [!UICONTROL &#x200B; nur ein Wert für &#x200B;]Name“ erforderlich.
 * **[!UICONTROL Implementieren]**: Einstellungen für oder Änderungen an einer Konfiguration werden gespeichert und implementiert. Alle als &quot;![&quot; markierten ](/help/assets/icons/Required.svg) müssen über geeignete Werte verfügen. Die Implementierung besteht aus Folgendem:
 
    * **[!UICONTROL Customer Journey Analytics-Konfiguration]**:

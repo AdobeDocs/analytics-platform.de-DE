@@ -54,7 +54,7 @@ Mit der Abfrageleiste können Sie die folgenden Komponenten konfigurieren:
 
 * **[!UICONTROL Ansicht]**: Wechseln Sie zwischen dieser Analyse und [Nettowachstum](net-growth.md).
 * **[!UICONTROL Ereignisse]**: Die Ereignisse, die gemessen werden sollen. Da diese Analyse benutzerbasiert ist, wird eine Person, die innerhalb des Zeitraums mit dem Ereignis interagiert, zur Gruppe der aktiven Benutzenden gezählt. Sie können ein Ereignis in eine Abfrage einbeziehen.
-* **[!UICONTROL Zählt als]**: Die Zählmethode, die auf die ausgewählten Ereignisse angewendet werden soll. Zu den Optionen gehören [!UICONTROL Anzahl der Benutzenden ] und [!UICONTROL Prozentualer Anteil der Benutzenden].
+* **[!UICONTROL Zählt als]**: Die Zählmethode, die auf die ausgewählten Ereignisse angewendet werden soll. Zu den Optionen gehören [!UICONTROL Anzahl der Benutzenden &#x200B;] und [!UICONTROL Prozentualer Anteil der Benutzenden].
 * **[!UICONTROL Segmente]**: Das Segment, nach dem Daten segmentiert werden sollen. Sie können ein Segment in eine Abfrage einbeziehen.
 
 ### Diagrammeinstellungen

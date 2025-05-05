@@ -82,7 +82,7 @@ Sie führen beispielsweise einen Tagesvergleich für die letzte Woche (bis zum 5
 
 ![Nicht abgestimmte Daten](assets/not-align-dates.png)
 
-Sie können in **[!UICONTROL Einstellungen“ für die Freiformtabellen-Visualisierung die Option „Datum [ jeder Spalte so ausrichten]** dass alle Spalten in derselben Zeile beginnen, aktivieren](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md#settings-1) um Spaltendaten so auszurichten, dass sie in derselben Zeile beginnen.
+Sie können in **[[!UICONTROL Einstellungen“ für die Freiformtabellen-Visualisierung die Option „Datum [ jeder Spalte so ausrichten]** dass alle Spalten in derselben Zeile beginnen, aktivieren]](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md#settings-1) um Spaltendaten so auszurichten, dass sie in derselben Zeile beginnen.
 
 ![](assets/align-dates.png)
 

@@ -28,9 +28,9 @@ Diese erforderlichen Standardkomponenten werden standardmäßig jeder Datendatei
 | --- | --- | --- |
 | [!UICONTROL Personen] | Metrik | Basiert auf der Personen-ID, die in einer [!UICONTROL Verbindung] angegeben ist. |
 | [!UICONTROL Konten] | Metrik | Basiert auf der Konto-ID, die in einer [!UICONTROL Verbindung] angegeben ist. |
-| [!UICONTROL Globale Konten] | Metrik | Basiert auf der globalen Konto-ID, die in der [!UICONTROL Verbindung“ angegeben ]. |
-| [!UICONTROL Opportunity] | Metrik | Die Opportunitys, basierend auf der in der (Verbindung[!UICONTROL  angegebenen Opportunity]. |
-| [!UICONTROL Einkaufsgruppe] | Metrik | Die Einkaufsgruppen, basierend auf der im Abschnitt „Verbindung[!UICONTROL  angegebenen Einkaufsgruppen]. |
+| [!UICONTROL Globale Konten] | Metrik | Basiert auf der globalen Konto-ID, die in der [!UICONTROL Verbindung“ angegeben &#x200B;]. |
+| [!UICONTROL Opportunity] | Metrik | Die Opportunitys, basierend auf der in der (Verbindung[!UICONTROL &#x200B; angegebenen Opportunity]. |
+| [!UICONTROL Einkaufsgruppe] | Metrik | Die Einkaufsgruppen, basierend auf der im Abschnitt „Verbindung[!UICONTROL &#x200B; angegebenen Einkaufsgruppen]. |
 | [!UICONTROL Sitzungen] | Metrik | Basiert auf den Sitzungseinstellungen der Datenansicht. |
 | [!UICONTROL Ereignisse] | Metrik | Die Anzahl der Zeilen aus allen Ereignisdatensätzen in einer [!UICONTROL Verbindung]. |
 | [!UICONTROL Sekunden] | Dimension | Die Sekunde, in der ein bestimmtes Ereignis aufgetreten ist (abgerundet). Das erste Dimensionselement ist die erste Sekunde im Datumsbereich und das letzte Dimensionselement die letzte Sekunde im Datumsbereich.  |
@@ -60,7 +60,7 @@ Optionale Standardkomponenten sind unter **[!UICONTROL Datenansichten]** > **[!U
 | [!UICONTROL Wochentag] | Zeitunterteilungsdimension | Montag, Dienstag, Mittwoch, Donnerstag, Freitag, Samstag, Sonntag |
 | [!UICONTROL Tag des Jahres] | Zeitunterteilungsdimension | 1–366 |
 | [!UICONTROL Stunde des Tages] | Zeitunterteilungsdimension | 0–23 |
-| [!UICONTROL  Monat des Jahres] | Zeitunterteilungsdimension | Januar–Dezember |
+| [!UICONTROL &#x200B; Monat des Jahres] | Zeitunterteilungsdimension | Januar–Dezember |
 | [!UICONTROL Erstmalige Sitzungen] | Metrik | Die definierte erste Sitzung einer Person im Reporting-Zeitraum. [Weitere Informationen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html?lang=de#new-repeat) |
 | [!UICONTROL Rückkehrende Sitzungen] | Metrik | Die Anzahl der Sitzungen, die nicht die erste Sitzung einer Person waren. [Weitere Informationen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html?lang=de#new-repeat) |
 | [!UICONTROL Personen-ID] | Dimension | Für jedes in Experience Platform definierte Datensatzschema kann ein eigener Satz von einer oder mehreren Identitäten definiert und mit einem Identity-Namespace verknüpft werden. Jede dieser Identitäten kann als Personen-ID verwendet werden. Beispiele sind Cookie-ID, zugeordnete ID, Benutzer-ID und Trackingcode. Die Dimension [!UICONTROL Personen-ID] ist die Grundlage für die Kombination von Datensätzen und die Identifizierung von eindeutigen Personen in Customer Journey Analytics.<p>Mögliche Anwendungsfälle sind:<ul><li>Erstellen eines Segments für einen bestimmten Personen-ID-Wert, um alles nach dem Verhalten dieses Benutzers zu segmentieren.</li><li>Debugging: Prüfen, ob die Daten für eine bestimmte Cookie-ID (oder eine bestimmte Kunden-ID) vorhanden sind.</li><li>Identifizieren der Benutzer, die bei einem Callcenter angerufen haben.</li></ul> |

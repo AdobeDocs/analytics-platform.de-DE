@@ -43,7 +43,7 @@ So erstellen Sie eine Gruppierung von Dimensionen:
 1. Wählen Sie eine Dimension aus.
 1. Wählen Sie ![ChevronDown](/help/assets/icons/ChevronDown.svg) **[!UICONTROL Zusammenfassungsdatengruppe]**.
 1. Aktivieren Sie **[!UICONTROL Gruppierung erstellen]**.
-1. Wählen Sie eine Dimension aus dem Dropdown-]****[!UICONTROL  Dimensionaus, die Sie mit der ausgewählten Dimension aus dem ersten Schritt gruppieren möchten. Beachten Sie, dass nur Dimensionen, die Sie bereits zur Datenansicht hinzugefügt haben, über das Dropdown-Menü verfügbar sind.
+1. Wählen Sie eine Dimension aus dem Dropdown-**&#x200B;** Dimensionaus, die Sie mit der ausgewählten Dimension aus dem ersten Schritt gruppieren möchten. Beachten Sie, dass nur Dimensionen, die Sie bereits zur Datenansicht hinzugefügt haben, über das Dropdown-Menü verfügbar sind.
 1. Optional können Sie **[!UICONTROL In Berichten verbergen]** aktivieren, um die gruppierte Dimension in Berichten auszublenden. Die Aktivierung dieser Option ähnelt der separaten Konfiguration von **[!UICONTROL In Berichten verbergen]** für die gruppierte Dimension. Weitere Informationen finden Sie unter [Komponenteneinstellungen](overview.md).
 1. Um der Gruppierung optional zusätzliche Dimensionen hinzuzufügen, wählen Sie ![Add](/help/assets/icons/Add.svg) **[!UICONTROL Dimension zu Gruppe hinzufügen]**.<br/>Sie können bis zu neun Dimensionen hinzufügen, da eine Zusammenfassungsdatengruppe auf zehn Dimensionen begrenzt ist.
 

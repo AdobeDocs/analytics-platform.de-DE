@@ -88,11 +88,11 @@ Informationen zum Verwalten vorhandener Speicherorte, einschließlich Anzeigen, 
 
    1. Öffnen Sie den [Microsoft Azure Storage Explorer](https://azure.microsoft.com/en-us/products/storage/storage-explorer/).
 
-   1. Navigieren Sie [!UICONTROL **Speicherkonten**] > [!UICONTROL **(angehängte Container)**] > [!UICONTROL **Blob-Container**] > **[!UICONTROL cjaexport-_number_]**>*** your_container_name ***.
+   1. Navigieren Sie [!UICONTROL **Speicherkonten**] > [!UICONTROL **(angehängte Container)**] > [!UICONTROL **Blob-Container**] > **[!UICONTROL cjaexport-_number_]**>*** your_container_name &#x200B;***.
 
       >[!NOTE]
       >
-      >Der Ordnername **[!UICONTROL cjaexport-_number_]**ist der Standardname, der vom Azure Storage Explorer bereitgestellt wird. Wenn Ihrem SAS-URI nur eine einzige Verbindung zugeordnet ist (was normal ist), lautet der Name dieses Ordners **[!UICONTROL cjaexport-1]**.
+      >Der Ordnername **[!UICONTROL cjaexport-_number_]**&#x200B;ist der Standardname, der vom Azure Storage Explorer bereitgestellt wird. Wenn Ihrem SAS-URI nur eine einzige Verbindung zugeordnet ist (was normal ist), lautet der Name dieses Ordners **[!UICONTROL cjaexport-1]**.
 
 
       ![Zugreifen auf Dateien im Azure-Speicher-Explorer](assets/azure-storage-explorer-access.png)

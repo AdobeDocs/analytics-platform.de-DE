@@ -34,13 +34,13 @@ Der Algorithmus testet die Tauglichkeit jeder dieser Kombinationen, indem er die
 Nach Auswahl des Modells passt der Algorithmus die Ergebnisse basierend auf Feiertagen und jährlicher Saisonalität an. Für Feiertage überprüft der Algorithmus, ob einer der folgenden Feiertage im Datumsbereich des Berichts vorhanden ist:
 
 * Memorial Day (nur USA)
-* 4. Juli
+* &#x200B;4. Juli
 * Thanksgiving (nur USA)
 * Black Friday (nur USA)
 * Cyber Monday (nur USA)
 * 24.–26. Dezember
-* 1. Januar
-* 31. Dezember
+* &#x200B;1. Januar
+* &#x200B;31. Dezember
 
 Diese Feiertage wurden anhand umfangreicher statistischer Analysen einer großen Anzahl von Datenpunkten ausgewählt, um die Feiertage zu ermitteln, die den größten Einfluss in den meisten Kunden-Trends gezeigt haben. Die Liste ist zwar nicht für alle Kunden oder Geschäftszyklen vollständig, wir haben jedoch festgestellt, dass eine Berücksichtigung dieser Feiertage die Zuverlässigkeit des Algorithmus insgesamt für fast alle Kundendatensätze stark verbessert hat.
 

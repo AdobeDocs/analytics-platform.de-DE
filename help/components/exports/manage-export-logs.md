@@ -126,7 +126,7 @@ So konfigurieren Sie Spalten auf der Registerkarte [!UICONTROL Protokolle]:
    | Größe | Die Größe des Exports.<p>Die Dateigröße wird mit einem Basiswert von 1024 berechnet, der manchmal als KIB und MIB dargestellt wird. Wenn Ihr Cloud-Anbieter die Größe mit einer Basis von 1.000 berechnet, kann dies dazu führen, dass die in Ihrem Cloud-Anbieter angezeigte Größe geringfügig von der hier angezeigten Größe abweicht.</p> |
    | Standort | Der Speicherort des Kontos, in das die Daten exportiert wurden. |
    | Konto | Das Konto, in das die Daten exportiert wurden. |
-   | Status | Der Status des Exports Verfügbare Status [!UICONTROL  &quot;]&quot;, [!UICONTROL Zugestellt] und [!UICONTROL Fehlgeschlagen]. |
+   | Status | Der Status des Exports Verfügbare Status [!UICONTROL &#x200B; &quot;]&quot;, [!UICONTROL Zugestellt] und [!UICONTROL Fehlgeschlagen]. |
    | Gesendet am | Das Datum, an dem der Export stattfand. |
    | Kontotyp | Der Typ des Cloud-Kontos, in das die Daten exportiert wurden. Verfügbare Kontotypen sind [!UICONTROL Amazon S3 Role ARN], [!UICONTROL Google Cloud Platform], [!UICONTROL Azure SAS], [!UICONTROL Azure RBAC], [!UICONTROL Snowflake] und [!UICONTROL Adobe Experience Platform]. |
    | Anzahl Zeilen | Die Anzahl der in der exportierten Tabelle enthaltenen Zeilen. |

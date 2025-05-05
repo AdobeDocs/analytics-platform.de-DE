@@ -483,7 +483,7 @@ Um sicherzustellen, dass Sie Berichte zu den richtigen Daten in Workspace erstel
          ![Trackingcode-Zusammenfassungsdaten](../assets/tracking-code-summary-data.png)
          1. Erweitern Sie ![ChevronDown](/help/assets/icons/ChevronDown.svg) **[!UICONTROL Summary Data Group]**.
          1. Aktivieren Sie **[!UICONTROL Gruppierung erstellen]**.
-         1. Wählen Sie **[!UICONTROL Kampagnenkennung]** aus dem Dropdown-Menü {2 ]**Dimension} aus.**[!UICONTROL  Dieser Schritt stellt sicher, dass Ereignisdaten und Zusammenfassungsdaten für das Reporting ordnungsgemäß kombiniert werden.
+         1. Wählen Sie **[!UICONTROL Kampagnenkennung]** aus dem Dropdown-Menü {2 **Dimension} aus.** Dieser Schritt stellt sicher, dass Ereignisdaten und Zusammenfassungsdaten für das Reporting ordnungsgemäß kombiniert werden.
          1. Sie können optional &quot;**[!UICONTROL in Berichten ausblenden“]**. [!UICONTROL In Berichten ausblenden] stellt sicher, dass die ausgewählte Dimension ([!UICONTROL Kampagnen-ID]) in Analysis Workspace und anderen Reporting-Tools von Customer Journey Analytics ausgeblendet ist. Wenn Sie diese Option aktiviert haben, können Sie die Option überprüfen:
             1. Wählen Sie die Dimension **[!UICONTROL Kampagnen]** ID) in der Liste **[!UICONTROL Dimensionen]** aus.
             1. Sie werden feststellen **[!UICONTROL dass „Komponente in Berichten ausblenden]** in **[!UICONTROL Komponenteneinstellungen]** jetzt automatisch aktiviert ist.
@@ -506,7 +506,7 @@ Um sicherzustellen, dass Sie Berichte zu den richtigen Daten in Workspace erstel
 
          1. Erweitern Sie ![ChevronDown](/help/assets/icons/ChevronDown.svg) **[!UICONTROL Summary Data Group]**.
          1. Aktivieren Sie **[!UICONTROL Gruppierung erstellen]**.
-         1. Wählen Sie **[!UICONTROL Kampagnenname (abgeleitetes Suchfeld)]** Dropdown-Menü {2 ]**Dimension} aus.**[!UICONTROL  Dadurch wird sichergestellt, dass der Kampagnenname (Lookup) aus dem Beispiel-Lookup-Datensatz sicher in Berichten verwendet werden kann (siehe [Workspace](#workspace)).
+         1. Wählen Sie **[!UICONTROL Kampagnenname (abgeleitetes Suchfeld)]** Dropdown-Menü {2 **Dimension} aus.** Dadurch wird sichergestellt, dass der Kampagnenname (Lookup) aus dem Beispiel-Lookup-Datensatz sicher in Berichten verwendet werden kann (siehe [Workspace](#workspace)).
 
       1. Wählen Sie die **[!UICONTROL Umsatz]** aus der Liste **[!UICONTROL Metriken]** aus. Im Bedienfeld Komponente :
 

@@ -128,27 +128,27 @@ So greifen Sie auf alle verfügbaren vorkonfigurierten Vorlagen zu:
 
    Die folgenden Abschnitte entsprechen den verfügbaren Kategorien und enthalten Informationen zu den einzelnen Vorlagen.
 
-   * [ ](#most-popular)
+   * [&#128279;](#most-popular)
 
-   * [ ](#engagement)
+   * [&#128279;](#engagement)
 
-   * [ ](#web-conversion)
+   * [&#128279;](#web-conversion)
 
-   * [ ](#web-audience)
+   * [&#128279;](#web-audience)
 
-   * [ ](#web-acquisition)
+   * [&#128279;](#web-acquisition)
 
-   * [ ](#mobile-mobile-app)
+   * [&#128279;](#mobile-mobile-app)
 
-   * [ ](#mobile-mobile-device-information)
+   * [&#128279;](#mobile-mobile-device-information)
 
-   * [ ](#time-parting)
+   * [&#128279;](#time-parting)
 
-   * [ ](#cross-channel)
+   * [&#128279;](#cross-channel)
 
-   * [ ](#other-channels)
+   * [&#128279;](#other-channels)
 
-   * [ ](#ajo)
+   * [&#128279;](#ajo)
 
 ### Am beliebtesten {#most-popular}
 

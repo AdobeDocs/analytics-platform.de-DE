@@ -77,7 +77,7 @@ Sie haben folgende Möglichkeiten:
 
 ## Datenansicht
 
-Jedes Bedienfeld ist mit einer [Datenansicht](/help/data-views/data-views.md) verknüpft, die durch ![Daten](/help/assets/icons/Data.svg) **[!UICONTROL *Name der Datenansicht *]**im Dropdown-Menü oben rechts im Bedienfeld identifiziert wird.
+Jedes Bedienfeld ist mit einer [Datenansicht](/help/data-views/data-views.md) verknüpft, die durch ![Daten](/help/assets/icons/Data.svg) **[!UICONTROL *Name der Datenansicht *]**&#x200B;im Dropdown-Menü oben rechts im Bedienfeld identifiziert wird.
 
 Wenn Sie ein leeres Workspace-Projekt erstellen, ist die Standarddatenansicht für das erste Panel die Datenansicht, an der Sie zuletzt in Customer Journey Analytics gearbeitet haben.
 

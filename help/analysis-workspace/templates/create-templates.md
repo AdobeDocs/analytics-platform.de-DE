@@ -57,7 +57,7 @@ Weitere Informationen dazu, wie Benutzerinnen und Benutzer ein Projekt basierend
 
 Admins können Unternehmensvorlagen bearbeiten oder löschen.
 
-1. Wählen Sie in Analysis Workspace die Registerkarte [!UICONTROL **Arbeitsbereich**] und dann unter **[!UICONTROL Vorlagen]** in der linken Leiste **[!UICONTROL _Name_des_Anmeldeunternehmens _-Vorlagen]**aus.
+1. Wählen Sie in Analysis Workspace die Registerkarte [!UICONTROL **Arbeitsbereich**] und dann unter **[!UICONTROL Vorlagen]** in der linken Leiste **[!UICONTROL _Name_des_Anmeldeunternehmens _-Vorlagen]**&#x200B;aus.
 
 1. Bei Anzeige der Vorlagen in einer Spaltenansicht ![Spaltenansichtssymbol](assets/column-view-icon.png):
 

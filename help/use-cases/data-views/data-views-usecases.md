@@ -60,7 +60,7 @@ Zuvor wurden in Customer Journey Analytics Ganzzahlen automatisch als Metriken b
 
 ## Verwenden numerischer Dimensionen als Metriken in Flussdiagrammen {#numeric}
 
-Sie können eine numerische Dimension verwenden, um Metriken in Ihre [!UICONTROL  Flow]-Visualisierung zu übertragen.
+Sie können eine numerische Dimension verwenden, um Metriken in Ihre [!UICONTROL &#x200B; Flow]-Visualisierung zu übertragen.
 
 1. Ziehen Sie auf der Registerkarte [Komponenten](https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-dataviews/create-dataview) der Datenansichten das Schemafeld [!UICONTROL Marketing-Kanäle] in den Bereich [!UICONTROL Metriken] unter [!UICONTROL Eingeschlossene Komponenten].
 2. In Arbeitsbereich-Berichten zeigt dieser Fluss [!UICONTROL Marketing-Kanäle], die in [!UICONTROL Bestellungen] fließen:
@@ -142,7 +142,7 @@ Daten nach dem 1. Januar 1900 (mit Ausnahme des 1. Januar 1970) und Datums-/Uhrz
 
 ### Anwendungsfälle mit Datum und Datum/Uhrzeit
 
-* Datum: Ein Reiseunternehmen erfasst in seinen Daten das Abreisedatum für Reisen als Feld. Das Unternehmen möchte einen Bericht, der den [!UICONTROL Wochentag“ für alle ] vergleicht, um zu verstehen, welche am beliebtesten sind. Und das Unternehmen möchte dasselbe für den „Monat [!UICONTROL  Jahres“ ].
+* Datum: Ein Reiseunternehmen erfasst in seinen Daten das Abreisedatum für Reisen als Feld. Das Unternehmen möchte einen Bericht, der den [!UICONTROL Wochentag“ für alle &#x200B;] vergleicht, um zu verstehen, welche am beliebtesten sind. Und das Unternehmen möchte dasselbe für den „Monat [!UICONTROL &#x200B; Jahres“ &#x200B;].
 
 * Datum-Uhrzeit: Ein Einzelhandelsunternehmen erfasst die Uhrzeit für jeden seiner Einkäufe am Verkaufsort (POS) im Geschäft. Das Unternehmen möchte wissen, zu welchen Zeiten in einem bestimmten Monat am meisten eingekauft wird, und zwar nach [!UICONTROL Tageszeit].
 

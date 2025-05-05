@@ -15,7 +15,7 @@ ht-degree: 21%
 
 # Datenblöcke verwalten
 
-Sie können alle Datenblöcke in einer Arbeitsmappe mit dem [!UICONTROL Datenblock-Manager“ anzeigen und ]. Der [!UICONTROL Datenblock-Manager] bietet Such-, Filter- und Sortierfunktionen, mit denen Sie bestimmte Datenblöcke finden können. Nach Auswahl eines oder mehrerer Datenblöcke können Sie diese bearbeiten, löschen oder aktualisieren.
+Sie können alle Datenblöcke in einer Arbeitsmappe mit dem [!UICONTROL Datenblock-Manager“ anzeigen und &#x200B;]. Der [!UICONTROL Datenblock-Manager] bietet Such-, Filter- und Sortierfunktionen, mit denen Sie bestimmte Datenblöcke finden können. Nach Auswahl eines oder mehrerer Datenblöcke können Sie diese bearbeiten, löschen oder aktualisieren.
 
 ## Datenblöcke anzeigen
 
@@ -76,7 +76,7 @@ Löschen eines oder mehrerer Datenblöcke:
 
 1. Einen oder mehrere Datenblöcke auswählen.
 1. Wählen Sie ![Löschen](/help/assets/icons/Delete.svg) aus.
-1. Wählen Sie **[!UICONTROL Dialogfeld]** Datenblock löschen **** oder **[!UICONTROL Abbrechen]**, um den Löschvorgang abzubrechen.
+1. Wählen Sie **[!UICONTROL Dialogfeld]** Datenblock löschen **&#x200B;**&#x200B;oder **[!UICONTROL Abbrechen]**, um den Löschvorgang abzubrechen.
 
 ## Datenblöcke gruppieren
 

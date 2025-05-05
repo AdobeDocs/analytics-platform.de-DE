@@ -85,7 +85,7 @@ Gehen Sie folgendermaßen vor, um das Schema einzurichten:
 
       Feldergruppen sind wiederverwendbare Sammlungen von Objekten und Attributen, mit denen Sie Ihr Schema einfach erweitern können.
 
-   1. Wählen [!UICONTROL  Dialogfeld Feldergruppen hinzufügen ] die Feldergruppe **[!UICONTROL Blindlicht]** aus der Liste aus. Diese Feldergruppe wird erstellt, um den Benutzerfortschritt beim Spielen eines fiktiven Spiels mit dem Titel Blinding Light auf einer Konsole zu verfolgen.
+   1. Wählen [!UICONTROL &#x200B; Dialogfeld Feldergruppen hinzufügen &#x200B;] die Feldergruppe **[!UICONTROL Blindlicht]** aus der Liste aus. Diese Feldergruppe wird erstellt, um den Benutzerfortschritt beim Spielen eines fiktiven Spiels mit dem Titel Blinding Light auf einer Konsole zu verfolgen.
 
       ![Blindlicht-Feldgruppe](assets/schema-fieldgroup-blindinglight.png)
 
