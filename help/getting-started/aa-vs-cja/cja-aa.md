@@ -5,10 +5,10 @@ exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: Basics
 role: User
-source-git-commit: 8972a195554971006eb4315bdd216947d6cf79f3
+source-git-commit: 0ad3cd8ae88cc5fc5297a63067900b2f741778b1
 workflow-type: tm+mt
-source-wordcount: '2482'
-ht-degree: 93%
+source-wordcount: '2483'
+ht-degree: 92%
 
 ---
 
@@ -109,7 +109,7 @@ In der folgenden Tabelle sind Funktionen aufgeführt, die in Customer Journey An
 | **Verarbeitungsregeln, VISTA-Regeln, Verarbeitungsregeln für Marketing-Kanäle** | Wird über die Datenvorbereitungsfunktionen von Adobe Experience Platform und [abgeleitete Felder](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/derived-fields.html?lang=de) sowohl für Web SDK-basierte Datensätze als auch für Daten vom Analytics-Quell-Connector unterstützt. |
 | **Variable „products“** | In Experience Platform können Benutzende ein Array von Objekten in einem Datensatzschema verwenden, um diesen Anwendungsfall zu erfüllen. In Customer Journey Analytics können Kundinnen und Kunden eine beliebige Anzahl von Produktvariablen verwenden und sind nicht wie in Adobe Analytics auf eine einzelne Variable beschränkt. |
 | **Projektfreigabe** | Die Projektfreigabe wird nur zwischen Benutzenden von Customer Journey Analytics unterstützt. Es gibt keine Projektfreigabe zwischen Customer Journey Analytics und dem herkömmlichen Analysis Workspace. |
-| **Report Builder** | Unterstützt mit einem neuen Office 365-Plug-in für Excel. |
+| **Report Builder** | Unterstützt mit einem neuen Office 365-Plug-in für Microsoft Excel. |
 | **Benutzerberechtigungen/Datenzugriffssteuerung** | Customer Journey Analytics unterscheidet zwischen Produktadmins, Produktprofiladmins und Benutzenden von [Adobe Admin Console](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html?lang=de). Nur Produktadministrierende können von anderen Benutzenden erstellte Verbindungen, Projekte, Segmente oder berechnete Metriken erstellen/aktualisieren/löschen, während Produktadministrierende und Produktprofiladministrierende Datenansichten bearbeiten können. Zusätzliche Benutzerberechtigungen sind für Dinge wie das Erstellen von berechneten Metriken, Segmenten oder Anmerkungen verfügbar. |
 | **Visualisierungen** | Mit Ausnahme der Zuordnungsvisualisierung werden alle Workspace-Visualisierungen unterstützt. |
 | **Geräte-/kanalübergreifendes Stitching** | Wird für Ereignisdatensätze unterstützt, die Identitätsinformationen enthalten. Siehe [Zuordnung](../../stitching/overview.md). |
