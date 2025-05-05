@@ -46,4 +46,4 @@ So zeigen Sie das Inhaltsverzeichnis in einem Projekt an:
 
 >[!MORELIKETHIS]
 >
->* [Vereinfachen Sie die Dashboard-Navigation mit der neuen Inhaltsverzeichnisfunktion in Adobe Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/simplify-dashboard-navigation-with-the-new-table-of-contents/ba-p/731284)
+>* [Vereinfachen Sie die Dashboard-Navigation mit der neuen Inhaltsverzeichnisfunktion in Adobe Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/simplify-dashboard-navigation-with-the-new-table-of-contents/ba-p/731284?profile.language=de)

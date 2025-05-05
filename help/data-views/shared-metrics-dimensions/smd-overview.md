@@ -66,7 +66,7 @@ Alle freigegebenen Dimensionen und Metriken werden unter den vier Übersichtskar
    * **[!UICONTROL Beschreibung]**: Die [Beschreibung](/help/data-views/component-settings/overview.md) der Komponente.
    * **[!UICONTROL Kontextkennzeichnungen]**: Die [Kontextkennzeichnungen](/help/data-views/component-settings/overview.md) für die Komponente.
    * **[!UICONTROL Werte einschließen/ausschließen]**: Listet die Anzahl der Regeln auf, die unter &quot;[/ausschließen](/help/data-views/component-settings/include-exclude-values.md) angegeben sind.
-   * **[!UICONTROL Datennutzungsbezeichnungen]**: Die [Datennutzungsbezeichnungen](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/labels/overview) für das Schemafeld.
+   * **[!UICONTROL Datennutzungsbezeichnungen]**: Die [Datennutzungsbezeichnungen](https://experienceleague.adobe.com/de/docs/experience-platform/data-governance/labels/overview) für das Schemafeld.
    * **[!UICONTROL Veraltet]**: Gibt an, ob das veraltete Flag gesetzt ist.
    * **[!UICONTROL Format]**: Das Format, in dem Werte angezeigt werden. Boolesche Werte werden in der Regel als `True | False`, Metriken als `Decimal` usw. angezeigt.
    * **[!UICONTROL Metrik-Deduplizierung]**: Die [Metrik-Deduplizierung](/help/data-views/component-settings/metric-deduplication.md) der Komponente.

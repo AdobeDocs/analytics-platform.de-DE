@@ -39,4 +39,4 @@ In Übereinstimmung mit dem CCPA unterstützt Privacy Service Anfragen zur Abmel
 
 >[!MORELIKETHIS]
 >
->* [Blog: Wie man eine effektive Governance in Adobe Customer Journey Analytics aufrechterhält](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/bg-p/adobe-analytics-blogs/page/4)
+>* [Blog: Wie man eine effektive Governance in Adobe Customer Journey Analytics aufrechterhält](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/bg-p/adobe-analytics-blogs/page/4?profile.language=de)

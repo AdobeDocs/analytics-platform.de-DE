@@ -165,7 +165,7 @@ Ereignis-Container enthalten wertbasierte Aufschlüsselungen einzelner Seiten f�
 
 ### B2B-Container
 
-[!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}
+[!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}
 
 Wenn Sie Zugriff auf [Customer Journey Analytics B2B edition](/help/getting-started/cja-b2b-edition.md) haben, stehen zusätzliche Container zur Verwendung in Segmenten zur Verfügung. Weitere Informationen zur Verwendung dieser zusätzlichen Container finden Sie unter „B2B[Konzepte und -Funktionen](/help/getting-started/cja-b2b-concepts-features.md).
 

@@ -154,5 +154,5 @@ Stellen Sie sicher, dass die Komponenteneinstellungen für eine Zusammenfassungs
 >[!MORELIKETHIS]
 >
 >- Ein detailliertes Anwendungsfallbeispiel für das Verwenden und Melde von Zusammenfassungsdaten finden Sie im Artikel [Verwenden von Zusammenfassungsdaten](/help/use-cases/data-views/summary-data.md).
->- Blog: [Wie Zusammenfassungsdaten Adobe Customer Journey Analytics-Datensätze verbessern](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/how-summary-data-enhances-adobe-customer-journey-analytics/ba-p/704635)
+>- Blog: [Wie Zusammenfassungsdaten Adobe Customer Journey Analytics-Datensätze verbessern](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/how-summary-data-enhances-adobe-customer-journey-analytics/ba-p/704635?profile.language=de)
 

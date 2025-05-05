@@ -39,7 +39,7 @@ Verwenden Sie den folgenden Prozess, wenn Sie von einer Analyselösung eines Dri
 
    * Sie können keine Projekte und Komponenten aus einer Nicht-Adobe Analytics-Lösung migrieren.
 
-   * Abhängig von Ihrer Analyselösung kann ein Quell-Connector für die Aufnahme historischer Daten verfügbar sein. Weitere Informationen finden Sie unter [Analytics](https://experienceleague.adobe.com/en/docs/experience-platform/sources/home#analytics) in [Übersicht über Source-Connectoren](https://experienceleague.adobe.com/en/docs/experience-platform/sources/home) in der Dokumentation zu Experience Platform.
+   * Abhängig von Ihrer Analyselösung kann ein Quell-Connector für die Aufnahme historischer Daten verfügbar sein. Weitere Informationen finden Sie unter [Analytics](https://experienceleague.adobe.com/de/docs/experience-platform/sources/home#analytics) in [Übersicht über Source-Connectoren](https://experienceleague.adobe.com/de/docs/experience-platform/sources/home) in der Dokumentation zu Experience Platform.
 
 
 Wenden Sie sich an den Adobe-Support, wenn Sie konkretere Ratschläge, Anleitungen oder Unterstützung benötigen.

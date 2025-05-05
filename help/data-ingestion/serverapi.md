@@ -272,7 +272,7 @@ curl -X POST "https://server.adobedc.net/ee/v2/interact?dataStreamId={DATASTREAM
 
 In der Beispiel-POST-Anfrage verweist `{DATASTREAM_ID}` auf die Kennung des zuvor konfigurierten Beispiel-Datenstroms. `{sandbox}` ist der eindeutige Name Ihrer Sandbox, der den Pfad zur benutzerdefinierten Feldergruppe Blindlicht identifiziert.
 
-Weitere Informationen zur Verwendung [ Edge Network](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/data-collection/interactive-data-collection.html?lang=de)Server-API finden [ unter „Interaktive Datenerfassung](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/data-collection/non-interactive-data-collection.html) und „Nicht interaktive“.
+Weitere Informationen zur Verwendung [ Edge Network](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/data-collection/interactive-data-collection.html?lang=de)Server-API finden [ unter „Interaktive Datenerfassung](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/data-collection/non-interactive-data-collection.html?lang=de) und „Nicht interaktive“.
 
 ## Einrichten einer Verbindung
 

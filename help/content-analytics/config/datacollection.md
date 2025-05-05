@@ -36,7 +36,7 @@ Content Analytics erfordert, dass Experience Platform Edge Network Web SDK Inhal
 Die Content Analytics-Bibliothek erfasst Daten, wenn:
 
 * Content Analytics ist in der Tag-Bibliothek enthalten, die auf der Seite geladen wird.
-* Die Seiten-URL wird in der [Content Analytics-Erweiterung](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview){target="_blank"} konfiguriert, die Teil der enthaltenen Tag-Bibliothek ist.
+* Die Seiten-URL wird in der [Content Analytics-Erweiterung](https://experienceleague.adobe.com/de/docs/experience-platform/tags/extensions/client/content-analytics/overview){target="_blank"} konfiguriert, die Teil der enthaltenen Tag-Bibliothek ist.
 
 
 ## Content Analytics-Ereignis

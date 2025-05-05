@@ -28,7 +28,7 @@ CJA ermöglicht die Steuerung der QM-Daten zur Berichtszeit, die sequenzielle Da
 1. Navigieren Sie zu [!UICONTROL Experience Platform] > [!UICONTROL Verbindungen] > [!UICONTROL Quellen].
 1. Fügen Sie den Quantum Metric-Quell-Connector hinzu und befolgen Sie die Anweisungen bis zum Abschluss.
 
-Weitere Informationen finden Sie unter {[&#128279;](https://experienceleague.adobe.com/en/docs/experience-platform/sources/home)}Adobe Experience Platform-Quell-Connectoren.
+Weitere Informationen finden Sie unter {[&#128279;](https://experienceleague.adobe.com/de/docs/experience-platform/sources/home)}Adobe Experience Platform-Quell-Connectoren.
 
 ## Schritt 2: Erstellen einer Verbindung in Customer Journey Analytics
 
@@ -40,7 +40,7 @@ Beim Erstellen eines Quell-Connectors für Quantum-Metrikdaten wird automatisch 
 1. Klicken Sie auf **[!UICONTROL Speichern]**.
 
 >[!NOTE]
->Sie können Quantum Metric-Daten zwar derselben Verbindung wie die übrigen Customer Journey Analytics-Daten hinzufügen, diese Daten können jedoch ohne eine gemeinsame Personen-ID zwischen den beiden Datensätzen nicht zusammengeführt werden. Wenn dieses Verhalten erwünscht ist, empfiehlt Adobe, die [Tag-Erweiterung](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/analytics/quantum-metric) anstelle des Quell-Connectors zu verwenden.
+>Sie können Quantum Metric-Daten zwar derselben Verbindung wie die übrigen Customer Journey Analytics-Daten hinzufügen, diese Daten können jedoch ohne eine gemeinsame Personen-ID zwischen den beiden Datensätzen nicht zusammengeführt werden. Wenn dieses Verhalten erwünscht ist, empfiehlt Adobe, die [Tag-Erweiterung](https://experienceleague.adobe.com/de/docs/experience-platform/destinations/catalog/analytics/quantum-metric) anstelle des Quell-Connectors zu verwenden.
 
 ## Schritt 3: Erstellen einer Datenansicht in Customer Journey Analytics
 

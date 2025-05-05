@@ -27,7 +27,7 @@ ht-degree: 90%
 
 Durch Nutzung modernster Technologien beim überwachten maschinellen Lernen und beim Deep Learning ermöglicht es die personalisierte Optimierung Business-Anwendenden (Marketing-Fachleuten), Geschäftsziele zu definieren und mithilfe ihrer Kundendaten geschäftsorientierte Modelle zu trainieren, sodass sie personalisierte Angebote unterbreiten und KPIs maximieren können.
 
-1. Befolgen Sie die Informationen unter [Modell für personalisierte Optimierung](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/rankings/ai-models/personalized-optimization-model) im Journey Optimizer-Handbuch.
+1. Befolgen Sie die Informationen unter [Modell für personalisierte Optimierung](https://experienceleague.adobe.com/de/docs/journey-optimizer/using/decisioning/offer-decisioning/rankings/ai-models/personalized-optimization-model) im Journey Optimizer-Handbuch.
 
 {{upgrade-final-step}}
 

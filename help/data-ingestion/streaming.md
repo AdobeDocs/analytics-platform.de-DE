@@ -238,7 +238,7 @@ Gehen Sie folgendermaßen vor, um einen Quell-Connector für die HTTP-API zu ers
 
 Sie können die Streaming-Endpunkt-URL kopieren und sie zum Konfigurieren Ihrer Treueprogramm-Anwendung verwenden, um Daten in den Adobe Experience Platform-Treueprogramm-Datensatz zu streamen.
 
-In [Erstellen einer HTTP-API-Streaming-Verbindung über die Benutzeroberfläche](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/streaming/http.html) finden Sie ein umfassendes Tutorial, in dem Folgendes erklärt wird:
+In [Erstellen einer HTTP-API-Streaming-Verbindung über die Benutzeroberfläche](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/streaming/http.html?lang=de) finden Sie ein umfassendes Tutorial, in dem Folgendes erklärt wird:
 
 - Verwendung der Authentifizierung,
 - Zuordnen von Daten, wenn Ihre eingehenden Daten nicht mit Ihrem XDM-Schema kompatibel sind

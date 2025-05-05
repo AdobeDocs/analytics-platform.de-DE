@@ -440,4 +440,4 @@ Wenn Sie jedoch `product_finding_method` an die Metrik „Hinzufügen zum Warenk
 
 >[!MORELIKETHIS]
 >
->[Tutorial zum Binden von Dimensionen ](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/data-views/binding-dimensions-in-data-views.html) Datenansichten.
+>[Tutorial zum Binden von Dimensionen ](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/data-views/binding-dimensions-in-data-views.html?lang=de) Datenansichten.

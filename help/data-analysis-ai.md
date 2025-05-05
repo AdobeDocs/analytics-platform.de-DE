@@ -86,7 +86,7 @@ Weitere Informationen finden Sie unter [Zugriffssteuerung](/help/technotes/acces
 
    * **[!UICONTROL KI-Assistent: Datenanalyse]**
 
-   Weitere Informationen erhalten Admins unter [diese Anweisungen](https://experienceleague.adobe.com/en/docs/experience-platform/ai-assistant/access).
+   Weitere Informationen erhalten Admins unter [diese Anweisungen](https://experienceleague.adobe.com/de/docs/experience-platform/ai-assistant/access).
 
    ![KI-Assistenten-Symbol](/help/assets/ai-asst-icon.png)
 

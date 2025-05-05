@@ -90,4 +90,4 @@ Die folgenden Kontextmenüoptionen sind bei Auswahl der Kopfzeile einer Metriksp
 
 ## Zeilenhöhe ändern
 
-Sie können die Anzeigedichte eines Projekts auf **[!UICONTROL Compact]**, **[!UICONTROL Comfort]** und **[!UICONTROL Expanded]** festlegen. [Weitere Informationen](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/build-workspace-project/view-density).
+Sie können die Anzeigedichte eines Projekts auf **[!UICONTROL Compact]**, **[!UICONTROL Comfort]** und **[!UICONTROL Expanded]** festlegen. [Weitere Informationen](https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-workspace/build-workspace-project/view-density).

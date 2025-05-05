@@ -68,7 +68,7 @@ Die folgenden Informationen werden angezeigt:
    * CREATE: Es wurde eine Aktion „Erstellen“ durchgeführt.
    * DELETE: Es wurde eine Aktion „Löschen“ durchgeführt.
    * BEARBEITEN: Es wurde eine Aktion „Bearbeiten“ durchgeführt.
-   * EMBARGO: Wenn Sie eine Anfrage im [Reporting Activity Manager](https://experienceleague.adobe.com/en/docs/analytics-platform/using/reporting-activity-manager/reporting-activity-cancel-requests) einschränken, wird die Aktion im Auditprotokoll unter EMBARGO aufgezeichnet.
+   * EMBARGO: Wenn Sie eine Anfrage im [Reporting Activity Manager](https://experienceleague.adobe.com/de/docs/analytics-platform/using/reporting-activity-manager/reporting-activity-cancel-requests) einschränken, wird die Aktion im Auditprotokoll unter EMBARGO aufgezeichnet.
    * EXPORT: Es wurde eine Aktion „Export“ durchgeführt.
    * ORG_CHANGE: Es wurde eine Aktion „Organisationsänderung“ durchgeführt.
    * REFRESH: Es wurde eine Aktion „Aktualisieren“ durchgeführt.

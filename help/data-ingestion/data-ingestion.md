@@ -20,7 +20,7 @@ Sie haben mehrere Möglichkeiten, um Daten in Customer Journey Analytics aufzune
 >
 >Doch alle haben gemeinsam, dass die Daten, die in Customer Journey Analytics _verwendet_ werden sollen, eigentlich in Adobe Experience Platform _aufgenommen_ werden müssen.
 
-Sehen Sie sich dazu die übergeordnete Customer Journey Analytics-Architektur an, die zuvor in der [Übersicht](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html) dargestellt wurde:
+Sehen Sie sich dazu die übergeordnete Customer Journey Analytics-Architektur an, die zuvor in der [Übersicht](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html?lang=de) dargestellt wurde:
 
 ![Customer Journey Analytics-Architektur, die in diesem Abschnitt beschrieben wird](./assets/cja-architecture.png)
 
@@ -101,5 +101,5 @@ Weitere Informationen finden Sie unter [Aufnehmen und Verwenden von Daten über 
 
 >[!MORELIKETHIS]
 >
->Blog: [Ein genauerer Blick auf die Datenverarbeitung und -aufnahme in Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/a-closer-look-at-data-processing-amp-ingestion-in-adobe-customer/ba-p/665091)
+>Blog: [Ein genauerer Blick auf die Datenverarbeitung und -aufnahme in Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/a-closer-look-at-data-processing-amp-ingestion-in-adobe-customer/ba-p/665091?profile.language=de)
 

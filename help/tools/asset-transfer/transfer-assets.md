@@ -93,7 +93,7 @@ Es gibt drei mögliche Ergebnisse für eine Übertragung:
 
 Einer der wichtigsten Anwendungsfälle für die Asset-Übertragung ist das Upgrade von Adobe Analytics auf Customer Journey Analytics.
 
-Mit [ Funktion „Komponentenmigration](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/component-migration/component-migration) in Adobe Analytics können Projekte, für die Administratoren verantwortlich sind, zu anderen Administratoren migriert werden. Alle Komponenten dieser Projekte werden dann in Customer Journey Analytics neu erstellt, und der Empfängeradministrator ist für alle diese Komponenten verantwortlich, unabhängig davon, wer sie erstellt hat.
+Mit [ Funktion „Komponentenmigration](https://experienceleague.adobe.com/de/docs/analytics/admin/admin-tools/component-migration/component-migration) in Adobe Analytics können Projekte, für die Administratoren verantwortlich sind, zu anderen Administratoren migriert werden. Alle Komponenten dieser Projekte werden dann in Customer Journey Analytics neu erstellt, und der Empfängeradministrator ist für alle diese Komponenten verantwortlich, unabhängig davon, wer sie erstellt hat.
 
 Mit diesem Asset Transfer Tool können Administratoren anschließend Komponenten ihren rechtmäßigen Besitzern neu zuweisen, unabhängig davon, ob sie Administratoren sind oder nicht.
 

@@ -23,7 +23,7 @@ Die Konfiguration von Content Analytics besteht aus den folgenden Schritten:
 1. Nur wenn Sie [ Tags](manual.md)Eigenschaft manuell veröffentlichen, wird die Content Analytics-Konfiguration effektiv bereitgestellt und die Datenerfassung gestartet.
 
 1. Sie können nur einige kleinere Änderungen an einer implementierten Konfiguration mithilfe des Assistenten [Geführte Konfiguration](guided.md) vornehmen. Ändern Sie beispielsweise die [Datenansicht](/help/data-views/data-views.md).
-1. Mit der Erweiterung [ Adobe Content Analytics können Sie weitere Änderungen an einer implementierten Konfiguration ](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview) der zugehörigen Tags-Eigenschaft vornehmen.
+1. Mit der Erweiterung [ Adobe Content Analytics können Sie weitere Änderungen an einer implementierten Konfiguration ](https://experienceleague.adobe.com/de/docs/experience-platform/tags/extensions/client/content-analytics/overview) der zugehörigen Tags-Eigenschaft vornehmen.
 1. Nur wenn [ die Tags](manual.md)Eigenschaft manuell erneut veröffentlichen, werden die Konfigurationsänderungen effektiv bereitgestellt und die Datenerfassung, basierend auf Ihren Änderungen, wird gestartet.
 
 
@@ -35,9 +35,9 @@ Stellen Sie vor dem Konfigurieren von Content Analytics sicher, dass die folgend
 * Wenn Sie den [Web SDK mit JavaScript](https://experienceleague.adobe.com/de/docs/experience-platform/web-sdk/install/library){target="_blank"} für die reguläre Verhaltensdatenerfassung implementiert haben, stellen Sie sicher, dass Sie den Standardnamen &quot;<code>&quot; verwenden</code> für die JavaScript-Bibliothek.
 * Sie verfügen über die Rolle eines Customer Journey Analytics-Produktadministrators mit den zusätzlichen Berechtigungen zum Verwalten von Verbindungen und Datenansichten.
 * Wenn Sie Content Analytics-Erlebnisse erfassen möchten, stellen Sie sicher, dass Sie die [Content Analytics-](manual.md#versioning) basierend auf den Änderungen auf Ihren Web-Seiten einrichten und aktualisieren.
-* Sie müssen über [Berechtigungen für die Datenerfassung“ ](https://experienceleague.adobe.com/en/docs/experience-platform/collection/permissions){target="_blank"}:
-   * [Experience Platform-Berechtigungen](https://experienceleague.adobe.com/en/docs/experience-platform/collection/permissions#adobe-experience-platform-permissions){target="_blank"}
-   * [Berechtigungen für die Datenerfassung in Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/collection/permissions#adobe-experience-platform-data-collection-permissions){target="_blank"}
+* Sie müssen über [Berechtigungen für die Datenerfassung“ ](https://experienceleague.adobe.com/de/docs/experience-platform/collection/permissions){target="_blank"}:
+   * [Experience Platform-Berechtigungen](https://experienceleague.adobe.com/de/docs/experience-platform/collection/permissions#adobe-experience-platform-permissions){target="_blank"}
+   * [Berechtigungen für die Datenerfassung in Experience Platform](https://experienceleague.adobe.com/de/docs/experience-platform/collection/permissions#adobe-experience-platform-data-collection-permissions){target="_blank"}
 * Sie haben die folgenden wichtigen Konfigurationsoptionen sorgfältig geprüft:
 
    * Ihre Site ist für das Reporting zu Erlebnissen geeignet. Ein ordnungsgemäßes Reporting zu Erlebnissen ist nur möglich, wenn die folgenden Bedingungen erfüllt sind:
