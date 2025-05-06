@@ -1,18 +1,18 @@
 ---
 title: Dimensionen – Übersicht
-description: Erfahren Sie, was Dimensionen sind und wie sie beim Customer Journey Analytics verwendet werden.
+description: Erfahren Sie, was Dimensionen sind und wie sie in Customer Journey Analytics verwendet werden
 feature: Dimensions
 exl-id: 3592808b-17fd-401d-ab12-ff0308b21f45
-source-git-commit: d37734ae415722fc609715868c37a36f2becdbf6
+source-git-commit: ed7e9a6c34c5f8ba9ba4f75be05768409cbc158d
 workflow-type: tm+mt
-source-wordcount: '262'
+source-wordcount: '263'
 ht-degree: 36%
 
 ---
 
 # Dimensionen – Übersicht
 
-Dimensionen sind ein Komponententyp in Customer Journey Analytics, der zur Datenanalyse verwendet wird. Sie verwenden Dimensionen beispielsweise beim Erstellen von Berichten in [Analysis Workspace](/help/analysis-workspace/home.md) oder im [Report Builder ](/help/report-builder/report-buider-overview.md).
+Dimensionen sind ein Komponententyp in Customer Journey Analytics, der zur Datenanalyse verwendet wird. Sie verwenden Dimensionen beispielsweise beim Erstellen von Berichten in [Analysis Workspace](/help/analysis-workspace/home.md) oder in [Report Builder](/help/report-builder/rb-overview.md).
 
 Customer Journey Analytics-Dimensionen sind von unbegrenztem Typ. Werte können numerisch, Text, Objekte, Listen oder Mischungen aus allen sein.
 
@@ -60,4 +60,4 @@ Wenn Sie eine Datenansicht erstellen, werden die folgenden zeitbasierten Kompone
 
 ## Hinzufügen von Dimensionsbeschreibungen
 
-Customer Journey Analytics-Administratoren können Beschreibungen für Dimensionen und andere Komponenten entweder in der Datenansicht oder direkt in Analysis Workspace hinzufügen. Informationen zum Hinzufügen von Beschreibungen zu Dimensionen finden Sie unter [Hinzufügen von Komponentenbeschreibungen](/help/components/add-component-descriptions.md).
+Customer Journey Analytics-Admins können Beschreibungen für Dimensionen und andere Komponenten entweder in der Datenansicht oder direkt in Analysis Workspace hinzufügen. Informationen zum Hinzufügen von Beschreibungen zu Dimensionen finden Sie unter [Hinzufügen von Komponentenbeschreibungen](/help/components/add-component-descriptions.md).

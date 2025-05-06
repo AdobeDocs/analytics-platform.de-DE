@@ -4,7 +4,7 @@ description: Landingpage von Customer Journey Analytics.
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 7f67c497-386b-4442-a502-6b492f35c6e6
-source-git-commit: e16bfa01dd3bedc96a147b2510ba33f4b88b01b9
+source-git-commit: 720751130d0f66bddffd13c6f160a85fcc7a7206
 workflow-type: tm+mt
 source-wordcount: '884'
 ht-degree: 90%
@@ -154,7 +154,7 @@ Lernen Sie die Unterschiede zwischen Customer Journey Analytics und Adobe Analyt
     </td>
     <td>
       <img src="./assets/share.svg" width="35px"><br/>
-      <strong>Freigabe, Export, Integration</strong><br/><a href="/help/analysis-workspace/curate-share/share-projects.md">Projekte</a> – <a href="/help/mobile-app/home.md">Analytics-Dashboards</a> – <a href="/help/report-builder/report-buider-overview.md">Report Builder</a> – <a href="/help/components/exports/manage-exports.md">Cloud-Export</a> – <a href="/help/integrations/overview.md">Integrationen</a>
+      <strong>Freigabe, Export, Integration</strong><br/><a href="/help/analysis-workspace/curate-share/share-projects.md">Projekte</a> – <a href="/help/mobile-app/home.md">Analytics-Dashboards</a> – <a href="/help/report-builder/rb-overview.md">Report Builder</a> – <a href="/help/components/exports/manage-exports.md">Cloud-Export</a> – <a href="/help/integrations/overview.md">Integrationen</a>
     </td>
   </tr>
 </table>
@@ -172,4 +172,4 @@ Lernen Sie die Unterschiede zwischen Customer Journey Analytics und Adobe Analyt
 
 
 <table style="table-layout:auto" class="tablelayout-is-fixed"><tbody><tr style="border: 0;"><td><img src="./assets/newsletter.png"></td><td>
-<b>Bleiben Sie auf dem Laufenden, tragen Sie zur Community bei und verbessern Sie Ihr Erlebnis mit Customer Journey Analytics!</b><br>Besuchen Sie die Adobe Analytics-Community, um die Funktionalität mit anderen Benutzenden zu erörtern. <a href="https://experienceleaguecommunities.adobe.com/t5/adobe-analytics/ct-p/adobe-analytics-community?profile.language=de&lang=de">Werden Sie noch heute Teil der Community!</a></td></tr></tbody></table>
+<b>Bleiben Sie auf dem Laufenden, tragen Sie zur Community bei und verbessern Sie Ihr Erlebnis mit Customer Journey Analytics!</b><br>Besuchen Sie die Adobe Analytics-Community, um die Funktionalität mit anderen Benutzenden zu erörtern. <a href="https://experienceleaguecommunities.adobe.com/t5/adobe-analytics/ct-p/adobe-analytics-community?lang=de">Werden Sie noch heute Teil der Community!</a></td></tr></tbody></table>

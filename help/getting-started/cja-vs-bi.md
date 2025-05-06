@@ -5,7 +5,7 @@ role: User
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: ae66cd06-7ec1-4174-a3cf-939c3a66b840
-source-git-commit: 9f954709a3dde01b4e01581e34aece07fe0256b1
+source-git-commit: 720751130d0f66bddffd13c6f160a85fcc7a7206
 workflow-type: tm+mt
 source-wordcount: '1648'
 ht-degree: 92%
@@ -75,7 +75,7 @@ In diese Visualisierungskomponenten integriert sind intelligente Funktionen wie:
 * **Kuratierung und Demokratisierung**: Mit den in Customer Journey Analytics erstellten Dashboards ist Folgendes möglich:
 
    * Für andere Personen in der Organisation zur fortlaufenden Untersuchung [kuratiert](/help/analysis-workspace/curate-share/curate.md),
-   * mit [Report Builder](/help/report-builder/report-buider-overview.md) (einem speziellen Plug-in) nach Excel exportiert,
+   * mit [Report Builder](/help/report-builder/rb-overview.md) (einem speziellen Plug-in) nach Excel exportiert,
    * in verschiedenen Formaten, einschließlich [PDF](/help/analysis-workspace/export/download-send.md), [CSV](/help/analysis-workspace/export/download-send.md) und über eine [dedizierte Mobile App](/help/mobile-app/home.md), an diejenigen [freigegeben](/help/analysis-workspace/curate-share/share-projects.md), die an den endgültigen Berichten und/oder Visualisierungen interessiert sind.
 
 Ein Vergleich der Visualisierungsfunktionen von Customer Journey Analytics mit den Möglichkeiten von BI-Tools ist aufgrund der Vielfalt der verfügbaren Visualisierungen schwierig. Einige BI-Tools verfügen über fortschrittlichere Visualisierungen, aber Customer Journey Analytics konzentriert sich auf interaktive und interoperable Visualisierungen von Customer Journeys, die es Ihnen ermöglichen, die Daten innerhalb von Sekunden aufzuschlüsseln, ohne dass Sie für jede zusätzliche Abfrage „bezahlen“ müssen.
