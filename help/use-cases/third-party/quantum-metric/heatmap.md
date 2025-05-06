@@ -4,12 +4,10 @@ description: Die Interaktion auf Seitenebene besser verstehen und Seiten basiere
 role: User, Admin
 solution: Customer Journey Analytics
 feature: Use Cases
-hidefromtoc: true
-hide: true
 exl-id: d861135f-42a4-45ac-8b11-41f151bfce92
-source-git-commit: 25a2c549c27918f80202bde4cd30e305f4a295f3
+source-git-commit: 95a107c6bbc6dce6cc43c4a1b51beeaa1fa7aff1
 workflow-type: tm+mt
-source-wordcount: '362'
+source-wordcount: '348'
 ht-degree: 1%
 
 ---
@@ -24,7 +22,7 @@ Die Tabelle gibt alle Sitzungen in diesem Segment zurück, und Sie können auf e
 
 Sie müssen Anspruch auf das **UX Ops**-Paket von Quantum Metric haben, um auf die Heatmap-Funktionen von Quantum Metric zugreifen zu können.
 
-## Schritt 1: Erstellen Sie eine Freiformtabelle in Workspace und konfigurieren Sie sie so, dass Sitzungs-ID-Werte direkte Links zur Quantum-Metrik sind.
+## Schritt 1: Konfigurieren von Links in Analysis Workspace
 
 1. Melden Sie sich bei &quot;[.adobe.com“ ](https://experience.adobe.com).
 1. Navigieren Sie zu Customer Journey Analytics und wählen Sie **[!UICONTROL Workspace]** im oberen Menü.
@@ -41,6 +39,8 @@ Sie müssen Anspruch auf das **UX Ops**-Paket von Quantum Metric haben, um auf d
 
 1. Klicken Sie auf **[!UICONTROL Erstellen]**.
 1. Testen Sie einen der Links, um zu sehen, ob er in der URL geöffnet wird, wobei die Quantum Metric-Erweiterung sichtbar ist. Diese Links werden in einer neuen Registerkarte geöffnet, sodass Ihr Workspace-Projekt geöffnet bleibt.
+
+![Heatmap](assets/heatmap.png)
 
 ## Schritt 2: Heatmaps durch Anklicken von Links in Customer Journey Analytics anzeigen
 

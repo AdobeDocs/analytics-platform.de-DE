@@ -4,12 +4,10 @@ description: Quantum Metric-Sitzungswiederholungen mit CJA-Daten zum besseren Ve
 role: User, Admin
 solution: Customer Journey Analytics
 feature: Use Cases
-hidefromtoc: true
-hide: true
 exl-id: fcc36457-4ce9-4c93-93e2-de03becfd5da
-source-git-commit: a03505aeb56f99b28f50819765a496705876b89c
+source-git-commit: 95a107c6bbc6dce6cc43c4a1b51beeaa1fa7aff1
 workflow-type: tm+mt
-source-wordcount: '812'
+source-wordcount: '814'
 ht-degree: 2%
 
 ---
@@ -22,7 +20,7 @@ Durch die Verknüpfung von Quantum Metric-Sitzungswiederholungen mit CJA-Daten k
 
 Bei diesen Schritten wird davon ausgegangen, dass Sie Tags in der Datenerfassung von Adobe Experience Platform verwenden. Wenn Ihr Unternehmen keine Tags verwendet, können Sie diese Datenerfassungsmethoden an eine manuelle Web SDK-Implementierung anpassen.
 
-Weitere Informationen finden [ in der Dokumentation ](https://experienceleague.adobe.com/de/docs/experience-platform/destinations/catalog/analytics/quantum-metric)Quantum Metric-Tag-Erweiterung“.
+Weitere Informationen finden [ in der Dokumentation ](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/analytics/quantum-metric)Quantum Metric-Tag-Erweiterung“.
 
 ## Schritt 1: Erstellen Sie ein Schemafeld für die Quantum Metric-Sitzungs-ID
 
@@ -109,6 +107,8 @@ Erstellen Sie eine Freiformtabelle in Workspace und konfigurieren Sie sie so, da
 1. Klicken Sie auf **[!UICONTROL Erstellen]**.
 
 Jede Sitzungs-ID ist jetzt ein klickbarer Link. Weitere [ zum Hinzufügen von Hyperlinks zu Analysis Workspace-Dimensionselementen finden Sie unter ](/help/analysis-workspace/visualizations/freeform-table/freeform-table-hyperlinks.md)Erstellen von Hyperlinks in einer Freiformtabelle“.
+
+![Sitzungswiederholung](assets/session-replay.png)
 
 ## Schritt 5: Sessions aus Customer Journey Analytics anzeigen
 

@@ -4,12 +4,10 @@ description: Fügen Sie den Verhaltensdaten von Customer Journey Analytics erfas
 role: User, Admin
 solution: Customer Journey Analytics
 feature: Use Cases
-hidefromtoc: true
-hide: true
 exl-id: 1b7d5159-39b2-4ba4-be64-f448ae53c70e
-source-git-commit: 11dc62cda2ceb7afabd3abd0944420601c8fa235
+source-git-commit: 95a107c6bbc6dce6cc43c4a1b51beeaa1fa7aff1
 workflow-type: tm+mt
-source-wordcount: '665'
+source-wordcount: '667'
 ht-degree: 1%
 
 ---
@@ -40,7 +38,7 @@ Dieser Anwendungsfall erfordert ein dediziertes Schemafeld, an das Daten gesende
 
 ## Schritt 2: Erfassen von Reibungsereignissen mit der Quantum Metric-Tag-Erweiterung
 
-Anweisungen [ Einrichten Ihrer Tags für das Einschließen von Quantenmetrikdaten finden Sie unter ](https://experienceleague.adobe.com/de/docs/experience-platform/destinations/catalog/analytics/quantum-metric)Quantum Metric-Erweiterung“ im Adobe Experience Platform Destinations-Handbuch. Durch die Verwendung dieser Erweiterung werden mehr Zeilen in einen vorhandenen Datensatz übergeben.
+Anweisungen [ Einrichten Ihrer Tags für das Einschließen von Quantenmetrikdaten finden Sie unter ](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/analytics/quantum-metric)Quantum Metric-Erweiterung“ im Adobe Experience Platform Destinations-Handbuch. Durch die Verwendung dieser Erweiterung werden mehr Zeilen in einen vorhandenen Datensatz übergeben.
 
 Verwenden Sie Tags in der Adobe Experience Platform-Datenerfassung, um den Namen des Reibungsereignisses manuell festzulegen, sodass es in das XDM-Objekt aufgenommen und analysiert werden kann. Eine Möglichkeit, dies zu tun, besteht im benutzerdefinierten Code der Regel:
 
@@ -74,6 +72,8 @@ Wenn Quantum Metric Friction-Ereignisdaten zusammen mit den anderen Besucherdate
 1. Wählen Sie ein vorhandenes Projekt aus oder erstellen Sie ein Projekt.
 1. Erstellen Sie eine [Freiformtabelle](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md).
 1. Ziehen Sie die gewünschten Dimensionen und Metriken zur Analyse auf die Workspace-Arbeitsfläche.
+
+![Reibungsdiagramm](assets/friction-graph.png)
 
 Zu den möglichen Analyseideen gehören:
 
