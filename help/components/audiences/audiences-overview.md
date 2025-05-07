@@ -4,10 +4,10 @@ description: Erfahren Sie mehr über das Konzept der Zielgruppenveröffentlichun
 exl-id: 30404bfc-0ee7-4f01-842c-7e6156dc0b45
 feature: Audiences
 role: User, Admin
-source-git-commit: 9393be88ab7320adb5bd046701667f638673af5e
+source-git-commit: be062e350a8c1989be41aeb2774471a3fe1bf524
 workflow-type: tm+mt
-source-wordcount: '404'
-ht-degree: 87%
+source-wordcount: '435'
+ht-degree: 76%
 
 ---
 
@@ -18,9 +18,11 @@ Sie können jetzt in Customer Journey Analytics verfügbare Zielgruppen erstelle
 Das Veröffentlichen von Zielgruppen bietet die Möglichkeit, die in Customer Journey Analytics vorhandenen Einblicke zu aktivieren und entsprechende Maßnahmen zu ergreifen. Zu diesen Maßnahmen zählen:
 
 * Verwenden der Zielgruppe für eine Journey in Adobe Journey Optimizer.
+Weitere Informationen zur Verwendung von Zielgruppen, die in Experience Platform veröffentlicht werden, finden Sie unter [Erste Schritte mit Zielgruppen](https://experienceleague.adobe.com/de/docs/journey-optimizer/using/audiences-profiles-identities/audiences/about-audiences) in der Dokumentation zu Journey Optimizer.
 * Exportieren der Zielgruppe zu einem Drittanbieter über ein Experience Platform-Ziel.
 * Anreichern des Echtzeit-Kundenprofils mit nützlichen Attributen, die aus ereignisbasierten Daten in Customer Journey Analytics abgeleitet wurden.
-* Dies alles geschieht mit minimaler Latenz nach der Publikation der Zielgruppe. [Weitere Informationen](https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-components/audiences/publish#latency)
+* Dies alles geschieht mit minimaler Latenz nach der Veröffentlichung der Zielgruppe.
+Weitere Informationen finden Sie unter [Latenzaspekte](/help/components/audiences/publish.md#latency-considerations) in [Erstellen und Veröffentlichen von Zielgruppen](/help/components/audiences/publish.md).
 * Veröffentlichen einmaliger oder wiederkehrender Zielgruppen.
 
 Die Zielgruppen, die Sie in Customer Journey Analytics erstellen, müssen nicht auf den für das Profil aktivierten Datensätzen basieren. Sie können historische Daten in Experience Platform ohne die Aktivierung verknüpfter Datensätze und Schemata für Profile aufnehmen. Verwenden Sie diese Datensätze dann, um relevante Zielgruppen in Customer Journey Analytics zu ermitteln, und veröffentlichen Sie diese Zielgruppen zur Aktivierung im Echtzeit-Kundenprofil in Experience Platform.
@@ -41,7 +43,7 @@ Die Zielgruppen, die Sie in Customer Journey Analytics erstellen, müssen nicht 
 
 ## Data Governance und Einverständnis
 
-Wenn Sie eine Zielgruppe in Customer Journey Analytics veröffentlichen, werden die mit den in der Zielgruppe verwendeten Feldern verknüpften Data Governance-Beschriftungen und -Richtlinien aufgezeichnet.  Wenn die Zielgruppe in einem Adobe Experience-Programm aktiviert wird, sind alle zugehörigen Data Governance-Beschriftungen und -Richtlinien für diese Zielgruppe verfügbar und es kann eine geeignete Durchsetzung angewendet werden. [Weitere Informationen über Einverständnis](https://experienceleague.adobe.com/docs/experience-platform/data-governance/policies/user-guide.html?lang=de#consent-policy).
+Wenn Sie eine Zielgruppe in Customer Journey Analytics veröffentlichen, werden die mit den in der Zielgruppe verwendeten Feldern verknüpften Data Governance-Beschriftungen und -Richtlinien aufgezeichnet.  Wenn die Zielgruppe in einem Adobe Experience-Programm aktiviert wird, sind alle zugehörigen Data-Governance-Labels und -Richtlinien für diese Zielgruppe verfügbar und es kann eine geeignete Durchsetzung angewendet werden. [Weitere Informationen über Einverständnis](https://experienceleague.adobe.com/docs/experience-platform/data-governance/policies/user-guide.html?lang=de#consent-policy).
 
 ## Nächste Schritte
 
