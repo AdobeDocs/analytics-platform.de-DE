@@ -4,9 +4,9 @@ title: Verwenden von Vorlagen
 feature: Workspace Basics
 role: User, Admin
 exl-id: d61f215d-9089-4014-9c5a-97f5d7134f34
-source-git-commit: e37ac6f67da441e2e9491307dc44e31506383a0d
+source-git-commit: d618300480cdc3b4454e5c91e5e5adacc01d0c77
 workflow-type: tm+mt
-source-wordcount: '19815'
+source-wordcount: '19827'
 ht-degree: 96%
 
 ---
@@ -128,27 +128,27 @@ So greifen Sie auf alle verfügbaren vorkonfigurierten Vorlagen zu:
 
    Die folgenden Abschnitte entsprechen den verfügbaren Kategorien und enthalten Informationen zu den einzelnen Vorlagen.
 
-   * [&#128279;](#most-popular)
+   * **[[!UICONTROL Am beliebtesten]](#most-popular)**
 
-   * [&#128279;](#engagement)
+   * **[[!UICONTROL Web]** > **[!UICONTROL Interaktion]](#engagement)**
 
-   * [&#128279;](#web-conversion)
+   * **[[!UICONTROL Web]** > **[!UICONTROL Konversion]](#web-conversion)**
 
-   * [&#128279;](#web-audience)
+   * **[[!UICONTROL Web]** > **[!UICONTROL Audience]](#web-audience)**
 
-   * [&#128279;](#web-acquisition)
+   * **[[!UICONTROL Web]** > **[!UICONTROL Akquise]](#web-acquisition)**
 
-   * [&#128279;](#mobile-mobile-app)
+   * **[[!UICONTROL Mobile]** > **[!UICONTROL Mobile App]](#mobile-mobile-app)**
 
-   * [&#128279;](#mobile-mobile-device-information)
+   * **[[!UICONTROL Mobiltelefon]** > **[!UICONTROL Informationen zu Mobilgeräten]](#mobile-mobile-device-information)**
 
-   * [&#128279;](#time-parting)
+   * **[[!UICONTROL Zeitaufteilung]](#time-parting)**
 
-   * [&#128279;](#cross-channel)
+   * **[[!UICONTROL Cross-Channel]](#cross-channel)**
 
-   * [&#128279;](#other-channels)
+   * **[[!UICONTROL Andere Kanäle]](#other-channels)**
 
-   * [&#128279;](#ajo)
+   * **[[!UICONTROL AJO]](#ajo)**
 
 ### Am beliebtesten {#most-popular}
 
