@@ -6,10 +6,10 @@ feature: Basics
 role: User, Admin
 badgePremium: label="B2B edition"
 exl-id: df2cc922-d214-49b9-8fdb-443cc1dac05b
-source-git-commit: 326a82e93c0c8d57db224023ed5f3a7ab94a8997
+source-git-commit: be617c59cd2fced0031fda1130b86e638bee8f68
 workflow-type: tm+mt
-source-wordcount: '1052'
-ht-degree: 0%
+source-wordcount: '1246'
+ht-degree: 2%
 
 ---
 
@@ -33,7 +33,7 @@ In Customer Journey Analytics B2B edition können Sie zwischen einer personenbas
 
 ## Container
 
-In Customer Journey Analytics werden Container im Rahmen der Konfiguration einer Verbindung und Datenansicht generiert. Container speichern nur Kennungen, um die schnelle und leistungsstarke Ausführung von Funktionen wie Segmentierung, Aufschlüsselungen und mehr zu erleichtern.
+In Customer Journey Analytics werden Container im Rahmen der Konfiguration einer Verbindung und Datenansicht generiert. Container speichern Kennungsgruppen, um die schnelle und leistungsstarke Ausführung von Funktionen wie Segmentierung, Aufschlüsselungen und mehr zu erleichtern.
 
 ### Standard-Container
 
@@ -67,6 +67,24 @@ Die Hierarchie und die Beziehungen zwischen den Containern sind vorgegeben. Oppo
 
 ## Datensätze
 
+Customer Journey Analytics B2B unterscheidet zwischen den folgenden Datentypen und Datensätzen.
+
+| Datentyp | Zeitreihe | Container-Datensätze | Feldeinträge |
+|---|---|---|---|
+| **Datensätze** | **Ereignisdatensätze**<br/> Beispiel:<ul><li>Digitale Analyse</li><li>CRM-Ereignisse</li><li>Persönliche Ereignisse</li><li>Callcenter-Daten</li></ul> | **Profildatensätze**<br/> Beispiel:<ul><li>CRM-Datensätze</li><li>AJO B2B-Einträge</li><li>CDP-Einträge</li><ul> | **Klassifizierungen**<br/> Beispiel:<ul><li>Kampagneneinträge</li><li>Einträge in der Marketing-Liste</li><li>Inhaltsmetadaten</li><li>Produktaufzeichnungen</li></ul> |
+| Voraussetzungen | **Zeitstempel**<br> Jeder Datensatz benötigt:<ul><li>Konto-ID</li><li>ID des globalen Kontos</li><li>Personen-ID</li></ul> | **Konto-ID**<br> Datensätze benötigen eine Container-ID, z. B.:<ul><li>Konto</li><li>Person</li><li>Opportunity</li><li>Käufergruppe</li></ul> | **Übereinstimmende Schlüssel**<br> Datensätze benötigen eine ID, die in einem Container oder Ereignis-Datensatz enthalten ist, z. B.:<ul><li>Kampagnen-ID</li><li>Inhalts-ID</li><li>Produkt-ID</li></ul> |
+
+{style="table-layout:fixed"}
+
+Beispielhafte kontobasierte Verbindung in der Customer Journey Analytics B2B edition:
+
+![Beispiel für eine kontobasierte Verbindung](assets/b2b-datasets.svg)
+
+Customer Journey Analytics B2B edition bietet die [Verbindungszuordnung](/help/connections/create-connection.md#connection-map), um Ihnen einen Überblick über die Beziehungen zwischen Datensätzen in Ihrer Verbindung zu geben.
+
+
+Ähnlich wie Customer Journey Analytics bilden ereignisbasierte Zeitreihendaten den Kern von Customer Journey Analytics B2B edition. Der Hauptunterschied für eine kontobasierte Verbindung besteht darin, dass Sie für jeden Datensatz in Ihrem Ereignisdatensatz eine Konto-ID anstelle einer Personen-ID benötigen.
+
 Beim Konfigurieren [Datensatzeinstellungen](/help/connections/create-connection.md#dataset-settings) für Ihre kontobasierte Verbindung in Customer Journey Analytics B2B edition hängen die für einige Einstellungen verfügbaren Optionen vom [Datensatztyp](/help/connections/create-connection.md#dataset-types) ab. Sie müssen beispielsweise:
 
 * Geben Sie Kennungen für jeden der Container an, die Sie für Ihre Ereignis-Datensätze konfiguriert haben.
@@ -79,11 +97,11 @@ Sie können für jeden Lookup-Datensatz definieren, unabhängig davon, ob Sie de
 
 ### Übereinstimmung nach Container
 
-Wenn ein Datensatzdatensatz eine Übereinstimmung nach Container verwendet, wird der Datensatzdatensatz in der Benutzeroberfläche als Profildatensatztyp und als Profildatensatz behandelt. Verwenden Sie „Übereinstimmung nach Container“ für Datensätze, die Ihre konfigurierten Container unterstützen. Beispiel: ein Datensatz für eine Einkaufsgruppe.
+Wenn ein Datensatzdatensatz eine Übereinstimmung nach Container verwendet, wird der Datensatzdatensatz in der Benutzeroberfläche als Profildatensatztyp und als Profildatensatz behandelt. Verwenden Sie „Übereinstimmung nach Container“ für Datensätze, die Container-Datensätze enthalten und die Ihre konfigurierten Container unterstützen. Beispiel: ein Datensatz für eine Einkaufsgruppe.
 
 ### Übereinstimmung nach Feld
 
-Wenn ein Datensatzdatensatz ein Feld vom Typ Übereinstimmung verwendet, wird der Datensatzdatensatz in der Benutzeroberfläche als Such-Datensatztyp und als Such-Datensatz behandelt. Verwenden Sie das Feld „Übereinstimmung nach“ für Datensätze, die zusätzliche Details über die Suche unterstützen, z. B. einen Marketing-Listenmitglied-Datensatz oder einen Produktdetails-Datensatz.
+Wenn ein Datensatzdatensatz ein Feld vom Typ Übereinstimmung verwendet, wird der Datensatzdatensatz in der Benutzeroberfläche als Such-Datensatztyp und als Such-Datensatz behandelt. Verwenden Sie das Feld „Übereinstimmung nach“ für Datensätze, die zusätzliche Klassifizierungsdetails über die Suche enthalten. Beispiel: ein Marketing-Listenmitglied-Datensatz oder ein Produktdetails-Datensatz.
 
 
 ## Bericht zu Personen- und Account-basierten Daten
