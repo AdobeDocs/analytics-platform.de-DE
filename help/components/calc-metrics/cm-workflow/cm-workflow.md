@@ -3,10 +3,10 @@ description: Erfahren Sie, wie Sie berechnete Metriken erstellen.
 title: Erstellen von berechneten Metriken
 feature: Calculated Metrics
 exl-id: 55ed36c1-99ca-400a-bc2b-661994cbf720
-source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
+source-git-commit: c183a5013cbc5ff3765cc4926a308d0c4563a097
 workflow-type: tm+mt
-source-wordcount: '225'
-ht-degree: 2%
+source-wordcount: '386'
+ht-degree: 43%
 
 ---
 
@@ -19,9 +19,9 @@ Administratoren können jedoch über die [**[!UICONTROL die Berechtigung]** Erst
 
 Sie können eine berechnete Metrik wie folgt erstellen:
 
-![Möglichkeiten zum Erstellen einer berechneten Metrik](assets/create-metric.png)
+![Möglichkeiten zum Erstellen einer Metrik](assets/create-metric.png)
 
-* **A**. Wählen Sie in der Hauptbenutzeroberfläche die Option **[!UICONTROL Komponenten]** und wählen Sie **[!UICONTROL Berechnete Metriken]**. Wählen Sie ![AddCircle](/help/assets/icons/AddCircle.svg) [!UICONTROL **[!UICONTROL Add]**] aus dem [[!UICONTROL Manager für berechnete &#x200B;]](/help/components/calc-metrics/cm-workflow/cm-manager.md).
+* **A**. Wählen Sie in der Hauptbenutzeroberfläche die Option **[!UICONTROL Komponenten]** und wählen Sie **[!UICONTROL Berechnete Metriken]**. Wählen Sie ![AddCircle](/help/assets/icons/AddCircle.svg) [!UICONTROL **[!UICONTROL Add]**] aus dem [[!UICONTROL Manager für berechnete ]](/help/components/calc-metrics/cm-workflow/cm-manager.md).
 * **B**. Wählen Sie in einem Workspace-Projekt im linken Bedienfeld Komponenten ![Hinzufügen](/help/assets/icons/Add.svg) unter ![Ereignis](/help/assets/icons/Event.svg) **Metriken**.
 * **C**. Wählen Sie in einem Workspace-Projekt im Kontextmenü in der Spaltenüberschrift Metriken die Option **[!UICONTROL Metrik aus Auswahl erstellen]**. Aus dem Untermenü können Sie eine Funktion auswählen oder auf **[!UICONTROL In Generator für berechnete Metriken öffnen]** klicken. <br/>Wenn Sie eine Funktion auswählen, wird die berechnete Metrik als reine Projektmetrik definiert. Wenn Sie diese Metrik später über das Popup [Komponenteninformationen](/help/components/use-components-in-workspace.md#component-info) bearbeiten, wird im Generator für [berechnete Metriken](/help/components/calc-metrics/cm-workflow/cm-build-metrics.md) eine Benachrichtigung angezeigt.
 * **D**. Wählen Sie in einem Workspace-Projekt **[!UICONTROL Komponenten]** aus dem Menü aus und wählen Sie **[!UICONTROL Metrik erstellen]**.
@@ -29,18 +29,15 @@ Sie können eine berechnete Metrik wie folgt erstellen:
 
 Um die neue berechnete Metrik zu definieren, verwenden Sie den [Generator für berechnete ](/help/components/calc-metrics/cm-workflow/cm-build-metrics.md)&quot;.
 
-<!--
+Erfahren Sie mehr über die Schritte zum Erstellen von berechneten Metriken.
 
-Learn about the steps to take for creating calculated metrics.
-
-| Workflow Task | Description |
+| Aufgabe des Arbeitsablaufs | Beschreibung |
 | --- | --- |
-| Plan Calculated Metrics | Especially for metrics that are going to be officially "approved", it makes sense to outline which calculated metrics will be widely used and how they will be defined. |
-| [Build](/help/components/calc-metrics/cm-workflow/cm-build-metrics.md) Calculated Metrics | Build and edit calculated and advanced calculated metrics for use in [!DNL Customer Journey Analytics] components. |
-| [Tag](cm-tagging.md) Calculated Metrics | Tag calculated metrics for ease of organization and sharing. See how to plan and assign tags for simple and advanced searches and organization. |
-| [Approve](cm-approving.md) Calculated Metrics | Approve calculated metrics to make them canonical. |
-| Apply Calculated Metrics | You can apply metrics directly from a report, from the Metric Selector (to access it, click [!UICONTROL Show Metrics]). |
-| Filter Calculated Metrics | In the Metric Selector, click [!UICONTROL Advanced Selection] and filter by tags, owners, and other filters (Show All, Mine, Shared With me, Favorites, and Approved.) |
-| Mark Calculated Metrics as [Favorites](cm-finding.md) | Marking metrics as favorites is another way to organize them for ease of use.|
+| Berechnete Metriken planen | Besonders bei Metriken, die offiziell „genehmigt“ werden, ist es sinnvoll zu umreißen, welche berechneten Metriken häufig verwendet werden und wie diese definiert sind. |
+| Berechnete Metriken [erstellen](/help/components/calc-metrics/cm-workflow/cm-build-metrics.md) | Erstellen und bearbeiten Sie berechnete und erweiterte berechnete Metriken in [!DNL Customer Journey Analytics]-Komponenten. |
+| Berechnete Metriken [taggen](cm-tagging.md) | Taggen Sie berechnete Metriken, um die Organisation und Freigabe zu erleichtern. Erhalten Sie Informationen zum Planen und Zuweisen von Tags für einfache und erweiterte Suchvorgänge und für die Organisation. |
+| Berechnete Metriken [genehmigen](cm-approving.md) | Genehmigen Sie berechnete Metriken, um sie als autorisiert zu kennzeichnen. |
+| Berechnete Metriken anwenden | Sie können Metriken direkt in einem Bericht über die Metrikauswahl anwenden (klicken Sie dazu auf [!UICONTROL Metriken anzeigen]). |
+| Berechnete Metriken filtern | Klicken Sie in der Metrikauswahl auf [!UICONTROL Erweiterte Auswahl] und filtern Sie nach Tags, Inhabern und anderen Kriterien (Alle anzeigen, Meine, Für mich freigegeben, Favoriten und Genehmigt). |
+| Berechnete Metriken markieren als [Favoriten](cm-finding.md) | Das Kennzeichnen von Metriken als Favoriten bietet eine weitere Möglichkeit, diese für die einfache Verwendung zu organisieren. |
 
--->

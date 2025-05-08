@@ -3,16 +3,16 @@ description: Im Manager für berechnete Metriken können Sie einen Arbeitsablauf
 title: Berechnete Metriken genehmigen
 feature: Calculated Metrics
 exl-id: da55bb2b-9d42-4fba-add4-655f7f7c7ef6
-source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
+source-git-commit: c183a5013cbc5ff3765cc4926a308d0c4563a097
 workflow-type: tm+mt
-source-wordcount: '146'
+source-wordcount: '147'
 ht-degree: 21%
 
 ---
 
 # Berechnete Metriken genehmigen
 
-Im [Manager für berechnete Metriken](cm-manager.md) können Sie Segmente genehmigen und die Genehmigung aufheben. Nur Administratoren können berechnete Metriken genehmigen.
+Im [Manager für berechnete Metriken](cm-manager.md) können Sie berechnete Metriken genehmigen und die Genehmigung aufheben. Nur Administratoren können berechnete Metriken genehmigen.
 
 So validieren Sie berechnete Metriken:
 

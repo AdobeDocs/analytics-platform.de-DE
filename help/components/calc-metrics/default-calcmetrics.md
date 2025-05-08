@@ -4,16 +4,16 @@ title: Vorlagen für berechnete Metriken
 feature: Calculated Metrics
 exl-id: 08d11cce-170e-42a2-806f-e0a28b70a2dc
 role: User
-source-git-commit: f0786cfa74453693078c7d30d647a96bf1d98d07
+source-git-commit: c183a5013cbc5ff3765cc4926a308d0c4563a097
 workflow-type: tm+mt
 source-wordcount: '546'
-ht-degree: 88%
+ht-degree: 83%
 
 ---
 
 # Vorlagen für berechnete Metriken
 
-Customer Journey Analytics bietet die folgenden Vorlagen für berechnete Metriken, um die häufigsten Anwendungsfälle abzudecken. Diese von Adobe definierten berechneten Metriken werden durch ein kleines ![AdobeLogoSmall](/help/assets/icons/AdobeLogoSmall.svg)-Logo gekennzeichnet. Um schnell nach diesen Metriken zu filtern, wählen Sie im [Komponentenfilter](/help/components/overview.md#filter) die Option ![Label](/help/assets/icons/Label.svg) **[!UICONTROL Adobe-Vorlage]** aus.
+Customer Journey Analytics bietet die folgenden Vorlagen für berechnete Metriken, um die häufigsten Anwendungsfälle abzudecken. Diese von Adobe definierten berechneten Metriken werden durch ein kleines ![AdobeLogoSmall](/help/assets/icons/AdobeLogoSmall.svg)-Logo gekennzeichnet. Um diese Metriken schnell zu filtern, wählen Sie ![Beschriftung](/help/assets/icons/Label.svg) **[!UICONTROL Adobe-]** im [Komponentenfilter](/help/components/overview.md#filter) aus.
 
 | Name der berechneten Metrik | Formel-<br/>beschreibung |
 |---------|----------|
