@@ -4,7 +4,7 @@ title: Segmente freigeben
 feature: Filters, Segments
 exl-id: c8559c7b-f886-4046-9bd6-80778882afcc
 role: User
-source-git-commit: 85a22d1e57925f0512ce0cc658cfba1008339d91
+source-git-commit: cc1e5737b481a231e139562ca4a79fbdfd61d8a3
 workflow-type: tm+mt
 source-wordcount: '297'
 ht-degree: 11%
@@ -38,6 +38,6 @@ Im Folgenden finden Sie Best Practices für die Freigabe von Segmenten und für 
 
 * Geben Sie als Administrator ein Segment nur dann für alle frei, wenn Sie überzeugt sind, dass es jemand in Ihrer Organisation mit der Verwendung der Segmente vertraut ist. Sie können auch erwägen, diese Segmente zu bevorzugen. Weitere Informationen [ Sie unter ](filters-favorite.md) als Favorit markieren.
 
-* Geben Sie als Administrator ein Segment für eine bestimmte Gruppe frei, wenn dieses Segment einen Geschäftswert für die Benutzer dieser Gruppe bietet
+* Geben Sie als Administrator ein Segment für eine bestimmte Gruppe frei, wenn dieses Segment einen Geschäftswert für die Benutzer dieser Gruppe bietet.
 
 * Geben Sie als Administrator oder einzelner Benutzer ein Segment für eine oder mehrere Personen frei, um ein Segment zu validieren. Wenn sich die Segmente als nicht nützlich erweisen, können Sie das Segment löschen.
