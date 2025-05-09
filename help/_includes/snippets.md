@@ -1,8 +1,8 @@
 ---
-source-git-commit: 3ca1004fc1bbe3b60f32348d7da84718aef3a057
+source-git-commit: 65b4339b4a1b27c41cfe442482a54661989d704b
 workflow-type: tm+mt
-source-wordcount: '4061'
-ht-degree: 33%
+source-wordcount: '5198'
+ht-degree: 34%
 
 ---
 # Snippets
@@ -254,3 +254,44 @@ Verwenden Sie die folgenden Informationen, um die Visualisierung auszuwählen, d
 | **[!UICONTROL Datensatz]** | Der Name des Datensatzes. |
 | **[!UICONTROL Vorschau: *Datensatzname *]** | Vorschau des Datensatzes für die ersten 10 Zeilen und die ersten 10 Spalten. |
 | ![RemoveCircle](/help/assets/icons/RemoveCircle.svg) **[!UICONTROL Remove]** | Sie können [Datensatz löschen](/help/connections/create-connection.md#delete-a-dataset) ohne die gesamte Verbindung zu löschen. Das Löschen eines Datensatzes aus einer Verbindung reduziert die Kosten für die Datenaufnahme und den aufwändigen Prozess der Neuerstellung der gesamten Verbindung und der zugehörigen Datenansichten. |
+
+## Standardabmessungen {#standard-dimensions}
+
+| Name der Komponente | Hinweise |
+|---|---|
+| 15 Minuten | Alle 15 Minuten, in denen ein bestimmtes Ereignis aufgetreten ist (abgerundet). Das erste Dimensionselement sind die ersten 15 Minuten im Datumsbereich und das letzte Dimensionselement die letzten 15 Minuten im Datumsbereich. |
+| 30 Minuten | Alle 30 Minuten, die ein bestimmtes Ereignis aufgetreten ist (abgerundet). Das erste Dimensionselement sind die ersten 30 Minuten im Datumsbereich und das letzte Dimensionselement die letzten 30 Minuten im Datumsbereich. |
+| 5 Minuten | Alle 5 Minuten, in denen ein bestimmtes Ereignis aufgetreten ist (abgerundet). Das erste Dimensionselement sind die ersten 15 Minuten im Datumsbereich und das letzte Dimensionselement die letzten 5 Minuten im Datumsbereich. |
+| [!UICONTROL Tag] | Der Tag, an dem ein bestimmtes Ereignis aufgetreten ist. Das erste Dimensionselement ist der erste Tag im Datumsbereich und das letzte Dimensionselement der letzte Tag im Datumsbereich. |
+| [!UICONTROL Tag des Monats] | Der Tag des Monats, an dem ein bestimmtes Ereignis aufgetreten ist. Das erste Dimensionselement ist der erste Tag des Monats im Datumsbereich und das letzte Dimensionselement der letzte Tag des Monats im Datumsbereich. |
+| [!UICONTROL Wochentag] | Der Wochentag, an dem ein bestimmtes Ereignis aufgetreten ist. Das erste Dimensionselement ist der erste Wochentag im Datumsbereich und das letzte Dimensionselement der letzte Wochentag im Datumsbereich. |
+| [!UICONTROL Tag des Monats] | Der Tag des Monats, an dem ein bestimmtes Ereignis aufgetreten ist. Das erste Dimensionselement ist der erste Tag des Monats im Datumsbereich und das letzte Dimensionselement der letzte Tag des Monats im Datumsbereich. |
+| Ereignistiefe | Weist jeder Ereignisinteraktion innerhalb einer Sitzung sequenzielle numerische Werte (1, 2, 3 usw.) zu. Mit dieser Dimension können Sie eine detaillierte Nachverfolgung und Analyse ermöglichen, wo im sequenziellen Fluss von Benutzerinteraktionen innerhalb einer Sitzung bestimmte Ereignisse auftreten. Sie können den Verlauf von Ereignissen vom Anfang bis zum Ende innerhalb einer begrenzten Sitzung verfolgen. Ein Beispiel: Ein Besucher landet auf Ihrer Homepage (Ereignis 1, Sitzungsstart), verwendet die Suchfunktion (Ereignis 2), zeigt eine Produktdetailseite (Ereignis 3) an, fügt zum Warenkorb hinzu (Ereignis 4), geht zum Checkout (Ereignis 5) über und schließt einen Kauf ab (Ereignis 6, Sitzungsende). Sie können [!UICONTROL Ereignistiefe] jetzt in einer Segmentdefinition verwenden, um Daten basierend auf der Interaktionstiefe zu segmentieren. |
+| [!UICONTROL Stunde] | Die Stunde, in der ein bestimmtes Ereignis aufgetreten ist (abgerundet). Das erste Dimensionselement ist die erste Stunde im Datumsbereich und das letzte Dimensionselement die letzte Stunde im Datumsbereich. |
+| [!UICONTROL Stunde des Tages] | Die Stunde des Tages, an dem ein bestimmtes Ereignis aufgetreten ist (abgerundet). Das erste Dimensionselement ist die erste Stunde des Tages im Datumsbereich und das letzte Dimensionselement die letzte Stunde des Tages im Datumsbereich. |
+| [!UICONTROL Minute] | Die Minute, in der ein bestimmtes Ereignis aufgetreten ist (abgerundet). Das erste Dimensionselement ist die erste Minute im Datumsbereich und das letzte Dimensionselement die letzte Minute im Datumsbereich. |
+| [!UICONTROL Minute der Stunde] | Die Minute der Stunde, in der ein bestimmtes Ereignis aufgetreten ist (abgerundet). Das erste Dimensionselement ist die erste Minute der Stunde im Datumsbereich und das letzte Dimensionselement die letzte Minute der Stunde im Datumsbereich. |
+| [!UICONTROL Monat] | Der Monat, in dem ein bestimmtes Ereignis aufgetreten ist. Das erste Dimensionselement ist der erste Monat im Datumsbereich und das letzte Dimensionselement der letzte Monat im Datumsbereich. |
+| [!UICONTROL Monat des Jahres] | Der Monat des Jahres, in dem ein bestimmtes Ereignis aufgetreten ist. Das erste Dimensionselement ist der erste Monat des Jahres im Datumsbereich und das letzte Dimensionselement der letzte Monat des Jahres im Datumsbereich. |
+| [!UICONTROL Quartal] | Das Quartal, in dem ein bestimmtes Ereignis aufgetreten ist. Das erste Dimensionselement ist das erste Quartal im Datumsbereich und das letzte Dimensionselement das letzte Quartal im Datumsbereich. |
+| [!UICONTROL Quartal des Jahres] | Das Quartal des Jahres, in dem ein bestimmtes Ereignis aufgetreten ist. Das erste Dimensionselement ist das erste Quartal des Jahres im Datumsbereich und das letzte Dimensionselement das letzte Quartal des Jahres im Datumsbereich. |
+| [!UICONTROL Sekunde] | Die Sekunde, in der ein bestimmtes Ereignis aufgetreten ist (abgerundet). Das erste Dimensionselement ist die erste Sekunde im Datumsbereich und das letzte Dimensionselement die letzte Sekunde im Datumsbereich.  |
+| [!UICONTROL Woche] | Die Woche, in der ein bestimmtes Ereignis aufgetreten ist. Das erste Dimensionselement ist die erste Woche im Datumsbereich und das letzte Dimensionselement die letzte Woche im Datumsbereich. |
+| [!UICONTROL Woche des Jahres] | Die Woche des Jahres, in dem ein bestimmtes Ereignis aufgetreten ist. Das erste Dimensionselement ist die erste Woche des Jahres im Datumsbereich und das letzte Dimensionselement die letzte Woche des Jahres im Datumsbereich. |
+| [!UICONTROL Jahr] | Das Jahr, in dem ein bestimmtes Ereignis aufgetreten ist. Das erste Dimensionselement ist das erste Jahr im Datumsbereich und das letzte Dimensionselement das letzte Jahr im Datumsbereich. |
+
+
+## Standardmetriken {#standard-metrics}
+
+| Name der Komponente | Hinweise |
+| --- | --- |
+| [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}<br/>[!UICONTROL Accounts] | Basiert auf der Konto-ID, die in einer [!UICONTROL Verbindung] angegeben ist. |
+| [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}<br/>[!UICONTROL Buying Group] | Die Einkaufsgruppen, basierend auf der im Abschnitt „Verbindung[!UICONTROL  angegebenen Einkaufsgruppen]. |
+| [!UICONTROL Ereignisse] | Die Anzahl der Zeilen aus allen Ereignisdatensätzen in einer [!UICONTROL Verbindung]. |
+| [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}<br/>[!UICONTROL Global-Konten] | Basiert auf der globalen Konto-ID, die in der [!UICONTROL Verbindung“ angegeben ]. |
+| [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}<br/>[!UICONTROL Opportunities] | Die Opportunitys, basierend auf der in der (Verbindung[!UICONTROL  angegebenen Opportunity]. |
+| [!UICONTROL Personen] | Basiert auf der Personen-ID, die in einer [!UICONTROL Verbindung] angegeben ist. |
+| [!UICONTROL Sitzung endet] | Die Anzahl der Ereignisse, die das letzte Ereignis einer Sitzung waren. Ähnlich wie [!UICONTROL Sitzung beginnt] kann dies auch in einer Segmentdefinition verwendet werden, um Dinge bis zum letzten Ereignis jeder Sitzung zu segmentieren.<p>Diese Komponente muss in Ihrer Datenansicht für die folgende [berechnete Metrik](/help/components/calc-metrics/default-calcmetrics.md) enthalten sein, um in Workspace verfügbar zu sein: <ul><li>Endrate der Sitzung</li></p> |
+| [!UICONTROL Sitzung beginnt] | Die Anzahl der Ereignisse, die das erste Ereignis einer Sitzung waren. Bei Verwendung in einer Segmentdefinition (z. B. &quot;[!UICONTROL Sitzung beginnt] existiert„) wird nur das erste Ereignis jeder Sitzung segmentiert.<p>Diese Komponente muss in Ihrer Datenansicht für die folgende [berechnete Metrik](/help/components/calc-metrics/default-calcmetrics.md) enthalten sein, um in Workspace verfügbar zu sein: <ul><li>Startrate der Sitzung</li></p> |
+| [!UICONTROL Sitzungen] | Basiert auf den Sitzungseinstellungen der Datenansicht. |
+| [!UICONTROL Aufgewendete Zeit (Sekunden)] | Addiert die Zeit zwischen zwei verschiedenen Werten für eine Dimension.<p>Diese Komponente muss in Ihrer Datenansicht für die folgende [berechnete Metrik](/help/components/calc-metrics/default-calcmetrics.md) enthalten sein, um in Workspace verfügbar zu sein: <ul><li>Aufgewendete Zeit pro Person  </li><li>Aufgewendete Zeit pro Sitzung</li></p> |

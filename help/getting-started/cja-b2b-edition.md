@@ -6,9 +6,9 @@ feature: Basics
 role: User, Admin
 badgePremium: label="B2B edition"
 exl-id: 89e482b8-8082-4413-8fd3-cc1331780af4
-source-git-commit: 326a82e93c0c8d57db224023ed5f3a7ab94a8997
+source-git-commit: 65b4339b4a1b27c41cfe442482a54661989d704b
 workflow-type: tm+mt
-source-wordcount: '438'
+source-wordcount: '428'
 ht-degree: 0%
 
 ---
@@ -46,6 +46,4 @@ Customer Journey Analytics B2B edition unterstützt B2B-Unternehmen bei der Abst
 >
 >[B2B-Konzepte und -Funktionen](cja-b2b-concepts-features.md)
 >[B2B-Schnellstartanleitung](cja-b2b-quick-start-guide.md)
->B2B-Leitplanken (Dokumentation: t.b.d.)
->B2C- zu B2B-Migration (Dokument t.b.d.)
 >

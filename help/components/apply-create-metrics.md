@@ -4,10 +4,10 @@ title: Metriken
 feature: Metrics
 exl-id: 4edfb5d7-da20-4bd8-8041-387b291daf96
 role: User
-source-git-commit: defe6ad6fc796a230525ba9b178d744caf340e2f
+source-git-commit: 65b4339b4a1b27c41cfe442482a54661989d704b
 workflow-type: tm+mt
-source-wordcount: '864'
-ht-degree: 8%
+source-wordcount: '886'
+ht-degree: 9%
 
 ---
 
@@ -35,11 +35,19 @@ Adobe bietet verschiedene Arten von Metriken zur Verwendung in Analysis Workspac
    * **Sitzungen**: Die Sitzungsmetrik in Customer Journey Analytics wird von Ihnen als Teil der Konfiguration der Sitzungseinstellungen in Ihrer Datenansicht definiert. Siehe [Sitzungseinstellungen](/help/data-views/session-settings.md).
    * **Ereignisse**: Die Ereignismetrik in Customer Journey Analytics besteht aus den Ereignissen, die Teil eines Ereignisdatensatzes sind, den Sie als Teil Ihrer Verbindung konfiguriert haben.
 
+  Siehe [Standardmetriken](#standard-metrics) für die vollständige Liste der Standardmetriken.
+
 * **Berechnete Metriken** ![Rechner](/help/assets/icons/Calculator.svg): Benutzerdefinierte Metriken, die auf Standardmetriken, statischen Zahlen oder algorithmischen Funktionen basieren.
 
 * **Vorlagen für berechnete Metriken** ![AdobeLogoSmall](/help/assets/icons/AdobeLogoSmall.svg) : Von Adobe definierte Metriken, die sich ähnlich wie berechnete Metriken verhalten. Sie können sie unverändert in Workspace-Projekten verwenden oder eine Kopie speichern, um die Logik anzupassen. Siehe [Standardberechnete Metriken](calc-metrics/cm-workflow/../default-calcmetrics.md).
 
 Sie können sehen, ob eine Metrik genehmigt wurde ![Symbol „Genehmigt](https://spectrum.adobe.com/static/icons/ui_18/CheckmarkSize100.svg) oder nicht. Wenn Sie weitere Details zu einer Metrik wünschen, bewegen Sie den Mauszeiger über die Metrik und wählen Sie ![Infosymbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg) aus. Siehe [Komponenteninformationen](use-components-in-workspace.md#component-info) für weitere Informationen.
+
+
+## Standardmetriken
+
+Vollständige Liste der Standardmetriken in Customer Journey Analytics:
+{{standard-metrics}}
 
 ## Vergleichen von Metriken mit verschiedenen Attributionsmodellen
 

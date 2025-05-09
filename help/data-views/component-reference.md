@@ -5,10 +5,10 @@ exl-id: e23ce27a-77ab-4641-a126-93f00d4e6e14
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: eb2ae192a0c784b641f42a295dfe815c99931085
+source-git-commit: 65b4339b4a1b27c41cfe442482a54661989d704b
 workflow-type: tm+mt
-source-wordcount: '1272'
-ht-degree: 73%
+source-wordcount: '641'
+ht-degree: 77%
 
 ---
 
@@ -24,29 +24,15 @@ Die meisten Dimensionen und Metriken in Customer Journey Analytics basieren auf 
 
 Diese erforderlichen Standardkomponenten werden standardmäßig jeder Datendatei-Ansicht hinzugefügt. Sie sind von wesentlicher Bedeutung für die Reporting-Funktionen, die Customer Journey Analytics bietet.
 
-| Name der Komponente | Dimension oder Metrik | Hinweise |
-| --- | --- | --- |
-| [!UICONTROL Personen] | Metrik | Basiert auf der Personen-ID, die in einer [!UICONTROL Verbindung] angegeben ist. |
-| [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}<br/>[!UICONTROL Accounts] | Metrik | Basiert auf der Konto-ID, die in einer [!UICONTROL Verbindung] angegeben ist. |
-| [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}<br/>[!UICONTROL Global-Konten] | Metrik | Basiert auf der globalen Konto-ID, die in der [!UICONTROL Verbindung“ angegeben &#x200B;]. |
-| [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}<br/>[!UICONTROL Opportunity] | Metrik | Die Opportunitys, basierend auf der in der (Verbindung[!UICONTROL &#x200B; angegebenen Opportunity]. |
-| [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}<br/>[!UICONTROL Buying Group] | Metrik | Die Einkaufsgruppen, basierend auf der im Abschnitt „Verbindung[!UICONTROL &#x200B; angegebenen Einkaufsgruppen]. |
-| [!UICONTROL Sitzungen] | Metrik | Basiert auf den Sitzungseinstellungen der Datenansicht. |
-| [!UICONTROL Ereignisse] | Metrik | Die Anzahl der Zeilen aus allen Ereignisdatensätzen in einer [!UICONTROL Verbindung]. |
-| [!UICONTROL Sekunden] | Dimension | Die Sekunde, in der ein bestimmtes Ereignis aufgetreten ist (abgerundet). Das erste Dimensionselement ist die erste Sekunde im Datumsbereich und das letzte Dimensionselement die letzte Sekunde im Datumsbereich.  |
-| [!UICONTROL Minute] | Dimension | Die Minute, in der ein bestimmtes Ereignis aufgetreten ist (abgerundet). Das erste Dimensionselement ist die erste Minute im Datumsbereich und das letzte Dimensionselement die letzte Minute im Datumsbereich. |
-| [!UICONTROL Stunde] | Dimension | Die Stunde, in der ein bestimmtes Ereignis aufgetreten ist (abgerundet). Das erste Dimensionselement ist die erste Stunde im Datumsbereich und das letzte Dimensionselement die letzte Stunde im Datumsbereich. |
-| [!UICONTROL Tag] | Dimension | Der Tag, an dem ein bestimmtes Ereignis aufgetreten ist. Das erste Dimensionselement ist der erste Tag im Datumsbereich und das letzte Dimensionselement der letzte Tag im Datumsbereich. |
-| [!UICONTROL Woche] | Dimension | Die Woche, in der ein bestimmtes Ereignis aufgetreten ist. Das erste Dimensionselement ist die erste Woche im Datumsbereich und das letzte Dimensionselement die letzte Woche im Datumsbereich. |
-| [!UICONTROL Monat] | Dimension | Der Monat, in dem ein bestimmtes Ereignis aufgetreten ist. Das erste Dimensionselement ist der erste Monat im Datumsbereich und das letzte Dimensionselement der letzte Monat im Datumsbereich. |
-| [!UICONTROL Quartal] | Dimension | Das Quartal, in dem ein bestimmtes Ereignis aufgetreten ist. Das erste Dimensionselement ist das erste Quartal im Datumsbereich und das letzte Dimensionselement das letzte Quartal im Datumsbereich. |
-| [!UICONTROL Jahr] | Dimension | Das Jahr, in dem ein bestimmtes Ereignis aufgetreten ist. Das erste Dimensionselement ist das erste Jahr im Datumsbereich und das letzte Dimensionselement das letzte Jahr im Datumsbereich. |
-| Ereignistiefe | Dimension | Weist jeder Ereignisinteraktion innerhalb einer Sitzung sequenzielle numerische Werte (1, 2, 3 usw.) zu. Mit dieser Dimension können Sie den Verlauf von Ereignissen vom Anfang bis zum Ende innerhalb einer begrenzten Sitzung verfolgen. Wenn es beispielsweise in einer Segmentdefinition mit einer Regel verwendet wird, die als **[!UICONTROL Ereignistiefe]** **[!UICONTROL gleich]** `1` in einem Sitzungs-Container definiert ist, definieren Sie ein Segment, das nur bis zum ersten Ereignis jeder Sitzung segmentiert. |
-| [!UICONTROL Sitzung beginnt] | Metrik | Die Anzahl der Ereignisse, die das erste Ereignis einer Sitzung waren. Bei Verwendung in einer Segmentdefinition (z. B. &quot;[!UICONTROL Sitzung beginnt] existiert„) wird nur das erste Ereignis jeder Sitzung segmentiert.<p>Diese Komponente muss in Ihrer Datenansicht für die folgende [berechnete Metrik](/help/components/calc-metrics/default-calcmetrics.md) enthalten sein, um in Workspace verfügbar zu sein: <ul><li>Startrate der Sitzung</li></p> |
-| [!UICONTROL Sitzung endet] | Metrik | Die Anzahl der Ereignisse, die das letzte Ereignis einer Sitzung waren. Ähnlich wie [!UICONTROL Sitzung beginnt] kann dies auch in einer Segmentdefinition verwendet werden, um Dinge bis zum letzten Ereignis jeder Sitzung zu segmentieren.<p>Diese Komponente muss in Ihrer Datenansicht für die folgende [berechnete Metrik](/help/components/calc-metrics/default-calcmetrics.md) enthalten sein, um in Workspace verfügbar zu sein: <ul><li>Endrate der Sitzung</li></p> |
-| [!UICONTROL Aufgewendete Zeit (Sekunden)] | Metrik | Addiert die Zeit zwischen zwei verschiedenen Werten für eine Dimension.<p>Diese Komponente muss in Ihrer Datenansicht für die folgende [berechnete Metrik](/help/components/calc-metrics/default-calcmetrics.md) enthalten sein, um in Workspace verfügbar zu sein: <ul><li>Aufgewendete Zeit pro Person  </li><li>Aufgewendete Zeit pro Sitzung</li></p> |
+### Standardabmessungen
 
-{style="table-layout:auto"}
+{{standard-dimensions}}
+
+
+### Standardmetriken
+
+{{standard-metrics}}
+
 
 ## Optionale Standardkomponenten {#optional}
 
@@ -55,21 +41,21 @@ Optionale Standardkomponenten sind unter **[!UICONTROL Datenansichten]** > **[!U
 | Name der Komponente | Dimension oder Metrik | Anmerkungen und Werte |
 | --- | --- | --- |
 | [!UICONTROL Vormittag/Nachmittag] | Zeitunterteilungsdimension | Vormittag oder Nachmittag |
-| [!UICONTROL Batch-ID] | Dimension | Kennung für den Experience Platform-Batch, zu [!UICONTROL &#x200B; ein &#x200B;] gehört hat. |
-| [!UICONTROL Datensatz-ID] | Dimension | Kennung für den Experience Platform-Datensatz, zu [!UICONTROL &#x200B; ein &#x200B;] gehört hat. |
+| [!UICONTROL Batch-ID] | Dimension | Kennung für den Experience Platform-Batch, zu [!UICONTROL  ein ] gehört hat. |
+| [!UICONTROL Datensatz-ID] | Dimension | Kennung für den Experience Platform-Datensatz, zu [!UICONTROL  ein ] gehört hat. |
 | [!UICONTROL Tag des Monats] | Zeitunterteilungsdimension | 1–31 |
 | [!UICONTROL Wochentag] | Zeitunterteilungsdimension | Montag, Dienstag, Mittwoch, Donnerstag, Freitag, Samstag, Sonntag |
 | [!UICONTROL Tag des Jahres] | Zeitunterteilungsdimension | 1–366 |
 | [!UICONTROL Stunde des Tages] | Zeitunterteilungsdimension | 0–23 |
-| [!UICONTROL &#x200B; Monat des Jahres] | Zeitunterteilungsdimension | Januar–Dezember |
+| [!UICONTROL  Monat des Jahres] | Zeitunterteilungsdimension | Januar–Dezember |
 | [!UICONTROL Erstmalige Sitzungen] | Metrik | Die definierte erste Sitzung einer Person im Reporting-Zeitraum. [Weitere Informationen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html?lang=de#new-repeat) |
 | [!UICONTROL Rückkehrende Sitzungen] | Metrik | Die Anzahl der Sitzungen, die nicht die erste Sitzung einer Person waren. [Weitere Informationen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html?lang=de#new-repeat) |
 | [!UICONTROL Personen-ID] | Dimension | Für jedes in Experience Platform definierte Datensatzschema kann ein eigener Satz von einer oder mehreren Identitäten definiert und mit einem Identity-Namespace verknüpft werden. Jede dieser Identitäten kann als Personen-ID verwendet werden. Beispiele sind Cookie-ID, zugeordnete ID, Benutzer-ID und Trackingcode. Die Dimension [!UICONTROL Personen-ID] ist die Grundlage für die Kombination von Datensätzen und die Identifizierung von eindeutigen Personen in Customer Journey Analytics.<p>Mögliche Anwendungsfälle sind:<ul><li>Erstellen Sie ein Segment für einen bestimmten Personen-ID-Wert, um alles nach dem Verhalten dieses Benutzers zu segmentieren.</li><li>Debugging: Prüfen, ob die Daten für eine bestimmte Cookie-ID (oder eine bestimmte Kunden-ID) vorhanden sind.</li><li>Identifizieren der Benutzer, die bei einem Callcenter angerufen haben.</li></ul> |
 | [!UICONTROL Personen-ID-Namespace] | Dimension | Aus welchem ID-Typ die [!UICONTROL Personen-ID] besteht. Beispiele sind: `email address`, `cookie ID` und `Analytics ID` |
-| [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}<br/>[!UICONTROL Global-Konto-ID] | Dimension | Die [!UICONTROL Globale Konto-ID], wenn Sie den Container Globales Konto in Ihrer Verbindung verwenden. |
-| [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}<br/>[!UICONTROL Account-ID] | Dimension | Die [!UICONTROL Konto-ID], wenn Sie den Konto-Container in Ihrer Verbindung verwenden. |
-| [!BADGE B2B edition-]{type=Informative url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}<br/>[!UICONTROL -ID] | Dimension | Die [!UICONTROL Opportunity-ID], wenn Sie den Opportunity-Container in Ihrer Verbindung verwenden. |
-| [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}<br/>[!UICONTROL Buying Group ID] | Dimension | Die [!UICONTROL Einkaufsgruppen-ID], wenn Sie den Einkaufsgruppen-Container in Ihrer Verbindung verwenden. |
+| [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}<br/>[!UICONTROL Global-Konto-ID] | Dimension | Die [!UICONTROL Globale Konto-ID], wenn Sie den Container Globales Konto in Ihrer Verbindung verwenden. |
+| [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}<br/>[!UICONTROL Account-ID] | Dimension | Die [!UICONTROL Konto-ID], wenn Sie den Konto-Container in Ihrer Verbindung verwenden. |
+| [!BADGE B2B edition-]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}<br/>[!UICONTROL -ID] | Dimension | Die [!UICONTROL Opportunity-ID], wenn Sie den Opportunity-Container in Ihrer Verbindung verwenden. |
+| [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}<br/>[!UICONTROL Buying Group ID] | Dimension | Die [!UICONTROL Einkaufsgruppen-ID], wenn Sie den Einkaufsgruppen-Container in Ihrer Verbindung verwenden. |
 | [!UICONTROL Quartal des Jahres] | Zeitunterteilungsdimension | Q1, Q2, Q3, Q4 |
 | [!UICONTROL Sitzung wiederholen] | Metrik | Die Anzahl der Sitzungen, die nicht die allererste Sitzung einer Person waren. [Weitere Informationen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html?lang=de#new-repeat) |
 | [!UICONTROL Sitzungstyp] | Dimension | Diese Dimension hat zwei Werte: 1. [!UICONTROL Erstmalig] und 2. Wiederkehrend. Der Zeileneintrag [!UICONTROL Erstmalig] enthält das gesamte Verhalten (d. h. die Metriken für diese Dimension) in einer Sitzung, die als erste Sitzung einer Person definiert wurde. Alles andere ist im Zeileneintrag [!UICONTROL Wiederkehrend] enthalten (vorausgesetzt, dass alles zu einer Sitzung gehört). Wenn Metriken nicht Teil einer Sitzung sind, fallen sie in den Bucket „Nicht zutreffend“ für diese Dimension. [Weitere Informationen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html?lang=de#new-repeat) |

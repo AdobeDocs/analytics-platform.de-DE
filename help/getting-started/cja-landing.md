@@ -4,10 +4,10 @@ description: Landingpage von Customer Journey Analytics.
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 7f67c497-386b-4442-a502-6b492f35c6e6
-source-git-commit: 720751130d0f66bddffd13c6f160a85fcc7a7206
+source-git-commit: 65b4339b4a1b27c41cfe442482a54661989d704b
 workflow-type: tm+mt
-source-wordcount: '884'
-ht-degree: 90%
+source-wordcount: '737'
+ht-degree: 80%
 
 ---
 
@@ -19,7 +19,7 @@ Mit Customer Journey Analytics können Sie steuern, wie Sie Ihre Online- und Off
 
 ## Neue Funktionen
 
-Werfen Sie einen Blick auf die neuesten Verbesserungen in Customer Journey Analytics und die Dokumentation! Eine umfassende Liste der Funktionen, Verbesserungen und Fehlerbehebungen finden Sie in den detaillierten [Versionshinweisen](../release-notes/latest.md). Besuchen Sie die [Seite zu den Dokumentationsaktualisierungen](../release-notes/doc-changes.md), um über die neuesten Änderungen auf dem Laufenden zu bleiben.
+Werfen Sie einen Blick auf die neuesten Verbesserungen in Customer Journey Analytics und die Dokumentation! Eine umfassende Liste der Funktionen, Verbesserungen und Fehlerbehebungen finden Sie in den detaillierten [Versionshinweisen](../release-notes/latest.md). Besuchen Sie die [Seite mit Dokumentationsaktualisierungen](../release-notes/doc-changes.md), um über die neuesten Dokumentationsaktualisierungen auf dem Laufenden zu bleiben.
 
 >[!BEGINTABS]
 
@@ -29,47 +29,60 @@ Mit Content Analytics können Sie schnell und einfach große Mengen an Inhaltsda
 
 [![Bild](assets/learn-more-button.svg)](/help/content-analytics/content-analytics.md)
 
+>[!TAB Ereignistiefe]
+
+Die Ereignistiefe ist eine neue Standarddimension und bietet neue Möglichkeiten, die Positionierung von Ereignissen in Kundensitzungen zu messen und besser zu verstehen. Die Dimension „Ereignistiefe“ ermöglicht eine detaillierte Verfolgung und Analyse, wo im sequenziellen Fluss von Benutzerinteraktionen innerhalb einer Sitzung bestimmte Ereignisse auftreten.
+
+[![Bild](assets/learn-more-button.svg)](/help/components/dimensions/overview.md#standard-dimensions)
+
+
 >[!TAB Freigegebene Metriken und Dimensionen]
 
 Freigegebene Metriken und Dimensionen bieten einen zentralen Speicherort zum Verwalten von Dimensionen und Metriken, die in einer beliebigen Anzahl von Datenansichten verwendet werden können. Diese Komponenten sind besonders für Organisationen nützlich, die mehrere Datenansichten verwenden, insbesondere wenn diese Datenansichten gemeinsame Komponenteneinstellungen haben.
 
 [![Bild](assets/learn-more-button.svg)](/help/data-views/shared-metrics-dimensions/smd-overview.md)
 
->[!TAB KI-Assistent]
 
-Der KI-Assistent ist eine Dialogerfahrung, die es Fachleuten ermöglicht, Aufgaben schnell auszuführen – unabhängig davon, ob sie Konzepte verstehen, Probleme beheben oder nach Informationen suchen wollen. Er ermöglicht es auch Nichtexpertinnen und -experten, Expertenaufgaben durchzuführen, und erhöht die allgemeine Qualität der Arbeit.
+<!--
+>[!TAB AI Assistant] 
 
-[![Bild](assets/learn-more-button.svg)](/help/ai-assistant.md)
+AI Assistant is a conversational experience that allows practitioners to perform tasks at a fast pace - whether its understanding concepts, troubleshooting problems, or searching through information. It also allows non-experts to perform expert tasks and increases the overall quality of work.
 
-
->[!TAB Geführte Analyse]
-
-Die geführte Analyse ist jetzt direkt in Analysis Workspace verfügbar, sodass Benutzende Dashboards mit umfassenden Einblicken aus Bedienfeldern, Visualisierungen und geführten Analysen erstellen können.
-
-[![Bild](assets/learn-more-button.svg)](/help/guided-analysis/overview.md)
+[![image](assets/learn-more-button.svg)](/help/ai-assistant.md)
 
 
->[!TAB Intelligente Beschriftungen v2]
+>[!TAB Guided Analysis] 
 
-Intelligente Beschriftungen werden jetzt mit zusätzlichen Verbesserungen der Benutzeroberfläche unterstützt für die Visualisierungen [Linie](/help/analysis-workspace/visualizations/line.md) (einschließlich mehrerer Linien), [Balken](/help/analysis-workspace/visualizations/bar.md), [Horizontalbalken](/help/analysis-workspace/visualizations/horizontal-bar.md), [Bereich](/help/analysis-workspace/visualizations/area.md) (einschließlich mehrerer Bereichslinien), [Ring](/help/analysis-workspace/visualizations/donut.md), [Fallout](/help/analysis-workspace/visualizations/fallout/fallout-flow.md) und [Fluss](/help/analysis-workspace/visualizations/c-flow/flow.md).
+Guided Analysis is now available directly from within Analysis Workspace, enabling users to create dashboards with comprehensive insights from panels, visualizations, and guided analyses.
 
-[![Bild](assets/learn-more-button.svg)](/help/components/c-intelligent-alerts/intelligent-alerts.md)
-
->[!TAB Warnhinweise]
-
-Warnhinweise ermöglichen es Ihnen, sich über geänderte Prozentsätze oder bestimmte Datenpunkte benachrichtigen zu lassen. Beispielsweise können Sie eine Vorschau anzeigen, wie oft ein Warnhinweis ausgelöst wird, Warnhinweise per E-Mail oder SMS versenden oder gestapelte Warnhinweise erstellen.
-
-[![Bild](assets/learn-more-button.svg)](/help/components/c-intelligent-alerts/intelligent-alerts.md)
+[![image](assets/learn-more-button.svg)](/help/guided-analysis/overview.md)
 
 
->[!TAB Zusammenfassungsdaten]
 
-Ermöglicht das Einbinden von Zeitreihendaten, die über keine Personen-ID verfügen. Diese Zeitreihendaten können zur Unterstützung verschiedener Anwendungsfälle verwendet werden, z. B.
+>[!TAB Intelligent captions v2] 
 
-- Darstellung von Leistungsindikatoren auf hoher Ebene als Teil von oder neben den Daten auf Ereignisebene.
-- Hochladen von Zielen oder Zielvorgaben auf stündlicher oder täglicher Basis und anschließendes Positionieren dieser Ziele oder Zielvorgaben anhand von Metriken auf Ereignisebene.
+Intelligent captions are now supported, with additional interface improvements, for [Line](/help/analysis-workspace/visualizations/line.md) (including multi-line), [Bar](/help/analysis-workspace/visualizations/bar.md), [Horizontal bar](/help/analysis-workspace/visualizations/horizontal-bar.md), [Area](/help/analysis-workspace/visualizations/area.md) (including multiple Area lines), [Donut](/help/analysis-workspace/visualizations/donut.md), [Fallout](/help/analysis-workspace/visualizations/fallout/fallout-flow.md), and [Flow](/help/analysis-workspace/visualizations/c-flow/flow.md) visualizations.
 
-[![Bild](assets/learn-more-button.svg)](/help/data-views/summary-data.md)
+[![image](assets/learn-more-button.svg)](/help/components/c-intelligent-alerts/intelligent-alerts.md)
+
+
+>[!TAB Alerts] 
+
+Alerts allow you to be notified based on changed percentages or specific data points. You can preview how often an alert will trigger, send alerts by email or SMS, create stacked alerts, and more.
+
+[![image](assets/learn-more-button.svg)](/help/components/c-intelligent-alerts/intelligent-alerts.md)
+
+
+>[!TAB Summary data] 
+
+Allows you to bring in time-series data that does not have a person ID. This time-series data can be used to support various use cases, such as 
+
+- Presenting high-level performance indicators as part of or next to event-level data. 
+- Uploading targets or goals at an hourly or daily basis, then positioning these targets or goals against event-level metrics. 
+
+[![image](assets/learn-more-button.svg)](/help/data-views/summary-data.md)
+
+-->
 
 >[!TAB Grafikbasierte Zuordnung*]
 
@@ -172,4 +185,4 @@ Lernen Sie die Unterschiede zwischen Customer Journey Analytics und Adobe Analyt
 
 
 <table style="table-layout:auto" class="tablelayout-is-fixed"><tbody><tr style="border: 0;"><td><img src="./assets/newsletter.png"></td><td>
-<b>Bleiben Sie auf dem Laufenden, tragen Sie zur Community bei und verbessern Sie Ihr Erlebnis mit Customer Journey Analytics!</b><br>Besuchen Sie die Adobe Analytics-Community, um die Funktionalität mit anderen Benutzenden zu erörtern. <a href="https://experienceleaguecommunities.adobe.com/t5/adobe-analytics/ct-p/adobe-analytics-community?profile.language=de&lang=de">Werden Sie noch heute Teil der Community!</a></td></tr></tbody></table>
+<b>Bleiben Sie auf dem Laufenden, tragen Sie zur Community bei und verbessern Sie Ihr Erlebnis mit Customer Journey Analytics!</b><br>Besuchen Sie die Adobe Analytics-Community, um die Funktionalität mit anderen Benutzenden zu erörtern. <a href="https://experienceleaguecommunities.adobe.com/t5/adobe-analytics/ct-p/adobe-analytics-community?lang=de">Werden Sie noch heute Teil der Community!</a></td></tr></tbody></table>
