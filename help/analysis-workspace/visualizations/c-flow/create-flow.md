@@ -4,10 +4,10 @@ title: Konfigurieren einer Flussvisualisierung
 feature: Visualizations
 exl-id: 7055cbc9-19b3-40f0-b8d4-52d241224827
 role: User
-source-git-commit: 933b4005724aa438c3daeb58191e940821b5bb5f
+source-git-commit: a7350b6fc8fa75de07238543ed0db48af42b7577
 workflow-type: tm+mt
-source-wordcount: '1709'
-ht-degree: 78%
+source-wordcount: '1735'
+ht-degree: 73%
 
 ---
 
@@ -109,7 +109,7 @@ Sie können den Beginn oder das Ende des Pfads konfigurieren, an dem Sie interes
    | **[!UICONTROL Begrenzung auf erstes/letztes Auftreten]** | Begrenzen Sie Pfade auf diejenigen, die mit dem ersten/letzten Auftreten einer Dimension, eines Elements oder einer Metrik beginnen oder enden. Eine ausführlichere Erläuterung finden Sie unter [Begrenzung auf erstes/letztes Auftreten](#example-scenario-for-limit-to-firstlast-occurrence). |
    | **[!UICONTROL Anzahl der Spalten]** | Die Anzahl der Spalten, die Ihr Flussdiagramm enthalten soll. Sie können maximal 5 Spalten angeben. |
    | **[!UICONTROL Erweiterte Elemente pro Spalte]** | Die Anzahl der Elemente, die jede Spalte enthalten soll. Sie können pro Spalte maximal 10 erweiterte Elemente angeben. |
-   | **[!UICONTROL Fluss-Container]** | Zur Pfadanalyse können Sie zwischen **[!UICONTROL Globales Konto]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}, **[!UICONTROL Account]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}, **[!UICONTROL Opportunity]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}, **[!UICONTROL Buying Group]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}, **[!UICONTROL Sessions]** und **[!UICONTROL Person]** wechseln. Diese Einstellungen helfen Ihnen, die Interaktion einer Person auf Personenebene (über Sitzungen hinweg) zu verstehen oder die Analyse auf eine einzelne Sitzung zu beschränken. |
+   | **[!UICONTROL Fluss-Container]** | Zur Pfadanalyse können Sie zwischen **[!UICONTROL Globales Konto]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}, **[!UICONTROL Account]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}, **[!UICONTROL Opportunity]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}, **[!UICONTROL Buying Group]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}, **[!UICONTROL Sessions]** und **[!UICONTROL Person]** wechseln. Diese Einstellungen helfen Ihnen, die Interaktion auf einer bestimmten Container-Ebene (sitzungsübergreifend) zu verstehen oder die Analyse auf eine einzelne Sitzung einzuschränken. |
 
    >[!IMPORTANT]
    >
@@ -174,7 +174,7 @@ Verwenden Sie ein Kontextmenü auf einem beliebigen Knoten in der Flussvisualisi
 | **[!UICONTROL Element ausschließen]** oder **[!UICONTROL Ausgeschlossene Elemente wiederherstellen]** | Entfernt einen bestimmten Knoten aus der Spalte und erstellt daraus automatisch einen Filter oben in der Spalte. Um das ausgeschlossene Element wiederherzustellen, wählen Sie im Kontextmenü **[!UICONTROL Ausgeschlossenes Element wiederherstellen]** aus. Sie können das Segment auch oben in der Spalte öffnen und die Box mit dem Element entfernen, das Sie gerade ausgeschlossen haben. |
 | **[!UICONTROL Trend]** | Mit dieser Option erstellen Sie ein Trenddiagramm für den Knoten. |
 | **[!UICONTROL Nächste Spalte anzeigen]** / **[!UICONTROL Vorherige Spalte anzeigen]** | Zeigt die nächste (rechte) oder vorherige (linke) Spalte der Visualisierung an. |
-| **[!UICONTROL Spalte ausblenden]**&#x200B;n | Blendet die ausgewählte Spalte aus der Visualisierung aus. |
+| **[!UICONTROL Spalte ausblenden]**n | Blendet die ausgewählte Spalte aus der Visualisierung aus. |
 | **[!UICONTROL Gesamte Spalte erweitern]** | Hiermit erweitern Sie eine Spalte so, dass alle Knoten angezeigt werden. In der Standardeinstellung werden nur die obersten fünf Knoten angezeigt. |
 | **[!UICONTROL Zielgruppe aus Auswahl erstellen]** | Erstellt eine Zielgruppe basierend auf der ausgewählten Spalte. |
 | **[!UICONTROL Gesamte Spalte reduzieren]** | Diese Option blendet alle Knoten in einer Spalte aus. |
@@ -196,7 +196,7 @@ Im folgenden Beispiel sind **alle** Vorkommen von *Produkthauptkategorie* und *Z
 
   Im folgenden Beispiel sind nur die **letzten** Vorkommen von *Produkthauptkategorie* und *Zum Warenkorb hinzufügen* in jedem Schritt des Flusses enthalten.
   ![Lint, Start](assets/limitonlast.png)
-* Die verwendete Reihe unterscheidet sich je nach Container. Bei Verwendung des Containers **[!UICONTROL Person]** besteht die Ereignisreihe aus der Sitzung. Bei Verwendung des Containers **[!UICONTROL Sitzung]** besteht die Ereignisreihe aus allen Ereignissen einer bestimmten Person im bereitgestellten Datumsbereich.
+* Die verwendete Reihe unterscheidet sich je nach Container. Wenn Sie den **[!UICONTROL Sitzungs]**-Container verwenden, ist die Ereignisserie auf eine Sitzung beschränkt.  Wenn Sie einen der anderen Container verwenden (z. B. **[!UICONTROL Person]** oder **[!UICONTROL Account]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"} oder **[!UICONTROL Opportunity]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}), basiert die Ereignisreihe auf dem angegebenen Container und umfasst möglicherweise mehrere Sitzungen.
 * Die Option **[!UICONTROL Begrenzung auf erstes/letztes Auftreten]** kann in den erweiterten Einstellungen konfiguriert werden, wenn ein Metrik- oder Dimensionselement in den Feldern **[!UICONTROL Beginnt mit]** oder **[!UICONTROL Endet mit]** verwendet wird.
 
 
