@@ -4,10 +4,10 @@ title: Text
 feature: Visualizations
 exl-id: 51cb6b57-682f-4475-b829-75def725be43
 role: User
-source-git-commit: 55b312552d32070875714a77e1177bf0da5f9d87
-workflow-type: ht
-source-wordcount: '265'
-ht-degree: 100%
+source-git-commit: 75d45cd6a2149bb44949ec6e0f3808ea4a6995f5
+workflow-type: tm+mt
+source-wordcount: '285'
+ht-degree: 86%
 
 ---
 
@@ -58,6 +58,10 @@ Um einen Hyperlink hinzuzufügen, markieren Sie den Text und wählen Sie im Men�
 
 ## Bilder hinzufügen {#images}
 
-Um ein Bild zu Ihrem Projekt hinzuzufügen, wählen Sie ![Bild](/help/assets/icons/Image.svg) im Menü aus und fügen Sie eine URL für ein öffentliches Bild ein. Die Bild-URL muss öffentlich zugänglich sein, mit `https` beginnen und das Format `.png`, `.jpeg`, `.jpg` oder `.gif` haben. Statische und animierte Bilder werden unterstützt.
+Um Ihrem Projekt ein Bild hinzuzufügen, wählen Sie ![Bild](/help/assets/icons/Image.svg) im Menü aus, geben Sie eine Bild-URL in **[!UICONTROL Bild-URL]** an (z. B. `https://www.adobe.com/uploads/2018/06/Adobe.png`) und klicken Sie auf **[!UICONTROL Speichern]**.
+
+Die Bild-URL muss öffentlich zugänglich sein, mit `https` beginnen und das Format `.png`, `.jpeg`, `.jpg` oder `.gif` haben. Statische und animierte Bilder werden unterstützt.
+
+Beachten Sie, dass das Einfügen eines Bildes per Drag-and-Drop nicht unterstützt wird.
 
 ![Textoptionen mit ausgewähltem Bildsymbol.](assets/image.png)
