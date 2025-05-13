@@ -25,7 +25,7 @@ ht-degree: 86%
 
 >[!BEGINSHADEBOX]
 
-_In diesem Artikel wird die Visualisierung „Text“ in_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics** beschrieben._<br/>_Unter [Text](https://experienceleague.adobe.com/de/docs/analytics/analyze/analysis-workspace/visualizations/text) finden Sie die Version dieses Artikels für_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**._
+_In diesem Artikel wird die Visualisierung „Text“ in_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics** beschrieben._<br/>_Unter [Text](https://experienceleague.adobe.com/de/docs/analytics/analyze/analysis-workspace/visualizations/text) finden Sie die Version dieses Artikels für_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics**._
 
 >[!ENDSHADEBOX]
 
