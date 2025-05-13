@@ -3,10 +3,8 @@ description: Erfahren Sie, wie Sie in Analysis Workspace einen Kommentar zu eine
 title: Hinzufügen und Anzeigen von Kommentaren in Projekten
 feature: Workspace Basics
 role: User
-hide: true
-hidefromtoc: true
 exl-id: 05f69a1c-31c2-40d8-ae8b-a084169897b1
-source-git-commit: ca619cfd0c4f4329c7069e387b5b4d919a53e9fb
+source-git-commit: fb7e0e911de2a4a702d6069ca2f53d7769ec608b
 workflow-type: tm+mt
 source-wordcount: '1683'
 ht-degree: 0%
@@ -14,6 +12,8 @@ ht-degree: 0%
 ---
 
 # Hinzufügen und Verwalten von Kommentaren in Projekten {#comment-on-projects}
+
+{{release-limited-testing}}
 
 Mithilfe von Kommentaren in Analysis Workspace können Sie im Rahmen eines Analysis Workspace-Projekts Erkenntnisse austauschen und Fragen stellen. Dadurch können Diskussionen über die Daten gestrafft werden, sodass Gespräche im Kontext der Daten geführt werden, die besprochen werden.
 
