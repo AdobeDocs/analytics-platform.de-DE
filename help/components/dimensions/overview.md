@@ -48,6 +48,6 @@ Customer Journey Analytics-Admins können Beschreibungen für Dimensionen und an
 
 >[!MORELIKETHIS]
 >
->[Entdecken Sie mit der Funktion „Ereignistiefe“ tiefere Kundeneinblicke](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/discover-deeper-customer-insights-with-adobe-customer-journey/ba-p/753947#M576)
+>[Entdecken Sie mit der Funktion „Ereignistiefe“ tiefere Kundeneinblicke](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/discover-deeper-customer-insights-with-adobe-customer-journey/ba-p/753947?profile.language=de#M576)
 >
 
