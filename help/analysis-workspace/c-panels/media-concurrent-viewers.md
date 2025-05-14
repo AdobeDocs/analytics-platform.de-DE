@@ -34,7 +34,7 @@ ht-degree: 94%
 
 >[!BEGINSHADEBOX]
 
-_In diesem Artikel wird das Panel Gleichzeitige Medienbetrachter in_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**&#x200B;_ beschrieben.<br/>_Unter [Panel Gleichzeitige Medienbetrachter](https://experienceleague.adobe.com/de/docs/analytics/analyze/analysis-workspace/panels/media-concurrent-viewers) finden Sie die Version dieses Artikels für_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics**._
+_In diesem Artikel wird das Panel Gleichzeitige Medienbetrachter in_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**_ beschrieben.<br/>_Unter [Panel Gleichzeitige Medienbetrachter](https://experienceleague.adobe.com/de/docs/analytics/analyze/analysis-workspace/panels/media-concurrent-viewers) finden Sie die Version dieses Artikels für_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**._
 
 >[!ENDSHADEBOX]
 
@@ -55,7 +55,7 @@ In Analysis Workspace umfasst die Metrik „Gleichzeitige Betrachter“ die Anza
 
 >[!BEGINSHADEBOX]
 
-Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Panel Gleichzeitige Medienbetrachter](https://video.tv.adobe.com/v/35186/?quality=12&learn=on&captions=ger){target="_blank"} finden Sie ein Demovideo.
+Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Panel Gleichzeitige Medienbetrachter](https://video.tv.adobe.com/v/26990/?quality=12&learn=on){target="_blank"} finden Sie ein Demovideo.
 
 {{videoaa}}
 

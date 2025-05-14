@@ -10,7 +10,7 @@ exl-id: fd3b36ab-72c1-469a-b2c7-419813c82425
 source-git-commit: eb9b749a5c61da3b4b5d2eeeed93bf5e4702a415
 workflow-type: tm+mt
 source-wordcount: '721'
-ht-degree: 84%
+ht-degree: 96%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 84%
 
 >[!AVAILABILITY]
 >
->Die Informationen auf dieser Seite werden durch die folgenden umfassenderen Upgrade-Informationen ersetzt: <ul><li>**Empfohlene Upgrade-Schritte**<p>Detaillierte Informationen finden Sie unter [Empfohlener Pfad beim Upgrade von Adobe Analytics auf Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md).</p></li><li>**Customer Journey Analytics-Aktualisierungshandbuch**<p>Es ist ein neues Upgrade-Handbuch verfügbar, in dem dynamisch Upgrade-Schritte generiert werden, die für Ihr Unternehmen und Ihre individuellen Bedingungen maßgeschneidert sind.</p><p>Um über Customer Journey Analytics auf das Handbuch zuzugreifen, wählen Sie die Registerkarte **[!UICONTROL Workspace]** und dann **[!UICONTROL Upgrade auf Customer Journey Analytics]** im linken Bereich aus. Befolgen Sie die Anweisungen auf dem Bildschirm.</p></li></ul>
+>Die Informationen auf dieser Seite werden durch die folgenden, umfassenderen Upgrade-Informationen ersetzt: <ul><li>**Empfohlene Upgrade-Schritte**<p>Weitere Informationen finden Sie unter [Empfohlener Pfad für das Upgrade von Adobe Analytics auf Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md).</p></li><li>**Leitfaden für das Upgrade auf Customer Journey Analytics**<p>Es ist ein neuer Upgrade-Leitfaden verfügbar, in dem dynamisch Upgrade-Schritte generiert werden, die auf Ihre Organisation und Ihre individuellen Bedingungen zugeschnitten sind.</p><p>Um über Customer Journey Analytics auf den Leitfaden zuzugreifen, wählen Sie die Registerkarte **[!UICONTROL Arbeitsbereich]** und dann im linken Panel die Option **[!UICONTROL Upgrade auf Customer Journey Analytics]** aus. Befolgen Sie die Anweisungen auf dem Bildschirm.</p></li></ul>
 
 Customer Journey Analytics ist das Analyseprodukt der nächsten Generation. Es ermöglicht eine kanalübergreifende Datenerfassung (von Online- und Offline-Daten) in Verbindung mit der leistungsstarken Funktion „Berichtszeitverarbeitung“ (durch Definition von Komponenten und abgeleiteten Feldern in Datenansichten).
 

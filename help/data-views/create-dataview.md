@@ -8,7 +8,7 @@ role: Admin
 source-git-commit: 326a82e93c0c8d57db224023ed5f3a7ab94a8997
 workflow-type: tm+mt
 source-wordcount: '2125'
-ht-degree: 85%
+ht-degree: 95%
 
 ---
 
@@ -19,7 +19,7 @@ Das Erstellen einer Datenansicht beinhaltet entweder das Erstellen von Metriken 
 
 >[!BEGINSHADEBOX]
 
-Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Erstellen oder Bearbeiten einer Datenansicht](https://video.tv.adobe.com/v/3410300/?quality=12&learn=on&captions=ger){target="_blank"} finden Sie ein Demovideo.
+Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Erstellen oder Bearbeiten einer Datenansicht](https://video.tv.adobe.com/v/35110/?quality=12&learn=on){target="_blank"} finden Sie ein Demovideo.
 
 >[!ENDSHADEBOX]
 
@@ -40,9 +40,9 @@ So konfigurieren Sie eine neue oder vorhandene Datenansicht:
 
 ![Konfigurieren der Datenansicht](assets/dataview-configure.png)
 
->[!TAB B2B edition]
+>[!TAB B2B Edition]
 
-![Datenansicht B2B konfigurieren](assets/dataview-configure-b2b.png)
+![Konfigurieren der Datenansicht – B2B](assets/dataview-configure-b2b.png)
 
 >[!ENDTABS]
 
@@ -100,13 +100,13 @@ Gibt den Namen der Container für die Datenansicht an. Container-Namen werden h�
 
 | Einstellung | Beschreibung |
 | --- | --- |
-| [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}<br/>**[!UICONTROL Global Account Container-Name &#x200B;]** | `Global Account` (Standard) Der [!UICONTROL Globales Konto]-Container enthält alle Sitzungen und Ereignisse für globale Konten innerhalb des angegebenen Zeitraums. Wenn Ihr Unternehmen einen anderen Begriff verwendet, können Sie den Container hier umbenennen. |
-| [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}<br/>**[!UICONTROL Account-Container-Name &#x200B;]** | `Account` (Standard) Der [!UICONTROL Konto]-Container enthält alle Sitzungen und Ereignisse für Konten innerhalb des angegebenen Zeitraums. Wenn Ihr Unternehmen einen anderen Begriff verwendet, können Sie den Container hier umbenennen. |
-| [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}<br/>**[!UICONTROL Opportunity-Container-Name &#x200B;]** | `Opportunity` (Standard) Der [!UICONTROL Opportunity]-Container enthält alle Sitzungen und Ereignisse für Opportunitys innerhalb des angegebenen Zeitraums. Wenn Ihr Unternehmen einen anderen Begriff verwendet, können Sie den Container hier umbenennen. |
-| [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}<br/>**[!UICONTROL Einkaufsgruppen-Container-Name &#x200B;]** | `Buying Group` (Standard) Der [!UICONTROL Einkaufsgruppe]-Container enthält alle Sitzungen und Ereignisse für den Kauf von Gruppen innerhalb eines bestimmten Zeitraums. Wenn Ihr Unternehmen einen anderen Begriff verwendet, können Sie den Container hier umbenennen. |
-| **[!UICONTROL Container-Name für Person]** | `Person` (Standard) Der Container [!UICONTROL Person] enthält sämtliche Sitzungen und Ereignisse für Personen innerhalb des angegebenen Zeitrahmens. Wenn Ihr Unternehmen einen anderen Begriff verwendet (z. B. „Besucher“ oder „Benutzer“), können Sie den Container hier umbenennen. |
-| **[!UICONTROL Container-Name für Sitzung]** | `Session` (Standard) Mit dem Sitzungs-Container können Seiteninteraktionen, Kampagnen oder Konversionen für eine bestimmte [!UICONTROL Sitzung] identifiziert werden. Sie können diesen Container in „Besuch“ oder einen anderen von Ihrem Unternehmen bevorzugten Begriff umbenennen. |
-| **[!UICONTROL Container-Name für Ereignis]** | `Event` (Standard) Der Container [!UICONTROL Ereignis] definiert einzelne Ereignisse in einem Datensatz. Wenn Ihr Unternehmen einen anderen Begriff verwendet (z. B. „Hits“ oder „Seitenansichten“), können Sie den Container hier umbenennen. |
+| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL Container-Name für globales Konto ]** | `Global Account` (Standard). Der Container [!UICONTROL Globales Konto] enthält sämtliche Sitzungen und Ereignisse für globale Konten innerhalb des angegebenen Zeitrahmens. Falls Ihre Organisation einen anderen Begriff verwendet, können Sie den Container hier umbenennen. |
+| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL Container-Name für Konto ]** | `Account` (Standard). Der Container [!UICONTROL Konto] enthält sämtliche Sitzungen und Ereignisse für Konten innerhalb des angegebenen Zeitrahmens. Falls Ihre Organisation einen anderen Begriff verwendet, können Sie den Container hier umbenennen. |
+| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL Container-Name für Opportunity ]** | `Opportunity` (Standard). Der Container [!UICONTROL Opportunity] enthält sämtliche Sitzungen und Ereignisse für Opportunitys innerhalb des angegebenen Zeitrahmens. Falls Ihre Organisation einen anderen Begriff verwendet, können Sie den Container hier umbenennen. |
+| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL Container-Name für Käufergruppe ]** | `Buying Group` (Standard). Der Container [!UICONTROL Käufergruppe] enthält sämtliche Sitzungen und Ereignisse für Käufergruppen innerhalb des angegebenen Zeitrahmens. Falls Ihre Organisation einen anderen Begriff verwendet, können Sie den Container hier umbenennen. |
+| **[!UICONTROL Container-Name für Person]** | `Person` (Standard). Der Container [!UICONTROL Person] enthält sämtliche Sitzungen und Ereignisse für Personen innerhalb des angegebenen Zeitrahmens. Wenn Ihr Unternehmen einen anderen Begriff verwendet (z. B. „Besucher“ oder „Benutzer“), können Sie den Container hier umbenennen. |
+| **[!UICONTROL Container-Name für Sitzung]** | `Session` (Standard). Mit dem Sitzungs-Container können Seiteninteraktionen, Kampagnen oder Konversionen für eine bestimmte [!UICONTROL Sitzung] identifiziert werden. Sie können diesen Container in „Besuch“ oder einen anderen von Ihrem Unternehmen bevorzugten Begriff umbenennen. |
+| **[!UICONTROL Container-Name für Ereignis]** | `Event` (Standard). Der Container [!UICONTROL Ereignis] definiert einzelne Ereignisse in einem Datensatz. Wenn Ihr Unternehmen einen anderen Begriff verwendet (z. B. „Hits“ oder „Seitenansichten“), können Sie den Container hier umbenennen. |
 
 {style="table-layout:auto"}
 
@@ -194,7 +194,7 @@ Legen Sie den Zeitraum der Inaktivität zwischen Ereignissen fest, bevor eine Si
 
 ### Datenvorschau
 
-Die Datenvorschau vergleicht (für die verschiedenen Container) die Daten dieser Datenansicht mit den Daten der Verbindung. Der Vorschauprozentsatz basiert auf der Gesamtzahl der Verbindungen der letzten 90 Tage.
+Die Datenvorschau vergleicht (für die verschiedenen Container) die Daten dieser Datenansicht mit den Daten der Verbindung. Der Prozentsatz der Vorschau basiert auf der Gesamtzahl in der Verbindung aus den letzten 90 Tagen.
 
 Wenn die Vorschau nicht geladen wird, wird Ihre Verbindung möglicherweise noch aufgestockt.
 

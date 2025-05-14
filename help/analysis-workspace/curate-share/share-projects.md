@@ -8,7 +8,7 @@ role: User
 source-git-commit: de0b51096c772ceb180e759b2dd992e3cf2a009d
 workflow-type: tm+mt
 source-wordcount: '2070'
-ht-degree: 96%
+ht-degree: 98%
 
 ---
 
@@ -40,7 +40,7 @@ Jede [Kuration](curate.md), die Sie vor der Freigabe vorgenommen haben, wird bei
 
 >[!BEGINSHADEBOX]
 
-Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Projektfreigabe in Analysis Workspace](https://video.tv.adobe.com/v/40031/?quality=12&learn=on&captions=ger){target="_blank"} finden Sie ein Demovideo.
+Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Projektfreigabe in Analysis Workspace](https://video.tv.adobe.com/v/36207/?quality=12&learn=on){target="_blank"} finden Sie ein Demovideo.
 
 {{videoaa}}
 
@@ -150,11 +150,11 @@ Sie können jetzt den [schreibgeschützten Zugriff](/help/analysis-workspace/cur
 >
 >* Wenn viele Personen gleichzeitig versuchen, auf einen bestimmten Link zuzugreifen, ist das Projekt möglicherweise nicht mehr zugänglich. Standardmäßig können alle 5 Minuten mehr als 190 Personen auf einen einzelnen Link zugreifen. Sollte Ihr Unternehmen diese Grenze erreichen, warten Sie 5 Minuten und versuchen Sie dann erneut, den Link zu öffnen.
 >
->* Sowohl für [!DNL Healthcare Shield]- als auch für [!DNL Privacy & Security Shield]-Lizenzen ist für die Funktion [!UICONTROL Für alle freigeben] eine Experience Cloud-Authentifizierung erforderlich. Für [!DNL Healthcare Shield] Kunden wird eine Warnung zur HIPAA-Konformität angezeigt, Sie können diese Funktion jedoch nach der Authentifizierung bei Experience Cloud weiterhin verwenden.
+>* Sowohl für [!DNL Healthcare Shield]- als auch für [!DNL Privacy & Security Shield]-Lizenzen ist für die Funktion [!UICONTROL Für alle freigeben] eine Experience Cloud-Authentifizierung erforderlich. Für [!DNL Healthcare Shield]-Kundinnen und -Kunden wird eine HIPAA-Compliance-Warnung angezeigt. Sie können diese Funktion jedoch nach der Authentifizierung für Experience Cloud weiterhin verwenden.
 
 >[!BEGINSHADEBOX]
 
-Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Für alle freigeben](https://video.tv.adobe.com/v/3452469/?quality=12&learn=on&captions=ger){target="_blank"} finden Sie ein Demovideo.
+Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Für alle freigeben](https://video.tv.adobe.com/v/3420093/?quality=12&learn=on){target="_blank"} finden Sie ein Demovideo.
 
 >[!ENDSHADEBOX]
 
@@ -209,7 +209,7 @@ Sie können die eingebetteten Komponenten freigeben, die Teil Ihres Projekts sin
 
 >[!BEGINSHADEBOX]
 
-Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Freigeben von eingebetteten Komponenten in Analysis Workspace](https://video.tv.adobe.com/v/327497/?quality=12&learn=on&captions=ger){target="_blank"} finden Sie ein Demovideo.
+Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Freigeben von eingebetteten Komponenten in Analysis Workspace](https://video.tv.adobe.com/v/24713/?quality=12&learn=on){target="_blank"} finden Sie ein Demovideo.
 
 {{videoaa}}
 

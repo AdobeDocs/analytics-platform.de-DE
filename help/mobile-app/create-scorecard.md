@@ -8,7 +8,7 @@ solution: Customer Journey Analytics
 source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
 workflow-type: tm+mt
 source-wordcount: '2698'
-ht-degree: 95%
+ht-degree: 98%
 
 ---
 
@@ -29,7 +29,7 @@ Die folgenden Informationen liefern Kuratierenden von Customer Journey Analytics
 
 >[!BEGINSHADEBOX]
 
-Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Erstellen von mobilen Scorecards](https://video.tv.adobe.com/v/3415761?quality=12&learn=on&captions=ger){target="_blank"} finden Sie ein Demovideo.
+Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Erstellen von mobilen Scorecards](https://video.tv.adobe.com/v/343458?quality=12&learn=on){target="_blank"} finden Sie ein Demovideo.
 
 >[!ENDSHADEBOX]
 
@@ -48,7 +48,7 @@ Wenn Sie diese Scorecard kuratieren, können Sie mit dem Scorecard Builder festl
 
 Gehen Sie zur Erstellung der Scorecard wie folgt vor:
 
-1. Greifen Sie auf die Vorlage [!UICONTROL Leere mobile Scorecard] in Workspace zu.
+1. Greifen Sie auf die Vorlage für [!UICONTROL leere mobile Scorecards] in Workspace zu.
 2. Konfigurieren Sie die Scorecard mit Daten und speichern Sie sie.
 
 ## Zugriff auf die Vorlage für [!UICONTROL leere mobile Scorecards] {#template}
@@ -73,7 +73,7 @@ Sie können die Vorlage [!UICONTROL Leere mobile Scorecard] öffnen, indem Sie e
 
 So implementieren Sie die Scorecard-Vorlage:
 
-1. Geben **[!UICONTROL in der rechten]** unter „Scorecard-Eigenschaften“ eine **[!UICONTROL Projektdatenansicht“ an]** aus der Sie Daten verwenden möchten.
+1. Geben Sie unter **[!UICONTROL Scorecard-Eigenschaften]** (in der rechten Leiste) eine **[!UICONTROL Datenansicht des Projekts]** an, aus der Sie Daten verwenden möchten.
 
    ![Fenster Neue mobile Scorecard mit hervorgehobener Auswahl für die Datenansicht](assets/properties_save.png)
 
@@ -96,9 +96,9 @@ Sie können beispielsweise geeignete Dimensionen (wie **[!DNL Marketing Channel]
 
 Um ein Segment auf einzelne Kacheln anzuwenden, ziehen Sie es aus dem linken Bereich und legen Sie es direkt auf der Kachel ab.
 
-Wenn Sie das Segment auf alle Kacheln in der Scorecard anwenden möchten, legen Sie die Kachel oben auf der Scorecard ab. Sie können Segmente auch anwenden, indem Sie sie im Menü Segment unter den Datumsbereichen auswählen. Sie [Segmente für Ihre Scorecards konfigurieren und ](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html?lang=de), wie Sie es in Customer Journey Analytics Workspace tun würden.
+Wenn Sie das Segment auf alle Kacheln in der Scorecard anwenden möchten, legen Sie die Kachel oben auf der Scorecard ab. Sie können Segmente auch anwenden, indem Sie im Segmentmenü unterhalb der Datumsbereiche Segmente auswählen. Die [Konfiguration und Anwendung von Segmenten für Ihre Scorecards](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html?lang=de) entspricht der Vorgehensweise in Customer Journey Analytics Workspace.
 
-![Dropdown-Auswahl „Segment“ mit hervorgehobener Option zum Erstellen von Segmenten](assets/segment_ui.png)
+![Dropdown-Segmentauswahl, wobei die erstellten Segmente hervorgehoben sind](assets/segment_ui.png)
 
 ## Datumsbereiche hinzufügen {#dates}
 
@@ -212,7 +212,7 @@ Benutzerdefinierte Detailansichten ermöglichen es Ihnen, Ihre Zielgruppe mit no
 
 >[!BEGINSHADEBOX]
 
-Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Benutzerdefinierte Detailansichten](https://video.tv.adobe.com/v/3422731?quality=12&learn=on&captions=ger){target="_blank"} finden Sie ein Demovideo.
+Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Benutzerdefinierte Detailansichten](https://video.tv.adobe.com/v/3410002?quality=12&learn=on){target="_blank"} finden Sie ein Demovideo.
 
 {{videoaa}}
 

@@ -6,8 +6,8 @@ feature: Audiences
 role: User
 source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
 workflow-type: tm+mt
-source-wordcount: '768'
-ht-degree: 76%
+source-wordcount: '766'
+ht-degree: 95%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 76%
 
 Zielgruppen können in Customer Journey Analytics mithilfe von **[!UICONTROL Komponenten]** > **[!UICONTROL Zielgruppen]** verwaltet werden.
 
-## Aufgaben des Zielgruppen-Managements
+## Informationen zu Zielgruppen-Management-Aufgaben
 
 Die Verwaltung zuvor erstellter Zielgruppen ermöglicht Ihnen Folgendes:
 
@@ -25,23 +25,23 @@ Die Verwaltung zuvor erstellter Zielgruppen ermöglicht Ihnen Folgendes:
 * Gewinnen Sie Einblicke in die **benötigte Dauer für die Erstellung einer Zielgruppe** aus Customer Journey Analytics. Und die benötigte Zeit, damit die Zielgruppe zur Aktivierung in der Echtzeit-Kundenplattform angezeigt wird.
 * Überprüfen, ob die Zielgruppen in Customer Journey Analytics **aktiv von der Echtzeit-Kundenplattform verwendet werden**. Oder (im Idealfall) alle Experience Platform-Programme, die die von Customer Journey Analytics erstellten Zielgruppen nutzen.
 
-Wenn Sie Zugriff auf die [Zielgruppenansicht](/help/technotes/access-control.md#user-level-access) haben, können Sie Zielgruppen anzeigen. Wenn Sie nicht über [Zielgruppe erstellen](/help/technotes/access-control.md#user-level-access) verfügen, können Sie Zielgruppen bearbeiten und löschen.
+Wenn Sie Zugriff auf die [Zielgruppenansicht](/help/technotes/access-control.md#user-level-access) haben, können Sie Zielgruppen anzeigen. Wenn Sie Zugriff auf [Zielgruppe erstellen](/help/technotes/access-control.md#user-level-access) haben, können Sie Zielgruppen bearbeiten und löschen. 
 
 ## Anzeigen von Zielgruppen in der Liste „Zielgruppen“
 
-Die Liste Audiences zeigt die vorhandenen Audiences.
+Die ➊ Zielgruppenliste zeigt die vorhandenen Zielgruppen.
 
 ![Audience Manager](assets/audiences-manager.png)
 
-So zeigen Sie die Liste der Zielgruppen an:
+So zeigen Sie die Liste „Zielgruppen“ an:
 
 1. Wählen Sie in Customer Journey Analytics **[!UICONTROL Komponenten]** > **[!UICONTROL Zielgruppen]** aus.
 
-1. (Optional) Verwenden Sie ![ColumnSetting](/help/assets/icons/ColumnSetting.svg), um zu konfigurieren, welche Spalten angezeigt werden sollen.
+1. (Optional) Sie können mit ![Spalteneinstellung](/help/assets/icons/ColumnSetting.svg) konfigurieren, welche Spalten angezeigt werden sollen. 
 
-1. (Optional) Suchen Sie mit „Suchen![ nach einer ](/help/assets/icons/Search.svg).
+1. (Optional) Sie können mit ![Suchen](/help/assets/icons/Search.svg) nach einer Zielgruppe suchen.
 
-   Die folgenden Spalten sind mit Informationen zu jeder Zielgruppe verfügbar:
+   Die folgenden Spalten mit Informationen zu jeder Zielgruppe sind verfügbar:
 
    | Spalte | Beschreibung |
    | --- | --- |
@@ -56,21 +56,21 @@ So zeigen Sie die Liste der Zielgruppen an:
    | **[!UICONTROL Zuletzt aktualisiert]** | Zeitstempel der letzten Aktualisierung der Zielgruppe. |
    | **[!UICONTROL Zuletzt geändert]** | Zeitstempel der letzten Bearbeitung oder Änderung der Zielgruppe. |
 
-## Audiences bearbeiten
+## Bearbeiten von Zielgruppen
 
-Sie können die Einstellungen einer Audience jederzeit bearbeiten. Wenn Sie eine Zielgruppe bearbeiten (entweder eine einmalige Zielgruppe oder eine wiederkehrende Zielgruppe), ist eine erneute Veröffentlichung erforderlich.
+Sie können die Einstellungen einer Zielgruppe jederzeit bearbeiten. Wenn Sie eine (einmalige oder wiederkehrende) Zielgruppe bearbeiten, ist eine erneute Veröffentlichung erforderlich.
 
 So bearbeiten Sie eine Zielgruppe:
 
 1. Wählen Sie in Customer Journey Analytics **[!UICONTROL Komponenten]** > **[!UICONTROL Zielgruppen]** aus.
 
-   Die Seite Zielgruppen wird angezeigt.
+   Daraufhin wird die Seite „Zielgruppen“ angezeigt.
 
-1. Wählen Sie den Titel der Zielgruppe aus, die Sie bearbeiten möchten.
+1. Wählen Sie den Titel der Zielgruppe aus, die bearbeitet werden soll.
 
-   Das **[!UICONTROL Zielgruppe bearbeiten]** Dialogfeld wird angezeigt.
+   Das Dialogfeld **[!UICONTROL Zielgruppe bearbeiten]** wird angezeigt.
 
-1. Sie können jedes der verfügbaren Felder für die Zielgruppe aktualisieren. Informationen zu den Feldern, die Sie aktualisieren können, finden Sie unter [Audience Builder](/help/components/audiences/publish.md#audience-builder) im Artikel [Erstellen und Veröffentlichen von Zielgruppen](/help/components/audiences/publish.md).
+1. Sie können alle für die Zielgruppe verfügbaren Felder aktualisieren. Informationen zu den Feldern, die Sie aktualisieren können, finden Sie im Artikel [Erstellen und Veröffentlichen von Zielgruppen](/help/components/audiences/publish.md) unter [Audience Builder](/help/components/audiences/publish.md#audience-builder).
 
 1. Wählen Sie **[!UICONTROL Neu veröffentlichen]** aus.
 
@@ -80,9 +80,9 @@ Die folgenden Aktionen werden im Manager für geplante Projekte häufig ausgefü
 
 | Symbol | Aktion | Beschreibung |
 |:---:|---|---|
-| ![Bezeichnungen](/help/assets/icons/Labels.svg) | **[!UICONTROL Tag]** | Versehen Sie die ausgewählten Zielgruppen mit Tags. Wählen **[!UICONTROL im Dialogfeld Tags aktualisieren: *Zielgruppenname *]**&#x200B;die Option Tags aus dem Dropdown-Menü aus oder geben Sie einen oder mehrere neue Tags ein. Wählen Sie zum Speichern&#x200B;**[!UICONTROL Speichern &#x200B;]**&#x200B;aus. |
+| ![Bezeichnungen](/help/assets/icons/Labels.svg) | **[!UICONTROL Tag]** | Versehen Sie die ausgewählten Zielgruppen mit Tags. Wählen **[!UICONTROL im Dialogfeld Tags aktualisieren: *Zielgruppenname *]**die Option Tags aus dem Dropdown-Menü aus oder geben Sie einen oder mehrere neue Tags ein. Wählen Sie zum Speichern**[!UICONTROL Speichern ]**aus. |
 | ![Löschen](/help/assets/icons/Delete.svg) | **[!UICONTROL Löschen]** | Löschen Sie die ausgewählten Zielgruppen. |
-| ![Bearbeiten](/help/assets/icons/Edit.svg) | **[!UICONTROL Umbenennen]** | Benennen Sie die ausgewählte Zielgruppe um. Verwenden Sie das Dialogfeld **[!UICONTROL Umbenennen: *Zielgruppenname *]**, um die Zielgruppe umzubenennen, und wählen Sie zum Speichern&#x200B;**[!UICONTROL Speichern &#x200B;]**&#x200B;aus. |
+| ![Bearbeiten](/help/assets/icons/Edit.svg) | **[!UICONTROL Umbenennen]** | Benennen Sie die ausgewählte Zielgruppe um. Verwenden Sie das Dialogfeld **[!UICONTROL Umbenennen: *Zielgruppenname *]**, um die Zielgruppe umzubenennen, und wählen Sie zum Speichern**[!UICONTROL Speichern ]**aus. |
 
 Die folgenden Aktionen sind in der blauen Aktionsleiste verfügbar, wenn Sie ein oder mehrere geplante Projekte auswählen.
 
@@ -92,9 +92,9 @@ Die folgenden Aktionen sind in der blauen Aktionsleiste verfügbar, wenn Sie ein
 | ![Löschen](/help/assets/icons/Delete.svg) | **[!UICONTROL Löschen]** | Löschen Sie die ausgewählten Zielgruppen. |
 | ![CSV-Datei](/help/assets/icons/FileCSV.svg) | **[!UICONTROL In CSV exportieren]** | Exportieren Sie die ausgewählten Zielgruppen in eine Datei mit dem Namen `audiences.csv`. |
 
-## Filtern der Audience-Liste
+## Filtern der Liste „Zielgruppen“
 
-Sie können die [Liste „Zielgruppen“](#audiences-list) mithilfe des Panels „Filter“ ➋ filtern. Verwenden Sie ![Filter](/help/assets/icons/Filter.svg), um das Panel „Filter“ ein- oder auszublenden.
+Sie können die [Liste Zielgruppen](#audiences-list) mithilfe der ➋ des Filterbedienfelds filtern. Verwenden Sie ![Filter](/help/assets/icons/Filter.svg), um das Panel „Filter“ ein- oder auszublenden.
 
 ![Audience Manager](assets/audiences-manager.png)
 

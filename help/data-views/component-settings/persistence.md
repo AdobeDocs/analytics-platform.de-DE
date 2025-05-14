@@ -8,7 +8,7 @@ role: Admin
 source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
 workflow-type: tm+mt
 source-wordcount: '1053'
-ht-degree: 74%
+ht-degree: 82%
 
 ---
 
@@ -90,11 +90,11 @@ Details zu den verfügbaren Zuordnungseinstellungen.
 Details zu den verfügbaren Gültigkeitseinstellungen.
 
 * **Sitzung**: Läuft nach einer Sitzung ab. Standardgültigkeitsfenster.
-* **Fenster „Personen-Reporting**: Läuft am Ende des Reporting-Fensters ab.
-* **Globales Kontoberichterstellungsfenster** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}: Läuft am Ende des Berichtsfensters ab.
-* **Kontoberichterstellungsfenster** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}: Läuft am Ende des Berichtsfensters ab.
-* **Opportunity-Reporting** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}: Läuft am Ende des Reporting-Fensters ab.
-* **Berichtsfenster für Einkaufsgruppen** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}: Läuft am Ende des Berichtsfensters ab.
+* **Reporting-Fenster „Person“**: Läuft am Ende des Reporting-Fensters ab.
+* **Reporting Fenster „Globales Konto“** [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}: Läuft am Ende des Reporting-Fensters ab.
+* **Reporting-Fenster „Konto“** [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}: Läuft am Ende des Reporting-Fensters ab.
+* **Reporting-Fenster „Opportunity“** [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}: Läuft am Ende des Reporting-Fensters ab.
+* **Reporting Fenster „Käufergruppe“** [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}: Läuft am Ende des Reporting-Fensters ab.
 * **Benutzerdefinierte Zeit**: Läuft nach einer festgelegten Zeitspanne ab (bis zu 90 Tage). Diese Ablaufoption ist nur für die Zuordnungsmodelle „Original“ und „Zuletzt verwendet“ verfügbar. Bei Verwendung der zeitbasierten Gültigkeitsdauer werden auch Werte vor dem Beginn des Reporting-Fensters (bis zu 90 Tage) berücksichtigt.
 * **Metrik**: Wenn diese Metrik in einem Ereignis angezeigt wird, läuft der persistente Wert in der Dimension sofort ab. Sie können jede beliebige Metrik als Gültigkeitsende für diese Dimension verwenden. Diese Gültigkeitsoption ist nur für die Zuordnungseinstellungen „Original“ und „Zuletzt verwendet“ verfügbar.
 
@@ -108,7 +108,7 @@ Beispiele für die effektive Verwendung von Bindungsdimensionen finden Sie in [V
 
 >[!BEGINSHADEBOX]
 
-Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Bindungsdimensionen](https://video.tv.adobe.com/v/3409824/?quality=12&learn=on&captions=ger){target="_blank"} finden Sie ein Demovideo.
+Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Bindungsdimensionen](https://video.tv.adobe.com/v/342694/?quality=12&learn=on){target="_blank"} finden Sie ein Demovideo.
 
 >[!ENDSHADEBOX]
 

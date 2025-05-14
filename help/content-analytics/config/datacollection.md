@@ -1,5 +1,5 @@
 ---
-title: Datenerfassung in Content Analytics
+title: Content Analytics-Benutzeroberfläche
 description: Ein Überblick darüber, wie Daten in Content Analytics erfasst werden
 solution: Customer Journey Analytics
 feature: Content Analytics
@@ -8,11 +8,11 @@ exl-id: 584587e6-45fd-4fc3-a7a6-6685481ddee7
 source-git-commit: 63c6a5d6148c1562b7f6ac8e4a1cac5919e2dd2e
 workflow-type: tm+mt
 source-wordcount: '602'
-ht-degree: 1%
+ht-degree: 76%
 
 ---
 
-# Datenerfassung in Content Analytics
+# Content Analytics-Benutzeroberfläche
 
 In diesem Artikel wird ausführlich erläutert, wie Content Analytics Daten erfasst
 
@@ -20,12 +20,12 @@ In diesem Artikel wird ausführlich erläutert, wie Content Analytics Daten erfa
 
 Im Zusammenhang mit diesem Artikel werden die folgenden Definitionen verwendet:
 
-* **Erlebnis**: Ein Erlebnis wird als Textinhalt auf einer gesamten Web-Seite definiert. Für die Datenerfassung zeichnet Content Analytics die Erlebnis-ID auf, die auf der Seiten-URL basiert. Später wird der Text auf der Seite über den Abrufdienst erfasst.
-* **Erlebnis-**: Eine eindeutige Kombination aus relevanter URL (Basis-URL plus alle Parameter, die den Inhalt auf der Seite steuern) und [Erlebnisversion](manual.md#versioning).
-   * Sie geben als Teil der [Konfiguration](configuration.md) an, welche Parameter für eine bestimmte vollständige URL relevant sind.
+* **Erlebnis**: Der Textinhalt einer gesamten Web-Seite. Zur Datenerfassung zeichnet Content Analytics die Erlebnis-ID auf, die auf der Seiten-URL basiert. Später wird der Text auf der Seite über den Abrufdienst erfasst.
+* **Erlebnis-ID**: Eine eindeutige Kombination aus relevanter URL (Basis-URL plus alle Parameter, die den Inhalt auf der Seite steuern) und [Erlebnisversion](manual.md#versioning).
+   * Sie geben im Rahmen der [Konfiguration](configuration.md) an, welche Parameter für eine bestimmte vollständige URL relevant sind.
    * Sie definieren eine [Versionskennung](manual.md#versioning), damit Sie Änderungen an Ihren Erlebnissen ordnungsgemäß erfassen können.
 * **Asset**: Ein Bild. Content Analytics zeichnet die Asset-URL auf.
-* **Asset-**: Die URL des Assets.
+* **Asset-ID**: Die URL des Assets.
 * **Relevante URL**: Die Basis-URL plus alle Parameter, die den Inhalt auf der Seite steuern.
 
 
@@ -33,52 +33,52 @@ Im Zusammenhang mit diesem Artikel werden die folgenden Definitionen verwendet:
 
 Content Analytics erfordert, dass Experience Platform Edge Network Web SDK Inhaltsereignisdaten erfasst. Diese Ereignisdatenerfassung wird mit der (vorhandenen) Datenerfassung von Verhaltensereignisdaten über Mechanismen wie Experience Platform Edge Network (Web-SDK, Server-API) oder Analytics Source Connector (z. B. mit AppMeasurement) kombiniert.
 
-Die Content Analytics-Bibliothek erfasst Daten, wenn:
+Die Content Analytics-Bibliothek erfasst Daten in folgenden Fällen:
 
-* Content Analytics ist in der Tag-Bibliothek enthalten, die auf der Seite geladen wird.
-* Die Seiten-URL wird in der [Content Analytics-Erweiterung](https://experienceleague.adobe.com/de/docs/experience-platform/tags/extensions/client/content-analytics/overview){target="_blank"} konfiguriert, die Teil der enthaltenen Tag-Bibliothek ist.
+* Content Analytics ist in der Tags-Bibliothek enthalten, die auf der Seite geladen wird.
+* Die Seiten-URL ist in der [Content Analytics-Erweiterung](https://experienceleague.adobe.com/de/docs/experience-platform/tags/extensions/client/content-analytics/overview){target="_blank"} konfiguriert und Teil der enthaltenen Tag-Bibliothek.
 
 
 ## Content Analytics-Ereignis
 
 Ein Content Analytics-Ereignis besteht aus:
 
-* Standardfelder
+* Standardfeldern
    * Zeitstempel
    * Identität
-* Erlebnisansichten (falls vorhanden und falls konfiguriert)
-* Erlebnis-Klicks (falls vorhanden und falls konfiguriert)
-* Asset-Ansichten (falls vorhanden und konfiguriert)
-* Asset-Klicks (falls vorhanden und konfiguriert)
+* Erlebnisansichten (sofern vorhanden und konfiguriert)
+* Erlebnisklicks (sofern vorhanden und konfiguriert)
+* Asset-Ansichten (sofern vorhanden und konfiguriert)
+* Asset-Klicks (sofern vorhanden und konfiguriert)
 
-Content Analytics-Ereignisse werden erfasst als eine Abfolge von:
+Content Analytics-Ereignisse werden erfasst als eine Abfolge:
 
-1. [Eine aufgezeichnete Ansicht oder ein aufgezeichneter Klick](#recorded-view-or-click).
+1. [einer aufgezeichneten Ansicht oder eines aufgezeichneten Klicks](#recorded-view-or-click)
 1. [Ein Trigger zum Senden eines Content Analytics-Ereignisses](#trigger-to-send-a-content-analytics-event).
 
-Content Analytics erfasst auf diese Weise Daten, die diese Sequenz widerspiegeln, anstatt eine Ansicht zu erfassen oder getrennt von der Erfassung des Ereignisses zu klicken, das unmittelbar auf diese Ansicht oder diesen Klick folgt. Diese Methode zur Erfassung von Inhaltsanalysedaten reduziert auch die Menge der erfassten Daten.
+Content Analytics erfasst auf diese Weise Daten, die diese Abfolge widerspiegeln, anstatt eine Ansicht oder einen Klick getrennt von dem Ereignis zu erfassen, das unmittelbar auf diese Ansicht oder diesen Klick folgt. Diese Methode zur Erfassung von Content Analytics-Daten reduziert auch die Menge der erfassten Daten.
 
-### Aufgezeichnete Ansicht oder Klick
+### Aufgezeichnete Ansichten oder Klicks
 
-Eine Asset-Ansicht wird aufgezeichnet, wenn:
+Eine Asset-Ansicht wird in folgenden Fällen aufgezeichnet:
 
 * Das Asset wurde gemäß der Konfiguration der Content Analytics-Erweiterung nicht ausgeschlossen.
-* Das Asset wird mit 75 % angezeigt.
+* Das Asset wird zu 75 % angezeigt.
 * Dieses Asset wurde für diese Seite noch nicht aufgezeichnet.
 
-Ein Asset-Klick wird aufgezeichnet, wenn:
+Ein Asset-Klick wird in folgenden Fällen aufgezeichnet:
 
 * Das Asset wurde angezeigt.
 * Das Asset wurde gemäß der Konfiguration der Content Analytics-Erweiterung nicht ausgeschlossen.
-* Ein Klick direkt auf das Asset, d. h. einen Link, der zu einer anderen Seite führt.
+* Es wird direkt auf das Asset geklickt, d. h. einen Link, der zu einer anderen Seite führt.
 
-Eine Erlebnisansicht wird aufgezeichnet, wenn:
+Eine Erlebnisansicht wird in folgenden Fällen aufgezeichnet:
 
-* Erlebnisse werden in der Content Analytics-Konfiguration aktiviert.
+* Erlebnisse sind in der Content Analytics-Konfiguration aktiviert.
 
-Ein Erlebnis-Klick wird aufgezeichnet, wenn:
+Ein Erlebnisklick wird in folgendem Fall aufgezeichnet:
 
-* Jeder Klick auf einen Link auf der Seite, für den Erlebnisse aktiviert sind.
+* Es wird auf einen Link auf der Seite geklickt, für die Erlebnisse aktiviert sind.
 
 
 ### Trigger zum Senden eines Content Analytics-Ereignisses
@@ -86,14 +86,14 @@ Ein Erlebnis-Klick wird aufgezeichnet, wenn:
 Um die Anzahl der Aufrufe zu reduzieren, die die Seite verlassen, sammelt Content Analytics Informationen, sendet diese jedoch nicht sofort. Informationen zu Inhaltsinteraktionen werden erfasst und ein Ereignis, das diese Informationen enthält, wird nur gesendet, wenn einer der folgenden Trigger auftritt:
 
 * Web SDK oder AppMeasurement sendet ein -Ereignis. Der Zeitstempel dieses Ereignisses lautet
-* Die Sichtbarkeit ändert sich in ausgeblendet, z. B.:
-   * Seitenentladungen
-   * Registerkarte „Wechseln“
-   * Browser minimieren
-   * Browser schließen
-   * Sperrbildschirm
-* Die URL ändert sich, was zu einer geänderten relevanten URL führt.
-* Die Anzahl der aufgezeichneten und sendebereiten Asset-Ansichten überschreitet die Anzahl von 32.
+* Die Sichtbarkeit ändert sich (ausgeblendeter Status). Beispiele:
+   * Die Seite wird entladen.
+   * Die Registerkarte wird gewechselt.
+   * Der Browser wird minimiert.
+   * Der Browser wird geschlossen.
+   * Der Bildschirm wird gesperrt.
+* Die URL ändert sich, was zu einer Änderung der relevanten URL führt.
+* Die Anzahl der aufgezeichneten und sendebereiten Asset-Ansichten überschreitet das Limit von 32.
 
 
 ## Schemata
@@ -102,4 +102,4 @@ Content Analytics-Daten werden in Datensätzen in Experience Platform basierend 
 
 * [Schema für digitale Assets](https://github.com/adobe/xdm/blob/master/components/classes/digital-asset.schema.json)
 * [Schema für digitale Erlebnisse](https://github.com/adobe/xdm/blob/master/components/classes/digital-experience.schema.json)
-* [Inhaltsschema für Erlebnisereignisse](https://github.com/adobe/xdm/blob/master/components/fieldgroups/experience-event/experienceevent-content.schema.json)
+* [Schema für Erlebnisereignis-Inhalte](https://github.com/adobe/xdm/blob/master/components/fieldgroups/experience-event/experienceevent-content.schema.json)

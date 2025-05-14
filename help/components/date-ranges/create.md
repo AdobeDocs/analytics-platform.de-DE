@@ -7,7 +7,7 @@ role: User
 source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
 workflow-type: tm+mt
 source-wordcount: '533'
-ht-degree: 76%
+ht-degree: 95%
 
 ---
 
@@ -18,12 +18,12 @@ Jeder kann einen benutzerdefinierten Datumsbereich erstellen. Sie können einen 
 
 ![Erstellen einer Anmerkung](assets/create-date-range.png)
 
-* **A** - Wählen Sie in der Hauptbenutzeroberfläche **[!UICONTROL Komponenten]** und wählen Sie **[!UICONTROL Datumsbereich]**. Wählen Sie ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Hinzufügen]** im Manager [[!UICONTROL Datumsbereich] aus](/help/components/date-ranges/manage.md).
-* **B** - Wählen Sie in einem Workspace-Projekt im Kontextmenü in einer Visualisierung **[!UICONTROL Benutzerdefinierter Datumsbereich für diesen Datumsbereich]** aus.
-* **C** - Wählen Sie in einem Workspace-Projekt **[!UICONTROL Komponenten]** aus dem Menü aus und wählen Sie **[!UICONTROL Datumsbereich erstellen]**
-* **D** - Verwenden Sie in einem Workspace-Projekt die Tastenkombination **[!UICONTROL Strg+Umschalt+D]** (Windows) oder **[!UICONTROL Umschalt+Befehl+D]** (macOS).
-* **E** - Wählen Sie in einem Workspace-Projekt im linken Bedienfeld Komponenten ![Hinzufügen](/help/assets/icons/Add.svg) unter ![Kalender](/help/assets/icons/Calendar.svg) **Datumsbereiche**.
-* **F** - Wählen Sie in einer unterstützten Visualisierung, z. B. einer Linienvisualisierung, im Kontextmenü zu einem Datenpunkt die Option **[!UICONTROL Anmerkungsauswahl]** aus.
+* **A** – Wählen Sie in der Hauptbenutzeroberfläche die Option **[!UICONTROL Komponenten]** und dann **[!UICONTROL Datumsbereich]** aus. Wählen Sie ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Hinzufügen]** im [[!UICONTROL Datumsbereichs-Manager] aus](/help/components/date-ranges/manage.md).
+* **B** – Wählen Sie in einem Workspace-Projekt aus dem Kontextmenü in einer Visualisierung die Option **[!UICONTROL Benutzerdefinierter Datumsbereich vor diesem Datumsbereich]** aus.
+* **C** – Wählen Sie in einem Workspace-Projekt aus dem Menü die Option **[!UICONTROL Komponenten]** und dann **[!UICONTROL Datumsbereich erstellen]** aus
+* **D** – Verwenden Sie in einem Workspace-Projekt den Tastaturbefehl **[!UICONTROL Strg+Umschalt+D]** (Windows) bzw. **[!UICONTROL Umschalt+Befehlstaste+D]** (macOS).
+* **E** – Wählen Sie in einem Workspace-Projekt im linken Panel „Komponenten“ die Option ![Hinzufügen](/help/assets/icons/Add.svg) unter ![Kalender](/help/assets/icons/Calendar.svg) **Datumsbereiche** aus.
+* **F** – Wählen Sie in einer unterstützten Visualisierung, z. B. einer Linienvisualisierung, im Kontextmenü zu einem Datenpunkt die Option **[!UICONTROL Auswahl mit Anmerkungen versehen]** aus.
 
 Verwenden Sie den [[!UICONTROL Datumsbereichsgenerator]](#annotation-builder), um die Anmerkung zu definieren:
 

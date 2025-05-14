@@ -12,7 +12,7 @@ breadcrumb-title: Handbuch zu Customer Journey Analytics
 source-git-commit: 720751130d0f66bddffd13c6f160a85fcc7a7206
 workflow-type: tm+mt
 source-wordcount: '1223'
-ht-degree: 83%
+ht-degree: 96%
 
 ---
 
@@ -38,10 +38,10 @@ ht-degree: 83%
       + [Schnellstartanleitung](../getting-started/cja-getting-started.md)
       + [Landingpage](../getting-started/landing.md)
       + [Häufig gestellte Fragen](../getting-started/cja-faq.md)
-      + [Mit BI-Lösungen vergleichen](../getting-started/cja-vs-bi.md)
+      + [Vergleichen mit BI-Lösungen](../getting-started/cja-vs-bi.md)
       + [KI-Assistent](../ai-assistant.md)
       + [Data Insights Agent](../data-analysis-ai.md)
-   + Customer Journey Analytics B2B edition {#cja-b2b}
+   + Customer Journey Analytics B2B Edition {#cja-b2b}
       + [Überblick](/help/getting-started/cja-b2b-edition.md)
       + [B2B-Konzepte und -Funktionen](/help/getting-started/cja-b2b-concepts-features.md)
       + [Schnellstartanleitung](/help/getting-started/cja-b2b-quick-start-guide.md)
@@ -53,48 +53,48 @@ ht-degree: 83%
       + [Senden von Daten an Platform](/help/getting-started/cja-upgrade/cja-upgrade-send-to-platform.md)
       + [Beibehalten historischer Daten](/help/getting-started/cja-upgrade/cja-upgrade-historical-data.md)
       + [Empfohlener Upgrade-Prozess](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md)
-      + Entwickeln und Erstellen eines Schemas {#schema}
+      + Planen und Erstellen eines Schemas {#schema}
          + [Planen Ihres Schemas](/help/getting-started/cja-upgrade/cja-upgrade-schema-architect.md)
          + [Erstellen Ihres Schemas](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md)
          + [Verwenden Ihres vorhandenen Schemas](/help/getting-started/cja-upgrade/cja-upgrade-schema-existing.md)
-      + Erstellen eines Datenspeichers {#create-datastream}
-         + [Erstellen eines Datenspeichers](/help/getting-started/cja-upgrade/cja-upgrade-datastream.md)
+      + Erstellen eines Datenstroms {#create-datastream}
+         + [Erstellen eines Datenstroms](/help/getting-started/cja-upgrade/cja-upgrade-datastream.md)
          + [Hinzufügen von Platform as a Service](/help/getting-started/cja-upgrade/cja-upgrade-datastream-addplatform.md)
       + Erstellen von Datensätzen {#create-datasets}
          + [Erstellen eines Datensatzes](/help/getting-started/cja-upgrade/cja-upgrade-dataset.md)
          + [Erstellen von Lookup-Datensätzen für Klassifizierungen](/help/getting-started/cja-upgrade/cja-upgrade-dataset-lookup.md)
          + [Überwachen der Datenaufnahme](/help/getting-started/cja-upgrade/cja-upgrade-dataset-ingestion.md)
-      + Implementieren von Web SDK mit Tags {#create-tags}
+      + Implementieren des Web SDK mit Tags {#create-tags}
          + [Erstellen eines Tags für die Eigenschaft](/help/getting-started/cja-upgrade/cja-upgrade-tag-property.md)
          + [Hinzufügen der Web SDK-Erweiterung zum Tag](/help/getting-started/cja-upgrade/cja-upgrade-tag-extension.md)
          + [Implementieren des Loader-Tags für die Web-SDK-Erweiterung](/help/getting-started/cja-upgrade/cja-upgrade-tag-loader.md)
          + [Hinzufügen von XDM-Datenerfassungslogik zum Tag](/help/getting-started/cja-upgrade/cja-upgrade-tag-xdm.md)
-      + [Manuelles Implementieren von Web SDK](/help/getting-started/cja-upgrade/cja-upgrade-manual.md)
-      + [Implementieren von Web SDK mit der API](/help/getting-started/cja-upgrade/cja-upgrade-api.md)
+      + [Manuelles Implementieren des Web SDK](/help/getting-started/cja-upgrade/cja-upgrade-manual.md)
+      + [Implementieren des Web SDK mit dem API](/help/getting-started/cja-upgrade/cja-upgrade-api.md)
       + [Erstellen einer Verbindung](/help/getting-started/cja-upgrade/cja-upgrade-connection.md)
       + [Erstellen einer Datenansicht](/help/getting-started/cja-upgrade/cja-upgrade-dataview.md)
       + [Erstellen eines abgeleiteten Marketing-Kanal-Felds](/help/getting-started/cja-upgrade/cja-upgrade-marketing-channel.md)
       + [Validieren des Datenflusses](/help/getting-started/cja-upgrade/cja-upgrade-validate.md)
-      + [Streaming-Mediensammlung einrichten](/help/getting-started/cja-upgrade/cja-upgrade-streaming-media.md)
-      + Aufbewahren historischer Daten mit dem Analytics-Quell-Connector {#historical-data-source-connector}
+      + [Einrichten einer Streaming-Mediensammlung](/help/getting-started/cja-upgrade/cja-upgrade-streaming-media.md)
+      + Beibehalten historischer Daten mit dem Analytics-Quell-Connector {#historical-data-source-connector}
          + [Erstellen eines XDM-Schemas für den Analytics-Quell-Connector](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-schema.md)
          + [Erstellen des Analytics-Quell-Connectors und Zuordnen von Feldern](/help/getting-started/cja-upgrade/cja-upgrade-source-connector.md)
          + [Hinzufügen des Analytics-Quell-Connector-Datensatzes zur Verbindung](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-dataset.md)
-      + [Auswerten, wann Adobe Analytics deaktiviert werden soll](/help/getting-started/cja-upgrade/cja-upgrade-fully-move.md)
+      + [Bestimmen des Deaktivierungszeitpunkts für Adobe Analytics](/help/getting-started/cja-upgrade/cja-upgrade-fully-move.md)
       + [Deaktivieren von Adobe Analytics](/help/getting-started/cja-upgrade/cja-upgrade-disable-appmeasurement.md)
       + Alternative Upgrade-Methoden {#alternative-upgrade-methods}
          + [Verwenden der AppMeasurement-Datenerfassung](/help/getting-started/cja-upgrade/cja-upgrade-alternative-appmeasurement.md)
-         + [Datenschicht senden](/help/getting-started/cja-upgrade/cja-upgrade-alternative-data-layer.md)
+         + [Senden der Datenschicht](/help/getting-started/cja-upgrade/cja-upgrade-alternative-data-layer.md)
          + [Analytics-Quell-Connector](/help/getting-started/cja-upgrade/cja-upgrade-alternative-source-connector.md)
       + Andere Upgrade-Szenarien {#other-upgrade-scenarios}
          + [Wechsel vom Analytics-Quell-Connector zum Web SDK](/help/getting-started/cja-upgrade/cja-upgrade-from-source-connector.md)
-         + [Upgrade von einer Nicht-Adobe Analytics-Lösung](/help/getting-started/cja-upgrade/cja-upgrade-third-party-solution.md)
+         + [Upgrade von einer anderen Lösung als Adobe Analytics](/help/getting-started/cja-upgrade/cja-upgrade-third-party-solution.md)
       + Zusätzliche Informationen {#additional-information}
          + [Informationen zur Analytics-Implementierung](/help/getting-started/cja-upgrade/cja-upgrade-analytics-implementation.md)
          + [Unterstützung von Adobe Analytics-Funktionen beim Upgrade](/help/getting-started/cja-upgrade/cja-upgrade-adobe-analytics-features.md)
          + [Customer Journey Analytics-Funktionen](/help/getting-started/cja-upgrade/cja-upgrade-customer-journey-analytics-features.md)
          + [Web SDK-Implementierungsoptionen](/help/getting-started/cja-upgrade/cja-upgrade-websdk-implementation.md)
-         + [Konfigurieren von Adobe Analytics Web SDK für Platform](/help/getting-started/cja-upgrade/cja-upgrade-existing-adobe-analytics-websdk.md)
+         + [Konfigurieren des Adobe Analytics Web SDK für Platform](/help/getting-started/cja-upgrade/cja-upgrade-existing-adobe-analytics-websdk.md)
          + [Verwenden der Personalisierung mit Adobe Journey Optimizer](/help/getting-started/cja-upgrade/cja-upgrade-personalization-journeyoptimizer.md)
    + Vergleich mit Adobe Analytics {#cja-aa-comparison}
       + [Überblick](../getting-started/aa-vs-cja/overview.md)
@@ -110,7 +110,7 @@ ht-degree: 83%
 
 + Datenaufnahme {#cja-data-ingestion}
    + [Übersicht über die Datenaufnahme](../data-ingestion/data-ingestion.md)
-   + Kurzanleitungen zur Aufnahme und Verwendung von Daten{#ingest-use-guides}
+   + Schnellstartanleitungen zur Aufnahme und Verwendung von Daten{#ingest-use-guides}
       + [Adobe Analytics](../data-ingestion/analytics.md)
       + Experience Platform Edge Network {#edge-network}
          + [Web SDK](../data-ingestion/aepwebsdk.md)
@@ -170,7 +170,7 @@ ht-degree: 83%
       + [Erstellen von Projekten](/help/analysis-workspace/build-workspace-project/create-projects.md)
       + [Öffnen von Projekten](/help/analysis-workspace/build-workspace-project/open-projects.md)
       + [Projektkommentar](/help/analysis-workspace/build-workspace-project/comment-projects.md)
-      + [Projekte speichern](../analysis-workspace/build-workspace-project/save-projects.md)
+      + [Speichern von Projekten](../analysis-workspace/build-workspace-project/save-projects.md)
       + Ordner in Workspace {#workspace-folders}
          + [Über Ordner](../analysis-workspace/build-workspace-project/workspace-folders/about-folders.md)
          + [Erstellen von Ordnern und Unterordnern](../analysis-workspace/build-workspace-project/workspace-folders/create-folders.md)
@@ -198,7 +198,7 @@ ht-degree: 83%
       + Kohortentabelle {#cohort-table}
          + [Überblick](../analysis-workspace/visualizations/cohort-table/cohort-analysis.md)
          + [Konfigurieren](../analysis-workspace/visualizations/cohort-table/t-cohort.md)
-         + [Anwendungsfälle](../analysis-workspace/visualizations/cohort-table/cohort-use-cases.md)
+         + [Anwendungsszenarien](../analysis-workspace/visualizations/cohort-table/cohort-use-cases.md)
       + Fallout {#fallout}
          + [Überblick](../analysis-workspace/visualizations/fallout/fallout-flow.md)
          + [Konfigurieren](../analysis-workspace/visualizations/fallout/configuring-fallout.md)
@@ -305,7 +305,7 @@ ht-degree: 83%
 + Komponenten {#cja-components}
    + [Überblick](../components/overview.md)
    + [Verwenden von Komponenten in Analysis Workspace](../components/use-components-in-workspace.md)
-   + [Komponentenbeschreibungen hinzufügen](../components/add-component-descriptions.md)
+   + [Hinzufügen von Komponentenbeschreibungen](../components/add-component-descriptions.md)
    + Anmerkungen {#annotations}
       + [Anmerkungen – Übersicht](../components/annotations/overview.md)
       + [Erstellen von Anmerkungen](../components/annotations/create-annotations.md)
@@ -371,7 +371,7 @@ ht-degree: 83%
       + [Erstellen von Warnhinweisen](/help/components/c-intelligent-alerts/alert-builder.md)
       + [Verwalten von Warnhinweisen](/help/components/c-intelligent-alerts/alert-manager.md)
       + [Funktionsvergleich](/help/components/c-intelligent-alerts/alerts-feature-comparison.md)
-      + [Anwendungsfälle](/help/components/c-intelligent-alerts/alerts-use-cases.md)
+      + [Anwendungsszenarien](/help/components/c-intelligent-alerts/alerts-use-cases.md)
    + Exporte {#exports}
       + [Konfigurieren von Cloud-Exportkonten](/help/components/exports/cloud-export-accounts.md)
       + [Konfigurieren von Cloud-Exportspeicherorten](/help/components/exports/cloud-export-locations.md)
@@ -390,7 +390,7 @@ ht-degree: 83%
    + [Einrichten von Report Builder](../report-builder/report-builder-setup.md)
    + [Erstellen eines Datenblocks](../report-builder/create-a-data-block.md)
    + [Report Builder Hub](../report-builder/report-builder-hub.md)
-   + [Datenansicht auswählen](../report-builder/select-data-view.md)
+   + [Auswählen einer Datenansicht](../report-builder/select-data-view.md)
    + [Datumsbereich auswählen](../report-builder/select-date-range.md)
    + [Arbeiten mit Segmenten](../report-builder/work-with-filters.md)
    + [Filterdimensionen](../report-builder/filter-dimensions.md)
@@ -405,7 +405,7 @@ ht-degree: 83%
    + [Anzeigen der Berichtsaktivität](../reporting-activity-manager/reporting-activity.md)
    + [Abbrechen von Berichtsanfragen](../reporting-activity-manager/reporting-activity-cancel-requests.md)
 
-+ Stitching {#stitching}
++ Zuordnung {#stitching}
    + [Überblick](/help/stitching/overview.md)
    + [Feldbasierte Zuordnung](/help/stitching/fbs.md)
    + [Diagrammbasierte Zuordnung](/help/stitching/gbs.md)
@@ -426,8 +426,8 @@ ht-degree: 83%
    + [Administratorprotokoll](../privacy/audit-log.md)
    + [Vom Kunden verwaltete Schlüssel](../privacy/cmk.md)
 
-+ Anwendungsfälle {#cja-usecases}
-   + [Anwendungsfälle für Customer Journey Analytics](../use-cases/cja-usecases.md)
++ Anwendungsszenarien {#cja-usecases}
+   + [Anwendungsszenarien für Customer Journey Analytics](../use-cases/cja-usecases.md)
    + Adobe Analytics-Daten {#aa-data}
       + [Verwenden von Marketing-Kanal-Dimensionen](../use-cases/aa-data/marketing-channels.md)
       + [Kombinieren von Report Suites mit verschiedenen Schemata](../use-cases/aa-data/combine-report-suites.md)
@@ -456,7 +456,7 @@ ht-degree: 83%
       + [Bericht über Ziele](../use-cases/goals-using-derived-fields.md)
    + Produktanalyse {#product-analysis}
       + [Produktanalyse](/help/use-cases/product-analysis.md)
-   + Stitching {#stitching}
+   + Zuordnung {#stitching}
       + [Gemeinsam verwendete Geräte](/help/use-cases/stitching/shared-devices.md)
    + Drittanbieterdaten {#third-party}
       + [Überblick](/help/use-cases/third-party/overview.md)
@@ -465,11 +465,11 @@ ht-degree: 83%
          + [Aufnehmen von historischen Daten aus Google Analytics](/help/use-cases/third-party/ga/backfill.md)
          + [Konfigurieren des Streaming-Vorgangs von Google Analytics-Daten](/help/use-cases/third-party/ga/streaming.md)
          + [Bericht zu Google Analytics-Daten](/help/use-cases/third-party/ga/report.md)
-      + Quantenmetrik {#qm}
+      + Quantum Metric {#qm}
          + [Überblick](/help/use-cases/third-party/quantum-metric/qm-overview.md)
-         + [Sitzungswiederholungen](/help/use-cases/third-party/quantum-metric/tie-session-replays.md)
+         + [Verbinden von Sitzungswiederholungen](/help/use-cases/third-party/quantum-metric/tie-session-replays.md)
          + [Verwenden von Heatmaps](/help/use-cases/third-party/quantum-metric/heatmap.md)
-         + [Reibungsereignisse hinzufügen](/help/use-cases/third-party/quantum-metric/friction-events.md)
+         + [Hinzufügen von Reibungsereignissen](/help/use-cases/third-party/quantum-metric/friction-events.md)
          + [Quell-Connector](/help/use-cases/third-party/quantum-metric/source-connector.md)
 
 + Labs {#labs}

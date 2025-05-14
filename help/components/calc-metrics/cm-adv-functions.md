@@ -7,7 +7,7 @@ role: User
 source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
 workflow-type: tm+mt
 source-wordcount: '5247'
-ht-degree: 89%
+ht-degree: 99%
 
 ---
 
@@ -21,7 +21,7 @@ Sie können auf diese Funktionen zugreifen, indem Sie die Option **[!UICONTROL A
 
 Bei einer Tabellenfunktion ist die Ausgabe für jede Tabellenzeile gleich. Bei einer Zeilenfunktion ist die Ausgabe für jede Tabellenzeile unterschiedlich.
 
-Sofern zutreffend und relevant, wird eine Funktion mit dem Typ der Funktion kommentiert: [!BADGE Tabelle]{type="Neutral"} oder [!BADGE Zeile]{type="Neutral"}
+Gegebenenfalls wird einer Funktion eine Anmerkung mit dem Typ der Funktion hinzugefügt: [!BADGE Tabelle]{type="Neutral"} oder [!BADGE Zeile]{type="Neutral"}.
 
 ## Was bedeutet der Parameter „include-zeros“?
 
@@ -93,7 +93,7 @@ Ein gängiger Anwendungsfall für diese Funktion ist, wenn Sie eine ungefähre A
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL ARC COSINE(metric)]**
 
 
-[!BADGE Zeile]{type="Neutral"} Gibt den Arkuskosinus (oder das Inverse des Kosinus) einer Metrik zurück. Der Arcuscosinus ist der Winkel, dessen Cosinus eine gegebene Zahl ist. Der zurückgegebene Winkel wird in Radiant im Bereich von 0 (Null) bis pi angegeben. Wenn Sie das Ergebnis von Radianten in Grad umrechnen möchten, multiplizieren Sie es mit 180/PI().
+[!BADGE Zeile]{type="Neutral"} Gibt den Arkuscosinus (die Umkehrung des Cosinus) einer Metrik zurück. Der Arcuscosinus ist der Winkel, dessen Cosinus eine gegebene Zahl ist. Der zurückgegebene Winkel wird in Radiant im Bereich von 0 (Null) bis pi angegeben. Wenn Sie das Ergebnis von Radianten in Grad umrechnen möchten, multiplizieren Sie es mit 180/PI().
 
 
 | Argument | Beschreibung |
@@ -116,7 +116,7 @@ Ein gängiger Anwendungsfall für diese Funktion ist, wenn Sie eine ungefähre A
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL ARC SINE(metric)]**
 
 
-[!BADGE Row]{type="Neutral"} Gibt den Arkussinus (den umgekehrten Sinus) einer Zahl zurück. Der Arcussinus ist der Winkel, dessen Sinus eine gegebene Zahl ist. Der zurückgegebene Winkel wird in Radiant im Bereich -pi/2 bis pi/2 angegeben. Um den Arkussinus in Grad auszudrücken, multiplizieren Sie das Ergebnis mit 180/PI().
+[!BADGE Zeile ]{type="Neutral"} Gibt den Arkussinus (die Umkehrung des Sinus) einer Zahl zurück. Der Arcussinus ist der Winkel, dessen Sinus eine gegebene Zahl ist. Der zurückgegebene Winkel wird in Radiant im Bereich -pi/2 bis pi/2 angegeben. Um den Arkussinus in Grad auszudrücken, multiplizieren Sie das Ergebnis mit 180/PI().
 
 
 | Argument | Beschreibung |
@@ -139,7 +139,7 @@ Ein gängiger Anwendungsfall für diese Funktion ist, wenn Sie eine ungefähre A
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL ARC TANGENT(metric)]**
 
 
-[!BADGE Zeile]{type="Neutral"} Gibt den Arkustangens oder umgekehrten Tangens einer Zahl zurück. Der Arkustangens ist der Winkel, dessen Tangens eine gegebene Zahl ist. Der zurückgegebene Winkel wird in Radiant im Bereich -pi/2 bis pi/2 angegeben. Um den Arkustangens in Grad auszudrücken, multiplizieren Sie das Ergebnis mit 180/PI().
+[!BADGE Zeile]{type="Neutral"} Gibt den Arkustangens (die Umkehrung des Tangens) einer Zahl zurück. Der Arkustangens ist der Winkel, dessen Tangens eine gegebene Zahl ist. Der zurückgegebene Winkel wird in Radiant im Bereich -pi/2 bis pi/2 angegeben. Um den Arkustangens in Grad auszudrücken, multiplizieren Sie das Ergebnis mit 180/PI().
 
 
 | Argument | Beschreibung |
@@ -215,13 +215,13 @@ CDF-Z(-3) ? 0.0013499
 >[!CONTEXTUALHELP]
 >id="functions-ceil"
 >title="Ceiling (Obergrenze)"
->abstract="Gibt die kleinste Ganzzahl zurück, die nicht kleiner als ein angegebener Wert ist. Beispiel: Wenn Sie für den Umsatz keine Währungsdezimalzahlen in Berichte aufnehmen möchten und ein Produkt einen Umsatz von 569,34 US-Dollar aufweist, können Sie mit der Formel CEILING(Umsatz) den Umsatz auf den nächsten Dollar aufrunden (in diesem Fall 570 US-Dollar)."
+>abstract="Gibt die kleinste Ganzzahl zurück, die nicht kleiner als ein angegebener Wert ist. Beispiel: Wenn Sie für den Umsatz keine Währungsdezimalzahlen in Berichte aufnehmen möchten und ein Produkt einen Umsatz von 569,34 US-Dollar aufweist, können Sie mit der Formel CEILING(Revenue) den Umsatz auf den nächsten Dollar aufrunden (in diesem Fall 570 US-Dollar)."
 
 <!-- markdownlint-enable MD034 -->
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL CEILING(metric)]**
 
-[!BADGE Zeile]{type="Neutral"} Gibt die kleinste Ganzzahl zurück, die mindestens einem angegebenen Wert entspricht. Beispiel: Wenn Sie für den Umsatz keine Währungsdezimalzahlen in Berichte aufnehmen möchten und ein Produkt einen Umsatz von 569,34 US-Dollar aufweist, können Sie mit der Formel CEILING(Umsatz) den Umsatz auf den nächsten Dollar aufrunden (in diesem Fall 570 US-Dollar).
+[!BADGE Zeile]{type="Neutral"} Gibt die kleinste Ganzzahl zurück, die nicht kleiner als ein angegebener Wert ist. Beispiel: Wenn Sie für den Umsatz keine Währungsdezimalzahlen in Berichte aufnehmen möchten und ein Produkt einen Umsatz von 569,34 US-Dollar aufweist, können Sie mit der Formel CEILING(Revenue) den Umsatz auf den nächsten Dollar aufrunden (in diesem Fall 570 US-Dollar).
 
 | Argument | Beschreibung |
 |---|---|
@@ -315,7 +315,7 @@ Konfidenz ist ein Maß dafür, wie hoch die Wahrscheinlichkeit ist, dass eine be
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL COSINE(metric)]**
 
-[!BADGE Zeile]{type="Neutral"} Gibt den Kosinus des gegebenen Winkels zurück. Wenn der Winkel in Grad angegeben ist, multiplizieren Sie den Winkel mit PI()/180.
+[!BADGE Zeile]{type="Neutral"} Gibt den Cosinus des gegebenen Winkels zurück. Wenn der Winkel in Grad angegeben ist, multiplizieren Sie den Winkel mit PI()/180.
 
 | Argument | Beschreibung |
 |---|---|
@@ -352,13 +352,13 @@ Gibt die positive Kubikwurzel einer Zahl zurück. Die Kubikwurzel einer Zahl ist
 >[!CONTEXTUALHELP]
 >id="functions-cumul"
 >title="Kumulativ"
->abstract="Gibt die Summe der letzten n Elemente der Spalte x zurück. Wenn n > 0 ist, werden die letzten n Elemente von x addiert. Wenn n &lt; 0 ist, werden die n vorangehenden Elemente addiert."
+>abstract="Gibt die Summe der letzten n Elemente der Spalte x zurück. Wenn n > 0 ist, werden die letzten n Elemente von x addiert. Wenn n &lt; 0 ist, werden die vorangehenden n Elemente addiert."
 
 <!-- markdownlint-enable MD034 -->
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL CUMULATIVE(number, metric)]**
 
-Gibt die Summe der letzten n Elemente der Spalte x zurück. Wenn n > 0 ist, werden die letzten n Elemente von x addiert. Wenn n &lt; 0 ist, werden die n vorangehenden Elemente addiert.
+Gibt die Summe der letzten n Elemente der Spalte x zurück. Wenn n > 0 ist, werden die letzten n Elemente von x addiert. Wenn n &lt; 0 ist, werden die vorangehenden n Elemente addiert.
 
 | Argument | Beschreibung |
 | --- | --- |
@@ -381,13 +381,13 @@ Gibt die Summe der letzten n Elemente der Spalte x zurück. Wenn n > 0 ist, werd
 >[!CONTEXTUALHELP]
 >id="functions-cumul-avg"
 >title="Cumulative (Average)"
->abstract="Gibt den Durchschnitt der letzten n Elemente der Spalte x zurück. Wenn n > 0 ist, werden die letzten n Elemente von x addiert. Wenn n &lt; 0 ist, werden die vorangehenden Elemente n addiert."
+>abstract="Gibt den Durchschnitt der letzten n Elemente der Spalte x zurück. Wenn n > 0 ist, werden die letzten n Elemente von x addiert. Wenn n &lt; 0 ist, werden die vorangehenden n Elemente addiert."
 
 <!-- markdownlint-enable MD034 -->
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL CUMULATIVE AVERAGE(number, metric)]**
 
-Gibt den Durchschnitt der letzten n Elemente der Spalte x zurück. Wenn n > 0 ist, werden die letzten n Elemente von x addiert. Wenn n &lt; 0 ist, werden die vorangehenden Elemente n addiert.
+Gibt den Durchschnitt der letzten n Elemente der Spalte x zurück. Wenn n > 0 ist, werden die letzten n Elemente von x addiert. Wenn n &lt; 0 ist, werden die vorangehenden n Elemente addiert.
 
 | Argument | Beschreibung |
 | --- | --- |
@@ -418,8 +418,8 @@ Gleich. Die Ausgabe ist entweder 0 (False) oder 1 (True).
 
 | Argument | Beschreibung |
 |---|---|
-| metric_X | Die Metrik, die Sie vergleichen möchten. |
-| metric_Y | Die Metrik, mit der verglichen werden soll. |
+| metric_X | Die Metrik, mit der der Vergleich durchgeführt werden soll. |
+| metric_Y | Die Metrik, mit der der Vergleich durchgeführt werden soll. |
 
 ### Beispiel
 
@@ -527,13 +527,13 @@ Gleich. Die Ausgabe ist entweder 0 (False) oder 1 (True).
 >[!CONTEXTUALHELP]
 >id="functions-floor"
 >title="Floor"
->abstract="Gibt die größte Ganzzahl zurück, die nicht größer als ein angegebener Wert ist. Beispiel: Wenn Sie für den Umsatz keine Währungsdezimalzahlen in Berichte aufnehmen möchten und ein Produkt einen Umsatz von 569,34 US-Dollar aufweist, können Sie mit der Formel FLOOR(Umsatz) den Umsatz auf den nächsten Dollar abrunden (in diesem Fall 569 US-Dollar)."
+>abstract="Gibt die größte Ganzzahl zurück, die nicht größer als ein angegebener Wert ist. Beispiel: Wenn Sie für den Umsatz keine Währungsdezimalzahlen in Berichte aufnehmen möchten und ein Produkt einen Umsatz von 569,34 US-Dollar aufweist, können Sie mit der Formel FLOOR(Revenue) den Umsatz auf den nächsten Dollar abrunden (in diesem Fall 569 US-Dollar)."
 
 <!-- markdownlint-enable MD034 -->
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL FLOOR(metric_X, metric_Y, include_zeros)]**
 
-[!BADGE Zeile]{type="Neutral"} Gibt die größte Ganzzahl zurück, die nicht größer als ein gegebener Wert ist. Beispiel: Wenn Sie für den Umsatz keine Währungsdezimalzahlen in Berichte aufnehmen möchten und ein Produkt einen Umsatz von 569,34 US-Dollar aufweist, können Sie mit der Formel FLOOR(Umsatz) den Umsatz auf den nächsten Dollar abrunden (in diesem Fall 569 US-Dollar).
+[!BADGE Zeile]{type="Neutral"} Gibt die größte Ganzzahl zurück, die nicht größer als ein angegebener Wert ist. Beispiel: Wenn Sie für den Umsatz keine Währungsdezimalzahlen in Berichte aufnehmen möchten und ein Produkt einen Umsatz von 569,34 US-Dollar aufweist, können Sie mit der Formel FLOOR(Revenue) den Umsatz auf den nächsten Dollar abrunden (in diesem Fall 569 US-Dollar).
 
 | Argument | Beschreibung |
 |---|---|
@@ -557,8 +557,8 @@ Die Ausgabe ist entweder 0 (False) oder 1 (True).
 
 | Argument | Beschreibung |
 |---|---|
-| metric_X | Die Basismetrik, die Sie zum Vergleich verwenden möchten. |
-| metric_Y | Die Metrik, mit der verglichen werden soll. |
+| metric_X | Die Basismetrik, mit der der Vergleich durchgeführt werden soll. |
+| metric_Y | Die Metrik, mit der der Vergleich durchgeführt werden soll. |
 
 ### Beispiel
 
@@ -582,8 +582,8 @@ Größer als oder gleich. Die Ausgabe ist entweder 0 (False) oder 1 (True).
 
 | Argument | Beschreibung |
 |---|---|
-| metric_X | Die Basismetrik, die Sie zum Vergleich verwenden möchten. |
-| metric_Y | Die Metrik, mit der verglichen werden soll. |
+| metric_X | Die Basismetrik, mit der der Vergleich durchgeführt werden soll. |
+| metric_Y | Die Metrik, mit der der Vergleich durchgeführt werden soll. |
 
 ### Beispiel
 
@@ -605,7 +605,7 @@ Größer als oder gleich. Die Ausgabe ist entweder 0 (False) oder 1 (True).
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL HYPERBOLIC COSINE(metric)]**
 
 
-[!BADGE Zeile]{type="Neutral"} Gibt den hyperbolischen Kosinus einer Zahl zurück.
+[!BADGE Zeile]{type="Neutral"} Gibt den Cosinus hyperbolicus einer Zahl zurück.
 
 
 | Argument | Beschreibung |
@@ -627,7 +627,7 @@ Größer als oder gleich. Die Ausgabe ist entweder 0 (False) oder 1 (True).
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL HYPERBOLIC SINE(metric)]**
 
-[!BADGE Zeile]{type="Neutral"} Gibt den hyperbolischen Sinus einer Zahl zurück.
+[!BADGE Reihe]{type="Neutral"} Gibt den Sinus hyperbolicus einer Zahl zurück.
 
 | Argument | Beschreibung |
 |---|---|
@@ -647,7 +647,7 @@ Größer als oder gleich. Die Ausgabe ist entweder 0 (False) oder 1 (True).
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL HYPERBOLIC TANGENT(metric)]**
 
-[!BADGE Zeile]{type="Neutral"} Gibt den hyperbolischen Tangens einer Zahl zurück.
+[!BADGE Zeile]{type="Neutral"} Gibt den Tangens hyperbolicus einer Zahl zurück.
 
 | Argument | Beschreibung |
 |---|---|
@@ -668,7 +668,7 @@ Größer als oder gleich. Die Ausgabe ist entweder 0 (False) oder 1 (True).
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL IF(logical_test, value_if_true, value_if_false)]**
 
 
-[!BADGE Zeile]{type="Neutral"} Wenn der Wert des Bedingungsparameters ungleich null (true) ist, ist das Ergebnis der Wert des Parameters value_if_true. Andernfalls ist es der Wert des Parameters „value_if_false“.
+[!BADGE Zeile]{type="Neutral"} Wenn der Bedingungsparameter einen Wert ungleich null (true) aufweist, ist das Ergebnis der Wert des Parameters „value_if_true“. Andernfalls ist es der Wert des Parameters „value_if_false“.
 
 
 | Argument | Beschreibung |
@@ -695,8 +695,8 @@ Die Ausgabe ist entweder 0 (False) oder 1 (True).
 
 | Argument | Beschreibung |
 |---|---|
-| metric_X | Die Metrik, die Sie vergleichen möchten. |
-| metric_Y | Die Metrik, mit der verglichen werden soll. |
+| metric_X | Die Metrik, mit der der Vergleich durchgeführt werden soll. |
+| metric_Y | Die Metrik, mit der der Vergleich durchgeführt werden soll. |
 
 ### Beispiel
 
@@ -720,8 +720,8 @@ Kleiner als oder gleich. Die Ausgabe ist entweder 0 (False) oder 1 (True).
 
 | Argument | Beschreibung |
 |---|---|
-| metric_X | Die Metrik, die Sie vergleichen möchten. |
-| metric_Y | Die Metrik, mit der verglichen werden soll. |
+| metric_X | Die Metrik, mit der der Vergleich durchgeführt werden soll. |
+| metric_Y | Die Metrik, mit der der Vergleich durchgeführt werden soll. |
 
 ### Beispiel
 
@@ -729,20 +729,20 @@ Kleiner als oder gleich. Die Ausgabe ist entweder 0 (False) oder 1 (True).
 
 
 
-## Anstieg {#lift}
+## Lift {#lift}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="functions-waskr-lift"
->title="Anstieg"
->abstract="Der Anstieg des Verhältnisses im Vergleich zum Kontrollwert."
+>title="Lift"
+>abstract="Der Lift (Anstieg) des Verhältnisses im Vergleich zum Kontrollwert."
 
 <!-- markdownlint-enable MD034 -->
 
-![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL LIFT(Normalisierungs-Container, Erfolgsmetrik, Kontrolle)]**
+![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL LIFT(normalizing-container, success-metric, control)]**
 
-Der Anstieg des Verhältnisses im Vergleich zum Kontrollwert.
+Der Lift (Anstieg) des Verhältnisses im Vergleich zum Kontrollwert.
 
 | Argument | Beschreibung |
 | --- | --- |
@@ -766,7 +766,7 @@ Der Anstieg des Verhältnisses im Vergleich zum Kontrollwert.
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL LINEAR REGRESSION: CORRELATION COEFFICIENT(metric_X, metric_Y, include_zeros)]**
 
 
-[!BADGE Tabelle]{type="Neutral"} Lineare Regression: Y = a X + b. Gibt den Korrelationskoeffizienten zurück.
+[!BADGE Tabelle]{type="Neutral"} Lineare Regression: Y = a X + b. Gibt den Korrelationskoeffizienten zurück.
 
 
 | Argument | Beschreibung |
@@ -863,7 +863,7 @@ Der Anstieg des Verhältnisses im Vergleich zum Kontrollwert.
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL LOG BASE 10(metric)]**
 
 
-[!BADGE Zeile]{type="Neutral"} Gibt den Logarithmus zur Basis 10 einer Zahl zurück.
+[!BADGE Zeile]{type="Neutral"} Gibt den Logarithmus einer Zahl zur Basis 10 zurück.
 
 
 | Argument | Beschreibung |
@@ -884,7 +884,7 @@ Der Anstieg des Verhältnisses im Vergleich zum Kontrollwert.
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL LOG REGRESSION: CORRELATION COEFFICIENT(metric_X, metric_Y, include_zeros)]**
 
-[!BADGE Tabelle]{type="Neutral"} Log-Regression: Y = a ln(X) + b. Gibt den Korrelationskoeffizienten zurück.
+[!BADGE Tabelle]{type="Neutral"} Logarithmische Regression: Y = a ln(X) + b. Gibt den Korrelationskoeffizienten zurück.
 
 | Argument | Beschreibung |
 |---|---|
@@ -906,7 +906,7 @@ Der Anstieg des Verhältnisses im Vergleich zum Kontrollwert.
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL LOG REGRESSION: INTERCEPT(metric_X, metric_Y, include_zeros)]**
 
-[!BADGE Tabelle]{type="Neutral"} Log-Regression: Y = a ln(X) + b. Gibt b zurück.
+[!BADGE Tabelle]{type="Neutral"} Logarithmische Regression: Y = a ln(X) + b. Gibt b zurück.
 
 | Argument | Beschreibung |
 |---|---|
@@ -929,7 +929,7 @@ Der Anstieg des Verhältnisses im Vergleich zum Kontrollwert.
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL LOG REGRESSION: PREDICTED Y(metric_X, metric_Y, include_zeros)]**
 
-[!BADGE Zeile]{type="Neutral"} Protokollregression: Y = a ln(X) + b. Gibt Y zurück.
+[!BADGE Zeile]{type="Neutral"} Logarithmische Regression: Y = a ln(X) + b. Gibt Y zurück.
 
 | Argument | Beschreibung |
 |---|---|
@@ -952,7 +952,7 @@ Der Anstieg des Verhältnisses im Vergleich zum Kontrollwert.
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL LOG REGRESSION: SLOPE(metric_X, metric_Y, include_zeros)]**
 
-[!BADGE Tabelle]{type="Neutral"} Log-Regression: Y = a ln(X) + b. Gibt a zurück.
+[!BADGE Tabelle]{type="Neutral"} Logarithmische Regression: Y = a ln(X) + b. Gibt a zurück.
 
 | Argument | Beschreibung |
 |---|---|
@@ -1023,8 +1023,8 @@ Ungleich. Die Ausgabe ist entweder 0 (False) oder 1 (True).
 
 | Argument | Beschreibung |
 |---|---|
-| metric_X | Die Metrik, die Sie vergleichen möchten. |
-| metric_Y | Die Metrik, mit der verglichen werden soll. |
+| metric_X | Die Metrik, mit der der Vergleich durchgeführt werden soll. |
+| metric_Y | Die Metrik, mit der der Vergleich durchgeführt werden soll. |
 
 ### Beispiel
 
@@ -1045,7 +1045,7 @@ Ungleich. Die Ausgabe ist entweder 0 (False) oder 1 (True).
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL OR(logical_test)]**
 
 
-[!BADGE Zeile]{type="Neutral"} Trennung. „Ungleich null“ gilt als „True“ und „Gleich null“ gilt als „False“. Die Ausgabe ist entweder 0 (False) oder 1 (True).
+[!BADGE Zeile]{type="Neutral"} Oder-Verknüpfung. „Ungleich null“ gilt als „True“ und „Gleich null“ gilt als „False“. Die Ausgabe ist entweder 0 (False) oder 1 (True).
 
 
 | Argument | Beschreibung |
@@ -1312,7 +1312,7 @@ Gibt Pi zurück: 3,14159...
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL RECIPROCAL REGRESSION: PREDICTED Y(metric_X, metric_Y, include_zeros)]**
 
-[!BADGE Reihe]{type="Neutral"} Reziproke Regression: Y = a + b X ^ -1. Gibt Y zurück.
+[!BADGE Zeile]{type="Neutral"} Reziproke Regression: Y = a + b X ^ -1. Gibt Y zurück.
 
 | Argument | Beschreibung |
 |---|---|
@@ -1353,7 +1353,7 @@ Gibt Pi zurück: 3,14159...
 >title="Stichprobenvarianz"
 >abstract="Berechnet eine Schätzung der Stichprobenvarianz anhand der Formel (sum(metric^2) / (N - 1)) - (sum(metric))^2/(N*(N-1)). Wobei N die Anzahl des Normalisierungs-Containers ist. <br/>Dies wird im Rahmen von *jederzeit gültigen* Konfidenzberechnungen verwendet. Grundsätzlich ist diese Funktion allein nicht nützlich, sie kann aber verwendet werden, um Berechnungen zu überprüfen oder Konfidenzberechnungen *manuell* durchzuführen."
 
-![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL STICHPROBENVARIANZ(Normalisierungs-Container, Erfolgsmetrik)]**
+![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL SAMPLE VARIANCE(normalizing-container, success-metric)]**
 
 Berechnet eine Schätzung der Stichprobenvarianz.
 
@@ -1380,7 +1380,7 @@ Berechnet eine Schätzung der Stichprobenvarianz.
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL SINE(metric)]**
 
 
-[!BADGE Row]{type="Neutral"} Gibt den Sinus des gegebenen Winkels zurück. Wenn der Winkel in Grad angegeben ist, multiplizieren Sie den Winkel mit PI()/180.
+[!BADGE Zeile]{type="Neutral"} Gibt den Sinus des gegebenen Winkels zurück. Wenn der Winkel in Grad angegeben ist, multiplizieren Sie den Winkel mit PI()/180.
 
 
 | Argument | Beschreibung |
@@ -1492,7 +1492,7 @@ Gibt den Tangens des gegebenen Winkels zurück. Wenn der Winkel in Grad angegebe
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL Z-SCORE(metric, include_zeros)]**
 
-[!BADGE Zeile]{type="Neutral"} Die Abweichung vom Mittelwert dividiert durch die Standardabweichung.
+[!BADGE Zeile]{type="Neutral"} Die Abweichung vom arithmetischen Mittel geteilt durch die Standardabweichung.
 
 | Argument | Beschreibung |
 |---|---|

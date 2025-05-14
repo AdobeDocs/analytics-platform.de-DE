@@ -25,7 +25,7 @@ Werfen Sie einen Blick auf die neuesten Verbesserungen in Customer Journey Analy
 
 >[!TAB Content Analytics]
 
-Mit Content Analytics können Sie schnell und einfach große Mengen an Inhaltsdaten untersuchen, um Trends aufzudecken, Anomalien zu erkennen, Content-Ermüdung zu identifizieren und Erkenntnisse aus der Bereitstellung von Inhalten zu gewinnen.
+Mit Content Analytics können Sie schnell und einfach große Mengen von Inhaltsdaten untersuchen, um Trends aufzudecken, Anomalien zu erkennen, Content-Ermüdung zu identifizieren und Erkenntnisse aus der Nutzung von Inhalten zu gewinnen.
 
 [![Bild](assets/learn-more-button.svg)](/help/content-analytics/content-analytics.md)
 
@@ -185,4 +185,4 @@ Lernen Sie die Unterschiede zwischen Customer Journey Analytics und Adobe Analyt
 
 
 <table style="table-layout:auto" class="tablelayout-is-fixed"><tbody><tr style="border: 0;"><td><img src="./assets/newsletter.png"></td><td>
-<b>Bleiben Sie auf dem Laufenden, tragen Sie zur Community bei und verbessern Sie Ihr Erlebnis mit Customer Journey Analytics!</b><br>Besuchen Sie die Adobe Analytics-Community, um die Funktionalität mit anderen Benutzenden zu erörtern. <a href="https://experienceleaguecommunities.adobe.com/t5/adobe-analytics/ct-p/adobe-analytics-community?profile.language=de&lang=de">Werden Sie noch heute Teil der Community!</a></td></tr></tbody></table>
+<b>Bleiben Sie auf dem Laufenden, tragen Sie zur Community bei und verbessern Sie Ihr Erlebnis mit Customer Journey Analytics!</b><br>Besuchen Sie die Adobe Analytics-Community, um die Funktionalität mit anderen Benutzenden zu erörtern. <a href="https://experienceleaguecommunities.adobe.com/t5/adobe-analytics/ct-p/adobe-analytics-community?lang=de">Werden Sie noch heute Teil der Community!</a></td></tr></tbody></table>

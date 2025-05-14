@@ -8,7 +8,7 @@ exl-id: f5443ddd-81d0-43cc-99cb-215e7ddf5acf
 source-git-commit: 03e9fb37684f8796a18a76dc0a93c4e14e6e7640
 workflow-type: tm+mt
 source-wordcount: '806'
-ht-degree: 96%
+ht-degree: 98%
 
 ---
 
@@ -127,7 +127,7 @@ So fügen Sie den Lookup-Datensatz zu Ihrer Verbindung in Customer Journey Analy
 
 1. Erstellen Sie mithilfe des Felds **[!UICONTROL Schlüssel]** und des Felds **[!UICONTROL Passender Schlüssel]** eine Korrelation zwischen dem Feld in Ihrem Lookup-Datensatz und dem Feld in Ihrem Ereignis- oder Zusammenfassungsdatensatz.
 
-1. Wiederholen Sie diesen Vorgang, bis alle Lookup-Datensätze zu Ihrer Verbindung in Customer Journey Analytics hinzugefügt werden.
+1. Wiederholen Sie diesen Vorgang, bis alle Lookup-Datensätze zu Ihrer Verbindung in Customer Journey Analytics hinzugefügt worden sind.
 
 {{upgrade-final-step}}
 

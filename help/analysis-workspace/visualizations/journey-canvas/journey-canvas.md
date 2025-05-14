@@ -7,7 +7,7 @@ exl-id: be03c3b2-8faf-47b8-b3ab-e953202bf488
 source-git-commit: 770320a0b16d26e0755203a3524b000db30cac82
 workflow-type: tm+mt
 source-wordcount: '1988'
-ht-degree: 87%
+ht-degree: 95%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 87%
 >[!CONTEXTUALHELP]
 >id="cja_journeycanvas_button"
 >title="Journey-Arbeitsfläche"
->abstract="Zeigt, wie Personen eine Reihe von Touchpoints durchlaufen oder aus ihr aussteigen. Zur Verwendung für Journeys mit mehreren Einstiegspunkten und Pfaden oder zum Analysieren von Journeys, die in Journey Optimizer erstellt wurden."
+>abstract="Zeigt, wie Personen eine Reihe von Touchpoints durchlaufen oder aus ihr aussteigen. Zur Verwendung für Journeys mit mehreren Einstiegspunkten und Pfaden oder zum Analysieren von in Journey Optimizer erstellten Journeys."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -36,7 +36,7 @@ ht-degree: 87%
 >[!CONTEXTUALHELP]
 >id="journeycanvas_button"
 >title="Journey-Arbeitsfläche"
->abstract="Zeigt, wie Personen eine Reihe von Touchpoints durchlaufen oder aus ihr aussteigen. Zur Verwendung für Journeys mit mehreren Einstiegspunkten und Pfaden oder zum Analysieren von Journeys, die in Journey Optimizer erstellt wurden."
+>abstract="Zeigt, wie Personen eine Reihe von Touchpoints durchlaufen oder aus ihr aussteigen. Zur Verwendung für Journeys mit mehreren Einstiegspunkten und Pfaden oder zum Analysieren von in Journey Optimizer erstellten Journeys."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -51,7 +51,7 @@ ht-degree: 87%
 
 >[!BEGINSHADEBOX]
 
-_In diesem Artikel wird die Visualisierung „Journey-Arbeitsflächen“ in_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics** beschrieben.<br/>Es gibt keine entsprechende Visualisierung in **Adobe Analytics**._
+_In diesem Artikel wird die Visualisierung „Journey-Arbeitsflächen“ in_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics** beschrieben.<br/>Es gibt keine entsprechende Visualisierung in **Adobe Analytics**._
 
 >[!ENDSHADEBOX]
 
@@ -194,19 +194,19 @@ Die Verwendung der Journey-Arbeitsfläche zur Analyse von in Journey Optimizer e
 
 Beachten Sie die folgenden Verhaltensweisen, um die Synchronisierung zwischen Journey Optimizer und der Journey-Arbeitsfläche zu verstehen:
 
-* **Die Datensynchronisation erfolgt nur in eine Richtung**
+* **Die Datensynchronisierung erfolgt nur in eine Richtung**
 
   Nachdem Sie eine Analyse einer Journey Optimizer-Journey auf der Journey-Arbeitsfläche erstellt haben, werden die Daten nur in eine Richtung synchronisiert, und zwar von Journey Optimizer zur Journey-Arbeitsfläche. Das bedeutet, dass Änderungen, die auf der Journey-Arbeitsfläche an einer Journey vorgenommen werden, nie in Journey Optimizer widergespiegelt werden.
 
 * **Beim Ändern einer Journey auf der Journey-Arbeitsfläche wird die Synchronisierung angehalten**
 
-  Änderungen an einer Journey in Journey Optimizer Sync to Journey Canvas [nur wenn die Journey nicht wesentlich auf der Journey Canvas geändert wurde](#differences-after-modifying-a-journey-in-journey-canvas). Nachdem Sie eine Journey auf der Journey-Arbeitsfläche geändert haben, werden Änderungen, die Sie in Journey Optimizer an der Journey vornehmen, nicht auf der Journey-Arbeitsfläche widergespiegelt. Um die Änderungen auf der Journey-Arbeitsfläche anzuzeigen, können Sie die Journey löschen und [auf der Journey-Arbeitsfläche neu erstellen](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md).
+  Darüber hinaus werden in Journey Optimizer an einer Journey vorgenommene Änderungen nur mit der Journey-Arbeitsfläche synchronisiert, [wenn die Journey nicht wesentlich auf der Journey-Arbeitsfläche geändert wurde](#differences-after-modifying-a-journey-in-journey-canvas). Nachdem Sie eine Journey auf der Journey-Arbeitsfläche geändert haben, werden Änderungen, die Sie in Journey Optimizer an der Journey vornehmen, nicht auf der Journey-Arbeitsfläche widergespiegelt. Um die Änderungen auf der Journey-Arbeitsfläche anzuzeigen, können Sie die Journey löschen und [auf der Journey-Arbeitsfläche neu erstellen](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md).
 
 * **Bei Verwendung eines Links des Typs „Für alle freigeben“ muss das Projekt in Customer Journey Analytics gespeichert werden, nachdem Änderungen in Journey Optimizer vorgenommen wurden**
 
   Bei Verwendung eines Links des Typs „Für alle freigeben“ werden Änderungen, die in Journey Optimizer vorgenommen wurden, erst dann auf der Journey-Arbeitsfläche angezeigt, wenn das Projekt in Customer Journey Analytics gespeichert wurde.
 
-  Weitere Informationen zu Links des Typs „Für alle freigeben“ finden Sie unter [Freigeben eines Projekts für alle (nicht mehr erforderlich)](/help/analysis-workspace/curate-share/share-projects.md#share-a-project-with-anyone-no-login-required) in [Projekte freigeben](/help/analysis-workspace/curate-share/share-projects.md).
+  Weitere Informationen zu Links des Typs „Für alle freigeben“ finden Sie unter [Projekt für alle freigeben (keine Anmeldung erforderlich)](/help/analysis-workspace/curate-share/share-projects.md#share-a-project-with-anyone-no-login-required) in [Freigeben von Projekten](/help/analysis-workspace/curate-share/share-projects.md).
 
 ### Unterschiede nach dem Ändern einer Journey auf der Journey-Arbeitsfläche {#differences-after-modifying}
 
@@ -234,7 +234,7 @@ Dies liegt daran, dass Sie mit der Journey-Arbeitsfläche im Gegensatz zu Journe
 
 #### Funktionsunterschiede
 
-Nachdem Sie eine Journey Optimizer-Journey in der Journey-Arbeitsfläche geändert haben, ändern sich je nach Ihren Änderungen die Optionen, [!UICONTROL **in der**] „Pfeileinstellungen“ verfügbar sind. Weitere Informationen finden Sie unter [Einstellungen konfigurieren](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md).
+Nachdem Sie eine Journey Optimizer-Journey auf der Journey-Arbeitsfläche geändert haben, ändern sich die im Dropdown-Feld [!UICONTROL **Pfeil-Einstellungen**] verfügbaren Optionen entsprechend Ihren Änderungen. Weitere Informationen finden Sie unter [Einstellungen konfigurieren](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md).
 
 Das Feld [!UICONTROL **Knotentyp**] ist nur in Journey Optimizer verfügbar. Es ist nicht verfügbar, wenn Sie eine Journey Optimizer-Journey auf der Journey-Arbeitsfläche anzeigen, unabhängig davon, ob Sie Änderungen an der Journey auf der Journey-Arbeitsfläche vornehmen oder nicht.
 
@@ -263,5 +263,5 @@ Sie können Analysen auf der Journey-Arbeitsfläche erstellen, die auf beliebige
 
 >[!MORELIKETHIS]
 >
-> * [Anleitung zum Journey der Arbeitsflächen-Visualisierung in Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/a-guide-to-journey-canvas-visualization-in-adobe-customer/ba-p/737857?profile.language=de)
+> * [Anleitung zur Visualisierung „Journey-Arbeitsfläche“ in Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/a-guide-to-journey-canvas-visualization-in-adobe-customer/ba-p/737857?profile.language=de)
 

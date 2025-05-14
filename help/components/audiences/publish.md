@@ -7,7 +7,7 @@ role: User
 source-git-commit: be062e350a8c1989be41aeb2774471a3fe1bf524
 workflow-type: tm+mt
 source-wordcount: '2368'
-ht-degree: 74%
+ht-degree: 76%
 
 ---
 
@@ -71,7 +71,7 @@ Lesen Sie diesen [Überblick](/help/components/audiences/audiences-overview.md),
 
    | Erstellungsmethode | Details |
    | --- | --- |
-   | Innerhalb der Benutzeroberfläche **[!UICONTROL Zielgruppen]** | Wählen Sie im Customer Journey Analytics-Hauptmenü die Option **[!UICONTROL Komponenten]** > **[!UICONTROL Zielgruppen]** aus. Die Benutzeroberfläche „Zielgruppen“ wird angezeigt. Wählen Sie **[!UICONTROL Zielgruppe erstellen]** und der [!UICONTROL Audience Builder] wird geöffnet. |
+   | In der Benutzeroberfläche **[!UICONTROL Zielgruppen]** | Wählen Sie im Customer Journey Analytics-Hauptmenü die Option **[!UICONTROL Komponenten]** > **[!UICONTROL Zielgruppen]** aus. Die Benutzeroberfläche „Zielgruppen“ wird angezeigt. Wählen Sie **[!UICONTROL Zielgruppe erstellen]** aus. Daraufhin wird der [!UICONTROL Audience Builder] geöffnet. |
    | Über eine Visualisierung in Analysis Workspace | Viele Visualisierungen in Analysis Workspace ermöglichen es Ihnen, mithilfe des Kontextmenüs eine Zielgruppe zu erstellen. Sie können beispielsweise **[!UICONTROL Zielgruppe erstellen]** aus dem Kontextmenü eines Elements in einer [Freiformtabelle](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) oder eines Knotens in der [Journey-Arbeitsfläche](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md) auswählen.<p>Mit dieser Methode wird das Segment im Audience Builder vorab mit der ausgewählten Dimension oder dem ausgewählten Dimensionselement ausgefüllt.</p><p>Mit den folgenden Visualisierungen können Sie mithilfe des Kontextmenüs eine Zielgruppe erstellen:</p><ul><li>[Kohortentabelle](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md)</li><li>[Fallout](/help/analysis-workspace/visualizations/fallout/fallout-flow.md)</li><li>[Fluss](/help/analysis-workspace/visualizations/c-flow/flow.md)</li><li>[Freiformtabelle](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)</li><li>[Journey-Arbeitsfläche](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md)</li><li>[Venn](/help/analysis-workspace/visualizations/venn.md)</li></ul><p>**Hinweis:** Zielgruppen können keine berechneten Metriken enthalten. Wenn Sie versuchen, eine Zielgruppe mit einer berechneten Metrik zu erstellen, wird die berechnete Metrik nicht in die Zielgruppendefinition einbezogen.</p> |
    | Über die Benutzeroberfläche zur Segmenterstellung/-bearbeitung | Markieren Sie das Kästchen **[!UICONTROL Zielgruppe aus diesem Segment erstellen]**. Mit dieser Methode wird das Segment vorab ausgefüllt. Weitere Informationen [ Sie unter ](/help/components/filters/create-filters.md)Erstellen von Segmenten“. |
 
@@ -151,7 +151,7 @@ An verschiedenen Stellen vor, während und nach der Veröffentlichung von Zielgr
 
 ## Verwenden von Customer Journey Analytics-Zielgruppen in Experience Platform {#audiences-aep}
 
-Customer Journey Analytics nimmt alle Namespace- und ID-Kombinationen aus Ihrer veröffentlichten Zielgruppe und streamt sie in Real-Time Customer Data Platform. Customer Journey Analytics sendet die Zielgruppe an Experience Platform, wobei die primäre Identität auf den Wert festgelegt ist, der bei der Verbindungskonfiguration als [!UICONTROL Personen-ID] ausgewählt wurde.
+Customer Journey Analytics nimmt alle Namespace- und ID-Kombinationen aus Ihrer veröffentlichten Zielgruppe und überträgt sie an die Real-Time Customer Data Platform. Customer Journey Analytics sendet die Zielgruppe an Experience Platform, wobei die primäre Identität auf den Wert festgelegt ist, der bei der Verbindungskonfiguration als [!UICONTROL Personen-ID] ausgewählt wurde.
 
 Real-Time Customer Data Platform untersucht dann jede Namespace/ID-Kombination und sucht nach einem passenden Profil. Ein Profil ist im Grunde eine Gruppe verknüpfter Namespaces, IDs und Geräte. Wenn ein Profil gefunden wird, werden der Namespace und die ID zu den anderen IDs in diesem Profil als Segmentzugehörigkeits-Attribut hinzugefügt. Beispielsweise kann <user@adobe.com> auf allen Geräten und Kanälen als Ziel ausgewählt werden. Wenn kein Profil gefunden wird, wird ein neues erstellt.
 
