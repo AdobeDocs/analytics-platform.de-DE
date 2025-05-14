@@ -6,23 +6,23 @@ feature: Basics
 role: User, Admin
 badgePremium: label="B2B edition"
 exl-id: 89e482b8-8082-4413-8fd3-cc1331780af4
-source-git-commit: 65b4339b4a1b27c41cfe442482a54661989d704b
+source-git-commit: d0dfcce1a9ba2a2f3e55abc63116ed07a33c9411
 workflow-type: tm+mt
-source-wordcount: '428'
-ht-degree: 0%
+source-wordcount: '463'
+ht-degree: 1%
 
 ---
 
 
-# Customer Journey Analytics B2B edition
+# Customer Journey Analytics B2B Edition
 
 {{b2b-edition}}
 
 {{draft-b2b}}
 
-Adobe Analytics begann als Web- und Digital-Analytics-Tool für Marketing-Experten, während Customer Journey Analytics den Umfang auf kanalübergreifende, Offline- und plattformübergreifende Daten erweiterte.  Beide Tools helfen B2C-Unternehmen, ihre Marketing-Maßnahmen und Kundenerlebnisse zu analysieren und zu optimieren.
+Adobe Analytics begann als Web- und Digital-Analytics-Tool für Marketing-Experten, während Customer Journey Analytics den Umfang auf kanalübergreifende, Offline- und plattformübergreifende Daten erweiterte.  Beide Tools helfen B2C-Unternehmen, ihre Marketing-Maßnahmen und Kundenerlebnisse zu analysieren und zu optimieren. Und konzentrieren Sie sich auf **personenbasierte Berichterstellung und Analyse**: Verstehen Sie die Kunden-Journey, bei der der Kunde eine Person ist, die über mehrere Kanäle mit Ihrer Marke interagiert.
 
-Beim B2B-Vertrieb (Business-to-Business) umfasst die Kauf-Journey mehrere Parteien, Online- und Offline-Touchpoints sowie wichtige Phasen vor Abschluss eines Geschäfts. B2B-Unternehmen müssen all diese Interaktionen in einer einheitlichen Journey-Ansicht verfolgen, um ihre Marketing-Maßnahmen und Account-Erlebnisse effektiv analysieren und optimieren zu können.
+Customer Journey Analytics B2B edition **(Account-Based Reporting and Analysis**. Beim B2B-Vertrieb (Business-to-Business) umfasst die Kauf-Journey mehrere Parteien, Online- und Offline-Touchpoints sowie wichtige Phasen vor Abschluss eines Geschäfts. B2B-Unternehmen müssen all diese Interaktionen in einer einheitlichen Journey-Ansicht verfolgen, um ihre Marketing-Maßnahmen und Account-Erlebnisse effektiv analysieren und optimieren zu können.
 
 Typische B2B-Verkaufsmerkmale sind:
 
