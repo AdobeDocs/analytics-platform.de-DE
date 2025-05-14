@@ -188,8 +188,8 @@ Beim Erstellen der berechneten Metrik haben berechnete Metriken, die nicht mit d
 
 ## Verwenden von berechneten Metriken im Panel Experimentieren
 
-In diesem Blogpost finden Sie Informationen zur [Verwendung berechneter Metriken im Panel Experimentieren](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/using-derived-metrics-in-cja-s-experimentation-panel/ba-p/593119).
+In diesem Blogpost finden Sie Informationen zur [Verwendung berechneter Metriken im Panel Experimentieren](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/using-derived-metrics-in-cja-s-experimentation-panel/ba-p/593119?profile.language=de).
 
 >[!MORELIKETHIS]
->[Meistern von Experimentenen in Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/mastering-adobe-customer-journey-analytics-experimentation-your/ba-p/732338)
+>[Meistern von Experimentenen in Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/mastering-adobe-customer-journey-analytics-experimentation-your/ba-p/732338?profile.language=de)
 >
