@@ -6,9 +6,9 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: 35fcd213-d831-4da0-b946-f6f0d8561f60
 source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '221'
-ht-degree: 69%
+ht-degree: 100%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 69%
 
 <!-- Should we single source this instead of duplicate it? The following steps were copied from: /help/data-ingestion/aepwebsdk.md-->
 
-Nachdem Sie Ihre Web SDK- oder API-Implementierung konfiguriert haben, müssen Sie die Status einzelner Batches überprüfen, um sicherzustellen, dass Daten in den Datensatz aufgenommen werden.
+Nachdem Sie Ihre Web SDK- oder API-Implementierung konfiguriert haben, müssen Sie die Status der einzelnen Batches überprüfen, um sicherzustellen, dass Daten in den Datensatz aufgenommen werden.
 
 1. Wählen Sie in der Benutzeroberfläche von Experience Platform im linken Navigationsbereich auf **[!UICONTROL Monitoring]**.
 

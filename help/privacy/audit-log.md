@@ -5,9 +5,9 @@ exl-id: 360609f2-b811-49ee-ad4a-a54ceb23bfa3
 feature: Privacy
 role: Admin
 source-git-commit: 9ed7b541ebb1a89b286040c4ea96025b08029499
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '953'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -68,7 +68,7 @@ Die folgenden Informationen werden angezeigt:
    * CREATE: Es wurde eine Aktion „Erstellen“ durchgeführt.
    * DELETE: Es wurde eine Aktion „Löschen“ durchgeführt.
    * BEARBEITEN: Es wurde eine Aktion „Bearbeiten“ durchgeführt.
-   * EMBARGO: Wenn Sie eine Anfrage im [Reporting Activity Manager](https://experienceleague.adobe.com/de/docs/analytics-platform/using/reporting-activity-manager/reporting-activity-cancel-requests) einschränken, wird die Aktion im Auditprotokoll unter EMBARGO aufgezeichnet.
+   * EMBARGO: Wenn Sie eine Anfrage im [Reporting Activity Manager](https://experienceleague.adobe.com/de/docs/analytics-platform/using/reporting-activity-manager/reporting-activity-cancel-requests) einschränken, wird die Aktion unter „EMBARGO“ im Auditprotokoll dokumentiert.
    * EXPORT: Es wurde eine Aktion „Export“ durchgeführt.
    * ORG_CHANGE: Es wurde eine Aktion „Organisationsänderung“ durchgeführt.
    * REFRESH: Es wurde eine Aktion „Aktualisieren“ durchgeführt.
@@ -140,7 +140,7 @@ In der folgenden Tabelle ist aufgeführt, welche Aktionen für welche Komponente
 | [!UICONTROL Datumsbereich] | <ul><li>API_Request</li><li>Erstellen</li><li>Löschen</li><li>Bearbeiten</li></ul> |
 | [!UICONTROL Filter] | <ul><li>API_Request</li><li>Erstellen</li><li>Löschen</li><li>Bearbeiten</li></ul> |
 | [!UICONTROL IMS-Organisation] | <ul><li>API_Request</li><li>Erstellen</li><li>Löschen</li><li>Bearbeiten</li></ul> |
-| [!UICONTROL Projekt &#x200B;] | <ul><li>API_Request</li><li>Erstellen</li><li>Löschen</li><li>Bearbeiten</li></ul> |
+| [!UICONTROL Projekt ] | <ul><li>API_Request</li><li>Erstellen</li><li>Löschen</li><li>Bearbeiten</li></ul> |
 | [!UICONTROL Bericht] | <ul><li>API_Request</li></ul> |
 | [!UICONTROL Geplantes Projekt] | <ul><li>API_Request</li><li>Erstellen</li><li>Löschen</li><li>Bearbeiten</li></ul> |
 | [!UICONTROL Benutzer] | <ul><li>API_Request</li><li>Erstellen</li><li>Löschen</li><li>Bearbeiten</li></ul> |

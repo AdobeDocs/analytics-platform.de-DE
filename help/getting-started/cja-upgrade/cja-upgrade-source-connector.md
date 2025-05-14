@@ -6,7 +6,7 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: f96565a2-f556-4b45-b88e-984613614d2e
 source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '745'
 ht-degree: 100%
 
@@ -54,7 +54,7 @@ Um mit dem Analytics-Quell-Connector historische Daten in Customer Journey Analy
 
 ## Erstellen des Analytics-Quell-Connectors und Zuordnen von Feldern
 
-Nach Ihrem benutzerdefinierten Schema müssen Sie den Adobe Analytics-Quell-Connector erstellen, der für historische Daten verwendet werden soll. (Weitergehende allgemeine Richtlinien zum Erstellen eines Quell-Connectors finden Sie unter [Erstellen einer Adobe Analytics-Quellverbindung in der Benutzeroberfläche](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=de).)
+Nach Ihrem benutzerdefinierten Schema müssen Sie den Adobe Analytics-Quell-Connector erstellen, der für historische Daten verwendet werden soll. (Weitergehende allgemeine Richtlinien zum Erstellen eines Quell-Connectors finden Sie unter [Erstellen einer Adobe Analytics-Quellverbindung in der Benutzeroberfläche](https://experienceleague.adobe.com/de/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics).)
 
 So erstellen Sie einen Adobe Analytics-Quell-Connector für historische Daten:
 

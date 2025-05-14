@@ -6,9 +6,9 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: 71b9da74-3597-4536-9e47-f18097dd917b
 source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '149'
-ht-degree: 77%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 77%
 
 {{upgrade-note-step}}
 
-Lesen Sie vor dem Deaktivieren von Adobe Analytics die Informationen unter [Evaluieren Sie, wann Adobe Analytics nach dem Upgrade auf Customer Journey Analytics deaktiviert werden soll](/help/getting-started/cja-upgrade/cja-upgrade-fully-move.md).
+Lesen Sie vor dem Deaktivieren von Adobe Analytics die Informationen unter [Bestimmen des Deaktivierungszeitpunkts für Adobe Analytics nach dem Upgrade auf Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-fully-move.md).
 
 * **Tags:** Deaktivieren der Adobe Analytics-Erweiterung
 
@@ -33,5 +33,5 @@ Lesen Sie vor dem Deaktivieren von Adobe Analytics die Informationen unter [Eval
 
 >[!NOTE]
 >
->Diese Informationen sind noch nicht verfügbar. Es wird in naher Zukunft verfügbar sein.
+>Diese Informationen sind noch nicht verfügbar, stehen aber demnächst bereit.
 

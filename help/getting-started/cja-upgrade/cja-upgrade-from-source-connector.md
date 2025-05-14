@@ -6,9 +6,9 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: 4c0eef7d-7b0e-43b5-8126-d84d4fffd80c
 source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '538'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 92%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-source-connector"
 >title="Implementierung des Analytics-Quell-Connectors"
->abstract="Mit dem Analytics-Quell-Connector können Sie mit Customer Journey Analytics einen Mehrwert erzielen. Sie müssen jedoch sowohl für Adobe Analytics als auch für Customer Journey Analytics bezahlen. Dieser Leitfaden kann Sie bei zu einer unabhängigen Web SDK-Implementierung unterstützen."
+>abstract="Mit dem Analytics-Quell-Connector können Sie mit Customer Journey Analytics einen Mehrwert erzielen. Sie müssen jedoch sowohl für Adobe Analytics als auch für Customer Journey Analytics bezahlen. Dieser Leitfaden kann Sie bei einer unabhängigen Implementierung des Web SDK unterstützen."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -36,7 +36,7 @@ ht-degree: 92%
 
 Die Verwendung des Analytics-Quell-Connectors als einzige Implementierung für Customer Journey Analytics hat inhärente Nachteile.
 
-Wenn Ihr Unternehmen bereits ein Upgrade auf Customer Journey Analytics durchgeführt hat, indem es nur die Analytics-Quell-Connector-Implementierung verwendet, empfiehlt Adobe, zur fortlaufenden Datenerfassung auf eine neue Implementierung der Web-SDK überzugehen und den Analytics-Quell-Connector nur für Verlaufsdaten zu verwenden.
+Wenn Ihre Organisation bereits ein Upgrade auf Customer Journey Analytics durchgeführt hat, bei dem sie nur die Analytics-Quell-Connector-Implementierung verwendet, empfiehlt Adobe, zur fortlaufenden Datenerfassung auf eine neue Implementierung des Web SDK umzustellen und den Analytics-Quell-Connector nur für historische Daten zu nutzen.
 
 ## Informationen zu den Vor- und Nachteile der ausschließlichen Verwendung des Analytics-Quell-Connectors
 
@@ -54,7 +54,7 @@ Im Folgenden finden Sie den allgemeinen Prozess für den Wechsel von der ausschl
 
 1. Ordnen Sie jede Adobe Analytics-Dimension aus Ihrem Analytics-Quell-Connector der Dimension im Web-SDK-Schema zu.
 
-   1. &#x200B;
+   1. 
       <!-- how do you get here -->
 
    1. Wählen Sie im Abschnitt **[!UICONTROL Standardfelder zuordnen]** die Registerkarte **[!UICONTROL Benutzerdefiniert]** aus.

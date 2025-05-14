@@ -6,9 +6,9 @@ feature: Workspace Basics
 role: User
 exl-id: 4eb7de7a-ec40-4a59-afc4-94131e91a35f
 source-git-commit: 51a6341734163fdd6b994ae9cec53ef034959896
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '200'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ Sie können ein Inhaltsverzeichnis für ein Projekt in Analysis Workspace anzeig
 
 >[!BEGINSHADEBOX]
 
-Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Erstellen eines Inhaltsverzeichnisses](https://video.tv.adobe.com/v/35186/?quality=12&learn=on&captions=ger){target="_blank"} finden Sie ein Demovideo.
+Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Erstellen eines Inhaltsverzeichnisses](https://video.tv.adobe.com/v/26990/?quality=12&learn=on){target="_blank"} finden Sie ein Demovideo.
 
 >[!ENDSHADEBOX]
 
@@ -46,4 +46,4 @@ So zeigen Sie das Inhaltsverzeichnis in einem Projekt an:
 
 >[!MORELIKETHIS]
 >
->* [Vereinfachen Sie die Dashboard-Navigation mit der neuen Inhaltsverzeichnisfunktion in Adobe Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/simplify-dashboard-navigation-with-the-new-table-of-contents/ba-p/731284?profile.language=de)
+>* [Vereinfachen der Dashboard-Navigation mit der neuen Inhaltsverzeichnisfunktion in Adobe Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/simplify-dashboard-navigation-with-the-new-table-of-contents/ba-p/731284?profile.language=de)

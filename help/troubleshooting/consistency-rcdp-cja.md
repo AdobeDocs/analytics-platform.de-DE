@@ -5,9 +5,9 @@ role: Admin
 feature: Basics
 exl-id: 13d972bc-3d32-414e-a67d-845845381c3e
 source-git-commit: 7c906e30d54362713f5013c8661ee523938d4b0f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '625'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -22,7 +22,7 @@ Beim Vergleich der Anzahl der Zielgruppenzugehörigkeiten zwischen Real-Time CDP
 
 Die Real-Time CDP und Customer Journey Analytics verwenden heutzutage nicht dieselbe Definition einer Person.  Die Real-Time CDP beruht ausschließlich auf den Informationen im [Identitätsdiagramm](https://experienceleague.adobe.com/de/docs/platform-learn/tutorials/identities/understanding-identity-and-identity-graphs) um ein zusammengeführtes Profil zu erstellen.
 
-Customer Journey Analytics kann für die Verwendung von [Stitching](../stitching/overview.md) konfiguriert werden. Wenn Sie [ (feldbasiertes Stitching](/help/stitching/fbs.md) als Stitching-Mechanismus verwenden, geben Sie eine Kennung aus einem Datensatz im Data Lake an, um die Daten in diesem Datensatz mit dem Ziel zusammenzufügen, den Datensatz mit verbesserten zusammengeführten Profilen anzuheben. Wenn Sie [Diagrammbasiertes Stitching](/help/stitching/gbs.md) als Stitching-Mechanismus verwenden, verwendet ein ähnlicher Prozess das Identitätsdiagramm, das auf einem angegebenen Identity-Namespace basiert.
+Customer Journey Analytics kann für [Zuordnungen](../stitching/overview.md) konfiguriert werden. Wenn Sie die [feldbasierte Zuordnung](/help/stitching/fbs.md) als Zuordnungsmechanismus verwenden, geben Sie eine Kennung aus einem Datensatz im Data Lake an, um die Daten in diesem Datensatz dem Ziel zuzuordnen, wodurch sich die Qualität des Datensatzes mit verbesserten zusammengeführten Profilen erhöht. Wenn Sie die [diagrammbasierte Zuordnung](/help/stitching/gbs.md) als Zuordnungsmechanismus verwenden, nutzt ein ähnlicher Prozess das Identitätsdiagramm, und zwar basierend auf einem angegebenen Identity-Namespace.
 
 
 ## Unterschiede bei der Datensatzkonfiguration

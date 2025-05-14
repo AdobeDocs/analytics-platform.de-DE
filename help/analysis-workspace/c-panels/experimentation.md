@@ -5,9 +5,9 @@ feature: Panels
 exl-id: e11169b4-2c73-4dd4-bca7-c26189d60631
 role: User
 source-git-commit: 7e32ae7aa757a8ca47732416f0f883033611ea94
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2179'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -34,7 +34,7 @@ ht-degree: 96%
 
 >[!BEGINSHADEBOX]
 
-_In diesem Artikel wird das Panel Experimentieren in_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics** beschrieben._<br/>_Unter [Panel Analytics for Target](https://experienceleague.adobe.com/de/docs/analytics/analyze/analysis-workspace/panels/a4t-panel) finden Sie Informationen zum Analysieren von Adobe Target-Aktivitäten und -Erlebnissen in_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics**._
+_In diesem Artikel wird das Panel Experimentieren in_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics** beschrieben._<br/>_Unter [Panel Analytics for Target](https://experienceleague.adobe.com/de/docs/analytics/analyze/analysis-workspace/panels/a4t-panel) finden Sie Informationen zum Analysieren von Adobe Target-Aktivitäten und -Erlebnissen in_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**._
 
 >[!ENDSHADEBOX]
 
@@ -105,7 +105,7 @@ So verwenden Sie das Panel „Experimentieren“:
    | **[!UICONTROL Experiment]** | Eine Reihe von Varianten eines Erlebnisses, die Endbenutzenden präsentiert wurden, um zu ermitteln, welche am besten dauerhaft beibehalten werden sollte. Ein Experiment besteht aus zwei oder mehr Varianten, von denen eine als Kontrollvariante gilt. Diese Einstellung wird vorab mit den Dimensionen gefüllt, die in den Datenansichten mit der Beschriftung **[!UICONTROL Experiment]** gekennzeichnet wurden, sowie mit den Experimentdaten der letzten drei Monate. |
    | **[!UICONTROL Kontrollvariante]** | Eine von zwei oder mehr Änderungen im Erlebnis eines Endbenutzers, die verglichen werden, um die bessere Alternative zu ermitteln. Eine Variante muss als Kontrolle ausgewählt werden und nur eine Variante kann als Kontrollvariante betrachtet werden. Diese Einstellung wird vorab mit den Dimensionen gefüllt, die in den Datenansichten mit der Beschriftung **[!UICONTROL Variante]** gekennzeichnet wurden. Mit dieser Einstellung werden die Variantendaten abgerufen, die mit diesem Experiment verknüpft sind. |
    | **[!UICONTROL Erfolgsmetriken]** ➊ | Die Metrik oder Metriken, die eine Benutzerin bzw. ein Benutzer verwendet. Die Variante mit dem wünschenswertesten Ergebnis für die Konversionsmetrik (egal ob am höchsten oder am niedrigsten) wird zur *Variante mit der besten Performance* eines Experiments erklärt. Sie können bis zu 5 Metriken hinzufügen. |
-   | **[!UICONTROL Normalisierungsmetrik]** ➋ | Die Basis (**[!UICONTROL Globales Konto &#x200B;** B2B Edition]{type=Informative url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}, **[!UICONTROL Konto]** [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}, **[!UICONTROL Opportunity &#x200B;** B2B Edition]{type=Informative url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}, **[!UICONTROL Kauf Gruppe &#x200B;** B2B Edition]{type=Informative url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}, **[!UICONTROL Personen]**, **[!UICONTROL Sitzungen]** oder **[!UICONTROL Ereignis]**), auf der ein Test ausgeführt wird. Ein Test kann z. B. die Konversion Raten verschiedener Varianten vergleichen, wobei **[!UICONTROL die Konversionsrate]** als Seite Ansicht berechnet wird. |
+   | **[!UICONTROL Normalisierungsmetrik]** ➋ | Die Grundlage (**[!UICONTROL Globales Konto]** [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}, **[!UICONTROL Konto]** [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}, **[!UICONTROL Opportunity]** [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}, **[!UICONTROL Käufergruppe]** [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}, **[!UICONTROL Personen]**, **[!UICONTROL Sitzungen]** oder **[!UICONTROL Ereignisse]**), auf der ein Test ausgeführt wird. Beispielsweise kann ein Test die Konversionsraten verschiedener Varianten vergleichen, bei denen die **[!UICONTROL Konversionsrate]** als Seitenansicht berechnet wird. |
    | **[!UICONTROL Obere/untere Konfidenzgrenzen einbeziehen]** | Aktivieren Sie diese Option, um die oberen und unteren Grenzen für Konfidenzniveaus anzuzeigen. |
 
 
@@ -188,8 +188,8 @@ Beim Erstellen der berechneten Metrik haben berechnete Metriken, die nicht mit d
 
 ## Verwenden von berechneten Metriken im Panel Experimentieren
 
-In diesem Blogpost finden Sie Informationen zur [Verwendung berechneter Metriken im Panel Experimentieren](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/using-derived-metrics-in-cja-s-experimentation-panel/ba-p/593119?profile.language=de).
+In diesem Blogpost finden Sie Informationen zur [Verwendung berechneter Metriken im Panel Experimentieren](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/using-derived-metrics-in-cja-s-experimentation-panel/ba-p/593119).
 
 >[!MORELIKETHIS]
->[Meistern von Experimentenen in Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/mastering-adobe-customer-journey-analytics-experimentation-your/ba-p/732338?profile.language=de)
+>[Meistern von Experimentenen in Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/mastering-adobe-customer-journey-analytics-experimentation-your/ba-p/732338)
 >
