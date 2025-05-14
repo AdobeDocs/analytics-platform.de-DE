@@ -53,7 +53,7 @@ Verwenden Sie die [Adobe Content Analytics-Erweiterung](https://experienceleague
 
   Sie können Erlebnisse aktivieren oder deaktivieren und Kombinationen aus regulären Ausdrücken und Abfrageparametern bearbeiten, um zu bestimmen, wie Inhalte auf Ihrer Website gerendert werden.
 
-* [Segmentierung von Ereignissen](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-segmenting){target="_blank"}
+* [Segmentierung von Ereignissen](https://experienceleague.adobe.com/de/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-segmenting){target="_blank"}
 
   Sie können reguläre Ausdrücke bearbeiten, um die Segmentierung von Seiten und Assets zu ändern.
 

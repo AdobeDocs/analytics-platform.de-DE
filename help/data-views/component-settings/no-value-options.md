@@ -48,5 +48,5 @@ Wenn Sie einen numerischen Wert als Dimension verwenden, haben Sie folgende Mög
 
 >[!MORELIKETHIS]
 >
->Im Folgenden finden Sie einen verwandten Blog-Beitrag zum [Umgang mit „Kein Wert“ in Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/handling-quot-no-value-quot-in-customer-journey-analytics/ba-p/597339).
+>Im Folgenden finden Sie einen verwandten Blog-Beitrag zum [Umgang mit „Kein Wert“ in Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/handling-quot-no-value-quot-in-customer-journey-analytics/ba-p/597339?profile.language=de).
 
