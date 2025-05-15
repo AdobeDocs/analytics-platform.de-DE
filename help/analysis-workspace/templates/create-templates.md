@@ -7,7 +7,7 @@ exl-id: 23cdf02f-56a1-4465-ae7f-b3a1bcad28af
 source-git-commit: f0786cfa74453693078c7d30d647a96bf1d98d07
 workflow-type: tm+mt
 source-wordcount: '1850'
-ht-degree: 83%
+ht-degree: 85%
 
 ---
 
@@ -23,8 +23,8 @@ Personen im Anmeldeunternehmen können diese Unternehmensvorlagen wie in [Verwen
 
 >[!CONTEXTUALHELP]
 >id="use-case-ajo-template"
->title="Vorlage in Journey Optimizer verwenden"
->abstract="Wenn Sie diese Vorlage in Journey Optimizer verwenden, wird die Datenansicht verwendet, die in Adobe Journey Optimizer als Standarddatenansicht festgelegt ist, unabhängig von der Datenansicht, die mit dieser Vorlage in Customer Journey Analytics ausgewählt wurde."
+>title="Verwenden der Vorlage in Journey Optimizer"
+>abstract="Wenn Sie diese Vorlage in Journey Optimizer verwenden, wird die in Adobe Journey Optimizer als Standarddatenansicht festgelegte Datenansicht dargestellt, und zwar ungeachtet der Datenansicht, die mit dieser Vorlage in Customer Journey Analytics ausgewählt wurde."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -57,7 +57,7 @@ Weitere Informationen dazu, wie Benutzerinnen und Benutzer ein Projekt basierend
 
 Admins können Unternehmensvorlagen bearbeiten oder löschen.
 
-1. Wählen Sie in Analysis Workspace die Registerkarte [!UICONTROL **Arbeitsbereich**] und dann unter **[!UICONTROL Vorlagen]** in der linken Leiste **[!UICONTROL _Name_des_Anmeldeunternehmens _-Vorlagen]**&#x200B;aus.
+1. Wählen Sie in Analysis Workspace die Registerkarte [!UICONTROL **Arbeitsbereich**] und dann unter **[!UICONTROL Vorlagen]** in der linken Leiste **[!UICONTROL _Name_des_Anmeldeunternehmens _-Vorlagen]**aus.
 
 1. Bei Anzeige der Vorlagen in einer Spaltenansicht ![Spaltenansichtssymbol](assets/column-view-icon.png):
 

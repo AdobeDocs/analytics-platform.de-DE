@@ -8,7 +8,7 @@ role: Admin
 source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
 workflow-type: tm+mt
 source-wordcount: '1053'
-ht-degree: 82%
+ht-degree: 83%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 82%
 >[!CONTEXTUALHELP]
 >id="dataview_component_dimension_persistence"
 >title="Persistenz"
->abstract="Konfigurieren Sie das standardmäßige Zuordnungsmodell, das auf eine Dimension angewendet wird. Die Zuordnung erfolgt im Reporting vor Segmenten. Weitere Informationen finden Sie unter [Zuweisungseinstellungen](/help/data-views/component-settings/persistence.md#allocation-settings), [Ablaufeinstellungen](/help/data-views/component-settings/persistence.md#expiration-settings), [Bindungsdimension](/help/data-views/component-settings/persistence.md#binding-dimension) und [Bindungsmetriken](/help/data-views/component-settings/persistence.md#binding-metric)."
+>abstract="Konfigurieren Sie das standardmäßige Zuordnungsmodell, das auf eine Dimension angewendet wird. Die Zuordnung erfolgt vor den Segmenten in Berichten. Weitere Informationen finden Sie unter [Zuweisungseinstellungen](/help/data-views/component-settings/persistence.md#allocation-settings), [Ablaufeinstellungen](/help/data-views/component-settings/persistence.md#expiration-settings), [Bindungsdimension](/help/data-views/component-settings/persistence.md#binding-dimension) und [Bindungsmetriken](/help/data-views/component-settings/persistence.md#binding-metric)."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -108,7 +108,7 @@ Beispiele für die effektive Verwendung von Bindungsdimensionen finden Sie in [V
 
 >[!BEGINSHADEBOX]
 
-Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Bindungsdimensionen](https://video.tv.adobe.com/v/3409824/?quality=12&learn=on&captions=ger){target="_blank"} finden Sie ein Demovideo.
+Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Bindungsdimensionen](https://video.tv.adobe.com/v/342694/?quality=12&learn=on){target="_blank"} finden Sie ein Demovideo.
 
 >[!ENDSHADEBOX]
 

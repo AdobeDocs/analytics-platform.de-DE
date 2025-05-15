@@ -8,7 +8,7 @@ role: Admin
 source-git-commit: 220ebd7dbc3fa75d221690cd6e5828bd94395434
 workflow-type: tm+mt
 source-wordcount: '356'
-ht-degree: 83%
+ht-degree: 88%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 83%
 >[!CONTEXTUALHELP]
 >id="dataview_component_dimension_includeexcludevalues"
 >title="Werte einschließen/ausschließen"
->abstract="Schränken Sie eine Dimension so ein, dass nur Werte eingeschlossen werden, die bestimmten Kriterien entsprechen. Ein- und Ausschlüsse erfolgen in Berichten vor der Zuordnung und Segmentierung. Ermitteln Sie, ob bei der angegebenen Segmentlogik die Groß-/Kleinschreibung beachtet wird."
+>abstract="Schränken Sie eine Dimension so ein, dass nur Werte eingeschlossen werden, die bestimmten Kriterien entsprechen. Ein- und Ausschlüsse erfolgen vor der Zuordnung und Segmentierung in Berichten. Bestimmen Sie, ob die angegebene Segmentlogik zwischen Groß- und Kleinschreibung unterscheidet."
 
 <!-- markdownlint-enable MD034 -->
 
