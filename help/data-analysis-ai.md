@@ -5,7 +5,7 @@ role: User, Admin
 solution: Customer Journey Analytics
 feature: AI Tools
 exl-id: 262d5f15-16cb-4851-a769-7dbd205b2f81
-source-git-commit: f3f3b34c904c1aeba3fbd07218f323ccd81974d4
+source-git-commit: e82179f3436dc6b66ebe3f2f9b11986cadd135d9
 workflow-type: tm+mt
 source-wordcount: '1861'
 ht-degree: 3%
@@ -28,28 +28,14 @@ Die Verwendung von Data Insights Agent zur Beantwortung datenorientierter Fragen
 
 ## Funktionen innerhalb und außerhalb des Projektumfangs
 
+| Funktion | Im Umfang | Außerhalb des Geltungsbereichs |
+| --- | --- | --- |
+| **Visualisierungstypen** | <ul><li>Linie</li><li>Mehrzeilig</li><li>Freiformtabelle</li><li>Balken</li><li>Ringdiagramm</li><li>Zusammenfassungszahl</li></ul> | <ul><li>Fluss</li><li>Fallout</li><li>Kohortentabelle</li><li>Bereich, Bereich gestapelt</li><li>Balken gestapelt</li><li>Bullet</li><li>Kombination</li><li>Histogramm</li><li>Horizontalbalken, Horizontalbalken gestapelt</li><li>Zusammenfassung einer Schlüsselmetrik</li><li>Streuung</li><li>Zusammenfassende Änderung</li><li>Text</li><li>Baumkarte</li><li>Venn</li></ul> |
+| **Workspace-Aktionen und Agentenfunktionen** | <ul><li>Erstellen und Aktualisieren von Visualisierungen<p>Erzeugt eine Freiformtabelle und eine dazugehörige Visualisierung (z. B. Linie, Balken, Ringdiagramm usw.).<p>Beispiel: *Was ist der Gewinn für alle SKUs von Februar bis Mai?*</p></li><li>Stellen von Folgefragen</li><li>Reagieren auf eine Eingabeaufforderung im Kontext von allen vorherigen Eingabeaufforderungen<p>Zum Beispiel:</p> <ul><li>Eingabeaufforderung 1: *Trendereignisse ab März.*</li><li>Eingabeaufforderung 2: *Zeigen Sie mir stattdessen die Daten von März bis April*</li></ul> </li><li>Prompterkennung außerhalb des Geltungsbereichs<p>Wenn Sie eine Eingabeaufforderung übermitteln, die außerhalb des Gültigkeitsbereichs liegt, z. B. *Dieses Projekt exportieren*, informiert Data Insights Agent Sie darüber, dass die Frage außerhalb des Gültigkeitsbereichs liegt.</p></li></ul> | <ul><li>Schaltflächen der kontextuellen Aktionsbenutzeroberfläche (zum Diagramm hinzufügen, neues Bedienfeld, neue Tabelle)</li><li>Freigeben</li><li>Exportieren</li><li>Download</li><li>Benutzereinstellungen verwalten</li><li>Kuratieren</li><li>Datenansicht verwalten</li><li>Analytics Dashboards App</li><li>Attribution</li><li>Inline-Zusammenfassung oder -Antwort<p>Data Insights Agent kann in der Chat-Leiste nicht mit einer zusammenfassenden Antwort auf eine Benutzeraufforderung antworten. Beispiele für Eingabeaufforderungen außerhalb des Projektumfangs sind: *Geben Sie mir eine Zusammenfassung der Einblicke aus meiner letzten Eingabeaufforderung* und *Fassen Sie die Highlights aus der Linienvisualisierung zusammen.*</p></li></ul> |
+| **Fragen klären** | Wenn Sie eine Frage stellen, die nicht genügend Kontext für eine Antwort von Data Insights Agent hat oder zu generisch ist, antwortet Data Insights Agent mit einer klärenden Frage oder empfohlenen Optionen. <p>Die folgenden klärenden Fragen sind Beispiele für komponentenbezogene Fragen:</p><ul><li>Metrik: *Welche „Umsatz“-Metrik meinten Sie?*</li><li>Dimension: *Auf welche der folgenden „Regionen“ möchten Sie sich konzentrieren?*</li><li>Segment: *Welches „Konto“-Segment wollten Sie anwenden?*</li><li>Datumsbereich: *Mit „letztem Monat“ meinen Sie den letzten vollen Monat oder die letzten 30 Tage?*</li></ul><p>Die folgende klärende Frage ist ein Beispiel für eine Frage im Zusammenhang mit Dimensionselementen:</p> <ul><li>Welchen „Namen des Geschäfts“ meinten Sie? (Beispiel: #5274, #2949 usw.)</li></ul> | Die Klärung von Fragen beschränkt sich auf Komponenten und Dimensionselemente. Data Insights Agent kann Dinge wie Datenansichten, Visualisierungen, Datengranularität, Vergleich und Umfang nicht verdeutlichen. Wenn Klärungsfragen nicht verwendet werden können, verwendet der Agent standardmäßig das, was Sie am wahrscheinlichsten anfordern. Wenn eine unerwartete Visualisierung oder Datengranularität zurückgegeben wird, können Sie eine Folgefrage stellen oder die Visualisierung und Daten anpassen. |
+| **Datenverifizierbarkeit und -richtigkeit** | Die Datenverifizierbarkeit und -richtigkeit können durch die Anzeige der generierten Freiformtabelle und Datenvisualisierung bestätigt werden. <p>Wenn Sie Data Insights Agent beispielsweise auffordern, *Bestellungen im letzten Monat* anzugeben, können Sie bestätigen, dass im neu generierten Bedienfeld, in der Datenvisualisierung und in der Freiformtabelle die richtige Metrik („Bestellungen„) und der richtige Datumsbereich („letzter Monat„) ausgewählt wurden. | Data Insights Agent informiert Sie nicht darüber, welche Komponenten oder Visualisierungen hinzugefügt wurden.</p> |
+| **Feedback-Mechanismen** | <ul><li>Daumen hoch</li><li>Daumen runter</li><li>Markierung</li></ul> |  |
 
-
-### Umfangreiche Funktionen
-
-| Unterstützte Funktion | Beschreibung |
-| --- | --- |
-| **Erstellen und Aktualisieren von Visualisierungen** | Erzeugt eine Freiformtabelle und eine dazugehörige Visualisierung (z. B. Linie, Balken, Ringdiagramm usw.).<p>Beispiel: *Was ist der Gewinn für alle SKUs von Februar bis Mai?* |
-| **Unterstützte Visualisierungstypen** | <ul><li>Linie</li><li>Mehrzeilig</li><li>Freiformtabelle</li><li>Balken</li><li>Ringdiagramm</li><li>Zusammenfassungszahl</li></ul> |
-| **Out-of-Scope Prompt Detection** | Wenn Sie eine Eingabeaufforderung übermitteln, die außerhalb des Projektumfangs liegt, z. B. „Dieses Projekt exportieren“, teilt Data Insights Agent Ihnen mit, dass die Frage außerhalb des Projektumfangs liegt. |
-| **Fragen klären** | Wenn Sie eine Frage stellen, die nicht genügend Kontext für eine Antwort von Data Insights Agent hat oder zu generisch ist, antwortet Data Insights Agent mit einer klärenden Frage oder empfohlenen Optionen. Beispiele: <p>**Komponenten**<ul><li>Metrik: *Welche „Umsatz“-Metrik meinten Sie?*</li><li>Dimension: *Auf welche der folgenden „Regionen“ möchten Sie sich konzentrieren?*</li><li>Segment: *Welches „Konto“-Segment wollten Sie anwenden?*</li><li>Datumsbereich: *Mit „letztem Monat“ meinen Sie den letzten vollen Monat oder die letzten 30 Tage?*</li></ul>**Dimension-Elemente**: Welchen „Store-Namen“ meinten Sie? (Beispiel: #5274, #2949 usw.) |
-| **Multi-Turn** | Data Insights Agent reagiert auf eine Eingabeaufforderung mit dem Kontext aus allen vorherigen Eingabeaufforderungen, sodass Benutzende Visualisierungen aktualisieren und Fragen stellen können. Beispiel: <ul><li>Eingabeaufforderung 1: *Trendereignisse ab März.*</li><li>Eingabeaufforderung 2: *Zeigen Sie mir stattdessen die Daten von März bis April*</li></ul> |
-| **Verifizierbarkeit** | Die Datenverifizierbarkeit und -richtigkeit kann über die generierte Freiformtabelle und Datenvisualisierung bestätigt werden. Wenn ein(e) Benutzende(r) beispielsweise *Bestellungen im letzten Monat* fragt, können Sie bestätigen, dass im neu generierten Bedienfeld, in der Datenvisualisierung und in der Freiformtabelle die richtige Metrik („Bestellungen„) und der richtige Datumsbereich („letzter Monat„) ausgewählt wurden. |
-| **Feedback** | <ul><li>Daumen hoch</li><li>Daumen runter</li><li>Markierung</li></ul> |
-
-### Nicht im Umfang enthaltene Funktionen
-
-| Nicht unterstützte Funktion | Beschreibung |
-| --- | --- |
-| **Inline-Zusammenfassung oder -Antwort** | Data Insights Agent kann in der Chat-Leiste nicht mit einer zusammenfassenden Antwort auf eine Benutzeraufforderung antworten. Beispiel für Eingabeaufforderungen außerhalb des Bereichs:<ul><li>*Geben Sie mir eine Zusammenfassung der Erkenntnisse aus meiner letzten Eingabeaufforderung.*</li><li>*Fassen Sie die Highlights der Linienvisualisierung zusammen.*</li></ul> |
-| **Fragen klären** | Die Klärung von Fragen beschränkt sich auf Komponenten und Dimensionselemente. Data Insights Agent kann Dinge wie Datenansichten, Visualisierungen, Datengranularität, Vergleich und Umfang nicht verdeutlichen. Wenn Klärungsfragen nicht verwendet werden können, verwendet der Agent standardmäßig das, was Sie am wahrscheinlichsten anfordern. Wenn eine unerwartete Visualisierung oder Datengranularität zurückgegeben wird, können Sie die Funktion „Multi-Turn/Update“ verwenden, um die Visualisierung und die Daten anzupassen. |
-| **Workspace-Aktionen/-Funktionen** | Data Insights Agent kann für einen Benutzer in Workspace keine Aktionen ausführen, abgesehen von der Erstellung und Aktualisierung von Visualisierungen. Sie kann beispielsweise keine der folgenden Aktionen ausführen:<ul><li>Schaltflächen der kontextuellen Aktionsbenutzeroberfläche (zum Diagramm hinzufügen, neues Bedienfeld, neue Tabelle)</li><li>Freigeben</li><li>Exportieren</li><li>Download</li><li>Benutzereinstellungen verwalten</li><li>Kuratieren</li><li>Datenansicht verwalten</li><li>Analytics Dashboards App</li><li>Attribution</li></ul> |
-| **Nicht unterstützte Visualisierungsarten** | <ul><li>Fluss</li><li>Fallout</li><li>Kohortentabelle</li><li>Bereich, Bereich gestapelt</li><li>Balken gestapelt</li><li>Bullet</li><li>Kombination</li><li>Histogramm</li><li>Horizontalbalken, Horizontalbalken gestapelt</li><li>Zusammenfassung einer Schlüsselmetrik</li><li>Streuung</li><li>Zusammenfassende Änderung</li><li>Text</li><li>Baumkarte</li><li>Venn</li></ul> |
 
 ## Verwalten des Zugriffs auf Data Insights Agent in Customer Journey Analytics
 
@@ -64,7 +50,7 @@ Die folgenden Parameter regeln den Zugriff auf Data Insights Agent in Customer J
   Um Berechtigungen zu erteilen, muss [Produktprofil-Administrator](https://helpx.adobe.com/de/enterprise/using/manage-product-profiles.html) in der [!UICONTROL Admin Console die folgenden Schritte ausführen]:
    1. Wählen Sie in **[!UICONTROL Admin Console]** die Registerkarte **[!UICONTROL Produkte]** aus, um die Seite **[!UICONTROL Alle Produkte und Services]** anzuzeigen.
    1. **[!UICONTROL Customer Journey Analytics]**.
-   1. Wählen Sie auf **[!UICONTROL Registerkarte]** den Titel des Produktprofils aus, für das Sie Zugriff auf den [!UICONTROL KI-Assistenten: Produktkenntnisse“ &#x200B;] möchten.
+   1. Wählen Sie auf **[!UICONTROL Registerkarte]** den Titel des Produktprofils aus, für das Sie Zugriff auf den [!UICONTROL KI-Assistenten: Produktkenntnisse“ ] möchten.
    1. Wählen Sie im jeweiligen Produktprofil die Registerkarte **[!UICONTROL Berechtigungen]** aus.
 
       ![Registerkarte „Berechtigungen“ in Admin Console](assets/ai-assistant-permissions-tab.png)
