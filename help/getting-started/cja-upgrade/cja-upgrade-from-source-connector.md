@@ -54,7 +54,7 @@ Im Folgenden finden Sie den allgemeinen Prozess für den Wechsel von der ausschl
 
 1. Ordnen Sie jede Adobe Analytics-Dimension aus Ihrem Analytics-Quell-Connector der Dimension im Web-SDK-Schema zu.
 
-   1. 
+   1. &#x200B;
       <!-- how do you get here -->
 
    1. Wählen Sie im Abschnitt **[!UICONTROL Standardfelder zuordnen]** die Registerkarte **[!UICONTROL Benutzerdefiniert]** aus.
