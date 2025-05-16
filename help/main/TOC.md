@@ -9,9 +9,9 @@ index: true
 user-guide-title: Handbuch zu Customer Journey Analytics
 user-guide-description: Hier erhalten Sie Informationen zu Adobe Customer Journey Analytics und Erläuterungen zur Nutzung von Analysis Workspace mit Daten aus Experience Platform.
 breadcrumb-title: Handbuch zu Customer Journey Analytics
-source-git-commit: 720751130d0f66bddffd13c6f160a85fcc7a7206
+source-git-commit: 7c293f2ab0f46695a53572d1231fb866a23688cd
 workflow-type: tm+mt
-source-wordcount: '1223'
+source-wordcount: '1225'
 ht-degree: 96%
 
 ---
@@ -411,6 +411,7 @@ ht-degree: 96%
    + [Diagrammbasierte Zuordnung](/help/stitching/gbs.md)
    + [Zuordnung verwenden](/help/stitching/use-stitching.md)
    + [Erstellen und Verwalten von zugeordneten Datensätzen](/help/stitching/stitching-ui.md)
+   + [Zuordnung validieren](/help/stitching/validate.md)
    + [Häufig gestellte Fragen](/help/stitching/faq.md)
 
 + Adobe-Integrationen {#integrations}
