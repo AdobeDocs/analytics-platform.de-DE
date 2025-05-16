@@ -4,9 +4,9 @@ title: Intelligente Beschriftungen
 feature: Visualizations
 exl-id: d32d3cda-ecbf-4ee7-a8b7-7c3c71b5df75
 role: User
-source-git-commit: 4d566411778774d21be04c4f3d6cf2ffabed6db2
-workflow-type: ht
-source-wordcount: '876'
+source-git-commit: af8d4f07498211931e9549cadd4746eebb9f56f4
+workflow-type: tm+mt
+source-wordcount: '754'
 ht-degree: 100%
 
 ---
@@ -16,65 +16,10 @@ ht-degree: 100%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="workspace_intelligentcaptions_area"
->title="Intelligente Beschriftungen: Bereich"
+>id="workspace_intelligentcaptions"
+>title="Intelligente Beschriftungen"
 >abstract="Generieren Sie Erkenntnisse in natürlicher Sprache, um Daten für diese Visualisierung leichter verstehen und interpretieren zu können."
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
->[!CONTEXTUALHELP]
->id="workspace_intelligentcaptions_bar"
->title="Intelligente Beschriftungen: Balken"
->abstract="Generieren Sie Erkenntnisse in natürlicher Sprache, um Daten für diese Visualisierung leichter verstehen und interpretieren zu können."
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
->[!CONTEXTUALHELP]
->id="workspace_intelligentcaptions_donut"
->title="Intelligente Beschriftungen: Ringdiagramm"
->abstract="Generieren Sie Erkenntnisse in natürlicher Sprache, um Daten für diese Visualisierung leichter verstehen und interpretieren zu können."
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
->[!CONTEXTUALHELP]
->id="workspace_intelligentcaptions_horizontalbar"
->title="Intelligente Beschriftungen: Horizontalbalken"
->abstract="Generieren Sie Erkenntnisse in natürlicher Sprache, um Daten für diese Visualisierung leichter verstehen und interpretieren zu können."
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
->[!CONTEXTUALHELP]
->id="workspace_intelligentcaptions_line"
->title="Intelligente Beschriftungen: Linie"
->abstract="Generieren Sie Erkenntnisse in natürlicher Sprache, um Daten für diese Visualisierung leichter verstehen und interpretieren zu können."
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
->[!CONTEXTUALHELP]
->id="workspace_intelligentcaptions_fallout"
->title="Intelligente Beschriftungen: Fallout"
->abstract="Generieren Sie Erkenntnisse in natürlicher Sprache, um Daten für diese Visualisierung leichter verstehen und interpretieren zu können."
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
->[!CONTEXTUALHELP]
->id="workspace_intelligentcaptions_flow"
->title="Intelligente Beschriftungen: Fluss"
->abstract="Generieren Sie Erkenntnisse in natürlicher Sprache, um Daten für diese Visualisierung leichter verstehen und interpretieren zu können."
-
-<!-- markdownlint-enable MD034 -->
 
 Die Funktion „Intelligente Beschriftungen“ nutzt fortschrittliche generative KI, um wichtige Erkenntnisse zu den am häufigsten verwendeten Workspace-Visualisierungen in natürlicher Sprache bereitzustellen.
 
@@ -85,7 +30,7 @@ Intelligente Beschriftungen richten sich an:
 
 >[!BEGINSHADEBOX]
 
-Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [intelligente Beschriftungen](https://video.tv.adobe.com/v/3443147/?quality=12&learn=on&captions=ger){target="_blank"} finden Sie ein Demovideo.
+Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [intelligente Beschriftungen](https://video.tv.adobe.com/v/3420131/?quality=12&learn=on){target="_blank"} finden Sie ein Demovideo.
 
 >[!ENDSHADEBOX]
 
