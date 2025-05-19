@@ -4,11 +4,10 @@ description: Validieren der Zuordnung
 solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
-hide: true
-hidefromtoc: true
-source-git-commit: 7c293f2ab0f46695a53572d1231fb866a23688cd
+exl-id: b9b73926-6502-4a48-ba73-c784f80950d3
+source-git-commit: 3b402e367d2385b336c84ef52897ab34387a948d
 workflow-type: tm+mt
-source-wordcount: '1164'
+source-wordcount: '1181'
 ht-degree: 0%
 
 ---
@@ -29,7 +28,7 @@ Während diese Analysemethoden sowohl für feldbasiertes Stitching als auch für
 
 >[!NOTE]
 >
->In diesem Artikel wird nicht auf den Gesamtwert einer Customer Journey Analytics-Konfiguration eingegangen, bei der alle Datensätze in Experience Platform auf denselben Identity-Namespace ausgerichtet sind. Und dass all diese Datensätze gut zusammengeführt werden, um Analysen über eine gesamte Kunden-Journey durchzuführen.
+>Die (Validierung) Zuordnung eines oder mehrerer Datensätze trägt letztendlich zu besseren Analysen und Erkenntnissen bei. In diesem Artikel wird jedoch nicht der Gesamtwert einer Customer Journey Analytics-Konfiguration erläutert, bei der alle Datensätze in Experience Platform auf denselben Identity-Namespace ausgerichtet sind. Und dass all diese Datensätze gut zusammengeführt werden, um Analysen über eine gesamte Kunden-Journey durchzuführen.
 
 
 ## Voraussetzungen für die Datenansicht
@@ -75,7 +74,7 @@ Wenn Sie eine Verbindung erstellen, müssen Sie definieren, welches Feld oder we
 1. Erstellen Sie eine berechnete Metrik **[!UICONTROL Nicht authentifizierte Ereignisse insgesamt]**. Definieren Sie die Regel im Regel-Builder wie folgt:
    ![Nicht authentifizierte Ereignisse insgesamt](assets/calcmetric-unauthenticatedeventsovertotal.png)
 
-1. Erstellen Sie eine berechnete Metrik **[!UICONTROL E-Mail-Authentifizierungsrate]** basierend auf der zuvor definierten Metrik **[!UICONTROL _]**&#x200B;set). Definieren Sie die Regel im Regel-Builder wie folgt:
+1. Erstellen Sie eine berechnete Metrik **[!UICONTROL E-Mail-Authentifizierungsrate]** basierend auf der zuvor definierten Metrik **[!UICONTROL _]**set). Definieren Sie die Regel im Regel-Builder wie folgt:
    ![E-Mail-Authentifizierungsrate](assets/calcmetric-emailauthenticationrate.png)
 
 1. Verwenden Sie die berechnete Metrik **[!UICONTROL Nicht authentifizierte Ereignisse im]**) zusammen mit der berechneten Metrik **[!UICONTROL E-Mail]** Authentifizierungsrate), um eine [Ringdiagramm](/help/analysis-workspace/visualizations/donut.md)-Visualisierung zu erstellen. Die Visualisierung zeigt die Anzahl der Ereignisse im Datensatz, die nicht authentifiziert und authentifiziert sind.

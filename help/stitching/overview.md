@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 exl-id: 1c42efac-b3d2-437b-8b0b-9c6fdfed8520
 role: Admin
-source-git-commit: c27d5f44243e2cda252ac6a484a70964f0999dfc
+source-git-commit: 1a697ce0372d1cb544940778850714a198a000ec
 workflow-type: tm+mt
-source-wordcount: '739'
+source-wordcount: '741'
 ht-degree: 15%
 
 ---
@@ -41,7 +41,7 @@ Bevor Sie Stitching verwenden, stellen Sie sicher, dass Ihre Organisation mit fo
 - Importieren Sie die gewünschten Daten in Adobe Experience Platform:
 
    - Informationen zu Adobe Analytics-Daten finden Sie [Verwenden von Adobe Analytics Report Suite-Daten in Customer Journey Analytics](/help/getting-started/aa-vs-cja/aa-data-in-cja.md).
-   - Informationen zu anderen Datentypen finden Sie unter [Erstellen eines Schemas](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/tutorials/create-schema-ui) und [Aufnehmen von Daten](https://experienceleague.adobe.com/de/docs/experience-platform/ingestion/home) in der Adobe Experience Platform-Dokumentation.
+   - Informationen zu anderen Datentypen finden Sie unter [Erstellen eines Schemas](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/create-schema-ui) und [Aufnehmen von Daten](https://experienceleague.adobe.com/de/docs/experience-platform/ingestion/home) in der Adobe Experience Platform-Dokumentation.
 
 Sie profitieren von der kanalübergreifenden Analyse, wenn Sie einen oder mehrere Ihrer zugeordneten Datensätze mit anderen Datensätzen, z. B. Callcenter-Daten, als Teil der Definition Ihrer Customer Journey Analytics-Verbindung kombinieren. Bei dieser Verbindungskonfiguration wird davon ausgegangen, dass diese anderen Datensätze bereits eine Personen-ID in jeder Zeile enthalten, ähnlich der zugeordneten ID.
 
@@ -55,7 +55,7 @@ Sie profitieren von der kanalübergreifenden Analyse, wenn Sie einen oder mehrer
 >
 >- Wenn Sie den Quelldatensatz entfernen, wird der zugeordnete Datensatz nicht mehr verarbeitet und vom System entfernt.
 >
->- Datennutzungsbeschriftungen werden nicht automatisch an das Schema des zugeordneten Datensatzes weitergegeben. Wenn Sie Datennutzungsbeschriftungen auf das Quelldatensatzschema angewendet haben, müssen Sie diese Datennutzungsbeschriftungen manuell auf das Schema des zugeordneten Datensatzes anwenden. Weitere [ finden Sie unter „Verwalten ](https://experienceleague.adobe.com/de/docs/experience-platform/data-governance/labels/overview) Datennutzungsbeschriftungen in Experience Platform&quot;.
+>- Datennutzungsbeschriftungen werden nicht automatisch an das Schema des zugeordneten Datensatzes weitergegeben. Wenn Sie Datennutzungsbeschriftungen auf das Quelldatensatzschema angewendet haben, müssen Sie diese Datennutzungsbeschriftungen manuell auf das Schema des zugeordneten Datensatzes anwenden. Weitere [ finden Sie unter „Verwalten ](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/labels/overview) Datennutzungsbeschriftungen in Experience Platform&quot;.
 
 Stitching ist eine innovative und zuverlässige Funktion, deren Verwendung jedoch gewissen Einschränkungen unterliegt.
 
@@ -74,5 +74,6 @@ Verwechseln Sie das Zusammenfügen nicht mit:
 >[Feldbasiertes Stitching](fbs.md)
 >[Diagrammbasiertes Stitching](gbs.md)
 >[Stitching verwenden](use-stitching.md)
+>[Zuordnung validieren](validate.md)
 >[Häufig gestellte Fragen zum Zusammenfügen](faq.md)
 
