@@ -18,7 +18,7 @@ Sobald Ihr Unternehmen alle [Voraussetzungen](overview.md#prerequisites) erfüll
 
 ## Optionen auswählen
 
-Das Customer Journey Analytics-Paket, zu dem Sie berechtigt sind, bestimmt die verfügbaren Stitching-Methoden, Optionen für die anfängliche Aufstockungsdauer, das Lookback-Fenster, die Wiederholungshäufigkeit und die maximale Anzahl von Datensätzen, die für das Stitching zulässig sind. Weitere Informationen finden Sie in der {0](https://helpx.adobe.com/de/legal/product-descriptions/customer-journey-analytics.html) Customer Journey Analytics-Produktbeschreibung. [ Vor der Supportanfrage über die verfügbaren Optionen entscheiden.
+Das Customer Journey Analytics-Paket, zu dem Sie berechtigt sind, bestimmt die verfügbaren Stitching-Methoden, Optionen für die anfängliche Aufstockungsdauer, das Lookback-Fenster, die Wiederholungshäufigkeit und die maximale Anzahl von Datensätzen, die für das Stitching zulässig sind. Weitere Informationen finden Sie in der &lbrace;0[&#128279;](https://helpx.adobe.com/de/legal/product-descriptions/customer-journey-analytics.html) Customer Journey Analytics-Produktbeschreibung.  Vor der Supportanfrage über die verfügbaren Optionen entscheiden.
 
 | | Customer Journey Analytics-<br/> | Customer Journey Analytics<br/>Prime | Customer Journey Analytics<br/>Ultimate |
 |---|---|---|---|
