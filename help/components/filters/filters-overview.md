@@ -172,7 +172,7 @@ Wenn Sie Zugriff auf [Customer Journey Analytics B2B edition](/help/getting-star
 
 ### Logischer Gruppen-Container
 
-Mit der logischen Gruppe können Sie Bedingungen in einem einzigen sequenziellen Segment-Checkpoint gruppieren. Als Teil der Sequenz wird die Logik, die in dem als &quot;[!UICONTROL &quot; identifizierten Container definiert ], nach einem vorherigen sequenziellen Checkpoint und vor einem nachfolgenden sequenziellen Checkpoint ausgewertet. Siehe [Logikgruppe](seg-sequential-build.md#logic-group) für weitere Informationen.
+Mit der logischen Gruppe können Sie Bedingungen in einem einzigen sequenziellen Segment-Checkpoint gruppieren. Als Teil der Sequenz wird die Logik, die in dem als &quot;[!UICONTROL &quot; identifizierten Container definiert &#x200B;], nach einem vorherigen sequenziellen Checkpoint und vor einem nachfolgenden sequenziellen Checkpoint ausgewertet. Siehe [Logikgruppe](seg-sequential-build.md#logic-group) für weitere Informationen.
 
 ### Container verschachteln
 
