@@ -6,14 +6,18 @@ feature: Use Cases
 role: User
 hide: true
 hidefromtoc: true
-source-git-commit: d0268ce9ba22228c5c42d600c173f39cd1001638
+badgePremium: label="B2B edition"
+exl-id: d5e44546-ea82-42eb-98df-19d51c71e9be
+source-git-commit: f66df039c56fc1df3fb0e102745f500a3782d26d
 workflow-type: tm+mt
-source-wordcount: '707'
+source-wordcount: '709'
 ht-degree: 0%
 
 ---
 
 # Marketing-Konto optimieren
+
+{{draft-b2b}}
 
 Effektives Account-Based-Marketing erfordert ein tiefes Verständnis des kaufenden Journey auf Kontoebene. So können Sie die wirkungsvollsten Marketing-Aktivitäten bestimmen, um ein Geschäft zum Abschluss zu bringen.
 
@@ -116,4 +120,3 @@ Sie möchten den Einfluss auf die Erstellung von MQLs (Marketing-qualifizierte L
 1. Wählen Sie **[!UICONTROL Erstellen]** aus.
 
    ![B2B-Anwendungsfall - In-Person-Ereignisse - Flusskonfiguration](assets/b2b-uc-optimize-marketing-flow.png)
-

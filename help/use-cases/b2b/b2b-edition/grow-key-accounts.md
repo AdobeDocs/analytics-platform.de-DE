@@ -6,14 +6,18 @@ feature: Use Cases
 role: User
 hide: true
 hidefromtoc: true
-source-git-commit: d0268ce9ba22228c5c42d600c173f39cd1001638
+badgePremium: label="B2B edition"
+exl-id: f5294af8-b8dc-4239-b0f7-5c20d39007ee
+source-git-commit: f66df039c56fc1df3fb0e102745f500a3782d26d
 workflow-type: tm+mt
-source-wordcount: '275'
+source-wordcount: '277'
 ht-degree: 2%
 
 ---
 
 # Wichtige Konten vergrößern
+
+{{draft-b2b}}
 
 Das Wachstum und die Bindung von Schlüsselkonten hat für B2B-Unternehmen hohe Priorität. Um sicherzustellen, dass Fortschritte erzielt werden, müssen Sie mit den wichtigsten Stakeholdern in Ihren Target-Konten zum richtigen Zeitpunkt kommunizieren.
 
@@ -51,4 +55,3 @@ Sie können die folgenden Funktionen von Customer Journey Analytics B2B edition 
 1. [Intelligente Warnhinweise](/help/components/c-intelligent-alerts/intelligent-alerts.md)
 1. [Für Arbeitsbereichsbenutzer oder für andere freigeben](/help/analysis-workspace/curate-share/share-projects.md)
 1. [Kommentare](/help/analysis-workspace/build-workspace-project/comment-projects.md)
-

@@ -6,14 +6,18 @@ feature: Use Cases
 role: User, Admin
 hide: true
 hidefromtoc: true
-source-git-commit: d0268ce9ba22228c5c42d600c173f39cd1001638
+badgePremium: label="B2B edition"
+exl-id: 7c16cc62-5032-44a2-92e4-4a1c320f17aa
+source-git-commit: f66df039c56fc1df3fb0e102745f500a3782d26d
 workflow-type: tm+mt
-source-wordcount: '369'
+source-wordcount: '371'
 ht-degree: 1%
 
 ---
 
 # Übersicht über B2B edition-Anwendungsfälle
+
+{{draft-b2b}}
 
 In diesem Abschnitt der Dokumentation werden einige spezifische B2B-Anwendungsfälle beschrieben, die Einblicke in die oft komplexere B2B-Kauf-Journey bieten sollen. Ein typischer B2B-Kauf umfasst Einkaufsgruppen, Cross-Channel-Touchpoints verschiedener Stakeholder, Chancen in verschiedenen Phasen des Verkaufszyklus und mehr.
 
