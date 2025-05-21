@@ -4,7 +4,7 @@ description: Erfahren Sie, wofür Segmente verwendet werden und wie Sie ein einf
 exl-id: 21183e98-6593-4b22-99c7-4a03231acfe9
 feature: Filters, Segments
 role: User
-source-git-commit: 85a22d1e57925f0512ce0cc658cfba1008339d91
+source-git-commit: d0268ce9ba22228c5c42d600c173f39cd1001638
 workflow-type: tm+mt
 source-wordcount: '1474'
 ht-degree: 5%
@@ -37,7 +37,7 @@ Insbesondere für Admins verbessert die ordnungsgemäße Planung von Segmenten d
 
    - Wann sollte dieses Segment benutzt werden?
 
-- **Umfang**: Welcher [Segment-Container](#filter-containers) repräsentiert die Daten, nach denen Sie suchen, am besten? Benutzen Sie den kleinstmöglichen Container.
+- **Umfang**: Welcher [Segment-Container](#segment-containers) repräsentiert die Daten, nach denen Sie suchen, am besten? Benutzen Sie den kleinstmöglichen Container.
 
 - **Komponenten**: Entscheiden Sie, welche Komponenten in die Segmentdefinition aufgenommen werden sollen und anhand welcher Werte die Bedingungen validiert werden sollen.
 
@@ -165,14 +165,14 @@ Ereignis-Container enthalten wertbasierte Aufschlüsselungen einzelner Seiten f�
 
 ### B2B-Container
 
-[!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}
+[!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}
 
 Wenn Sie Zugriff auf [Customer Journey Analytics B2B edition](/help/getting-started/cja-b2b-edition.md) haben, stehen zusätzliche Container zur Verwendung in Segmenten zur Verfügung. Weitere Informationen zur Verwendung dieser zusätzlichen Container finden Sie unter „B2B[Konzepte und -Funktionen](/help/getting-started/cja-b2b-concepts-features.md).
 
 
 ### Logischer Gruppen-Container
 
-Mit der logischen Gruppe können Sie Bedingungen in einem einzigen sequenziellen Segment-Checkpoint gruppieren. Als Teil der Sequenz wird die Logik, die in dem als &quot;[!UICONTROL &quot; identifizierten Container definiert &#x200B;], nach einem vorherigen sequenziellen Checkpoint und vor einem nachfolgenden sequenziellen Checkpoint ausgewertet. Siehe [Logikgruppe](seg-sequential-build.md#logic-group) für weitere Informationen.
+Mit der logischen Gruppe können Sie Bedingungen in einem einzigen sequenziellen Segment-Checkpoint gruppieren. Als Teil der Sequenz wird die Logik, die in dem als &quot;[!UICONTROL &quot; identifizierten Container definiert ], nach einem vorherigen sequenziellen Checkpoint und vor einem nachfolgenden sequenziellen Checkpoint ausgewertet. Siehe [Logikgruppe](seg-sequential-build.md#logic-group) für weitere Informationen.
 
 ### Container verschachteln
 

@@ -6,9 +6,9 @@ feature: Basics
 role: User, Admin
 badgePremium: label="B2B edition"
 exl-id: df2cc922-d214-49b9-8fdb-443cc1dac05b
-source-git-commit: be617c59cd2fced0031fda1130b86e638bee8f68
+source-git-commit: 6bfd54148736d4b3434eac3ee3aa6fc8a838d57a
 workflow-type: tm+mt
-source-wordcount: '1246'
+source-wordcount: '1470'
 ht-degree: 2%
 
 ---
@@ -33,7 +33,7 @@ In Customer Journey Analytics B2B edition können Sie zwischen einer personenbas
 
 ## Container
 
-In Customer Journey Analytics werden Container im Rahmen der Konfiguration einer Verbindung und Datenansicht generiert. Container speichern Kennungsgruppen, um die schnelle und leistungsstarke Ausführung von Funktionen wie Segmentierung, Aufschlüsselungen und mehr zu erleichtern.
+In Customer Journey Analytics werden Container im Rahmen der Konfiguration einer Verbindung und Datenansicht generiert und stellen die Datenstruktur und den Umfang bereit. Container speichern Kennungsgruppen, um alle Ereigniszeitstempel nach eindeutigen Kennungen zu sequenzieren. Dieser Speicher erleichtert die schnelle und leistungsstarke Ausführung von Funktionen wie Segmentierung, Attribution und Visualisierungen.
 
 ### Standard-Container
 
@@ -64,6 +64,23 @@ Die Hierarchie und die Beziehungen zwischen den Containern sind vorgegeben. Oppo
 >
 >* Wenn Sie **aktiviert** den Container Globales Konto in einer kontobasierten Verbindung haben, sollte jeder Datensatz in Ihren Ereignisdatensätzen eine Konto-ID und eine globale Konto-ID enthalten. Andernfalls wird der Datensatz übersprungen.
 >* Wenn Sie **nicht aktiviert** den Container Globales Konto in einer kontobasierten Verbindung aktiviert haben, sollte jeder Datensatz in Ihren Ereignisdatensätzen eine Konto-ID enthalten. Andernfalls wird der Datensatz übersprungen.
+
+Sie können die B2B-Container für bestimmte B2B-Funktionen in Analysis Workspace verwenden:
+
+* **Segmentierung**: Mit [B2B-Segment-Containern](/help/components/filters/filters-overview.md#b2b-containers) können Sie Segmente mit einem Container-Bereich außerhalb von Person, Sitzung oder Ereignis erstellen. Beispiel: ein Konto mit dem Segment „Ereignisregistrierung“ oder ein US-Konto mit dem Segment „Einkaufsgruppen“ und „Vertriebschancen“ der Stufe 5.
+
+  >[!NOTE]
+  >
+  >Die B2B-Ereignisdaten in einer kontobasierten Einrichtung in Customer Journey Analytics B2B edition können Datenzeilen ohne Person oder Sitzung enthalten. Beispiel: Eine Zeile mit Details zum Fortschritt des Opportunity-Stadiums. Beachten Sie bei der Bewertung Ihres Segments, dass Personen und Sitzungen möglicherweise nicht mehr die richtigen Kriterien sind.
+  >
+
+* **Attribution**: Sie können die neuen B2B-Container im [Attributionsbereich](/help/analysis-workspace/c-panels/attribution.md), in [Attributionskomponenteneinstellungen](/help/data-views/component-settings/attribution.md), in [berechneten Metriken](/help/components/calc-metrics/cm-workflow/m-metric-type-alloc.md) oder in [Spalten in einer Freiformtabelle](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/column-settings.md). Account-Lookbacks werden auf 13 Monate verlängert.
+
+* **Visualisierungen**: [Ausfallen](/help/analysis-workspace/visualizations/fallout/fallout-flow.md), [Fluss](/help/analysis-workspace/visualizations/c-flow/flow.md), [Journey-Arbeitsfläche](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md) und [Kohortentabelle](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md) Visualisierungen unterstützen die neuen B2B-Container. Beispiel: Sie können die neuen Container verwenden, um zu verstehen, wie Einkaufsgruppen Inhalte konsumieren oder wie sich Opportunity-Kohorten dem Verkaufsabschluss nähern.
+Sie können auch den Standard-Container für diese Visualisierungen unter [Benutzereinstellungen“ ](/help/analysis-workspace/user-preferences.md#visualizations-preferences).
+
+Segmente, Attribution und Visualisierungen unterstützen Sie zusammen mit den B2B-Containern bei der umfassenden B2B-Analyse und bei der Erweiterung Ihrer Erkenntnisse.
+
 
 ## Datensätze
 
