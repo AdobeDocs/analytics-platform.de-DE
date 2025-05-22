@@ -9,9 +9,9 @@ index: true
 user-guide-title: Handbuch zu Customer Journey Analytics
 user-guide-description: Hier erhalten Sie Informationen zu Adobe Customer Journey Analytics und Erläuterungen zur Nutzung von Analysis Workspace mit Daten aus Experience Platform.
 breadcrumb-title: Handbuch zu Customer Journey Analytics
-source-git-commit: d56605b1ae7fd6d83853ad54ce823464090e0192
+source-git-commit: c0446bd85b65109fd3311d54e33f9fb33af28f88
 workflow-type: tm+mt
-source-wordcount: '1241'
+source-wordcount: '1243'
 ht-degree: 94%
 
 ---
@@ -45,6 +45,7 @@ ht-degree: 94%
       + [Überblick](/help/getting-started/cja-b2b-edition.md)
       + [B2B-Konzepte und -Funktionen](/help/getting-started/cja-b2b-concepts-features.md)
       + [Schnellstartanleitung](/help/getting-started/cja-b2b-quick-start-guide.md)
+      + [Übergangsleitfaden](/help/getting-started/cja-b2b-transition.md)
 
 + Customer Journey Analytics und Adobe Analytics {#compare-aa-cja}
    + Upgrade auf Customer Journey Analytics {#upgrade-to-cja}
