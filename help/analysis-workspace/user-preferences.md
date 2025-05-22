@@ -48,7 +48,7 @@ Die allgemeinen Voreinstellungen gelten für Ihre Customer Journey Analytics-Erf
 >[!CONTEXTUALHELP]
 >id="workspace_prefs_requireexperiencecloudauth"
 >title="Experience Cloud-Authentifizierung verlangen"
->abstract="Wenn diese Option aktiviert ist, müssen sich Personen, die über die Option **[!UICONTROL Für alle freigeben]** in Analysis Workspace Zugriff auf ein Projekt erhalten, mit ihren Experience Cloud-Anmeldeinformationen authentifizieren."
+>abstract="Wenn diese Option aktiviert ist, müssen sich Personen, die über die Option **[!UICONTROL Für alle freigeben]** in Analysis Workspace Zugriff auf ein Projekt erhalten haben, mit ihren Anmeldedaten von Experience Cloud authentifizieren."
 
 <!-- markdownlint-enable MD034 -->
 
