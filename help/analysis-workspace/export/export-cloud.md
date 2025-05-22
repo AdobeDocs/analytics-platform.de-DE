@@ -5,10 +5,10 @@ title: Exportieren von Customer Journey Analytics-Berichten in die Cloud
 feature: Curate and Share
 exl-id: 072eadcc-43ff-42e3-86ee-82062fa02eba
 role: User
-source-git-commit: c503b5bc65565b342e5e6bea8c019d8e1ee1e429
+source-git-commit: 0891aa2bed446e704b0222eff992c5f5bc200f82
 workflow-type: tm+mt
-source-wordcount: '2284'
-ht-degree: 98%
+source-wordcount: '2340'
+ht-degree: 95%
 
 ---
 
@@ -156,9 +156,9 @@ Die folgenden Funktionen werden nicht unterstützt und automatisch aus vollstän
 * Statische Zeilen
 * Datumsausrichtung
 * Metriken aus Zusammenfassungsdatensätzen
-* Dynamische Dimensionen
+* Dynamische Dimensionselemente
 
-  Weitere Informationen finden Sie unter [Dynamische und statische Dimensionselemente in Freiformtabellen](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/manual-vs-dynamic-rows.md).
+  Dynamische Dimensionselemente werden erstellt, wenn Sie eine Dimension in einer Spaltenüberschrift in einer Freiformtabelle ablegen. Dies führt dazu, dass die Spalte dynamisch nach den fünf wichtigsten Dimensionselementen gefiltert wird. In Analysis Workspace werden diese fünf wichtigsten Dimensionselemente jedes Mal aktualisiert, wenn Sie das Projekt laden. In einem Export als vollständige Tabelle werden diese Dimensionselemente statisch. Weitere Informationen finden Sie unter [Dynamische und statische Dimensionselemente in Freiformtabellen](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/manual-vs-dynamic-rows.md).
 * Dimensionen in der ersten Aufschlüsselung werden konvertiert und als sekundäre Dimension in der Zeile der exportierten Tabelle hinzugefügt. Alle anderen Aufschlüsselungen werden nicht in die Tabelle aufgenommen
 * Die Sortierung wird für die meisten Datensätze nicht unterstützt. Daten können für kleine Datensätze sortiert werden
 
