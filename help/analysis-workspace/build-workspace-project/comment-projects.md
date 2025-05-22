@@ -4,9 +4,9 @@ title: Hinzufügen und Anzeigen von Kommentaren in Projekten
 feature: Workspace Basics
 role: User
 exl-id: 05f69a1c-31c2-40d8-ae8b-a084169897b1
-source-git-commit: fb7e0e911de2a4a702d6069ca2f53d7769ec608b
+source-git-commit: df147b92e19b6dee66fcf6346113596f1cde6fd1
 workflow-type: tm+mt
-source-wordcount: '1683'
+source-wordcount: '1723'
 ht-degree: 0%
 
 ---
@@ -104,19 +104,23 @@ So fügen Sie einem Projekt in Analysis Workspace Kommentare hinzu:
 
 ## Andere in einen Kommentar einbeziehen
 
-Die Kommentarfunktion in Analysis Workspace erleichtert die Zusammenarbeit mit anderen Benutzern. So fügen Sie eine andere Person in Ihren Kommentar ein:
+Die Kommentarfunktion in Analysis Workspace erleichtert die Zusammenarbeit mit anderen Benutzern.
+
+Beachten Sie Folgendes, wenn Sie das @-Symbol verwenden, um Personen in einen Kommentar einzuschließen:
+
+* Personen, die Sie einbeziehen, erhalten Benachrichtigungen entsprechend ihren Adobe Experience Cloud-Benachrichtigungseinstellungen. Standardmäßig erhalten sie eine [Experience Cloud-Benachrichtigung](https://experienceleague.adobe.com/en/docs/core-services/interface/features/account-preferences#view-notifications).
+
+  Darüber hinaus können Benutzer ihre Experience Cloud-Benachrichtigungseinstellungen so konfigurieren, dass sie E-Mail-Benachrichtigungen und Slack-Benachrichtigungen erhalten, [ sie E-Mail-Benachrichtigungen ](https://experienceleague.adobe.com/en/docs/core-services/interface/features/account-preferences#subscribe-to-in-app-and-email-notifications) und [Slack-Benachrichtigungen abonnieren](https://experienceleague.adobe.com/en/docs/core-services/interface/features/account-preferences#slack).
+
+* Sie können jeden in Ihrer Organisation in einen Kommentar einbeziehen, aber dadurch erhalten sie nicht automatisch Zugriff auf das Projekt. Nur Personen, die bereits Zugriff auf das Projekt haben, können darauf zugreifen.
+
+So fügen Sie eine andere Person in Ihren Kommentar ein:
 
 1. Geben Sie das @-Symbol ein und beginnen Sie dann mit der Eingabe des Vornamens, Nachnamens oder der E-Mail-Adresse der Person, die Sie einbeziehen möchten.
 
    ![Tag-Benutzer](assets/comments-tag-user.png)
 
 1. Wählen Sie den Namen der Person aus, wenn er im Dropdown-Menü angezeigt wird.
-
-Beachten Sie Folgendes, wenn Sie das @-Symbol verwenden, um Personen in einen Kommentar einzuschließen:
-
-* Personen, die Sie einbeziehen, erhalten eine E-Mail-Benachrichtigung und eine Pulse-Benachrichtigung.
-
-* Sie können jeden in Ihrer Organisation in einen Kommentar einbeziehen, aber dies gewährt ihm nicht automatisch Zugriff auf das Projekt. Nur Personen, die bereits Zugriff auf das Projekt haben, können darauf zugreifen.
 
 ## Auf einen Kommentar antworten
 
@@ -126,7 +130,7 @@ Beachten Sie Folgendes, wenn Sie das @-Symbol verwenden, um Personen in einen Ko
 
    Oder
 
-   Wenn Sie möchten, dass Ihre Antwort den Text des Kommentars enthält, auf den Sie antworten, wobei der ursprüngliche Text in ein Zitat-Tag eingeschlossen ist, wählen Sie das 3-Punkt-Symbol neben dem spezifischen Kommentar oder der Antwort, auf den bzw. die Sie antworten möchten, und wählen Sie dann **[!UICONTROL Zitat-Antwort]**. Eine Zitatantwort ist eine gute Möglichkeit, den Kommentar oder die Antwort, auf den bzw. die sich Ihr Kommentar bezieht, klar anzugeben.
+   Um den Text des Kommentars, auf den Sie antworten, einzubeziehen, wobei der ursprüngliche Text in ein Zitat-Tag eingeschlossen ist, wählen Sie das 3-Punkt-Symbol neben dem spezifischen Kommentar oder der Antwort, auf den bzw. die Sie antworten möchten, und klicken Sie dann auf **[!UICONTROL Zitat-Antwort]**. Eine Antwort auf ein Zitat ist eine gute Möglichkeit, anzugeben, auf welchen Kommentar oder welche Antwort sich Ihr Kommentar bezieht.
 
 1. Geben Sie im Feld **[!UICONTROL Neuer Kommentar]** Ihren Kommentar ein.
 
@@ -146,7 +150,7 @@ Wenn ein Kommentar im Kommentarbereich in der rechten Leiste verfügbar ist, abe
 
 1. Wählen Sie den Bereich des Projekts aus, in dem Sie das Abzeichen für den vorhandenen Kommentar platzieren möchten.
 
-   Ein **Kommentar-**![Kommentar-Badge](assets/comment-indicator.png) wird im Bereich des von Ihnen ausgewählten Workspace-Projekts platziert. Der Kommentar wird auch oben im Kommentarbereich in der rechten Leiste angezeigt.
+   Ein **Kommentar** Badge![Kommentar-Badge](assets/comment-indicator.png) wird im Bereich des von Ihnen ausgewählten Workspace-Projekts platziert. Der Kommentar wird auch oben im Kommentarbereich in der rechten Leiste angezeigt.
 
    Weitere [ finden Sie unter ](#view-comment-badges-in-a-project) in einem Projekt anzeigen .
 
@@ -182,7 +186,7 @@ So kopieren Sie den Link zu einem Kommentar:
 
 ## Kopieren des Textes eines Kommentars
 
-Sie können den Textkörper eines Kommentars kopieren und ihn für andere freigeben.
+Sie können den Textkörper eines Kommentars kopieren und für andere freigeben.
 
 So kopieren Sie den Textkörper eines Kommentars:
 
