@@ -3,10 +3,10 @@ description: Erfahren Sie mehr über Metriktyp und Attribution
 title: Metriktyp und Attribution
 feature: Calculated Metrics
 exl-id: da73a9ba-542e-436c-bdb2-b629b5b6f760
-source-git-commit: 2d182004b12eb44f54ec9b4b5f63cb9072594aec
+source-git-commit: 2b193e1ff612ab00335898164dc84afb08673fff
 workflow-type: tm+mt
-source-wordcount: '1007'
-ht-degree: 100%
+source-wordcount: '1017'
+ht-degree: 98%
 
 ---
 
@@ -132,11 +132,14 @@ Unter [Beispiel](#example) finden Sie ein Beispiel für die Verwendung eines Att
 >abstract="Die Credits werden anhand eines statistischen Algorithmus dynamisch bestimmt."
 
 
+>[!CONTEXTUALHELP]
+>id="components_calculatedmetrics_attribution_container"
+>title="Container"
+>abstract="Wählen Sie einen Container aus, um den gewünschten Umfang für die Attribution festzulegen."
+
 
 {{attribution-models-details}}
 
-
-### Lookback-Fenster {#lookback-window}
 
 <!-- markdownlint-disable MD034 -->
 
@@ -145,7 +148,6 @@ Unter [Beispiel](#example) finden Sie ein Beispiel für die Verwendung eines Att
 >title="Lookback-Fenster"
 >abstract="Diese Einstellung bestimmt das Fenster der Datenattribution, das für jede Konversion angewendet wird."
 
-<!-- markdownlint-enable MD034 -->
 
 {{attribution-lookback-window}}
 
