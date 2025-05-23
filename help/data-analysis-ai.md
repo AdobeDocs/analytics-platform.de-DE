@@ -5,9 +5,9 @@ role: User, Admin
 solution: Customer Journey Analytics
 feature: AI Tools
 exl-id: 262d5f15-16cb-4851-a769-7dbd205b2f81
-source-git-commit: e82179f3436dc6b66ebe3f2f9b11986cadd135d9
+source-git-commit: bef00aa251831cdb809a6243b5d5a8e2c0dda9bb
 workflow-type: tm+mt
-source-wordcount: '1861'
+source-wordcount: '1872'
 ht-degree: 3%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 3%
 
 >[!AVAILABILITY]
 >
->Data Insights Agent ist bis zum 30. November 2025 für berechtigte Customer Journey Analytics-Kunden verfügbar. Nach diesem Datum ist eine Lizenz erforderlich, wenn Sie Data Insights Agent weiterhin verwenden möchten. Wenden Sie sich an Ihr Adobe-Accountteam, um Unterstützung beim Lizenzierungsprozess zu erhalten.
+>Data Insights Agent steht berechtigten Kunden für eine begrenzte Zeit zur Verfügung. Der Zugriff auf Data Insights Agent endet am 30. November 2025. Wenn Sie Data Insights Agent ohne Unterbrechung weiter verwenden möchten, wenden Sie sich an Ihren Adobe-Kundenbetreuer, um mehr über die Lizenzierung von Data Insights Agent zu erfahren.
 
 Data Insights Agent, auf das über den KI-Assistenten in Customer Journey Analytics zugegriffen werden kann, ist ein generativer KI-Konversationsagent, der Fragen zu Ihren Daten schnell und effizient beantwortet. Er erstellt relevante Visualisierungen in Analysis Workspace mithilfe von Komponenten aus Ihrer Datenansicht und unter Verwendung Ihrer tatsächlichen Daten.
 
@@ -41,7 +41,7 @@ Die Verwendung von Data Insights Agent zur Beantwortung datenorientierter Fragen
 
 Die folgenden Parameter regeln den Zugriff auf Data Insights Agent in Customer Journey Analytics:
 
-* **Zugriff auf Lösungen**: Data Insights Agent ist für Kunden von Customer Journey Analytics Prime und Ultimate verfügbar. Sie ist in Adobe Analytics nicht verfügbar.
+* **Zugriff auf Lösungen**: Data Insights Agent steht allen Customer Journey Analytics-Kunden im Rahmen eines eingeschränkten Zugriffsprogramms bis zum 30. November 2025 zur Verfügung. Sie ist in Adobe Analytics nicht verfügbar.
 
 * **Vertragszugriff**: Wenn Sie Data Insights Agent nicht im KI-Assistenten verwenden können, wenden Sie sich bitte an den Administrator Ihres Unternehmens oder an Ihr Adobe-Accountteam. Bevor Ihr Unternehmen Data Insights Agent verwenden kann, müssen Sie bestimmten rechtlichen Bedingungen im Zusammenhang mit generativer KI zustimmen.
 
@@ -50,7 +50,7 @@ Die folgenden Parameter regeln den Zugriff auf Data Insights Agent in Customer J
   Um Berechtigungen zu erteilen, muss [Produktprofil-Administrator](https://helpx.adobe.com/de/enterprise/using/manage-product-profiles.html) in der [!UICONTROL Admin Console die folgenden Schritte ausführen]:
    1. Wählen Sie in **[!UICONTROL Admin Console]** die Registerkarte **[!UICONTROL Produkte]** aus, um die Seite **[!UICONTROL Alle Produkte und Services]** anzuzeigen.
    1. **[!UICONTROL Customer Journey Analytics]**.
-   1. Wählen Sie auf **[!UICONTROL Registerkarte]** den Titel des Produktprofils aus, für das Sie Zugriff auf den [!UICONTROL KI-Assistenten: Produktkenntnisse“ &#x200B;] möchten.
+   1. Wählen Sie auf **[!UICONTROL Registerkarte]** den Titel des Produktprofils aus, für das Sie Zugriff auf den [!UICONTROL KI-Assistenten: Produktkenntnisse“ ] möchten.
    1. Wählen Sie im jeweiligen Produktprofil die Registerkarte **[!UICONTROL Berechtigungen]** aus.
 
       ![Registerkarte „Berechtigungen“ in Admin Console](assets/ai-assistant-permissions-tab.png)
