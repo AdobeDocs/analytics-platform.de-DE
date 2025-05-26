@@ -4,31 +4,27 @@ title: Workspace-Summen
 feature: Visualizations
 exl-id: ba14b88c-44c2-45f6-b68f-f5c1263a89dd
 role: User
-source-git-commit: 770320a0b16d26e0755203a3524b000db30cac82
+source-git-commit: c10d88c27d4a3c92e02179da4a73a6a499d2a8c2
 workflow-type: tm+mt
-source-wordcount: '487'
-ht-degree: 78%
+source-wordcount: '485'
+ht-degree: 70%
 
 ---
 
 # Workspace-Summen {#workspace-totals}
 
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="workspace_freeformtable_grandtotal"
 >title="Gesamtsumme"
->abstract="Die Gesamtsumme wird für Tabellen oder Aufschlüsselungen mit statischen Zeilen nicht unterstützt"
-
-<!-- markdownlint-enable MD034 -->
+>abstract="Gesamtsumme wird für Tabellen oder Aufschlüsselungen mit statischen Zeilen nicht unterstützt."
 
 
 In Freiformtabellen wird auf jeder Unterteilungsebene eine Zeile insgesamt angezeigt, die zwei Summen enthalten kann:
 
 ![Freiformtabelle mit hervorgehobener Gesamt- und Tabellensumme.](assets/total-row.png)
 
-* **[!UICONTROL Tabellensumme]** ➊: Dieser Gesamtwert entspricht in der Regel der [!UICONTROL Gesamtsumme] oder einer Teilmenge davon. Die Summe spiegelt alle Tabellensegmente wider, die in der Freiformtabelle angewendet wurden, einschließlich der Option [!UICONTROL Ohne einschließen].
-* **[!UICONTROL Gesamtsumme]** (**[!UICONTROL „von“]**-*Zahl*) ➋: Dieser Gesamtwert stellt alle erfassten Ereignisse dar. Wenn ein Segment entweder auf Bedienfeldebene oder in der Freiformtabelle angewendet wird, passt sich diese Summe an, um alle Ereignisse wiederzugeben, die den Segmentkriterien entsprechen.
+* **[!UICONTROL Tabellensumme]** ➊ - Dieser Gesamtwert entspricht in der Regel der Gesamtsumme oder einer Teilmenge [!UICONTROL Gesamtsumme]. Die Summe spiegelt alle Tabellensegmente wider, die in der Freiformtabelle angewendet wurden, einschließlich der Option [!UICONTROL Ohne einschließen].
+* **[!UICONTROL Gesamtsumme]** (**[!UICONTROL von]** *Anzahl*) ➋ - Dieser Gesamtwert stellt alle erfassten Ereignisse dar. Wenn ein Segment entweder auf Bedienfeldebene oder in der Freiformtabelle angewendet wird, passt sich diese Summe an, um alle Ereignisse wiederzugeben, die den Segmentkriterien entsprechen.
 
 
 
