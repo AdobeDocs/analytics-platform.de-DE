@@ -5,10 +5,10 @@ exl-id: 5ce13fe9-29fa-474c-bae3-65f275153a59
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: e4e0c3cf2e865454837df6626c3b1b09f119f07f
-workflow-type: ht
+source-git-commit: 6fdb6cbd6f12a0417f513565b02e3ad60c8df6cb
+workflow-type: tm+mt
 source-wordcount: '737'
-ht-degree: 100%
+ht-degree: 88%
 
 ---
 
@@ -24,11 +24,11 @@ ht-degree: 100%
 <!-- markdownlint-enable MD034 -->
 
 
-Mit „Format“ können Sie bestimmen, wie eine bestimmte Metrik angezeigt wird, wenn sie in Berichten verwendet wird.
+Mit „Format“ können Sie festlegen, wie eine bestimmte Komponente in Berichten angezeigt werden soll.
 
-## Konfigurieren von Formateinstellungen für eine Metrik
+## Konfigurieren von Formateinstellungen für eine Komponente
 
-Sie können festlegen, wie eine bestimmte Metrik angezeigt wird, indem Sie ihre Formateinstellungen anpassen.
+Sie können bestimmen, wie eine bestimmte Komponente angezeigt wird, indem Sie ihre Formateinstellungen anpassen.
 
 1. Wählen Sie in Customer Journey Analytics die Registerkarte [!UICONTROL **Datenansichten**] auf.
 
@@ -44,12 +44,12 @@ Sie können festlegen, wie eine bestimmte Metrik angezeigt wird, indem Sie ihre 
 
    | Einstellung | Beschreibung |
    | --- | --- |
-   | **[!UICONTROL Format]** | Hier können Sie die Formatierung einer Metrik als Dezimal, Zeit, Prozent oder Währung angeben. |
-   | **[!UICONTROL Dezimal]** | Nicht sichtbar bei Schemadatentypen des Typs „Ganzzahl“. Hier können Sie die Anzahl der Dezimalstellen angeben, die eine Metrik anzeigt. |
+   | **[!UICONTROL Format]** | Hier können Sie die Formatierung einer Komponente als Dezimalzahl, Zeit, Prozent oder Währung angeben. |
+   | **[!UICONTROL Dezimal]** | Nicht sichtbar bei Schemadatentypen des Typs „Ganzzahl“. Hier können Sie die Anzahl der Dezimalstellen angeben, die eine Komponente anzeigt. |
    | **[!UICONTROL Datum]** | Hiermit können Sie bestimmen, wie das „date-time“-Feld angezeigt werden soll, wenn es als Dimension in Berichten verwendet wird. [Weitere Informationen](../../use-cases/data-views/data-views-usecases.md#date-and-date-time-use-cases) |
    | **[!UICONTROL Date-Time]** | Hiermit können Sie bestimmen, wie das „date-time“-Feld angezeigt werden soll, wenn es als Dimension in Berichten verwendet wird. [Weitere Informationen](../../use-cases/data-views/data-views-usecases.md#date-and-date-time-use-cases) |
-   | **[!UICONTROL Währung]** | Hiermit können Sie festlegen, in welcher Währung die Metrik angezeigt werden soll. <p>Wenn Sie globale Daten analysieren, bei denen Transaktionen in verschiedenen Währungen auftreten, lesen Sie [Verwenden der Währungsumrechnung](#use-currency-conversion).</p> |
-   | **[!UICONTROL Aufwärts-Trend anzeigen als]** | Hier können Sie angeben, ob bei dieser Metrik ein Aufwärts-Trend gut (grün) oder schlecht (rot) ist. |
+   | **[!UICONTROL Währung]** | Hiermit können Sie festlegen, in welcher Währung die Komponente angezeigt werden soll. <p>Wenn Sie globale Daten analysieren, bei denen Transaktionen in verschiedenen Währungen auftreten, lesen Sie [Verwenden der Währungsumrechnung](#use-currency-conversion).</p> |
+   | **[!UICONTROL Aufwärts-Trend anzeigen als]** | Hier können Sie angeben, ob bei dieser Komponente ein Aufwärtstrend gut (grün) oder schlecht (rot) ist. |
    | **[!UICONTROL Wert „True“]** und **[!UICONTROL Wert „False“]** | Nur bei booleschen Schemadatentypen sichtbar. Ermöglicht die Anpassung der Bezeichnung des Dimensionselements für die Werte `true` und `false`. |
 
    {style="table-layout:auto"}
