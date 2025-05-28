@@ -5,9 +5,9 @@ exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: Basics
 role: User
-source-git-commit: 0ad3cd8ae88cc5fc5297a63067900b2f741778b1
+source-git-commit: f45e56b59b80552edc3b2662697e01dcc1b62ea5
 workflow-type: tm+mt
-source-wordcount: '2483'
+source-wordcount: '2486'
 ht-degree: 94%
 
 ---
@@ -118,13 +118,12 @@ In der folgenden Tabelle sind Funktionen aufgeführt, die in Customer Journey An
 
 | Funktion | Hinweise |
 | --- | --- |
-| **Bedienfelder** | Leeres Bedienfeld, Attributions-Bedienfeld, Freiform-Bedienfeld und Quick Insights werden vollständig unterstützt. Die Bedienfelder „Segmentvergleich“ und „Analytics for Target“ (A4T) werden nicht unterstützt. |
+| **Workspace-Bedienfelder** | Leeres Bedienfeld, Attributions-Bedienfeld, Freiform-Bedienfeld und Quick Insights werden vollständig unterstützt. Die Bedienfelder „Segmentvergleich“ und „Analytics for Target“ (A4T) werden nicht unterstützt. |
 
 ## Keine Unterstützung, aber geplant {#planned}
 
 | Funktion | Hinweise |
 | --- | --- |
-| **Beitragsanalyse** | Unterstützung ist geplant. |
 | **Echtzeit-Reporting** | Unterstützung ist geplant. |
 | **Segment IQ** | Unterstützung ist geplant. |
 | **Transaktions-ID-Datenquellen** | Unterstützung ist geplant. |
@@ -134,6 +133,7 @@ In der folgenden Tabelle sind Funktionen aufgeführt, die in Customer Journey An
 | Funktion | Hinweise |
 | --- | --- |
 | **Activity Map** | Unterstützung ist noch nicht geplant. |
+| **Beitragsanalyse** | Unterstützung ist noch nicht geplant. |
 
 ## Keine Unterstützung geplant {#never}
 
