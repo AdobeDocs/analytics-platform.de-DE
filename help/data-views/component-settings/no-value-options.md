@@ -48,6 +48,6 @@ Wenn Sie einen numerischen Wert als Dimension verwenden, haben Sie folgende Mög
 
 >[!MORELIKETHIS]
 >
->[Das vollständige Playbook für die Verarbeitung von „Kein Wert“ in Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/the-complete-playbook-for-handling-no-value-in-adobe-cja/ba-p/756696#M598).
+>[Das vollständige Playbook für die Verarbeitung von „Kein Wert“ in Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/the-complete-playbook-for-handling-no-value-in-adobe-cja/ba-p/756696?profile.language=de#M598).
 
 
