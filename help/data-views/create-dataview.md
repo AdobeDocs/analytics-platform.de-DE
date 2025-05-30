@@ -183,45 +183,45 @@ Sie können ![Filtersymbol](https://spectrum.adobe.com/static/icons/workflow_18/
 >id="dataview_includedcomponents_filter_datagovernance_custom"
 >title="Benutzerdefinierte Labels"
 >abstract="Zusätzlich zu den von Adobe bereitgestellten Labels können Sie auch Ihre eigenen benutzerdefinierten Labels für Ihre Organisation definieren. "
->additional-url="https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/labels/overview" text="Datennutzungs-Labels – Übersicht"
+>additional-url="https://experienceleague.adobe.com/de/docs/experience-platform/data-governance/labels/overview" text="Datennutzungs-Labels – Übersicht"
 
 >[!CONTEXTUALHELP]
 >id="dataview_includedcomponents_filter_datagovernance_contract"
 >title="Vertragsbezeichnungen"
 >abstract="Vertrags-Kennzeichnungen (C) werden verwendet, um Daten zu kategorisieren, für die vertragliche Verpflichtungen bestehen oder die mit den Data-Governance-Richtlinien Ihrer Organisation in Zusammenhang stehen."
->additional-url="https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/labels/overview" text="Datennutzungs-Labels – Übersicht"
+>additional-url="https://experienceleague.adobe.com/de/docs/experience-platform/data-governance/labels/overview" text="Datennutzungs-Labels – Übersicht"
 
 >[!CONTEXTUALHELP]
 >id="dataview_includedcomponents_filter_datagovernance_identity"
 >title="Identitätsbezeichnungen"
 >abstract="Identitätskennzeichnungen (I) werden verwendet, um Daten zu kategorisieren, mit denen eine bestimmte Person identifiziert oder kontaktiert werden kann."
->additional-url="https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/labels/overview" text="Datennutzungs-Labels – Übersicht"
+>additional-url="https://experienceleague.adobe.com/de/docs/experience-platform/data-governance/labels/overview" text="Datennutzungs-Labels – Übersicht"
 
 >[!CONTEXTUALHELP]
 >id="dataview_includedcomponents_filter_datagovernance_sensitive"
 >title="Kennzeichnungen für sensible Daten"
 >abstract="Mit (S) sensiblen Kennzeichnungen werden Daten gekennzeichnet, die Sie und Ihr Unternehmen als sensibel erachten."
->additional-url="https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/labels/overview" text="Datennutzungs-Labels – Übersicht"
+>additional-url="https://experienceleague.adobe.com/de/docs/experience-platform/data-governance/labels/overview" text="Datennutzungs-Labels – Übersicht"
 
 
 >[!CONTEXTUALHELP]
 >id="dataview_includedcomponents_filter_datagovernance_partnerecosystem"
 >title="Partner-Ökosystem"
 >abstract="Die Kennzeichnungen (P) von Partner-Ökosystemen werden verwendet, um Daten zu kategorisieren, die mit Drittanbieter-Partnern geteilt werden."
->additional-url="https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/labels/overview" text="Datennutzungs-Labels – Übersicht"
+>additional-url="https://experienceleague.adobe.com/de/docs/experience-platform/data-governance/labels/overview" text="Datennutzungs-Labels – Übersicht"
 
 >[!CONTEXTUALHELP]
 >id="dataview_includedcomponents_filter_datagovernance_policies"
 >title="Richtlinien"
 >abstract="Damit Datennutzungsbezeichnungen die Datenkonformität effektiv unterstützen können, müssen Sie Datennutzungsrichtlinien definieren und aktivieren. Datennutzungsrichtlinien sind Regeln, die die Arten von Marketing-Aktionen beschreiben, die Sie für Daten in Experience Platform ausführen bzw. nicht ausführen dürfen. Die Richtlinienfilter wenden die aktivierte Richtlinie auf die Datenansicht an."
->additional-url="https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/labels/overview" text="Datennutzungs-Labels – Übersicht"
+>additional-url="https://experienceleague.adobe.com/de/docs/experience-platform/data-governance/labels/overview" text="Datennutzungs-Labels – Übersicht"
 
 
 >[!CONTEXTUALHELP]
 >id="dataview_includedcomponents_filter_datagovernance_responsibleengagement"
 >title="Verantwortungsvolle Interaktionskennzeichnungen"
 >abstract="Verantwortungsvolle Interaktionskennzeichnungen werden verwendet, um eine verantwortliche Interaktion zu unterstützen."
->additional-url="https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/labels/overview" text="Datennutzungs-Labels – Übersicht"
+>additional-url="https://experienceleague.adobe.com/de/docs/experience-platform/data-governance/labels/overview" text="Datennutzungs-Labels – Übersicht"
 
 
 Die **[!UICONTROL Enthaltene Komponenten]** enthält die Liste der **[!UICONTROL Metriken]** und **[!UICONTROL Dimensionen]** die Sie für die Datenansicht konfigurieren.
