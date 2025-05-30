@@ -4,11 +4,9 @@ description: Erfahren Sie, wie Sie Customer Journey Analytics B2B edition für t
 solution: Customer Journey Analytics
 feature: Use Cases
 role: User
-hide: true
-hidefromtoc: true
 badgePremium: label="B2B edition"
 exl-id: f959a77b-ccfb-43f2-93bb-b330e73d59ac
-source-git-commit: f66df039c56fc1df3fb0e102745f500a3782d26d
+source-git-commit: 2fad11178853e08783b8f48671b504f50b6e0770
 workflow-type: tm+mt
 source-wordcount: '1727'
 ht-degree: 13%
@@ -288,9 +286,9 @@ Definieren Sie eine kontobasierte Verbindung in Customer Journey Analytics, um D
    ![B2B-Verbindung - Datensätze hinzufügen](assets/b2b-connection-add-datasets.png)
 
 1. Klicken Sie **[!UICONTROL Weiter]**, um die Einstellungen für jeden der ausgewählten Datensätze zu konfigurieren.
-1. Wählen Sie für den Ereignis-Datensatz die entsprechenden eVars aus, die den Identitäten für **[!UICONTROL Konto-ID]**, **[!UICONTROL Globale Konto-ID]**, **[!UICONTROL Opportunity-ID]**, **[!UICONTROL Einkaufsgruppen-ID]** und **[!UICONTROL Personen-ID]** entsprechen.
+1. Wählen Sie für den Ereignisdatensatz die entsprechenden Felder aus, die den Identitäten für **[!UICONTROL Konto-ID]**, **[!UICONTROL Globale Konto-ID]**, **[!UICONTROL Opportunity-ID]**, **[!UICONTROL Einkaufsgruppen-ID]** und **[!UICONTROL Personen-ID]** entsprechen.
 
-   ![B2B-Verbindung - Ereignis-Datensatz hinzufügen](assets/b2b-connection-add-datasets-event-data.png).
+   ![B2B-Verbindung - Ereignis-Datensatz hinzufügen](assets/b2b-connection-add-datasets-event-data.png)
 
 1. Scrollen Sie nach unten, um den Datensatz Kontodatensätze zu konfigurieren. Stellen Sie sicher, dass Sie die richtige Kennung (**[!UICONTROL Account_ID]**) auswählen, um dem Konto durch den Container **[!UICONTROL Globales Konto]** zu entsprechen. Wählen Sie die richtige Kennung (**[!UICONTROL Account_ID]**) als **[!UICONTROL Feld Globales Konto]**.
 
