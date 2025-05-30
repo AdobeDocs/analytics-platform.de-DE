@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin
 exl-id: 584587e6-45fd-4fc3-a7a6-6685481ddee7
-source-git-commit: c10d88c27d4a3c92e02179da4a73a6a499d2a8c2
+source-git-commit: 7909388273af4c19d2dfda671c2af8eac470fff9
 workflow-type: tm+mt
-source-wordcount: '628'
-ht-degree: 73%
+source-wordcount: '622'
+ht-degree: 74%
 
 ---
 
@@ -85,7 +85,7 @@ Ein Erlebnisklick wird in folgendem Fall aufgezeichnet:
 
 Um die Anzahl der Aufrufe zu reduzieren, die die Seite verlassen, sammelt Content Analytics Informationen, sendet diese jedoch nicht sofort. Informationen zu Inhaltsinteraktionen werden erfasst und ein Ereignis, das diese Informationen enthält, wird nur gesendet, wenn einer der folgenden Trigger auftritt:
 
-* Web SDK oder AppMeasurement sendet ein -Ereignis. Der Zeitstempel dieses Ereignisses lautet
+* Web SDK oder AppMeasurement sendet ein Ereignis.
 * Die Sichtbarkeit ändert sich (ausgeblendeter Status). Beispiele:
    * Die Seite wird entladen.
    * Die Registerkarte wird gewechselt.
