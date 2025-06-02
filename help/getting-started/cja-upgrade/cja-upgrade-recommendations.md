@@ -101,7 +101,7 @@ Jeder Schritt bietet eine allgemeine Erklärung eines detaillierteren Prozesses.
 
    1. Befüllen Sie ein XDM-Objekt und senden Sie es an den Datenstrom.
 
-+++
+   +++
 
    +++Tags
 
@@ -113,7 +113,7 @@ Jeder Schritt bietet eine allgemeine Erklärung eines detaillierteren Prozesses.
 
    1. [Hinzufügen von XDM-Datenerfassungslogik zum Tag](/help/getting-started/cja-upgrade/cja-upgrade-tag-xdm.md){target="_blank"}.
 
-+++
+   +++
 
 +++ API
 
