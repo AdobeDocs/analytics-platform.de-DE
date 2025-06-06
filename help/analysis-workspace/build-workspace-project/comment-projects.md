@@ -4,9 +4,9 @@ title: Hinzufügen und Anzeigen von Kommentaren in Projekten
 feature: Workspace Basics
 role: User
 exl-id: 05f69a1c-31c2-40d8-ae8b-a084169897b1
-source-git-commit: 5831f1eea0d46000c15d0e2269717816785ee881
+source-git-commit: 02b85db81c384c78f7d388b19c8ad53d0028de43
 workflow-type: tm+mt
-source-wordcount: '1769'
+source-wordcount: '1816'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,9 @@ Sie können Kommentare im Kommentarbereich in der rechten Leiste oder über das 
 
 Alle in einem Analysis Workspace-Projekt abgegebenen Kommentare werden im Kommentarbereich in der rechten Leiste angezeigt.
 
-1. Wenn das Projekt in Analysis Workspace geöffnet ist, wählen Sie das Symbol für den Kommentarbereich in der rechten Leiste von Analysis Workspace aus.
+1. Standardmäßig wird der Kommentarbereich für jedes Projekt in Analysis Workspace beim ersten Öffnen eines Projekts erweitert.
+
+   Wählen Sie das Symbol für den Kommentarbereich in der rechten Leiste eines Projekts aus, um den Kommentarbereich zu öffnen oder zu schließen.
 
    ![Kommentarbereich geschlossen](assets/comments-area-closed.png)
 
@@ -113,11 +115,11 @@ Die Kommentarfunktion in Analysis Workspace erleichtert die Zusammenarbeit mit a
 
 Beachten Sie Folgendes, wenn Sie das @-Symbol verwenden, um Personen in einen Kommentar einzuschließen:
 
-* Personen, die Sie einbeziehen, erhalten Benachrichtigungen entsprechend ihren Adobe Experience Cloud-Benachrichtigungseinstellungen. Standardmäßig erhalten sie eine In-App-Benachrichtigung, die über das Symbol [Experience Cloud-Benachrichtigung](https://experienceleague.adobe.com/de/docs/core-services/interface/features/account-preferences#view-notifications) ![Experience Cloud-Benachrichtigung](assets/experience-cloud-notification.png) in Customer Journey Analytics sichtbar ist.
+* Personen, die Sie einbeziehen, erhalten Benachrichtigungen entsprechend ihren Adobe Experience Cloud-Benachrichtigungseinstellungen.
 
-  Darüber hinaus können Benutzer ihre Experience Cloud-Benachrichtigungseinstellungen so konfigurieren, dass sie E-Mail-Benachrichtigungen und Slack-Benachrichtigungen erhalten, [ sie E-Mail-Benachrichtigungen ](https://experienceleague.adobe.com/de/docs/core-services/interface/features/account-preferences#subscribe-to-in-app-and-email-notifications) und [Slack-Benachrichtigungen abonnieren](https://experienceleague.adobe.com/de/docs/core-services/interface/features/account-preferences#slack).
+  Weitere Informationen finden Sie unter [Empfangen von Benachrichtigungen über Kommentare](#receive-notifications-about-comments).
 
-* Sie können jeden in Ihrer Organisation in einen Kommentar einbeziehen, aber dadurch erhalten sie nicht automatisch Zugriff auf das Projekt. Nur Personen, die bereits Zugriff auf das Projekt haben, können darauf zugreifen.
+* Sie können jeder Person, die sich in Ihrem Unternehmen befindet und Zugriff auf Customer Journey Analytics hat, automatisch Zugriff zur Bearbeitung des Projekts gewähren.
 
 So fügen Sie eine andere Person in Ihren Kommentar ein:
 
@@ -144,6 +146,12 @@ So fügen Sie eine andere Person in Ihren Kommentar ein:
 1. (Optional) Benachrichtigen Sie eine andere Person über Ihren Kommentar, indem Sie das @-Symbol gefolgt von ihrem Namen eingeben. Weitere Informationen zur Verwendung des @-Symbols, um andere zu benachrichtigen, finden Sie unter [Andere in einen Kommentar einbeziehen](#include-others-in-a-comment).
 
 1. Klicken Sie auf **[!UICONTROL Übermitteln]**.
+
+## Benachrichtigungen über Kommentare erhalten
+
+Projektbesitzer und [bestimmte Personen, die Sie ](#include-others-in-a-comment), erhalten Benachrichtigungen basierend auf ihren Adobe Experience Cloud-Benachrichtigungseinstellungen. Standardmäßig erhalten sie eine In-App-Benachrichtigung, die über das Symbol [Experience Cloud-Benachrichtigung](https://experienceleague.adobe.com/en/docs/core-services/interface/features/account-preferences#view-notifications) ![Experience Cloud-Benachrichtigung](assets/experience-cloud-notification.png) in Customer Journey Analytics sichtbar ist.
+
+Darüber hinaus können Benutzer ihre Experience Cloud-Benachrichtigungseinstellungen so konfigurieren, dass sie E-Mail-Benachrichtigungen und Slack-Benachrichtigungen erhalten, [ sie E-Mail-Benachrichtigungen ](https://experienceleague.adobe.com/en/docs/core-services/interface/features/account-preferences#subscribe-to-in-app-and-email-notifications) und [Slack-Benachrichtigungen abonnieren](https://experienceleague.adobe.com/en/docs/core-services/interface/features/account-preferences#slack).
 
 ## Platzieren eines Abzeichens für einen vorhandenen Kommentar
 
