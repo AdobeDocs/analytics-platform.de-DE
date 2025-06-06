@@ -12,7 +12,7 @@ breadcrumb-title: Handbuch zu Customer Journey Analytics
 source-git-commit: c0446bd85b65109fd3311d54e33f9fb33af28f88
 workflow-type: tm+mt
 source-wordcount: '1243'
-ht-degree: 94%
+ht-degree: 98%
 
 ---
 
@@ -110,7 +110,7 @@ ht-degree: 94%
    + [Benutzerhandbuch für Adobe Analytics-Benutzende](../getting-started/aa-to-cja-user.md)
 
 + Datenaufnahme {#cja-data-ingestion}
-   + [Übersicht über die Datenaufnahme](../data-ingestion/data-ingestion.md)
+   + [Überblick über die Datenaufnahme](../data-ingestion/data-ingestion.md)
    + Schnellstartanleitungen zur Aufnahme und Verwendung von Daten{#ingest-use-guides}
       + [Adobe Analytics](../data-ingestion/analytics.md)
       + Experience Platform Edge Network {#edge-network}
@@ -170,7 +170,7 @@ ht-degree: 94%
       + [Überblick](../analysis-workspace/build-workspace-project/freeform-overview.md)
       + [Erstellen von Projekten](/help/analysis-workspace/build-workspace-project/create-projects.md)
       + [Öffnen von Projekten](/help/analysis-workspace/build-workspace-project/open-projects.md)
-      + [Projektkommentar](/help/analysis-workspace/build-workspace-project/comment-projects.md)
+      + [Kommentar zu Projekten](/help/analysis-workspace/build-workspace-project/comment-projects.md)
       + [Speichern von Projekten](../analysis-workspace/build-workspace-project/save-projects.md)
       + Ordner in Workspace {#workspace-folders}
          + [Über Ordner](../analysis-workspace/build-workspace-project/workspace-folders/about-folders.md)
@@ -204,7 +204,7 @@ ht-degree: 94%
          + [Überblick](../analysis-workspace/visualizations/fallout/fallout-flow.md)
          + [Konfigurieren](../analysis-workspace/visualizations/fallout/configuring-fallout.md)
          + [Interdimensionaler Fallout](../analysis-workspace/visualizations/fallout/configuring-interdimensional-fallout.md)
-         + [Segmente anwenden](../analysis-workspace/visualizations/fallout/compare-segments-fallout.md)
+         + [Anwenden von Segmenten](../analysis-workspace/visualizations/fallout/compare-segments-fallout.md)
       + Fluss {#flow}
          + [Überblick](../analysis-workspace/visualizations/c-flow/flow.md)
          + [Konfigurieren](../analysis-workspace/visualizations/c-flow/create-flow.md)
@@ -248,7 +248,7 @@ ht-degree: 94%
       + [Schreibgeschützte Projekte](../analysis-workspace/curate-share/view-only-projects.md)
    + Exportieren {#export}
       + [Überblick](../analysis-workspace/export/export-project-overview.md)
-      + [Download](../analysis-workspace/export/download-send.md)
+      + [Herunterladen](../analysis-workspace/export/download-send.md)
       + [An andere senden](../analysis-workspace/export/t-schedule-report.md)
       + [Exportieren in die Cloud](../analysis-workspace/export/export-cloud.md)
    + Anomalieerkennung {#anomaly-detection}
@@ -319,7 +319,7 @@ ht-degree: 94%
       + [Erstellen und Veröffentlichen von Zielgruppen](../components/audiences/publish.md)
       + [Verwalten von Zielgruppen](../components/audiences/manage.md)
    + Dimensionen {#dimensions}
-      + [Dimensionen – Übersicht](../components/dimensions/overview.md)
+      + [Dimensionen – Überblick](../components/dimensions/overview.md)
       + [Dimensionsvorschau](../components/dimensions/view-dimensions.md)
       + [Dimensionen aufschlüsseln](../components/dimensions/t-breakdown-fa.md)
       + [Dimensionen für die Zeitunterteilung](../components/dimensions/time-parting-dimensions.md)
@@ -328,16 +328,16 @@ ht-degree: 94%
    + Segmente {#cja-filters}
       + [Überblick](../components/filters/filters-overview.md)
       + [Erstellen von Segmenten](../components/filters/create-filters.md)
-      + [Erstellen von Segmenten](../components/filters/filter-builder.md)
+      + [Aufbauen von Segmenten](../components/filters/filter-builder.md)
       + [Schnellsegmente](../components/filters/quick-filters.md)
       + [Sequenzielle Segmente](../components/filters/seg-sequential-build.md)
-      + [Segmente freigeben](../components/filters/filters-share.md)
-      + [Segmente taggen](../components/filters/filters-tag.md)
+      + [Freigeben von Segmenten](../components/filters/filters-share.md)
+      + [Taggen von Segmente](../components/filters/filters-tag.md)
       + [Filtern der Segmentliste](../components/filters/filters-filter.md)
-      + [Segmente als Favoriten markieren](../components/filters/filters-favorite.md)
-      + [Segmente genehmigen](../components/filters/filters-approve.md)
+      + [Markieren von Segmenten als Favoriten](../components/filters/filters-favorite.md)
+      + [Genehmigen von Segmenten](../components/filters/filters-approve.md)
       + [Segmente kopieren](../components/filters/filters-copy.md)
-      + [Segmente verwalten](../components/filters/manage-filters.md)
+      + [Verwalten von Segmenten](../components/filters/manage-filters.md)
       + [Operatoren](../components/filters/operators.md)
    + Berechnete Metriken {#cja-calcmetrics}
       + [Überblick](../components/calc-metrics/calc-metr-overview.md)
@@ -390,14 +390,14 @@ ht-degree: 94%
    + [Überblick](../report-builder/rb-overview.md)
    + [Einrichten von Report Builder](../report-builder/report-builder-setup.md)
    + [Erstellen eines Datenblocks](../report-builder/create-a-data-block.md)
-   + [Report Builder Hub](../report-builder/report-builder-hub.md)
+   + [Report Builder-Hub](../report-builder/report-builder-hub.md)
    + [Auswählen einer Datenansicht](../report-builder/select-data-view.md)
-   + [Datumsbereich auswählen](../report-builder/select-date-range.md)
+   + [Auswählen eines Datumsbereichs](../report-builder/select-date-range.md)
    + [Arbeiten mit Segmenten](../report-builder/work-with-filters.md)
    + [Filterdimensionen](../report-builder/filter-dimensions.md)
-   + [Datenblöcke verwalten](../report-builder/manage-reportbuilder.md)
-   + [Arbeitsmappen planen](../report-builder/schedule-reportbuilder.md)
-   + [Eingeschränkte Beschriftungen](../report-builder/restricted-labels.md)
+   + [Verwalten von Datenblöcken](../report-builder/manage-reportbuilder.md)
+   + [Planen von Arbeitsmappen](../report-builder/schedule-reportbuilder.md)
+   + [Eingeschränkte Labels](../report-builder/restricted-labels.md)
    + [Report Builder-Einstellungen](../report-builder/report-builder-settings.md)
 
 
@@ -435,7 +435,7 @@ ht-degree: 94%
       + [Kombinieren von Report Suites mit verschiedenen Schemata](../use-cases/aa-data/combine-report-suites.md)
    + B2B {#b2b}
       + [Ein Beispiel für ein B2B-Projekt auf Personenbasis](../use-cases/b2b/example.md)
-      + B2B edition {#b2b-edition}
+      + B2B Edition {#b2b-edition}
          + [Anwendungsfälle - Übersicht](/help/use-cases/b2b/b2b-edition/use-cases-overview.md)
          + [Einrichten](/help/use-cases/b2b/b2b-edition/setup.md)
          + [Marketing-Konto optimieren](/help/use-cases/b2b/b2b-edition/optimize-account-marketing.md)
@@ -497,6 +497,6 @@ ht-degree: 94%
    + [Leitlinien](../technotes/guardrails.md)
    + [IP-Adressen](../technotes/ip-addresses.md)
    + [Optimieren der Leistung](../technotes/optimizing-performance.md)
-   + [Verwendung verwalten](../technotes/estimate-usage.md)
+   + [Verwalten der Nutzung](../technotes/estimate-usage.md)
 
 + [Customer Journey Analytics-API](https://developer.adobe.com/cja-apis/docs/)

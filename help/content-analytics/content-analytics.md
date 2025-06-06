@@ -8,7 +8,7 @@ exl-id: 0d3be50d-c635-459b-8b01-61d6d4ef0cdf
 source-git-commit: dd4adc5acd05aecf0a67072df6688a344e1ce5c9
 workflow-type: tm+mt
 source-wordcount: '836'
-ht-degree: 89%
+ht-degree: 94%
 
 ---
 
@@ -41,9 +41,9 @@ Die Inhaltsanalyse verwendet die folgenden Schlüsselbegriffe:
 
 ## Funktionsweise
 
-Content Analytics verwendet Web-Bildansichtsdaten in Ereignisdatensätzen in Experience Platform, um [Inhaltsereignisdaten zu erfassen](config/datacollection.md). und kombiniert diese Inhaltserfassung mit der (vorhandenen) Datenerfassungsimplementierung von Verhaltensdaten.
+Content Analytics verwendet Web-Bildansichtsdaten in Ereignisdatensätzen in Experience Platform, um [Inhaltsereignisdaten zu erfassen](config/datacollection.md). Außerdem wird diese Inhaltsdatenerfassung mit der (vorhandenen) Datenerfassungsimplementierung von Verhaltensdaten kombiniert.
 
-![Inhaltsanalyse - Funktionsweise](assets/aca-overview.gif)
+![Inhaltsanalyse – Funktionsweise](assets/aca-overview.gif)
 
 1. Wenn eine Benutzerin oder ein Benutzer eine [für Content Analytics konfigurierte](config/configuration.md) Site besucht, zeichnet das Experience Platform Web SDK Impressions und Interaktionen mit Inhalten auf.
 1. Identity Service und Featurisierungs-Service verarbeiten diese Interaktionen. Dieser Prozess umfasst einen Abrufdienst, der die öffentlich zugänglichen Versionen der konfigurierten URLs, die die Interaktionen definieren, erneut aufruft. Bei allen abgerufenen URLs bewirkt der Identity Service eine eindeutige Identifizierung der Erlebnisse und Assets. Der Featurization Service wendet KI/ML-Services an, um Erlebnisse sowie Metadaten und Attribute von Assets zu ermitteln.
@@ -67,7 +67,7 @@ Content Analytics verwendet Web-Bildansichtsdaten in Ereignisdatensätzen in Exp
 >[!MORELIKETHIS]
 >
 >[Reporting für die Inhaltsanalyse](report/report.md)
->[Konfigurieren der Inhaltsanalyse](config/configuration.md)
->[Berechnen von Bounces und Absprungraten in Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/calculating-bounces-amp-bounce-rate-in-adobe-customer-journey/ba-p/706446?profile.language=de#M454)
+>>[Konfigurieren der Inhaltsanalyse](config/configuration.md)
+>>[Berechnen von Bounces und Bounce-Raten in Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/calculating-bounces-amp-bounce-rate-in-adobe-customer-journey/ba-p/706446?lang=de#M454)
 >
 
