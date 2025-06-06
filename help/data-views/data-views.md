@@ -6,9 +6,9 @@ solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
 source-git-commit: 220ebd7dbc3fa75d221690cd6e5828bd94395434
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1078'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -55,7 +55,7 @@ Mit Datenansichten können Sie die Schemaelement-Einstellungen spontan ändern, 
 
 * Sie können Formatierungen auf eine Metrik anwenden, beispielsweise zur Darstellung von Dezimalstellen, Uhrzeiten, Prozentwerten oder Währungen, zur Angabe der Dezimalstellen, zur grünen oder roten Darstellung von Aufwärtstrends oder zur Festlegung der Währungsoptionen.
 
-* Sie können eine Metrik oder Dimension auf Basis nur einiger Werte im Schemafeld erstellen. Wenn Sie beispielsweise eine Metrik für „Fehler“ haben möchten, können Sie eine Metrik aus dem Feld „Seitenname“ erstellen, aber nur Seiten einschließen, die das Wort `error` enthalten. Die auf diese Weise erstellte Fehlermetrik unterstützt Segmente, kann in berechnete Metriken eingefügt werden und arbeitet mit Attribution, Fluss, Fallout usw.
+* Sie können eine Metrik oder Dimension auf Basis nur einiger Werte im Schemafeld erstellen. Wenn Sie beispielsweise eine Metrik für „Fehler“ haben möchten, können Sie eine Metrik aus dem Feld „Seitenname“ erstellen, aber nur Seiten einschließen, die das Wort `error` enthalten. Die auf diese Weise erstellte Fehlermetrik unterstützt Segmente und kann in berechnete Metriken eingefügt sowie für Attribution, Fluss, Fallout usw. verwendet werden.
 
 * Bei Dimensionen können Sie automatisch nur bestimmte Werte in einem bestimmten Feld ein- oder ausschließen. Wenn beispielsweise eine Entwicklerin oder ein Entwickler einen falschen `dev mistake`-Wert an ein Feld gesendet hat, können Sie ihn mithilfe einer Ausschlussregel einfach aus Berichten ausschließen. Die Dimension verhält sich so, als hätte es den falschen Wert in den Daten niemals gegeben.
 

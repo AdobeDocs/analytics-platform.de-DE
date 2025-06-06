@@ -6,9 +6,9 @@ solution: Customer Journey Analytics
 feature: FAQ
 role: User
 source-git-commit: 220ebd7dbc3fa75d221690cd6e5828bd94395434
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2580'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 98%
 
 Adobe Customer Journey Analytics ist das Analyseprodukt der nächsten Generation. Dieser Artikel gibt Antworten auf häufig gestellte Fragen zu Customer Journey Analytics. Weitere Informationen finden Sie unter [Customer Journey Analytics-Funktionsunterstützung](/help/getting-started/aa-vs-cja/cja-aa.md).
 
-## 1. Voraussetzungen {#prerequisites}
+## &#x200B;1. Voraussetzungen {#prerequisites}
 
 +++**Benötige ich [!UICONTROL Private Device Graph] oder [!UICONTROL Device Coop] für [!UICONTROL Customer Journey Analytics]?**
 
@@ -39,7 +39,7 @@ Customer Journey Analytics enthält Funktionen zur [Datenvorbereitung](https://e
 +++
 
 
-## 2. Zuordnen von Daten {#stitching}
+## &#x200B;2. Zuordnen von Daten {#stitching}
 
 +++**Kann [!UICONTROL Customer Journey Analytics] Daten über Geräte oder über Datensätze hinweg zusammenfügen?**
 
@@ -76,7 +76,7 @@ Nach der ersten Aktivierung bietet Adobe eine Aufstockung von zugeordneten Daten
 
 +++
 
-## 3. Daten in [!UICONTROL Customer Journey Analytics] einbringen {#ingest}
+## &#x200B;3. Daten in [!UICONTROL Customer Journey Analytics] einbringen {#ingest}
 
 +++**Kann ich Daten aus verschiedenen [!UICONTROL Adobe Experience Platform]-Sandboxen in einer [!UICONTROL Customer Journey Analytics]-Verbindung kombinieren?**
 
@@ -87,7 +87,7 @@ Nein, Sie können nicht über Sandboxes hinweg auf Daten zugreifen. Sie können 
 
 +++**Wie werden in [!UICONTROL Customer Journey Analytics] Online-Daten mit Offline-Daten verbunden?**
 
-Solange die Personen-ID zwischen Datensätzen übereinstimmt, kann [!UICONTROL Customer Journey Analytics] Segmente, Attributionen, Flüsse, Fallout usw. über Datensätze hinweg verbinden.
+Solange die Personen-ID zwischen den Datensätzen übereinstimmt, kann [!UICONTROL Customer Journey Analytics] Segmente, Attribution, Fluss, Fallout usw. datensatzübergreifend verbinden.
 
 +++
 
@@ -128,7 +128,7 @@ Nein, Sie können eine beliebige ID verwenden, einschließlich eines Hash einer 
 +++
 
 
-## 4. Latenzaspekte {#latency}
+## &#x200B;4. Latenzaspekte {#latency}
 
 >[!NOTE]
 >
@@ -143,13 +143,13 @@ Adobe hat kürzlich die Verarbeitung von Daten in Customer Journey Analytics ge�
 * Ereignisdaten für den „aktuellen“ Tag werden als Live-Daten gestreamt. Alle Daten mit einer Ereigniszeit vor 11:59:59 pm (23:59:59 Uhr) am Vortag werden als Aufstockung behandelt.
 * Alle Ereignisdaten mit einem Zeitstempel, der älter als 24 Stunden ist (auch wenn sie sich im gleichen Batch wie neuere Daten befinden) werden als Aufstockung betrachtet und mit einer niedrigeren Priorität aufgenommen.
 
-## 5. Festlegen eines rollierenden Fensters für die Speicherung von [!UICONTROL Verbindungsdaten] {#data-retention}
+## &#x200B;5. Festlegen eines rollierenden Fensters für die Speicherung von [!UICONTROL Verbindungsdaten] {#data-retention}
 
-Mit der Einstellung [**[!UICONTROL Rollierendes Datenfenster aktivieren &#x200B;]**](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=de#create-connection) können Sie die Customer Journey Analytics-Datenspeicherung als rollierendes Fenster in Monaten (drei Monate, sechs Monate usw.) definieren. Sie wird auf einer [!UICONTROL Verbindungs]-Ebene, nicht auf einer [!UICONTROL Datensatz]-Ebene festgelegt. Die Datenaufbewahrung basiert auf Zeitstempeln für Ereignis-Datensätze und gilt nur für Ereignis-Datensätze. Für Profil- oder Lookup-Datensätze gibt es keine Datenspeicherungseinstellung, da keine entsprechenden Zeitstempel vorhanden sind.
+Mit der Einstellung [**[!UICONTROL Rollierendes Datenfenster aktivieren ]**](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=de#create-connection) können Sie die Customer Journey Analytics-Datenspeicherung als rollierendes Fenster in Monaten (drei Monate, sechs Monate usw.) definieren. Sie wird auf einer [!UICONTROL Verbindungs]-Ebene, nicht auf einer [!UICONTROL Datensatz]-Ebene festgelegt. Die Datenaufbewahrung basiert auf Zeitstempeln für Ereignis-Datensätze und gilt nur für Ereignis-Datensätze. Für Profil- oder Lookup-Datensätze gibt es keine Datenspeicherungseinstellung, da keine entsprechenden Zeitstempel vorhanden sind.
 
 Der Hauptvorteil besteht darin, dass Sie nur Daten speichern oder Berichte dazu erstellen, die anwendbar und nützlich sind, und ältere Daten löschen, die nicht mehr nützlich sind. Dies hilft Ihnen, Ihre vertraglichen Beschränkungen einzuhalten und das Risiko bezüglich Kostendeckung zu reduzieren.
 
-## 6. Auswirkungen des Löschens von Datenkomponenten {#deletion}
+## &#x200B;6. Auswirkungen des Löschens von Datenkomponenten {#deletion}
 
 Beim Löschen von Daten sollten Sie sich über sechs Komponententypen Gedanken machen: Sandbox, Schema, Datensatz, Verbindung, Datenansicht und Workspace-Projekt. Im Folgenden sind einige Szenarien für das Löschen der jeweiligen Komponenten aufgeführt:
 
@@ -164,7 +164,7 @@ Beim Löschen von Daten sollten Sie sich über sechs Komponententypen Gedanken m
 | Löschen einer Verbindung in [!UICONTROL Customer Journey Analytics] | Eine Fehlermeldung weist auf Folgendes hin:<ul><li>Alle für die gelöschte Verbindung erstellten Datenansichten werden nicht mehr funktionieren.</li><li> Ebenso funktionieren alle Workspace-Projekte nicht mehr, die von den Datenansichten der gelöschten Verbindung abhängig sind.</li></ul> |
 | Löschen einer Datenansicht in [!UICONTROL Customer Journey Analytics] | Eine Fehlermeldung weist darauf hin, dass dann alle Workspace-Projekte, die von dieser gelöschten Datenansicht abhängen, nicht mehr funktionieren. |
 
-## 7. Überlegungen zum Zusammenführen von Report Suites in Customer Journey Analytics {#merge-reportsuite}
+## &#x200B;7. Überlegungen zum Zusammenführen von Report Suites in Customer Journey Analytics {#merge-reportsuite}
 
 Wenn Sie planen, Adobe Analytics-Daten über den [Adobe Analytics-Quell-Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=de) zu erfassen, sollten Sie diese Auswirkungen beim Zusammenführen von zwei oder mehr Adobe Analytics-Report Suites berücksichtigen.
 
@@ -177,7 +177,7 @@ Wenn Sie planen, Adobe Analytics-Daten über den [Adobe Analytics-Quell-Connecto
 | [!UICONTROL Persistenz] | [Persistenz](../data-views/component-settings/persistence.md) erstreckt sich über Report Suites hinweg, was sich auf [!UICONTROL Segmente], [!UICONTROL Attribution] usw. auswirkt. Zahlen werden möglicherweise nicht richtig addiert. |
 | [!UICONTROL Klassifizierungen] | [!UICONTROL Klassifizierungen] werden beim Zusammenführen von Report Suites nicht automatisch dedupliziert. Wenn Sie mehrere Klassifizierungsdateien in einem einzigen [!UICONTROL Suchdatensatz] kombinieren, können Probleme auftreten. |
 
-## 8. [!UICONTROL Adobe Analytics]-Komponenten
+## &#x200B;8. [!UICONTROL Adobe Analytics]-Komponenten
 
 +++**Kann ich [!UICONTROL Zielgruppen] von [!DNL Customer Journey Analytics] für Experience Platform Real-Time CDP oder andere Experience Cloud-Anwendungen freigeben/veröffentlichen?**
 
@@ -215,17 +215,17 @@ Das hängt von Ihrem Anwendungsfall ab. Bitte wenden Sie sich an Ihr Adobe-Accou
 
 +++
 
-## 9. Schätzen der Verbindungsgröße {#estimate-size}
+## &#x200B;9. Schätzen der Verbindungsgröße {#estimate-size}
 
-Siehe [Verwendung von Verbindungen](/help/connections/manage-connections.md#usage).
+Siehe [Nutzung von Verbindungen](/help/connections/manage-connections.md#usage).
 
-## 10. Über die Limits bei der Verwendung {#overage}
+## &#x200B;10. Über die Limits bei der Verwendung {#overage}
 
 Nutzungsbeschränkungen werden von Adobe regelmäßig überwacht und durchgesetzt. „Datenzeilen“ sind die täglichen durchschnittlichen Datenzeilen, die innerhalb von Customer Journey Analytics für die Analyse verfügbar sind.
 
 Gehen wir beispielsweise davon aus, Ihr Vertrag berechtigt Sie zu einer Million Datenzeilen. Angenommen, Sie laden am 1. Tag der Verwendung von Customer Journey Analytics zwei Millionen Datenzeilen hoch. Am 2. Tag löschen Sie 1 Million Zeilen und halten Ihre Nutzung für den Rest Ihrer Lizenzlaufzeit auf diesem festgelegten Maximum (d. h. eine Million Datenzeilen). Abhängig von Ihren Vertragsbedingungen können Ihnen für Tag 1 anteilige zusätzliche Nutzungsgebühren entstehen, da Sie die Lizenzberechtigung für „Datenzeilen“ überschritten haben.
 
-## 11. Diskrepanzen bei Daten erkennen {#discrepancies}
+## &#x200B;11. Diskrepanzen bei Daten erkennen {#discrepancies}
 
 In einigen Fällen kann es vorkommen, dass die Gesamtanzahl der von Ihrer Verbindung erfassten Ereignisse sich von der Anzahl der Zeilen im Datensatz in [!UICONTROL Adobe Experience Platform] unterscheidet. In diesem Beispiel enthält der Datensatz „B2B Impression“ 7650 Zeilen, der Datensatz enthält jedoch 3830 Zeilen in [!UICONTROL Adobe Experience Platform]. Es kann mehrere Gründe für Diskrepanzen geben. Die folgenden Schritte können für die Diagnose hilfreich sein:
 
@@ -238,7 +238,7 @@ In einigen Fällen kann es vorkommen, dass die Gesamtanzahl der von Ihrer Verbin
 Weitere Informationen über die [Implikationen beim Löschen von Datensätzen und Verbindungen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=de#implications-of-deleting-data-components) erhalten Sie in [!UICONTROL Customer Journey Analytics] und [!UICONTROL Adobe Experience Platform].
 
 
-## 12. Regionale Datenerfassung
+## &#x200B;12. Regionale Datenerfassung
 
 Adobe Experience Cloud verwendet die regionale Datenerfassung (Regional Data Collection, RDC), damit Interaktionen zwischen Ihren Besuchenden und Adobe- und Nicht-Adobe-Lösungen so nahe wie möglich an Ihren Besuchenden stattfinden. Sobald Daten regional in einem Datenerfassungszentrum (DCC, auch als Edge-Site bezeichnet, Teil des Platform Edge-Netzwerks) erfasst wurden, werden sie über eine sichere Verbindung zu den relevanten Lösungen weitergeleitet, die auf der Konfiguration Ihres Datenstroms und/oder der Ereignisweiterleitung basieren.
 

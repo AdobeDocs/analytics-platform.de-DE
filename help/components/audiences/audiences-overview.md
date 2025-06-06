@@ -5,9 +5,9 @@ exl-id: 30404bfc-0ee7-4f01-842c-7e6156dc0b45
 feature: Audiences
 role: User, Admin
 source-git-commit: be062e350a8c1989be41aeb2774471a3fe1bf524
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '435'
-ht-degree: 76%
+ht-degree: 100%
 
 ---
 
@@ -18,10 +18,10 @@ Sie können jetzt in Customer Journey Analytics verfügbare Zielgruppen erstelle
 Das Veröffentlichen von Zielgruppen bietet die Möglichkeit, die in Customer Journey Analytics vorhandenen Einblicke zu aktivieren und entsprechende Maßnahmen zu ergreifen. Zu diesen Maßnahmen zählen:
 
 * Verwenden der Zielgruppe für eine Journey in Adobe Journey Optimizer.
-Weitere Informationen zur Verwendung von Zielgruppen, die in Experience Platform veröffentlicht werden, finden Sie unter [Erste Schritte mit Zielgruppen](https://experienceleague.adobe.com/de/docs/journey-optimizer/using/audiences-profiles-identities/audiences/about-audiences) in der Dokumentation zu Journey Optimizer.
+Weitere Informationen zum Verwenden von in Experience Platform veröffentlichten Zielgruppen finden Sie in der Dokumentation zu Journey Optimizer unter [Erste Schritte mit Zielgruppen](https://experienceleague.adobe.com/de/docs/journey-optimizer/using/audiences-profiles-identities/audiences/about-audiences).
 * Exportieren der Zielgruppe zu einem Drittanbieter über ein Experience Platform-Ziel.
 * Anreichern des Echtzeit-Kundenprofils mit nützlichen Attributen, die aus ereignisbasierten Daten in Customer Journey Analytics abgeleitet wurden.
-* Dies alles geschieht mit minimaler Latenz nach der Veröffentlichung der Zielgruppe.
+* Ausführen all dieser Vorgänge mit minimaler Latenz nach der Veröffentlichung der Zielgruppe.
 Weitere Informationen finden Sie unter [Latenzaspekte](/help/components/audiences/publish.md#latency-considerations) in [Erstellen und Veröffentlichen von Zielgruppen](/help/components/audiences/publish.md).
 * Veröffentlichen einmaliger oder wiederkehrender Zielgruppen.
 
@@ -31,9 +31,9 @@ Die Zielgruppen, die Sie in Customer Journey Analytics erstellen, müssen nicht 
 
 **Zielgruppe**: Ein Satz oder eine Liste von Identitäten, die sowohl einen Namespace als auch eine spezifische ID für diesen Namespace haben. Zielgruppen können aus Adobe Experience Platform und Anwendungen, die darauf aufsetzen (z. B. Customer Journey Analytics), extrahiert werden. Zielgruppen können gemischte Namespaces enthalten.
 
-**Segment**: Ein Regelsatz, mit dem bei der Auswertung eines Datensatzes über einen bestimmten Zeitraum eine Teilmenge von Daten erzeugt wird. Ein Segment kann beim Erstellen einer Zielgruppe verwendet werden, wenn es mit anderen unterstützenden Services kombiniert wird. Segmente werden in Customer Journey Analytics definiert und verwaltet.
+**Segment**: Ein Regelsatz, mit dem bei der Auswertung eines Datensatzes über einen bestimmten Zeitraum eine Teilmenge von Daten erzeugt wird. Bei der Erstellung einer Zielgruppe kann ein Segment verwendet werden, wenn auch andere unterstützende Services genutzt werden. Segmente werden in Customer Journey Analytics definiert und verwaltet.
 
-## Zugriffsberechtigungen
+## Berechtigungen
 
 * Admins erhalten automatisch die Berechtigung **[!UICONTROL Zielgruppenveröffentlichung]** in Adobe Admin Console.
 

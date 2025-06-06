@@ -1,24 +1,24 @@
 ---
-title: Dimensionen – Übersicht
-description: Erfahren Sie, was Dimensionen sind und wie sie in Customer Journey Analytics verwendet werden
+title: Dimensionen – Überblick
+description: Informationen dazu, was Dimensionen sind und wie sie in Customer Journey Analytics verwendet werden
 feature: Dimensions
 exl-id: 3592808b-17fd-401d-ab12-ff0308b21f45
 source-git-commit: 6cabedc5ed58dac450577fc3505be5f95b7a959d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '235'
-ht-degree: 25%
+ht-degree: 100%
 
 ---
 
-# Dimensionen – Übersicht
+# Dimensionen – Überblick
 
-Dimensionen sind ein Komponententyp in Customer Journey Analytics, der zur Datenanalyse verwendet wird. Sie verwenden Dimensionen beispielsweise beim Erstellen von Berichten in [Analysis Workspace](/help/analysis-workspace/home.md) oder in [Report Builder](/help/report-builder/rb-overview.md).
+Dimensionen sind ein Komponententyp in Customer Journey Analytics, der zur Datenanalyse verwendet wird. Sie verwenden Dimensionen beispielsweise beim Erstellen von Berichten in [Analysis Workspace](/help/analysis-workspace/home.md) oder im [Report Builder](/help/report-builder/rb-overview.md).
 
-Customer Journey Analytics-Dimensionen sind von unbegrenztem Typ. Werte können numerisch, Text, Objekte, Listen oder Mischungen aus allen sein.
+Customer Journey Analytics-Dimensionen sind unbegrenzt. Werte können Zahlen, Texte, Objekte und Listen aufweisen oder aus einer Kombination dieser Elemente bestehen. 
 
 Ein Basisbericht in Customer Journey Analytics zeigt Zeilen von Dimensionen (häufig Zeichenfolgenwerte) in einer Metrikspalte (häufig numerische Werte) an.
 
-Wenn Sie beispielsweise die Dimension Seite mit der Metrik Personen kombinieren, erhalten Sie einen Rangbericht, der Ihre am häufigsten besuchten Seiten nach Personen auflistet:
+Wenn Sie beispielsweise die Dimension „Seite“ mit der Metrik „Personen“ kombinieren, erhalten Sie einen Rangbericht, der Ihre am häufigsten besuchten Seiten nach Personen anzeigt:
 
 | Seite | Personen |
 | --- | ---: |
@@ -33,9 +33,9 @@ Jede Dimension stellt einen anderen Teil oder eine andere Facette Ihrer Site dar
 
 ## Erstellen von Dimensionen
 
-Customer Journey Analytics-Administratoren können [Dimensionen in einer Datenansicht erstellen](/help/data-views/create-dataview.md#components).
+Customer Journey Analytics-Admins können [Dimensionen in einer Datenansicht erstellen](/help/data-views/create-dataview.md#components).
 
-## Standardabmessungen
+## Standarddimensionen
 
 Wenn Sie eine Datenansicht erstellen, werden die folgenden Komponenten standardmäßig als Dimensionen zu Ihrer Datenansicht hinzugefügt:
 
@@ -44,10 +44,10 @@ Wenn Sie eine Datenansicht erstellen, werden die folgenden Komponenten standardm
 
 ## Hinzufügen von Dimensionsbeschreibungen
 
-Customer Journey Analytics-Admins können Beschreibungen für Dimensionen und andere Komponenten entweder in der Datenansicht oder direkt in Analysis Workspace hinzufügen. Informationen zum Hinzufügen von Beschreibungen zu Dimensionen finden Sie unter [Hinzufügen von Komponentenbeschreibungen](/help/components/add-component-descriptions.md).
+Customer Journey Analytics-Admins können Beschreibungen für Dimensionen und andere Komponenten entweder innerhalb der Datenansicht oder direkt in Analysis Workspace hinzufügen. Informationen zum Hinzufügen von Beschreibungen zu Dimensionen finden Sie unter [Hinzufügen von Komponentenbeschreibungen](/help/components/add-component-descriptions.md).
 
 >[!MORELIKETHIS]
 >
->[Entdecken Sie mit der Funktion „Ereignistiefe“ tiefere Kundeneinblicke](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/discover-deeper-customer-insights-with-adobe-customer-journey/ba-p/753947?profile.language=de#M576)
+>[Entdecken Sie mit der Funktion „Ereignistiefe“ detailliertere Kundenerkenntnisse](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/discover-deeper-customer-insights-with-adobe-customer-journey/ba-p/753947?profile.language=de#M576)
 >
 

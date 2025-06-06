@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: 7f67c497-386b-4442-a502-6b492f35c6e6
 source-git-commit: 65b4339b4a1b27c41cfe442482a54661989d704b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '737'
-ht-degree: 80%
+ht-degree: 100%
 
 ---
 
@@ -15,11 +15,11 @@ ht-degree: 80%
 
 Diese technische Dokumentation bietet Hilfe zur Selbsthilfe für Customer Journey Analytics. Mit Customer Journey Analytics können Sie Ihre Kundendaten von beliebigen Kanälen (sowohl online als auch offline) in Adobe Experience Platform importieren. Anschließend haben Sie die Möglichkeit, diese Daten so zu analysieren wie heute Ihre vorhandenen digitalen Daten mit Analysis Workspace.
 
-Mit Customer Journey Analytics können Sie steuern, wie Sie Ihre Online- und Offline-Daten in Analysis Workspace mit einer beliebigen Kunden-ID verbinden. So können Sie Attributionen, Segmente, Fluss, Fallout usw. vornehmen. kundendatenübergreifend.
+Mit Customer Journey Analytics können Sie steuern, wie Sie Ihre Online- und Offline-Daten in Analysis Workspace mit jeder beliebigen Kunden-ID verbinden. Dadurch können Sie Aufgaben im Zusammenhang mit Attribution, Segmenten, Flüssen und Fallouts usw. durchführen. kundendatenübergreifend.
 
 ## Neue Funktionen
 
-Werfen Sie einen Blick auf die neuesten Verbesserungen in Customer Journey Analytics und die Dokumentation! Eine umfassende Liste der Funktionen, Verbesserungen und Fehlerbehebungen finden Sie in den detaillierten [Versionshinweisen](../release-notes/latest.md). Besuchen Sie die [Seite mit Dokumentationsaktualisierungen](../release-notes/doc-changes.md), um über die neuesten Dokumentationsaktualisierungen auf dem Laufenden zu bleiben.
+Werfen Sie einen Blick auf die neuesten Verbesserungen in Customer Journey Analytics und die Dokumentation! Eine umfassende Liste der Funktionen, Verbesserungen und Fehlerbehebungen finden Sie in den detaillierten [Versionshinweisen](../release-notes/latest.md). Besuchen Sie die [Seite zu den Dokumentationsaktualisierungen](../release-notes/doc-changes.md), um über die neuesten Änderungen an der Dokumentation auf dem Laufenden zu bleiben.
 
 >[!BEGINTABS]
 
@@ -31,14 +31,14 @@ Mit Content Analytics können Sie schnell und einfach große Mengen von Inhaltsd
 
 >[!TAB Ereignistiefe]
 
-Die Ereignistiefe ist eine neue Standarddimension und bietet neue Möglichkeiten, die Positionierung von Ereignissen in Kundensitzungen zu messen und besser zu verstehen. Die Dimension „Ereignistiefe“ ermöglicht eine detaillierte Verfolgung und Analyse, wo im sequenziellen Fluss von Benutzerinteraktionen innerhalb einer Sitzung bestimmte Ereignisse auftreten.
+Die Ereignistiefe ist eine neue Standarddimension und bietet neue Möglichkeiten, um die Positionierung von Ereignissen in Kundensitzungen zu messen und besser zu verstehen. Die Dimension „Ereignistiefe“ ermöglicht es, detailliert zu tracken und zu analysieren, wo bestimmte Ereignisse im sequenziellen Fluss der Benutzerinteraktionen innerhalb einer Sitzung auftreten.
 
 [![Bild](assets/learn-more-button.svg)](/help/components/dimensions/overview.md#standard-dimensions)
 
 
 >[!TAB Freigegebene Metriken und Dimensionen]
 
-Freigegebene Metriken und Dimensionen bieten einen zentralen Speicherort zum Verwalten von Dimensionen und Metriken, die in einer beliebigen Anzahl von Datenansichten verwendet werden können. Diese Komponenten sind besonders für Organisationen nützlich, die mehrere Datenansichten verwenden, insbesondere wenn diese Datenansichten gemeinsame Komponenteneinstellungen haben.
+Freigegebene Metriken und Dimensionen bieten einen zentralen Speicherort zum Verwalten von Dimensionen und Metriken, die in einer beliebigen Anzahl von Datenansichten verwendet werden können. Diese Komponenten sind besonders für Organisationen nützlich, die mehrere Datenansichten nutzen, insbesondere wenn diese Datenansichten gemeinsame Komponenteneinstellungen aufweisen.
 
 [![Bild](assets/learn-more-button.svg)](/help/data-views/shared-metrics-dimensions/smd-overview.md)
 
@@ -185,4 +185,4 @@ Lernen Sie die Unterschiede zwischen Customer Journey Analytics und Adobe Analyt
 
 
 <table style="table-layout:auto" class="tablelayout-is-fixed"><tbody><tr style="border: 0;"><td><img src="./assets/newsletter.png"></td><td>
-<b>Bleiben Sie auf dem Laufenden, tragen Sie zur Community bei und verbessern Sie Ihr Erlebnis mit Customer Journey Analytics!</b><br>Besuchen Sie die Adobe Analytics-Community, um die Funktionalität mit anderen Benutzenden zu erörtern. <a href="https://experienceleaguecommunities.adobe.com/t5/adobe-analytics/ct-p/adobe-analytics-community?profile.language=de&lang=de">Werden Sie noch heute Teil der Community!</a></td></tr></tbody></table>
+<b>Bleiben Sie auf dem Laufenden, tragen Sie zur Community bei und verbessern Sie Ihr Erlebnis mit Customer Journey Analytics!</b><br>Besuchen Sie die Adobe Analytics-Community, um die Funktionalität mit anderen Benutzenden zu erörtern. <a href="https://experienceleaguecommunities.adobe.com/t5/adobe-analytics/ct-p/adobe-analytics-community?lang=de">Werden Sie noch heute Teil der Community!</a></td></tr></tbody></table>

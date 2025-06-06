@@ -6,9 +6,9 @@ feature: Guided Analysis
 keywords: Produktanalysen
 role: User
 source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '439'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -62,7 +62,7 @@ Die Hauptterminologie der geführten Analyse und von [Analysis Workspace](../ana
 
 * **Analysis Workspace ist ein dimensionszentriertes Erlebnis.** Die Tabellen bestehen normalerweise aus dimensionalen Zeilen, während Spalten normalerweise Metriken sind. Segmente können sowohl in Zeilen als auch in Spalten angewendet werden, um die gewünschten Daten zu erhalten.
 
-* **Die geführte Analyse ist ein Ereignis und ein benutzerzentriertes Erlebnis.** jede Analyse beginnt mit der Auswahl von Ereignissen, dann können Dimensionen und Segmente hinzugefügt werden, um diese Ereignisdaten zu verfeinern.
+* **Die geführte Analyse ist ein Ereignis und ein benutzerzentriertes Erlebnis.** Jede Analyse beginnt mit der Auswahl von Ereignissen. Anschließend können Dimensionen und Segmente hinzugefügt werden, um diese Ereignisdaten zu verfeinern.
 
 ![Ansichten in Analysis Workspace und geführten Analysen](assets/structure.png){style="border:1px solid gray"}
 

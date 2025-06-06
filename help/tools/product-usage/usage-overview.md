@@ -3,9 +3,9 @@ title: Produktnutzungsübersicht
 description: Zeigen Sie Erkenntnisse und Berichte dazu an, wie Ihre Organisation Customer Journey Analytics nutzt.
 exl-id: 3806ca7c-ee90-4222-9ffd-2e791c4550e5
 source-git-commit: a4615907f61b4d63393a9481fdd7b45b7b9b6262
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '591'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -129,8 +129,8 @@ Die Produktnutzung verfolgt nicht einzelne Projektkomponenten, wenn ein Projekt 
 
 ## Verfügbare Vorlage
 
-Es ist eine [Adobe](/help/analysis-workspace/templates/use-templates.md)Vorlage verfügbar, die die automatisch aus dieser Funktion generierten Komponenten verwendet.
+Es ist eine [Adobe-Vorlage](/help/analysis-workspace/templates/use-templates.md) verfügbar, die die automatisch mit dieser Funktion generierten Komponenten verwendet.
 
-**[!UICONTROL Adobe]** > **[!UICONTROL Sonstige]** > **[!UICONTROL Produktverwendungsübersicht]**
+**[!UICONTROL Adobe-Vorlagen]** > **[!UICONTROL Sonstige]** > **[!UICONTROL Produktnutzungsübersicht]**
 
-Wählen Sie die Datenansicht aus, die automatisch von der Produktnutzung im Datenansichtsselektor erstellt wurde, und wählen Sie dann die Vorlage **[!UICONTROL Produktverwendungsübersicht]**. Wählen Sie **[!UICONTROL Vorschau]** aus, um zu sehen, welche Bedienfelder die Vorlage verwendet, und erfahren Sie mehr über ideale Anwendungsfälle, oder wählen Sie **[!UICONTROL Vorlage verwenden]** aus, um sie in Analysis Workspace zu öffnen.
+Wählen Sie die Datenansicht, die automatisch von der Funktion „Produktnutzung“ in der Datenansicht-Auswahlhilfe erstellt wurde, und dann die Vorlage **[!UICONTROL Produktnutzungsübersicht]** aus. Wählen Sie **[!UICONTROL Vorschau]**, um zu sehen, welche Panels die Vorlage verwendet, und mehr über ideale Anwendungsfälle zu erfahren, oder **[!UICONTROL Vorlage verwenden]** aus, um die Vorlage in Analysis Workspace zu öffnen.

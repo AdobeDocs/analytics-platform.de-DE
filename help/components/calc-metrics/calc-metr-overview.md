@@ -1,17 +1,17 @@
 ---
-title: Übersicht über berechnete Metriken
-description: Erfahren Sie mehr über segmentierte Metriken, die zur Berichtslaufzeit abgeleitet werden.
+title: Überblick über berechnete Metriken
+description: Erfahren Sie mehr über segmentierte Metriken, die zum Zeitpunkt der Berichtserstellung abgeleitet werden.
 feature: Calculated Metrics
 exl-id: c9205c95-8b01-4177-a89c-038886f41d3d
 role: User
 source-git-commit: ce18545a0ee597ee448fa55d83bdece54c7c849c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '212'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
-# Übersicht über berechnete Metriken
+# Überblick über berechnete Metriken
 
 Berechnete Metriken sind benutzerdefinierte Metriken, die Sie aus vorhandenen Metriken erstellen können. Berechnete Metriken bieten eine flexible Möglichkeit zum Erstellen, Verwalten und Kuratieren benutzerdefinierter Metriken, mit denen Sie Ihre Daten analysieren können, ohne Ihre Implementierung ändern zu müssen.
 
@@ -19,7 +19,7 @@ Berechnete Metriken sind benutzerdefinierte Metriken, die Sie aus vorhandenen Me
 
 >[!BEGINSHADEBOX]
 
-Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Einführung in berechnete Metriken](https://video.tv.adobe.com/v/33672/?quality=12&learn=on&captions=ger){target="_blank"} finden Sie ein Demovideo.
+Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Einführung in berechnete Metriken](https://video.tv.adobe.com/v/31787/?quality=12&learn=on){target="_blank"} finden Sie ein Demovideo.
 
 >[!ENDSHADEBOX]
 

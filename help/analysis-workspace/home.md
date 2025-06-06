@@ -7,9 +7,9 @@ exl-id: 9075518e-54fe-49a6-9601-aa9468187b8f
 solution: Customer Journey Analytics
 role: User
 source-git-commit: 9f954709a3dde01b4e01581e34aece07fe0256b1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1469'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ Mit Analysis Workspace können Sie schnell Analysen erstellen, um Erkenntnisse z
 
 >[!BEGINSHADEBOX]
 
-Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Analysis Workspace – Übersicht](https://video.tv.adobe.com/v/35525/?quality=12&learn=on&captions=ger){target="_blank"} finden Sie ein Demovideo.
+Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Analysis Workspace – Übersicht](https://video.tv.adobe.com/v/26266/?quality=12&learn=on){target="_blank"} finden Sie ein Demovideo.
 
 >[!ENDSHADEBOX]
 
@@ -59,10 +59,10 @@ Die Funktionen können auch über das Workspace-Menü sowie über Tastaturbefehl
 Beachten Sie, dass auf Ihrer Tastatur möglicherweise die folgenden Symbole verwendet werden:
 
 - **⇧** für die **[!UICONTROL *Umschalttaste *]**
-- **⌘** für **[!UICONTROL *cmd *]**(Befehl).
-- **⌃** für **[!UICONTROL *Strg *]**(Kontrolle).
-- **⌥** für **[!UICONTROL *opt *]**(option).
-- **⎇** für **[!UICONTROL *alt *]**(alternativ).
+- **⌘** für die **[!UICONTROL *Befehlstaste *]**.
+- **⌃** für die **[!UICONTROL *Strg-Taste *]**.
+- **⌥** für die **[!UICONTROL *Wahltaste *]**.
+- **⎇** für die **[!UICONTROL *Alt-Taste *]**.
 
 Eine Übersicht über die verfügbaren Menüs finden Sie in den nachfolgenden Tabellen.
 
@@ -106,7 +106,7 @@ Eine Übersicht über die verfügbaren Menüs finden Sie in den nachfolgenden Ta
 
 | **[!UICONTROL Komponenten]** | Mac-Tastaturbefehl | Windows-Tastaturbefehl | Beschreibung |
 |---|---|---|---|
-| **[!UICONTROL Segment erstellen…]** | **[!UICONTROL *Umschalt+Befehlstaste+E *]** | **[!UICONTROL *Umschalt+Strg+E *]** | Erstellen Sie ein neues [Segment](/help/components/filters/create-filters.md). |
+| **[!UICONTROL Segment erstellen …]** | **[!UICONTROL *Umschalt+Befehlstaste+E *]** | **[!UICONTROL *Umschalt+Strg+E *]** | Erstellen eines neuen [Segments](/help/components/filters/create-filters.md). |
 | **[!UICONTROL Metrik erstellen…]** | **[!UICONTROL *Umschalt+Befehlstaste+C *]** | **[!UICONTROL *Umschalt+Strg+C *]** | Erstellen einer neuen [berechneten Metrik](/help/components/calc-metrics/calc-metr-overview.md). |
 | **[!UICONTROL Datumsbereich erstellen]** | **[!UICONTROL *Umschalt+Befehlstaste+D *]** | **[!UICONTROL *Umschalt+Strg+D *]** | Erstellen eines neuen [Datumsbereichs](/help/components/date-ranges/overview.md). |
 | **[!UICONTROL Anmerkung erstellen...]** | **[!UICONTROL *Umschalt+Befehlstaste+O *]** | **[!UICONTROL *Umschalt+Strg+O *]** | Erstellen einer neuen [Anmerkung](/help/components/annotations/overview.md) |

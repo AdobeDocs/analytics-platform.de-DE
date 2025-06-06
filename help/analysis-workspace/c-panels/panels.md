@@ -5,9 +5,9 @@ feature: Panels
 exl-id: be3e34a0-06c1-4200-b965-96084c2912fd
 role: User
 source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2129'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -77,7 +77,7 @@ Sie haben folgende Möglichkeiten:
 
 ## Datenansicht
 
-Jedes Bedienfeld ist mit einer [Datenansicht](/help/data-views/data-views.md) verknüpft, die durch ![Daten](/help/assets/icons/Data.svg) **[!UICONTROL *Name der Datenansicht *]**&#x200B;im Dropdown-Menü oben rechts im Bedienfeld identifiziert wird.
+Jedes Panel ist mit einer [Datenansicht](/help/data-views/data-views.md) verknüpft, die durch den ![Daten](/help/assets/icons/Data.svg) **[!UICONTROL *Namen der Datenansicht *]**im Dropdown-Menü oben rechts im Panel identifiziert wird.
 
 Wenn Sie ein leeres Workspace-Projekt erstellen, ist die Standarddatenansicht für das erste Panel die Datenansicht, an der Sie zuletzt in Customer Journey Analytics gearbeitet haben.
 
@@ -85,7 +85,7 @@ Wenn Sie ein neues Panel erstellen, basiert die Standarddatenansicht auf der Dat
 
 >[!IMPORTANT]
 >
->Die ausgewählte Datenansicht bestimmt, welche Dimensionen, Metriken und Segmente für die Erstellung von Visualisierungen in einem Bedienfeld verfügbar sind.
+>Die ausgewählte Datenansicht legt fest, welche Dimensionen, Metriken und Segmente zum Erstellen von Visualisierungen in einem Panel verfügbar sind.
 >
 >
 >Wenn Sie eine Datenansicht für ein Panel wechseln, sind einige Komponenten in dieser neuen Datenansicht möglicherweise nicht verfügbar. Diese Änderung kann dazu führen, dass Ihre Visualisierung nicht ordnungsgemäß gerendert wird. Möglicherweise werden Warnungen wie diese angezeigt:
@@ -107,7 +107,7 @@ Der Panel-Kalender steuert den Reporting-Datumsbereich für Tabellen und Visuali
 ![Das Kalenderfenster mit dem ausgewählten Datumsbereich.](assets/panel-calendar.png)
 
 1. Wählen Sie einen Datumsbereich aus, indem Sie zuerst das Startdatum und dann das Enddatum auswählen.
-Alternativ können Sie eine **[!UICONTROL Vorgabe]** aus dem Dropdown-Menü [!UICONTROL *Vorgabe auswählen*] auswählen.
+Alternativ können Sie eine **[!UICONTROL Voreinstellung]** aus dem Dropdown-Menü [!UICONTROL *Voreinstellung auswählen*] auswählen.
 
 1. Wählen Sie optional **[!UICONTROL Erweiterte Einstellungen einblenden]** für Folgendes aus:
 
@@ -136,7 +136,7 @@ Wählen Sie **[!UICONTROL Auf alle Panels anwenden]** aus, um den Datumsbereich 
 
 Mithilfe des Ablegebereichs eines Bedienfelds können Sie Segment- und Dropdown-Segmente auf alle Tabellen und Visualisierungen innerhalb eines Bedienfelds anwenden. Sie können ein oder mehrere Segmente auf ein Bedienfeld anwenden.
 
-### Segmente 
+### Segmente
 
 Ziehen Sie beliebige Segmente per Drag-and-Drop aus dem linken Bedienfeld in den Ablagebereich des Bedienfelds, um das Bedienfeld zu segmentieren.  Wiederholen Sie diesen Vorgang, um dem Bedienfeld weitere Segmente hinzuzufügen. Segmente werden oben im Bedienfeld nebeneinander angezeigt.
 
@@ -149,13 +149,13 @@ Komponenten, die keine Segmente sind, können auch direkt in den Ablagebereich g
 
 Weitere Informationen finden Sie unter [Schnellsegmente](/help/components/filters/quick-filters.md).
 
-![Ad-hoc-Segmente, die veröffentlicht und in der Ablagefläche abgelegt werden](assets/adhoc-segment-filter.png)
+![Ad-hoc-Segmente, die veröffentlicht und im Ablegebereich abgelegt werden](assets/adhoc-segment-filter.png)
 
 ### Dropdown-Segmente
 
 >[!BEGINSHADEBOX]
 
-Siehe ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Dropdown-Segmente](https://video.tv.adobe.com/v/327486?quality=12&learn=on&captions=ger){target="_blank"} für ein Demovideo.
+Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Dropdown-Segmente](https://video.tv.adobe.com/v/23877?quality=12&learn=on){target="_blank"} finden Sie ein Demovideo.
 
 {{videoaa}}
 
@@ -168,7 +168,7 @@ Statische Dropdown-Segmente ermöglichen Ihnen eine kontrollierte Interaktion mi
 
 Statische Dropdown-Segmente können auch verwendet werden, um mehrere Projekte in einem Projekt zu bündeln. Wenn Sie beispielsweise mehrere Versionen desselben Projekts mit unterschiedlichen Ländersegmenten verwenden, können Sie alle Versionen in einem Projekt zusammenfassen und ein Dropdown-Segment „Land“ hinzufügen.
 
-![Statische Dropdown-Segmente mit hervorgehobenem Segment „Direkt“ im Marktkanal. ](assets/dropdown-filter-intro.png)
+![Statische Dropdown-Segmente mit hervorgehobenem Segment „Direkt“ für den Marktkanal ](assets/dropdown-filter-intro.png)
 
 ##### Erstellen von statischen Dropdown-Segmenten
 
@@ -200,7 +200,7 @@ Benutzende können das Dropdown-Segmentmenü auf eine der folgenden Arten verwen
 
 #### Dynamische Dropdown-Segmente
 
-Dynamische Dropdown-Segmente ermöglichen es Ihnen, verfügbare Werte basierend auf Daten innerhalb des Berichtsbereichs des Bedienfelds und Werten in anderen Dropdown-Segmenten zu bestimmen. Sie können beispielsweise zwei dynamische Dropdown-Filter mit einer Dimension „Länder“ und einer Dimension „Städte“ erstellen. Wenn Sie ein Land aus dem Dropdownmenü **[!UICONTROL Länder]** auswählen, wird das **[!UICONTROL Städte]**-Dropdown-Menü dynamisch angepasst, sodass nur Städte innerhalb dieses Landes angezeigt werden.
+Dynamische Dropdown-Segmente ermöglichen es Ihnen, verfügbare Werte basierend auf Daten innerhalb des Berichtsbereichs des Bedienfelds und Werten in anderen Dropdown-Segmenten zu bestimmen. Sie können beispielsweise zwei dynamische Dropdown-Filter mit einer Dimension „Länder“ und einer Dimension „Städte“ erstellen. Wenn Sie ein Land aus dem Dropdown-Menü **[!UICONTROL Länder]** auswählen, wird das Dropdown-Menü **[!UICONTROL Städte]** dynamisch angepasst, sodass nur Städte in diesem Land angezeigt werden.
 
 Dieses Konzept gilt für alle Dimensionen. Es sind nur Dimensionselemente, die innerhalb des Datumsbereichs des Bedienfelds angezeigt werden, sowie ausgewählte Segmente sichtbar.  Die in statischen Dropdown-Segmenten ausgewählten Dimensionen wirken sich auf die verfügbaren Werte in dynamischen Dropdown-Segmenten aus. Das Gegenteil ist jedoch nicht der Fall: In dynamischen Dropdown-Segmenten ausgewählte Dimensionselemente wirken sich nicht auf die verfügbaren Werte in statischen Dropdown-Segmenten aus.
 

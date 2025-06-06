@@ -5,9 +5,9 @@ feature: Workspace Basics
 role: User
 exl-id: cc3d3ac9-c31f-4a8d-999c-78590512b57c
 source-git-commit: fb7e0e911de2a4a702d6069ca2f53d7769ec608b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '500'
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 
@@ -31,18 +31,18 @@ Nachdem Sie nun ein leeres Workspace-Projekt erstellt haben, sollten Sie mit der
 
 ![Beispielprojekt](assets/example-project.png)
 
-* Fügen Sie dem Projekt [Bedienfelder](/help/analysis-workspace/c-panels/panels.md) hinzu, Zum Beispiel die **[!DNL Example Panel]** ➊.
+* Fügen Sie dem Projekt [Bedienfelder](/help/analysis-workspace/c-panels/panels.md) hinzu, Zum Beispiel das **[!DNL Example Panel]** ➊.
 
 * Fügen Sie Ihren Bedienfeldern [Visualisierungen](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md) hinzu, z. B.:
-   * **[!DNL Line Graph]** [Line](/help/analysis-workspace/visualizations/line.md)-➋
-   * **[!DNL Countries]** [Freiformtabelle](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) Visualisierungs-➌
+   * Visualisierung [Linie](/help/analysis-workspace/visualizations/line.md) **[!DNL Line Graph]** ➋
+   * Visualisierung [Freiformtabelle](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) **[!DNL Countries]** ➌
 * Fügen Sie Ihren Visualisierungen [Komponenten](/help/components/overview.md) hinzu, z. B.:
-   * **[!DNL Store Country]** [Dimension](/help/components/dimensions/overview.md) ➍
-   * **[!DNL People]** [metric](/help/components/apply-create-metrics.md) ➎
-   * **[!DNL Avg Order Value]** [Berechnete Metrik](/help/components/calc-metrics/calc-metr-overview.md) ➏
-   * **[!DNL Mobile App Sessions]** [Segment](/help/components/filters/filters-overview.md) ➐
-   * **[!DNL Last Month]** [Datumsbereich](/help/components/date-ranges/overview.md) ➑
-   * **[!DNL Example]** [Anmerkung](/help/components/annotations/overview.md) ➒
+   * [Dimension](/help/components/dimensions/overview.md) **[!DNL Store Country]** ➍
+   * [Metrik](/help/components/apply-create-metrics.md) **[!DNL People]** ➎
+   * [Berechnete Metrik](/help/components/calc-metrics/calc-metr-overview.md) **[!DNL Avg Order Value]** ➏
+   * [Segment](/help/components/filters/filters-overview.md) **[!DNL Mobile App Sessions]** ➐
+   * [Datumsbereich](/help/components/date-ranges/overview.md) **[!DNL Last Month]** ➑
+   * [Anmerkung](/help/components/annotations/overview.md) **[!DNL Example]** ➒
 
 
 ## Projektinfo und Einstellungen {#project-info-settings}
@@ -61,7 +61,7 @@ Nachdem Sie nun ein leeres Workspace-Projekt erstellt haben, sollten Sie mit der
 >[!CONTEXTUALHELP]
 >id="workspace_project_commenting"
 >title="Kommentieren zulassen"
->abstract="Wenn diese Option aktiviert ist, ist in der rechten Leiste des Projekts in Analysis Workspace ein Kommentarbereich verfügbar."
+>abstract="Wenn diese Option aktiviert ist, wird in der rechten Leiste des Projekts in Analysis Workspace ein Kommentarbereich verfügbar."
 
 
 Die Projekteinstellungen enthalten auf der Projektebene befindliche Informationen über das derzeit aktive Projekt.
@@ -81,7 +81,7 @@ Zu den Einstellungen gehören:
 | Anmerkungen anzeigen | Legen Sie fest, ob Anmerkungen für dieses Projekt angezeigt werden sollen. |
 | [Projekt-Farbpalette](/help/analysis-workspace/build-workspace-project/color-palettes.md) | Sie können die in Workspace verwendete Farbpalette für Kategorien ändern, indem Sie aus den vordefinierten Paletten wählen, die für die Farbenblindheit optimiert wurden, oder indem Sie eine benutzerdefinierte Palette angeben. Diese Funktion betrifft vieles in Workspace, einschließlich der meisten Visualisierungen. |
 | [Dichte anzeigen](/help/analysis-workspace/build-workspace-project/view-density.md) | Mit dieser Option können Sie mehr Daten auf dem Bildschirm anzeigen, indem Sie den vertikalen Abstand des linken Bedienfelds, der Freiformtabellen und der Kohortentabellen reduzieren. |
-| Kommentieren zulassen | **Hinweis:** Diese Funktion befindet sich in der eingeschränkten Testphase der Version und ist möglicherweise noch nicht in Ihrer Umgebung verfügbar. Diese Anmerkung wird entfernt, wenn die Funktion allgemein verfügbar ist. Informationen zum Customer Journey Analytics-Veröffentlichungsprozess finden Sie unter [Customer Journey Analytics-Funktionsversionen](/help/release-notes/releases.md). <p>Wenn diese Option aktiviert ist, ist in der rechten Leiste des Projekts in Analysis Workspace ein Kommentarbereich verfügbar. Weitere Informationen finden Sie unter [Hinzufügen und Verwalten von Kommentaren in Projekten](/help/analysis-workspace/build-workspace-project/comment-projects.md).</p> |
+| Kommentieren zulassen | **Hinweis:** Diese Funktion befindet sich in der eingeschränkten Testphase der Version und ist möglicherweise noch nicht in Ihrer Umgebung verfügbar. Diese Anmerkung wird entfernt, wenn die Funktion allgemein verfügbar ist. Informationen zum Customer Journey Analytics-Veröffentlichungsprozess finden Sie unter [Veröffentlichungen von Funktionen für Customer Journey Analytics](/help/release-notes/releases.md). <p>Wenn diese Option aktiviert ist, wird in der rechten Leiste des Projekts in Analysis Workspace ein Kommentarbereich verfügbar. Weitere Informationen finden Sie unter [Hinzufügen und Verwalten von Kommentaren in Projekten](/help/analysis-workspace/build-workspace-project/comment-projects.md).</p> |
 
 
 

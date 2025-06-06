@@ -5,9 +5,9 @@ exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
 feature: Audiences
 role: User
 source-git-commit: be062e350a8c1989be41aeb2774471a3fe1bf524
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2368'
-ht-degree: 76%
+ht-degree: 100%
 
 ---
 
@@ -72,8 +72,8 @@ Lesen Sie diesen [Überblick](/help/components/audiences/audiences-overview.md),
    | Erstellungsmethode | Details |
    | --- | --- |
    | In der Benutzeroberfläche **[!UICONTROL Zielgruppen]** | Wählen Sie im Customer Journey Analytics-Hauptmenü die Option **[!UICONTROL Komponenten]** > **[!UICONTROL Zielgruppen]** aus. Die Benutzeroberfläche „Zielgruppen“ wird angezeigt. Wählen Sie **[!UICONTROL Zielgruppe erstellen]** aus. Daraufhin wird der [!UICONTROL Audience Builder] geöffnet. |
-   | Über eine Visualisierung in Analysis Workspace | Viele Visualisierungen in Analysis Workspace ermöglichen es Ihnen, mithilfe des Kontextmenüs eine Zielgruppe zu erstellen. Sie können beispielsweise **[!UICONTROL Zielgruppe erstellen]** aus dem Kontextmenü eines Elements in einer [Freiformtabelle](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) oder eines Knotens in der [Journey-Arbeitsfläche](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md) auswählen.<p>Mit dieser Methode wird das Segment im Audience Builder vorab mit der ausgewählten Dimension oder dem ausgewählten Dimensionselement ausgefüllt.</p><p>Mit den folgenden Visualisierungen können Sie mithilfe des Kontextmenüs eine Zielgruppe erstellen:</p><ul><li>[Kohortentabelle](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md)</li><li>[Fallout](/help/analysis-workspace/visualizations/fallout/fallout-flow.md)</li><li>[Fluss](/help/analysis-workspace/visualizations/c-flow/flow.md)</li><li>[Freiformtabelle](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)</li><li>[Journey-Arbeitsfläche](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md)</li><li>[Venn](/help/analysis-workspace/visualizations/venn.md)</li></ul><p>**Hinweis:** Zielgruppen können keine berechneten Metriken enthalten. Wenn Sie versuchen, eine Zielgruppe mit einer berechneten Metrik zu erstellen, wird die berechnete Metrik nicht in die Zielgruppendefinition einbezogen.</p> |
-   | Über die Benutzeroberfläche zur Segmenterstellung/-bearbeitung | Markieren Sie das Kästchen **[!UICONTROL Zielgruppe aus diesem Segment erstellen]**. Mit dieser Methode wird das Segment vorab ausgefüllt. Weitere Informationen [ Sie unter ](/help/components/filters/create-filters.md)Erstellen von Segmenten“. |
+   | Über eine Visualisierung in Analysis Workspace | Viele Visualisierungen in Analysis Workspace ermöglichen es Ihnen, mithilfe des Kontextmenüs eine Zielgruppe zu erstellen. Sie können beispielsweise **[!UICONTROL Zielgruppe erstellen]** aus dem Kontextmenü eines Elements in einer [Freiformtabelle](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) oder eines Knotens in der [Journey-Arbeitsfläche](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md) auswählen.<p>Mit dieser Methode wird das Segment im Zielgruppen-Builder vorab mit der ausgewählten Dimension oder dem ausgewählten Dimensionselement aufgefüllt.</p><p>Mit den folgenden Visualisierungen können Sie mithilfe des Kontextmenüs eine Zielgruppe erstellen:</p><ul><li>[Kohortentabelle](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md)</li><li>[Fallout](/help/analysis-workspace/visualizations/fallout/fallout-flow.md)</li><li>[Fluss](/help/analysis-workspace/visualizations/c-flow/flow.md)</li><li>[Freiformtabelle](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)</li><li>[Journey-Arbeitsfläche](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md)</li><li>[Venn](/help/analysis-workspace/visualizations/venn.md)</li></ul><p>**Hinweis:** Zielgruppen können keine berechneten Metriken enthalten. Wenn Sie versuchen, eine Zielgruppe mit einer berechneten Metrik zu erstellen, wird die berechnete Metrik nicht in die Zielgruppendefinition einbezogen.</p> |
+   | Über die Benutzeroberfläche zur Erstellung/Bearbeitung von Segmenten | Aktivieren Sie das Kontrollkästchen **[!UICONTROL Zielgruppe aus diesem Segment erstellen]**. Mit dieser Methode wird das Segment vorab aufgefüllt. Weitere Informationen finden Sie unter [Erstellen von Segmenten](/help/components/filters/create-filters.md). |
 
    {style="table-layout:auto"}
 
@@ -101,7 +101,7 @@ Konfigurieren Sie diese Einstellungen, um Ihre Zielgruppe zu definieren oder zu 
 | **[!UICONTROL Tags]** | Alle Tags, die der Zielgruppe aus organisatorischen Gründen zugewiesen werden sollen. Sie können ein oder mehrere bereits vorhandene Tags auswählen oder ein neues eingeben. |
 | **[!UICONTROL Beschreibung]** | Eine Beschreibung der Zielgruppe, um sie von anderen leicht unterscheiden zu können. Beispiel: `Build an audience of really interested potential car buyers` |
 | **[!UICONTROL Häufigkeit der Aktualisierung]** | Die Häufigkeit, mit der Sie die Zielgruppe aktualisieren möchten.<p/>Sie haben die Wahl zwischen: <ul><li>**[!UICONTROL Einmalige]** Zielgruppe: Eine Zielgruppe (Standard), die nicht aktualisiert werden muss. Diese Option könnte beispielsweise bei bestimmten einmaligen Kampagnen nützlich sein.<br/>Sie müssen einen **[!UICONTROL einmaligen Datumsbereich]** angeben. Sie können den ![Kalender](/help/assets/icons/Calendar.svg) verwenden, um einen Datumsbereich einzugeben.</li><li>Sich aktualisierende Zielgruppe: Sie können aus den folgenden Optionen auswählen:<ul><li>**[!UICONTROL Alle 4 Stunden]**: Eine Zielgruppe, die alle 4 Stunden aktualisiert wird.</li><li>**[!UICONTROL Täglich]**: Eine Zielgruppe, die täglich aktualisiert wird</li><li>**[!UICONTROL Wöchentlich]**: Eine Zielgruppe, die wöchentlich aktualisiert wird.</li><li>**[!UICONTROL Monatlich]**: Eine Zielgruppe, die monatlich aktualisiert wird</li></ul></li>Für sich aktualisierende Zielgruppen müssen Sie Folgendes angeben:<ul><li>**[!UICONTROL Lookback-Fenster aktualisieren]**: Definieren Sie die Anzahl der Lookback-Tage ab heute, in denen eine Zielgruppe ausgewertet wird. Sie können aus Optionen auswählen oder eine benutzerdefinierte Zeit definieren. Die Höchstdauer beträgt 90 Tage.</li><li>**[!UICONTROL Ablaufdatum]**: Legen Sie fest, wann die Zielgruppe nicht mehr aktualisiert wird. Sie können den ![Kalender](/help/assets/icons/Calendar.svg) verwenden, um ein Datum auszuwählen. Der Standardwert liegt bei 1 Jahr ab dem Erstellungsdatum. Ablaufende Zielgruppen werden ähnlich wie ablaufende terminierte Berichte behandelt. Die oder der Admin erhält einen Monat vor Ablauf der Zielgruppe eine E-Mail.</li></ul> Beachten Sie, dass es je nach Ihrer Customer Journey Analytics-Berechtigung ein Limit von 75 bis 150 Zielgruppen-Aktualisierungen gibt.</li></ul> |
-| **[!UICONTROL Filter]** | Filter sind die Hauptauswahloptionen für die Zielgruppe. Ziehen Sie ein oder mehrere Segmente aus dem linken Bedienfeld ![Segmentierung](/help/assets/icons/Segmentation.svg) **[!UICONTROL Segment]** in den Segmentbereich. Sie können die Option ![Suche](/help/assets/icons/Search.svg) [!UICONTROL *Segmente suchen*] verwenden, um nach Segmenten zu suchen. Sie können bis zu 20 Segmente hinzufügen. Segmente können mit den Operatoren **[!UICONTROL Und]** oder **[!UICONTROL Oder]** verbunden werden.<p>Beim Erstellen einer Zielgruppe aus einer Visualisierung in Analysis Workspace (z. B. einer Freiformtabelle oder einer Journey-Arbeitsfläche) werden alle Segmente beibehalten, die auf das Bedienfeld oder die Spalte angewendet wurden. Sie können alle Segmente entfernen, die automatisch angewendet werden.</p> |
+| **[!UICONTROL Filter]** | Filter sind die Hauptauswahloptionen für die Zielgruppe. Ziehen Sie ein oder mehrere Segmente aus dem linken Panel ![Segmentierung](/help/assets/icons/Segmentation.svg) **[!UICONTROL Segment]** in den Segmentbereich. Sie können mit ![Suchen](/help/assets/icons/Search.svg) [!UICONTROL *Segmente suchen*] nach Segmenten suchen. Sie können bis zu 20 Segmente hinzufügen. Segmente können mit den Operatoren **[!UICONTROL Und]** oder **[!UICONTROL Oder]** verbunden werden.<p>Beim Erstellen einer Zielgruppe aus einer Visualisierung in Analysis Workspace (z. B. einer Freiformtabelle oder Journey-Arbeitsfläche) werden alle auf das Panel oder die Spalte angewendeten Segmente beibehalten. Sie können alle automatisch angewendeten Segmente entfernen.</p> |
 | **[!UICONTROL Datenvorschau]** | Wählen Sie ![Info](/help/assets/icons/Info.svg) aus, um die [Datenvorschau](#data-preview) für den ausgewählten Datumsbereich ein- oder auszublenden. |
 
 ## Datenvorschau
@@ -122,11 +122,11 @@ Das Panel „Datenvorschau“ enthält die folgenden Informationen.
 
 ## Was passiert, nachdem eine Zielgruppe erstellt und veröffentlicht wurde? {#after-audience-created}
 
-Nachdem Sie eine Zielgruppe in Customer Journey Analytics erstellt und veröffentlicht haben, ist sie in Experience Platform verfügbar und kann im [Zielgruppenportal“ angezeigt ](https://experienceleague.adobe.com/de/docs/experience-platform/segmentation/ui/audience-portal). Da die Zielgruppe in Experience Platform verfügbar ist, kann sie in anderen Experience Platform-Programmen wie Adobe Journey Optimizer verwendet werden.
+Nachdem Sie eine Zielgruppe in Customer Journey Analytics erstellt und veröffentlicht haben, ist sie in Experience Platform verfügbar und kann im [Zielgruppenportal](https://experienceleague.adobe.com/de/docs/experience-platform/segmentation/ui/audience-portal) angezeigt werden. Da die Zielgruppe in Experience Platform verfügbar ist, kann sie in anderen Experience Platform-Anwendungen wie Adobe Journey Optimizer verwendet werden.
 
 Ein Adobe Experience Platform-Streaming-Segment wird nur erstellt, wenn die Streaming-Segmentierung für Ihre Organisation eingerichtet ist.
 
-Beachten Sie beim Arbeiten mit Audiences, die aus Customer Journey Analytics in Experience Platform veröffentlicht werden, Folgendes:
+Beachten Sie Folgendes beim Arbeiten mit Zielgruppen, die aus Customer Journey Analytics in Experience Platform veröffentlicht werden:
 
 * Die Zielgruppe in Experience Platform hat denselben Namen und dieselbe Beschreibung wie die Customer Journey Analytics-Zielgruppe. An den Namen wird die Customer Journey Analytics-Zielgruppen-ID angehängt, um sicherzustellen, dass die Zielgruppe eindeutig ist.
 * Alle Änderungen am Namen oder an der Beschreibung der Zielgruppe in Customer Journey Analytics werden in Experience Platform übernommen.
@@ -181,32 +181,32 @@ Bei der Anzahl der Zielgruppen können Diskrepanzen zwischen Customer Journey An
 ![Infographic on audience differences between Customer Journey Analytics and Real-Time CDP.](/help/components/audiences/assets/infographic-cja-rtcdp.png)
 -->
 
-#### Geschätzte versus deterministische Zahlen
+#### Geschätzte Zahlen im Vergleich zu deterministischen Zahlen
 
 Die Methode, mit der die Anzahl der Zielgruppenzugehörigkeiten berechnet wird, unterscheidet sich zwischen den beiden Apps, wie unten beschrieben.
 
-* **Customer Journey Analytics**: Die Metrik **[!UICONTROL Total People]** in Customer Journey Analytics ist ein geschätzter Wert. Dies bedeutet, dass die Anzahl eine Schätzung ist, die auf den Regeln der Zielgruppe basiert, und sich zwischen Aktualisierungsintervallen ändern kann.
-* **Real-Time Customer Data Platform**: Die Anzahl in Real-Time Customer Data Platform ist deterministisch, basiert auf täglichen Auswertungsaufträgen und wird zu dem Zeitpunkt korrigiert, zu dem die Veröffentlichung der Zielgruppe im Zielgruppenportal abgeschlossen ist.
+* **Customer Journey Analytics**: Die Metrik **[!UICONTROL Personen insgesamt]** in Customer Journey Analytics ist ein geschätzter Wert. Das heißt, dass die Anzahl eine Schätzung ist, die auf den Regeln der Zielgruppe basiert, und sich zwischen Aktualisierungsintervallen ändern kann.
+* **Real-Time Customer Data Platform**: Die Anzahl in Real-Time Customer Data Platform ist deterministisch, basiert auf täglichen Auswertungsaufträgen und wird zu dem Zeitpunkt festgesetzt, zu dem die Zielgruppe die Veröffentlichung im Zielgruppenportal abschließt.
 
 #### Veröffentlichungsintervall und -rate
 
-Zielgruppen werden mit einer Rate von 1.500 Datensätzen pro Sekunde (RPS) in Real-Time Customer Data Platform veröffentlicht. Für eine Zielgruppe von 20 Millionen Mitgliedern wird es beispielsweise ungefähr 3,7 Stunden dauern, bis sie vollständig veröffentlicht ist (20 Millionen / 1500 U/S / 3600 Sekunden pro Stunde). Während dieser Zeit sind Unterschiede bei der Zielgruppenzugehörigkeit zwischen den beiden Apps wahrscheinlich.
+Zielgruppen werden mit einer Rate von 1.500 Einträgen pro Sekunde (Records per Second, RPS) in Real-Time Customer Data Platform veröffentlicht. Die vollständige Veröffentlichung einer Zielgruppe von 20 Millionen Mitgliedern dauert beispielsweise ungefähr 3,7 Stunden (20 Millionen / 1500 RPS / 3600 Sekunden pro Stunde). Während dieser Zeit sind Unterschiede bei der Zielgruppenzugehörigkeit zwischen den beiden Apps wahrscheinlich.
 
 #### Profilfragmentierung
 
-Wenn in Real-Time Customer Data Platform bereits aus Customer Journey Analytics importierte Profile vorhanden sind, werden sie nicht als neue Profile gezählt. Dies kann in Real-Time Customer Data Platform zu Profilzahlen führen, die niedriger als erwartet sind.
+Wenn aus Customer Journey Analytics importierte Profile bereits in Real-Time Customer Data Platform vorhanden sind, werden sie nicht als neue Profile gezählt. Dies kann in Real-Time Customer Data Platform zu Profilzahlen führen, die niedriger als erwartet sind.
 
-#### Batch- versus Streaming-Zielgruppen
+#### Batch-Zielgruppen im Vergleich zu Streaming-Zielgruppen
 
-Customer Journey Analytics-Zielgruppen sind nicht im täglichen Batch-Auswertungsauftrag enthalten und bleiben bis zum nächsten Veröffentlichungsintervall unverändert. Andere Batch-Zielgruppen in Real-Time Customer Data Platform werden dagegen alle 24 Stunden neu ausgewertet.
+Customer Journey Analytics-Zielgruppen sind nicht im täglichen Batch-Auswertungsauftrag enthalten und bleiben bis zum nächsten Veröffentlichungsintervall unverändert. Andere Batch-Zielgruppen in Real-Time Customer Data Platform werden dagegen alle 24 Stunden neu ausgewertet.
 
 ### Wichtige Erkenntnisse, die Sie sich merken sollten
 
-* **Geschätzte Anzahl in Customer Journey Analytics**: Sie sollten verstehen, dass die **[!UICONTROL Gesamtzahl]** Personen“ in Customer Journey Analytics eine Schätzung ist und aufgrund von Streaming-Daten und Identitätsverhalten variieren kann.
+* **Geschätzte Anzahl in Customer Journey Analytics**: Seien Sie sich bewusst, dass die Anzahl für **[!UICONTROL Personen insgesamt]** in Customer Journey Analytics eine Schätzung ist und aufgrund von Streaming-Daten und Identitätsverhalten variieren kann.
 * **Deterministische Anzahl in Real-Time Customer Data Platform**: Die Anzahl in Real-Time Customer Data Platform ist fest und ändert sich bis zum nächsten Veröffentlichungsintervall nicht.
 * **Profilfragmentierung** Beachten Sie, dass in Real-Time Customer Data Platform vorhandene Profile beim Import aus Customer Journey Analytics möglicherweise nicht zu neuen Profilzahlen beitragen.
 
-Durch die klare Unterscheidung dieser Aspekte können Sie Ihre Zielgruppendaten in Customer Journey Analytics und Real-Time Customer Data Platform besser verstehen und verwalten.—>
+Durch die klare Unterscheidung dieser Aspekte können Sie Ihre Zielgruppendaten in Customer Journey Analytics und Real-Time Customer Data Platform besser verstehen und verwalten.--->
 
 ## Häufig gestellte Fragen (FAQ) {#faq}
 
