@@ -72,8 +72,8 @@ Verwechseln Sie die Zuordnung nicht mit:
 >[!MORELIKETHIS]
 >
 >[Feldbasierte Zuordnung](fbs.md)
->>[Diagrammbasierte Zuordnung](gbs.md)
->>[Verwenden der Zuordnung](use-stitching.md)
->>[Zuordnung validieren](validate.md)
->>[Häufig gestellte Fragen zur Zuordnung](faq.md)
+>&#x200B;>[Diagrammbasierte Zuordnung](gbs.md)
+>&#x200B;>[Verwenden der Zuordnung](use-stitching.md)
+>&#x200B;>[Zuordnung validieren](validate.md)
+>&#x200B;>[Häufig gestellte Fragen zur Zuordnung](faq.md)
 
