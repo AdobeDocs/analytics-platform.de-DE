@@ -4,7 +4,7 @@ title: Journey-Arbeitsfläche
 feature: Visualizations
 role: User
 exl-id: 53984934-6fba-4f15-aeeb-d91039260553
-source-git-commit: b14bc43a0cdf4901c5df171a116943beb2124991
+source-git-commit: 38be838fccf896a12da3fbadac50e578081312ba
 workflow-type: tm+mt
 source-wordcount: '6225'
 ht-degree: 1%
@@ -19,7 +19,7 @@ Die Journey-Arbeitsflächen-Visualisierung ermöglicht es Ihnen, die Journey zu 
 
 ## Überblick über die Journey-Arbeitsfläche
 
-Weitere Informationen zur Journey-Arbeitsfläche finden [&#128279;](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md) unter Übersicht über die Journey-Arbeitsfläche, einschließlich:
+Weitere Informationen zur Journey-Arbeitsfläche finden ](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md) unter [Übersicht über die Journey-Arbeitsfläche, einschließlich:
 
 * Wichtigste Funktionen
 
@@ -297,7 +297,7 @@ Knoten werden durch einen Pfeil verbunden. Sowohl die Pfeilrichtung als auch die
 
 #### Logik beim Verbinden von Knoten
 
-Wenn Sie Knoten auf der Journey-Arbeitsfläche verbinden, werden sie mithilfe des THEN-Operators verbunden. Dies wird auch als [sequenzielle Segmentierung“ ](/help/components/filters/seg-sequential-build.md).
+Wenn Sie Knoten auf der Journey-Arbeitsfläche verbinden, werden sie mithilfe des THEN-Operators verbunden. Dies wird auch als [sequenzielle Segmentierung“ ](/help/components/segments/seg-sequential-build.md).
 
 Knoten sind als „endgültiger Pfad“ verbunden, d. h. Besucher werden gezählt, solange sie letztendlich von einem Knoten zum anderen wechseln, unabhängig von Ereignissen, die zwischen den beiden Knoten auftreten. Die Zeit, die Benutzenden zum Verschieben auf dem Pfad zugewiesen wird, wird durch die Container-Einstellung bestimmt. <!-- It can also be controlled by [adding a time constraint](#add-a-time-constraint-between-nodes). -->
 
@@ -546,7 +546,7 @@ So zeigen Sie Trenddaten an:
 
 Sie können ein neues Segment auf der Grundlage eines Knotens oder Pfeils innerhalb eines Journey erstellen. Nachdem das Segment erstellt wurde, können Sie es an einer beliebigen Stelle in Analysis Workspace verwenden.
 
-Segmente, die auf der Journey-Arbeitsfläche erstellt wurden, verwenden [sequenzielle Segmentierung](/help/components/filters/seg-sequential-build.md). Das bedeutet, dass das Segment den THEN-Operator verwendet, um die Ereignissequenz (die Journey), durch die Personen geströmt sind, zu verknüpfen, die zum ausgewählten Knoten oder Pfeil geführt haben. Alle Ereignisse, die mit dem ausgewählten Knoten oder Pfeil übereinstimmen, sind im Segment enthalten.
+Segmente, die auf der Journey-Arbeitsfläche erstellt wurden, verwenden [sequenzielle Segmentierung](/help/components/segments/seg-sequential-build.md). Das bedeutet, dass das Segment den THEN-Operator verwendet, um die Ereignissequenz (die Journey), durch die Personen geströmt sind, zu verknüpfen, die zum ausgewählten Knoten oder Pfeil geführt haben. Alle Ereignisse, die mit dem ausgewählten Knoten oder Pfeil übereinstimmen, sind im Segment enthalten.
 
 Wenn Sie ein Segment basierend auf einem Knoten erstellen, in den mehrere Pfade fließen, sind alle Pfade im Segment enthalten. Separate Pfade werden mit dem OR-Operator verbunden.
 
@@ -558,7 +558,7 @@ So erstellen Sie ein Segment:
 
    Der Segment Builder wird angezeigt. Im Abschnitt [!UICONTROL **Definition**] wird die Segmentdefinition basierend auf dem ausgewählten Knoten oder Pfeil und seinem Kontext innerhalb der Journey erstellt.
 
-1. Geben Sie einen Titel für das Segment an und nehmen Sie andere Änderungen vor. Weitere Informationen zum Erstellen eines Segments finden Sie unter [Segment Builder](/help/components/filters/filter-builder.md).
+1. Geben Sie einen Titel für das Segment an und nehmen Sie andere Änderungen vor. Weitere Informationen zum Erstellen eines Segments finden Sie unter [Segment Builder](/help/components/segments/seg-builder.md).
 
 1. Wählen Sie [!UICONTROL **Speichern**] aus, um das Segment zu speichern.
 

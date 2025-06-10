@@ -3,16 +3,16 @@ description: Mit dem Manager für berechnete Metriken können Sie freigeben, fil
 title: Manager für berechnete Metriken
 feature: Calculated Metrics
 exl-id: 8b257ecc-a596-4b34-ac26-eda16835f1ba
-source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
+source-git-commit: 38be838fccf896a12da3fbadac50e578081312ba
 workflow-type: tm+mt
-source-wordcount: '901'
-ht-degree: 30%
+source-wordcount: '897'
+ht-degree: 29%
 
 ---
 
 # Berechnete Metriken verwalten
 
-Sie können berechnete Metriken freigeben, filtern, taggen, genehmigen, umbenennen, kopieren, löschen, exportieren und berechnete Metriken über eine zentrale Verwaltungsoberfläche [!UICONTROL Berechnete &#x200B;]&quot; als Favoriten markieren. So verwalten Sie berechnete Metriken:
+Sie können berechnete Metriken freigeben, filtern, taggen, genehmigen, umbenennen, kopieren, löschen, exportieren und berechnete Metriken über eine zentrale Verwaltungsoberfläche [!UICONTROL Berechnete ]&quot; als Favoriten markieren. So verwalten Sie berechnete Metriken:
 
 
 * Wählen Sie **[!UICONTROL Hauptbenutzeroberfläche]** Komponenten“ und dann **[!UICONTROL Berechnete Metriken]** aus.
@@ -27,13 +27,13 @@ Der Manager für berechnete Metriken verfügt über die folgenden Schnittstellen
 
 ### Filterliste
 
-Die Filterliste zeigt alle berechneten Metriken an, deren Inhaber Sie sind oder die für Sie freigegeben wurden. Die Liste umfasst die folgenden Spalten:
+Die Filterliste zeigt ➊ alle berechneten Metriken an, deren Inhaber Sie sind oder die für Sie freigegeben wurden. Die Liste umfasst die folgenden Spalten:
 
 <!-- I think this table incorrectly talks about quick calculated metrics -->
 
 | Spalte | Beschreibung |
 | --- | --- | 
-| ![UnausgefüllterStern](/help/assets/icons/StarOutline.svg) | Wählen Sie aus![ um eine berechnete Metrik ](/help/assets/icons/Star.svg)StarOutline![ zu bevorzugen oder ](/help/assets/icons/StarOutline.svg). Siehe [Berechnete Metrik als Favorit markieren](/help/components/filters/filters-favorite.md) |
+| ![UnausgefüllterStern](/help/assets/icons/StarOutline.svg) | Wählen Sie aus![ um eine berechnete Metrik ](/help/assets/icons/Star.svg)StarOutline![ zu bevorzugen oder ](/help/assets/icons/StarOutline.svg). Siehe [Berechnete Metrik als Favorit markieren](/help/components/segments/seg-favorite.md) |
 | **[!UICONTROL Titel und Beschreibung]** | Um die berechnete Metrik zu bearbeiten, wählen Sie den Titel-Link aus, über den der [Generator für berechnete Metriken“ ](cm-build-metrics.md) wird. Eine freigegebene berechnete Metrik wird mit ![Freigabe](/help/assets/icons/ShareAlt.svg) angegeben. |
 | **[!UICONTROL Datenansicht]** | Die Datenansichten, für die diese berechnete Metrik gilt. |
 | **[!UICONTROL Inhabende]** | Inhaber der berechneten Metrik. Benutzende können nur die Anmerkungen sehen, die ihnen gehören oder die für sie freigegeben wurden. |
@@ -49,7 +49,7 @@ Verwenden Sie ![Spalteneinstellung](/help/assets/icons/ColumnSetting.svg), um di
 
 ### Aktionsleiste
 
-Mit der Aktionsleiste ➋ können Sie Aktionen für Filter durchführen. Die Aktionsleiste ermöglicht die folgenden Aktionen:
+Sie können Aktionen für Filter mithilfe der Aktionsleiste ➋. Die Aktionsleiste ermöglicht die folgenden Aktionen:
 
 | Symbol | Aktion | Beschreibung |
 |:---:|---|---|
@@ -65,11 +65,11 @@ Mit der Aktionsleiste ➋ können Sie Aktionen für Filter durchführen. Die Akt
 
 ### Aktive Filterleiste
 
-In der Filterleiste werden die aktiven Filter angezeigt, die vom Bedienfeld Filter auf die Liste der berechneten Metriken angewendet wurden (falls vorhanden). Mit ![XGröße75](/help/assets/icons/CrossSize75.svg) können Sie schnell einen Filter entfernen. Wenn mehr als ein Filter angegeben ist, können Sie alle Filter mit **[!UICONTROL Alle entfernen]** entfernen.
+Die Filterleiste zeigt ➌ die aktiven Filter an, die vom Bedienfeld Filter auf die Liste der berechneten Metriken angewendet wurden (falls vorhanden). Mit ![XGröße75](/help/assets/icons/CrossSize75.svg) können Sie schnell einen Filter entfernen. Wenn mehr als ein Filter angegeben ist, können Sie alle Filter mit **[!UICONTROL Alle entfernen]** entfernen.
 
 ### Panel „Filter“
 
-Sie können die Liste der berechneten Metriken mithilfe des linken Bedienfelds ![Filter](/help/assets/icons/Filter.svg) **[!UICONTROL Filter]** filtern. Das Bedienfeld „Filter“ zeigt den Filtertyp und die Anzahl der berechneten Metriken an, die den spezifischen Filter berücksichtigen. Wählen Sie ![Filter](/help/assets/icons/Filter.svg) aus, um die Anzeige des Bedienfelds „Filter“ umzuschalten.
+Sie können die Liste der berechneten Metriken mithilfe der ➍ des ![Filter](/help/assets/icons/Filter.svg) **[!UICONTROL Filter]** linken Bedienfelds filtern. Das Bedienfeld „Filter“ zeigt den Filtertyp und die Anzahl der berechneten Metriken an, die den spezifischen Filter berücksichtigen. Wählen Sie ![Filter](/help/assets/icons/Filter.svg) aus, um die Anzeige des Bedienfelds „Filter“ umzuschalten.
 
 Weitere Informationen [ Sie unter „Filtern ](cm-filter.md) Liste berechneter Metriken“.
 

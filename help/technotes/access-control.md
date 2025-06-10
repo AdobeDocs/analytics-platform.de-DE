@@ -6,7 +6,7 @@ feature: Basics
 exl-id: c258fa39-c0b6-45a1-8547-79516c15a215
 mini-toc-levels: 3
 role: Admin
-source-git-commit: f0786cfa74453693078c7d30d647a96bf1d98d07
+source-git-commit: 38be838fccf896a12da3fbadac50e578081312ba
 workflow-type: tm+mt
 source-wordcount: '1549'
 ht-degree: 23%
@@ -64,7 +64,7 @@ Zusätzlich zur Hinzufügung als Produktadministrator zum **Customer Journey Ana
   | [!UICONTROL Datenaufnahme] | [!UICONTROL Verwalten von Quellen] | Zugriff zum Lesen, Erstellen, Bearbeiten und Deaktivieren von Quellen. |
   | [!UICONTROL Identity Management] | [!UICONTROL Anzeigen von Identitäts-Namensräumen] | Schreibgeschützter Zugriff für Identitäts-Namensräume. |
 
-  Weitere Informationen zu Berechtigungen für Experience Platform finden Sie [Verwalten von Berechtigungen für ein Produktprofil](https://experienceleague.adobe.com/de/docs/experience-platform/access-control/ui/permissions).
+  Weitere Informationen zu Berechtigungen für Experience Platform finden Sie [Verwalten von Berechtigungen für ein Produktprofil](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/ui/permissions).
 
 
 * Wenn Adobe Journey Optimizer mit CJA integriert wurde, wo AJO-Verbindungen vorhanden sind, müssen auch Journey-Berechtigungen hinzugefügt werden, um auf -Verbindungen zugreifen zu können:
@@ -76,7 +76,7 @@ Zusätzlich zur Hinzufügung als Produktadministrator zum **Customer Journey Ana
   | [!UICONTROL Journeys] | [!UICONTROL Journey anzeigen] | Schreibgeschützter Zugriff auf Journey. |
   | [!UICONTROL Journeys] | [!UICONTROL Journey verwalten] | Lesen, Erstellen, Bearbeiten und Löschen von Journey |
 
-* Exportieren von Datensätzen zu [Zielen](https://experienceleague.adobe.com/de/docs/experience-platform/destinations/ui/activate/export-datasets)
+* Exportieren von Datensätzen zu [Zielen](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/export-datasets)
 
   Um diese Aufgabe ausführen zu können, müssen Benutzende Teil eines **Experience Platform-Produktprofils** sein, das die folgenden Berechtigungen bietet:
 
@@ -85,13 +85,13 @@ Zusätzlich zur Hinzufügung als Produktadministrator zum **Customer Journey Ana
   | [!UICONTROL Ziele] | [!UICONTROL Verwalten von Zielen] | Zugriff auf das Lesen, Erstellen und Löschen von Zielverbindungen und Zielkonten. |
   | [!UICONTROL Ziele] | [!UICONTROL Aktivieren von Zielen] | Benutzern erlauben, Segmente für vorhandene Ziele zu aktivieren. Aktiviert den Zuordnungsschritt im Aktivierungs-Workflow. Diese Berechtigung erfordert auch, dass Benutzenden, die Daten für Ziele aktivieren möchten, die Berechtigung Ziele anzeigen gewährt wird. |
 
-  Weitere Informationen zu Berechtigungen für Experience Platform finden Sie [Verwalten von Berechtigungen für ein Produktprofil](https://experienceleague.adobe.com/de/docs/experience-platform/access-control/ui/permissions).
+  Weitere Informationen zu Berechtigungen für Experience Platform finden Sie [Verwalten von Berechtigungen für ein Produktprofil](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/ui/permissions).
 
 * Verwenden der [BI-Erweiterung](../data-views/bi-extension.md)
 
   Für Benutzer, die die BI-Erweiterung verwenden möchten, Produktadministrator
 
-   * Sie müssen sicherstellen, dass die Experience Platform-Berechtigungen für den -Benutzer eine Rolle enthalten, die über die Ressource „Abfrage-Service“ mit den Optionen „Abfragen verwalten“ und „Abfrage-Service-Integration verwalten“ verfügt. Weitere Informationen zu Berechtigungen für Experience Platform finden Sie [Verwalten von Berechtigungen für ein Produktprofil](https://experienceleague.adobe.com/de/docs/experience-platform/access-control/ui/permissions).
+   * Sie müssen sicherstellen, dass die Experience Platform-Berechtigungen für den -Benutzer eine Rolle enthalten, die über die Ressource „Abfrage-Service“ mit den Optionen „Abfragen verwalten“ und „Abfrage-Service-Integration verwalten“ verfügt. Weitere Informationen zu Berechtigungen für Experience Platform finden Sie [Verwalten von Berechtigungen für ein Produktprofil](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/ui/permissions).
 
      | Kategorie | Berechtigung | Beschreibung |
      |---|---|---| 
@@ -124,13 +124,13 @@ Die **[!UICONTROL Berechtigungen]** ist Teil jedes Produktprofils in der [Admin 
 | [!UICONTROL Reporting-Tools] | [!UICONTROL Zugriff auf Analysis Workspace] | Benutzern Zugriff auf [Analysis Workspace ](/help/analysis-workspace/home.md). |
 | [!UICONTROL Reporting-Tools] | [!UICONTROL Zugriff auf geführte Analysen] | Ermöglicht Benutzenden den Zugriff auf [Geführte Analyse](/help/guided-analysis/overview.md). |
 | [!UICONTROL Reporting-Tools] | [!UICONTROL Erstellung berechneter Metriken] | Ermöglicht Benutzenden die Erstellung [berechneter Metriken](/help/components/calc-metrics/calc-metr-overview.md). Benutzer können nur die von ihnen erstellten berechneten Metriken taggen, freigeben, löschen, umbenennen, genehmigen oder die Genehmigung aufheben oder die für sie freigegebenen berechneten Metriken berechnen. |
-| [!UICONTROL Reporting-Tools] | [!UICONTROL Erstellung von Segmenten] | Benutzenden die Erstellung von [Segmenten](/help/components/filters/filters-overview.md) ermöglichen. Benutzer können nur die Segmente, die sie erstellen, oder die Segmente, die für sie freigegeben wurden, taggen, freigeben, löschen, umbenennen, genehmigen oder die Genehmigung aufheben. |
+| [!UICONTROL Reporting-Tools] | [!UICONTROL Erstellung von Segmenten] | Benutzenden die Erstellung von [Segmenten](/help/components/segments/seg-overview.md) ermöglichen. Benutzer können nur die Segmente, die sie erstellen, oder die Segmente, die für sie freigegeben wurden, taggen, freigeben, löschen, umbenennen, genehmigen oder die Genehmigung aufheben. |
 | [!UICONTROL Reporting-Tools] | [!UICONTROL Labs-Zugriff] | Ermöglicht Benutzenden den Zugriff auf die [Labs](/help/labs/labs.md) in Customer Journey Analytics. |
 | [!UICONTROL Reporting-Tools] | [!UICONTROL Anmerkungserstellung] | Benutzern die Erstellung von [Anmerkungen](/help/components/annotations/overview.md) ermöglichen. Benutzer können nur die Anmerkungen taggen, freigeben, löschen und umbenennen, die sie erstellen oder die für sie freigegeben sind. |
 | [!UICONTROL Reporting-Tools] | [!UICONTROL Zielgruppenansicht] | Benutzern die Ansicht [Zielgruppen](/help/components/audiences/audiences-overview.md) ermöglichen. |
 | [!UICONTROL Reporting-Tools] | [!UICONTROL Zielgruppenerstellung] | Ermöglicht Benutzenden die Erstellung [Zielgruppen](/help/components/audiences/audiences-overview.md). |
 | [!UICONTROL Reporting-Tools] | [!UICONTROL Zugriff auf Auditprotokolle] | Erzwingen Sie die Berechtigungsprüfung für die [API](https://developer.adobe.com/cja-apis/docs/endpoints/auditlogs/) und die Benutzeroberfläche für Auditprotokolle. |
-| [!UICONTROL Reporting-Tools] | [!UICONTROL Projekt-Links für alle freigeben] | Benutzer [Projekte für alle freigeben.](https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-workspace/curate-share/share-projects) |
+| [!UICONTROL Reporting-Tools] | [!UICONTROL Projekt-Links für alle freigeben] | Benutzer [Projekte für alle freigeben.](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/curate-share/share-projects) |
 | [!UICONTROL Reporting-Tools] | [!UICONTROL Prognose] | Ermöglicht Benutzenden den Zugriff auf die [Prognose](../analysis-workspace/c-forecast/forecasting.md) Funktion in Analysis Workspace |
 | [!UICONTROL Reporting-Tools] | [!UICONTROL KI-Assistent: Produktkenntnisse] | Ermöglicht Benutzenden den Zugriff auf den [KI-](../ai-assistant.md)) für Produktkenntnisse. |
 | [!UICONTROL Reporting-Tools] | [!UICONTROL Intelligente Untertitel] | Benutzern Zugriff auf [intelligente Beschriftungen](/help/analysis-workspace/visualizations/intelligent-captions.md) ermöglichen. |

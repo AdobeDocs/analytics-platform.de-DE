@@ -4,8 +4,8 @@ title: Bekannte Einschränkungen in Analysis Workspace
 feature: FAQ
 exl-id: 334cfe24-a4b2-43be-94df-5a2df90612f0
 role: User
-source-git-commit: b14bc43a0cdf4901c5df171a116943beb2124991
-workflow-type: ht
+source-git-commit: 38be838fccf896a12da3fbadac50e578081312ba
+workflow-type: tm+mt
 source-wordcount: '313'
 ht-degree: 100%
 
@@ -31,7 +31,7 @@ Im Folgenden finden Sie eine Liste der bekannten Einschränkungen in Analysis Wo
 ## Segmente
 
 * Bestimmte Metriken und Dimensionen können nicht segmentiert werden, wie etwa [!UICONTROL Ereignisse], [!UICONTROL Personen] usw.
-* Die im [Ablegebereich des Panels](/help/analysis-workspace/c-panels/panels.md) erstellten Ad-hoc-Segmente sind eine Art Schnellsegment. Sie werden nicht im linken Panel von Workspace oder im Segment-Manager angezeigt, es sei denn, sie werden veröffentlicht. Weitere Informationen finden Sie unter [Schnellsegmente](/help/components/filters/quick-filters.md).
+* Die im [Ablegebereich des Panels](/help/analysis-workspace/c-panels/panels.md) erstellten Ad-hoc-Segmente sind eine Art Schnellsegment. Sie werden nicht im linken Panel von Workspace oder im Segment-Manager angezeigt, es sei denn, sie werden veröffentlicht. Weitere Informationen finden Sie unter [Schnellsegmente](/help/components/segments/seg-quick.md).
 
 ## Berechnete Metriken
 

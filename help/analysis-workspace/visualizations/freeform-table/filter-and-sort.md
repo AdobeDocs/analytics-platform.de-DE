@@ -4,7 +4,7 @@ title: Filtern und Sortieren von Tabellen
 feature: Visualizations
 exl-id: 3af637ec-bb6c-49b7-a7b3-e1d310e71101
 role: User
-source-git-commit: 9a15cb4d771892ff656fe72b8e53d890a3fd99f7
+source-git-commit: 38be838fccf896a12da3fbadac50e578081312ba
 workflow-type: tm+mt
 source-wordcount: '844'
 ht-degree: 98%
@@ -17,7 +17,7 @@ Freiformtabellen in Analysis Workspace bilden die Grundlage für die interaktive
 
 <!--The following video covers filter and sort options in Analysis Workspace, in addition to pagination options:
 
->[!VIDEO](https://video.tv.adobe.com/v/327342?captions=ger)-->
+>[!VIDEO](https://video.tv.adobe.com/v/23968)-->
 
 ## Filtern von Tabellen
 
@@ -96,7 +96,7 @@ So filtern Sie Daten in Freiformtabellen:
 
 ### Verwenden von Zielgruppensegmenten
 
-Weitere Informationen finden [ unter ](/help/components/filters/filters-overview.md)Segmentierung - Übersicht“.
+Weitere Informationen finden [ unter ](/help/components/segments/seg-overview.md)Segmentierung - Übersicht“.
 
 ## Sortieren von Tabellen
 

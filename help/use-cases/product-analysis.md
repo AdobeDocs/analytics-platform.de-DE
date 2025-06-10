@@ -2,7 +2,7 @@
 title: Produktanalyse in Customer Journey Analytics
 description: Erfahren Sie, welche Funktionen Sie in Customer Journey Analytics verwenden können, um Produktanalysen effektiv durchzuführen.
 exl-id: b185a2ed-18c8-4fb3-8c69-693d5fee0e67
-source-git-commit: 3d8ebd90156f0e44e4c45913a524ed91360dd39e
+source-git-commit: 38be838fccf896a12da3fbadac50e578081312ba
 workflow-type: tm+mt
 source-wordcount: '826'
 ht-degree: 1%
@@ -33,11 +33,11 @@ Mit den folgenden Funktionen in Adobe Experience Platform und Customer Journey A
 * Adobe Experience Platform
    * [Datensätze&#x200B;](https://experienceleague.adobe.com/de/docs/experience-platform/catalog/datasets/overview)
    * [Datenvorbereitung&#x200B;](https://experienceleague.adobe.com/de/docs/experience-platform/data-prep/home)
-   * [Daten-Distiller&#x200B;](https://experienceleague.adobe.com/de/docs/experience-platform/query/data-distiller/overview)
+   * [Daten-Distiller&#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/query/data-distiller/overview)
 * Customer Journey Analytics
    * [Verbindungen&#x200B;](/help/connections/overview.md)
    * [Datenansichten](/help/data-views/data-views.md) einschließlich [abgeleiteter Felder&#x200B;](/help/data-views/derived-fields/derived-fields.md)
-   * [Segmente&#x200B;](/help/components/filters/filters-overview.md)
+   * [Segmente&#x200B;](/help/components/segments/seg-overview.md)
    * [Berechnete Metriken](/help/components/calc-metrics/calc-metr-overview.md)
    * [Geführte Analyse&#x200B;: Zeitleiste&#x200B;](/help/guided-analysis/types/timeline.md)
 
@@ -99,8 +99,8 @@ Mit den folgenden Funktionen in Experience Cloud können Sie effektiv auf Einbli
 * [Erstellen und Veröffentlichen von Zielgruppen](/help/components/audiences/publish.md)&#x200B; zur Aktivierung über Customer Journey Analytics
 * Zielgruppen über Experience Cloud-Produkte aktivieren:
    * [Führen Sie ](https://experienceleague.adobe.com/de/docs/journey-optimizer/using/content-management/content-experiment/get-started-experiment) in AJO und Adobe Target aus und messen Sie mithilfe des Bedienfelds [Experimentieren“ die Wirkung von Varianten in Customer Journey Analytics](/help/analysis-workspace/c-panels/experimentation.md)
-   * [Bereitstellen von In-App-Interaktionen](https://experienceleague.adobe.com/de/docs/journey-optimizer/using/channels/in-app/get-started-in-app) für Benutzende in AJO
-* [Aktivieren von Zielgruppen](https://experienceleague.adobe.com/de/docs/experience-platform/destinations/ui/activate/activation-overview) für externe Ziele mit Adobe Real-Time CDP&#x200B;
+   * [Bereitstellen von In-App-Interaktionen](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/in-app/get-started-in-app) für Benutzende in AJO
+* [Aktivieren von Zielgruppen](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/activation-overview) für externe Ziele mit Adobe Real-Time CDP&#x200B;
 
 ## Freigeben von Einblicken für die Organisation&#x200B;
 

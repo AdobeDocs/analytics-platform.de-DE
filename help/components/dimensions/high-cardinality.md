@@ -5,7 +5,7 @@ feature: Dimensions
 solution: Customer Journey Analytics
 exl-id: 17b275a5-c2c2-48ee-b663-e7fe76f79456
 role: User
-source-git-commit: 4bfa32ba3a7902d31edefab17a00206f922a8382
+source-git-commit: 38be838fccf896a12da3fbadac50e578081312ba
 workflow-type: tm+mt
 source-wordcount: '544'
 ht-degree: 7%
@@ -34,7 +34,7 @@ Obwohl einige einzelne Dimensionselemente in Berichten mit hoher Kardinalität f
 
 Die beste Möglichkeit, Dimensionen mit hoher Kardinalität zu berücksichtigen, besteht darin, die Anzahl der Dimensionselemente zu begrenzen, die ein Bericht verarbeitet. Da alle Berichte zum Zeitpunkt ihrer Anforderung verarbeitet werden, können Sie die Berichtsparameter für sofortige Ergebnisse anpassen. Adobe empfiehlt eine der folgenden Optimierungen für Dimensionen mit hoher Kardinalität:
 
-* Verwenden Sie ein [Segment](/help/components/filters/create-filters.md). Segmente gelten zu dem Zeitpunkt, zu dem jeder Server eine Teilmenge von Daten verarbeitet.
+* Verwenden Sie ein [Segment](/help/components/segments/seg-create.md). Segmente gelten zu dem Zeitpunkt, zu dem jeder Server eine Teilmenge von Daten verarbeitet.
 * Verwenden Sie eine Suche. Dimension-Elemente, die vom Suchbegriff ausgeschlossen sind, werden aus den Berichtsergebnissen entfernt, sodass die Wahrscheinlichkeit höher ist, dass die gewünschten Dimensionselemente angezeigt werden.
 * Verwenden Sie eine Lookup-Datensatzdimension. Lookup-Datensatzdimensionen kombinieren Elemente von Ereignis-Datensatzdimensionen, die die Anzahl der zurückgegebenen eindeutigen Werte begrenzen.
 * Verwenden Sie die [Einschließen/ausschließen](/help/data-views/component-settings/include-exclude-values.md) im Datenansichts-Manager.

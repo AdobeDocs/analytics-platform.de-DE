@@ -9,7 +9,7 @@ index: true
 user-guide-title: Handbuch zu Customer Journey Analytics
 user-guide-description: Hier erhalten Sie Informationen zu Adobe Customer Journey Analytics und Erläuterungen zur Nutzung von Analysis Workspace mit Daten aus Experience Platform.
 breadcrumb-title: Handbuch zu Customer Journey Analytics
-source-git-commit: c0446bd85b65109fd3311d54e33f9fb33af28f88
+source-git-commit: 38be838fccf896a12da3fbadac50e578081312ba
 workflow-type: tm+mt
 source-wordcount: '1243'
 ht-degree: 98%
@@ -325,20 +325,20 @@ ht-degree: 98%
       + [Dimensionen für die Zeitunterteilung](../components/dimensions/time-parting-dimensions.md)
       + [Dimensionen hoher Kardinalität](../components/dimensions/high-cardinality.md)
    + [Metriken](../components/apply-create-metrics.md)
-   + Segmente {#cja-filters}
-      + [Überblick](../components/filters/filters-overview.md)
-      + [Erstellen von Segmenten](../components/filters/create-filters.md)
-      + [Aufbauen von Segmenten](../components/filters/filter-builder.md)
-      + [Schnellsegmente](../components/filters/quick-filters.md)
-      + [Sequenzielle Segmente](../components/filters/seg-sequential-build.md)
-      + [Freigeben von Segmenten](../components/filters/filters-share.md)
-      + [Taggen von Segmente](../components/filters/filters-tag.md)
-      + [Filtern der Segmentliste](../components/filters/filters-filter.md)
-      + [Markieren von Segmenten als Favoriten](../components/filters/filters-favorite.md)
-      + [Genehmigen von Segmenten](../components/filters/filters-approve.md)
-      + [Segmente kopieren](../components/filters/filters-copy.md)
-      + [Verwalten von Segmenten](../components/filters/manage-filters.md)
-      + [Operatoren](../components/filters/operators.md)
+   + Segmente {#segments}
+      + [Überblick](/help/components/segments/seg-overview.md)
+      + [Erstellen von Segmenten](/help/components/segments/seg-create.md)
+      + [Aufbauen von Segmenten](/help/components/segments/seg-builder.md)
+      + [Schnellsegmente](/help/components/segments/seg-quick.md)
+      + [Sequenzielle Segmente](/help/components/segments/seg-sequential-build.md)
+      + [Freigeben von Segmenten](/help/components/segments/seg-share.md)
+      + [Taggen von Segmente](/help/components/segments/seg-tag.md)
+      + [Filtern der Segmentliste](/help/components/segments/seg-filter.md)
+      + [Markieren von Segmenten als Favoriten](/help/components/segments/seg-favorite.md)
+      + [Genehmigen von Segmenten](/help/components/segments/seg-approve.md)
+      + [Segmente kopieren](/help/components/segments/seg-copy.md)
+      + [Verwalten von Segmenten](/help/components/segments/seg-manage.md)
+      + [Operatoren](/help/components/segments/seg-operators.md)
    + Berechnete Metriken {#cja-calcmetrics}
       + [Überblick](../components/calc-metrics/calc-metr-overview.md)
       + Workflow bei berechneten Metriken {#cm-workflow}

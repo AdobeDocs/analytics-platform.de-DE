@@ -5,8 +5,8 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 5e3f0aa0-ba24-48c8-948c-ebb5c270f34d
-source-git-commit: 220ebd7dbc3fa75d221690cd6e5828bd94395434
-workflow-type: ht
+source-git-commit: 38be838fccf896a12da3fbadac50e578081312ba
+workflow-type: tm+mt
 source-wordcount: '1077'
 ht-degree: 100%
 
@@ -78,7 +78,7 @@ Um den Wechsel zwischen den Systemen für Benutzer so reibungslos wie möglich z
 
 2. Dokumentieren Sie ihre Definitionen
 
-3. Ermitteln Sie, welche Felder in den Daten erforderlich sind, um sie in Customer Journey Analytics als [Segmente](/help/components/filters/filters-overview.md) und [berechnete Metriken](/help/components/calc-metrics/calc-metr-overview.md) zu replizieren.
+3. Ermitteln Sie, welche Felder in den Daten erforderlich sind, um sie in Customer Journey Analytics als [Segmente](/help/components/segments/seg-overview.md) und [berechnete Metriken](/help/components/calc-metrics/calc-metr-overview.md) zu replizieren.
 
 Hier sind einige Videos, die Ihnen dabei helfen:
 

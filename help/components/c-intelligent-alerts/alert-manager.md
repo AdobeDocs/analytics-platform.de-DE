@@ -4,10 +4,10 @@ title: Verwalten von Warnhinweisen
 feature: Workspace Basics
 role: User, Admin
 exl-id: 174c3ebd-a77b-4403-ae9a-bb0cff4bcca6
-source-git-commit: a85efff8720d8fdf02b0d1290fedf17654be48e3
+source-git-commit: 38be838fccf896a12da3fbadac50e578081312ba
 workflow-type: tm+mt
-source-wordcount: '600'
-ht-degree: 21%
+source-wordcount: '596'
+ht-degree: 23%
 
 ---
 
@@ -18,7 +18,7 @@ Sie können Warnhinweise über eine zentrale Verwaltungsoberfläche von [!UICONT
 
 * Wählen Sie **[!UICONTROL Hauptbenutzeroberfläche]** Komponenten“ und dann **[!UICONTROL Warnhinweise]** aus.
 
-Der Warnhinweis-Manager ist wie der [Segment-Manager](/help/components/filters/manage-filters.md) und der [Manager für berechnete Metriken](/help/components/calc-metrics/cm-workflow/cm-manager.md) strukturiert.
+Der Warnhinweis-Manager ist wie der [Segment-Manager](/help/components/segments/seg-manage.md) und der [Manager für berechnete Metriken](/help/components/calc-metrics/cm-workflow/cm-manager.md) strukturiert.
 
 
 ## Warnhinweis-Manager
@@ -29,7 +29,7 @@ Der Warnhinweis-Manager verfügt über die folgenden Elemente der Benutzeroberfl
 
 ### Liste der Warnhinweise
 
-Die Liste „Warnhinweise“ alle Warnhinweise an, die Ihnen gehören, die Warnhinweise, die für alle Ihre Projekte gelten, und die Warnhinweise, die für Sie freigegeben wurden. Die Liste umfasst die folgenden Spalten:
+Die ➊ Warnhinweisliste zeigt alle Warnhinweise an, die Ihnen gehören, die Warnhinweise, die für alle Ihre Projekte gelten, und die Warnhinweise, die für Sie freigegeben wurden. Die Liste umfasst die folgenden Spalten:
 
 | Spalte | Beschreibung |
 |---|---|
@@ -49,7 +49,7 @@ Verwenden Sie ![Spalteneinstellung](/help/assets/icons/ColumnSetting.svg), um di
 
 ### Aktionsleiste
 
-Sie können Aktionen für Warnhinweise mithilfe der Aktionsleiste durchführen. Die Aktionsleiste ermöglicht die folgenden Aktionen:
+Sie können Aktionen für Warnhinweise mithilfe der Aktionsleiste ➋. Die Aktionsleiste ermöglicht die folgenden Aktionen:
 
 | Symbol | Aktion | Beschreibung |
 |:---:|---|---|
@@ -66,12 +66,12 @@ Sie können Aktionen für Warnhinweise mithilfe der Aktionsleiste durchführen. 
 
 ### Aktive Filterleiste
 
-In der Filterleiste werden die aktiven Filter angezeigt, die vom Filterbereich auf die Liste der Warnhinweise angewendet wurden (falls vorhanden). Mit ![XGröße75](/help/assets/icons/CrossSize75.svg) können Sie schnell einen Filter entfernen. Wenn mehr als ein Filter angegeben ist, können Sie alle Filter mit **[!UICONTROL Alle entfernen]** entfernen.
+Die Filterleiste zeigt ➌ die aktiven Filter an, die vom Filterbereich auf die Liste der Warnhinweise (falls vorhanden) angewendet wurden. Mit ![XGröße75](/help/assets/icons/CrossSize75.svg) können Sie schnell einen Filter entfernen. Wenn mehr als ein Filter angegeben ist, können Sie alle Filter mit **[!UICONTROL Alle entfernen]** entfernen.
 
 
 ### Panel „Filter“
 
-Sie können die Liste der Warnhinweise mithilfe des linken Bedienfelds ![Filter](/help/assets/icons/Filter.svg) **[!UICONTROL Filter]** filtern. Das Bedienfeld „Filter“ zeigt den Filtertyp und die Anzahl der Warnhinweise an, die den spezifischen Filter berücksichtigen.
+Sie können die Liste der Warnhinweise mithilfe der ➍ ![Filter](/help/assets/icons/Filter.svg) **[!UICONTROL Filter]** im linken Bereich filtern. Das Bedienfeld „Filter“ zeigt den Filtertyp und die Anzahl der Warnhinweise an, die den spezifischen Filter berücksichtigen.
 
 
 1. Wählen Sie ![Filter](/help/assets/icons/Filter.svg) aus, um das Bedienfeld „Filter“ zu öffnen. Wenn Sie mehr Platz für die Liste „Warnhinweise“ benötigen, können Sie erneut ![Filtern](/help/assets/icons/Filter.svg) auswählen, um das Bedienfeld zu schließen.
@@ -83,7 +83,7 @@ Sie können die Liste der Warnhinweise mithilfe des linken Bedienfelds ![Filter]
 {{tagfiltersection}}
 
 
-#### Datenansichtsfilter-Abschnitt
+#### Abschnitt zu Datenansichtsfiltern
 
 {{dataviewfiltersection}}
 
@@ -93,17 +93,17 @@ Sie können die Liste der Warnhinweise mithilfe des linken Bedienfelds ![Filter]
 {{ownerfiltersection}}
 
 
-#### Abschnitt zum aktivierten Statusfilter
+#### Abschnitt zu Filtern nach aktivierten Status
 
 {{enabledstatusfiltersection}}
 
 
-#### Filterabschnitt eingeben
+#### Abschnitt zu Typenfiltern
 
 {{typefiltersection}}
 
 
-#### Abschnitt „Andere Filter“
+#### Abschnitt zu Filtern von anderen Filtern
 
 {{otherfiltersfiltersection}}
 
@@ -113,7 +113,7 @@ Sie können die Liste der Warnhinweise mithilfe des linken Bedienfelds ![Filter]
 
 Sie können einen Warnhinweis bearbeiten
 
-* Wählen Sie in [[!UICONTROL &#x200B; Liste &#x200B;]Warnhinweis](#alerts-list) den Titel des Warnhinweises aus.
+* Wählen Sie in [[!UICONTROL  Liste ]Warnhinweis](#alerts-list) den Titel des Warnhinweises aus.
 
 Verwenden Sie die [Warnhinweiserstellung](alert-builder.md#alert-builder), um den Warnhinweis zu bearbeiten.
 

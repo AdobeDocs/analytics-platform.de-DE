@@ -4,8 +4,8 @@ description: Erfahren Sie, wie Sie Zielgruppen in Customer Journey Analytics ver
 exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
 feature: Audiences
 role: User
-source-git-commit: be062e350a8c1989be41aeb2774471a3fe1bf524
-workflow-type: ht
+source-git-commit: 38be838fccf896a12da3fbadac50e578081312ba
+workflow-type: tm+mt
 source-wordcount: '2368'
 ht-degree: 100%
 
@@ -73,7 +73,7 @@ Lesen Sie diesen [Überblick](/help/components/audiences/audiences-overview.md),
    | --- | --- |
    | In der Benutzeroberfläche **[!UICONTROL Zielgruppen]** | Wählen Sie im Customer Journey Analytics-Hauptmenü die Option **[!UICONTROL Komponenten]** > **[!UICONTROL Zielgruppen]** aus. Die Benutzeroberfläche „Zielgruppen“ wird angezeigt. Wählen Sie **[!UICONTROL Zielgruppe erstellen]** aus. Daraufhin wird der [!UICONTROL Audience Builder] geöffnet. |
    | Über eine Visualisierung in Analysis Workspace | Viele Visualisierungen in Analysis Workspace ermöglichen es Ihnen, mithilfe des Kontextmenüs eine Zielgruppe zu erstellen. Sie können beispielsweise **[!UICONTROL Zielgruppe erstellen]** aus dem Kontextmenü eines Elements in einer [Freiformtabelle](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) oder eines Knotens in der [Journey-Arbeitsfläche](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md) auswählen.<p>Mit dieser Methode wird das Segment im Zielgruppen-Builder vorab mit der ausgewählten Dimension oder dem ausgewählten Dimensionselement aufgefüllt.</p><p>Mit den folgenden Visualisierungen können Sie mithilfe des Kontextmenüs eine Zielgruppe erstellen:</p><ul><li>[Kohortentabelle](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md)</li><li>[Fallout](/help/analysis-workspace/visualizations/fallout/fallout-flow.md)</li><li>[Fluss](/help/analysis-workspace/visualizations/c-flow/flow.md)</li><li>[Freiformtabelle](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)</li><li>[Journey-Arbeitsfläche](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md)</li><li>[Venn](/help/analysis-workspace/visualizations/venn.md)</li></ul><p>**Hinweis:** Zielgruppen können keine berechneten Metriken enthalten. Wenn Sie versuchen, eine Zielgruppe mit einer berechneten Metrik zu erstellen, wird die berechnete Metrik nicht in die Zielgruppendefinition einbezogen.</p> |
-   | Über die Benutzeroberfläche zur Erstellung/Bearbeitung von Segmenten | Aktivieren Sie das Kontrollkästchen **[!UICONTROL Zielgruppe aus diesem Segment erstellen]**. Mit dieser Methode wird das Segment vorab aufgefüllt. Weitere Informationen finden Sie unter [Erstellen von Segmenten](/help/components/filters/create-filters.md). |
+   | Über die Benutzeroberfläche zur Erstellung/Bearbeitung von Segmenten | Aktivieren Sie das Kontrollkästchen **[!UICONTROL Zielgruppe aus diesem Segment erstellen]**. Mit dieser Methode wird das Segment vorab aufgefüllt. Weitere Informationen finden Sie unter [Erstellen von Segmenten](/help/components/segments/seg-create.md). |
 
    {style="table-layout:auto"}
 

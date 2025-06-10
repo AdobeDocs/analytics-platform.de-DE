@@ -5,7 +5,7 @@ exl-id: 48546227-029c-4cf9-9b7e-66d547769270
 solution: Customer Journey Analytics
 feature: Use Cases
 role: User
-source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
+source-git-commit: 38be838fccf896a12da3fbadac50e578081312ba
 workflow-type: tm+mt
 source-wordcount: '1141'
 ht-degree: 88%
@@ -69,7 +69,7 @@ Die folgenden Visualisierungen können verwendet werden, um Einblicke aus Ihrem 
 
 In dieser Visualisierung können Sie die Qualität der Datenzuordnung in der kanalübergreifenden Analyse erkennen.
 
-1. Erstellen Sie zwei Segmente. Die in diesen beiden Segmenten verwendete Variable ist dieselbe oben erwähnte Variable, die die Datenquelle jedes Ereignisses widerspiegelt. Weitere [ finden Sie unter ](/help/components/filters/create-filters.md) erstellen .
+1. Erstellen Sie zwei Segmente. Die in diesen beiden Segmenten verwendete Variable ist dieselbe oben erwähnte Variable, die die Datenquelle jedes Ereignisses widerspiegelt. Weitere [ finden Sie unter ](/help/components/segments/seg-create.md) erstellen .
    * Personen-Container, bei dem die Datensatz-ID mit Ihren Web-Daten übereinstimmt
    * Personen-Container, bei dem die Datensatz-ID mit Ihren Callcenter-Daten übereinstimmt
 2. Ziehen Sie in Analysis Workspace eine [Venn](/help/analysis-workspace/visualizations/venn.md)-Visualisierung auf die Arbeitsbereich-Arbeitsfläche.

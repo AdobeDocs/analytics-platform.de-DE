@@ -4,9 +4,9 @@ description: Konzepte und Funktionen für die B2B edition von Customer Journey A
 solution: Customer Journey Analytics
 feature: Basics
 role: User, Admin
-badgePremium: label="B2B edition"
+badgePremium: label="B2B Edition"
 exl-id: df2cc922-d214-49b9-8fdb-443cc1dac05b
-source-git-commit: 1a7b877d989764e737d7f35c05f515efe3e7a307
+source-git-commit: 38be838fccf896a12da3fbadac50e578081312ba
 workflow-type: tm+mt
 source-wordcount: '1470'
 ht-degree: 2%
@@ -67,7 +67,7 @@ Die Hierarchie und die Beziehungen zwischen den Containern sind vorgegeben. Oppo
 
 Sie können die B2B-Container für bestimmte B2B-Funktionen in Analysis Workspace verwenden:
 
-* **Segmentierung**: Mit [B2B-Segment-Containern](/help/components/filters/filters-overview.md#b2b-containers) können Sie Segmente mit einem Container-Bereich außerhalb von Person, Sitzung oder Ereignis erstellen. Beispiel: ein Konto mit dem Segment „Ereignisregistrierung“ oder ein US-Konto mit dem Segment „Einkaufsgruppen“ und „Vertriebschancen“ der Stufe 5.
+* **Segmentierung**: Mit [B2B-Segment-Containern](/help/components/segments/seg-overview.md#b2b-containers) können Sie Segmente mit einem Container-Bereich außerhalb von Person, Sitzung oder Ereignis erstellen. Beispiel: ein Konto mit dem Segment „Ereignisregistrierung“ oder ein US-Konto mit dem Segment „Einkaufsgruppen“ und „Vertriebschancen“ der Stufe 5.
 
   >[!NOTE]
   >

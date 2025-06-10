@@ -5,8 +5,8 @@ exl-id: f9b0b3c2-7c88-4bef-af33-0d309cafe799
 solution: Customer Journey Analytics
 feature: Components
 role: User
-source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
-workflow-type: ht
+source-git-commit: 38be838fccf896a12da3fbadac50e578081312ba
+workflow-type: tm+mt
 source-wordcount: '913'
 ht-degree: 100%
 
@@ -23,7 +23,7 @@ So verwalten Sie Komponenten über die Haupt-Benutzeroberfläche von Customer Jo
 
 Sie können die folgenden Komponenten verwalten:
 
-* [Segmente](filters/filters-overview.md): Erstellen, verwalten, teilen und verwenden Sie leistungsstarke, zielgerichtete Segmente für Ihre Berichte. Mit Segmenten können Sie Teilmengen von Personen anhand von Merkmalen oder Interaktionen identifizieren.
+* [Segmente](segments/seg-overview.md): Erstellen, verwalten, teilen und verwenden Sie leistungsstarke, zielgerichtete Segmente für Ihre Berichte. Mit Segmenten können Sie Teilmengen von Personen anhand von Merkmalen oder Interaktionen identifizieren.
 * [Berechnete Metriken:](calc-metrics/calc-metr-overview.md) Verwenden Sie Metriken und Formeln als neue Komponenten für die Berichterstellung.
 * [Datumsbereiche](date-ranges/create.md): Passen Sie die von Analysis Workspace vorgeschlagenen Datumsbereiche an und präzisieren Sie diese.
 * [Anmerkungen](/help/components/annotations/overview.md): Informieren Sie andere Benutzerinnen und Benutzer in Ihrem Unternehmen über die kontextbezogene Bedeutung von Daten und Erkenntnissen.
@@ -72,7 +72,7 @@ Sie können Komponenten verwalten, entweder einzeln oder durch Auswahl mehrerer 
    | ![Freigeben](/help/assets/icons/ShareAlt.svg) [!UICONTROL **Freigeben**] | Freigeben von Komponenten für Benutzer in Ihrer Organisation. Diese Option steht nur für benutzerdefinierte Komponenten zur Verfügung, beispielsweise für Segmente oder berechnete Metriken. |
    | ![Löschen](/help/assets/icons/Delete.svg) [!UICONTROL **Löschen**] | Löschen Sie Komponenten, die Sie nicht mehr benötigen. Diese Option steht nur für benutzerdefinierte Komponenten zur Verfügung, beispielsweise für Segmente oder berechnete Metriken. |
 
-Benutzerdefinierte Komponenten können auch über ihre jeweiligen Komponenten-Manager verwaltet werden. Weitere Informationen finden Sie unter [Verwalten von Segmenten](/help/components/filters/manage-filters.md).
+Benutzerdefinierte Komponenten können auch über ihre jeweiligen Komponenten-Manager verwaltet werden. Weitere Informationen finden Sie unter [Verwalten von Segmenten](/help/components/segments/seg-manage.md).
 
 ## Verwalten der Komponentenliste
 

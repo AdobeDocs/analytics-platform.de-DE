@@ -4,8 +4,8 @@ title: Übersicht über Bedienfelder
 feature: Panels
 exl-id: be3e34a0-06c1-4200-b965-96084c2912fd
 role: User
-source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
-workflow-type: ht
+source-git-commit: 38be838fccf896a12da3fbadac50e578081312ba
+workflow-type: tm+mt
 source-wordcount: '2129'
 ht-degree: 100%
 
@@ -144,10 +144,10 @@ Ziehen Sie beliebige Segmente per Drag-and-Drop aus dem linken Bedienfeld in den
 
 #### Schnellsegmente
 
-Komponenten, die keine Segmente sind, können auch direkt in den Ablagebereich gezogen werden, um Schnellsegmente zu erstellen, wodurch Sie sich das mühsame Aufrufen des [Segment Builders](/help/components/filters/filter-builder.md) ersparen können. Die auf diese Weise erstellten Segmente werden automatisch als Segmente auf Ereignisebene definiert. Diese Definition kann schnell geändert werden, indem Sie neben dem Segmentnamen die Option ![Bearbeiten](/help/assets/icons/Edit.svg) auswählen.
+Komponenten, die keine Segmente sind, können auch direkt in den Ablagebereich gezogen werden, um Schnellsegmente zu erstellen, wodurch Sie sich das mühsame Aufrufen des [Segment Builders](/help/components/segments/seg-builder.md) ersparen können. Die auf diese Weise erstellten Segmente werden automatisch als Segmente auf Ereignisebene definiert. Diese Definition kann schnell geändert werden, indem Sie neben dem Segmentnamen die Option ![Bearbeiten](/help/assets/icons/Edit.svg) auswählen.
 
 
-Weitere Informationen finden Sie unter [Schnellsegmente](/help/components/filters/quick-filters.md).
+Weitere Informationen finden Sie unter [Schnellsegmente](/help/components/segments/seg-quick.md).
 
 ![Ad-hoc-Segmente, die veröffentlicht und im Ablegebereich abgelegt werden](assets/adhoc-segment-filter.png)
 
@@ -155,7 +155,7 @@ Weitere Informationen finden Sie unter [Schnellsegmente](/help/components/filter
 
 >[!BEGINSHADEBOX]
 
-Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Dropdown-Segmente](https://video.tv.adobe.com/v/327486?quality=12&learn=on&captions=ger){target="_blank"} finden Sie ein Demovideo.
+Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Dropdown-Segmente](https://video.tv.adobe.com/v/23877?quality=12&learn=on){target="_blank"} finden Sie ein Demovideo.
 
 {{videoaa}}
 
