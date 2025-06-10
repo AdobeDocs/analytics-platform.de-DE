@@ -30,7 +30,7 @@ In den folgenden Abschnitten erfahren Sie, wie Sie mithilfe segmentierter Metrik
 ## Beliebte Seiten
 
 1. [Erstellen Sie eine berechnete ](cm-workflow.md) aus einem Workspace-Projekt namens `German people`.
-1. Erstellen Sie im [Generator für berechnete ](cm-build-metrics.md)[ ein Segment](/help/components/segments/seg-builder.md) mit dem Titel &quot;`Germany`&quot;, d. h. mithilfe des Felds „CRM-Land“ aus Ihren CRM-Daten, um zu bestimmen, woher eine Person kommt.
+1. Erstellen Sie im [Generator für berechnete ](cm-build-metrics.md) [ ein Segment](/help/components/segments/seg-builder.md) mit dem Titel &quot;`Germany`&quot;, d. h. mithilfe des Felds „CRM-Land“ aus Ihren CRM-Daten, um zu bestimmen, woher eine Person kommt.
 
    >[!TIP]
    >

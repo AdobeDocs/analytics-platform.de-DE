@@ -113,7 +113,7 @@ Sie können die Liste der Warnhinweise mithilfe der ➍ ![Filter](/help/assets/i
 
 Sie können einen Warnhinweis bearbeiten
 
-* Wählen Sie in [[!UICONTROL  Liste ]Warnhinweis](#alerts-list) den Titel des Warnhinweises aus.
+* Wählen Sie in [[!UICONTROL &#x200B; Liste &#x200B;]Warnhinweis](#alerts-list) den Titel des Warnhinweises aus.
 
 Verwenden Sie die [Warnhinweiserstellung](alert-builder.md#alert-builder), um den Warnhinweis zu bearbeiten.
 

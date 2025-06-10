@@ -61,7 +61,7 @@ Um ein Schnellsegment zu verwalten, bewegen Sie den Mauszeiger über das spezifi
 
 ## Quick Segment Builder
 
-Unten finden Sie ein Beispiel für den Quick Segment Builder. In diesem Beispiel wird der Builder für ein Schnellsegment namens &quot;`Call Reason = Order Change AND Online Orders is greater than or equal 1`&quot; geöffnet. Beide Schnellsegmente oben gelten für das Bedienfeld [!UICONTROL Dashboard für durchschnittliche Bestellwerte] und für alle darin enthaltenen Visualisierungen, wie [!UICONTROL  Freiformtabelle Durchschnittlicher Bestellwert pro Land].
+Unten finden Sie ein Beispiel für den Quick Segment Builder. In diesem Beispiel wird der Builder für ein Schnellsegment namens &quot;`Call Reason = Order Change AND Online Orders is greater than or equal 1`&quot; geöffnet. Beide Schnellsegmente oben gelten für das Bedienfeld [!UICONTROL Dashboard für durchschnittliche Bestellwerte] und für alle darin enthaltenen Visualisierungen, wie [!UICONTROL &#x200B; Freiformtabelle Durchschnittlicher Bestellwert pro Land].
 
 ![Quick Segment Builder](assets/quick-filter-builder.png)
 
