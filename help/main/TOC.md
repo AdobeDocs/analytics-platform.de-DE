@@ -12,7 +12,7 @@ breadcrumb-title: Handbuch zu Customer Journey Analytics
 source-git-commit: 38be838fccf896a12da3fbadac50e578081312ba
 workflow-type: tm+mt
 source-wordcount: '1243'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -45,7 +45,7 @@ ht-degree: 98%
       + [Überblick](/help/getting-started/cja-b2b-edition.md)
       + [B2B-Konzepte und -Funktionen](/help/getting-started/cja-b2b-concepts-features.md)
       + [Schnellstartanleitung](/help/getting-started/cja-b2b-quick-start-guide.md)
-      + [Übergangsleitfaden](/help/getting-started/cja-b2b-transition.md)
+      + [Übergangshandbuch](/help/getting-started/cja-b2b-transition.md)
 
 + Customer Journey Analytics und Adobe Analytics {#compare-aa-cja}
    + Upgrade auf Customer Journey Analytics {#upgrade-to-cja}
@@ -411,8 +411,8 @@ ht-degree: 98%
    + [Feldbasierte Zuordnung](/help/stitching/fbs.md)
    + [Diagrammbasierte Zuordnung](/help/stitching/gbs.md)
    + [Zuordnung verwenden](/help/stitching/use-stitching.md)
-   + [Erstellen und Verwalten von zugeordneten Datensätzen](/help/stitching/stitching-ui.md)
-   + [Zuordnung validieren](/help/stitching/validate.md)
+   + [Erstellen und Verwalten zugeordneter Datensätze](/help/stitching/stitching-ui.md)
+   + [Validieren der Zuordnung](/help/stitching/validate.md)
    + [Häufig gestellte Fragen](/help/stitching/faq.md)
 
 + Adobe-Integrationen {#integrations}
@@ -434,13 +434,13 @@ ht-degree: 98%
       + [Verwenden von Marketing-Kanal-Dimensionen](../use-cases/aa-data/marketing-channels.md)
       + [Kombinieren von Report Suites mit verschiedenen Schemata](../use-cases/aa-data/combine-report-suites.md)
    + B2B {#b2b}
-      + [Ein Beispiel für ein B2B-Projekt auf Personenbasis](../use-cases/b2b/example.md)
+      + [Beispiel für ein personenbasiertes B2B-Projekt](../use-cases/b2b/example.md)
       + B2B Edition {#b2b-edition}
-         + [Anwendungsfälle - Übersicht](/help/use-cases/b2b/b2b-edition/use-cases-overview.md)
+         + [Überblick über Anwendungsfälle](/help/use-cases/b2b/b2b-edition/use-cases-overview.md)
          + [Einrichten](/help/use-cases/b2b/b2b-edition/setup.md)
-         + [Marketing-Konto optimieren](/help/use-cases/b2b/b2b-edition/optimize-account-marketing.md)
-         + [Wichtige Konten vergrößern](/help/use-cases/b2b/b2b-edition/grow-key-accounts.md)
-         + [Produktwert erstellen](/help/use-cases/b2b/b2b-edition/build-product-value.md)
+         + [Optimieren des Konto-Marketings](/help/use-cases/b2b/b2b-edition/optimize-account-marketing.md)
+         + [Wachstum wichtiger Konten](/help/use-cases/b2b/b2b-edition/grow-key-accounts.md)
+         + [Fördern von Produktwert](/help/use-cases/b2b/b2b-edition/build-product-value.md)
    + Komplexe Daten {#complex-data}
       + [Verwenden von Objekt-Arrays](../use-cases/object-arrays.md)
    + Kanalübergreifende Daten {#cross-channel}
