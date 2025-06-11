@@ -6,9 +6,9 @@ solution: Customer Journey Analytics
 feature: Basics
 role: User
 source-git-commit: c526531206887acf7c750c8759d4eec5dd24935f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2487'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -118,7 +118,7 @@ In der folgenden Tabelle sind Funktionen aufgeführt, die in Customer Journey An
 
 | Funktion | Hinweise |
 | --- | --- |
-| **Workspace-Bedienfelder** | Leeres Bedienfeld, Attributions-Bedienfeld, Freiform-Bedienfeld und Quick Insights werden vollständig unterstützt. Die Bedienfelder „Segmentvergleich“ und „Analytics for Target“ (A4T) werden nicht unterstützt. |
+| **Workspace-Panels** | Leeres Bedienfeld, Attributions-Bedienfeld, Freiform-Bedienfeld und Quick Insights werden vollständig unterstützt. Die Bedienfelder „Segmentvergleich“ und „Analytics for Target“ (A4T) werden nicht unterstützt. |
 
 ## Keine Unterstützung, aber geplant {#planned}
 

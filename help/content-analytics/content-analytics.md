@@ -6,9 +6,9 @@ feature: Content Analytics
 role: Admin, User
 exl-id: 0d3be50d-c635-459b-8b01-61d6d4ef0cdf
 source-git-commit: dd4adc5acd05aecf0a67072df6688a344e1ce5c9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '836'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -60,14 +60,14 @@ Content Analytics verwendet Web-Bildansichtsdaten in Ereignisdatensätzen in Exp
 
 >[!NOTE]
 >
->Wenn Sie das Privacy and Security Shield-Add-on lizenziert haben, beachten Sie, dass (alle aus Erlebnissen und Assets generierten Daten) vorbehaltlich Content Analyticss nicht von der DULE-Kennzeichnung oder von kundenverwalteten Schlüsseln abgedeckt werden. Außerdem ist Content Analytics kein HIPAA-fähiger Service.
+>Wenn Sie das Privacy und Security Shield-Add-on lizenziert haben, beachten Sie, dass aus Erlebnissen und Assets generierte Daten, die der Inhaltsanalyse unterliegen, nicht von DULE-Labels oder von kundenseitig verwalteten Schlüsseln abgedeckt werden. Außerdem ist die Inhaltsanalyse kein HIPAA-fähiger Dienst.
 >
 
 
 >[!MORELIKETHIS]
 >
 >[Reporting für die Inhaltsanalyse](report/report.md)
->&#x200B;>[Konfigurieren der Inhaltsanalyse](config/configuration.md)
->&#x200B;>[Berechnen von Bounces und Bounce-Raten in Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/calculating-bounces-amp-bounce-rate-in-adobe-customer-journey/ba-p/706446?profile.language=de&lang=de#M454)
+>>[Konfigurieren der Inhaltsanalyse](config/configuration.md)
+>>[Berechnen von Bounces und Bounce-Raten in Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/calculating-bounces-amp-bounce-rate-in-adobe-customer-journey/ba-p/706446?lang=de#M454)
 >
 

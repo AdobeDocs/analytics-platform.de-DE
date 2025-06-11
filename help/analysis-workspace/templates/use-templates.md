@@ -5,9 +5,9 @@ feature: Workspace Basics
 role: User, Admin
 exl-id: d61f215d-9089-4014-9c5a-97f5d7134f34
 source-git-commit: 49e0327b2c67ed12fa316f74f6d6a8ce39e3c87a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '19829'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -1501,7 +1501,7 @@ Die folgenden Vorlagen sind verfügbar:
 | **Verkaufsstelle** | Zeigen Sie Transaktionsdaten zum Point of Sale (PoS) an, einschließlich Umsatz, getätigter Bestellungen und verkaufter Einheiten. Diese Vorlage enthält auch Visualisierungen, die Informationen zu Top-Stores, Top-Produkten und Top-Produktkategorien sowie zu Online- und Offline-Verkäufen anzeigen. <p>**Dies kann Ihnen helfen**, besser zu verstehen, was Ihre meistverkauften Produkte sind, sowohl im Geschäft als auch online.</p><p>**Basierend auf Ihren Erkenntnissen können Sie** verschiedene Maßnahmen ergreifen, z. B. den leistungsstärksten Produkten und Kanälen mehr Marketing-Ressourcen zuweisen.</p><p>Diese Vorlage verwendet die Metriken „Benutzende“, „Umsatz“ und „Bestellungen“.</p> |
 | **Analyse von Journey Optimizer-E-Mails** | Zeigen Sie an, wie die E-Mails, die Sie mit Adobe Journey Optimizer entwerfen und senden, neue Mitgliedschaften, Kundenloyalität und Crosssell-Möglichkeiten generieren. <p>**Dies kann Ihnen helfen**, die Effektivität der E-Mails, die Sie mit Adobe Journey Optimizer entwerfen und senden, besser zu verstehen.</p><p>**Basierend auf Ihren Erkenntnissen können Sie** eine Reihe von Schritten ausführen, z. B. Ihre E-Mail-Strategie für eine bestimmte E-Mail-Kampagne anpassen.</p> |
 | **Umfrage** | Zeigen Sie die Benutzerinteraktion für Ihre Umfragen an. Zeigen Sie die Anzahl der Starts und Abschlüsse, die wichtigsten Fragen und Antworten und die Anzahl der erstmaligen und wiederholten Teilnehmenden an. <p>**Dies kann Ihnen helfen**, die Interaktionsstufen und Erfolgsraten der Umfragen besser zu verstehen.</p><p>**Basierend auf Ihren Erkenntnissen können Sie** verschiedene Maßnahmen ergreifen, z. B. zukünftige Umfragen anpassen, um die Teilnahme zu erhöhen.</p><p>Diese Vorlage verwendet die Metriken „Benutzende“, „Ereignisse“, „Umfragestarts“, „Umfrageabschlüsse“ und „Abschlussrate der Umfrage“.</p> |
-| **Produktnutzungsübersicht** | Erfahren Sie, wie Ihre Organisation Customer Journey Analytics verwendet. <p>**Dies kann Ihnen helfen**, besser zu verstehen, wie viele Personen in Ihrer Organisation Customer Journey Analytics wie oft verwenden, und den Trend dieser Daten im Laufe der Zeit darzustellen. Sie können auch die Anzahl der erstellten Projekte und Details zu diesen Projekten sehen. Erfahren Sie neben anderen Nutzungsstatistiken, welche Komponenten, Visualisierungen und Bedienfelder am häufigsten verwendet werden. [Weitere Informationen](/help/tools/product-usage/usage-overview.md)</p><p>**Basierend auf Ihren Erkenntnissen können Sie** eine Reihe von Schritten ausführen, z. B. nicht verwendete Projekte oder Komponenten löschen oder Benutzerschulungen für beliebte Funktionen bereitstellen.</p> |
+| **Produktnutzungsübersicht** | Erfahren Sie, wie Ihre Organisation Customer Journey Analytics verwendet. <p>**Dies kann Ihnen helfen**, besser zu verstehen, wie viele Personen in Ihrer Organisation Customer Journey Analytics wie oft verwenden, und den Trend dieser Daten im Laufe der Zeit darzustellen. Sie können auch die Anzahl der erstellten Projekte und Details zu diesen Projekten sehen. Erfahren Sie neben anderen Nutzungsstatistiken, welche Komponenten, Visualisierungen und Panels am häufigsten verwendet werden. [Weitere Informationen](/help/tools/product-usage/usage-overview.md)</p><p>**Basierend auf Ihren Erkenntnissen können Sie** eine Reihe von Schritten ausführen, z. B. nicht verwendete Projekte oder Komponenten löschen oder Benutzerschulungen für beliebte Funktionen bereitstellen.</p> |
 
 ### Journey Optimizer {#AJO-templates}
 
