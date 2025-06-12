@@ -4,10 +4,10 @@ description: Aktuelle Versionshinweise zu Customer Journey Analytics vor der Ver
 feature: Release Notes
 hide: true
 hidefromtoc: true
-source-git-commit: aa6783f658a71ec25034b2564a714550f80ed5e6
+source-git-commit: 5abb6a96812920f073026bbb927beb2e18f9ef2b
 workflow-type: tm+mt
-source-wordcount: '486'
-ht-degree: 67%
+source-wordcount: '523'
+ht-degree: 64%
 
 ---
 
@@ -20,6 +20,14 @@ ht-degree: 67%
 
 Diese Versionshinweise beziehen sich auf den Veröffentlichungszeitraum vom Dienstag, 2. Juni 2025 bis zum Mittwoch, 15. Juli 2025. Adobe Customer Journey Analytics-Versionen basieren auf einem [Modell der kontinuierlichen Bereitstellung](releases.md) das einen besser skalierbaren, schrittweisen Ansatz für die Implementierung von Funktionen ermöglicht.
 
+Versionshinweise zu Adobe Experience Platform und anderen Programmen finden Sie in der folgenden Dokumentation:
+
+* [Adobe Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/release-notes/pre-release-notes)
+* [Adobe Journey Optimizer](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/whats-new/release-notes?lang=en)
+* [Adobe Journey Optimizer B2B](https://experienceleague.adobe.com/en/docs/journey-optimizer-b2b/user/release-notes?lang=en)
+* [Komposition föderierter Zielgruppen](https://experienceleague.adobe.com/en/docs/federated-audience-composition/using/release-notes?lang=en)
+* [Real-Time CDP Collaboration](https://experienceleague.adobe.com/en/docs/real-time-cdp-collaboration/using/latest?lang=en)
+
 ## Neue oder aktualisierte Funktionen
 
 | Funktion | Beschreibung | [Rollout-Beginn](releases.md) | [Allgemeine Verfügbarkeit](releases.md) |
@@ -29,6 +37,6 @@ Diese Versionshinweise beziehen sich auf den Veröffentlichungszeitraum vom Dien
 | **Unterstützung für sichere Ziele in Report Builder** | Dem Report Builder-Add-in wurden neue Exportziele hinzugefügt. Die folgenden Cloud-Speicher-Ziele werden unterstützt: <ul><li>AEP Data Landing Zone</li><li>Amazon S3 Role ARN</li><li>Google Cloud Platform</li><li>Azure SAS</li><li>Azure RBAC</li></ul> |  | Juni 18,2025 |
 | **Neues Vorschauerlebnis** | Im Vorschaubereich, in dem Segmente, berechnete Metriken usw. in der Vorschau angezeigt werden, wird jetzt eine horizontale Balkenvisualisierung anstelle einer Ringvisualisierung verwendet. |  | 18. Juni 2025 |
 | **Dialogfeld „Geändertes Attributionsmodell“** | Sie können jetzt den Container und den Zeitraum im Dialogfeld Attributionsmodell separat definieren. |  | Juni 18,2025 |
-| **Verbindungszuordnung** | Eine neue [Verbindungszuordnungs-Schnittstelle](https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-connections/create-connection#connection-map) ist verfügbar, um Ihre Verbindungskonfiguration visuell anzuzeigen. |  | 18. Juni 2025 |
+| **Verbindungszuordnung** | Eine neue [Verbindungszuordnungs-Schnittstelle](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-connections/create-connection#connection-map) ist verfügbar, um Ihre Verbindungskonfiguration visuell anzuzeigen. |  | 18. Juni 2025 |
 | **Hinzufügen und Anzeigen von Kommentaren in Analysis Workspace-Projekten** | Eine neue [Kommentarfunktion](https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-workspace/build-workspace-project/comment-projects) in Analysis Workspace ermöglicht es Ihnen, im Rahmen eines Analysis Workspace-Projekts Erkenntnisse zu teilen und Fragen zu stellen. Dadurch können Diskussionen über die Daten optimiert werden, sodass Gespräche im Kontext der diskutierten Daten geführt werden. Sie können <ul><li>jedes Analysis Workspace-Projekt kommentieren, auf das Sie Zugriff haben,</li><li>einen bestimmten Punkt in einer Visualisierung kommentieren oder allgemeine Kommentare zu einem Projekt abgeben,</li><li>andere Benutzende taggen, um sie über Ihre Kommentare zu informieren,</li><li>vorhandene Kommentare verwalten (bearbeiten, anheften, schließen usw.).</li></ul>Customer Journey Analytics-Admins können die [Kommentarfunktion auf Organisationsebene deaktivieren](https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-workspace/user-preferences#ims-organization-preferences). Projektverantwortliche können die [Kommentarfunktion auf Projektebene deaktivieren](https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-workspace/build-workspace-project/create-projects). |  | &#x200B;25. Juni 2025 <p>(Veröffentlichung ursprünglich für den 29. Mai 2025 geplant)</p> |
 
