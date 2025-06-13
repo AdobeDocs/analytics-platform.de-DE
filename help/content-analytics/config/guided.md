@@ -8,7 +8,7 @@ exl-id: 4aff664c-3cd9-4591-8122-6ebff10e4a76
 source-git-commit: 6d4d6558f8f0ebb6a0885c958fe019d3e5afab4c
 workflow-type: tm+mt
 source-wordcount: '2677'
-ht-degree: 93%
+ht-degree: 94%
 
 ---
 
@@ -97,7 +97,7 @@ Jede Konfiguration erfordert einen eindeutigen Namen. Beispiel: `Example Content
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataview_change_dialog"
 >title="Neue Datenansicht"
->abstract="Sie haben eine neue Datenansicht für diese Konfiguration ausgewählt. Die neue Datenansicht wird aktualisiert, sodass sie die Dimensionen und Metriken der Inhaltsanalyse einschließt. Diese Metriken und Dimensionen werden aus der ursprünglich ausgewählten Datenansicht entfernt.<br/><br/>Wenn der neuen Datenansicht eine andere Verbindung zugeordnet ist, wird die Verbindung aktualisiert, sodass sie Datensätze der Inhaltsanalyse einschließt. Die Content Analytics-Datensätze werden nicht aus der ursprünglich ausgewählten Verbindung entfernt."
+>abstract="Sie haben eine neue Datenansicht für diese Konfiguration ausgewählt. Die neue Datenansicht wird aktualisiert, sodass sie die Dimensionen und Metriken der Inhaltsanalyse einschließt. Diese Metriken und Dimensionen werden aus der ursprünglich ausgewählten Datenansicht entfernt.<br/><br/>Wenn der neuen Datenansicht eine andere Verbindung zugeordnet ist, wird die Verbindung aktualisiert, sodass sie Datensätze der Inhaltsanalyse einschließt. Die Datensätze der Inhaltsanalyse werden nicht aus der ursprünglich ausgewählten Verbindung entfernt."
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataview_current_cleanup_labels_dialog"
@@ -231,7 +231,7 @@ So bearbeiten Sie vorhandene Erlebnisse oder schließen neue Erlebnisse in eine 
    * den Prozess, der Erlebnisattribute aus Content Analytics-Ereignisdaten generiert
    * die Berichtsvorlage in Customer Journey Analytics
 
-* Wählen Sie ![Bearbeiten](/help/assets/icons/Edit.svg) **[!UICONTROL Bearbeiten]** aus, um die Konfiguration der Datenerfassung für Erlebnisse in Content Analytics weiter zu bearbeiten. Sie werden zur [Adobe Content Analytics-Erweiterung](https://experienceleague.adobe.com/de/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-segmenting) in der Tags-Eigenschaft weitergeleitet, die mit der aktuellen Konfiguration verknüpft ist.
+* Wählen Sie ![Bearbeiten](/help/assets/icons/Edit.svg) **[!UICONTROL Bearbeiten]** aus, um die Konfiguration der Datenerfassung für Erlebnisse in Content Analytics weiter zu bearbeiten. Sie werden zur [Adobe Content Analytics-Erweiterung](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-segmenting) in der Tags-Eigenschaft weitergeleitet, die mit der aktuellen Konfiguration verknüpft ist.
 
 
 ### Datenerfassung {#onboarding-data-collection}
@@ -326,9 +326,9 @@ In einer neuen Konfiguration müssen Sie festlegen, ob Sie eine vorhandene Tag-E
 
 Sie können die Tags-Eigenschaft für eine vorhandene Konfiguration nicht bearbeiten. Sie können jedoch die Seiten und Assets bearbeiten, die ein- oder ausgeschlossen werden sollen.
 
-* Um zu bearbeiten, welche Seiten bei der Datenerfassung für Content Analytics ein- oder ausgeschlossen werden sollen, wählen Sie ![Bearbeiten](/help/assets/icons/Edit.svg) **[!UICONTROL Bearbeiten]** unter **[!UICONTROL Erlebnis]** aus. Sie werden zur [Adobe Content Analytics-Erweiterung](https://experienceleague.adobe.com/de/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-segmenting) weitergeleitet, die mit der Tags-Eigenschaft für die aktuelle Content Analytics-Konfiguration verknüpft ist. Sie können den regulären Ausdruck bearbeiten, um Seiten ein- oder auszuschließen. Achten Sie darauf, Ihre Änderungen zu [veröffentlichen](#publish).
+* Um zu bearbeiten, welche Seiten bei der Datenerfassung für Content Analytics ein- oder ausgeschlossen werden sollen, wählen Sie ![Bearbeiten](/help/assets/icons/Edit.svg) **[!UICONTROL Bearbeiten]** unter **[!UICONTROL Erlebnis]** aus. Sie werden zur [Adobe Content Analytics-Erweiterung](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-segmenting) weitergeleitet, die mit der Tags-Eigenschaft für die aktuelle Content Analytics-Konfiguration verknüpft ist. Sie können den regulären Ausdruck bearbeiten, um Seiten ein- oder auszuschließen. Achten Sie darauf, Ihre Änderungen zu [veröffentlichen](#publish).
 
-* Um zu bearbeiten, welche Assets bei der Datenerfassung für Content Analytics ein- oder ausgeschlossen werden sollen, wählen Sie ![Bearbeiten](/help/assets/icons/Edit.svg) **[!UICONTROL Bearbeiten]** unter **[!UICONTROL Asset]** aus. Sie werden zur [Adobe Content Analytics-Erweiterung](https://experienceleague.adobe.com/de/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-segmenting) weitergeleitet, die mit der Tags-Eigenschaft für die aktuelle Content Analytics-Konfiguration verknüpft ist. Sie können den regulären Ausdruck bearbeiten, um Assets ein- oder auszuschließen. Achten Sie darauf, Ihre Änderungen zu [veröffentlichen](#publish).
+* Um zu bearbeiten, welche Assets bei der Datenerfassung für Content Analytics ein- oder ausgeschlossen werden sollen, wählen Sie ![Bearbeiten](/help/assets/icons/Edit.svg) **[!UICONTROL Bearbeiten]** unter **[!UICONTROL Asset]** aus. Sie werden zur [Adobe Content Analytics-Erweiterung](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-segmenting) weitergeleitet, die mit der Tags-Eigenschaft für die aktuelle Content Analytics-Konfiguration verknüpft ist. Sie können den regulären Ausdruck bearbeiten, um Assets ein- oder auszuschließen. Achten Sie darauf, Ihre Änderungen zu [veröffentlichen](#publish).
 
 ### Zusammenfassung {#summary}
 
