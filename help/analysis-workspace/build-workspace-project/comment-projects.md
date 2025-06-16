@@ -4,9 +4,9 @@ title: Hinzufügen und Anzeigen von Kommentaren in Projekten
 feature: Workspace Basics
 role: User
 exl-id: 05f69a1c-31c2-40d8-ae8b-a084169897b1
-source-git-commit: 02b85db81c384c78f7d388b19c8ad53d0028de43
+source-git-commit: 29db477c96ad5ca7c69a7f7055c1a7fd3c06eb04
 workflow-type: tm+mt
-source-wordcount: '1816'
+source-wordcount: '1821'
 ht-degree: 0%
 
 ---
@@ -51,15 +51,15 @@ Alle in einem Analysis Workspace-Projekt abgegebenen Kommentare werden im Kommen
 
 ### Anzeigen von Kommentar-Badges in einem Projekt
 
-Kommentare, die ([ einem bestimmten Bereich des Projekts) ](#comment-on-a-specific-area-of-the-project), haben ein **Kommentar-Badge** ![Kommentar-Badge](assets/comment-indicator.png) das über dem Bereich des Projekts angezeigt wird, auf den sich der Kommentar bezieht. Wählen Sie ein Abzeichen aus, um den Kommentar anzuzeigen. Nach Auswahl des Badge können Sie den Kommentar selbst auswählen, um den Kommentar im Kommentarbereich in der rechten Leiste hervorzuheben.
+Kommentare, die ([ einem bestimmten Bereich des Projekts) ](#comment-on-a-specific-area-of-the-project), haben ein **Kommentar-Badge** ![Kommentar-Badge](assets/comment-indicator.svg) das über dem Bereich des Projekts angezeigt wird, auf den sich der Kommentar bezieht. Wählen Sie ein Abzeichen aus, um den Kommentar anzuzeigen. Nach Auswahl des Badge können Sie den Kommentar selbst auswählen, um den Kommentar im Kommentarbereich in der rechten Leiste hervorzuheben.
 
-Die Zahlen werden auf jedem Abzeichen in einem Projekt angezeigt und in der Reihenfolge sortiert, in der sie erstellt wurden. Wenn mehrere Kommentare in demselben Bereich eines Projekts platziert werden, zeigt das Badge drei Punkte an ![Kommentar-Badge multiple](assets/comment-indicator-multiple.png). Wählen Sie das 3-Punkt-Badge aus, um alle Kommentare in diesem Bereich anzuzeigen.
+Die Zahlen werden auf jedem Abzeichen in einem Projekt angezeigt und in der Reihenfolge sortiert, in der sie erstellt wurden. Wenn mehrere Kommentare in demselben Bereich eines Projekts platziert werden, zeigt das Badge drei Punkte an ![Kommentar-Badge multiple](assets/comment-indicator-multiple.svg). Wählen Sie das 3-Punkt-Badge aus, um alle Kommentare in diesem Bereich anzuzeigen.
 
 <!-- Insert screeshot-->
 
 So blenden Sie alle Kommentar-Badges in einem Projekt aus:
 
-1. Wenn das Projekt in Analysis Workspace geöffnet ist, wählen Sie das Symbol für den Kommentarbereich ![Symbol für den Kommentarbereich](assets/comments-area-icon.png) in der rechten Leiste von Analysis Workspace.
+1. Wenn das Projekt in Analysis Workspace geöffnet ist, wählen Sie das Symbol für den Kommentarbereich ![Symbol für den Kommentarbereich](/help/assets/icons/Comment.svg) in der rechten Leiste von Analysis Workspace.
 
 1. Aktivieren Sie am unteren Rand des Kommentarbereichs die Option **[!UICONTROL Platzierte Abzeichen ausblenden]**.
 
@@ -97,7 +97,7 @@ So kommentieren Sie einen bestimmten Bereich des Projekts (z. B. einen Metrikwer
 
 So fügen Sie einem Projekt in Analysis Workspace Kommentare hinzu:
 
-1. Wenn das Projekt in Analysis Workspace geöffnet ist, wählen Sie das Symbol für den Kommentarbereich ![Symbol für den Kommentarbereich](assets/comments-area-icon.png) in der rechten Leiste von Analysis Workspace. <!-- add screen shot -->
+1. Wenn das Projekt in Analysis Workspace geöffnet ist, wählen Sie das Symbol für den Kommentarbereich ![Symbol für den Kommentarbereich](/help/assets/icons/Comment.svg) in der rechten Leiste von Analysis Workspace. <!-- add screen shot -->
 
 1. Geben Sie im Feld **[!UICONTROL Neuer Kommentar]** Ihren Kommentar ein.
 
@@ -131,7 +131,7 @@ So fügen Sie eine andere Person in Ihren Kommentar ein:
 
 ## Auf einen Kommentar antworten
 
-1. Wenn das Projekt in Analysis Workspace geöffnet ist, wählen Sie das Symbol für den Kommentarbereich ![Symbol für den Kommentarbereich](assets/comments-area-icon.png) in der rechten Leiste von Analysis Workspace.
+1. Wenn das Projekt in Analysis Workspace geöffnet ist, wählen Sie das Symbol für den Kommentarbereich ![Symbol für den Kommentarbereich](/help/assets/icons/Comment.svg) in der rechten Leiste von Analysis Workspace.
 
 1. Klicken Sie **[!UICONTROL Antworten]** neben dem Kommentar, auf den Sie antworten möchten.
 
@@ -149,17 +149,17 @@ So fügen Sie eine andere Person in Ihren Kommentar ein:
 
 ## Benachrichtigungen über Kommentare erhalten
 
-Projektbesitzer und [bestimmte Personen, die Sie ](#include-others-in-a-comment), erhalten Benachrichtigungen basierend auf ihren Adobe Experience Cloud-Benachrichtigungseinstellungen. Standardmäßig erhalten sie eine In-App-Benachrichtigung, die über das Symbol [Experience Cloud-Benachrichtigung](https://experienceleague.adobe.com/de/docs/core-services/interface/features/account-preferences#view-notifications) ![Experience Cloud-Benachrichtigung](assets/experience-cloud-notification.png) in Customer Journey Analytics sichtbar ist.
+Projektbesitzer und [bestimmte Personen, die Sie ](#include-others-in-a-comment), erhalten Benachrichtigungen basierend auf ihren Adobe Experience Cloud-Benachrichtigungseinstellungen. Standardmäßig erhalten sie eine In-App-Benachrichtigung, die über das Symbol [Experience Cloud-Benachrichtigung](https://experienceleague.adobe.com/en/docs/core-services/interface/features/account-preferences#view-notifications) ![Experience Cloud-Benachrichtigung](assets/experience-cloud-notification.svg) in Customer Journey Analytics sichtbar ist.
 
-Darüber hinaus können Benutzer ihre Experience Cloud-Benachrichtigungseinstellungen so konfigurieren, dass sie E-Mail-Benachrichtigungen und Slack-Benachrichtigungen erhalten, [ sie E-Mail-Benachrichtigungen ](https://experienceleague.adobe.com/de/docs/core-services/interface/features/account-preferences#subscribe-to-in-app-and-email-notifications) und [Slack-Benachrichtigungen abonnieren](https://experienceleague.adobe.com/de/docs/core-services/interface/features/account-preferences#slack).
+Darüber hinaus können Benutzer ihre Experience Cloud-Benachrichtigungseinstellungen so konfigurieren, dass sie E-Mail-Benachrichtigungen und Slack-Benachrichtigungen erhalten, [ sie E-Mail-Benachrichtigungen ](https://experienceleague.adobe.com/en/docs/core-services/interface/features/account-preferences#subscribe-to-in-app-and-email-notifications) und [Slack-Benachrichtigungen abonnieren](https://experienceleague.adobe.com/en/docs/core-services/interface/features/account-preferences#slack).
 
 ## Platzieren eines Abzeichens für einen vorhandenen Kommentar
 
 Wenn ein Kommentar im Kommentarbereich in der rechten Leiste verfügbar ist, aber noch kein Abzeichen im Projekt hat, können Sie das Abzeichen hinzufügen.
 
-1. Wenn das Projekt in Analysis Workspace geöffnet ist, wählen Sie das Symbol für den Kommentarbereich ![Symbol für den Kommentarbereich](assets/comments-area-icon.png) in der rechten Leiste von Analysis Workspace.
+1. Wenn das Projekt in Analysis Workspace geöffnet ist, wählen Sie das Symbol für den Kommentarbereich ![Symbol für den Kommentarbereich](/help/assets/icons/Comment.svg) in der rechten Leiste von Analysis Workspace.
 
-1. Wählen Sie das Symbol Mehr ![comment-more-icon](assets/comment-more-icon.png) neben dem Kommentar aus, für den Sie ein Abzeichen platzieren möchten, und wählen Sie dann **[!UICONTROL Abzeichen platzieren]**.
+1. Klicken Sie auf das Symbol Mehr ![Mehr](/help/assets/icons/MoreSmallList.svg) neben dem Kommentar, für den Sie ein Abzeichen platzieren möchten, und wählen Sie dann **[!UICONTROL Abzeichen platzieren]**.
 
 1. Wählen Sie den Bereich des Projekts aus, in dem Sie das Abzeichen für den vorhandenen Kommentar platzieren möchten.
 
@@ -191,9 +191,9 @@ Sie können den Link zu einem Kommentar kopieren und ihn für andere freigeben. 
 
 So kopieren Sie den Link zu einem Kommentar:
 
-1. Wenn das Projekt in Analysis Workspace geöffnet ist, wählen Sie das Symbol für den Kommentarbereich ![Symbol für den Kommentarbereich](assets/comments-area-icon.png) in der rechten Leiste von Analysis Workspace.
+1. Wenn das Projekt in Analysis Workspace geöffnet ist, wählen Sie das Symbol für den Kommentarbereich ![Symbol für den Kommentarbereich](/help/assets/icons/Comment.svg) in der rechten Leiste von Analysis Workspace.
 
-1. Klicken Sie auf das Symbol Mehr ![comment-more-icon](assets/comment-more-icon.png) neben dem Kommentar, dessen Link Sie kopieren möchten, und klicken Sie dann auf **[!UICONTROL Link kopieren]**.
+1. Klicken Sie auf das Symbol Mehr ![Mehr](/help/assets/icons/MoreSmallList.svg) neben dem Kommentar, dessen Link Sie kopieren möchten, und klicken Sie dann auf **[!UICONTROL Link kopieren]**.
 
    Der Link wird in die Zwischenablage kopiert. Sie können den Link in eine E-Mail oder einen anderen Nachrichtentyp einfügen.
 
@@ -203,15 +203,15 @@ Sie können den Textkörper eines Kommentars kopieren und für andere freigeben.
 
 So kopieren Sie den Textkörper eines Kommentars:
 
-1. Wenn das Projekt in Analysis Workspace geöffnet ist, wählen Sie das Symbol für den Kommentarbereich ![Symbol für den Kommentarbereich](assets/comments-area-icon.png) in der rechten Leiste von Analysis Workspace.
+1. Wenn das Projekt in Analysis Workspace geöffnet ist, wählen Sie das Symbol für den Kommentarbereich ![Symbol für den Kommentarbereich](/help/assets/icons/Comment.svg) in der rechten Leiste von Analysis Workspace.
 
-1. Wählen Sie das Symbol Mehr ![comment-more-icon](assets/comment-more-icon.png) neben dem Kommentar aus, der den Text enthält, den Sie kopieren möchten, und klicken Sie dann auf **[!UICONTROL Text kopieren]**.
+1. Klicken Sie auf das Symbol Mehr ![Mehr](/help/assets/icons/MoreSmallList.svg) neben dem Kommentar, der den Text enthält, den Sie kopieren möchten, und klicken Sie dann auf **[!UICONTROL Text kopieren]**.
 
    Der Textkörper des Kommentars wird in die Zwischenablage kopiert.
 
 ## Kommentar gefällt mir
 
-1. Wenn das Projekt in Analysis Workspace geöffnet ist, wählen Sie das Symbol für den Kommentarbereich ![Symbol für den Kommentarbereich](assets/comments-area-icon.png) in der rechten Leiste von Analysis Workspace.
+1. Wenn das Projekt in Analysis Workspace geöffnet ist, wählen Sie das Symbol für den Kommentarbereich ![Symbol für den Kommentarbereich](/help/assets/icons/Comment.svg) in der rechten Leiste von Analysis Workspace.
 
 1. Wählen Sie **[!UICONTROL Gefällt mir]** unter dem Kommentar aus, den Sie empfehlen möchten.
 
@@ -223,9 +223,9 @@ Gelöschte Kommentare können nicht wiederhergestellt werden.
 
 So löschen Sie einen Kommentar:
 
-1. Wenn das Projekt in Analysis Workspace geöffnet ist, wählen Sie das Symbol für den Kommentarbereich ![Symbol für den Kommentarbereich](assets/comments-area-icon.png) in der rechten Leiste von Analysis Workspace.
+1. Wenn das Projekt in Analysis Workspace geöffnet ist, wählen Sie das Symbol für den Kommentarbereich ![Symbol für den Kommentarbereich](/help/assets/icons/Comment.svg) in der rechten Leiste von Analysis Workspace.
 
-1. Klicken Sie auf das Symbol Mehr ![comment-more-icon](assets/comment-more-icon.png) neben dem Kommentar, den Sie löschen möchten, und klicken Sie dann auf **[!UICONTROL Löschen]**.
+1. Klicken Sie auf das Symbol Mehr ![Mehr](/help/assets/icons/MoreSmallList.svg) neben dem Kommentar, den Sie löschen möchten, und klicken Sie dann auf **[!UICONTROL Löschen]**.
 
 1. Wählen **[!UICONTROL erneut]** Löschen“ aus, um den Löschvorgang zu bestätigen.
 
@@ -235,9 +235,9 @@ Wenn Sie einen Kommentar auflösen, wird der Kommentar als aufgelöst markiert u
 
 So lösen Sie einen Kommentar auf:
 
-1. Wenn das Projekt in Analysis Workspace geöffnet ist, wählen Sie das Symbol für den Kommentarbereich ![Symbol für den Kommentarbereich](assets/comments-area-icon.png) in der rechten Leiste von Analysis Workspace.
+1. Wenn das Projekt in Analysis Workspace geöffnet ist, wählen Sie das Symbol für den Kommentarbereich ![Symbol für den Kommentarbereich](/help/assets/icons/Comment.svg) in der rechten Leiste von Analysis Workspace.
 
-1. Klicken Sie auf das Symbol Mehr ![comment-more-icon](assets/comment-more-icon.png) neben dem Kommentar, den Sie auflösen möchten, und klicken Sie dann auf **[!UICONTROL Resolve]**.
+1. Klicken Sie auf das Symbol Mehr ![Mehr](/help/assets/icons/MoreSmallList.svg) neben dem Kommentar, den Sie auflösen möchten, und klicken Sie dann auf **[!UICONTROL Auflösen]**.
 
 1. Wählen **[!UICONTROL zur Bestätigung erneut]** Auflösen) aus.
 
