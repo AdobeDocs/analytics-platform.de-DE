@@ -5,10 +5,10 @@ feature: Workspace Basics
 title: Wie Workspace-Tastaturbefehle verwendet werden
 exl-id: de99a92b-701c-4cdc-a0c2-a70972a19499
 role: User
-source-git-commit: ab78583eb36d6158630724fbab9eb8148bcdbe23
+source-git-commit: 61a7e21d3e5d586c341a5b0f12490e3da1054382
 workflow-type: tm+mt
-source-wordcount: '402'
-ht-degree: 100%
+source-wordcount: '424'
+ht-degree: 93%
 
 ---
 
@@ -19,10 +19,10 @@ In Analysis Workspace stehen Tastaturbefehle (Tastaturkürzel) für eine nahtlos
 Beachten Sie, dass auf Ihrer Tastatur möglicherweise die folgenden Symbole verwendet werden:
 
 - **⇧** für die **[!UICONTROL ** Umschalttaste **]**
-- **⌘** für die **[!UICONTROL ** Befehlstaste **]**
-- **⌃** für die **[!UICONTROL ** Strg-Taste **]**
-- **⌥** für die **[!UICONTROL ** Wahltaste **]**
-- **⎇** für die **[!UICONTROL ** Alt-Taste **]**
+- **⌘** für die **[!UICONTROL ** Befehlstaste **]**.
+- **⌃** für die **[!UICONTROL ** Strg-Taste **]**.
+- **⌥** für die **[!UICONTROL ** Wahltaste **]**.
+- **⎇** für die **[!UICONTROL ** Alt-Taste **]**.
 
 ## Navigationsaktionen
 
@@ -35,8 +35,8 @@ Beachten Sie, dass auf Ihrer Tastatur möglicherweise die folgenden Symbole verw
 | Zum Bereich „Komponenten“ | **[!UICONTROL *Wahltaste+Umschalt+3 *]** | **[!UICONTROL *Alt+Umschalt+3 *]** |
 | Alle Bedienfelder reduzieren/erweitern | **[!UICONTROL *Wahltaste+M *]** | **[!UICONTROL *Alt+M *]** |
 | Aktives Bedienfeld reduzieren/erweitern | **[!UICONTROL *Wahltaste+Befehlstaste+M *]** | **[!UICONTROL *Alt+Strg+M *]** |
-| Zum nächsten Bedienfeld wechseln | **[!UICONTROL *Wahltaste *+▶︎]** | **[!UICONTROL *Alt *+▶︎]** |
-| Zum vorherigen Bedienfeld wechseln | **[!UICONTROL *Wahltaste *+◀︎]** | **[!UICONTROL *Alt *+◀︎]** |
+| Zum nächsten Bedienfeld wechseln | **[!UICONTROL *opt *+ ▶︎]** | **[!UICONTROL *Alt *+ ▶︎]** |
+| Zum vorherigen Bedienfeld wechseln | **[!UICONTROL *opt *+ ◀︎]** | **[!UICONTROL *Alt *+ ◀︎]** |
 
 ## Analyseaktionen
 
@@ -67,6 +67,13 @@ Beachten Sie, dass auf Ihrer Tastatur möglicherweise die folgenden Symbole verw
 | Neues Liniendiagramm | **[!UICONTROL *Wahltaste+2 *]** | **[!UICONTROL *Alt+2 *]** |
 | Neues Balkendiagramm | **[!UICONTROL *Wahltaste+3 *]** | **[!UICONTROL *Alt+3 *]** |
 | Neues Kombinationsdiagramm | **[!UICONTROL *Wahltaste+4 *]** | **[!UICONTROL *Alt+4 *]** |
+
+## Bereichsaktionen verschieben
+
+| Aktion | Mac-Tastaturbefehl | Windows-Tastaturbefehl |
+| --- | --- | --- | 
+| Bereich nach oben verschieben | **[!UICONTROL *Befehl + Opt + Up *]** | **[!UICONTROL *Alt+Strg+Nach oben *]** |
+| Bereich nach unten verschieben | **[!UICONTROL *Befehl + Opt + Down *]** | **[!UICONTROL *Alt + Strg + Nach unten *]** |
 
 ## Demokratisierungaktionen
 

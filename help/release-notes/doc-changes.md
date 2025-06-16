@@ -4,10 +4,10 @@ description: Listet Inhaltsaktualisierungen für Dokumentation zu Customer Journ
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 38be838fccf896a12da3fbadac50e578081312ba
-workflow-type: ht
-source-wordcount: '5237'
-ht-degree: 100%
+source-git-commit: 53d88e105ca742d2ce5e04dbc66482655e9f5e4a
+workflow-type: tm+mt
+source-wordcount: '5261'
+ht-degree: 99%
 
 ---
 
@@ -19,6 +19,8 @@ Die folgenden Aktualisierungen wurden seit der ersten Erstellung der Customer Jo
 
 | Funktion | Beschreibung |
 | --- | --- |
+| **Juni 2025** | |
+| Neue Verknüpfungsaktionen | Mit den neuen Tastaturbefehlen in Analysis Workspace können Sie jetzt [ Workspace-Bedienfelder ](/help/analysis-workspace/build-workspace-project/fa-shortcut-keys.md#move-panel-actions) einem Projekt nach oben und unten verschieben. |
 | **Mai 2025** | |
 | Customer Journey Analytics [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} | Dokumentationsentwurf zur Veröffentlichung von Customer Journey Analytics B2B Edition, einschließlich: <ul><li>neuer [Übersicht](/help/getting-started/cja-b2b-edition.md), [Konzepten und Funktionen](/help/getting-started/cja-b2b-concepts-features.md), [Schnellstartanleitung](/help/getting-started/cja-b2b-quick-start-guide.md), [Übergangshandbuch](/help/getting-started/cja-b2b-transition.md) und Artikeln zu [Anwendungsfällen](/help/use-cases/b2b/b2b-edition/use-cases-overview.md) sowie</li><li>zahlreichen Aktualisierungen der vorhandenen Dokumentation.</li></ul>Die Dokumentation, die Artikel und die Funktionen von Customer Journey B2B Edition sind mit dem Badge [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} gekennzeichnet. |
 | Validieren der Zuordnung | Es wurde Dokumentation hinzugefügt, um zu [validieren](/help/stitching/validate.md), wie die Identitätszuordnung die Erfolgsraten der Authentifizierung und die Gesamtleistung der Personenidentifizierung beeinflusst. |
