@@ -4,10 +4,10 @@ description: Beschreibt, wie Data Governance in Customer Journey Analytics funkt
 exl-id: ab2b7ff2-c638-4ab4-bc86-d1701bebcb1a
 feature: Privacy
 role: Admin
-source-git-commit: 612fce23fe4cb9920c05f3253d69e543668a7cf1
-workflow-type: ht
-source-wordcount: '387'
-ht-degree: 100%
+source-git-commit: 40706e3118cbaf7582d8625d307358b16f1836ac
+workflow-type: tm+mt
+source-wordcount: '440'
+ht-degree: 90%
 
 ---
 
@@ -27,6 +27,12 @@ Durch diese Integration können Sie die Compliance einfacher verwalten. Datenver
 
 [Weitere Informationen](/help/data-views/data-governance.md)
 
+## Datenschutzanfragen
+
+Adobe bearbeitet Datenschutzanfragen gemäß den geltenden lokalen und internationalen Gesetzen.
+
+Da Customer Journey Analytics in Adobe Experience Platform verfügbare Daten verwendet, bietet Adobe den [Adobe Experience Platform Privacy Service ](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=de) zum Senden von Datenzugriffs- und Löschanfragen an. Die Anfragen gelten sowohl für die ursprünglichen als auch die neu zugewiesenen Datensätze.
+
 ## DSGVO
 
 Customer Journey Analytics wird nicht in den zentralen Service der Datenschutz-Grundverordnung (DSGVO) eingebunden, sondern übernimmt stattdessen alle in Experience Platform vorgenommenen Änderungen. Customer Journey Analytics ist auf den Data Lake von Platform angewiesen, um DSGVO-Löschanfragen durchzusetzen und Customer Journey Analytics zu benachrichtigen, wenn Anfragen abgeschlossen sind. Alle Änderungen an betroffenen Batches in Customer Journey Analytics für Ereignis-Datensätze werden mit Platform-Daten synchronisiert. Profil- und Lookup-Datensätze, die von DSGVO-Löschanfragen betroffen sind, werden nach jeder Löschanfrage vollständig neu erfasst. Löschanfragen werden in der Regel innerhalb von 7 Tagen nach einem Löschereignis im Data Lake abgeschlossen.
@@ -39,4 +45,4 @@ In Übereinstimmung mit dem CCPA unterstützt Privacy Service Anfragen zur Abmel
 
 >[!MORELIKETHIS]
 >
->* [Blog: Effektive Governance in Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/bg-p/adobe-analytics-blogs/page/4?profile.language=de&lang=de)
+>* [Blog: Effektive Governance in Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/bg-p/adobe-analytics-blogs/page/4?lang=de)
