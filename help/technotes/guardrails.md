@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Administration
 role: Admin
 exl-id: f093ac54-7d31-449b-a441-a65856a1d535
-source-git-commit: 38be838fccf896a12da3fbadac50e578081312ba
+source-git-commit: 9c8a2ed7712ad7e4e0bcada16d3b581d52a49472
 workflow-type: tm+mt
-source-wordcount: '2012'
+source-wordcount: '2062'
 ht-degree: 14%
 
 ---
@@ -142,7 +142,7 @@ Siehe auch Experience Platform [Leitplanken für die Echtzeit-Kundendatenplattfo
 
 {style="table-layout:auto"}
 
-Siehe auch Experience Platform [Schutzmaßnahmen bei der Datenaufnahme](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html?lang=de).
+Siehe auch Experience Platform [Schutzmaßnahmen bei der Datenaufnahme](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html).
 
 
 ## Zieldatenexport
@@ -154,7 +154,7 @@ Siehe auch Experience Platform [Schutzmaßnahmen bei der Datenaufnahme](https://
 
 {style="table-layout:auto"}
 
-Siehe auch Experience Platform [Leitplanken für den Datensatzexport](https://experienceleague.adobe.com/de/docs/experience-platform/destinations/guardrails#dataset-exports)
+Siehe auch Experience Platform [Leitplanken für den Datensatzexport](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/guardrails#dataset-exports)
 
 
 ## Data Landing Zone
@@ -238,11 +238,23 @@ Siehe auch Experience Platform [Leitplanken für den Datensatzexport](https://ex
 
 {style="table-layout:auto"}
 
+
+## Freigegebene Metriken und freigegebene Dimensionen
+
+| Name | Wert | Art von Limit | Beschreibung |
+|---|--:|---|---|
+| Freigegebene Bibliothek | 1 | Systemerzwungene Schutzmaßnahme | Maximale Anzahl an freigegebenen Bibliotheken für eine Verbindung |
+| Shared Metrics | 10.000 | Vom System erzwungene Leitplanke | Maximale Anzahl an freigegebenen Metriken pro freigegebener Bibliothek. |
+| Freigegebene Dimensionen | 10.000 | Systemerzwungene Schutzmaßnahme | Maximale Anzahl an freigegebenen Dimensionen pro freigegebener Bibliothek. |
+
+{style="table-layout:auto"}
+
+
 ## Latenzen
 
 >[!NOTE]
 >
->Die folgenden Verarbeitungszeiten sind Leitplanken, keine vertraglichen Service Level Agreements (SLAs). Die Latenz variiert je nach Kundenkonfiguration, Datenvolumen und Kundenanwendungen. Häufig sind die tatsächlichen Verarbeitungszeiten schneller. Die spezifischen Vertragsbedingungen und SLAs finden Sie in Ihrem Customer Journey Analytics-Vertrag. Weitere Informationen finden Sie [ Experience Platform ](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html?lang=de)Leitplanken für die Datenaufnahme).
+>Die folgenden Verarbeitungszeiten sind Leitplanken, keine vertraglichen Service Level Agreements (SLAs). Die Latenz variiert je nach Kundenkonfiguration, Datenvolumen und Kundenanwendungen. Häufig sind die tatsächlichen Verarbeitungszeiten schneller. Die spezifischen Vertragsbedingungen und SLAs finden Sie in Ihrem Customer Journey Analytics-Vertrag. Weitere Informationen finden Sie [ Experience Platform ](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html)Leitplanken für die Datenaufnahme).
 
 | Datenfluss | Erwartete Latenz |
 |---|---|
