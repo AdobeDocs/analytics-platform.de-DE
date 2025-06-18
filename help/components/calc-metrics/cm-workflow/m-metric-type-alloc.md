@@ -3,10 +3,10 @@ description: Erfahren Sie mehr über Metriktyp und Attribution
 title: Metriktyp und Attribution
 feature: Calculated Metrics
 exl-id: da73a9ba-542e-436c-bdb2-b629b5b6f760
-source-git-commit: 2b193e1ff612ab00335898164dc84afb08673fff
+source-git-commit: 304b8d85767d89ee60a6fb37a128194f60ca89d4
 workflow-type: tm+mt
-source-wordcount: '1017'
-ht-degree: 98%
+source-wordcount: '612'
+ht-degree: 91%
 
 ---
 
@@ -33,23 +33,23 @@ Sie können den Metriktyp und das [Attributionsmodell](#attribution-models) für
          * Deaktivieren Sie **[!UICONTROL Nicht standardmäßiges Zuordnungsmodell verwenden]**, um das standardmäßige Spalten-Attributionsmodell Letztkontakt mit einem Lookback-Fenster von 30 Tagen zu verwenden.
          * Aktivieren Sie **[!UICONTROL Nicht standardmäßiges Zuordnungsmodell verwenden]**. Im Dialogfeld **[!UICONTROL Attributionsmodell mit Spalten]**
 
-            * wählen Sie ein **[!UICONTROL Modell]** aus den Attributionsmodellen aus.
-            * Wählen Sie ein **[!UICONTROL Lookback-Fenster]** aus. Wenn Sie **[!UICONTROL Benutzerdefinierte Zeit]** auswählen, können Sie den Zeitraum in **[!UICONTROL Minute(n)]** bis zu **[!UICONTROL Quartal(e)]** festlegen. Weitere Informationen finden Sie im Abschnitt [Lookback-Fenster](#lookback-window)
+            * Wählen Sie **[!UICONTROL Modell]** unter [Attributionsmodelle](#attribution-models) aus.
+            * Wählen Sie einen **[!UICONTROL Container]** aus den Optionen [Container](#container) aus.
+            * Wählen Sie ein **[!UICONTROL Lookback]** Fenster) unter den Optionen [Lookback-Fenster](#lookback-window) aus. Wenn Sie **[!UICONTROL Benutzerdefinierte Zeit]** auswählen, können Sie den Zeitraum in **[!UICONTROL Minute(n)]** bis zu **[!UICONTROL Quartal(en)]** definieren.
 
       1. Wählen Sie **[!UICONTROL Anwenden]**, um das nicht standardmäßige Attributionsmodell anzuwenden. Wählen Sie zum Abbrechen die Option „Abbrechen“ aus.
 
      Wenn Sie bereits ein nicht standardmäßiges Attributionsmodell definiert haben, wählen Sie **[!UICONTROL Bearbeiten]** aus, um die Auswahl zu ändern.
 
-Unter [Beispiel](#example) finden Sie ein Beispiel für die Verwendung eines Attributionsmodells und Lookback-Fensters.
+Siehe [Beispiel](#example) für ein Beispiel der Verwendung eines Attributionsmodells, eines Containers und eines Lookback-Fensters.
 
 
-## Attribution {#attribution}
+## Attributionsmodelle {#attribution-models}
 
 >[!CONTEXTUALHELP]
 >id="components_calculatedmetrics_nondefaultattributionmodel"
 >title="Nicht standardmäßiges Attributionsmodell verwenden"
 >abstract="Aktivieren Sie ein nicht standardmäßiges Attributionsmodell für die ausgewählte Metrik."
-
 
 >[!CONTEXTUALHELP]
 >id="components_calculatedmetrics_attributionmodel"
@@ -113,7 +113,7 @@ Unter [Beispiel](#example) finden Sie ein Beispiel für die Verwendung eines Att
 
 >[!CONTEXTUALHELP]
 >id="components_calculatedmetrics_attribution_timedecay"
->title="Zeitabfall"
+>title="Zeitverfall"
 >abstract="Die Dimensionswerte, die einer Konversion zeitlich am nächsten sind, erhalten die meisten Credits."
 
 >[!CONTEXTUALHELP]
@@ -131,68 +131,38 @@ Unter [Beispiel](#example) finden Sie ein Beispiel für die Verwendung eines Att
 >title="Algorithmisch"
 >abstract="Die Credits werden anhand eines statistischen Algorithmus dynamisch bestimmt."
 
+{{attribution-models-details}}
+
+
+## Container {#container}
 
 >[!CONTEXTUALHELP]
 >id="components_calculatedmetrics_attribution_container"
 >title="Container"
 >abstract="Wählen Sie einen Container aus, um den gewünschten Umfang für die Attribution festzulegen."
 
+{{attribution-container}}
 
-{{attribution-models-details}}
 
-
-<!-- markdownlint-disable MD034 -->
+## Lookback-Fenster {#lookback-winwow}
 
 >[!CONTEXTUALHELP]
 >id="components_calculatedmetrics_attribution_lookbackwindow"
 >title="Lookback-Fenster"
 >abstract="Diese Einstellung bestimmt das Fenster der Datenattribution, das für jede Konversion angewendet wird."
 
-
 {{attribution-lookback-window}}
 
 
-### Attributionsbeispiel {#attribution-example}
 
-Sehen Sie sich folgendes Beispiel an:
 
-1. Am 15. September gelangt eine Person über eine Paid Search-Anzeige zu Ihrer Site und verlässt sie dann.
-1. Am 18. September gelangt die Person über einen Link in sozialen Medien, den er von einer Freundin oder einem Freund erhalten hat, erneut auf Ihre Site. Er fügt mehrere Artikel zum Warenkorb hinzu, erwirbt aber nichts.
-1. Am 24. September sendet Ihr Marketing-Team eine E-Mail mit einem Coupon für einige der Artikel im Warenkorb. Der Coupon wird angewendet, der Besucher ruft aber mehrere andere Websites auf, um zu sehen, ob andere Coupons verfügbar sind. Er findet einen weiteren über eine Display-Anzeige und kauft dann letztendlich für 50 Euro ein.
+## Beispiel
 
-Je nach Lookback-Fenster und Attributionsmodell erhalten Kanäle eine unterschiedliche Gewichtung. Im Folgenden finden Sie einige Beispiele:
-
-* Bei Verwendung von **Erstkontakt** und einem **Sitzungs-Lookback-Fenster** betrachtet die Attribution nur den dritten Besuch. E-Mail kam vor Display-Anzeige, sodass E-Mail 100 % des Kaufs von 50 US-Dollar zugeschrieben werden.
-
-* Mithilfe von **Erstkontakt** und einem **Personen-Lookback-Fenster** betrachtet die Attribution alle drei Besuche. Paid Search kam zuerst, sodass Paid Search 100 % des Kaufs von 50 $ zugeschrieben werden.
-
-* Bei Verwendung eines **linearen** Fensters und eines **Sitzungs-Lookback-Fensters** wird die Gewichtung zwischen E-Mail und Display-Anzeige aufgeteilt. Beiden Kanälen werden jeweils 25 $ zugeschrieben. Die Gewichtung wird mithilfe eines **linearen** Fensters und eines **Personen-Lookback-Fensters** zwischen Paid Search, Social Media, E-Mail und Display-Anzeige aufgeteilt. Jedem Kanal werden für diesen Kauf 12,50 $ zugeschrieben.
-
-* Mithilfe des **J-förmigen** Fensters und eines **Personen-Lookback-Fensters** wird die Gewichtung zwischen Paid Search, Social Media und Display-Anzeige aufgeteilt.
-
-   * Der Display-Anzeige werden 60 %, also 30 Euro, zugeschrieben.
-   * Paid Search werden 20 %, also 10 Euro, zugeschrieben.
-   * Die restlichen 20 % werden zwischen Social Media und E-Mail aufgeteilt (jeweils 5 Euro).
-
-* Bei Verwendung von **Zeitverfall** und einem **Personen-Lookback-Fenster** wird die Gewichtung zwischen Paid Search, Social Media, E-Mail und Display-Anzeige aufgeteilt. Verwendung der standardmäßigen 7-Tage-Halbwertszeit:
-
-   * Abstand von null Tagen zwischen Display-Touchpoint und Konversion. `2^(-0/7) = 1`
-   * Abstand von null Tagen zwischen E-Mail-Touchpoint und Konversion. `2^(-0/7) = 1`
-   * Abstand von sechs Tagen zwischen Social Media-Touchpoint und Konversion. `2^(-6/7) = 0.552`
-   * Abstand von 9 Tagen zwischen Paid Search-Touchpoint und Konversion. `2^(-9/7) = 0.41`
-   * Die Normalisierung dieser Werte führt zu Folgendem:
-
-      * Display-Anzeige: 33,8 %, 16,88 Euro
-      * E-Mail: 33,8 %, 16,88 Euro
-      * Social Media: 18,6 %, 9,32 Euro
-      * Paid Search: 13,8 %, 6,92 Euro
-
-Konversionsereignisse, die in der Regel Ganzzahlen aufweisen, werden aufgeteilt, wenn die Gewichtung mehr als einem Kanal zugeschrieben wird. Wenn beispielsweise zwei Kanäle mit einem linearen Attributionsmodell zu einer Bestellung beitragen, erhalten beide Kanäle 0,5 dieser Bestellung. Diese Teilmetriken werden über alle Personen summiert und dann zur Berichterstellung auf die nächste Ganzzahl gerundet.
-
+{{attribution-example}}
 
 >[!MORELIKETHIS]
 >
 >[Attribution – Komponenteneinstellungen](/help/data-views/component-settings/attribution.md)
->[Beitragsmetrik](participation-metric.md)
+>>[Beitragsmetrik](participation-metric.md)
 >
 

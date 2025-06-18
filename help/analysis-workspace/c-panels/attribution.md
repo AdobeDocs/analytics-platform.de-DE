@@ -4,9 +4,9 @@ description: Verwendung und Interpretation des Attributionsbedienfelds in Analys
 feature: Panels
 exl-id: 7fdec05b-5d99-48d1-ac1b-c243cb64e487
 role: User
-source-git-commit: 0101986bb86c49776a044f754d912dc1bcb9422c
+source-git-commit: 304b8d85767d89ee60a6fb37a128194f60ca89d4
 workflow-type: tm+mt
-source-wordcount: '661'
+source-wordcount: '663'
 ht-degree: 91%
 
 ---
@@ -31,7 +31,7 @@ ht-degree: 91%
 
 >[!BEGINSHADEBOX]
 
-_In diesem Artikel wird das Panel „Attribution“ in_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**&#x200B;_ beschrieben.<br/>_Unter [Panel „Attribution“ ](https://experienceleague.adobe.com/de/docs/analytics/analyze/analysis-workspace/panels/attribution) finden Sie die Version dieses Artikels für_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics**._
+_In diesem Artikel wird das Panel „Attribution“ in_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**_ beschrieben.<br/>_Unter [Panel „Attribution“ ](https://experienceleague.adobe.com/de/docs/analytics/analyze/analysis-workspace/panels/attribution) finden Sie die Version dieses Artikels für_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**._
 
 >[!ENDSHADEBOX]
 
@@ -92,9 +92,17 @@ Die folgenden Visualisierungen sind Teil der Panel-Ausgabe.
 
 {{attribution-models-details}}
 
+## Container
+
+{{attribution-container}}
+
 ## Lookback-Fenster
 
 {{attribution-lookback-window}}
+
+## Beispiel
+
+{{attribution-example}}
 
 >[!MORELIKETHIS]
 >

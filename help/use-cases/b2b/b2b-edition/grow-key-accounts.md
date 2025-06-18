@@ -4,18 +4,16 @@ description: Erfahren Sie, wie Sie mit der Customer Journey Analytics B2B editio
 solution: Customer Journey Analytics
 feature: Use Cases
 role: User
-badgePremium: label="B2B edition"
+badgePremium: label="B2B Edition"
 exl-id: f5294af8-b8dc-4239-b0f7-5c20d39007ee
-source-git-commit: 2fad11178853e08783b8f48671b504f50b6e0770
+source-git-commit: 3c13ae26a9ef48454467fc21b8faaa9e078c7f9f
 workflow-type: tm+mt
 source-wordcount: '277'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
-# Wichtige Konten vergrößern
-
-{{draft-b2b}}
+# Wachstum wichtiger Konten
 
 Das Wachstum und die Bindung von Schlüsselkonten hat für B2B-Unternehmen hohe Priorität. Um sicherzustellen, dass Fortschritte erzielt werden, müssen Sie mit den wichtigsten Stakeholdern in Ihren Target-Konten zum richtigen Zeitpunkt kommunizieren.
 

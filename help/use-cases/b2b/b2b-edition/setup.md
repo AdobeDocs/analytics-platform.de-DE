@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie Customer Journey Analytics B2B edition für t
 solution: Customer Journey Analytics
 feature: Use Cases
 role: User
-badgePremium: label="B2B edition"
+badgePremium: label="B2B Edition"
 exl-id: f959a77b-ccfb-43f2-93bb-b330e73d59ac
-source-git-commit: 2fad11178853e08783b8f48671b504f50b6e0770
+source-git-commit: 3c13ae26a9ef48454467fc21b8faaa9e078c7f9f
 workflow-type: tm+mt
 source-wordcount: '1727'
 ht-degree: 13%
@@ -15,13 +15,11 @@ ht-degree: 13%
 
 # Einrichten für B2B edition-Anwendungsfälle
 
-{{draft-b2b}}
-
 In diesem Artikel wird eine typische Einrichtung von Customer Journey Analytics B2B edition beschrieben, um die folgenden Anwendungsfälle zu unterstützen:
 
-* [Marketing-Konto optimieren](optimize-account-marketing.md)
-* [Wichtige Konten vergrößern](grow-key-accounts.md)
-* [Produktwert erstellen](build-product-value.md)
+* [Optimieren des Konto-Marketings](optimize-account-marketing.md)
+* [Wachstum wichtiger Konten](grow-key-accounts.md)
+* [Fördern von Produktwert](build-product-value.md)
 
 
 >[!NOTE]

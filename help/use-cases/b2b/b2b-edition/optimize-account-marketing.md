@@ -4,18 +4,16 @@ description: Erfahren Sie, wie Sie das Account-Marketing mithilfe von Customer J
 solution: Customer Journey Analytics
 feature: Use Cases
 role: User
-badgePremium: label="B2B edition"
+badgePremium: label="B2B Edition"
 exl-id: d5e44546-ea82-42eb-98df-19d51c71e9be
-source-git-commit: 2fad11178853e08783b8f48671b504f50b6e0770
+source-git-commit: 3c13ae26a9ef48454467fc21b8faaa9e078c7f9f
 workflow-type: tm+mt
 source-wordcount: '709'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
-# Marketing-Konto optimieren
-
-{{draft-b2b}}
+# Optimieren des Konto-Marketings
 
 Effektives Account-Based-Marketing erfordert ein tiefes Verständnis des kaufenden Journey auf Kontoebene. So können Sie die wirkungsvollsten Marketing-Aktivitäten bestimmen, um ein Geschäft zum Abschluss zu bringen.
 

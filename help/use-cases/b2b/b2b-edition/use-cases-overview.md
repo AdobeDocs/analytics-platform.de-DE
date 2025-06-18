@@ -4,18 +4,16 @@ description: Erfahren Sie mehr über typische Anwendungsfälle für Customer Jou
 solution: Customer Journey Analytics
 feature: Use Cases
 role: User, Admin
-badgePremium: label="B2B edition"
+badgePremium: label="B2B Edition"
 exl-id: 7c16cc62-5032-44a2-92e4-4a1c320f17aa
-source-git-commit: 2fad11178853e08783b8f48671b504f50b6e0770
+source-git-commit: 3c13ae26a9ef48454467fc21b8faaa9e078c7f9f
 workflow-type: tm+mt
 source-wordcount: '371'
-ht-degree: 1%
+ht-degree: 4%
 
 ---
 
 # Übersicht über B2B edition-Anwendungsfälle
-
-{{draft-b2b}}
 
 In diesem Abschnitt der Dokumentation werden einige spezifische B2B-Anwendungsfälle beschrieben, die Einblicke in die oft komplexere B2B-Kauf-Journey bieten sollen. Ein typischer B2B-Kauf umfasst Einkaufsgruppen, Cross-Channel-Touchpoints verschiedener Stakeholder, Chancen in verschiedenen Phasen des Verkaufszyklus und mehr.
 
@@ -39,7 +37,7 @@ Die Analyse, die Customer Journey Analytics B2B edition bereitstellen kann, biet
 
 Basierend auf den oben genannten Personas und ihren Anforderungen werden die folgenden Anwendungsfälle identifiziert:
 
-### Marketing-Konto optimieren
+### Optimieren des Konto-Marketings
 
 Analyse und Untersuchung der Marketing-Auswirkungen:
 
@@ -48,13 +46,13 @@ Analyse und Untersuchung der Marketing-Auswirkungen:
 
 Der [detaillierte Anwendungsfall-Artikel](optimize-account-marketing.md) untersucht, wie Customer Journey Analytics B2B edition zur Optimierung des Account-Marketings beitragen kann.
 
-### Wichtige Konten vergrößern
+### Wachstum wichtiger Konten
 
 Identifizieren Sie hochwertige Touchpoints innerhalb von Einkaufsgruppen in wichtigen Accounts, um die nächste beste Marketing- und Vertriebsaktion zu unterstützen und das Umsatzwachstum zu steigern. Berechnen und überwachen Sie den Kundenlebenszeitwert auf Kontoebene.
 
 Der [detaillierte Anwendungsfall-Artikel](grow-key-accounts.md) untersucht, wie Customer Journey Analytics B2B edition dazu beitragen kann, wichtige Konten zu erweitern.
 
-### Produktwert erstellen
+### Fördern von Produktwert
 
 Messen Sie die Auswirkungen von Produktversionen und der Produktnutzung auf die Kundenzufriedenheit auf Konto- und Benutzerebene. So können Sie Produktfunktionen und -funktionen optimieren und in die zukünftige Produktentwicklung einfließen lassen.
 

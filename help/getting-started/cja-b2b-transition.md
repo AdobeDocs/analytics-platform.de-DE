@@ -4,18 +4,16 @@ description: Erfahren Sie, wie Sie von Customer Journey Analytics zu Customer Jo
 solution: Customer Journey Analytics
 feature: Basics
 role: User, Admin
-badgePremium: label="B2B edition"
+badgePremium: label="B2B Edition"
 exl-id: d0e6398b-8080-4e36-b178-0cb91945d0c5
-source-git-commit: 2fad11178853e08783b8f48671b504f50b6e0770
+source-git-commit: 3c13ae26a9ef48454467fc21b8faaa9e078c7f9f
 workflow-type: tm+mt
 source-wordcount: '516'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
-# Übergangsleitfaden
-
-{{draft-b2b}}
+# Übergangshandbuch
 
 In diesem Handbuch wird beschrieben, wie Sie von Customer Journey Analytics zum B2B edition von Customer Journey Analytics wechseln.
 

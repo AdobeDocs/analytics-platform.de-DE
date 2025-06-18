@@ -4,18 +4,16 @@ description: Erfahren Sie, wie Sie mit der Customer Journey Analytics B2B editio
 solution: Customer Journey Analytics
 feature: Use Cases
 role: User
-badgePremium: label="B2B edition"
+badgePremium: label="B2B Edition"
 exl-id: 509c68e1-a8cc-48ac-9e9d-50c703356dbc
-source-git-commit: 2fad11178853e08783b8f48671b504f50b6e0770
+source-git-commit: 3c13ae26a9ef48454467fc21b8faaa9e078c7f9f
 workflow-type: tm+mt
 source-wordcount: '395'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
-# Produktwert erstellen
-
-{{draft-b2b}}
+# Fördern von Produktwert
 
 Sie möchten Produktwerteinblicke im B2B-Bereich für Produkt-Manager und CMOs oder CEOs bereitstellen. Zum Beispiel durch eine datengesteuerte Abwanderungsanalyse oder Prognosen. Und diese Erkenntnisse mithilfe mobiler Dashboards verdaulich machen.
 
