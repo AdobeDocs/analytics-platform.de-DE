@@ -1,14 +1,14 @@
 ---
-title: Filtern von Dimensionen in Report Builder
+title: Filterdimensionen in Report Builder
 description: Beschreibt die Verwendung von Filterdimensionen in Report Builder für Customer Journey Analytics
 role: User
 feature: Report Builder
 type: Documentation
 exl-id: 5730d5f3-de76-429f-81f5-ebe6b62a9480
 solution: Customer Journey Analytics
-source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
+source-git-commit: 97c3b05d4d9661aabcb1b06db7fdf44671a29394
 workflow-type: tm+mt
-source-wordcount: '997'
+source-wordcount: '995'
 ht-degree: 33%
 
 ---
@@ -46,7 +46,7 @@ Um angewendete Filter anzuzeigen, bewegen Sie den Mauszeiger über eine Dimensio
 
 ## Filter und Sortierreihenfolge ändern
 
-Neben ![ Metrik, die zum Filtern ](/help/assets/icons/ArrowUp.svg) Sortieren des Datenblocks verwendet ![&#128279;](/help/assets/icons/ArrowDown.svg), wird ein „ArrowUp“ oder ArrowDown“ angezeigt. Die Pfeilrichtung gibt an, ob die Metrik in auf- oder absteigender Reihenfolge sortiert wird.
+Neben ![ Metrik, die zum Filtern ](/help/assets/icons/ArrowUp.svg) Sortieren des Datenblocks verwendet ](/help/assets/icons/ArrowDown.svg), wird ein „ArrowUp“ oder ![ArrowDown“ angezeigt. Die Pfeilrichtung gibt an, ob die Metrik in auf- oder absteigender Reihenfolge sortiert wird.
 
 Sortierreihenfolge ändern:
 
