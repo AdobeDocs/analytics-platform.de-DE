@@ -4,9 +4,9 @@ title: Hinzufügen und Anzeigen von Kommentaren in Projekten
 feature: Workspace Basics
 role: User
 exl-id: 05f69a1c-31c2-40d8-ae8b-a084169897b1
-source-git-commit: 29db477c96ad5ca7c69a7f7055c1a7fd3c06eb04
+source-git-commit: 91ac84764a186d81f3270bb3ec9673d93b11bd38
 workflow-type: tm+mt
-source-wordcount: '1821'
+source-wordcount: '1857'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ Sie können Kommentare im Kommentarbereich in der rechten Leiste oder über das 
 
 ### Anzeigen von Kommentaren im Kommentarbereich
 
-Alle in einem Analysis Workspace-Projekt abgegebenen Kommentare werden im Kommentarbereich in der rechten Leiste angezeigt.
+Alle in einem Analysis Workspace-Projekt abgegebenen Kommentare werden im Kommentarbereich in der rechten Leiste angezeigt. Die Gesamtzahl der vorhandenen Kommentare wird auf dem Kommentarsymbol angezeigt.
 
 1. Standardmäßig wird der Kommentarbereich für jedes Projekt in Analysis Workspace beim ersten Öffnen eines Projekts erweitert.
 
@@ -131,13 +131,15 @@ So fügen Sie eine andere Person in Ihren Kommentar ein:
 
 ## Auf einen Kommentar antworten
 
-1. Wenn das Projekt in Analysis Workspace geöffnet ist, wählen Sie das Symbol für den Kommentarbereich ![Symbol für den Kommentarbereich](/help/assets/icons/Comment.svg) in der rechten Leiste von Analysis Workspace.
+1. Öffnen Sie in Analysis Workspace das Projekt, dem Sie einen Kommentar hinzufügen möchten.
 
-1. Klicken Sie **[!UICONTROL Antworten]** neben dem Kommentar, auf den Sie antworten möchten.
+1. Wählen Sie in der rechten Leiste von Analysis Workspace das Symbol ![Kommentarbereich](/help/assets/icons/Comment.svg)Symbol für den Kommentarbereich aus und klicken Sie dann neben dem Kommentar, auf **[!UICONTROL Sie antworten möchten]** auf Antworten .
+
+   Um den Text des Kommentars, auf den Sie antworten, einzubeziehen, wobei der ursprüngliche Text in ein Zitat-Tag eingeschlossen ist, wählen Sie das 3-Punkt-Symbol neben dem spezifischen Kommentar oder der Antwort, auf den bzw. die Sie antworten möchten, und klicken Sie dann auf **[!UICONTROL Zitat-Antwort]**. Eine Antwort auf ein Zitat ist eine gute Möglichkeit, anzugeben, auf welchen Kommentar oder welche Antwort sich Ihr Kommentar bezieht.
 
    Oder
 
-   Um den Text des Kommentars, auf den Sie antworten, einzubeziehen, wobei der ursprüngliche Text in ein Zitat-Tag eingeschlossen ist, wählen Sie das 3-Punkt-Symbol neben dem spezifischen Kommentar oder der Antwort, auf den bzw. die Sie antworten möchten, und klicken Sie dann auf **[!UICONTROL Zitat-Antwort]**. Eine Antwort auf ein Zitat ist eine gute Möglichkeit, anzugeben, auf welchen Kommentar oder welche Antwort sich Ihr Kommentar bezieht.
+   Wählen Sie das Kommentarsymbol auf dem Bedienfeld oder der Visualisierung aus, in dem bzw. der der Kommentar eingegeben wurde, und wählen Sie dann **[!UICONTROL Antworten]** aus.
 
 1. Geben Sie im Feld **[!UICONTROL Neuer Kommentar]** Ihren Kommentar ein.
 
@@ -149,9 +151,9 @@ So fügen Sie eine andere Person in Ihren Kommentar ein:
 
 ## Benachrichtigungen über Kommentare erhalten
 
-Projektbesitzer und [bestimmte Personen, die Sie ](#include-others-in-a-comment), erhalten Benachrichtigungen basierend auf ihren Adobe Experience Cloud-Benachrichtigungseinstellungen. Standardmäßig erhalten sie eine In-App-Benachrichtigung, die über das Symbol [Experience Cloud-Benachrichtigung](https://experienceleague.adobe.com/de/docs/core-services/interface/features/account-preferences#view-notifications) ![Experience Cloud-Benachrichtigung](assets/experience-cloud-notification.svg) in Customer Journey Analytics sichtbar ist.
+Projektbesitzer und [bestimmte Personen, die Sie ](#include-others-in-a-comment), erhalten Benachrichtigungen basierend auf ihren Adobe Experience Cloud-Benachrichtigungseinstellungen. Standardmäßig erhalten sie eine In-App-Benachrichtigung, die über das Symbol [Experience Cloud-Benachrichtigung](https://experienceleague.adobe.com/en/docs/core-services/interface/features/account-preferences#view-notifications) ![Experience Cloud-Benachrichtigung](assets/experience-cloud-notification.svg) in Customer Journey Analytics sichtbar ist.
 
-Darüber hinaus können Benutzer ihre Experience Cloud-Benachrichtigungseinstellungen so konfigurieren, dass sie E-Mail-Benachrichtigungen und Slack-Benachrichtigungen erhalten, [ sie E-Mail-Benachrichtigungen ](https://experienceleague.adobe.com/de/docs/core-services/interface/features/account-preferences#subscribe-to-in-app-and-email-notifications) und [Slack-Benachrichtigungen abonnieren](https://experienceleague.adobe.com/de/docs/core-services/interface/features/account-preferences#slack).
+Darüber hinaus können Benutzer ihre Experience Cloud-Benachrichtigungseinstellungen so konfigurieren, dass sie E-Mail-Benachrichtigungen und Slack-Benachrichtigungen erhalten, [ sie E-Mail-Benachrichtigungen ](https://experienceleague.adobe.com/en/docs/core-services/interface/features/account-preferences#subscribe-to-in-app-and-email-notifications) und [Slack-Benachrichtigungen abonnieren](https://experienceleague.adobe.com/en/docs/core-services/interface/features/account-preferences#slack).
 
 ## Platzieren eines Abzeichens für einen vorhandenen Kommentar
 
