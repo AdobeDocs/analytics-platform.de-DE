@@ -3,16 +3,16 @@ description: Mit dem Manager für berechnete Metriken können Sie freigeben, fil
 title: Manager für berechnete Metriken
 feature: Calculated Metrics
 exl-id: 8b257ecc-a596-4b34-ac26-eda16835f1ba
-source-git-commit: 38be838fccf896a12da3fbadac50e578081312ba
+source-git-commit: b3c7ceedec7b3f6a916e97bab38fd55f1d6c7f51
 workflow-type: tm+mt
-source-wordcount: '897'
+source-wordcount: '901'
 ht-degree: 29%
 
 ---
 
 # Berechnete Metriken verwalten
 
-Sie können berechnete Metriken freigeben, filtern, taggen, genehmigen, umbenennen, kopieren, löschen, exportieren und berechnete Metriken über eine zentrale Verwaltungsoberfläche [!UICONTROL Berechnete &#x200B;]&quot; als Favoriten markieren. So verwalten Sie berechnete Metriken:
+Sie können berechnete Metriken freigeben, filtern, taggen, genehmigen, umbenennen, kopieren, löschen, exportieren und berechnete Metriken über eine zentrale Verwaltungsoberfläche [!UICONTROL Berechnete ]&quot; als Favoriten markieren. So verwalten Sie berechnete Metriken:
 
 
 * Wählen Sie **[!UICONTROL Hauptbenutzeroberfläche]** Komponenten“ und dann **[!UICONTROL Berechnete Metriken]** aus.
@@ -23,11 +23,11 @@ Sie können berechnete Metriken freigeben, filtern, taggen, genehmigen, umbenenn
 Der Manager für berechnete Metriken verfügt über die folgenden Schnittstellenelemente:
 
 
-![Benutzeroberfläche für Filter](assets/calculated-metrics-manager.png)
+![Benutzeroberfläche des Managers für berechnete Metriken](assets/calculated-metrics-manager.png)
 
-### Filterliste
+### Liste der berechneten Metriken
 
-Die Filterliste zeigt ➊ alle berechneten Metriken an, deren Inhaber Sie sind oder die für Sie freigegeben wurden. Die Liste umfasst die folgenden Spalten:
+Die ➊ Liste Berechnete Metriken zeigt alle berechneten Metriken an, deren Inhaber Sie sind oder die für Sie freigegeben wurden. Die Liste umfasst die folgenden Spalten:
 
 <!-- I think this table incorrectly talks about quick calculated metrics -->
 

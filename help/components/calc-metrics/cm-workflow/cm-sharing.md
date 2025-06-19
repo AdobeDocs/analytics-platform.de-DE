@@ -3,7 +3,7 @@ description: Abhängig von Ihren Berechtigungen können Sie Metriken für Ihre g
 title: Berechnete Metriken freigeben
 feature: Calculated Metrics
 exl-id: b2a3e4e3-f0aa-4505-b3f5-7d9f14dc1640
-source-git-commit: 53069702055e0adf7abf9061c592fb15772ded73
+source-git-commit: b3c7ceedec7b3f6a916e97bab38fd55f1d6c7f51
 workflow-type: tm+mt
 source-wordcount: '322'
 ht-degree: 11%
@@ -15,7 +15,7 @@ ht-degree: 11%
 Im [Manager für berechnete Metriken](cm-manager.md) können Sie berechnete Metriken freigeben. Je nach Ihren Berechtigungen können Sie berechnete Metriken für Ihre gesamte Organisation, Gruppen oder einzelne Benutzer freigeben:
 
 * **Administratoren**: Administratoren können berechnete Metriken für die gesamte Organisation, für Gruppen innerhalb einer Organisation und für einzelne Benutzer freigeben. Weitere Informationen finden Sie in der [Dokumentation zu Admin Console](https://helpx.adobe.com/de/enterprise/using/manage-products.html).
-* **Benutzer ohne Administratorrechte**: Benutzer ohne Administratorrechte können die von ihnen erstellte berechnete Metrik nur für einzelne Benutzer freigeben. |
+* **Benutzer ohne Administratorrechte**: Benutzer ohne Administratorrechte können die von ihnen erstellte berechnete Metrik nur für einzelne Benutzer freigeben.
 
 So geben Sie eine oder mehrere berechnete Metriken frei:
 

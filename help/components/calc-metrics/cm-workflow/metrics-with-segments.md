@@ -3,9 +3,9 @@ description: Durch die Segmentierung einzelner Metriken können Sie Metriken inn
 title: Segmentierte Metriken
 feature: Calculated Metrics
 exl-id: 37cc93df-9f51-42b3-918f-ed5864991621
-source-git-commit: 38be838fccf896a12da3fbadac50e578081312ba
+source-git-commit: b3c7ceedec7b3f6a916e97bab38fd55f1d6c7f51
 workflow-type: tm+mt
-source-wordcount: '484'
+source-wordcount: '485'
 ht-degree: 1%
 
 ---
@@ -30,7 +30,7 @@ In den folgenden Abschnitten erfahren Sie, wie Sie mithilfe segmentierter Metrik
 ## Beliebte Seiten
 
 1. [Erstellen Sie eine berechnete ](cm-workflow.md) aus einem Workspace-Projekt namens `German people`.
-1. Erstellen Sie im [Generator für berechnete ](cm-build-metrics.md) [ ein Segment](/help/components/segments/seg-builder.md) mit dem Titel &quot;`Germany`&quot;, d. h. mithilfe des Felds „CRM-Land“ aus Ihren CRM-Daten, um zu bestimmen, woher eine Person kommt.
+1. Erstellen Sie im [Generator für berechnete ](cm-build-metrics.md)[ ein Segment](/help/components/segments/seg-builder.md) mit dem Titel &quot;`Germany`&quot;, d. h. mithilfe des Felds „CRM-Land“ aus Ihren CRM-Daten, um zu bestimmen, woher eine Person kommt.
 
    >[!TIP]
    >
@@ -66,7 +66,7 @@ Wiederholen Sie die obigen Schritte für die internationale Version Ihrer berech
 
 ## Gesamt
 
-1. Erstellen Sie zwei neue Segmente basierend auf der Gesamtsumme. Öffnen Sie jedes der zuvor erstellten Segmente, benennen Sie das Segment um, legen Sie **[!UICONTROL Metriktyp]** für **[!UICONTROL Personen]** auf **[!UICONTROL Gesamtsumme]** fest und verwenden Sie **[!UICONTROL Speichern unter]**, um das Segment unter dem neuen Namen zu speichern. Zum Beispiel:
+1. Erstellen Sie zwei neue berechnete Metriken basierend auf der Gesamtsumme. Öffnen Sie jedes der zuvor erstellten Segmente, benennen Sie das Segment um, legen Sie **[!UICONTROL Metriktyp]** für **[!UICONTROL Personen]** auf **[!UICONTROL Gesamtsumme]** fest und verwenden Sie **[!UICONTROL Speichern unter]**, um das Segment unter dem neuen Namen zu speichern. Zum Beispiel:
 
    ![Gesamtmetrik für Deutschland](assets/calculated-metric-germany-total.png)
 
@@ -90,7 +90,7 @@ Wiederholen Sie die obigen Schritte für die internationale Version Ihrer berech
 
 >[!BEGINSHADEBOX]
 
-Siehe ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Verwenden einer segmentierten berechneten Metrik als implementierungslose Metrik](https://video.tv.adobe.com/v/37931?quality=12&learn=on&captions=ger){target="_blank"} für ein Demovideo.
+Siehe ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Verwenden einer segmentierten berechneten Metrik als implementierungslose Metrik](https://video.tv.adobe.com/v/25407?quality=12&learn=on){target="_blank"} für ein Demovideo.
 
 {{videoaa}}
 

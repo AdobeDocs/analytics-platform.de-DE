@@ -4,7 +4,7 @@ title: Schnellsegmente
 feature: Workspace Basics, Filters, Segments
 role: User
 exl-id: 549e5db5-fcdf-43c5-bc43-590144aee309
-source-git-commit: 38be838fccf896a12da3fbadac50e578081312ba
+source-git-commit: b3c7ceedec7b3f6a916e97bab38fd55f1d6c7f51
 workflow-type: tm+mt
 source-wordcount: '1174'
 ht-degree: 23%
@@ -19,7 +19,7 @@ Schnellsegmente ermöglichen es Ihnen, Daten innerhalb eines Workspace-Projekts 
 
 >[!BEGINSHADEBOX]
 
-See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Schnellsegmente in Analysis Workspace](https://video.tv.adobe.com/v/3410293/?quality=12&learn=on&captions=ger){target="_blank"} finden Sie ein Demovideo.
+See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Schnellsegmente in Analysis Workspace](https://video.tv.adobe.com/v/341466/?quality=12&learn=on){target="_blank"} finden Sie ein Demovideo.
 
 >[!ENDSHADEBOX]
 
@@ -61,7 +61,7 @@ Um ein Schnellsegment zu verwalten, bewegen Sie den Mauszeiger über das spezifi
 
 ## Quick Segment Builder
 
-Unten finden Sie ein Beispiel für den Quick Segment Builder. In diesem Beispiel wird der Builder für ein Schnellsegment namens &quot;`Call Reason = Order Change AND Online Orders is greater than or equal 1`&quot; geöffnet. Beide Schnellsegmente oben gelten für das Bedienfeld [!UICONTROL Dashboard für durchschnittliche Bestellwerte] und für alle darin enthaltenen Visualisierungen, wie [!UICONTROL &#x200B; Freiformtabelle Durchschnittlicher Bestellwert pro Land].
+Unten finden Sie ein Beispiel für den Quick Segment Builder. In diesem Beispiel wird der Builder für ein Schnellsegment namens &quot;`Call Reason = Order Change AND Online Orders is greater than or equal 1`&quot; geöffnet. Beide Schnellsegmente oben gelten für das Bedienfeld [!UICONTROL Dashboard für durchschnittliche Bestellwerte] und für alle darin enthaltenen Visualisierungen, wie [!UICONTROL  Freiformtabelle Durchschnittlicher Bestellwert pro Land].
 
 ![Quick Segment Builder](assets/quick-filter-builder.png)
 
@@ -107,6 +107,6 @@ Schnellsegmente werden genau so benannt wie sie. Sie können Schnellsegmente sch
 Segmente haben im Vergleich zu Schnellsegmenten die folgenden Vorteile.
 
 * Segmente können für alle Workspace-Projekte verfügbar gemacht werden
-* Segmente unterstützen eine höhere Komplexität bei der Verwendung verschachtelter und hierarchischer Container und Sequenzen (unter Verwendung von Sequenzsegmenten).
+* Segmente unterstützen eine höhere Komplexität bei der Verwendung verschachtelter und hierarchischer [Container](seg-builder.md#containers) und Sequenzen (unter Verwendung [sequenzieller Segmente](seg-sequential-build.md)).
 
 

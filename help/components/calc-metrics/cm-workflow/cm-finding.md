@@ -3,9 +3,9 @@ description: Beschreibt das Sortieren und Filtern, die beiden Hauptmethoden zum 
 title: Metriken suchen
 feature: Calculated Metrics
 exl-id: 34d2563a-7cd2-4f22-9ad0-6a3dab8d84ea
-source-git-commit: d2fb161151bb909152470041449ab3010e72e5e3
+source-git-commit: 46242b86d4a7c0e60a468885fcbaa73c575dfb74
 workflow-type: tm+mt
-source-wordcount: '46'
+source-wordcount: '50'
 ht-degree: 8%
 
 ---
@@ -14,4 +14,4 @@ ht-degree: 8%
 
 Sie können Metriken in Analysis Workspace auf die gleiche Weise finden wie andere Komponententypen.
 
-Informationen zum Suchen von Komponenten finden Sie unter [Suchen](/help/components/overview.md#search) in [Komponentenübersicht](/help/components/overview.md).
+Informationen zum schnellen Auffinden von Komponenten finden Sie unter [Verwalten der Komponentenliste](/help/components/overview.md#manage-the-component-list) in [Komponentenübersicht](/help/components/overview.md).

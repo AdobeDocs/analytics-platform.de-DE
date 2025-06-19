@@ -3,9 +3,9 @@ description: Mit dem Generator für berechnete Metriken kann jeder eine Teilnahm
 title: Partizipationsmetrik
 feature: Calculated Metrics
 exl-id: 0d102f0f-3bcc-4f3a-93d2-c2b991c636cb
-source-git-commit: 65eafd65358d9370b452338ce1036e59b3c69d1a
+source-git-commit: b3c7ceedec7b3f6a916e97bab38fd55f1d6c7f51
 workflow-type: tm+mt
-source-wordcount: '220'
+source-wordcount: '219'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ Die folgenden Schritte zeigen, wie jeder Benutzer mit der [Berechtigung Berechne
 1. [Erstellen Sie eine berechnete ](cm-workflow.md) und geben Sie der Metrik im [Generator für berechnete ](cm-build-metrics.md)&quot; einen `Participation` oder etwas Ähnliches.
 1. Ziehen Sie eine Metrik, die ein Erfolgsereignis enthält, z. B. [!DNL Orders], in den Bereich [!UICONTROL **[!UICONTROL Definition]**].
 1. Wählen Sie ![ Metrik ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Settings_18_N.svg)Zahnrad) aus.
-1. Wählen Sie im angezeigten Popup die Option **[!UICONTROL Nicht standardmäßiges Attributionsmodell verwenden]**, um das [Attributionsmodell](/help/components/calc-metrics/cm-workflow/m-metric-type-alloc.md) dieses Ereignisses für **[!UICONTROL Teilnahme]** zu definieren, und wählen Sie **[!UICONTROL Sitzung]** für das [!UICONTROL Lookback-Fenster]. Wählen Sie **[!UICONTROL Übernehmen]** zur Bestätigung aus.
+1. Wählen Sie im angezeigten Popup die Option **[!UICONTROL Nicht standardmäßiges Attributionsmodell verwenden]**, um das [Attributionsmodell](/help/components/calc-metrics/cm-workflow/m-metric-type-alloc.md) dieses Ereignisses für **[!UICONTROL Teilnahme]** zu definieren, und wählen Sie **[!UICONTROL Sitzung]** für den [!UICONTROL Container]. Wählen Sie **[!UICONTROL Übernehmen]** zur Bestätigung aus.
 
 
    ![Spalten-Attributionsmodell-Popup, in dem die ausgewählte Teilnahme als Modell und die für das Lookback-Fenster ausgewählte Sitzung angezeigt werden.](assets/participation-setup.png)
