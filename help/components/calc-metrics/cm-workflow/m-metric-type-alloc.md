@@ -163,6 +163,6 @@ Siehe [Beispiel](#example) für ein Beispiel der Verwendung eines Attributionsmo
 >[!MORELIKETHIS]
 >
 >[Attribution – Komponenteneinstellungen](/help/data-views/component-settings/attribution.md)
->&#x200B;>[Beitragsmetrik](participation-metric.md)
+>>[Beitragsmetrik](participation-metric.md)
 >
 
