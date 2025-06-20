@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin
 exl-id: 2b2d1cc2-36da-4960-ab31-0a398d131ab8
-source-git-commit: 6d23203468032510446711ff5a874fd149531a9a
+source-git-commit: a3d974733eef42050b0ba8dcce4ebcccf649faa7
 workflow-type: tm+mt
-source-wordcount: '448'
-ht-degree: 86%
+source-wordcount: '640'
+ht-degree: 60%
 
 ---
 
@@ -53,7 +53,7 @@ Verwenden Sie die [Adobe Content Analytics-Erweiterung](https://experienceleague
 
   Sie können Erlebnisse aktivieren oder deaktivieren und Kombinationen aus regulären Ausdrücken und Abfrageparametern bearbeiten, um zu bestimmen, wie Inhalte auf Ihrer Website gerendert werden.
 
-* [Segmentierung von Ereignissen](https://experienceleague.adobe.com/de/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-segmenting){target="_blank"}
+* [Segmentierung von Ereignissen](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-segmenting){target="_blank"}
 
   Sie können reguläre Ausdrücke bearbeiten, um die Segmentierung von Seiten und Assets zu ändern.
 
@@ -65,7 +65,7 @@ Achten Sie nach Änderungen an der Adobe Content Analytics-Erweiterung darauf, d
 >[!MORELIKETHIS]
 >
 >[Geführte Konfiguration](guided.md)
->[Datenerfassung – Überblick über Tags und Veröffentlichungen](https://experienceleague.adobe.com/de/docs/experience-platform/tags/publish/overview)
+>>[Datenerfassung – Überblick über Tags und Veröffentlichungen](https://experienceleague.adobe.com/de/docs/experience-platform/tags/publish/overview)
 >
 
 
@@ -87,3 +87,45 @@ window.adobe.getContentExperienceVersion = () => {
   return "1.0";
 };
 ```
+
+## Identitäten
+
+Content Analytics kann Identitäten wie folgt verarbeiten:
+
+* ECID wird automatisch im `identityMap` Teil des Content Analytics-Schemas ausgefüllt.
+* Wenn Sie andere Identitätswerte in der `identityMap` benötigen, müssen Sie diese Werte im `onBeforeEventSend`-Callback innerhalb der Web SDK-Erweiterung festlegen.
+* Feldbasiertes Stitching wird nicht unterstützt, da das Schema in Systembesitz ist. Sie können dem Schema also kein weiteres Feld hinzufügen, um feldbasiertes Stitching zu unterstützen
+
+
+Um sicherzustellen, dass Content Analytics-Identitätsdaten und Adobe Experience Platform Web SDK-Daten-Identitätsdaten auf Feldebene korrekt zugeordnet sind, müssen Sie Änderungen am Web SDK [on vor dem Ereignisversand vornehmen](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/configure/onbeforeeventsend){target="_blank"} Callback.
+
+1. Navigieren Sie zu Ihrer **[!UICONTROL Tags]**-Eigenschaft, die die Adobe Experience Platform Web SDK-Erweiterung und die Adobe Content Analytics-Erweiterung enthält.
+1. Wählen Sie ![Plug](/help/assets/icons/Plug.svg) **[!UICONTROL Extensions]** aus.
+1. Wählen Sie die Erweiterung **[!UICONTROL Adobe Experience Platform Web SDK]** aus.
+1. Wählen Sie **[!UICONTROL Konfigurieren]** aus.
+1. Scrollen Sie im Abschnitt **[!UICONTROL SDK]** Instanzen nach unten zu **[!UICONTROL Datenerfassung]** - **[!UICONTROL Ein vor Ereignisversand-Rückruf]**.
+
+   ![Ein vor Ereignisversand-Rückruf](/help/content-analytics/assets/onbeforeeventsendcallback.png)
+
+1. Wählen Sie **[!UICONTROL &lt;/> Bereitstellen eines Ereignisses vor dem Senden des Callback-Codes]**.
+1. Fügen Sie den folgenden Code hinzu:
+
+   ```javascript
+   window.adobeContentAnalytics?.forwardEvent(content);
+   
+   content.xdm.identityMap = _satellite.getVar('identityMap');
+   if ((content.xdm.eventType === "content.contentEngagement") && (_satellite.getVar('identityMap') != null)) {
+      return true;
+   }
+   ```
+
+   ![Ein vor Ereignisversand-Rückruf](/help/content-analytics/assets/onbeforeeventsendcallbackcode.png)
+
+1. Wählen **[!UICONTROL Speichern]**, um den Code zu speichern.
+1. Wählen **[!UICONTROL Speichern]**, um die Erweiterung zu speichern.
+1. [Veröffentlichen](https://experienceleague.adobe.com/de/docs/experience-platform/tags/publish/overview) der Aktualisierungen für Ihre Tags-Eigenschaft.
+
+
+
+
+

@@ -6,9 +6,9 @@ feature: Basics
 role: User, Admin
 badgePremium: label="B2B Edition"
 exl-id: df2cc922-d214-49b9-8fdb-443cc1dac05b
-source-git-commit: 3c13ae26a9ef48454467fc21b8faaa9e078c7f9f
+source-git-commit: 68f2fe684f6eb9590ab047e893fb04b1cbe1a8cd
 workflow-type: tm+mt
-source-wordcount: '1470'
+source-wordcount: '1469'
 ht-degree: 2%
 
 ---
@@ -98,7 +98,7 @@ Beispielhafte kontobasierte Verbindung in der Customer Journey Analytics B2B edi
 Customer Journey Analytics B2B edition bietet die [Verbindungszuordnung](/help/connections/create-connection.md#connection-map), um Ihnen einen Überblick über die Beziehungen zwischen Datensätzen in Ihrer Verbindung zu geben.
 
 
-Ähnlich wie Customer Journey Analytics bilden ereignisbasierte Zeitreihendaten den Kern von Customer Journey Analytics B2B edition. Der Hauptunterschied für eine kontobasierte Verbindung besteht darin, dass Sie für jeden Datensatz in Ihrem Ereignisdatensatz eine Konto-ID anstelle einer Personen-ID benötigen.
+Ähnlich wie Customer Journey Analytics bilden ereignisbasierte Zeitreihendaten den Kern von Customer Journey Analytics B2B edition. Der Hauptunterschied bei einer kontobasierten Verbindung besteht darin, dass Sie für jeden Datensatz in Ihrem Ereignisdatensatz eine Konto-ID anstelle einer Personen-ID benötigen.
 
 Beim Konfigurieren [Datensatzeinstellungen](/help/connections/create-connection.md#dataset-settings) für Ihre kontobasierte Verbindung in Customer Journey Analytics B2B edition hängen die für einige Einstellungen verfügbaren Optionen vom [Datensatztyp](/help/connections/create-connection.md#dataset-types) ab. Sie müssen beispielsweise:
 
