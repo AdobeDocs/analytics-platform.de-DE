@@ -65,7 +65,7 @@ Achten Sie nach Änderungen an der Adobe Content Analytics-Erweiterung darauf, d
 >[!MORELIKETHIS]
 >
 >[Geführte Konfiguration](guided.md)
->>[Datenerfassung – Überblick über Tags und Veröffentlichungen](https://experienceleague.adobe.com/de/docs/experience-platform/tags/publish/overview)
+>&#x200B;>[Datenerfassung – Überblick über Tags und Veröffentlichungen](https://experienceleague.adobe.com/de/docs/experience-platform/tags/publish/overview)
 >
 
 
