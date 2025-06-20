@@ -4,10 +4,10 @@ title: Metriken
 feature: Metrics
 exl-id: 4edfb5d7-da20-4bd8-8041-387b291daf96
 role: User
-source-git-commit: 65b4339b4a1b27c41cfe442482a54661989d704b
+source-git-commit: ec2fc88372814b01a04d4cc824181222ee55a83d
 workflow-type: tm+mt
-source-wordcount: '886'
-ht-degree: 9%
+source-wordcount: '866'
+ht-degree: 7%
 
 ---
 
@@ -49,13 +49,6 @@ Sie können sehen, ob eine Metrik genehmigt wurde ![Symbol „Genehmigt](https:/
 Vollständige Liste der Standardmetriken in Customer Journey Analytics:
 {{standard-metrics}}
 
-## Vergleichen von Metriken mit verschiedenen Attributionsmodellen
-
-Um ein Attributionsmodell für eine Metrik schnell mit einem anderen zu vergleichen, wählen Sie **[!UICONTROL Attributionsmodelle vergleichen]** aus dem Kontextmenü für eine Metrik aus.
-
-![Workspace-Bedienfeld mit hervorgehobenen Attributionsmodellen vergleichen](assets/compare-attribution.png)
-
-Mithilfe dieser Tastenkombination können Sie ein Attributionsmodell mit einem anderen vergleichen, ohne eine Metrik per Drag-and-Drop verschieben und zweimal konfigurieren zu müssen.
 
 ## Erstellen von berechneten Metriken
 
@@ -65,9 +58,7 @@ Es gibt mehrere Möglichkeiten, berechnete Metriken zu erstellen. Die gewählte 
 
 ### Berechnete Metriken für alle Projekte erstellen
 
-Sie können den Generator für berechnete Metriken verwenden, um berechnete Metriken zu erstellen. Wenn sie auf diese Weise erstellt werden, sind berechnete Metriken in der Komponentenliste verfügbar und können dann in Projekten in Ihrer gesamten Organisation verwendet werden.
-
-Informationen zum Zugriff auf den Generator für berechnete Metriken finden Sie unter [Erstellen berechneter Metriken](/help/components/calc-metrics/cm-workflow/cm-workflow.md).
+Sie können den [Generator für berechnete Metriken](/help/components/calc-metrics/cm-workflow/cm-build-metrics.md) verwenden, um [berechnete Metriken zu erstellen](/help/components/calc-metrics/cm-workflow/cm-workflow.md). Wenn sie auf diese Weise erstellt werden, sind berechnete Metriken in der Komponentenliste verfügbar und können dann in Projekten in Ihrer gesamten Organisation verwendet werden.
 
 ### Erstellen von berechneten Metriken für ein einzelnes Projekt
 
@@ -113,6 +104,13 @@ Erstellen einer berechneten Metrik für ein einzelnes Projekt:
 
    * [!UICONTROL **prozentuale Änderung**]: Erstellt eine neue Spalte, die die prozentuale Änderung zwischen den beiden ausgewählten Spalten anzeigt.
 
-[Berechnete Metriken: implementierungslose Metriken](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/components/calculated-metrics/calculated-metrics-implementationless-metrics.html?lang=de) (3:42)
+
+## Vergleichen von Metriken mit verschiedenen Attributionsmodellen
+
+Um ein Attributionsmodell für eine Metrik schnell mit einem anderen zu vergleichen, wählen Sie **[!UICONTROL Attributionsmodelle vergleichen]** aus dem Kontextmenü für eine Metrik aus.
+
+![Workspace-Bedienfeld mit hervorgehobenen Attributionsmodellen vergleichen](assets/compare-attribution.png)
+
+Mithilfe dieser Tastenkombination können Sie ein Attributionsmodell mit einem anderen vergleichen, ohne eine Metrik per Drag-and-Drop verschieben und zweimal konfigurieren zu müssen.
 
 

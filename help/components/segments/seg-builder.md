@@ -4,7 +4,7 @@ title: Segmente erstellen
 feature: Filters, Segments
 role: User
 exl-id: 160021f1-6942-4682-9114-d375307d9912
-source-git-commit: 38be838fccf896a12da3fbadac50e578081312ba
+source-git-commit: ec2fc88372814b01a04d4cc824181222ee55a83d
 workflow-type: tm+mt
 source-wordcount: '1569'
 ht-degree: 50%
@@ -12,8 +12,6 @@ ht-degree: 50%
 ---
 
 # Segmente erstellen {#build-segments}
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="components_filters_createaudience"
@@ -24,7 +22,6 @@ ht-degree: 50%
 >id="components_filters_datapreview"
 >title="Datenvorschau"
 >abstract="Vergleicht die Daten dieses Segments mit den Daten der Datenansicht. Der Prozentsatz der Vorschau basiert auf der Gesamtzahl der Daten in der Datenansicht aus den **letzten 90 Tagen**.<br><br/>Wenn die Vorschau nicht geladen wird, wird Ihre Verbindung möglicherweise noch aufgestockt."
-
 
 Das Dialogfeld **[!UICONTROL Segment Builder]** wird verwendet, um neue Segmente zu erstellen oder vorhandene Segmente zu bearbeiten. Das Dialogfeld heißt **[!UICONTROL Neues Segment]** oder **[!UICONTROL Segment bearbeiten]** für Segmente, die Sie über den [[!UICONTROL Segment]Manager erstellen oder verwalten](/help/components/segments/seg-manage.md).
 
@@ -69,7 +66,7 @@ Mit dem Definition Builder erstellen Sie eine Segmentdefinition. Dabei verwenden
 Sie können den Typ und den Umfang Ihrer Definition konfigurieren:
 
 1. Um den Typ Ihrer Definition anzugeben, geben Sie an, ob Sie eine Ein- oder Ausschlussdefinition erstellen möchten. Wählen Sie ![Einstellung](/help/assets/icons/Setting.svg) **[!UICONTROL Optionen]** und aus dem Dropdown-Menü **[!UICONTROL Einschließen]** oder **[!UICONTROL Ausschließen]**.
-1. Um den Umfang Ihrer Definition anzugeben, wählen Sie aus dem Dropdown-Menü **[!UICONTROL Einschließen]** oder **[!UICONTROL Ausschließen]** aus, ob Sie den Umfang der Definition **[!UICONTROL Ereignis]**, **[!UICONTROL Sitzung]**, **[!UICONTROL Person]**, **[!UICONTROL Globales Konto]** [!BADGE B2B editionB2B edition B2B edition &#x200B;]{type=Informative url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} oder **&#x200B;**&#x200B;&rbrack;{type=Informative url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} Einkaufsgruppe&rbrack;{type=Informative url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}224&rbrace;B2B edition **&#x200B;**&#x200B;&rbrack;{type=Informative url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} **&#x200B;**&#x200B;möchten
+1. Um den Umfang Ihrer Definition anzugeben, wählen Sie aus dem Dropdown-Menü **[!UICONTROL Einschließen]** oder **[!UICONTROL Ausschließen]** aus, ob Sie den Umfang der Definition **[!UICONTROL Ereignis]**, **[!UICONTROL Sitzung]**, **[!UICONTROL Person]**, **[!UICONTROL Globales Konto]** [!BADGE B2B editionB2B edition B2B edition ]{type=Informative url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} oder **** ]{type=Informative url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} Einkaufsgruppe]{type=Informative url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}224}B2B edition **** ]{type=Informative url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} **** möchten[!BADGE [!BADGE [!BADGE 
 
 Sie können diese Einstellungen später jederzeit ändern.
 
@@ -202,5 +199,3 @@ In der folgenden Tabelle wird für jedes Attributionsmodell angegeben, welche ei
 Ein Beispielbericht zu Ereignissen, die die drei Segmente verwenden, sieht wie folgt aus:
 
 ![Ergebnisse des Segmentzuordnungsmodells](assets/filter-dimension-attribution-results.png)
-
-<!-- markdownlint-enable MD034 -->
