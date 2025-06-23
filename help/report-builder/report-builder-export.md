@@ -5,10 +5,10 @@ role: User, Admin
 feature: Report Builder
 type: Documentation
 solution: Customer Journey Analytics
-source-git-commit: 9505f21748b3d94b2398f898e5399d095ccec260
+source-git-commit: e653cbe7c1955d04830b9ed9ff6399973036ab64
 workflow-type: tm+mt
-source-wordcount: '1378'
-ht-degree: 39%
+source-wordcount: '1304'
+ht-degree: 38%
 
 ---
 
@@ -45,7 +45,7 @@ So exportieren Sie Berichte aus Report Builder:
 
 1. Falls noch nicht geschehen, konfigurieren Sie ein Exportkonto und einen Speicherort, wie unter [Konfigurieren von Cloud-Exportkonten](/help/components/exports/cloud-export-accounts.md) beschrieben.
 
-1. Öffnen Sie in der Excel-Tabelle, die die zu exportierenden Daten enthält, das rechte Bedienfeld {**}Adobe Report Builder.**
+1. Öffnen Sie in der Excel-Tabelle, die die zu exportierenden Daten enthält, das rechte Bedienfeld {]**}Adobe Report Builder.**[!UICONTROL 
 
 1. Wählen Sie [!UICONTROL **Zeitplan**] aus.
 
@@ -59,7 +59,7 @@ So exportieren Sie Berichte aus Report Builder:
 
    Um die Arbeitsmappe nach einem Zeitplan zu exportieren, den Sie bereits erstellt haben, wählen Sie den Zeitplan aus der Liste der Zeitpläne aus und klicken Sie auf **[!UICONTROL Planmäßig senden]**.
 
-1. Geben Sie im rechten Bedienfeld **0&rbrace;Adobe Report Builder&quot; die folgenden Informationen an, um mit der Erstellung eines neuen Zeitplans fortzufahren:**
+1. Geben Sie im rechten Bedienfeld **]0}Adobe Report Builder&quot; die folgenden Informationen an, um mit der Erstellung eines neuen Zeitplans fortzufahren:[!UICONTROL **
 
    | Feldname | Funktion |
    |---------|----------|
@@ -119,12 +119,6 @@ Stellen Sie sicher, dass Ihre Datenblöcke, Ihre Umgebung und Ihre Berechtigunge
 * **Datenblöcke:** Alle Datenblöcke müssen mindestens eine Komponente zu einer Spalte, Zeile oder einem Wert enthalten.
 
 * **Umgebung:** Stellen Sie sicher, dass die von Customer Journey Analytics verwendeten [IP-Adressen](/help/technotes/ip-addresses.md) und [Domains](/help/technotes/domains.md) durch die Firewall ihrer Organisation zugelassen werden.
-
-* **Berechtigungen:** In der Adobe Admin Console muss Benutzenden ein Produktprofil zugewiesen werden, das über die Berechtigung [!UICONTROL **Vollständiger Tabellenexport**] verfügt, um vollständige Tabellen exportieren zu können. Informationen zum Zuweisen einer Berechtigung zu einem Produktprofil in der Admin Console finden Sie unter [Berechtigung für Customer Journey Analytics in der Admin Console](/help/technotes/access-control.md).
-
-  >[!NOTE]
-  >
-  >  Benutzende, denen die [Produktadministratorrolle) zugewiesen ](/help/technotes/access-control.md#product-admin-role), haben immer Zugriff auf den Export von Berichten aus Report Builder. **(Gilt dies für Report Builder???)**
 
 
 
