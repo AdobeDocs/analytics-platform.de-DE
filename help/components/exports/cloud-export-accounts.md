@@ -5,16 +5,16 @@ title: Konfigurieren von Cloud-Exportkonten
 feature: Components
 exl-id: 7c9d100f-0dbd-4dd2-b20b-d2ee117f1b7a
 role: User, Admin
-source-git-commit: cb4c2721867585fd11c0929f0947436872272da6
+source-git-commit: 882e280da3f65e297abccd475d381832fd236843
 workflow-type: tm+mt
-source-wordcount: '2230'
-ht-degree: 26%
+source-wordcount: '2246'
+ht-degree: 28%
 
 ---
 
 # Konfigurieren von Cloud-Exportkonten
 
-Bevor Sie Customer Journey Analytics-Berichte an ein Cloud-Ziel exportieren können, wie [Exportieren von Customer Journey Analytics-Berichten in die Cloud](/help/analysis-workspace/export/export-cloud.md) beschrieben, müssen Sie das Ziel hinzufügen und konfigurieren, an das die Daten gesendet werden sollen.
+Bevor Sie Customer Journey Analytics-Berichte in ein Cloud-Ziel exportieren können (entweder aus Analysis Workspace, wie unter [Exportieren von Customer Journey Analytics-Berichten in die Cloud](/help/analysis-workspace/export/export-cloud.md) beschrieben, oder aus Report Builder, wie [Exportieren von Berichten aus Report Builder](/help/report-builder/report-builder-export.md)), müssen Sie das Ziel hinzufügen und konfigurieren, an das die Daten gesendet werden sollen.
 
 Dieser Prozess besteht darin, das Konto (z. B. Amazon S3, Google Cloud Platform usw.) wie in diesem Artikel beschrieben hinzuzufügen und zu konfigurieren und dann den Speicherort innerhalb dieses Kontos (z. B. einen Ordner innerhalb des Kontos) hinzuzufügen und zu konfigurieren, wie in [Konfigurieren von Cloud-Exportspeicherorten](/help/components/exports/cloud-export-locations.md) beschrieben.
 
@@ -23,8 +23,8 @@ Informationen zum Verwalten vorhandener Konten, einschließlich Anzeigen, Bearbe
 ## Erstellen eines Cloud-Exportkontos
 
 1. Stellen Sie sicher, dass Sie die [Mindestanforderungen](/help/analysis-workspace/export/export-cloud.md#minimum-requirements) für den Export von Berichten in die Cloud erfüllen.
-1. Wählen Sie beim Customer Journey Analytics [!UICONTROL **Komponenten**] > [!UICONTROL **Exporte**] aus.
-1. Wählen Sie auf [!UICONTROL &#x200B; Seite &#x200B;] die Registerkarte [!UICONTROL **Standortkonten**] aus.
+1. Wählen Sie in Customer Journey Analytics [!UICONTROL **Komponenten**] > [!UICONTROL **Exporte**] aus.
+1. Wählen Sie auf [!UICONTROL  Seite ] die Registerkarte [!UICONTROL **Standortkonten**] aus.
 
    ![Exportiert Seitenoptionen mit „Weiteres Konto hinzufügen“](assets/account-add.png)
 
@@ -66,10 +66,10 @@ Informationen zum Verwalten vorhandener Konten, einschließlich Anzeigen, Bearbe
 
 >[!IMPORTANT]
 >
->Beachten Sie Folgendes bei der Verwendung der AEP Data Landing Zone für Ihr Exportkonto:
+>Beachten Sie bei der Verwendung der Data Landing Zone von AEP für Ihr Exportkonto Folgendes:
 >
 > * Stellen Sie beim Exportieren von Customer Journey Analytics-Berichten in die Data Landing Zone von Adobe Experience Platform sicher, dass Sie die Daten innerhalb von 7 Tagen herunterladen und dann aus der Data Landing Zone von AEP löschen. Nach 7 Tagen werden die Daten automatisch aus der Data Landing Zone von AEP gelöscht.
-> * AEP Data Landing Zone verwendet entweder Azure- oder AWS-Speicher. Wenn Ihr Unternehmen eine Unternehmensanmeldung verwendet, die für die Verwendung von Azure konfiguriert ist, verwendet AEP Data Landing Zone Azure. Wenn das Anmeldeunternehmen für die Verwendung von AWS konfiguriert ist, verwendet AEP Data Landing Zone AWS.
+> * Die Data Landing Zone von AEP verwendet entweder Azure- oder AWS-Speicher. Wenn Ihr Unternehmen ein Anmeldeunternehmen verwendet, das für die Verwendung von Azure konfiguriert ist, verwendet die AEP Data Landing Zone Azure. Wenn das Anmeldeunternehmen für die Verwendung von AWS konfiguriert ist, verwendet die Data Landing Zone von AEP AWS.
 >
 
 1. Beginnen Sie mit der Erstellung eines Cloud-Exportkontos auf eine der folgenden Arten:
@@ -78,7 +78,7 @@ Informationen zum Verwalten vorhandener Konten, einschließlich Anzeigen, Bearbe
 
    * Beim [Exportieren vollständiger Tabellen aus Analysis Workspace](/help/analysis-workspace/export/export-cloud.md#export-full-tables-from-analysis-workspace)
 
-1. Wählen Sie anschließend **[!UICONTROL AEP Data Landing Zone]** im Feld **[!UICONTROL Kontotyp]** die Option [!UICONTROL **Speichern**].
+1. Nachdem Sie **[!UICONTROL AEP Data Landing Zone]** im Feld **[!UICONTROL Kontotyp]** ausgewählt haben, klicken Sie auf [!UICONTROL **Speichern**].
 
    Je nachdem, ob Ihre AEP Data Landing Zone für die Verwendung von Azure- oder AWS-Speicher konfiguriert ist, wird eines der folgenden Dialogfelder angezeigt:
 
@@ -86,17 +86,17 @@ Informationen zum Verwalten vorhandener Konten, einschließlich Anzeigen, Bearbe
 
      Das [!UICONTROL **Exportkonto erstellt**] wird angezeigt.
 
-     ![Dialogfeld „Konto exportieren“ AEP Data Landing Zone](assets/export-account-aep.png)
+     ![Dialogfeld Konto exportieren AEP Data Landing Zone](assets/export-account-aep.png)
 
    * **AWS-Speicher:**
 
      >[!AVAILABILITY]
      >
-     >Dieser Abschnitt gilt für Implementierungen von Experience Platform, die auf Amazon Web Services (AWS) ausgeführt werden. Experience Platform, das auf AWS ausgeführt wird, steht derzeit einer begrenzten Anzahl von Kunden zur Verfügung. Weitere Informationen zur unterstützten Experience Platform-Infrastruktur finden Sie in der Übersicht zur [Experience Platform-Multi-Cloud](https://experienceleague.adobe.com/de/docs/experience-platform/landing/multi-cloud).
+     >Dieser Abschnitt gilt für Implementierungen von Experience Platform, die in Amazon Web Services (AWS) ausgeführt werden. Experience Platform, das in AWS ausgeführt wird, steht derzeit einer begrenzten Anzahl von Kundinnen und Kunden zur Verfügung. Weitere Informationen zur unterstützten Experience Platform-Infrastruktur finden Sie in der [Übersicht zur Experience Platform Multi-Cloud](https://experienceleague.adobe.com/de/docs/experience-platform/landing/multi-cloud).
 
      Das [!UICONTROL **Konto erstellt**] wird angezeigt.
 
-     ![Dialogfeld „Konto exportieren“ AEP Data Landing Zone](assets/export-account-aep-aws.png)
+     ![Dialogfeld Konto exportieren AEP Data Landing Zone](assets/export-account-aep-aws.png)
 
 1. (Bedingt) Wenn Sie Azure-Speicher verwenden:
 
@@ -112,9 +112,9 @@ Informationen zum Verwalten vorhandener Konten, einschließlich Anzeigen, Bearbe
 
       1. Falls noch nicht geschehen, laden Sie den [Microsoft Azure Storage Explorer](https://azure.microsoft.com/en-us/products/storage/storage-explorer/) herunter.
 
-      1. Befolgen Sie in der Adobe Experience Platform-Dokumentation die unter [Verbinden Ihres Data Landing Zone-Containers mit dem Azure Storage Explorer](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/cloud-storage/data-landing-zone.html?lang=de#connect-your-data-landing-zone-container-to-azure-storage-explorer) beschriebenen Schritte.
+      1. Befolgen Sie in der Adobe Experience Platform-Dokumentation die unter [Verbinden Ihres Data Landing Zone-Containers mit dem Azure Storage Explorer](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/cloud-storage/data-landing-zone.html#connect-your-data-landing-zone-container-to-azure-storage-explorer) beschriebenen Schritte.
 
-         Sie können die in den Abschnitten [Abrufen der Anmeldeinformationen für Ihre Data Landing Zone](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/cloud-storage/data-landing-zone.html?lang=de#retrieve-dlz-credentials) und [Aktualisieren der Anmeldeinformationen für die Data Landing Zone](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/cloud-storage/data-landing-zone.html?lang=de#update-dlz-credentials) beschriebenen Aufgaben überspringen, da der von Ihnen kopierte URI diese Anmeldeinformationen enthält.
+         Sie können die in den Abschnitten [Abrufen der Anmeldeinformationen für Ihre Data Landing Zone](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/cloud-storage/data-landing-zone.html#retrieve-dlz-credentials) und [Aktualisieren der Anmeldeinformationen für die Data Landing Zone](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/cloud-storage/data-landing-zone.html#update-dlz-credentials) beschriebenen Aufgaben überspringen, da der von Ihnen kopierte URI diese Anmeldeinformationen enthält.
 
       1. Wenn Sie der Adobe Experience Platform-Dokumentation folgen und zum Feld [!UICONTROL **Blob-Container-SAS-URL**] kommen, fügen Sie den SAS-URI ein, den Sie in Schritt 3 kopiert haben.
 
@@ -126,9 +126,9 @@ Informationen zum Verwalten vorhandener Konten, einschließlich Anzeigen, Bearbe
 
    1. Wählen Sie [!UICONTROL **Weiter**] > [!UICONTROL **Verbinden**] aus.
 
-   1. Klicken Sie auf Customer Journey Analytics im Dialogfeld [!UICONTROL **Exportkonto erstellt**] auf [!UICONTROL **OK**].
+   1. Wählen Sie in Customer Journey Analytics im Dialogfeld [!UICONTROL **Exportkonto erstellt**] die Option [!UICONTROL **OK**] aus.
 
-      ![Dialogfeld „Konto exportieren“ AEP Data Landing Zone](assets/export-account-aep.png)
+      ![Dialogfeld Konto exportieren AEP Data Landing Zone](assets/export-account-aep.png)
 
 1. (Bedingt) Wenn Sie AWS-Speicher verwenden:
 
@@ -144,7 +144,7 @@ Informationen zum Verwalten vorhandener Konten, einschließlich Anzeigen, Bearbe
 
       * **[!UICONTROL DLZ-Ordner]**
 
-      ![Dialogfeld „Konto exportieren“ AEP Data Landing Zone](assets/export-account-aep-aws.png)
+      ![Dialogfeld Konto exportieren AEP Data Landing Zone](assets/export-account-aep-aws.png)
 
    1. Klicken Sie [!UICONTROL **OK**].
 
@@ -280,9 +280,9 @@ Informationen zum Verwalten vorhandener Konten, einschließlich Anzeigen, Bearbe
 
    | Feld | Funktion |
    |---------|----------|
-   | [!UICONTROL **Kontokennung**] | Identifiziert auf einzigartige Weise ein Snowflake-Konto innerhalb Ihres Unternehmens sowie im gesamten globalen Netzwerk von Snowflake-unterstützten Cloud-Plattformen und Cloud-Regionen. <p>Sie müssen die Kontokennung von Ihrem Snowflake-Konto abrufen und die Informationen hier einfügen.</p><p>Informationen zum Abrufen dieser Informationen finden Sie auf der [Kontokennungen“ in der Snowflake-Dokumentation](https://docs.snowflake.com/en/user-guide/admin-account-identifier).</p> |
-   | [!UICONTROL **Benutzende**] | Der Benutzername, der für die Verbindung verwendet wird. Es wird empfohlen, einen neuen Benutzer zu erstellen, der speziell für das Adobe verwendet wird. Geben Sie hier den Namen an und erstellen Sie dann einen Benutzer auf Snowflake mit demselben Namen. Sie können einen Benutzer auf Snowflake mit dem Befehl `CREATE USER` erstellen.  <p>Weitere Informationen finden Sie unter [Befehle für Benutzer, Rollen und Berechtigungen](https://docs.snowflake.com/en/sql-reference/commands-user-role).</p> |
-   | [!UICONTROL **Rolle**] | Die Rolle, die dem Benutzer zugewiesen wird. Es wird empfohlen, eine neue Rolle zu erstellen, die speziell für das Adobe verwendet wird. Geben Sie hier die Rolle an, erstellen Sie dann eine Rolle in Snowflake mit demselben Namen und gewähren Sie dem Benutzer die Rolle. Sie können eine Rolle beim Snowflake mit dem Befehl `CREATE ROLE` erstellen. <p>Weitere Informationen finden Sie unter [Befehle für Benutzer, Rollen und Berechtigungen](https://docs.snowflake.com/en/sql-reference/commands-user-role).</p> |
+   | [!UICONTROL **Kontokennung**] | Identifiziert auf eindeutige Weise ein Snowflake-Konto innerhalb Ihres Unternehmens sowie im gesamten globalen Netzwerk von Snowflake-unterstützten Cloud-Plattformen und Cloud-Regionen. <p>Sie müssen die Kontokennung von Ihrem Snowflake-Konto abrufen und die Informationen dann hier einfügen.</p><p>Informationen zum Abrufen dieser Informationen finden Sie auf der [Kontokennungen“ in der Snowflake-Dokumentation](https://docs.snowflake.com/en/user-guide/admin-account-identifier).</p> |
+   | [!UICONTROL **Benutzende**] | Der Benutzername, der für die Verbindung verwendet wird. Es wird empfohlen, einen neuen Benutzer zu erstellen, der speziell für Adobe verwendet wird. Geben Sie hier den Namen an und erstellen Sie dann in Snowflake einen Benutzer mit demselben Namen. Sie können einen Benutzer in Snowflake mit dem Befehl `CREATE USER` erstellen.  <p>Weitere Informationen finden Sie unter [Befehle für Benutzer, Rollen und Berechtigungen](https://docs.snowflake.com/en/sql-reference/commands-user-role).</p> |
+   | [!UICONTROL **Rolle**] | Die Rolle, die dem Benutzer zugewiesen wird. Es wird empfohlen, eine neue Rolle zu erstellen, die speziell für Adobe verwendet wird. Geben Sie hier die Rolle an und erstellen Sie dann in Snowflake eine Rolle mit demselben Namen, und gewähren Sie dem Benutzer die Rolle. Sie können eine Rolle in Snowflake mit dem Befehl `CREATE ROLE` erstellen. <p>Weitere Informationen finden Sie unter [Befehle für Benutzer, Rollen und Berechtigungen](https://docs.snowflake.com/en/sql-reference/commands-user-role).</p> |
 
    {style="table-layout:auto"}
 
@@ -294,7 +294,7 @@ Informationen zum Verwalten vorhandener Konten, einschließlich Anzeigen, Bearbe
 
 1. Kopieren Sie den Inhalt des Felds [!UICONTROL **Öffentlicher Schlüssel**] in die Zwischenablage. Der öffentliche Schlüssel wird von Adobe bereitgestellt.
 
-   Verwenden Sie den öffentlichen Schlüssel auf Snowflake, um eine Verbindung zu Ihrem Snowflake-Konto herzustellen. Sie müssen den von Ihnen erstellten Benutzer mit diesem öffentlichen Schlüssel verknüpfen.
+   Verwenden Sie den öffentlichen Schlüssel in Snowflake, um eine Verbindung zu Ihrem Snowflake-Konto herzustellen. Sie müssen den von Ihnen erstellten Benutzer mit diesem öffentlichen Schlüssel verknüpfen.
 
    Geben Sie beispielsweise in Snowflake den folgenden Befehl an:
 

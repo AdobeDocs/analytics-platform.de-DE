@@ -6,14 +6,14 @@ feature: Report Builder
 type: Documentation
 solution: Customer Journey Analytics
 exl-id: 7429d8f9-1e8f-4fbd-8b04-cbe7adbff3e2
-source-git-commit: 6dd8a70293161ff58361953a7e48a98834b7abe0
+source-git-commit: 9505f21748b3d94b2398f898e5399d095ccec260
 workflow-type: tm+mt
-source-wordcount: '1105'
-ht-degree: 13%
+source-wordcount: '864'
+ht-degree: 15%
 
 ---
 
-# Arbeitsmappen planen
+# Arbeitsmappen durch Freigabe per E-Mail planen
 
 Nachdem Sie Ihre Arbeitsmappe gespeichert und Ihre Analyse abgeschlossen haben, können Sie Ihre Arbeitsmappe mithilfe der Zeitplanfunktion für andere in Ihrem Team freigeben. Mit der Zeitplanfunktion können Sie einen Zeitplan erstellen, der die Daten in der Arbeitsmappe automatisch aktualisiert. Senden Sie die Excel-Arbeitsmappendatei per E-Mail als Anhang an Ihre angegebene Zielgruppe zu einem bestimmten Zeitpunkt. Durch die Einrichtung eines Zeitplans erhalten die Empfänger und Empfängerinnen automatisch regelmäßige Aktualisierungen. Sie können die Zeitplanfunktion auch verwenden, um die Arbeitsmappe nur einmal zu senden, ohne automatische Aktualisierungen festzulegen.
 
@@ -129,54 +129,7 @@ In beiden Fällen wird unten im Report Builder-Hub ein Bestätigungsfoast angeze
 
 Um den Versand der Arbeitsmappe abzubrechen, wählen Sie **[!UICONTROL Abbrechen]** aus.
 
+## Geplante Arbeitsmappen verwalten
 
-## Anzeigen und Verwalten geplanter Arbeitsmappen
+Informationen zum Verwalten von bereits geplanten Arbeitsmappen finden Sie unter [Verwalten geplanter Arbeitsmappen](/help/report-builder/manage-schedules-reportbuilder.md).
 
-Sie können alle geplanten Arbeitsmappen auf der Registerkarte „Arbeitsmappen **[!UICONTROL anzeigen und]**.
-
-1. Wählen Sie **[!UICONTROL Zeitplan]** im Report Builder-Hub aus.
-
-1. Wählen Sie die **[!UICONTROL Arbeitsmappen]** aus. Es wird eine Liste aller geplanten Arbeitsmappen angezeigt.
-
-   ![Geplante Arbeitsmappe](assets/scheduled-workbooks.png){zoomable="yes"}
-
-   Sie können den Mauszeiger über das Symbol bewegen, um den Status einer geplanten Arbeitsmappe anzuzeigen.
-
-   Verwenden Sie ![Suche](/help/assets/icons/Search.svg), um nach bestimmten geplanten Arbeitsmappen zu suchen.
-Mit ![ColumnSetting](/help/assets/icons/ColumnSetting.svg) können Sie festlegen, welche Spalten angezeigt werden sollen.
-
-1. Eine oder mehrere Arbeitsmappen auswählen.
-
-   ![Arbeitsmappen planen ausgewählt](assets/scheduled-workbooks-selected.png){zoomable="yes"}
-
-   Die folgenden Optionen sind verfügbar:
-
-   | Option | Beschreibung |
-   |---|---|
-   | ![Bearbeiten](/help/assets/icons/Edit.svg) | Bearbeiten Sie den Zeitplan für eine ausgewählte Arbeitsmappe. |
-   | ![Verlauf](/help/assets/icons/History.svg) | Zeigt den Verlauf der ausgewählten Arbeitsmappen an. |
-   | ![Pause](/help/assets/icons/Pause.svg) | Aussetzen des Zeitplans ausgewählter Arbeitsmappen. |
-   | ![Play](/help/assets/icons/Play.svg) | Setzt den Zeitplan der ausgewählten Arbeitsmappen fort. |
-   | ![Herunterladen](/help/assets/icons/Download.svg) | Die ausgewählte Arbeitsmappe in eine neue Arbeitsmappe herunterladen. |
-   | ![Löschen](/help/assets/icons/Delete.svg) | Löscht den Zeitplan der ausgewählten Arbeitsmappen. |
-
-
-## Verlauf und Status geplanter Arbeitsmappen
-
-Sie können den Verlauf und den Status geplanter Arbeitsmappen auf der Registerkarte **[!UICONTROL Verlauf]** anzeigen.
-
-1. Wählen Sie **[!UICONTROL Zeitplan]** im Report Builder-Hub aus.
-
-1. Wählen Sie die **[!UICONTROL Verlauf]** aus. Es wird eine Liste aller geplanten Arbeitsmappen angezeigt.
-
-   ![Geplanter Verlauf](assets/scheduled-workbooks-history.png){zoomable="yes"}
-
-   Verwenden Sie ![Suche](/help/assets/icons/Search.svg), um in der Liste nach bestimmten Arbeitsmappen zu suchen.
-Mit ![ColumnSetting](/help/assets/icons/ColumnSetting.svg) können Sie festlegen, welche Spalten angezeigt werden sollen.
-
-   Auf **[!UICONTROL Registerkarte]** Verlauf“ können Sie den Status jeder geplanten Aufgabe überprüfen. In einer separaten Zeile wird die Statusänderung für jede geplante Aufgabe dokumentiert.
-
-   * Eine ![CheckmarkCircleGreen](/help/assets/icons/CheckmarkCircleGreen.svg) zeigt an, dass die Arbeitsmappe erfolgreich gesendet wurde.
-   * Ein ![AlertRed](/help/assets/icons/AlertRed.svg) zeigt an, dass ein Fehler aufgetreten ist.
-
-Alternativ können Sie ![Verlauf](/help/assets/icons/History.svg) für eine oder mehrere ausgewählte Arbeitsmappen auf der Registerkarte **[!UICONTROL Arbeitsmappen]** auswählen. Diese Aktion zeigt die Registerkarte **[!UICONTROL Verlauf]** mit einer nach Ihrer Auswahl gefilterten Liste an. Wählen Sie ![CrossSize75](/help/assets/icons/CrossSize75.svg) aus, um einen Filter zu entfernen.

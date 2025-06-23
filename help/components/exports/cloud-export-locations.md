@@ -1,20 +1,20 @@
 ---
-description: Cloud-Exportspeicherort konfigurieren, an den Customer Journey Analytics-Daten gesendet werden können
+description: Konfigurieren Sie den Cloud-Exportspeicherort, an den Customer Journey Analytics-Daten gesendet werden können
 keywords: Analysis Workspace
 title: Konfigurieren von Cloud-Exportspeicherorten
 feature: Components
 exl-id: 93f1cca0-95da-41a0-a4f9-5ab620a5b9da
 role: User, Admin
-source-git-commit: ec8f6c3c8cc1c0b12821e3b61fbef9f5fe875258
+source-git-commit: 882e280da3f65e297abccd475d381832fd236843
 workflow-type: tm+mt
-source-wordcount: '1888'
+source-wordcount: '1915'
 ht-degree: 20%
 
 ---
 
 # Konfigurieren von Cloud-Exportspeicherorten
 
-Bevor Sie Customer Journey Analytics-Berichte an ein Cloud-Ziel exportieren können, wie [Exportieren von Customer Journey Analytics-Berichten in die Cloud](/help/analysis-workspace/export/export-cloud.md) beschrieben, müssen Sie den Speicherort hinzufügen und konfigurieren, an den die Daten gesendet werden sollen.
+Bevor Sie Customer Journey Analytics-Berichte in ein Cloud-Ziel exportieren können (entweder aus Analysis Workspace, wie unter [Exportieren von Customer Journey Analytics-Berichten in die Cloud](/help/analysis-workspace/export/export-cloud.md) beschrieben, oder aus Report Builder, wie [Exportieren von Berichten aus Report Builder](/help/report-builder/report-builder-export.md)), wie [Exportieren von Customer Journey Analytics-Berichten in die Cloud](/help/analysis-workspace/export/export-cloud.md) beschrieben, müssen Sie den Speicherort hinzufügen und konfigurieren, an den die Daten gesendet werden sollen.
 
 Dieser Prozess besteht aus dem Hinzufügen und Konfigurieren des Kontos (z. B. Amazon S3, Google Cloud Platform usw.), wie unter [Konfigurieren von Cloud-Exportkonten](/help/components/exports/cloud-export-accounts.md) beschrieben, und dem Hinzufügen und Konfigurieren des Speicherorts innerhalb dieses Kontos (z. B. eines Ordners innerhalb des Kontos), wie in diesem Artikel beschrieben.
 
@@ -24,7 +24,7 @@ Informationen zum Verwalten vorhandener Speicherorte, einschließlich Anzeigen, 
 
 1. Sie müssen ein Konto hinzufügen, bevor Sie einen Speicherort hinzufügen können. Falls noch nicht geschehen, fügen Sie ein Konto hinzu, wie in [Konfigurieren von Cloud-Exportkonten](/help/components/exports/cloud-export-accounts.md) beschrieben.
 
-1. Wählen Sie beim Customer Journey Analytics [!UICONTROL **Komponenten**] > [!UICONTROL **Exporte**] aus.
+1. Wählen Sie in Customer Journey Analytics [!UICONTROL **Komponenten**] > [!UICONTROL **Exporte**] aus.
 
 1. Wählen Sie die Registerkarte [!UICONTROL **Standorte**] und dann [!UICONTROL **Standort hinzufügen**] aus.
 
@@ -84,15 +84,15 @@ Informationen zum Verwalten vorhandener Speicherorte, einschließlich Anzeigen, 
 
 1. Sie können jetzt Daten aus Analysis Workspace an das -Konto und den Speicherort exportieren, die Sie konfiguriert haben. Informationen zum Exportieren von Daten in die Cloud finden Sie unter [Exportieren von Projektdaten in die Cloud](/help/analysis-workspace/export/export-cloud.md).
 
-1. Die einfachste Möglichkeit, auf Ihre Daten in der AEP-Data Landing Zone zuzugreifen, besteht in der Verwendung des Microsoft Azure Storage-Explorers. Dies ist dasselbe Tool, das in den Anweisungen zum Konfigurieren des [AEP Data Landing Zone-Kontos](/help/components/exports/cloud-export-accounts.md#aep-data-landing-zone) verwendet wird.
+1. Der einfachste Weg, auf Ihre Daten in der AEP Data Landing Zone zuzugreifen, ist die Verwendung des Microsoft Azure Storage Explorers. Dies ist dasselbe Tool, das in den Anweisungen zum Konfigurieren des [AEP Data Landing Zone-Kontos verwendet ](/help/components/exports/cloud-export-accounts.md#aep-data-landing-zone).
 
    1. Öffnen Sie den [Microsoft Azure Storage Explorer](https://azure.microsoft.com/en-us/products/storage/storage-explorer/).
 
-   1. Navigieren Sie [!UICONTROL **Speicherkonten**] > [!UICONTROL **(angehängte Container)**] > [!UICONTROL **Blob-Container**] > **[!UICONTROL cjaexport-_number_]**>*** your_container_name &#x200B;***.
+   1. Navigieren Sie [!UICONTROL **Speicherkonten**] > [!UICONTROL **(angehängte Container)**] > [!UICONTROL **Blob-Container**] > **[!UICONTROL cjaexport-_number_]**>*** your_container_name ***.
 
       >[!NOTE]
       >
-      >Der Ordnername **[!UICONTROL cjaexport-_number_]**&#x200B;ist der Standardname, der vom Azure Storage Explorer bereitgestellt wird. Wenn Ihrem SAS-URI nur eine einzige Verbindung zugeordnet ist (was normal ist), lautet der Name dieses Ordners **[!UICONTROL cjaexport-1]**.
+      >Der Ordnername **[!UICONTROL cjaexport-_number_]**ist der Standardname, der vom Azure Storage Explorer bereitgestellt wird. Wenn Ihrem SAS-URI nur eine einzige Verbindung zugeordnet ist (was normal ist), lautet der Name dieses Ordners **[!UICONTROL cjaexport-1]**.
 
 
       ![Zugreifen auf Dateien im Azure-Speicher-Explorer](assets/azure-storage-explorer-access.png)
@@ -155,7 +155,7 @@ Informationen zum Verwalten vorhandener Speicherorte, einschließlich Anzeigen, 
 
    | Feld | Funktion |
    |---------|----------|
-   | [!UICONTROL **Container-Name**] | Der Container innerhalb des angegebenen Kontos, an den Customer Journey Analytics-Daten gesendet werden sollen. |
+   | [!UICONTROL **Container-Name**] | Der Container innerhalb des von Ihnen angegebenen Kontos, an den Customer Journey Analytics-Daten gesendet werden sollen. |
    | [!UICONTROL **Präfix**] | Der Ordner im Container, in dem Sie die Daten ablegen möchten. Geben Sie einen Ordnernamen an und fügen Sie dann nach dem Namen einen Schrägstrich hinzu, um den Ordner zu erstellen. Beispiel: `folder_name/`<p>Stellen Sie sicher, dass der SAS-Token-Speicher, den Sie bei der Konfiguration des Azure SAS-Kontos im Feld „Key Vault-Geheimnisname“ angegeben haben, über die `Write`-Berechtigung verfügt. Dadurch kann das SAS-Token Dateien in Ihrem Azure-Container erstellen. <p>Wenn Sie möchten, dass das SAS-Token auch Dateien überschreibt, stellen Sie sicher, dass der SAS-Token-Speicher die `Delete`-Berechtigung besitzt.</p><p>Weitere Informationen finden Sie in der Azure Blob Storage-Dokumentation unter [Blob Storage-Ressourcen](https://learn.microsoft.com/de-de/azure/storage/blobs/storage-blobs-introduction#blob-storage-resources).</p> |
 
    {style="table-layout:auto"}
@@ -176,7 +176,7 @@ Informationen zum Verwalten vorhandener Speicherorte, einschließlich Anzeigen, 
 
    | Feld | Funktion |
    |---------|----------|
-   | [!UICONTROL **Container**] | Der Container innerhalb des angegebenen Kontos, an den Customer Journey Analytics-Daten gesendet werden sollen. Stellen Sie sicher, dass Sie Berechtigungen zum Hochladen von Dateien in die Azure-Anwendung erteilen, die Sie zuvor erstellt haben. |
+   | [!UICONTROL **Container**] | Der Container innerhalb des von Ihnen angegebenen Kontos, an den Customer Journey Analytics-Daten gesendet werden sollen. Stellen Sie sicher, dass Sie Berechtigungen zum Hochladen von Dateien in die Azure-Anwendung erteilen, die Sie zuvor erstellt haben. |
    | [!UICONTROL **Präfix**] | Der Ordner im Container, in dem Sie die Daten ablegen möchten. Geben Sie einen Ordnernamen an und fügen Sie dann nach dem Namen einen Schrägstrich hinzu, um den Ordner zu erstellen. Beispiel: `folder_name/`<p>Stellen Sie sicher, dass die Anwendungs-ID, die Sie beim Konfigurieren des Azure RBAC-Kontos angegeben haben, der Rolle `Storage Blob Data Contributor` zugeteilt wurde, damit der Zugriff auf den Container (Ordner) möglich ist.</p> <p>Weitere Informationen finden Sie unter [Integrierte Azure-Rollen](https://learn.microsoft.com/de-de/azure/role-based-access-control/built-in-roles).</p> |
    | [!UICONTROL **Konto**] | Das Azure-Speicherkonto. |
 
@@ -198,10 +198,10 @@ Informationen zum Verwalten vorhandener Speicherorte, einschließlich Anzeigen, 
 
    | Feld | Funktion |
    |---------|----------|
-   | [!UICONTROL **DB**] | Die angegebene Datenbank sollte eine vorhandene Datenbank sein. Die von Ihnen erstellte Rolle muss über Berechtigungen für den Zugriff auf diese Datenbank verfügen.<p>Dies ist die Datenbank, die mit dem Namen des Stadiums verknüpft ist.</p><p>Sie können diese Rollenberechtigungen der Datenbank auf Snowflake mit dem folgenden Befehl gewähren: `GRANT USAGE ON DATABASE <your_database> TO ROLE <your_role>;`</p> <p>Weitere Informationen finden Sie auf der Seite [Befehle für Datenbank, Schema und Freigabe“ in der Snowflake-Dokumentation](https://docs.snowflake.com/en/sql-reference/commands-database).</p> |
-   | [!UICONTROL **Schema**] | Das angegebene Schema sollte ein vorhandenes Schema sein. Die von Ihnen erstellte Rolle muss über Berechtigungen für den Zugriff auf dieses Schema verfügen.<p>Dies ist das Schema, das mit dem Namen des Stadiums verknüpft ist.<p>Sie können die von Ihnen erstellte Rolle dem Schema auf Snowflake mit dem folgenden Befehl zuweisen: `GRANT USAGE ON SCHEMA <your_database>.<your_schema> TO ROLE <your_role>;`</p><p>Weitere Informationen finden Sie auf der Seite [Befehle für Datenbank, Schema und Freigabe“ in der Snowflake-Dokumentation](https://docs.snowflake.com/en/sql-reference/commands-database).</p> |
-   | [!UICONTROL **Name des Stadiums**] | Der Name des internen Schritts, in dem Datendateien auf Snowflake gespeichert werden.<p>Stellen Sie sicher, dass die für das Konto angegebene Rolle Lese- und Schreibzugriff auf diesen Phasennamen hat. (Da Sie Lese- und Schreibzugriff gewähren, empfehlen wir, einen Schritt zu verwenden, der nur vom Adobe verwendet wird.)<p>Sie können Lese- und Schreibzugriff auf den Namen des Stadiums in Snowflake gewähren, indem Sie folgenden Befehl verwenden: `GRANT READ, WRITE ON STAGE <your_database>.<your_schema>.<your_stage_name> TO ROLE <your_role>;`</p> <p>Informationen zum Gewähren von Berechtigungen für eine Rolle finden Sie unter [Gewähren von Berechtigungen in der Dokumentation zum Snowflake](https://docs.snowflake.com/en/sql-reference/sql/grant-privilege). <p>Weitere Informationen zum Namen des Stadiums finden Sie auf der Seite [Auswählen eines internen Stadiums für lokale Dateien“ in der Snowflake-Dokumentation](https://docs.snowflake.com/en/user-guide/data-load-local-file-system-create-stage).</p> |
-   | [!UICONTROL **Staging-**] | Der Pfad zu dem Speicherort, an dem Datendateien auf Snowflake gespeichert werden. <p>Weitere Informationen finden Sie auf der Seite [Auswahl eines internen Schritts für lokale Dateien“ in der Snowflake-Dokumentation](https://docs.snowflake.com/en/user-guide/data-load-local-file-system-create-stage).</p> |
+   | [!UICONTROL **DB**] | Die angegebene Datenbank sollte eine vorhandene Datenbank sein. Die von Ihnen erstellte Rolle muss über Berechtigungen für den Zugriff auf diese Datenbank verfügen.<p>Dies ist die Datenbank, die mit dem Namen des Stadiums verknüpft ist.</p><p>Sie können diese Rollenberechtigungen der Datenbank in Snowflake mit dem folgenden Befehl gewähren: `GRANT USAGE ON DATABASE <your_database> TO ROLE <your_role>;`</p> <p>Weitere Informationen finden Sie auf der Seite [Befehle für Datenbank, Schema und Freigabe“ in der Snowflake-Dokumentation](https://docs.snowflake.com/en/sql-reference/commands-database).</p> |
+   | [!UICONTROL **Schema**] | Das angegebene Schema sollte ein vorhandenes Schema sein. Die von Ihnen erstellte Rolle muss über Berechtigungen für den Zugriff auf dieses Schema verfügen.<p>Dies ist das Schema, das mit dem Namen des Stadiums verknüpft ist.<p>Sie können die von Ihnen erstellte Rolle dem Schema in Snowflake mit dem folgenden Befehl zuweisen: `GRANT USAGE ON SCHEMA <your_database>.<your_schema> TO ROLE <your_role>;`</p><p>Weitere Informationen finden Sie auf der Seite [Befehle für Datenbank, Schema und Freigabe“ in der Snowflake-Dokumentation](https://docs.snowflake.com/en/sql-reference/commands-database).</p> |
+   | [!UICONTROL **Name des Stadiums**] | Der Name des internen Schritts, in dem Datendateien in Snowflake gespeichert werden.<p>Stellen Sie sicher, dass die für das Konto angegebene Rolle Lese- und Schreibzugriff auf diesen Phasennamen hat. (Da Sie Lese- und Schreibzugriff gewähren, empfehlen wir die Verwendung eines Schritts, der nur von Adobe verwendet wird.)<p>Sie können mit dem folgenden Befehl Lese- und Schreibzugriff auf den Namen des Stadiums in Snowflake gewähren: `GRANT READ, WRITE ON STAGE <your_database>.<your_schema>.<your_stage_name> TO ROLE <your_role>;`</p> <p>Informationen zum Gewähren von Berechtigungen für eine Rolle finden Sie unter [Gewähren von Berechtigungen in der Dokumentation zu Snowflake](https://docs.snowflake.com/en/sql-reference/sql/grant-privilege). <p>Weitere Informationen zum Namen des Stadiums finden Sie auf der Seite [Auswählen eines internen Stadiums für lokale Dateien“ in der Dokumentation zu Snowflake](https://docs.snowflake.com/en/user-guide/data-load-local-file-system-create-stage).</p> |
+   | [!UICONTROL **Staging-**] | Der Pfad zu dem Speicherort, an dem Datendateien in Snowflake gespeichert werden. <p>Weitere Informationen finden Sie auf der Seite [Auswahl eines internen Schritts für lokale Dateien“ in der Dokumentation zu Snowflake](https://docs.snowflake.com/en/user-guide/data-load-local-file-system-create-stage).</p> |
 
    {style="table-layout:auto"}
 
