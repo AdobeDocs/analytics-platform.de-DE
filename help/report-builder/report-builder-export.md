@@ -5,13 +5,13 @@ role: User, Admin
 feature: Report Builder
 type: Documentation
 solution: Customer Journey Analytics
-source-git-commit: e653cbe7c1955d04830b9ed9ff6399973036ab64
+exl-id: 1d5d87d8-1920-406b-8cce-41b89b7ae70b
+source-git-commit: 5a0cb6fa221282b70df5efb58362855ff58f76b8
 workflow-type: tm+mt
 source-wordcount: '1304'
 ht-degree: 38%
 
 ---
-
 
 # Erstellen von Zeitplänen für Arbeitsmappen durch Exportieren in Cloud-Ziele
 
@@ -35,7 +35,7 @@ Verwenden Sie den folgenden Prozess beim Exportieren von Arbeitsmappen aus Repor
 
 ![Der in den Schritten 1 bis 4 beschriebene Exportvorgang](assets/report-builder-export-process.png)
 
-## Exportieren eines Berichts aus Report Builder {#export-from-report-builder}
+## Exportieren eines Berichts aus Report Builder
 
 >[!NOTE]
 >
@@ -45,7 +45,7 @@ So exportieren Sie Berichte aus Report Builder:
 
 1. Falls noch nicht geschehen, konfigurieren Sie ein Exportkonto und einen Speicherort, wie unter [Konfigurieren von Cloud-Exportkonten](/help/components/exports/cloud-export-accounts.md) beschrieben.
 
-1. Öffnen Sie in der Excel-Tabelle, die die zu exportierenden Daten enthält, das rechte Bedienfeld {**}Adobe Report Builder.**
+1. Öffnen Sie in der Excel-Tabelle, die die zu exportierenden Daten enthält, das rechte Bedienfeld {]**}Adobe Report Builder.**[!UICONTROL 
 
 1. Wählen Sie [!UICONTROL **Zeitplan**] aus.
 
@@ -59,7 +59,7 @@ So exportieren Sie Berichte aus Report Builder:
 
    Um die Arbeitsmappe nach einem Zeitplan zu exportieren, den Sie bereits erstellt haben, wählen Sie den Zeitplan aus der Liste der Zeitpläne aus und klicken Sie auf **[!UICONTROL Planmäßig senden]**.
 
-1. Geben Sie im rechten Bedienfeld **0&rbrace;Adobe Report Builder&quot; die folgenden Informationen an, um mit der Erstellung eines neuen Zeitplans fortzufahren:**
+1. Geben Sie im rechten Bedienfeld **]0}Adobe Report Builder&quot; die folgenden Informationen an, um mit der Erstellung eines neuen Zeitplans fortzufahren:[!UICONTROL **
 
    | Feldname | Funktion |
    |---------|----------|
@@ -90,7 +90,7 @@ So exportieren Sie Berichte aus Report Builder:
 
 Nachdem Daten aus Analysis Workspace exportiert wurden, können Sie bestehende Exporte bearbeiten, erneut exportieren, duplizieren, taggen oder löschen, wie in [Verwalten von Exporten](/help/components/exports/manage-exports.md) beschrieben.
 
-## Vorteile des Exports in die Cloud {#advantages}
+## Vorteile des Exports in die Cloud
 
 Das Exportieren von Customer Journey Analytics-Daten in die Cloud ermöglicht Ihnen Folgendes:
 
@@ -119,6 +119,3 @@ Stellen Sie sicher, dass Ihre Datenblöcke, Ihre Umgebung und Ihre Berechtigunge
 * **Datenblöcke:** Alle Datenblöcke müssen mindestens eine Komponente zu einer Spalte, Zeile oder einem Wert enthalten.
 
 * **Umgebung:** Stellen Sie sicher, dass die von Customer Journey Analytics verwendeten [IP-Adressen](/help/technotes/ip-addresses.md) und [Domains](/help/technotes/domains.md) durch die Firewall ihrer Organisation zugelassen werden.
-
-
-
