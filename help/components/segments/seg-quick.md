@@ -4,10 +4,10 @@ title: Schnellsegmente
 feature: Workspace Basics, Filters, Segments
 role: User
 exl-id: 549e5db5-fcdf-43c5-bc43-590144aee309
-source-git-commit: b3c7ceedec7b3f6a916e97bab38fd55f1d6c7f51
+source-git-commit: 21935a0e9e976cd680fb036bb47f4248aaa66890
 workflow-type: tm+mt
-source-wordcount: '1174'
-ht-degree: 23%
+source-wordcount: '1187'
+ht-degree: 21%
 
 ---
 
@@ -19,7 +19,7 @@ Schnellsegmente ermöglichen es Ihnen, Daten innerhalb eines Workspace-Projekts 
 
 >[!BEGINSHADEBOX]
 
-See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Schnellsegmente in Analysis Workspace](https://video.tv.adobe.com/v/3410293/?quality=12&learn=on&captions=ger){target="_blank"} finden Sie ein Demovideo.
+See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Schnellsegmente in Analysis Workspace](https://video.tv.adobe.com/v/341466/?quality=12&learn=on){target="_blank"} finden Sie ein Demovideo.
 
 >[!ENDSHADEBOX]
 
@@ -43,9 +43,9 @@ So erstellen Sie ein Schnellsegment:
 Beachten Sie beim Erstellen eines Schnellsegments per Drag-and-Drop Folgendes:
 
 * Es werden nicht alle Komponententypen unterstützt. Berechnete Metriken werden nicht unterstützt, und nur Dimensionen und Metriken, aus denen Sie Segmente erstellen können, werden unterstützt.
-* Für Dimensionen und Metrikkomponenten erstellt [Quick Segment Builder](#quick-segment-builder) automatisch eine `exists`. Wenn Sie beispielsweise `City` ziehen und ablegen, wird die Bedingung `City exists` erstellt.
-* Für Dimensionswerte erstellt [Quick Segment Builder](#quick-segment-builder) automatisch eine `equals`. Wenn Sie beispielsweise `amsterdam` aus der Dimension `City` ziehen und ablegen, wird die Bedingung `City equals amsterdam` erstellt.
-* Wenn Sie `unspecified` oder `none` per Drag-and-Drop verschieben, erstellt [Quick Segment Builder](#quick-segment-builder) automatisch eine `does not exist`.
+* Für Dimensionen und Metrikkomponenten erstellt [Quick Segment Builder](#quick-segment-builder) automatisch eine `exists`. Wenn Sie beispielsweise per Drag-and-Drop **[!UICONTROL Stadt]** ziehen, wird die Bedingung **[!UICONTROL Stadt]** **[!UICONTROL vorhanden]** erstellt.
+* Für Dimensionswerte erstellt [Quick Segment Builder](#quick-segment-builder) automatisch eine **[!UICONTROL gleich]**-Bedingung. Wenn Sie z. B. **[!UICONTROL Amsterdam]** aus der **[!UICONTROL Stadt]**-Dimensionsliste ziehen, wird die Bedingung **[!UICONTROL Stadt]** **[!UICONTROL gleich]** `Amsterdam` erstellt.
+* Wenn Sie per Drag-and-Drop **[!UICONTROL unspecified]** oder **[!UICONTROL none]**, erstellt [Quick Segment Builder](#quick-segment-builder) automatisch eine Bedingung **[!UICONTROL exists]**.
 
 Die von Ihnen erstellten Schnellsegmente werden oben im Bedienfeld angezeigt. Schnellsegmente haben einen hellblauen, dünnen linken Balken. Wenn sich ein Schnellsegment im Bearbeitungsmodus mit dem [Quick Segment Builder](#quick-segment-builder) befindet, wird der Hintergrund des Schnellsegments hellblau dargestellt.
 
@@ -61,7 +61,7 @@ Um ein Schnellsegment zu verwalten, bewegen Sie den Mauszeiger über das spezifi
 
 ## Quick Segment Builder
 
-Unten finden Sie ein Beispiel für den Quick Segment Builder. In diesem Beispiel wird der Builder für ein Schnellsegment namens &quot;`Call Reason = Order Change AND Online Orders is greater than or equal 1`&quot; geöffnet. Beide Schnellsegmente oben gelten für das Bedienfeld [!UICONTROL Dashboard für durchschnittliche Bestellwerte] und für alle darin enthaltenen Visualisierungen, wie [!UICONTROL &#x200B; Freiformtabelle Durchschnittlicher Bestellwert pro Land].
+Unten finden Sie ein Beispiel für den Quick Segment Builder. In diesem Beispiel wird der Builder für ein Schnellsegment namens &quot;`Call Reason = Order Change AND Online Orders is greater than or equal 1`&quot; geöffnet. Beide Schnellsegmente oben gelten für das Bedienfeld **[!UICONTROL Dashboard für durchschnittliche Bestellwerte]** und für alle darin enthaltenen Visualisierungen, wie [!UICONTROL  Freiformtabelle Durchschnittlicher Bestellwert pro Land].
 
 ![Quick Segment Builder](assets/quick-filter-builder.png)
 
@@ -74,7 +74,7 @@ Der Kopfzeilenbereich bestimmt den Namen, den Typ und den Umfang des Schnellsegm
 | Element | Beschreibung |
 |---|---|
 | **[!UICONTROL Name]** | Der Name wird automatisch aus der Schnellsegmentdefinition abgeleitet. |
-| **[!UICONTROL Personen]** <br/>![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) ![Alert](/help/assets/icons/Alert.svg) | Vorschau der visuellen Daten, die aus dem Schnellsegment resultieren. Ein Balken und ein Prozentwert geben insight an, wie viel der Gesamtdaten Teil des Ergebnisses des Schnellsegments ist. Ein rotes ![Warnhinweis](/help/assets/icons/Alert.svg) signalisiert, dass das Schnellsegment keine Daten zurückgibt. |
+| **[!UICONTROL Personen]** <br/>![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) ![Alert](/help/assets/icons/Alert.svg) | Vorschau der visuellen Daten, die aus dem Schnellsegment resultieren. Ein Balken und ein Prozentwert geben insight an, wie viel der Gesamtdaten Teil des Ergebnisses des Schnellsegments ist. Ein ![Warnhinweis](/help/assets/icons/AlertRed.svg) signalisiert, dass das Schnellsegment keine Daten zurückgibt. |
 | **[!UICONTROL Einbeziehen]**<br/>**[!UICONTROL Ausschließen]** | Wählen Sie aus der Dropdown![Liste ChevronDown](/help/assets/icons/ChevronDown.svg) aus, ob Sie die Ergebnisse des Schnellsegments aus den Daten im Bedienfeld ein- oder ausschließen möchten. |
 | **[!UICONTROL Ereignis]**<br/>**[!UICONTROL Sitzung]**<br/>**[!UICONTROL Person]** | Wählen Sie aus dem Dropdown-![ (ChevronDown](/help/assets/icons/ChevronDown.svg) den Umfang des Schnellsegments aus. |
 

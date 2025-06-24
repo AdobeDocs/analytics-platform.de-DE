@@ -4,16 +4,16 @@ description: Anzeigen von Anmerkungen in Workspace.
 role: User
 feature: Components
 exl-id: c0e4fb37-b20c-463c-b29a-310ca3adb2c7
-source-git-commit: e04f07ba674ed55c53888d5c606ecb4d4aa5ffe5
+source-git-commit: 21935a0e9e976cd680fb036bb47f4248aaa66890
 workflow-type: tm+mt
-source-wordcount: '214'
-ht-degree: 100%
+source-wordcount: '218'
+ht-degree: 90%
 
 ---
 
 # Anzeigen von Anmerkungen
 
-Anmerkungen werden je nachdem, ob sie sich über einen einzelnen Tag oder einen Datumsbereich erstrecken, etwas unterschiedlich angezeigt.
+Anmerkungen werden je nachdem, wo sie angezeigt werden und ob sie sich über einen einzelnen Tag oder einen Datumsbereich erstrecken, etwas unterschiedlich angezeigt.
 
 ## Anzeigen von Anmerkungen in Liniendiagrammen oder Tabellen
 

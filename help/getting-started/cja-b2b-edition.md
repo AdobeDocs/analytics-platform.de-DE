@@ -6,10 +6,10 @@ feature: Basics
 role: User, Admin
 badgePremium: label="B2B Edition"
 exl-id: 89e482b8-8082-4413-8fd3-cc1331780af4
-source-git-commit: a2aea32eb14462ee2041405394afa6bd0c484e8d
+source-git-commit: 60035b8fc65627bf5ead2a50959ce9cc5fe48604
 workflow-type: tm+mt
-source-wordcount: '469'
-ht-degree: 98%
+source-wordcount: '472'
+ht-degree: 95%
 
 ---
 
@@ -20,7 +20,8 @@ ht-degree: 98%
 
 Adobe Analytics begann als Web- und Digital-Analytics-Tool für Marketing-Fachleute. Customer Journey Analytics erweiterte den Umfang auf kanalübergreifende, Offline- und plattformübergreifende Daten.  Beide Tools helfen Business-to-Consumer(B2C)-Unternehmen, ihre Marketing-Maßnahmen und Kundenerlebnisse zu analysieren und zu optimieren. Und den Fokus auf **personenbasiertes Reporting und Analysen** zu legen: Informationen zur Customer Journey, bei der die Kundin bzw. der Kunde eine Person ist, die über mehrere Kanäle mit Ihrer Marke interagiert.
 
-Customer Journey Analytics B2B Edition fügt **kontobasiertes Reporting und Analysen** hinzu. Beim B2B-Vertrieb (Business-to-Business) umfasst die Kauf-Journey mehrere Parteien, Online- und Offline-Touchpoints sowie wichtige Phasen vor Abschluss eines Geschäfts. B2B-Unternehmen müssen all diese Interaktionen in einer einheitlichen Journey-Ansicht verfolgen, um ihre Marketing-Maßnahmen und Kontoerlebnisse effektiv analysieren und optimieren zu können.
+![B2B-Hero-Bild](assets/b2b-image.png)
+Customer Journey Analytics B2B edition **(Account-Based Reporting and Analysis**. Beim B2B-Vertrieb (Business-to-Business) umfasst die Kauf-Journey mehrere Parteien, Online- und Offline-Touchpoints sowie wichtige Phasen vor Abschluss eines Geschäfts. B2B-Unternehmen müssen all diese Interaktionen in einer einheitlichen Journey-Ansicht verfolgen, um ihre Marketing-Maßnahmen und Kontoerlebnisse effektiv analysieren und optimieren zu können.
 
 Typische B2B-Vertriebsmerkmale sind:
 
@@ -43,7 +44,7 @@ Customer Journey Analytics B2B Edition unterstützt B2B-Unternehmen dabei, ihre 
 >[!MORELIKETHIS]
 >
 >[B2B-Konzepte und -Funktionen](cja-b2b-concepts-features.md)
->&#x200B;>[B2B-Schnellstartanleitung](cja-b2b-quick-start-guide.md)
->&#x200B;>[B2B-Übergangsleitfaden](cja-b2b-transition.md)
->&#x200B;>[B2B-Anwendungsfälle](/help/use-cases/b2b/b2b-edition/use-cases-overview.md)
+>>[B2B-Schnellstartanleitung](cja-b2b-quick-start-guide.md)
+>>[B2B-Übergangsleitfaden](cja-b2b-transition.md)
+>>[B2B-Anwendungsfälle](/help/use-cases/b2b/b2b-edition/use-cases-overview.md)
 >

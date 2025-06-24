@@ -6,10 +6,10 @@ feature: Dimensions
 exl-id: 6b433db3-02c1-4deb-916e-b01c0b79889e
 solution: Customer Journey Analytics
 role: User
-source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
+source-git-commit: 60035b8fc65627bf5ead2a50959ce9cc5fe48604
 workflow-type: tm+mt
-source-wordcount: '540'
-ht-degree: 60%
+source-wordcount: '550'
+ht-degree: 59%
 
 ---
 
@@ -21,7 +21,7 @@ Sie können Ihre Daten für Ihre spezifischen Anforderungen unbegrenzt aufschlü
 
    ![Schrittergebnis, das die Option Warnhinweis aus Auswahl erstellen anzeigt.](assets/breakdown.png)
 
-1. Wählen Sie aus dem Untermenü **[!UICONTROL Dimensionen]**, **[!UICONTROL Metriken]**, **[!UICONTROL Segmente]** oder **[!UICONTROL Datumsbereiche]** und wählen Sie dann ein Element aus.
+1. Wählen Sie aus dem Untermenü **[!UICONTROL Dimensionen]**, **[!UICONTROL Metriken]**, **[!UICONTROL Segmente]** oder **[!UICONTROL Datumsbereiche]** und wählen Sie dann ein Element aus. Oder suchen Sie einfach nach einer Komponente im Feld **[!UICONTROL *Suche *]**.
 
 Sie können Metriken nach Dimensionselementen oder Zielgruppensegmenten über ausgewählte Zeiträume aufschlüsseln. Sie können auch noch granularer aufschlüsseln.
 
@@ -53,7 +53,7 @@ Dies ist das erwartete Verhalten, wenn Attributionsmodelle auf Aufschlüsselunge
 
 >[!BEGINSHADEBOX]
 
-Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Dimension in Analysis Workspace](https://video.tv.adobe.com/v/41371?quality=12&learn=on&captions=ger){target="_blank"} finden Sie ein Demovideo.
+Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Dimension in Analysis Workspace](https://video.tv.adobe.com/v/23971?quality=12&learn=on){target="_blank"} finden Sie ein Demovideo.
 
 {{videoaa}}
 
@@ -62,7 +62,7 @@ Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Dimension in A
 
 >[!BEGINSHADEBOX]
 
-Siehe ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Aufschlüsselungen nach Dimension](https://video.tv.adobe.com/v/327336?quality=12&learn=on&captions=ger){target="_blank"} für ein Demovideo.
+Siehe ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Aufschlüsselungen nach Dimension](https://video.tv.adobe.com/v/23969?quality=12&learn=on){target="_blank"} für ein Demovideo.
 
 {{videoaa}}
 
@@ -71,7 +71,7 @@ Siehe ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Aufschlüsselu
 
 >[!BEGINSHADEBOX]
 
-Siehe ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Hinzufügen von Dimensionen und ](https://video.tv.adobe.com/v/33633?quality=12&learn=on&captions=ger){target="_blank"}) für ein Demovideo.
+Siehe ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Hinzufügen von Dimensionen und ](https://video.tv.adobe.com/v/30606?quality=12&learn=on){target="_blank"}) für ein Demovideo.
 
 {{videoaa}}
 
@@ -80,7 +80,7 @@ Siehe ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Hinzufügen vo
 
 >[!BEGINSHADEBOX]
 
-Siehe ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Arbeiten mit Dimensionen in einer Freiformtabelle](https://video.tv.adobe.com/v/328530?quality=12&learn=on&captions=ger){target="_blank"} für ein Demovideo.
+Siehe ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Arbeiten mit Dimensionen in einer Freiformtabelle](https://video.tv.adobe.com/v/40179?quality=12&learn=on){target="_blank"} für ein Demovideo.
 
 {{videoaa}}
 
@@ -89,7 +89,7 @@ Siehe ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Arbeiten mit D
 
 >[!BEGINSHADEBOX]
 
-Siehe ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Aufschlüsselung der Dimension nach Position](https://video.tv.adobe.com/v/327411?captions=ger){target="_blank"} für ein Demovideo.
+Siehe ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Aufschlüsselung der Dimension nach Position](https://video.tv.adobe.com/v/24033){target="_blank"} für ein Demovideo.
 
 {{videoaa}}
 
