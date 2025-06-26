@@ -1,13 +1,13 @@
 ---
-description: Das Datenwörterbuch in Analysis Workspace ermöglicht es Benutzenden, die verschiedenen Komponenten in Analysis Workspace zu katalogisieren und im Auge zu behalten, einschließlich ihres Verwendungszwecks, welche genehmigt sind, welche Duplikate sind usw.
+description: Das Datenwörterbuch in Analysis Workspace ermöglicht es Benutzenden, die verschiedenen Komponenten in Analysis Workspace zu katalogisieren und im Auge zu behalten, einschließlich ihres Verwendungszwecks, der genehmigt ist, bei dem es sich um Duplikate handelt usw.
 title: Datenwörterbuch – Überblick
 feature: Components
 role: User, Admin
 exl-id: 8e4b8169-7c7f-4a58-a6c6-70efb0c86ce8
-source-git-commit: 4bf8c616965718426efe880865acb0e5054b6a31
-workflow-type: ht
-source-wordcount: '567'
-ht-degree: 100%
+source-git-commit: f940e5cba11df0ff158093a503213ff1641b1c5d
+workflow-type: tm+mt
+source-wordcount: '569'
+ht-degree: 82%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 100%
 >[!CONTEXTUALHELP]
 >id="component_datadictionary"
 >title="Datenwörterbuch"
->abstract="Das Datenwörterbuch hilft sowohl Benutzenden als auch Admins, den Überblick zu behalten und die Komponenten in ihrer Analytics-Umgebung besser zu verstehen. <br/>Analytics-Admins sind dafür verantwortlich, im Datenwörterbuch Informationen über jede Komponente für Benutzende zu kuratieren."
+>abstract="Das Datenwörterbuch hilft Benutzenden und Admins, die Komponenten in ihrer Customer Journey Analytics-Umgebung zu verfolgen und besser zu verstehen. <br/>Customer Journey Analytics-Administratoren sind dafür verantwortlich, Informationen über jede Komponente im Datenwörterbuch zu kuratieren."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -30,7 +30,7 @@ Analytics-Administratorinnen und -Administratoren sind dafür verantwortlich, In
 
 >[!BEGINSHADEBOX]
 
-Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Datenwörterbuch für Analysis Workspace](https://video.tv.adobe.com/v/3418028/?quality=12&learn=on){target="_blank"} finden Sie ein Demovideo.
+Siehe ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Datenwörterbuch für Analysis Workspace](https://video.tv.adobe.com/v/3418028/?quality=12&learn=on){target="_blank"} für ein Demovideo.
 
 {{videoaa}}
 
@@ -58,7 +58,7 @@ Informationen zum Zugriff auf das Datenwörterbuch und Details zu den darin enth
 
 Das Datenwörterbuch hilft Systemadministrierenden dabei, die Komponenten in ihrer Analytics-Umgebung zu verfolgen und zu kuratieren.
 
-Im Folgenden finden Sie einige Möglichkeiten, wie Analytics-Administrierende das Datenwörterbuch verwenden können:
+Analytics-Admins können das Datenwörterbuch für folgende Zwecke verwenden:
 
 * Identifizierung doppelter Komponenten, die konsolidiert werden müssen.
 
@@ -103,10 +103,10 @@ Sie können das Datenwörterbuchfenster auf eine der folgenden Arten verändern:
 
   Wenn Sie Analysis Workspace schließen und erneut öffnen, bleibt das Datenwörterbuchfenster an der Stelle, an die Sie es zuletzt verschoben haben. <!--True?-->
 
-* minimieren
+* Fenster minimieren.
 
   Wenn es minimiert wird, erscheint das Datenwörterbuch als blaue Registerkarte in der rechten unteren Ecke von Analysis Workspace.
 
   Wenn Sie die blaue Registerkarte auswählen, wird das Datenwörterbuch für die Komponente geöffnet, die Sie zuletzt angesehen haben.
 
-* schließen
+* Schließen Sie das Fenster.

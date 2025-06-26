@@ -5,16 +5,16 @@ title: Erstellen von freigebbaren Links
 exl-id: 6cfb5161-08e1-4583-ae79-4600b5531929
 feature: Curate and Share
 role: User
-source-git-commit: 4942c83e34b129e3718084601d5a733bcebf4de9
+source-git-commit: 9cdfa94ad04d3d1ce43e591fa9219146152862dc
 workflow-type: tm+mt
-source-wordcount: '379'
-ht-degree: 61%
+source-wordcount: '369'
+ht-degree: 58%
 
 ---
 
 # Erstellen von freigebbaren Links
 
-Analysis Workspace bietet viele Möglichkeiten, ein Projekt für Ihre Benutzer freizugeben, einschließlich der Möglichkeit, einen Link zu einem Projekt oder einem bestimmten Teil eines Projekts absurufen. Bei einigen Link-Typen muss sich der Empfänger vor dem Zugriff auf das Projekt beim Customer Journey Analytics anmelden, bei anderen nicht.
+Analysis Workspace bietet viele Möglichkeiten, ein Projekt für Ihre Benutzer freizugeben, einschließlich der Möglichkeit, einen Link zu einem Projekt oder einem bestimmten Teil eines Projekts absurufen. Bei einigen Link-Typen muss sich der Empfänger vor dem Zugriff auf das Projekt bei Customer Journey Analytics anmelden, bei anderen nicht.
 
 ## Abrufen eines Projekt-Links zur Freigabe für andere Workspace-Benutzende {#project-link}
 
@@ -26,7 +26,7 @@ Wenn dem Empfänger des Links keine [Projektrolle“ zugewiesen wurde](/help/ana
 
 Sie können einen schreibgeschützten Link zu Analysis Workspace-Projekten für Personen freigeben, die keinen Zugriff auf Customer Journey Analytics haben.
 
-Weitere Informationen finden Sie unter „Projekt für alle freigeben (keine Anmeldung erforderlich)“ im Artikel [Freigeben von Projekten](/help/analysis-workspace/curate-share/share-projects.md).
+Weitere Informationen finden Sie unter [Für alle freigeben](/help/analysis-workspace/curate-share/share-projects.md#share-a-project-with-anyone-no-login-required).
 
 ## Abrufen eines Bedienfelds oder Visualisierungs-Links {#panel-link}
 
@@ -37,7 +37,7 @@ Sie können auch einen Link zu einem bestimmten Teil eines Projekts freigeben, z
 
 [Sehen Sie sich das Video an](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/visualizations/intra-linking-in-analysis-workspace.html?lang=de), wie Sie Links erstellen und diese verwenden, um Empfänger zu bestimmten Teilen Ihres Projekts zu führen.
 
-![Das Dropdown-Menü, nachdem Sie mit der rechten Maustaste auf die Kopfzeile mit dem hervorgehobenen Link Visualisierung abrufen geklickt haben.](assets/get-viz-link.png)
+![Das Dropdown-Menü, nachdem Sie mit der rechten Maustaste auf die Kopfzeile mit dem hervorgehobenen Link Visualisierung abrufen geklickt haben.](assets/get-visualization-link.png)
 
 ## Links in Inhaltsverzeichnissen verwenden {#TOC}
 
