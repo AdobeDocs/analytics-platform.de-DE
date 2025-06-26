@@ -4,14 +4,20 @@ title: Übersicht über Bedienfelder
 feature: Panels
 exl-id: be3e34a0-06c1-4200-b965-96084c2912fd
 role: User
-source-git-commit: 38be838fccf896a12da3fbadac50e578081312ba
-workflow-type: ht
-source-wordcount: '2129'
-ht-degree: 100%
+source-git-commit: 746e03bc94fe3ad83ea5487a6cd3da2089695017
+workflow-type: tm+mt
+source-wordcount: '2142'
+ht-degree: 99%
 
 ---
 
-# Übersicht über Bedienfelder
+# Übersicht über Bedienfelder {#panels-overview}
+
+>[!CONTEXTUALHELP]
+>id="workspace_panel_realtime_refresh"
+>title="Echtzeitaktualisierung"
+>abstract="Aktivieren Sie diese Option, um Daten und Visualisierungen in diesem Bedienfeld in Echtzeit zu aktualisieren."
+
 
 Ein [!UICONTROL Bedienfeld] ist eine Sammlung von Tabellen und Visualisierungen. Sie können über das Symbol oben links in Arbeitsbereich oder über ein [leeres Bedienfeld](/help/analysis-workspace/c-panels/blank-panel.md) auf Bedienfelder zugreifen. Bedienfelder sind hilfreich, wenn Sie Ihre Projekte nach Zeiträumen, Datenansichten oder Anwendungsfällen für Analysen organisieren möchten.
 
@@ -155,7 +161,7 @@ Weitere Informationen finden Sie unter [Schnellsegmente](/help/components/segmen
 
 >[!BEGINSHADEBOX]
 
-Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Dropdown-Segmente](https://video.tv.adobe.com/v/327486?quality=12&learn=on&captions=ger){target="_blank"} finden Sie ein Demovideo.
+Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Dropdown-Segmente](https://video.tv.adobe.com/v/23877?quality=12&learn=on){target="_blank"} finden Sie ein Demovideo.
 
 {{videoaa}}
 
