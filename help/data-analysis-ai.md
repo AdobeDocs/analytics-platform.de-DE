@@ -5,14 +5,14 @@ role: User, Admin
 solution: Customer Journey Analytics
 feature: AI Tools
 exl-id: 262d5f15-16cb-4851-a769-7dbd205b2f81
-source-git-commit: 029a7ebb10ac9daf4c4b121efa85042d6da22316
+source-git-commit: 7bf74e02db581bdf11b7efe31b62f018320c7f22
 workflow-type: tm+mt
-source-wordcount: '1980'
-ht-degree: 99%
+source-wordcount: '2359'
+ht-degree: 83%
 
 ---
 
-# Visualisieren von Daten mit Data Insights Agent in Customer Journey Analytics
+# Visualisieren von Daten mit Data Insights Agent
 
 >[!AVAILABILITY]
 >
@@ -32,14 +32,14 @@ Die Verwendung von Data Insights Agent zur Beantwortung datenorientierter Fragen
 
 | Funktion | Enthalten | Nicht enthalten |
 | --- | --- | --- |
-| **Visualisierungstypen** | <ul><li>Linie</li><li>Mehrliniendiagramm</li><li>Freiformtabelle</li><li>Balken</li><li>Ringdiagramm</li><li>Zusammenfassungszahl</li></ul> | <ul><li>Fluss</li><li>Fallout</li><li>Kohortentabelle</li><li>Bereich, Bereich gestapelt</li><li>Balken gestapelt</li><li>Bullet</li><li>Kombination</li><li>Histogramm</li><li>Horizontalbalken, Horizontalbalken gestapelt</li><li>Zusammenfassung einer Schlüsselmetrik</li><li>Streuung</li><li>Zusammenfassende Änderung</li><li>Text</li><li>Baumkarte</li><li>Venn</li><li>Geführte Analyse: Aktives Wachstum, Konversionstrends, Interaktion, Auswirkung auf die erste Verwendung, Häufigkeit, Trichter, Nettowachstum, Auswirkungen auf die Veröffentlichung, Kundenbindung, Zeitleiste, Trends</li></ul> |
+| **Visualisierungstypen** | <ul><li>Linie</li><li>Mehrliniendiagramm</li><li>Freiformtabelle</li><li>Balken</li><li>Ringdiagramm</li><li>Zusammenfassungszahl</li></ul> | <ul><li>Fluss</li><li>Fallout</li><li>Kohortentabelle</li><li>Bereich, Bereich gestapelt</li><li>Balken gestapelt</li><li>Bullet</li><li>Kombination</li><li>Histogramm</li><li>Horizontalbalken, Horizontalbalken gestapelt</li><li>Zusammenfassung einer Schlüsselmetrik</li><li>Streuung</li><li>Zusammenfassende Änderung</li><li>Text</li><li>Baumkarte</li><li>Venn</li><li>Geführte Analyse: Aktives Wachstum, Konversions-Trends, Interaktion, Wirkung der ersten Verwendung, Häufigkeit, Trichter, Nettowachstum, Auswirkungen der Version, Bindung, Timeline, Trends</li></ul> |
 | **Workspace-Aktionen und Funktionen des Agents** | <ul><li>Erstellen und Aktualisieren von Visualisierungen<p>Erstellt eine Freiformtabelle und eine dazugehörige Visualisierung (z. B. Linie, Balken, Ringdiagramm usw.).<p>Beispiel: *Wie hoch ist der Gewinn für alle SKUs von Februar bis Mai?*</p></li><li>Stellen von Folgefragen<p>Antworten Sie auf einen Prompt im Kontext aller vorherigen Prompts. Zum Beispiel:</p> <ul><li>Prompt 1: *Trendereignisse aus März.*</li><li>Prompt 2: *Zeig mir stattdessen die Daten von März bis April*</li></ul> </li><li>Erkennung eines nicht enthaltenen Prompts<p>Wenn Sie einen nicht enthaltenen Prompt übermitteln, z. B. *Dieses Projekt exportieren*, teilt Data Insights Agent Ihnen mit, dass die Frage außerhalb des Umfangs liegt.</p></li></ul> | <ul><li>Freigeben</li><li>Exportieren</li><li>Herunterladen</li><li>Verwalten von Benutzervoreinstellungen</li><li>Verwalten der Datenansicht</li><li>Analytics Dashboards-App</li><li>Attribution</li><li>Inline-Zusammenfassung oder -Antwort<p>Data Insights Agent kann in der Chat-Leiste nicht mit einer zusammenfassenden Antwort auf einen Prompt antworten. Beispiele für Prompts außerhalb des Umfangs sind: *Fasse mir die Erkenntnisse meines letzten Prompts zusammen* und *Fasse die Highlights aus der Linienvisualisierung zusammen.*</p></li></ul> |
 | **Klärende Fragen** | Wenn Sie eine Frage stellen, die nicht ausreichend Kontext für eine Antwort von Data Insights Agent bietet oder zu generisch ist, antwortet Data Insights Agent mit einer klärenden Frage oder empfohlenen Optionen. <p>Die folgenden klärenden Fragen sind Beispiele für komponentenbezogene Fragen:</p><ul><li>Metrik: *Welche „Umsatz“-Metrik meinten Sie?*</li><li>Dimension: *Auf welche der folgenden „Regionen“ möchten Sie sich konzentrieren?*</li><li>Segment: *Welches „Konto“-Segment sollte angewendet werden?*</li><li>Datumsbereich: *Meinten Sie mit „letztem Monat“ den letzten vollen Monat oder die letzten 30 Tage?*</li></ul><p>Die folgende klärende Frage ist ein Beispiel für eine Frage im Zusammenhang mit Dimensionselementen:</p> <ul><li>Welchen „Store-Namen“ meinten Sie? (Beispiel: Store #5274, Store #2949 usw.)</li></ul> | Klärende Fragen sind auf Komponenten und Dimensionselemente beschränkt. Data Insights Agent kann Elemente wie Datenansichten, Visualisierungen, Datengranularität, Vergleiche und den Umfang nicht weiter klären. Wenn keine klärenden Fragen verwendet werden können, antwortet der Agent standardmäßig mit dem, wonach Sie am wahrscheinlichsten fragen. Wenn er eine unerwartete Visualisierung oder Datengranularität zurückgibt, können Sie eine Folgefrage stellen oder die Visualisierung und die Daten anpassen. |
 | **Datenverifizierbarkeit und -korrektheit** | Die Verifizierbarkeit und Korrektheit von Daten kann über die generierte Freiformtabelle und Datenvisualisierung bestätigt werden. <p>Wenn Sie Data Insights Agent beispielsweise nach *Trend-Bestellungen im letzten Monat* fragen, können Sie bestätigen, dass im neu generierten Panel, in der Datenvisualisierung und in der Freiformtabelle die richtige Metrik („Bestellungen“) und der richtige Datumsbereich („letzter Monat“) ausgewählt wurden. | Data Insights Agent informiert Sie nicht darüber, welche Komponenten oder Visualisierungen hinzugefügt wurden.</p> |
 | **Feedback-Mechanismen** | <ul><li>Daumen hoch</li><li>Daumen runter</li><li>Markierung</li></ul> |  |
 
 
-## Verwalten des Zugriffs auf Data Insights Agent in Customer Journey Analytics
+## Zugriff auf Data Insights Agent verwalten
 
 Die folgenden Parameter regeln den Zugriff auf Data Insights Agent in Customer Journey Analytics:
 
@@ -229,3 +229,24 @@ Following the thumbs up or thumbs down selection, please make a selection for th
 
 -->
 
+
+## Best Practices für die Konfiguration
+
+Im Folgenden finden Sie Best Practices für Ihre Customer Journey Analytics-Konfiguration (Datenansicht, berechnete Metriken, Segmente usw.), um sicherzustellen, dass die Data Insights Agent die richtigen Komponenten finden und sauberere Antworten zurückgeben kann, ohne dass Sie zusätzliche Informationen anfordern müssen.
+
+* **Balancieren Sie die benötigten Komponenten**. Fügen Sie nicht alle Felder Ihrer Datensätze als Metriken oder Dimensionskomponenten zu Ihrer Datenansicht hinzu. Insbesondere die , die Sie mit Sicherheit nicht in Ihrer Analyse verwenden werden. Beschränken Sie sich jedoch nicht ausschließlich auf die Felder, die Sie für Ihre Analyse benötigen. Eine zu eingeschränkte Datenansicht schränkt die Flexibilität Ihrer Analyse und die Agentenfunktion von Data Insight ein.
+* **Verwenden Sie immer Anzeigenamen**. Stellen Sie sicher, dass alle Felder, die Sie in Ihrer Datenansicht entweder als Metriken- oder Dimensionskomponente definieren, einen Anzeigenamen für die Komponente aufweisen. Der Prozess des Umbenennens von Feldern mit einem Anzeigenamen ist insbesondere für Felder aus Adobe Analytics-Quell-Connector-Datensätzen relevant. Diese Felder haben häufig nicht benutzerfreundliche, nicht identifizierbare Namen wie `eVar41` oder `prop25`.
+* **Verwenden Sie eindeutige Namen**. Unterschiedliche Namen sind besonders relevant, wenn Sie ein Feld sowohl als Metrik- als auch als Dimensionskomponente in Ihrer Datenansicht verwenden. Oder wenn Sie ein Feld in mehreren Komponenten mit jeweils unterschiedlichen Komponenteneinstellungen verwenden.
+* **Verwenden Sie eine Benennungskonvention für Komponenten**. Sie können eine Komponentennamenskonvention verwenden, um Komponenten zu gruppieren. Beispiel: **[!UICONTROL Bestellungen | Produkt]** und **[!UICONTROL Bestellungen | Kunde]**, um zwischen verschiedenen Bestellmetriken zu unterscheiden, die möglicherweise in Ihren Daten vorhanden sind.
+* **Verwenden des Datenwörterbuchs**. Beschreibung und andere relevante Daten für Komponenten im Datenwörterbuch hinzufügen. Der Data Insight-Agent verwendet derzeit keine Beschreibungen und Tags. aber in Zukunft möglicherweise die Beschreibung und Tags des Datenwörterbuchs verwenden wird.
+* **Verwenden Sie genehmigte berechnete Metriken**. Sie müssen sich auf einen Prozess einigen, bei dem nur genehmigte berechnete Metriken als Komponenten in Ihrer Datenansicht verwendet werden, und die Verwendung experimenteller berechneter Metriken vermeiden.
+* **Freigeben erforderlicher Segmente**. Stellen Sie sicher, dass Sie Segmente freigeben und Segmente sichtbar machen, die für die Eingabeaufforderungen des Data Insights-Agenten erforderlich sind.
+* **Standardisieren von Komponentennamen in Datenansichten**. Wenn Sie dieselben Felder wie eine Komponente in mehreren Datenansichten verwenden, stellen Sie sicher, dass Sie einen einzigen Anzeigenamen und eine einzige Kennung für diese Komponente verwenden. Ein einzelner Name und eine Kennung ermöglichen es dem Data Insights-Agenten, Datenansichten zu wechseln, ohne den Kontext zu verlieren.
+
+>[!MORELIKETHIS]
+>
+>[Einstellungen der Komponente](/help/data-views/component-settings/overview.md)
+>>[Datenwörterbuch](/help/components/data-dictionary/data-dictionary-overview.md)
+>>[Berechnete Metrik genehmigen](/help/components/calc-metrics/cm-workflow/cm-approving.md)
+>>[Segmente freigeben](/help/components/segments/seg-share.md)
+>
