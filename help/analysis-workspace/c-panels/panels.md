@@ -83,7 +83,7 @@ Sie haben folgende Möglichkeiten:
 
 ## Datenansicht
 
-Jedes Panel ist mit einer [Datenansicht](/help/data-views/data-views.md) verknüpft, die durch den ![Daten](/help/assets/icons/Data.svg) **[!UICONTROL *Namen der Datenansicht *]**im Dropdown-Menü oben rechts im Panel identifiziert wird.
+Jedes Panel ist mit einer [Datenansicht](/help/data-views/data-views.md) verknüpft, die durch den ![Daten](/help/assets/icons/Data.svg) **[!UICONTROL *Namen der Datenansicht *]**&#x200B;im Dropdown-Menü oben rechts im Panel identifiziert wird.
 
 Wenn Sie ein leeres Workspace-Projekt erstellen, ist die Standarddatenansicht für das erste Panel die Datenansicht, an der Sie zuletzt in Customer Journey Analytics gearbeitet haben.
 
