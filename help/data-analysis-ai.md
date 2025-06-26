@@ -246,7 +246,7 @@ Im Folgenden finden Sie Best Practices für Ihre Customer Journey Analytics-Konf
 >[!MORELIKETHIS]
 >
 >[Einstellungen der Komponente](/help/data-views/component-settings/overview.md)
->>[Datenwörterbuch](/help/components/data-dictionary/data-dictionary-overview.md)
->>[Berechnete Metrik genehmigen](/help/components/calc-metrics/cm-workflow/cm-approving.md)
->>[Segmente freigeben](/help/components/segments/seg-share.md)
+>&#x200B;>[Datenwörterbuch](/help/components/data-dictionary/data-dictionary-overview.md)
+>&#x200B;>[Berechnete Metrik genehmigen](/help/components/calc-metrics/cm-workflow/cm-approving.md)
+>&#x200B;>[Segmente freigeben](/help/components/segments/seg-share.md)
 >
