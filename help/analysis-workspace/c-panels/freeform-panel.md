@@ -16,7 +16,7 @@ ht-degree: 84%
 
 >[!BEGINSHADEBOX]
 
-_In diesem Artikel wird das Panel „Freiform“ in_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**_ beschrieben.<br/>_Unter [Panel „Freiform“](https://experienceleague.adobe.com/de/docs/analytics/analyze/analysis-workspace/panels/freeform-panel) finden Sie Version dieses Artikels für_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**._
+_In diesem Artikel wird das Panel „Freiform“ in_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**&#x200B;_ beschrieben.<br/>_Unter [Panel „Freiform“](https://experienceleague.adobe.com/de/docs/analytics/analyze/analysis-workspace/panels/freeform-panel) finden Sie Version dieses Artikels für_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics**._
 
 >[!ENDSHADEBOX]
 
@@ -37,6 +37,6 @@ So verwenden Sie das Panel **[!UICONTROL Freiform]**:
 >[!MORELIKETHIS]
 >
 >[Erstellen eines Bedienfelds](/help/analysis-workspace/c-panels/panels.md#create-a-panel)
->>[Verwenden von Komponenten in Workspace](/help/components/use-components-in-workspace.md)
->>[Visualisierung „Freiformtabelle“](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)
+>&#x200B;>[Verwenden von Komponenten in Workspace](/help/components/use-components-in-workspace.md)
+>&#x200B;>[Visualisierung „Freiformtabelle“](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)
 >

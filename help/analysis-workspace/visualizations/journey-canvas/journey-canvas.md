@@ -51,7 +51,7 @@ ht-degree: 97%
 
 >[!BEGINSHADEBOX]
 
-_In diesem Artikel wird die Visualisierung „Journey-Arbeitsflächen“ in_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics** beschrieben.<br/>Es gibt keine entsprechende Visualisierung in **Adobe Analytics**._
+_In diesem Artikel wird die Visualisierung „Journey-Arbeitsflächen“ in_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics** beschrieben.<br/>Es gibt keine entsprechende Visualisierung in **Adobe Analytics**._
 
 >[!ENDSHADEBOX]
 

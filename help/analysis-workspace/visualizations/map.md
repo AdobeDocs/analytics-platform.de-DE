@@ -44,6 +44,6 @@ ht-degree: 83%
 
 >[!BEGINSHADEBOX]
 
-_Derzeit ist keine Visualisierung Zuordnung in_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics** verfügbar._<br/>_Siehe [Zuordnung](https://experienceleague.adobe.com/de/docs/analytics/analyze/analysis-workspace/visualizations/map-visualization) in der Dokumentation zur Visualisierung vom Typ Zuordnung in_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**._
+_Derzeit ist keine Visualisierung Zuordnung in_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics** verfügbar._<br/>_Siehe [Zuordnung](https://experienceleague.adobe.com/de/docs/analytics/analyze/analysis-workspace/visualizations/map-visualization) in der Dokumentation zur Visualisierung vom Typ Zuordnung in_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics**._
 
 >[!ENDSHADEBOX]

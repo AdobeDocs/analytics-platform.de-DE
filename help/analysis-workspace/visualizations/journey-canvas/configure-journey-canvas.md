@@ -19,7 +19,7 @@ Die Journey-Arbeitsflächen-Visualisierung ermöglicht es Ihnen, die Journey zu 
 
 ## Überblick über die Journey-Arbeitsfläche
 
-Weitere Informationen zur Journey-Arbeitsfläche finden ](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md) unter [Übersicht über die Journey-Arbeitsfläche, einschließlich:
+Weitere Informationen zur Journey-Arbeitsfläche finden [&#128279;](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md) unter Übersicht über die Journey-Arbeitsfläche, einschließlich:
 
 * Wichtigste Funktionen
 
