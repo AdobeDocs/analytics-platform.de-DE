@@ -1,12 +1,12 @@
 ---
-description: Beispiele beim Konfigurieren einer Journey-Arbeitsflächen-Visualisierung
-title: Journey Canvas-Beispiele
+description: Erfahren Sie, wie Sie Probleme beim Konfigurieren einer Journey-Arbeitsflächen-Visualisierung beheben können.
+title: Fehlerbehebung bei der Journey-Arbeitsfläche
 feature: Visualizations
 role: User
 exl-id: f0ac3752-9244-4d9e-807b-e6471e6aa55b
-source-git-commit: daa07b603caa613ca49b61c2e8e461d558459f57
+source-git-commit: 8054aab28c405f6a9dd24306a086c78069032999
 workflow-type: tm+mt
-source-wordcount: '1287'
+source-wordcount: '1290'
 ht-degree: 0%
 
 ---

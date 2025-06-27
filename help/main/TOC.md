@@ -9,9 +9,9 @@ index: true
 user-guide-title: Handbuch zu Customer Journey Analytics
 user-guide-description: Hier erhalten Sie Informationen zu Adobe Customer Journey Analytics und Erläuterungen zur Nutzung von Analysis Workspace mit Daten aus Experience Platform.
 breadcrumb-title: Handbuch zu Customer Journey Analytics
-source-git-commit: 9cdfa94ad04d3d1ce43e591fa9219146152862dc
+source-git-commit: 8054aab28c405f6a9dd24306a086c78069032999
 workflow-type: tm+mt
-source-wordcount: '1263'
+source-wordcount: '1253'
 ht-degree: 98%
 
 ---
@@ -173,12 +173,13 @@ ht-degree: 98%
       + [Öffnen von Projekten](/help/analysis-workspace/build-workspace-project/open-projects.md)
       + [Kommentar zu Projekten](/help/analysis-workspace/build-workspace-project/comment-projects.md)
       + [Speichern von Projekten](../analysis-workspace/build-workspace-project/save-projects.md)
+      + [Inhaltsverzeichnis](../analysis-workspace/build-workspace-project/project-table-of-contents.md)
       + Ordner in Workspace {#workspace-folders}
-         + [Über Ordner](../analysis-workspace/build-workspace-project/workspace-folders/about-folders.md)
-         + [Erstellen von Ordnern und Unterordnern](../analysis-workspace/build-workspace-project/workspace-folders/create-folders.md)
+         + [Überblick](../analysis-workspace/build-workspace-project/workspace-folders/about-folders.md)
+         + [Erstellen von Ordnern](../analysis-workspace/build-workspace-project/workspace-folders/create-folders.md)
          + [Verwalten von Ordnern](../analysis-workspace/build-workspace-project/workspace-folders/manage-folders.md)
-         + [Hinzufügen oder Verschieben von Projekten zu Ordnern](../analysis-workspace/build-workspace-project/workspace-folders/add-projects.md)
-      + [Hotkeys (Tastaturbefehle)](../analysis-workspace/build-workspace-project/fa-shortcut-keys.md)
+         + [Projekte hinzufügen oder verschieben](../analysis-workspace/build-workspace-project/workspace-folders/add-projects.md)
+      + [Tastaturbefehle](../analysis-workspace/build-workspace-project/fa-shortcut-keys.md)
       + [Farbpaletten](../analysis-workspace/build-workspace-project/color-palettes.md)
       + [Anzeigen der Dichte](../analysis-workspace/build-workspace-project/view-density.md)
    + Vorlagen {#templates}
@@ -195,8 +196,8 @@ ht-degree: 98%
             + [Spalteneinstellungen](../analysis-workspace/visualizations/freeform-table/column-row-settings/column-settings.md)
             + [Zeileneinstellungen](../analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.md)
             + [Dynamische und statische Elemente](../analysis-workspace/visualizations/freeform-table/column-row-settings/manual-vs-dynamic-rows.md)
-         + [Filtern und Sortieren von Tabellen](../analysis-workspace/visualizations/freeform-table/filter-and-sort.md)
-         + [Arbeitsbereichs-Summen](../analysis-workspace/visualizations/freeform-table/workspace-totals.md)
+         + [Filtern und Sortieren](../analysis-workspace/visualizations/freeform-table/filter-and-sort.md)
+         + [Gesamt](../analysis-workspace/visualizations/freeform-table/workspace-totals.md)
       + Kohortentabelle {#cohort-table}
          + [Überblick](../analysis-workspace/visualizations/cohort-table/cohort-analysis.md)
          + [Konfigurieren](../analysis-workspace/visualizations/cohort-table/t-cohort.md)
@@ -228,11 +229,11 @@ ht-degree: 98%
       + [Abschnittskopfzeile](/help/analysis-workspace/visualizations/section-header.md)
       + [Zusammenfassungszahl und -änderung](../analysis-workspace/visualizations/summary-number-change.md)
       + [Text](../analysis-workspace/visualizations/text.md)
-      + [Baumdiagramm](../analysis-workspace/visualizations/treemap.md)
+      + [Baumkarte](../analysis-workspace/visualizations/treemap.md)
       + [Venn](../analysis-workspace/visualizations/venn.md)
    + Bedienfelder {#panels}
       + [Überblick](../analysis-workspace/c-panels/panels.md)
-      + [Leeres Bedienfeld](../analysis-workspace/c-panels/blank-panel.md)
+      + [Leer](../analysis-workspace/c-panels/blank-panel.md)
       + [Attribution](../analysis-workspace/c-panels/attribution.md)
       + [Experimentieren](../analysis-workspace/c-panels/experimentation.md)
       + [Freiform](../analysis-workspace/c-panels/freeform-panel.md)
@@ -260,7 +261,6 @@ ht-degree: 98%
       + [Überblick](../analysis-workspace/c-forecast/forecasting.md)
       + [Anzeigen von Prognosen](../analysis-workspace/c-forecast/view-forecasts.md)
       + [Statistische Verfahren](../analysis-workspace/c-forecast/statistics-forecasting.md)
-   + [Inhaltsverzeichnis](../analysis-workspace/build-workspace-project/project-table-of-contents.md)
    + [Benutzervoreinstellungen](../analysis-workspace/user-preferences.md)
    + Häufig gestellte Fragen zu Workspace und mehr {#workspace-faq}
       + [Häufig gestellte Fragen](../analysis-workspace/workspace-faq/faq.md)

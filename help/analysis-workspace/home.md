@@ -1,15 +1,15 @@
 ---
 keywords: Analysis Workspace
 title: Analysis Workspace – Übersicht
-description: Überblick über die Funktionen von Analysis Workspace
+description: Erfahren Sie mehr über Analysis Workspace, das führende Analyse-Tool für Adobe Analytics. Verwenden Sie Projekte, Bedienfelder, Tabellen, Visualisierungen und andere Komponenten, um Daten zum Leben zu erwecken und Ihre Analyse zu kuratieren und freizugeben.
 feature: Workspace Basics
 exl-id: 9075518e-54fe-49a6-9601-aa9468187b8f
 solution: Customer Journey Analytics
 role: User
-source-git-commit: 38be838fccf896a12da3fbadac50e578081312ba
-workflow-type: ht
-source-wordcount: '1469'
-ht-degree: 100%
+source-git-commit: c4c8c0ff5d46ec455ca5333f79d6d8529f4cb87d
+workflow-type: tm+mt
+source-wordcount: '1490'
+ht-degree: 97%
 
 ---
 
@@ -19,7 +19,9 @@ Mit Analysis Workspace können Sie schnell Analysen erstellen, um Erkenntnisse z
 
 >[!BEGINSHADEBOX]
 
-Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Analysis Workspace – Übersicht](https://video.tv.adobe.com/v/35525/?quality=12&learn=on&captions=ger){target="_blank"} finden Sie ein Demovideo.
+Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Analysis Workspace – Übersicht](https://video.tv.adobe.com/v/26266/?quality=12&learn=on){target="_blank"} finden Sie ein Demovideo.
+
+{{videoaa}}
 
 >[!ENDSHADEBOX]
 
@@ -32,7 +34,7 @@ Das folgende Bild und die zugehörige Tabelle erläutern die Hauptelemente der B
 | Standort | Name und Funktion |
 |:---------:|----------|
 | A  | Enthält den Projektnamen, eine Menüstruktur für den Zugriff auf die Funktionen, eine Schaltfläche ![Zurück-Schaltfläche](/help/assets/icons/ChevronLeft.svg) zum Zurückkehren zur Projektliste und eine Schaltfläche **[!UICONTROL Freigabe]** zum [Freigeben Ihres Workspace-Projekts](/help/analysis-workspace/curate-share/share-projects.md). <br/>Sie können jederzeit den Namen Ihres Projekts (z. B. „Neues Projekt“) auswählen, um den Namen zu ändern. <br/>Wählen Sie ![Favorisierung aufheben](/help/assets/icons/StarOutline.svg) aus, um Ihr Projekt als bevorzugtes Projekt ![Favorisieren](/help/assets/icons/Star.svg) zu markieren. |
-| B | **Schaltflächenbedienfeld:** Enthält Schaltflächen für den Zugriff auf die wichtigsten [Funktionen](#features) von Analysis Workspace:<ul><li>![WebSeite](/help/assets/icons/WebPage.svg) [[!UICONTROL Bedienfelder]](/help/analysis-workspace/c-panels/panels.md)</li><li>![Geführte Analyse](/help/assets/icons/GuidedAnalysis.svg) [[!UICONTROL Geführte Analyse]](/help/guided-analysis/overview.md)</li><li>![VertikaleGrafikbalken](/help/assets/icons/GraphBarVertical.svg) [[!UICONTROL Visualisierungen]](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md)</li><li>![Kuratieren](/help/assets/icons/Curate.svg) [[!UICONTROL Komponenten]](/help/components/overview.md)</li><li>![Ansichtsliste](/help/assets/icons/ViewList.svg) [[!UICONTROL Inhaltsverzeichnis]](/help/analysis-workspace/build-workspace-project/project-table-of-contents.md)</li><li>![Lesezeichen](/help/assets/icons/Bookmark.svg) [[!UICONTROL Datenwörterbuch]](/help/components/data-dictionary/data-dictionary-overview.md)</li></ul> |
+| B | **Bedienfeld „Schaltfläche“** Enthält Schaltflächen für den Zugriff auf die wichtigsten [Funktionen](#features) von Analysis Workspace:<ul><li>![WebSeite](/help/assets/icons/WebPage.svg) [[!UICONTROL Bedienfelder]](/help/analysis-workspace/c-panels/panels.md)</li><li>![Geführte Analyse](/help/assets/icons/GuidedAnalysis.svg) [[!UICONTROL Geführte Analyse]](/help/guided-analysis/overview.md)</li><li>![VertikaleGrafikbalken](/help/assets/icons/GraphBarVertical.svg) [[!UICONTROL Visualisierungen]](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md)</li><li>![Kuratieren](/help/assets/icons/Curate.svg) [[!UICONTROL Komponenten]](/help/components/overview.md)</li><li>![Ansichtsliste](/help/assets/icons/ViewList.svg) [[!UICONTROL Inhaltsverzeichnis]](/help/analysis-workspace/build-workspace-project/project-table-of-contents.md)</li><li>![Lesezeichen](/help/assets/icons/Bookmark.svg) [[!UICONTROL Datenwörterbuch]](/help/components/data-dictionary/data-dictionary-overview.md)</li></ul> |
 | C | **Linkes Bedienfeld:** Dieser Bereich enthält einzelne Bedienfelder, Visualisierungen, Komponenten oder Listen. Der Inhalt hängt von der im Schaltflächenbedienfeld ausgewählten Schaltfläche ab. |
 | D | **Arbeitsfläche:** Der Hauptbereich, in den Sie Inhalte aus dem linken Bedienfeld ziehen, um Ihr Projekt zu erstellen. Das Projekt wird dynamisch aktualisiert, wenn Sie Bedienfelder hinzufügen, Visualisierungen zu Bedienfeldern hinzufügen und Komponenten zu Visualisierungen hinzufügen. Sie können mehrere Bedienfelder erstellen und in jedem Bedienfeld können Sie mehrere Visualisierungen erstellen.<br/>Jedes Bedienfeld basiert auf einer ausgewählten Datenansicht. Die ausgewählte Datenansicht bestimmt verfügbare Komponenten wie Metriken und Dimensionen. Weitere Informationen finden Sie unter [Bedienfelder – Datenansicht](/help/analysis-workspace/c-panels/panels.md#data-view). |
 
@@ -121,16 +123,16 @@ Eine Übersicht über die verfügbaren Menüs finden Sie in den nachfolgenden Ta
 | **[!UICONTROL Dateiexport planen]** | **[!UICONTROL *Umschalt+Wahltaste+S *]** | **[!UICONTROL *Umschalt+Alt+S *]** | [Planmäßiges Senden des Projekts als CSV- oder PDF-Datei an andere Empfängerinnen und Empfänger](/help/analysis-workspace/curate-share/send-schedule-files.md) |
 | **[!UICONTROL Projektdaten kuratieren]** | **[!UICONTROL *Umschalt+Befehlstaste+G *]** | **[!UICONTROL *Umschalt+Strg+G *]** | [Kuratieren der Projektdaten](/help/analysis-workspace/curate-share/curate.md) |
 
-| Hilfe | Mac-Tastaturbefehl | Windows-Tastaturbefehl | Beschreibung |
-|---|---|---|---|
-| **[!UICONTROL Videos]** | | | Öffnen Sie den YouTube-Kanal von Customer Journey Analytics in einer neuen Browser-Registerkarte. |
-| **[!UICONTROL Hilfedokumentation]** | | | Öffnen Sie die Dokumentation (die Sie gerade lesen …) in einer neuen Browser-Registerkarte. |
-| **[!UICONTROL Hilfeforum]** | | | Öffnen Sie das Communitys-Forum von Adobe Analytics Experience League in einer neuen Browser-Registerkarte. |
-| **[!UICONTROL Tastaturbefehle]** | | | Anzeigen einer Übersicht der Hotkeys (Tastaturbefehle), die Sie in Workspace verwenden können. |
-| **[!UICONTROL Debugger aktivieren]** |  | | Aktivieren des Debuggers. Ihr Projekt wird neu geladen. |
-| **[!UICONTROL Debugger deaktivieren]** | | | Deaktivieren des Debuggers. Ihr Projekt wird neu geladen. |
-| **[!UICONTROL Leistung]** | | | Anzeigen eines Dialogfelds mit Metriken zur **[!UICONTROL Analysis Workspace-Leistung]**. Verwenden Sie **[!UICONTROL Als CSV herunterladen]**, um eine CSV-Datei mit den Leistungsmetriken herunterzuladen. |
-| **[!UICONTROL Über den Arbeitsbereich]** | | | Anzeigen des Dialogfelds **[!UICONTROL Über den Arbeitsbereich]** mit Versionsinformationen, Funktionszugriffsebenen und aktiven Featureflags. |
+| Hilfe | Beschreibung |
+|---|---|
+| **[!UICONTROL Videos]** | Öffnen Sie den YouTube-Kanal von Customer Journey Analytics in einer neuen Browser-Registerkarte. |
+| **[!UICONTROL Hilfedokumentation]** | Öffnen Sie die Dokumentation (die Sie gerade lesen …) in einer neuen Browser-Registerkarte. |
+| **[!UICONTROL Hilfeforum]** | Öffnen Sie das Communitys-Forum von Adobe Analytics Experience League in einer neuen Browser-Registerkarte. |
+| **[!UICONTROL Tastaturbefehle]** | Anzeigen einer Übersicht der Hotkeys (Tastaturbefehle), die Sie in Workspace verwenden können. |
+| **[!UICONTROL Debugger aktivieren]** | Aktivieren des Debuggers. Ihr Projekt wird neu geladen. |
+| **[!UICONTROL Debugger deaktivieren]** | Deaktivieren des Debuggers. Ihr Projekt wird neu geladen. |
+| **[!UICONTROL Leistung]** | Anzeigen eines Dialogfelds mit Metriken zur **[!UICONTROL Analysis Workspace-Leistung]**. Verwenden Sie **[!UICONTROL Als CSV herunterladen]**, um eine CSV-Datei mit den Leistungsmetriken herunterzuladen. |
+| **[!UICONTROL Über den Arbeitsbereich]** | Anzeigen des Dialogfelds **[!UICONTROL Über den Arbeitsbereich]** mit Versionsinformationen, Funktionszugriffsebenen und aktiven Featureflags. |
 
 ## Datenquellen
 

@@ -1,13 +1,13 @@
 ---
-description: Die Ringdiagramm-Visualisierung zeigt Daten als Teile oder Segmente eines Ganzen an.
+description: Erfahren Sie, wie Sie mit der Ringidagramm-Visualisierung Daten als Teile oder Segmente eines Ganzen anzeigen können.
 title: Ringdiagramm
 feature: Visualizations
 exl-id: 97b846a6-3a38-48c7-b686-b792bb882fdb
 role: User
-source-git-commit: 0101986bb86c49776a044f754d912dc1bcb9422c
+source-git-commit: 8054aab28c405f6a9dd24306a086c78069032999
 workflow-type: tm+mt
-source-wordcount: '122'
-ht-degree: 66%
+source-wordcount: '128'
+ht-degree: 63%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 66%
 
 >[!BEGINSHADEBOX]
 
-_In diesem Artikel wird die Visualisierung Ringdiagramm in_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics** beschrieben._<br/>_Unter [Ringdiagramm](https://experienceleague.adobe.com/de/docs/analytics/analyze/analysis-workspace/visualizations/donut) finden Sie die Version dieses Artikels für_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics**._
+_In diesem Artikel wird die Visualisierung Ringdiagramm in_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics** beschrieben._<br/>_Unter [Ringdiagramm](https://experienceleague.adobe.com/de/docs/analytics/analyze/analysis-workspace/visualizations/donut) finden Sie die Version dieses Artikels für_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**._
 
 >[!ENDSHADEBOX]
 
@@ -47,7 +47,7 @@ Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Hinzufügen ei
 >[!MORELIKETHIS]
 >
 >[Hinzufügen einer Visualisierung zu einem Panel](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
->[Visualisierungseinstellungen](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
->[Kontextmenü der Visualisierung](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
+>>[Visualisierungseinstellungen](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
+>>[Kontextmenü der Visualisierung](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
 >
 

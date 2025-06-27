@@ -1,13 +1,13 @@
 ---
-title: Überblick über Kohortentabellen
-description: Erfahren Sie, wie Sie eine Kohortentabelle zur Kohortenanalyse in Analysis Workspace verwenden
+title: Übersicht über die Kohortentabelle
+description: Erfahren Sie, wie Sie Ihre Audience genauer untersuchen und diese Daten mithilfe der Kohortenanalyse in verwandte Gruppen aufteilen können. Verwenden Sie die Kohortenanalyse in Analysis Workspace.
 feature: Visualizations
 exl-id: 3e3a70cd-70ec-4d4d-81c3-7902716d0b01
 role: User
-source-git-commit: 0101986bb86c49776a044f754d912dc1bcb9422c
+source-git-commit: c4c8c0ff5d46ec455ca5333f79d6d8529f4cb87d
 workflow-type: tm+mt
-source-wordcount: '705'
-ht-degree: 94%
+source-wordcount: '719'
+ht-degree: 88%
 
 ---
 
@@ -34,7 +34,7 @@ ht-degree: 94%
 
 >[!BEGINSHADEBOX]
 
-_In diesem Artikel wird die Kohortentabelle in_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics** beschrieben._<br/>_Unter [Kohortentabelle](https://experienceleague.adobe.com/de/docs/analytics/analyze/analysis-workspace/visualizations/cohort-table/cohort-analysis) finden Sie die Version dieses Artikels für_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics**._
+_In diesem Artikel wird die Kohortentabelle in_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics** beschrieben._<br/>_Unter [Kohortentabelle](https://experienceleague.adobe.com/de/docs/analytics/analyze/analysis-workspace/visualizations/cohort-table/cohort-analysis) finden Sie die Version dieses Artikels für_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**._
 
 >[!ENDSHADEBOX]
 
@@ -55,7 +55,7 @@ Die [!UICONTROL Kohortentabelle] steht allen Customer Journey Analytics-Kundinne
 
 >[!BEGINSHADEBOX]
 
-Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Kohortenanalyse in Analysis Workspace](https://video.tv.adobe.com/v/3430076/?quality=12&learn=on&captions=ger){target="_blank"} finden Sie ein Demovideo.
+Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Kohortenanalyse in Analysis Workspace](https://video.tv.adobe.com/v/23990/?quality=12&learn=on){target="_blank"} finden Sie ein Demovideo.
 
 {{videoaa}}
 
@@ -64,7 +64,7 @@ Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Kohortenanalys
 
 >[!IMPORTANT]
 >
->[!UICONTROL Kohortenanalyse] unterstützt keine nicht segmentierbaren Metriken (einschließlich berechneter Metriken), Nicht-Ganzzahlmetriken (z. B. Umsatz) oder Vorfälle. In der [!UICONTROL Kohortenanalyse“ können nur Metriken verwendet werden, die auch in Segmenten verwendet &#x200B;] können. Darüber hinaus können diese Metriken jeweils nur 1 inkrementiert werden.
+>[!UICONTROL Kohortenanalyse] unterstützt keine nicht segmentierbaren Metriken (einschließlich berechneter Metriken), Nicht-Ganzzahlmetriken (z. B. Umsatz) oder Vorfälle. In der [!UICONTROL Kohortenanalyse“ können nur Metriken verwendet werden, die auch in Segmenten verwendet ] können. Darüber hinaus können diese Metriken jeweils nur 1 inkrementiert werden.
 
 Kohortentabellen in Customer Journey Analytics unterstützen Dubletten-basierte (oder beliebige numerische) Metriken. Beispielsweise kann „Purchase.Value“ (eine Dublette) als Einschluss-/Rückgabemetrik verwendet werden. Darüber hinaus sind alle Metriken, die über den Analytics-Quell-Connector an Adobe Experience Platform übergeben werden, ebenfalls Dubletten.
 
@@ -74,31 +74,31 @@ In den folgenden Abschnitten werden Funktionen zur Kohortenanalyse beschrieben, 
 
 Weitere ausführliche Informationen zum Erstellen einer Kohorte und zum Ausführen eines [!UICONTROL Kohortenanalyse-Berichts] finden Sie unter [Konfigurieren einer Kohortentabelle](/help/analysis-workspace/visualizations/cohort-table/t-cohort.md).
 
-### [!UICONTROL Kundenbindungstabelle]
+### Aufbewahrungstabelle
 
 Eine [!UICONTROL Bindungskohortentabelle] gibt Personen zurück: Jede Datenzelle zeigt die Roh- und Prozentanzahl der Personen in der Kohorte, die die Aktion während dieses Zeitraums ausgeführt haben. Sie können bis zu 3 Metriken und bis zu 10 Segmente einschließen.
 
 ![Ein Bindungskohortenbericht mit den Einheiten und dem Prozentsatz der Personen in der Kohorte.](assets/retention-report.png)
 
-### [!UICONTROL Abwanderungstabelle]
+### Abwanderungstabelle
 
 Eine [!UICONTROL Abwanderungskohortentabelle] ist die Umkehrung einer Bindungstabelle und zeigt die Personen an, die abgewandert sind oder die Rückkehrkriterien für Ihre Kohorte im Laufe der Zeit nie erfüllt haben. Sie können bis zu 3 Metriken und bis zu 10 Segmente einschließen.
 
 ![Eine Abwanderungstabelle mit den Einheiten und dem Prozentsatz der Personen, die die Rückkehrkriterien für eine Kohorte nicht erfüllt haben.](assets/churn-report.png)
 
-### [!UICONTROL Rollierende Berechnung]
+### Rollierende Berechnung
 
 Sie können die Kundenbindung oder -abwanderung basierend auf der vorherigen Spalte berechnen, nicht basierend auf der eingeschlossenen Spalte, was als rollierende Berechnung bezeichnet wird.
 
 ![Ein Kohortenbindungsbericht mit den Berechnungen, die auf einer vorherigen Datenspalte basieren.](assets/retention-report-rolling.png)
 
-### [!UICONTROL Latenztabelle]
+### Latenztabelle
 
 Eine Latenztabelle misst die verstrichene Zeit vor und nach dem Aufnahmeereignis. Das Messen der Latenz ist ein hervorragendes Instrument für die Vor- und Nachanalyse. Die Spalte **[!UICONTROL Aufnahme]** befindet sich in der Mitte der Tabelle und die Zeiträume vor und nach dem Aufnahmeereignis werden auf beiden Seiten angezeigt.
 
 ![Ein Kohortenbericht mit der verstrichenen Zeit vor und nach einem Ereignis.](assets/retention-report-latency.png)
 
-### [!UICONTROL Angepasste Dimensionskohorte]
+### Benutzerdefinierte Dimensionskohorte
 
 Sie können Kohorten auf Grundlage einer ausgewählten Dimension und nicht auf Grundlage zeitbasierter Kohorten (was die Standardeinstellung ist) erstellen. Verwenden Sie Dimensionen wie [!UICONTROL Ort-Geo], [!UICONTROL Marketing-Kanal], [!UICONTROL Kampagne], [!UICONTROL Produkt], [!UICONTROL Seite], [!UICONTROL Region] oder jede andere Dimension, um zu zeigen, wie sich die Bindung ändert. Basierend auf den verschiedenen Werten dieser Dimensionen.
 

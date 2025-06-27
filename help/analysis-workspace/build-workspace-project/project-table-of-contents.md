@@ -1,14 +1,14 @@
 ---
-description: Informationen zur Inhaltsverzeichnisfunktion in einem Workspace-Projekt
+description: Erfahren Sie, wie Sie das Inhaltsverzeichnis in einem Projekt in Analysis Workspace verwenden können, um schnell auf Bedienfelder und Visualisierungen zuzugreifen.
 keywords: Analysis Workspace
 title: Inhaltsverzeichnis
 feature: Workspace Basics
 role: User
 exl-id: 4eb7de7a-ec40-4a59-afc4-94131e91a35f
-source-git-commit: 51a6341734163fdd6b994ae9cec53ef034959896
-workflow-type: ht
-source-wordcount: '200'
-ht-degree: 100%
+source-git-commit: c4c8c0ff5d46ec455ca5333f79d6d8529f4cb87d
+workflow-type: tm+mt
+source-wordcount: '209'
+ht-degree: 88%
 
 ---
 
@@ -18,7 +18,7 @@ Sie können ein Inhaltsverzeichnis für ein Projekt in Analysis Workspace anzeig
 
 >[!BEGINSHADEBOX]
 
-Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Erstellen eines Inhaltsverzeichnisses](https://video.tv.adobe.com/v/35186/?quality=12&learn=on&captions=ger){target="_blank"} finden Sie ein Demovideo.
+Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Erstellen eines Inhaltsverzeichnisses](https://video.tv.adobe.com/v/26990/?quality=12&learn=on){target="_blank"} finden Sie ein Demovideo.
 
 >[!ENDSHADEBOX]
 

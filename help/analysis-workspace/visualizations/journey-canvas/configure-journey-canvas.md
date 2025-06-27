@@ -1,12 +1,12 @@
 ---
-description: Konfigurieren einer Journey-Arbeitsflächenvisualisierung
-title: Journey-Arbeitsfläche
+description: Erfahren Sie, wie Sie eine Journey-Arbeitsflächen-Visualisierung konfigurieren.
+title: Konfigurieren einer Journey-Arbeitsflächen-Visualisierung
 feature: Visualizations
 role: User
 exl-id: 53984934-6fba-4f15-aeeb-d91039260553
-source-git-commit: 38be838fccf896a12da3fbadac50e578081312ba
+source-git-commit: 8054aab28c405f6a9dd24306a086c78069032999
 workflow-type: tm+mt
-source-wordcount: '6225'
+source-wordcount: '6231'
 ht-degree: 1%
 
 ---
@@ -19,7 +19,7 @@ Die Journey-Arbeitsflächen-Visualisierung ermöglicht es Ihnen, die Journey zu 
 
 ## Überblick über die Journey-Arbeitsfläche
 
-Weitere Informationen zur Journey-Arbeitsfläche finden [&#128279;](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md) unter Übersicht über die Journey-Arbeitsfläche, einschließlich:
+Weitere Informationen zur Journey-Arbeitsfläche finden ](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md) unter [Übersicht über die Journey-Arbeitsfläche, einschließlich:
 
 * Wichtigste Funktionen
 

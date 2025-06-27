@@ -1,13 +1,13 @@
 ---
-title: Bedienfeld „Zielgruppendurchschnitt pro Minute“
-description: Verwenden und Interpretieren des Panels „Medien-Zielgruppendurchschnitt pro Minute“ in Analysis Workspace.
+title: Bedienfeld „Medien-Zielgruppendurchschnitt pro Minute“
+description: Erfahren Sie, wie Sie das Bedienfeld „Medien-Zielgruppendurchschnitt pro Minute“ in Analysis Workspace verwenden und interpretieren.
 feature: Panels
 role: User, Admin
 exl-id: c55b5534-a9a6-47f1-8b43-c8c0b8686c53
-source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
+source-git-commit: 8054aab28c405f6a9dd24306a086c78069032999
 workflow-type: tm+mt
-source-wordcount: '1678'
-ht-degree: 94%
+source-wordcount: '1679'
+ht-degree: 93%
 
 ---
 
@@ -33,7 +33,7 @@ ht-degree: 94%
 
 >[!BEGINSHADEBOX]
 
-_In diesem Artikel wird das Panel Medien-Zielgruppendurchschnitt pro Minute in_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**&#x200B;_ beschrieben.<br/>_Unter [Panel Medien-Zielgruppendurchschnitt pro Minute](https://experienceleague.adobe.com/de/docs/analytics/analyze/analysis-workspace/panels/average-minute-audience-panel) finden Sie die Version dieses Artikels für_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics**._
+_In diesem Artikel wird das Panel Medien-Zielgruppendurchschnitt pro Minute in_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**_ beschrieben.<br/>_Unter [Panel Medien-Zielgruppendurchschnitt pro Minute](https://experienceleague.adobe.com/de/docs/analytics/analyze/analysis-workspace/panels/average-minute-audience-panel) finden Sie die Version dieses Artikels für_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**._
 
 >[!ENDSHADEBOX]
 
@@ -187,6 +187,6 @@ Das Panel „Medien-Zielgruppendurchschnitt pro Minute“ verwendet nur die Metr
 >[!MORELIKETHIS]
 >
 > [Erstellen eines Bedienfelds](/help/analysis-workspace/c-panels/panels.md#create-a-panel)
-> [Panel Gleichzeitige Medienbetrachter](media-concurrent-viewers.md)
-> [Panel Verbrachte Zeit bei der Medienwiedergabe](media-playback-time-spent.md)
+> > [Panel Gleichzeitige Medienbetrachter](media-concurrent-viewers.md)
+> > [Panel Verbrachte Zeit bei der Medienwiedergabe](media-playback-time-spent.md)
 >

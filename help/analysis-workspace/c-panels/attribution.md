@@ -1,13 +1,13 @@
 ---
-title: Panel „Attribution“
-description: Verwendung und Interpretation des Attributionsbedienfelds in Analysis Workspace.
+title: Attributionsbedienfeld
+description: Erfahren Sie, wie Sie das Attributionsbedienfeld in Analysis Workspace verwenden und interpretieren.
 feature: Panels
 exl-id: 7fdec05b-5d99-48d1-ac1b-c243cb64e487
 role: User
-source-git-commit: 304b8d85767d89ee60a6fb37a128194f60ca89d4
+source-git-commit: 8054aab28c405f6a9dd24306a086c78069032999
 workflow-type: tm+mt
-source-wordcount: '663'
-ht-degree: 91%
+source-wordcount: '664'
+ht-degree: 89%
 
 ---
 
@@ -31,7 +31,7 @@ ht-degree: 91%
 
 >[!BEGINSHADEBOX]
 
-_In diesem Artikel wird das Panel „Attribution“ in_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**&#x200B;_ beschrieben.<br/>_Unter [Panel „Attribution“ ](https://experienceleague.adobe.com/de/docs/analytics/analyze/analysis-workspace/panels/attribution) finden Sie die Version dieses Artikels für_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics**._
+_In diesem Artikel wird das Panel „Attribution“ in_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**_ beschrieben.<br/>_Unter [Panel „Attribution“ ](https://experienceleague.adobe.com/de/docs/analytics/analyze/analysis-workspace/panels/attribution) finden Sie die Version dieses Artikels für_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**._
 
 >[!ENDSHADEBOX]
 

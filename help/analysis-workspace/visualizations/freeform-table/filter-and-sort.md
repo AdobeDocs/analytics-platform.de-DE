@@ -1,13 +1,13 @@
 ---
-description: Dokumentation, in der beschrieben wird, wie Tabellen in Analysis Workspace gefiltert und sortiert werden.
+description: Erfahren Sie, wie Sie Freiformtabellen in Analysis Workspace filtern und sortieren.
 title: Filtern und Sortieren von Tabellen
 feature: Visualizations
 exl-id: 3af637ec-bb6c-49b7-a7b3-e1d310e71101
 role: User
-source-git-commit: 38be838fccf896a12da3fbadac50e578081312ba
+source-git-commit: c4c8c0ff5d46ec455ca5333f79d6d8529f4cb87d
 workflow-type: tm+mt
 source-wordcount: '844'
-ht-degree: 98%
+ht-degree: 96%
 
 ---
 
@@ -17,7 +17,7 @@ Freiformtabellen in Analysis Workspace bilden die Grundlage für die interaktive
 
 <!--The following video covers filter and sort options in Analysis Workspace, in addition to pagination options:
 
->[!VIDEO](https://video.tv.adobe.com/v/327342?captions=ger)-->
+>[!VIDEO](https://video.tv.adobe.com/v/23968)-->
 
 ## Filtern von Tabellen
 

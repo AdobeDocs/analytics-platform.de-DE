@@ -1,22 +1,22 @@
 ---
-description: Informationen zu Ordnern in Workspace
+description: Erfahren Sie, wie Sie Ihre Projekte in Ordnern in Analysis Workspace organisieren.
 keywords: Analysis Workspace
 title: Übersicht über Ordner
 feature: Workspace Basics
 exl-id: e12e271e-ce15-4535-bb48-1976395cf755
 role: User
-source-git-commit: 60035b8fc65627bf5ead2a50959ce9cc5fe48604
+source-git-commit: c4c8c0ff5d46ec455ca5333f79d6d8529f4cb87d
 workflow-type: tm+mt
-source-wordcount: '413'
-ht-degree: 100%
+source-wordcount: '419'
+ht-degree: 97%
 
 ---
 
 # Übersicht über Ordner
 
-Ordner in Customer Journey Analytics sind auf der Workspace-Landingpage verfügbar, wenn Sie [Ordner und Projekte anzeigen](../freeform-overview.md#show-selector) ausgewählt haben.
-
 Die Ordner in Workspace unterstützen Sie dabei, Projekte zu organisieren und zu kategorisieren. Mit der Ordnerfunktionalität können Sie Ordner und Unterordner erstellen, um Ihre Projekte zu verwalten.
+
+Ordner in Customer Journey Analytics sind auf der Workspace-Landingpage verfügbar, wenn Sie [Ordner und Projekte anzeigen](../freeform-overview.md#show-selector) ausgewählt haben.
 
 In Analysis Workspace gibt es zwei Arten von Ordnern: den Firmenordner und persönliche Ordner. Ein freigegebener Firmenordner ermöglicht es Admins, Inhalte zu erstellen und diese für alle Workspace-Benutzenden freizugeben.
 

@@ -1,14 +1,14 @@
 ---
-description: Stellen Sie Ihre Daten in Analysis Workspace visuell dar.
+description: Erfahren Sie, wie Sie Ihre Daten mit Visualisierungen visuell darstellen, die in Analysis Workspace verfügbar sind.
 keywords: Analysis Workspace
-title: Visualisierungsübersicht
+title: Visualisierungen - Übersicht
 feature: Visualizations
 exl-id: ca9e0561-7a54-487a-9fdc-3bcf34f9bdb1
 role: User
-source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
+source-git-commit: c4c8c0ff5d46ec455ca5333f79d6d8529f4cb87d
 workflow-type: tm+mt
-source-wordcount: '1616'
-ht-degree: 96%
+source-wordcount: '1622'
+ht-degree: 95%
 
 ---
 

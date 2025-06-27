@@ -1,8 +1,8 @@
 ---
-source-git-commit: 256b1a3901a13ff2873a5cb5782baf26c93b8e8d
+source-git-commit: c4c8c0ff5d46ec455ca5333f79d6d8529f4cb87d
 workflow-type: tm+mt
 source-wordcount: '4947'
-ht-degree: 96%
+ht-degree: 99%
 
 ---
 # Snippets
@@ -57,7 +57,7 @@ Zu den verfügbaren Zeitvergleichsoptionen gehören der vorherige Zeitraum, 13 
 
 ## Videodemonstration von Adobe Analytics {#videoaa}
 
-*In diesem Video wird die Funktionalität von Adobe Analytics veranschaulicht. Die Funktionalität ist jedoch in ähnlicher Weise in Customer Journey Analytics verfügbar. Achten Sie auf die terminologischen Unterschiede zwischen Adobe Analytics und Customer Journey Analytics (z. B. „Besuche“ und „Sitzungen„).*
+In diesem Video werden die Funktionen von mit Adobe Analytics veranschaulicht. Die Funktionalität ist jedoch in ähnlicher Weise in Customer Journey Analytics verfügbar. Achten Sie auf die terminologischen Unterschiede zwischen Adobe Analytics und Customer Journey Analytics (z. B. *Besuche* versus *Sitzungen*).
 
 
 ## Abschnitt zu Tag-Filtern {#tagfiltersection}
@@ -124,20 +124,20 @@ Ein Attributionsmodell bestimmt, welchen Dimensionselementen eine Metrik zugesch
 
 {style="table-layout:auto"}
 
-## Attributionscontainer {#attribution-container}
+## Attributions-Container {#attribution-container}
 
-Ein Attributionscontainer definiert den gewünschten Umfang für die Attribution . Mögliche Optionen sind:
+Ein Attributions-Container definiert den gewünschten Umfang für die Attribution. Mögliche Optionen sind:
 
 * **Sitzung:** Blickt bis zum Beginn einer Sitzung zurück, in der eine Konversion stattgefunden hat. Sitzungs-Lookback-Fenster berücksichtigen das geänderte [Sitzungs-Timeout](/help/data-views/create-dataview.md#session-settings) in einer Datenansicht.
-* **Person**: Betrachtet Konversionen aus dem Umfang des Personen-Containers.
-* **Globales Konto** [!BADGE B2B edition]{type=Informative}: Betrachtet Konversionen aus dem Umfang des Containers für globale Konten.
-* **Konten** [!BADGE B2B edition]{type=Informative}: Betrachtet Konversionen aus dem Umfang des Personen-Containers .
-* **Opportunity** [!BADGE B2B edition]{type=Informative}: Betrachtet Konversionen aus dem Umfang des Opportunity-Containers .
-* **Einkaufsgruppe** [!BADGE B2B edition]{type=Informative}: Betrachtet Konversionen aus dem Umfang des Einkaufsgruppen-Containers.
+* **Person**: Untersucht Konversionen ausgehend vom Umfang des Personen-Containers.
+* **Globales Konto** [!BADGE B2B Edition]{type=Informative}: Untersucht Konversionen ausgehend vom Umfang des Containers für globale Konten.
+* **Konten** [!BADGE B2B Edition]{type=Informative}: Untersucht Konversionen ausgehend vom Umfang des Personen-Containers.
+* **Opportunity** [!BADGE B2B Edition]{type=Informative}: Untersucht Konversionen ausgehend vom Umfang des Opportunity-Containers.
+* **Käufergruppe** [!BADGE B2B Edition]{type=Informative}: Untersucht Konversionen ausgehend vom Umfang des Käufergruppen-Containers.
 
 ## Attributions-Lookback-Fenster {#attribution-lookback-window}
 
-Ein Attributions-Lookback-Fenster gibt an, wie lange eine Konversion zurückblicken sollte, um Touchpoints einzuschließen. Wenn ein Dimensionselement außerhalb des Lookback-Fensters festgelegt wird, wird der Wert in keine Attributionsberechnungen einbezogen.
+Ein Attributions-Lookback-Fenster ist der Zeitraum, der für eine Konversion rückblickend bei der Erfassung von Touchpoints berücksichtigt werden sollte. Wenn ein Dimensionselement außerhalb des Lookback-Fensters festgelegt wird, wird der Wert in keine Attributionsberechnungen einbezogen.
 
 * **14 Tage**: Blickt bis zu 14 Tage nach dem Zeitpunkt zurück, an dem die Konversion stattgefunden hat.
 * **30 Tage**: Blickt bis zu 30 Tage nach dem Zeitpunkt zurück, an dem die Konversion stattgefunden hat.
@@ -154,20 +154,20 @@ Sehen Sie sich folgendes Beispiel an:
 1. Am 18. September gelangt die Person über einen Link in sozialen Medien, den er von einer Freundin oder einem Freund erhalten hat, erneut auf Ihre Site. Er fügt mehrere Artikel zum Warenkorb hinzu, erwirbt aber nichts.
 1. Am 24. September sendet Ihr Marketing-Team eine E-Mail mit einem Coupon für einige der Artikel im Warenkorb. Der Coupon wird angewendet, der Besucher ruft aber mehrere andere Websites auf, um zu sehen, ob andere Coupons verfügbar sind. Er findet einen weiteren über eine Display-Anzeige und kauft dann letztendlich für 50 Euro ein.
 
-Je nach Attributionsmodell erhalten Container und Kanäle unterschiedliche Gutschriften. Beispiele finden Sie in der folgenden Tabelle:
+Je nach Attributionsmodell erhalten Container und Kanäle unterschiedliche Gewichtungen. Beispiele finden Sie in der unten stehenden Tabelle:
 
 | Modell | Container | Lookback-Fenster | Erklärung |
 |---|---|---|---|
-| First Touch | Sitzung | 30 Tage | Die Attribution betrachtet nur den dritten Besuch. E-Mail kam vor Display-Anzeige, sodass E-Mail 100 % des Kaufs von 50 US-Dollar zugeschrieben werden. |
-| First Touch | Person | 30 Tage | Die Attribution untersucht alle drei Besuche. Paid Search kam zuerst, sodass Paid Search 100 % des Kaufs von 50 $ zugeschrieben werden. |
-| Linear | Sitzung | 30 Tage | Das Guthaben wird zwischen E-Mail und Anzeige aufgeteilt. Beiden Kanälen werden jeweils 25 Euro zugeschrieben. |
-| Linear | Person | 30 Tage | Die Gutschrift wird aufgeteilt in Paid Search, Social Media, E-Mail und Display. Jedem Kanal werden für diesen Kauf 12,50 $ zugeschrieben. |
-| J-förmig | Person | 30 Tage | Die Gutschrift wird aufgeteilt in Paid Search, Social Media, E-Mail und Display.<ul><li>Der Display-Anzeige werden 60 %, also 30 Euro, zugeschrieben.</li><li>Paid Search werden 20 %, also 10 Euro, zugeschrieben.</li><li>Die restlichen 20 % werden zwischen Social Media und E-Mail aufgeteilt (jeweils 5 Euro).</li></ul> |
-| Zeitverfall | Person | 30 Tage | <ul><li>Abstand von null Tagen zwischen Display-Touchpoint und Konversion. `2^(-0/7) = 1`</li><li>Abstand von null Tagen zwischen E-Mail-Touchpoint und Konversion. `2^(-0/7) = 1`</li><li>Abstand von sechs Tagen zwischen Social Media-Touchpoint und Konversion. `2^(-6/7) = 0.552`</li><li>Abstand von 9 Tagen zwischen Paid Search-Touchpoint und Konversion. `2^(-9/7) = 0.41`</li>Die Normalisierung dieser Werte führt zu Folgendem:<ul><li>Display-Anzeige: 33,8 %, 16,88 Euro</li><li>E-Mail: 33,8 %, 16,88 Euro</li><li>Social Media: 18,6 %, 9,32 Euro</li><li>Paid Search: 13,8 %, 6,92 Euro</li></ul></li></ul> |
+| Erstkontakt | Sitzung | 30 Tage | Die Attribution untersucht nur den dritten Besuch. E-Mail kam vor Display-Anzeige, sodass E-Mail 100 % des Kaufs in Höhe von 50 Euro zugeschrieben werden. |
+| Erstkontakt | Person | 30 Tage | Die Attribution untersucht alle drei Besuche. Paid Search kam zuerst, sodass Paid Search 100 % des Kaufs in Höhe von 50 Euro zugeschrieben werden. |
+| Linear | Sitzung | 30 Tage | Die Gewichtung wird zwischen E-Mail und Display-Anzeige aufgeteilt. Beiden Kanälen werden jeweils 25 Euro zugeschrieben. |
+| Linear | Person | 30 Tage | Die Gewichtung wird zwischen Paid Search, Social Media, E-Mail und Display-Anzeige aufgeteilt. Jedem Kanal werden für diesen Kauf 12,50 Euro zugeschrieben. |
+| J-förmig | Person | 30 Tage | Die Gewichtung wird zwischen Paid Search, Social Media, E-Mail und Display-Anzeige aufgeteilt.<ul><li>Der Display-Anzeige werden 60 %, also 30 Euro, zugeschrieben.</li><li>Paid Search werden 20 %, also 10 Euro, zugeschrieben.</li><li>Die restlichen 20 % werden zwischen Social Media und E-Mail aufgeteilt (jeweils 5 Euro).</li></ul> |
+| Zeitverfall | Person | 30 Tage | <ul><li>Abstand von null Tagen zwischen Display-Touchpoint und Konversion. `2^(-0/7) = 1`</li><li>Abstand von null Tagen zwischen E-Mail-Touchpoint und Konversion. `2^(-0/7) = 1`</li><li>Abstand von sechs Tagen zwischen Social Media-Touchpoint und Konversion. `2^(-6/7) = 0.552`</li><li>Abstand von 9 Tagen zwischen Paid Search-Touchpoint und Konversion. `2^(-9/7) = 0.41`</li>Die Normalisierung dieser Werte führt zu Folgendem:<ul><li>Display-Anzeige: 33,8 %, 16,88 Euro</li><li>E-Mail: 33,8 %, 16,88 Euro</li><li>Social Media: 18,6 %, 9,32 Euro</li><li>Paid Search: 13,8 %, 6,92 Euro</li></ul></li></ul> |
 
 Konversionsereignisse, die in der Regel Ganzzahlen aufweisen, werden aufgeteilt, wenn die Gewichtung mehr als einem Kanal zugeschrieben wird. Wenn beispielsweise zwei Kanäle mit einem linearen Attributionsmodell zu einer Bestellung beitragen, erhalten beide Kanäle 0,5 dieser Bestellung. Diese Teilmetriken werden über alle Personen summiert und dann zur Berichterstellung auf die nächste Ganzzahl gerundet.
 
-[!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} Verwenden Sie bestimmte B2B-Container wie Konten oder Opportunitys und geeignetere Lookback-Fenster (bis zu 13 Monate), um die obigen Attributionsmodelle in typischen B2B-Szenarien anzuwenden.
+[!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} Verwenden Sie bestimmte B2B-Container, z. B. „Konten“ oder „Opportunities“, und geeignetere Lookback-Fenster (bis zu 13 Monate), um die obigen Attributionsmodelle in typischen B2B-Szenarien anzuwenden.
 
 ## Vergleiche der Journey-Visualisierungen {#journey-visualization-comparisons}
 

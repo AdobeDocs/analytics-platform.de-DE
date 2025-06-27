@@ -1,21 +1,21 @@
 ---
-description: Erfahren Sie, wie Sie in Workspace Ordner verwalten
+description: Erfahren Sie, wie Sie Ordner in Analysis Workspace verwalten.
 keywords: Analysis Workspace
-title: Verwalten von Ordnern in Analysis Workspace
+title: Ordner verwalten
 feature: Workspace Basics
 exl-id: dcc78e0e-49d6-40bf-a606-9a7f3f19911c
 role: User
-source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
+source-git-commit: c4c8c0ff5d46ec455ca5333f79d6d8529f4cb87d
 workflow-type: tm+mt
-source-wordcount: '427'
-ht-degree: 91%
+source-wordcount: '428'
+ht-degree: 86%
 
 ---
 
 
 # Verwalten von Ordnern
 
-Sie können Ordner in Workspace auf zwei Arten verwalten. Aus dem Ordner heraus oder über einen oder mehrere ausgewählte Ordner in der Projektliste. Das Verwalten von Ordnern umfasst das Umbenennen, Verschieben oder Löschen von Ordnern.
+Sie können Ordner in Workspace auf zwei Arten verwalten. Aus dem Ordner heraus oder über einen oder mehrere ausgewählte Ordner in der Projektliste. Die Ordnerverwaltung umfasst Optionen zum Umbenennen, Verschieben oder Löschen von Ordnern.
 
 ## Umbenennen von Ordnern
 
@@ -26,13 +26,13 @@ So benennen Sie Ordner in Workspace um:
 * Wählen Sie in der [Projektliste](/help/analysis-workspace/build-workspace-project/freeform-overview.md#project-list) einen Ordner aus, den Sie umbenennen möchten.
 
    1. Wählen Sie im Kontextmenü ![Mehr](/help/assets/icons/More.svg) des ausgewählten Ordners oder auf der blauen Aktionsleiste unter den verfügbaren [Aktionen](/help/analysis-workspace/build-workspace-project/freeform-overview.md#actions) die Option **[!UICONTROL Umbenennen]** aus.
-   1. Geben Sie im Dialogfeld **[!UICONTROL Umbenennen: *Ordnername *]**&#x200B;einen neuen Namen ein und wählen Sie&#x200B;**[!UICONTROL Speichern &#x200B;]**&#x200B;aus.
+   1. Geben Sie im Dialogfeld **[!UICONTROL Umbenennen: *Ordnername *]**einen neuen Namen ein und wählen Sie**[!UICONTROL Speichern ]**aus.
 
 * Innerhalb des Ordners, den Sie umbenennen möchten.
 
    1. Wählen Sie im [Titelbereich](/help/analysis-workspace/build-workspace-project/freeform-overview.md#title-area) über ![Mehr](/help/assets/icons/More.svg) die Option **[!UICONTROL Ordner umbenennen]** aus.
 
-   1. Geben Sie im Dialogfeld **[!UICONTROL Umbenennen: *Ordnername *]**&#x200B;einen neuen Namen ein und wählen Sie&#x200B;**[!UICONTROL Speichern &#x200B;]**&#x200B;aus.
+   1. Geben Sie im Dialogfeld **[!UICONTROL Umbenennen: *Ordnername *]**einen neuen Namen ein und wählen Sie**[!UICONTROL Speichern ]**aus.
 
 
 ## Verschieben von Ordnern

@@ -1,13 +1,13 @@
 ---
-description: Zeigt hierarchische Daten (Baumstruktur) als Gruppe verschachtelter Rechtecke an.
+description: Erfahren Sie, wie Sie hierarchische (baumstrukturierte) Daten als Satz verschachtelter Rechtecke anzeigen.
 title: Treemap
 feature: Visualizations
 exl-id: fc39d1a9-9e83-40f3-af28-f4803647ad0b
 role: User
-source-git-commit: 4bf8c616965718426efe880865acb0e5054b6a31
-workflow-type: ht
-source-wordcount: '164'
-ht-degree: 100%
+source-git-commit: 8054aab28c405f6a9dd24306a086c78069032999
+workflow-type: tm+mt
+source-wordcount: '167'
+ht-degree: 92%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 100%
 
 >[!CONTEXTUALHELP]
 >id="workspace_treemap_button"
->title="Treemap"
+>title="Baumkarte"
 >abstract="Erstellen Sie eine Treemap-Visualisierung, um hierarchische Daten (mit Baumstruktur) mit verschachtelten Rechtecken anzuzeigen."
 
 <!-- markdownlint-enable MD034 -->
@@ -49,8 +49,8 @@ Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Visualisierung
 >[!MORELIKETHIS]
 >
 >[Hinzufügen einer Visualisierung zu einem Panel](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
->[Visualisierungseinstellungen](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
->[Kontextmenü der Visualisierung](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
+>>[Visualisierungseinstellungen](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
+>>[Kontextmenü der Visualisierung](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
 >
 
 

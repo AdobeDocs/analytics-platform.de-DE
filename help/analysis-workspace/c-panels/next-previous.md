@@ -1,19 +1,17 @@
 ---
-description: Ein Panel, das die nächsten oder vorherigen Dimensionselemente für eine bestimmte Dimension anzeigt.
-title: Panel „Nächstes oder vorheriges Objekt“
+description: Erfahren Sie, wie Sie das Bedienfeld Nächstes oder vorheriges Element verwenden, das die nächsten oder vorherigen Dimensionselemente für eine bestimmte Dimension anzeigt.
+title: Bedienfeld Nächstes oder vorheriges Element
 feature: Panels
 role: User, Admin
 exl-id: a5f6ce97-6720-4129-9ece-e2e834289d45
-source-git-commit: c94e97723a4ed30e675144e02196c93016b13235
-workflow-type: ht
-source-wordcount: '457'
-ht-degree: 100%
+source-git-commit: 8054aab28c405f6a9dd24306a086c78069032999
+workflow-type: tm+mt
+source-wordcount: '465'
+ht-degree: 94%
 
 ---
 
 # Panel „Nächstes oder vorheriges Objekt“ {#next-or-previous-item-panel}
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="workspace_nextorpreviousitem_button"
@@ -25,9 +23,6 @@ ht-degree: 100%
 >title="Nächstes oder vorheriges Objekt"
 >abstract="Analysieren Sie, von wo Besuchende am häufigsten gekommen sind oder wohin sie als Nächstes gehen. Geben Sie die Dimension, das Dimensionselement, die Richtung und den Container an, der für die Visualisierung verwendet werden soll."
 
-
-
-<!-- markdownlint-enable MD034 -->
 
 >[!BEGINSHADEBOX]
 

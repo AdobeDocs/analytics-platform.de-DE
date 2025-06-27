@@ -1,13 +1,13 @@
 ---
-description: Fügt benutzerdefinierten Text zu Ihrem Arbeitsbereich hinzu.
+description: Erfahren Sie, wie Sie Ihrem Analysis Workspace-Projekt benutzerdefinierten Text hinzufügen.
 title: Text
 feature: Visualizations
 exl-id: 51cb6b57-682f-4475-b829-75def725be43
 role: User
-source-git-commit: 75d45cd6a2149bb44949ec6e0f3808ea4a6995f5
+source-git-commit: 8054aab28c405f6a9dd24306a086c78069032999
 workflow-type: tm+mt
-source-wordcount: '285'
-ht-degree: 86%
+source-wordcount: '290'
+ht-degree: 83%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 86%
 
 >[!BEGINSHADEBOX]
 
-_In diesem Artikel wird die Visualisierung „Text“ in_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics** beschrieben._<br/>_Unter [Text](https://experienceleague.adobe.com/de/docs/analytics/analyze/analysis-workspace/visualizations/text) finden Sie die Version dieses Artikels für_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics**._
+_In diesem Artikel wird die Visualisierung „Text“ in_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics** beschrieben._<br/>_Unter [Text](https://experienceleague.adobe.com/de/docs/analytics/analyze/analysis-workspace/visualizations/text) finden Sie die Version dieses Artikels für_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**._
 
 >[!ENDSHADEBOX]
 

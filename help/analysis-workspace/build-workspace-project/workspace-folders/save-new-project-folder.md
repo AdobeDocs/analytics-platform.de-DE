@@ -1,32 +1,36 @@
 ---
-description: Informationen zum Speichern von Projekten in Ordnern in Workspace
+description: Erfahren Sie, wie Sie ein neues Projekt in einem Ordner in Analysis Workspace speichern.
 keywords: Analysis Workspace
-title: Speichern von Projekten in Ordnern
+title: Speichern eines neuen Projekts in einem Ordner
 feature: Workspace Basics
 exl-id: d08a558b-a2bb-4002-b179-437e1885c6c4
 role: User
-source-git-commit: 6cf6fa977a2c5dee28dcfe6f9446d294a9d9fd0f
+source-git-commit: c4c8c0ff5d46ec455ca5333f79d6d8529f4cb87d
 workflow-type: tm+mt
-source-wordcount: '93'
-ht-degree: 100%
+source-wordcount: '35'
+ht-degree: 5%
 
 ---
 
 # Speichern eines neuen Projekts in einem Ordner
 
-<!-- Is this article still needed -->
+Weitere Informationen finden [ unter ](../save-projects.md#save)Projekte speichern“.
+
+<!-- Is this article still needed; removed from TOC
 
 
-Um ein neues Projekt in einem bestimmten Ordner zu speichern, wählen Sie den Ordnernamen im Dialogfenster „Projekt speichern“ aus.
+To save a new project to a specific folder, select the folder name in the Save project dialogue window.
 
-1. Erstellen Sie in Workspace ein neues Projekt.
+1. In Workspace, create a new project.
 
-   ![Das Fenster „Freiformtabelle“ in dem Sie ein neues Projekt erstellen können.](/help/analysis-workspace/build-workspace-project/assets/save-to-folder1.png)
+    ![The Freeform table window where you can create a new project.](/help/analysis-workspace/build-workspace-project/assets/save-to-folder1.png)
 
-1. Wählen Sie im Dialogfeld **Projekt** > **Speichern** einen Ordnernamen aus dem Dropdown-Menü „Ordner“.
+1. In the **Project** > **Save** dialogue, select a folder name from the Folder drop-down menu.
 
-   ![Das Fenster „Speichern“, in dem Sie Ihr neues Projekt in einem Ordner speichern.](/help/analysis-workspace/build-workspace-project/assets/save-to-folder2.png)
+    ![The Save window where you save your new project to a folder.](/help/analysis-workspace/build-workspace-project/assets/save-to-folder2.png)
 
-1. Klicken Sie auf **Speichern**.
+1. Click **Save**.
 
-   Das Projekt wird im ausgewählten Ordner gespeichert.
+    The project is saved in the selected folder.
+
+-->

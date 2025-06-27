@@ -1,13 +1,13 @@
 ---
-description: Die Bereichsvisualisierung ist wie ein Liniendiagramm, aber mit einem farbigen Bereich unterhalb der Linie.
-title: Bereich und Bereich gestapelt
+description: Erfahren Sie mehr über die Visualisierung „Bereich“ und „Bereich gestapelt“.
+title: Bereich (gestapelt)
 feature: Visualizations
 exl-id: d9662b29-fc41-4074-8cf6-031202994ece
 role: User
-source-git-commit: 0859a35bb0f34800b970ff256bc9b740ffe424c9
-workflow-type: ht
-source-wordcount: '204'
-ht-degree: 100%
+source-git-commit: 8054aab28c405f6a9dd24306a086c78069032999
+workflow-type: tm+mt
+source-wordcount: '195'
+ht-degree: 94%
 
 ---
 
@@ -64,6 +64,6 @@ Verwenden Sie die Option **[!UICONTROL 100 % gestapelt]** in den ![Einstellung](
 >[!MORELIKETHIS]
 >
 >[Hinzufügen einer Visualisierung zu einem Panel](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
->[Visualisierungseinstellungen](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
->[Kontextmenü der Visualisierung](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
+>>[Visualisierungseinstellungen](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
+>>[Kontextmenü der Visualisierung](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
 >

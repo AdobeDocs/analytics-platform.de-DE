@@ -1,50 +1,56 @@
 ---
-description: Erfahren Sie, wie Sie Projekte aus Ordnern umbenennen
+description: Erfahren Sie, wie Sie Projekte aus Analysis Workspace entfernen.
 keywords: Analysis Workspace
-title: Entfernen von Projekten aus Ordnern
+title: Projekte entfernen
 feature: Workspace Basics
 exl-id: 9c3523b1-afa2-4a68-a432-972032680fc7
 role: User
-source-git-commit: 6cf6fa977a2c5dee28dcfe6f9446d294a9d9fd0f
+source-git-commit: 9506cc42e80f25f68a891f21f38d60fb4d364588
 workflow-type: tm+mt
-source-wordcount: '157'
-ht-degree: 100%
+source-wordcount: '27'
+ht-degree: 7%
 
 ---
 
-# Löschen von Projekten
-
-<!-- Is this article still needed -->
+# Projekte entfernen
 
 
-## Verschieben eines Projekts {#move-project-in-folder}
+Informationen [ Entfernen von Projekten aus Analysis Workspace finden ](../freeform-overview.md#actions) unter „Aktionen in Projekten verwalten“.
 
-Sie können Projekte von einem Ordner in einen anderen, von Ihnen erstellen Ordner verschieben.
 
-1. Klicken Sie in einem Projektordner auf die Auslassungspunkte **…** neben dem Projektnamen.
+<!-- Is this article still needed; not in the TOC anymore
 
-   ![Die Optionen der Auslassungspunkte.](/help/analysis-workspace/build-workspace-project/assets/move1.png)
 
-1. Wählen Sie **Verschieben nach** und wählen Sie dann einen Ordner aus, in den das Projekt verschoben werden soll.
+## Move a project {#move-project-in-folder}
 
-   ![Das Fenster „Standort auswählen“.](/help/analysis-workspace/build-workspace-project/assets/move-select-location.png)
+You can move projects from one folder to another folder that you created.
 
-1. Klicken Sie auf **Verschieben**.
+1. From within a project folder, select the **...** ellipsis next to the project name.
 
-   ![Klicken auf „Verschieben“.](/help/analysis-workspace/build-workspace-project/assets/move-click-move.png)
+    ![The ellipsis options.](/help/analysis-workspace/build-workspace-project/assets/move1.png)
 
-   Eine Meldung bestätigt, dass das Projekt verschoben wurde.
+1. Select **Move to** and then select a folder to move the project to.
 
-   ![Die Bestätigungsmeldung zum Verschieben. ](/help/analysis-workspace/build-workspace-project/assets/move-project-moved.png)
+    ![The Select Location window.](/help/analysis-workspace/build-workspace-project/assets/move-select-location.png)
 
-## Löschen eines Projekts aus einem Projektordner {#delete-project-in-folder}
+1. Click **Move**.
 
-Wenn Sie ein Projekt aus einem Ordner löschen, wird es nach 180 Tagen aus dem System bereinigt. In den 180 Tagen nach dem Löschen können Benutzende weiterhin über die Web-Oberfläche auf ein gelöschtes Projekt zugreifen, wenn sie über eine direkte URL zu dem Projekt verfügen.
+    ![Click Move.](/help/analysis-workspace/build-workspace-project/assets/move-click-move.png)
 
-1. Klicken Sie in einem Projektordner auf die Auslassungspunkte **…** neben dem Projektnamen.
+    A toast confirms that the project was moved.
 
-   ![Die Optionen der Auslassungspunkte.](/help/analysis-workspace/build-workspace-project/assets/move1.png)
+    ![The move confirmation toast. ](/help/analysis-workspace/build-workspace-project/assets/move-project-moved.png)
 
-1. Wählen Sie **Löschen** aus.
+## Delete a project from a project folder {#delete-project-in-folder}
 
-1. In einem Bestätigungsfenster werden Sie aufgefordert, den Löschvorgang zu bestätigen.
+When you delete a project from a folder, it gets purged from the system after 180 days. During the 180 days after deletion, users can still access a deleted project via the Web interface if they have a direct URL to the project.
+
+1. From within a project folder, select the **...** ellipsis next to the project name.
+
+    ![The ellipsis options.](/help/analysis-workspace/build-workspace-project/assets/move1.png)
+
+1. Select **Delete**.
+
+1. A confirmation window asks you to confirm the deletion.
+
+-->

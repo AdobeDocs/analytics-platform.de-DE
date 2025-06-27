@@ -1,13 +1,13 @@
 ---
-description: Überblick über die Journey-Arbeitsfläche
-title: Journey-Arbeitsfläche
+description: Erfahren Sie, wie Sie die Journey-Arbeitsfläche in Analysis Workspace verwenden.
+title: Journey Canvas - Übersicht
 feature: Visualizations
 role: User
 exl-id: be03c3b2-8faf-47b8-b3ab-e953202bf488
-source-git-commit: 770320a0b16d26e0755203a3524b000db30cac82
+source-git-commit: 8054aab28c405f6a9dd24306a086c78069032999
 workflow-type: tm+mt
-source-wordcount: '1988'
-ht-degree: 98%
+source-wordcount: '1996'
+ht-degree: 97%
 
 ---
 
@@ -51,7 +51,7 @@ ht-degree: 98%
 
 >[!BEGINSHADEBOX]
 
-_In diesem Artikel wird die Visualisierung „Journey-Arbeitsflächen“ in_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics** beschrieben.<br/>Es gibt keine entsprechende Visualisierung in **Adobe Analytics**._
+_In diesem Artikel wird die Visualisierung „Journey-Arbeitsflächen“ in_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics** beschrieben.<br/>Es gibt keine entsprechende Visualisierung in **Adobe Analytics**._
 
 >[!ENDSHADEBOX]
 

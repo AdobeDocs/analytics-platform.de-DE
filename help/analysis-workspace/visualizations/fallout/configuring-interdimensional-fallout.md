@@ -1,12 +1,12 @@
 ---
-description: Mit Fallout in Analysis Workspace können Sie Dimensionen und Metriken als Touchpoints in Trichtern und Workflows kombinieren. Fallouts bieten Ihnen mehr Flexibilität bei der Definition der Benutzerschritte, die Sie untersuchen möchten.
+description: Erfahren Sie, wie Sie mit der Fallout-Visualisierung in Analysis Workspace Dimensionen und Metriken als Touchpoints in Trichtern und Workflows kombinieren können. Erfahren Sie, wie dies mehr Flexibilität bei der Definition der Benutzerschritte bietet, die Sie untersuchen möchten.
 title: Interdimensionaler Fallout
 feature: Visualizations
 exl-id: 7975324c-4efc-4c36-bc83-dcde85d2febc
 role: User
-source-git-commit: 37158b4e614435724205c505f322c1d7a434c35d
+source-git-commit: c4c8c0ff5d46ec455ca5333f79d6d8529f4cb87d
 workflow-type: tm+mt
-source-wordcount: '220'
+source-wordcount: '226'
 ht-degree: 7%
 
 ---

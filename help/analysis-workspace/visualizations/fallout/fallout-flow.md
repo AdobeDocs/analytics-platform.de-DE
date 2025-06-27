@@ -1,13 +1,13 @@
 ---
-description: Erfahren Sie mehr über Fallout-Berichte und -Visualisierungen.
-title: Informationen zu Fallout-Berichten und -Visualisierungen
+description: Erfahren Sie, wie Sie die Fallout-Visualisierung in Analysis Workspace verwenden.
+title: Fallout-Übersicht
 feature: Visualizations
 exl-id: c4338821-64ac-4345-828a-15af18a95ea6
 role: User
-source-git-commit: 770320a0b16d26e0755203a3524b000db30cac82
+source-git-commit: c4c8c0ff5d46ec455ca5333f79d6d8529f4cb87d
 workflow-type: tm+mt
-source-wordcount: '357'
-ht-degree: 95%
+source-wordcount: '358'
+ht-degree: 92%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 95%
 
 >[!BEGINSHADEBOX]
 
-_In diesem Artikel wird die Visualisierung Fallout in_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics** beschrieben._<br/>_Unter [Fallout](https://experienceleague.adobe.com/de/docs/analytics/analyze/analysis-workspace/visualizations/fallout/fallout-flow) finden Sie die Version dieses Artikels für_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics**._
+_In diesem Artikel wird die Visualisierung Fallout in_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics** beschrieben._<br/>_Unter [Fallout](https://experienceleague.adobe.com/de/docs/analytics/analyze/analysis-workspace/visualizations/fallout/fallout-flow) finden Sie die Version dieses Artikels für_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**._
 
 >[!ENDSHADEBOX]
 
@@ -43,7 +43,7 @@ Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Erstellen eine
 
 Mit Visualisierungen vom Typ „Fallout“ können Sie:
 
-* eine Gegenüberstellung zweier verschiedener Segmente im gleichen Bericht vornehmen
+* Nehmen Sie eine Gegenüberstellung zweier verschiedener Segmente im gleichen Bericht vor.
 * Trichterschritte (Touchpoints) per Drag-and-Drop bewegen (und neu anordnen).
 * Werte aus unterschiedlichen Dimensionen und Metriken mischen und kombinieren.
 * Einen multidimensionalen Fallout-Bericht erstellen.

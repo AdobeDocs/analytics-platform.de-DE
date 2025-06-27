@@ -1,26 +1,26 @@
 ---
-description: Erfahren Sie mehr über Anwendungsbeispiele für die Kohortenanalyse.
+description: Erfahren Sie mehr über einige Anwendungsbeispiele für die Kohortenanalyse.
 keywords: Analysis Workspace
 title: Anwendungsfälle für die Kohortenanalyse
 feature: Visualizations
 exl-id: f559d4b4-b682-4306-b111-22acb26fe0a0
 role: User
-source-git-commit: 0101986bb86c49776a044f754d912dc1bcb9422c
+source-git-commit: c4c8c0ff5d46ec455ca5333f79d6d8529f4cb87d
 workflow-type: tm+mt
-source-wordcount: '973'
-ht-degree: 52%
+source-wordcount: '974'
+ht-degree: 51%
 
 ---
 
-# [!UICONTROL Kohortenanalyse] Anwendungsfälle
+# Anwendungsfälle für die Kohortenanalyse
 
-In diesem Artikel werden einige Anwendungsbeispiele für die [!UICONTROL Kohortenanalyse] beschrieben.
+In diesem Artikel werden einige Anwendungsbeispiele für die Kohortenanalyse beschrieben.
 
 ## Anwendungsfall: Mobile-App-Interaktion
 
 Angenommen Sie möchten herausfinden, wie Benutzer, die Ihre Anwendung installieren, im Laufe der Zeit damit interagieren. Installieren sie die Anwendung, benutzen sie aber nie? Benutzen sie die Anwendung eine Zeit lang und hören dann auf? Oder bleiben Sie die ganze Zeit dabei?
 
-Sie können eine [!UICONTROL Kohortenanalyse] über sechs Monate erstellen:
+Sie können eine Kohortenanalyse über sechs Monate erstellen.
 
 **Granularität**: Monatlich, von Januar 2015 bis Juni 2015
 
