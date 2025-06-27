@@ -1,17 +1,17 @@
 ---
-description: Erfahren Sie mehr über die Flussfunktion, die Kundenpfade durch Ihre Websites und Programme anzeigt.
+description: Erfahren Sie, wie Sie die Flussvisualisierung in einer Analysis Workspace verwenden.
 title: Flussübersicht
 feature: Visualizations
 exl-id: 2ef325d9-1d82-46c9-86e3-6b2332548823
 role: User
-source-git-commit: 0101986bb86c49776a044f754d912dc1bcb9422c
+source-git-commit: 8054aab28c405f6a9dd24306a086c78069032999
 workflow-type: tm+mt
-source-wordcount: '326'
-ht-degree: 96%
+source-wordcount: '325'
+ht-degree: 92%
 
 ---
 
-# Fluss {#flow}
+# Flussübersicht {#flow}
 
 <!-- markdownlint-disable MD034 -->
 
@@ -30,7 +30,7 @@ ht-degree: 96%
 
 >[!BEGINSHADEBOX]
 
-_In diesem Artikel wird die Visualisierung „Fluss“ in_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics** beschrieben._<br/>_Unter [Fluss](https://experienceleague.adobe.com/de/docs/analytics/analyze/analysis-workspace/visualizations/flow/flow) finden Sie die Version dieses Artikels für_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics**._
+_In diesem Artikel wird die Visualisierung „Fluss“ in_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics** beschrieben._<br/>_Unter [Fluss](https://experienceleague.adobe.com/de/docs/analytics/analyze/analysis-workspace/visualizations/flow/flow) finden Sie die Version dieses Artikels für_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**._
 
 >[!ENDSHADEBOX]
 
