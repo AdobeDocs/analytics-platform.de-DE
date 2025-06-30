@@ -6,7 +6,7 @@ feature: Workspace Basics
 exl-id: 9075518e-54fe-49a6-9601-aa9468187b8f
 solution: Customer Journey Analytics
 role: User
-source-git-commit: c4c8c0ff5d46ec455ca5333f79d6d8529f4cb87d
+source-git-commit: 9056b8b172ae7a2267bf12de4b2355d1a1364b32
 workflow-type: tm+mt
 source-wordcount: '1490'
 ht-degree: 97%
@@ -19,7 +19,7 @@ Mit Analysis Workspace können Sie schnell Analysen erstellen, um Erkenntnisse z
 
 >[!BEGINSHADEBOX]
 
-Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Analysis Workspace – Übersicht](https://video.tv.adobe.com/v/35525/?quality=12&learn=on&captions=ger){target="_blank"} finden Sie ein Demovideo.
+Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Analysis Workspace – Übersicht](https://video.tv.adobe.com/v/26266/?quality=12&learn=on){target="_blank"} finden Sie ein Demovideo.
 
 {{videoaa}}
 
@@ -113,7 +113,7 @@ Eine Übersicht über die verfügbaren Menüs finden Sie in den nachfolgenden Ta
 | **[!UICONTROL Datumsbereich erstellen]** | **[!UICONTROL *Umschalt+Befehlstaste+D *]** | **[!UICONTROL *Umschalt+Strg+D *]** | Erstellen eines neuen [Datumsbereichs](/help/components/date-ranges/overview.md). |
 | **[!UICONTROL Anmerkung erstellen...]** | **[!UICONTROL *Umschalt+Befehlstaste+O *]** | **[!UICONTROL *Umschalt+Strg+O *]** | Erstellen einer neuen [Anmerkung](/help/components/annotations/overview.md) |
 | **[!UICONTROL Zielgruppe erstellen...]** | **[!UICONTROL *Umschalt+Befehlstaste+U *]** | **[!UICONTROL *Umschalt+Strg+U *]** | Erstellen einer neuen [Zielgruppe](/help/components/audiences/audiences-overview.md) |
-| **[!UICONTROL Komponenten aktualisieren]** | **[!UICONTROL *Umschalt+Wahltaste+R *]** | **[!UICONTROL *Umschalt+Alt+R *]** | Aktualisieren der Komponenten im Projekt. |
+| **[!UICONTROL Komponenten aktualisieren]** | **[!UICONTROL *Wahltaste+Umschalt+R *]** | **[!UICONTROL *Umschalt+Alt+R *]** | Aktualisieren der Komponenten im Projekt. |
 
 | **[!UICONTROL Freigeben]** | Mac-Tastaturbefehl | Windows-Tastaturbefehl | Beschreibung |
 |---|---|---|---|

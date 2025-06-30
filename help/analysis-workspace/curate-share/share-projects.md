@@ -1,14 +1,14 @@
 ---
-description: Projektfreigabe und Projektrollen in Workspace
+description: Erfahren Sie, wie Sie Projekte in Analysis Workspace freigeben.
 keywords: Analysis Workspace-Freigabe
-title: Freigeben von Projekten
+title: Projekte freigeben
 feature: Curate and Share
 exl-id: ac4ed73a-e890-46cc-be08-4ccedf66b47d
 role: User
-source-git-commit: a462e736ddcdf1a5ea84a85eea2c2ce0b8a34fb0
+source-git-commit: 084c995658a5cf698d253f1c15229f621a8c55d5
 workflow-type: tm+mt
-source-wordcount: '2092'
-ht-degree: 98%
+source-wordcount: '2089'
+ht-degree: 97%
 
 ---
 
@@ -40,16 +40,16 @@ Jede [Kuration](curate.md), die Sie vor der Freigabe vorgenommen haben, wird bei
 
 >[!BEGINSHADEBOX]
 
-Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Projektfreigabe in Analysis Workspace](https://video.tv.adobe.com/v/40031/?quality=12&learn=on&captions=ger){target="_blank"} finden Sie ein Demovideo.
+Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Projektfreigabe in Analysis Workspace](https://video.tv.adobe.com/v/36207/?quality=12&learn=on){target="_blank"} finden Sie ein Demovideo.
 
 {{videoaa}}
 
 >[!ENDSHADEBOX]
 
 
-## Freigeben für Customer Journey Analytics-Benutzende und -Gruppen in Ihrer Organisation {#Add}
+## Für Benutzende und Gruppen in Ihrer Organisation freigeben {#Add}
 
-Sie können ein Projekt für bestehende Customer Journey Analytics-Benutzende oder -Gruppen in Ihrer Organisation freigeben. Wenn Sie ein Projekt wie in diesem Abschnitt beschrieben freigeben, müssen die Benutzenden, für die Sie es freigeben, bereits über ein Customer Journey Analytics-Konto verfügen.
+Sie können ein Projekt für bestehende Analysis Workspace-Benutzende oder -Gruppen in Ihrer Organisation freigeben. Wenn Sie ein Projekt wie in diesem Abschnitt beschrieben freigeben, müssen die Benutzenden, für die Sie es freigeben, bereits über ein Customer Journey Analytics-Konto verfügen.
 
 Sie können eine bestimmte Rolle für Benutzende oder Gruppen freigeben oder einen Link freigeben.
 
@@ -161,7 +161,7 @@ Sie können jetzt den [schreibgeschützten Zugriff](/help/analysis-workspace/cur
 
 >[!BEGINSHADEBOX]
 
-Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Für alle freigeben](https://video.tv.adobe.com/v/3452469/?quality=12&learn=on&captions=ger){target="_blank"} finden Sie ein Demovideo.
+Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Für alle freigeben](https://video.tv.adobe.com/v/3420093/?quality=12&learn=on){target="_blank"} finden Sie ein Demovideo.
 
 >[!ENDSHADEBOX]
 
@@ -216,7 +216,7 @@ Sie können die eingebetteten Komponenten freigeben, die Teil Ihres Projekts sin
 
 >[!BEGINSHADEBOX]
 
-Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Freigeben von eingebetteten Komponenten in Analysis Workspace](https://video.tv.adobe.com/v/327497/?quality=12&learn=on&captions=ger){target="_blank"} finden Sie ein Demovideo.
+Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Freigeben von eingebetteten Komponenten in Analysis Workspace](https://video.tv.adobe.com/v/24713/?quality=12&learn=on){target="_blank"} finden Sie ein Demovideo.
 
 {{videoaa}}
 

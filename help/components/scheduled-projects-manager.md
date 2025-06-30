@@ -4,7 +4,7 @@ title: Metriken
 feature: Components
 exl-id: fa7c5a0f-4983-40ee-b9c1-3e10aab3fc28
 role: User
-source-git-commit: 9cdfa94ad04d3d1ce43e591fa9219146152862dc
+source-git-commit: 70daf2251576bc3b473e63b3bb7c48f2d16dbffe
 workflow-type: tm+mt
 source-wordcount: '790'
 ht-degree: 42%
@@ -44,7 +44,7 @@ Sie können mit ![ColumnSetting](/help/assets/icons/ColumnSetting.svg) konfiguri
 
 Suchen Sie mithilfe von „Suchen![ nach einem geplanten Projekt](/help/assets/icons/Search.svg). Sie können auch im Bedienfeld Filter sehen, ob Filter angewendet werden. Um einen Filter zu entfernen, wählen Sie ![CrossSize](/help/assets/icons/CrossSize75.svg) für einen Filter aus. Um alle Filter zu entfernen, wählen Sie **[!UICONTROL Alle löschen]** aus.
 
-Um ein geplantes Projekt zu bearbeiten, wählen Sie den Titel des geplanten Projekts aus. Aktualisieren Sie die Zeitplandetails **[!UICONTROL Dialogfeld „Geplantes Projekt]** bearbeiten“. Siehe [Senden von Dateien an andere](../analysis-workspace/export/t-schedule-report.md) für weitere Details.
+Um ein geplantes Projekt zu bearbeiten, wählen Sie den Titel des geplanten Projekts aus. Aktualisieren Sie die Zeitplandetails **[!UICONTROL Dialogfeld „Geplantes Projekt]** bearbeiten“. Siehe [Senden von Dateien an andere](../analysis-workspace/curate-share/t-schedule-report.md) für weitere Details.
 
 ![Geplantes Projekt bearbeiten](assets/edit-scheduled-project.png)
 

@@ -5,8 +5,8 @@ exl-id: f9b0b3c2-7c88-4bef-af33-0d309cafe799
 solution: Customer Journey Analytics
 feature: Components
 role: User
-source-git-commit: 38be838fccf896a12da3fbadac50e578081312ba
-workflow-type: ht
+source-git-commit: 70daf2251576bc3b473e63b3bb7c48f2d16dbffe
+workflow-type: tm+mt
 source-wordcount: '913'
 ht-degree: 100%
 
@@ -28,7 +28,7 @@ Sie können die folgenden Komponenten verwalten:
 * [Datumsbereiche](date-ranges/create.md): Passen Sie die von Analysis Workspace vorgeschlagenen Datumsbereiche an und präzisieren Sie diese.
 * [Anmerkungen](/help/components/annotations/overview.md): Informieren Sie andere Benutzerinnen und Benutzer in Ihrem Unternehmen über die kontextbezogene Bedeutung von Daten und Erkenntnissen.
 * [Intelligente Warnhinweise](/help/components/c-intelligent-alerts/intelligent-alerts.md): Diese ermöglichen es Ihnen, sich über geänderte Prozentsätze oder bestimmte Datenpunkte benachrichtigen zu lassen.
-* [Geplante Projekte](/help/analysis-workspace/export/t-schedule-report.md#scheduled-projects-manager): Verwalten Sie Ihre geplanten Projekte.
+* [Geplante Projekte](/help/analysis-workspace/curate-share/t-schedule-report.md#scheduled-projects-manager): Verwalten Sie Ihre geplanten Projekte.
 * [Voreinstellungen](/help/analysis-workspace/user-preferences.md): Verwalten Sie die Voreinstellungen für Analysis Workspace.
 * [Zielgruppen](/help/components/audiences/audiences-overview.md): Erstellen und veröffentlichen Sie Zielgruppen aus Customer Journey Analytics auf der [Echtzeit-Kundendatenplattform](https://experienceleague.adobe.com/de/docs/experience-platform/profile/home) in Experience Platform zu Targeting- und Personalisierungszwecken.
 * [Exporte](/help/components/exports/manage-export-locations.md): Verwalten Sie Ihr Exportkonto und Ihre Speicherorte.

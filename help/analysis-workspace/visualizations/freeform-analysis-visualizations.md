@@ -5,10 +5,10 @@ title: Visualisierungen - Übersicht
 feature: Visualizations
 exl-id: ca9e0561-7a54-487a-9fdc-3bcf34f9bdb1
 role: User
-source-git-commit: c4c8c0ff5d46ec455ca5333f79d6d8529f4cb87d
+source-git-commit: 9c05319ceacb7287af7f15cfe56b8048a718559d
 workflow-type: tm+mt
 source-wordcount: '1622'
-ht-degree: 95%
+ht-degree: 92%
 
 ---
 
@@ -139,11 +139,11 @@ Verwenden Sie das Kontextmenü (verfügbar über eine alternative Auswahl, z. B
 | Option | Beschreibung |
 | --- | --- |
 | **[!UICONTROL Kopierte Visualisierung einfügen]** | Fügen Sie eine kopierte Visualisierung an einer anderen Stelle innerhalb des Projekts oder in ein ganz anderes Projekt ein. |
-| **[!UICONTROL Daten in die Zwischenablage kopieren]** | Kopieren Sie Daten aus der Visualisierung in die Zwischenablage. |
-| **[!UICONTROL Auswahl in die Zwischenablage kopieren]** | Zum Kopieren der Auswahl aus der Visualisierung in die Zwischenablage. |
-| **[!UICONTROL Objekte als CSV herunterladen (*Dimensionsname*)]** | Laden Sie die Dimensionselemente (bis maximal 50.000) der Visualisierung auf Ihr lokales Gerät herunter. Maximal 50.000 Dimensionselemente für die ausgewählte Dimension. |
+| **[!UICONTROL Daten in die Zwischenablage kopieren]** | [Kopieren Sie Daten](/help/analysis-workspace/export/download-send.md#copy-to-clipboard) aus der Visualisierung in die Zwischenablage. |
+| **[!UICONTROL Auswahl in die Zwischenablage kopieren]** | [Kopieren Sie die ](/help/analysis-workspace/export/download-send.md#copy-to-clipboard) aus der Visualisierung in die Zwischenablage. |
+| **[!UICONTROL Objekte als CSV herunterladen (*Dimensionsname*)]** | [Laden Sie die Dimensionselemente ](/help/analysis-workspace/export/download-send.md#download-items-as-csv) (bis zu maximal 50.000) der Visualisierung auf Ihr lokales Gerät herunter. Maximal 50.000 Dimensionselemente für die ausgewählte Dimension. |
 | **[!UICONTROL Visualisierung kopieren]** | Kopieren Sie die Visualisierung, sodass Sie sie an einer anderen Stelle innerhalb des Projekts oder in ein ganz anderes Projekt einfügen können. |
-| **[!UICONTROL Daten als CSV herunterladen]** | Laden Sie die angezeigten Daten der Visualisierung auf Ihr lokales Gerät herunter. |
+| **[!UICONTROL Daten als CSV herunterladen]** | [Laden Sie die angezeigten Daten ](/help/analysis-workspace/export/download-send.md#download-as-csv) Visualisierung auf Ihr lokales Gerät herunter. |
 | **[!UICONTROL Vollständige Tabelle exportieren]** | Exportieren Sie die vollständige Tabelle an bestimmte Cloud-Speicherorte. Weitere Informationen finden Sie unter [Exportieren von Customer Journey Analytics-Berichten in die Cloud](../export/export-cloud.md) |
 | **[!UICONTROL Visualisierung duplizieren]** | Erstellen Sie ein exaktes Duplikat der Visualisierung. |
 | **[!UICONTROL Beschreibung bearbeiten]** | Fügen Sie Text zur Beschreibung der Visualisierung hinzu (oder bearbeiten Sie ihn). Siehe [Text](text.md). |

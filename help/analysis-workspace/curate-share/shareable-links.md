@@ -5,10 +5,10 @@ title: Erstellen von freigebbaren Links
 exl-id: 6cfb5161-08e1-4583-ae79-4600b5531929
 feature: Curate and Share
 role: User
-source-git-commit: 9cdfa94ad04d3d1ce43e591fa9219146152862dc
+source-git-commit: 084c995658a5cf698d253f1c15229f621a8c55d5
 workflow-type: tm+mt
 source-wordcount: '369'
-ht-degree: 58%
+ht-degree: 53%
 
 ---
 
@@ -39,7 +39,7 @@ Sie können auch einen Link zu einem bestimmten Teil eines Projekts freigeben, z
 
 ![Das Dropdown-Menü, nachdem Sie mit der rechten Maustaste auf die Kopfzeile mit dem hervorgehobenen Link Visualisierung abrufen geklickt haben.](assets/get-visualization-link.png)
 
-## Links in Inhaltsverzeichnissen verwenden {#TOC}
+## Verwenden von Links in einem Inhaltsverzeichnis {#TOC}
 
 Ein Tipp für die Nutzung der verschiedenen Link-Optionen besteht darin, immer ein Inhaltsverzeichnis am Anfang Ihres Workspace-Projekts einzufügen. Im Inhaltsverzeichnis können Sie Links zu anderen relevanten Projekten, spezifischen Bedienfeldern und spezifischen Visualisierungen erstellen. Dies erleichtert dem Empfänger des Projekts die Navigation.
 

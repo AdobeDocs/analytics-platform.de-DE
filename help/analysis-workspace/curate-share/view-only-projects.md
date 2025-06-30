@@ -1,14 +1,14 @@
 ---
-description: Schreibgeschützte Projekte in Workspace
+description: Machen Sie sich mit der Erfahrung schreibgeschützter Projekte in Analysis Workspace vertraut.
 keywords: Schreibgeschützte Projekte
 title: Schreibgeschützte Projekte
 feature: Curate and Share
 exl-id: 2bc26444-aeea-4695-92a5-a2b45ac18e0d
 role: User
-source-git-commit: a462e736ddcdf1a5ea84a85eea2c2ce0b8a34fb0
+source-git-commit: 084c995658a5cf698d253f1c15229f621a8c55d5
 workflow-type: tm+mt
-source-wordcount: '298'
-ht-degree: 37%
+source-wordcount: '303'
+ht-degree: 35%
 
 ---
 
@@ -43,10 +43,10 @@ Zu den wichtigen aktivierten Interaktionen in einem schreibgeschützten Projekt 
 
 | Bereich | Aktivierte Interaktionen |
 | --- | --- |
-| Freiformtabellen | <ul><li>Paginierung und Sortierung</li><li>Bewegen</li><li>Zellauswahlen, die verknüpfte Visualisierungen aktualisieren</li><li>Über das Kontextmenü > Visualisierungs-Link abrufen</li><li>Über das Kontextmenü > In Zwischenablage kopieren</li></ul> |
-| Visualisierungen | <ul><li>Klicken zum Aktivieren/Deaktivieren der Legende</li><li>Bewegen</li><li>Über das Kontextmenü > Visualisierungs-Link abrufen</li><li>Reduzieren/Erweitern</li><li>Fluss – Flussknoten erweitern</li><li>Karte – Zoomen</li></ul> |
-| Bedienfelder | <ul><li>Interaktive Dropdown-Segmente</li><li>Über das Kontextmenü > Bereichslink abrufen</li><li>Reduzieren/Erweitern</li></ul> |
-| Projekt | <ul><li>Alle Infosymbole überprüfen</li><li>Projektmenü – Neu, Öffnen, Als Landingpage festlegen, Aktualisieren, CSV/PDF herunterladen, eingeschränkte Projektinfo und Einstellungen</li><li>Menü „Freigeben“ – Projekt-Link abrufen, Datei jetzt senden</li><li>Menü „Hilfe“ – Alle Aktionen mit Ausnahme der Optionen für Tipps und Debugger</li></ul> |
+| **Freiformtabellen** | <li>Paginierung und Sortierung</li><li>Bewegen</li><li>Zellauswahlen, die verknüpfte Visualisierungen aktualisieren</li><li>Über das Kontextmenü > Visualisierungs-Link abrufen</li><li>Über das Kontextmenü > In Zwischenablage kopieren</li> |
+| **Visualisierungen** | <li>Klicken zum Aktivieren/Deaktivieren der Legende</li><li>Bewegen</li><li>Über das Kontextmenü > Visualisierungs-Link abrufen</li><li>Reduzieren/Erweitern</li><li>Fluss – Flussknoten erweitern</li><li>Karte – Zoomen</li></ul> |
+| **Bedienfelder** | <li>Interaktive Dropdown-Segmente</li><li>Über das Kontextmenü > Bereichslink abrufen</li><li>Reduzieren/Erweitern</li> |
+| **Projekt** | <li>Alle Infosymbole überprüfen</li><li>Projektmenü – Neu, Öffnen, Als Landingpage festlegen, Aktualisieren, CSV/PDF herunterladen, eingeschränkte Projektinfo und Einstellungen</li><li>Menü „Freigeben“ – Projekt-Link abrufen, Datei jetzt senden</li><li>Menü „Hilfe“ – Alle Aktionen mit Ausnahme der Optionen für Tipps und Debugger</li> |
 
 
 ## Für alle freigeben
