@@ -6,14 +6,14 @@ feature: Curate and Share
 mini-toc-levels: 3
 exl-id: 36b5133a-2cd3-4cf1-a6fa-93a02dba276a
 role: User
-source-git-commit: 084c995658a5cf698d253f1c15229f621a8c55d5
+source-git-commit: 6cbf18496585fc973414b79b5957f918a16c0459
 workflow-type: tm+mt
-source-wordcount: '792'
+source-wordcount: '793'
 ht-degree: 50%
 
 ---
 
-# Senden und planen
+# Senden und Planen von Projekten
 
 Sie können Customer Journey Analytics-Projekte als Dateien per E-Mail an ausgewählte Benutzer senden. Sie können Dateien ad hoc senden oder Projekte so konfigurieren, dass sie nach einem Zeitplan gesendet werden. Projekte können im CSV- oder PDF-Format gesendet werden.
 
