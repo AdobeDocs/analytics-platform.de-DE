@@ -5,7 +5,7 @@ title: Exportieren von Projektdaten
 feature: Curate and Share
 exl-id: 3d467050-4bf0-4bdb-b7d2-eba67fbd526d
 role: User
-source-git-commit: 70daf2251576bc3b473e63b3bb7c48f2d16dbffe
+source-git-commit: c91ee21a3d4e20e3bdaeb75f2011ede6eee6cba0
 workflow-type: tm+mt
 source-wordcount: '297'
 ht-degree: 55%
@@ -35,7 +35,7 @@ Es stehen verschiedene Methoden zum Exportieren aus Analysis Workspace zur Verf�
 | Exportmethode | Verwenden Sie diese Methode, wenn Sie… |
 |---------|----------|
 | [Auf Ihre Workstation herunterladen](/help/analysis-workspace/export/download-send.md) | <li>Projekte auf Ihre persönliche Workstation herunterladen.</li><li>Nur Ad-hoc-Daten herunterladen (nicht geplant).</li> <li>Es können maximal 50.000 Zeilen heruntergeladen werden.</li> <!--true? Are there 2 different options to download to your workstation?--> <!-- is this emailing it? --> |
-| [An andere Benutzende senden](/help/analysis-workspace/curate-share/t-schedule-report.md) | <li>Exportierte Customer Journey Analytics-Daten per E-Mail an andere Benutzende in Ihrer Organisation senden.</li><li>Senden Sie die E-Mail ad hoc oder nach einem Zeitplan.</li> <li>Binden Sie maximal 50.000 Zeilen in die E-Mail ein.</li> <!--true?--> |
+| [An andere Benutzende senden](/help/analysis-workspace/export/t-schedule-report.md) | <li>Exportierte Customer Journey Analytics-Daten per E-Mail an andere Benutzende in Ihrer Organisation senden.</li><li>Senden Sie die E-Mail ad hoc oder nach einem Zeitplan.</li> <li>Binden Sie maximal 50.000 Zeilen in die E-Mail ein.</li> <!--true?--> |
 | [In eine Cloud-Anwendung exportieren](/help/analysis-workspace/export/export-cloud.md) | <li>In einen Cloud-Speicherort exportieren, z. B. <ul><li>Adobe Experience Platform Data Landing Zone</li><li>Google Cloud Platform</li><li>Microsoft Azure</li><li>Amazon S3</li><li>Snowflake</li></ul></li><li>Daten ad hoc oder nach einem Zeitplan exportieren</li><li>Größere Mengen an Customer Journey Analytics-Daten speichern.</li><li>Vollständige Tabellen speichern, die Tausende oder Millionen von Zeilen enthalten.<!-- What other things? Wiki talks about things that aren't even possible in Data Warehouse. What are they? --> </li> |
 
 {style="table-layout:auto"}
