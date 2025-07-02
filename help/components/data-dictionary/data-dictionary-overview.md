@@ -7,7 +7,7 @@ exl-id: 8e4b8169-7c7f-4a58-a6c6-70efb0c86ce8
 source-git-commit: f940e5cba11df0ff158093a503213ff1641b1c5d
 workflow-type: tm+mt
 source-wordcount: '569'
-ht-degree: 82%
+ht-degree: 89%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 82%
 >[!CONTEXTUALHELP]
 >id="component_datadictionary"
 >title="Datenwörterbuch"
->abstract="Das Datenwörterbuch hilft Benutzenden und Admins, die Komponenten in ihrer Customer Journey Analytics-Umgebung zu verfolgen und besser zu verstehen. <br/>Customer Journey Analytics-Administratoren sind dafür verantwortlich, Informationen über jede Komponente im Datenwörterbuch zu kuratieren."
+>abstract="Das Datenwörterbuch hilft sowohl Benutzenden als auch Admins, den Überblick zu behalten und die Komponenten in ihrer Customer Journey Analytics-Umgebung besser zu verstehen. <br/>Customer Journey Analytics-Admins sind dafür verantwortlich, im Datenwörterbuch Informationen über jede Komponente zu kuratieren."
 
 <!-- markdownlint-enable MD034 -->
 
