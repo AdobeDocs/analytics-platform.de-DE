@@ -21,7 +21,7 @@ Mit Datumsbereichskomponenten können Sie die Kalendereinstellungen für das Pan
 
 +++ View a video illustrating use of calendar and date ranges
 
->[!VIDEO](https://video.tv.adobe.com/v/24136?format=jpeg)
+>[!VIDEO](https://video.tv.adobe.com/v/327347?format=jpeg&captions=ger)
 
 {{videoaa}}
 +++
