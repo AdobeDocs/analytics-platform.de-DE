@@ -14,7 +14,7 @@ ht-degree: 49%
 
 # Verwenden von Marketing-Kanal-Dimensionen
 
-Wenn Ihr Unternehmen den [Analytics-Quell-Connector](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/analytics) verwendet, um Report Suite-Daten in Customer Journey Analytics zu importieren, können Sie in Customer Journey Analytics eine Verbindung konfigurieren, um Berichte über die Dimensionen des Marketing-Kanals zu erstellen.
+Wenn Ihr Unternehmen den [Analytics-Quell-Connector](https://experienceleague.adobe.com/de/docs/experience-platform/sources/connectors/adobe-applications/analytics) verwendet, um Report Suite-Daten in Customer Journey Analytics zu importieren, können Sie in Customer Journey Analytics eine Verbindung konfigurieren, um Berichte über die Dimensionen des Marketing-Kanals zu erstellen.
 
 >[!IMPORTANT]
 >
@@ -24,8 +24,8 @@ Wenn Ihr Unternehmen den [Analytics-Quell-Connector](https://experienceleague.ad
 
 ## Voraussetzungen
 
-* Report Suite-Daten müssen bereits mit dem [Analytics-Quell-Connector“ in ](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/analytics) Adobe Experience Platform importiert worden sein. Andere Datenquellen werden nicht unterstützt, da Marketing-Kanäle auf Verarbeitungsregeln in einer Analytics Report Suite angewiesen sind.
-* Verarbeitungsregeln für den Marketing-Kanal müssen bereits eingerichtet sein. Siehe [Verarbeitungsregeln für Marketing-Kanäle](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/marketing-channels/c-rules) im Adobe Analytics-Komponentenhandbuch.
+* Report Suite-Daten müssen bereits mit dem [Analytics-Quell-Connector“ in ](https://experienceleague.adobe.com/de/docs/experience-platform/sources/connectors/adobe-applications/analytics) Adobe Experience Platform importiert worden sein. Andere Datenquellen werden nicht unterstützt, da Marketing-Kanäle auf Verarbeitungsregeln in einer Analytics Report Suite angewiesen sind.
+* Verarbeitungsregeln für den Marketing-Kanal müssen bereits eingerichtet sein. Siehe [Verarbeitungsregeln für Marketing-Kanäle](https://experienceleague.adobe.com/de/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/marketing-channels/c-rules) im Adobe Analytics-Komponentenhandbuch.
 
 ## Marketing-Kanal: Schema-Elemente
 
@@ -33,8 +33,8 @@ Nachdem Sie Analytics Source Connector für eine gewünschte Report Suite einger
 
 1. [Erstellen Sie eine Verbindung](/help/connections/create-connection.md) die einen Datensatz enthält, der auf dem Analytics-Quell-Connector basiert.
 2. [Erstellen Sie eine Datenansicht](/help/data-views/create-dataview.md) mit folgenden Dimensionen:
-   * **`channel.typeAtSource`**: entspricht der [Marketing-Kanal](https://experienceleague.adobe.com/en/docs/analytics/components/dimensions/marketing-channel)-Dimension.
-   * **`channel._id`**: entspricht dem [Marketing-Kanal-Detail](https://experienceleague.adobe.com/en/docs/analytics/components/dimensions/marketing-detail).
+   * **`channel.typeAtSource`**: entspricht der [Marketing-Kanal](https://experienceleague.adobe.com/de/docs/analytics/components/dimensions/marketing-channel)-Dimension.
+   * **`channel._id`**: entspricht dem [Marketing-Kanal-Detail](https://experienceleague.adobe.com/de/docs/analytics/components/dimensions/marketing-detail).
 3. Weisen Sie jeder Dimension das gewünschte Attributionsmodell und die gewünschte Persistenz zu. Wenn Sie sowohl die First Touch- als auch die Last Touch-Dimension verwenden möchten, ziehen Sie jede Marketing-Kanal-Dimension mehrmals in den Komponentenbereich. Weisen Sie jeder Dimension das gewünschte Attributionsmodell und die gewünschte Persistenz zu. Adobe empfiehlt außerdem, jeder Dimension einen Anzeigenamen zu geben, um die Verwendung in Arbeitsbereich zu vereinfachen.
 4. Erstellen Sie die Datenansicht.
 
@@ -52,7 +52,7 @@ Die Dimensionen Ihres Marketing-Kanals stehen jetzt in Analysis Workspace zur Ve
 
 >[!NOTE]
 >
->Um die Effektivität von Marketing-Kanälen für Attribution und Customer Journey Analytics zu maximieren, [ einige ](https://experienceleague.adobe.com/en/docs/analytics/components/marketing-channels/mchannel-best-practices) überarbeitete Best Practices zur Verfügung.
+>Um die Effektivität von Marketing-Kanälen für Attribution und Customer Journey Analytics zu maximieren, [ einige ](https://experienceleague.adobe.com/de/docs/analytics/components/marketing-channels/mchannel-best-practices) überarbeitete Best Practices zur Verfügung.
 
 Die Marketing-Kanal-Einstellungen funktionieren bei Platform-Daten und Report Suite-Daten unterschiedlich. Beachten Sie die folgenden Unterschiede beim Einrichten von Marketing-Kanälen für Customer Journey Analytics:
 
@@ -77,5 +77,5 @@ Da sich die Architektur von Adobe Experience Platform von einer Adobe Analytics 
 * Vergewissern Sie sich, dass die oben aufgeführten Unterschiede in der Architektur Ihren Vergleich nicht beeinträchtigen. Zu diesen Unterschieden gehören das Entfernen von Kanälen, die den Letztkontaktkanal nicht überschreiben, und das Entfernen von Regelkriterien, die der erste Treffer eines Besuchs (Sitzung) sind.
 * Vergewissern Sie sich, dass Ihre Verbindung dieselbe Report Suite wie Adobe Analytics verwendet. Wenn Ihre Customer Journey Analytics-Verbindung mehrere Report Suites mit eigenen Verarbeitungsregeln für Marketing-Kanäle enthält, gibt es keine einfache Möglichkeit, sie mit Adobe Analytics zu vergleichen. Sie müssten dann für jede Report Suite eine separate Verbindung für den Datenvergleich erstellen.
 * Vergewissern Sie sich, dass Sie die gleichen Datumsbereiche vergleichen und dass die Zeitzoneneinstellung in Ihrer Datenansicht mit der Zeitzone der Report Suite übereinstimmt.
-* Verwenden Sie beim Anzeigen von Report Suite-Daten ein benutzerspezifisches Attributionsmodell. Verwenden Sie beispielsweise die Dimension [Marketing-Kanal](https://experienceleague.adobe.com/en/docs/analytics/components/dimensions/marketing-channel) für Metriken mit nicht standardmäßigem Attributionsmodell. Adobe rät davon ab, die Standarddimensionen [First Touch-Kanal](https://experienceleague.adobe.com/en/docs/analytics/components/dimensions/first-touch-channel) oder [Last Touch-Kanal](https://experienceleague.adobe.com/en/docs/analytics/components/dimensions/last-touch-channel) zu vergleichen, da sie auf Attributionen beruhen, die in der Report Suite erfasst wurden. Customer Journey Analytics verlässt sich nicht auf die Attributionsdaten einer Report Suite, sondern wird beim Ausführen eines Customer Journey Analytics-Berichts berechnet.
+* Verwenden Sie beim Anzeigen von Report Suite-Daten ein benutzerspezifisches Attributionsmodell. Verwenden Sie beispielsweise die Dimension [Marketing-Kanal](https://experienceleague.adobe.com/de/docs/analytics/components/dimensions/marketing-channel) für Metriken mit nicht standardmäßigem Attributionsmodell. Adobe rät davon ab, die Standarddimensionen [First Touch-Kanal](https://experienceleague.adobe.com/de/docs/analytics/components/dimensions/first-touch-channel) oder [Last Touch-Kanal](https://experienceleague.adobe.com/de/docs/analytics/components/dimensions/last-touch-channel) zu vergleichen, da sie auf Attributionen beruhen, die in der Report Suite erfasst wurden. Customer Journey Analytics verlässt sich nicht auf die Attributionsdaten einer Report Suite, sondern wird beim Ausführen eines Customer Journey Analytics-Berichts berechnet.
 * Einige Metriken bieten aufgrund von Architektur-Unterschieden zwischen Report Suite-Daten und Platform-Daten keinen angemessenen Vergleich. Beispiele sind Besuche/Sitzungen, Personen/Personen und Vorfälle/Ereignisse.
