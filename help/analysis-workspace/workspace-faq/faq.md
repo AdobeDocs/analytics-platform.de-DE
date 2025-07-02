@@ -1,12 +1,12 @@
 ---
-description: Weitere Informationen zu häufig gestellten Fragen zu Workspace und Tipps zur Fehlerbehebung.
+description: Häufig gestellte Fragen zu Workspace
 title: Häufig gestellte Fragen
 feature: FAQ
 exl-id: d7233b26-9887-4b71-ad46-3c6ffe27d904
 role: User
-source-git-commit: f230283c69b2d8339d7bb2e3b170de54b9497135
+source-git-commit: e07b901f66a59aba1a7a517443eec73387d23c57
 workflow-type: tm+mt
-source-wordcount: '231'
+source-wordcount: '226'
 ht-degree: 100%
 
 ---

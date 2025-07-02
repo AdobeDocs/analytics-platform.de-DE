@@ -1,13 +1,13 @@
 ---
 title: Erstellen von Anmerkungen
-description: Erstellen von Anmerkungen in Workspace.
+description: Erstellen von Anmerkungen in Analysis Workspace.
 feature: Components
 exl-id: 68fef9b3-dc47-4e56-bea6-d1c4c39fb51b
 role: User, Admin
-source-git-commit: 21935a0e9e976cd680fb036bb47f4248aaa66890
+source-git-commit: f3c9a000ae5baa19cb5a6cf0e0343de3a9685b56
 workflow-type: tm+mt
-source-wordcount: '873'
-ht-degree: 86%
+source-wordcount: '874'
+ht-degree: 73%
 
 ---
 
@@ -41,7 +41,7 @@ Um die Anmerkung zu definieren, verwenden Sie den [[!UICONTROL Anmerkungsgenerat
 >[!CONTEXTUALHELP]
 >id="components_annotations_details"
 >title="Anmerkungsdetails"
->abstract="Mit Anmerkungen können Sie Ihrer Organisation kontextbezogene Datennuancen und Einblicke effektiv übermitteln. Durch sie können Sie Kalenderereignisse an bestimmte Dimensionen/Metriken binden. "
+>abstract="Anmerkungen ermöglichen es Ihnen, kontextbezogene Informationen und Einblicke zu Daten effektiv an Ihr Unternehmen weiterzugeben. Mit Anmerkungen können Sie Kalenderereignisse an bestimmte Dimensionen und Metriken binden."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -50,7 +50,7 @@ Um die Anmerkung zu definieren, verwenden Sie den [[!UICONTROL Anmerkungsgenerat
 >[!CONTEXTUALHELP]
 >id="components_annotations_scope"
 >title="Anwendungsbereich"
->abstract="Mit der Option „Umfang“ können Sie anpassen, welche Daten mit einer Anmerkung versehen werden. Berechnete Metriken und Segmente übernehmen nicht automatisch Anmerkungen, die auf die in ihren Definitionen verwendeten Komponenten angewendet werden. Sie können zu einer vorhandenen Anmerkung im Abschnitt „Umfang“ neue berechnete Metriken hinzufügen. Neue Segmente erfordern eine neue Anmerkung."
+>abstract="Der Umfang ermöglicht es Ihnen anzupassen, welche Daten mit Anmerkungen versehen werden. Berechnete Metriken und Segmente übernehmen nicht automatisch Anmerkungen, die auf die in ihren Definitionen verwendeten Komponenten angewendet werden. Sie können zu einer vorhandenen Anmerkung im Abschnitt „Umfang“ neue berechnete Metriken hinzufügen. Neue Segmente erfordern eine neue Anmerkung."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -62,11 +62,11 @@ Das Dialogfeld **[!UICONTROL Anmerkungserstellung]** wird zum Erstellen neuer od
 
 >[!TAB Anmerkungserstellung]
 
-![Fenster „Anmerkungsdetails“ mit Feldern und Optionen, die im nächsten Abschnitt beschrieben werden.](assets/annotation-builder.png)
+![Fenster „Anmerkungsdetails“ mit Feldern und Optionen, die im nächsten Abschnitt beschrieben werden.](assets/annotation-builder.png){zoomable="yes"}
 
->[!TAB Erstellen/Bearbeiten einer Anmerkung]
+>[!TAB  Anmerkung bearbeiten]
 
-![Fenster „Anmerkungsdetails“ mit Feldern und Optionen, die im nächsten Abschnitt beschrieben werden.](assets/create-edit-annotation.png)
+![Fenster „Anmerkungsdetails“ mit Feldern und Optionen, die im nächsten Abschnitt beschrieben werden.](assets/create-edit-annotation.png){zoomable="yes"}
 
 >[!ENDTABS]
 
@@ -79,9 +79,9 @@ Das Dialogfeld **[!UICONTROL Anmerkungserstellung]** wird zum Erstellen neuer od
    | **[!UICONTROL Titel]** ![Erforderlich](/help/assets/icons/Required.svg) | Benennen Sie die Regel, beispielsweise mit `Needs further investigation`. |
    | **[!UICONTROL Beschreibung]** | Geben Sie eine Beschreibung für die Anmerkung ein, z. B. `We never expected such a fluctuation in numbers.`. |
    | **[!UICONTROL Tags]** | Organisieren Sie die Anmerkung, indem Sie ein oder mehrere Tags erstellen oder anwenden. Beginnen Sie mit der Eingabe, um nach vorhandenen Tags zu suchen, die Sie auswählen können. Oder drücken Sie die **[!UICONTROL Eingabetaste]**, um ein neues Tag hinzuzufügen. Wählen Sie ![CrossSize75](/help/assets/icons/CrossSize75.svg) aus, um ein Tag zu entfernen. |
-   | **[!UICONTROL Anwendungsdatum]** ![Erforderlich](/help/assets/icons/Required.svg) | Wählen Sie das Datum oder den Datumsbereich aus, das bzw. der vorhanden sein muss, damit die Anmerkung sichtbar ist. Wenn Sie eine Anmerkung mithilfe des Tastaturbefehls erstellen, gibt die Anmerkung standardmäßig einen Datumsbereich für nur diesen Tag vor. Wenn Sie eine Anmerkung mithilfe einer Auswahl in einer Visualisierung erstellen, gibt die Anmerkung standardmäßig einen Datumsbereich basierend auf dem Bedienfeld vor, zu dem die Visualisierung gehört. |
+   | **[!UICONTROL Anwendungsdatum]** ![Erforderlich](/help/assets/icons/Required.svg) | Wählen Sie das Datum oder den Datumsbereich aus, das bzw. der vorhanden sein muss, damit die Anmerkung sichtbar ist. Wenn Sie eine Anmerkung mithilfe des Tastaturbefehls erstellen, gibt die Anmerkung standardmäßig einen Datumsbereich für nur diesen Tag vor. Wenn Sie eine Anmerkung mit einer Auswahl in einer Visualisierung erstellen, wird die Anmerkung standardmäßig auf den Datumsbereich basierend auf dem Datumsbereich für das Bedienfeld, zu dem die Visualisierung gehört, gesetzt. |
    | **[!UICONTROL Farbe]** | Wenden Sie eine Farbe auf die Anmerkung an. Die Anmerkung wird im Projekt mit der ausgewählten Farbe angezeigt. Mit Farben können Sie Anmerkungen kategorisieren, z. B. Feiertage, externe Ereignisse, Tracking-Probleme usw. |
-   | **[!UICONTROL Anwendungsbereich]** | Ziehen Sie die Metriken, die die Anmerkung auslösen, per Drag-and-Drop aus dem Panel mit den Komponenten in das entsprechende Feld. Zum Beispiel Personen, Sitzungen und Ereignisse. Ziehen Sie dann alle Dimensionen oder Segmente, die als Segmente dienen, per Drag-and-Drop aus dem Komponentenbereich, um zu bestimmen, ob die Anmerkung angezeigt werden soll oder nicht. Wenn Sie keinen Bereich angeben, gilt die Anmerkung für alle Ihre Daten. <br/>Es gibt zwei Optionen:<ul><li>**[!UICONTROL Zumindest eine dieser Metriken ist vorhanden]**: Ziehen Sie per Drag-and-Drop bis zu 10 Metriken in das Feld, die jeweils auslösen sollen, dass die Anmerkung angezeigt wird.<br/>Beispielsweise hat die Umsatzmetrik die Erfassung von Daten für einen bestimmten Datumsbereich gestoppt. Ziehen Sie die Umsatzmetrik in dieses Feld.</li><li>**[!UICONTROL Mit allen diesen Segmenten]**: Ziehen Sie bis zu 10 Dimensionen oder Segmente per Drag-and-Drop in dieses Segment, unabhängig davon, ob die Anmerkung angezeigt wird.</li></ul><p><p>**Hinweis:** Anmerkungen, die auf eine Komponente angewendet werden, die anschließend als Teil einer berechneten Metrik oder Segmentdefinition verwendet wird, übernehmen die Anmerkung NICHT automatisch. Die gewünschte berechnete Kennzahl muss auch dem Abschnitt „Umfang“ hinzugefügt werden, damit die Anmerkung angezeigt wird. Es sollte jedoch eine neue Anmerkung für jedes Segment erstellt werden, das mit denselben Informationen versehen werden soll. Beispiel: Sie wenden eine Anmerkung auf [!UICONTROL Bestellungen] an einem bestimmten Tag an. Anschließend verwenden Sie [!UICONTROL Bestellungen] in einer berechneten Metrik für denselben Datumsbereich. Die neue berechnete Metrik zeigt die Anmerkung für Bestellungen nicht automatisch an. Fügen Sie die berechnete Metrik außerdem zum Abschnitt „Umfang“ hinzu, damit die Anmerkung angezeigt wird. |
+   | **[!UICONTROL Anwendungsbereich]** | Ziehen Sie die Metriken, die die Anmerkung auslösen, per Drag-and-Drop aus dem Panel mit den Komponenten in das entsprechende Feld. Zum Beispiel „Personen“, „Sitzungen“ und „Ereignisse“. Ziehen Sie dann alle Dimensionen oder Segmente, die als Segmente dienen, per Drag-and-Drop aus dem Komponentenbereich, um zu bestimmen, ob die Anmerkung angezeigt werden soll oder nicht. Wenn Sie keinen Bereich angeben, gilt die Anmerkung für alle Ihre Daten. <br/>Es gibt zwei Optionen:<ul><li>**[!UICONTROL Zumindest eine dieser Metriken ist vorhanden]**: Ziehen Sie per Drag-and-Drop bis zu 10 Metriken in das Feld, die jeweils auslösen sollen, dass die Anmerkung angezeigt wird.<br/>Die Umsatzmetrik hat beispielsweise die Erfassung von Daten für einen bestimmten Datumsbereich eingestellt. Ziehen Sie die Umsatzmetrik in dieses Feld.</li><li>**[!UICONTROL Mit allen diesen Segmenten]**: Ziehen Sie bis zu 10 Dimensionen oder Segmente per Drag-and-Drop in dieses Segment, unabhängig davon, ob die Anmerkung angezeigt wird.</li></ul><p><p>**Hinweis:** Anmerkungen, die auf eine Komponente angewendet werden, die anschließend als Teil einer berechneten Metrik oder Segmentdefinition verwendet wird, übernehmen die Anmerkung NICHT automatisch. Die gewünschte berechnete Kennzahl muss auch dem Abschnitt „Umfang“ hinzugefügt werden, damit die Anmerkung angezeigt wird. Es sollte jedoch eine neue Anmerkung für jedes Segment erstellt werden, das mit denselben Informationen versehen werden soll. Beispiel: Sie wenden eine Anmerkung auf [!UICONTROL Bestellungen] an einem bestimmten Tag an. Anschließend verwenden Sie [!UICONTROL Bestellungen] in einer berechneten Metrik für denselben Datumsbereich. Die neue berechnete Metrik zeigt die Anmerkung für Bestellungen nicht automatisch an. Fügen Sie die berechnete Metrik außerdem zum Abschnitt „Umfang“ hinzu, damit die Anmerkung angezeigt wird. |
    | **[!UICONTROL Auf alle Datenansichten anwenden]** | Standardmäßig gilt die Anmerkung für die ursprüngliche Datenansicht. Wenn Sie dieses Kontrollkästchen aktivieren, können Sie die Anmerkung für alle Datenansichten im Unternehmen gelten lassen. |
 
    {style="table-layout:auto"}

@@ -1,13 +1,13 @@
 ---
-title: Verwalten von Datumsbereichen
-description: Freigeben, Umbenennen oder Löschen von Datumsbereichen in Analysis Workspace.
+title: Datumsbereiche
+description: Informationen zum Verwalten von Datumsbereichen in Analysis Workspace.
 feature: Calendar
 exl-id: 694758c4-d740-4fd7-9fb0-3ff7f6b25a3d
 role: User
-source-git-commit: 6a279ac39e6b94200ff93ac1a3796d202e6349c7
+source-git-commit: 1891f73f4326a178b293e7c3763d0d1dbc000a25
 workflow-type: tm+mt
-source-wordcount: '607'
-ht-degree: 32%
+source-wordcount: '603'
+ht-degree: 30%
 
 ---
 
@@ -27,7 +27,7 @@ Der Datumsbereichs-Manager verfügt über die folgenden Elemente der Benutzerobe
 
 ### Liste der Datumsbereiche
 
-Die Datumsbereichsliste zeigt alle Datumsbereiche an. Die Liste umfasst die folgenden Spalten:
+In der ➊ Datumsbereiche werden alle Datumsbereiche angezeigt. Die Liste umfasst die folgenden Spalten:
 
 | Spalte | Beschreibung |
 | --- | --- | 
@@ -44,7 +44,7 @@ Verwenden Sie ![Spalteneinstellung](/help/assets/icons/ColumnSetting.svg), um di
 
 ### Aktionsleiste
 
-Über die Aktionsleiste können Sie Aktionen für Datumsbereiche durchführen Die Aktionsleiste ermöglicht die folgenden Aktionen:
+Sie können Aktionen für Datumsbereiche mithilfe der Aktionsleiste ➋. Die Aktionsleiste ermöglicht die folgenden Aktionen:
 
 | Symbol | Aktion | Beschreibung |
 |:---:|---|---|
@@ -60,11 +60,11 @@ Verwenden Sie ![Spalteneinstellung](/help/assets/icons/ColumnSetting.svg), um di
 
 ### Aktive Filterleiste
 
-Die Filterleiste ➌ zeigt die aktiven Filter an (sofern vorhanden). Mit ![XGröße75](/help/assets/icons/CrossSize75.svg) können Sie schnell einen Filter entfernen. Wenn mehr als ein Filter angegeben ist, verwenden Sie **[!UICONTROL Alle entfernen]**, um alle Filter zu entfernen.
+Die Filterleiste zeigt ➌ die aktiven Filter an (falls vorhanden). Mit ![XGröße75](/help/assets/icons/CrossSize75.svg) können Sie schnell einen Filter entfernen. Wenn mehr als ein Filter angegeben ist, verwenden Sie **[!UICONTROL Alle entfernen]**, um alle Filter zu entfernen.
 
-### Bedienfeld „Filter“
+### Panel „Filter“
 
-Sie können Datumsbereiche mithilfe des linken Bedienfelds **[!UICONTROL Filter]** filtern. Das Bedienfeld „Filter“ zeigt den Filtertyp und die Anzahl der Datumsbereiche an, die den Filter berücksichtigen. Wählen Sie ![Filter](/help/assets/icons/Filter.svg) aus, um die Anzeige des Bedienfelds „Filter“ umzuschalten.
+Sie können Datumsbereiche mithilfe der **[!UICONTROL des]** Bedienfelds ➍Filter filtern. Das Bedienfeld „Filter“ zeigt den Filtertyp und die Anzahl der Datumsbereiche an, die den Filter berücksichtigen. Wählen Sie ![Filter](/help/assets/icons/Filter.svg) aus, um die Anzeige des Bedienfelds „Filter“ umzuschalten.
 
 So filtern Sie die Filterliste:
 
@@ -92,7 +92,7 @@ Sie können einen Datumsbereich auf zwei Arten bearbeiten:
 
 * Verwenden Sie in einem Workspace-Projekt das Symbol [Komponenteninformationen](/help/components/use-components-in-workspace.md#component-info) aus.
 
-* Wählen Sie in [[!UICONTROL &#x200B; Liste &#x200B;]Datumsbereiche](#date-ranges-list) den Titel des Datumsbereichs aus.
+* Wählen Sie in [[!UICONTROL  Liste ]Datumsbereiche](#date-ranges-list) den Titel des Datumsbereichs aus.
 
 Sie verwenden den [Generator für Datumsbereiche](/help/components/date-ranges/create.md#date-range-builder), um den Datumsbereich zu bearbeiten.
 

@@ -1,13 +1,13 @@
 ---
-description: Unterstützende Funktionen für die Barrierefreiheit in Analysis Workspace
+description: Erfahren Sie mehr über die Funktionen zur Unterstützung der Barrierefreiheit in Analysis Workspace.
 title: Barrierefreiheit in Analysis Workspace
 feature: FAQ
 exl-id: 1616c625-8914-4ede-815d-e8d62e796ea5
 role: User
-source-git-commit: dca8b99dad97e939e8021a681cb21ab14ca1ff87
+source-git-commit: e07b901f66a59aba1a7a517443eec73387d23c57
 workflow-type: tm+mt
-source-wordcount: '542'
-ht-degree: 100%
+source-wordcount: '545'
+ht-degree: 94%
 
 ---
 
@@ -30,7 +30,7 @@ Barrierefreiheit bezieht sich darauf, Produkte für Menschen mit visuellen, akus
 Die Navigation in [!UICONTROL Analysis Workspace] funktioniert von oben nach unten und von links nach rechts. Die folgenden Navigationselemente erleichtern die Zugänglichkeit:
 
 * Die **[!UICONTROL Tab]**-Taste ermöglicht Markierungskurzbefehle, mit denen Sie zwischen größeren Abschnitten in Workspace wechseln können. Im linken Panel können Sie mit der **[!UICONTROL Tab]**-Taste auch von einer ziehbaren Option zur nächsten wechseln.
-* Mit ◀︎ und ▶︎ wechseln Sie zwischen einzelnen Elementen, nachdem Sie mit der **[!UICONTROL Tab]**-Taste ein Element hervorgehoben haben.
+* Die ◀︎ und ▶︎ wechseln zwischen einzelnen Elementen, nachdem die **[!UICONTROL Tabulatortaste]** ein Element hervorgehoben hat.
 * Mit der Taste **[!UICONTROL F6]** navigieren Sie zum ersten Panel im Projekt und können zwischen den Visualisierungen in diesem Panel wechseln. Anschließend wird zum nächsten Panel im Projekt gewechselt und es wird wiederholt.
 * Es werden Fokusindikatoren angewendet, sodass sehende Tastaturbenutzende einen klaren Hinweis darauf haben, welches Element der Benutzeroberfläche derzeit im Fokus ist. Der Indikator ist ein blauer Rahmen für das Panel, das den Fokus besitzt. Die kürzlich ausgewählte Funktion und die Auswahl innerhalb der Funktion hat einen grauen Hintergrund. In diesem Beispiel wurden kürzlich die [!UICONTROL Komponenten] und die Dimension „Seite“ ausgewählt.
 

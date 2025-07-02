@@ -1,14 +1,14 @@
 ---
-title: Anwendungsfälle für Datenansichten in Customer Journey Analytics
-description: Mehrere Anwendungsfälle, die die Flexibilität und Leistungsfähigkeit von Datenansichten in Customer Journey Analytics zeigen
+title: Anwendungsfälle für Datenansichten
+description: Erfahren Sie mehr über mehrere Anwendungsfälle, die die Flexibilität und Leistungsfähigkeit von Datenansichten in Customer Journey Analytics zeigen
 exl-id: 6ecbae45-9add-4554-8d83-b06ad016fea9
 solution: Customer Journey Analytics
 feature: Data Views
 role: User
-source-git-commit: f0786cfa74453693078c7d30d647a96bf1d98d07
+source-git-commit: 0e9dc47b80db142801a94dcbf31470d99a610949
 workflow-type: tm+mt
-source-wordcount: '1362'
-ht-degree: 33%
+source-wordcount: '1358'
+ht-degree: 30%
 
 ---
 
@@ -35,11 +35,11 @@ Wenn Sie beispielsweise eine Datenansicht erstellen, können Sie eine Metrik [!U
 
 
 1. Ziehen Sie auf **[!UICONTROL Registerkarte]** den **[!UICONTROL Seitentitel]** in den Abschnitt **[!UICONTROL Metriken]** unter [!UICONTROL Enthaltene Komponenten].
-1. Markieren Sie die Metrik, die Sie gerade eingezogen haben, und benennen Sie sie in der **[!UICONTROL Komponenteneinstellungen]** in `Orders` um
+1. Markieren Sie die Metrik, die Sie gerade eingezogen haben, und benennen Sie sie in der `Orders`Komponenteneinstellungen **[!UICONTROL in]** um
 1. Öffnen Sie den **[!UICONTROL Werte einschließen/ausschließen]** und geben Sie Folgendes an:
    1. Aktivieren Sie **[!UICONTROL Einschließen/ausschließen-Werte festlegen]**.
    1. Wählen Sie **[!UICONTROL Wenn alle Kriterien erfüllt sind]** unter **[!UICONTROL Übereinstimmung]** aus.
-   1. `confirmation` angeben. Dieser Text für &quot;**[!UICONTROL _title]** zeigt an, dass diese Seite mit der Bestellung verbunden ist. Nach Überprüfung aller Seitentitel, die diese Kriterien erfüllen, wird für jede Instanz ein `1` gezählt. Das Ergebnis ist eine neue Metrik (keine berechnete Metrik). Eine Metrik mit eingeschlossenen/ausgeschlossenen Werten kann überall dort verwendet werden, wo auch jede andere Metrik verwendet werden kann. Es funktioniert mit Attribution IQ, Segmenten und überall dort, wo Sie Standardmetriken verwenden können.
+   1. `confirmation` angeben. Der Text für &quot;**[!UICONTROL _title]** gibt an, dass diese Seite mit der Bestellung verbunden ist. Nach Überprüfung aller Seitentitel, die diese Kriterien erfüllen, wird für jede Instanz ein `1` gezählt. Das Ergebnis ist eine neue Metrik (keine berechnete Metrik). Eine Metrik mit eingeschlossenen/ausgeschlossenen Werten kann überall dort verwendet werden, wo auch jede andere Metrik verwendet werden kann. Diese Metriken funktionieren mit Attribution, Segmenten und überall dort, wo Sie Standardmetriken verwenden können.
 
    ![Dimension zu Metrik](../assets/string-to-metric.gif){width=100%}
 1. Sie können darüber hinaus ein Zuordnungsmodell für diese Metrik angeben, beispielsweise [!UICONTROL Letztkontakt] mit einem [!UICONTROL Lookback-Fenster] von [!UICONTROL Sitzung].
@@ -60,7 +60,7 @@ Zuvor wurden in Customer Journey Analytics Ganzzahlen automatisch als Metriken b
 
 ## Verwenden numerischer Dimensionen als Metriken in Flussdiagrammen {#numeric}
 
-Sie können eine numerische Dimension verwenden, um Metriken in Ihre [!UICONTROL &#x200B; Flow]-Visualisierung zu übertragen.
+Sie können eine numerische Dimension verwenden, um Metriken in Ihre [!UICONTROL  Flow]-Visualisierung zu übertragen.
 
 1. Ziehen Sie auf der Registerkarte [Komponenten](https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-dataviews/create-dataview) der Datenansichten das Schemafeld [!UICONTROL Marketing-Kanäle] in den Bereich [!UICONTROL Metriken] unter [!UICONTROL Eingeschlossene Komponenten].
 2. In Arbeitsbereich-Berichten zeigt dieser Fluss [!UICONTROL Marketing-Kanäle], die in [!UICONTROL Bestellungen] fließen:
@@ -86,7 +86,7 @@ Mit diesen neuen Einstellungen können Sie nur Umsätze mit höheren Werten anze
 
 ## Verwenden der Einstellung [!UICONTROL Keine Wertoptionen] {#no-value}
 
-Ihr Unternehmen hat möglicherweise Zeit damit verbracht, Ihre Benutzer dahingehend zu schulen, dass sie für Dimensionen in Berichten „Nicht angegeben“ erwarten. Der Standardwert für Dimensionen in Datenansichten ist „Kein Wert“. Sie können jedoch für jede Dimension angeben, wie „Kein Wert“ gemeldet werden soll. Siehe die Optionen Kein Wert für eine Dimensionskomponente.
+Ihr Unternehmen hat möglicherweise Zeit damit verbracht, Ihre Benutzer dahingehend zu schulen, dass sie für Dimensionen in Berichten „Nicht angegeben“ erwarten. Der Standardwert für Dimensionen in Datenansichten lautet *Kein Wert*. Sie können jedoch für jede Dimension angeben, wie „Kein Wert“ gemeldet werden soll. Siehe die Optionen **[!UICONTROL Kein Wert]** für eine Dimensionskomponente.
 
 ![Keine Wertoptionen](../assets/no-value-options.gif){width=100%}
 
@@ -112,11 +112,11 @@ Sie können feststellen, ob eine Sitzung tatsächlich die erste Sitzung für ein
 
 Eine Dimension und zwei Metriken ermöglichen diese Berichte:
 
-* [Sitzungstyp](https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-dataviews/component-reference) - Diese Dimension hat zwei Werte: [!UICONTROL Neu] und [!UICONTROL Wiederkehrend]. Der [!UICONTROL Neu] Zeileneintrag enthält das gesamte Verhalten (d. h. die Metriken für diese Dimension) in einer Sitzung, die als erste Sitzung einer Person definiert wurde. Alles andere ist im Zeileneintrag [!UICONTROL Wiederkehrend] enthalten (vorausgesetzt, dass alles zu einer Sitzung gehört). Wenn Metriken nicht Teil einer Sitzung sind, fallen sie in den Bereich „Nicht zutreffend“ für diese Dimension.
+* [Sitzungstyp](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-reference) - Diese Dimension hat zwei Werte: [!UICONTROL Neu] und [!UICONTROL Wiederkehrend]. Der [!UICONTROL Neu] Zeileneintrag enthält das gesamte Verhalten (d. h. die Metriken für diese Dimension) in einer Sitzung, die als erste Sitzung einer Person definiert wurde. Alles andere ist im Zeileneintrag [!UICONTROL Wiederkehrend] enthalten (vorausgesetzt, dass alles zu einer Sitzung gehört). Wenn Metriken nicht Teil einer Sitzung sind, fallen sie in den Bereich „Nicht zutreffend“ für diese Dimension.
 
-* [Erstmalige ](https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-dataviews/component-reference). Die Metrik Erstmalige Sitzungen ist definiert als die erste Sitzung einer Person innerhalb des Reporting-Fensters.
+* [Erstmalige ](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-reference). Die Metrik Erstmalige Sitzungen ist definiert als die erste Sitzung einer Person innerhalb des Reporting-Fensters.
 
-* [Wiederkehrende Sitzungen](https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-dataviews/component-reference) Die Metrik „Wiederkehrende Sitzungen“ bezeichnet die Anzahl der Sitzungen, bei denen es sich nicht um die Erstsitzung einer Person gehandelt hat.—>
+* [Wiederkehrende Sitzungen](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-reference) Die Metrik „Wiederkehrende Sitzungen“ bezeichnet die Anzahl der Sitzungen, bei denen es sich nicht um die Erstsitzung einer Person gehandelt hat.—>
 
 So greifen Sie auf die Komponenten zu:
 
@@ -127,8 +127,7 @@ So greifen Sie auf die Komponenten zu:
 Neue Sitzungen werden fast immer genau gemeldet. Die einzigen Ausnahmen sind:
 
 * Wenn eine erste Sitzung vor dem 13-monatigen Lookback-Fenster stattgefunden hat. <br/>Diese Sitzung wird ignoriert.
-
-* Wenn eine Sitzung sowohl das Lookback-Fenster als auch den Berichtszeitraum umfasst. <br/>Sie führen beispielsweise einen Bericht vom 1. Juni bis zum 15. Juni 2022 aus. Das Lookback-Fenster würde sich vom 1. Mai 2021 bis zum 31. Mai 2022 erstrecken. Wenn eine Sitzung am 30. Mai 2022 beginnt und am 1. Juni 2022 endet, wird die Sitzung in das Lookback-Fenster aufgenommen. Und alle Sitzungen im Berichtsfenster werden als wiederkehrende Sitzungen gezählt.
+* Wenn eine Sitzung sowohl das Lookback-Fenster als auch das Reporting-Fenster umfasst.<br/>Sie führen beispielsweise einen Bericht vom 1. Juni 2022 bis zum 15. Juni 2022 aus. Das Lookback-Fenster würde sich vom 1. Mai 2021 bis zum 31. Mai 2022 erstrecken. Wenn eine Sitzung am 30. Mai 2022 beginnt und am 1. Juni 2022 endet, wird die Sitzung in das Lookback-Fenster aufgenommen. Und alle Sitzungen im Berichtsfenster werden als wiederkehrende Sitzungen gezählt.
 
 ## Verwenden der Datums- und Datumszeitfunktionen {#date}
 
@@ -142,7 +141,7 @@ Daten nach dem 1. Januar 1900 (mit Ausnahme des 1. Januar 1970) und Datums-/Uhrz
 
 ### Anwendungsfälle mit Datum und Datum/Uhrzeit
 
-* Datum: Ein Reiseunternehmen erfasst in seinen Daten das Abreisedatum für Reisen als Feld. Das Unternehmen möchte einen Bericht, der den [!UICONTROL Wochentag“ für alle &#x200B;] vergleicht, um zu verstehen, welche am beliebtesten sind. Und das Unternehmen möchte dasselbe für den „Monat [!UICONTROL &#x200B; Jahres“ &#x200B;].
+* Datum: Ein Reiseunternehmen erfasst in seinen Daten das Abreisedatum für Reisen als Feld. Das Unternehmen möchte einen Bericht, der den [!UICONTROL Wochentag“ für alle ] vergleicht, um zu verstehen, welche am beliebtesten sind. Und das Unternehmen möchte dasselbe für den „Monat [!UICONTROL  Jahres“ ].
 
 * Datum-Uhrzeit: Ein Einzelhandelsunternehmen erfasst die Uhrzeit für jeden seiner Einkäufe am Verkaufsort (POS) im Geschäft. Das Unternehmen möchte wissen, zu welchen Zeiten in einem bestimmten Monat am meisten eingekauft wird, und zwar nach [!UICONTROL Tageszeit].
 

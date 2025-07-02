@@ -4,10 +4,10 @@ title: Funktionsvergleich von Warnhinweisen Customer Journey Analytics und Adobe
 feature: Workspace Basics
 role: User, Admin
 exl-id: 04e819c4-9fb5-4459-9f8b-40d78385ed90
-source-git-commit: 53069702055e0adf7abf9061c592fb15772ded73
+source-git-commit: 1891f73f4326a178b293e7c3763d0d1dbc000a25
 workflow-type: tm+mt
-source-wordcount: '569'
-ht-degree: 22%
+source-wordcount: '558'
+ht-degree: 23%
 
 ---
 
@@ -15,13 +15,13 @@ ht-degree: 22%
 
 Die Verwendung von Warnhinweisen in Customer Journey Analytics ist nahezu identisch mit der Verwendung von Warnhinweisen in Adobe Analytics. Es gibt jedoch wichtige Unterschiede. In den folgenden Abschnitten werden die wichtigsten Unterschiede beschrieben.
 
-## Stündliche Warnhinweise sind in Customer Journey Analytics nicht verfügbar
+## Stündliche Warnhinweise sind nicht verfügbar
 
-Stündliche Warnhinweise sind in Customer Journey Analytics nicht so verfügbar wie in Adobe Analytics. In Customer Journey Analytics können tägliche, wöchentliche oder monatliche Warnhinweise konfiguriert werden.
+Stündliche Warnhinweise sind **nicht** in Customer Journey Analytics verfügbar, während stündliche Warnhinweise in Adobe Analytics verfügbar sind. In Customer Journey Analytics können tägliche, wöchentliche oder monatliche Warnhinweise konfiguriert werden.
 
-Dies liegt an den verschiedenen Möglichkeiten, Daten in Adobe Experience Platform aufzunehmen, bevor sie in Customer Journey Analytics gemeldet werden. Die Vollständigkeit und Verfügbarkeit von Daten kann nicht zuverlässig innerhalb einer Stunde erreicht werden, sodass stündliche Warnhinweise aufgrund des hohen Potenzials für unvollständige Daten unpraktisch sind. Weitere Informationen finden Sie unter [Datenaufnahmezeiten variieren](#data-ingestion-times-vary-in-customer-journey-analytics).
+Sie haben verschiedene Möglichkeiten, Daten in Adobe Experience Platform aufzunehmen. Daher können die Vollständigkeit und Verfügbarkeit von Daten innerhalb einer Stunde nicht zuverlässig erreicht werden.  Die Flexibilität bei der Datenerfassung bedeutet, dass stündliche Warnhinweise aufgrund des hohen Potenzials für unvollständige Daten unpraktisch sind. Weitere Informationen finden Sie unter [Datenaufnahmezeiten variieren](#data-ingestion-times-vary-in-customer-journey-analytics).
 
-## Die Datenerfassungszeiten variieren in Customer Journey Analytics
+## Die Datenerfassungszeiten variieren
 
 Die Zeit, die erforderlich ist, bevor Daten abgeschlossen sind und für Berichte in Customer Journey Analytics zur Verfügung stehen, variiert je nach Unternehmen.
 
@@ -45,7 +45,7 @@ Weitere Informationen zum Anpassen der Verzögerung und die dabei zu berücksich
 
 <!-- Starting with "However," the rest of this information should probably go into the actual documentation where we document the option to adjust the delay. -->
 
-## Die Option zum Erstellen eines Warnhinweises in Analysis Workspace ist nicht verfügbar
+## Warnhinweis aus Analysis Workspace erstellen nicht verfügbar
 
 In Analysis Workspace in Adobe Analytics können Sie Warnhinweise aus Analysis Workspace auf eine der unten beschriebenen Arten erstellen. In Customer Journey Analytics sind die Optionen zum Erstellen von Warnhinweisen aus Analysis Workspace noch nicht verfügbar. Greifen Sie stattdessen auf die Warnhinweiserstellung zu, wie in [Warnhinweise erstellen](/help/components/c-intelligent-alerts/alert-builder.md) beschrieben.
 
@@ -57,4 +57,4 @@ In Adobe Analytics sind die folgenden Optionen verfügbar:
 
 * Öffnen Sie ein Projekt in Analysis Workspace und wählen Sie **[!UICONTROL Komponenten]** > **[!UICONTROL Warnhinweis erstellen]** aus.
 
-* Öffnen Sie ein Projekt in Analysis Workspace und verwenden Sie dann den folgenden Tastaturbefehl: **[!UICONTROL *Strg *]**+**[!UICONTROL * Umschalt *]** + **[!UICONTROL *a *]**(Windows) oder&#x200B;**[!UICONTROL * cmd *]** + **[!UICONTROL *Umschalt *]**+**[!UICONTROL * a *]** (macOS).
+* Öffnen Sie ein Projekt in Analysis Workspace und verwenden Sie dann den folgenden Tastaturbefehl: **[!UICONTROL *Strg *]**+**[!UICONTROL * Umschalt *]** + **[!UICONTROL *a *]**(Windows) oder**[!UICONTROL * cmd *]** + **[!UICONTROL *Umschalt *]**+**[!UICONTROL * a *]** (macOS).

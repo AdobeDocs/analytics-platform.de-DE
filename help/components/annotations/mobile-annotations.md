@@ -1,19 +1,19 @@
 ---
-title: Anmerkungen zu mobilen Scorecards
+title: Anmerkungen für Mobilgeräte
 description: Erfahren Sie, wie Sie Anmerkungen in mobilen Scorecards einblenden können.
 solution: Customer Journey Analytics
 feature: Components
 exl-id: c0f276b4-3514-4f93-8b6c-6896eb4da6e4
 role: User
-source-git-commit: 0e1654eae336f89e1574afadcd97e26798dc01a1
+source-git-commit: 1891f73f4326a178b293e7c3763d0d1dbc000a25
 workflow-type: tm+mt
-source-wordcount: '309'
-ht-degree: 100%
+source-wordcount: '305'
+ht-degree: 93%
 
 ---
 
 
-# Freigeben von Anmerkungen in mobilen Scorecards
+# Anmerkungen zu mobilen Scorecards
 
 Sie können in Workspace erstellte Anmerkungen in mobilen Scorecards anzeigen. Anmerkungen in mobilen Scorecards ermöglichen es, kontextbezogene Datennuancen und Erkenntnisse zu Ihrer Organisation und Ihren Kampagnen mit anderen zu teilen.
 
@@ -50,4 +50,4 @@ Sie können Anmerkungen mit ![Wiedergabe](/help/assets/icons/PlayCircle.svg) in 
 
 ![Vorschau von Anmerkungen in mobilen Scorecards](assets/annotations-scorecard-preview.png)
 
-Wenn weitere Anmerkungen verfügbar sind, werden unten in der Anmerkung mehrere Punkte (●) angezeigt. Wischen Sie nach links oder rechts, um zwischen Anmerkungen zu wechseln.
+Wenn weitere Anmerkungen verfügbar sind, werden am unteren Rand der Anmerkung mehrere Punkte (●) angezeigt. Wischen Sie nach links oder rechts, um zwischen Anmerkungen zu wechseln.

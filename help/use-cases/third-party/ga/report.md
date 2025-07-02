@@ -5,9 +5,9 @@ exl-id: a7ac3c8d-c0d9-4fc2-80d7-c2b388250586
 solution: Customer Journey Analytics
 feature: Use Cases
 role: Admin
-source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
+source-git-commit: e07b901f66a59aba1a7a517443eec73387d23c57
 workflow-type: tm+mt
-source-wordcount: '682'
+source-wordcount: '681'
 ht-degree: 85%
 
 ---
@@ -56,7 +56,7 @@ Mithilfe einer berechneten Metrik können Sie diese Attribution auf Ihren Web-Um
 
 ![Berechnete Kennzahl](../../assets/calc-metric.png)
 
-Mit Attribution IQ können Sie Ihre Daten auch segmentieren. Sie können die Attribution auch für bestimmte Benutzergruppen anzeigen, z. B. nur für Benutzer, die mehr als ein Gerät verwenden.
+Mit Attribution können Sie Ihre Daten auch segmentieren. Sie können die Attribution auch für bestimmte Benutzergruppen anzeigen, z. B. nur für Benutzer, die mehr als ein Gerät verwenden.
 
 ![Segment](../../assets/filter.png)
 

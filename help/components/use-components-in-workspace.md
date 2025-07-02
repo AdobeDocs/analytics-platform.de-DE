@@ -1,13 +1,13 @@
 ---
-description: Erfahren Sie, wie Sie einem Projekt in Analysis Workspace Komponenten hinzufügen.
+description: Erfahren Sie, wie Sie in Analysis Workspace Komponenten in einem Projekt verwenden
 title: Verwenden von Komponenten in Analysis Workspace
 feature: Components
 role: User
 exl-id: 97bdfb9e-a27e-4a6b-b6cc-21a292398037
-source-git-commit: 38be838fccf896a12da3fbadac50e578081312ba
-workflow-type: ht
+source-git-commit: 1891f73f4326a178b293e7c3763d0d1dbc000a25
+workflow-type: tm+mt
 source-wordcount: '952'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 

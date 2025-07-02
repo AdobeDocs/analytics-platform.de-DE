@@ -1,13 +1,13 @@
 ---
 title: Verwalten von Anmerkungen
-description: Verwalten von Anmerkungen in Workspace.
+description: Verwalten von Anmerkungen in Analysis Workspace.
 feature: Components
 exl-id: 12f2cc2f-477c-4f16-afdd-b0db84725b32
 role: User
-source-git-commit: 6a279ac39e6b94200ff93ac1a3796d202e6349c7
+source-git-commit: 1891f73f4326a178b293e7c3763d0d1dbc000a25
 workflow-type: tm+mt
-source-wordcount: '764'
-ht-degree: 100%
+source-wordcount: '761'
+ht-degree: 91%
 
 ---
 
@@ -31,7 +31,7 @@ Der Anmerkungs-Manager verfügt über die folgenden Benutzeroberflächenelemente
 
 ### Anmerkungsliste
 
-Die Anmerkungsliste ➊ zeigt alle Anmerkungen an, die Ihnen gehören, die für all Ihre Projekte gelten und die für Sie freigegeben wurden. Die Liste umfasst die folgenden Spalten:
+Die ➊ der Anmerkungsliste zeigt alle Anmerkungen an, die Ihnen gehören, die Anmerkungen, die für alle Ihre Projekte gelten, und die Anmerkungen, die für Sie freigegeben wurden. Die Liste umfasst die folgenden Spalten:
 
 | Spalte | Beschreibung |
 | --- | --- | 
@@ -50,7 +50,7 @@ Verwenden Sie ![Spalteneinstellung](/help/assets/icons/ColumnSetting.svg), um di
 
 ### Aktionsleiste
 
-Mit der Aktionsleiste ➋ können Sie Aktionen für Anmerkungen durchführen. Die Aktionsleiste ermöglicht die folgenden Aktionen:
+Sie können Aktionen für Anmerkungen mithilfe der Aktionsleiste ➋. Die Aktionsleiste ermöglicht die folgenden Aktionen:
 
 | Symbol | Aktion | Beschreibung |
 |:--:|---|---|
@@ -65,11 +65,11 @@ Mit der Aktionsleiste ➋ können Sie Aktionen für Anmerkungen durchführen. Di
 
 ### Aktive Filterleiste
 
-Die Filterleiste ➌ zeigt die aktiven Filter an (sofern vorhanden). Mit ![XGröße75](/help/assets/icons/CrossSize75.svg) können Sie schnell einen Filter entfernen. Wenn mehr als ein Filter angegeben ist, können Sie alle Filter mit **[!UICONTROL Alle entfernen]** entfernen.
+Die Filterleiste zeigt ➌ die aktiven Filter an (falls vorhanden). Mit ![XGröße75](/help/assets/icons/CrossSize75.svg) können Sie schnell einen Filter entfernen. Wenn mehr als ein Filter angegeben ist, können Sie alle Filter mit **[!UICONTROL Alle entfernen]** entfernen.
 
-### Bedienfeld „Filter“
+### Panel „Filter“
 
-Sie können Anmerkungen mithilfe des Bedienfelds **[!UICONTROL Filter]** ➍ auf der linken Seite filtern. Im Bedienfeld „Filter“ werden der Filtertyp und die Anzahl der Anmerkungen angezeigt, auf die gefiltert wurde. Wählen Sie ![Filter](/help/assets/icons/Filter.svg) aus, um die Anzeige des Bedienfelds „Filter“ umzuschalten.
+Sie können Anmerkungen mithilfe der **[!UICONTROL im linken Bedienfeld]** Filter➍ filtern. Im Bedienfeld „Filter“ werden der Filtertyp und die Anzahl der Anmerkungen angezeigt, auf die gefiltert wurde. Wählen Sie ![Filter](/help/assets/icons/Filter.svg) aus, um die Anzeige des Bedienfelds „Filter“ umzuschalten.
 
 So filtern Sie die Filterliste:
 

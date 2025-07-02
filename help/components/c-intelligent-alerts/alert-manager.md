@@ -1,13 +1,13 @@
 ---
-description: Warnhinweise erstellen, bearbeiten oder löschen.
+description: Informationen zum Verwalten von Warnhinweisen.
 title: Verwalten von Warnhinweisen
 feature: Workspace Basics
 role: User, Admin
 exl-id: 174c3ebd-a77b-4403-ae9a-bb0cff4bcca6
-source-git-commit: 38be838fccf896a12da3fbadac50e578081312ba
+source-git-commit: 1891f73f4326a178b293e7c3763d0d1dbc000a25
 workflow-type: tm+mt
 source-wordcount: '596'
-ht-degree: 23%
+ht-degree: 22%
 
 ---
 
@@ -71,7 +71,7 @@ Die Filterleiste zeigt ➌ die aktiven Filter an, die vom Filterbereich auf die 
 
 ### Panel „Filter“
 
-Sie können die Liste der Warnhinweise mithilfe der ➍ ![Filter](/help/assets/icons/Filter.svg) **[!UICONTROL Filter]** im linken Bereich filtern. Das Bedienfeld „Filter“ zeigt den Filtertyp und die Anzahl der Warnhinweise an, die den spezifischen Filter berücksichtigen.
+Sie können die Liste der Warnhinweise mithilfe der ![ ](/help/assets/icons/Filter.svg)Filter **** Filter➍ im linken Bereich filtern. Das Bedienfeld „Filter“ zeigt den Filtertyp und die Anzahl der Warnhinweise an, die den spezifischen Filter berücksichtigen.
 
 
 1. Wählen Sie ![Filter](/help/assets/icons/Filter.svg) aus, um das Bedienfeld „Filter“ zu öffnen. Wenn Sie mehr Platz für die Liste „Warnhinweise“ benötigen, können Sie erneut ![Filtern](/help/assets/icons/Filter.svg) auswählen, um das Bedienfeld zu schließen.
@@ -113,7 +113,7 @@ Sie können die Liste der Warnhinweise mithilfe der ➍ ![Filter](/help/assets/i
 
 Sie können einen Warnhinweis bearbeiten
 
-* Wählen Sie in [[!UICONTROL &#x200B; Liste &#x200B;]Warnhinweis](#alerts-list) den Titel des Warnhinweises aus.
+* Wählen Sie in [[!UICONTROL  Liste ]Warnhinweis](#alerts-list) den Titel des Warnhinweises aus.
 
 Verwenden Sie die [Warnhinweiserstellung](alert-builder.md#alert-builder), um den Warnhinweis zu bearbeiten.
 

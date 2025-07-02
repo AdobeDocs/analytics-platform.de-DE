@@ -1,18 +1,18 @@
 ---
-title: Anmerkungen – Übersicht
-description: Verwenden von Anmerkungen in Workspace.
+title: Anmerkungen - Übersicht
+description: Verwenden von Anmerkungen in Analysis Workspace.
 solution: Customer Journey Analytics
 feature: Components
 exl-id: a87f6968-27a5-4595-be4f-0a38e03b9398
 role: User
-source-git-commit: 3cbf30778ff0fbb4198db16cbbabf3d62a87d384
-workflow-type: ht
-source-wordcount: '318'
-ht-degree: 100%
+source-git-commit: 1891f73f4326a178b293e7c3763d0d1dbc000a25
+workflow-type: tm+mt
+source-wordcount: '319'
+ht-degree: 97%
 
 ---
 
-# Anmerkungen – Übersicht
+# Anmerkungen – Übersicht
 
 Mit Anmerkungen können Sie kontextbezogene Datennuancen und Erkenntnisse auf effektive Weise an andere Stakeholderinnen und Stakeholder in Ihrer Organisation übermitteln. Durch Anmerkungen können Sie Kalenderereignisse an bestimmte Dimensionen und Metriken binden. Sie können etwa zu einem Datum oder Datumsbereich Anmerkungen zu bekannten Datenproblemen, öffentlichen Feiertagen, Kampagnenstarts usw. machen, Sie können dann Ereignisse grafisch darstellen und sehen, ob sich Kampagnen oder andere Ereignisse auf den Sitetraffic, die Nutzung der Mobile App, den Umsatz oder andere Metriken ausgewirkt haben.
 

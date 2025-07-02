@@ -1,13 +1,13 @@
 ---
 title: Anzeigen von Anmerkungen
-description: Anzeigen von Anmerkungen in Workspace.
+description: Anzeigen von Anmerkungen in Analysis Workspace.
 role: User
 feature: Components
 exl-id: c0e4fb37-b20c-463c-b29a-310ca3adb2c7
-source-git-commit: 21935a0e9e976cd680fb036bb47f4248aaa66890
+source-git-commit: 1891f73f4326a178b293e7c3763d0d1dbc000a25
 workflow-type: tm+mt
-source-wordcount: '218'
-ht-degree: 90%
+source-wordcount: '219'
+ht-degree: 86%
 
 ---
 
@@ -19,8 +19,8 @@ Anmerkungen werden je nachdem, wo sie angezeigt werden und ob sie sich über ein
 
 | Visualisierungs-<br/>typ | Beschreibung |
 | --- | --- |
-| **Linie &#x200B;**<br/>**Einzeltag** | Wenn Sie in einer Linienvisualisierung ![Anmerken](/help/assets/icons/Annotate.svg) auswählen, wird ein Popup mit den Anmerkungsdetails angezeigt.<br/>![Anmerkung Einzeltag](assets/annotation-single-day.png)<br/>Wählen Sie zum Bearbeiten der Anmerkung unter [Anmerkungserstellung](create-annotations.md#annotation-builder) die Option ![Bearbeiten](/help/assets/icons/Edit.svg) aus. Um die Anmerkung zu entfernen, wählen Sie ![Löschen](/help/assets/icons/Delete.svg) aus. |
-| **Linie &#x200B;**<br/>**Datumsbereich** | Wenn Sie ![Anmerkungsbereich](/help/assets/icons/AnnotateRange.svg) auswählen, werden ein Popup mit den Anmerkungsdetails und unten eine Linie angezeigt, die den Datumsbereich angibt.<br/>![Anmerkungsbereich](assets/annotation-range.png)Wählen Sie zum Bearbeiten der Anmerkung unter [Anmerkungserstellung](create-annotations.md#annotation-builder) die Option ![Bearbeiten](/help/assets/icons/Edit.svg) aus. Um die Anmerkung zu entfernen, wählen Sie ![Löschen](/help/assets/icons/Delete.svg) aus. |
+| **Linie **<br/>**Einzeltag** | Wenn Sie in einer Linienvisualisierung ![Anmerken](/help/assets/icons/Annotate.svg) auswählen, wird ein Popup mit den Anmerkungsdetails angezeigt.<br/>![Anmerkung Einzeltag](assets/annotation-single-day.png)<br/>Wählen Sie zum Bearbeiten der Anmerkung unter [Anmerkungserstellung](create-annotations.md#annotation-builder) die Option ![Bearbeiten](/help/assets/icons/Edit.svg) aus. Um die Anmerkung zu entfernen, wählen Sie ![Löschen](/help/assets/icons/Delete.svg) aus. |
+| **Linie **<br/>**Datumsbereich** | Wenn Sie ![Anmerkungsbereich](/help/assets/icons/AnnotateRange.svg) auswählen, werden ein Popup mit den Anmerkungsdetails und unten eine Linie angezeigt, die den Datumsbereich angibt.<br/>![Anmerkungsbereich](assets/annotation-range.png)Wählen Sie zum Bearbeiten der Anmerkung unter [Anmerkungserstellung](create-annotations.md#annotation-builder) die Option ![Bearbeiten](/help/assets/icons/Edit.svg) aus. Um die Anmerkung zu entfernen, wählen Sie ![Löschen](/help/assets/icons/Delete.svg) aus. |
 | **Freiformtabelle** | In einer Freiformtabelle können Sie über die Schaltfläche „Anmerkungen“ oben rechts in der Visualisierung auf alle Anmerkungen zugreifen. Wählen Sie ![Anmerken](/help/assets/icons/Annotate.svg) aus, um eine Bildlaufliste aller Anmerkungen anzuzeigen.<br/>![Anmerkungstabelle](assets/annotations-table.png)<br/>Sie können für jede Anmerkung die Option ![Bearbeiten](/help/assets/icons/Edit.svg) auswählen, um die Anmerkung unter [Anmerkungserstellung](create-annotations.md#annotation-builder) zu bearbeiten, und mit ![Löschen](/help/assets/icons/Delete.svg) die Anmerkung entfernen. |
 
 {style="table-layout:auto"}
