@@ -32,5 +32,5 @@ Allgemeine Informationen zum Datenwörterbuch finden Sie unter [Datenwörterbuch
 >[!MORELIKETHIS]
 >
 >[Einstellungen für die Datenansichtskomponente](/help/data-views/component-settings/overview.md)
->>[Komponenteneinträge für Datenwörterbuch](/help/components/data-dictionary/edit-entries-data-dictionary.md)
+>&#x200B;>[Komponenteneinträge für Datenwörterbuch](/help/components/data-dictionary/edit-entries-data-dictionary.md)
 >
