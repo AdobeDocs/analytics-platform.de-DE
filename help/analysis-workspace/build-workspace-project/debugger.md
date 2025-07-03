@@ -4,9 +4,9 @@ keywords: Analysis Workspace
 feature: Workspace Basics
 title: Projekt-Debugger
 role: User
-source-git-commit: 4d902bab01c1c795cb7d852066128f6b9db0823a
+source-git-commit: ae8c1fb127accae53ab9363a8cceedd5221a245b
 workflow-type: tm+mt
-source-wordcount: '467'
+source-wordcount: '466'
 ht-degree: 3%
 
 ---
@@ -17,7 +17,7 @@ Der Projekt-Debugger unterstützt Sie und den Adobe-Support bei der Fehlerbehebu
 
 >[!NOTE]
 >
->Um den Debugger verwenden zu können, benötigen Sie **Bearbeiten** oder **Kopieren** [Zugriff auf das Projekt](https://experienceleague.adobe.com/de/docs/experience-cloud-kcs/kbarticles/ka-25744).
+>Um den Debugger verwenden zu können, benötigen Sie **Bearbeiten** oder **Kopieren** [Zugriff auf das Projekt](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-25744).
 >
 
 
@@ -31,7 +31,7 @@ Der Projekt-Debugger unterstützt Sie und den Adobe-Support bei der Fehlerbehebu
 So aktivieren Sie den Debugger:
 
 1. Wählen **[!UICONTROL Hilfe]** > **[!UICONTROL Debugger aktivieren]** aus dem Analysis Workspace-Projektmenü.
-1. Wählen **&#x200B;**&#x200B;im Dialogfeld **[!UICONTROL Debugger aktivieren]** die Option OK aus.
+1. Wählen **** im Dialogfeld **[!UICONTROL Debugger aktivieren]** die Option OK aus.
 1. Bestätigen Sie, wenn der Browser Sie auffordert, die Seite oder Site neu zu laden.
 
 
@@ -75,7 +75,7 @@ So verwenden Sie den Debugger für eine bestimmte Visualisierung:
    * JSON (Antwort)
    * cURL-Anfrage
 
-1. **&#x200B; Verwenden Sie ![Kopieren](/help/assets/icons/Copy.svg) &#x200B;** [!UICONTROL In Zwischenablage kopieren]d unter **[!UICONTROL cURL-]**, um die Anfrage in die Zwischenablage zu kopieren.
+1. Verwenden Sie ![Kopieren](/help/assets/icons/Copy.svg) **[!UICONTROL In Zwischenablage kopieren]** unter **[!UICONTROL cURL Request]**, um die Anfrage in die Zwischenablage zu kopieren.
 1. Bewegen Sie den Mauszeiger über einen der **[!UICONTROL Anfrage]** oder **[!UICONTROL Antwort]** Textbereiche, um ![Kopieren](/help/assets/icons/Copy.svg) **[!UICONTROL In Zwischenablage kopieren]** einzublenden und auszuwählen, um den Inhalt dieses Textbereichs (XML oder JSON) in die Zwischenablage zu kopieren.
 
 1. Tauschen Sie alle kopierten Informationen und den von Adobe angeforderten Support aus, um die Visualisierungen in Ihrem Analysis Workspace-Projekt zu beheben.
@@ -94,7 +94,7 @@ Wiederholen Sie die obigen Schritte für jede andere Visualisierung, die Sie beh
 Deaktivieren des Debuggers:
 
 1. Wählen **[!UICONTROL Hilfe]** > **[!UICONTROL Debugger deaktivieren]** aus dem Analysis Workspace-Projektmenü aus.
-1. Wählen **&#x200B;**&#x200B;im Dialogfeld **[!UICONTROL Debugger deaktivieren]** die Option OK aus.
+1. Wählen **** im Dialogfeld **[!UICONTROL Debugger deaktivieren]** die Option OK aus.
 1. Bestätigen Sie, wenn der Browser Sie auffordert, die Seite oder Site neu zu laden.
 
 
