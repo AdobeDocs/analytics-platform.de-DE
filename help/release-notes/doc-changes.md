@@ -216,7 +216,7 @@ Die folgenden Aktualisierungen wurden seit der ersten Erstellung der Customer Jo
 | **Dezember 2022** |  |
 | &#x200B;16. Dezember 2022 | Neues Thema zum [Verwalten der Customer Journey Analytics-Datennutzung](/help/technotes/estimate-usage.md). |
 | **Oktober 2022** | |
-| Oktober 2022 | Neuer Artikel zum [Passwortschutz geplanter Projekte](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/export/t-schedule-report.html#password). Diese Funktion dient zur Unterstützung der [HIPAA-Bereitschaft](https://www.adobe.com/trust/compliance/hipaa-ready.html). |
+| Oktober 2022 | Neuer Artikel zum [Passwortschutz geplanter Projekte](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/export/t-schedule-report.html?lang=de#password). Diese Funktion dient zur Unterstützung der [HIPAA-Bereitschaft](https://www.adobe.com/trust/compliance/hipaa-ready.html). |
 | Oktober 2022 | Neuer Artikel zu [kundenverwalteten Schlüsseln](/help/privacy/cmk.md). Diese Funktion dient zur Unterstützung der [HIPAA-Bereitschaft](https://www.adobe.com/trust/compliance/hipaa-ready.html). |
 | Oktober 2022 | Neues Thema zu [Auditprotokoll für Customer Journey Analytics](/help/privacy/audit-log.md). |
 | Oktober 2022 | Neuer Artikel zur Visualisierung der [Zusammenfassung der Schlüsselmetriken](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/key-metric.html?lang=de). |
