@@ -31,7 +31,7 @@ Der Projekt-Debugger unterstützt Sie und den Adobe-Support bei der Fehlerbehebu
 So aktivieren Sie den Debugger:
 
 1. Wählen **[!UICONTROL Hilfe]** > **[!UICONTROL Debugger aktivieren]** aus dem Analysis Workspace-Projektmenü.
-1. Wählen **** im Dialogfeld **[!UICONTROL Debugger aktivieren]** die Option OK aus.
+1. Wählen **&#x200B;**&#x200B;im Dialogfeld **[!UICONTROL Debugger aktivieren]** die Option OK aus.
 1. Bestätigen Sie, wenn der Browser Sie auffordert, die Seite oder Site neu zu laden.
 
 
@@ -94,7 +94,7 @@ Wiederholen Sie die obigen Schritte für jede andere Visualisierung, die Sie beh
 Deaktivieren des Debuggers:
 
 1. Wählen **[!UICONTROL Hilfe]** > **[!UICONTROL Debugger deaktivieren]** aus dem Analysis Workspace-Projektmenü aus.
-1. Wählen **** im Dialogfeld **[!UICONTROL Debugger deaktivieren]** die Option OK aus.
+1. Wählen **&#x200B;**&#x200B;im Dialogfeld **[!UICONTROL Debugger deaktivieren]** die Option OK aus.
 1. Bestätigen Sie, wenn der Browser Sie auffordert, die Seite oder Site neu zu laden.
 
 
