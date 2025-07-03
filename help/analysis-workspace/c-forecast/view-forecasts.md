@@ -4,10 +4,10 @@ title: So zeigen Sie Prognosen in Analysis Workspace an
 feature: Visualizations
 role: User
 exl-id: 4a8b602c-e6aa-4a46-bba9-642387e6af88
-source-git-commit: fea1b12a594a820ab2e55f850ca95c5a373184f0
+source-git-commit: a646d1f35308dc1f1d9f06cf94835534bd8b8da6
 workflow-type: tm+mt
-source-wordcount: '368'
-ht-degree: 2%
+source-wordcount: '367'
+ht-degree: 3%
 
 ---
 
@@ -28,7 +28,7 @@ Die Prognosen sind in der Tabelle wie folgt dargestellt:
 ![Prognose in Tabelle anzeigen](assets/show-forecast-table.png)
 
 * Der Prognosewert und der Prozentsatz für jede Zelle werden in **dunkelgrau** angezeigt.
-* Um einen Prognosewert anzugeben, ein Prognosesymbol <img src="./assets/forecast.svg" alt="Prognosesymbol" width="20" /> wird in der oberen rechten Ecke der Zelle angezeigt.
+* Um einen Prognosewert anzugeben, wird ein Prognosesymbol ![ForecastAnalytics](/help/assets/icons/ForecastAnalytics.svg) oben rechts in der Zelle angezeigt.
 
 
 ## Anzeigen von Prognosen in einem Liniendiagramm

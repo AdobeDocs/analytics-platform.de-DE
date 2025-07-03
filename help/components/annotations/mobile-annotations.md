@@ -5,17 +5,17 @@ solution: Customer Journey Analytics
 feature: Components
 exl-id: c0f276b4-3514-4f93-8b6c-6896eb4da6e4
 role: User
-source-git-commit: 1891f73f4326a178b293e7c3763d0d1dbc000a25
+source-git-commit: a646d1f35308dc1f1d9f06cf94835534bd8b8da6
 workflow-type: tm+mt
-source-wordcount: '305'
-ht-degree: 93%
+source-wordcount: '306'
+ht-degree: 88%
 
 ---
 
 
 # Anmerkungen zu mobilen Scorecards
 
-Sie können in Workspace erstellte Anmerkungen in mobilen Scorecards anzeigen. Anmerkungen in mobilen Scorecards ermöglichen es, kontextbezogene Datennuancen und Erkenntnisse zu Ihrer Organisation und Ihren Kampagnen mit anderen zu teilen.
+Sie können Anmerkungen, die in Analysis Workspace erstellt wurden, in mobilen Scorecards anzeigen. Anmerkungen in mobilen Scorecards ermöglichen es, kontextbezogene Datennuancen und Erkenntnisse zu Ihrer Organisation und Ihren Kampagnen mit anderen zu teilen.
 
 
 ## Einblenden von Anmerkungen in mobilen Scorecards

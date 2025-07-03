@@ -4,10 +4,10 @@ title: Zusammenfassung einer Schlüsselmetrik
 feature: Visualizations
 exl-id: ef606c53-b370-419a-904b-573ee6d70a8d
 role: User
-source-git-commit: 8054aab28c405f6a9dd24306a086c78069032999
+source-git-commit: a646d1f35308dc1f1d9f06cf94835534bd8b8da6
 workflow-type: tm+mt
-source-wordcount: '959'
-ht-degree: 96%
+source-wordcount: '948'
+ht-degree: 93%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 96%
 
 >[!BEGINSHADEBOX]
 
-_In diesem Artikel wird die Visualisierung der Zusammenfassung der Schlüsselmetriken in_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics** beschrieben._<br/>_Unter [Zusammenfassung der Schlüsselmetriken](https://experienceleague.adobe.com/de/docs/analytics/analyze/analysis-workspace/visualizations/key-metric) finden Sie die Version dieses Artikels für_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics**._
+_In diesem Artikel wird die Visualisierung der Zusammenfassung der Schlüsselmetriken in_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics** beschrieben._<br/>_Unter [Zusammenfassung der Schlüsselmetriken](https://experienceleague.adobe.com/de/docs/analytics/analyze/analysis-workspace/visualizations/key-metric) finden Sie die Version dieses Artikels für_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**._
 
 >[!ENDSHADEBOX]
 
@@ -141,18 +141,16 @@ Im Rahmen der Visualisierungseinstellungen sind spezifische Einstellungen für d
 
 ## Visualisierung bearbeiten
 
-Nach dem Erstellen der Visualisierung können Sie die ursprüngliche Konfiguration noch bearbeiten.
+Nachdem Sie die Visualisierung erstellt haben, können Sie die ursprüngliche Konfiguration bearbeiten.
 
-1. Klicken Sie oben rechts in der Visualisierung auf das Stiftsymbol (neben dem Zahnradsymbol für die Einstellungen).
+1. Wählen ![ oben ](/help/assets/icons/Edit.svg) der Visualisierung „Bearbeiten“ aus.
 
-   ![Bearbeitungssymbol für Visualisierungen](assets/edit-icon.png)
-
-   Sie gelangen nun zurück zur ursprünglichen Konfigurationsansicht.
+   Sie gelangen nun zurück zur ursprünglichen [Konfigurationsansicht](#configure).
 
 1. Ändern Sie die Metrik, den primären Datumsbereich, den Vergleichsdatumsbereich oder das Segment nach Belieben.
 
 >[!MORELIKETHIS]
 >
 >[Hinzufügen einer Visualisierung zu einem Panel](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
->&#x200B;>[Visualisierungseinstellungen](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
->&#x200B;>[Kontextmenü der Visualisierung](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
+>>[Visualisierungseinstellungen](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
+>>[Kontextmenü der Visualisierung](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)

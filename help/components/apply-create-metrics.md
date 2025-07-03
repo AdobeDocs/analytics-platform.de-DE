@@ -1,13 +1,13 @@
 ---
-description: Erfahren Sie, was Metriken sind und wie Sie Metriken in Adobe Analytics verwenden.
+description: Erfahren Sie, was Metriken sind und wie Sie Metriken in Analysis Workspace verwenden.
 title: Metriken
 feature: Metrics
 exl-id: 4edfb5d7-da20-4bd8-8041-387b291daf96
 role: User
-source-git-commit: f3c9a000ae5baa19cb5a6cf0e0343de3a9685b56
+source-git-commit: a646d1f35308dc1f1d9f06cf94835534bd8b8da6
 workflow-type: tm+mt
-source-wordcount: '795'
-ht-degree: 8%
+source-wordcount: '868'
+ht-degree: 6%
 
 ---
 
@@ -17,7 +17,7 @@ Mit Metriken können Sie Datenpunkte in Analysis Workspace quantifizieren. Sie w
 
 ## Verwenden von Metriken in Analysis Workspace
 
-Metriken können in Analysis Workspace flexibel verwendet werden. Ziehen Sie eine Metrik in eine leere Freiformtabelle, um die Entwicklung dieser Metrik über den Datumsbereich des Projekts anzuzeigen. Sie können auch eine Metrik ziehen, wenn eine Dimension vorhanden ist, um zu sehen, wie sich diese Metrik mit den einzelnen Dimensionselementen vergleicht. Wenn Sie eine Metrik über eine vorhandene Metrik-Kopfzeile ziehen, wird die vorhandene Metrik ersetzt. Wenn Sie eine Metrik neben eine Kopfzeile ziehen, können Sie beide Metriken nebeneinander anzeigen.
+Metriken können in Analysis Workspace flexibel verwendet werden. Ziehen Sie eine Metrik in eine leere Freiformtabelle, um die Entwicklung dieser Metrik über den Datumsbereich des Projekts anzuzeigen. Sie können auch eine Metrik ziehen, wenn eine Dimension vorhanden ist, um diese Metrik mit jedem Dimensionselement zu vergleichen. Wenn Sie eine Metrik über eine vorhandene Metrik-Kopfzeile ziehen, wird sie ersetzt, und wenn Sie eine Metrik neben einer Kopfzeile ziehen, können Sie beide Metriken nebeneinander sehen.
 
 Informationen zum Hinzufügen von Metriken und anderen Komponententypen zu Analysis Workspace finden Sie unter [Verwenden von Komponenten in Analysis Workspace](/help/components/use-components-in-workspace.md).
 
@@ -27,11 +27,17 @@ Informationen zum Hinzufügen von Metriken und anderen Komponententypen zu Analy
 Adobe bietet verschiedene Arten von Metriken zur Verwendung in Analysis Workspace:
 
 
-* **Standardmetriken**: Beispiele für Standardmetriken sind Personen, Sitzungen, Ereignisse, [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}-Konten.
+* **Standardmetriken**: Beispiel für Standardmetriken sind „Personen“, „Sitzungen“ und „Ereignisse“.
 
-  Im Gegensatz zu Adobe Analytics können Sie mit Customer Journey Analytics Standardmetriken im Rahmen einer Verbindung und einer Datenansicht flexibel definieren.  Siehe [Standardmetriken](#standard-metrics) für die vollständige Liste der Standardmetriken.
+  Im Gegensatz zu Adobe Analytics können Sie mit Customer Journey Analytics Standardmetriken im Rahmen einer Verbindung und einer Datenansicht flexibel definieren.
 
-* **Berechnete Metriken** ![Rechner](/help/assets/icons/Calculator.svg): [Benutzerdefinierte Metriken](/help/components/calc-metrics/calc-metr-overview.md) die auf Standardmetriken, statischen Zahlen oder algorithmischen Funktionen basieren.
+   * **Personen**: Die Metrik „Personen“ in Customer Journey Analytics entspricht der Anzahl der eindeutigen Personen-IDs. Je nachdem, was Sie bei der Konfiguration von Datensätzen in Ihrer Verbindung als Personen-ID auswählen, kann die Personen -Metrik unterschiedliche Bedeutungen haben.
+   * **Sitzungen**: Die Sitzungsmetrik in Customer Journey Analytics wird von Ihnen als Teil der Konfiguration der Sitzungseinstellungen in Ihrer Datenansicht definiert. Siehe [Sitzungseinstellungen](/help/data-views/session-settings.md).
+   * **Ereignisse**: Die Ereignismetrik in Customer Journey Analytics besteht aus den Ereignissen, die Teil eines Ereignisdatensatzes sind, den Sie als Teil Ihrer Verbindung konfiguriert haben.
+
+  Siehe [Standardmetriken](#standard-metrics) für die vollständige Liste der Standardmetriken.
+
+* **Berechnete Metriken** ![Rechner](/help/assets/icons/Calculator.svg): Benutzerdefinierte Metriken, die auf Standardmetriken, statischen Zahlen oder algorithmischen Funktionen basieren.
 
 * **Vorlagen für berechnete Metriken** ![AdobeLogoSmall](/help/assets/icons/AdobeLogoSmall.svg) : Von Adobe definierte Metriken, die sich ähnlich wie berechnete Metriken verhalten. Sie können sie unverändert in Workspace-Projekten verwenden oder eine Kopie speichern, um die Logik anzupassen. Siehe [Standardberechnete Metriken](calc-metrics/cm-workflow/../default-calcmetrics.md).
 
@@ -46,7 +52,7 @@ Vollständige Liste der Standardmetriken in Customer Journey Analytics:
 
 ## Erstellen von berechneten Metriken
 
-Berechnete Metriken ermöglichen es Ihnen, mithilfe einfacher Operatoren oder statistischer Funktionen zu konfigurieren, wie sich Metriken zueinander verhalten. Weitere Informationen finden [ unter ](/help/components/calc-metrics/calc-metr-overview.md) Metriken - Übersicht .
+Mit berechneten Metriken können Sie einfach konfigurieren, wie sich Metriken zueinander verhalten, indem Sie einfache Operatoren oder statistische Funktionen verwenden. Weitere Informationen finden [ unter ](/help/components/calc-metrics/calc-metr-overview.md) Metriken - Übersicht .
 
 Es gibt mehrere Möglichkeiten, berechnete Metriken zu erstellen. Die gewählte Methode bestimmt, ob die berechnete Metrik in der Komponentenliste für alle Projekte verfügbar ist oder nur in dem Projekt, in dem sie erstellt wurde.
 
@@ -76,15 +82,15 @@ Erstellen einer berechneten Metrik für ein einzelnes Projekt:
 
    Wenn eine einzelne Spalte ausgewählt ist, stehen die folgenden Optionen zur Verfügung:
 
-   * [!UICONTROL **Mittel**]: Erstellt eine neue Spalte, die den Mittelwert im Satz der Dimensionselemente für die Spalte anzeigt. Dieser Spaltenwert verwendet die Funktion [Mittelwert](/help/components/calc-metrics/cm-functions.md#mean).
+   * [!UICONTROL **Mittel**]: Erstellt eine neue Spalte, die den Mittelwert im Satz der Dimensionselemente für die Spalte anzeigt. Dabei wird die Funktion [Mittelwert](/help/components/calc-metrics/cm-functions.md#mean) verwendet.
 
-   * [!UICONTROL **Median**]: Erstellt eine neue Spalte, die den Medianwert im Satz der Dimensionselemente für die Spalte anzeigt. Dieser Spaltenwert verwendet die Funktion [Median](/help/components/calc-metrics/cm-functions.md#median).
+   * [!UICONTROL **Median**]: Erstellt eine neue Spalte, die den Medianwert im Satz der Dimensionselemente für die Spalte anzeigt. Dabei wird die [Median](/help/components/calc-metrics/cm-functions.md#median)-Funktion verwendet.
 
-   * [!UICONTROL **Spalte max**]: Erstellt eine neue Spalte, die den größten Wert im Satz von Dimensionselementen für die Spalte anzeigt. Dieser Spaltenwert verwendet die Funktion [Spaltenmaximum](/help/components/calc-metrics/cm-functions.md#column-maximum).
+   * [!UICONTROL **Spalte max**]: Erstellt eine neue Spalte, die den größten Wert im Satz von Dimensionselementen für die Spalte anzeigt. Dabei wird die [Spaltenmaximum](/help/components/calc-metrics/cm-functions.md#column-maximum)-Funktion verwendet.
 
-   * [!UICONTROL **Spalte min**]: Erstellt eine neue Spalte, die den kleinsten Wert im Satz der Dimensionselemente für die Spalte anzeigt. Dieser Spaltenwert verwendet die Funktion [Spalten-Minimum](/help/components/calc-metrics/cm-functions.md#column-minimum).
+   * [!UICONTROL **Spalte min**]: Erstellt eine neue Spalte, die den kleinsten Wert im Satz der Dimensionselemente für die Spalte anzeigt. Dabei wird die Funktion [Spalten-Minimum](/help/components/calc-metrics/cm-functions.md#column-minimum) verwendet.
 
-   * [!UICONTROL **Spaltensumme**]: Erstellt eine neue Spalte, die alle numerischen Werte für eine Metrik innerhalb einer Spalte (über die Elemente einer Dimension hinweg) hinzufügt. Dieser Spaltenwert verwendet die Funktion [Spaltensumme](/help/components/calc-metrics/cm-functions.md#column-sum).
+   * [!UICONTROL **Spaltensumme**]: Erstellt eine neue Spalte, die alle numerischen Werte für eine Metrik innerhalb einer Spalte (über die Elemente einer Dimension hinweg) hinzufügt. Dabei wird die Funktion [Spaltensumme](/help/components/calc-metrics/cm-functions.md#column-sum) verwendet.
 
    Wenn zwei Spalten ausgewählt sind, sind die folgenden Optionen verfügbar:
 

@@ -5,7 +5,7 @@ title: Segmente in Fallout-Analyse anwenden
 feature: Visualizations
 exl-id: 85b1024f-acd2-43b7-b4b1-b10961ba43e8
 role: User
-source-git-commit: 8054aab28c405f6a9dd24306a086c78069032999
+source-git-commit: a646d1f35308dc1f1d9f06cf94835534bd8b8da6
 workflow-type: tm+mt
 source-wordcount: '468'
 ht-degree: 34%
@@ -23,19 +23,20 @@ Sie können in Analysis Workspace Segmente aus einem Touchpoint erstellen, Segme
 >* Verwenden eines personenbasierten Segments als Touchpoint innerhalb einer Fallout-Visualisierung des Personenkontexts.
 >* Verwenden eines personenbasierten Segments als Touchpoint innerhalb einer Fallout-Visualisierung mit Sitzungskontext.
 >* Verwenden eines sitzungsbasierten Segments als Touchpoint innerhalb einer Sitzungskontext-Fallout-Visualisierung.
+
 <!-- Should we add B2B context here?
-* [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} Usimg a B2B container based segment as a touchpoint inside a non-container based context Fallout visualization.
+* [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} Usimg a B2B container based segment as a touchpoint inside a non-container based context Fallout visualization.
 * -->
 
 ## Erstellen eines Segments aus einem Touchpoint
 
 1. Als Erstes erstellen Sie ein Segment aus einem bestimmten Touchpoint, an dem Sie interessiert sind und der sich möglicherweise lohnt, auch in andere Berichte übernommen zu werden. Klicken Sie mit der rechten Maustaste auf den Touchpoint und wählen Sie **[!UICONTROL Segment aus Touchpoint erstellen]**.
 
-   ![Das Dropdown-Menü „Touchpoint“ mit hervorgehobener Option „Segment aus Touchpoint erstellen“.](assets/fallout-createfilter.png)
+   ![Das Dropdown-Menü „Touchpoint“ mit hervorgehobener Option „Segment aus Touchpoint erstellen“.](assets/fallout-createsegment.png)
 
    Der [!UICONTROL Segment Builder] wird geöffnet und enthält vorab das vordefinierte sequenzielle Segment, das dem von Ihnen ausgewählten Touchpoint entspricht:
 
-   ![Segment Builder zeigt das vorausgefüllte und vordefinierte sequenzielle Segment an.](assets/fallout-definefilter.png)
+   ![Segment Builder zeigt das vorausgefüllte und vordefinierte sequenzielle Segment an.](assets/fallout-definesegment.png)
 
 1. Geben Sie einen Titel und eine Beschreibung für das Segment ein, und speichern Sie es.
 
@@ -57,7 +58,7 @@ In der Fallout-Visualisierung können Sie eine unbegrenzte Anzahl von Segmenten 
 1. Ziehen Sie die drei Segmente in den Ablegebereich für Segmente am oberen Rand der Visualisierung.
 
 
-1. Optional: Sie können *Alle Besuche* als Standard-Container beibehalten oder den Container löschen.
+1. Optional: Sie können *Alle Personen* als Standard-Container beibehalten oder den Container löschen.
 
    ![Der Fallout, der alle Besuche zusammen mit den beiden Segmenten anzeigt, die im vorherigen Schritt gezogen wurden.](assets/fallout-multiplefilters.png)
 
