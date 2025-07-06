@@ -207,7 +207,7 @@ Traditional Analytics comes with numerous out-of-the-box templates and calculate
 >[!MORELIKETHIS]
 >
 >[Erstellen von Segmenten](seg-create.md)
->>[Segment Builder](seg-builder.md)
->>[Schnellsegmente](seg-quick.md)
->>[Sequenzielle Segmente](seg-sequential-build.md)
->>[Verwalten von Segmenten](seg-manage.md)
+>&#x200B;>[Segment Builder](seg-builder.md)
+>&#x200B;>[Schnellsegmente](seg-quick.md)
+>&#x200B;>[Sequenzielle Segmente](seg-sequential-build.md)
+>&#x200B;>[Verwalten von Segmenten](seg-manage.md)

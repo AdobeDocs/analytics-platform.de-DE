@@ -163,6 +163,6 @@ Unter [Beispiel](#example) finden Sie ein Beispiel für die Verwendung von Attri
 >[!MORELIKETHIS]
 >
 >[Attribution – Komponenteneinstellungen](/help/data-views/component-settings/attribution.md)
->>[Beitragsmetrik](participation-metric.md)
+>&#x200B;>[Beitragsmetrik](participation-metric.md)
 >
 

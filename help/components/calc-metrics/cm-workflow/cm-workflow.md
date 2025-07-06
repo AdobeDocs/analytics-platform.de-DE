@@ -14,14 +14,14 @@ ht-degree: 18%
 
 Standardmäßig können nur Administratoren berechnete Metriken erstellen. Benutzer haben die Berechtigung, berechnete Metriken anzuzeigen, ähnlich wie Benutzer andere Komponenten anzeigen (z. B. Segmente, Anmerkungen usw.).
 
-Administratoren können jedoch über die **** die Berechtigung **[!UICONTROL Erstellung berechneter Metriken]** für Reporting-Tools **[!UICONTROL in]** Berechtigungen für CJA Workspace Admin Console bearbeiten[ für Benutzende ](/help/technotes/access-control.md#user-level-access).
+Administratoren können jedoch über die **&#x200B;**&#x200B;die Berechtigung **[!UICONTROL Erstellung berechneter Metriken]** für Reporting-Tools **[!UICONTROL in]** Berechtigungen für CJA Workspace Admin Console bearbeiten[ für Benutzende ](/help/technotes/access-control.md#user-level-access).
 
 
 Sie können eine berechnete Metrik wie folgt erstellen:
 
 ![Möglichkeiten zum Erstellen einer Metrik](assets/create-metric.png)
 
-* **A**. Wählen Sie in der Hauptbenutzeroberfläche die Option **[!UICONTROL Komponenten]** und wählen Sie **[!UICONTROL Berechnete Metriken]**. Wählen Sie ![AddCircle](/help/assets/icons/AddCircle.svg) [!UICONTROL **[!UICONTROL Add]**] aus dem [[!UICONTROL Manager für berechnete ]](/help/components/calc-metrics/cm-workflow/cm-manager.md).
+* **A**. Wählen Sie in der Hauptbenutzeroberfläche die Option **[!UICONTROL Komponenten]** und wählen Sie **[!UICONTROL Berechnete Metriken]**. Wählen Sie ![AddCircle](/help/assets/icons/AddCircle.svg) [!UICONTROL **[!UICONTROL Add]**] aus dem [[!UICONTROL Manager für berechnete &#x200B;]](/help/components/calc-metrics/cm-workflow/cm-manager.md).
 * **B**. Wählen Sie in einem Workspace-Projekt im linken Bedienfeld Komponenten ![Hinzufügen](/help/assets/icons/Add.svg) unter ![Ereignis](/help/assets/icons/Event.svg) **Metriken**.
 * **C**. Wählen Sie in einem Workspace-Projekt im Kontextmenü in der Spaltenüberschrift Metriken die Option **[!UICONTROL Metrik aus Auswahl erstellen]**. Aus dem Untermenü können Sie eine Funktion auswählen oder auf **[!UICONTROL In Generator für berechnete Metriken öffnen]** klicken. <br/>Wenn Sie eine Funktion auswählen, wird die berechnete Metrik als reine Projektmetrik definiert. Wenn Sie diese Metrik später über das Popup [Komponenteninformationen](/help/components/use-components-in-workspace.md#component-info) bearbeiten, wird im Generator für [berechnete Metriken](/help/components/calc-metrics/cm-workflow/cm-build-metrics.md) eine Benachrichtigung angezeigt.
 * **D**. Wählen Sie in einem Workspace-Projekt **[!UICONTROL Komponenten]** aus dem Menü aus und wählen Sie **[!UICONTROL Metrik erstellen]**.

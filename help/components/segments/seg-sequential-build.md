@@ -91,7 +91,7 @@ So wenden Sie Zeitbeschränkungen auf den Operator **[!UICONTROL Then]** an:
 1. Wählen Sie ![Uhr](/help/assets/icons/Clock.svg) aus.
 1. Wählen **[!UICONTROL Innerhalb]** oder **[!UICONTROL Nachher]** aus dem Kontextmenü aus.
 1. Geben Sie einen Zeitraum (**[!UICONTROL Minute]**, **[!UICONTROL Stunde]** bis **[!UICONTROL Jahre]**) an.
-1. Wählen Sie ![ChevronDown](/help/assets/icons/ChevronDown.svg) **[!UICONTROL *number *]**aus, um ein Popup zu öffnen, in dem Sie eine Zahl eingeben oder mit**[!UICONTROL -]**oder**[!UICONTROL +]**angeben können.
+1. Wählen Sie ![ChevronDown](/help/assets/icons/ChevronDown.svg) **[!UICONTROL *number *]**&#x200B;aus, um ein Popup zu öffnen, in dem Sie eine Zahl eingeben oder mit&#x200B;**[!UICONTROL -]**&#x200B;oder&#x200B;**[!UICONTROL +]**&#x200B;angeben können.
 
 Um eine Zeitbeschränkung zu entfernen, verwenden Sie ![CrossSize75](/help/assets/icons/CrossSize75.svg).
 
@@ -220,7 +220,7 @@ Beispiele für Ausschlussdefinitionen:
 * **Schließen Sie die Referrerdomäne aus**. Verwenden Sie eine Definition, die nur verweisende Domains von Google.com umfasst und alle anderen ausschließt.
 * **Identifizieren Sie Nicht-Käufer**. Ermitteln Sie, wenn die Bestellungen größer als null sind, und schließen Sie dann die [!UICONTROL Person] aus.
 
-[!UICONTROL Ausschließen] kann verwendet werden, um eine Sequenz zu identifizieren, in der Personen nicht an bestimmten Sitzungen teilnehmen oder bestimmte Ereignisse ausführen. [!UICONTROL Ausschließen] kann auch in eine [!UICONTROL logische Gruppe“ aufgenommen werden ]siehe unten).
+[!UICONTROL Ausschließen] kann verwendet werden, um eine Sequenz zu identifizieren, in der Personen nicht an bestimmten Sitzungen teilnehmen oder bestimmte Ereignisse ausführen. [!UICONTROL Ausschließen] kann auch in eine [!UICONTROL logische Gruppe“ aufgenommen werden &#x200B;]siehe unten).
 
 Sie können Container ausschließen, keine Komponenten.
 
@@ -230,7 +230,7 @@ Nachfolgend finden Sie Beispiele für die Verwendung von [!UICONTROL Ausschließ
 
 #### [!UICONTROL Ausschließen] innerhalb von
 
-Personen identifizieren, die eine Seite besucht haben, eine andere Seite nicht besucht haben und dann eine weitere Seite besucht haben. Sie schließen den Container mit &quot;![&quot; ](/help/assets/icons/Setting.svg) &quot;[!UICONTROL &quot; ]. Ein ausgeschlossener Container wird durch einen dünnen roten Balken auf der linken Seite gekennzeichnet.
+Personen identifizieren, die eine Seite besucht haben, eine andere Seite nicht besucht haben und dann eine weitere Seite besucht haben. Sie schließen den Container mit &quot;![&quot; ](/help/assets/icons/Setting.svg) &quot;[!UICONTROL &quot; &#x200B;]. Ein ausgeschlossener Container wird durch einen dünnen roten Balken auf der linken Seite gekennzeichnet.
 
 ![Sequenz ausschließen](assets/sequence-exclude.png)
 

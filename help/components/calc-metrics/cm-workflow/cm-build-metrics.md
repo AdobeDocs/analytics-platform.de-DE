@@ -200,5 +200,5 @@ Wählen Sie zum Löschen eines Containers ![Close](/help/assets/icons/Close.svg)
 >[!MORELIKETHIS]
 >
 >[Funktionen verwenden](cm-using-functions.md)
->>[Segmente](/help/components/segments/seg-overview.md)
+>&#x200B;>[Segmente](/help/components/segments/seg-overview.md)
 >
