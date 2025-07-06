@@ -9,10 +9,10 @@ index: true
 user-guide-title: Handbuch zu Customer Journey Analytics
 user-guide-description: Hier erhalten Sie Informationen zu Adobe Customer Journey Analytics und Erläuterungen zur Nutzung von Analysis Workspace mit Daten aus Experience Platform.
 breadcrumb-title: Handbuch zu Customer Journey Analytics
-source-git-commit: a646d1f35308dc1f1d9f06cf94835534bd8b8da6
+source-git-commit: c209341400bf4e0c00719075f0fc82f81ca9dbb4
 workflow-type: tm+mt
-source-wordcount: '1249'
-ht-degree: 97%
+source-wordcount: '1269'
+ht-degree: 96%
 
 ---
 
@@ -234,7 +234,7 @@ ht-degree: 97%
       + [Venn](../analysis-workspace/visualizations/venn.md)
    + Bedienfelder {#panels}
       + [Überblick](../analysis-workspace/c-panels/panels.md)
-      + [Leer](../analysis-workspace/c-panels/blank-panel.md)
+      + [Leeres Bedienfeld](../analysis-workspace/c-panels/blank-panel.md)
       + [Attribution](../analysis-workspace/c-panels/attribution.md)
       + [Experimentieren](../analysis-workspace/c-panels/experimentation.md)
       + [Freiform](../analysis-workspace/c-panels/freeform-panel.md)
@@ -254,6 +254,12 @@ ht-degree: 97%
       + [Herunterladen](../analysis-workspace/export/download-send.md)
       + [Senden und planen](../analysis-workspace/export/t-schedule-report.md)
       + [Exportieren in die Cloud](../analysis-workspace/export/export-cloud.md)
+   + Attribution {#attribution}
+      + [Übersicht über Attribution](../analysis-workspace/attribution/overview.md)
+      + [Modell, Container und Lookback-Fenster](../analysis-workspace/attribution/models.md)
+      + [Algorithmische Attribution](../analysis-workspace/attribution/algorithmic.md)
+      + [Best Practices](../analysis-workspace/attribution/best-practices.md)
+      + [Häufig gestellte Fragen](../analysis-workspace/attribution/faq.md)
    + Anomalieerkennung {#anomaly-detection}
       + [Überblick](../analysis-workspace/c-anomaly-detection/anomaly-detection.md)
       + [Anzeigen von Anomalien](../analysis-workspace/c-anomaly-detection/view-anomalies.md)
@@ -268,7 +274,7 @@ ht-degree: 97%
       + [Optimieren der Leistung](../analysis-workspace/workspace-faq/optimizing-performance.md)
       + [Fehler- und Fehlerbehebung](../analysis-workspace/workspace-faq/error-messages.md)
       + [Einschränkungen](../analysis-workspace/workspace-faq/aw-limitations.md)
-      + [Administrationsanforderungen](../analysis-workspace/workspace-faq/frequently-asked-questions-analysis-workspace.md)
+      + [Voraussetzungen](../analysis-workspace/workspace-faq/frequently-asked-questions-analysis-workspace.md)
       + [Barrierefreiheit](../analysis-workspace/workspace-faq/aw-accessibility.md)
 
 + Content Analytics {#content-analytics}
@@ -336,7 +342,7 @@ ht-degree: 97%
       + [Freigeben von Segmenten](/help/components/segments/seg-share.md)
       + [Taggen von Segmente](/help/components/segments/seg-tag.md)
       + [Filtern der Segmentliste](/help/components/segments/seg-filter.md)
-      + [Markieren von Segmenten als Favoriten](/help/components/segments/seg-favorite.md)
+      + [Segmente als Favoriten markieren](/help/components/segments/seg-favorite.md)
       + [Genehmigen von Segmenten](/help/components/segments/seg-approve.md)
       + [Segmente kopieren](/help/components/segments/seg-copy.md)
       + [Verwalten von Segmenten](/help/components/segments/seg-manage.md)
@@ -346,10 +352,12 @@ ht-degree: 97%
       + [Überblick](../components/calc-metrics/calc-metr-overview.md)
       + Workflow {#cm-workflow}
          + [Erstellen von berechneten Metriken](../components/calc-metrics/cm-workflow/cm-workflow.md)
+         + [Suchen von Metriken](../components/calc-metrics/cm-workflow/cm-finding.md)
          + [Erstellen berechneter Metriken](../components/calc-metrics/cm-workflow/cm-build-metrics.md)
-         + [Metriken suchen](../components/calc-metrics/cm-workflow/cm-finding.md)
+         + [Ein einfaches Beispiel](../components/calc-metrics/cm-workflow/cm-pvv.md)
+         + [Ein komplexeres Beispiel](../components/calc-metrics/cm-workflow/cm-orders-participation.md)
          + [Metriktyp und Attribution](../components/calc-metrics/cm-workflow/m-metric-type-alloc.md)
-         + [Erstellen einer Teilnahmemetrik](../components/calc-metrics/cm-workflow/participation-metric.md)
+         + [Teilnahmemetriken](../components/calc-metrics/cm-workflow/participation-metric.md)
          + [Segmentierte Metriken](../components/calc-metrics/cm-workflow/metrics-with-segments.md)
          + [Segmente stapeln und ersetzen](../components/calc-metrics/cm-workflow/cm-stack-seg.md)
          + [Berechnete Metriken filtern](../components/calc-metrics/cm-workflow/cm-filter.md)

@@ -1,12 +1,12 @@
 ---
-description: Filtern nach Tags, Datenansicht, Eigentümern und anderen Filtern (Alle anzeigen, Meine, Für mich freigegeben, Favoriten und Genehmigt).
-title: Berechnete Metriken filtern
+description: Erfahren Sie, wie Sie berechnete Metriken nach Tags, Datenansicht, Eigentümern und anderen Filtern filtern können.
+title: Filtern der Liste der berechneten Metriken
 feature: Calculated Metrics
 exl-id: 902da464-14de-45b9-bd92-d2db064cb095
-source-git-commit: 1907d94a0f53ee65a3839d879da6c06092f75e0f
+source-git-commit: c209341400bf4e0c00719075f0fc82f81ca9dbb4
 workflow-type: tm+mt
-source-wordcount: '142'
-ht-degree: 29%
+source-wordcount: '141'
+ht-degree: 27%
 
 ---
 

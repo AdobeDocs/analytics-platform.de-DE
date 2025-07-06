@@ -1,18 +1,18 @@
 ---
-description: Mit dem Manager für berechnete Metriken können Sie freigeben, filtern, taggen, genehmigen, kopieren, löschen und als Favoriten markieren.
-title: Manager für berechnete Metriken
+description: Erfahren Sie, wie Sie berechnete Metriken freigeben, filtern, taggen, genehmigen, kopieren und löschen und berechnete Metriken als Favoriten markieren können.
+title: Berechnete Metriken verwalten
 feature: Calculated Metrics
 exl-id: 8b257ecc-a596-4b34-ac26-eda16835f1ba
-source-git-commit: b3c7ceedec7b3f6a916e97bab38fd55f1d6c7f51
+source-git-commit: c209341400bf4e0c00719075f0fc82f81ca9dbb4
 workflow-type: tm+mt
 source-wordcount: '901'
 ht-degree: 29%
 
 ---
 
-# Berechnete Metriken verwalten
+# Verwalten berechneter Metriken
 
-Sie können berechnete Metriken freigeben, filtern, taggen, genehmigen, umbenennen, kopieren, löschen, exportieren und berechnete Metriken über eine zentrale Verwaltungsoberfläche [!UICONTROL Berechnete &#x200B;]&quot; als Favoriten markieren. So verwalten Sie berechnete Metriken:
+Sie können berechnete Metriken freigeben, filtern, taggen, genehmigen, umbenennen, kopieren, löschen, exportieren und berechnete Metriken über eine zentrale Verwaltungsoberfläche [!UICONTROL Berechnete ]&quot; als Favoriten markieren. So verwalten Sie berechnete Metriken:
 
 
 * Wählen Sie **[!UICONTROL Hauptbenutzeroberfläche]** Komponenten“ und dann **[!UICONTROL Berechnete Metriken]** aus.
@@ -69,7 +69,7 @@ Die Filterleiste zeigt ➌ die aktiven Filter an, die vom Bedienfeld Filter auf 
 
 ### Panel „Filter“
 
-Sie können die Liste der berechneten Metriken mithilfe der ➍ des ![Filter](/help/assets/icons/Filter.svg) **[!UICONTROL Filter]** linken Bedienfelds filtern. Das Bedienfeld „Filter“ zeigt den Filtertyp und die Anzahl der berechneten Metriken an, die den spezifischen Filter berücksichtigen. Wählen Sie ![Filter](/help/assets/icons/Filter.svg) aus, um die Anzeige des Bedienfelds „Filter“ umzuschalten.
+Sie können die Liste der berechneten Metriken mithilfe der ![ des ](/help/assets/icons/Filter.svg)Filter **** Filter➍ linken Bedienfelds filtern. Das Bedienfeld „Filter“ zeigt den Filtertyp und die Anzahl der berechneten Metriken an, die den spezifischen Filter berücksichtigen. Wählen Sie ![Filter](/help/assets/icons/Filter.svg) aus, um die Anzeige des Bedienfelds „Filter“ umzuschalten.
 
 Weitere Informationen [ Sie unter „Filtern ](cm-filter.md) Liste berechneter Metriken“.
 

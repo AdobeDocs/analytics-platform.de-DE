@@ -1,14 +1,14 @@
 ---
 title: Komponentenübersicht
-description: Erfahren Sie, welche Komponenten Customer Journey Analytics anbietet und wie Sie sie für die Berichterstellung verwenden können.
+description: Erfahren Sie, welche Komponenten Adobe Analytics bietet und wie Sie Komponenten in Analysis Workspace verwenden können.
 exl-id: f9b0b3c2-7c88-4bef-af33-0d309cafe799
 solution: Customer Journey Analytics
 feature: Components
 role: User
-source-git-commit: 1891f73f4326a178b293e7c3763d0d1dbc000a25
+source-git-commit: c209341400bf4e0c00719075f0fc82f81ca9dbb4
 workflow-type: tm+mt
 source-wordcount: '908'
-ht-degree: 99%
+ht-degree: 98%
 
 ---
 

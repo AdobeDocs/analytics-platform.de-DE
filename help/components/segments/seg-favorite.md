@@ -1,13 +1,13 @@
 ---
-description: Das Kennzeichnen von Segmenten als Favoriten bietet eine weitere Möglichkeit, diese für eine einfache Verwendung zu organisieren.
+description: Erfahren Sie, wie Sie Segmente als Favoriten markieren, um eine weitere Möglichkeit zur Organisation von Segmenten für eine einfache Verwendung zu erhalten.
 title: Segmente als Favoriten markieren
 feature: Filters, Segments
 exl-id: b13457dd-06e5-4316-af7e-edcf4ee46408
 role: User
-source-git-commit: 38be838fccf896a12da3fbadac50e578081312ba
+source-git-commit: c209341400bf4e0c00719075f0fc82f81ca9dbb4
 workflow-type: tm+mt
-source-wordcount: '96'
-ht-degree: 18%
+source-wordcount: '99'
+ht-degree: 0%
 
 ---
 

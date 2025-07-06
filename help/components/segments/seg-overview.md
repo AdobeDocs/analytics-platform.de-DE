@@ -1,13 +1,13 @@
 ---
-title: Überblick über die Segmentierung
+title: Übersicht über die Segmentierung
 description: Erfahren Sie, wofür Segmente verwendet werden und wie Sie ein einfaches Segment erstellen.
 exl-id: 21183e98-6593-4b22-99c7-4a03231acfe9
 feature: Filters, Segments
 role: User
-source-git-commit: 38be838fccf896a12da3fbadac50e578081312ba
+source-git-commit: c209341400bf4e0c00719075f0fc82f81ca9dbb4
 workflow-type: tm+mt
 source-wordcount: '1474'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 

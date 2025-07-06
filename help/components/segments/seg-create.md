@@ -1,10 +1,10 @@
 ---
-title: Erstellen von Segmenten
+title: Segmente erstellen
 description: Grundlegendes zur Benutzeroberfläche zur Segmenterstellung.
 exl-id: b6a921d5-7dd3-4230-88b8-5f1cd313b791
 feature: Filters, Segments
 role: User
-source-git-commit: 38be838fccf896a12da3fbadac50e578081312ba
+source-git-commit: c209341400bf4e0c00719075f0fc82f81ca9dbb4
 workflow-type: tm+mt
 source-wordcount: '262'
 ht-degree: 3%
@@ -17,7 +17,7 @@ Sie können in Customer Journey Analytics verschiedene Segmenttypen erstellen.  
 
 Standardmäßig können nur Administratoren Segmente erstellen. Benutzer haben die Berechtigung, Segmente anzuzeigen, ähnlich wie Benutzer andere Komponenten anzeigen (z. B. Anmerkungen, berechnete Metriken usw.).
 
-Administratoren können jedoch über die [**[!UICONTROL die Berechtigung]** Segmenterstellung **[!UICONTROL für Reporting-]**) unter **[!UICONTROL Bearbeiten von Berechtigungen für]** von CJA Workspace Admin Console an Benutzer ](/help/technotes/access-control.md#user-level-access).
+Administratoren können jedoch über die **** die Berechtigung **[!UICONTROL Segmenterstellung]** für Reporting-**[!UICONTROL ) unter]** Bearbeiten von Berechtigungen für [ von CJA Workspace Admin Console an Benutzer ](/help/technotes/access-control.md#user-level-access).
 
 Sie können ein Segment wie folgt erstellen:
 

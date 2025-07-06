@@ -1,16 +1,16 @@
 ---
-description: Beschreibt das Sortieren und Filtern, die beiden Hauptmethoden zum Auffinden Ihrer Metriken.
+description: Erfahren Sie, wie Sie Metriken finden.
 title: Metriken suchen
 feature: Calculated Metrics
 exl-id: 34d2563a-7cd2-4f22-9ad0-6a3dab8d84ea
-source-git-commit: 46242b86d4a7c0e60a468885fcbaa73c575dfb74
+source-git-commit: c209341400bf4e0c00719075f0fc82f81ca9dbb4
 workflow-type: tm+mt
-source-wordcount: '50'
-ht-degree: 8%
+source-wordcount: '43'
+ht-degree: 9%
 
 ---
 
-# Metriken suchen
+# Suchen von Metriken
 
 Sie können Metriken in Analysis Workspace auf die gleiche Weise finden wie andere Komponententypen.
 

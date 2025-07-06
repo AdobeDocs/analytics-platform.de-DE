@@ -1,13 +1,13 @@
 ---
-description: Sie können einen Workflow einrichten, der die Genehmigung von Segmenten für verschiedene Anwendungsebenen, für bestimmte Abteilungen oder Gruppen sowie die Einhaltung von Berichtsrichtlinien umfasst.
-title: Genehmigen von Segmenten
+description: Wissen, wie Sie als Admin Segmente genehmigen können.
+title: Segmente genehmigen
 feature: Filters, Segments
 exl-id: 3892ef54-3f24-4c7a-868f-f566efaea400
 role: User
-source-git-commit: 38be838fccf896a12da3fbadac50e578081312ba
+source-git-commit: c209341400bf4e0c00719075f0fc82f81ca9dbb4
 workflow-type: tm+mt
-source-wordcount: '131'
-ht-degree: 3%
+source-wordcount: '115'
+ht-degree: 1%
 
 ---
 
@@ -26,4 +26,4 @@ So heben Sie die Genehmigung für Segmente auf:
 1. Wählen Sie in der Aktionsleiste ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) **[!UICONTROL Nicht genehmigen]** aus.
 
 
-Sie können Ihre Segmentliste nach genehmigten Segmenten segmentieren. Wählen Sie **[!UICONTROL Andere Segmente]** im Bedienfeld ![Segment](/help/assets/icons/Filter.svg) **[!UICONTROL Segment]** aus und wählen Sie **[!UICONTROL Genehmigt]**. Weitere Informationen [ Sie unter ](/help/components/segments/seg-filter.md) der Segmentliste .
+Sie können Ihre Segmentliste nach genehmigten Segmenten segmentieren. Wählen Sie **[!UICONTROL Andere Segmente]** im Bedienfeld ![Segment](/help/assets/icons/Filter.svg) **[!UICONTROL Segment]** aus und wählen Sie **[!UICONTROL Genehmigt]**. Weitere [ finden Sie unter ](/help/components/segments/seg-filter.md) der Segmentliste .

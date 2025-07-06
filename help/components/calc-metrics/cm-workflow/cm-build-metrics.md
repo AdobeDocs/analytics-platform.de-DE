@@ -1,12 +1,12 @@
 ---
-description: Der Generator für berechnete Metriken bietet eine Arbeitsfläche, mit der Sie Dimensionen, Segmente und Funktionen per Drag-and-Drop verschieben können, um benutzerdefinierte Metriken basierend auf Containerhierarchielogik, Regeln und Operatoren zu erstellen. Mit diesem integrierten Entwicklungs-Tool können Sie einfache berechnete Metriken oder komplexe, erweiterte berechnete Metriken erstellen und speichern.
-title: Erstellen berechneter Metriken
+description: Erfahren Sie mehr über den Generator für berechnete Metriken , der eine Arbeitsfläche zum Drag-and-Drop von Dimensionen, Metriken, Segmenten und Funktionen bereitstellt, um benutzerdefinierte Metriken basierend auf Container-Hierarchielogik, Regeln und Operatoren zu erstellen.
+title: Metriken erstellen
 feature: Calculated Metrics
 exl-id: 4d03a51d-c676-483c-98e2-d7283e8d71b0
-source-git-commit: ec2fc88372814b01a04d4cc824181222ee55a83d
+source-git-commit: c209341400bf4e0c00719075f0fc82f81ca9dbb4
 workflow-type: tm+mt
-source-wordcount: '1628'
-ht-degree: 71%
+source-wordcount: '1613'
+ht-degree: 96%
 
 ---
 
@@ -27,7 +27,7 @@ Customer Journey Analytics bietet eine Arbeitsfläche zum Ziehen und Ablegen von
 
 Sie können den Generator für berechnete Metriken verwenden, um berechnete Metriken zu erstellen oder zu bearbeiten. Wenn berechnete Metriken auf diese Weise erstellt werden, sind sie in der Komponentenliste verfügbar und können dann in Projekten in Ihrer gesamten Organisation verwendet werden. Alternativ können Sie schnell eine berechnete Metrik erstellen, die nur für das Projekt verfügbar ist, in dem sie erstellt wurde, wie in [Erstellen berechneter Metriken für ein einzelnes Projekt](/help/components/apply-create-metrics.md#create-calculated-metrics-for-a-single-project) in [Metriken](/help/components/apply-create-metrics.md) beschrieben.
 
-[Berechnete Metrik erstellen](cm-workflow.md) beschreibt die verschiedenen Optionen, die zum Erstellen einer neuen berechneten Metrik verfügbar sind.
+Unter [Erstellen einer berechneten Metrik](cm-workflow.md) finden Sie die verschiedenen Optionen zum Erstellen einer neuen berechneten Metrik.
 
 ## Bereiche des Generators für berechnete Metriken
 
@@ -53,10 +53,10 @@ Das Dialogfeld **[!UICONTROL Generator für berechnete Metriken]** wird zum Erst
    | **[!UICONTROL Projektspezifische Metrik]** | Oben in diesem Dialogfeld wird ein Informationsfeld angezeigt, wenn Sie eine berechnete Metrik bearbeiten, die für ein einzelnes Projekt erstellt wurde, wie unter [Erstellen berechneter Metriken für ein einzelnes Projekt](/help/components/apply-create-metrics.md#create-calculated-metrics-for-a-single-project) beschrieben. <p>Wenn Sie diese berechnete Metrik für alle Projekte verfügbar machen möchten, wählen Sie die Option **[!UICONTROL Diese Metrik für alle Projekte verfügbar machen und der Komponentenliste hinzufügen]** aus.</p> |
    | **[!UICONTROL Titel]** ![Erforderlich](/help/assets/icons/Required.svg) | Benennen Sie die berechnete Metrik, beispielsweise mit `Conversion Rate`. |
    | **[!UICONTROL Externe ID]** ![erforderlich](/help/assets/icons/Required.svg) | Der Name der berechneten Metrik bei Verwendung eines externen BI-Tools und der BI-Erweiterung. Der Wert wird automatisch als `undefined_xxx` definiert, es sei denn, Sie überschreiben den Wert. |
-   | **[!UICONTROL Beschreibung]** | Geben Sie eine Beschreibung für das Segment an, z. B. `Calculated metric to define the conversion rate.` Es ist nicht erforderlich, die Formel für die berechnete Metrik zu beschreiben, da die Formel bereits automatisch in [!UICONTROL Zusammenfassung“ &#x200B;]. |
+   | **[!UICONTROL Beschreibung]** | Geben Sie eine Beschreibung für das Segment an, z. B. `Calculated metric to define the conversion rate.` Für die Formel für die berechnete Metrik ist keine Beschreibung erforderlich, da die Formel bereits automatisch in [!UICONTROL Zusammenfassung] verfügbar ist. |
    | **[!UICONTROL Format]** | Wählen Sie ein Format für die berechnete Metrik aus: Sie können zwischen **[!UICONTROL Dezimalzahl]**, **[!UICONTROL Zeit]**, **[!UICONTROL Prozent]** und **[!UICONTROL Währung]** wählen. |
    | **[!UICONTROL Dezimalstellen]** | Geben Sie die Anzahl der Dezimalstellen für das ausgewählte Format an. Nur aktiviert, wenn das ausgewählte Format „Dezimalzahl“, „Währung“ und „Prozent“ ist. |
-   | **[!UICONTROL Aufwärts-Trend anzeigen als]** | Geben Sie an, ob ein Aufwärtstrend der berechneten Metrik als ▲ (**[!UICONTROL (grün)]** oder als ▼ (**[!UICONTROL ) (rot)]** angezeigt wird. |
+   | **[!UICONTROL Aufwärts-Trend anzeigen als]** | Geben Sie an, ob ein Aufwärts-Trend der berechneten Metrik als ▲ **[!UICONTROL Gut (Grün)]** oder als ▼ **[!UICONTROL Schlecht (Rot)]** angezeigt wird. |
    | **[!UICONTROL Währung]** | Geben Sie die Währung der berechneten Metrik an. Nur aktiviert, wenn das ausgewählte Format „Währung“ ist. |
    | **[!UICONTROL Tags]** | Organisieren Sie die berechnete Metrik, indem Sie ein oder mehrere Tags erstellen oder anwenden. Beginnen Sie mit der Eingabe, um nach vorhandenen Tags zu suchen, die Sie auswählen können. Oder drücken Sie die **[!UICONTROL Eingabetaste]**, um ein neues Tag hinzuzufügen. Wählen Sie ![CrossSize75](/help/assets/icons/CrossSize75.svg) aus, um ein Tag zu entfernen. |
    | **[!UICONTROL Vorschau]** | Die Vorschau umfasst die letzten 90 Tage und ist eine Möglichkeit, abzuschätzen, ob Sie Ihre Metrik richtig definiert haben. |
@@ -77,7 +77,7 @@ Das Dialogfeld **[!UICONTROL Generator für berechnete Metriken]** wird zum Erst
 
 ## Definition Builder
 
-Mit dem Definition Builder können Sie per Drag-and-Drop Dimensionen, Metriken, Segmente und Funktionen per Drag-and-Drop verschieben und benutzerdefinierte Metriken auf der Grundlage von Container-Hierarchielogik, Regeln und Operatoren erstellen. In dieser Konstruktion können Sie Standardmetriken, von Adobe definierte Metriken, berechnete Metriken, Segmente, Dimensionen und Funktionen verwenden. Alle diese Komponenten sind über das Panel „Komponenten“ im Generator für berechnete Metriken verfügbar. Darüber hinaus können Sie in der Definition Operatoren und Container verwenden.
+Sie können mit dem Definition Builder Dimensionen, Metriken, Segmente und Funktionen per Drag-and-Drop verschieben, um benutzerdefinierte Metriken basierend auf Container-Hierarchielogik, Regeln und Operatoren zu erstellen. In dieser Konstruktion können Sie Standardmetriken, von Adobe definierte Metriken, berechnete Metriken, Segmente, Dimensionen und Funktionen verwenden. Alle diese Komponenten sind über das Panel „Komponenten“ im Generator für berechnete Metriken verfügbar. Darüber hinaus können Sie in der Definition Operatoren und Container verwenden.
 
 ![Erstellen einer berechneten Metrik](/help/components/calc-metrics/cm-workflow/assets/create-calculated-metric.gif)
 
@@ -87,7 +87,7 @@ Nur Metriken werden als einzelne Komponenten im Bereich **[!UICONTROL Definition
 
 So fügen Sie eine Metrik hinzu:
 
-* Ziehen Sie eine Komponente ![Ereignisse](/help/assets/icons/Event.svg) **[!UICONTROL Metriken]** aus dem Bedienfeld „Komponenten“ auf **[!UICONTROL Ziehen Sie Metriken, Dimensionen, Dimensionselemente, Segmente und/oder Funktionen per Drag-and-Drop hierher]**. Sie können ![Search](/help/assets/icons/Search.svg) in der Komponentenleiste verwenden, um nach bestimmten Komponenten zu suchen.
+* Ziehen Sie eine Komponente des Typs ![Events](/help/assets/icons/Event.svg) **[!UICONTROL Metriken]** aus dem Panel „Komponenten“ auf **[!UICONTROL Platzieren Sie Metriken, Dimensionen, Dimensionselemente, Segmente und/oder Funktionen mittels Drag-and-Drop hier]**. Sie können ![Search](/help/assets/icons/Search.svg) in der Komponentenleiste verwenden, um nach bestimmten Komponenten zu suchen.
 
 Wenn Sie eine berechnete Metrik als Teil Ihrer Definition verwenden, wird die berechnete Metrik erweitert.
 
@@ -133,38 +133,38 @@ Sie fügen Dimensionen, Segmente und Funktionen als Container zu einer Definitio
 
 #### Segment-Container
 
-Sie verwenden das Konzept eines Segment-Containers, um eine [segmentierte Metrik“ ](metrics-with-segments.md). Sie können einen Segment-Container mithilfe eines Segments oder mithilfe eines Segments erstellen, das Sie aus einer Dimension erstellen.
+Sie verwenden das Konzept eines Segment-Containers, um eine [segmentierte Metrik](metrics-with-segments.md) zu erstellen. Sie können einen Segment-Container mithilfe eines Segments oder eines aus einer Dimension erstellten Segments erstellen.
 
 * So fügen Sie einen Segment-Container aus einer Dimension hinzu:
 
-   1. Ziehen Sie eine Komponente ![Dimensionen](/help/assets/icons/Dimensions.svg) **[!UICONTROL Dimensionen]** aus dem Bedienfeld „Komponenten“ auf **[!UICONTROL Ziehen Sie Metriken, Dimensionen, Dimensionselemente, Segmente und/oder Funktionen per Drag-and-Drop hierher]**. Sie können ![Search](/help/assets/icons/Search.svg) in der Komponentenleiste verwenden, um nach bestimmten Komponenten zu suchen.
-   1. Definieren Sie **[!UICONTROL Popup Segment aus Dimension]** die Bedingung für das Segment. Wählen Sie in der Liste der Operatoren einen Wert aus oder geben Sie einen Wert ein, z. B. **[!UICONTROL Monat]** **[!UICONTROL gleich]** ![ChevronDown](/help/assets/icons/ChevronDown.svg) `Sep 2024`.
+   1. Ziehen Sie eine Komponente des Typs ![Dimensionen](/help/assets/icons/Dimensions.svg) **[!UICONTROL Dimensionen]** aus dem Panel „Komponenten“ auf **[!UICONTROL Platzieren Sie Metriken, Dimensionen, Dimensionselemente, Segmente und/oder Funktionen mittels Drag-and-Drop hier]**. Sie können die ![Suche](/help/assets/icons/Search.svg) in der Komponentenleiste verwenden, um nach bestimmten Komponenten zu suchen.
+   1. Definieren Sie im Popup **[!UICONTROL Segment aus Dimension erstellen]** die Bedingung für das Segment. Wählen Sie in der Liste der Operatoren einen Wert aus oder geben Sie einen Wert ein, z. B. **[!UICONTROL Monat]** **[!UICONTROL gleich]** ![ChevronDown](/help/assets/icons/ChevronDown.svg) `Sep 2024`.
    1. Wählen Sie **[!UICONTROL Fertig]** aus. Ein Segment-Container wird der **[!UICONTROL Definition]** hinzugefügt.
 
 
-* Um einen Segment-Container aus einem Segment hinzuzufügen, können Sie Folgendes verwenden:
+* Um einen Segment-Container aus einem Segment hinzuzufügen, können Sie wie folgt vorgehen:
 
-   * Ziehen Sie eine Komponente ![Segmentierung](/help/assets/icons/Segmentation.svg) **[!UICONTROL Segmente]** aus dem Bedienfeld „Komponenten“ auf **[!UICONTROL Ziehen Sie Metriken, Dimensionen, Dimensionselemente, Segmente und/oder Funktionen per Drag-and-Drop hierher]**. Sie können den ![Suche](/help/assets/icons/Search.svg) in der Komponentenleiste verwenden, um nach bestimmten Segmenten zu suchen.
-Der **[!UICONTROL Definition“ wird automatisch ein Segment-Container]** den Namen des Segments hinzugefügt.
+   * Ziehen Sie eine Komponente des Typs ![Segmentierung](/help/assets/icons/Segmentation.svg) **[!UICONTROL Segmente]** aus dem Panel „Komponenten“ auf **[!UICONTROL Platzieren Sie Metriken, Dimensionen, Dimensionselemente, Segmente und/oder Funktionen mittels Drag-and-Drop hier]**. Sie können die ![Suche](/help/assets/icons/Search.svg) in der Komponentenleiste verwenden, um nach bestimmten Segmenten zu suchen.
+Der **[!UICONTROL Definition]** wird automatisch ein Segment-Container mit dem Namen des Segments hinzugefügt.
 
-   * Ziehen Sie eine Komponente ![Segmentierung](/help/assets/icons/Segmentation.svg)**[!UICONTROL Segment]** aus dem Bedienfeld „Komponenten“ in einen generischen Container. Der Container wird in einen Segment-Container geändert.
+   * Ziehen Sie eine Komponente des Typs ![Segmentierung](/help/assets/icons/Segmentation.svg) **[!UICONTROL Segment]** aus dem Panel „Komponenten“ in einen generischen Container. Der Container wird in einen Segment-Container geändert.
 
-   * Wählen Sie ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Hinzufügen]** in einem Container aus:
+   * Wählen Sie ![Hinzufügen](/help/assets/icons/AddCircle.svg) **[!UICONTROL Hinzufügen]** in einem Container aus:
 
-      1. Wählen Sie **[!UICONTROL Segment]** aus. Ein Segment-Container wird der **[!UICONTROL Definition]** hinzugefügt.
-      1. Wählen Sie im neuen Segment-Container ein Segment aus dem [!UICONTROL *Auswählen…*] Dropdown-Menü aus.
+      1. Wählen Sie **[!UICONTROL Segment]** aus. Der **[!UICONTROL Definition]** wird ein Segment-Container hinzugefügt.
+      1. Wählen Sie im neuen Segment-Container ein Segment aus dem Dropdown-Menü [!UICONTROL *Auswählen…*] aus. 
 
   >[!TIP]
   >
   >Sie können einem Container mehr als ein Segment hinzufügen.
 
-  Die Segmente im Container werden nach der Segmentkomponente benannt. z. B. ![Segmentation](/help/assets/icons/Segmentation.svg) **[!UICONTROL Web-Sitzungen]**. Wählen Sie ![InfoOutline](/help/assets/icons/InfoOutline.svg) aus, um ein Popup mit Details zum Segment anzuzeigen. Wählen Sie im Popup die Option ![Bearbeiten](/help/assets/icons/Edit.svg) aus, um die Segmentdefinition zu bearbeiten.
+  Die Segmente im Container werden nach der Segmentkomponente benannt. z. B. ![Segmentierung](/help/assets/icons/Segmentation.svg) **[!UICONTROL Web-Sitzungen]**. Wählen Sie ![Info-Symbol](/help/assets/icons/InfoOutline.svg) aus, um ein Popup mit weiteren Details zum Segment anzuzeigen. Wählen Sie im Popup die Option ![Bearbeiten](/help/assets/icons/Edit.svg) aus, um die Segmentdefinition zu bearbeiten.
 
 So entfernen Sie ein Segment aus einem Container:
 
-* Klicken Sie ![Schließen](/help/assets/icons/Close.svg) neben dem Segmentnamen.
+* Wählen Sie ![Schließen](/help/assets/icons/Close.svg) neben dem Segmentnamen aus.
 
-Siehe [Segmentierte Metriken](metrics-with-segments.md) für weitere Details und Beispiele.
+Weitere Informationen und Beispiele finden Sie unter [Segmentierte Metriken](metrics-with-segments.md).
 
 #### Funktions-Container
 
@@ -172,13 +172,13 @@ Um einen Funktions-Container hinzuzufügen, können Sie wie folgt vorgehen:
 
 * Verwenden Sie die Drag-and-Drop-Funktion:
 
-   1. Ziehen Sie eine Komponente ![Funktion](/help/assets/icons/Effect.svg) **[!UICONTROL Funktionen]** aus dem Bedienfeld „Komponenten“ auf **[!UICONTROL Ziehen Sie Metriken, Dimensionen, Dimensionselemente, Segmente und/oder Funktionen per Drag-and-Drop hierher]**. Sie können ![Search](/help/assets/icons/Search.svg) in der Komponentenleiste verwenden, um nach bestimmten Funktionen zu suchen.
+   1. Ziehen Sie eine Komponente des Typs ![Funktion](/help/assets/icons/Effect.svg) **[!UICONTROL Funktionen]** aus dem Panel „Komponenten“ auf **[!UICONTROL Platzieren Sie Metriken, Dimensionen, Dimensionselemente, Segmente und/oder Funktionen mittels Drag-and-Drop hier]**. Sie können ![Search](/help/assets/icons/Search.svg) in der Komponentenleiste verwenden, um nach bestimmten Funktionen zu suchen.
    1. Der **[!UICONTROL Definition]** wird automatisch ein Funktions-Container mit dem Namen der Funktion hinzugefügt.
 
 * Wählen Sie ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Hinzufügen]** in einem Container aus:
 
    1. Wählen Sie **[!UICONTROL Funktion]**.
-   1. Wählen Sie im Container eine Funktion aus dem [!UICONTROL *Auswählen…*] Dropdown-Menü aus.
+   1. Wählen Sie im Container eine Funktion aus dem Dropdown-Menü [!UICONTROL *Auswählen…*] aus. 
 
 Der Funktions-Container ist nach der Funktionskomponente benannt. Beispiel: ![Function](/help/assets/icons/Effect.svg) **[!UICONTROL SQUARE ROOT (metric)]**. Wählen Sie ![InfoOutline](/help/assets/icons/InfoOutline.svg) aus, um ein Popup mit weiteren Details zur Funktion anzuzeigen. Wählen Sie **[!UICONTROL Weitere Informationen]** aus, um weitere Informationen zur Funktion zu erhalten.
 
@@ -200,5 +200,5 @@ Wählen Sie zum Löschen eines Containers ![Close](/help/assets/icons/Close.svg)
 >[!MORELIKETHIS]
 >
 >[Funktionen verwenden](cm-using-functions.md)
->&#x200B;>[Segmente ](/help/components/segments/seg-overview.md)
+>>[Segmente](/help/components/segments/seg-overview.md)
 >

@@ -1,17 +1,17 @@
 ---
-description: Prognosen in Analysis Workspace verwenden eine Reihe fortschrittlicher statistischer Verfahren, um Prognosewerte zu bestimmen.
-title: Für Prognosen verwendete statistische Verfahren
+description: Erfahren Sie, wie Prognosen in Analysis Workspace eine Reihe fortschrittlicher statistischer Verfahren verwenden, um Prognosewerte zu bestimmen.
+title: Statistische Verfahren
 feature: Visualizations
 role: User
 exl-id: f042a6dd-6af5-4bdd-afc9-07546d8ded6e
-source-git-commit: accd7300c2dd6224e4d154cb6e3889f564e07a1a
+source-git-commit: ce4a21b1a1e89f14316a92fbdce38281db61e666
 workflow-type: tm+mt
-source-wordcount: '549'
+source-wordcount: '545'
 ht-degree: 6%
 
 ---
 
-# Im Prognosedienst verwendete statistische Verfahren
+# Statistische Verfahren
 
 Der Prognoseservice unterstützt derzeit Prophet und hat sich bei den meisten Daten als effizient und zuverlässig erwiesen. Prophet ist ein weit verbreitetes Open-Source-Prognosepaket, das von Meta entwickelt wurde. Sie zerlegt Daten in Komponenten für Trends, Saisonalen Ereignisse und Ereignisse. Das Prophet-Modell ist effizient und lässt sich gut auf viele Prognoseanwendungen skalieren. Außerdem arbeitet das Modell zuverlässig gegen Ausreißer und fehlende Daten.
 
@@ -24,7 +24,7 @@ Die Auswirkungen auf die Feiertage werden berücksichtigt, wenn mehrjährige Dat
 * Martin Luther King Day
 * Tag der Präsidenten
 * Memorial Day (nur USA)
-* &#x200B;4. Juli
+* 4. Juli
 * Thanksgiving (nur USA)
 * Black Friday (nur USA)
 * Cyber Monday (nur USA)

@@ -1,12 +1,12 @@
 ---
-description: Erfahren Sie, wie Sie mit Techniken zur Anomalieerkennung statistische Anomalien identifizieren können.
+description: Erfahren Sie, welche statistischen Verfahren zum Erkennen von Anomalien verwendet werden.
 title: In der Anomalieerkennung verwendete statistische Verfahren
 feature: Anomaly Detection
 exl-id: 7165e7a1-a04f-450e-bffd-e329adac6903
 role: User
-source-git-commit: f3c9a000ae5baa19cb5a6cf0e0343de3a9685b56
+source-git-commit: ce4a21b1a1e89f14316a92fbdce38281db61e666
 workflow-type: tm+mt
-source-wordcount: '800'
+source-wordcount: '799'
 ht-degree: 67%
 
 ---
@@ -34,13 +34,13 @@ Der Algorithmus testet die Eignung jeder dieser Kombinationen, indem er die Komb
 Nach Auswahl des Modells passt der Algorithmus die Ergebnisse basierend auf Feiertagen und jährlicher Saisonalität an. Für Feiertage überprüft der Algorithmus, ob einer der folgenden Feiertage im Datumsbereich des Berichts vorhanden ist:
 
 * Memorial Day (nur USA)
-* &#x200B;4. Juli
+* 4. Juli
 * Thanksgiving (nur USA)
 * Black Friday (nur USA)
 * Cyber Monday (nur USA)
 * 24.–26. Dezember
-* &#x200B;1. Januar
-* &#x200B;31. Dezember
+* 1. Januar
+* 31. Dezember
 
 Diese Feiertage wurden anhand umfangreicher statistischer Analysen einer großen Anzahl von Datenpunkten ausgewählt, um die Feiertage zu ermitteln, die den größten Einfluss in den meisten Kunden-Trends gezeigt haben. Während die Liste sicherlich nicht für alle Kunden oder Geschäftszyklen vollständig ist, verbessert die Anwendung von Feiertagen die Leistung des Algorithmus insgesamt für fast alle Datensätze von Kunden erheblich.
 

@@ -1,13 +1,13 @@
 ---
-description: Filtern nach Tags, Eigentümern und anderen Filtern (Alle anzeigen, Meine, Für mich freigegeben, Favoriten und Genehmigt).
-title: Filtern der Segmentliste
+description: Erfahren Sie, wie Sie Segmente nach Tags, Eigentümern und anderen Filtern filtern können.
+title: Segmente filtern
 feature: Filters, Segments
 exl-id: 25e617da-8249-4332-970a-c2ef00bf42e3
 role: User
-source-git-commit: 38be838fccf896a12da3fbadac50e578081312ba
+source-git-commit: c209341400bf4e0c00719075f0fc82f81ca9dbb4
 workflow-type: tm+mt
-source-wordcount: '176'
-ht-degree: 31%
+source-wordcount: '168'
+ht-degree: 29%
 
 ---
 

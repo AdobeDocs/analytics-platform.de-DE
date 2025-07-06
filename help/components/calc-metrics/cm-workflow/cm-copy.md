@@ -1,12 +1,12 @@
 ---
-description: Beschreibt das Kopieren einer berechneten Metrik in den Manager für berechnete Metriken
-title: Kopieren von berechneten Metriken
+description: Erfahren Sie, wie Sie eine berechnete Metrik in den Manager für berechnete Metriken kopieren.
+title: Berechnete Metriken kopieren
 feature: Calculated Metrics
 exl-id: b1cc1171-aebf-4b97-99db-9bbcef5ea9d7
-source-git-commit: 1907d94a0f53ee65a3839d879da6c06092f75e0f
+source-git-commit: c209341400bf4e0c00719075f0fc82f81ca9dbb4
 workflow-type: tm+mt
 source-wordcount: '100'
-ht-degree: 6%
+ht-degree: 3%
 
 ---
 

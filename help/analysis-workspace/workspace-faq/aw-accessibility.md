@@ -1,13 +1,13 @@
 ---
 description: Erfahren Sie mehr über die Funktionen zur Unterstützung der Barrierefreiheit in Analysis Workspace.
 title: Barrierefreiheit in Analysis Workspace
-feature: FAQ
+feature: Workspace Basics
 exl-id: 1616c625-8914-4ede-815d-e8d62e796ea5
 role: User
-source-git-commit: e07b901f66a59aba1a7a517443eec73387d23c57
+source-git-commit: c209341400bf4e0c00719075f0fc82f81ca9dbb4
 workflow-type: tm+mt
-source-wordcount: '545'
-ht-degree: 94%
+source-wordcount: '546'
+ht-degree: 91%
 
 ---
 
@@ -54,7 +54,7 @@ Die Navigation in [!UICONTROL Analysis Workspace] funktioniert von oben nach unt
 
 ### Tastaturbefehle (Hotkeys)
 
-[!UICONTROL Analysis Workspace] bietet eine umfangreiche Auswahl an [Tastaturbefehlen](/help/analysis-workspace/build-workspace-project/fa-shortcut-keys.md) für einen nahtloseren Workflow. 
+[!UICONTROL Analysis Workspace] bietet einen umfangreichen Satz an [Tastaturbefehlen (Hotkeys)](/help/analysis-workspace/build-workspace-project/fa-shortcut-keys.md) für einen nahtloseren Workflow.
 
 ## Unterstützung für Bildschirmlesehilfen und Vergrößerungs-Software
 

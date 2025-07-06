@@ -1,17 +1,17 @@
 ---
-description: Verwenden von Segmenten in einem Bericht.
+description: Erfahren Sie, wie Sie Segmente in Analysis Workspace verwenden.
 title: Segmente verwenden
 feature: Filters, Segments
 role: User
-source-git-commit: ae18137812eeab00bf0395e07e2eea445f92838d
+exl-id: 3d54dd03-96bf-4551-a523-fb6729eb09cb
+source-git-commit: c209341400bf4e0c00719075f0fc82f81ca9dbb4
 workflow-type: tm+mt
-source-wordcount: '147'
-ht-degree: 0%
+source-wordcount: '148'
+ht-degree: 1%
 
 ---
 
-
-# Segmente verwenden
+# Verwenden von Segmenten
 
 Um Segmente in Analysis Workspace zu verwenden, ziehen Sie einfach ein oder mehrere Segmente aus **[!UICONTROL Segmente]** in die Komponentenleiste und legen Sie sie dort ab:
 

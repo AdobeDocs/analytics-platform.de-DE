@@ -1,9 +1,9 @@
 ---
-description: Sequenzielle Segmente sind Segmente, die den THEN-Operator zum Definieren der Sequenz von Segmentbedingungen verwenden.
-title: Sequenzielle Segmente
+description: Erfahren Sie mehr über sequenzielle Segmente, die den THEN-Operator zum Definieren einer Sequenz von Segmentbedingungen verwenden.
+title: SequentialSegments
 feature: Filters, Segments
 exl-id: 64cb10b5-36f0-42c8-b687-ae5de5ced8b5
-source-git-commit: 38be838fccf896a12da3fbadac50e578081312ba
+source-git-commit: 8e10818efa7da54b0802c56e5388e6c7ef7fd8b6
 workflow-type: tm+mt
 source-wordcount: '2459'
 ht-degree: 4%
@@ -18,7 +18,7 @@ Sequenzielle Segmente erstellen Sie mit dem [!UICONTROL Then] logischen Operator
 
 >[!BEGINSHADEBOX]
 
-Siehe ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Sequenzielle Segmentierung](https://video.tv.adobe.com/v/37428/?quality=12&learn=on&captions=ger){target="_blank"} für ein Demovideo.
+Siehe ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Sequenzielle Segmentierung](https://video.tv.adobe.com/v/25405/?quality=12&learn=on){target="_blank"} für ein Demovideo.
 
 {{videoaa}}
 
@@ -91,7 +91,7 @@ So wenden Sie Zeitbeschränkungen auf den Operator **[!UICONTROL Then]** an:
 1. Wählen Sie ![Uhr](/help/assets/icons/Clock.svg) aus.
 1. Wählen **[!UICONTROL Innerhalb]** oder **[!UICONTROL Nachher]** aus dem Kontextmenü aus.
 1. Geben Sie einen Zeitraum (**[!UICONTROL Minute]**, **[!UICONTROL Stunde]** bis **[!UICONTROL Jahre]**) an.
-1. Wählen Sie ![ChevronDown](/help/assets/icons/ChevronDown.svg) **[!UICONTROL *number *]**&#x200B;aus, um ein Popup zu öffnen, in dem Sie eine Zahl eingeben oder mit&#x200B;**[!UICONTROL -]**&#x200B;oder&#x200B;**[!UICONTROL +]**&#x200B;angeben können.
+1. Wählen Sie ![ChevronDown](/help/assets/icons/ChevronDown.svg) **[!UICONTROL *number *]**aus, um ein Popup zu öffnen, in dem Sie eine Zahl eingeben oder mit**[!UICONTROL -]**oder**[!UICONTROL +]**angeben können.
 
 Um eine Zeitbeschränkung zu entfernen, verwenden Sie ![CrossSize75](/help/assets/icons/CrossSize75.svg).
 
@@ -220,7 +220,7 @@ Beispiele für Ausschlussdefinitionen:
 * **Schließen Sie die Referrerdomäne aus**. Verwenden Sie eine Definition, die nur verweisende Domains von Google.com umfasst und alle anderen ausschließt.
 * **Identifizieren Sie Nicht-Käufer**. Ermitteln Sie, wenn die Bestellungen größer als null sind, und schließen Sie dann die [!UICONTROL Person] aus.
 
-[!UICONTROL Ausschließen] kann verwendet werden, um eine Sequenz zu identifizieren, in der Personen nicht an bestimmten Sitzungen teilnehmen oder bestimmte Ereignisse ausführen. [!UICONTROL Ausschließen] kann auch in eine [!UICONTROL logische Gruppe“ aufgenommen werden &#x200B;]siehe unten).
+[!UICONTROL Ausschließen] kann verwendet werden, um eine Sequenz zu identifizieren, in der Personen nicht an bestimmten Sitzungen teilnehmen oder bestimmte Ereignisse ausführen. [!UICONTROL Ausschließen] kann auch in eine [!UICONTROL logische Gruppe“ aufgenommen werden ]siehe unten).
 
 Sie können Container ausschließen, keine Komponenten.
 
@@ -230,7 +230,7 @@ Nachfolgend finden Sie Beispiele für die Verwendung von [!UICONTROL Ausschließ
 
 #### [!UICONTROL Ausschließen] innerhalb von
 
-Personen identifizieren, die eine Seite besucht haben, eine andere Seite nicht besucht haben und dann eine weitere Seite besucht haben. Sie schließen den Container mit &quot;![&quot; ](/help/assets/icons/Setting.svg) &quot;[!UICONTROL &quot; &#x200B;]. Ein ausgeschlossener Container wird durch einen dünnen roten Balken auf der linken Seite gekennzeichnet.
+Personen identifizieren, die eine Seite besucht haben, eine andere Seite nicht besucht haben und dann eine weitere Seite besucht haben. Sie schließen den Container mit &quot;![&quot; ](/help/assets/icons/Setting.svg) &quot;[!UICONTROL &quot; ]. Ein ausgeschlossener Container wird durch einen dünnen roten Balken auf der linken Seite gekennzeichnet.
 
 ![Sequenz ausschließen](assets/sequence-exclude.png)
 
@@ -296,7 +296,7 @@ Personen identifizieren, die eine Seite besucht haben, dann explizit eine Reihe 
 
 #### [!UICONTROL Ausschließen] [!UICONTROL ODER]
 
-Personen identifizieren, die eine Seite besucht haben, dann explizit keine Seite eines Satzes von Seiten besucht haben, sondern eine weitere Seite besucht haben. Personen, die die -Startseite besucht haben, haben beispielsweise nicht die Seite für Männer und Frauen besucht, sondern die Seite für Kinder.
+Personen identifizieren, die eine Seite besucht haben, dann explizit keine Seite eines Satzes von Seiten besucht haben, sondern eine weitere Seite besucht haben. Personen, die beispielsweise die Startseite und nicht die Männer- und die Frauenseite, sondern die Kinderseite besucht haben.
 
 ![Logische Gruppe ausschließen und](assets/logicgroup-exclude-or.png)
 

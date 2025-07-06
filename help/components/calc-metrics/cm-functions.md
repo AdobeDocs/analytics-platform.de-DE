@@ -1,13 +1,13 @@
 ---
-title: Grundlegende Funktionen
-description: Mit dem Generator für berechnete Metriken können Sie statistische und mathematische Funktionen anwenden, um erweiterte berechnete Metriken zu erstellen.
+title: Einfache Funktionen
+description: Erfahren Sie mehr über die grundlegenden Funktionen für berechnete Metriken.
 feature: Calculated Metrics
 exl-id: 63775753-337b-4dec-a3a2-a3a0ee9aac2e
 role: User
-source-git-commit: 47c5fc27d994667933103f864a253e086050bbf8
-workflow-type: ht
-source-wordcount: '1636'
-ht-degree: 100%
+source-git-commit: c209341400bf4e0c00719075f0fc82f81ca9dbb4
+workflow-type: tm+mt
+source-wordcount: '1868'
+ht-degree: 92%
 
 ---
 
@@ -26,9 +26,9 @@ Mit dem [Generator für berechnete Metriken](cm-workflow/cm-build-metrics.md) k�
 
 Bei einer Tabellenfunktion ist die Ausgabe für jede Tabellenzeile gleich. Bei einer Zeilenfunktion ist die Ausgabe für jede Tabellenzeile unterschiedlich.
 
-Gegebenenfalls wird einer Funktion eine Anmerkung mit dem Typ der Funktion hinzugefügt: [!BADGE Tabelle]{type="Neutral"}[!BADGE Zeile]{type="Neutral"}
+Gegebenenfalls wird einer Funktion eine Anmerkung mit dem Typ der Funktion hinzugefügt: [!BADGE Tabelle]{type="Neutral"} oder [!BADGE Zeile]{type="Neutral"}.
 
-## Was bedeutet der Parameter „include-zeros“? 
+## Was bedeutet der Parameter „include-zeros“?
 
 Damit wird angegeben, ob Nullen in die Berechnung einbezogen werden sollen. In manchen Fällen bedeutet eine Null *nichts*, in anderen Fällen kann sie aber auch wichtig sein.
 
@@ -52,7 +52,7 @@ Ein alternatives Szenario besteht darin, dass Sie zwei Metriken von Interesse ha
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL ABSOLUTE VALUE(metric)]**
 
-[!BADGE Zeile]{type="Neutral"}
+[!BADGE Zeile]{type="Neutral"} Gibt den absoluten Wert einer Zahl zurück. Der absolute Wert einer Zahl ist die Zahl mit einem positiven Wert.
 
 | Argument | Beschreibung |
 |---|---|
@@ -137,7 +137,7 @@ Addiert alle numerischen Werte für eine Metrik innerhalb einer Spalte (über di
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL COUNT(metric)]**
 
-[!BADGE Tabelle]{type="Neutral"}
+[!BADGE Tabelle]{type="Neutral"} Gibt die Anzahl der Werte für eine Metrik innerhalb einer Spalte zurück, die ungleich null sind (die Anzahl der innerhalb einer Dimension gemeldeten eindeutigen Elemente).
 
 | Argument | Beschreibung |
 |---|---|
@@ -157,7 +157,7 @@ Addiert alle numerischen Werte für eine Metrik innerhalb einer Spalte (über di
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL EXPONENT(metric)]**
 
-[!BADGE Zeile ]{type="Neutral"}
+[!BADGE Row]{type="Neutral"} Gibt e hoch einer gegebenen Zahl zurück. Die Konstante e entspricht 2,71828182845904, der Basis des natürlichen Logarithmus. EXPONENT ist die Umkehrung von LN, dem natürlichen Logarithmus einer Zahl.
 
 | Argument | Beschreibung |
 |---|---|
@@ -178,7 +178,7 @@ Addiert alle numerischen Werte für eine Metrik innerhalb einer Spalte (über di
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL MEAN(metric, include_zeros)]**
 
-[!BADGE Tabelle]{type="Neutral"}
+[!BADGE Tabelle]{type="Neutral"} Gibt das arithmetische Mittel (bzw. den Durchschnitt) einer Metrik in einer Spalte zurück.
 
 | Argument | Beschreibung |
 |---|---|
@@ -200,7 +200,7 @@ Addiert alle numerischen Werte für eine Metrik innerhalb einer Spalte (über di
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL MEDIAN(metric, include_zeros)]**
 
-[!BADGE Tabelle]{type="Neutral"}
+[!BADGE Tabelle]{type="Neutral"} Gibt den Median für eine Metrik in einer Spalte zurück. Der Median ist die Zahl in der Mitte einer Zahlenreihe. Das heißt, die Hälfte der Zahlen weist Werte auf, die größer oder gleich dem Median sind, und die Hälfte ist kleiner oder gleich dem Median.
 
 | Argument | Beschreibung |
 |---|---|
@@ -259,7 +259,7 @@ MODULO(MODULO(x,y)+y,y)
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL PERCENTILE(metric, k, include_zeros)]**
 
-[!BADGE Tabelle]{type="Neutral"}
+[!BADGE Tabelle]{type="Neutral"} Gibt das n-te Perzentil zurück, das einen Wert zwischen 0 und 100 darstellt. Wenn n &lt; 0 ist, verwendet die Funktion null. Wenn n > 100 ist, gibt die Funktion 100 zurück.
 
 | Argument | Beschreibung |
 |---|---|
@@ -304,7 +304,7 @@ Gibt die y-te Potenz von x zurück.
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL QUARTILE(metric, quartile, include_zeros)]**
 
-[!BADGE Tabelle]{type="Neutral"}[COLUMN MINIMUM](#column-minimum), [MEDIAN](#median) und [COLUMN MAXIMUM](#column-maximum) geben jeweils denselben Wert zurück wie [QUARTILE](#quartile), wenn „Quartil“ `0` (null), `2` bzw. `4` entspricht.
+[!BADGE Tabelle]{type="Neutral"} Gibt das Quartil der Werte für eine Metrik zurück. Anhand von Quartilen können Sie beispielsweise die oberen 25 % der Produkte finden, die den meisten Umsatz generieren. [COLUMN MINIMUM](#column-minimum), [MEDIAN](#median) und [COLUMN MAXIMUM](#column-maximum) geben jeweils denselben Wert zurück wie [QUARTILE](#quartile), wenn „Quartil“ `0` (null), `2` bzw. `4` entspricht.
 
 | Argument | Beschreibung |
 |---|---|
@@ -435,7 +435,7 @@ Die Summe der Spalten in jeder Zeile.
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL SQUARE ROOT(metric, include_zeros)]**
 
-[!BADGE Zeile]{type="Neutral"}
+[!BADGE Zeile]{type="Neutral"} Gibt die positive Quadratwurzel einer Zahl zurück. Die Quadratwurzel einer Zahl ist der Wert, wenn diese Zahl zur Potenz 1/2 erhoben wird.
 
 | Argument | Beschreibung |
 |---|---|
@@ -455,7 +455,7 @@ Die Summe der Spalten in jeder Zeile.
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL STANDARD DEVIATION(metric, include_zeros)]**
 
-[!BADGE Tabelle]{type="Neutral"}
+[!BADGE Tabelle]{type="Neutral"} Gibt die Standardabweichung oder Quadratwurzel der Varianz basierend auf einer Stichprobenpopulation von Daten zurück.
 
 | Argument | Beschreibung |
 |---|---|
@@ -476,7 +476,7 @@ Die Summe der Spalten in jeder Zeile.
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL VARIANCE(metric, include_zeros)]**
 
-[!BADGE Tabelle]{type="Neutral"}
+[!BADGE Tabelle]{type="Neutral"} Gibt die Varianz basierend auf einer Stichprobenpopulation von Daten zurück.
 
 | Argument | Beschreibung |
 |---|---|

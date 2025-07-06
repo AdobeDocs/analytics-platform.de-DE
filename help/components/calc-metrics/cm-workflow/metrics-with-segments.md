@@ -1,11 +1,11 @@
 ---
-description: Durch die Segmentierung einzelner Metriken können Sie Metriken innerhalb desselben Berichts vergleichen.
+description: Erfahren Sie, wie Sie einzelne Metriken segmentieren, sodass Sie Metriken innerhalb derselben Visualisierung vergleichen können.
 title: Segmentierte Metriken
 feature: Calculated Metrics
 exl-id: 37cc93df-9f51-42b3-918f-ed5864991621
-source-git-commit: b3c7ceedec7b3f6a916e97bab38fd55f1d6c7f51
+source-git-commit: c209341400bf4e0c00719075f0fc82f81ca9dbb4
 workflow-type: tm+mt
-source-wordcount: '485'
+source-wordcount: '490'
 ht-degree: 1%
 
 ---
@@ -30,7 +30,7 @@ In den folgenden Abschnitten erfahren Sie, wie Sie mithilfe segmentierter Metrik
 ## Beliebte Seiten
 
 1. [Erstellen Sie eine berechnete ](cm-workflow.md) aus einem Workspace-Projekt namens `German people`.
-1. Erstellen Sie im [Generator für berechnete ](cm-build-metrics.md) [ ein Segment](/help/components/segments/seg-builder.md) mit dem Titel &quot;`Germany`&quot;, d. h. mithilfe des Felds „CRM-Land“ aus Ihren CRM-Daten, um zu bestimmen, woher eine Person kommt.
+1. Erstellen Sie im [Generator für berechnete ](cm-build-metrics.md)[ ein Segment](/help/components/segments/seg-builder.md) mit dem Titel &quot;`Germany`&quot;, d. h. mithilfe des Felds „CRM-Land“ aus Ihren CRM-Daten, um zu bestimmen, woher eine Person kommt.
 
    >[!TIP]
    >
@@ -90,7 +90,7 @@ Wiederholen Sie die obigen Schritte für die internationale Version Ihrer berech
 
 >[!BEGINSHADEBOX]
 
-Siehe ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Verwenden einer segmentierten berechneten Metrik als implementierungslose Metrik](https://video.tv.adobe.com/v/37931?quality=12&learn=on&captions=ger){target="_blank"} für ein Demovideo.
+Siehe ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Verwenden einer segmentierten berechneten Metrik als implementierungslose Metrik](https://video.tv.adobe.com/v/25407?quality=12&learn=on){target="_blank"} für ein Demovideo.
 
 {{videoaa}}
 

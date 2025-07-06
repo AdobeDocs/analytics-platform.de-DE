@@ -1,12 +1,12 @@
 ---
-description: Sie können Segmente taggen , um sie zu organisieren.
-title: Taggen von Segmente
+description: Erfahren Sie, wie Sie Segmente taggen können, um Segmente zu organisieren.
+title: Segmente taggen
 feature: Filters, Segments
 exl-id: d3b8d9f7-11a4-4eac-8c22-5c86601ec7f3
 role: User
-source-git-commit: 38be838fccf896a12da3fbadac50e578081312ba
+source-git-commit: c209341400bf4e0c00719075f0fc82f81ca9dbb4
 workflow-type: tm+mt
-source-wordcount: '193'
+source-wordcount: '197'
 ht-degree: 4%
 
 ---

@@ -1,12 +1,12 @@
 ---
-description: Verwenden von Schnellsegmenten in Analysis Workspace für Customer Journey Analytics
+description: Erfahren Sie, wie Sie Schnellsegmente in Analysis Workspace verwenden.
 title: Schnellsegmente
 feature: Workspace Basics, Filters, Segments
 role: User
 exl-id: 549e5db5-fcdf-43c5-bc43-590144aee309
-source-git-commit: 21935a0e9e976cd680fb036bb47f4248aaa66890
+source-git-commit: c209341400bf4e0c00719075f0fc82f81ca9dbb4
 workflow-type: tm+mt
-source-wordcount: '1187'
+source-wordcount: '1186'
 ht-degree: 21%
 
 ---
@@ -19,7 +19,7 @@ Schnellsegmente ermöglichen es Ihnen, Daten innerhalb eines Workspace-Projekts 
 
 >[!BEGINSHADEBOX]
 
-See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Schnellsegmente in Analysis Workspace](https://video.tv.adobe.com/v/3410293/?quality=12&learn=on&captions=ger){target="_blank"} finden Sie ein Demovideo.
+See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Schnellsegmente in Analysis Workspace](https://video.tv.adobe.com/v/341466/?quality=12&learn=on){target="_blank"} finden Sie ein Demovideo.
 
 >[!ENDSHADEBOX]
 
@@ -61,7 +61,7 @@ Um ein Schnellsegment zu verwalten, bewegen Sie den Mauszeiger über das spezifi
 
 ## Quick Segment Builder
 
-Unten finden Sie ein Beispiel für den Quick Segment Builder. In diesem Beispiel wird der Builder für ein Schnellsegment namens &quot;`Call Reason = Order Change AND Online Orders is greater than or equal 1`&quot; geöffnet. Beide Schnellsegmente oben gelten für das Bedienfeld **[!UICONTROL Dashboard für durchschnittliche Bestellwerte]** und für alle darin enthaltenen Visualisierungen, wie [!UICONTROL &#x200B; Freiformtabelle Durchschnittlicher Bestellwert pro Land].
+Unten finden Sie ein Beispiel für den Quick Segment Builder. In diesem Beispiel wird der Builder für ein Schnellsegment namens &quot;`Call Reason = Order Change AND Online Orders is greater than or equal 1`&quot; geöffnet. Beide Schnellsegmente oben gelten für das Bedienfeld **[!UICONTROL Dashboard für durchschnittliche Bestellwerte]** und für alle darin enthaltenen Visualisierungen, wie [!UICONTROL  Freiformtabelle Durchschnittlicher Bestellwert pro Land].
 
 ![Quick Segment Builder](assets/quick-filter-builder.png)
 

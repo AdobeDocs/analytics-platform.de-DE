@@ -1,17 +1,17 @@
 ---
 description: Erfahren Sie, wie Sie Prognosen in einer Tabelle oder einem Liniendiagramm anzeigen können.
-title: So zeigen Sie Prognosen in Analysis Workspace an
+title: Prognosen anzeigen
 feature: Visualizations
 role: User
 exl-id: 4a8b602c-e6aa-4a46-bba9-642387e6af88
-source-git-commit: a646d1f35308dc1f1d9f06cf94835534bd8b8da6
+source-git-commit: ce4a21b1a1e89f14316a92fbdce38281db61e666
 workflow-type: tm+mt
-source-wordcount: '367'
-ht-degree: 3%
+source-wordcount: '359'
+ht-degree: 2%
 
 ---
 
-# Anzeigen von Prognosen in Analysis Workspace
+# Anzeigen von Prognosen
 
 Sie können Prognosen in einer Freiformtabelle oder in einem Liniendiagramm anzeigen.
 

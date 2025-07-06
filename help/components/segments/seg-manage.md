@@ -1,20 +1,20 @@
 ---
-title: Verwalten von Segmenten
-description: Erfahren Sie, wie Sie Segmente in Customer Journey Analytics verwalten
+description: Erfahren Sie, wie Sie mit dem Segment-Manager Segmente verwalten können, z. B. Segmente freigeben, filtern, taggen, genehmigen, kopieren, löschen und als Favoriten markieren.
+title: Segmente verwalten
 exl-id: b8869560-0cf1-4e5d-a03c-dfca85d05e66
 feature: Filters, Segments
 role: User
-source-git-commit: 38be838fccf896a12da3fbadac50e578081312ba
+source-git-commit: c209341400bf4e0c00719075f0fc82f81ca9dbb4
 workflow-type: tm+mt
-source-wordcount: '880'
-ht-degree: 34%
+source-wordcount: '930'
+ht-degree: 31%
 
 ---
 
 # Verwalten von Segmenten
 
 
-Sie können [Freigeben](seg-share.md), [Segment](seg-filter.md), [Tag](seg-tag.md), [Genehmigen](seg-approve.md), umbenennen [Kopieren](seg-copy.md), Segmente löschen, exportieren und Segmente über eine zentrale [!UICONTROL Segment]Verwaltungsoberfläche als [Favorit](seg-favorite.md) markieren. So verwalten Sie Segmente:
+Sie können [Freigeben](seg-share.md), [Segment](seg-filter.md), [Tag](seg-tag.md), [Genehmigen](seg-approve.md), umbenennen [Kopieren](seg-copy.md), Segmente löschen, exportieren und Segmente über eine zentrale [Segment](seg-favorite.md)Verwaltungsoberfläche als [!UICONTROL Favorit] markieren. So verwalten Sie Segmente:
 
 * Wählen Sie **[!UICONTROL Hauptbenutzeroberfläche]** Komponenten“ aus und klicken Sie auf **[!UICONTROL Segmente]**.
 
@@ -58,7 +58,7 @@ Sie können Aktionen für Segmente mithilfe der Aktionsleiste ➋. Die Aktionsle
 | ![Suchen](/help/assets/icons/Search.svg) [!UICONTROL *Nach Titel suchen*] | Wenn kein Segment in der Liste ausgewählt ist, suchen Sie mithilfe dieses Suchfelds nach Segmenten. |
 | ![Label](/help/assets/icons/Label.svg) **[!UICONTROL Tag]** | Tagging der ausgewählten Segmente. Wählen Sie im **[!UICONTROL Segment]**-Dialogfeld die Tags für die ausgewählten Segmente aus bzw. heben Sie die Auswahl auf. Wählen Sie **[!UICONTROL Speichern]**, um die Tags für die ausgewählten Segmente zu speichern. Weitere Informationen finden [ unter ](/help/components/segments/seg-tag.md) von Segmenten . |
 | ![Freigeben](/help/assets/icons/ShareAlt.svg) **[!UICONTROL Freigeben]** | Freigeben der ausgewählten Segmente. Im Dialogfeld **[!UICONTROL Segment freigeben]** können Sie ![Suchen](/help/assets/icons/Search.svg) *(Einzelpersonen oder Gruppen* oder **[!UICONTROL Organisation]** oder **[!UICONTROL Gruppen]**. Wählen Sie **[!UICONTROL Speichern]**, um Freigabedetails für die ausgewählten Segmente zu speichern. Weitere Informationen finden [ unter ](seg-share.md) von Segmenten . |
-| ![Löschen](/help/assets/icons/Delete.svg) **[!UICONTROL Löschen]** | Löscht die ausgewählten Segmente. Sie werden zur Bestätigung aufgefordert. |
+| ![Löschen](/help/assets/icons/Delete.svg) **[!UICONTROL Löschen]** | Löscht die ausgewählten Segmente. Sie werden zur Eingabe einer Bestätigung aufgefordert. <br/>Beachten Sie beim Löschen eines Segments Folgendes: <ul><li>Terminierte Berichte und Projekte, auf die dieses Segment angewendet wurde, funktionieren weiterhin normal.</li><li> Terminierte Berichte werden nicht aktualisiert, wenn Sie ein Segment mit demselben Namen bearbeiten.</li> </ul> |
 | ![Bearbeiten](/help/assets/icons/Edit.svg) **[!UICONTROL Umbenennen]** | Ein einzelnes ausgewähltes Segment umbenennen. Wenn diese Option aktiviert ist, können Sie das Segment inline umbenennen. |
 | ![Häkchen](/help/assets/icons/CheckmarkCircle.svg) **[!UICONTROL Genehmigen]** | Genehmigen Sie die ausgewählten Segmente. Weitere Informationen finden [ unter ](seg-approve.md) von Segmenten. |
 | ![Kopieren](/help/assets/icons/Copy.svg) **[!UICONTROL Kopieren]** | Kopiert das ausgewählte Segment. Neue Segmente werden mit demselben Namen und derselben `(Copy)` erstellt. |
@@ -70,6 +70,6 @@ Die Filterleiste zeigt ➌ die aktiven Segmente an, die vom Filterbedienfeld auf
 
 ### Panel „Filter“
 
-Sie können die Liste der Segmente mithilfe der ➍ des ![Filtern](/help/assets/icons/Filter.svg) **[!UICONTROL Filtern]** filtern. Das Bedienfeld „Filter“ zeigt den Filtertyp und die Anzahl der Segmente an, die den spezifischen Filter berücksichtigen. Wählen Sie ![Filter](/help/assets/icons/Filter.svg) aus, um die Anzeige des Bedienfelds „Filter“ umzuschalten.
+Sie können die Liste der Segmente mithilfe der ![ des ](/help/assets/icons/Filter.svg)Filtern **** Filtern➍ filtern. Das Bedienfeld „Filter“ zeigt den Filtertyp und die Anzahl der Segmente an, die den spezifischen Filter berücksichtigen. Wählen Sie ![Filter](/help/assets/icons/Filter.svg) aus, um die Anzeige des Bedienfelds „Filter“ umzuschalten.
 
 Weitere [ finden Sie unter ](seg-filter.md) der Segmentliste .

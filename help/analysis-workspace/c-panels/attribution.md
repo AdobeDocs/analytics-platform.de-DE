@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie das Attributionsbedienfeld in Analysis Worksp
 feature: Panels
 exl-id: 7fdec05b-5d99-48d1-ac1b-c243cb64e487
 role: User
-source-git-commit: 8054aab28c405f6a9dd24306a086c78069032999
+source-git-commit: ce4a21b1a1e89f14316a92fbdce38281db61e666
 workflow-type: tm+mt
-source-wordcount: '664'
-ht-degree: 89%
+source-wordcount: '668'
+ht-degree: 85%
 
 ---
 
@@ -31,7 +31,7 @@ ht-degree: 89%
 
 >[!BEGINSHADEBOX]
 
-_In diesem Artikel wird das Panel „Attribution“ in_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**&#x200B;_ beschrieben.<br/>_Unter [Panel „Attribution“ ](https://experienceleague.adobe.com/de/docs/analytics/analyze/analysis-workspace/panels/attribution) finden Sie die Version dieses Artikels für_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics**._
+_In diesem Artikel wird das Panel „Attribution“ in_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**_ beschrieben.<br/>_Unter [Panel „Attribution“ ](https://experienceleague.adobe.com/de/docs/analytics/analyze/analysis-workspace/panels/attribution) finden Sie die Version dieses Artikels für_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**._
 
 >[!ENDSHADEBOX]
 
@@ -66,7 +66,7 @@ Sie können das Panel „Attribution“ mithilfe der folgenden Eingabeeinstellun
 
    ![Das Fenster des Panels „Attribution“ mit mehreren ausgewählten Dimensionen und Metriken.](assets/attribution-panel.png)
 
-1. Wählen Sie ein oder mehrere [Attributionsmodelle](#attribution-models) aus **[!UICONTROL Enthaltene Modelle]** und ein [Lookback-Fenster](#lookback-window) aus dem **[!UICONTROL Lookback-Fenster]** aus, das Sie für den Vergleich verwenden möchten.
+1. Wählen Sie mindestens [Attributionsmodelle](#attribution-models) aus **[!UICONTROL Einbezogene Modelle]**, den [Container](#container) aus **[!UICONTROL Container]** und ein [Lookback-Fenster](#lookback-window) aus dem **[!UICONTROL Lookback-Fenster]**, das Sie für den Vergleich verwenden möchten.
 
 1. Wählen Sie **[!UICONTROL Erstellen]** aus, um die Visualisierungen im Panel zu erstellen.
 
@@ -88,7 +88,7 @@ Die folgenden Visualisierungen sind Teil der Panel-Ausgabe.
 * **Trendleistung**: Zeigt den Trend der zugeordneten Konvertierungen für das Element der obersten Dimension. Durch die Auswahl anderer Zeilen in der angrenzenden Freiformtabelle wird die Visualisierung entsprechend Ihrer Auswahl aktualisiert.
 * **Fluss**: Hiermit können Sie anzeigen, mit welchen Kanälen am häufigsten interagiert wird und wie sich die Reihenfolge in der Journey einer Person darstellt.
 
-## Attributionsmodelle
+## Attributionsmodell
 
 {{attribution-models-details}}
 
