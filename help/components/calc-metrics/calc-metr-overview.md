@@ -20,7 +20,7 @@ Berechnete Metriken sind benutzerdefinierte Metriken, die Sie aus vorhandenen Me
 
 >[!BEGINSHADEBOX]
 
-Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Einführung in berechnete Metriken](https://video.tv.adobe.com/v/31787/?quality=12&learn=on){target="_blank"} finden Sie ein Demovideo.
+Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Einführung in berechnete Metriken](https://video.tv.adobe.com/v/33672/?quality=12&learn=on&captions=ger){target="_blank"} finden Sie ein Demovideo.
 
 >[!ENDSHADEBOX]
 
