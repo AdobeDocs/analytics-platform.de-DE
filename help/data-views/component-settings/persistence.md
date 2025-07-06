@@ -1,14 +1,14 @@
 ---
-title: Persistenz-Komponenteneinstellungen
+title: Persistenz -Komponenteneinstellungen
 description: Bestimmen, wie oder ob Dimensionswerte von einem Ereignis zum nächsten bestehen bleiben.
 exl-id: b8b234c6-a7d9-40e9-8380-1db09610b941
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
+source-git-commit: 8e10818efa7da54b0802c56e5388e6c7ef7fd8b6
 workflow-type: tm+mt
-source-wordcount: '1053'
-ht-degree: 83%
+source-wordcount: '1037'
+ht-degree: 69%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 83%
 >[!CONTEXTUALHELP]
 >id="dataview_component_dimension_persistence"
 >title="Persistenz"
->abstract="Konfigurieren Sie das standardmäßige Zuordnungsmodell, das auf eine Dimension angewendet wird. Die Zuordnung erfolgt vor den Segmenten in Berichten. Weitere Informationen finden Sie unter [Zuweisungseinstellungen](/help/data-views/component-settings/persistence.md#allocation-settings), [Ablaufeinstellungen](/help/data-views/component-settings/persistence.md#expiration-settings), [Bindungsdimension](/help/data-views/component-settings/persistence.md#binding-dimension) und [Bindungsmetriken](/help/data-views/component-settings/persistence.md#binding-metric)."
+>abstract="Konfigurieren Sie das standardmäßig auf eine Dimension angewendete Zuordnungsmodell. Die Zuordnung erfolgt beim Reporting vor den Segmenten."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -40,19 +40,19 @@ ht-degree: 83%
 
 * Mit **Gültigkeit** können Sie festlegen, wie lange ein Dimensionselement über das Ereignis hinaus bestehen bleibt, für das es festgelegt ist.
 
-[!UICONTROL Persistenz] ist nur für Dimensionen verfügbar und rückwirkend für die Daten, auf die sie angewendet wird. Es handelt sich um eine sofortige Datenumwandlung, die vor der Anwendung von Segmentierungen oder anderen Analysevorgängen erfolgt.
+[!UICONTROL Persistenz] ist nur in Dimensionen verfügbar und rückwirkend für die Daten, auf die sie angewendet wird. Es handelt sich um eine sofortige Datenumwandlung, die vor der Anwendung von Segmentierungen oder anderen Analysevorgängen erfolgt.
 
 | Einstellung | Beschreibung |
 | --- | --- |
 | [!UICONTROL Persistenz festlegen] | Aktivieren Sie die Persistenz für die Dimension. Wenn die Persistenz nicht aktiviert ist, bezieht sich die Dimension nur auf Metriken, die im selben Ereignis vorhanden sind. Diese Einstellung ist standardmäßig aktiviert. |
-| [!UICONTROL Zuordnung] | Hier können Sie das Zuordnungsmodell angeben, das für eine Dimension für Persistenz verwendet wird. Die Optionen sind:<ul><li>**[!UICONTROL Zuletzt verwendet]**: Werte in der Dimension bleiben so lange bestehen, bis sie durch nachfolgende Werte überschrieben werden</li><li> **[!UICONTROL Original]**: Der erste Wert für diese Dimension bleibt bestehen und wird nicht durch nachfolgende Werte überschrieben</li><li>**[!UICONTROL Alle]**: Alle Werte für diese Dimension bleiben gleichzeitig bestehen</li><li>**[!UICONTROL Erster bekannter]**: Der erste Wert für diese Dimension wird verwendet und wird auf alle Ereignisse davor und danach angewendet.</li><li>**[!UICONTROL Letzter bekannter]**: Der letzte Wert für diese Dimension wird verwendet und wird auf alle Ereignisse davor und danach angewendet.</li></ul> |
-| [!UICONTROL Ablauf] | Hier können Sie das Persistenzfenster für eine Dimension angeben. Die Optionen sind: <ul><li>**[!UICONTROL Sitzung]** (Standard)</li><li>**[!UICONTROL Person]**</li><li>**[!UICONTROL Benutzerdefinierte Zeit]**</li><li>**[!UICONTROL Metrik]**</li></ul>  Möglicherweise brauchen Sie die Option, dass die Dimension bei einem Kauf ablaufen soll (z. B. interne Suchbegriffe oder andere Merchandising-Verwendungsfälle). Die maximale Gültigkeitsdauer, die Sie einstellen können, beträgt 90 Tage. Wenn Sie die Zuordnung [!UICONTROL Alle] auswählen, ist nur die Gültigkeit [!UICONTROL Sitzung] oder [!UICONTROL Person] verfügbar. |
+| [!UICONTROL Zuordnung] | Geben Sie das Zuordnungsmodell an, das für eine Dimension zur Persistenz verwendet wird. Die Optionen sind:<ul><li>**[!UICONTROL Zuletzt verwendet]**: Werte in der Dimension bleiben so lange bestehen, bis sie durch nachfolgende Werte überschrieben werden</li><li> **[!UICONTROL Original]**: Der erste Wert für diese Dimension bleibt bestehen und wird nicht durch nachfolgende Werte überschrieben</li><li>**[!UICONTROL Alle]**: Alle Werte für diese Dimension bleiben gleichzeitig bestehen</li><li>**[!UICONTROL Erster bekannter]**: Der erste Wert für diese Dimension wird verwendet und wird auf alle Ereignisse davor und danach angewendet.</li><li>**[!UICONTROL Letzter bekannter]**: Der letzte Wert für diese Dimension wird verwendet und wird auf alle Ereignisse davor und danach angewendet.</li></ul> |
+| [!UICONTROL Ablauf] | Persistenzfenster für eine Dimension angeben. Die Optionen sind: <ul><li>**[!UICONTROL Sitzung]** (Standard)</li><li>**[!UICONTROL Person]**</li><li>**[!UICONTROL Benutzerdefinierte Zeit]**</li><li>**[!UICONTROL Metrik]**</li></ul>  Möglicherweise brauchen Sie die Option, dass die Dimension bei einem Kauf ablaufen soll (z. B. interne Suchbegriffe oder andere Merchandising-Verwendungsfälle). Die maximale Gültigkeitsdauer, die Sie festlegen können, beträgt 90 Tage. Wenn Sie die Zuordnung [!UICONTROL Alle] auswählen, ist nur die Gültigkeit [!UICONTROL Sitzung] oder [!UICONTROL Person] verfügbar. |
 
 {style="table-layout:auto"}
 
 ## [!UICONTROL Zuordnungs]-Einstellungen
 
-Details zu den verfügbaren Zuordnungseinstellungen.
+Die verfügbaren Zuordnungseinstellungen sind:
 
 * **[!UICONTROL Zuletzt verwendet]**: behält den letzten (nach Zeitstempel) in der Dimension vorhandenen Wert bei. Alle nachfolgenden Werte, die innerhalb des Gültigkeitszeitraums der Dimension auftreten, ersetzen den vorherigen Wert. Wenn „Kein Wert als Wert behandeln“ für diese Dimension unter [Optionen für keinen Wert](no-value-options.md) aktiviert ist, überschreiben leere Werte vorherige Werte. Betrachten Sie beispielsweise die folgende Tabelle mit der Zuordnung [!UICONTROL Zuletzt verwendet] und der Gültigkeit [!UICONTROL Sitzung]:
 
@@ -61,7 +61,7 @@ Details zu den verfügbaren Zuordnungseinstellungen.
   | Datensatzwerte |  | C | B |  | A |
   | Zuletzt verwendete Zuordnung |  | C | B | B | A |
 
-* **[!UICONTROL Original]**: Behält den ursprünglichen Wert nach Zeitstempel bei, der innerhalb der Dimension für die Dauer des Gültigkeitszeitraums vorhanden ist. Wenn diese Dimension einen Wert hat, wird er nicht überschrieben, wenn bei einem nachfolgenden Ereignis ein anderer Wert auftritt. Betrachten Sie beispielsweise die folgende Tabelle mit der Zuordnung [!UICONTROL Original] und der Gültigkeit [!UICONTROL Sitzung]:
+* **[!UICONTROL Original]**: Behält den ursprünglichen Wert nach Zeitstempel bei, der innerhalb der Dimension für die Dauer des Gültigkeitszeitraums vorhanden ist. Wenn diese Dimension einen Wert hat, wird er nicht überschrieben, wenn bei einem nachfolgenden Ereignis ein anderer Wert angezeigt wird. Betrachten Sie beispielsweise die folgende Tabelle mit der Zuordnung [!UICONTROL Original] und der Gültigkeit [!UICONTROL Sitzung]:
 
   | Dimension | Treffer 1 | Treffer 2 | Treffer 3 | Treffer 4 | Treffer 5 |
   | --- | --- | --- | --- | --- | --- |
@@ -87,7 +87,7 @@ Details zu den verfügbaren Zuordnungseinstellungen.
 
 ## [!UICONTROL Gültigkeits]-Einstellungen
 
-Details zu den verfügbaren Gültigkeitseinstellungen.
+Die verfügbaren Ablaufeinstellungen sind:
 
 * **Sitzung**: Läuft nach einer Sitzung ab. Standardgültigkeitsfenster.
 * **Reporting-Fenster „Person“**: Läuft am Ende des Reporting-Fensters ab.
@@ -103,12 +103,12 @@ Details zu den verfügbaren Gültigkeitseinstellungen.
 
 Ein Dropdown-Menü, mit dem Sie die Persistenz eines Dimensionswerts an Dimensionswerte in einer anderen Dimension binden können. Gültige Optionen umfassen andere Dimensionen, die in der Datenansicht enthalten sind.
 
-Beispiele für die effektive Verwendung von Bindungsdimensionen finden Sie in [Verwenden von Bindungsdimensionen und Metriken in Customer Journey Analytics](../../use-cases/data-views/binding-dimensions-metrics.md).
+Siehe [Verwenden von Bindungsdimensionen und Metriken in Customer Journey Analytics](../../use-cases/data-views/binding-dimensions-metrics.md) für Beispiele zur effektiven Verwendung von Bindungsdimensionen.
 
 
 >[!BEGINSHADEBOX]
 
-Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Bindungsdimensionen](https://video.tv.adobe.com/v/3409824/?quality=12&learn=on&captions=ger){target="_blank"} finden Sie ein Demovideo.
+Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Bindungsdimensionen](https://video.tv.adobe.com/v/342694/?quality=12&learn=on){target="_blank"} finden Sie ein Demovideo.
 
 >[!ENDSHADEBOX]
 
@@ -119,4 +119,4 @@ Ein Dropdown-Menü, über das Sie eine Metrik auswählen können, die als Bindun
 
 Diese Einstellung wird nur angezeigt, wenn die Binding-Dimension im Objekt-Array niedriger ist als die Komponente. Wenn in einem Ereignis eine Bindungsmetrik vorhanden ist, werden Dimensionswerte von der Ereignisebene auf die untere Schemaebene der Bindungsdimension kopiert.
 
-Im zweiten Beispiel unter [Verwenden von Bindungsdimensionen und Metriken in Customer Journey Analytics](../../use-cases/data-views/binding-dimensions-metrics.md) finden Sie weitere Informationen zur effektiven Verwendung von Bindungsmetriken.
+Siehe das zweite Beispiel unter [Verwenden von Bindungsdimensionen und Metriken in Customer Journey Analytics](../../use-cases/data-views/binding-dimensions-metrics.md) für weitere Informationen zur effektiven Verwendung von Bindungsmetriken.
