@@ -4,10 +4,10 @@ title: Funktionsvergleich von Warnhinweisen Customer Journey Analytics und Adobe
 feature: Workspace Basics
 role: User, Admin
 exl-id: 04e819c4-9fb5-4459-9f8b-40d78385ed90
-source-git-commit: 1891f73f4326a178b293e7c3763d0d1dbc000a25
+source-git-commit: 9e07dfc84bc06aef987d99c225cefb4e0406f552
 workflow-type: tm+mt
-source-wordcount: '558'
-ht-degree: 23%
+source-wordcount: '487'
+ht-degree: 24%
 
 ---
 
@@ -45,16 +45,8 @@ Weitere Informationen zum Anpassen der Verzögerung und die dabei zu berücksich
 
 <!-- Starting with "However," the rest of this information should probably go into the actual documentation where we document the option to adjust the delay. -->
 
-## Warnhinweis aus Analysis Workspace erstellen nicht verfügbar
+## Warnhinweis erstellen
 
-In Analysis Workspace in Adobe Analytics können Sie Warnhinweise aus Analysis Workspace auf eine der unten beschriebenen Arten erstellen. In Customer Journey Analytics sind die Optionen zum Erstellen von Warnhinweisen aus Analysis Workspace noch nicht verfügbar. Greifen Sie stattdessen auf die Warnhinweiserstellung zu, wie in [Warnhinweise erstellen](/help/components/c-intelligent-alerts/alert-builder.md) beschrieben.
+In Analysis Workspace in Adobe Analytics können Sie [Warnhinweise aus Analysis Workspace auf verschiedene Arten erstellen](https://experienceleague.adobe.com/en/docs/analytics/components/alerts/alert-builder). In Customer Journey Analytics können Sie [Warnhinweis erstellen](alert-builder.md) in Analysis Workspace nur aus einer Auswahl in einer Freiformtabelle erstellen.
 
-In Adobe Analytics sind die folgenden Optionen verfügbar:
-
-* Wählen Sie mindestens ein Zeilenelement in einer Freiformtabelle aus, klicken Sie mit der rechten Maustaste darauf und wählen Sie **[!UICONTROL Warnhinweis aus Auswahl erstellen]**.
-
-  Dadurch wird die Warnhinweiserstellung sofort vorab ausgefüllt, um einen Warnhinweis mit den richtigen Metriken und Segmenten zu erstellen.
-
-* Öffnen Sie ein Projekt in Analysis Workspace und wählen Sie **[!UICONTROL Komponenten]** > **[!UICONTROL Warnhinweis erstellen]** aus.
-
-* Öffnen Sie ein Projekt in Analysis Workspace und verwenden Sie dann den folgenden Tastaturbefehl: **[!UICONTROL *Strg *]**+**[!UICONTROL * Umschalt *]** + **[!UICONTROL *a *]**(Windows) oder&#x200B;**[!UICONTROL * cmd *]** + **[!UICONTROL *Umschalt *]**+**[!UICONTROL * a *]** (macOS).
+Sowohl Adobe Analytics als auch Customer Journey Analytics unterstützen die Erstellung von Warnhinweisen über den [Warnhinweis-Manager](alert-manager.md)

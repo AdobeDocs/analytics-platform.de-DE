@@ -4,10 +4,10 @@ title: Erstellen von Warnhinweisen
 feature: Workspace Basics
 role: User, Admin
 exl-id: 5b4b2e2b-0a73-48df-a40c-98d2c47f94c8
-source-git-commit: 0e9dc47b80db142801a94dcbf31470d99a610949
+source-git-commit: 9e07dfc84bc06aef987d99c225cefb4e0406f552
 workflow-type: tm+mt
-source-wordcount: '967'
-ht-degree: 68%
+source-wordcount: '990'
+ht-degree: 64%
 
 ---
 
@@ -37,9 +37,9 @@ So erstellen Sie einen Warnhinweis:
 
 1. Wählen Sie in Customer Journey Analytics **[!UICONTROL Komponenten]** > **[!UICONTROL Warnhinweise]** aus. Wählen Sie im [Warnhinweis-Manager](alert-manager.md) die Option ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Hinzufügen]** aus, um einen neuen Warnhinweis zu erstellen, oder wählen Sie einen der aufgelisteten Warnhinweise aus, um einen vorhandenen Warnhinweis zu ändern.
 
-   Die Benutzeroberfläche des [Warnhinweis-Generators](#alert-builder) wird angezeigt.
+1. Wählen Sie in Analysis Workspace ein oder mehrere Zeilenelemente in einer Freiformtabelle aus und wählen Sie **[!UICONTROL Warnhinweis aus Auswahl erstellen]** aus dem Kontextmenü aus. Durch diese Aktion wird die Warnhinweiserstellung sofort vorab ausgefüllt, um einen Warnhinweis mit den richtigen Metriken und Segmenten zu erstellen.
 
-1. Wählen Sie **[!UICONTROL Speichern]** aus, um den Warnhinweis zu speichern. Wählen Sie **[!UICONTROL Speichern unter]** aus, um eine Kopie des Warnhinweises zu speichern.
+Die Benutzeroberfläche des [Warnhinweis-Generators](#alert-builder) wird angezeigt.
 
 
 ## Warnhinweis-Generator
