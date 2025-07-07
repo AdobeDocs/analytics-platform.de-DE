@@ -12,7 +12,7 @@ breadcrumb-title: Handbuch zu Customer Journey Analytics
 source-git-commit: c209341400bf4e0c00719075f0fc82f81ca9dbb4
 workflow-type: tm+mt
 source-wordcount: '1269'
-ht-degree: 96%
+ht-degree: 97%
 
 ---
 
@@ -47,7 +47,7 @@ ht-degree: 96%
       + [Schnellstartanleitung](/help/getting-started/cja-b2b-quick-start-guide.md)
       + [Übergangshandbuch](/help/getting-started/cja-b2b-transition.md)
 
-+ Upgrade und Vergleich {#compare-aa-cja}
++ Aktualisieren und Vergleichen {#compare-aa-cja}
    + Upgrade auf Customer Journey Analytics {#upgrade-to-cja}
       + [Erste Schritte](/help/getting-started/cja-upgrade/cja-upgrade-getstarted.md)
       + [Auswählen des Aktualisierungspfads](/help/getting-started/cja-upgrade/cja-upgrade-path.md)
@@ -97,7 +97,7 @@ ht-degree: 96%
          + [Web SDK-Implementierungsoptionen](/help/getting-started/cja-upgrade/cja-upgrade-websdk-implementation.md)
          + [Konfigurieren des Adobe Analytics Web SDK für Platform](/help/getting-started/cja-upgrade/cja-upgrade-existing-adobe-analytics-websdk.md)
          + [Verwenden der Personalisierung mit Adobe Journey Optimizer](/help/getting-started/cja-upgrade/cja-upgrade-personalization-journeyoptimizer.md)
-   + Mit Adobe Analytics vergleichen {#cja-aa-comparison}
+   + Vergleichen mit Adobe Analytics {#cja-aa-comparison}
       + [Überblick](../getting-started/aa-vs-cja/overview.md)
       + [Verwenden von Adobe Analytics-Daten](../getting-started/aa-vs-cja/aa-data-in-cja.md)
       + [Funktionsunterstützung](../getting-started/aa-vs-cja/cja-aa.md)
@@ -163,7 +163,7 @@ ht-degree: 96%
       + [Opt-out-Einstellungen](../tools/product-usage/opt-out-settings.md)
 
 + Workspace-Projekte {#cja-workspace}
-   + [Analysis Workspace – Übersicht](../analysis-workspace/home.md)
+   + [Überblick über Analysis Workspace](../analysis-workspace/home.md)
    + [Grundlegende Analyse durchführen](../analysis-workspace/perform-basic-analysis.md)
    + [Durchführen einer erweiterten Analyse](../analysis-workspace/perform-adv-analysis.md)
    + Projekte {#build-workspace-project}
@@ -178,8 +178,8 @@ ht-degree: 96%
          + [Überblick](../analysis-workspace/build-workspace-project/workspace-folders/about-folders.md)
          + [Erstellen von Ordnern](../analysis-workspace/build-workspace-project/workspace-folders/create-folders.md)
          + [Verwalten von Ordnern](../analysis-workspace/build-workspace-project/workspace-folders/manage-folders.md)
-         + [Projekte hinzufügen oder verschieben](../analysis-workspace/build-workspace-project/workspace-folders/add-projects.md)
-      + [Tastaturbefehle](../analysis-workspace/build-workspace-project/fa-shortcut-keys.md)
+         + [Hinzufügen oder Verschieben von Projekten](../analysis-workspace/build-workspace-project/workspace-folders/add-projects.md)
+      + [Hotkeys](../analysis-workspace/build-workspace-project/fa-shortcut-keys.md)
       + [Farbpaletten](../analysis-workspace/build-workspace-project/color-palettes.md)
       + [Anzeigen der Dichte](../analysis-workspace/build-workspace-project/view-density.md)
       + [Debugger](../analysis-workspace/build-workspace-project/debugger.md)
@@ -243,7 +243,7 @@ ht-degree: 96%
       + [Verbrachte Zeit bei der Medienwiedergabe](../analysis-workspace/c-panels/media-playback-time-spent.md)
       + [Nächstes oder vorheriges Objekt](../analysis-workspace/c-panels/next-previous.md)
       + [Quick Insights](../analysis-workspace/c-panels/quickinsight.md)
-   + Kuratieren und freigeben {#curate-share}
+   + Kuratieren und Freigeben {#curate-share}
       + [Überblick](../analysis-workspace/curate-share/send-schedule-files.md)
       + [Kuratieren von Projekten](../analysis-workspace/curate-share/curate.md)
       + [Freigeben von Projekten](../analysis-workspace/curate-share/share-projects.md)
@@ -252,7 +252,7 @@ ht-degree: 96%
    + Exportieren {#export}
       + [Überblick](../analysis-workspace/export/export-project-overview.md)
       + [Herunterladen](../analysis-workspace/export/download-send.md)
-      + [Senden und planen](../analysis-workspace/export/t-schedule-report.md)
+      + [Senden und Planen](../analysis-workspace/export/t-schedule-report.md)
       + [Exportieren in die Cloud](../analysis-workspace/export/export-cloud.md)
    + Attribution {#attribution}
       + [Übersicht über Attribution](../analysis-workspace/attribution/overview.md)

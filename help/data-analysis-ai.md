@@ -8,11 +8,11 @@ exl-id: 262d5f15-16cb-4851-a769-7dbd205b2f81
 source-git-commit: 3c3fd6b814485871f2fd9249b0ffa9a0b24a360c
 workflow-type: tm+mt
 source-wordcount: '2371'
-ht-degree: 82%
+ht-degree: 83%
 
 ---
 
-# Visualisieren von Daten mit Data Insights Agent
+# Visualisieren von Daten mit dem Data Insights Agent
 
 >[!AVAILABILITY]
 >
@@ -39,7 +39,7 @@ Die Verwendung von Data Insights Agent zur Beantwortung datenorientierter Fragen
 | **Feedback-Mechanismen** | <ul><li>Daumen hoch</li><li>Daumen runter</li><li>Markierung</li></ul> |  |
 
 
-## Zugriff auf Data Insights Agent verwalten
+## Verwalten des Zugriffs auf den Data Insights Agent
 
 Die folgenden Parameter regeln den Zugriff auf Data Insights Agent in Customer Journey Analytics:
 
@@ -246,7 +246,7 @@ Im Folgenden finden Sie Best Practices für Ihre Customer Journey Analytics-Konf
 >[!MORELIKETHIS]
 >
 >[Einstellungen der Komponente](/help/data-views/component-settings/overview.md)
->&#x200B;>[Datenwörterbuch](/help/components/data-dictionary/data-dictionary-overview.md)
->&#x200B;>[Berechnete Metrik genehmigen](/help/components/calc-metrics/cm-workflow/cm-approving.md)
->&#x200B;>[Segmente freigeben](/help/components/segments/seg-share.md)
+>>[Datenwörterbuch](/help/components/data-dictionary/data-dictionary-overview.md)
+>>[Berechnete Metrik genehmigen](/help/components/calc-metrics/cm-workflow/cm-approving.md)
+>>[Segmente freigeben](/help/components/segments/seg-share.md)
 >
