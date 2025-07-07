@@ -1,13 +1,13 @@
 ---
-description: Das Datenwörterbuch in Analysis Workspace ermöglicht es Benutzenden, die verschiedenen Komponenten in Analysis Workspace zu katalogisieren und im Auge zu behalten, einschließlich ihres Verwendungszwecks, der genehmigt ist, bei dem es sich um Duplikate handelt usw.
+description: Das Datenwörterbuch in Analysis Workspace ermöglicht es Benutzenden, die verschiedenen Komponenten in Analysis Workspace zu katalogisieren und im Auge zu behalten, einschließlich ihres Verwendungszwecks, welche genehmigt sind, welche Duplikate sind usw.
 title: Datenwörterbuch – Überblick
 feature: Components
 role: User, Admin
 exl-id: 8e4b8169-7c7f-4a58-a6c6-70efb0c86ce8
 source-git-commit: f940e5cba11df0ff158093a503213ff1641b1c5d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '569'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 89%
 >[!CONTEXTUALHELP]
 >id="component_datadictionary"
 >title="Datenwörterbuch"
->abstract="Das Datenwörterbuch hilft sowohl Benutzenden als auch Admins, den Überblick zu behalten und die Komponenten in ihrer Customer Journey Analytics-Umgebung besser zu verstehen. <br/>Customer Journey Analytics-Admins sind dafür verantwortlich, im Datenwörterbuch Informationen über jede Komponente zu kuratieren."
+>abstract="Das Datenwörterbuch hilft sowohl Benutzenden als auch Admins dabei, die Komponenten in ihrer Customer Journey Analytics-Umgebung im Auge zu behalten und besser zu verstehen. <br/>Customer Journey Analytics-Admins sind dafür verantwortlich, Informationen zu den einzelnen Komponenten im Datenwörterbuch zu kuratieren."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -30,7 +30,7 @@ Analytics-Administratorinnen und -Administratoren sind dafür verantwortlich, In
 
 >[!BEGINSHADEBOX]
 
-Siehe ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Datenwörterbuch für Analysis Workspace](https://video.tv.adobe.com/v/3418028/?quality=12&learn=on){target="_blank"} für ein Demovideo.
+Unter ![Video-Symbol](/help/assets/icons/VideoCheckedOut.svg) [Datenwörterbuch für Analysis Workspace](https://video.tv.adobe.com/v/3418028/?quality=12&learn=on){target="_blank"} finden Sie ein Demovideo.
 
 {{videoaa}}
 
@@ -103,7 +103,7 @@ Sie können das Datenwörterbuchfenster auf eine der folgenden Arten verändern:
 
   Wenn Sie Analysis Workspace schließen und erneut öffnen, bleibt das Datenwörterbuchfenster an der Stelle, an die Sie es zuletzt verschoben haben. <!--True?-->
 
-* Fenster minimieren.
+* Minimieren Sie das Fenster.
 
   Wenn es minimiert wird, erscheint das Datenwörterbuch als blaue Registerkarte in der rechten unteren Ecke von Analysis Workspace.
 

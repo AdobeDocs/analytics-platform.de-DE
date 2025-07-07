@@ -1,17 +1,17 @@
 ---
-description: Grundlegendes zu Bedienfeldern und deren Verwendung in Analysis Workspace.
-title: Übersicht über Bedienfelder
+description: Machen Sie sich mit Panels und deren Verwendung in Analysis Workspace vertraut.
+title: Überblick über Panels
 feature: Panels
 exl-id: be3e34a0-06c1-4200-b965-96084c2912fd
 role: User
 source-git-commit: 8054aab28c405f6a9dd24306a086c78069032999
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2143'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
-# Übersicht über Bedienfelder {#panels-overview}
+# Überblick über Panels {#panels-overview}
 
 >[!CONTEXTUALHELP]
 >id="workspace_panel_realtime_refresh"
@@ -19,7 +19,7 @@ ht-degree: 99%
 >abstract="Aktivieren Sie diese Option, um Daten und Visualisierungen in diesem Panel in Echtzeit zu aktualisieren."
 
 
-Ein [!UICONTROL Bedienfeld] ist eine Sammlung von Tabellen und Visualisierungen. Sie können über das Symbol oben links in Arbeitsbereich oder über ein [leeres Bedienfeld](/help/analysis-workspace/c-panels/blank-panel.md) auf Bedienfelder zugreifen. Bedienfelder sind hilfreich, wenn Sie Ihre Projekte nach Zeiträumen, Datenansichten oder Anwendungsfällen für Analysen organisieren möchten.
+Ein [!UICONTROL Panel] ist eine Sammlung von Tabellen und Visualisierungen. Sie können über das Symbol oben links in Arbeitsbereich oder über ein [leeres Bedienfeld](/help/analysis-workspace/c-panels/blank-panel.md) auf Bedienfelder zugreifen. Bedienfelder sind hilfreich, wenn Sie Ihre Projekte nach Zeiträumen, Datenansichten oder Anwendungsfällen für Analysen organisieren möchten.
 
 ## Bedienfeldtypen
 
@@ -83,7 +83,7 @@ Sie haben folgende Möglichkeiten:
 
 ## Datenansicht
 
-Jedes Panel ist mit einer [Datenansicht](/help/data-views/data-views.md) verknüpft, die durch den ![Daten](/help/assets/icons/Data.svg) **[!UICONTROL *Namen der Datenansicht *]**&#x200B;im Dropdown-Menü oben rechts im Panel identifiziert wird.
+Jedes Panel ist mit einer [Datenansicht](/help/data-views/data-views.md) verknüpft, die durch den ![Daten](/help/assets/icons/Data.svg) **[!UICONTROL *Namen der Datenansicht *]**im Dropdown-Menü oben rechts im Panel identifiziert wird.
 
 Wenn Sie ein leeres Workspace-Projekt erstellen, ist die Standarddatenansicht für das erste Panel die Datenansicht, an der Sie zuletzt in Customer Journey Analytics gearbeitet haben.
 
@@ -161,7 +161,7 @@ Weitere Informationen finden Sie unter [Schnellsegmente](/help/components/segmen
 
 >[!BEGINSHADEBOX]
 
-Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Dropdown-Segmente](https://video.tv.adobe.com/v/327486?quality=12&learn=on&captions=ger){target="_blank"} finden Sie ein Demovideo.
+Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Dropdown-Segmente](https://video.tv.adobe.com/v/23877?quality=12&learn=on){target="_blank"} finden Sie ein Demovideo.
 
 {{videoaa}}
 

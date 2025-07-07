@@ -5,9 +5,9 @@ feature: Workspace Basics
 role: User, Admin
 exl-id: 23cdf02f-56a1-4465-ae7f-b3a1bcad28af
 source-git-commit: c4c8c0ff5d46ec455ca5333f79d6d8529f4cb87d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1851'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -57,7 +57,7 @@ Weitere Informationen dazu, wie Benutzerinnen und Benutzer ein Projekt basierend
 
 Admins können Unternehmensvorlagen bearbeiten oder löschen.
 
-1. Wählen Sie in Analysis Workspace die Registerkarte [!UICONTROL **Arbeitsbereich**] und dann unter **[!UICONTROL Vorlagen]** in der linken Leiste **[!UICONTROL _Name_des_Anmeldeunternehmens _-Vorlagen]**&#x200B;aus.
+1. Wählen Sie in Analysis Workspace die Registerkarte [!UICONTROL **Arbeitsbereich**] und dann unter **[!UICONTROL Vorlagen]** in der linken Leiste **[!UICONTROL _Name_des_Anmeldeunternehmens _-Vorlagen]**aus.
 
 1. Bei Anzeige der Vorlagen in einer Spaltenansicht ![Spaltenansichtssymbol](assets/column-view-icon.png):
 
