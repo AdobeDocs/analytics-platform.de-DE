@@ -47,6 +47,6 @@ Weitere Informationen zum Anpassen der Verzögerung und die dabei zu berücksich
 
 ## Warnhinweis erstellen
 
-In Analysis Workspace in Adobe Analytics können Sie [Warnhinweise aus Analysis Workspace auf verschiedene Arten erstellen](https://experienceleague.adobe.com/en/docs/analytics/components/alerts/alert-builder). In Customer Journey Analytics können Sie [Warnhinweis erstellen](alert-builder.md) in Analysis Workspace nur aus einer Auswahl in einer Freiformtabelle erstellen.
+In Analysis Workspace in Adobe Analytics können Sie [Warnhinweise aus Analysis Workspace auf verschiedene Arten erstellen](https://experienceleague.adobe.com/de/docs/analytics/components/alerts/alert-builder). In Customer Journey Analytics können Sie [Warnhinweis erstellen](alert-builder.md) in Analysis Workspace nur aus einer Auswahl in einer Freiformtabelle erstellen.
 
 Sowohl Adobe Analytics als auch Customer Journey Analytics unterstützen die Erstellung von Warnhinweisen über den [Warnhinweis-Manager](alert-manager.md)
