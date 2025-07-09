@@ -6,9 +6,9 @@ feature: Basics
 role: User, Admin
 badgePremium: label="B2B Edition"
 exl-id: df2cc922-d214-49b9-8fdb-443cc1dac05b
-source-git-commit: 68f2fe684f6eb9590ab047e893fb04b1cbe1a8cd
+source-git-commit: a9c22cfd7077fd9e1ac4b9ea4ec0e016e9d2425b
 workflow-type: tm+mt
-source-wordcount: '1469'
+source-wordcount: '1468'
 ht-degree: 2%
 
 ---
@@ -87,7 +87,7 @@ Customer Journey Analytics B2B unterscheidet zwischen den folgenden Datentypen u
 | Datentyp | Zeitreihe | Container-Datensätze | Feldeinträge |
 |---|---|---|---|
 | **Datensätze** | **Ereignisdatensätze**<br/> Beispiel:<ul><li>Digitale Analyse</li><li>CRM-Ereignisse</li><li>Persönliche Ereignisse</li><li>Callcenter-Daten</li></ul> | **Profildatensätze**<br/> Beispiel:<ul><li>CRM-Datensätze</li><li>AJO B2B-Einträge</li><li>CDP-Einträge</li><ul> | **Klassifizierungen**<br/> Beispiel:<ul><li>Kampagneneinträge</li><li>Einträge in der Marketing-Liste</li><li>Inhaltsmetadaten</li><li>Produktaufzeichnungen</li></ul> |
-| Voraussetzungen | **Zeitstempel**<br> Jeder Datensatz benötigt:<ul><li>Konto-ID</li><li>ID des globalen Kontos</li><li>Personen-ID</li></ul> | **Konto-ID**<br> Datensätze benötigen eine Container-ID, z. B.:<ul><li>Konto</li><li>Person</li><li>Opportunity</li><li>Käufergruppe</li></ul> | **Übereinstimmende Schlüssel**<br> Datensätze benötigen eine ID, die in einem Container oder Ereignis-Datensatz enthalten ist, z. B.:<ul><li>Kampagnen-ID</li><li>Inhalts-ID</li><li>Produkt-ID</li></ul> |
+| Voraussetzungen | **Zeitstempel**<br> Jeder Datensatz benötigt:<ul><li>Konto-ID</li><li>Globale Konto-ID (optional)</li></ul> | **Konto-ID**<br> Datensätze benötigen eine Container-ID, z. B.:<ul><li>Konto</li><li>Person</li><li>Opportunity</li><li>Käufergruppe</li></ul> | **Übereinstimmende Schlüssel**<br> Datensätze benötigen eine ID, die in einem Container oder Ereignis-Datensatz enthalten ist, z. B.:<ul><li>Kampagnen-ID</li><li>Inhalts-ID</li><li>Produkt-ID</li></ul> |
 
 {style="table-layout:fixed"}
 
