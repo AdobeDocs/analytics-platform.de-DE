@@ -7,7 +7,7 @@ role: User, Admin
 source-git-commit: a646d1f35308dc1f1d9f06cf94835534bd8b8da6
 workflow-type: tm+mt
 source-wordcount: '875'
-ht-degree: 73%
+ht-degree: 79%
 
 ---
 
@@ -41,7 +41,7 @@ Um die Anmerkung zu definieren, verwenden Sie den [[!UICONTROL Anmerkungsgenerat
 >[!CONTEXTUALHELP]
 >id="components_annotations_details"
 >title="Anmerkungsdetails"
->abstract="Anmerkungen ermöglichen es Ihnen, kontextbezogene Informationen und Einblicke zu Daten effektiv an Ihr Unternehmen weiterzugeben. Mit Anmerkungen können Sie Kalenderereignisse an bestimmte Dimensionen und Metriken binden."
+>abstract="Mit Anmerkungen können Sie Ihrer Organisation kontextbezogene Datennuancen und Erkenntnisse effektiv übermitteln. Durch Anmerkungen können Sie Kalenderereignisse an bestimmte Dimensionen und Metriken binden."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -50,7 +50,7 @@ Um die Anmerkung zu definieren, verwenden Sie den [[!UICONTROL Anmerkungsgenerat
 >[!CONTEXTUALHELP]
 >id="components_annotations_scope"
 >title="Anwendungsbereich"
->abstract="Der Umfang ermöglicht es Ihnen anzupassen, welche Daten mit Anmerkungen versehen werden. Berechnete Metriken und Segmente übernehmen nicht automatisch Anmerkungen, die auf die in ihren Definitionen verwendeten Komponenten angewendet werden. Sie können zu einer vorhandenen Anmerkung im Abschnitt „Umfang“ neue berechnete Metriken hinzufügen. Neue Segmente erfordern eine neue Anmerkung."
+>abstract="Mit dem Umfang können Sie anpassen, welche Daten kommentiert werden. Berechnete Metriken und Segmente übernehmen nicht automatisch Anmerkungen, die auf die in ihren Definitionen verwendeten Komponenten angewendet werden. Sie können zu einer vorhandenen Anmerkung im Abschnitt „Umfang“ neue berechnete Metriken hinzufügen. Neue Segmente erfordern eine neue Anmerkung."
 
 <!-- markdownlint-enable MD034 -->
 

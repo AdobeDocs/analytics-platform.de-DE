@@ -51,7 +51,7 @@ Verwenden Sie den folgenden Prozess beim Exportieren vollständiger Tabellen in 
 
 ![Der in Schritt 1 bis 4 beschriebene vollständige Prozess zum Tabellenexport.](assets/export-full-table-process.png)
 
-## Vollständige Tabellen exportieren  {#export-from-workspace}
+## Exportieren von vollständigen Tabellen  {#export-from-workspace}
 
 <!-- markdownlint-disable MD034 -->
 
