@@ -9,9 +9,9 @@ index: true
 user-guide-title: Handbuch zu Customer Journey Analytics
 user-guide-description: Hier erhalten Sie Informationen zu Adobe Customer Journey Analytics und Erläuterungen zur Nutzung von Analysis Workspace mit Daten aus Experience Platform.
 breadcrumb-title: Handbuch zu Customer Journey Analytics
-source-git-commit: c209341400bf4e0c00719075f0fc82f81ca9dbb4
+source-git-commit: 24834f6a1424a885c6f7b3dcf0ad84375e21b462
 workflow-type: tm+mt
-source-wordcount: '1269'
+source-wordcount: '1275'
 ht-degree: 97%
 
 ---
@@ -202,7 +202,7 @@ ht-degree: 97%
       + Kohortentabelle {#cohort-table}
          + [Überblick](../analysis-workspace/visualizations/cohort-table/cohort-analysis.md)
          + [Konfigurieren](../analysis-workspace/visualizations/cohort-table/t-cohort.md)
-         + [Anwendungsszenarien](../analysis-workspace/visualizations/cohort-table/cohort-use-cases.md)
+         + [Anwendungsfälle](../analysis-workspace/visualizations/cohort-table/cohort-use-cases.md)
       + Fallout {#fallout}
          + [Überblick](../analysis-workspace/visualizations/fallout/fallout-flow.md)
          + [Konfigurieren](../analysis-workspace/visualizations/fallout/configuring-fallout.md)
@@ -396,8 +396,10 @@ ht-degree: 97%
       + [Komponenteninformationen im Datenwörterbuch anzeigen](../components/data-dictionary/view-data-dictionary.md)
       + [Bearbeiten von Komponenteneinträgen im Datenwörterbuch](../components/data-dictionary/edit-entries-data-dictionary.md)
       + [Überwachen des Zustands des Datenwörterbuchs](../components/data-dictionary/monitor-data-dictionary-health.md)
+   + Echtzeit-Reporting {#real-time-reporting}
+      + [Überblick](/help/components/real-time/real-time.md)
+      + [Verwenden von Echtzeitberichten](/help/components/real-time/use-real-time.md)
    + [Geplante Projekte](../components/scheduled-projects-manager.md)
-
 + Report Builder {#cja-reportbuilder}
    + [Überblick](../report-builder/rb-overview.md)
    + [Einrichten von Report Builder](../report-builder/report-builder-setup.md)
