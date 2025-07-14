@@ -1,10 +1,10 @@
 ---
-title: Verwenden von Bindungsdimensionen und Metriken beim Customer Journey Analytics
+title: Verwenden von Bindungsdimensionen und Metriken in Customer Journey Analytics
 description: Ordnen Sie den Objekt-Arrays Dimensionen für die komplexe Persistenzanalyse zu.
 exl-id: 5e7c71e9-3f22-4aa1-a428-0bea45efb394
 feature: Use Cases
 role: User
-source-git-commit: 1590b7fbdedfacf4665d191220156c887f9c562a
+source-git-commit: db47e3414046a2222c2cb95588c4e3cc6988e6be
 workflow-type: tm+mt
 source-wordcount: '1342'
 ht-degree: 70%
@@ -16,7 +16,7 @@ ht-degree: 70%
 
 Customer Journey Analytics bietet mehrere Möglichkeiten, Dimensionswerte über den Treffer hinaus beizubehalten, für den sie festgelegt wurden. Eine der Persistenzmethoden, die Adobe anbietet, wird als Bindung bezeichnet. In früheren Versionen von Adobe Analytics wurde dieses Konzept als Merchandising bezeichnet.
 
-Sie können Bindungsdimensionen zwar mit Ereignisdaten der obersten Ebene verwenden, dieses Konzept empfiehlt sich jedoch am meisten bei der Arbeit mit [Arrays von Objekten](/help/use-cases/object-arrays.md). Sie können eine Dimension einem Teil eines Objekt-Arrays zuordnen, ohne sie auf alle Attribute in einem bestimmten Ereignis anzuwenden. Sie können beispielsweise einen Suchbegriff einem Produkt in Ihrem Warenkorb-Objekt-Array zuordnen, ohne diesen Suchbegriff an das gesamte Ereignis zu binden.
+Sie können Bindungsdimensionen zwar mit Ereignisdaten der obersten Ebene verwenden, dieses Konzept empfiehlt sich jedoch am meisten bei der Arbeit mit [Arrays von Objekten](/help/use-cases/object-arrays.md). Sie können eine Dimension einem Teil eines Objekt-Arrays zuordnen, ohne die Dimension auf alle Attribute in einem bestimmten Ereignis anzuwenden. Sie können beispielsweise einen Suchbegriff einem Produkt in Ihrem Warenkorb-Objekt-Array zuordnen, ohne diesen Suchbegriff an das gesamte Ereignis zu binden.
 
 ## Beispiel 1: Bindungsdimensionen verwenden, um zusätzliche Produktattribute einem Kauf zuzuordnen
 
@@ -83,7 +83,7 @@ Wechseln Sie zu **[!UICONTROL Datenansichten]** und binden Sie die [!DNL Product
 
 ![Bindungsdimension](../assets/binding-dimension.png)
 
-Wenn Sie dieses Persistenzmodell festlegen, notiert Customer Journey Analytics den Produktnamen, sobald die Produktfarbe festgelegt ist. Wenn in einem nachfolgenden Ereignis für diese Person derselbe Produktname erkannt wird, wird auch die Produktfarbe übernommen. Wenn Sie die Produktfarbe an den Produktnamen binden, sehen dieselben Daten etwa wie folgt aus:
+Wenn Sie dieses Persistenzmodell festlegen, erfasst Customer Journey Analytics den Produktnamen bei jeder Festlegung der Produktfarbe. Wenn in einem nachfolgenden Ereignis für diese Person derselbe Produktname erkannt wird, wird auch die Produktfarbe übernommen. Wenn Sie die Produktfarbe an den Produktnamen binden, sehen dieselben Daten etwa wie folgt aus:
 
 | product.color | Umsatz |
 | --- | --- |
@@ -440,4 +440,4 @@ Wenn Sie jedoch `product_finding_method` an die Metrik „Hinzufügen zum Warenk
 
 >[!MORELIKETHIS]
 >
->[Tutorial zum Binden von Dimensionen ](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/data-views/binding-dimensions-in-data-views.html?lang=de) Datenansichten.
+>[Tutorial zum Binden von Dimensionen ](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/data-views/binding-dimensions-in-data-views.html) Datenansichten.
