@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Administration
 role: Admin
 exl-id: f093ac54-7d31-449b-a441-a65856a1d535
-source-git-commit: a9c22cfd7077fd9e1ac4b9ea4ec0e016e9d2425b
+source-git-commit: 518bebc18611136873fce5c23dd7041afafe1220
 workflow-type: tm+mt
-source-wordcount: '1881'
-ht-degree: 12%
+source-wordcount: '1831'
+ht-degree: 10%
 
 ---
 
@@ -53,7 +53,7 @@ Einige der Funktionen und ihr zugehöriger Wert für das Limit hängen vom Custo
 | Bedienfelder pro Projekt | 15 | Vom System erzwungene Leitplanke | Maximale Anzahl von [Bedienfeldern](../analysis-workspace/home.md#panels) pro Projekt. |
 | Visualisierungen pro Bedienfeld | 25 | Vom System erzwungene Leitplanke | Maximale Anzahl von [Visualisierungen](../analysis-workspace/home.md#visualizations) pro Bedienfeld. |
 | Abgeleitete Felder pro Freiformtabelle | 5 | Vom System erzwungene Leitplanke | Maximale Anzahl verschiedener abgeleiteter Felder in einer einzelnen Freiformtabelle. |
-| Kommentare pro Projekt <p>**Hinweis:** Die Möglichkeit, Projekte zu kommentieren, befindet sich in der eingeschränkten Testphase der Version und ist möglicherweise noch nicht in Ihrer Umgebung verfügbar. Diese Anmerkung wird entfernt, wenn die Funktion allgemein verfügbar ist. Informationen zum Customer Journey Analytics-Veröffentlichungsprozess finden Sie unter [Veröffentlichungen von Funktionen für Customer Journey Analytics](/help/release-notes/releases.md).</p> | 1.000 | Vom System erzwungene Leitplanke | Maximale Anzahl an Kommentaren pro Projekt. |
+| Kommentare pro Projekt | 1.000 | Vom System erzwungene Leitplanke | Maximale Anzahl an Kommentaren pro Projekt. |
 
 {style="table-layout:auto"}
 
@@ -94,7 +94,7 @@ Image size - 2 - System-enforced Guardrail - Maximim upload size per image in MB
 
 {style="table-layout:auto"}
 
-Siehe auch Experience Platform [Leitplanken für die Echtzeit-Kundendatenplattform](https://experienceleague.adobe.com/de/docs/experience-platform/rtcdp/guardrails/overview).
+Siehe auch Experience Platform [Leitplanken für die Echtzeit-Kundendatenplattform](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/guardrails/overview).
 
 
 ## Automatisierte Datensatzgültigkeit
@@ -139,7 +139,7 @@ Siehe auch Experience Platform [Leitplanken für die Echtzeit-Kundendatenplattfo
 
 {style="table-layout:auto"}
 
-Siehe auch Experience Platform [Schutzmaßnahmen bei der Datenaufnahme](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html?lang=de).
+Siehe auch Experience Platform [Schutzmaßnahmen bei der Datenaufnahme](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html).
 
 
 ## Zieldatenexport
@@ -151,7 +151,7 @@ Siehe auch Experience Platform [Schutzmaßnahmen bei der Datenaufnahme](https://
 
 {style="table-layout:auto"}
 
-Siehe auch Experience Platform [Leitplanken für den Datensatzexport](https://experienceleague.adobe.com/de/docs/experience-platform/destinations/guardrails#dataset-exports)
+Siehe auch Experience Platform [Leitplanken für den Datensatzexport](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/guardrails#dataset-exports)
 
 
 ## Data Landing Zone
@@ -252,7 +252,7 @@ Siehe auch Experience Platform [Leitplanken für den Datensatzexport](https://ex
 
 >[!NOTE]
 >
->Die folgenden Verarbeitungszeiten sind Leitplanken, keine vertraglichen Service Level Agreements (SLAs). Die Latenz variiert je nach Kundenkonfiguration, Datenvolumen und Kundenanwendungen. Häufig sind die tatsächlichen Verarbeitungszeiten schneller. Die spezifischen Vertragsbedingungen und SLAs finden Sie in Ihrem Customer Journey Analytics-Vertrag. Weitere Informationen finden Sie [ Experience Platform ](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html?lang=de)Leitplanken für die Datenaufnahme).
+>Die folgenden Verarbeitungszeiten sind Leitplanken, keine vertraglichen Service Level Agreements (SLAs). Die Latenz variiert je nach Kundenkonfiguration, Datenvolumen und Kundenanwendungen. Häufig sind die tatsächlichen Verarbeitungszeiten schneller. Die spezifischen Vertragsbedingungen und SLAs finden Sie in Ihrem Customer Journey Analytics-Vertrag. Weitere Informationen finden Sie [ Experience Platform ](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html)Leitplanken für die Datenaufnahme).
 
 | Datenfluss | Erwartete Latenz |
 |---|---|
