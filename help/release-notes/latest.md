@@ -3,46 +3,41 @@ title: Aktuelle Versionshinweise zu Customer Journey Analytics
 description: Anzeigen der neuesten Versionshinweise zu Customer Journey Analytics
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: cbe5f3894a01f662a6ebe9c380583d0a039863fd
+source-git-commit: 78fab62b4f28a85986b5d7c537d321049f929897
 workflow-type: tm+mt
-source-wordcount: '647'
-ht-degree: 86%
+source-wordcount: '458'
+ht-degree: 61%
 
 ---
 
-# Aktuelle Versionshinweise zu Adobe Customer Journey Analytics (Juni 2025)
+# Aktuelle Versionshinweise zu Adobe Customer Journey Analytics (Juli 2025)
 
-**Letzte Aktualisierung**: 18. Juni 2025
+**Letzte Aktualisierung**: Mittwoch, 15. Juli 2025
 
 
-Diese Versionshinweise beziehen sich auf den Veröffentlichungszeitraum vom 2. Juni 2025 bis zum 15. Juli 2025. Versionen von Adobe Customer Journey Analytics basieren auf einem [Modell der kontinuierlichen Bereitstellung](releases.md), das einen besser skalierbaren, schrittweisen Ansatz für die Implementierung von Funktionen ermöglicht. Dementsprechend werden diese Versionshinweise mehrmals im Monat aktualisiert. Bitte überprüfen Sie sie regelmäßig.
+Diese Versionshinweise beziehen sich auf den Veröffentlichungszeitraum vom Samstag, 11. Juli 2025 bis zum Samstag, 15. August 2025. Versionen von Adobe Customer Journey Analytics basieren auf einem [Modell der kontinuierlichen Bereitstellung](releases.md), das einen besser skalierbaren, schrittweisen Ansatz für die Implementierung von Funktionen ermöglicht. Dementsprechend werden diese Versionshinweise mehrmals im Monat aktualisiert. Bitte überprüfen Sie sie regelmäßig.
 
 ## Neue oder aktualisierte Funktionen
 
 | Funktion | Beschreibung | [Rollout-Beginn](releases.md) | [Allgemeine Verfügbarkeit](releases.md) |
 | ----------- | ---------- | ------- | ---- |
-| **Das linke Panel in Analysis Workspace wird beim Bewegen des Mauszeigers nicht mehr geöffnet und geschlossen** | Das linke Panel in Analysis Workspace wird verwendet, um Ihrem Projekt Elemente wie Komponenten, Panels und Visualisierungen hinzuzufügen. Die Option zum vorübergehenden Öffnen des linken Panels durch Bewegen des Mauszeigers über eines der Symbole ganz links ist nicht mehr verfügbar. Klicken Sie stattdessen einfach auf eines dieser Symbole, damit das Panel geöffnet bleibt, und klicken Sie dann auf dasselbe Symbol, um es zu schließen. |  | &#x200B;2. Juni 2025 <p>(Veröffentlichung ursprünglich für den 29. Mai 2025 geplant)</p> |
-| **Customer Journey Analytics B2B Edition** | Customer Journey Analytics B2B Edition unterstützt B2B-Unternehmen dabei, ihre Marketing-, Vertriebs- und Produkt-Teams aufeinander abzustimmen, indem es verwertbare Kontoerkenntnisse bereitstellt, die das Umsatzwachstum fördern. Wenn das Konto in den Mittelpunkt des Datenmodells gestellt wird, konzentriert sich die gesamte Analyse auf die Konto-Journey. Durch das Hinzufügen einer neuen Ebene von Entitäten (Konten, Opportunities und Käufergruppen) zu Personen- und zeitbasierten Ereignissen erhalten Sie ein vollständiges Bild vom Lebenszyklus des B2B-Marketings und Umsatzes. [Weitere Informationen](https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition) |  | 18. Juni 2025 |
-| **Unterstützung für sichere Cloud-Ziele in Report Builder** | Sie können jetzt Berichte aus Report Builder in die folgenden Cloud-Speicher-Ziele exportieren:<ul><li>Amazon S3 Role ARN</li><li>Google Cloud Platform</li><li>Azure SAS</li><li>Azure RBAC</li></ul><p>Zuvor konnten Sie Arbeitsmappen per E-Mail für andere Benutzende freigeben, aber keine Berichte aus Report Builder in Cloud-Ziele exportieren.</p><p>Weitere Informationen finden Sie unter &quot;[ von Arbeitsmappen durch Exportieren in Cloud-Ziele](/help/report-builder/report-builder-export.md).</p> |  | 19. Juni 2025 (ursprünglich 18. Juni 2025) |
-| **Neues Vorschauerlebnis** | Das Vorschaufenster, das beim Erstellen eines Segments oder beim Konfigurieren der Einstellungen einer Datenansicht verwendet wird, verwendet jetzt eine horizontale Balkenvisualisierung anstelle einer Ringvisualisierung. |  | 18. Juni 2025 |
-| **Geändertes Dialogfeld für Attributionsmodelle** | Sie können nun den Container und den Zeitraum separat im Dialogfeld für Attributionsmodelle definieren. |  | Juni 18,2025 |
-| **Verbindungszuordnung** | Eine neue [Verbindungszuordnungs-Schnittstelle](https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-connections/create-connection#connection-map) ist verfügbar, um die Verbindungskonfiguration visuell anzuzeigen. |  | 18. Juni 2025 |
-| **Hinzufügen und Anzeigen von Kommentaren in Analysis Workspace-Projekten** | Eine neue [Kommentarfunktion](https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-workspace/build-workspace-project/comment-projects) in Analysis Workspace ermöglicht es Ihnen, im Rahmen eines Analysis Workspace-Projekts Erkenntnisse zu teilen und Fragen zu stellen. Dadurch können Diskussionen über die Daten optimiert werden, sodass Gespräche im Kontext der diskutierten Daten geführt werden. Sie können <ul><li>jedes Analysis Workspace-Projekt kommentieren, auf das Sie Zugriff haben,</li><li>einen bestimmten Punkt in einer Visualisierung kommentieren oder allgemeine Kommentare zu einem Projekt abgeben,</li><li>andere Benutzende taggen, um sie über Ihre Kommentare zu informieren,</li><li>vorhandene Kommentare verwalten (bearbeiten, anheften, schließen usw.).</li></ul>Customer Journey Analytics-Admins können die [Kommentarfunktion auf Organisationsebene deaktivieren](https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-workspace/user-preferences#ims-organization-preferences). Projektverantwortliche können die [Kommentarfunktion auf Projektebene deaktivieren](https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-workspace/build-workspace-project/create-projects). | &#x200B;25. Juni 2025 | &#x200B;11. Juli 2025 <p>(Veröffentlichung ursprünglich für den 29. Mai 2025 geplant)</p> |
-| **Unterstützung für das Chrome-Vorab-Rendering** | Steuern Sie, wie sich Datenerfassungsbibliotheken verhalten, wenn Chrome eine Seite vorab rendert. (Link zur Dokumentation folgt) |  | &#x200B;30. Juni 2025 |
+| **Hinzufügen und Anzeigen von Kommentaren in Analysis Workspace-Projekten** | Eine neue [Kommentarfunktion](https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-workspace/build-workspace-project/comment-projects) in Analysis Workspace ermöglicht es Ihnen, im Rahmen eines Analysis Workspace-Projekts Erkenntnisse zu teilen und Fragen zu stellen. Dadurch können Diskussionen über die Daten optimiert werden, sodass Gespräche im Kontext der diskutierten Daten geführt werden. Sie können <ul><li>jedes Analysis Workspace-Projekt kommentieren, auf das Sie Zugriff haben,</li><li>einen bestimmten Punkt in einer Visualisierung kommentieren oder allgemeine Kommentare zu einem Projekt abgeben,</li><li>andere Benutzende taggen, um sie über Ihre Kommentare zu informieren,</li><li>vorhandene Kommentare verwalten (bearbeiten, anheften, schließen usw.).</li></ul>Customer Journey Analytics-Admins können die [Kommentarfunktion auf Organisationsebene deaktivieren](https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-workspace/user-preferences#ims-organization-preferences). Projektverantwortliche können die [Kommentarfunktion auf Projektebene deaktivieren](https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-workspace/build-workspace-project/create-projects). | &#x200B;25. Juni 2025 | &#x200B;11. Juli 2025 <p>(zuvor: 29. Mai 2025)</p> |
+| **Projekte, die als PDF heruntergeladen wurden, werden auf Ihre Workstation heruntergeladen** | Beim Herunterladen eines Projekts als PDF wird die PDF in den Ordner „Downloads“ auf Ihrer Workstation heruntergeladen. Beim Herunterladen eines Projekts als PDF wurde PDF zuvor in einer neuen Browser-Registerkarte mit einer eindeutigen URL gestartet. [Weitere Informationen](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/export/download-send) | | TBD |
+| **Abgeleitete Felder - Typecast-Funktion** | Die von Typecast abgeleitete Feldfunktion bietet die Möglichkeit, einen Feldtyp im laufenden Betrieb zu ändern und das Feld für zusätzliche Transformationen in Customer Journey Analytics verfügbar zu machen. | . | Donnerstag, 30. Juli 2025 |
+| **Abgeleitete Felder - Datumsmathematische Funktion** | Die Funktion für ein von Datumsmathematik abgeleitetes Feld bietet die Möglichkeit, die Differenz zwischen zwei Datums- oder Datums-/Uhrzeitfeldern zurückzugeben. | | Donnerstag, 30. Juli 2025 |
+| **ARES: Abgeleitete Felder mit Tiefenfunktion** | Die Funktion für aus der Tiefe abgeleitete Felder bietet die Möglichkeit, die Tiefe eines Felds zurückzugeben, ähnlich der standardmäßigen Ereignistiefendimension. |  | Juli 30,2025 |
+| **Unterstützung für das Chrome-Vorab-Rendering** | Steuern Sie, wie sich Datenerfassungsbibliotheken verhalten, wenn Chrome eine Seite vorab rendert. (Link zur Dokumentation folgt) |  | &#x200B;31. Juli 2025 (zuvor 30. Juni 2025) |
 
 ## Fehlerbehebungen in Customer Journey Analytics
 
-**Warnhinweise**: AN-379554
-**Analysis Workspace**: AN-339607; AN-379222; AN-381138; AN-383291
-**B2B**: AN-376028
-**BI-Erweiterung für Tableau**: AN-377488
-**Komponenten**: AN-376174
-**Datenansichten**: AN-379011
-**Exportspeicherorte**: AN-382191
-**Vollständiger Tabellenexport**: AN-375646; AN-376986; AN-380355; AN-381310
-**Journey-Arbeitsfläche**: AN-375865; AN-378011
-**Report Builder**: AN-369786; AN-371395; AN-372809
-**Reporting**: AN-372615; AN-378578;
+**Analysis Workspace**: AN-387014; AN-387500
+**Komponenten**: AN-387293
+**Content Analytics**: AN-387595
+**Geführte Analyse**: AN-382273
+**Report Builder**: AN-382775
+**Reporting**: AN-382020; AN-387827
+**Segmentierung**: AN-382102
+**Freigegebene Metriken und Dimensionen**: AN-378451
 
 
 ## Wichtige Hinweise für Customer Journey Analytics-Admins
