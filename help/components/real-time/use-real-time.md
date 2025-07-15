@@ -1,18 +1,18 @@
 ---
 description: Erfahren Sie, wie Sie Echtzeitberichte in Analysis Workspace verwenden.
 title: Verwenden von Echtzeitberichten
-feature: Filters, Segments
+feature: Real-time Reporting
 hide: true
 hidefromtoc: true
 role: User
 badgePremium: label="Beta"
-source-git-commit: 24834f6a1424a885c6f7b3dcf0ad84375e21b462
+exl-id: 6e7dba80-5fb9-4554-b989-85eb54a4bd6a
+source-git-commit: 82aefce30834d6400d338896dc1968e37596393e
 workflow-type: tm+mt
-source-wordcount: '141'
-ht-degree: 5%
+source-wordcount: '150'
+ht-degree: 9%
 
 ---
-
 
 # Verwenden von Echtzeitberichten
 
@@ -23,10 +23,12 @@ Um Echtzeitberichte zu verwenden, aktivieren Sie den Umschalter **[!UICONTROL Ec
 
 
 * [Leeres Bedienfeld](/help/analysis-workspace/c-panels/blank-panel.md)
-* [Freiform-Bedienfeld](/help/analysis-workspace/c-panels/freeform-panel.md)
-* ...
+* [Freiform](/help/analysis-workspace/c-panels/freeform-panel.md)
+* [Attribution](/help/analysis-workspace/c-panels/attribution.md)
+* [Nächstes oder vorheriges Objekt](/help/analysis-workspace/c-panels/next-previous.md)
+* [Quick Insights](/help/analysis-workspace/c-panels/quickinsight.md)
 
-Es wird eine Meldung mit dem Zeitstempel der letzten Aktualisierung der Daten angezeigt. Beispiel: [!UICONTROL &#x200B; *Letzte Aktualisierung um 19:55*].
+Es wird eine Meldung mit dem Zeitstempel der letzten Aktualisierung der Daten angezeigt. Beispiel: [!UICONTROL  *Letzte Aktualisierung um 19:55*].
 
 Wählen Sie aus dem Dropdown-Menü den Echtzeitzeitraum aus, über den Sie einen Bericht erstellen möchten. Verfügbare Optionen sind:
 
@@ -36,7 +38,7 @@ Wählen Sie aus dem Dropdown-Menü den Echtzeitzeitraum aus, über den Sie einen
 * [!UICONTROL Letzte 8 Stunden]
 * [!UICONTROL Letzte 24 Stunden]
 
-Alle Visualisierungen werden jetzt jede Minute für maximal 30 Minuten aktualisiert, während die Browser-Registerkarte mit aktiviertem Bedienfeld „Echtzeit-Aktualisierung“ aktiv ist.
+Alle Visualisierungen im Bedienfeld werden jetzt jede Minute für maximal 30 Minuten aktualisiert, während die Browser-Registerkarte mit dem Bedienfeld „Echtzeit-Aktualisierung aktiviert“ aktiv ist.
 
 ![Echtzeit-Aktualisierung](assets/real-time-refresh.gif)
 
