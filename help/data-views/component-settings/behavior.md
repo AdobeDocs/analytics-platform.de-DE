@@ -8,7 +8,7 @@ role: Admin
 source-git-commit: 50599b36d333cae3735c6d4fd1b0af6fcabe9177
 workflow-type: tm+mt
 source-wordcount: '339'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 92%
 >[!CONTEXTUALHELP]
 >id="dataview_component_dimension_behavior"
 >title="Verhalten"
->abstract="Gilt für Dimensionen und Metrikkomponenten. Bestimmen Sie, wie Zeileneinträge für diese Metrik aggregiert werden. Geben Sie an, ob die Zeichenfolgenwerte für diese Dimension kleingeschrieben werden sollen."
+>abstract="Gilt für Dimensions- und Metrikkomponenten. Bestimmen Sie, wie Zeileneinträge für diese Metrik aggregiert werden. Geben Sie an, ob Zeichenfolgenwerte für diese Dimension in Kleinbuchstaben sein sollen."
 
 <!-- markdownlint-enable MD034 -->
 
