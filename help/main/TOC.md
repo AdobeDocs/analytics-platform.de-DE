@@ -12,7 +12,7 @@ breadcrumb-title: Handbuch zu Customer Journey Analytics
 source-git-commit: 24834f6a1424a885c6f7b3dcf0ad84375e21b462
 workflow-type: tm+mt
 source-wordcount: '1275'
-ht-degree: 97%
+ht-degree: 99%
 
 ---
 
@@ -234,7 +234,7 @@ ht-degree: 97%
       + [Venn](../analysis-workspace/visualizations/venn.md)
    + Bedienfelder {#panels}
       + [Überblick](../analysis-workspace/c-panels/panels.md)
-      + [Leeres Bedienfeld](../analysis-workspace/c-panels/blank-panel.md)
+      + [Leeres Panel](../analysis-workspace/c-panels/blank-panel.md)
       + [Attribution](../analysis-workspace/c-panels/attribution.md)
       + [Experimentieren](../analysis-workspace/c-panels/experimentation.md)
       + [Freiform](../analysis-workspace/c-panels/freeform-panel.md)
@@ -255,7 +255,7 @@ ht-degree: 97%
       + [Senden und Planen](../analysis-workspace/export/t-schedule-report.md)
       + [Exportieren in die Cloud](../analysis-workspace/export/export-cloud.md)
    + Attribution {#attribution}
-      + [Übersicht über Attribution](../analysis-workspace/attribution/overview.md)
+      + [Attribution – Überblick](../analysis-workspace/attribution/overview.md)
       + [Modell, Container und Lookback-Fenster](../analysis-workspace/attribution/models.md)
       + [Algorithmische Attribution](../analysis-workspace/attribution/algorithmic.md)
       + [Best Practices](../analysis-workspace/attribution/best-practices.md)
@@ -272,7 +272,7 @@ ht-degree: 97%
    + Häufig gestellte Fragen zu Workspace und mehr {#workspace-faq}
       + [Häufig gestellte Fragen](../analysis-workspace/workspace-faq/faq.md)
       + [Optimieren der Leistung](../analysis-workspace/workspace-faq/optimizing-performance.md)
-      + [Fehler- und Fehlerbehebung](../analysis-workspace/workspace-faq/error-messages.md)
+      + [Fehler und Fehlerbehebung](../analysis-workspace/workspace-faq/error-messages.md)
       + [Einschränkungen](../analysis-workspace/workspace-faq/aw-limitations.md)
       + [Voraussetzungen](../analysis-workspace/workspace-faq/frequently-asked-questions-analysis-workspace.md)
       + [Barrierefreiheit](../analysis-workspace/workspace-faq/aw-accessibility.md)
@@ -342,7 +342,7 @@ ht-degree: 97%
       + [Freigeben von Segmenten](/help/components/segments/seg-share.md)
       + [Taggen von Segmente](/help/components/segments/seg-tag.md)
       + [Filtern der Segmentliste](/help/components/segments/seg-filter.md)
-      + [Segmente als Favoriten markieren](/help/components/segments/seg-favorite.md)
+      + [Markieren von Segmenten als Favoriten](/help/components/segments/seg-favorite.md)
       + [Genehmigen von Segmenten](/help/components/segments/seg-approve.md)
       + [Segmente kopieren](/help/components/segments/seg-copy.md)
       + [Verwalten von Segmenten](/help/components/segments/seg-manage.md)
@@ -357,11 +357,11 @@ ht-degree: 97%
          + [Ein einfaches Beispiel](../components/calc-metrics/cm-workflow/cm-pvv.md)
          + [Ein komplexeres Beispiel](../components/calc-metrics/cm-workflow/cm-orders-participation.md)
          + [Metriktyp und Attribution](../components/calc-metrics/cm-workflow/m-metric-type-alloc.md)
-         + [Teilnahmemetriken](../components/calc-metrics/cm-workflow/participation-metric.md)
+         + [Beitragsmetriken](../components/calc-metrics/cm-workflow/participation-metric.md)
          + [Segmentierte Metriken](../components/calc-metrics/cm-workflow/metrics-with-segments.md)
          + [Segmente stapeln und ersetzen](../components/calc-metrics/cm-workflow/cm-stack-seg.md)
          + [Berechnete Metriken filtern](../components/calc-metrics/cm-workflow/cm-filter.md)
-         + [Berechnete Metriken als Favoriten markieren](../components/calc-metrics/cm-workflow/cm-favorite.md)
+         + [Markieren berechneter Metriken als Favoriten](../components/calc-metrics/cm-workflow/cm-favorite.md)
          + [Kopieren von berechneten Metriken](../components/calc-metrics/cm-workflow/cm-copy.md)
          + [Funktionen verwenden](../components/calc-metrics/cm-workflow/cm-using-functions.md)
          + [Berechnete Metriken taggen](../components/calc-metrics/cm-workflow/cm-tagging.md)
