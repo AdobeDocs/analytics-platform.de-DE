@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: User
 exl-id: 6e756ae8-b969-46f1-95b8-d8fbb0d058ed
-source-git-commit: 6d23203468032510446711ff5a874fd149531a9a
-workflow-type: ht
+source-git-commit: c86da649c23ca06c3404b6e5db0b9970e8817a72
+workflow-type: tm+mt
 source-wordcount: '1300'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -31,7 +31,7 @@ Basierend auf den Content Analytics-spezifischen Dimensionen in Ihrem Projekt we
 
 Standardmäßig werden Miniaturen für die entsprechenden Content Analytics-Dimensionen angezeigt. So konfigurieren Sie die Anzeige von Miniaturen für eine Content Analytics-Dimension:
 
-* Bewegen Sie den Mauszeiger über eine Kopfzeile für eine Content Analytics-Dimension, z. B. **[!UICONTROL Asset-Name]** oder **[!UICONTROL Erlebnis-IDs]**.
+* Bewegen Sie den Mauszeiger über eine Kopfzeile für eine Content Analytics-Dimension, Zum Beispiel **[!UICONTROL Asset-ID]** oder **[!UICONTROL Erlebnis-IDs]**.
 * Wählen Sie ![Einstellung](/help/assets/icons/Setting.svg) aus.
 * Aktivieren oder deaktivieren Sie im Popup **[!UICONTROL Zeileneinstellungen]** unter **[!UICONTROL Einstellungen]** die Option **[!UICONTROL Miniaturansichten anzeigen]**.
 
