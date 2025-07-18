@@ -5,10 +5,10 @@ title: Beispiel für benutzerdefinierte Datumsbereiche
 feature: Calendar
 exl-id: 1a7df63a-bf18-4c38-b7e2-e83c2d278544
 role: User
-source-git-commit: 2a152e09d4ff62a02182fc6ac085d4143105a665
+source-git-commit: 28a657a0a93325a745dcf51c706cc488f599a6e0
 workflow-type: tm+mt
-source-wordcount: '113'
-ht-degree: 4%
+source-wordcount: '112'
+ht-degree: 3%
 
 ---
 
@@ -31,7 +31,7 @@ Sie möchten einen benutzerdefinierten Datumsbereich definieren, der vor zwei Mo
 
 +++ Details
 
-Sie möchten einen Datumsbereich definieren, der den Zeitraum zwischen dem aktuellen Tag vor einer Woche und dem Ende derselben letzten Woche definiert. Wenn heute beispielsweise Mittwoch, der 11. September 2024 ist. Sie möchten einen Datumsbereich von Mittwoch, 4. September 2024 bis Samstag, 7. September 2024. September
+Sie möchten einen Datumsbereich definieren, der den Zeitraum zwischen dem aktuellen Tag vor einer Woche und dem Ende derselben letzten Woche definiert. Wenn heute beispielsweise Mittwoch, der 11. September 2024 ist. Sie möchten einen Datumsbereich von Mittwoch, 4. September 2024 bis Samstag, 7. September 2024.
 
 ![Beispiel für einen Datumsbereich](assets/date-range-example.png)
 
