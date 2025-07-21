@@ -9,7 +9,7 @@ exl-id: 6656b34a-ae1e-4f9f-9c6d-13c54e49625c
 source-git-commit: 4163228b2ffb08a04e386e6ca31151c7143aed5c
 workflow-type: tm+mt
 source-wordcount: '2270'
-ht-degree: 10%
+ht-degree: 13%
 
 ---
 
@@ -47,7 +47,7 @@ ht-degree: 10%
 
 >[!BEGINSHADEBOX]
 
-_In diesem Artikel wird die Zuordnungsvisualisierung in {_}![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**._<br/>_Siehe [Map](https://experienceleague.adobe.com/de/docs/analytics/analyze/analysis-workspace/visualizations/map-visualization) für die_![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics**-Version dieses Artikels._
+_In diesem Artikel wird die Zuordnungsvisualisierung in {_}![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._<br/>_Siehe [Map](https://experienceleague.adobe.com/de/docs/analytics/analyze/analysis-workspace/visualizations/map-visualization) für die_![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**-Version dieses Artikels._
 
 >[!ENDSHADEBOX]
 
@@ -129,14 +129,14 @@ Die Zuordnungsvisualisierung in Customer Journey Analytics unterscheidet sich vo
 | Erstellen eines Trends aus einer Auswahl | Erstellen Sie eine Trend-Liniendiagramm-Visualisierung basierend auf einem bestimmten Bereich, den Sie in der Kartenvisualisierung auswählen. <p>Weitere Informationen finden Sie unter [Erstellen eines Trendliniendiagramms aus der Kartenvisualisierung](#create-a-trended-line-chart-from-the-map-visualization). <!-- is this correct? --> | Es kann kein Trend aus der Kartenvisualisierung erstellt werden. |
 | Aufschlüsselung aus einer Auswahl hinzufügen | Schlüsseln Sie ein bestimmtes Dimensionselement, eine bestimmte Metrik, ein bestimmtes Segment oder einen bestimmten Datumsbereich auf, den Sie in der Kartenvisualisierung auswählen. <p>Weitere Informationen finden Sie unter [Aufschlüsselung über die Kartenvisualisierung hinzufügen](#add-a-breakdown-from-the-map-visualization). | Es kann keine Aufschlüsselung aus der Kartenvisualisierung hinzugefügt werden. |
 
-## Mit dem Erstellen einer Kartenvisualisierung beginnen {#begin-building-map}
+## Beginnen der Erstellung einer Kartenvisualisierung {#begin-building-map}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="workspace_map_panel"
 >title="Konfigurieren der Kartenvisualisierung"
->abstract="Wählen Sie die Metrik oder berechnete Metrik aus, die als Grundlage für Ihre Zuordnungsvisualisierung verwendet wird. Sie können auch ein Segment hinzufügen, wenn Sie sich auf eine bestimmte Teilmenge der Daten konzentrieren möchten.<p>Sie können diese Informationen jederzeit aktualisieren, nachdem die Visualisierung gerendert wurde.</p>"
+>abstract="Wählen Sie die Metrik oder die berechnete Metrik aus, die als Grundlage für die Kartenvisualisierung verwendet wird. Sie können auch ein Segment hinzufügen, wenn Sie sich auf eine bestimmte Teilmenge der Daten konzentrieren möchten.<p>Sie können diese Informationen jederzeit aktualisieren, nachdem die Visualisierung gerendert wurde.</p>"
 
 <!-- markdownlint-enable MD034 -->
 
