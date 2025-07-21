@@ -6,9 +6,9 @@ role: User, Admin
 hide: true
 hidefromtoc: true
 exl-id: 6656b34a-ae1e-4f9f-9c6d-13c54e49625c
-source-git-commit: 4163228b2ffb08a04e386e6ca31151c7143aed5c
+source-git-commit: c5d550d92a7bf201d3b9f62243540d9c4e063fc8
 workflow-type: tm+mt
-source-wordcount: '2270'
+source-wordcount: '2283'
 ht-degree: 13%
 
 ---
@@ -47,7 +47,7 @@ ht-degree: 13%
 
 >[!BEGINSHADEBOX]
 
-_In diesem Artikel wird die Zuordnungsvisualisierung in {_}![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**._<br/>_Siehe [Map](https://experienceleague.adobe.com/de/docs/analytics/analyze/analysis-workspace/visualizations/map-visualization) für die_![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics**-Version dieses Artikels._
+_In diesem Artikel wird die Zuordnungsvisualisierung in {_}![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._<br/>_Siehe [Map](https://experienceleague.adobe.com/de/docs/analytics/analyze/analysis-workspace/visualizations/map-visualization) für die_![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**-Version dieses Artikels._
 
 >[!ENDSHADEBOX]
 
@@ -212,7 +212,9 @@ Die Zuordnungsvisualisierung in Customer Journey Analytics unterscheidet sich vo
       * Negative Zahlen anzeigen.
 
         Wenn Sie beispielsweise eine Metrik zum Jahresvergleich plotten, kann auf der Karte für New York -33 % angezeigt werden.
+
       * Mit Metriken des Typs *Prozent* werden die Prozentanzeigen mit Durchschnitten gebündelt.
+
       * Ein grünes und rotes Farbschema zeigt positiv und negativ an.
 
    * **Zusätzliche Visualisierungseinstellungen**: Wählen Sie das Einstellungssymbol ![Einstellung](/help/assets/icons/Setting.svg) in der Visualisierungskopfzeile aus, um zusätzliche Einstellungen für die Kartenvisualisierung anzuzeigen. Weitere Informationen finden Sie unter [Konfigurieren von Visualisierungseinstellungen](#configure-visualization-settings).
@@ -238,7 +240,7 @@ So konfigurieren Sie Einstellungen für die Zuordnungsvisualisierung:
    | **[!UICONTROL Stile]** | | |
    | | **[!UICONTROL Farbschema]** | Zeigt das Farbschema für die Heatmap und die Blasen. Sie können zwischen Korallenrot, Rot, Grün oder Blau auswählen. Der Standardwert ist „Koralle“.  |
    | | **[!UICONTROL Zuordnungsstil]** | Sie können zwischen „Allgemein“, „Straßen“, „Leuchtend“ „Hell“, „Dunkel“ und „Satellit“ auswählen. |
-   | | **[!UICONTROL Cluster-Radius]** | Gruppiert Datenpunkte zusammen, die sich innerhalb der festgelegten Pixel-Anzahl befinden. Die Standardeinstellung ist „50“. |
+   | | **[!UICONTROL Cluster-Radius]** | Gruppiert Datenpunkte zusammen, die sich innerhalb der festgelegten Pixel-Anzahl befinden. Die Standardeinstellung ist „50“.<p>Diese Option ist nur verfügbar **[!UICONTROL wenn &quot;]**&quot; als **[!UICONTROL Zuordnungstyp“]**.</p> |
    | | **[!UICONTROL Benutzerdefinierter Maximalwert]** | Ermöglicht die Änderung des Schwellenwerts für den Maximalwert der Zuordnung. Durch die Anpassung dieses Werts wird der Maßstab für die Blasen- oder Heatmap-Werte (Farbe und Größe) relativ zum von Ihnen festgelegten benutzerdefinierten Maximalwert angepasst. |
    | | **[!UICONTROL Anmerkungen anzeigen]** | Zeigt die Anmerkungen an, die für diese Visualisierung gemacht wurden. |
    | | **[!UICONTROL Titel ausblenden]** | Blendet den Titel der Visualisierung aus. |
@@ -271,11 +273,11 @@ Wenn Sie über benutzerdefinierte Datensätze mit hoher Präzision verfügen, k�
 
         Dies ist die Standardauswahl.
 
-      * **3:** Präzise auf die sehr kleine Stadt- oder Nachbarschaftsebene in der Kartenvisualisierung. Zeigt drei Dezimalstellen in Workspace-Berichten an.
+      * **3:** Präzise auf die sehr kleine Stadt- oder Nachbarschaftsebene in der Kartenvisualisierung. Zeigt 3 Dezimalstellen in Workspace-Berichten an.
 
       * **4:** Präzise auf eine bestimmte Parzelle oder Gebäudeebene in der Kartenvisualisierung. Zeigt vier Dezimalstellen in Workspace-Berichten an.
 
-      * **5:** Präzise auf einen einzelnen Meter in der Kartenvisualisierung. Zeigt fünf Dezimalstellen in Workspace-Berichten an.
+      * **5:** Präzise auf einen einzelnen Meter in der Kartenvisualisierung. Zeigt 5 Dezimalstellen in Workspace-Berichten an.
 
 1. Wählen Sie **[!UICONTROL Speichern und fortfahren]** > **[!UICONTROL Speichern und beenden]**.
 
