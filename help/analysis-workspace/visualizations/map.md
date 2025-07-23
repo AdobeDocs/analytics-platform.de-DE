@@ -6,9 +6,9 @@ role: User, Admin
 hide: true
 hidefromtoc: true
 exl-id: 6656b34a-ae1e-4f9f-9c6d-13c54e49625c
-source-git-commit: c5d550d92a7bf201d3b9f62243540d9c4e063fc8
+source-git-commit: f0ef310f120e278685893308315902e32c54e35e
 workflow-type: tm+mt
-source-wordcount: '2283'
+source-wordcount: '2385'
 ht-degree: 13%
 
 ---
@@ -47,7 +47,7 @@ ht-degree: 13%
 
 >[!BEGINSHADEBOX]
 
-_In diesem Artikel wird die Zuordnungsvisualisierung in {_}![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**._<br/>_Siehe [Map](https://experienceleague.adobe.com/de/docs/analytics/analyze/analysis-workspace/visualizations/map-visualization) für die_![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics**-Version dieses Artikels._
+_In diesem Artikel wird die Zuordnungsvisualisierung in {_}![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._<br/>_Siehe [Map](https://experienceleague.adobe.com/de/docs/analytics/analyze/analysis-workspace/visualizations/map-visualization) für die_![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**-Version dieses Artikels._
 
 >[!ENDSHADEBOX]
 
@@ -287,11 +287,13 @@ Sie können ein Segment basierend auf einem bestimmten Bereich erstellen, den Si
 
 So erstellen Sie ein Segment aus der Zuordnungsvisualisierung:
 
-1. (Optional) Vergrößern Sie den spezifischen Bereich der Karte, der die Daten enthält, die Sie für das Segment verwenden möchten.
+1. Zoomen oder schwenken Sie auf den Bereich der Karte, der die Daten enthält, die Sie für Ihr Segment verwenden möchten.
 
-1. Klicken Sie auf das Auswahlwerkzeug ![Zuordnungsauswahlsymbol](assets/map-selection-icon.png) und ziehen Sie dann die Maus, um den gewünschten Bereich auszuwählen.
+1. Führen Sie einen der folgenden Schritte aus:
 
-1. Wählen Sie **[!UICONTROL Segment aus Auswahl erstellen]** aus dem angezeigten Dropdown-Menü aus.
+   * **So erstellen Sie ein Segment aus allem, was aktuell in der Karte angezeigt wird:** Klicken Sie mit der rechten Maustaste auf eine beliebige Stelle auf der Karte und wählen Sie **[!UICONTROL Segment aus aktueller Ansicht erstellen]**.
+
+   * **So erstellen Sie ein Segment für einen spezifischeren Bereich der Karte:** Klicken Sie auf das Auswahlwerkzeug ![Zuordnungsauswahlsymbol](assets/map-selection-icon.png) ziehen Sie die Maus, um den gewünschten Bereich auszuwählen, und wählen Sie dann **[!UICONTROL Segment aus Auswahl erstellen]**.
 
 1. Verwenden Sie Segment Builder, um das neue Segment zu definieren. Weitere Informationen finden Sie unter [Segment Builder](/help/components/segments/seg-builder.md).
 
@@ -301,11 +303,13 @@ Sie können eine Zielgruppe basierend auf einem bestimmten Bereich erstellen, de
 
 So erstellen Sie eine Zielgruppe aus der Kartenvisualisierung:
 
-1. (Optional) Vergrößern Sie den spezifischen Bereich der Karte, der die Daten enthält, die Sie für die Zielgruppe verwenden möchten.
+1. Zoomen oder schwenken Sie auf den Bereich der Karte, der die Daten enthält, die Sie für Ihre Zielgruppe verwenden möchten.
 
-1. Klicken Sie auf das Auswahlwerkzeug ![Zuordnungsauswahlsymbol](assets/map-selection-icon.png) und ziehen Sie dann die Maus, um den gewünschten Bereich auszuwählen.
+1. Führen Sie einen der folgenden Schritte aus:
 
-1. Wählen Sie **[!UICONTROL Dropdown-Menü]** Zielgruppe aus Auswahl erstellen) aus.
+   * **So erstellen Sie eine Zielgruppe aus allen aktuell in der Karte angezeigten Inhalten:** Klicken Sie mit der rechten Maustaste auf eine beliebige Stelle auf der Karte und wählen Sie **[!UICONTROL Zielgruppe aus aktueller Ansicht erstellen]**.
+
+   * **So erstellen Sie eine Zielgruppe für einen spezifischeren Bereich der Karte:** Klicken Sie auf das Auswahlwerkzeug ![Zuordnungsauswahlsymbol](assets/map-selection-icon.png), ziehen Sie die Maus, um den gewünschten Bereich auszuwählen, und wählen Sie dann **[!UICONTROL Zielgruppe aus Auswahl erstellen]**.
 
 1. Verwenden Sie den Audience Builder, um die neue Audience zu definieren. Weitere Informationen finden Sie unter [Audience Builder](/help/components/audiences/publish.md#audience-builder) in [Erstellen und Veröffentlichen von Zielgruppen](/help/components/audiences/publish.md)
 
@@ -315,11 +319,13 @@ Sie können eine Trend-Liniendiagramm-Visualisierung für die Daten innerhalb ei
 
 So erstellen Sie ein Trendliniendiagramm anhand der Kartenvisualisierung:
 
-1. (Optional) Vergrößern Sie den spezifischen Bereich der Karte, der die Daten enthält, die Sie für das Trendliniendiagramm verwenden möchten.
+1. Zoomen oder schwenken Sie auf den Bereich der Karte, der die Daten enthält, die Sie für das Trendliniendiagramm verwenden möchten.
 
-1. Klicken Sie auf das Auswahlwerkzeug ![Zuordnungsauswahlsymbol](assets/map-selection-icon.png) und ziehen Sie dann die Maus, um den gewünschten Bereich auszuwählen.
+1. Führen Sie einen der folgenden Schritte aus:
 
-1. Wählen Sie **[!UICONTROL Dropdown]** Menü aus, das angezeigt wird.
+   * **So erstellen Sie ein Trendliniendiagramm aus allen aktuell in der Karte angezeigten Elementen:** Klicken Sie mit der rechten Maustaste auf eine beliebige Stelle auf der Karte und wählen Sie dann **[!UICONTROL Trend aus der aktuellen Ansicht]** aus.
+
+   * **So erstellen Sie ein Trendliniendiagramm für einen spezifischeren Bereich der Karte:** Klicken Sie auf das Auswahlwerkzeug ![Zuordnungsauswahlsymbol](assets/map-selection-icon.png), ziehen Sie die Maus, um den gewünschten Bereich auszuwählen, und wählen Sie dann **[!UICONTROL Trend]**.
 
    Es wird eine Linienvisualisierung erstellt, die eine Trendlinie enthält. Weitere Informationen zu dieser Visualisierung finden Sie unter [Linie](/help/analysis-workspace/visualizations/line.md).
 
