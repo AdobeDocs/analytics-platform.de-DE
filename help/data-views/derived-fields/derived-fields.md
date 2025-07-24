@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Derived Fields
 exl-id: bcd172b2-cd13-421a-92c6-e8c53fa95936
 role: Admin
-source-git-commit: 2d4e8c51111427564c761a16deb27223e98cd2ec
+source-git-commit: c9560f8b11ff055040611e208f09ee3e2d7bb5da
 workflow-type: tm+mt
-source-wordcount: '8925'
+source-wordcount: '8857'
 ht-degree: 99%
 
 ---
@@ -19,27 +19,6 @@ ht-degree: 99%
 >title="Abgeleitete Felder"
 >abstract="Mit einem abgeleiteten Feld können Sie mithilfe eines anpassbaren Regel-Builders spontan Datenmanipulationen definieren. Anschließend können Sie dieses abgeleitete Feld als Komponente (Metrik oder Dimension) in Workspace verwenden oder in der Datenansicht als Komponente weiter definieren."
 
-<!-- BEGIN
-     Temporarily have these entries at the top; once functions are documented
-     move them to appropriate function section
--->
-
->[!CONTEXTUALHELP]
->id="dataview_derivedfields_datemath"
->title="Datumsberechnung"
->abstract="Diese Funktion bietet die Möglichkeit, die Differenz zwischen zwei Datums- oder Datums-/Zeitfeldern zurückzugeben."
-
->[!CONTEXTUALHELP]
->id="dataview_derivedfields_typecast"
->title="Typecast"
->abstract="Diese Funktion bietet die Möglichkeit, den Feldtyp spontan zu ändern, um das Feld für zusätzliche Transformationen in Customer Journey Analytics verfügbar zu machen."
-
->[!CONTEXTUALHELP]
->id="dataview_derivedfields_depth"
->title="Tiefe"
->abstract="Diese Funktion bietet die Möglichkeit, die Tiefe eines beliebigen Felds zurückzugeben, ähnlich der Funktionalität der Standardkomponente für Ereignistiefe."
-
-<!-- END -->
 
 Abgeleitete Felder sind ein wichtiger Aspekt der Echtzeit-Reporting-Funktion in Adobe Customer Journey Analytics. Mit einem abgeleiteten Feld können Sie mithilfe eines anpassbaren Regel-Builders spontan (häufig komplexe) Datenmanipulationen definieren. Anschließend können Sie dieses abgeleitete Feld als Komponente (Metrik oder Dimension) in [Workspace](../../analysis-workspace/home.md) verwenden oder das abgeleitete Feld in der Datenansicht als Komponente in der [Datenansicht](../data-views.md) weiter definieren.
 
@@ -65,8 +44,8 @@ Wenn Sie ein abgeleitetes Feld erstellen oder bearbeiten, verwenden Sie die Ober
 |---------|----------|--------|
 | 1 | **Auswahl** | Sie verwenden den Auswahlbereich, um Ihre Funktion, Funktionsvorlage, das Schemafeld oder das Standardfeld auszuwählen und per Drag-and-Drop auf den Regel-Builder zu ziehen. <br/>Verwenden Sie die Dropdown-Liste, um zwischen Folgendem auszuwählen: <br/>![Funktion](assets/Smock_Function_18_N.svg) [!UICONTROL Funktionen] - listet verfügbare [Funktionen](#function-reference) auf, </br>![Funktionsvorlagensymbol](assets/Smock_FileTemplate_18_N.svg) [!UICONTROL Funktionsvorlagen] - listet verfügbare [Funktionsvorlagen](#function-templates) auf, <br/>![Schemafeldsymbol](assets/Smock_Folder_18_N.svg) [!UICONTROL Schemafelder] - listet verfügbare Felder aus Datensatzkategorien (Ereignis, Profil, Lookup) und zuvor definierte abgeleitete Felder auf, und <br/>![Standardfeldsymbol](assets/Smock_DragHandle_18_N.svg) [!UICONTROL Standardfelder] - verfügbare Standardfelder (wie Plattform-Datensatz-ID). In der Auswahl werden nur Zeichenfolgen- und numerische Standardfelder angezeigt. Wenn die Funktion andere Datentypen unterstützt, können Standardfelder mit diesen anderen Datentypen für Werte oder Felder in der Oberfläche für Regeln ausgewählt werden.<br/>Sie können mithilfe des Suchfelds ![Suchsymbol](assets/Smock_Search_18_N.svg) nach Funktion, Funktionsvorlagen, Schema und Standardfeldern suchen. <br/>Sie können die ausgewählte Objektliste filtern, indem Sie ![Filtersymbol](assets/Smock_Filter_18_N.svg) auswählen und im Dialogfeld [!UICONTROL Felder filtern nach] Filter angeben. Sie können jeden Filter einfach mit ![Symbol „Schließen“](assets/CrossSize75.svg) entfernen. |
 | 2 | **Regel-Builder** | Das abgeleitete Feld wird sequenziell mit einer oder mehreren Regeln erstellt. Eine Regel ist eine spezifische Implementierung einer Funktion und wird daher immer nur einer Funktion zugeordnet. Sie erstellen eine Regel, indem Sie eine Funktion per Drag-and-Drop in den Regel-Builder ziehen. Der Funktionstyp bestimmt die Oberfläche der Regel.<br/>Weitere Informationen finden Sie auf der [Oberfläche für Regeln](#rule-interface). <br/>Sie können eine Funktion am Anfang, Ende oder zwischen Regeln einfügen, die bereits im Regel-Builder verfügbar sind. Die letzte Regel im Regel-Builder bestimmt die endgültige Ausgabe des abgeleiteten Felds. |
-| 3 | **[!UICONTROL **&#x200B; Feldeinstellungen &#x200B;**]** | Sie können Ihr abgeleitetes Feld benennen, beschreiben und seinen Feldtyp überprüfen. |
-| 4 | **[!UICONTROL **&#x200B; Endgültige Ausgabe &#x200B;**]** | Dieser Bereich zeigt eine spontan aktualisierte Vorschau der Ausgabewerte, basierend auf den Daten der letzten 30 Tage und den Änderungen, die Sie an dem abgeleiteten Feld im Regel-Builder vornehmen. |
+| 3 | **[!UICONTROL ** Feldeinstellungen **]** | Sie können Ihr abgeleitetes Feld benennen, beschreiben und seinen Feldtyp überprüfen. |
+| 4 | **[!UICONTROL ** Endgültige Ausgabe **]** | Dieser Bereich zeigt eine spontan aktualisierte Vorschau der Ausgabewerte, basierend auf den Daten der letzten 30 Tage und den Änderungen, die Sie an dem abgeleiteten Feld im Regel-Builder vornehmen. |
 
 {style="table-layout:auto"}
 
@@ -75,7 +54,7 @@ Wenn Sie ein abgeleitetes Feld erstellen oder bearbeiten, verwenden Sie die Ober
 Beim erstmaligen Zugriff auf die Oberfläche für abgeleitete Felder wird der Assistent [!UICONTROL Mit einer Feldvorlage beginnen] angezeigt.
 
 1. Wählen Sie die Vorlage aus, die die Art des Feldes, das erstellt werden soll, am besten beschreibt.
-2. Wählen Sie zum Fortfahren die Schaltfläche **[!UICONTROL **&#x200B; Auswählen &#x200B;**]** aus.
+2. Wählen Sie zum Fortfahren die Schaltfläche **[!UICONTROL ** Auswählen **]** aus.
 
 Das Dialogfeld für das abgeleitete Feld wird mit Regeln (und Funktionen) gefüllt, die für den ausgewählten Feldtyp erforderlich oder nützlich sind. Weitere Informationen zu den verfügbaren Vorlagen finden Sie unter [Funktionsvorlagen](#function-templates).
 
@@ -89,7 +68,7 @@ Wenn Sie eine Regel im Regel-Builder definieren, verwenden Sie die Oberfläche f
 |---------|----------|--------|
 | A  | **Regelname** | Standardmäßig lautet der Regelname **Regel X** (X verweist auf eine Sequenznummer). Wählen Sie zum Bearbeiten eines Regelnamens den Namen aus und geben Sie den neuen Namen ein, z. B. `Query Parameter`. |
 | B | **Funktionsname** | Der ausgewählte Funktionsname für die Regel, z. B. [!UICONTROL URL PARSE]. Wenn die Funktion die letzte in der Sequenz der Funktionen ist und die endgültigen Ausgabewerte bestimmt, folgt auf den Funktionsnamen [!UICONTROL - ENDGÜLTIGE AUSGABE], zum Beispiel [!UICONTROL URL-PARSEN - ENDGÜLTIGE AUSGABE]. <br/>Um ein Popup mit weiteren Informationen zur Funktion anzuzeigen, wählen Sie ![Hilfesymbol](assets/Smock_HelpOutline_18_N.svg) aus. |
-| C | **Regelbeschreibung** | Sie können optional eine Beschreibung zu einer Regel hinzufügen.<br/>Wählen Sie ![Mehr-Symbol](assets/More.svg) und dann **[!UICONTROL ** Beschreibung hinzufügen **]** aus, um eine Beschreibung hinzuzufügen, oder **[!UICONTROL **&#x200B; Beschreibung bearbeiten &#x200B;**]**, um eine vorhandene Beschreibung zu bearbeiten.<br/>Verwenden Sie den Editor, um eine Beschreibung einzugeben. Sie können den Text mithilfe der Symbolleiste formatieren (mit Stilauswahl, Fett, Kursiv, Unterstrichen, Rechts, Links, Zentriert, Farbe, Zahlenliste, Aufzählungsliste) und Links zu externen Informationen hinzufügen. <br/>Um die Bearbeitung der Beschreibung abzuschließen, klicken Sie auf eine Stelle außerhalb des Editors. |
+| C | **Regelbeschreibung** | Sie können optional eine Beschreibung zu einer Regel hinzufügen.<br/>Wählen Sie ![Mehr-Symbol](assets/More.svg) und dann **[!UICONTROL ** Beschreibung hinzufügen **]** aus, um eine Beschreibung hinzuzufügen, oder **[!UICONTROL ** Beschreibung bearbeiten **]**, um eine vorhandene Beschreibung zu bearbeiten.<br/>Verwenden Sie den Editor, um eine Beschreibung einzugeben. Sie können den Text mithilfe der Symbolleiste formatieren (mit Stilauswahl, Fett, Kursiv, Unterstrichen, Rechts, Links, Zentriert, Farbe, Zahlenliste, Aufzählungsliste) und Links zu externen Informationen hinzufügen. <br/>Um die Bearbeitung der Beschreibung abzuschließen, klicken Sie auf eine Stelle außerhalb des Editors. |
 | D | **Funktionsbereich** | Definiert die Logik der Funktion. Die Oberfläche hängt vom Typ der Funktion ab. Das Dropdown-Menü für [!UICONTROL Feld] oder [!UICONTROL Wert] zeigt alle verfügbaren Feldkategorien (Regeln, Standardfelder, Felder) basierend auf dem von der Funktion erwarteten Eingabetyp an. Alternativ können Sie ein Feld aus der Auswahl „Schema und Standardfelder“ per Drag-and-Drop auf ein Feld oder einen Wert ziehen. Wenn dieses gezogene Feld aus einem Lookup-Datensatz stammt, wird automatisch eine Lookup-Funktion vor der von Ihnen definierten Funktion eingefügt. <br/>Ausführliche Informationen zu jeder der unterstützten Funktionen finden Sie unter [Funktionsreferenz](#function-reference). |
 
 {style="table-layout:auto"}
@@ -98,24 +77,24 @@ Wenn Sie eine Regel im Regel-Builder definieren, verwenden Sie die Oberfläche f
 
 1. Wählen Sie eine vorhandene Datenansicht aus oder erstellen Sie eine Datenansicht. Weitere Informationen finden Sie unter [Datenansichten](../data-views.md).
 
-2. Wählen Sie die Registerkarte **[!UICONTROL **&#x200B; Komponenten &#x200B;**]** der Datenansicht aus.
+2. Wählen Sie die Registerkarte **[!UICONTROL ** Komponenten **]** der Datenansicht aus.
 
-3. Wählen Sie in der linken Leiste **[!UICONTROL **&#x200B; Abgeleitetes Feld erstellen &#x200B;**]** aus.
+3. Wählen Sie in der linken Leiste **[!UICONTROL ** Abgeleitetes Feld erstellen **]** aus.
 
 4. Um Ihr abgeleitetes Feld zu definieren, verwenden Sie die Oberfläche [!UICONTROL Abgeleitetes Feld erstellen]. Siehe [Oberfläche für abgeleitete Felder](#derived-field-interface).
 
-   Wählen Sie zum Speichern des neuen abgeleiteten Felds **[!UICONTROL **&#x200B; Speichern &#x200B;**]** aus.
+   Wählen Sie zum Speichern des neuen abgeleiteten Felds **[!UICONTROL ** Speichern **]** aus.
 
-5. Das neue abgeleitete Feld wird zu [!UICONTROL „Abgeleitete Felder“ >] „Container“ als Teil der **[!UICONTROL **&#x200B; Schemafelder &#x200B;**]** in der linken Leiste der Datenansicht hinzugefügt.
+5. Das neue abgeleitete Feld wird zu [!UICONTROL „Abgeleitete Felder“ >] „Container“ als Teil der **[!UICONTROL ** Schemafelder **]** in der linken Leiste der Datenansicht hinzugefügt.
 
 
 ## Bearbeiten eines abgeleiteten Felds {#edit}
 
 1. Wählen Sie eine vorhandene Datenansicht aus. Weitere Informationen finden Sie unter [Datenansichten](../data-views.md).
 
-2. Wählen Sie die Registerkarte **[!UICONTROL **&#x200B; Komponenten &#x200B;**]** der Datenansicht aus.
+2. Wählen Sie die Registerkarte **[!UICONTROL ** Komponenten **]** der Datenansicht aus.
 
-3. Wählen Sie links im Bereich [!UICONTROL Verbindung] die Registerkarte **[!UICONTROL **&#x200B; Schemafelder &#x200B;**]** aus.
+3. Wählen Sie links im Bereich [!UICONTROL Verbindung] die Registerkarte **[!UICONTROL ** Schemafelder **]** aus.
 
 4. Wählen Sie **[!UICONTROL **„Abgeleitete Felder“ >**]** „Container“ aus.
 
@@ -123,11 +102,11 @@ Wenn Sie eine Regel im Regel-Builder definieren, verwenden Sie die Oberfläche f
 
 6. Verwenden Sie zum Bearbeiten des abgeleiteten Felds die Oberfläche [!UICONTROL Abgeleitetes Feld bearbeiten]. Siehe [Oberfläche für abgeleitete Felder](#derived-field-interface).
 
-   - Wählen Sie **[!UICONTROL **&#x200B; Speichern &#x200B;**]**, um das aktualisierte abgeleitete Feld zu speichern.
+   - Wählen Sie **[!UICONTROL ** Speichern **]**, um das aktualisierte abgeleitete Feld zu speichern.
 
-   - Wählen Sie **[!UICONTROL **&#x200B; Abbrechen &#x200B;**]**, um alle Änderungen am abgeleiteten Feld abzubrechen.
+   - Wählen Sie **[!UICONTROL ** Abbrechen **]**, um alle Änderungen am abgeleiteten Feld abzubrechen.
 
-   - Wählen Sie **[!UICONTROL **&#x200B; Speichern unter &#x200B;**]**, um das abgeleitete Feld als neues abgeleitetes Feld zu speichern. Das neue abgeleitete Feld hat denselben Namen wie das ursprünglich bearbeitete abgeleitete Feld, dem `(copy)` hinzugefügt wurde.
+   - Wählen Sie **[!UICONTROL ** Speichern unter **]**, um das abgeleitete Feld als neues abgeleitetes Feld zu speichern. Das neue abgeleitete Feld hat denselben Namen wie das ursprünglich bearbeitete abgeleitete Feld, dem `(copy)` hinzugefügt wurde.
 
 Alternativ, wenn Sie ein abgeleitetes Feld als Komponente für Dimensionen oder Metriken in Ihrer Datenansicht verwendet haben:
 
@@ -137,11 +116,11 @@ Alternativ, wenn Sie ein abgeleitetes Feld als Komponente für Dimensionen oder 
 
 1. Verwenden Sie zum Bearbeiten des abgeleiteten Felds die Oberfläche [!UICONTROL Abgeleitetes Feld bearbeiten]. Siehe [Oberfläche für abgeleitete Felder](#derived-field-interface).
 
-   - Wählen Sie **[!UICONTROL **&#x200B; Speichern &#x200B;**]**, um das aktualisierte abgeleitete Feld zu speichern.
+   - Wählen Sie **[!UICONTROL ** Speichern **]**, um das aktualisierte abgeleitete Feld zu speichern.
 
-   - Wählen Sie **[!UICONTROL **&#x200B; Abbrechen &#x200B;**]**, um alle Änderungen am abgeleiteten Feld abzubrechen.
+   - Wählen Sie **[!UICONTROL ** Abbrechen **]**, um alle Änderungen am abgeleiteten Feld abzubrechen.
 
-   - Wählen Sie **[!UICONTROL **&#x200B; Speichern unter &#x200B;**]**, um das abgeleitete Feld als neues abgeleitetes Feld zu speichern. Das neue abgeleitete Feld hat denselben Namen wie das ursprünglich bearbeitete abgeleitete Feld, dem `(copy)` hinzugefügt wurde.
+   - Wählen Sie **[!UICONTROL ** Speichern unter **]**, um das abgeleitete Feld als neues abgeleitetes Feld zu speichern. Das neue abgeleitete Feld hat denselben Namen wie das ursprünglich bearbeitete abgeleitete Feld, dem `(copy)` hinzugefügt wurde.
 
 
 
@@ -149,11 +128,11 @@ Alternativ, wenn Sie ein abgeleitetes Feld als Komponente für Dimensionen oder 
 
 1. Wählen Sie eine vorhandene Datenansicht aus. Weitere Informationen finden Sie unter [Datenansichten](../data-views.md).
 
-2. Wählen Sie die Registerkarte **[!UICONTROL **&#x200B; Komponenten &#x200B;**]** der Datenansicht aus.
+2. Wählen Sie die Registerkarte **[!UICONTROL ** Komponenten **]** der Datenansicht aus.
 
-3. Wählen Sie im Bereich [!UICONTROL Verbindung] die Registerkarte **[!UICONTROL **&#x200B; Schemafelder &#x200B;**]** aus. 
+3. Wählen Sie im Bereich [!UICONTROL Verbindung] die Registerkarte **[!UICONTROL ** Schemafelder **]** aus. 
 
-4. Wählen Sie **[!UICONTROL **„Abgeleitete Felder“ > „Container“ &#x200B;**]**.
+4. Wählen Sie **[!UICONTROL **„Abgeleitete Felder“ > „Container“ **]**.
 
 5. Bewegen Sie den Mauszeiger über das abgeleitete Feld, das Sie löschen möchten, und wählen Sie ![Bearbeiten-Symbol](assets/Smock_Edit_18_N.svg).
 
@@ -161,7 +140,7 @@ Alternativ, wenn Sie ein abgeleitetes Feld als Komponente für Dimensionen oder 
 
    Sie werden im Dialogfeld [!UICONTROL Komponente löschen] aufgefordert, den Löschvorgang zu bestätigen. Berücksichtigen Sie eventuell vorhandene externe Verweise auf das abgeleitete Feld außerhalb der Datenansicht.
 
-   - Wählen Sie **[!UICONTROL **&#x200B; Weiter &#x200B;**]**, um das abgeleitete Feld zu löschen.
+   - Wählen Sie **[!UICONTROL ** Weiter **]**, um das abgeleitete Feld zu löschen.
 
 Alternativ, wenn Sie ein abgeleitetes Feld als Komponente für Dimensionen oder Metriken in Ihrer Datenansicht verwendet haben:
 
@@ -173,7 +152,7 @@ Alternativ, wenn Sie ein abgeleitetes Feld als Komponente für Dimensionen oder 
 
    Sie werden im Dialogfeld [!UICONTROL Komponente löschen] aufgefordert, den Löschvorgang zu bestätigen. Berücksichtigen Sie eventuell vorhandene externe Verweise auf das abgeleitete Feld außerhalb der Datenansicht.
 
-   - Wählen Sie **[!UICONTROL **&#x200B; Weiter &#x200B;**]**, um das abgeleitete Feld zu löschen.
+   - Wählen Sie **[!UICONTROL ** Weiter **]**, um das abgeleitete Feld zu löschen.
 
 >[!NOTE]
 >
@@ -444,14 +423,10 @@ Details zu jeder unterstützten Funktion finden Sie unten unter:
 
 ### Fall wenn {#casewhen}
 
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="dataview_derivedfields_casewhen"
 >title="Fall wenn"
 >abstract="Diese Funktion bietet die Möglichkeit, Bedingungen anzuwenden, die auf definierten Kriterien aus einem oder mehreren Feldern basieren. Anhand dieser Kriterien werden dann die Werte im neuen abgeleiteten Feld auf Grundlage der Reihenfolge der Bedingungen definiert."
-
-<!-- markdownlint-enable MD034 -->
 
 
 Wendet Bedingungen basierend auf definierten Kriterien aus einem oder mehreren Feldern an. Anhand dieser Kriterien werden dann die Werte im neuen abgeleiteten Feld auf Grundlage der Reihenfolge der Bedingungen definiert.
@@ -684,14 +659,10 @@ Die folgenden Einschränkungen gelten und werden beim *Auswählen* und *Einstell
 
 ### Klassifizieren {#classify}
 
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="dataview_derivedfields_classify"
 >title="Klassifizieren"
 >abstract="Diese Funktion bietet die Möglichkeit, einen Satz von Werten zu definieren, die per Texteingabe durch entsprechende Werte ersetzt werden."
-
-<!-- markdownlint-enable MD034 -->
 
 
 Definiert einen Satz von Werten, die in einem neuen abgeleiteten Feld durch entsprechende Werte ersetzt werden.
@@ -913,17 +884,14 @@ Sie definieren ein abgeleitetes `Origin - Destination`-Feld. Mit der Funktion [!
 
 +++
 
+<!-- DEDUPLICATE -->
 
 ### Deduplizieren {#dedup}
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="dataview_derivedfields_deduplicate"
 >title="Deduplizieren"
 >abstract="Diese Funktion bietet die Möglichkeit, ein Feld so zu konfigurieren, dass Werte nicht wiederholt auf Sitzungs- oder Personenebene gezählt werden. Darüber hinaus kann mit einer Deduplizierungs-ID sichergestellt werden, dass auf Grundlage einer bestimmten ID (z. B. einer Kauf-ID) nur ein Wert verwendet wird (entweder die erste oder die letzte Instanz)."
-
-<!-- markdownlint-enable MD034 -->
 
 
 Verhindert, dass ein Wert mehrmals gezählt wird.
@@ -1007,6 +975,7 @@ Sie definieren ein neues abgeleitetes `Tracking Code (deduplicated)`-Feld. Mit d
 +++
 
 
+
 <!-- FIND AND REPLACE -->
 
 ### Suchen und Ersetzen {#find-and-replace}
@@ -1017,8 +986,6 @@ Sie definieren ein neues abgeleitetes `Tracking Code (deduplicated)`-Feld. Mit d
 >id="dataview_derivedfields_findandreplace"
 >title="Suchen und Ersetzen"
 >abstract="Diese Funktion bietet die Möglichkeit, alle Werte in einem ausgewählten Feld per Suche zu ermitteln und diese Werte in einem neuen abgeleiteten Feld durch einen anderen Wert zu ersetzen."
-
-<!-- markdownlint-enable MD034 -->
 
 
 Findet alle Werte in einem ausgewählten Feld und ersetzt diese Werte durch einen anderen Wert in einem neuen, abgeleiteten Feld.
@@ -1091,14 +1058,10 @@ Sie definieren ein abgeleitetes `Email Marketing (updated)`-Feld. Mit der Funkti
 
 ### Lookup {#lookup}
 
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="dataview_derivedfields_lookup"
 >title="Lookup"
 >abstract="Diese Funktion bietet die Möglichkeit, Felder aus einem Lookup-Datensatz mit einem übereinstimmenden Schlüssel zwischen Datensätzen zu verwenden."
-
-<!-- markdownlint-enable MD034 -->
 
 
 Sucht mithilfe eines Felds aus einem Lookup-Datensatz nach Werten und gibt einen Wert in einem neuen abgeleiteten Feld oder für die weitere Regelverarbeitung zurück.
@@ -1152,14 +1115,10 @@ Sie können schnell eine [!UICONTROL Lookup]-Funktion in den Regel-Builder einf�
 
 ### Kleinschreibung {#lowercase}
 
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="dataview_derivedfields_lowercase"
 >title="Kleinschreibung"
 >abstract="Diese Funktion wandel die gesamte Zeichenkette in Kleinschreibung um."
-
-<!-- markdownlint-enable MD034 -->
 
 
 Konvertiert Werte aus einem Feld in Kleinbuchstaben und speichert sie in einem neuen abgeleiteten Feld.
@@ -1213,14 +1172,10 @@ Sie definieren ein abgeleitetes `Product Names`-Feld. Mit der Funktion [!UICONTR
 
 ### Mathematik {#math}
 
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="dataview_derivedfields_math"
 >title="Mathematik"
 >abstract="Diese Funktion bietet die Möglichkeit, mathematische Operationen für ein Feld durchzuführen. Mit ihr lassen sich grundlegende Rechenoperationen wie Addition, Subtraktion, Multiplikation und Division ausführen."
-
-<!-- markdownlint-enable MD034 -->
 
 
 Verwenden Sie grundlegende mathematische Operatoren (Addieren, Subtrahieren, Multiplizieren, Dividieren und Potenzieren) für numerische Felder.
@@ -1290,11 +1245,9 @@ Beim Arbeiten mit statischen Zahlen in der Funktion [!UICONTROL MATHEMATIK] sind
 - Wenn Sie mehrere statische Werte in einer Formel verwenden, sollten diese statischen Werte mithilfe von Klammern gruppiert werden, damit die Formel gültig ist. Zum Beispiel:
 
    - Diese Formel gibt einen Fehler zurück.
-
      ![Weitere Informationen zur Mathematik 4](assets/math-more-info-4.png)
 
    - Diese Formel ist gültig.
-
      ![Weitere Informationen zur Mathematik 5](assets/math-more-info-5.png)
 
 Verwenden Sie die mathematische Funktion für Berechnungen auf Trefferebene. Verwenden Sie die Funktion [Zusammenfassen](#summarize) für Berechnungen, die auf dem Umfang „Ereignis“, „Sitzung“ oder „Person“ basieren.
@@ -1306,14 +1259,10 @@ Verwenden Sie die mathematische Funktion für Berechnungen auf Trefferebene. Ver
 
 ### Felder zusammenführen {#merge}
 
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="dataview_derivedfields_mergefields"
 >title="Felder zusammenführen"
 >abstract="Diese Funktion bietet die Möglichkeit, Werte aus zwei verschiedenen Feldern in einer einzigen Dimension einzuschließen. Mithilfe der ersten Regel wird zunächst überprüft, ob der erste Wert festgelegt ist. Wenn nicht, wird der zweite Wert verwendet usw."
-
-<!-- markdownlint-enable MD034 -->
 
 
 Führt Werte aus zwei verschiedenen Feldern in einem neuen abgeleiteten Feld zusammen.
@@ -1382,14 +1331,10 @@ Sie müssen denselben Feldtyp in einer Regel zum Zusammenführen von Feldern aus
 
 ### Weiter oder zurück {#next-previous}
 
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="dataview_derivedfields_nextprevious"
 >title="Weiter oder zurück"
 >abstract="Diese Funktion bietet die Möglichkeit, den nächsten bzw. vorherigen Wert anzuzeigen, der für ein bestimmtes Feld erfasst wurde."
-
-<!-- markdownlint-enable MD034 -->
 
 
 Nimmt ein Feld als Eingabe und löst den nächsten oder vorherigen Wert für dieses Feld im Rahmen der Sitzung oder Verwendung auf. Dies gilt nur für die Tabellenfelder „Besuch“ und „Ereignis“.
@@ -1464,14 +1409,10 @@ Sie können nur Felder auswählen, die zur Besuchs- oder Ereignistabelle gehöre
 
 ### Regulären Ausdruck ersetzen {#regex-replace}
 
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="dataview_derivedfields_regexreplace"
 >title="Regulären Ausdruck ersetzen"
 >abstract="Diese Funktion bietet die Möglichkeit, Teile einer Zeichenfolge mithilfe regulärer Ausdrücke zu extrahieren."
-
-<!-- markdownlint-enable MD034 -->
 
 
 Ersetzt einen Wert aus einem Feld mithilfe eines regulären Ausdrucks in ein neues abgeleitetes Feld.
@@ -1519,7 +1460,7 @@ Sie erstellen ein abgeleitetes `Page Identifier`-Feld. Mit der Funktion [!UICONT
 
 ## Weitere Informationen {#regex-replace-more-info}
 
-Customer Journey Analytics verwendet eine Untergruppe der Perl-Regex-Syntax. Die folgenden Ausdrücke werden unterstützt:
+Customer Journey Analytics verwendet eine Teilmenge der Perl-Regex-Syntax. Die folgenden Ausdrücke werden unterstützt:
 
 | Ausdruck | Beschreibung |
 | --- | --- |
@@ -1571,14 +1512,10 @@ Sie können diese Sequenzen im [!UICONTROL Ausgabeformat] beliebig oft und in be
 
 ### Aufspalten {#split}
 
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="dataview_derivedfields_split"
 >title="Aufspalten"
 >abstract="Diese Funktion bietet die Möglichkeit, ein Feld mithilfe eines Trennzeichens in mehrere Felder aufzuspalten."
-
-<!-- markdownlint-enable MD034 -->
 
 
 Spaltet einen Wert von einem Feld in ein neues abgeleitetes Feld auf.
@@ -1673,14 +1610,10 @@ Sie erstellen ein abgeleitetes `Second Response`-Feld, um den letzten Wert aus d
 
 ### Zusammenfassen {#summarize}
 
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="dataview_derivedfields_summarize"
 >title="Zusammenfassen"
 >abstract="Diese Funktion bietet die Möglichkeit, Werte auf Ereignis-, Sitzungs- oder Personenebene zu aggregieren. Je nach Feldtyp für das Auswahlfeld stehen verschiedene Optionen zur Verfügung."
-
-<!-- markdownlint-enable MD034 -->
 
 
 Wendet Aggregationstypfunktionen auf Ereignis-, Sitzungs- und Benutzerebene auf Metriken oder Dimensionen an.
@@ -1751,14 +1684,10 @@ Verwenden Sie die Funktion „Zusammenfassen“ für Berechnungen, die auf dem U
 
 ### Zuschneiden {#trim}
 
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="dataview_derivedfields_trim"
 >title="Zuschneiden"
 >abstract="Diese Funktion bietet die Möglichkeit, Leer- oder Sonderzeichen entweder am Anfang oder am Ende einer Zeichenfolge zu entfernen. Außerdem kann die Anzahl der Zeichen angegeben werden, die für den zurückgegebenen Wert verwendet werden sollen (entweder vom Anfang oder vom Ende der Zeichenfolge aus gesehen)."
-
-<!-- markdownlint-enable MD034 -->
 
 
 Schneidet Leerzeichen, Sonderzeichen oder die Anzahl von Zeichen entweder vom Anfang oder Ende der Feldwerte in ein neues abgeleitetes Feld zu.
@@ -1868,19 +1797,14 @@ Sie erstellen ein abgeleitetes  `Store Identifier`-Feld. Mit der Funktion [!UICO
 {style="table-layout:auto"}
 +++
 
-
 <!-- URL PARSE -->
 
 ### URL-Parsen {#urlparse}
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="dataview_derivedfields_urlparse"
 >title="URL parsen"
 >abstract="Diese Funktion bietet die Möglichkeit, verschiedene Teile einer URL, einschließlich Host-, Pfad- oder Abfrageparameter, auszuparsen."
-
-<!-- markdownlint-enable MD034 -->
 
 
 Analysiert verschiedene Teile einer URL, einschließlich Protokoll-, Host-, Pfad- oder Abfrageparametern.
