@@ -21,7 +21,7 @@ ht-degree: 27%
 >[!IMPORTANT]
 >
 >Dies ist eine vorläufige Dokumentation neuer abgeleiteter Feldfunktionen, die noch nicht allgemein verfügbar sind. Verwenden Sie diese Informationen, um mehr über die neuen Funktionen abgeleiteter Felder zu erfahren. Diese Dokumentation kann noch geändert werden, und aus der aktuellen Version dieses Artikels können keine rechtlichen Verpflichtungen abgeleitet werden.
->><br/>Unter [Abgeleitete Felder](derived-fields.md) finden Sie Informationen zur Funktionalität abgeleiteter Felder im Allgemeinen sowie zu den aktuell verfügbaren veröffentlichten Funktionen und Funktionsvorlagen.
+>&#x200B;><br/>Unter [Abgeleitete Felder](derived-fields.md) finden Sie Informationen zur Funktionalität abgeleiteter Felder im Allgemeinen sowie zu den aktuell verfügbaren veröffentlichten Funktionen und Funktionsvorlagen.
 >
 
 ## Funktionsreferenz
@@ -75,7 +75,7 @@ Als Marketing-Analyst eines Hotelunternehmens möchten Sie den Unterschied der A
 
 ### Abgeleitetes Feld {#datemath-uc1-derivedfield}
 
-Sie definieren ein abgeleitetes `Days between booking and check-in`-Feld. Mit der Funktion [!UICONTROL DATE MATH] können Sie eine Regel definieren, mit der die Tage für [!UICONTROL Scope] [!DNL Person] zwischen dem [!UICONTROL Buchungsdatum] und [!UICONTROL Check-in-Datum] berechnet werden. Wählen Sie [!UICONTROL Tag] als [!UICONTROL Ausgabegranularität] aus. Und Sie wählen [!UICONTROL Letztes ] sowohl für [!UICONTROL Buchungsdatum] als auch für [!UICONTROL Check-in-Datum], um sicherzustellen, dass der Wert der letzten Person in der Berechnung verwendet wird.
+Sie definieren ein abgeleitetes `Days between booking and check-in`-Feld. Mit der Funktion [!UICONTROL DATE MATH] können Sie eine Regel definieren, mit der die Tage für [!UICONTROL Scope] [!DNL Person] zwischen dem [!UICONTROL Buchungsdatum] und [!UICONTROL Check-in-Datum] berechnet werden. Wählen Sie [!UICONTROL Tag] als [!UICONTROL Ausgabegranularität] aus. Und Sie wählen [!UICONTROL Letztes &#x200B;] sowohl für [!UICONTROL Buchungsdatum] als auch für [!UICONTROL Check-in-Datum], um sicherzustellen, dass der Wert der letzten Person in der Berechnung verwendet wird.
 
 ![Screenshot der Regel für Datumsmathematik](assets/datemath-1.png)
 
@@ -195,7 +195,7 @@ Sie verfügen über ein ganzzahliges Feld, die Bildschirmhöhe (z. B. device.scr
 
 ### Abgeleitetes Feld {#typecast-uc1-derivedfield}
 
-Sie definieren ein abgeleitetes  `Screen Height`-Feld. Mit der Funktion [!UICONTROL TYPECAST] definieren Sie eine Regel für [!UICONTROL  Feld Typecast to] [!UICONTROL String] [!UICONTROL Screen height] und speichern diese im neuen abgeleiteten Feld.
+Sie definieren ein abgeleitetes  `Screen Height`-Feld. Mit der Funktion [!UICONTROL TYPECAST] definieren Sie eine Regel für [!UICONTROL &#x200B; Feld Typecast to] [!UICONTROL String] [!UICONTROL Screen height] und speichern diese im neuen abgeleiteten Feld.
 
 ![Screenshot der Typecast-Regel 1](assets/typecast-1.png)
 
@@ -210,7 +210,7 @@ Sie möchten den Umsatz in einer Kohortentabelle verwenden (die nur Ganzzahlen u
 
 ### Abgeleitetes Feld {#typecast-uc2-derivedfield}
 
-Sie definieren ein abgeleitetes  `Revenue (integer)`-Feld. Mit der Funktion [!UICONTROL TYPECAST] definieren Sie eine Regel für [!UICONTROL  Feld Typecast to] [!UICONTROL Integer] [!UICONTROL Revenue] und speichern diese im neuen abgeleiteten Feld.
+Sie definieren ein abgeleitetes  `Revenue (integer)`-Feld. Mit der Funktion [!UICONTROL TYPECAST] definieren Sie eine Regel für [!UICONTROL &#x200B; Feld Typecast to] [!UICONTROL Integer] [!UICONTROL Revenue] und speichern diese im neuen abgeleiteten Feld.
 
 
 +++
