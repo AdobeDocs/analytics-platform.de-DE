@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Administration
 role: Admin
 exl-id: f093ac54-7d31-449b-a441-a65856a1d535
-source-git-commit: fedb1337b32e44fc00989bace6a4d1788043f55f
+source-git-commit: 88956946aabb74d94cd84a8b4ef30d9eb1044ebd
 workflow-type: tm+mt
-source-wordcount: '1831'
-ht-degree: 10%
+source-wordcount: '1900'
+ht-degree: 11%
 
 ---
 
@@ -94,7 +94,7 @@ Image size - 2 - System-enforced Guardrail - Maximim upload size per image in MB
 
 {style="table-layout:auto"}
 
-Siehe auch Experience Platform [Leitplanken für die Echtzeit-Kundendatenplattform](https://experienceleague.adobe.com/de/docs/experience-platform/rtcdp/guardrails/overview).
+Siehe auch Experience Platform [Leitplanken für die Echtzeit-Kundendatenplattform](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/guardrails/overview).
 
 
 ## Automatisierte Datensatzgültigkeit
@@ -139,7 +139,7 @@ Siehe auch Experience Platform [Leitplanken für die Echtzeit-Kundendatenplattfo
 
 {style="table-layout:auto"}
 
-Siehe auch Experience Platform [Schutzmaßnahmen bei der Datenaufnahme](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html?lang=de).
+Siehe auch Experience Platform [Schutzmaßnahmen bei der Datenaufnahme](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html).
 
 
 ## Zieldatenexport
@@ -151,7 +151,7 @@ Siehe auch Experience Platform [Schutzmaßnahmen bei der Datenaufnahme](https://
 
 {style="table-layout:auto"}
 
-Siehe auch Experience Platform [Leitplanken für den Datensatzexport](https://experienceleague.adobe.com/de/docs/experience-platform/destinations/guardrails#dataset-exports)
+Siehe auch Experience Platform [Leitplanken für den Datensatzexport](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/guardrails#dataset-exports)
 
 
 ## Data Landing Zone
@@ -247,12 +247,18 @@ Siehe auch Experience Platform [Leitplanken für den Datensatzexport](https://ex
 {style="table-layout:auto"}
 
 
+## Data Insights Agent
+
+| Name | Wert | Art von Limit | Beschreibung |
+|---|--:|---|---|
+| Datenansichten | 50 | Vom System erzwungene Leitplanke | Maximale Anzahl von Datenansichten, die für Data Insights Agent aktiviert werden können. Wenn weitere Datenansichten aktiviert sind, stehen dem Data Insights Agent nur die am häufigsten verwendeten Datenansichten zur Verfügung. Diese Schutzmaßnahme hat keine Auswirkungen auf die [Schutzmechanismen, die die maximale Anzahl von Datenansichten definieren, die Sie für eine Verbindung oder in Ihrer Organisation definieren können](#connections-data-views-projects). |
+
 
 ## Latenzen
 
 >[!NOTE]
 >
->Die folgenden Verarbeitungszeiten sind Leitplanken, keine vertraglichen Service Level Agreements (SLAs). Die Latenz variiert je nach Kundenkonfiguration, Datenvolumen und Kundenanwendungen. Häufig sind die tatsächlichen Verarbeitungszeiten schneller. Die spezifischen Vertragsbedingungen und SLAs finden Sie in Ihrem Customer Journey Analytics-Vertrag. Weitere Informationen finden Sie [ Experience Platform ](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html?lang=de)Leitplanken für die Datenaufnahme).
+>Die folgenden Verarbeitungszeiten sind Leitplanken, keine vertraglichen Service Level Agreements (SLAs). Die Latenz variiert je nach Kundenkonfiguration, Datenvolumen und Kundenanwendungen. Häufig sind die tatsächlichen Verarbeitungszeiten schneller. Die spezifischen Vertragsbedingungen und SLAs finden Sie in Ihrem Customer Journey Analytics-Vertrag. Weitere Informationen finden Sie [ Experience Platform ](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html)Leitplanken für die Datenaufnahme).
 
 | Datenfluss | Erwartete Latenz |
 |---|---|
