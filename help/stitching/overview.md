@@ -6,9 +6,9 @@ feature: Stitching, Cross-Channel Analysis
 exl-id: 1c42efac-b3d2-437b-8b0b-9c6fdfed8520
 role: Admin
 source-git-commit: 50599b36d333cae3735c6d4fd1b0af6fcabe9177
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '735'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -72,8 +72,8 @@ Verwechseln Sie die Zuordnung nicht mit:
 >[!MORELIKETHIS]
 >
 >[Feldbasierte Zuordnung](fbs.md)
->&#x200B;>[Diagrammbasierte Zuordnung](gbs.md)
->&#x200B;>[Verwenden der Zuordnung](use-stitching.md)
->&#x200B;>[Validieren der Zuordnung](validate.md)
->&#x200B;>[Häufig gestellte Fragen zur Zuordnung](faq.md)
+>>[Diagrammbasierte Zuordnung](gbs.md)
+>>[Verwenden der Zuordnung](use-stitching.md)
+>>[Validieren der Zuordnung](validate.md)
+>>[Häufig gestellte Fragen zur Zuordnung](faq.md)
 
