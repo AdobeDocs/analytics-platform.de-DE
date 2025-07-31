@@ -399,7 +399,7 @@ ht-degree: 99%
       + [Überwachen des Zustands des Datenwörterbuchs](../components/data-dictionary/monitor-data-dictionary-health.md)
    + Echtzeit-Reporting {#real-time-reporting}
       + [Überblick](/help/components/real-time/real-time.md)
-      + [Verwenden von Echtzeitberichten](/help/components/real-time/use-real-time.md)
+      + [Verwenden von Echtzeit-Reporting](/help/components/real-time/use-real-time.md)
    + [Geplante Projekte](../components/scheduled-projects-manager.md)
 + Report Builder {#cja-reportbuilder}
    + [Überblick](../report-builder/rb-overview.md)
