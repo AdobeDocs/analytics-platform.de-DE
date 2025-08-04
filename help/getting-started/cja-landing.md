@@ -4,10 +4,10 @@ description: Landingpage von Customer Journey Analytics.
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 7f67c497-386b-4442-a502-6b492f35c6e6
-source-git-commit: 94d1bcdb2419f8c2e27bd77bb2e35b04cd30d632
+source-git-commit: 830e8312b4be2ffac907baca282ce71029e6ecc5
 workflow-type: tm+mt
-source-wordcount: '795'
-ht-degree: 91%
+source-wordcount: '808'
+ht-degree: 98%
 
 ---
 
@@ -25,9 +25,15 @@ Werfen Sie einen Blick auf die neuesten Verbesserungen in Customer Journey Analy
 
 >[!TAB B2B Edition]
 
-Customer Journey Analytics B2B Edition unterstützt B2B-Unternehmen dabei, ihre Marketing-, Vertriebs- und Produkt-Teams aufeinander abzustimmen, indem es verwertbare Kontoerkenntnisse bereitstellt, die das Umsatzwachstum fördern. Wenn der Account in den Mittelpunkt des Datenmodells gestellt wird, konzentriert sich die gesamte Analyse auf die Account-Journey.
+Customer Journey Analytics B2B Edition unterstützt B2B-Unternehmen dabei, ihre Marketing-, Vertriebs- und Produkt-Teams aufeinander abzustimmen, indem verwertbare Kontoerkenntnisse bereitgestellt werden, die das Umsatzwachstum fördern. Wenn das Konto in den Mittelpunkt des Datenmodells gestellt wird, konzentriert sich die gesamte Analyse auf die Konto-Journey.
 
 [![Bild](assets/learn-more-button.svg)](/help/getting-started/cja-b2b-edition.md)
+
+>[!TAB Abgeleitete Feldfunktionen]
+
+Neue abgeleitete Feldfunktionen: [Data Math](/help/data-views/derived-fields/derived-fields.md#date-math), [Depth](/help/data-views/derived-fields/derived-fields.md#depth) und [TypeCast](/help/data-views/derived-fields/derived-fields.md#typecast).
+
+[![Bild](assets/learn-more-button.svg)](/help/data-views/derived-fields/derived-fields.md)
 
 >[!TAB Content Analytics]
 
@@ -150,7 +156,7 @@ Lernen Sie die Unterschiede zwischen Customer Journey Analytics und Adobe Analyt
   <tr style="border: 0;">
     <td>
       <img src="./assets/analytics.svg" width="35px"><br/>
-      <strong>Mit Adobe Analytics vergleichen</strong><br/><a href="/help/getting-started/aa-vs-cja/overview.md">Übersicht</a> - <a href="/help/getting-started/aa-to-cja.md">Entwicklung</a> - <a href="/help/getting-started/aa-vs-cja/aa-data-in-cja.md">Adobe Analytics-Daten verwenden</a> - <a href="/help/getting-started/aa-vs-cja/cja-aa.md">Funktionsunterstützung</a> - <a href="/help/getting-started/aa-vs-cja/terminology.md">Terminologie</a> - <a href="/help/getting-started/aa-vs-cja/data-processing-comparisons.md">Datenverarbeitung</a> - <a href="/help/getting-started/cja-b2b-edition.md">Customer Journey Analytics B2B edition</a>
+      <strong>Vergleich mit Adobe Analytics</strong><br/><a href="/help/getting-started/aa-vs-cja/overview.md">Überblick</a> – <a href="/help/getting-started/aa-to-cja.md">Entwicklung</a> – <a href="/help/getting-started/aa-vs-cja/aa-data-in-cja.md">Verwenden von Adobe Analytics-Daten</a> – <a href="/help/getting-started/aa-vs-cja/cja-aa.md">Funktionsunterstützung</a> – <a href="/help/getting-started/aa-vs-cja/terminology.md">Terminologie</a> – <a href="/help/getting-started/aa-vs-cja/data-processing-comparisons.md">Datenverarbeitung</a> – <a href="/help/getting-started/cja-b2b-edition.md">Customer Journey Analytics B2B Edition</a>
     </td>
     <td>
       <img src="./assets/connections.svg" width="35px"><br/>
@@ -182,7 +188,7 @@ Lernen Sie die Unterschiede zwischen Customer Journey Analytics und Adobe Analyt
 
 <table style="table-layout:fixed"><tr style="border: 0;">
 <td><strong>Customer Journey Analytics</strong><br/>
-<a href="https://experienceleague.adobe.com/de/docs/customer-journey-analytics-learn/tutorials/overview" target="_blank">Tutorials</a> - <a href="https://helpx.adobe.com/de/legal/product-descriptions/customer-journey-analytics.html" target="_blank">Customer Journey Analytics-Produktbeschreibung</a> - <a href="https://helpx.adobe.com/de/legal/product-descriptions/adobe-analytics-addon-customer-journey-analytics.html" target="_blank">Adobe Analytics (Customer Journey Analytics-Add-on)-Produktbeschreibung</a> - <a href="https://helpx.adobe.com/de/legal/product-descriptions/customer-journey-analytics-b2b.html" target="_blank">Customer Journey Analytics B2B edition-Produktbeschreibung</a> - <a href="https://developer.adobe.com/cja-apis/docs/" target="_blank">Customer Journey Analytics-APIs</a> - <a href="/help/ai-assistant.md">AI-Assistent</a>
+<a href="https://experienceleague.adobe.com/de/docs/customer-journey-analytics-learn/tutorials/overview" target="_blank">Tutorials</a> – <a href="https://helpx.adobe.com/de/legal/product-descriptions/customer-journey-analytics.html" target="_blank">Customer Journey Analytics – Produktbeschreibung</a> – <a href="https://helpx.adobe.com/de/legal/product-descriptions/adobe-analytics-addon-customer-journey-analytics.html" target="_blank">Adobe Analytics (Customer Journey Analytics-Add-on) – Produktbeschreibung</a> – <a href="https://helpx.adobe.com/de/legal/product-descriptions/customer-journey-analytics-b2b.html" target="_blank">Customer Journey Analytics B2B Edition – Produktbeschreibung</a> – <a href="https://developer.adobe.com/cja-apis/docs/" target="_blank">Customer Journey Analytics-APIs</a> – <a href="/help/ai-assistant.md">KI-Assistent</a>
 </td>
 <td><strong>Datenaufnahme</strong><br/><a href="/help/data-ingestion/data-ingestion.md">Übersicht</a> - <a href="/help/data-ingestion/analytics.md">Analytics</a> - <a href="/help/data-ingestion/aepwebsdk.md">Web-SDK</a> - <a href="/help/data-ingestion/aepmobilesdk.md">Mobile SDK</a> - <a href="/help/data-ingestion/batch.md">Batch</a> - <a href="/help/data-ingestion/streaming.md">Streaming</a> - <a href="/help/data-ingestion/sources.md">Quellen</a> - <a href="/help/data-ingestion/serverapi.md">Server-API</a>
 </td>
@@ -191,4 +197,4 @@ Lernen Sie die Unterschiede zwischen Customer Journey Analytics und Adobe Analyt
 
 
 <table style="table-layout:auto" class="tablelayout-is-fixed"><tbody><tr style="border: 0;"><td><img src="./assets/newsletter.png"></td><td>
-<b>Bleiben Sie auf dem Laufenden, tragen Sie zur Community bei und verbessern Sie Ihr Erlebnis mit Customer Journey Analytics!</b><br>Besuchen Sie die Adobe Analytics-Community, um die Funktionalität mit anderen Benutzenden zu erörtern. <a href="https://experienceleaguecommunities.adobe.com/t5/adobe-analytics/ct-p/adobe-analytics-community?profile.language=de&lang=de">Werden Sie noch heute Teil der Community!</a></td></tr></tbody></table>
+<b>Bleiben Sie auf dem Laufenden, tragen Sie zur Community bei und verbessern Sie Ihr Erlebnis mit Customer Journey Analytics!</b><br>Besuchen Sie die Adobe Analytics-Community, um die Funktionalität mit anderen Benutzenden zu erörtern. <a href="https://experienceleaguecommunities.adobe.com/t5/adobe-analytics/ct-p/adobe-analytics-community?lang=de">Werden Sie noch heute Teil der Community!</a></td></tr></tbody></table>
