@@ -6,9 +6,9 @@ feature: Content Analytics
 role: User
 exl-id: 6e756ae8-b969-46f1-95b8-d8fbb0d058ed
 source-git-commit: 51b3d533ef7b42ff03823f2dffcb2ccfbb9c4bbe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1300'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -31,7 +31,7 @@ Basierend auf den Content Analytics-spezifischen Dimensionen in Ihrem Projekt we
 
 Standardmäßig werden Miniaturen für die entsprechenden Content Analytics-Dimensionen angezeigt. So konfigurieren Sie die Anzeige von Miniaturen für eine Content Analytics-Dimension:
 
-* Bewegen Sie den Mauszeiger über eine Kopfzeile für eine Content Analytics-Dimension, Zum Beispiel **[!UICONTROL Asset-IDs]** oder **[!UICONTROL Erlebnis-IDs]**.
+* Bewegen Sie den Mauszeiger über eine Kopfzeile für eine Content Analytics-Dimension, z. B. **[!UICONTROL Asset-IDs]** oder **[!UICONTROL Erlebnis-IDs]**.
 * Wählen Sie ![Einstellung](/help/assets/icons/Setting.svg) aus.
 * Aktivieren oder deaktivieren Sie im Popup **[!UICONTROL Zeileneinstellungen]** unter **[!UICONTROL Einstellungen]** die Option **[!UICONTROL Miniaturansichten anzeigen]**.
 
@@ -155,5 +155,5 @@ Sie können jedes Asset nach Dimensionen aufschlüsseln, um nachvollziehen zu k�
 >[!MORELIKETHIS]
 >
 >[Content Analytics-Komponenten](components.md)
->&#x200B;>[Verwenden von Vorlagen](/help/analysis-workspace/templates/use-templates.md#web-engagement)
+>>[Verwenden von Vorlagen](/help/analysis-workspace/templates/use-templates.md#web-engagement)
 >
