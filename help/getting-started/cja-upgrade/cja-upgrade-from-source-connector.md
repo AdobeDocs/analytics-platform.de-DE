@@ -5,8 +5,8 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 4c0eef7d-7b0e-43b5-8126-d84d4fffd80c
-source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
-workflow-type: ht
+source-git-commit: 5faf9668475818773c645b69915ddd5182500aea
+workflow-type: tm+mt
 source-wordcount: '538'
 ht-degree: 100%
 
@@ -53,9 +53,6 @@ Im Folgenden finden Sie den allgemeinen Prozess für den Wechsel von der ausschl
 1. [Erstellen Sie ein XDM-Schema für den Analytics-Quell-Connector](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-schema.md).
 
 1. Ordnen Sie jede Adobe Analytics-Dimension aus Ihrem Analytics-Quell-Connector der Dimension im Web-SDK-Schema zu.
-
-   1. &#x200B;
-      <!-- how do you get here -->
 
    1. Wählen Sie im Abschnitt **[!UICONTROL Standardfelder zuordnen]** die Registerkarte **[!UICONTROL Benutzerdefiniert]** aus.
 
