@@ -30,7 +30,7 @@ Um Echtzeitberichte zu verwenden, aktivieren Sie den Umschalter **[!UICONTROL Ec
 * [Attribution](/help/analysis-workspace/c-panels/attribution.md)
 * [Nächstes oder vorheriges Objekt](/help/analysis-workspace/c-panels/next-previous.md)
 
-Es wird eine Meldung mit dem Zeitstempel der letzten Aktualisierung der Daten angezeigt. Beispiel: [!UICONTROL  *Letzte Aktualisierung um 19:550 Uhr*].
+Es wird eine Meldung mit dem Zeitstempel der letzten Aktualisierung der Daten angezeigt. Beispiel: [!UICONTROL &#x200B; *Letzte Aktualisierung um 19:550 Uhr*].
 
 Wählen Sie aus dem Dropdown-Menü den Echtzeitzeitraum aus, über den Sie einen Bericht erstellen möchten. Verfügbare Optionen sind:
 
