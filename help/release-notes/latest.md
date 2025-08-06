@@ -3,9 +3,9 @@ title: Aktuelle Versionshinweise zu Customer Journey Analytics
 description: Anzeigen der neuesten Versionshinweise zu Customer Journey Analytics
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 71974e607b0924796c4413a4d092f7afd643d32f
+source-git-commit: 379cf7af9bf6722fd483a9c0639fc6b294c398a4
 workflow-type: tm+mt
-source-wordcount: '437'
+source-wordcount: '438'
 ht-degree: 81%
 
 ---
@@ -22,7 +22,7 @@ Diese Versionshinweise beziehen sich auf den Veröffentlichungszeitraum vom 11. 
 | Funktion | Beschreibung | [Rollout-Beginn](releases.md) | [Allgemeine Verfügbarkeit](releases.md) |
 | ----------- | ---------- | ------- | ---- |
 | **Hinzufügen und Anzeigen von Kommentaren in Analysis Workspace-Projekten** | Eine neue [Kommentarfunktion](https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-workspace/build-workspace-project/comment-projects) in Analysis Workspace ermöglicht es Ihnen, im Rahmen eines Analysis Workspace-Projekts Erkenntnisse zu teilen und Fragen zu stellen. Dadurch können Diskussionen über die Daten optimiert werden, sodass Gespräche im Kontext der diskutierten Daten geführt werden. Sie können <ul><li>jedes Analysis Workspace-Projekt kommentieren, auf das Sie Zugriff haben,</li><li>einen bestimmten Punkt in einer Visualisierung kommentieren oder allgemeine Kommentare zu einem Projekt abgeben,</li><li>andere Benutzende taggen, um sie über Ihre Kommentare zu informieren,</li><li>vorhandene Kommentare verwalten (bearbeiten, anheften, schließen usw.).</li></ul>Customer Journey Analytics-Admins können die [Kommentarfunktion auf Organisationsebene deaktivieren](https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-workspace/user-preferences#ims-organization-preferences). Projektverantwortliche können die [Kommentarfunktion auf Projektebene deaktivieren](https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-workspace/build-workspace-project/create-projects). | &#x200B;25. Juni 2025 | &#x200B;22. Juli 2025 <p>(zuvor 29. Mai 2025)</p> |
-| **Als PDF heruntergeladene Projekte werden auf Ihre Workstation heruntergeladen** | Beim Herunterladen eines Projekts als PDF wird die PDF-Datei in den Ordner „Downloads“ auf Ihrer Workstation heruntergeladen. Bisher wurde die PDF-Datei in einem neuen Browser-Tab mit einer eindeutigen URL geöffnet, wenn Sie ein Projekt als PDF heruntergeladen haben. [Weitere Informationen](https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-workspace/export/download-send) | | TBD |
+| **Als PDF heruntergeladene Projekte werden auf Ihre Workstation heruntergeladen** | Beim Herunterladen eines Projekts als PDF wird die PDF-Datei in den Ordner „Downloads“ auf Ihrer Workstation heruntergeladen. Bisher wurde die PDF-Datei in einem neuen Browser-Tab mit einer eindeutigen URL geöffnet, wenn Sie ein Projekt als PDF heruntergeladen haben. (Link zur Dokumentation folgt) | | Dienstag, 25. August 2025 |
 | **Abgeleitete Felder – „Date Math“-Funktion** | Die [Datumsmathematik](/help/data-views/derived-fields/derived-fields.md#date-math) abgeleitete Feldfunktion bietet die Möglichkeit, die Differenz zwischen zwei Datums- oder Datums-/Uhrzeitfeldern zurückzugeben. | Dienstag, 4. August 2025 | Samstag, 8. August 2025 |
 | **Abgeleitete Felder - Tiefenfunktion** | Die Funktion [Tiefe](/help/data-views/derived-fields/derived-fields.md#depth) des abgeleiteten Felds bietet die Möglichkeit, die Tiefe eines Felds zurückzugeben, ähnlich der standardmäßigen Ereignistiefendimension. | Dienstag, 4. August 2025 | Samstag, 8. August 2025 |
 | **Abgeleitete Felder – „Typecast“-Funktion** | Die [ Feldfunktion „Typecast](/help/data-views/derived-fields/derived-fields.md#typecast) bietet die Möglichkeit, einen Feldtyp jederzeit zu ändern und ihn für zusätzliche Transformationen in Customer Journey Analytics verfügbar zu machen. | Dienstag, 4. August 2025 | Samstag, 8. August 2025 |
