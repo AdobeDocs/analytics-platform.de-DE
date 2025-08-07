@@ -4,7 +4,7 @@ title: Verwenden von Vorlagen
 feature: Workspace Basics
 role: User, Admin
 exl-id: d61f215d-9089-4014-9c5a-97f5d7134f34
-source-git-commit: 1b52969f178a31ef90f1969f3a1637258a480c57
+source-git-commit: df069a7a67c65db9eb70900869495202f63abd05
 workflow-type: tm+mt
 source-wordcount: '20276'
 ht-degree: 97%
@@ -1071,7 +1071,7 @@ Die folgenden Vorlagen sind verfügbar:
 >abstract="**Auf diese Weise können Sie** besser verstehen, ob die Interaktion auf Kontoebene im Trend liegt, Aktivitäten über Konten hinweg vergleichen und entscheiden, wo die Kundenbindung oder Akquise konzentriert werden soll.<br/>**Je nachdem, was Sie lernen** können Sie beliebig viele Dinge tun, z. B. Ihre Aufmerksamkeit wieder auf die Accounts lenken, die weniger interagieren, aber aufgrund der Wichtigkeit des Accounts mehr Aufmerksamkeit erfordern."
 
 >[!CONTEXTUALHELP]
->id="cja-template--b2b-opportunity-enagement"
+>id="cja-template--b2b-opportunity-engagement"
 >title="Verfolgen Sie die Interaktion auf der Opportunity-Ebene und gehen Sie mit Gewinn oder Verlust von Traktion oberflächlich um."
 >abstract="**Dies kann Ihnen helfen** den Abschlussverlauf genauer vorherzusagen und die Aktivierung auf Bereiche zu konzentrieren, in denen Interaktionsspitzen oder -stockungen auftreten.<br/>**Je nachdem, was Sie lernen** können Sie eine beliebige Anzahl von Dingen tun, z. B. zusätzliche Anstrengungen für Abschlüsse unternehmen und herausfinden, warum andere Abschlüsse an Zugkraft verlieren."
 
