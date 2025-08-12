@@ -6,10 +6,10 @@ role: User, Admin
 hide: true
 hidefromtoc: true
 exl-id: 6656b34a-ae1e-4f9f-9c6d-13c54e49625c
-source-git-commit: f0ef310f120e278685893308315902e32c54e35e
+source-git-commit: bee6c3420511dc944c74e9818d77f6424fcb9cc8
 workflow-type: tm+mt
-source-wordcount: '2385'
-ht-degree: 13%
+source-wordcount: '2770'
+ht-degree: 11%
 
 ---
 
@@ -47,7 +47,7 @@ ht-degree: 13%
 
 >[!BEGINSHADEBOX]
 
-_In diesem Artikel wird die Zuordnungsvisualisierung in {_}![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**._<br/>_Siehe [Map](https://experienceleague.adobe.com/de/docs/analytics/analyze/analysis-workspace/visualizations/map-visualization) für die_![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics**-Version dieses Artikels._
+_In diesem Artikel wird die Zuordnungsvisualisierung in {_}![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._<br/>_Siehe [Map](https://experienceleague.adobe.com/de/docs/analytics/analyze/analysis-workspace/visualizations/map-visualization) für die_![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**-Version dieses Artikels._
 
 >[!ENDSHADEBOX]
 
@@ -59,7 +59,7 @@ Mit der ![Globe](/help/assets/icons/Globe.svg)**[!UICONTROL Map]**-Visualisierun
 
 In den Einstellungen für Datenansichten in Customer Journey Analytics können Administratoren [Kontextbeschriftungen](/help/data-views/component-settings/overview.md) zu einer Dimension oder Metrik hinzufügen, und Customer Journey Analytics-Services wie die [!UICONTROL Map]-Visualisierung können diese Beschriftungen für ihre Zwecke verwenden.
 
-#### Erforderliche Kontextbeschriftungen für die Kartenvisualisierung
+#### Erforderliche Kontextbeschriftungen für Breiten- und Längengrad in der Kartenvisualisierung
 
 Kontextbeschriftungen sind erforderlich, damit die Kartenvisualisierung funktioniert. Ohne die folgenden Kontextkennzeichnungen funktioniert die Kartenvisualisierung nicht, da keine Breiten- und Längengraddaten zur Verfügung stehen.
 
@@ -72,13 +72,27 @@ So fügen Sie diese Kontextbeschriftungen hinzu:
 
 1. Wählen Sie auf der Seite Datenansichten die Datenansicht aus, die Daten enthält, die Sie in der Kartenvisualisierung analysieren möchten.
 
-1. Wählen Sie die **[!UICONTROL Komponenten]** und dann die Dimension aus, die die Längengrad-Daten enthält.
+1. Wählen Sie die Registerkarte **[!UICONTROL Komponenten]** aus.
 
-1. Beginnen Sie im **[!UICONTROL Komponenteneinstellungen]** in der rechten Leiste im Feld **[!UICONTROL Kontextbeschriftungen]** mit der Eingabe von `Longitude` und wählen Sie diese dann aus dem Dropdown-Menü aus.
+1. (Bedingt) Wenn Sie Web SDK verwenden und Sie Breiten- und Längengrad so konfiguriert haben, dass diese Daten in Ihren Datenstrom eingefügt werden, oder wenn Sie Analytics Source Connector zum Ausfüllen von Ereignisdaten verwenden, sollten die Breiten- und Längengradfelder bereits in Ihrem Schema verfügbar sein und mit den richtigen Kontextkennzeichnungen ausgefüllt werden.
 
-   ![Kontextkennzeichnungen für Breiten- und Längengrad](assets/map-context-labels-lat-long.png)
+   Suchen Sie diese Schemafelder **[!UICONTROL Breitengrad]** und **[!UICONTROL Längengrad]** (in **[!UICONTROL Ereignisdatensätzen]** > **[!UICONTROL placeContext]** > **[!UICONTROL geo]** > **[!UICONTROL _schema]**) und ziehen Sie sie als Dimensionen in Ihre Datenansicht, wenn sie noch nicht vorhanden sind.
 
-1. Wiederholen Sie diesen Vorgang, um die Kontextbeschriftung **[!UICONTROL Breitengrad]** zur Dimension hinzuzufügen, die die Breitengraddaten enthält.
+   Wenn diese Schemafelder als Dimensionen in Ihrer Datenansicht vorhanden sind, werden ihre Kontextbeschriftungen automatisch angewendet, und die Zuordnungsvisualisierung verwendet sie ohne zusätzliche Konfiguration.
+
+   ![Schemafelder für Breiten- und Längengrad zur Datenansicht hinzufügen](assets/dataview-lat-long-default.png)
+
+1. (Bedingt) Wenn Sie benutzerdefinierte Dimensionen haben, die Sie für Breiten- und Längengrad-Daten verwenden möchten, können Sie die Kontextkennzeichnungen in den benutzerdefinierten Feldern konfigurieren:
+
+   1. Wählen **[!UICONTROL im Abschnitt]** die Dimension aus, die die Längengrad-Daten enthält.
+
+   1. Beginnen Sie im **[!UICONTROL Komponenteneinstellungen]** in der rechten Leiste im Feld **[!UICONTROL Kontextbeschriftungen]** mit der Eingabe von `Longitude` und wählen Sie diese dann aus dem Dropdown-Menü aus.
+
+      ![Kontextkennzeichnungen für Breiten- und Längengrad](assets/map-context-labels-lat-long.png)
+
+   1. Wiederholen Sie diesen Vorgang, um die Kontextbeschriftung **[!UICONTROL Breitengrad]** zur Dimension hinzuzufügen, die die Breitengraddaten enthält.
+
+   1. (Optional) Standardmäßig sind diese Dimensionen auf die Stadt- oder Postleitzahlebene in der Kartenvisualisierung genau und zeigen in Workspace-Berichten zwei Dezimalstellen an. Sie können sie in der Kartenvisualisierung innerhalb eines Meters genau anpassen und so 5 Dezimalstellen in Workspace-Berichten anzeigen. Weitere Informationen zum Anpassen der Präzisionsstufe finden Sie unter [Konfigurieren präziser Positionen für Dimensionen](#configure-precise-locations-for-dimensions).
 
 1. Wählen Sie **[!UICONTROL Speichern und fortfahren]** > **[!UICONTROL Speichern und beenden]**.
 
@@ -102,13 +116,25 @@ So fügen Sie diese Kontextbeschriftungen hinzu:
 
 1. Wählen Sie auf der Seite Datenansichten die Datenansicht aus, die Daten enthält, die Sie mit vordefinierten Vorlagen analysieren möchten, die die Zuordnungsvisualisierung verwenden. In dieser Datenansicht wählen Sie fünf Dimensionen aus: eine mit den Länderdaten, eine mit den Regionsdaten, eine mit den Stadtdaten, eine mit den Bundesstaatsdaten und eine mit den DMA-Daten. Anschließend beschriften Sie diese Dimensionen mit der entsprechenden Kontextbeschriftung.
 
-1. Wählen Sie die **[!UICONTROL Komponenten]** und dann die Dimension aus, die die Länderdaten enthält.
+1. Wählen Sie die Registerkarte **[!UICONTROL Komponenten]** aus.
 
-1. Beginnen Sie im **[!UICONTROL Komponenteneinstellungen]** in der rechten Leiste im Feld **[!UICONTROL Kontextbeschriftungen]** mit der Eingabe von `Geo Country` und wählen Sie diese dann aus dem Dropdown-Menü aus.
+1. (Bedingt) Wenn Sie Web SDK verwenden und Geofelder konfiguriert haben, die in Ihrem Daten-Stream ausgefüllt werden sollen, oder wenn Sie Analytics Source Connector zum Ausfüllen von Ereignisdaten verwenden, sollten Geofelder bereits in Ihrem Schema verfügbar sein und mit den richtigen Kontextkennzeichnungen ausgefüllt werden.
 
-   ![Kontextbeschriftungen für Vorlagen](assets/map-context-labels-templates.png)
+   Suchen Sie die entsprechenden Schemafelder, z. B. **[!UICONTROL Stadt]**, **[!UICONTROL Postleitzahl]**, **[!UICONTROL Bundesland oder]** (in **[!UICONTROL Ereignisdatensätze]** > **[!UICONTROL placeContext]** > **[!UICONTROL geo]**) und ziehen Sie sie als Dimensionen in Ihre Datenansicht, wenn sie noch nicht vorhanden sind.
 
-1. Wiederholen Sie diesen Vorgang, um jeder Dimension **[!UICONTROL die die entsprechenden Daten enthält, die Kontextkennzeichnungen Geo: Geo-Region]**, **[!UICONTROL Geo:]** Stadt, **[!UICONTROL Geo: Geo-]** und **[!UICONTROL Geo: DMA]** hinzuzufügen.
+   Wenn diese Schemafelder als Dimensionen in Ihrer Datenansicht vorhanden sind, werden ihre Kontextbeschriftungen automatisch angewendet, und die Geo-Vorlagen verwenden sie ohne zusätzliche Konfiguration.
+
+   ![Geo-Schemafelder zur Datenansicht hinzufügen](assets/dataview-geo-default.png)
+
+1. (Bedingt) Wenn Sie benutzerdefinierte Dimensionen haben, die Sie für Geodaten verwenden möchten, können Sie die Kontextbeschriftungen für die benutzerdefinierten Felder konfigurieren:
+
+   1. Wählen Sie die Dimension aus, die die Länderdaten enthält.
+
+   1. Beginnen Sie im **[!UICONTROL Komponenteneinstellungen]** in der rechten Leiste im Feld **[!UICONTROL Kontextbeschriftungen]** mit der Eingabe von `Geo Country` und wählen Sie diese dann aus dem Dropdown-Menü aus.
+
+      ![Kontextbeschriftungen für Vorlagen](assets/map-context-labels-templates.png)
+
+   1. Wiederholen Sie diesen Vorgang, um jeder Dimension **[!UICONTROL die die entsprechenden Daten enthält, die Kontextkennzeichnungen Geo: Geo-Region]**, **[!UICONTROL Geo:]** Stadt, **[!UICONTROL Geo: Geo-]** und **[!UICONTROL Geo: DMA]** hinzuzufügen.
 
 1. Wählen Sie **[!UICONTROL Speichern und fortfahren]** > **[!UICONTROL Speichern und beenden]**.
 
@@ -255,7 +281,7 @@ Wenn Sie über benutzerdefinierte Datensätze mit hoher Präzision verfügen, k�
 
 1. Wählen Sie in der Datenansicht die Registerkarte **[!UICONTROL Komponenten]** aus.
 
-1. Wählen Sie die Dimension aus, die Sie konfigurieren möchten.
+1. Wählen Sie die Dimensionen aus, die Sie für den Breiten- und Längengrad verwenden, den Sie konfigurieren möchten. Weitere Informationen dazu, welche Dimensionen Sie verwenden, finden Sie unter [Erforderliche Kontextkennzeichnungen für Breiten- und Längengrad in der Kartenvisualisierung](#required-context-labels-for-latitude-and-longitude-in-the-map-visualization).
 
 1. Konfigurieren Sie die Präzision für die Dimension:
 
