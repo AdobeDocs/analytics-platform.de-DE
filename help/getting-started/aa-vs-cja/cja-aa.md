@@ -5,10 +5,10 @@ exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: Basics
 role: User
-source-git-commit: 144caa157e1a7161595e2b4fc0da60cd63de50bd
-workflow-type: ht
-source-wordcount: '2694'
-ht-degree: 100%
+source-git-commit: 7f44c7497a48e8377ca26cb194f828c3c8836f98
+workflow-type: tm+mt
+source-wordcount: '2709'
+ht-degree: 98%
 
 ---
 
@@ -112,9 +112,10 @@ In der folgenden Tabelle sind Funktionen aufgeführt, die in Customer Journey An
 | **Verarbeitungsregeln, VISTA-Regeln, Verarbeitungsregeln für Marketing-Kanäle** | Wird über die Datenvorbereitungsfunktionen von Adobe Experience Platform und [abgeleitete Felder](https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-dataviews/derived-fields) sowohl für Web SDK-basierte Datensätze als auch für Daten vom Analytics-Quell-Connector unterstützt. |
 | **Variable „products“** | In Experience Platform können Benutzende ein Array von Objekten in einem Datensatzschema verwenden, um diesen Anwendungsfall zu erfüllen. In Customer Journey Analytics können Kundinnen und Kunden eine beliebige Anzahl von Produktvariablen verwenden und sind nicht wie in Adobe Analytics auf eine einzelne Variable beschränkt. |
 | **Projektfreigabe** | Die Projektfreigabe wird nur zwischen Benutzenden von Customer Journey Analytics unterstützt. Es gibt keine Projektfreigabe zwischen Customer Journey Analytics und dem herkömmlichen Analysis Workspace. |
+| **Echtzeit-Reporting** | Echtzeitberichte in Customer Journey Analytics zeigen Daten und Visualisierungen in einem oder mehreren Bedienfeldern in Analysis Workspace in Echtzeit an und aktualisieren diese. |
 | **Report Builder** | Unterstützt mit einem neuen Office 365-Plug-in für Microsoft Excel. |
 | **Benutzerberechtigungen/Datenzugriffssteuerung** | Customer Journey Analytics unterscheidet zwischen Produktadmins, Produktprofiladmins und Benutzenden von [Adobe Admin Console](https://experienceleague.adobe.com/de/docs/core-services/interface/administration/admin-tool-experience-cloud). Nur Produktadmins können Verbindungen, Projekte, Segmente oder berechnete Metriken, die von anderen Benutzenden erstellt wurden, erstellen, aktualisieren und löschen. Produktadmins und Produktprofiladmins können Datenansichten bearbeiten. Zusätzliche Benutzerberechtigungen sind für Vorgänge wie das Erstellen von berechneten Metriken, Segmenten oder Anmerkungen verfügbar. |
-| **Visualisierungen** | Mit Ausnahme der Zuordnungsvisualisierung werden alle Workspace-Visualisierungen unterstützt. |
+| **Visualisierungen** | Alle Workspace-Visualisierungen werden unterstützt. |
 | **Geräte-/kanalübergreifendes Stitching** | Wird für Ereignisdatensätze unterstützt, die Identitätsinformationen enthalten. Siehe [Zuordnung](../../stitching/overview.md). |
 
 ## Teilweise Unterstützung {#partial}
@@ -127,7 +128,6 @@ In der folgenden Tabelle sind Funktionen aufgeführt, die in Customer Journey An
 
 | Funktion | Hinweise |
 | --- | --- |
-| **Echtzeit-Reporting** | Unterstützung ist geplant. |
 | **Transaktions-ID-Datenquellen** | Unterstützung ist geplant. |
 
 ## Keine Unterstützung, noch nicht geplant {#not-planned}
