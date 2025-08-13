@@ -5,10 +5,10 @@ role: User, Admin
 solution: Customer Journey Analytics
 feature: AI Tools
 exl-id: 262d5f15-16cb-4851-a769-7dbd205b2f81
-source-git-commit: 3c3fd6b814485871f2fd9249b0ffa9a0b24a360c
+source-git-commit: 82b36895fe5186f0133c128d434470ea7f875677
 workflow-type: tm+mt
 source-wordcount: '2371'
-ht-degree: 83%
+ht-degree: 98%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 83%
 >
 >Data Insights Agent steht berechtigten Kundinnen und Kunden für eine begrenzte Zeit zur Verfügung. Der Zugriff auf Data Insights Agent endet am 30. November 2025. Wenn Sie Data Insights Agent ohne Unterbrechung weiter verwenden möchten, wenden Sie sich an Ihr Adobe-Accountteam, um mehr über die Lizenzierung von Data Insights Agent zu erfahren.
 
-Data Insights Agent, auf den über den KI-Assistenten in Customer Journey Analytics zugegriffen werden kann, ist ein auf generativer KI basierender Konversationsagent, der Fragen zu Ihren Daten schnell und effizient beantwortet. Er erstellt relevante Visualisierungen in Analysis Workspace mithilfe von Komponenten aus Ihrer Datenansicht und unter Verwendung Ihrer tatsächlichen Daten.
+Data Insights Agent, auf das über den [KI-Assistenten](/help/ai-assistant.md) in Customer Journey Analytics zugegriffen werden kann, ist ein generativer KI-Konversationsagent, der Fragen zu Ihren Daten schnell und effizient beantwortet. Er erstellt relevante Visualisierungen in Analysis Workspace mithilfe von Komponenten aus Ihrer Datenansicht und unter Verwendung Ihrer tatsächlichen Daten.
 
 Die Verwendung von Data Insights Agent zur Beantwortung datenorientierter Fragen in Analysis Workspace kann unzählige Stunden einsparen, die Sie andernfalls möglicherweise damit verbringen würden, manuell Visualisierungen in Analysis Workspace zu erstellen und sich mit Ihren Datenansichtskomponenten vertraut zu machen.
 
@@ -230,23 +230,23 @@ Following the thumbs up or thumbs down selection, please make a selection for th
 -->
 
 
-## Best Practices für die Konfiguration
+## Best Practices bei der Konfiguration
 
-Im Folgenden finden Sie Best Practices für Ihre Customer Journey Analytics-Konfiguration (Datenansicht, berechnete Metriken, Segmente usw.), um sicherzustellen, dass die Data Insights Agent die richtigen Komponenten finden und sauberere Antworten zurückgeben kann, ohne Sie nach zusätzlichen Informationen fragen zu müssen.
+Im Folgenden finden Sie Best Practices für Ihre Customer Journey Analytics-Konfiguration (Datenansicht, berechnete Metriken, Segmente usw.), um sicherzustellen, dass der Data Insights Agent die richtigen Komponenten finden und sauberere Antworten zurückgeben kann, ohne Sie nach zusätzlichen Informationen fragen zu müssen.
 
-* **Balancieren Sie die benötigten Komponenten**. Fügen Sie nicht alle Felder Ihrer Datensätze als Metriken oder Dimensionskomponenten zu Ihrer Datenansicht hinzu. Insbesondere die , die Sie mit Sicherheit nicht in Ihrer Analyse verwenden werden. Beschränken Sie sich jedoch nicht ausschließlich auf die Felder, die Sie für Ihre Analyse benötigen. Eine zu eingeschränkte Datenansicht schränkt die Flexibilität Ihrer Analyse und die Data Insights Agent-Funktionen ein.
-* **Verwenden Sie immer Anzeigenamen**. Stellen Sie sicher, dass alle Felder, die Sie in Ihrer Datenansicht entweder als Metrik- oder Dimensionskomponente definieren, einen Anzeigenamen für die Komponente aufweisen. Der Prozess des Umbenennens von Feldern mit einem Anzeigenamen ist insbesondere für Felder aus Adobe Analytics-Quell-Connector-Datensätzen relevant. Diese Felder haben häufig nicht benutzerfreundliche, nicht identifizierbare Namen wie `eVar41` oder `prop25`.
-* **Verwenden Sie eindeutige Namen**. Unterschiedliche Namen sind besonders relevant, wenn Sie dasselbe Feld sowohl als Metrik- als auch als Dimensionskomponente in Ihrer Datenansicht verwenden. Oder wenn Sie ein Feld in mehreren Komponenten desselben Typs verwenden (z. B. in zwei verschiedenen Metriken), die jeweils unterschiedliche Komponenteneinstellungen aufweisen.
-* **Verwenden Sie eine Benennungskonvention für Komponenten**. Sie können eine Komponentennamenskonvention verwenden, um Komponenten zu gruppieren. Beispiel: **[!UICONTROL Bestellungen | Produkt]** und **[!UICONTROL Bestellungen | Kunde]** kann zwischen verschiedenen Bestellmetriken unterscheiden, die möglicherweise in Ihren Daten vorhanden sind.
-* **Verwenden des Datenwörterbuchs**. Beschreibung und andere relevante Daten für Komponenten im Datenwörterbuch hinzufügen. Der Data Insight-Agent verwendet derzeit keine Beschreibung und Tags aus dem Datenwörterbuch, könnte dies aber in Zukunft tun.
+* **Wägen Sie die benötigten Komponenten ab**. Fügen Sie nicht alle Felder Ihrer Datensätze als Metriken oder Dimensionskomponenten zu Ihrer Datenansicht hinzu. Insbesondere keine, die Sie mit Sicherheit nicht in Ihrer Analyse benötigen werden. Beschränken Sie sich jedoch nicht ausschließlich auf die Felder, die Sie für Ihre Analyse benötigen. Eine zu begrenzte Datenansicht schränkt die Flexibilität Ihrer Analyse und die Data Insights Agent-Funktionen ein.
+* **Verwenden Sie immer klare Anzeigenamen**. Stellen Sie sicher, dass alle Felder, die Sie in Ihrer Datenansicht entweder als Metrik- oder Dimensionskomponente definieren, einen Anzeigenamen für die Komponente aufweisen. Der Prozess des Umbenennens von Feldern mit einem Anzeigenamen ist insbesondere für Felder aus Adobe Analytics-Quell-Connector-Datensätzen relevant. Diese Felder haben häufig keine benutzerfreundlichen und identifizierbaren Namen wie `eVar41` oder `prop25`.
+* **Verwenden Sie eindeutige Namen**. Eindeutige Namen sind besonders relevant, wenn Sie dasselbe Feld sowohl als Metrik- als auch als Dimensionskomponente in Ihrer Datenansicht verwenden. Oder wenn Sie ein Feld in mehreren Komponenten desselben Typs verwenden (z. B. in zwei verschiedenen Metriken), die jeweils unterschiedliche Komponenteneinstellungen aufweisen.
+* **Verwenden Sie eine Benennungskonvention für Komponenten**. Mit einer Benennungskonvention für Komponenten können Sie Komponenten gruppieren. Beispiel: **[!UICONTROL Bestellungen | Produkt]** und **[!UICONTROL Bestellungen | Kunde/Kundin]** kann zwischen verschiedenen Bestellmetriken unterscheiden, die möglicherweise in Ihren Daten vorhanden sind.
+* **Verwenden Sie das Datenwörterbuch**. Fügen Sie eine Beschreibung und andere relevante Daten für Komponenten im Datenwörterbuch hinzu. Der Data Insight-Agent verwendet derzeit keine Beschreibung und Tags aus dem Datenwörterbuch, könnte dies aber in Zukunft tun.
 * **Verwenden Sie genehmigte berechnete Metriken**. Sie müssen sich auf einen Prozess einigen, bei dem nur genehmigte berechnete Metriken als Komponenten in Ihrer Datenansicht verwendet werden, und die Verwendung experimenteller berechneter Metriken vermeiden.
-* **Freigeben erforderlicher Segmente**. Stellen Sie sicher, dass Sie Segmente freigeben und Segmente sichtbar machen, die für Data Insights Agent-Eingabeaufforderungen erforderlich sind.
-* **Standardisieren von Komponentennamen in Datenansichten**. Wenn Sie dieselben Felder wie eine Komponente in mehreren Datenansichten verwenden, stellen Sie sicher, dass Sie einen einzigen Anzeigenamen und eine einzige Kennung für diese Komponente verwenden. Durch einen einzigen Namen und eine einzige Kennung kann die Data Insights Agent Datenansichten wechseln, ohne den Kontext zu verlieren.
+* **Geben Sie erforderliche Segmente frei**. Stellen Sie sicher, dass Sie Segmente freigeben und Segmente sichtbar machen, die für Data Insights Agent-Prompts erforderlich sind.
+* **Standardisieren Sie Komponentennamen in Datenansichten**. Wenn Sie dieselben Felder wie eine Komponente in mehreren Datenansichten verwenden, stellen Sie sicher, dass Sie einen einzigen Anzeigenamen und eine einzige Kennung für diese Komponente verwenden. Durch einen einzigen Namen und eine einzige Kennung kann der Data Insights-Agent Datenansichten wechseln, ohne den Kontext zu verlieren.
 
 >[!MORELIKETHIS]
 >
 >[Einstellungen der Komponente](/help/data-views/component-settings/overview.md)
->&#x200B;>[Datenwörterbuch](/help/components/data-dictionary/data-dictionary-overview.md)
->&#x200B;>[Berechnete Metrik genehmigen](/help/components/calc-metrics/cm-workflow/cm-approving.md)
->&#x200B;>[Segmente freigeben](/help/components/segments/seg-share.md)
+>>[Datenwörterbuch](/help/components/data-dictionary/data-dictionary-overview.md)
+>>[Berechnete Metrik genehmigen](/help/components/calc-metrics/cm-workflow/cm-approving.md)
+>>[Segmente freigeben](/help/components/segments/seg-share.md)
 >
