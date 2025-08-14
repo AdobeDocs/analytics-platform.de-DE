@@ -4,9 +4,9 @@ title: Zuordnung
 feature: Visualizations
 role: User, Admin
 exl-id: 6656b34a-ae1e-4f9f-9c6d-13c54e49625c
-source-git-commit: 0aac2739e03044c03a2561535846f1355054f45f
+source-git-commit: 71d5326f5d80f196504178855dacdf01f60fb81c
 workflow-type: tm+mt
-source-wordcount: '2770'
+source-wordcount: '2761'
 ht-degree: 11%
 
 ---
@@ -45,7 +45,7 @@ ht-degree: 11%
 
 >[!BEGINSHADEBOX]
 
-_In diesem Artikel wird die Zuordnungsvisualisierung in {_}![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**._<br/>_Siehe [Map](https://experienceleague.adobe.com/de/docs/analytics/analyze/analysis-workspace/visualizations/map-visualization) für die_![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics**-Version dieses Artikels._
+_In diesem Artikel wird die Zuordnungsvisualisierung in {_}![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._<br/>_Siehe [Map](https://experienceleague.adobe.com/de/docs/analytics/analyze/analysis-workspace/visualizations/map-visualization) für die_![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**-Version dieses Artikels._
 
 >[!ENDSHADEBOX]
 
@@ -96,7 +96,7 @@ So fügen Sie diese Kontextbeschriftungen hinzu:
 
 #### Erforderliche Kontextbeschriftungen für Geo-Vorlagen
 
-Adobe bietet mehrere [vordefinierte Vorlagen](/help/analysis-workspace/templates/use-templates.md#web-audience) die die Zuordnungsvisualisierung verwenden. Um jede Vorlage verwenden zu können, müssen Sie die entsprechende Kontextbeschriftung zu einer Dimension in Ihrer Datenansicht hinzufügen.
+Adobe bietet mehrere [vordefinierte Vorlagen](/help/analysis-workspace/templates/use-templates.md#web-audience) die die Zuordnungsvisualisierung verwenden. Um jede Vorlage zu verwenden, müssen Sie die entsprechende Kontextbeschriftung zu einer Dimension in Ihrer Datenansicht hinzufügen.
 
 Im Folgenden finden Sie die Vorlagen und die erforderliche Kontextbeschriftung. Ohne diese Beschriftungen funktionieren die Vorlagen nicht, da keine Geodaten vorhanden sind, mit denen gearbeitet werden kann.
 
@@ -112,7 +112,7 @@ So fügen Sie diese Kontextbeschriftungen hinzu:
 
 1. Wählen Sie in Customer Journey Analytics **[!UICONTROL Daten-Management]** > **[!UICONTROL Datenansichten]**.
 
-1. Wählen Sie auf der Seite Datenansichten die Datenansicht aus, die Daten enthält, die Sie mit vordefinierten Vorlagen analysieren möchten, die die Zuordnungsvisualisierung verwenden. In dieser Datenansicht wählen Sie fünf Dimensionen aus: eine mit den Länderdaten, eine mit den Regionsdaten, eine mit den Stadtdaten, eine mit den Bundesstaatsdaten und eine mit den DMA-Daten. Anschließend beschriften Sie diese Dimensionen mit der entsprechenden Kontextbeschriftung.
+1. Wählen Sie auf der Seite Datenansichten die Datenansicht aus, die Daten enthält, die Sie mit vordefinierten Vorlagen analysieren möchten, die die Zuordnungsvisualisierung verwenden. Wählen Sie in dieser Datenansicht fünf Dimensionen aus: eine mit den Länderdaten, eine mit den Regionsdaten, eine mit den Stadtdaten, eine mit den Bundesstaatsdaten und eine mit den DMA-Daten. Geben Sie diesen Dimensionen dann die entsprechende Kontextbeschriftung.
 
 1. Wählen Sie die Registerkarte **[!UICONTROL Komponenten]** aus.
 
@@ -153,7 +153,7 @@ Die Zuordnungsvisualisierung in Customer Journey Analytics unterscheidet sich vo
 | Erstellen eines Trends aus einer Auswahl | Erstellen Sie eine Trend-Liniendiagramm-Visualisierung basierend auf einem bestimmten Bereich, den Sie in der Kartenvisualisierung auswählen. <p>Weitere Informationen finden Sie unter [Erstellen eines Trendliniendiagramms aus der Kartenvisualisierung](#create-a-trended-line-chart-from-the-map-visualization). <!-- is this correct? --> | Es kann kein Trend aus der Kartenvisualisierung erstellt werden. |
 | Aufschlüsselung aus einer Auswahl hinzufügen | Schlüsseln Sie ein bestimmtes Dimensionselement, eine bestimmte Metrik, ein bestimmtes Segment oder einen bestimmten Datumsbereich auf, den Sie in der Kartenvisualisierung auswählen. <p>Weitere Informationen finden Sie unter [Aufschlüsselung über die Kartenvisualisierung hinzufügen](#add-a-breakdown-from-the-map-visualization). | Es kann keine Aufschlüsselung aus der Kartenvisualisierung hinzugefügt werden. |
 
-## Beginnen der Erstellung einer Kartenvisualisierung {#begin-building-map}
+## Eine Zuordnungsvisualisierung erstellen {#begin-building-map}
 
 <!-- markdownlint-disable MD034 -->
 
@@ -185,7 +185,7 @@ Die Zuordnungsvisualisierung in Customer Journey Analytics unterscheidet sich vo
 
    * **[!UICONTROL Segment hinzufügen]** (Optional) Wählen Sie in der Dropdown-Liste des Segments ein Segment aus. Oder ziehen Sie ein Segment aus der Segmentliste in den Arbeitsbereich.
 
-   Sie können diese Informationen nach der Erstellung der Visualisierung aktualisieren, indem Sie in der Visualisierungskopfzeile auf ![Bearbeiten](/help/assets/icons/Edit.svg) klicken.
+   Sie können diese Informationen nach dem Erstellen der Visualisierung aktualisieren, indem Sie in der Visualisierungskopfzeile auf ![Bearbeiten](/help/assets/icons/Edit.svg) klicken.
 
 1. Wählen Sie **[!UICONTROL Erstellen]** aus.
 
@@ -197,7 +197,7 @@ Die Zuordnungsvisualisierung in Customer Journey Analytics unterscheidet sich vo
 
 ## Anzeigen einer Kartenvisualisierung
 
-1. Falls noch nicht geschehen, erstellen Sie eine Kartenvisualisierung, wie unter [Erstellen einer Kartenvisualisierung](#begin-building-a-map-visualization) beschrieben.
+1. Falls noch nicht geschehen, erstellen Sie eine Kartenvisualisierung, wie in [Erstellen einer Kartenvisualisierung](#begin-building-a-map-visualization) beschrieben.
 
 1. Führen Sie in der Kartenvisualisierung in Analysis Workspace einen der folgenden Schritte aus:
 
@@ -250,7 +250,7 @@ Die Zuordnungsvisualisierung in Customer Journey Analytics unterscheidet sich vo
 
 So konfigurieren Sie Einstellungen für die Zuordnungsvisualisierung:
 
-1. Öffnen Sie in Analysis Workspace eine vorhandene Kartenvisualisierung oder beginnen [ mit dem Erstellen einer neuen](#begin-building-a-map-visualization).
+1. Öffnen Sie in Analysis Workspace eine vorhandene Kartenvisualisierung oder erstellen [ eine neue](#begin-building-a-map-visualization).
 
 1. Bewegen Sie den Mauszeiger über die Kartenvisualisierung und wählen Sie dann in der Visualisierungskopfzeile das ![ „Einstellungen](/help/assets/icons/Setting.svg) aus.
 
