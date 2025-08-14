@@ -45,7 +45,7 @@ ht-degree: 11%
 
 >[!BEGINSHADEBOX]
 
-_In diesem Artikel wird die Zuordnungsvisualisierung in {_}![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._<br/>_Siehe [Map](https://experienceleague.adobe.com/de/docs/analytics/analyze/analysis-workspace/visualizations/map-visualization) für die_![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**-Version dieses Artikels._
+_In diesem Artikel wird die Zuordnungsvisualisierung in {_}![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**._<br/>_Siehe [Map](https://experienceleague.adobe.com/de/docs/analytics/analyze/analysis-workspace/visualizations/map-visualization) für die_![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics**-Version dieses Artikels._
 
 >[!ENDSHADEBOX]
 
