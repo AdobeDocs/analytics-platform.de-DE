@@ -7,9 +7,9 @@ hidefromtoc: true
 role: User
 badgePremium: label="Beta"
 exl-id: 6e7dba80-5fb9-4554-b989-85eb54a4bd6a
-source-git-commit: 8f19ed6b4214c434dd4ca2dbb5e311c62da109c0
+source-git-commit: b833914e7066fa660f856737d6b8a6392aae2feb
 workflow-type: tm+mt
-source-wordcount: '196'
+source-wordcount: '197'
 ht-degree: 14%
 
 ---
@@ -30,7 +30,7 @@ Um Echtzeitberichte zu verwenden, aktivieren Sie den Umschalter **[!UICONTROL Ec
 * [Attribution](/help/analysis-workspace/c-panels/attribution.md)
 * [Nächstes oder vorheriges Objekt](/help/analysis-workspace/c-panels/next-previous.md)
 
-Es wird eine Meldung mit dem Zeitstempel der letzten Aktualisierung der Daten angezeigt. Beispiel: [!UICONTROL &#x200B; *Letzte Aktualisierung um 19:550 Uhr*].
+Es wird eine Meldung mit dem Zeitstempel der letzten Aktualisierung der Daten angezeigt. Beispiel: [!UICONTROL  *Letzte Aktualisierung um 19:550 Uhr*].
 
 Wählen Sie aus dem Dropdown-Menü den Echtzeitzeitraum aus, über den Sie einen Bericht erstellen möchten. Verfügbare Optionen sind:
 
@@ -46,4 +46,4 @@ Unten finden Sie ein Beispiel für einen Schnappschuss eines **[!UICONTROL Echtz
 
 ![Echtzeit-Aktualisierung](assets/real-time-refresh.gif)
 
-Nach 30 Minuten oder sobald die Browser-Registerkarte inaktiv wird, wird **[!UICONTROL Umschalter &quot;]** aktualisieren“ automatisch deaktiviert und Echtzeit-Updates werden angehalten.
+Nach 30 Minuten oder sobald die Browser-Registerkarte inaktiv wird, wird der Umschalter **[!UICONTROL Echtzeit-]**) automatisch deaktiviert und Echtzeit-Updates werden angehalten.
