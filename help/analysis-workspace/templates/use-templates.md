@@ -5,9 +5,9 @@ feature: Workspace Basics
 role: User, Admin
 exl-id: d61f215d-9089-4014-9c5a-97f5d7134f34
 source-git-commit: df069a7a67c65db9eb70900869495202f63abd05
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '20276'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -1067,23 +1067,23 @@ Die folgenden Vorlagen sind verfügbar:
 
 >[!CONTEXTUALHELP]
 >id="cja-template--b2b-account-engagement"
->title="Stellen Sie fest, wie aktiv Ihre Konten in Bezug auf Veranstaltungen, Personen und Opportunitys sind."
->abstract="**Auf diese Weise können Sie besser verstehen**, ob die Interaktionen auf Kontoebene im Trend liegen, weiterhin Aktivitäten über Konten hinweg vergleichen und entscheiden, auf was Sie Ihre Bemühungen zur Kundenbindung oder Neukundengewinnung konzentrieren sollten.<br/>**Auf der Grundlage Ihrer Erkenntnisse können Sie** verschiedene Maßnahmen ergreifen, z. B. Ihre Aufmerksamkeit wieder auf diejenigen Konten richten, die weniger aktiv sind, aber aufgrund ihrer Bedeutung mehr Aufmerksamkeit erfordern."
+>title="Erfahren Sie, wie aktiv Ihre Konten für Ereignisse, Personen und Opportunitys sind."
+>abstract="**Dies kann Ihnen helfen**, besser zu verstehen, ob die Interaktion auf Kontoebene tendenziell steigt oder sinkt, die Aktivitäten zwischen verschiedenen Konten zu vergleichen und zu entscheiden, wo Sie Ihre Bemühungen zur Kundenbindung oder Neukundengewinnung konzentrieren sollten.<br/>**Basierend auf Ihren Erkenntnissen können Sie** verschiedene Maßnahmen ergreifen, z. B. Ihre Aufmerksamkeit wieder auf diejenigen Konten richten, die weniger interagieren, aber aufgrund ihrer Bedeutung mehr Aufmerksamkeit erfordern."
 
 >[!CONTEXTUALHELP]
 >id="cja-template--b2b-opportunity-engagement"
->title="Verfolgen Sie die Interaktion auf der Opportunity-Ebene und zeigen Sie Angebote auf, die an Dynamik gewinnen oder verlieren."
->abstract="**Dies kann Ihnen helfen**, den Fortschritt von Geschäftsvorgängen genauer vorherzusagen und Ihre Aktivitäten dort zu konzentrieren, wo Interaktionsspitzen oder -stockungen auftreten.<br/>**Auf der Grundlage Ihrer Erkenntnisse können Sie** verschiedene Maßnahmen ergreifen, z. B. zusätzliche Anstrengungen für Geschäfte unternehmen, die kurz vor dem Abschluss stehen, und untersuchen, warum andere Geschäfte an Dynamik verlieren."
+>title="Verfolgen Sie die Aktivität auf Opportunity-Ebene und identifizieren Sie Geschäfte, die an Dynamik gewinnen oder verlieren."
+>abstract="**Dies kann Ihnen helfen**, den Fortschritt eines Geschäfts genauer vorherzusagen und Ihre Maßnahmen dort zu konzentrieren, wo die Interaktion zunimmt oder stagniert.<br/>**Basierend auf Ihren Erkenntnissen können Sie** verschiedene Maßnahmen ergreifen, z. B. zusätzliche Anstrengungen für Geschäfte unternehmen, die kurz vor dem Abschluss stehen, und untersuchen, warum andere Geschäfte an Dynamik verlieren."
 
 >[!CONTEXTUALHELP]
 >id="cja-template--b2b-buying-group-activity"
->title="Visualisieren Sie die Aktivitäten der Käufergruppen innerhalb jedes Kontos, um Ihre Marketing-Aktivitäten für Konten und Käufergruppen zu optimieren."
->abstract="**Dies kann Ihnen dabei helfen**, zu visualisieren, welche Käufergruppen und welche Personen innerhalb dieser Käufergruppen am aktivsten sind, und Lücken in der Gruppenbeteiligung aufzuzeigen.<br/>**Auf der Grundlage Ihrer Erkenntnisse können Sie** verschiedene Maßnahmen ergreifen, z. B. versuchen, mehr mit Personen in Käufergruppen zu interagieren, die nicht beteiligt zu sein scheinen."
+>title="Visualisieren Sie die Aktivitäten der Käufergruppen innerhalb jedes Kundenkontos, um die Marketing-Aktivitäten für Kundenkonten und Käufergruppen zu optimieren."
+>abstract="**Dies kann Ihnen helfen**, zu visualisieren, welche Käufergruppen und welche Personen innerhalb dieser Käufergruppen am aktivsten sind, und Lücken in der Gruppenbeteiligung aufzuzeigen.<br/>**Basierend auf Ihren Erkenntnissen können Sie** verschiedene Maßnahmen ergreifen, z. B. versuchen, mehr mit Personen in Käufergruppen zu interagieren, die nicht beteiligt zu sein scheinen."
 
 Die folgenden Vorlagen sind verfügbar:
 
 | Vorlagenname | Warum diese Vorlage verwenden?<!-- What do you do with it? What can it help you learn? and What are the potential actions? --> |
 | --- | --- | 
-| [!UICONTROL **B2B-Kontointeraktion - Übersicht**] | Stellen Sie fest, wie aktiv Ihre Konten in Bezug auf Veranstaltungen, Personen und Opportunitys sind.<p>**Auf diese Weise können Sie besser verstehen**, ob die Interaktionen auf Kontoebene im Trend liegen, weiterhin Aktivitäten über Konten hinweg vergleichen und entscheiden, auf was Sie Ihre Bemühungen zur Kundenbindung oder Neukundengewinnung konzentrieren sollten.</p><p>**Auf der Grundlage Ihrer Erkenntnisse können Sie** verschiedene Maßnahmen ergreifen, z. B. Ihre Aufmerksamkeit wieder auf diejenigen Konten richten, die weniger aktiv sind, aber aufgrund ihrer Bedeutung mehr Aufmerksamkeit erfordern.</p> |
-| [!UICONTROL **B2B-Opportunity-Interaktion - Übersicht**] | Verfolgen Sie die Interaktion auf der Opportunity-Ebene und zeigen Sie Angebote auf, die an Dynamik gewinnen oder verlieren.<p>**Dies kann Ihnen helfen**, den Fortschritt von Geschäftsvorgängen genauer vorherzusagen und Ihre Aktivitäten dort zu konzentrieren, wo Interaktionsspitzen oder -stockungen auftreten.</p><p>**Auf der Grundlage Ihrer Erkenntnisse können Sie** verschiedene Maßnahmen ergreifen, z. B. zusätzliche Anstrengungen für Geschäfte unternehmen, die kurz vor dem Abschluss stehen, und untersuchen, warum andere Geschäfte an Dynamik verlieren.</p> |
-| [!UICONTROL **B2B-Einkaufsgruppenaktivität**] | Visualisieren Sie die Aktivitäten der Käufergruppen innerhalb jedes Kontos, um Ihre Marketing-Aktivitäten für Konten und Käufergruppen zu optimieren.<p>**Dies kann Ihnen dabei helfen**, zu visualisieren, welche Käufergruppen und welche Personen innerhalb dieser Käufergruppen am aktivsten sind, und Lücken in der Gruppenbeteiligung aufzuzeigen.</p><p>**Auf der Grundlage Ihrer Erkenntnisse können Sie** verschiedene Maßnahmen ergreifen, z. B. versuchen, mehr mit Personen in Käufergruppen zu interagieren, die nicht beteiligt zu sein scheinen.</p> |
+| [!UICONTROL **Überblick über B2B-Konteninteraktion**] | Erfahren Sie, wie aktiv Ihre Konten für Ereignisse, Personen und Opportunitys sind.<p>**Dies kann Ihnen helfen**, besser zu verstehen, ob die Interaktion auf Kontoebene tendenziell steigt oder sinkt, die Aktivitäten zwischen verschiedenen Konten zu vergleichen und zu entscheiden, wo Sie Ihre Bemühungen zur Kundenbindung oder Neukundengewinnung konzentrieren sollten.</p><p>**Basierend auf Ihren Erkenntnissen können Sie** verschiedene Maßnahmen ergreifen, z. B. Ihre Aufmerksamkeit wieder auf diejenigen Konten richten, die weniger interagieren, aber aufgrund ihrer Bedeutung mehr Aufmerksamkeit erfordern.</p> |
+| [!UICONTROL **Überblick über B2B-Opportunity-Interaktion**] | Verfolgen Sie die Aktivität auf Opportunity-Ebene und identifizieren Sie Geschäfte, die an Dynamik gewinnen oder verlieren.<p>**Dies kann Ihnen helfen**, den Fortschritt eines Geschäfts genauer vorherzusagen und Ihre Maßnahmen dort zu konzentrieren, wo die Interaktion zunimmt oder stagniert.</p><p>**Basierend auf Ihren Erkenntnissen können Sie** verschiedene Maßnahmen ergreifen, z. B. zusätzliche Anstrengungen für Geschäfte unternehmen, die kurz vor dem Abschluss stehen, und untersuchen, warum andere Geschäfte an Dynamik verlieren.</p> |
+| [!UICONTROL **Aktivität der B2B-Käufergruppe**] | Visualisieren Sie die Aktivitäten der Käufergruppen innerhalb jedes Kundenkontos, um die Marketing-Aktivitäten für Kundenkonten und Käufergruppen zu optimieren.<p>**Dies kann Ihnen helfen**, zu visualisieren, welche Käufergruppen und welche Personen innerhalb dieser Käufergruppen am aktivsten sind, und Lücken in der Gruppenbeteiligung aufzuzeigen.</p><p>**Basierend auf Ihren Erkenntnissen können Sie** verschiedene Maßnahmen ergreifen, z. B. versuchen, mehr mit Personen in Käufergruppen zu interagieren, die nicht beteiligt zu sein scheinen.</p> |
