@@ -149,7 +149,7 @@ Sie können eine Journey Optimizer-Verbindung in Customer Journey Analytics verw
 
 * Führen Sie eine detaillierte Analyse der Journey Optimizer-Daten in Customer Journey Analytics durch (mithilfe der Schaltfläche **[!UICONTROL Analysieren in CJA]** in Journey Optimizer).
 
-  Weitere Informationen finden Sie unter [Analysieren in Customer Journey Analytics](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/reporting/channel-report/report-cja-manage#cja-template) in der Journey Optimizer-Dokumentation.
+  Weitere Informationen finden Sie unter [Analysieren in Customer Journey Analytics](https://experienceleague.adobe.com/de/docs/journey-optimizer/using/reporting/channel-report/report-cja-manage#cja-template) in der Journey Optimizer-Dokumentation.
 
 * Bearbeiten Sie die Journey Optimizer-Verbindung und die zugehörigen Datenansichten.
 
@@ -322,7 +322,7 @@ Wenn eine Datensatzzeile in der Datensatztabelle ausgewählt ist, werden in eine
 | **[!UICONTROL Schlüssel]** | Der Schlüssel, den Sie für einen Lookup-Datensatz angegeben haben. |
 | **[!UICONTROL Übereinstimmender Schlüssel]** | Der übereinstimmende Schlüssel, den Sie für einen Lookup-Datensatz angegeben haben. |
 | **[!UICONTROL Zeitstempel]** | Der für einen Ereignisdatensatz definierte Zeitstempel. |
-| **[!UICONTROL Verfügbare Datensätze]** | Die Gesamtzahl der Zeilen, die für diesen Datensatz in dem im Kalender ausgewählten Zeitraum aufgenommen wurden. Es gibt keine Latenz im Hinblick darauf, ab wann die Daten nach dem Hinzufügen in Berichten angezeigt werden. Wenn Sie jedoch eine völlig neue Verbindung erstellen, gibt es eine [Latenz](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2c-overview/cja-faq). |
+| **[!UICONTROL Verfügbare Datensätze]** | Die Gesamtzahl der Zeilen, die für diesen Datensatz in dem im Kalender ausgewählten Zeitraum aufgenommen wurden. Es gibt keine Latenz im Hinblick darauf, ab wann die Daten nach dem Hinzufügen in Berichten angezeigt werden. Wenn Sie jedoch eine völlig neue Verbindung erstellen, gibt es eine [Latenz](https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-overview/cja-b2c-overview/cja-faq). |
 | **[!UICONTROL Hinzugefügte Datensätze]** | Die Anzahl der Datensatzdatensätze (Zeilen), die einer Verbindung während des ausgewählten Datumsbereichs hinzugefügt wurden. |
 | **[!UICONTROL Übersprungene Datensätze]** | Die Anzahl der bei der Datenübertragung für eine Verbindung übersprungenen Datensatzdatensätze (Zeilen) im ausgewählten Datumsbereich. |
 | **[!UICONTROL Batches hinzugefügt]** | Die Anzahl der Batches, die einer Verbindung hinzugefügt wurden. |
