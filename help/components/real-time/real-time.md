@@ -7,9 +7,9 @@ hidefromtoc: true
 role: User
 badgePremium: label="Beta"
 exl-id: 12fbb760-936d-4e30-958f-764febca5ae7
-source-git-commit: 804668db5e104d1a1de7d5d9ce0c92a9bb1980dc
+source-git-commit: 2dd78dc120fc2bf48d3a59e28631e4ddf605b0c3
 workflow-type: tm+mt
-source-wordcount: '732'
+source-wordcount: '733'
 ht-degree: 2%
 
 ---
@@ -45,7 +45,7 @@ Erwägen Sie keine Echtzeitberichte für Anwendungsfälle zur Betriebsüberwachu
 
 ## Latenzen
 
-Die Art und Weise, wie Sie Daten erfassen, bestimmt die Echtzeit-Latenz von Echtzeit-Berichten für Customer Journey Analytics. Die folgende Abbildung und Tabelle zeigen ungefähre Latenzen für verschiedene Datenerfassungsszenarien bei der Verwendung von Echtzeit- und Standardberichten.
+Die Art und Weise, wie Sie Daten erfassen, bestimmt die Latenz von Echtzeitberichten in Customer Journey Analytics. Die folgende Abbildung und Tabelle zeigen ungefähre Latenzen für verschiedene Datenerfassungsszenarien bei Verwendung von Echtzeit- und (zum Vergleich) Standard-Reporting.
 
 In der Abbildung wird auch hervorgehoben, dass das Echtzeit-Reporting einen konsolidierten Datensatz verwendet, der vollständig vom [konsolidierten (kombinierten) Datensatz) getrennt ](/help/connections/combined-dataset.md), der für das Standard-Reporting verwendet wird. Mit dem Umschalter [Echtzeit-Aktualisierung](use-real-time.md) können Sie zwischen folgenden Optionen wechseln:
 
@@ -56,10 +56,11 @@ In der Abbildung wird auch hervorgehoben, dass das Echtzeit-Reporting einen kons
 
 | | Datenerfassung | Echtzeit-Berichterstellungslatenz | Standard-Berichtslatenz |
 |:---:|---|--:|--:|
-| 1 | Edge Network SDK / APIs in Edge Network | &ca; &lt; 00h:06m:30s | &ca; &lt; 01h:35m:00s |
-| 2 | Streaming-Connectoren | &ca; &lt; 00h:16m:30s | &ca; &lt; 01h:45m:00s |
-| 3 | Adobe Analytics-Quell-Connector | &ca; &lt; 00h:16m:30s | &ca; &lt; 01h:45m:00s |
-| 4 | Andere Quell-Connectoren in die Quell-Connectoren (einschließlich Batch-Daten) | &ca; &lt; 24h:01m:30s | &ca; &lt; 25h:30m:00s |
+| 1 | Edge Network SDK / APIs in Edge Network | &amp;ca; &lt; 00h:06m:30s | &amp;ca; &lt; 01h:35m:00s |
+| 2 | Streaming-Connectoren | &amp;ca; &lt; 00h:16m:30s | &amp;ca; &lt; 01h:45m:00s |
+| 3 | Adobe Analytics-Quell-Connector | &amp;ca; &lt; 00h:16m:30s | &amp;ca; &lt; 01h:45m:00s |
+| 4 | Andere Quell-Connectoren in die Quell-Connectoren (einschließlich Batch-Daten) | &amp;ca; &lt; 24h:01m:30s | &amp;ca; &lt; 25h:30m:00s |
+
 
 ## Einschränkungen
 
@@ -67,8 +68,8 @@ Beachten Sie die folgenden Einschränkungen für das Echtzeit-Reporting:
 
 * Echtzeitberichte berichten nur über Daten, die über einen rollierenden Zeitraum von 24 Stunden verfügbar sind. Daten, die mehr sind als   24 Stunden alt ist nicht für Echtzeit-Reporting verfügbar. Sobald die [Echtzeit-Aktualisierung](use-real-time.md) für einen Bericht deaktiviert oder automatisch deaktiviert wurde, sind alle relevanten Daten erneut aus dem [konsolidierten Datensatz“ verfügbar, ](/help/connections/combined-dataset.md) normalerweise für das Reporting in Customer Journey Analytics verwendet wird.
 * Attribution, Segmentierung, berechnete Metriken und mehr arbeiten nur mit den Daten, die innerhalb des rollierenden Zeitraums von 24 Stunden verfügbar sind. Ein Segment *Besucher wiederholen* enthält beispielsweise nur sehr wenige Personen in einem Echtzeitbericht, da der Bericht nur Personen enthält, die in den letzten 24 Stunden mehrmals besucht haben. Eine ähnliche Einschränkung gilt, wenn Sie einen Echtzeitbericht über Personen erstellen, die zuvor auf eine Kampagne geklickt haben, die nicht mehr aktiv ist.
-* Echtzeitberichte eignen sich am besten für Daten auf Ereignis- und Sitzungsebene. Bei der Verwendung von Echtzeitberichten für Daten auf Personenebene sollten Sie daher vorsichtig sein. <!--Need to explain this a bit better --> Da für Echtzeitberichte nur Ereignisse aus dem rollierenden 24-Stunden-Zeitraum verfügbar sind, ist der Ereignisverlauf einer Person auch auf dieses Fenster beschränkt. Berücksichtigen Sie bei der Auswahl einer Dimension und (berechneter) Metriken die Präferenz für Daten auf Ereignis- und Sitzungsebene. Und wenn Sie Funktionen wie Aufschlüsselungen, Nächstes oder Vorheriges und mehr in Ihrem Bedienfeld für die Echtzeit-Aktualisierung verwenden.
-* Zuordnung und Echtzeitberichte können nicht kombiniert werden. <!-- Do we need to explain this in more detail, why? --> Echtzeit-Reporting bezieht sich auf Daten auf Ereignis- und Sitzungsebene und ist für personenbasierte Daten weniger relevant.
+* Echtzeitberichte eignen sich am besten für Daten auf Ereignis- und Sitzungsebene. Bei der Verwendung von Echtzeitberichten für Daten auf Personenebene sollten Sie daher vorsichtig sein. Da für Echtzeitberichte nur Ereignisse aus dem rollierenden 24-Stunden-Zeitraum verfügbar sind, ist der Ereignisverlauf einer Person auch auf dieses Fenster beschränkt. Berücksichtigen Sie bei der Auswahl einer Dimension und (berechneter) Metriken die Präferenz für Daten auf Ereignis- und Sitzungsebene. Und wenn Sie Funktionen wie Aufschlüsselungen, Nächstes oder Vorheriges und mehr in Ihrem Bedienfeld für die Echtzeit-Aktualisierung verwenden.
+* Zuordnung und Echtzeitberichte können nicht kombiniert werden. Beim Echtzeit-Reporting geht es um Daten auf Ereignis- und Sitzungsebene, und es ist weniger relevant für personenbasierte Daten.
 * Es sind keine von Heartbeat erfassten Medienmetriken verfügbar, mit Ausnahme von Medienstart- und Medienschlussmetriken. Sie können also weiterhin Echtzeitberichte verwenden, um einen Medienanwendungsfall zu ermöglichen.
 * Wenn Sie die [Download- oder Exportoptionen](/help/analysis-workspace/export/download-send.md) verwenden, um ein Projekt herunterzuladen oder Daten aus einer Freiformtabelle zu exportieren, beachten Sie Folgendes:
    * Ein heruntergeladenes CSV-Projekt oder eine exportierte CSV-Datei enthält die zum Zeitpunkt des Herunterladens oder Exports verfügbaren Echtzeitdaten.
