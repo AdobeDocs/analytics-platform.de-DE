@@ -7,7 +7,7 @@ hidefromtoc: true
 role: User
 badgePremium: label="Beta"
 exl-id: 12fbb760-936d-4e30-958f-764febca5ae7
-source-git-commit: d0067d8271b7628f0d174d1fa647ba1b4558ffb4
+source-git-commit: 804668db5e104d1a1de7d5d9ce0c92a9bb1980dc
 workflow-type: tm+mt
 source-wordcount: '732'
 ht-degree: 2%
@@ -45,7 +45,7 @@ Erwägen Sie keine Echtzeitberichte für Anwendungsfälle zur Betriebsüberwachu
 
 ## Latenzen
 
-Die Art und Weise, wie Sie Daten erfassen, bestimmt die Echtzeit-Latenz von Echtzeit-Berichten für Customer Journey Analytics . Die folgende Abbildung und Tabelle zeigen ungefähre Latenzen für verschiedene Datenerfassungsszenarien bei der Verwendung von Echtzeit- und Standardberichten.
+Die Art und Weise, wie Sie Daten erfassen, bestimmt die Echtzeit-Latenz von Echtzeit-Berichten für Customer Journey Analytics. Die folgende Abbildung und Tabelle zeigen ungefähre Latenzen für verschiedene Datenerfassungsszenarien bei der Verwendung von Echtzeit- und Standardberichten.
 
 In der Abbildung wird auch hervorgehoben, dass das Echtzeit-Reporting einen konsolidierten Datensatz verwendet, der vollständig vom [konsolidierten (kombinierten) Datensatz) getrennt ](/help/connections/combined-dataset.md), der für das Standard-Reporting verwendet wird. Mit dem Umschalter [Echtzeit-Aktualisierung](use-real-time.md) können Sie zwischen folgenden Optionen wechseln:
 
@@ -56,10 +56,10 @@ In der Abbildung wird auch hervorgehoben, dass das Echtzeit-Reporting einen kons
 
 | | Datenerfassung | Echtzeit-Berichterstellungslatenz | Standard-Berichtslatenz |
 |:---:|---|--:|--:|
-| 1 | Edge Network SDK / APIs in Edge Network | &ca; &lt; 00h:06m:30s | &ca; &lt; 01h:35m:00s |
-| 2 | Streaming-Connectoren | &ca; &lt; 00h:16m:30s | &ca; &lt; 01h:45m:00s |
-| 3 | Adobe Analytics-Quell-Connector | &ca; &lt; 00h:16m:30s | &ca; &lt; 01h:45m:00s |
-| 4 | Andere Quell-Connectoren in die Quell-Connectoren (einschließlich Batch-Daten) | &ca; &lt; 24h:01m:30s | &ca; &lt; 25h:30m:00s |
+| 1 | Edge Network SDK / APIs in Edge Network | &amp;ca; &lt; 00h:06m:30s | &amp;ca; &lt; 01h:35m:00s |
+| 2 | Streaming-Connectoren | &amp;ca; &lt; 00h:16m:30s | &amp;ca; &lt; 01h:45m:00s |
+| 3 | Adobe Analytics-Quell-Connector | &amp;ca; &lt; 00h:16m:30s | &amp;ca; &lt; 01h:45m:00s |
+| 4 | Andere Quell-Connectoren in die Quell-Connectoren (einschließlich Batch-Daten) | &amp;ca; &lt; 24h:01m:30s | &amp;ca; &lt; 25h:30m:00s |
 
 ## Einschränkungen
 
