@@ -56,10 +56,10 @@ In der Abbildung wird auch hervorgehoben, dass das Echtzeit-Reporting einen kons
 
 | | Datenerfassung | Echtzeit-Berichterstellungslatenz | Standard-Berichtslatenz |
 |:---:|---|--:|--:|
-| 1 | Edge Network SDK / APIs in Edge Network | &amp;ca; &lt; 00h:06m:30s | &amp;ca; &lt; 01h:35m:00s |
-| 2 | Streaming-Connectoren | &amp;ca; &lt; 00h:16m:30s | &amp;ca; &lt; 01h:45m:00s |
-| 3 | Adobe Analytics-Quell-Connector | &amp;ca; &lt; 00h:16m:30s | &amp;ca; &lt; 01h:45m:00s |
-| 4 | Andere Quell-Connectoren in die Quell-Connectoren (einschließlich Batch-Daten) | &amp;ca; &lt; 24h:01m:30s | &amp;ca; &lt; 25h:30m:00s |
+| 1 | Edge Network SDK / APIs in Edge Network | &ca; &lt; 00h:06m:30s | &ca; &lt; 01h:35m:00s |
+| 2 | Streaming-Connectoren | &ca; &lt; 00h:16m:30s | &ca; &lt; 01h:45m:00s |
+| 3 | Adobe Analytics-Quell-Connector | &ca; &lt; 00h:16m:30s | &ca; &lt; 01h:45m:00s |
+| 4 | Andere Quell-Connectoren in die Quell-Connectoren (einschließlich Batch-Daten) | &ca; &lt; 24h:01m:30s | &ca; &lt; 25h:30m:00s |
 
 ## Einschränkungen
 
