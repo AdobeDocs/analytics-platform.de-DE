@@ -7,7 +7,7 @@ hidefromtoc: true
 role: User
 badgePremium: label="Beta"
 exl-id: 12fbb760-936d-4e30-958f-764febca5ae7
-source-git-commit: b34cf8d95080cb333cd497450f5881f0418b8ae9
+source-git-commit: 2461804f788b7a1417c4d7faa1d7133d8808cad5
 workflow-type: tm+mt
 source-wordcount: '723'
 ht-degree: 4%
@@ -42,17 +42,18 @@ Sie möchten beispielsweise Folgendes überprüfen:
 
 Erwägen Sie keine Echtzeitberichte für Anwendungsfälle zur Betriebsüberwachung. Zum Beispiel, um die Frage zu beantworten, ob eine Site ordnungsgemäß funktioniert. Da der Umschalter [Echtzeit-Aktualisierung](use-real-time.md) nach 30 Minuten automatisch deaktiviert wird und der Echtzeitbericht nicht mehr aktualisiert wird, sollten Sie für diese Anwendungsfälle keinen Echtzeitbericht als zuverlässige Quelle verwenden.
 
+## Funktionsweise
 
-## Latenzen
-
-Die Art und Weise, wie Sie Daten erfassen, bestimmt die Latenz von Echtzeitberichten in Customer Journey Analytics. Die folgende Abbildung und Tabelle zeigen ungefähre Latenzen für verschiedene Datenerfassungsszenarien bei Verwendung von Echtzeit- und (zum Vergleich) Standard-Reporting.
-
-In der Abbildung wird auch hervorgehoben, dass das Echtzeit-Reporting einen konsolidierten Datensatz verwendet, der vollständig vom [konsolidierten (kombinierten) Datensatz) getrennt ](/help/connections/combined-dataset.md), der für das Standard-Reporting verwendet wird. Mit dem Umschalter [Echtzeit-Aktualisierung](use-real-time.md) können Sie zwischen folgenden Optionen wechseln:
+Das Echtzeit-Reporting verwendet einen konsolidierten Datensatz, der vollständig getrennt vom [konsolidierten (kombinierten) Datensatz](/help/connections/combined-dataset.md) ist, der für das Standard-Reporting verwendet wird. Mit dem Umschalter [Echtzeit-Aktualisierung](use-real-time.md) können Sie zwischen folgenden Optionen wechseln:
 
 * Echtzeitberichte zu einem konsolidierten Datensatz, der bis zu 24 Stunden rollierende Daten enthält.
 * Standardberichte zum konsolidierten Datensatz, der bis zu 13 Monate rollierende Daten enthält (oder länger, falls Sie das Add-on für erweiterte Datenkapazität lizenziert haben).
 
 ![Echtzeit-Reporting](assets/real-time-reporting-latencies.svg){zoomable="yes"}
+
+### Latenzen
+
+Die Art und Weise, wie Sie Daten erfassen, bestimmt die Latenz von Echtzeitberichten in Customer Journey Analytics. Die obige Abbildung und die nachstehende Tabelle zeigen ungefähre Latenzen für verschiedene Datenerfassungsszenarien bei Verwendung von Echtzeit- und (zum Vergleich) Standard-Berichten.
 
 | | Datenerfassung | <br/> für Echtzeit-Berichte (ca. kleiner als) | Standard-Berichtslatenz <br/>(ca. kleiner als) |
 |:---:|---|--:|--:|
