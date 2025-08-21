@@ -5,7 +5,7 @@ exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
 feature: Audiences
 role: User
 source-git-commit: f3bd60d6a371a16e606d9af60e3359d8128a3c9f
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2389'
 ht-degree: 100%
 
@@ -18,7 +18,7 @@ ht-degree: 100%
 >[!CONTEXTUALHELP]
 >id="components_audiences_refreshfrequency"
 >title="Häufigkeit der Aktualisierung"
->abstract="Ermitteln Sie, wie oft die Mitgliedschaft einer Zielgruppe neu ausgewertet wird.<br/>Einmalige Zielgruppen werden nur einmal ausgewertet."
+>abstract="Ermitteln Sie, wie oft die Zugehörigkeit zu einer Zielgruppe neu ausgewertet wird.<br/>Einmalige Zielgruppen werden nur einmal ausgewertet."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -130,7 +130,7 @@ Beachten Sie Folgendes beim Arbeiten mit Zielgruppen, die aus Customer Journey A
 
 * Die Zielgruppe in Experience Platform hat denselben Namen und dieselbe Beschreibung wie die Customer Journey Analytics-Zielgruppe. An den Namen wird die Customer Journey Analytics-Zielgruppen-ID angehängt, um sicherzustellen, dass die Zielgruppe eindeutig ist.
 * Alle Änderungen am Namen oder an der Beschreibung der Zielgruppe in Customer Journey Analytics werden in Experience Platform übernommen.
-* Wenn eine Zielgruppe in Customer Journey Analytics gelöscht wird, ist die Zielgruppe in Experience Platform weiterhin verfügbar, bis die Profilmitgliedschaft der Zielgruppe abläuft. Die Profilmitgliedschaft läuft für einmalige Zielgruppen nach 420 Tagen und für wiederkehrende Zielgruppen nach 16 Tagen ab.
+* Wenn eine Zielgruppe in Customer Journey Analytics gelöscht wird, ist die Zielgruppe in Experience Platform weiterhin verfügbar, bis die Profilzugehörigkeit der Zielgruppe abläuft. Die Profilzugehörigkeit läuft für einmalige Zielgruppen nach 420 Tagen und für wiederkehrende Zielgruppen nach 16 Tagen ab.
 
 ## Latenzaspekte {#latency}
 
