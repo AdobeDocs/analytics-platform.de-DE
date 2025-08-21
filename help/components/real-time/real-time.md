@@ -7,10 +7,10 @@ hidefromtoc: true
 role: User
 badgePremium: label="Beta"
 exl-id: 12fbb760-936d-4e30-958f-764febca5ae7
-source-git-commit: 2dd78dc120fc2bf48d3a59e28631e4ddf605b0c3
+source-git-commit: b34cf8d95080cb333cd497450f5881f0418b8ae9
 workflow-type: tm+mt
-source-wordcount: '733'
-ht-degree: 2%
+source-wordcount: '723'
+ht-degree: 4%
 
 ---
 
@@ -54,12 +54,12 @@ In der Abbildung wird auch hervorgehoben, dass das Echtzeit-Reporting einen kons
 
 ![Echtzeit-Reporting](assets/real-time-reporting-latencies.svg){zoomable="yes"}
 
-| | Datenerfassung | Echtzeit-Berichterstellungslatenz | Standard-Berichtslatenz |
+| | Datenerfassung | <br/> für Echtzeit-Berichte (ca. kleiner als) | Standard-Berichtslatenz <br/>(ca. kleiner als) |
 |:---:|---|--:|--:|
-| 1 | Edge Network SDK / APIs in Edge Network | &ca; &lt; 00h:06m:30s | &ca; &lt; 01h:35m:00s |
-| 2 | Streaming-Connectoren | &ca; &lt; 00h:16m:30s | &ca; &lt; 01h:45m:00s |
-| 3 | Adobe Analytics-Quell-Connector | &ca; &lt; 00h:16m:30s | &ca; &lt; 01h:45m:00s |
-| 4 | Andere Quell-Connectoren in die Quell-Connectoren (einschließlich Batch-Daten) | &ca; &lt; 24h:01m:30s | &ca; &lt; 25h:30m:00s |
+| 1 | Edge Network SDK / APIs in Edge Network | 7 Minuten | 95 Minuten |
+| 2 | Streaming-Connectoren | 17 Minuten | 105 Minuten |
+| 3 | Adobe Analytics-Quell-Connector | 17 Minuten | 105 Minuten |
+| 4 | Andere Quell-Connectoren in die Quell-Connectoren (einschließlich Batch-Daten) | 25 Stunden | 25 Stunden |
 
 
 ## Einschränkungen
