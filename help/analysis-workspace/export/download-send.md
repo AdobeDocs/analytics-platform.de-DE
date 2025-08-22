@@ -4,10 +4,10 @@ title: Projekte und Daten herunterladen
 feature: Curate and Share
 exl-id: 1d8384ca-888c-482c-ab3e-d1b579217560
 role: User
-source-git-commit: ce4a21b1a1e89f14316a92fbdce38281db61e666
+source-git-commit: 1cb9e18f79e8ca49b63aa7d8117ce6c61a020454
 workflow-type: tm+mt
-source-wordcount: '1184'
-ht-degree: 23%
+source-wordcount: '1246'
+ht-degree: 21%
 
 ---
 
@@ -20,33 +20,42 @@ Sie können Analysis Workspace-Projekte und -Daten auf Ihr lokales Gerät herunt
 
 Weitere Methoden zum Exportieren von Customer Journey Analytics-Daten finden Sie unter [Exportübersicht](/help/analysis-workspace/export/export-project-overview.md).
 
-## Herunterladen als CSV oder PDF {#download-project}
+## Herunterladen eines Projekts als PDF- oder CSV-Datei {#download-project}
 
 ![Das Dropdown-Menü Projekt mit den hervorgehobenen Optionen CSV herunterladen und „PDF herunterladen.](assets/download-project.png)
 
+### Herunterladen eines Projekts als PDF-Datei
+
 Beachten Sie beim Herunterladen eines Projekts als PDF Folgendes:
 
-* Der Download kann einige Minuten dauern, da das Projekt erneut auf Adobe-Servern ausgeführt und im PDF-Format gerendert wird. Verlassen Sie das Projekt erst, wenn das Projekt in Ihren Browser heruntergeladen wurde.  Sie können weitere Änderungen am Projekt vornehmen, während der Download gerendert wird. Wenn das Rendern einer PDF länger als 5 Minuten dauert, werden Sie aufgefordert, stattdessen eine E[Mail an die PDF ](../curate-share/send-schedule-files.md) senden.
+* Verlassen Sie das Projekt erst, wenn das Projekt auf Ihre Workstation heruntergeladen wurde. Der Download kann einige Minuten dauern, da das Projekt erneut auf Adobe-Servern ausgeführt wird, damit PDF gerendert werden kann. Sie können weitere Änderungen am Projekt vornehmen, während der Download gerendert wird. Wenn das Rendern einer PDF länger als 5 Minuten dauert, werden Sie aufgefordert, stattdessen eine E[Mail an die PDF ](../curate-share/send-schedule-files.md) senden.
 * Downloads werden als einzelne Seite ohne Seitenumbruch gerendert.
-* Die PDF enthalten, was auf der Browser-Seite in Analysis Workspace sichtbar ist. Sie müssen Visualisierungen und Bedienfelder in benutzerdefinierter Größe automatisch skalieren, um abgeschnittene Inhalte zu vermeiden. Wählen Sie ![Größe ändern](/help/assets/icons/Resize.svg) aus, um die Größe einer Visualisierung oder eines Bedienfelds in benutzerdefinierter Größe automatisch anzupassen.
-* [Hyperlinks](/help/analysis-workspace/visualizations/freeform-table/freeform-table-hyperlinks.md) innerhalb von Freiformtabellen als Hyperlinks in der heruntergeladenen PDF.
-
-
+* Die PDF enthält, was auf der Browser-Seite in Analysis Workspace angezeigt wird. Um abgeschnittene Inhalte zu vermeiden, wählen Sie ![Größe ändern](/help/assets/icons/Resize.svg) aus, um die Größe aller Visualisierungen oder Bedienfelder in benutzerdefinierter Größe automatisch zu ändern.
+* [Hyperlinks](/help/analysis-workspace/visualizations/freeform-table/freeform-table-hyperlinks.md) innerhalb von Freiformtabellen sind in der heruntergeladenen PDF klickbar.
 
 So laden Sie ein Projekt als PDF-Datei herunter:
 
 1. Wählen Sie **[!UICONTROL Projekt]** > **[!UICONTROL PDF herunterladen]**.
-Ein grüner Balken mit der Meldung ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) **[!UICONTROL Ihr Download wurde angefordert. Bitte warten.]** wird angezeigt.
 
-1. Sobald Ihr Download fertig ist, ist ein grüner Balken mit der Meldung ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) **[!UICONTROL *Name des Projekts *PDF bereit.]**&#x200B;wird angezeigt.
-Wählen Sie&#x200B;**[!UICONTROL Herunterladen]**&#x200B;aus, um die PDF herunterzuladen. Wie genau die PDF angezeigt oder heruntergeladen wird, hängt von der Browser-Konfiguration für die Verarbeitung von PDF-Dokumenten ab.
+   Ein grüner Balken mit der folgenden Meldung wird angezeigt: ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) **[!UICONTROL Ihr Download wurde angefordert. Bitte warten.]**
 
+1. Sobald der Download fertig ist, wird ein grüner Balken mit der folgenden Meldung angezeigt: ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) **[!UICONTROL *Name des Projekts *PDF ist bereit.]**
 
-So laden Sie ein Projekt als CSV-Datei herunter:
+1. Wählen **[!UICONTROL in]** grünen Leiste „Herunterladen“ aus.
 
-* Wählen Sie **[!UICONTROL Projekt]** > **[!UICONTROL CSV herunterladen]** aus. Das Projekt wird direkt in den Download-Ordner heruntergeladen, der als Teil Ihrer Browser-Konfiguration konfiguriert ist. Der Dateiname besteht aus *Projektname* - *Name der Report Suite* - *Datum*, z. B. `Example Project - Omni-Channel - Luma - Jun 30, 2025.csv`.
+   Abhängig von Ihren Browsereinstellungen wird die PDF automatisch in den Ordner heruntergeladen, den Sie zuvor konfiguriert haben, oder Sie werden aufgefordert, einen Ordner auszuwählen, in den die PDF heruntergeladen werden soll.
 
-## In Zwischenablage kopieren {#copy-data}
+   Der Dateiname besteht aus *Projektname* - *Name der Report Suite* - *Datum*. Zum Beispiel `Example Project - Omni-Channel - Luma - Jun 30, 2025.pdf`.
+
+### Ein Projekt als CSV-Datei herunterladen
+
+1. Wählen Sie **[!UICONTROL Projekt]** > **[!UICONTROL CSV herunterladen]** aus.
+
+   Abhängig von Ihren Browser-Einstellungen wird die CSV-Datei automatisch in einen Ordner heruntergeladen, den Sie zuvor konfiguriert haben. Andernfalls werden Sie aufgefordert, einen Ordner auszuwählen, in den die CSV-Datei heruntergeladen werden soll.
+
+   Der Dateiname besteht aus *Projektname* - *Name der Report Suite* - *Datum*. Zum Beispiel `Example Project - Omni-Channel - Luma - Jun 30, 2025.csv`.
+
+## Kopieren von Daten innerhalb einer Visualisierung in die Zwischenablage {#copy-data}
 
 Mit **[!UICONTROL Option „In Zwischenablage]**&quot; im Kontextmenü können Sie Daten schnell aus Analysis Workspace kopieren und in ein Tool eines Drittanbieters einfügen.
 
@@ -60,7 +69,7 @@ Mit **[!UICONTROL Option „In Zwischenablage]**&quot; im Kontextmenü können S
 
 ![Die Option Auswahl in die Zwischenablage kopieren. ](assets/copy-clipboard.png){zoomable="yes"}
 
-## Als CSV herunterladen {#download-data}
+## Herunterladen von Daten innerhalb einer Visualisierung als CSV-Datei {#download-data}
 
 Mit den Optionen Als CSV herunterladen aus dem Kontextmenü können Sie eine Datentabelle oder die Datenquelle einer beliebigen Visualisierung als CSV herunterladen.
 
@@ -78,7 +87,7 @@ Gehen Sie dazu wie folgt vor:
 
 ![Die Option Daten als CSV herunterladen.](assets/download-data-as-csv.png)
 
-## Objekte als CSV herunterladen {#download-items}
+## Objekte als CSV-Datei herunterladen {#download-items}
 
 Wenn Sie mehr als die 400 sichtbaren Zeilen mit Daten in einer Tabelle analysieren möchten, wählen Sie **Elemente als CSV herunterladen (_Dimension-Name_)** aus dem Kontextmenü der Tabellenkopfzeile oder einer beliebigen Zeile. Diese Option exportiert bis zu 50.000 Dimensionselemente (basierend auf der Tabellensortierung) für die ausgewählte Dimension, wobei Sortieroptionen und Filter angewendet werden. Wenn Sie diese Option oben in der Tabelle auswählen, wird die erste Dimension in der Tabelle exportiert.
 
@@ -107,8 +116,8 @@ Die folgenden Funktionen einer Freiformtabelle werden auf die heruntergeladene D
 
 Beim Herunterladen der Datei werden die folgenden Benachrichtigungen angezeigt:
 
-* Ein blauer **[!UICONTROL _Tabellenname _-_Dimension _.csv wurde angefordert._x _% abgeschlossen]**&#x200B;was den Fortschritt anzeigt. Um den Download jederzeit abzubrechen, wählen Sie **[!UICONTROL Download abbrechen]**. Wählen Sie ![CrossSize100](/help/assets/icons/CrossSize100.svg) aus, wenn Sie die Nachricht schließen möchten. Der Download wird dadurch nicht abgebrochen.
-* Ein grüner **[!UICONTROL _Tabellenname _-_Dimension _.csv wurde heruntergeladen]**&#x200B;Fertigstellungsbenachrichtigung, sobald der Dateidownload abgeschlossen ist. Die Datei wird in den Ordner „Downloads“ heruntergeladen, der für Ihren Browser konfiguriert ist.
+* Ein blauer **[!UICONTROL _Tabellenname _-_Dimension _.csv wurde angefordert._x _% abgeschlossen]**was den Fortschritt anzeigt. Um den Download jederzeit abzubrechen, wählen Sie **[!UICONTROL Download abbrechen]**. Wählen Sie ![CrossSize100](/help/assets/icons/CrossSize100.svg) aus, wenn Sie die Nachricht schließen möchten. Der Download wird dadurch nicht abgebrochen.
+* Ein grüner **[!UICONTROL _Tabellenname _-_Dimension _.csv wurde heruntergeladen]**Fertigstellungsbenachrichtigung, sobald der Dateidownload abgeschlossen ist. Die Datei wird in den Ordner „Downloads“ heruntergeladen, der für Ihren Browser konfiguriert ist.
 
 Wenn Sie mehrere Downloads gleichzeitig anfordern, erhalten Sie eine Benachrichtigung, dass jeder weitere Download in die Warteschlange gestellt wird, bis der vorherige Download abgeschlossen ist.
 
