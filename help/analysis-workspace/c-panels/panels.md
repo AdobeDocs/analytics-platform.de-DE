@@ -4,10 +4,10 @@ title: Überblick über Panels
 feature: Panels
 exl-id: be3e34a0-06c1-4200-b965-96084c2912fd
 role: User
-source-git-commit: c26fbe37270171c80d77c96966dd21f2dd7c7ce9
-workflow-type: ht
-source-wordcount: '2130'
-ht-degree: 100%
+source-git-commit: 4599a058cef79a28bd6f9b788c2b202c8235298d
+workflow-type: tm+mt
+source-wordcount: '2193'
+ht-degree: 97%
 
 ---
 
@@ -61,7 +61,7 @@ Sie haben folgende Möglichkeiten:
   | ![123](/help/assets/icons/123.svg) | [Zusammenfassungszahl](/help/analysis-workspace/visualizations/summary-number-change.md) |
   | ![Text](/help/assets/icons/Text.svg) | [Text](/help/analysis-workspace/visualizations/text.md) |
   | ![Konversionstrichter](/help/assets/icons/ConversionFunnel.svg) | [Fallout](/help/analysis-workspace/visualizations/fallout/fallout-flow.md) |
-  | ![Arbeitsablauf](/help/assets/icons/GraphPathing.svg) | [Fluss](/help/analysis-workspace/visualizations/c-flow/flow.md) |
+  | ![Workflow](/help/assets/icons/GraphPathing.svg) | [Fluss](/help/analysis-workspace/visualizations/c-flow/flow.md) |
   | ![Stapeldiagramm](/help/assets/icons/GraphAreaStacked.svg) | [Bereiche gestapelt](/help/analysis-workspace/visualizations/area.md) |
   | ![NummerierterText](/help/assets/icons/TextNumbered.svg) | [Kohortentabelle](/help/analysis-workspace/visualizations/cohort-table/t-cohort.md) |
   | ![Aufzählungspunkte](/help/assets/icons/GraphBullet.svg) | [Bullet](/help/analysis-workspace/visualizations/bullet-graph.md) |
@@ -73,6 +73,18 @@ Sie haben folgende Möglichkeiten:
   | ![Baumdiagramm](/help/assets/icons/GraphTree.svg) | [Treemap](/help/analysis-workspace/visualizations/treemap.md) |
 
 * Wählen Sie ![Kreis hinzufügen](/help/assets/icons/AddCircle.svg) **außerhalb** des letzten Panels in Ihrem Arbeitsbereich aus, um ein weiteres [leeres Panel](blank-panel.md) hinzuzufügen.
+
+
+## Verwalten eines Bedienfelds
+
+Sie können ein Bedienfeld wie folgt verwalten:
+
+![Bedienfeld verwalten](assets/manage-panel.png)
+
+* Um ein Bedienfeld zu reduzieren, wählen Sie ![ChevronDown](/help/assets/icons/ChevronDown.svg) aus.
+* Um ein reduziertes Bedienfeld anzuzeigen, wählen Sie ![ChevronLeft](/help/assets/icons/ChevronLeft.svg) aus.
+* Um ein Bedienfeld zu löschen, wählen Sie ![CrossSize400](/help/assets/icons/CrossSize200.svg) aus. Um dies rückgängig zu machen, wählen **[!UICONTROL Bearbeiten]** > **[!UICONTROL Rückgängig]** (**[!UICONTROL *cmd+z *]**|**[!UICONTROL * Strg+Z *]**).
+* Um einen Bereich zu verschieben, ziehen Sie den Bereich per Drag-and![Drop, sobald ein „Verschieben](/help/assets/icons/Move.svg) sichtbar ist (in der Regel, wenn Sie den Mauszeiger über die Kopfzeile bewegen).
 
 
 ## Datenansicht
@@ -155,7 +167,7 @@ Weitere Informationen finden Sie unter [Schnellsegmente](/help/components/segmen
 
 >[!BEGINSHADEBOX]
 
-Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Dropdown-Segmente](https://video.tv.adobe.com/v/327486?quality=12&learn=on&captions=ger){target="_blank"} finden Sie ein Demovideo.
+Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Dropdown-Segmente](https://video.tv.adobe.com/v/23877?quality=12&learn=on){target="_blank"} finden Sie ein Demovideo.
 
 {{videoaa}}
 

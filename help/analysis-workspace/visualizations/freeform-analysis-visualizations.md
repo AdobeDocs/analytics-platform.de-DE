@@ -5,10 +5,10 @@ title: Visualisierungen - Übersicht
 feature: Visualizations
 exl-id: ca9e0561-7a54-487a-9fdc-3bcf34f9bdb1
 role: User
-source-git-commit: 9c05319ceacb7287af7f15cfe56b8048a718559d
+source-git-commit: 4599a058cef79a28bd6f9b788c2b202c8235298d
 workflow-type: tm+mt
-source-wordcount: '1622'
-ht-degree: 92%
+source-wordcount: '1738'
+ht-degree: 86%
 
 ---
 
@@ -67,6 +67,22 @@ Die folgenden Visualisierungstypen sind in Analysis Workspace verfügbar:
    * Verwenden Sie das Workspace-Menü **[!UICONTROL Einfügen]**, um eine Visualisierung einzufügen.
 
    * Wählen Sie im Kontextmenü in einer Freiformtabelle die Option **[!UICONTROL Visualisieren]** aus. Wählen Sie dann die Visualisierung aus dem Untermenü aus. Basierend auf der aktuellen Auswahl in der Tabelle bestimmt Workspace, welche Visualisierung angeboten werden soll, und interpretiert die Daten, um die angeforderte Visualisierung zu erstellen.
+
+Wenn Sie eine einfache Visualisierung hinzufügen, z. B[ eine ](line.md)-[-](bar.md)-Visualisierung, verwendet die Visualisierung die nächste Freiformtabelle als Datenquelle. Sie können jederzeit die [Datenquelle](#data-source) einer Ihrer Visualisierungen ändern.
+
+
+## Verwalten von Visualisierungen
+
+Sie können eine Visualisierung verwalten, wenn Sie den Mauszeiger über die Visualisierung bewegen oder die Visualisierung auswählen.
+
+![Visualisierung verwalten](assets/manage-visualization.png)
+
+* Um eine Visualisierung zu reduzieren, wählen Sie ![ChevronDown](/help/assets/icons/ChevronDown.svg) aus.
+* Um eine reduzierte Visualisierung anzuzeigen, wählen Sie ![ChevronLeft](/help/assets/icons/ChevronLeft.svg) aus.
+* Um eine Visualisierung zu löschen, wählen Sie ![CrossSize400](/help/assets/icons/CrossSize400.svg) aus. Um dies rückgängig zu machen, wählen **[!UICONTROL Bearbeiten]** > **[!UICONTROL Rückgängig]** (**[!UICONTROL *cmd+z *]**|**[!UICONTROL * Strg+Z *]**).
+* Um eine Visualisierung auf die Standardhöhe zurückzusetzen, wählen Sie ![ImageResize](/help/assets/icons/Resize.svg) aus.
+* Um eine Visualisierung innerhalb eines Bereichs zu verschieben, ziehen Sie die Visualisierung per Drag-and-Drop, sobald eine ![Verschieben](/help/assets/icons/Move.svg) sichtbar ist (in der Regel, wenn Sie den Mauszeiger über die Kopfzeile bewegen).
+
 
 
 ## Legende
