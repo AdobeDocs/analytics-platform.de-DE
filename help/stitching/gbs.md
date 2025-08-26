@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: ea5c9114-1fc3-4686-b184-2850acb42b5c
-source-git-commit: 98432804b71805c3714423dff577bbf80d5c92d1
+source-git-commit: 1ee282d0bf91c1a2f27073d0755cf404148d4d5b
 workflow-type: tm+mt
-source-wordcount: '1540'
+source-wordcount: '1542'
 ht-degree: 7%
 
 ---
@@ -21,9 +21,9 @@ Bei der diagrammbasierten Zuordnung geben Sie einen Ereignis-Datensatz sowie die
 
 ## IdentityMap
 
-Diagrammbasiertes Stitching unterstützt die Verwendung der [`identityMap` Feldergruppe ](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/schema/composition#identity) folgenden Szenarien:
+Diagrammbasiertes Stitching unterstützt die Verwendung der [`identityMap` Feldergruppe ](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition#identity) folgenden Szenarien:
 
-- Verwendung der primären Identität in `identityMap` Namespace zum Definieren der persistenten ID:
+- Verwendung der primären Identität in `identityMap` Namespaces zur Definition der persistenten ID:
    - Wenn mehrere primäre Identitäten in verschiedenen Namespaces gefunden werden, werden die Identitäten in den Namespaces lexigrafisch sortiert und die erste Identität wird ausgewählt.
    - Wenn mehrere primäre Identitäten in einem einzigen Namespace gefunden werden, wird die erste lexikografische primäre Identität ausgewählt, die verfügbar ist.
 
@@ -58,7 +58,7 @@ Diagrammbasiertes Stitching unterstützt die Verwendung der [`identityMap` Felde
 - Verwendung `identityMap` Namespace zum Definieren der persistenten ID:
    - Wenn mehrere Werte für persistentID in einem `identityMap` Namespace gefunden werden, wird die erste lexikografische verfügbare Identität verwendet.
 
-  Im folgenden Beispiel führen die Namespaces und Identitäten zu einer sortierten Identitätsliste für den ausgewählten Namespace (ECID) und schließlich zur ausgewählten Identität.
+  Im folgenden Beispiel haben Sie ECID als zu verwendenden Namespace ausgewählt. Diese Auswahl führt zu einer sortierten Identitätsliste und schließlich zur ausgewählten Identität.
 
   <table style="table-layout:auto">
      <tr>
@@ -113,7 +113,7 @@ Betrachten Sie die folgenden beiden Identitätsdiagramme für persistente ID-`24
 ![Identitätsdiagramm 246](assets/identity-graph-246.svg)
 ![Identitätsdiagramm 3579](assets/identity-graph-3579.svg)
 
-Sie können ein Identitätsdiagramm im Zeitverlauf für ein bestimmtes Profil mit dem [Identitätsdiagramm-Viewer](https://experienceleague.adobe.com/de/docs/experience-platform/identity/features/identity-graph-viewer) anzeigen. Siehe auch [Verknüpfungslogik für Identity Service](https://experienceleague.adobe.com/de/docs/experience-platform/identity/features/identity-linking-logic), um ein besseres Verständnis der beim Verknüpfen von Identitäten verwendeten Logik zu erhalten.
+Sie können ein Identitätsdiagramm im Zeitverlauf für ein bestimmtes Profil mit dem [Identitätsdiagramm-Viewer](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-graph-viewer) anzeigen. Siehe auch [Verknüpfungslogik für Identity Service](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-linking-logic), um ein besseres Verständnis der beim Verknüpfen von Identitäten verwendeten Logik zu erhalten.
 
 ### Schritt 1: Echtes Zusammenfügen
 
@@ -123,10 +123,10 @@ Bei der Live-Zuordnung wird versucht, jedes Ereignis bei der Erfassung mit den z
 
 | | Zeit | Persistente ID<br/>`ECID` | namespace<br/>`Email` ![graph](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataMapping_18_N.svg) | Zugeordnete ID (nach Live-Zuordnung) |
 |--:|---|---|---|---|
-| 1 | 12.05.2023 11:00 | `246` | `246` ![link](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) *undefined* | `246` |
-| 2 | 12.05.2023 14:00 | `246` | `246` ![link](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `bob.a@gmail.com` | `bob.a@gmail.com` |
-| 3 | 12.05.2023 15:00 | `246` | `246` ![link](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `bob.a@gmail.com` | `bob.a@gmail.com` |
-| 4 | 12.05.2023 17:00 Uhr | `3579` | `3579` ![link](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) *undefined* | `3579` |
+| 1 | 12.05.2023 11 :00 | `246` | `246` ![link](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) *undefined* | `246` |
+| 2 | 12.05.2023 14 :00 | `246` | `246` ![link](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `bob.a@gmail.com` | `bob.a@gmail.com` |
+| 3 | 12.05.2023 15 :00 | `246` | `246` ![link](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `bob.a@gmail.com` | `bob.a@gmail.com` |
+| 4 | 12.05.2023 17 :00 | `3579` | `3579` ![link](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) *undefined* | `3579` |
 | 5 | 12.05.2023 19:00 | `3579` | `3579` ![link](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `ted.w@gmail.com` | `ted.w@gmail.com` |
 | 6 | 13.05.2023 15:00 | `246` | `246` ![link](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `bob.a@gmail.com` | `bob.a@gmail.com` |
 | 7 | 13.05.2023 16:30 | `246` | `246` ![link](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `a.b@yahoo.co.uk`<br/>`246` ![link](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `bob.ab@gmail.com` | `a.b@yahoo.co.uk` |
@@ -144,13 +144,13 @@ In regelmäßigen Abständen (je nach ausgewähltem Lookback-Fenster) berechnet 
 
 +++ Details
 
-Bei einer Wiederholungszuordnung um 16:30 Uhr 2023-05-13 mit einer 24-Stunden-Konfiguration des Lookback-Fensters werden einige Ereignisse aus der Stichprobe erneut zugeordnet (angegeben durch ![Replay](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Replay_18_N.svg)).
+Bei einer Wiederholungszuordnung vom 13.05.2023 16:30 mit einer 24-Stunden-Lookback-Fensterkonfiguration werden einige Ereignisse aus dem Beispiel erneut zugeordnet (angegeben durch ![Replay](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Replay_18_N.svg)).
 
 | | Zeit | Persistente ID<br/>`ECID` | namespace<br/>`Email` ![graph](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataMapping_18_N.svg) | Zugeordnete ID<br/>(nach Live-Zuordnung) | Zusammengefügte ID<br/>(nach 24 Stunden Wiederholung) |
 |---|---|---|---|---|---|
-| 2 | 12.05.2023 14:00 | `246` | `246` ![link](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `bob.a@gmail.com` | `bob.a@gmail.com` | `bob.a@gmail.com` |
-| 3 | 12.05.2023 15:00 | `246` | `246` ![link](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `bob.a@gmail.com` | `bob.a@gmail.com` | `bob.a@gmail.com` |
-| ![Wiederholen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Replay_18_N.svg) 4 | 12.05.2023 17:00 Uhr | `3579` | `3579` ![link](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `ted.w@gmail.com` | `3579` | `ted.w@gmail.com` |
+| 2 | 12.05.2023 14 :00 | `246` | `246` ![link](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `bob.a@gmail.com` | `bob.a@gmail.com` | `bob.a@gmail.com` |
+| 3 | 12.05.2023 15 :00 | `246` | `246` ![link](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `bob.a@gmail.com` | `bob.a@gmail.com` | `bob.a@gmail.com` |
+| ![Wiederholen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Replay_18_N.svg) 4 | 12.05.2023 17 :00 | `3579` | `3579` ![link](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `ted.w@gmail.com` | `3579` | `ted.w@gmail.com` |
 | ![Wiederholen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Replay_18_N.svg) 5 | 12.05.2023 19:00 | `3579` | `3579` ![link](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `ted.w@gmail.com` | `ted.w@gmail.com` | `ted.w@gmail.com` |
 | ![Wiederholen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Replay_18_N.svg) 6 | 13.05.2023 15:00 | `246` | `246` ![link](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `a.b@yahoo.co.uk` | `bob.a@gmail.com` | `a.b@yahoo.co.uk` |
 | ![Wiederholen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Replay_18_N.svg) 7 | 13.05.2023 16:30 | `246` | `246` ![link](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `a.b@yahoo.co.uk`<br/>`246` ![link](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `bob.ab@gmail.com` | `a.b@yahoo.co.uk` | `a.b@yahoo.co.uk` |
@@ -158,15 +158,15 @@ Bei einer Wiederholungszuordnung um 16:30 Uhr 2023-05-13 mit einer 24-Stunden-Ko
 {style="table-layout:auto"}
 
 
-Bei der Wiederholungszuordnung um 16:30 Uhr 2023-05-13 mit einer 7-tägigen Lookback-Fensterkonfiguration werden alle Ereignisse aus der Stichprobe erneut zugeordnet.
+Mit der Wiederholungszuordnung vom 13.05.2023 16:30 werden bei einer 7-tägigen Lookback-Fensterkonfiguration alle Ereignisse aus der Stichprobe erneut zugeordnet.
 
 
 | | Zeit | Persistente ID<br/>`ECID` | namespace<br/>`Email` ![graph](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataMapping_18_N.svg) | Zugeordnete ID<br/>(nach Live-Zuordnung) | Zusammengefügte ID<br/>(nach Wiederholung 7 Tage) |
 |---|---|---|---|---|---|
-| ![Wiederholen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Replay_18_N.svg) 1 | 12.05.2023 11:00 | `246` | `246` ![link](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) *undefined* | `246` | `a.b@yahoo.co.uk` |
-| ![Wiederholen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Replay_18_N.svg) 2 | 12.05.2023 14:00 | `246` | `246` ![link](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `bob.a@gmail.com` | `bob.a@gmail.com` | `a.b@yahoo.co.uk` |
-| ![Wiederholen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Replay_18_N.svg) 3 | 12.05.2023 15:00 | `246` | `246` ![link](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `bob.a@gmail.com` | `bob.a@gmail.com` | `a.b@yahoo.co.uk` |
-| ![Wiederholen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Replay_18_N.svg) 4 | 12.05.2023 17:00 Uhr | `3579` | `3579` ![link](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `ted.w@gmail.com` | `3579` | `ted.w@gmail.com` |
+| ![Wiederholen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Replay_18_N.svg) 1 | 12.05.2023 11 :00 | `246` | `246` ![link](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) *undefined* | `246` | `a.b@yahoo.co.uk` |
+| ![Wiederholen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Replay_18_N.svg) 2 | 12.05.2023 14 :00 | `246` | `246` ![link](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `bob.a@gmail.com` | `bob.a@gmail.com` | `a.b@yahoo.co.uk` |
+| ![Wiederholen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Replay_18_N.svg) 3 | 12.05.2023 15 :00 | `246` | `246` ![link](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `bob.a@gmail.com` | `bob.a@gmail.com` | `a.b@yahoo.co.uk` |
+| ![Wiederholen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Replay_18_N.svg) 4 | 12.05.2023 17 :00 | `3579` | `3579` ![link](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `ted.w@gmail.com` | `3579` | `ted.w@gmail.com` |
 | ![Wiederholen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Replay_18_N.svg) 5 | 12.05.2023 19:00 | `3579` | `3579` ![link](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `ted.w@gmail.com` | `ted.w@gmail.com` | `ted.w@gmail.com` |
 | ![Wiederholen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Replay_18_N.svg) 6 | 13.05.2023 15:00 | `246` | `246` ![link](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `a.b@yahoo.co.uk` | `bob.a@gmail.com` | `a.b@yahoo.co.uk` |
 | ![Wiederholen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Replay_18_N.svg) 7 | 13.05.2023 16:30 | `246` | `246` ![link](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `a.b@yahoo.co.uk`<br/>`246` ![link](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `bob.ab@gmail.com` | `a.b@yahoo.co.uk` | `a.b@yahoo.co.uk` |
@@ -181,14 +181,14 @@ Wenn Sie eine Datenschutzanfrage erhalten, wird die zugeordnete ID in allen Date
 
 +++ Details
 
-Die folgende Tabelle enthält dieselben Daten wie oben, zeigt jedoch die Auswirkungen, die eine Datenschutzanfrage (z. B. 2023-05-13 18:00 Uhr) für die Beispielereignisse hat.
+Die folgende Tabelle enthält dieselben Daten wie oben, zeigt jedoch die Auswirkungen, die eine Datenschutzanfrage (z. B. 2023-05-13 18:00) für die Beispielereignisse hat.
 
 | | Zeit | Persistente ID<br/>`ECID` | namespace<br/>`Email` ![graph](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataMapping_18_N.svg) | Zusammengefügte ID (nach Datenschutzanfrage) |
 |--:|---|---|---|---|
-| <img src="https://spectrum.adobe.com/static/icons/workflow_18/Smock_RemoveCircle_18_N.svg"/> 1 | 12.05.2023 11:00 | `246` | `246` ![link](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `a.b@yahoo.co.uk` | `246` |
-| <img src="https://spectrum.adobe.com/static/icons/workflow_18/Smock_RemoveCircle_18_N.svg"/> 2 | 12.05.2023 14:00 | `246` | `246` ![link](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `a.b@yahoo.co.uk` | `246` |
-| <img src="https://spectrum.adobe.com/static/icons/workflow_18/Smock_RemoveCircle_18_N.svg"/> 3 | 12.05.2023 15:00 | `246` | `246` ![link](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `a.b@yahoo.co.uk` | `246` |
-| <img src="https://spectrum.adobe.com/static/icons/workflow_18/Smock_RemoveCircle_18_N.svg"/> 4 | 12.05.2023 17:00 Uhr | `3579` | `3579` ![link](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `ted.w@gmail.com` | `3579` |
+| <img src="https://spectrum.adobe.com/static/icons/workflow_18/Smock_RemoveCircle_18_N.svg"/> 1 | 12.05.2023 11 :00 | `246` | `246` ![link](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `a.b@yahoo.co.uk` | `246` |
+| <img src="https://spectrum.adobe.com/static/icons/workflow_18/Smock_RemoveCircle_18_N.svg"/> 2 | 12.05.2023 14 :00 | `246` | `246` ![link](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `a.b@yahoo.co.uk` | `246` |
+| <img src="https://spectrum.adobe.com/static/icons/workflow_18/Smock_RemoveCircle_18_N.svg"/> 3 | 12.05.2023 15 :00 | `246` | `246` ![link](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `a.b@yahoo.co.uk` | `246` |
+| <img src="https://spectrum.adobe.com/static/icons/workflow_18/Smock_RemoveCircle_18_N.svg"/> 4 | 12.05.2023 17 :00 | `3579` | `3579` ![link](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `ted.w@gmail.com` | `3579` |
 | <img src="https://spectrum.adobe.com/static/icons/workflow_18/Smock_RemoveCircle_18_N.svg"/> 5 | 12.05.2023 19:00 | `3579` | `3579` ![link](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `ted.w@gmail.com` | `3579` |
 | 6 <img src="https://spectrum.adobe.com/static/icons/workflow_18/Smock_RemoveCircle_18_N.svg"/> | 13.05.2023 15:00 | `246` | `246` ![link](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `a.b@yahoo.co.uk` | `246` |
 | 7 <img src="https://spectrum.adobe.com/static/icons/workflow_18/Smock_RemoveCircle_18_N.svg"/> | 13.05.2023 16:30 | `246` | `246` ![link](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `a.b@yahoo.co.uk`<br/>`246` ![link](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `bob.ab@gmail.com` | `246` |
@@ -203,7 +203,7 @@ Die folgenden Voraussetzungen gelten speziell für das diagrammbasierte Stitchin
 
 - Der Ereignisdatensatz in Adobe Experience Platform, auf den Sie eine Zuordnung anwenden möchten, muss eine Spalte aufweisen, die einen Besucher in jeder Zeile identifiziert, die **persistente ID**. Beispielsweise eine Besucher-ID, die von einer Adobe Analytics AppMeasurement-Bibliothek generiert wurde, oder eine vom Experience Platform Identity Service generierte ECID.
 - Die persistente ID muss auch [als Identität definiert) ](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/ui/fields/identity) Schema sein.
-- Das Identitätsdiagramm aus Experience Platform Identity Service muss über einen Namespace verfügen (z. B. `Email` oder `Phone`), den Sie beim Zusammenfügen verwenden möchten, um die **vorübergehende ID** aufzulösen. Weitere Informationen finden Sie unter {[&#128279;](https://experienceleague.adobe.com/de/docs/experience-platform/identity/home)}Experience Platform Identity Service.
+- Das Identitätsdiagramm aus Experience Platform Identity Service muss über einen Namespace verfügen (z. B. `Email` oder `Phone`), den Sie beim Zusammenfügen verwenden möchten, um die **vorübergehende ID** aufzulösen. Weitere Informationen finden Sie unter {[}Experience Platform Identity Service.](https://experienceleague.adobe.com/de/docs/experience-platform/identity/home)
 
 >[!NOTE]
 >
@@ -217,7 +217,7 @@ Die folgenden Einschränkungen gelten speziell für das diagrammbasierte Stitchi
 - Zeitstempel werden bei der Abfrage der vorübergehenden ID unter Verwendung des angegebenen Namespace nicht berücksichtigt. Es ist also möglich, dass eine persistente ID mit einer vorübergehenden ID aus einem Datensatz verknüpft ist, der einen früheren Zeitstempel hat.
 - In Szenarien mit gemeinsam genutzten Geräten, in denen der Namespace im Diagramm mehrere Identitäten enthält, wird die erste lexikografische Identität verwendet. Wenn Namespace-Beschränkungen und -Prioritäten im Rahmen der Veröffentlichung von Diagrammverknüpfungsregeln konfiguriert werden, wird die Identität des letzten authentifizierten Benutzers verwendet. Weitere Informationen finden [ unter ](/help/use-cases/stitching/shared-devices.md) Geräte .
 - Es gibt eine feste Grenze von drei Monaten, bis Identitäten im Identitätsdiagramm aufgestockt werden. Sie würden Identitäten zum Aufstocken verwenden, falls Sie keine Experience Platform-Anwendung wie Real-time Customer Data Platform zum Ausfüllen des Identitätsdiagramms verwenden.
-- Es [ die „Leitplanken ](https://experienceleague.adobe.com/de/docs/experience-platform/identity/guardrails) Identity Service“. Siehe beispielsweise die folgenden [statischen Beschränkungen](https://experienceleague.adobe.com/de/docs/experience-platform/identity/guardrails#static-limits):
+- Es [ die „Leitplanken ](https://experienceleague.adobe.com/en/docs/experience-platform/identity/guardrails) Identity Service“. Siehe beispielsweise die folgenden [statischen Beschränkungen](https://experienceleague.adobe.com/en/docs/experience-platform/identity/guardrails#static-limits):
    - Maximale Anzahl von Identitäten in einem Diagramm: 50.
    - Maximale Anzahl von Links zu einer Identität für eine einzelne Batch-Aufnahme: 50.
    - Maximale Anzahl von Identitäten in einem XDM-Datensatz für die Diagrammaufnahme: 20.

@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: e5cb55e7-aed0-4598-a727-72e6488f5aa8
-source-git-commit: 98432804b71805c3714423dff577bbf80d5c92d1
+source-git-commit: 1ee282d0bf91c1a2f27073d0755cf404148d4d5b
 workflow-type: tm+mt
-source-wordcount: '1779'
+source-wordcount: '1784'
 ht-degree: 15%
 
 ---
@@ -21,7 +21,7 @@ Bei der feldbasierten Zuordnung geben Sie einen Ereignis-Datensatz sowie die per
 
 ## IdentityMap
 
-Die feldbasierte Zuordnung unterstützt die Verwendung der [`identityMap` Feldergruppe ](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/schema/composition#identity) folgenden Szenarien:
+Die feldbasierte Zuordnung unterstützt die Verwendung der [`identityMap` Feldergruppe ](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition#identity) folgenden Szenarien:
 
 - Verwendung der primären Identität in `identityMap` Namespace zum Definieren der persistenten ID:
    - Wenn mehrere primäre Identitäten in verschiedenen Namespaces gefunden werden, werden die Identitäten in den Namespaces lexigrafisch sortiert und die erste Identität wird ausgewählt.
@@ -60,7 +60,7 @@ Die feldbasierte Zuordnung unterstützt die Verwendung der [`identityMap` Felder
    - Wenn mehrere Werte für persistentID oder transientID in einem `identityMap` Namespace gefunden werden, wird der erste lexikografische verfügbare Wert verwendet.
    - Namespaces für persistentID und transientID müssen sich gegenseitig ausschließen.
 
-  Im folgenden Beispiel führen die Namespaces und Identitäten zu einer sortierten Identitätsliste für den ausgewählten Namespace (ECID) und schließlich zur ausgewählten Identität.
+  Im folgenden Beispiel haben Sie ECID als Namespace für das feldbasierte Stitching ausgewählt. Diese Auswahl führt zu einer sortierten Identitätsliste und schließlich zur ausgewählten Identität.
 
   <table style="table-layout:auto">
      <tr>
@@ -122,18 +122,18 @@ Betrachten Sie das folgende Beispiel, bei dem Bob verschiedene Ereignisse als Te
 
 | Ereignis | Zeitstempel | Persistente ID (Cookie-ID) | Vorübergehende ID (Anmelde-ID) | Zugeordnete ID (nach Live-Zuordnung) |
 |---|---|---|---|---|
-| 1 | 12.05.2023 12:01 | `246` ![Pfeil nach rechts](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg) | – | **`246`** |
-| 2 | 12.05.2023 12:02 | `246` | `Bob` ![Pfeil nach rechts](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg) | `Bob` |
-| 3 | 12.05.2023 12:03 | `246` | `Bob` ![Pfeil nach rechts](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg) | `Bob` ![Pfeil nach unten](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowDown_18_N.svg) |
-| 4 | 12.05.2023 12:04 | `246` | – | **`Bob`** |
-| 5 | 12.05.2023 12:05 | `246` | `Bob` ![Pfeil nach rechts](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg) | `Bob` ![Pfeil nach unten](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowDown_18_N.svg) |
-| 6 | 12.05.2023 12:06 | `246` | – | **`Bob`** |
-| 7 | 12.05.2023 12:07 | `246` | `Bob` ![Pfeil nach rechts](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg) | `Bob` |
-| 8 | 12.05.2023 12:03 | `3579` ![Pfeil nach rechts](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg) | – | **`3579`** |
-| 9 | 12.05.2023 12:09 | `3579` ![Pfeil nach rechts](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg) | – | **`3579`** |
-| 10 | 12.05.2023 12:02 | `81911` ![Pfeil nach rechts](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg) | – | **`81911`** |
-| 11 | 12.05.2023 12:05 | `81911` | `Bob` ![Pfeil nach rechts](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg) | `Bob` ![Pfeil nach unten](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowDown_18_N.svg) |
-| 12 | 12.05.2023 12:12 | `81911` | – | **`Bob`** |
+| 1 | 12.05.2023:01 | `246` ![Pfeil nach rechts](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg) | – | **`246`** |
+| 2 | 12.05.2023:02 | `246` | `Bob` ![Pfeil nach rechts](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg) | `Bob` |
+| 3 | 12.05.2023:03 | `246` | `Bob` ![Pfeil nach rechts](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg) | `Bob` ![Pfeil nach unten](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowDown_18_N.svg) |
+| 4 | 12.05.2023:04 | `246` | – | **`Bob`** |
+| 5 | 12.05.2023:05 | `246` | `Bob` ![Pfeil nach rechts](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg) | `Bob` ![Pfeil nach unten](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowDown_18_N.svg) |
+| 6 | 12.05.2023:06 | `246` | – | **`Bob`** |
+| 7 | 12.05.2023:07 | `246` | `Bob` ![Pfeil nach rechts](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg) | `Bob` |
+| 8 | 12.05.2023:03 | `3579` ![Pfeil nach rechts](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg) | – | **`3579`** |
+| 9 | 12.05.2023:09 | `3579` ![Pfeil nach rechts](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg) | – | **`3579`** |
+| 10 | 12.05.2023:02 | `81911` ![Pfeil nach rechts](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg) | – | **`81911`** |
+| 11 | 12.05.2023:05 | `81911` | `Bob` ![Pfeil nach rechts](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg) | `Bob` ![Pfeil nach unten](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowDown_18_N.svg) |
+| 12 | 12.05.2023:12 | `81911` | – | **`Bob`** |
 | | | **3-Geräte** | | **4 Personen**:<br/>`246`, `Bob`, `3579`, `81911` |
 
 Sowohl nicht authentifizierte als auch authentifizierte Ereignisse auf neuen Geräten werden (vorübergehend) als separate Personen gezählt. Nicht authentifizierte Ereignisse auf erkannten Geräten werden live zugeordnet.
@@ -142,7 +142,7 @@ Die Attribution funktioniert, wenn die Identifizierung der benutzerdefinierten V
 
 Verzögerte Daten (Daten mit einem Zeitstempel über 24 Stunden) werden nach bestem Bemühen verarbeitet, wobei die Zuordnung aktueller Daten für die höchste Qualität priorisiert wird.
 
-+++
++++ 
 
 ### Schritt 2: Wiederholungszuordnung
 
@@ -156,25 +156,25 @@ Die folgende Tabelle stellt dieselben Daten wie oben dar, zeigt jedoch unterschi
 
 | Ereignis | Zeitstempel | Persistente ID (Cookie-ID) | Vorübergehende ID (Anmelde-ID) | Zugeordnete ID (nach Live-Zuordnung) | Zusammengefügte ID (nach der Wiederholung) |
 |---|---|---|---|---|---|
-| 1 | 12.05.2023 12:01 | `246` | – | `246` | **`Bob`** |
-| 2 | 12.05.2023 12:02 | `246` | `Bob` ![Pfeil nach rechts](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg) | `Bob` | `Bob` ![Pfeil nach ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowUp_18_N.svg) |
-| 3 | 12.05.2023 12:03 | `246` | `Bob` ![Pfeil nach rechts](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg) | `Bob` ![Pfeil nach unten](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowDown_18_N.svg) | `Bob` |
-| 4 | 12.05.2023 12:04 | `246` | – | **`Bob`** | `Bob` |
-| 5 | 12.05.2023 12:05 | `246` | `Bob` ![Pfeil nach rechts](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg) | `Bob` ![Pfeil nach unten](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowDown_18_N.svg) | `Bob` |
-| 6 | 12.05.2023 12:06 | `246` | – | **`Bob`** | `Bob` |
-| 7 | 12.05.2023 12:07 | `246` | `Bob` ![Pfeil nach rechts](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg) | `Bob` | `Bob` |
-| 8 | 12.05.2023 12:03 | `3579` ![Pfeil nach rechts](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg) | – | **`3579`** | **`3579`** |
-| 9 | 12.05.2023 12:09 | `3579` ![Pfeil nach rechts](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg) | – | **`3579`** | **`3579`** |
-| 10 | 12.05.2023 12:02 | `81911` | – | `81911` | **`Bob`** |
-| 11 | 12.05.2023 12:05 | `81911` | `Bob` ![Pfeil nach rechts](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg) | `Bob` ![Pfeil nach unten](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowDown_18_N.svg) | `Bob` ![Pfeil nach ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowUp_18_N.svg) |
-| 12 | 12.05.2023 12:12 | `81911` | – | **`Bob`** | `Bob` |
+| 1 | 12.05.2023:01 | `246` | – | `246` | **`Bob`** |
+| 2 | 12.05.2023:02 | `246` | `Bob` ![Pfeil nach rechts](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg) | `Bob` | `Bob` ![Pfeil nach ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowUp_18_N.svg) |
+| 3 | 12.05.2023:03 | `246` | `Bob` ![Pfeil nach rechts](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg) | `Bob` ![Pfeil nach unten](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowDown_18_N.svg) | `Bob` |
+| 4 | 12.05.2023:04 | `246` | – | **`Bob`** | `Bob` |
+| 5 | 12.05.2023:05 | `246` | `Bob` ![Pfeil nach rechts](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg) | `Bob` ![Pfeil nach unten](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowDown_18_N.svg) | `Bob` |
+| 6 | 12.05.2023:06 | `246` | – | **`Bob`** | `Bob` |
+| 7 | 12.05.2023:07 | `246` | `Bob` ![Pfeil nach rechts](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg) | `Bob` | `Bob` |
+| 8 | 12.05.2023:03 | `3579` ![Pfeil nach rechts](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg) | – | **`3579`** | **`3579`** |
+| 9 | 12.05.2023:09 | `3579` ![Pfeil nach rechts](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg) | – | **`3579`** | **`3579`** |
+| 10 | 12.05.2023:02 | `81911` | – | `81911` | **`Bob`** |
+| 11 | 12.05.2023:05 | `81911` | `Bob` ![Pfeil nach rechts](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg) | `Bob` ![Pfeil nach unten](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowDown_18_N.svg) | `Bob` ![Pfeil nach ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowUp_18_N.svg) |
+| 12 | 12.05.2023:12 | `81911` | – | **`Bob`** | `Bob` |
 | | | **3-Geräte** | | **4 Personen**:<br/>`246`, `Bob`, `3579`, `81911` | **2 Personen**:<br/>`Bob`, `3579` |
 
 {style="table-layout:auto"}
 
 Die Attribution funktioniert, wenn die Identifizierung der benutzerdefinierten Variablen an ein Gerät gebunden ist. Im obigen Beispiel werden Ereignis 1 und 10 als Ergebnis der Wiederholung zugeordnet, sodass nur Ereignis 8 und 9 nicht zugeordnet sind. und die Metrik für Personen (kumulativ) auf 2 reduzieren.
 
-+++
++++ 
 
 ### Schritt 3: Datenschutzanfrage
 
@@ -188,21 +188,21 @@ Die folgende Tabelle stellt dieselben Daten wie oben dar, zeigt jedoch die Auswi
 
 | Ereignis | Zeitstempel | Persistente ID (Cookie-ID) | Vorübergehende ID (Anmelde-ID) | Zugeordnete ID (nach Live-Zuordnung) | Zusammengefügte ID (nach der Wiederholung) | Vorübergehende ID (Anmelde-ID) | Zusammengefügte ID (nach Datenschutzanfrage) |
 |---|---|---|---|---|---|---|---|
-| 1 | 12.05.2023 12:01 | `246` | – | `246` | **`Bob`** | – | `246` |
-| 2 | 12.05.2023 12:02 | `246` | Bob ![Pfeil rechts](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg) | `Bob` | `Bob` ![Pfeil nach ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowUp_18_N.svg) | <img src="https://spectrum.adobe.com/static/icons/workflow_18/Smock_RemoveCircle_18_N.svg"/> | `246` |
-| 3 | 12.05.2023 12:03 | `246` | Bob ![Pfeil rechts](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg) | `Bob` ![Pfeil nach unten](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowDown_18_N.svg) | `Bob` | <img src="https://spectrum.adobe.com/static/icons/workflow_18/Smock_RemoveCircle_18_N.svg"/> | `246` |
-| 4 | 12.05.2023 12:04 | `246` | – | **`Bob`** | `Bob` | – | `246` |
-| 5 | 12.05.2023 12:05 | `246` | Bob ![Pfeil rechts](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg) | `Bob` ![Pfeil nach unten](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowDown_18_N.svg) | `Bob` | <img src="https://spectrum.adobe.com/static/icons/workflow_18/Smock_RemoveCircle_18_N.svg"/> | `246` |
-| 6 | 12.05.2023 12:06 | `246` | – | **`Bob`** | `Bob` | – | `246` |
-| 7 | 12.05.2023 12:07 | `246` | `Bob` ![Pfeil nach rechts](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg) | `Bob` | `Bob` | <img src="https://spectrum.adobe.com/static/icons/workflow_18/Smock_RemoveCircle_18_N.svg"/> | `246` |
-| 8 | 12.05.2023 12:03 | `3579` ![Pfeil nach rechts](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg) | – | **`3579`** | **`3579`** | – | `3579` |
-| 9 | 12.05.2023 12:09 | `3579` ![Pfeil nach rechts](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg) | – | **`3579`** | **`3579`** | – | `3579` |
-| 10 | 12.05.2023 12:02 | `81911` | – | `81911` | **`Bob`** | – | `81911` |
-| 11 | 12.05.2023 12:05 | `81911` | `Bob` ![Pfeil nach rechts](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg) | `Bob` ![Pfeil nach unten](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowDown_18_N.svg) | `Bob` ![Pfeil nach ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowUp_18_N.svg) | <img src="https://spectrum.adobe.com/static/icons/workflow_18/Smock_RemoveCircle_18_N.svg"/> | `81911` |
-| 12 | 12.05.2023 12:12 | `81911` | – | **`Bob`** | `Bob` | – | `81911` |
+| 1 | 12.05.2023:01 | `246` | – | `246` | **`Bob`** | – | `246` |
+| 2 | 12.05.2023:02 | `246` | Bob ![Pfeil rechts](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg) | `Bob` | `Bob` ![Pfeil nach ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowUp_18_N.svg) | <img src="https://spectrum.adobe.com/static/icons/workflow_18/Smock_RemoveCircle_18_N.svg"/> | `246` |
+| 3 | 12.05.2023:03 | `246` | Bob ![Pfeil rechts](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg) | `Bob` ![Pfeil nach unten](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowDown_18_N.svg) | `Bob` | <img src="https://spectrum.adobe.com/static/icons/workflow_18/Smock_RemoveCircle_18_N.svg"/> | `246` |
+| 4 | 12.05.2023:04 | `246` | – | **`Bob`** | `Bob` | – | `246` |
+| 5 | 12.05.2023:05 | `246` | Bob ![Pfeil rechts](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg) | `Bob` ![Pfeil nach unten](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowDown_18_N.svg) | `Bob` | <img src="https://spectrum.adobe.com/static/icons/workflow_18/Smock_RemoveCircle_18_N.svg"/> | `246` |
+| 6 | 12.05.2023:06 | `246` | – | **`Bob`** | `Bob` | – | `246` |
+| 7 | 12.05.2023:07 | `246` | `Bob` ![Pfeil nach rechts](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg) | `Bob` | `Bob` | <img src="https://spectrum.adobe.com/static/icons/workflow_18/Smock_RemoveCircle_18_N.svg"/> | `246` |
+| 8 | 12.05.2023:03 | `3579` ![Pfeil nach rechts](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg) | – | **`3579`** | **`3579`** | – | `3579` |
+| 9 | 12.05.2023:09 | `3579` ![Pfeil nach rechts](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg) | – | **`3579`** | **`3579`** | – | `3579` |
+| 10 | 12.05.2023:02 | `81911` | – | `81911` | **`Bob`** | – | `81911` |
+| 11 | 12.05.2023:05 | `81911` | `Bob` ![Pfeil nach rechts](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg) | `Bob` ![Pfeil nach unten](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowDown_18_N.svg) | `Bob` ![Pfeil nach ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowUp_18_N.svg) | <img src="https://spectrum.adobe.com/static/icons/workflow_18/Smock_RemoveCircle_18_N.svg"/> | `81911` |
+| 12 | 12.05.2023:12 | `81911` | – | **`Bob`** | `Bob` | – | `81911` |
 | | | **3-Geräte** | | **4 Personen**:<br/>246, `Bob`, `3579`, `81911` | **2 Personen**:<br/>, `3579` |  | **3 Personen**:<br/>`246`, `3579`, `81911` |
 
-+++
++++ 
 
 ## Voraussetzungen
 
@@ -214,7 +214,7 @@ Die folgenden Voraussetzungen gelten speziell für feldbasiertes Stitching:
    - Eine **vorübergehende ID**, eine Kennung, die nur für einige Zeilen verfügbar ist. Beispiel: ein/e gehashte/r Benutzername oder E-Mail-Adresse, wenn sich ein Besucher authentifiziert. Sie können praktisch jede Kennung verwenden, die Ihnen gefällt. Beim Zusammenfügen wird berücksichtigt, dass dieses Feld die tatsächlichen Personen-ID-Informationen enthält. Um die besten Ergebnisse beim Zusammenfügen zu erzielen, sollte eine vorübergehende ID mindestens einmal innerhalb der Ereignisse des Datensatzes für jede persistente ID gesendet werden. Wenn Sie diesen Datensatz in eine Customer Journey Analytics-Verbindung einbeziehen möchten, ist es vorzuziehen, dass die anderen Datensätze auch eine ähnliche gemeinsame Kennung haben.
 
 <!--
-- Both columns (persistent ID and transient ID) must be defined as an identity field with an identity namespace in the schema for the dataset you want to stitch. When using identity stitching in Real-time Customer Data Platform, using the [`identityMap` field group](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/schema/composition#identity), you still need to add identity fields with an identity namespace. This identification of identity fields is required as Customer Journey Analytics stitching does not support the `identityMap` field group. When adding an identity field in the schema, while also using the `identityMap` field group, do not set the additional identity field as a primary identity. Setting an additional identity field as primary identity interferes with the `identityMap` field group used for Real-time Customer Data Platform.
+- Both columns (persistent ID and transient ID) must be defined as an identity field with an identity namespace in the schema for the dataset you want to stitch. When using identity stitching in Real-time Customer Data Platform, using the [`identityMap` field group](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition#identity), you still need to add identity fields with an identity namespace. This identification of identity fields is required as Customer Journey Analytics stitching does not support the `identityMap` field group. When adding an identity field in the schema, while also using the `identityMap` field group, do not set the additional identity field as a primary identity. Setting an additional identity field as primary identity interferes with the `identityMap` field group used for Real-time Customer Data Platform.
 
 -->
 
