@@ -5,9 +5,9 @@ exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: 4e40030cd6630ee83712d3379298a965a0fe53e4
+source-git-commit: baf9248842a4f660dea77f7f5a3d39188cb21348
 workflow-type: tm+mt
-source-wordcount: '7331'
+source-wordcount: '7353'
 ht-degree: 67%
 
 ---
@@ -17,12 +17,12 @@ ht-degree: 67%
 >[!CONTEXTUALHELP]
 >id="cja_connections_recordsadded"
 >title="Hinzugefügte Einträge"
->abstract="Die Anzahl der Datensätze (Zeilen), die einer Verbindung im für die entsprechenden Datensätze ausgewählten Zeitintervall hinzugefügt wurden."
+>abstract="Die Anzahl der Einträge (Zeilen), die einer Verbindung im für die entsprechenden Datensätze ausgewählten Zeitintervall hinzugefügt wurden."
 
 >[!CONTEXTUALHELP]
 >id="cja_connections_recordsskipped"
 >title="Übersprungene Einträge"
->abstract="Die Anzahl der Datensätze (Zeilen), die bei der Datenübertragung für eine Verbindung im für die entsprechenden Datensätze ausgewählten Zeitintervall übersprungen werden."
+>abstract="Die Anzahl der Einträge (Zeilen), die bei der Datenübertragung für eine Verbindung im für die entsprechenden Datensätze ausgewählten Zeitintervall übersprungen werden."
 
 >[!CONTEXTUALHELP]
 >id="cja_connections_recordsdeleted"
@@ -47,17 +47,17 @@ ht-degree: 67%
 >[!CONTEXTUALHELP]
 >id="connections_recordsadded"
 >title="Hinzugefügte Einträge"
->abstract="Die Anzahl der Datensätze (Zeilen), die einer Verbindung im für die entsprechenden Datensätze ausgewählten Zeitintervall hinzugefügt wurden."
+>abstract="Die Anzahl der Einträge (Zeilen), die einer Verbindung im für die entsprechenden Datensätze ausgewählten Zeitintervall hinzugefügt wurden."
 
 >[!CONTEXTUALHELP]
 >id="connections_recordsskipped"
 >title="Übersprungene Einträge"
->abstract="Die Anzahl der Datensätze (Zeilen), die bei der Datenübertragung für eine Verbindung im für die entsprechenden Datensätze ausgewählten Zeitintervall übersprungen werden."
+>abstract="Die Anzahl der Einträge (Zeilen), die bei der Datenübertragung für eine Verbindung im für die entsprechenden Datensätze ausgewählten Zeitintervall übersprungen werden."
 
 >[!CONTEXTUALHELP]
 >id="connections_recordsdeleted"
 >title="Gelöschte Einträge"
->abstract="Die Anzahl der Datensätze (Zeilen), die im ausgewählten Zeitintervall für die ausgewählten Datensätze aus einer Verbindung entfernt wurden."
+>abstract="Die Anzahl der Einträge (Zeilen), die im ausgewählten Zeitintervall für die ausgewählten Datensätze aus einer Verbindung entfernt wurden."
 
 >[!CONTEXTUALHELP]
 >id="connection_lastadded"
@@ -111,7 +111,7 @@ Beim Workflow für die Erstellung und Bearbeitung von Verbindungen können alle 
 
 >[!BEGINSHADEBOX]
 
-Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Erstellen und Bearbeiten einer Verbindung](https://video.tv.adobe.com/v/3409825/?quality=12&learn=on&captions=ger){target="_blank"} finden Sie ein Demovideo.
+Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Erstellen und Bearbeiten einer Verbindung](https://video.tv.adobe.com/v/343044/?quality=12&learn=on){target="_blank"} finden Sie ein Demovideo.
 
 >[!ENDSHADEBOX]
 
@@ -122,7 +122,7 @@ Die maximale Anzahl der Datensätze, die einer Verbindung hinzugefügt werden k�
 
 Wenden Sie sich an Ihre Admins, wenn Sie sich nicht sicher sind, welches Customer Journey Analytics-Paket Sie besitzen.
 
-| **&#x200B;**-Paket auswählen | **Stiftungs-**-Paket |
+| ****-Paket auswählen | **Stiftungs-**-Paket |
 | --- | --- |
 | Jede Kombination von Ereignis-, Profil-, Lookup- oder Zusammenfassungsdatensätzen, die bis zu 100 ergibt | Ein Ereignisdatensatz pro Verbindung |
 |  | Bis zu 99 Profil-, Lookup- oder Zusammenfassungsdatensätze pro Verbindung |
@@ -170,7 +170,7 @@ Im Bildschirm **[!UICONTROL Verbindungen]** > **[!UICONTROL *Name der Verbindung
    | **[!UICONTROL Datensatzname]** | Wählen Sie einen oder mehrere Datensätze für die Customer Journey Analytics-Übertragung und dann die Option **[!UICONTROL Hinzufügen]** aus.<p>(Wenn Sie viele Datensätze zur Auswahl haben, können Sie mithilfe der Suchleiste „Datensätze suchen“ über der Liste der Datensätze nach den richtigen suchen.) |
    | ![Mehr](/help/assets/icons/More.svg) | Wählen Sie ![Mehr](/help/assets/icons/More.svg) aus, um ein Kontextmenü für den ausgewählten Datensatz zu öffnen. Je nach (Typ des) Datensatzes können Sie Folgendes auswählen:<ul><li>![CrossSize75](/help/assets/icons/CrossSize400.svg)  **[!UICONTROL Datensatz löschen]**, um [einen Datensatz zu löschen](#delete-a-dataset).</li><li>![Bearbeiten](/help/assets/icons/Edit.svg) **[!UICONTROL Datensatz bearbeiten]**, um [einen Datensatz zu bearbeiten](#edit-a-dataset).</li><li>![Verlauf](/help/assets/icons/History.svg) **[!UICONTROL Frühere Aufstockungen]** zum Anzeigen [früherer Aufstockungen für den Datensatz](#past-backfills). |
    | **[!UICONTROL Zuletzt aktualisiert]** | Nur für Ereignis-Datensätze wird diese Einstellung automatisch auf das Standard-Zeitstempelfeld von Ereignis-basierten Schemas in Experience Platform gesetzt. „K. A.“ bedeutet, dass dieser Datensatz keine Daten enthält. |
-   | **[!UICONTROL Anzahl der Datensätze]** | Die Gesamtzahl der Einträge im Vormonat für den Datensatz in Experience Platform. |
+   | **[!UICONTROL Anzahl der Einträge]** | Die Gesamtzahl der Einträge im Vormonat für den Datensatz in Experience Platform. |
    | **[!UICONTROL Schema]** | Das [Schema](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/schema/composition), auf dessen Grundlage der Datensatz in Adobe Experience Platform erstellt wurde. |
    | **[!UICONTROL Typ des Datensatzes]** | Customer Journey Analytics legt für jeden Datensatz, den Sie dieser Verbindung hinzugefügt haben, automatisch den [Datensatztyp](#dataset-types) anhand der eingehenden Daten fest. Es gibt 3 verschiedene Datensatztypen: Ereignis-, Profil- und Such-Daten. Eine Erläuterung der Datensatztypen finden Sie in der unten stehenden Tabelle. |
    | **[!UICONTROL Granularität]** | Die Granularität der Daten im Datensatz; gilt nur für Zusammenfassungsdatensätze. |
@@ -179,7 +179,7 @@ Im Bildschirm **[!UICONTROL Verbindungen]** > **[!UICONTROL *Name der Verbindung
    | **[!UICONTROL Schlüssel]** | Der Schlüssel, der für einen Such-Datensatz verwendet wird. |
    | **[!UICONTROL Übereinstimmender Schlüssel]** | Der übereinstimmende Schlüssel, der für einen Such-Datensatz verwendet wird. |
    | **[!UICONTROL Importieren neuer Daten]** | Der Status des Imports neuer Daten für den Datensatz: <p>![Status green](assets/status-green.svg)   **[!UICONTROL _x _Ein]**, wenn der Datensatz für den Import neuer Daten konfiguriert ist,<p>![Status gray](assets/status-gray.svg)   **[!UICONTROL _x Aus_]**, wenn der Datensatz so konfiguriert ist, dass keine neuen Daten importiert werden. |
-   | **[!UICONTROL Aufstockungsdaten]** | Der Status der Aufstockungsdaten für den Datensatz.<p>![Status red](assets/status-red.svg)   **[!UICONTROL _x _Aufstockungen fehlgeschlagen]**&#x200B;für die Anzahl der fehlgeschlagenen Aufstockungen,<p>![Status orange](assets/status-orange.svg)   **[!UICONTROL _x _Aufstockungen werden verarbeitet]**&#x200B;für die Anzahl der verarbeiteten Aufstockungen,<p>![Status green](assets/status-green.svg)   **[!UICONTROL _x _Aufstockungen abgeschlossen]**&#x200B;für die Anzahl der abgeschlossenen Aufstockungen,<p>![Status gray](assets/status-gray.svg)   **[!UICONTROL _Aus_]**, falls keine Aufstockungen konfiguriert sind. |
+   | **[!UICONTROL Aufstockungsdaten]** | Der Status der Aufstockungsdaten für den Datensatz.<p>![Status red](assets/status-red.svg)   **[!UICONTROL _x _Aufstockungen fehlgeschlagen]**für die Anzahl der fehlgeschlagenen Aufstockungen,<p>![Status orange](assets/status-orange.svg)   **[!UICONTROL _x _Aufstockungen werden verarbeitet]**für die Anzahl der verarbeiteten Aufstockungen,<p>![Status green](assets/status-green.svg)   **[!UICONTROL _x _Aufstockungen abgeschlossen]**für die Anzahl der abgeschlossenen Aufstockungen,<p>![Status gray](assets/status-gray.svg)   **[!UICONTROL _Aus_]**, falls keine Aufstockungen konfiguriert sind. |
 
    Sie können über das Suchfeld ![Suche](/help/assets/icons/Search.svg) nach einem bestimmten Datensatz suchen.
 
@@ -212,7 +212,7 @@ Im Bildschirm **[!UICONTROL Verbindungen]** > **[!UICONTROL *Name der Verbindung
    | **[!UICONTROL Datensatzname]** | Wählen Sie einen oder mehrere Datensätze für die Customer Journey Analytics-Übertragung und dann die Option **[!UICONTROL Hinzufügen]** aus.<p>(Wenn Sie viele Datensätze zur Auswahl haben, können Sie mithilfe der Suchleiste „Datensätze suchen“ über der Liste der Datensätze nach den richtigen suchen.) |
    | ![Mehr](/help/assets/icons/More.svg) | Wählen Sie ![Mehr](/help/assets/icons/More.svg) aus, um ein Kontextmenü für den ausgewählten Datensatz zu öffnen. Je nach (Typ des) Datensatzes können Sie Folgendes auswählen:<ul><li>![CrossSize75](/help/assets/icons/CrossSize400.svg)  **[!UICONTROL Datensatz löschen]**, um [einen Datensatz zu löschen](#delete-a-dataset).</li><li>![Bearbeiten](/help/assets/icons/Edit.svg) **[!UICONTROL Datensatz bearbeiten]**, um [einen Datensatz zu bearbeiten](#edit-a-dataset).</li><li>![Verlauf](/help/assets/icons/History.svg) **[!UICONTROL Frühere Aufstockungen]** zum Anzeigen [früherer Aufstockungen für den Datensatz](#past-backfills). |
    | **[!UICONTROL Zuletzt aktualisiert]** | Nur für Ereignis-Datensätze wird diese Einstellung automatisch auf das Standard-Zeitstempelfeld von Ereignis-basierten Schemas in Experience Platform gesetzt. „K. A.“ bedeutet, dass dieser Datensatz keine Daten enthält. |
-   | **[!UICONTROL Anzahl der Datensätze]** | Die Gesamtzahl der Einträge im Vormonat für den Datensatz in Experience Platform. |
+   | **[!UICONTROL Anzahl der Einträge]** | Die Gesamtzahl der Einträge im Vormonat für den Datensatz in Experience Platform. |
    | **[!UICONTROL Schema]** | Das [Schema](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/schema/composition), auf dessen Grundlage der Datensatz in Adobe Experience Platform erstellt wurde. |
    | **[!UICONTROL Typ des Datensatzes]** | Customer Journey Analytics legt für jeden Datensatz, den Sie dieser Verbindung hinzugefügt haben, automatisch den [Datensatztyp](#dataset-types) anhand der eingehenden Daten fest. Es gibt 3 verschiedene Datensatztypen: Ereignis-, Profil- und Such-Daten. Eine Erläuterung der Datensatztypen finden Sie in der unten stehenden Tabelle. |
    | **[!UICONTROL Granularität]** | Die Granularität der Daten im Datensatz; gilt nur für Zusammenfassungsdatensätze. |
@@ -225,7 +225,7 @@ Im Bildschirm **[!UICONTROL Verbindungen]** > **[!UICONTROL *Name der Verbindung
    | **[!UICONTROL Schlüssel]** | Der Schlüssel, der für einen Such-Datensatz verwendet wird. |
    | **[!UICONTROL Übereinstimmender Schlüssel]** | Der übereinstimmende Schlüssel, der für einen Such-Datensatz verwendet wird. |
    | **[!UICONTROL Importieren neuer Daten]** | Der Status des Imports neuer Daten für den Datensatz: <p>![Status green](assets/status-green.svg)   **[!UICONTROL _x _Ein]**, wenn der Datensatz für den Import neuer Daten konfiguriert ist,<p>![Status gray](assets/status-gray.svg)   **[!UICONTROL _x Aus_]**, wenn der Datensatz so konfiguriert ist, dass keine neuen Daten importiert werden. |
-   | **[!UICONTROL Aufstockungsdaten]** | Der Status der Aufstockungsdaten für den Datensatz.<p>![Status red](assets/status-red.svg)   **[!UICONTROL _x _Aufstockungen fehlgeschlagen]**&#x200B;für die Anzahl der fehlgeschlagenen Aufstockungen,<p>![Status orange](assets/status-orange.svg)   **[!UICONTROL _x _Aufstockungen werden verarbeitet]**&#x200B;für die Anzahl der verarbeiteten Aufstockungen,<p>![Status green](assets/status-green.svg)   **[!UICONTROL _x _Aufstockungen abgeschlossen]**&#x200B;für die Anzahl der abgeschlossenen Aufstockungen,<p>![Status gray](assets/status-gray.svg)   **[!UICONTROL _Aus_]**, falls keine Aufstockungen konfiguriert sind. |
+   | **[!UICONTROL Aufstockungsdaten]** | Der Status der Aufstockungsdaten für den Datensatz.<p>![Status red](assets/status-red.svg)   **[!UICONTROL _x _Aufstockungen fehlgeschlagen]**für die Anzahl der fehlgeschlagenen Aufstockungen,<p>![Status orange](assets/status-orange.svg)   **[!UICONTROL _x _Aufstockungen werden verarbeitet]**für die Anzahl der verarbeiteten Aufstockungen,<p>![Status green](assets/status-green.svg)   **[!UICONTROL _x _Aufstockungen abgeschlossen]**für die Anzahl der abgeschlossenen Aufstockungen,<p>![Status gray](assets/status-gray.svg)   **[!UICONTROL _Aus_]**, falls keine Aufstockungen konfiguriert sind. |
 
    Sie können über das Suchfeld ![Suche](/help/assets/icons/Search.svg) nach einem bestimmten Datensatz suchen.
 
@@ -242,7 +242,7 @@ Sie [einen oder mehrere Datensätze hinzufügen](#add-datasets) oder [vorhandene
 >[!CONTEXTUALHELP]
 >id="cja_connection_optionalcontainers"
 >title="Optionale Container"
->abstract="Wählen Sie weitere Container aus.<br/><br/>**[!UICONTROL Globales Konto &#x200B;]**: ermöglicht die Konfiguration globaler Konten in einer Verbindung.<br/>**[!UICONTROL Opportunity]**: ermöglicht die Konfiguration von Opportunities in einer Verbindung.<br/>**[!UICONTROL Käufergruppe &#x200B;]**: ermöglicht die Konfiguration von Käufergruppen in einer Verbindung."
+>abstract="Wählen Sie weitere Container aus.<br/><br/>**[!UICONTROL Globales Konto ]**: ermöglicht die Konfiguration globaler Konten in einer Verbindung.<br/>**[!UICONTROL Opportunity]**: ermöglicht die Konfiguration von Opportunities in einer Verbindung.<br/>**[!UICONTROL Käufergruppe ]**: ermöglicht die Konfiguration von Käufergruppen in einer Verbindung."
 
 >[!CONTEXTUALHELP]
 >id="cja_connection_accountid"
@@ -277,7 +277,7 @@ Sie [einen oder mehrere Datensätze hinzufügen](#add-datasets) oder [vorhandene
 >[!CONTEXTUALHELP]
 >id="cja_connection_matchingkey"
 >title="Passender Schlüsseltyp"
->abstract="Legen Sie fest, wie der Join erfolgen soll: basierend auf einer Übereinstimmung nach Feld oder einer Übereinstimmung nach Container.<br/><br/>**[!UICONTROL Übereinstimmung nach Feld &#x200B;]**: Wählen Sie ein Feld aus, nach dem in einem der Ereignisdatensätze verknüpft werden soll. Wenn diese Liste leer ist, haben Sie wahrscheinlich keinen Ereignisdatensatz hinzugefügt oder konfiguriert.<br/>**[!UICONTROL Übereinstimmung nach Container]**: Wählen Sie einen Container aus, der für die Verknüpfung mit einem der Ereignis-Datensätze verwendet werden soll. "
+>abstract="Legen Sie fest, wie der Join erfolgen soll: basierend auf einer Übereinstimmung nach Feld oder einer Übereinstimmung nach Container.<br/><br/>**[!UICONTROL Übereinstimmung nach Feld ]**: Wählen Sie ein Feld aus, nach dem in einem der Ereignisdatensätze verknüpft werden soll. Wenn diese Liste leer ist, haben Sie wahrscheinlich keinen Ereignisdatensatz hinzugefügt oder konfiguriert.<br/>**[!UICONTROL Übereinstimmung nach Container]**: Wählen Sie einen Container aus, der für die Verknüpfung mit einem der Ereignis-Datensätze verwendet werden soll. "
 
 >[!CONTEXTUALHELP]
 >id="cja_connection_importnewdata"
@@ -307,7 +307,7 @@ Sie [einen oder mehrere Datensätze hinzufügen](#add-datasets) oder [vorhandene
 >[!CONTEXTUALHELP]
 >id="connection_optionalcontainers"
 >title="Optionale Container"
->abstract="Wählen Sie weitere Container aus.<br/><br/>**[!UICONTROL Globales Konto &#x200B;]**: ermöglicht die Konfiguration globaler Konten in einer Verbindung.<br/>**[!UICONTROL Opportunity]**: ermöglicht die Konfiguration von Opportunities in einer Verbindung.<br/>**[!UICONTROL Käufergruppe &#x200B;]**: ermöglicht die Konfiguration von Käufergruppen in einer Verbindung."
+>abstract="Wählen Sie weitere Container aus.<br/><br/>**[!UICONTROL Globales Konto ]**: ermöglicht die Konfiguration globaler Konten in einer Verbindung.<br/>**[!UICONTROL Opportunity]**: ermöglicht die Konfiguration von Opportunities in einer Verbindung.<br/>**[!UICONTROL Käufergruppe ]**: ermöglicht die Konfiguration von Käufergruppen in einer Verbindung."
 
 >[!CONTEXTUALHELP]
 >id="connection_personid"
@@ -342,12 +342,12 @@ Sie [einen oder mehrere Datensätze hinzufügen](#add-datasets) oder [vorhandene
 >[!CONTEXTUALHELP]
 >id="connection_matchingkey"
 >title="Passender Schlüsseltyp"
->abstract="Legen Sie fest, wie der Join erfolgen soll: basierend auf einer Übereinstimmung nach Feld oder einer Übereinstimmung nach Container.<br/><br/>**[!UICONTROL Übereinstimmung nach Feld &#x200B;]**: Wählen Sie ein Feld aus, nach dem in einem der Ereignisdatensätze verknüpft werden soll. Wenn diese Liste leer ist, haben Sie wahrscheinlich keinen Ereignisdatensatz hinzugefügt oder konfiguriert.<br/>**[!UICONTROL Übereinstimmung nach Container]**: Wählen Sie einen Container aus, der für die Verknüpfung mit einem der Ereignis-Datensätze verwendet werden soll. "
+>abstract="Legen Sie fest, wie der Join erfolgen soll: basierend auf einer Übereinstimmung nach Feld oder einer Übereinstimmung nach Container.<br/><br/>**[!UICONTROL Übereinstimmung nach Feld ]**: Wählen Sie ein Feld aus, nach dem in einem der Ereignisdatensätze verknüpft werden soll. Wenn diese Liste leer ist, haben Sie wahrscheinlich keinen Ereignisdatensatz hinzugefügt oder konfiguriert.<br/>**[!UICONTROL Übereinstimmung nach Container]**: Wählen Sie einen Container aus, der für die Verknüpfung mit einem der Ereignis-Datensätze verwendet werden soll. "
 
 >[!CONTEXTUALHELP]
 >id="connection_matchingkeytype"
 >title="Passender Schlüsseltyp"
->abstract="Legen Sie fest, wie der Join erfolgen soll: basierend auf einer Übereinstimmung nach Feld oder einer Übereinstimmung nach Container.<br/><br/>**[!UICONTROL Übereinstimmung nach Feld &#x200B;]**: Wählen Sie ein Feld aus, nach dem in einem der Ereignisdatensätze verknüpft werden soll. Wenn diese Liste leer ist, haben Sie wahrscheinlich keinen Ereignisdatensatz hinzugefügt oder konfiguriert.<br/>**[!UICONTROL Übereinstimmung nach Container]**: Wählen Sie einen Container aus, der für die Verknüpfung mit einem der Ereignis-Datensätze verwendet werden soll. "
+>abstract="Legen Sie fest, wie der Join erfolgen soll: basierend auf einer Übereinstimmung nach Feld oder einer Übereinstimmung nach Container.<br/><br/>**[!UICONTROL Übereinstimmung nach Feld ]**: Wählen Sie ein Feld aus, nach dem in einem der Ereignisdatensätze verknüpft werden soll. Wenn diese Liste leer ist, haben Sie wahrscheinlich keinen Ereignisdatensatz hinzugefügt oder konfiguriert.<br/>**[!UICONTROL Übereinstimmung nach Container]**: Wählen Sie einen Container aus, der für die Verknüpfung mit einem der Ereignis-Datensätze verwendet werden soll. "
 
 >[!CONTEXTUALHELP]
 >id="connection_importnewdata"
@@ -405,6 +405,11 @@ Sie [einen oder mehrere Datensätze hinzufügen](#add-datasets) oder [vorhandene
 >abstract="Wählen Sie den Namespace aus, der zur Aktualisierung der Kennung im Identitätsdiagramm verwendet werden soll."
 >additional-url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/stitching/overview" text="Überblick über die Zuordnung"
 
+>[!CONTEXTUALHELP]
+>id="connection_changeto_identitygraph"
+>title="Änderung am Identitätsdiagramm"
+>abstract="Stellen Sie sicher, dass Sie die Einrichtung des Identitätsdiagramms abgeschlossen haben, bevor Sie das Identitätsdiagramm zum Zusammenfügen verwenden."
+
 
 ### Hinzufügen von Datensätzen
 
@@ -423,7 +428,7 @@ Sie können beim Erstellen oder Bearbeiten einer Verbindung einen oder mehrere E
    |---|---|
    | **[!UICONTROL Datensatz]** | Der Name des Datensatzes. Wählen Sie den Namen aus, um zum Datensatz in Experience Platform weitergeleitet zu werden. Wählen Sie ![Informationen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg) aus, um ein Popup-Fenster mit weiteren Details zum Datensatz anzuzeigen. Sie können **[!UICONTROL In Platform bearbeiten]** auswählen, um den Datensatz direkt in Experience Platform zu bearbeiten. |
    | **[!UICONTROL Typ des Datensatzes]** | Der Typ des Datensatzes: „Ereignis“, „Profil“, „Suche“ oder „Lookup“. |
-   | **[!UICONTROL Anzahl der Datensätze]** | Die Gesamtzahl der Einträge im Vormonat für den Datensatz in Experience Platform. |
+   | **[!UICONTROL Anzahl der Einträge]** | Die Gesamtzahl der Einträge im Vormonat für den Datensatz in Experience Platform. |
    | **[!UICONTROL Schema]** | Das Schema für den Datensatz. Wählen Sie den Namen aus, um zum Schema in Experience Platform weitergeleitet zu werden. |
    | **[!UICONTROL Letzter Batch]** | Der Status des letzten Batches, der in Experience Platform aufgenommen wurde. Weitere Informationen finden Sie unter [Batch-Status](https://experienceleague.adobe.com/de/docs/experience-platform/ingestion/batch/troubleshooting#batch-states). |
    | **[!UICONTROL Datensatz-ID]** | Die ID des Datensatzes. |
@@ -438,7 +443,7 @@ Sie können beim Erstellen oder Bearbeiten einer Verbindung einen oder mehrere E
 
 1. Wählen Sie einen oder mehrere Datensätze und anschließend **[!UICONTROL Weiter]** aus. Mindestens ein Ereignis- oder Zusammenfassungsdatensatz muss Teil der Verbindung sein.
 
-1. Konfigurieren Sie [Einstellungen für jeden der ausgewählten Datensätze](#dataset-settings) einzeln im Schritt ➋&#x200B;**[!UICONTROL Datensatzeinstellungen]** des Dialogfelds **[!UICONTROL Datensätze hinzufügen]**.
+1. Konfigurieren Sie [Einstellungen für jeden der ausgewählten Datensätze](#dataset-settings) einzeln im Schritt ➋**[!UICONTROL Datensatzeinstellungen]** des Dialogfelds **[!UICONTROL Datensätze hinzufügen]**.
 
    ![Hinzufügen von Datensätzen](assets/add-dataset.png)
 
@@ -615,7 +620,7 @@ Wenn Sie einen Datensatz löschen, werden Sie über die Auswirkungen des Lösche
 
 ### Frühere Aufstockungen
 
-Wenn Sie in der Benutzeroberfläche ![Verlauf](/help/assets/icons/History.svg) **[!UICONTROL Frühere Aufstockungen]** auswählen, zeigt ein Dialogfeld **[!UICONTROL Frühere Aufstockungen: _Name des Datensatzes_]**&#x200B;die neuesten Aufstockungen aus dem Datensatz an.
+Wenn Sie in der Benutzeroberfläche ![Verlauf](/help/assets/icons/History.svg) **[!UICONTROL Frühere Aufstockungen]** auswählen, zeigt ein Dialogfeld **[!UICONTROL Frühere Aufstockungen: _Name des Datensatzes_]**die neuesten Aufstockungen aus dem Datensatz an.
 
 ## Datensatztypen {#dataset-types}
 
@@ -629,7 +634,7 @@ Es gibt verschiedene Datensatztypen: [!UICONTROL Ereignis]-, [!UICONTROL Profil]
 
 | Typ des Datensatzes | Beschreibung | Zeitstempel | Schema | Personen-ID <br/> Konto-ID [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} |
 |---|---|---|---|---|
-| **[!UICONTROL Ereignis]** | Daten, die Ereignisse im Laufe der Zeit darstellen. Beispiele hierfür sind Web-Besuche, Interaktionen, Transaktionen, PoS-Daten, Umfragedaten, Ad-Impression-Daten usw. Diese Daten können etwa typische Clickstream-Daten mit einer Kunden- oder Cookie-ID und einem Zeitstempel sein. Bei Ereignisdaten können Sie entscheiden, welche ID als Personen-ID verwendet wird. | Festgelegt auf das standardmäßige Zeitstempelfeld von ereignisbasierten Schemata in [!UICONTROL Experience Platform]. | Jedes integrierte oder benutzerdefinierte Schema, das auf einer XDM-Klasse mit dem Verhalten *Zeitreihe* basiert. Beispiele sind *XDM Experience Event* oder *XDM Decision Event*. | Sie können auswählen, welche Personen-ID oder Konto-ID [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} Sie einbeziehen möchten. Für jedes in Experience Platform definierte Datensatzschema kann ein eigener Satz von einer oder mehreren Identitäten definiert und mit einem Identity-Namespace verknüpft werden. Jede dieser Identitäten kann als Personen-ID oder Konto-ID [!BADGE B2B edition verwendet &#x200B;]{type=Informative url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}. Beispiele sind Cookie-ID, zugeordnete ID, Benutzer-ID, Trackingcode, Konto-ID [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} usw. |
+| **[!UICONTROL Ereignis]** | Daten, die Ereignisse im Laufe der Zeit darstellen. Beispiele hierfür sind Web-Besuche, Interaktionen, Transaktionen, PoS-Daten, Umfragedaten, Ad-Impression-Daten usw. Diese Daten können etwa typische Clickstream-Daten mit einer Kunden- oder Cookie-ID und einem Zeitstempel sein. Bei Ereignisdaten können Sie entscheiden, welche ID als Personen-ID verwendet wird. | Festgelegt auf das standardmäßige Zeitstempelfeld von ereignisbasierten Schemata in [!UICONTROL Experience Platform]. | Jedes integrierte oder benutzerdefinierte Schema, das auf einer XDM-Klasse mit dem Verhalten *Zeitreihe* basiert. Beispiele sind *XDM Experience Event* oder *XDM Decision Event*. | Sie können auswählen, welche Personen-ID oder Konto-ID [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} Sie einbeziehen möchten. Für jedes in Experience Platform definierte Datensatzschema kann ein eigener Satz von einer oder mehreren Identitäten definiert und mit einem Identity-Namespace verknüpft werden. Jede dieser Identitäten kann als Personen-ID oder Konto-ID [!BADGE B2B edition verwendet ]{type=Informative url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}. Beispiele sind Cookie-ID, zugeordnete ID, Benutzer-ID, Trackingcode, Konto-ID [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} usw. |
 | **[!UICONTROL Suche]** | Sie können Datensätze als Suchvorgänge von Feldern in allen Datensatztypen hinzufügen: Profil-, Lookup- und Ereignisdatensätze. (Letztere wurden immer unterstützt.) Diese zusätzliche Funktion erweitert die Fähigkeit von Customer Journey Analytics, komplexe Datenmodelle, einschließlich B2B, zu unterstützen. Diese Daten werden verwendet, um nach Werten oder Schlüsseln in Ihren Ereignis-, Profil- oder Suchdaten zu suchen. Sie können bis zu zwei Ebenen von Suchvorgängen hinzufügen. (Beachten Sie Folgendes: [Abgeleitete Felder](/help/data-views/derived-fields/derived-fields.md) können nicht als übereinstimmende Schlüssel für die Suche in Verbindungen verwendet werden.) Beispielsweise können Sie Suchdaten hochladen, die numerische IDs in Ihren Ereignisdaten Produktnamen zuordnen. Sehen Sie sich hierfür das [B2B-Beispiel](/help/use-cases/b2b/example.md) an. | k. A. | Jedes integrierte oder benutzerdefinierte Schema, das auf einer XDM-Klasse mit dem Verhalten *Record* basiert, mit Ausnahme der Klasse *XDM Individual Profile*. | -/- |
 | **[!UICONTROL Profil]** | Daten, die auf Ihr Konto, Personen, Benutzende oder Kundinnen bzw. Kunden in den [!UICONTROL Ereignisdaten] angewendet werden. Sie können beispielsweise CRM-Daten zu Ihren Kunden hochladen. | -/- | Jedes integrierte oder benutzerdefinierte Schema, das auf der Klasse *XDM Individual Profile* basiert. | Sie können auswählen, welche Personen-ID/Konto-ID [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} Sie einbeziehen möchten. Jeder Datensatz (ausgenommen Zusammenfassungsdatensätze), der in [!DNL Experience Platform] definiert ist, verfügt über einen eigenen Satz von einer oder mehreren definierten Personen-IDs oder Konto-IDs [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}. Beispielsweise Cookie-ID, zugeordnete ID, Benutzer-ID, Trackingcode, Konto-ID usw.<br>![Personen-ID ](assets/person-id.png)**Hinweis**: Wenn Sie eine Verbindung erstellen, die Datensätze mit unterschiedlichen IDs enthält, spiegelt sich dies im Reporting wider. Zum Zusammenführen von Datensätzen müssen Sie dieselbe Personen-ID oder Konto-ID [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} verwenden. |
 | **Zusammenfassung** | Zeitreihendaten, die keiner einzelnen Personen-ID zugeordnet sind. Zusammenfassungsdaten stellen aggregierte Daten auf einer anderen Aggregationsebene dar, z. B. Kampagnen. Sie können diese Daten im Customer Journey Analytics verwenden, um verschiedene Anwendungsfälle zu unterstützen. Weitere Informationen finden Sie [Zusammenfassungsdaten](/help/data-views/summary-data.md). | Automatisches Festlegen auf das standardmäßige Zeitstempelfeld aus ereignisbasierten Zusammenfassungsmetrikschemata in Experience Platform. Es wird nur die Granularität „Stündlich“ oder „Täglich“ unterstützt. | Jedes integrierte oder benutzerdefinierte Schema, das auf der Klasse *XDM Summary Metrics* basiert. | k. A. |
