@@ -5,18 +5,14 @@ role: User, Admin
 solution: Customer Journey Analytics
 feature: AI Tools
 exl-id: 262d5f15-16cb-4851-a769-7dbd205b2f81
-source-git-commit: 82b36895fe5186f0133c128d434470ea7f875677
+source-git-commit: c8d9eddd1ce11975dec16f715a5f5888cd4d6ffa
 workflow-type: tm+mt
-source-wordcount: '2371'
+source-wordcount: '2316'
 ht-degree: 98%
 
 ---
 
 # Visualisieren von Daten mit dem Data Insights Agent
-
->[!AVAILABILITY]
->
->Die in diesem Artikel beschriebene Funktion steht allen berechtigten Kundinnen und Kunden im Rahmen einer stufenweisen Veröffentlichung ab dem 28. Mai 2025 zur Verfügung und ist möglicherweise noch nicht in Ihrer Umgebung verfügbar. Diese Anmerkung wird entfernt, wenn die Funktion allgemein verfügbar ist. Informationen zum Customer Journey Analytics-Veröffentlichungsprozess finden Sie unter [Veröffentlichungen von Funktionen für Customer Journey Analytics](/help/release-notes/releases.md).
 
 >[!AVAILABILITY]
 >
@@ -246,7 +242,7 @@ Im Folgenden finden Sie Best Practices für Ihre Customer Journey Analytics-Konf
 >[!MORELIKETHIS]
 >
 >[Einstellungen der Komponente](/help/data-views/component-settings/overview.md)
->&#x200B;>[Datenwörterbuch](/help/components/data-dictionary/data-dictionary-overview.md)
->&#x200B;>[Berechnete Metrik genehmigen](/help/components/calc-metrics/cm-workflow/cm-approving.md)
->&#x200B;>[Segmente freigeben](/help/components/segments/seg-share.md)
+>>[Datenwörterbuch](/help/components/data-dictionary/data-dictionary-overview.md)
+>>[Berechnete Metrik genehmigen](/help/components/calc-metrics/cm-workflow/cm-approving.md)
+>>[Segmente freigeben](/help/components/segments/seg-share.md)
 >
