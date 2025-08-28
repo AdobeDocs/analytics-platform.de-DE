@@ -4,10 +4,10 @@ description: Listet Inhaltsaktualisierungen für Dokumentation zu Customer Journ
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 830e8312b4be2ffac907baca282ce71029e6ecc5
-workflow-type: ht
-source-wordcount: '5351'
-ht-degree: 100%
+source-git-commit: 1718379e1ea6baffef8f4da045662e95a47e1480
+workflow-type: tm+mt
+source-wordcount: '5363'
+ht-degree: 99%
 
 ---
 
@@ -20,6 +20,7 @@ Die folgenden Aktualisierungen wurden seit der ersten Erstellung der Customer Jo
 | Funktion | Beschreibung |
 | --- | --- |
 | **August 2025** | |
+| Neue Integration mit Adobe Advertising | Es wurden Informationen zur [Integration mit Adobe Advertising](/help/integrations/advertising.md) hinzugefügt. |
 | Neue abgeleitete Feldfunktionen | Dokumentation für die neuen abgeleiteten Feldfunktionen: [Datumsberechnung](/help/data-views/derived-fields/derived-fields.md#date-math), [Tiefe](/help/data-views/derived-fields/derived-fields.md#depth) und [Typecast](/help/data-views/derived-fields/derived-fields.md#typecast). |
 | **Juli 2025** | |
 | Debugger | Neuer Artikel zum Aktivieren, Verwenden und Deaktivieren des Projekt-Debuggers in Analysis Workspace. |
@@ -116,7 +117,7 @@ Die folgenden Aktualisierungen wurden seit der ersten Erstellung der Customer Jo
 | Aktualisierungen der Dokumentation zur Projektfreigabe | Es wurden Informationen zum [Anzeigen von für Sie freigegebenen Projekten](/help/analysis-workspace/curate-share/share-projects.md#view-projects-shared-with-you) hinzugefügt.<p>Außerdem wurden die Informationen zum [Freigeben einzelner oder mehrerer Projekte](/help/analysis-workspace/curate-share/share-projects.md#share-a-specific-project-role) optimiert.</p> |
 | Es wurden Berechtigungsanforderungen für das Hochladen von Dateien auf Azure SAS und Azure RBAC beim Konfigurieren von Speicherorten für Cloud-Exporte hinzugefügt. | Es wurden genaue Berechtigungsanforderungen für das Hochladen von Dateien auf Azure SAS und Azure RBAC beim [Konfigurieren von Konten für Cloud-Exporte](/help/components/exports/cloud-export-accounts.md) und beim [Konfigurieren von Speicherorten für Cloud-Exporte](/help/components/exports/cloud-export-locations.md) hinzugefügt. |
 | Es wurden Berechtigungsanforderungen für das Hochladen von Dateien auf Amazon S3 Role ARN und GCP-Buckets beim Konfigurieren von Speicherorten für Cloud-Exporte hinzugefügt. | Es wurden genaue Berechtigungsanforderungen für das Hochladen von Dateien auf Amazon S3 Role ARN und Google Cloud Platform-Buckets beim [Konfigurieren von Speicherorten für Cloud-Exporte](/help/components/exports/cloud-export-locations.md) hinzugefügt. |
-| Es wurde klargestellt, dass Produktadmins immer Zugriff auf den Export vollständiger Tabellen haben. | Es wurden folgende Änderungen vorgenommen, um klarzustellen, dass Benutzende, denen die Rolle „Produktadmin“ zugewiesen wurde, standardmäßig Zugriff auf vollständige Tabellen aus Analysis Workspace haben: <ul><li>Es wurde ein neuer Aufzählungspunkt zu den [Standardberechtigungen für „Produktadmin“](/help/technotes/access-control.md#product-admin-default-permissions) hinzugefügt.</li><li>Es wurde ein Hinweis unter den [Mindestanforderungen für den Export vollständiger Tabellen in die Cloud](/help/analysis-workspace/export/export-cloud.md#minimum-requirements) hinzugefügt.</li></ul> |
+| Es wurde klargestellt, dass Produktadmins immer Zugriff auf den Export vollständiger Tabellen haben. | Es wurden folgende Änderungen vorgenommen, um klarzustellen, dass Benutzende, denen die Rolle „Produktadmin“ zugewiesen wurde,  standardmäßig Zugriff zum Exportieren vollständiger Tabellen aus Analysis Workspace haben: <ul><li>Es wurde ein neuer Aufzählungspunkt zu den [Standardberechtigungen für „Produktadmin“](/help/technotes/access-control.md#product-admin-default-permissions) hinzugefügt.</li><li>Es wurde ein Hinweis unter den [Mindestanforderungen für den Export vollständiger Tabellen in die Cloud](/help/analysis-workspace/export/export-cloud.md#minimum-requirements) hinzugefügt.</li></ul> |
 | Es wurde klargestellt, dass Segmente während der Komponenten-Migration aus Adobe Analytics neu erstellt werden. | Im [Benutzerhandbuch für Adobe Analytics-Benutzende](/help/getting-started/aa-to-cja-user.md) wurde klargestellt, dass Segmente im Rahmen des Komponenten-Migrationsprozesses automatisch neu erstellt werden und nicht manuell neu erstellt werden müssen. |
 | Informationen zu übersprungenen Einträgen | Es wurde eine Dokumentation zu der Funktion für Informationen zu übersprungenen Einträgen unter „Verbindungen“ hinzugefügt. Weitere Informationen finden Sie im Abschnitt [Verbindungsdetails](../connections/manage-connections.md#connection-details). |
 | **Januar 2024** | |
@@ -276,7 +277,7 @@ Die folgenden Aktualisierungen wurden seit der ersten Erstellung der Customer Jo
 | Datum | Beschreibung der Aktualisierung |
 | --- | --- |
 | **November 2021** | |
-| November 2021 | Die Dokumentation zu [[!UICONTROL Übersprungene Datensätze]](/help/connections/manage-connections.md) auf der Seite „Verbindungsdetails“ wurde aktualisiert. |
+| November 2021 | Die Dokumentation zu [[!UICONTROL Übersprungene Einträge]](/help/connections/manage-connections.md) auf der Seite „Verbindungsdetails“ wurde aktualisiert. |
 | **Oktober 2021** | |
 | Oktober 2021 | Dokumentation für [Report Builder](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/rb-overview.html?lang=de#) in Customer Journey Analytics. |
 | Oktober 2021 | Customer Journey Analytics: [Administratorprotokoll](https://adobe.io/cja-apis/docs/endpoints/auditlogs/)-API-Dokumentation |
