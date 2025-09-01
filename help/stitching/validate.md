@@ -1,18 +1,18 @@
 ---
-title: Zuordnung validieren
+title: Validieren der Zuordnung
 description: Validieren der Zuordnung
 solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: b9b73926-6502-4a48-ba73-c784f80950d3
-source-git-commit: a37542e4df80048c0750964bb979d77625813ebe
+source-git-commit: d9a65774fa5ab8c6b7fdd018f5d345dc7eb9e9de
 workflow-type: tm+mt
 source-wordcount: '1181'
 ht-degree: 0%
 
 ---
 
-# Zuordnung validieren
+# Validieren der Zuordnung
 
 Das Ziel der [Identitätszuordnung](/help/stitching/overview.md) (oder einfach nur Zuordnung) besteht darin, die Eignung eines Ereignis-Datensatzes für eine kanalübergreifende Analyse zu erhöhen. Diese Erhöhung wird erreicht, wenn alle Datenzeilen im Datensatz die gewünschte höchste verfügbare Identitätsreihenfolge enthalten. Diese Höhe ermöglicht Ihnen dann Folgendes:
 
@@ -74,7 +74,7 @@ Wenn Sie eine Verbindung erstellen, müssen Sie definieren, welches Feld oder we
 1. Erstellen Sie eine berechnete Metrik **[!UICONTROL Nicht authentifizierte Ereignisse insgesamt]**. Definieren Sie die Regel im Regel-Builder wie folgt:
    ![Nicht authentifizierte Ereignisse insgesamt](assets/calcmetric-unauthenticatedeventsovertotal.png)
 
-1. Erstellen Sie eine berechnete Metrik **[!UICONTROL E-Mail-Authentifizierungsrate]** basierend auf der zuvor definierten Metrik **[!UICONTROL _]**&#x200B;set). Definieren Sie die Regel im Regel-Builder wie folgt:
+1. Erstellen Sie eine berechnete Metrik **[!UICONTROL E-Mail-Authentifizierungsrate]** basierend auf der zuvor definierten Metrik **[!UICONTROL _]**set). Definieren Sie die Regel im Regel-Builder wie folgt:
    ![E-Mail-Authentifizierungsrate](assets/calcmetric-emailauthenticationrate.png)
 
 1. Verwenden Sie die berechnete Metrik **[!UICONTROL Nicht authentifizierte Ereignisse im]**) zusammen mit der berechneten Metrik **[!UICONTROL E-Mail]** Authentifizierungsrate), um eine [Ringdiagramm](/help/analysis-workspace/visualizations/donut.md)-Visualisierung zu erstellen. Die Visualisierung zeigt die Anzahl der Ereignisse im Datensatz, die nicht authentifiziert und authentifiziert sind.
