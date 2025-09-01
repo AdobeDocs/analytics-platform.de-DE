@@ -5,10 +5,10 @@ exl-id: 6300d289-d308-476e-aa4e-05cdae361bb2
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: 9e263d638d483194424a492b0494672ef0f62e71
+source-git-commit: aa635d52007a3032d8c3f90a779d1b70213dee9e
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '3738'
+ht-degree: 55%
 
 ---
 
@@ -90,7 +90,7 @@ Die Vorteile von Kontextkennzeichnungen sind:
 * **Konsistenz**: Alle Personen in Ihrer Organisation, die an einem oder mehreren Projekten arbeiten, die auf einer Datenansicht basieren, die Kontextkennzeichnungen verwendet, erhalten dasselbe Verhalten.
 * **Sichtbarkeit von Funktionen und Vorlagen**: Bestimmte Visualisierungen und Funktionen werden nur angezeigt, wenn die richtige Kontextbeschriftung zugewiesen wird. Zum Beispiel:
 
-   * Eine [Map](/help/analysis-workspace/visualizations/map.md)-Visualisierung wird nur dann richtig angezeigt, wenn Customer Journey Analytics weiß, welche Felder den Breiten- und Längengrad darstellen.
+   * Eine [Map](/help/analysis-workspace/visualizations/map.md)-Visualisierung wird nur dann richtig angezeigt, wenn Customer Journey Analytics weiß, welche Komponenten den Breiten- und Längengrad darstellen.
    * Bestimmte [Vorlagen](/help/analysis-workspace/templates/use-templates.md) werden nur angezeigt, wenn die richtigen Kontextbeschriftungen angewendet werden und die zugehörigen Komponenten verfügbar werden.
 
 Kontextkennzeichnungen können in den folgenden Situationen erforderlich sein:
@@ -105,7 +105,7 @@ Kontextkennzeichnungen können in den folgenden Situationen erforderlich sein:
 
   **Hinweis**: Die Kartenvisualisierung befindet sich in der eingeschränkten Testphase der Version und ist möglicherweise noch nicht in Ihrer Umgebung verfügbar.
 
-* Wenn Sie ([ von Adobe bereitgestellte Vorlagen) ](/help/analysis-workspace/templates/use-templates.md). Einige von Adobe bereitgestellte Vorlagen funktionieren möglicherweise nicht, da bestimmte Komponenten nicht in Ihrer Datenansicht vorhanden sind.
+* So zeigen Sie [von Adobe bereitgestellten Vorlagen](/help/analysis-workspace/templates/use-templates.md) an. Einige von Adobe bereitgestellte Vorlagen funktionieren möglicherweise nicht, da bestimmte Komponenten nicht in Ihrer Datenansicht vorhanden sind.
 
   In Ihrer Datenansicht ist für jede fehlende Komponente ein entsprechendes Kontext-Label verfügbar. Sie müssen entweder die entsprechende Kontextbeschriftung zu einer Komponente hinzufügen, die sich bereits in Ihrer Datenansicht befindet. Oder Sie müssen Ihrer Datenansicht eine neue Komponente hinzufügen und der Komponente die Kontextbeschriftung hinzufügen (falls noch nicht automatisch bereitgestellt).
 
