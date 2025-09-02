@@ -5,9 +5,9 @@ feature: Panels
 exl-id: be3e34a0-06c1-4200-b965-96084c2912fd
 role: User
 source-git-commit: 4599a058cef79a28bd6f9b788c2b202c8235298d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2193'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -75,21 +75,21 @@ Sie haben folgende Möglichkeiten:
 * Wählen Sie ![Kreis hinzufügen](/help/assets/icons/AddCircle.svg) **außerhalb** des letzten Panels in Ihrem Arbeitsbereich aus, um ein weiteres [leeres Panel](blank-panel.md) hinzuzufügen.
 
 
-## Verwalten eines Bedienfelds
+## Verwalten eines Panels
 
-Sie können ein Bedienfeld wie folgt verwalten:
+Es gibt folgende Möglichkeiten zum Verwalten eines Panels:
 
-![Bedienfeld verwalten](assets/manage-panel.png)
+![Verwalten eines Panels](assets/manage-panel.png)
 
-* Um ein Bedienfeld zu reduzieren, wählen Sie ![ChevronDown](/help/assets/icons/ChevronDown.svg) aus.
-* Um ein reduziertes Bedienfeld anzuzeigen, wählen Sie ![ChevronLeft](/help/assets/icons/ChevronLeft.svg) aus.
-* Um ein Bedienfeld zu löschen, wählen Sie ![CrossSize400](/help/assets/icons/CrossSize200.svg) aus. Um dies rückgängig zu machen, wählen **[!UICONTROL Bearbeiten]** > **[!UICONTROL Rückgängig]** (**[!UICONTROL *cmd+z *]**|**[!UICONTROL * Strg+Z *]**).
-* Um einen Bereich zu verschieben, ziehen Sie den Bereich per Drag-and![Drop, sobald ein „Verschieben](/help/assets/icons/Move.svg) sichtbar ist (in der Regel, wenn Sie den Mauszeiger über die Kopfzeile bewegen).
+* Wählen Sie zum Reduzieren eines Panels ![ChevronDown](/help/assets/icons/ChevronDown.svg) aus.
+* Wählen Sie zum Anzeigen eines reduzierten Panels ![ChevronLeft](/help/assets/icons/ChevronLeft.svg) aus.
+* Wählen Sie zum Löschen eines Panels ![CrossSize400](/help/assets/icons/CrossSize200.svg) aus. Wählen Sie zum Rückgängigmachen **[!UICONTROL Bearbeiten]** > **[!UICONTROL Rückgängig]** (**[!UICONTROL *Befehlstaste+Z *]**|**[!UICONTROL * Strg+Z *]**) aus.
+* Verschieben Sie ein Panel per Drag-and-Drop, wenn das Symbol ![Verschieben](/help/assets/icons/Move.svg) sichtbar ist (in der Regel, wenn Sie den Mauszeiger über die Kopfzeile bewegen).
 
 
 ## Datenansicht
 
-Jedes Panel ist mit einer [Datenansicht](/help/data-views/data-views.md) verknüpft, die durch den ![Daten](/help/assets/icons/Data.svg) **[!UICONTROL *Namen der Datenansicht *]**&#x200B;im Dropdown-Menü oben rechts im Panel identifiziert wird.
+Jedes Panel ist mit einer [Datenansicht](/help/data-views/data-views.md) verknüpft, die durch den ![Daten](/help/assets/icons/Data.svg) **[!UICONTROL *Namen der Datenansicht *]**im Dropdown-Menü oben rechts im Panel identifiziert wird.
 
 Wenn Sie ein leeres Workspace-Projekt erstellen, ist die Standarddatenansicht für das erste Panel die Datenansicht, an der Sie zuletzt in Customer Journey Analytics gearbeitet haben.
 
@@ -167,7 +167,7 @@ Weitere Informationen finden Sie unter [Schnellsegmente](/help/components/segmen
 
 >[!BEGINSHADEBOX]
 
-Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Dropdown-Segmente](https://video.tv.adobe.com/v/327486?quality=12&learn=on&captions=ger){target="_blank"} finden Sie ein Demovideo.
+Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Dropdown-Segmente](https://video.tv.adobe.com/v/23877?quality=12&learn=on){target="_blank"} finden Sie ein Demovideo.
 
 {{videoaa}}
 
