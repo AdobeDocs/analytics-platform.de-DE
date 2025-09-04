@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 exl-id: 1c42efac-b3d2-437b-8b0b-9c6fdfed8520
 role: Admin
-source-git-commit: 50599b36d333cae3735c6d4fd1b0af6fcabe9177
-workflow-type: ht
-source-wordcount: '735'
-ht-degree: 100%
+source-git-commit: 9774e0e3af024823a03dbcd8d6766877f55e95d8
+workflow-type: tm+mt
+source-wordcount: '792'
+ht-degree: 95%
 
 ---
 
@@ -24,7 +24,7 @@ Wenn Sie Datensätze mit ähnlichen Personen-IDs kombinieren, wird die Attributi
 
 Leider sind nicht alle ereignisbasierten Datensätze, die Teil Ihrer Verbindung in Customer Journey Analytics sind, ausreichend mit Daten gefüllt, um diese Attribution standardmäßig zu unterstützen. Insbesondere bei Web- oder Mobile-basierten Erlebnisdatensätzen steht häufig keine tatsächlichen Informationen zur Personen-ID zu allen Ereignissen zur Verfügung.
 
-Durch die Zuordnung können Identitäten innerhalb der Zeilen eines Datensatzes neu zugewiesen werden, um sicherzustellen, dass die Personen-ID (zugeordnete ID) für jedes Ereignis verfügbar ist. Bei der Zuordnung werden Benutzerdaten aus authentifizierten und nicht authentifizierten Sitzungen untersucht, um den allgemeinen Wert für die vorübergehende ID (Personen-ID) zu ermitteln, der als zugeordnete ID verwendet werden kann. Diese erneute Zuweisung ermöglicht die Auflösung verschiedener Datensätze zu einer einzelnen zugeordneten ID für die Analyse auf Personenebene, statt auf Geräte- oder Cookie-Ebene.
+Durch die Zuordnung können Identitäten innerhalb der Zeilen eines Datensatzes neu zugewiesen werden, um sicherzustellen, dass die Personen-ID (zugeordnete ID) für jedes Ereignis verfügbar ist. Bei der Zuordnung werden Benutzerdaten aus authentifizierten und nicht authentifizierten Sitzungen untersucht, um den allgemeinen Wert für die vorübergehende ID (Personen-ID) zu ermitteln, der als zugeordnete ID verwendet werden kann. Diese erneute Zuweisung ermöglicht die Auflösung verschiedener Einträge zu einer einzelnen zugeordneten ID für die Analyse auf Personenebene, statt auf Geräte- oder Cookie-Ebene.
 
 Customer Journey Analytics unterstützt zwei Arten der Zuordnung: [Feldbasierte Zuordnung](fbs.md) und [Diagrammbasierte Zuordnung](gbs.md).
 
@@ -68,6 +68,20 @@ Verwechseln Sie die Zuordnung nicht mit:
 - Dem Zusammenführen von zwei oder mehr Datensätzen. Die Zuordnung wird nur auf einen Datensatz angewendet. Die Zusammenführung von Datensätzen erfolgt infolge der Einrichtung einer Customer Journey Analytics-Verbindung und der Auswahl derselben Personen-ID für alle in der Verbindung ausgewählten Datensätze.
 
 - Dem Join zweier Datensätze. In Customer Journey Analytics wird ein Join häufig für Suchen oder Klassifizierungen in Analysis Workspace verwendet. Obwohl bei der Zuordnung die Funktion „Join“ verwendet wird, umfasst der Prozess selbst mehr als Joins.
+
+
+## Journey Optimizer-Datensätze
+
+Das Zusammenfügen unterstützt die folgenden automatisch generierten Journey Optimizer-Datensätze:
+
+- AJO Journey-Schrittereignisse
+- Ereignisdatensatz für eingehende AJO-Aktivitäten
+- AJO-Oberflächen-Datensatz
+- AJO-Nachrichten-Feedback-Ereignisdatensatz* AJO-Push-Tracking-Erlebnisereignis-Datensatz
+- Datensatz für Erlebnisereignisse beim AJO-E-Mail-Tracking
+- Ereignisdatensatz mit Feedback zu AJO-BCC
+- AJO Live-Aktivitäten Feedback-Ereignisdatensatz
+- AJO ExD-Entscheidungsereignis-Datensatz
 
 >[!MORELIKETHIS]
 >
