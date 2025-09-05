@@ -7,9 +7,9 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 9a1689d9-c1b7-42fe-9682-499e49843f76
-source-git-commit: 4bca14492374939cd1ea6508c774720db61a6283
+source-git-commit: c4aea74807be15af56413522d9e6fbf5f18a37a0
 workflow-type: tm+mt
-source-wordcount: '323'
+source-wordcount: '368'
 ht-degree: 3%
 
 ---
@@ -44,9 +44,19 @@ Um das Zusammenfügen zu aktivieren, gehen Sie im Abschnitt Ereignisdatensatz de
    * Aktivieren Sie **[!UICONTROL Primären Identity-Namespace verwenden]**, um den primären Identity-Namespace zu verwenden.
    * Wählen Sie einen Namespace aus dem **[!UICONTROL Namespace]** Dropdown-Menü aus.
 
-   Wenn Sie **[!UICONTROL Identitätsdiagramm]** für die Personen-ID auswählen, müssen Sie einen Namespace auswählen. Zuvor wird das Dialogfeld **[!UICONTROL Änderung am Identitätsdiagramm]** angezeigt, um sicherzustellen, dass Sie die Einrichtung des Identitätsdiagramms abgeschlossen haben, bevor Sie das Identitätsdiagramm zum Zusammenfügen verwenden. Wählen Sie **[!UICONTROL Weiter]** aus, um fortzufahren.
+
+   Wenn Sie **[!UICONTROL Identitätsdiagramm]** für die Personen-ID auswählen, müssen Sie einen Namespace auswählen.
+
+   >[!NOTE]
+   >
+   >Sie müssen berechtigt sein, das Identitätsdiagramm zu verwenden.
+   >
+
+   Zuvor wird ein Dialogfeld **[!UICONTROL Änderung am Identitätsdiagramm]** angezeigt, um sicherzustellen, dass Sie [die Einrichtung des Identitätsdiagramms für den Datensatz abgeschlossen haben](/help/stitching/faq.md#enable-a-dataset-for-the-identity-service) bevor Sie das Identitätsdiagramm zum Zusammenfügen verwenden. Wählen Sie **[!UICONTROL Weiter]** aus, um fortzufahren.
 
    * Wählen Sie einen Namespace aus dem **[!UICONTROL Namespace]** Dropdown-Menü aus.
 
 
-1. Wählen Sie ein Lookback-Fenster aus **[!UICONTROL Dropdown-Menü]** Lookback-Fenster“. Die Optionen sind **[!UICONTROL 1 Tag]**, **[!UICONTROL 7 Tage]**, **[!UICONTROL 14 Tage]** oder **[!UICONTROL 30 Tage]**.
+1. Wählen Sie ein Lookback-Fenster aus **[!UICONTROL Dropdown-Menü]** Lookback-Fenster“. Die verfügbaren Optionen hängen vom Customer Journey Analytics-Paket ab, zu dem Sie berechtigt sind.
+
+Nachdem Sie eine Verbindung gespeichert haben, die Datensätze enthält, die für die Identitätszuordnung aktiviert sind, beginnt der Zuordnungsprozess für jeden Datensatz, wenn die Aufnahme von Daten für diesen Datensatz beginnt.

@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 exl-id: f4115164-7263-40ad-9706-3b98d0bb7905
 role: Admin
-source-git-commit: 1a003b38ef26eb811b19cd091c6e089f33ddb6f6
+source-git-commit: c4aea74807be15af56413522d9e6fbf5f18a37a0
 workflow-type: tm+mt
-source-wordcount: '1918'
-ht-degree: 28%
+source-wordcount: '2041'
+ht-degree: 26%
 
 ---
 
@@ -23,8 +23,8 @@ Im Folgenden finden Sie einige häufig gestellte Fragen zum Zusammenfügen:
 Sie können eine Flussvisualisierung mit der Dimension „Datensatz-ID“ verwenden.
 
 1. Melden Sie sich bei [Customer Journey Analytics an ](https://analytics.adobe.com) erstellen Sie ein leeres Workspace-Projekt.
-2. Wählen Sie auf der linken Seite **[!UICONTROL ** Visualisierungen **]** aus und ziehen Sie eine **[!UICONTROL **&#x200B; Fluss &#x200B;**]**-Visualisierung auf die Arbeitsfläche auf der rechten Seite.
-3. Wählen Sie auf der linken Seite **[!UICONTROL ** Komponenten **]** und ziehen Sie die Dimension **[!UICONTROL ** Datensatz-ID **]** an die mittlere Position mit der Bezeichnung **[!UICONTROL **&#x200B; Dimension oder Element &#x200B;**]**.
+2. Wählen Sie auf der linken Seite **[!UICONTROL ** Visualisierungen **]** aus und ziehen Sie eine **[!UICONTROL ** Fluss **]**-Visualisierung auf die Arbeitsfläche auf der rechten Seite.
+3. Wählen Sie auf der linken Seite **[!UICONTROL ** Komponenten **]** und ziehen Sie die Dimension **[!UICONTROL ** Datensatz-ID **]** an die mittlere Position mit der Bezeichnung **[!UICONTROL ** Dimension oder Element **]**.
 4. Dieser Flussbericht ist interaktiv. Um die Flüsse zu nachfolgenden oder vorherigen Seiten zu erweitern, wählen Sie einen der Werte aus. Verwenden Sie das Kontextmenü, um Spalten zu erweitern oder zu reduzieren. Im selben Flussbericht können auch verschiedene Dimensionen verwendet werden.
 
 Wenn Sie die Datensatz-ID-Dimensionselemente umbenennen möchten, können Sie einen Lookup-Datensatz verwenden.
@@ -81,7 +81,7 @@ Die Cross-Channel-Analyse ist ein für Customer Journey Analytics spezifisches A
 
 +++
 
-## Datenschutz   
+## Datenschutz
 
 +++ Wie handhabt Stitching Datenschutzanfragen?
 
@@ -183,16 +183,16 @@ Seien Sie vorsichtig beim „Personen-Kollaps“, der auftritt, wenn das Zusamme
 
 | Ereignis | Zeitstempel | Persistente ID (Cookie-ID) | Vorübergehende ID (Anmelde-ID) | Zusammengefügte ID (nach der Wiederholung) |
 |---|---|---|---|---|
-| 1 | 12.05.2023 12:01 | 123 | – | **Cory** |
-| 2 | 12.05.2023 12:02 | 123 | Cory | **Cory** |
-| 3 | 12.05.2023 12:03 | 456 | Nicht definiert | **Nicht definiert** |
-| 4 | 12.05.2023 12:04 | 456 | – | **Nicht definiert** |
-| 5 | 12.05.2023 12:05 | 789 | Nicht definiert | **Nicht definiert** |
-| 6 | 12.05.2023 12:06 | 012 | Nicht definiert | **Nicht definiert** |
-| 7 | 12.05.2023 12:07 | 012 | – | **Nicht definiert** |
-| 8 | 12.05.2023 12:03 | 789 | Nicht definiert | **Nicht definiert** |
-| 9 | 12.05.2023 12:09 | 456 | – | **Nicht definiert** |
-| 10 | 12.05.2023 12:02 | 123 | – | **Cory** |
+| 1 | 12.05.2023:01 | 123 | – | **Cory** |
+| 2 | 12.05.2023:02 | 123 | Cory | **Cory** |
+| 3 | 12.05.2023:03 | 456 | Nicht definiert | **Nicht definiert** |
+| 4 | 12.05.2023:04 | 456 | – | **Nicht definiert** |
+| 5 | 12.05.2023:05 | 789 | Nicht definiert | **Nicht definiert** |
+| 6 | 12.05.2023:06 | 012 | Nicht definiert | **Nicht definiert** |
+| 7 | 12.05.2023:07 | 012 | – | **Nicht definiert** |
+| 8 | 12.05.2023:03 | 789 | Nicht definiert | **Nicht definiert** |
+| 9 | 12.05.2023:09 | 456 | – | **Nicht definiert** |
+| 10 | 12.05.2023:02 | 123 | – | **Cory** |
 | | | **4-Geräte** | **2 Personen**:<br/>Ereignisse 1, 4, 7, 9, 10 fallen gelassen | **2 Personen**:<br/>Cory, Nicht authentifiziert (für eine Person reduziert) |
 
 +++
@@ -242,4 +242,37 @@ Nicht, wenn Sie die oben beschriebenen Schritte befolgen. Andernfalls bitten wir
 
 +++
 
+## Aktivieren eines Datensatzes für den Identity Service
 
++++ Wie wird ein Datensatz nur für den Identity Service aktiviert? 
+
+Sie müssen sicherstellen, dass ein Datensatz für Identity Service aktiviert ist, damit der Datensatz beim diagrammbasierten Stitching verwendet werden kann.
+
+Sie müssen für Real-Time Customer Data Platform nicht lizenziert sein, um das diagrammbasierte Stitching verwenden zu können. Die diagrammbasierte Zuordnung basiert auf einem verfügbaren Identitätsdiagramm und nicht auf Echtzeit-Kundenprofilen.
+
+Um einen Datensatz nur für den Identity Service zu aktivieren, verwenden Sie eine `POST`-Anfrage an den `/datasets`-Endpunkt, der nur das `unifiedIdentity`-Tag verwendet. Zum Beispiel:
+
+```shell
+curl -X POST \
+  https://platform.adobe.io/data/foundation/catalog/dataSets \
+  -H 'Content-Type: application/json' \
+  -H 'Authorization: Bearer {ACCESS_TOKEN}' \
+  -H 'x-api-key: {API_KEY}' \
+  -H 'x-gw-ims-org-id: {ORG_ID}' \
+  -H 'x-sandbox-name: {SANDBOX_NAME}' \
+  -d '{
+    "schemaRef": {
+        "id": "https://ns.adobe.com/{TENANT_ID}/schemas/31670881463308a46f7d2cb09762715",
+        "contentType": "application/vnd.adobe.xed-full-notext+json; version=1"
+    },
+    "tags": {
+       "unifiedIdentity": ["enabled:true"]
+    }
+  }'
+```
+
+Jede Verwendung des `unifiedProfile`-Tags in der Anfrage gibt einen Fehler zurück, obwohl Sie nicht für das Echtzeit-Kundendatenprofil lizenziert sind.
+
+Weitere [ finden Sie unter „Erstellen eines Datensatzes, der für Profil und ](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/enable-for-profile#create-a-dataset-enabled-for-profile-and-identity) aktiviert ist“.
+
++++ 
