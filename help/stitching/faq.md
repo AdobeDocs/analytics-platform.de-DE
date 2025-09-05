@@ -273,6 +273,6 @@ curl -X POST \
 
 Jede Verwendung des `unifiedProfile`-Tags in der Anfrage gibt einen Fehler zurück, obwohl Sie nicht für das Echtzeit-Kundendatenprofil lizenziert sind.
 
-Weitere [ finden Sie unter „Erstellen eines Datensatzes, der für Profil und ](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/enable-for-profile#create-a-dataset-enabled-for-profile-and-identity) aktiviert ist“.
+Weitere [ finden Sie unter „Erstellen eines Datensatzes, der für Profil und ](https://experienceleague.adobe.com/de/docs/experience-platform/catalog/datasets/enable-for-profile#create-a-dataset-enabled-for-profile-and-identity) aktiviert ist“.
 
 +++ 
