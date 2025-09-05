@@ -23,8 +23,8 @@ Im Folgenden finden Sie einige häufig gestellte Fragen zum Zusammenfügen:
 Sie können eine Flussvisualisierung mit der Dimension „Datensatz-ID“ verwenden.
 
 1. Melden Sie sich bei [Customer Journey Analytics an ](https://analytics.adobe.com) erstellen Sie ein leeres Workspace-Projekt.
-2. Wählen Sie auf der linken Seite **[!UICONTROL ** Visualisierungen **]** aus und ziehen Sie eine **[!UICONTROL ** Fluss **]**-Visualisierung auf die Arbeitsfläche auf der rechten Seite.
-3. Wählen Sie auf der linken Seite **[!UICONTROL ** Komponenten **]** und ziehen Sie die Dimension **[!UICONTROL ** Datensatz-ID **]** an die mittlere Position mit der Bezeichnung **[!UICONTROL ** Dimension oder Element **]**.
+2. Wählen Sie auf der linken Seite **[!UICONTROL ** Visualisierungen **]** aus und ziehen Sie eine **[!UICONTROL **&#x200B; Fluss &#x200B;**]**-Visualisierung auf die Arbeitsfläche auf der rechten Seite.
+3. Wählen Sie auf der linken Seite **[!UICONTROL ** Komponenten **]** und ziehen Sie die Dimension **[!UICONTROL ** Datensatz-ID **]** an die mittlere Position mit der Bezeichnung **[!UICONTROL **&#x200B; Dimension oder Element &#x200B;**]**.
 4. Dieser Flussbericht ist interaktiv. Um die Flüsse zu nachfolgenden oder vorherigen Seiten zu erweitern, wählen Sie einen der Werte aus. Verwenden Sie das Kontextmenü, um Spalten zu erweitern oder zu reduzieren. Im selben Flussbericht können auch verschiedene Dimensionen verwendet werden.
 
 Wenn Sie die Datensatz-ID-Dimensionselemente umbenennen möchten, können Sie einen Lookup-Datensatz verwenden.
