@@ -6,9 +6,9 @@ feature: Stitching, Cross-Channel Analysis
 exl-id: 1c42efac-b3d2-437b-8b0b-9c6fdfed8520
 role: Admin
 source-git-commit: 9774e0e3af024823a03dbcd8d6766877f55e95d8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '792'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -72,22 +72,22 @@ Verwechseln Sie die Zuordnung nicht mit:
 
 ## Journey Optimizer-Datensätze
 
-Das Zusammenfügen unterstützt die folgenden automatisch generierten Journey Optimizer-Datensätze:
+Die Zuordnung unterstützt die folgenden automatisch generierten Journey Optimizer-Datensätze:
 
-- AJO Journey-Schrittereignisse
+- AJO-Journey-Schrittereignisse
 - Ereignisdatensatz für eingehende AJO-Aktivitäten
 - AJO-Oberflächen-Datensatz
-- AJO-Nachrichten-Feedback-Ereignisdatensatz* AJO-Push-Tracking-Erlebnisereignis-Datensatz
+- Datensatz für Feedback-Ereignisse zu AJO-Nachrichten* Datensatz für Erlebnisereignisse beim AJO-Push-Tracking
 - Datensatz für Erlebnisereignisse beim AJO-E-Mail-Tracking
 - Ereignisdatensatz mit Feedback zu AJO-BCC
-- AJO Live-Aktivitäten Feedback-Ereignisdatensatz
-- AJO ExD-Entscheidungsereignis-Datensatz
+- Datensatz für Feedback-Ereignisse zu AJO-Live-Aktivitäten
+- Datensatz für Entscheidungsereignisse zu AJO-ExD
 
 >[!MORELIKETHIS]
 >
 >[Feldbasierte Zuordnung](fbs.md)
->&#x200B;>[Diagrammbasierte Zuordnung](gbs.md)
->&#x200B;>[Verwenden der Zuordnung](use-stitching.md)
->&#x200B;>[Validieren der Zuordnung](validate.md)
->&#x200B;>[Häufig gestellte Fragen zur Zuordnung](faq.md)
+>>[Diagrammbasierte Zuordnung](gbs.md)
+>>[Verwenden der Zuordnung](use-stitching.md)
+>>[Validieren der Zuordnung](validate.md)
+>>[Häufig gestellte Fragen zur Zuordnung](faq.md)
 
