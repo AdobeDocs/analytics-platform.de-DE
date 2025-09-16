@@ -5,10 +5,10 @@ title: Exportieren vollständiger Tabellen in die Cloud
 feature: Curate and Share
 exl-id: 072eadcc-43ff-42e3-86ee-82062fa02eba
 role: User
-source-git-commit: c16fc1a239c9ce1b701b3d03539bc9696f1c6489
+source-git-commit: e3037b3981ce128f67165d6caca0b4dc5df04773
 workflow-type: tm+mt
-source-wordcount: '2297'
-ht-degree: 78%
+source-wordcount: '2449'
+ht-degree: 74%
 
 ---
 
@@ -59,6 +59,43 @@ Verwenden Sie den folgenden Prozess beim Exportieren vollständiger Tabellen in 
 >id="export-manifest"
 >title="Manifestdatei"
 >abstract="Wenn diese Option aktiviert ist, ist eine Manifestdatei in jedem erfolgreichen Exportversand enthalten. Mit der Manifestdatei können Sie bestätigen, dass alle Dateien erfolgreich bereitgestellt wurden. "
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-export-details"
+>title="Details"
+>abstract="Geben Sie einen Namen für den Export an. Sie können auch eine Beschreibung und beliebige Tags hinzufügen. Diese Informationen helfen bei der Identifizierung des Exports in der Exporttabelle und in E-Mail-Benachrichtigungen."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-export-data-structure"
+>title="Datenstruktur"
+>abstract="Dies ist die Freiformtabelle, die Sie exportieren. Sie können die Datenstruktur ändern, indem Sie Komponenten aus dem linken Bereich in die Tabelle ziehen. Sie können einen Filter anwenden, indem Sie eine Komponente in den Filterbereich ziehen. Die Tabelle wird dynamisch aktualisiert, wenn Sie Komponenten zur Arbeitsfläche hinzufügen."
+
+<!-- markdownlint-enable MD034 -->ß
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-export-schedule"
+>title="Zeitplan"
+>abstract="Wählen Sie aus, wie oft der Export erfolgen soll. Wählen Sie Jetzt senden (einmal) aus, um den Export sofort zu starten. Geplante Exporte werden zu dem von Ihnen angegebenen Zeitpunkt initiiert. "
+
+<!-- markdownlint-enable MD034 -->
+
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-export-destination"
+>title="Ziel"
+>abstract="Wählen Sie das Cloud-Konto und den Speicherort aus, an die die Daten gesendet werden sollen. Sie können ein vorhandenes Konto und einen Speicherort auswählen oder auf „Neu hinzufügen“ klicken, um sie zu erstellen. Geben Sie Benutzer und Gruppen an, die über fehlgeschlagene oder ablaufende Exporte benachrichtigt werden sollen."
 
 <!-- markdownlint-enable MD034 -->
 
