@@ -4,10 +4,10 @@ description: Listet Inhaltsaktualisierungen für Dokumentation zu Customer Journ
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 7c285d6ed154c5d865c96a7c1b3cc697e73bf456
-workflow-type: ht
-source-wordcount: '5411'
-ht-degree: 100%
+source-git-commit: d8ff5191ea96b8871f6aaba1fc28211c22a13e0d
+workflow-type: tm+mt
+source-wordcount: '5422'
+ht-degree: 99%
 
 ---
 
@@ -20,6 +20,7 @@ Die folgenden Aktualisierungen wurden seit der ersten Erstellung der Customer Jo
 | Funktion | Beschreibung |
 | --- | --- |
 | **September 2025** | |
+| Echtzeit-Reporting | Es wurde Dokumentation zu [Echtzeit-Reporting](/help/components/real-time/real-time.md) in Customer Journey Analytics hinzugefügt. |
 | Benutzeroberfläche | Es wurde eine Dokumentation für die aktualisierte [Benutzeroberfläche](/help/connections/manage-connections.md#usage) in Verbindungen hinzugefügt. |
 | Zuordnen von Journey Optimizer-Datensätzen | Die [Liste der automatisch generierten Journey Optimizer-Datensätze](/help/stitching/overview.md#journey-optimizer-datasets) wurde dokumentiert, die bei der Zuordnung verwendet werden können. |
 | Kontext-Labels | Es wurden weitere Hintergrundinformationen zur Verwendung und zum Zweck von [Kontext-Labels](/help/data-views/component-settings/overview.md#context-labels) in Datenansichtskomponenten hinzugefügt. |
