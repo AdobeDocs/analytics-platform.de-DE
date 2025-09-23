@@ -5,10 +5,10 @@ title: Exportieren vollständiger Tabellen in die Cloud
 feature: Curate and Share
 exl-id: 072eadcc-43ff-42e3-86ee-82062fa02eba
 role: User
-source-git-commit: e3037b3981ce128f67165d6caca0b4dc5df04773
+source-git-commit: 0b6afd5639234f6305c99267d3b1624279c97368
 workflow-type: tm+mt
-source-wordcount: '2449'
-ht-degree: 74%
+source-wordcount: '2482'
+ht-degree: 73%
 
 ---
 
@@ -56,15 +56,6 @@ Verwenden Sie den folgenden Prozess beim Exportieren vollständiger Tabellen in 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="export-manifest"
->title="Manifestdatei"
->abstract="Wenn diese Option aktiviert ist, ist eine Manifestdatei in jedem erfolgreichen Exportversand enthalten. Mit der Manifestdatei können Sie bestätigen, dass alle Dateien erfolgreich bereitgestellt wurden. "
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
->[!CONTEXTUALHELP]
 >id="cja-export-details"
 >title="Details"
 >abstract="Geben Sie einen Namen für den Export an. Sie können auch eine Beschreibung und beliebige Tags hinzufügen. Diese Informationen helfen bei der Identifizierung des Exports in der Exporttabelle und in E-Mail-Benachrichtigungen."
@@ -78,7 +69,16 @@ Verwenden Sie den folgenden Prozess beim Exportieren vollständiger Tabellen in 
 >title="Datenstruktur"
 >abstract="Dies ist die Freiformtabelle, die Sie exportieren. Sie können die Datenstruktur ändern, indem Sie Komponenten aus dem linken Bereich in die Tabelle ziehen. Sie können einen Filter anwenden, indem Sie eine Komponente in den Filterbereich ziehen. Die Tabelle wird dynamisch aktualisiert, wenn Sie Komponenten zur Arbeitsfläche hinzufügen."
 
-<!-- markdownlint-enable MD034 -->ß
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="export-manifest"
+>title="Manifestdatei"
+>abstract="Bei Auswahl dieser Option wird eine Manifestdatei in jeden erfolgreichen Exportversand eingeschlossen. Mit der Manifestdatei können Sie bestätigen, dass alle Dateien erfolgreich bereitgestellt wurden. "
+
+<!-- markdownlint-enable MD034 -->
 
 <!-- markdownlint-disable MD034 -->
 
@@ -96,6 +96,15 @@ Verwenden Sie den folgenden Prozess beim Exportieren vollständiger Tabellen in 
 >id="cja-export-destination"
 >title="Ziel"
 >abstract="Wählen Sie das Cloud-Konto und den Speicherort aus, an die die Daten gesendet werden sollen. Sie können ein vorhandenes Konto und einen Speicherort auswählen oder auf „Neu hinzufügen“ klicken, um sie zu erstellen. Geben Sie Benutzer und Gruppen an, die über fehlgeschlagene oder ablaufende Exporte benachrichtigt werden sollen."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-export-file-format"
+>title="Dateiformat"
+>abstract="Bei der Auswahl des Parquet-Dateiformats werden einige in Komponentennamen enthaltene Sonderzeichen durch einen Unterstrich (_) ersetzt. Siehe den unten stehenden Link für eine vollständige Liste der ersetzten Zeichen."
 
 <!-- markdownlint-enable MD034 -->
 
