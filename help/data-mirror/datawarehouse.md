@@ -56,8 +56,8 @@ Weitere Informationen finden Sie im [[!DNL Azure Databricks] Handbuch zum Aktivi
 
 Lesen Sie die folgende Dokumentation, um zu erfahren, wie Sie die Änderungsdatenerfassung für Ihre [!DNL Azure Databricks]-Quellverbindung aktivieren:
 
-* [Erstellen  [!DNL Azure Databricks]  Basisverbindung](https://experienceleague.adobe.com/en/docs/experience-platform/sources/api-tutorials/create/databases/databricks).
-* [Erstellen einer Quellverbindung für eine Datenbank](https://experienceleague.adobe.com/en/docs/experience-platform/sources/api-tutorials/collect/database-nosql#create-a-source-connection).
+* [Erstellen  [!DNL Azure Databricks]  Basisverbindung](https://experienceleague.adobe.com/de/docs/experience-platform/sources/api-tutorials/create/databases/databricks).
+* [Erstellen einer Quellverbindung für eine Datenbank](https://experienceleague.adobe.com/de/docs/experience-platform/sources/api-tutorials/collect/database-nosql#create-a-source-connection).
 
 ## [!DNL Google BigQuery]
 
@@ -67,8 +67,8 @@ Weitere Informationen finden Sie im Handbuch zu [Datendefinitionssprachanweisung
 
 Lesen Sie die folgende Dokumentation, um zu erfahren, wie Sie die Änderungsdatenerfassung für Ihre [!DNL Google BigQuery]-Quellverbindung aktivieren:
 
-* [Erstellen  [!DNL Google BigQuery]  Basisverbindung](https://experienceleague.adobe.com/en/docs/experience-platform/sources/api-tutorials/create/databases/bigquery).
-* [Erstellen einer Quellverbindung für eine Datenbank](https://experienceleague.adobe.com/en/docs/experience-platform/sources/api-tutorials/collect/database-nosql#create-a-source-connection).
+* [Erstellen  [!DNL Google BigQuery]  Basisverbindung](https://experienceleague.adobe.com/de/docs/experience-platform/sources/api-tutorials/create/databases/bigquery).
+* [Erstellen einer Quellverbindung für eine Datenbank](https://experienceleague.adobe.com/de/docs/experience-platform/sources/api-tutorials/collect/database-nosql#create-a-source-connection).
 
 ## [!DNL Snowflake]
 
@@ -84,8 +84,8 @@ Weitere Informationen finden Sie im [[!DNL Snowflake] Handbuch zur Verwendung de
 
 Lesen Sie die folgende Dokumentation, um zu erfahren, wie Sie die Änderungsdatenerfassung für Ihre [!DNL Snowflake]-Quellverbindung aktivieren:
 
-* [Erstellen  [!DNL Snowflake]  Basisverbindung](https://experienceleague.adobe.com/en/docs/experience-platform/sources/api-tutorials/create/databases/snowflake).
-* [Erstellen einer Quellverbindung für eine Datenbank](https://experienceleague.adobe.com/en/docs/experience-platform/sources/api-tutorials/collect/database-nosql#create-a-source-connection).
+* [Erstellen  [!DNL Snowflake]  Basisverbindung](https://experienceleague.adobe.com/de/docs/experience-platform/sources/api-tutorials/create/databases/snowflake).
+* [Erstellen einer Quellverbindung für eine Datenbank](https://experienceleague.adobe.com/de/docs/experience-platform/sources/api-tutorials/collect/database-nosql#create-a-source-connection).
 
 
 >[!MORELIKETHIS]
