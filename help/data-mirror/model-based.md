@@ -172,7 +172,7 @@ Definieren Sie ein Schema, das diese Daten modelliert. Gehen Sie folgendermaßen
 
      ![Versionsdeskriptor](assets/platform-schema-id.png)
 
-   * Das Feld **[!UICONTROL personid]** wird zusammen mit **[!UICONTROL timestamp]** als Primärer Schlüssel **** konfiguriert. Wählen Sie ![Hinzufügen](/help/assets/icons/Add.svg) **[!UICONTROL Zusammengesetzten Primärschlüssel erstellen]** aus, um einen zusammengesetzten Schlüssel zu erstellen.
+   * Das Feld **[!UICONTROL personid]** wird zusammen mit **[!UICONTROL timestamp]** als Primärer Schlüssel **&#x200B;**&#x200B;konfiguriert. Wählen Sie ![Hinzufügen](/help/assets/icons/Add.svg) **[!UICONTROL Zusammengesetzten Primärschlüssel erstellen]** aus, um einen zusammengesetzten Schlüssel zu erstellen.
 
      ![Zusammengesetzter Schlüssel](assets/platform-schema-compositekey.png)
 
@@ -180,7 +180,7 @@ Definieren Sie ein Schema, das diese Daten modelliert. Gehen Sie folgendermaßen
 
      ![Personendeskriptor](assets/platform-schema-personid.png)
 
-   * Das Feld **[!UICONTROL Zeitstempel]** wird zusammen mit dem Feld **[!UICONTROL personid]** als **[!UICONTROL Primärer Schlüssel]**y konfiguriert. Das **[!UICONTROL Zeitstempel]**-Feld wird auch als **[!UICONTROL Zeitstempeldeskriptor]** konfiguriert. Sie müssen nur ein Feld als **[!UICONTROL Zeitstempeldeskriptor]** für zeitreihenmodellbasierte Daten definieren.
+   * Das Feld **[!UICONTROL Zeitstempel]** wird zusammen mit dem Feld **[!UICONTROL personid]** als **[!UICONTROL Primärer Schlüssel]**&#x200B;y konfiguriert. Das **[!UICONTROL Zeitstempel]**-Feld wird auch als **[!UICONTROL Zeitstempeldeskriptor]** konfiguriert. Sie müssen nur ein Feld als **[!UICONTROL Zeitstempeldeskriptor]** für zeitreihenmodellbasierte Daten definieren.
 
      ![Zeitstempel-Deskriptor](assets/platform-schema-timestamp.png)
 
