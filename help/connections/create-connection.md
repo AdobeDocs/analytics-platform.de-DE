@@ -435,7 +435,7 @@ Alternativ können die oben aufgeführten Datensatztypen auf einem Ad-hoc- oder 
 
 | Typ des Datensatzes | Beschreibung | Zeitstempel | Schema | Personen-ID |
 |---|---|---|---|---|
-| **[!UICONTROL Ad hoc]** | Ad-hoc-Daten basierend auf einem [Ad-hoc](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/api/ad-hoc)Schema mit Feldern, die sich in einem Namespace befinden und nur von einem einzigen Datensatz verwendet werden. | Je nach dem Datensatztyp, den Sie für den Ad-hoc-Datensatz auswählen. | Jedes Ad-hoc-Schema, das auf einer Klasse basiert, die auf dem Ad-hoc *Verhalten* | Je nach dem Datensatztyp, den Sie für den Ad-hoc-Datensatz auswählen. |
+| **[!UICONTROL Ad hoc]** | Ad-hoc-Daten basierend auf einem [Ad-hoc](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/api/ad-hoc)Schema mit Feldern, die sich in einem Namespace befinden und nur von einem einzigen Datensatz verwendet werden. | Je nach dem Datensatztyp, den Sie für den Ad-hoc-Datensatz auswählen. | Jedes Ad-hoc-Schema, das auf einer Klasse basiert, die auf dem Ad-hoc *Verhalten* | Je nach dem Datensatztyp, den Sie für den Ad-hoc-Datensatz auswählen. |
 | **[!UICONTROL Modell]** | Modellbasierte Daten basierend auf einem modellbasierten Schema. | Abhängig vom Datensatztyp, den Sie für den modellbasierten Datensatz auswählen. | Jedes modellbasierte Schema. | Abhängig vom Datensatztyp, den Sie für den modellbasierten Datensatz auswählen. |
 
 

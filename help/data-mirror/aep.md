@@ -52,9 +52,9 @@ Um den Quell-Connector für die unterstützten nativen Data Warehouse-Lösungen 
 
 Informationen zur Authentifizierung für die unterstützte Data Warehouse-native Lösung finden Sie in der entsprechenden Experience Platform-Dokumentation:
 
-* [Azure-Datenblöcke](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/databases/databricks)
-* [Google BigQuery](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/databases/bigquery)
-* [Snowflake](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/databases/snowflake)
+* [Azure-Datenblöcke](https://experienceleague.adobe.com/de/docs/experience-platform/sources/connectors/databases/databricks)
+* [Google BigQuery](https://experienceleague.adobe.com/de/docs/experience-platform/sources/connectors/databases/bigquery)
+* [Snowflake](https://experienceleague.adobe.com/de/docs/experience-platform/sources/connectors/databases/snowflake)
 
 
 ### Daten auswählen
