@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Administration
 role: Admin
 exl-id: f093ac54-7d31-449b-a441-a65856a1d535
-source-git-commit: 88956946aabb74d94cd84a8b4ef30d9eb1044ebd
+source-git-commit: 1af81040d144ab1717b9453756d0d5b92d489d56
 workflow-type: tm+mt
-source-wordcount: '1900'
+source-wordcount: '1933'
 ht-degree: 11%
 
 ---
@@ -94,7 +94,7 @@ Image size - 2 - System-enforced Guardrail - Maximim upload size per image in MB
 
 {style="table-layout:auto"}
 
-Siehe auch Experience Platform [Leitplanken für die Echtzeit-Kundendatenplattform](https://experienceleague.adobe.com/de/docs/experience-platform/rtcdp/guardrails/overview).
+Siehe auch Experience Platform [Leitplanken für die Echtzeit-Kundendatenplattform](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/guardrails/overview).
 
 
 ## Automatisierte Datensatzgültigkeit
@@ -139,7 +139,7 @@ Siehe auch Experience Platform [Leitplanken für die Echtzeit-Kundendatenplattfo
 
 {style="table-layout:auto"}
 
-Siehe auch Experience Platform [Schutzmaßnahmen bei der Datenaufnahme](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html?lang=de).
+Siehe auch Experience Platform [Schutzmaßnahmen bei der Datenaufnahme](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html).
 
 
 ## Zieldatenexport
@@ -151,7 +151,7 @@ Siehe auch Experience Platform [Schutzmaßnahmen bei der Datenaufnahme](https://
 
 {style="table-layout:auto"}
 
-Siehe auch Experience Platform [Leitplanken für den Datensatzexport](https://experienceleague.adobe.com/de/docs/experience-platform/destinations/guardrails#dataset-exports)
+Siehe auch Experience Platform [Leitplanken für den Datensatzexport](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/guardrails#dataset-exports)
 
 
 ## Data Landing Zone
@@ -258,7 +258,7 @@ Siehe auch Experience Platform [Leitplanken für den Datensatzexport](https://ex
 
 >[!NOTE]
 >
->Die folgenden Verarbeitungszeiten sind Leitplanken, keine vertraglichen Service Level Agreements (SLAs). Die Latenz variiert je nach Kundenkonfiguration, Datenvolumen und Kundenanwendungen. Häufig sind die tatsächlichen Verarbeitungszeiten schneller. Die spezifischen Vertragsbedingungen und SLAs finden Sie in Ihrem Customer Journey Analytics-Vertrag. Weitere Informationen finden Sie [ Experience Platform ](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html?lang=de)Leitplanken für die Datenaufnahme).
+>Die folgenden Verarbeitungszeiten sind Leitplanken, keine vertraglichen Service Level Agreements (SLAs). Die Latenz variiert je nach Kundenkonfiguration, Datenvolumen und Kundenanwendungen. Häufig sind die tatsächlichen Verarbeitungszeiten schneller. Die spezifischen Vertragsbedingungen und SLAs finden Sie in Ihrem Customer Journey Analytics-Vertrag. Weitere Informationen finden Sie [ Experience Platform ](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html)Leitplanken für die Datenaufnahme).
 
 | Datenfluss | Erwartete Latenz |
 |---|---|
@@ -272,5 +272,12 @@ Siehe auch Experience Platform [Leitplanken für den Datensatzexport](https://ex
 | Adobe Analytics Source Connector-Aufstockung von weniger als 10 Milliarden Ereignissen (maximal 13 Monate historischer Daten) | &lt; 4 Wochen |
 | Zielgruppenveröffentlichung im Echtzeit-Kundenprofil, einschließlich der automatischen Erstellung des Streaming-Segments, sodass das Segment bereit für den Empfang der Daten ist. | ≈ 60 Minuten |
 | Aktualisierungshäufigkeit für Zielgruppen | Einmalige Aktualisierung: Latenz von weniger als 5 Minuten.<br/>Aktualisierung alle 4 Stunden, täglich, wöchentlich, monatlich (die Latenz wird mit der Aktualisierungsrate in Verbindung gebracht). |
+
+| Echtzeit-Berichterstellungslatenzen | Erwartete Latenz |
+|---|---|
+| Edge Network SDK/APIs in Edge Network | &lt; 7 Minuten |
+| Streaming-Connectoren | &lt; 17 Minuten |
+| Adobe Analytics-Quell-Connector | &lt; 17 Minuten |
+| Andere Quell-Connectoren (einschließlich Batch-Daten) | &lt; 25 Stunden |
 
 {style="table-layout:auto"}

@@ -7,15 +7,17 @@ role: Admin
 hide: true
 hidefromtoc: true
 badgePremium: label="Beta"
-source-git-commit: 9bd124ad651274b48052edc56bfb72358aa2d79a
+exl-id: 17f72954-085c-46a8-bc28-6af0a4eb159a
+source-git-commit: a6cdade9790ef4bc222eb5979b7370f7403b5ad5
 workflow-type: tm+mt
-source-wordcount: '2272'
+source-wordcount: '2271'
 ht-degree: 14%
 
 ---
 
-
 # Spiegeln und Verwenden modellbasierter Daten
+
+{{release-limited-testing}}
 
 In dieser Kurzanleitung wird erläutert, wie Sie mit der Funktion [Experience Platform Data Mirror for Customer Journey Analytics](data-mirror.md) modellbasierte Daten aus einer nativen Data Warehouse-Lösung in Adobe Experience Platform spiegeln können. Und dann benutzen wir diese Daten in Customer Journey Analytics.
 
@@ -172,7 +174,7 @@ Definieren Sie ein Schema, das diese Daten modelliert. Gehen Sie folgendermaßen
 
      ![Versionsdeskriptor](assets/platform-schema-id.png)
 
-   * Das Feld **[!UICONTROL personid]** wird zusammen mit **[!UICONTROL timestamp]** als Primärer Schlüssel **&#x200B;**&#x200B;konfiguriert. Wählen Sie ![Hinzufügen](/help/assets/icons/Add.svg) **[!UICONTROL Zusammengesetzten Primärschlüssel erstellen]** aus, um einen zusammengesetzten Schlüssel zu erstellen.
+   * Das Feld **[!UICONTROL personid]** wird zusammen mit **[!UICONTROL timestamp]** als Primärer Schlüssel **** konfiguriert. Wählen Sie ![Hinzufügen](/help/assets/icons/Add.svg) **[!UICONTROL Zusammengesetzten Primärschlüssel erstellen]** aus, um einen zusammengesetzten Schlüssel zu erstellen.
 
      ![Zusammengesetzter Schlüssel](assets/platform-schema-compositekey.png)
 
@@ -180,7 +182,7 @@ Definieren Sie ein Schema, das diese Daten modelliert. Gehen Sie folgendermaßen
 
      ![Personendeskriptor](assets/platform-schema-personid.png)
 
-   * Das Feld **[!UICONTROL Zeitstempel]** wird zusammen mit dem Feld **[!UICONTROL personid]** als **[!UICONTROL Primärer Schlüssel]**&#x200B;y konfiguriert. Das **[!UICONTROL Zeitstempel]**-Feld wird auch als **[!UICONTROL Zeitstempeldeskriptor]** konfiguriert. Sie müssen nur ein Feld als **[!UICONTROL Zeitstempeldeskriptor]** für zeitreihenmodellbasierte Daten definieren.
+   * Das Feld **[!UICONTROL Zeitstempel]** wird zusammen mit dem Feld **[!UICONTROL personid]** als Primärer Schlüssel **** konfiguriert. Das **[!UICONTROL Zeitstempel]**-Feld wird auch als **[!UICONTROL Zeitstempeldeskriptor]** konfiguriert. Sie müssen nur ein Feld als **[!UICONTROL Zeitstempeldeskriptor]** für zeitreihenmodellbasierte Daten definieren.
 
      ![Zeitstempel-Deskriptor](assets/platform-schema-timestamp.png)
 
@@ -218,7 +220,7 @@ Wählen **[!UICONTROL im Schritt]** Authentifizierung“ Folgendes aus:
 
    1. Klicken Sie auf **[!UICONTROL Weiter]**.
 
-  In der Experience Platform-Dokumentation finden Sie Einzelheiten zur Verbindung und Authentifizierung bei der Verwendung des [Azure Databricks](https://experienceleague.adobe.com/de/docs/experience-platform/sources/connectors/databases/databricks) oder [Snowflake](https://experienceleague.adobe.com/de/docs/experience-platform/sources/connectors/databases/snowflake)-Connectors.
+  In der Experience Platform-Dokumentation finden Sie Einzelheiten zur Verbindung und Authentifizierung bei der Verwendung des [Azure Databricks](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/databases/databricks) oder [Snowflake](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/databases/snowflake)-Connectors.
 
 
 ### Daten auswählen

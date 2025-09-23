@@ -7,7 +7,8 @@ role: Admin
 hide: true
 hidefromtoc: true
 badgePremium: label="Beta"
-source-git-commit: ebd6695cd5242c5443ccfbc5a38f337454f6de33
+exl-id: 87593d7d-9456-48f8-8d39-5c3d95fe51ec
+source-git-commit: b585187f112c2081a8e51bd84d9f95e75ceebdc3
 workflow-type: tm+mt
 source-wordcount: '460'
 ht-degree: 3%
@@ -15,6 +16,8 @@ ht-degree: 3%
 ---
 
 # Konfigurieren von Experience Platform
+
+{{release-limited-testing}}
 
 Die Experience Platform Data Mirror-Funktion für Customer Journey Analytics erfordert die ordnungsgemäße Konfiguration mehrerer Experience Platform-Komponenten:
 
@@ -52,9 +55,9 @@ Um den Quell-Connector für die unterstützten nativen Data Warehouse-Lösungen 
 
 Informationen zur Authentifizierung für die unterstützte Data Warehouse-native Lösung finden Sie in der entsprechenden Experience Platform-Dokumentation:
 
-* [Azure-Datenblöcke](https://experienceleague.adobe.com/de/docs/experience-platform/sources/connectors/databases/databricks)
-* [Google BigQuery](https://experienceleague.adobe.com/de/docs/experience-platform/sources/connectors/databases/bigquery)
-* [Snowflake](https://experienceleague.adobe.com/de/docs/experience-platform/sources/connectors/databases/snowflake)
+* [Azure-Datenblöcke](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/databases/databricks)
+* [Google BigQuery](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/databases/bigquery)
+* [Snowflake](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/databases/snowflake)
 
 
 ### Daten auswählen
@@ -89,5 +92,5 @@ Nachdem Sie die Einrichtung des Quell-Connectors abgeschlossen haben, wird ein D
 
 >[!MORELIKETHIS]
 >
->[Data Mirror-Schnellstartanleitung: Spiegeln und Verwenden modellbasierter Daten](data-mirror.md)
+>[Data Mirror-Schnellstartanleitung: Spiegeln und Verwenden modellbasierter Daten](model-based.md)
 >

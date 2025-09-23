@@ -7,7 +7,8 @@ role: Admin
 hide: true
 hidefromtoc: true
 badgePremium: label="Beta"
-source-git-commit: 9bd124ad651274b48052edc56bfb72358aa2d79a
+exl-id: 92cffcc5-d7a7-47f5-869d-1fc665594bf4
+source-git-commit: b585187f112c2081a8e51bd84d9f95e75ceebdc3
 workflow-type: tm+mt
 source-wordcount: '337'
 ht-degree: 0%
@@ -15,6 +16,8 @@ ht-degree: 0%
 ---
 
 # Konfigurieren von nativen Data Warehouse-Lösungen
+
+{{release-limited-testing}}
 
 Zur Unterstützung von Experience Platform Data Mirror für Customer Journey Analytics müssen die Daten, die Sie aus den drei unterstützten nativen Data Warehouse-Lösungen ([[!DNL Azure Databricks]](#azure-databricks), [[!DNL Google BigQuery]](#google-bigquery), [[!DNL Snowflake]](#snowflake)) verwenden möchten, für die Änderungsdatenerfassung aktiviert werden.
 
@@ -53,8 +56,8 @@ Weitere Informationen finden Sie im [[!DNL Azure Databricks] Handbuch zum Aktivi
 
 Lesen Sie die folgende Dokumentation, um zu erfahren, wie Sie die Änderungsdatenerfassung für Ihre [!DNL Azure Databricks]-Quellverbindung aktivieren:
 
-* [Erstellen  [!DNL Azure Databricks]  Basisverbindung](https://experienceleague.adobe.com/de/docs/experience-platform/sources/api-tutorials/create/databases/databricks).
-* [Erstellen einer Quellverbindung für eine Datenbank](https://experienceleague.adobe.com/de/docs/experience-platform/sources/api-tutorials/collect/database-nosql#create-a-source-connection).
+* [Erstellen  [!DNL Azure Databricks]  Basisverbindung](https://experienceleague.adobe.com/en/docs/experience-platform/sources/api-tutorials/create/databases/databricks).
+* [Erstellen einer Quellverbindung für eine Datenbank](https://experienceleague.adobe.com/en/docs/experience-platform/sources/api-tutorials/collect/database-nosql#create-a-source-connection).
 
 ## [!DNL Google BigQuery]
 
@@ -64,8 +67,8 @@ Weitere Informationen finden Sie im Handbuch zu [Datendefinitionssprachanweisung
 
 Lesen Sie die folgende Dokumentation, um zu erfahren, wie Sie die Änderungsdatenerfassung für Ihre [!DNL Google BigQuery]-Quellverbindung aktivieren:
 
-* [Erstellen  [!DNL Google BigQuery]  Basisverbindung](https://experienceleague.adobe.com/de/docs/experience-platform/sources/api-tutorials/create/databases/bigquery).
-* [Erstellen einer Quellverbindung für eine Datenbank](https://experienceleague.adobe.com/de/docs/experience-platform/sources/api-tutorials/collect/database-nosql#create-a-source-connection).
+* [Erstellen  [!DNL Google BigQuery]  Basisverbindung](https://experienceleague.adobe.com/en/docs/experience-platform/sources/api-tutorials/create/databases/bigquery).
+* [Erstellen einer Quellverbindung für eine Datenbank](https://experienceleague.adobe.com/en/docs/experience-platform/sources/api-tutorials/collect/database-nosql#create-a-source-connection).
 
 ## [!DNL Snowflake]
 
@@ -81,11 +84,11 @@ Weitere Informationen finden Sie im [[!DNL Snowflake] Handbuch zur Verwendung de
 
 Lesen Sie die folgende Dokumentation, um zu erfahren, wie Sie die Änderungsdatenerfassung für Ihre [!DNL Snowflake]-Quellverbindung aktivieren:
 
-* [Erstellen  [!DNL Snowflake]  Basisverbindung](https://experienceleague.adobe.com/de/docs/experience-platform/sources/api-tutorials/create/databases/snowflake).
-* [Erstellen einer Quellverbindung für eine Datenbank](https://experienceleague.adobe.com/de/docs/experience-platform/sources/api-tutorials/collect/database-nosql#create-a-source-connection).
+* [Erstellen  [!DNL Snowflake]  Basisverbindung](https://experienceleague.adobe.com/en/docs/experience-platform/sources/api-tutorials/create/databases/snowflake).
+* [Erstellen einer Quellverbindung für eine Datenbank](https://experienceleague.adobe.com/en/docs/experience-platform/sources/api-tutorials/collect/database-nosql#create-a-source-connection).
 
 
 >[!MORELIKETHIS]
 >
->[Data Mirror-Schnellstartanleitung: Spiegeln und Verwenden modellbasierter Daten](data-mirror.md)
+>[Data Mirror-Schnellstartanleitung: Spiegeln und Verwenden modellbasierter Daten](model-based.md)
 >
