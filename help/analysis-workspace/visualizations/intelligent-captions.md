@@ -1,5 +1,5 @@
 ---
-description: Erfahren Sie, wie Sie mit intelligenten Untertiteln Erkenntnisse in natürlicher Sprache generieren können, um Trends in Visualisierungen aufzudecken.
+description: Erfahren Sie, wie Sie intelligente Beschriftungen verwenden können, um Erkenntnisse in natürlicher Sprache zu generieren und so Trends in Visualisierungen darzustellen.
 title: Intelligente Beschriftungen
 feature: Visualizations
 exl-id: d32d3cda-ecbf-4ee7-a8b7-7c3c71b5df75
@@ -7,7 +7,7 @@ role: User
 source-git-commit: c4c8c0ff5d46ec455ca5333f79d6d8529f4cb87d
 workflow-type: tm+mt
 source-wordcount: '757'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -28,7 +28,7 @@ Intelligente Beschriftungen richten sich an:
 
 >[!BEGINSHADEBOX]
 
-Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [intelligente Beschriftungen](https://video.tv.adobe.com/v/3443147/?quality=12&learn=on&captions=ger){target="_blank"} finden Sie ein Demovideo.
+Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [intelligente Beschriftungen](https://video.tv.adobe.com/v/3420131/?quality=12&learn=on){target="_blank"} finden Sie ein Demovideo.
 
 >[!ENDSHADEBOX]
 
