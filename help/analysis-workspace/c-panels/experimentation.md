@@ -4,32 +4,24 @@ title: Experimentier-Bedienfeld
 feature: Panels
 exl-id: e11169b4-2c73-4dd4-bca7-c26189d60631
 role: User
-source-git-commit: 7e32ae7aa757a8ca47732416f0f883033611ea94
-workflow-type: ht
-source-wordcount: '2179'
-ht-degree: 100%
+source-git-commit: b013518d8f1782219dd2cf9e5b5a89b877e3b92d
+workflow-type: tm+mt
+source-wordcount: '2175'
+ht-degree: 97%
 
 ---
 
 # Experimentier-Bedienfeld {#experimentation-panel}
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="workspace_experimentation_button"
 >title="Experimentieren"
 >abstract="Erstellen Sie ein Bedienfeld, um verschiedene Anwendererlebnisse bzw. Marketing- oder Messaging-Varianten zu vergleichen. Außerdem können Sie dadurch feststellen, welche Variante die beste Lösung für ein bestimmtes Ergebnis ist."
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="workspace_experimentation_panel"
 >title="Experimentieren"
 >abstract="Vergleichen Sie verschiedene Anwendererlebnisse bzw. Marketing- oder Messaging-Varianten miteinander, um zu ermitteln, was für ein bestimmtes Ergebnis die beste Lösung ist. Geben Sie das Experiment, die damit zu vergleichende Kontrollvariante, die Erfolgsmetrik und die Normalisierungsmetrik an. Legen Sie optional Ober- und Untergrenzen für die Konfidenz fest."
-
-<!-- markdownlint-enable MD034 -->
 
 
 >[!BEGINSHADEBOX]
@@ -102,7 +94,7 @@ So verwenden Sie das Panel „Experimentieren“:
    | Einstellung | Definition |
    | --- | --- |
    | **[!UICONTROL Datumsbereich]** | Der Datumsbereich für das Panel „Experimentieren“ wird basierend auf dem ersten Ereignis, das in Customer Journey Analytics für das ausgewählte Experiment empfangen wurde, automatisch festgelegt. Sie können den Datumsbereich bei Bedarf auf einen spezifischeren Zeitraum beschränken oder erweitern. |
-   | **[!UICONTROL Experiment]** | Eine Reihe von Varianten eines Erlebnisses, die Endbenutzenden präsentiert wurden, um zu ermitteln, welche am besten dauerhaft beibehalten werden sollte. Ein Experiment besteht aus zwei oder mehr Varianten, von denen eine als Kontrollvariante gilt. Diese Einstellung wird vorab mit den Dimensionen gefüllt, die in den Datenansichten mit der Beschriftung **[!UICONTROL Experiment]** gekennzeichnet wurden, sowie mit den Experimentdaten der letzten drei Monate. |
+   | **[!UICONTROL Experiment]** | Eine Reihe von Varianten eines Erlebnisses, die Endbenutzenden präsentiert wurden, um zu ermitteln, welche am besten dauerhaft beibehalten werden sollte. Ein Experiment besteht aus zwei oder mehr Varianten, von denen eine als Kontrollvariante gilt. Diese Einstellung wird vorab mit den Dimensionen gefüllt, die in den Datenansichten mit der Beschriftung **[!UICONTROL Experiment]** gekennzeichnet wurden, sowie mit den Experimentdaten der letzten 6 Monate. |
    | **[!UICONTROL Kontrollvariante]** | Eine von zwei oder mehr Änderungen im Erlebnis eines Endbenutzers, die verglichen werden, um die bessere Alternative zu ermitteln. Eine Variante muss als Kontrolle ausgewählt werden und nur eine Variante kann als Kontrollvariante betrachtet werden. Diese Einstellung wird vorab mit den Dimensionen gefüllt, die in den Datenansichten mit der Beschriftung **[!UICONTROL Variante]** gekennzeichnet wurden. Mit dieser Einstellung werden die Variantendaten abgerufen, die mit diesem Experiment verknüpft sind. |
    | **[!UICONTROL Erfolgsmetriken]** ➊ | Die Metrik oder Metriken, die eine Benutzerin bzw. ein Benutzer verwendet. Die Variante mit dem wünschenswertesten Ergebnis für die Konversionsmetrik (egal ob am höchsten oder am niedrigsten) wird zur *Variante mit der besten Performance* eines Experiments erklärt. Sie können bis zu 5 Metriken hinzufügen. |
    | **[!UICONTROL Normalisierungsmetrik]** ➋ | Die Grundlage (**[!UICONTROL Globales Konto]** [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}, **[!UICONTROL Konto]** [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}, **[!UICONTROL Opportunity]** [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}, **[!UICONTROL Käufergruppe]** [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}, **[!UICONTROL Personen]**, **[!UICONTROL Sitzungen]** oder **[!UICONTROL Ereignisse]**), auf der ein Test ausgeführt wird. Beispielsweise kann ein Test die Konversionsraten verschiedener Varianten vergleichen, bei denen die **[!UICONTROL Konversionsrate]** als Seitenansicht berechnet wird. |
@@ -132,7 +124,7 @@ Für jede ausgewählte Erfolgsmetrik werden eine Visualisierung [Freiformtabelle
 
 2. **Variante mit der besten Performance**: Wenn ein Experiment als endgültig deklariert wird, wird die Variante mit der höchsten Konversionsrate als Variante mit der besten Performance gekennzeichnet. Beachten Sie, dass diese Variante entweder die Kontroll- bzw. Baseline-Variante sein muss oder eine der Varianten, die die 95-%-ige, *jedrzeit* gültige Konfidenzschwelle überschreiten (mit Benjamini-Hochberg-Korrekturen).
 
-3. **Konversionsrate**: Die angezeigte Konversionsrate ist ein Verhältnis zwischen dem Wert der Erfolgsmetrik ➊ und dem Wert der Normalisierungsmetrik ➋. Beachten Sie, dass dieser Wert manchmal größer als 1 sein kann, wenn die Metrik nicht binär ist (1 oder 0 für jede Einheit im Experiment)
+3. **Konversionsrate**: Die angezeigte Konversionsrate ist ein Verhältnis zwischen dem Wert der Erfolgsmetrik ➊ dem Wert der Normalisierungsmetrik ➋. Beachten Sie, dass dieser Wert manchmal größer als 1 sein kann, wenn die Metrik nicht binär ist (1 oder 0 für jede Einheit im Experiment)
 
 4. **Anstieg**: Die Zusammenfassung des Experimentberichts zeigt den Anstieg im Vergleich zur Baseline und ist somit ein Messwert für die prozentuale Verbesserung der Konversionsrate einer bestimmten Variante gegenüber der Baseline. Genau bestimmt ist dies der Performance-Unterschied zwischen einer bestimmten Variante und der Baseline, geteilt durch die Performance der Baseline und ausgedrückt in Prozent.
 
@@ -188,8 +180,8 @@ Beim Erstellen der berechneten Metrik haben berechnete Metriken, die nicht mit d
 
 ## Verwenden von berechneten Metriken im Panel Experimentieren
 
-In diesem Blogpost finden Sie Informationen zur [Verwendung berechneter Metriken im Panel Experimentieren](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/using-derived-metrics-in-cja-s-experimentation-panel/ba-p/593119?profile.language=de).
+In diesem Blogpost finden Sie Informationen zur [Verwendung berechneter Metriken im Panel Experimentieren](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/using-derived-metrics-in-cja-s-experimentation-panel/ba-p/593119).
 
 >[!MORELIKETHIS]
->[Meistern von Experimentenen in Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/mastering-adobe-customer-journey-analytics-experimentation-your/ba-p/732338?profile.language=de)
+>[Meistern von Experimentenen in Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/mastering-adobe-customer-journey-analytics-experimentation-your/ba-p/732338)
 >
