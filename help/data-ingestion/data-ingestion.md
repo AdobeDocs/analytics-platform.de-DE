@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: ead96b72-40f1-4ce9-8d91-c8ceea6c4458
 role: Admin
-source-git-commit: 8071e8d5e1ab7e9cfc5037d710361a4d10285704
-workflow-type: ht
-source-wordcount: '957'
-ht-degree: 100%
+source-git-commit: ec56bc657961b2e4e8318ab14cd676288398462f
+workflow-type: tm+mt
+source-wordcount: '1089'
+ht-degree: 85%
 
 ---
 
@@ -20,23 +20,30 @@ Es gibt mehrere Möglichkeiten, um Daten in Customer Journey Analytics aufzunehm
 >
 >Doch alle haben gemeinsam, dass die Daten, die in Customer Journey Analytics _verwendet_ werden sollen, eigentlich in Adobe Experience Platform _aufgenommen_ werden müssen.
 
-Sehen Sie sich dazu die übergeordnete Customer Journey Analytics-Architektur an, die zuvor in der [Übersicht](https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-overview/cja-b2c-overview/cja-overview) dargestellt wurde:
 
-![In diesem Abschnitt wird die Architektur von Customer Journey Analytics beschrieben](./assets/cja-architecture.png)
+Die allgemeine Architektur von Customer Journey Analytics ist im Folgenden dargestellt:
 
-Der Datensatz in der obigen Architektur kann aus verschiedenen Quellen stammen:
+![Customer Journey Analytics-Architektur](/help/getting-started/assets/cja-overview.svg)
 
-- Batch-Daten
+Diese Architektur veranschaulicht, wie Customer Journey Analytics Folgendes ermöglicht:
 
-- Streaming-Daten
+* Kombinieren mehrerer Datensätze ![Daten](/help/assets/icons/Data.svg) in einer [Verbindung](/help/connections/overview.md).
+* Definieren und konfigurieren ![ Dimensionen ](/help/assets/icons/Dimensions.svg) Metriken ![Ereignis](/help/assets/icons/Event.svg) in einer [Datenansicht](/help/data-views/data-views.md) basierend auf den Feldern, die in den von Ihnen in Ihrer Verbindung definierten Datensätzen verfügbar sind.
+* Erstellen Sie Berichte ![ViewTable](/help/assets/icons/ViewTable.svg) und Visualisierungen (wie Linie ![Linie](/help/assets/icons/GraphTrend.svg) und Bereich ![Bereich](/help/assets/icons/GraphAreaStacked.svg)) in [Projekten](/help/analysis-workspace/home.md) basierend auf den Dimensionen und Metriken aus Ihren Datenansichten.
 
-- Daten aus einer aktuellen Adobe Analytics-Bereitstellung
+Die Datensätze in der Architektur können aus verschiedenen Quellen stammen:
 
-- Daten aus dem Tracking Ihrer Website/App unter Verwendung des Adobe Experience Platform Web/Mobile SDK
+* Batch-Daten
 
-- Daten aus dem Tracking einer Desktop-Anwendung, eines Konsolenspiels, einer Set-top-Box oder eines IoT-Geräts mithilfe des Adobe Experience Platform Edge Network-Server-API oder
+* Streaming-Daten
 
-- Daten von einem Third-Party-Datenanbieter, für die Adobe einen Quell-Connector bereitstellt
+* Daten aus einer aktuellen Adobe Analytics-Bereitstellung
+
+* Daten aus dem Tracking Ihrer Website/App unter Verwendung des Adobe Experience Platform Web/Mobile SDK
+
+* Daten aus dem Tracking einer Desktop-Anwendung, eines Konsolenspiels, einer Set-top-Box oder eines IoT-Geräts mithilfe des Adobe Experience Platform Edge Network-Server-API oder
+
+* Daten von einem Third-Party-Datenanbieter, für die Adobe einen Quell-Connector bereitstellt
 
 Von diesen Datensätzen kann es viele geben.
 
@@ -48,11 +55,11 @@ Sie können Ihre Ereignisdaten innerhalb von 90 Minuten (SLT) in Customer Journ
 
 Beachten Sie, dass sich diese Funktion je nach dem von Ihrem Unternehmen erworbenen SKU-Paket unterscheidet:
 
-- Priority Ingestion Basic: 24 Stunden alte Daten werden innerhalb von 90 Minuten mit SLT verarbeitet (verfügbar für **CJA Foundation** und **CJA Select**)
+* Priority Ingestion Basic: 24 Stunden alte Daten werden innerhalb von 90 Minuten mit SLT verarbeitet (verfügbar für **CJA Foundation** und **CJA Select**)
 
-- Priority Ingestion Intermediate: 72 Stunden alte Daten werden innerhalb von 90 Minuten mit SLT verarbeitet (verfügbar für **CJA Prime**)
+* Priority Ingestion Intermediate: 72 Stunden alte Daten werden innerhalb von 90 Minuten mit SLT verarbeitet (verfügbar für **CJA Prime**)
 
-- Priority Ingestion Advanced: 1 Woche alte Daten werden innerhalb von 90 Minuten mit SLT verarbeitet (verfügbar für **CJA Ultimate**)
+* Priority Ingestion Advanced: 1 Woche alte Daten werden innerhalb von 90 Minuten mit SLT verarbeitet (verfügbar für **CJA Ultimate**)
 
 ## Aufnehmen und Verwenden von Daten aus Adobe Analytics
 
@@ -98,6 +105,12 @@ Weitere Informationen dazu finden Sie unter [Aufnehmen und Verwenden von Streami
 Sie verfügen über Daten aus einer Quelle, die von einem Quell-Connector unterstützt wird. Quell-Connectoren sind konfigurierbar und ermöglichen Ihnen, Daten von Adobe sowie First-Party- und Third-Party-Anwendungen in Adobe Experience Platform aufzunehmen. Eine Übersicht über die verfügbaren Quell-Connectoren finden Sie unter [Übersicht über Quell-Connectoren](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=de). Mithilfe des Quell-Connectors können Sie einfach Daten aus der Quelle in Adobe Experience Platform aufnehmen und diese dann mit Daten aus anderen Kanälen und Datenquellen in Customer Journey Analytics verwenden, kombinieren und analysieren.
 
 Weitere Informationen finden Sie unter [Aufnehmen und Verwenden von Daten über Quell-Connectoren](./sources.md).
+
+## Aufnehmen und Verwenden von Ad-hoc-Daten
+
+Sie verfügen über Ad-hoc-Daten, die nur einen einzigen Datensatz in Experience Platform erfordern und nicht die Konfiguration eines Experience-Datenmodell (XDM)-Schemas erfordern. Dieses Szenario wird als Ad-hoc-Schema bezeichnet. Ad-hoc-Schemata werden in verschiedenen Datenaufnahme-Workflows für Experience Platform verwendet, einschließlich der Aufnahme von CSV-Dateien und der Erstellung bestimmter Arten von Quellverbindungen.
+
+Siehe [Aufnehmen und Verwenden von Ad-hoc-Daten](./adhoc.md)
 
 >[!MORELIKETHIS]
 >

@@ -5,10 +5,10 @@ exl-id: f4f692c9-5951-4fa2-8e9f-5eeff0f79d10
 solution: Customer Journey Analytics
 feature: Basics
 role: User, Admin
-source-git-commit: b14bc43a0cdf4901c5df171a116943beb2124991
-workflow-type: ht
-source-wordcount: '985'
-ht-degree: 100%
+source-git-commit: 0f445d409d276072ac649b94c12b94d3a59e7925
+workflow-type: tm+mt
+source-wordcount: '1046'
+ht-degree: 93%
 
 ---
 
@@ -18,12 +18,18 @@ Customer Journey Analytics ist eine Analytics-Lösung der nächsten Generation v
 
 Die allgemeine Architektur von Customer Journey Analytics ist im Folgenden dargestellt:
 
-![In diesem Abschnitt wird die Architektur von Customer Journey Analytics erläutert](assets/cja-architecture.png)
+![Customer Journey Analytics-Architektur](assets/cja-overview.svg)
+
+Diese Architektur veranschaulicht, wie Customer Journey Analytics Folgendes ermöglicht:
+
+* Kombinieren mehrerer Datensätze ![Daten](/help/assets/icons/Data.svg) in einer [Verbindung](/help/connections/overview.md).
+* Definieren und konfigurieren ![ Dimensionen ](/help/assets/icons/Dimensions.svg) Metriken ![Ereignis](/help/assets/icons/Event.svg) in einer [Datenansicht](/help/data-views/data-views.md) basierend auf den Feldern, die in den von Ihnen in Ihrer Verbindung definierten Datensätzen verfügbar sind.
+* Erstellen Sie Berichte ![ViewTable](/help/assets/icons/ViewTable.svg) und Visualisierungen (wie Linie ![Linie](/help/assets/icons/GraphTrend.svg) und Bereich ![Bereich](/help/assets/icons/GraphAreaStacked.svg)) in [Projekten](/help/analysis-workspace/home.md) basierend auf den Dimensionen und Metriken aus Ihren Datenansichten.
 
 
 >[!BEGINSHADEBOX]
 
-Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Customer Journey-Analysen: Analytik für das Erlebnis-Business](https://video.tv.adobe.com/v/36221/?quality=12&learn=on&captions=ger){target="_blank"} finden Sie ein Einführungsvideo zu Customer Journey Analytics.
+Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Customer Journey-Analysen: Analytik für das Erlebnis-Business](https://video.tv.adobe.com/v/30090/?quality=12&learn=on){target="_blank"} finden Sie ein Einführungsvideo zu Customer Journey Analytics.
 
 >[!ENDSHADEBOX]
 
@@ -93,13 +99,13 @@ Von der Datenerfassung bis zum direkten SQL-Zugriff sind mehrere Komponenten von
 
 >[!BEGINSHADEBOX]
 
-Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Arbeiten mit Daten in Customer Journey Analytics](https://video.tv.adobe.com/v/35931/?quality=12&learn=on&captions=ger){target="_blank"} finden Sie ein Einführungsvideo zum Arbeiten mit Daten in Customer Journey Analytics.
+Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Arbeiten mit Daten in Customer Journey Analytics](https://video.tv.adobe.com/v/32112/?quality=12&learn=on){target="_blank"} finden Sie ein Einführungsvideo zum Arbeiten mit Daten in Customer Journey Analytics.
 
 >[!ENDSHADEBOX]
 
 >[!BEGINSHADEBOX]
 
-Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Architektur und Integration](https://video.tv.adobe.com/v/330410/?quality=12&learn=on&captions=ger){target="_blank"} finden Sie ein Einführungsvideo zur Architektur und Integration von Customer Journey Analytics.
+Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Architektur und Integration](https://video.tv.adobe.com/v/32483/?quality=12&learn=on){target="_blank"} finden Sie ein Einführungsvideo zur Architektur und Integration von Customer Journey Analytics.
 
 >[!ENDSHADEBOX]
 
