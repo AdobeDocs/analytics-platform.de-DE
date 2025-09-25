@@ -8,9 +8,9 @@ hide: true
 hidefromtoc: true
 badgePremium: label="Beta"
 exl-id: 87593d7d-9456-48f8-8d39-5c3d95fe51ec
-source-git-commit: 8946f1bc57cc856adeac4ee0a96799040f7e698c
+source-git-commit: 578e19d8a8205bdfa034900c45d7d4a2d8f6a797
 workflow-type: tm+mt
-source-wordcount: '458'
+source-wordcount: '471'
 ht-degree: 3%
 
 ---
@@ -29,7 +29,7 @@ Im Folgenden finden Sie Details, die Sie bei der Konfiguration jeder dieser Komp
 
 ## Schema
 
-Sie müssen ein modellbasiertes Schema erstellen, das die native Data Warehouse-Tabelle modelliert, die Sie spiegeln möchten. Stellen Sie beim Erstellen des modellbasierten Schemas sicher, dass die folgenden Anforderungen erfüllt sind:
+Sie müssen ein [modellbasiertes Schema“ erstellen](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/model-based){target="_blank"} das die native Data Warehouse-Tabelle modelliert, die Sie spiegeln möchten. Stellen Sie beim Erstellen des modellbasierten Schemas sicher, dass die folgenden Anforderungen erfüllt sind:
 
 * Wenn Sie nach dem Typ des modellbasierten Schemas gefragt werden, stellen Sie sicher, dass Sie die manuelle Option auswählen.
 * Wählen Sie das entsprechende Schema für den Datentyp aus. Beachten Sie, dass Experience Platform Data Mirror hauptsächlich für Zeitreihendaten (z. B. Ereignisdaten) verwendet wird.
@@ -55,9 +55,9 @@ Um den Quell-Connector für die unterstützten nativen Data Warehouse-Lösungen 
 
 Informationen zur Authentifizierung für die unterstützte Data Warehouse-native Lösung finden Sie in der entsprechenden Experience Platform-Dokumentation:
 
-* [Azure-Datenblöcke](https://experienceleague.adobe.com/de/docs/experience-platform/sources/connectors/databases/databricks)
-* [Google BigQuery](https://experienceleague.adobe.com/de/docs/experience-platform/sources/connectors/databases/bigquery)
-* [Snowflake](https://experienceleague.adobe.com/de/docs/experience-platform/sources/connectors/databases/snowflake)
+* [Azure-Datenblöcke](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/databases/databricks)
+* [Google BigQuery](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/databases/bigquery)
+* [Snowflake](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/databases/snowflake)
 
 
 ### Daten auswählen
@@ -93,4 +93,5 @@ Nachdem Sie die Einrichtung des Quell-Connectors abgeschlossen haben, wird ein D
 >[!MORELIKETHIS]
 >
 >[Data Mirror-Schnellstartanleitung: Spiegeln und Verwenden modellbasierter Daten](model-based.md)
->
+>>[Data Mirror (Dokumentation zu Experience Platform)](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-mirror/overview)
+>>[Modellbasierte Schemata (Dokumentation zu Experience Platform)](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/model-based)
