@@ -6,27 +6,25 @@ feature: Basics
 role: Admin
 hide: true
 hidefromtoc: true
-source-git-commit: 9bd124ad651274b48052edc56bfb72358aa2d79a
+exl-id: 17b5842f-dc81-481f-8b21-dc90a133adcf
+source-git-commit: e5975a7bb60f4a2386997024c4615f95be648363
 workflow-type: tm+mt
-source-wordcount: '1540'
-ht-degree: 28%
+source-wordcount: '1623'
+ht-degree: 23%
 
 ---
 
-
 # Aufnehmen und Verwenden von Ad-hoc-Daten
 
-In dieser Kurzanleitung wird erläutert, wie Sie Ad-hoc-Daten in Adobe Experience Platform aufnehmen und diese Daten dann in Customer Journey Analytics verwenden können.
+In dieser Kurzanleitung wird erläutert, wie Sie Ad-hoc-Daten in Experience Platform aufnehmen und diese Daten dann in Customer Journey Analytics verwenden können.
 
 Gehen Sie dazu folgendermaßen vor:
 
-- **Erstellen Sie einen Datensatz mit einer CSV** Datei in Experience Platform , um das Modell (Schema) der zu erfassenden Daten zu definieren und um festzulegen, wo die Daten (Datensatz) erfasst werden sollen.
+- **Erstellen eines Datensatzes mit einer CSV-** in Experience Platform. Dieser Workflow definiert das Modell (Schema) der zu erfassenden Daten und legt fest, wo die Daten (Datensatz) erfasst werden sollen.
 
-- **Verwenden Sie einen Quell-Connector** in Experience Platform, um Ihre Daten in den konfigurierten Datensatz zu übertragen.
+- **Richten Sie in Customer Journey Analytics eine Verbindung ein**. Diese Verbindung sollte (zumindest) Ihren Experience Platform-Ad-hoc-Datensatz enthalten.
 
-- **Richten Sie in Customer Journey Analytics eine Verbindung ein**. Diese Verbindung sollte (zumindest) Ihren Adobe Experience Platform-Datensatz enthalten.
-
-- **Richten Sie in Customer Journey Analytics eine Datenansicht ein**, um Metriken und Dimensionen zu definieren, die Sie in Analysis Workspace verwenden möchten.
+- **Richten Sie eine Datenansicht ein** in Customer Journey Analytics, um Metriken und Dimensionen aus den Feldern in Ihren Ad-hoc-Daten zu definieren, die Sie in Analysis Workspace verwenden möchten.
 
 - **Richten Sie in Customer Journey Analytics ein Projekt ein**, um Berichte und Visualisierungen zu erstellen.
 
@@ -34,7 +32,7 @@ Gehen Sie dazu folgendermaßen vor:
 
 >[!NOTE]
 >
->Diese Kurzanleitung ist eine vereinfachte Anleitung zur Aufnahme von Ad-hoc-Daten mithilfe von in Adobe Experience Platform und deren Verwendung in Customer Journey Analytics. Es wird dringend empfohlen, die zusätzlichen Artikel zu lesen, auf die verwiesen wird.
+>Diese Kurzanleitung ist eine vereinfachte Anleitung zur Aufnahme von Ad-hoc-Daten mithilfe von in Experience Platform und zur Verwendung dieser Ad-hoc-Daten in Customer Journey Analytics. Es wird dringend empfohlen, die zusätzlichen Artikel zu lesen, auf die verwiesen wird.
 
 
 ## Datensatz mit einer CSV-Datei erstellen
@@ -53,14 +51,14 @@ Für diese Kurzanleitung sollten Sie eine CSV-Datei verwenden, die Suchdaten dar
 >
 >Verwenden Sie Ad-hoc-Datensätze und -Schemata für auf Datensätzen basierende (Lookup-, Profil-) Daten. Ad-hoc-Datensätze und -Schemata sind weniger geeignet und sollten nicht für Zeitreihendaten (Ereignis, Zusammenfassung) berücksichtigt werden.
 
-Sie müssen kein XDM-Schema für Ad-hoc-Daten erstellen. Adobe Experience Platform unterstützt einen Workflow, der auf den Daten in der CSV-Datei basiert:
+Sie müssen kein XDM-Schema für Ad-hoc-Daten erstellen. Experience Platform unterstützt einen Workflow, der auf den Daten in der CSV-Datei basiert:
 
-1. Erstellt ein Ad-hoc-Schema entsprechend den Spalten der CSV-Datei.
-1. Erstellt einen Datensatz basierend auf dem Ad-hoc-Schema, das die Daten aus der CSV-Datei enthält.
+1. Erstellt automatisch ein Ad-hoc-Schema. Dieses Schema entspricht den Spalten der CSV-Datei.
+1. Erstellt einen Datensatz mit den Daten aus der CSV-Datei.
 
 So starten Sie den Workflow:
 
-1. Wählen Sie in der Adobe Experience Platform-Benutzeroberfläche in der linken Leiste die Option **[!UICONTROL Workflows]**.
+1. Wählen Sie in der Experience Platform-Benutzeroberfläche in der linken Leiste die Option **[!UICONTROL Workflows]**.
 1. Wählen Sie ![DataAdd](/help/assets/icons/DataAdd.svg) **[!UICONTROL Datensatz aus CSV-Datei erstellen]** aus.
 1. Wählen **[!UICONTROL Launch]** im rechten Bereich aus.
 1. Im Assistenten **[!UICONTROL Workflows]** > **[!UICONTROL Datensatz aus CSV-Datei]**:
@@ -80,15 +78,15 @@ So starten Sie den Workflow:
 
       1. Wählen Sie **[!UICONTROL Beenden]** aus.
 
-Die Daten werden vorbereitet und hochgeladen. Nachdem die Daten erfolgreich hochgeladen wurden, werden Sie in der Adobe Experience Platform **[!UICONTROL Benutzeroberfläche zu]** Datensätze“ weitergeleitet.<br/> Sie sehen die **[!UICONTROL Datensatzaktivität]** für Ihren **[!UICONTROL Beispieldaten aus CSV]**-Datensatz mit dem Status ![StatusOrange](/help/assets/icons/StatusOrange.svg)**[!UICONTROL Processing]**.
+Nachdem die Daten erfolgreich vorbereitet und hochgeladen wurden, werden Sie zu **[!UICONTROL Datensätze]** in der Experience Platform-Oberfläche weitergeleitet.<br/> Sie sehen die **[!UICONTROL Datensatzaktivität]** für Ihren **[!UICONTROL Beispieldaten aus CSV]**-Datensatz mit dem Status ![StatusOrange](/help/assets/icons/StatusOrange.svg)**[!UICONTROL Processing]**.
 
 ![Datensatzaktivität für Ad-hoc-Daten](assets/datasets-dataset-activity.png)
 
 So überprüfen Sie die Ad-hoc-Daten:
 
-1. Wählen Sie in der Adobe Experience Platform-Benutzeroberfläche in der linken Leiste die Option **[!UICONTROL Datensätze]**.
+1. Wählen Sie in der Experience Platform-Benutzeroberfläche in der linken Leiste die Option **[!UICONTROL Datensätze]**.
 1. Wählen Sie die **[!UICONTROL Durchsuchen]** in **[!UICONTROL Datensätze]** aus. Ihr Datensatz sollte aufgelistet sein.
-1. Wählen Sie den Namen des Schemas aus der Spalte **[!UICONTROL Schema]** aus. Beispiel: **[!UICONTROL Beispieldaten aus CSV…]**.
+1. Wählen Sie den Namen des Schemas aus der Spalte **[!UICONTROL Schema]** aus. Beispiel: **[!UICONTROL Beispieldaten aus CSV…]**
 
    ![Schema für Ad-hoc-Datensatz auswählen](assets/adhoc-schema-selection.png)
 
@@ -100,13 +98,19 @@ In der Benutzeroberfläche **[!UICONTROL Schemata]** > **[!UICONTROL Beispieldat
 
   ![Ad-hoc-Schema](dataset/../assets/adhoc-schema.png)
 
+  >[!NOTE]
+  >
+  >Der Workflow definiert, dass alle Felder im Schema vom Typ „Zeichenfolge“ sind. Sie können diesen Typ zu einem späteren Zeitpunkt nicht mehr ändern. Wenn Sie mehr Flexibilität bei der Definition eines Ad-hoc-Schemas benötigen, sollten Sie [die API zum Erstellen eines Ad-hoc-Schemas verwenden](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/tutorials/ad-hoc) und dann den Workflow [Datensatz aus Schema erstellen](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/user-guide#schema) verwenden.
+  > 
+
+
 
 
 ## Einrichten einer Verbindung
 
-Um den Adobe Experience Platform-Datensatz in Customer Journey Analytics zu verwenden, erstellen Sie eine Verbindung, die die aus dem Workflow resultierenden Ad-hoc-Daten enthält.
+Um den Experience Platform-Datensatz in Customer Journey Analytics zu verwenden, erstellen Sie eine Verbindung, die den Ad-hoc-Datensatz enthält, der aus dem [Workflow](#create-a-dataset-with-a-csv-file)
 
-Mithilfe einer Verbindung können Sie Datensätze aus Adobe Experience Platform in Analysis Workspace integrieren. Um über diese Datensätze zu berichten, müssen Sie zunächst eine Verbindung zwischen den Datensätzen in Adobe Experience Platform und Workspace herstellen.
+Mithilfe einer Verbindung können Sie Datensätze aus Experience Platform in Workspace integrieren. Um über diese Datensätze zu berichten, müssen Sie zunächst eine Verbindung zwischen den Datensätzen in Experience Platform und Workspace herstellen.
 
 Gehen Sie folgendermaßen vor, um eine Verbindung zu erstellen:
 
@@ -126,7 +130,7 @@ Gehen Sie folgendermaßen vor, um eine Verbindung zu erstellen:
 
 1. Im Schritt **[!UICONTROL Auswählen von Datensätzen]** in **[!UICONTROL Datensätze hinzufügen]**:
 
-   1. Wählen Sie den zuvor erstellten Datensatz aus, z. B. **[!UICONTROL Beispieldaten aus CSV]** und jeden anderen Datensatz, den Sie in Ihre Verbindung einbeziehen möchten.
+   1. Wählen Sie den zuvor erstellten Datensatz aus, z. B. **[!UICONTROL Beispieldaten aus CSV]** und jeden anderen Datensatz, den Sie in Ihre Verbindung einbeziehen möchten. Die Ad-hoc-Datensätze haben den **[!UICONTROL Adhoc]**[!UICONTROL Datensatztyp].
 
       ![Hinzufügen von Datensätzen](./assets/cja-connections-adhoc-2.png)
 
@@ -153,7 +157,7 @@ Siehe [Ad-hoc-Datensatzeinstellungen](/help/connections/create-connection.md#adh
 
 >[!IMPORTANT]
 >
->Zusätzlich zur allgemeinen Empfehlung, keine Ad-hoc-Datensätze und -Schemata für Zeitreihendaten zu verwenden, sollten Sie **nicht** den Workflow **[!UICONTROL Datensatz aus CSV erstellen]** für Zeitreihendaten verwenden. Der Workflow, der das Ad-hoc-Schema generiert, definiert alle Felder als vom Typ Zeichenfolge, die Sie nachträglich nicht mehr ändern können. Wenn Sie einen zeitreihenbasierten Datensatz (Ereignis oder Zusammenfassung) zu einer Verbindung hinzufügen, erfordert dieser Datensatztyp die Definition von mindestens einem Feld des Typs DateTime. <br/>Wenn Sie Ad-hoc-Zeitreihendaten verwenden müssen, sollten Sie [die API zum Erstellen eines Ad-hoc-Schemas verwenden](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/tutorials/ad-hoc#token_type=bearer&expires_in=43197438) und dann den Workflow [Erstellen eines Datensatzes aus einem Schema](https://experienceleague.adobe.com/de/docs/experience-platform/catalog/datasets/user-guide#schema) verwenden.
+>Zusätzlich zur allgemeinen Empfehlung, keine Ad-hoc-Datensätze und -Schemata für Zeitreihendaten zu verwenden, können Sie den **[!UICONTROL Datensatz aus CSV erstellen]** für Zeitreihendaten nicht verwenden. Dieser Workflow definiert alle Felder als vom Typ Zeichenfolge, die Sie nachträglich nicht mehr ändern können. Wenn Sie einen zeitreihenbasierten Datensatz (Ereignis oder Zusammenfassung) zu einer Verbindung hinzufügen, erfordert dieser Datensatztyp die Definition von mindestens einem Feld des Typs DateTime.<br/>Wenn Sie Ad-hoc-Zeitreihendaten verwenden müssen, sollten Sie [die API zum Erstellen eines Ad-hoc-Schemas verwenden](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/ad-hoc#token_type=bearer&expires_in=43197438) und dann den Workflow [Erstellen eines Datensatzes aus einem Schema](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/user-guide#schema) verwenden.
 
 
 Nachdem Sie eine [Verbindung](/help/connections/overview.md) erstellt haben, können Sie verschiedene Verwaltungsaufgaben ausführen, z. B. [Auswählen und Kombinieren von ](/help/connections/combined-dataset.md), [Überprüfen des Status der Datensätze einer Verbindung und des Status der Datenaufnahme](/help/connections/manage-connections.md) und mehr.
@@ -180,7 +184,17 @@ Gehen Sie folgendermaßen vor, um eine Datenansicht zu erstellen:
 
 1. Im Schritt **[!UICONTROL Komponenten]**:
 
-   1. Fügen Sie alle Ad-hoc-Schemafelder und/oder Standardkomponenten hinzu, die Sie in die Komponentenfelder **[!UICONTROL METRIKEN]** oder **[!UICONTROL DIMENSIONEN]** aufnehmen möchten.
+   1. Fügen Sie alle Schemafelder und/oder Standardkomponenten hinzu, die Sie in die Komponentenfelder **[!UICONTROL METRIKEN]** oder **[!UICONTROL DIMENSIONEN]** aufnehmen möchten. Stellen Sie sicher, dass Sie relevante Felder aus dem Datensatz hinzufügen, der die Ad-hoc-Daten enthält. Zugriff auf diese Felder:
+
+      1. Wählen Sie **[!UICONTROL Ereignis-Datensätze]** aus.
+      1. Wählen Sie **[!UICONTROL Ad-hoc- und modellbasierte Felder]**.
+
+         ![Datenansicht - Ad-hoc-Komponenten](assets/cja-dataview-components-adhoc.png)
+
+      1. Ziehen Sie Felder aus den Ad-hoc-Schemata per Drag-and-Drop auf **[!UICONTROL METRIKEN]** oder **[!UICONTROL DIMENSIONEN]**.
+
+
+
    1. Optional können Sie [abgeleitete Felder](/help/data-views/derived-fields/derived-fields.md) verwenden, um eines der Ad-hoc-Felder von seinem standardmäßigen Zeichenfolgentyp und -format in einen anderen Typ oder ein anderes Format zu ändern.
 
    1. Wählen Sie **[!UICONTROL Speichern und fortfahren]** aus.
@@ -208,7 +222,7 @@ Gehen Sie folgendermaßen vor, um ein Projekt zu erstellen:
 
 1. Wählen Sie Ihre [Datenansicht](#set-up-a-data-view) aus der Liste aus.
 
-1. Ziehen Sie zum Erstellen Ihres ersten Berichts Dimensionen und Metriken per Drag-and-Drop auf die [!UICONTROL Freiformtabelle] im [!UICONTROL Panel]. Einschließen dieser Metriken oder Dimensionen basierend auf Ihren Ad-hoc-Daten.
+1. Ziehen Sie zum Erstellen Ihres ersten Berichts Dimensionen und Metriken per Drag-and-Drop auf die [!UICONTROL Freiformtabelle] im [!UICONTROL Panel]. Einschließlich der Metriken oder Dimensionen, die auf Ihren Ad-hoc-Daten basieren.
 
 Weitere Informationen zum Erstellen von Projekten und zum Durchführen einer Analyse mithilfe von Komponenten, Visualisierungen und Bedienfeldern finden Sie unter [Analysis Workspace – Überblick](../analysis-workspace/home.md).
 

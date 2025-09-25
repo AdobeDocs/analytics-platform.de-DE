@@ -8,9 +8,9 @@ hide: true
 hidefromtoc: true
 badgePremium: label="Beta"
 exl-id: 17f72954-085c-46a8-bc28-6af0a4eb159a
-source-git-commit: a6cdade9790ef4bc222eb5979b7370f7403b5ad5
+source-git-commit: e5975a7bb60f4a2386997024c4615f95be648363
 workflow-type: tm+mt
-source-wordcount: '2271'
+source-wordcount: '2268'
 ht-degree: 14%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 14%
 
 {{release-limited-testing}}
 
-In dieser Kurzanleitung wird erläutert, wie Sie mit der Funktion [Experience Platform Data Mirror for Customer Journey Analytics](data-mirror.md) modellbasierte Daten aus einer nativen Data Warehouse-Lösung in Adobe Experience Platform spiegeln können. Und dann benutzen wir diese Daten in Customer Journey Analytics.
+In dieser Kurzanleitung wird erläutert, wie Sie [Experience Platform Data Mirror for Customer Journey Analytics](data-mirror.md) verwenden können, um modellbasierte Daten aus einer nativen Data Warehouse-Lösung in Adobe Experience Platform zu spiegeln. Und dann benutzen wir diese Daten in Customer Journey Analytics.
 
 Um diesen Anwendungsfall zu erreichen, müssen Sie:
 
@@ -117,12 +117,12 @@ Für Experience Platform Data Mirror für Customer Journey Analytics müssen die
    SET OPTIONS (enable_change_history = TRUE);
    ```
 
-Die Daten in der Tabelle in Ihrer Data Warehouse-nativen Lösung sind für die Funktion Experience Platform Data Mirror for Customer Journey Analytics bereit.
+Die Daten in der Tabelle in Ihrer Data Warehouse-nativen Lösung sind für Experience Platform Data Mirror für Customer Journey Analytics bereit.
 
 
 ## Einrichten eines Schemas
 
-Um Daten in Experience Platform zu spiegeln, müssen Sie zunächst das Schema für die Daten definieren. Alle Daten, die Sie in Experience Platform spiegeln möchten und die die Funktion Experience Platform Data Mirror for Customer Journey Analytics verwenden, müssen einem modellbasierten Schema entsprechen.
+Um Daten in Experience Platform zu spiegeln, müssen Sie zunächst das Schema für die Daten definieren. Alle Daten, die Sie in Experience Platform spiegeln möchten und Experience Platform Data Mirror für Customer Journey Analytics verwenden, müssen einem modellbasierten Schema entsprechen.
 
 Definieren Sie ein Schema, das diese Daten modelliert. Gehen Sie folgendermaßen vor, um das Schema einzurichten:
 
@@ -141,7 +141,7 @@ Definieren Sie ein Schema, das diese Daten modelliert. Gehen Sie folgendermaßen
    1. Geben Sie eine **[!UICONTROL Beschreibung]** ein. Beispiel: `Sample event feed schema for a model-based schema`.
    1. Wählen Sie **[!UICONTROL Zeitreihe]** als **[!UICONTROL Schemaverhalten]** aus. Sie wählen **[!UICONTROL Zeitreihe]** für zeitreihenbasierte Daten und **[!UICONTROL Datensatz]** für datensatzbasierte Daten aus. Das Verhalten definiert die Struktur des Schemas und die enthaltenen Eigenschaften.
 
-      Die Funktion Experience Platform Data Mirror for Customer Journey Analytics wird hauptsächlich für Zeitreihendaten (z. B. Ereignisdaten) verwendet.
+      Experience Platform Data Mirror für Customer Journey Analytics wird hauptsächlich für Zeitreihendaten (z. B. Ereignisdaten) verwendet.
 
       ![Schemakonfiguration](assets/model-based-create-schema.png)
 
@@ -174,7 +174,7 @@ Definieren Sie ein Schema, das diese Daten modelliert. Gehen Sie folgendermaßen
 
      ![Versionsdeskriptor](assets/platform-schema-id.png)
 
-   * Das Feld **[!UICONTROL personid]** wird zusammen mit **[!UICONTROL timestamp]** als Primärer Schlüssel **&#x200B;**&#x200B;konfiguriert. Wählen Sie ![Hinzufügen](/help/assets/icons/Add.svg) **[!UICONTROL Zusammengesetzten Primärschlüssel erstellen]** aus, um einen zusammengesetzten Schlüssel zu erstellen.
+   * Das Feld **[!UICONTROL personid]** wird zusammen mit **[!UICONTROL timestamp]** als Primärer Schlüssel **** konfiguriert. Wählen Sie ![Hinzufügen](/help/assets/icons/Add.svg) **[!UICONTROL Zusammengesetzten Primärschlüssel erstellen]** aus, um einen zusammengesetzten Schlüssel zu erstellen.
 
      ![Zusammengesetzter Schlüssel](assets/platform-schema-compositekey.png)
 
@@ -182,7 +182,7 @@ Definieren Sie ein Schema, das diese Daten modelliert. Gehen Sie folgendermaßen
 
      ![Personendeskriptor](assets/platform-schema-personid.png)
 
-   * Das Feld **[!UICONTROL Zeitstempel]** wird zusammen mit dem Feld **[!UICONTROL personid]** als Primärer Schlüssel **&#x200B;**&#x200B;konfiguriert. Das **[!UICONTROL Zeitstempel]**-Feld wird auch als **[!UICONTROL Zeitstempeldeskriptor]** konfiguriert. Sie müssen nur ein Feld als **[!UICONTROL Zeitstempeldeskriptor]** für zeitreihenmodellbasierte Daten definieren.
+   * Das Feld **[!UICONTROL Zeitstempel]** wird zusammen mit dem Feld **[!UICONTROL personid]** als Primärer Schlüssel **** konfiguriert. Das **[!UICONTROL Zeitstempel]**-Feld wird auch als **[!UICONTROL Zeitstempeldeskriptor]** konfiguriert. Sie müssen nur ein Feld als **[!UICONTROL Zeitstempeldeskriptor]** für zeitreihenmodellbasierte Daten definieren.
 
      ![Zeitstempel-Deskriptor](assets/platform-schema-timestamp.png)
 
@@ -220,7 +220,7 @@ Wählen **[!UICONTROL im Schritt]** Authentifizierung“ Folgendes aus:
 
    1. Klicken Sie auf **[!UICONTROL Weiter]**.
 
-  In der Experience Platform-Dokumentation finden Sie Einzelheiten zur Verbindung und Authentifizierung bei der Verwendung des [Azure Databricks](https://experienceleague.adobe.com/de/docs/experience-platform/sources/connectors/databases/databricks) oder [Snowflake](https://experienceleague.adobe.com/de/docs/experience-platform/sources/connectors/databases/snowflake)-Connectors.
+  In der Experience Platform-Dokumentation finden Sie Einzelheiten zur Verbindung und Authentifizierung bei der Verwendung des [Azure Databricks](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/databases/databricks) oder [Snowflake](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/databases/snowflake)-Connectors.
 
 
 ### Daten auswählen
@@ -351,6 +351,8 @@ Gehen Sie folgendermaßen vor, um eine Datenansicht zu erstellen:
       1. Wählen Sie **[!UICONTROL Ereignis-Datensätze]** aus.
       1. Wählen Sie **[!UICONTROL Ad-hoc- und modellbasierte Felder]**.
       1. Ziehen Sie Felder aus den modellbasierten Schemata per Drag-and-Drop auf **[!UICONTROL METRIKEN]** oder **[!UICONTROL DIMENSIONEN]**.
+
+         ![Fügen Sie ein modellbasiertes Feld als Komponenten hinzu](assets/cja-add-dataset-folder-dv.png)
 
    1. Abgeleitete Felder für Felder definieren, die nicht den richtigen Typ haben, nicht das richtige Format aufweisen oder aus anderen Gründen geändert werden sollen. Beispiel: für &quot;**[!UICONTROL &quot;]**.
 
