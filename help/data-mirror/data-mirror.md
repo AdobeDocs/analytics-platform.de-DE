@@ -35,7 +35,7 @@ Data Mirror bietet die folgenden grundlegenden Funktionen für die Datenbanksync
 
 Verwenden Sie Data Mirror, um Änderungen direkt aus Ihren Quellsystemen aufzunehmen, die Schemaintegrität durchzusetzen und die Daten für Analysen, Journey-Orchestrierung und Compliance-Workflows verfügbar zu machen. Data Mirror eliminiert komplexe vorgelagerte ETL-Prozesse und beschleunigt die Implementierung durch die Möglichkeit der direkten Spiegelung vorhandener Datenbankmodelle. Durch diese Eliminierung kann die Data Governance durch eine präzise Kontrolle von Löschungen und Datenhygienevorgängen verbessert werden.
 
-Siehe auch die [Experience Platform-Dokumentation zu Data Mirror](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-mirror/overview){target="_blank"}.
+Siehe auch die [Experience Platform-Dokumentation zu Data Mirror](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-mirror/overview){target="_blank"}.
 
 ## Data Mirror für Customer Journey Analytics
 
@@ -53,5 +53,5 @@ Experience Platform Data Mirror für Customer Journey Analytics ist für ausgew�
 >[!MORELIKETHIS]
 >
 >[Data Mirror-Schnellstartanleitung: Spiegeln und Verwenden modellbasierter Daten](model-based.md)
->&#x200B;>[Data Mirror (Dokumentation zu Experience Platform)](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-mirror/overview)
+>&#x200B;>[Data Mirror (Dokumentation zu Experience Platform)](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-mirror/overview)
 >
