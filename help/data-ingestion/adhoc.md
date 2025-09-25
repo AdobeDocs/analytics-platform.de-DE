@@ -128,7 +128,7 @@ Gehen Sie folgendermaßen vor, um eine Verbindung zu erstellen:
 
 1. Im Schritt **[!UICONTROL Auswählen von Datensätzen]** in **[!UICONTROL Datensätze hinzufügen]**:
 
-   1. Wählen Sie den zuvor erstellten Datensatz aus, z. B. **[!UICONTROL Beispieldaten aus CSV]** und jeden anderen Datensatz, den Sie in Ihre Verbindung einbeziehen möchten. Die Ad-hoc-Datensätze haben den **[!UICONTROL Adhoc]**[!UICONTROL Datensatztyp].
+   1. Wählen Sie den zuvor erstellten Datensatz aus, z. B. **[!UICONTROL Beispieldaten aus CSV]** und jeden anderen Datensatz, den Sie in Ihre Verbindung einbeziehen möchten. Die Ad-hoc-Datensätze haben den **[!UICONTROL Adhoc]**&#x200B;[!UICONTROL Datensatztyp].
 
       ![Hinzufügen von Datensätzen](./assets/cja-connections-adhoc-2.png)
 
