@@ -8,7 +8,7 @@ exl-id: 262d5f15-16cb-4851-a769-7dbd205b2f81
 source-git-commit: cd92bde10b9cb473c4df791e91296a2a43b2ad84
 workflow-type: tm+mt
 source-wordcount: '2463'
-ht-degree: 94%
+ht-degree: 96%
 
 ---
 
@@ -42,7 +42,7 @@ Die Verwendung von Data Insights Agent zur Beantwortung datenorientierter Fragen
 >[!CONTEXTUALHELP]
 >id="cja-enable-data-insights-data-view"
 >title="Für Data Insights Agent aktivieren"
->abstract="Diese Option aktiviert diese Datenansicht für die Verwendung mit Data Insights Agent. Data Insights Agent ist ein generativer KI-Konversationsagent, auf den über den KI-Assistenten in Customer Journey Analytics zugegriffen werden kann. Damit können Sie Ihre Daten schnell mit Textanfragen analysieren. Er erstellt relevante Visualisierungen in Analysis Workspace mithilfe von Komponenten aus Ihrer Datenansicht und unter Verwendung Ihrer tatsächlichen Daten."
+>abstract="Diese Option aktiviert diese Datenansicht für die Verwendung mit Data Insights Agent. Data Insights Agent ist ein auf generativer KI basierender Konversations-Agent, auf den in Customer Journey Analytics über den KI-Assistenten zugegriffen werden kann. So können Sie Daten schnell mit Text-Prompts analysieren. Er erstellt relevante Visualisierungen in Analysis Workspace mithilfe von Komponenten aus Ihrer Datenansicht und unter Verwendung Ihrer tatsächlichen Daten."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -259,7 +259,7 @@ Im Folgenden finden Sie Best Practices für Ihre Customer Journey Analytics-Konf
 >[!MORELIKETHIS]
 >
 >[Einstellungen der Komponente](/help/data-views/component-settings/overview.md)
->&#x200B;>[Datenwörterbuch](/help/components/data-dictionary/data-dictionary-overview.md)
->&#x200B;>[Berechnete Metrik genehmigen](/help/components/calc-metrics/cm-workflow/cm-approving.md)
->&#x200B;>[Segmente freigeben](/help/components/segments/seg-share.md)
+>>[Datenwörterbuch](/help/components/data-dictionary/data-dictionary-overview.md)
+>>[Berechnete Metrik genehmigen](/help/components/calc-metrics/cm-workflow/cm-approving.md)
+>>[Segmente freigeben](/help/components/segments/seg-share.md)
 >
