@@ -1,14 +1,14 @@
 ---
-title: Customer Journey Analytics-Schnellstartanleitung
+title: Schnellstartanleitung für Customer Journey Analytics
 description: Machen Sie sich mit den Voraussetzungen und dem Workflow vertraut, die für die Implementierung von Customer Journey Analytics erforderlich sind.
 exl-id: cab218c0-009c-4669-9dfb-f8872a7f066b
 solution: Customer Journey Analytics
 feature: Basics
 role: User
 source-git-commit: 6aa6605d12263110ad41523bf838d7a8702f89a2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '786'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
