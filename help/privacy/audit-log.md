@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie Customer Journey Analytics-Auditprotokolle an
 exl-id: 360609f2-b811-49ee-ad4a-a54ceb23bfa3
 feature: Privacy
 role: Admin
-source-git-commit: 9ed7b541ebb1a89b286040c4ea96025b08029499
-workflow-type: ht
-source-wordcount: '953'
-ht-degree: 100%
+source-git-commit: 2ef96ad194f8c7acec35bd7635c650af4370531a
+workflow-type: tm+mt
+source-wordcount: '967'
+ht-degree: 98%
 
 ---
 
@@ -35,6 +35,8 @@ ht-degree: 100%
 Um die Transparenz und Sichtbarkeit der im System durchgeführten Aktivitäten zu erhöhen, ermöglicht Ihnen Adobe Customer Journey Analytics, die Benutzeraktivität für verschiedene Services und Funktionen mithilfe von Auditprotokollen zu erfassen. Diese Protokolle bilden ein Audit-Protokoll, das Ihnen bei der Fehlerbehebung helfen und Ihr Unternehmen dabei unterstützen kann, die Richtlinien zur Datenverwaltung in Unternehmen und die gesetzlichen Anforderungen wie den Health Insurance Portability and Accountability Act (HIPAA) einzuhalten.
 
 In einem Auditprotokoll wird festgehalten, **wer** **welche** Aktion **wann** ausgeführt hat. Jede in einem Protokoll aufgezeichnete Aktion enthält Metadaten, die den Aktionstyp, das Datum und die Uhrzeit, die E-Mail-ID des/der Benutzenden, der/die die Aktion ausgeführt hat, und zusätzliche Attribute des Aktionstyps angeben.
+
+Auditprotokolle werden 90 Tage lang aufbewahrt. Danach werden Auditprotokolle automatisch gelöscht.
 
 In diesem Artikel werden Auditprotokolle in Customer Journey Analytics behandelt, einschließlich der Frage, wie sie in der Benutzeroberfläche angezeigt und verwaltet werden können.
 
@@ -83,7 +85,7 @@ Die folgenden Informationen werden angezeigt:
 * **[!UICONTROL Name der Komponente]**: Die Komponente, für die die Benutzerin oder der Benutzer eine Aktion durchgeführt hat.
 * **[!UICONTROL Typ der Komponente]**: Der Typ der Komponente. Mögliche Werte sind:
    * ANNOTATION
-   * AUDIENCE
+   * ZIELGRUPPE
    * CALCULATED_METRIC
    * CONNECTION
    * DATA_GROUP
@@ -109,7 +111,7 @@ Die folgenden Informationen werden angezeigt:
 
 ### Filtern von Auditprotokollen
 
-Wählen Sie das Trichtersymbol (![Filter](assets/filter-icon.png)), um eine Liste von Filterfeldern anzuzeigen, mit denen die Ergebnisse eingegrenzt werden können. Unabhängig von den ausgewählten Filtern werden nur die letzten 1.000 Datensätze angezeigt.
+Wählen Sie das Trichtersymbol (![Filter](assets/filter-icon.png)), um eine Liste von Filterfeldern anzuzeigen, mit denen die Ergebnisse eingegrenzt werden können. Unabhängig von den ausgewählten Filtern werden nur die letzten 1.000 Einträge angezeigt.
 
 ![Auditprotokoll mit den für den Datumsbereich angezeigten Filtern.](assets/filters.png)
 
