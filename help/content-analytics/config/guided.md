@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin
 exl-id: 4aff664c-3cd9-4591-8122-6ebff10e4a76
-source-git-commit: 8531c372607f39a3e39de8eda4f624057e56d9a4
+source-git-commit: e8cba64e706a456861fd8392ce9260b7a1c4636b
 workflow-type: tm+mt
 source-wordcount: '2694'
-ht-degree: 93%
+ht-degree: 90%
 
 ---
 
@@ -82,17 +82,17 @@ Jede Konfiguration erfordert einen eindeutigen Namen. Beispiel: `Example Content
 >[!CONTEXTUALHELP]
 >id="ac_onboarding_dataview_button"
 >title="Datenansicht"
->abstract="Für die Konfiguration der Inhaltsanalyse müssen Sie eine vorhandene Datenansicht auswählen. So können Sie Ihre Inhaltsanalysedaten mit anderen Daten zusammenführen."
+>abstract="Für die Konfiguration der Inhaltsanalyse müssen Sie eine vorhandene Datenansicht auswählen. Sie können also Ihre Content Analytics-Daten mit anderen Daten zusammenführen."
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataview_header"
 >title="Datenansicht"
->abstract="Wählen Sie eine vorhandene Datenansicht aus Customer Journey Analytics aus, mit der Ihre Inhaltsanalysedaten zusammengeführt werden sollen."
+>abstract="Wählen Sie eine bestehende Datenansicht aus Customer Journey Analytics aus, mit der Sie Ihre Content Analytics-Daten zusammenführen möchten."
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataview_header_alt"
 >title="Datenansicht"
->abstract="Wählen Sie eine vorhandene Datenansicht aus Customer Journey Analytics aus, mit der Ihre Inhaltsanalysedaten zusammengeführt werden sollen.<br/>"
+>abstract="Wählen Sie eine bestehende Datenansicht aus Customer Journey Analytics aus, mit der Sie Ihre Content Analytics-Daten zusammenführen möchten.<br/>"
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataview_change_dialog"
@@ -231,12 +231,12 @@ So bearbeiten Sie vorhandene Erlebnisse oder schließen neue Erlebnisse in eine 
    * den Prozess, der Erlebnisattribute aus Content Analytics-Ereignisdaten generiert
    * die Berichtsvorlage in Customer Journey Analytics
 
-* Wählen Sie ![Bearbeiten](/help/assets/icons/Edit.svg) **[!UICONTROL Bearbeiten]** aus, um die Konfiguration der Datenerfassung für Erlebnisse in Content Analytics weiter zu bearbeiten. Sie werden zur [Adobe Content Analytics-Erweiterung](https://experienceleague.adobe.com/de/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-segmenting) in der Tags-Eigenschaft weitergeleitet, die mit der aktuellen Konfiguration verknüpft ist.
+* Wählen Sie ![Bearbeiten](/help/assets/icons/Edit.svg) **[!UICONTROL Bearbeiten]** aus, um die Konfiguration der Datenerfassung für Erlebnisse in Content Analytics weiter zu bearbeiten. Sie werden zur [Adobe Content Analytics-Erweiterung](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-segmenting) in der Tags-Eigenschaft weitergeleitet, die mit der aktuellen Konfiguration verknüpft ist.
 
 
 ### Datenerfassung {#onboarding-data-collection}
 
-In diesem Abschnitt können Sie konfigurieren, wie die Daten Ihrer Inhaltsanalyse erfasst werden sollen.  
+In diesem Abschnitt konfigurieren Sie, wie Sie Ihre Content Analytics-Daten erfassen.
 
 <!-- markdownlint-disable MD034 -->
 
@@ -328,9 +328,9 @@ Sie können die Tags-Eigenschaft für eine vorhandene Konfiguration nicht bearbe
 
 Sie können jedoch die Seiten und Assets bearbeiten, die ein- oder ausgeschlossen werden sollen.
 
-* Um zu bearbeiten, welche Seiten bei der Datenerfassung für Content Analytics ein- oder ausgeschlossen werden sollen, wählen Sie ![Bearbeiten](/help/assets/icons/Edit.svg) **[!UICONTROL Bearbeiten]** unter **[!UICONTROL Erlebnis]** aus. Sie werden zur [Adobe Content Analytics-Erweiterung](https://experienceleague.adobe.com/de/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-segmenting) weitergeleitet, die mit der Tags-Eigenschaft für die aktuelle Content Analytics-Konfiguration verknüpft ist. Sie können den regulären Ausdruck bearbeiten, um Seiten ein- oder auszuschließen. Achten Sie darauf, Ihre Änderungen zu [veröffentlichen](#publish).
+* Um zu bearbeiten, welche Seiten bei der Datenerfassung für Content Analytics ein- oder ausgeschlossen werden sollen, wählen Sie ![Bearbeiten](/help/assets/icons/Edit.svg) **[!UICONTROL Bearbeiten]** unter **[!UICONTROL Erlebnis]** aus. Sie werden zur [Adobe Content Analytics-Erweiterung](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-segmenting) weitergeleitet, die mit der Tags-Eigenschaft für die aktuelle Content Analytics-Konfiguration verknüpft ist. Sie können den regulären Ausdruck bearbeiten, um Seiten ein- oder auszuschließen. Achten Sie darauf, Ihre Änderungen zu [veröffentlichen](#publish).
 
-* Um zu bearbeiten, welche Assets bei der Datenerfassung für Content Analytics ein- oder ausgeschlossen werden sollen, wählen Sie ![Bearbeiten](/help/assets/icons/Edit.svg) **[!UICONTROL Bearbeiten]** unter **[!UICONTROL Asset]** aus. Sie werden zur [Adobe Content Analytics-Erweiterung](https://experienceleague.adobe.com/de/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-segmenting) weitergeleitet, die mit der Tags-Eigenschaft für die aktuelle Content Analytics-Konfiguration verknüpft ist. Sie können den regulären Ausdruck bearbeiten, um Assets ein- oder auszuschließen. Achten Sie darauf, Ihre Änderungen zu [veröffentlichen](#publish).
+* Um zu bearbeiten, welche Assets bei der Datenerfassung für Content Analytics ein- oder ausgeschlossen werden sollen, wählen Sie ![Bearbeiten](/help/assets/icons/Edit.svg) **[!UICONTROL Bearbeiten]** unter **[!UICONTROL Asset]** aus. Sie werden zur [Adobe Content Analytics-Erweiterung](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-segmenting) weitergeleitet, die mit der Tags-Eigenschaft für die aktuelle Content Analytics-Konfiguration verknüpft ist. Sie können den regulären Ausdruck bearbeiten, um Assets ein- oder auszuschließen. Achten Sie darauf, Ihre Änderungen zu [veröffentlichen](#publish).
 
 ### Zusammenfassung {#summary}
 
