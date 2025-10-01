@@ -53,7 +53,7 @@ Verwenden Sie die [Adobe Content Analytics-Erweiterung](https://experienceleague
 
   Sie können Erlebnisse aktivieren oder deaktivieren und Kombinationen aus regulären Ausdrücken und Abfrageparametern bearbeiten, um zu bestimmen, wie Inhalte auf Ihrer Website gerendert werden.
 
-* [Segmentierung von Ereignissen](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-segmenting){target="_blank"}
+* [Segmentierung von Ereignissen](https://experienceleague.adobe.com/de/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-segmenting){target="_blank"}
 
   Sie können reguläre Ausdrücke bearbeiten, um die Segmentierung von Seiten und Assets zu ändern.
 
@@ -97,7 +97,7 @@ Content Analytics kann Identitäten wie folgt verarbeiten:
 * Feldbasiertes Stitching wird nicht unterstützt, da das Schema in Systembesitz ist. Sie können dem Schema also kein weiteres Feld hinzufügen, um feldbasiertes Stitching zu unterstützen
 
 
-Um sicherzustellen, dass Content Analytics-Identitätsdaten und Adobe Experience Platform Web SDK-Daten-Identitätsdaten auf Feldebene korrekt zugeordnet sind, müssen Sie Änderungen am Web SDK [on vor dem Ereignisversand vornehmen](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/configure/onbeforeeventsend){target="_blank"} Callback.
+Um sicherzustellen, dass Content Analytics-Identitätsdaten und Adobe Experience Platform Web SDK-Daten-Identitätsdaten auf Feldebene korrekt zugeordnet sind, müssen Sie Änderungen am Web SDK [on vor dem Ereignisversand vornehmen](https://experienceleague.adobe.com/de/docs/experience-platform/web-sdk/commands/configure/onbeforeeventsend){target="_blank"} Callback.
 
 1. Navigieren Sie zu Ihrer **[!UICONTROL Tags]**-Eigenschaft, die die Adobe Experience Platform Web SDK-Erweiterung und die Adobe Content Analytics-Erweiterung enthält.
 1. Wählen Sie ![Plug](/help/assets/icons/Plug.svg) **[!UICONTROL Extensions]** aus.
