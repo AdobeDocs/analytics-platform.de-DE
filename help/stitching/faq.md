@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 exl-id: f4115164-7263-40ad-9706-3b98d0bb7905
 role: Admin
-source-git-commit: c4aea74807be15af56413522d9e6fbf5f18a37a0
+source-git-commit: c60c68e6065e877d0fa4a92dbfe8dd54a2dfb4fe
 workflow-type: tm+mt
-source-wordcount: '2041'
+source-wordcount: '2046'
 ht-degree: 26%
 
 ---
@@ -23,8 +23,8 @@ Im Folgenden finden Sie einige häufig gestellte Fragen zum Zusammenfügen:
 Sie können eine Flussvisualisierung mit der Dimension „Datensatz-ID“ verwenden.
 
 1. Melden Sie sich bei [Customer Journey Analytics an ](https://analytics.adobe.com) erstellen Sie ein leeres Workspace-Projekt.
-2. Wählen Sie auf der linken Seite **[!UICONTROL ** Visualisierungen **]** aus und ziehen Sie eine **[!UICONTROL **&#x200B; Fluss &#x200B;**]**-Visualisierung auf die Arbeitsfläche auf der rechten Seite.
-3. Wählen Sie auf der linken Seite **[!UICONTROL ** Komponenten **]** und ziehen Sie die Dimension **[!UICONTROL ** Datensatz-ID **]** an die mittlere Position mit der Bezeichnung **[!UICONTROL **&#x200B; Dimension oder Element &#x200B;**]**.
+2. Wählen Sie auf der linken Seite **[!UICONTROL ** Visualisierungen **]** aus und ziehen Sie eine **[!UICONTROL ** Fluss **]**-Visualisierung auf die Arbeitsfläche auf der rechten Seite.
+3. Wählen Sie auf der linken Seite **[!UICONTROL ** Komponenten **]** und ziehen Sie die Dimension **[!UICONTROL ** Datensatz-ID **]** an die mittlere Position mit der Bezeichnung **[!UICONTROL ** Dimension oder Element **]**.
 4. Dieser Flussbericht ist interaktiv. Um die Flüsse zu nachfolgenden oder vorherigen Seiten zu erweitern, wählen Sie einen der Werte aus. Verwenden Sie das Kontextmenü, um Spalten zu erweitern oder zu reduzieren. Im selben Flussbericht können auch verschiedene Dimensionen verwendet werden.
 
 Wenn Sie die Datensatz-ID-Dimensionselemente umbenennen möchten, können Sie einen Lookup-Datensatz verwenden.
@@ -217,7 +217,7 @@ Andere Metriken können in Customer Journey Analytics und Adobe Analytics ähnli
 
 +++ Kann Customer Journey Analytics Identity Map-Felder verwenden?
 
-Nein, Customer Journey Analytics kann derzeit keine Identity Map-Felder zum Zusammenfügen verwenden.
+Ja, Customer Journey Analytics kann Identitätszuordnungsfelder sowohl für [ (feldbasierte](/help/stitching/fbs.md#identitymap) als auch für [diagrammbasierte](/help/stitching/gbs.md#identitymap) Zuordnung verwenden.
 
 +++
 
@@ -229,7 +229,7 @@ Daten müssen nicht erneut in Experience Platform aufgenommen werden. Sie müsse
 
 1. Richten Sie den neuen diagrammbasierten zugeordneten Datensatz ein.
 1. Konfigurieren Sie den neuen Datensatz als Teil einer neuen Verbindung in Customer Journey Analytics.
-1. Wechseln Sie Ihre vorhandene Datenansicht, um die neue Verbindung (und somit den neuen diagrammbasierten zugeordneten Datensatz) zu verwenden
+1. Wechseln Sie Ihre vorhandene Datenansicht, um die neue Verbindung (und somit den neuen diagrammbasierten zugeordneten Datensatz) zu verwenden.
 1. Entfernen Sie die alte Verbindung, die den feldbasierten zugeordneten Datensatz verwendet hat.
 
 +++
@@ -273,6 +273,6 @@ curl -X POST \
 
 Jede Verwendung des `unifiedProfile`-Tags in der Anfrage gibt einen Fehler zurück, obwohl Sie nicht für das Echtzeit-Kundendatenprofil lizenziert sind.
 
-Weitere [ finden Sie unter „Erstellen eines Datensatzes, der für Profil und ](https://experienceleague.adobe.com/de/docs/experience-platform/catalog/datasets/enable-for-profile#create-a-dataset-enabled-for-profile-and-identity) aktiviert ist“.
+Weitere [ finden Sie unter „Erstellen eines Datensatzes, der für Profil und ](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/enable-for-profile#create-a-dataset-enabled-for-profile-and-identity) aktiviert ist“.
 
 +++ 
