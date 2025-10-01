@@ -52,7 +52,7 @@ Informationen zum Verwalten vorhandener Speicherorte, einschließlich Anzeigen, 
 
    Wählen Sie die Registerkarte [!UICONTROL **Standortkonten**], klicken Sie auf das Dreipunkt-Symbol in einem vorhandenen Konto, dem Sie einen Standort hinzufügen möchten, und klicken Sie dann auf [!UICONTROL **Standort hinzufügen**].
 
-   ![Dropdown-Menü GCP-Konto und Auslassungspunkte mit der Option Standort hinzufügen &#x200B;](assets/add-location-existing-account.png)
+   ![Dropdown-Menü GCP-Konto und Auslassungspunkte mit der Option Standort hinzufügen ](assets/add-location-existing-account.png)
 
    Das Dialogfeld Standort wird angezeigt.
 
@@ -102,15 +102,15 @@ Informationen zum Verwalten vorhandener Speicherorte, einschließlich Anzeigen, 
 
 1. Sie können jetzt Daten aus Analysis Workspace an das -Konto und den Speicherort exportieren, die Sie konfiguriert haben. Informationen zum Exportieren von Daten in die Cloud finden Sie unter [Exportieren von Projektdaten in die Cloud](/help/analysis-workspace/export/export-cloud.md).
 
-1. Der einfachste Weg, auf Ihre Daten in der AEP Data Landing Zone zuzugreifen, ist die Verwendung des Microsoft Azure Storage Explorers. Dies ist dasselbe Tool, das in den Anweisungen zum Konfigurieren des [AEP Data Landing Zone-Kontos verwendet &#x200B;](/help/components/exports/cloud-export-accounts.md#aep-data-landing-zone).
+1. Der einfachste Weg, auf Ihre Daten in der AEP Data Landing Zone zuzugreifen, ist die Verwendung des Microsoft Azure Storage Explorers. Dies ist dasselbe Tool, das in den Anweisungen zum Konfigurieren des [AEP Data Landing Zone-Kontos verwendet ](/help/components/exports/cloud-export-accounts.md#aep-data-landing-zone).
 
    1. Öffnen Sie den [Microsoft Azure Storage Explorer](https://azure.microsoft.com/en-us/products/storage/storage-explorer/).
 
-   1. Navigieren Sie [!UICONTROL **Speicherkonten**] > [!UICONTROL **(angehängte Container)**] > [!UICONTROL **Blob-Container**] > **[!UICONTROL cjaexport-_number_]**>*** your_container_name &#x200B;***.
+   1. Navigieren Sie [!UICONTROL **Speicherkonten**] > [!UICONTROL **(angehängte Container)**] > [!UICONTROL **Blob-Container**] > **[!UICONTROL cjaexport-_number_]**>*** your_container_name ***.
 
       >[!NOTE]
       >
-      >Der Ordnername **[!UICONTROL cjaexport-_number_]**&#x200B;ist der Standardname, der vom Azure Storage Explorer bereitgestellt wird. Wenn Ihrem SAS-URI nur eine einzige Verbindung zugeordnet ist (was normal ist), lautet der Name dieses Ordners **[!UICONTROL cjaexport-1]**.
+      >Der Ordnername **[!UICONTROL cjaexport-_number_]**ist der Standardname, der vom Azure Storage Explorer bereitgestellt wird. Wenn Ihrem SAS-URI nur eine einzige Verbindung zugeordnet ist (was normal ist), lautet der Name dieses Ordners **[!UICONTROL cjaexport-1]**.
 
 
       ![Zugreifen auf Dateien im Azure-Speicher-Explorer](assets/azure-storage-explorer-access.png)
@@ -152,7 +152,7 @@ Informationen zum Verwalten vorhandener Speicherorte, einschließlich Anzeigen, 
 
    | Feld | Funktion |
    |---------|----------|
-   | [!UICONTROL **Bucket**] | Der Bucket in Ihrem GCP-Konto, an den Customer Journey Analytics-Daten gesendet werden sollen. <p>Stellen Sie sicher, dass Sie dem von Adobe bereitgestellten Prinzipal die `roles/storage.objectCreator`-Berechtigung erteilt haben. (Der Prinzipal wird beim Konfigurieren [&#x200B; Google Cloud Platform-Kontos &#x200B;](/help/components/exports/cloud-export-accounts.md).) <p>Informationen zum Gewähren von Berechtigungen finden Sie in der Google Cloud-Dokumentation unter [Hauptkonto zu einer Richtlinie auf Bucket-Ebene hinzufügen](https://cloud.google.com/storage/docs/access-control/using-iam-permissions#bucket-add).</p><p>Wenn Ihre Organisation [Organisationsrichtlinieneinschränkungen](https://cloud.google.com/storage/docs/org-policy-constraints) verwendet, um nur das Google Cloud Platform-Konto in Ihrer Zulassungsliste zuzulassen, benötigen Sie die folgende Adobe-eigene Organisations-ID für Google Cloud Platform: <ul><li>`DISPLAY_NAME`: `adobe.com`</li><li>`ID`: `178012854243`</li><li>`DIRECTORY_CUSTOMER_ID`: `C02jo8puj`</li></ul> </p> |
+   | [!UICONTROL **Bucket**] | Der Bucket in Ihrem GCP-Konto, an den Customer Journey Analytics-Daten gesendet werden sollen. <p>Stellen Sie sicher, dass Sie dem von Adobe bereitgestellten Prinzipal die `roles/storage.objectCreator`-Berechtigung erteilt haben. (Der Prinzipal wird beim Konfigurieren [ Google Cloud Platform-Kontos ](/help/components/exports/cloud-export-accounts.md).) <p>Informationen zum Gewähren von Berechtigungen finden Sie in der Google Cloud-Dokumentation unter [Hauptkonto zu einer Richtlinie auf Bucket-Ebene hinzufügen](https://cloud.google.com/storage/docs/access-control/using-iam-permissions#bucket-add).</p><p>Wenn Ihre Organisation [Organisationsrichtlinieneinschränkungen](https://cloud.google.com/storage/docs/org-policy-constraints) verwendet, um nur das Google Cloud Platform-Konto in Ihrer Zulassungsliste zuzulassen, benötigen Sie die folgende Adobe-eigene Organisations-ID für Google Cloud Platform: <ul><li>`DISPLAY_NAME`: `adobe.com`</li><li>`ID`: `178012854243`</li><li>`DIRECTORY_CUSTOMER_ID`: `C02jo8puj`</li></ul> </p> |
    | [!UICONTROL **Präfix**] | Der Ordner im Bucket, in den Sie die Daten ablegen möchten. Geben Sie einen Ordnernamen an und fügen Sie dann nach dem Namen einen Schrägstrich hinzu, um den Ordner zu erstellen. (Beispiel: Ordnername/) |
 
    {style="table-layout:auto"}
