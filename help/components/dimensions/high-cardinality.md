@@ -5,10 +5,10 @@ feature: Dimensions
 solution: Customer Journey Analytics
 exl-id: 17b275a5-c2c2-48ee-b663-e7fe76f79456
 role: User
-source-git-commit: 1e9ec546ceee728116b4a679b78f53f20e06d37c
+source-git-commit: f350fd99187f6ce35042ad9d97d9d02b5f8d1721
 workflow-type: tm+mt
-source-wordcount: '544'
-ht-degree: 7%
+source-wordcount: '622'
+ht-degree: 6%
 
 ---
 
@@ -16,19 +16,21 @@ ht-degree: 7%
 
 Bei Verwendung einer Dimension, die viele eindeutige Werte enthält, kann der resultierende Bericht zu viele eindeutige Dimensionselemente enthalten, um sie anzuzeigen oder zu berechnen. Die Ergebnisse werden abgeschnitten, indem Dimensionselemente entfernt werden, die als am wenigsten wichtig erachtet werden. Diese Optimierungen werden vorgenommen, um die Projekt- und Produktleistung zu erhalten.
 
-Wenn Sie einen Bericht mit zu vielen eindeutigen Werten anfordern, zeigt Analysis Workspace in der Kopfzeile der Dimension einen Indikator an, der angibt, dass nicht alle Dimensionselemente enthalten sind. Beispiel: **[!UICONTROL : 1-50 von mehr als 22.343.156]**. Das **[!UICONTROL -Schlüsselwort]** more than“ zeigt an, dass der Bericht optimiert wurde, um die wichtigsten Dimensionselemente zurückzugeben.
+Wenn Sie einen Bericht anfordern, der eine Dimension mit zu vielen eindeutigen Werten enthält, zeigt Analysis Workspace in der Kopfzeile der Dimension einen Indikator an, der angibt, dass nicht alle Dimensionselemente enthalten sind. Beispiel: **[!UICONTROL : 1-50 von mehr als 22.343.156]**. Das **[!UICONTROL -Schlüsselwort]** more than“ zeigt an, dass der Bericht optimiert wurde, um die wichtigsten Dimensionselemente zurückzugeben.
 
 ![Freiformtabelle in Workspace mit dem Keyword „more than“, um 1-50 von mehr als 22.343.156 anzuzeigen](assets/high-cardinality.png)
 
 ## Bestimmen, welche Dimensionselemente angezeigt werden sollen
 
-Customer Journey Analytics verarbeitet Berichte zum Zeitpunkt ihrer Ausführung und verteilt den kombinierten Datensatz an mehrere Server. Die Daten pro Verarbeitungs-Server werden nach Personen-ID gruppiert, d. h., ein einzelner Verarbeitungs-Server enthält alle Daten für eine bestimmte Person. Sobald ein Server die Verarbeitung abgeschlossen hat, übergibt er seine Teilmenge der verarbeiteten Daten an einen Aggregator-Server. Alle Teilmengen verarbeiteter Daten werden kombiniert und in Form eines Workspace-Berichts zurückgegeben.
+Customer Journey Analytics verarbeitet Berichte zum Zeitpunkt ihrer Ausführung und verteilt den kombinierten Datensatz an mehrere Server. Die Größe der Datenanfrage und die Menge der verfügbaren Adobe-Hardware sind zwei von vielen Faktoren, die die Bestimmung der Anzahl der Server unterstützen, die einem Bericht zugewiesen sind. Da Server dynamisch zugewiesen und in der Benutzeroberfläche nicht sichtbar sind, gibt es keine Möglichkeit, die Anzahl der Server anzuzeigen oder zu steuern, die einen Bericht verarbeiten.
+
+Die Daten pro Verarbeitungs-Server werden nach Personen-ID gruppiert, d. h., ein einzelner Verarbeitungs-Server enthält alle Daten für eine bestimmte Person. Sobald ein Server die Verarbeitung abgeschlossen hat, übergibt er seine Teilmenge der verarbeiteten Daten an einen Aggregator-Server. Alle Teilmengen verarbeiteter Daten werden kombiniert und in Form eines Workspace-Berichts zurückgegeben.
 
 Wenn ein einzelner Server Daten verarbeitet, die einen eindeutigen Schwellenwert überschreiten, werden die Ergebnisse gekürzt, bevor die verarbeitete Teilmenge der Daten zurückgegeben wird. Abgeschnittene Dimensionselemente werden basierend auf der Metrik bestimmt, die für die Sortierung verwendet wird.
 
 Wenn es sich bei der Sortiermetrik um eine berechnete Metrik handelt, verwendet der Server die Metriken innerhalb der berechneten Metrik, um zu bestimmen, welche Dimensionselemente abgeschnitten werden sollen. Da berechnete Metriken mehrere Metriken unterschiedlicher Bedeutung enthalten können, können die Ergebnisse weniger genau sein. Beispielsweise werden bei der Berechnung des „Umsatzes pro Person“ der Gesamtbetrag der Einnahmen und die Gesamtzahl der Personen zurückgegeben und vor der Teilung aggregiert. Daher wählt jeder einzelne Verarbeitungs-Server aus, welche Elemente entfernt werden sollen, ohne zu wissen, wie sich die Ergebnisse auf die Sortierung insgesamt auswirken.
 
-Obwohl einige einzelne Dimensionselemente in Berichten mit hoher Kardinalität fehlen können, sind die Spaltensummen korrekt und basieren nicht auf abgeschnittenen Daten. Die Funktion „Distinct Count“ in berechneten Metriken ist ebenfalls nicht von abgeschnittenen Dimensionselementen betroffen.
+Obwohl einige einzelne Dimensionselemente in Berichten mit hoher Kardinalität fehlen können, sind die Spaltensummen korrekt und basieren nicht auf abgeschnittenen Daten. Die Funktion [[!UICONTROL Ungefährer Distinct Count]](/help/components/calc-metrics/cm-adv-functions.md#approximate-count-distinct) der berechneten Metrik ist ebenfalls nicht von abgeschnittenen Dimensionselementen betroffen.
 
 ## Best Practices für Dimensionen mit hoher Kardinalität
 
@@ -40,3 +42,4 @@ Die beste Möglichkeit, Dimensionen mit hoher Kardinalität zu berücksichtigen,
 * Verwenden Sie die [Einschließen/ausschließen](/help/data-views/component-settings/include-exclude-values.md) im Datenansichts-Manager.
 * Kürzen Sie den Datumsbereich der Anfrage. Wenn im Laufe der Zeit viele eindeutige Werte gesammelt werden, kann eine Verkürzung des Datumsbereichs des Workspace-Berichts die Anzahl der eindeutigen Werte für die zu verarbeitenden Server einschränken.
 * Erwägen Sie [vollständigen Tabellenexport](/help/analysis-workspace/export/export-cloud.md), um alle Zeilen der Tabelle zurückzugeben.
+* Wenn die Anzahl der eindeutigen Werte der primäre Fokus ist, verwenden Sie die [[!UICONTROL  Metrikfunktion „Ungefährer ]](/help/components/calc-metrics/cm-adv-functions.md#approximate-count-distinct)&quot;.
