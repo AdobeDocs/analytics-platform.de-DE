@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: User
 exl-id: 6e756ae8-b969-46f1-95b8-d8fbb0d058ed
-source-git-commit: 51b3d533ef7b42ff03823f2dffcb2ccfbb9c4bbe
-workflow-type: ht
+source-git-commit: e8cba64e706a456861fd8392ce9260b7a1c4636b
+workflow-type: tm+mt
 source-wordcount: '1300'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
@@ -21,7 +21,7 @@ So starten Sie das Content Analytics-Reporting erstmalig:
 1. [Erstellen Sie ein neues](/help/analysis-workspace/build-workspace-project/create-projects.md) oder [öffnen Sie ein vorhandenes](/help/analysis-workspace/build-workspace-project/open-projects.md) Projekt in Workspace.
 1. Stellen Sie sicher, dass Sie für das Content Analytics-Reporting eine [Datenansicht auswählen](/help/analysis-workspace/c-panels/panels.md#data-view). Das Content Analytics-Reporting ist nur für Datenansichten verfügbar, die für Content Analytics [konfiguriert](/help/content-analytics/config/configuration.md) sind.
 1. Ziehen Sie die Visualisierung ![Tabelle](/help/assets/icons/Table.svg) [Freiformtabelle](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) auf die Arbeitsfläche.
-1. Verwenden Sie [spezifische Content Analytics-Komponenten](components.md) und andere allgemeine [Komponenten](/help/components/overview.md) (wie Segmente, Datumsbereiche, Anmerkungen), um Erkenntnisse zur Inhaltsanalyse zu erhalten.
+1. Verwenden Sie [spezifischen Content Analytics](components.md)Komponenten und andere generische [Komponenten](/help/components/overview.md) (wie Segmente, Datumsbereiche, Anmerkungen), um Ihre Content Analytics Insights zu erstellen.
 
 ## Miniaturen
 
@@ -57,7 +57,7 @@ So öffnen Sie eine Vorschau mit den folgenden Details:
 
 ## Vorlage
 
-Es ist eine Content Analytics-[Vorlage](/help/analysis-workspace/templates/use-templates.md) verfügbar, mit der Sie ermitteln können, welche Inhalte und Inhaltsattribute am besten funktionieren. Die Vorlage ist Teil des Anwendungsfalls [Web-Kanal und Interaktion](/help/analysis-workspace/templates/use-templates.md#web-engagement) und beschreibt, wie Ihre Inhalte auf granularer Ebene abschneiden. Sie können die Leistung einzelner Assets oder bestimmter Attribute überprüfen. 
+Eine Content Analytics [Vorlage](/help/analysis-workspace/templates/use-templates.md) steht zur Verfügung, um zu erfahren, welche Inhalts- und Inhaltsattribute sich am besten eignen. Die Vorlage ist Teil des Anwendungsfalls [Web-Kanal und Interaktion](/help/analysis-workspace/templates/use-templates.md#web-engagement) und beschreibt, wie Ihre Inhalte auf granularer Ebene abschneiden. Sie können die Leistung einzelner Assets oder bestimmter Attribute überprüfen. 
 
 Basierend auf Ihren Erkenntnissen können Sie eine Reihe von Schritten ausführen, z. B. Assets mit hoher Leistung auf Ihrer Startseite fördern, Inhalte für bestimmte Segmente personalisieren, um Attribute mit hoher Leistung einzuschließen, oder Inhalte austauschen, die nicht mehr aktuell sind.
 
@@ -65,7 +65,7 @@ So verwenden Sie die Vorlage:
 
 1. Wählen Sie im Hauptmenü die Option **[!UICONTROL Arbeitsbereich]** aus.
 1. Stellen Sie sicher, dass Sie eine Datenansicht ausgewählt haben, die bereits für Content Analytics konfiguriert ist. 
-1. Suchen Sie nach oder verwenden Sie Segmente (**[!UICONTROL Web]** für **[!UICONTROL Kanal]** und **[!UICONTROL Interaktion]** für **[!UICONTROL Anwendungsfall]**) und wählen Sie die Vorlage **[!UICONTROL Inhaltsanalyse]** aus.
+1. Suchen oder verwenden Sie Segmente (**[!UICONTROL Web]** für **[!UICONTROL Channel]** und **[!UICONTROL Engagement]** für **[!UICONTROL Anwendungsfall]**, um die Vorlage **[!UICONTROL Content Analytics]** zu finden und auszuwählen.
 1. Wählen Sie **[!UICONTROL Vorlage verwenden]** aus.
 1. Wählen Sie im Dialogfeld **[!UICONTROL Vorlage einrichten]** eine Metrik aus dem Dialogfeld **[!UICONTROL Konversionsmetrik auswählen]** aus, z. B. **[!UICONTROL Asset – CTR]**.
 1. Wählen Sie **[!UICONTROL Weiter]** aus.
