@@ -5,14 +5,32 @@ title: Konfigurieren von Cloud-Exportspeicherorten
 feature: Components
 exl-id: 93f1cca0-95da-41a0-a4f9-5ab620a5b9da
 role: User, Admin
-source-git-commit: 882e280da3f65e297abccd475d381832fd236843
+source-git-commit: 5adcab1df932f5c8af1f140fb6707f2d56726ae3
 workflow-type: tm+mt
-source-wordcount: '1915'
-ht-degree: 20%
+source-wordcount: '2030'
+ht-degree: 19%
 
 ---
 
-# Konfigurieren von Cloud-Exportspeicherorten
+# Konfigurieren von Cloud-Exportspeicherorten {#configure-cloud-export-locations}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-export-prefix"
+>title="Präfix"
+>abstract="Der Stammordner innerhalb des Containers, in den Sie die Daten einfügen möchten. Geben Sie einen statischen Ordnernamen an und fügen Sie dann nach dem Namen einen Schrägstrich hinzu, um den Ordner zu erstellen. Beispiel: `folder_name/`"
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-export-file-name"
+>title="Dateiname und -pfad"
+>abstract="Geben Sie einen dynamischen benutzerdefinierten Dateinamen an, der für automatisierte Exporte verwendet werden soll, die an diesen Speicherort gesendet werden. Sie können dem Dateinamen auch einen dynamischen benutzerdefinierten Dateipfad voranstellen. &lt;br\>Verwenden Sie Variablen im Dateinamen und im Pfad, um sie dynamisch zu machen. &lt;br\>Wenn Sie beispielsweise `${yyyy}/${mm}/${dd}/my-report-${instance_id}-${idx}` angeben, hätte ein Export, der am 15. Januar 2026 automatisch an dieses Ziel gesendet wird, folgenden Dateipfad und -namen: `[prefix_folder_name]/2026/01/15/my-report-[UUID]-1.csv` &lt;br\>Klicken Sie auf den Link unten, um eine Liste der verfügbaren Variablen zu erhalten."
+
+<!-- markdownlint-enable MD034 -->
 
 Bevor Sie Customer Journey Analytics-Berichte in ein Cloud-Ziel exportieren können (entweder aus Analysis Workspace, wie unter [Exportieren von Customer Journey Analytics-Berichten in die Cloud](/help/analysis-workspace/export/export-cloud.md) beschrieben, oder aus Report Builder, wie [Exportieren von Berichten aus Report Builder](/help/report-builder/report-builder-export.md)), wie [Exportieren von Customer Journey Analytics-Berichten in die Cloud](/help/analysis-workspace/export/export-cloud.md) beschrieben, müssen Sie den Speicherort hinzufügen und konfigurieren, an den die Daten gesendet werden sollen.
 
@@ -88,11 +106,11 @@ Informationen zum Verwalten vorhandener Speicherorte, einschließlich Anzeigen, 
 
    1. Öffnen Sie den [Microsoft Azure Storage Explorer](https://azure.microsoft.com/en-us/products/storage/storage-explorer/).
 
-   1. Navigieren Sie [!UICONTROL **Speicherkonten**] > [!UICONTROL **(angehängte Container)**] > [!UICONTROL **Blob-Container**] > **[!UICONTROL cjaexport-_number_]**>*** your_container_name &#x200B;***.
+   1. Navigieren Sie [!UICONTROL **Speicherkonten**] > [!UICONTROL **(angehängte Container)**] > [!UICONTROL **Blob-Container**] > **[!UICONTROL cjaexport-_number_]**>*** your_container_name ***.
 
       >[!NOTE]
       >
-      >Der Ordnername **[!UICONTROL cjaexport-_number_]**&#x200B;ist der Standardname, der vom Azure Storage Explorer bereitgestellt wird. Wenn Ihrem SAS-URI nur eine einzige Verbindung zugeordnet ist (was normal ist), lautet der Name dieses Ordners **[!UICONTROL cjaexport-1]**.
+      >Der Ordnername **[!UICONTROL cjaexport-_number_]**ist der Standardname, der vom Azure Storage Explorer bereitgestellt wird. Wenn Ihrem SAS-URI nur eine einzige Verbindung zugeordnet ist (was normal ist), lautet der Name dieses Ordners **[!UICONTROL cjaexport-1]**.
 
 
       ![Zugreifen auf Dateien im Azure-Speicher-Explorer](assets/azure-storage-explorer-access.png)
