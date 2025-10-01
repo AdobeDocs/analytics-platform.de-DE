@@ -155,5 +155,5 @@ Sie können jedes Asset nach Dimensionen aufschlüsseln, um nachvollziehen zu k�
 >[!MORELIKETHIS]
 >
 >[Content Analytics-Komponenten](components.md)
->&#x200B;>[Verwenden von Vorlagen](/help/analysis-workspace/templates/use-templates.md#web-engagement)
+>>[Verwenden von Vorlagen](/help/analysis-workspace/templates/use-templates.md#web-engagement)
 >
