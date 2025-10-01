@@ -169,7 +169,7 @@ Adobe Experience Platform Agent Orchestrator ermöglicht den Zugriff auf die Fun
 
 Agent Orchestrator interpretiert Ihre Anfrage, bestimmt, welche spezialisierten Agenten benötigt werden, und orchestriert sie, um die richtige Antwort zu liefern. Es verfolgt den Kontext über Multi-Turn-Interaktionen hinweg, sodass Sie auf natürliche Weise auf früheren Abfragen aufbauen können.
 
-Weitere Informationen finden Sie unter [Adobe Experience Platform Agent Orchestrator ](http://www.adobe.com/go/agent-orchestrator-home).
+Weitere Informationen finden Sie unter [Adobe Experience Platform Agent Orchestrator &#x200B;](http://www.adobe.com/go/agent-orchestrator-home).
 
 ## Beispielhafte Prompts zur Datenvisualisierung
 
@@ -259,7 +259,7 @@ Im Folgenden finden Sie Best Practices für Ihre Customer Journey Analytics-Konf
 >[!MORELIKETHIS]
 >
 >[Einstellungen der Komponente](/help/data-views/component-settings/overview.md)
->>[Datenwörterbuch](/help/components/data-dictionary/data-dictionary-overview.md)
->>[Berechnete Metrik genehmigen](/help/components/calc-metrics/cm-workflow/cm-approving.md)
->>[Segmente freigeben](/help/components/segments/seg-share.md)
+>&#x200B;>[Datenwörterbuch](/help/components/data-dictionary/data-dictionary-overview.md)
+>&#x200B;>[Berechnete Metrik genehmigen](/help/components/calc-metrics/cm-workflow/cm-approving.md)
+>&#x200B;>[Segmente freigeben](/help/components/segments/seg-share.md)
 >
