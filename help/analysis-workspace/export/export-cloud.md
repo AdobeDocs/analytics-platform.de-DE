@@ -8,7 +8,7 @@ role: User
 source-git-commit: 0b6afd5639234f6305c99267d3b1624279c97368
 workflow-type: tm+mt
 source-wordcount: '2482'
-ht-degree: 73%
+ht-degree: 78%
 
 ---
 
@@ -67,7 +67,7 @@ Verwenden Sie den folgenden Prozess beim Exportieren vollständiger Tabellen in 
 >[!CONTEXTUALHELP]
 >id="cja-export-data-structure"
 >title="Datenstruktur"
->abstract="Dies ist die Freiformtabelle, die Sie exportieren. Sie können die Datenstruktur ändern, indem Sie Komponenten aus dem linken Bereich in die Tabelle ziehen. Sie können einen Filter anwenden, indem Sie eine Komponente in den Filterbereich ziehen. Die Tabelle wird dynamisch aktualisiert, wenn Sie Komponenten zur Arbeitsfläche hinzufügen."
+>abstract="Dies ist die Freiformtabelle, die Sie exportieren. Sie können die Datenstruktur ändern, indem Sie Komponenten aus dem linken Panel in die Tabelle ziehen. Sie können einen Filter anwenden, indem Sie eine Komponente in den Filterbereich ziehen. Die Tabelle wird dynamisch aktualisiert, wenn Sie Komponenten zur Arbeitsfläche hinzufügen."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -85,7 +85,7 @@ Verwenden Sie den folgenden Prozess beim Exportieren vollständiger Tabellen in 
 >[!CONTEXTUALHELP]
 >id="cja-export-schedule"
 >title="Zeitplan"
->abstract="Wählen Sie aus, wie oft der Export erfolgen soll. Wählen Sie Jetzt senden (einmal) aus, um den Export sofort zu starten. Geplante Exporte werden zu dem von Ihnen angegebenen Zeitpunkt initiiert. "
+>abstract="Wählen Sie aus, wie oft der Export erfolgen soll. Wählen Sie „Jetzt senden (einmalig)“ aus, um den Export sofort zu starten. Geplante Exporte werden zu dem von Ihnen angegebenen Zeitpunkt initiiert. "
 
 <!-- markdownlint-enable MD034 -->
 
@@ -95,7 +95,7 @@ Verwenden Sie den folgenden Prozess beim Exportieren vollständiger Tabellen in 
 >[!CONTEXTUALHELP]
 >id="cja-export-destination"
 >title="Ziel"
->abstract="Wählen Sie das Cloud-Konto und den Speicherort aus, an die die Daten gesendet werden sollen. Sie können ein vorhandenes Konto und einen Speicherort auswählen oder auf „Neu hinzufügen“ klicken, um sie zu erstellen. Geben Sie Benutzer und Gruppen an, die über fehlgeschlagene oder ablaufende Exporte benachrichtigt werden sollen."
+>abstract="Wählen Sie das Cloud-Konto und den Speicherort aus, an den die Daten gesendet werden sollen. Sie können ein vorhandenes Konto und einen Speicherort auswählen oder auf „Neu hinzufügen“ klicken, um diese zu erstellen. Geben Sie Benutzende und Gruppen an, die über fehlgeschlagene oder ablaufende Exporte benachrichtigt werden sollen."
 
 <!-- markdownlint-enable MD034 -->
 
