@@ -16,7 +16,7 @@ ht-degree: 72%
 
 In diesem Artikel wird allgemein beschrieben, wie Sie Content Analytics konfigurieren.
 
-Bevor Sie Content Analytics konfigurieren, müssen Sie sicherstellen[ dass die ](#prerequisites) Voraussetzungen erfüllt sind, dass Sie über die erforderliche [Zugriffskontrolle](#access-control) verfügen und dass Sie die [Einschränkungen](#limitations) kennen.
+Bevor Sie Content Analytics konfigurieren, müssen Sie sicherstellen[&#x200B; dass die &#x200B;](#prerequisites) Voraussetzungen erfüllt sind, dass Sie über die erforderliche [Zugriffskontrolle](#access-control) verfügen und dass Sie die [Einschränkungen](#limitations) kennen.
 
 
 Allgemeine Schritte
@@ -40,7 +40,7 @@ Stellen Sie vor dem Konfigurieren von Content Analytics sicher, dass die folgend
 * Wenn Sie den [Web SDK mit JavaScript](https://experienceleague.adobe.com/de/docs/experience-platform/web-sdk/install/library){target="_blank"} für die reguläre Verhaltensdatenerfassung implementiert haben, stellen Sie sicher, dass Sie den Standardnamen &quot;<code>&quot; verwenden</code> für die JavaScript-Bibliothek.
 * Sie verfügen über die Customer Journey Analytics-Rolle „Produktadministrator“ mit zusätzlichen Berechtigungen zum Verwalten von Verbindungen und Datenansichten.
 * Wenn Sie Content Analytics-Erlebnisse erfassen möchten, stellen Sie sicher, dass Sie die [Content Analytics-](manual.md#versioning) basierend auf den Änderungen auf Ihren Web-Seiten einrichten und aktualisieren.
-* Sie müssen über [Berechtigungen für die Datenerfassung“ ](https://experienceleague.adobe.com/de/docs/experience-platform/collection/permissions){target="_blank"}:
+* Sie müssen über [Berechtigungen für die Datenerfassung“ &#x200B;](https://experienceleague.adobe.com/de/docs/experience-platform/collection/permissions){target="_blank"}:
    * [Berechtigungen für Experience Platform](https://experienceleague.adobe.com/de/docs/experience-platform/collection/permissions#adobe-experience-platform-permissions){target="_blank"}
    * [Berechtigungen für die Datenerfassung in Experience Platform](https://experienceleague.adobe.com/de/docs/experience-platform/collection/permissions#adobe-experience-platform-data-collection-permissions){target="_blank"}
 * Sie haben die folgenden wichtigen Konfigurationsoptionen sorgfältig geprüft:

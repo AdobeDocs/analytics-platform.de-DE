@@ -317,7 +317,7 @@ In einer neuen Konfiguration müssen Sie festlegen, ob Sie eine vorhandene Tag-E
 
 >[!IMPORTANT]
 >
->Entfernen Sie manuell die automatisch eingeschlossene Web SDK-Erweiterung aus der neu erstellten Tags-Eigenschaft, falls Sie über eine bestehende Web SDK-Implementierung verfügen, die die [JavaScript](https://experienceleague.adobe.com/de/docs/experience-platform/web-sdk/install/library)Bibliothek anstelle der [Tags-Erweiterung) ](https://experienceleague.adobe.com/de/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration).
+>Entfernen Sie manuell die automatisch eingeschlossene Web SDK-Erweiterung aus der neu erstellten Tags-Eigenschaft, falls Sie über eine bestehende Web SDK-Implementierung verfügen, die die [JavaScript](https://experienceleague.adobe.com/de/docs/experience-platform/web-sdk/install/library)Bibliothek anstelle der [Tags-Erweiterung) &#x200B;](https://experienceleague.adobe.com/de/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration).
 >
 
 
