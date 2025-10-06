@@ -8,7 +8,7 @@ exl-id: 4aff664c-3cd9-4591-8122-6ebff10e4a76
 source-git-commit: e8cba64e706a456861fd8392ce9260b7a1c4636b
 workflow-type: tm+mt
 source-wordcount: '2694'
-ht-degree: 90%
+ht-degree: 97%
 
 ---
 
@@ -140,14 +140,14 @@ Ihre Konfiguration erfordert die Auswahl einer [Datenansicht](/help/data-views/d
    Folgende Aktionen können durchgeführt werden:
 
    * Um nach einem bestimmten Datensatz zu suchen, verwenden Sie das Suchfeld ![Suche](/help/assets/icons/Search.svg).
-   * Um die Liste der verfügbaren Datenansichten zu filtern, wählen Sie ![Filter anzeigen](/help/assets/icons/Filter.svg) aus. Sie können die Liste nach [!UICONTROL Verbindung], [!UICONTROL Inhaberin oder Inhaber] und [!UICONTROL Sandbox] filtern.<br/>Verwenden Sie ![Ausblenden](/help/assets/icons/Filter.svg) **[!UICONTROL Ausblenden von]**, um den Segmentbereich auszublenden.
+   * Wählen Sie zum Filtern der Liste der verfügbaren Datenansichten ![Filter anzeigen](/help/assets/icons/Filter.svg) aus. Sie können die Liste nach [!UICONTROL Verbindung], [!UICONTROL Inhaberin oder Inhaber] und [!UICONTROL Sandbox] filtern.<br/>Verwenden Sie ![Ausblenden](/help/assets/icons/Filter.svg) **[!UICONTROL Segmente ausblenden]**, um den Segmentbereich auszublenden.
    * Um zu definieren, welche Spalten in der Tabelle angezeigt werden sollen, wählen Sie ![Spalteneinstellungen](/help/assets/icons/ColumnSetting.svg) aus. Wählen Sie aus, welche Spalten im Dialogfeld **[!UICONTROL Tabelle anpassen]** angezeigt werden sollen, und wählen Sie **[!UICONTROL Anwenden]** aus, um die Änderungen anzuwenden.
 
 1. Wählen Sie mit ![Auswählkästchen](/help/assets/icons/SelectBox.svg) die Datenansicht aus, die verwendet werden soll.
 1. Wählen Sie **[!UICONTROL Speichern]** aus, um die ausgewählte Datenansicht zu bestätigen. Wählen Sie zum Abbrechen **[!UICONTROL Abbrechen]** aus.
 
 
-In Customer Journey Analytics ist eine [Datenansicht](/help/data-views/data-views.md) an eine Customer Journey Analytics-[Verbindung](/help/connections/overview.md) gebunden. Und eine Verbindung basiert auf einer Sandbox in Ihrer Organisation. Nachdem Sie die Konfiguration gespeichert haben **[!UICONTROL wird]** Feld „Sandbox“ basierend auf der ausgewählten Datenansicht automatisch mit dem Namen der Sandbox ausgefüllt.
+In Customer Journey Analytics ist eine [Datenansicht](/help/data-views/data-views.md) an eine Customer Journey Analytics-[Verbindung](/help/connections/overview.md) gebunden. Und eine Verbindung basiert auf einer Sandbox in Ihrer Organisation. Nachdem Sie die Konfiguration gespeichert haben, wird das Feld **[!UICONTROL Sandbox]** automatisch basierend auf der ausgewählten Datenansicht mit dem Namen der Sandbox ausgefüllt.
 
 
 ### Erlebniserfassung und -definition {#onboarding-experiences}
@@ -193,11 +193,11 @@ Standardmäßig ist **[!UICONTROL Erlebnisse einschließen]** deaktiviert. Wenn 
 Ziehen Sie das Einschließen von Erlebnissen nur in Betracht, wenn Folgendes zutrifft:
 
 * Die Seiten auf der Site müssen unter Verwendung der Seiten-URL reproduzierbar sein.
-* Der Textinhalt, der von einem bestimmten Benutzer angezeigt wird, kann mithilfe der Seiten-URL reproduziert werden und hängt nicht von Cookies oder anderen Personalisierungsmechanismen ab.
+* Der Textinhalt, der einer Person angezeigt wird, kann über die Seiten-URL reproduziert werden und hängt nicht von Cookies oder anderen Personalisierungsmechanismen ab.
 
 >[!IMPORTANT]
 >
->Implementieren Sie die [Content Analytics](manual.md#versioning)Versionierung, um Änderungen zu erfassen, die Sie an den Erlebnissen (Seiten) vornehmen, die Content Analytics unterliegen.
+>Implementieren Sie die [Content Analytics-Versionierung](manual.md#versioning), um Änderungen zu erfassen, die Sie an den Erlebnissen (Seiten) vornehmen, die Content Analytics unterliegen.
 
 
 
@@ -226,7 +226,7 @@ So bearbeiten Sie vorhandene Erlebnisse oder schließen neue Erlebnisse in eine 
 
 ![Erlebniserfassung und -definition bei der Content Analytics-Konfiguration](../assets/aca-configuration-experience-edit.png)
 
-* Schalten Sie **[!UICONTROL Erlebnisse einschließen]** um:
+* Schalten Sie **[!UICONTROL Erlebnisse einschließen]** um, um Folgendes zu aktivieren bzw. zu deaktivieren:
 
    * den Prozess, der Erlebnisattribute aus Content Analytics-Ereignisdaten generiert
    * die Berichtsvorlage in Customer Journey Analytics
@@ -296,7 +296,7 @@ In einer neuen Konfiguration müssen Sie festlegen, ob Sie eine vorhandene Tag-E
   ![Vorhandenes Tag bei der Datenerfassung der Inhaltsanalyse](../assets/aca-configuration-datacollection-existingtag.png)
 
    1. Wählen Sie **[!UICONTROL Vorhandene auswählen]**.
-   2. Wählen Sie eine vorhandene Eigenschaft aus dem Dropdown **[!UICONTROL Menü „Eigenschaft]** Tags“ aus. Sie können mit der Eingabe beginnen, um nach den verfügbaren Optionen zu suchen und diese zu beschränken. Sie können keine Tags-Eigenschaft auswählen, die bereits von einer anderen implementierten Content Analytics-Konfiguration verwendet wird.
+   2. Wählen Sie aus dem Dropdown-Menü **[!UICONTROL Tags-Eigenschaft]** eine vorhandene Eigenschaft aus. Sie können mit der Eingabe beginnen, um nach den verfügbaren Optionen zu suchen und diese zu beschränken. Sie können keine Tags-Eigenschaft auswählen, die bereits von einer anderen implementierten Content Analytics-Konfiguration verwendet wird.
 
 
 * Erstellen einer neuen Tags-Eigenschaft:
@@ -313,11 +313,11 @@ In einer neuen Konfiguration müssen Sie festlegen, ob Sie eine vorhandene Tag-E
 
 * Geben Sie an, welche Assets bei der Datenerfassung zur Inhaltsanalyse ein- oder ausgeschlossen werden sollen.
 
-  Geben Sie eine Zeichenfolge für reguläre Ausdrücke für **[!UICONTROL Einzuschließende/auszuschließende Assets]** an. <br/>Beispiel: `^(?!.*(logo\.jpg)).*$`, um alle JPEG-Logo-Bilder von Content Analytics auszuschließen.
+  Geben Sie eine Zeichenfolge für reguläre Ausdrücke für **[!UICONTROL Einzuschließende/auszuschließende Assets]** an. <br/>Beispiel: `^(?!.*(logo\.jpg)).*$`, um alle Logo-Bilder im JPEG-Format aus Content Analytics auszuschließen.
 
 >[!IMPORTANT]
 >
->Entfernen Sie manuell die automatisch eingeschlossene Web SDK-Erweiterung aus der neu erstellten Tags-Eigenschaft, falls Sie über eine bestehende Web SDK-Implementierung verfügen, die die [JavaScript](https://experienceleague.adobe.com/de/docs/experience-platform/web-sdk/install/library)Bibliothek anstelle der [Tags-Erweiterung) &#x200B;](https://experienceleague.adobe.com/de/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration).
+>Entfernen Sie manuell die automatisch eingeschlossene Web SDK-Erweiterung aus der neu erstellten Tags-Eigenschaft, falls Sie über eine bestehende Web SDK-Implementierung verfügen, die die [JavaScript-Bibliothek](https://experienceleague.adobe.com/de/docs/experience-platform/web-sdk/install/library) anstelle der [Tags-Erweiterung](https://experienceleague.adobe.com/de/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration) verwendet.
 >
 
 

@@ -8,13 +8,13 @@ exl-id: 584587e6-45fd-4fc3-a7a6-6685481ddee7
 source-git-commit: e8cba64e706a456861fd8392ce9260b7a1c4636b
 workflow-type: tm+mt
 source-wordcount: '622'
-ht-degree: 72%
+ht-degree: 97%
 
 ---
 
 # Content Analytics-Benutzeroberfläche
 
-In diesem Artikel wird ausführlich erläutert, wie Content Analytics Daten erfasst
+In diesem Artikel wird ausführlich beschrieben, wie Content Analytics Daten erfasst.
 
 ## Definitionen
 
@@ -31,7 +31,7 @@ Im Zusammenhang mit diesem Artikel werden die folgenden Definitionen verwendet:
 
 ## Funktionalität
 
-Content Analytics erfordert, dass Experience Platform Edge Network Web SDK Inhaltsereignisdaten erfasst. Diese Ereignisdatenerfassung wird mit der (vorhandenen) Datenerfassung von Verhaltensereignisdaten über Mechanismen wie Experience Platform Edge Network (Web-SDK, Server-API) oder Analytics Source Connector (z. B. mit AppMeasurement) kombiniert.
+Content Analytics erfordert, dass das Experience Platform Edge Network Web-SDK Inhaltsereignisdaten erfasst. Diese Ereignisdatenerfassung wird mit der (vorhandenen) Datenerfassung von Verhaltensereignisdaten über Mechanismen wie Experience Platform Edge Network (Web-SDK, Server-API) oder Analytics Source Connector (z. B. mit AppMeasurement) kombiniert.
 
 Die Content Analytics-Bibliothek erfasst Daten in folgenden Fällen:
 
@@ -54,7 +54,7 @@ Ein Content Analytics-Ereignis besteht aus:
 Content Analytics-Ereignisse werden erfasst als eine Abfolge:
 
 1. [einer aufgezeichneten Ansicht oder eines aufgezeichneten Klicks](#recorded-view-or-click)
-1. [Ein Trigger zum Senden eines Content Analytics-Ereignisses](#trigger-to-send-a-content-analytics-event).
+1. [eines Triggers zum Senden eines Content Analytics-Ereignisses](#trigger-to-send-a-content-analytics-event).
 
 Content Analytics erfasst auf diese Weise Daten, die diese Abfolge widerspiegeln, anstatt eine Ansicht oder einen Klick getrennt von dem Ereignis zu erfassen, das unmittelbar auf diese Ansicht oder diesen Klick folgt. Diese Methode zur Erfassung von Content Analytics-Daten reduziert auch die Menge der erfassten Daten.
 
@@ -83,7 +83,7 @@ Ein Erlebnisklick wird in folgendem Fall aufgezeichnet:
 
 ### Trigger zum Senden eines Content Analytics-Ereignisses
 
-Um die Anzahl der Aufrufe zu reduzieren, die die Seite verlassen, sammelt Content Analytics Informationen, sendet diese jedoch nicht sofort. Informationen zu Inhaltsinteraktionen werden erfasst und ein Ereignis, das diese Informationen enthält, wird nur gesendet, wenn einer der folgenden Trigger auftritt:
+Um die Anzahl der Aufrufe zu reduzieren, die von der Seite abgesetzt werden, sammelt Content Analytics Informationen, sendet diese jedoch nicht sofort. Informationen zu Inhaltsinteraktionen werden erfasst und ein Ereignis, das diese Informationen enthält, wird nur gesendet, wenn einer der folgenden Trigger auftritt:
 
 * Web SDK oder AppMeasurement sendet ein Ereignis.
 * Die Sichtbarkeit ändert sich (ausgeblendeter Status). Beispiele:
@@ -97,7 +97,7 @@ Um die Anzahl der Aufrufe zu reduzieren, die die Seite verlassen, sammelt Conten
 
 >[!NOTE]
 >
->Die zusätzlichen Content Analytics-Ereignisse wirken sich höchstwahrscheinlich auf jede Absprungratendefinition aus, die auf der Anzahl der Ereignisse in einer Sitzung oder einer Seite basiert.
+>Die weiteren Content Analytics-Ereignisse wirken sich höchstwahrscheinlich auf alle Definitionen von Absprungraten aus, die auf der Anzahl der Ereignisse in einer Sitzung oder auf einer Seite basieren.
 >
 
 
