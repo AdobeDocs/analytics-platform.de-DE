@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 exl-id: f4115164-7263-40ad-9706-3b98d0bb7905
 role: Admin
-source-git-commit: c60c68e6065e877d0fa4a92dbfe8dd54a2dfb4fe
+source-git-commit: b1fa2220b20cd2cdeae51aa57b05aa28b266a8d6
 workflow-type: tm+mt
-source-wordcount: '2046'
-ht-degree: 26%
+source-wordcount: '2084'
+ht-degree: 25%
 
 ---
 
@@ -22,9 +22,9 @@ Im Folgenden finden Sie einige häufig gestellte Fragen zum Zusammenfügen:
 
 Sie können eine Flussvisualisierung mit der Dimension „Datensatz-ID“ verwenden.
 
-1. Melden Sie sich bei [Customer Journey Analytics an &#x200B;](https://analytics.adobe.com) erstellen Sie ein leeres Workspace-Projekt.
-2. Wählen Sie auf der linken Seite **[!UICONTROL ** Visualisierungen **]** aus und ziehen Sie eine **[!UICONTROL **&#x200B; Fluss &#x200B;**]**-Visualisierung auf die Arbeitsfläche auf der rechten Seite.
-3. Wählen Sie auf der linken Seite **[!UICONTROL ** Komponenten **]** und ziehen Sie die Dimension **[!UICONTROL ** Datensatz-ID **]** an die mittlere Position mit der Bezeichnung **[!UICONTROL **&#x200B; Dimension oder Element &#x200B;**]**.
+1. Melden Sie sich bei [Customer Journey Analytics an ](https://analytics.adobe.com) erstellen Sie ein leeres Workspace-Projekt.
+2. Wählen Sie auf der linken Seite **[!UICONTROL ** Visualisierungen **]** aus und ziehen Sie eine **[!UICONTROL ** Fluss **]**-Visualisierung auf die Arbeitsfläche auf der rechten Seite.
+3. Wählen Sie auf der linken Seite **[!UICONTROL ** Komponenten **]** und ziehen Sie die Dimension **[!UICONTROL ** Datensatz-ID **]** an die mittlere Position mit der Bezeichnung **[!UICONTROL ** Dimension oder Element **]**.
 4. Dieser Flussbericht ist interaktiv. Um die Flüsse zu nachfolgenden oder vorherigen Seiten zu erweitern, wählen Sie einen der Werte aus. Verwenden Sie das Kontextmenü, um Spalten zu erweitern oder zu reduzieren. Im selben Flussbericht können auch verschiedene Dimensionen verwendet werden.
 
 Wenn Sie die Datensatz-ID-Dimensionselemente umbenennen möchten, können Sie einen Lookup-Datensatz verwenden.
@@ -47,7 +47,7 @@ In einigen Situationen ist es möglich, dass sich mehrere Personen von demselben
 
 Die vorübergehende ID setzt die beständige ID außer Kraft, sodass freigegebene Geräte als separate Personen betrachtet werden (auch wenn sie von demselben Gerät stammen).
 
-Weitere Informationen finden Sie [&#x200B; Anwendungsbeispiel &#x200B;](/help/use-cases/stitching/shared-devices.md)Freigegebene Geräte“.
+Weitere Informationen finden Sie [ Anwendungsbeispiel ](/help/use-cases/stitching/shared-devices.md)Freigegebene Geräte“.
 
 +++
 
@@ -217,7 +217,7 @@ Andere Metriken können in Customer Journey Analytics und Adobe Analytics ähnli
 
 +++ Kann Customer Journey Analytics Identity Map-Felder verwenden?
 
-Ja, Customer Journey Analytics kann Identitätszuordnungsfelder sowohl für [&#x200B; (feldbasierte](/help/stitching/fbs.md#identitymap) als auch für [diagrammbasierte](/help/stitching/gbs.md#identitymap) Zuordnung verwenden.
+Ja, Customer Journey Analytics kann Identitätszuordnungsfelder sowohl für [ (feldbasierte](/help/stitching/fbs.md#identitymap) als auch für [diagrammbasierte](/help/stitching/gbs.md#identitymap) Zuordnung verwenden.
 
 +++
 
@@ -227,10 +227,12 @@ Ja, Customer Journey Analytics kann Identitätszuordnungsfelder sowohl für [&#x
 
 Daten müssen nicht erneut in Experience Platform aufgenommen werden. Sie müssen jedoch in Customer Journey Analytics neu konfiguriert werden. Führen Sie die folgenden Schritte aus:
 
-1. Richten Sie den neuen diagrammbasierten zugeordneten Datensatz ein.
-1. Konfigurieren Sie den neuen Datensatz als Teil einer neuen Verbindung in Customer Journey Analytics.
-1. Wechseln Sie Ihre vorhandene Datenansicht, um die neue Verbindung (und somit den neuen diagrammbasierten zugeordneten Datensatz) zu verwenden.
-1. Entfernen Sie die alte Verbindung, die den feldbasierten zugeordneten Datensatz verwendet hat.
+1. Richten Sie den neuen diagrammbasierten zugeordneten Datensatz mithilfe der diagrammbasierten Zuordnung ein.
+1. Erstellen Sie eine neue temporäre Verbindung mit einem sehr kleinen Zeitfenster an Daten.
+1. Konfigurieren Sie den neuen diagrammbasierten Datensatz als Teil dieser temporären Verbindung.
+1. Überprüfen Sie mit dieser neuen temporären Verbindung, ob die diagrammbasierte Zuordnung ordnungsgemäß funktioniert.
+1. Wenn die diagrammbasierte Zuordnung erwartungsgemäß funktioniert, fordern Sie eine zusätzliche Aufstockung für den diagrammbasierten Datensatz an und tauschen Sie dann den feldbasierten Datensatz in Ihrer ursprünglichen Verbindung mit dem neuen diagrammbasierten Datensatz aus.
+1. Entfernen der temporären Verbindung
 
 +++
 
@@ -273,6 +275,6 @@ curl -X POST \
 
 Jede Verwendung des `unifiedProfile`-Tags in der Anfrage gibt einen Fehler zurück, obwohl Sie nicht für das Echtzeit-Kundendatenprofil lizenziert sind.
 
-Weitere [&#x200B; finden Sie unter „Erstellen eines Datensatzes, der für Profil und &#x200B;](https://experienceleague.adobe.com/de/docs/experience-platform/catalog/datasets/enable-for-profile#create-a-dataset-enabled-for-profile-and-identity) aktiviert ist“.
+Weitere [ finden Sie unter „Erstellen eines Datensatzes, der für Profil und ](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/enable-for-profile#create-a-dataset-enabled-for-profile-and-identity) aktiviert ist“.
 
 +++ 
