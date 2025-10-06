@@ -6,9 +6,9 @@ solution: Customer Journey Analytics
 feature: AI Tools
 exl-id: 262d5f15-16cb-4851-a769-7dbd205b2f81
 source-git-commit: cd92bde10b9cb473c4df791e91296a2a43b2ad84
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2463'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -163,13 +163,13 @@ Schließlich möchten Sie sich noch den Umsatz nach Produktkategorie ansehen.
 
 ![Ringdiagramm](/help/assets/ai-asst-result3.png)
 
-## Zugriff auf Data Insights Agent über Experience Cloud-Anwendungen hinweg
+## Zugreifen auf Data Insights Agent über Experience Cloud-Anwendungen hinweg
 
 Adobe Experience Platform Agent Orchestrator ermöglicht den Zugriff auf die Funktionen von Data Insights Agent in mehreren Adobe Experience Cloud-Anwendungen, z. B. Adobe Journey Optimizer und Real-Time CDP.
 
-Agent Orchestrator interpretiert Ihre Anfrage, bestimmt, welche spezialisierten Agenten benötigt werden, und orchestriert sie, um die richtige Antwort zu liefern. Es verfolgt den Kontext über Multi-Turn-Interaktionen hinweg, sodass Sie auf natürliche Weise auf früheren Abfragen aufbauen können.
+Agent Orchestrator interpretiert Ihre Anfrage, bestimmt, welche spezialisierten Agents benötigt werden, und orchestriert sie, um die richtige Antwort bereitzustellen. Außerdem wird der Kontext über Multi-Turn-Interaktionen hinweg verfolgt, sodass Sie auf natürliche Weise auf früheren Abfragen aufbauen können.
 
-Weitere Informationen finden Sie unter [Adobe Experience Platform Agent Orchestrator &#x200B;](http://www.adobe.com/go/agent-orchestrator-home).
+Weitere Informationen finden Sie unter [Adobe Experience Platform Agent Orchestrator](http://www.adobe.com/go/agent-orchestrator-home_de).
 
 ## Beispielhafte Prompts zur Datenvisualisierung
 
@@ -259,7 +259,7 @@ Im Folgenden finden Sie Best Practices für Ihre Customer Journey Analytics-Konf
 >[!MORELIKETHIS]
 >
 >[Einstellungen der Komponente](/help/data-views/component-settings/overview.md)
->&#x200B;>[Datenwörterbuch](/help/components/data-dictionary/data-dictionary-overview.md)
->&#x200B;>[Berechnete Metrik genehmigen](/help/components/calc-metrics/cm-workflow/cm-approving.md)
->&#x200B;>[Segmente freigeben](/help/components/segments/seg-share.md)
+>>[Datenwörterbuch](/help/components/data-dictionary/data-dictionary-overview.md)
+>>[Berechnete Metrik genehmigen](/help/components/calc-metrics/cm-workflow/cm-approving.md)
+>>[Segmente freigeben](/help/components/segments/seg-share.md)
 >

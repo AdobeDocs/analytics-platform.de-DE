@@ -6,9 +6,9 @@ feature: Basics
 exl-id: ead96b72-40f1-4ce9-8d91-c8ceea6c4458
 role: Admin
 source-git-commit: ec56bc657961b2e4e8318ab14cd676288398462f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1089'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
@@ -28,8 +28,8 @@ Die allgemeine Architektur von Customer Journey Analytics ist im Folgenden darge
 Diese Architektur veranschaulicht, wie Customer Journey Analytics Folgendes ermöglicht:
 
 * Kombinieren mehrerer Datensätze ![Daten](/help/assets/icons/Data.svg) in einer [Verbindung](/help/connections/overview.md).
-* Definieren und konfigurieren ![ Dimensionen ](/help/assets/icons/Dimensions.svg) Metriken ![Ereignis](/help/assets/icons/Event.svg) in einer [Datenansicht](/help/data-views/data-views.md) basierend auf den Feldern, die in den von Ihnen in Ihrer Verbindung definierten Datensätzen verfügbar sind.
-* Erstellen Sie Berichte ![ViewTable](/help/assets/icons/ViewTable.svg) und Visualisierungen (wie Linie ![Linie](/help/assets/icons/GraphTrend.svg) und Bereich ![Bereich](/help/assets/icons/GraphAreaStacked.svg)) in [Projekten](/help/analysis-workspace/home.md) basierend auf den Dimensionen und Metriken aus Ihren Datenansichten.
+* Definieren und Konfigurieren von Dimensionen ![Dimensionen](/help/assets/icons/Dimensions.svg) und Metriken ![Ereignis](/help/assets/icons/Event.svg) in einer [Datenansicht](/help/data-views/data-views.md) basierend auf den Feldern, die in den von Ihnen in Ihrer Verbindung definierten Datensätzen verfügbar sind.
+* Erstellen von Berichten ![Ansichtstabelle](/help/assets/icons/ViewTable.svg) und Visualisierungen (wie Linien- ![Linie](/help/assets/icons/GraphTrend.svg) und Flächendiagrammen ![Fläche](/help/assets/icons/GraphAreaStacked.svg)) in [Projekten](/help/analysis-workspace/home.md) basierend auf den Dimensionen und Metriken aus Ihren Datenansichten.
 
 Die Datensätze in der Architektur können aus verschiedenen Quellen stammen:
 
@@ -108,7 +108,7 @@ Weitere Informationen finden Sie unter [Aufnehmen und Verwenden von Daten über 
 
 ## Aufnehmen und Verwenden von Ad-hoc-Daten
 
-Sie verfügen über Ad-hoc-Daten, die nur einen einzigen Datensatz in Experience Platform erfordern und nicht die Konfiguration eines Experience-Datenmodell (XDM)-Schemas erfordern. Dieses Szenario wird als Ad-hoc-Schema bezeichnet. Ad-hoc-Schemata werden in verschiedenen Datenaufnahme-Workflows für Experience Platform verwendet, einschließlich der Aufnahme von CSV-Dateien und der Erstellung bestimmter Arten von Quellverbindungen.
+Sie verfügen über Ad-hoc-Daten, die nur einen einzigen Datensatz in Experience Platform und nicht die Konfiguration eines Experience-Datenmodellschemas (XDM) erfordern. Dieses Szenario wird als Ad-hoc-Schema bezeichnet. Ad-hoc-Schemata werden in verschiedenen Datenaufnahme-Workflows für Experience Platform verwendet, einschließlich der Aufnahme von CSV-Dateien und der Erstellung bestimmter Arten von Quellverbindungen.
 
 Siehe [Aufnehmen und Verwenden von Ad-hoc-Daten](./adhoc.md)
 

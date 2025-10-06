@@ -6,9 +6,9 @@ feature: Content Analytics
 role: Admin
 exl-id: 3ea46223-c7d0-4b1f-bc84-4f35494f13a0
 source-git-commit: f149a2bd7f184f4e8f6e67979649e2d9f609d603
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '599'
-ht-degree: 72%
+ht-degree: 100%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 72%
 
 In diesem Artikel wird allgemein beschrieben, wie Sie Content Analytics konfigurieren.
 
-Bevor Sie Content Analytics konfigurieren, müssen Sie sicherstellen[&#x200B; dass die &#x200B;](#prerequisites) Voraussetzungen erfüllt sind, dass Sie über die erforderliche [Zugriffskontrolle](#access-control) verfügen und dass Sie die [Einschränkungen](#limitations) kennen.
+Bevor Sie Content Analytics konfigurieren, müssen Sie sicherstellen, dass die [Voraussetzungen](#prerequisites) erfüllt sind, dass Sie über die erforderliche [Zugriffssteuerung](#access-control) verfügen und dass Sie die [Einschränkungen](#limitations) kennen.
 
 
 Allgemeine Schritte
@@ -37,17 +37,17 @@ Allgemeine Schritte
 Stellen Sie vor dem Konfigurieren von Content Analytics sicher, dass die folgenden Voraussetzungen erfüllt sind:
 
 * Sie haben den Benutzeragenten und die IP-Adresse für den in Content Analytics verwendeten Featurisierungs-Service auf die Zulassungsliste gesetzt. Die zu konfigurierende Benutzeragenten-Zeichenfolge lautet: <code>AdobeFeaturization/1.0</code>.
-* Wenn Sie den [Web SDK mit JavaScript](https://experienceleague.adobe.com/de/docs/experience-platform/web-sdk/install/library){target="_blank"} für die reguläre Verhaltensdatenerfassung implementiert haben, stellen Sie sicher, dass Sie den Standardnamen &quot;<code>&quot; verwenden</code> für die JavaScript-Bibliothek.
+* Wenn Sie das [Web SDK mit JavaScript](https://experienceleague.adobe.com/de/docs/experience-platform/web-sdk/install/library){target="_blank"} zur regulären Verhaltensdatenerfassung implementiert haben, stellen Sie sicher, dass Sie den Standardnamen <code>alloy</code> für die JavaScript-Bibliothek verwenden.
 * Sie verfügen über die Customer Journey Analytics-Rolle „Produktadministrator“ mit zusätzlichen Berechtigungen zum Verwalten von Verbindungen und Datenansichten.
-* Wenn Sie Content Analytics-Erlebnisse erfassen möchten, stellen Sie sicher, dass Sie die [Content Analytics-](manual.md#versioning) basierend auf den Änderungen auf Ihren Web-Seiten einrichten und aktualisieren.
-* Sie müssen über [Berechtigungen für die Datenerfassung“ &#x200B;](https://experienceleague.adobe.com/de/docs/experience-platform/collection/permissions){target="_blank"}:
+* Wenn Sie Content Analytics-Erlebnisse erfassen möchten, stellen Sie sicher, dass Sie die [Content Analytics-Versionierung](manual.md#versioning) basierend auf den Änderungen auf Ihren Web-Seiten einrichten und aktualisieren.
+* Sie müssen über [Berechtigungen zur Datenerfassung](https://experienceleague.adobe.com/de/docs/experience-platform/collection/permissions){target="_blank"} verfügen. 
    * [Berechtigungen für Experience Platform](https://experienceleague.adobe.com/de/docs/experience-platform/collection/permissions#adobe-experience-platform-permissions){target="_blank"}
    * [Berechtigungen für die Datenerfassung in Experience Platform](https://experienceleague.adobe.com/de/docs/experience-platform/collection/permissions#adobe-experience-platform-data-collection-permissions){target="_blank"}
 * Sie haben die folgenden wichtigen Konfigurationsoptionen sorgfältig geprüft:
 
    * Ihre Site ist für das Reporting zu Erlebnissen geeignet. Ein ordnungsgemäßes Reporting zu Erlebnissen ist nur möglich, wenn die folgenden Bedingungen erfüllt sind:
       * Die Seiten auf der Site müssen unter Verwendung der Seiten-URL reproduzierbar sein.
-      * Der Textinhalt, der von einem bestimmten Benutzer angezeigt wird, kann mithilfe der Seiten-URL reproduziert werden und hängt nicht von Cookies oder anderen Personalisierungsmechanismen ab.
+      * Der Textinhalt, der einer Person angezeigt wird, kann über die Seiten-URL reproduziert werden und hängt nicht von Cookies oder anderen Personalisierungsmechanismen ab.
    * Sie haben ein klares Verständnis dafür, für welche Seiten Sie Analysen und Erkenntnisse zur Inhaltsinteraktion erfassen möchten.
    * Sie haben ein klares Verständnis dafür, für welche (Art von) Assets Sie Analysen und Erkenntnisse zur Inhaltsinteraktion erfassen möchten.
 
@@ -68,10 +68,10 @@ Dieser Zugriff setzt Folgendes voraus:
 
 ## Einschränkungen
 
-Das für Content Analytics-Ereignisdaten verwendete Schema befindet sich im Systembesitz. Ein systemeigenes Schema kann nicht geändert werden, was Folgendes bedeutet:
+Das für Content Analytics-Ereignisdaten verwendete Schema ist systemeigen. Ein systemeigenes Schema kann nicht geändert werden, was Folgendes bedeutet:
 
-* Sie können keine Feldergruppen zur Unterstützung von Funktionen wie Geolokalisierung, Bot-Erkennung oder Gerätesuche einbeziehen.
-* Es kann keine spezifische Kennung hinzugefügt werden, um [feldbasiertes Stitching](/help/stitching/fbs.md) zu unterstützen.
+* Sie können keine Feldgruppen zur Unterstützung von Funktionen wie Geolokalisierung, Bot-Erkennung oder Gerätesuche einbeziehen.
+* Sie können keine spezifische Kennung zur Unterstützung von [feldbasiertem Stitching](/help/stitching/fbs.md) hinzufügen.
 
 >[!MORELIKETHIS]
 >
