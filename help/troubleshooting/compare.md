@@ -27,7 +27,7 @@ Betrachten Sie die folgenden möglichen Gründe, warum die Daten zwischen versch
 * **Kalendereinstellungen**: Report Suites in Adobe Analytics enthalten eine Zeitzone und andere Kalendereinstellungen, die Sie konfigurieren können. Ebenso haben Datenansichten in Customer Journey Analytics eine separate Einstellung, die Sie steuern können. Stellen Sie sicher, dass diese Einstellungen zwischen Produkten übereinstimmen, wenn Parität gewünscht wird.
 * **Zusätzliche Datensätze**: Customer Journey Analytics bietet die Möglichkeit, mehrere Datensätze in eine Verbindung aufzunehmen. Zu diesen Unterschieden gehören zusätzliche Ereignis-, Profil- oder Lookup-Datensätze. Diese Funktion ist ein wichtiges Unterscheidungsmerkmal zwischen Adobe Analytics und Customer Journey Analytics und ermöglicht insight die Aufnahme kanalübergreifender Daten.
 * **Zusammengefügte Datensätze**: Adobe bietet die Möglichkeit, Personen-IDs zwischen zwei Datensätzen zu analysieren, was zu einem neuen Datensatz mit zusammengefügten IDs führt. Diese [zusammengefügten Datensätze](/help/stitching/overview.md) enthalten zusätzliche Daten, die über die Angebote einer Adobe Analytics Report Suite hinausgehen.
-* **Datenquellen**: Customer Journey Analytics umfasst keine [ (Datenquellen), ](https://experienceleague.adobe.com/en/docs/analytics/import/data-sources/overview) in eine Adobe Analytics Report Suite hochgeladen wurden, einschließlich Zusammenfassungsdatenquellen oder Transaktions-ID-Datenquellen.
+* **Datenquellen**: Customer Journey Analytics umfasst keine [&#x200B; (Datenquellen), &#x200B;](https://experienceleague.adobe.com/en/docs/analytics/import/data-sources/overview) in eine Adobe Analytics Report Suite hochgeladen wurden, einschließlich Zusammenfassungsdatenquellen oder Transaktions-ID-Datenquellen.
 * **Einstellungen für Dimension und Metriken**: Innerhalb einer Datenansicht enthält jede Dimension und Metrik ihre eigenen Einstellungen, die Ihr Unternehmen ändern kann. Diese Änderungen gelten zum Zeitpunkt der Berichtsausführung und werden daher rückwirkend angewendet. Die Einstellungen für Dimension und Metriken in Adobe Analytics ändern die Art und Weise, wie Daten erfasst werden, sodass diese Änderungen ab diesem Zeitpunkt gelten. Wenn Sie Komponenteneinstellungen in einem der Produkte geändert haben, können diese Berichtsunterschiede verursachen. Wenn Sie sich auf eine bestimmte Dimension konzentrieren, stellen Sie sicher, dass die Einstellungen für Attribution und Persistenz zwischen Adobe Analytics und Customer Journey Analytics übereinstimmen.
 
   >[!TIP]
@@ -55,7 +55,7 @@ Wenn alle oben genannten Einstellungen ähnlich aussehen und Sie zumindest die A
    ORDER BY Day;
    ```
 
-1. Generieren [ in Adobe Analytics ](https://experienceleague.adobe.com/de/docs/analytics/export/analytics-data-feed/data-feed-overview)Daten-Feeds) Feed-Dateien für den gewünschten Datumsbereich. Zählen Sie die Anzahl der Zeilen innerhalb jeder Datei, indem Sie die folgenden Zeilen identifizieren und ausschließen:
+1. Generieren [&#x200B; in Adobe Analytics &#x200B;](https://experienceleague.adobe.com/de/docs/analytics/export/analytics-data-feed/data-feed-overview)Daten-Feeds) Feed-Dateien für den gewünschten Datumsbereich. Zählen Sie die Anzahl der Zeilen innerhalb jeder Datei, indem Sie die folgenden Zeilen identifizieren und ausschließen:
 
    * `exclude_hit` ist nicht `0` (Daten werden in beiden Produkten aus Analysis Workspace ausgeschlossen)
    * `hit_source` ist `0`, `3`, `5`, `7`, `8`, `9` oder `10` (Datenquellen und andere Nicht-Trefferdaten)
