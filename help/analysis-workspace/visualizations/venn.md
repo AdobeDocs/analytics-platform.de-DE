@@ -4,10 +4,10 @@ title: Venn
 feature: Visualizations
 exl-id: a0162164-a0cf-45b9-99b6-2a115e9a4e57
 role: User
-source-git-commit: 8054aab28c405f6a9dd24306a086c78069032999
+source-git-commit: 973e999b611d578da12018e60becf48efd7a76f8
 workflow-type: tm+mt
-source-wordcount: '164'
-ht-degree: 62%
+source-wordcount: '207'
+ht-degree: 49%
 
 ---
 
@@ -25,12 +25,18 @@ ht-degree: 62%
 
 >[!BEGINSHADEBOX]
 
-_In diesem Artikel wird die Visualisierung Venn in_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics** beschrieben._<br/>_Unter [Venn](https://experienceleague.adobe.com/de/docs/analytics/analyze/analysis-workspace/visualizations/venn) finden Sie die Version dieses Artikels für_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics**._
+_In diesem Artikel wird die Visualisierung Venn in_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics** beschrieben._<br/>_Unter [Venn](https://experienceleague.adobe.com/de/docs/analytics/analyze/analysis-workspace/visualizations/venn) finden Sie die Version dieses Artikels für_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**._
 
 >[!ENDSHADEBOX]
 
 
 Bei der Visualisierung ![Typ](/help/assets/icons/TwoDots.svg) **[!UICONTROL Venn]** können Sie bis zu drei Segmente und eine Metrik (aus dem Bedienfeld „Komponenten„) einfügen, um ein Venn-Diagramm zu erstellen.
+
+>[!NOTE]
+>
+>Analysis Workspace verwendet flächenproportionale Venn-Diagramme. Venn-Diagramme mit drei oder mehr Kreisen, die in zwei Dimensionen dargestellt werden, können nicht immer mit perfekten Proportionen gezeichnet werden.
+> 
+>Workspace versucht, den annähernden Venn-Wert zu erstellen, die Ergebnisse sind jedoch möglicherweise nicht immer visuell korrekt.
 
 ![Venn-Visualisierung, die drei Segmente enthält.](assets/venn.png)
 
@@ -56,7 +62,7 @@ Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Venn](https://
 >[!MORELIKETHIS]
 >
 >[Hinzufügen einer Visualisierung zu einem Panel](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
->&#x200B;>[Visualisierungseinstellungen](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
->&#x200B;>[Kontextmenü der Visualisierung](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
+>>[Visualisierungseinstellungen](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
+>>[Kontextmenü der Visualisierung](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
 >
 

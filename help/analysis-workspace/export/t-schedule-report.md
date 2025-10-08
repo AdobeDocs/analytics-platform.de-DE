@@ -6,18 +6,22 @@ feature: Curate and Share
 mini-toc-levels: 3
 exl-id: 36b5133a-2cd3-4cf1-a6fa-93a02dba276a
 role: User
-source-git-commit: c91ee21a3d4e20e3bdaeb75f2011ede6eee6cba0
+source-git-commit: 973e999b611d578da12018e60becf48efd7a76f8
 workflow-type: tm+mt
-source-wordcount: '793'
-ht-degree: 50%
+source-wordcount: '799'
+ht-degree: 51%
 
 ---
 
 # Senden und Planen von Projekten
 
-Sie können Customer Journey Analytics-Projekte als Dateien per E-Mail an ausgewählte Benutzer senden. Sie können Dateien ad hoc senden oder Projekte so konfigurieren, dass sie nach einem Zeitplan gesendet werden. Projekte können im CSV- oder PDF-Format gesendet werden.
+Sie können Customer Journey Analytics-Projekte als Dateien per E-Mail an ausgewählte Benutzer senden. Sie können Dateien ad hoc senden oder Projekte so konfigurieren, dass sie nach einem Zeitplan gesendet werden.
 
-Alle auf das Projekt angewendeten Tags werden automatisch auf den Export angewendet.
+Beachten Sie beim Senden von Dateien Folgendes:
+
+* Dateien können im CSV- oder PDF-Format gesendet werden.
+
+* Alle auf das Projekt angewendeten Tags werden automatisch auf den Export angewendet.
 
 Es sind auch andere Methoden zum Exportieren von Customer Journey Analytics-Daten verfügbar, wie unter [Exportübersicht](/help/analysis-workspace/export/export-project-overview.md) beschrieben.
 
@@ -40,7 +44,7 @@ So senden Sie eine Datei per E-Mail an Empfänger:
 
 ## Dateiexport planen {#schedule}
 
-So senden Sie eine Datei nach einem Zeitplan per E-Mail an Empfänger
+So senden Sie eine Datei nach einem Zeitplan per E-Mail an Empfänger:
 
 1. Wählen Sie **[!UICONTROL Freigeben] > [!UICONTROL Dateiexport planen]**.
 1. Geben Sie den Dateityp an:
@@ -99,7 +103,7 @@ Die Passwortanforderungen entsprechen dem Adobe-Standard und schreiben mindesten
 ### Passwortschutz für ein neues geplantes Projekt
 
 1. Nachdem Sie Ihr Projekt gespeichert haben, navigieren Sie zu **[!UICONTROL Freigeben]** > **[!UICONTROL Jetzt Datei senden]** oder **[!UICONTROL Freigeben]** > **[!UICONTROL Datei nach Zeitplan senden]**.
-1. Befolgen Sie die oben stehenden Anweisungen unter [Datei jetzt senden](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/export/t-schedule-report.html?lang=de#now) oder [Datei planmäßig senden](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/export/t-schedule-report.html?lang=de#schedule).
+1. Befolgen Sie die oben stehenden Anweisungen unter [Datei jetzt senden](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/export/t-schedule-report.html#now) oder [Datei planmäßig senden](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/export/t-schedule-report.html#schedule).
 
 ### Passwortschutz für ein vorhandenes geplantes Projekt
 
