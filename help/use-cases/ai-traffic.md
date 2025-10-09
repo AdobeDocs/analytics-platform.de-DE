@@ -6,9 +6,9 @@ feature: Use Cases
 role: User
 hide: true
 hidefromtoc: true
-source-git-commit: 1cf0d957d62d60979982320f45b4fdadcc7458b8
+source-git-commit: 38be574621e4fc384f9fdeac94fc071f0cdd132b
 workflow-type: tm+mt
-source-wordcount: '1219'
+source-wordcount: '1217'
 ht-degree: 1%
 
 ---
@@ -23,7 +23,7 @@ In diesem Anwendungsbeispiel wird untersucht, wie die Funktion „Von Customer J
 Um LLM- und KI-generierten Traffic zu erkennen, unterscheiden Sie zwischen:
 
 * **LLM-Crawler**: Erfassen von Daten für das Training und den Abruf der erweiterten Generierung (RAG).
-* **AI agents**: fungieren als Schnittstellen, die Aufgaben im Namen von Menschen ausführen. KI-Agenten interagieren vorzugsweise über APIs, die Web-Analyse-Tracking-Methoden umgehen. Sie können jedoch weiterhin einen erheblichen Teil des durch KI generierten Traffics über Websites analysieren.
+* **AI agents**: Funktion als Schnittstellen, die Aufgaben im Namen von Menschen ausführen. KI-Agenten interagieren vorzugsweise über APIs, die Web-Analyse-Tracking-Methoden umgehen. Sie können jedoch weiterhin einen erheblichen Teil des durch KI generierten Traffics über Websites analysieren.
 
 Drei gängige Kernerkennungsmethoden zur Identifizierung und Überwachung von LLM und KI-generiertem Traffic sind:
 
@@ -37,9 +37,9 @@ Die folgende Tabelle zeigt, wie die Erkennungsmethoden für verschiedene LLM- un
 |---|---|---|---|
 | **Schulung eines Modells** | Agent (`GPTBot`, `ClaudeBot` und mehr) können identifiziert werden, wenn die Server-seitige Protokollierung implementiert ist. | Eine Klassifizierung ist nicht möglich. KI-Crawler generieren während des Trainings keine Referrer. | Eine Erkennung ist unmöglich. KI-Crawler fügen beim Training keine Parameter hinzu. |
 | **Agent-Browsing** | Agent (`ChatGPT-User`, `claude-web`) kann identifiziert werden, wenn die Server-seitige Protokollierung Kopfzeilen erfasst. | Eine Klassifizierung ist möglich, wenn der Agent von einer KI-Schnittstelle mit Referrer-Beibehaltung navigiert. | Manchmal ist eine Erkennung möglich, wenn der KI-Service Tracking-Parameter hinzufügt. |
-| **Retrieval-Augmented Generation (RAG) zur Beantwortung von Abfragen** | Agent (`OAI-SearchBot`, `PerplexityBot`) kann mit Server-seitiger Protokollierung identifiziert werden. | Eine Klassifizierung ist in der Regel nicht möglich, da RAG-Vorgänge häufig Referrer-Mechanismen umgehen. | Eine Erkennung ist nur selten möglich, es sei denn, sie wird vom KI-Anbieter speziell implementiert. |
+| **Abrufen der erweiterten Generierung (RAG) zur Beantwortung der Abfrage** | Agent (`OAI-SearchBot`, `PerplexityBot`) kann mit Server-seitiger Protokollierung identifiziert werden. | Eine Klassifizierung ist in der Regel nicht möglich, da RAG-Vorgänge häufig Referrer-Mechanismen umgehen. | Eine Erkennung ist nur selten möglich, es sei denn, sie wird vom KI-Anbieter speziell implementiert. |
 | **Benutzer klickt durch** | Der Agent kann nicht identifiziert werden. Der KI-Agent wird als normaler Benutzeragent angezeigt. | Eine Klassifizierung ist möglich, wenn Benutzer über AI-Schnittstellen auf Links klicken ([chatgpt.com](https://chatgpt.com), [claude.ai](https://claude.ai) und mehr). | Die Erkennung ist möglich, wenn KI-Services UTM-Parameter zu ausgehenden Links hinzufügen. |
-| **Traffic-Sichtbarkeitsbedingungen** | Server-seitige Protokollierungsintegration mit Customer Journey Analytics oder Server-seitiges Tagging zur Agentenidentifizierung erforderlich. | Die Klassifizierung hängt von den KI-Plattform-Referrer-Richtlinien und der ordnungsgemäßen HTTP-Header-Übertragung ab. | Die Erkennung erfordert eine Beibehaltung von Parametern durch Umleitungen und eine ordnungsgemäße URL-Parametererfassung. |
+| **Bedingungen für die Traffic-Sichtbarkeit** | Server-seitige Protokollierungsintegration mit Customer Journey Analytics oder Server-seitiges Tagging zur Agentenidentifizierung erforderlich. | Die Klassifizierung hängt von den KI-Plattform-Referrer-Richtlinien und der ordnungsgemäßen HTTP-Header-Übertragung ab. | Die Erkennung erfordert eine Beibehaltung von Parametern durch Umleitungen und eine ordnungsgemäße URL-Parametererfassung. |
 
 ### Challenges
 
@@ -293,6 +293,6 @@ Verwenden Sie die abgeleiteten Felder und Segmente, um Berichte und Analysen zu 
 
 >[!MORELIKETHIS]
 >
->Dieser Anwendungsfall-Artikel basiert auf dem Blog-Artikel von Brian Au: [Tracking und Analyse von LLM und KI-generiertem Traffic in Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/tracking-and-analyzing-llm-and-ai-generated-traffic-in-adobe/ba-p/771967?profile.language=de)
+>Dieser Anwendungsfall-Artikel basiert auf dem Blogartikel [Tracking und Analyse von LLM und KI-generiertem Traffic in Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/tracking-and-analyzing-llm-and-ai-generated-traffic-in-adobe/ba-p/771967).
 >
 >
