@@ -6,9 +6,9 @@ feature: Content Analytics
 role: Admin
 exl-id: 4aff664c-3cd9-4591-8122-6ebff10e4a76
 source-git-commit: e8cba64e706a456861fd8392ce9260b7a1c4636b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2694'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -82,17 +82,17 @@ Jede Konfiguration erfordert einen eindeutigen Namen. Beispiel: `Example Content
 >[!CONTEXTUALHELP]
 >id="ac_onboarding_dataview_button"
 >title="Datenansicht"
->abstract="Für die Konfiguration der Inhaltsanalyse müssen Sie eine vorhandene Datenansicht auswählen. Sie können also Ihre Content Analytics-Daten mit anderen Daten zusammenführen."
+>abstract="Für die Konfiguration der Inhaltsanalyse müssen Sie eine vorhandene Datenansicht auswählen. So können Sie Ihre Content Analytics-Daten mit anderen Daten zusammenführen."
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataview_header"
 >title="Datenansicht"
->abstract="Wählen Sie eine bestehende Datenansicht aus Customer Journey Analytics aus, mit der Sie Ihre Content Analytics-Daten zusammenführen möchten."
+>abstract="Wählen Sie eine vorhandene Datenansicht aus Customer Journey Analytics aus, mit der Ihre Content Analytics-Daten zusammengeführt werden sollen."
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataview_header_alt"
 >title="Datenansicht"
->abstract="Wählen Sie eine bestehende Datenansicht aus Customer Journey Analytics aus, mit der Sie Ihre Content Analytics-Daten zusammenführen möchten.<br/>"
+>abstract="Wählen Sie eine vorhandene Datenansicht aus Customer Journey Analytics aus, mit der Ihre Content Analytics-Daten zusammengeführt werden sollen.<br/>"
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataview_change_dialog"
@@ -236,7 +236,7 @@ So bearbeiten Sie vorhandene Erlebnisse oder schließen neue Erlebnisse in eine 
 
 ### Datenerfassung {#onboarding-data-collection}
 
-In diesem Abschnitt konfigurieren Sie, wie Sie Ihre Content Analytics-Daten erfassen.
+In diesem Abschnitt können Sie konfigurieren, wie die Content Analytics-Daten erfasst werden sollen.
 
 <!-- markdownlint-disable MD034 -->
 
