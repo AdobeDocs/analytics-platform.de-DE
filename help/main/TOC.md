@@ -9,9 +9,9 @@ index: true
 user-guide-title: Handbuch zu Customer Journey Analytics
 user-guide-description: Hier erhalten Sie Informationen zu Adobe Customer Journey Analytics und Erläuterungen zur Nutzung von Analysis Workspace mit Daten aus Experience Platform.
 breadcrumb-title: Handbuch zu Customer Journey Analytics
-source-git-commit: 6b4cb13dcea9830573b517c1d1121095ac27983f
+source-git-commit: 04d3de450a9efc12637a3c4272bf3c43b0fbbe0a
 workflow-type: tm+mt
-source-wordcount: '1297'
+source-wordcount: '1303'
 ht-degree: 99%
 
 ---
@@ -489,6 +489,7 @@ ht-degree: 99%
       + [Verwenden von Zusammenfassungsdaten](/help/use-cases/data-views/summary-data.md)
       + [Anwendungsfälle für BI-Erweiterungen](/help/use-cases/data-views/bi-extension-usecases.md)
    + Abgeleitete Felder {#derived-fields}
+      + [Bericht zu LLM und KI-generiertem Traffic](/help/use-cases/ai-traffic.md)
       + [Bericht über Ziele](../use-cases/goals-using-derived-fields.md)
    + Produktanalyse {#product-analysis}
       + [Produktanalyse](/help/use-cases/product-analysis.md)
