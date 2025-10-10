@@ -1,11 +1,11 @@
 ---
 description: Erfahren Sie mehr über sequenzielle Segmente, die den THEN-Operator zum Definieren einer Sequenz von Segmentbedingungen verwenden.
-title: SequentialSegments
+title: Sequenzielle Segmente
 feature: Filters, Segments
 exl-id: 64cb10b5-36f0-42c8-b687-ae5de5ced8b5
-source-git-commit: 8e10818efa7da54b0802c56e5388e6c7ef7fd8b6
+source-git-commit: c745e37203ac829fa0fb7d8532e6499351cb94ba
 workflow-type: tm+mt
-source-wordcount: '2459'
+source-wordcount: '2460'
 ht-degree: 4%
 
 ---
@@ -18,7 +18,7 @@ Sequenzielle Segmente erstellen Sie mit dem [!UICONTROL Then] logischen Operator
 
 >[!BEGINSHADEBOX]
 
-Siehe ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Sequenzielle Segmentierung](https://video.tv.adobe.com/v/37428/?quality=12&learn=on&captions=ger){target="_blank"} für ein Demovideo.
+Siehe ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Sequenzielle Segmentierung](https://video.tv.adobe.com/v/25405/?quality=12&learn=on){target="_blank"} für ein Demovideo.
 
 {{videoaa}}
 
@@ -91,7 +91,7 @@ So wenden Sie Zeitbeschränkungen auf den Operator **[!UICONTROL Then]** an:
 1. Wählen Sie ![Uhr](/help/assets/icons/Clock.svg) aus.
 1. Wählen **[!UICONTROL Innerhalb]** oder **[!UICONTROL Nachher]** aus dem Kontextmenü aus.
 1. Geben Sie einen Zeitraum (**[!UICONTROL Minute]**, **[!UICONTROL Stunde]** bis **[!UICONTROL Jahre]**) an.
-1. Wählen Sie ![ChevronDown](/help/assets/icons/ChevronDown.svg) **[!UICONTROL *number *]**&#x200B;aus, um ein Popup zu öffnen, in dem Sie eine Zahl eingeben oder mit&#x200B;**[!UICONTROL -]**&#x200B;oder&#x200B;**[!UICONTROL +]**&#x200B;angeben können.
+1. Wählen Sie ![ChevronDown](/help/assets/icons/ChevronDown.svg) **[!UICONTROL *number *]**aus, um ein Popup zu öffnen, in dem Sie eine Zahl eingeben oder mit**[!UICONTROL -]**oder**[!UICONTROL +]**angeben können.
 
 Um eine Zeitbeschränkung zu entfernen, verwenden Sie ![CrossSize75](/help/assets/icons/CrossSize75.svg).
 
@@ -114,7 +114,7 @@ Personen identifizieren, die erst nach zwei Wochen eine Seite und dann eine ande
 
 ![Sequenz nach](assets/sequence-after.png)
 
-Wenn am 1. Juni 2024 um 00:01 eine Seitenansicht für die Startseite erfolgt, erfolgt eine Seitenansicht für die Seite „Frauen“ | Die Schuhe stimmen überein, solange diese Seitenansicht nach dem 15. Juni 2024 um 00:01 Uhr erfolgt.
+Wenn am 1. Juni 2024 um 00 Uhr eine Seitenansicht für die Startseite :01, erfolgt eine Seitenansicht auf der Seite Frauen . | Die Schuhe stimmen überein, solange diese Seitenansicht nach dem 15. Juni 2024 00:01 erfolgt.
 
 ##### [!UICONTROL Within]-Operator
 
@@ -122,7 +122,7 @@ Personen identifizieren, die innerhalb von fünf Minuten eine Seite und dann ein
 
 ![Sequenz innerhalb von](assets/sequence-within.png)
 
-Wenn am 1. Juni 2024 um 12:01 Uhr eine Seitenansicht für die Startseite erfolgt, erfolgt eine Seitenansicht auf der Seite Frauen . | Die Schuhe stimmen überein, solange diese Seitenansicht vor dem 15. Juni 2024, 12:16 Uhr, erfolgt.
+Wenn am 1. Juni 2024 um 12 Uhr eine Seitenansicht für die Startseite :01, erfolgt eine Seitenansicht auf der Seite Frauen . | Die Schuhe stimmen überein, solange diese Seitenansicht vor dem 15. Juni 2024 12 Uhr :16.
 
 ##### [!UICONTROL After] but [!UICONTROL Within]-Operator
 
@@ -130,7 +130,7 @@ Personen identifizieren, die eine Seite besucht und nach zwei Wochen, aber inner
 
 ![Sequenz nach, aber innerhalb von](assets/sequence-afterbutwithin.png)
 
-Alle Personen, die am 1. Juni 2024 die Startseite besuchen und die zum Besuch der Frauen zurückkehren | Schuhe Seite nach dem 15. Juni 2019 00:01, aber vor dem 1. Juli 2019 qualifiziert für das Segment.
+Alle Personen, die am 1. Juni 2024 die Startseite besuchen und die zum Besuch der Frauen zurückkehren | Schuhseite nach dem 15. Juni 2019 00:01, aber vor dem 1. Juli 2019 qualifiziert für das Segment.
 
 
 ### Einschränkungen [!UICONTROL Ereignis], [!UICONTROL Sitzung] und [!UICONTROL Dimension]
@@ -220,7 +220,7 @@ Beispiele für Ausschlussdefinitionen:
 * **Schließen Sie die Referrerdomäne aus**. Verwenden Sie eine Definition, die nur verweisende Domains von Google.com umfasst und alle anderen ausschließt.
 * **Identifizieren Sie Nicht-Käufer**. Ermitteln Sie, wenn die Bestellungen größer als null sind, und schließen Sie dann die [!UICONTROL Person] aus.
 
-[!UICONTROL Ausschließen] kann verwendet werden, um eine Sequenz zu identifizieren, in der Personen nicht an bestimmten Sitzungen teilnehmen oder bestimmte Ereignisse ausführen. [!UICONTROL Ausschließen] kann auch in eine [!UICONTROL logische Gruppe“ aufgenommen werden &#x200B;]siehe unten).
+[!UICONTROL Ausschließen] kann verwendet werden, um eine Sequenz zu identifizieren, in der Personen nicht an bestimmten Sitzungen teilnehmen oder bestimmte Ereignisse ausführen. [!UICONTROL Ausschließen] kann auch in eine [!UICONTROL logische Gruppe“ aufgenommen werden ]siehe unten).
 
 Sie können Container ausschließen, keine Komponenten.
 
@@ -230,7 +230,7 @@ Nachfolgend finden Sie Beispiele für die Verwendung von [!UICONTROL Ausschließ
 
 #### [!UICONTROL Ausschließen] innerhalb von
 
-Personen identifizieren, die eine Seite besucht haben, eine andere Seite nicht besucht haben und dann eine weitere Seite besucht haben. Sie schließen den Container mit &quot;![&quot; ](/help/assets/icons/Setting.svg) &quot;[!UICONTROL &quot; &#x200B;]. Ein ausgeschlossener Container wird durch einen dünnen roten Balken auf der linken Seite gekennzeichnet.
+Personen identifizieren, die eine Seite besucht haben, eine andere Seite nicht besucht haben und dann eine weitere Seite besucht haben. Sie schließen den Container mit &quot;![&quot; ](/help/assets/icons/Setting.svg) &quot;[!UICONTROL &quot; ]. Ein ausgeschlossener Container wird durch einen dünnen roten Balken auf der linken Seite gekennzeichnet.
 
 ![Sequenz ausschließen](assets/sequence-exclude.png)
 
