@@ -24,7 +24,7 @@ Wenn Ihr Unternehmen den [Analytics-Quell-Connector](https://experienceleague.ad
 
 ## Voraussetzungen
 
-* Report Suite-Daten müssen bereits mit dem [Analytics-Quell-Connector“ in ](https://experienceleague.adobe.com/de/docs/experience-platform/sources/connectors/adobe-applications/analytics) Adobe Experience Platform importiert worden sein. Andere Datenquellen werden nicht unterstützt, da Marketing-Kanäle auf Verarbeitungsregeln in einer Analytics Report Suite angewiesen sind.
+* Report Suite-Daten müssen bereits mit dem [Analytics-Quell-Connector“ in &#x200B;](https://experienceleague.adobe.com/de/docs/experience-platform/sources/connectors/adobe-applications/analytics) Adobe Experience Platform importiert worden sein. Andere Datenquellen werden nicht unterstützt, da Marketing-Kanäle auf Verarbeitungsregeln in einer Analytics Report Suite angewiesen sind.
 * Verarbeitungsregeln für den Marketing-Kanal müssen bereits eingerichtet sein. Siehe [Verarbeitungsregeln für Marketing-Kanäle](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/marketing-channels/c-rules) im Adobe Analytics-Komponentenhandbuch.
 
 ## Marketing-Kanal: Schema-Elemente
@@ -52,7 +52,7 @@ Die Dimensionen Ihres Marketing-Kanals stehen jetzt in Analysis Workspace zur Ve
 
 >[!NOTE]
 >
->Um die Effektivität von Marketing-Kanälen für Attribution und Customer Journey Analytics zu maximieren, [ einige ](https://experienceleague.adobe.com/de/docs/analytics/components/marketing-channels/mchannel-best-practices) überarbeitete Best Practices zur Verfügung.
+>Um die Effektivität von Marketing-Kanälen für Attribution und Customer Journey Analytics zu maximieren, [&#x200B; einige &#x200B;](https://experienceleague.adobe.com/de/docs/analytics/components/marketing-channels/mchannel-best-practices) überarbeitete Best Practices zur Verfügung.
 
 Die Marketing-Kanal-Einstellungen funktionieren bei Platform-Daten und Report Suite-Daten unterschiedlich. Beachten Sie die folgenden Unterschiede beim Einrichten von Marketing-Kanälen für Customer Journey Analytics:
 

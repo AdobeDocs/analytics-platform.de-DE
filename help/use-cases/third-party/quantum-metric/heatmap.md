@@ -24,7 +24,7 @@ Sie müssen Anspruch auf das **UX Ops**-Paket von Quantum Metric haben, um auf d
 
 ## Schritt 1: Konfigurieren von Links in Analysis Workspace
 
-1. Melden Sie sich bei &quot;[.adobe.com“ ](https://experience.adobe.com).
+1. Melden Sie sich bei &quot;[.adobe.com“ &#x200B;](https://experience.adobe.com).
 1. Navigieren Sie zu Customer Journey Analytics und wählen Sie **[!UICONTROL Workspace]** im oberen Menü.
 1. Wählen Sie ein vorhandenes Projekt aus oder erstellen Sie ein Projekt.
 1. Erstellen Sie eine [Freiformtabelle](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md).
@@ -44,4 +44,4 @@ Sie müssen Anspruch auf das **UX Ops**-Paket von Quantum Metric haben, um auf d
 
 ## Schritt 2: Heatmaps durch Anklicken von Links in Customer Journey Analytics anzeigen
 
-Nachdem Sie eine Seite gefunden haben, auf der Sie Heatmapping erforschen möchten, können Sie sie auf das gewünschte Bedienfeld anwenden. Die Tabelle gibt eine URL zurück, mit der Sie Heatmaps, Bildlauftiefen und Schlüsselzonen für die Interaktion mit Quantum Metric untersuchen können. Weitere Informationen finden [ unter „Quantum Metric ](https://www.quantummetric.com/platform/interaction-heatmaps) - Produktübersicht“. Sie können sich auch an Ihren Kundenbetreuer von Quantum Metric wenden oder eine Anfrage über das [Quantum Metric Customer Request Portal) ](https://community.quantummetric.com/s/public-support-page).
+Nachdem Sie eine Seite gefunden haben, auf der Sie Heatmapping erforschen möchten, können Sie sie auf das gewünschte Bedienfeld anwenden. Die Tabelle gibt eine URL zurück, mit der Sie Heatmaps, Bildlauftiefen und Schlüsselzonen für die Interaktion mit Quantum Metric untersuchen können. Weitere Informationen finden [&#x200B; unter „Quantum Metric &#x200B;](https://www.quantummetric.com/platform/interaction-heatmaps) - Produktübersicht“. Sie können sich auch an Ihren Kundenbetreuer von Quantum Metric wenden oder eine Anfrage über das [Quantum Metric Customer Request Portal) &#x200B;](https://community.quantummetric.com/s/public-support-page).

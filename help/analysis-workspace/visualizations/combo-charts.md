@@ -25,9 +25,9 @@ ht-degree: 92%
 
 >[!BEGINSHADEBOX]
 
-_In diesem Artikel wird die Visualisierung Kombination in_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics** beschrieben._
+_In diesem Artikel wird die Visualisierung Kombination in_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics** beschrieben._
 
-_Unter [Kombination](https://experienceleague.adobe.com/de/docs/analytics/analyze/analysis-workspace/visualizations/combo-charts) finden Sie die Version dieses Artikels für_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**._
+_Unter [Kombination](https://experienceleague.adobe.com/de/docs/analytics/analyze/analysis-workspace/visualizations/combo-charts) finden Sie die Version dieses Artikels für_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics**._
 
 >[!ENDSHADEBOX]
 
@@ -68,7 +68,7 @@ Bedenken Sie Folgendes:
 
    Die Ausgabe sieht in etwa so aus:
 
-   ![Ein Kombinationsdiagramm, das den aktuellen Zeitraum in einem Balkendiagramm und den Vergleichszeitraum in einem Liniendiagramm anzeigt ](assets/combo-output.png)
+   ![Ein Kombinationsdiagramm, das den aktuellen Zeitraum in einem Balkendiagramm und den Vergleichszeitraum in einem Liniendiagramm anzeigt &#x200B;](assets/combo-output.png)
 
    Der aktuelle Zeitraum wird als Balkendiagramm angezeigt. Das Liniendiagramm stellt den Vergleichszeitraum dar. Die Punkte im Liniendiagramm werden als *Datenpunkte* bezeichnet.
 
@@ -99,6 +99,6 @@ Im Folgenden finden Sie ein Beispiel für ein Kombinationsdiagramm mit den Funkt
 >[!MORELIKETHIS]
 >
 >[Hinzufügen einer Visualisierung zu einem Panel](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
->>[Visualisierungseinstellungen](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
->>[Kontextmenü der Visualisierung](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
+>&#x200B;>[Visualisierungseinstellungen](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
+>&#x200B;>[Kontextmenü der Visualisierung](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
 >

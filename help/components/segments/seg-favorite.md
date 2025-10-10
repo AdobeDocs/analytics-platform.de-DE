@@ -19,4 +19,4 @@ Um ein Segment zu begünstigen oder zu ungünstigen, gehen Sie im [Segment-Manag
 
 * Wählen Sie ![StarOutline](/help/assets/icons/StarOutline.svg) aus, um ein Segment zu bevorzugen, oder wählen Sie ![Star](/help/assets/icons/Star.svg) aus, um es zu bevorzugen.
 
-Sie können Ihre Segmentliste nach Favoriten sortieren. Wählen Sie **[!UICONTROL Andere Segmente]** im Bedienfeld ![Segment](/help/assets/icons/Filter.svg) **[!UICONTROL Segment]** aus und wählen Sie **[!UICONTROL Favoriten]**. Weitere Informationen [ Sie unter ](/help/components/segments/seg-filter.md) der Segmentliste .
+Sie können Ihre Segmentliste nach Favoriten sortieren. Wählen Sie **[!UICONTROL Andere Segmente]** im Bedienfeld ![Segment](/help/assets/icons/Filter.svg) **[!UICONTROL Segment]** aus und wählen Sie **[!UICONTROL Favoriten]**. Weitere Informationen [&#x200B; Sie unter &#x200B;](/help/components/segments/seg-filter.md) der Segmentliste .

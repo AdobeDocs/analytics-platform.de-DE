@@ -27,7 +27,7 @@ Dieser Anwendungsfall hat zwei Anforderungen:
 
 Dieser Anwendungsfall erfordert ein dediziertes Schemafeld, an das Daten gesendet werden. Sie können dieses Feld an einer beliebigen Stelle in Ihrem Schema erstellen und nach Belieben benennen. Beispielwerte werden bereitgestellt, wenn Ihr Unternehmen keine Voreinstellung für Name oder Speicherort hat.
 
-1. Melden Sie sich bei &quot;[.adobe.com“ ](https://experience.adobe.com).
+1. Melden Sie sich bei &quot;[.adobe.com“ &#x200B;](https://experience.adobe.com).
 1. Navigieren Sie **[!UICONTROL Datenerfassung]** > **[!UICONTROL Schemata]**.
 1. Wählen Sie das gewünschte Schema aus der Liste aus.
 1. Wählen Sie das ![Feldsymbol hinzufügen](/help/assets/icons/AddCircle.svg) neben dem gewünschten Objekt aus. Beispiel: neben `Implementation Details`.
@@ -38,7 +38,7 @@ Dieser Anwendungsfall erfordert ein dediziertes Schemafeld, an das Daten gesende
 
 ## Schritt 2: Erfassen von Reibungsereignissen mit der Quantum Metric-Tag-Erweiterung
 
-Anweisungen [ Einrichten Ihrer Tags für das Einschließen von Quantenmetrikdaten finden Sie unter ](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/analytics/quantum-metric)Quantum Metric-Erweiterung“ im Adobe Experience Platform Destinations-Handbuch. Durch die Verwendung dieser Erweiterung werden mehr Zeilen in einen vorhandenen Datensatz übergeben.
+Anweisungen [&#x200B; Einrichten Ihrer Tags für das Einschließen von Quantenmetrikdaten finden Sie unter &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/analytics/quantum-metric)Quantum Metric-Erweiterung“ im Adobe Experience Platform Destinations-Handbuch. Durch die Verwendung dieser Erweiterung werden mehr Zeilen in einen vorhandenen Datensatz übergeben.
 
 Verwenden Sie Tags in der Adobe Experience Platform-Datenerfassung, um den Namen des Reibungsereignisses manuell festzulegen, sodass es in das XDM-Objekt aufgenommen und analysiert werden kann. Eine Möglichkeit, dies zu tun, besteht im benutzerdefinierten Code der Regel:
 
@@ -55,7 +55,7 @@ Fügen Sie dann das dynamisch festgelegte Datenelement zu Ihrem XDM-Objekt hinzu
 
 Bearbeiten Sie die vorhandene Datenansicht, um die Sitzungs-ID als verfügbare Dimension in Customer Journey Analytics hinzuzufügen.
 
-1. Melden Sie sich bei &quot;[.adobe.com“ ](https://experience.adobe.com).
+1. Melden Sie sich bei &quot;[.adobe.com“ &#x200B;](https://experience.adobe.com).
 1. Navigieren Sie zu Customer Journey Analytics und wählen **[!UICONTROL Datenansichten]** optional unter **[!UICONTROL Daten-Management]** im oberen Menü aus.
 1. Wählen Sie die gewünschte vorhandene Datenansicht aus.
 1. Suchen Sie die Liste Quantum Metric Friction Event Field auf der linken Seite und ziehen Sie sie in den Bereich Metriken in der Mitte.
@@ -67,7 +67,7 @@ Bearbeiten Sie die vorhandene Datenansicht, um die Sitzungs-ID als verfügbare D
 
 Wenn Quantum Metric Friction-Ereignisdaten zusammen mit den anderen Besucherdaten erfasst werden, können Sie sie genau wie jede andere Dimension oder Metrik in Customer Journey Analytics verwenden.
 
-1. Melden Sie sich bei &quot;[.adobe.com“ ](https://experience.adobe.com).
+1. Melden Sie sich bei &quot;[.adobe.com“ &#x200B;](https://experience.adobe.com).
 1. Navigieren Sie zu Customer Journey Analytics und wählen Sie **[!UICONTROL Workspace]** im oberen Menü.
 1. Wählen Sie ein vorhandenes Projekt aus oder erstellen Sie ein Projekt.
 1. Erstellen Sie eine [Freiformtabelle](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md).

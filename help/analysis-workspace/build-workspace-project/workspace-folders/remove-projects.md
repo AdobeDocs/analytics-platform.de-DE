@@ -15,7 +15,7 @@ ht-degree: 7%
 # Projekte entfernen
 
 
-Informationen [ Entfernen von Projekten aus Analysis Workspace finden ](../freeform-overview.md#actions) unter „Aktionen in Projekten verwalten“.
+Informationen [&#x200B; Entfernen von Projekten aus Analysis Workspace finden &#x200B;](../freeform-overview.md#actions) unter „Aktionen in Projekten verwalten“.
 
 
 <!-- Is this article still needed; not in the TOC anymore

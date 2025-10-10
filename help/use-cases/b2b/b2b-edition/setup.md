@@ -384,4 +384,4 @@ Zum Beispiel:
 
 ## Sonstige
 
-Sie können optional andere Komponenten für Ihre Anwendungsfälle definieren, z. B[ „Berechnete ](/help/components/calc-metrics/calc-metr-overview.md)&quot;, [Datumsbereiche](/help/components/date-ranges/overview.md) oder [Warnhinweise](/help/components/c-intelligent-alerts/intelligent-alerts.md).
+Sie können optional andere Komponenten für Ihre Anwendungsfälle definieren, z. B[&#x200B; „Berechnete &#x200B;](/help/components/calc-metrics/calc-metr-overview.md)&quot;, [Datumsbereiche](/help/components/date-ranges/overview.md) oder [Warnhinweise](/help/components/c-intelligent-alerts/intelligent-alerts.md).

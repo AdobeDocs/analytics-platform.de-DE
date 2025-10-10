@@ -21,7 +21,7 @@ Diese Zusammenfassungsdaten können dann zur Darstellung allgemeiner Leistungsin
 >[!NOTE]
 >
 >Zusammenfassungsdaten sind Zeitreihendaten aus einem Zusammenfassungsdatensatz. Dieser Zusammenfassungsdatensatz basiert auf einem Schema, das die Klasse „XDM-Zusammenfassungsmetriken“ als Basisklasse verwendet.
->>Es werden nur Zeitreihendaten unterstützt, die auf „stündlich“ oder „täglich“ basieren.
+>&#x200B;>Es werden nur Zeitreihendaten unterstützt, die auf „stündlich“ oder „täglich“ basieren.
 
 >[!TIP]
 >

@@ -19,7 +19,7 @@ Im [Manager für berechnete Metriken](cm-manager.md) können Sie berechnete Metr
 
 So geben Sie eine oder mehrere berechnete Metriken frei:
 
-1. Wählen [ im Manager für ](cm-manager.md) berechnete Metriken eine oder mehrere der berechneten Metriken aus, die Sie freigeben möchten.
+1. Wählen [&#x200B; im Manager für &#x200B;](cm-manager.md) berechnete Metriken eine oder mehrere der berechneten Metriken aus, die Sie freigeben möchten.
 1. Wählen Sie in der Aktionsleiste ![Freigeben](/help/assets/icons/ShareAlt.svg) **[!UICONTROL Freigeben]** aus.
 1. Im Dialogfeld **[!UICONTROL Berechnete Metrik freigeben]**:
 
@@ -35,7 +35,7 @@ So geben Sie eine oder mehrere berechnete Metriken frei:
 
 Im Folgenden finden Sie Best Practices für die Freigabe berechneter Metriken und für Personen, für die Sie berechnete Metriken freigeben sollten.
 
-* Geben Sie als Administrator eine berechnete Metrik nur dann für alle frei, wenn Sie überzeugt sind, dass die Verwendung der berechneten Metrik für alle Mitarbeiter in Ihrem Unternehmen annehmbar ist. Sie können auch in Betracht ziehen, diese berechneten Metriken zu bevorzugen. Weitere [ finden Sie unter „Markieren ](cm-favorite.md) berechneten Metrik als Favorit“.
+* Geben Sie als Administrator eine berechnete Metrik nur dann für alle frei, wenn Sie überzeugt sind, dass die Verwendung der berechneten Metrik für alle Mitarbeiter in Ihrem Unternehmen annehmbar ist. Sie können auch in Betracht ziehen, diese berechneten Metriken zu bevorzugen. Weitere [&#x200B; finden Sie unter „Markieren &#x200B;](cm-favorite.md) berechneten Metrik als Favorit“.
 
 * Geben Sie als Administrator eine berechnete Metrik für eine bestimmte Gruppe frei, wenn diese berechnete Metrik einen Geschäftswert für die Benutzer dieser Gruppe bietet.
 

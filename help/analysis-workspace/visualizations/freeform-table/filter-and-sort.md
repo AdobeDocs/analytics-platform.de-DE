@@ -96,7 +96,7 @@ So filtern Sie Daten in Freiformtabellen:
 
 ### Verwenden von Zielgruppensegmenten
 
-Weitere Informationen finden [ unter ](/help/components/segments/seg-overview.md)Segmentierung - Übersicht“.
+Weitere Informationen finden [&#x200B; unter &#x200B;](/help/components/segments/seg-overview.md)Segmentierung - Übersicht“.
 
 ## Sortieren von Tabellen
 

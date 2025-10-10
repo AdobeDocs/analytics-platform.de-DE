@@ -34,7 +34,7 @@ ht-degree: 89%
 
 >[!BEGINSHADEBOX]
 
-_In diesem Dokument wird das Panel „Verbrachte Zeit bei der Medienwiedergabe“ in_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**_ beschrieben.<br/>_Unter [Panel „Verbrachte Zeit bei der Medienwiedergabe“](https://experienceleague.adobe.com/de/docs/analytics/analyze/analysis-workspace/panels/media-playback-time-spent) finden Sie die Version dieses Artikels für_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**._
+_In diesem Dokument wird das Panel „Verbrachte Zeit bei der Medienwiedergabe“ in_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**&#x200B;_ beschrieben.<br/>_Unter [Panel „Verbrachte Zeit bei der Medienwiedergabe“](https://experienceleague.adobe.com/de/docs/analytics/analyze/analysis-workspace/panels/media-playback-time-spent) finden Sie die Version dieses Artikels für_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics**._
 
 >[!ENDSHADEBOX]
 
@@ -42,7 +42,7 @@ _In diesem Dokument wird das Panel „Verbrachte Zeit bei der Medienwiedergabe�
 >[!NOTE]
 >
 >Das Panel „Medien-Zielgruppendurchschnitt pro Minute“ ist nur für Kundinnen und Kunden verfügbar, die das Streaming Media Collection-Add-on für Customer Journey Analytics gekauft haben.
->>Wenden Sie sich an Ihren Adobe-Vertriebskontakt oder Ihr Adobe-Acountteam, um weitere Informationen zu erhalten.
+>&#x200B;>Wenden Sie sich an Ihren Adobe-Vertriebskontakt oder Ihr Adobe-Acountteam, um weitere Informationen zu erhalten.
 >
 
 Das Panel **[!UICONTROL Verbrachte Zeit bei der Medienwiedergabe]** ermöglicht die Analyse der Medienwiedergabe im Zeitverlauf und bietet Details zum maximalen gleichzeitigen Zugriff sowie die Möglichkeit von Aufschlüsselungen und Vergleichen.
@@ -129,6 +129,6 @@ Die einzige Metrik, die in diesem Panel verwendet werden kann, ist „Wiedergabe
 >[!MORELIKETHIS]
 >
 >[Erstellen eines Bedienfelds](/help/analysis-workspace/c-panels/panels.md#create-a-panel)
->>[Panel „Medien-Zielgruppendurchschnitt pro Minute“](average-minute-audience-panel.md)
->>[Panel „Gleichzeitige Medienbetrachter“](media-concurrent-viewers.md)
+>&#x200B;>[Panel „Medien-Zielgruppendurchschnitt pro Minute“](average-minute-audience-panel.md)
+>&#x200B;>[Panel „Gleichzeitige Medienbetrachter“](media-concurrent-viewers.md)
 >

@@ -20,7 +20,7 @@ Mithilfe von Kommentaren in Analysis Workspace können Sie im Rahmen eines Analy
 >Die Möglichkeit, Kommentare zu einem Projekt hinzuzufügen und zu verwalten, kann entweder auf Projektebene oder auf Organisationsebene deaktiviert werden. Wenn Sie keine Kommentare wie in diesem Abschnitt beschrieben hinzufügen und verwalten können, hat der Customer Journey Analytics-Administrator oder Projektbesitzer diese Funktion deaktiviert.
 >
 >* **Projekt** Der Projektbesitzer kann diese Funktion für das Projekt deaktivieren, wie in [Erstellen von Projekten](/help/analysis-workspace/build-workspace-project/create-projects.md) beschrieben.
->* **Organisation:** Der Customer Journey Analytics-Administrator kann diese Funktion für das Unternehmen deaktivieren, wie unter [ beschrieben](/help/analysis-workspace/user-preferences.md).
+>* **Organisation:** Der Customer Journey Analytics-Administrator kann diese Funktion für das Unternehmen deaktivieren, wie unter [&#x200B; beschrieben](/help/analysis-workspace/user-preferences.md).
 
 ## Kommentare anzeigen
 
@@ -49,7 +49,7 @@ Alle in einem Analysis Workspace-Projekt abgegebenen Kommentare werden im Kommen
 
 ### Anzeigen von Kommentar-Badges in einem Projekt
 
-Kommentare, die ([ einem bestimmten Bereich des Projekts) ](#comment-on-a-specific-area-of-the-project), haben ein **Kommentar-Badge** ![Kommentar-Badge](assets/comment-indicator.svg) das über dem Bereich des Projekts angezeigt wird, auf den sich der Kommentar bezieht. Wählen Sie ein Abzeichen aus, um den Kommentar anzuzeigen. Nach Auswahl des Badge können Sie den Kommentar selbst auswählen, um den Kommentar im Kommentarbereich in der rechten Leiste hervorzuheben.
+Kommentare, die ([&#x200B; einem bestimmten Bereich des Projekts) &#x200B;](#comment-on-a-specific-area-of-the-project), haben ein **Kommentar-Badge** ![Kommentar-Badge](assets/comment-indicator.svg) das über dem Bereich des Projekts angezeigt wird, auf den sich der Kommentar bezieht. Wählen Sie ein Abzeichen aus, um den Kommentar anzuzeigen. Nach Auswahl des Badge können Sie den Kommentar selbst auswählen, um den Kommentar im Kommentarbereich in der rechten Leiste hervorzuheben.
 
 Die Zahlen werden auf jedem Abzeichen in einem Projekt angezeigt und in der Reihenfolge sortiert, in der sie erstellt wurden. Wenn mehrere Kommentare in demselben Bereich eines Projekts platziert werden, zeigt das Badge drei Punkte an ![Kommentar-Badge multiple](assets/comment-indicator-multiple.svg). Wählen Sie das 3-Punkt-Badge aus, um alle Kommentare in diesem Bereich anzuzeigen.
 
@@ -149,9 +149,9 @@ So fügen Sie eine andere Person in Ihren Kommentar ein:
 
 ## Benachrichtigungen über Kommentare erhalten
 
-Projektbesitzer und [bestimmte Personen, die Sie ](#include-others-in-a-comment), erhalten Benachrichtigungen basierend auf ihren Adobe Experience Cloud-Benachrichtigungseinstellungen. Standardmäßig erhalten sie eine In-App-Benachrichtigung, die über das Symbol [Experience Cloud-Benachrichtigung](https://experienceleague.adobe.com/en/docs/core-services/interface/features/account-preferences#view-notifications) ![Experience Cloud-Benachrichtigung](assets/experience-cloud-notification.svg) in Customer Journey Analytics sichtbar ist.
+Projektbesitzer und [bestimmte Personen, die Sie &#x200B;](#include-others-in-a-comment), erhalten Benachrichtigungen basierend auf ihren Adobe Experience Cloud-Benachrichtigungseinstellungen. Standardmäßig erhalten sie eine In-App-Benachrichtigung, die über das Symbol [Experience Cloud-Benachrichtigung](https://experienceleague.adobe.com/en/docs/core-services/interface/features/account-preferences#view-notifications) ![Experience Cloud-Benachrichtigung](assets/experience-cloud-notification.svg) in Customer Journey Analytics sichtbar ist.
 
-Darüber hinaus können Benutzer ihre Experience Cloud-Benachrichtigungseinstellungen so konfigurieren, dass sie E-Mail-Benachrichtigungen und Slack-Benachrichtigungen erhalten, [ sie E-Mail-Benachrichtigungen ](https://experienceleague.adobe.com/en/docs/core-services/interface/features/account-preferences#subscribe-to-in-app-and-email-notifications) und [Slack-Benachrichtigungen abonnieren](https://experienceleague.adobe.com/en/docs/core-services/interface/features/account-preferences#slack).
+Darüber hinaus können Benutzer ihre Experience Cloud-Benachrichtigungseinstellungen so konfigurieren, dass sie E-Mail-Benachrichtigungen und Slack-Benachrichtigungen erhalten, [&#x200B; sie E-Mail-Benachrichtigungen &#x200B;](https://experienceleague.adobe.com/en/docs/core-services/interface/features/account-preferences#subscribe-to-in-app-and-email-notifications) und [Slack-Benachrichtigungen abonnieren](https://experienceleague.adobe.com/en/docs/core-services/interface/features/account-preferences#slack).
 
 ## Platzieren eines Abzeichens für einen vorhandenen Kommentar
 
@@ -165,7 +165,7 @@ Wenn ein Kommentar im Kommentarbereich in der rechten Leiste verfügbar ist, abe
 
    Ein **Kommentar** Badge![Kommentar-Badge](assets/comment-indicator.png) wird im Bereich des von Ihnen ausgewählten Workspace-Projekts platziert. Der Kommentar wird auch oben im Kommentarbereich in der rechten Leiste angezeigt.
 
-   Weitere [ finden Sie unter ](#view-comment-badges-in-a-project) in einem Projekt anzeigen .
+   Weitere [&#x200B; finden Sie unter &#x200B;](#view-comment-badges-in-a-project) in einem Projekt anzeigen .
 
 So entfernen Sie ein Abzeichen:
 
