@@ -4,11 +4,9 @@ description: Erfahren Sie, wie Sie abgeleitete Felder als Grundlage für Bericht
 solution: Customer Journey Analytics
 feature: Use Cases
 role: User
-hide: true
-hidefromtoc: true
-source-git-commit: 38be574621e4fc384f9fdeac94fc071f0cdd132b
+source-git-commit: 8862bfdf873c4c3c5e795f3b299040b3dc253647
 workflow-type: tm+mt
-source-wordcount: '1217'
+source-wordcount: '1275'
 ht-degree: 1%
 
 ---
@@ -17,6 +15,11 @@ ht-degree: 1%
 # Bericht zu LLM und KI-generiertem Traffic
 
 In diesem Anwendungsbeispiel wird untersucht, wie die Funktion „Von Customer Journey Analytics abgeleitete Felder“ als Grundlage für Berichte zu LLM (Large Language Model) und KI-generiertem Traffic verwendet wird.
+
+>[!NOTE]
+>
+>Die Effektivität der [Erkennungsmethoden](#detection-methods), [Erkennungssignaturen](#detection-signatures) und [Implementierungsstrategien](#implementation) hängt von Ihrer spezifischen Datenerfassungsmethode, der Abdeckung von Experience Platform-Datensätzen und der Customer Journey Analytics-Implementierung ab. Die Ergebnisse können je nach technischer Umgebung, Data Governance-Richtlinien und Implementierungsansatz variieren. Bei Verwendung von Experience Edge müssen Sie zwischen der Aufzeichnung der unformatierten Benutzeragenten-Zeichenfolge oder der Erfassung von Geräteinformationen wählen.
+>
 
 ## Nachweismethoden
 
@@ -30,6 +33,7 @@ Drei gängige Kernerkennungsmethoden zur Identifizierung und Überwachung von LL
 * **Benutzeragenten-Identifizierung**: Wenn eine Anfrage an Ihren Server gesendet wird, wird die HTTP-Benutzeragenten-Kopfzeile extrahiert und anhand bekannter KI-Crawler- und Agentenmuster analysiert. Diese Server-seitige Methode erfordert Zugriff auf HTTP-Kopfzeilen und ist am effektivsten, wenn sie auf der Datenerfassungsschicht implementiert wird.
 * **Referrer-Klassifizierung**: Die HTTP-Referrer-Kopfzeile enthält die URL der vorherigen Web-Seite, die mit der aktuellen Anfrage verknüpft ist. Diese Kopfzeile zeigt an, wann Benutzer über Web-Schnittstellen wie ChatGPT oder Perplexity auf Ihre Site klicken.
 * **Erkennung von Abfrageparametern**: KI-Services können URL-Parameter (insbesondere UTM-Parameter) an Links anhängen. Diese Parameter bleiben in der URL erhalten und können über standardmäßige Analytics-Implementierungen erkannt werden, sodass diese URL-Parameter auch in Client-seitigen Tracking-Szenarien wertvolle Indikatoren sind.
+
 
 Die folgende Tabelle zeigt, wie die Erkennungsmethoden für verschiedene LLM- und AI-Interaktionsszenarien verwendet werden können.
 
@@ -248,12 +252,12 @@ Ab August 2025 können für jede der Nachweismethoden die folgenden spezifischen
 
 ## Implementierung
 
-Sie können in einem typischen Customer Journey Analytics-Setup (Verbindung, Datenansicht, Arbeitsbereich-Projekt) Berichte zu LLM- und AI-generiertem Traffic erstellen, indem Sie [abgeleitete Felder](#derived-fields), [Segmente](#segments) und [Arbeitsbereich-Projekte](#workspace-project).
+Sie können in einem typischen Customer Journey Analytics-Setup ([Verbindung](/help/connections/overview.md), [Datenansichten](/help/data-views/data-views.md) und [Workspace-Projekte](/help/analysis-workspace/home.md)) Berichte zu LLM- und KI-generiertem Traffic erstellen, indem Sie [abgeleitete Felder](#derived-fields), [Segmente](#segments) und [Workspace-Projekte](#workspace-project).
 
 
 ### Abgeleitete Felder
 
-Für die Konfiguration von Detektionsmethoden und Detektionssignalen werden abgeleitete Felder als Grundlage verwendet. Definieren Sie beispielsweise abgeleitete Felder für die Identifizierung von Benutzeragenten, die Erkennung von Abfrageparametern und die Referrer-Klassifizierung.
+Für die Konfiguration von Detektionsmethoden und Detektionssignalen werden abgeleitete Felder als Grundlage verwendet. Definieren Sie beispielsweise abgeleitete Felder für [Benutzeragenten-Identifizierung](#user-agent-identification), [Abfrageparametererkennung](#query-parameter-detection) und [Referrer-Klassifizierung](#referrer-classification).
 
 #### LLM/AI-Benutzeragenten-Identifizierung
 
@@ -264,16 +268,412 @@ Verwenden Sie die abgeleiteten Feldfunktionen [Wenn](/help/data-views/derived-fi
 
 #### LLM/AI-Abfrageparameter-Erkennung
 
-Verwenden Sie die Funktionen [URL-Analyse](/help/data-views/derived-fields/derived-fields.md#url-parse) und [Klassifizieren](/help/data-views/derived-fields/derived-fields.md#classify) abgeleiteter Felder, um ein abgeleitetes Feld zu definieren, das die UTM-Parametererkennung erkennt.
+Verwenden Sie die Funktionen [URL-Parsen](/help/data-views/derived-fields/derived-fields.md#url-parse) und [Klassifizieren](/help/data-views/derived-fields/derived-fields.md#classify) abgeleitete Felder, um ein abgeleitetes Feld zu definieren, das Abfrageparameter erkennt.
 
 ![LLM/AI UTM-Parametererkennung](assets/aitraffic-utmparams.png){zoomable="yes"}
 
 
 #### LLM/AI Referrer Classification
 
-Verwenden Sie die Funktionen URL-Parsen und abgeleitete Felder klassifizieren , um ein abgeleitetes Feld zu definieren, das Referrer klassifiziert.
+Verwenden Sie die Funktionen [URL-Analyse](/help/data-views/derived-fields/derived-fields.md#url-parse) und [Klassifizieren](/help/data-views/derived-fields/derived-fields.md#classify) abgeleiteter Felder, um ein abgeleitetes Feld zu definieren, das Referrer klassifiziert.
 
-![LLM/AI Referrer Classification](assets/aitraffic-utmparams.png){zoomable="yes"}
+(assets/aitraffic-referrers.png
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+){zoomable="yes"}
 
 
 ### Segmente
@@ -293,6 +693,6 @@ Verwenden Sie die abgeleiteten Felder und Segmente, um Berichte und Analysen zu 
 
 >[!MORELIKETHIS]
 >
->Dieser Anwendungsfall-Artikel basiert auf dem Blogartikel [Tracking und Analyse von LLM und KI-generiertem Traffic in Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/tracking-and-analyzing-llm-and-ai-generated-traffic-in-adobe/ba-p/771967?profile.language=de).
+>Dieser Anwendungsfall-Artikel basiert auf dem Blogartikel [Tracking und Analyse von LLM und KI-generiertem Traffic in Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/tracking-and-analyzing-llm-and-ai-generated-traffic-in-adobe/ba-p/771967).
 >
 >

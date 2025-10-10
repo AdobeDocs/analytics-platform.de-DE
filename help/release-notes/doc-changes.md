@@ -4,10 +4,10 @@ description: Listet Inhaltsaktualisierungen für Dokumentation zu Customer Journ
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 4621b5059333c5ee4f7d41014d0e4eff17ef33bf
-workflow-type: ht
-source-wordcount: '5439'
-ht-degree: 100%
+source-git-commit: 8862bfdf873c4c3c5e795f3b299040b3dc253647
+workflow-type: tm+mt
+source-wordcount: '5487'
+ht-degree: 99%
 
 ---
 
@@ -19,6 +19,8 @@ Die folgenden Aktualisierungen wurden seit der ersten Erstellung der Customer Jo
 
 | Funktion | Beschreibung |
 | --- | --- |
+| **Oktober 2025** | |
+| Bericht über LLM und KI-generierten Traffic | Es wurde [Artikel für Anwendungsfälle](/help/use-cases/ai-traffic.md) hinzugefügt, in dem beschrieben wird, wie Sie über LLM und KI-generierten Traffic berichten, indem abgeleitete Felder als Grundlage verwendet werden. Der Artikel basiert auf dem Blogartikel [Tracking und Analyse von LLM und KI-generiertem Traffic in Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/tracking-and-analyzing-llm-and-ai-generated-traffic-in-adobe/ba-p/771967). |
 | **September 2025** | |
 | Daten vor 1900 | Ein [Hinweis](/help/connections/create-connection.md#datasets), wie Daten vor 1900 von Customer Journey Analytics verarbeitet werden, wurde hinzugefügt. |
 | Echtzeit-Reporting | Es wurde Dokumentation zum [Echtzeit-Reporting](/help/components/real-time/real-time.md) in Customer Journey Analytics hinzugefügt. |
