@@ -1,6 +1,6 @@
 ---
-title: Komponentenübersicht
-description: Erfahren Sie, welche Komponenten Adobe Analytics bietet und wie Sie Komponenten in Analysis Workspace verwenden können.
+title: Komponenten – Überblick
+description: Erfahren Sie, welche Komponenten Adobe Analytics anbietet und wie Sie sie in Analysis Workspace verwenden können.
 exl-id: f9b0b3c2-7c88-4bef-af33-0d309cafe799
 solution: Customer Journey Analytics
 feature: Components
@@ -8,11 +8,11 @@ role: User
 source-git-commit: c209341400bf4e0c00719075f0fc82f81ca9dbb4
 workflow-type: tm+mt
 source-wordcount: '908'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
-# Komponentenübersicht
+# Komponenten – Überblick
 
 Komponenten sind Funktionen in Customer Journey Analytics, die in Visualisierungen (wie Freiformtabellen) verwendet werden können oder Berichtsfunktionen ergänzen.
 
@@ -23,7 +23,7 @@ So verwalten Sie Komponenten über die Haupt-Benutzeroberfläche von Customer Jo
 
 Sie können die folgenden Komponenten verwalten:
 
-* [Segmente](segments/seg-overview.md): Erstellen, verwalten, teilen und verwenden Sie leistungsstarke, zielgerichtete Segmente für Ihre Berichte. Mit Segmenten können Sie Teilmengen von Personen anhand von Merkmalen oder Interaktionen identifizieren.
+* [Segmente](segments/seg-overview.md): Erstellen, verwalten, teilen und verwenden Sie leistungsstarke, zielgerichtete Zielgruppensegmente für Ihre Berichte. Mit Segmenten können Sie Teilmengen von Personen anhand von Merkmalen oder Interaktionen identifizieren.
 * [Berechnete Metriken:](calc-metrics/calc-metr-overview.md) Verwenden Sie Metriken und Formeln als neue Komponenten für die Berichterstellung.
 * [Datumsbereiche](date-ranges/create.md): Passen Sie die von Analysis Workspace vorgeschlagenen Datumsbereiche an und präzisieren Sie diese.
 * [Anmerkungen](/help/components/annotations/overview.md): Informieren Sie andere Benutzerinnen und Benutzer in Ihrem Unternehmen über die kontextbezogene Bedeutung von Daten und Erkenntnissen.

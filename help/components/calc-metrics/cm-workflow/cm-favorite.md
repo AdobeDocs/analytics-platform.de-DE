@@ -6,11 +6,11 @@ exl-id: f0c9387f-16a4-40c5-9bed-73b871efd22e
 source-git-commit: c209341400bf4e0c00719075f0fc82f81ca9dbb4
 workflow-type: tm+mt
 source-wordcount: '102'
-ht-degree: 0%
+ht-degree: 4%
 
 ---
 
-# Berechnete Metriken als Favoriten markieren
+# Markieren berechneter Metriken als Favoriten
 
 Sie können eine berechnete Metrik als Favorit markieren. Wenn Sie berechnete Metriken als Favoriten markieren, können Sie Ihre berechnete Metrik organisieren. Alle Benutzer können berechnete Metriken bevorzugen.
 

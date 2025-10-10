@@ -70,6 +70,6 @@ Die Filterleiste zeigt ➌ die aktiven Segmente an, die vom Filterbedienfeld auf
 
 ### Panel „Filter“
 
-Sie können die Liste der Segmente mithilfe der ![ des ](/help/assets/icons/Filter.svg)Filtern **&#x200B;**&#x200B;Filtern➍ filtern. Das Bedienfeld „Filter“ zeigt den Filtertyp und die Anzahl der Segmente an, die den spezifischen Filter berücksichtigen. Wählen Sie ![Filter](/help/assets/icons/Filter.svg) aus, um die Anzeige des Bedienfelds „Filter“ umzuschalten.
+Sie können die Liste der Segmente mithilfe der ![ des ](/help/assets/icons/Filter.svg)Filtern **** Filtern➍ filtern. Das Bedienfeld „Filter“ zeigt den Filtertyp und die Anzahl der Segmente an, die den spezifischen Filter berücksichtigen. Wählen Sie ![Filter](/help/assets/icons/Filter.svg) aus, um die Anzeige des Bedienfelds „Filter“ umzuschalten.
 
 Weitere [ finden Sie unter ](seg-filter.md) der Segmentliste .

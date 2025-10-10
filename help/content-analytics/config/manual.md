@@ -1,18 +1,18 @@
 ---
-title: Manuelle Konfiguration der Inhaltsanalyse
-description: Manuelles Konfigurieren der Inhaltsanalyse
+title: Manuelle Konfiguration von Content Analytics
+description: Manuelles Konfigurieren von Content Analytics
 solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin
 exl-id: 2b2d1cc2-36da-4960-ab31-0a398d131ab8
 source-git-commit: a3d974733eef42050b0ba8dcce4ebcccf649faa7
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '640'
 ht-degree: 100%
 
 ---
 
-# Manuelle Konfiguration der Inhaltsanalyse
+# Manuelle Konfiguration von Content Analytics
 
 In diesem Artikel werden die manuellen Aktionen beschrieben, die zum Starten oder Stoppen der Datenerfassung einer Content Analytics-Konfiguration oder zum Bearbeiten Ihrer Content Analytics-Implementierung erforderlich sind.
 

@@ -99,7 +99,7 @@ Gehen Sie folgendermaßen vor, um das Schema einzurichten:
 
    ![Beispiel für die Schaltfläche zum Hinzufügen eines Feldes zum Schema](./assets/example-loalty-schema-plus.png)
 
-1. Geben Sie im Bedienfeld [!UICONTROL Feldeigenschaften] als Namen `Identification` und als [!UICONTROL Anzeigename]&#x200B;**[!UICONTROL Identifikation]** ein, wählen Sie als [!UICONTROL Typ] **[!UICONTROL Objekt]** und als [!UICONTROL Feldergruppe] **[!UICONTROL Profile Core v2]** aus.
+1. Geben Sie im Bedienfeld [!UICONTROL Feldeigenschaften] als Namen `Identification` und als [!UICONTROL Anzeigename]**[!UICONTROL Identifikation]** ein, wählen Sie als [!UICONTROL Typ] **[!UICONTROL Objekt]** und als [!UICONTROL Feldergruppe] **[!UICONTROL Profile Core v2]** aus.
 
    ![Identifizierungsobjekt](./assets/identifcation-loyalty-field.png)
 
@@ -176,11 +176,11 @@ Abhängig davon, woher Sie Ihre Treueprogramm-Daten erhalten, wählen Sie einen 
 
 Sie können Daten aus einer Vielzahl von Quellen aufnehmen. Im Folgenden sind nur einige der vielen verfügbaren Quellen aufgeführt:
 
-- Adobe-Programme (Quell-Connectoren umfassen [Adobe Analytics](https://experienceleague.adobe.com/de/docs/experience-platform/sources/connectors/adobe-applications/analytics), [Adobe Audience Manager](https://experienceleague.adobe.com/de/docs/experience-platform/sources/connectors/adobe-applications/audience-manager) und mehr)
+- Adobe-Programme (Quell-Connectoren umfassen [Adobe Analytics](https://experienceleague.adobe.com/de/docs/experience-platform/sources/connectors/adobe-applications/analytics), [Adobe Audience Manager](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/audience-manager) und mehr)
 
-- Cloud-Speicher (Quell-Connectoren umfassen [Amazon S3](https://experienceleague.adobe.com/de/docs/experience-platform/sources/connectors/cloud-storage/s3), [Azure Blob](https://experienceleague.adobe.com/de/docs/experience-platform/sources/connectors/cloud-storage/blob) und mehr)
+- Cloud-Speicher (Quell-Connectoren umfassen [Amazon S3](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/cloud-storage/s3), [Azure Blob](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/cloud-storage/blob) und mehr)
 
-- Datenbanken (Quell-Connectoren umfassen [Snowflake](https://experienceleague.adobe.com/de/docs/experience-platform/sources/connectors/databases/snowflake), [Microsoft SQL Server](https://experienceleague.adobe.com/de/docs/experience-platform/sources/connectors/databases/sql-server) und mehr)
+- Datenbanken (Quell-Connectoren umfassen [Snowflake](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/databases/snowflake), [Microsoft SQL Server](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/databases/sql-server) und mehr)
 
 Gehen Sie folgendermaßen vor, um einen Quell-Connector einzurichten:
 
@@ -214,7 +214,7 @@ Weitere [ zur Verwendung des Adobe Analytics-Quell-Connectors finden Sie ](./ana
 
 Informationen [ Verwendung des HTTP-API-Quell](./streaming.md)Connectors finden Sie unter „Aufnehmen und Verwenden von Streaming-Daten“.
 
-Einen Überblick über Quell-Connectoren einschließlich Links zu weiteren Informationen zu jedem einzelnen Connector finden Sie unter [Übersicht über Quell-Connectoren](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=de#terms-and-conditions).
+Einen Überblick über Quell-Connectoren einschließlich Links zu weiteren Informationen zu jedem einzelnen Connector finden Sie unter [Übersicht über Quell-Connectoren](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html#terms-and-conditions).
 
 
 ## Einrichten einer Verbindung

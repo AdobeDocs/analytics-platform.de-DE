@@ -22,7 +22,7 @@ In einigen Berichten möchten Sie die Bestellung eventuell Paid Search zuordnen.
 
 ## Wert der Attribution
 
-Eine Customer Journey ist nie linear und oft unvorhersehbar. Jeder Kunde hat sein eigenes Tempo. Häufig zögert er, bricht ab, beginnt neu oder zeigt ein anderes nicht-lineares Verhalten. Diese organischen Aktionen machen es schwer nachvollziehen, wie sich Marketing-Maßnahmen auf die gesamte Customer Journey auswirken. Außerdem werden die Bemühungen zur Verknüpfung mehrerer Datenkanäle behindert.
+Eine Customer Journey ist nie linear und oft unvorhersehbar. Jeder Kunde hat sein eigenes Tempo. Häufig zögert er, bricht ab, startet neu oder zeigt ein anderes nicht-lineares Verhalten. Diese organischen Aktionen machen es schwer nachvollziehen, wie sich Marketing-Maßnahmen auf die gesamte Customer Journey auswirken. Außerdem werden die Bemühungen zur Verknüpfung mehrerer Datenkanäle behindert.
 
 <!--
 ![Attribution problem](assets/attribution_iq_problem.png)
@@ -34,7 +34,7 @@ Adobe Analytics erweitert die Attribution und ermöglicht Ihnen Folgendes:
 * Den Vergleich für unbegrenzte Attributionsmodelle verwenden: Vergleichen Sie dynamisch so viele Modelle, wie Sie möchten.
 * Implementierungsänderungen vermeiden: Mit der Berichtszeitverarbeitung und kontextabhängigen Sitzungen kann Customer Journey-Kontext erstellt und zur Laufzeit angewendet werden.
 * Die Sitzung erstellen, die Ihrem Attributionsszenario am ehesten entspricht.
-* Die Attribution nach Segmenten aufschlüsseln: Vergleichen Sie problemlos die Leistung Ihrer Marketing-Kanäle über ein beliebiges wichtiges Segment hinweg (z. B. Neu- mit Bestandskundschaft, Produkt X im Vergleich zu Produkt Y, Bindungsstufe oder CLV).
+* Die Attribution nach Segmenten aufschlüsseln: Vergleichen Sie problemlos die Leistung Ihrer Marketing-Kanäle über ein beliebiges wichtiges Segment hinweg (z. B. Neu- mit Bestandskundschaft, Produkt X im Vergleich zu Produkt Y, Treuestufe oder CLV).
 * Wechsel zwischen Kanälen und Multi-Touch-Analyse beachten: Verwenden Sie Venn-Diagramme und Histogramme und erstellen Sie Trends anhand von Attributionsergebnissen.
 * Wichtige Marketing-Sequenzen visuell analysieren: Erkunden Sie zur Konversion führende Pfade visuell mithilfe von mehrknotigen Fluss- und Fallout-Visualisierungen.
 * Berechnete Metriken erstellen: Verwenden Sie eine beliebige Anzahl an Attributionszuordnungsmethoden.
@@ -53,28 +53,28 @@ Attribution umfasst die folgenden Funktionen:
 
 >[!BEGINSHADEBOX]
 
-Siehe ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Attribution in Freiformtabellen](https://video.tv.adobe.com/v/37474?quality=12&learn=on&captions=ger){target="_blank"} für ein Demovideo.
+Siehe ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Attribution in Freiformtabellen](https://video.tv.adobe.com/v/23136?quality=12&learn=on){target="_blank"} für ein Demovideo.
 
 >[!ENDSHADEBOX]
 
 
 >[!BEGINSHADEBOX]
 
-Siehe ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Attribution in berechneten ](https://video.tv.adobe.com/v/41478?quality=12&learn=on&captions=ger){target="_blank"}) für ein Demovideo.
+Siehe ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Attribution in berechneten ](https://video.tv.adobe.com/v/23140?quality=12&learn=on){target="_blank"}) für ein Demovideo.
 
 >[!ENDSHADEBOX]
 
 
 >[!BEGINSHADEBOX]
 
-Siehe ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Verwenden des Attributionsbedienfelds](https://video.tv.adobe.com/v/37477?quality=12&learn=on&captions=ger){target="_blank"} für ein Demovideo.
+Siehe ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Verwenden des Attributionsbedienfelds](https://video.tv.adobe.com/v/23139?quality=12&learn=on){target="_blank"} für ein Demovideo.
 
 >[!ENDSHADEBOX]
 
 
 >[!BEGINSHADEBOX]
 
-Siehe ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Hinzufügen von nebeneinander angezeigten Vergleichen von Attributionsmodellen](https://video.tv.adobe.com/v/327794?quality=12&learn=on&captions=ger){target="_blank"} für ein Demovideo.
+Siehe ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Hinzufügen von nebeneinander angezeigten Vergleichen von Attributionsmodellen](https://video.tv.adobe.com/v/23651?quality=12&learn=on){target="_blank"} für ein Demovideo.
 
 >[!ENDSHADEBOX]
 

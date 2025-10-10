@@ -38,7 +38,7 @@ Die Datenstruktur in universellen Analytics-Eigenschaften unterscheidet sich von
 >
 >Dieser Abschnitt gilt nur für Universal Analytics-Eigenschaften. Wenn Sie Daten aus einer GA4-Eigenschaft exportieren, lesen Sie [Daten in Google Cloud Platform exportieren](#export-gcp).
 
-In den Universal Analytics-Eigenschaften werden die einzelnen Datensätze der Daten als Benutzersitzung und nicht als einzelne Ereignisse gespeichert. Eine SQL-Abfrage ist erforderlich, um die Universal Analytics-Daten in ein mit Adobe Experience Platform kompatibles Format umzuwandeln. Wenden Sie die Funktion `UNNEST` auf das Feld `hits` im GA-Schema an und speichern Sie sie als BigQuery-Tabelle.
+In den Universal Analytics-Eigenschaften werden die einzelnen Einträge der Daten als Benutzersitzung und nicht als einzelne Ereignisse gespeichert. Eine SQL-Abfrage ist erforderlich, um die Universal Analytics-Daten in ein mit Adobe Experience Platform kompatibles Format umzuwandeln. Wenden Sie die Funktion `UNNEST` auf das Feld `hits` im GA-Schema an und speichern Sie sie als BigQuery-Tabelle.
 
 
 >[!BEGINSHADEBOX]
@@ -83,7 +83,7 @@ Navigieren Sie in der Google Cloud Platform zu **Exportieren > In GCS exportiere
 
 >[!BEGINSHADEBOX]
 
-Siehe ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Importieren von Google Analytics-Daten in Adobe Experience Platform](https://video.tv.adobe.com/v/3437175?quality=12&learn=on&captions=ger){target="_blank"} für ein Demovideo.
+Siehe ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Importieren von Google Analytics-Daten in Adobe Experience Platform](https://video.tv.adobe.com/v/332676?quality=12&learn=on){target="_blank"} für ein Demovideo.
 
 >[!ENDSHADEBOX]
 

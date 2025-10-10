@@ -38,7 +38,7 @@ Dieser Anwendungsfall erfordert ein dediziertes Schemafeld, an das Daten gesende
 
 ## Schritt 2: Erfassen von Reibungsereignissen mit der Quantum Metric-Tag-Erweiterung
 
-Anweisungen [ Einrichten Ihrer Tags für das Einschließen von Quantenmetrikdaten finden Sie unter ](https://experienceleague.adobe.com/de/docs/experience-platform/destinations/catalog/analytics/quantum-metric)Quantum Metric-Erweiterung“ im Adobe Experience Platform Destinations-Handbuch. Durch die Verwendung dieser Erweiterung werden mehr Zeilen in einen vorhandenen Datensatz übergeben.
+Anweisungen [ Einrichten Ihrer Tags für das Einschließen von Quantenmetrikdaten finden Sie unter ](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/analytics/quantum-metric)Quantum Metric-Erweiterung“ im Adobe Experience Platform Destinations-Handbuch. Durch die Verwendung dieser Erweiterung werden mehr Zeilen in einen vorhandenen Datensatz übergeben.
 
 Verwenden Sie Tags in der Adobe Experience Platform-Datenerfassung, um den Namen des Reibungsereignisses manuell festzulegen, sodass es in das XDM-Objekt aufgenommen und analysiert werden kann. Eine Möglichkeit, dies zu tun, besteht im benutzerdefinierten Code der Regel:
 
@@ -78,5 +78,5 @@ Wenn Quantum Metric Friction-Ereignisdaten zusammen mit den anderen Besucherdate
 Zu den möglichen Analyseideen gehören:
 
 * Trend von Reibungsereignisdaten im Zeitverlauf
-* Fügen Sie in einer Fallout- oder Trichtervisualisierung Customer Journey Analytics-Ereignisse als einige Schritte und Quantenmetrik-Reibungsereignisse als andere hinzu. Dieser Bericht zeigt an, wo Besucherinnen und Besucher am häufigsten in Schwierigkeiten geraten.
+* Fügen Sie in einer Fallout- oder funnel-Visualisierung Customer Journey Analytics-Ereignisse als einige Schritte und Quantenmetrik-Reibungsereignisse als andere hinzu. Dieser Bericht zeigt an, wo Besucherinnen und Besucher am häufigsten in Schwierigkeiten geraten.
 * Erstellen und Anwenden eines Segments für Besucher, die Reibungsereignisse für eine tiefer gehende Analyse erleben

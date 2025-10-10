@@ -6,7 +6,7 @@ keywords: Produktanalysen
 exl-id: 93e6e4f1-bbe4-4a6c-8ec3-54d1f9a8b847
 role: User
 source-git-commit: bd8c9951386608572d84006bd5465e57214c56d4
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '530'
 ht-degree: 100%
 
@@ -25,7 +25,7 @@ ht-degree: 100%
 
 Die Analyse der ![Release](/help/assets/icons/Release.svg) **[!UICONTROL Auswirkungen der Version]** zeigt einen Vergleich der Leistung von Schlüsselindikatoren vor und nach einem bestimmten Datum. Die horizontale Achse dieses Berichts ist ein Zeitintervall, die vertikale Achse ein Maß für die gewünschten Schlüsselindikatoren. Ein vertikaler Balken in der Mitte des Diagramms stellt das Datum dar, mit dem Sie die Leistung davor und danach vergleichen möchten. Dieses Datum stellt in der Regel eine wesentliche Änderung am Produkt dar, für die Sie die Messung durchführen möchten, z. B. eine Aktualisierung des Produkts oder ein Kampagnen-Launch.
 
->[!VIDEO](https://video.tv.adobe.com/v/3423449/?quality=12&learn=on&captions=ger)
+>[!VIDEO](https://video.tv.adobe.com/v/3421665/?quality=12&learn=on)
 
 ## Anwendungsfälle
 

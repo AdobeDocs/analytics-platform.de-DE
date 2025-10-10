@@ -6,7 +6,7 @@ keywords: Produktanalysen
 role: User
 exl-id: d3da9257-a133-46c8-8fac-1a33d3372bb7
 source-git-commit: bd8c9951386608572d84006bd5465e57214c56d4
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '577'
 ht-degree: 100%
 
@@ -29,12 +29,12 @@ Die ![Timeline](/help/assets/icons/Timeline.svg)**[!UICONTROL Zeitleistenanalyse
 >[!NOTE]
 >
 >Für die [!UICONTROL Zeitleistenanalyse] muss die Standardkomponente **[!UICONTROL Personen-ID]** in der [Datenansicht](/help/data-views/component-reference.md#optional) verfügbar sein. Das Einschließen der Personen-ID in eine Datenansicht wird von Ihrer oder Ihrem Customer Journey Analytics-Admin verwaltet, sodass Ihre Organisation die volle Datenschutzkontrolle darüber hat, wer auf diese Daten zugreifen kann.
-><br/>Wenn einer Datenansicht die Komponente [!UICONTROL Personen-ID] nicht hinzugefügt wurde, wird die folgende Meldung angezeigt:
+>><br/>Wenn einer Datenansicht die Komponente [!UICONTROL Personen-ID] nicht hinzugefügt wurde, wird die folgende Meldung angezeigt:
 >
 >* **Admins**: *Die Eigenschaft PersonID ist für diese Analyse erforderlich. Bitte fügen Sie die Personen-ID zur Datenansicht hinzu.*
 >* **Benutzende ohne Administratorrechte**: *Die Eigenschaft PersonID ist für diese Analyse erforderlich. Bitte arbeiten Sie mit Ihren Customer Journey Analytics-Admins zusammen, um die Personen-ID zur Datenansicht hinzuzufügen.*
 
->[!VIDEO](https://video.tv.adobe.com/v/3435776/?quality=12&learn=on&captions=ger)
+>[!VIDEO](https://video.tv.adobe.com/v/3427810/?quality=12&learn=on)
 
 
 

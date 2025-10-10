@@ -8,7 +8,7 @@ exl-id: 5e3f0aa0-ba24-48c8-948c-ebb5c270f34d
 source-git-commit: 4dcf9ab808475cc3cc48cab4c076b6c3cfb66f8a
 workflow-type: tm+mt
 source-wordcount: '1075'
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 
@@ -28,7 +28,7 @@ Beispiele für Identitäten sind Kunden-ID, Konto-ID oder E-Mail-ID. Für jede I
 * Die ID enthält keine persönlich identifizierbare Informationen. Wenden Sie Hashing auf alle sensiblen Elemente an.
 * Die ID verwendet dasselbe Format für alle Quellen (gleiche Länge, gleiche Hashing-Methode usw.)
 
-In Datensätzen wie Adobe Analytics ist möglicherweise nicht in jeder Datenzeile eine Identität vorhanden, aber eine sekundäre Identität schon. In diesem Fall kann [Cross-Channel-Analyse (auch als Zuordnung bezeichnet)](/help/stitching/overview.md) verwendet werden, um die Lücke zwischen Zeilen zu schließen, wenn ein Kunde nur durch seine ECID identifiziert wird und wenn eine Identität erfasst wird (z. B. bei der Authentifizierung eines Kunden).
+In Datensätzen wie Adobe Analytics ist möglicherweise nicht in jeder Datenzeile eine Identität vorhanden, aber eine sekundäre Identität schon. In diesem Fall kann die [Cross-Channel-Analyse (früher als „Zuordnung“ oder „Stitching“ bezeichnet)](/help/stitching/overview.md) verwendet werden, um die Lücke zwischen Zeilen zu schließen, wenn eine Kundin oder ein Kunde nur durch die ECID identifiziert wird und wenn eine Identität erfasst wird (z. B. bei der Authentifizierung einer Person). 
 
 ### Anpassen Ihrer Variablen
 
@@ -36,7 +36,7 @@ Die einfachste Methode, Adobe Analytics-Daten in Customer Journey Analytics-Date
 
 Eine vollständige globale Report Suite ist nicht in jedem Fall für eine Implementierung möglich. Wenn Sie planen, mehrere Report Suites in Customer Journey Analytics zu integrieren, haben Sie zwei Möglichkeiten:
 
-* Planen Sie im Voraus, damit Sie die Variablen in diesen Report Suites in Einklang bringen können. Beispielsweise kann eVar1 in Report Suite 1 auf [!UICONTROL Seite] verweisen. In Report Suite 2 kann eVar1 auf [!UICONTROL Interne Kampagne] verweisen. Wenn diese Variablen in Customer Journey Analytics importiert werden, werden sie in einer einzigen eVar1-Dimension vermischt, was zu möglicherweise verwirrenden und ungenauen Berichten führt.
+* Planen Sie im Voraus, damit Sie die Variablen in diesen Report Suites in Einklang bringen können. Beispielsweise kann eVar1 in Report Suite 1 auf [!UICONTROL Seite] verweisen. In Report Suite 2 kann eVar1 auf [!UICONTROL Interne Kampagne] verweisen. Wenn diese Variablen in Customer Journey Analytics importiert werden, werden sie in einer gemeinsamen eVar1-Dimension vermischt, was zu möglicherweise verwirrenden und ungenauen Berichten führt.
 
 * Verwenden Sie die Funktion der [Datenvorbereitung](https://experienceleague.adobe.com/de/docs/experience-platform/data-prep/home) zum Zuordnen von Variablen. Es ist zwar einfacher, wenn alle Report Suites denselben Variablenaufbau verwenden, dies ist aber nicht erforderlich, wenn Sie die neue [Data Prep](https://experienceleague.adobe.com/de/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics)-Funktion von Experience Platform verwenden. Damit können Sie eine Variable anhand ihres zugeordneten Werts referenzieren, der sich auf der Ebene des Datenstroms (oder der Eigenschaft) befindet.
 
@@ -46,13 +46,13 @@ Im Folgenden finden Sie ein Anwendungsbeispiel für das [Kombinieren von Report 
 
 ### (Erneutes) Konfigurieren Ihrer Marketing-Kanäle
 
-Herkömmliche Einstellungen für Marketing-Kanäle in Adobe Analytics funktionieren in Customer Journey Analytics nicht auf die gleiche Weise. Es gibt zwei Gründe für einen Unterschied:
+Herkömmliche Einstellungen für Marketing-Kanäle in Adobe Analytics funktionieren in Customer Journey Analytics nicht auf die gleiche Weise. Für diesen Unterschied gibt es zwei Gründe:
 
 * Die Verarbeitungsstufe für die in Adobe Experience Platform aufgenommenen Adobe Analytics-Daten
 
 * Der Berichtscharakter von Customer Journey Analytics
 
-Adobe hat [aktualisierte Best Practices für die Implementierung von Marketing-Kanälen](https://experienceleague.adobe.com/de/docs/analytics/components/marketing-channels/mchannel-best-practices) veröffentlicht. Diese aktualisierten Empfehlungen helfen Ihnen dabei, die bereits in Adobe Analytics vorhandenen Funktionen mit erweiterten Attributionsfunktionen optimal zu nutzen. Die Empfehlungen bieten Ihnen auch einen guten Ausgangspunkt für die Umstellung auf Customer Journey Analytics.
+Adobe hat [aktualisierte Best Practices für die Implementierung von Marketing-Kanälen](https://experienceleague.adobe.com/de/docs/analytics/components/marketing-channels/mchannel-best-practices) veröffentlicht. Diese aktualisierten Empfehlungen helfen Ihnen dabei, die meisten der bereits in Adobe Analytics vorhandenen Funktionen mit erweiterter Attribution optimal zu nutzen. Die Empfehlungen helfen Ihnen auch bei der Umstellung auf Customer Journey Analytics.
 
 Mit der Einführung von [abgeleiteten Feldern](../data-views/derived-fields/derived-fields.md) im Rahmen der Datenansichten von Customer Journey Analytics werden Marketing-Kanäle auch zerstörungsfrei und rückwirkend unterstützt, indem die Vorlage [Marketing-Kanal-Funktion](../data-views/derived-fields/derived-fields.md#function-templates) verwendet wird.
 
@@ -66,7 +66,7 @@ Das Reporting in Adobe Analytics beruht auf einer erheblichen Datenvorverarbeitu
 
 [!UICONTROL Berichtszeitverarbeitung] eröffnet die Möglichkeit, rückwirkende Einstellungen anzuwenden und mehrere Versionen der Variablenpersistenz zu erstellen, ohne die Art der Erfassung der zugrunde liegenden Daten ändern zu müssen.
 
-Diese Änderung führt zu gewissen Unterschieden in der Art und Weise, wie Daten gemeldet werden, insbesondere bei Variablen, die über ein langes Gültigkeitsfenster verfügen können. Sie können beurteilen, wie sich die Verarbeitung zur Berichtslaufzeit auf Ihr Reporting auswirken kann, indem Sie eine [Virtual Report Suite](https://experienceleague.adobe.com/de/docs/analytics/components/virtual-report-suites/vrs-report-time-processing) verwenden.
+Diese Änderung führt zu gewissen Unterschieden in der Verwendung von Daten zur Berichtserstellung, insbesondere bei Variablen, die länger gültig sind. Sie können beurteilen, wie sich die Verarbeitung zur Berichtslaufzeit auf Ihr Reporting auswirken kann, indem Sie eine [Virtual Report Suite](https://experienceleague.adobe.com/de/docs/analytics/components/virtual-report-suites/vrs-report-time-processing) verwenden.
 
 ### Identifizieren Sie wichtige Segmente und berechnete Metriken {#segments-calcmetrics}
 
@@ -90,11 +90,11 @@ Hier sind einige Videos, die Ihnen dabei helfen:
 
 * Durch die leistungsstarken Customer Journey Analytics-Datenansichten haben Sie bei der Definition von Metriken und Dimensionen in Customer Journey Analytics deutlich mehr Flexibilität. Sie können beispielsweise den Wert einer Dimension als Definition einer Metrik verwenden. [Weitere Informationen](/help/use-cases/data-views/data-views-usecases.md)
 
-* Wenn Sie einen benutzerdefinierten Kalender in Adobe Analytics definiert haben, verfügen Sie [ Customer Journey Analytics über ähnliche ](/help/components/date-ranges/overview.md) (benutzerdefinierte Kalenderfunktionen). Sie müssen sicherstellen, dass Ihr Kalender korrekt definiert ist.
+* Wenn Sie einen benutzerdefinierten Kalender in Adobe Analytics festgelegt haben, verfügen Sie in Customer Journey Analytics über ähnliche [benutzerdefinierte Kalenderfunktionen](/help/components/date-ranges/overview.md). Sie müssen sicherstellen, dass Ihr Kalender korrekt definiert ist.
 
-* In Customer Journey Analytics können Sie ein benutzerdefiniertes Sitzungs-Timeout definieren sowie eine Metrik festlegen, mit der eine neue Sitzung gestartet wird. Sie können Datenansichten mit verschiedenen Sitzungsdefinitionen erstellen, um Einblicke zu erhalten, die weit darüber hinausgehen, was in Adobe Analytics möglich war. Diese Funktion kann besonders für Datensätze im Mobile-Bereich von Nutzen sein.
+* In Customer Journey Analytics können Sie ein benutzerdefiniertes Sitzungs-Timeout definieren und eine Metrik festlegen, durch die eine neue Sitzung gestartet wird. Sie können Datenansichten mit verschiedenen Sitzungsdefinitionen erstellen, um Einblicke zu erhalten, die weit darüber hinausgehen, was in Adobe Analytics möglich war. Diese Funktion kann besonders für Datensätze im Mobile-Bereich von Nutzen sein.
 
-* Erwägen Sie die Bereitstellung eines Datenwörterbuchs für Ihre Benutzerinnen und Benutzer. Oder erweitern Sie das SDR, um den Experience Platform-Feldnamen für Schemaelemente einzuschließen.
+* Erwägen Sie die Bereitstellung eines Datenwörterbuchs für Ihre Benutzerinnen und Benutzer. Oder erweitern Sie die SDR, um den Experience Platform-Feldnamen für Schemaelemente einzuschließen.
 
 ### Nächste Schritte
 

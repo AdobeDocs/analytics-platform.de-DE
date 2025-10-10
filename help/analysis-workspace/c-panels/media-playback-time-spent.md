@@ -6,8 +6,8 @@ exl-id: de0fdbea-71f0-445b-a1e4-c7e895f142d4
 role: User
 source-git-commit: ce4a21b1a1e89f14316a92fbdce38281db61e666
 workflow-type: tm+mt
-source-wordcount: '1074'
-ht-degree: 90%
+source-wordcount: '1076'
+ht-degree: 89%
 
 ---
 
@@ -34,7 +34,7 @@ ht-degree: 90%
 
 >[!BEGINSHADEBOX]
 
-_In diesem Dokument wird das Panel „Verbrachte Zeit bei der Medienwiedergabe“ in_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**&#x200B;_ beschrieben.<br/>_Unter [Panel „Verbrachte Zeit bei der Medienwiedergabe“](https://experienceleague.adobe.com/de/docs/analytics/analyze/analysis-workspace/panels/media-playback-time-spent) finden Sie die Version dieses Artikels für_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics**._
+_In diesem Dokument wird das Panel „Verbrachte Zeit bei der Medienwiedergabe“ in_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**_ beschrieben.<br/>_Unter [Panel „Verbrachte Zeit bei der Medienwiedergabe“](https://experienceleague.adobe.com/de/docs/analytics/analyze/analysis-workspace/panels/media-playback-time-spent) finden Sie die Version dieses Artikels für_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**._
 
 >[!ENDSHADEBOX]
 
@@ -42,7 +42,7 @@ _In diesem Dokument wird das Panel „Verbrachte Zeit bei der Medienwiedergabe�
 >[!NOTE]
 >
 >Das Panel „Medien-Zielgruppendurchschnitt pro Minute“ ist nur für Kundinnen und Kunden verfügbar, die das Streaming Media Collection-Add-on für Customer Journey Analytics gekauft haben.
->&#x200B;>Wenden Sie sich an Ihren Adobe-Vertriebskontakt oder Ihr Adobe-Acountteam, um weitere Informationen zu erhalten.
+>>Wenden Sie sich an Ihren Adobe-Vertriebskontakt oder Ihr Adobe-Acountteam, um weitere Informationen zu erhalten.
 >
 
 Das Panel **[!UICONTROL Verbrachte Zeit bei der Medienwiedergabe]** ermöglicht die Analyse der Medienwiedergabe im Zeitverlauf und bietet Details zum maximalen gleichzeitigen Zugriff sowie die Möglichkeit von Aufschlüsselungen und Vergleichen.
@@ -60,7 +60,7 @@ Die Wiedergabedauer kann Ihnen dabei helfen, Folgendes zu verstehen:
 
 >[!BEGINSHADEBOX]
 
-Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Bedienfeld „Verbrachte Zeit bei der Medienwiedergabe“](https://video.tv.adobe.com/v/3446709?captions=ger){target="_blank"} finden Sie ein Demovideo.
+Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Bedienfeld „Verbrachte Zeit bei der Medienwiedergabe“](https://video.tv.adobe.com/v/338699){target="_blank"} finden Sie ein Demovideo.
 
 {{videoaa}}
 
@@ -91,7 +91,7 @@ Sie können das Panel „Verbrachte Zeit bei der Medienwiedergabe“ mithilfe de
 | Zusammenfassende Zahlen der Bedienfelder | Um Details zu Datum und Uhrzeit für die verbrachte Zeit bei der Medienwiedergabe anzuzeigen, steht eine zusammenfassende Zahl zur Verfügung. Das Maximum zeigt Details zu Spitzenzeiten von gleichzeitigen Aufrufen an. Das Minimum zeigt Details zum Tiefpunkt an. In der Summe wird die gesamte Wiedergabezeit für diese Auswahl dargestellt. Im Panel wird standardmäßig nur der maximale Wert angezeigt. Sie können dies jedoch ändern, sodass das Minimum, die Summe oder eine beliebige Kombination der drei Werte angegeben wird.<br>Wenn Sie Aufschlüsselungen verwenden, wird jeweils eine Zusammenfassungsnummer angezeigt. |
 | Serienaufschlüsselung | Optional können Sie Ihre Visualisierung nach Segmenten, Dimensionen, Dimensionselementen oder Datumsbereichen unterteilen.<p>– Sie können bis zu 10 Zeilen auf einmal ansehen. Aufschlüsselungen sind auf eine einzelne Ebene beschränkt.</p><p>– Beim Ziehen einer Dimension werden die oberen Dimensionselemente automatisch anhand des im Panel ausgewählten Datumsbereichs ausgewählt.</p>- Ziehen Sie zum Vergleichen von Datumsbereichen zwei oder mehr Datumsbereiche in das Aufschlüsselungssegment der Serie. |
 | Zeitformat | Sie können die Wiedergabedauer entweder in `Hours:Minutes:Seconds` (Standard) oder in `Minutes` (in Ganzzahlen, ab 0,5 aufgerundet) anzeigen. |
-| Anzeige der Datumsreihe | Wenn Sie mindestens zwei Datumsbereichssegmente als Serienaufschlüsselungen platziert haben, sehen Sie die Option zur Auswahl einer Überlagerung (Standard) oder einer Sequenz. Bei der Überlagerung werden die Linien mit einem gemeinsamen x-Achsen-Beginn gezeigt, sodass sie parallel laufen, während bei der Sequenz die Linien mit ihrem jeweiligen x-Achsen-Beginn dargestellt werden. Wenn die Daten aufeinander folgend sind (z. B. Segment 1 endet um 20:44 Uhr und Segment 2 beginnt um 20:45 Uhr), werden die Zeilen nacheinander angezeigt. |
+| Anzeige der Datumsreihe | Wenn Sie mindestens zwei Datumsbereichssegmente als Serienaufschlüsselungen platziert haben, sehen Sie die Option zur Auswahl einer Überlagerung (Standard) oder einer Sequenz. Bei der Überlagerung werden die Linien mit einem gemeinsamen x-Achsen-Beginn gezeigt, sodass sie parallel laufen, während bei der Sequenz die Linien mit ihrem jeweiligen x-Achsen-Beginn dargestellt werden. Wenn die Daten aufeinander folgend sind (z. B. Segment 1 endet um 20 :44 und Segment 2 beginnt um 20 :45), werden die Zeilen nacheinander angezeigt. |
 
 
 ![Die Standardansicht „Verbrachte Zeit bei der Medienwiedergabe“.](assets/mpts_default_view.png)
@@ -129,6 +129,6 @@ Die einzige Metrik, die in diesem Panel verwendet werden kann, ist „Wiedergabe
 >[!MORELIKETHIS]
 >
 >[Erstellen eines Bedienfelds](/help/analysis-workspace/c-panels/panels.md#create-a-panel)
->&#x200B;>[Panel „Medien-Zielgruppendurchschnitt pro Minute“](average-minute-audience-panel.md)
->&#x200B;>[Panel „Gleichzeitige Medienbetrachter“](media-concurrent-viewers.md)
+>>[Panel „Medien-Zielgruppendurchschnitt pro Minute“](average-minute-audience-panel.md)
+>>[Panel „Gleichzeitige Medienbetrachter“](media-concurrent-viewers.md)
 >

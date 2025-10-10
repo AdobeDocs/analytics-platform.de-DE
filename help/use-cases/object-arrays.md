@@ -1,6 +1,6 @@
 ---
 title: Verwenden von Objekt-Arrays
-description: Erfahren Sie, wie Sie Berichte zu Datenhierarchien Customer Journey Analytics.
+description: Erfahren Sie, wie Customer Journey Analytics Berichte zu Datenhierarchien erstellt.
 exl-id: 59318da7-5408-4a9d-82aa-8bcbec7f7364
 solution: Customer Journey Analytics
 feature: Use Cases
@@ -92,7 +92,7 @@ Unter Verwendung des obigen Ereignisses zeigen die folgenden Tabellen Workspace-
 | `LG Dryer 2000` | `1` | `500` |
 | `Total` | `1` | `2100` |
 
-Beim Customer Journey Analytics werden Dimension und Metriken des Objekts basierend auf der Tabelle selektiv betrachtet.
+Customer Journey Analytics untersucht selektiv die Dimension und Metriken des Objekts basierend auf der Tabelle.
 
 ```diff
 {
@@ -270,5 +270,5 @@ Durch Anwendung dieser berechneten Metrik werden die gewünschten Ergebnisse ang
 
 ## Einschränkungen
 
-Einschränkungen gelten für Arrays in Daten, die vom Customer Journey Analytics verwendet und als Teil eines Schemas im Experience Platform modelliert werden. Siehe [Datenmodellbeschränkungen](https://experienceleague.adobe.com/de/docs/experience-platform/profile/guardrails#data-model-limits) und [Datengrößenbeschränkungen](https://experienceleague.adobe.com/de/docs/experience-platform/profile/guardrails#data-size-limits) in den [Standardleitplanken für Echtzeit-Kundenprofildaten und -segmentierung](https://experienceleague.adobe.com/de/docs/experience-platform/profile/guardrails).
+Einschränkungen gelten für Arrays in Daten, die von Customer Journey Analytics verwendet und als Teil eines Schemas in Experience Platform modelliert werden. Siehe [Datenmodellbeschränkungen](https://experienceleague.adobe.com/en/docs/experience-platform/profile/guardrails#data-model-limits) und [Datengrößenbeschränkungen](https://experienceleague.adobe.com/en/docs/experience-platform/profile/guardrails#data-size-limits) in den [Standardleitplanken für Echtzeit-Kundenprofildaten und -segmentierung](https://experienceleague.adobe.com/de/docs/experience-platform/profile/guardrails).
 

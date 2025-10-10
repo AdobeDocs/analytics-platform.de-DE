@@ -5,7 +5,7 @@ role: Admin
 feature: Basics
 exl-id: 13d972bc-3d32-414e-a67d-845845381c3e
 source-git-commit: 7c906e30d54362713f5013c8661ee523938d4b0f
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '625'
 ht-degree: 100%
 
@@ -14,7 +14,7 @@ ht-degree: 100%
 
 # Konsistenz von Metriken und Zielgruppenzugehörigkeit
 
-In realen Szenarien kann die Konsistenz von Metriken und die Anzahl der Zielgruppenmitgliedschaften zwischen Real-Time Customer Data Platform (Real-Time CDP) und Customer Journey Analytics nicht garantiert werden.  In diesem Dokument wird erläutert, warum.
+In realen Szenarien kann die Konsistenz von Metriken und die Anzahl der Zielgruppenzugehörigkeiten zwischen Real-Time Customer Data Platform (Real-Time CDP) und Customer Journey Analytics nicht garantiert werden.  In diesem Dokument wird erläutert, warum.
 
 Beim Vergleich der Anzahl der Zielgruppenzugehörigkeiten zwischen Real-Time CDP und Customer Journey Analytics ist es wichtig, die verschiedenen Ziele dieser beiden Tools zu beachten.  Die Real-Time CDP verwendet Kundenprofildaten, um digitale Erlebnisse auf Einzelpersonen auszurichten, während Customer Journey Analytics Benutzenden dabei hilft, Muster in wichtigen Geschäftsmetriken und Segmenten zu verstehen.  Während die Veröffentlichung der Zielgruppe von Customer Journey Analytics in der Real-Time CDP denen, die diese Tools verwenden, das einfache und native „Aktivieren“ einer Erkenntnis ermöglicht, indem sie die in Customer Journey Analytics gewonnenen Erkenntnisse nutzen, dienen diese Tools dennoch grundlegend verschiedenen Zwecken.
 
@@ -41,7 +41,7 @@ Selbst wenn die Datensätze in der Real-Time CDP und in Customer Journey Analyti
 
 * Kundinnen und Kunden von Customer Journey Analytics und Real-Time CDP können benutzerdefinierte Aufbewahrungsfenster für Daten festlegen, und zwar unabhängig voneinander.
 
-* Die Real-Time CDP und Customer Journey Analytics haben unterschiedliche Logiken für die Aufnahme von Daten.  Customer Journey Analytics ignoriert Datensätze ohne Personen-ID oder Zeitstempel und begrenzt die Anzahl der Datensätze, die ein einzelnes Profil/eine einzelne Person aufweisen kann, streng.
+* Die Real-Time CDP und Customer Journey Analytics haben unterschiedliche Logiken für die Aufnahme von Daten.  Customer Journey Analytics ignoriert Einträge ohne Personen-ID oder Zeitstempel und begrenzt die Anzahl der Einträge, die ein einzelnes Profil/eine einzelne Person aufweisen kann, streng.
 
 * Kundinnen und Kunden der Real-Time CDP erhalten 7 Tage Zugriff auf Daten im Data Lake, in erster Linie mit dem Ziel, das Onboarding von Daten in Profile und Ad-hoc-Abfragen zu erleichtern.
 

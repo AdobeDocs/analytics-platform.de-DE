@@ -113,7 +113,7 @@ Eine Beispiel-Entwurfsreferenz für eine Lösung könnte wie folgt aussehen:
 | Bedarfsermittlung | Zähler |
 | Verhandlung | Zähler |
 | Umgang mit Einwänden | Zähler |
-| Opportunitys | Zähler |
+| Opportunities | Zähler |
 | Opportunity-Erstellung | Zähler |
 | Bestellungen | Zähler |
 | Ausgehender Aufruf | Zähler |

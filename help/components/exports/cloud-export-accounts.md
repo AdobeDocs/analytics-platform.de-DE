@@ -24,7 +24,7 @@ Informationen zum Verwalten vorhandener Konten, einschließlich Anzeigen, Bearbe
 
 1. Stellen Sie sicher, dass Sie die [Mindestanforderungen](/help/analysis-workspace/export/export-cloud.md#minimum-requirements) für den Export von Berichten in die Cloud erfüllen.
 1. Wählen Sie in Customer Journey Analytics [!UICONTROL **Komponenten**] > [!UICONTROL **Exporte**] aus.
-1. Wählen Sie auf [!UICONTROL &#x200B; Seite &#x200B;] die Registerkarte [!UICONTROL **Standortkonten**] aus.
+1. Wählen Sie auf [!UICONTROL  Seite ] die Registerkarte [!UICONTROL **Standortkonten**] aus.
 
    ![Exportiert Seitenoptionen mit „Weiteres Konto hinzufügen“](assets/account-add.png)
 
@@ -112,9 +112,9 @@ Informationen zum Verwalten vorhandener Konten, einschließlich Anzeigen, Bearbe
 
       1. Falls noch nicht geschehen, laden Sie den [Microsoft Azure Storage Explorer](https://azure.microsoft.com/en-us/products/storage/storage-explorer/) herunter.
 
-      1. Befolgen Sie in der Adobe Experience Platform-Dokumentation die unter [Verbinden Ihres Data Landing Zone-Containers mit dem Azure Storage Explorer](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/cloud-storage/data-landing-zone.html?lang=de#connect-your-data-landing-zone-container-to-azure-storage-explorer) beschriebenen Schritte.
+      1. Befolgen Sie in der Adobe Experience Platform-Dokumentation die unter [Verbinden Ihres Data Landing Zone-Containers mit dem Azure Storage Explorer](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/cloud-storage/data-landing-zone.html#connect-your-data-landing-zone-container-to-azure-storage-explorer) beschriebenen Schritte.
 
-         Sie können die in den Abschnitten [Abrufen der Anmeldeinformationen für Ihre Data Landing Zone](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/cloud-storage/data-landing-zone.html?lang=de#retrieve-dlz-credentials) und [Aktualisieren der Anmeldeinformationen für die Data Landing Zone](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/cloud-storage/data-landing-zone.html?lang=de#update-dlz-credentials) beschriebenen Aufgaben überspringen, da der von Ihnen kopierte URI diese Anmeldeinformationen enthält.
+         Sie können die in den Abschnitten [Abrufen der Anmeldeinformationen für Ihre Data Landing Zone](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/cloud-storage/data-landing-zone.html#retrieve-dlz-credentials) und [Aktualisieren der Anmeldeinformationen für die Data Landing Zone](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/cloud-storage/data-landing-zone.html#update-dlz-credentials) beschriebenen Aufgaben überspringen, da der von Ihnen kopierte URI diese Anmeldeinformationen enthält.
 
       1. Wenn Sie der Adobe Experience Platform-Dokumentation folgen und zum Feld [!UICONTROL **Blob-Container-SAS-URL**] kommen, fügen Sie den SAS-URI ein, den Sie in Schritt 3 kopiert haben.
 

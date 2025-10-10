@@ -6,7 +6,7 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: 94a2bf2f-ad84-4f35-af8f-b8a5d9e5c607
 source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '350'
 ht-degree: 100%
 
@@ -69,6 +69,6 @@ Es werden drei Möglichkeiten unterstützte, um das Adobe Experience Platform-We
 
 * [Web-SDK-JavaScript-Bibliothek](https://experienceleague.adobe.com/de/docs/experience-platform/web-sdk/install/library): Verweisen Sie auf eine vom CDN gehostete Bibliotheksdatei oder hosten Sie die Bibliotheksdatei mithilfe Ihrer eigenen Infrastruktur. Rufen Sie die Bibliothek im Code auf Ihrer Site auf.
 
-* [NPM](https://experienceleague.adobe.com/de/docs/experience-platform/web-sdk/install/npm): Installieren Sie das Web-SDK mithilfe des NPM-Package Managers auf Ihrer Website.
+* [NPM](https://experienceleague.adobe.com/de/docs/experience-platform/web-sdk/install/npm): Installieren Sie das Web-SDK mithilfe des NPM-Paket-Managers auf Ihrer Website.
 
 Weitere Informationen finden Sie unter [Überblick über die Web-SDK-Installation ](https://experienceleague.adobe.com/de/docs/experience-platform/web-sdk/install/overview) im Web SDK-Handbuch in Experience Platform.

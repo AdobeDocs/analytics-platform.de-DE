@@ -12,7 +12,7 @@ ht-degree: 20%
 
 # Von Customer Journey Analytics verwendete Domains
 
-Einige Firewall-Konfigurationen blockieren Domains, die von Customer Journey Analytics für die Produktoberfläche benötigt werden. Mithilfe dieser Liste von Domains können Sie die Netzwerkeinstellungen Ihrer Organisation ändern, um den Produktzugriff innerhalb Ihrer Organisation zuzulassen. Adobe empfiehlt, diese Domains durch die Firewall Ihres Unternehmens laufen zu lassen, um ein optimales Erlebnis zu gewährleisten.
+Einige Firewall-Konfigurationen blockieren Domains, auf die Customer Journey Analytics für seine Produktoberfläche angewiesen ist. Mithilfe dieser Liste von Domains können Sie die Netzwerkeinstellungen Ihrer Organisation ändern, um den Produktzugriff innerhalb Ihrer Organisation zuzulassen. Adobe empfiehlt, diese Domains durch die Firewall Ihres Unternehmens zuzulassen, um ein optimales Erlebnis zu gewährleisten.
 
 | Technologie | Domain |
 | --- | --- |
@@ -28,10 +28,10 @@ Einige Firewall-Konfigurationen blockieren Domains, die von Customer Journey Ana
 
 ## Adobe Experience Cloud-Domains
 
-Zusätzlich zu den oben genannten Domains nutzt die Adobe Experience Cloud mehrere Domains für die Datenerfassung und den Export von Berichten. Siehe [Von der Adobe Experience Cloud verwendete Domains](https://experienceleague.adobe.com/de/docs/core-services/interface/data-collection/domains) für diese Liste.
+Zusätzlich zu den oben genannten Domains nutzt die Adobe Experience Cloud mehrere Domains für die Datenerfassung und den Export von Berichten. Siehe [Von der Adobe Experience Cloud verwendete Domains](https://experienceleague.adobe.com/en/docs/core-services/interface/data-collection/domains) für diese Liste.
 
 >[!MORELIKETHIS]
 >
 >[Von Customer Journey Analytics verwendete IP-Adressen](ip-addresses.md)
 >
->[Von der Adobe Experience Cloud verwendete Domains](https://experienceleague.adobe.com/de/docs/core-services/interface/data-collection/domains)
+>[Von der Adobe Experience Cloud verwendete Domains](https://experienceleague.adobe.com/en/docs/core-services/interface/data-collection/domains)

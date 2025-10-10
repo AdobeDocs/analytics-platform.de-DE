@@ -8,7 +8,7 @@ hide-from-toc: true
 source-git-commit: 39f9ef07088eb9595e5057d21008ecd2f5ea44fe
 workflow-type: tm+mt
 source-wordcount: '1954'
-ht-degree: 15%
+ht-degree: 16%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 15%
 
 Diese Tabelle listet alle Spectrum-Symbole auf, die über die Konfiguration von Spectrum-Symbolausschnitten verfügbar sind. Verwenden Sie den Namen, um das Snippet zu Ihrem Markdown hinzuzufügen, damit das Symbol Spektrum angezeigt wird.
 
-Achten Sie [Wiki-Seite] (ttps://wiki.corp.adobe.com/display/omtrplatform/Use+Spectrum+icons+in+documentation) auf Aktualisierungen.
+Achten Sie [Wiki-Seite](ttps://wiki.corp.adobe.com/display/omtrplatform/Use+Spectrum+icons+in+documentation) auf Aktualisierungen.
 
 ![](https://reportbuilder.an.adobe.com/assets/AdobeAnalyticsLogo-80.png)
 
@@ -131,7 +131,7 @@ Achten Sie [Wiki-Seite] (ttps://wiki.corp.adobe.com/display/omtrplatform/Use+Spe
 | Eckige Klammern | `![BracketsSquare](/help/assets/icons/BracketsSquare.svg)` | ![BracketsSquare](/help/assets/icons/BracketsSquare.svg) |
 | Verzweigung 1 | `![Branch1](/help/assets/icons/Branch1.svg)` | ![Verzweigung1](/help/assets/icons/Branch1.svg) |
 | Verzweigung2 | `![Branch2](/help/assets/icons/Branch2.svg)` | ![Zweig2](/help/assets/icons/Branch2.svg) |
-| Verzweigung3 | `![Branch3](/help/assets/icons/Branch3.svg)` | ![Zweig3](/help/assets/icons/Branch3.svg) |
+| Verzweigung3 | `![Branch3](/help/assets/icons/Branch3.svg)` | ![Branch3](/help/assets/icons/Branch3.svg) |
 | Verzweigungskreis | `![BranchCircle](/help/assets/icons/BranchCircle.svg)` | ![BranchCircle](/help/assets/icons/BranchCircle.svg) |
 | BreadcrumbNavigation | `![BreadcrumbNavigation](/help/assets/icons/BreadcrumbNavigation.svg)` | ![BreadcrumbNavigation](/help/assets/icons/BreadcrumbNavigation.svg) |
 | Aufschlüsselung | `![Breakdown](/help/assets/icons/Breakdown.svg)` | ![Aufschlüsselung](/help/assets/icons/Breakdown.svg) |
@@ -153,7 +153,7 @@ Achten Sie [Wiki-Seite] (ttps://wiki.corp.adobe.com/display/omtrplatform/Use+Spe
 | Kamera | `![Camera](/help/assets/icons/Camera.svg)` | ![Kamera](/help/assets/icons/Camera.svg) |
 | Kamerafip | `![CameraFlip](/help/assets/icons/CameraFlip.svg)` | ![CameraFlip](/help/assets/icons/CameraFlip.svg) |
 | Kamera aktualisieren | `![CameraRefresh](/help/assets/icons/CameraRefresh.svg)` | ![CameraRefresh](/help/assets/icons/CameraRefresh.svg) |
-| Kampagne | `![Campaign](/help/assets/icons/Campaign.svg)` | ![Campaign](/help/assets/icons/Campaign.svg) |
+| Kampagne | `![Campaign](/help/assets/icons/Campaign.svg)` | ![Kampagne](/help/assets/icons/Campaign.svg) |
 | CampaignAdd | `![CampaignAdd](/help/assets/icons/CampaignAdd.svg)` | ![CampaignAdd](/help/assets/icons/CampaignAdd.svg) |
 | Campaign schließen | `![CampaignClose](/help/assets/icons/CampaignClose.svg)` | ![CampaignClose](/help/assets/icons/CampaignClose.svg) |
 | Campaign löschen | `![CampaignDelete](/help/assets/icons/CampaignDelete.svg)` | ![CampaignDelete](/help/assets/icons/CampaignDelete.svg) |
@@ -274,7 +274,7 @@ Achten Sie [Wiki-Seite] (ttps://wiki.corp.adobe.com/display/omtrplatform/Use+Spe
 | DistributedTopEdge | `![DistributeTopEdge](/help/assets/icons/DistributeTopEdge.svg)` | ![DistributeTopEdge](/help/assets/icons/DistributeTopEdge.svg) |
 | VerteilenVertikalCenter | `![DistributeVerticalCenter](/help/assets/icons/DistributeVerticalCenter.svg)` | ![VerteilenVertikalCenter](/help/assets/icons/DistributeVerticalCenter.svg) |
 | Vertikal verteilen | `![DistributeVertically](/help/assets/icons/DistributeVertically.svg)` | ![VerteilenVertikal](/help/assets/icons/DistributeVertically.svg) |
-| Dividieren | `![Divide](/help/assets/icons/Divide.svg)` | ![Trennen](/help/assets/icons/Divide.svg) |
+| Dividieren | `![Divide](/help/assets/icons/Divide.svg)` | ![Divide](/help/assets/icons/Divide.svg) |
 | Pfad teilen | `![DividePath](/help/assets/icons/DividePath.svg)` | ![DividePath](/help/assets/icons/DividePath.svg) |
 | Dokument | `![Document](/help/assets/icons/Document.svg)` | ![Dokument](/help/assets/icons/Document.svg) |
 | DocumentFragment | `![DocumentFragment](/help/assets/icons/DocumentFragment.svg)` | ![DocumentFragment](/help/assets/icons/DocumentFragment.svg) |
@@ -282,7 +282,7 @@ Achten Sie [Wiki-Seite] (ttps://wiki.corp.adobe.com/display/omtrplatform/Use+Spe
 | Dokumentgliederung | `![DocumentOutline](/help/assets/icons/DocumentOutline.svg)` | ![DocumentOutline](/help/assets/icons/DocumentOutline.svg) |
 | Dokumentaktualisierung | `![DocumentRefresh](/help/assets/icons/DocumentRefresh.svg)` | ![DocumentRefresh](/help/assets/icons/DocumentRefresh.svg) |
 | Puppe | `![Dolly](/help/assets/icons/Dolly.svg)` | ![Dolly](/help/assets/icons/Dolly.svg) |
-| Download | `![Download](/help/assets/icons/Download.svg)` | ![Herunterladen](/help/assets/icons/Download.svg) |
+| Herunterladen | `![Download](/help/assets/icons/Download.svg)` | ![Herunterladen](/help/assets/icons/Download.svg) |
 | DownloadFromCloud | `![DownloadFromCloud](/help/assets/icons/DownloadFromCloud.svg)` | ![DownloadFromCloud](/help/assets/icons/DownloadFromCloud.svg) |
 | DownloadFromCloudOutline | `![DownloadFromCloudOutline](/help/assets/icons/DownloadFromCloudOutline.svg)` | ![DownloadFromCloudOutline](/help/assets/icons/DownloadFromCloudOutline.svg) |
 | Entwurf | `![Draft](/help/assets/icons/Draft.svg)` | ![Entwurf](/help/assets/icons/Draft.svg) |
@@ -657,7 +657,7 @@ Achten Sie [Wiki-Seite] (ttps://wiki.corp.adobe.com/display/omtrplatform/Use+Spe
 | Vorschau | `![Preview](/help/assets/icons/Preview.svg)` | ![Vorschau](/help/assets/icons/Preview.svg) |
 | Drucken | `![Print](/help/assets/icons/Print.svg)` | ![Drucken](/help/assets/icons/Print.svg) |
 | Seitenansicht | `![PrintPreview](/help/assets/icons/PrintPreview.svg)` | ![PrintPreview](/help/assets/icons/PrintPreview.svg) |
-| Datenschutz    | `![Privacy](/help/assets/icons/Privacy.svg)` | ![Datenschutz](/help/assets/icons/Privacy.svg) |
+| Datenschutz | `![Privacy](/help/assets/icons/Privacy.svg)` | ![Datenschutz](/help/assets/icons/Privacy.svg) |
 | Programmübersicht | `![ProgramOverview](/help/assets/icons/ProgramOverview.svg)` | ![ProgramOverview](/help/assets/icons/ProgramOverview.svg) |
 | Projekt   | `![Project](/help/assets/icons/Project.svg)` | ![Projekt](/help/assets/icons/Project.svg) |
 | ProjectAdd | `![ProjectAdd](/help/assets/icons/ProjectAdd.svg)` | ![ProjectAdd](/help/assets/icons/ProjectAdd.svg) |
@@ -735,7 +735,7 @@ Achten Sie [Wiki-Seite] (ttps://wiki.corp.adobe.com/display/omtrplatform/Use+Spe
 | SaveToLight | `![SaveToLight](/help/assets/icons/SaveToLight.svg)` | ![SaveToLight](/help/assets/icons/SaveToLight.svg) |
 | Schemata | `![Schemas](/help/assets/icons/Schemas.svg)` | ![Schemata](/help/assets/icons/Schemas.svg) |
 | Freihand | `![Scribble](/help/assets/icons/Scribble.svg)` | ![Freihand](/help/assets/icons/Scribble.svg) |
-| Durchsuchen | `![Search](/help/assets/icons/Search.svg)` | ![Durchsuchen](/help/assets/icons/Search.svg) |
+| Suche | `![Search](/help/assets/icons/Search.svg)` | ![Durchsuchen](/help/assets/icons/Search.svg) |
 | Sitz | `![Seat](/help/assets/icons/Seat.svg)` | ![Sitz](/help/assets/icons/Seat.svg) |
 | SeatAdd | `![SeatAdd](/help/assets/icons/SeatAdd.svg)` | ![SeatAdd](/help/assets/icons/SeatAdd.svg) |
 | Segment | `![Segment](/help/assets/icons/Segment.svg)` | ![Segment](/help/assets/icons/Segment.svg) |
@@ -894,7 +894,7 @@ Achten Sie [Wiki-Seite] (ttps://wiki.corp.adobe.com/display/omtrplatform/Use+Spe
 | ThumbDownOutline | `![ThumbDownOutline](/help/assets/icons/ThumbDownOutline.svg)` | ![ThumbDownOutline](/help/assets/icons/ThumbDownOutline.svg) |
 | Daumen hoch | `![ThumbUp](/help/assets/icons/ThumbUp.svg)` | ![ThumbUp](/help/assets/icons/ThumbUp.svg) |
 | ThumbUpOutline | `![ThumbUpOutline](/help/assets/icons/ThumbUpOutline.svg)` | ![ThumbUpOutline](/help/assets/icons/ThumbUpOutline.svg) |
-| Timeline | `![Timeline](/help/assets/icons/Timeline.svg)` | ![Timeline](/help/assets/icons/Timeline.svg) |
+| Zeitleiste | `![Timeline](/help/assets/icons/Timeline.svg)` | ![Timeline](/help/assets/icons/Timeline.svg) |
 | trainieren | `![Train](/help/assets/icons/Train.svg)` | ![Zug](/help/assets/icons/Train.svg) |
 | TransferToPlatform | `![TransferToPlatform](/help/assets/icons/TransferToPlatform.svg)` | ![TransferToPlatform](/help/assets/icons/TransferToPlatform.svg) |
 | Transparenz | `![Transparency](/help/assets/icons/Transparency.svg)` | ![Transparenz](/help/assets/icons/Transparency.svg) |
@@ -968,7 +968,7 @@ Achten Sie [Wiki-Seite] (ttps://wiki.corp.adobe.com/display/omtrplatform/Use+Spe
 | Beobachten | `![Watch](/help/assets/icons/Watch.svg)` | ![beobachten](/help/assets/icons/Watch.svg) |
 | WebPage | `![WebPage](/help/assets/icons/WebPage.svg)` | ![WebPage](/help/assets/icons/WebPage.svg) |
 | Web-Seiten | `![WebPages](/help/assets/icons/WebPages.svg)` | ![WebPages](/help/assets/icons/WebPages.svg) |
-| Workflow | `![Workflow](/help/assets/icons/Workflow.svg)` | ![Arbeitsablauf](/help/assets/icons/Workflow.svg) |
+| Workflow | `![Workflow](/help/assets/icons/Workflow.svg)` | ![Workflow](/help/assets/icons/Workflow.svg) |
 | Workflow hinzufügen | `![WorkflowAdd](/help/assets/icons/WorkflowAdd.svg)` | ![WorkflowAdd](/help/assets/icons/WorkflowAdd.svg) |
 | Schraubenschlüssel | `![Wrench](/help/assets/icons/Wrench.svg)` | ![Schraubenschlüssel](/help/assets/icons/Wrench.svg) |
 | Vergrößern | `![ZoomIn](/help/assets/icons/ZoomIn.svg)` | ![ZoomIn](/help/assets/icons/ZoomIn.svg) |

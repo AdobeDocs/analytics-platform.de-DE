@@ -1,18 +1,18 @@
 ---
 description: Erfahren Sie, wie Sie Ihre Projekte in Ordnern in Analysis Workspace organisieren.
 keywords: Analysis Workspace
-title: Übersicht über Ordner
+title: Ordner – Überblick
 feature: Workspace Basics
 exl-id: e12e271e-ce15-4535-bb48-1976395cf755
 role: User
 source-git-commit: a646d1f35308dc1f1d9f06cf94835534bd8b8da6
 workflow-type: tm+mt
 source-wordcount: '419'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
-# Übersicht über Ordner
+# Ordner – Überblick
 
 Die Ordner in Workspace unterstützen Sie dabei, Projekte zu organisieren und zu kategorisieren. Mit der Ordnerfunktionalität können Sie Ordner und Unterordner erstellen, um Ihre Projekte zu verwalten.
 

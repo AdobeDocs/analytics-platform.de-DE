@@ -3,7 +3,7 @@ title: Einstellungen für Produktnutzungsdaten
 description: Sie können die Einstellungen zur Produktnutzung aktivieren, deaktivieren oder konfigurieren.
 exl-id: 85e2b515-78e6-41e8-9947-369b1e65e4fd
 source-git-commit: e7534a1943307f5bbc92a845ddffe0651794b854
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '356'
 ht-degree: 100%
 

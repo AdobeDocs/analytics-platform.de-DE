@@ -20,7 +20,7 @@ In dieser Kurzanleitung wird erläutert, wie Sie die von Adobe Analytics erfasst
 >
 >Sie besitzen eine Lizenz für Adobe Analytics auf einer oder mehreren Ihrer Websites und Adobe Analytics ist dort mithilfe einer der dokumentierten Methoden bereitgestellt:
 >
->- [Implementierung von Analytics mithilfe Experience Platform Edge](https://experienceleague.adobe.com/docs/analytics/implementation/aep-edge/overview.html?lang=de)
+>- [Implementierung von Analytics mithilfe Experience Platform Edge](https://experienceleague.adobe.com/docs/analytics/implementation/aep-edge/overview.html)
 >
 >- [Implementierung von Analytics mithilfe der Adobe Analytics-Erweiterung](https://experienceleague.adobe.com/docs/analytics/implementation/launch/overview.html?lang=de)
 >
@@ -83,7 +83,7 @@ Nachdem die Verbindung erstellt wurde, wird der Datenfluss automatisch erstellt,
 
 Wenn die erste Aufnahme abgeschlossen ist, können Ihre Adobe Analytics-Report-Suite-Daten von Customer Journey Analytics verwendet werden.
 
-Ein umfassendes Tutorial finden Sie unter [Erstellen eines Adobe Analytics-Quell-Connectors in der Benutzeroberfläche](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=de).
+Ein umfassendes Tutorial finden Sie unter [Erstellen eines Adobe Analytics-Quell-Connectors in der Benutzeroberfläche](https://experienceleague.adobe.com/de/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics).
 
 
 ## Einrichten einer Verbindung

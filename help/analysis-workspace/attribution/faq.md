@@ -15,7 +15,7 @@ ht-degree: 2%
 
 Im Folgenden finden Sie Antworten auf häufig gestellte Fragen zur Attribution.
 
-+++## Was ist der Zeileneintrag *Keine* bei Verwendung von Attribution?
++++## Was ist der *Keine* Zeileneintrag bei Verwendung von Attribution?
 
 Der *Keine*-Zeileneintrag ist ein Sammelbegriff für alle Konversionen, die ohne Touchpoints im Lookback-Fenster durchgeführt wurden. Um die Anzahl der Konversionen zu reduzieren, die dem Zeileneintrag *Keine* zugeordnet sind, versuchen Sie es mit einem längeren Lookback-Fenster.
 

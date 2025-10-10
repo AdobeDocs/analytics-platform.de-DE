@@ -85,7 +85,7 @@ Gehen Sie folgendermaßen vor, um das Schema einzurichten:
 
       Feldergruppen sind wiederverwendbare Sammlungen von Objekten und Attributen, mit denen Sie Ihr Schema einfach erweitern können.
 
-   1. Wählen [!UICONTROL &#x200B; Dialogfeld Feldergruppen hinzufügen &#x200B;] die Feldergruppe **[!UICONTROL Blindlicht]** aus der Liste aus. Diese Feldergruppe wird erstellt, um den Benutzerfortschritt beim Spielen eines fiktiven Spiels mit dem Titel Blinding Light auf einer Konsole zu verfolgen.
+   1. Wählen [!UICONTROL  Dialogfeld Feldergruppen hinzufügen ] die Feldergruppe **[!UICONTROL Blindlicht]** aus der Liste aus. Diese Feldergruppe wird erstellt, um den Benutzerfortschritt beim Spielen eines fiktiven Spiels mit dem Titel Blinding Light auf einer Konsole zu verfolgen.
 
       ![Blindlicht-Feldgruppe](assets/schema-fieldgroup-blindinglight.png)
 
@@ -272,7 +272,7 @@ curl -X POST "https://server.adobedc.net/ee/v2/interact?dataStreamId={DATASTREAM
 
 In der Beispiel-POST-Anfrage verweist `{DATASTREAM_ID}` auf die Kennung des zuvor konfigurierten Beispiel-Datenstroms. `{sandbox}` ist der eindeutige Name Ihrer Sandbox, der den Pfad zur benutzerdefinierten Feldergruppe Blindlicht identifiziert.
 
-Weitere Informationen zur Verwendung [ Edge Network](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/data-collection/interactive-data-collection.html?lang=de)Server-API finden [ unter „Interaktive Datenerfassung](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/data-collection/non-interactive-data-collection.html?lang=de) und „Nicht interaktive“.
+Weitere Informationen zur Verwendung [ Edge Network](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/data-collection/interactive-data-collection.html?lang=de)Server-API finden [ unter „Interaktive Datenerfassung](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/data-collection/non-interactive-data-collection.html) und „Nicht interaktive“.
 
 ## Einrichten einer Verbindung
 

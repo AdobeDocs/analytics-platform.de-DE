@@ -1,13 +1,13 @@
 ---
 description: Verwenden Sie den Kalender und die Datenbereiche, um Datumsbereiche in Analysis Workspace anzugeben.
-title: Übersicht über Datumsbereiche
+title: Datumsbereiche – Überblick
 feature: Calendar
 exl-id: 99b31bd9-32f1-4da1-9e47-6d90c66282c5
 role: User
 source-git-commit: 1891f73f4326a178b293e7c3763d0d1dbc000a25
 workflow-type: tm+mt
 source-wordcount: '532'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ Mit Datumsbereichskomponenten können Sie die Kalendereinstellungen für das Pan
 
 +++ View a video illustrating use of calendar and date ranges
 
->[!VIDEO](https://video.tv.adobe.com/v/327347?format=jpeg&captions=ger)
+>[!VIDEO](https://video.tv.adobe.com/v/24136?format=jpeg)
 
 {{videoaa}}
 +++
@@ -47,8 +47,8 @@ Sie können auch einen Datumsbereich in einer Freiformtabelle als Metrik oder Di
 Sie verwenden einen Datumsbereich so wie Sie [eine beliebige Komponente verwenden würden](/help/components/overview.md#analysis-workspace-components). Sie ziehen den Datumsbereich aus dem Komponenten-Panel ![Kalender](/help/assets/icons/Calendar.svg) **[!UICONTROL Datumsbereiche]** und legen Sie die Komponente hier ab:
 
 - **[!UICONTROL Kalender]**: Sie ![Wechseln](/help/assets/icons/Switch.svg) **[!UICONTROL Ersetzen]** die aktuelle Kalenderkonfiguration durch den Datumsbereich.
-- **Spaltenkopf Metrik**: Sie ![Switch](/help/assets/icons/Switch.svg) **[!UICONTROL ersetzen]** die Metrik, ![Add](/help/assets/icons/Add.svg)**[!UICONTROL fügen &#x200B;]**&#x200B;den Datumsbereich als Metrik hinzu oder ![Filter](/help/assets/icons/Filter.svg)**[!UICONTROL &#x200B; filtern &#x200B;]**&#x200B;die Metrik mit der Komponente Datumsbereich.
-- **Spaltenkopf Dimension**: Sie ![Wechseln](/help/assets/icons/Switch.svg) **[!UICONTROL ersetzen]** die aktuellen Dimensionen. Die neue Dimension lautet jetzt **[!UICONTROL Datumsbereiche]**. Sobald die Dimension Datumsbereiche lautet, können Sie zusätzliche Datumsbereiche als Dimensionselemente ![Hinzufügen](/help/assets/icons/Add.svg)**[!UICONTROL hinzufügen &#x200B;]**.
+- **Spaltenkopf Metrik**: Sie ![Switch](/help/assets/icons/Switch.svg) **[!UICONTROL ersetzen]** die Metrik, ![Add](/help/assets/icons/Add.svg)**[!UICONTROL fügen ]**den Datumsbereich als Metrik hinzu oder ![Filter](/help/assets/icons/Filter.svg)**[!UICONTROL  filtern ]**die Metrik mit der Komponente Datumsbereich.
+- **Spaltenkopf Dimension**: Sie ![Wechseln](/help/assets/icons/Switch.svg) **[!UICONTROL ersetzen]** die aktuellen Dimensionen. Die neue Dimension lautet jetzt **[!UICONTROL Datumsbereiche]**. Sobald die Dimension Datumsbereiche lautet, können Sie zusätzliche Datumsbereiche als Dimensionselemente ![Hinzufügen](/help/assets/icons/Add.svg)**[!UICONTROL hinzufügen ]**.
 - **Dimensionselement**: Sie ![Aufschlüsselung](/help/assets/icons/Breakdown.svg) **[!UICONTROL schlüsseln]** das spezifische Dimensionselement nach Datumsbereich auf.
 
 Sie können eine Spalte für Datumsbereich auch direkt in einer Visualisierung „Freiformtabelle“ hinzufügen:

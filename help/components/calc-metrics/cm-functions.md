@@ -1,13 +1,13 @@
 ---
-title: Einfache Funktionen
-description: Erfahren Sie mehr über die grundlegenden Funktionen für berechnete Metriken.
+title: Grundlegende Funktionen
+description: Erfahren Sie mehr über die grundlegenden Funktionen berechneter Metriken.
 feature: Calculated Metrics
 exl-id: 63775753-337b-4dec-a3a2-a3a0ee9aac2e
 role: User
 source-git-commit: c209341400bf4e0c00719075f0fc82f81ca9dbb4
 workflow-type: tm+mt
 source-wordcount: '1868'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -137,7 +137,7 @@ Addiert alle numerischen Werte für eine Metrik innerhalb einer Spalte (über di
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL COUNT(metric)]**
 
-[!BADGE Tabelle]{type="Neutral"} Gibt die Anzahl der Werte für eine Metrik innerhalb einer Spalte zurück, die ungleich null sind (die Anzahl der innerhalb einer Dimension gemeldeten eindeutigen Elemente).
+[!BADGE Tabelle]{type="Neutral"} Gibt die Anzahl der Werte für eine Metrik innerhalb einer Spalte zurück, die ungleich null sind (die Anzahl erfasster eindeutiger Elemente innerhalb einer Dimension).
 
 | Argument | Beschreibung |
 |---|---|
@@ -157,7 +157,7 @@ Addiert alle numerischen Werte für eine Metrik innerhalb einer Spalte (über di
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL EXPONENT(metric)]**
 
-[!BADGE Row]{type="Neutral"} Gibt e hoch einer gegebenen Zahl zurück. Die Konstante e entspricht 2,71828182845904, der Basis des natürlichen Logarithmus. EXPONENT ist die Umkehrung von LN, dem natürlichen Logarithmus einer Zahl.
+[!BADGE Zeile]{type="Neutral"} Gibt e potenziert mit einer angegebenen Zahl zurück. Die Konstante e entspricht 2,71828182845904, der Basis des natürlichen Logarithmus. EXPONENT ist die Umkehrung von LN, dem natürlichen Logarithmus einer Zahl.
 
 | Argument | Beschreibung |
 |---|---|
@@ -178,7 +178,7 @@ Addiert alle numerischen Werte für eine Metrik innerhalb einer Spalte (über di
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL MEAN(metric, include_zeros)]**
 
-[!BADGE Tabelle]{type="Neutral"} Gibt das arithmetische Mittel (bzw. den Durchschnitt) einer Metrik in einer Spalte zurück.
+[!BADGE Tabelle]{type="Neutral"} Gibt das arithmetische Mittel (oder den Durchschnitt) für eine Metrik in einer Spalte zurück.
 
 | Argument | Beschreibung |
 |---|---|
@@ -200,7 +200,7 @@ Addiert alle numerischen Werte für eine Metrik innerhalb einer Spalte (über di
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL MEDIAN(metric, include_zeros)]**
 
-[!BADGE Tabelle]{type="Neutral"} Gibt den Median für eine Metrik in einer Spalte zurück. Der Median ist die Zahl in der Mitte einer Zahlenreihe. Das heißt, die Hälfte der Zahlen weist Werte auf, die größer oder gleich dem Median sind, und die Hälfte ist kleiner oder gleich dem Median.
+[!BADGE Tabelle]{type="Neutral"} Gibt den Medianwert für eine Metrik in einer Spalte zurück. Der Median ist die Zahl in der Mitte einer Zahlenreihe. Das heißt, die Hälfte der Zahlen weist Werte auf, die größer oder gleich dem Median sind, und die Hälfte ist kleiner oder gleich dem Median.
 
 | Argument | Beschreibung |
 |---|---|
@@ -455,7 +455,7 @@ Die Summe der Spalten in jeder Zeile.
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL STANDARD DEVIATION(metric, include_zeros)]**
 
-[!BADGE Tabelle]{type="Neutral"} Gibt die Standardabweichung oder Quadratwurzel der Varianz basierend auf einer Stichprobenpopulation von Daten zurück.
+[!BADGE Tabelle]{type="Neutral"} Gibt die Standardabweichung (d. h. die Quadratwurzel der Varianz) basierend auf einer Stichprobenpopulation von Daten zurück.
 
 | Argument | Beschreibung |
 |---|---|
@@ -476,7 +476,7 @@ Die Summe der Spalten in jeder Zeile.
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL VARIANCE(metric, include_zeros)]**
 
-[!BADGE Tabelle]{type="Neutral"} Gibt die Varianz basierend auf einer Stichprobenpopulation von Daten zurück.
+[!BADGE Tabelle]{type="Neutral"} Gibt die Schwankung basierend auf einer Beispieldatenpopulation zurück.
 
 | Argument | Beschreibung |
 |---|---|

@@ -13,7 +13,7 @@ ht-degree: 49%
 
 ---
 
-# Datumsbereich auswählen
+# Auswählen eines Datumsbereichs
 
 So ändern Sie den Datumsbereich eines vorhandenen Datenblocks:
 

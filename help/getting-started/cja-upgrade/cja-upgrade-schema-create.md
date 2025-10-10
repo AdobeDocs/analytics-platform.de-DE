@@ -6,7 +6,7 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: 902e5890-f970-4f1a-b091-9c3e51a987db
 source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1252'
 ht-degree: 100%
 
@@ -27,7 +27,7 @@ ht-degree: 100%
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-schema-create-default-aa"
->title="Schema mithilfe der Adobe Analytics-Feldergruppe erstellen"
+>title="Schema mithilfe der ExperienceEvent-Feldergruppe in Adobe Analytics erstellen"
 >abstract="Verwenden Sie die Feldgruppe „Adobe Analytics ExperienceEvent“, um in Adobe Experience Platform ein Schema zu erstellen, das alle von Adobe Analytics verwendeten Felder enthält.<br><br>Das Erstellen eines Schemas basierend auf der Adobe Analytics ExperienceEvent-Feldgruppe ist einfach und dauert nur einige Minuten."
 
 <!-- markdownlint-enable MD034 -->

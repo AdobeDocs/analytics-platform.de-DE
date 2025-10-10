@@ -21,13 +21,13 @@ Wenn Sie sich überlegen, wie Sie wichtige Accounts durch neue Akquise-, Bindung
 
 ## Verkaufsstadium Fortschritt
 
-Sie möchten Ad-hoc-Lead-Konversionsberichte generieren und verteilen und verstehen, wie Konten über den Verkaufstrichter fortschreiten.
+Sie möchten Ad-hoc-Lead-Konversionsberichte generieren und verteilen und verstehen, wie Konten über die Sales funnel voranschreiten.
 
 Mit der [Fallout](/help/analysis-workspace/visualizations/fallout/fallout-flow.md)-Visualisierung können Sie Konversions- und Abfallraten zwischen vordefinierten Schritten in einem sequenziellen Journey visualisieren.
 
 ### Beispiel
 
-Sie möchten den Fallout für Konten oben im Verkaufstrichter sehen (von Lead zu Opportunity).
+Sie möchten den Fallout der Top-Vertriebs-funnel (von Lead zu Opportunity) für -Konten sehen.
 
 1. [Erstellen und Konfigurieren einer Fallout](/help/analysis-workspace/visualizations/fallout/configuring-fallout.md)-Visualisierung.
 1. Wählen Sie ![Einstellung](/help/assets/icons/Setting.svg) aus, **[!UICONTROL Konto]** als **[!UICONTROL Fallout-Container]**.

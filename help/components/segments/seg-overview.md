@@ -1,5 +1,5 @@
 ---
-title: Übersicht über die Segmentierung
+title: Segmentierung – Überblick
 description: Erfahren Sie, wofür Segmente verwendet werden und wie Sie ein einfaches Segment erstellen.
 exl-id: 21183e98-6593-4b22-99c7-4a03231acfe9
 feature: Filters, Segments
@@ -7,7 +7,7 @@ role: User
 source-git-commit: c209341400bf4e0c00719075f0fc82f81ca9dbb4
 workflow-type: tm+mt
 source-wordcount: '1474'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -107,7 +107,7 @@ Segmente basieren auf einer Hierarchie auf Personen-, Sitzungs- und Ereigniseben
 > - Der Container **Ereignis** wird in Adobe Analytics als Container vom Typ **Treffer** bezeichnet.
 >
 
-Ein Segment legt Bedingungen fest, um Personen, Sitzungen oder Ereignisse basierend auf Bedingungen zu segmentieren. Bedingungen zum Segmentieren von Personen basieren beispielsweise auf Personenmerkmalen und Navigationseigenschaften. Um die Daten weiter aufzuschlüsseln, können Sie bestimmte Sitzungen, Seitenansichtsereignisse, Tipp-Gesten auf Bildschirmen, Menüoptionen in einer Set-top-Box usw. segmentieren. Sie können auch nach Attributen segmentieren, die Sie aus einem CRM- oder Treuesystem aufgenommen haben. Der [Segment Builder](/help/components/segments/seg-builder.md) bietet eine einfache Benutzeroberfläche zum Erstellen dieser Untergruppen und zum Anwenden von Bedingungen in verschachtelten hierarchische Personen-, Sitzungs- oder Ereignis-Containern.
+Ein Segment legt Bedingungen fest, um Personen, Sitzungen oder Ereignisse basierend auf Bedingungen zu segmentieren. Bedingungen zum Segmentieren von Personen basieren beispielsweise auf Personenmerkmalen und Navigationseigenschaften. Um die Daten weiter aufzuschlüsseln, können Sie bestimmte Sitzungen, Seitenansichtsereignisse, Tipp-Gesten auf Bildschirmen, Menüoptionen in einer Set-top-Box usw. segmentieren. Sie können auch nach Attributen segmentieren, die Sie aus einem CRM- oder Treuesystem aufgenommen haben. Der [Segment Builder](/help/components/segments/seg-builder.md) bietet eine einfache Benutzeroberfläche zum Erstellen dieser Teilmengen und zum Anwenden von Bedingungen in verschachtelten hierarchische Personen-, Sitzungs- oder Ereignis-Containern.
 
 Die im [Segment Builder](/help/components/segments/seg-builder.md) verwendete Container-Architektur definiert „Person“ als den äußersten Container. Dieser Container enthält übergreifende Daten, die für die Person über Sitzungen und Ereignisse wie Seitenansichten, Bildschirme für Apps oder Menübildschirme in einer Set-top-Box hinweg spezifisch sind. Mit dem verschachtelten Container „Sitzung“ können Sie Regeln festlegen, um die Personendaten auf der Grundlage von Sitzungen aufzuschlüsseln. Mit dem verschachtelten Container „Ereignis“ können Sie Informationen zu Personen auf Grundlage einzelner Interaktionen aufschlüsseln. Jeder Container ermöglicht Berichte über den Verlauf einer Person, nach Sitzung aufgeschlüsselte Interaktionen oder aufgeschlüsselte einzelne Ereignisse.
 
@@ -207,7 +207,7 @@ Traditional Analytics comes with numerous out-of-the-box templates and calculate
 >[!MORELIKETHIS]
 >
 >[Erstellen von Segmenten](seg-create.md)
->&#x200B;>[Segment Builder](seg-builder.md)
->&#x200B;>[Schnellsegmente](seg-quick.md)
->&#x200B;>[Sequenzielle Segmente](seg-sequential-build.md)
->&#x200B;>[Verwalten von Segmenten](seg-manage.md)
+>>[Segment Builder](seg-builder.md)
+>>[Schnellsegmente](seg-quick.md)
+>>[Sequenzielle Segmente](seg-sequential-build.md)
+>>[Verwalten von Segmenten](seg-manage.md)

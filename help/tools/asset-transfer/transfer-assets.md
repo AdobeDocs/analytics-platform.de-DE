@@ -5,9 +5,9 @@ role: Admin
 solution: Customer Journey Analytics
 exl-id: c5ed81ea-1d55-4193-9bb1-a2a93ebde91f
 source-git-commit: 3e521cb4ef532d57b9f408fc12dcf138f130f059
-workflow-type: ht
-source-wordcount: '831'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '830'
+ht-degree: 98%
 
 ---
 
@@ -31,7 +31,7 @@ Zur Asset-Übertragung ist eine Admin-Berechtigung für Customer Journey Analyti
 
    >[!IMPORTANT]
    >
-   >Zwischen Benutzenden ist ausschließlich eine 1:1-Übertragung möglich. 1:n- oder n:1-Übertragungen werden nicht unterstützt.
+   >Sie können nur eine 1:1-Übertragung von einem Benutzer zu einem anderen Benutzer durchführen. 1:n- oder n:1-Übertragungen werden nicht unterstützt.
 
 
 1. Nachdem Sie eine Benutzerin oder einen Benutzer ausgewählt haben, wird unten auf dem Bildschirm die Option „Assets transferieren“ angezeigt.

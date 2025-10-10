@@ -6,7 +6,7 @@ exl-id: 4edfb5d7-da20-4bd8-8041-387b291daf96
 role: User
 source-git-commit: a646d1f35308dc1f1d9f06cf94835534bd8b8da6
 workflow-type: tm+mt
-source-wordcount: '868'
+source-wordcount: '867'
 ht-degree: 6%
 
 ---
@@ -90,7 +90,7 @@ Erstellen einer berechneten Metrik für ein einzelnes Projekt:
 
    * [!UICONTROL **Spalte min**]: Erstellt eine neue Spalte, die den kleinsten Wert im Satz der Dimensionselemente für die Spalte anzeigt. Dabei wird die Funktion [Spalten-Minimum](/help/components/calc-metrics/cm-functions.md#column-minimum) verwendet.
 
-   * [!UICONTROL **Spaltensumme**]: Erstellt eine neue Spalte, die alle numerischen Werte für eine Metrik innerhalb einer Spalte (über die Elemente einer Dimension hinweg) hinzufügt. Dabei wird die Funktion [Spaltensumme](/help/components/calc-metrics/cm-functions.md#column-sum) verwendet.
+   * [!UICONTROL **Spaltensumme**]:Creates Eine neue Spalte, die alle numerischen Werte für eine Metrik innerhalb einer Spalte (über die Elemente einer Dimension hinweg) hinzufügt. Dabei wird die Funktion [Spaltensumme](/help/components/calc-metrics/cm-functions.md#column-sum) verwendet.
 
    Wenn zwei Spalten ausgewählt sind, sind die folgenden Optionen verfügbar:
 

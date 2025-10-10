@@ -15,11 +15,11 @@ ht-degree: 37%
 
 >[!TIP]
 >
->Verwenden Sie die [**[!UICONTROL Usage &#x200B;]**-](/help/connections/manage-connections.md#usage), um **&#x200B; Nutzung &#x200B;** aufgenommenen und berichtbaren Zeilen über alle Verbindungen in Customer Journey Analytics hinweg anzuzeigen.
+>Verwenden Sie die [**[!UICONTROL Usage ]**-](/help/connections/manage-connections.md#usage), um** Nutzung **aufgenommenen und berichtbaren Zeilen über alle Verbindungen in Customer Journey Analytics hinweg anzuzeigen.
 
 
 
-Sie können die Verwendung von Customer Journey Analytics in der Benutzeroberfläche [**[!UICONTROL Verbindungen &#x200B;]**](/help/connections/create-connection.md). In dieser Benutzeroberfläche können Sie auf Verbindungsebene die Datenaufbewahrung in Customer Journey Analytics als rollierendes Fenster in Monaten (1 Monat, 3 Monate, 6 Monate usw.) definieren.
+Sie können die Verwendung von Customer Journey Analytics in der Benutzeroberfläche [**[!UICONTROL Verbindungen ]**](/help/connections/create-connection.md). In dieser Benutzeroberfläche können Sie auf Verbindungsebene die Datenaufbewahrung in Customer Journey Analytics als rollierendes Fenster in Monaten (1 Monat, 3 Monate, 6 Monate usw.) definieren.
 
 Der Hauptvorteil besteht darin, dass Sie nur Daten speichern oder Berichte dazu erstellen, die anwendbar und nützlich sind, und ältere Daten löschen, die nicht mehr nützlich sind. Dies hilft Ihnen, Ihre vertraglichen Beschränkungen einzuhalten und das Risiko bezüglich Kostendeckung zu reduzieren.
 

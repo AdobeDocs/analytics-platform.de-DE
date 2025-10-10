@@ -1,37 +1,37 @@
 ---
-title: Übersicht der Inhaltsanalyse
-description: Ein Überblick über die Inhaltsanalyse
+title: Überblick über Content Analytics
+description: Ein Überblick über Content Analytics
 solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin, User
 exl-id: 0d3be50d-c635-459b-8b01-61d6d4ef0cdf
 source-git-commit: e8cba64e706a456861fd8392ce9260b7a1c4636b
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '836'
 ht-degree: 100%
 
 ---
 
-# Übersicht der Inhaltsanalyse
+# Überblick über Content Analytics
 
-Mit der Inhaltsanalyse können Marketing-Fachleute nachvollziehen, wie sich Inhalte auf die von einem Unternehmen definierten wichtigsten Leistungsindikatoren auswirken. Zusätzlich zu den Verhaltensdaten erfasst Content Analytics Daten darüber, wie Inhalte konsumiert werden und wie Inhalte die Auswirkungen steuern. Reagieren Kundinnen und Kunden beispielsweise besser auf einen bestimmten Tonfall, eine bestimmte Farbpalette oder bestimmte Themen? Diese Informationen sowie speziell entwickelte Reporting-Workflows und Vorlagen können Ihnen dabei helfen, noch bessere Analysen durchzuführen und tiefere Einblicke in Customer Journey-Daten in Customer Journey Analytics zu erhalten.
+Mit Content Analytics können Marketing-Fachleute nachvollziehen, wie sich Inhalte auf die von einem Unternehmen definierten wichtigsten Leistungsindikatoren auswirken. Zusätzlich zu den Verhaltensdaten erfasst Content Analytics Daten darüber, wie Inhalte konsumiert werden und wie Inhalte die Auswirkungen steuern. Reagieren Kundinnen und Kunden beispielsweise besser auf einen bestimmten Tonfall, eine bestimmte Farbpalette oder bestimmte Themen? Diese Informationen sowie speziell entwickelte Reporting-Workflows und Vorlagen können Ihnen dabei helfen, noch bessere Analysen durchzuführen und tiefere Einblicke in Customer Journey-Daten in Customer Journey Analytics zu erhalten.
 
-Die Inhaltsanalyse verwendet eine auf KI und maschinellem Lernen basierende **Featurisierungs-Services**, um Inhalte in Komponenten und Attribute aufzuschlüsseln. Durch die Erstellung eines strukturierten Metadatenprofils für alle Ihre Inhalte können Sie analysieren, welche Inhalte und welche Attribute dieser Inhalte zu Geschäftsergebnissen führen.
+Content Analytics verwendet eine auf KI und maschinellem Lernen basierende **Featurisierungs-Services**, um Inhalte in Komponenten und Attribute aufzuschlüsseln. Durch die Erstellung eines strukturierten Metadatenprofils für alle Ihre Inhalte können Sie analysieren, welche Inhalte und welche Attribute dieser Inhalte zu Geschäftsergebnissen führen.
 
-Zusätzlich zur Erstellung dieses strukturierten Metadatenprofils bietet die Inhaltsanalyse einen **Identity Service** der Assets und Erlebnisse mithilfe einer einzigen Kennung identifiziert. Der Identity Service kann erkennen, wenn dasselbe Asset an mehr als einer Stelle angezeigt wird. In diesem Fall werden die Instanzen dieses Assets als das gleiche Asset behandelt, was eine ganzheitlichere Ansicht der Nutzung und des Konsums der Inhalte ermöglicht.
+Zusätzlich zur Erstellung dieses strukturierten Metadatenprofils bietet Content Analytics einen **Identity Service** der Assets und Erlebnisse mithilfe einer einzigen Kennung identifiziert. Der Identity Service kann erkennen, wenn dasselbe Asset an mehr als einer Stelle angezeigt wird. In diesem Fall werden die Instanzen dieses Assets als das gleiche Asset behandelt, was eine ganzheitlichere Ansicht der Nutzung und des Konsums der Inhalte ermöglicht.
 
 ## Wert
 
-Die Inhaltsanalyse bietet zunehmend Mehrwert:
+Content Analytics bietet zunehmend Mehrwert:
 
-1. **Inhaltsnutzung**: Mit der Inhaltsanalyse erhalten Sie Einblicke darüber, welche Assets Impressionen erhalten und wo Assets Impressionen erhalten. Diese Einblicke helfen Ihnen, zu erkennen, ob Assets in Ihren Web-Eigenschaften zu wenig oder zu häufig verwendet werden.
-1. **Interaktionen mit Inhalten**: Die Inhaltsanalyse kann Einblicke in Interaktionen bieten, z. B. die durchschnittliche Clickthrough-Rate für Assets mit bestimmten Attributen. Diese Einblicke helfen Ihnen, festzustellen, ob bestimmte Arten von Erlebnissen weiterhin effektiv sind.
+1. **Inhaltsnutzung**: Mit Content Analytics erhalten Sie Erkenntnisse dazu, welche Assets Impressions erhalten und wo Assets Impressions erhalten. Diese Einblicke helfen Ihnen, zu erkennen, ob Assets in Ihren Web-Eigenschaften zu wenig oder zu häufig verwendet werden.
+1. **Interaktionen mit Inhalten**: Content Analytics kann Erkenntnisse zu Interaktionen bieten, z. B. die durchschnittliche Clickthrough-Rate für Assets mit bestimmten Attributen. Diese Einblicke helfen Ihnen, festzustellen, ob bestimmte Arten von Erlebnissen weiterhin effektiv sind.
 1. **Inhalts-Journeys**: Darüber hinaus können Sie in Kombination mit allen anderen in Experience Platform verfügbaren Daten zusätzliche Einblicke in Ihre Inhalts-Journeys erhalten. Zum Beispiel, ob bestimmte Inhalte zusätzlich zur Interaktion zu Konversionen führen. Und mit diesem Wissen können Sie den ROI für verschiedene Inhaltstypen bestimmen.
-1. **Inhaltspersonalisierung**: Mit der Inhaltsanalyse können Sie letztendlich anhand Ihrer Einblicke handeln und diese Einblicke verwenden, um zu bestimmen, wie Sie Geld für Inhalte ausgeben. Sollte ich beispielsweise bestimmte Inhaltstypen an bestimmte Zielgruppen senden? Welche Inhalte bieten mir Möglichkeiten zur gezielten Personalisierung?
+1. **Inhaltspersonalisierung**: Mit der Content Analytics können Sie letztendlich anhand Ihrer Erkenntnisse handeln und diese Erkenntnisse verwenden, um zu bestimmen, wie Sie Geld für Inhalte ausgeben. Sollte ich beispielsweise bestimmte Inhaltstypen an bestimmte Zielgruppen senden? Welche Inhalte bieten mir Möglichkeiten zur gezielten Personalisierung?
 
 ## Terminologie
 
-Die Inhaltsanalyse verwendet die folgenden Schlüsselbegriffe:
+Content Analytics verwendet die folgenden Schlüsselbegriffe:
 
 ![Assets und Erlebnisse](/help/content-analytics/assets/content-analytics-experience-asset.png)
 
@@ -43,7 +43,7 @@ Die Inhaltsanalyse verwendet die folgenden Schlüsselbegriffe:
 
 Content Analytics verwendet Web-Bildansichtsdaten in Ereignisdatensätzen in Experience Platform, um [Inhaltsereignisdaten zu erfassen](config/datacollection.md). Außerdem wird diese Inhaltsdatenerfassung mit der (vorhandenen) Datenerfassungsimplementierung von Verhaltensdaten kombiniert.
 
-![Inhaltsanalyse – Funktionsweise](assets/aca-overview.gif)
+![Content Analytics – Funktionsweise](assets/aca-overview.gif)
 
 1. Wenn eine Benutzerin oder ein Benutzer eine [für Content Analytics konfigurierte](config/configuration.md) Site besucht, zeichnet das Experience Platform Web SDK Impressions und Interaktionen mit Inhalten auf.
 1. Identity Service und Featurisierungs-Service verarbeiten diese Interaktionen. Dieser Prozess umfasst einen Abrufdienst, der die öffentlich zugänglichen Versionen der konfigurierten URLs, die die Interaktionen definieren, erneut aufruft. Bei allen abgerufenen URLs bewirkt der Identity Service eine eindeutige Identifizierung der Erlebnisse und Assets. Der Featurization Service wendet KI/ML-Services an, um Erlebnisse sowie Metadaten und Attribute von Assets zu ermitteln.
@@ -60,14 +60,14 @@ Content Analytics verwendet Web-Bildansichtsdaten in Ereignisdatensätzen in Exp
 
 >[!NOTE]
 >
->Wenn Sie das Privacy und Security Shield-Add-on lizenziert haben, beachten Sie, dass aus Erlebnissen und Assets generierte Daten, die der Inhaltsanalyse unterliegen, nicht von DULE-Labels oder von kundenseitig verwalteten Schlüsseln abgedeckt werden. Außerdem ist die Inhaltsanalyse kein HIPAA-fähiger Dienst.
+>Wenn Sie das Privacy und Security Shield-Add-on lizenziert haben, beachten Sie, dass aus Erlebnissen und Assets generierte Daten, die Content Analytics unterliegen, nicht von DULE-Labels oder von kundenseitig verwalteten Schlüsseln abgedeckt werden. Außerdem ist Content Analytics kein HIPAA-fähiger Dienst.
 >
 
 
 >[!MORELIKETHIS]
 >
->[Reporting für die Inhaltsanalyse](report/report.md)
->>[Konfigurieren der Inhaltsanalyse](config/configuration.md)
->>[Berechnen von Bounces und Bounce-Raten in Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/calculating-bounces-amp-bounce-rate-in-adobe-customer-journey/ba-p/706446?profile.language=de&lang=de#M454)
+>[Reporting für Content Analytics](report/report.md)
+>>[Konfigurieren von Content Analytics](config/configuration.md)
+>>[Berechnen von Bounces und Bounce-Raten in Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/calculating-bounces-amp-bounce-rate-in-adobe-customer-journey/ba-p/706446?lang=de#M454)
 >
 

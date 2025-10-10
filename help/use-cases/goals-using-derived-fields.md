@@ -16,7 +16,7 @@ ht-degree: 6%
 
 In diesem Anwendungsfall wird beschrieben, wie Sie die Leistungsfähigkeit abgeleiteter Felder nutzen können, um Ziele für eine bestimmte Dimension festzulegen und diese Ziele dann in Ihrem Workspace-Projekt zu verwenden.
 
-Wenn Sie mit abgeleiteten Feldern nicht vertraut sind, finden Sie in der [Tutorial](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/data-views/derived-fields-in-cja.html?lang=de) und [Dokumentation](../data-views/derived-fields/derived-fields.md) eine Einführung.
+Wenn Sie mit abgeleiteten Feldern nicht vertraut sind, finden Sie in der [Tutorial](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/data-views/derived-fields-in-cja.html) und [Dokumentation](../data-views/derived-fields/derived-fields.md) eine Einführung.
 
 
 ## Ziele definieren
@@ -41,7 +41,7 @@ Sie möchten für jeden Ihrer Marketing-Kanäle ein monatliches Umsatzziel festl
 
 1. Erstellen Sie mithilfe der Vorlage [Funktionskanäle“ ein neues abgeleitetes Feld ](/help/data-views/derived-fields/derived-fields.md#marketing-channels) dem Namen `Monthly Marketing Channel Revenue Goal (Incremental)`.
 
-1. Definieren Sie alle Regeln, um jeden Marketing-Kanal anhand einer Kombination aus URL-PARSE- und CASE-WHEN-Regeln korrekt zu identifizieren. z. B.:
+1. Definieren Sie alle Regeln, um jeden Marketing-Kanal anhand einer Kombination aus URL-PARSE- und CASE-WHEN-Regeln korrekt zu identifizieren. Zum Beispiel:
 
    ![Definition von Regeln für ein vom Marketing-Kanal abgeleitetes Feld](assets/goals-derived-field-marketing-channel-1.png)
 
@@ -65,7 +65,7 @@ Um Ziele in Ihrem Workspace-Projekt zu verwenden, verwenden Sie die Funktion fü
 
    ![Auftrags-Zielprozentsatz](assets/calculated-metric-ordersgoalspercent.png)
 
-Sie können diese berechneten Metriken verwenden, um den Fortschritt in Freiformtabellen und Visualisierungen zu melden. z. B.:
+Sie können diese berechneten Metriken verwenden, um den Fortschritt in Freiformtabellen und Visualisierungen zu melden. Zum Beispiel:
 
 ![Freiformtabelle mit Marketing-Umsatzzielen](assets/freeform-table-product-order-goals.png)
 
@@ -80,6 +80,6 @@ Sie können diese berechneten Metriken verwenden, um den Fortschritt in Freiform
 
    ![Umsatzziel in Prozent](assets/calculated-metric-revenuegoalspercent.png)
 
-Sie können diese berechneten Metriken verwenden, um den Fortschritt in Freiformtabellen und Visualisierungen zu melden. z. B.:
+Sie können diese berechneten Metriken verwenden, um den Fortschritt in Freiformtabellen und Visualisierungen zu melden. Zum Beispiel:
 
 ![Freiformtabelle mit Marketing-Umsatzzielen](assets/freeform-table-marketing-channel-revenue-goals.png)

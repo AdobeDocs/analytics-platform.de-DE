@@ -1,17 +1,17 @@
 ---
-description: Erfahren Sie, wie Segment Builder eine Arbeitsfläche bereitstellt, um basierend auf Container-Hierarchielogik, Regeln und Operatoren Metriken, Dimensionen, Segmente und Ereignisse per Drag-and-Drop zu segmentieren. Erfahren Sie, wie Sie einfache oder komplexe Segmente erstellen und speichern können, die Besucherattribute und Aktionen über Besuche und Seitentreffer hinweg identifizieren.
-title: Segmente erstellen
+description: Erfahren Sie, wie Segment Builder eine Arbeitsfläche bereitstellt, um basierend auf Container-Hierarchielogik, Regeln und Operatoren Metriken, Dimensionen, Segmente und Ereignisse per Drag-and-Drop zu segmentieren. Lernen Sie, wie Sie einfache oder komplexe Segmente erstellen und speichern, mit deren Hilfe Besucherattribute und Aktionen bei Besuchen und Seitentreffern identifiziert werden.
+title: Erstellen von Segmenten
 feature: Filters, Segments
 role: User
 exl-id: 160021f1-6942-4682-9114-d375307d9912
 source-git-commit: c209341400bf4e0c00719075f0fc82f81ca9dbb4
 workflow-type: tm+mt
 source-wordcount: '1570'
-ht-degree: 87%
+ht-degree: 88%
 
 ---
 
-# Aufbauen von Segmenten {#build-segments}
+# Erstellen von Segmenten {#build-segments}
 
 >[!CONTEXTUALHELP]
 >id="components_filters_createaudience"
@@ -66,7 +66,7 @@ Mit dem Definition Builder erstellen Sie Ihre Segmentdefinition. Dabei verwenden
 Sie können den Typ und den Umfang Ihrer Definition konfigurieren:
 
 1. Um den Typ Ihrer Definition anzugeben, geben Sie an, ob Sie eine Ein- oder Ausschlussdefinition erstellen möchten. Wählen Sie ![Einstellung](/help/assets/icons/Setting.svg) **[!UICONTROL Optionen]** und aus dem Dropdown-Menü **[!UICONTROL Einbeziehen]** oder **[!UICONTROL Ausschließen]** aus.
-1. Um den Umfang Ihrer Definition anzugeben, wählen Sie aus dem Dropdown-Menü **[!UICONTROL Einschließen]** oder **[!UICONTROL Ausschließen]** aus, ob Sie den Umfang der Definition **[!UICONTROL Ereignis]**, **[!UICONTROL Sitzung]**, **[!UICONTROL Person]**, **[!UICONTROL Globales Konto]** [!BADGE B2B editionB2B edition B2B edition &#x200B;]{type=Informative url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} oder **&#x200B;**&#x200B;[!BADGE &#x200B; Einkaufsgruppe]{type=Informative url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}224&rbrace;B2B edition **&#x200B;**&#x200B;[!BADGE &#x200B; &#x200B;]{type=Informative url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} **[!UICONTROL möchten]**{type=Informative url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}
+1. Um den Umfang Ihrer Definition anzugeben, wählen Sie aus dem Dropdown-Menü **[!UICONTROL Einschließen]** oder **[!UICONTROL Ausschließen]** aus, ob Sie den Umfang der Definition **[!UICONTROL Ereignis]**, **[!UICONTROL Sitzung]**, **[!UICONTROL Person]**, **[!UICONTROL Globales Konto]** [!BADGE B2B editionB2B edition B2B edition ]{type=Informative url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} oder **** [!BADGE  Einkaufsgruppe]{type=Informative url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}224}B2B edition **** [!BADGE  ]{type=Informative url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} **[!UICONTROL möchten]**[!BADGE ]{type=Informative url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}
 
 Sie können diese Einstellungen später jederzeit ändern.
 

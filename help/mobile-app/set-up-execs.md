@@ -26,7 +26,7 @@ In einigen Fällen benötigen die ausführenden Benutzer möglicherweise zusätz
 
 Damit ausführende Benutzer Zugriff auf Ihre Scorecards in der Mobile App haben, müssen folgende Voraussetzungen gegeben sein:
 
-* Auf den Geräten Ihrer Benutzer muss mindestens iOS-Version 10 oder Android-Version 4.4 (KitKat) installiert sein.
+* Auf ihren Geräten muss mindestens iOS-Version 10 oder Android-Version 4.4 (KitKat) installiert sein.
 * Sie verfügen über eine gültige Anmeldung bei Customer Journey Analytics.
 * Sie haben die mobilen Scorecards für Ihre Benutzer korrekt erstellt und freigegeben.
 * Ihre Benutzer müssen Zugriff auf die Komponenten haben, die die Scorecard enthält. Sie können bei der Freigabe Ihrer Scorecards eine Option auswählen, um **[!UICONTROL eingebettete Komponenten freizugeben]**.

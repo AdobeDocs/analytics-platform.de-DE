@@ -38,7 +38,7 @@ Alternativ können Sie eine [Absprungrate“ mithilfe abgeleiteter Felder ](/hel
 
 Abgeleitete Felder sind Teil einer Datenansicht, was den Vorteil hat, dass nicht jeder Benutzer die Definition einer Metrik für die Absprungrate überschreiben oder ändern kann. Dieser Vorteil führte auch zu einer Einschränkung. Benutzende, die keinen Zugriff auf eine Datenansicht haben, können keine abgeleiteten Felder verwenden und müssen auf Segmente und berechnete Metriken zurückgreifen, um eine Absprungrate zu definieren.
 
-Weitere Hintergrundinformationen zur Berechnung von Bounces und Absprungraten in Customer Journey Analytics finden Sie in diesem [Blogpost](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/calculating-bounces-amp-bounce-rate-in-adobe-customer-journey/ba-p/706446?profile.language=de).
+Weitere Hintergrundinformationen zur Berechnung von Bounces und Absprungraten in Customer Journey Analytics finden Sie in diesem [Blogpost](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/calculating-bounces-amp-bounce-rate-in-adobe-customer-journey/ba-p/706446).
 
 +++
 
@@ -47,7 +47,7 @@ Weitere Hintergrundinformationen zur Berechnung von Bounces und Absprungraten in
 
 Sie möchten eine berechnete Metrik definieren, die nur die Seitenansichten der Seiten berechnet, die in über 100 Sitzungen besucht wurden.
 
-+++ Details
++++ Details 
 
 ![Bedingte Seitenansichten](assets/conditional-page-views.png)
 

@@ -3,10 +3,11 @@ description: Erfahren Sie, wie Sie mithilfe von Vorlagen in Analysis Workspace s
 title: Schneller Projektstart
 feature: Workspace Basics
 role: User, Admin
-source-git-commit: 084c995658a5cf698d253f1c15229f621a8c55d5
+exl-id: 464032a1-6dae-4df5-b4db-b277788e88c2
+source-git-commit: c44e625f3a60ced481960fc05f92296a311343f4
 workflow-type: tm+mt
 source-wordcount: '75'
-ht-degree: 8%
+ht-degree: 12%
 
 ---
 
@@ -19,4 +20,3 @@ Informationen zur Verwendung von Vorlagen in Customer Journey Analytics finden S
 * [Verwenden von Vorlagen](/help/analysis-workspace/templates/use-templates.md)
 
 * [Erstellen und Verwalten von Vorlagen](/help/analysis-workspace/templates/create-templates.md)
-

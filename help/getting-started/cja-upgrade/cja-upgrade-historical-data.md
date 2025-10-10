@@ -8,15 +8,15 @@ hide: true
 hidefromtoc: true
 exl-id: 1d17151b-3a12-468e-9a4f-9e5994599570
 source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '673'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
 # Schritt 4: Beibehalten historischer Daten beim Upgrade
 
-+++Erweitern Sie diesen Abschnitt, um zu sehen, wo die Informationen auf dieser Seite in den allgemeinen Upgrade-Prozess einzuordnen sind. Stellen Sie sicher, dass alle vorherigen Upgrade-Schritte abgeschlossen sind.
++++Erweitern Sie diesen Abschnitt, um zu sehen, wo die Informationen auf dieser Seite in den größeren Aktualisierungsprozess passen. Stellen Sie sicher, dass alle vorherigen Upgrade-Schritte abgeschlossen sind.
 
 Bevor Sie mit diesem Abschnitt fortfahren, stellen Sie zunächst sicher, dass Sie alle vorherigen Upgrade-Aufgaben abgeschlossen haben.
 

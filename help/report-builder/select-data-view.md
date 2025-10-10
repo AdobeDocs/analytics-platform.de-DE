@@ -13,7 +13,7 @@ ht-degree: 1%
 
 ---
 
-# Datenansicht auswählen
+# Auswählen einer Datenansicht
 
 Sie können eine Datenansicht aus dem Dropdown-Menü auswählen oder eine Datenansicht aus einer Zelle auswählen und Ihren Datenblock automatisch mit einer neuen Datenansicht aktualisieren.
 

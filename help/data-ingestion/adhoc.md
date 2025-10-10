@@ -8,7 +8,7 @@ exl-id: 17b5842f-dc81-481f-8b21-dc90a133adcf
 source-git-commit: edf7bdac87d9bed48244ad80521bbbf83c48f7b6
 workflow-type: tm+mt
 source-wordcount: '1623'
-ht-degree: 23%
+ht-degree: 24%
 
 ---
 
@@ -98,7 +98,7 @@ In der Benutzeroberfläche **[!UICONTROL Schemata]** > **[!UICONTROL Beispieldat
 
   >[!NOTE]
   >
-  >Der Workflow definiert, dass alle Felder im Schema vom Typ „Zeichenfolge“ sind. Sie können diesen Typ zu einem späteren Zeitpunkt nicht mehr ändern. Wenn Sie mehr Flexibilität bei der Definition eines Ad-hoc-Schemas benötigen, sollten Sie [die API zum Erstellen eines Ad-hoc-Schemas verwenden](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/tutorials/ad-hoc) und dann den Workflow [Datensatz aus Schema erstellen](https://experienceleague.adobe.com/de/docs/experience-platform/catalog/datasets/user-guide#schema) verwenden.
+  >Der Workflow definiert, dass alle Felder im Schema vom Typ „Zeichenfolge“ sind. Sie können diesen Typ zu einem späteren Zeitpunkt nicht mehr ändern. Wenn Sie mehr Flexibilität bei der Definition eines Ad-hoc-Schemas benötigen, sollten Sie [die API zum Erstellen eines Ad-hoc-Schemas verwenden](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/tutorials/ad-hoc) und dann den Workflow [Datensatz aus Schema erstellen](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/user-guide#schema) verwenden.
   > 
 
 
@@ -128,7 +128,7 @@ Gehen Sie folgendermaßen vor, um eine Verbindung zu erstellen:
 
 1. Im Schritt **[!UICONTROL Auswählen von Datensätzen]** in **[!UICONTROL Datensätze hinzufügen]**:
 
-   1. Wählen Sie den zuvor erstellten Datensatz aus, z. B. **[!UICONTROL Beispieldaten aus CSV]** und jeden anderen Datensatz, den Sie in Ihre Verbindung einbeziehen möchten. Die Ad-hoc-Datensätze haben den **[!UICONTROL Adhoc]**&#x200B;[!UICONTROL Datensatztyp].
+   1. Wählen Sie den zuvor erstellten Datensatz aus, z. B. **[!UICONTROL Beispieldaten aus CSV]** und jeden anderen Datensatz, den Sie in Ihre Verbindung einbeziehen möchten. Die Ad-hoc-Datensätze haben den **[!UICONTROL Adhoc]**[!UICONTROL Datensatztyp].
 
       ![Hinzufügen von Datensätzen](./assets/cja-connections-adhoc-2.png)
 
@@ -155,7 +155,7 @@ Siehe [Ad-hoc-Datensatzeinstellungen](/help/connections/create-connection.md#adh
 
 >[!IMPORTANT]
 >
->Zusätzlich zur allgemeinen Empfehlung, keine Ad-hoc-Datensätze und -Schemata für Zeitreihendaten zu verwenden, können Sie den **[!UICONTROL Datensatz aus CSV erstellen]** für Zeitreihendaten nicht verwenden. Dieser Workflow definiert alle Felder als vom Typ Zeichenfolge, die Sie nachträglich nicht mehr ändern können. Wenn Sie einen zeitreihenbasierten Datensatz (Ereignis oder Zusammenfassung) zu einer Verbindung hinzufügen, erfordert dieser Datensatztyp die Definition von mindestens einem Feld des Typs DateTime.<br/>Wenn Sie Ad-hoc-Zeitreihendaten verwenden müssen, sollten Sie [die API zum Erstellen eines Ad-hoc-Schemas verwenden](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/tutorials/ad-hoc#token_type=bearer&expires_in=43197438) und dann den Workflow [Erstellen eines Datensatzes aus einem Schema](https://experienceleague.adobe.com/de/docs/experience-platform/catalog/datasets/user-guide#schema) verwenden.
+>Zusätzlich zur allgemeinen Empfehlung, keine Ad-hoc-Datensätze und -Schemata für Zeitreihendaten zu verwenden, können Sie den **[!UICONTROL Datensatz aus CSV erstellen]** für Zeitreihendaten nicht verwenden. Dieser Workflow definiert alle Felder als vom Typ Zeichenfolge, die Sie nachträglich nicht mehr ändern können. Wenn Sie einen zeitreihenbasierten Datensatz (Ereignis oder Zusammenfassung) zu einer Verbindung hinzufügen, erfordert dieser Datensatztyp die Definition von mindestens einem Feld des Typs DateTime.<br/>Wenn Sie Ad-hoc-Zeitreihendaten verwenden müssen, sollten Sie [die API zum Erstellen eines Ad-hoc-Schemas verwenden](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/ad-hoc#token_type=bearer&expires_in=43197438) und dann den Workflow [Erstellen eines Datensatzes aus einem Schema](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/user-guide#schema) verwenden.
 
 
 Nachdem Sie eine [Verbindung](/help/connections/overview.md) erstellt haben, können Sie verschiedene Verwaltungsaufgaben ausführen, z. B. [Auswählen und Kombinieren von ](/help/connections/combined-dataset.md), [Überprüfen des Status der Datensätze einer Verbindung und des Status der Datenaufnahme](/help/connections/manage-connections.md) und mehr.

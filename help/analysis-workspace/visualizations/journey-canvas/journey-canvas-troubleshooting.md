@@ -7,7 +7,7 @@ exl-id: f0ac3752-9244-4d9e-807b-e6471e6aa55b
 source-git-commit: 8054aab28c405f6a9dd24306a086c78069032999
 workflow-type: tm+mt
 source-wordcount: '1290'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -23,7 +23,7 @@ Die folgenden Informationen helfen Ihnen bei der Fehlerbehebung bei unbeabsichti
 
 Auf der Journey-Arbeitsfläche ist es für Knoten, die später auf der Journey erscheinen, möglich, einen höheren Prozentsatz oder eine höhere Anzahl anzuzeigen als Knoten, die früher auf der Journey erscheinen.
 
-Anders ausgedrückt: Im Gegensatz zu Fallout-Visualisierungen, die immer trichterförmig sind (wobei die Beteiligung mit jedem Schritt abnimmt), können Journey-Arbeitsflächen-Visualisierungen eine höhere Beteiligung in späteren Journey-Schritten aufweisen als in vorherigen Schritten.
+Anders ausgedrückt: Im Gegensatz zu Fallout-Visualisierungen, die immer funnel-förmig sind (wobei die Beteiligung mit jedem Schritt abnimmt), können Journey-Arbeitsflächen-Visualisierungen eine höhere Beteiligung in späteren Journey-Schritten aufweisen als in vorherigen Schritten.
 
 Dies kann in den folgenden Szenarien auftreten:
 
@@ -87,7 +87,7 @@ Die auf den einzelnen Knoten einer Journey angezeigten Zahlen bleiben unabhängi
 
 Die folgenden Abschnitte zeigen, wie sich die Prozentsätze für denselben Journey ändern können, je nachdem, welche der folgenden Optionen im Feld **[!UICONTROL Prozentwert]** ausgewählt ist:
 
-+++Prozent des Startknotens
++++Prozentsatz des Startknotens
 
 Die Knoten in diesem Journey enthalten die folgenden Statistiken, wenn das Feld **[!UICONTROL Prozentwert]** auf „Prozent **[!UICONTROL Startknotens“]** ist:
 
@@ -101,7 +101,7 @@ Die Knoten in diesem Journey enthalten die folgenden Statistiken, wenn das Feld 
 
 +++
 
-+++Prozent des vorherigen Knotens
++++Prozentsatz des vorherigen Knotens
 
 Die Knoten in diesem Journey enthalten die folgenden Statistiken, wenn das Feld **[!UICONTROL Prozentwert]** auf **[!UICONTROL Prozent des vorherigen Knotens eingestellt ist]**:
 
@@ -115,7 +115,7 @@ Die Knoten in diesem Journey enthalten die folgenden Statistiken, wenn das Feld 
 
 +++
 
-+++Prozent der Gesamtheit
++++Gesamtprozentsatz
 
 Die Knoten in dieser Journey enthalten die folgenden Statistiken, wenn das Feld **[!UICONTROL Prozentwert]** auf **[!UICONTROL Prozent der Gesamtheit]** gesetzt ist:
 

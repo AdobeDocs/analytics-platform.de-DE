@@ -13,9 +13,9 @@ ht-degree: 41%
 
 # Reporting zu Zielgruppen
 
-Mit dem Target-Reporting in Customer Journey Analytics können Sie Adobe Target-Aktivitäten direkt in Customer Journey Analytics messen und Berichte dazu erstellen. Diese Funktionalität ist vergleichbar mit der, die in Adobe Analytics (AA) über Analytics for Target (A4T) ausgeführt wird, jedoch mit der Verbindung zu Adobe Experience Platform (AEP).
+Mit dem Target-Reporting in Customer Journey Analytics können Sie Adobe Target-Aktivitäten direkt in Customer Journey Analytics messen und Berichte dazu erstellen. Diese Funktionalität ist vergleichbar mit der, die in Adobe Analytics (AA) über Analytics for Target (A4T) ausgeführt wird, jedoch mit der Konnektivität zu Adobe Experience Platform (AEP).
 
-Durch das Hinzufügen des Suchdatensatzes der Target-Klassifizierung (der standardmäßig auf Experience Platform verfügbar ist) zu einer Customer Journey Analytics-Verbindung erhalten Anwender jetzt eine angemessene Offenlegung gegenüber Reporting-Tools von Target, der Attribution von Target-Bestellungen und anderen Funktionen. Wenn nur einige kleinere Vorbereitungen und Anpassungen in der Customer Journey Analytics-Datenansicht vorgenommen wurden, können diese Aktivitäten für alle Benutzenden, die Target-Daten direkt an CJA senden möchten, sofort verfügbar gemacht werden.
+Durch das Hinzufügen des Suchdatensatzes der Target-Klassifizierung (der standardmäßig in Experience Platform verfügbar ist) zu einer Customer Journey Analytics-Verbindung können Benutzende nun die Reporting-Tools von Target, die Attribution der Zielreihenfolge und andere Funktionen optimal nutzen. Wenn nur einige kleinere Vorbereitungen und Anpassungen in der Customer Journey Analytics-Datenansicht vorgenommen wurden, können diese Aktivitäten für alle Benutzenden, die Target-Daten direkt an CJA senden möchten, sofort verfügbar gemacht werden.
 
 ## Primäre Vorteile
 

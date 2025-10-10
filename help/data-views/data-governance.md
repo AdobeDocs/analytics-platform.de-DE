@@ -44,7 +44,7 @@ Daten-Label, die von Ihnen oder anderen Benutzenden in Experience Platform erste
 
 {style="table-layout:auto"}
 
-## Filtern nach Data Governance-Beschriftungen in Datenansichten
+## Filtern nach Data-Governance-Labels in Datenansichten
 
 Wählen Sie im Editor für Datenansichten das Symbol [!UICONTROL Filter] in der linken Spur aus und filtern Sie die Komponenten der Datenansichten nach **[!UICONTROL Data Governance]** und dem Typ der **[!UICONTROL Label]**:
 
@@ -72,7 +72,7 @@ Diese Komponenten sind in der Liste [!UICONTROL Schemafelder] in der linken Leis
 
 Sie können auch keine Datensicht speichern, die gesperrte Felder enthält.
 
-Seien Sie vorsichtig, wenn Sie versuchen, Zugriffs- und Data Governance-Label (über Richtlinien) in Experience Platform auf Felder oder Feldergruppen anzuwenden, für die Sie in Ihrer Datenansicht bereits Komponenten definiert haben. Möglicherweise wird dieses Dialogfeld angezeigt.
+Seien Sie vorsichtig, wenn Sie versuchen, Zugriffs- und-Data Governance-Labels (über Richtlinien) in Experience Platform auf Felder oder Feldergruppen anzuwenden, für die Sie in Ihrer Datenansicht bereits Komponenten definiert haben. Möglicherweise wird dieses Dialogfeld angezeigt.
 
 ![Verstoß](assets/violation.png)
 

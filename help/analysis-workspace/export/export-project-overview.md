@@ -8,7 +8,7 @@ role: User
 source-git-commit: ce4a21b1a1e89f14316a92fbdce38281db61e666
 workflow-type: tm+mt
 source-wordcount: '297'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -36,6 +36,6 @@ Für den Export aus Analysis Workspace stehen Ihnen verschiedene Methoden zur Ve
 |---------|----------|
 | [Auf Ihre Workstation herunterladen](/help/analysis-workspace/export/download-send.md) | <li>Projekte auf Ihre persönliche Workstation herunterladen.</li><li>Nur ungeplant Daten herunterladen.</li> <li>Maximal 50.000 Zeilen herunterladen.</li> <!--true? Are there 2 different options to download to your workstation?--> <!-- is this emailing it? --> |
 | [An andere Benutzende senden](/help/analysis-workspace/export/t-schedule-report.md) | <li>Exportierte Customer Journey Analytics-Daten per E-Mail an andere Benutzende in Ihrer Organisation senden.</li><li>Die E-Mail ungeplant oder geplant senden.</li> <li>Die E-Mail maximal 50.000 Zeilen enthält.</li> <!--true?--> |
-| [Exportieren in eine Cloud-Position](/help/analysis-workspace/export/export-cloud.md) | <li>In einen Cloud-Speicherort exportieren, z. B. <ul><li>Adobe Experience Platform Data Landing Zone</li><li>Google Cloud Platform</li><li>Microsoft Azure</li><li>Amazon S3</li><li>Snowflake</li></ul></li><li>Daten ungeplant oder geplant exportieren.</li><li>Größere Mengen an Customer Journey Analytics-Daten speichern.</li><li>Vollständige Tabellen speichern, die Tausende oder Millionen von Zeilen enthalten.<!-- What other things? Wiki talks about things that aren't even possible in Data Warehouse. What are they? --> </li> |
+| [Exportieren in einen Cloud-Speicherort](/help/analysis-workspace/export/export-cloud.md) | <li>In einen Cloud-Speicherort exportieren, z. B. <ul><li>Adobe Experience Platform Data Landing Zone</li><li>Google Cloud Platform</li><li>Microsoft Azure</li><li>Amazon S3</li><li>Snowflake</li></ul></li><li>Daten ungeplant oder geplant exportieren.</li><li>Größere Mengen an Customer Journey Analytics-Daten speichern.</li><li>Vollständige Tabellen exportieren, die Tausende oder Millionen von Zeilen enthalten.<!-- What other things? Wiki talks about things that aren't even possible in Data Warehouse. What are they? --> </li> |
 
 {style="table-layout:auto"}

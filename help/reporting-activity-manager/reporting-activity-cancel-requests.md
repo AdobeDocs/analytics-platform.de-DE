@@ -6,7 +6,7 @@ feature: Basics
 exl-id: 87da2447-f114-432a-9f63-e660c2541d0f
 role: Admin
 source-git-commit: def8b074ea468e409e340415d5e96f75d6b69312
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1497'
 ht-degree: 100%
 
@@ -160,7 +160,7 @@ Zu den Anwendungen zählen Folgende:
 * Analysis Workspace-Benutzeroberfläche
 * Geplante Projekte im Workspace
 * Report Builder
-* Builder-Benutzeroberflächen: Segment, berechnete Metriken, Anmerkungen, Audiences usw.
+* Builder-Benutzeroberflächen: Segment, berechnete Metriken, Anmerkungen, Zielgruppen usw.
 * API-Aufrufe aus der API 2.0
 * Warnhinweise
 * Vollständiger Tabellenexport

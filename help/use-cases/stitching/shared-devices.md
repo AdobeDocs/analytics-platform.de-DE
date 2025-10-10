@@ -24,11 +24,11 @@ Wenn zwei Personen dasselbe Gerät verwenden und beide einen authentifizierten K
 
 | Ereignis | Zeitstempel | Seitenname | Geräte-ID | E-Mail |
 |--:|---|---|---|---|
-| 1 | 12.05.2023 12:01 | Startseite | `1234` | |
-| 2 | 12.05.2023 12:02 | Produktseite | `1234` | |
-| 3 | 12.05.2023 12:03 | Auftragserfolg | `1234` | `ryan@a.com` |
-| 4 | 12.05.2023 12:07 | Produktseite | `1234` | |
-| 5 | 12.05.2023 12:08 | Auftragserfolg | `1234` | `cassidy@a.com` |
+| 1 | 12.05.2023:01 | Startseite | `1234` | |
+| 2 | 12.05.2023:02 | Produktseite | `1234` | |
+| 3 | 12.05.2023:03 | Auftragserfolg | `1234` | `ryan@a.com` |
+| 4 | 12.05.2023:07 | Produktseite | `1234` | |
+| 5 | 12.05.2023:08 | Auftragserfolg | `1234` | `cassidy@a.com` |
 
 Wie Sie aus dieser Tabelle sehen können, beginnt sich nach der Authentifizierung bei den Ereignissen 3 und 5 eine Verknüpfung zwischen einer Geräte-ID und einer Personen-ID zu bilden. Um die Auswirkungen von Marketing-Maßnahmen auf der Personenebene zu verstehen, müssen diese nicht authentifizierten Ereignisse der richtigen Person zugeordnet werden.
 
@@ -49,17 +49,17 @@ Bei der Zuordnung können freigegebene Gerätedaten entweder anhand der Attribut
 
 ### Attribution der letzten Authentifizierung
 
-Last-auth schreibt alle unbekannten Aktivitäten eines gemeinsam genutzten Geräts dem Benutzer zu, der sich zuletzt authentifiziert hat. Der Experience Platform Identity Service erstellt das Diagramm basierend auf der Attribution der letzten Authentifizierung und wird als solche beim diagrammbasierten Stitching verwendet. Weitere [ finden Sie unter ](https://experienceleague.adobe.com/de/docs/experience-platform/identity/features/identity-graph-linking-rules/identity-optimization-algorithm#identity-optimization-algorithm-details) für Identitätsdiagramme .
+Last-auth schreibt alle unbekannten Aktivitäten eines gemeinsam genutzten Geräts dem Benutzer zu, der sich zuletzt authentifiziert hat. Der Experience Platform Identity Service erstellt das Diagramm basierend auf der Attribution der letzten Authentifizierung und wird als solche beim diagrammbasierten Stitching verwendet. Weitere [ finden Sie unter ](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-graph-linking-rules/identity-optimization-algorithm#identity-optimization-algorithm-details) für Identitätsdiagramme .
 
 Wenn die Attribution der letzten Authentifizierung beim Zusammenfügen verwendet wird, werden zusammengefügte IDs aufgelöst, wie in der folgenden Tabelle dargestellt.
 
 | Zeitstempel | Seitenname | Geräte-ID | E-Mail | Angeheftete ID |
 |---|---|---|---|---|
-| 12.05.2023 12:01 | Startseite | `1234` | | `cassidy@a.com` |
-| 12.05.2023 12:02 | Produktseite | `1234` | | `cassidy@a.com` |
-| 12.05.2023 12:03 | Auftragserfolg | `1234` | `ryan@a.com` | `cassidy@a.com` |
-| 12.05.2023 12:07 | Produktseite | `1234` | | `cassidy@a.com` |
-| 12.05.2023 12:08 | Auftragserfolg | `1234` | `cassidy@a.com` | `cassidy@a.com` |
+| 12.05.2023:01 | Startseite | `1234` | | `cassidy@a.com` |
+| 12.05.2023:02 | Produktseite | `1234` | | `cassidy@a.com` |
+| 12.05.2023:03 | Auftragserfolg | `1234` | `ryan@a.com` | `cassidy@a.com` |
+| 12.05.2023:07 | Produktseite | `1234` | | `cassidy@a.com` |
+| 12.05.2023:08 | Auftragserfolg | `1234` | `cassidy@a.com` | `cassidy@a.com` |
 | 13.05.2023 11:08 | Startseite | `1234` | | `cassidy@a.com` |
 
 
@@ -71,11 +71,11 @@ Wenn die Attribution „Device-Split“ beim Zusammenfügen verwendet wird, werd
 
 | Zeitstempel | Seitenname | Geräte-ID | E-Mail | Angeheftete ID |
 |---|---|---|---|---|
-| 12.05.2023 12:01 | Startseite | `1234` | | `ryan@a.com` |
-| 12.05.2023 12:02 | Produktseite | `1234` | | `ryan@a.com` |
-| 12.05.2023 12:03 | Auftragserfolg | `1234` | `ryan@a.com` | `ryan@a.com` |
-| 12.05.2023 12:07 | Produktseite | `1234` | | `ryan@a.com` |
-| 12.05.2023 12:08 | Auftragserfolg | `1234` | `cassidy@a.com` | `cassidy@a.com` |
+| 12.05.2023:01 | Startseite | `1234` | | `ryan@a.com` |
+| 12.05.2023:02 | Produktseite | `1234` | | `ryan@a.com` |
+| 12.05.2023:03 | Auftragserfolg | `1234` | `ryan@a.com` | `ryan@a.com` |
+| 12.05.2023:07 | Produktseite | `1234` | | `ryan@a.com` |
+| 12.05.2023:08 | Auftragserfolg | `1234` | `cassidy@a.com` | `cassidy@a.com` |
 | 13.05.2023 11:08 | Startseite | `1234` | | `cassidy@a.com` |
 
 
@@ -123,7 +123,7 @@ Um zu verstehen, wie das freigegebene Gerät verfügbar ist, können Sie die fol
 
 2. **Zuordnung von Ereignissen zu freigegebenen Geräten**
 
-   Bestimmen Sie für die identifizierten freigegebenen Geräte, wie viele Ereignisse in der Gesamtzahl diesen Geräten zugeordnet werden können. Diese Attribution bietet Einblicke in die Auswirkungen freigegebener Geräte auf Ihre Daten und die Auswirkungen auf die Analyse.
+   Bestimmen Sie für die identifizierten freigegebenen Geräte, wie viele Ereignisse in der Gesamtzahl diesen Geräten zugeordnet werden können. Diese Attribution gibt insight Aufschluss über die Auswirkungen freigegebener Geräte auf Ihre Daten und die Auswirkungen auf die Analyse.
 
    ```sql
    SELECT COUNT(*) AS total_events,

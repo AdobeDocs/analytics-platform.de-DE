@@ -6,7 +6,7 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: 7142ef84-66a6-49eb-938b-b67c9b65bf93
 source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1067'
 ht-degree: 100%
 
@@ -92,35 +92,35 @@ Wenn Sie Adobe Analytics für die im obigen Abschnitt beschriebenen Zwecke nicht
 
 1. Erfassen Sie keine Daten mehr mit Adobe Analytics.
 
-   Wenn Sie mit den parallelen Vergleichen Ihrer Adobe Analytics-Daten und Ihrer Customer Journey Analytics-Daten zufrieden sind, können Sie die Datenerfassung mit Ihrer Adobe Analytics-Implementierung einstellen. Neue Adobe Analytics-Daten werden nicht mehr über den Analytics-Quell-Connector an Customer Journey Analytics übermittelt.
+   Wenn Sie mit den parallelen Vergleichen Ihrer Adobe Analytics-Daten und Ihrer Customer Journey Analytics-Daten zufrieden sind, können Sie die Datenerfassung mit Ihrer Adobe Analytics-Implementierung stoppen. Neue Adobe Analytics-Daten werden nicht mehr über den Analytics-Quell-Connector an Customer Journey Analytics übermittelt.
 
    Daten, die Sie zuvor in Ihrer Adobe Analytics-Umgebung erfasst haben, sind jedoch weiterhin als historische Daten in Customer Journey Analytics über den Analytics-Quell-Connector verfügbar.
 
    Dieser Prozess unterscheidet sich je nach der Datenerfassungsmethode, die Sie zur Implementierung von Adobe Analytics verwendet haben:
 
-+++ AppMeasurement
+   +++ AppMeasurement
 
    [Deaktivieren Sie die AppMeasurement-Datenerfassung](/help/getting-started/cja-upgrade/cja-upgrade-disable-appmeasurement.md).
 
-+++
+   +++
 
-+++ Analytics-Erweiterung (Tags)
+   +++ Analytics-Erweiterung (Tags)
 
    Analytics-Erweiterung in Tags deaktiveren.
 
-+++
+   +++
 
-+++ API
+   +++ API
 
    API-Datenerfassung für Adobe Analytics deaktivieren.
 
-+++
+   +++
 
-+++ Drittanbieter
+   +++ Drittanbieter
 
    Arbeiten Sie mit Ihrer oder Ihrem Tag-Admin zusammen, um die AppMeasurement-Bibliothek aus dem Tag-Management-System eines Drittanbieters zu entfernen.
 
-+++
+   +++
 
 1. Adobe Analytics als Dienst aus dem Datenstrom entfernen.
 

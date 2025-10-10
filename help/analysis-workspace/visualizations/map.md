@@ -7,7 +7,7 @@ exl-id: 6656b34a-ae1e-4f9f-9c6d-13c54e49625c
 source-git-commit: ab0e6f0578cbc6f856c2b0a46b1231cce145b84c
 workflow-type: tm+mt
 source-wordcount: '2761'
-ht-degree: 11%
+ht-degree: 12%
 
 ---
 
@@ -42,11 +42,11 @@ ht-degree: 11%
 
 >[!BEGINSHADEBOX]
 
-_In diesem Artikel wird die Zuordnungsvisualisierung in {_}![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**._<br/>_Siehe [Map](https://experienceleague.adobe.com/de/docs/analytics/analyze/analysis-workspace/visualizations/map-visualization) für die_![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics**-Version dieses Artikels._
+_In diesem Artikel wird die Zuordnungsvisualisierung in {_}![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._<br/>_Siehe [Map](https://experienceleague.adobe.com/de/docs/analytics/analyze/analysis-workspace/visualizations/map-visualization) für die_![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**-Version dieses Artikels._
 
 >[!ENDSHADEBOX]
 
-Mit der ![Globe](/help/assets/icons/Globe.svg)**[!UICONTROL Map]**-Visualisierung in Analysis Workspace können Sie eine visuelle Zuordnung einer beliebigen Metrik (einschließlich berechneter Metriken) erstellen. Dies ist nützlich, um Metrikdaten über verschiedene geografische Regionen hinweg zu identifizieren und zu vergleichen.
+Mit der ![Globe](/help/assets/icons/Globe.svg)**[!UICONTROL Map]**-Visualisierung in Analysis Workspace können Sie eine visuelle Zuordnung einer beliebigen Metrik (einschließlich berechneter Metriken) erstellen. Sie ist hilfreich bei der Erfassung und dem Vergleich von Metrikdaten über verschiedene geographische Regionen hinweg.
 
 ## Voraussetzungen
 

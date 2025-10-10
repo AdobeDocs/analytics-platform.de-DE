@@ -172,7 +172,7 @@ Definieren Sie ein Schema, das diese Daten modelliert. Gehen Sie folgendermaßen
 
      ![Versionsdeskriptor](assets/platform-schema-id.png)
 
-   * Das Feld **[!UICONTROL personid]** wird zusammen mit **[!UICONTROL timestamp]** als Primärer Schlüssel **&#x200B;**&#x200B;konfiguriert. Wählen Sie ![Hinzufügen](/help/assets/icons/Add.svg) **[!UICONTROL Zusammengesetzten Primärschlüssel erstellen]** aus, um einen zusammengesetzten Schlüssel zu erstellen.
+   * Das Feld **[!UICONTROL personid]** wird zusammen mit **[!UICONTROL timestamp]** als Primärer Schlüssel **** konfiguriert. Wählen Sie ![Hinzufügen](/help/assets/icons/Add.svg) **[!UICONTROL Zusammengesetzten Primärschlüssel erstellen]** aus, um einen zusammengesetzten Schlüssel zu erstellen.
 
      ![Zusammengesetzter Schlüssel](assets/platform-schema-compositekey.png)
 
@@ -180,7 +180,7 @@ Definieren Sie ein Schema, das diese Daten modelliert. Gehen Sie folgendermaßen
 
      ![Personendeskriptor](assets/platform-schema-personid.png)
 
-   * Das Feld **[!UICONTROL Zeitstempel]** wird zusammen mit dem Feld **[!UICONTROL personid]** als Primärer Schlüssel **&#x200B;**&#x200B;konfiguriert. Das **[!UICONTROL Zeitstempel]**-Feld wird auch als **[!UICONTROL Zeitstempeldeskriptor]** konfiguriert. Sie müssen nur ein Feld als **[!UICONTROL Zeitstempeldeskriptor]** für zeitreihenmodellbasierte Daten definieren.
+   * Das Feld **[!UICONTROL Zeitstempel]** wird zusammen mit dem Feld **[!UICONTROL personid]** als Primärer Schlüssel **** konfiguriert. Das **[!UICONTROL Zeitstempel]**-Feld wird auch als **[!UICONTROL Zeitstempeldeskriptor]** konfiguriert. Sie müssen nur ein Feld als **[!UICONTROL Zeitstempeldeskriptor]** für zeitreihenmodellbasierte Daten definieren.
 
      ![Zeitstempel-Deskriptor](assets/platform-schema-timestamp.png)
 
@@ -218,7 +218,7 @@ Wählen **[!UICONTROL im Schritt]** Authentifizierung“ Folgendes aus:
 
    1. Klicken Sie auf **[!UICONTROL Weiter]**.
 
-  In der Experience Platform-Dokumentation finden Sie Einzelheiten zur Verbindung und Authentifizierung bei der Verwendung des [Azure Databricks](https://experienceleague.adobe.com/de/docs/experience-platform/sources/connectors/databases/databricks) oder [Snowflake](https://experienceleague.adobe.com/de/docs/experience-platform/sources/connectors/databases/snowflake)-Connectors.
+  In der Experience Platform-Dokumentation finden Sie Einzelheiten zur Verbindung und Authentifizierung bei der Verwendung des [Azure Databricks](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/databases/databricks) oder [Snowflake](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/databases/snowflake)-Connectors.
 
 
 ### Daten auswählen

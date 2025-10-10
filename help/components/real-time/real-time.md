@@ -13,7 +13,7 @@ ht-degree: 7%
 
 # Übersicht über die Echtzeitberichterstellung
 
-Echtzeitberichte in Customer Journey Analytics zeigen Daten und Visualisierungen in einem oder mehreren Bedienfeldern in Analysis Workspace in Echtzeit an und aktualisieren diese.
+Echtzeit-Reporting in Customer Journey Analytics zeigt Daten und Visualisierungen in einem oder mehreren Panels in Analysis Workspace in Echtzeit an und aktualisiert diese.
 
 {{release-limited-testing}}
 

@@ -1,5 +1,5 @@
 ---
-description: Erfahren Sie mehr über die Funktionen zur Unterstützung der Barrierefreiheit in Analysis Workspace.
+description: Erfahren Sie mehr über die Funktionen zur Unterstützung von Barrierefreiheit in Analysis Workspace.
 title: Barrierefreiheit in Analysis Workspace
 feature: Workspace Basics
 exl-id: 1616c625-8914-4ede-815d-e8d62e796ea5
@@ -7,7 +7,7 @@ role: User
 source-git-commit: c209341400bf4e0c00719075f0fc82f81ca9dbb4
 workflow-type: tm+mt
 source-wordcount: '546'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -30,7 +30,7 @@ Barrierefreiheit bezieht sich darauf, Produkte für Menschen mit visuellen, akus
 Die Navigation in [!UICONTROL Analysis Workspace] funktioniert von oben nach unten und von links nach rechts. Die folgenden Navigationselemente erleichtern die Zugänglichkeit:
 
 * Die **[!UICONTROL Tab]**-Taste ermöglicht Markierungskurzbefehle, mit denen Sie zwischen größeren Abschnitten in Workspace wechseln können. Im linken Panel können Sie mit der **[!UICONTROL Tab]**-Taste auch von einer ziehbaren Option zur nächsten wechseln.
-* Die ◀︎ und ▶︎ wechseln zwischen einzelnen Elementen, nachdem die **[!UICONTROL Tabulatortaste]** ein Element hervorgehoben hat.
+* Mit ◀ und ▶ wechseln Sie zwischen einzelnen Elementen, nachdem Sie mit der **[!UICONTROL Tab]**-Taste ein Element hervorgehoben haben.
 * Mit der Taste **[!UICONTROL F6]** navigieren Sie zum ersten Panel im Projekt und können zwischen den Visualisierungen in diesem Panel wechseln. Anschließend wird zum nächsten Panel im Projekt gewechselt und es wird wiederholt.
 * Es werden Fokusindikatoren angewendet, sodass sehende Tastaturbenutzende einen klaren Hinweis darauf haben, welches Element der Benutzeroberfläche derzeit im Fokus ist. Der Indikator ist ein blauer Rahmen für das Panel, das den Fokus besitzt. Die kürzlich ausgewählte Funktion und die Auswahl innerhalb der Funktion hat einen grauen Hintergrund. In diesem Beispiel wurden kürzlich die [!UICONTROL Komponenten] und die Dimension „Seite“ ausgewählt.
 
@@ -54,7 +54,7 @@ Die Navigation in [!UICONTROL Analysis Workspace] funktioniert von oben nach unt
 
 ### Tastaturbefehle (Hotkeys)
 
-[!UICONTROL Analysis Workspace] bietet einen umfangreichen Satz an [Tastaturbefehlen (Hotkeys)](/help/analysis-workspace/build-workspace-project/fa-shortcut-keys.md) für einen nahtloseren Workflow.
+[!UICONTROL Analysis Workspace] bietet eine umfangreiche Auswahl an [Tastaturbefehlen](/help/analysis-workspace/build-workspace-project/fa-shortcut-keys.md) für einen nahtloseren Workflow. 
 
 ## Unterstützung für Bildschirmlesehilfen und Vergrößerungs-Software
 

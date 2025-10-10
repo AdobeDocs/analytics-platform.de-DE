@@ -6,9 +6,9 @@ keywords: Produktanalysen
 exl-id: c35a0ee0-e6b7-47b5-a5bc-308cde1585de
 role: User
 source-git-commit: bd8c9951386608572d84006bd5465e57214c56d4
-workflow-type: ht
-source-wordcount: '1259'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '1261'
+ht-degree: 97%
 
 ---
 
@@ -30,7 +30,7 @@ Die ![Retention](/help/assets/icons/Retention.svg) **[!UICONTROL Analyse der Kun
 
 Bei dieser Analyse stellt die X-Achse des Diagramms die Zeit seit dem ersten Startereignis einer Benutzerin oder eines Benutzers dar und die Y-Achse stellt den Prozentsatz der Benutzenden dar, die mit einem oder mehreren Rückkehrereignisse interagieren. Sie können sowohl die Bindung als auch die Abwanderung über verschiedene Zeiträume hinweg anzeigen. Die angezeigten Zeiträume können zudem über die Abfrageeinstellungen angepasst werden. Eine Tabelle unterhalb des Diagramms enthält aggregierte Daten mit der Option, einzelne Kohorten anzuzeigen, bei denen es sich um eine Gruppe von Personen handelt, deren Startereignis dasselbe Datum hat.
 
->[!VIDEO](https://video.tv.adobe.com/v/3435787/?quality=12&learn=on&captions=ger)
+>[!VIDEO](https://video.tv.adobe.com/v/3430503/?quality=12&learn=on)
 
 
 ## Anwendungsfälle
@@ -60,7 +60,7 @@ Mit der Abfrageleiste können Sie die folgenden Komponenten konfigurieren:
    * **[!UICONTROL Jede]**: Der Zeitraum, in dem sich jeder Duration-Bucket befinden soll. Zu den Optionen zählen:
       * **[!UICONTROL Tag/Woche/Monat]**: Die verfügbaren Optionen hängen vom ausgewählten Datumsbereich ab. Diese Optionen sind identisch mit der Einstellung **[!UICONTROL Intervall]** bei Auswahl des Datumsbereichs und aktualisiert diese Einstellung automatisch.
       * **[!UICONTROL Benutzerdefinierter Zeitraum]**: Diese Option ist nur für die Einstellung „Bei jedem“ verfügbar. Damit können Sie Benutzende über einen größeren Zeitraum hinweg zählen, z. B. Tag 7 bis 10 anstelle von nur Tag 7.
-   * **[!UICONTROL Einstellungen für Zeitrahmen]**: Ermöglicht die Steuerung der im Diagramm und in der Tabelle angezeigten Dauer-Buckets. Eine Dauer ist der Zeitraum nach dem Startereignis, in dem das Rückkehrereignis aufgetreten ist. Hinweis: Benutzende, die für Dauer-Buckets infrage kommen, basieren auf verstrichener Zeit und nicht auf Kalendertagen. Wenn sich eine Benutzerin oder ein Benutzer beispielsweise am 6. September um 23:55 Uhr für ein Ereignis qualifiziert und dann am 7. September um 12:05 Uhr für ein Rückkehrereignis qualifiziert, würde sie bzw. er nicht im Dauer-Bucket „1 Tag“ angezeigt werden. Es müssen volle 24 Stunden verstreichen, bevor die Benutzerin oder der Benutzer sich für den Dauer-Bucket „1 Tag“ qualifiziert. Die verfügbaren Dauer-Buckets hängen vom festgelegten Datumsbereich ab.
+   * **[!UICONTROL Einstellungen für Zeitrahmen]**: Ermöglicht die Steuerung der im Diagramm und in der Tabelle angezeigten Dauer-Buckets. Eine Dauer ist der Zeitraum nach dem Startereignis, in dem das Rückkehrereignis aufgetreten ist. Hinweis: Benutzende, die für Dauer-Buckets infrage kommen, basieren auf verstrichener Zeit und nicht auf Kalendertagen. Wenn sich ein(e) Benutzende(r) beispielsweise für ein Ereignis am 6. September um 11 :55 Uhr und dann für ein Rückgabeereignis am 7. September um 12 :05 Uhr qualifiziert, würden sie nicht im Zeitraum von 1 Tag angezeigt. Es müssen volle 24 Stunden verstreichen, bevor die Benutzerin oder der Benutzer sich für den Dauer-Bucket „1 Tag“ qualifiziert. Die verfügbaren Dauer-Buckets hängen vom festgelegten Datumsbereich ab.
       * **[!UICONTROL Automatische Zeitrahmen]** definiert automatisch die Dauer-Buckets basierend auf der Länge des Datumsbereichs und der Nähe zum aktuellen Tag des Datumsbereichs.
       * **[!UICONTROL Benutzerdefinierte Zeitrahmen]** ermöglicht es Ihnen, die vier Dauer-Buckets anzupassen, die auf dem Diagramm und der Tabelle angezeigt werden.
 * **[!UICONTROL Segmente]**: Die Segmente, die Sie messen möchten. Jedes ausgewählte Segment fügt der Kohortentabelle eine Zeile hinzu. Sie können bis zu drei Segmente einschließen.

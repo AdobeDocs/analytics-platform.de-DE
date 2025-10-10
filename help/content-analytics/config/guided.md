@@ -1,32 +1,32 @@
 ---
-title: Geführte Inhaltsanalysekonfiguration
-description: Einrichten der Inhaltsanalyse mithilfe einer geführten Onboarding-Konfiguration
+title: Geführte Content Analytics-Konfiguration
+description: Einrichten von Content Analytics mithilfe einer geführten Onboarding-Konfiguration
 solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin
 exl-id: 4aff664c-3cd9-4591-8122-6ebff10e4a76
 source-git-commit: e8cba64e706a456861fd8392ce9260b7a1c4636b
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2694'
 ht-degree: 100%
 
 ---
 
-# Geführte Inhaltsanalysekonfiguration
+# Geführte Content Analytics-Konfiguration
 
-Mit der geführten Konfiguration können Sie die Inhaltsanalyse schnell und einfach konfigurieren. Bei der geführten Konfiguration wird ein Assistent verwendet, um die Anforderungen für die automatische Konfiguration der Inhaltsanalyse für Ihre Organisation festzulegen. Im Bildschirm **[!UICONTROL Konfiguration]** können Sie entweder eine neue Konfiguration erstellen oder eine vorhandene Konfiguration bearbeiten.
+Mit der geführten Konfiguration können Sie Content Analytics schnell und einfach konfigurieren. Bei der geführten Konfiguration wird ein Assistent verwendet, um die Anforderungen für die automatische Konfiguration von Content Analytics für Ihre Organisation festzulegen. Im Bildschirm **[!UICONTROL Konfiguration]** können Sie entweder eine neue Konfiguration erstellen oder eine vorhandene Konfiguration bearbeiten.
 
 >[!IMPORTANT]
 >
->Pro Sandbox ist in Ihrer Organisation nur eine Inhaltsanalysekonfiguration möglich.
+>Pro Sandbox ist in Ihrer Organisation nur eine Content Analytics-Konfiguration möglich.
 
-So greifen Sie auf die Inhaltsanalysekonfiguration zu:
+So greifen Sie auf die Content Analytics-Konfiguration zu:
 
 * Wählen Sie aus dem Hauptmenü in Customer Journey Analytics die Option **[!UICONTROL Daten-Management]** > **[!UICONTROL Content Analytics-Konfiguration]** aus.
 
 Im Bildschirm **[!UICONTROL Content Analytics-Konfigurationen]** wird eine Tabelle mit vorhandenen Content Analytics-Konfigurationen angezeigt.
 
-![Inhaltsanalysekonfigurationen](../assets/aca-configuration-table.png)
+![Content Analytics-Konfigurationen](../assets/aca-configuration-table.png)
 Für jede Konfiguration stehen die folgenden Details zur Verfügung:
 
 | Spalte | Beschreibung |
@@ -35,12 +35,12 @@ Für jede Konfiguration stehen die folgenden Details zur Verfügung:
 | **[!UICONTROL Erstellt von]** | Das technische Konto, mit dem die Konfiguration erstellt wurde. |
 | **[!UICONTROL Erstellt am]** | Der Zeitstempel, wann die Konfiguration erstellt wurde. |
 | **[!UICONTROL Geändert am]** | Der Zeitstempel, wann die Konfiguration zuletzt geändert wurde. |
-| **[!UICONTROL Sandbox]** | Die Sandbox in der Organisation, in der die Inhaltsanalyse (voraussichtlich) konfiguriert und implementiert wird. |
+| **[!UICONTROL Sandbox]** | Die Sandbox in der Organisation, in der Content Analytics (voraussichtlich) konfiguriert und implementiert wird. |
 | **[!UICONTROL Status]** | Der Status der Konfiguration. Folgende Status sind möglich: <br/>![StatusGray](/help/assets/icons/StatusGray.svg) **[!UICONTROL Entwurf]**: Die Konfiguration wird für später gespeichert und nicht bereitgestellt.<br/>![StatusRed](/help/assets/icons/StatusRed.svg) **[!UICONTROL Fehlgeschlagen]**: Die Konfiguration ist fehlgeschlagen. Sie können **[!UICONTROL Bearbeiten]** auswählen, um Informationen zum Fehler zu erhalten. Adobe kümmert sich proaktiv um jede fehlgeschlagene Implementierung. Weitere Informationen erhalten Sie vom Team der Kundenunterstützung.<br/>![StatusGreen](/help/assets/icons/StatusGreen.svg) **[!UICONTROL Beendet]**: Die Konfiguration wurde abgeschlossen und erfolgreich implementiert. |
 
 Sie können ![ColumnSetting](/help/assets/icons/ColumnSetting.svg) verwenden, um die Tabelle anzupassen. Legen Sie fest, welche Spalten im Dialogfeld **[!UICONTROL Tabelle anpassen]** angezeigt werden sollen, und wählen Sie **[!UICONTROL Anwenden]** aus, um die Änderungen anzuwenden.
 
-Im Bildschirm **[!UICONTROL Konfiguration]** der Inhaltsanalyse können Sie eine neue Konfiguration erstellen oder eine vorhandene Konfiguration bearbeiten.
+Im Bildschirm **[!UICONTROL Konfiguration]** von Content Analytics können Sie eine neue Konfiguration erstellen oder eine vorhandene Konfiguration bearbeiten.
 
 So erstellen Sie eine neue Konfiguration:
 
@@ -72,7 +72,7 @@ Der Assistent für geführte Konfigurationen besteht aus vier Abschnitten ([Deta
 
 Jede Konfiguration erfordert einen eindeutigen Namen. Beispiel: `Example Content Analytics configuration`. Der Name ist zum Speichern oder Implementieren einer Konfiguration erforderlich.
 
-![Details zur Inhaltsanalysekonfiguration](../assets/aca-configuration-details.png)
+![Details zur Content Analytics-Konfiguration](../assets/aca-configuration-details.png)
 
 
 ### Datenansicht {#onboarding-data-view}
@@ -205,7 +205,7 @@ Ziehen Sie das Einschließen von Erlebnissen nur in Betracht, wenn Folgendes zut
 
 So schließen Sie Erlebnisse in eine neue oder nicht implementierte Konfiguration ein:
 
-![Erfassung und Definition von Erlebnissen bei der Konfiguration der Inhaltsanalyse](../assets/aca-configuration-experience.png)
+![Erfassung und Definition von Erlebnissen bei der Konfiguration von Content Analytics](../assets/aca-configuration-experience.png)
 
 1. Aktivieren Sie **[!UICONTROL Erlebnisse einschließen]**. Das Umschalten zum Aktivieren von Erlebnissen wirkt sich auf Folgendes aus:
 
@@ -258,7 +258,7 @@ In diesem Abschnitt können Sie konfigurieren, wie die Content Analytics-Daten e
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_pages_excluded_header"
 >title="Datenerfassung"
->abstract="Geben Sie an, welche Seiten bei der Datenerfassung zur Inhaltsanalyse **eingeschlossen** oder **ausgeschlossen** werden sollen"
+>abstract="Geben Sie an, welche Seiten bei der Datenerfassung für Content Analytics **eingeschlossen** oder **ausgeschlossen** werden sollen"
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_assets_excluded_boldheader"
@@ -268,7 +268,7 @@ In diesem Abschnitt können Sie konfigurieren, wie die Content Analytics-Daten e
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_assets_excluded_header"
 >title="Datenerfassung"
->abstract="Geben Sie an, welche Assets bei der Datenerfassung zur Inhaltsanalyse **eingeschlossen** oder **ausgeschlossen** werden sollen"
+>abstract="Geben Sie an, welche Assets bei der Datenerfassung für Content Analytics **eingeschlossen** oder **ausgeschlossen** werden sollen"
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_experiences_edit_button"
@@ -293,7 +293,7 @@ In einer neuen Konfiguration müssen Sie festlegen, ob Sie eine vorhandene Tag-E
 
 * Verwenden einer vorhandenen Tag-Eigenschaft:
 
-  ![Vorhandenes Tag bei der Datenerfassung der Inhaltsanalyse](../assets/aca-configuration-datacollection-existingtag.png)
+  ![Vorhandenes Tag bei der Datenerfassung für Content Analytics](../assets/aca-configuration-datacollection-existingtag.png)
 
    1. Wählen Sie **[!UICONTROL Vorhandene auswählen]**.
    2. Wählen Sie aus dem Dropdown-Menü **[!UICONTROL Tags-Eigenschaft]** eine vorhandene Eigenschaft aus. Sie können mit der Eingabe beginnen, um nach den verfügbaren Optionen zu suchen und diese zu beschränken. Sie können keine Tags-Eigenschaft auswählen, die bereits von einer anderen implementierten Content Analytics-Konfiguration verwendet wird.
@@ -301,7 +301,7 @@ In einer neuen Konfiguration müssen Sie festlegen, ob Sie eine vorhandene Tag-E
 
 * Erstellen einer neuen Tags-Eigenschaft:
 
-  ![Neues Tag bei der Datenerfassung der Inhaltsanalyse](../assets/aca-configuration-datacollection-newtag.png)
+  ![Neues Tag bei der Datenerfassung für Content Analytics](../assets/aca-configuration-datacollection-newtag.png)
 
    1. Wählen Sie **[!UICONTROL Neu erstellen]** aus.
    1. Geben Sie einen **[!UICONTROL Tags-Namen]** an, z. B. `ACA Test for Documentation`.
@@ -311,7 +311,7 @@ In einer neuen Konfiguration müssen Sie festlegen, ob Sie eine vorhandene Tag-E
 
   Geben Sie eine Zeichenfolge für reguläre Ausdrücke für **[!UICONTROL Einzuschließende/auszuschließende Seiten]** an. <br/>Beispiel: `^(?!.*documentation).*`, um alle Dokumentationsseiten aus Content Analytics auszuschließen.
 
-* Geben Sie an, welche Assets bei der Datenerfassung zur Inhaltsanalyse ein- oder ausgeschlossen werden sollen.
+* Geben Sie an, welche Assets bei der Datenerfassung für Content Analytics eingeschlossen oder ausgeschlossen werden sollen.
 
   Geben Sie eine Zeichenfolge für reguläre Ausdrücke für **[!UICONTROL Einzuschließende/auszuschließende Assets]** an. <br/>Beispiel: `^(?!.*(logo\.jpg)).*$`, um alle Logo-Bilder im JPEG-Format aus Content Analytics auszuschließen.
 
@@ -336,11 +336,11 @@ Sie können jedoch die Seiten und Assets bearbeiten, die ein- oder ausgeschlosse
 
 Nachdem Sie alle erforderlichen Details angegeben haben, werden die Informationen zu den erstellten oder geänderten Artefakten in einer Zusammenfassung aufgeführt.
 
-* Beim Implementieren einer neuen Konfiguration wird Ihnen die Zusammenfassung **[!UICONTROL Sie sind fast bereit, _Konfigurationsname_ für die Inhaltsanalyse zu implementieren]** angezeigt.
+* Beim Implementieren einer neuen Konfiguration wird Ihnen die Zusammenfassung **[!UICONTROL Sie sind fast bereit, _Konfigurationsname_ für Content Analytics zu implementieren]** angezeigt.
 
-* Für vorhandene implementierte Konfigurationen wird die Zusammenfassung **[!UICONTROL Sie haben _Konfigurationsname_ für die Inhaltsanalyse implementiert]** angezeigt.
+* Für vorhandene implementierte Konfigurationen wird die Zusammenfassung **[!UICONTROL Sie haben _Konfigurationsname_ für Content Analytics implementiert]** angezeigt.
 
-![Zusammenfassung für die Inhaltsanalysekonfiguration](../assets/aca-configuration-summary.png)
+![Zusammenfassung für die Content Analytics-Konfiguration](../assets/aca-configuration-summary.png)
 
 ### Aktionen {#actions}
 
@@ -366,16 +366,16 @@ Wenn Sie eine Konfiguration erstellen oder bearbeiten, haben Sie die folgenden O
 
 
    * **[!UICONTROL Adobe Experience Platform-Konfiguration]**:
-      * Die Erstellung von Schemata zur Modellierung von Inhaltsanalyse-Ereignissen, Asset-Attributen und (sofern konfiguriert) Erlebnisattributen.
-      * Die Erstellung von Datensätzen zur Erfassung von Inhaltsanalyse-Ereignissen, Asset-Attributen und (sofern konfiguriert) Erlebnisattributen.
+      * Die Erstellung von Schemata zur Modellierung von Content Analytics-Ereignissen, Asset-Attributen und (sofern konfiguriert) Erlebnisattributen.
+      * Die Erstellung von Datensätzen zur Erfassung von Content Analytics-Ereignissen, Asset-Attributen und (sofern konfiguriert) Erlebnisattributen.
       * Die Erstellung eines Datenflusses, der den Featurisierungs-Service verwendet, um Inhaltsattribute aus Content Analytics-Ereignissen zu generieren und zu aktualisieren.
 
 
    * **[!UICONTROL Konfiguration der Datenerfassung]**:
-      * Die neue oder vorhandene Tags-Eigenschaft ist so konfiguriert, dass sie die Content Analytics-Datenerfassung unterstützt. Diese Konfiguration impliziert die Einbeziehung der Inhaltsanalyse-Erweiterung von Adobe für Tags.
-      * Ein Datenstrom wird für Inhaltsanalyse-Ereignisse erstellt.
-      * Die Inhaltsanalyse-Erweiterung von Adobe ist so konfiguriert, dass Inhaltsanalyse-Ereignisse an den Datenstrom für die Inhaltsanalyse gesendet werden.
-      * Wenn das Web SDK nicht für die Tags-Eigenschaft konfiguriert ist, wird eine neue Web SDK-Konfiguration erstellt, um ausschließlich Inhaltsanalyse-Ereignisse zu senden.
+      * Die neue oder vorhandene Tags-Eigenschaft ist so konfiguriert, dass sie die Content Analytics-Datenerfassung unterstützt. Diese Konfiguration impliziert die Einbeziehung der Content Analytics-Erweiterung von Adobe für Tags.
+      * Ein Datenstrom wird für Content Analytics-Ereignisse erstellt.
+      * Die Content Analytics-Erweiterung von Adobe ist so konfiguriert, dass Content Analytics-Ereignisse an den Datenstrom für Content Analytics gesendet werden.
+      * Wenn das Web SDK nicht für die Tags-Eigenschaft konfiguriert ist, wird eine neue Web SDK-Konfiguration erstellt, um ausschließlich Content Analytics-Ereignisse zu senden.
       * Wenn das Web SDK für diese Tags-Eigenschaft konfiguriert ist, werden an der vorhandenen Konfiguration des Web SDK keine Änderungen vorgenommen.
 
 

@@ -7,19 +7,19 @@ exl-id: 9075518e-54fe-49a6-9601-aa9468187b8f
 solution: Customer Journey Analytics
 role: User
 source-git-commit: 9056b8b172ae7a2267bf12de4b2355d1a1364b32
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1490'
 ht-degree: 100%
 
 ---
 
-# Überblick über Analysis Workspace {#analysis-workspace-overview}
+# Analysis Workspace – Überblick {#analysis-workspace-overview}
 
 Mit Analysis Workspace können Sie schnell Analysen erstellen, um Erkenntnisse zu gewinnen und diese Erkenntnisse dann für andere freizugeben. Mithilfe der Drag-and-Drop-Browser-Oberfläche können Sie Ihre Analyse erstellen, Visualisierungen hinzufügen, um Daten lebendig werden zu lassen, einen Datensatz kuratieren sowie [Projekte](/help/analysis-workspace/build-workspace-project/freeform-overview.md) für andere in Ihrer Organisation freigeben und planen.
 
 >[!BEGINSHADEBOX]
 
-Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Analysis Workspace – Übersicht](https://video.tv.adobe.com/v/35525/?quality=12&learn=on&captions=ger){target="_blank"} finden Sie ein Demovideo.
+Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Analysis Workspace – Übersicht](https://video.tv.adobe.com/v/26266/?quality=12&learn=on){target="_blank"} finden Sie ein Demovideo.
 
 {{videoaa}}
 
@@ -34,7 +34,7 @@ Das folgende Bild und die zugehörige Tabelle erläutern die Hauptelemente der B
 | Standort | Name und Funktion |
 |:---------:|----------|
 | A  | Enthält den Projektnamen, eine Menüstruktur für den Zugriff auf die Funktionen, eine Schaltfläche ![Zurück-Schaltfläche](/help/assets/icons/ChevronLeft.svg) zum Zurückkehren zur Projektliste und eine Schaltfläche **[!UICONTROL Freigabe]** zum [Freigeben Ihres Workspace-Projekts](/help/analysis-workspace/curate-share/share-projects.md). <br/>Sie können jederzeit den Namen Ihres Projekts (z. B. „Neues Projekt“) auswählen, um den Namen zu ändern. <br/>Wählen Sie ![Favorisierung aufheben](/help/assets/icons/StarOutline.svg) aus, um Ihr Projekt als bevorzugtes Projekt ![Favorisieren](/help/assets/icons/Star.svg) zu markieren. |
-| B | **Schaltflächen-Panel**: Enthält Schaltflächen für den Zugriff auf die wichtigsten [Funktionen](#features) von Analysis Workspace:<ul><li>![WebSeite](/help/assets/icons/WebPage.svg) [[!UICONTROL Bedienfelder]](/help/analysis-workspace/c-panels/panels.md)</li><li>![Geführte Analyse](/help/assets/icons/GuidedAnalysis.svg) [[!UICONTROL Geführte Analyse]](/help/guided-analysis/overview.md)</li><li>![VertikaleGrafikbalken](/help/assets/icons/GraphBarVertical.svg) [[!UICONTROL Visualisierungen]](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md)</li><li>![Kuratieren](/help/assets/icons/Curate.svg) [[!UICONTROL Komponenten]](/help/components/overview.md)</li><li>![Ansichtsliste](/help/assets/icons/ViewList.svg) [[!UICONTROL Inhaltsverzeichnis]](/help/analysis-workspace/build-workspace-project/project-table-of-contents.md)</li><li>![Lesezeichen](/help/assets/icons/Bookmark.svg) [[!UICONTROL Datenwörterbuch]](/help/components/data-dictionary/data-dictionary-overview.md)</li></ul> |
+| B | **Schaltflächen-Panel**: Enthält Schaltflächen für den Zugriff auf die wichtigsten [Funktionen](#features) von Analysis Workspace:<ul><li>![Web-Seite](/help/assets/icons/WebPage.svg) [[!UICONTROL Panels]](/help/analysis-workspace/c-panels/panels.md)</li><li>![Geführte Analyse](/help/assets/icons/GuidedAnalysis.svg) [[!UICONTROL Geführte Analyse]](/help/guided-analysis/overview.md)</li><li>![VertikaleGrafikbalken](/help/assets/icons/GraphBarVertical.svg) [[!UICONTROL Visualisierungen]](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md)</li><li>![Kuratieren](/help/assets/icons/Curate.svg) [[!UICONTROL Komponenten]](/help/components/overview.md)</li><li>![Ansichtsliste](/help/assets/icons/ViewList.svg) [[!UICONTROL Inhaltsverzeichnis]](/help/analysis-workspace/build-workspace-project/project-table-of-contents.md)</li><li>![Lesezeichen](/help/assets/icons/Bookmark.svg) [[!UICONTROL Datenwörterbuch]](/help/components/data-dictionary/data-dictionary-overview.md)</li></ul> |
 | C | **Linkes Bedienfeld:** Dieser Bereich enthält einzelne Bedienfelder, Visualisierungen, Komponenten oder Listen. Der Inhalt hängt von der im Schaltflächenbedienfeld ausgewählten Schaltfläche ab. |
 | D | **Arbeitsfläche:** Der Hauptbereich, in den Sie Inhalte aus dem linken Bedienfeld ziehen, um Ihr Projekt zu erstellen. Das Projekt wird dynamisch aktualisiert, wenn Sie Bedienfelder hinzufügen, Visualisierungen zu Bedienfeldern hinzufügen und Komponenten zu Visualisierungen hinzufügen. Sie können mehrere Bedienfelder erstellen und in jedem Bedienfeld können Sie mehrere Visualisierungen erstellen.<br/>Jedes Bedienfeld basiert auf einer ausgewählten Datenansicht. Die ausgewählte Datenansicht bestimmt verfügbare Komponenten wie Metriken und Dimensionen. Weitere Informationen finden Sie unter [Bedienfelder – Datenansicht](/help/analysis-workspace/c-panels/panels.md#data-view). |
 

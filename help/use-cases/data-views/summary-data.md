@@ -7,7 +7,7 @@ role: Admin
 exl-id: 80139806-618a-46ff-b2c4-32d7bb85a526
 source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
 workflow-type: tm+mt
-source-wordcount: '5202'
+source-wordcount: '5021'
 ht-degree: 15%
 
 ---
@@ -278,7 +278,7 @@ Lookup-Daten sind im Beispiel-Lookup-Datensatz verfügbar. Die Beispieldaten seh
 | 17 | DEF321 | def-adgroup | 321-Kampagne |
 | 18 | ghi321 | ghi-adgroup | 321-Kampagne |
 
-[![DataDownload](/help/assets/icons/DataDownload.svg) Herunterladen von Beispielsuchdaten](./assets/lookup-data.csv)
+[![DataDownload](/help/assets/icons/DataDownload.svg)](./assets/lookup-data.csv)
 +++
 
 >[!INFO]
@@ -483,7 +483,7 @@ Um sicherzustellen, dass Sie Berichte zu den richtigen Daten in Workspace erstel
          ![Trackingcode-Zusammenfassungsdaten](../assets/tracking-code-summary-data.png)
          1. Erweitern Sie ![ChevronDown](/help/assets/icons/ChevronDown.svg) **[!UICONTROL Summary Data Group]**.
          1. Aktivieren Sie **[!UICONTROL Gruppierung erstellen]**.
-         1. Wählen Sie **[!UICONTROL Kampagnenkennung]** aus dem Dropdown-Menü {2 **Dimension} aus.** Dieser Schritt stellt sicher, dass Ereignisdaten und Zusammenfassungsdaten für das Reporting ordnungsgemäß kombiniert werden.
+         1. Wählen Sie **[!UICONTROL Kampagnenkennung]** aus dem Dropdown-Menü {2 **[!UICONTROL Dimension} aus.]** Dieser Schritt stellt sicher, dass Ereignisdaten und Zusammenfassungsdaten für das Reporting ordnungsgemäß kombiniert werden.
          1. Sie können optional &quot;**[!UICONTROL in Berichten ausblenden“]**. [!UICONTROL In Berichten ausblenden] stellt sicher, dass die ausgewählte Dimension ([!UICONTROL Kampagnen-ID]) in Analysis Workspace und anderen Reporting-Tools von Customer Journey Analytics ausgeblendet ist. Wenn Sie diese Option aktiviert haben, können Sie die Option überprüfen:
             1. Wählen Sie die Dimension **[!UICONTROL Kampagnen]** ID) in der Liste **[!UICONTROL Dimensionen]** aus.
             1. Sie werden feststellen **[!UICONTROL dass „Komponente in Berichten ausblenden]** in **[!UICONTROL Komponenteneinstellungen]** jetzt automatisch aktiviert ist.
@@ -506,7 +506,7 @@ Um sicherzustellen, dass Sie Berichte zu den richtigen Daten in Workspace erstel
 
          1. Erweitern Sie ![ChevronDown](/help/assets/icons/ChevronDown.svg) **[!UICONTROL Summary Data Group]**.
          1. Aktivieren Sie **[!UICONTROL Gruppierung erstellen]**.
-         1. Wählen Sie **[!UICONTROL Kampagnenname (abgeleitetes Suchfeld)]** Dropdown-Menü {2 **Dimension} aus.** Dadurch wird sichergestellt, dass der Kampagnenname (Lookup) aus dem Beispiel-Lookup-Datensatz sicher in Berichten verwendet werden kann (siehe [Workspace](#workspace)).
+         1. Wählen Sie **[!UICONTROL Kampagnenname (abgeleitetes Suchfeld)]** Dropdown-Menü {2 **[!UICONTROL Dimension} aus.]** Dadurch wird sichergestellt, dass der Kampagnenname (Lookup) aus dem Beispiel-Lookup-Datensatz sicher in Berichten verwendet werden kann (siehe [Workspace](#workspace)).
 
       1. Wählen Sie die **[!UICONTROL Umsatz]** aus der Liste **[!UICONTROL Metriken]** aus. Im Bedienfeld Komponente :
 
@@ -526,7 +526,7 @@ Um sicherzustellen, dass Sie Berichte zu den richtigen Daten in Workspace erstel
             1. Wählen Sie **[!UICONTROL 30 Tag]** aus dem **[!UICONTROL Lookback-Fenster]** Dropdown-Menü aus.
          1. Entfalten ![ChevronDown](/help/assets/icons/ChevronDown.svg) **[!UICONTROL Format]**.
             1. Wählen Sie **[!UICONTROL Dezimal]** aus dem **[!UICONTROL Format]** Dropdown-Menü aus.
-            1. Wählen Sie **[!UICONTROL ▲ Gut (grün]** aus dem Dropdown **[!UICONTROL Menü „Aufwärts-Trend anzeigen als]** aus.
+            1. Wählen Sie **[!UICONTROL ▲Gut (grün]** aus dem **[!UICONTROL Aufwärts-Trend anzeigen als]** Dropdown-Menü aus.
 
       1. Wählen Sie **[!UICONTROL Speichern und fortfahren]** aus.
 
@@ -603,4 +603,4 @@ Ihr endgültiges Projekt sollte wie das unten dargestellte aussehen.
 >[!MORELIKETHIS]
 >
 >[Zusammenfassungsdaten](/help/data-views/summary-data.md)
->[Einstellungen für die Datengruppen-Zusammenfassungskomponente](/help/data-views/component-settings/summary-data-group.md)
+>>[Einstellungen für die Datengruppen-Zusammenfassungskomponente](/help/data-views/component-settings/summary-data-group.md)

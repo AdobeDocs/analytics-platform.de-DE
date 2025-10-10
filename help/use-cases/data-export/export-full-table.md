@@ -1,5 +1,5 @@
 ---
-title: Customer Journey Analytics Export Full Table
+title: Vollständige Customer Journey Analytics-Exporttabelle
 description: Beschreibt, wie Sie die Funktion „Vollständige Tabelle exportieren“ verwenden können, um Ihre Daten zu validieren oder Ihre Daten für KI/ML zu verwenden.
 solution: Customer Journey Analytics
 feature: Use Cases

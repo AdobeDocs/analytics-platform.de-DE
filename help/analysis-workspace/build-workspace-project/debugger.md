@@ -4,7 +4,8 @@ keywords: Analysis Workspace
 feature: Workspace Basics
 title: Projekt-Debugger
 role: User
-source-git-commit: ae8c1fb127accae53ab9363a8cceedd5221a245b
+exl-id: 1335ec1f-5597-4e23-8228-3d477534de43
+source-git-commit: 695d5f686d10fc39b1b3d717a19fd6e874d81b33
 workflow-type: tm+mt
 source-wordcount: '466'
 ht-degree: 3%
@@ -17,7 +18,7 @@ Der Projekt-Debugger unterstützt Sie und den Adobe-Support bei der Fehlerbehebu
 
 >[!NOTE]
 >
->Um den Debugger verwenden zu können, benötigen Sie **Bearbeiten** oder **Kopieren** [Zugriff auf das Projekt](https://experienceleague.adobe.com/de/docs/experience-cloud-kcs/kbarticles/ka-25744).
+>Um den Debugger verwenden zu können, benötigen Sie **Bearbeiten** oder **Kopieren** [Zugriff auf das Projekt](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-25744).
 >
 
 
@@ -31,7 +32,7 @@ Der Projekt-Debugger unterstützt Sie und den Adobe-Support bei der Fehlerbehebu
 So aktivieren Sie den Debugger:
 
 1. Wählen **[!UICONTROL Hilfe]** > **[!UICONTROL Debugger aktivieren]** aus dem Analysis Workspace-Projektmenü.
-1. Wählen **&#x200B;**&#x200B;im Dialogfeld **[!UICONTROL Debugger aktivieren]** die Option OK aus.
+1. Wählen **** im Dialogfeld **[!UICONTROL Debugger aktivieren]** die Option OK aus.
 1. Bestätigen Sie, wenn der Browser Sie auffordert, die Seite oder Site neu zu laden.
 
 
@@ -94,8 +95,5 @@ Wiederholen Sie die obigen Schritte für jede andere Visualisierung, die Sie beh
 Deaktivieren des Debuggers:
 
 1. Wählen **[!UICONTROL Hilfe]** > **[!UICONTROL Debugger deaktivieren]** aus dem Analysis Workspace-Projektmenü aus.
-1. Wählen **&#x200B;**&#x200B;im Dialogfeld **[!UICONTROL Debugger deaktivieren]** die Option OK aus.
+1. Wählen **** im Dialogfeld **[!UICONTROL Debugger deaktivieren]** die Option OK aus.
 1. Bestätigen Sie, wenn der Browser Sie auffordert, die Seite oder Site neu zu laden.
-
-
-

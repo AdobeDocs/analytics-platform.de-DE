@@ -1,5 +1,5 @@
 ---
-title: Customer Journey Analytics BI-Erweiterung
+title: Customer Journey Analytics-BI-Erweiterung
 description: Beschreibt, wie Sie mit der BI-Erweiterung digitale Daten in Ihre eigenen BI-Tools oder in den Data Lake zur Verwendung mit zusätzlichen Datensätzen importieren können.
 solution: Customer Journey Analytics
 feature: Use Cases
@@ -8,7 +8,7 @@ exl-id: 669a1305-3e37-4ca2-8178-a89a27958e5d
 source-git-commit: 9fef1fddbb4b51efb9282e3ef13501bd498a4546
 workflow-type: tm+mt
 source-wordcount: '154'
-ht-degree: 47%
+ht-degree: 50%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 47%
 
 In diesem Artikel wird beschrieben, wie die [!DNL Customer Journey Analytics BI extension] zur Implementierung des folgenden [Anwendungsfalls für den Datenexport“ verwendet ](overview.md) kann:
 
-- Data Lake-, Data Warehouse- oder BI-Tools
+- Data Lake, Data Warehouse oder BI-Tools
 
 ## Einführung
 

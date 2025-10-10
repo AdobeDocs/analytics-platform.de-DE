@@ -8,15 +8,15 @@ hide: true
 hidefromtoc: true
 exl-id: 9559ba10-cbaf-4243-9c85-a0a5f6e3bbff
 source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2981'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
 # Schritt 2: Auswählen des Upgrade-Pfads
 
-+++Erweitern Sie diesen Abschnitt, um zu sehen, wo die Informationen auf dieser Seite in den allgemeinen Upgrade-Prozess einzuordnen sind. Stellen Sie sicher, dass alle vorherigen Upgrade-Schritte abgeschlossen sind.
++++Erweitern Sie diesen Abschnitt, um zu sehen, wo die Informationen auf dieser Seite in den größeren Aktualisierungsprozess passen. Stellen Sie sicher, dass alle vorherigen Upgrade-Schritte abgeschlossen sind.
 
 Bevor Sie mit diesem Abschnitt fortfahren, stellen Sie zunächst sicher, dass Sie alle vorherigen Upgrade-Aufgaben abgeschlossen haben.
 
@@ -122,7 +122,7 @@ Im Folgenden finden Sie die Upgrade-Pfade, die für Organisationen verfügbar si
 
 +++
 
-+++Migration von Adobe Analytics zu Experience Platform Web SDK
++++Migrieren von Adobe Analytics zur Experience Platform Web SDK
 
 | Vorteile | Nachteile |
 |----------|---------|
@@ -166,7 +166,7 @@ Wenn Sie den Upgrade-Pfad auswählen, über den Sie die Adobe Analytics-Web-SDK-
 
 Sie können entscheiden, ob Sie Ihr vorhandenes Adobe Analytics-Schema verwenden oder ein Update auf Ihr eigenes XDM-Schema vornehmen möchten, um es bei der Nutzung anderer Platform-Dienste besser an die Anforderungen Ihrer Organisation anzupassen.
 
-+++Verwenden des Adobe Analytics-Schemas bei der Adobe Analytics Web SDK-Implementierung
++++Verwenden des Adobe Analytics-Schemas mit der Adobe Analytics Web SDK-Implementierung
 
 | Vorteile | Nachteile |
 |----------|---------|
@@ -174,7 +174,7 @@ Sie können entscheiden, ob Sie Ihr vorhandenes Adobe Analytics-Schema verwenden
 
 +++
 
-+++Verwenden Ihres eigenen XDM-Schemas bei der Adobe Analytics Web SDK-Implementierung
++++Eigenes XDM-Schema mit der Adobe Analytics Web SDK-Implementierung verwenden
 
 | Vorteile | Nachteile |
 |----------|---------|

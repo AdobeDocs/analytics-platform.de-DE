@@ -6,7 +6,7 @@ keywords: Produktanalysen
 role: User
 exl-id: 8a48ad3b-fa30-497e-8306-f8d881b1a335
 source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '748'
 ht-degree: 100%
 
@@ -33,7 +33,7 @@ Funktionen, die oben in dieser Visualisierung dargestellt werden, zeigen, dass s
 * Funktionen unten links in der Matrix sind Ihre Funktion mit **geringer Wirkung**. Sie werden nicht weithin oder häufig verwendet.
 * Funktionen rechts unten in der Matrix sind Ihre **einmaligen** Funktionen. Sie werden weithin, aber nicht häufig verwendet.
 
->[!VIDEO](https://video.tv.adobe.com/v/3447476?captions=ger)
+>[!VIDEO](https://video.tv.adobe.com/v/3429489/&learn=on)
 
 
 ## Anwendungsfälle

@@ -6,7 +6,7 @@ feature: Content Analytics
 role: User
 exl-id: 6e756ae8-b969-46f1-95b8-d8fbb0d058ed
 source-git-commit: e8cba64e706a456861fd8392ce9260b7a1c4636b
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1300'
 ht-degree: 100%
 
@@ -70,7 +70,7 @@ So verwenden Sie die Vorlage:
 1. Wählen Sie im Dialogfeld **[!UICONTROL Vorlage einrichten]** eine Metrik aus dem Dialogfeld **[!UICONTROL Konversionsmetrik auswählen]** aus, z. B. **[!UICONTROL Asset – CTR]**.
 1. Wählen Sie **[!UICONTROL Weiter]** aus.
 
-Ein Projekt vom Typ **[!UICONTROL Übersicht der Inhaltsanalyse]** wird in [Analysis Workspace](/help/analysis-workspace/home.md) geöffnet. Das Projekt besteht aus vier [Panels](/help/analysis-workspace/c-panels/panels.md), jeweils mit [Freiformtabellen](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) und [Visualisierungen](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md) zur Beantwortung einer bestimmten Frage:
+Ein Projekt vom Typ **[!UICONTROL Übersicht über Content Analytics]** wird in [Analysis Workspace](/help/analysis-workspace/home.md) geöffnet. Das Projekt besteht aus vier [Panels](/help/analysis-workspace/c-panels/panels.md), jeweils mit [Freiformtabellen](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) und [Visualisierungen](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md) zur Beantwortung einer bestimmten Frage:
 
 * **Welche Inhalte schneiden am besten ab?**
 Durch dieses Panel erfahren Sie, welche Erlebnisse und welche Assets in diesen Erlebnissen zu Interaktionen und Konversionen beitragen. Erlebnisse bedeuten hier eine vollständige Web-Seite, die zu einem bestimmten Zeitpunkt erfasst wird. Ein Erlebnis kann sowohl Text als auch mehrere einzelne Bild-Assets enthalten. Ein Asset ist ein einzelnes Bild.

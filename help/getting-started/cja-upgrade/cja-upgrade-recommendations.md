@@ -115,11 +115,11 @@ Jeder Schritt bietet eine allgemeine Erklärung eines detaillierteren Prozesses.
 
    +++
 
-+++ API
+   +++ API
 
    1. Edge Network-API verwenden, um Daten zum gewünschten Datenstrom zu senden.
 
-+++
+   +++
 
 1. [Validieren, dass Web-SDK-Implementierung Daten zum Datensatz sendet](/help/getting-started/cja-upgrade/cja-upgrade-dataset-ingestion.md){target="_blank"}.
 

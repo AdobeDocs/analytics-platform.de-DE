@@ -6,7 +6,7 @@ solution: Customer Journey Analytics
 feature: Use Cases, Cross-Channel Analysis
 role: User
 source-git-commit: 5e80e68c6b5d3dca19dae21c6719b040b28afaf9
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '581'
 ht-degree: 100%
 
@@ -48,9 +48,9 @@ Die kanalübergreifende Analyse verschafft Ihnen einen zentralen Überblick übe
 
 Beachten Sie bei der Erstellung dieses Workflows die folgenden Punkte.
 
-* Für die kanalübergreifende Analyse von Daten ist für jeden Datensatz derselbe ID-Namespace erforderlich.
+* Für die kanalübergreifende Analyse von Daten ist für jeden Eintrag derselbe ID-Namespace erforderlich.
 * Für den Vereinigungsprozess verschiedener Datensätze ist ein gemeinsamer primärer Personen-/Entitätsschlüssel für die Datensätze erforderlich.
 * Sekundäre schlüsselbasierte Vereinigungen werden derzeit nicht unterstützt.
-* Der Zuordnungsprozess ermöglicht die Neuzuweisung von Identitäten in Zeilen basierend auf Informationen zu vorübergehenden IDs (z. B. einer Authentifizierungs-ID) aus Datensätzen mit derselben persistenten ID. Dies ermöglicht die Auflösung unterschiedlicher Datensätze zu einer einzelnen zusammengefügten ID für die Analyse auf Personenebene und nicht auf Geräte- oder Cookie-Ebene.
+* Der Zuordnungsprozess ermöglicht die Neuzuweisung von Identitäten in Zeilen basierend auf Informationen zu vorübergehenden IDs (z. B. einer Authentifizierungs-ID) aus Einträgen mit derselben persistenten ID. Dies ermöglicht die Auflösung unterschiedlicher Einträge zu einer einzelnen zusammengefügten ID für die Analyse auf Personenebene und nicht auf Geräte- oder Cookie-Ebene.
 * Objekte und Attribute desselben XDM-Felds werden in Customer Journey Analytics zu einer Dimension zusammengeführt. Um mehrere Attribute aus verschiedenen Datensätzen mit derselben Customer Journey Analytics-Dimension zusammenzuführen, sollten die Datensätze auf dasselbe XDM-Feld oder Schema verweisen.
 

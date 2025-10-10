@@ -6,11 +6,11 @@ exl-id: 0d102f0f-3bcc-4f3a-93d2-c2b991c636cb
 source-git-commit: c209341400bf4e0c00719075f0fc82f81ca9dbb4
 workflow-type: tm+mt
 source-wordcount: '215'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
-# Teilnahmemetriken
+# Beitragsmetriken
 
 Teilnehmermetriken werden verwendet, um zu quantifizieren, wie einzelne Werte für eine Dimension (wie Seitenansichten) zu Sitzungen, die eine bestimmte Metrik enthalten (wie Bestellungen), beitragen oder daran teilnehmen.
 

@@ -6,7 +6,7 @@ solution: Customer Journey Analytics
 feature: Basics
 role: User, Admin
 source-git-commit: 0f445d409d276072ac649b94c12b94d3a59e7925
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1046'
 ht-degree: 100%
 
@@ -29,7 +29,7 @@ Diese Architektur veranschaulicht, wie Customer Journey Analytics Folgendes erm�
 
 >[!BEGINSHADEBOX]
 
-Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Customer Journey-Analysen: Analytik f체r das Erlebnis-Business](https://video.tv.adobe.com/v/36221/?quality=12&learn=on&captions=ger){target="_blank"} finden Sie ein Einf체hrungsvideo zu Customer Journey Analytics.
+Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Customer Journey-Analysen: Analytik f체r das Erlebnis-Business](https://video.tv.adobe.com/v/30090/?quality=12&learn=on){target="_blank"} finden Sie ein Einf체hrungsvideo zu Customer Journey Analytics.
 
 >[!ENDSHADEBOX]
 
@@ -99,13 +99,13 @@ Von der Datenerfassung bis zum direkten SQL-Zugriff sind mehrere Komponenten von
 
 >[!BEGINSHADEBOX]
 
-Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Arbeiten mit Daten in Customer Journey Analytics](https://video.tv.adobe.com/v/35931/?quality=12&learn=on&captions=ger){target="_blank"} finden Sie ein Einf체hrungsvideo zum Arbeiten mit Daten in Customer Journey Analytics.
+Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Arbeiten mit Daten in Customer Journey Analytics](https://video.tv.adobe.com/v/32112/?quality=12&learn=on){target="_blank"} finden Sie ein Einf체hrungsvideo zum Arbeiten mit Daten in Customer Journey Analytics.
 
 >[!ENDSHADEBOX]
 
 >[!BEGINSHADEBOX]
 
-Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Architektur und Integration](https://video.tv.adobe.com/v/330410/?quality=12&learn=on&captions=ger){target="_blank"} finden Sie ein Einf체hrungsvideo zur Architektur und Integration von Customer Journey Analytics.
+Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Architektur und Integration](https://video.tv.adobe.com/v/32483/?quality=12&learn=on){target="_blank"} finden Sie ein Einf체hrungsvideo zur Architektur und Integration von Customer Journey Analytics.
 
 >[!ENDSHADEBOX]
 

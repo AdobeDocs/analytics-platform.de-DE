@@ -1,14 +1,14 @@
 ---
 title: Kombinierte Ereignis-Datensätze
-description: Erfahren Sie, wie Customer Journey Analytics durch Kombinieren von Datensätzen eine Verbindung erstellt.
+description: Erfahren Sie, wie Customer Journey Analytics eine Verbindung erstellt, indem Datensätze kombiniert werden.
 exl-id: 9f678225-a9f3-4134-be38-924b8de8d57f
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
 source-git-commit: aaf23560b69c90fdbaee3fa401b5fe58e6a4e5d1
 workflow-type: tm+mt
-source-wordcount: '919'
-ht-degree: 34%
+source-wordcount: '946'
+ht-degree: 33%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 34%
 Wenn Sie eine Verbindung erstellen, kombiniert Customer Journey Analytics alle Ereignis-Datensätze zu einem einzigen Datensatz. Dieser kombinierte Ereignis-Datensatz wird von Customer Journey Analytics für das Reporting verwendet (zusammen mit Profil- und Lookup-Datensätzen). Wenn Sie mehrere Ereignis-Datensätze in eine Verbindung einbeziehen:
 
 * Die Daten für Felder in Datensätzen, die auf **Schemapfad basieren** werden im kombinierten Datensatz zu einer einzigen Spalte zusammengeführt.
-* Die für jeden Datensatz angegebene Spalte mit der Personen-ID wird im kombinierten Datensatz (unabhängig vom **) zu einer einzigen Spalte**. Diese Spalte dient als Grundlage für die Identifizierung von eindeutigen Personen beim Customer Journey Analytics.
+* Die für jeden Datensatz angegebene Spalte mit der Personen-ID wird im kombinierten Datensatz (unabhängig vom **) zu einer einzigen Spalte**. Diese Spalte dient als Grundlage für die Identifizierung von eindeutigen Personen in Customer Journey Analytics.
 * Zeilen werden anhand des Zeitstempels verarbeitet.
 * Ereignisse werden auf die Millisekunden-Ebene aufgelöst.
 
@@ -32,18 +32,18 @@ Siehe folgendes Beispiel. Sie haben zwei Ereignis-Datensätze mit jeweils unters
 
 | example_id | timestamp | string_color | string_Animal | metric_a |
 | --- | --- | --- | --- | ---: |
-| user_310 | 1. Januar 7:02 | Rot | Fuchs | |
-| user_310 | 1. Januar 7:04 | | | 2 |
-| user_310 | 1. Januar 7:08 | Blau | | 3 |
-| user_847 | 2. Januar 12:31 | | Schildkröte | 4 |
-| user_847 | 2. Januar 12:44 | | | 2 |
+| user_310 | &#x200B;1. Januar :02 | Rot | Fuchs | |
+| user_310 | &#x200B;1. Januar :04 | | | 2 |
+| user_310 | &#x200B;1. Januar :08 | Blau | | 3 |
+| user_847 | &#x200B;2. Januar :31 Uhr | | Schildkröte | 4 |
+| user_847 | &#x200B;2. Januar :44 Uhr | | | 2 |
 
 | different_id | timestamp | string_color | string_Shape | metric_b |
 | --- | --- | --- | --- | ---: |
-| user_847 | 2. Januar 12:26 | Gelb | Kreis | 8,5 |
-| user_847 | 2. Januar 13:01 | Rot | | |
-| alternateid_656 | 2. Januar 20:58 | Rot | Square | 4.2 |
-| alternateid_656 | 2. Januar 21:03 | | Dreieck | 3,1 |
+| user_847 | &#x200B;2. Januar :26 Uhr | Gelb | Kreis | 8,5 |
+| user_847 | &#x200B;2. Januar :01 PM | Rot | | |
+| alternateid_656 | 2 Jan 8:58 PM | Rot | Square | 4.2 |
+| alternateid_656 | 2 Jan 9:03 PM | | Dreieck | 3,1 |
 
 Wenn Sie eine Verbindung mit diesen beiden Ereignis-Datensätzen erstellen und
 
@@ -54,29 +54,29 @@ Der folgende kombinierte Datensatz wird für das Reporting verwendet.
 
 | ID | timestamp | string_color | string_Animal | string_Shape | metric_a | metric_b |
 | --- | --- | --- | --- | --- | ---: | ---: |
-| user_310 | 1. Januar 7:02 | Rot | Fuchs | | | |
-| user_310 | 1. Januar 7:04 | | | | 2 | |
-| user_310 | 1. Januar 7:08 | Blau | | | 3 | |
-| user_847 | 2. Januar 12:26 | Gelb | | Kreis | | 8,5 |
-| user_847 | 2. Januar 12:31 | | Schildkröte | | 4 | |
-| user_847 | 2. Januar 12:44 | | | | 2 | |
-| user_847 | 2. Januar 13:01 | Rot | | | | |
-| alternateid_656 | 2. Januar 20:58 | Rot | | Square | | 4.2 |
-| alternateid_656 | 2. Januar 21:03 | | | Dreieck | | 3,1 |
+| user_310 | &#x200B;1. Januar :02 | Rot | Fuchs | | | |
+| user_310 | &#x200B;1. Januar :04 | | | | 2 | |
+| user_310 | &#x200B;1. Januar :08 | Blau | | | 3 | |
+| user_847 | &#x200B;2. Januar :26 Uhr | Gelb | | Kreis | | 8,5 |
+| user_847 | &#x200B;2. Januar :31 Uhr | | Schildkröte | | 4 | |
+| user_847 | &#x200B;2. Januar :44 Uhr | | | | 2 | |
+| user_847 | &#x200B;2. Januar :01 PM | Rot | | | | |
+| alternateid_656 | 2 Jan 8:58 PM | Rot | | Square | | 4.2 |
+| alternateid_656 | 2 Jan 9:03 PM | | | Dreieck | | 3,1 |
 
 Betrachten Sie dieses Szenario, um die Bedeutung von Schemapfaden zu veranschaulichen. Im ersten Datensatz basiert `string_color` auf dem Schemapfad `_experience.whatever.string_color` und im zweiten Datensatz auf dem Schemapfad `_experience.somethingelse.string_color`. In diesem Szenario werden die Daten **nicht** im resultierenden kombinierten Datensatz in einer Spalte zusammengeführt. Stattdessen sind das Ergebnis zwei `string_color` Spalten im kombinierten Datensatz:
 
 | id | timestamp | _experience.<br/>Was auch immer.<br/>string_color | _experience.<br/>etwas Anderes.<br/>string_color | string_Animal | string_Shape | metric_a | metric_b |
 |---|---|---|---|---|---|---:|---:|
-| user_310 | 1. Januar 7:02 | Rot | | Fuchs | | | |
-| user_310 | 1. Januar 7:04 | | | | | 2 | |
-| user_310 | 1. Januar 7:08 | Blau | | | | 3 | |
-| user_847 | 2. Januar 12:26 | | Gelb | | Kreis | | 8,5 |
-| user_847 | 2. Januar 12:31 | | | Schildkröte |  | 4 | |
-| user_847 | 2. Januar 12:44 | | | | | 2 | |
-| user_847 | 2. Januar 13:01 | | Rot | | | | |
-| alternateid_656 | 2. Januar 20:58 | | Rot | | Square | | 4.2 |
-| alternateid_656 | 2. Januar 21:03 | | | | Dreieck | | 3,1 |
+| user_310 | &#x200B;1. Januar :02 | Rot | | Fuchs | | | |
+| user_310 | &#x200B;1. Januar :04 | | | | | 2 | |
+| user_310 | &#x200B;1. Januar :08 | Blau | | | | 3 | |
+| user_847 | &#x200B;2. Januar :26 Uhr | | Gelb | | Kreis | | 8,5 |
+| user_847 | &#x200B;2. Januar :31 Uhr | | | Schildkröte |  | 4 | |
+| user_847 | &#x200B;2. Januar :44 Uhr | | | | | 2 | |
+| user_847 | &#x200B;2. Januar :01 PM | | Rot | | | | |
+| alternateid_656 | 2 Jan 8:58 PM | | Rot | | Square | | 4.2 |
+| alternateid_656 | 2 Jan 9:03 PM | | | | Dreieck | | 3,1 |
 
 Dieser „kombinierte Ereignis-Datensatz“ wird für das Reporting verwendet. Es spielt keine Rolle, aus welchem Datensatz eine Zeile stammt. Customer Journey Analytics behandelt alle Daten so, als befände sie sich im selben Datensatz. Wenn in beiden Datensätzen eine übereinstimmende Personen-ID angezeigt wird, werden diese als dieselbe eindeutige Person betrachtet. Wenn in beiden Datensätzen eine übereinstimmende Personen-ID mit einem Zeitstempel innerhalb von 30 Minuten angezeigt wird, werden sie als Teil derselben Sitzung betrachtet. Felder mit identischen Schemapfaden werden zusammengeführt.
 
@@ -122,6 +122,6 @@ Weitere Informationen zur kanalübergreifenden Analyse finden Sie im entsprechen
 
 Eine ausführlichere Erläuterung der Zuordnungsfunktionen finden Sie unter:
 
-* [Übersicht über das Zusammenfügen](/help/stitching/overview.md)
+* [Überblick über die Zuordnung](/help/stitching/overview.md)
 * [Häufig gestellte Fragen](/help/stitching/faq.md)
 

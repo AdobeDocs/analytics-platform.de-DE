@@ -129,7 +129,7 @@ In beiden Fällen wird unten im Report Builder-Hub ein Bestätigungsfoast angeze
 
 Um den Versand der Arbeitsmappe abzubrechen, wählen Sie **[!UICONTROL Abbrechen]** aus.
 
-## Geplante Arbeitsmappen verwalten
+## Verwalten von geplanten Arbeitsmappen
 
 Informationen zum Verwalten von bereits geplanten Arbeitsmappen finden Sie unter [Verwalten geplanter Arbeitsmappen](/help/report-builder/manage-schedules-reportbuilder.md).
 

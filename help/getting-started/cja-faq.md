@@ -6,7 +6,7 @@ solution: Customer Journey Analytics
 feature: FAQ
 role: User
 source-git-commit: 220ebd7dbc3fa75d221690cd6e5828bd94395434
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2580'
 ht-degree: 100%
 
@@ -43,7 +43,7 @@ Customer Journey Analytics enthält Funktionen zur [Datenvorbereitung](https://e
 
 +++**Kann [!UICONTROL Customer Journey Analytics] Daten über Geräte oder über Datensätze hinweg zusammenfügen?**
 
-Ja. [!UICONTROL Customer Journey Analytics] verfügt über eine [Zuordnungsfunktion](../stitching/overview.md), die innerhalb eines Datensatzes für authentifizierte und nicht authentifizierte Ereignissen verwendet werden kann. Diese Zuordnung ermöglicht die Auflösung verschiedener Datensätze zu einer einzelnen zugeordneten ID für geräteübergreifende Analysen auf Personenebene.
+Ja. [!UICONTROL Customer Journey Analytics] verfügt über eine [Zuordnungsfunktion](../stitching/overview.md), die innerhalb eines Datensatzes für authentifizierte und nicht authentifizierte Ereignissen verwendet werden kann. Diese Zuordnung ermöglicht die Auflösung verschiedener Einträge zu einer einzelnen zugeordneten ID für geräteübergreifende Analysen auf Personenebene.
 Wenn eine gemeinsame Namespace-ID (Personen-ID) datensatzübergreifend in einer [Verbindung](/help/connections/overview.md) verwendet wird, können Sie außerdem die Analyse für eine nahtlose Kombination mehrerer auf Personenebene zugeordneter Datensätze ausführen.
 
 +++
@@ -70,9 +70,9 @@ Nach der ersten Aktivierung bietet Adobe eine Aufstockung von zugeordneten Daten
 +++
 
 
-+++**Welches Verhalten wird bei nicht zugeordneten Profildatensätzen erwartet?**
++++**Welches Verhalten wird bei nicht zugeordneten Einträgen mit Profildatensätzen erwartet?**
 
-**Beispielszenario**: Sie können zwei Datensätze in eine Customer Journey Analytics-Verbindung einbinden, indem Sie `CRMid` als Personen-ID verwenden. Einer ist ein Web-Ereignis-Datensatz mit `CRMid` in allen Datensätzen. Der andere Datensatz ist ein CRM-Profildatensatz. 40 % des CRM-Datensatzes verfügen über `CRMid`, das im Web-Ereignis-Datensatz vorhanden ist. Die anderen 60 % sind im Web-Ereignis-Datensatz nicht vorhanden. Erscheinen diese Datensätze im Reporting in Analysis Workspace?<p> **Antwort**: Profilzeilen, für die keine Ereignisse verknüpft sind, werden in Customer Journey Analytics gespeichert. Sie können sie jedoch erst dann in Analysis Workspace sehen, wenn ein mit dieser ID verknüpftes Ereignis angezeigt wird.
+**Beispielszenario**: Sie können zwei Datensätze in eine Customer Journey Analytics-Verbindung einbinden, indem Sie `CRMid` als Personen-ID verwenden. Einer ist ein Web-Ereignis-Datensatz mit `CRMid` in allen Einträgen. Der andere Datensatz ist ein CRM-Profildatensatz. 40 % des CRM-Datensatzes verfügen über `CRMid`, das im Web-Ereignis-Datensatz vorhanden ist. Die anderen 60 % sind im Web-Ereignis-Datensatz nicht vorhanden. Erscheinen diese Einträge im Reporting in Analysis Workspace?<p> **Antwort**: Profilzeilen, für die keine Ereignisse verknüpft sind, werden in Customer Journey Analytics gespeichert. Sie können sie jedoch erst dann in Analysis Workspace sehen, wenn ein mit dieser ID verknüpftes Ereignis angezeigt wird.
 
 +++
 
@@ -229,7 +229,7 @@ Gehen wir beispielsweise davon aus, Ihr Vertrag berechtigt Sie zu einer Million 
 
 In einigen Fällen kann es vorkommen, dass die Gesamtanzahl der von Ihrer Verbindung erfassten Ereignisse sich von der Anzahl der Zeilen im Datensatz in [!UICONTROL Adobe Experience Platform] unterscheidet. In diesem Beispiel enthält der Datensatz „B2B Impression“ 7650 Zeilen, der Datensatz enthält jedoch 3830 Zeilen in [!UICONTROL Adobe Experience Platform]. Es kann mehrere Gründe für Diskrepanzen geben. Die folgenden Schritte können für die Diagnose hilfreich sein:
 
-1. Schlüsseln Sie diese Dimension nach **[!UICONTROL Platform-Datensatz-ID]** auf. Sie werden feststellen, dass es zwei Datensätze mit derselben Größe, aber unterschiedlichen **[!UICONTROL Platform-Datensatz-IDs]** gibt. Jeder Datensatz enthält 3.825 Einträge. Das bedeutet, dass [!UICONTROL Customer Journey Analytics] fünf Datensätze aufgrund fehlender Personen-IDs oder fehlender Zeitstempel ignoriert hat:
+1. Schlüsseln Sie diese Dimension nach **[!UICONTROL Platform-Datensatz-ID]** auf. Sie werden feststellen, dass es zwei Datensätze mit derselben Größe, aber unterschiedlichen **[!UICONTROL Platform-Datensatz-IDs]** gibt. Jeder Datensatz enthält 3.825 Einträge. Das bedeutet, dass [!UICONTROL Customer Journey Analytics] fünf Einträge aufgrund fehlender Personen-IDs oder fehlender Zeitstempel ignoriert hat:
 
    ![Aufschlüsselung](assets/data-size2.png)
 

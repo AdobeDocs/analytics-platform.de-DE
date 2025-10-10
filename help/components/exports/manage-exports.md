@@ -8,7 +8,7 @@ role: User
 source-git-commit: 6f8a43acfba23d6faeff078873742315f1506699
 workflow-type: tm+mt
 source-wordcount: '1029'
-ht-degree: 4%
+ht-degree: 6%
 
 ---
 
@@ -24,7 +24,7 @@ Um die benötigten Informationen zu finden, können Sie entweder die Liste der E
 
 ### Filtern der Exportliste
 
-1. Wählen Sie beim Customer Journey Analytics [!UICONTROL **Komponenten**] > [!UICONTROL **Exporte**] aus.
+1. Wählen Sie in Customer Journey Analytics [!UICONTROL **Komponenten**] > [!UICONTROL **Exporte**] aus.
 
 1. Wählen Sie die [!UICONTROL **Exporte**] aus.
 
@@ -36,7 +36,7 @@ Um die benötigten Informationen zu finden, können Sie entweder die Liste der E
 
    | Filter | Beschreibung |
    |---------|----------|
-   | [!UICONTROL **Kontotyp**] | Der Kontotyp, mit dem der Export verknüpft ist. Die folgenden Kontotypen sind verfügbar: <ul><li>[!UICONTROL **AEP-Data Landing Zone**]</li><li>[!UICONTROL **Amazon S3-Rollen-ARN**]</li><li>[!UICONTROL **Azure SAS**]</li><li>[!UICONTROL **Azure RBAC**]</li><li>[!UICONTROL **Google Cloud Platform**]</li><li>[!UICONTROL **Snowflake**]</li></ul>. |
+   | [!UICONTROL **Kontotyp**] | Der Kontotyp, mit dem der Export verknüpft ist. Die folgenden Kontotypen sind verfügbar: <ul><li>[!UICONTROL **AEP Data Landing Zone**]</li><li>[!UICONTROL **Amazon S3 Role ARN**]</li><li>[!UICONTROL **Azure SAS**]</li><li>[!UICONTROL **Azure RBAC**]</li><li>[!UICONTROL **Google Cloud Platform**]</li><li>[!UICONTROL **Snowflake**]</li></ul>. |
    | [!UICONTROL **Status**] | Der Status des Exports Die folgenden Status sind verfügbar: <ul><li>[!UICONTROL **Aktiv**]: Gibt an, dass ein geplanter Export noch nicht abgelaufen ist oder dass ein einmaliger Export noch nicht abgeschlossen ist. </li><li>[!UICONTROL **Abgeschlossen**]: Gibt an, dass ein Export erfolgreich exportiert wurde. Für geplante Exporte bedeutet dies, dass der Zeitplan abgelaufen ist.</li><li>[!UICONTROL **Fehlgeschlagen**]<p>Die folgenden Situationen können zu einem fehlgeschlagenen Export führen. Bewegen Sie den Mauszeiger über [!UICONTROL **Status**] Fehlgeschlagen“, um Details zum Fehler anzuzeigen. <ul><li>Geplanter Exportablauf</li><li>Zeilenbeschränkung für geplanten Export erreicht </li></ul> </p></li></ul> |
    | [!UICONTROL **Häufigkeit**] | Wie oft der Export stattfindet. Die folgenden Häufigkeiten sind verfügbar: <ul><li>[!UICONTROL **Einmalig**]</li><li>[!UICONTROL **Täglich**]</li><li>[!UICONTROL **Wöchentlich**]</li><li>[!UICONTROL **Monatlich**]</li><li>[!UICONTROL **Jährlich**]</li></ul> |
 
@@ -44,7 +44,7 @@ Um die benötigten Informationen zu finden, können Sie entweder die Liste der E
 
 ### Nach Exporten suchen
 
-1. Wählen Sie beim Customer Journey Analytics [!UICONTROL **Komponenten**] > [!UICONTROL **Exporte**] aus.
+1. Wählen Sie in Customer Journey Analytics [!UICONTROL **Komponenten**] > [!UICONTROL **Exporte**] aus.
 
 1. Wählen Sie die [!UICONTROL **Exporte**] aus.
 
@@ -54,7 +54,7 @@ Um die benötigten Informationen zu finden, können Sie entweder die Liste der E
 
 Sie können die Eigenschaften, das Format, die Planung und die Standortinformationen eines Exports bearbeiten.
 
-1. Wählen Sie beim Customer Journey Analytics [!UICONTROL **Komponenten**] > [!UICONTROL **Exporte**] aus.
+1. Wählen Sie in Customer Journey Analytics [!UICONTROL **Komponenten**] > [!UICONTROL **Exporte**] aus.
 
 1. Aktivieren [!UICONTROL **auf der Registerkarte**] Exporte“ das Kontrollkästchen neben dem Export, den Sie bearbeiten möchten.
 
@@ -70,7 +70,7 @@ Sie können die Eigenschaften, das Format, die Planung und die Standortinformati
 
 Ein vorhandener Export kann dupliziert werden.
 
-1. Wählen Sie beim Customer Journey Analytics [!UICONTROL **Komponenten**] > [!UICONTROL **Exporte**] aus.
+1. Wählen Sie in Customer Journey Analytics [!UICONTROL **Komponenten**] > [!UICONTROL **Exporte**] aus.
 
 1. Aktivieren [!UICONTROL **auf der Registerkarte**] Exporte“ das Kontrollkästchen neben dem Export, den Sie duplizieren möchten.
 
@@ -86,7 +86,7 @@ Ein vorhandener Export kann dupliziert werden.
 
 Sie können den Export manuell initiieren, entweder für einen geplanten Export oder einen einmaligen Export, der zuvor abgeschlossen wurde.
 
-1. Wählen Sie beim Customer Journey Analytics [!UICONTROL **Komponenten**] > [!UICONTROL **Exporte**] aus.
+1. Wählen Sie in Customer Journey Analytics [!UICONTROL **Komponenten**] > [!UICONTROL **Exporte**] aus.
 
 1. Aktivieren [!UICONTROL **auf der Registerkarte**] Exporte“ das Kontrollkästchen neben dem Export, den Sie ausführen möchten.
 
@@ -98,7 +98,7 @@ Sie können den Export manuell initiieren, entweder für einen geplanten Export 
 
 Wenn Sie Tags auf einen Export anwenden, können Sie diese Tags in der Spalte [!UICONTROL Tags] auf der Seite [!UICONTROL Exporte] anzeigen. Weitere Informationen finden [ unter ](#configure-columns)Konfigurieren von Spalten“.
 
-1. Wählen Sie beim Customer Journey Analytics [!UICONTROL **Komponenten**] > [!UICONTROL **Exporte**] aus.
+1. Wählen Sie in Customer Journey Analytics [!UICONTROL **Komponenten**] > [!UICONTROL **Exporte**] aus.
 
 1. Aktivieren Sie auf [!UICONTROL **Registerkarte**] das Kontrollkästchen neben einem oder mehreren Exporten, die Sie mit Tags versehen möchten.
 
@@ -114,7 +114,7 @@ Wenn Sie Tags auf einen Export anwenden, können Sie diese Tags in der Spalte [!
 
 Sie können Exporte auf der Seite Exporte löschen. Geplante Exporte, die gelöscht werden, werden nicht mehr gesendet.
 
-1. Wählen Sie beim Customer Journey Analytics [!UICONTROL **Komponenten**] > [!UICONTROL **Exporte**] aus.
+1. Wählen Sie in Customer Journey Analytics [!UICONTROL **Komponenten**] > [!UICONTROL **Exporte**] aus.
 
 1. Aktivieren [!UICONTROL **auf der Registerkarte**] Exporte“ das Kontrollkästchen neben einem oder mehreren Exporten, die Sie löschen möchten.
 
@@ -126,7 +126,7 @@ Sie können Spalten auf der Registerkarte [!UICONTROL Exporte] hinzufügen oder 
 
 Spaltenüberschrift auswählen, um die Exporte nach dieser Spalte zu sortieren. Standardmäßig werden Exporte nach Datum und Uhrzeit der letzten Änderung des Exports sortiert.
 
-1. Wählen Sie beim Customer Journey Analytics [!UICONTROL **Komponenten**] > [!UICONTROL **Exporte**] aus.
+1. Wählen Sie in Customer Journey Analytics [!UICONTROL **Komponenten**] > [!UICONTROL **Exporte**] aus.
 
 1. Wählen Sie auf [!UICONTROL **Registerkarte**] das Symbol **Tabelle anpassen** (Tabelle ![) ](assets/customize-table-icon.png) oben rechts auf der Seite [!UICONTROL Exporte] aus.
 
@@ -134,7 +134,7 @@ Spaltenüberschrift auswählen, um die Exporte nach dieser Spalte zu sortieren. 
 
    | Verfügbare Spalte | Beschreibung |
    |---------|----------|
-   | Name | Der Name des Exports Benutzende geben Exporten bei ihrer Erstellung einen Namen, wie unter [Exportieren von Customer Journey Analytics-Berichten in die Cloud](/help/analysis-workspace/export/export-cloud.md) beschrieben. |
+   | Name | Der Name des Exports Benutzer geben Exporten bei ihrer Erstellung einen Namen, wie unter [Exportieren von Customer Journey Analytics-Berichten in die Cloud](/help/analysis-workspace/export/export-cloud.md) beschrieben. |
    | ID | Die ID, die dem Export bei seiner Erstellung automatisch zugewiesen wird. <!-- True? --> |
    | Name der Datenansicht | Der Name der dem Export zugeordneten Datenansicht. Benutzerinnen und Benutzer können die Datenansicht auswählen, wenn sie den Export erstellen, wie unter [Exportieren von Customer Journey Analytics-Berichten in die Cloud](/help/analysis-workspace/export/export-cloud.md) beschrieben. |
    | Status | Der Status des Exports Verfügbare Status sind [!UICONTROL Aktiv], [!UICONTROL Abgeschlossen] und [!UICONTROL Fehlgeschlagen].<p> **Hinweis:** Informationen zur Fehlerbehebung bei fehlgeschlagenen Exporten finden Sie unter [Fehlerbehebung bei fehlgeschlagenen Exporten](/help/components/exports/troubleshoot-exports.md).</p> |

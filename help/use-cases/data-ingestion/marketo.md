@@ -33,13 +33,13 @@ So erstellen Sie Berichte zu Marketo Engage-Daten in Customer Journey Analytics:
 
 +++ &#x200B;1. Zuordnen von Marketo-Quelldatenfeldern zu ihren XDM-Zielen
 
-Ordnen Sie die Objekte [Personen](https://experienceleague.adobe.com/de/docs/experience-platform/sources/connectors/adobe-applications/mapping/marketo) und [Aktivitäten](https://experienceleague.adobe.com/de/docs/experience-platform/sources/connectors/adobe-applications/mapping/marketo) den jeweiligen XDM-Schema-Zielfeldern zu.
+Ordnen Sie die Objekte [Personen](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/mapping/marketo) und [Aktivitäten](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/mapping/marketo) den jeweiligen XDM-Schema-Zielfeldern zu.
 
 +++
 
 +++ &#x200B;2. Aufnehmen von Marketo-Daten in Adobe Experience Platform
 
-Verwenden Sie den [Marketo Engage-Connector](https://experienceleague.adobe.com/de/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo), um Daten aus Marketo in Experience Platform zu übertragen und mithilfe von Anwendungen, die mit Platform verbunden sind, auf dem neuesten Stand zu halten.
+Verwenden Sie den [Marketo Engage-Connector](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo), um Daten aus Marketo in Experience Platform zu übertragen und mithilfe von Anwendungen, die mit Platform verbunden sind, auf dem neuesten Stand zu halten.
 
 +++
 
@@ -54,7 +54,7 @@ Um Berichte zu Experience Platform-Datensätzen zu erstellen, müssen Sie zunäc
 
 Eine [Datenansicht](/help/data-views/data-views.md) ist ein für Customer Journey Analytics spezifischer Container, mit dem Sie bestimmen können, wie Daten aus einer Verbindung interpretiert werden. Sie enthält alle in Analysis Workspace verfügbaren Dimensionen und Metriken, in diesem Fall für Marketo spezifische Metriken und Dimensionen. Die Datenansicht gibt auch an, aus welchen Spalten diese Dimensionen und Metriken ihre Daten beziehen. Datenansichten werden in Vorbereitung auf das Reporting in Analysis Workspace definiert.
 
-+++
++++ 
 
 +++ &#x200B;5. Bericht in Analysis Workspace
 
@@ -88,7 +88,7 @@ Im folgenden Vergleich zwischen Berichten in Customer Journey Analytics und Mark
 
 Customer Journey Analytics ist ein erweitertes Tool zur kanalübergreifenden Analyse, das auf Adobe Experience Platform basiert. Customer Journey Analytics wurde für Unternehmens-Teams entwickelt, die leistungsstarke, flexible und anpassbare Berichte über digitale und Offline-Datenquellen hinweg benötigen.
 
-#### Wichtigste Funktionen
+#### Wichtige Funktionen
 
 * **Datenquellen**: Kann mehrere Datensätze (Web, CRM, E-Mail, Callcenter, Offline, Marketo usw.) für 360°-Kunden-Journey-Berichte kombinieren.
 * **Self-Service-Analyse**: Arbeitsbereich per Drag-and-Drop mit hochgradig interaktiven, anpassbaren Dashboards und Visualisierungen.
@@ -109,13 +109,13 @@ Customer Journey Analytics ist ein erweitertes Tool zur kanalübergreifenden Ana
 
 Marketo Engage bietet In-App-Berichte, die sich auf KPIs zur Marketing-Automatisierung, Programm- und Kampagnenmessung und die Analyse der Marketing-Auswirkungen konzentrieren. Alle diese Berichte sind direkt mit Aktivitäten in Marketo verknüpft.
 
-#### Wichtigste Funktionen
+#### Wichtige Funktionen
 
 * **Native Marketing-**: Standardberichte für E-Mail, Landingpages, Kampagnen, Leads, Opportunities, Pipeline und Umsatzzuordnung (zuerst, zuletzt, Multi-Touch).
 * **Advanced BI Analytics (Add-on)**: Erstellen von benutzerdefinierten Berichten mit Drag-and-Drop und Point-and-Click zur Analyse von Programm-/Konto-/Lead-Daten (siehe Übersicht über Advanced BI Analytics).
 * **Vordefinierte Dashboards**: Für Kampagnenleistung, Kanaleffektivität und Pipeline-/Umsatzbeitrag.
 * **Programm- und Kanalanalyse**: Attribution und ROI speziell für von Marketo verwaltete Journey.
-* **Marketing-orientiert**: Konzentriert auf Benutzer, die Transparenz im Marketing-Trichter benötigen: E-Mail-Statistiken, Formulare, intelligente Kampagnen und Auswirkungen auf den Umsatz.
+* **Marketing-orientiert**: Mit Fokus auf Benutzende, die Transparenz in der Marketing-funnel benötigen: E-Mail-Statistiken, Formulare, intelligente Kampagnen und Auswirkungen auf den Umsatz.
 
 
 #### Typische Marketo Engage-Anwendungsfälle

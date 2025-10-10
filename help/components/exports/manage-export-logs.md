@@ -8,19 +8,19 @@ role: User
 source-git-commit: ad43b199d4174894f0e428bcaf1748ca80bddb45
 workflow-type: tm+mt
 source-wordcount: '837'
-ht-degree: 5%
+ht-degree: 8%
 
 ---
 
 # Verwalten von Exportprotokollen
 
-Exportprotokolle enthalten Details zu jedem Export und werden jedes Mal generiert, wenn Analysis Workspace-Daten in die Cloud exportiert werden. (Weitere Informationen zum Exportieren von Daten in die Cloud finden Sie unter [Exportieren von Customer Journey Analytics-Berichten in die Cloud](/help/analysis-workspace/export/export-cloud.md).)
+Exportprotokolle enthalten Details zu jedem Export und werden jedes Mal generiert, wenn Analysis Workspace-Daten in die Cloud exportiert werden. (Informationen zum Exportieren von Daten in die Cloud finden Sie unter [Exportieren von Customer Journey Analytics-Berichten in die Cloud](/help/analysis-workspace/export/export-cloud.md).)
 
 Für geplante Exporte spiegeln die Protokolle die Exporteinstellungen wider, die zum Zeitpunkt des Versands des Protokolls galten. Protokolle können nicht gelöscht werden.
 
 ## Exportprotokolle anzeigen
 
-1. Wählen Sie beim Customer Journey Analytics [!UICONTROL **Komponenten**] > [!UICONTROL **Exporte**] aus.
+1. Wählen Sie in Customer Journey Analytics [!UICONTROL **Komponenten**] > [!UICONTROL **Exporte**] aus.
 
 1. Wählen Sie die Registerkarte [!UICONTROL **Protokolle**] aus.
 
@@ -44,7 +44,7 @@ Um die benötigten Informationen zu finden, können Sie entweder die Liste der P
 
 ### Filtern der Protokollliste
 
-1. Wählen Sie beim Customer Journey Analytics [!UICONTROL **Komponenten**] > [!UICONTROL **Exporte**] aus.
+1. Wählen Sie in Customer Journey Analytics [!UICONTROL **Komponenten**] > [!UICONTROL **Exporte**] aus.
 
 1. Wählen Sie die Registerkarte [!UICONTROL **Protokolle**] aus.
 
@@ -57,14 +57,14 @@ Um die benötigten Informationen zu finden, können Sie entweder die Liste der P
    | Filter | Beschreibung |
    |---------|----------|
    | [!UICONTROL **Export-ID**] | Geben Sie die Export-ID des Exportprotokolls an, das Sie anzeigen möchten. |
-   | [!UICONTROL **Kontotyp**] | Der Kontotyp, mit dem das Protokoll verknüpft ist. Die folgenden Kontotypen sind verfügbar: <ul><li>[!UICONTROL **AEP-Data Landing Zone**]</li><li>[!UICONTROL **Amazon S3-Rollen-ARN**]</li><li>[!UICONTROL **Azure SAS**]</li><li>[!UICONTROL **Azure RBAC**]</li><li>[!UICONTROL **Google Cloud Platform**]</li><li>[!UICONTROL **Snowflake**]</li></ul>. |
+   | [!UICONTROL **Kontotyp**] | Der Kontotyp, mit dem das Protokoll verknüpft ist. Die folgenden Kontotypen sind verfügbar: <ul><li>[!UICONTROL **AEP Data Landing Zone**]</li><li>[!UICONTROL **Amazon S3 Role ARN**]</li><li>[!UICONTROL **Azure SAS**]</li><li>[!UICONTROL **Azure RBAC**]</li><li>[!UICONTROL **Google Cloud Platform**]</li><li>[!UICONTROL **Snowflake**]</li></ul>. |
    | [!UICONTROL **Status**] | Der Status des Exports Die folgenden Status sind verfügbar: <ul><li>[!UICONTROL **Ausstehend**]: Eine bestimmte Instanz eines Exports wurde gestartet, ist jedoch noch nicht abgeschlossen.<p>Das erneute Ausführen eines Exports mit dem Status Ausstehend verzögert den Exportvorgang.</p></li><li>[!UICONTROL **Abgeschlossen**]: Eine bestimmte Instanz eines Exports wurde fertig verarbeitet und ist im Exportkonto verfügbar.</li><li>[!UICONTROL **Fehlgeschlagen**]<p>Verschiedene Situationen können zu einem fehlgeschlagenen Export führen. Bewegen Sie den Mauszeiger über den Status Fehlgeschlagen , um Details zum Fehler anzuzeigen.<p>Weitere Informationen zu möglichen Fehlerursachen finden Sie unter [Fehlerbehebung bei fehlgeschlagenen ](/help/components/exports/troubleshoot-exports.md)).</p> |
 
    {style="table-layout:auto"}
 
 ### Nach Protokollen suchen
 
-1. Wählen Sie beim Customer Journey Analytics [!UICONTROL **Komponenten**] > [!UICONTROL **Exporte**] aus.
+1. Wählen Sie in Customer Journey Analytics [!UICONTROL **Komponenten**] > [!UICONTROL **Exporte**] aus.
 
 1. Wählen Sie die Registerkarte [!UICONTROL **Protokolle**] aus.
 
@@ -88,7 +88,7 @@ Sie können den mit einem bestimmten Protokoll verknüpften Export bearbeiten.
 
 Diese Option ist nicht verfügbar, wenn mehrere Protokolle ausgewählt werden.
 
-1. Wählen Sie beim Customer Journey Analytics [!UICONTROL **Komponenten**] > [!UICONTROL **Exporte**] aus.
+1. Wählen Sie in Customer Journey Analytics [!UICONTROL **Komponenten**] > [!UICONTROL **Exporte**] aus.
 
 1. Wählen Sie die Registerkarte [!UICONTROL **Protokolle**] aus.
 
@@ -100,7 +100,7 @@ Diese Option ist nicht verfügbar, wenn mehrere Protokolle ausgewählt werden.
 
    Aktivieren Sie das Kontrollkästchen neben dem Protokoll und klicken Sie dann auf [!UICONTROL **Export bearbeiten**].
 
-## Spalten konfigurieren
+## Konfigurieren von Spalten
 
 Sie können Spalten auf der Registerkarte [!UICONTROL Protokolle] hinzufügen oder entfernen, um zu konfigurieren, welche Informationen angezeigt werden.
 
@@ -108,7 +108,7 @@ Spaltenüberschrift auswählen, um die Protokolle nach dieser Spalte zu sortiere
 
 So konfigurieren Sie Spalten auf der Registerkarte [!UICONTROL Protokolle]:
 
-1. Wählen Sie beim Customer Journey Analytics [!UICONTROL **Komponenten**] > [!UICONTROL **Exporte**] aus.
+1. Wählen Sie in Customer Journey Analytics [!UICONTROL **Komponenten**] > [!UICONTROL **Exporte**] aus.
 
 1. Wählen Sie die Registerkarte [!UICONTROL **Protokolle**] aus.
 
@@ -118,7 +118,7 @@ So konfigurieren Sie Spalten auf der Registerkarte [!UICONTROL Protokolle]:
 
    | Verfügbare Spalte | Beschreibung |
    |---------|----------|
-   | Exportname | Der Name des Exports Benutzende geben Exporten bei ihrer Erstellung einen Namen, wie unter [Exportieren von Customer Journey Analytics-Berichten in die Cloud](/help/analysis-workspace/export/export-cloud.md) beschrieben. |
+   | Exportname | Der Name des Exports Benutzer geben Exporten bei ihrer Erstellung einen Namen, wie unter [Exportieren von Customer Journey Analytics-Berichten in die Cloud](/help/analysis-workspace/export/export-cloud.md) beschrieben. |
    | Export-ID | Die ID, die dem Export bei seiner Erstellung automatisch zugewiesen wird. <!-- True? --> |
    | Instanz-ID | Die ID der Customer Journey Analytics-Instanz. <!-- True? --> |
    | Name der Datenansicht | Der Name der dem Export zugeordneten Datenansicht. Benutzerinnen und Benutzer können die Datenansicht auswählen, wenn sie den Export erstellen, wie unter [Exportieren von Customer Journey Analytics-Berichten in die Cloud](/help/analysis-workspace/export/export-cloud.md) beschrieben. |
@@ -126,7 +126,7 @@ So konfigurieren Sie Spalten auf der Registerkarte [!UICONTROL Protokolle]:
    | Größe | Die Größe des Exports.<p>Die Dateigröße wird mit einem Basiswert von 1024 berechnet, der manchmal als KIB und MIB dargestellt wird. Wenn Ihr Cloud-Anbieter die Größe mit einer Basis von 1.000 berechnet, kann dies dazu führen, dass die in Ihrem Cloud-Anbieter angezeigte Größe geringfügig von der hier angezeigten Größe abweicht.</p> |
    | Standort | Der Speicherort des Kontos, in das die Daten exportiert wurden. |
    | Konto | Das Konto, in das die Daten exportiert wurden. |
-   | Status | Der Status des Exports Verfügbare Status [!UICONTROL &#x200B; &quot;]&quot;, [!UICONTROL Zugestellt] und [!UICONTROL Fehlgeschlagen]. |
+   | Status | Der Status des Exports Verfügbare Status [!UICONTROL  &quot;]&quot;, [!UICONTROL Zugestellt] und [!UICONTROL Fehlgeschlagen]. |
    | Gesendet am | Das Datum, an dem der Export stattfand. |
    | Kontotyp | Der Typ des Cloud-Kontos, in das die Daten exportiert wurden. Verfügbare Kontotypen sind [!UICONTROL Amazon S3 Role ARN], [!UICONTROL Google Cloud Platform], [!UICONTROL Azure SAS], [!UICONTROL Azure RBAC], [!UICONTROL Snowflake] und [!UICONTROL Adobe Experience Platform]. |
    | Anzahl Zeilen | Die Anzahl der in der exportierten Tabelle enthaltenen Zeilen. |
@@ -137,4 +137,4 @@ So konfigurieren Sie Spalten auf der Registerkarte [!UICONTROL Protokolle]:
 
 ## Audit-Protokolle anzeigen
 
-Exporte von vollständigen Tabellen werden auch in den [Customer Journey Analytics-Auditprotokollen](/help/privacy/audit-log.md) verfolgt. <!-- Need to see what the Component Type for full-table export will be and add it here. Also, under "Event type captured by audit logs" there would be a new event type called "Full-table export". 4 actions would be "Create, Delete, Edit, Export" and "API_Request"? Also information about the locations. Probably have a different component for the location credentials.-->
+Vollständige Tabellenexporte werden auch in den [Customer Journey Analytics-Auditprotokollen](/help/privacy/audit-log.md) verfolgt. <!-- Need to see what the Component Type for full-table export will be and add it here. Also, under "Event type captured by audit logs" there would be a new event type called "Full-table export". 4 actions would be "Create, Delete, Edit, Export" and "API_Request"? Also information about the locations. Probably have a different component for the location credentials.-->

@@ -8,7 +8,7 @@ role: User
 source-git-commit: 4599a058cef79a28bd6f9b788c2b202c8235298d
 workflow-type: tm+mt
 source-wordcount: '1738'
-ht-degree: 86%
+ht-degree: 87%
 
 ---
 
@@ -79,7 +79,7 @@ Sie können eine Visualisierung verwalten, wenn Sie den Mauszeiger über die Vis
 
 * Um eine Visualisierung zu reduzieren, wählen Sie ![ChevronDown](/help/assets/icons/ChevronDown.svg) aus.
 * Um eine reduzierte Visualisierung anzuzeigen, wählen Sie ![ChevronLeft](/help/assets/icons/ChevronLeft.svg) aus.
-* Um eine Visualisierung zu löschen, wählen Sie ![CrossSize400](/help/assets/icons/CrossSize400.svg) aus. Um dies rückgängig zu machen, wählen **[!UICONTROL Bearbeiten]** > **[!UICONTROL Rückgängig]** (**[!UICONTROL *cmd+z *]**|**[!UICONTROL * Strg+Z *]**).
+* Um eine Visualisierung zu löschen, wählen Sie ![CrossSize400](/help/assets/icons/CrossSize400.svg) aus. Um eine Aktion rückgängig zu machen, wählen Sie **[!UICONTROL Bearbeiten]** > **[!UICONTROL Rückgängig]** aus (**[!UICONTROL *Befehl+Z *]**|**[!UICONTROL * Strg+Z *]**).
 * Um eine Visualisierung auf die Standardhöhe zurückzusetzen, wählen Sie ![ImageResize](/help/assets/icons/Resize.svg) aus.
 * Um eine Visualisierung innerhalb eines Bereichs zu verschieben, ziehen Sie die Visualisierung per Drag-and-Drop, sobald eine ![Verschieben](/help/assets/icons/Move.svg) sichtbar ist (in der Regel, wenn Sie den Mauszeiger über die Kopfzeile bewegen).
 

@@ -8,7 +8,7 @@ role: Admin
 source-git-commit: 6cabedc5ed58dac450577fc3505be5f95b7a959d
 workflow-type: tm+mt
 source-wordcount: '651'
-ht-degree: 90%
+ht-degree: 91%
 
 ---
 
@@ -24,7 +24,7 @@ Die meisten Dimensionen und Metriken in Customer Journey Analytics basieren auf 
 
 Diese erforderlichen Standardkomponenten werden standardmäßig jeder Datendatei-Ansicht hinzugefügt. Sie sind von wesentlicher Bedeutung für die Reporting-Funktionen, die Customer Journey Analytics bietet.
 
-### Standardabmessungen
+### Standarddimensionen
 
 {{standard-dimensions}}
 
@@ -41,13 +41,13 @@ Optionale Standardkomponenten sind unter **[!UICONTROL Datenansichten]** > **[!U
 | Name der Komponente | Dimension oder Metrik | Anmerkungen und Werte |
 | --- | --- | --- |
 | [!UICONTROL Vormittag/Nachmittag] | Zeitunterteilungsdimension | Vormittag oder Nachmittag |
-| [!UICONTROL Batch-ID] | Dimension | Kennung für den Experience Platform-Batch, zu [!UICONTROL &#x200B; ein &#x200B;] gehört hat. |
-| [!UICONTROL Datensatz-ID] | Dimension | Kennung für den Experience Platform-Datensatz, zu [!UICONTROL &#x200B; ein &#x200B;] gehört hat. |
+| [!UICONTROL Batch-ID] | Dimension | Kennung für den Experience Platform-Batch, zu [!UICONTROL  ein ] gehört hat. |
+| [!UICONTROL Datensatz-ID] | Dimension | Kennung für den Experience Platform-Datensatz, zu [!UICONTROL  ein ] gehört hat. |
 | [!UICONTROL Tag des Monats] | Zeitunterteilungsdimension | 1–31 |
 | [!UICONTROL Wochentag] | Zeitunterteilungsdimension | Montag, Dienstag, Mittwoch, Donnerstag, Freitag, Samstag, Sonntag |
 | [!UICONTROL Tag des Jahres] | Zeitunterteilungsdimension | 1–366 |
 | [!UICONTROL Stunde des Tages] | Zeitunterteilungsdimension | 0–23 |
-| [!UICONTROL &#x200B; Monat des Jahres] | Zeitunterteilungsdimension | Januar–Dezember |
+| [!UICONTROL  Monat des Jahres] | Zeitunterteilungsdimension | Januar–Dezember |
 | [!UICONTROL Erstmalige Sitzungen] | Metrik | Die definierte erste Sitzung einer Person im Reporting-Zeitraum. [Weitere Informationen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html?lang=de#new-repeat) |
 | [!UICONTROL Rückkehrende Sitzungen] | Metrik | Die Anzahl der Sitzungen, die nicht die erste Sitzung einer Person waren. [Weitere Informationen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html?lang=de#new-repeat) |
 | [!UICONTROL Personen-ID] | Dimension | Für jedes in Experience Platform definierte Datensatzschema kann ein eigener Satz von einer oder mehreren Identitäten definiert und mit einem Identity-Namespace verknüpft werden. Jede dieser Identitäten kann als Personen-ID verwendet werden. Beispiele sind Cookie-ID, zugeordnete ID, Benutzer-ID und Trackingcode. Die Dimension [!UICONTROL Personen-ID] ist die Grundlage für die Kombination von Datensätzen und die Identifizierung von eindeutigen Personen in Customer Journey Analytics.<p>Mögliche Anwendungsfälle sind:<ul><li>Erstellen Sie ein Segment für einen bestimmten Personen-ID-Wert, um alles nach dem Verhalten dieses Benutzers zu segmentieren.</li><li>Debugging: Prüfen, ob die Daten für eine bestimmte Cookie-ID (oder eine bestimmte Kunden-ID) vorhanden sind.</li><li>Identifizieren der Benutzer, die bei einem Callcenter angerufen haben.</li></ul> |
@@ -69,5 +69,5 @@ Optionale Standardkomponenten sind unter **[!UICONTROL Datenansichten]** > **[!U
 
 >[!MORELIKETHIS]
 >
->[Entdecken Sie mit der Funktion „Ereignistiefe“ tiefere Kundeneinblicke](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/discover-deeper-customer-insights-with-adobe-customer-journey/ba-p/753947?profile.language=de#M576)
+>[Entdecken Sie mit der Funktion „Ereignistiefe“ detailliertere Kundenerkenntnisse](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/discover-deeper-customer-insights-with-adobe-customer-journey/ba-p/753947?profile.language=de#M576)
 >

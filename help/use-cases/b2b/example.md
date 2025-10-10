@@ -8,13 +8,13 @@ role: User
 source-git-commit: 1bfebb53fbe056ed6320380178c8b1ce8f7079f1
 workflow-type: tm+mt
 source-wordcount: '1276'
-ht-degree: 8%
+ht-degree: 9%
 
 ---
 
-# Ein Beispiel für ein B2B-Projekt auf Personenbasis
+# Beispiel für ein personenbasiertes B2B-Projekt
 
-Dieser Artikel veranschaulicht einen Anwendungsfall, bei dem Sie im Rahmen eines typischen personenbasierten B2B-Setups in Customer Journey Analytics ordnungsgemäß Berichte zu Personendaten erstellen möchten. Eine solche Konfiguration wird durch die [Real-Time CDP B2B edition](https://experienceleague.adobe.com/de/docs/experience-platform/rtcdp/intro/rtcdpb2b-intro/b2b-overview) erleichtert.  In diesem Anwendungsbeispiel wird erläutert, wie B2B-Daten auf Profilebene (Personen) in Customer Journey Analytics eingerichtet und konfiguriert werden und wie Berichte erstellt werden.
+Dieser Artikel veranschaulicht einen Anwendungsfall, bei dem Sie im Rahmen eines typischen personenbasierten B2B-Setups in Customer Journey Analytics ordnungsgemäß Berichte zu Personendaten erstellen möchten. Eine solche Konfiguration wird durch die [Real-Time CDP B2B edition](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/intro/rtcdpb2b-intro/b2b-overview) erleichtert.  In diesem Anwendungsbeispiel wird erläutert, wie B2B-Daten auf Profilebene (Personen) in Customer Journey Analytics eingerichtet und konfiguriert werden und wie Berichte erstellt werden.
 
 [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} Mit der Veröffentlichung von [Customer Journey Analytics B2B edition wird ein separater Abschnitt für Anwendungsfälle des kontobasierten Reportings ](/help/getting-started/cja-b2b-edition.md).
 
@@ -43,7 +43,7 @@ Definieren Sie Ihre Verbindung, um alle relevanten B2B-Datensätze von Experienc
 -->
 
 
-Die Beziehung zwischen den B2B-Lookup-Schemas, dem Profilschema und dem Ereignisschema wird im B2B-Setup in Experience Platform definiert. Siehe Schemata in [Real-Time Customer Data Platform B2B edition](https://experienceleague.adobe.com/de/docs/experience-platform/rtcdp/schemas/b2b) und [Definieren einer Viele-zu-eins-Beziehung zwischen zwei Schemata in Real-Time Customer Data Platform B2B edition](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/tutorials/relationship-b2b).
+Die Beziehung zwischen den B2B-Lookup-Schemas, dem Profilschema und dem Ereignisschema wird im B2B-Setup in Experience Platform definiert. Siehe Schemata in [Real-Time Customer Data Platform B2B edition](https://experienceleague.adobe.com/de/docs/experience-platform/rtcdp/schemas/b2b) und [Definieren einer Viele-zu-eins-Beziehung zwischen zwei Schemata in Real-Time Customer Data Platform B2B edition](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/relationship-b2b).
 
 
 Um eine ordnungsgemäße Einrichtung einer Verbindung sicherzustellen, die personenbasierte Suchen Ihrer B2B-Daten unterstützt, verwenden Sie die folgende Abbildung für einen Überblick und führen Sie die folgenden Schritte aus:
@@ -62,14 +62,14 @@ Um eine ordnungsgemäße Einrichtung einer Verbindung sicherzustellen, die perso
    |---|---|---|---| 
    | B2B-Aktivitätsdatensatz | SourceKey <br/>**personKey.sourceKey** | | |
    | B2B-Personendatensatz | SourceKey <br/>**b2b.personKey.sourceKey** | | |
-   | B2B-Kontodatensatz | | SourceKey <br/>**accountKey.sourceKey**&#x200B;❶ | SourceKey<br>(B2B-Personen-Datensatz)<br/>**b2b.accountKey.sourceKey**&#x200B;❶ |
-   | B2B-Opportunity-Datensatz | | Source Key <br/>**OpportunityKey.sourceKey**&#x200B;❷ | SourceKey<br/>(B2B Opportunity Relation-Datensatz)<br/>**OpportunityKey.sourceKey**&#x200B;❷ |
-   | B2B-Kampagnen-Datensatz | | SourceKey <br/>**campaignKey.sourceKey**&#x200B;❸ | SourceKey<br/>(B2B-Kampagnenmitglied-Datensatz)<br/>**campaignKey.sourceKey**&#x200B;❸<br/> |
-   | B2B-Marketing-Listen-Datensatz | | SourceKey <br/>**marketingListKey.sourceKey**&#x200B;❹ | SourceKey<br/>(B2B-Marketing-Listenmitglied-Datensatz)<br/>**marketingListKey.sourceKey**&#x200B;❹ |
-   | B2B-Konto-Personen-Beziehungsdatensatz | | SourceKey <br/>**personKey.sourceKey**&#x200B;❺ | Source Key<br/>(Event datasets)<br/>**personKey.sourceKey**&#x200B;❺ |
-   | B2B-Opportunity-Personenbeziehungsdatensatz | | SourceKey <br/>**personKey.sourceKe** y❻ | Source Key<br/>(Event datasets)<br/>**personKey.sourceKey**&#x200B;❻ |
-   | B2B-Kampagnenmitglied-Datensatz | | SourceKey <br/>**personKey.sourceKey**&#x200B;❼ | Source Key<br/>(Event datasets)<br/>**personKey.sourceKey**&#x200B;❼ |
-   | B2B-Marketing-Listenmitglied-Datensatz | | SourceKey <br/>**personKey.sourceKey**&#x200B;❽ | Source Key<br/>(Event datasets)<br/>**personKey.sourceKey**&#x200B;❽ |
+   | B2B-Kontodatensatz | | SourceKey <br/>**accountKey.sourceKey**❶ | SourceKey<br>(B2B-Personen-Datensatz)<br/>**b2b.accountKey.sourceKey**❶ |
+   | B2B-Opportunity-Datensatz | | Source Key <br/>**OpportunityKey.sourceKey**❷ | SourceKey<br/>(B2B Opportunity Relation-Datensatz)<br/>**OpportunityKey.sourceKey**❷ |
+   | B2B-Kampagnen-Datensatz | | SourceKey <br/>**campaignKey.sourceKey**❸ | SourceKey<br/>(B2B-Kampagnenmitglied-Datensatz)<br/>**campaignKey.sourceKey**❸<br/> |
+   | B2B-Marketing-Listen-Datensatz | | SourceKey <br/>**marketingListKey.sourceKey**❹ | SourceKey<br/>(B2B-Marketing-Listenmitglied-Datensatz)<br/>**marketingListKey.sourceKey**❹ |
+   | B2B-Konto-Personen-Beziehungsdatensatz | | SourceKey <br/>**personKey.sourceKey**❺ | Source Key<br/>(Event datasets)<br/>**personKey.sourceKey**❺ |
+   | B2B-Opportunity-Personenbeziehungsdatensatz | | SourceKey <br/>**personKey.sourceKe** y❻ | Source Key<br/>(Event datasets)<br/>**personKey.sourceKey**❻ |
+   | B2B-Kampagnenmitglied-Datensatz | | SourceKey <br/>**personKey.sourceKey**❼ | Source Key<br/>(Event datasets)<br/>**personKey.sourceKey**❼ |
+   | B2B-Marketing-Listenmitglied-Datensatz | | SourceKey <br/>**personKey.sourceKey**❽ | Source Key<br/>(Event datasets)<br/>**personKey.sourceKey**❽ |
 
 {style="table-layout:auto"}
 
@@ -82,7 +82,7 @@ Um beim Erstellen Ihres Workspace-Projekts Zugriff auf relevante B2B-Dimensionen
 
 Sie können beispielsweise die folgenden Komponenten zu Ihrer Datenansicht hinzufügen, um sicherzustellen, dass Sie auf Personenebene Berichte zu Ihren B2B-Daten erstellen können. Die Komponentennamen werden manchmal geändert, um die Klarheit ausgehend von den ursprünglichen Schemanamen zu verbessern.
 
-+++Metriken
++++Metriken 
 
 | Name der Komponente | Datensatz | Datentyp | Pfad des Schemas |
 |---|---|---|---|

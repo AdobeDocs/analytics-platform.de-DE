@@ -8,7 +8,7 @@ exl-id: 417443ae-a1ab-483b-a8fd-cff5ee8b6263
 source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
 workflow-type: tm+mt
 source-wordcount: '1147'
-ht-degree: 98%
+ht-degree: 97%
 
 ---
 
@@ -21,7 +21,7 @@ Diese Zusammenfassungsdaten können dann zur Darstellung allgemeiner Leistungsin
 >[!NOTE]
 >
 >Zusammenfassungsdaten sind Zeitreihendaten aus einem Zusammenfassungsdatensatz. Dieser Zusammenfassungsdatensatz basiert auf einem Schema, das die Klasse „XDM-Zusammenfassungsmetriken“ als Basisklasse verwendet.
->Es werden nur Zeitreihendaten unterstützt, die auf „stündlich“ oder „täglich“ basieren.
+>>Es werden nur Zeitreihendaten unterstützt, die auf „stündlich“ oder „täglich“ basieren.
 
 >[!TIP]
 >
@@ -116,7 +116,7 @@ Die Zeitzone der Zusammenfassungsdaten wird auf der Zusammenfassungsschemaebene 
   | 2024-07-29T01:00:00 | `America/`<br/>`Los_Angeles` | 2024-07-28T18:00:00 | PST | 2024-07-28T18:00:00 |
   | 2024-07-30T01:00:00-05:00 | `Australia/`<br/>`Sydney` | 2024-07-30T17:00:00 | CET | 2024-07-30T08:00:00 |
 
-  Bei Zeitzonen mit einem Versatz von 30 Minuten (z. B. IST, India Standard Time) wird der 30-Minuten-Versatz beim Reporting von Zusammenfassungsdaten ignoriert. Beispiel: 12:30 Uhr wird als 12:00 Uhr gemeldet.
+  Bei Zeitzonen mit einem Versatz von 30 Minuten (z. B. IST, India Standard Time) wird der 30-Minuten-Versatz beim Reporting von Zusammenfassungsdaten ignoriert. Beispiel: 12:30 wird als 12 % :00.
 
 
 Um sicherzustellen, dass die richtige Zeitzone für Ihre stündlichen granularen Zusammenfassungsdaten verwendet wird, müssen Sie sicherstellen, dass die richtige Zeitzone für das Schema konfiguriert ist, das für Zusammenfassungsdaten verwendet wird.

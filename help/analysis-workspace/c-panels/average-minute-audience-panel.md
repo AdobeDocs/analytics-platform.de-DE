@@ -6,8 +6,8 @@ role: User, Admin
 exl-id: c55b5534-a9a6-47f1-8b43-c8c0b8686c53
 source-git-commit: 8054aab28c405f6a9dd24306a086c78069032999
 workflow-type: tm+mt
-source-wordcount: '1679'
-ht-degree: 93%
+source-wordcount: '1681'
+ht-degree: 91%
 
 ---
 
@@ -33,7 +33,7 @@ ht-degree: 93%
 
 >[!BEGINSHADEBOX]
 
-_In diesem Artikel wird das Panel Medien-Zielgruppendurchschnitt pro Minute in_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**&#x200B;_ beschrieben.<br/>_Unter [Panel Medien-Zielgruppendurchschnitt pro Minute](https://experienceleague.adobe.com/de/docs/analytics/analyze/analysis-workspace/panels/average-minute-audience-panel) finden Sie die Version dieses Artikels für_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics**._
+_In diesem Artikel wird das Panel Medien-Zielgruppendurchschnitt pro Minute in_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**_ beschrieben.<br/>_Unter [Panel Medien-Zielgruppendurchschnitt pro Minute](https://experienceleague.adobe.com/de/docs/analytics/analyze/analysis-workspace/panels/average-minute-audience-panel) finden Sie die Version dieses Artikels für_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**._
 
 >[!ENDSHADEBOX]
 
@@ -117,7 +117,7 @@ Verwenden Sie die in diesem Abschnitt beschriebenen Eingabeeinstellungen, um das
 
    | Optionen | Beschreibung |
    |---------|------------|
-   | **[!UICONTROL Granularität]** | Die Standardgranularität beträgt [!UICONTROL **5 Minuten**]. Sie können jedoch eine beliebige andere Granularität auswählen, die als Nenner für die Zeitreihe innerhalb Ihres ausgewählten Zeitraums verwendet wird. Wenn Sie beispielsweise 12:00 Uhr bis 12:30 Uhr mit einer Granularität von 5 Minuten auswählen, erhalten Sie den Zielgruppendurchschnitt pro Minute über die gesamte halbe Stunde sowie sechs Zeilen mit dem Zielgruppendurchschnitt pro Minute für jeden 5-minütigen Zeitraum. Diese Zeilen werden als Datenpunkte für das Zeitreihendiagramm verwendet. |
+   | **[!UICONTROL Granularität]** | Die Standardgranularität beträgt [!UICONTROL **5 Minuten**]. Sie können jedoch eine beliebige andere Granularität auswählen, die als Nenner für die Zeitreihe innerhalb Ihres ausgewählten Zeitraums verwendet wird. Wenn Sie beispielsweise 12::00 bis 12::30 mit einer Granularität von 5 Minuten auswählen, werden der Zielgruppendurchschnitt pro Minute über die gesamte halbe Stunde sowie sechs Zeilen mit dem Zielgruppendurchschnitt pro Minute für jeden 5-minütigen Zeitraum zurückgegeben. Diese Zeilen werden als Datenpunkte für das Zeitreihendiagramm verwendet. |
    | [!UICONTROL **Content filtern nach (optional)**] | Legen Sie fest, wie der spezifische Inhalt abhängig von der gewünschten Ansicht oder der Struktur Ihrer Daten gefiltert werden soll. <ul>[!UICONTROL **Sendung, Staffel, Folge**]: Zeigt Ihre verfügbaren Sendungen im Dropdown-Menü an, die Sie mithilfe einer Suche filtern können (oder indem Sie den Namen der Sendung per Drag-and-Drop aus der linken Spalte ziehen). Sie können Ihre Auswahl hier beenden, um alle Staffeln Ihrer Sendung zu sehen, oder Sie können nach einzelnen Staffeln und dann nach einzelnen Folgen filtern. Diese Einstellung zeigt die Daten für diese Sendungen, Staffeln oder Folgen für den ausgewählten Zeitraum an.</li><li>[!UICONTROL **Benutzerdefinierte Dimension**]: Wenn sich der Name der Sendung unter einer benutzerdefinierten Dimension befindet, können Sie ihn entweder über die Suche im Dimensionsmenü (optional) oder über die Suche in der linken Spalte finden. Das Dimensionselement wird basierend auf dieser Auswahl automatisch ausgefüllt und als Folge behandelt.</li><li>[!UICONTROL **Keine**]: Zeigt alle Videonamen an, für die Daten über den Zielgruppendurchschnitt pro Minute für die von Ihnen gewählte Auswahl vorliegen. (Diese Option ist standardmäßig ausgewählt.)</li></ul> |
 
 1. Fahren Sie mit [Erweiterte Einstellungen für benutzerdefinierten Zeitraum](#custom-time-period-advanced-settings) fort, um erweiterte Einstellungen zu konfigurieren.
@@ -187,6 +187,6 @@ Das Panel „Medien-Zielgruppendurchschnitt pro Minute“ verwendet nur die Metr
 >[!MORELIKETHIS]
 >
 > [Erstellen eines Bedienfelds](/help/analysis-workspace/c-panels/panels.md#create-a-panel)
-> &#x200B;> [Panel Gleichzeitige Medienbetrachter](media-concurrent-viewers.md)
-> &#x200B;> [Panel Verbrachte Zeit bei der Medienwiedergabe](media-playback-time-spent.md)
+> > [Panel Gleichzeitige Medienbetrachter](media-concurrent-viewers.md)
+> > [Panel Verbrachte Zeit bei der Medienwiedergabe](media-playback-time-spent.md)
 >

@@ -1,13 +1,13 @@
 ---
-description: Erfahren Sie, wie Sie mithilfe von Warnhinweisen eine granulare Steuerung der Benachrichtigungen und die Integration in die Anomalieerkennung ermöglichen.
-title: Warnhinweise – Übersicht
+description: Informationen zu Warnhinweisen zur granularen Steuerung der Benachrichtigungen und Integration mit der Anomalieerkennung.
+title: Warnhinweise – Überblick
 feature: Workspace Basics
 role: User, Admin
 exl-id: 029be0c8-ec78-4bb7-a6cd-bb303b5ac82a
 source-git-commit: 1891f73f4326a178b293e7c3763d0d1dbc000a25
 workflow-type: tm+mt
 source-wordcount: '357'
-ht-degree: 95%
+ht-degree: 96%
 
 ---
 

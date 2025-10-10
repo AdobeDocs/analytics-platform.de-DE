@@ -6,7 +6,7 @@ keywords: Produktanalysen
 exl-id: 27eaa7c7-f1e1-4cf1-9d59-67ac552eb430
 role: User
 source-git-commit: bd8c9951386608572d84006bd5465e57214c56d4
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '657'
 ht-degree: 100%
 
@@ -25,14 +25,14 @@ ht-degree: 100%
 
 Die Analyse ![Frequency](/help/assets/icons/Histogram.svg) **[!UICONTROL Häufigkeit]** gruppiert Ereignisdaten nach der Häufigkeit, mit der Ereignisse in Ihrem Produkt auftreten. Die vertikale Achse dieser Analyse enthält Buckets, die die Häufigkeit des Ereignisses darstellen. Die horizontale Achse misst die Anzahl der Benutzenden oder Sitzungen für jeden Bucket.
 
->[!VIDEO](https://video.tv.adobe.com/v/3435811/?quality=12&learn=on&captions=ger)
+>[!VIDEO](https://video.tv.adobe.com/v/3428089/?quality=12&learn=on)
 
 ## Anwendungsfälle
 
 Zu den Anwendungsfällen für diese Analyse gehören:
 
 * **Interaktion**: Verfolgen Sie, wie stark Benutzende mit einem Ereignis in Ihrem Produkt interagieren. Sie können auf einen beliebigen Teil des Balkendiagramms klicken, um ihn als Segment zu speichern. Segmente für Buckets mit geringer Interaktion können Ihnen dabei helfen zu ermitteln, warum Benutzende mit dem Ereignis nicht in der gewünschten Häufigkeit interagieren. Segmente für Buckets mit hoher Interaktion können Ihnen dabei helfen zu verstehen, warum Benutzende häufig mit dem Ereignis interagieren. Davon ausgehend können Sie andere Benutzende dazu ermutigen, ähnliche Verhaltensweisen anzunehmen.
-* **Kundenloyalität**: Setzen Sie das Ereignis auf „Bestellungen“ und die Metrik auf „Benutzende“. Mit dieser Analyse können Sie Benutzende danach gruppieren, wie häufig sie innerhalb des angegebenen Datumsbereichs einen Kauf auf Ihrer Site getätigt haben.
+* **Kundentreue**: Setzen Sie das Ereignis auf „Bestellungen“ und die Metrik auf „Benutzende“. Mit dieser Analyse können Sie Benutzende danach gruppieren, wie häufig sie innerhalb des angegebenen Datumsbereichs einen Kauf auf Ihrer Site getätigt haben.
 * **Support-Optimierung**: Zeigen Sie die Anzahl der Support-Anrufe oder offenen Fälle nach Benutzenden an, um Erkenntnisse dazu zu erhalten, welche Benutzenden auf die meisten Probleme stoßen. Anschließend können Sie ein Segment erstellen, um sich auf deren Erlebnisse zu konzentrieren und so die Probleme zu identifizieren und zu lösen.
 * **Abonnement-Services**: Bei Benutzenden mit geringer Interaktion ist eine Abwanderung wahrscheinlicher. Wenn Sie das Verhalten von Benutzenden mit hoher Interaktion verstehen, kann dies dazu beitragen, ein ähnliches Verhalten für Benutzende mit geringer Interaktion zu fördern, sodass es weniger wahrscheinlich ist, dass sie ihr Abonnement kündigen.
 

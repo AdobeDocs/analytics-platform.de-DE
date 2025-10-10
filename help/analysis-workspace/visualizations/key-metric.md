@@ -21,7 +21,7 @@ ht-degree: 93%
 
 >[!BEGINSHADEBOX]
 
-_In diesem Artikel wird die Visualisierung der Zusammenfassung der Schlüsselmetriken in_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics** beschrieben._<br/>_Unter [Zusammenfassung der Schlüsselmetriken](https://experienceleague.adobe.com/de/docs/analytics/analyze/analysis-workspace/visualizations/key-metric) finden Sie die Version dieses Artikels für_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics**._
+_In diesem Artikel wird die Visualisierung der Zusammenfassung der Schlüsselmetriken in_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics** beschrieben._<br/>_Unter [Zusammenfassung der Schlüsselmetriken](https://experienceleague.adobe.com/de/docs/analytics/analyze/analysis-workspace/visualizations/key-metric) finden Sie die Version dieses Artikels für_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**._
 
 >[!ENDSHADEBOX]
 
@@ -152,5 +152,5 @@ Nachdem Sie die Visualisierung erstellt haben, können Sie die ursprüngliche Ko
 >[!MORELIKETHIS]
 >
 >[Hinzufügen einer Visualisierung zu einem Panel](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
->&#x200B;>[Visualisierungseinstellungen](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
->&#x200B;>[Kontextmenü der Visualisierung](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
+>>[Visualisierungseinstellungen](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
+>>[Kontextmenü der Visualisierung](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)

@@ -1,5 +1,5 @@
 ---
-description: Erfahren Sie mehr über die Anforderungen für Analysis Workspace.
+description: Erfahren Sie mehr über die Voraussetzungen für Analysis Workspace.
 keywords: Analysis Workspace
 title: Voraussetzungen
 feature: Workspace Basics
@@ -8,13 +8,13 @@ role: Admin
 source-git-commit: c209341400bf4e0c00719075f0fc82f81ca9dbb4
 workflow-type: tm+mt
 source-wordcount: '147'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
 # Voraussetzungen
 
-Für die Ausführung von Analysis Workspace gelten folgende Anforderungen:
+Für die Ausführung von Analysis Workspace gelten folgende Voraussetzungen:
 
 | Anforderung | Beschreibung |
 |--- |--- |

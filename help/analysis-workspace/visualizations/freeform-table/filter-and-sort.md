@@ -17,7 +17,7 @@ Freiformtabellen in Analysis Workspace bilden die Grundlage für die interaktive
 
 <!--The following video covers filter and sort options in Analysis Workspace, in addition to pagination options:
 
->[!VIDEO](https://video.tv.adobe.com/v/327342?captions=ger)-->
+>[!VIDEO](https://video.tv.adobe.com/v/23968)-->
 
 ## Filtern von Tabellen
 

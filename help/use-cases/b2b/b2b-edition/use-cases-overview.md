@@ -33,7 +33,7 @@ Die Analyse, die Customer Journey Analytics B2B edition bereitstellen kann, biet
 | Vertriebsvorgangsleiter | Effizienz, Datengenauigkeit, Verkaufsleistung, Opportunity-Entwicklung, Technologieintegration |
 
 
-## Anwendungsszenarien
+## Anwendungsfälle
 
 Basierend auf den oben genannten Personas und ihren Anforderungen werden die folgenden Anwendungsfälle identifiziert:
 

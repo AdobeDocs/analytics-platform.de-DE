@@ -17,7 +17,7 @@ ht-degree: 81%
 
 >[!IMPORTANT]
 >
->Customer Journey Analytics Labs ist kein HIPAA-fähiger Service und darf nicht zur Verarbeitung sensibler personenbezogener Daten verwendet werden, einschließlich zulässiger Gesundheitsdaten (z. B. persönlicher Gesundheitsinformationen oder PHI), die Ihr Unternehmen ansonsten in Customer Journey Analytics verwenden darf.
+>Customer Journey Analytics Labs ist kein HIPAA-fähiger Service und darf nicht zur Verarbeitung sensibler personenbezogener Daten verwendet werden, einschließlich zulässiger Gesundheitsdaten (z. B. persönlicher Gesundheitsinformationen oder PHI), die Ihr Unternehmen ansonsten möglicherweise in Customer Journey Analytics verwenden darf.
 
 ## Voraussetzungen
 
@@ -31,7 +31,7 @@ So greifen Sie auf [!UICONTROL Labs] zu:
 
 1. Wenn Sie noch keinen Zugriff auf [!UICONTROL Workspace] und [!UICONTROL Labs] haben, bitten Sie Ihren Administrator um Berechtigungen.
 
-1. Klicken Sie im Customer Journey Analytics auf die Registerkarte **[!UICONTROL Labs]**.
+1. Klicken Sie in Customer Journey Analytics auf die Registerkarte **[!UICONTROL Labs]**.
 
 ## Prototyp bewerten
 

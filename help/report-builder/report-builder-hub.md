@@ -9,11 +9,11 @@ solution: Customer Journey Analytics
 source-git-commit: 065cf61d80ceb3c921ea666ba299e56fb044335b
 workflow-type: tm+mt
 source-wordcount: '541'
-ht-degree: 26%
+ht-degree: 27%
 
 ---
 
-# Report Builder Hub
+# Report Builder-Hub
 
 Der Report Builder-Hub ist der rechte Bereich, der in Ihrer Excel-Arbeitsmappe angezeigt wird, wenn Sie ![AdobeLogoRedonWhite](/help/assets/icons/AdobeLogoRedOnWhite.svg) **[!UICONTROL Report Builder]** in der Excel-Multifunktionsleiste auswählen.
 
@@ -70,6 +70,6 @@ Der **Segmente**-Link zeigt eine zusammenfassende Liste der Segmente an, die von
 >[!MORELIKETHIS]
 >
 >[Datenansichten auswählen](select-data-view.md)
->[Datumsbereich auswählen](select-date-range.md)
->[Arbeiten mit Filtern](work-with-filters.md)
+>>[Datumsbereich auswählen](select-date-range.md)
+>>[Arbeiten mit Filtern](work-with-filters.md)
 >
