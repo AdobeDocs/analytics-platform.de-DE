@@ -99,8 +99,8 @@ Mit den folgenden Funktionen in Experience Cloud können Sie effektiv auf Einbli
 * [Erstellen und Veröffentlichen von Zielgruppen](/help/components/audiences/publish.md)&#x200B; zur Aktivierung über Customer Journey Analytics
 * Zielgruppen über Experience Cloud-Produkte aktivieren:
    * [Führen Sie &#x200B;](https://experienceleague.adobe.com/de/docs/journey-optimizer/using/content-management/content-experiment/get-started-experiment) in AJO und Adobe Target aus und messen Sie mithilfe des Bedienfelds [Experimentieren“ die Wirkung von Varianten in Customer Journey Analytics](/help/analysis-workspace/c-panels/experimentation.md)
-   * [Bereitstellen von In-App-Interaktionen](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/in-app/get-started-in-app) für Benutzende in AJO
-* [Aktivieren von Zielgruppen](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/activation-overview) für externe Ziele mit Adobe Real-Time CDP&#x200B;
+   * [Bereitstellen von In-App-Interaktionen](https://experienceleague.adobe.com/de/docs/journey-optimizer/using/channels/in-app/get-started-in-app) für Benutzende in AJO
+* [Aktivieren von Zielgruppen](https://experienceleague.adobe.com/de/docs/experience-platform/destinations/ui/activate/activation-overview) für externe Ziele mit Adobe Real-Time CDP&#x200B;
 
 ## Freigeben von Einblicken für die Organisation&#x200B;
 

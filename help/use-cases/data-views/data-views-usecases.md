@@ -112,11 +112,11 @@ Sie können feststellen, ob eine Sitzung tatsächlich die erste Sitzung für ein
 
 Eine Dimension und zwei Metriken ermöglichen diese Berichte:
 
-* [Sitzungstyp](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-reference) - Diese Dimension hat zwei Werte: [!UICONTROL Neu] und [!UICONTROL Wiederkehrend]. Der [!UICONTROL Neu] Zeileneintrag enthält das gesamte Verhalten (d. h. die Metriken für diese Dimension) in einer Sitzung, die als erste Sitzung einer Person definiert wurde. Alles andere ist im Zeileneintrag [!UICONTROL Wiederkehrend] enthalten (vorausgesetzt, dass alles zu einer Sitzung gehört). Wenn Metriken nicht Teil einer Sitzung sind, fallen sie in den Bereich „Nicht zutreffend“ für diese Dimension.
+* [Sitzungstyp](https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-dataviews/component-reference) - Diese Dimension hat zwei Werte: [!UICONTROL Neu] und [!UICONTROL Wiederkehrend]. Der [!UICONTROL Neu] Zeileneintrag enthält das gesamte Verhalten (d. h. die Metriken für diese Dimension) in einer Sitzung, die als erste Sitzung einer Person definiert wurde. Alles andere ist im Zeileneintrag [!UICONTROL Wiederkehrend] enthalten (vorausgesetzt, dass alles zu einer Sitzung gehört). Wenn Metriken nicht Teil einer Sitzung sind, fallen sie in den Bereich „Nicht zutreffend“ für diese Dimension.
 
-* [Erstmalige &#x200B;](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-reference). Die Metrik Erstmalige Sitzungen ist definiert als die erste Sitzung einer Person innerhalb des Reporting-Fensters.
+* [Erstmalige &#x200B;](https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-dataviews/component-reference). Die Metrik Erstmalige Sitzungen ist definiert als die erste Sitzung einer Person innerhalb des Reporting-Fensters.
 
-* [Wiederkehrende Sitzungen](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-reference) Die Metrik „Wiederkehrende Sitzungen“ bezeichnet die Anzahl der Sitzungen, bei denen es sich nicht um die Erstsitzung einer Person gehandelt hat.—>
+* [Wiederkehrende Sitzungen](https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-dataviews/component-reference) Die Metrik „Wiederkehrende Sitzungen“ bezeichnet die Anzahl der Sitzungen, bei denen es sich nicht um die Erstsitzung einer Person gehandelt hat.—>
 
 So greifen Sie auf die Komponenten zu:
 

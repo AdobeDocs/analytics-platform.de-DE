@@ -18,7 +18,7 @@ Der Projekt-Debugger unterstützt Sie und den Adobe-Support bei der Fehlerbehebu
 
 >[!NOTE]
 >
->Um den Debugger verwenden zu können, benötigen Sie **Bearbeiten** oder **Kopieren** [Zugriff auf das Projekt](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-25744).
+>Um den Debugger verwenden zu können, benötigen Sie **Bearbeiten** oder **Kopieren** [Zugriff auf das Projekt](https://experienceleague.adobe.com/de/docs/experience-cloud-kcs/kbarticles/ka-25744).
 >
 
 
