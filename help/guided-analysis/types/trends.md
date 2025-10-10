@@ -26,7 +26,7 @@ ht-degree: 92%
 Die Analyse ![GraphTrend](/help/assets/icons/GraphTrend.svg) **[!UICONTROL Trends]** liefert wertvolle Erkenntnisse zur Leistung Ihres Produkts oder zum Verhalten Ihrer Benutzenden im Zeitverlauf. Die horizontale Achse dieses Berichts ist ein Zeitintervall, die vertikale Achse ein Maß für die gewünschten Ereignisse.
 
 
->[!VIDEO](https://video.tv.adobe.com/v/3421666/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3423440/?quality=12&learn=on&captions=ger)
 
 ## Anwendungsfälle
 

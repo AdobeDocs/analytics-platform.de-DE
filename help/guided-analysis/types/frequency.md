@@ -25,7 +25,7 @@ ht-degree: 100%
 
 Die Analyse ![Frequency](/help/assets/icons/Histogram.svg) **[!UICONTROL Häufigkeit]** gruppiert Ereignisdaten nach der Häufigkeit, mit der Ereignisse in Ihrem Produkt auftreten. Die vertikale Achse dieser Analyse enthält Buckets, die die Häufigkeit des Ereignisses darstellen. Die horizontale Achse misst die Anzahl der Benutzenden oder Sitzungen für jeden Bucket.
 
->[!VIDEO](https://video.tv.adobe.com/v/3428089/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3435811/?quality=12&learn=on&captions=ger)
 
 ## Anwendungsfälle
 

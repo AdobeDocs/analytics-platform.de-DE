@@ -18,7 +18,7 @@ Auf der Landingpage für Customer Journey Analytics finden Sie [!DNL Analysis Wo
 
 >[!BEGINSHADEBOX]
 
-Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Landingpage in Analysis Workspace](https://video.tv.adobe.com/v/334278/?quality=12&learn=on){target="_blank"} finden Sie ein Demovideo.
+Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Landingpage in Analysis Workspace](https://video.tv.adobe.com/v/3411808/?quality=12&learn=on&captions=ger){target="_blank"} finden Sie ein Demovideo.
 
 {{videoaa}}
 

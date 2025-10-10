@@ -27,7 +27,7 @@ ht-degree: 100%
 Die ![Konversionstrends](/help/assets/icons/ConversionTrends.svg) Analyse **[!UICONTROL Konversions-Trends]** bietet eine Trend-Visualisierung der Konversionsraten im Zeitverlauf. Die horizontale Achse ist ein Zeitintervall, die vertikale Achse stellt die Konversionsrate dar.
 
 
->[!VIDEO](https://video.tv.adobe.com/v/3421662/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3423487/?quality=12&learn=on&captions=ger)
 
 
 ## Anwendungsfälle

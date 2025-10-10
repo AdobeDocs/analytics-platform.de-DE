@@ -41,7 +41,7 @@ Das Ergebnis dieser Formel ist ein Verhältnis. Ein Nettowachstum von `1` stellt
 >
 >Wiederkehrende Benutzende werden in diese Berechnung nicht einbezogen, da sie keinen Gewinn oder Verlust von Benutzenden darstellen.
 
->[!VIDEO](https://video.tv.adobe.com/v/3421664/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3423461/?quality=12&learn=on&captions=ger)
 
 
 ## Anwendungsfälle
