@@ -4,10 +4,10 @@ title: Filtern und Sortieren
 feature: Visualizations
 exl-id: 3af637ec-bb6c-49b7-a7b3-e1d310e71101
 role: User
-source-git-commit: a646d1f35308dc1f1d9f06cf94835534bd8b8da6
+source-git-commit: a16043f1bb15deba1332ed39438214597647b9b4
 workflow-type: tm+mt
-source-wordcount: '841'
-ht-degree: 96%
+source-wordcount: '1132'
+ht-degree: 71%
 
 ---
 
@@ -17,7 +17,7 @@ Freiformtabellen in Analysis Workspace bilden die Grundlage für die interaktive
 
 <!--The following video covers filter and sort options in Analysis Workspace, in addition to pagination options:
 
->[!VIDEO](https://video.tv.adobe.com/v/327342?captions=ger)-->
+>[!VIDEO](https://video.tv.adobe.com/v/23968)-->
 
 ## Filtern von Tabellen
 
@@ -29,9 +29,9 @@ Mit Filtern in Analysis Workspace können Sie die wichtigsten Informationen aufd
 
 Sie können mehrere Methoden verwenden, um Zeilen aus einer Freiformtabelle zu filtern.
 
-- Ausschließen bestimmter Zeilen aus einer Tabelle
-- Anwenden von Filtern auf eine Tabelle
-- Verwenden von Zielgruppensegmenten
+* Ausschließen bestimmter Zeilen aus einer Tabelle
+* Anwenden von Filtern auf eine Tabelle
+* Verwenden von Zielgruppensegmenten
 
 Sehen Sie sich unbedingt an, wie sich die einzelnen Methoden auf die [Gesamtwerte von Freiformtabellen](/help/analysis-workspace/visualizations/freeform-table/workspace-totals.md) auswirken.
 
@@ -94,9 +94,41 @@ So filtern Sie Daten in Freiformtabellen:
 
 1. Wählen Sie **[!UICONTROL Anwenden]** aus, um die Daten zu filtern. Wählen Sie **[!UICONTROL Löschen]** aus, um alle Eingaben zu löschen. Wählen Sie **[!UICONTROL Abbrechen]** aus, um den Vorgang abzubrechen und das Dialogfeld zu schließen. <br/>Ein farbiges ![Filter](/help/assets/icons/FilterColored.svg) **Filtersymbol** weist auf Details hin und zeigt diese an, wenn ein Filter auf die Tabelle angewendet wird.
 
+### Filterkriterien in Trend-Daten in Sparklines und Linienvisualisierungen einschließen {#include-filter-criteria}
+
+Alle Suchfilterkriterien, die auf die Tabellendimension auf eine Freiformtabelle angewendet werden, sind immer in Sparklines enthalten.
+
+Zusätzlich zu Sparklines können Sie Filterkriterien konfigurieren, die in Visualisierungen verbundener Zeilen enthalten sind. (Filterkriterien sind standardmäßig nicht in Linienvisualisierungen enthalten. Linienvisualisierungen zeigen Daten für die Zeile an, die in der verbundenen Tabelle ausgewählt ist. Wenn keine Zeile ausgewählt ist, werden nur Daten für die erste Dimension der verbundenen Tabelle angezeigt.)
+
+Weitere Informationen zu Sparklines und Linienvisualisierungen finden Sie unter [Anzeigen von Trend-Daten für eine Freiformtabelle](/help/analysis-workspace/visualizations/freeform-table/freeform-table-trended-data.md).
+
+#### Konfigurieren von Linienvisualisierungen, um Filterkriterien einzuschließen
+
+1. Wählen Sie die Sparkline in der Spaltenüberschrift Metrik aus.
+
+   Wenn die Sparkline-Zelle ausgewählt ist, wird sie dunkelgrau angezeigt. Dies zeigt an, dass Filterkriterien in der Visualisierung der verbundenen Linien enthalten sind. Die Filterkriterien werden als Segment auf die Spalte angewendet. <!--show how to see it? Show what the segment looks like when it's applied? -->
+
+   ![Sparkline ausgewählt](assets/table-sparkline-selected.png)
+
+#### Verstehen, wann Spaltensummen möglicherweise ungenau sind
+
+Spaltensummen sind in den folgenden Szenarien möglicherweise nicht exakt:
+
+* Wenn statische Komponenten in der linken Spalte verwendet werden und [Spaltensummen als Summe der Zeilen berechnet werden](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.md)
+
+  Wenn Zeilenelemente in diesem Szenario überlappende Daten enthalten, sind die Spaltensummen ungenau.
+
+  Wenn Sie beispielsweise der linken Spalte statische Segmente hinzufügen und in der rechten Spalte Benutzer als Metrik hinzufügen, können einige dieser Benutzer Teil von mehr als einem der statischen Segmente sein. In diesem Fall dedupliziert Workspace die Benutzenden nicht für jedes statische Segment. Dies kann zu einer höheren Anzahl an Gesamtbenutzenden führen, da einige Benutzende möglicherweise mehrmals gezählt werden.
+
+* Bei Verwendung von Dimensionen mit mehreren Werten
+
+>[!NOTE]
+>
+>Das Sparkline- und Liniendiagramm spiegelt weiterhin die genauen Gesamtwerte in diesen Szenarien wider.
+
 ### Verwenden von Zielgruppensegmenten
 
-Weitere Informationen finden [&#x200B; unter &#x200B;](/help/components/segments/seg-overview.md)Segmentierung - Übersicht“.
+Weitere Informationen finden [ unter ](/help/components/segments/seg-overview.md)Segmentierung - Übersicht“.
 
 ## Sortieren von Tabellen
 

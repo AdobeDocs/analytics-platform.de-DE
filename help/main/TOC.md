@@ -9,9 +9,9 @@ index: true
 user-guide-title: Handbuch zu Customer Journey Analytics
 user-guide-description: Hier erhalten Sie Informationen zu Adobe Customer Journey Analytics und Erläuterungen zur Nutzung von Analysis Workspace mit Daten aus Experience Platform.
 breadcrumb-title: Handbuch zu Customer Journey Analytics
-source-git-commit: 04d3de450a9efc12637a3c4272bf3c43b0fbbe0a
+source-git-commit: a16043f1bb15deba1332ed39438214597647b9b4
 workflow-type: tm+mt
-source-wordcount: '1303'
+source-wordcount: '1306'
 ht-degree: 99%
 
 ---
@@ -202,12 +202,13 @@ ht-degree: 99%
       + Freiformtabelle {#freeform-table}
          + [Überblick](../analysis-workspace/visualizations/freeform-table/freeform-table.md)
          + [Erstellen von Hyperlinks](/help/analysis-workspace/visualizations/freeform-table/freeform-table-hyperlinks.md)
+         + [Trend-Daten anzeigen](/help/analysis-workspace/visualizations/freeform-table/freeform-table-trended-data.md)
+         + [Filtern und Sortieren](../analysis-workspace/visualizations/freeform-table/filter-and-sort.md)
+         + [Gesamt](../analysis-workspace/visualizations/freeform-table/workspace-totals.md)
          + Spalten- und Zeileneinstellungen {#column-row-settings}
             + [Spalteneinstellungen](../analysis-workspace/visualizations/freeform-table/column-row-settings/column-settings.md)
             + [Zeileneinstellungen](../analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.md)
             + [Dynamische und statische Elemente](../analysis-workspace/visualizations/freeform-table/column-row-settings/manual-vs-dynamic-rows.md)
-         + [Filtern und Sortieren](../analysis-workspace/visualizations/freeform-table/filter-and-sort.md)
-         + [Gesamt](../analysis-workspace/visualizations/freeform-table/workspace-totals.md)
       + Kohortentabelle {#cohort-table}
          + [Überblick](../analysis-workspace/visualizations/cohort-table/cohort-analysis.md)
          + [Konfigurieren](../analysis-workspace/visualizations/cohort-table/t-cohort.md)
