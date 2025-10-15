@@ -491,7 +491,7 @@ ht-degree: 99%
       + [Anwendungsfälle für BI-Erweiterungen](/help/use-cases/data-views/bi-extension-usecases.md)
    + Abgeleitete Felder {#derived-fields}
       + [Bericht zu LLM und KI-generiertem Traffic](/help/use-cases/ai-traffic.md)
-      + [Bericht über Ziele](../use-cases/goals-using-derived-fields.md)
+      + [Bericht zu Zielen](../use-cases/goals-using-derived-fields.md)
    + Produktanalyse {#product-analysis}
       + [Produktanalyse](/help/use-cases/product-analysis.md)
    + Zuordnung {#stitching}
@@ -514,7 +514,7 @@ ht-degree: 99%
    + [Labs-Benutzerhandbuch](../labs/labs.md)
 
 + Fehlerbehebung {#troubleshooting}
-   + [Vergleichen von Source Connector-Daten](../troubleshooting/compare.md)
+   + [Vergleichen von Quell-Connector-Daten](../troubleshooting/compare.md)
    + [Konsistenz von Metriken und Zielgruppen](../troubleshooting/consistency-rcdp-cja.md)
    + [Fehlen von Berechtigungen](../troubleshooting/lack-of-permissions.md)
 
