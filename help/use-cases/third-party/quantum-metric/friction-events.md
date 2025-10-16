@@ -38,7 +38,7 @@ Dieser Anwendungsfall erfordert ein dediziertes Schemafeld, an das Daten gesende
 
 ## Schritt 2: Erfassen von Reibungsereignissen mit der Quantum Metric-Tag-Erweiterung
 
-Anweisungen [&#x200B; Einrichten Ihrer Tags für das Einschließen von Quantenmetrikdaten finden Sie unter &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/analytics/quantum-metric)Quantum Metric-Erweiterung“ im Adobe Experience Platform Destinations-Handbuch. Durch die Verwendung dieser Erweiterung werden mehr Zeilen in einen vorhandenen Datensatz übergeben.
+Anweisungen [&#x200B; Einrichten Ihrer Tags für das Einschließen von Quantenmetrikdaten finden Sie unter &#x200B;](https://experienceleague.adobe.com/de/docs/experience-platform/destinations/catalog/analytics/quantum-metric)Quantum Metric-Erweiterung“ im Adobe Experience Platform Destinations-Handbuch. Durch die Verwendung dieser Erweiterung werden mehr Zeilen in einen vorhandenen Datensatz übergeben.
 
 Verwenden Sie Tags in der Adobe Experience Platform-Datenerfassung, um den Namen des Reibungsereignisses manuell festzulegen, sodass es in das XDM-Objekt aufgenommen und analysiert werden kann. Eine Möglichkeit, dies zu tun, besteht im benutzerdefinierten Code der Regel:
 

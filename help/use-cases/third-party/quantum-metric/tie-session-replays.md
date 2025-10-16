@@ -20,7 +20,7 @@ Durch die Verknüpfung von Quantum Metric-Sitzungswiederholungen mit CJA-Daten k
 
 Bei diesen Schritten wird davon ausgegangen, dass Sie Tags in der Datenerfassung von Adobe Experience Platform verwenden. Wenn Ihr Unternehmen keine Tags verwendet, können Sie diese Datenerfassungsmethoden an eine manuelle Web SDK-Implementierung anpassen.
 
-Weitere Informationen finden [&#x200B; in der Dokumentation &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/analytics/quantum-metric)Quantum Metric-Tag-Erweiterung“.
+Weitere Informationen finden [&#x200B; in der Dokumentation &#x200B;](https://experienceleague.adobe.com/de/docs/experience-platform/destinations/catalog/analytics/quantum-metric)Quantum Metric-Tag-Erweiterung“.
 
 ## Schritt 1: Erstellen Sie ein Schemafeld für die Quantum Metric-Sitzungs-ID
 

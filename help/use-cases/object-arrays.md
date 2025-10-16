@@ -270,5 +270,5 @@ Durch Anwendung dieser berechneten Metrik werden die gewünschten Ergebnisse ang
 
 ## Einschränkungen
 
-Einschränkungen gelten für Arrays in Daten, die von Customer Journey Analytics verwendet und als Teil eines Schemas in Experience Platform modelliert werden. Siehe [Datenmodellbeschränkungen](https://experienceleague.adobe.com/en/docs/experience-platform/profile/guardrails#data-model-limits) und [Datengrößenbeschränkungen](https://experienceleague.adobe.com/en/docs/experience-platform/profile/guardrails#data-size-limits) in den [Standardleitplanken für Echtzeit-Kundenprofildaten und -segmentierung](https://experienceleague.adobe.com/de/docs/experience-platform/profile/guardrails).
+Einschränkungen gelten für Arrays in Daten, die von Customer Journey Analytics verwendet und als Teil eines Schemas in Experience Platform modelliert werden. Siehe [Datenmodellbeschränkungen](https://experienceleague.adobe.com/de/docs/experience-platform/profile/guardrails#data-model-limits) und [Datengrößenbeschränkungen](https://experienceleague.adobe.com/de/docs/experience-platform/profile/guardrails#data-size-limits) in den [Standardleitplanken für Echtzeit-Kundenprofildaten und -segmentierung](https://experienceleague.adobe.com/de/docs/experience-platform/profile/guardrails).
 
