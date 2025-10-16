@@ -7,7 +7,7 @@ role: User
 source-git-commit: c4c8c0ff5d46ec455ca5333f79d6d8529f4cb87d
 workflow-type: tm+mt
 source-wordcount: '358'
-ht-degree: 92%
+ht-degree: 78%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 92%
 
 >[!BEGINSHADEBOX]
 
-_In diesem Artikel wird die Visualisierung Fallout in_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics** beschrieben._<br/>_Unter [Fallout](https://experienceleague.adobe.com/de/docs/analytics/analyze/analysis-workspace/visualizations/fallout/fallout-flow) finden Sie die Version dieses Artikels für_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics**._
+_In diesem Artikel wird die Visualisierung Fallout in_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics** beschrieben._<br/>_Unter [Fallout](https://experienceleague.adobe.com/de/docs/analytics/analyze/analysis-workspace/visualizations/fallout/fallout-flow) finden Sie die Version dieses Artikels für_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**._
 
 >[!ENDSHADEBOX]
 
@@ -51,7 +51,7 @@ Mit Visualisierungen vom Typ „Fallout“ können Sie:
 
 Die Fallout-Funktion zeigt Konversions- und Fallout-Raten zwischen den einzelnen Schritten oder Touchpoints in einer Sequenz an.
 
-So können Sie beispielsweise die Fallout-Punkte einer Person während eines Kaufprozesses nachverfolgen. Wählen Sie einfach einen Start-Touchpoint und einen End-Touchpoint aus und fügen Sie Zwischen-Touchpoints hinzu, um einen Website-Navigationspfad zu erstellen. Sie können aber auch multidimensionale Fallouts vornehmen.
+So können Sie beispielsweise die Fallout-Punkte einer Person während eines Kaufprozesses nachverfolgen. Wählen Sie einfach einen Anfangs-Touchpoint und einen Abschluss-Touchpoint aus und fügen Sie Zwischen-Touchpoints hinzu, um einen Website-Navigationspfad zu erstellen. Man kann aber auch mehrdimensionale Fallouts anwenden.
 
 ## Auswählen zwischen Visualisierungen vom Typ „Fallout“, „Fluss“ und „Journey-Arbeitsfläche“
 
@@ -69,7 +69,7 @@ Sowohl Visualisierungen vom Typ „Fallout“ als auch vom Typ [Journey-Arbeitsf
 
 * Konversionssätze durch bestimmte Abläufe auf Ihrer Site (wie z. B. ein Kauf- oder Registrierungsablauf).
 * Allgemeiner Traffic-Fluss mit breiterem Umfang: Dieser Fluss zeigt an, wie viele der Personen, die die Homepage besucht haben, eine Suche durchgeführt haben. Anschließend wird angezeigt, wie viele von ihnen sich schließlich einen bestimmten Artikel angesehen haben.
-* Korrelationen zwischen Ereignissen auf Ihrer Site. Korrelationen zeigen, welcher Prozentsatz von Personen, die die Datenschutzrichtlinien durchlasen, ein Produkt kauften.
+* Korrelationen zwischen Ereignissen auf Ihrer Site. Korrelationen zeigen an, wie viel Prozent der Personen, die sich Ihre Datenschutzerklärung angesehen haben, ein Produkt gekauft haben.
 
 Visualisierungen vom Typ Fallout eignen sich am besten für:
 

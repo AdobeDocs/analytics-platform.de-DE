@@ -7,7 +7,7 @@ role: User
 source-git-commit: c4c8c0ff5d46ec455ca5333f79d6d8529f4cb87d
 workflow-type: tm+mt
 source-wordcount: '719'
-ht-degree: 88%
+ht-degree: 85%
 
 ---
 
@@ -34,7 +34,7 @@ ht-degree: 88%
 
 >[!BEGINSHADEBOX]
 
-_In diesem Artikel wird die Kohortentabelle in_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics** beschrieben._<br/>_Unter [Kohortentabelle](https://experienceleague.adobe.com/de/docs/analytics/analyze/analysis-workspace/visualizations/cohort-table/cohort-analysis) finden Sie die Version dieses Artikels für_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics**._
+_In diesem Artikel wird die Kohortentabelle in_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics** beschrieben._<br/>_Unter [Kohortentabelle](https://experienceleague.adobe.com/de/docs/analytics/analyze/analysis-workspace/visualizations/cohort-table/cohort-analysis) finden Sie die Version dieses Artikels für_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**._
 
 >[!ENDSHADEBOX]
 
@@ -45,8 +45,8 @@ Nachdem Sie einen Kohortenbericht erstellt haben, können Sie dessen Komponenten
 
 Beispiele für die Nutzung einer [!UICONTROL Kohortentabelle]:
 
-* Starten Sie Kampagnen, die dafür ausgelegt sind, eine erwünschte Aktion anzuregen.
-* Erhöhen Sie das Marketingbudget genau zum richtigen Zeitpunkt im Kundenlebenszyklus.
+* Starten Sie Kampagnen, die eine gewünschte Aktion auslösen sollen.
+* Verlagern Sie das Marketing-Budget zur genau richtigen Zeit im Kundenlebenszyklus.
 * Erkennen Sie, wann eine Testphase oder ein Angebot beendet werden sollte, um den Wert zu maximieren.
 * Gewinnen Sie Ideen für A/B-Tests in Bereichen wie Preisstruktur, Upgrade-Pfad usw.
 
@@ -55,7 +55,7 @@ Die [!UICONTROL Kohortentabelle] steht allen Customer Journey Analytics-Kundinne
 
 >[!BEGINSHADEBOX]
 
-Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Kohortenanalyse in Analysis Workspace](https://video.tv.adobe.com/v/3430076/?quality=12&learn=on&captions=ger){target="_blank"} finden Sie ein Demovideo.
+Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Kohortenanalyse in Analysis Workspace](https://video.tv.adobe.com/v/23990/?quality=12&learn=on){target="_blank"} finden Sie ein Demovideo.
 
 {{videoaa}}
 
@@ -64,7 +64,7 @@ Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Kohortenanalys
 
 >[!IMPORTANT]
 >
->[!UICONTROL Kohortenanalyse] unterstützt keine nicht segmentierbaren Metriken (einschließlich berechneter Metriken), Nicht-Ganzzahlmetriken (z. B. Umsatz) oder Vorfälle. In der [!UICONTROL Kohortenanalyse“ können nur Metriken verwendet werden, die auch in Segmenten verwendet &#x200B;] können. Darüber hinaus können diese Metriken jeweils nur 1 inkrementiert werden.
+>[!UICONTROL Kohortenanalyse] unterstützt keine nicht segmentierbaren Metriken (einschließlich berechneter Metriken), Nicht-Ganzzahlmetriken (z. B. Umsatz) oder Vorfälle. In der [!UICONTROL Kohortenanalyse“ können nur Metriken verwendet werden, die auch in Segmenten verwendet ] können. Darüber hinaus können diese Metriken jeweils nur 1 inkrementiert werden.
 
 Kohortentabellen in Customer Journey Analytics unterstützen Dubletten-basierte (oder beliebige numerische) Metriken. Beispielsweise kann „Purchase.Value“ (eine Dublette) als Einschluss-/Rückgabemetrik verwendet werden. Darüber hinaus sind alle Metriken, die über den Analytics-Quell-Connector an Adobe Experience Platform übergeben werden, ebenfalls Dubletten.
 

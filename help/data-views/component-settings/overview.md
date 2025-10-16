@@ -95,7 +95,7 @@ Die Vorteile von Kontextkennzeichnungen sind:
 
 Kontextkennzeichnungen können in den folgenden Situationen erforderlich sein:
 
-* Um einen Komponentensatz zu definieren, können Sie ihn in Analysis Workspace-Projekten im Experimentier[Reporting über das &#x200B;](/help/analysis-workspace/c-panels/experimentation.md)Experimentier-Bedienfeld“ verwenden.
+* Um einen Komponentensatz zu definieren, können Sie ihn in Analysis Workspace-Projekten im Experimentier[Reporting über das ](/help/analysis-workspace/c-panels/experimentation.md)Experimentier-Bedienfeld“ verwenden.
 
   Weitere Informationen finden Sie unter [Integrieren mit Journey Optimizer](/help/integrations/ajo.md#data-view) und [Zielgruppenberichte](/help/integrations/at.md).
 
@@ -250,7 +250,7 @@ Die folgenden Gruppen von Kontextbeschriftungen sind mit jeweils einer Liste spe
 | Anwendungs-ID | Anwendungs-ID. |
 | Mobilnetzbetreiber | Mobilnetzbetreiber. |
 | Abstürze auf Mobilgeräten | Mobile stürzt ab. |
-| Mobilgerätname | Name des Mobilgeräts. |
+| Mobilgerätename | Name des Mobilgeräts. |
 | Mobilgerätetyp | Mobilgerätetyp. |
 | Name der mobilen In-App-Nachricht | Name der Mobile-App-Nachricht. |
 | Installationen auf Mobilgeräten | Mobile Installationen. |
@@ -351,7 +351,7 @@ Die folgenden Gruppen von Kontextbeschriftungen sind mit jeweils einer Liste spe
 | Asset – Szenen | Asset-Szenen. |
 | Asset-Quelle | Asset-Source. |
 | Asset – Tags | Asset-Tags. |
-| Asset-Typ | Asset-Typ |
+| Asset – Typ | Asset-Typ |
 | Asset – Ansichten | Asset-Ansichten. |
 | Asset – Verteilung der visuellen Aufmerksamkeit | Verbreitung der visuellen Aufmerksamkeit für Assets. |
 | Asset – Dichte der visuellen Inhalte | Dichte des visuellen Inhalts des Assets. |

@@ -7,7 +7,7 @@ role: User
 source-git-commit: e07b901f66a59aba1a7a517443eec73387d23c57
 workflow-type: tm+mt
 source-wordcount: '174'
-ht-degree: 97%
+ht-degree: 25%
 
 ---
 
@@ -19,18 +19,18 @@ Datenanomalien können kontextbezogen in Analysis Workspace angezeigt und analy
 
 Die Anomalieerkennung bietet eine statistische Methode, mit der festgestellt wird, wie sich eine bestimmte Metrik in Bezug auf frühere Daten verändert hat.
 
-Die Anomalieerkennung ermöglicht es Ihnen, „echte Signale“ von „Rauschen“ zu unterscheiden. Zudem hilft sie Ihnen anschließend dabei, potenzielle Faktoren zu bestimmen, die zu diesen Signalen oder Anomalien beigesteuert haben. Auf diese Weise können Sie feststellen, welche statistischen Schwankungen relevant sind, und anschließend die Ursache eines echten Fehlers feststellen. Zudem erhalten Sie eine zuverlässige Metrikvorhersage (KPI).
+Mit der Anomalieerkennung können Sie „wahre Signale“ von „Rauschen“ trennen und dann potenzielle Faktoren identifizieren, die zu diesen Signalen oder Anomalien beigetragen haben. Mit anderen Worten, es lässt Sie erkennen, welche statistischen Schwankungen von Bedeutung sind und welche nicht. Anschließend können Sie die Grundursache einer echten Anomalie identifizieren. Darüber hinaus können Sie zuverlässige Metrik (KPI)-Prognosen abrufen.
 
-Zu Beispielen von Fehlern, die ein Eingreifen Ihrerseits erfordern, zählen:
+Beispiele für Anomalien, die Sie untersuchen können:
 
-* Erhebliche Verwerfungen im durchschnittlichen Bestellwert
-* Spitzen in Bestellungen mit geringem Umsatz
-* Spitzen oder Verwerfungen in Testprogrammregistrierungen
-* Verwerfungen bei Landingpage-Aufrufen
-* Spitzen in Videopufferereignissen
-* Spitzen in niedrigen Video-Bitraten
+* Drastische Rückgänge beim durchschnittlichen Bestellwert
+* Spitzen bei Aufträgen mit geringem Umsatz
+* Spitzen oder Rückgänge bei Testregistrierungen
+* Drops in Landingpage-Ansichten
+* Spitzen bei Videopuffer-Ereignissen
+* Spitzen bei niedrigen Video-Bitraten
 
-Der Algorithmus der Analysis Workspace-Anomalieerkennung umfasst:
+Der Anomalieerkennungsalgorithmus von Analysis Workspace umfasst
 
-* Unterstützung für die Einstellungen „Stündlich“, „Wöchentlich“ und „Monatlich“ (zusätzlich zur vorhandenen Einstellung „Täglich“)
-* Berücksichtigung von besonderen Tagen (wie z. B. Black Friday) und Feiertagen
+* Unterstützung für stündliche, wöchentliche und monatliche Granularität zusätzlich zur vorhandenen täglichen Granularität.
+* Bewusstsein für Saisonabhängigkeit (wie „Black Friday„) und Feiertage.

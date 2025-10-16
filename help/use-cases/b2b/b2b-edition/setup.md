@@ -9,7 +9,7 @@ exl-id: f959a77b-ccfb-43f2-93bb-b330e73d59ac
 source-git-commit: 3c13ae26a9ef48454467fc21b8faaa9e078c7f9f
 workflow-type: tm+mt
 source-wordcount: '1727'
-ht-degree: 13%
+ht-degree: 10%
 
 ---
 
@@ -384,4 +384,4 @@ Zum Beispiel:
 
 ## Sonstige
 
-Sie können optional andere Komponenten für Ihre Anwendungsfälle definieren, z. B[&#x200B; „Berechnete &#x200B;](/help/components/calc-metrics/calc-metr-overview.md)&quot;, [Datumsbereiche](/help/components/date-ranges/overview.md) oder [Warnhinweise](/help/components/c-intelligent-alerts/intelligent-alerts.md).
+Sie können optional andere Komponenten für Ihre Anwendungsfälle definieren, z. B[ „Berechnete ](/help/components/calc-metrics/calc-metr-overview.md)&quot;, [Datumsbereiche](/help/components/date-ranges/overview.md) oder [Warnhinweise](/help/components/c-intelligent-alerts/intelligent-alerts.md).

@@ -6,7 +6,7 @@ exl-id: 64cb10b5-36f0-42c8-b687-ae5de5ced8b5
 source-git-commit: c745e37203ac829fa0fb7d8532e6499351cb94ba
 workflow-type: tm+mt
 source-wordcount: '2460'
-ht-degree: 4%
+ht-degree: 3%
 
 ---
 
@@ -18,7 +18,7 @@ Sequenzielle Segmente erstellen Sie mit dem [!UICONTROL Then] logischen Operator
 
 >[!BEGINSHADEBOX]
 
-Siehe ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Sequenzielle Segmentierung](https://video.tv.adobe.com/v/37428/?quality=12&learn=on&captions=ger){target="_blank"} für ein Demovideo.
+Siehe ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Sequenzielle Segmentierung](https://video.tv.adobe.com/v/25405/?quality=12&learn=on){target="_blank"} für ein Demovideo.
 
 {{videoaa}}
 
@@ -35,15 +35,15 @@ Ein sequenzielles Segment verfügt über einige [grundlegende Funktionen](#basic
    * Wählen Sie ![SequenceBefore](/help/assets/icons/SequenceBefore.svg) **[!UICONTROL Only Before Sequence]** aus, um nur Daten vor der Sequenz zu berücksichtigen.
    * Wählen Sie ![SequenceAfter](/help/assets/icons/SequenceAfter.svg) **[!UICONTROL Only After Sequence]** aus, um nur Daten nach der Sequenz zu berücksichtigen.
 
-* Welche Daten [&#x200B; als Teil &#x200B;](#exclude) sequenziellen Segmentdefinition ausgeschlossen werden sollen.
+* Welche Daten [ als Teil ](#exclude) sequenziellen Segmentdefinition ausgeschlossen werden sollen.
 
-* Erfahren Sie[&#x200B; wie Sie Bedingungen &#x200B;](#logic-group) Ihrer sequenziellen Segmentdefinition logisch gruppieren.
+* Erfahren Sie[ wie Sie Bedingungen ](#logic-group) Ihrer sequenziellen Segmentdefinition logisch gruppieren.
 
 ## Grundlagen
 
 
 
-Die Grundlagen zum Erstellen eines sequenziellen Segments unterscheiden sich nicht vom Erstellen eines regulären Segments mit dem [Segment Builder](seg-builder.md). Sie können den [Definition-Builder](seg-builder.md#definition-builder) verwenden, um Ihre Segmentdefinition zu erstellen. In dieser Konstruktion verwenden Sie Komponenten, Container, Operatoren und Logik. Ein reguläres Segment wird zu einem sequenziellen Segment, sobald Sie den **[!UICONTROL Then]**-Operator in der Hauptdefinition oder in einem der Container auswählen, die Sie im [Definition-Builder) &#x200B;](seg-builder.md#definition-builder).
+Die Grundlagen zum Erstellen eines sequenziellen Segments unterscheiden sich nicht vom Erstellen eines regulären Segments mit dem [Segment Builder](seg-builder.md). Sie können den [Definition-Builder](seg-builder.md#definition-builder) verwenden, um Ihre Segmentdefinition zu erstellen. In dieser Konstruktion verwenden Sie Komponenten, Container, Operatoren und Logik. Ein reguläres Segment wird zu einem sequenziellen Segment, sobald Sie den **[!UICONTROL Then]**-Operator in der Hauptdefinition oder in einem der Container auswählen, die Sie im [Definition-Builder) ](seg-builder.md#definition-builder).
 
 ### Beispiele
 
@@ -57,13 +57,13 @@ Personen identifizieren, die eine Seite angesehen und dann eine andere Seite ang
 
 #### Sitzungsübergreifendes Sequenzieren
 
-Personen identifizieren, die eine Seite in einer Sitzung und dann eine andere Seite in einer anderen Sitzung angesehen haben. Um zwischen Sitzungen zu unterscheiden, verwenden Sie Container, um die Sequenz zu erstellen, und definieren Sie ![&#x200B; Ebene &#x200B;](/help/assets/icons/Visit.svg)Besuch **[!UICONTROL Sitzung]** für jeden Container.
+Personen identifizieren, die eine Seite in einer Sitzung und dann eine andere Seite in einer anderen Sitzung angesehen haben. Um zwischen Sitzungen zu unterscheiden, verwenden Sie Container, um die Sequenz zu erstellen, und definieren Sie ![ Ebene ](/help/assets/icons/Visit.svg)Besuch **[!UICONTROL Sitzung]** für jeden Container.
 
 ![Segment sitzungsübergreifend sequenzieren](assets/sequence-filter-session.png)
 
 #### Sequenz mit gemischten Ebenen
 
-Personen identifizieren, die zwei Seiten über eine unbestimmte Anzahl von Sitzungen hinweg anzeigen, und dann eine dritte Seite in einer separaten Sitzung anzeigen. Auch hier verwenden Sie Container, um die Sequenz zu erstellen und ![&#x200B; Ebene &#x200B;](/help/assets/icons/Visit.svg)Besuch **[!UICONTROL Sitzung]** für den Container zu definieren, der die separate Sitzung definiert.
+Personen identifizieren, die zwei Seiten über eine unbestimmte Anzahl von Sitzungen hinweg anzeigen, und dann eine dritte Seite in einer separaten Sitzung anzeigen. Auch hier verwenden Sie Container, um die Sequenz zu erstellen und ![ Ebene ](/help/assets/icons/Visit.svg)Besuch **[!UICONTROL Sitzung]** für den Container zu definieren, der die separate Sitzung definiert.
 
 ![Sequenzielles Segment mit separater letzter Sitzung](assets/sequence-filter-final-session.png)
 
@@ -91,7 +91,7 @@ So wenden Sie Zeitbeschränkungen auf den Operator **[!UICONTROL Then]** an:
 1. Wählen Sie ![Uhr](/help/assets/icons/Clock.svg) aus.
 1. Wählen **[!UICONTROL Innerhalb]** oder **[!UICONTROL Nachher]** aus dem Kontextmenü aus.
 1. Geben Sie einen Zeitraum (**[!UICONTROL Minute]**, **[!UICONTROL Stunde]** bis **[!UICONTROL Jahre]**) an.
-1. Wählen Sie ![ChevronDown](/help/assets/icons/ChevronDown.svg) **[!UICONTROL *number *]**&#x200B;aus, um ein Popup zu öffnen, in dem Sie eine Zahl eingeben oder mit&#x200B;**[!UICONTROL -]**&#x200B;oder&#x200B;**[!UICONTROL +]**&#x200B;angeben können.
+1. Wählen Sie ![ChevronDown](/help/assets/icons/ChevronDown.svg) **[!UICONTROL *number *]**aus, um ein Popup zu öffnen, in dem Sie eine Zahl eingeben oder mit**[!UICONTROL -]**oder**[!UICONTROL +]**angeben können.
 
 Um eine Zeitbeschränkung zu entfernen, verwenden Sie ![CrossSize75](/help/assets/icons/CrossSize75.svg).
 
@@ -100,7 +100,7 @@ In der folgenden Tabelle werden die Zeitbeschränkungsoperatoren genauer erläut
 | Operatoren | Beschreibung |
 |--- |--- |
 | **[!UICONTROL nachher]** | Der [!UICONTROL After]-Operator wird verwendet, um eine Mindestgrenze für den Zeitraum zwischen zwei Checkpoints anzugeben. Beim Festlegen der After-Werte beginnt das Zeitlimit mit der Anwendung des Segments. Wenn beispielsweise der Operator [!UICONTROL After] auf einem Container festgelegt ist, um Personen zu identifizieren, die Seite A besuchen, aber erst nach einem Tag zu Seite B zurückkehren, beginnt dieser Tag, wenn der Besucher Seite A verlässt.  Damit der Besucher in das Segment aufgenommen werden kann, muss nach dem Verlassen von Seite A zur Ansicht von Seite B mindestens 1440 Minuten (ein Tag) erkennbar sein. |
-| **[!UICONTROL Innerhalb]** | Der [!UICONTROL In]-Operator wird zum Angeben einer maximalen Zeitbegrenzung zwischen zwei Checkpoints verwendet. Wenn beispielsweise der Operator [!UICONTROL Innerhalb] auf einem Container festgelegt ist, um Personen zu identifizieren, die Seite A besuchen, und dann innerhalb eines Tages zu Seite B zurückkehren, beginnt dieser Tag, wenn die Person Seite A verlässt. Um in das Segment aufgenommen zu werden, benötigt die Person maximal einen Tag, bevor sie Seite B öffnet. Damit die Person in das Segment aufgenommen werden kann, muss das Öffnen der Seite B innerhalb von maximal 1440 Minuten (einen Tag) nach dem Verlassen der Seite A erfolgen, um Seite B anzuzeigen. |
+| **[!UICONTROL Innerhalb]** | Der [!UICONTROL Within]-Operator wird verwendet, um eine maximale Zeitspanne zwischen zwei Checkpoints anzugeben. Wenn beispielsweise der Operator [!UICONTROL Innerhalb] auf einem Container festgelegt ist, um Personen zu identifizieren, die Seite A besuchen, und dann innerhalb eines Tages zu Seite B zurückkehren, beginnt dieser Tag, wenn die Person Seite A verlässt. Um in das Segment aufgenommen zu werden, benötigt die Person maximal einen Tag, bevor sie Seite B öffnet. Damit die Person in das Segment aufgenommen werden kann, muss das Öffnen der Seite B innerhalb von maximal 1440 Minuten (einen Tag) nach dem Verlassen der Seite A erfolgen, um Seite B anzuzeigen. |
 | **[!UICONTROL nach, aber innerhalb von]** | Bei Verwendung der Operatoren [!UICONTROL After] und [!UICONTROL Within] beginnen und enden beide parallel, nicht sequenziell. <br/>Sie erstellen beispielsweise ein Segment, für das der Container auf `After = 1 Week(s) and Within = 2 Week(s)` festgelegt ist.<br/>Die Bedingungen zur Identifizierung von Besuchern in diesem Segment sind nur zwischen einer und zwei Wochen erfüllt. Beide Bedingungen werden ab dem Zeitpunkt der ersten Seitenansicht erzwungen. |
 
 
@@ -216,11 +216,11 @@ Segmentdefinitionen enthalten alle Daten, es sei denn, Sie schließen ![Benutzer
 
 Beispiele für Ausschlussdefinitionen:
 
-* **Schließen Sie Seiten aus**. Verwenden Sie eine Segmentdefinition, um eine bestimmte Seite (z *B. &quot;*„) aus einem Bericht zu entfernen, eine Ereignisregel zu erstellen, in der die Seite gleich `Home Page`, und dann die Regel auszuschließen. Diese Definition umfasst automatisch alle Seiten außer der *Startseite*.
+* **Ausschließen von Seiten**. Verwenden Sie eine Segmentdefinition, um eine bestimmte Seite (z *B. &quot;*„) aus einem Bericht zu entfernen, eine Ereignisregel zu erstellen, in der die Seite gleich `Home Page`, und dann die Regel auszuschließen. Diese Definition umfasst automatisch alle Seiten außer der *Startseite*.
 * **Schließen Sie die Referrerdomäne aus**. Verwenden Sie eine Definition, die nur verweisende Domains von Google.com umfasst und alle anderen ausschließt.
 * **Identifizieren Sie Nicht-Käufer**. Ermitteln Sie, wenn die Bestellungen größer als null sind, und schließen Sie dann die [!UICONTROL Person] aus.
 
-[!UICONTROL Ausschließen] kann verwendet werden, um eine Sequenz zu identifizieren, in der Personen nicht an bestimmten Sitzungen teilnehmen oder bestimmte Ereignisse ausführen. [!UICONTROL Ausschließen] kann auch in eine [!UICONTROL logische Gruppe“ aufgenommen werden &#x200B;]siehe unten).
+[!UICONTROL Ausschließen] kann verwendet werden, um eine Sequenz zu identifizieren, in der Personen nicht an bestimmten Sitzungen teilnehmen oder bestimmte Ereignisse ausführen. [!UICONTROL Ausschließen] kann auch in eine [!UICONTROL logische Gruppe“ aufgenommen werden ]siehe unten).
 
 Sie können Container ausschließen, keine Komponenten.
 
@@ -230,7 +230,7 @@ Nachfolgend finden Sie Beispiele für die Verwendung von [!UICONTROL Ausschließ
 
 #### [!UICONTROL Ausschließen] innerhalb von
 
-Personen identifizieren, die eine Seite besucht haben, eine andere Seite nicht besucht haben und dann eine weitere Seite besucht haben. Sie schließen den Container mit &quot;![&quot; &#x200B;](/help/assets/icons/Setting.svg) &quot;[!UICONTROL &quot; &#x200B;]. Ein ausgeschlossener Container wird durch einen dünnen roten Balken auf der linken Seite gekennzeichnet.
+Personen identifizieren, die eine Seite besucht haben, eine andere Seite nicht besucht haben und dann eine weitere Seite besucht haben. Sie schließen den Container mit &quot;![&quot; ](/help/assets/icons/Setting.svg) &quot;[!UICONTROL &quot; ]. Ein ausgeschlossener Container wird durch einen dünnen roten Balken auf der linken Seite gekennzeichnet.
 
 ![Sequenz ausschließen](assets/sequence-exclude.png)
 
@@ -278,7 +278,7 @@ Sie können dieses Segment ohne eine [!UICONTROL logische Gruppe] erstellen, abe
 
 ![Beispiel ohne Verwendung einer logischen Gruppe](assets/logicgroup-example-notusing.png)
 
-Sie können die [!UICONTROL logische Gruppe] verwenden, um die Erstellung dieses Segments zu vereinfachen, wie unten dargestellt. Stellen Sie sicher![&#x200B; dass Sie &#x200B;](/help/assets/icons/Group.svg)Gruppe **[!UICONTROL logische Gruppe]** für den Container auswählen.
+Sie können die [!UICONTROL logische Gruppe] verwenden, um die Erstellung dieses Segments zu vereinfachen, wie unten dargestellt. Stellen Sie sicher![ dass Sie ](/help/assets/icons/Group.svg)Gruppe **[!UICONTROL logische Gruppe]** für den Container auswählen.
 
 ![Beispiel ohne Verwendung einer logischen Gruppe](assets/logicgroup-example-using.png)
 

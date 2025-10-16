@@ -29,8 +29,8 @@ In den folgenden Abschnitten erfahren Sie, wie Sie mithilfe segmentierter Metrik
 
 ## Beliebte Seiten
 
-1. [Erstellen Sie eine berechnete &#x200B;](cm-workflow.md) aus einem Workspace-Projekt namens `German people`.
-1. Erstellen Sie im [Generator für berechnete &#x200B;](cm-build-metrics.md) [&#x200B; ein Segment](/help/components/segments/seg-builder.md) mit dem Titel &quot;`Germany`&quot;, d. h. mithilfe des Felds „CRM-Land“ aus Ihren CRM-Daten, um zu bestimmen, woher eine Person kommt.
+1. [Erstellen Sie eine berechnete ](cm-workflow.md) aus einem Workspace-Projekt namens `German people`.
+1. Erstellen Sie im [Generator für berechnete ](cm-build-metrics.md)[ ein Segment](/help/components/segments/seg-builder.md) mit dem Titel &quot;`Germany`&quot;, d. h. mithilfe des Felds „CRM-Land“ aus Ihren CRM-Daten, um zu bestimmen, woher eine Person kommt.
 
    >[!TIP]
    >
@@ -90,7 +90,7 @@ Wiederholen Sie die obigen Schritte für die internationale Version Ihrer berech
 
 >[!BEGINSHADEBOX]
 
-Siehe ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Verwenden einer segmentierten berechneten Metrik als implementierungslose Metrik](https://video.tv.adobe.com/v/37931?quality=12&learn=on&captions=ger){target="_blank"} für ein Demovideo.
+Siehe ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Verwenden einer segmentierten berechneten Metrik als implementierungslose Metrik](https://video.tv.adobe.com/v/25407?quality=12&learn=on){target="_blank"} für ein Demovideo.
 
 {{videoaa}}
 

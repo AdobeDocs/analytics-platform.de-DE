@@ -8,7 +8,7 @@ role: User
 source-git-commit: 4599a058cef79a28bd6f9b788c2b202c8235298d
 workflow-type: tm+mt
 source-wordcount: '1738'
-ht-degree: 87%
+ht-degree: 86%
 
 ---
 
@@ -68,7 +68,7 @@ Die folgenden Visualisierungstypen sind in Analysis Workspace verfügbar:
 
    * Wählen Sie im Kontextmenü in einer Freiformtabelle die Option **[!UICONTROL Visualisieren]** aus. Wählen Sie dann die Visualisierung aus dem Untermenü aus. Basierend auf der aktuellen Auswahl in der Tabelle bestimmt Workspace, welche Visualisierung angeboten werden soll, und interpretiert die Daten, um die angeforderte Visualisierung zu erstellen.
 
-Wenn Sie eine einfache Visualisierung hinzufügen, z. B[&#x200B; eine &#x200B;](line.md)-[-](bar.md)-Visualisierung, verwendet die Visualisierung die nächste Freiformtabelle als Datenquelle. Sie können jederzeit die [Datenquelle](#data-source) einer Ihrer Visualisierungen ändern.
+Wenn Sie eine einfache Visualisierung hinzufügen, z. B[ eine ](line.md)-[-](bar.md)-Visualisierung, verwendet die Visualisierung die nächste Freiformtabelle als Datenquelle. Sie können jederzeit die [Datenquelle](#data-source) einer Ihrer Visualisierungen ändern.
 
 
 ## Verwalten von Visualisierungen
@@ -93,7 +93,7 @@ Darüber hinaus können Sie Legendenbeschriftungen umbenennen, um Visualisierung
 
 So bearbeiten Sie eine Legendenbezeichnung:
 
-1. klicken Sie mit der rechten Maustaste auf die Legendenbeschriftungen.
+1. Klicken Sie mit der rechten Maustaste auf eine der Legendenbeschriftungen.
 1. Klicken Sie auf **[!UICONTROL Bezeichnung bearbeiten]**.
 
    ![Ein Legenden-Label und die Option „Label bearbeiten“.](assets/edit-label.png)
@@ -156,10 +156,10 @@ Verwenden Sie das Kontextmenü (verfügbar über eine alternative Auswahl, z. B
 | --- | --- |
 | **[!UICONTROL Kopierte Visualisierung einfügen]** | Fügen Sie eine kopierte Visualisierung an einer anderen Stelle innerhalb des Projekts oder in ein ganz anderes Projekt ein. |
 | **[!UICONTROL Daten in die Zwischenablage kopieren]** | [Kopieren Sie Daten](/help/analysis-workspace/export/download-send.md#copy-to-clipboard) aus der Visualisierung in die Zwischenablage. |
-| **[!UICONTROL Auswahl in die Zwischenablage kopieren]** | [Kopieren Sie die &#x200B;](/help/analysis-workspace/export/download-send.md#copy-to-clipboard) aus der Visualisierung in die Zwischenablage. |
-| **[!UICONTROL Objekte als CSV herunterladen (*Dimensionsname*)]** | [Laden Sie die Dimensionselemente &#x200B;](/help/analysis-workspace/export/download-send.md#download-items-as-csv) (bis zu maximal 50.000) der Visualisierung auf Ihr lokales Gerät herunter. Maximal 50.000 Dimensionselemente für die ausgewählte Dimension. |
+| **[!UICONTROL Auswahl in die Zwischenablage kopieren]** | [Kopieren Sie die ](/help/analysis-workspace/export/download-send.md#copy-to-clipboard) aus der Visualisierung in die Zwischenablage. |
+| **[!UICONTROL Objekte als CSV herunterladen (*Dimensionsname*)]** | [Laden Sie die Dimensionselemente ](/help/analysis-workspace/export/download-send.md#download-items-as-csv) (bis zu maximal 50.000) der Visualisierung auf Ihr lokales Gerät herunter. Maximal 50.000 Dimensionselemente für die ausgewählte Dimension. |
 | **[!UICONTROL Visualisierung kopieren]** | Kopieren Sie die Visualisierung, sodass Sie sie an einer anderen Stelle innerhalb des Projekts oder in ein ganz anderes Projekt einfügen können. |
-| **[!UICONTROL Daten als CSV herunterladen]** | [Laden Sie die angezeigten Daten &#x200B;](/help/analysis-workspace/export/download-send.md#download-as-csv) Visualisierung auf Ihr lokales Gerät herunter. |
+| **[!UICONTROL Daten als CSV herunterladen]** | [Laden Sie die angezeigten Daten ](/help/analysis-workspace/export/download-send.md#download-as-csv) Visualisierung auf Ihr lokales Gerät herunter. |
 | **[!UICONTROL Vollständige Tabelle exportieren]** | Exportieren Sie die vollständige Tabelle an bestimmte Cloud-Speicherorte. Weitere Informationen finden Sie unter [Exportieren von Customer Journey Analytics-Berichten in die Cloud](../export/export-cloud.md) |
 | **[!UICONTROL Visualisierung duplizieren]** | Erstellen Sie ein exaktes Duplikat der Visualisierung. |
 | **[!UICONTROL Beschreibung bearbeiten]** | Fügen Sie Text zur Beschreibung der Visualisierung hinzu (oder bearbeiten Sie ihn). Siehe [Text](text.md). |

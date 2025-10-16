@@ -7,7 +7,7 @@ role: User
 source-git-commit: 1891f73f4326a178b293e7c3763d0d1dbc000a25
 workflow-type: tm+mt
 source-wordcount: '683'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
@@ -28,7 +28,7 @@ Für Analysen wird Kontext benötigt, der oft durch einen vorherigen Zeitraum ge
    >
    >Diese Kontextmenüoption ist für Metrikzeilen, Datumsbereichzeilen und Zeitdimensionszeilen deaktiviert.
 
-1. Je nachdem, wie Sie den Datumsbereich der Tabelle festgelegt haben, stehen die folgenden Optionen zum Vergleich zur Verfügung:
+1. Je nachdem, wie Sie den Datumsbereich der Tabelle festgelegt haben, stehen Ihnen die folgenden Vergleichsoptionen zur Verfügung:
 
    | Option | Beschreibung |
    |---|---|
@@ -54,7 +54,7 @@ Sie können jetzt allen Spalten in einer Tabelle Zeiträume hinzufügen. So kön
 
    ![](assets/add-time-period-column.png)
 
-1. Je nachdem, wie Sie den Datumsbereich der Tabelle festgelegt haben, stehen die folgenden Optionen zum Vergleich zur Verfügung:
+1. Je nachdem, wie Sie den Datumsbereich der Tabelle festgelegt haben, stehen Ihnen die folgenden Vergleichsoptionen zur Verfügung:
 
    | Option | Beschreibung |
    |---|---|

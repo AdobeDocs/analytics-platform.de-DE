@@ -14,8 +14,8 @@ ht-degree: 4%
 
 Sie können eine berechnete Metrik als Favorit markieren. Wenn Sie berechnete Metriken als Favoriten markieren, können Sie Ihre berechnete Metrik organisieren. Alle Benutzer können berechnete Metriken bevorzugen.
 
-Um eine berechnete Metrik im [Manager für berechnete Metriken“ zu favorisieren oder zu &#x200B;](/help/components/calc-metrics/cm-workflow/cm-manager.md):
+Um eine berechnete Metrik im [Manager für berechnete Metriken“ zu favorisieren oder zu ](/help/components/calc-metrics/cm-workflow/cm-manager.md):
 
 * Wählen Sie ![StarOutline](/help/assets/icons/StarOutline.svg) aus, um eine berechnete Metrik zu bevorzugen, oder wählen Sie ![Star](/help/assets/icons/Star.svg) aus, um eine unbevorzugte berechnete Metrik auszuwählen.
 
-Sie können Ihre Liste berechneter Metriken nach Favoriten filtern. Wählen Sie **[!UICONTROL Sonstige Filter]** im Bedienfeld ![Filter](/help/assets/icons/Filter.svg) **[!UICONTROL Filter]** aus und wählen Sie **[!UICONTROL Favoriten]**. Weitere [&#x200B; finden Sie unter „Filtern &#x200B;](/help/components/calc-metrics/cm-workflow/cm-filter.md) Liste der berechneten Metriken“.
+Sie können Ihre Liste berechneter Metriken nach Favoriten filtern. Wählen Sie **[!UICONTROL Sonstige Filter]** im Bedienfeld ![Filter](/help/assets/icons/Filter.svg) **[!UICONTROL Filter]** aus und wählen Sie **[!UICONTROL Favoriten]**. Weitere [ finden Sie unter „Filtern ](/help/components/calc-metrics/cm-workflow/cm-filter.md) Liste der berechneten Metriken“.

@@ -8,7 +8,7 @@ role: User
 source-git-commit: c4c8c0ff5d46ec455ca5333f79d6d8529f4cb87d
 workflow-type: tm+mt
 source-wordcount: '974'
-ht-degree: 51%
+ht-degree: 35%
 
 ---
 
@@ -18,29 +18,29 @@ In diesem Artikel werden einige Anwendungsbeispiele für die Kohortenanalyse bes
 
 ## Anwendungsfall: Mobile-App-Interaktion
 
-Angenommen Sie möchten herausfinden, wie Benutzer, die Ihre Anwendung installieren, im Laufe der Zeit damit interagieren. Installieren sie die Anwendung, benutzen sie aber nie? Benutzen sie die Anwendung eine Zeit lang und hören dann auf? Oder bleiben Sie die ganze Zeit dabei?
+Angenommen, Sie möchten analysieren, wie Benutzer, die Ihre App installieren, im Laufe der Zeit damit interagieren. Werden sie installiert und nie verwendet? Benutzen sie die Anwendung eine Zeit lang und hören dann auf? Oder bleiben sie mit der Zeit beschäftigt?
 
-Sie können eine Kohortenanalyse über sechs Monate erstellen.
+Sie können eine sechsmonatige Kohortenanalyse erstellen.
 
 **Granularität**: Monatlich, von Januar 2015 bis Juni 2015
 
-**Aufnahmemetrik**: Anwendungsinstallationen
+**Einschlussmetrik**: App-Installationen.
 
-**Rückkehrmetrik**: Sitzungen oder Starts
+**Rückkehrmetrik**: Sitzungen oder Launches
 
-Personen zählen in *Monaten nicht als*, es sei denn, sie haben eine Sitzung oder starten die App zumindest. [!UICONTROL Kohortenanalyse] zeigt dann Nutzungsmuster an, bei denen *App-Installation* immer in Monat 0 erfolgt. Vielleicht stellen Sie fest, dass die Verwendung im zweiten Monat zurückgeht, unabhängig vom Zeitpunkt der Installation der Anwendung durch die Benutzer. (Für diejenigen Benutzer, die die App im Januar 2015 installiert haben, ist Monat 2 März 2015. Für Personen, die die App im Februar 2015 installiert haben, ist Monat 2 April 2015 usw.) Mit dieser Analyse können Sie im zweiten Monat nach der Installation der App eine E-Mail oder eine Push-Nachricht an alle Benutzer senden, um sie an die Verwendung der App zu erinnern.
+Personen zählen in *Monaten nicht als*, es sei denn, sie haben eine Sitzung oder starten die App zumindest. [!UICONTROL Kohortenanalyse] zeigt dann Nutzungsmuster an, bei denen *App-Installation* immer in Monat 0 erfolgt. Sie werden möglicherweise feststellen, dass die Nutzung in Monat 2 einbricht, unabhängig davon, wann Benutzer die App installiert haben. (Für diejenigen Benutzer, die die App im Januar 2015 installiert haben, ist Monat 2 März 2015. Für Personen, die die App im Februar 2015 installiert haben, ist Monat 2 April 2015 usw.) Mit dieser Analyse können Sie im zweiten Monat nach der Installation der App eine E-Mail oder eine Push-Nachricht an alle Benutzer senden, um sie an die Verwendung der App zu erinnern.
 
 ## Anwendungsfall: Abonnement
 
-Sie arbeiten bei Adobe.com und bieten ein kostenloses Creative Cloud-Abonnement an. Das Ziel besteht darin, dass die Benutzer ein Upgrade von der kostenlosen Version auf das 30-tägige Probe-Abo oder letztlich auf die zahlungspflichtige Version durchführen.
+Sie arbeiten unter Adobe.com und bieten ein kostenloses Creative Cloud-Abonnement an. Ziel ist es, dass Benutzer von der kostenlosen Version auf die 30-Tage-Testversion oder letztendlich auf die kostenpflichtige Version aktualisieren.
 
 **Granularität**: Monatlich
 
-**Aufnahmemetrik**: Download-Link
+**Einschlussmetrik**: Downloadlink
 
-**Rückkehrmetrik**: Kauf der zahlungspflichtigen Creative Cloud
+**Rückgabemetrik**: Bezahlte Creative Cloud kaufen
 
-Mithilfe [!UICONTROL Kohortenanalyse] konnten Sie beispielsweise sehen, dass im ersten Monat nach der Installation zwischen 8 % und 10 % der kostenlosen Creative Cloud-Benutzenden ein Upgrade durchführen. Unabhängig davon, wann die Benutzer installiert haben. 12–15 % führen im zweiten Monat der Verwendung ein Upgrade durch. Danach lassen die Upgrades merklich nach: 4–5 % im dritten Monat, 3–4 % im vierten Monat und 1–2 % im fünften Monat.
+Mithilfe [!UICONTROL Kohortenanalyse] konnten Sie beispielsweise sehen, dass im ersten Monat nach der Installation zwischen 8 % und 10 % der kostenlosen Creative Cloud-Benutzenden ein Upgrade durchführen. Unabhängig davon, wann die Benutzer installiert haben. 12-15 % Upgrade im zweiten Monat der Nutzung. Danach fällt das Upgrade deutlich ab: 4-5 % in Monat drei, 3-4 % in Monat vier und 1-2 % in Monat fünf.
 
 Sie wollen in Monat drei keine potenziellen Kunden verlieren. Sie haben also eine E-Mail-Kampagne eingerichtet, die dazu dient, Mitte des dritten Monats eine Auswahl von Benutzern anzusprechen. Anbieten eines Gutscheins in Höhe von 50 $ für Benutzer, die noch kein Upgrade durchgeführt haben.
 
@@ -52,7 +52,7 @@ Eine große Hotelkette zielt auf mehrere Kundengruppen für Promotionen ab und v
 
 ## Anwendungsfall zur Annahme der App-Version
 
-Ein großes Versicherungsunternehmen fördert die Kundenbindung durch die Nutzung seiner mobilen App. Da jedoch immer wieder neue Funktionen zur App hinzugefügt werden, ist es wichtig, dass die Kunden eine Aktualisierung auf die neueste App-Version durchführen. Sie können alle App-Versionen mithilfe der Kohorte [!UICONTROL Benutzerspezifische Dimension] gegeneinander analysieren und miteinander vergleichen, um zu sehen, auf welche Kunden mit welcher App-Version abgezielt werden sollte. Darüber hinaus können sowohl die Bindung als auch die Abwanderung verfolgt werden, um festzustellen, ob bestimmte App-Versionen Kunden davon abhalten, die App im Laufe der Zeit zu nutzen. Durch mobiles Messaging kann eine erneute Interaktion mit solchen Benutzern stattfinden, damit diese eine Aktualisierung auf die neueste Version durchführen, um die Vorteile der neuesten Funktionen nutzen zu können.
+Ein großes Versicherungsunternehmen fördert die Kundenbindung durch die Nutzung seiner mobilen App. Da jedoch immer wieder neue Funktionen zur App hinzugefügt werden, ist es wichtig, dass die Kunden eine Aktualisierung auf die neueste App-Version durchführen. Sie können alle App-Versionen mithilfe der Kohorte [!UICONTROL Benutzerspezifische Dimension] gegeneinander analysieren und miteinander vergleichen, um zu sehen, auf welche Kunden mit welcher App-Version abgezielt werden sollte. Darüber hinaus können sowohl die Bindung als auch die Abwanderung verfolgt werden, um festzustellen, ob bestimmte App-Versionen Kunden davon abhalten, die App im Laufe der Zeit zu nutzen. Durch Mobile Messaging können sie diese Benutzer erneut kontaktieren, damit sie auf die neueste Version aktualisieren und die Vorteile ihrer neuesten Funktionen nutzen können.
 
 ## Anwendungsfall zur Kampagnentreue
 

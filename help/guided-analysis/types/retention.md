@@ -30,7 +30,7 @@ Die ![Retention](/help/assets/icons/Retention.svg) **[!UICONTROL Analyse der Kun
 
 Bei dieser Analyse stellt die X-Achse des Diagramms die Zeit seit dem ersten Startereignis einer Benutzerin oder eines Benutzers dar und die Y-Achse stellt den Prozentsatz der Benutzenden dar, die mit einem oder mehreren Rückkehrereignisse interagieren. Sie können sowohl die Bindung als auch die Abwanderung über verschiedene Zeiträume hinweg anzeigen. Die angezeigten Zeiträume können zudem über die Abfrageeinstellungen angepasst werden. Eine Tabelle unterhalb des Diagramms enthält aggregierte Daten mit der Option, einzelne Kohorten anzuzeigen, bei denen es sich um eine Gruppe von Personen handelt, deren Startereignis dasselbe Datum hat.
 
->[!VIDEO](https://video.tv.adobe.com/v/3435787/?quality=12&learn=on&captions=ger)
+>[!VIDEO](https://video.tv.adobe.com/v/3430503/?quality=12&learn=on)
 
 
 ## Anwendungsfälle

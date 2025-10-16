@@ -8,7 +8,7 @@ role: User
 source-git-commit: 220ebd7dbc3fa75d221690cd6e5828bd94395434
 workflow-type: tm+mt
 source-wordcount: '2580'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -258,7 +258,7 @@ Die Verwendung der regionalen Datenerfassung bietet verschiedene Vorteile:
 RDC enthält derzeit die folgenden Speicherorte (kann sich ändern):
 
 
-| RDC-Typ | Data Collection Centers |
+| RDC-Typ | Datenerfassungszentren |
 | --- | --- |
 | Global (Standard) | Oregon, Virginia, Irland, Paris, Mumbai, Singapur, Tokio, Sydney |
 | Nur Amerika | Oregon, Virginia |

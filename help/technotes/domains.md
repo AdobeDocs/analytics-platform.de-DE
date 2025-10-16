@@ -28,10 +28,10 @@ Einige Firewall-Konfigurationen blockieren Domains, auf die Customer Journey Ana
 
 ## Adobe Experience Cloud-Domains
 
-Zusätzlich zu den oben genannten Domains nutzt die Adobe Experience Cloud mehrere Domains für die Datenerfassung und den Export von Berichten. Siehe [Von der Adobe Experience Cloud verwendete Domains](https://experienceleague.adobe.com/de/docs/core-services/interface/data-collection/domains) für diese Liste.
+Zusätzlich zu den oben genannten Domains nutzt die Adobe Experience Cloud mehrere Domains für die Datenerfassung und den Export von Berichten. Siehe [Von der Adobe Experience Cloud verwendete Domains](https://experienceleague.adobe.com/en/docs/core-services/interface/data-collection/domains) für diese Liste.
 
 >[!MORELIKETHIS]
 >
 >[Von Customer Journey Analytics verwendete IP-Adressen](ip-addresses.md)
 >
->[Von der Adobe Experience Cloud verwendete Domains](https://experienceleague.adobe.com/de/docs/core-services/interface/data-collection/domains)
+>[Von der Adobe Experience Cloud verwendete Domains](https://experienceleague.adobe.com/en/docs/core-services/interface/data-collection/domains)

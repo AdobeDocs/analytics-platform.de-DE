@@ -8,7 +8,7 @@ role: User
 source-git-commit: a646d1f35308dc1f1d9f06cf94835534bd8b8da6
 workflow-type: tm+mt
 source-wordcount: '468'
-ht-degree: 34%
+ht-degree: 23%
 
 ---
 
@@ -25,7 +25,7 @@ Sie können in Analysis Workspace Segmente aus einem Touchpoint erstellen, Segme
 >* Verwenden eines sitzungsbasierten Segments als Touchpoint innerhalb einer Sitzungskontext-Fallout-Visualisierung.
 
 <!-- Should we add B2B context here?
-* [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} Usimg a B2B container based segment as a touchpoint inside a non-container based context Fallout visualization.
+* [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} Usimg a B2B container based segment as a touchpoint inside a non-container based context Fallout visualization.
 * -->
 
 ## Erstellen eines Segments aus einem Touchpoint
@@ -38,17 +38,17 @@ Sie können in Analysis Workspace Segmente aus einem Touchpoint erstellen, Segme
 
    ![Segment Builder zeigt das vorausgefüllte und vordefinierte sequenzielle Segment an.](assets/fallout-definesegment.png)
 
-1. Geben Sie einen Titel und eine Beschreibung für das Segment ein, und speichern Sie es.
+1. Geben Sie dem Segment einen Titel und eine Beschreibung und speichern Sie es.
 
    Dieses Segment kann jetzt in jedem gewünschten Projekt verwendet werden.
 
 ## Hinzufügen eines Segments als Touchpoint
 
-Wenn Sie zum Beispiel wissen möchten, wie der Trend bei Ihren Benutzern aus den USA aussieht und wie sich dies in der Fallout-Analyse auswirkt, ziehen Sie einfach das Segment „USA-Benutzer“ in den Trichter:
+Wenn Sie z. B. wissen möchten, wie der Trend bei Ihren US-Benutzern aussieht und wie sich dies auf den Fallout auswirkt, ziehen Sie einfach das Segment „US-Benutzer“ in den Fallout:
 
 ![Das Segment „US-Benutzer“ wurde ausgewählt und hervorgehoben, um es in den Fallout zu ziehen.](assets/fallout-addfilter.png)
 
-Oder Sie erstellen einen AND-Touchpoint, indem Sie das Segment „USA-Benutzer“ auf einen anderen Checkpoint ziehen.
+Oder Sie können einen UND-Touchpoint erstellen, indem Sie das Segment „US-Benutzer“ auf einen anderen Checkpoint ziehen.
 
 ## Vergleichen von Segmenten im Fallout
 

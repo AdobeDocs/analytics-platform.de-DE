@@ -6,18 +6,18 @@ exl-id: 25c9299b-34ae-475f-8e7f-5cc8540dab8a
 source-git-commit: c209341400bf4e0c00719075f0fc82f81ca9dbb4
 workflow-type: tm+mt
 source-wordcount: '170'
-ht-degree: 5%
+ht-degree: 4%
 
 ---
 
 # Berechnete Metriken taggen
 
 
-Im [Manager für berechnete &#x200B;](cm-manager.md)&quot; können Sie Tags verwenden, um berechnete Metriken zu organisieren. Admins können alle berechneten Metriken taggen. Nicht-Admins können nur die berechneten Metriken taggen, die sie erstellen oder die für sie freigegeben wurden.
+Im [Manager für berechnete ](cm-manager.md)&quot; können Sie Tags verwenden, um berechnete Metriken zu organisieren. Admins können alle berechneten Metriken taggen. Nicht-Admins können nur die berechneten Metriken taggen, die sie erstellen oder die für sie freigegeben wurden.
 
 So kennzeichnen Sie eine oder mehrere berechnete Metriken:
 
-1. Wählen [&#x200B; im Manager für &#x200B;](cm-manager.md) berechnete Metriken mindestens eine der berechneten Metriken aus, die Sie taggen möchten.
+1. Wählen [ im Manager für ](cm-manager.md) berechnete Metriken mindestens eine der berechneten Metriken aus, die Sie taggen möchten.
 1. Wählen Sie in der Aktionsleiste ![Kennzeichnungen](/help/assets/icons/Labels.svg) **[!UICONTROL Tag]** aus.
 1. Im Dialogfeld **[!UICONTROL Berechnete Metriken taggen]**
 

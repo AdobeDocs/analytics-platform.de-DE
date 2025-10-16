@@ -14,7 +14,7 @@ ht-degree: 50%
 
 # BI-Erweiterung
 
-In diesem Artikel wird beschrieben, wie die [!DNL Customer Journey Analytics BI extension] zur Implementierung des folgenden [Anwendungsfalls für den Datenexport“ verwendet &#x200B;](overview.md) kann:
+In diesem Artikel wird beschrieben, wie die [!DNL Customer Journey Analytics BI extension] zur Implementierung des folgenden [Anwendungsfalls für den Datenexport“ verwendet ](overview.md) kann:
 
 - Data Lake, Data Warehouse oder BI-Tools
 

@@ -576,7 +576,7 @@ Sie möchten die Berichtsfunktion für Zusammenfassungsdaten nutzen und Berichte
 
 Fügen Sie Ihre berechneten Metriken zu Ihrem Bericht hinzu.
 
-1. Ziehen Sie **[!UICONTROL Kosten pro]**![&#x200B; Rechner](/help/assets/icons/Calculator.svg) aus **[!UICONTROL Metriken]** und legen Sie die Metrik ab, um sie als zusätzliche Spalte zur Freiformtabelle hinzuzufügen.
+1. Ziehen Sie **[!UICONTROL Kosten pro]**![ Rechner](/help/assets/icons/Calculator.svg) aus **[!UICONTROL Metriken]** und legen Sie die Metrik ab, um sie als zusätzliche Spalte zur Freiformtabelle hinzuzufügen.
    1. Wählen Sie ![Einstellung](/help/assets/icons/Setting.svg) Spalteneinstellungen aus.
       1. Deaktivieren Sie **[!UICONTROL Prozent]**.
 1. Ziehen Sie **[!UICONTROL Rückgabe für Werbeausgaben]** ![Rechner](/help/assets/icons/Calculator.svg) aus **[!UICONTROL Metriken]** und legen Sie die Metrik ab, um sie als zusätzliche Spalte zur Freiformtabelle hinzuzufügen.
@@ -603,4 +603,4 @@ Ihr endgültiges Projekt sollte wie das unten dargestellte aussehen.
 >[!MORELIKETHIS]
 >
 >[Zusammenfassungsdaten](/help/data-views/summary-data.md)
->&#x200B;>[Einstellungen für die Datengruppen-Zusammenfassungskomponente](/help/data-views/component-settings/summary-data-group.md)
+>>[Einstellungen für die Datengruppen-Zusammenfassungskomponente](/help/data-views/component-settings/summary-data-group.md)

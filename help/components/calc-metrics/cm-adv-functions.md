@@ -7,7 +7,7 @@ role: User
 source-git-commit: c209341400bf4e0c00719075f0fc82f81ca9dbb4
 workflow-type: tm+mt
 source-wordcount: '5241'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -19,7 +19,7 @@ Sie können auf diese Funktionen zugreifen, indem Sie die Option **[!UICONTROL A
 
 ## Vergleich zwischen Tabellenfunktionen und Zeilenfunktionen
 
-Bei einer Tabellenfunktion ist die Ausgabe für jede Tabellenzeile gleich. Bei einer Zeilenfunktion ist die Ausgabe für jede Tabellenzeile unterschiedlich.
+Eine Tabellenfunktion ist eine Funktion, bei der die Ausgabe für jede Zeile der Tabelle gleich ist. Eine Zeilenfunktion ist eine Funktion, bei der die Ausgabe für jede Zeile der Tabelle unterschiedlich ist.
 
 Gegebenenfalls wird einer Funktion eine Anmerkung mit dem Typ der Funktion hinzugefügt: [!BADGE Tabelle]{type="Neutral"} oder [!BADGE Zeile]{type="Neutral"}.
 
@@ -1499,9 +1499,9 @@ Gibt den Tangens des gegebenen Winkels zurück. Wenn der Winkel in Grad angegebe
 | metric | Die Metrik, für die der z-Wert angezeigt werden soll |
 | include_zeros | Gibt an, ob Nullwerte in die Berechnungen einbezogen werden sollen oder nicht |
 
-Ein z-Wert von 0 (null) gibt an, dass der Wert mit dem arithmetischen Mittel identisch ist. Eine z-Transformation kann positiv oder negativ sein, abhängig davon, ob sie über oder unter dem arithmetischen Mittel liegt und um wie viele Standardabweichungen es sich handelt.
+Ein z-Wert von 0 (null) gibt an, dass der Wert mit dem arithmetischen Mittel identisch ist. Ein Z-Score kann positiv oder negativ sein und angeben, ob er über oder unter dem Mittelwert liegt und um wie viele Standardabweichungen es sich handelt.
 
-Die Gleichung für z-Transformation lautet:
+Die Gleichung für den Z-Score lautet:
 
 ![](assets/z_score.png)
 

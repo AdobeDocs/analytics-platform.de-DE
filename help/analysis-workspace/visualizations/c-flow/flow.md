@@ -7,7 +7,7 @@ role: User
 source-git-commit: a646d1f35308dc1f1d9f06cf94835534bd8b8da6
 workflow-type: tm+mt
 source-wordcount: '324'
-ht-degree: 92%
+ht-degree: 84%
 
 ---
 
@@ -30,7 +30,7 @@ ht-degree: 92%
 
 >[!BEGINSHADEBOX]
 
-_In diesem Artikel wird die Visualisierung „Fluss“ in_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics** beschrieben._<br/>_Unter [Fluss](https://experienceleague.adobe.com/de/docs/analytics/analyze/analysis-workspace/visualizations/flow/flow) finden Sie die Version dieses Artikels für_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics**._
+_In diesem Artikel wird die Visualisierung „Fluss“ in_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics** beschrieben._<br/>_Unter [Fluss](https://experienceleague.adobe.com/de/docs/analytics/analyze/analysis-workspace/visualizations/flow/flow) finden Sie die Version dieses Artikels für_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**._
 
 >[!ENDSHADEBOX]
 
@@ -55,9 +55,9 @@ Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Erstellen eine
 
 ## Interdimensionale Flüsse
 
-Sie können den [Fluss zwischen Dimensionen](/help/analysis-workspace/visualizations/c-flow/multi-dimensional-flow.md) anzeigen. So können Sie beispielsweise in einem Diagramm Seiten mit Abteilungen kombinieren. In diesem Fall würde der Fluss von der Startseite zur Seite „Männer“ und dann zur Abteilung „Schuhe“ verlaufen.
+Sie können den [Fluss zwischen Dimensionen](/help/analysis-workspace/visualizations/c-flow/multi-dimensional-flow.md) anzeigen. So können Sie beispielsweise in einem Diagramm Seiten mit Abteilungen kombinieren. In diesem Fall geht der Fluss möglicherweise von der Startseite zur Seite „Männer“ und dann zur Abteilung „Schuhe“.
 
-Jede Spalte könnte eine andere Dimension anzeigen. Ziehen Sie einen Dimension per Drag-and-Drop in eine Dropzone, um diese Dimension zum Diagramm hinzuzufügen.
+Jede Spalte kann eine andere Dimension aufweisen. Ziehen Sie einen Dimension per Drag-and-Drop in eine Dropzone, um diese Dimension zum Diagramm hinzuzufügen.
 
 >[!MORELIKETHIS]
 >

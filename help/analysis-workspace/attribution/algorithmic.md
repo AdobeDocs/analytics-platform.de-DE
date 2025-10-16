@@ -18,7 +18,7 @@ Das algorithmische [Attributionsmodell](models.md) in Analysis Workspace untersc
 
 >[!BEGINSHADEBOX]
 
-Siehe ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Algorithmische &#x200B;](https://video.tv.adobe.com/v/40047?quality=12&learn=on&captions=ger){target="_blank"}) für ein Demovideo.
+Siehe ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Algorithmische ](https://video.tv.adobe.com/v/36205?quality=12&learn=on){target="_blank"}) für ein Demovideo.
 
 >[!ENDSHADEBOX]
 

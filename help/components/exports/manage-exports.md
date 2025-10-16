@@ -96,7 +96,7 @@ Sie können den Export manuell initiieren, entweder für einen geplanten Export 
 
 ## Markieren eines Exports
 
-Wenn Sie Tags auf einen Export anwenden, können Sie diese Tags in der Spalte [!UICONTROL Tags] auf der Seite [!UICONTROL Exporte] anzeigen. Weitere Informationen finden [&#x200B; unter &#x200B;](#configure-columns)Konfigurieren von Spalten“.
+Wenn Sie Tags auf einen Export anwenden, können Sie diese Tags in der Spalte [!UICONTROL Tags] auf der Seite [!UICONTROL Exporte] anzeigen. Weitere Informationen finden [ unter ](#configure-columns)Konfigurieren von Spalten“.
 
 1. Wählen Sie in Customer Journey Analytics [!UICONTROL **Komponenten**] > [!UICONTROL **Exporte**] aus.
 
@@ -128,7 +128,7 @@ Spaltenüberschrift auswählen, um die Exporte nach dieser Spalte zu sortieren. 
 
 1. Wählen Sie in Customer Journey Analytics [!UICONTROL **Komponenten**] > [!UICONTROL **Exporte**] aus.
 
-1. Wählen Sie auf [!UICONTROL **Registerkarte**] das Symbol **Tabelle anpassen** (Tabelle ![) &#x200B;](assets/customize-table-icon.png) oben rechts auf der Seite [!UICONTROL Exporte] aus.
+1. Wählen Sie auf [!UICONTROL **Registerkarte**] das Symbol **Tabelle anpassen** (Tabelle ![) ](assets/customize-table-icon.png) oben rechts auf der Seite [!UICONTROL Exporte] aus.
 
    Die folgenden Spalten sind verfügbar:
 
@@ -138,7 +138,7 @@ Spaltenüberschrift auswählen, um die Exporte nach dieser Spalte zu sortieren. 
    | ID | Die ID, die dem Export bei seiner Erstellung automatisch zugewiesen wird. <!-- True? --> |
    | Name der Datenansicht | Der Name der dem Export zugeordneten Datenansicht. Benutzerinnen und Benutzer können die Datenansicht auswählen, wenn sie den Export erstellen, wie unter [Exportieren von Customer Journey Analytics-Berichten in die Cloud](/help/analysis-workspace/export/export-cloud.md) beschrieben. |
    | Status | Der Status des Exports Verfügbare Status sind [!UICONTROL Aktiv], [!UICONTROL Abgeschlossen] und [!UICONTROL Fehlgeschlagen].<p> **Hinweis:** Informationen zur Fehlerbehebung bei fehlgeschlagenen Exporten finden Sie unter [Fehlerbehebung bei fehlgeschlagenen Exporten](/help/components/exports/troubleshoot-exports.md).</p> |
-   | Tags | Zeigt alle Tags an, die auf den Export angewendet wurden. Informationen zum Anwenden von Tags auf einen Export finden Sie unter [Taggen eines &#x200B;](#tag-an-export)). |
+   | Tags | Zeigt alle Tags an, die auf den Export angewendet wurden. Informationen zum Anwenden von Tags auf einen Export finden Sie unter [Taggen eines ](#tag-an-export)). |
    | Tabellengröße (zuletzt gesendet) | Die Größe des Exports beim letzten Versand. |
    | Erstellt von | Der Benutzer, der den Export erstellt hat. |
    | Erstellt | Datum und Uhrzeit der Erstellung des Exports <!-- true? --> |

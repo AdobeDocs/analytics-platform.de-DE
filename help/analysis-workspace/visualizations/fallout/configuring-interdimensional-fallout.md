@@ -7,7 +7,7 @@ role: User
 source-git-commit: a646d1f35308dc1f1d9f06cf94835534bd8b8da6
 workflow-type: tm+mt
 source-wordcount: '225'
-ht-degree: 7%
+ht-degree: 0%
 
 ---
 
@@ -19,7 +19,7 @@ Beispielsweise können Sie zusätzlich zu einer Seitendimension weitere Dimensio
 
 ![Die Ansicht „Alle Besuche“, die mehrere Dimensionen als Touchpoints anzeigt.](assets/fallout-otherdimension.png)
 
-Der Fallout wird dynamisch aktualisiert und zeigt Ihnen den Fallout über mehrere Dimensionen hinweg an.
+Der Fallout wird dynamisch aktualisiert und ermöglicht die Anzeige von Fallout über mehrere Dimensionen hinweg.
 
 Sie können auch Metriken hinzufügen. Sie können beispielsweise die Metrik Aufruf hinzufügen, um nur Pfade für Benutzer anzuzeigen, für die Anrufe vorhanden sind und die sich an das Callcenter gewandt haben:
 

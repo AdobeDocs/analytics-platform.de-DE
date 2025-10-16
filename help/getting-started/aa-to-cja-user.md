@@ -93,7 +93,7 @@ Berechnete Metriken sind in Adobe Analytics und Customer Journey Analytics ähnl
 
 >[!BEGINSHADEBOX]
 
-Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Verschieben der berechneten Metriken von Adobe Analytics nach Customer Journey Analytics](https://video.tv.adobe.com/v/33673?quality=12&learn=on&captions=ger){target="_blank"} finden Sie ein Demovideo zum Verschieben berechneter Metriken.
+Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Verschieben der berechneten Metriken von Adobe Analytics nach Customer Journey Analytics](https://video.tv.adobe.com/v/31788?quality=12&learn=on){target="_blank"} finden Sie ein Demovideo zum Verschieben berechneter Metriken.
 
 >[!ENDSHADEBOX]
 
@@ -120,7 +120,7 @@ Customer Journey Analytics erweitert die Konzepte von Identitäten über ECIDs h
 
 >[!BEGINSHADEBOX]
 
-Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Verwenden von Identitäten in Customer Journey Analytics](https://video.tv.adobe.com/v/33387/?quality=12&learn=on&captions=ger){target="_blank"} finden Sie ein Demovideo.
+Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Verwenden von Identitäten in Customer Journey Analytics](https://video.tv.adobe.com/v/30750/?quality=12&learn=on){target="_blank"} finden Sie ein Demovideo.
 
 >[!ENDSHADEBOX]
 

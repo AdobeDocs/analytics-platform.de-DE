@@ -16,7 +16,7 @@ Bei der Erstellung einer neuen berechneten Metrik müssen Sie nicht von Grund au
 
 So kopieren Sie eine berechnete Metrik in den [Manager für berechnete Metriken](cm-manager.md):
 
-1. Wählen [&#x200B; im Manager für &#x200B;](cm-manager.md) berechnete Metriken eine oder mehrere der berechneten Metriken aus, die Sie kopieren möchten.
+1. Wählen [ im Manager für ](cm-manager.md) berechnete Metriken eine oder mehrere der berechneten Metriken aus, die Sie kopieren möchten.
 1. Wählen Sie in der Aktionsleiste ![Kopieren](/help/assets/icons/Copy.svg) **[!UICONTROL Kopieren]** aus.
 
 Die neuen berechneten Metriken werden mit demselben Namen und derselben Suffix-`(Copy)` erstellt.

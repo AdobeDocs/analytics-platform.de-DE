@@ -19,7 +19,7 @@ Bei der diagrammbasierten Zuordnung geben Sie einen Ereignis-Datensatz sowie die
 
 >[!NOTE]
 >
->Sie müssen sicherstellen, dass der Datensatz [für den Identity Service aktiviert) &#x200B;](/help/stitching/faq.md#enable-a-dataset-for-the-identity-service).
+>Sie müssen sicherstellen, dass der Datensatz [für den Identity Service aktiviert) ](/help/stitching/faq.md#enable-a-dataset-for-the-identity-service).
 >
 
 
@@ -27,7 +27,7 @@ Bei der diagrammbasierten Zuordnung geben Sie einen Ereignis-Datensatz sowie die
 
 ## IdentityMap
 
-Diagrammbasiertes Stitching unterstützt die Verwendung der [`identityMap` Feldergruppe &#x200B;](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/schema/composition#identity) folgenden Szenarien:
+Diagrammbasiertes Stitching unterstützt die Verwendung der [`identityMap` Feldergruppe ](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/schema/composition#identity) folgenden Szenarien:
 
 - Verwendung der primären Identität in `identityMap` Namespaces zur Definition der persistenten ID:
    - Wenn mehrere primäre Identitäten in verschiedenen Namespaces gefunden werden, werden die Identitäten in den Namespaces lexigrafisch sortiert und die erste Identität wird ausgewählt.
@@ -119,7 +119,7 @@ Betrachten Sie die folgenden beiden Identitätsdiagramme für persistente ID-`24
 ![Identitätsdiagramm 246](assets/identity-graph-246.svg)
 ![Identitätsdiagramm 3579](assets/identity-graph-3579.svg)
 
-Sie können ein Identitätsdiagramm im Zeitverlauf für ein bestimmtes Profil mit dem [Identitätsdiagramm-Viewer](https://experienceleague.adobe.com/de/docs/experience-platform/identity/features/identity-graph-viewer) anzeigen. Siehe auch [Verknüpfungslogik für Identity Service](https://experienceleague.adobe.com/de/docs/experience-platform/identity/features/identity-linking-logic), um ein besseres Verständnis der beim Verknüpfen von Identitäten verwendeten Logik zu erhalten.
+Sie können ein Identitätsdiagramm im Zeitverlauf für ein bestimmtes Profil mit dem [Identitätsdiagramm-Viewer](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-graph-viewer) anzeigen. Siehe auch [Verknüpfungslogik für Identity Service](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-linking-logic), um ein besseres Verständnis der beim Verknüpfen von Identitäten verwendeten Logik zu erhalten.
 
 ### Schritt 1: Echtes Zusammenfügen
 
@@ -208,7 +208,7 @@ Die folgende Tabelle enthält dieselben Daten wie oben, zeigt jedoch die Auswirk
 Die folgenden Voraussetzungen gelten speziell für das diagrammbasierte Stitching:
 
 - Der Ereignisdatensatz in Adobe Experience Platform, auf den Sie eine Zuordnung anwenden möchten, muss eine Spalte aufweisen, die einen Besucher in jeder Zeile identifiziert, die **persistente ID**. Beispielsweise eine Besucher-ID, die von einer Adobe Analytics AppMeasurement-Bibliothek generiert wurde, oder eine vom Experience Platform Identity Service generierte ECID.
-- Die persistente ID muss auch [als Identität definiert) &#x200B;](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/ui/fields/identity) Schema sein.
+- Die persistente ID muss auch [als Identität definiert) ](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/ui/fields/identity) Schema sein.
 - Das Identitätsdiagramm aus Experience Platform Identity Service muss über einen Namespace verfügen (z. B. `Email` oder `Phone`), den Sie beim Zusammenfügen verwenden möchten, um die **vorübergehende ID** aufzulösen. Weitere Informationen finden Sie unter {[}Experience Platform Identity Service.](https://experienceleague.adobe.com/de/docs/experience-platform/identity/home)
 
 >[!NOTE]
@@ -221,9 +221,9 @@ Die folgenden Voraussetzungen gelten speziell für das diagrammbasierte Stitchin
 Die folgenden Einschränkungen gelten speziell für das diagrammbasierte Stitching:
 
 - Zeitstempel werden bei der Abfrage der vorübergehenden ID unter Verwendung des angegebenen Namespace nicht berücksichtigt. Es ist also möglich, dass eine persistente ID mit einer vorübergehenden ID aus einem Datensatz verknüpft ist, der einen früheren Zeitstempel hat.
-- In Szenarien mit gemeinsam genutzten Geräten, in denen der Namespace im Diagramm mehrere Identitäten enthält, wird die erste lexikografische Identität verwendet. Wenn Namespace-Beschränkungen und -Prioritäten im Rahmen der Veröffentlichung von Diagrammverknüpfungsregeln konfiguriert werden, wird die Identität des letzten authentifizierten Benutzers verwendet. Weitere Informationen finden [&#x200B; unter &#x200B;](/help/use-cases/stitching/shared-devices.md) Geräte .
+- In Szenarien mit gemeinsam genutzten Geräten, in denen der Namespace im Diagramm mehrere Identitäten enthält, wird die erste lexikografische Identität verwendet. Wenn Namespace-Beschränkungen und -Prioritäten im Rahmen der Veröffentlichung von Diagrammverknüpfungsregeln konfiguriert werden, wird die Identität des letzten authentifizierten Benutzers verwendet. Weitere Informationen finden [ unter ](/help/use-cases/stitching/shared-devices.md) Geräte .
 - Es gibt eine feste Grenze von drei Monaten, bis Identitäten im Identitätsdiagramm aufgestockt werden. Sie würden Identitäten zum Aufstocken verwenden, falls Sie keine Experience Platform-Anwendung wie Real-time Customer Data Platform zum Ausfüllen des Identitätsdiagramms verwenden.
-- Es [&#x200B; die „Leitplanken &#x200B;](https://experienceleague.adobe.com/de/docs/experience-platform/identity/guardrails) Identity Service“. Siehe beispielsweise die folgenden [statischen Beschränkungen](https://experienceleague.adobe.com/de/docs/experience-platform/identity/guardrails#static-limits):
+- Es [ die „Leitplanken ](https://experienceleague.adobe.com/en/docs/experience-platform/identity/guardrails) Identity Service“. Siehe beispielsweise die folgenden [statischen Beschränkungen](https://experienceleague.adobe.com/en/docs/experience-platform/identity/guardrails#static-limits):
    - Maximale Anzahl von Identitäten in einem Diagramm: 50.
    - Maximale Anzahl von Links zu einer Identität für eine einzelne Batch-Aufnahme: 50.
    - Maximale Anzahl von Identitäten in einem XDM-Datensatz für die Diagrammaufnahme: 20.

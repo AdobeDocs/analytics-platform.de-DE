@@ -8,7 +8,7 @@ hide-from-toc: true
 source-git-commit: 39f9ef07088eb9595e5057d21008ecd2f5ea44fe
 workflow-type: tm+mt
 source-wordcount: '1954'
-ht-degree: 16%
+ht-degree: 14%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 16%
 
 Diese Tabelle listet alle Spectrum-Symbole auf, die über die Konfiguration von Spectrum-Symbolausschnitten verfügbar sind. Verwenden Sie den Namen, um das Snippet zu Ihrem Markdown hinzuzufügen, damit das Symbol Spektrum angezeigt wird.
 
-Achten Sie [Wiki-Seite] (ttps://wiki.corp.adobe.com/display/omtrplatform/Use+Spectrum+icons+in+documentation) auf Aktualisierungen.
+Achten Sie [Wiki-Seite](ttps://wiki.corp.adobe.com/display/omtrplatform/Use+Spectrum+icons+in+documentation) auf Aktualisierungen.
 
 ![](https://reportbuilder.an.adobe.com/assets/AdobeAnalyticsLogo-80.png)
 
@@ -58,7 +58,7 @@ Achten Sie [Wiki-Seite] (ttps://wiki.corp.adobe.com/display/omtrplatform/Use+Spe
 | Vergnügungspark | `![Amusementpark](/help/assets/icons/Amusementpark.svg)` | ![Freizeitpark](/help/assets/icons/Amusementpark.svg) |
 | Anker | `![Anchor](/help/assets/icons/Anchor.svg)` | ![Anker](/help/assets/icons/Anchor.svg) |
 | AnkerSelect | `![AnchorSelect](/help/assets/icons/AnchorSelect.svg)` | ![AnchorSelect](/help/assets/icons/AnchorSelect.svg) |
-| Anmerkungen hinzufügen | `![Annotate](/help/assets/icons/Annotate.svg)` | ![Anmerken](/help/assets/icons/Annotate.svg) |
+| Anmerken | `![Annotate](/help/assets/icons/Annotate.svg)` | ![Anmerken](/help/assets/icons/Annotate.svg) |
 | Stift anmerken | `![AnnotatePen](/help/assets/icons/AnnotatePen.svg)` | ![AnnotatePen](/help/assets/icons/AnnotatePen.svg) |
 | Bereich anmerken | `![AnnotateRange](/help/assets/icons/AnnotateRange.svg)` | ![AnnotateRange](/help/assets/icons/AnnotateRange.svg) |
 | Antwort | `![Answer](/help/assets/icons/Answer.svg)` | ![Antwort](/help/assets/icons/Answer.svg) |
@@ -139,10 +139,10 @@ Achten Sie [Wiki-Seite] (ttps://wiki.corp.adobe.com/display/omtrplatform/Use+Spe
 | Aktentasche | `![Briefcase](/help/assets/icons/Briefcase.svg)` | ![Aktentasche](/help/assets/icons/Briefcase.svg) |
 | Durchsuchen | `![Browse](/help/assets/icons/Browse.svg)` | ![Durchsuchen](/help/assets/icons/Browse.svg) |
 | Pinsel | `![Brush](/help/assets/icons/Brush.svg)` | ![Pinsel](/help/assets/icons/Brush.svg) |
-| Fehler | `![Bug](/help/assets/icons/Bug.svg)` | ![Bug](/help/assets/icons/Bug.svg) |
+| Programmfehler | `![Bug](/help/assets/icons/Bug.svg)` | ![Bug](/help/assets/icons/Bug.svg) |
 | Bauen | `![Building](/help/assets/icons/Building.svg)` | ![Gebäude](/help/assets/icons/Building.svg) |
 | bulkEditUser | `![BulkEditUser](/help/assets/icons/BulkEditUser.svg)` | ![BulkEditUser](/help/assets/icons/BulkEditUser.svg) |
-| Schaltfläche | `![Button](/help/assets/icons/Button.svg)` | ![Schaltfläche](/help/assets/icons/Button.svg) |
+| Schaltfläche | `![Button](/help/assets/icons/Button.svg)` | ![button](/help/assets/icons/Button.svg) |
 | CCLilibrary | `![CCLibrary](/help/assets/icons/CCLibrary.svg)` | ![CCLilibrary](/help/assets/icons/CCLibrary.svg) |
 | Calculator | `![Calculator](/help/assets/icons/Calculator.svg)` | ![Rechner](/help/assets/icons/Calculator.svg) |
 | Kalender | `![Calendar](/help/assets/icons/Calendar.svg)` | ![Kalender](/help/assets/icons/Calendar.svg) |
@@ -190,7 +190,7 @@ Achten Sie [Wiki-Seite] (ttps://wiki.corp.adobe.com/display/omtrplatform/Use+Spe
 | CloudError | `![CloudError](/help/assets/icons/CloudError.svg)` | ![CloudError](/help/assets/icons/CloudError.svg) |
 | CloudOutline | `![CloudOutline](/help/assets/icons/CloudOutline.svg)` | ![CloudOutline](/help/assets/icons/CloudOutline.svg) |
 | Code | `![Code](/help/assets/icons/Code.svg)` | ![Code](/help/assets/icons/Code.svg) |
-| Erfassung | `![Collection](/help/assets/icons/Collection.svg)` | ![Sammlung](/help/assets/icons/Collection.svg) |
+| Sammlung | `![Collection](/help/assets/icons/Collection.svg)` | ![Sammlung](/help/assets/icons/Collection.svg) |
 | collectionAdd | `![CollectionAdd](/help/assets/icons/CollectionAdd.svg)` | ![CollectionAdd](/help/assets/icons/CollectionAdd.svg) |
 | collectionAddTo | `![CollectionAddTo](/help/assets/icons/CollectionAddTo.svg)` | ![CollectionAddTo](/help/assets/icons/CollectionAddTo.svg) |
 | Sammlungsprüfung | `![CollectionCheck](/help/assets/icons/CollectionCheck.svg)` | ![CollectionCheck](/help/assets/icons/CollectionCheck.svg) |
@@ -262,7 +262,7 @@ Achten Sie [Wiki-Seite] (ttps://wiki.corp.adobe.com/display/omtrplatform/Use+Spe
 | DeviceTV | `![DeviceTV](/help/assets/icons/DeviceTV.svg)` | ![DeviceTV](/help/assets/icons/DeviceTV.svg) |
 | DeviceTablet | `![DeviceTablet](/help/assets/icons/DeviceTablet.svg)` | ![DeviceTablet](/help/assets/icons/DeviceTablet.svg) |
 | Dimensionen | `![Dimensions](/help/assets/icons/Dimensions.svg)` | ![Dimensionen](/help/assets/icons/Dimensions.svg) |
-| Discover | `![Discover](/help/assets/icons/Discover.svg)` | ![Discover](/help/assets/icons/Discover.svg) |
+| Entdecken | `![Discover](/help/assets/icons/Discover.svg)` | ![Entdecken](/help/assets/icons/Discover.svg) |
 | DiscoverOutline | `![DiscoverOutline](/help/assets/icons/DiscoverOutline.svg)` | ![DiscoverOutline](/help/assets/icons/DiscoverOutline.svg) |
 | DistributedBottomEdge | `![DistributeBottomEdge](/help/assets/icons/DistributeBottomEdge.svg)` | ![DistributedBottomEdge](/help/assets/icons/DistributeBottomEdge.svg) |
 | HorizontalCenter verteilen | `![DistributeHorizontalCenter](/help/assets/icons/DistributeHorizontalCenter.svg)` | ![VerteilenHorizontalCenter](/help/assets/icons/DistributeHorizontalCenter.svg) |
@@ -575,7 +575,7 @@ Achten Sie [Wiki-Seite] (ttps://wiki.corp.adobe.com/display/omtrplatform/Use+Spe
 | Minimieren | `![Minimize](/help/assets/icons/Minimize.svg)` | ![Minimieren](/help/assets/icons/Minimize.svg) |
 | Mobile Service | `![MobileService](/help/assets/icons/MobileService.svg)` | ![MobileService](/help/assets/icons/MobileService.svg) |
 | ModernGridView | `![ModernGridView](/help/assets/icons/ModernGridView.svg)` | ![ModernGridView](/help/assets/icons/ModernGridView.svg) |
-| überschreibt  | `![Money](/help/assets/icons/Money.svg)` | ![Geld](/help/assets/icons/Money.svg) |
+| Geld | `![Money](/help/assets/icons/Money.svg)` | ![Geld](/help/assets/icons/Money.svg) |
 | Überwachung | `![Monitoring](/help/assets/icons/Monitoring.svg)` | ![Überwachung](/help/assets/icons/Monitoring.svg) |
 | Mond | `![Moon](/help/assets/icons/Moon.svg)` | ![Mond](/help/assets/icons/Moon.svg) |
 | Mehr | `![More](/help/assets/icons/More.svg)` | ![Mehr](/help/assets/icons/More.svg) |
@@ -628,7 +628,7 @@ Achten Sie [Wiki-Seite] (ttps://wiki.corp.adobe.com/display/omtrplatform/Use+Spe
 | PageTag | `![PageTag](/help/assets/icons/PageTag.svg)` | ![PageTag](/help/assets/icons/PageTag.svg) |
 | Seiten ausschließen | `![PagesExclude](/help/assets/icons/PagesExclude.svg)` | ![PagesExclude](/help/assets/icons/PagesExclude.svg) |
 | Schwenk | `![Pan](/help/assets/icons/Pan.svg)` | ![PAN](/help/assets/icons/Pan.svg) |
-| Bereich | `![Panel](/help/assets/icons/Panel.svg)` | ![panel](/help/assets/icons/Panel.svg) |
+| Bedienfeld | `![Panel](/help/assets/icons/Panel.svg)` | ![panel](/help/assets/icons/Panel.svg) |
 | Einfügen | `![Paste](/help/assets/icons/Paste.svg)` | ![Einfügen](/help/assets/icons/Paste.svg) |
 | Einfügen von HTML | `![PasteHTML](/help/assets/icons/PasteHTML.svg)` | ![PasteHTML](/help/assets/icons/PasteHTML.svg) |
 | Liste einfügen | `![PasteList](/help/assets/icons/PasteList.svg)` | ![EinfügenListe](/help/assets/icons/PasteList.svg) |
@@ -637,7 +637,7 @@ Achten Sie [Wiki-Seite] (ttps://wiki.corp.adobe.com/display/omtrplatform/Use+Spe
 | Anhalten | `![Pause](/help/assets/icons/Pause.svg)` | ![Pause](/help/assets/icons/Pause.svg) |
 | Pausenkreis | `![PauseCircle](/help/assets/icons/PauseCircle.svg)` | ![PauseCircle](/help/assets/icons/PauseCircle.svg) |
 | Pfand | `![Pawn](/help/assets/icons/Pawn.svg)` | ![Bauer](/help/assets/icons/Pawn.svg) |
-| In Bearbeitung | `![Pending](/help/assets/icons/Pending.svg)` | ![Ausstehend](/help/assets/icons/Pending.svg) |
+| Ausstehend | `![Pending](/help/assets/icons/Pending.svg)` | ![Ausstehend](/help/assets/icons/Pending.svg) |
 | Personengruppe | `![PeopleGroup](/help/assets/icons/PeopleGroup.svg)` | ![Personengruppe](/help/assets/icons/PeopleGroup.svg) |
 | Personalisierungsfeld | `![PersonalizationField](/help/assets/icons/PersonalizationField.svg)` | ![PersonalizationField](/help/assets/icons/PersonalizationField.svg) |
 | Perspektive | `![Perspective](/help/assets/icons/Perspective.svg)` | ![Perspektive](/help/assets/icons/Perspective.svg) |
@@ -663,7 +663,7 @@ Achten Sie [Wiki-Seite] (ttps://wiki.corp.adobe.com/display/omtrplatform/Use+Spe
 | ProjectAdd | `![ProjectAdd](/help/assets/icons/ProjectAdd.svg)` | ![ProjectAdd](/help/assets/icons/ProjectAdd.svg) |
 | Projekt bearbeiten | `![ProjectEdit](/help/assets/icons/ProjectEdit.svg)` | ![ProjectEdit](/help/assets/icons/ProjectEdit.svg) |
 | ProjectNameEdit | `![ProjectNameEdit](/help/assets/icons/ProjectNameEdit.svg)` | ![ProjectNameEdit](/help/assets/icons/ProjectNameEdit.svg) |
-| Umwandeln | `![Promote](/help/assets/icons/Promote.svg)` | ![Bewerben](/help/assets/icons/Promote.svg) |
+| bewerben | `![Promote](/help/assets/icons/Promote.svg)` | ![Bewerben](/help/assets/icons/Promote.svg) |
 | Eigenschaften | `![Propertie](/help/assets/icons/Propertie.svg)` | ![Eigenschaften](/help/assets/icons/Propertie.svg) |
 | PropertiesCopy | `![PropertiesCopy](/help/assets/icons/PropertiesCopy.svg)` | ![PropertiesCopy](/help/assets/icons/PropertiesCopy.svg) |
 | Veröffentlichungsprüfung | `![PublishCheck](/help/assets/icons/PublishCheck.svg)` | ![PublishCheck](/help/assets/icons/PublishCheck.svg) |
@@ -703,7 +703,7 @@ Achten Sie [Wiki-Seite] (ttps://wiki.corp.adobe.com/display/omtrplatform/Use+Spe
 | Bericht | `![Report](/help/assets/icons/Report.svg)` | ![Bericht](/help/assets/icons/Report.svg) |
 | ReportAdd | `![ReportAdd](/help/assets/icons/ReportAdd.svg)` | ![ReportAdd](/help/assets/icons/ReportAdd.svg) |
 | erforderlich | `![Required](/help/assets/icons/Required.svg)` | ![Erforderlich](/help/assets/icons/Required.svg) |
-| Größe ändern | `![Resize](/help/assets/icons/Resize.svg)` | ![Größe ändern](/help/assets/icons/Resize.svg) |
+| Resize | `![Resize](/help/assets/icons/Resize.svg)` | ![Größe ändern](/help/assets/icons/Resize.svg) |
 | ResolvedComment | `![ResolvedComment](/help/assets/icons/ResolvedComment.svg)` | ![ResolvedComment](/help/assets/icons/ResolvedComment.svg) |
 | Kundentreue | `![Retention](/help/assets/icons/Retention.svg)` | ![Kundentreue](/help/assets/icons/Retention.svg) |
 | Speicherungsquoten | `![RetentionRates](/help/assets/icons/RetentionRates.svg)` | ![Kundenbindungsraten](/help/assets/icons/RetentionRates.svg) |
@@ -713,7 +713,7 @@ Achten Sie [Wiki-Seite] (ttps://wiki.corp.adobe.com/display/omtrplatform/Use+Spe
 | Zurück zur letzten Version | `![Revert](/help/assets/icons/Revert.svg)` | ![Wiederherstellen](/help/assets/icons/Revert.svg) |
 | zurückspulen | `![Rewind](/help/assets/icons/Rewind.svg)` | ![Zurückspulen](/help/assets/icons/Rewind.svg) |
 | Rückspulkreis | `![RewindCircle](/help/assets/icons/RewindCircle.svg)` | ![RewindCircle](/help/assets/icons/RewindCircle.svg) |
-| Menüband | `![Ribbon](/help/assets/icons/Ribbon.svg)` | ![Band](/help/assets/icons/Ribbon.svg) |
+| Farbband | `![Ribbon](/help/assets/icons/Ribbon.svg)` | ![Band](/help/assets/icons/Ribbon.svg) |
 | RotierenCCW | `![RotateCCW](/help/assets/icons/RotateCCW.svg)` | ![RotateCCW](/help/assets/icons/RotateCCW.svg) |
 | RotierenCCWBold | `![RotateCCWBold](/help/assets/icons/RotateCCWBold.svg)` | ![RotateCCWBold](/help/assets/icons/RotateCCWBold.svg) |
 | RotierenCW | `![RotateCW](/help/assets/icons/RotateCW.svg)` | ![RotateCW](/help/assets/icons/RotateCW.svg) |
@@ -786,7 +786,7 @@ Achten Sie [Wiki-Seite] (ttps://wiki.corp.adobe.com/display/omtrplatform/Use+Spe
 | SortOrderUp | `![SortOrderUp](/help/assets/icons/SortOrderUp.svg)` | ![SortOrderUp](/help/assets/icons/SortOrderUp.svg) |
 | Spam | `![Spam](/help/assets/icons/Spam.svg)` | ![Spam](/help/assets/icons/Spam.svg) |
 | Rechtschreibprüfung | `![Spellcheck](/help/assets/icons/Spellcheck.svg)` | ![Rechtschreibprüfung](/help/assets/icons/Spellcheck.svg) |
-| Rotation | `![Spin](/help/assets/icons/Spin.svg)` | ![Spin](/help/assets/icons/Spin.svg) |
+| Spin | `![Spin](/help/assets/icons/Spin.svg)` | ![Spin](/help/assets/icons/Spin.svg) |
 | SplitView | `![SplitView](/help/assets/icons/SplitView.svg)` | ![SplitView](/help/assets/icons/SplitView.svg) |
 | Bereichsreparatur | `![SpotHeal](/help/assets/icons/SpotHeal.svg)` | ![SpotHeal](/help/assets/icons/SpotHeal.svg) |
 | Stadion | `![Stadium](/help/assets/icons/Stadium.svg)` | ![Stadion](/help/assets/icons/Stadium.svg) |
@@ -804,7 +804,7 @@ Achten Sie [Wiki-Seite] (ttps://wiki.corp.adobe.com/display/omtrplatform/Use+Spe
 | StepBackwardCircle | `![StepBackwardCircle](/help/assets/icons/StepBackwardCircle.svg)` | ![StepBackwardCircle](/help/assets/icons/StepBackwardCircle.svg) |
 | Schritt vorwärts | `![StepForward](/help/assets/icons/StepForward.svg)` | ![StepForward](/help/assets/icons/StepForward.svg) |
 | StepForwardCircle | `![StepForwardCircle](/help/assets/icons/StepForwardCircle.svg)` | ![StepForwardCircle](/help/assets/icons/StepForwardCircle.svg) |
-| Stop | `![Stop](/help/assets/icons/Stop.svg)` | ![Anhalten](/help/assets/icons/Stop.svg) |
+| Stopp | `![Stop](/help/assets/icons/Stop.svg)` | ![Anhalten](/help/assets/icons/Stop.svg) |
 | Stopp-Kreis | `![StopCircle](/help/assets/icons/StopCircle.svg)` | ![StoppCircle](/help/assets/icons/StopCircle.svg) |
 | Stoppuhr | `![Stopwatch](/help/assets/icons/Stopwatch.svg)` | ![Stoppuhr](/help/assets/icons/Stopwatch.svg) |
 | gerade biegen | `![Straighten](/help/assets/icons/Straighten.svg)` | ![gerade](/help/assets/icons/Straighten.svg) |

@@ -7,7 +7,7 @@ exl-id: f042a6dd-6af5-4bdd-afc9-07546d8ded6e
 source-git-commit: ce4a21b1a1e89f14316a92fbdce38281db61e666
 workflow-type: tm+mt
 source-wordcount: '545'
-ht-degree: 6%
+ht-degree: 4%
 
 ---
 
@@ -23,11 +23,11 @@ Die Auswirkungen auf die Feiertage werden berücksichtigt, wenn mehrjährige Dat
 
 * Martin Luther King Day
 * Tag der Präsidenten
-* Memorial Day (nur USA)
-* &#x200B;4. Juli
-* Thanksgiving (nur USA)
-* Black Friday (nur USA)
-* Cyber Monday (nur USA)
+* Gedenktag
+* 4. Juli
+* Erntedankfest
+* Black Friday
+* Cyber Monday
 * Weihnachten
 
 Der Service kann auch eine einfache Anomalie (Ausreißer) entfernen, z. B. durch Entfernen von Datenpunkten, die außerhalb des Sechs-Sigma-Bereichs liegen. Dies ist nicht standardmäßig aktiviert, da davon ausgegangen wird, dass alle Datenpunkte gültig sind. Anomalien können sich negativ auf die Modellqualität auswirken, auch wenn das Prophet-Modell im Allgemeinen gegenüber Ausreißern widerstandsfähig ist.

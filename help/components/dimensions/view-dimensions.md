@@ -30,7 +30,7 @@ Now, by default, we show dynamic values instead of static ones, with the option 
 
 ## Anzeige von Dimensionselementen
 
-Wenn Sie ![ChevronRight) für &#x200B;](/help/assets/icons/ChevronRight.svg) Dimension im Bedienfeld „Komponenten“ auswählen, wird eine Liste mit den Dimensionselementen angezeigt. Die Liste der Dimensionselemente zeigt normalerweise die wichtigsten Elemente der letzten 30 Tage an. Wenn weitere Elemente verfügbar sind, wählen Sie außerhalb des für das Bedienfeld ausgewählten Datumsbereichs den Link aus, um weitere Elemente anzuzeigen. Beispiel: **[!UICONTROL Elemente aus dem letzten Monat anzeigen]**.
+Wenn Sie ![ChevronRight) für ](/help/assets/icons/ChevronRight.svg) Dimension im Bedienfeld „Komponenten“ auswählen, wird eine Liste mit den Dimensionselementen angezeigt. Die Liste der Dimensionselemente zeigt normalerweise die wichtigsten Elemente der letzten 30 Tage an. Wenn weitere Elemente verfügbar sind, wählen Sie außerhalb des für das Bedienfeld ausgewählten Datumsbereichs den Link aus, um weitere Elemente anzuzeigen. Beispiel: **[!UICONTROL Elemente aus dem letzten Monat anzeigen]**.
 
 ![Dimensionselemente anzeigen](assets/dimension-items.png)
 

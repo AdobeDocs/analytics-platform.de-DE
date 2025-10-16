@@ -28,7 +28,7 @@ So filtern Sie die Segmentliste:
 
    >[!INFO]
    >
-   >*Elemente* beziehen sich auf die Filterelemente, die in der [Filterliste“ angezeigt &#x200B;](seg-manage.md#segment-list).
+   >*Elemente* beziehen sich auf die Filterelemente, die in der [Filterliste“ angezeigt ](seg-manage.md#segment-list).
    > 
 
 ## Filterabschnitte

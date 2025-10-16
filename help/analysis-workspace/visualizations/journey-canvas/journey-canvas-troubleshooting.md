@@ -93,7 +93,7 @@ Die Knoten in diesem Journey enthalten die folgenden Statistiken, wenn das Feld 
 
 ![Journey mit Knoten mit einem höheren Prozentsatz als der vorherige Knoten](assets/journey-canvas-higher-percentage.png)
 
-| Knoten | Statistik |
+| Knoten | Statistiken |
 |---------|----------|
 | Knoten 1: „Site besuchen“ | Auf dieser Journey gab es 354.147 Ereignisse auf der Website innerhalb des Datumsbereichs für die Berichterstellung, wie auf dem Startknoten der Journey „Site besuchen“ dargestellt. |
 | Knoten 2: „Produkt A anzeigen“ | Von der Gesamtzahl der im Startknoten angezeigten Ereignisse entsprachen 14 % (48.394) den Kriterien des zweiten Journey-Knotens „Produkt A anzeigen“. |
@@ -107,7 +107,7 @@ Die Knoten in diesem Journey enthalten die folgenden Statistiken, wenn das Feld 
 
 ![Journey mit Knoten mit einem höheren Prozentsatz als der vorherige Knoten](assets/journey-canvas-percentage-previous.png)
 
-| Knoten | Statistik |
+| Knoten | Statistiken |
 |---------|----------|
 | Knoten 1: „Site besuchen“ | Auf dieser Journey gab es 354.147 Ereignisse auf der Website innerhalb des Datumsbereichs für die Berichterstellung, wie auf dem Startknoten der Journey „Site besuchen“ dargestellt. |
 | Knoten 2: „Produkt A anzeigen“ | Von der Gesamtzahl der im vorherigen Knoten angezeigten Ereignisse entsprachen 14 % (48.394) den Kriterien des zweiten Journey-Knotens „Produkt A anzeigen“. |
@@ -121,7 +121,7 @@ Die Knoten in dieser Journey enthalten die folgenden Statistiken, wenn das Feld 
 
 ![Journey mit Knoten mit einem höheren Prozentsatz als der vorherige Knoten](assets/journey-canvas-percentage-total.png)
 
-| Knoten | Statistik |
+| Knoten | Statistiken |
 |---------|----------|
 | Knoten 1: „Site besuchen“ | Auf dieser Journey gab es 354.147 Ereignisse auf der Website innerhalb des Datumsbereichs für die Berichterstellung, wie auf dem Startknoten der Journey „Site besuchen“ dargestellt. |
 | Knoten 2: „Produkt A anzeigen“ | Von der Gesamtzahl der Ereignisse entsprachen weniger als 1 % (48.394) den Kriterien des zweiten Journey-Knotens „Produkt A anzeigen“. |

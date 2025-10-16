@@ -297,6 +297,6 @@ Verwenden Sie die abgeleiteten Felder und Segmente, um Berichte und Analysen zu 
 
 >[!MORELIKETHIS]
 >
->Dieser Anwendungsfall-Artikel basiert auf dem Blogartikel [Tracking und Analyse von LLM und KI-generiertem Traffic in Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/tracking-and-analyzing-llm-and-ai-generated-traffic-in-adobe/ba-p/771967?profile.language=de).
+>Dieser Anwendungsfall-Artikel basiert auf dem Blogartikel [Tracking und Analyse von LLM und KI-generiertem Traffic in Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/tracking-and-analyzing-llm-and-ai-generated-traffic-in-adobe/ba-p/771967).
 >
 >

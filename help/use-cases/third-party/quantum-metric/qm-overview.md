@@ -14,5 +14,5 @@ ht-degree: 0%
 Auf dieser Seite erfahren Sie, wie Sie Customer Journey Analytics (CJA) und Quantum Metric miteinander verknüpfen, um die Zusammenarbeit beider Produkte optimal zu nutzen.  Die behandelten Anwendungsfälle umfassen:
 
 1. [Tie Quantum Metric-Sitzung wiederholt Daten in Customer Journey Analytics](tie-session-replays.md) um das „Warum“ hinter dem „Was“ besser zu verstehen.
-1. [Fügen Sie Quantum Metric-Fehler- und Friktionsereignisse &#x200B;](friction-events.md), wie Langsamkeit und Fehler beim Laden von Seiten, Wutklicks und mehr zu den Verhaltensdaten von CJA hinzu, um der Analyse Tiefe zu verleihen.
-1. Interaktion auf Seitenebene besser verstehen, indem [&#x200B; Quantum Metric-Heatmapping mit CJA-Daten verknüpft &#x200B;](heatmap.md).
+1. [Fügen Sie Quantum Metric-Fehler- und Friktionsereignisse ](friction-events.md), wie Langsamkeit und Fehler beim Laden von Seiten, Wutklicks und mehr zu den Verhaltensdaten von CJA hinzu, um der Analyse Tiefe zu verleihen.
+1. Interaktion auf Seitenebene besser verstehen, indem [ Quantum Metric-Heatmapping mit CJA-Daten verknüpft ](heatmap.md).

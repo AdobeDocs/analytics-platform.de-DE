@@ -20,13 +20,13 @@ Durch die Verknüpfung von Quantum Metric-Sitzungswiederholungen mit CJA-Daten k
 
 Bei diesen Schritten wird davon ausgegangen, dass Sie Tags in der Datenerfassung von Adobe Experience Platform verwenden. Wenn Ihr Unternehmen keine Tags verwendet, können Sie diese Datenerfassungsmethoden an eine manuelle Web SDK-Implementierung anpassen.
 
-Weitere Informationen finden [&#x200B; in der Dokumentation &#x200B;](https://experienceleague.adobe.com/de/docs/experience-platform/destinations/catalog/analytics/quantum-metric)Quantum Metric-Tag-Erweiterung“.
+Weitere Informationen finden [ in der Dokumentation ](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/analytics/quantum-metric)Quantum Metric-Tag-Erweiterung“.
 
 ## Schritt 1: Erstellen Sie ein Schemafeld für die Quantum Metric-Sitzungs-ID
 
 Dieser Anwendungsfall erfordert ein dediziertes Schemafeld, an das Daten gesendet werden. Sie können dieses Feld an einer beliebigen Stelle in Ihrem Schema erstellen und nach Belieben benennen. Beispielwerte werden bereitgestellt, wenn Ihr Unternehmen keine Voreinstellung für Name oder Speicherort hat.
 
-1. Melden Sie sich bei &quot;[.adobe.com“ &#x200B;](https://experience.adobe.com).
+1. Melden Sie sich bei &quot;[.adobe.com“ ](https://experience.adobe.com).
 1. Navigieren Sie **[!UICONTROL Datenerfassung]** > **[!UICONTROL Schemata]**.
 1. Wählen Sie das gewünschte Schema aus der Liste aus.
 1. Wählen Sie das ![Feldsymbol hinzufügen](/help/assets/icons/AddCircle.svg) neben dem gewünschten Objekt aus. Beispiel: neben `Implementation Details`.
@@ -39,7 +39,7 @@ Dieser Anwendungsfall erfordert ein dediziertes Schemafeld, an das Daten gesende
 
 Führen Sie diese Schritte aus, um die Quantum Metric-Sitzungs-ID an die Daten anzuhängen, die Sie an Adobe Experience Platform senden.
 
-1. Melden Sie sich bei &quot;[.adobe.com“ &#x200B;](https://experience.adobe.com).
+1. Melden Sie sich bei &quot;[.adobe.com“ ](https://experience.adobe.com).
 1. Navigieren Sie **[!UICONTROL Datenerfassung]** > **[!UICONTROL Tags]**.
 1. Wählen Sie die gewünschte Tag-Eigenschaft aus.
 1. Wählen Sie **[!UICONTROL Datenelemente]** und dann **[!UICONTROL Datenelement hinzufügen]** aus.
@@ -80,7 +80,7 @@ Wenn Ihr XDM-Objekt bereits in einer Konfiguration für die Aktion „Ereignis s
 
 Sobald die oben genannten Änderungen in Ihrer Implementierung veröffentlicht wurden, bearbeiten Sie Ihre bestehende Datenansicht, um die Sitzungs-ID als verfügbare Dimension in Customer Journey Analytics hinzuzufügen.
 
-1. Melden Sie sich bei &quot;[.adobe.com“ &#x200B;](https://experience.adobe.com).
+1. Melden Sie sich bei &quot;[.adobe.com“ ](https://experience.adobe.com).
 1. Navigieren Sie zu Customer Journey Analytics und wählen **[!UICONTROL Datenansichten]** im oberen Menü aus.
 1. Wählen Sie die gewünschte vorhandene Datenansicht aus.
 1. Suchen Sie das Feld Quantum Metric-Sitzungs-ID auf der linken Seite und ziehen Sie es in den Bereich „Dimensionen“ in der Mitte.
@@ -91,7 +91,7 @@ Sobald die oben genannten Änderungen in Ihrer Implementierung veröffentlicht w
 
 Erstellen Sie eine Freiformtabelle in Workspace und konfigurieren Sie sie so, dass die Sitzungs-ID-Werte direkt mit der Quantum-Metrik verknüpft sind.
 
-1. Melden Sie sich bei &quot;[.adobe.com“ &#x200B;](https://experience.adobe.com).
+1. Melden Sie sich bei &quot;[.adobe.com“ ](https://experience.adobe.com).
 1. Navigieren Sie zu Customer Journey Analytics und wählen Sie **[!UICONTROL Workspace]** im oberen Menü.
 1. Wählen Sie ein vorhandenes Projekt aus oder erstellen Sie ein Projekt.
 1. Erstellen Sie eine [Freiformtabelle](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md).
@@ -106,7 +106,7 @@ Erstellen Sie eine Freiformtabelle in Workspace und konfigurieren Sie sie so, da
 
 1. Klicken Sie auf **[!UICONTROL Erstellen]**.
 
-Jede Sitzungs-ID ist jetzt ein klickbarer Link. Weitere [&#x200B; zum Hinzufügen von Hyperlinks zu Analysis Workspace-Dimensionselementen finden Sie unter &#x200B;](/help/analysis-workspace/visualizations/freeform-table/freeform-table-hyperlinks.md)Erstellen von Hyperlinks in einer Freiformtabelle“.
+Jede Sitzungs-ID ist jetzt ein klickbarer Link. Weitere [ zum Hinzufügen von Hyperlinks zu Analysis Workspace-Dimensionselementen finden Sie unter ](/help/analysis-workspace/visualizations/freeform-table/freeform-table-hyperlinks.md)Erstellen von Hyperlinks in einer Freiformtabelle“.
 
 ![Sitzungswiederholung](assets/session-replay.png)
 
@@ -114,4 +114,4 @@ Jede Sitzungs-ID ist jetzt ein klickbarer Link. Weitere [&#x200B; zum Hinzufüge
 
 Sobald Sie ein interessantes Segment gefunden haben, das Sie erneut durchsuchen möchten, können Sie es auf das Bedienfeld anwenden, das Ihre Sitzungs-ID-Links enthält. Die Tabelle gibt alle Sitzungen in diesem Segment zurück, und Sie können auf eine beliebige Sitzung klicken, um sie in Quantum Metric weiter zu untersuchen.
 
-Weitere Informationen finden [&#x200B; unter „Das Enterprise Guide to Session Replay](https://www.quantummetric.com/resources/ebook/the-enterprise-guide-to-session-replay) auf Quantum Metric. Sie können sich auch an Ihren Kundenbetreuer von Quantum Metric wenden oder eine Anfrage über das [Quantum Metric Customer Request Portal) &#x200B;](https://community.quantummetric.com/s/public-support-page).
+Weitere Informationen finden [ unter „Das Enterprise Guide to Session Replay](https://www.quantummetric.com/resources/ebook/the-enterprise-guide-to-session-replay) auf Quantum Metric. Sie können sich auch an Ihren Kundenbetreuer von Quantum Metric wenden oder eine Anfrage über das [Quantum Metric Customer Request Portal) ](https://community.quantummetric.com/s/public-support-page).

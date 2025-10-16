@@ -19,7 +19,7 @@ Im Folgenden finden Sie Informationen zu Best Practices für die Verwendung und 
 
 >[!BEGINSHADEBOX]
 
-Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Unterstützung von Führungskräften beim Zugriff auf mobile Scorecards](https://video.tv.adobe.com/v/3444845?captions=ger){target="_blank"} finden Sie ein Demovideo.
+Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Unterstützung von Führungskräften beim Zugriff auf mobile Scorecards](https://video.tv.adobe.com/v/343460/){target="_blank"} finden Sie ein Demovideo.
 
 >[!ENDSHADEBOX]
 

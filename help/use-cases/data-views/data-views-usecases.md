@@ -18,11 +18,11 @@ Diese Anwendungsfälle veranschaulichen die Flexibilität und Leistungsfähigkei
 
 ## Verwenden von Metriken für Bindungsdimensionen
 
-Weitere Informationen finden Sie [&#x200B; Anwendungsbeispiel &#x200B;](binding-dimensions-metrics.md)Verwenden von Bindungsdimensionsmetriken“.
+Weitere Informationen finden Sie [ Anwendungsbeispiel ](binding-dimensions-metrics.md)Verwenden von Bindungsdimensionsmetriken“.
 
 ## Verwenden von Zusammenfassungsdaten
 
-Weitere Details finden Sie [&#x200B; Anwendungsbeispiel &#x200B;](summary-data.md)Nutzungsübersichtsdaten“.
+Weitere Details finden Sie [ Anwendungsbeispiel ](summary-data.md)Nutzungsübersichtsdaten“.
 
 ## Anwendungsfälle für BI-Erweiterungen
 
@@ -60,7 +60,7 @@ Zuvor wurden in Customer Journey Analytics Ganzzahlen automatisch als Metriken b
 
 ## Verwenden numerischer Dimensionen als Metriken in Flussdiagrammen {#numeric}
 
-Sie können eine numerische Dimension verwenden, um Metriken in Ihre [!UICONTROL &#x200B; Flow]-Visualisierung zu übertragen.
+Sie können eine numerische Dimension verwenden, um Metriken in Ihre [!UICONTROL  Flow]-Visualisierung zu übertragen.
 
 1. Ziehen Sie auf der Registerkarte [Komponenten](https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-dataviews/create-dataview) der Datenansichten das Schemafeld [!UICONTROL Marketing-Kanäle] in den Bereich [!UICONTROL Metriken] unter [!UICONTROL Eingeschlossene Komponenten].
 2. In Arbeitsbereich-Berichten zeigt dieser Fluss [!UICONTROL Marketing-Kanäle], die in [!UICONTROL Bestellungen] fließen:
@@ -112,11 +112,11 @@ Sie können feststellen, ob eine Sitzung tatsächlich die erste Sitzung für ein
 
 Eine Dimension und zwei Metriken ermöglichen diese Berichte:
 
-* [Sitzungstyp](https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-dataviews/component-reference) - Diese Dimension hat zwei Werte: [!UICONTROL Neu] und [!UICONTROL Wiederkehrend]. Der [!UICONTROL Neu] Zeileneintrag enthält das gesamte Verhalten (d. h. die Metriken für diese Dimension) in einer Sitzung, die als erste Sitzung einer Person definiert wurde. Alles andere ist im Zeileneintrag [!UICONTROL Wiederkehrend] enthalten (vorausgesetzt, dass alles zu einer Sitzung gehört). Wenn Metriken nicht Teil einer Sitzung sind, fallen sie in den Bereich „Nicht zutreffend“ für diese Dimension.
+* [Sitzungstyp](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-reference) - Diese Dimension hat zwei Werte: [!UICONTROL Neu] und [!UICONTROL Wiederkehrend]. Der [!UICONTROL Neu] Zeileneintrag enthält das gesamte Verhalten (d. h. die Metriken für diese Dimension) in einer Sitzung, die als erste Sitzung einer Person definiert wurde. Alles andere ist im Zeileneintrag [!UICONTROL Wiederkehrend] enthalten (vorausgesetzt, dass alles zu einer Sitzung gehört). Wenn Metriken nicht Teil einer Sitzung sind, fallen sie in den Bereich „Nicht zutreffend“ für diese Dimension.
 
-* [Erstmalige &#x200B;](https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-dataviews/component-reference). Die Metrik Erstmalige Sitzungen ist definiert als die erste Sitzung einer Person innerhalb des Reporting-Fensters.
+* [Erstmalige ](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-reference). Die Metrik Erstmalige Sitzungen ist definiert als die erste Sitzung einer Person innerhalb des Reporting-Fensters.
 
-* [Wiederkehrende Sitzungen](https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-dataviews/component-reference) Die Metrik „Wiederkehrende Sitzungen“ bezeichnet die Anzahl der Sitzungen, bei denen es sich nicht um die Erstsitzung einer Person gehandelt hat.—>
+* [Wiederkehrende Sitzungen](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-reference) Die Metrik „Wiederkehrende Sitzungen“ bezeichnet die Anzahl der Sitzungen, bei denen es sich nicht um die Erstsitzung einer Person gehandelt hat.—>
 
 So greifen Sie auf die Komponenten zu:
 
@@ -141,7 +141,7 @@ Daten nach dem 1. Januar 1900 (mit Ausnahme des 1. Januar 1970) und Datums-/Uhrz
 
 ### Anwendungsfälle mit Datum und Datum/Uhrzeit
 
-* Datum: Ein Reiseunternehmen erfasst in seinen Daten das Abreisedatum für Reisen als Feld. Das Unternehmen möchte einen Bericht, der den [!UICONTROL Wochentag“ für alle &#x200B;] vergleicht, um zu verstehen, welche am beliebtesten sind. Und das Unternehmen möchte dasselbe für den „Monat [!UICONTROL &#x200B; Jahres“ &#x200B;].
+* Datum: Ein Reiseunternehmen erfasst in seinen Daten das Abreisedatum für Reisen als Feld. Das Unternehmen möchte einen Bericht, der den [!UICONTROL Wochentag“ für alle ] vergleicht, um zu verstehen, welche am beliebtesten sind. Und das Unternehmen möchte dasselbe für den „Monat [!UICONTROL  Jahres“ ].
 
 * Datum-Uhrzeit: Ein Einzelhandelsunternehmen erfasst die Uhrzeit für jeden seiner Einkäufe am Verkaufsort (POS) im Geschäft. Das Unternehmen möchte wissen, zu welchen Zeiten in einem bestimmten Monat am meisten eingekauft wird, und zwar nach [!UICONTROL Tageszeit].
 

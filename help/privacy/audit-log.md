@@ -52,7 +52,7 @@ Navigieren Sie in Customer Journey Analytics zu **[!UICONTROL Tools]** > **[!UIC
 
 Das Auditprotokoll für den heutigen und gestrigen Tag wird standardmäßig angezeigt.
 
-![Auditprotokoll mit Hervorhebung von „Heute“ und „Gestern“. &#x200B;](assets/audit_ui.png)
+![Auditprotokoll mit Hervorhebung von „Heute“ und „Gestern“. ](assets/audit_ui.png)
 
 Sie können auswählen, welche Spalten sichtbar sein sollen, indem Sie oben rechts zur Spaltenauswahl wechseln.
 
@@ -60,7 +60,7 @@ Sie können auswählen, welche Spalten sichtbar sein sollen, indem Sie oben rech
 
 Doppelklicken Sie auf die Info-Schaltfläche (i) neben einer Beschreibung.
 
-![Auditprotokoll mit hervorgehobener Schaltfläche „Info“. &#x200B;](assets/info-button-audit.png)
+![Auditprotokoll mit hervorgehobener Schaltfläche „Info“. ](assets/info-button-audit.png)
 
 Die folgenden Informationen werden angezeigt:
 
@@ -142,7 +142,7 @@ In der folgenden Tabelle ist aufgeführt, welche Aktionen für welche Komponente
 | [!UICONTROL Datumsbereich] | <ul><li>API_Request</li><li>Erstellen</li><li>Löschen</li><li>Bearbeiten</li></ul> |
 | [!UICONTROL Filter] | <ul><li>API_Request</li><li>Erstellen</li><li>Löschen</li><li>Bearbeiten</li></ul> |
 | [!UICONTROL IMS-Organisation] | <ul><li>API_Request</li><li>Erstellen</li><li>Löschen</li><li>Bearbeiten</li></ul> |
-| [!UICONTROL Projekt &#x200B;] | <ul><li>API_Request</li><li>Erstellen</li><li>Löschen</li><li>Bearbeiten</li></ul> |
+| [!UICONTROL Projekt ] | <ul><li>API_Request</li><li>Erstellen</li><li>Löschen</li><li>Bearbeiten</li></ul> |
 | [!UICONTROL Bericht] | <ul><li>API_Request</li></ul> |
 | [!UICONTROL Geplantes Projekt] | <ul><li>API_Request</li><li>Erstellen</li><li>Löschen</li><li>Bearbeiten</li></ul> |
 | [!UICONTROL Benutzer] | <ul><li>API_Request</li><li>Erstellen</li><li>Löschen</li><li>Bearbeiten</li></ul> |

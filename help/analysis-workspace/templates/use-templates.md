@@ -7,7 +7,7 @@ exl-id: d61f215d-9089-4014-9c5a-97f5d7134f34
 source-git-commit: e8cba64e706a456861fd8392ce9260b7a1c4636b
 workflow-type: tm+mt
 source-wordcount: '20424'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -15,15 +15,15 @@ ht-degree: 100%
 
 Vorlagen (oder Unternehmensvorlagen) in Analysis Workspace bieten Quick Insights in die gängigsten Berichtsszenarien. Im Folgenden finden Sie einige Beispiele für Fragen, die Sie mit Vorlagen beantworten können:
 
-* Wie viele Personen Ihre Website besuchen
-* Wie viele dieser Besucher Unique Visitors darstellen (d. h. nur ein Mal gezählt werden)
-* Wie diese zu Ihrer Site gelangten (ob sie einem Link folgen oder Ihre Site direkt aufrufen)
-* Welche Keywords die Besucher zum Browsen des Site-Inhalts einsetzen
-* Wie lange sie auf einer bestimmten Seite oder der gesamten Website verweilen
-* Welche Links von Besuchern angeklickt wurden und wann diese die Seite verlassen haben
-* Welche Marketingkanäle am wirksamsten zu Umsatz oder Konversion-Ereignissen führen
-* Wie viel Zeit sie mit dem Anschauen eines Videos verbracht haben
-* Welche Browser und Geräte zum Besuch der Seite genutzt wurden
+* Wie viele Personen besuchen Ihre Site?
+* Wie viele dieser Besucher sind Unique Visitors (nur einmal gezählt)
+* Wie sie zur Website kamen (ob sie beispielsweise einem Link gefolgt sind oder direkt dorthin gekommen sind)
+* Welche Keywords zum Durchsuchen von Website-Inhalten verwendet wurden
+* Wie lange Besucherinnen und Besucher auf einer bestimmten Seite oder auf der gesamten Site geblieben sind
+* Auf welche Links geklickt wurde und wann die Besucher die Website verlassen haben
+* Welche Marketing-Kanäle am effektivsten Umsatz- oder Konversionsereignisse generieren
+* Wie viel Zeit sie damit verbracht haben, sich ein Video anzusehen
+* Welche Browser und Geräte sie verwendet haben, um Ihre Website zu besuchen
 
 Im Folgenden wird beschrieben, wie Sie über die Registerkarte [!UICONTROL Vorlagen] in Analysis Workspace auf Vorlagen zugreifen und sie nutzen können.
 

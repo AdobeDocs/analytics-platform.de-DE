@@ -75,7 +75,7 @@ Sie können die B2B-Container für bestimmte B2B-Funktionen in Analysis Workspac
 * **Attribution**: Sie können die neuen B2B-Container im [Attributionsbereich](/help/analysis-workspace/c-panels/attribution.md), in [Attributionskomponenteneinstellungen](/help/data-views/component-settings/attribution.md), in [berechneten Metriken](/help/components/calc-metrics/cm-workflow/m-metric-type-alloc.md) oder in [Spalten in einer Freiformtabelle](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/column-settings.md). Account-Lookbacks werden auf 13 Monate verlängert.
 
 * **Visualisierungen**: [Ausfallen](/help/analysis-workspace/visualizations/fallout/fallout-flow.md), [Fluss](/help/analysis-workspace/visualizations/c-flow/flow.md), [Journey-Arbeitsfläche](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md) und [Kohortentabelle](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md) Visualisierungen unterstützen die neuen B2B-Container. Beispiel: Sie können die neuen Container verwenden, um zu verstehen, wie Einkaufsgruppen Inhalte konsumieren oder wie sich Opportunity-Kohorten dem Verkaufsabschluss nähern.
-Sie können auch den Standard-Container für diese Visualisierungen unter [Benutzereinstellungen“ &#x200B;](/help/analysis-workspace/user-preferences.md#visualizations-preferences).
+Sie können auch den Standard-Container für diese Visualisierungen unter [Benutzereinstellungen“ ](/help/analysis-workspace/user-preferences.md#visualizations-preferences).
 
 Segmente, Attribution und Visualisierungen unterstützen Sie zusammen mit den B2B-Containern bei der umfassenden B2B-Analyse und bei der Erweiterung Ihrer Erkenntnisse.
 

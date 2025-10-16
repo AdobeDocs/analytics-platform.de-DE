@@ -42,7 +42,7 @@ Siehe folgendes Beispiel. Sie haben zwei Ereignis-Datensätze mit jeweils unters
 | --- | --- | --- | --- | ---: |
 | user_847 | &#x200B;2. Januar :26 Uhr | Gelb | Kreis | 8,5 |
 | user_847 | &#x200B;2. Januar :01 PM | Rot | | |
-| alternateid_656 | 2 Jan 8:58 PM | Rot | Square | 4.2 |
+| alternateid_656 | 2 Jan 8:58 PM | Rot | Square | 4,2 |
 | alternateid_656 | 2 Jan 9:03 PM | | Dreieck | 3,1 |
 
 Wenn Sie eine Verbindung mit diesen beiden Ereignis-Datensätzen erstellen und
@@ -61,7 +61,7 @@ Der folgende kombinierte Datensatz wird für das Reporting verwendet.
 | user_847 | &#x200B;2. Januar :31 Uhr | | Schildkröte | | 4 | |
 | user_847 | &#x200B;2. Januar :44 Uhr | | | | 2 | |
 | user_847 | &#x200B;2. Januar :01 PM | Rot | | | | |
-| alternateid_656 | 2 Jan 8:58 PM | Rot | | Square | | 4.2 |
+| alternateid_656 | 2 Jan 8:58 PM | Rot | | Square | | 4,2 |
 | alternateid_656 | 2 Jan 9:03 PM | | | Dreieck | | 3,1 |
 
 Betrachten Sie dieses Szenario, um die Bedeutung von Schemapfaden zu veranschaulichen. Im ersten Datensatz basiert `string_color` auf dem Schemapfad `_experience.whatever.string_color` und im zweiten Datensatz auf dem Schemapfad `_experience.somethingelse.string_color`. In diesem Szenario werden die Daten **nicht** im resultierenden kombinierten Datensatz in einer Spalte zusammengeführt. Stattdessen sind das Ergebnis zwei `string_color` Spalten im kombinierten Datensatz:
@@ -75,7 +75,7 @@ Betrachten Sie dieses Szenario, um die Bedeutung von Schemapfaden zu veranschaul
 | user_847 | &#x200B;2. Januar :31 Uhr | | | Schildkröte |  | 4 | |
 | user_847 | &#x200B;2. Januar :44 Uhr | | | | | 2 | |
 | user_847 | &#x200B;2. Januar :01 PM | | Rot | | | | |
-| alternateid_656 | 2 Jan 8:58 PM | | Rot | | Square | | 4.2 |
+| alternateid_656 | 2 Jan 8:58 PM | | Rot | | Square | | 4,2 |
 | alternateid_656 | 2 Jan 9:03 PM | | | | Dreieck | | 3,1 |
 
 Dieser „kombinierte Ereignis-Datensatz“ wird für das Reporting verwendet. Es spielt keine Rolle, aus welchem Datensatz eine Zeile stammt. Customer Journey Analytics behandelt alle Daten so, als befände sie sich im selben Datensatz. Wenn in beiden Datensätzen eine übereinstimmende Personen-ID angezeigt wird, werden diese als dieselbe eindeutige Person betrachtet. Wenn in beiden Datensätzen eine übereinstimmende Personen-ID mit einem Zeitstempel innerhalb von 30 Minuten angezeigt wird, werden sie als Teil derselben Sitzung betrachtet. Felder mit identischen Schemapfaden werden zusammengeführt.

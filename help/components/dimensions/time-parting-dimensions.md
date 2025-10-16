@@ -7,7 +7,7 @@ role: User
 source-git-commit: a646d1f35308dc1f1d9f06cf94835534bd8b8da6
 workflow-type: tm+mt
 source-wordcount: '198'
-ht-degree: 60%
+ht-degree: 27%
 
 ---
 
@@ -15,20 +15,20 @@ ht-degree: 60%
 
 Bei der Zeitunterteilung wird der Zeitstempel erfasster Ereignisse in aussagekräftigere Dimensionen wie **Stunde des Tages** oder **Tag der Woche** unterteilt.
 
-Die Dimensionen für die Zeitunterteilung basieren auf der Zeitzone der Datenansicht. Diese Dimensionen sind in Analysis Workspace verfügbar und können bei der Beantwortung der folgenden Fragen hilfreich sein:
+Die Dimensionen für die Zeitunterteilung basieren auf der Zeitzone der Datenansicht. Diese Dimensionen sind in Analysis Workspace verfügbar und können bei der Beantwortung der folgenden Fragen helfen:
 
 * Welches ist für Personen über einen großen Datumsbereich die beliebteste Tageszeit für den Zugriff auf meine Site oder mein Programm?
-* Gibt es Wochentage oder Zeiten, an bzw. zu denen auf meiner Site oder in meiner Anwendung mehr Konversionen erfolgen?
-* Wie verhalten sich Verkäufe am Wochenende in Bezug auf Verkäufe während der Woche?
-* Führt eine bestimmte Marketing-Kampagne eher am Morgen oder am Nachmittag zu einer höheren Konversionsrate?
+* Gibt es Tage der Woche oder Stunden des Tages, an denen die Konversion auf meiner Site oder in meiner App höher ist?
+* Wie hoch sind meine Wochenendverkäufe im Vergleich zu meinen Wochenendverkäufen?
+* Führt eine bestimmte Marketing-Kampagne zu höheren Konversionen am Morgen oder am Nachmittag?
 
 | Dimension | Beispielwerte |
 |--- |--- |
 | **[!UICONTROL Stunde des Tages]** | 0–23 |
-| **[!UICONTROL Vormittag/Nachmittag]** | Vormittag (AM), Nachmittag (PM) |
+| **[!UICONTROL Vormittag/Nachmittag]** | VORMITTAG, VORMITTAG |
 | **[!UICONTROL Wochentag]** | Montag, Dienstag, Mittwoch, Donnerstag, Freitag, Samstag, Sonntag |
 | **[!UICONTROL Wochentag/Wochenende]** | Wochentag, Wochenende |
 | **[!UICONTROL Tag des Monats]** | 1–31 |
-| **[!UICONTROL Monat des Jahres]** | Januar bis Dezember |
+| **[!UICONTROL Monat des Jahres]** | Januar-Dezember |
 | **[!UICONTROL Tag des Jahres]** | 1–366 |
 | **[!UICONTROL Quartal des Jahres]** | Q1, Q2, Q3, Q4 |

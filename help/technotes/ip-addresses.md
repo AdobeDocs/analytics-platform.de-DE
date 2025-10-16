@@ -144,4 +144,4 @@ Diese Seite enthält IP-Adressen, die Sie Ihrer Zulassungsliste hinzufügen müs
 >
 >[Von Customer Journey Analytics verwendete Domains](domains.md)
 >
->[Von der Adobe Experience Cloud verwendete IP-Adressen](https://experienceleague.adobe.com/de/docs/core-services/interface/data-collection/ip-addresses)
+>[Von der Adobe Experience Cloud verwendete IP-Adressen](https://experienceleague.adobe.com/en/docs/core-services/interface/data-collection/ip-addresses)

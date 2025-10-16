@@ -7,7 +7,7 @@ role: User
 source-git-commit: c209341400bf4e0c00719075f0fc82f81ca9dbb4
 workflow-type: tm+mt
 source-wordcount: '1474'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -35,7 +35,7 @@ Insbesondere für Admins verbessert die ordnungsgemäße Planung von Segmenten d
 - **Zielgruppe**: Wer wird Ihre Segmente verwenden? Achten Sie darauf, eine gute Segmentbeschreibung anzugeben, damit die Zielgruppe Folgendes versteht:
    - Wofür ist dieses Segment nützlich?
 
-   - Wann sollte dieses Segment benutzt werden?
+   - Wann sollte ich dieses Segment verwenden?
 
 - **Umfang**: Welcher [Segment-Container](#segment-containers) repräsentiert die gewünschten Daten am besten? Benutzen Sie den kleinstmöglichen Container.
 

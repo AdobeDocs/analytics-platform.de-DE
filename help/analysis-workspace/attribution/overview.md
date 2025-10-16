@@ -7,7 +7,7 @@ exl-id: 47a3523b-d9eb-4272-84b8-090b921cba13
 source-git-commit: b70409de112ba8247df8fc6f74f20a9370cda1e1
 workflow-type: tm+mt
 source-wordcount: '462'
-ht-degree: 86%
+ht-degree: 81%
 
 ---
 
@@ -32,7 +32,7 @@ Adobe Analytics erweitert die Attribution und ermöglicht Ihnen Folgendes:
 
 * Die Attribution über bezahlte Medien definieren: Dimensionen, Metriken, Kanäle oder Ereignisse können auf Modelle (z. B. die interne Suche) angewendet werden, nicht nur Marketing-Kampagnen.
 * Den Vergleich für unbegrenzte Attributionsmodelle verwenden: Vergleichen Sie dynamisch so viele Modelle, wie Sie möchten.
-* Implementierungsänderungen vermeiden: Mit der Berichtszeitverarbeitung und kontextabhängigen Sitzungen kann Customer Journey-Kontext erstellt und zur Laufzeit angewendet werden.
+* Vermeiden Sie Implementierungsänderungen: Bei der Berichtszeitverarbeitung und kontextabhängigen Sitzungen kann der Kunden-Journey-Kontext zur Laufzeit integriert und angewendet werden.
 * Die Sitzung erstellen, die Ihrem Attributionsszenario am ehesten entspricht.
 * Die Attribution nach Segmenten aufschlüsseln: Vergleichen Sie problemlos die Leistung Ihrer Marketing-Kanäle über ein beliebiges wichtiges Segment hinweg (z. B. Neu- mit Bestandskundschaft, Produkt X im Vergleich zu Produkt Y, Treuestufe oder CLV).
 * Wechsel zwischen Kanälen und Multi-Touch-Analyse beachten: Verwenden Sie Venn-Diagramme und Histogramme und erstellen Sie Trends anhand von Attributionsergebnissen.
@@ -53,28 +53,28 @@ Attribution umfasst die folgenden Funktionen:
 
 >[!BEGINSHADEBOX]
 
-Siehe ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Attribution in Freiformtabellen](https://video.tv.adobe.com/v/37474?quality=12&learn=on&captions=ger){target="_blank"} für ein Demovideo.
+Siehe ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Attribution in Freiformtabellen](https://video.tv.adobe.com/v/23136?quality=12&learn=on){target="_blank"} für ein Demovideo.
 
 >[!ENDSHADEBOX]
 
 
 >[!BEGINSHADEBOX]
 
-Siehe ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Attribution in berechneten &#x200B;](https://video.tv.adobe.com/v/41478?quality=12&learn=on&captions=ger){target="_blank"}) für ein Demovideo.
+Siehe ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Attribution in berechneten ](https://video.tv.adobe.com/v/23140?quality=12&learn=on){target="_blank"}) für ein Demovideo.
 
 >[!ENDSHADEBOX]
 
 
 >[!BEGINSHADEBOX]
 
-Siehe ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Verwenden des Attributionsbedienfelds](https://video.tv.adobe.com/v/37477?quality=12&learn=on&captions=ger){target="_blank"} für ein Demovideo.
+Siehe ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Verwenden des Attributionsbedienfelds](https://video.tv.adobe.com/v/23139?quality=12&learn=on){target="_blank"} für ein Demovideo.
 
 >[!ENDSHADEBOX]
 
 
 >[!BEGINSHADEBOX]
 
-Siehe ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Hinzufügen von nebeneinander angezeigten Vergleichen von Attributionsmodellen](https://video.tv.adobe.com/v/327794?quality=12&learn=on&captions=ger){target="_blank"} für ein Demovideo.
+Siehe ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Hinzufügen von nebeneinander angezeigten Vergleichen von Attributionsmodellen](https://video.tv.adobe.com/v/23651?quality=12&learn=on){target="_blank"} für ein Demovideo.
 
 >[!ENDSHADEBOX]
 

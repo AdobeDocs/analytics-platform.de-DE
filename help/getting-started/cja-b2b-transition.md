@@ -1,5 +1,5 @@
 ---
-title: Übergangshandbuch
+title: Übergangsleitfaden
 description: Erfahren Sie, wie Sie von Customer Journey Analytics zu Customer Journey Analytics B2B edition wechseln
 solution: Customer Journey Analytics
 feature: Basics
@@ -9,7 +9,7 @@ exl-id: d0e6398b-8080-4e36-b178-0cb91945d0c5
 source-git-commit: 3c13ae26a9ef48454467fc21b8faaa9e078c7f9f
 workflow-type: tm+mt
 source-wordcount: '516'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -21,7 +21,7 @@ In dem Artikel wird davon ausgegangen, dass Sie Customer Journey Analytics berei
 
 * Sie verfügen über [Verbindungen](/help/connections/overview.md) die Daten in Customer Journey Analytics aufnehmen.
 * Sie verfügen über [Datenansichten](/help/data-views/data-views.md) die die Daten aus diesen Verbindungen verwenden.
-* Es [&#x200B; „Projekte](/help/analysis-workspace/home.md) mit Berichten und Visualisierungen, die diese Datenansichten nutzen.
+* Es [ „Projekte](/help/analysis-workspace/home.md) mit Berichten und Visualisierungen, die diese Datenansichten nutzen.
 
 Wenn Sie Customer Journey Analytics noch nicht verwendet haben, lesen Sie die [Schnellstartanleitung für B2B edition](cja-b2b-quick-start-guide.md).
 
@@ -32,7 +32,7 @@ Wenn Sie ein Adobe Analytics-Benutzer sind und Customer Journey Analytics B2B ed
 
 Die bestehende Implementierung von Customer Journey Analytics ändert sich überhaupt nicht, sobald Sie für Customer Journey Analytics B2B edition lizenziert und bereitgestellt werden.
 
-Alle vorhandenen Verbindungen werden als [personenbasierte Verbindungen“ &#x200B;](cja-b2b-concepts-features.md#connections-and-identifiers) und funktionieren weiterhin ohne Aktualisierung. Alles, was auf den Daten dieser personenbasierten Verbindungen beruht, z. B. Datenansichten, Arbeitsbereich-Projekte, Segmente, geplante Exporte, Warnhinweise usw., funktioniert weiterhin wie ursprünglich geplant und beabsichtigt.
+Alle vorhandenen Verbindungen werden als [personenbasierte Verbindungen“ ](cja-b2b-concepts-features.md#connections-and-identifiers) und funktionieren weiterhin ohne Aktualisierung. Alles, was auf den Daten dieser personenbasierten Verbindungen beruht, z. B. Datenansichten, Arbeitsbereich-Projekte, Segmente, geplante Exporte, Warnhinweise usw., funktioniert weiterhin wie ursprünglich geplant und beabsichtigt.
 
 >[!IMPORTANT]
 >

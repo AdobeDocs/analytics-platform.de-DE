@@ -34,11 +34,11 @@ Die Definition eines Bounces ist Thema einer anderen Diskussion, aber in diesem 
 
 ### Abgeleitete Felder
 
-Alternativ können Sie eine [Absprungrate“ mithilfe abgeleiteter Felder &#x200B;](/help/data-views/derived-fields/derived-fields.md#bounces).
+Alternativ können Sie eine [Absprungrate“ mithilfe abgeleiteter Felder ](/help/data-views/derived-fields/derived-fields.md#bounces).
 
 Abgeleitete Felder sind Teil einer Datenansicht, was den Vorteil hat, dass nicht jeder Benutzer die Definition einer Metrik für die Absprungrate überschreiben oder ändern kann. Dieser Vorteil führte auch zu einer Einschränkung. Benutzende, die keinen Zugriff auf eine Datenansicht haben, können keine abgeleiteten Felder verwenden und müssen auf Segmente und berechnete Metriken zurückgreifen, um eine Absprungrate zu definieren.
 
-Weitere Hintergrundinformationen zur Berechnung von Bounces und Absprungraten in Customer Journey Analytics finden Sie in diesem [Blogpost](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/calculating-bounces-amp-bounce-rate-in-adobe-customer-journey/ba-p/706446?profile.language=de).
+Weitere Hintergrundinformationen zur Berechnung von Bounces und Absprungraten in Customer Journey Analytics finden Sie in diesem [Blogpost](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/calculating-bounces-amp-bounce-rate-in-adobe-customer-journey/ba-p/706446).
 
 +++
 

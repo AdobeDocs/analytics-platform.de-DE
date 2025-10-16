@@ -24,7 +24,7 @@ Customer Journey Analytics B2B edition kann Sie dabei unterstützen, produktbezo
 
 Sie möchten Kunden mit geringer Produktnutzung, geringer Markeninteraktion und anderen Schlüsselfaktoren identifizieren, die auf ein hohes Abwanderungspotenzial hinweisen. Mit dieser frühzeitigen Erkennung können Sie Strategien zur Kontoaktivierung entwickeln.
 
-Die [Aktives &#x200B;](/help/guided-analysis/types/active-growth.md)&quot; geführte Analyse kann Ihnen dabei helfen, Folgendes zu bestimmen:
+Die [Aktives ](/help/guided-analysis/types/active-growth.md)&quot; geführte Analyse kann Ihnen dabei helfen, Folgendes zu bestimmen:
 
 * Gewinnen Sie Einblicke in das Wachstum und die Akquise von Accounts, Opportunities und Benutzern über einen bestimmten Zeitraum.
 * Erkennen von inaktiven Konten ohne aktuelle Interaktion. So können Sie eine Strategie für Erneuerung oder Upsell bestimmen.
@@ -34,7 +34,7 @@ Die [Aktives &#x200B;](/help/guided-analysis/types/active-growth.md)&quot; gefü
 
 Sie möchten das aktive Nettowachstum für Ihre neuen, wiederholten, wiederkehrenden und inaktiven Konten sehen.
 
-1. [Erstellen und Konfigurieren einer &#x200B;](/help/guided-analysis/types/active-growth.md) Wachstumsanalyse.
+1. [Erstellen und Konfigurieren einer ](/help/guided-analysis/types/active-growth.md) Wachstumsanalyse.
 1. Wählen Sie **[!UICONTROL Konten]** als **[!UICONTROL gezählt als]** aus.
 1. Wählen Sie die bevorzugte **[!UICONTROL Diagrammeinstellungen]** aus. Beispiel: ![GraphBarVerticalStacked](/help/assets/icons/GraphBarVerticalStacked.svg) **[!UICONTROL Stacked bar]**.
 1. Wählen Sie die bevorzugten ![Kalender](/help/assets/icons/Calendar.svg) **[!UICONTROL Intervall]** und **[!UICONTROL Datumsbereich]**.
@@ -58,6 +58,6 @@ Sie möchten eine mobile Scorecard erstellen, die Details zu Konten, Opportunity
 
    ![B2B-Anwendungsfall - Produktnutzen steigern - Einblicke demokratisieren - Mobile Scorecard](assets/b2b-uc-build-product-value-mobile-scorecard.png)
 
-1. Verwenden Sie **[!UICONTROL Vorschau]**, um eine Vorschau des Dashboards anzuzeigen. Das Dashboard ist jetzt über die Adobe Analytics Dashboard-App verfügbar, die über die [App Store](https://apps.apple.com/us/app/adobe-analytics-dashboards/id1509062264) oder [Google Play verfügbar &#x200B;](https://play.google.com/store/apps/details?id=com.adobe.analyticsdashboards).
+1. Verwenden Sie **[!UICONTROL Vorschau]**, um eine Vorschau des Dashboards anzuzeigen. Das Dashboard ist jetzt über die Adobe Analytics Dashboard-App verfügbar, die über die [App Store](https://apps.apple.com/us/app/adobe-analytics-dashboards/id1509062264) oder [Google Play verfügbar ](https://play.google.com/store/apps/details?id=com.adobe.analyticsdashboards).
 
    ![B2B-Anwendungsfall - Produktnutzen aufbauen - Einblicke demokratisieren - Mobile Scorecard-Vorschau](assets/b2b-uc-build-product-value-mobile-scorecard-preview.png)

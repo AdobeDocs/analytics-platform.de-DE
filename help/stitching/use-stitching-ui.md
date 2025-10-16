@@ -10,7 +10,7 @@ exl-id: 9a1689d9-c1b7-42fe-9682-499e49843f76
 source-git-commit: c4aea74807be15af56413522d9e6fbf5f18a37a0
 workflow-type: tm+mt
 source-wordcount: '368'
-ht-degree: 3%
+ht-degree: 1%
 
 ---
 
@@ -32,14 +32,14 @@ Um das Zusammenfügen zu aktivieren, gehen Sie im Abschnitt Ereignisdatensatz de
 
 1. Wählen Sie eine persistente ID aus **[!UICONTROL Dropdown-Menü]** Persistente ID“ aus.
 
-   Wenn Sie **[!UICONTROL Identitätszuordnung]** für die persistente ID auswählen, müssen Sie einen Namespace auswählen. Es gibt zwei Optionen:
+   Wenn Sie **[!UICONTROL Identitätszuordnung]** für die persistente ID auswählen, müssen Sie einen Namespace auswählen. Sie haben zwei Möglichkeiten:
 
    * Aktivieren Sie **[!UICONTROL Primären Identity-Namespace verwenden]**, um den primären Identity-Namespace zu verwenden.
    * Wählen Sie einen Namespace aus dem **[!UICONTROL Namespace]** Dropdown-Menü aus.
 
 1. Wählen Sie eine Personen-ID aus **[!UICONTROL Dropdown]** Menü „Personen-ID“ aus.
 
-   Wenn Sie **[!UICONTROL Identitätszuordnung]** für die Personen-ID auswählen, müssen Sie einen Namespace auswählen. Es gibt zwei Optionen:
+   Wenn Sie **[!UICONTROL Identitätszuordnung]** für die Personen-ID auswählen, müssen Sie einen Namespace auswählen. Sie haben zwei Möglichkeiten:
 
    * Aktivieren Sie **[!UICONTROL Primären Identity-Namespace verwenden]**, um den primären Identity-Namespace zu verwenden.
    * Wählen Sie einen Namespace aus dem **[!UICONTROL Namespace]** Dropdown-Menü aus.

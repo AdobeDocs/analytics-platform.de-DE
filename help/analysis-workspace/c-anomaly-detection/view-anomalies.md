@@ -7,7 +7,7 @@ role: User
 source-git-commit: ce4a21b1a1e89f14316a92fbdce38281db61e666
 workflow-type: tm+mt
 source-wordcount: '429'
-ht-degree: 50%
+ht-degree: 46%
 
 ---
 
@@ -28,7 +28,7 @@ Sie können Anomalien in einer Freiformtabelle für Zeitreihen anzeigen.
 
    Ein ◥ wird in der oberen rechten Ecke jeder Zeile angezeigt, in der eine Datenanomalie erkannt wird.
 
-   Die **farbige senkrechte Linie** in jeder Zeile zeigt ➋ den erwarteten Wert an. Der **farbig schattierte Bereich** in jeder Zeile zeigt ➊ den tatsächlichen Wert an. Der Vergleich der Linie (erwarteter Wert) mit dem schattierten Bereich (tatsächlicher Wert) bestimmt, ob eine Anomalie vorliegt. (Eine Anomalie wird durch die fortschrittlichen statistischen Verfahren festgestellt, die im Abschnitt [In der Anomalieerkennung verwendete statistische Verfahren“ beschrieben &#x200B;](/help/analysis-workspace/c-anomaly-detection/statistics-anomaly-detection.md).)
+   Die **farbige senkrechte Linie** in jeder Zeile zeigt ➋ den erwarteten Wert an. Der **farbig schattierte Bereich** in jeder Zeile zeigt ➊ den tatsächlichen Wert an. Der Vergleich der Linie (erwarteter Wert) mit dem schattierten Bereich (tatsächlicher Wert) bestimmt, ob eine Anomalie vorliegt. (Eine Anomalie wird durch die fortschrittlichen statistischen Verfahren festgestellt, die im Abschnitt [In der Anomalieerkennung verwendete statistische Verfahren“ beschrieben ](/help/analysis-workspace/c-anomaly-detection/statistics-anomaly-detection.md).)
 
 1. Wählen Sie ◥ in der oberen rechten Ecke einer Zeile aus, um Details zur Anomalie anzuzeigen. Angezeigt wird das Ausmaß (in Prozent), in dem der tatsächliche Wert über oder unter dem erwarteten Wert liegt.
 
@@ -48,7 +48,7 @@ So stellen Sie Anomalien in einem Liniendiagramm dar:
 
    ![Anomalieerkennung für Linienvisualisierung](assets/anomaly-detected-line.png)
 
-   Ein **weißer Punkt** auf der Linie bedeutet, dass an dieser Stelle eine Datenanomalie erkannt wurde. (Eine Anomalie wird durch die fortschrittlichen statistischen Verfahren festgestellt, die im Abschnitt [In der Anomalieerkennung verwendete statistische Verfahren“ beschrieben &#x200B;](/help/analysis-workspace/c-anomaly-detection/statistics-anomaly-detection.md).)
+   Ein **weißer Punkt** auf der Linie bedeutet, dass an dieser Stelle eine Datenanomalie erkannt wurde. (Eine Anomalie wird durch die fortschrittlichen statistischen Verfahren festgestellt, die im Abschnitt [In der Anomalieerkennung verwendete statistische Verfahren“ beschrieben ](/help/analysis-workspace/c-anomaly-detection/statistics-anomaly-detection.md).)
 
    Der **hell schattierte Bereich** ist das Konfidenzband bzw. der erwartete Bereich, in dem Werte auftreten sollten. Jeder Wert, der außerhalb dieses erwarteten Bereichs liegt, ist eine Anomalie.
 
@@ -62,7 +62,7 @@ So stellen Sie Anomalien in einem Liniendiagramm dar:
 
    * Der Rohwert der Anomalie.
 
-   * Der Prozentwert über oder unter dem erwarteten Wert, der durch eine durchgezogene grüne Linie dargestellt wird.
+   * Der Prozentwert über oder unter dem erwarteten Wert, der durch die durchgezogene grüne Linie dargestellt wird.
 
 
 
