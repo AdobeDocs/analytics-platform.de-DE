@@ -70,6 +70,6 @@ Der **Segmente**-Link zeigt eine zusammenfassende Liste der Segmente an, die von
 >[!MORELIKETHIS]
 >
 >[Datenansichten auswählen](select-data-view.md)
->>[Datumsbereich auswählen](select-date-range.md)
->>[Arbeiten mit Filtern](work-with-filters.md)
+>&#x200B;>[Datumsbereich auswählen](select-date-range.md)
+>&#x200B;>[Arbeiten mit Filtern](work-with-filters.md)
 >

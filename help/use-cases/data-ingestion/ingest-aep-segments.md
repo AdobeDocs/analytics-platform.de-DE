@@ -32,7 +32,7 @@ Wahrscheinlich haben Sie bereits Zielgruppen im Echtzeit-Kundenprofil, die aus v
 
 ## Schritt 2: Erstellen Sie einen Profilvereinigungsdatensatz für den Export
 
-Um die Zielgruppe in einen Datensatz zu exportieren, der schließlich zu einer Verbindung in Customer Journey Analytics hinzugefügt werden kann, müssen Sie einen Datensatz erstellen, dessen Schema ein Profilschema ([) ](https://experienceleague.adobe.com/docs/experience-platform/profile/union-schemas/union-schema.html#understanding-union-schemas).
+Um die Zielgruppe in einen Datensatz zu exportieren, der schließlich zu einer Verbindung in Customer Journey Analytics hinzugefügt werden kann, müssen Sie einen Datensatz erstellen, dessen Schema ein Profilschema ([) &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/profile/union-schemas/union-schema.html#understanding-union-schemas).
 
 Vereinigungsschemas bestehen aus mehreren Schemas, die dieselbe Klasse haben und für ein Profil aktiviert wurden. Im Vereinigungsschema können Sie eine Zusammenführung aller Felder sehen, die in Schemas enthalten sind, die dieselbe Klasse haben. Das Echtzeit-Kundenprofil verwendet das Vereinigungsschema, um eine ganzheitliche Ansicht jedes einzelnen Kunden zu erstellen.
 

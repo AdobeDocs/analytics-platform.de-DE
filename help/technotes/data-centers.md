@@ -17,7 +17,7 @@ Adobe Customer Journey Analytics wird in Rechenzentren der Unternehmensklasse vo
 
 Bei der Bereitstellung bestimmen Kundinnen und Kunden die Region, in der sich ihre Adobe Experience Platform-Daten befinden. Die Daten, die aus dem Data Lake von Adobe Experience Platform in CJA aufgenommen werden, werden in derselben Region gespeichert.
 
-Weitere Informationen [ Sie in der ](https://experienceleague.adobe.com/en/docs/core-services/interface/data-collection/rdc) zu Adobe Experience Cloud unter „Regionale Datenerfassung“.
+Weitere Informationen [&#x200B; Sie in der &#x200B;](https://experienceleague.adobe.com/en/docs/core-services/interface/data-collection/rdc) zu Adobe Experience Cloud unter „Regionale Datenerfassung“.
 
 ## Azure
 

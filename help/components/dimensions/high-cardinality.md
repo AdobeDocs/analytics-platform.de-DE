@@ -42,4 +42,4 @@ Die beste Möglichkeit, Dimensionen mit hoher Kardinalität zu berücksichtigen,
 * Verwenden Sie die [Einschließen/ausschließen](/help/data-views/component-settings/include-exclude-values.md) im Datenansichts-Manager.
 * Kürzen Sie den Datumsbereich der Anfrage. Wenn im Laufe der Zeit viele eindeutige Werte gesammelt werden, kann eine Verkürzung des Datumsbereichs des Workspace-Berichts die Anzahl der eindeutigen Werte für die zu verarbeitenden Server einschränken.
 * Erwägen Sie [vollständigen Tabellenexport](/help/analysis-workspace/export/export-cloud.md), um alle Zeilen der Tabelle zurückzugeben.
-* Wenn die Anzahl der eindeutigen Werte der primäre Fokus ist, verwenden Sie die [[!UICONTROL  Metrikfunktion „Ungefährer ]](/help/components/calc-metrics/cm-adv-functions.md#approximate-count-distinct)&quot;.
+* Wenn die Anzahl der eindeutigen Werte der primäre Fokus ist, verwenden Sie die [[!UICONTROL &#x200B; Metrikfunktion „Ungefährer &#x200B;]](/help/components/calc-metrics/cm-adv-functions.md#approximate-count-distinct)&quot;.

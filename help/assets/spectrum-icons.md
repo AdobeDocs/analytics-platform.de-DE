@@ -17,7 +17,7 @@ ht-degree: 14%
 
 Diese Tabelle listet alle Spectrum-Symbole auf, die über die Konfiguration von Spectrum-Symbolausschnitten verfügbar sind. Verwenden Sie den Namen, um das Snippet zu Ihrem Markdown hinzuzufügen, damit das Symbol Spektrum angezeigt wird.
 
-Achten Sie [Wiki-Seite](ttps://wiki.corp.adobe.com/display/omtrplatform/Use+Spectrum+icons+in+documentation) auf Aktualisierungen.
+Achten Sie [Wiki-Seite] (ttps://wiki.corp.adobe.com/display/omtrplatform/Use+Spectrum+icons+in+documentation) auf Aktualisierungen.
 
 ![](https://reportbuilder.an.adobe.com/assets/AdobeAnalyticsLogo-80.png)
 

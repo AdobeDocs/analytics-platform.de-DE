@@ -52,7 +52,7 @@ Dies führt zu sinnlosen Berichten für eVar1 und eVar2:
 
 Die Funktion der Experience Platform-Datenvorbereitung ist in den Analytics-Quell-Connector integriert und kann verwendet werden, um die im obigen Szenario beschriebenen Schemaunterschiede zu beheben. Dies führt zu eVars mit konsistenter Bedeutung in der Customer Journey Analytics-Datenansicht. (Die unten verwendeten Benennungskonventionen können Ihren Bedürfnissen entsprechend angepasst werden.)
 
-1. Bevor Sie die Datenflüsse für die Quellverbindung für Report Suite A und Report Suite B erstellen[ erstellen Sie ein neues ](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/overview.html?lang=de) in Adobe Experience Platform (nennen wir es **Einheitliches Schema** in unserem Beispiel). Fügen Sie dem Schema Folgendes hinzu:
+1. Bevor Sie die Datenflüsse für die Quellverbindung für Report Suite A und Report Suite B erstellen[&#x200B; erstellen Sie ein neues &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/overview.html?lang=de) in Adobe Experience Platform (nennen wir es **Einheitliches Schema** in unserem Beispiel). Fügen Sie dem Schema Folgendes hinzu:
 
    | „Einheitliches Schema“ |
    | --- |

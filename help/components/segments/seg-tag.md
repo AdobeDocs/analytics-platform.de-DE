@@ -17,7 +17,7 @@ Im [Segment-Manager](seg-manage.md) können Sie Tags zum Organisieren von Segmen
 
 So kennzeichnen Sie ein oder mehrere Segmente:
 
-1. Wählen [ im ](seg-manage.md)-Manager eines oder mehrere der Segmente aus, die Sie mit Tags versehen möchten.
+1. Wählen [&#x200B; im &#x200B;](seg-manage.md)-Manager eines oder mehrere der Segmente aus, die Sie mit Tags versehen möchten.
 1. Wählen Sie in der Aktionsleiste ![Kennzeichnungen](/help/assets/icons/Labels.svg) **[!UICONTROL Tag]** aus.
 1. Im Dialogfeld **[!UICONTROL Segmente]**:
 

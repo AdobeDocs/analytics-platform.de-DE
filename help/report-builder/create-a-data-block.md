@@ -62,7 +62,7 @@ Um den Datenblock zu erstellen, wählen Sie Berichtkomponenten aus und passen Si
 
 1. Fügen Sie **[!UICONTROL Dimensionen]**, **[!UICONTROL Metriken]** und **[!UICONTROL Segmente]** hinzu.
 
-   Scrollen Sie in den Komponentenlisten oder verwenden Sie das Feld ![Suchen](/help/assets/icons/Search.svg) **[!UICONTROL _Komponenten suchen_]**, um Komponenten zu finden. Ziehen Sie Komponenten per Drag-and[!UICONTROL Drop in den Bereich ]Tabelle“ oder doppelwählen Sie einen Komponentennamen in der Liste aus, um die Komponente dem Bereich [!UICONTROL Tabelle] hinzuzufügen.
+   Scrollen Sie in den Komponentenlisten oder verwenden Sie das Feld ![Suchen](/help/assets/icons/Search.svg) **[!UICONTROL _Komponenten suchen_]**, um Komponenten zu finden. Ziehen Sie Komponenten per Drag-and[!UICONTROL Drop in den Bereich &#x200B;]Tabelle“ oder doppelwählen Sie einen Komponentennamen in der Liste aus, um die Komponente dem Bereich [!UICONTROL Tabelle] hinzuzufügen.
 
    Doppelklicken Sie auf eine Komponente, um sie einem Standardabschnitt der Tabelle hinzuzufügen.
 
@@ -114,7 +114,7 @@ Um den Datenblock zu erstellen, wählen Sie Berichtkomponenten aus und passen Si
 >[!MORELIKETHIS]
 >
 >[Datenansicht auswählen](select-data-view.md)
->>[Datumsbereich auswählen](select-date-range.md)
->>[Filterdimensionen](filter-dimensions.md)
->>[Arbeiten mit Segmenten](work-with-filters.md)
+>&#x200B;>[Datumsbereich auswählen](select-date-range.md)
+>&#x200B;>[Filterdimensionen](filter-dimensions.md)
+>&#x200B;>[Arbeiten mit Segmenten](work-with-filters.md)
 >

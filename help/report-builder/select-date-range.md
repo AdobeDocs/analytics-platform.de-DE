@@ -80,7 +80,7 @@ Mit der Option für benutzerdefinierte Ausdrücke können Sie den Datumsbereich 
 
 #### Erstellen eines benutzerdefinierten Ausdrucks
 
-1. Geben Sie [Datumsreferenz“ ](#date-references).
+1. Geben Sie [Datumsreferenz“ &#x200B;](#date-references).
 
 1. Fügen Sie einen optionalen [Datumsoperator](#date-operators) hinzu, um das Datum in die Vergangenheit oder in die Zukunft zu verschieben.
 

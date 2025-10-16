@@ -24,7 +24,7 @@ CJA ermöglicht die Steuerung der QM-Daten zur Berichtszeit, die sequenzielle Da
 
 ## Schritt 1: Quantum Metric-Quell-Connector erstellen
 
-1. Melden Sie sich bei &quot;[.adobe.com“ ](https://experience.adobe.com).
+1. Melden Sie sich bei &quot;[.adobe.com“ &#x200B;](https://experience.adobe.com).
 1. Navigieren Sie zu [!UICONTROL Experience Platform] > [!UICONTROL Verbindungen] > [!UICONTROL Quellen].
 1. Fügen Sie den Quantum Metric-Quell-Connector hinzu und befolgen Sie die Anweisungen bis zum Abschluss.
 
@@ -34,7 +34,7 @@ Weitere Informationen finden Sie unter {[}Adobe Experience Platform-Quell-Connec
 
 Beim Erstellen eines Quell-Connectors für Quantum-Metrikdaten wird automatisch ein Datensatz in Adobe Experience Platform erstellt. Fügen Sie diesen Datensatz zu einer neuen oder vorhandenen [Verbindung](/help/connections/overview.md) in Customer Journey Analytics hinzu.
 
-1. Melden Sie sich bei &quot;[.adobe.com“ ](https://experience.adobe.com).
+1. Melden Sie sich bei &quot;[.adobe.com“ &#x200B;](https://experience.adobe.com).
 1. Navigieren Sie zu Customer Journey Analytics und wählen **[!UICONTROL Verbindungen]** optional unter **[!UICONTROL Daten-Management]** im oberen Menü aus.
 1. Geben Sie der Verbindung einen Namen und fügen Sie den Quantum-Metrik-Datensatz zur Verbindung hinzu.
 1. Klicken Sie auf **[!UICONTROL Speichern]**.
@@ -46,7 +46,7 @@ Beim Erstellen eines Quell-Connectors für Quantum-Metrikdaten wird automatisch 
 
 Erstellen Sie eine [Datenansicht](/help/data-views/data-views.md) um Dimensions- und Metrikeinstellungen zu konfigurieren.
 
-1. Melden Sie sich bei &quot;[.adobe.com“ ](https://experience.adobe.com).
+1. Melden Sie sich bei &quot;[.adobe.com“ &#x200B;](https://experience.adobe.com).
 1. Navigieren Sie zu Customer Journey Analytics und wählen **[!UICONTROL Datenansichten]** optional unter **[!UICONTROL Daten-Management]** im oberen Menü aus.
 1. Wählen Sie die gewünschte Datenansicht aus oder erstellen Sie eine Datenansicht.
 1. Suchen Sie die gewünschten Quantenmetrik -Dimensionen und -Metriken in der Liste Schemafelder auf der rechten Seite und ziehen Sie sie in den Bereich Dimensionen und Metriken in der Mitte.
@@ -56,7 +56,7 @@ Erstellen Sie eine [Datenansicht](/help/data-views/data-views.md) um Dimensions-
 
 Nachdem die Daten nun in Customer Journey Analytics verfügbar sind, können Sie mit dem Reporting zu Daten beginnen.
 
-1. Melden Sie sich bei &quot;[.adobe.com“ ](https://experience.adobe.com).
+1. Melden Sie sich bei &quot;[.adobe.com“ &#x200B;](https://experience.adobe.com).
 1. Navigieren Sie zu Customer Journey Analytics und wählen Sie **[!UICONTROL Workspace]** im oberen Menü.
 1. Wählen Sie ein vorhandenes Projekt aus oder erstellen Sie ein Projekt.
 1. Ziehen Sie eine beliebige Quantenmetrikdimension oder -metrik auf die Workspace-Arbeitsfläche, um die Daten zu analysieren.

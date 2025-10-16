@@ -44,7 +44,7 @@ Eine Analytics-Scorecard stellt wie nachfolgend gezeigt wichtige Datenvisualisie
 
 Wenn Sie diese Scorecard kuratieren, können Sie mit dem Scorecard Builder festlegen, welche Kacheln auf der Scorecard für die Führungskraft angezeigt werden. Sie können auch konfigurieren, wie die detaillierten Ansichten bzw. Aufschlüsselungen angepasst werden können, nachdem auf die Kacheln getippt wird. So sieht die Scorecard Builder-Benutzeroberfläche aus:
 
-![Scorecard Builder mit dem Fenster Neue mobile Scorecard. ](assets/scorecard_builder.png)
+![Scorecard Builder mit dem Fenster Neue mobile Scorecard. &#x200B;](assets/scorecard_builder.png)
 
 Gehen Sie zur Erstellung der Scorecard wie folgt vor:
 
@@ -79,7 +79,7 @@ So implementieren Sie die Scorecard-Vorlage:
 
 1. Um Ihrer Scorecard eine neue Kachel hinzuzufügen, ziehen Sie eine Metrik aus dem linken Panel und legen Sie sie im Bereich **[!UICONTROL Metriken hierhin ziehen und ablegen]** ab. Sie können auch eine Metrik zwischen zwei Kacheln einfügen, indem Sie einen ähnlichen Workflow verwenden.
 
-   ![Fenster Neue mobile Scorecard mit einem Pfeil, der auf eine Metrik (Neue KPI) zeigt, die auf der Scorecard abgelegt wurde. ](assets/build_list.png)
+   ![Fenster Neue mobile Scorecard mit einem Pfeil, der auf eine Metrik (Neue KPI) zeigt, die auf der Scorecard abgelegt wurde. &#x200B;](assets/build_list.png)
 
 
 1. Von jeder Kachel aus können Sie auf eine Detailansicht zugreifen, die zusätzliche Informationen über die Metrik anzeigt, wie z. B. die obersten Elemente in einer Liste verwandter Dimensionen.

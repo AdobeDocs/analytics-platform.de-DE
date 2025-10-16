@@ -85,7 +85,7 @@ Die Kundenbindung misst, wie viele Benutzer nach der ersten Akquise und Aktivier
 
 Mit den folgenden Funktionen in Customer Journey Analytics können Sie die Kundenbindung und Abwanderung effektiv verfolgen:
 
-* [Geführte Analyse: ](/help/guided-analysis/types/retention.md)&#x200B;
+* [Geführte Analyse: &#x200B;](/help/guided-analysis/types/retention.md)&#x200B;
 * [Geführte Analyse: Aktives Wachstum](/help/guided-analysis/types/active-growth.md)
 * [Geführte Analyse: Nettowachstum](/help/guided-analysis/types/net-growth.md)
 * [Kohortentabelle&#x200B;](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md)
@@ -98,7 +98,7 @@ Mit den folgenden Funktionen in Experience Cloud können Sie effektiv auf Einbli
 
 * [Erstellen und Veröffentlichen von Zielgruppen](/help/components/audiences/publish.md)&#x200B; zur Aktivierung über Customer Journey Analytics
 * Zielgruppen über Experience Cloud-Produkte aktivieren:
-   * [Führen Sie ](https://experienceleague.adobe.com/de/docs/journey-optimizer/using/content-management/content-experiment/get-started-experiment) in AJO und Adobe Target aus und messen Sie mithilfe des Bedienfelds [Experimentieren“ die Wirkung von Varianten in Customer Journey Analytics](/help/analysis-workspace/c-panels/experimentation.md)
+   * [Führen Sie &#x200B;](https://experienceleague.adobe.com/de/docs/journey-optimizer/using/content-management/content-experiment/get-started-experiment) in AJO und Adobe Target aus und messen Sie mithilfe des Bedienfelds [Experimentieren“ die Wirkung von Varianten in Customer Journey Analytics](/help/analysis-workspace/c-panels/experimentation.md)
    * [Bereitstellen von In-App-Interaktionen](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/in-app/get-started-in-app) für Benutzende in AJO
 * [Aktivieren von Zielgruppen](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/activation-overview) für externe Ziele mit Adobe Real-Time CDP&#x200B;
 
@@ -112,4 +112,4 @@ Mit den folgenden Funktionen in Customer Journey Analytics können Sie Einblicke
 
 * [Teilen](/help/analysis-workspace/curate-share/share-projects.md) Geführte Analyseansichten, die auf bestimmte Geschäftsfragen zugeschnitten sind, sodass Verbraucher ihre nächste Frage selbst beantworten können
 * Kombinieren Sie geführte Analysen, Bedienfelder und Visualisierungen in einem umfassenden Dashboard in [Analysis Workspace](/help/analysis-workspace/home.md)
-* Erstellen Sie [ mobile Scorecard ](/help/mobile-app/home.md) wichtigen Produkteinblicken für Führungskräfte und andere Verbraucher unterwegs
+* Erstellen Sie [&#x200B; mobile Scorecard &#x200B;](/help/mobile-app/home.md) wichtigen Produkteinblicken für Führungskräfte und andere Verbraucher unterwegs

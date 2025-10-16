@@ -24,7 +24,7 @@ Die Auswirkungen auf die Feiertage werden berücksichtigt, wenn mehrjährige Dat
 * Martin Luther King Day
 * Tag der Präsidenten
 * Gedenktag
-* 4. Juli
+* &#x200B;4. Juli
 * Erntedankfest
 * Black Friday
 * Cyber Monday

@@ -52,7 +52,7 @@ Vollständige Liste der Standardmetriken in Customer Journey Analytics:
 
 ## Erstellen von berechneten Metriken
 
-Mit berechneten Metriken können Sie einfach konfigurieren, wie sich Metriken zueinander verhalten, indem Sie einfache Operatoren oder statistische Funktionen verwenden. Weitere Informationen finden [ unter ](/help/components/calc-metrics/calc-metr-overview.md) Metriken - Übersicht .
+Mit berechneten Metriken können Sie einfach konfigurieren, wie sich Metriken zueinander verhalten, indem Sie einfache Operatoren oder statistische Funktionen verwenden. Weitere Informationen finden [&#x200B; unter &#x200B;](/help/components/calc-metrics/calc-metr-overview.md) Metriken - Übersicht .
 
 Es gibt mehrere Möglichkeiten, berechnete Metriken zu erstellen. Die gewählte Methode bestimmt, ob die berechnete Metrik in der Komponentenliste für alle Projekte verfügbar ist oder nur in dem Projekt, in dem sie erstellt wurde.
 
