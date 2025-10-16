@@ -31,7 +31,7 @@ Die Analyse ![PeopleGroup](/help/assets/icons/PeopleGroup.svg) **[!UICONTROL Akt
 Alle aktiven Benutzenden (Neu + Wiederkehrend + Rückkehrend) werden über der horizontalen Achse in einem hellen Blaugrün angezeigt, während alle inaktiven Benutzenden unter der horizontalen Achse in Orange angezeigt werden.
 
 
->[!VIDEO](https://video.tv.adobe.com/v/3421667/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3423394/?captions=ger&quality=12&learn=on)
 
 ## Anwendungsfälle
 

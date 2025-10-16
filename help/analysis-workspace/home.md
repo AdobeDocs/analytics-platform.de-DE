@@ -19,7 +19,7 @@ Mit Analysis Workspace können Sie schnell Analysen erstellen, um Erkenntnisse z
 
 >[!BEGINSHADEBOX]
 
-Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Analysis Workspace – Übersicht](https://video.tv.adobe.com/v/26266/?quality=12&learn=on){target="_blank"} finden Sie ein Demovideo.
+Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Analysis Workspace – Übersicht](https://video.tv.adobe.com/v/35525/?captions=ger&quality=12&learn=on){target="_blank"} finden Sie ein Demovideo.
 
 {{videoaa}}
 
