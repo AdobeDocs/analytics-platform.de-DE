@@ -20,7 +20,7 @@ ht-degree: 99%
 
 + [Handbuch zu Adobe Customer Journey Analytics](../getting-started/cja-landing.md)
 
-+ Versionshinweise  {#releases}
++ Versionshinweise {#releases}
    + [Neueste Version](../release-notes/latest.md)
    + [Vorab veröffentlichte Versionshinweise](../release-notes/pre-release-notes.md)
    + [Versionen 2025](../release-notes/2025.md)
@@ -202,7 +202,7 @@ ht-degree: 99%
       + Freiformtabelle {#freeform-table}
          + [Überblick](../analysis-workspace/visualizations/freeform-table/freeform-table.md)
          + [Erstellen von Hyperlinks](/help/analysis-workspace/visualizations/freeform-table/freeform-table-hyperlinks.md)
-         + [Trend-Daten anzeigen](/help/analysis-workspace/visualizations/freeform-table/freeform-table-trended-data.md)
+         + [Anzeigen von Trend-Daten](/help/analysis-workspace/visualizations/freeform-table/freeform-table-trended-data.md)
          + [Filtern und Sortieren](../analysis-workspace/visualizations/freeform-table/filter-and-sort.md)
          + [Gesamt](../analysis-workspace/visualizations/freeform-table/workspace-totals.md)
          + Spalten- und Zeileneinstellungen {#column-row-settings}
@@ -490,7 +490,7 @@ ht-degree: 99%
       + [Verwenden von Zusammenfassungsdaten](/help/use-cases/data-views/summary-data.md)
       + [Anwendungsfälle für BI-Erweiterungen](/help/use-cases/data-views/bi-extension-usecases.md)
    + Abgeleitete Felder {#derived-fields}
-      + [Bericht zu LLM und KI-generiertem Traffic](/help/use-cases/ai-traffic.md)
+      + [Bericht zu LLM- und KI-generiertem Traffic](/help/use-cases/ai-traffic.md)
       + [Bericht zu Zielen](../use-cases/goals-using-derived-fields.md)
    + Produktanalyse {#product-analysis}
       + [Produktanalyse](/help/use-cases/product-analysis.md)
