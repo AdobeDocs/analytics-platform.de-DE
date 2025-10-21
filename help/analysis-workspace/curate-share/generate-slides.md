@@ -142,7 +142,7 @@ Daten-Storys bestehen aus einer Folien-Zusammenfassung für Führungskräfte, De
 
 1. Wählen Sie **[!UICONTROL PPT exportieren]**.
 
-1. (Empfohlen) Überprüfen und bearbeiten Sie die .ppt-Präsentation und nehmen Sie alle erforderlichen Änderungen vor, wie im folgenden Abschnitt beschrieben (Bearbeiten [ Folien aus einer zuvor generierten Präsentation](#edit-slides-from-a-previously-generated-presentation).
+1. (Empfohlen) Überprüfen und bearbeiten Sie die .ppt-Präsentation und nehmen Sie alle erforderlichen Änderungen vor, wie im folgenden Abschnitt beschrieben (Bearbeiten [&#x200B; Folien aus einer zuvor generierten Präsentation](#edit-slides-from-a-previously-generated-presentation).
 
 ## Bearbeiten von Folien aus einer zuvor generierten Präsentation
 
@@ -161,9 +161,9 @@ Daten-Storys bestehen aus einer Folien-Zusammenfassung für Führungskräfte, De
 
 Produktprofil-Admins, deren Organisationen über die Lizenzierung zum Generieren von Folien verfügen, können den Zugriff bei Bedarf deaktivieren.
 
-In der [!UICONTROL Adobe Admin Console] bestimmt die Berechtigung [!UICONTROL Reporting-]**[!UICONTROL Data]** storytelling) den Zugriff auf diese Funktion. Ein [Produktprofil-Administrator](https://helpx.adobe.com/de/enterprise/using/manage-product-profiles.html) muss diese Schritte in der [!UICONTROL Admin Console ausführen] wenn er den Zugriff deaktivieren möchte:
+In der [!UICONTROL Adobe Admin Console] bestimmt die Berechtigung [!UICONTROL Reporting-]&#x200B;**[!UICONTROL Data]** storytelling) den Zugriff auf diese Funktion. Ein [Produktprofil-Administrator](https://helpx.adobe.com/de/enterprise/using/manage-product-profiles.html) muss diese Schritte in der [!UICONTROL Admin Console ausführen] wenn er den Zugriff deaktivieren möchte:
 1. Navigieren Sie zu **[!UICONTROL Admin Console]** > **[!UICONTROL Produkte und Dienste]** > **[!UICONTROL Customer Journey Analytics]** > **[!UICONTROL Produktprofile]**.
-1. Wählen Sie den Titel des Produktprofils aus, für das Sie Zugriff auf &quot;[!UICONTROL  storytelling&quot; ] möchten.
+1. Wählen Sie den Titel des Produktprofils aus, für das Sie Zugriff auf &quot;[!UICONTROL &#x200B; storytelling&quot; &#x200B;] möchten.
 1. Wählen Sie im entsprechenden Produktprofil die Option **[!UICONTROL Berechtigungen]** aus.
 1. Wählen Sie ![Bearbeiten](/help/assets/icons/Edit.svg) aus, um **[!UICONTROL Reporting-Tools]** zu bearbeiten.
 1. Wählen Sie ![AddCircle](/help/assets/icons/RemoveCircle.svg) aus, um **Data storytelling** aus den **[!UICONTROL Included permission items]**.
