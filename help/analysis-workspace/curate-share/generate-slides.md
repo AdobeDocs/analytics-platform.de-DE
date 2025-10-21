@@ -6,9 +6,9 @@ feature: Curate and Share
 role: User
 hide: true
 hidefromtoc: true
-source-git-commit: 9e23382800326440ed2a583e80029c9f27bb2494
+source-git-commit: f6e64e850b8c416817b76697d869c10adb9b544b
 workflow-type: tm+mt
-source-wordcount: '1134'
+source-wordcount: '1177'
 ht-degree: 4%
 
 ---
@@ -17,21 +17,27 @@ ht-degree: 4%
 
 Benutzende mit [den erforderlichen Berechtigungen](#permission-requirements-to-generate-slides) können automatisch PPTX-Präsentationen aus Analysis Workspace-Projekten generieren. Beim Generieren dieser Folienpräsentationen erstellt Customer Journey Analytics automatisch eine Story aus Ihren Daten, indem wichtige Erkenntnisse identifiziert und in Stakeholder-fähige Folien umgewandelt werden.
 
-Diese Funktion reduziert den Zeit- und Arbeitsaufwand für das Aufdecken von Ergebnissen aus Ihren Workspace-Projekten und ermöglicht es Ihnen, schnell Erzählungen für Führungskräfte zu erstellen und den Stakeholdern geschäftliche Auswirkungen zu kommunizieren.
-
-Diese automatisch generierte Daten-Story ermöglicht es Analysten, sich auf die Datenexploration zu konzentrieren, während Customer Journey Analytics die Ergebnisse des Analysten für die Verwendung durch Stakeholder kuratiert und formatiert.
+Diese automatisch generierte Daten-Story reduziert den Zeit-, Arbeits- und Expertenaufwand, der zum Aufdecken von Ergebnissen aus einem Workspace-Projekt erforderlich ist. Analysten können sich stärker auf die Datenexploration konzentrieren und es Customer Journey Analytics gleichzeitig ermöglichen, die Erzählung für Führungskräfte zu erstellen und zu formatieren und die geschäftlichen Auswirkungen für die Stakeholder zu kommunizieren.
 
 ## Verstehen von Daten-Storys in Folienpräsentationen
 
-Analysis Workspace verwendet generative KI zum Erstellen von Daten-Storys in Folienpräsentationen. Diese Daten-Storys ergänzen eine Analyse für ein bestimmtes Workspace-Projekt, indem sie zusätzlichen Kontext bieten, wichtige Highlights aufzeigen und Ideen für die nächsten Schritte geben. Rufen Sie versteckte Trends, Anomalien, beitragende Faktoren, wichtige Treiber auf
+Analysis Workspace verwendet generative KI , um eine Erzählung zu erstellen, die auf Ihren Workspace-Daten in einem Folienpräsentationsformat basiert.
+
+In den folgenden Abschnitten werden der zusätzliche Wert beschrieben, den Daten-Storys bieten, die erforderlichen Elemente eines Projekts, die zur Gestaltung der Erzählung beitragen, und die Schlüsselelemente, die in jeder Präsentationsausgabe enthalten sind.
 
 ### Zusätzlicher Nutzen durch Daten-Storys
+
+Daten-Storys bieten Mehrwert und Erkenntnisse für ein Workspace-Projekt, indem sie Daten für Benutzende zugänglich machen, die weniger Erfahrung mit der Datenanalyse haben.
 
 Datenverläufe ergänzen eine Analyse für ein bestimmtes Workspace-Projekt durch:
 
 * Bereitstellen von zusätzlichem Kontext
 
 * Hervorheben wichtiger Erkenntnisse
+
+* Anleitung dazu, ob Daten in einem bestimmten Kontext gut oder schlecht sind
+
+* Bewertung, ob bestimmte Variablen unterbewertet oder überbewertet sind.
 
 * Hinweisen auf verborgene Trends, Anomalien und andere beitragende Faktoren
 
@@ -136,7 +142,7 @@ Daten-Storys bestehen aus einer Folien-Zusammenfassung für Führungskräfte, De
 
 1. Wählen Sie **[!UICONTROL PPT exportieren]**.
 
-1. (Empfohlen) Überprüfen und bearbeiten Sie die .ppt-Präsentation und nehmen Sie alle erforderlichen Änderungen vor, wie im folgenden Abschnitt beschrieben (Bearbeiten [&#x200B; Folien aus einer zuvor generierten Präsentation](#edit-slides-from-a-previously-generated-presentation).
+1. (Empfohlen) Überprüfen und bearbeiten Sie die .ppt-Präsentation und nehmen Sie alle erforderlichen Änderungen vor, wie im folgenden Abschnitt beschrieben (Bearbeiten [ Folien aus einer zuvor generierten Präsentation](#edit-slides-from-a-previously-generated-presentation).
 
 ## Bearbeiten von Folien aus einer zuvor generierten Präsentation
 
@@ -155,9 +161,9 @@ Daten-Storys bestehen aus einer Folien-Zusammenfassung für Führungskräfte, De
 
 Produktprofil-Admins, deren Organisationen über die Lizenzierung zum Generieren von Folien verfügen, können den Zugriff bei Bedarf deaktivieren.
 
-In der [!UICONTROL Adobe Admin Console] bestimmt die Berechtigung [!UICONTROL Reporting-]&#x200B;**[!UICONTROL Data]** storytelling) den Zugriff auf diese Funktion. Ein [Produktprofil-Administrator](https://helpx.adobe.com/de/enterprise/using/manage-product-profiles.html) muss diese Schritte in der [!UICONTROL Admin Console ausführen] wenn er den Zugriff deaktivieren möchte:
+In der [!UICONTROL Adobe Admin Console] bestimmt die Berechtigung [!UICONTROL Reporting-]**[!UICONTROL Data]** storytelling) den Zugriff auf diese Funktion. Ein [Produktprofil-Administrator](https://helpx.adobe.com/de/enterprise/using/manage-product-profiles.html) muss diese Schritte in der [!UICONTROL Admin Console ausführen] wenn er den Zugriff deaktivieren möchte:
 1. Navigieren Sie zu **[!UICONTROL Admin Console]** > **[!UICONTROL Produkte und Dienste]** > **[!UICONTROL Customer Journey Analytics]** > **[!UICONTROL Produktprofile]**.
-1. Wählen Sie den Titel des Produktprofils aus, für das Sie Zugriff auf &quot;[!UICONTROL &#x200B; storytelling&quot; &#x200B;] möchten.
+1. Wählen Sie den Titel des Produktprofils aus, für das Sie Zugriff auf &quot;[!UICONTROL  storytelling&quot; ] möchten.
 1. Wählen Sie im entsprechenden Produktprofil die Option **[!UICONTROL Berechtigungen]** aus.
 1. Wählen Sie ![Bearbeiten](/help/assets/icons/Edit.svg) aus, um **[!UICONTROL Reporting-Tools]** zu bearbeiten.
 1. Wählen Sie ![AddCircle](/help/assets/icons/RemoveCircle.svg) aus, um **Data storytelling** aus den **[!UICONTROL Included permission items]**.
