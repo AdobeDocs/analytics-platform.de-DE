@@ -5,9 +5,9 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: d35f8615-66f5-4823-b0b8-433852246dd2
-source-git-commit: 105b235c1a4791fd59cf65ae7f543a5fc08fc55d
+source-git-commit: 2a43c4b1d4154c6127b485c512009a46411da049
 workflow-type: tm+mt
-source-wordcount: '3281'
+source-wordcount: '3290'
 ht-degree: 99%
 
 ---
@@ -68,6 +68,8 @@ Nachdem Sie mit dem Experience Platform-Web-SDK genügend historische Daten gesi
 Die folgenden Schritte beschreiben den empfohlenen Prozess für das Upgrade von Adobe Analytics auf Customer Journey Analytics.
 
 Jeder Schritt bietet eine allgemeine Erklärung eines detaillierteren Prozesses. Folgen Sie dem Link für jeden Schritt und führen Sie die zugehörigen Aufgaben aus. Kehren Sie dann zu dieser Seite zurück und fahren Sie mit dem nächsten Schritt im Prozess fort.
+
+1. [Bereiten Sie Ihr Unternehmen auf die Aktualisierung auf Customer Journey Analytics vor](/help/getting-started/cja-upgrade/cja-upgrade-org-readiness.md).
 
 1. [Planen Sie Ihre XDM-Schemaarchitektur](/help/getting-started/cja-upgrade/cja-upgrade-schema-architect.md){target="_blank"}.
 
