@@ -4,9 +4,9 @@ title: Übersicht über das Echtzeit-Reporting
 feature: Real-time Reporting
 role: User
 exl-id: 12fbb760-936d-4e30-958f-764febca5ae7
-source-git-commit: d8ff5191ea96b8871f6aaba1fc28211c22a13e0d
+source-git-commit: 0e5a64e78e5a471f8b7c9fc32fdbae2b2e70230a
 workflow-type: tm+mt
-source-wordcount: '722'
+source-wordcount: '780'
 ht-degree: 7%
 
 ---
@@ -14,8 +14,6 @@ ht-degree: 7%
 # Übersicht über die Echtzeitberichterstellung
 
 Echtzeit-Reporting in Customer Journey Analytics zeigt Daten und Visualisierungen in einem oder mehreren Panels in Analysis Workspace in Echtzeit an und aktualisiert diese.
-
-{{release-limited-testing}}
 
 {{ultimate-package}}
 
@@ -59,12 +57,13 @@ Die Art und Weise, wie Sie Daten erfassen, bestimmt die Latenz von Echtzeitberic
 | 3 | Adobe Analytics-Quell-Connector | 17 Minuten | 105 Minuten |
 | 4 | Andere Quell-Connectoren in die Quell-Connectoren (einschließlich Batch-Daten) | 25 Stunden | 25 Stunden |
 
+Wenn es zu einer Unterbrechung von Services über eine halbe Stunde kommt, werden Echtzeitdaten nicht mit Daten aufgestockt, wenn die Probleme behoben sind. Stattdessen werden in Echtzeit-Berichten Echtzeitdaten von dem Zeitpunkt erfasst, an dem die Services wieder funktionieren. Während dieses Zeitraums gehen keine Daten verloren und sind weiterhin mit den standardmäßigen Berichtsfunktionen außerhalb des Echtzeit-Reportings verfügbar.
 
 ## Einschränkungen
 
 Beachten Sie die folgenden Einschränkungen für das Echtzeit-Reporting:
 
-* Echtzeitberichte berichten nur über Daten, die über einen rollierenden Zeitraum von 24 Stunden verfügbar sind. Daten, die mehr sind als   24 Stunden alt ist nicht für Echtzeit-Reporting verfügbar. Sobald die [Echtzeit-Aktualisierung](use-real-time.md) für einen Bericht deaktiviert oder automatisch deaktiviert wurde, sind alle relevanten Daten erneut aus dem [konsolidierten Datensatz“ verfügbar, &#x200B;](/help/connections/combined-dataset.md) normalerweise für das Reporting in Customer Journey Analytics verwendet wird.
+* Echtzeitberichte berichten nur über Daten, die über einen rollierenden Zeitraum von 24 Stunden verfügbar sind. Daten, die mehr sind als   24 Stunden alt ist nicht für Echtzeit-Reporting verfügbar. Sobald die [Echtzeit-Aktualisierung](use-real-time.md) für einen Bericht deaktiviert oder automatisch deaktiviert wurde, sind alle relevanten Daten erneut aus dem [konsolidierten Datensatz“ verfügbar, ](/help/connections/combined-dataset.md) normalerweise für das Reporting in Customer Journey Analytics verwendet wird.
 * Attribution, Segmentierung, berechnete Metriken und mehr arbeiten nur mit den Daten, die innerhalb des rollierenden Zeitraums von 24 Stunden verfügbar sind. Ein Segment *Besucher wiederholen* enthält beispielsweise nur sehr wenige Personen in einem Echtzeitbericht, da der Bericht nur Personen enthält, die in den letzten 24 Stunden mehrmals besucht haben. Eine ähnliche Einschränkung gilt, wenn Sie einen Echtzeitbericht über Personen erstellen, die zuvor auf eine Kampagne geklickt haben, die nicht mehr aktiv ist.
 * Echtzeitberichte eignen sich am besten für Daten auf Ereignis- und Sitzungsebene. Bei der Verwendung von Echtzeitberichten für Daten auf Personenebene sollten Sie daher vorsichtig sein. Da für Echtzeitberichte nur Ereignisse aus dem rollierenden 24-Stunden-Zeitraum verfügbar sind, ist der Ereignisverlauf einer Person auch auf dieses Fenster beschränkt. Berücksichtigen Sie bei der Auswahl einer Dimension und (berechneter) Metriken die Präferenz für Daten auf Ereignis- und Sitzungsebene. Und wenn Sie Funktionen wie Aufschlüsselungen, Nächstes oder Vorheriges und mehr in Ihrem Bedienfeld für die Echtzeit-Aktualisierung verwenden.
 * Zuordnung und Echtzeitberichte können nicht kombiniert werden. Beim Echtzeit-Reporting geht es um Daten auf Ereignis- und Sitzungsebene, und es ist weniger relevant für personenbasierte Daten.
