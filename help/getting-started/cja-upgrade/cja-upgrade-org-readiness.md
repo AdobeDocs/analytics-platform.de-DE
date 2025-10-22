@@ -140,9 +140,9 @@ Identifizieren Sie Champions in Ihrem gesamten Unternehmen. Diese Champions soll
 
    * [Customer Journey Analytics-Tutorials](https://experienceleague.adobe.com/de/docs/customer-journey-analytics-learn/tutorials/overview)
 
-   * [Was ist Customer Journey Analytics?](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/cja-basics/what-is-customer-journey-analytics)
+   * [Was ist Customer Journey Analytics?](https://experienceleague.adobe.com/de/docs/customer-journey-analytics-learn/tutorials/cja-basics/what-is-customer-journey-analytics)
 
-   * [Einführung in Customer Journey Analytics](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/cja-basics/understanding-customer-journey-analytics)
+   * [Einführung in Customer Journey Analytics](https://experienceleague.adobe.com/de/docs/customer-journey-analytics-learn/tutorials/cja-basics/understanding-customer-journey-analytics)
 
    * [Unterstützung der Customer Journey Analytics-Funktionen](/help/getting-started/aa-vs-cja/cja-aa.md)
 
