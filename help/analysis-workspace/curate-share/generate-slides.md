@@ -6,24 +6,24 @@ feature: Curate and Share
 role: User
 hide: true
 hidefromtoc: true
-source-git-commit: f6e64e850b8c416817b76697d869c10adb9b544b
+source-git-commit: 4d7ecc3eaba93424d43d0f4c312aeec78016395f
 workflow-type: tm+mt
-source-wordcount: '1177'
+source-wordcount: '1494'
 ht-degree: 4%
 
 ---
 
 # Data storytelling: Folien-Präsentationen aus Workspace-Berichten generieren {#generate-powerpoint}
 
-Benutzende mit [den erforderlichen Berechtigungen](#permission-requirements-to-generate-slides) können automatisch PPTX-Präsentationen aus Analysis Workspace-Projekten generieren. Beim Generieren dieser Folienpräsentationen erstellt Customer Journey Analytics automatisch eine Story aus Ihren Daten, indem wichtige Erkenntnisse identifiziert und in Stakeholder-fähige Folien umgewandelt werden.
+Benutzende mit [den erforderlichen Berechtigungen](#permission-requirements-to-generate-slides) können automatisch PPTX-Präsentationen basierend auf Analysis Workspace-Projekten generieren. Beim Generieren dieser Folienpräsentationen erstellt Customer Journey Analytics automatisch eine Story aus Ihren Daten, indem wichtige Erkenntnisse identifiziert und in Stakeholder-fähige Folien umgewandelt werden.
 
-Diese automatisch generierte Daten-Story reduziert den Zeit-, Arbeits- und Expertenaufwand, der zum Aufdecken von Ergebnissen aus einem Workspace-Projekt erforderlich ist. Analysten können sich stärker auf die Datenexploration konzentrieren und es Customer Journey Analytics gleichzeitig ermöglichen, die Erzählung für Führungskräfte zu erstellen und zu formatieren und die geschäftlichen Auswirkungen für die Stakeholder zu kommunizieren.
+Diese generierte Daten-Story reduziert den Zeit-, Arbeits- und Expertenaufwand, der zum Aufdecken von Ergebnissen aus einem Workspace-Projekt erforderlich ist. Analysten können sich stärker auf die Datenexploration konzentrieren und es Customer Journey Analytics gleichzeitig ermöglichen, die Erzählung für Führungskräfte zu erstellen und zu formatieren und die geschäftlichen Auswirkungen für die Stakeholder zu kommunizieren.
 
 ## Verstehen von Daten-Storys in Folienpräsentationen
 
-Analysis Workspace verwendet generative KI , um eine Erzählung zu erstellen, die auf Ihren Workspace-Daten in einem Folienpräsentationsformat basiert.
+Eine **Daten-Story** ist die Erzählung, die Customer Journey Analytics basierend auf Ihren Workspace-Daten erstellt. Mithilfe der generativen KI identifiziert Customer Journey Analytics wichtige Themen in den Bedienfeldern und Visualisierungen, die Sie in Ihre Folienpräsentation aufnehmen möchten. Es generiert Einblicke und durchläuft dann einen Deduplizierungs- und Bewertungsprozess, um eine Untergruppe von Einblicken zu identifizieren, die zur Erstellung der Daten-Story verwendet werden können.
 
-In den folgenden Abschnitten werden der zusätzliche Wert beschrieben, den Daten-Storys bieten, die erforderlichen Elemente eines Projekts, die zur Gestaltung der Erzählung beitragen, und die Schlüsselelemente, die in jeder Präsentationsausgabe enthalten sind.
+In den folgenden Abschnitten werden der zusätzliche Wert beschrieben, den Daten-Storys bieten, die erforderlichen Elemente eines Projekts, die zur Gestaltung der Erzählung beitragen, und die Schlüsselelemente, die in der PPTX-Präsentationsausgabe enthalten sind.
 
 ### Zusätzlicher Nutzen durch Daten-Storys
 
@@ -37,11 +37,9 @@ Datenverläufe ergänzen eine Analyse für ein bestimmtes Workspace-Projekt durc
 
 * Anleitung dazu, ob Daten in einem bestimmten Kontext gut oder schlecht sind
 
-* Bewertung, ob bestimmte Variablen unterbewertet oder überbewertet sind.
+* Bewertung, ob bestimmte Variablen zu niedrig oder zu hoch bewertet werden
 
 * Hinweisen auf verborgene Trends, Anomalien und andere beitragende Faktoren
-
-* Schlüsseltreiber identifizieren
 
 * Ideen für die nächsten Schritte
 
@@ -51,7 +49,7 @@ Analysis Workspace erstellt Daten-Storys unter Berücksichtigung der folgenden P
 
 * Beziehungen zwischen Dimensionen und Metriken
 
-* Die einzelnen Elemente, die die Grundlage der Analyse bilden: Dimensionen, Metriken, Filter, Freiformtabellenstruktur, Visualisierungen und Bedienfelder
+* Die einzelnen Elemente, die die Grundlage der Analyse bilden (Dimensionen, Metriken, Filter, Freiformtabellen-Struktur, Visualisierungen und Bedienfelder)
 
 * Die den Bedienfeldern, Tabellen und Visualisierungen gegebenen Namen
 
@@ -61,9 +59,11 @@ Analysis Workspace erstellt Daten-Storys unter Berücksichtigung der folgenden P
 
 ### Präsentationselemente einer Daten-Story
 
-Daten-Storys bestehen aus einer Folien-Zusammenfassung für Führungskräfte, Detailfolien und Abschnittstrennelementen.
+Daten-Storys bestehen aus einer Titelfolie, einer Übersichtsfolie, Detailfolien und Abschnittstrennelementen.
 
-**Zusammenfassung:** Priorisiert die wertvollsten Einblicke und erstellt eine übergreifende Geschichte mit einer Länge von 1 bis 5 Sätzen.
+**Titelfolie:** Zeigt den Titel und den Namen des Referenten an, den Sie angeben. Informationen finden sich in den Sprechernotizen, die den Prozess beschreiben, wie das Thema und die Erzählung erstellt wurden, wie viele Einblicke generiert und verwendet wurden und welche Bedienfelder verwendet wurden.
+
+**Zusammenfassung:** priorisiert die wertvollsten Einblicke und erstellt eine übergreifende Geschichte, die zwischen 1 und 5 Sätzen lang ist.
 
 **Detailfolien:** Erzeugt Einblicke zu allen Tabellen, Bereichen und Visualisierungen in einem Workspace-Projekt. Einblicke bestehen aus Trends, Saisonalen, Anomalien und Korrelationen.
 
@@ -103,12 +103,12 @@ Daten-Storys bestehen aus einer Folien-Zusammenfassung für Führungskräfte, De
    |---------|----------|
    | **[!UICONTROL Titeltitel]** | Geben Sie einen Titel für die Präsentation an. Dieser Titel wird auf der Titelfolie der Präsentation angezeigt. |
    | **[!UICONTROL Name des Referenten einschließen]** | Geben Sie den Namen des Referenten an. Dieser Name wird auf der Titelfolie der Präsentation unter dem Titeltitel angezeigt. |
-   | **[!UICONTROL Bedienfelder und einzuschließende Visualisierungen]** | Wählen Sie die Bedienfelder und Visualisierungen aus, die Sie in die Präsentation aufnehmen möchten. Sie können bis zu 50 Visualisierungen einschließen.<p>Die meisten Bedienfelder und Visualisierungen werden unterstützt. Informationen zu nicht unterstützten Bereichen und Visualisierungen finden Sie unter [Nicht unterstützte Projektelemente und -funktionen](#unsupported-project-elements-and-features).</p> |
-   | **[!UICONTROL Bedienfeld- und Visualisierungsbeschreibungen]** | |
-   | **[!UICONTROL Anmerkungen]** | |
-   | **[!UICONTROL Komponenten hervorheben]** | Wählen Sie aus Ihren Visualisierungen, die Sie in der Präsentation hervorheben möchten, bis zu 5 Metriken und 5 Dimensionen aus.<p>Wenn keine Hervorhebung angewendet wird, werden Komponenten in Präsentationen wie folgt angezeigt:<ul><li>**Metriken und Dimensionen:** Kursiv</li><li>**Dimension-Elemente:** Anführungszeichen</li></ul></p><p>Wenn die Hervorhebung angewendet wird, werden Komponenten in Präsentationen wie folgt angezeigt:</p><ul><li>**Metriken und Dimensionen:** und fett</li><li>**Dimension-Elemente:** Fett, wenn die entsprechende Dimension hervorgehoben wird<p>Eine Farbe wird auch auf das Dimensionselement angewendet, wenn das Dimensionselement im Diagramm hervorgehoben wird.</p></li></ul> |
+   | **[!UICONTROL Bedienfelder und einzuschließende Visualisierungen]** | Wählen Sie die Bedienfelder und Visualisierungen aus, die Sie in die Präsentation einbeziehen möchten. Sie können bis zu 50 Visualisierungen einschließen.<p>Die meisten Bedienfelder und Visualisierungen werden unterstützt. Informationen zu nicht unterstützten Bereichen und Visualisierungen finden Sie unter [Nicht unterstützte Projektelemente und -funktionen](#unsupported-project-elements-and-features).</p> |
+   | **[!UICONTROL Bedienfeld- und Visualisierungsbeschreibungen]** | Wählen Sie aus, ob Bedienfeld- und Visualisierungsbeschreibungen in die generierte Folienpräsentation aufgenommen werden sollen. |
+   | **[!UICONTROL Anmerkungen]** | Wählen Sie aus, ob Anmerkungen in der erstellten Folienpräsentation sichtbar sein sollen. Weitere Informationen zu Anmerkungen finden Sie unter [Anmerkungen – Überblick](/help/components/annotations/overview.md). |
+   | **[!UICONTROL Komponenten hervorheben]** | Wählen Sie aus Ihren Visualisierungen, die Sie in der Präsentation hervorheben möchten, bis zu 5 Metriken und 5 Dimensionen aus. Die von Ihnen ausgewählten Komponenten werden höher eingestuft und erhalten mehr Gewicht, wenn die Themen und die übergreifende Erzählung der Daten-Story erstellt werden. <p>Wenn keine Hervorhebung angewendet wird, werden Komponenten in Präsentationen wie folgt angezeigt:<ul><li>**Metriken und Dimensionen:** Kursiv</li><li>**Dimension-Elemente:** Anführungszeichen</li></ul></p><p>Wenn die Hervorhebung angewendet wird, werden Komponenten in Präsentationen wie folgt angezeigt:</p><ul><li>**Metriken und Dimensionen:** und fett</li><li>**Dimension-Elemente:** Fett, wenn die entsprechende Dimension hervorgehoben wird<p>Eine Farbe wird auch auf das Dimensionselement angewendet, wenn das Dimensionselement im Diagramm hervorgehoben wird.</p></li></ul> |
 
-1. (Bedingt) Wählen Sie **[!UICONTROL Standarddesign]** aus, wenn Sie Folien schnell in weniger Schritten generieren möchten und für Ihre Folienpräsentation kein Unternehmensdesign erforderlich ist.
+1. (Bedingt) Wählen Sie **[!UICONTROL Standarddesign]** aus, wenn Sie Folien in weniger Schritten generieren möchten und wenn für Ihre Folienpräsentation kein Unternehmensdesign erforderlich ist.
 
    Wählen Sie einfach das Farbthema Ihrer Präsentation aus, indem Sie die gewünschte Farbe auswählen.
 
@@ -122,11 +122,25 @@ Daten-Storys bestehen aus einer Folien-Zusammenfassung für Führungskräfte, De
 
    * (Empfohlen) Leere Vorlagen herunterladen und ändern.
 
-      1. Diese leere Vorlage herunterladen. <!--add link-->
+      1. Download [diese leere Vorlage](https://d30ln29764hddd.cloudfront.net/deploy/builds/data-storytelling.2025-10-20T15:10:19/resources/components/Blank.potx?).
 
       1. Wenden Sie Ihre benutzerdefinierten Stile auf die leere Vorlage an.
 
-      1. Laden Sie die Vorlage erneut hoch, ohne die übergeordneten Layoutnamen zu ändern.
+      1. Laden Sie die Vorlage erneut hoch, ohne die übergeordneten Layout-Namen zu ändern:
+
+         Ziehen Sie aus Ihrem Dateisystem die leere Vorlage, auf die Ihre benutzerdefinierten Stile angewendet wurden, in den Ablagebereich.
+
+         Oder
+
+         Wählen Sie **[!UICONTROL Durchsuchen]**, navigieren Sie zu und wählen Sie Ihre leere Vorlage aus, auf die Ihre benutzerdefinierten Stile aus dem Dateisystem angewendet wurden.
+
+      1. Im Abschnitt **[!UICONTROL Layout-]**&quot; wird jedes Folien-Layout, das in generierten Präsentationen verwendet wird, automatisch einer Folie aus Ihrem hochgeladenen Design zugeordnet. Überprüfen Sie die Auswahl, um sicherzustellen, dass sie korrekt sind.
+
+         ![Layout-Zuordnung](assets/generate-slides-layout-mapping.png)
+
+      1. (Bedingt) Wenn ein Folien-Layout falsch zugeordnet ist, wählen Sie über der Folie, **[!UICONTROL aus Ihrer hochgeladenen Präsentation ausgewählt wurde, die Option Auswahl ändern]** und dann die Folie aus, die dem Layout entspricht.
+
+         Wiederholen Sie diesen Vorgang für jede Folie, die falsch zugeordnet wurde.
 
    * Laden Sie eine benutzerdefinierte Vorlage direkt hoch.
 
@@ -136,20 +150,23 @@ Daten-Storys bestehen aus einer Folien-Zusammenfassung für Führungskräfte, De
 
          Wählen **[!UICONTROL Durchsuchen]**, navigieren Sie zu und wählen Sie Ihre benutzerdefinierte Vorlage aus dem Dateisystem aus.
 
-         Stellen Sie sicher, dass die hochgeladene Datei über Master-Layouts mit den folgenden Namen verfügt: „Title_Slide“, „Section_Divider“, „Title_Text“, „Title_Chart“, „Title_Two_Content_Mixed“, „Title_Three_Content_Mixed“
+         Stellen Sie sicher, dass die hochgeladene Datei über Master-Layouts mit den folgenden Namen verfügt: „Title_Slide“, „Section_Divider“, „Title_Text“, „Title_Chart“, „Title_Two_Content_Mixed“, „Title_Three_Content_Mixed“.
 
          .pptx- und .potx-Dateien mit einer Größe von bis zu 25 MB werden unterstützt.
 
+      1. Im Abschnitt **[!UICONTROL Layout-]**&quot; wird jedes Folien-Layout, das in generierten Präsentationen verwendet wird, automatisch einer Folie aus Ihrem hochgeladenen Design zugeordnet. Überprüfen Sie die Auswahl, um sicherzustellen, dass sie korrekt sind.
+
+         ![Benutzerdefinierte Layoutzuordnung](assets/generate-slides-layout-mapping-custom-template.png)
+
+      1. (Bedingt) Wenn ein Folien-Layout falsch zugeordnet ist, wählen Sie über der Folie, **[!UICONTROL aus Ihrer hochgeladenen Präsentation ausgewählt wurde, die Option Auswahl ändern]** und dann die Folie aus, die dem Layout entspricht.
+
+         Wiederholen Sie diesen Vorgang für jede Folie, die falsch zugeordnet wurde.
+
 1. Wählen Sie **[!UICONTROL PPT exportieren]**.
 
-1. (Empfohlen) Überprüfen und bearbeiten Sie die .ppt-Präsentation und nehmen Sie alle erforderlichen Änderungen vor, wie im folgenden Abschnitt beschrieben (Bearbeiten [&#x200B; Folien aus einer zuvor generierten Präsentation](#edit-slides-from-a-previously-generated-presentation).
+   Die .pptx-Präsentation wird automatisch auf Ihre Workstation heruntergeladen.
 
-## Bearbeiten von Folien aus einer zuvor generierten Präsentation
-
-
-## Herunterladen einer generierten .pptx-Präsentation
-
-
+1. (Empfohlen) Öffnen Sie die .pptx-Präsentation und überprüfen Sie sie. Nehmen Sie die erforderlichen Änderungen vor.
 
 ## Berechtigungsanforderungen zum Generieren von Folien
 
@@ -161,9 +178,9 @@ Daten-Storys bestehen aus einer Folien-Zusammenfassung für Führungskräfte, De
 
 Produktprofil-Admins, deren Organisationen über die Lizenzierung zum Generieren von Folien verfügen, können den Zugriff bei Bedarf deaktivieren.
 
-In der [!UICONTROL Adobe Admin Console] bestimmt die Berechtigung [!UICONTROL Reporting-]&#x200B;**[!UICONTROL Data]** storytelling) den Zugriff auf diese Funktion. Ein [Produktprofil-Administrator](https://helpx.adobe.com/de/enterprise/using/manage-product-profiles.html) muss diese Schritte in der [!UICONTROL Admin Console ausführen] wenn er den Zugriff deaktivieren möchte:
+In der [!UICONTROL Adobe Admin Console] bestimmt die Berechtigung [!UICONTROL Reporting-]**[!UICONTROL Data]** storytelling) den Zugriff auf diese Funktion. Ein [Produktprofil-Administrator](https://helpx.adobe.com/de/enterprise/using/manage-product-profiles.html) muss diese Schritte in der [!UICONTROL Admin Console ausführen] wenn er den Zugriff deaktivieren möchte:
 1. Navigieren Sie zu **[!UICONTROL Admin Console]** > **[!UICONTROL Produkte und Dienste]** > **[!UICONTROL Customer Journey Analytics]** > **[!UICONTROL Produktprofile]**.
-1. Wählen Sie den Titel des Produktprofils aus, für das Sie Zugriff auf &quot;[!UICONTROL &#x200B; storytelling&quot; &#x200B;] möchten.
+1. Wählen Sie den Titel des Produktprofils aus, für das Sie Zugriff auf &quot;[!UICONTROL  storytelling&quot; ] möchten.
 1. Wählen Sie im entsprechenden Produktprofil die Option **[!UICONTROL Berechtigungen]** aus.
 1. Wählen Sie ![Bearbeiten](/help/assets/icons/Edit.svg) aus, um **[!UICONTROL Reporting-Tools]** zu bearbeiten.
 1. Wählen Sie ![AddCircle](/help/assets/icons/RemoveCircle.svg) aus, um **Data storytelling** aus den **[!UICONTROL Included permission items]**.
