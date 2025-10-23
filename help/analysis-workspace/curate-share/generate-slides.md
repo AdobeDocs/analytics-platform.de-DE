@@ -4,10 +4,10 @@ keywords: Analysis Workspace
 title: Erstellen von Präsentationen aus Workspace-Berichten
 feature: Curate and Share
 role: User
-source-git-commit: 99adae279a21c827579ebc3b58b336a9f0e3e8a4
+source-git-commit: 62ef107c52a96178fbf9e41fee49db757488525b
 workflow-type: tm+mt
-source-wordcount: '1535'
-ht-degree: 4%
+source-wordcount: '1506'
+ht-degree: 3%
 
 ---
 
@@ -106,9 +106,10 @@ Daten-Storys bestehen aus einer Titelfolie, einer Übersichtsfolie, Detailfolien
    | **[!UICONTROL Titeltitel]** | Geben Sie einen Titel für die Präsentation an. Dieser Titel wird auf der Titelfolie der Präsentation angezeigt. |
    | **[!UICONTROL Name des Referenten einschließen]** | Geben Sie den Namen des Referenten an. Dieser Name wird auf der Titelfolie der Präsentation unter dem Titeltitel angezeigt. |
    | **[!UICONTROL Bedienfelder und einzuschließende Visualisierungen]** | Wählen Sie die Bedienfelder und Visualisierungen aus, die Sie in die Präsentation einbeziehen möchten. Sie können bis zu 50 Visualisierungen einschließen.<p>Die meisten Bedienfelder und Visualisierungen werden unterstützt. Informationen zu nicht unterstützten Bereichen und Visualisierungen finden Sie unter [Nicht unterstützte Projektelemente und -funktionen](#unsupported-project-elements-and-features).</p> |
-   | **[!UICONTROL Bedienfeld- und Visualisierungsbeschreibungen]** | Wählen Sie aus, ob Bedienfeld- und Visualisierungsbeschreibungen in die generierte Folienpräsentation aufgenommen werden sollen. |
-   | **[!UICONTROL Anmerkungen]** | Wählen Sie aus, ob Anmerkungen in der erstellten Folienpräsentation sichtbar sein sollen. Weitere Informationen zu Anmerkungen finden Sie unter [Anmerkungen – Überblick](/help/components/annotations/overview.md). |
    | **[!UICONTROL Komponenten hervorheben]** | Wählen Sie die Metriken und Dimensionen aus Ihren Visualisierungen aus, die Sie in der Präsentation hervorheben möchten. Die von Ihnen ausgewählten Komponenten werden höher eingestuft und erhalten mehr Gewicht, wenn die Themen und die übergreifende Erzählung der Daten-Story erstellt werden. <p>Wenn keine Hervorhebung angewendet wird, werden Komponenten in Präsentationen wie folgt angezeigt:<ul><li>**Metriken und Dimensionen:** Kursiv</li><li>**Dimension-Elemente:** Anführungszeichen</li></ul></p><p>Wenn die Hervorhebung angewendet wird, werden Komponenten in Präsentationen wie folgt angezeigt:</p><ul><li>**Metriken und Dimensionen:** und fett</li><li>**Dimension-Elemente:** Fett, wenn die entsprechende Dimension hervorgehoben wird<p>Eine Farbe wird auch auf das Dimensionselement angewendet, wenn das Dimensionselement im Diagramm hervorgehoben wird.</p></li></ul> |
+
+   <!-- add this later: - **[!UICONTROL Panel and visualization descriptions]** - Choose whether to include panel and visualization descriptions in your generated slide presentation. - 
+   - **[!UICONTROL Annotations]** - Choose whether annotations are visible in your generated slide presentation. For more information about annotations, see [Annotations overview](/help/components/annotations/overview.md).  -  -->
 
 1. (Bedingt) Wählen Sie **[!UICONTROL Standarddesign]** aus, wenn Sie Folien in weniger Schritten generieren möchten und wenn für Ihre Folienpräsentation kein Unternehmensdesign erforderlich ist.
 
@@ -156,6 +157,8 @@ Daten-Storys bestehen aus einer Titelfolie, einer Übersichtsfolie, Detailfolien
 
          Stellen Sie sicher, dass die hochgeladene Datei über Master-Layouts mit den folgenden Namen verfügt: „Title_Slide“, „Section_Divider“, „Title_Text“, „Title_Chart“, „Title_Two_Content_Mixed“, „Title_Three_Content_Mixed“.
 
+         Es werden bis zu 15 Master-Layouts unterstützt.
+
          .pptx- und .potx-Dateien mit einer Größe von bis zu 25 MB werden unterstützt.
 
       1. Im Abschnitt **[!UICONTROL Layout-]**&quot; wird jedes Folien-Layout, das in generierten Präsentationen verwendet wird, automatisch einer Folie aus Ihrem hochgeladenen Design zugeordnet. Überprüfen Sie die Auswahl, um sicherzustellen, dass sie korrekt sind.
@@ -182,9 +185,9 @@ Die Möglichkeit, Folien zu generieren, ist standardmäßig für alle Benutzer i
 
 Produktprofil-Admins, deren Organisationen über die Lizenzierung zum Generieren von Folien verfügen, können den Zugriff bei Bedarf deaktivieren.
 
-In der [!UICONTROL Adobe Admin Console] bestimmt die Berechtigung [!UICONTROL Reporting-]&#x200B;**[!UICONTROL Data]** storytelling) den Zugriff auf diese Funktion. Ein [Produktprofil-Administrator](https://helpx.adobe.com/de/enterprise/using/manage-product-profiles.html) muss diese Schritte in der [!UICONTROL Admin Console ausführen] wenn er den Zugriff deaktivieren möchte:
+In der [!UICONTROL Adobe Admin Console] bestimmt die Berechtigung [!UICONTROL Reporting-]**[!UICONTROL Data]** storytelling) den Zugriff auf diese Funktion. Ein [Produktprofil-Administrator](https://helpx.adobe.com/de/enterprise/using/manage-product-profiles.html) muss diese Schritte in der [!UICONTROL Admin Console ausführen] wenn er den Zugriff deaktivieren möchte:
 1. Navigieren Sie zu **[!UICONTROL Admin Console]** > **[!UICONTROL Produkte und Dienste]** > **[!UICONTROL Customer Journey Analytics]** > **[!UICONTROL Produktprofile]**.
-1. Wählen Sie den Titel des Produktprofils aus, für das Sie Zugriff auf &quot;[!UICONTROL &#x200B; storytelling&quot; &#x200B;] möchten.
+1. Wählen Sie den Titel des Produktprofils aus, für das Sie Zugriff auf &quot;[!UICONTROL  storytelling&quot; ] möchten.
 1. Wählen Sie im entsprechenden Produktprofil die Option **[!UICONTROL Berechtigungen]** aus.
 1. Wählen Sie ![Bearbeiten](/help/assets/icons/Edit.svg) aus, um **[!UICONTROL Reporting-Tools]** zu bearbeiten.
 1. Wählen Sie ![AddCircle](/help/assets/icons/RemoveCircle.svg) aus, um **Data storytelling** aus den **[!UICONTROL Included permission items]**.
