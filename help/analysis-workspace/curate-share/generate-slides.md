@@ -4,11 +4,9 @@ keywords: Analysis Workspace
 title: Erstellen von Präsentationen aus Workspace-Berichten
 feature: Curate and Share
 role: User
-hide: true
-hidefromtoc: true
-source-git-commit: 4d7ecc3eaba93424d43d0f4c312aeec78016395f
+source-git-commit: 3807ad0beac3656c1f3bd886611fbe4470a6e7c5
 workflow-type: tm+mt
-source-wordcount: '1494'
+source-wordcount: '1535'
 ht-degree: 4%
 
 ---
@@ -35,8 +33,6 @@ Datenverläufe ergänzen eine Analyse für ein bestimmtes Workspace-Projekt durc
 
 * Hervorheben wichtiger Erkenntnisse
 
-* Anleitung dazu, ob Daten in einem bestimmten Kontext gut oder schlecht sind
-
 * Bewertung, ob bestimmte Variablen zu niedrig oder zu hoch bewertet werden
 
 * Hinweisen auf verborgene Trends, Anomalien und andere beitragende Faktoren
@@ -54,6 +50,8 @@ Analysis Workspace erstellt Daten-Storys unter Berücksichtigung der folgenden P
 * Die den Bedienfeldern, Tabellen und Visualisierungen gegebenen Namen
 
 * Die Reihenfolge der Metriken in einer Freiformtabelle (um die Priorität zu bestimmen)
+
+* Reihenfolge der Visualisierungen in einem Bedienfeld (zur Bestimmung der Priorität)
 
 * Zusammenfassungsnummern und Zusammenfassungstexte (um Metriken zu bestimmen, die in der Daten-Story hervorgehoben werden müssen)
 
@@ -106,7 +104,7 @@ Daten-Storys bestehen aus einer Titelfolie, einer Übersichtsfolie, Detailfolien
    | **[!UICONTROL Bedienfelder und einzuschließende Visualisierungen]** | Wählen Sie die Bedienfelder und Visualisierungen aus, die Sie in die Präsentation einbeziehen möchten. Sie können bis zu 50 Visualisierungen einschließen.<p>Die meisten Bedienfelder und Visualisierungen werden unterstützt. Informationen zu nicht unterstützten Bereichen und Visualisierungen finden Sie unter [Nicht unterstützte Projektelemente und -funktionen](#unsupported-project-elements-and-features).</p> |
    | **[!UICONTROL Bedienfeld- und Visualisierungsbeschreibungen]** | Wählen Sie aus, ob Bedienfeld- und Visualisierungsbeschreibungen in die generierte Folienpräsentation aufgenommen werden sollen. |
    | **[!UICONTROL Anmerkungen]** | Wählen Sie aus, ob Anmerkungen in der erstellten Folienpräsentation sichtbar sein sollen. Weitere Informationen zu Anmerkungen finden Sie unter [Anmerkungen – Überblick](/help/components/annotations/overview.md). |
-   | **[!UICONTROL Komponenten hervorheben]** | Wählen Sie aus Ihren Visualisierungen, die Sie in der Präsentation hervorheben möchten, bis zu 5 Metriken und 5 Dimensionen aus. Die von Ihnen ausgewählten Komponenten werden höher eingestuft und erhalten mehr Gewicht, wenn die Themen und die übergreifende Erzählung der Daten-Story erstellt werden. <p>Wenn keine Hervorhebung angewendet wird, werden Komponenten in Präsentationen wie folgt angezeigt:<ul><li>**Metriken und Dimensionen:** Kursiv</li><li>**Dimension-Elemente:** Anführungszeichen</li></ul></p><p>Wenn die Hervorhebung angewendet wird, werden Komponenten in Präsentationen wie folgt angezeigt:</p><ul><li>**Metriken und Dimensionen:** und fett</li><li>**Dimension-Elemente:** Fett, wenn die entsprechende Dimension hervorgehoben wird<p>Eine Farbe wird auch auf das Dimensionselement angewendet, wenn das Dimensionselement im Diagramm hervorgehoben wird.</p></li></ul> |
+   | **[!UICONTROL Komponenten hervorheben]** | Wählen Sie die Metriken und Dimensionen aus Ihren Visualisierungen aus, die Sie in der Präsentation hervorheben möchten. Die von Ihnen ausgewählten Komponenten werden höher eingestuft und erhalten mehr Gewicht, wenn die Themen und die übergreifende Erzählung der Daten-Story erstellt werden. <p>Wenn keine Hervorhebung angewendet wird, werden Komponenten in Präsentationen wie folgt angezeigt:<ul><li>**Metriken und Dimensionen:** Kursiv</li><li>**Dimension-Elemente:** Anführungszeichen</li></ul></p><p>Wenn die Hervorhebung angewendet wird, werden Komponenten in Präsentationen wie folgt angezeigt:</p><ul><li>**Metriken und Dimensionen:** und fett</li><li>**Dimension-Elemente:** Fett, wenn die entsprechende Dimension hervorgehoben wird<p>Eine Farbe wird auch auf das Dimensionselement angewendet, wenn das Dimensionselement im Diagramm hervorgehoben wird.</p></li></ul> |
 
 1. (Bedingt) Wählen Sie **[!UICONTROL Standarddesign]** aus, wenn Sie Folien in weniger Schritten generieren möchten und wenn für Ihre Folienpräsentation kein Unternehmensdesign erforderlich ist.
 
@@ -115,6 +113,8 @@ Daten-Storys bestehen aus einer Titelfolie, einer Übersichtsfolie, Detailfolien
    ![Erstellen von Folien mit dem Standarddesign](assets/generate-slides-default-theme.png)
 
 1. (Bedingt) Wählen Sie **[!UICONTROL Vorlage hochladen]**, wenn Ihre Folienpräsentation einem Unternehmensdesign entsprechen muss. Für diese Option müssen Sie eine benutzerdefinierte Vorlage hochladen und Ihre benutzerdefinierten Stile anwenden.
+
+   Die zuletzt hochgeladene benutzerdefinierte Vorlage wird lokal im Browser-Cache gespeichert und steht beim Generieren zukünftiger Folienpräsentationen zur Verfügung.
 
    ![Erzeugen von Folien mit einer benutzerdefinierten Vorlage](assets/generate-slides-upload-template.png)
 
@@ -173,14 +173,14 @@ Daten-Storys bestehen aus einer Titelfolie, einer Übersichtsfolie, Detailfolien
 >[!AVAILABILITY]
 >
 >Wenn Ihr Unternehmen keinen Zugriff auf die Erstellung von Folien aus einem Workspace-Projekt hat, wenden Sie sich an Ihren Adobe-Kundenbetreuer, um mehr über die Lizenzierung zu erfahren.
->
->Diese Funktion ist standardmäßig für alle Benutzer in Organisationen aktiviert, die über die erforderliche Lizenz verfügen.
+
+Die Möglichkeit, Folien zu generieren, ist standardmäßig für alle Benutzer in Organisationen aktiviert, die über die erforderliche Lizenz verfügen.
 
 Produktprofil-Admins, deren Organisationen über die Lizenzierung zum Generieren von Folien verfügen, können den Zugriff bei Bedarf deaktivieren.
 
-In der [!UICONTROL Adobe Admin Console] bestimmt die Berechtigung [!UICONTROL Reporting-]&#x200B;**[!UICONTROL Data]** storytelling) den Zugriff auf diese Funktion. Ein [Produktprofil-Administrator](https://helpx.adobe.com/de/enterprise/using/manage-product-profiles.html) muss diese Schritte in der [!UICONTROL Admin Console ausführen] wenn er den Zugriff deaktivieren möchte:
+In der [!UICONTROL Adobe Admin Console] bestimmt die Berechtigung [!UICONTROL Reporting-]**[!UICONTROL Data]** storytelling) den Zugriff auf diese Funktion. Ein [Produktprofil-Administrator](https://helpx.adobe.com/de/enterprise/using/manage-product-profiles.html) muss diese Schritte in der [!UICONTROL Admin Console ausführen] wenn er den Zugriff deaktivieren möchte:
 1. Navigieren Sie zu **[!UICONTROL Admin Console]** > **[!UICONTROL Produkte und Dienste]** > **[!UICONTROL Customer Journey Analytics]** > **[!UICONTROL Produktprofile]**.
-1. Wählen Sie den Titel des Produktprofils aus, für das Sie Zugriff auf &quot;[!UICONTROL &#x200B; storytelling&quot; &#x200B;] möchten.
+1. Wählen Sie den Titel des Produktprofils aus, für das Sie Zugriff auf &quot;[!UICONTROL  storytelling&quot; ] möchten.
 1. Wählen Sie im entsprechenden Produktprofil die Option **[!UICONTROL Berechtigungen]** aus.
 1. Wählen Sie ![Bearbeiten](/help/assets/icons/Edit.svg) aus, um **[!UICONTROL Reporting-Tools]** zu bearbeiten.
 1. Wählen Sie ![AddCircle](/help/assets/icons/RemoveCircle.svg) aus, um **Data storytelling** aus den **[!UICONTROL Included permission items]**.
@@ -205,19 +205,27 @@ Die folgenden Analysis Workspace-Elemente und -Funktionen, die in einem Projekt 
 
   Die meisten Visualisierungen können in Folien eingefügt werden, die aus einem Workspace-Projekt generiert werden. Die folgenden Visualisierungen können jedoch nicht eingeschlossen werden und werden abgeblendet angezeigt, wenn die Konfigurationsoptionen angezeigt werden:
 
-   * Kohortentabelle
-
-   * Journey-Arbeitsfläche
+   * Bereich
 
    * Bullet
 
+   * Kohortentabelle
+
    * Kombination
+
+   * Fallout
+
+   * Fluss
+
+   * Journey-Arbeitsfläche
 
    * Streuung
 
    * Baumkarte
 
 * Aufschlüsselung
+
+  Die Daten für Aufschlüsselungen sind in den generierten Präsentationen enthalten, werden jedoch auf derselben Ebene wie Dimensionselemente angezeigt.
 
 * Geführte Analysen
 
