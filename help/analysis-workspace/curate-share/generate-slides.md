@@ -4,7 +4,7 @@ keywords: Analysis Workspace
 title: Erstellen von Präsentationen aus Workspace-Berichten
 feature: Curate and Share
 role: User
-source-git-commit: 3807ad0beac3656c1f3bd886611fbe4470a6e7c5
+source-git-commit: 99adae279a21c827579ebc3b58b336a9f0e3e8a4
 workflow-type: tm+mt
 source-wordcount: '1535'
 ht-degree: 4%
@@ -12,6 +12,10 @@ ht-degree: 4%
 ---
 
 # Data storytelling: Folien-Präsentationen aus Workspace-Berichten generieren {#generate-powerpoint}
+
+{{release-limited-testing}}
+
+<!-- also remove lmited testing note from: /help/technotes/access-control.md -->
 
 Benutzende mit [den erforderlichen Berechtigungen](#permission-requirements-to-generate-slides) können automatisch PPTX-Präsentationen basierend auf Analysis Workspace-Projekten generieren. Beim Generieren dieser Folienpräsentationen erstellt Customer Journey Analytics automatisch eine Story aus Ihren Daten, indem wichtige Erkenntnisse identifiziert und in Stakeholder-fähige Folien umgewandelt werden.
 
@@ -178,9 +182,9 @@ Die Möglichkeit, Folien zu generieren, ist standardmäßig für alle Benutzer i
 
 Produktprofil-Admins, deren Organisationen über die Lizenzierung zum Generieren von Folien verfügen, können den Zugriff bei Bedarf deaktivieren.
 
-In der [!UICONTROL Adobe Admin Console] bestimmt die Berechtigung [!UICONTROL Reporting-]&#x200B;**[!UICONTROL Data]** storytelling) den Zugriff auf diese Funktion. Ein [Produktprofil-Administrator](https://helpx.adobe.com/de/enterprise/using/manage-product-profiles.html) muss diese Schritte in der [!UICONTROL Admin Console ausführen] wenn er den Zugriff deaktivieren möchte:
+In der [!UICONTROL Adobe Admin Console] bestimmt die Berechtigung [!UICONTROL Reporting-]**[!UICONTROL Data]** storytelling) den Zugriff auf diese Funktion. Ein [Produktprofil-Administrator](https://helpx.adobe.com/de/enterprise/using/manage-product-profiles.html) muss diese Schritte in der [!UICONTROL Admin Console ausführen] wenn er den Zugriff deaktivieren möchte:
 1. Navigieren Sie zu **[!UICONTROL Admin Console]** > **[!UICONTROL Produkte und Dienste]** > **[!UICONTROL Customer Journey Analytics]** > **[!UICONTROL Produktprofile]**.
-1. Wählen Sie den Titel des Produktprofils aus, für das Sie Zugriff auf &quot;[!UICONTROL &#x200B; storytelling&quot; &#x200B;] möchten.
+1. Wählen Sie den Titel des Produktprofils aus, für das Sie Zugriff auf &quot;[!UICONTROL  storytelling&quot; ] möchten.
 1. Wählen Sie im entsprechenden Produktprofil die Option **[!UICONTROL Berechtigungen]** aus.
 1. Wählen Sie ![Bearbeiten](/help/assets/icons/Edit.svg) aus, um **[!UICONTROL Reporting-Tools]** zu bearbeiten.
 1. Wählen Sie ![AddCircle](/help/assets/icons/RemoveCircle.svg) aus, um **Data storytelling** aus den **[!UICONTROL Included permission items]**.
