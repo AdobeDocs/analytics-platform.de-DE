@@ -2,10 +2,10 @@
 title: Produktnutzungsübersicht
 description: Zeigen Sie Erkenntnisse und Berichte dazu an, wie Ihre Organisation Customer Journey Analytics nutzt.
 exl-id: 3806ca7c-ee90-4222-9ffd-2e791c4550e5
-source-git-commit: a4615907f61b4d63393a9481fdd7b45b7b9b6262
+source-git-commit: 5b5d4cb17ee73415dbd77bbf0964fc3d4e513cf0
 workflow-type: tm+mt
-source-wordcount: '591'
-ht-degree: 100%
+source-wordcount: '632'
+ht-degree: 89%
 
 ---
 
@@ -57,6 +57,7 @@ Wenn Sie die Produktnutzung aktivieren, sind die folgenden Dimensionen verfügba
    * [!UICONTROL Datei planmäßig senden]
    * [!UICONTROL Projekt für alle freigeben]
    * [!UICONTROL Projekt für Workspace-Benutzende freigeben]
+   * [!UICONTROL Datenansicht wechseln]
 * **[!UICONTROL Verwendetes Attributionsmodell]**: Der Typ des Attributionsmodells, das von der Komponente verwendet wird. Zu den Dimensionselementen gehören:
    * [!UICONTROL Letztkontakt]
    * [!UICONTROL Erstkontakt]
@@ -69,7 +70,8 @@ Wenn Sie die Produktnutzung aktivieren, sind die folgenden Dimensionen verfügba
    * [!UICONTROL Zeitverfall]
    * [!UICONTROL Benutzerspezifisch]
    * [!UICONTROL Algorithmisch]
-* **[!UICONTROL Name der Komponente]**: Der Name der Komponente, die hinzugefügt, entfernt oder geändert wurde.
+* **[!UICONTROL Komponenten-]**: Die ID der Komponente, die hinzugefügt, entfernt oder geändert wurde.
+* **[!UICONTROL Komponentenname]**: Der Anzeigename der Komponente, die hinzugefügt, entfernt oder geändert wurde.
 * **[!UICONTROL Typ der Komponente]**: Der Typ der Komponente, die hinzugefügt, entfernt oder geändert wurde. Zu den Dimensionselementen gehören:
    * [!UICONTROL Dimension]
    * [!UICONTROL Metrik]
@@ -78,8 +80,10 @@ Wenn Sie die Produktnutzung aktivieren, sind die folgenden Dimensionen verfügba
    * [!UICONTROL Datumsbereich]
    * [!UICONTROL Anmerkung]
    * [!UICONTROL Warnhinweis]
+* **[!UICONTROL Datenansichts-]**: Die ID der Datenansicht.
+* **[!UICONTROL Datenansichtsname]**: Der Anzeigename der Datenansicht.
 * **[!UICONTROL Anmeldebenutzerin bzw. Anmeldebenutzer]**: Die Benutzerin bzw. der Benutzer, die bzw. der die Aktion ausgeführt hat.
-* **[!UICONTROL Verwendetes Bedienfeld]**: Das Panel, in dem die Komponente hinzugefügt, entfernt oder geändert wurde. Zu den Dimensionselementen gehören:
+* **[!UICONTROL Bedienfeld verwendet]**: Das Bedienfeld, das hinzugefügt, entfernt oder geändert wurde. Zu den Dimensionselementen gehören:
    * [!UICONTROL Attribution]
    * [!UICONTROL Leeres Bedienfeld]
    * [!UICONTROL Experimentieren]
@@ -93,6 +97,7 @@ Wenn Sie die Produktnutzung aktivieren, sind die folgenden Dimensionen verfügba
    * [!UICONTROL Benutzer-Stream]
    * [!UICONTROL Kundentreue]
    * [!UICONTROL Funktionsmatrix]
+* **[!UICONTROL Projekt-]**: Die ID des Projekts.
 * **[!UICONTROL Projektname]**: Der Anzeigename des Projekts.
 * **[!UICONTROL Projekttyp]**: Der Projekttyp. Zu den Dimensionselementen gehören:
    * `workspace-projects`
