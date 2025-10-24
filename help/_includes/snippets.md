@@ -1,8 +1,8 @@
 ---
-source-git-commit: c4c8c0ff5d46ec455ca5333f79d6d8529f4cb87d
+source-git-commit: 7d354ce65f72838c007d2b9faf02848d86fd7c0f
 workflow-type: tm+mt
-source-wordcount: '4947'
-ht-degree: 100%
+source-wordcount: '4990'
+ht-degree: 98%
 
 ---
 # Snippets
@@ -128,7 +128,7 @@ Ein Attributionsmodell bestimmt, welchen Dimensionselementen eine Metrik zugesch
 
 Ein Attributions-Container definiert den gewünschten Umfang für die Attribution. Mögliche Optionen sind:
 
-* **Sitzung:** Blickt bis zum Beginn einer Sitzung zurück, in der eine Konversion stattgefunden hat. Sitzungs-Lookback-Fenster berücksichtigen das geänderte [Sitzungs-Timeout](/help/data-views/create-dataview.md#session-settings) in einer Datenansicht.
+* **Sitzung:** Blickt bis zum Beginn einer Sitzung zurück, in der eine Konversion stattgefunden hat. Sitzungs-Lookback-Fenster berücksichtigen das [Sitzungs-Timeout](/help/data-views/create-dataview.md#session-settings) in einer Datenansicht. Wenn **[!UICONTROL Sitzung]** ausgewählt ist, wird das [Attributions-Lookback-Fenster](#atribution-lookback-window) automatisch auf **[!UICONTROL Reporting-Fenster]** festgelegt und kann nicht geändert werden.
 * **Person**: Untersucht Konversionen ausgehend vom Umfang des Personen-Containers.
 * **Globales Konto** [!BADGE B2B Edition]{type=Informative}: Untersucht Konversionen ausgehend vom Umfang des Containers für globale Konten.
 * **Konten** [!BADGE B2B Edition]{type=Informative}: Untersucht Konversionen ausgehend vom Umfang des Personen-Containers.
@@ -139,6 +139,7 @@ Ein Attributions-Container definiert den gewünschten Umfang für die Attributio
 
 Ein Attributions-Lookback-Fenster ist der Zeitraum, der für eine Konversion rückblickend bei der Erfassung von Touchpoints berücksichtigt werden sollte. Wenn ein Dimensionselement außerhalb des Lookback-Fensters festgelegt wird, wird der Wert in keine Attributionsberechnungen einbezogen.
 
+* **[!UICONTROL Reporting-Fenster]**: Sucht nach dem Beginn des Reporting-Fensters zum Zeitpunkt der Konvertierung.
 * **14 Tage**: Blickt bis zu 14 Tage nach dem Zeitpunkt zurück, an dem die Konversion stattgefunden hat.
 * **30 Tage**: Blickt bis zu 30 Tage nach dem Zeitpunkt zurück, an dem die Konversion stattgefunden hat.
 * **60 Tage**: Blickt bis zu 60 Tage nach dem Zeitpunkt zurück, an dem die Konversion stattgefunden hat.
@@ -154,13 +155,13 @@ Sehen Sie sich folgendes Beispiel an:
 1. Am 18. September gelangt die Person über einen Link in sozialen Medien, den er von einer Freundin oder einem Freund erhalten hat, erneut auf Ihre Site. Er fügt mehrere Artikel zum Warenkorb hinzu, erwirbt aber nichts.
 1. Am 24. September sendet Ihr Marketing-Team eine E-Mail mit einem Coupon für einige der Artikel im Warenkorb. Der Coupon wird angewendet, der Besucher ruft aber mehrere andere Websites auf, um zu sehen, ob andere Coupons verfügbar sind. Er findet einen weiteren über eine Display-Anzeige und kauft dann letztendlich für 50 Euro ein.
 
-Je nach Attributionsmodell erhalten Container und Kanäle unterschiedliche Gewichtungen. Beispiele finden Sie in der unten stehenden Tabelle:
+Je nach Berichtszeitraum (z. B. 10. September bis 24. September) erhalten Attributionsmodell, Container und Kanäle unterschiedliche Gutschriften. Beispiele finden Sie in der unten stehenden Tabelle:
 
 | Modell | Container | Lookback-Fenster | Erklärung |
 |---|---|---|---|
-| Erstkontakt | Sitzung | 30 Tage | Die Attribution untersucht nur den dritten Besuch. E-Mail kam vor Display-Anzeige, sodass E-Mail 100 % des Kaufs in Höhe von 50 Euro zugeschrieben werden. |
+| Erstkontakt | Sitzung | Reporting-Fenster | Die Attribution untersucht nur den dritten Besuch. E-Mail kam vor Display-Anzeige, sodass E-Mail 100 % des Kaufs in Höhe von 50 Euro zugeschrieben werden. |
 | Erstkontakt | Person | 30 Tage | Die Attribution untersucht alle drei Besuche. Paid Search kam zuerst, sodass Paid Search 100 % des Kaufs in Höhe von 50 Euro zugeschrieben werden. |
-| Linear | Sitzung | 30 Tage | Die Gewichtung wird zwischen E-Mail und Display-Anzeige aufgeteilt. Beiden Kanälen werden jeweils 25 Euro zugeschrieben. |
+| Linear | Sitzung | Reporting-Fenster | Die Gewichtung wird zwischen E-Mail und Display-Anzeige aufgeteilt. Beiden Kanälen werden jeweils 25 Euro zugeschrieben. |
 | Linear | Person | 30 Tage | Die Gewichtung wird zwischen Paid Search, Social Media, E-Mail und Display-Anzeige aufgeteilt. Jedem Kanal werden für diesen Kauf 12,50 Euro zugeschrieben. |
 | J-förmig | Person | 30 Tage | Die Gewichtung wird zwischen Paid Search, Social Media, E-Mail und Display-Anzeige aufgeteilt.<ul><li>Der Display-Anzeige werden 60 %, also 30 Euro, zugeschrieben.</li><li>Paid Search werden 20 %, also 10 Euro, zugeschrieben.</li><li>Die restlichen 20 % werden zwischen Social Media und E-Mail aufgeteilt (jeweils 5 Euro).</li></ul> |
 | Zeitverfall | Person | 30 Tage | <ul><li>Abstand von null Tagen zwischen Display-Touchpoint und Konversion. `2^(-0/7) = 1`</li><li>Abstand von null Tagen zwischen E-Mail-Touchpoint und Konversion. `2^(-0/7) = 1`</li><li>Abstand von sechs Tagen zwischen Social Media-Touchpoint und Konversion. `2^(-6/7) = 0.552`</li><li>Abstand von 9 Tagen zwischen Paid Search-Touchpoint und Konversion. `2^(-9/7) = 0.41`</li>Die Normalisierung dieser Werte führt zu Folgendem:<ul><li>Display-Anzeige: 33,8 %, 16,88 Euro</li><li>E-Mail: 33,8 %, 16,88 Euro</li><li>Social Media: 18,6 %, 9,32 Euro</li><li>Paid Search: 13,8 %, 6,92 Euro</li></ul></li></ul> |
