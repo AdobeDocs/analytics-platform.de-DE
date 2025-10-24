@@ -5,23 +5,23 @@ solution: Customer Journey Analytics
 feature: Connections
 role: Admin
 exl-id: 7729c1b9-b3ed-4662-a446-2088389bbd97
-source-git-commit: 4ce2eb397e15dcb081f7b9695ba2332a3eb17659
+source-git-commit: d1097ca5f981623283a7d02200d5023548046429
 workflow-type: tm+mt
-source-wordcount: '468'
+source-wordcount: '470'
 ht-degree: 4%
 
 ---
 
 # Transformieren der Datensätze für B2B-Suchvorgänge
 
-Um personenbasierte Suchen auf B2B-Daten (einschließlich Konten, Opportunitys, Marketing-Listen und Kampagnen) zu unterstützen, ist die Transformation von B2B-Lookup-Datensätzen erforderlich.
+Um personenbasierte Suchen nach B2B-Daten (einschließlich Konten, Opportunitys, Marketing-Listen und Kampagnen) zu unterstützen, kann die Transformation von B2B-Lookup-Datensätzen die Datengenauigkeit verbessern.
 
 Diese Umwandlung ist nur für Datensätze mit Daten für B2B-Lookup-Schemas verfügbar, die auf den folgenden Klassen basieren:
 
-* [Personenbeziehung für XDM Business-Konto](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/classes/b2b/business-account-person-relation)
-* [XDM Business Opportunity Person Relation](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/classes/b2b/business-opportunity-person-relation)
-* [XDM Business Marketing List Members](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/classes/b2b/business-marketing-list-members)
-* [XDM Business Campaign Members](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/classes/b2b/business-campaign-members)
+* [Personenbeziehung für XDM Business-Konto](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/classes/b2b/business-account-person-relation)
+* [XDM Business Opportunity Person Relation](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/classes/b2b/business-opportunity-person-relation)
+* [XDM Business Marketing List Members](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/classes/b2b/business-marketing-list-members)
+* [XDM Business Campaign Members](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/classes/b2b/business-campaign-members)
 
 >[!NOTE]
 >
