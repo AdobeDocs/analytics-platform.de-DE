@@ -5,10 +5,10 @@ role: User, Admin
 solution: Customer Journey Analytics
 feature: AI Tools
 exl-id: 262d5f15-16cb-4851-a769-7dbd205b2f81
-source-git-commit: bb44ba8d36a2c21c789f0df6a84ea0432ca20029
+source-git-commit: e4b7f1da451a7ec9171fbb623e0e79e916827fd8
 workflow-type: tm+mt
-source-wordcount: '2461'
-ht-degree: 99%
+source-wordcount: '2489'
+ht-degree: 93%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 99%
 
 >[!AVAILABILITY]
 >
->Data Insights Agent steht berechtigten Kundinnen und Kunden für eine begrenzte Zeit zur Verfügung. Der Zugriff auf Data Insights Agent endet am 30. November 2025. Um Data Insights Agent ohne Unterbrechung weiter zu verwenden, wenden Sie sich an Ihren Adobe-Kundenbetreuer, um mehr über die Lizenzierung von Data Insights Agent zu erfahren.
+>Data Insights Agent steht berechtigten Kundinnen und Kunden für eine begrenzte Zeit zur Verfügung. Der Zugriff auf Data Insights Agent endet am 30. November 2025. Wenn Sie Data Insights Agent ohne Unterbrechung weiter verwenden möchten, wenden Sie sich an Ihr Adobe-Accountteam, um mehr über die Lizenzierung von Data Insights Agent zu erfahren.
 
 Data Insights Agent, auf den über den [KI-Assistenten](/help/ai-assistant.md) in Customer Journey Analytics zugegriffen werden kann, ist ein auf generativer KI basierender Konversationsagent, der Fragen zu Ihren Daten schnell und effizient beantwortet. Er erstellt relevante Visualisierungen in Analysis Workspace mithilfe von Komponenten aus Ihrer Datenansicht und unter Verwendung Ihrer tatsächlichen Daten.
 
@@ -64,34 +64,39 @@ Die folgenden Parameter regeln den Zugriff auf Data Insights Agent in Customer J
 
    1. Wählen Sie in der Zeile **[!UICONTROL Reporting-Tools]** der bereitgestellten Tabelle das Bearbeitungssymbol ![Bearbeiten](/help/assets/icons/Edit.svg) aus.
    1. Scrollen Sie zu oder suchen Sie nach **[!UICONTROL KI-Assistent: Produktkenntnisse]** und wählen Sie dann das Plussymbol ![Hinzufügen](/help/assets/icons/AddCircle.svg) neben dieser Berechtigung aus.
+   1. Scrollen Sie zu oder suchen Sie nach **[!UICONTROL Data Insights Agent]** und wählen Sie dann das Pluszeichen ![AddCircle](/help/assets/icons/AddCircle.svg) neben dieser Berechtigung aus.
 
-      Die Berechtigung **[!UICONTROL KI-Assistent: Produktkenntnisse]** wird der Spalte **[!UICONTROL Eingeschlossene Berechtigungseinträge]** hinzugefügt.
+      Die Berechtigung **[!UICONTROL KI-Assistent: Produktwissen]** und die Berechtigung **[!UICONTROL Data Insights Agent]** werden der Spalte **[!UICONTROL Enthaltene Berechtigungselemente]** hinzugefügt.
 
       ![Hinzufügen einer Berechtigung](assets/ai-assistant-permissions.png)
-
-   1. Wählen Sie die Registerkarte **[!UICONTROL Tools für die Datenansicht]** und dann das Pluszeichen ![Hinzufügen](/help/assets/icons/AddCircle.svg) neben der Berechtigung **[!UICONTROL Data Insights Agent]** aus.
-
-      Die Berechtigung **[!UICONTROL Data Insights Agent]** wird der Spalte **[!UICONTROL Eingeschlossene Berechtigungseinträge]** hinzugefügt.
-
-      ![Hinzufügen einer Berechtigung](assets/ai-assistant-permissions-dataviewtools.png)
-
-   1. Wählen Sie die Registerkarte **[!UICONTROL Datenansichten]** aus, um die Datenansichten festzulegen, die für den Data Insights Agent aktiviert werden sollen.
-
-      >[!IMPORTANT]
-      >
-      >Beachten Sie beim Aktivieren von Datenansichten Folgendes:
-      >* Sie können maximal 50 Datenansichten pro IMS-Organisation aktivieren. Wenn Sie für ein Unternehmen mehr als 50 Datenansichten für alle Produktprofile aktivieren, verwendet Data Insights Agent die 50 am häufigsten verwendeten Datenansichten.
-      >* Die Data Insights Agent kann auf die eingeschlossenen Datenansichten verweisen, und zwar zu einem beliebigen Zeitpunkt desselben Tages, an dem Sie sie in der Admin Console aktivieren.
-
-   1. Suchen Sie nach oder scrollen Sie zu den zu aktivierenden Datenansichten. Wählen Sie dann das Plussymbol ![Hinzufügen](/help/assets/icons/AddCircle.svg) neben dem Namen der jeweiligen Datenansicht aus.
-
-      Jede hinzugefügte Datenansicht ist in der Spalte **[!UICONTROL Eingeschlossene Berechtigungseinträge]** sichtbar.
-
-      ![Hinzufügen einer Berechtigung](assets/ai-assistant-permissions-dataviews.png)
 
    1. Wählen Sie **[!UICONTROL Speichern]** aus, um die Berechtigungen zu speichern.
 
   Weitere Informationen zur Zugriffssteuerung finden Sie unter [Zugriffssteuerung](/help/technotes/access-control.md#access-control).
+
+* **Zugriff auf Datenansicht**: Datenansichten müssen für Data Insights Agent aktiviert sein.
+
+  >[!IMPORTANT]
+  >
+  >Beachten Sie beim Aktivieren von Datenansichten Folgendes:
+  >* Sie können maximal 50 Datenansichten pro IMS-Organisation aktivieren. Wenn Sie für ein Unternehmen mehr als 50 Datenansichten für alle Produktprofile aktivieren, verwendet Data Insights Agent die 50 am häufigsten verwendeten Datenansichten.
+  >* Die Data Insights Agent kann die enthaltenen Datenansichten an einem Tag referenzieren, an dem Sie sie aktivieren.
+
+  So aktivieren Sie Datenansichten für Data Insights Agent:
+
+   1. Wählen Sie in Customer Journey Analytics **[!UICONTROL Daten-Management]** > **[!UICONTROL Datenansichten]**.
+
+   1. Wählen Sie eine oder mehrere Datenansichten aus, die Sie für Data Insights Agent aktivieren möchten, und wählen Sie dann **[!UICONTROL Für Data Insights Agent aktivieren]**.
+
+      ![Aktivieren von Datenansichten für Data Insights Agent](assets/data-view-enable-dia.png)
+
+  So zeigen Sie die Anzahl der Datenansichten an, die für Data Insights Agent in Ihrer IMS-Organisation aktiviert sind:
+
+   1. Wählen Sie in Customer Journey Analytics **[!UICONTROL Daten-Management]** > **[!UICONTROL Datenansichten]**.
+
+   1. Wählen Sie das Informationssymbol oben in der Spalte **[!UICONTROL Data Insights Agent]** aus.
+
+      ![Infosymbol zu Data Insights Agent](assets/data-insights-agent-tooltip.png)
 
 ## Zugreifen auf den Data Insights Agent im KI-Assistenten
 
@@ -259,7 +264,7 @@ Im Folgenden finden Sie Best Practices für Ihre Customer Journey Analytics-Konf
 >[!MORELIKETHIS]
 >
 >[Einstellungen der Komponente](/help/data-views/component-settings/overview.md)
->&#x200B;>[Datenwörterbuch](/help/components/data-dictionary/data-dictionary-overview.md)
->&#x200B;>[Berechnete Metrik genehmigen](/help/components/calc-metrics/cm-workflow/cm-approving.md)
->&#x200B;>[Segmente freigeben](/help/components/segments/seg-share.md)
+>>[Datenwörterbuch](/help/components/data-dictionary/data-dictionary-overview.md)
+>>[Berechnete Metrik genehmigen](/help/components/calc-metrics/cm-workflow/cm-approving.md)
+>>[Segmente freigeben](/help/components/segments/seg-share.md)
 >
