@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin, User
 exl-id: 0d3be50d-c635-459b-8b01-61d6d4ef0cdf
-source-git-commit: e8cba64e706a456861fd8392ce9260b7a1c4636b
+source-git-commit: 58254cab90d907ad9675c30dfc1b835910214b3a
 workflow-type: tm+mt
-source-wordcount: '836'
-ht-degree: 100%
+source-wordcount: '854'
+ht-degree: 96%
 
 ---
 
@@ -41,7 +41,7 @@ Content Analytics verwendet die folgenden Schlüsselbegriffe:
 
 ## Funktionsweise
 
-Content Analytics verwendet Web-Bildansichtsdaten in Ereignisdatensätzen in Experience Platform, um [Inhaltsereignisdaten zu erfassen](config/datacollection.md). Außerdem wird diese Inhaltsdatenerfassung mit der (vorhandenen) Datenerfassungsimplementierung von Verhaltensdaten kombiniert.
+Content Analytics verwendet Web-Bildansichtsdaten in Ereignisdatensätzen in Experience Platform, um [Inhaltsereignisdaten zu erfassen](config/datacollection.md). Für diese Inhaltserlebnisereignisse müssen die Daten mit der Experience Platform Edge Network (Web-SDK, Server-API) erfasst werden. Verhaltensdaten können mit Web SDK oder dem Analytics Source Connector erfasst werden.
 
 ![Content Analytics – Funktionsweise](assets/aca-overview.gif)
 
@@ -68,6 +68,6 @@ Content Analytics verwendet Web-Bildansichtsdaten in Ereignisdatensätzen in Exp
 >
 >[Reporting für Content Analytics](report/report.md)
 >>[Konfigurieren von Content Analytics](config/configuration.md)
->>[Berechnen von Bounces und Bounce-Raten in Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/calculating-bounces-amp-bounce-rate-in-adobe-customer-journey/ba-p/706446?profile.language=de&lang=de#M454)
+>>[Berechnen von Bounces und Bounce-Raten in Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/calculating-bounces-amp-bounce-rate-in-adobe-customer-journey/ba-p/706446?lang=de#M454)
 >
 
