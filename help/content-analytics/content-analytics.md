@@ -67,7 +67,7 @@ Content Analytics verwendet Web-Bildansichtsdaten in Ereignisdatensätzen in Exp
 >[!MORELIKETHIS]
 >
 >[Reporting für Content Analytics](report/report.md)
->>[Konfigurieren von Content Analytics](config/configuration.md)
->>[Berechnen von Bounces und Bounce-Raten in Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/calculating-bounces-amp-bounce-rate-in-adobe-customer-journey/ba-p/706446?lang=de#M454)
+>&#x200B;>[Konfigurieren von Content Analytics](config/configuration.md)
+>&#x200B;>[Berechnen von Bounces und Bounce-Raten in Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/calculating-bounces-amp-bounce-rate-in-adobe-customer-journey/ba-p/706446?lang=de#M454)
 >
 
