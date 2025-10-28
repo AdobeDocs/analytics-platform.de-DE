@@ -6,16 +6,16 @@ feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: 9a1689d9-c1b7-42fe-9682-499e49843f76
 badgePremium: label="Beta" type="Informative"
-source-git-commit: 0afe57047e2038f1acd9f88a1e7992da9a2819b1
+source-git-commit: 23b890ec6a3266d1ca0621b09264f1d6a2f82645
 workflow-type: tm+mt
-source-wordcount: '807'
+source-wordcount: '808'
 ht-degree: 3%
 
 ---
 
 # Zuordnung verwenden
 
-Sie können das Zusammenfügen mit einem oder mehreren Ereignisdatensätzen aktivieren, die Sie im Rahmen Ihrer Verbindung konfiguriert haben. Die Anzahl der Ereignis-Datensätze, die Sie für das Zusammenfügen aktivieren können, wird durch das lizenzierte Customer Journey Analytics-Paket bestimmt.
+Sie können das Zusammenfügen mit einem oder mehreren Ereignisdatensätzen aktivieren, die Sie im Rahmen Ihrer Verbindung konfiguriert haben. Das von Ihnen lizenzierte Customer Journey Analytics-Paket bestimmt die Anzahl der Ereignisdatensätze, die Sie für das Zusammenfügen aktivieren können.
 
 {{release-limited-testing}}
 
@@ -25,12 +25,12 @@ Sie können das Zusammenfügen als Teil der [Datensatzeinstellungen](/help/conne
 
 So aktivieren Sie die Zuordnung für einen Ereignis-Datensatz in der Connections-Benutzeroberfläche:
 
-* Das Schema, auf dem der Datensatz basiert, muss Folgendes definiert haben:
+* Das Schema, auf dem der Datensatz basiert, sollte Folgendes enthalten:
 
    * Mehrere Felder, die als Identität konfiguriert sind und es Ihnen ermöglichen, verschiedene Werte für eine persistente ID und eine Personen-ID auszuwählen.
    * Mindestens ein Feld, das als primäre Identität mit einem zugehörigen Namespace markiert ist, falls Sie Identity Map verwenden möchten, und der primäre Identity-Namespace für die persistente ID oder Personen-ID.
 
-* Der Ereignisdatensatz muss für [&#x200B; Identity Service aktiviert sein](/help/stitching/faq.md#enable-a-dataset-for-the-identity-service) falls Sie das Identitätsdiagramm und die diagrammbasierte Zuordnung verwenden möchten.
+* Der Ereignisdatensatz muss für [ Identity Service aktiviert sein](/help/stitching/faq.md#enable-a-dataset-for-the-identity-service) falls Sie das Identitätsdiagramm und die diagrammbasierte Zuordnung verwenden möchten.
 
 
 ## Vorflugkontrollen
@@ -127,7 +127,7 @@ Um das Zusammenfügen zu aktivieren, gehen Sie im Abschnitt Ereignisdatensatz de
 
    >[!NOTE]
    >
-   >Sie müssen berechtigt sein, das Identitätsdiagramm zu verwenden.
+   >Stellen Sie sicher, dass Sie berechtigt sind, das Identitätsdiagramm zu verwenden.
    >
 
    Zuvor wird ein Dialogfeld **[!UICONTROL Änderung am Identitätsdiagramm]** angezeigt, um sicherzustellen, dass Sie [die Einrichtung des Identitätsdiagramms für den Datensatz abgeschlossen haben](/help/stitching/faq.md#enable-a-dataset-for-the-identity-service) bevor Sie das Identitätsdiagramm zum Zusammenfügen verwenden. Wählen Sie **[!UICONTROL Weiter]** aus, um fortzufahren.
@@ -141,7 +141,7 @@ Nachdem Sie eine Verbindung gespeichert haben, die Datensätze enthält, die fü
 
 ## Einschränkungen
 
-Zusätzlich zu den [feldbasierten &#x200B;](/help/stitching/fbs.md#limitations) und [Diagrammbasierten Zuordnungsbeschränkungen](/help/stitching/gbs.md#limitations) gelten die folgenden Einschränkungen, wenn Sie die Zuordnung in der Verbindungsschnittstelle aktivieren:
+Zusätzlich zu den [feldbasierten Stitching-Einschränkungen](/help/stitching/fbs.md#limitations) und [graphbasierten Stitching-Einschränkungen](/help/stitching/gbs.md#limitations) gelten die folgenden Einschränkungen, wenn Sie das Stitching in der Verbindungsschnittstelle aktivieren:
 
-* Sie können einen Ereignis-Datensatz nur einmal als Teil einer einzelnen Verbindung zuordnen. Sie können denselben Ereignisdatensatz nicht mehr als einen definieren und für jede Instanz eine separate Stitching-Konfiguration verwenden. Wenn Sie verschiedene Zuordnungskonfigurationen auf denselben Datensatz anwenden möchten, verwenden Sie für jede Konfiguration eine separate Verbindung.
+* Sie können einen Ereignis-Datensatz nur einmal als Teil einer einzelnen Verbindung zuordnen. Sie können denselben Ereignisdatensatz nicht mehrmals definieren und für jede Instanz eine separate Stitching-Konfiguration verwenden. Wenn Sie verschiedene Zuordnungskonfigurationen auf denselben Datensatz anwenden möchten, verwenden Sie für jede Konfiguration eine separate Verbindung.
 
