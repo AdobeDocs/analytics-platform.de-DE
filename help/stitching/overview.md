@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 exl-id: 1c42efac-b3d2-437b-8b0b-9c6fdfed8520
 role: Admin
-source-git-commit: 9774e0e3af024823a03dbcd8d6766877f55e95d8
+source-git-commit: 359fe2a718ccef816377083aceb2652b4a905072
 workflow-type: tm+mt
-source-wordcount: '792'
-ht-degree: 100%
+source-wordcount: '821'
+ht-degree: 74%
 
 ---
 
@@ -18,13 +18,13 @@ ht-degree: 100%
 >
 >Sie müssen über das **Select**-Paket oder höher (für [feldbasierte Zuordnung](fbs.md)) oder das **Prime**-Paket oder höher (für die [diagrammbasierte Zuordnung](gbs.md)) verfügen, um die in diesem Abschnitt beschriebenen Funktionen zu verwenden. Wenden Sie sich an Ihre Admins, wenn Sie sich nicht sicher sind, welches Customer Journey Analytics-Paket Sie besitzen.
 
-Identitätszuordnung (oder einfach Zuordnung) ist eine leistungsstarke Funktion, die die Eignung eines Ereignis-Datensatzes für die Cross-Channel-Analyse erhöht. Die Cross-Channel-Analyse ist ein Hauptanwendungsfall, den Customer Journey Analytics handhaben kann. So können Sie Berichte auf Basis einer gemeinsamen Kennung (Personen-ID) nahtlos kombinieren und für mehrere Datensätze aus verschiedenen Kanälen ausführen.
+Identitätszuordnung (oder einfach Zuordnung) ist eine leistungsstarke Funktion, die die Eignung eines Ereignis-Datensatzes für die Cross-Channel-Analyse erhöht. Die Cross-Channel-Analyse ist ein Hauptanwendungsfall für Customer Journey Analytics. Mit der Funktion können Sie Berichte auf der Grundlage einer gemeinsamen Kennung (Personen-ID) nahtlos mit mehreren Datensätzen aus verschiedenen Kanälen kombinieren und ausführen.
 
-Wenn Sie Datensätze mit ähnlichen Personen-IDs kombinieren, wird die Attribution geräte- und kanalübergreifend übernommen. Beispiel: Ein Benutzer besucht Ihre Site zum ersten Mal über eine Werbeanzeige auf seinem Desktop. Dieser Benutzer stößt bei seiner Bestellung auf ein Problem und ruft dann Ihren Kundendienst an, um das Problem zu beheben. Mit der Cross-Channel-Analyse können Sie Callcenter-Ereignisse der Anzeige zuordnen, auf die ursprünglich geklickt wurde.
+Wenn Sie Datensätze mit ähnlichen Personen-IDs kombinieren, wird die Attribution geräte- und kanalübergreifend übernommen. Ein Benutzer besucht Ihre Site beispielsweise über eine Anzeige auf seinem Desktop-Computer. Die Benutzenden kaufen ein Produkt, aber dann stößt der Benutzende auf ein Problem mit der Bestellung. Der Benutzer ruft dann Ihr Kundendienst-Team an, um das Problem zu beheben. Bei der kanalübergreifenden Analyse können Sie Callcenter-Ereignisse der Anzeige zuordnen, auf die der Benutzer ursprünglich geklickt hat.
 
-Leider sind nicht alle ereignisbasierten Datensätze, die Teil Ihrer Verbindung in Customer Journey Analytics sind, ausreichend mit Daten gefüllt, um diese Attribution standardmäßig zu unterstützen. Insbesondere bei Web- oder Mobile-basierten Erlebnisdatensätzen steht häufig keine tatsächlichen Informationen zur Personen-ID zu allen Ereignissen zur Verfügung.
+Leider sind nicht alle ereignisbasierten Datensätze, die Teil Ihrer Verbindung in Customer Journey Analytics sind, ausreichend mit Daten gefüllt, um diese Attribution standardmäßig zu unterstützen. Insbesondere bei Web- oder mobilen Erlebnisdatensätzen stehen häufig nicht bei allen Ereignissen tatsächliche Personen-ID-Informationen zur Verfügung.
 
-Durch die Zuordnung können Identitäten innerhalb der Zeilen eines Datensatzes neu zugewiesen werden, um sicherzustellen, dass die Personen-ID (zugeordnete ID) für jedes Ereignis verfügbar ist. Bei der Zuordnung werden Benutzerdaten aus authentifizierten und nicht authentifizierten Sitzungen untersucht, um den allgemeinen Wert für die vorübergehende ID (Personen-ID) zu ermitteln, der als zugeordnete ID verwendet werden kann. Diese erneute Zuweisung ermöglicht die Auflösung verschiedener Einträge zu einer einzelnen zugeordneten ID für die Analyse auf Personenebene, statt auf Geräte- oder Cookie-Ebene.
+Durch das Zusammenfügen können Sie Identitäten in den Zeilen eines Datensatzes neu zuweisen, um sicherzustellen, dass die Personen-ID (zusammengefügte ID) für jedes Ereignis verfügbar ist. Beim Zusammenfügen werden Benutzerdaten aus authentifizierten und nicht authentifizierten Sitzungen betrachtet, um den allgemeinen Wert der Personen-ID zu ermitteln, der als zusammengefügte ID verwendet werden kann. Diese Neuzuweisung ermöglicht die Auflösung unterschiedlicher Datensätze zu einer einzigen zusammengefügten ID für die Analyse auf Personenebene und nicht auf Geräte- oder Cookie-Ebene.
 
 Customer Journey Analytics unterstützt zwei Arten der Zuordnung: [Feldbasierte Zuordnung](fbs.md) und [Diagrammbasierte Zuordnung](gbs.md).
 
@@ -45,6 +45,12 @@ Bevor Sie die Zuordnung verwenden, sollten Sie sicherstellen, dass Ihr Unternehm
 
 Sie profitieren von der Cross-Channel-Analyse, wenn Sie einen oder mehrere Ihrer zugeordneten Datensätze als Teil der Definition Ihrer Customer Journey Analytics-Verbindung mit anderen Datensätzen kombinieren, z. B. Callcenter-Daten. Bei dieser Verbindungskonfiguration wird davon ausgegangen, dass diese anderen Datensätze bereits eine Personen-ID in jeder Zeile enthalten, ähnlich der zugeordneten ID.
 
+## Zusammenfügung aktivieren
+
+Sie können das Zusammenfügen auf zwei Arten aktivieren:
+
+- [Anfrage zum Aktivieren der Zuordnung](/help/stitching/use-stitching.md)
+- [Zusammenfügung in der Verbindungsschnittstelle aktivieren](/help/stitching/use-stitching-ui.md) [!BADGE Beta]{type=Informative}
 
 ## Einschränkungen
 
@@ -85,8 +91,8 @@ Die Zuordnung unterstützt die folgenden automatisch generierten Journey Optimiz
 
 >[!MORELIKETHIS]
 >
->[Feldbasierte Zuordnung](fbs.md)
->>[Diagrammbasierte Zuordnung](gbs.md)
+>[Feldbasiertes Stitching](fbs.md)
+>>[Diagrammbasiertes Stitching](gbs.md)
 >>[Verwenden der Zuordnung](use-stitching.md)
 >>[Validieren der Zuordnung](validate.md)
 >>[Häufig gestellte Fragen zur Zuordnung](faq.md)

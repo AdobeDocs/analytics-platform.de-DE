@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 exl-id: f4115164-7263-40ad-9706-3b98d0bb7905
 role: Admin
-source-git-commit: 4cea79a6ba26a2e4f06bfc9c60fdfc03341a7d60
+source-git-commit: 359fe2a718ccef816377083aceb2652b4a905072
 workflow-type: tm+mt
-source-wordcount: '2084'
-ht-degree: 25%
+source-wordcount: '2069'
+ht-degree: 23%
 
 ---
 
@@ -22,9 +22,9 @@ Im Folgenden finden Sie einige häufig gestellte Fragen zum Zusammenfügen:
 
 Sie können eine Flussvisualisierung mit der Dimension „Datensatz-ID“ verwenden.
 
-1. Melden Sie sich bei [Customer Journey Analytics an &#x200B;](https://analytics.adobe.com) erstellen Sie ein leeres Workspace-Projekt.
-2. Wählen Sie auf der linken Seite **[!UICONTROL ** Visualisierungen **]** aus und ziehen Sie eine **[!UICONTROL **&#x200B; Fluss &#x200B;**]**-Visualisierung auf die Arbeitsfläche auf der rechten Seite.
-3. Wählen Sie auf der linken Seite **[!UICONTROL ** Komponenten **]** und ziehen Sie die Dimension **[!UICONTROL ** Datensatz-ID **]** an die mittlere Position mit der Bezeichnung **[!UICONTROL **&#x200B; Dimension oder Element &#x200B;**]**.
+1. Melden Sie sich bei [Customer Journey Analytics an ](https://analytics.adobe.com) erstellen Sie ein leeres Workspace-Projekt.
+2. Wählen Sie auf der linken Seite **[!UICONTROL ** Visualisierungen **]** aus und ziehen Sie eine **[!UICONTROL ** Fluss **]**-Visualisierung auf die Arbeitsfläche auf der rechten Seite.
+3. Wählen Sie auf der linken Seite **[!UICONTROL ** Komponenten **]** und ziehen Sie die Dimension **[!UICONTROL ** Datensatz-ID **]** an die mittlere Position mit der Bezeichnung **[!UICONTROL ** Dimension oder Element **]**.
 4. Dieser Flussbericht ist interaktiv. Um die Flüsse zu nachfolgenden oder vorherigen Seiten zu erweitern, wählen Sie einen der Werte aus. Verwenden Sie das Kontextmenü, um Spalten zu erweitern oder zu reduzieren. Im selben Flussbericht können auch verschiedene Dimensionen verwendet werden.
 
 Wenn Sie die Datensatz-ID-Dimensionselemente umbenennen möchten, können Sie einen Lookup-Datensatz verwenden.
@@ -33,7 +33,7 @@ Wenn Sie die Datensatz-ID-Dimensionselemente umbenennen möchten, können Sie ei
 
 ## Wiederholen
 
-+++ Wie weit zurück werden Besucher beim Zusammenfügen wiederholt?
++++ Wie weit zurück werden beim Zusammenfügen Wiederholprofile wiedergegeben?
 
 Das Lookback-Fenster für die Neuzuweisung hängt von der gewünschten Häufigkeit der Datenwiederholung ab. Wenn Sie beispielsweise das Zusammenfügen einrichten, um Daten einmal wöchentlich wiederzugeben, beträgt das Lookback-Fenster für die Neuzuweisung sieben Tage. Wenn Sie die Zuordnung so einrichten, dass Daten jeden Tag wiederholt werden, beträgt das Lookback-Fenster für die Neuzuweisung einen Tag.
 
@@ -45,9 +45,9 @@ Das Lookback-Fenster für die Neuzuweisung hängt von der gewünschten Häufigke
 
 In einigen Situationen ist es möglich, dass sich mehrere Personen von demselben Gerät aus anmelden. Beispiele dafür sind freigegebene Geräte zu Hause, freigegebene PCs in einer Bibliothek oder ein Terminal in einem Einzelhandelsgeschäft.
 
-Die vorübergehende ID setzt die beständige ID außer Kraft, sodass freigegebene Geräte als separate Personen betrachtet werden (auch wenn sie von demselben Gerät stammen).
+Die Personen-ID überschreibt die persistente ID, sodass freigegebene Geräte als separate Personen betrachtet werden (auch wenn sie von demselben Gerät stammen).
 
-Weitere Informationen finden Sie [&#x200B; Anwendungsbeispiel &#x200B;](/help/use-cases/stitching/shared-devices.md)Freigegebene Geräte“.
+Weitere Informationen finden Sie [ Anwendungsbeispiel ](/help/use-cases/stitching/shared-devices.md)Freigegebene Geräte“.
 
 +++
 
@@ -57,7 +57,7 @@ Weitere Informationen finden Sie [&#x200B; Anwendungsbeispiel &#x200B;](/help/us
 
 In einigen Fällen kann eine einzelne benutzende Person mit mehreren beständigen IDs verknüpft sein. Ein Beispiel hierfür ist eine Person, die häufig Cookies des Browsers löscht oder den Privat-/Inkognito-Modus des Browsers verwendet.
 
-Bei der feldbasierten Zuordnung ist die Anzahl der persistenten IDs zugunsten der vorübergehenden ID irrelevant. Ein einzelner Benutzer kann zu einer beliebigen Anzahl von Geräten gehören, ohne dass sich dies auf die Fähigkeit von Customer Journey Analytics auswirkt, Zuordnungen geräteübergreifend vorzunehmen.
+Bei der feldbasierten Zuordnung ist die Anzahl der persistenten IDs zugunsten der Personen-ID irrelevant. Ein einzelner Benutzer kann zu einer beliebigen Anzahl von Geräten gehören, ohne dass sich dies auf die Fähigkeit von Customer Journey Analytics auswirkt, Zuordnungen geräteübergreifend vorzunehmen.
 
 Bei der diagrammbasierten Zuordnung kann eine einzelne Person über viele beständige IDs im Identitätsdiagramm verfügen. Diagrammbasiertes Stitching verwendet die persistente ID basierend auf dem angegebenen Namespace. Falls es persistentere ID für denselben Namespace gibt, wird die lexikografische erste persistente ID verwendet.
 
@@ -94,20 +94,20 @@ Adobe bearbeitet Datenschutzanfragen in Übereinstimmung mit lokalen und interna
 
 Zur Veranschaulichung stellen Sie sich die folgenden Daten für Identitäten, Ereignisse vor und nach dem Zusammenfügen vor.
 
-| Identitätszuordnung | ID | timestamp | Persistente ID | Persistenter Namespace | Vorübergehende ID | Übergangs-Namespace |
+| Identitätszuordnung | ID | timestamp | Persistente ID | Persistenter Namespace | Personen-IO | Personen-Namespace |
 |---|---|---|---|---|---|---|
 |  | 1 | ts1 | 123 | ECID | Bob | CustId |
 |  | 2 | ts2 | 123 | ECID | Alex | CustId |
 
 
-| Ereignis-Datensatz | ID | timestamp | Persistente ID | Persistenter Namespace | Vorübergehende ID | Übergangs-Namespace |
+| Ereignis-Datensatz | ID | timestamp | Persistente ID | Persistenter Namespace | Personen-ID | Personen-Namespace |
 |---|---|---|---|---|---|---|
 | | 1 | ts0 | 123 | ECID | | |
 | | 2 | ts1 | 123 | ECID | Bob | CustId |
 | | 3 | ts2 | 123 | ECID | Alex | CustId |
 
 
-| Zusammengefügter Datensatz | ID | timestamp | Persistente ID | Persistenter Namespace | Vorübergehende ID | Übergangs-Namespace | Angeheftete ID | Zusammengefügter Namespace |
+| Zusammengefügter Datensatz | ID | timestamp | Persistente ID | Persistenter Namespace | Personen-ID | Personen-Namespace | Zusammengefügte ID | Zusammengefügter Namespace |
 |---|---|---|---|---|---|---|---|---|
 | | 1 | ts0 | 123 | ECID | | | Bob | CustId |
 | | 2 | ts1 | 123 | ECID | Bob | CustId | Bob | CustId |
@@ -118,20 +118,20 @@ Zur Veranschaulichung stellen Sie sich die folgenden Daten für Identitäten, Er
 
 Wenn eine Datenschutzanfrage für einen Kunden mit CustID Bob empfangen wird, werden die Zeilen mit durchgestrichenen Einträgen gelöscht. Andere Ereignisse werden mithilfe der Identitätszuordnung neu zugeordnet. Beispielsweise wird die erste zusammengefügte ID im zusammengefügten Datensatz auf &quot;**&quot;**.
 
-| Identitätszuordnung | ID | timestamp | Persistente ID | Persistenter Namespace | Vorübergehende ID | Übergangs-Namespace |
+| Identitätszuordnung | ID | timestamp | Persistente ID | Persistenter Namespace | Personen-ID | Personen-Namespace |
 |:---:|---|---|---|---|---|---|
 | ![DeleteOutline](/help/assets/icons/DeleteOutline.svg) | ~~1~~ | ~~ts1~~ | ~~123~~ | ~~ECID~~ | ~~Bob~~ | ~~CustId~~ |
 |  | 2 | ts2 | 123 | ECID | Alex | CustId |
 
 
-| Ereignis-Datensatz | ID | timestamp | Persistente ID | Persistenter Namespace | Vorübergehende ID | Übergangs-Namespace |
+| Ereignis-Datensatz | ID | timestamp | Persistente ID | Persistenter Namespace | Personen-ID | Personen-Namespace |
 |:---:|---|---|---|---|---|---|
 | | 1 | ts0 | 123 | ECID | | |
 | ![DeleteOutline](/help/assets/icons/DeleteOutline.svg) | ~~2~~ | ~~ts1~~ | ~~123~~ | ~~ECID~~ | ~~Bob~~ | ~~CustId~~ |
 | | 3 | ts2 | 123 | ECID | Alex | CustId |
 
 
-| Zusammengefügter Datensatz | ID | timestamp | Persistente ID | Persistenter Namespace | Vorübergehende ID | Übergangs-Namespace | Angeheftete ID | Zusammengefügter Namespace |
+| Zusammengefügter Datensatz | ID | timestamp | Persistente ID | Persistenter Namespace | Personen-ID | Personen-Namespace | Zusammengefügte ID | Zusammengefügter Namespace |
 |:---:|---|---|---|---|---|---|---|---|
 | | 1 | ts0 | 123 | ECID | | | **Alex** | CustId |
 | ![DeleteOutline](/help/assets/icons/DeleteOutline.svg) | ~~2~~ | ~~ts1~~ | ~~123~~ | ~~ECID~~ | ~~Bob~~ | ~~CustId~~ | ~~Bob~~ | ~~CustId~~ |
@@ -142,20 +142,20 @@ Wenn eine Datenschutzanfrage für einen Kunden mit CustID Bob empfangen wird, we
 
 Wenn eine Datenschutzanfrage für einen Kunden mit CustID Bob empfangen wird, werden die Zeilen mit durchgestrichenen Einträgen gelöscht. Andere Ereignisse werden mit der persistenten ID neu zugeordnet. Beispielsweise wird die erste zusammengefügte ID im zusammengefügten Datensatz auf **123)**.
 
-| Identitätszuordnung | ID | timestamp | Persistente ID | Persistenter Namespace | Vorübergehende ID | Übergangs-Namespace |
+| Identitätszuordnung | ID | timestamp | Persistente ID | Persistenter Namespace | Personen-ID | Personen-Namespace |
 |:---:|---|---|---|---|---|---|
 | ![DeleteOutline](/help/assets/icons/DeleteOutline.svg) | ~~1~~ | ~~ts1~~ | ~~123~~ | ~~ECID~~ | ~~Bob~~ | ~~CustId~~ |
 |  | 2 | ts2 | 123 | ECID | Alex | CustId |
 
 
-| Ereignis-Datensatz | ID | timestamp | Persistente ID | Persistenter Namespace | Vorübergehende ID | Übergangs-Namespace |
+| Ereignis-Datensatz | ID | timestamp | Persistente ID | Persistenter Namespace | Personen-ID | Personen-Namespace |
 |:---:|---|---|---|---|---|---|
 | | 1 | ts0 | 123 | ECID | | |
 | ![DeleteOutline](/help/assets/icons/DeleteOutline.svg) | ~~2~~ | ~~ts1~~ | ~~123~~ | ~~ECID~~ | ~~Bob~~ | ~~CustId~~ |
 | | 3 | ts2 | 123 | ECID | Alex | CustId |
 
 
-| Zusammengefügter Datensatz | ID | timestamp | Persistente ID | Persistenter Namespace | Vorübergehende ID | Übergangs-Namespace | Angeheftete ID | Zusammengefügter Namespace |
+| Zusammengefügter Datensatz | ID | timestamp | Persistente ID | Persistenter Namespace | Personen-ID | Personen-Namespace | Zusammengefügte ID | Zusammengefügter Namespace |
 |:---:|---|---|---|---|---|---|---|---|
 | | 1 | ts0 | 123 | ECID | | | **123** | ECID |
 | ![DeleteOutline](/help/assets/icons/DeleteOutline.svg) | ~~2~~ | ~~ts1~~ | ~~123~~ | ~~ECID~~ | ~~Bob~~ | ~~CustId~~ | ~~Bob~~ | ~~CustId~~ |
@@ -165,23 +165,23 @@ Wenn eine Datenschutzanfrage für einen Kunden mit CustID Bob empfangen wird, we
 
 ## Leere persistente ID-Werte
 
-+++ Was passiert, wenn das Feld „Persistent ID“ in einem oder mehreren Ereignissen leer ist?
++++ Was passiert, wenn das Feld „Persistente ID“ in einem oder mehreren Ereignissen leer ist?
 
-Wenn das Feld „Persistente ID“ bei einem Ereignis in einem Datensatz, der zugeordnet wird, leer ist, wird die zugeordnete ID für dieses Ereignis auf eine dieser zwei Arten bestimmt:
+Wenn das Feld für persistente ID bei einem Ereignis in einem Datensatz, der zugeordnet wird, leer ist, wird die zugeordnete ID für dieses Ereignis auf eine dieser zwei Arten bestimmt:
 
-* Wenn das Feld „Vorübergehende ID“ nicht leer ist, verwendet Customer Journey Analytics den Wert in „Vorübergehende ID“ als zugeordnete ID.
-* Wenn das Feld Vorübergehende ID leer ist, lässt Customer Journey Analytics auch die zugeordnete ID leer. In diesem Fall sind die Felder „Persistente ID“, „Vorübergehende ID“ und „Zugeordnete ID“ für das Ereignis leer. Diese Ereignistypen werden aus jeder Customer Journey Analytics-Verbindung herausgenommen, die den zugeordneten Datensatz verwendet, bei dem die zugeordnete ID als Personen-ID ausgewählt wurde.
+* Wenn das Feld für die vorübergehende ID nicht leer ist, verwendet Customer Journey Analytics den Wert in der vorübergehenden ID als zusammengefügte ID.
+* Wenn das Feld Vorübergehende ID leer ist, lässt Customer Journey Analytics auch die zugeordnete ID leer. In diesem Fall sind die Felder „Persistente ID“, „Vorübergehende ID“ und „Zugeordnete ID“ beim Ereignis leer. Diese Ereignistypen werden aus jeder Customer Journey Analytics-Verbindung herausgenommen, die den zugeordneten Datensatz verwendet, bei dem die zugeordnete ID als Personen-ID ausgewählt wurde.
 
 +++
 
 
-## Nicht definierte vorübergehende ID-Werte
+## Nicht definierte Personen-ID-Werte
 
-+++ Was passiert, wenn das Feld „Vorübergehende ID“ in einem oder mehreren Ereignissen Platzhalterwerte enthält, z. B. `Undefined`?
++++ Was passiert, wenn das Personen-ID-Feld in einem oder mehreren Ereignissen Platzhalterwerte enthält, z. B. `Undefined`?
 
 Seien Sie vorsichtig beim „Personen-Kollaps“, der auftritt, wenn das Zusammenfügen auf Daten angewendet wird, die Platzhalterwerte für vorübergehende IDs verwenden. In der folgenden Beispieltabelle werden undefinierte Personen-IDs, die aus einem Datensatz stammen, der aus einem CRM-System stammt, mit dem Wert „Undefiniert“ ausgefüllt, was zu einer falschen Darstellung von Personen führt.
 
-| Ereignis | Zeitstempel | Persistente ID (Cookie-ID) | Vorübergehende ID (Anmelde-ID) | Zusammengefügte ID (nach der Wiederholung) |
+| Ereignis | Zeitstempel | Persistente ID (Cookie-ID) | Vorübergehende ID | Zusammengefügte ID (nach der Wiederholung) |
 |---|---|---|---|---|
 | 1 | 12.05.2023:01 | 123 | – | **Cory** |
 | 2 | 12.05.2023:02 | 123 | Cory | **Cory** |
@@ -217,21 +217,21 @@ Andere Metriken können in Customer Journey Analytics und Adobe Analytics ähnli
 
 +++ Kann Customer Journey Analytics Identity Map-Felder verwenden?
 
-Ja, Customer Journey Analytics kann Identitätszuordnungsfelder sowohl für [&#x200B; (feldbasierte](/help/stitching/fbs.md#identitymap) als auch für [diagrammbasierte](/help/stitching/gbs.md#identitymap) Zuordnung verwenden.
+Ja, Customer Journey Analytics kann Identitätszuordnungsfelder sowohl für [ (feldbasierte](/help/stitching/fbs.md#identitymap) als auch für [diagrammbasierte](/help/stitching/gbs.md#identitymap) Zuordnung verwenden.
 
 +++
 
-## Zu diagrammbasierter Zuordnung wechseln
+## Zu diagrammbasiertem Stitching wechseln
 
-+++ Müssen Daten erneut aufgenommen werden, um von feldbasierter Zuordnung zu diagrammbasierter Zuordnung zu wechseln?
++++ Müssen Daten erneut aufgenommen werden, um von feldbasiertem Stitching zu diagrammbasiertem Stitching zu wechseln?
 
 Daten müssen nicht erneut in Experience Platform aufgenommen werden. Sie müssen jedoch in Customer Journey Analytics neu konfiguriert werden. Führen Sie die folgenden Schritte aus:
 
 1. Richten Sie den neuen diagrammbasierten zugeordneten Datensatz mithilfe der diagrammbasierten Zuordnung ein.
 1. Erstellen Sie eine neue temporäre Verbindung mit einem sehr kleinen Zeitfenster an Daten.
 1. Konfigurieren Sie den neuen diagrammbasierten Datensatz als Teil dieser temporären Verbindung.
-1. Überprüfen Sie mit dieser neuen temporären Verbindung, ob die diagrammbasierte Zuordnung ordnungsgemäß funktioniert.
-1. Wenn die diagrammbasierte Zuordnung erwartungsgemäß funktioniert, fordern Sie eine zusätzliche Aufstockung für den diagrammbasierten Datensatz an und tauschen Sie dann den feldbasierten Datensatz in Ihrer ursprünglichen Verbindung mit dem neuen diagrammbasierten Datensatz aus.
+1. Überprüfen Sie mit dieser neuen temporären Verbindung, ob das diagrammbasierte Stitching ordnungsgemäß funktioniert.
+1. Wenn das diagrammbasierte Stitching erwartungsgemäß funktioniert, fordern Sie eine zusätzliche Aufstockung für den diagrammbasierten Datensatz an und tauschen Sie dann den feldbasierten Datensatz in Ihrer ursprünglichen Verbindung mit dem neuen diagrammbasierten Datensatz aus.
 1. Entfernen Sie die temporäre Verbindung.
 
 +++
@@ -275,6 +275,6 @@ curl -X POST \
 
 Jede Verwendung des `unifiedProfile`-Tags in der Anfrage gibt einen Fehler zurück, obwohl Sie nicht für das Echtzeit-Kundendatenprofil lizenziert sind.
 
-Weitere [&#x200B; finden Sie unter „Erstellen eines Datensatzes, der für Profil und &#x200B;](https://experienceleague.adobe.com/de/docs/experience-platform/catalog/datasets/enable-for-profile#create-a-dataset-enabled-for-profile-and-identity) aktiviert ist“.
+Weitere [ finden Sie unter „Erstellen eines Datensatzes, der für Profil und ](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/enable-for-profile#create-a-dataset-enabled-for-profile-and-identity) aktiviert ist“.
 
 +++ 
