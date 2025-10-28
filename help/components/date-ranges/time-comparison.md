@@ -4,22 +4,28 @@ title: Datumsvergleich
 feature: Calendar
 exl-id: 08113536-658f-486b-ac56-6c531240c3c2
 role: User
-source-git-commit: 1891f73f4326a178b293e7c3763d0d1dbc000a25
+source-git-commit: 5a9cb206076755d5b34a8ec9108ca88a9468bfe3
 workflow-type: tm+mt
-source-wordcount: '683'
-ht-degree: 95%
+source-wordcount: '757'
+ht-degree: 82%
 
 ---
 
 # Datumsvergleich
 
-Mit dem Datumsvergleich in Analysis Workspace können Sie mit einer Spalte, die einen Datumsbereich enthält, einen allgemeinen Datumsvergleich erstellen, z. B. Jahres-, Quartals-, Monatsvergleich usw.
+Mit dem Datumsvergleich in Analysis Workspace können Sie eine beliebige Spalte mit einem Datumsbereich verwenden und einen allgemeinen Datumsvergleich erstellen, z. B. Jahres-, Quartals- oder Monatsvergleich.
 
 ## Zeiträume vergleichen
 
 Für Analysen wird Kontext benötigt, der oft durch einen vorherigen Zeitraum geliefert wird. Beispielsweise ist *Wie viel besser/schlechter geht es uns im Vergleich zu diesem Zeitpunkt letztes Jahr?* eine zentrale Frage, um Ihr Geschäft zu verstehen. Der Datumsvergleich enthält automatisch eine Spalte *Differenz*, die die prozentuale Veränderung im Vergleich zu einem bestimmten Zeitraum angibt.
 
 1. Erstellen Sie eine [Freiformtabelle](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) mit beliebigen Dimensionen und Metriken, die Sie mit einem bestimmten Zeitraum vergleichen möchten.
+1. Legen Sie den Zeitraum auf dem Bedienfeld oder der Spalte fest, um den Vergleichszeitrahmen zu bestimmen und um festzulegen, ob es sich um einen rollierenden oder einen festen Zeitvergleich handelt.
+
+   Um einen rollierenden Zeitvergleich zu erstellen, legen Sie den Datumsbereich des Bedienfelds oder der Spalte auf einen rollierenden Datumsbereich fest (z. B. **[!UICONTROL Letzte 7 Tage]**, **[!UICONTROL Letzte 30]** usw.).
+
+   Um einen festen Zeitvergleich zu erstellen, legen Sie für den Datumsbereich des Bedienfelds oder der Spalte einen benutzerdefinierten Datumsbereich fest.
+
 1. Öffnen Sie das Kontextmenü für eine Tabellenzeile und wählen Sie **[!UICONTROL Zeiträume vergleichen]** aus.
 
    ![Tabellenzeile mit ausgewählter Option „Zeiträume vergleichen“](assets/compare-time.png)
