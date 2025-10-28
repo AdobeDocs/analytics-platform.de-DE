@@ -92,8 +92,8 @@ Die Zuordnung unterstützt die folgenden automatisch generierten Journey Optimiz
 >[!MORELIKETHIS]
 >
 >[Feldbasiertes Stitching](fbs.md)
->>[Diagrammbasiertes Stitching](gbs.md)
->>[Verwenden der Zuordnung](use-stitching.md)
->>[Validieren der Zuordnung](validate.md)
->>[Häufig gestellte Fragen zur Zuordnung](faq.md)
+>&#x200B;>[Diagrammbasiertes Stitching](gbs.md)
+>&#x200B;>[Verwenden der Zuordnung](use-stitching.md)
+>&#x200B;>[Validieren der Zuordnung](validate.md)
+>&#x200B;>[Häufig gestellte Fragen zur Zuordnung](faq.md)
 

@@ -30,7 +30,7 @@ So aktivieren Sie die Zuordnung für einen Ereignis-Datensatz in der Connections
    * Mehrere Felder, die als Identität konfiguriert sind und es Ihnen ermöglichen, verschiedene Werte für eine persistente ID und eine Personen-ID auszuwählen.
    * Mindestens ein Feld, das als primäre Identität mit einem zugehörigen Namespace markiert ist, falls Sie Identity Map verwenden möchten, und der primäre Identity-Namespace für die persistente ID oder Personen-ID.
 
-* Der Ereignisdatensatz muss für [ Identity Service aktiviert sein](/help/stitching/faq.md#enable-a-dataset-for-the-identity-service) falls Sie das Identitätsdiagramm und die diagrammbasierte Zuordnung verwenden möchten.
+* Der Ereignisdatensatz muss für [&#x200B; Identity Service aktiviert sein](/help/stitching/faq.md#enable-a-dataset-for-the-identity-service) falls Sie das Identitätsdiagramm und die diagrammbasierte Zuordnung verwenden möchten.
 
 
 ## Vorflugkontrollen
@@ -141,7 +141,7 @@ Nachdem Sie eine Verbindung gespeichert haben, die Datensätze enthält, die fü
 
 ## Einschränkungen
 
-Zusätzlich zu den [feldbasierten ](/help/stitching/fbs.md#limitations) und [Diagrammbasierten Zuordnungsbeschränkungen](/help/stitching/gbs.md#limitations) gelten die folgenden Einschränkungen, wenn Sie die Zuordnung in der Verbindungsschnittstelle aktivieren:
+Zusätzlich zu den [feldbasierten &#x200B;](/help/stitching/fbs.md#limitations) und [Diagrammbasierten Zuordnungsbeschränkungen](/help/stitching/gbs.md#limitations) gelten die folgenden Einschränkungen, wenn Sie die Zuordnung in der Verbindungsschnittstelle aktivieren:
 
 * Sie können einen Ereignis-Datensatz nur einmal als Teil einer einzelnen Verbindung zuordnen. Sie können denselben Ereignisdatensatz nicht mehr als einen definieren und für jede Instanz eine separate Stitching-Konfiguration verwenden. Wenn Sie verschiedene Zuordnungskonfigurationen auf denselben Datensatz anwenden möchten, verwenden Sie für jede Konfiguration eine separate Verbindung.
 
