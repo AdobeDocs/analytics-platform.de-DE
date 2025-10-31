@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie Freiformtabellen verwenden, die die Grundlage
 feature: Visualizations
 exl-id: e5ba9089-c575-47b3-af85-b8b2179396ac
 role: User
-source-git-commit: c4c8c0ff5d46ec455ca5333f79d6d8529f4cb87d
+source-git-commit: 75ceeda8f13abba92ff555505b6ebae025533d02
 workflow-type: tm+mt
-source-wordcount: '785'
-ht-degree: 92%
+source-wordcount: '784'
+ht-degree: 93%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 92%
 
 >[!BEGINSHADEBOX]
 
-_In diesem Artikel wird die Visualisierung „Freiformtabelle“ in_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics** beschrieben._<br/>_Unter [Freiformtabelle](https://experienceleague.adobe.com/de/docs/analytics/analyze/analysis-workspace/visualizations/freeform-table/freeform-table) finden Sie die Version dieses Artikels für_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics**._
+_In diesem Artikel wird die Visualisierung „Freiformtabelle“ in_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics** beschrieben._<br/>_Unter [Freiformtabelle](https://experienceleague.adobe.com/de/docs/analytics/analyze/analysis-workspace/visualizations/freeform-table/freeform-table) finden Sie die Version dieses Artikels für_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**._
 
 >[!ENDSHADEBOX]
 
@@ -48,7 +48,7 @@ Am schnellsten können Sie eine Tabelle erstellen, indem Sie Komponenten direkt 
 
 Wenn Sie Ihrer Tabelle lieber zuerst mehrere Komponenten hinzufügen und dann die Daten rendern möchten, können Sie **[!UICONTROL Tabellengenerator aktivieren]** auswählen. Wenn der Builder aktiviert ist, können Sie Dimensionen, Aufschlüsselungen, Metriken und Segmente per Drag-and-Drop verschieben, um Tabellen zu erstellen, die komplexere Fragen beantworten. Die Daten werden nach Auswahl von **[!UICONTROL Erstellen]** aktualisiert.
 
-![Ein Freiformtabellen-Builder mit &#x200B;](assets/table-builder.png)
+![Ein Freiformtabellen-Builder mit ](assets/table-builder.png)
 
 ## Interaktionen
 
@@ -56,7 +56,7 @@ Es gibt verschiedene Arten, mit Freiformtabellen zu interagieren und sie anzupas
 
 ### Filtern und Sortieren
 
-* Sie können [&#x200B; Daten &#x200B;](filter-and-sort.md) einer Tabelle segmentieren und sortieren.
+* Sie können die Daten in einer Tabelle [filtern und sortieren](filter-and-sort.md).
 
 ### Zeilen
 
@@ -97,7 +97,7 @@ Die folgenden [Kontextmenü](../freeform-analysis-visualizations.md#context-menu
 
 | Option | Beschreibung |
 | --- | --- |
-| **[!UICONTROL Kopierte Visualisierung einfügen]**&#x200B;n | Fügen Sie eine kopierte Visualisierung an einer anderen Stelle innerhalb des Projekts oder in ein ganz anderes Projekt ein. |
+| **[!UICONTROL Kopierte Visualisierung einfügen]** | Fügen Sie eine kopierte Visualisierung an einer anderen Stelle innerhalb des Projekts oder in ein ganz anderes Projekt ein. |
 | **[!UICONTROL Daten in die Zwischenablage kopieren]** | Kopieren Sie Daten aus der Visualisierung in die Zwischenablage. |
 | **[!UICONTROL Auswahl in die Zwischenablage kopieren]** | Zum Kopieren der Auswahl aus der Visualisierung in die Zwischenablage. |
 | **[!UICONTROL Objekte als CSV herunterladen (*Dimensionsname*)]** | Zum sofortigen Herunterladen der Dimensionselemente (bis zu maximal 50.000) der Visualisierung auf Ihr lokales Gerät. Maximal 50.000 Dimensionselemente für die ausgewählte Dimension. |
@@ -113,6 +113,6 @@ Die folgenden [Kontextmenü](../freeform-analysis-visualizations.md#context-menu
 >[!MORELIKETHIS]
 >
 >[Hinzufügen einer Visualisierung zu einem Panel](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
->&#x200B;>[Visualisierungseinstellungen](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
->&#x200B;>[Kontextmenü der Visualisierung](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
+>>[Visualisierungseinstellungen](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
+>>[Kontextmenü der Visualisierung](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
 >

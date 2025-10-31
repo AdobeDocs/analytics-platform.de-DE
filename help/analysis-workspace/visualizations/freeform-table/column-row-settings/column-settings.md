@@ -4,10 +4,10 @@ title: Spalteneinstellungen
 feature: Visualizations
 exl-id: b41d8a12-e8d9-405c-ac71-6567397aec6b
 role: User
-source-git-commit: c4c8c0ff5d46ec455ca5333f79d6d8529f4cb87d
+source-git-commit: e8bb2df72cd223713bf63f0e85ea9c9e444cb3e5
 workflow-type: tm+mt
-source-wordcount: '891'
-ht-degree: 89%
+source-wordcount: '910'
+ht-degree: 79%
 
 ---
 
@@ -18,7 +18,7 @@ Mithilfe der [!UICONTROL Spalteneinstellungen] können Sie die Spaltenformatieru
 
 >[!BEGINSHADEBOX]
 
-Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Zeilen- und Spalteneinstellungen in einer Freiformtabelle](https://video.tv.adobe.com/v/328501/?captions=ger&quality=12&learn=on){target="_blank"} finden Sie ein Demovideo.
+Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Zeilen- und Spalteneinstellungen in einer Freiformtabelle](https://video.tv.adobe.com/v/40382/?quality=12&learn=on){target="_blank"} finden Sie ein Demovideo.
 
 {{videoaa}}
 
@@ -84,17 +84,15 @@ Die bedingte Formatierung gilt für Obergrenzen, Mittelwerte und Untergrenzen, d
 
 
 
-Sie können das standardmäßige Attributionsmodell überschreiben, das in &quot;[&quot; konfiguriert &#x200B;](/help/data-views/component-settings/attribution.md).
+Sie können das standardmäßige Attributionsmodell überschreiben, das in &quot;[&quot; konfiguriert ](/help/data-views/component-settings/attribution.md).
 
 >[!NOTE]
 >
->Beachten Sie Folgendes, wenn Sie die Attribution einer Komponente auf ein nicht standardmäßiges Attributionsmodell aktualisieren:
+>Beachten Sie Folgendes, wenn Sie ein nicht standardmäßiges Attributionsmodell für eine Metrik aktivieren:
 >
->* **Bei Verwendung der Komponente in einem Bericht mit *einer einzelnen Dimension*:** Die Attribution der Komponente ignoriert das Zuordnungsmodell, wenn ein nicht standardmäßiges Attributionsmodell verwendet wird.
+>* **Bei Verwendung der Metrik in einem Bericht mit *einer einzelnen Dimension*:** Die Attribution der Metrik überschreibt das für die Dimension festgelegte Zuordnungsmodell. Beispielsweise überschreibt eine Metrik mit der Attribution „Erstkontakt“ eine Dimensionszuordnung „Zuletzt verwendet“.
 >
->* **Bei Verwendung der Komponente in einem Bericht mit *mehreren Dimensionen*:** Die Attribution der Komponente behält das Zuordnungsmodell bei, wenn ein nicht standardmäßiges Attributionsmodell verwendet wird.
->
->   Mehrere Dimensionen sind nur beim [Exportieren von Daten in die Cloud](/help/analysis-workspace/export/export-cloud.md) verfügbar.
+>* **Bei Verwendung der Metrik in einem Bericht mit *mehreren Dimensionen*:** Die Attribution der Metrik wird für jede Dimension zusätzlich zum Zuordnungsmodell angewendet. Beispielsweise wird eine Metrik mit der Attribution „Erstkontakt“ auf eine Dimensionszuordnung „Zuletzt verwendet“ angewendet.
 >
 > Weitere Informationen zur Zuordnung finden Sie unter [Persistenz - Komponenteneinstellungen](/help/data-views/component-settings/persistence.md).
 
