@@ -1,8 +1,8 @@
 ---
 source-git-commit: 7d354ce65f72838c007d2b9faf02848d86fd7c0f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4990'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 # Snippets
@@ -128,7 +128,7 @@ Ein Attributionsmodell bestimmt, welchen Dimensionselementen eine Metrik zugesch
 
 Ein Attributions-Container definiert den gewünschten Umfang für die Attribution. Mögliche Optionen sind:
 
-* **Sitzung:** Blickt bis zum Beginn einer Sitzung zurück, in der eine Konversion stattgefunden hat. Sitzungs-Lookback-Fenster berücksichtigen das [Sitzungs-Timeout](/help/data-views/create-dataview.md#session-settings) in einer Datenansicht. Wenn **[!UICONTROL Sitzung]** ausgewählt ist, wird das [Attributions-Lookback-Fenster](#atribution-lookback-window) automatisch auf **[!UICONTROL Reporting-Fenster]** festgelegt und kann nicht geändert werden.
+* **Sitzung:** Blickt bis zum Beginn einer Sitzung zurück, in der eine Konversion stattgefunden hat. Sitzungs-Lookback-Fenster berücksichtigen das geänderte [Sitzungs-Timeout](/help/data-views/create-dataview.md#session-settings) in einer Datenansicht. Wenn **[!UICONTROL Sitzung]** ausgewählt ist, wird das [Attributions-Lookback-Fenster](#atribution-lookback-window) automatisch auf **[!UICONTROL Reporting-Fenster]** festgelegt und kann nicht geändert werden.
 * **Person**: Untersucht Konversionen ausgehend vom Umfang des Personen-Containers.
 * **Globales Konto** [!BADGE B2B Edition]{type=Informative}: Untersucht Konversionen ausgehend vom Umfang des Containers für globale Konten.
 * **Konten** [!BADGE B2B Edition]{type=Informative}: Untersucht Konversionen ausgehend vom Umfang des Personen-Containers.
@@ -139,7 +139,7 @@ Ein Attributions-Container definiert den gewünschten Umfang für die Attributio
 
 Ein Attributions-Lookback-Fenster ist der Zeitraum, der für eine Konversion rückblickend bei der Erfassung von Touchpoints berücksichtigt werden sollte. Wenn ein Dimensionselement außerhalb des Lookback-Fensters festgelegt wird, wird der Wert in keine Attributionsberechnungen einbezogen.
 
-* **[!UICONTROL Reporting-Fenster]**: Sucht nach dem Beginn des Reporting-Fensters zum Zeitpunkt der Konvertierung.
+* **[!UICONTROL Reporting-Fenster]**: Blickt nach dem Beginn des Reporting-Fensters zum Zeitpunkt der Konvertierung zurück.
 * **14 Tage**: Blickt bis zu 14 Tage nach dem Zeitpunkt zurück, an dem die Konversion stattgefunden hat.
 * **30 Tage**: Blickt bis zu 30 Tage nach dem Zeitpunkt zurück, an dem die Konversion stattgefunden hat.
 * **60 Tage**: Blickt bis zu 60 Tage nach dem Zeitpunkt zurück, an dem die Konversion stattgefunden hat.
@@ -155,7 +155,7 @@ Sehen Sie sich folgendes Beispiel an:
 1. Am 18. September gelangt die Person über einen Link in sozialen Medien, den er von einer Freundin oder einem Freund erhalten hat, erneut auf Ihre Site. Er fügt mehrere Artikel zum Warenkorb hinzu, erwirbt aber nichts.
 1. Am 24. September sendet Ihr Marketing-Team eine E-Mail mit einem Coupon für einige der Artikel im Warenkorb. Der Coupon wird angewendet, der Besucher ruft aber mehrere andere Websites auf, um zu sehen, ob andere Coupons verfügbar sind. Er findet einen weiteren über eine Display-Anzeige und kauft dann letztendlich für 50 Euro ein.
 
-Je nach Berichtszeitraum (z. B. 10. September bis 24. September) erhalten Attributionsmodell, Container und Kanäle unterschiedliche Gutschriften. Beispiele finden Sie in der unten stehenden Tabelle:
+Je nach Reporting-Fenster (z. B. 10. September bis 24. September) erhalten Attributionsmodell, Container und Kanäle unterschiedliche Gutschriften. Beispiele finden Sie in der unten stehenden Tabelle:
 
 | Modell | Container | Lookback-Fenster | Erklärung |
 |---|---|---|---|
