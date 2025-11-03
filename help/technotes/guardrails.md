@@ -85,7 +85,7 @@ Einige der Funktionen und ihr zugehöriger Wert für das Limit hängen vom Custo
 |---|--:|---|---|
 | Zielgruppensegmente | 20 | Vom System erzwungene Leitplanke | Maximale Anzahl [Segmente](../components/segments/seg-overview.md) pro Zielgruppe. |
 | Anzahl der Zielgruppenidentitäten | 20 Million | Vom System erzwungene Leitplanke | Maximale Anzahl von Identitäten pro Zielgruppe. |
-| Häufigkeit der Zielgruppenaktualisierung | 4 | Vom System erzwungene Leitplanke | Die maximale Häufigkeit in Stunden, in [ eine ](../components/audiences/audiences-overview.md) aktualisiert werden kann. |
+| Häufigkeit der Zielgruppenaktualisierung | 4 | Vom System erzwungene Leitplanke | Die maximale Häufigkeit in Stunden, in [&#x200B; eine &#x200B;](../components/audiences/audiences-overview.md) aktualisiert werden kann. |
 | Lookback-Fenster zur Zielgruppenaktualisierung | 90 | Vom System erzwungene Leitplanke | Maximale Anzahl von Tagen für das Aktualisierungs-Lookback-Fenster |
 | Ablaufdatum der Zielgruppe aktualisieren | 13 | Vom System erzwungene Leitplanke | Die maximale Anzahl von Monaten, die die Zielgruppe ab dem Erstellungsdatum nicht mehr aktualisiert wird. Kunden können dies um weitere 13 Monate verlängern. |
 | Anzahl der aktualisierten Zielgruppen | 75 150 | Vom System erzwungene Leitplanke | Maximale Anzahl an Zielgruppen, die aktualisiert werden. Der Wert variiert je nach Customer Journey Analytics-Paket (siehe Produktbeschreibung). |
@@ -119,7 +119,7 @@ Siehe auch Experience Platform [Leitplanken für die Echtzeit-Kundendatenplattfo
 | Dimensionen | 5.000 | Vom System erzwungene Leitplanke | Maximale Anzahl von Dimensionen in einer Datenansicht. |
 | Titel der Anmerkung | 100 | Vom System erzwungene Leitplanke | Maximale Zeichenanzahl für einen Anmerkungstitel. |
 | Beschreibung der Anmerkung | 250 | Vom System erzwungene Leitplanke | Maximale Zeichenanzahl für eine Anmerkungsbeschreibung |
-| Schemafelder | 10 | Vom System erzwungene Leitplanke | Maximale Anzahl von Schemafeldern (ohne Standardfelder) beim Definieren von Regeln für ein ([ Feld](../data-views/derived-fields/derived-fields.md). |
+| Schemafelder | 10 | Vom System erzwungene Leitplanke | Maximale Anzahl von Schemafeldern (ohne Standardfelder) beim Definieren von Regeln für ein ([&#x200B; Feld](../data-views/derived-fields/derived-fields.md). |
 | Lookup-/Profilfelder | 3 | Vom System erzwungene Leitplanke | Maximale Anzahl von Lookup- oder Profilschemafeldern innerhalb der maximalen Anzahl von Schemafeldern (ohne Standardfelder) beim Definieren von Regeln für ein abgeleitetes Feld. |
 | Abgeleitete Felder | 100 - 500 | Vom System erzwungene Leitplanke | Maximale Anzahl abgeleiteter Felder pro Verbindung Der Wert variiert je nach Customer Journey Analytics-Paket (siehe Produktbeschreibung). |
 
@@ -265,7 +265,7 @@ Siehe auch Experience Platform [Leitplanken für den Datensatzexport](https://ex
 
 >[!NOTE]
 >
->Die folgenden Verarbeitungszeiten sind Leitplanken, keine vertraglichen Service Level Agreements (SLAs). Die Latenz variiert je nach Kundenkonfiguration, Datenvolumen und Kundenanwendungen. Häufig sind die tatsächlichen Verarbeitungszeiten schneller. Die spezifischen Vertragsbedingungen und SLAs finden Sie in Ihrem Customer Journey Analytics-Vertrag. Weitere Informationen finden Sie [ Experience Platform ](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html)Leitplanken für die Datenaufnahme).
+>Die folgenden Verarbeitungszeiten sind Leitplanken, keine vertraglichen Service Level Agreements (SLAs). Die Latenz variiert je nach Kundenkonfiguration, Datenvolumen und Kundenanwendungen. Häufig sind die tatsächlichen Verarbeitungszeiten schneller. Die spezifischen Vertragsbedingungen und SLAs finden Sie in Ihrem Customer Journey Analytics-Vertrag. Weitere Informationen finden Sie [&#x200B; Experience Platform &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html)Leitplanken für die Datenaufnahme).
 
 | Datenfluss | Erwartete Latenz |
 |---|---|
