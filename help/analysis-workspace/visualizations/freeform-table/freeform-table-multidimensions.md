@@ -5,9 +5,9 @@ feature: Visualizations
 role: User
 hide: true
 hidefromtoc: true
-source-git-commit: f7a90a42d3c8bea99af2e69e3f86d9ad4e2041bf
+source-git-commit: 9314f7d88834a67efb61d0cc0cceef1ccd2fb9cb
 workflow-type: tm+mt
-source-wordcount: '1274'
+source-wordcount: '1276'
 ht-degree: 2%
 
 ---
@@ -18,13 +18,13 @@ ht-degree: 2%
 
 Sie können bis zu 5 Dimensionsspalten in eine Freiformtabelle einbeziehen, sodass Sie mehrere Dimensionselemente nebeneinander anzeigen können. Jede Reihe von Dimensionselementen verhält sich wie ein einzelnes verkettetes Dimensionselement.
 
-Sie können Filter, Sortierung, Aufschlüsselungen und mehr auf Freiformtabellen mit mehreren Dimensionsspalten anwenden, um eine tiefere und benutzerdefinierte Analyse zu erstellen.
+Sie können Filter, Sortierung, Aufschlüsselungen und mehr auf Freiformtabellen mit mehreren Dimensionsspalten anwenden, um eine tiefere und benutzerspezifischere Analyse zu erstellen.
 
 ## Verkettete Dimensionselemente
 
-Wenn Sie einer Freiformtabelle mehrere Dimensionsspalten hinzufügen, verhält sich jede Zeile mit Dimensionselementen wie ein einzelnes verkettetes Dimensionselement. Mit dieser Funktion können Sie Metrikdaten für bestimmte Kombinationen von Dimensionen anzeigen.
+Wenn Sie [einer Freiformtabelle mehrere Dimensionsspalten hinzufügen](#add-multiple-dimension-columns) verhält sich jede Zeile mit Dimensionselementen wie ein einzelnes verkettetes Dimensionselement. Mit dieser Funktion können Sie Metrikdaten für bestimmte Kombinationen von Dimensionen anzeigen.
 
-Nehmen wir zum Beispiel eine Freiformtabelle mit den Dimensionen _Stadt_, _Gerätetyp_ und _Tag des Monats_ und der Metrik _Ereignisse_. Die 3 Dimensionselemente in der ersten Zeile dieser Tabelle werden zu einem einzigen verketteten Dimensionselement, das zeigt, dass am 30. Tag des Monats 2.056 Ereignisse in Mumbai von Mobiltelefonen aus stattfanden.
+Nehmen wir zum Beispiel eine Freiformtabelle mit den Dimensionsspalten _Stadt_, _Gerätetyp_ und _Tag des Monats_ und der Metrik _Ereignisse_. Die 3 Dimensionselemente in der ersten Zeile dieser Tabelle werden zu einem einzigen verketteten Dimensionselement, das zeigt, dass am 30. Tag des Monats 2.056 Ereignisse in Mumbai von Mobiltelefonen aus stattfanden.
 
 | Dimension: Stadt | Dimension: Gerätetyp | Dimension: Tag des Monats | Metrik: Ereignisse |
 |---------|----------|---------|---------|
@@ -57,13 +57,13 @@ Sie können mehrere Dimensionsspalten gleichzeitig oder stapelweise hinzufügen.
 
      ![Ziehen mehrerer Dimensionen](assets/dimensions-add-multiple.png)
 
-1. Zeigen Sie jede Tabellenzeile als einzelnes Dimensionselement an. Weitere Informationen finden Sie unter [Anzeigen von verketteten Dimensionselementen](#view-concatenated-dimension-items).
+1. Zeigen Sie jede Tabellenzeile als einzelnes Dimensionselement an. Weitere Informationen finden Sie unter [Verkettete Dimensionselemente](#view-concatenated-dimension-items).
 
 ## Filtern von Tabellen
 
 Sie können Filter auf eine oder mehrere Dimensionsspalten in einer Freiformtabelle anwenden.
 
-Informationen zum Filtern von Tabellen finden Sie unter [Tabellen filtern](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md#filter-tables) in [Tabellen filtern und sortieren](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md).
+Weitere Informationen zum Filtern von Tabellen finden Sie unter [Filtern von ](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md#filter-tables)) [Freiformtabellen filtern und sortieren](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md).
 
 ## Sortieren von Tabellen {#sort-tables}
 
@@ -75,7 +75,7 @@ Standardmäßig werden Dimensionen in aufsteigender Reihenfolge und Metriken in 
 
 ### Sortieren von Tabellen nach einer Spalte
 
-Wenn Sie Daten für eine einzelne Spalte sortieren, wie in diesem Abschnitt beschrieben, werden alle [erweiterten &#x200B;](#sort-tables-by-multiple-columns-advanced-sorting)) entfernt, die auf die Tabelle angewendet werden.
+Wenn Sie Daten für eine einzelne Spalte sortieren, wie in diesem Abschnitt beschrieben, werden alle [erweiterten ](#sort-tables-by-multiple-columns-advanced-sorting)) entfernt, die auf die Tabelle angewendet werden.
 
 So sortieren Sie Daten in Tabellen nach einer Spalte:
 
@@ -107,7 +107,7 @@ So sortieren Sie Daten in Tabellen nach mehreren Spalten:
 
    * Fügen Sie Spalten hinzu, die noch nicht sortiert werden, indem Sie die Schaltfläche **[!UICONTROL Sortierspalte hinzufügen]** auswählen.
 
-   * Entfernen Sie Spalten, die Sie nicht mehr sortieren möchten, indem Sie das Symbol **Entfernen** (![) &#x200B;](/help/assets/icons/Close.svg).
+   * Entfernen Sie Spalten, die Sie nicht mehr sortieren möchten, indem Sie das Symbol **Entfernen** (![) ](/help/assets/icons/Close.svg).
 
    * Ziehen Sie Spalten in der Liste nach oben oder unten, um die Sortierpriorität anzupassen.
 
@@ -187,7 +187,7 @@ Darüber hinaus können Sie innerhalb einer Aufschlüsselung mehrere Dimensionss
 
 ![Beispiel für Mehrfachsortierung](assets/dimensions-multiple-sort.png)
 
-Weitere Informationen zum Hinzufügen einer Aufschlüsselung finden Sie unter [Dimensionen &#x200B;](/help/components/dimensions/t-breakdown-fa.md).
+Weitere Informationen zum Hinzufügen einer Aufschlüsselung finden Sie unter [Dimensionen ](/help/components/dimensions/t-breakdown-fa.md).
 
 ## Erstellen eines Segments basierend auf einem Dimensionselement, das sich über mehrere Dimensionsspalten erstreckt
 
