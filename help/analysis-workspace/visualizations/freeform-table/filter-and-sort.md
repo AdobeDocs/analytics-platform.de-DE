@@ -4,20 +4,20 @@ title: Filtern und Sortieren
 feature: Visualizations
 exl-id: 3af637ec-bb6c-49b7-a7b3-e1d310e71101
 role: User
-source-git-commit: 1d760139bd988097486e5c151364f291ad8e243d
+source-git-commit: f7a90a42d3c8bea99af2e69e3f86d9ad4e2041bf
 workflow-type: tm+mt
-source-wordcount: '1133'
+source-wordcount: '1134'
 ht-degree: 65%
 
 ---
 
-# Filtern und Sortieren von Tabellen
+# Filtern und Sortieren von Freiformtabellen
 
 Freiformtabellen in Analysis Workspace bilden die Grundlage für die interaktive Datenanalyse. Daher können sie Tausende von Informationszeilen enthalten. Das Filtern und Sortieren der Daten kann ein wichtiger Teil der effizienten Aufdeckung der wichtigsten Informationen sein.
 
 <!--The following video covers filter and sort options in Analysis Workspace, in addition to pagination options:
 
->[!VIDEO](https://video.tv.adobe.com/v/327342?captions=ger)-->
+>[!VIDEO](https://video.tv.adobe.com/v/23968)-->
 
 ## Filtern von Tabellen
 
@@ -128,7 +128,7 @@ Spaltensummen sind in den folgenden Szenarien möglicherweise nicht exakt:
 
 ### Verwenden von Zielgruppensegmenten
 
-Weitere Informationen finden [&#x200B; unter &#x200B;](/help/components/segments/seg-overview.md)Segmentierung - Übersicht“.
+Weitere Informationen finden [ unter ](/help/components/segments/seg-overview.md)Segmentierung - Übersicht“.
 
 ## Sortieren von Tabellen
 
