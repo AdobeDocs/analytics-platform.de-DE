@@ -5,7 +5,7 @@ feature: Visualizations
 role: User
 hide: true
 hidefromtoc: true
-source-git-commit: 9314f7d88834a67efb61d0cc0cceef1ccd2fb9cb
+source-git-commit: ad8026237d73784dfe154e7bc0b32a06a3a66eb3
 workflow-type: tm+mt
 source-wordcount: '1276'
 ht-degree: 2%
@@ -63,7 +63,7 @@ Sie können mehrere Dimensionsspalten gleichzeitig oder stapelweise hinzufügen.
 
 Sie können Filter auf eine oder mehrere Dimensionsspalten in einer Freiformtabelle anwenden.
 
-Weitere Informationen zum Filtern von Tabellen finden Sie unter [Filtern von &#x200B;](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md#filter-tables)) [Freiformtabellen filtern und sortieren](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md).
+Weitere Informationen zum Filtern von Tabellen finden Sie unter [Filtern von ](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md#filter-tables)) [Freiformtabellen filtern und sortieren](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md).
 
 ## Sortieren von Tabellen {#sort-tables}
 
@@ -75,7 +75,7 @@ Standardmäßig werden Dimensionen in aufsteigender Reihenfolge und Metriken in 
 
 ### Sortieren von Tabellen nach einer Spalte
 
-Wenn Sie Daten für eine einzelne Spalte sortieren, wie in diesem Abschnitt beschrieben, werden alle [erweiterten &#x200B;](#sort-tables-by-multiple-columns-advanced-sorting)) entfernt, die auf die Tabelle angewendet werden.
+Wenn Sie Daten für eine einzelne Spalte sortieren, wie in diesem Abschnitt beschrieben, werden alle [erweiterten ](#sort-tables-by-multiple-columns-advanced-sorting)) entfernt, die auf die Tabelle angewendet werden.
 
 So sortieren Sie Daten in Tabellen nach einer Spalte:
 
@@ -89,7 +89,7 @@ So sortieren Sie Daten in Tabellen nach einer Spalte:
 
 ### Sortieren von Tabellen nach mehreren Spalten (erweiterte Sortierung)
 
-{{release-limited-testing-section}}
+<!-- add this back in when move this section back to the filter and sort article: {{release-limited-testing-section}} -->
 
 #### Sortierung auf mehrere Spalten anwenden
 
@@ -107,7 +107,7 @@ So sortieren Sie Daten in Tabellen nach mehreren Spalten:
 
    * Fügen Sie Spalten hinzu, die noch nicht sortiert werden, indem Sie die Schaltfläche **[!UICONTROL Sortierspalte hinzufügen]** auswählen.
 
-   * Entfernen Sie Spalten, die Sie nicht mehr sortieren möchten, indem Sie das Symbol **Entfernen** (![) &#x200B;](/help/assets/icons/Close.svg).
+   * Entfernen Sie Spalten, die Sie nicht mehr sortieren möchten, indem Sie das Symbol **Entfernen** (![) ](/help/assets/icons/Close.svg).
 
    * Ziehen Sie Spalten in der Liste nach oben oder unten, um die Sortierpriorität anzupassen.
 
@@ -175,7 +175,7 @@ Mehrere Dimensionsspalten ermöglichen Folgendes:
 
 Aufschlüsselungen ermöglichen Folgendes:
 
-* Aufschlüsseln eines Dimensionselements in der Freiformtabelle nach einer sekundären Dimension. Für die sekundäre Dimension können bis zu 200 Dimensionselemente angezeigt werden.
+* Aufschlüsseln eines Dimensionselements in der Freiformtabelle nach einer sekundären Dimension. Für die sekundäre Dimension können bis zu 400 Dimensionselemente angezeigt werden.
 
 ### Hinzufügen von Aufschlüsselungen zu einer Tabelle mit mehreren Dimensionsspalten
 
@@ -187,7 +187,7 @@ Darüber hinaus können Sie innerhalb einer Aufschlüsselung mehrere Dimensionss
 
 ![Beispiel für Mehrfachsortierung](assets/dimensions-multiple-sort.png)
 
-Weitere Informationen zum Hinzufügen einer Aufschlüsselung finden Sie unter [Dimensionen &#x200B;](/help/components/dimensions/t-breakdown-fa.md).
+Weitere Informationen zum Hinzufügen einer Aufschlüsselung finden Sie unter [Dimensionen ](/help/components/dimensions/t-breakdown-fa.md).
 
 ## Erstellen eines Segments basierend auf einem Dimensionselement, das sich über mehrere Dimensionsspalten erstreckt
 

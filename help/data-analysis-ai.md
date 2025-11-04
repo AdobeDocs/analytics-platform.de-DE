@@ -5,10 +5,10 @@ role: User, Admin
 solution: Customer Journey Analytics
 feature: AI Tools
 exl-id: 262d5f15-16cb-4851-a769-7dbd205b2f81
-source-git-commit: 77f350923bb750bf99fe4080e44968f9a52cd7da
+source-git-commit: ad8026237d73784dfe154e7bc0b32a06a3a66eb3
 workflow-type: tm+mt
-source-wordcount: '2489'
-ht-degree: 93%
+source-wordcount: '2491'
+ht-degree: 92%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 93%
 
 >[!AVAILABILITY]
 >
->Data Insights Agent steht berechtigten Kundinnen und Kunden für eine begrenzte Zeit zur Verfügung. Der Zugriff auf Data Insights Agent endet am 30. November 2025. Wenn Sie Data Insights Agent ohne Unterbrechung weiter verwenden möchten, wenden Sie sich an Ihr Adobe-Accountteam, um mehr über die Lizenzierung von Data Insights Agent zu erfahren.
+>Data Insights Agent steht berechtigten Kundinnen und Kunden für eine begrenzte Zeit zur Verfügung. Der Zugriff auf Data Insights Agent ist bis zum 28. Februar 2026 verfügbar. Wenn Sie Data Insights Agent ohne Unterbrechung weiter verwenden möchten, wenden Sie sich an Ihren Adobe-Kundenbetreuer, um mehr über Lizenzierung und Adobe Experience Platform Agent Orchestrator zu erfahren.
 
 Data Insights Agent, auf den über den [KI-Assistenten](/help/ai-assistant.md) in Customer Journey Analytics zugegriffen werden kann, ist ein auf generativer KI basierender Konversationsagent, der Fragen zu Ihren Daten schnell und effizient beantwortet. Er erstellt relevante Visualisierungen in Analysis Workspace mithilfe von Komponenten aus Ihrer Datenansicht und unter Verwendung Ihrer tatsächlichen Daten.
 
@@ -264,7 +264,7 @@ Im Folgenden finden Sie Best Practices für Ihre Customer Journey Analytics-Konf
 >[!MORELIKETHIS]
 >
 >[Einstellungen der Komponente](/help/data-views/component-settings/overview.md)
->&#x200B;>[Datenwörterbuch](/help/components/data-dictionary/data-dictionary-overview.md)
->&#x200B;>[Berechnete Metrik genehmigen](/help/components/calc-metrics/cm-workflow/cm-approving.md)
->&#x200B;>[Segmente freigeben](/help/components/segments/seg-share.md)
+>[Datenwörterbuch](/help/components/data-dictionary/data-dictionary-overview.md)
+>[Berechnete Metrik genehmigen](/help/components/calc-metrics/cm-workflow/cm-approving.md)
+>[Segmente freigeben](/help/components/segments/seg-share.md)
 >
