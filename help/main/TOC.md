@@ -437,9 +437,9 @@ ht-degree: 99%
 
 + Zuordnung {#stitching}
    + [Überblick](/help/stitching/overview.md)
-   + [Feldbasiertes Stitching](/help/stitching/fbs.md)
+   + [Feldbasierte Zuordnung](/help/stitching/fbs.md)
    + [Grafikbasierte Zuordnung](/help/stitching/gbs.md)
-   + [Zuordnung anfordern](/help/stitching/use-stitching.md)
+   + [Anfordern der Zuordnung](/help/stitching/use-stitching.md)
    + [Zuordnung verwenden](/help/stitching/use-stitching-ui.md)
    + [Erstellen und Verwalten zugeordneter Datensätze](/help/stitching/stitching-ui.md)
    + [Validieren der Zuordnung](/help/stitching/validate.md)

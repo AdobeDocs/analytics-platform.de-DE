@@ -8,7 +8,7 @@ exl-id: 262d5f15-16cb-4851-a769-7dbd205b2f81
 source-git-commit: ad8026237d73784dfe154e7bc0b32a06a3a66eb3
 workflow-type: tm+mt
 source-wordcount: '2491'
-ht-degree: 92%
+ht-degree: 98%
 
 ---
 
@@ -64,9 +64,9 @@ Die folgenden Parameter regeln den Zugriff auf Data Insights Agent in Customer J
 
    1. Wählen Sie in der Zeile **[!UICONTROL Reporting-Tools]** der bereitgestellten Tabelle das Bearbeitungssymbol ![Bearbeiten](/help/assets/icons/Edit.svg) aus.
    1. Scrollen Sie zu oder suchen Sie nach **[!UICONTROL KI-Assistent: Produktkenntnisse]** und wählen Sie dann das Plussymbol ![Hinzufügen](/help/assets/icons/AddCircle.svg) neben dieser Berechtigung aus.
-   1. Scrollen Sie zu oder suchen Sie nach **[!UICONTROL Data Insights Agent]** und wählen Sie dann das Pluszeichen ![AddCircle](/help/assets/icons/AddCircle.svg) neben dieser Berechtigung aus.
+   1. Scrollen Sie zu **[!UICONTROL Data Insights Agent]** oder suchen Sie danach und wählen Sie dann das Plussymbol ![Hinzufügen](/help/assets/icons/AddCircle.svg) neben dieser Berechtigung aus.
 
-      Die Berechtigung **[!UICONTROL KI-Assistent: Produktwissen]** und die Berechtigung **[!UICONTROL Data Insights Agent]** werden der Spalte **[!UICONTROL Enthaltene Berechtigungselemente]** hinzugefügt.
+      Die Berechtigung **[!UICONTROL KI-Assistent: Produktkenntnisse]** und die Berechtigung **[!UICONTROL Data Insights Agent]** werden der Spalte **[!UICONTROL Eingeschlossene Berechtigungsobjekte]** hinzugefügt.
 
       ![Hinzufügen einer Berechtigung](assets/ai-assistant-permissions.png)
 
@@ -80,23 +80,23 @@ Die folgenden Parameter regeln den Zugriff auf Data Insights Agent in Customer J
   >
   >Beachten Sie beim Aktivieren von Datenansichten Folgendes:
   >* Sie können maximal 50 Datenansichten pro IMS-Organisation aktivieren. Wenn Sie für ein Unternehmen mehr als 50 Datenansichten für alle Produktprofile aktivieren, verwendet Data Insights Agent die 50 am häufigsten verwendeten Datenansichten.
-  >* Die Data Insights Agent kann die enthaltenen Datenansichten an einem Tag referenzieren, an dem Sie sie aktivieren.
+  >* Data Insights Agent kann im Laufe desselben Tages, an dem Sie ihn aktivieren, auf die enthaltenen Datenansichten verweisen.
 
   So aktivieren Sie Datenansichten für Data Insights Agent:
 
-   1. Wählen Sie in Customer Journey Analytics **[!UICONTROL Daten-Management]** > **[!UICONTROL Datenansichten]**.
+   1. Wählen Sie in Customer Journey Analytics **[!UICONTROL Daten-Management]** > **[!UICONTROL Datenansichten]** aus.
 
-   1. Wählen Sie eine oder mehrere Datenansichten aus, die Sie für Data Insights Agent aktivieren möchten, und wählen Sie dann **[!UICONTROL Für Data Insights Agent aktivieren]**.
+   1. Wählen Sie eine oder mehrere Datenansichten aus, die für Data Insights Agent aktiviert werden sollen, und wählen Sie dann **[!UICONTROL Für Data Insights Agent aktivieren]**.
 
       ![Aktivieren von Datenansichten für Data Insights Agent](assets/data-view-enable-dia.png)
 
   So zeigen Sie die Anzahl der Datenansichten an, die für Data Insights Agent in Ihrer IMS-Organisation aktiviert sind:
 
-   1. Wählen Sie in Customer Journey Analytics **[!UICONTROL Daten-Management]** > **[!UICONTROL Datenansichten]**.
+   1. Wählen Sie in Customer Journey Analytics **[!UICONTROL Daten-Management]** > **[!UICONTROL Datenansichten]** aus.
 
-   1. Wählen Sie das Informationssymbol oben in der Spalte **[!UICONTROL Data Insights Agent]** aus.
+   1. Wählen Sie das Info-Symbol oben in der Spalte **[!UICONTROL Data Insights Agent]** aus.
 
-      ![Infosymbol zu Data Insights Agent](assets/data-insights-agent-tooltip.png)
+      ![Info-Symbol für Data Insights Agent](assets/data-insights-agent-tooltip.png)
 
 ## Zugreifen auf den Data Insights Agent im KI-Assistenten
 
