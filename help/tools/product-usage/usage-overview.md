@@ -2,10 +2,10 @@
 title: Produktnutzungsübersicht
 description: Zeigen Sie Erkenntnisse und Berichte dazu an, wie Ihre Organisation Customer Journey Analytics nutzt.
 exl-id: 3806ca7c-ee90-4222-9ffd-2e791c4550e5
-source-git-commit: 5b5d4cb17ee73415dbd77bbf0964fc3d4e513cf0
-workflow-type: ht
-source-wordcount: '632'
-ht-degree: 100%
+source-git-commit: 22f3059ffef5df76028f36ffa00da8f98956dee1
+workflow-type: tm+mt
+source-wordcount: '657'
+ht-degree: 91%
 
 ---
 
@@ -22,7 +22,9 @@ Alle Datenerfassungs- und Einrichtungsoptionen werden nach der Aktivierung autom
 
 >[!IMPORTANT]
 >
->Diese Funktion zählt für Ihre vertraglichen Zeilenbeschränkungen in Adobe Experience Platform. Stellen Sie sicher, dass Ihre Organisation die von dieser Funktion generierten Daten verarbeiten kann, bevor Sie sie aktivieren.
+>Die Aktivierung der Produktnutzung führt dazu, dass Nutzungsdaten in Ihrem Adobe Experience Platform Data Lake gespeichert werden. Stellen Sie sicher, dass die Data-Lake-Speicherzuweisung Ihres Unternehmens die zusätzlichen Datensätze aufnehmen kann, die durch die Aktivierung dieser Funktion generiert werden.
+>
+>Diese Funktion wird nicht auf Ihre lizenzierten Customer Journey Analytics-Zeilenbeschränkungen oder Ereignisdatenberechtigungen angerechnet.
 
 ## Produktnutzung aktivieren
 
