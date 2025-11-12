@@ -4,10 +4,10 @@ title: Verwenden von Vorlagen
 feature: Workspace Basics
 role: User, Admin
 exl-id: d61f215d-9089-4014-9c5a-97f5d7134f34
-source-git-commit: e8cba64e706a456861fd8392ce9260b7a1c4636b
+source-git-commit: d6477006dfa8134521516b6e0665ff487236c10a
 workflow-type: tm+mt
-source-wordcount: '20424'
-ht-degree: 99%
+source-wordcount: '20761'
+ht-degree: 97%
 
 ---
 
@@ -1063,7 +1063,22 @@ Die folgenden Vorlagen sind verfügbar:
 | **Journey Optimizer-Übersichtsbericht** | Zeigen Sie eine ausführliche Zusammenfassung der Traffic- und Interaktionsmetriken für alle Kampagnen und Journeys in Ihrer Umgebung an.<p>**Dies kann Ihnen helfen**, die allgemeine Effektivität Ihrer Kampagnen und Journeys besser zu verstehen.  </p><p>**Basierend auf Ihren Erkenntnissen können Sie** verschiedene Maßnahmen ergreifen, z. B. Ihre Kampagnen und Journeys an die Interaktion Ihrer Zielgruppe anpassen.</p> |
 | **Journey Optimizer-Abonnements** | Zeigen Sie die Abonnements und Abmeldungen von Profilen an, die mit bestimmten Listen verknüpft sind.<p>**Dies kann Ihnen helfen**, die Wirksamkeit verschiedener Abonnementkampagnen und -initiativen zur Förderung von Interaktionen und Konversionen besser zu verstehen.</p><p>**Basierend auf Ihren Erkenntnissen können Sie** verschiedene Maßnahmen ergreifen, z. B. Ihre Abonnementkampagnen an die Interaktion Ihrer Zielgruppe anpassen.</p> |
 
+### Brand Concierge {#brand-concierge-templates}
 
+>[!CONTEXTUALHELP]
+>id="template--brand-concierge-b2c"
+>title="Analysieren Sie die Benutzerinteraktion anhand von Konversationsmustern, Benutzer-Feedback und der Effektivität Ihrer Empfehlungen."
+>abstract="**Dies kann Ihnen dabei helfen** Interaktionsmuster zu identifizieren, die Gesprächsqualität zu bewerten, Trends bei der Kundenzufriedenheit zu verfolgen und die Effektivität von Link-Empfehlungen zu messen.<br/>**Basierend auf dem, was Sie lernen, können Sie** viele Dinge tun, z. B. die Antworten Ihres KI-Agenten verfeinern, zielgerichtete Inhalte für häufige Probleme entwickeln, Empfehlungsalgorithmen verbessern oder spezielle Pfade für verschiedene Benutzersegmente erstellen."
+
+>[!CONTEXTUALHELP]
+>id="template--brand-concierge--concierge"
+>title="Verfolgen Sie den gesamten Lebenszyklus von B2B-Besprechungsanfragen. Überwachen Sie Konversionsraten, Beraterleistung und identifizieren Sie Ihre effektivsten Lead-Generierungskanäle."
+>abstract="**Auf diese Weise können Sie** Konversionsraten von Meetings verfolgen, leistungsstarke Team-Mitglieder identifizieren, saisonale Trends im Buchungsverhalten verstehen und herausfinden, welche Seiten die wertvollsten Meetinganfragen generieren.<br/>**Auf der Grundlage Ihrer Erkenntnisse können** beliebig viele Dinge tun, z. B. Ihren Besprechungsanfrageprozess optimieren, Ressourcen auf konversionsstarke Seiten umverteilen, zielgerichtete Schulungen für Berater mit niedrigeren Buchungsraten entwickeln oder neue Strategien zur Reduzierung verpasster Meetings implementieren."
+
+| Vorlagenname | Warum diese Vorlage verwenden?<!-- What do you do with it? What can it help you learn? and What are the potential actions? --> |
+| --- | --- | 
+| [!UICONTROL **Übersicht über Brand Concierge**] | Analysieren Sie die Benutzerinteraktion anhand von Konversationsmustern, Benutzer-Feedback und der Effektivität Ihrer Empfehlungen. <p>**Dies kann Ihnen dabei helfen** Interaktionsmuster zu identifizieren, die Gesprächsqualität zu bewerten, Trends bei der Kundenzufriedenheit zu verfolgen und die Effektivität von Link-Empfehlungen zu messen.</p><p>**Basierend auf dem, was Sie lernen, können Sie** viele Dinge tun, z. B. die Antworten Ihres KI-Agenten verfeinern, zielgerichtete Inhalte für häufige Probleme entwickeln, Empfehlungsalgorithmen verbessern oder spezielle Pfade für verschiedene Benutzersegmente erstellen.</p> |
+| **Brand Concierge B2B-Meetings** | Verfolgen Sie den gesamten Lebenszyklus von B2B-Besprechungsanfragen. Überwachen Sie Konversionsraten, bewerten Sie die Buchungs-Performance der Berater und identifizieren Sie Ihre effektivsten Lead-Generierungskanäle. <p>**Auf diese Weise können Sie** Konversionsraten von Meetings verfolgen, leistungsstarke Team-Mitglieder identifizieren, saisonale Trends im Buchungsverhalten verstehen und herausfinden, welche Seiten-URLs die wertvollsten Meeting-Anfragen generieren. </p><p>**Je nachdem, was Sie lernen** können Sie beliebig viele Dinge tun, z. B. Ihren Besprechungsanfrageprozess optimieren, Ressourcen auf URLs mit hoher Konversionsrate verteilen, zielgerichtete Schulungen für Berater mit niedrigeren Buchungsraten entwickeln oder neue Strategien implementieren, um verpasste Meetings zu reduzieren.</p> |
 
 
 ### B2B-Vorlagen {#b2b-templates}
