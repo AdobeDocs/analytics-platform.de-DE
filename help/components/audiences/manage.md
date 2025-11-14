@@ -4,14 +4,14 @@ description: Erfahren Sie, wie Sie Zielgruppen in Customer Journey Analytics ver
 exl-id: 0cc50f64-40b5-4245-a9bb-a60fc90f507a
 feature: Audiences
 role: User
-source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
+source-git-commit: 4717a85b9a3c7dc2cbdd8c625ebb5862cbfccd58
 workflow-type: tm+mt
-source-wordcount: '766'
-ht-degree: 100%
+source-wordcount: '769'
+ht-degree: 97%
 
 ---
 
-# Verwalten von Zielgruppen
+# Verwalten veröffentlichter Zielgruppen
 
 Zielgruppen können in Customer Journey Analytics mithilfe von **[!UICONTROL Komponenten]** > **[!UICONTROL Zielgruppen]** verwaltet werden.
 
@@ -35,7 +35,7 @@ Die Liste „Zielgruppen“ ➊ zeigt die vorhandenen Zielgruppen an.
 
 So zeigen Sie die Liste „Zielgruppen“ an:
 
-1. Wählen Sie in Customer Journey Analytics **[!UICONTROL Komponenten]** > **[!UICONTROL Zielgruppen]** aus.
+1. Wählen Sie in Customer Journey Analytics **[!UICONTROL Komponenten]** > **[!UICONTROL Veröffentlichte Zielgruppen]** aus.
 
 1. (Optional) Sie können mit ![Spalteneinstellung](/help/assets/icons/ColumnSetting.svg) konfigurieren, welche Spalten angezeigt werden sollen. 
 
@@ -62,7 +62,7 @@ Sie können die Einstellungen einer Zielgruppe jederzeit bearbeiten. Wenn Sie ei
 
 So bearbeiten Sie eine Zielgruppe:
 
-1. Wählen Sie in Customer Journey Analytics **[!UICONTROL Komponenten]** > **[!UICONTROL Zielgruppen]** aus.
+1. Wählen Sie in Customer Journey Analytics **[!UICONTROL Komponenten]** > **[!UICONTROL Veröffentlichte Zielgruppen]** aus.
 
    Daraufhin wird die Seite „Zielgruppen“ angezeigt.
 

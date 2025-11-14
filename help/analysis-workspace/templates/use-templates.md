@@ -4,9 +4,9 @@ title: Verwenden von Vorlagen
 feature: Workspace Basics
 role: User, Admin
 exl-id: d61f215d-9089-4014-9c5a-97f5d7134f34
-source-git-commit: d6477006dfa8134521516b6e0665ff487236c10a
+source-git-commit: 0e282bc341588032fadee45cc128663cf557b21f
 workflow-type: tm+mt
-source-wordcount: '20761'
+source-wordcount: '20775'
 ht-degree: 97%
 
 ---
@@ -594,8 +594,8 @@ Die folgenden Vorlagen sind verfügbar:
 
 >[!CONTEXTUALHELP]
 >id="template--audienceOverview"
->title="Zeigen Sie das Land an, aus dem die Personen stammen, die Ihre Site besuchen."
->abstract="**Dies kann Ihnen helfen**, besser zu verstehen, aus welchen Ländern die meisten Personen stammen, die Ihre Site besuchen.<br/>**Basierend auf Ihren Erkenntnissen können Sie** eine Reihe von Schritten ausführen, z. B. Daten nutzen, um sich auf Marketing-Maßnahmen in diesen Ländern zu konzentrieren, oder sicherstellen, dass Ihr Site-Erlebnis in Ländern mit unterschiedlichen Hauptsprachen optimal ist.<br/>Diese Vorlage verwendet die Dimension „Länder“."
+>title="Anzeigen, welche Zielgruppen unter den Personen dargestellt werden, die Ihre Site besuchen."
+>abstract="**Auf diese Weise** Sie allgemeine Informationen zu den Zielgruppen, wo die Zielgruppen ihren Ursprung haben (RTCDP, Customer Journey Analytics usw.), Zielgruppenüberschneidungen und mehr besser verstehen.<br/>**Je nachdem, was Sie lernen** können Sie beliebig viele Dinge tun, z. B. die Daten verwenden, um sich auf Marketing-Maßnahmen für diese spezifischen Zielgruppen zu konzentrieren, oder maßgeschneiderte Erlebnisse für Kunden erstellen, die mehrere Zielgruppen umfassen.<br/>Diese Vorlage verwendet die Dimensionen Zielgruppenname, Zielgruppenherkunft, Name der ausgestiegenen Zielgruppe und Ursprung der ausgestiegenen Zielgruppe."
 
 >[!CONTEXTUALHELP]
 >id="template--consentPolicyOverview"

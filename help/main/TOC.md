@@ -9,10 +9,10 @@ index: true
 user-guide-title: Handbuch zu Customer Journey Analytics
 user-guide-description: Hier erhalten Sie Informationen zu Adobe Customer Journey Analytics und Erläuterungen zur Nutzung von Analysis Workspace mit Daten aus Experience Platform.
 breadcrumb-title: Handbuch zu Customer Journey Analytics
-source-git-commit: 2fd79da264d60bb90e1193ead2eee67602404b4c
-workflow-type: ht
-source-wordcount: '1311'
-ht-degree: 100%
+source-git-commit: 0c3dfd54dc0cee912cab18644fa984b2be5a26a7
+workflow-type: tm+mt
+source-wordcount: '1321'
+ht-degree: 99%
 
 ---
 
@@ -138,7 +138,6 @@ ht-degree: 100%
    + [Kombinierte Ereignis-Datensätze](../connections/combined-dataset.md)
    + [Standardsuchen](../connections/standard-lookups.md)
    + [B2B-Suchen](../connections/transform-datasets-b2b-lookups.md)
-
 + Datenansichten {#cja-dataviews}
    + [Überblick über Datenansichten](../data-views/data-views.md)
    + [Erstellen oder Bearbeiten einer Datenansicht](../data-views/create-dataview.md)
@@ -163,7 +162,9 @@ ht-degree: 100%
    + Freigegebene Metriken und Dimensionen{#shared-metrics-dimensions}
       + [Überblick](/help/data-views/shared-metrics-dimensions/smd-overview.md)
       + [Editor](/help/data-views/shared-metrics-dimensions/shared-component-editor.md)
-
+   + Zielgruppenanalyse {#audience-analysis}
+      + [Überblick](/help/connections/audience-analysis/audience-analysis-overview.md)
+      + [Analysieren von Zielgruppen aus RTCDP](/help/connections/audience-analysis/analyze-audiences.md)
 + Tools {#tools}
    + Asset-Übertragung {#asset-transfer}
       + [Übertragen von Assets](../tools/asset-transfer/transfer-assets.md)
@@ -335,10 +336,10 @@ ht-degree: 100%
       + [Verwalten von Anmerkungen](../components/annotations/manage-annotations.md)
       + [Anzeigen von Anmerkungen](../components/annotations/view-annotations.md)
       + [Anmerkungen zu mobilen Scorecards](../components/annotations/mobile-annotations.md)
-   + Zielgruppen {#audiences}
-      + [Überblick über Zielgruppen](../components/audiences/audiences-overview.md)
+   + Zielgruppenveröffentlichung {#audiences}
+      + [Überblick über die Zielgruppenveröffentlichung](../components/audiences/audiences-overview.md)
       + [Erstellen und Veröffentlichen von Zielgruppen](../components/audiences/publish.md)
-      + [Verwalten von Zielgruppen](../components/audiences/manage.md)
+      + [Verwalten veröffentlichter Zielgruppen](../components/audiences/manage.md)
    + Dimensionen {#dimensions}
       + [Überblick](../components/dimensions/overview.md)
       + [Dimensionsvorschau](../components/dimensions/view-dimensions.md)
