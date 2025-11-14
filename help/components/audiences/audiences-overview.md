@@ -13,7 +13,7 @@ ht-degree: 94%
 
 # Überblick über die Zielgruppenveröffentlichung
 
-Sie können in Customer Journey Analytics verfügbare Zielgruppen erstellen und im [Echtzeit-Kundenprofil) ](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=de) Adobe Experience Platform veröffentlichen, um sie zum Targeting und zur Personalisierung zu verwenden.
+Sie können in Customer Journey Analytics verfügbare Zielgruppen erstellen und im [Echtzeit-Kundenprofil) &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=de) Adobe Experience Platform veröffentlichen, um sie zum Targeting und zur Personalisierung zu verwenden.
 
 <!-- add this when Audience Analysis releases: (For information about ingesting audience membership data from Experience Platform Profile datasets into a Customer Journey Analytics connection, see [Audience analysis overview](/help/connections/audience-analysis/audience-analysis-overview.md).) -->
 

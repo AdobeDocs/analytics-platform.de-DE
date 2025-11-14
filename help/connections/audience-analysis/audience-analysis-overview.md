@@ -17,7 +17,7 @@ ht-degree: 0%
 
 <!-- add hidden text in this article when this feature releases: /help/components/audiences/audiences-overview.md -->
 
-Sie können Daten zur Zielgruppenzugehörigkeit aus Experience Platform-Profildatensätzen in eine Customer Journey Analytics-Verbindung aufnehmen. (Weitere Informationen zum Erstellen und Veröffentlichen von Zielgruppen, die in Customer Journey Analytics in Adobe Experience Platform für die Zielgruppenbestimmung und Personalisierung entwickelt wurden, finden Sie unter [ der Zielgruppenveröffentlichung - Übersicht](/help/components/audiences/audiences-overview.md))
+Sie können Daten zur Zielgruppenzugehörigkeit aus Experience Platform-Profildatensätzen in eine Customer Journey Analytics-Verbindung aufnehmen. (Weitere Informationen zum Erstellen und Veröffentlichen von Zielgruppen, die in Customer Journey Analytics in Adobe Experience Platform für die Zielgruppenbestimmung und Personalisierung entwickelt wurden, finden Sie unter [&#x200B; der Zielgruppenveröffentlichung - Übersicht](/help/components/audiences/audiences-overview.md))
 
 Wenn Zielgruppendaten in Customer Journey Analytics verfügbar sind, können Sie verwertbare Einblicke in das Verhalten von Zielgruppenmitgliedern über verschiedene Kanäle hinweg erhalten.
 
