@@ -5,9 +5,9 @@ feature: Visualizations
 role: User
 hide: true
 hidefromtoc: true
-source-git-commit: ad8026237d73784dfe154e7bc0b32a06a3a66eb3
+source-git-commit: 77acfaf2d186e7fe7d6b9d973af5dedb3956f5d5
 workflow-type: tm+mt
-source-wordcount: '1276'
+source-wordcount: '1277'
 ht-degree: 2%
 
 ---
@@ -57,13 +57,13 @@ Sie können mehrere Dimensionsspalten gleichzeitig oder stapelweise hinzufügen.
 
      ![Ziehen mehrerer Dimensionen](assets/dimensions-add-multiple.png)
 
-1. Zeigen Sie jede Tabellenzeile als einzelnes Dimensionselement an. Weitere Informationen finden Sie unter [Verkettete Dimensionselemente](#view-concatenated-dimension-items).
+1. Zeigen Sie jede Tabellenzeile als einzelnes Dimensionselement an. Weitere Informationen finden Sie unter [Verkettete Dimensionselemente](#concatenated-dimension-items).
 
 ## Filtern von Tabellen
 
 Sie können Filter auf eine oder mehrere Dimensionsspalten in einer Freiformtabelle anwenden.
 
-Weitere Informationen zum Filtern von Tabellen finden Sie unter [Filtern von &#x200B;](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md#filter-tables)) [Freiformtabellen filtern und sortieren](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md).
+Weitere Informationen zum Filtern von Tabellen finden Sie unter [Filtern von ](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md#filter-tables)) [Freiformtabellen filtern und sortieren](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md).
 
 ## Sortieren von Tabellen {#sort-tables}
 
@@ -75,7 +75,7 @@ Standardmäßig werden Dimensionen in aufsteigender Reihenfolge und Metriken in 
 
 ### Sortieren von Tabellen nach einer Spalte
 
-Wenn Sie Daten für eine einzelne Spalte sortieren, wie in diesem Abschnitt beschrieben, werden alle [erweiterten &#x200B;](#sort-tables-by-multiple-columns-advanced-sorting)) entfernt, die auf die Tabelle angewendet werden.
+Wenn Sie Daten für eine einzelne Spalte sortieren, wie in diesem Abschnitt beschrieben, werden alle [erweiterten ](#sort-tables-by-multiple-columns-advanced-sorting)) entfernt, die auf die Tabelle angewendet werden.
 
 So sortieren Sie Daten in Tabellen nach einer Spalte:
 
@@ -107,7 +107,7 @@ So sortieren Sie Daten in Tabellen nach mehreren Spalten:
 
    * Fügen Sie Spalten hinzu, die noch nicht sortiert werden, indem Sie die Schaltfläche **[!UICONTROL Sortierspalte hinzufügen]** auswählen.
 
-   * Entfernen Sie Spalten, die Sie nicht mehr sortieren möchten, indem Sie das Symbol **Entfernen** (![) &#x200B;](/help/assets/icons/Close.svg).
+   * Entfernen Sie Spalten, die Sie nicht mehr sortieren möchten, indem Sie das Symbol **Entfernen** (![) ](/help/assets/icons/Close.svg).
 
    * Ziehen Sie Spalten in der Liste nach oben oder unten, um die Sortierpriorität anzupassen.
 
@@ -181,13 +181,13 @@ Aufschlüsselungen ermöglichen Folgendes:
 
 Wenn Sie einer Tabelle mit mehreren Dimensionsspalten eine Aufschlüsselung hinzufügen, gilt die Aufschlüsselung für das verkettete Dimensionselement (über alle Dimensionsspalten hinweg) in der Zeile, in der Sie es hinzufügen.
 
+![Beispiel für eine Aufschlüsselung mit mehreren Sortierungen](assets/dimensions-multiple-sort-breakdown.png)
+
 Darüber hinaus können Sie innerhalb einer Aufschlüsselung mehrere Dimensionsspalten hinzufügen. Jede Reihe von Dimensionselementen innerhalb der Aufschlüsselung verhält sich auch wie ein einzelnes verkettetes Dimensionselement.
 
-<!-- update screenshot to show the breakdown, and include this introductory sentence: "For example, you can break down the first dimension item in this table by a new concatenated dimension item that shows... " -->
+<!-- Add a screenshot of a breakdown with multiple cllumns, then add this sentence: "For example, you can break down the first dimension item in this table by a new concatenated dimension item that shows..." -->
 
-![Beispiel für Mehrfachsortierung](assets/dimensions-multiple-sort.png)
-
-Weitere Informationen zum Hinzufügen einer Aufschlüsselung finden Sie unter [Dimensionen &#x200B;](/help/components/dimensions/t-breakdown-fa.md).
+Weitere Informationen zum Hinzufügen einer Aufschlüsselung finden Sie unter [Dimensionen ](/help/components/dimensions/t-breakdown-fa.md).
 
 ## Erstellen eines Segments basierend auf einem Dimensionselement, das sich über mehrere Dimensionsspalten erstreckt
 
