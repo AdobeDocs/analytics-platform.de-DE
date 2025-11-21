@@ -28,7 +28,7 @@ Intelligente Beschriftungen richten sich an:
 
 >[!BEGINSHADEBOX]
 
-Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [intelligente Beschriftungen](https://video.tv.adobe.com/v/3420131/?quality=12&learn=on){target="_blank"} finden Sie ein Demovideo.
+Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [intelligente Beschriftungen](https://video.tv.adobe.com/v/3443147/?captions=ger&quality=12&learn=on){target="_blank"} finden Sie ein Demovideo.
 
 >[!ENDSHADEBOX]
 
