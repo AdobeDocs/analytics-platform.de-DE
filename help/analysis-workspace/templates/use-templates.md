@@ -4,7 +4,7 @@ title: Verwenden von Vorlagen
 feature: Workspace Basics
 role: User, Admin
 exl-id: d61f215d-9089-4014-9c5a-97f5d7134f34
-source-git-commit: 0e282bc341588032fadee45cc128663cf557b21f
+source-git-commit: 6cb72495bd190a31f0cb1533f0b33a0929d8a35b
 workflow-type: tm+mt
 source-wordcount: '20775'
 ht-degree: 97%
@@ -482,6 +482,13 @@ Die folgenden Vorlagen sind verfügbar:
 
 ### Web: Zielgruppe {#web-audience}
 
+<!--CJA only-->
+
+>[!CONTEXTUALHELP]
+>id="template--audienceOverview"
+>title="Anzeigen, welche Zielgruppen unter den Personen dargestellt werden, die Ihre Site besuchen."
+>abstract="**Auf diese Weise** Sie allgemeine Informationen zu den Zielgruppen, wo die Zielgruppen ihren Ursprung haben (RTCDP, Customer Journey Analytics usw.), Zielgruppenüberschneidungen und mehr besser verstehen.<br/>**Je nachdem, was Sie lernen** können Sie beliebig viele Dinge tun, z. B. die Daten verwenden, um sich auf Marketing-Maßnahmen für diese spezifischen Zielgruppen zu konzentrieren, oder maßgeschneiderte Erlebnisse für Kunden erstellen, die mehrere Zielgruppen umfassen.<br/>Diese Vorlage verwendet die Dimensionen Zielgruppenname, Zielgruppenherkunft, Name der ausgestiegenen Zielgruppe und Ursprung der ausgestiegenen Zielgruppe."
+
 <!--AA only-->
 
 >[!CONTEXTUALHELP]
@@ -593,11 +600,6 @@ Die folgenden Vorlagen sind verfügbar:
 <!--Both AA and CJA-->
 
 >[!CONTEXTUALHELP]
->id="template--audienceOverview"
->title="Anzeigen, welche Zielgruppen unter den Personen dargestellt werden, die Ihre Site besuchen."
->abstract="**Auf diese Weise** Sie allgemeine Informationen zu den Zielgruppen, wo die Zielgruppen ihren Ursprung haben (RTCDP, Customer Journey Analytics usw.), Zielgruppenüberschneidungen und mehr besser verstehen.<br/>**Je nachdem, was Sie lernen** können Sie beliebig viele Dinge tun, z. B. die Daten verwenden, um sich auf Marketing-Maßnahmen für diese spezifischen Zielgruppen zu konzentrieren, oder maßgeschneiderte Erlebnisse für Kunden erstellen, die mehrere Zielgruppen umfassen.<br/>Diese Vorlage verwendet die Dimensionen Zielgruppenname, Zielgruppenherkunft, Name der ausgestiegenen Zielgruppe und Ursprung der ausgestiegenen Zielgruppe."
-
->[!CONTEXTUALHELP]
 >id="template--consentPolicyOverview"
 >title="Zeigen Sie das Land an, aus dem die Personen stammen, die Ihre Site besuchen."
 >abstract="**Dies kann Ihnen helfen**, besser zu verstehen, aus welchen Ländern die meisten Personen stammen, die Ihre Site besuchen.<br/>**Basierend auf Ihren Erkenntnissen können Sie** eine Reihe von Schritten ausführen, z. B. Daten nutzen, um sich auf Marketing-Maßnahmen in diesen Ländern zu konzentrieren, oder sicherstellen, dass Ihr Site-Erlebnis in Ländern mit unterschiedlichen Hauptsprachen optimal ist.<br/>Diese Vorlage verwendet die Dimension „Länder“."
@@ -649,6 +651,8 @@ Die folgenden Vorlagen sind verfügbar:
 
 
 Die folgenden Vorlagen sind verfügbar:
+
+<!--need to add audience overview: - **[!UICONTROL Audience overview]** - View which audiences are represented among the people visiting your site.<p>**This can help you** better understand general information about the audiences, where the audiences originated (RTCDP, Customer Journey Analytics, and so forth), audience overlap, and more.</p><p>**Based on what you learn, you might** do any number of things, like use the data to focus on marketing efforts for these specific audiences, or create tailored experiences for customers who span multiple audiences.</p><p>This template uses the Audience Name, Audience Origin, Exited Audience Name, and Exited Audience Origin dimensions.</p> - -->
 
 | Vorlagenname | Warum diese Vorlage verwenden?<!-- What do you do with it? What can it help you learn? and What are the potential actions? --> |
 | --- | --- | 
