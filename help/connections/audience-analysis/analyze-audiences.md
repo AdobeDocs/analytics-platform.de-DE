@@ -6,9 +6,9 @@ feature: Audiences
 role: Admin
 hide: true
 hidefromtoc: true
-source-git-commit: 3654d452f2bc4fec5f53854307536b3b8679eac3
+source-git-commit: 2b91c0592ac4ec0e0b5ffa3db91758466563abaf
 workflow-type: tm+mt
-source-wordcount: '475'
+source-wordcount: '476'
 ht-degree: 0%
 
 ---
@@ -18,6 +18,10 @@ ht-degree: 0%
 Sie können mit der Analyse von Experience Platform-Zielgruppen in Customer Journey Analytics beginnen, nachdem Sie [eine Zielgruppenanalysekonfiguration erstellt haben](/help/connections/audience-analysis/audience-analysis-configure.md) wenn Zielgruppendaten als neue Dimensionen in Analysis Workspace verfügbar sind.
 
 In Customer Journey Analytics ist eine Vorlage für die Zielgruppenübersicht verfügbar.
+
+<!-- Can you also use the new audience dimensions in any project, regardless of whether it's a template? I assume so -->
+
+<!-- What are the names of the new dimensions? Are they customized to whatever your audience names are in AEP, or are they always the same? -->
 
 Informationen zum Zugriff auf die Vorlage „Zielgruppenübersicht“ finden Sie unter [Zugriff auf und Ausführen einer Vorlage](/help/analysis-workspace/templates/use-templates.md#access-and-run-a-template) unter [Verwenden von Vorlagen](/help/analysis-workspace/templates/use-templates.md).
 
@@ -41,7 +45,7 @@ Zeigt Daten für alle Zielgruppen mit Nutzungsereignissen an, die mit der ausgew
 
 Wählen Sie bis zu drei Zielgruppen in der Tabelle in diesem Bedienfeld aus, um zu sehen, wie sie sich im entsprechenden Venn-Diagramm überschneiden.
 
-## Nutzung der ausgestiegenen Zielgruppe
+## Ausgetretenes Bedienfeld zur Zielgruppennutzung
 
 Zeigt Daten für alle ausgeschlossenen Zielgruppen mit Nutzungsereignissen an, die mit der ausgewählten Datenansicht verknüpft sind. Daten werden immer für gestern angezeigt. Daher führt eine Änderung des Datumsbereichs des Bedienfelds zu ungenauen Daten. „Ausgestiegene Zielgruppen“ sind Zielgruppen, in denen Personen mit Datennutzungsereignissen gestern den Computer verlassen oder ihn verlassen haben.
 
