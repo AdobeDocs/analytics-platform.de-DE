@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: 5cbfa922-6d6e-453a-9558-abfcfb80449d
 role: Admin
-source-git-commit: bc2c959497230d7672d43d5cd409ca62d4627d6a
+source-git-commit: 9c4ae8174086559ee552c5ffc95a8a7b0009f126
 workflow-type: tm+mt
-source-wordcount: '1181'
+source-wordcount: '1193'
 ht-degree: 79%
 
 ---
@@ -20,7 +20,7 @@ In dieser Kurzanleitung wird erläutert, wie Sie die von Adobe Analytics erfasst
 >
 >Sie besitzen eine Lizenz für Adobe Analytics auf einer oder mehreren Ihrer Websites und Adobe Analytics ist dort mithilfe einer der dokumentierten Methoden bereitgestellt:
 >
->- [Implementierung von Analytics mithilfe Experience Platform Edge](https://experienceleague.adobe.com/docs/analytics/implementation/aep-edge/overview.html?lang=de)
+>- [Implementierung von Analytics mithilfe Experience Platform Edge](https://experienceleague.adobe.com/docs/analytics/implementation/aep-edge/overview.html)
 >
 >- [Implementierung von Analytics mithilfe der Adobe Analytics-Erweiterung](https://experienceleague.adobe.com/docs/analytics/implementation/launch/overview.html?lang=de)
 >
@@ -56,7 +56,7 @@ Gehen Sie folgendermaßen vor, um einen Adobe Analytics-Quell-Connector zu erste
 
    ![Adobe Experience Platform-Fenster mit den hervorgehobenen Auswahlen Quellen, Adobe-Anwendungen und Daten hinzufügen.](./assets/sources-overview.png)
 
-4. Wählen Sie **[!UICONTROL Report Suite]** aus. Wählen Sie in der Liste der Report Suites die gewünschte Report Suite aus.
+4. Wählen Sie **[!UICONTROL Report Suite]** aus. Wählen Sie in der Liste der Report Suites die gewünschte Report Suite aus.<br/> Alternativ können Sie mit ![Suche](/help/assets/icons/Search.svg) **[!UICONTROL _Suche_]** nach einer Report Suite suchen.
 
    ![Adobe Experience Platform-Fenster mit der Report Suite-Liste](./assets/report-suites.png)
 
@@ -168,7 +168,7 @@ Gehen Sie folgendermaßen vor, um eine Datenansicht zu erstellen:
 
    Behalten Sie die Einstellungen bei und wählen Sie **[!UICONTROL Speichern und beenden]**.
 
-Weitere [&#x200B; dazu, wie Sie eine Datenansicht erstellen und bearbeiten, welche Komponenten in Ihrer Datenansicht verfügbar sind und wie Sie Segment](../data-views/data-views.md) und Sitzungseinstellungen verwenden, finden Sie unter Datenansichten - Übersicht .
+Weitere [ dazu, wie Sie eine Datenansicht erstellen und bearbeiten, welche Komponenten in Ihrer Datenansicht verfügbar sind und wie Sie Segment](../data-views/data-views.md) und Sitzungseinstellungen verwenden, finden Sie unter Datenansichten - Übersicht .
 
 
 ## Einrichten eines Projekts
