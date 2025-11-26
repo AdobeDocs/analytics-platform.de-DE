@@ -27,7 +27,7 @@ Im Folgenden finden Sie Details, die Sie bei der Konfiguration jeder dieser Komp
 
 ## Schema
 
-Sie müssen ein &quot;[ Schema“ erstellen](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/schema/relational){target="_blank"} d. h. die native Data Warehouse-Tabelle, die Sie spiegeln möchten. Stellen Sie beim Erstellen des relationalen Schemas sicher, dass die folgenden Anforderungen erfüllt sind:
+Sie müssen ein &quot;[&#x200B; Schema“ erstellen](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/schema/relational){target="_blank"} d. h. die native Data Warehouse-Tabelle, die Sie spiegeln möchten. Stellen Sie beim Erstellen des relationalen Schemas sicher, dass die folgenden Anforderungen erfüllt sind:
 
 * Wenn Sie nach dem Typ des relationalen Schemas gefragt werden, stellen Sie sicher, dass Sie die manuelle Option auswählen.
 * Wählen Sie das entsprechende Schema für den Datentyp aus. Beachten Sie, dass Experience Platform Data Mirror hauptsächlich für Zeitreihendaten (z. B. Ereignisdaten) verwendet wird.
