@@ -1,8 +1,8 @@
 ---
-source-git-commit: 7d354ce65f72838c007d2b9faf02848d86fd7c0f
-workflow-type: ht
-source-wordcount: '4990'
-ht-degree: 100%
+source-git-commit: b2a13524760f9d466696534bc8b9691f3b4dfb8a
+workflow-type: tm+mt
+source-wordcount: '5005'
+ht-degree: 99%
 
 ---
 # Snippets
@@ -286,3 +286,11 @@ Verwenden Sie die folgenden Informationen, um die Visualisierung auszuwählen, d
 | [!UICONTROL Sitzung beginnt] | Die Anzahl der Ereignisse, die das erste Ereignis einer Sitzung waren. Bei Verwendung in einer Segmentdefinition (wie beispielsweise „[!UICONTROL Sitzung beginnt] existiert“) wird nur das erste Ereignis jeder Sitzung segmentiert.<p>Diese Komponente muss in Ihrer Datenansicht für die folgende [berechnete Metrik](/help/components/calc-metrics/default-calcmetrics.md) enthalten sein, um in Workspace verfügbar zu sein: <ul><li>Startrate der Sitzung</li></p> |
 | [!UICONTROL Sitzungen] | Basiert auf den Sitzungseinstellungen der Datenansicht. |
 | [!UICONTROL Aufgewendete Zeit (Sekunden)] | Addiert die Zeit zwischen zwei verschiedenen Werten für eine Dimension.<p>Diese Komponente muss in Ihrer Datenansicht für die folgende [berechnete Metrik](/help/components/calc-metrics/default-calcmetrics.md) enthalten sein, um in Workspace verfügbar zu sein: <ul><li>Aufgewendete Zeit pro Person  </li><li>Aufgewendete Zeit pro Sitzung</li></p> |
+
+
+## Basierend auf relationalen Modellen {#relational-model-based}
+
+>[!INFO]
+>
+>In der Customer Journey Analytics **[!UICONTROL Benutzeroberfläche können]** Datensätze als **[!UICONTROL modellbasiert]** gekennzeichnet werden.
+>
