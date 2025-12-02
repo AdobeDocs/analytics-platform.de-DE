@@ -5,7 +5,7 @@ title: Verwalten von Cloud-Exportspeicherorten und -Konten
 feature: Components
 exl-id: 8e82fe6f-99df-4360-8693-99692aac002b
 role: User, Admin
-source-git-commit: 4bfa32ba3a7902d31edefab17a00206f922a8382
+source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
 workflow-type: tm+mt
 source-wordcount: '1371'
 ht-degree: 3%
@@ -118,7 +118,7 @@ So bearbeiten Sie ein Konto:
 
 ## Kontoschlüssel anzeigen
 
-Nachdem Sie ein Konto erstellt haben, können Sie alle zugehörigen Kontoschlüssel für dieses Konto anzeigen. Möglicherweise müssen Sie diese Informationen anzeigen, wenn Sie die Konfiguration des Kontos mit Ihrem Cloud-Anbieter ([&#x200B; der ursprünglichen Konfiguration des Kontos) nicht &#x200B;](/help/components/exports/cloud-export-accounts.md) haben.
+Nachdem Sie ein Konto erstellt haben, können Sie alle zugehörigen Kontoschlüssel für dieses Konto anzeigen. Möglicherweise müssen Sie diese Informationen anzeigen, wenn Sie die Konfiguration des Kontos mit Ihrem Cloud-Anbieter ([ der ursprünglichen Konfiguration des Kontos) nicht ](/help/components/exports/cloud-export-accounts.md) haben.
 
 So zeigen Sie die mit einem Exportkonto verknüpften Schlüssel an:
 
@@ -209,7 +209,7 @@ Löschen von Konten:
 
 1. Löschen Sie die Konten, wie unter [Löschen eines Kontos](#delete-an-account) beschrieben.
 
-1. Fahren Sie mit dem folgenden Abschnitt fort[&#x200B; „Beschränken Sie die Kontotypen, die Benutzern zur Verfügung stehen](#limit-the-account-types-that-are-available-to-users).
+1. Fahren Sie mit dem folgenden Abschnitt fort[ „Beschränken Sie die Kontotypen, die Benutzern zur Verfügung stehen](#limit-the-account-types-that-are-available-to-users).
 
 #### Beschränken Sie die Kontotypen, die Benutzern zur Verfügung stehen
 

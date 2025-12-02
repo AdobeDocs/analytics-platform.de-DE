@@ -4,7 +4,7 @@ description: Erfahren Sie, wie Sie mithilfe der Datenvorbereitung Report Suites 
 exl-id: 2656cc21-3980-4654-bffb-b10908cb21f5
 feature: Use Cases
 role: User
-source-git-commit: 664576605b8be098a751609536e388c304c65513
+source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
 workflow-type: tm+mt
 source-wordcount: '1321'
 ht-degree: 55%
@@ -52,14 +52,14 @@ Dies führt zu sinnlosen Berichten für eVar1 und eVar2:
 
 Die Funktion der Experience Platform-Datenvorbereitung ist in den Analytics-Quell-Connector integriert und kann verwendet werden, um die im obigen Szenario beschriebenen Schemaunterschiede zu beheben. Dies führt zu eVars mit konsistenter Bedeutung in der Customer Journey Analytics-Datenansicht. (Die unten verwendeten Benennungskonventionen können Ihren Bedürfnissen entsprechend angepasst werden.)
 
-1. Bevor Sie die Datenflüsse für die Quellverbindung für Report Suite A und Report Suite B erstellen[&#x200B; erstellen Sie ein neues &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/overview.html?lang=de) in Adobe Experience Platform (nennen wir es **Einheitliches Schema** in unserem Beispiel). Fügen Sie dem Schema Folgendes hinzu:
+1. Bevor Sie die Datenflüsse für die Quellverbindung für Report Suite A und Report Suite B erstellen[ erstellen Sie ein neues ](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/overview.html?lang=de) in Adobe Experience Platform (nennen wir es **Einheitliches Schema** in unserem Beispiel). Fügen Sie dem Schema Folgendes hinzu:
 
    | „Einheitliches Schema“ |
    | --- |
    | **XDM ExperienceEvent**-Klasse |
    | **Adobe Analytics ExperienceEvent-Vorlage**-Feldergruppe |
 
-1. Fügen Sie eine weitere Feldgruppe zum Schema hinzu oder [erstellen Sie eine benutzerdefinierte Feldergruppe](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/field-groups.html?lang=de#:~:text=To%20create%20a%20new%20field,section%20in%20the%20left%20rail) und fügen Sie sie zum Schema hinzu. Wir erstellen eine neue Feldergruppe und nennen sie **Einheitliche Felder**. Anschließend fügen wir die folgenden Felder zur neuen Feldergruppe hinzu:
+1. Fügen Sie eine weitere Feldgruppe zum Schema hinzu oder [erstellen Sie eine benutzerdefinierte Feldergruppe](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/field-groups.html#:~:text=To%20create%20a%20new%20field,section%20in%20the%20left%20rail) und fügen Sie sie zum Schema hinzu. Wir erstellen eine neue Feldergruppe und nennen sie **Einheitliche Felder**. Anschließend fügen wir die folgenden Felder zur neuen Feldergruppe hinzu:
 
    | Benutzerdefinierte Feldergruppe „Einheitliche Felder“  |
    | --- |
@@ -92,7 +92,7 @@ Die Funktion der Experience Platform-Datenvorbereitung ist in den Analytics-Quel
    **Globale Ansicht** Datenansicht in Customer Journey Analytics:
 
    | Quellfeld | In Datenansicht einschließen? |
-   | --- | --- | 
+   | --- | --- |
    | \_experience.analytics.customDimensions.eVars.eVar1 | Nein |
    | \_experience.analytics.customDimensions.eVars.eVar2 | Nein |
    | _\&lt;path>_.Search_term | Ja |
@@ -122,7 +122,7 @@ Mithilfe der Datenvorbereitung können Sie die Kundenkategorie in eVar 1 der Ana
 1. Erstellen Sie ein Schema in Adobe Experience Platform. Fügen Sie Folgendes zu diesem Schema hinzu:
 
    | „Erweitertes Schema“ |
-   | --- | 
+   | --- |
    | **XDM-Erlebnisereignis**-Klasse |
    | Feldergruppe **Adobe Analytics-Erlebnisereignisvorlage** |
 
@@ -158,6 +158,6 @@ Mithilfe der Datenvorbereitung können Sie die Kundenkategorie in eVar 1 der Ana
 
 ## Datenvorbereitung vs. Komponenten-ID
 
-Wie oben beschrieben, können Sie mithilfe der Datenvorbereitung verschiedene Felder über mehrere Report Suites in Adobe Analytics hinweg zuordnen. Dies ist in Customer Journey Analytics hilfreich, wenn Sie Daten aus mehreren Datensätzen zu einer einzigen Customer Journey Analytics-Verbindung kombinieren möchten. Wenn Sie die Report Suites jedoch in separaten Customer Journey Analytics-Verbindungen belassen möchten, aber einen Berichtssatz für diese Verbindungen und Datenansichten verwenden möchten, bietet eine Änderung der zugrunde liegenden Komponenten-ID in Customer Journey Analytics eine Möglichkeit, Berichte kompatibel zu machen, auch wenn die Schemata unterschiedlich sind. Siehe [Komponenteneinstellungen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/overview.html?lang=de) für weitere Informationen.
+Wie oben beschrieben, können Sie mithilfe der Datenvorbereitung verschiedene Felder über mehrere Report Suites in Adobe Analytics hinweg zuordnen. Dies ist in Customer Journey Analytics hilfreich, wenn Sie Daten aus mehreren Datensätzen zu einer einzigen Customer Journey Analytics-Verbindung kombinieren möchten. Wenn Sie die Report Suites jedoch in separaten Customer Journey Analytics-Verbindungen belassen möchten, aber einen Berichtssatz für diese Verbindungen und Datenansichten verwenden möchten, bietet eine Änderung der zugrunde liegenden Komponenten-ID in Customer Journey Analytics eine Möglichkeit, Berichte kompatibel zu machen, auch wenn die Schemata unterschiedlich sind. Siehe [Komponenteneinstellungen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/overview.html) für weitere Informationen.
 
 Das Ändern der Komponenten-ID ist eine reine Customer Journey Analytics-Funktion und hat keine Auswirkungen auf Daten aus dem Analytics-Quell-Connector, die an das Echtzeit-Kundenprofil und RTCDP gesendet werden.

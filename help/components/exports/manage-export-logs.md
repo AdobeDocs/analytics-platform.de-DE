@@ -5,7 +5,7 @@ title: Verwalten von Exportprotokollen
 feature: Components
 exl-id: 6d676a0a-b117-421e-9a90-8c550f08d474
 role: User
-source-git-commit: ad43b199d4174894f0e428bcaf1748ca80bddb45
+source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
 workflow-type: tm+mt
 source-wordcount: '837'
 ht-degree: 8%
@@ -30,9 +30,9 @@ Für geplante Exporte spiegeln die Protokolle die Exporteinstellungen wider, die
 
 1. Führen Sie einen der folgenden Schritte aus:
 
-   * [Anpassen der &#x200B;](#configure-columns) Spalten“.
+   * [Anpassen der ](#configure-columns) Spalten“.
 
-   * Wählen Sie das **Informationssymbol**![&#x200B; Informationssymbol](assets/information-icon.png) neben dem Protokollnamen aus, um den mit dem Protokoll verknüpften Export anzuzeigen.
+   * Wählen Sie das **Informationssymbol**![ Informationssymbol](assets/information-icon.png) neben dem Protokollnamen aus, um den mit dem Protokoll verknüpften Export anzuzeigen.
 
    * Wählen Sie das Symbol **Export bearbeiten** ![Informationssymbol](assets/edit-export-icon.png) neben dem Protokollnamen aus, um den mit dem Protokoll verknüpften Export zu bearbeiten.
 
@@ -58,7 +58,7 @@ Um die benötigten Informationen zu finden, können Sie entweder die Liste der P
    |---------|----------|
    | [!UICONTROL **Export-ID**] | Geben Sie die Export-ID des Exportprotokolls an, das Sie anzeigen möchten. |
    | [!UICONTROL **Kontotyp**] | Der Kontotyp, mit dem das Protokoll verknüpft ist. Die folgenden Kontotypen sind verfügbar: <ul><li>[!UICONTROL **AEP Data Landing Zone**]</li><li>[!UICONTROL **Amazon S3 Role ARN**]</li><li>[!UICONTROL **Azure SAS**]</li><li>[!UICONTROL **Azure RBAC**]</li><li>[!UICONTROL **Google Cloud Platform**]</li><li>[!UICONTROL **Snowflake**]</li></ul>. |
-   | [!UICONTROL **Status**] | Der Status des Exports Die folgenden Status sind verfügbar: <ul><li>[!UICONTROL **Ausstehend**]: Eine bestimmte Instanz eines Exports wurde gestartet, ist jedoch noch nicht abgeschlossen.<p>Das erneute Ausführen eines Exports mit dem Status Ausstehend verzögert den Exportvorgang.</p></li><li>[!UICONTROL **Abgeschlossen**]: Eine bestimmte Instanz eines Exports wurde fertig verarbeitet und ist im Exportkonto verfügbar.</li><li>[!UICONTROL **Fehlgeschlagen**]<p>Verschiedene Situationen können zu einem fehlgeschlagenen Export führen. Bewegen Sie den Mauszeiger über den Status Fehlgeschlagen , um Details zum Fehler anzuzeigen.<p>Weitere Informationen zu möglichen Fehlerursachen finden Sie unter [Fehlerbehebung bei fehlgeschlagenen &#x200B;](/help/components/exports/troubleshoot-exports.md)).</p> |
+   | [!UICONTROL **Status**] | Der Status des Exports Die folgenden Status sind verfügbar: <ul><li>[!UICONTROL **Ausstehend**]: Eine bestimmte Instanz eines Exports wurde gestartet, ist jedoch noch nicht abgeschlossen.<p>Das erneute Ausführen eines Exports mit dem Status Ausstehend verzögert den Exportvorgang.</p></li><li>[!UICONTROL **Abgeschlossen**]: Eine bestimmte Instanz eines Exports wurde fertig verarbeitet und ist im Exportkonto verfügbar.</li><li>[!UICONTROL **Fehlgeschlagen**]<p>Verschiedene Situationen können zu einem fehlgeschlagenen Export führen. Bewegen Sie den Mauszeiger über den Status Fehlgeschlagen , um Details zum Fehler anzuzeigen.<p>Weitere Informationen zu möglichen Fehlerursachen finden Sie unter [Fehlerbehebung bei fehlgeschlagenen ](/help/components/exports/troubleshoot-exports.md)).</p> |
 
    {style="table-layout:auto"}
 
@@ -112,7 +112,7 @@ So konfigurieren Sie Spalten auf der Registerkarte [!UICONTROL Protokolle]:
 
 1. Wählen Sie die Registerkarte [!UICONTROL **Protokolle**] aus.
 
-1. Wählen Sie **Symbol** Tabelle anpassen![&#x200B; &#x200B;](assets/customize-table-icon.png) oben rechts auf der Seite [!UICONTROL Protokolle] aus.
+1. Wählen Sie **Symbol** Tabelle anpassen![ ](assets/customize-table-icon.png) oben rechts auf der Seite [!UICONTROL Protokolle] aus.
 
    Die folgenden Spalten sind verfügbar:
 
@@ -126,7 +126,7 @@ So konfigurieren Sie Spalten auf der Registerkarte [!UICONTROL Protokolle]:
    | Größe | Die Größe des Exports.<p>Die Dateigröße wird mit einem Basiswert von 1024 berechnet, der manchmal als KIB und MIB dargestellt wird. Wenn Ihr Cloud-Anbieter die Größe mit einer Basis von 1.000 berechnet, kann dies dazu führen, dass die in Ihrem Cloud-Anbieter angezeigte Größe geringfügig von der hier angezeigten Größe abweicht.</p> |
    | Standort | Der Speicherort des Kontos, in das die Daten exportiert wurden. |
    | Konto | Das Konto, in das die Daten exportiert wurden. |
-   | Status | Der Status des Exports Verfügbare Status [!UICONTROL &#x200B; &quot;]&quot;, [!UICONTROL Zugestellt] und [!UICONTROL Fehlgeschlagen]. |
+   | Status | Der Status des Exports Verfügbare Status [!UICONTROL  &quot;]&quot;, [!UICONTROL Zugestellt] und [!UICONTROL Fehlgeschlagen]. |
    | Gesendet am | Das Datum, an dem der Export stattfand. |
    | Kontotyp | Der Typ des Cloud-Kontos, in das die Daten exportiert wurden. Verfügbare Kontotypen sind [!UICONTROL Amazon S3 Role ARN], [!UICONTROL Google Cloud Platform], [!UICONTROL Azure SAS], [!UICONTROL Azure RBAC], [!UICONTROL Snowflake] und [!UICONTROL Adobe Experience Platform]. |
    | Anzahl Zeilen | Die Anzahl der in der exportierten Tabelle enthaltenen Zeilen. |

@@ -5,7 +5,7 @@ feature: Workspace Basics
 title: Hotkeys
 exl-id: de99a92b-701c-4cdc-a0c2-a70972a19499
 role: User
-source-git-commit: c4c8c0ff5d46ec455ca5333f79d6d8529f4cb87d
+source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
 workflow-type: tm+mt
 source-wordcount: '421'
 ht-degree: 89%
@@ -18,16 +18,16 @@ In Analysis Workspace stehen Tastaturbefehle (Tastaturkürzel) für eine nahtlos
 
 Beachten Sie, dass auf Ihrer Tastatur möglicherweise die folgenden Symbole verwendet werden:
 
-- **⇧** für die **[!UICONTROL **&#x200B; Umschalttaste &#x200B;**]**
-- **⌘** für die **[!UICONTROL **&#x200B; Befehlstaste &#x200B;**]**.
-- **⌃** für die **[!UICONTROL **&#x200B; Strg-Taste &#x200B;**]**.
-- **⌥** für die **[!UICONTROL **&#x200B; Wahltaste &#x200B;**]**.
-- **⎇** für die **[!UICONTROL **&#x200B; Alt-Taste &#x200B;**]**.
+- **⇧** für die **[!UICONTROL ** Umschalttaste **]**
+- **⌘** für die **[!UICONTROL ** Befehlstaste **]**.
+- **⌃** für die **[!UICONTROL ** Strg-Taste **]**.
+- **⌥** für die **[!UICONTROL ** Wahltaste **]**.
+- **⎇** für die **[!UICONTROL ** Alt-Taste **]**.
 
 ## Navigationsaktionen
 
 | Aktion | Mac-Tastaturbefehl | Windows-Tastaturbefehl |
-| --- | --- | --- | 
+| --- | --- | --- |
 | Neues Projekt erstellen | **[!UICONTROL *Befehlstaste+Umschalt+P *]** | **[!UICONTROL *Strg+Umschalt+P *]** |
 | Vorhandenes Projekt öffnen | **[!UICONTROL *Befehlstaste+O *]** | **[!UICONTROL *Strg+O *]** |
 | Zum Bereich „Bedienfelder“ | **[!UICONTROL *Wahltaste+Umschalt+1 *]** | **[!UICONTROL *Alt+Umschalt+1 *]** |
@@ -41,7 +41,7 @@ Beachten Sie, dass auf Ihrer Tastatur möglicherweise die folgenden Symbole verw
 ## Analyseaktionen
 
 | Aktion | Mac-Tastaturbefehl | Windows-Tastaturbefehl |
-| --- | --- | --- | 
+| --- | --- | --- |
 | Linkes Bedienfeld durchsuchen | **[!UICONTROL *Wahltaste+/*]** | **[!UICONTROL *Strg+/*]** |
 | Warnhinweis erstellen | **[!UICONTROL *Befehlstaste+Umschalt+A *]** | **[!UICONTROL *Strg+Umschalt+A *]** |
 | Berechnete Metrik erstellen | **[!UICONTROL *Befehlstaste+Umschalt+C *]** | **[!UICONTROL *Strg+Umschalt+C *]** |
@@ -58,7 +58,7 @@ Beachten Sie, dass auf Ihrer Tastatur möglicherweise die folgenden Symbole verw
 ## Aktionen zum Hinzufügen von Bedienfeldern und Visualisierungen
 
 | Aktion | Mac-Tastaturbefehl | Windows-Tastaturbefehl |
-| --- | --- | --- | 
+| --- | --- | --- |
 | Neuer Attributionsbereich | **[!UICONTROL *Wahltaste+E *]** | **[!UICONTROL *Alt+E *]** |
 | Neues leeres Bedienfeld | **[!UICONTROL *Wahltaste+B *]** | **[!UICONTROL *Alt+B *]** |
 | Neues Freiformfeld | **[!UICONTROL *Wahltaste+A *]** | **[!UICONTROL *Alt+A *]** |
@@ -71,14 +71,14 @@ Beachten Sie, dass auf Ihrer Tastatur möglicherweise die folgenden Symbole verw
 ## Bereichsaktionen verschieben
 
 | Aktion | Mac-Tastaturbefehl | Windows-Tastaturbefehl |
-| --- | --- | --- | 
+| --- | --- | --- |
 | Bereich nach oben verschieben | **[!UICONTROL *Befehl + Opt + Up *]** | **[!UICONTROL *Alt+Strg+Nach oben *]** |
 | Bereich nach unten verschieben | **[!UICONTROL *Befehl + Opt + Down *]** | **[!UICONTROL *Alt + Strg + Nach unten *]** |
 
 ## Demokratisierungaktionen
 
 | Aktion | Mac-Tastaturbefehl | Windows-Tastaturbefehl |
-| --- | --- | --- | 
+| --- | --- | --- |
 | Projekt speichern | **[!UICONTROL *Befehlstaste+S *]** | **[!UICONTROL *Strg+S *]** |
 | Projekt speichern unter | **[!UICONTROL *Befehlstaste+Umschalt+S *]** | **[!UICONTROL *Strg+Umschalt+S *]** |
 | Als Vorlage speichern | **[!UICONTROL *Wahltaste+T *]** | **[!UICONTROL *Alt+T *]** |

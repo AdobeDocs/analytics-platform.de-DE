@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: a7d14968-33a2-46a8-8e32-fb6716650d0a
-source-git-commit: 359fe2a718ccef816377083aceb2652b4a905072
+source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
 workflow-type: tm+mt
 source-wordcount: '657'
 ht-degree: 7%
@@ -42,14 +42,14 @@ The order success (purchase) events assign the data accurately to the correct em
 
 ## Personenzentrierte Analyse verbessern
 
-Der Zuordnungsprozess behebt dieses Attributionsproblem, indem die ausgewählte Personenkennung (in den Beispieldaten die E-Mail) zu Ereignissen hinzugefügt wird, bei denen diese Kennung nicht vorhanden ist. Bei der Zuordnung wird eine Zuordnung zwischen Geräte-IDs und Personen-IDs genutzt, um sicherzustellen, dass sowohl authentifizierter als auch nicht authentifizierter Traffic bei der Analyse verwendet werden kann, sodass der Personen-Schwerpunkt erhalten bleibt. Weitere Informationen finden [&#x200B; unter &#x200B;](/help/stitching/overview.md).
+Der Zuordnungsprozess behebt dieses Attributionsproblem, indem die ausgewählte Personenkennung (in den Beispieldaten die E-Mail) zu Ereignissen hinzugefügt wird, bei denen diese Kennung nicht vorhanden ist. Bei der Zuordnung wird eine Zuordnung zwischen Geräte-IDs und Personen-IDs genutzt, um sicherzustellen, dass sowohl authentifizierter als auch nicht authentifizierter Traffic bei der Analyse verwendet werden kann, sodass der Personen-Schwerpunkt erhalten bleibt. Weitere Informationen finden [ unter ](/help/stitching/overview.md).
 
 Bei der Zuordnung können freigegebene Gerätedaten entweder anhand der Attribution der letzten Authentifizierung oder anhand der Attribution auf Geräteaufteilung zugeordnet werden. Alle Versuche, nicht authentifizierte Ereignisse einem bekannten Benutzer zuzuordnen, sind nicht deterministisch.
 
 
 ### Attribution der letzten Authentifizierung
 
-Last-auth schreibt alle unbekannten Aktivitäten eines gemeinsam genutzten Geräts dem Benutzer zu, der sich zuletzt authentifiziert hat. Der Experience Platform Identity Service erstellt das Diagramm basierend auf der Attribution der letzten Authentifizierung und wird als solche beim diagrammbasierten Stitching verwendet. Weitere [&#x200B; finden Sie unter &#x200B;](https://experienceleague.adobe.com/de/docs/experience-platform/identity/features/identity-graph-linking-rules/identity-optimization-algorithm#identity-optimization-algorithm-details) für Identitätsdiagramme .
+Last-auth schreibt alle unbekannten Aktivitäten eines gemeinsam genutzten Geräts dem Benutzer zu, der sich zuletzt authentifiziert hat. Der Experience Platform Identity Service erstellt das Diagramm basierend auf der Attribution der letzten Authentifizierung und wird als solche beim diagrammbasierten Stitching verwendet. Weitere [ finden Sie unter ](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-graph-linking-rules/identity-optimization-algorithm#identity-optimization-algorithm-details) für Identitätsdiagramme .
 
 Wenn die Attribution der letzten Authentifizierung beim Zusammenfügen verwendet wird, werden zusammengefügte IDs aufgelöst, wie in der folgenden Tabelle dargestellt.
 
@@ -90,10 +90,10 @@ When using ECID reset, Stitched IDs resolve as shown in the table below.
 
 | Timestamp | Page name | Device ID | Email | Stitched ID |
 |---|---|---|---|---|
-| 2023-05-12 12:01 | Home page | `1234` | | `ryan@a.com`| 
-| 2023-05-12 12:02 | Product page  | `1234` | |`ryan@a.com` | 
+| 2023-05-12 12:01 | Home page | `1234` | | `ryan@a.com`|
+| 2023-05-12 12:02 | Product page  | `1234` | |`ryan@a.com` |
 | 2023-05-12 12:03 | Order success | `1234` | `ryan@a.com` | `ryan@a.com` |
-| 2023-05-12 12:07 | Product page  | 5678  | | `cassidy@a.com` | 
+| 2023-05-12 12:07 | Product page  | 5678  | | `cassidy@a.com` |
 | 2023-05-12 12:08 | Order success | 5678 |  `cassidy@a.com` | `cassidy@a.com` |
 | 2023-05-13 11:08 | Home page | 5678 | | `cassidy@a.com` |
 

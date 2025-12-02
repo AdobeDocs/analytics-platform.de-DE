@@ -4,7 +4,7 @@ title: Leeres Panel
 feature: Panels
 exl-id: b65d0031-b4c0-4400-8d67-9416f3c993b6
 role: User
-source-git-commit: 8054aab28c405f6a9dd24306a086c78069032999
+source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
 workflow-type: tm+mt
 source-wordcount: '253'
 ht-degree: 93%
@@ -26,7 +26,7 @@ ht-degree: 93%
 
 >[!BEGINSHADEBOX]
 
-_In diesem Artikel wird das leere Bedienfeld in_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**&#x200B;_ beschrieben.<br/>_Unter [Leeres Bedienfeld](https://experienceleague.adobe.com/de/docs/analytics/analyze/analysis-workspace/panels/blank-panel) finden Sie die_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics**-Version dieses Artikels._
+_In diesem Artikel wird das leere Bedienfeld in_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**_ beschrieben.<br/>_Unter [Leeres Bedienfeld](https://experienceleague.adobe.com/de/docs/analytics/analyze/analysis-workspace/panels/blank-panel) finden Sie die_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**-Version dieses Artikels._
 
 >[!ENDSHADEBOX]
 

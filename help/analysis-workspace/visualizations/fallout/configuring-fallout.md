@@ -4,7 +4,7 @@ title: Fallout-Visualisierung konfigurieren
 feature: Visualizations
 exl-id: 3d888673-d7b1-45ef-bd3a-97b98466fb0e
 role: User
-source-git-commit: d91e6aaebd14bc02f53b28820dd6013350e36d36
+source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
 workflow-type: tm+mt
 source-wordcount: '856'
 ht-degree: 71%
@@ -47,7 +47,7 @@ Sie können Pfade für Dimensionen, Metriken und Segmente erstellen. Beispiel: A
 
 1. **Einzelne Touchpoints können nun auch auf das nächste Ereignis** (statt *am Ende*) im Pfad eingegrenzt werden. Unter jedem Touchpoint befinden sich die Auswahlmöglichkeiten **[!UICONTROL Endgültiger Pfad]** und **[!UICONTROL Nächstes Ereignis]**:
 
-   ![Die Ansicht „Alle Besuche“ mit hervorgehobener Option „Endgültiger Pfad“. &#x200B;](assets/fallout-nexthit.png)
+   ![Die Ansicht „Alle Besuche“ mit hervorgehobener Option „Endgültiger Pfad“. ](assets/fallout-nexthit.png)
 
    | Option | Beschreibung |
    |---|---|
@@ -87,7 +87,7 @@ Im Rahmen der Visualisierung sind bestimmte Kontextmenüoptionen verfügbar.
 >[!MORELIKETHIS]
 >
 >[Hinzufügen einer Visualisierung in einem Bedienfeld](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
->&#x200B;>[Visualisierungseinstellungen](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
->&#x200B;>[Kontextmenü der Visualisierung](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
+>[Visualisierungseinstellungen](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
+>[Kontextmenü der Visualisierung](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
 >
 

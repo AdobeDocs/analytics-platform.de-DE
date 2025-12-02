@@ -4,7 +4,7 @@ description: Erfahren Sie, wie Sie Zielgruppen in Customer Journey Analytics ver
 exl-id: 0cc50f64-40b5-4245-a9bb-a60fc90f507a
 feature: Audiences
 role: User
-source-git-commit: 4717a85b9a3c7dc2cbdd8c625ebb5862cbfccd58
+source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
 workflow-type: tm+mt
 source-wordcount: '769'
 ht-degree: 97%
@@ -80,9 +80,9 @@ Die folgenden Aktionen werden im Manager für geplante Projekte häufig ausgefü
 
 | Symbol | Aktion | Beschreibung |
 |:---:|---|---|
-| ![Bezeichnungen](/help/assets/icons/Labels.svg) | **[!UICONTROL Tag]** | Versehen Sie die ausgewählten Zielgruppen mit Tags. Wählen Sie im Dialogfeld **[!UICONTROL Tags aktualisieren: *Zielgruppenname *]**&#x200B;im Dropdown-Menü die Option „Tags“ aus oder geben Sie einen oder mehrere neue Tags ein. Wählen Sie zum Speichern&#x200B;**[!UICONTROL Speichern &#x200B;]**&#x200B;aus. |
+| ![Bezeichnungen](/help/assets/icons/Labels.svg) | **[!UICONTROL Tag]** | Versehen Sie die ausgewählten Zielgruppen mit Tags. Wählen Sie im Dialogfeld **[!UICONTROL Tags aktualisieren: *Zielgruppenname *]**im Dropdown-Menü die Option „Tags“ aus oder geben Sie einen oder mehrere neue Tags ein. Wählen Sie zum Speichern**[!UICONTROL Speichern ]**aus. |
 | ![Löschen](/help/assets/icons/Delete.svg) | **[!UICONTROL Löschen]** | Löschen Sie die ausgewählten Zielgruppen. |
-| ![Bearbeiten](/help/assets/icons/Edit.svg) | **[!UICONTROL Umbenennen]** | Benennen Sie die ausgewählte Zielgruppe um. Verwenden Sie das Dialogfeld **[!UICONTROL Umbenennen: *Zielgruppenname *]**, um die Zielgruppe umzubenennen, und wählen Sie zum Speichern&#x200B;**[!UICONTROL Speichern &#x200B;]**&#x200B;aus. |
+| ![Bearbeiten](/help/assets/icons/Edit.svg) | **[!UICONTROL Umbenennen]** | Benennen Sie die ausgewählte Zielgruppe um. Verwenden Sie das Dialogfeld **[!UICONTROL Umbenennen: *Zielgruppenname *]**, um die Zielgruppe umzubenennen, und wählen Sie zum Speichern**[!UICONTROL Speichern ]**aus. |
 
 Die folgenden Aktionen sind in der blauen Aktionsleiste verfügbar, wenn Sie ein oder mehrere geplante Projekte auswählen.
 

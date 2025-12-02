@@ -1,28 +1,28 @@
 ---
-title: Zuordnung anfordern
+title: Anfordern der Zuordnung
 description: So fordern Sie die Zuordnung an
 solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: a04c74ab-606e-45a9-a3e4-0d476c8d2426
-source-git-commit: 359fe2a718ccef816377083aceb2652b4a905072
+source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
 workflow-type: tm+mt
 source-wordcount: '460'
-ht-degree: 8%
+ht-degree: 9%
 
 ---
 
-# Zuordnung anfordern
+# Anfordern der Zuordnung
 
 Sobald Ihr Unternehmen alle [Voraussetzungen](overview.md#prerequisites) erfüllt und die gängigen [Einschränkungen](overview.md#limitations) und Stitching-Methodenspezifischen ([feldbasiert](fbs.md#limitations) und [diagrammbasiert](gbs.md#limitations)) Einschränkungen versteht, können Sie diese Schritte ausführen, um das Stitching in Customer Journey Analytics anzufordern und zu verwenden.
 
 ## Optionen auswählen
 
-Das Customer Journey Analytics-Paket, zu dem Sie berechtigt sind, bestimmt die verfügbaren Stitching-Methoden, Optionen für die anfängliche Aufstockungsdauer, das Lookback-Fenster, die Wiederholungshäufigkeit und die maximale Anzahl von Datensätzen, die für das Stitching zulässig sind. Weitere Informationen finden Sie in der &lbrace;0[&#x200B; Customer Journey Analytics-Produktbeschreibung. &#x200B;](https://helpx.adobe.com/de/legal/product-descriptions/customer-journey-analytics.html) Vor der Supportanfrage über die verfügbaren Optionen entscheiden.
+Das Customer Journey Analytics-Paket, zu dem Sie berechtigt sind, bestimmt die verfügbaren Stitching-Methoden, Optionen für die anfängliche Aufstockungsdauer, das Lookback-Fenster, die Wiederholungshäufigkeit und die maximale Anzahl von Datensätzen, die für das Stitching zulässig sind. Weitere Informationen finden Sie in der {0[ Customer Journey Analytics-Produktbeschreibung. ](https://helpx.adobe.com/de/legal/product-descriptions/customer-journey-analytics.html) Vor der Supportanfrage über die verfügbaren Optionen entscheiden.
 
 | | Customer Journey Analytics-<br/> | Customer Journey Analytics<br/>Prime | Customer Journey Analytics<br/>Ultimate |
 |---|---|---|---|
-| Verfügbare Stitching-Methoden | <li>Feldbasiertes Stitching</li> | <li>Feldbasiertes Stitching</li><li>Grafikbasierte Zuordnung</li> | <li>Feldbasiertes Stitching</li><li>Grafikbasierte Zuordnung</li> |
+| Verfügbare Stitching-Methoden | <li>Feldbasierte Zuordnung</li> | <li>Feldbasierte Zuordnung</li><li>Grafikbasierte Zuordnung</li> | <li>Feldbasierte Zuordnung</li><li>Grafikbasierte Zuordnung</li> |
 | Einmaliges Zusammenfügen der Aufstockungsdauer | 13 Monate | 13 Monate | 25 Monate |
 | Lookback-Fenster und Wiederholungshäufigkeit | <li>1 Tag, jeden Tag</li><li>Bis zu 7 Tage, wöchentlich</li> | <li>1 Tag, jeden Tag</li><li>Bis zu 14 Tage, wöchentlich</li> | <li>1 Tag, jeden Tag</li><li>Bis zu 30 Tage, wöchentlich</li> |
 | Maximal zulässige Anzahl von Datensätzen für das Zusammenfügen | 5 | 15 | 50 |

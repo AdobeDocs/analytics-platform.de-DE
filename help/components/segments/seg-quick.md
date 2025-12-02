@@ -4,7 +4,7 @@ title: Schnellsegmente
 feature: Workspace Basics, Filters, Segments
 role: User
 exl-id: 549e5db5-fcdf-43c5-bc43-590144aee309
-source-git-commit: c209341400bf4e0c00719075f0fc82f81ca9dbb4
+source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
 workflow-type: tm+mt
 source-wordcount: '1186'
 ht-degree: 21%
@@ -13,13 +13,13 @@ ht-degree: 21%
 
 # Schnellsegmente
 
-Schnellsegmente ermöglichen es Ihnen, Daten innerhalb eines Workspace-Projekts schnell zu untersuchen, ohne dass ein Segment in [Segment Builder“ erstellt &#x200B;](/help/components/segments/seg-create.md) muss.
+Schnellsegmente ermöglichen es Ihnen, Daten innerhalb eines Workspace-Projekts schnell zu untersuchen, ohne dass ein Segment in [Segment Builder“ erstellt ](/help/components/segments/seg-create.md) muss.
 
 
 
 >[!BEGINSHADEBOX]
 
-See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Schnellsegmente in Analysis Workspace](https://video.tv.adobe.com/v/3410293/?captions=ger&quality=12&learn=on){target="_blank"} finden Sie ein Demovideo.
+See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Schnellsegmente in Analysis Workspace](https://video.tv.adobe.com/v/341466/?quality=12&learn=on){target="_blank"} finden Sie ein Demovideo.
 
 >[!ENDSHADEBOX]
 
@@ -37,8 +37,8 @@ Schnellsegmente werden auf Bedienfelder angewendet. Sie können für jedes Bedie
 
 So erstellen Sie ein Schnellsegment:
 
-* Wählen ![&#x200B; oben &#x200B;](/help/assets/icons/FilterAdd.svg) Bedienfeld „SegmentHinzufügen“ aus. <br/>Bearbeiten Sie dann das Segment direkt im [Quick Segment Builder](#quick-segment-builder).
-* Ziehen Sie eine Komponente aus dem Bedienfeld „Komponente“ in den Ablegebereich für Segmente in der Kopfzeile des Bedienfelds. Bewegen Sie nach dem Ablegen den Mauszeiger über das Segment und wählen Sie ![Bearbeiten](/help/assets/icons/Edit.svg) aus, um das Segment im [Quick Segment Builder“ &#x200B;](#quick-segment-builder) bearbeiten.
+* Wählen ![ oben ](/help/assets/icons/FilterAdd.svg) Bedienfeld „SegmentHinzufügen“ aus. <br/>Bearbeiten Sie dann das Segment direkt im [Quick Segment Builder](#quick-segment-builder).
+* Ziehen Sie eine Komponente aus dem Bedienfeld „Komponente“ in den Ablegebereich für Segmente in der Kopfzeile des Bedienfelds. Bewegen Sie nach dem Ablegen den Mauszeiger über das Segment und wählen Sie ![Bearbeiten](/help/assets/icons/Edit.svg) aus, um das Segment im [Quick Segment Builder“ ](#quick-segment-builder) bearbeiten.
 
 Beachten Sie beim Erstellen eines Schnellsegments per Drag-and-Drop Folgendes:
 
@@ -57,11 +57,11 @@ Die Ergebnisse der Schnellsegmente, die Sie in einem Bedienfeld erstellen, werde
 Um ein Schnellsegment zu verwalten, bewegen Sie den Mauszeiger über das spezifische **[!UICONTROL Schnellsegment]**.
 
 * Wählen Sie ![Bearbeiten](/help/assets/icons/Edit.svg) aus, um [Quick Segment Builder](#quick-segment-builder) zu öffnen und das Schnellsegment zu bearbeiten.
-* Wählen Sie ![InfoOutline](/help/assets/icons/InfoOutline.svg) aus, um ein Popup zu öffnen. Das Popup zeigt Informationen über das Segment an. Sie können auf **[!UICONTROL Für alle Projekte verfügbar machen und der Komponentenliste hinzufügen]** klicken, um das Segment der Komponentenliste ![Segment](/help/assets/icons/Segmentation.svg) **[!UICONTROL Segmente]** im Komponentenbereich hinzuzufügen. Ein Dialogfeld **[!UICONTROL Schnellsegment speichern]** wird angezeigt, in dem Sie aufgefordert werden, einen Namen für das Segment anzugeben. Wählen Sie **[!UICONTROL Speichern]** aus, um fortzufahren. Ihr [!UICONTROL Schnellsegment] wird zu einem **[!UICONTROL Segment]**. Das Segment kann nicht mehr mit dem [Quick Segment Builder“ bearbeitet &#x200B;](#quick-segment-builder). Stattdessen müssen Sie das Segment als reguläres Segment bearbeiten, indem Sie den [Segment Builder“ &#x200B;](seg-builder.md).
+* Wählen Sie ![InfoOutline](/help/assets/icons/InfoOutline.svg) aus, um ein Popup zu öffnen. Das Popup zeigt Informationen über das Segment an. Sie können auf **[!UICONTROL Für alle Projekte verfügbar machen und der Komponentenliste hinzufügen]** klicken, um das Segment der Komponentenliste ![Segment](/help/assets/icons/Segmentation.svg) **[!UICONTROL Segmente]** im Komponentenbereich hinzuzufügen. Ein Dialogfeld **[!UICONTROL Schnellsegment speichern]** wird angezeigt, in dem Sie aufgefordert werden, einen Namen für das Segment anzugeben. Wählen Sie **[!UICONTROL Speichern]** aus, um fortzufahren. Ihr [!UICONTROL Schnellsegment] wird zu einem **[!UICONTROL Segment]**. Das Segment kann nicht mehr mit dem [Quick Segment Builder“ bearbeitet ](#quick-segment-builder). Stattdessen müssen Sie das Segment als reguläres Segment bearbeiten, indem Sie den [Segment Builder“ ](seg-builder.md).
 
 ## Quick Segment Builder
 
-Unten finden Sie ein Beispiel für den Quick Segment Builder. In diesem Beispiel wird der Builder für ein Schnellsegment namens &quot;`Call Reason = Order Change AND Online Orders is greater than or equal 1`&quot; geöffnet. Beide Schnellsegmente oben gelten für das Bedienfeld **[!UICONTROL Dashboard für durchschnittliche Bestellwerte]** und für alle darin enthaltenen Visualisierungen, wie [!UICONTROL &#x200B; Freiformtabelle Durchschnittlicher Bestellwert pro Land].
+Unten finden Sie ein Beispiel für den Quick Segment Builder. In diesem Beispiel wird der Builder für ein Schnellsegment namens &quot;`Call Reason = Order Change AND Online Orders is greater than or equal 1`&quot; geöffnet. Beide Schnellsegmente oben gelten für das Bedienfeld **[!UICONTROL Dashboard für durchschnittliche Bestellwerte]** und für alle darin enthaltenen Visualisierungen, wie [!UICONTROL  Freiformtabelle Durchschnittlicher Bestellwert pro Land].
 
 ![Quick Segment Builder](assets/quick-filter-builder.png)
 
@@ -76,7 +76,7 @@ Der Kopfzeilenbereich bestimmt den Namen, den Typ und den Umfang des Schnellsegm
 | **[!UICONTROL Name]** | Der Name wird automatisch aus der Schnellsegmentdefinition abgeleitet. |
 | **[!UICONTROL Personen]** <br/>![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) ![Alert](/help/assets/icons/Alert.svg) | Vorschau der visuellen Daten, die aus dem Schnellsegment resultieren. Ein Balken und ein Prozentwert geben insight an, wie viel der Gesamtdaten Teil des Ergebnisses des Schnellsegments ist. Ein ![Warnhinweis](/help/assets/icons/AlertRed.svg) signalisiert, dass das Schnellsegment keine Daten zurückgibt. |
 | **[!UICONTROL Einbeziehen]**<br/>**[!UICONTROL Ausschließen]** | Wählen Sie aus der Dropdown![Liste ChevronDown](/help/assets/icons/ChevronDown.svg) aus, ob Sie die Ergebnisse des Schnellsegments aus den Daten im Bedienfeld ein- oder ausschließen möchten. |
-| **[!UICONTROL Ereignis]**<br/>**[!UICONTROL Sitzung]**<br/>**[!UICONTROL Person]** | Wählen Sie aus dem Dropdown-![&#x200B; (ChevronDown](/help/assets/icons/ChevronDown.svg) den Umfang des Schnellsegments aus. |
+| **[!UICONTROL Ereignis]**<br/>**[!UICONTROL Sitzung]**<br/>**[!UICONTROL Person]** | Wählen Sie aus dem Dropdown-![ (ChevronDown](/help/assets/icons/ChevronDown.svg) den Umfang des Schnellsegments aus. |
 
 ### Bedingungsbereich
 

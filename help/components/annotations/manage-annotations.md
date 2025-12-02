@@ -4,7 +4,7 @@ description: Erfahren Sie, wie Sie Anmerkungen in Workspace verwalten.
 feature: Components
 exl-id: 12f2cc2f-477c-4f16-afdd-b0db84725b32
 role: User
-source-git-commit: a646d1f35308dc1f1d9f06cf94835534bd8b8da6
+source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
 workflow-type: tm+mt
 source-wordcount: '761'
 ht-degree: 91%
@@ -34,7 +34,7 @@ Der Anmerkungs-Manager verfügt über die folgenden Benutzeroberflächenelemente
 Die ➊ der Anmerkungsliste zeigt alle Anmerkungen an, die Ihnen gehören, die Anmerkungen, die für alle Ihre Projekte gelten, und die Anmerkungen, die für Sie freigegeben wurden. Die Liste umfasst die folgenden Spalten:
 
 | Spalte | Beschreibung |
-| --- | --- | 
+| --- | --- |
 | ![UnausgefüllterStern](/help/assets/icons/StarOutline.svg) | Wählen Sie diese Option aus, um eine Anmerkung als Favoriten zu markieren ![Stern](/help/assets/icons/Star.svg) oder aus den Favoriten zu entfernen ![UnausgefüllterStern](/help/assets/icons/StarOutline.svg). |
 | **[!UICONTROL Titel und Beschreibung]** | Werden durch den Anmerkungsgenerator bereitgestellt. Um den Titel und die Beschreibung zu bearbeiten, wählen Sie den Titel-Link aus. Dadurch wird das Dialogfeld [Anmerkungserstellung](/help/components/annotations/create-annotations.md#annotation-builder) geöffnet. Eine freigegebene Anmerkung wird mit dem Symbol ![Freigabe](/help/assets/icons/ShareAlt.svg) gekennzeichnet. |
 | **[!UICONTROL Datenansicht]** | Die Datenansichten, für die diese Anmerkung gilt. |

@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
 exl-id: 417443ae-a1ab-483b-a8fd-cff5ee8b6263
-source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
+source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
 workflow-type: tm+mt
 source-wordcount: '1147'
 ht-degree: 97%
@@ -21,7 +21,7 @@ Diese Zusammenfassungsdaten können dann zur Darstellung allgemeiner Leistungsin
 >[!NOTE]
 >
 >Zusammenfassungsdaten sind Zeitreihendaten aus einem Zusammenfassungsdatensatz. Dieser Zusammenfassungsdatensatz basiert auf einem Schema, das die Klasse „XDM-Zusammenfassungsmetriken“ als Basisklasse verwendet.
->&#x200B;>Es werden nur Zeitreihendaten unterstützt, die auf „stündlich“ oder „täglich“ basieren.
+>Es werden nur Zeitreihendaten unterstützt, die auf „stündlich“ oder „täglich“ basieren.
 
 >[!TIP]
 >

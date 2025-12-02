@@ -5,7 +5,7 @@ title: Exportieren vollständiger Tabellen in die Cloud
 feature: Curate and Share
 exl-id: 072eadcc-43ff-42e3-86ee-82062fa02eba
 role: User
-source-git-commit: 0b6afd5639234f6305c99267d3b1624279c97368
+source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
 workflow-type: tm+mt
 source-wordcount: '2482'
 ht-degree: 78%
@@ -209,10 +209,10 @@ Die folgenden Funktionen werden nicht unterstützt und automatisch aus vollstän
 Die folgenden Komponenten werden nicht unterstützt und Analysis Workspace fordert Sie auf, sie aus Ihrer Tabelle zu entfernen, wenn Sie einen vollständigen Tabellenexport durchführen:
 
 * Berechnete Metriken, die grundlegende oder erweiterte Funktionen in der Metrikdefinition verwenden (weitere Informationen finden Sie unter [Grundlegende Funktionen](/help/components/calc-metrics/cm-functions.md) und [Erweiterte Funktionen](/help/components/calc-metrics/cm-adv-functions.md))
-* Komponenten, die von einem Administrator am Export gehindert wurden (weitere Informationen finden Sie im Abschnitt *Segment zu Data Governance* Richtlinien in [Kennzeichnungen und &#x200B;](/help/data-views/data-governance.md))
+* Komponenten, die von einem Administrator am Export gehindert wurden (weitere Informationen finden Sie im Abschnitt *Segment zu Data Governance* Richtlinien in [Kennzeichnungen und ](/help/data-views/data-governance.md))
 * Jede Dimension, die alle der folgenden Kriterien erfüllt:
    * Er wird aus einem Feld erstellt, das Teil eines [Arrays von Objekten](/help/use-cases/object-arrays.md) ist (ähnlich wie Variablen mit mehreren Werten in Adobe Analytics).
-   * Hat &quot;[&#x200B; aktiviert](/help/data-views/component-settings/persistence.md).
+   * Hat &quot;[ aktiviert](/help/data-views/component-settings/persistence.md).
    * Verwendet keine [Bindungsdimension](/help/use-cases/data-views/binding-dimensions-metrics.md).
 * Mehrere Dimensionen, die aus Feldern stammen, die auf verschiedene [Arrays von Objekten](/help/use-cases/object-arrays.md) verweisen. (Mehrere Dimensionen, die auf dasselbe Array von Objekten verweisen, sind zulässig.)
 * Mehr als 10 Dimensionen und 10 Metriken pro Bericht (bis zu 10 Dimensionen und 10 Metriken werden unterstützt)

@@ -4,10 +4,10 @@ title: Zuordnung
 feature: Visualizations
 role: User, Admin
 exl-id: 6656b34a-ae1e-4f9f-9c6d-13c54e49625c
-source-git-commit: ab0e6f0578cbc6f856c2b0a46b1231cce145b84c
+source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
 workflow-type: tm+mt
 source-wordcount: '2761'
-ht-degree: 8%
+ht-degree: 9%
 
 ---
 
@@ -42,7 +42,7 @@ ht-degree: 8%
 
 >[!BEGINSHADEBOX]
 
-_In diesem Artikel wird die Zuordnungsvisualisierung in {_}![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**._<br/>_Siehe [Map](https://experienceleague.adobe.com/de/docs/analytics/analyze/analysis-workspace/visualizations/map-visualization) für die_![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics**-Version dieses Artikels._
+_In diesem Artikel wird die Zuordnungsvisualisierung in {_}![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._<br/>_Siehe [Map](https://experienceleague.adobe.com/de/docs/analytics/analyze/analysis-workspace/visualizations/map-visualization) für die_![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**-Version dieses Artikels._
 
 >[!ENDSHADEBOX]
 
@@ -63,7 +63,7 @@ Kontextbeschriftungen sind erforderlich, damit die Kartenvisualisierung funktion
 
 So fügen Sie diese Kontextbeschriftungen hinzu:
 
-1. Wählen Sie in Customer Journey Analytics **[!UICONTROL Daten-Management]** > **[!UICONTROL Datenansichten]**.
+1. Wählen Sie in Customer Journey Analytics **[!UICONTROL Daten-Management]** > **[!UICONTROL Datenansichten]** aus.
 
 1. Wählen Sie auf der Seite Datenansichten die Datenansicht aus, die Daten enthält, die Sie in der Kartenvisualisierung analysieren möchten.
 
@@ -107,7 +107,7 @@ Im Folgenden finden Sie die Vorlagen und die erforderliche Kontextbeschriftung. 
 
 So fügen Sie diese Kontextbeschriftungen hinzu:
 
-1. Wählen Sie in Customer Journey Analytics **[!UICONTROL Daten-Management]** > **[!UICONTROL Datenansichten]**.
+1. Wählen Sie in Customer Journey Analytics **[!UICONTROL Daten-Management]** > **[!UICONTROL Datenansichten]** aus.
 
 1. Wählen Sie auf der Seite Datenansichten die Datenansicht aus, die Daten enthält, die Sie mit vordefinierten Vorlagen analysieren möchten, die die Zuordnungsvisualisierung verwenden. Wählen Sie in dieser Datenansicht fünf Dimensionen aus: eine mit den Länderdaten, eine mit den Regionsdaten, eine mit den Stadtdaten, eine mit den Bundesstaatsdaten und eine mit den DMA-Daten. Geben Sie diesen Dimensionen dann die entsprechende Kontextbeschriftung.
 
@@ -222,7 +222,7 @@ Die Zuordnungsvisualisierung in Customer Journey Analytics unterscheidet sich vo
 
      Um die Karte auf ihre ursprüngliche Nordausrichtung zurückzusetzen, wählen Sie das Kompasssymbol ![Kompasssymbol](assets/map-compass-icon.png).
 
-   * **Auswahl-Tool**: Sie können einen Bereich der Zuordnung auswählen, um [ein Segment &#x200B;](#create-a-segment-from-the-map-visualization), [einen Trend zu &#x200B;](#create-a-trended-line-chart-from-the-map-visualization) oder [eine Aufschlüsselung hinzuzufügen](#add-a-breakdown-from-the-map-visualization).
+   * **Auswahl-Tool**: Sie können einen Bereich der Zuordnung auswählen, um [ein Segment ](#create-a-segment-from-the-map-visualization), [einen Trend zu ](#create-a-trended-line-chart-from-the-map-visualization) oder [eine Aufschlüsselung hinzuzufügen](#add-a-breakdown-from-the-map-visualization).
 
      Klicken Sie auf das Auswahlwerkzeug ![Zuordnungsauswahlsymbol](assets/map-selection-icon.png) und ziehen Sie dann die Maus, um den gewünschten Bereich auszuwählen.
 
@@ -247,9 +247,9 @@ Die Zuordnungsvisualisierung in Customer Journey Analytics unterscheidet sich vo
 
 So konfigurieren Sie Einstellungen für die Zuordnungsvisualisierung:
 
-1. Öffnen Sie in Analysis Workspace eine vorhandene Kartenvisualisierung oder erstellen [&#x200B; eine neue](#begin-building-a-map-visualization).
+1. Öffnen Sie in Analysis Workspace eine vorhandene Kartenvisualisierung oder erstellen [ eine neue](#begin-building-a-map-visualization).
 
-1. Bewegen Sie den Mauszeiger über die Kartenvisualisierung und wählen Sie dann in der Visualisierungskopfzeile das ![&#x200B; „Einstellungen](/help/assets/icons/Setting.svg) aus.
+1. Bewegen Sie den Mauszeiger über die Kartenvisualisierung und wählen Sie dann in der Visualisierungskopfzeile das ![ „Einstellungen](/help/assets/icons/Setting.svg) aus.
 
    Die folgenden Optionen sind verfügbar:
 
@@ -270,7 +270,7 @@ So konfigurieren Sie Einstellungen für die Zuordnungsvisualisierung:
 
 Wenn Sie über benutzerdefinierte Datensätze mit hoher Präzision verfügen, können Sie die Kartenvisualisierung so konfigurieren, dass die Standortgenauigkeit innerhalb eines Meters erreicht wird.
 
-1. Wählen Sie in Customer Journey Analytics **[!UICONTROL Daten-Management]** > **[!UICONTROL Datenansichten]**.
+1. Wählen Sie in Customer Journey Analytics **[!UICONTROL Daten-Management]** > **[!UICONTROL Datenansichten]** aus.
 
 1. Wählen Sie die Datenansicht aus, die die Dimensionen enthält, die Sie konfigurieren möchten, um präzisere Speicherorte zu verwenden.
 

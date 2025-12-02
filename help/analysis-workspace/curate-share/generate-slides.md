@@ -4,10 +4,10 @@ keywords: Analysis Workspace
 title: Erstellen von Präsentationen aus Workspace-Berichten
 feature: Curate and Share
 role: User
-source-git-commit: 87e3b3cfdf765a57ecdb70921696013bcba4feac
+source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
 workflow-type: tm+mt
 source-wordcount: '1585'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 
@@ -157,9 +157,9 @@ Daten-Storys bestehen aus einer Titelfolie, einer Übersichtsfolie, Detailfolien
 
          Stellen Sie sicher, dass die hochgeladene Datei über Master-Layouts mit den folgenden Namen verfügt: „Title_Slide“, „Section_Divider“, „Title_Text“, „Title_Chart“, „Title_Two_Content_Mixed“, „Title_Three_Content_Mixed“.
 
-         Es werden bis zu 15 Master-Layouts unterstützt.
+         Es werden bis zu 15 primäre Layouts unterstützt.
 
-         .pptx- und .potx-Dateien mit einer Größe von bis zu 25 MB werden unterstützt.
+         .pptx- und .potx-Dateien mit einer Größe von bis zu 25 MB werden unterstützt.
 
       1. Im Abschnitt **[!UICONTROL Layout-]**&quot; wird jedes Folien-Layout, das in generierten Präsentationen verwendet wird, automatisch einer Folie aus Ihrem hochgeladenen Design zugeordnet. Überprüfen Sie die Auswahl, um sicherzustellen, dass sie korrekt sind.
 
@@ -185,9 +185,9 @@ Die Möglichkeit, Folien zu generieren, ist standardmäßig für alle Benutzer i
 
 Produktprofil-Admins, deren Organisationen über die Lizenzierung zum Generieren von Folien verfügen, können den Zugriff bei Bedarf deaktivieren.
 
-In der [!UICONTROL Adobe Admin Console] bestimmt die Berechtigung [!UICONTROL Reporting-]&#x200B;**[!UICONTROL Data]** storytelling) den Zugriff auf diese Funktion. Ein [Produktprofil-Administrator](https://helpx.adobe.com/de/enterprise/using/manage-product-profiles.html) muss diese Schritte in der [!UICONTROL Admin Console ausführen] wenn er den Zugriff deaktivieren möchte:
+In der [!UICONTROL Adobe Admin Console] bestimmt die Berechtigung [!UICONTROL Reporting-]**[!UICONTROL Data]** storytelling) den Zugriff auf diese Funktion. Ein [Produktprofil-Administrator](https://helpx.adobe.com/de/enterprise/using/manage-product-profiles.html) muss diese Schritte in der [!UICONTROL Admin Console ausführen] wenn er den Zugriff deaktivieren möchte:
 1. Navigieren Sie zu **[!UICONTROL Admin Console]** > **[!UICONTROL Produkte und Dienste]** > **[!UICONTROL Customer Journey Analytics]** > **[!UICONTROL Produktprofile]**.
-1. Wählen Sie den Titel des Produktprofils aus, für das Sie Zugriff auf &quot;[!UICONTROL &#x200B; storytelling&quot; &#x200B;] möchten.
+1. Wählen Sie den Titel des Produktprofils aus, für das Sie Zugriff auf &quot;[!UICONTROL  storytelling&quot; ] möchten.
 1. Wählen Sie im entsprechenden Produktprofil die Option **[!UICONTROL Berechtigungen]** aus.
 1. Wählen Sie ![Bearbeiten](/help/assets/icons/Edit.svg) aus, um **[!UICONTROL Reporting-Tools]** zu bearbeiten.
 1. Wählen Sie ![AddCircle](/help/assets/icons/RemoveCircle.svg) aus, um **Data storytelling** aus den **[!UICONTROL Included permission items]**.
@@ -238,6 +238,6 @@ Die folgenden Analysis Workspace-Elemente und -Funktionen, die in einem Projekt 
 
 * Komponenten, die durch eine Data-Governance-Richtlinie nicht exportiert werden dürfen
 
-  Weitere Informationen finden Sie unter [Fehlerbehebung bei fehlgeschlagenen &#x200B;](/help/components/exports/troubleshoot-exports.md)).
+  Weitere Informationen finden Sie unter [Fehlerbehebung bei fehlgeschlagenen ](/help/components/exports/troubleshoot-exports.md)).
 
 

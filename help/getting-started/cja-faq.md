@@ -5,7 +5,7 @@ exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
 solution: Customer Journey Analytics
 feature: FAQ
 role: User
-source-git-commit: 220ebd7dbc3fa75d221690cd6e5828bd94395434
+source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
 workflow-type: tm+mt
 source-wordcount: '2580'
 ht-degree: 99%
@@ -145,7 +145,7 @@ Adobe hat kürzlich die Verarbeitung von Daten in Customer Journey Analytics ge�
 
 ## &#x200B;5. Festlegen eines rollierenden Fensters für die Speicherung von [!UICONTROL Verbindungsdaten] {#data-retention}
 
-Mit der Einstellung [**[!UICONTROL Rollierendes Datenfenster aktivieren &#x200B;]**](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=de#create-connection) können Sie die Customer Journey Analytics-Datenspeicherung als rollierendes Fenster in Monaten (drei Monate, sechs Monate usw.) definieren. Sie wird auf einer [!UICONTROL Verbindungs]-Ebene, nicht auf einer [!UICONTROL Datensatz]-Ebene festgelegt. Die Datenaufbewahrung basiert auf Zeitstempeln für Ereignis-Datensätze und gilt nur für Ereignis-Datensätze. Für Profil- oder Lookup-Datensätze gibt es keine Datenspeicherungseinstellung, da keine entsprechenden Zeitstempel vorhanden sind.
+Mit der Einstellung [**[!UICONTROL Rollierendes Datenfenster aktivieren ]**](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=de#create-connection) können Sie die Customer Journey Analytics-Datenspeicherung als rollierendes Fenster in Monaten (drei Monate, sechs Monate usw.) definieren. Sie wird auf einer [!UICONTROL Verbindungs]-Ebene, nicht auf einer [!UICONTROL Datensatz]-Ebene festgelegt. Die Datenaufbewahrung basiert auf Zeitstempeln für Ereignis-Datensätze und gilt nur für Ereignis-Datensätze. Für Profil- oder Lookup-Datensätze gibt es keine Datenspeicherungseinstellung, da keine entsprechenden Zeitstempel vorhanden sind.
 
 Der Hauptvorteil besteht darin, dass Sie nur Daten speichern oder Berichte dazu erstellen, die anwendbar und nützlich sind, und ältere Daten löschen, die nicht mehr nützlich sind. Dies hilft Ihnen, Ihre vertraglichen Beschränkungen einzuhalten und das Risiko bezüglich Kostendeckung zu reduzieren.
 
@@ -155,7 +155,7 @@ Beim Löschen von Daten sollten Sie sich über sechs Komponententypen Gedanken m
 
 | Aktion | Auswirkung |
 | --- | --- |
-| Löschen einer Sandbox in [!UICONTROL Adobe Experience Platform] | Durch das Löschen einer Sandbox wird der Datenfluss aller [!UICONTROL Customer Journey Analytics]-Verbindungen zu Datensätzen in dieser Sandbox angehalten. Verbindungen, Datenansichten, Metriken und Dimensionen, die sich auf diese gelöschte Sandbox beziehen, werden ebenfalls gelöscht. | |
+| Löschen einer Sandbox in [!UICONTROL Adobe Experience Platform] | Durch das Löschen einer Sandbox wird der Datenfluss aller [!UICONTROL Customer Journey Analytics]-Verbindungen zu Datensätzen in dieser Sandbox angehalten. Verbindungen, Datenansichten, Metriken und Dimensionen, die sich auf diese gelöschte Sandbox beziehen, werden ebenfalls gelöscht. |
 | Löschen eines Schemas in [!UICONTROL Adobe Experience Platform], aber nicht der mit diesem Schema verbundenen Datensätze | [!UICONTROL Adobe Experience Platform] erlaubt nicht das Löschen von [!UICONTROL Schemata], denen ein oder mehrere [!UICONTROL Datensätze] zugeordnet sind. Ein Administrator mit den entsprechenden Berechtigungen kann jedoch zuerst die Datensätze und dann das Schema löschen. |
 | Löschen eines Datensatzes im Data Lake von [!UICONTROL Adobe Experience Platform] | Durch das Löschen eines Datensatzes im Adobe Experience Platform Data Lake wird der Datenfluss von diesem Datensatz zu allen Customer Journey Analytics-Verbindungen, die diesen Datensatz umfassen, angehalten. Daten aus diesem Datensatz werden automatisch aus den zugehörigen Customer Journey Analytics-Verbindungen gelöscht. |
 | Löschen eines Datensatzes in [!UICONTROL Customer Journey Analytics] | Wenden Sie sich an Ihr Adobe-Accountteam, um den Prozess zum Löschen eines Datensatzes innerhalb einer gespeicherten Verbindung zu starten. |

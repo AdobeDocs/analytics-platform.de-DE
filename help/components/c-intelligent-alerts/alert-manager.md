@@ -4,7 +4,7 @@ title: Verwalten von Warnhinweisen
 feature: Workspace Basics
 role: User, Admin
 exl-id: 174c3ebd-a77b-4403-ae9a-bb0cff4bcca6
-source-git-commit: 1891f73f4326a178b293e7c3763d0d1dbc000a25
+source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
 workflow-type: tm+mt
 source-wordcount: '596'
 ht-degree: 22%
@@ -33,8 +33,8 @@ Die ➊ Warnhinweisliste zeigt alle Warnhinweise an, die Ihnen gehören, die War
 
 | Spalte | Beschreibung |
 |---|---|
-| ![UnausgefüllterStern](/help/assets/icons/StarOutline.svg) | Wählen Sie aus![&#x200B; um einen Warnhinweis &#x200B;](/help/assets/icons/Star.svg)Star“ oder ![StarOutline](/help/assets/icons/StarOutline.svg) zu bevorzugen. |
-| **[!UICONTROL Titel und Beschreibung]** | Um den Warnhinweis zu bearbeiten, klicken Sie auf den Titel-Link, über den der [Warnhinweiserstellung“ geöffnet &#x200B;](alert-builder.md#alert-builder). |
+| ![UnausgefüllterStern](/help/assets/icons/StarOutline.svg) | Wählen Sie aus![ um einen Warnhinweis ](/help/assets/icons/Star.svg)Star“ oder ![StarOutline](/help/assets/icons/StarOutline.svg) zu bevorzugen. |
+| **[!UICONTROL Titel und Beschreibung]** | Um den Warnhinweis zu bearbeiten, klicken Sie auf den Titel-Link, über den der [Warnhinweiserstellung“ geöffnet ](alert-builder.md#alert-builder). |
 | **[!UICONTROL Typ]** | Zeigt an, ob es sich bei dem Warnhinweis um einen Customer Journey Analytics-Datenwarnhinweis oder einen Warnhinweis zur Nutzung von Server-Aufrufen handelt. |
 | **[!UICONTROL Aktiviert]** | Gibt an, ob der Warnhinweis aktiviert oder deaktiviert ist. |
 | **[!UICONTROL Datenansicht]** | Die Datenansichten, für die dieser Warnhinweis gilt. |
@@ -53,7 +53,7 @@ Sie können Aktionen für Warnhinweise mithilfe der Aktionsleiste ➋. Die Aktio
 
 | Symbol | Aktion | Beschreibung |
 |:---:|---|---|
-| ![Hinzufügen](/help/assets/icons/AddCircle.svg) | **[!UICONTROL Hinzufügen]** | Fügen Sie mithilfe der [Warnhinweiserstellung“ einen weiteren &#x200B;](alert-builder.md#alert-builder) hinzu. |
+| ![Hinzufügen](/help/assets/icons/AddCircle.svg) | **[!UICONTROL Hinzufügen]** | Fügen Sie mithilfe der [Warnhinweiserstellung“ einen weiteren ](alert-builder.md#alert-builder) hinzu. |
 | ![Durchsuchen](/help/assets/icons/Search.svg) | [!UICONTROL *Nach Titel suchen*] | Wenn kein Warnhinweis in der Liste ausgewählt ist, suchen Sie mithilfe dieses Suchfelds nach Warnhinweisen. |
 | ![Beschriftung](/help/assets/icons/Label.svg) | **[!UICONTROL Tag]** | Markieren Sie die ausgewählten Warnhinweise. Wählen Sie im **[!UICONTROL Warnhinweis]**-Dialogfeld die Tags für die ausgewählten Warnhinweise aus bzw. heben Sie die Auswahl auf. Klicken Sie **[!UICONTROL Speichern]**, um die Tags für die ausgewählten Warnhinweise zu speichern. |
 | ![Löschen](/help/assets/icons/Delete.svg) | **[!UICONTROL Löschen]** | Löscht die ausgewählten Warnhinweise. Sie werden zur Bestätigung aufgefordert. |
@@ -71,7 +71,7 @@ Die Filterleiste zeigt ➌ die aktiven Filter an, die vom Filterbereich auf die 
 
 ### Panel „Filter“
 
-Sie können die Liste der Warnhinweise mithilfe der ![&#x200B; &#x200B;](/help/assets/icons/Filter.svg)Filter **&#x200B;**&#x200B;Filter➍ im linken Bereich filtern. Das Bedienfeld „Filter“ zeigt den Filtertyp und die Anzahl der Warnhinweise an, die den spezifischen Filter berücksichtigen.
+Sie können die Liste der Warnhinweise mithilfe der ![ ](/help/assets/icons/Filter.svg)Filter **** Filter➍ im linken Bereich filtern. Das Bedienfeld „Filter“ zeigt den Filtertyp und die Anzahl der Warnhinweise an, die den spezifischen Filter berücksichtigen.
 
 
 1. Wählen Sie ![Filter](/help/assets/icons/Filter.svg) aus, um das Bedienfeld „Filter“ zu öffnen. Wenn Sie mehr Platz für die Liste „Warnhinweise“ benötigen, können Sie erneut ![Filtern](/help/assets/icons/Filter.svg) auswählen, um das Bedienfeld zu schließen.
@@ -113,7 +113,7 @@ Sie können die Liste der Warnhinweise mithilfe der ![&#x200B; &#x200B;](/help/a
 
 Sie können einen Warnhinweis bearbeiten
 
-* Wählen Sie in [[!UICONTROL &#x200B; Liste &#x200B;]Warnhinweis](#alerts-list) den Titel des Warnhinweises aus.
+* Wählen Sie in [[!UICONTROL  Liste ]Warnhinweis](#alerts-list) den Titel des Warnhinweises aus.
 
 Verwenden Sie die [Warnhinweiserstellung](alert-builder.md#alert-builder), um den Warnhinweis zu bearbeiten.
 

@@ -4,7 +4,7 @@ description: Binden Sie die von Adobe Journey Optimizer generierten Daten ein un
 exl-id: 9333ada2-b4d6-419e-9ee1-5c96f06a3bfd
 feature: Experience Platform Integration
 role: Admin
-source-git-commit: 9149a072dc8af3fac0d5272fe84baabca7fb6058
+source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
 workflow-type: tm+mt
 source-wordcount: '3514'
 ht-degree: 100%
@@ -28,14 +28,14 @@ Wenn Sie die Customer Journey Analytics-Berichterstellung für Journey Optimizer
 Die Verbindung hat den Namen **[!UICONTROL AJO-fähige Verbindung (*Sandbox-Name*)]** und verfügt über die folgenden vorkonfigurierten Werte für Konfiguration und Datensätze:
 
 | **Verbindungseinstellungen** | Wert |
-|---|---| 
+|---|---|
 | [!UICONTROL Name der Verbindung] | `AJO Enabled Connection (`_`sandbox name`_`)` |
 | [!UICONTROL Beschreibung der Verbindung] | [!UICONTROL *Beschreiben Sie hier Ihre Verbindung*] |
 | [!UICONTROL Tags] | [!UICONTROL *Tags auswählen*] |
 
 
 | **Dateneinstellungen** | Wert |
-|---|---| 
+|---|---|
 | [!UICONTROL Rollierendes Datenfenster aktivieren] | Aktiviert.  [!UICONTROL Ausgewählte Anzahl der Monate] `13`. |
 | [!UICONTROL Sandbox] | [!UICONTROL *Name der Sandbox*] (deaktiviert; Sie können diese Einstellung nicht ändern). |
 | [!UICONTROL Durchschnittliche Anzahl der täglichen Ereignisse] | weniger als 1 Million (deaktiviert; Sie können diese Einstellung nicht ändern). |
