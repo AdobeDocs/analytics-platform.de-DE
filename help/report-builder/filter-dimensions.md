@@ -42,11 +42,11 @@ So ändern Sie die für jede Dimension zurückgegebenen Dimensionselemente:
 
 1. Report Builder zeigt eine Benachrichtigung zur Bestätigung des hinzugefügten Filters an.
 
-Um angewendete Filter anzuzeigen, bewegen Sie den Mauszeiger über eine Dimension. Dimensionen mit angewendeten Filtern zeigen ![ Filtersymbol ](/help/assets/icons/Filter.svg)Filter) neben dem Dimensionsnamen an.
+Um angewendete Filter anzuzeigen, bewegen Sie den Mauszeiger über eine Dimension. Dimensionen mit angewendeten Filtern zeigen ![&#x200B; Filtersymbol &#x200B;](/help/assets/icons/Filter.svg)Filter) neben dem Dimensionsnamen an.
 
 ## Filter und Sortierreihenfolge ändern
 
-Neben ![ Metrik, die zum Filtern ](/help/assets/icons/ArrowUp.svg) Sortieren des Datenblocks verwendet ![, wird ein „ArrowUp“ oder ](/help/assets/icons/ArrowDown.svg)ArrowDown“ angezeigt. Die Pfeilrichtung gibt an, ob die Metrik in auf- oder absteigender Reihenfolge sortiert wird.
+Neben ![&#x200B; Metrik, die zum Filtern &#x200B;](/help/assets/icons/ArrowUp.svg) Sortieren des Datenblocks verwendet ![, wird ein „ArrowUp“ oder &#x200B;](/help/assets/icons/ArrowDown.svg)ArrowDown“ angezeigt. Die Pfeilrichtung gibt an, ob die Metrik in auf- oder absteigender Reihenfolge sortiert wird.
 
 Sortierreihenfolge ändern:
 
@@ -56,7 +56,7 @@ So ändern Sie die zum Filtern und Sortieren des Datenblocks verwendete Metrik:
 
 1. Bewegen Sie den Mauszeiger über die gewünschte Metrikkomponente im Tabellen-Builder, um zusätzliche Optionen anzuzeigen.
 
-2. Wählen Sie ![ bevorzugte Metrik ](/help/assets/icons/ArrowDown.svg)ArrowDown) aus.
+2. Wählen Sie ![&#x200B; bevorzugte Metrik &#x200B;](/help/assets/icons/ArrowDown.svg)ArrowDown) aus.
 
    ![Der Tabellen-Builder und die Metriken.](./assets/image30.png){zoomable="yes"}
 
