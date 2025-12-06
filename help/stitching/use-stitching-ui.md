@@ -6,9 +6,9 @@ feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: 9a1689d9-c1b7-42fe-9682-499e49843f76
 badgePremium: label="Beta" type="Informative"
-source-git-commit: 23b890ec6a3266d1ca0621b09264f1d6a2f82645
+source-git-commit: 6ebd1604e01af068228d7a5e4a78fdccf852f480
 workflow-type: tm+mt
-source-wordcount: '808'
+source-wordcount: '827'
 ht-degree: 3%
 
 ---
@@ -30,7 +30,7 @@ So aktivieren Sie die Zuordnung für einen Ereignis-Datensatz in der Connections
    * Mehrere Felder, die als Identität konfiguriert sind und es Ihnen ermöglichen, verschiedene Werte für eine persistente ID und eine Personen-ID auszuwählen.
    * Mindestens ein Feld, das als primäre Identität mit einem zugehörigen Namespace markiert ist, falls Sie Identity Map verwenden möchten, und der primäre Identity-Namespace für die persistente ID oder Personen-ID.
 
-* Der Ereignisdatensatz muss für [&#x200B; Identity Service aktiviert sein](/help/stitching/faq.md#enable-a-dataset-for-the-identity-service) falls Sie das Identitätsdiagramm und die diagrammbasierte Zuordnung verwenden möchten.
+* Wenn Sie die diagrammbasierte Zuordnung verwenden möchten und davon ausgehen, dass der Ereignis-Datensatz zum Identitätsdiagramm beitragen wird, sollten Sie [den Datensatz für den Identity Service aktivieren](/help/stitching/faq.md#enable-a-dataset-for-the-identity-service). Ein Datensatz trägt zum Identitätsdiagramm bei, wenn der Datensatz neben persistenten IDs relevante Personen-IDs enthält.
 
 
 ## Vorflugkontrollen
@@ -137,7 +137,7 @@ Um das Zusammenfügen zu aktivieren, gehen Sie im Abschnitt Ereignisdatensatz de
 
 1. Wählen Sie ein Lookback-Fenster aus **[!UICONTROL Dropdown-Menü]** Lookback-Fenster“. Die verfügbaren Optionen hängen vom Customer Journey Analytics-Paket ab, zu dem Sie berechtigt sind.
 
-Nachdem Sie eine Verbindung gespeichert haben, die Datensätze enthält, die für die Identitätszuordnung aktiviert sind, beginnt der Zuordnungsprozess für jeden Datensatz, wenn die Aufnahme von Daten für diesen Datensatz beginnt.
+Nachdem Sie eine Verbindung gespeichert haben, wird der Zuordnungsprozess für Datensätze, die für das Zuordnen aktiviert sind, gestartet, wenn die Aufnahme von Daten für diese Datensätze beginnt
 
 ## Einschränkungen
 
