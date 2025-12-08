@@ -2,9 +2,9 @@
 title: Übersicht über freigegebene Metriken und Dimensionen
 description: Verwenden Sie dieselbe Dimension oder Metrikreferenz für mehrere Datenansichten.
 exl-id: 998a9f9b-cfa7-4b97-b32b-d50e35d01b39
-source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
+source-git-commit: 1de8b8f40a7e1be0de0e6cbed5cc57ff834f2377
 workflow-type: tm+mt
-source-wordcount: '1246'
+source-wordcount: '1282'
 ht-degree: 0%
 
 ---
@@ -52,7 +52,7 @@ Alle freigegebenen Dimensionen und Metriken werden unter den vier Übersichtskar
    * **[!UICONTROL Erstellt von]**: Nur Komponenten anzeigen, die von einem bestimmten Benutzer erstellt wurden.
    * **[!UICONTROL Duplikate]**: Nur Komponenten anzeigen, die dieselbe Komponenten-ID wie eine andere Komponente haben. Diese Filter sind identisch mit dem Überprüfen von Komponenten über die Übersichtskarten.
 * **Suche**: Verwenden Sie das Symbol ![Suchen](../../assets/icons/Search.svg), um nach einer Komponente anhand des Namens zu suchen.
-* **[!UICONTROL Verbindung]**: Ein Dropdown-Menü, das die [Verbindung“ &#x200B;](/help/connections/overview.md). Freigegebene Dimensionen und Metriken sind immer spezifisch für eine einzelne Verbindung.
+* **[!UICONTROL Verbindung]**: Ein Dropdown-Menü, das die [Verbindung“ ](/help/connections/overview.md). Freigegebene Dimensionen und Metriken sind immer spezifisch für eine einzelne Verbindung.
 * **[!UICONTROL Tabelle anpassen]**: Wählen Sie das Symbol ![Tabelle anpassen](/help/assets/icons/ColumnSetting.svg) aus, um Spalten in der Tabelle ein- oder auszublenden. Zu den verfügbaren Optionen gehören:
    * **[!UICONTROL Feldname]**: Der Name der freigegebenen Dimension oder Metrik. Dieses Feld ist immer sichtbar.
    * **[!UICONTROL Typ]**: Gibt an, ob die Komponente eine Dimension oder eine Metrik ist. Dieses Feld ist immer sichtbar.
@@ -75,12 +75,12 @@ Alle freigegebenen Dimensionen und Metriken werden unter den vier Übersichtskar
    * **[!UICONTROL Option „Kein Wert]**: Die [Optionen für keinen Wert](/help/data-views/component-settings/no-value-options.md).
    * **[!UICONTROL Wert-Bucketing]**: Die Einstellungen [Wert-Bucketing](/help/data-views/component-settings/value-bucketing.md) der Komponente.
    * **[!UICONTROL Persistenz]**: Die Einstellungen [Persistenz](/help/data-views/component-settings/persistence.md) der Komponente.
-   * **[!UICONTROL Kleinbuchstaben]**: Gibt an, ob die Komponente basierend auf den Einstellungen (Verhalten[&#x200B; der Komponente &#x200B;](/help/data-views/component-settings/behavior.md) Kleinbuchstaben aktiviert ist.
+   * **[!UICONTROL Kleinbuchstaben]**: Gibt an, ob die Komponente basierend auf den Einstellungen (Verhalten[ der Komponente ](/help/data-views/component-settings/behavior.md) Kleinbuchstaben aktiviert ist.
    * **[!UICONTROL Teilzeichenfolge]**: Die Einstellungen [Teilzeichenfolge](/help/data-views/component-settings/substring.md) der Komponente.
-   * **[!UICONTROL Zusammenfassungsdatengruppe]**: Die Einstellungen [Zusammenfassungsdatengruppe“ &#x200B;](/help/data-views/component-settings/summary-data-group.md) Komponente.
+   * **[!UICONTROL Zusammenfassungsdatengruppe]**: Die Einstellungen [Zusammenfassungsdatengruppe“ ](/help/data-views/component-settings/summary-data-group.md) Komponente.
    * **[!UICONTROL Erstellungsdatum]**: Das Datum, an dem die Komponente erstellt oder importiert wurde.
    * **[!UICONTROL Zuletzt geändert]**: Wenn die Komponente nach ihrer Erstellung geändert wurde, das Datum der letzten Änderung.
-* **[!UICONTROL Vorgangsverlauf]**: Wählen Sie das Symbol ![Verlauf](/help/assets/icons/History.svg) aus, um ein modales Fenster zu öffnen, in dem alle Instanzen des Imports von Dimensionen und Metriken aus einzelnen Datenansichten angezeigt werden.
+* **[!UICONTROL Vorgangsverlauf]**: Wenn Sie eine große Anzahl von Komponenten importieren oder freigeben, wird automatisch ein Vorgang erstellt. Wählen Sie das Symbol ![Verlauf](/help/assets/icons/History.svg) aus, um ein modales Fenster zu öffnen, das alle Instanzen des Imports von Dimensionen und Metriken aus einzelnen Datenansichten anzeigt. Wenn keine der Import- oder Freigabeaktionen groß genug ist, um einen Auftrag Trigger, wird diese Schaltfläche nicht angezeigt.
 
 ## Bearbeiten von Komponenten oder Freigeben von Komponenten für Datenansichten
 
@@ -88,7 +88,7 @@ Aktivieren Sie das Kontrollkästchen neben einer Komponente, um alle verfügbare
 
 ![Vorschau der verfügbaren Aktionen](assets/smd-actions.png)
 
-* ![Bleistiftsymbol](/help/assets/icons/Edit.svg) **[!UICONTROL Bearbeiten]**: Öffnen Sie die ausgewählten Dimensionen und Metriken im [freigegebenen Komponenten-Editor](shared-component-editor.md), mit dem Sie ihre [&#x200B; anpassen können](/help/data-views/component-settings/overview.md). Wenn Sie mehrere Komponenten zur Bearbeitung auswählen, werden sie alle im Komponenten-Editor geöffnet. Sie können im Komponenten-Editor Komponenten umschalten und auf sie klicken, um dasselbe Feld für mehrere Komponenten zu bearbeiten.
+* ![Bleistiftsymbol](/help/assets/icons/Edit.svg) **[!UICONTROL Bearbeiten]**: Öffnen Sie die ausgewählten Dimensionen und Metriken im [freigegebenen Komponenten-Editor](shared-component-editor.md), mit dem Sie ihre [ anpassen können](/help/data-views/component-settings/overview.md). Wenn Sie mehrere Komponenten zur Bearbeitung auswählen, werden sie alle im Komponenten-Editor geöffnet. Sie können im Komponenten-Editor Komponenten umschalten und auf sie klicken, um dasselbe Feld für mehrere Komponenten zu bearbeiten.
 * ![Freigabesymbol](/help/assets/icons/ShareAlt.svg) **[!UICONTROL Für Datenansicht(en) freigeben]**: Öffnet ein Fenster, das alle in der ausgewählten Verbindung verfügbaren Datenansichten anzeigt. Aktivieren Sie das Kontrollkästchen für jede Datenansicht, in der Sie diese Komponente verfügbar machen möchten, und klicken Sie dann auf **[!UICONTROL Freigeben]**.
 * ![Symbol „Freigabe aufheben](/help/assets/icons/SaveTo.svg) **[!UICONTROL Freigabe für Datenansicht(en) aufheben]**: Öffnet ein Fenster, das alle Datenansichten anzeigt, für die diese Komponente derzeit freigegeben ist. Aktivieren Sie das Kontrollkästchen für jede Datenansicht, aus der Sie die Verfügbarkeit dieser Komponente entfernen möchten, und klicken Sie dann auf **[!UICONTROL Freigabe aufheben]**.
 * ![Symbol „Duplizieren](/help/assets/icons/Copy.svg) **[!UICONTROL Duplizieren]**: Erstellt eine Kopie der ausgewählten Komponenten. Für duplizierte Komponenten wird eine neue Komponenten-ID generiert.
