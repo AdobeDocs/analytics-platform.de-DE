@@ -6,10 +6,10 @@ feature: Audiences
 role: Admin
 hide: true
 hidefromtoc: true
-source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
+source-git-commit: 3fb94d920b240247f13050cf091423335a3d74ec
 workflow-type: tm+mt
-source-wordcount: '1035'
-ht-degree: 13%
+source-wordcount: '1289'
+ht-degree: 12%
 
 ---
 
@@ -53,7 +53,11 @@ ht-degree: 13%
 
 Mit der Zielgruppenanalyse können Sie Zielgruppenzugehörigkeitsdaten aus Experience Platform-Profildatensätzen in eine Customer Journey Analytics-Verbindung aufnehmen. Zielgruppen werden als neue Dimensionen zur Verwendung in Analysis Workspace verfügbar. Weitere Übersichtsinformationen zur Zielgruppenanalyse finden Sie unter [Zielgruppenanalyse - Übersicht](/help/connections/audience-analysis/audience-analysis-overview.md).
 
+## Erstellen einer Zielgruppenanalysekonfiguration
+
 Wählen Sie beim Erstellen einer Zielgruppenanalysekonfiguration die Sandbox und die Zusammenführungsrichtlinie aus, die mit den Experience Platform-Zielgruppen verknüpft sind, die Sie analysieren möchten. Customer Journey Analytics erstellt einen neuen Lookup-Datensatz und fügt dann den Lookup-Datensatz und den Profildatensatz automatisch zur ausgewählten Verbindung hinzu.
+
+Nur Systemadministratoren können Zielgruppenanalysekonfigurationen erstellen.
 
 So erstellen Sie eine Zielgruppenanalysekonfiguration:
 
@@ -70,18 +74,20 @@ So erstellen Sie eine Zielgruppenanalysekonfiguration:
    | Feld | Beschreibung |
    |---------|----------|
    | **[!UICONTROL Name]** | Geben Sie einen Namen für die Konfiguration an. |
-   | **[!UICONTROL Sandbox]** | Wählen Sie die Sandbox aus, die den Profildatensatz enthält, den Sie zu Ihrer Verbindung hinzufügen möchten. <p>Adobe Experience Platform bietet [Sandboxes](https://experienceleague.adobe.com/de/docs/experience-platform/sandbox/home) bereit, die eine einzelne Platform-Instanz in separate virtuelle Umgebungen aufteilen, um die Entwicklung und Weiterentwicklung von Programmen für digitale Erlebnisse zu erleichtern. Sie können sich Sandboxes als „Datensilos“ vorstellen. Sandboxes dienen der Steuerung des Zugriffs auf Datensätze.</p> |
+   | **[!UICONTROL Sandbox]** | Wählen Sie die Experience Platform-Sandbox aus, die den Profildatensatz enthält, den Sie zu Ihrer Verbindung hinzufügen möchten. <p>Adobe Experience Platform bietet [Sandboxes](https://experienceleague.adobe.com/de/docs/experience-platform/sandbox/home) bereit, die eine einzelne Platform-Instanz in separate virtuelle Umgebungen aufteilen, um die Entwicklung und Weiterentwicklung von Programmen für digitale Erlebnisse zu erleichtern. Sie können sich Sandboxes als „Datensilos“ vorstellen. Sandboxes dienen der Steuerung des Zugriffs auf Datensätze.</p> |
 
 1. Geben **[!UICONTROL im Abschnitt]** Profildatensatz“ die folgenden Informationen an:
 
    | Feld | Beschreibung |
    |---------|----------|
    | **[!UICONTROL Zusammenführungsrichtlinie]** | Wählen Sie die Zusammenführungsrichtlinie aus, die dem Profildatensatz entspricht, den Sie für die Zielgruppenanalyse verwenden möchten. <p>Zusammenführungsrichtlinien bestimmen, wie Adobe Experience Platform Profildaten aus mehreren Datensätzen zu einheitlichen Kundenprofilen kombiniert, die für die Erstellung von Zielgruppen verwendet werden. Die ausgewählte Zusammenführungsrichtlinie wirkt sich darauf aus, welche Profilattribute in Ihren Zielgruppen enthalten sind. Jeden Tag wird in Experience Platform ein Schnappschuss dieser Daten generiert. Dieser Snapshot bietet eine statische Ansicht der Daten zu einem bestimmten Zeitpunkt und enthält keine Ereignisdaten.</p><p>Wählen Sie die **[!UICONTROL Standardzeitbasierte]** Zusammenführungsrichtlinie aus, wenn Sie mehrere Zusammenführungsrichtlinien sehen und sich nicht sicher sind, welche ausgewählt werden soll. Sie können auch Ihr Daten-Team konsultieren, um besser zu verstehen, welche Zielgruppen mit den einzelnen Zusammenführungsrichtlinien verknüpft sind.</p> |
-   | **[!UICONTROL Profildatensatz]** | Der Profildatensatz, der mit der ausgewählten Zusammenführungsrichtlinie verknüpft ist. Dieser Profildatensatz enthält die Experience Platform-Zielgruppendaten, die Sie analysieren möchten. Dieser Profildatensatz wird der ausgewählten Verbindung hinzugefügt.<p>Nachdem Sie eine Zusammenführungsrichtlinie ausgewählt haben, wird der Export des Profilschnappschusses angezeigt. Beispiel: `Profile-Snapshot-Export-abbc7093-80f4-4b49-b96e-e743397d763f`.</p><p>Weitere Informationen finden Sie unter [Profilattributdatensätze](https://experienceleague.adobe.com/de/docs/experience-platform/dashboards/query#profile-attribute-datasets) im Handbuch zu Experience Platform-Dashboards.</p> |
+   | **[!UICONTROL Profildatensatz]** | Der Profildatensatz, der mit der ausgewählten Zusammenführungsrichtlinie verknüpft ist. Dieser Profildatensatz enthält die Experience Platform-Zielgruppendaten, die Sie analysieren möchten. Dieser Profildatensatz wird der ausgewählten Verbindung hinzugefügt.<p>Nachdem Sie eine Zusammenführungsrichtlinie ausgewählt haben, wird der Export des Profilschnappschusses angezeigt. Beispiel: `Profile-Snapshot-Export-abbc7093-80f4-4b49-b96e-e743397d763f`.</p><p>Weitere Informationen finden Sie unter [Profilattributdatensätze](https://experienceleague.adobe.com/en/docs/experience-platform/dashboards/query#profile-attribute-datasets) im Handbuch zu Experience Platform-Dashboards.</p> |
 
 1. Klicken Sie **[!UICONTROL Abschnitt]** Verbindung“ auf **[!UICONTROL Verbindung auswählen]**.
 
 1. Aktivieren Sie im Dialogfeld Verbindungen das Kontrollkästchen neben der Verbindung, der Sie den Profildatensatz hinzufügen möchten, und klicken Sie dann auf **[!UICONTROL Verbindung verwenden]**.
+
+   Eine Verbindung kann nur mit einer Zielgruppenanalysekonfiguration verknüpft werden.
 
 1. Geben Sie die folgenden Informationen an, um die Verbindung zu konfigurieren:
 
@@ -100,5 +106,35 @@ So erstellen Sie eine Zielgruppenanalysekonfiguration:
 1. Wählen **[!UICONTROL Erstellen]** aus, um die Konfiguration zu erstellen.
 
    Da der Profildatensatz einmal täglich aktualisiert wird, sind Zielgruppen in Customer Journey Analytics-Datenansichten am Tag nach der Erstellung der Zielgruppenanalysekonfiguration verfügbar.
+
+1. Überprüfen Sie nach 24 [ mithilfe von Zielgruppendimensionen in der ](#view-audience-dimensions-in-the-data-view), ob die Zielgruppendimensionen in den von Ihnen ausgewählten Datenansichten verfügbar sind.
+
+## Anzeigen von Zielgruppendimensionen in der Datenansicht
+
+Nachdem Sie [Zielgruppenanalyse-Konfiguration erstellen](#create-an-audience-analysis-configuration) können Sie überprüfen, ob Zielgruppendimensionen zu den Datenansichten hinzugefügt wurden, die Sie während der Konfiguration ausgewählt haben.
+
+Um Zielgruppendimensionen in der Datenansicht anzuzeigen, müssen Sie Produktprofil-Administrator für das Produktprofil sein, dem die Datenansicht zugewiesen ist. Weitere Informationen finden Sie unter [Zugriffssteuerung](/help/technotes/access-control.md).
+
+So zeigen Sie die Dimensionen der Zielgruppenanalyse in der Datenansicht an:
+
+1. Wählen Sie in Customer Journey Analytics **[!UICONTROL Daten-Management]** > **[!UICONTROL Datenansichten]**.
+
+1. Im Abschnitt **[!UICONTROL Dimensionen]** sollten jetzt die folgenden Dimensionen verfügbar sein:
+
+   * **[!UICONTROL Zielgruppenname]**
+
+   * **[!UICONTROL Zielgruppenherkunft]**
+
+   * **[!UICONTROL Herkunft der Zielgruppe beendet]**
+
+   * **[!UICONTROL Name der verlassenen Zielgruppe]**
+
+   Beachten Sie, dass jede dieser Dimensionen dem Profildatensatz hinzugefügt wurde, der mit der Zusammenführungsrichtlinie verknüpft ist, die Sie während der Konfiguration der Zielgruppenanalyse ausgewählt haben. Jede Dimension wurde dem neuen erstellten Lookup-Datensatz hinzugefügt.
+
+   ![Zielgruppendimensionen in der Datenansicht verfügbar](assets/audience-analysis-dataview-dataset.png)
+
+1. Verwenden Sie die Zielgruppenanalysedimensionen in Analysis Workspace.
+
+   Benutzende, die Zugriff auf die Verwendung der Datenansicht in Analysis Workspace haben, können die neuen Dimensionen sehen und sie in ihren Analysen verwenden. Informationen zur Verwendung der Zielgruppenanalysedimensionen in Analysis Workspace finden Sie unter [ von Experience Platform-Zielgruppen in Customer Journey Analytics](/help/connections/audience-analysis/analyze-audiences.md).
 
 

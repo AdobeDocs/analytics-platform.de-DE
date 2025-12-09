@@ -6,22 +6,24 @@ feature: Audiences
 role: Admin
 hide: true
 hidefromtoc: true
-source-git-commit: 2b91c0592ac4ec0e0b5ffa3db91758466563abaf
+source-git-commit: f23775342a29d758b478206a77386e18a58312a6
 workflow-type: tm+mt
-source-wordcount: '476'
+source-wordcount: '503'
 ht-degree: 0%
 
 ---
 
 # Analysieren von Experience Platform-Zielgruppen in Customer Journey Analytics {#analyze-audiences-RTCDP}
 
-Sie können mit der Analyse von Experience Platform-Zielgruppen in Customer Journey Analytics beginnen, nachdem Sie [eine Zielgruppenanalysekonfiguration erstellt haben](/help/connections/audience-analysis/audience-analysis-configure.md) wenn Zielgruppendaten als neue Dimensionen in Analysis Workspace verfügbar sind.
+Nach dem [Erstellen einer Zielgruppenanalysekonfiguration](/help/connections/audience-analysis/audience-analysis-configure.md) werden Zielgruppendaten als neue Dimensionen in den Datenansichten verfügbar, in denen Sie sie für die Erstellung konfigurieren. Sie können die neuen Zielgruppendimensionen überall in Analysis Workspace verwenden, wenn Sie Zugriff auf eine Datenansicht haben, in der die Zielgruppenanalysedimensionen hinzugefügt wurden.
+
+## Verwenden der Vorlage „Zielgruppenübersicht“
 
 In Customer Journey Analytics ist eine Vorlage für die Zielgruppenübersicht verfügbar.
 
 <!-- Can you also use the new audience dimensions in any project, regardless of whether it's a template? I assume so -->
 
-<!-- What are the names of the new dimensions? Are they customized to whatever your audience names are in AEP, or are they always the same? -->
+<!-- What are the names of the new dimensions? Are they customized to whatever your audience names are in AEP, or are they always the same? Are they the dimensions available in the Audience overview template? (Audience Name, Audience Origin, Exited Audience Name, Exited Audience Origin; Audience Description, Exited Audience Description). Metrics included (Distinct Audiences) -->
 
 Informationen zum Zugriff auf die Vorlage „Zielgruppenübersicht“ finden Sie unter [Zugriff auf und Ausführen einer Vorlage](/help/analysis-workspace/templates/use-templates.md#access-and-run-a-template) unter [Verwenden von Vorlagen](/help/analysis-workspace/templates/use-templates.md).
 
@@ -49,7 +51,7 @@ Wählen Sie bis zu drei Zielgruppen in der Tabelle in diesem Bedienfeld aus, um 
 
 Zeigt Daten für alle ausgeschlossenen Zielgruppen mit Nutzungsereignissen an, die mit der ausgewählten Datenansicht verknüpft sind. Daten werden immer für gestern angezeigt. Daher führt eine Änderung des Datumsbereichs des Bedienfelds zu ungenauen Daten. „Ausgestiegene Zielgruppen“ sind Zielgruppen, in denen Personen mit Datennutzungsereignissen gestern den Computer verlassen oder ihn verlassen haben.
 
-Verwenden Sie die Tabelle in diesem Bedienfeld, um das Verhalten der Zielgruppe besser zu verstehen. Ziehen Sie die Dimension Vorhandene Zielgruppenbeschreibung aus der ausgewählten Datenansicht und fügen Sie sie als Aufschlüsselung hinzu. Oder verwenden Sie eine andere Interaktionsdimension oder Metrik (z. B. Seite, Aktion usw.) als Aufschlüsselung.
+Verwenden Sie die Tabelle in diesem Bedienfeld, um das Verhalten der Zielgruppe besser zu verstehen. Ziehen Sie die Dimension Ausgetretene Zielgruppenbeschreibung aus der ausgewählten Datenansicht und fügen Sie sie als Aufschlüsselung hinzu. Oder verwenden Sie eine andere Interaktionsdimension oder Metrik (z. B. Seite, Aktion usw.) als Aufschlüsselung.
 
 ## Bedienfeld für die am häufigsten beendeten Zielgruppenursprünge
 

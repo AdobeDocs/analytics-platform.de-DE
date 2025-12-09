@@ -4,7 +4,7 @@ description: Erfahren Sie mehr über das Konzept der Zielgruppenveröffentlichun
 exl-id: 30404bfc-0ee7-4f01-842c-7e6156dc0b45
 feature: Audiences
 role: User, Admin
-source-git-commit: ff301a4c76c547bf52e0dfaef5258fd183411c73
+source-git-commit: a8ac74b31beb3378de282ac4b0b632e0f2bd8230
 workflow-type: tm+mt
 source-wordcount: '434'
 ht-degree: 94%
@@ -13,7 +13,18 @@ ht-degree: 94%
 
 # Überblick über die Zielgruppenveröffentlichung
 
-Sie können in Customer Journey Analytics verfügbare Zielgruppen erstellen und im [Echtzeit-Kundenprofil) &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=de) Adobe Experience Platform veröffentlichen, um sie zum Targeting und zur Personalisierung zu verwenden.
+<!-- Add this when Audience Analysis releases:
+
+>[!NOTE]
+>
+>Understand the difference between audience analysis and audience publishing:
+>
+>* **Audience analysis**: Allows you to ingest audience membership data from Experience Platform Profile datasets into a Customer Journey Analytics connection. For information about audience analysis, see [Audience analysis overview](/help/connections/audience-analysis/audience-analysis-overview.md)
+>* **Audience publishing**: Allows you to create and publish audiences discovered in Customer Journey Analytics to Adobe Experience Platform for customer targeting and personalization. 
+
+-->
+
+Sie können in Customer Journey Analytics verfügbare Zielgruppen erstellen und im [Echtzeit-Kundenprofil) ](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=de) Adobe Experience Platform veröffentlichen, um sie zum Targeting und zur Personalisierung zu verwenden.
 
 <!-- add this when Audience Analysis releases: (For information about ingesting audience membership data from Experience Platform Profile datasets into a Customer Journey Analytics connection, see [Audience analysis overview](/help/connections/audience-analysis/audience-analysis-overview.md).) -->
 

@@ -6,9 +6,9 @@ feature: Audiences
 role: Admin
 hide: true
 hidefromtoc: true
-source-git-commit: 2b91c0592ac4ec0e0b5ffa3db91758466563abaf
+source-git-commit: f23775342a29d758b478206a77386e18a58312a6
 workflow-type: tm+mt
-source-wordcount: '521'
+source-wordcount: '678'
 ht-degree: 4%
 
 ---
@@ -19,7 +19,10 @@ ht-degree: 4%
 
 >[!NOTE]
 >
->Die Zielgruppenanalyse unterscheidet sich von der Zielgruppenveröffentlichung, mit der Sie in Customer Journey Analytics entdeckte Zielgruppen erstellen und in Adobe Experience Platform veröffentlichen können, um sie zum Targeting und zur Personalisierung zu verwenden. Weitere Informationen zur Zielgruppenveröffentlichung finden Sie unter [Zielgruppenveröffentlichung - Übersicht](/help/components/audiences/audiences-overview.md).
+>Verstehen Sie den Unterschied zwischen Zielgruppenanalyse und Zielgruppenveröffentlichung:
+>
+>* **Zielgruppenanalyse**: Ermöglicht die Aufnahme von Zielgruppenzugehörigkeitsdaten aus Experience Platform-Profildatensätzen in eine Customer Journey Analytics-Verbindung.
+>* **Zielgruppenveröffentlichung**: Ermöglicht das Erstellen und Veröffentlichen von in Customer Journey Analytics gefundenen Zielgruppen in Adobe Experience Platform zum Kunden-Targeting und zur Personalisierung. Weitere Informationen zur Zielgruppenveröffentlichung finden Sie unter [Zielgruppenveröffentlichung - Übersicht](/help/components/audiences/audiences-overview.md).
 
 Mit der Zielgruppenanalyse können Sie Zielgruppenzugehörigkeitsdaten aus Experience Platform-Profildatensätzen in eine Customer Journey Analytics-Verbindung aufnehmen. Zielgruppen werden als neue Dimensionen zur Verwendung in Analysis Workspace verfügbar.
 
@@ -46,6 +49,12 @@ Bei der Konfiguration der Zielgruppenanalyse wählen Sie die Sandbox und die Zus
 
 Weitere Informationen finden Sie unter [Konfigurieren der Zielgruppenanalyse](/help/connections/audience-analysis/audience-analysis-configure.md).
 
+## Verwalten von Zielgruppenanalysekonfigurationen
+
+Sie können Zielgruppenanalysekonfigurationen verwalten, nachdem sie erstellt wurden. Sie können Konfigurationen anzeigen, bearbeiten und löschen.
+
+Informationen zum Verwalten vorhandener Zielgruppenanalysekonfigurationen finden Sie unter [Verwalten von Zielgruppenanalysekonfigurationen](/help/connections/audience-analysis/audience-analysis-manage.md).
+
 ## Analysieren von Zielgruppendaten in Customer Journey Analytics
 
 Wenn Zielgruppendaten in Customer Journey Analytics verfügbar sind, können Sie verwertbare Einblicke in das Verhalten von Zielgruppenmitgliedern über verschiedene Kanäle hinweg erhalten.
@@ -56,7 +65,17 @@ Sie können beispielsweise das Verhalten einzelner Kundinnen und Kunden verfolge
 
 * Zielgruppenmitglieder, die schließlich einen Kauf im Geschäft getätigt haben
 
-Weitere Informationen finden Sie unter [&#x200B; von Experience Platform-Zielgruppen in Customer Journey Analytics](/help/connections/audience-analysis/analyze-audiences.md).
+Weitere Informationen finden Sie unter [ von Experience Platform-Zielgruppen in Customer Journey Analytics](/help/connections/audience-analysis/analyze-audiences.md).
+
+## Rollen- und Berechtigungsanforderungen für die Zielgruppenanalyse
+
+Die folgenden Customer Journey Analytics-Rollen und Experience Platform-Berechtigungen sind für die Zielgruppenanalyse erforderlich:
+
+| Funktion | Anforderungen an Customer Journey Analytics-Rollen oder -Berechtigungen | Experience Platform-Berechtigungsanforderungen |
+|---------|----------|----------|
+| [Erstellen von Zielgruppenanalysekonfigurationen](/help/connections/audience-analysis/audience-analysis-configure.md) | Systemadministrator | <ul><li>Datensätze: Leseberechtigungen</li><li>Schemata: Lesen, Schreiben</li><li>Identity- und Namespaces: Lesen</li></ul> |
+| [Anzeigen von Zielgruppenanalysedimensionen in der Datenansicht](/help/connections/audience-analysis/audience-analysis-configure.md#view-audience-dimensions-in-the-data-view) | Produktprofil-Administrator für das Produktprofil, dem die Datenansicht zugewiesen ist <p>Weitere Informationen finden Sie unter [Zugriffssteuerung](/help/technotes/access-control.md).</p> | k. A. |
+| Verwenden von Zielgruppenanalysedimensionen in Analysis Workspace | Zugriff auf eine Datenansicht, in der die Zielgruppenanalysedimensionen hinzugefügt wurden | k. A. |
 
 
 
