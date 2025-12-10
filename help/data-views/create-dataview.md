@@ -5,10 +5,10 @@ exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: c9d7a4596a842ab7d949364e3469747d20ca15b4
+source-git-commit: 95e50b73533c627f05c3b8dfe112b28b4f9e70c1
 workflow-type: tm+mt
-source-wordcount: '2540'
-ht-degree: 82%
+source-wordcount: '2722'
+ht-degree: 76%
 
 ---
 
@@ -19,7 +19,7 @@ Das Erstellen einer Datenansicht beinhaltet entweder das Erstellen von Metriken 
 
 >[!BEGINSHADEBOX]
 
-Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Erstellen oder Bearbeiten einer Datenansicht](https://video.tv.adobe.com/v/3410300/?captions=ger&quality=12&learn=on){target="_blank"} finden Sie ein Demovideo.
+Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Erstellen oder Bearbeiten einer Datenansicht](https://video.tv.adobe.com/v/35110/?quality=12&learn=on){target="_blank"} finden Sie ein Demovideo.
 
 >[!ENDSHADEBOX]
 
@@ -96,14 +96,14 @@ Dieser Abschnitt ist nur für Admins sichtbar, denen Journey Optimizer bereitges
 
 ### Container
 
-Gibt den Namen der Container für die Datenansicht an. Container-Namen werden häufig in &quot;[&quot; &#x200B;](/help/components/segments/seg-overview.md#containers).
+Gibt den Namen der Container für die Datenansicht an. Container-Namen werden häufig in &quot;[&quot; ](/help/components/segments/seg-overview.md#containers).
 
 | Einstellung | Beschreibung |
 | --- | --- |
-| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL Container-Name für globales Konto &#x200B;]** | `Global Account` (Standard). Der Container [!UICONTROL Globales Konto] enthält sämtliche Sitzungen und Ereignisse für globale Konten innerhalb des angegebenen Zeitrahmens. Falls Ihre Organisation einen anderen Begriff verwendet, können Sie den Container hier umbenennen. |
-| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL Container-Name für Konto &#x200B;]** | `Account` (Standard). Der Container [!UICONTROL Konto] enthält sämtliche Sitzungen und Ereignisse für Konten innerhalb des angegebenen Zeitrahmens. Falls Ihre Organisation einen anderen Begriff verwendet, können Sie den Container hier umbenennen. |
-| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL Container-Name für Opportunity &#x200B;]** | `Opportunity` (Standard). Der Container [!UICONTROL Opportunity] enthält sämtliche Sitzungen und Ereignisse für Opportunitys innerhalb des angegebenen Zeitrahmens. Falls Ihre Organisation einen anderen Begriff verwendet, können Sie den Container hier umbenennen. |
-| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL Container-Name für Käufergruppe &#x200B;]** | `Buying Group` (Standard). Der Container [!UICONTROL Käufergruppe] enthält sämtliche Sitzungen und Ereignisse für Käufergruppen innerhalb des angegebenen Zeitrahmens. Falls Ihre Organisation einen anderen Begriff verwendet, können Sie den Container hier umbenennen. |
+| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL Container-Name für globales Konto ]** | `Global Account` (Standard). Der Container [!UICONTROL Globales Konto] enthält sämtliche Sitzungen und Ereignisse für globale Konten innerhalb des angegebenen Zeitrahmens. Falls Ihre Organisation einen anderen Begriff verwendet, können Sie den Container hier umbenennen. |
+| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL Container-Name für Konto ]** | `Account` (Standard). Der Container [!UICONTROL Konto] enthält sämtliche Sitzungen und Ereignisse für Konten innerhalb des angegebenen Zeitrahmens. Falls Ihre Organisation einen anderen Begriff verwendet, können Sie den Container hier umbenennen. |
+| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL Container-Name für Opportunity ]** | `Opportunity` (Standard). Der Container [!UICONTROL Opportunity] enthält sämtliche Sitzungen und Ereignisse für Opportunitys innerhalb des angegebenen Zeitrahmens. Falls Ihre Organisation einen anderen Begriff verwendet, können Sie den Container hier umbenennen. |
+| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL Container-Name für Käufergruppe ]** | `Buying Group` (Standard). Der Container [!UICONTROL Käufergruppe] enthält sämtliche Sitzungen und Ereignisse für Käufergruppen innerhalb des angegebenen Zeitrahmens. Falls Ihre Organisation einen anderen Begriff verwendet, können Sie den Container hier umbenennen. |
 | **[!UICONTROL Container-Name für Person]** | `Person` (Standard). Der Container [!UICONTROL Person] enthält sämtliche Sitzungen und Ereignisse für Personen innerhalb des angegebenen Zeitrahmens. Wenn Ihr Unternehmen einen anderen Begriff verwendet (z. B. „Besucher“ oder „Benutzer“), können Sie den Container hier umbenennen. |
 | **[!UICONTROL Container-Name für Sitzung]** | `Session` (Standard). Mit dem Sitzungs-Container können Seiteninteraktionen, Kampagnen oder Konversionen für eine bestimmte [!UICONTROL Sitzung] identifiziert werden. Sie können diesen Container in „Besuch“ oder einen anderen von Ihrem Unternehmen bevorzugten Begriff umbenennen. |
 | **[!UICONTROL Container-Name für Ereignis]** | `Event` (Standard). Der Container [!UICONTROL Ereignis] definiert einzelne Ereignisse in einem Datensatz. Wenn Ihr Unternehmen einen anderen Begriff verwendet (z. B. „Hits“ oder „Seitenansichten“), können Sie den Container hier umbenennen. |
@@ -120,7 +120,7 @@ Gibt das Kalenderformat an, dem die Datenansicht folgen soll. Sie können mehrer
 | [!UICONTROL **Kalendertyp**] | Bestimmen Sie, wie die Wochen des Monats gruppiert werden.<br>**Gregorianisch:** Standardkalenderformat. Die Quartale werden nach Monat gruppiert.<br>**4-5-4 Einzelhandel:** Ein standardisierter 4-5-4 Einzelhandelskalender. Der erste und der letzte Monat des Quartals enthalten 4 Wochen, während der zweite Monat des Quartals 5 Wochen umfasst.<br>**Benutzerspezifisch (4-5-4):** Ähnlich wie der 4-5-4-Kalender, mit dem Unterschied, dass Sie den ersten Tag des Jahres und das Jahr auswählen können, in dem die „zusätzliche“ Woche liegt.<br>**Benutzerspezifisch (4-4-5):** Der erste und zweite Monat jedes Quartals enthalten 4 Wochen, während die letzte Woche jedes Quartals 5 Wochen umfasst.<br>**Benutzerspezifisch (5-4-4):** Der erste Monat jedes Quartals umfasst 5 Wochen, während der zweite und dritte Monat jedes Quartals 4 Wochen umfassen. |
 | [!UICONTROL **Erster Monat des Jahres**] und [!UICONTROL **Erster Wochentag**] | Sichtbar für den gregorianischen Kalender. Geben Sie an, mit welchem Monat das Kalenderjahr beginnen soll und mit welchem Tag jede Woche beginnen soll. |
 | [!UICONTROL **Erster Tag des aktuellen Jahres**] | Für benutzerdefinierte Kalendertypen sichtbar. Geben Sie an, an welchem Tag des Jahres das aktuelle Jahr beginnen soll. Der Kalender formatiert automatisch den ersten Wochentag auf Grundlage dieses Werts. |
-| [!UICONTROL **Jahr mit „zusätzlicher“ Woche**] | Bei den meisten 364-tägigen Kalendern (52 Wochen mit jeweils 7 Tagen) sammeln sich jedes Jahr verbleibende Tage, bis sie eine zusätzliche Woche ausmachen. Diese zusätzliche Woche wird dann zum letzten Monat des Jahres hinzugefügt. Geben Sie an, zu welchem Jahr die zusätzliche Woche hinzugefügt werden soll. |
+| [!UICONTROL **Jahr mit „zusätzlicher“ Woche**] | Bei den meisten 364-tägigen Kalendern (52 Wochen mit jeweils 7 Tagen) sammeln sich jedes Jahr verbleibende Tage, bis sie eine zusätzliche Woche ausmachen. Diese zusätzliche Woche wird dann zum letzten Monat des Jahres hinzugefügt. Geben Sie an, zu welchem Jahr die zusätzliche Woche hinzugefügt werden soll.<br><br/>**Zusätzliche Wochen und Schaltjahre**<br/> Wenn Sie einen benutzerdefinierten **[!UICONTROL Kalendertyp]** (**[!UICONTROL Benutzerdefiniert (4-5-4)]**, **[!UICONTROL Benutzerdefiniert (4-4-5)]** oder **[!UICONTROL Benutzerdefiniert (5-4-4)]**) auswählen, werden jedes Jahr verbleibende Tage gesammelt, bis die Tage zu einer ganzen zusätzlichen Woche (7 Tage) addieren. Diese zusätzliche Woche wird zu dem Jahr hinzugefügt, das Sie unter „Jahr **[!UICONTROL auswählen, in dem die „zusätzliche“ Woche eintritt]**.<br/><br/>Schaltjahre werden absichtlich nicht in dem Jahr angezeigt **[!UICONTROL in dem die „zusätzliche“ Woche auftritt]**. Ein Schaltjahr kann jedoch noch 53 Wochen enthalten. Um zu erzwingen, dass ein Schaltjahr 53 Wochen enthält, wählen Sie ein Nicht-Schaltjahr aus **[!UICONTROL Jahr, in dem die „zusätzliche“ Woche auftritt]** um sicherzustellen, dass die kumulative Datumsverschiebung bis zu 7 Tage für Ihr Ziel-Schaltjahr ergibt. Beispiel: Um im Jahr 2024 53 Wochen zu haben, wählen Sie **[!UICONTROL 2019]**. Von 2019 bis 2024 beträgt die Datumsverschiebung insgesamt 7 Tage (2020 (+2), 2021 (+1), 2022 (+1), 2023 (+1) und 2024 (+2)), was zu einer 53. Woche im Jahr 2024 führt.<br/><br/>Die Auswahl von **[!UICONTROL Erster Tag des aktuellen Jahres]** wirkt sich darauf aus, wo die zusätzliche Woche landet. Bestätigen Sie Ihre Konfiguration mithilfe der Kalendervorschau. |
 
 {style="table-layout:auto"}
 
