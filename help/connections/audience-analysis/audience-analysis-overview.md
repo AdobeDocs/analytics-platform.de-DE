@@ -6,7 +6,7 @@ feature: Audiences
 role: Admin
 hide: true
 hidefromtoc: true
-source-git-commit: f23775342a29d758b478206a77386e18a58312a6
+source-git-commit: 996d7d7bb0c0da566a926f9a3a4c465baca69a9a
 workflow-type: tm+mt
 source-wordcount: '678'
 ht-degree: 4%
@@ -32,12 +32,12 @@ Die folgende Abbildung und die zugehörige Tabelle zeigen eine allgemeine Darste
 
 | Nummer | Funktion | Funktion |
 |---------|----------|---------|
-| 1 | Konfiguration der Zielgruppenanalyse | Konfigurationsoberfläche in Customer Journey Analytics zum Konfigurieren der Zielgruppenanalyse. |
+| 1 | Konfiguration der Zielgruppenanalyse | Die Konfigurationsschnittstelle in Customer Journey Analytics, die zur Konfiguration der Zielgruppenanalyse verwendet wird. |
 | 2 | Sandbox | Muss den Profildatensatz enthalten, den Sie zu Ihrer Verbindung hinzufügen möchten. |
 | 3 | Profildatensatz | Muss die Experience Platform-Zielgruppendaten enthalten, die Sie analysieren möchten. Dieser Profildatensatz wird der ausgewählten Verbindung hinzugefügt. |
 | 4 | Zusammenführungsrichtlinie | Die Zusammenführungsrichtlinie, die mit den Experience Platform-Zielgruppen verknüpft ist, die Sie analysieren möchten. |
 | 5 | Profildaten | Die Profildaten, die mit der ausgewählten Zusammenführungsrichtlinie verknüpft sind. Diese Daten sind in Experience Platform-Datensätzen verfügbar. |
-| 6 | Neuer Lookup-Datensatz | Stellt Anzeigenamen für die neuen Zielgruppendimensionen bereit, die erstellt werden. Der Lookup-Datensatz wird automatisch erstellt und zusammen mit dem von Ihnen ausgewählten Profildatensatz zur Verbindung hinzugefügt. |
+| 6 | Neuer Lookup-Datensatz | Stellt Anzeigenamen für die neuen Zielgruppendimensionen bereit, die erstellt werden. <p>Der Lookup-Datensatz wird automatisch erstellt und zusammen mit dem von Ihnen ausgewählten Profildatensatz zur Verbindung hinzugefügt.</p> |
 | 7 | Verbindung | Die Verbindung, zu der Sie den ausgewählten Profildatensatz hinzufügen möchten. |
 | 8 | Neue Zielgruppendimensionen | Neue Zielgruppendimensionen<!--and metrics?--> die die Experience Platform-Zielgruppen darstellen, die in dem von Ihnen ausgewählten Profildatensatz enthalten sind und in Analysis Workspace für das Reporting verfügbar sind. Diese Dimensionen werden automatisch erstellt. |
 | 9 | Datenansichten | Die ausgewählten Datenansichten, die mit Ihrer Verbindung verknüpft sind. Dies sind die Datenansichten, die Sie bei der Analyse von Experience Platform-Zielgruppendaten in Analysis Workspace verwenden möchten. Diese Datenansichten werden für das Reporting automatisch mit Experience Platform-Zielgruppendaten konfiguriert. |
@@ -65,7 +65,7 @@ Sie können beispielsweise das Verhalten einzelner Kundinnen und Kunden verfolge
 
 * Zielgruppenmitglieder, die schließlich einen Kauf im Geschäft getätigt haben
 
-Weitere Informationen finden Sie unter [&#x200B; von Experience Platform-Zielgruppen in Customer Journey Analytics](/help/connections/audience-analysis/analyze-audiences.md).
+Weitere Informationen finden Sie unter [ von Experience Platform-Zielgruppen in Customer Journey Analytics](/help/connections/audience-analysis/analyze-audiences.md).
 
 ## Rollen- und Berechtigungsanforderungen für die Zielgruppenanalyse
 
@@ -73,7 +73,7 @@ Die folgenden Customer Journey Analytics-Rollen und Experience Platform-Berechti
 
 | Funktion | Anforderungen an Customer Journey Analytics-Rollen oder -Berechtigungen | Experience Platform-Berechtigungsanforderungen |
 |---------|----------|----------|
-| [Erstellen von Zielgruppenanalysekonfigurationen](/help/connections/audience-analysis/audience-analysis-configure.md) | Systemadministrator | <ul><li>Datensätze: Leseberechtigungen</li><li>Schemata: Lesen, Schreiben</li><li>Identity- und Namespaces: Lesen</li></ul> |
+| [Erstellen von Zielgruppenanalysekonfigurationen](/help/connections/audience-analysis/audience-analysis-configure.md) | Systemadministrator | <ul><li>Datensätze: Leseberechtigungen</li><li>Schemata: Lesen, Schreiben</li><li>Identity-Namespaces: Lesen</li></ul> |
 | [Anzeigen von Zielgruppenanalysedimensionen in der Datenansicht](/help/connections/audience-analysis/audience-analysis-configure.md#view-audience-dimensions-in-the-data-view) | Produktprofil-Administrator für das Produktprofil, dem die Datenansicht zugewiesen ist <p>Weitere Informationen finden Sie unter [Zugriffssteuerung](/help/technotes/access-control.md).</p> | k. A. |
 | Verwenden von Zielgruppenanalysedimensionen in Analysis Workspace | Zugriff auf eine Datenansicht, in der die Zielgruppenanalysedimensionen hinzugefügt wurden | k. A. |
 

@@ -6,7 +6,7 @@ feature: Audiences
 role: Admin
 hide: true
 hidefromtoc: true
-source-git-commit: f23775342a29d758b478206a77386e18a58312a6
+source-git-commit: 996d7d7bb0c0da566a926f9a3a4c465baca69a9a
 workflow-type: tm+mt
 source-wordcount: '298'
 ht-degree: 2%
@@ -43,7 +43,7 @@ So zeigen Sie Ihre vorhandenen Zielgruppenanalysekonfigurationen an:
 
    * **[!UICONTROL Status]**: Der Status der Konfiguration. Mögliche Status sind „Abgeschlossen“, „In Bearbeitung“ oder „Fehlgeschlagen“. <!--true?-->
 
-   Sie können alle Spalten ausblenden, indem Sie auf das Spaltensymbol ![Spaltensymbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ColumnSettings_18_N.svg) klicken, die Auswahl aller Spalten aufheben, die Sie ausblenden möchten, und dann auf **[!UICONTROL Anwenden]** klicken.
+   Sie können alle Spalten ausblenden, indem Sie auf das Spaltensymbol ![Spaltensymbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ColumnSettings_18_N.svg) klicken, die Auswahl der Spalten, die Sie ausblenden möchten, aufheben und dann auf **[!UICONTROL Anwenden]** klicken.
 
 1. (Optional) Um die Liste der Konfigurationen zu filtern, wählen **das Symbol** Filtern![Zielgruppenanalyse-Filter](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg) und filtern Sie dann nach einem der folgenden Kriterien:
 

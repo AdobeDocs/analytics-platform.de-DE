@@ -6,7 +6,7 @@ feature: Audiences
 role: Admin
 hide: true
 hidefromtoc: true
-source-git-commit: f23775342a29d758b478206a77386e18a58312a6
+source-git-commit: 996d7d7bb0c0da566a926f9a3a4c465baca69a9a
 workflow-type: tm+mt
 source-wordcount: '503'
 ht-degree: 0%
@@ -33,7 +33,7 @@ Die Vorlage Zielgruppenübersicht enthält die folgenden Bedienfelder:
 
 Zeigt Daten für alle Zielgruppen mit Nutzungsereignissen an, die mit der ausgewählten Datenansicht verknüpft sind. Daten zur Zielgruppenzugehörigkeit werden täglich aus Experience Platform aktualisiert. Daten werden immer für gestern angezeigt. Daher führt eine Änderung des Datumsbereichs des Bedienfelds zu ungenauen Daten.
 
-Verwenden Sie die Tabelle im Bedienfeld, um das Verhalten der Zielgruppe besser zu verstehen. Ziehen Sie die Dimension Zielgruppenbeschreibung aus der ausgewählten Datenansicht und fügen Sie sie als Aufschlüsselung hinzu. Oder verwenden Sie eine andere Interaktionsdimension (z. B. Seite, Aktion usw.) als Aufschlüsselung.
+Verwenden Sie die Tabelle in diesem Bedienfeld, um das Verhalten der Zielgruppe besser zu verstehen. Ziehen Sie die Dimension Zielgruppenbeschreibung aus der ausgewählten Datenansicht und fügen Sie sie als Aufschlüsselung hinzu. Oder verwenden Sie eine andere Interaktionsdimension (z. B. Seite, Aktion usw.) als Aufschlüsselung.
 
 ## Bedienfeld „Ursprünge der Top-Zielgruppe“
 
