@@ -4,7 +4,7 @@ keywords: Analysis Workspace
 title: Erstellen von Präsentationen aus Workspace-Berichten
 feature: Curate and Share
 role: User
-source-git-commit: 6b8a9fd25aaf83eaad3bc9cba0ce9349afb5471c
+source-git-commit: 1ec10a006578bc5ddf5f08501f8d72a9623245d5
 workflow-type: tm+mt
 source-wordcount: '1627'
 ht-degree: 4%
@@ -125,49 +125,53 @@ Daten-Storys bestehen aus einer Titelfolie, einer Übersichtsfolie, Detailfolien
 
    Führen Sie einen der folgenden Schritte aus, um eine benutzerdefinierte Vorlage hochzuladen:
 
-   * (Empfohlen) Leere Vorlagen herunterladen und ändern.
+   +++(Empfohlen) Leere Vorlage herunterladen und ändern
 
-      1. Download [diese leere Vorlage](https://d30ln29764hddd.cloudfront.net/deploy/builds/data-storytelling.2025-10-20T15:10:19/resources/components/Blank.potx?).
+   1. Download [diese leere Vorlage](https://d30ln29764hddd.cloudfront.net/deploy/builds/data-storytelling.2025-10-20T15:10:19/resources/components/Blank.potx?).
 
-      1. Wenden Sie Ihre benutzerdefinierten Stile auf die leere Vorlage an.
+   1. Wenden Sie Ihre benutzerdefinierten Stile auf die leere Vorlage an.
 
-      1. Laden Sie die Vorlage erneut hoch, ohne die übergeordneten Layout-Namen zu ändern:
+   1. Laden Sie die Vorlage erneut hoch, ohne die übergeordneten Layout-Namen zu ändern:
 
-         Ziehen Sie aus Ihrem Dateisystem die leere Vorlage, auf die Ihre benutzerdefinierten Stile angewendet wurden, in den Ablagebereich.
+      Ziehen Sie aus Ihrem Dateisystem die leere Vorlage, auf die Ihre benutzerdefinierten Stile angewendet wurden, in den Ablagebereich.
 
-         Oder
+      Oder
 
-         Wählen Sie **[!UICONTROL Durchsuchen]**, navigieren Sie zu und wählen Sie Ihre leere Vorlage aus, auf die Ihre benutzerdefinierten Stile aus dem Dateisystem angewendet wurden.
+      Wählen Sie **[!UICONTROL Durchsuchen]**, navigieren Sie zu und wählen Sie Ihre leere Vorlage aus, auf die Ihre benutzerdefinierten Stile aus dem Dateisystem angewendet wurden.
 
-      1. Im Abschnitt **[!UICONTROL Layout-]**&quot; wird jedes Folien-Layout, das in generierten Präsentationen verwendet wird, automatisch einer Folie aus Ihrem hochgeladenen Design zugeordnet. Überprüfen Sie die Auswahl, um sicherzustellen, dass sie korrekt sind.
+   1. Im Abschnitt **[!UICONTROL Layout-]**&quot; wird jedes Folien-Layout, das in generierten Präsentationen verwendet wird, automatisch einer Folie aus Ihrem hochgeladenen Design zugeordnet. Überprüfen Sie die Auswahl, um sicherzustellen, dass sie korrekt sind.
 
-         ![Layout-Zuordnung](assets/generate-slides-layout-mapping.png)
+      ![Layout-Zuordnung](assets/generate-slides-layout-mapping.png)
 
-      1. (Bedingt) Wenn ein Folien-Layout falsch zugeordnet ist, wählen Sie über der Folie, **[!UICONTROL aus Ihrer hochgeladenen Präsentation ausgewählt wurde, die Option Auswahl ändern]** und dann die Folie aus, die dem Layout entspricht.
+   1. (Bedingt) Wenn ein Folien-Layout falsch zugeordnet ist, wählen Sie über der Folie, **[!UICONTROL aus Ihrer hochgeladenen Präsentation ausgewählt wurde, die Option Auswahl ändern]** und dann die Folie aus, die dem Layout entspricht.
 
-         Wiederholen Sie diesen Vorgang für jede Folie, die falsch zugeordnet wurde.
+      Wiederholen Sie diesen Vorgang für jede Folie, die falsch zugeordnet wurde.
 
-   * Laden Sie eine benutzerdefinierte Vorlage direkt hoch.
+   +++
 
-      1. Ziehen Sie Ihre benutzerdefinierte Vorlage aus Ihrem Dateisystem in den Ablagebereich.
+   +++Direktes Hochladen einer benutzerdefinierten Vorlage 
 
-         Oder
+   1. Ziehen Sie Ihre benutzerdefinierte Vorlage aus Ihrem Dateisystem in den Ablagebereich.
 
-         Wählen **[!UICONTROL Durchsuchen]**, navigieren Sie zu und wählen Sie Ihre benutzerdefinierte Vorlage aus dem Dateisystem aus.
+      Oder
 
-         Stellen Sie sicher, dass die hochgeladene Datei über Master-Layouts mit den folgenden Namen verfügt: „Title_Slide“, „Section_Divider“, „Title_Text“, „Title_Chart“, „Title_Two_Content_Mixed“, „Title_Three_Content_Mixed“.
+      Wählen **[!UICONTROL Durchsuchen]**, navigieren Sie zu und wählen Sie Ihre benutzerdefinierte Vorlage aus dem Dateisystem aus.
 
-         Es werden bis zu 15 primäre Layouts unterstützt.
+      Stellen Sie sicher, dass die hochgeladene Datei über Master-Layouts mit den folgenden Namen verfügt: „Title_Slide“, „Section_Divider“, „Title_Text“, „Title_Chart“, „Title_Two_Content_Mixed“, „Title_Three_Content_Mixed“.
 
-         .pptx- und .potx-Dateien mit einer Größe von bis zu 25 MB werden unterstützt.
+      Es werden bis zu 15 primäre Layouts unterstützt.
 
-      1. Im Abschnitt **[!UICONTROL Layout-]**&quot; wird jedes Folien-Layout, das in generierten Präsentationen verwendet wird, automatisch einer Folie aus Ihrem hochgeladenen Design zugeordnet. Überprüfen Sie die Auswahl, um sicherzustellen, dass sie korrekt sind.
+      .pptx- und .potx-Dateien mit einer Größe von bis zu 25 MB werden unterstützt.
 
-         ![Benutzerdefinierte Layoutzuordnung](assets/generate-slides-layout-mapping-custom-template.png)
+   1. Im Abschnitt **[!UICONTROL Layout-]**&quot; wird jedes Folien-Layout, das in generierten Präsentationen verwendet wird, automatisch einer Folie aus Ihrem hochgeladenen Design zugeordnet. Überprüfen Sie die Auswahl, um sicherzustellen, dass sie korrekt sind.
 
-      1. (Bedingt) Wenn ein Folien-Layout falsch zugeordnet ist, wählen Sie über der Folie, **[!UICONTROL aus Ihrer hochgeladenen Präsentation ausgewählt wurde, die Option Auswahl ändern]** und dann die Folie aus, die dem Layout entspricht.
+      ![Benutzerdefinierte Layoutzuordnung](assets/generate-slides-layout-mapping-custom-template.png)
 
-         Wiederholen Sie diesen Vorgang für jede Folie, die falsch zugeordnet wurde.
+   1. (Bedingt) Wenn ein Folien-Layout falsch zugeordnet ist, wählen Sie über der Folie, **[!UICONTROL aus Ihrer hochgeladenen Präsentation ausgewählt wurde, die Option Auswahl ändern]** und dann die Folie aus, die dem Layout entspricht.
+
+      Wiederholen Sie diesen Vorgang für jede Folie, die falsch zugeordnet wurde.
+
+   +++
 
 1. Wählen Sie **[!UICONTROL PPT exportieren]**.
 
@@ -185,9 +189,9 @@ Die Möglichkeit, Folien zu generieren, ist standardmäßig für alle Benutzer i
 
 Produktprofil-Admins, deren Organisationen über die Lizenzierung zum Generieren von Folien verfügen, können den Zugriff bei Bedarf deaktivieren.
 
-In der [!UICONTROL Adobe Admin Console] bestimmt die Berechtigung [!UICONTROL Reporting-]&#x200B;**[!UICONTROL Data]** storytelling) den Zugriff auf diese Funktion. Ein [Produktprofil-Administrator](https://helpx.adobe.com/de/enterprise/using/manage-product-profiles.html) muss diese Schritte in der [!UICONTROL Admin Console ausführen] wenn er den Zugriff deaktivieren möchte:
+In der [!UICONTROL Adobe Admin Console] bestimmt die Berechtigung [!UICONTROL Reporting-]**[!UICONTROL Data]** storytelling) den Zugriff auf diese Funktion. Ein [Produktprofil-Administrator](https://helpx.adobe.com/de/enterprise/using/manage-product-profiles.html) muss diese Schritte in der [!UICONTROL Admin Console ausführen] wenn er den Zugriff deaktivieren möchte:
 1. Navigieren Sie zu **[!UICONTROL Admin Console]** > **[!UICONTROL Produkte und Dienste]** > **[!UICONTROL Customer Journey Analytics]** > **[!UICONTROL Produktprofile]**.
-1. Wählen Sie den Titel des Produktprofils aus, für das Sie Zugriff auf &quot;[!UICONTROL &#x200B; storytelling&quot; &#x200B;] möchten.
+1. Wählen Sie den Titel des Produktprofils aus, für das Sie Zugriff auf &quot;[!UICONTROL  storytelling&quot; ] möchten.
 1. Wählen Sie im entsprechenden Produktprofil die Option **[!UICONTROL Berechtigungen]** aus.
 1. Wählen Sie ![Bearbeiten](/help/assets/icons/Edit.svg) aus, um **[!UICONTROL Reporting-Tools]** zu bearbeiten.
 1. Wählen Sie ![AddCircle](/help/assets/icons/RemoveCircle.svg) aus, um **Data storytelling** aus den **[!UICONTROL Included permission items]**.
@@ -234,7 +238,7 @@ Die folgenden Analysis Workspace-Elemente und -Funktionen, die in einem Projekt 
 
 * Komponenten, die durch eine Data-Governance-Richtlinie nicht exportiert werden dürfen
 
-  Weitere Informationen finden Sie unter [Fehlerbehebung bei fehlgeschlagenen &#x200B;](/help/components/exports/troubleshoot-exports.md)).
+  Weitere Informationen finden Sie unter [Fehlerbehebung bei fehlgeschlagenen ](/help/components/exports/troubleshoot-exports.md)).
 
 ## Projektelemente und -funktionen mit begrenzter Unterstützung
 
