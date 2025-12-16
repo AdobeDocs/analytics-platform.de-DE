@@ -4,18 +4,22 @@ keywords: Analysis Workspace
 title: Erstellen von Präsentationen aus Workspace-Berichten
 feature: Curate and Share
 role: User
-source-git-commit: 8ddfc194c873bdb3fe12f3aeb04c01bcad83d0a5
+source-git-commit: 82ca99af8f344b713e285980145fa0ee6ae6ae1c
 workflow-type: tm+mt
-source-wordcount: '1627'
-ht-degree: 4%
+source-wordcount: '1682'
+ht-degree: 6%
 
 ---
 
 # Data storytelling: Folien-Präsentationen aus Workspace-Berichten generieren {#generate-powerpoint}
 
-{{release-limited-testing}}
+>[!AVAILABILITY]
+>
+>Data Storytelling ist eine Qualifikation unter der [Data Insights Agent](/help/data-analysis-ai.md). Diese Funktion befindet sich in der eingeschränkten Testphase der Version und ist möglicherweise noch nicht in Ihrer Umgebung verfügbar. Diese Anmerkung wird entfernt, wenn die Funktion allgemein verfügbar ist. Informationen zum Customer Journey Analytics-Veröffentlichungsprozess finden Sie unter [Veröffentlichungen von Funktionen für Customer Journey Analytics](/help/release-notes/releases.md).
 
 <!-- also remove lmited testing note from: /help/technotes/access-control.md -->
+
+<!--at GA in January, replace Limited Testing note with this: Data Storytelling is a skill under Data Insights Agent and is available to eligible customers for a limited time. Access to Data Insights Agent will end on 28th February 2026. To continue using Data Insights Agent or other Adobe Experience Platform Agents without interruption, please contact your Adobe account representative to learn more about licensing Adobe Experience Platform Agent Orchestrator. -->
 
 Benutzende mit [den erforderlichen Berechtigungen](#permission-requirements-to-generate-slides) können automatisch PPTX-Präsentationen basierend auf Analysis Workspace-Projekten generieren. Beim Generieren dieser Folienpräsentationen erstellt Customer Journey Analytics automatisch eine Story aus Ihren Daten, indem wichtige Erkenntnisse identifiziert und in Stakeholder-fähige Folien umgewandelt werden.
 
@@ -189,9 +193,9 @@ Die Möglichkeit, Folien zu generieren, ist standardmäßig für alle Benutzer i
 
 Produktprofil-Admins, deren Organisationen über die Lizenzierung zum Generieren von Folien verfügen, können den Zugriff bei Bedarf deaktivieren.
 
-In der [!UICONTROL Adobe Admin Console] bestimmt die Berechtigung [!UICONTROL Reporting-]&#x200B;**[!UICONTROL Data]** storytelling) den Zugriff auf diese Funktion. Ein [Produktprofil-Administrator](https://helpx.adobe.com/de/enterprise/using/manage-product-profiles.html) muss diese Schritte in der [!UICONTROL Admin Console ausführen] wenn er den Zugriff deaktivieren möchte:
+In der [!UICONTROL Adobe Admin Console] bestimmt die Berechtigung [!UICONTROL Reporting-]**[!UICONTROL Data]** storytelling) den Zugriff auf diese Funktion. Ein [Produktprofil-Administrator](https://helpx.adobe.com/de/enterprise/using/manage-product-profiles.html) muss diese Schritte in der [!UICONTROL Admin Console ausführen] wenn er den Zugriff deaktivieren möchte:
 1. Navigieren Sie zu **[!UICONTROL Admin Console]** > **[!UICONTROL Produkte und Dienste]** > **[!UICONTROL Customer Journey Analytics]** > **[!UICONTROL Produktprofile]**.
-1. Wählen Sie den Titel des Produktprofils aus, für das Sie Zugriff auf &quot;[!UICONTROL &#x200B; storytelling&quot; &#x200B;] möchten.
+1. Wählen Sie den Titel des Produktprofils aus, für das Sie Zugriff auf &quot;[!UICONTROL  storytelling&quot; ] möchten.
 1. Wählen Sie im entsprechenden Produktprofil die Option **[!UICONTROL Berechtigungen]** aus.
 1. Wählen Sie ![Bearbeiten](/help/assets/icons/Edit.svg) aus, um **[!UICONTROL Reporting-Tools]** zu bearbeiten.
 1. Wählen Sie ![AddCircle](/help/assets/icons/RemoveCircle.svg) aus, um **Data storytelling** aus den **[!UICONTROL Included permission items]**.
@@ -238,7 +242,7 @@ Die folgenden Analysis Workspace-Elemente und -Funktionen, die in einem Projekt 
 
 * Komponenten, die durch eine Data-Governance-Richtlinie nicht exportiert werden dürfen
 
-  Weitere Informationen finden Sie unter [Fehlerbehebung bei fehlgeschlagenen &#x200B;](/help/components/exports/troubleshoot-exports.md)).
+  Weitere Informationen finden Sie unter [Fehlerbehebung bei fehlgeschlagenen ](/help/components/exports/troubleshoot-exports.md)).
 
 ## Projektelemente und -funktionen mit begrenzter Unterstützung
 
