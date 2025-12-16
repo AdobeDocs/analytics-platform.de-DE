@@ -4,7 +4,7 @@ title: Verwenden von Vorlagen
 feature: Workspace Basics
 role: User, Admin
 exl-id: d61f215d-9089-4014-9c5a-97f5d7134f34
-source-git-commit: 3fb94d920b240247f13050cf091423335a3d74ec
+source-git-commit: 11a550e0cd67db106e2dd399843c4cf0923467ad
 workflow-type: tm+mt
 source-wordcount: '20775'
 ht-degree: 97%
@@ -1070,12 +1070,12 @@ Die folgenden Vorlagen sind verfügbar:
 ### Brand Concierge {#brand-concierge-templates}
 
 >[!CONTEXTUALHELP]
->id="template--brand-concierge-b2c"
+>id="template--brand-concierge--concierge"
 >title="Analysieren Sie die Benutzerinteraktion anhand von Konversationsmustern, Benutzer-Feedback und der Effektivität Ihrer Empfehlungen."
 >abstract="**Dies kann Ihnen dabei helfen** Interaktionsmuster zu identifizieren, die Gesprächsqualität zu bewerten, Trends bei der Kundenzufriedenheit zu verfolgen und die Effektivität von Link-Empfehlungen zu messen.<br/>**Basierend auf dem, was Sie lernen, können Sie** viele Dinge tun, z. B. die Antworten Ihres KI-Agenten verfeinern, zielgerichtete Inhalte für häufige Probleme entwickeln, Empfehlungsalgorithmen verbessern oder spezielle Pfade für verschiedene Benutzersegmente erstellen."
 
 >[!CONTEXTUALHELP]
->id="template--brand-concierge--concierge"
+>id="template--brand-concierge--meeting"
 >title="Verfolgen Sie den gesamten Lebenszyklus von B2B-Besprechungsanfragen. Überwachen Sie Konversionsraten, Beraterleistung und identifizieren Sie Ihre effektivsten Lead-Generierungskanäle."
 >abstract="**Auf diese Weise können Sie** Konversionsraten von Meetings verfolgen, leistungsstarke Team-Mitglieder identifizieren, saisonale Trends im Buchungsverhalten verstehen und herausfinden, welche Seiten die wertvollsten Meetinganfragen generieren.<br/>**Auf der Grundlage Ihrer Erkenntnisse können** beliebig viele Dinge tun, z. B. Ihren Besprechungsanfrageprozess optimieren, Ressourcen auf konversionsstarke Seiten umverteilen, zielgerichtete Schulungen für Berater mit niedrigeren Buchungsraten entwickeln oder neue Strategien zur Reduzierung verpasster Meetings implementieren."
 
