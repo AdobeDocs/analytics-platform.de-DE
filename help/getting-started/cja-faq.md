@@ -5,10 +5,10 @@ exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
 solution: Customer Journey Analytics
 feature: FAQ
 role: User
-source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
+source-git-commit: c67225619153218e3dca1eacea204f2b033dfb14
 workflow-type: tm+mt
-source-wordcount: '2580'
-ht-degree: 99%
+source-wordcount: '2210'
+ht-degree: 98%
 
 ---
 
@@ -145,24 +145,30 @@ Adobe hat kürzlich die Verarbeitung von Daten in Customer Journey Analytics ge�
 
 ## &#x200B;5. Festlegen eines rollierenden Fensters für die Speicherung von [!UICONTROL Verbindungsdaten] {#data-retention}
 
-Mit der Einstellung [**[!UICONTROL Rollierendes Datenfenster aktivieren &#x200B;]**](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=de#create-connection) können Sie die Customer Journey Analytics-Datenspeicherung als rollierendes Fenster in Monaten (drei Monate, sechs Monate usw.) definieren. Sie wird auf einer [!UICONTROL Verbindungs]-Ebene, nicht auf einer [!UICONTROL Datensatz]-Ebene festgelegt. Die Datenaufbewahrung basiert auf Zeitstempeln für Ereignis-Datensätze und gilt nur für Ereignis-Datensätze. Für Profil- oder Lookup-Datensätze gibt es keine Datenspeicherungseinstellung, da keine entsprechenden Zeitstempel vorhanden sind.
+Mit der Einstellung [**[!UICONTROL Rollierendes Datenfenster aktivieren ]**](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=de#create-connection) können Sie die Customer Journey Analytics-Datenspeicherung als rollierendes Fenster in Monaten (drei Monate, sechs Monate usw.) definieren. Sie wird auf einer [!UICONTROL Verbindungs]-Ebene, nicht auf einer [!UICONTROL Datensatz]-Ebene festgelegt. Die Datenaufbewahrung basiert auf Zeitstempeln für Ereignis-Datensätze und gilt nur für Ereignis-Datensätze. Für Profil- oder Lookup-Datensätze gibt es keine Datenspeicherungseinstellung, da keine entsprechenden Zeitstempel vorhanden sind.
 
 Der Hauptvorteil besteht darin, dass Sie nur Daten speichern oder Berichte dazu erstellen, die anwendbar und nützlich sind, und ältere Daten löschen, die nicht mehr nützlich sind. Dies hilft Ihnen, Ihre vertraglichen Beschränkungen einzuhalten und das Risiko bezüglich Kostendeckung zu reduzieren.
 
-## &#x200B;6. Auswirkungen des Löschens von Datenkomponenten {#deletion}
+## &#x200B;6. Auswirkungen des Löschens von Objekten oder Komponenten {#deletion}
 
-Beim Löschen von Daten sollten Sie sich über sechs Komponententypen Gedanken machen: Sandbox, Schema, Datensatz, Verbindung, Datenansicht und Workspace-Projekt. Im Folgenden sind einige Szenarien für das Löschen der jeweiligen Komponenten aufgeführt:
+Unter [Auswirkungen von Löschen und Zurücksetzen](/help/technotes/deletion.md) finden Sie einen Überblick über die Auswirkungen, die das Löschen oder Zurücksetzen von Customer Journey Analytics- oder Experience Platform-Objekten oder -Komponenten hat.
 
-| Aktion | Auswirkung |
+<!-- Refer to deletion guide 
+
+For data deletion, you should be concerned about six types of components: sandbox, schema, dataset, connection, data view, and Workspace project. Here are some possible scenarios around deleting any of these components:
+
+| If you... | This happens... |
 | --- | --- |
-| Löschen einer Sandbox in [!UICONTROL Adobe Experience Platform] | Durch das Löschen einer Sandbox wird der Datenfluss aller [!UICONTROL Customer Journey Analytics]-Verbindungen zu Datensätzen in dieser Sandbox angehalten. Verbindungen, Datenansichten, Metriken und Dimensionen, die sich auf diese gelöschte Sandbox beziehen, werden ebenfalls gelöscht. |
-| Löschen eines Schemas in [!UICONTROL Adobe Experience Platform], aber nicht der mit diesem Schema verbundenen Datensätze | [!UICONTROL Adobe Experience Platform] erlaubt nicht das Löschen von [!UICONTROL Schemata], denen ein oder mehrere [!UICONTROL Datensätze] zugeordnet sind. Ein Administrator mit den entsprechenden Berechtigungen kann jedoch zuerst die Datensätze und dann das Schema löschen. |
-| Löschen eines Datensatzes im Data Lake von [!UICONTROL Adobe Experience Platform] | Durch das Löschen eines Datensatzes im Adobe Experience Platform Data Lake wird der Datenfluss von diesem Datensatz zu allen Customer Journey Analytics-Verbindungen, die diesen Datensatz umfassen, angehalten. Daten aus diesem Datensatz werden automatisch aus den zugehörigen Customer Journey Analytics-Verbindungen gelöscht. |
-| Löschen eines Datensatzes in [!UICONTROL Customer Journey Analytics] | Wenden Sie sich an Ihr Adobe-Accountteam, um den Prozess zum Löschen eines Datensatzes innerhalb einer gespeicherten Verbindung zu starten. |
-| Löschen eines Batches aus einem Datensatz (in [!UICONTROL Adobe Experience Platform]) | Wenn ein Batch aus einem [!UICONTROL Adobe Experience Platform]-Datensatz gelöscht wird, wird derselbe Batch aus allen Customer Journey Analytics-Verbindungen entfernt, die diesen Batch enthalten. Customer Journey Analytics wird über das Löschen von Batches in [!UICONTROL Adobe Experience Platform] benachrichtigt. |
-| Löschen eines Batches, **während er** in [!UICONTROL Customer Journey Analytics] aufgenommen wird | Wenn nur ein Batch im Datensatz vorhanden ist, erscheinen keine Daten oder Teildaten aus diesem Batch in [!UICONTROL Customer Journey Analytics]. Die Aufnahme wird zurückgesetzt. Wenn das Datensatz beispielsweise fünf Batches enthält und drei davon bereits aufgenommen wurden, als der Datensatz gelöscht wurde, erscheinen die Daten aus diesen drei Batches in [!UICONTROL Customer Journey Analytics]. |
-| Löschen einer Verbindung in [!UICONTROL Customer Journey Analytics] | Eine Fehlermeldung weist auf Folgendes hin:<ul><li>Alle für die gelöschte Verbindung erstellten Datenansichten werden nicht mehr funktionieren.</li><li> Ebenso funktionieren alle Workspace-Projekte nicht mehr, die von den Datenansichten der gelöschten Verbindung abhängig sind.</li></ul> |
-| Löschen einer Datenansicht in [!UICONTROL Customer Journey Analytics] | Eine Fehlermeldung weist darauf hin, dass dann alle Workspace-Projekte, die von dieser gelöschten Datenansicht abhängen, nicht mehr funktionieren. |
+| Delete a sandbox in [!UICONTROL Adobe Experience Platform] | Deleting a sandbox stops the data flow to any [!UICONTROL Customer Journey Analytics] connections to datasets in that sandbox. Connections, data views, metrics and dimensions related to this deleted sandbox will also be deleted. |
+| Delete a schema in [!UICONTROL Adobe Experience Platform], but not the dataset/s associated with this schema | [!UICONTROL Adobe Experience Platform] does not allow for the deletion of [!UICONTROL schemas] that have one or more [!UICONTROL datasets] associated with them. However, an Admin with the appropriate set of rights can delete the datasets first and then delete the schema. |
+| Delete a dataset in the [!UICONTROL Adobe Experience Platform] data lake | Deleting a dataset in Adobe Experience Platform data lake stops data flow from that dataset to any Customer Journey Analytics Connections that include that dataset. Any data from that dataset is automatically deleted from the associated Customer Journey Analytics connections. |
+| Delete a dataset in [!UICONTROL Customer Journey Analytics] | Contact your Adobe Account Team to set in motion the process for deleting a dataset within a connection that has been saved. |
+| Delete a batch from a dataset (in [!UICONTROL Adobe Experience Platform]) | If a batch is deleted from an [!UICONTROL Adobe Experience Platform] dataset, the same batch is removed from any Customer Journey Analytics connections that contain that specific batch. Customer Journey Analytics is notified of batch deletions in [!UICONTROL Adobe Experience Platform]. |
+| Delete a batch **while it is being ingested** into [!UICONTROL Customer Journey Analytics] | If there is only one batch in the dataset, no data or partial data from that batch appears in [!UICONTROL Customer Journey Analytics]. The ingestion is rolled back. For example, if there are five batches in the dataset and three of them have already been ingested when the dataset was deleted, data from those 3 batches appears in [!UICONTROL Customer Journey Analytics]. |
+| Delete a connection in [!UICONTROL Customer Journey Analytics] | An error message indicates that:<ul><li>Any data views created for the deleted connection will no longer work.</li><li> Similarly, any Workspace projects that depend on data views in the deleted connection stops working.</li></ul> |
+| Delete a data view in [!UICONTROL Customer Journey Analytics] | An error message indicates that any Workspace projects that depend on this deleted data view will stop working. |
+
+-->
 
 ## &#x200B;7. Überlegungen zum Zusammenführen von Report Suites in Customer Journey Analytics {#merge-reportsuite}
 

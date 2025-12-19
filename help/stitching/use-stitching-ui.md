@@ -6,9 +6,9 @@ feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: 9a1689d9-c1b7-42fe-9682-499e49843f76
 badgePremium: label="Beta" type="Informative"
-source-git-commit: 6ebd1604e01af068228d7a5e4a78fdccf852f480
+source-git-commit: c67225619153218e3dca1eacea204f2b033dfb14
 workflow-type: tm+mt
-source-wordcount: '827'
+source-wordcount: '820'
 ht-degree: 3%
 
 ---
@@ -30,8 +30,7 @@ So aktivieren Sie die Zuordnung für einen Ereignis-Datensatz in der Connections
    * Mehrere Felder, die als Identität konfiguriert sind und es Ihnen ermöglichen, verschiedene Werte für eine persistente ID und eine Personen-ID auszuwählen.
    * Mindestens ein Feld, das als primäre Identität mit einem zugehörigen Namespace markiert ist, falls Sie Identity Map verwenden möchten, und der primäre Identity-Namespace für die persistente ID oder Personen-ID.
 
-* Wenn Sie die diagrammbasierte Zuordnung verwenden möchten und davon ausgehen, dass der Ereignis-Datensatz zum Identitätsdiagramm beitragen wird, sollten Sie [den Datensatz für den Identity Service aktivieren](/help/stitching/faq.md#enable-a-dataset-for-the-identity-service). Ein Datensatz trägt zum Identitätsdiagramm bei, wenn der Datensatz neben persistenten IDs relevante Personen-IDs enthält.
-
+* Wenn Sie die diagrammbasierte Zuordnung verwenden möchten und davon ausgehen, dass der Ereignis-Datensatz zum Identitätsdiagramm beitragen wird (da der Datensatz relevante Personen-IDs neben persistenten IDs enthält), sollten [den Datensatz für den Identity Service aktivieren](/help/stitching/faq.md#enable-a-dataset-for-the-identity-service).
 
 ## Vorflugkontrollen
 

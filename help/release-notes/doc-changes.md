@@ -4,10 +4,10 @@ description: Listet Inhaltsaktualisierungen für Dokumentation zu Customer Journ
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
+source-git-commit: 90a285fcd96866974087c53d402e85b4a2d83ccf
 workflow-type: tm+mt
-source-wordcount: '5594'
-ht-degree: 100%
+source-wordcount: '5616'
+ht-degree: 99%
 
 ---
 
@@ -19,6 +19,8 @@ Die folgenden Aktualisierungen wurden seit der ersten Erstellung der Customer Jo
 
 | Funktion | Beschreibung |
 | --- | --- |
+| **Dezember 2025** | |
+| Auswirkungen von Sandbox-Änderungen | Die Auswirkungen eines Löschens oder Zurücksetzens einer Sandbox wurden zum Artikel [Auswirkungen von Löschen und Zurücksetzen](/help/technotes/deletion.md) hinzugefügt. |
 | **November 2025** | |
 | Leitlinien für Zeilen pro Tag in einer Verbindung | Es wurden [Informationen zu Leitlinien für Datenübertragungsbeschränkungen](/help/technotes/guardrails.md) bezüglich der maximalen durchschnittlichen Anzahl von Zeilen pro Tag in einer Verbindung hinzugefügt. |
 | **Oktober 2025** | |
