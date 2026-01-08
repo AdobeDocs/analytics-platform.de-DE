@@ -50,7 +50,7 @@ Um die Funktion *Analytics-Daten von mehreren IMS-Organisationen zuordnen* zu ko
 
 Sobald der Account Manager die E-Mail mit der Anfrage erhält, Analytics-Daten von mehreren Organisationen zuzuordnen, wird die Anfrage in Adobe geprüft. Der Account Manager kontaktiert Sie für weitere Fragen, optionale Schulungen und weitere Informationen.
 
-Nach der Genehmigung wird die angeforderte Zuordnung erstellt und Sie werden benachrichtigt. Der Name der IMS-Quellorganisation wird dem Namen der Report Suite in der [Liste der Analytics Report Suites](https://experienceleague.adobe.com/en/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics#select-data) in Experience Platform angehängt.
+Nach der Genehmigung wird die angeforderte Zuordnung erstellt und Sie werden benachrichtigt. Der Name der IMS-Quellorganisation wird dem Namen der Report Suite in der [Liste der Analytics Report Suites](https://experienceleague.adobe.com/de/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics#select-data) in Experience Platform angehängt.
 
 ## Einschränkungen und Risiken
 
