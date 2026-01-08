@@ -5,20 +5,20 @@ role: User
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: db5506e0-6159-4d4b-8149-e4966dab9807
-source-git-commit: eb9b749a5c61da3b4b5d2eeeed93bf5e4702a415
+source-git-commit: e74bbcc385aa90ba05c628a7d37598c6692530ed
 workflow-type: tm+mt
-source-wordcount: '847'
-ht-degree: 91%
+source-wordcount: '841'
+ht-degree: 86%
 
 ---
 
-# Verwenden von Daten aus einer Adobe Analytics-Report Suite in Customer Journey Analytics
+# Verwenden von Adobe Analytics Report Suite-Daten
 
-Adobe Analytics-Kundinnen und -Kunden können ihre Report Suites in Adobe Experience Platform und Customer Journey Analytics einfach mit dem [Analytics-Quell-Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=de) nutzen. Im Folgenden wird erörtert, wie man dazu vorgehen kann.
+Adobe Analytics-Kunden können ihre Report Suites in Experience Platform und Customer Journey Analytics einfach mit dem [Analytics-Quell-Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=de) nutzen. Im Folgenden wird erörtert, wie man dazu vorgehen kann.
 
 >[!IMPORTANT]
 >
->Sie müssen über das **Select**-Paket verfügen, um Datenanalysen für mehrere Report Suites durchzuführen. Wenden Sie sich an Ihr Admin-Team, wenn Sie sich nicht sicher sind, welches Customer Journey Analytics-Paket Sie besitzen.
+>Sie müssen über das **Select**-Paket verfügen, um Datenanalysen für mehrere Report Suites durchzuführen. Wenden Sie sich an Ihren Administrator, wenn Sie sich nicht sicher sind, welches Customer Journey Analytics-Paket Sie haben.
 
 ## Vorbereitung
 
