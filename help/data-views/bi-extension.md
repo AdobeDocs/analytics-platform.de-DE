@@ -48,7 +48,7 @@ Oder Sie können:
 
 So verwenden Sie unbefristete Anmeldedaten:
 
-* Erstellen Sie [unbefristete Anmeldedaten in Experience Platform](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/bi-extension#non-expiring-credentials).
+* Erstellen Sie [unbefristete Anmeldedaten in Experience Platform](https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-dataviews/bi-extension#non-expiring-credentials).
 * Gewähren Sie Zugriff auf die nicht ablaufenden Anmeldeinformationen, indem Sie die unter &quot;[&#x200B; Anmeldeinformationen“ &#x200B;](#Expiring-credentials) Schritte ausführen.
 
 Unter [Customer Journey-Zugriffssteuerung](../technotes/access-control.md) finden Sie weitere Informationen, insbesondere zu [Zusätzlichen Produktadministratorberechtigungen](../technotes/access-control.md#product-admin-additional-permissions) und [Customer Journey Analytics-Berechtigungen in der Admin Console](../technotes/access-control.md#customer-journey-analytics-permissions-in-admin-console).
