@@ -173,9 +173,9 @@ Definieren Sie ein Schema, das diese Daten modelliert. Gehen Sie folgendermaßen
 
      ![Versionsdeskriptor](assets/platform-schema-id.png)
 
-     In einem realen Szenario empfiehlt es sich, ein geeigneteres Feld als [Versionsdeskriptor“ ](aep.md#schema). Beispiel: ein Feld, in dem die letzte Änderungszeit erfasst wird.
+     In einem realen Szenario empfiehlt es sich, ein geeigneteres Feld als [Versionsdeskriptor“ &#x200B;](aep.md#schema). Beispiel: ein Feld, in dem die letzte Änderungszeit erfasst wird.
 
-   * Das Feld **[!UICONTROL personid]** wird zusammen mit **[!UICONTROL timestamp]** als Primärer Schlüssel **** konfiguriert. Wählen Sie ![Hinzufügen](/help/assets/icons/Add.svg) **[!UICONTROL Zusammengesetzten Primärschlüssel erstellen]** aus, um einen zusammengesetzten Schlüssel zu erstellen.
+   * Das Feld **[!UICONTROL personid]** wird zusammen mit **[!UICONTROL timestamp]** als Primärer Schlüssel **&#x200B;**&#x200B;konfiguriert. Wählen Sie ![Hinzufügen](/help/assets/icons/Add.svg) **[!UICONTROL Zusammengesetzten Primärschlüssel erstellen]** aus, um einen zusammengesetzten Schlüssel zu erstellen.
 
      ![Zusammengesetzter Schlüssel](assets/platform-schema-compositekey.png)
 
@@ -185,7 +185,7 @@ Definieren Sie ein Schema, das diese Daten modelliert. Gehen Sie folgendermaßen
 
      Das **[!UICONTROL personid]**-Feld muss nicht der **[!UICONTROL Primäre Schlüssel sein]**. In einem realen Szenario haben Sie wahrscheinlich ein anderes Feld, um den Primärschlüssel getrennt von der &quot;**[!UICONTROL &quot;]** verfolgen.
 
-   * Das Feld **[!UICONTROL Zeitstempel]** wird zusammen mit dem Feld **[!UICONTROL personid]** als Primärer Schlüssel **** konfiguriert. Das **[!UICONTROL Zeitstempel]**-Feld wird auch als **[!UICONTROL Zeitstempeldeskriptor]** konfiguriert. Sie müssen nur ein Feld als **[!UICONTROL Zeitstempeldeskriptor]** für relationale Zeitreihendaten definieren.
+   * Das Feld **[!UICONTROL Zeitstempel]** wird zusammen mit dem Feld **[!UICONTROL personid]** als Primärer Schlüssel **&#x200B;**&#x200B;konfiguriert. Das **[!UICONTROL Zeitstempel]**-Feld wird auch als **[!UICONTROL Zeitstempeldeskriptor]** konfiguriert. Sie müssen nur ein Feld als **[!UICONTROL Zeitstempeldeskriptor]** für relationale Zeitreihendaten definieren.
 
      ![Zeitstempel-Deskriptor](assets/platform-schema-timestamp.png)
 
@@ -194,7 +194,7 @@ Definieren Sie ein Schema, das diese Daten modelliert. Gehen Sie folgendermaßen
 
 1. Wählen Sie **[!UICONTROL Speichern]** aus, um Ihr Schema zu speichern.
 
-Auf ähnliche Weise können Sie ein auf Datensätzen basierendes relationales [Schema) ](aep.md#schema). Beispielsweise , um Profil- und Suchdaten zu enthalten.
+Auf ähnliche Weise können Sie ein auf Datensätzen basierendes relationales [Schema) &#x200B;](aep.md#schema). Beispielsweise , um Profil- und Suchdaten zu enthalten.
 
 
 ## Verwenden eines Quell-Connectors
@@ -330,7 +330,7 @@ In der Benutzeroberfläche von Customer Journey Analytics:
    1. Wählen Sie **[!UICONTROL Datensätze hinzufügen]** aus.
 1. Wählen Sie **[!UICONTROL Speichern]** aus.
 
-Nachdem Sie eine [Verbindung](/help/connections/overview.md) erstellt haben, können Sie verschiedene Verwaltungsaufgaben ausführen. Beispielsweise [Auswählen und Kombinieren ](/help/connections/combined-dataset.md) Datensätzen[ Überprüfen des Status der Datensätze einer Verbindung und des Status ](/help/connections/manage-connections.md) Datenaufnahme).
+Nachdem Sie eine [Verbindung](/help/connections/overview.md) erstellt haben, können Sie verschiedene Verwaltungsaufgaben ausführen. Beispielsweise [Auswählen und Kombinieren &#x200B;](/help/connections/combined-dataset.md) Datensätzen[&#x200B; Überprüfen des Status der Datensätze einer Verbindung und des Status &#x200B;](/help/connections/manage-connections.md) Datenaufnahme).
 
 
 ## Einrichten einer Datenansicht
@@ -378,7 +378,7 @@ Gehen Sie folgendermaßen vor, um eine Datenansicht zu erstellen:
 
    Behalten Sie die Einstellungen bei und wählen Sie **[!UICONTROL Speichern und beenden]**.
 
-Weitere Informationen [ Erstellen und Bearbeiten einer Datenansicht finden ](../data-views/data-views.md) unter Datenansichten - Übersicht . Und welche Komponenten in Ihrer Datenansicht verfügbar sind und wie Sie Segment- und Sitzungseinstellungen verwenden.
+Weitere Informationen [&#x200B; Erstellen und Bearbeiten einer Datenansicht finden &#x200B;](../data-views/data-views.md) unter Datenansichten - Übersicht . Und welche Komponenten in Ihrer Datenansicht verfügbar sind und wie Sie Segment- und Sitzungseinstellungen verwenden.
 
 
 ## Einrichten eines Projekts
