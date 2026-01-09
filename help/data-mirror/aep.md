@@ -6,9 +6,9 @@ feature: Basics
 role: Admin
 badgePremium: label="Beta"
 exl-id: 87593d7d-9456-48f8-8d39-5c3d95fe51ec
-source-git-commit: b2a13524760f9d466696534bc8b9691f3b4dfb8a
+source-git-commit: cd3baec708f1811a7cbc37dfe0a9c3af75eb97c3
 workflow-type: tm+mt
-source-wordcount: '471'
+source-wordcount: '550'
 ht-degree: 3%
 
 ---
@@ -27,17 +27,19 @@ Im Folgenden finden Sie Details, die Sie bei der Konfiguration jeder dieser Komp
 
 ## Schema
 
-Sie müssen ein &quot;[&#x200B; Schema“ erstellen](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/schema/relational){target="_blank"} d. h. die native Data Warehouse-Tabelle, die Sie spiegeln möchten. Stellen Sie beim Erstellen des relationalen Schemas sicher, dass die folgenden Anforderungen erfüllt sind:
+Sie müssen ein &quot;[ Schema“ erstellen](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/schema/relational){target="_blank"} d. h. die native Data Warehouse-Tabelle, die Sie spiegeln möchten. Stellen Sie beim Erstellen des relationalen Schemas sicher, dass die folgenden Anforderungen erfüllt sind:
 
 * Wenn Sie nach dem Typ des relationalen Schemas gefragt werden, stellen Sie sicher, dass Sie die manuelle Option auswählen.
-* Wählen Sie das entsprechende Schema für den Datentyp aus. Beachten Sie, dass Experience Platform Data Mirror hauptsächlich für Zeitreihendaten (z. B. Ereignisdaten) verwendet wird.
+* Wählen Sie das entsprechende Schema für den Datentyp aus. Beachten Sie, dass Experience Platform Data Mirror hauptsächlich für Zeitreihendaten (z. B. Ereignisdaten) verwendet wird, aber auch für datensatzbasierte (Lookup- und Profildaten) Daten verwendet werden kann.
 
 * Definieren der Felder in Ihrem Schema und ihrer Attribute
 * Konfigurieren Sie die erforderlichen Attribute für Felder in einem relationalen Schema:
 
-   * Primärschlüssel
-   * Versionskennung
-   * Zeitstempelkennung (für Zeitreihendaten).
+   * **Primärer Schlüssel**.
+   * **Versionsdeskriptor** muss als sequenzielle Zahl (ganzzahliger Feldtyp) oder als DateTime-Feldtyp konfiguriert werden. Wenn Sie einen DateTime-Feldtyp verwenden, definiert der Versionsdeskriptor den Zeitstempel einer Änderung der Daten, z. B. um einen zuletzt geänderten Zeitstempel zu enthalten.
+   * **Zeitstempeldeskriptor** (für Zeitreihendaten), der den unveränderlichen Zeitstempel zum Zeitpunkt der Erfassung eines Ereignisses definiert. Der Zeitstempeldeskriptor ist für ein datensatzbasiertes relationales Schema nicht erforderlich.
+
+
 
 ## Datensatz
 
@@ -53,9 +55,9 @@ Um den Quell-Connector für die unterstützten nativen Data Warehouse-Lösungen 
 
 Informationen zur Authentifizierung für die unterstützte Data Warehouse-native Lösung finden Sie in der entsprechenden Experience Platform-Dokumentation:
 
-* [Azure-Datenblöcke](https://experienceleague.adobe.com/de/docs/experience-platform/sources/connectors/databases/databricks)
-* [Google BigQuery](https://experienceleague.adobe.com/de/docs/experience-platform/sources/connectors/databases/bigquery)
-* [Snowflake](https://experienceleague.adobe.com/de/docs/experience-platform/sources/connectors/databases/snowflake)
+* [Azure-Datenblöcke](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/databases/databricks)
+* [Google BigQuery](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/databases/bigquery)
+* [Snowflake](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/databases/snowflake)
 
 
 ### Daten auswählen
@@ -91,5 +93,5 @@ Nachdem Sie die Einrichtung des Quell-Connectors abgeschlossen haben, wird ein D
 >[!MORELIKETHIS]
 >
 >[Data Mirror-Schnellstartanleitung: Spiegeln und Verwenden von relationalen Daten](relational.md)
->[Data Mirror (Dokumentation zu Experience Platform)](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-mirror/overview)
+>[Data Mirror (Dokumentation zu Experience Platform)](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-mirror/overview)
 >[Relationale Schemata (Dokumentation zu Experience Platform)](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/schema/relational)

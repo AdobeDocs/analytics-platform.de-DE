@@ -6,9 +6,9 @@ feature: Basics
 role: Admin
 badgePremium: label="Beta"
 exl-id: 17f72954-085c-46a8-bc28-6af0a4eb159a
-source-git-commit: 0e86227915404fe62fcd1f27e95eb3b1bb673030
+source-git-commit: cd3baec708f1811a7cbc37dfe0a9c3af75eb97c3
 workflow-type: tm+mt
-source-wordcount: '2268'
+source-wordcount: '2351'
 ht-degree: 14%
 
 ---
@@ -169,11 +169,13 @@ Definieren Sie ein Schema, das diese Daten modelliert. Gehen Sie folgendermaßen
    | `trackingcode` | `Tracking Code` | **[!UICONTROL String]** | |
 
 
-   * Das Feld **[!UICONTROL id]** wird als **[!UICONTROL Versionsdeskriptor]** konfiguriert.
+   * Das **[!UICONTROL id]**-Feld wird als **[!UICONTROL Versionsdeskriptor]** konfiguriert.
 
      ![Versionsdeskriptor](assets/platform-schema-id.png)
 
-   * Das Feld **[!UICONTROL personid]** wird zusammen mit **[!UICONTROL timestamp]** als Primärer Schlüssel **&#x200B;**&#x200B;konfiguriert. Wählen Sie ![Hinzufügen](/help/assets/icons/Add.svg) **[!UICONTROL Zusammengesetzten Primärschlüssel erstellen]** aus, um einen zusammengesetzten Schlüssel zu erstellen.
+     In einem realen Szenario empfiehlt es sich, ein geeigneteres Feld als [Versionsdeskriptor“ ](aep.md#schema). Beispiel: ein Feld, in dem die letzte Änderungszeit erfasst wird.
+
+   * Das Feld **[!UICONTROL personid]** wird zusammen mit **[!UICONTROL timestamp]** als Primärer Schlüssel **** konfiguriert. Wählen Sie ![Hinzufügen](/help/assets/icons/Add.svg) **[!UICONTROL Zusammengesetzten Primärschlüssel erstellen]** aus, um einen zusammengesetzten Schlüssel zu erstellen.
 
      ![Zusammengesetzter Schlüssel](assets/platform-schema-compositekey.png)
 
@@ -181,7 +183,9 @@ Definieren Sie ein Schema, das diese Daten modelliert. Gehen Sie folgendermaßen
 
      ![Personendeskriptor](assets/platform-schema-personid.png)
 
-   * Das Feld **[!UICONTROL Zeitstempel]** wird zusammen mit dem Feld **[!UICONTROL personid]** als Primärer Schlüssel **&#x200B;**&#x200B;konfiguriert. Das **[!UICONTROL Zeitstempel]**-Feld wird auch als **[!UICONTROL Zeitstempeldeskriptor]** konfiguriert. Sie müssen nur ein Feld als **[!UICONTROL Zeitstempeldeskriptor]** für relationale Zeitreihendaten definieren.
+     Das **[!UICONTROL personid]**-Feld muss nicht der **[!UICONTROL Primäre Schlüssel sein]**. In einem realen Szenario haben Sie wahrscheinlich ein anderes Feld, um den Primärschlüssel getrennt von der &quot;**[!UICONTROL &quot;]** verfolgen.
+
+   * Das Feld **[!UICONTROL Zeitstempel]** wird zusammen mit dem Feld **[!UICONTROL personid]** als Primärer Schlüssel **** konfiguriert. Das **[!UICONTROL Zeitstempel]**-Feld wird auch als **[!UICONTROL Zeitstempeldeskriptor]** konfiguriert. Sie müssen nur ein Feld als **[!UICONTROL Zeitstempeldeskriptor]** für relationale Zeitreihendaten definieren.
 
      ![Zeitstempel-Deskriptor](assets/platform-schema-timestamp.png)
 
@@ -189,6 +193,8 @@ Definieren Sie ein Schema, das diese Daten modelliert. Gehen Sie folgendermaßen
    Wenn Sie **[!UICONTROL Primären Schlüssel]**, **[!UICONTROL Versionsdeskriptor]** und **[!UICONTROL Zeitstempeldeskriptor]** korrekt definiert haben, verschwindet die Warnung über der Schemadefinition.
 
 1. Wählen Sie **[!UICONTROL Speichern]** aus, um Ihr Schema zu speichern.
+
+Auf ähnliche Weise können Sie ein auf Datensätzen basierendes relationales [Schema) ](aep.md#schema). Beispielsweise , um Profil- und Suchdaten zu enthalten.
 
 
 ## Verwenden eines Quell-Connectors
@@ -219,7 +225,7 @@ Wählen **[!UICONTROL im Schritt]** Authentifizierung“ Folgendes aus:
 
    1. Klicken Sie auf **[!UICONTROL Weiter]**.
 
-  In der Experience Platform-Dokumentation finden Sie Einzelheiten zur Verbindung und Authentifizierung bei der Verwendung des [Azure Databricks](https://experienceleague.adobe.com/de/docs/experience-platform/sources/connectors/databases/databricks) oder [Snowflake](https://experienceleague.adobe.com/de/docs/experience-platform/sources/connectors/databases/snowflake)-Connectors.
+  In der Experience Platform-Dokumentation finden Sie Einzelheiten zur Verbindung und Authentifizierung bei der Verwendung des [Azure Databricks](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/databases/databricks) oder [Snowflake](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/databases/snowflake)-Connectors.
 
 
 ### Daten auswählen
@@ -254,7 +260,7 @@ Im Schritt **[!UICONTROL Datenflussdetails]**:
 
 Im Schritt **[!UICONTROL Zuordnung]**:
 
-1. Ordnen Sie die Felder zu. Vom Schema in Google BigQuery (**[!UICONTROL Source-Daten]**) bis zu den Feldern im Schema, die Sie in Experience Platform definiert haben (**[!UICONTROL Zielfelder]**).
+1. Ordnen Sie die Felder im Schema in Google BigQuery (**[!UICONTROL Source-Daten]**) den Feldern im Schema zu, die Sie in Experience Platform definiert haben (**[!UICONTROL Zielfelder]**).
 
    ![Experience Platform - Source-Connector - Zuordnung](assets/platform-sources-mapping.png)
 
@@ -324,7 +330,7 @@ In der Benutzeroberfläche von Customer Journey Analytics:
    1. Wählen Sie **[!UICONTROL Datensätze hinzufügen]** aus.
 1. Wählen Sie **[!UICONTROL Speichern]** aus.
 
-Nachdem Sie eine [Verbindung](/help/connections/overview.md) erstellt haben, können Sie verschiedene Verwaltungsaufgaben ausführen. Beispielsweise [Auswählen und Kombinieren &#x200B;](/help/connections/combined-dataset.md) Datensätzen[&#x200B; Überprüfen des Status der Datensätze einer Verbindung und des Status &#x200B;](/help/connections/manage-connections.md) Datenaufnahme).
+Nachdem Sie eine [Verbindung](/help/connections/overview.md) erstellt haben, können Sie verschiedene Verwaltungsaufgaben ausführen. Beispielsweise [Auswählen und Kombinieren ](/help/connections/combined-dataset.md) Datensätzen[ Überprüfen des Status der Datensätze einer Verbindung und des Status ](/help/connections/manage-connections.md) Datenaufnahme).
 
 
 ## Einrichten einer Datenansicht
@@ -372,7 +378,7 @@ Gehen Sie folgendermaßen vor, um eine Datenansicht zu erstellen:
 
    Behalten Sie die Einstellungen bei und wählen Sie **[!UICONTROL Speichern und beenden]**.
 
-Weitere Informationen [&#x200B; Erstellen und Bearbeiten einer Datenansicht finden &#x200B;](../data-views/data-views.md) unter Datenansichten - Übersicht . Und welche Komponenten in Ihrer Datenansicht verfügbar sind und wie Sie Segment- und Sitzungseinstellungen verwenden.
+Weitere Informationen [ Erstellen und Bearbeiten einer Datenansicht finden ](../data-views/data-views.md) unter Datenansichten - Übersicht . Und welche Komponenten in Ihrer Datenansicht verfügbar sind und wie Sie Segment- und Sitzungseinstellungen verwenden.
 
 
 ## Einrichten eines Projekts
