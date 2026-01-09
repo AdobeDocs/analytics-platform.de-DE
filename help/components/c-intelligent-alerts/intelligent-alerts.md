@@ -27,7 +27,7 @@ Je nach Customer Journey Analytics-Paket können Sie auch Warnhinweise verwenden
    * Änderungen an Metriken um einen bestimmten Prozentsatz.
    * Metriken, die über, unter oder gleich einem bestimmten Wert sind. (nur für Adobe Analytics-Kunden mit einem Select-, Prime- oder Ultimate-Paket verfügbar)
 
-Dieses [Video-Tutorial](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/data-science/intelligent-alerts) bietet einen grundlegenden Überblick über Warnhinweise.
+Dieses [Video-Tutorial](https://experienceleague.adobe.com/de/docs/analytics-learn/tutorials/data-science/intelligent-alerts) bietet einen grundlegenden Überblick über Warnhinweise.
 
 
 
