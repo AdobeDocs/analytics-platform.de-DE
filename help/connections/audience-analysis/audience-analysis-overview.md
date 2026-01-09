@@ -68,7 +68,7 @@ Sie können beispielsweise das Verhalten einzelner Kundinnen und Kunden verfolge
 
 * Zielgruppenmitglieder, die schließlich einen Kauf im Geschäft getätigt haben
 
-Weitere Informationen finden Sie unter [ von Experience Platform-Zielgruppen in Customer Journey Analytics](/help/connections/audience-analysis/analyze-audiences.md).
+Weitere Informationen finden Sie unter [&#x200B; von Experience Platform-Zielgruppen in Customer Journey Analytics](/help/connections/audience-analysis/analyze-audiences.md).
 
 ## Rollen- und Berechtigungsanforderungen für die Zielgruppenanalyse
 
