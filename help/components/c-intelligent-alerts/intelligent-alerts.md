@@ -15,7 +15,7 @@ ht-degree: 58%
 
 Warnhinweise in Customer Journey Analytics ermöglichen es Ihnen, sich über geänderte Prozentsätze oder bestimmte Datenpunkte benachrichtigen zu lassen.
 
-Je nach Customer Journey Analytics-Paket können Sie auch Warnhinweise verwenden, die basierend auf Schwellenwerten für Anomalien ausgelöst werden. Diese Warnhinweise (auch *intelligente Warnhinweise* genannt) bieten granulare Steuerelemente, die in die [Anomalieerkennung“ integriert sind ](/help/analysis-workspace/c-anomaly-detection/anomaly-detection.md) ausgelöst werden, wenn Sie sie am meisten benötigen.
+Je nach Customer Journey Analytics-Paket können Sie auch Warnhinweise verwenden, die basierend auf Schwellenwerten für Anomalien ausgelöst werden. Diese Warnhinweise (auch *intelligente Warnhinweise* genannt) bieten granulare Steuerelemente, die in die [Anomalieerkennung“ integriert sind &#x200B;](/help/analysis-workspace/c-anomaly-detection/anomaly-detection.md) ausgelöst werden, wenn Sie sie am meisten benötigen.
 
 * Vorschau der Trigger eines Warnhinweises.
 * Warnhinweise per E-Mail oder SMS mit Links zu automatisch erstellten Projekten in Analysis Workspace verschicken.
