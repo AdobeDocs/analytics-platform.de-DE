@@ -5,7 +5,7 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 902e5890-f970-4f1a-b091-9c3e51a987db
-source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
+source-git-commit: 3dc53d6955eab3048ebf8a7c9d232b4b5739c6bd
 workflow-type: tm+mt
 source-wordcount: '1252'
 ht-degree: 100%
@@ -21,18 +21,10 @@ ht-degree: 100%
 >title="Gewünschtes benutzerdefiniertes Schema in Adobe Experience Platform erstellen"
 >abstract="Verwenden Sie die Adobe Experience Platform-Benutzeroberfläche, um ein Schema zu erstellen, sodass Adobe das richtige Format zum Speichern Ihrer Daten kennt.<br><br>Dieser Schritt umfasst die tatsächliche Erstellung des Schemas, das von Ihrer Organisation vereinbart wurde. Die geschätzte Zeit bis zur Erstellung Ihres Schemas in der Benutzeroberfläche von Adobe Experience Platform beträgt abhängig von der Anzahl der zu erstellenden Dimensionen und Metriken ca. eine Woche."
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-schema-create-default-aa"
 >title="Schema mithilfe der ExperienceEvent-Feldergruppe in Adobe Analytics erstellen"
 >abstract="Verwenden Sie die Feldgruppe „Adobe Analytics ExperienceEvent“, um in Adobe Experience Platform ein Schema zu erstellen, das alle von Adobe Analytics verwendeten Felder enthält.<br><br>Das Erstellen eines Schemas basierend auf der Adobe Analytics ExperienceEvent-Feldgruppe ist einfach und dauert nur einige Minuten."
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-schema-profile"
@@ -160,7 +152,7 @@ So erstellen Sie ein benutzerspezifisches Schema:
 
 1. (Optional) Wenn Sie Customer Journey Analytics mit RTCDP integrieren möchten, wählen Sie das Stammelement Ihres Schemas aus, das den Namen des Schemas anzeigt, und wählen Sie dann den Umschalter **[!UICONTROL Profil]** aus.
 
-   Sie werden aufgefordert, das Schema für das Profil zu aktivieren. Nach der Aktivierung werden Daten, die auf der Basis dieses Schemas in Datensätze aufgenommen werden, zum Echtzeit-Kundenprofil hinzugefügt.
+   Sie werden aufgefordert, das Schema für das Profil zu aktivieren. Nach der Aktivierung werden Daten, die auf der Basis dieses Schemas in Datensätze aufgenommen werden, mit dem Echtzeit-Kundenprofil zusammengeführt.
 
    Weitere Informationen finden Sie im Abschnitt [Aktivieren des Schemas zur Verwendung im Echtzeit-Kundenprofil](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/tutorials/create-schema-ui#profile).
 
