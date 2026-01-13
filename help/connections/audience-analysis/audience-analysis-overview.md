@@ -6,10 +6,10 @@ feature: Audiences
 role: Admin
 hide: true
 hidefromtoc: true
-source-git-commit: 840bf65d186178fb944041ff486e95ba60dc6037
+source-git-commit: 9d9c4dbba13f61af4a47bbb0f87533fb950976bc
 workflow-type: tm+mt
-source-wordcount: '675'
-ht-degree: 4%
+source-wordcount: '708'
+ht-degree: 3%
 
 ---
 
@@ -68,7 +68,7 @@ Sie können beispielsweise das Verhalten einzelner Kundinnen und Kunden verfolge
 
 * Zielgruppenmitglieder, die schließlich einen Kauf im Geschäft getätigt haben
 
-Weitere Informationen finden Sie unter [&#x200B; von Experience Platform-Zielgruppen in Customer Journey Analytics](/help/connections/audience-analysis/analyze-audiences.md).
+Weitere Informationen finden Sie unter [ von Experience Platform-Zielgruppen in Customer Journey Analytics](/help/connections/audience-analysis/analyze-audiences.md).
 
 ## Rollen- und Berechtigungsanforderungen für die Zielgruppenanalyse
 
@@ -80,7 +80,13 @@ Die folgenden Customer Journey Analytics-Rollen und Experience Platform-Berechti
 | [Anzeigen von Zielgruppenanalysedimensionen in der Datenansicht](/help/connections/audience-analysis/audience-analysis-configure.md#view-audience-dimensions-in-the-data-view) | Produktprofil-Administrator für das Produktprofil, dem die Datenansicht zugewiesen ist <p>Weitere Informationen finden Sie unter [Zugriffssteuerung](/help/technotes/access-control.md).</p> | k. A. |
 | Verwenden von Zielgruppenanalysedimensionen in Analysis Workspace | Zugriff auf eine Datenansicht, in der die Zielgruppenanalysedimensionen hinzugefügt wurden | k. A. |
 
+## Grenzwerte für Zielgruppenanalysen
 
+Beachten Sie bei der Konfiguration [ Zielgruppenanalyse die folgenden ](/help/connections/audience-analysis/audience-analysis-configure.md):
+
+* Eine einzelne Sandbox kann bis zu 100 Zielgruppenanalysekonfigurationen unterstützen.
+
+* Eine Verbindung kann nur mit einer Zielgruppenanalysekonfiguration verknüpft werden.
 
 
 
