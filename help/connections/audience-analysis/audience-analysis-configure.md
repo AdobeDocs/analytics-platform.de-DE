@@ -117,7 +117,7 @@ So erstellen Sie eine Zielgruppenanalysekonfiguration:
    >Da der Profildatensatz einmal täglich aktualisiert wird, sind Zielgruppen in Customer Journey Analytics-Datenansichten am Tag nach der Erstellung der Zielgruppenanalysekonfiguration verfügbar.
 
 
-1. Überprüfen Sie nach 24 [ mithilfe von Zielgruppendimensionen in der ](#view-audience-dimensions-in-the-data-view), ob die Zielgruppendimensionen in den von Ihnen ausgewählten Datenansichten verfügbar sind.
+1. Überprüfen Sie nach 24 [&#x200B; mithilfe von Zielgruppendimensionen in der &#x200B;](#view-audience-dimensions-in-the-data-view), ob die Zielgruppendimensionen in den von Ihnen ausgewählten Datenansichten verfügbar sind.
 
 ## Anzeigen von Zielgruppendimensionen in der Datenansicht
 
@@ -145,6 +145,6 @@ So zeigen Sie die Dimensionen der Zielgruppenanalyse in der Datenansicht an:
 
 1. Verwenden Sie die Zielgruppenanalysedimensionen in Analysis Workspace.
 
-   Benutzende, die Zugriff auf die Verwendung der Datenansicht in Analysis Workspace haben, können jetzt die neuen Dimensionen sehen und sie in ihren Analysen verwenden. Informationen zur Verwendung der Zielgruppenanalysedimensionen in Analysis Workspace finden Sie unter [ von Experience Platform-Zielgruppen in Customer Journey Analytics](/help/connections/audience-analysis/analyze-audiences.md).
+   Benutzende, die Zugriff auf die Verwendung der Datenansicht in Analysis Workspace haben, können jetzt die neuen Dimensionen sehen und sie in ihren Analysen verwenden. Informationen zur Verwendung der Zielgruppenanalysedimensionen in Analysis Workspace finden Sie unter [&#x200B; von Experience Platform-Zielgruppen in Customer Journey Analytics](/help/connections/audience-analysis/analyze-audiences.md).
 
 
