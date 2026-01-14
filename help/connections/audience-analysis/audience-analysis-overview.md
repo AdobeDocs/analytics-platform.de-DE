@@ -6,9 +6,9 @@ feature: Audiences
 role: Admin
 hide: true
 hidefromtoc: true
-source-git-commit: 9d9c4dbba13f61af4a47bbb0f87533fb950976bc
+source-git-commit: ca2adce7be8a28fa72323915473a8c2283741889
 workflow-type: tm+mt
-source-wordcount: '708'
+source-wordcount: '728'
 ht-degree: 3%
 
 ---
@@ -46,7 +46,9 @@ Die folgende Abbildung und die zugehörige Tabelle zeigen eine allgemeine Darste
 
 Bei der Konfiguration der Zielgruppenanalyse wählen Sie die Sandbox und die Zusammenführungsrichtlinie aus, die mit den Experience Platform-Zielgruppen verknüpft sind, die Sie analysieren möchten. Customer Journey Analytics erstellt einen neuen Lookup-Datensatz und fügt dann den Lookup-Datensatz und den Profildatensatz automatisch zur ausgewählten Verbindung hinzu.
 
->[!NOTE]
+>[!IMPORTANT]
+>
+>Zielgruppendaten werden jede Nacht neu verarbeitet und generiert, sodass die Zielgruppendaten nur für die Analyse am Vortag („gestern„) korrekt sind.
 >
 >Audiences stehen in Customer Journey Analytics-Datenansichten am Tag nach der Erstellung der Zielgruppenanalysekonfiguration zur Verfügung.
 
@@ -68,7 +70,7 @@ Sie können beispielsweise das Verhalten einzelner Kundinnen und Kunden verfolge
 
 * Zielgruppenmitglieder, die schließlich einen Kauf im Geschäft getätigt haben
 
-Weitere Informationen finden Sie unter [&#x200B; von Experience Platform-Zielgruppen in Customer Journey Analytics](/help/connections/audience-analysis/analyze-audiences.md).
+Weitere Informationen finden Sie unter [ von Experience Platform-Zielgruppen in Customer Journey Analytics](/help/connections/audience-analysis/analyze-audiences.md).
 
 ## Rollen- und Berechtigungsanforderungen für die Zielgruppenanalyse
 
@@ -82,7 +84,7 @@ Die folgenden Customer Journey Analytics-Rollen und Experience Platform-Berechti
 
 ## Grenzwerte für Zielgruppenanalysen
 
-Beachten Sie bei der Konfiguration [&#x200B; Zielgruppenanalyse die folgenden &#x200B;](/help/connections/audience-analysis/audience-analysis-configure.md):
+Beachten Sie bei der Konfiguration [ Zielgruppenanalyse die folgenden ](/help/connections/audience-analysis/audience-analysis-configure.md):
 
 * Eine einzelne Sandbox kann bis zu 100 Zielgruppenanalysekonfigurationen unterstützen.
 
