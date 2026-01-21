@@ -31,7 +31,7 @@ So fügen Sie eine User als Produktadministrator hinzu:
 
 1. OK zum [Admin Console](https://adminconsole.adobe.com/enterprise/).
 
-1. Wählen Sie Customer Journey Analytics [!UICONTROL **> Admins**] Tab > [!UICONTROL **hinzufügen Admin**] aus [!UICONTROL ****].
+1. Wählen Sie Customer Journey Analytics [!UICONTROL **> Admins**] Tab > [!UICONTROL **hinzufügen Admin**] aus [!UICONTROL **&#x200B;**].
 
    Die hinzugefügten Benutzer erhalten die [Standardberechtigungen für Produktadministratoren](#product-admin-default-permissions). Bei Bedarf können Sie ihnen auch [zusätzliche Berechtigungen](#product-admin-additional-permissions) erteilen.
 
@@ -120,15 +120,15 @@ Die **[!UICONTROL Berechtigungen]** ist Teil jedes Produktprofils in der [Admin 
 | Kategorie | Berechtigung | Beschreibung |
 | --- | --- | ---|
 | [!UICONTROL Datenansichten] | *Name der Datenansicht* | Wenn **[!UICONTROL Auto-Include]** auf **[!UICONTROL Ein]** umgeschaltet wird, können Benutzende, die Teil dieses Produktprofils sind, alle vorhandenen und neu erstellten Datenansichten anzeigen. Wenn diese Einstellung auf **[!UICONTROL Aus]** gesetzt ist, können bestimmte Datenansichten ausgewählt werden, auf die Benutzende Zugriff haben. |
-| [!UICONTROL Reporting-Tools] | [!UICONTROL Zugriff auf Analysis Workspace] | Benutzern Zugriff auf [Analysis Workspace ](/help/analysis-workspace/home.md). |
+| [!UICONTROL Reporting-Tools] | [!UICONTROL Zugriff auf Analysis Workspace] | Benutzern Zugriff auf [Analysis Workspace &#x200B;](/help/analysis-workspace/home.md). |
 | [!UICONTROL Reporting-Tools] | [!UICONTROL Zugriff auf geführte Analysen] | Ermöglicht Benutzenden den Zugriff auf [Geführte Analyse](/help/guided-analysis/overview.md). |
 | [!UICONTROL Reporting-Tools] | [!UICONTROL Erstellung berechneter Metriken] | Ermöglicht Benutzenden die Erstellung [berechneter Metriken](/help/components/calc-metrics/calc-metr-overview.md). Benutzer können nur die berechneten Metriken, die sie erstellen, oder die berechneten Metriken, die für sie freigegeben wurden, taggen, freigeben, löschen, umbenennen, genehmigen oder die Genehmigung aufheben. |
 | [!UICONTROL Reporting-Tools] | [!UICONTROL Erstellung von Segmenten] | Benutzenden die Erstellung von [Segmenten](/help/components/segments/seg-overview.md) ermöglichen. Benutzer können nur die Segmente, die sie erstellen, oder die Segmente, die für sie freigegeben wurden, taggen, freigeben, löschen, umbenennen, genehmigen oder die Genehmigung aufheben. |
-| [!UICONTROL Berichterstellung Werkzeuge] | [!UICONTROL Labs-Zugriff] | Ermöglichen Sie Benutzern den Zugriff auf die Labs-Tab[ in Customer Journey Analytics](/help/labs/labs.md). |
+| [!UICONTROL Berichterstellung Werkzeuge] | [!UICONTROL Labs-Zugriff] | Ermöglichen Sie Benutzern den Zugriff auf die Labs-Tab[&#x200B; in Customer Journey Analytics](/help/labs/labs.md). |
 | [!UICONTROL Berichterstellung Werkzeuge] | [!UICONTROL Anmerkungserstellung] | Benutzern die Erstellung von [Anmerkungen](/help/components/annotations/overview.md) ermöglichen. Benutzer können nur die Anmerkungen taggen, freigeben, löschen und umbenennen, die sie erstellen oder die für sie freigegeben sind. |
 | [!UICONTROL Reporting-Tools] | [!UICONTROL Zielgruppenansicht] | Benutzer Ansicht [Zielgruppen](/help/components/audiences/audiences-overview.md) zulassen. |
-| [!UICONTROL Berichterstellung Werkzeuge] | [!UICONTROL Zielgruppenerstellung] | Ermöglichen Sie es Benutzern, Zielgruppen[ zu erstellen](/help/components/audiences/audiences-overview.md). Erfordert [&quot;Segmente](https://experienceleague.adobe.com/de/docs/experience-platform/access-control/home) verwalten&quot; in Adobe Experience Platform. |
-| [!UICONTROL Reporting-Tools] | [!UICONTROL Daten-storytelling] | Benutzerinnen und [ können Folien-Präsentationen basierend auf Workspace-Projekten generieren](/help/analysis-workspace/curate-share/generate-slides.md)<p>Daten Storytelling befindet sich in der eingeschränkten Testphase der Veröffentlichung und ist möglicherweise noch nicht in Ihrem Umgebung verfügbar. Diese Anmerkung wird entfernt, wenn die Funktion allgemein verfügbar ist. Informationen zum Customer Journey Analytics-Veröffentlichungsprozess finden Sie unter [Veröffentlichungen von Funktionen für Customer Journey Analytics](/help/release-notes/releases.md).</p> |
+| [!UICONTROL Berichterstellung Werkzeuge] | [!UICONTROL Zielgruppenerstellung] | Ermöglichen Sie es Benutzern, Zielgruppen[&#x200B; zu erstellen](/help/components/audiences/audiences-overview.md). Erfordert [&quot;Segmente](https://experienceleague.adobe.com/de/docs/experience-platform/access-control/home) verwalten&quot; in Adobe Experience Platform. |
+| [!UICONTROL Reporting-Tools] | [!UICONTROL Daten-storytelling] | Benutzerinnen und [&#x200B; können Folien-Präsentationen basierend auf Workspace-Projekten generieren](/help/analysis-workspace/curate-share/generate-slides.md)<p>Daten Storytelling befindet sich in der eingeschränkten Testphase der Veröffentlichung und ist möglicherweise noch nicht in Ihrem Umgebung verfügbar. Diese Anmerkung wird entfernt, wenn die Funktion allgemein verfügbar ist. Informationen zum Customer Journey Analytics-Veröffentlichungsprozess finden Sie unter [Veröffentlichungen von Funktionen für Customer Journey Analytics](/help/release-notes/releases.md).</p> |
 | [!UICONTROL Berichterstellung Werkzeuge] | [!UICONTROL Zugriff auf Auditprotokolle] | Erzwingen Sie die Berechtigung-Prüfung für die [API](https://developer.adobe.com/cja-apis/docs/endpoints/auditlogs/) und die UI der Prüfprotokolle. |
 | [!UICONTROL Berichterstellung Werkzeuge] | [!UICONTROL Teilen Sie Projekt Links mit anderen] | Benutzer [Projekte für alle freigeben.](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/curate-share/share-projects) |
 | [!UICONTROL Berichterstellung Werkzeuge] | [!UICONTROL Prognose] | Ermöglichen Sie Benutzern den Zugriff auf die [Prognosefunktion](../analysis-workspace/c-forecast/forecasting.md) in Analysis Workspace |
@@ -159,7 +159,7 @@ Sie können einem Teamleiter eines Drittanbieters, mit dem Ihr Unternehmen zusam
 
 Benutzerinnen und Benutzern soll nur der Zugriff auf Daten eines Tages gewährt werden. So könnte der Zugriff auf diese speziellen Zeilen beschränkt werden:
 
-1. Erstellen Sie ein Segment in [!UICONTROL Einstellungen] einer bestimmten Datenansicht, wobei [!UICONTROL Tag] dem Datum entspricht, an dem die Daten zugänglich sein sollen. Weitere Informationen [ Sie unter ](/help/data-views/create-dataview.md#settings-filters)Datenansicht erstellen“.
+1. Erstellen Sie ein Segment in [!UICONTROL Einstellungen] einer bestimmten Datenansicht, wobei [!UICONTROL Tag] dem Datum entspricht, an dem die Daten zugänglich sein sollen. Weitere Informationen [&#x200B; Sie unter &#x200B;](/help/data-views/create-dataview.md#settings-filters)Datenansicht erstellen“.
 1. Speichern Sie die Datenansicht, die das Segment auf den Datenteil der Datensätze in der zugrunde liegenden Verbindung anwendet. Alle Zeilen, die nicht zur Segmentdefinition passen, werden automatisch aus der Datenansicht ausgeschlossen und stehen Analysis Workspace bei Verwendung dieser Datenansicht nicht zur Verfügung.
 1. Erstellen Sie ein neues [Produktprofil](#product-profile-admin-role) in der Admin Console, fügen Sie Benutzer zum Produktprofil hinzu und nehmen Sie nur diese spezifische Datenansicht in das Produktprofil auf.
 
