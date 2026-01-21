@@ -63,7 +63,7 @@ Zusätzlich zur Hinzufügung als Produktadministrator zum **Customer Journey Ana
   | [!UICONTROL Daten-Management] | [!UICONTROL Anzeigen von Datensätzen] | Schreibgeschützter Zugriff auf Datensätze und Schemata. |
   | [!UICONTROL Identity Management] | [!UICONTROL Anzeigen von Identity-Namespaces] | Schreibgeschützter Zugriff für Identity-Namespaces. |
 
-  Weitere Informationen zu Berechtigungen für Experience Platform finden Sie [Verwalten von Berechtigungen für ein Produktprofil](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/ui/permissions).
+  Weitere Informationen zu Berechtigungen für Experience Platform finden Sie [Verwalten von Berechtigungen für ein Produktprofil](https://experienceleague.adobe.com/de/docs/experience-platform/access-control/ui/permissions).
 
 
 * Wenn Journey Optimizer in Customer Journey Analytics integriert ist, wo Journey Optimizer-Verbindungen vorhanden sind, müssen auch Journey-Berechtigungen hinzugefügt werden, um auf -Verbindungen zugreifen zu können:
@@ -84,13 +84,13 @@ Zusätzlich zur Hinzufügung als Produktadministrator zum **Customer Journey Ana
   | [!UICONTROL Ziele] | [!UICONTROL Verwalten von Zielen] | Zugriff auf das Lesen, Erstellen und Löschen von Zielverbindungen und Zielkonten. |
   | [!UICONTROL Ziele] | [!UICONTROL Aktivieren von Zielen] | Ermöglichen Sie Benutzern die Aktivierung von Segmenten für vorhandene Ziele. Aktiviert den Zuordnungsschritt im Aktivierungs-Workflow. Dieser Berechtigung erfordert auch, dass der User, der Daten für Ziele aktivieren möchte, die Berechtigung &quot;Ansicht Ziele&quot; gewährt wird. |
 
-  Weitere Informationen zu Berechtigungen für Experience Platform finden Sie [Verwalten von Berechtigungen für ein Produktprofil](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/ui/permissions).
+  Weitere Informationen zu Berechtigungen für Experience Platform finden Sie [Verwalten von Berechtigungen für ein Produktprofil](https://experienceleague.adobe.com/de/docs/experience-platform/access-control/ui/permissions).
 
 * Verwenden der [BI-Erweiterung](../data-views/bi-extension.md)
 
   Für Benutzer, die die BI-Erweiterung verwenden möchten, Produktadministrator
 
-   * Sie müssen sicherstellen, dass die Experience Platform-Berechtigungen für den -Benutzer eine Rolle enthalten, die über die Ressource „Abfrage-Service“ mit den Optionen „Abfragen verwalten“ und „Abfrage-Service-Integration verwalten“ verfügt. Weitere Informationen zu Experience Platform Berechtigungen finden Sie unter [Verwalten von Berechtigungen für ein Produkt Profil](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/ui/permissions).
+   * Sie müssen sicherstellen, dass die Experience Platform-Berechtigungen für den -Benutzer eine Rolle enthalten, die über die Ressource „Abfrage-Service“ mit den Optionen „Abfragen verwalten“ und „Abfrage-Service-Integration verwalten“ verfügt. Weitere Informationen zu Experience Platform Berechtigungen finden Sie unter [Verwalten von Berechtigungen für ein Produkt Profil](https://experienceleague.adobe.com/de/docs/experience-platform/access-control/ui/permissions).
 
      | Kategorie | Berechtigung | Beschreibung |
      |---|---|---|
@@ -130,7 +130,7 @@ Die **[!UICONTROL Berechtigungen]** ist Teil jedes Produktprofils in der [Admin 
 | [!UICONTROL Berichterstellung Werkzeuge] | [!UICONTROL Zielgruppenerstellung] | Ermöglichen Sie es Benutzern, Zielgruppen[&#x200B; zu erstellen](/help/components/audiences/audiences-overview.md). Erfordert [&quot;Segmente](https://experienceleague.adobe.com/de/docs/experience-platform/access-control/home) verwalten&quot; in Adobe Experience Platform. |
 | [!UICONTROL Reporting-Tools] | [!UICONTROL Daten-storytelling] | Benutzerinnen und [&#x200B; können Folien-Präsentationen basierend auf Workspace-Projekten generieren](/help/analysis-workspace/curate-share/generate-slides.md)<p>Daten Storytelling befindet sich in der eingeschränkten Testphase der Veröffentlichung und ist möglicherweise noch nicht in Ihrem Umgebung verfügbar. Diese Anmerkung wird entfernt, wenn die Funktion allgemein verfügbar ist. Informationen zum Customer Journey Analytics-Veröffentlichungsprozess finden Sie unter [Veröffentlichungen von Funktionen für Customer Journey Analytics](/help/release-notes/releases.md).</p> |
 | [!UICONTROL Berichterstellung Werkzeuge] | [!UICONTROL Zugriff auf Auditprotokolle] | Erzwingen Sie die Berechtigung-Prüfung für die [API](https://developer.adobe.com/cja-apis/docs/endpoints/auditlogs/) und die UI der Prüfprotokolle. |
-| [!UICONTROL Berichterstellung Werkzeuge] | [!UICONTROL Teilen Sie Projekt Links mit anderen] | Benutzer [Projekte für alle freigeben.](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/curate-share/share-projects) |
+| [!UICONTROL Berichterstellung Werkzeuge] | [!UICONTROL Teilen Sie Projekt Links mit anderen] | Benutzer [Projekte für alle freigeben.](https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-workspace/curate-share/share-projects) |
 | [!UICONTROL Berichterstellung Werkzeuge] | [!UICONTROL Prognose] | Ermöglichen Sie Benutzern den Zugriff auf die [Prognosefunktion](../analysis-workspace/c-forecast/forecasting.md) in Analysis Workspace |
 | [!UICONTROL Berichterstellung Werkzeuge] | [!UICONTROL KI-Assistent: Produktkenntnisse] | Ermöglicht Benutzenden den Zugriff auf den [KI-](../ai-assistant.md)) für Produktkenntnisse. |
 | [!UICONTROL Reporting-Tools] | [!UICONTROL Intelligente Untertitel] | Benutzern Zugriff auf [intelligente Beschriftungen](/help/analysis-workspace/visualizations/intelligent-captions.md) ermöglichen. |
