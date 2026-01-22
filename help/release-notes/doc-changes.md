@@ -22,7 +22,7 @@ Die folgenden Aktualisierungen wurden seit der ersten Erstellung der Customer Jo
 | **Januar 2026** | |
 | Leitplanken für Zeilen pro Jahr in einer Verbindung | Es wurden [Leitplankeninformationen für Datenübertragungsbeschränkungen](/help/technotes/guardrails.md) zur maximalen durchschnittlichen Anzahl von Zeilen pro Jahr in einer Verbindung hinzugefügt. |
 | Anzeigen des Rechenzentrums, in dem Ihre Daten gespeichert sind | Hinzugefügt [Informationen über die Rechenzentren, in denen Daten gespeichert werden](/help/technotes/data-centers.md#view-the-data-center-where-your-data-is-stored). |
-| Benutzereinstellungen: Zahlenformat | Sie können das Zahlenformat nicht mehr im Abschnitt **[!UICONTROL Projekt und Analysen]** > **[!UICONTROL Daten]** von **[!UICONTROL Benutzereinstellungen]**. Das Zahlenformat wird automatisch durch die [Standardsprache) &#x200B;](https://experienceleague.adobe.com/en/docs/core-services/interface/features/browser-language) angemeldeten Benutzers bestimmt. |
+| Benutzereinstellungen: Zahlenformat | Sie können das Zahlenformat nicht mehr im Abschnitt **[!UICONTROL Projekt und Analysen]** > **[!UICONTROL Daten]** von **[!UICONTROL Benutzereinstellungen]**. Das Zahlenformat wird automatisch durch die [Standardsprache) &#x200B;](https://experienceleague.adobe.com/de/docs/core-services/interface/features/browser-language) angemeldeten Benutzers bestimmt. |
 | Schema planen | Wesentliche Informationen und Kontext wurden hinzugefügt zu [Entwickeln eines Schemas zur Verwendung mit Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-schema-architect.md). |
 
 
