@@ -4,9 +4,9 @@ title: Verwenden von Vorlagen
 feature: Workspace Basics
 role: User, Admin
 exl-id: d61f215d-9089-4014-9c5a-97f5d7134f34
-source-git-commit: 11a550e0cd67db106e2dd399843c4cf0923467ad
+source-git-commit: 3f369122863df4f3fc339730ced8c193360d07c6
 workflow-type: tm+mt
-source-wordcount: '20775'
+source-wordcount: '20877'
 ht-degree: 97%
 
 ---
@@ -652,10 +652,9 @@ Die folgenden Vorlagen sind verfügbar:
 
 Die folgenden Vorlagen sind verfügbar:
 
-<!--need to add audience overview: - **[!UICONTROL Audience overview]** - View which audiences are represented among the people visiting your site.<p>**This can help you** better understand general information about the audiences, where the audiences originated (RTCDP, Customer Journey Analytics, and so forth), audience overlap, and more.</p><p>**Based on what you learn, you might** do any number of things, like use the data to focus on marketing efforts for these specific audiences, or create tailored experiences for customers who span multiple audiences.</p><p>This template uses the Audience Name, Audience Origin, Exited Audience Name, and Exited Audience Origin dimensions.</p><p>For more information, see [Analyze Experience Platform audiences in Customer Journey Analytics](/help/connections/audience-analysis/analyze-audiences.md).</p> - -->
-
 | Vorlagenname | Warum diese Vorlage verwenden?<!-- What do you do with it? What can it help you learn? and What are the potential actions? --> |
 | --- | --- |
+| **[!UICONTROL Zielgruppenübersicht]** | Anzeigen, welche Zielgruppen unter den Personen dargestellt werden, die Ihre Site besuchen.<p>**Auf diese Weise** Sie allgemeine Informationen zu den Zielgruppen, wo die Zielgruppen ihren Ursprung haben (RTCDP, Customer Journey Analytics usw.), Zielgruppenüberschneidungen und mehr besser verstehen.</p><p>**Je nachdem, was Sie lernen** können Sie beliebig viele Dinge tun, z. B. die Daten verwenden, um sich auf Marketing-Maßnahmen für diese spezifischen Zielgruppen zu konzentrieren, oder maßgeschneiderte Erlebnisse für Kunden erstellen, die mehrere Zielgruppen umfassen.</p><p>Diese Vorlage verwendet die Dimensionen Zielgruppenname, Zielgruppenherkunft, Name der ausgestiegenen Zielgruppe und Ursprung der ausgestiegenen Zielgruppe.</p><p>Weitere Informationen finden Sie unter [ von Experience Platform-Zielgruppen in Customer Journey Analytics](/help/connections/audience-analysis/analyze-audiences.md).</p> |
 | [!UICONTROL **Erstmalige vs. wiederkehrende Besuchende**] | Zeigen Sie einen Vergleich zwischen erstmaligen und wiederkehrenden Besuchenden an. <p>**Dies kann Ihnen helfen**, die Effektivität Ihrer Site bei der Kundenbindung oder die Rate, mit der Sie neue Kundschaft gewinnen, besser zu verstehen.</p><p>**Basierend auf Ihren Erkenntnissen können Sie** eine Reihe von Schritten ausführen, z. B. erstmaligen Besuchenden Anreize für zukünftige Käufe anbieten, um sie zur Rückkehr zu bewegen.</p><!-- This template uses the --> |
 | **Personen-ID** | Zeigen Sie das individuelle Benutzerverhalten über verschiedene Kanäle hinweg an.<p>**Dies kann Ihnen helfen**, die gesamte Customer Journey und alle Interaktionen Touchpoint-übergreifend besser zu verstehen.</p><p>**Basierend auf Ihren Erkenntnissen können Sie** eine Reihe von Schritten ausführen, z. B. die Marketing-Maßnahmen genauer auf Benutzervorlieben ausrichten.</p><!-- This template uses the --> |
 | **Geo-Länder** | Zeigen Sie das Land an, aus dem die Personen stammen, die Ihre Site besuchen.<p>**Dies kann Ihnen helfen**, besser zu verstehen, aus welchen Ländern die meisten Personen stammen, die Ihre Site besuchen.</p><p>**Basierend auf Ihren Erkenntnissen können Sie** eine Reihe von Schritten ausführen, z. B. Daten nutzen, um sich auf Marketing-Maßnahmen in diesen Ländern zu konzentrieren, oder sicherstellen, dass Ihr Site-Erlebnis in Ländern mit unterschiedlichen Hauptsprachen optimal ist.</p><p>Diese Vorlage verwendet die Dimension „Länder“. </p> |
