@@ -4,9 +4,7 @@ description: Erfahren Sie, wie Sie die Zielgruppenanalyse konfigurieren
 solution: Customer Journey Analytics
 feature: Audiences
 role: Admin
-hide: true
-hidefromtoc: true
-source-git-commit: d780233ca6c8988637881a4f65ed16169bb0385b
+source-git-commit: e59bb52d5e9d79ba72036d5a00ed8abc69dcf735
 workflow-type: tm+mt
 source-wordcount: '1355'
 ht-degree: 12%
@@ -87,7 +85,7 @@ So erstellen Sie eine Zielgruppenanalysekonfiguration:
    | Feld | Beschreibung |
    |---------|----------|
    | **[!UICONTROL Zusammenführungsrichtlinie]** | Wählen Sie die Zusammenführungsrichtlinie aus, die dem Profildatensatz entspricht, den Sie für die Zielgruppenanalyse verwenden möchten. <p>Zusammenführungsrichtlinien bestimmen, wie Adobe Experience Platform Profildaten aus mehreren Datensätzen zu einheitlichen Kundenprofilen kombiniert, die für die Erstellung von Zielgruppen verwendet werden. Die ausgewählte Zusammenführungsrichtlinie wirkt sich darauf aus, welche Profilattribute in Ihren Zielgruppen enthalten sind. Jeden Tag wird in Experience Platform ein Schnappschuss dieser Daten generiert. Dieser Snapshot bietet eine statische Ansicht der Daten zu einem bestimmten Zeitpunkt und enthält keine Ereignisdaten.</p><p>Wählen Sie die **[!UICONTROL Standardzeitbasierte]** Zusammenführungsrichtlinie aus, wenn Sie mehrere Zusammenführungsrichtlinien sehen und sich nicht sicher sind, welche ausgewählt werden soll. Sie können auch Ihr Daten-Team konsultieren, um besser zu verstehen, welche Zielgruppen mit den einzelnen Zusammenführungsrichtlinien verknüpft sind.</p> |
-   | **[!UICONTROL Profildatensatz]** | Der Profildatensatz, der mit der ausgewählten Zusammenführungsrichtlinie verknüpft ist. Dieser Profildatensatz enthält die Experience Platform-Zielgruppendaten, die Sie analysieren möchten. Dieser Profildatensatz wird der ausgewählten Verbindung hinzugefügt.<p>Nachdem Sie eine Zusammenführungsrichtlinie ausgewählt haben, wird der Export des Profilschnappschusses angezeigt. Beispiel: `Profile-Snapshot-Export-abbc7093-80f4-4b49-b96e-e743397d763f`.</p><p>Weitere Informationen finden Sie unter [Profilattributdatensätze](https://experienceleague.adobe.com/de/docs/experience-platform/dashboards/query#profile-attribute-datasets) im Handbuch zu Experience Platform-Dashboards.</p> |
+   | **[!UICONTROL Profildatensatz]** | Der Profildatensatz, der mit der ausgewählten Zusammenführungsrichtlinie verknüpft ist. Dieser Profildatensatz enthält die Experience Platform-Zielgruppendaten, die Sie analysieren möchten. Dieser Profildatensatz wird der ausgewählten Verbindung hinzugefügt.<p>Nachdem Sie eine Zusammenführungsrichtlinie ausgewählt haben, wird der Export des Profilschnappschusses angezeigt. Beispiel: `Profile-Snapshot-Export-abbc7093-80f4-4b49-b96e-e743397d763f`.</p><p>Weitere Informationen finden Sie unter [Profilattributdatensätze](https://experienceleague.adobe.com/en/docs/experience-platform/dashboards/query#profile-attribute-datasets) im Handbuch zu Experience Platform-Dashboards.</p> |
 
 1. Klicken Sie **[!UICONTROL Abschnitt]** Verbindung“ auf **[!UICONTROL Verbindung auswählen]**.
 
@@ -103,7 +101,7 @@ So erstellen Sie eine Zielgruppenanalysekonfiguration:
    | **[!UICONTROL Primären Identity-Namespace verwenden]** | Diese Option wird angezeigt, wenn Sie **[!UICONTROL Identitätszuordnung]** für die Personen-ID auswählen. <p>Aktivieren Sie diese Option, wenn Customer Journey Analytics die Identität in der Identitätszuordnung finden soll, die mit dem Attribut primary=true markiert ist, und diese Identität dann als Personen-ID für diese Zeile verwenden soll. Diese Identität ist der Primärschlüssel, der in Experience Platform für die Partitionierung verwendet wird. Diese Identität ist auch der primäre Kandidat für die Verwendung als Personen-ID für Customer Journey Analytics (je nachdem, wie der Datensatz in einer Customer Journey Analytics-Verbindung konfiguriert ist).</p> |
    | **[!UICONTROL Identity-Namespace]** | Diese Option wird angezeigt, wenn Sie **[!UICONTROL Identitätszuordnung]** für die Personen-ID auswählen. Diese Option ist deaktiviert, wenn Sie den Primären ID-Namespace verwenden. <p>Identity-Namespaces sind eine Komponente von [Experience Platform Identity Service](https://experienceleague.adobe.com/de/docs/experience-platform/identity/features/namespaces). Namespaces dienen als Indikatoren für den Kontext, auf den sich eine Identität bezieht. Wenn Sie einen Namespace angeben, durchsucht Customer Journey Analytics die Identitätszuordnung jeder Zeile nach diesem Namespace-Schlüssel und verwendet die Identität unter diesem Namespace als Personen-ID für diese Zeile. Da Customer Journey Analytics nicht alle Zeilen vollständig durchsuchen kann, um zu bestimmen, welche Namespaces vorhanden sind, werden alle möglichen Namespaces im Dropdown-Menü angezeigt. Sie müssen wissen, welche Namespaces in den Daten angegeben sind. Diese Namespaces werden nicht automatisch erkannt.</p> |
 
-   <!-- Add this when B2B releases for AuA **[!UICONTROL Account ID]** [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}|  (only displayed for account-based connections) The Account ID that is used to support account-based reporting for the dataset. -->
+   <!-- Add this when B2B releases for AuA **[!UICONTROL Account ID]** [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}|  (only displayed for account-based connections) The Account ID that is used to support account-based reporting for the dataset. -->
 
 1. Klicken **[!UICONTROL Abschnitt „Datenansichten]** auf **[!UICONTROL Datenansichten auswählen]**.
 
@@ -118,7 +116,7 @@ So erstellen Sie eine Zielgruppenanalysekonfiguration:
    >Da der Profildatensatz einmal täglich aktualisiert wird, sind Zielgruppen in Customer Journey Analytics-Datenansichten am Tag nach der Erstellung der Zielgruppenanalysekonfiguration verfügbar.
 
 
-1. Überprüfen Sie nach 24 [&#x200B; mithilfe von Zielgruppendimensionen in der &#x200B;](#view-audience-dimensions-in-the-data-view), ob die Zielgruppendimensionen in den von Ihnen ausgewählten Datenansichten verfügbar sind.
+1. Überprüfen Sie nach 24 [ mithilfe von Zielgruppendimensionen in der ](#view-audience-dimensions-in-the-data-view), ob die Zielgruppendimensionen in den von Ihnen ausgewählten Datenansichten verfügbar sind.
 
 ## Anzeigen von Zielgruppendimensionen in der Datenansicht
 
@@ -146,6 +144,6 @@ So zeigen Sie die Dimensionen der Zielgruppenanalyse in der Datenansicht an:
 
 1. Verwenden Sie die Zielgruppenanalysedimensionen in Analysis Workspace.
 
-   Benutzende, die Zugriff auf die Verwendung der Datenansicht in Analysis Workspace haben, können jetzt die neuen Dimensionen sehen und sie in ihren Analysen verwenden. Informationen zur Verwendung der Zielgruppenanalysedimensionen in Analysis Workspace finden Sie unter [&#x200B; von Experience Platform-Zielgruppen in Customer Journey Analytics](/help/connections/audience-analysis/analyze-audiences.md).
+   Benutzende, die Zugriff auf die Verwendung der Datenansicht in Analysis Workspace haben, können jetzt die neuen Dimensionen sehen und sie in ihren Analysen verwenden. Informationen zur Verwendung der Zielgruppenanalysedimensionen in Analysis Workspace finden Sie unter [ von Experience Platform-Zielgruppen in Customer Journey Analytics](/help/connections/audience-analysis/analyze-audiences.md).
 
 
