@@ -6,9 +6,9 @@ solution: Customer Journey Analytics
 feature: Adobe Analytics Integration,Administration
 hide: true
 hidefromtoc: true
-source-git-commit: 3c34bd50c12b370f5e9f95ac5d6357de4f63e5f6
+source-git-commit: 925da525b61c2a24156159f4029303c297e0af10
 workflow-type: tm+mt
-source-wordcount: '745'
+source-wordcount: '1162'
 ht-degree: 1%
 
 ---
@@ -46,17 +46,46 @@ Um die Funktion *Analytics-Daten von mehreren IMS-Organisationen zuordnen* zu ko
    | --- |
    | *Name des Unternehmens*, um der ausgewählten Ziel-Organisation Zugriff auf die folgenden IMS-Organisationen (Liste der Quell-IMS-Organisationen) zu gewähren, müssen wir sicherstellen, dass ein Administrator für jede IMS-Organisation seine Genehmigung einreicht, um den Zugriff auf ihre Daten zu ermöglichen. Dadurch wird sichergestellt, dass die Datenzugriffsberechtigungen der betroffenen IMS-Organisation eingehalten wurden. Um sicherzustellen, dass wir eine ordnungsgemäße Genehmigung haben, bitten wir einen registrierten Adobe-Administrator für jede Admin-Organisation, auf diese E-Mail mit ihrem Namen und ihrer IMS-Organisation zu antworten, die sie repräsentieren, und zu sagen: „Ich genehmige“, um anzugeben, dass sie ihre Genehmigung erteilen, die Daten dieser IMS-Organisation in der Ziel-Organisation ([) ]. Beachten Sie, dass dieser Administrator ein Administrator sein muss, der im Adobe-System als Administrator für diese IMS-Organisation registriert ist. |
 
-1. Senden Sie eine E-Mail als Ziel-IMS-Organisationsadministrator an den Adobe-Account-Manager, der die Zuordnung von Report Suites innerhalb mehrerer Quell-IMS-Organisationen zur Ziel-IMS-Organisation anfordert. Hängen Sie die Genehmigungs-E-Mails an, die Sie von den Administrierenden der Quell-IMS-Organisation erhalten haben.
+1. Senden Sie im Namen des Ziel-IMS-Organisationsadministrators eine E-Mail an den Adobe Account Manager, der die Zuordnung von Report Suites aus mehreren Quell-IMS-Organisationen zur Ziel-IMS-Organisation anfordert. Hängen Sie die Genehmigungs-E-Mails an, die Sie von den Administrierenden der Quell-IMS-Organisation erhalten haben.
 
-Sobald der Account Manager die E-Mail mit der Anfrage erhält, Analytics-Daten von mehreren Organisationen zuzuordnen, wird die Anfrage in Adobe geprüft. Der Account Manager kontaktiert Sie für weitere Fragen, optionale Schulungen und weitere Informationen.
+Sobald der Adobe-Kundenbetreuer die E-Mail mit der Anforderung erhält, Analytics-Daten von mehreren Organisationen zuzuordnen, wird die Anfrage in Adobe geprüft. Der Adobe-Kundenbetreuer kontaktiert Sie für weitere Fragen, optionale Schulungen und weitere Informationen.
 
-Nach der Genehmigung wird die angeforderte Zuordnung erstellt und Sie werden benachrichtigt. Der Name der IMS-Quellorganisation wird dem Namen der Report Suite in der [Liste der Analytics Report Suites](https://experienceleague.adobe.com/de/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics#select-data) in Experience Platform angehängt.
+Nach der Genehmigung wird die angeforderte Zuordnung erstellt und Sie werden benachrichtigt. Der Name der IMS-Quellorganisation wird dem Namen der Report Suite in der [Liste der Analytics Report Suites](https://experienceleague.adobe.com/en/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics#select-data) in Experience Platform angehängt.
 
-## Einschränkungen und Risiken
+
+## Einschränkungen
 
 Die folgenden Einschränkungen gelten für die Funktion *Analytics-Daten von mehreren IMS-Organisationen zuordnen*:
 
 * Sie können eine Report Suite nur einmal organisationsübergreifend verbinden.
 * Sie müssen alle Verbindungen für eine IMS-Organisation, die als Ziel-IMS-Organisation definiert ist, in einer Zuordnung löschen, bevor Sie die Löschung der Zuordnung anfordern können.
 * ECIDs sind nicht zwischen zugeordneten Quell-IMS-Organisationen kompatibel und nicht mit der Ziel-IMS-Organisation kompatibel.
-* Ein Benutzer mit ausreichenden Berechtigungen zum Konfigurieren des Analytics-Quell-Connectors in der Ziel-IMS-Organisation kann Analytics-Daten aus einer beliebigen zugeordneten Quell-IMS-Organisation aufnehmen. Für diese Person werden für keine der Quell-IMS-Organisationen Berechtigungen überprüft.
+
+
+## Zu beachten
+
+Sie sollten die folgenden Themen berücksichtigen, bevor Sie die Funktion *Analytics-Daten von mehreren IMS-Organisationen zuordnen* anfordern:
+
+### Profile
+
+Sobald die Funktion *Analytics-Daten von mehreren IMS* Organisationen zuordnen“ genehmigt ist, können Sie Daten zu Experience Platform für eine oder mehrere Report Suites in der Ziel-IMS-Organisation hinzufügen. Dies erfolgt über die Konfiguration des [Analytics-Quell-Connectors](https://experienceleague.adobe.com/de/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics). Zieldatensätze werden dann in Experience Platform erstellt. Im Rahmen dieser Konfiguration und dieses Prozesses haben Sie die Möglichkeit, Profildaten aus einer oder mehreren Report Suites an den Profil-Service zu senden.
+
+Schätzen Sie die Gesamtzahl der Profile, die das Ergebnis der Konfiguration und des Prozesses sind, wie oben beschrieben. Stellen Sie sicher, dass die Gesamtzahl innerhalb der Anzahl der Profile liegt, auf die Sie für die Zielorganisation vertraglich Anspruch haben. Wenden Sie [Filterregeln und -bedingungen](https://experienceleague.adobe.com/en/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics#filtering-for-profile){target="_blank"} an, um Daten selektiv in den Profil-Service aufzunehmen oder davon auszuschließen. Oder deaktivieren Sie die Option zum Senden von Profildaten an den Profil-Service für relevante Report Suites.
+
+
+### Zuordnung
+
+Sobald die Funktion *Analytics-Daten von mehreren IMS* Organisationen zuordnen“ genehmigt ist, können Sie Daten zu Experience Platform für eine oder mehrere Report Suites in der Ziel-IMS-Organisation hinzufügen. Dies erfolgt über die Konfiguration des [Analytics-Quell-Connectors](https://experienceleague.adobe.com/de/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics). Zieldatensätze für die Report Suites, die Sie im Analytics-Quell-Connector konfiguriert haben, werden dann in Experience Platform erstellt. Im Rahmen dieser Konfiguration und dieses Prozesses haben Sie die Möglichkeit, Profildaten aus einer oder mehreren Report Suites an den Profil-Service zu senden.
+
+Sie können sowohl [ (feldbasierte](/help/stitching/fbs.md) als auch [Diagrammbasierte](/help/stitching/gbs.md) Zuordnung für die Zieldatensätze verwenden. Wenn Sie das diagrammbasierte Stitching für einen oder mehrere dieser Zieldatensätze verwenden, stellen Sie sicher, dass Sie die vertraglichen Berechtigungen für die Anzahl der Profile einhalten, wie im Abschnitt [Profile](#profiles) beschrieben.
+
+Wenn Sie nicht für das Echtzeit-Kundenprofil lizenziert sind, aber dennoch diagrammbasiertes Stitching für einen oder mehrere Zieldatensätze verwenden möchten, stellen Sie sicher, dass Sie nur den [Identity Service](/help/stitching/faq.md#enable-a-dataset-for-the-identity-service) für diese Zieldatensätze aktivieren.
+
+
+### Berechtigungen
+
+Ein Benutzer mit ausreichenden Berechtigungen zum Konfigurieren des Analytics-Quell-Connectors in der Ziel-IMS-Organisation kann Analytics-Daten aus einer beliebigen zugeordneten Quell-IMS-Organisation aufnehmen. Für diese Person werden für keine der Quell-IMS-Organisationen Berechtigungen überprüft.
+
+### Datenbericht
+
+Die Funktion *Analytics-Daten aus mehreren IMS* Organisationen zuordnen“ ist nur ein erster Schritt, um sicherzustellen, dass Sie die Daten als Teil einer Customer Journey Analytics [Verbindung](/help/connections/overview.md), eines oder mehrerer [Datenansichten](/help/data-views/data-views.md) und [Workspace-Projekte](/help/analysis-workspace/home.md). Sie müssen die Daten, die Ihnen jetzt in einer IMS-Organisation zur Verfügung stehen, sorgfältig prüfen. Erwägen Sie auch Funktionen wie Datenvorbereitung, abgeleitete Felder, zusätzliche Suchtabellen und mehr, bevor Sie in der Lage sind, ordnungsgemäß über diese Daten zu berichten.
