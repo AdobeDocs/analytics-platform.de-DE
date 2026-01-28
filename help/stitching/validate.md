@@ -55,7 +55,7 @@ Darüber hinaus müssen Sie zwei Zuordnungsmetriken hinzufügen, die auf dem Vor
    Im folgenden Beispiel dient `personalEmail.address` als Identität und wird verwendet, um die Metrik **[!UICONTROL _email set]** zu erstellen.
    ![E-Mail-Metrik festlegen](assets/emailset-metric.png)
 
-1. Verwenden Sie `stitchedID.namespae.code` Feld, um eine Dimension **[!UICONTROL Zugeordneter E-Mail-Namespace]** zu erstellen. Stellen Sie sicher[ dass Sie die Komponenteneinstellungen „Werte einschließen/ausschließen](/help/data-views/component-settings/include-exclude-values.md) angeben, sodass Sie nur die Werte des Namespace berücksichtigen, auf den Sie Datenzeilen erhöhen möchten.
+1. Verwenden Sie `stitchedID.namespae.code` Feld, um eine Dimension **[!UICONTROL Zugeordneter E-Mail-Namespace]** zu erstellen. Stellen Sie sicher[&#x200B; dass Sie die Komponenteneinstellungen „Werte einschließen/ausschließen](/help/data-views/component-settings/include-exclude-values.md) angeben, sodass Sie nur die Werte des Namespace berücksichtigen, auf den Sie Datenzeilen erhöhen möchten.
    1. Wählen Sie **[!UICONTROL Ein-/Ausschlusswerte festlegen]** aus.
    1. Wählen Sie **[!UICONTROL Wenn alle Kriterien erfüllt sind]** als **[!UICONTROL Übereinstimmung]** aus.
    1. Geben Sie **[!UICONTROL Gleich]** `email` als **[!UICONTROL Kriterien]** an, um Ereignisse auszuwählen, die in den E-Mail-Namespace erhöht wurden.
@@ -80,7 +80,7 @@ Wenn Sie eine Verbindung erstellen, müssen Sie definieren, welches Feld oder we
 1. Erstellen Sie eine berechnete Metrik **[!UICONTROL Nicht authentifizierte Ereignisse insgesamt]**. Definieren Sie die Regel im Regel-Builder wie folgt:
    ![Nicht authentifizierte Ereignisse insgesamt](assets/calcmetric-unauthenticatedeventsovertotal.png)
 
-1. Erstellen Sie eine berechnete Metrik **[!UICONTROL E-Mail-Authentifizierungsrate]** basierend auf der zuvor definierten Metrik **[!UICONTROL _]**set). Definieren Sie die Regel im Regel-Builder wie folgt:
+1. Erstellen Sie eine berechnete Metrik **[!UICONTROL E-Mail-Authentifizierungsrate]** basierend auf der zuvor definierten Metrik **[!UICONTROL _]**&#x200B;set). Definieren Sie die Regel im Regel-Builder wie folgt:
    ![E-Mail-Authentifizierungsrate](assets/calcmetric-emailauthenticationrate.png)
 
 1. Verwenden Sie die berechnete Metrik **[!UICONTROL Nicht authentifizierte Ereignisse im]**) zusammen mit der berechneten Metrik **[!UICONTROL E-Mail]** Authentifizierungsrate), um eine [Ringdiagramm](/help/analysis-workspace/visualizations/donut.md)-Visualisierung zu erstellen. Die Visualisierung zeigt die Anzahl der Ereignisse im Datensatz, die nicht authentifiziert und authentifiziert sind.
