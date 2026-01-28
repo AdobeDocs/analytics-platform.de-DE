@@ -128,7 +128,7 @@ Spaltensummen sind in den folgenden Szenarien möglicherweise nicht exakt:
 
 ### Verwenden von Zielgruppensegmenten
 
-Weitere Informationen finden [ unter ](/help/components/segments/seg-overview.md)Segmentierung - Übersicht“.
+Weitere Informationen finden [&#x200B; unter &#x200B;](/help/components/segments/seg-overview.md)Segmentierung - Übersicht“.
 
 ## Sortieren von Tabellen
 
@@ -138,7 +138,7 @@ Standardmäßig werden Dimensionen in aufsteigender Reihenfolge und Metriken in 
 
 ### Sortieren von Tabellen nach einer Spalte
 
-Wenn Sie Daten für eine einzelne Spalte sortieren, wie in diesem Abschnitt beschrieben, werden alle [erweiterten ](#sort-tables-by-multiple-columns-advanced-sorting)) entfernt, die auf die Tabelle angewendet werden.
+Wenn Sie Daten für eine einzelne Spalte sortieren, wie in diesem Abschnitt beschrieben, werden alle [erweiterten &#x200B;](#sort-tables-by-multiple-columns-advanced-sorting)) entfernt, die auf die Tabelle angewendet werden.
 
 So sortieren Sie Daten in Tabellen nach einer Spalte:
 
@@ -170,7 +170,7 @@ So sortieren Sie Daten in Tabellen nach mehreren Spalten:
 
    * Fügen Sie Spalten hinzu, die noch nicht sortiert werden, indem Sie die Schaltfläche **[!UICONTROL Sortierspalte hinzufügen]** auswählen.
 
-   * Entfernen Sie Spalten, die Sie nicht mehr sortieren möchten, indem Sie das Symbol **Entfernen** (![) ](/help/assets/icons/Close.svg).
+   * Entfernen Sie Spalten, die Sie nicht mehr sortieren möchten, indem Sie das Symbol **Entfernen** (![) &#x200B;](/help/assets/icons/Close.svg).
 
    * Ziehen Sie Spalten in der Liste nach oben oder unten, um die Sortierpriorität anzupassen.
 
