@@ -3,7 +3,7 @@ title: Mehrere Dimensionen in eine Freiformtabelle einschließen
 description: Erfahren Sie, wie Sie mehrere Dimensionen in eine Freiformtabelle einschließen
 feature: Visualizations
 role: User
-source-git-commit: e51dced9ac7886ae8d087ca3b2fc6ac2755c3ac6
+source-git-commit: 696bd0db44949162307d8ce7d2debed351a76cd6
 workflow-type: tm+mt
 source-wordcount: '829'
 ht-degree: 2%
@@ -101,7 +101,7 @@ Darüber hinaus können Sie innerhalb einer Aufschlüsselung mehrere Dimensionss
 
 <!-- Add a screenshot of a breakdown with multiple cllumns, then add this sentence: "For example, you can break down the first dimension item in this table by a new concatenated dimension item that shows..." -->
 
-Weitere Informationen zum Hinzufügen einer Aufschlüsselung finden Sie unter [Dimensionen &#x200B;](/help/components/dimensions/t-breakdown-fa.md).
+Weitere Informationen zum Hinzufügen einer Aufschlüsselung finden Sie unter [Dimensionen ](/help/components/dimensions/t-breakdown-fa.md).
 
 ## Erstellen eines Segments basierend auf einem Dimensionselement, das sich über mehrere Dimensionsspalten erstreckt
 
@@ -116,3 +116,4 @@ Die folgenden Dimensionskombinationen werden nicht unterstützt und Analysis Wor
 * Mehrere Dimensionen, die aus Feldern stammen, die auf verschiedene [Arrays von Objekten](/help/use-cases/object-arrays.md) verweisen, die zusammen in derselben Freiformtabelle verwendet werden.
 
   Mehrere Dimensionen sind in derselben Freiformtabelle zulässig, wenn sie auf dasselbe Array von Objekten verweisen.
+
