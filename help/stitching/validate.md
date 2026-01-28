@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: b9b73926-6502-4a48-ba73-c784f80950d3
-source-git-commit: 359fe2a718ccef816377083aceb2652b4a905072
+source-git-commit: 99b434e62d859c96bfda53731f3f8a0750850501
 workflow-type: tm+mt
-source-wordcount: '1181'
+source-wordcount: '1191'
 ht-degree: 0%
 
 ---
@@ -31,6 +31,12 @@ Während diese Analysemethoden sowohl für feldbasiertes Stitching als auch für
 >Die (Validierung) Zuordnung eines oder mehrerer Datensätze trägt letztendlich zu besseren Analysen und Erkenntnissen bei. In diesem Artikel wird jedoch nicht der Gesamtwert einer Customer Journey Analytics-Konfiguration erläutert, bei der alle Datensätze in Experience Platform auf denselben Identity-Namespace ausgerichtet sind. Und dass all diese Datensätze gut zusammengeführt werden, um Analysen über eine gesamte Kunden-Journey durchzuführen.
 
 
+>[!BEGINSHADEBOX]
+
+Siehe ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Stitching-Aktivierung und -Validierung](https://video.tv.adobe.com/v/3478120?quality=12&learn=on){target="_blank"} für ein Demovideo.
+
+>[!ENDSHADEBOX]
+
 ## Voraussetzungen für die Datenansicht
 
 Für den Messplan für die Stitching-Validierung müssen Sie sicherstellen, dass alle erforderlichen Dimensionen und Metriken aus Ihrem zusammengefügten Datensatz in einer Datenansicht definiert sind. Sie müssen sicherstellen, dass sowohl `stitchedID.id` als auch `stitchedId.namespace.code` Felder als Dimensionen hinzugefügt werden. Während der zugeordnete Datensatz eine exakte Kopie des ursprünglichen Datensatzes ist, fügt der Zusammenfügungsprozess dem Datensatz die beiden folgenden neuen Spalten hinzu:
@@ -49,7 +55,7 @@ Darüber hinaus müssen Sie zwei Zuordnungsmetriken hinzufügen, die auf dem Vor
    Im folgenden Beispiel dient `personalEmail.address` als Identität und wird verwendet, um die Metrik **[!UICONTROL _email set]** zu erstellen.
    ![E-Mail-Metrik festlegen](assets/emailset-metric.png)
 
-1. Verwenden Sie `stitchedID.namespae.code` Feld, um eine Dimension **[!UICONTROL Zugeordneter E-Mail-Namespace]** zu erstellen. Stellen Sie sicher[&#x200B; dass Sie die Komponenteneinstellungen „Werte einschließen/ausschließen](/help/data-views/component-settings/include-exclude-values.md) angeben, sodass Sie nur die Werte des Namespace berücksichtigen, auf den Sie Datenzeilen erhöhen möchten.
+1. Verwenden Sie `stitchedID.namespae.code` Feld, um eine Dimension **[!UICONTROL Zugeordneter E-Mail-Namespace]** zu erstellen. Stellen Sie sicher[ dass Sie die Komponenteneinstellungen „Werte einschließen/ausschließen](/help/data-views/component-settings/include-exclude-values.md) angeben, sodass Sie nur die Werte des Namespace berücksichtigen, auf den Sie Datenzeilen erhöhen möchten.
    1. Wählen Sie **[!UICONTROL Ein-/Ausschlusswerte festlegen]** aus.
    1. Wählen Sie **[!UICONTROL Wenn alle Kriterien erfüllt sind]** als **[!UICONTROL Übereinstimmung]** aus.
    1. Geben Sie **[!UICONTROL Gleich]** `email` als **[!UICONTROL Kriterien]** an, um Ereignisse auszuwählen, die in den E-Mail-Namespace erhöht wurden.
@@ -74,7 +80,7 @@ Wenn Sie eine Verbindung erstellen, müssen Sie definieren, welches Feld oder we
 1. Erstellen Sie eine berechnete Metrik **[!UICONTROL Nicht authentifizierte Ereignisse insgesamt]**. Definieren Sie die Regel im Regel-Builder wie folgt:
    ![Nicht authentifizierte Ereignisse insgesamt](assets/calcmetric-unauthenticatedeventsovertotal.png)
 
-1. Erstellen Sie eine berechnete Metrik **[!UICONTROL E-Mail-Authentifizierungsrate]** basierend auf der zuvor definierten Metrik **[!UICONTROL _]**&#x200B;set). Definieren Sie die Regel im Regel-Builder wie folgt:
+1. Erstellen Sie eine berechnete Metrik **[!UICONTROL E-Mail-Authentifizierungsrate]** basierend auf der zuvor definierten Metrik **[!UICONTROL _]**set). Definieren Sie die Regel im Regel-Builder wie folgt:
    ![E-Mail-Authentifizierungsrate](assets/calcmetric-emailauthenticationrate.png)
 
 1. Verwenden Sie die berechnete Metrik **[!UICONTROL Nicht authentifizierte Ereignisse im]**) zusammen mit der berechneten Metrik **[!UICONTROL E-Mail]** Authentifizierungsrate), um eine [Ringdiagramm](/help/analysis-workspace/visualizations/donut.md)-Visualisierung zu erstellen. Die Visualisierung zeigt die Anzahl der Ereignisse im Datensatz, die nicht authentifiziert und authentifiziert sind.
