@@ -4,10 +4,10 @@ title: Filtern und Sortieren
 feature: Visualizations
 exl-id: 3af637ec-bb6c-49b7-a7b3-e1d310e71101
 role: User
-source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
+source-git-commit: e51dced9ac7886ae8d087ca3b2fc6ac2755c3ac6
 workflow-type: tm+mt
-source-wordcount: '1134'
-ht-degree: 65%
+source-wordcount: '1577'
+ht-degree: 45%
 
 ---
 
@@ -17,7 +17,7 @@ Freiformtabellen in Analysis Workspace bilden die Grundlage für die interaktive
 
 <!--The following video covers filter and sort options in Analysis Workspace, in addition to pagination options:
 
->[!VIDEO](https://video.tv.adobe.com/v/327342?captions=ger)-->
+>[!VIDEO](https://video.tv.adobe.com/v/23968)-->
 
 ## Filtern von Tabellen
 
@@ -128,10 +128,86 @@ Spaltensummen sind in den folgenden Szenarien möglicherweise nicht exakt:
 
 ### Verwenden von Zielgruppensegmenten
 
-Weitere Informationen finden [&#x200B; unter &#x200B;](/help/components/segments/seg-overview.md)Segmentierung - Übersicht“.
+Weitere Informationen finden [ unter ](/help/components/segments/seg-overview.md)Segmentierung - Übersicht“.
 
 ## Sortieren von Tabellen
 
-Sie können die Daten einer Freiformtabelle nach jeder Spalte in Analysis Workspace sortieren, die entweder eine Dimension oder eine Metrik ist. Ein Pfeil gibt an, wie die Daten sortiert werden (**↓** für absteigend oder **↑** für aufsteigend).
+In Analysis Workspace können Sie die Daten einer Freiformtabelle nach beliebigen Spalten sortieren, unabhängig davon, ob es sich um Dimensionen oder Metriken handelt. Sie können auch nach mehreren Spalten gleichzeitig sortieren.
 
-![Sortieren](assets/sorting.gif)
+Standardmäßig werden Dimensionen in aufsteigender Reihenfolge und Metriken in absteigender Reihenfolge sortiert.
+
+### Sortieren von Tabellen nach einer Spalte
+
+Wenn Sie Daten für eine einzelne Spalte sortieren, wie in diesem Abschnitt beschrieben, werden alle [erweiterten ](#sort-tables-by-multiple-columns-advanced-sorting)) entfernt, die auf die Tabelle angewendet werden.
+
+So sortieren Sie Daten in Tabellen nach einer Spalte:
+
+1. Bewegen Sie den Mauszeiger über die Kopfzeile der Spalte, die Sie sortieren möchten, und wählen Sie dann das **Sortieren**-Symbol ![Sortieren](/help/assets/icons/SortOrderDown.svg) aus, wenn es angezeigt wird.
+
+   ![Dropdown-Menü „Sortieren“](assets/sort-dropdown-menu.png)
+
+1. Wählen Sie **[!UICONTROL Aufsteigend]** oder **[!UICONTROL Absteigend]**.
+
+   Das Sortiersymbol bleibt sichtbar, wenn die Sortierung auf die Spalte angewendet wird. Ein Pfeil gibt an, wie die Daten sortiert werden (![Sortieren](/help/assets/icons/SortOrderUp.svg) für aufsteigend oder ![Sortieren](/help/assets/icons/SortOrderDown.svg) für absteigend).
+
+### Sortieren von Tabellen nach mehreren Spalten (erweiterte Sortierung)
+
+{{release-limited-testing-section}}
+
+#### Sortierung auf mehrere Spalten anwenden
+
+So sortieren Sie Daten in Tabellen nach mehreren Spalten:
+
+1. Bewegen Sie den Mauszeiger über die Kopfzeile einer Spalte, die Sie sortieren möchten, und wählen Sie dann das **Sortieren**-Symbol ![Sortieren](/help/assets/icons/SortOrderDown.svg) aus, wenn es angezeigt wird.
+
+   ![Dropdown-Menü „Sortieren“](assets/sort-dropdown-menu.png)
+
+1. Wählen Sie **[!UICONTROL Erweiterte Sortierung]** aus.
+
+   ![Dialogfeld „Erweiterte Sortierung“](assets/sort-advanced-dialog.png)
+
+1. Führen Sie im Dialogfeld Erweiterte Sortierung einen der folgenden Schritte aus:
+
+   * Fügen Sie Spalten hinzu, die noch nicht sortiert werden, indem Sie die Schaltfläche **[!UICONTROL Sortierspalte hinzufügen]** auswählen.
+
+   * Entfernen Sie Spalten, die Sie nicht mehr sortieren möchten, indem Sie das Symbol **Entfernen** (![) ](/help/assets/icons/Close.svg).
+
+   * Ziehen Sie Spalten in der Liste nach oben oder unten, um die Sortierpriorität anzupassen.
+
+     Weitere Informationen finden Sie unter [Priorität sortieren](#sort-priority).
+
+   * Ändern Sie den Sortierwert, indem Sie **[!UICONTROL Aufsteigend]** oder **[!UICONTROL Absteigend]** im Dropdown-Menü auswählen.
+
+   * Wählen Sie eine andere Spalte aus, indem Sie auf das Dropdown-Menü Spaltenname klicken.
+
+1. Wählen Sie **[!UICONTROL Anwenden]** aus.
+
+Das Symbol Sortierung bleibt sichtbar, wenn die Sortierung auf eine Spalte angewendet wird. Ein Pfeil gibt an, wie die Daten sortiert werden (![Sortieren](/help/assets/icons/SortOrderUp.svg) für aufsteigend oder ![Sortieren](/help/assets/icons/SortOrderDown.svg) für absteigend).
+
+![Beispiel für Mehrfachsortierung](assets/dimensions-multiple-sort.png)
+
+#### Sortierpriorität
+
+Wenn Sie Daten für mehrere Spalten sortieren, werden die Daten nach der Priorität sortiert, die Sie jeder Spalte zuweisen. Die Prioritätsnummerierung wird neben dem Sortiersymbol (![-Symbol für Sortierpriorität](assets/sort-priority-icon.png) angezeigt.
+
+Die Spalte mit der primären Priorität bestimmt die Hauptreihenfolge; die Spalte mit der sekundären Priorität bestimmt die Reihenfolge, wenn Zeilen in der primären Spalte denselben Wert haben; die Spalte mit der tertiären Priorität bestimmt die Reihenfolge, wenn Zeilen in der primären und sekundären Spalte denselben Wert haben; und so weiter.
+
+Betrachten Sie beispielsweise eine Tabelle mit den folgenden Spalten:
+
+* Tag des Monats (Dimension)
+
+* Stunde des Tages (Dimension)
+
+* Ereignisse (Metrik)
+
+Sie können jeder Spalte wie folgt eine Sortierpriorität zuweisen:
+
+| Name der Spalte (Komponente) | Typ der Komponente | Sortierpriorität |
+|---------|----------|---------|
+| Tag des Monats | Dimension | 1 |
+| Stunde des Tages | Dimension | 2 |
+| Ereignisse | Metrik | 3 |
+
+Indem Sie jeder Spalte eine Sortierpriorität zuweisen, können Sie genau steuern, wie die Daten in der Tabelle angezeigt werden. In diesem Beispiel werden die Informationen zunächst nach Tag des Monats, dann nach Tageszeit und schließlich nach Ereignissen sortiert.
+
+![Beispiel für Mehrfachsortierung](assets/dimensions-multiple-sort.png)
