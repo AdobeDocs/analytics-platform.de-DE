@@ -9,10 +9,10 @@ index: true
 user-guide-title: Handbuch zu Customer Journey Analytics
 user-guide-description: Hier erhalten Sie Informationen zu Adobe Customer Journey Analytics und Erläuterungen zur Nutzung von Analysis Workspace mit Daten aus Experience Platform.
 breadcrumb-title: Handbuch zu Customer Journey Analytics
-source-git-commit: d117ba255151f730e0b5e4958ee56f5ffc88ade9
+source-git-commit: a8c158e66b66f2110df12fac794b2223f1922b1f
 workflow-type: tm+mt
-source-wordcount: '1321'
-ht-degree: 99%
+source-wordcount: '1363'
+ht-degree: 96%
 
 ---
 
@@ -177,7 +177,7 @@ ht-degree: 99%
       + [Opt-out-Einstellungen](../tools/product-usage/opt-out-settings.md)
 
 + Workspace-Projekte {#cja-workspace}
-   + [Analysis Workspace – Überblick](../analysis-workspace/home.md)
+   + [Analysis Workspace – Überblick](../analysis-workspace/home.md)
    + [Grundlegende Analyse durchführen](../analysis-workspace/perform-basic-analysis.md)
    + [Durchführen einer erweiterten Analyse](../analysis-workspace/perform-adv-analysis.md)
    + Projekte {#build-workspace-project}
@@ -195,7 +195,7 @@ ht-degree: 99%
          + [Hinzufügen oder Verschieben von Projekten](../analysis-workspace/build-workspace-project/workspace-folders/add-projects.md)
       + [Hotkeys](../analysis-workspace/build-workspace-project/fa-shortcut-keys.md)
       + [Farbpaletten](../analysis-workspace/build-workspace-project/color-palettes.md)
-      + [Anzeigen der Dichte](../analysis-workspace/build-workspace-project/view-density.md)
+      + [Verwenden der Dichte](../analysis-workspace/build-workspace-project/view-density.md)
       + [Debugger](../analysis-workspace/build-workspace-project/debugger.md)
    + Vorlagen {#templates}
       + [Verwenden von Vorlagen](../analysis-workspace/templates/use-templates.md)
@@ -248,7 +248,7 @@ ht-degree: 99%
       + [Text](../analysis-workspace/visualizations/text.md)
       + [Baumkarte](../analysis-workspace/visualizations/treemap.md)
       + [Venn](../analysis-workspace/visualizations/venn.md)
-   + Bedienfelder {#panels}
+   + Panels {#panels}
       + [Überblick](../analysis-workspace/c-panels/panels.md)
       + [Leeres Panel](../analysis-workspace/c-panels/blank-panel.md)
       + [Attribution](../analysis-workspace/c-panels/attribution.md)
@@ -401,7 +401,7 @@ ht-degree: 99%
       + [Erstellen von Warnhinweisen](/help/components/c-intelligent-alerts/alert-builder.md)
       + [Verwalten von Warnhinweisen](/help/components/c-intelligent-alerts/alert-manager.md)
       + [Funktionsvergleich](/help/components/c-intelligent-alerts/alerts-feature-comparison.md)
-      + [Anwendungsszenarien](/help/components/c-intelligent-alerts/alerts-use-cases.md)
+      + [Anwendungsfälle](/help/components/c-intelligent-alerts/alerts-use-cases.md)
    + Exporte {#exports}
       + [Konfigurieren von Cloud-Exportkonten](/help/components/exports/cloud-export-accounts.md)
       + [Konfigurieren von Cloud-Exportspeicherorten](/help/components/exports/cloud-export-locations.md)
@@ -463,7 +463,7 @@ ht-degree: 99%
    + [Administratorprotokoll](../privacy/audit-log.md)
    + [Vom Kunden verwaltete Schlüssel](../privacy/cmk.md)
 
-+ Anwendungsszenarien {#cja-usecases}
++ Anwendungsfälle {#cja-usecases}
    + [Anwendungsszenarien für Customer Journey Analytics](../use-cases/cja-usecases.md)
    + Adobe Analytics-Daten {#aa-data}
       + [Verwenden von Marketing-Kanal-Dimensionen](../use-cases/aa-data/marketing-channels.md)
@@ -472,7 +472,7 @@ ht-degree: 99%
       + [Beispiel für ein personenbasiertes B2B-Projekt](../use-cases/b2b/example.md)
       + B2B Edition {#b2b-edition}
          + [Überblick über Anwendungsfälle](/help/use-cases/b2b/b2b-edition/use-cases-overview.md)
-         + [Einrichten](/help/use-cases/b2b/b2b-edition/setup.md)
+         + [Einrichtung](/help/use-cases/b2b/b2b-edition/setup.md)
          + [Optimieren des Konto-Marketings](/help/use-cases/b2b/b2b-edition/optimize-account-marketing.md)
          + [Wachstum wichtiger Konten](/help/use-cases/b2b/b2b-edition/grow-key-accounts.md)
          + [Fördern von Produktwert](/help/use-cases/b2b/b2b-edition/build-product-value.md)
@@ -494,7 +494,24 @@ ht-degree: 99%
       + [Anwendungsfälle von Datenansichten](/help/use-cases/data-views/data-views-usecases.md)
       + [Verwenden von Bindungsdimensionen und Metriken](/help/use-cases/data-views/binding-dimensions-metrics.md)
       + [Verwenden von Zusammenfassungsdaten](/help/use-cases/data-views/summary-data.md)
-      + [Anwendungsfälle für BI-Erweiterungen](/help/use-cases/data-views/bi-extension-usecases.md)
+      + BI-Erweiterung {#bi-extension}
+         + [Anwendungsfälle](/help/use-cases/data-views/bi-extension-usecases.md)
+         + [Verbinden und Auflisten von Datenansichten](/help/use-cases/data-views/bi-extension/connect-and-validate.md)
+         + [Täglicher Trend](/help/use-cases/data-views/bi-extension/daily-trend.md)
+         + [Stündlicher Trend](/help/use-cases/data-views/bi-extension/hourly-trend.md)
+         + [Monatlicher Trend](/help/use-cases/data-views/bi-extension/monthly-trend.md)
+         + [Rangfolge einzelner Dimensionen](/help/use-cases/data-views/bi-extension/single-dimension-ranked.md)
+         + [Rangfolge mehrerer Dimensionen](/help/use-cases/data-views/bi-extension/multiple-dimension-ranked.md)
+         + [Unterschiedliche Dimensionswerte zählen](/help/use-cases/data-views/bi-extension/count-distinct-dimension-values.md)
+         + [Verwenden von Datumsbereichsnamen zum Filtern](/help/use-cases/data-views/bi-extension/use-date-range-names-to-filter.md)
+         + [Segmentnamen zur Segmentierung verwenden](/help/use-cases/data-views/bi-extension/use-segment-names-to-segment.md)
+         + [Segmentieren von Dimensionswerten](/help/use-cases/data-views/bi-extension/use-dimension-values-to-segment.md)
+         + [Sortieren](/help/use-cases/data-views/bi-extension/sort.md)
+         + [Beschränkungen](/help/use-cases/data-views/bi-extension/limits.md)
+         + [Transformationen](/help/use-cases/data-views/bi-extension/transformations.md)
+         + [Visualisierungen](/help/use-cases/data-views/bi-extension/visualizations.md)
+         + [Einschränkungen](/help/use-cases/data-views/bi-extension/caveats.md)
+
    + Abgeleitete Felder {#derived-fields}
       + [Bericht zu LLM- und KI-generiertem Traffic](/help/use-cases/ai-traffic.md)
       + [Bericht zu Zielen](../use-cases/goals-using-derived-fields.md)
