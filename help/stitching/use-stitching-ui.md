@@ -6,9 +6,9 @@ feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: 9a1689d9-c1b7-42fe-9682-499e49843f76
 badgePremium: label="Beta" type="Informative"
-source-git-commit: 3479227eb703583255d40de3d07d071ad2f89950
+source-git-commit: 32997d0fd9801099a75287f63197d3b4c2ba81ef
 workflow-type: tm+mt
-source-wordcount: '894'
+source-wordcount: '938'
 ht-degree: 3%
 
 ---
@@ -136,7 +136,13 @@ Um das Zusammenfügen zu aktivieren, gehen Sie im Abschnitt Ereignisdatensatz de
 
 1. Wählen Sie ein Lookback-Fenster aus **[!UICONTROL Dropdown-Menü]** Lookback-Fenster“. Die verfügbaren Optionen hängen vom Customer Journey Analytics-Paket ab, zu dem Sie berechtigt sind.
 
-Nachdem Sie eine Verbindung gespeichert haben, wird der Zuordnungsprozess für Datensätze, die für das Zuordnen aktiviert sind, gestartet, wenn die Aufnahme von Daten für diese Datensätze beginnt
+Nachdem Sie eine Verbindung gespeichert haben, wird der Zuordnungsprozess für Datensätze, die für das Zuordnen aktiviert sind, gestartet, wenn die Aufnahme von Daten für diese Datensätze beginnt.
+
+>[!CAUTION]
+>
+>Bei Datensätzen, die für das Zusammenfügen in der Verbindungsschnittstelle aktiviert sind, wird der Aufstockungsstatus sofort und fälschlicherweise als ![Status grün](/help/assets/icons/StatusGreen.svg) **[!UICONTROL _x _Aufstockungen abgeschlossen]**für die Anzahl der abgeschlossenen Aufstockungen gemeldet. Verwenden Sie andere Möglichkeiten, um zu überprüfen, ob Daten aus dem zusammengefügten Datensatz aufgestockt werden.
+>
+
 
 ## Einschränkungen
 
