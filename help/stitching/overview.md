@@ -1,11 +1,11 @@
 ---
 title: Überblick über die Zuordnung
-description: Überblick über Zuordnung
+description: Überblick über die Zuordnung
 solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 exl-id: 1c42efac-b3d2-437b-8b0b-9c6fdfed8520
 role: Admin
-source-git-commit: d117ba255151f730e0b5e4958ee56f5ffc88ade9
+source-git-commit: 9ace0679796c3a813b1fbd97c62c20faf64db211
 workflow-type: tm+mt
 source-wordcount: '902'
 ht-degree: 88%
@@ -49,8 +49,8 @@ Sie profitieren von der Cross-Channel-Analyse, wenn Sie einen oder mehrere Ihrer
 
 Die Zuordnung kann auf zwei Arten aktiviert werden:
 
-- [Anfrage zum Aktivieren der Zuordnung](/help/stitching/use-stitching.md). Nach der Genehmigung wird ein doppelter Datensatz für den Datensatz erstellt, für den Sie die Zuordnung angefordert haben. Dieser doppelte Datensatz enthält eine zusätzliche Spalte mit der zusammengefügten Kennung. Sie müssen eine neue Verbindung erstellen oder eine bestehende Verbindung bearbeiten, die den zugeordneten Datensatz enthält, um die zugeordneten Daten in Customer Journey Analytics zu verwenden.
-- [Zuordnung in der Verbindungsschnittstelle aktivieren](/help/stitching/use-stitching-ui.md) [!BADGE Beta]{type=Informative}. Wenn Sie das Zusammenfügen für einen Datensatz in der Verbindungsschnittstelle konfigurieren, erfolgt das Zusammenfügen während der Aufnahme von Daten aus diesem Datensatz in Customer Journey Analytics „im laufenden Betrieb“.
+- [Anfrage zum Aktivieren der Zuordnung](/help/stitching/use-stitching.md) (veraltet). Nach der Genehmigung wird ein doppelter Datensatz für den Datensatz erstellt, für den Sie die Zuordnung angefordert haben. Dieser doppelte Datensatz enthält eine zusätzliche Spalte mit der zusammengefügten Kennung. Sie müssen eine neue Verbindung erstellen oder eine bestehende Verbindung bearbeiten, die den zugeordneten Datensatz enthält, um die zugeordneten Daten in Customer Journey Analytics zu verwenden.
+- [Aktivieren Sie das Zusammenfügen in der Verbindungsschnittstelle](/help/stitching/use-stitching-ui.md). Wenn Sie das Zusammenfügen für einen Datensatz in der Verbindungsschnittstelle konfigurieren, erfolgt das Zusammenfügen während der Aufnahme von Daten aus diesem Datensatz in Customer Journey Analytics „im laufenden Betrieb“.
 
 ## Einschränkungen
 
