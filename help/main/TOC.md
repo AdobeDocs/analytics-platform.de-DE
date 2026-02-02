@@ -9,7 +9,7 @@ index: true
 user-guide-title: Handbuch zu Customer Journey Analytics
 user-guide-description: Hier erhalten Sie Informationen zu Adobe Customer Journey Analytics und Erläuterungen zur Nutzung von Analysis Workspace mit Daten aus Experience Platform.
 breadcrumb-title: Handbuch zu Customer Journey Analytics
-source-git-commit: a8c158e66b66f2110df12fac794b2223f1922b1f
+source-git-commit: 905d32421b4c1d3135a51dfd9898a02e750555d0
 workflow-type: tm+mt
 source-wordcount: '1363'
 ht-degree: 96%
@@ -139,6 +139,11 @@ ht-degree: 96%
    + [Kombinierte Ereignis-Datensätze](../connections/combined-dataset.md)
    + [Standardsuchen](../connections/standard-lookups.md)
    + [B2B-Suchen](../connections/transform-datasets-b2b-lookups.md)
+   + Zielgruppenanalyse {#audience-analysis}
+      + [Überblick](/help/connections/audience-analysis/audience-analysis-overview.md)
+      + [Konfigurieren](/help/connections/audience-analysis/audience-analysis-configure.md)
+      + [Verwalten](/help/connections/audience-analysis/audience-analysis-manage.md)
+      + [Analyse](/help/connections/audience-analysis/analyze-audiences.md)
 + Datenansichten {#cja-dataviews}
    + [Überblick über Datenansichten](../data-views/data-views.md)
    + [Erstellen oder Bearbeiten einer Datenansicht](../data-views/create-dataview.md)
@@ -163,11 +168,6 @@ ht-degree: 96%
    + Freigegebene Metriken und Dimensionen{#shared-metrics-dimensions}
       + [Überblick](/help/data-views/shared-metrics-dimensions/smd-overview.md)
       + [Editor](/help/data-views/shared-metrics-dimensions/shared-component-editor.md)
-   + Zielgruppenanalyse {#audience-analysis}
-      + [Überblick](/help/connections/audience-analysis/audience-analysis-overview.md)
-      + [Konfigurieren](/help/connections/audience-analysis/audience-analysis-configure.md)
-      + [Verwalten](/help/connections/audience-analysis/audience-analysis-manage.md)
-      + [Analyse](/help/connections/audience-analysis/analyze-audiences.md)
 + Tools {#tools}
    + Asset-Übertragung {#asset-transfer}
       + [Übertragen von Assets](../tools/asset-transfer/transfer-assets.md)
@@ -195,7 +195,7 @@ ht-degree: 96%
          + [Hinzufügen oder Verschieben von Projekten](../analysis-workspace/build-workspace-project/workspace-folders/add-projects.md)
       + [Hotkeys](../analysis-workspace/build-workspace-project/fa-shortcut-keys.md)
       + [Farbpaletten](../analysis-workspace/build-workspace-project/color-palettes.md)
-      + [Verwenden der Dichte](../analysis-workspace/build-workspace-project/view-density.md)
+      + [Anzeigen der Dichte](../analysis-workspace/build-workspace-project/view-density.md)
       + [Debugger](../analysis-workspace/build-workspace-project/debugger.md)
    + Vorlagen {#templates}
       + [Verwenden von Vorlagen](../analysis-workspace/templates/use-templates.md)
@@ -248,7 +248,7 @@ ht-degree: 96%
       + [Text](../analysis-workspace/visualizations/text.md)
       + [Baumkarte](../analysis-workspace/visualizations/treemap.md)
       + [Venn](../analysis-workspace/visualizations/venn.md)
-   + Panels {#panels}
+   + Bedienfelder {#panels}
       + [Überblick](../analysis-workspace/c-panels/panels.md)
       + [Leeres Panel](../analysis-workspace/c-panels/blank-panel.md)
       + [Attribution](../analysis-workspace/c-panels/attribution.md)
