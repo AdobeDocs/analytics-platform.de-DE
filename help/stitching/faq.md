@@ -1,14 +1,14 @@
 ---
 title: Häufig gestellte Fragen zum Stitching
-description: Häufig gestellte Fragen zum Zusammenfügen
+description: Erfahren Sie mehr über häufig gestellte Fragen zum Zusammenfügen.
 solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 exl-id: f4115164-7263-40ad-9706-3b98d0bb7905
 role: Admin
-source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
+source-git-commit: a94f3fe6821d96c76b759efa3e7eedc212252c5f
 workflow-type: tm+mt
-source-wordcount: '2069'
-ht-degree: 23%
+source-wordcount: '2149'
+ht-degree: 22%
 
 ---
 
@@ -22,9 +22,9 @@ Im Folgenden finden Sie einige häufig gestellte Fragen zum Zusammenfügen:
 
 Sie können eine Flussvisualisierung mit der Dimension „Datensatz-ID“ verwenden.
 
-1. Melden Sie sich bei [Customer Journey Analytics an &#x200B;](https://analytics.adobe.com) erstellen Sie ein leeres Workspace-Projekt.
-2. Wählen Sie auf der linken Seite **[!UICONTROL ** Visualisierungen **]** aus und ziehen Sie eine **[!UICONTROL **&#x200B; Fluss &#x200B;**]**-Visualisierung auf die Arbeitsfläche auf der rechten Seite.
-3. Wählen Sie auf der linken Seite **[!UICONTROL ** Komponenten **]** und ziehen Sie die Dimension **[!UICONTROL ** Datensatz-ID **]** an die mittlere Position mit der Bezeichnung **[!UICONTROL **&#x200B; Dimension oder Element &#x200B;**]**.
+1. Melden Sie sich bei [Customer Journey Analytics an ](https://analytics.adobe.com) erstellen Sie ein leeres Workspace-Projekt.
+2. Wählen Sie auf der linken Seite **[!UICONTROL ** Visualisierungen **]** aus und ziehen Sie eine **[!UICONTROL ** Fluss **]**-Visualisierung auf die Arbeitsfläche auf der rechten Seite.
+3. Wählen Sie auf der linken Seite **[!UICONTROL ** Komponenten **]** und ziehen Sie die Dimension **[!UICONTROL ** Datensatz-ID **]** an die mittlere Position mit der Bezeichnung **[!UICONTROL ** Dimension oder Element **]**.
 4. Dieser Flussbericht ist interaktiv. Um die Flüsse zu nachfolgenden oder vorherigen Seiten zu erweitern, wählen Sie einen der Werte aus. Verwenden Sie das Kontextmenü, um Spalten zu erweitern oder zu reduzieren. Im selben Flussbericht können auch verschiedene Dimensionen verwendet werden.
 
 Wenn Sie die Datensatz-ID-Dimensionselemente umbenennen möchten, können Sie einen Lookup-Datensatz verwenden.
@@ -47,7 +47,7 @@ In einigen Situationen ist es möglich, dass sich mehrere Personen von demselben
 
 Die Personen-ID überschreibt die persistente ID, sodass freigegebene Geräte als separate Personen betrachtet werden (auch wenn sie von demselben Gerät stammen).
 
-Weitere Informationen finden Sie [&#x200B; Anwendungsbeispiel &#x200B;](/help/use-cases/stitching/shared-devices.md)Freigegebene Geräte“.
+Weitere Informationen finden Sie [ Anwendungsbeispiel ](/help/use-cases/stitching/shared-devices.md)Freigegebene Geräte“.
 
 +++
 
@@ -55,11 +55,11 @@ Weitere Informationen finden Sie [&#x200B; Anwendungsbeispiel &#x200B;](/help/us
 
 +++ Wie werden beim Zusammenfügen Situationen gehandhabt, in denen eine einzelne Person über viele persistente IDs verfügt?
 
-In einigen Fällen kann eine einzelne benutzende Person mit mehreren beständigen IDs verknüpft sein. Ein Beispiel hierfür ist eine Person, die häufig Cookies des Browsers löscht oder den Privat-/Inkognito-Modus des Browsers verwendet.
+In einigen Fällen kann eine einzelne benutzende Person mit mehreren beständigen IDs verknüpft sein. Ein Beispiel hierfür ist eine Person, die häufig die Cookies des Browsers löscht oder den Privat-/Inkognito-Modus des Browsers verwendet.
 
 Bei der feldbasierten Zuordnung ist die Anzahl der persistenten IDs zugunsten der Personen-ID irrelevant. Ein einzelner Benutzer kann zu einer beliebigen Anzahl von Geräten gehören, ohne dass sich dies auf die Fähigkeit von Customer Journey Analytics auswirkt, Zuordnungen geräteübergreifend vorzunehmen.
 
-Bei der diagrammbasierten Zuordnung kann eine einzelne Person über viele beständige IDs im Identitätsdiagramm verfügen. Diagrammbasiertes Stitching verwendet die persistente ID basierend auf dem angegebenen Namespace. Falls es persistentere ID für denselben Namespace gibt, wird die lexikografische erste persistente ID verwendet.
+Bei der diagrammbasierten Zuordnung kann eine einzelne Person über viele beständige IDs im Identitätsdiagramm verfügen. Diagrammbasiertes Stitching verwendet die persistente ID basierend auf dem angegebenen Namespace. Falls es persistentere IDs für denselben Namespace gibt, wird die lexikografische erste persistente ID verwendet.
 
 +++
 
@@ -75,7 +75,7 @@ Die Echtzeit-Zuordnung ist etwa eine Woche, nachdem Adobe die Zuordnung aktivier
 
 +++ Was ist der Unterschied zwischen geräteübergreifender Analyse (eine Funktion im herkömmlichen Analytics) und kanalübergreifender Analyse?
 
-[Geräteübergreifende Analyse](https://experienceleague.adobe.com/docs/analytics/components/cda/overview.html?lang=de) ist eine Funktion, die speziell für das herkömmliche Adobe Analytics entwickelt wurde und Ihnen hilft, zu verstehen, wie Benutzende geräteübergreifend arbeiten. Sie bietet zwei Workflows zum Verknüpfen von Gerätedaten: die feldbasierte Zuordnung und das Gerätediagramm.
+[Geräteübergreifende Analyse](https://experienceleague.adobe.com/en/docs/analytics/components/cda/overview) ist eine Funktion, die speziell für das herkömmliche Adobe Analytics entwickelt wurde und Ihnen hilft, zu verstehen, wie Benutzende geräteübergreifend arbeiten. Sie bietet zwei Workflows zum Verknüpfen von Gerätedaten: die feldbasierte Zuordnung und das Gerätediagramm.
 
 Die Cross-Channel-Analyse ist ein für Customer Journey Analytics spezifisches Anwendungsbeispiel, mit dem Sie verstehen können, wie benutzende Personen auf beiden Geräten und Kanälen arbeiten. Er verknüpft die Personen-ID eines Datensatzes, sodass dieser Datensatz nahtlos mit anderen Datensätzen kombiniert werden kann. Diese Funktion funktioniert im Design ähnlich wie die geräteübergreifende Analyse beim feldbasierten Stitching, aber die Implementierung unterscheidet sich aufgrund der unterschiedlichen Datenarchitektur von herkömmlichem Analytics und Customer Journey Analytics. Siehe [Zusammenfügen](overview.md) und den [Cross-Channel-Analyse](../use-cases/cross-channel/cross-channel.md)-Anwendungsfall für weitere Informationen.
 
@@ -85,7 +85,7 @@ Die Cross-Channel-Analyse ist ein für Customer Journey Analytics spezifisches A
 
 +++ Wie handhabt Stitching Datenschutzanfragen?
 
-Adobe bearbeitet Datenschutzanfragen in Übereinstimmung mit lokalen und internationalen Gesetzen. Adobe bietet den [Adobe Experience Platform Privacy Service](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=de) für Datenzugriffs- und Löschanfragen. Die Anfragen gelten sowohl für die ursprünglichen als auch die neu zugewiesenen Datensätze.
+Adobe bearbeitet Datenschutzanfragen in Übereinstimmung mit lokalen und internationalen Gesetzen. Adobe bietet den [Adobe Experience Platform Privacy Service](https://experienceleague.adobe.com/de/docs/experience-platform/privacy/home) für Datenzugriffs- und Löschanfragen. Die Anfragen gelten sowohl für die ursprünglichen als auch die neu zugewiesenen Datensätze.
 
 >[!IMPORTANT]
 >
@@ -114,7 +114,7 @@ Zur Veranschaulichung stellen Sie sich die folgenden Daten für Identitäten, Er
 | | 3 | ts2 | 123 | ECID | Alex | CustId | Alex | CustId |
 
 
-**Aktueller Prozess für Datenschutzanfrage**
+**Aktueller Prozess für Datenschutzanfragen**
 
 Wenn eine Datenschutzanfrage für einen Kunden mit CustID Bob empfangen wird, werden die Zeilen mit durchgestrichenen Einträgen gelöscht. Andere Ereignisse werden mithilfe der Identitätszuordnung neu zugeordnet. Beispielsweise wird die erste zusammengefügte ID im zusammengefügten Datensatz auf &quot;**&quot;**.
 
@@ -169,8 +169,8 @@ Wenn eine Datenschutzanfrage für einen Kunden mit CustID Bob empfangen wird, we
 
 Wenn das Feld für persistente ID bei einem Ereignis in einem Datensatz, der zugeordnet wird, leer ist, wird die zugeordnete ID für dieses Ereignis auf eine dieser zwei Arten bestimmt:
 
-* Wenn das Feld für die vorübergehende ID nicht leer ist, verwendet Customer Journey Analytics den Wert in der vorübergehenden ID als zusammengefügte ID.
-* Wenn das Feld Vorübergehende ID leer ist, lässt Customer Journey Analytics auch die zugeordnete ID leer. In diesem Fall sind die Felder „Persistente ID“, „Vorübergehende ID“ und „Zugeordnete ID“ beim Ereignis leer. Diese Ereignistypen werden aus jeder Customer Journey Analytics-Verbindung herausgenommen, die den zugeordneten Datensatz verwendet, bei dem die zugeordnete ID als Personen-ID ausgewählt wurde.
+* Wenn das Feld für die Personen-ID nicht leer ist, verwendet Customer Journey Analytics den Wert in der Personen-ID als zusammengefügte ID.
+* Wenn das Feld Personen-ID leer ist, lässt Customer Journey Analytics auch die zugeordnete ID leer. In diesem Fall sind die Felder „Persistente ID“, „Personen-ID“ und „Zugeordnete ID“ beim Ereignis leer. Diese Ereignistypen werden aus jeder Customer Journey Analytics-Verbindung herausgenommen, die den zugeordneten Datensatz verwendet, bei dem die zugeordnete ID als Personen-ID ausgewählt wurde.
 
 +++
 
@@ -205,11 +205,11 @@ Bestimmte Metriken in Customer Journey Analytics ähneln den Metriken im herköm
 
 | **Zugeordnete Customer Journey Analytics-Daten** | **Nicht zugeordnete Customer Journey Analytics-Daten** | **Adobe Analytics** | **Analytics Ultimate mit CDA** |
 | ----- | ----- | ----- | ----- |
-| **Personen** = Anzahl unterschiedlicher Personen-IDs, bei denen die zusammengefügte ID als Personen-ID ausgewählt wird. Je nach Ergebnis des Zuordnungsprozesses kann **Personen** größer oder kleiner als **Unique Visitors** im herkömmlichen Adobe Analytics sein. | **Personen** = Anzahl unterschiedlicher Personen-IDs basierend auf der Spalte, die als Personen-ID ausgewählt wurde. **Personen** in Datensätzen des Analytics-Quell-Connectors ist ähnlich wie **Unique Visitors** im herkömmlichen Adobe Analytics, wenn `endUserIDs._experience.aaid.id` als Personen-ID in Customer Journey Analytics verwendet wird. | **Unique Visitors** = Anzahl unterschiedlicher Besucher-IDs. **Unique Visitors** ist möglicherweise nicht identisch mit der Anzahl der eindeutigen **ECID** s. | Siehe [Personen](https://experienceleague.adobe.com/docs/analytics/components/metrics/people.html?lang=de). |
-| **Sitzungen**: Wird anhand der Sitzungseinstellungen in der Customer Journey Analytics-Datenansicht definiert. Der Zuordnungsprozess kann einzelne Sitzungen auf mehreren Geräten zu einer einzelnen Sitzung kombinieren. | **Sitzungen**: Wird anhand der in der Customer Journey Analytics-Datenansicht angegebenen Sitzungseinstellungen definiert. | **Besuche**: Siehe [Besuche](https://experienceleague.adobe.com/docs/analytics/components/metrics/visits.html?lang=de). | **Besuche**: Wird basierend auf den Sitzungseinstellungen definiert, die in der [Virtual Report Suite von CDA](https://experienceleague.adobe.com/docs/analytics/components/cda/setup.html?lang=de) angegeben sind. |
-| **Ereignisse** = Anzahl der Zeilen in den zugeordneten Daten in Customer Journey Analytics. Diese Metrik liegt normalerweise nahe bei **Vorfälle** im herkömmlichen Adobe Analytics. Beachten Sie jedoch die oben stehenden häufig gestellten Fragen zu Zeilen mit einer leeren persistenten ID. | **Ereignisse** = Anzahl der Zeilen in den nicht zugeordneten Daten in Customer Journey Analytics. Diese Metrik liegt normalerweise nahe bei **Vorfälle** im herkömmlichen Adobe Analytics. Beachten Sie jedoch, dass Ereignisse, die in den nicht zugeordneten Daten im Data Lake von Experience Platform eine leere Personen-ID aufweisen, nicht in Customer Journey Analytics aufgenommen werden. | **Vorfälle**: Siehe [Vorfälle](https://experienceleague.adobe.com/docs/analytics/components/metrics/occurrences.html?lang=de). | **Vorfälle**: Siehe [Vorfälle](https://experienceleague.adobe.com/docs/analytics/components/metrics/occurrences.html?lang=de). |
+| **Personen** = Anzahl unterschiedlicher Personen-IDs, bei denen die zusammengefügte ID als Personen-ID ausgewählt wird. Je nach Ergebnis des Zuordnungsprozesses kann **Personen** größer oder kleiner als **Unique Visitors** im herkömmlichen Adobe Analytics sein. | **Personen** = Anzahl unterschiedlicher Personen-IDs basierend auf der Spalte, die als Personen-ID ausgewählt wurde. **Personen** in Datensätzen des Analytics-Quell-Connectors ist ähnlich wie **Unique Visitors** im herkömmlichen Adobe Analytics, wenn `endUserIDs._experience.aaid.id` als Personen-ID in Customer Journey Analytics verwendet wird. | **Unique Visitors** = Anzahl unterschiedlicher Besucher-IDs. **Unique Visitors** ist möglicherweise nicht identisch mit der Anzahl der eindeutigen **ECID** s. | Siehe [Personen](https://experienceleague.adobe.com/en/docs/analytics/components/metrics/people). |
+| **Sitzungen**: Wird anhand der Sitzungseinstellungen in der Customer Journey Analytics-Datenansicht definiert. Der Zuordnungsprozess kann einzelne Sitzungen auf mehreren Geräten zu einer einzelnen Sitzung kombinieren. | **Sitzungen**: Wird anhand der in der Customer Journey Analytics-Datenansicht angegebenen Sitzungseinstellungen definiert. | **Besuche**: Siehe [Besuche](https://experienceleague.adobe.com/en/docs/analytics/components/metrics/visits). | **Besuche**: Wird basierend auf den Sitzungseinstellungen definiert, die in der [Virtual Report Suite von CDA](https://experienceleague.adobe.com/en/docs/analytics/components/cda/setup) angegeben sind. |
+| **Ereignisse** = Anzahl der Zeilen in den zugeordneten Daten in Customer Journey Analytics. Diese Metrik liegt normalerweise nahe bei **Vorfälle** im herkömmlichen Adobe Analytics. Beachten Sie jedoch die oben stehenden häufig gestellten Fragen zu Zeilen mit einer leeren persistenten ID. | **Ereignisse** = Anzahl der Zeilen in den nicht zugeordneten Daten in Customer Journey Analytics. Diese Metrik liegt normalerweise nahe bei **Vorfälle** im herkömmlichen Adobe Analytics. Beachten Sie jedoch, dass Ereignisse, die in den nicht zugeordneten Daten im Data Lake von Experience Platform eine leere Personen-ID aufweisen, nicht in Customer Journey Analytics aufgenommen werden. | **Vorfälle**: Siehe [Vorfälle](https://experienceleague.adobe.com/en/docs/analytics/components/metrics/occurrences). | **Vorfälle**: Siehe [Vorfälle](https://experienceleague.adobe.com/en/docs/analytics/components/metrics/occurrences). |
 
-Andere Metriken können in Customer Journey Analytics und Adobe Analytics ähnlich sein. Beispielsweise ist die Gesamtanzahl für Adobe Analytics [benutzerspezifische Ereignisse](https://experienceleague.adobe.com/docs/analytics/components/metrics/custom-events.html?lang=de) 1-100 im herkömmlichen Adobe Analytics und Customer Journey Analytics vergleichbar (unabhängig davon, ob zugeordnet oder nicht zugeordnet). [Funktionsunterschiede](/help/getting-started/aa-vs-cja/cja-aa.md)), z. B. die Deduplizierung zwischen Customer Journey Analytics und Adobe Analytics, können zu Diskrepanzen zwischen den beiden Produkten führen.
+Andere Metriken können in Customer Journey Analytics und Adobe Analytics ähnlich sein. Beispielsweise ist die Gesamtanzahl für Adobe Analytics [benutzerspezifische Ereignisse](https://experienceleague.adobe.com/en/docs/analytics/components/metrics/custom-events) 1-100 im herkömmlichen Adobe Analytics und Customer Journey Analytics vergleichbar (unabhängig davon, ob zugeordnet oder nicht zugeordnet). [Funktionsunterschiede](/help/getting-started/aa-vs-cja/cja-aa.md)), z. B. die Deduplizierung zwischen Customer Journey Analytics und Adobe Analytics, können zu Diskrepanzen zwischen den beiden Produkten führen.
 
 +++
 
@@ -217,7 +217,7 @@ Andere Metriken können in Customer Journey Analytics und Adobe Analytics ähnli
 
 +++ Kann Customer Journey Analytics Identity Map-Felder verwenden?
 
-Ja, Customer Journey Analytics kann Identitätszuordnungsfelder sowohl für [&#x200B; (feldbasierte](/help/stitching/fbs.md#identitymap) als auch für [diagrammbasierte](/help/stitching/gbs.md#identitymap) Zuordnung verwenden.
+Ja, Customer Journey Analytics kann Identitätszuordnungsfelder sowohl für [ (feldbasierte](/help/stitching/fbs.md#identitymap) als auch für [diagrammbasierte](/help/stitching/gbs.md#identitymap) Zuordnung verwenden.
 
 +++
 
@@ -225,7 +225,7 @@ Ja, Customer Journey Analytics kann Identitätszuordnungsfelder sowohl für [&#x
 
 +++ Müssen Daten erneut aufgenommen werden, um von feldbasiertem Stitching zu diagrammbasiertem Stitching zu wechseln?
 
-Daten müssen nicht erneut in Experience Platform aufgenommen werden. Sie müssen jedoch in Customer Journey Analytics neu konfiguriert werden. Führen Sie die folgenden Schritte aus:
+Daten müssen nicht erneut in Experience Platform aufgenommen werden. Daten müssen jedoch in Customer Journey Analytics neu konfiguriert werden. Führen Sie die folgenden Schritte aus:
 
 1. Richten Sie den neuen diagrammbasierten zugeordneten Datensatz mithilfe der diagrammbasierten Zuordnung ein.
 1. Erstellen Sie eine neue temporäre Verbindung mit einem sehr kleinen Zeitfenster an Daten.
@@ -248,33 +248,35 @@ Nicht, wenn Sie die oben beschriebenen Schritte befolgen. Andernfalls bitten wir
 
 +++ Wie wird ein Datensatz nur für den Identity Service aktiviert? 
 
-Sie müssen sicherstellen, dass ein Datensatz für Identity Service aktiviert ist, damit der Datensatz beim diagrammbasierten Stitching verwendet werden kann.
+Stellen Sie sicher, dass ein Datensatz für Identity Service aktiviert ist, um den Datensatz beim diagrammbasierten Stitching zu verwenden.
 
 Sie müssen für Real-Time Customer Data Platform nicht lizenziert sein, um das diagrammbasierte Stitching verwenden zu können. Die diagrammbasierte Zuordnung basiert auf einem verfügbaren Identitätsdiagramm und nicht auf Echtzeit-Kundenprofilen.
 
-Um einen Datensatz nur für den Identity Service zu aktivieren, verwenden Sie eine `POST`-Anfrage an den `/datasets`-Endpunkt, der nur das `unifiedIdentity`-Tag verwendet. Zum Beispiel:
+Um einen vorhandenen Datensatz zu überprüfen und den Datensatz nur für den Identity Service zu aktivieren, verwenden Sie eine `PATCH`-Anfrage an den `/datasets`-Endpunkt, der nur das `unifiedIdentity`-Tag verwendet. Zum Beispiel:
 
 ```shell
-curl -X POST \
-  https://platform.adobe.io/data/foundation/catalog/dataSets \
-  -H 'Content-Type: application/json' \
+curl -X PATCH \
+  https://platform.adobe.io/data/foundation/catalog/dataSets/{DATASET_ID} \
+  -H 'Content-Type:application/json-patch+json' \
   -H 'Authorization: Bearer {ACCESS_TOKEN}' \
   -H 'x-api-key: {API_KEY}' \
   -H 'x-gw-ims-org-id: {ORG_ID}' \
   -H 'x-sandbox-name: {SANDBOX_NAME}' \
-  -d '{
-    "schemaRef": {
-        "id": "https://ns.adobe.com/{TENANT_ID}/schemas/31670881463308a46f7d2cb09762715",
-        "contentType": "application/vnd.adobe.xed-full-notext+json; version=1"
-    },
-    "tags": {
-       "unifiedIdentity": ["enabled:true"]
-    }
-  }'
+  -d '[
+        { "op": "add", "path": "/tags/unifiedProfile", "value": ["enabled:true"] }
+      ]'
 ```
 
 Jede Verwendung des `unifiedProfile`-Tags in der Anfrage gibt einen Fehler zurück, obwohl Sie nicht für das Echtzeit-Kundendatenprofil lizenziert sind.
 
-Weitere [&#x200B; finden Sie unter „Erstellen eines Datensatzes, der für Profil und &#x200B;](https://experienceleague.adobe.com/de/docs/experience-platform/catalog/datasets/enable-for-profile#create-a-dataset-enabled-for-profile-and-identity) aktiviert ist“.
+Weitere [ finden Sie unter „Erstellen eines Datensatzes, der für Profil und ](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/enable-for-profile#enable-the-dataset) aktiviert ist“.
 
 +++ 
+
+
+## Zugeordnete Namespace-Werte
+
++++ Warum stimmen zugeordnete Namespace-Werte nicht immer mit dem Identity-Namespace-Wert überein, den Sie möglicherweise in einem anderen Datensatz innerhalb der CJA-Verbindung verwenden?
+
+Standardmäßig werden die Werte des zusammengefügten Namespace in Kleinbuchstaben geschrieben. `custEmail` wird also `custemail`. Wenn Sie keinen anderen Datensatz mit einem Identity-Namespace-Wert von `custEmail` haben, stimmen die beiden Werte nicht überein. Um dieses Verhalten im Reporting zu umgehen, können Sie die abgeleitete [lowercase() verwenden](/help/data-views/derived-fields/derived-fields.md#lowercase) um die Identitäts-Namespace-Werte abzugleichen.
+

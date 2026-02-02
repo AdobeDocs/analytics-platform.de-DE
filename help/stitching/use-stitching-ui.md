@@ -1,41 +1,38 @@
 ---
-title: Zuordnung verwenden
-description: Verwendung von Stitching
+title: Zusammenfügung aktivieren
+description: Erfahren Sie, wie Sie in der Verbindungs-Benutzeroberfläche das Zusammenfügen aktivieren.
 solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: 9a1689d9-c1b7-42fe-9682-499e49843f76
-source-git-commit: 9ace0679796c3a813b1fbd97c62c20faf64db211
+source-git-commit: a94f3fe6821d96c76b759efa3e7eedc212252c5f
 workflow-type: tm+mt
-source-wordcount: '937'
+source-wordcount: '909'
 ht-degree: 3%
 
 ---
 
-# Zuordnung verwenden
+# Aktivieren der Zuordnung
 
 Sie können das Zusammenfügen mit einem oder mehreren Ereignisdatensätzen aktivieren, die Sie im Rahmen Ihrer Verbindung konfiguriert haben. Das von Ihnen lizenzierte Customer Journey Analytics-Paket bestimmt die Anzahl der Ereignisdatensätze, die Sie für das Zusammenfügen aktivieren können.
 
-Sie können das Zusammenfügen als Teil der [Datensatzeinstellungen](/help/connections/create-connection.md#dataset-settings) für einen Ereignisdatensatz aktivieren, wenn Sie [Verbindung erstellen](/help/connections/create-connection.md) oder [Verbindung bearbeiten](/help/connections/manage-connections.md#edit-a-connection).
+Sie aktivieren das Zusammenfügen als Teil der [Datensatzeinstellungen](/help/connections/create-connection.md#dataset-settings) für einen Ereignis-Datensatz, wenn Sie [Verbindung erstellen](/help/connections/create-connection.md) oder [Verbindung bearbeiten](/help/connections/manage-connections.md#edit-a-connection).
 
 ## Voraussetzungen
 
-So aktivieren Sie die Zuordnung für einen Ereignis-Datensatz in der Connections-Benutzeroberfläche:
+Sie müssen die Voraussetzungen für die von Ihnen angegebene Stitching-Methode überprüfen und erfüllen: [feldbasiertes Stitching](fbs.md#prerequisites) oder [grafisches Stitching](gbs.md#prerequisites).
 
-* Das Schema, auf dem der Datensatz basiert, sollte Folgendes enthalten:
-
-   * Mehrere Felder, die als Identität konfiguriert sind und es Ihnen ermöglichen, verschiedene Werte für eine persistente ID und eine Personen-ID auszuwählen.
-   * Mindestens ein Feld, das als primäre Identität mit einem zugehörigen Namespace markiert ist, falls Sie Identity Map verwenden möchten, und der primäre Identity-Namespace für die persistente ID oder Personen-ID.
-
-* Wenn Sie die diagrammbasierte Zuordnung verwenden möchten und davon ausgehen, dass der Ereignis-Datensatz zum Identitätsdiagramm beitragen wird (da der Datensatz relevante Personen-IDs neben persistenten IDs enthält), sollten [den Datensatz für den Identity Service aktivieren](/help/stitching/faq.md#enable-a-dataset-for-the-identity-service).
 
 ## Vorflugkontrollen
 
 Wenn Sie die Voraussetzungen erfüllen, sollten Sie einige Preflight-Prüfungen für die Daten im Ereignis-Datensatz durchführen, bevor Sie die Identitätszuordnung aktivieren:
 
-* Stellen Sie sicher, dass Identitäten im Schema für den Ereignis-Datensatz ordnungsgemäß markiert sind. [Siehe Übersicht über Identity-Namespaces](https://experienceleague.adobe.com/de/docs/experience-platform/identity/features/namespaces).
+* Wenn Sie XDM-Schemafelder für persistente ID/Personen-ID verwenden, stellen Sie sicher, dass Identitäten im Schema für den Ereignis-Datensatz ordnungsgemäß markiert sind. [Siehe Übersicht über Identity-Namespaces](https://experienceleague.adobe.com/de/docs/experience-platform/identity/features/namespaces).
 * Identitätsabdeckung sowohl für persistente ID als auch für Personen-ID überprüfen:
-   * Persistente ID: Abfragen von Daten von 7 Tagen, wenn Ihr Feld für persistente ID nicht null ist, und durch eine Abfrage von 7 Tagen Daten für alle Ereignisse in Ihrem Datensatz teilen. Dieser Prozentsatz sollte über 95 % liegen.
+
+   * **Persistent ID**
+
+     Abfragen von Daten von sieben Tagen, wenn Ihr persistentes ID-Feld nicht null ist, geteilt durch eine Abfrage von sieben Tagen mit Daten für alle Ereignisse in Ihrem Datensatz. Dieser Prozentsatz sollte über 95 % liegen.
 
      Beispiel einer Abfrage, die Sie zur Überprüfung verwenden können:
 
@@ -60,39 +57,35 @@ Wenn Sie die Voraussetzungen erfüllen, sollten Sie einige Preflight-Prüfungen 
       * `{END_DATE}` ist das Enddatum im Standardformat. Beispiel: `2024-01-08 00:00:00`.
 
 
-   * Personen-ID - Abfrage von Daten von sieben Tagen, wenn das Feld für Ihre Personen-ID nicht null ist, dividiert durch eine Abfrage von sieben Tagen für Daten für alle Ereignisse in Ihrem Datensatz. Dieser Prozentsatz sollte über 5 % liegen.
+   * **Personen-ID**
+      * Stellen Sie bei diagrammbasiertem Stitching sicher, dass das Identitätsdiagramm Fragmente enthält, die ID-Werte aus dem ausgewählten persistenten ID-Namespace und dem Personen-ID-Namespace verknüpfen. Sie können einen Test ausführen, indem Sie zum [Experience Platform-Identitätsdiagramm-Viewer wechseln ](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-graph-viewer){target="_blank"} das Diagramm nach einigen persistenten ID-Testwerten abfragen. Überprüfen Sie, ob diese persistenten ID-Werte mit Personen-ID-Werten im Diagramm verknüpft sind.
+      * Fragen Sie für das feldbasierte Stitching 7 Tage Daten ab, bei denen das Feld für Ihre Personen-ID nicht null ist, und teilen Sie dies durch eine Abfrage von 7 Tagen Daten für alle Ereignisse in Ihrem Datensatz. Dieser Prozentsatz sollte idealerweise über 5 % liegen.
 
-     Beispiel einer Abfrage, die Sie zur Überprüfung verwenden können:
+        Beispiel einer Abfrage, die Sie zur Überprüfung verwenden können:
 
-     ```sql
-     SELECT
-       COUNT(*) AS total_events,
-       COUNT({PERSON_ID_FIELD}) AS events_with_personid,
-       ROUND(COUNT({PERSON_ID_FIELD}) / COUNT(*), 2) AS percent_with_personid_not_null
-     FROM 
-       {DATASET_TABLE_NAME}
-     WHERE
-       TO_TIMESTAMP(timestamp, '{FORMAT_STRING}') >= TIMESTAMP '{START_DATE}'
-       AND TO_TIMESTAMP(timestamp, 'FORMAT_STRING') < TIMESTAMP '{END_DATE}';
-     ```
+        ```sql
+        SELECT
+          COUNT(*) AS total_events,
+          COUNT({PERSON_ID_FIELD}) AS events_with_personid,
+          ROUND(COUNT({PERSON_ID_FIELD}) / COUNT(*), 2) AS percent_with_personid_not_null
+        FROM 
+          {DATASET_TABLE_NAME}
+        WHERE
+          TO_TIMESTAMP(timestamp, '{FORMAT_STRING}') >= TIMESTAMP '{START_DATE}'
+          AND TO_TIMESTAMP(timestamp, 'FORMAT_STRING') < TIMESTAMP '{END_DATE}';
+        ```
 
-     Dabei gilt:
+        Dabei gilt:
 
-      * `{PERSON_ID_FIELD}` ist das Feld für die Personen-ID. Beispiel: `identityMap.crmId[0]`.
-      * `{DATASET_TABLE_NAME}` ist der Tabellenname für den Ereignis-Datensatz.
-      * `{FORMAT_STRING}` ist die Formatzeichenfolge für das Zeitstempelfeld. Beispiel: `MM/DD/YY HH12:MI AM`.
-      * `{START_DATE}` ist das Startdatum. Beispiel: `2024-01-01 00:00:00`.
-      * `{END_DATE}` ist das Enddatum im Standardformat. Beispiel: `2024-01-08 00:00:00`.
+         * `{PERSON_ID_FIELD}` ist das Feld für die Personen-ID. Beispiel: `identityMap.crmId[0]`.
+         * `{DATASET_TABLE_NAME}` ist der Tabellenname für den Ereignis-Datensatz.
+         * `{FORMAT_STRING}` ist die Formatzeichenfolge für das Zeitstempelfeld. Beispiel: `MM/DD/YY HH12:MI AM`.
+         * `{START_DATE}` ist das Startdatum. Beispiel: `2024-01-01 00:00:00`.
+         * `{END_DATE}` ist das Enddatum im Standardformat. Beispiel: `2024-01-08 00:00:00`.
 
 
 
 ## Aktivieren der Identitätszuordnung
-
->[!NOTE]
->
->Wenn **[!UICONTROL Identitätszuordnung aktivieren]** in der Verbindungsschnittstelle nicht verfügbar ist, verwenden Sie das [Anfrageverfahren zum Aktivieren der Zuordnung](/help/stitching/use-stitching.md) für einen Datensatz.
-
-
 
 Um das Zusammenfügen zu aktivieren, gehen Sie im Abschnitt Ereignisdatensatz des Dialogfelds **[!UICONTROL Datensätze hinzufügen]** oder **[!UICONTROL Datensatz bearbeiten]** folgendermaßen vor:
 
@@ -100,7 +93,7 @@ Um das Zusammenfügen zu aktivieren, gehen Sie im Abschnitt Ereignisdatensatz de
 
 1. Wählen Sie **[!UICONTROL Identitätszusammenfügung aktivieren]** aus.
 
-   Wenn Sie die Zuordnung für einen vorhandenen Ereignisdatensatz aktivieren, zeigt das Dialogfeld **[!UICONTROL Personen-ID ändern]** die Auswirkungen einer Änderung der Personen-ID aufgrund der Verwendung der Zuordnung an. Wählen Sie **[!UICONTROL Weiter]** aus, um fortzufahren.
+   Wenn Sie das Zusammenfügen für einen gespeicherten Ereignisdatensatz in der Verbindung aktivieren oder deaktivieren, zeigt **[!UICONTROL Dialogfeld „Personen-ID ändern]** die Auswirkungen einer Änderung der Personen-ID an. Wählen Sie **[!UICONTROL Weiter]** aus, um fortzufahren.
 
    Das **[!UICONTROL „Identitätszuordnung aktivieren]** fasst die Auswirkungen des Zuordnens von Identitäten zusammen. Wählen Sie **[!UICONTROL Weiter]** aus, um fortzufahren.
 
@@ -126,18 +119,18 @@ Um das Zusammenfügen zu aktivieren, gehen Sie im Abschnitt Ereignisdatensatz de
    >Stellen Sie sicher, dass Sie berechtigt sind, das Identitätsdiagramm zu verwenden.
    >
 
-   Zuvor wird ein Dialogfeld **[!UICONTROL Änderung am Identitätsdiagramm]** angezeigt, um sicherzustellen, dass Sie [die Einrichtung des Identitätsdiagramms für den Datensatz abgeschlossen haben](/help/stitching/faq.md#enable-a-dataset-for-the-identity-service) bevor Sie das Identitätsdiagramm zum Zusammenfügen verwenden. Wählen Sie **[!UICONTROL Weiter]** aus, um fortzufahren.
+   Zuvor wird das Dialogfeld **[!UICONTROL Änderung am Identitätsdiagramm]** angezeigt, um sicherzustellen, dass Sie die Einrichtung des Identitätsdiagramms für den Datensatz als Teil der [Diagrammbasierten Voraussetzungen“ abgeschlossen ](/help/stitching/gbs.md#prerequisites), bevor Sie das Identitätsdiagramm für das Zusammenfügen verwenden. Wählen Sie **[!UICONTROL Weiter]** aus, um fortzufahren.
 
    * Wählen Sie einen Namespace aus dem **[!UICONTROL Namespace]** Dropdown-Menü aus.
 
 
-1. Wählen Sie ein Lookback-Fenster aus **[!UICONTROL Dropdown-Menü]** Lookback-Fenster“. Die verfügbaren Optionen hängen vom Customer Journey Analytics-Paket ab, zu dem Sie berechtigt sind.
+1. Wählen Sie im Dropdown-Menü **[!UICONTROL Wiederholungsfenster]** ein Wiederholungsfenster aus. Die verfügbaren Optionen hängen vom Customer Journey Analytics-Paket ab, zu dem Sie berechtigt sind.
 
 Nachdem Sie eine Verbindung gespeichert haben, wird der Zuordnungsprozess für Datensätze, die für das Zuordnen aktiviert sind, gestartet, wenn die Aufnahme von Daten für diese Datensätze beginnt.
 
 >[!CAUTION]
 >
->Bei Datensätzen, die für das Zusammenfügen in der Verbindungsschnittstelle aktiviert sind, wird der Aufstockungsstatus sofort und fälschlicherweise als ![Status grün](/help/assets/icons/StatusGreen.svg) **[!UICONTROL _x _Aufstockungen abgeschlossen]**&#x200B;für die Anzahl der abgeschlossenen Aufstockungen gemeldet. Verwenden Sie andere Möglichkeiten, um zu überprüfen, ob Daten aus dem zusammengefügten Datensatz aufgestockt werden.
+>Bei Datensätzen, die für das Zusammenfügen in der Verbindungsschnittstelle aktiviert sind, wird der Aufstockungsstatus sofort und fälschlicherweise als ![Status grün](/help/assets/icons/StatusGreen.svg) **[!UICONTROL _x _Aufstockungen abgeschlossen]**für die Anzahl der abgeschlossenen Aufstockungen gemeldet. Verwenden Sie andere Möglichkeiten, um zu überprüfen, ob Daten aus dem zusammengefügten Datensatz aufgestockt werden.
 >
 
 
@@ -154,4 +147,4 @@ Das in der Verbindungsschnittstelle aktivierte Stitching kann ohne Probleme mit 
 
 Sie haben beispielsweise Web-basierte zugeordnete Datensätze im Data Lake aufgrund früherer oder aktueller Zuordnungsanfragen. Sie können zugeordnete Daten aus einem Callcenter-Datensatz über die Schnittstelle Verbindungen hinzufügen, um diese Daten mit den Web-basierten Daten zu kombinieren.
 
-Schließlich migriert Adobe Ihre anforderungsbasierten zugeordneten Datensätze automatisch zum neuen Zuordnungssatz im -Erlebnis.
+Schließlich migriert Adobe Ihre anforderungsbasierten zugeordneten Datensätze zum neuen Zuordnungssatz im -Erlebnis.

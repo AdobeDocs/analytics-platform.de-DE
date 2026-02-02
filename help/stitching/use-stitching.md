@@ -1,14 +1,14 @@
 ---
-title: Anfordern der Zuordnung
-description: So fordern Sie die Zuordnung an
+title: Zuordnung anfordern
+description: Erfahren Sie, wie Sie das Zusammenfügen von Anfragen anfordern.
 solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: a04c74ab-606e-45a9-a3e4-0d476c8d2426
-source-git-commit: 9ace0679796c3a813b1fbd97c62c20faf64db211
+source-git-commit: a94f3fe6821d96c76b759efa3e7eedc212252c5f
 workflow-type: tm+mt
-source-wordcount: '479'
-ht-degree: 7%
+source-wordcount: '573'
+ht-degree: 20%
 
 ---
 
@@ -20,13 +20,11 @@ ht-degree: 7%
 >Das Zusammenfügen von Anfragen über Adobe ist nicht mehr erforderlich und diese Methode ist veraltet. [Aktivieren Sie das Zusammenfügen in der Verbindungs-Benutzeroberfläche](use-stitching-ui.md).
 >
 
-
-
-Sobald Ihr Unternehmen alle [Voraussetzungen](overview.md#prerequisites) erfüllt und die gängigen [Einschränkungen](overview.md#limitations) und Stitching-Methodenspezifischen ([feldbasiert](fbs.md#limitations) und [diagrammbasiert](gbs.md#limitations)) Einschränkungen versteht, können Sie diese Schritte ausführen, um das Stitching in Customer Journey Analytics anzufordern und zu verwenden.
+Sobald Ihr Unternehmen die generischen [Voraussetzungen](overview.md#prerequisites) erfüllt, die üblichen [Einschränkungen](overview.md#limitations) sowie die für [ (feldbasiert](fbs.md) und [diagrammbasiert](gbs.md)) spezifischen Voraussetzungen und Einschränkungen versteht, können Sie diese Schritte ausführen, um die Zuordnung in Customer Journey Analytics anzufordern und zu verwenden.
 
 ## Optionen auswählen
 
-Das Customer Journey Analytics-Paket, zu dem Sie berechtigt sind, bestimmt die verfügbaren Stitching-Methoden, Optionen für die anfängliche Aufstockungsdauer, das Lookback-Fenster, die Wiederholungshäufigkeit und die maximale Anzahl von Datensätzen, die für das Stitching zulässig sind. Weitere Informationen finden Sie in der &lbrace;0[&#x200B; Customer Journey Analytics-Produktbeschreibung. &#x200B;](https://helpx.adobe.com/de/legal/product-descriptions/customer-journey-analytics.html) Vor der Supportanfrage über die verfügbaren Optionen entscheiden.
+Das Customer Journey Analytics-Paket, zu dem Sie berechtigt sind, bestimmt die verfügbaren Zuordnungsmethoden, Optionen für die anfängliche Aufstockungsdauer, das Lookback-Fenster, die Wiederholungshäufigkeit und die maximale Anzahl von Datensätzen, die für das Zusammenfügen zulässig sind. Weitere Informationen finden Sie in der {0[ Customer Journey Analytics-Produktbeschreibung. ](https://helpx.adobe.com/de/legal/product-descriptions/customer-journey-analytics.html) Vor der Supportanfrage über die verfügbaren Optionen entscheiden.
 
 | | Customer Journey Analytics-<br/> | Customer Journey Analytics<br/>Prime | Customer Journey Analytics<br/>Ultimate |
 |---|---|---|---|
@@ -47,7 +45,7 @@ Das Customer Journey Analytics-Paket, zu dem Sie berechtigt sind, bestimmt die v
       - Geben Sie für das diagrammbasierte Stitching den Namespace für die persistente ID und den Identity-Namespace an, der für die Abfrage des Identitätsdiagramms verwendet werden soll.
    - Wenn der Datensatz `identityMap` nicht unterstützt:
       - Bei feldbasiertem Stitching der Spaltenname der Personen-ID für den gewünschten Datensatz (die Personenkennung, die auch als Link zwischen Datensätzen im Kontext einer Verbindung dient).
-      - Bei der diagrammbasierten Zuordnung der Identity-Namespace, der für die Abfrage des Identitätsdiagramms verwendet werden soll.
+      - Bei der diagrammbasierten Zuordnung der Identity-Namespace, den Sie für die Abfrage des Identitätsdiagramms verwenden möchten.
    - Ihre Voreinstellung für Lookback-Fenster und Wiederholungshäufigkeit. In Ihrem Customer Journey Analytics-Paket finden Sie [Optionen](#options) verfügbar.
    - Sandbox-Name.
 
@@ -62,3 +60,11 @@ Das Customer Journey Analytics-Paket, zu dem Sie berechtigt sind, bestimmt die v
 <!-- To do: Paragraph on backfill once product and marketing determine the best way forward. -->
 
 Nachdem die Datenansicht eingerichtet wurde, können Sie Ihre Customer Journey Analytics-Berichtsanalyse kanalübergreifend und geräteübergreifend ausführen.
+
+## Einschränkungen
+
+- Wenden Sie alle Änderungen, die Sie am Quellereignis-Datensatzschema vornehmen, auch auf das neue Schema des zugeordneten Datensatzes an.
+
+- Wenn Sie den Quelldatensatz entfernen, wird der zugeordnete Datensatz nicht weiter verarbeitet und vom System entfernt.
+
+- Labels zur Datennutzung werden nicht automatisch in das zugeordnete Datensatzschema übertragen. Wenn Sie Labels zur Datennutzung auf das Quelldatensatzschema angewendet haben, müssen Sie diese Labels zur Datennutzung manuell auf das Schema des zugeordneten Datensatzes anwenden. Weitere Informationen dazu finden Sie unter [Verwalten von Labels zur Datennutzung in Experience Platform](https://experienceleague.adobe.com/de/docs/experience-platform/data-governance/labels/overview).
