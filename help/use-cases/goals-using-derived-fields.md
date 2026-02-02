@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Use Cases
 exl-id: 5cd838f7-e394-4a67-9d2e-e1d08a864ca0
 role: User
-source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
+source-git-commit: 39d3a233166e2ce2035df2ce821dd16181e5e13e
 workflow-type: tm+mt
 source-wordcount: '429'
 ht-degree: 6%
@@ -39,7 +39,7 @@ Sie möchten explizit Ziele für Ihre Geschenkgutscheinbestellungen für vier Mo
 
 Sie möchten für jeden Ihrer Marketing-Kanäle ein monatliches Umsatzziel festlegen. Gehen Sie folgendermaßen vor:
 
-1. Erstellen Sie mithilfe der Vorlage [Funktionskanäle“ ein neues abgeleitetes Feld &#x200B;](/help/data-views/derived-fields/derived-fields.md#marketing-channels) dem Namen `Monthly Marketing Channel Revenue Goal (Incremental)`.
+1. Erstellen Sie mithilfe der Vorlage [Funktionskanäle“ ein neues abgeleitetes Feld ](/help/data-views/derived-fields/derived-fields.md#marketing-channels) dem Namen `Monthly Marketing Channel Revenue Goal (Incremental)`.
 
 1. Definieren Sie alle Regeln, um jeden Marketing-Kanal anhand einer Kombination aus URL-PARSE- und CASE-WHEN-Regeln korrekt zu identifizieren. Zum Beispiel:
 
@@ -67,7 +67,9 @@ Um Ziele in Ihrem Workspace-Projekt zu verwenden, verwenden Sie die Funktion fü
 
 Sie können diese berechneten Metriken verwenden, um den Fortschritt in Freiformtabellen und Visualisierungen zu melden. Zum Beispiel:
 
-![Freiformtabelle mit Marketing-Umsatzzielen](assets/freeform-table-product-order-goals.png)
+![Freiformtabelle mit Marketing-Umsatzzielen](assets/freeform-table-marketing-channel-revenue-goals.png)
+
+
 
 
 ### Umsatzziele für Marketing-Kanäle
@@ -82,4 +84,4 @@ Sie können diese berechneten Metriken verwenden, um den Fortschritt in Freiform
 
 Sie können diese berechneten Metriken verwenden, um den Fortschritt in Freiformtabellen und Visualisierungen zu melden. Zum Beispiel:
 
-![Freiformtabelle mit Marketing-Umsatzzielen](assets/freeform-table-marketing-channel-revenue-goals.png)
+![Freiformtabelle mit Marketing-Umsatzzielen](assets/freeform-table-product-order-goals.png)
