@@ -1,15 +1,15 @@
 ---
-title: Was ist der Report Builder-Hub in Customer Journey Analytics?
-description: Beschreibt die Report Builder-Hub-Komponenten
+title: Report Builder-Hub
+description: Erfahren Sie mehr über den Report Builder Hub.
 role: User
 feature: Report Builder
 type: Documentation
 exl-id: 119bd0b5-0d07-407f-b6e9-ef43352bad31
 solution: Customer Journey Analytics
-source-git-commit: 065cf61d80ceb3c921ea666ba299e56fb044335b
+source-git-commit: 1e19e0c79617d27c7039b695c70ca5026fcaf357
 workflow-type: tm+mt
-source-wordcount: '541'
-ht-degree: 27%
+source-wordcount: '534'
+ht-degree: 25%
 
 ---
 
@@ -39,7 +39,7 @@ Verwenden Sie das Bedienfeld **[!UICONTROL Befehle]**, um auf Befehle zuzugreife
 | ![Bearbeiten](/help/assets/icons/Edit.svg) **[!UICONTROL Datenblock bearbeiten]** | Die ausgewählte Zelle bzw. der ausgewählte Zellenbereich ist nur Teil eines Datenblocks. | Dient zum Bearbeiten eines Datenblocks. |
 | ![Aktualisieren](/help/assets/icons/Refresh.svg) **[!UICONTROL Datenblock aktualisieren]** | Die Auswahl enthält mindestens einen Datenblock. Der Befehl aktualisiert nur die Datenblöcke in der Auswahl. | Dient zum Aktualisieren eines oder mehrerer Datenblöcke. |
 | ![DocumentRefresh](/help/assets/icons/DocumentRefresh.svg) **[!UICONTROL Alle Datenblöcke aktualisieren]** | Die Arbeitsmappe enthält einen oder mehrere Datenblöcke. | Dient zum Aktualisieren aller Datenblöcke in der Arbeitsmappe |
-| ![Senden](/help/assets/icons/Send.svg) **[!UICONTROL Arbeitsmappe senden]** | Die Arbeitsmappe enthält einen oder mehrere Datenblöcke. | Dient zum Senden der Arbeitsmappe als Datei per E-Mail. |
+| ![Senden](/help/assets/icons/Send.svg) **[!UICONTROL Arbeitsmappe senden]** | Die Arbeitsmappe enthält einen oder mehrere Datenblöcke. | Dient zum [Senden der Arbeitsmappe als Datei per E-Mail](schedule-reportbuilder.md). |
 | ![Kopieren](/help/assets/icons/Copy.svg) **[!UICONTROL Datenblock kopieren]** | Die ausgewählte Zelle oder der ausgewählte Zellbereich ist Teil eines oder mehrerer Datenblöcke. | Dient zum Kopieren eines Datenblocks. |
 | ![Cut](/help/assets/icons/Cut.svg) **[!UICONTROL Datenblock ausschneiden]** | Die ausgewählte Zelle oder der ausgewählte Zellbereich ist Teil eines oder mehrerer Datenblöcke. | Verwenden Sie , um einen Datenblock auszuschneiden. |
 | ![Löschen](/help/assets/icons/Delete.svg) **[!UICONTROL Datenblock löschen]** | Die ausgewählte Zelle bzw. der ausgewählte Zellenbereich ist nur Teil eines Datenblocks. | Zum Löschen eines Datenblocks verwenden |
@@ -70,6 +70,6 @@ Der **Segmente**-Link zeigt eine zusammenfassende Liste der Segmente an, die von
 >[!MORELIKETHIS]
 >
 >[Datenansichten auswählen](select-data-view.md)
->&#x200B;>[Datumsbereich auswählen](select-date-range.md)
->&#x200B;>[Arbeiten mit Filtern](work-with-filters.md)
+>[Datumsbereich auswählen](select-date-range.md)
+>[Arbeiten mit Filtern](work-with-filters.md)
 >

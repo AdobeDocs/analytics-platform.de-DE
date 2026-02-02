@@ -1,14 +1,14 @@
 ---
-title: Auswählen einer Datenansicht in Report Builder
-description: Beschreibt, wie Datenansichten in Adobe Report Builder ausgewählt werden
+title: Datenansicht in Report Builder auswählen
+description: Erfahren Sie, wie Sie eine Datenansicht in Report Builder auswählen.
 role: User
 feature: Report Builder
 type: Documentation
 solution: Customer Journey Analytics
 exl-id: bf765144-34f8-465b-b06d-53e4ca91014a
-source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
+source-git-commit: 31d3b40ad7a081aefa4297d7f4a3b986711ead03
 workflow-type: tm+mt
-source-wordcount: '383'
+source-wordcount: '381'
 ht-degree: 1%
 
 ---

@@ -1,15 +1,15 @@
 ---
-title: Auswählen eines Datumsbereichs in Report Builder in Customer Journey Analytics
-description: Beschreibt die Verwendung des Kalenders, rollierender Datumsangaben und benutzerdefinierter Ausdrücke in Report Builder für Customer Journey Analytics
+title: Auswählen eines Datenbereichs in Report Builder
+description: Erfahren Sie, wie Sie in Report Builder einen Datumsbereich auswählen.
 role: User
 feature: Report Builder
 type: Documentation
 exl-id: 7252214f-a7d6-451b-99c9-d39e8e47120b
 solution: Customer Journey Analytics
-source-git-commit: 9794779894fbecb433c16d108c555c5f81a4b491
+source-git-commit: 31d3b40ad7a081aefa4297d7f4a3b986711ead03
 workflow-type: tm+mt
-source-wordcount: '867'
-ht-degree: 49%
+source-wordcount: '853'
+ht-degree: 50%
 
 ---
 
@@ -80,7 +80,7 @@ Mit der Option für benutzerdefinierte Ausdrücke können Sie den Datumsbereich 
 
 #### Erstellen eines benutzerdefinierten Ausdrucks
 
-1. Geben Sie [Datumsreferenz“ &#x200B;](#date-references).
+1. Geben Sie [Datumsreferenz“ ](#date-references).
 
 1. Fügen Sie einen optionalen [Datumsoperator](#date-operators) hinzu, um das Datum in die Vergangenheit oder in die Zukunft zu verschieben.
 

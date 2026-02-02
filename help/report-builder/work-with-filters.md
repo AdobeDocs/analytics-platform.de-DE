@@ -1,14 +1,14 @@
 ---
-title: Verwenden von Segmenten in Report Builder in Customer Journey Analytics
-description: Beschreibt die Verwendung von Segmenten in Report Builder für Customer Journey Analytics
+title: Arbeiten mit Segmenten in Report Builder
+description: Erfahren Sie, wie Sie Segmente in Report Builder verwenden.
 role: User
 feature: Report Builder
 type: Documentation
 exl-id: 1f39d7f4-b508-45d8-9b97-81242c3805d3
 solution: Customer Journey Analytics
-source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
+source-git-commit: 31d3b40ad7a081aefa4297d7f4a3b986711ead03
 workflow-type: tm+mt
-source-wordcount: '644'
+source-wordcount: '635'
 ht-degree: 6%
 
 ---

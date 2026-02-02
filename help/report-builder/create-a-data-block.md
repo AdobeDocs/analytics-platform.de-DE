@@ -1,15 +1,15 @@
 ---
-title: Erstellen eines Datenblocks mit Report Builder in Customer Journey Analytics
-description: Beschreibt, wie ein Datenblock erstellt wird.
+title: Erstellen eines Datenblocks in Report Builder
+description: Erfahren Sie, wie Sie einen Datenblock erstellen.
 role: User
 feature: Report Builder
 type: Documentation
 exl-id: 46382621-d5e1-41d6-865c-782ec28a21fa
 solution: Customer Journey Analytics
-source-git-commit: 7d3300336a955facc230f335d1452096700ea98b
+source-git-commit: 31d3b40ad7a081aefa4297d7f4a3b986711ead03
 workflow-type: tm+mt
-source-wordcount: '777'
-ht-degree: 24%
+source-wordcount: '771'
+ht-degree: 23%
 
 ---
 
@@ -62,7 +62,7 @@ Um den Datenblock zu erstellen, wählen Sie Berichtkomponenten aus und passen Si
 
 1. Fügen Sie **[!UICONTROL Dimensionen]**, **[!UICONTROL Metriken]** und **[!UICONTROL Segmente]** hinzu.
 
-   Scrollen Sie in den Komponentenlisten oder verwenden Sie das Feld ![Suchen](/help/assets/icons/Search.svg) **[!UICONTROL _Komponenten suchen_]**, um Komponenten zu finden. Ziehen Sie Komponenten per Drag-and[!UICONTROL Drop in den Bereich &#x200B;]Tabelle“ oder doppelwählen Sie einen Komponentennamen in der Liste aus, um die Komponente dem Bereich [!UICONTROL Tabelle] hinzuzufügen.
+   Scrollen Sie in den Komponentenlisten oder verwenden Sie das Feld ![Suchen](/help/assets/icons/Search.svg) **[!UICONTROL _Komponenten suchen_]**, um Komponenten zu finden. Ziehen Sie Komponenten per Drag-and[!UICONTROL Drop in den Bereich ]Tabelle“ oder doppelwählen Sie einen Komponentennamen in der Liste aus, um die Komponente dem Bereich [!UICONTROL Tabelle] hinzuzufügen.
 
    Doppelklicken Sie auf eine Komponente, um sie einem Standardabschnitt der Tabelle hinzuzufügen.
 
@@ -114,7 +114,7 @@ Um den Datenblock zu erstellen, wählen Sie Berichtkomponenten aus und passen Si
 >[!MORELIKETHIS]
 >
 >[Datenansicht auswählen](select-data-view.md)
->&#x200B;>[Datumsbereich auswählen](select-date-range.md)
->&#x200B;>[Filterdimensionen](filter-dimensions.md)
->&#x200B;>[Arbeiten mit Segmenten](work-with-filters.md)
+>[Datumsbereich auswählen](select-date-range.md)
+>[Filterdimensionen](filter-dimensions.md)
+>[Arbeiten mit Segmenten](work-with-filters.md)
 >

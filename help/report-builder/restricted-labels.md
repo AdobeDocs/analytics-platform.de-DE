@@ -1,15 +1,15 @@
 ---
-title: Was sind eingeschränkte Beschriftungen in Report Builder
-description: Beschreibt eingeschränkte Beschriftungen in Report Builder
+title: Eingeschränkte Beschriftungen in Report Builder
+description: Erfahren Sie mehr über eingeschränkte Beschriftungen in Report Builder.
 role: User
 feature: Report Builder
 type: Documentation
 solution: Customer Journey Analytics
 exl-id: 99c3c66e-928e-4363-a6a9-bbcab792337a
-source-git-commit: 22b06eaf9f224188699aa241de1d1daad8a14619
+source-git-commit: 31d3b40ad7a081aefa4297d7f4a3b986711ead03
 workflow-type: tm+mt
-source-wordcount: '316'
-ht-degree: 44%
+source-wordcount: '315'
+ht-degree: 40%
 
 ---
 
@@ -23,7 +23,7 @@ Darüber hinaus werden beim Exportieren von Daten aus Customer Journey Analytics
 
 Mit dieser Integration können Sie die Compliance verwalten. Datenverantwortliche in Ihrem Unternehmen können Richtlinien festlegen, um die Nutzung zu beschränken. Dadurch können Ihre Customer Journey Analytics-Benutzenden die Daten sicherer nutzen, da sie wissen, dass sie mit den von den Datenverantwortlichen festgelegten Richtlinien übereinstimmen.
 
-Weitere Informationen finden Sie unter [Customer Journey Analytics und Data Governance](https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-privacy/privacy-overview)
+Weitere Informationen finden Sie unter [Customer Journey Analytics und Data Governance](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-privacy/privacy-overview)
 
 ## Eingeschränkte Daten anzeigen
 
@@ -34,7 +34,7 @@ In Customer Journey Analytics werden zwei von Adobe definierte Richtlinien angez
 
 Komponenten, die diesen Richtlinien unterliegen, sind ausgegraut und haben ein ![InfoOutline](/help/assets/icons/InfoOutline.svg)-Symbol. Wenn Sie den Mauszeiger über das Infosymbol bewegen, wird ein Hinweis angezeigt, der Folgendes angibt: **[!UICONTROL Auf dieses Feld wurden Richtlinien angewendet, die die Verwendung dieser Daten verbieten]**.
 
-Weitere Informationen finden Sie unter [Kennzeichnungen und Richtlinien](https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-dataviews/data-governance).
+Weitere Informationen finden Sie unter [Kennzeichnungen und Richtlinien](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/data-governance).
 
 
 ![Der Hinweis zu verbotenen Datennutzungen.](assets/restricted-label.png){zoomable="yes"}
