@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin
 exl-id: 4aff664c-3cd9-4591-8122-6ebff10e4a76
-source-git-commit: e8cba64e706a456861fd8392ce9260b7a1c4636b
+source-git-commit: a2715ff9869796858dec16d3b8b422ef0c9325aa
 workflow-type: tm+mt
-source-wordcount: '2694'
-ht-degree: 100%
+source-wordcount: '2776'
+ht-degree: 97%
 
 ---
 
@@ -331,6 +331,18 @@ Sie können jedoch die Seiten und Assets bearbeiten, die ein- oder ausgeschlosse
 * Um zu bearbeiten, welche Seiten bei der Datenerfassung für Content Analytics ein- oder ausgeschlossen werden sollen, wählen Sie ![Bearbeiten](/help/assets/icons/Edit.svg) **[!UICONTROL Bearbeiten]** unter **[!UICONTROL Erlebnis]** aus. Sie werden zur [Adobe Content Analytics-Erweiterung](https://experienceleague.adobe.com/de/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-segmenting) weitergeleitet, die mit der Tags-Eigenschaft für die aktuelle Content Analytics-Konfiguration verknüpft ist. Sie können den regulären Ausdruck bearbeiten, um Seiten ein- oder auszuschließen. Achten Sie darauf, Ihre Änderungen zu [veröffentlichen](#publish).
 
 * Um zu bearbeiten, welche Assets bei der Datenerfassung für Content Analytics ein- oder ausgeschlossen werden sollen, wählen Sie ![Bearbeiten](/help/assets/icons/Edit.svg) **[!UICONTROL Bearbeiten]** unter **[!UICONTROL Asset]** aus. Sie werden zur [Adobe Content Analytics-Erweiterung](https://experienceleague.adobe.com/de/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-segmenting) weitergeleitet, die mit der Tags-Eigenschaft für die aktuelle Content Analytics-Konfiguration verknüpft ist. Sie können den regulären Ausdruck bearbeiten, um Assets ein- oder auszuschließen. Achten Sie darauf, Ihre Änderungen zu [veröffentlichen](#publish).
+
+
+### Überschreibungen des Headers
+
+Optional können Sie im Abschnitt **[!UICONTROL Überschreibungen der Kopfzeile]** einen Kopfzeilennamen und einen geheimen Kopfzeilenwert angeben.  Diese Kopfzeile überschreibt die Konfiguration und stellt sicher, dass Content Analytics benutzerdefinierte HTTP-Kopfzeilen sendet, um alle implementierten Bot-Erkennungs- oder Gate-Traffic-Technologien zu umgehen.
+
+![Abschnitt „Überschreibungen der Kopfzeile“](/help/content-analytics/assets/aca-configuration-header-overrides.png)
+
+1. Aktivieren **[!UICONTROL Konfigurieren von Kopfzeilenüberschreibungen]**.
+1. Geben Sie den **[!UICONTROL Header-Namen]** ein. Zum Beispiel `x-asset-service`.
+1. Geben Sie den **[!UICONTROL Header-Wert]** ein. Was auch immer Sie angeben, ist geheim und in der Benutzeroberfläche nicht sichtbar (es sei denn, Sie legen explizit fest, ![Sichtbarkeit](/help/assets/icons/Visibility.svg) den Wert während der Eingabe anzugeben).
+
 
 ### Zusammenfassung {#summary}
 
