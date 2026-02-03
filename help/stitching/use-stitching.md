@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: a04c74ab-606e-45a9-a3e4-0d476c8d2426
-source-git-commit: a94f3fe6821d96c76b759efa3e7eedc212252c5f
+source-git-commit: cbb18e9d0990d5df64995c2dabe8362c7c37bb45
 workflow-type: tm+mt
-source-wordcount: '573'
-ht-degree: 20%
+source-wordcount: '407'
+ht-degree: 26%
 
 ---
 
@@ -19,19 +19,6 @@ ht-degree: 20%
 >
 >Das Zusammenfügen von Anfragen über Adobe ist nicht mehr erforderlich und diese Methode ist veraltet. [Aktivieren Sie das Zusammenfügen in der Verbindungs-Benutzeroberfläche](use-stitching-ui.md).
 >
-
-Sobald Ihr Unternehmen die generischen [Voraussetzungen](overview.md#prerequisites) erfüllt, die üblichen [Einschränkungen](overview.md#limitations) sowie die für [&#x200B; (feldbasiert](fbs.md) und [diagrammbasiert](gbs.md)) spezifischen Voraussetzungen und Einschränkungen versteht, können Sie diese Schritte ausführen, um die Zuordnung in Customer Journey Analytics anzufordern und zu verwenden.
-
-## Optionen auswählen
-
-Das Customer Journey Analytics-Paket, zu dem Sie berechtigt sind, bestimmt die verfügbaren Zuordnungsmethoden, Optionen für die anfängliche Aufstockungsdauer, das Lookback-Fenster, die Wiederholungshäufigkeit und die maximale Anzahl von Datensätzen, die für das Zusammenfügen zulässig sind. Weitere Informationen finden Sie in der &lbrace;0[&#x200B; Customer Journey Analytics-Produktbeschreibung. &#x200B;](https://helpx.adobe.com/de/legal/product-descriptions/customer-journey-analytics.html) Vor der Supportanfrage über die verfügbaren Optionen entscheiden.
-
-| | Customer Journey Analytics-<br/> | Customer Journey Analytics<br/>Prime | Customer Journey Analytics<br/>Ultimate |
-|---|---|---|---|
-| Verfügbare Stitching-Methoden | Feldbasierte Zuordnung | Feldbasiertes Stitching<br/>Diagrammbasiertes Stitching | Feldbasiertes Stitching<br>Diagrammbasiertes Stitching</li> |
-| Einmaliges Zusammenfügen der Aufstockungsdauer | 13 Monate | 13 Monate | 25 Monate |
-| Lookback-Fenster und Wiederholungshäufigkeit | 1 Tag, jeden Tag<br/> bis zu 7 Tage, wöchentlich | 1 Tag, jeden Tag<br/> bis zu 14 Tage, wöchentlich | 1 Tag, jeden Tag<br/> bis zu 30 Tage, wöchentlich |
-| Maximal zulässige Anzahl von Datensätzen für das Zusammenfügen | 5 | 15 | 50 |
 
 ## Support anfordern
 
