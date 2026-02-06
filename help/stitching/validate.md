@@ -33,7 +33,7 @@ Während diese Analysemethoden sowohl für feldbasiertes Stitching als auch für
 
 >[!BEGINSHADEBOX]
 
-Siehe ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Stitching-Aktivierung und -Validierung](https://video.tv.adobe.com/v/3478120?quality=12&learn=on){target="_blank"} für ein Demovideo.
+Siehe ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Stitching-Aktivierung und -Validierung](https://video.tv.adobe.com/v/3478129?captions=ger&quality=12&learn=on){target="_blank"} für ein Demovideo.
 
 >[!ENDSHADEBOX]
 
