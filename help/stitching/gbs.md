@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: ea5c9114-1fc3-4686-b184-2850acb42b5c
-source-git-commit: 4c5376171afe7ee830c52cc1066d0645a1adbc5d
+source-git-commit: 4cb54c684c76c2581b1f3f9aa00fcb743d7c6387
 workflow-type: tm+mt
 source-wordcount: '1741'
 ht-degree: 4%
@@ -16,14 +16,14 @@ ht-degree: 4%
 
 Bei der diagrammbasierten Zuordnung geben Sie einen Ereignis-Datensatz, die persistente ID (Cookie) für diesen Datensatz und den Namespace der gewünschten Personen-ID aus dem Identitätsdiagramm an. Diagrammbasierte Zuordnung versucht, die Personen-ID-Informationen für die Customer Journey Analytics-Datenanalyse bei jedem Ereignis verfügbar zu machen. Die persistente ID wird verwendet, um das Identitätsdiagramm vom Experience Platform Identity Service abzufragen und die Personen-ID aus dem angegebenen Namespace abzurufen.
 
-Wenn die Personen-ID-Informationen für ein Ereignis nicht abgerufen werden können, wird stattdessen die persistente ID für dieses (nicht *)* verwendet. Daher enthält in einer [Datenansicht](/help/data-views/data-views.md) die mit einer [Verbindung“ verknüpft ist, &#x200B;](/help/connections/overview.md) den Datensatz enthält, der für das Zusammenfügen aktiviert ist, die Datenansichtskomponente für die Personen-ID entweder den Personen-ID-Wert oder den beständigen ID-Wert auf der Ereignisebene.
+Wenn die Personen-ID-Informationen für ein Ereignis nicht abgerufen werden können, wird stattdessen die persistente ID für dieses (nicht *)* verwendet. Daher enthält in einer [Datenansicht](/help/data-views/data-views.md) die mit einer [Verbindung“ verknüpft ist, ](/help/connections/overview.md) den Datensatz enthält, der für das Zusammenfügen aktiviert ist, die Datenansichtskomponente für die Personen-ID entweder den Personen-ID-Wert oder den beständigen ID-Wert auf der Ereignisebene.
 
 
 ![Diagrammbasiertes Stitching](/help/stitching/assets/gbs.svg)
 
 ## IdentityMap
 
-Diagrammbasiertes Stitching unterstützt die Verwendung der [`identityMap` Feldergruppe &#x200B;](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/schema/composition#identity) folgenden Szenarien:
+Diagrammbasiertes Stitching unterstützt die Verwendung der [`identityMap` Feldergruppe ](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/schema/composition#identity) folgenden Szenarien:
 
 - Verwendung der primären Identität in `identityMap` Namespaces zur Definition der persistenten ID:
    - Wenn mehrere primäre Identitäten in verschiedenen Namespaces gefunden werden, werden die Identitäten in den Namespaces lexikografisch sortiert, und die erste Identität wird ausgewählt.
@@ -97,9 +97,9 @@ Beim Zusammenfügen werden in einem Datensatz mindestens zwei Durchläufe an Dat
 
 - **Wiederholungszuordnung**: *Wiederholt* Daten basierend auf aktualisierten Identitäten aus dem Identitätsdiagramm. In diesem Schritt werden Treffer von zuvor unbekannten Geräten (persistente IDs) zugeordnet, da das Identitätsdiagramm die Identität für einen Namespace aufgelöst hat. Zwei Parameter bestimmen die Wiederholung: **Häufigkeit** und **Lookback-Fenster**. Adobe bietet die folgenden Kombinationen dieser Parameter:
    - **Täglicher Lookback in täglicher Häufigkeit**: Daten werden täglich mit einem 24-Stunden-Lookback-Fenster wiederholt. Diese Option bietet den Vorteil, dass Wiederholungen deutlich häufiger auftreten. Nicht authentifizierte Profile müssen sich jedoch am selben Tag authentifizieren, an dem sie Ihre Site besuchen.
-   - **Wöchentlicher Lookback in einem wöchentlichen Intervall**: Die Daten werden einmal wöchentlich mit einem wöchentlichen Lookback-Fenster wiederholt (siehe [Optionen](#options)). Diese Option bietet den Vorteil, dass nicht authentifizierte Sitzungen über einen weniger eng gefasst Zeitraum für die Authentifizierung verfügen. Nicht zugeordnete Daten, die weniger als eine Woche alt sind, werden jedoch erst bei der nächsten wöchentlichen Wiederholung erneut verarbeitet.
-   - **Vierzehntägiger Lookback in wöchentlicher Häufigkeit**: Die Daten werden einmal wöchentlich mit einem zweiwöchentlichen Lookback-Fenster wiederholt (siehe [Optionen](#options)). Diese Option bietet den Vorteil, dass nicht authentifizierte Sitzungen über einen weniger eng gefasst Zeitraum für die Authentifizierung verfügen. Nicht zugeordnete Daten, die weniger als zwei Wochen alt sind, werden jedoch erst bei der nächsten wöchentlichen Wiederholung erneut verarbeitet.
-   - **Monatlicher Lookback mit wöchentlicher Häufigkeit**: Daten werden wöchentlich mit einem monatlichen Lookback-Fenster wiederholt (siehe [Optionen](#options)). Diese Option bietet den Vorteil, dass nicht authentifizierte Sitzungen über einen weniger eng gefasst Zeitraum für die Authentifizierung verfügen. Nicht zugeordnete Daten, die weniger als einen Monat alt sind, werden jedoch erst bei der nächsten wöchentlichen Wiederholung erneut verarbeitet.
+   - **Wöchentlicher Lookback in einem wöchentlichen Intervall**: Die Daten werden einmal wöchentlich mit einem wöchentlichen Lookback-Fenster wiederholt (siehe [Optionen](overview.md#options)). Diese Option bietet den Vorteil, dass nicht authentifizierte Sitzungen über einen weniger eng gefasst Zeitraum für die Authentifizierung verfügen. Nicht zugeordnete Daten, die weniger als eine Woche alt sind, werden jedoch erst bei der nächsten wöchentlichen Wiederholung erneut verarbeitet.
+   - **Vierzehntägiger Lookback in wöchentlicher Häufigkeit**: Die Daten werden einmal wöchentlich mit einem zweiwöchentlichen Lookback-Fenster wiederholt (siehe [Optionen](overview.md#options)). Diese Option bietet den Vorteil, dass nicht authentifizierte Sitzungen über einen weniger eng gefasst Zeitraum für die Authentifizierung verfügen. Nicht zugeordnete Daten, die weniger als zwei Wochen alt sind, werden jedoch erst bei der nächsten wöchentlichen Wiederholung erneut verarbeitet.
+   - **Monatlicher Lookback mit wöchentlicher Häufigkeit**: Daten werden wöchentlich mit einem monatlichen Lookback-Fenster wiederholt (siehe [Optionen](overview.md#options)). Diese Option bietet den Vorteil, dass nicht authentifizierte Sitzungen über einen weniger eng gefasst Zeitraum für die Authentifizierung verfügen. Nicht zugeordnete Daten, die weniger als einen Monat alt sind, werden jedoch erst bei der nächsten wöchentlichen Wiederholung erneut verarbeitet.
 
 - **Datenschutz**: Wenn datenschutzbezogene Anfragen empfangen werden, muss zusätzlich zum Entfernen der angeforderten Identität aus dem Quelldatensatz jede Zuordnung dieser Identität zu nicht authentifizierten Ereignissen rückgängig gemacht werden. Außerdem muss die Identität aus dem Identitätsdiagramm entfernt werden, um eine zukünftige diagrammbasierte Zuordnung für diese spezifische Identität zu verhindern.
 
@@ -114,7 +114,7 @@ Betrachten Sie die folgenden beiden Identitätsdiagramm-Aktualisierungen im Lauf
 
 ![Identitätsdiagramm 3579](assets/identity-graphs.svg)
 
-Sie können ein Identitätsdiagramm im Zeitverlauf für ein bestimmtes Profil mit dem [Identitätsdiagramm-Viewer](https://experienceleague.adobe.com/de/docs/experience-platform/identity/features/identity-graph-viewer) anzeigen. Siehe auch [Verknüpfungslogik für Identity Service](https://experienceleague.adobe.com/de/docs/experience-platform/identity/features/identity-linking-logic), um ein besseres Verständnis der beim Verknüpfen von Identitäten verwendeten Logik zu erhalten.
+Sie können ein Identitätsdiagramm im Zeitverlauf für ein bestimmtes Profil mit dem [Identitätsdiagramm-Viewer](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-graph-viewer) anzeigen. Siehe auch [Verknüpfungslogik für Identity Service](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-linking-logic), um ein besseres Verständnis der beim Verknüpfen von Identitäten verwendeten Logik zu erhalten.
 
 ### Schritt 1: Echtes Zusammenfügen
 
@@ -209,7 +209,7 @@ Die folgenden Voraussetzungen gelten speziell für das diagrammbasierte Stitchin
    - Alle Datensätze, die solche relevanten Identitäten enthalten, müssen [für die Aufnahme von Identitätsdiagrammdaten aktiviert](faq.md#enable-a-dataset-for-the-identity-service). Durch diese Aktivierung wird sichergestellt, dass eingehende Identitäten im Laufe der Zeit aus allen erforderlichen Quellen zum Diagramm hinzugefügt werden.
    - Wenn Sie bereits seit einiger Zeit das Echtzeit-Kundendatenprofil oder Adobe Journey Optimizer verwenden, sollte das Diagramm bis zu einem gewissen Grad bereits eingerichtet sein.<br/>Wenn auch für den Datensatz, der für diagrammbasiertes Stitching aktiviert ist, eine historische Stitching-Aufstockung erforderlich ist, sollte das Diagramm bereits historische Identitäten für den gesamten Zeitraum enthalten, um die gewünschten Stitching-Ergebnisse zu erhalten.
 - Wenn Sie die diagrammbasierte Zuordnung verwenden möchten und davon ausgehen, dass der Ereignis-Datensatz zum Identitätsdiagramm beitragen wird, sollten Sie [den Datensatz für den Identity Service aktivieren](/help/stitching/faq.md#enable-a-dataset-for-the-identity-service).
-- Die persistente ID und Personen-ID können mit &quot;[&quot; verwendet &#x200B;](#identitymap). Oder die persistente ID und Personen-ID können Felder aus dem XDM-Schema sein. In diesem Fall müssen die Felder [als Identität definiert) &#x200B;](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/ui/fields/identity?lang=en) Schema sein.
+- Die persistente ID und Personen-ID können mit &quot;[&quot; verwendet ](#identitymap). Oder die persistente ID und Personen-ID können Felder aus dem XDM-Schema sein. In diesem Fall müssen die Felder [als Identität definiert) ](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/fields/identity?lang=en) Schema sein.
 
 >[!NOTE]
 >
@@ -221,9 +221,9 @@ Die folgenden Voraussetzungen gelten speziell für das diagrammbasierte Stitchin
 Die folgenden Einschränkungen gelten speziell für das diagrammbasierte Stitching:
 
 - Zeitstempel werden bei der Abfrage der Personen-ID unter Verwendung des angegebenen Namespace nicht berücksichtigt. Es ist also möglich, dass eine persistente ID mit einer Personen-ID aus einem Datensatz verknüpft ist, der einen früheren Zeitstempel hat.
-- In Szenarien mit gemeinsam genutzten Geräten, in denen der Namespace im Diagramm mehrere Identitäten enthält, wird die erste lexikografische Identität verwendet. Wenn Namespace-Beschränkungen und -Prioritäten im Rahmen der Veröffentlichung von Diagrammverknüpfungsregeln konfiguriert werden, wird die Identität des letzten authentifizierten Benutzers verwendet. Weitere Informationen finden [&#x200B; unter &#x200B;](/help/use-cases/stitching/shared-devices.md) Geräte .
+- In Szenarien mit gemeinsam genutzten Geräten, in denen der Namespace im Diagramm mehrere Identitäten enthält, wird die erste lexikografische Identität verwendet. Wenn Namespace-Beschränkungen und -Prioritäten im Rahmen der Veröffentlichung von Diagrammverknüpfungsregeln konfiguriert werden, wird die Identität des letzten authentifizierten Benutzers verwendet. Weitere Informationen finden [ unter ](/help/use-cases/stitching/shared-devices.md) Geräte .
 - Es gibt eine feste Grenze von drei Monaten, bis Identitäten im Identitätsdiagramm aufgestockt werden. Sie würden Identitäten zum Aufstocken verwenden, falls Sie keine Experience Platform-Anwendung wie Real-time Customer Data Platform zum Ausfüllen des Identitätsdiagramms verwenden.
-- Es [&#x200B; die „Leitplanken &#x200B;](https://experienceleague.adobe.com/de/docs/experience-platform/identity/guardrails) Identity Service“. Siehe beispielsweise die folgenden [statischen Beschränkungen](https://experienceleague.adobe.com/de/docs/experience-platform/identity/guardrails#static-limits):
+- Es [ die „Leitplanken ](https://experienceleague.adobe.com/en/docs/experience-platform/identity/guardrails) Identity Service“. Siehe beispielsweise die folgenden [statischen Beschränkungen](https://experienceleague.adobe.com/en/docs/experience-platform/identity/guardrails#static-limits):
    - Maximale Anzahl von Identitäten in einem Diagramm: 50.
    - Maximale Anzahl von Links zu einer Identität für eine einzelne Batch-Aufnahme: 50.
    - Maximale Anzahl von Identitäten in einem XDM-Datensatz für die Diagrammaufnahme: 20.
