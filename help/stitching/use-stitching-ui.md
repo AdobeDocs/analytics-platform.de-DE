@@ -58,7 +58,7 @@ Wenn Sie die Voraussetzungen erfüllen, sollten Sie einige Preflight-Prüfungen 
 
 
    * **Personen-ID**
-      * Stellen Sie bei diagrammbasiertem Stitching sicher, dass das Identitätsdiagramm Fragmente enthält, die ID-Werte aus dem ausgewählten persistenten ID-Namespace und dem Personen-ID-Namespace verknüpfen. Sie können einen Test ausführen, indem Sie zum [Experience Platform-Identitätsdiagramm-Viewer wechseln &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-graph-viewer){target="_blank"} das Diagramm nach einigen persistenten ID-Testwerten abfragen. Überprüfen Sie, ob diese persistenten ID-Werte mit Personen-ID-Werten im Diagramm verknüpft sind.
+      * Stellen Sie bei diagrammbasiertem Stitching sicher, dass das Identitätsdiagramm Fragmente enthält, die ID-Werte aus dem ausgewählten persistenten ID-Namespace und dem Personen-ID-Namespace verknüpfen. Sie können einen Test ausführen, indem Sie zum [Experience Platform-Identitätsdiagramm-Viewer wechseln &#x200B;](https://experienceleague.adobe.com/de/docs/experience-platform/identity/features/identity-graph-viewer){target="_blank"} das Diagramm nach einigen persistenten ID-Testwerten abfragen. Überprüfen Sie, ob diese persistenten ID-Werte mit Personen-ID-Werten im Diagramm verknüpft sind.
       * Fragen Sie für das feldbasierte Stitching 7 Tage Daten ab, bei denen das Feld für Ihre Personen-ID nicht null ist, und teilen Sie dies durch eine Abfrage von 7 Tagen Daten für alle Ereignisse in Ihrem Datensatz. Dieser Prozentsatz sollte idealerweise über 5 % liegen.
 
         Beispiel einer Abfrage, die Sie zur Überprüfung verwenden können:
@@ -91,7 +91,7 @@ Wenn Sie die Voraussetzungen erfüllen, sollten Sie einige Preflight-Prüfungen 
 >id="connection_changeto_identitygraph"
 >title="Änderung am Identitätsdiagramm"
 >abstract="Stellen Sie sicher, dass Sie die Einrichtung des Identitätsdiagramms abgeschlossen haben, bevor Sie das Identitätsdiagramm für die Zuordnung verwenden."
->additional-url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/stitching/gbs" text="Grafikbasierte Zuordnung"
+>additional-url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/stitching/gbs" text="Grafikbasierte Zuordnung"
 
 >[!CONTEXTUALHELP]
 >id="connection_stitching_personid"
