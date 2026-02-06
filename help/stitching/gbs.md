@@ -5,23 +5,25 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: ea5c9114-1fc3-4686-b184-2850acb42b5c
-source-git-commit: a94f3fe6821d96c76b759efa3e7eedc212252c5f
+source-git-commit: b5afcfe2cac8aa12d7f4d0cf98658149707123e3
 workflow-type: tm+mt
-source-wordcount: '1685'
-ht-degree: 5%
+source-wordcount: '1741'
+ht-degree: 4%
 
 ---
 
 # Grafikbasierte Zuordnung
 
-Bei der diagrammbasierten Zuordnung geben Sie einen Ereignis-Datensatz an. Für diesen Ereignis-Datensatz geben Sie die persistente ID (Cookie) und den gewünschten Zuordnungs-Namespace aus dem Identitätsdiagramm mit Personen-ID-Werten an. Diagrammbasiertes Stitching fügt dem Ereignis-Datensatz eine neue Spalte für die zugeordnete ID hinzu. Die persistente ID wird verwendet, um das Identitätsdiagramm mithilfe des angegebenen Zusammenfügungs-Namespace aus dem Experience Platform Identity Service abzufragen und so die zusammengefügte ID zu aktualisieren.
+Bei der diagrammbasierten Zuordnung geben Sie einen Ereignis-Datensatz, die persistente ID (Cookie) für diesen Datensatz und den Namespace der gewünschten Personen-ID aus dem Identitätsdiagramm an. Diagrammbasierte Zuordnung versucht, die Personen-ID-Informationen für die Customer Journey Analytics-Datenanalyse bei jedem Ereignis verfügbar zu machen. Die persistente ID wird verwendet, um das Identitätsdiagramm vom Experience Platform Identity Service abzufragen und die Personen-ID aus dem angegebenen Namespace abzurufen.
+
+Wenn die Personen-ID-Informationen für ein Ereignis nicht abgerufen werden können, wird stattdessen die persistente ID für dieses (nicht *)* verwendet. Daher enthält in einer [Datenansicht](/help/data-views/data-views.md) die mit einer [Verbindung“ verknüpft ist, ](/help/connections/overview.md) den Datensatz enthält, der für das Zusammenfügen aktiviert ist, die Datenansichtskomponente für die Personen-ID entweder den Personen-ID-Wert oder den beständigen ID-Wert auf der Ereignisebene.
 
 
 ![Diagrammbasiertes Stitching](/help/stitching/assets/gbs.png)
 
 ## IdentityMap
 
-Diagrammbasiertes Stitching unterstützt die Verwendung der [`identityMap` Feldergruppe &#x200B;](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/schema/composition#identity) folgenden Szenarien:
+Diagrammbasiertes Stitching unterstützt die Verwendung der [`identityMap` Feldergruppe ](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/schema/composition#identity) folgenden Szenarien:
 
 - Verwendung der primären Identität in `identityMap` Namespaces zur Definition der persistenten ID:
    - Wenn mehrere primäre Identitäten in verschiedenen Namespaces gefunden werden, werden die Identitäten in den Namespaces lexikografisch sortiert, und die erste Identität wird ausgewählt.
@@ -112,7 +114,7 @@ Betrachten Sie die folgenden beiden Identitätsdiagramm-Aktualisierungen im Lauf
 
 ![Identitätsdiagramm 3579](assets/identity-graphs.svg)
 
-Sie können ein Identitätsdiagramm im Zeitverlauf für ein bestimmtes Profil mit dem [Identitätsdiagramm-Viewer](https://experienceleague.adobe.com/de/docs/experience-platform/identity/features/identity-graph-viewer) anzeigen. Siehe auch [Verknüpfungslogik für Identity Service](https://experienceleague.adobe.com/de/docs/experience-platform/identity/features/identity-linking-logic), um ein besseres Verständnis der beim Verknüpfen von Identitäten verwendeten Logik zu erhalten.
+Sie können ein Identitätsdiagramm im Zeitverlauf für ein bestimmtes Profil mit dem [Identitätsdiagramm-Viewer](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-graph-viewer) anzeigen. Siehe auch [Verknüpfungslogik für Identity Service](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-linking-logic), um ein besseres Verständnis der beim Verknüpfen von Identitäten verwendeten Logik zu erhalten.
 
 ### Schritt 1: Echtes Zusammenfügen
 
@@ -120,7 +122,7 @@ Bei der Live-Zuordnung wird versucht, jedes Ereignis bei der Erfassung mit den z
 
 +++ Details
 
-| | Zeit | Persistente ID<br/>`ECID` | namespace<br/>`Email` ![DataMapping](/help/assets/icons/DataMapping.svg) | Zugeordnete ID (nach Live-Zuordnung) |
+| | Zeit | Persistente ID<br/>`ECID` | namespace<br/>`Email` ![DataMapping](/help/assets/icons/DataMapping.svg) | Resultierende ID (nach der Echtzeit-Zuordnung) |
 |--:|---|---|---|---|
 | 1 | 12.05.2023 11 :00 | `246` | `246` ![Zweig1](/help/assets/icons/Branch1.svg) *undefiniert* | `246` |
 | 2 | 12.05.2023 14 :00 | `246` | `246` ![Zweig1](/help/assets/icons/Branch1.svg) `bob.a@gmail.com` | `bob.a@gmail.com` |
@@ -132,8 +134,8 @@ Bei der Live-Zuordnung wird versucht, jedes Ereignis bei der Erfassung mit den z
 
 {style="table-layout:auto"}
 
-Sie können sehen, wie für jedes Ereignis die zugeordnete ID aufgelöst wird. Basiert auf der Zeit, der persistenten ID und der Suche des Identitätsdiagramms für den angegebenen Namespace (zur gleichen Zeit).
-Wenn die Suche auf mehr als eine zusammengefügte ID aufgelöst wird (wie bei Ereignis 7), wird die lexikografische erste ID ausgewählt, die vom Identitätsdiagramm zurückgegeben wird (`a.b@yahoo.co.uk` im Beispiel).
+Sie können sehen, wie für jedes Ereignis die resultierende ID aufgelöst wird. Basierend auf der Zeit, der persistenten ID und der Suche des Identitätsdiagramms für den angegebenen Personen-ID-Namespace.
+Wenn die Suche auf mehr als eine resultierende ID aufgelöst wird (wie bei Ereignis 7), wird die lexikografische erste ID ausgewählt, die vom Identitätsdiagramm zurückgegeben wird (`a.b@yahoo.co.uk` im Beispiel).
 
 +++
 
@@ -145,7 +147,7 @@ In regelmäßigen Abständen (je nach ausgewähltem Lookback-Fenster) berechnet 
 
 Bei einer Wiederholungszuordnung vom 13.05.2023 16:30 mit einer 24-Stunden-Lookback-Fensterkonfiguration werden einige Ereignisse aus dem Beispiel erneut zugeordnet (angegeben durch ![Replay](/help/assets/icons/Replay.svg)).
 
-| | Zeit | Persistente ID<br/>`ECID` | namespace<br/>`Email` ![DataMapping](/help/assets/icons/DataMapping.svg) | Zugeordnete ID<br/>(nach Live-Zuordnung) | Zusammengefügte ID<br/>(nach 24 Stunden Wiederholung) |
+| | Zeit | Persistente ID<br/>`ECID` | namespace<br/>`Email` ![DataMapping](/help/assets/icons/DataMapping.svg) | Ergebene ID<br/>(nach der Echtzeit-Zuordnung) | Ergebnis ID<br/>(nach 24 Stunden Wiederholung) |
 |---|---|---|---|---|---|
 | 2 | 12.05.2023 14 :00 | `246` | `246` ![Zweig1](/help/assets/icons/Branch1.svg) `bob.a@gmail.com` | `bob.a@gmail.com` | `bob.a@gmail.com` |
 | 3 | 12.05.2023 15 :00 | `246` | `246` ![Zweig1](/help/assets/icons/Branch1.svg) `bob.a@gmail.com` | `bob.a@gmail.com` | `bob.a@gmail.com` |
@@ -160,7 +162,7 @@ Bei einer Wiederholungszuordnung vom 13.05.2023 16:30 mit einer 24-Stunden-Lookb
 Mit der Wiederholungszuordnung vom 13.05.2023 16:30 werden bei einer 7-tägigen Lookback-Fensterkonfiguration alle Ereignisse aus der Stichprobe erneut zugeordnet.
 
 
-| | Zeit | Persistente ID<br/>`ECID` | namespace<br/>`Email` ![DataMapping](/help/assets/icons/DataMapping.svg) | Zugeordnete ID<br/>(nach Live-Zuordnung) | Zusammengefügte ID<br/>(nach Wiederholung 7 Tage) |
+| | Zeit | Persistente ID<br/>`ECID` | namespace<br/>`Email` ![DataMapping](/help/assets/icons/DataMapping.svg) | Ergebene ID<br/>(nach der Echtzeit-Zuordnung) | Ergebnis ID<br/>(nach Wiederholung 7 Tage) |
 |---|---|---|---|---|---|
 | ![Wiederholen](/help/assets/icons/Replay.svg) 1 | 12.05.2023 11 :00 | `246` | `246` ![Zweig1](/help/assets/icons/Branch1.svg) *undefiniert* | `246` | `a.b@yahoo.co.uk` |
 | ![Wiederholen](/help/assets/icons/Replay.svg) 2 | 12.05.2023 14 :00 | `246` | `246` ![Zweig1](/help/assets/icons/Branch1.svg) `bob.a@gmail.com` | `bob.a@gmail.com` | `a.b@yahoo.co.uk` |
@@ -176,13 +178,13 @@ Mit der Wiederholungszuordnung vom 13.05.2023 16:30 werden bei einer 7-tägigen 
 
 ### Schritt 3: Datenschutzanfrage
 
-Wenn Sie eine Datenschutzanfrage erhalten, wird die zugeordnete ID in allen Datensätzen für den betroffenen Benutzer der Datenschutzanfrage gelöscht.
+Wenn Sie eine Datenschutzanfrage erhalten, wird die daraus resultierende ID in allen Datensätzen für den betroffenen Benutzer der Datenschutzanfrage gelöscht.
 
 +++ Details
 
 Die folgende Tabelle enthält dieselben Daten wie oben, zeigt jedoch die Auswirkungen, die eine Datenschutzanfrage (z. B. 2023-05-13 18:00) für die Beispielereignisse hat.
 
-| | Zeit | Persistente ID<br/>`ECID` | namespace<br/>`Email` ![DataMapping](/help/assets/icons/DataMapping.svg) | Zusammengefügte ID (nach Datenschutzanfrage) |
+| | Zeit | Persistente ID<br/>`ECID` | namespace<br/>`Email` ![DataMapping](/help/assets/icons/DataMapping.svg) | Ergebnis-ID (nach Datenschutzanfrage) |
 |--:|---|---|---|---|
 | ![RemoveCircle](/help/assets/icons/RemoveCircle.svg) 1 | 12.05.2023 11 :00 | `246` | `246` ![Zweig1](/help/assets/icons/Branch1.svg) `a.b@yahoo.co.uk` | `246` |
 | ![RemoveCircle](/help/assets/icons/RemoveCircle.svg) 2 | 12.05.2023 14 :00 | `246` | `246`![Verzweigung1](/help/assets/icons/Branch1.svg) `a.b@yahoo.co.uk` | `246` |
@@ -207,7 +209,7 @@ Die folgenden Voraussetzungen gelten speziell für das diagrammbasierte Stitchin
    - Alle Datensätze, die solche relevanten Identitäten enthalten, müssen [für die Aufnahme von Identitätsdiagrammdaten aktiviert](faq.md#enable-a-dataset-for-the-identity-service). Durch diese Aktivierung wird sichergestellt, dass eingehende Identitäten im Laufe der Zeit aus allen erforderlichen Quellen zum Diagramm hinzugefügt werden.
    - Wenn Sie bereits seit einiger Zeit das Echtzeit-Kundendatenprofil oder Adobe Journey Optimizer verwenden, sollte das Diagramm bis zu einem gewissen Grad bereits eingerichtet sein.<br/>Wenn auch für den Datensatz, der für diagrammbasiertes Stitching aktiviert ist, eine historische Stitching-Aufstockung erforderlich ist, sollte das Diagramm bereits historische Identitäten für den gesamten Zeitraum enthalten, um die gewünschten Stitching-Ergebnisse zu erhalten.
 - Wenn Sie die diagrammbasierte Zuordnung verwenden möchten und davon ausgehen, dass der Ereignis-Datensatz zum Identitätsdiagramm beitragen wird, sollten Sie [den Datensatz für den Identity Service aktivieren](/help/stitching/faq.md#enable-a-dataset-for-the-identity-service).
-- Die persistente ID und Personen-ID können mit &quot;[&quot; verwendet &#x200B;](#identitymap). Oder die persistente ID und Personen-ID können Felder aus dem XDM-Schema sein. In diesem Fall müssen die Felder [als Identität definiert) &#x200B;](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/ui/fields/identity?lang=en) Schema sein.
+- Die persistente ID und Personen-ID können mit &quot;[&quot; verwendet ](#identitymap). Oder die persistente ID und Personen-ID können Felder aus dem XDM-Schema sein. In diesem Fall müssen die Felder [als Identität definiert) ](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/fields/identity?lang=en) Schema sein.
 
 >[!NOTE]
 >
@@ -219,9 +221,9 @@ Die folgenden Voraussetzungen gelten speziell für das diagrammbasierte Stitchin
 Die folgenden Einschränkungen gelten speziell für das diagrammbasierte Stitching:
 
 - Zeitstempel werden bei der Abfrage der Personen-ID unter Verwendung des angegebenen Namespace nicht berücksichtigt. Es ist also möglich, dass eine persistente ID mit einer Personen-ID aus einem Datensatz verknüpft ist, der einen früheren Zeitstempel hat.
-- In Szenarien mit gemeinsam genutzten Geräten, in denen der Namespace im Diagramm mehrere Identitäten enthält, wird die erste lexikografische Identität verwendet. Wenn Namespace-Beschränkungen und -Prioritäten im Rahmen der Veröffentlichung von Diagrammverknüpfungsregeln konfiguriert werden, wird die Identität des letzten authentifizierten Benutzers verwendet. Weitere Informationen finden [&#x200B; unter &#x200B;](/help/use-cases/stitching/shared-devices.md) Geräte .
+- In Szenarien mit gemeinsam genutzten Geräten, in denen der Namespace im Diagramm mehrere Identitäten enthält, wird die erste lexikografische Identität verwendet. Wenn Namespace-Beschränkungen und -Prioritäten im Rahmen der Veröffentlichung von Diagrammverknüpfungsregeln konfiguriert werden, wird die Identität des letzten authentifizierten Benutzers verwendet. Weitere Informationen finden [ unter ](/help/use-cases/stitching/shared-devices.md) Geräte .
 - Es gibt eine feste Grenze von drei Monaten, bis Identitäten im Identitätsdiagramm aufgestockt werden. Sie würden Identitäten zum Aufstocken verwenden, falls Sie keine Experience Platform-Anwendung wie Real-time Customer Data Platform zum Ausfüllen des Identitätsdiagramms verwenden.
-- Es [&#x200B; die „Leitplanken &#x200B;](https://experienceleague.adobe.com/de/docs/experience-platform/identity/guardrails) Identity Service“. Siehe beispielsweise die folgenden [statischen Beschränkungen](https://experienceleague.adobe.com/de/docs/experience-platform/identity/guardrails#static-limits):
+- Es [ die „Leitplanken ](https://experienceleague.adobe.com/en/docs/experience-platform/identity/guardrails) Identity Service“. Siehe beispielsweise die folgenden [statischen Beschränkungen](https://experienceleague.adobe.com/en/docs/experience-platform/identity/guardrails#static-limits):
    - Maximale Anzahl von Identitäten in einem Diagramm: 50.
    - Maximale Anzahl von Links zu einer Identität für eine einzelne Batch-Aufnahme: 50.
    - Maximale Anzahl von Identitäten in einem XDM-Datensatz für die Diagrammaufnahme: 20.

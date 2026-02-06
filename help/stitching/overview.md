@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 exl-id: 1c42efac-b3d2-437b-8b0b-9c6fdfed8520
 role: Admin
-source-git-commit: 9bebfaf7e10762bc7382d8b0d55148ee23698dd9
+source-git-commit: d1ba2d203738ca9bf74d17bb93712eff26f88f25
 workflow-type: tm+mt
-source-wordcount: '965'
-ht-degree: 60%
+source-wordcount: '982'
+ht-degree: 54%
 
 ---
 
@@ -24,7 +24,7 @@ Wenn Sie Datensätze mit ähnlichen Personen-IDs kombinieren, wird die Attributi
 
 Leider sind nicht alle ereignisbasierten Datensätze, die Teil Ihrer Verbindung in Customer Journey Analytics sind, ausreichend mit Daten gefüllt, um diese Attribution standardmäßig zu unterstützen. Insbesondere bei Web- oder Mobile-basierten Erlebnisdatensätzen sind die tatsächlichen Informationen zur Personen-ID oft nicht für alle Ereignisse verfügbar.
 
-Durch das Zusammenfügen von Identitäten in den Zeilen eines Datensatzes wird sichergestellt, dass die Personen-ID (zusammengefügte ID) für jedes Ereignis verfügbar ist. Bei der Zuordnung werden Benutzerdaten aus authentifizierten und nicht authentifizierten Sitzungen untersucht, um den allgemeinen Wert für die Personen-ID zu ermitteln, der als zugeordnete ID verwendet werden kann. Durch diese Neuzuweisung werden unterschiedliche Datensätze zu einer einzigen zusammengefügten ID aufgelöst, die auf der Personenebene und nicht auf Geräte- oder Cookie-Ebene analysiert werden kann.
+Durch das Zusammenfügen von Identitäten in den Zeilen eines Datensatzes wird sichergestellt, dass die gewünschten Personen-ID-Informationen für so viele Ereignisse wie möglich verfügbar sind. Beim Zusammenfügen werden Benutzerdaten aus authentifizierten und nicht authentifizierten Sitzungen untersucht, um den allgemeinen Wert der Personen-ID zu ermitteln, der verwendet werden kann. Durch diese Neuzuweisung werden unterschiedliche Datensätze zu einer einzelnen Personen-ID aufgelöst, die auf Personenebene und nicht auf Geräte- oder Cookie-Ebene analysiert werden kann. Wenn jedoch kein gemeinsamer Personen-ID-Wert ermittelt werden kann, wird stattdessen der persistente ID-Wert verwendet.
 
 Customer Journey Analytics unterstützt zwei Arten der Zuordnung: [Feldbasierte Zuordnung](fbs.md) und [Diagrammbasierte Zuordnung](gbs.md).
 
@@ -43,10 +43,9 @@ Bevor Sie die Zuordnung verwenden, sollten Sie sicherstellen, dass Ihr Unternehm
    - Informationen zu Adobe Analytics-Daten finden Sie unter [Verwenden von Daten aus Report Suites von Adobe Analytics in Customer Journey Analytics](/help/getting-started/aa-vs-cja/aa-data-in-cja.md). 
    - Informationen zu anderen Datentypen finden Sie unter [Erstellen eines Schemas](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/tutorials/create-schema-ui) und [Aufnehmen von Daten](https://experienceleague.adobe.com/de/docs/experience-platform/ingestion/home) in der Adobe Experience Platform-Dokumentation.
 
-Sie profitieren von der Cross-Channel-Analyse, wenn Sie einen oder mehrere Ihrer zugeordneten Datensätze als Teil der Definition Ihrer Customer Journey Analytics-Verbindung mit anderen Datensätzen kombinieren, z. B. Callcenter-Daten. Bei dieser Verbindungskonfiguration wird davon ausgegangen, dass diese anderen Datensätze bereits eine Personen-ID in jeder Zeile enthalten, ähnlich der zugeordneten ID.
+Sie profitieren von der Cross-Channel-Analyse, wenn Sie einen oder mehrere Ihrer zugeordneten Datensätze als Teil der Definition Ihrer Customer Journey Analytics-Verbindung mit anderen Datensätzen kombinieren, z. B. Callcenter-Daten. Bei dieser Verbindungskonfiguration wird davon ausgegangen, dass diese anderen Datensätze bereits eine Personen-ID aus demselben Namespace in möglichst vielen Zeilen enthalten.
 
-Sobald Ihr Unternehmen die generischen [Voraussetzungen](overview.md#prerequisites) erfüllt, die üblichen [Einschränkungen](overview.md#limitations) sowie die für [&#x200B; (feldbasiert](fbs.md) und [diagrammbasiert](gbs.md)) spezifischen Voraussetzungen und Einschränkungen versteht, können Sie diese Schritte ausführen, um die Zuordnung in Customer Journey Analytics anzufordern und zu verwenden.
-
+Sobald Ihr Unternehmen die generischen [Voraussetzungen](overview.md#prerequisites) erfüllt, die üblichen [Einschränkungen](overview.md#limitations) sowie die für [ (feldbasiert](fbs.md) und [diagrammbasiert](gbs.md)) spezifischen Voraussetzungen und Einschränkungen versteht, können Sie diese Schritte ausführen, um die Zuordnung in Customer Journey Analytics anzufordern und zu verwenden.
 
 ## Einschränkungen
 
@@ -65,7 +64,7 @@ Verwechseln Sie die Zuordnung nicht mit:
 
 ## Optionen
 
-Das Customer Journey Analytics-Paket, zu dem Sie berechtigt sind, bestimmt die verfügbaren Zuordnungsmethoden, Optionen für die anfängliche Aufstockungsdauer, das Lookback-Fenster, die Wiederholungshäufigkeit und die maximale Anzahl von Datensätzen, die für das Zusammenfügen zulässig sind. Weitere Informationen finden Sie in der &lbrace;0[&#x200B; Customer Journey Analytics-Produktbeschreibung. &#x200B;](https://helpx.adobe.com/de/legal/product-descriptions/customer-journey-analytics.html) Legen Sie die verfügbaren Optionen fest, bevor Sie das Zusammenfügen aktivieren.
+Das Customer Journey Analytics-Paket, zu dem Sie berechtigt sind, bestimmt die verfügbaren Zuordnungsmethoden, Optionen für die anfängliche Aufstockungsdauer, das Lookback-Fenster, die Wiederholungshäufigkeit und die maximale Anzahl von Datensätzen, die für das Zusammenfügen zulässig sind. Weitere Informationen finden Sie in der {0[ Customer Journey Analytics-Produktbeschreibung. ](https://helpx.adobe.com/de/legal/product-descriptions/customer-journey-analytics.html) Legen Sie die verfügbaren Optionen fest, bevor Sie das Zusammenfügen aktivieren.
 
 | | Customer Journey Analytics-<br/> | Customer Journey Analytics<br/>Prime | Customer Journey Analytics<br/>Ultimate |
 |---|---|---|---|

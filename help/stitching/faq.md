@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 exl-id: f4115164-7263-40ad-9706-3b98d0bb7905
 role: Admin
-source-git-commit: a94f3fe6821d96c76b759efa3e7eedc212252c5f
+source-git-commit: d1ba2d203738ca9bf74d17bb93712eff26f88f25
 workflow-type: tm+mt
 source-wordcount: '2149'
 ht-degree: 22%
@@ -22,9 +22,9 @@ Im Folgenden finden Sie einige häufig gestellte Fragen zum Zusammenfügen:
 
 Sie können eine Flussvisualisierung mit der Dimension „Datensatz-ID“ verwenden.
 
-1. Melden Sie sich bei [Customer Journey Analytics an &#x200B;](https://analytics.adobe.com) erstellen Sie ein leeres Workspace-Projekt.
-2. Wählen Sie auf der linken Seite **[!UICONTROL ** Visualisierungen **]** aus und ziehen Sie eine **[!UICONTROL **&#x200B; Fluss &#x200B;**]**-Visualisierung auf die Arbeitsfläche auf der rechten Seite.
-3. Wählen Sie auf der linken Seite **[!UICONTROL ** Komponenten **]** und ziehen Sie die Dimension **[!UICONTROL ** Datensatz-ID **]** an die mittlere Position mit der Bezeichnung **[!UICONTROL **&#x200B; Dimension oder Element &#x200B;**]**.
+1. Melden Sie sich bei [Customer Journey Analytics an ](https://analytics.adobe.com) erstellen Sie ein leeres Workspace-Projekt.
+2. Wählen Sie auf der linken Seite **[!UICONTROL ** Visualisierungen **]** aus und ziehen Sie eine **[!UICONTROL ** Fluss **]**-Visualisierung auf die Arbeitsfläche auf der rechten Seite.
+3. Wählen Sie auf der linken Seite **[!UICONTROL ** Komponenten **]** und ziehen Sie die Dimension **[!UICONTROL ** Datensatz-ID **]** an die mittlere Position mit der Bezeichnung **[!UICONTROL ** Dimension oder Element **]**.
 4. Dieser Flussbericht ist interaktiv. Um die Flüsse zu nachfolgenden oder vorherigen Seiten zu erweitern, wählen Sie einen der Werte aus. Verwenden Sie das Kontextmenü, um Spalten zu erweitern oder zu reduzieren. Im selben Flussbericht können auch verschiedene Dimensionen verwendet werden.
 
 Wenn Sie die Datensatz-ID-Dimensionselemente umbenennen möchten, können Sie einen Lookup-Datensatz verwenden.
@@ -47,7 +47,7 @@ In einigen Situationen ist es möglich, dass sich mehrere Personen von demselben
 
 Die Personen-ID überschreibt die persistente ID, sodass freigegebene Geräte als separate Personen betrachtet werden (auch wenn sie von demselben Gerät stammen).
 
-Weitere Informationen finden Sie [&#x200B; Anwendungsbeispiel &#x200B;](/help/use-cases/stitching/shared-devices.md)Freigegebene Geräte“.
+Weitere Informationen finden Sie [ Anwendungsbeispiel ](/help/use-cases/stitching/shared-devices.md)Freigegebene Geräte“.
 
 +++
 
@@ -75,7 +75,7 @@ Die Echtzeit-Zuordnung ist etwa eine Woche, nachdem Adobe die Zuordnung aktivier
 
 +++ Was ist der Unterschied zwischen geräteübergreifender Analyse (eine Funktion im herkömmlichen Analytics) und kanalübergreifender Analyse?
 
-[Geräteübergreifende Analyse](https://experienceleague.adobe.com/de/docs/analytics/components/cda/overview) ist eine Funktion, die speziell für das herkömmliche Adobe Analytics entwickelt wurde und Ihnen hilft, zu verstehen, wie Benutzende geräteübergreifend arbeiten. Sie bietet zwei Workflows zum Verknüpfen von Gerätedaten: die feldbasierte Zuordnung und das Gerätediagramm.
+[Geräteübergreifende Analyse](https://experienceleague.adobe.com/en/docs/analytics/components/cda/overview) ist eine Funktion, die speziell für das herkömmliche Adobe Analytics entwickelt wurde und Ihnen hilft, zu verstehen, wie Benutzende geräteübergreifend arbeiten. Sie bietet zwei Workflows zum Verknüpfen von Gerätedaten: die feldbasierte Zuordnung und das Gerätediagramm.
 
 Die Cross-Channel-Analyse ist ein für Customer Journey Analytics spezifisches Anwendungsbeispiel, mit dem Sie verstehen können, wie benutzende Personen auf beiden Geräten und Kanälen arbeiten. Er verknüpft die Personen-ID eines Datensatzes, sodass dieser Datensatz nahtlos mit anderen Datensätzen kombiniert werden kann. Diese Funktion funktioniert im Design ähnlich wie die geräteübergreifende Analyse beim feldbasierten Stitching, aber die Implementierung unterscheidet sich aufgrund der unterschiedlichen Datenarchitektur von herkömmlichem Analytics und Customer Journey Analytics. Siehe [Zusammenfügen](overview.md) und den [Cross-Channel-Analyse](../use-cases/cross-channel/cross-channel.md)-Anwendungsfall für weitere Informationen.
 
@@ -107,7 +107,7 @@ Zur Veranschaulichung stellen Sie sich die folgenden Daten für Identitäten, Er
 | | 3 | ts2 | 123 | ECID | Alex | CustId |
 
 
-| Zusammengefügter Datensatz | ID | timestamp | Persistente ID | Persistenter Namespace | Personen-ID | Personen-Namespace | Zusammengefügte ID | Zusammengefügter Namespace |
+| Zusammengefügter Datensatz | ID | timestamp | Persistente ID | Persistenter Namespace | Personen-ID | Personen-Namespace | resultierende ID | Zusammengefügter Namespace |
 |---|---|---|---|---|---|---|---|---|
 | | 1 | ts0 | 123 | ECID | | | Bob | CustId |
 | | 2 | ts1 | 123 | ECID | Bob | CustId | Bob | CustId |
@@ -131,7 +131,7 @@ Wenn eine Datenschutzanfrage für einen Kunden mit CustID Bob empfangen wird, we
 | | 3 | ts2 | 123 | ECID | Alex | CustId |
 
 
-| Zusammengefügter Datensatz | ID | timestamp | Persistente ID | Persistenter Namespace | Personen-ID | Personen-Namespace | Zusammengefügte ID | Zusammengefügter Namespace |
+| Zusammengefügter Datensatz | ID | timestamp | Persistente ID | Persistenter Namespace | Personen-ID | Personen-Namespace | resultierende ID | Zusammengefügter Namespace |
 |:---:|---|---|---|---|---|---|---|---|
 | | 1 | ts0 | 123 | ECID | | | **Alex** | CustId |
 | ![DeleteOutline](/help/assets/icons/DeleteOutline.svg) | ~~2~~ | ~~ts1~~ | ~~123~~ | ~~ECID~~ | ~~Bob~~ | ~~CustId~~ | ~~Bob~~ | ~~CustId~~ |
@@ -155,7 +155,7 @@ Wenn eine Datenschutzanfrage für einen Kunden mit CustID Bob empfangen wird, we
 | | 3 | ts2 | 123 | ECID | Alex | CustId |
 
 
-| Zusammengefügter Datensatz | ID | timestamp | Persistente ID | Persistenter Namespace | Personen-ID | Personen-Namespace | Zusammengefügte ID | Zusammengefügter Namespace |
+| Zusammengefügter Datensatz | ID | timestamp | Persistente ID | Persistenter Namespace | Personen-ID | Personen-Namespace | resultierende ID | Zusammengefügter Namespace |
 |:---:|---|---|---|---|---|---|---|---|
 | | 1 | ts0 | 123 | ECID | | | **123** | ECID |
 | ![DeleteOutline](/help/assets/icons/DeleteOutline.svg) | ~~2~~ | ~~ts1~~ | ~~123~~ | ~~ECID~~ | ~~Bob~~ | ~~CustId~~ | ~~Bob~~ | ~~CustId~~ |
@@ -167,10 +167,10 @@ Wenn eine Datenschutzanfrage für einen Kunden mit CustID Bob empfangen wird, we
 
 +++ Was passiert, wenn das Feld „Persistente ID“ in einem oder mehreren Ereignissen leer ist?
 
-Wenn das Feld für persistente ID bei einem Ereignis in einem Datensatz, der zugeordnet wird, leer ist, wird die zugeordnete ID für dieses Ereignis auf eine dieser zwei Arten bestimmt:
+Wenn das Feld „Persistente ID“ bei einem Ereignis in einem zugeordneten Datensatz leer ist, wird die resultierende ID für dieses Ereignis auf eine dieser zwei Arten bestimmt:
 
-* Wenn das Feld für die Personen-ID nicht leer ist, verwendet Customer Journey Analytics den Wert in der Personen-ID als zusammengefügte ID.
-* Wenn das Feld Personen-ID leer ist, lässt Customer Journey Analytics auch die zugeordnete ID leer. In diesem Fall sind die Felder „Persistente ID“, „Personen-ID“ und „Zugeordnete ID“ beim Ereignis leer. Diese Ereignistypen werden aus jeder Customer Journey Analytics-Verbindung herausgenommen, die den zugeordneten Datensatz verwendet, bei dem die zugeordnete ID als Personen-ID ausgewählt wurde.
+* Wenn das Feld Personen-ID nicht leer ist, verwendet Customer Journey Analytics den Wert in der Personen-ID als resultierende ID.
+* Wenn das Feld Personen-ID leer ist, lässt Customer Journey Analytics auch die resultierende ID leer. In diesem Fall sind die Felder „Persistente ID“, „Personen-ID“ und „resultierende ID“ für das Ereignis leer. Diese Ereignistypen werden aus jeder Customer Journey Analytics-Verbindung herausgenommen, die den zugeordneten Datensatz verwendet, bei dem die resultierende ID als Personen-ID ausgewählt wurde.
 
 +++
 
@@ -181,7 +181,7 @@ Wenn das Feld für persistente ID bei einem Ereignis in einem Datensatz, der zug
 
 Seien Sie vorsichtig beim „Personen-Kollaps“, der auftritt, wenn das Zusammenfügen auf Daten angewendet wird, die Platzhalterwerte für vorübergehende IDs verwenden. In der folgenden Beispieltabelle werden undefinierte Personen-IDs, die aus einem Datensatz stammen, der aus einem CRM-System stammt, mit dem Wert „Undefiniert“ ausgefüllt, was zu einer falschen Darstellung von Personen führt.
 
-| Ereignis | Zeitstempel | Persistente ID (Cookie-ID) | Vorübergehende ID | Zusammengefügte ID (nach der Wiederholung) |
+| Ereignis | Zeitstempel | Persistente ID (Cookie-ID) | Vorübergehende ID | resultierende ID (nach der Wiederholung) |
 |---|---|---|---|---|
 | 1 | 12.05.2023:01 | 123 | – | **Cory** |
 | 2 | 12.05.2023:02 | 123 | Cory | **Cory** |
@@ -205,11 +205,11 @@ Bestimmte Metriken in Customer Journey Analytics ähneln den Metriken im herköm
 
 | **Zugeordnete Customer Journey Analytics-Daten** | **Nicht zugeordnete Customer Journey Analytics-Daten** | **Adobe Analytics** | **Analytics Ultimate mit CDA** |
 | ----- | ----- | ----- | ----- |
-| **Personen** = Anzahl unterschiedlicher Personen-IDs, bei denen die zusammengefügte ID als Personen-ID ausgewählt wird. Je nach Ergebnis des Zuordnungsprozesses kann **Personen** größer oder kleiner als **Unique Visitors** im herkömmlichen Adobe Analytics sein. | **Personen** = Anzahl unterschiedlicher Personen-IDs basierend auf der Spalte, die als Personen-ID ausgewählt wurde. **Personen** in Datensätzen des Analytics-Quell-Connectors ist ähnlich wie **Unique Visitors** im herkömmlichen Adobe Analytics, wenn `endUserIDs._experience.aaid.id` als Personen-ID in Customer Journey Analytics verwendet wird. | **Unique Visitors** = Anzahl unterschiedlicher Besucher-IDs. **Unique Visitors** ist möglicherweise nicht identisch mit der Anzahl der eindeutigen **ECID** s. | Siehe [Personen](https://experienceleague.adobe.com/de/docs/analytics/components/metrics/people). |
-| **Sitzungen**: Wird anhand der Sitzungseinstellungen in der Customer Journey Analytics-Datenansicht definiert. Der Zuordnungsprozess kann einzelne Sitzungen auf mehreren Geräten zu einer einzelnen Sitzung kombinieren. | **Sitzungen**: Wird anhand der in der Customer Journey Analytics-Datenansicht angegebenen Sitzungseinstellungen definiert. | **Besuche**: Siehe [Besuche](https://experienceleague.adobe.com/de/docs/analytics/components/metrics/visits). | **Besuche**: Wird basierend auf den Sitzungseinstellungen definiert, die in der [Virtual Report Suite von CDA](https://experienceleague.adobe.com/de/docs/analytics/components/cda/setup) angegeben sind. |
-| **Ereignisse** = Anzahl der Zeilen in den zugeordneten Daten in Customer Journey Analytics. Diese Metrik liegt normalerweise nahe bei **Vorfälle** im herkömmlichen Adobe Analytics. Beachten Sie jedoch die oben stehenden häufig gestellten Fragen zu Zeilen mit einer leeren persistenten ID. | **Ereignisse** = Anzahl der Zeilen in den nicht zugeordneten Daten in Customer Journey Analytics. Diese Metrik liegt normalerweise nahe bei **Vorfälle** im herkömmlichen Adobe Analytics. Beachten Sie jedoch, dass Ereignisse, die in den nicht zugeordneten Daten im Data Lake von Experience Platform eine leere Personen-ID aufweisen, nicht in Customer Journey Analytics aufgenommen werden. | **Vorfälle**: Siehe [Vorfälle](https://experienceleague.adobe.com/de/docs/analytics/components/metrics/occurrences). | **Vorfälle**: Siehe [Vorfälle](https://experienceleague.adobe.com/de/docs/analytics/components/metrics/occurrences). |
+| **Personen** = Anzahl unterschiedlicher Personen-IDs, bei denen die resultierende ID als Personen-ID ausgewählt wird. Je nach Ergebnis des Zuordnungsprozesses kann **Personen** größer oder kleiner als **Unique Visitors** im herkömmlichen Adobe Analytics sein. | **Personen** = Anzahl unterschiedlicher Personen-IDs basierend auf der Spalte, die als Personen-ID ausgewählt wurde. **Personen** in Datensätzen des Analytics-Quell-Connectors ist ähnlich wie **Unique Visitors** im herkömmlichen Adobe Analytics, wenn `endUserIDs._experience.aaid.id` als Personen-ID in Customer Journey Analytics verwendet wird. | **Unique Visitors** = Anzahl unterschiedlicher Besucher-IDs. **Unique Visitors** ist möglicherweise nicht identisch mit der Anzahl der eindeutigen **ECID** s. | Siehe [Personen](https://experienceleague.adobe.com/en/docs/analytics/components/metrics/people). |
+| **Sitzungen**: Wird anhand der Sitzungseinstellungen in der Customer Journey Analytics-Datenansicht definiert. Der Zuordnungsprozess kann einzelne Sitzungen auf mehreren Geräten zu einer einzelnen Sitzung kombinieren. | **Sitzungen**: Wird anhand der in der Customer Journey Analytics-Datenansicht angegebenen Sitzungseinstellungen definiert. | **Besuche**: Siehe [Besuche](https://experienceleague.adobe.com/en/docs/analytics/components/metrics/visits). | **Besuche**: Wird basierend auf den Sitzungseinstellungen definiert, die in der [Virtual Report Suite von CDA](https://experienceleague.adobe.com/en/docs/analytics/components/cda/setup) angegeben sind. |
+| **Ereignisse** = Anzahl der Zeilen in den zugeordneten Daten in Customer Journey Analytics. Diese Metrik liegt normalerweise nahe bei **Vorfälle** im herkömmlichen Adobe Analytics. Beachten Sie jedoch die oben stehenden häufig gestellten Fragen zu Zeilen mit einer leeren persistenten ID. | **Ereignisse** = Anzahl der Zeilen in den nicht zugeordneten Daten in Customer Journey Analytics. Diese Metrik liegt normalerweise nahe bei **Vorfälle** im herkömmlichen Adobe Analytics. Beachten Sie jedoch, dass Ereignisse, die in den nicht zugeordneten Daten im Data Lake von Experience Platform eine leere Personen-ID aufweisen, nicht in Customer Journey Analytics aufgenommen werden. | **Vorfälle**: Siehe [Vorfälle](https://experienceleague.adobe.com/en/docs/analytics/components/metrics/occurrences). | **Vorfälle**: Siehe [Vorfälle](https://experienceleague.adobe.com/en/docs/analytics/components/metrics/occurrences). |
 
-Andere Metriken können in Customer Journey Analytics und Adobe Analytics ähnlich sein. Beispielsweise ist die Gesamtanzahl für Adobe Analytics [benutzerspezifische Ereignisse](https://experienceleague.adobe.com/de/docs/analytics/components/metrics/custom-events) 1-100 im herkömmlichen Adobe Analytics und Customer Journey Analytics vergleichbar (unabhängig davon, ob zugeordnet oder nicht zugeordnet). [Funktionsunterschiede](/help/getting-started/aa-vs-cja/cja-aa.md)), z. B. die Deduplizierung zwischen Customer Journey Analytics und Adobe Analytics, können zu Diskrepanzen zwischen den beiden Produkten führen.
+Andere Metriken können in Customer Journey Analytics und Adobe Analytics ähnlich sein. Beispielsweise ist die Gesamtanzahl für Adobe Analytics [benutzerspezifische Ereignisse](https://experienceleague.adobe.com/en/docs/analytics/components/metrics/custom-events) 1-100 im herkömmlichen Adobe Analytics und Customer Journey Analytics vergleichbar (unabhängig davon, ob zugeordnet oder nicht zugeordnet). [Funktionsunterschiede](/help/getting-started/aa-vs-cja/cja-aa.md)), z. B. die Deduplizierung zwischen Customer Journey Analytics und Adobe Analytics, können zu Diskrepanzen zwischen den beiden Produkten führen.
 
 +++
 
@@ -217,7 +217,7 @@ Andere Metriken können in Customer Journey Analytics und Adobe Analytics ähnli
 
 +++ Kann Customer Journey Analytics Identity Map-Felder verwenden?
 
-Ja, Customer Journey Analytics kann Identitätszuordnungsfelder sowohl für [&#x200B; (feldbasierte](/help/stitching/fbs.md#identitymap) als auch für [diagrammbasierte](/help/stitching/gbs.md#identitymap) Zuordnung verwenden.
+Ja, Customer Journey Analytics kann Identitätszuordnungsfelder sowohl für [ (feldbasierte](/help/stitching/fbs.md#identitymap) als auch für [diagrammbasierte](/help/stitching/gbs.md#identitymap) Zuordnung verwenden.
 
 +++
 
@@ -269,7 +269,7 @@ curl -X PATCH \
 
 Jede Verwendung des `unifiedProfile`-Tags in der Anfrage gibt einen Fehler zurück, obwohl Sie nicht für das Echtzeit-Kundendatenprofil lizenziert sind.
 
-Weitere [&#x200B; finden Sie unter „Erstellen eines Datensatzes, der für Profil und &#x200B;](https://experienceleague.adobe.com/de/docs/experience-platform/catalog/datasets/enable-for-profile#enable-the-dataset) aktiviert ist“.
+Weitere [ finden Sie unter „Erstellen eines Datensatzes, der für Profil und ](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/enable-for-profile#enable-the-dataset) aktiviert ist“.
 
 +++ 
 
