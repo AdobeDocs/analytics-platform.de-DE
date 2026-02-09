@@ -9,9 +9,9 @@ index: true
 user-guide-title: Handbuch zu Customer Journey Analytics
 user-guide-description: Hier erhalten Sie Informationen zu Adobe Customer Journey Analytics und Erläuterungen zur Nutzung von Analysis Workspace mit Daten aus Experience Platform.
 breadcrumb-title: Handbuch zu Customer Journey Analytics
-source-git-commit: 6cd1b858b3bd7e1ac69a294dbc5fa9c0c2c135a9
+source-git-commit: 16486ded009a9dbd9170240c0941853a4deec0af
 workflow-type: tm+mt
-source-wordcount: '1363'
+source-wordcount: '1362'
 ht-degree: 96%
 
 ---
@@ -101,7 +101,7 @@ ht-degree: 96%
    + Vergleichen mit Adobe Analytics {#cja-aa-comparison}
       + [Überblick](../getting-started/aa-vs-cja/overview.md)
       + [Verwenden von Adobe Analytics-Daten](../getting-started/aa-vs-cja/aa-data-in-cja.md)
-      + [Zuordnen von Adobe Analytics-Daten](../getting-started/aa-vs-cja/mapping-data-ims-orgs.md)
+      + [Cross-IMS-Datenzuordnung](../getting-started/aa-vs-cja/mapping-data-ims-orgs.md)
       + [Funktionsunterstützung](../getting-started/aa-vs-cja/cja-aa.md)
       + [Vergleichen der Terminologie](../getting-started/aa-vs-cja/terminology.md)
       + [Vergleichen der Datenverarbeitung](../getting-started/aa-vs-cja/data-processing-comparisons.md)
@@ -495,7 +495,7 @@ ht-degree: 96%
       + [Verwenden von Bindungsdimensionen und Metriken](/help/use-cases/data-views/binding-dimensions-metrics.md)
       + [Verwenden von Zusammenfassungsdaten](/help/use-cases/data-views/summary-data.md)
       + BI-Erweiterung {#bi-extension}
-         + [Anwendungsfälle](/help/use-cases/data-views/bi-extension-usecases.md)
+         + [Anwendungsbeispiele](/help/use-cases/data-views/bi-extension-usecases.md)
          + [Verbinden und Auflisten von Datenansichten](/help/use-cases/data-views/bi-extension/connect-and-validate.md)
          + [Täglicher Trend](/help/use-cases/data-views/bi-extension/daily-trend.md)
          + [Stündlicher Trend](/help/use-cases/data-views/bi-extension/hourly-trend.md)
