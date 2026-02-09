@@ -5,10 +5,10 @@ exl-id: f69e6e38-ac98-49a6-b0ce-f642af2932ae
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: 220ebd7dbc3fa75d221690cd6e5828bd94395434
+source-git-commit: 7835d4c5b46177ece4a146df8f0d4abb9605c670
 workflow-type: tm+mt
-source-wordcount: '1078'
-ht-degree: 100%
+source-wordcount: '1094'
+ht-degree: 95%
 
 ---
 
@@ -61,6 +61,8 @@ Mit Datenansichten können Sie die Schemaelement-Einstellungen spontan ändern, 
 
 * Sie können Ihre Container in einer Datenansicht umbenennen und diese umbenannten Container in einem beliebigen Workspace-Projekt platzieren, das auf dieser Datenansicht basiert.
 
+* Sie können die Data Insights Agent für eine Datenansicht aktivieren oder deaktivieren.
+
 ## Voraussetzungen für die Datenansicht {#prerequisites}
 
 * Bevor Sie Datenansichten erstellen können, müssen Sie [eine oder mehrere Verbindungen zu Experience Platform-Datensätzen einrichten](/help/connections/create-connection.md).
@@ -84,9 +86,10 @@ Einige Einstellungen für die Datenansicht können in Analysis Workspace auf Pro
 
 ## Löschen von Datenansichten {#delete}
 
-Wenn Sie eine Datenansicht in [!UICONTROL Customer Journey Analytics] löschen, wird eine Fehlermeldung angezeigt, die besagt, dass alle [!UICONTROL Workspace]-Projekte, die von dieser gelöschten Datenansicht abhängig sind, nicht mehr funktionieren.
+Wenn Sie [Datenansicht löschen](/help/data-views/manage-dataviews.md#delete-data-views) in [!UICONTROL Customer Journey Analytics], zeigt eine Fehlermeldung an, dass alle [!UICONTROL Workspace]-Projekte, die von dieser gelöschten Datenansicht abhängig sind, nicht mehr funktionieren.
 
 ## Nächste Schritte
 
 * [Erstellen von Datenansichten](/help/data-views/create-dataview.md)
+* [Datenansichten verwalten](/help/data-views/manage-dataviews.md)
 * [Anwendungsfälle von Datenansichten](/help/use-cases/data-views/data-views-usecases.md)

@@ -5,10 +5,10 @@ role: User, Admin
 solution: Customer Journey Analytics
 feature: AI Tools
 exl-id: 262d5f15-16cb-4851-a769-7dbd205b2f81
-source-git-commit: 518f2aeac309a34016146b7a4da7823b6fd84cac
+source-git-commit: cb5baf2ec8d3ad4449a9b08d0a025a2d39a11425
 workflow-type: tm+mt
-source-wordcount: '2494'
-ht-degree: 100%
+source-wordcount: '2451'
+ht-degree: 98%
 
 ---
 
@@ -82,21 +82,10 @@ Die folgenden Parameter regeln den Zugriff auf Data Insights Agent in Customer J
   >* Sie können maximal 50 Datenansichten pro IMS-Organisation aktivieren. Wenn Sie für ein Unternehmen mehr als 50 Datenansichten für alle Produktprofile aktivieren, verwendet Data Insights Agent die 50 am häufigsten verwendeten Datenansichten.
   >* Data Insights Agent kann im Laufe desselben Tages, an dem Sie ihn aktivieren, auf die enthaltenen Datenansichten verweisen.
 
-  So aktivieren Sie Datenansichten für Data Insights Agent:
+  Informationen zum Aktivieren von Datenansichten für Data Insights Agent finden Sie unter [KI-Einstellungen für eine Datenansicht](/help/data-views/create-dataview.md#ai-settings).
 
-   1. Wählen Sie in Customer Journey Analytics **[!UICONTROL Daten-Management]** > **[!UICONTROL Datenansichten]** aus.
+  Sie können die [Info in der Spalte &quot;Data Insights Agent&quot; in Datenansichten verwenden](/help/data-views/manage-dataviews.md#manage-data-views) um die Anzahl der Datenansichten anzuzeigen, die für Data Insights Agent in Ihrer IMS-Organisation aktiviert sind.
 
-   1. Wählen Sie eine oder mehrere Datenansichten aus, die für Data Insights Agent aktiviert werden sollen, und wählen Sie dann **[!UICONTROL Für Data Insights Agent aktivieren]**.
-
-      ![Aktivieren von Datenansichten für Data Insights Agent](assets/data-view-enable-dia.png)
-
-  So zeigen Sie die Anzahl der Datenansichten an, die für Data Insights Agent in Ihrer IMS-Organisation aktiviert sind:
-
-   1. Wählen Sie in Customer Journey Analytics **[!UICONTROL Daten-Management]** > **[!UICONTROL Datenansichten]** aus.
-
-   1. Wählen Sie das Info-Symbol oben in der Spalte **[!UICONTROL Data Insights Agent]** aus.
-
-      ![Info-Symbol für Data Insights Agent](assets/data-insights-agent-tooltip.png)
 
 ## Zugreifen auf den Data Insights Agent im KI-Assistenten
 
@@ -259,7 +248,7 @@ Im Folgenden finden Sie Best Practices für Ihre Customer Journey Analytics-Konf
 * **Verwenden Sie das Datenwörterbuch**. Fügen Sie eine Beschreibung und andere relevante Daten für Komponenten im Datenwörterbuch hinzu. Der Data Insight-Agent verwendet derzeit keine Beschreibung und Tags aus dem Datenwörterbuch, könnte dies aber in Zukunft tun.
 * **Verwenden Sie genehmigte berechnete Metriken**. Sie müssen sich auf einen Prozess einigen, bei dem nur genehmigte berechnete Metriken als Komponenten in Ihrer Datenansicht verwendet werden, und die Verwendung experimenteller berechneter Metriken vermeiden.
 * **Geben Sie erforderliche Segmente frei**. Stellen Sie sicher, dass Sie Segmente freigeben und Segmente sichtbar machen, die für Data Insights Agent-Prompts erforderlich sind.
-* **Standardisieren Sie Komponentennamen in Datenansichten**. Wenn Sie dieselben Felder wie eine Komponente in mehreren Datenansichten verwenden, stellen Sie sicher, dass Sie einen einzigen Anzeigenamen und eine einzige Kennung für diese Komponente verwenden. Durch einen einzigen Namen und eine einzige Kennung kann der Data Insights-Agent Datenansichten wechseln, ohne den Kontext zu verlieren.
+* **Standardisieren Sie Komponentennamen in Datenansichten**. Wenn Sie dieselben Felder wie eine Komponente in mehreren Datenansichten verwenden, stellen Sie sicher, dass Sie einen einzigen Anzeigenamen und eine einzige Kennung für diese Komponente verwenden. Durch einen einzigen Namen und eine einzige Kennung kann der Data Insights Agent Datenansichten wechseln, ohne den Kontext zu verlieren.
 
 >[!MORELIKETHIS]
 >

@@ -9,9 +9,9 @@ index: true
 user-guide-title: Handbuch zu Customer Journey Analytics
 user-guide-description: Hier erhalten Sie Informationen zu Adobe Customer Journey Analytics und Erläuterungen zur Nutzung von Analysis Workspace mit Daten aus Experience Platform.
 breadcrumb-title: Handbuch zu Customer Journey Analytics
-source-git-commit: 16486ded009a9dbd9170240c0941853a4deec0af
+source-git-commit: 7835d4c5b46177ece4a146df8f0d4abb9605c670
 workflow-type: tm+mt
-source-wordcount: '1362'
+source-wordcount: '1365'
 ht-degree: 96%
 
 ---
@@ -143,10 +143,11 @@ ht-degree: 96%
       + [Überblick](/help/connections/audience-analysis/audience-analysis-overview.md)
       + [Konfigurieren](/help/connections/audience-analysis/audience-analysis-configure.md)
       + [Verwalten](/help/connections/audience-analysis/audience-analysis-manage.md)
-      + [Analyse](/help/connections/audience-analysis/analyze-audiences.md)
+      + [Analysieren](/help/connections/audience-analysis/analyze-audiences.md)
 + Datenansichten {#cja-dataviews}
    + [Überblick über Datenansichten](../data-views/data-views.md)
    + [Erstellen oder Bearbeiten einer Datenansicht](../data-views/create-dataview.md)
+   + [Datenansichten verwalten](/help/data-views/manage-dataviews.md)
    + [Sitzungseinstellungen](../data-views/session-settings.md)
    + Komponenteneinstellungen {#component-settings}
       + [Übersicht über Komponenteneinstellungen](../data-views/component-settings/overview.md)
@@ -177,7 +178,7 @@ ht-degree: 96%
       + [Opt-out-Einstellungen](../tools/product-usage/opt-out-settings.md)
 
 + Workspace-Projekte {#cja-workspace}
-   + [Analysis Workspace – Überblick](../analysis-workspace/home.md)
+   + [Überblick über Analysis Workspace](../analysis-workspace/home.md)
    + [Grundlegende Analyse durchführen](../analysis-workspace/perform-basic-analysis.md)
    + [Durchführen einer erweiterten Analyse](../analysis-workspace/perform-adv-analysis.md)
    + Projekte {#build-workspace-project}
@@ -401,7 +402,7 @@ ht-degree: 96%
       + [Erstellen von Warnhinweisen](/help/components/c-intelligent-alerts/alert-builder.md)
       + [Verwalten von Warnhinweisen](/help/components/c-intelligent-alerts/alert-manager.md)
       + [Funktionsvergleich](/help/components/c-intelligent-alerts/alerts-feature-comparison.md)
-      + [Anwendungsfälle](/help/components/c-intelligent-alerts/alerts-use-cases.md)
+      + [Anwendungsszenarien](/help/components/c-intelligent-alerts/alerts-use-cases.md)
    + Exporte {#exports}
       + [Konfigurieren von Cloud-Exportkonten](/help/components/exports/cloud-export-accounts.md)
       + [Konfigurieren von Cloud-Exportspeicherorten](/help/components/exports/cloud-export-locations.md)
@@ -443,7 +444,7 @@ ht-degree: 96%
 + Zuordnung {#stitching}
    + [Überblick](/help/stitching/overview.md)
    + [Feldbasierte Zuordnung](/help/stitching/fbs.md)
-   + [Grafikbasierte Zuordnung](/help/stitching/gbs.md)
+   + [Diagrammbasierte Zuordnung](/help/stitching/gbs.md)
    + [Anfordern der Zuordnung](/help/stitching/use-stitching.md)
    + [Aktivieren der Zuordnung](/help/stitching/use-stitching-ui.md)
    + [Validieren der Zuordnung](/help/stitching/validate.md)
@@ -463,7 +464,7 @@ ht-degree: 96%
    + [Administratorprotokoll](../privacy/audit-log.md)
    + [Vom Kunden verwaltete Schlüssel](../privacy/cmk.md)
 
-+ Anwendungsfälle {#cja-usecases}
++ Anwendungsszenarien {#cja-usecases}
    + [Anwendungsszenarien für Customer Journey Analytics](../use-cases/cja-usecases.md)
    + Adobe Analytics-Daten {#aa-data}
       + [Verwenden von Marketing-Kanal-Dimensionen](../use-cases/aa-data/marketing-channels.md)
@@ -472,7 +473,7 @@ ht-degree: 96%
       + [Beispiel für ein personenbasiertes B2B-Projekt](../use-cases/b2b/example.md)
       + B2B Edition {#b2b-edition}
          + [Überblick über Anwendungsfälle](/help/use-cases/b2b/b2b-edition/use-cases-overview.md)
-         + [Einrichtung](/help/use-cases/b2b/b2b-edition/setup.md)
+         + [Einrichten](/help/use-cases/b2b/b2b-edition/setup.md)
          + [Optimieren des Konto-Marketings](/help/use-cases/b2b/b2b-edition/optimize-account-marketing.md)
          + [Wachstum wichtiger Konten](/help/use-cases/b2b/b2b-edition/grow-key-accounts.md)
          + [Fördern von Produktwert](/help/use-cases/b2b/b2b-edition/build-product-value.md)
@@ -495,7 +496,7 @@ ht-degree: 96%
       + [Verwenden von Bindungsdimensionen und Metriken](/help/use-cases/data-views/binding-dimensions-metrics.md)
       + [Verwenden von Zusammenfassungsdaten](/help/use-cases/data-views/summary-data.md)
       + BI-Erweiterung {#bi-extension}
-         + [Anwendungsbeispiele](/help/use-cases/data-views/bi-extension-usecases.md)
+         + [Anwendungsszenarien](/help/use-cases/data-views/bi-extension-usecases.md)
          + [Verbinden und Auflisten von Datenansichten](/help/use-cases/data-views/bi-extension/connect-and-validate.md)
          + [Täglicher Trend](/help/use-cases/data-views/bi-extension/daily-trend.md)
          + [Stündlicher Trend](/help/use-cases/data-views/bi-extension/hourly-trend.md)
