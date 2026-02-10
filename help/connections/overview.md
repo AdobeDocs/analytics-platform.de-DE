@@ -1,20 +1,20 @@
 ---
-title: Customer Journey Analytics-Verbindungen – Übersicht
+title: Customer Journey Analytics Connections - Übersicht
 description: Erfahren Sie mehr über Verbindungen in Customer Journey Analytics.
 solution: Customer Journey Analytics
 feature: Connections
 exl-id: 012371d7-aaef-4018-95ee-5c52083e9d8f
 role: Admin
-source-git-commit: 09a6ae258d27f8fe9c9a1fc7ed63273620c67c1b
+source-git-commit: 4f1299595077a1756a6ad0c4f5ef5e0247ab4973
 workflow-type: tm+mt
 source-wordcount: '249'
-ht-degree: 80%
+ht-degree: 97%
 
 ---
 
 # Verbindungen – Übersicht
 
-Mithilfe von Verbindungen können Customer Journey Analytics-Produktadministratoren definieren, welche [!DNL &#x200B; Experience Platform] Datenquellen, wie Ereignis-, Lookup-, Profil- und Zusammenfassungsdatensätze, aufgenommen werden. Verbindungen bilden die Grundlage von Customer Journey Analytics und bestimmen die Verfügbarkeit von Daten (Feldern), die Sie in einer [Datenansicht) &#x200B;](/help/data-views/data-views.md) Dimension oder Metriken definieren können.
+Mit Verbindungen können Customer Journey Analytics-Produktadmins definieren, welche [!DNL  Experience Platform]-Datenquellen aufgenommen werden, z. B. Ereignis-, Lookup-, Profil- und Zusammenfassungsdatensätze. Verbindungen bilden die Grundlage von Customer Journey Analytics und bestimmen die Verfügbarkeit von Daten (Feldern), die Sie in einer [Datenansicht](/help/data-views/data-views.md) als Dimension oder Metriken definieren können.
 
 >[!IMPORTANT]
 >

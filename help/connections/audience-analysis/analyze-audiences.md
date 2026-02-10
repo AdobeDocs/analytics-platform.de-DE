@@ -4,7 +4,8 @@ description: Erfahren Sie, wie Sie Experience Platform-Zielgruppen in Customer J
 solution: Customer Journey Analytics
 feature: Audiences
 role: Admin
-source-git-commit: e59bb52d5e9d79ba72036d5a00ed8abc69dcf735
+exl-id: 095cae34-1337-464a-9682-3c899295c0a8
+source-git-commit: 4f1299595077a1756a6ad0c4f5ef5e0247ab4973
 workflow-type: tm+mt
 source-wordcount: '503'
 ht-degree: 0%
@@ -56,11 +57,3 @@ Verwenden Sie die Tabelle in diesem Bedienfeld, um das Verhalten der Zielgruppe 
 Zeigt an, wo jede existierende Zielgruppe ursprünglich erstellt wurde, ob in RTCDP, Customer Journey Analytics usw.
 
 Anhand der Tabelle in diesem Bedienfeld können Sie besser verstehen, wie sich die Herkunft der Zielgruppe auf andere Faktoren auswirken könnte. Ziehen Sie die Dimension Ausgetretener Zielgruppenname aus der ausgewählten Datenansicht und fügen Sie sie als Aufschlüsselung hinzu. Oder verwenden Sie eine andere Interaktionsdimension oder Metrik (z. B. Seite, Aktion usw.) als Aufschlüsselung.
-
-
-
-
-
-
-
-

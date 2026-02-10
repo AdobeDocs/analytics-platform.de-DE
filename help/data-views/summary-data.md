@@ -1,14 +1,14 @@
 ---
 title: Zusammenfassungsdaten
-description: Details und Informationen zur Verwendung und Konfiguration von Zusammenfassungsdaten in einer Datenansicht.
+description: Erfahren Sie mehr über die Details und Informationen zur Verwendung und Konfiguration von Zusammenfassungsdaten in einer Datenansicht.
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
 exl-id: 417443ae-a1ab-483b-a8fd-cff5ee8b6263
-source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
+source-git-commit: 4f1299595077a1756a6ad0c4f5ef5e0247ab4973
 workflow-type: tm+mt
-source-wordcount: '1147'
-ht-degree: 97%
+source-wordcount: '1150'
+ht-degree: 96%
 
 ---
 
@@ -65,7 +65,7 @@ Wie in [Kombinierter Ereignisdatensatz](/help/connections/combined-dataset.md) e
 
 
 
-### Berichterstellung
+### Reporting
 
 Durch die Kombination der zusammengefassten Ereignisdaten und der Clickstream-Daten auf der Site können Sie in Workspace Berichte über Rendite auf Werbeausgaben (Return on Ad Spend, ROAS) erstellen.
 

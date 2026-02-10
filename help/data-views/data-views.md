@@ -1,14 +1,14 @@
 ---
-title: Überblick über Datenansichten
-description: Eine Datenansicht gibt an, wie Datenelemente in der Customer Journey Analytics-Verbindung zu interpretieren sind, beispielsweise Metriken, Dimensionen, Sitzungen usw.
+title: Datenansichten - Übersicht
+description: Erfahren Sie, wie eine Datenansicht angibt, wie Sie Datenelemente in der Customer Journey Analytics-Verbindung interpretieren möchten, z. B. Metriken, Dimensionen, Sitzungen usw.
 exl-id: f69e6e38-ac98-49a6-b0ce-f642af2932ae
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: 7835d4c5b46177ece4a146df8f0d4abb9605c670
+source-git-commit: 4f1299595077a1756a6ad0c4f5ef5e0247ab4973
 workflow-type: tm+mt
-source-wordcount: '1094'
-ht-degree: 95%
+source-wordcount: '1096'
+ht-degree: 93%
 
 ---
 

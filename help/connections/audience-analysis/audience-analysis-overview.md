@@ -4,7 +4,8 @@ description: Erfahren Sie mehr über das Analysieren von Zielgruppen aus RTCDP i
 solution: Customer Journey Analytics
 feature: Audiences
 role: Admin
-source-git-commit: e59bb52d5e9d79ba72036d5a00ed8abc69dcf735
+exl-id: 1e962f52-6b56-4671-afea-d58dae67e8a8
+source-git-commit: 4f1299595077a1756a6ad0c4f5ef5e0247ab4973
 workflow-type: tm+mt
 source-wordcount: '728'
 ht-degree: 3%
@@ -66,7 +67,7 @@ Sie können beispielsweise das Verhalten einzelner Kundinnen und Kunden verfolge
 
 * Zielgruppenmitglieder, die schließlich einen Kauf im Geschäft getätigt haben
 
-Weitere Informationen finden Sie unter [&#x200B; von Experience Platform-Zielgruppen in Customer Journey Analytics](/help/connections/audience-analysis/analyze-audiences.md).
+Weitere Informationen finden Sie unter [ von Experience Platform-Zielgruppen in Customer Journey Analytics](/help/connections/audience-analysis/analyze-audiences.md).
 
 ## Rollen- und Berechtigungsanforderungen für die Zielgruppenanalyse
 
@@ -80,16 +81,8 @@ Die folgenden Customer Journey Analytics-Rollen und Experience Platform-Berechti
 
 ## Grenzwerte für Zielgruppenanalysen
 
-Beachten Sie bei der Konfiguration [&#x200B; Zielgruppenanalyse die folgenden &#x200B;](/help/connections/audience-analysis/audience-analysis-configure.md):
+Beachten Sie bei der Konfiguration [ Zielgruppenanalyse die folgenden ](/help/connections/audience-analysis/audience-analysis-configure.md):
 
 * Eine einzelne Sandbox kann bis zu 100 Zielgruppenanalysekonfigurationen unterstützen.
 
 * Eine Verbindung kann nur mit einer Zielgruppenanalysekonfiguration verknüpft werden.
-
-
-
-
-
-
-
-

@@ -5,7 +5,7 @@ exl-id: 9f678225-a9f3-4134-be38-924b8de8d57f
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: aaf23560b69c90fdbaee3fa401b5fe58e6a4e5d1
+source-git-commit: 4f1299595077a1756a6ad0c4f5ef5e0247ab4973
 workflow-type: tm+mt
 source-wordcount: '946'
 ht-degree: 33%
@@ -52,7 +52,7 @@ Wenn Sie eine Verbindung mit diesen beiden Ereignis-Datensätzen erstellen und
 
 Der folgende kombinierte Datensatz wird für das Reporting verwendet.
 
-| ID | timestamp | string_color | string_Animal | string_Shape | metric_a | metric_b |
+| id | timestamp | string_color | string_Animal | string_Shape | metric_a | metric_b |
 | --- | --- | --- | --- | --- | ---: | ---: |
 | user_310 | &#x200B;1. Januar :02 | Rot | Fuchs | | | |
 | user_310 | &#x200B;1. Januar :04 | | | | 2 | |
