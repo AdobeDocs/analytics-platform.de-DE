@@ -1580,10 +1580,10 @@ Sie möchten einen Teil einer URL erfassen und als eindeutige Seitenkennung zur 
 
 | Seiten-URL |
 |---|
-| `https://business.adobe.com/products/analytics/adobe-analytics-benefits.html` |
-| `https://business.adobe.com/products/analytics/adobe-analytics.html` |
-| `https://business.adobe.com/products/experience-platform/customer-journey-analytics.html` |
-| `https://business.adobe.com/products/experience-platform/adobe-experience-platform.html` |
+| `https://business.adobe.com/de/products/analytics/adobe-analytics-benefits.html` |
+| `https://business.adobe.com/de/products/analytics/adobe-analytics.html` |
+| `https://business.adobe.com/de/products/experience-platform/customer-journey-analytics.html` |
+| `https://business.adobe.com/de/products/experience-platform/adobe-experience-platform.html` |
 
 {style="table-layout:auto"}
 
