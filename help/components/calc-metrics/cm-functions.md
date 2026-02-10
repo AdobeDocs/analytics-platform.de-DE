@@ -93,7 +93,7 @@ Gibt den größten Wert in einem Satz aus Dimensionselementen für eine Metriksp
 
 >[!TIP]
 >
->Verwenden Sie eine [IF](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-components/cja-calcmetrics/cm-adv-functions#if)-Anweisung wie **IF**(*Revenue* = **Column Maximum***(Revenue*), 1, 0), um das Element in Ihrer Aufschlüsselung hervorzuheben, das die beste Leistung erzielt.
+>Verwenden Sie eine [IF](https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-components/cja-calcmetrics/cm-adv-functions#if)-Anweisung wie **IF**(*Revenue* = **Column Maximum***(Revenue*), 1, 0), um das Element in Ihrer Aufschlüsselung hervorzuheben, das die beste Leistung erzielt.
 >
 
 ## Spaltenminimum {#column-minimum}
@@ -123,7 +123,7 @@ Gibt den kleinsten Wert in einem Satz aus Dimensionselementen für eine Metriksp
 
 >[!TIP]
 >
->Verwenden Sie eine [IF](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-components/cja-calcmetrics/cm-adv-functions#if)-Anweisung wie **IF**(*Revenue* = **Column Minimum***(Revenue*), 1, 0), um das Element in Ihrer Aufschlüsselung mit der niedrigsten Leistung hervorzuheben.
+>Verwenden Sie eine [IF](https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-components/cja-calcmetrics/cm-adv-functions#if)-Anweisung wie **IF**(*Revenue* = **Column Minimum***(Revenue*), 1, 0), um das Element in Ihrer Aufschlüsselung mit der niedrigsten Leistung hervorzuheben.
 >
 
 
