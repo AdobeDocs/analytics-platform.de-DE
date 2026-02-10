@@ -14,7 +14,7 @@ ht-degree: 97%
 
 # Verbindungen – Übersicht
 
-Mit Verbindungen können Customer Journey Analytics-Produktadmins definieren, welche [!DNL  Experience Platform]-Datenquellen aufgenommen werden, z. B. Ereignis-, Lookup-, Profil- und Zusammenfassungsdatensätze. Verbindungen bilden die Grundlage von Customer Journey Analytics und bestimmen die Verfügbarkeit von Daten (Feldern), die Sie in einer [Datenansicht](/help/data-views/data-views.md) als Dimension oder Metriken definieren können.
+Mit Verbindungen können Customer Journey Analytics-Produktadmins definieren, welche [!DNL &#x200B; Experience Platform]-Datenquellen aufgenommen werden, z. B. Ereignis-, Lookup-, Profil- und Zusammenfassungsdatensätze. Verbindungen bilden die Grundlage von Customer Journey Analytics und bestimmen die Verfügbarkeit von Daten (Feldern), die Sie in einer [Datenansicht](/help/data-views/data-views.md) als Dimension oder Metriken definieren können.
 
 >[!IMPORTANT]
 >
