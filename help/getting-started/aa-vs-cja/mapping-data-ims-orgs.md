@@ -51,7 +51,7 @@ Um die Funktion *Cross-IMS-Datenzuordnung* zu konfigurieren und zu aktivieren, m
 
 Sobald der Adobe-Kundenbetreuer die E-Mail mit der Anforderung erhält, Analytics-Daten von mehreren Organisationen zuzuordnen, wird die Anfrage in Adobe geprüft. Der Adobe-Kundenbetreuer kontaktiert Sie für weitere Fragen, optionale Schulungen und weitere Informationen.
 
-Nach der Genehmigung wird die angeforderte Zuordnung erstellt und Sie werden benachrichtigt. Der Name der IMS-Quellorganisation wird dem Namen der Report Suite in der [Liste der Analytics Report Suites](https://experienceleague.adobe.com/en/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics#select-data) in Experience Platform angehängt.
+Nach der Genehmigung wird die angeforderte Zuordnung erstellt und Sie werden benachrichtigt. Der Name der IMS-Quellorganisation wird dem Namen der Report Suite in der [Liste der Analytics Report Suites](https://experienceleague.adobe.com/de/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics#select-data) in Experience Platform angehängt.
 
 
 ## Einschränkungen
@@ -71,7 +71,7 @@ Sie sollten die folgenden Themen berücksichtigen, bevor Sie die Funktion *Cross
 
 Sobald die Funktion *Cross-IMS-Datenzuordnung* genehmigt ist, können Sie Daten zu Experience Platform für eine oder mehrere Report Suites in der Ziel-IMS-Organisation hinzufügen. Dies erfolgt über die Konfiguration des [Analytics-Quell-Connectors](https://experienceleague.adobe.com/de/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics). Zieldatensätze werden dann in Experience Platform erstellt. Im Rahmen dieser Konfiguration und dieses Prozesses haben Sie die Möglichkeit, Profildaten aus einer oder mehreren Report Suites an den Profil-Service zu senden.
 
-Schätzen Sie die Gesamtzahl der Profile, die das Ergebnis der Konfiguration und des Prozesses sind, wie oben beschrieben. Stellen Sie sicher, dass die Gesamtzahl innerhalb der Anzahl der Profile liegt, auf die Sie für die Zielorganisation vertraglich Anspruch haben. Wenden Sie [Filterregeln und -bedingungen](https://experienceleague.adobe.com/en/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics#filtering-for-profile){target="_blank"} an, um Daten selektiv in den Profil-Service aufzunehmen oder davon auszuschließen. Oder deaktivieren Sie die Option zum Senden von Profildaten an den Profil-Service für relevante Report Suites.
+Schätzen Sie die Gesamtzahl der Profile, die das Ergebnis der Konfiguration und des Prozesses sind, wie oben beschrieben. Stellen Sie sicher, dass die Gesamtzahl innerhalb der Anzahl der Profile liegt, auf die Sie für die Zielorganisation vertraglich Anspruch haben. Wenden Sie [Filterregeln und -bedingungen](https://experienceleague.adobe.com/de/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics#filtering-for-profile){target="_blank"} an, um Daten selektiv in den Profil-Service aufzunehmen oder davon auszuschließen. Oder deaktivieren Sie die Option zum Senden von Profildaten an den Profil-Service für relevante Report Suites.
 
 
 #### Zuordnung
