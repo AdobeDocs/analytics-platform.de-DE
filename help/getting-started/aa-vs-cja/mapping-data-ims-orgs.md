@@ -76,7 +76,7 @@ Schätzen Sie die Gesamtzahl der Profile, die das Ergebnis der Konfiguration und
 
 #### Zuordnung
 
-Sie können sowohl [ (feldbasierte](/help/stitching/fbs.md) als auch [Diagrammbasierte](/help/stitching/gbs.md) Zuordnung für die Zieldatensätze verwenden. Wenn Sie das diagrammbasierte Stitching für einen oder mehrere dieser Zieldatensätze verwenden, stellen Sie sicher, dass Sie die vertraglichen Berechtigungen für die Anzahl der Profile einhalten, wie im Abschnitt [Profile](#profiles) beschrieben.
+Sie können sowohl [&#x200B; (feldbasierte](/help/stitching/fbs.md) als auch [Diagrammbasierte](/help/stitching/gbs.md) Zuordnung für die Zieldatensätze verwenden. Wenn Sie das diagrammbasierte Stitching für einen oder mehrere dieser Zieldatensätze verwenden, stellen Sie sicher, dass Sie die vertraglichen Berechtigungen für die Anzahl der Profile einhalten, wie im Abschnitt [Profile](#profiles) beschrieben.
 
 Wenn Sie nicht für das Echtzeit-Kundenprofil lizenziert sind, aber dennoch diagrammbasiertes Stitching für einen oder mehrere Zieldatensätze verwenden möchten, stellen Sie sicher, dass Sie nur den [Identity Service](/help/stitching/faq.md#enable-a-dataset-for-the-identity-service) für diese Zieldatensätze aktivieren.
 
