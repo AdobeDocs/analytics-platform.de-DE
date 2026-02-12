@@ -3,9 +3,10 @@ title: Mehrere Dimensionen in eine Freiformtabelle einschließen
 description: Erfahren Sie, wie Sie mehrere Dimensionen in eine Freiformtabelle einschließen
 feature: Visualizations
 role: User
-source-git-commit: 696bd0db44949162307d8ce7d2debed351a76cd6
+exl-id: 66ebb4fc-feb2-4fa7-a107-37508cca4748
+source-git-commit: 14718476695dcf121c94ba4cb8b2c39e5874342d
 workflow-type: tm+mt
-source-wordcount: '829'
+source-wordcount: '836'
 ht-degree: 2%
 
 ---
@@ -101,7 +102,7 @@ Darüber hinaus können Sie innerhalb einer Aufschlüsselung mehrere Dimensionss
 
 <!-- Add a screenshot of a breakdown with multiple cllumns, then add this sentence: "For example, you can break down the first dimension item in this table by a new concatenated dimension item that shows..." -->
 
-Weitere Informationen zum Hinzufügen einer Aufschlüsselung finden Sie unter [Dimensionen &#x200B;](/help/components/dimensions/t-breakdown-fa.md).
+Weitere Informationen zum Hinzufügen einer Aufschlüsselung finden Sie unter [Dimensionen ](/help/components/dimensions/t-breakdown-fa.md).
 
 ## Erstellen eines Segments basierend auf einem Dimensionselement, das sich über mehrere Dimensionsspalten erstreckt
 
@@ -109,11 +110,12 @@ Wenn Sie ein Segment basierend auf einem Dimensionselement erstellen, das mehrer
 
 Informationen zum Erstellen eines Segments finden Sie unter [Segmente erstellen](/help/components/segments/seg-create.md).
 
-## Nicht unterstützte Dimensionen {#unsupported}
+## Nicht unterstützte Dimensionen und Funktionen {#unsupported}
 
-Die folgenden Dimensionskombinationen werden nicht unterstützt und Analysis Workspace verbietet entweder das Hinzufügen oder zeigt eine Fehlermeldung an, nachdem sie hinzugefügt wurden:
+Die folgenden Dimensionskombinationen und -funktionen werden bei Verwendung mehrerer Dimensionsspalten nicht unterstützt und Analysis Workspace verbietet entweder deren Verwendung oder zeigt eine Fehlermeldung an:
 
 * Mehrere Dimensionen, die aus Feldern stammen, die auf verschiedene [Arrays von Objekten](/help/use-cases/object-arrays.md) verweisen, die zusammen in derselben Freiformtabelle verwendet werden.
 
   Mehrere Dimensionen sind in derselben Freiformtabelle zulässig, wenn sie auf dasselbe Array von Objekten verweisen.
 
+* [Statische Dimensionselemente](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/manual-vs-dynamic-rows.md#static-dimension-items).
