@@ -102,7 +102,7 @@ Darüber hinaus können Sie innerhalb einer Aufschlüsselung mehrere Dimensionss
 
 <!-- Add a screenshot of a breakdown with multiple cllumns, then add this sentence: "For example, you can break down the first dimension item in this table by a new concatenated dimension item that shows..." -->
 
-Weitere Informationen zum Hinzufügen einer Aufschlüsselung finden Sie unter [Dimensionen ](/help/components/dimensions/t-breakdown-fa.md).
+Weitere Informationen zum Hinzufügen einer Aufschlüsselung finden Sie unter [Dimensionen &#x200B;](/help/components/dimensions/t-breakdown-fa.md).
 
 ## Erstellen eines Segments basierend auf einem Dimensionselement, das sich über mehrere Dimensionsspalten erstreckt
 
