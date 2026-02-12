@@ -4,10 +4,8 @@ description: Erfahren Sie, wie Sie Daten aus Report Suites mehrerer Quell-IMS-Or
 role: Admin
 solution: Customer Journey Analytics
 feature: Adobe Analytics Integration,Administration
-hide: true
-hidefromtoc: true
 exl-id: c109742b-c1c5-45b3-971f-f8dcf814ec37
-source-git-commit: 16486ded009a9dbd9170240c0941853a4deec0af
+source-git-commit: 7260c9cadbd5b6e5e85f778547635330b8bfc49a
 workflow-type: tm+mt
 source-wordcount: '1137'
 ht-degree: 1%
@@ -51,7 +49,7 @@ Um die Funktion *Cross-IMS-Datenzuordnung* zu konfigurieren und zu aktivieren, m
 
 Sobald der Adobe-Kundenbetreuer die E-Mail mit der Anforderung erhält, Analytics-Daten von mehreren Organisationen zuzuordnen, wird die Anfrage in Adobe geprüft. Der Adobe-Kundenbetreuer kontaktiert Sie für weitere Fragen, optionale Schulungen und weitere Informationen.
 
-Nach der Genehmigung wird die angeforderte Zuordnung erstellt und Sie werden benachrichtigt. Der Name der IMS-Quellorganisation wird dem Namen der Report Suite in der [Liste der Analytics Report Suites](https://experienceleague.adobe.com/de/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics#select-data) in Experience Platform angehängt.
+Nach der Genehmigung wird die angeforderte Zuordnung erstellt und Sie werden benachrichtigt. Der Name der IMS-Quellorganisation wird dem Namen der Report Suite in der [Liste der Analytics Report Suites](https://experienceleague.adobe.com/en/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics#select-data) in Experience Platform angehängt.
 
 
 ## Einschränkungen
@@ -71,14 +69,14 @@ Sie sollten die folgenden Themen berücksichtigen, bevor Sie die Funktion *Cross
 
 Sobald die Funktion *Cross-IMS-Datenzuordnung* genehmigt ist, können Sie Daten zu Experience Platform für eine oder mehrere Report Suites in der Ziel-IMS-Organisation hinzufügen. Dies erfolgt über die Konfiguration des [Analytics-Quell-Connectors](https://experienceleague.adobe.com/de/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics). Zieldatensätze werden dann in Experience Platform erstellt. Im Rahmen dieser Konfiguration und dieses Prozesses haben Sie die Möglichkeit, Profildaten aus einer oder mehreren Report Suites an den Profil-Service zu senden.
 
-Schätzen Sie die Gesamtzahl der Profile, die das Ergebnis der Konfiguration und des Prozesses sind, wie oben beschrieben. Stellen Sie sicher, dass die Gesamtzahl innerhalb der Anzahl der Profile liegt, auf die Sie für die Zielorganisation vertraglich Anspruch haben. Wenden Sie [Filterregeln und -bedingungen](https://experienceleague.adobe.com/de/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics#filtering-for-profile){target="_blank"} an, um Daten selektiv in den Profil-Service aufzunehmen oder davon auszuschließen. Oder deaktivieren Sie die Option zum Senden von Profildaten an den Profil-Service für relevante Report Suites.
+Schätzen Sie die Gesamtzahl der Profile, die das Ergebnis der Konfiguration und des Prozesses sind, wie oben beschrieben. Stellen Sie sicher, dass die Gesamtzahl innerhalb der Anzahl der Profile liegt, auf die Sie für die Zielorganisation vertraglich Anspruch haben. Wenden Sie [Filterregeln und -bedingungen](https://experienceleague.adobe.com/en/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics#filtering-for-profile){target="_blank"} an, um Daten selektiv in den Profil-Service aufzunehmen oder davon auszuschließen. Oder deaktivieren Sie die Option zum Senden von Profildaten an den Profil-Service für relevante Report Suites.
 
 
 ### Zuordnung
 
 Sobald die Funktion *Cross-IMS-Datenzuordnung* genehmigt ist, können Sie Daten zu Experience Platform für eine oder mehrere Report Suites in der Ziel-IMS-Organisation hinzufügen. Dies erfolgt über die Konfiguration des [Analytics-Quell-Connectors](https://experienceleague.adobe.com/de/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics). Zieldatensätze für die Report Suites, die Sie im Analytics-Quell-Connector konfiguriert haben, werden dann in Experience Platform erstellt. Im Rahmen dieser Konfiguration und dieses Prozesses haben Sie die Möglichkeit, Profildaten aus einer oder mehreren Report Suites an den Profil-Service zu senden.
 
-Sie können sowohl [&#x200B; (feldbasierte](/help/stitching/fbs.md) als auch [Diagrammbasierte](/help/stitching/gbs.md) Zuordnung für die Zieldatensätze verwenden. Wenn Sie das diagrammbasierte Stitching für einen oder mehrere dieser Zieldatensätze verwenden, stellen Sie sicher, dass Sie die vertraglichen Berechtigungen für die Anzahl der Profile einhalten, wie im Abschnitt [Profile](#profiles) beschrieben.
+Sie können sowohl [ (feldbasierte](/help/stitching/fbs.md) als auch [Diagrammbasierte](/help/stitching/gbs.md) Zuordnung für die Zieldatensätze verwenden. Wenn Sie das diagrammbasierte Stitching für einen oder mehrere dieser Zieldatensätze verwenden, stellen Sie sicher, dass Sie die vertraglichen Berechtigungen für die Anzahl der Profile einhalten, wie im Abschnitt [Profile](#profiles) beschrieben.
 
 Wenn Sie nicht für das Echtzeit-Kundenprofil lizenziert sind, aber dennoch diagrammbasiertes Stitching für einen oder mehrere Zieldatensätze verwenden möchten, stellen Sie sicher, dass Sie nur den [Identity Service](/help/stitching/faq.md#enable-a-dataset-for-the-identity-service) für diese Zieldatensätze aktivieren.
 
