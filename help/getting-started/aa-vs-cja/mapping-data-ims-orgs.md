@@ -5,7 +5,7 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Adobe Analytics Integration,Administration
 exl-id: c109742b-c1c5-45b3-971f-f8dcf814ec37
-source-git-commit: 888420e8cd11cd447fec99257b213669edd345c1
+source-git-commit: ff0a5eb5b04f604eff41a18b05199b517d1a2d14
 workflow-type: tm+mt
 source-wordcount: '1073'
 ht-degree: 1%
@@ -51,7 +51,7 @@ Um die Funktion *Cross-IMS-Datenzuordnung* zu konfigurieren und zu aktivieren, m
 
 Sobald der Adobe-Kundenbetreuer die E-Mail mit der Anforderung erhält, Analytics-Daten von mehreren Organisationen zuzuordnen, wird die Anfrage in Adobe geprüft. Der Adobe-Kundenbetreuer kontaktiert Sie für weitere Fragen, optionale Schulungen und weitere Informationen.
 
-Nach der Genehmigung wird die angeforderte Zuordnung erstellt und Sie werden benachrichtigt. Der Name der IMS-Quellorganisation wird dem Namen der Report Suite in der [Liste der Analytics Report Suites](https://experienceleague.adobe.com/de/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics#select-data) in Experience Platform angehängt.
+Nach der Genehmigung wird die angeforderte Zuordnung erstellt und Sie werden benachrichtigt. Der Name der IMS-Quellorganisation wird dem Namen der Report Suite in der [Liste der Analytics Report Suites](https://experienceleague.adobe.com/en/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics#select-data) in Experience Platform angehängt.
 
 
 ## Einschränkungen
@@ -71,12 +71,12 @@ Sie sollten die folgenden Themen berücksichtigen, bevor Sie die Funktion *Cross
 
 Sobald die Funktion *Cross-IMS-Datenzuordnung* genehmigt ist, können Sie Daten zu Experience Platform für eine oder mehrere Report Suites in der Ziel-IMS-Organisation hinzufügen. Dies erfolgt über die Konfiguration des [Analytics-Quell-Connectors](https://experienceleague.adobe.com/de/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics). Zieldatensätze werden dann in Experience Platform erstellt. Im Rahmen dieser Konfiguration und dieses Prozesses haben Sie die Möglichkeit, Profildaten aus einer oder mehreren Report Suites an den Profil-Service zu senden.
 
-Schätzen Sie die Gesamtzahl der Profile, die das Ergebnis der Konfiguration und des Prozesses sind, wie oben beschrieben. Stellen Sie sicher, dass die Gesamtzahl innerhalb der Anzahl der Profile liegt, auf die Sie für die Zielorganisation vertraglich Anspruch haben. Wenden Sie [Filterregeln und -bedingungen](https://experienceleague.adobe.com/de/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics#filtering-for-profile){target="_blank"} an, um Daten selektiv in den Profil-Service aufzunehmen oder davon auszuschließen. Oder deaktivieren Sie die Option zum Senden von Profildaten an den Profil-Service für relevante Report Suites.
+Schätzen Sie die Gesamtzahl der Profile, die das Ergebnis der Konfiguration und des Prozesses sind, wie oben beschrieben. Stellen Sie sicher, dass die Gesamtzahl innerhalb der Anzahl der Profile liegt, auf die Sie für die Zielorganisation vertraglich Anspruch haben. Wenden Sie [Filterregeln und -bedingungen](https://experienceleague.adobe.com/en/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics#filtering-for-profile){target="_blank"} an, um Daten selektiv in den Profil-Service aufzunehmen oder davon auszuschließen. Oder deaktivieren Sie die Option zum Senden von Profildaten an den Profil-Service für relevante Report Suites.
 
 
 #### Zuordnung
 
-Sie können sowohl [&#x200B; (feldbasierte](/help/stitching/fbs.md) als auch [Diagrammbasierte](/help/stitching/gbs.md) Zuordnung für die Zieldatensätze verwenden. Wenn Sie das diagrammbasierte Stitching für einen oder mehrere dieser Zieldatensätze verwenden, stellen Sie sicher, dass Sie die vertraglichen Berechtigungen für die Anzahl der Profile einhalten, wie im Abschnitt [Profile](#profiles) beschrieben.
+Sie können sowohl [ (feldbasierte](/help/stitching/fbs.md) als auch [Diagrammbasierte](/help/stitching/gbs.md) Zuordnung für die Zieldatensätze verwenden. Wenn Sie das diagrammbasierte Stitching für einen oder mehrere dieser Zieldatensätze verwenden, stellen Sie sicher, dass Sie die vertraglichen Berechtigungen für die Anzahl der Profile einhalten, wie im Abschnitt [Profile](#profiles) beschrieben.
 
 Wenn Sie nicht für das Echtzeit-Kundenprofil lizenziert sind, aber dennoch diagrammbasiertes Stitching für einen oder mehrere Zieldatensätze verwenden möchten, stellen Sie sicher, dass Sie nur den [Identity Service](/help/stitching/faq.md#enable-a-dataset-for-the-identity-service) für diese Zieldatensätze aktivieren.
 
@@ -88,3 +88,4 @@ Ein Benutzer mit ausreichenden Berechtigungen zum Konfigurieren des Analytics-Qu
 ### Datenbericht
 
 Die Funktion *Cross-IMS-Datenzuordnung* ist nur ein erster Schritt, um sicherzustellen, dass Sie die Daten als Teil einer Customer Journey Analytics [Verbindung](/help/connections/overview.md), eines oder mehrerer [Datenansichten](/help/data-views/data-views.md) und [Workspace-Projekte](/help/analysis-workspace/home.md) können. Sie müssen die Daten, die Ihnen jetzt in einer IMS-Organisation zur Verfügung stehen, sorgfältig prüfen. Erwägen Sie auch Funktionen wie Datenvorbereitung, abgeleitete Felder, zusätzliche Suchtabellen und mehr, bevor Sie in der Lage sind, ordnungsgemäß über diese Daten zu berichten.
+
