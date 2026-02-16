@@ -4,10 +4,10 @@ description: Erfahren Sie mehr über die grundlegenden Funktionen berechneter Me
 feature: Calculated Metrics
 exl-id: 63775753-337b-4dec-a3a2-a3a0ee9aac2e
 role: User
-source-git-commit: e2e87bc3d9f26b01f250d88b924c730fe4edac7b
+source-git-commit: 211f0411d0bf70288cbd46bb219fce7ae99fe03d
 workflow-type: tm+mt
-source-wordcount: '3608'
-ht-degree: 49%
+source-wordcount: '3599'
+ht-degree: 48%
 
 ---
 
@@ -18,7 +18,7 @@ Mit dem [Generator für berechnete Metriken](cm-workflow/cm-build-metrics.md) k�
 
 >[!NOTE]
 >
->Wenn [!DNL metric] als Argument in einer Funktion angegeben ist, sind auch andere Ausdrücke von Metriken zulässig. Beispiel: [COLUMN MAXIMUM(metrics)](#column-maximum) ermöglicht auch [COLUMN MAXIMUM(PageViews + Visits)](#column-maximum).
+>Wenn [!DNL metric] als Argument in einer Funktion angegeben ist, sind auch andere Ausdrücke von Metriken zulässig. Beispielsweise ermöglicht [COLUMN MAXIMUM(Metriken)](#column-maximum) auch [COLUMN MAXIMUM(PageViews + Sessions)](#column-maximum).
 
 
 
@@ -89,11 +89,11 @@ Gibt den größten Wert in einem Satz aus Dimensionselementen für eine Metriksp
 
 **Anwendungsfall**: Identifizieren Sie den höchsten Wert innerhalb einer Aufschlüsselung, z. B. den Tag mit den meisten Besuchen oder das Produkt mit dem höchsten Umsatz. Auf diese Weise wird die Spitzenleistung kategorieübergreifend hervorgehoben.
 
-**Im Generator für berechnete Metriken**: Wenden Sie **Spaltenmaximum** auf eine Metrik wie *Umsatz* oder *Besuche* an, wenn Sie nach *Tag* oder *Produkt* aufschlüsseln. Die Funktion gibt für jede Zeile den größten Wert in dieser Spalte zurück.
+**Im Generator für berechnete Metriken**: Wenden Sie **Spaltenmaximum** auf eine Metrik wie *Umsatz* oder *Sitzungen* an, wenn Sie nach *Tag* oder *Produkt* aufschlüsseln. Die Funktion gibt für jede Zeile den größten Wert in dieser Spalte zurück.
 
 >[!TIP]
 >
->Verwenden Sie eine [IF](https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-components/cja-calcmetrics/cm-adv-functions#if)-Anweisung wie **IF**(*Revenue* = **Column Maximum***(Revenue*), 1, 0), um das Element in Ihrer Aufschlüsselung hervorzuheben, das die beste Leistung erzielt.
+>Verwenden Sie eine [IF](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-components/cja-calcmetrics/cm-adv-functions#if)-Anweisung wie **IF**(*Revenue* = **Column Maximum***(Revenue*), 1, 0), um das Element in Ihrer Aufschlüsselung hervorzuheben, das die beste Leistung erzielt.
 >
 
 ## Spaltenminimum {#column-minimum}
@@ -123,7 +123,7 @@ Gibt den kleinsten Wert in einem Satz aus Dimensionselementen für eine Metriksp
 
 >[!TIP]
 >
->Verwenden Sie eine [IF](https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-components/cja-calcmetrics/cm-adv-functions#if)-Anweisung wie **IF**(*Revenue* = **Column Minimum***(Revenue*), 1, 0), um das Element in Ihrer Aufschlüsselung mit der niedrigsten Leistung hervorzuheben.
+>Verwenden Sie eine [IF](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-components/cja-calcmetrics/cm-adv-functions#if)-Anweisung wie **IF**(*Revenue* = **Column Minimum***(Revenue*), 1, 0), um das Element in Ihrer Aufschlüsselung mit der niedrigsten Leistung hervorzuheben.
 >
 
 
@@ -149,7 +149,7 @@ Addiert alle numerischen Werte für eine Metrik innerhalb einer Spalte (über di
 
 **Anwendungsfall**: Berechnung der Summe aller Werte in einer Aufschlüsselung, z. B. Gesamtumsatz über alle Produkte oder Gesamtbesuche über alle Tage hinweg. Dies ist hilfreich, wenn Sie eine Gesamtsumme benötigen, um sie mit den einzelnen Zeilenwerten zu vergleichen.
 
-**Im Generator für berechnete Metriken**: Wenden Sie **Spaltensumme** auf eine Metrik wie *Umsatz* oder *Besuche* an, während Sie nach *Produkt* oder *Tag* aufgeschlüsselt werden. Die Funktion gibt die Summe aller Werte in dieser Spalte für jede Zeile zurück.
+**Im Generator für berechnete Metriken**: Wenden Sie **Spaltensumme** auf eine Metrik wie *Umsatz* oder *Sitzungen* an, während Sie nach *Produkt* oder *Tag* aufschlüsseln. Die Funktion gibt die Summe aller Werte in dieser Spalte für jede Zeile zurück.
 
 >[!TIP]
 >
@@ -179,7 +179,7 @@ Addiert alle numerischen Werte für eine Metrik innerhalb einer Spalte (über di
 
 **Anwendungsfall**: Zählen der Anzahl der in einer Berechnung enthaltenen Datenpunkte, z. B. die Anzahl der Tage in einem Datumsbereich oder die Anzahl der Produkte in einer Aufschlüsselung. Dies ist hilfreich, wenn Sie wissen müssen, wie viele Elemente zu einem aggregierten Wert beitragen.
 
-**Im Generator für berechnete Metriken**: Wenden Sie **count** auf eine Metrik wie *Besuche* oder *Umsatz* an, um die Gesamtzahl der Zeilen (oder Datenpunkte) zurückzugeben, die in der aktuellen Aufschlüsselung oder im Datumsbereich enthalten sind.
+**Im Generator für berechnete Metriken**: Wenden Sie **count** auf eine Metrik wie *Sitzungen* oder *Umsatz* an, um die Gesamtzahl der Zeilen (oder Datenpunkte) zurückzugeben, die in der aktuellen Aufschlüsselung oder im Datumsbereich enthalten sind.
 
 >[!TIP]
 >
@@ -199,15 +199,15 @@ Addiert alle numerischen Werte für eine Metrik innerhalb einer Spalte (über di
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL EXPONENT(metric)]**
 
-[!BADGE Zeile]{type="Neutral"} Gibt e potenziert mit einer angegebenen Zahl zurück. Die Konstante e entspricht 2,71828182845904, der Basis des natürlichen Logarithmus. EXPONENT ist die Umkehrung von LN, dem natürlichen Logarithmus einer Zahl.
+[!BADGE Row]{type="Neutral"} Gibt *e* erhöht um die Potenz einer bestimmten Zahl zurück. Die Konstante *e* entspricht 2,71828182845904, der Basis des natürlichen Logarithmus. EXPONENT ist die Umkehrung von LN, dem natürlichen Logarithmus einer Zahl.
 
 | Argument | Beschreibung |
 |---|---|
-| metric | Die Exponentialfunktion mit Basis „e“. |
+| metric | Der auf die Basis angewendete Exponent *e*. |
 
-**Anwendungsfall**: Erhöhen einer Zahl oder Metrik auf eine bestimmte Potenz, z. B. Quadrierung eines Werts oder Anwendung eines exponentiellen Wachstumsfaktors. Dies ist nützlich bei der Modellierung von Wachstumstrends oder der exponentiellen Skalierung einer Metrik.
+**Anwendungsfall**: Hebt *e* auf die Potenz einer bestimmten Zahl oder Metrik auf. Dies ist nützlich bei der Modellierung von Wachstumstrends oder der exponentiellen Skalierung einer Metrik.
 
-**Im Generator für berechnete Metriken**: Verwenden Sie **Exponent** mit einer Metrik und einem Leistungswert. Beispiel: **Exponent**(*Besuche*, 2) quadriert die Metrik *Besuche*.
+**Im Generator für berechnete Metriken**: Verwenden Sie **Exponent** mit einer Metrik. Beispiel: **Exponent**(*Sessions*) hebt *e* auf die Metrik *Sessions* an.
 
 >[!TIP]
 >
@@ -238,7 +238,7 @@ Addiert alle numerischen Werte für eine Metrik innerhalb einer Spalte (über di
 
 **Anwendungsfall**: Berechnet den arithmetischen Durchschnitt einer Reihe von Werten, wie z. B. den durchschnittlichen täglichen Umsatz oder die durchschnittliche Anzahl der Besuche pro Kampagne. Dies hilft bei der Festlegung einer Baseline für den Vergleich einzelner Werte in einem Datensatz.
 
-**Im Generator für berechnete Metriken**: Wenden Sie **Mittel** auf eine Metrik wie *Umsatz* oder *Besuche* an, um den Durchschnittswert für alle Datenpunkte in der ausgewählten Aufschlüsselung oder im Datumsbereich zurückzugeben.
+**Im Generator für berechnete Metriken**: Wenden Sie **Mittel** auf eine Metrik wie *Umsatz* oder *Sitzungen* an, um den Durchschnittswert für alle Datenpunkte in der ausgewählten Aufschlüsselung oder im Datumsbereich zurückzugeben.
 
 >[!TIP]
 >
@@ -346,7 +346,7 @@ MODULO(MODULO(x,y)+y,y)
 
 **Anwendungsfall**: Identifizieren Sie den Wert, unter den ein bestimmter Prozentsatz von Datenpunkten fällt, z. B. das 90. Perzentil des täglichen Umsatzes oder die Seitenansichten. Dies hilft bei der Messung der Verteilung und der Erkennung von Ausreißern mit hoher Leistung.
 
-**Im Generator für berechnete Metriken**: Wenden Sie **Perzentil** auf eine Metrik wie *Umsatz* oder *Besuche* an und geben Sie den gewünschten Perzentilwert an (z. B. **Perzentil**(*Umsatz*, 90)). Das Ergebnis zeigt den Schwellenwert an, unter den 90 % der Datenpunkte fallen.
+**Im Generator für berechnete Metriken**: Wenden Sie **Perzentil** auf eine Metrik wie *Umsatz* oder *Sitzungen* an und geben Sie den gewünschten Perzentilwert an (z. B. **Perzentil**(*Umsatz*, 90)). Das Ergebnis zeigt den Schwellenwert an, unter den 90 % der Datenpunkte fallen.
 
 >[!TIP]
 >
@@ -406,7 +406,7 @@ Gibt die y-te Potenz von x zurück.
 
 **Anwendungsfall**: Teilen Sie einen Datensatz in vier gleiche Teile auf, um zu verstehen, wie Werte verteilt werden, z. B. die Identifizierung der obersten 25 % der Tage nach Umsatz oder Besuchen. Dies hilft, die Leistung in Ranggruppen zu unterteilen, um einen tieferen Vergleich zu ermöglichen.
 
-**Im Generator für berechnete Metriken**: Wenden Sie **Quartil** auf eine Metrik wie *Umsatz* oder *Besuche* an und geben Sie an, welches Quartil zurückgegeben werden soll (z. B. **Quartil**(*Umsatz*, 3), um den Schwellenwert für das dritte Quartil oder die obersten 25 % zu finden).
+**Im Generator für berechnete Metriken**: Wenden Sie **Quartil** auf eine Metrik wie *Umsatz* oder *Sitzungen* an und geben Sie an, welches Quartil zurückgegeben werden soll (z. B. **Quartil**(*Umsatz*, 3), um den Schwellenwert für das dritte Quartil oder die obersten 25 % zu finden).
 
 >[!TIP]
 >
@@ -468,7 +468,7 @@ Gibt die Anzahl der Zeilen in einer bestimmten Spalte zurück (die Anzahl der in
 
 **Anwendungsfall** Zählen Sie die Gesamtzahl der in einer Aufschlüsselung oder einem Datensatz zurückgegebenen Zeilen, z. B. die Anzahl der Tage, Kampagnen oder Produkte, die in einem Bericht enthalten sind. Auf diese Weise lässt sich erkennen, wie viele Elemente zu Ihrer Analyse beitragen.
 
-**Im Generator für berechnete Metriken**: Wenden Sie **Zeilenanzahl** an, um die Gesamtzahl der Zeilen in der aktuellen Aufschlüsselung oder im aktuellen Segment zurückzugeben. Wenn Sie beispielsweise „Umsatz **&#x200B; nach *Produkt*, &#x200B;** Zeilenanzahl** anzeigen, wird die Anzahl der angezeigten Produkte zurückgegeben.
+**Im Generator für berechnete Metriken**: Wenden Sie **Zeilenanzahl** an, um die Gesamtzahl der Zeilen in der aktuellen Aufschlüsselung oder im aktuellen Segment zurückzugeben. Wenn Sie beispielsweise „Umsatz ** nach *Produkt*, **Zeilenanzahl** anzeigen, wird die Anzahl der angezeigten Produkte zurückgegeben.
 
 >[!TIP]
 >
@@ -495,9 +495,9 @@ Das Maximum der Spalten in jeder Zeile.
 | metric | Erfordert mindestens eine Metrik, kann jedoch eine beliebige Anzahl von Metriken als Parameter verwenden. |
 | include_zeros | Gibt an, ob Nullwerte in die Berechnungen einbezogen werden sollen oder nicht. |
 
-**Anwendungsfall**: Identifizieren Sie den höchsten Wert für alle Metriken in einer einzigen Zeile, z. B. welche Metrik (z. B. *Umsatz*, *Bestellungen* oder *Besuche*) den größten Wert für einen bestimmten Tag oder ein bestimmtes Segment hat. Auf diese Weise kann hervorgehoben werden, welche Metrik in jeder Datenzeile zu Leads führt.
+**Anwendungsfall**: Identifizieren Sie den höchsten Wert für alle Metriken in einer einzigen Zeile, z. B. welche Metrik (z. B. *Umsatz*, *Bestellungen* oder *Sitzungen*) den größten Wert für einen bestimmten Tag oder ein bestimmtes Segment hat. Auf diese Weise kann hervorgehoben werden, welche Metrik in jeder Datenzeile zu Leads führt.
 
-**Im Generator für berechnete Metriken**: Wenden Sie **Zeilenmaximum** an, wenn mehrere Metriken in einer berechneten Metrik enthalten sind. Beispiel: **Row Maximum**(*Umsatz*, *Bestellungen*, *Besuche*) gibt den größten Wert unter diesen Metriken für jede Zeile zurück.
+**Im Generator für berechnete Metriken**: Wenden Sie **Zeilenmaximum** an, wenn mehrere Metriken in einer berechneten Metrik enthalten sind. Beispiel: **Row Maximum**(*Umsatz*, *Bestellungen*, *Sitzungen*) gibt den größten Wert unter diesen Metriken für jede Zeile zurück.
 
 >[!TIP]
 >
@@ -524,9 +524,9 @@ Das Minimum der Spalten in jeder Zeile.
 | metric | Erfordert mindestens eine Metrik, kann jedoch eine beliebige Anzahl von Metriken als Parameter verwenden. |
 | include_zeros | Gibt an, ob Nullwerte in die Berechnungen einbezogen werden sollen oder nicht. |
 
-**Anwendungsfall**: Identifizieren Sie den niedrigsten Wert für alle Metriken in einer einzigen Zeile, z. B. welche Metrik (z. B. *Umsatz*, *Bestellungen* oder *Besuche*) den kleinsten Wert für einen bestimmten Tag oder ein bestimmtes Segment hat. Auf diese Weise können Sie die Metrik mit der schwächsten Performance in jeder Datenzeile identifizieren.
+**Anwendungsfall**: Identifizieren Sie den niedrigsten Wert für alle Metriken in einer einzigen Zeile, z. B. welche Metrik (z. B. *Umsatz*, *Bestellungen* oder *Sitzungen*) den kleinsten Wert für einen bestimmten Tag oder ein bestimmtes Segment hat. Auf diese Weise können Sie die Metrik mit der schwächsten Performance in jeder Datenzeile identifizieren.
 
-**Im Generator für berechnete Metriken**: Wenden Sie **Zeilenminimum“ an** wenn Sie mehrere Metriken vergleichen. Beispiel: **Zeile Minimum**(*Umsatz*, *Bestellungen*, *Besuche*) gibt den kleinsten Wert unter diesen Metriken für jede Zeile zurück.
+**Im Generator für berechnete Metriken**: Wenden Sie **Zeilenminimum“ an** wenn Sie mehrere Metriken vergleichen. Beispiel: **Mindestzeile**(*Umsatz*, *Bestellungen*, *Sitzungen*) gibt den kleinsten Wert unter diesen Metriken für jede Zeile zurück.
 
 >[!TIP]
 >
@@ -552,7 +552,7 @@ Die Summe der Spalten in jeder Zeile.
 |---|---|
 | metric | Erfordert mindestens eine Metrik, kann jedoch eine beliebige Anzahl von Metriken als Parameter verwenden. |
 
-**Anwendungsfall**: Addieren Sie die Werte mehrerer Metriken in einer einzigen Zeile, z. B. Summe *Umsatz* und *Steuer*, um den Gesamttransaktionswert zu berechnen oder *Besuche* aus verschiedenen Quellen zu kombinieren. Dies hilft, verwandte Metriken in einer Summe zu konsolidieren.
+**Anwendungsfall**: Addieren Sie die Werte mehrerer Metriken in einer einzigen Zeile, z. B. Summe *Umsatz* und *Steuer*, um den Gesamttransaktionswert zu berechnen oder *Sitzungen* aus verschiedenen Quellen zu kombinieren. Dies hilft, verwandte Metriken in einer Summe zu konsolidieren.
 
 **Im Generator für berechnete Metriken**: Wenden Sie **Zeilensumme** an, um mehrere Metriken zu kombinieren. Beispiel: **Zeilensumme**(*Umsatz*, *Steuer*) fügt diese beiden Metriken für jede Zeile in Ihrer Aufschlüsselung hinzu.
 
@@ -612,7 +612,7 @@ Die Summe der Spalten in jeder Zeile.
 
 **Anwendungsfall**: Messen Sie, wie viele Werte vom Durchschnitt abweichen, z. B. wie konsistent der tägliche Umsatz oder die Besuche im Laufe der Zeit sind. Dies hilft bei der Identifizierung von Volatilität, Stabilität oder ungewöhnlichen Leistungsschwankungen.
 
-**Im Generator für berechnete Metriken**: Wenden Sie **Standardabweichung** auf eine Metrik wie *Umsatz* oder *Besuche* an, um den Spread der Werte innerhalb der ausgewählten Aufschlüsselung oder des Datumsbereichs zu berechnen. Beispiel: **Standardabweichung**(*Umsatz*) zeigt an, wie stark der tägliche Umsatz vom Mittelwert abweicht.
+**Im Generator für berechnete Metriken**: Wenden Sie **Standardabweichung** auf eine Metrik wie *Umsatz* oder *Sitzungen* an, um den Spread der Werte innerhalb der ausgewählten Aufschlüsselung oder des Datumsbereichs zu berechnen. Beispiel: **Standardabweichung**(*Umsatz*) zeigt an, wie stark der tägliche Umsatz vom Mittelwert abweicht.
 
 >[!TIP]
 >

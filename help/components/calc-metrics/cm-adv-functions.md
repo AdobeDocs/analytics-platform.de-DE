@@ -4,9 +4,9 @@ description: Erfahren Sie mehr über erweiterte Funktionen berechneter Metriken.
 feature: Calculated Metrics
 exl-id: 3689a499-817d-4a59-8a1f-5f7bda297268
 role: User
-source-git-commit: c209341400bf4e0c00719075f0fc82f81ca9dbb4
+source-git-commit: fa66083b922c903f6a7b0608d91f26e85bd8374f
 workflow-type: tm+mt
-source-wordcount: '5241'
+source-wordcount: '5272'
 ht-degree: 98%
 
 ---
@@ -116,7 +116,7 @@ Ein gängiger Anwendungsfall für diese Funktion ist, wenn Sie eine ungefähre A
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL ARC SINE(metric)]**
 
 
-[!BADGE Zeile &#x200B;]{type="Neutral"} Gibt den Arkussinus (die Umkehrung des Sinus) einer Zahl zurück. Der Arcussinus ist der Winkel, dessen Sinus eine gegebene Zahl ist. Der zurückgegebene Winkel wird in Radiant im Bereich -pi/2 bis pi/2 angegeben. Um den Arkussinus in Grad auszudrücken, multiplizieren Sie das Ergebnis mit 180/PI().
+[!BADGE Zeile ]{type="Neutral"} Gibt den Arkussinus (die Umkehrung des Sinus) einer Zahl zurück. Der Arcussinus ist der Winkel, dessen Sinus eine gegebene Zahl ist. Der zurückgegebene Winkel wird in Radiant im Bereich -pi/2 bis pi/2 angegeben. Um den Arkussinus in Grad auszudrücken, multiplizieren Sie das Ergebnis mit 180/PI().
 
 
 | Argument | Beschreibung |
@@ -673,7 +673,7 @@ Größer als oder gleich. Die Ausgabe ist entweder 0 (False) oder 1 (True).
 
 | Argument | Beschreibung |
 |---|---|
-| logical_test | Erforderlich. Wert, der als TRUE oder FALSE ausgewertet werden kann. |
+| logical_test | Erforderlich. Jeder Wert oder Ausdruck, der als TRUE oder FALSE ausgewertet werden kann |
 | value_if_true | Der Wert, der ausgegeben werden soll, wenn das Argument des Logiktests also TRUE ausgewertet wird. (Dieses Argument wird automatisch auf 0 gesetzt, wenn es nicht eingesetzt wurde.) |
 | value_if_false | Der Wert, der ausgegeben werden soll, wenn das logical_test-Argument als FALSE ausgewertet wird. (Dieses Argument wird automatisch auf 0 gesetzt, wenn es nicht eingesetzt wurde.) |
 
@@ -1344,18 +1344,18 @@ Gibt Pi zurück: 3,14159...
 
 
 
-## Stichprobenvarianz
+## Stichprobenvarianz {#sample-variance}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="functions-waskr-variance-estimate"
 >title="Stichprobenvarianz"
->abstract="Berechnet eine Schätzung der Stichprobenvarianz anhand der Formel (sum(metric^2) / (N - 1)) - (sum(metric))^2/(N*(N-1)). Wobei N die Anzahl des Normalisierungs-Containers ist. <br/>Dies wird im Rahmen von *jederzeit gültigen* Konfidenzberechnungen verwendet. Grundsätzlich ist diese Funktion allein nicht nützlich, sie kann aber verwendet werden, um Berechnungen zu überprüfen oder Konfidenzberechnungen *manuell* durchzuführen."
+>abstract="Berechnet eine Schätzung der Stichprobenvarianz anhand der Formel `(sum(metric^2) / (N - 1)) - (sum(metric))^2/(N*(N-1))`. wobei `N` die Anzahl des Normalisierungs-Containers ist. <br/>Dies wird im Rahmen von *jederzeit gültigen* Konfidenzberechnungen verwendet. Grundsätzlich ist diese Funktion allein nicht nützlich, sie kann aber verwendet werden, um Berechnungen zu überprüfen oder Konfidenzberechnungen *manuell* durchzuführen."
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL SAMPLE VARIANCE(normalizing-container, success-metric)]**
 
-Berechnet eine Schätzung der Stichprobenvarianz.
+Berechnet eine Schätzung der Stichprobenvarianz anhand der Formel `(sum(metric^2) / (N - 1)) - (sum(metric))^2/(N*(N-1))`. wobei `N` die Anzahl des Normalisierungs-Containers ist.<br/>Dies wird im Rahmen von *jederzeit gültigen* Konfidenzberechnungen verwendet. Grundsätzlich ist diese Funktion allein nicht nützlich, sie kann aber verwendet werden, um Berechnungen zu überprüfen oder Konfidenzberechnungen *manuell* durchzuführen.
 
 | Argument | Beschreibung |
 | --- | --- |
