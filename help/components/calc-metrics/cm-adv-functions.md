@@ -4,9 +4,9 @@ description: Erfahren Sie mehr über erweiterte Funktionen berechneter Metriken.
 feature: Calculated Metrics
 exl-id: 3689a499-817d-4a59-8a1f-5f7bda297268
 role: User
-source-git-commit: fa66083b922c903f6a7b0608d91f26e85bd8374f
+source-git-commit: a5e07891b23184dfe5d4c3f1b2c4b36b6884fb72
 workflow-type: tm+mt
-source-wordcount: '5272'
+source-wordcount: '5294'
 ht-degree: 98%
 
 ---
@@ -116,7 +116,7 @@ Ein gängiger Anwendungsfall für diese Funktion ist, wenn Sie eine ungefähre A
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL ARC SINE(metric)]**
 
 
-[!BADGE Zeile &#x200B;]{type="Neutral"} Gibt den Arkussinus (die Umkehrung des Sinus) einer Zahl zurück. Der Arcussinus ist der Winkel, dessen Sinus eine gegebene Zahl ist. Der zurückgegebene Winkel wird in Radiant im Bereich -pi/2 bis pi/2 angegeben. Um den Arkussinus in Grad auszudrücken, multiplizieren Sie das Ergebnis mit 180/PI().
+[!BADGE Zeile ]{type="Neutral"} Gibt den Arkussinus (die Umkehrung des Sinus) einer Zahl zurück. Der Arcussinus ist der Winkel, dessen Sinus eine gegebene Zahl ist. Der zurückgegebene Winkel wird in Radiant im Bereich -pi/2 bis pi/2 angegeben. Um den Arkussinus in Grad auszudrücken, multiplizieren Sie das Ergebnis mit 180/PI().
 
 
 | Argument | Beschreibung |
@@ -1351,11 +1351,11 @@ Gibt Pi zurück: 3,14159...
 >[!CONTEXTUALHELP]
 >id="functions-waskr-variance-estimate"
 >title="Stichprobenvarianz"
->abstract="Berechnet eine Schätzung der Stichprobenvarianz anhand der Formel `(sum(metric^2) / (N - 1)) - (sum(metric))^2/(N*(N-1))`. wobei `N` die Anzahl des Normalisierungs-Containers ist. <br/>Dies wird im Rahmen von *jederzeit gültigen* Konfidenzberechnungen verwendet. Grundsätzlich ist diese Funktion allein nicht nützlich, sie kann aber verwendet werden, um Berechnungen zu überprüfen oder Konfidenzberechnungen *manuell* durchzuführen."
+>abstract="Berechnet eine Schätzung der Stichprobenvarianz anhand der Formel (sum(metric^2) / (N - 1)) - (sum(metric))^2/(N*(N-1)). Wobei N die Anzahl des Normalisierungs-Containers ist. <br/>Dies wird im Rahmen von *jederzeit gültigen* Konfidenzberechnungen verwendet. Grundsätzlich ist diese Funktion allein nicht nützlich, sie kann aber verwendet werden, um Berechnungen zu überprüfen oder Konfidenzberechnungen *manuell* durchzuführen."
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL SAMPLE VARIANCE(normalizing-container, success-metric)]**
 
-Berechnet eine Schätzung der Stichprobenvarianz anhand der Formel `(sum(metric^2) / (N - 1)) - (sum(metric))^2/(N*(N-1))`. wobei `N` die Anzahl des Normalisierungs-Containers ist.<br/>Dies wird im Rahmen von *jederzeit gültigen* Konfidenzberechnungen verwendet. Grundsätzlich ist diese Funktion allein nicht nützlich, sie kann aber verwendet werden, um Berechnungen zu überprüfen oder Konfidenzberechnungen *manuell* durchzuführen.
+Berechnet eine Schätzung der Stichprobenvarianz anhand der Formel (sum(metric^2) / (N - 1)) - (sum(metric))^2/(N*(N-1)). wobei N die Anzahl des Normalisierungsbehälters ist.<br/>Dies wird im Rahmen von *jederzeit gültigen* Konfidenzberechnungen verwendet. Grundsätzlich ist diese Funktion allein nicht nützlich, sie kann aber verwendet werden, um Berechnungen zu überprüfen oder Konfidenzberechnungen *manuell* durchzuführen.
 
 | Argument | Beschreibung |
 | --- | --- |
