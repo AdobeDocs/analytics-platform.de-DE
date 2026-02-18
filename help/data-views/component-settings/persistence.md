@@ -58,31 +58,31 @@ Die verfügbaren Zuordnungseinstellungen sind:
 
   | Dimension | Treffer 1 | Treffer 2 | Treffer 3 | Treffer 4 | Treffer 5 |
   | --- | --- | --- | --- | --- | --- |
-  | Datensatzwerte |  | C | B |  | A |
-  | Zuletzt verwendete Zuordnung |  | C | B | B | A |
+  | Datensatzwerte |  | C | B |  | A  |
+  | Zuletzt verwendete Zuordnung |  | C | B | B | A  |
 
 * **[!UICONTROL Original]**: Behält den ursprünglichen Wert nach Zeitstempel bei, der innerhalb der Dimension für die Dauer des Gültigkeitszeitraums vorhanden ist. Wenn diese Dimension einen Wert hat, wird er nicht überschrieben, wenn bei einem nachfolgenden Ereignis ein anderer Wert angezeigt wird. Betrachten Sie beispielsweise die folgende Tabelle mit der Zuordnung [!UICONTROL Original] und der Gültigkeit [!UICONTROL Sitzung]:
 
   | Dimension | Treffer 1 | Treffer 2 | Treffer 3 | Treffer 4 | Treffer 5 |
   | --- | --- | --- | --- | --- | --- |
-  | Datensatzwerte |  | C | B |  | A |
+  | Datensatzwerte |  | C | B |  | A  |
   | Originale Zuordnung |  | C | C | C | C |
 
 * **[!UICONTROL Alle]**: Funktioniert ähnlich wie das Attributionsmodell [!UICONTROL Partizipation] für Metriken. Behält alle Werte bei, damit jeder Wert im Reporting vollständig für die Metrik angerechnet wird. Betrachten Sie beispielsweise die folgende Tabelle mit der Zuordnung [!UICONTROL Alle] und der Gültigkeit [!UICONTROL Sitzung]:
 
   | Dimension | Treffer 1 | Treffer 2 | Treffer 3 | Treffer 4 | Treffer 5 |
   | --- | --- | --- | --- | --- | --- |
-  | Datensatzwerte | A | B | C |  | A |
-  | Zuordnung Alle | A | A,B | A,B,C | A,B,C | A,B,C |
+  | Datensatzwerte | A  | B | C |  | A  |
+  | Zuordnung Alle | A  | A,B | A,B,C | A,B,C | A,B,C |
 
 * **[!UICONTROL Erster bekannter]** und **[!UICONTROL Letzter bekannter]**: (19. Januar 2022) Diese beiden Zuordnungsmodelle erfüllen die Anwendungsfälle der Dimensionen Einstieg und Ausstieg. Sie wenden den ersten oder letzten beobachteten Wert für eine Dimension innerhalb eines bestimmten Persistenzbereichs (Sitzung, Person oder benutzerspezifischer Zeitraum mit Lookback) auf alle Ereignisse innerhalb des angegebenen Bereichs an. Beispiel:
 
   | Dimension | Treffer 1 | Treffer 2 | Treffer 3 | Treffer 4 | Treffer 5 |
   | --- | --- | --- | --- | --- | --- |
   | Zeitstempel (Min.) | 1 | 2 | 3 | 6 | 7 |
-  | Ausgangswerte |  | C | B |  | A |
+  | Ausgangswerte |  | C | B |  | A  |
   | Erster bekannter | C | C | C | C | C |
-  | Letzter bekannter | A | A | A | A | A |
+  | Letzter bekannter | A  | A  | A  | A  | A  |
 
 
 ## [!UICONTROL Gültigkeits]-Einstellungen
@@ -108,7 +108,7 @@ Siehe [Verwenden von Bindungsdimensionen und Metriken in Customer Journey Analyt
 
 >[!BEGINSHADEBOX]
 
-Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Bindungsdimensionen](https://video.tv.adobe.com/v/3409824/?captions=ger&quality=12&learn=on){target="_blank"} finden Sie ein Demovideo.
+Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Bindungsdimensionen](https://video.tv.adobe.com/v/342694/?quality=12&learn=on){target="_blank"} finden Sie ein Demovideo.
 
 >[!ENDSHADEBOX]
 
