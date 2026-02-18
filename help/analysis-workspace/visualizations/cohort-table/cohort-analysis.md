@@ -55,7 +55,7 @@ Die [!UICONTROL Kohortentabelle] steht allen Customer Journey Analytics-Kundinne
 
 >[!BEGINSHADEBOX]
 
-Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Kohortenanalyse in Analysis Workspace](https://video.tv.adobe.com/v/23990/?quality=12&learn=on){target="_blank"} finden Sie ein Demovideo.
+Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Kohortenanalyse in Analysis Workspace](https://video.tv.adobe.com/v/3430076/?captions=ger&quality=12&learn=on){target="_blank"} finden Sie ein Demovideo.
 
 {{videoaa}}
 
