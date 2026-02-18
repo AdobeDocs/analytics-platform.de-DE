@@ -70,7 +70,7 @@ Die grundlegenden Schritte für die Migration einer Adobe Analytics-Implementier
 
    1. Senden Sie alle Variablen im AppMeasurement-Format über das Datenobjekt.
 
-      Weitere Informationen finden Sie unter [Zuordnung von Datenobjektvariablen zu Adobe Analytics](https://experienceleague.adobe.com/en/docs/analytics/implementation/aep-edge/data-var-mapping).
+      Weitere Informationen finden Sie unter [Zuordnung von Datenobjektvariablen zu Adobe Analytics](https://experienceleague.adobe.com/de/docs/analytics/implementation/aep-edge/data-var-mapping).
 
    1. Wählen Sie Ihr Schema.
 
@@ -96,7 +96,7 @@ Die grundlegenden Schritte für die Migration einer Adobe Analytics-Implementier
 
    1. Verwenden Sie die Datenstrom-Zuordnung , um alle Felder im Datenobjekt Ihrem XDM-Schema zuzuordnen.
 
-      Weitere Informationen finden Sie unter [Zuordnung](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/data-prep?lang=en#mapping) in [Datenvorbereitung für die Datenerfassung](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/data-prep) in der Experience Platform-Dokumentation.
+      Weitere Informationen finden Sie unter [Zuordnung](https://experienceleague.adobe.com/de/docs/experience-platform/datastreams/data-prep?lang=en#mapping) in [Datenvorbereitung für die Datenerfassung](https://experienceleague.adobe.com/de/docs/experience-platform/datastreams/data-prep) in der Experience Platform-Dokumentation.
 
 {{upgrade-final-step}}.
 
