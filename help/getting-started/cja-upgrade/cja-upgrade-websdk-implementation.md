@@ -71,4 +71,4 @@ Es werden drei Möglichkeiten unterstützte, um das Adobe Experience Platform-We
 
 * [NPM](https://experienceleague.adobe.com/de/docs/experience-platform/web-sdk/install/npm): Installieren Sie das Web-SDK mithilfe des NPM-Paket-Managers auf Ihrer Website.
 
-Weitere Informationen finden Sie unter [Überblick über die Web-SDK-Installation ](https://experienceleague.adobe.com/de/docs/experience-platform/web-sdk/install/overview) im Web SDK-Handbuch in Experience Platform.
+Weitere Informationen finden Sie unter [Überblick über die Web-SDK-Installation &#x200B;](https://experienceleague.adobe.com/de/docs/experience-platform/web-sdk/install/overview) im Web SDK-Handbuch in Experience Platform.
