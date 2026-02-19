@@ -52,7 +52,7 @@ Diese Konfiguration führt Sie beim Einrichten aller Anwendungen, die für eine 
 1. **Konfigurieren Sie die Zugriffssteuerung und Berechtigungen** um die Content Analytics-Konfiguration und -Implementierung zu unterstützen.
 1. **Richten Sie ein Schema und einen** ein, um das Modell (Schema) der Daten zu definieren, aus denen Sie Inhaltsanalyseeinblicke erfassen möchten, und um festzulegen, wo diese Daten (Datensatz) erfasst werden sollen.
 
-**Phase 2** - [Konfigurieren der ](#configure-data-collection). In dieser Phase erstellen Sie die Pipeline, die Inhaltsdaten von Ihrer Website erfasst. Content Analytics weiß also, welche Inhalte Besucherinnen und Besucher mit Ihren Inhalten interagieren.
+**Phase 2** - [Konfigurieren der &#x200B;](#configure-data-collection). In dieser Phase erstellen Sie die Pipeline, die Inhaltsdaten von Ihrer Website erfasst. Content Analytics weiß also, welche Inhalte Besucherinnen und Besucher mit Ihren Inhalten interagieren.
 
 1. **Einrichten eines Datenstroms**, um zu konfigurieren, wie Ihre erfassten Daten an den Datensatz weitergeleitet werden.
 1. **Website-Tags verwenden** um Regeln und Datenelemente entsprechend den Daten in Ihrer Datenschicht auf Ihrer Website zu konfigurieren und sicherzustellen, dass Daten an den konfigurierten Datenstrom gesendet werden.
@@ -239,7 +239,7 @@ So überprüfen und aktualisieren Sie diese Berechtigungen für Customer Journey
 
 ### Einrichten von Schema und Datensatz
 
-Um Daten auf Ihrer Website zu erfassen, die Content Analytics Insights unterliegen, müssen Sie zunächst definieren, welche Art von Daten Sie erfassen möchten. Und auch wie diese Daten gespeichert werden. Beide Konzepte werden unter [Einrichten eines Schemas und Datensatzes](/help/data-ingestion/aepwebsdk.md#set-up-a-schema-and-dataset) in der Schnellstartanleitung [Daten über Adobe Experience Platform Web SDK ](/help/data-ingestion/aepwebsdk.md).
+Um Daten auf Ihrer Website zu erfassen, die Content Analytics Insights unterliegen, müssen Sie zunächst definieren, welche Art von Daten Sie erfassen möchten. Und auch wie diese Daten gespeichert werden. Beide Konzepte werden unter [Einrichten eines Schemas und Datensatzes](/help/data-ingestion/aepwebsdk.md#set-up-a-schema-and-dataset) in der Schnellstartanleitung [Daten über Adobe Experience Platform Web SDK &#x200B;](/help/data-ingestion/aepwebsdk.md).
 
 
 ## Konfigurieren der Datenerfassung
@@ -253,7 +253,7 @@ Sie haben definiert, welche Daten erfasst werden sollen und wie diese Daten gesp
 
 ### Verwenden von Tags
 
-Sie haben definiert, welche Daten erfasst werden sollen (Schema), wie diese Daten gespeichert werden (Datensatz) und wie die auf Ihrer Website erfassten Daten an den Datensatz (Datenstrom) weitergeleitet werden. Als nächsten Schritt müssen Sie Ihre Website taggen , um Regeln und Datenelemente mit den Daten in Ihrer Datenschicht auf Ihrer Website zu konfigurieren. Durch das Tagging Ihrer Website wird sichergestellt, dass Daten an den konfigurierten Datenstrom gesendet werden. Das Tagging Ihrer Website mithilfe von Tags wird unter [Verwenden von Tags](/help/data-ingestion/aepwebsdk.md#use-tags) in der Schnellstartanleitung [Daten über die Adobe Experience Platform Web SDK ](/help/data-ingestion/aepwebsdk.md).
+Sie haben definiert, welche Daten erfasst werden sollen (Schema), wie diese Daten gespeichert werden (Datensatz) und wie die auf Ihrer Website erfassten Daten an den Datensatz (Datenstrom) weitergeleitet werden. Als nächsten Schritt müssen Sie Ihre Website taggen , um Regeln und Datenelemente mit den Daten in Ihrer Datenschicht auf Ihrer Website zu konfigurieren. Durch das Tagging Ihrer Website wird sichergestellt, dass Daten an den konfigurierten Datenstrom gesendet werden. Das Tagging Ihrer Website mithilfe von Tags wird unter [Verwenden von Tags](/help/data-ingestion/aepwebsdk.md#use-tags) in der Schnellstartanleitung [Daten über die Adobe Experience Platform Web SDK &#x200B;](/help/data-ingestion/aepwebsdk.md).
 
 
 ### Bereitstellen und validieren
@@ -269,7 +269,7 @@ In dieser Phase stellen Sie die erfassten Daten zur Analyse in Berichten zur Ver
 
 ### Einrichten einer Verbindung zu Ihrem Datensatz
 
-Um über die erfassten Daten zu berichten und diese Daten für Content Analytics zu konfigurieren, müssen Sie in Customer Journey Analytics eine Verbindung einrichten. Die Verbindung stellt eine Verbindung zum Datensatz her, der die erfassten Daten enthält. Wie eine Verbindung eingerichtet wird, wird unter [Einrichten einer Verbindung](../../data-ingestion/aepwebsdk.md#set-up-a-connection) in der Schnellstartanleitung [Daten über Adobe Experience Platform Web SDK ](/help/data-ingestion/aepwebsdk.md).
+Um über die erfassten Daten zu berichten und diese Daten für Content Analytics zu konfigurieren, müssen Sie in Customer Journey Analytics eine Verbindung einrichten. Die Verbindung stellt eine Verbindung zum Datensatz her, der die erfassten Daten enthält. Wie eine Verbindung eingerichtet wird, wird unter [Einrichten einer Verbindung](../../data-ingestion/aepwebsdk.md#set-up-a-connection) in der Schnellstartanleitung [Daten über Adobe Experience Platform Web SDK &#x200B;](/help/data-ingestion/aepwebsdk.md).
 
 
 ### Einrichten einer Datenansicht
@@ -283,7 +283,7 @@ Sie haben jetzt alle Voraussetzungen, um Content Analytics zu konfigurieren.
 
 #### Geführte Konfiguration
 
-Verwenden Sie den [Konfigurationsassistenten](guided.md) und wählen Sie die Datenansicht aus, die Sie im Rahmen des Schritts [Einrichten einer ](#set-up-a-data-view)&quot; erstellt haben. Durch diese Auswahl wird sichergestellt, dass Content Analytics zusätzlich zu den auf Ihrer Website erfassten Daten konfiguriert und implementiert wird.
+Verwenden Sie den [Konfigurationsassistenten](guided.md) und wählen Sie die Datenansicht aus, die Sie im Rahmen des Schritts [Einrichten einer &#x200B;](#set-up-a-data-view)&quot; erstellt haben. Durch diese Auswahl wird sichergestellt, dass Content Analytics zusätzlich zu den auf Ihrer Website erfassten Daten konfiguriert und implementiert wird.
 
 Beachten Sie, dass der Assistent Geführte Konfiguration die folgenden zusätzlichen spezifischen Content Analytics-Objekte konfiguriert:
 
@@ -299,7 +299,7 @@ Beachten Sie, dass der Assistent Geführte Konfiguration die folgenden zusätzli
 
 #### Manuelle Konfiguration
 
-Um Content Analytics für Ihre Website zu implementieren, müssen Sie die Content Analytics Tags-Eigenschaft [manuell) ](manual.md).
+Um Content Analytics für Ihre Website zu implementieren, müssen Sie die Content Analytics Tags-Eigenschaft [manuell) &#x200B;](manual.md).
 
 
 ### Einrichten eines Projekts
