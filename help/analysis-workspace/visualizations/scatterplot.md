@@ -20,7 +20,7 @@ ht-degree: 65%
 
 >[!BEGINSHADEBOX]
 
-_In diesem Artikel wird die Visualisierung „Streuung“ in_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics** beschrieben._<br/>_Unter [Streuung](https://experienceleague.adobe.com/de/docs/analytics/analyze/analysis-workspace/visualizations/scatterplot) finden Sie die Version dieses Artikels für_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**._
+_In diesem Artikel wird die Visualisierung „Streuung“ in_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics** beschrieben._<br/>_Unter [Streuung](https://experienceleague.adobe.com/de/docs/analytics/analyze/analysis-workspace/visualizations/scatterplot) finden Sie die Version dieses Artikels für_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics**._
 
 >[!ENDSHADEBOX]
 
@@ -35,7 +35,7 @@ Die Visualisierung ![GraphScatter](/help/assets/icons/GraphScatter.svg) **[!UICO
 
 
 
-![Streudiagramm-Beispiel mit mehreren Dimensionselementen ](assets/scatter.png)
+![Streudiagramm-Beispiel mit mehreren Dimensionselementen &#x200B;](assets/scatter.png)
 
 
 >[!BEGINSHADEBOX]
@@ -46,7 +46,7 @@ Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Visualisierung
 
 >[!NOTE]
 >
->Wenn Sie [ Streuung die Legende so konfigurieren](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings) dass sie sichtbar ist, wird die Legende nur angezeigt, wenn die Datenquelle eine begrenzte Anzahl von (ausgewählten) Dimensionselementen enthält.
+>Wenn Sie [&#x200B; Streuung die Legende so konfigurieren](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings) dass sie sichtbar ist, wird die Legende nur angezeigt, wenn die Datenquelle eine begrenzte Anzahl von (ausgewählten) Dimensionselementen enthält.
 
 
 >[!MORELIKETHIS]
