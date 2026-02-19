@@ -82,7 +82,7 @@ Sie benötigen entweder einen System- oder einen Produktadministrator, um Sie al
 
 >[!BEGINSHADEBOX]
 
-Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Verwalten von Benutzern für ein Produktprofil](https://video.tv.adobe.com/v/333860/?quality=12&learn=on){target="_blank"} finden Sie ein Demovideo.
+Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Verwalten von Benutzern für ein Produktprofil](https://video.tv.adobe.com/v/3475950/?captions=ger&quality=12&learn=on){target="_blank"} finden Sie ein Demovideo.
 
 
 >[!ENDSHADEBOX]
