@@ -4,9 +4,9 @@ title: Verwenden von Vorlagen
 feature: Workspace Basics
 role: User, Admin
 exl-id: d61f215d-9089-4014-9c5a-97f5d7134f34
-source-git-commit: 9b941deb424d92744bea99f6ea01f6434d6bc19f
+source-git-commit: 02aa4b4c9b357efca3d620bb72d8a505153bc079
 workflow-type: tm+mt
-source-wordcount: '20935'
+source-wordcount: '21006'
 ht-degree: 96%
 
 ---
@@ -16,14 +16,14 @@ ht-degree: 96%
 Vorlagen (oder Unternehmensvorlagen) in Analysis Workspace bieten Quick Insights in die gängigsten Berichtsszenarien. Im Folgenden finden Sie einige Beispiele für Fragen, die Sie mit Vorlagen beantworten können:
 
 * Wie viele Personen besuchen Ihre Site?
-* Wie viele dieser Besucher sind Unique Visitors (nur einmal gezählt)
-* Wie sie zur Website kamen (ob sie beispielsweise einem Link gefolgt sind oder direkt dorthin gekommen sind)
-* Welche Keywords zum Durchsuchen von Website-Inhalten verwendet wurden
-* Wie lange Besucherinnen und Besucher auf einer bestimmten Seite oder auf der gesamten Site geblieben sind
-* Auf welche Links geklickt wurde und wann die Besucher die Website verlassen haben
-* Welche Marketing-Kanäle am effektivsten Umsatz- oder Konversionsereignisse generieren
-* Wie viel Zeit sie damit verbracht haben, sich ein Video anzusehen
-* Welche Browser und Geräte sie verwendet haben, um Ihre Website zu besuchen
+* Wie viele dieser Besucher sind Unique Visitors (nur einmal gezählt).
+* Wie sie zur Website kamen (ob sie beispielsweise einem Link gefolgt sind oder direkt dorthin gekommen sind).
+* Welche Keywords zum Durchsuchen von Website-Inhalten verwendet wurden.
+* Wie lange Besucherinnen und Besucher auf einer bestimmten Seite oder auf der gesamten Site geblieben sind.
+* Auf welche Links geklickt wurde und wann die Besucher die Website verlassen haben.
+* Welche Marketing-Kanäle sind am effektivsten bei der Generierung von Umsatz- oder Konversionsereignissen?
+* Wie viel Zeit sie damit verbracht haben, sich ein Video anzusehen.
+* Welche Browser und Geräte sie verwendet haben, um Ihre Website zu besuchen.
 
 Im Folgenden wird beschrieben, wie Sie über die Registerkarte [!UICONTROL Vorlagen] in Analysis Workspace auf Vorlagen zugreifen und sie nutzen können.
 
@@ -654,7 +654,7 @@ Die folgenden Vorlagen sind verfügbar:
 
 | Vorlagenname | Warum diese Vorlage verwenden?<!-- What do you do with it? What can it help you learn? and What are the potential actions? --> |
 | --- | --- |
-| **[!UICONTROL Zielgruppenübersicht]** | Anzeigen, welche Zielgruppen unter den Personen dargestellt werden, die Ihre Site besuchen.<p>**Auf diese Weise** Sie allgemeine Informationen zu den Zielgruppen, wo die Zielgruppen ihren Ursprung haben (RTCDP, Customer Journey Analytics usw.), Zielgruppenüberschneidungen und mehr besser verstehen.</p><p>**Je nachdem, was Sie lernen** können Sie beliebig viele Dinge tun, z. B. die Daten verwenden, um sich auf Marketing-Maßnahmen für diese spezifischen Zielgruppen zu konzentrieren, oder maßgeschneiderte Erlebnisse für Kunden erstellen, die mehrere Zielgruppen umfassen.</p><p>Diese Vorlage verwendet die Dimensionen Zielgruppenname, Zielgruppenherkunft, Name der ausgestiegenen Zielgruppe und Ursprung der ausgestiegenen Zielgruppe.</p><p>Weitere Informationen finden Sie unter [&#x200B; von Experience Platform-Zielgruppen in Customer Journey Analytics](/help/connections/audience-analysis/analyze-audiences.md).</p> |
+| **[!UICONTROL Zielgruppenübersicht]** | Anzeigen, welche Zielgruppen unter den Personen dargestellt werden, die Ihre Site besuchen.<p>**Auf diese Weise** Sie allgemeine Informationen zu den Zielgruppen, wo die Zielgruppen ihren Ursprung haben (RTCDP, Customer Journey Analytics usw.), Zielgruppenüberschneidungen und mehr besser verstehen.</p><p>**Je nachdem, was Sie lernen** können Sie beliebig viele Dinge tun, z. B. die Daten verwenden, um sich auf Marketing-Maßnahmen für diese spezifischen Zielgruppen zu konzentrieren, oder maßgeschneiderte Erlebnisse für Kunden erstellen, die mehrere Zielgruppen umfassen.</p><p>Diese Vorlage verwendet die Dimensionen Zielgruppenname, Zielgruppenherkunft, Name der ausgestiegenen Zielgruppe und Ursprung der ausgestiegenen Zielgruppe.</p><p>Weitere Informationen finden Sie unter [ von Experience Platform-Zielgruppen in Customer Journey Analytics](/help/connections/audience-analysis/analyze-audiences.md).</p> |
 | [!UICONTROL **Erstmalige vs. wiederkehrende Besuchende**] | Zeigen Sie einen Vergleich zwischen erstmaligen und wiederkehrenden Besuchenden an. <p>**Dies kann Ihnen helfen**, die Effektivität Ihrer Site bei der Kundenbindung oder die Rate, mit der Sie neue Kundschaft gewinnen, besser zu verstehen.</p><p>**Basierend auf Ihren Erkenntnissen können Sie** eine Reihe von Schritten ausführen, z. B. erstmaligen Besuchenden Anreize für zukünftige Käufe anbieten, um sie zur Rückkehr zu bewegen.</p><!-- This template uses the --> |
 | **Personen-ID** | Zeigen Sie das individuelle Benutzerverhalten über verschiedene Kanäle hinweg an.<p>**Dies kann Ihnen helfen**, die gesamte Customer Journey und alle Interaktionen Touchpoint-übergreifend besser zu verstehen.</p><p>**Basierend auf Ihren Erkenntnissen können Sie** eine Reihe von Schritten ausführen, z. B. die Marketing-Maßnahmen genauer auf Benutzervorlieben ausrichten.</p><!-- This template uses the --> |
 | **Geo-Länder** | Zeigen Sie das Land an, aus dem die Personen stammen, die Ihre Site besuchen.<p>**Dies kann Ihnen helfen**, besser zu verstehen, aus welchen Ländern die meisten Personen stammen, die Ihre Site besuchen.</p><p>**Basierend auf Ihren Erkenntnissen können Sie** eine Reihe von Schritten ausführen, z. B. Daten nutzen, um sich auf Marketing-Maßnahmen in diesen Ländern zu konzentrieren, oder sicherstellen, dass Ihr Site-Erlebnis in Ländern mit unterschiedlichen Hauptsprachen optimal ist.</p><p>Diese Vorlage verwendet die Dimension „Länder“. </p> |
@@ -1117,11 +1117,15 @@ Die folgenden Vorlagen sind verfügbar:
 
 ### Mix Modeler-Vorlagen {#mix-modeler-templates}
 
+Die folgenden Vorlagen sind verfügbar:
+
+| Vorlagenname | Warum diese Vorlage verwenden?<!-- What do you do with it? What can it help you learn? and What are the potential actions? --> |
+| --- | --- |
+| [!UICONTROL **Inkrementelle Mix Modeler-Modelleinblicke**] | Einblicke aus ausgewählten, von Mix Modeler generierten Modellen anzeigen.<p>**Dies kann Ihnen helfen** die inkrementellen Einblicke aus Modellen besser zu verstehen, die in Mix Modeler generiert wurden. <p>**Basierend auf diesen Einblicken** können Sie:<ul><li>Visualisieren und Quantifizieren der Wirkung der Marketing-Aktivitäten Ihres Unternehmens.</li><li>Ermitteln Sie, welche Kanäle leistungsstark sind.</li><li>Ermitteln Sie, welche Kanäle möglicherweise optimiert werden müssen.</li></ul></p> |
+
 <!-- CJA only -->
 
 >[!CONTEXTUALHELP]
->id="template--mixModelerReport"
+>id="template--mixmodeler-incremental-models-insights"
 >title="Einblicke aus ausgewählten, von Mix Modeler generierten Modellen anzeigen."
 >abstract="**Dies kann Ihnen helfen** die inkrementellen Einblicke aus Modellen besser zu verstehen, die in Mix Modeler generiert wurden. <br/>**Basierend auf diesen Einblicken** können Sie:<ul><li>Visualisieren und Quantifizieren der Wirkung der Marketing-Aktivitäten Ihres Unternehmens.</li><li>Ermitteln Sie, welche Kanäle leistungsstark sind.</li><li>Ermitteln Sie, welche Kanäle möglicherweise optimiert werden müssen.</li></ul>"
-
-
