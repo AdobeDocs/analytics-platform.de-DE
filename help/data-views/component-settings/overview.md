@@ -95,7 +95,7 @@ Die Vorteile von Kontextkennzeichnungen sind:
 
 Kontextkennzeichnungen können in den folgenden Situationen erforderlich sein:
 
-* Um einen Komponentensatz zu definieren, können Sie ihn in Analysis Workspace-Projekten im Experimentier[Reporting über das ](/help/analysis-workspace/c-panels/experimentation.md)Experimentier-Bedienfeld“ verwenden.
+* Um einen Komponentensatz zu definieren, können Sie ihn in Analysis Workspace-Projekten im Experimentier[Reporting über das &#x200B;](/help/analysis-workspace/c-panels/experimentation.md)Experimentier-Bedienfeld“ verwenden.
 
   Weitere Informationen finden Sie unter [Integrieren mit Journey Optimizer](/help/integrations/ajo.md#data-view) und [Zielgruppenberichte](/help/integrations/at.md).
 

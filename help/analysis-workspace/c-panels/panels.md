@@ -89,7 +89,7 @@ Sie können ein Panel wie folgt verwalten:
 
 ## Datenansicht
 
-Jedes Panel ist mit einer [Datenansicht](/help/data-views/data-views.md) verknüpft, die durch den ![Daten](/help/assets/icons/Data.svg) **[!UICONTROL *Namen der Datenansicht *]**im Dropdown-Menü oben rechts im Panel identifiziert wird.
+Jedes Panel ist mit einer [Datenansicht](/help/data-views/data-views.md) verknüpft, die durch den ![Daten](/help/assets/icons/Data.svg) **[!UICONTROL *Namen der Datenansicht *]**&#x200B;im Dropdown-Menü oben rechts im Panel identifiziert wird.
 
 Wenn Sie ein leeres Workspace-Projekt erstellen, ist die Standarddatenansicht für das erste Panel die Datenansicht, an der Sie zuletzt in Customer Journey Analytics gearbeitet haben.
 
@@ -180,7 +180,7 @@ Statische Dropdown-Segmente ermöglichen Ihnen eine kontrollierte Interaktion mi
 
 Statische Dropdown-Segmente können auch verwendet werden, um mehrere Projekte in einem Projekt zu bündeln. Wenn Sie beispielsweise mehrere Versionen desselben Projekts mit unterschiedlichen Ländersegmenten verwenden, können Sie alle Versionen in einem Projekt zusammenfassen und ein Dropdown-Segment „Land“ hinzufügen.
 
-![Statische Dropdown-Segmente mit hervorgehobenem Segment „Direkt“ für den Marktkanal ](assets/dropdown-filter-intro.png)
+![Statische Dropdown-Segmente mit hervorgehobenem Segment „Direkt“ für den Marktkanal &#x200B;](assets/dropdown-filter-intro.png)
 
 ##### Erstellen von statischen Dropdown-Segmenten
 

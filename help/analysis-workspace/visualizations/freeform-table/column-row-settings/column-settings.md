@@ -84,7 +84,7 @@ Die bedingte Formatierung gilt für Obergrenzen, Mittelwerte und Untergrenzen, d
 
 
 
-Sie können das standardmäßige Attributionsmodell überschreiben, das in &quot;[&quot; konfiguriert ](/help/data-views/component-settings/attribution.md).
+Sie können das standardmäßige Attributionsmodell überschreiben, das in &quot;[&quot; konfiguriert &#x200B;](/help/data-views/component-settings/attribution.md).
 
 >[!NOTE]
 >
