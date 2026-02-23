@@ -54,7 +54,7 @@ To normalize the Venn diagram (take the size out of it), go select ![Setting](/h
 
 >[!BEGINSHADEBOX]
 
-Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Venn](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/analysis-workspace/visualizations/venn-diagram-visualization){target="_blank"}-Visualisierung finden Sie ein Demovideo.
+Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Venn](https://experienceleague.adobe.com/de/docs/analytics-learn/tutorials/analysis-workspace/visualizations/venn-diagram-visualization){target="_blank"}-Visualisierung finden Sie ein Demovideo.
 
 >[!ENDSHADEBOX]
 

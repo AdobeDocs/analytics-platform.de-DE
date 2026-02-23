@@ -18,7 +18,7 @@ Sequenzielle Segmente erstellen Sie mit dem [!UICONTROL Then] logischen Operator
 
 >[!BEGINSHADEBOX]
 
-Siehe ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Sequenzielle Segmentierung](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/components/segmentation/sequential-segmentation){target="_blank"} für ein Demovideo.
+Siehe ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Sequenzielle Segmentierung](https://experienceleague.adobe.com/de/docs/analytics-learn/tutorials/components/segmentation/sequential-segmentation){target="_blank"} für ein Demovideo.
 
 {{videoaa}}
 

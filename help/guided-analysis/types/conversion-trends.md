@@ -27,7 +27,7 @@ ht-degree: 99%
 Die ![Konversionstrends](/help/assets/icons/ConversionTrends.svg) Analyse **[!UICONTROL Konversions-Trends]** bietet eine Trend-Visualisierung der Konversionsraten im Zeitverlauf. Die horizontale Achse ist ein Zeitintervall, die vertikale Achse stellt die Konversionsrate dar.
 
 
->[!VIDEO](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/guided-analysis/conversion-trends)
+>[!VIDEO](https://experienceleague.adobe.com/de/docs/customer-journey-analytics-learn/tutorials/guided-analysis/conversion-trends)
 
 
 ## Anwendungsfälle

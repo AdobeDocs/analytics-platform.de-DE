@@ -59,7 +59,7 @@ Die folgenden Informationen beschreiben die Einstellungen, die eine Datenansicht
 
 >[!BEGINSHADEBOX]
 
-Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Einstellungen zum Komponententyp](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/data-views/component-type-settings-in-data-views){target="_blank"} finden Sie ein Demovideo.
+Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Einstellungen zum Komponententyp](https://experienceleague.adobe.com/de/docs/customer-journey-analytics-learn/tutorials/data-views/component-type-settings-in-data-views){target="_blank"} finden Sie ein Demovideo.
 
 >[!ENDSHADEBOX]
 

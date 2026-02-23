@@ -167,7 +167,7 @@ Weitere Informationen finden Sie unter [Schnellsegmente](/help/components/segmen
 
 >[!BEGINSHADEBOX]
 
-Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Dropdown-Segmente](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters){target="_blank"} finden Sie ein Demovideo.
+Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Dropdown-Segmente](https://experienceleague.adobe.com/de/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters){target="_blank"} finden Sie ein Demovideo.
 
 {{videoaa}}
 

@@ -90,7 +90,7 @@ Wiederholen Sie die obigen Schritte für die internationale Version Ihrer berech
 
 >[!BEGINSHADEBOX]
 
-Siehe ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Verwenden einer segmentierten berechneten Metrik als implementierungslose Metrik](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/components/calculated-metrics/calculated-metrics-segmented-metrics){target="_blank"} für ein Demovideo.
+Siehe ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Verwenden einer segmentierten berechneten Metrik als implementierungslose Metrik](https://experienceleague.adobe.com/de/docs/analytics-learn/tutorials/components/calculated-metrics/calculated-metrics-segmented-metrics){target="_blank"} für ein Demovideo.
 
 {{videoaa}}
 

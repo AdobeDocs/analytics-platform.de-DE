@@ -41,7 +41,7 @@ Das Ergebnis dieser Formel ist ein Verhältnis. Ein Nettowachstum von `1` stellt
 >
 >Wiederkehrende Benutzende werden in diese Berechnung nicht einbezogen, da sie keinen Gewinn oder Verlust von Benutzenden darstellen.
 
->[!VIDEO](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/guided-analysis/net-growth)
+>[!VIDEO](https://experienceleague.adobe.com/de/docs/customer-journey-analytics-learn/tutorials/guided-analysis/net-growth)
 
 
 ## Anwendungsfälle

@@ -18,7 +18,7 @@ Das algorithmische [Attributionsmodell](models.md) in Analysis Workspace untersc
 
 >[!BEGINSHADEBOX]
 
-Siehe ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Algorithmische &#x200B;](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/analysis-workspace/attribution-iq/algorithmic-model-in-attribution-iq){target="_blank"}) für ein Demovideo.
+Siehe ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Algorithmische &#x200B;](https://experienceleague.adobe.com/de/docs/analytics-learn/tutorials/analysis-workspace/attribution-iq/algorithmic-model-in-attribution-iq){target="_blank"}) für ein Demovideo.
 
 >[!ENDSHADEBOX]
 
