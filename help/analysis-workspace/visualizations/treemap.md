@@ -4,10 +4,10 @@ title: Treemap
 feature: Visualizations
 exl-id: fc39d1a9-9e83-40f3-af28-f4803647ad0b
 role: User
-source-git-commit: 8054aab28c405f6a9dd24306a086c78069032999
+source-git-commit: 023808a13ba9e438b33b1183b92d3aa8ac339230
 workflow-type: tm+mt
-source-wordcount: '167'
-ht-degree: 92%
+source-wordcount: '168'
+ht-degree: 91%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 92%
 
 >[!BEGINSHADEBOX]
 
-_In diesem Artikel wird die Visualisierung „Baumkarte“ in_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics** beschrieben._<br/>_Unter [Baumkarte](https://experienceleague.adobe.com/de/docs/analytics/analyze/analysis-workspace/visualizations/treemap) finden Sie die Version dieses Artikels für_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics**._
+_In diesem Artikel wird die Visualisierung „Baumkarte“ in_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics** beschrieben._<br/>_Unter [Baumkarte](https://experienceleague.adobe.com/de/docs/analytics/analyze/analysis-workspace/visualizations/treemap) finden Sie die Version dieses Artikels für_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**._
 
 >[!ENDSHADEBOX]
 
@@ -41,7 +41,7 @@ Mit einer Baumkarte können Sie Muster sehen, die auf andere Weise schwer zu erk
 
 >[!BEGINSHADEBOX]
 
-Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Visualisierung „Baumkarte“](https://video.tv.adobe.com/v/334458/?quality=12&learn=on){target="_blank"} finden Sie ein Demovideo.
+Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Visualisierung „Baumkarte“](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/visualizations/add-treemap-visualizations){target="_blank"} finden Sie ein Demovideo.
 
 >[!ENDSHADEBOX]
 
@@ -49,8 +49,8 @@ Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Visualisierung
 >[!MORELIKETHIS]
 >
 >[Hinzufügen einer Visualisierung zu einem Panel](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
->&#x200B;>[Visualisierungseinstellungen](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
->&#x200B;>[Kontextmenü der Visualisierung](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
+>[Visualisierungseinstellungen](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
+>[Kontextmenü der Visualisierung](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
 >
 
 

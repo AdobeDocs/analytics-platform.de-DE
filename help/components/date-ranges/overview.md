@@ -4,7 +4,7 @@ title: Datumsbereiche – Überblick
 feature: Calendar
 exl-id: 99b31bd9-32f1-4da1-9e47-6d90c66282c5
 role: User
-source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
+source-git-commit: 023808a13ba9e438b33b1183b92d3aa8ac339230
 workflow-type: tm+mt
 source-wordcount: '532'
 ht-degree: 100%
@@ -16,17 +16,6 @@ ht-degree: 100%
 In einem Workspace-Projekt verwenden Sie normalerweise den [Kalender in einem Panel](/help/analysis-workspace/c-panels/panels.md#calendar), um den Datumsbereich für die Visualisierungen in diesem Panel anzugeben.
 
 Mit Datumsbereichskomponenten können Sie die Kalendereinstellungen für das Panel definieren und überschreiben.
-
-<!-- Very old video, should we show it?
-
-+++ View a video illustrating use of calendar and date ranges
-
->[!VIDEO](https://video.tv.adobe.com/v/327347?captions=ger&format=jpeg)
-
-{{videoaa}}
-+++
-
--->
 
 ## Verwenden von Datumsbereichen
 

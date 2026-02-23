@@ -4,20 +4,20 @@ description: Erfahren Sie mehr über die Komponenten, die die Attribution defini
 feature: Attribution
 role: User, Admin
 exl-id: f36de41e-1c53-477d-b326-528fbd4ec9ec
-source-git-commit: ce4a21b1a1e89f14316a92fbdce38281db61e666
+source-git-commit: 023808a13ba9e438b33b1183b92d3aa8ac339230
 workflow-type: tm+mt
 source-wordcount: '84'
-ht-degree: 15%
+ht-degree: 100%
 
 ---
 
 # Attributionskomponenten
 
-Das Attributionskonzept in Adobe Analytics umfasst drei Komponenten:
+Das Attributionskonzept in Adobe Analytics erfordert drei Komponenten:
 
-* **Attributionsmodell:** Das [modell](#attribution-model) beschreibt die Verteilung der Konversionen auf die Treffer in einer Gruppe. Zum Beispiel Erstkontakt oder Letztkontakt.
-* **Container**: Der [Container](#container) definiert den Umfang der Attribution oder die Gruppierung der Treffer für jedes Modell.
-* **Attributions-Lookback-Fenster** Das [Lookback-Fenster](#lookback-window) beschreibt die Anzahl der Tage für das Lookback für das ausgewählte Modell.
+* **Attributionsmodell:** Das [Modell](#attribution-model) beschreibt die Verteilung der Konversionen auf die Treffer in einer Gruppe. Zum Beispiel Erstkontakt oder Letztkontakt.
+* **Container**: Der [Container](#container) definiert den Umfang der Attribution oder wie die Treffer für das jeweilige Modell gruppiert werden.
+* **Lookback-Fenster für Attributionen** Das [Lookback-Fenster](#lookback-window) beschreibt die Anzahl der Tage, die für das gewählte Modell rückwirkend betrachtet werden.
 
 
 ## Attributionsmodell
@@ -66,13 +66,6 @@ A lookback window is the amount of time a conversion should look back to include
 * **Visitor lookback window:** Looks at all visits back up to the 1st of the month of the current date range. Visitor lookback windows are wide, as they can span many visits. Visitor lookback considers all values from the beginning of the month of the report's date range. For example, if the report date range is September 15 - September 30, the visitor lookback date range includes September 1 - September 30.
 
 * **Custom lookback window:** Allows you to expand the attribution window beyond the reporting date range, up to a maximum of 90 days. Custom lookback windows are evaluated on each conversion in the reporting period. For example, for a conversion occurring on February 20, a lookback window of 10 days would evaluate all dimension touchpoints from February 10 - February 20 in the attribution model.
-
->[!BEGINSHADEBOX]
-  
-See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Custom lookback window](https://video.tv.adobe.com/v/40039?captions=ger&quality=12&learn=on){target="_blank"} for a demo video.
-  
->[!ENDSHADEBOX]
-
 
 ## Example
 

@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: b9b73926-6502-4a48-ba73-c784f80950d3
-source-git-commit: 0eb3fec2e52fe0850c5f42777edbdb5d981988fb
+source-git-commit: 023808a13ba9e438b33b1183b92d3aa8ac339230
 workflow-type: tm+mt
-source-wordcount: '1726'
+source-wordcount: '1727'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ Während diese Analysemethoden sowohl für feldbasiertes Stitching als auch für
 
 >[!BEGINSHADEBOX]
 
-Siehe ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Stitching-Aktivierung und -Validierung](https://video.tv.adobe.com/v/3478129?captions=ger&quality=12&learn=on){target="_blank"} für ein Demovideo.
+Siehe ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Stitching-Aktivierung und -Validierung](https://experienceleague.adobe.com/de/docs/customer-journey-analytics-learn/tutorials/visitor-id/stitching-enablement-and-validation){target="_blank"} für ein Demovideo.
 
 >[!ENDSHADEBOX]
 
@@ -147,7 +147,7 @@ Wenn Sie eine Verbindung erstellen, müssen Sie definieren, welches Feld oder we
 1. Erstellen Sie eine berechnete Metrik **[!UICONTROL Nicht authentifizierte Ereignisse insgesamt]**. Definieren Sie die Regel im Regel-Builder wie unten dargestellt:
    ![Nicht authentifizierte Ereignisse insgesamt](/help/stitching/assets/calcmetric-unauthenticatedeventsovertotal.png)
 
-1. Erstellen Sie eine berechnete Metrik **[!UICONTROL E-Mail-Authentifizierungsrate]** basierend auf der zuvor definierten Metrik **[!UICONTROL _]**&#x200B;set). Definieren Sie die Regel im Regel-Builder wie unten dargestellt:
+1. Erstellen Sie eine berechnete Metrik **[!UICONTROL E-Mail-Authentifizierungsrate]** basierend auf der zuvor definierten Metrik **[!UICONTROL _]**set). Definieren Sie die Regel im Regel-Builder wie unten dargestellt:
    ![E-Mail-Authentifizierungsrate](/help/stitching/assets/calcmetric-emailauthenticationrate.png)
 
 1. Verwenden Sie die berechnete Metrik **[!UICONTROL Nicht authentifizierte Ereignisse im]**) zusammen mit der berechneten Metrik **[!UICONTROL E-Mail]** Authentifizierungsrate), um eine [Ringdiagramm](/help/analysis-workspace/visualizations/donut.md)-Visualisierung zu erstellen. Die Visualisierung zeigt die Anzahl der Ereignisse im Datensatz, die nicht authentifiziert und authentifiziert sind.

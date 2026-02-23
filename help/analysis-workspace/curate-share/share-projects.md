@@ -5,10 +5,10 @@ title: Freigeben von Projekten
 feature: Curate and Share
 exl-id: ac4ed73a-e890-46cc-be08-4ccedf66b47d
 role: User
-source-git-commit: 8e10818efa7da54b0802c56e5388e6c7ef7fd8b6
+source-git-commit: 023808a13ba9e438b33b1183b92d3aa8ac339230
 workflow-type: tm+mt
-source-wordcount: '2089'
-ht-degree: 100%
+source-wordcount: '2092'
+ht-degree: 99%
 
 ---
 
@@ -40,7 +40,7 @@ Jede [Kuration](curate.md), die Sie vor der Freigabe vorgenommen haben, wird bei
 
 >[!BEGINSHADEBOX]
 
-Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Projektfreigabe in Analysis Workspace](https://video.tv.adobe.com/v/40031/?captions=ger&quality=12&learn=on){target="_blank"} finden Sie ein Demovideo.
+Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Projektfreigabe in Analysis Workspace](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/curate-and-share/share-with-anyone-in-analysis-workspace){target="_blank"} finden Sie ein Demovideo.
 
 {{videoaa}}
 
@@ -161,7 +161,7 @@ Sie können jetzt den [schreibgeschützten Zugriff](/help/analysis-workspace/cur
 
 >[!BEGINSHADEBOX]
 
-Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Für alle freigeben](https://video.tv.adobe.com/v/3452469/?captions=ger&quality=12&learn=on){target="_blank"} finden Sie ein Demovideo.
+Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Für alle freigeben](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/curate-and-share/share-with-anyone-in-analysis-workspace){target="_blank"} finden Sie ein Demovideo.
 
 >[!ENDSHADEBOX]
 
@@ -216,7 +216,7 @@ Sie können die eingebetteten Komponenten freigeben, die Teil Ihres Projekts sin
 
 >[!BEGINSHADEBOX]
 
-Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Freigeben von eingebetteten Komponenten in Analysis Workspace](https://video.tv.adobe.com/v/327497/?captions=ger&quality=12&learn=on){target="_blank"} finden Sie ein Demovideo.
+Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Freigeben von eingebetteten Komponenten in Analysis Workspace](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/curate-and-share/share-with-anyone-in-analysis-workspace){target="_blank"} finden Sie ein Demovideo.
 
 {{videoaa}}
 

@@ -4,10 +4,10 @@ title: Überblick über Panels
 feature: Panels
 exl-id: be3e34a0-06c1-4200-b965-96084c2912fd
 role: User
-source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
+source-git-commit: 023808a13ba9e438b33b1183b92d3aa8ac339230
 workflow-type: tm+mt
-source-wordcount: '2193'
-ht-degree: 100%
+source-wordcount: '2194'
+ht-degree: 99%
 
 ---
 
@@ -57,7 +57,7 @@ Sie haben folgende Möglichkeiten:
   |---|---|
   | ![Tabelle](/help/assets/icons/Table.svg) | [Freiformtabelle](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) |
   | ![Linie](/help/assets/icons/GraphTrend.svg) | [Linie](/help/analysis-workspace/visualizations/line.md) |
-  | ![VertikaleGrafikbalken](/help/assets/icons/GraphBarVertical.svg) | [Balken](/help/analysis-workspace/visualizations/bar.md) |
+  | ![GraphBarVertical](/help/assets/icons/GraphBarVertical.svg) | [Balken](/help/analysis-workspace/visualizations/bar.md) |
   | ![123](/help/assets/icons/123.svg) | [Zusammenfassungszahl](/help/analysis-workspace/visualizations/summary-number-change.md) |
   | ![Text](/help/assets/icons/Text.svg) | [Text](/help/analysis-workspace/visualizations/text.md) |
   | ![Konversionstrichter](/help/assets/icons/ConversionFunnel.svg) | [Fallout](/help/analysis-workspace/visualizations/fallout/fallout-flow.md) |
@@ -167,7 +167,7 @@ Weitere Informationen finden Sie unter [Schnellsegmente](/help/components/segmen
 
 >[!BEGINSHADEBOX]
 
-Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Dropdown-Segmente](https://video.tv.adobe.com/v/327486?captions=ger&quality=12&learn=on){target="_blank"} finden Sie ein Demovideo.
+Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Dropdown-Segmente](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters){target="_blank"} finden Sie ein Demovideo.
 
 {{videoaa}}
 

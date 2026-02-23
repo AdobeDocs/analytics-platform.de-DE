@@ -4,9 +4,9 @@ title: Venn
 feature: Visualizations
 exl-id: a0162164-a0cf-45b9-99b6-2a115e9a4e57
 role: User
-source-git-commit: 973e999b611d578da12018e60becf48efd7a76f8
+source-git-commit: 023808a13ba9e438b33b1183b92d3aa8ac339230
 workflow-type: tm+mt
-source-wordcount: '207'
+source-wordcount: '208'
 ht-degree: 49%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 49%
 
 >[!BEGINSHADEBOX]
 
-_In diesem Artikel wird die Visualisierung Venn in_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics** beschrieben._<br/>_Unter [Venn](https://experienceleague.adobe.com/de/docs/analytics/analyze/analysis-workspace/visualizations/venn) finden Sie die Version dieses Artikels für_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics**._
+_In diesem Artikel wird die Visualisierung Venn in_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics** beschrieben._<br/>_Unter [Venn](https://experienceleague.adobe.com/de/docs/analytics/analyze/analysis-workspace/visualizations/venn) finden Sie die Version dieses Artikels für_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**._
 
 >[!ENDSHADEBOX]
 
@@ -54,7 +54,7 @@ To normalize the Venn diagram (take the size out of it), go select ![Setting](/h
 
 >[!BEGINSHADEBOX]
 
-Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Venn](https://video.tv.adobe.com/v/335798/?quality=12&learn=on){target="_blank"}-Visualisierung finden Sie ein Demovideo.
+Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Venn](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/analysis-workspace/visualizations/venn-diagram-visualization){target="_blank"}-Visualisierung finden Sie ein Demovideo.
 
 >[!ENDSHADEBOX]
 
@@ -62,7 +62,7 @@ Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Venn](https://
 >[!MORELIKETHIS]
 >
 >[Hinzufügen einer Visualisierung zu einem Panel](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
->&#x200B;>[Visualisierungseinstellungen](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
->&#x200B;>[Kontextmenü der Visualisierung](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
+>[Visualisierungseinstellungen](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
+>[Kontextmenü der Visualisierung](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
 >
 

@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie das Bedienfeld „Bei Medienwiedergabe verbra
 feature: Panels
 exl-id: de0fdbea-71f0-445b-a1e4-c7e895f142d4
 role: User
-source-git-commit: ce4a21b1a1e89f14316a92fbdce38281db61e666
+source-git-commit: 023808a13ba9e438b33b1183b92d3aa8ac339230
 workflow-type: tm+mt
-source-wordcount: '1076'
+source-wordcount: '1077'
 ht-degree: 89%
 
 ---
@@ -34,7 +34,7 @@ ht-degree: 89%
 
 >[!BEGINSHADEBOX]
 
-_In diesem Dokument wird das Panel „Verbrachte Zeit bei der Medienwiedergabe“ in_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**&#x200B;_ beschrieben.<br/>_Unter [Panel „Verbrachte Zeit bei der Medienwiedergabe“](https://experienceleague.adobe.com/de/docs/analytics/analyze/analysis-workspace/panels/media-playback-time-spent) finden Sie die Version dieses Artikels für_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics**._
+_In diesem Dokument wird das Panel „Verbrachte Zeit bei der Medienwiedergabe“ in_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**_ beschrieben.<br/>_Unter [Panel „Verbrachte Zeit bei der Medienwiedergabe“](https://experienceleague.adobe.com/de/docs/analytics/analyze/analysis-workspace/panels/media-playback-time-spent) finden Sie die Version dieses Artikels für_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**._
 
 >[!ENDSHADEBOX]
 
@@ -42,7 +42,7 @@ _In diesem Dokument wird das Panel „Verbrachte Zeit bei der Medienwiedergabe�
 >[!NOTE]
 >
 >Das Panel „Medien-Zielgruppendurchschnitt pro Minute“ ist nur für Kundinnen und Kunden verfügbar, die das Streaming Media Collection-Add-on für Customer Journey Analytics gekauft haben.
->&#x200B;>Wenden Sie sich an Ihren Adobe-Vertriebskontakt oder Ihr Adobe-Acountteam, um weitere Informationen zu erhalten.
+>Wenden Sie sich an Ihren Adobe-Vertriebskontakt oder Ihr Adobe-Acountteam, um weitere Informationen zu erhalten.
 >
 
 Das Panel **[!UICONTROL Verbrachte Zeit bei der Medienwiedergabe]** ermöglicht die Analyse der Medienwiedergabe im Zeitverlauf und bietet Details zum maximalen gleichzeitigen Zugriff sowie die Möglichkeit von Aufschlüsselungen und Vergleichen.
@@ -60,7 +60,7 @@ Die Wiedergabedauer kann Ihnen dabei helfen, Folgendes zu verstehen:
 
 >[!BEGINSHADEBOX]
 
-Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Bedienfeld „Verbrachte Zeit bei der Medienwiedergabe“](https://video.tv.adobe.com/v/3446709?captions=ger){target="_blank"} finden Sie ein Demovideo.
+Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Bedienfeld „Verbrachte Zeit bei der Medienwiedergabe“](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/media-analytics/measuring-media-analytics/media-playback-time-spent-panel){target="_blank"} finden Sie ein Demovideo.
 
 {{videoaa}}
 
@@ -129,6 +129,6 @@ Die einzige Metrik, die in diesem Panel verwendet werden kann, ist „Wiedergabe
 >[!MORELIKETHIS]
 >
 >[Erstellen eines Bedienfelds](/help/analysis-workspace/c-panels/panels.md#create-a-panel)
->&#x200B;>[Panel „Medien-Zielgruppendurchschnitt pro Minute“](average-minute-audience-panel.md)
->&#x200B;>[Panel „Gleichzeitige Medienbetrachter“](media-concurrent-viewers.md)
+>[Panel „Medien-Zielgruppendurchschnitt pro Minute“](average-minute-audience-panel.md)
+>[Panel „Gleichzeitige Medienbetrachter“](media-concurrent-viewers.md)
 >

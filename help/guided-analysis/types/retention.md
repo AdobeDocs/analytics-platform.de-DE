@@ -5,9 +5,9 @@ feature: Adobe Product Analytics, Guided Analysis
 keywords: Produktanalysen
 exl-id: c35a0ee0-e6b7-47b5-a5bc-308cde1585de
 role: User
-source-git-commit: bd8c9951386608572d84006bd5465e57214c56d4
+source-git-commit: 023808a13ba9e438b33b1183b92d3aa8ac339230
 workflow-type: tm+mt
-source-wordcount: '1261'
+source-wordcount: '1262'
 ht-degree: 97%
 
 ---
@@ -30,7 +30,7 @@ Die ![Retention](/help/assets/icons/Retention.svg) **[!UICONTROL Analyse der Kun
 
 Bei dieser Analyse stellt die X-Achse des Diagramms die Zeit seit dem ersten Startereignis einer Benutzerin oder eines Benutzers dar und die Y-Achse stellt den Prozentsatz der Benutzenden dar, die mit einem oder mehreren Rückkehrereignisse interagieren. Sie können sowohl die Bindung als auch die Abwanderung über verschiedene Zeiträume hinweg anzeigen. Die angezeigten Zeiträume können zudem über die Abfrageeinstellungen angepasst werden. Eine Tabelle unterhalb des Diagramms enthält aggregierte Daten mit der Option, einzelne Kohorten anzuzeigen, bei denen es sich um eine Gruppe von Personen handelt, deren Startereignis dasselbe Datum hat.
 
->[!VIDEO](https://video.tv.adobe.com/v/3435787/?captions=ger&quality=12&learn=on)
+>[!VIDEO](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/guided-analysis/retention)
 
 
 ## Anwendungsfälle

@@ -5,9 +5,9 @@ feature: Analytics Dashboards
 role: User, Admin
 exl-id: 12531600-7e88-4d56-a2a5-e5b346f91937
 solution: Customer Journey Analytics
-source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
+source-git-commit: 023808a13ba9e438b33b1183b92d3aa8ac339230
 workflow-type: tm+mt
-source-wordcount: '2698'
+source-wordcount: '2701'
 ht-degree: 98%
 
 ---
@@ -29,7 +29,7 @@ Die folgenden Informationen liefern Kuratierenden von Customer Journey Analytics
 
 >[!BEGINSHADEBOX]
 
-Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Erstellen von mobilen Scorecards](https://video.tv.adobe.com/v/3415761?captions=ger&quality=12&learn=on){target="_blank"} finden Sie ein Demovideo.
+Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Erstellen von mobilen Scorecards](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/dashboards/create-a-mobile-scorecard){target="_blank"} finden Sie ein Demovideo.
 
 >[!ENDSHADEBOX]
 
@@ -44,7 +44,7 @@ Eine Analytics-Scorecard stellt wie nachfolgend gezeigt wichtige Datenvisualisie
 
 Wenn Sie diese Scorecard kuratieren, können Sie mit dem Scorecard Builder festlegen, welche Kacheln auf der Scorecard für die Führungskraft angezeigt werden. Sie können auch konfigurieren, wie die detaillierten Ansichten bzw. Aufschlüsselungen angepasst werden können, nachdem auf die Kacheln getippt wird. So sieht die Scorecard Builder-Benutzeroberfläche aus:
 
-![Scorecard Builder mit dem Fenster Neue mobile Scorecard. &#x200B;](assets/scorecard_builder.png)
+![Scorecard Builder mit dem Fenster Neue mobile Scorecard. ](assets/scorecard_builder.png)
 
 Gehen Sie zur Erstellung der Scorecard wie folgt vor:
 
@@ -79,7 +79,7 @@ So implementieren Sie die Scorecard-Vorlage:
 
 1. Um Ihrer Scorecard eine neue Kachel hinzuzufügen, ziehen Sie eine Metrik aus dem linken Panel und legen Sie sie im Bereich **[!UICONTROL Metriken hierhin ziehen und ablegen]** ab. Sie können auch eine Metrik zwischen zwei Kacheln einfügen, indem Sie einen ähnlichen Workflow verwenden.
 
-   ![Fenster Neue mobile Scorecard mit einem Pfeil, der auf eine Metrik (Neue KPI) zeigt, die auf der Scorecard abgelegt wurde. &#x200B;](assets/build_list.png)
+   ![Fenster Neue mobile Scorecard mit einem Pfeil, der auf eine Metrik (Neue KPI) zeigt, die auf der Scorecard abgelegt wurde. ](assets/build_list.png)
 
 
 1. Von jeder Kachel aus können Sie auf eine Detailansicht zugreifen, die zusätzliche Informationen über die Metrik anzeigt, wie z. B. die obersten Elemente in einer Liste verwandter Dimensionen.
@@ -170,7 +170,7 @@ Diese Visualisierung zeigt Horizontalbalken, die verschiedene Werte aus einer od
 
 ## Benennen von Scorecards {#name}
 
-Um die Scorecard zu benennen, klicken Sie auf den Namensbereich in der oberen linken Ecke des Bildschirms und geben Sie den neuen Namen ein.
+Um die Scorecard zu benennen, klicken Sie auf den Namespace in der oberen linken Ecke des Bildschirms und geben Sie den neuen Namen ein.
 
 ![Scorecards benennen](assets/new_name.png)
 
@@ -212,7 +212,7 @@ Benutzerdefinierte Detailansichten ermöglichen es Ihnen, Ihre Zielgruppe mit no
 
 >[!BEGINSHADEBOX]
 
-Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Benutzerdefinierte Detailansichten](https://video.tv.adobe.com/v/3422731?captions=ger&quality=12&learn=on){target="_blank"} finden Sie ein Demovideo.
+Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Benutzerdefinierte Detailansichten](https://experienceleague.adobe.com/de/docs/customer-journey-analytics-learn/tutorials/visitor-id/stitching-enablement-and-validation){target="_blank"} finden Sie ein Demovideo.
 
 {{videoaa}}
 
@@ -257,7 +257,7 @@ Sehen Sie sich das Video an, um mehr über das Erstellen von Daten-Storys in Mob
 
 >[!BEGINSHADEBOX]
 
-Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Daten-Storys für ein Projekt mit mobilen Scorecards](https://video.tv.adobe.com/v/3416392/?quality=12&learn=on){target="_blank"} finden Sie ein Demovideo.
+Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Daten-Storys für ein Projekt mit mobilen Scorecards](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/dashboards/create-a-mobile-scorecard){target="_blank"} finden Sie ein Demovideo.
 
 {{videoaa}}
 

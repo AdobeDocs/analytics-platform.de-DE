@@ -4,9 +4,9 @@ title: Spalteneinstellungen
 feature: Visualizations
 exl-id: b41d8a12-e8d9-405c-ac71-6567397aec6b
 role: User
-source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
+source-git-commit: 023808a13ba9e438b33b1183b92d3aa8ac339230
 workflow-type: tm+mt
-source-wordcount: '910'
+source-wordcount: '911'
 ht-degree: 79%
 
 ---
@@ -18,7 +18,7 @@ Mithilfe der [!UICONTROL Spalteneinstellungen] können Sie die Spaltenformatieru
 
 >[!BEGINSHADEBOX]
 
-Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Zeilen- und Spalteneinstellungen in einer Freiformtabelle](https://video.tv.adobe.com/v/328501/?captions=ger&quality=12&learn=on){target="_blank"} finden Sie ein Demovideo.
+Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Zeilen- und Spalteneinstellungen in einer Freiformtabelle](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/analysis-workspace/building-freeform-tables/row-and-column-settings-in-freeform-tables){target="_blank"} finden Sie ein Demovideo.
 
 {{videoaa}}
 
@@ -38,7 +38,7 @@ Sie können Einstellungen für mehrere Spalten gleichzeitig bearbeiten. Wählen 
 | **[!UICONTROL Gesamtsumme anzeigen]** | Zeigt eine Server-seitige Summe der Spalte an. Bei dieser Gesamtsumme werden Metriken wie Sitzungen oder Personen dedupliziert. |
 | **[!UICONTROL Sparkline zeigen]** | Zeigt ein Liniendiagramm in der Spaltenüberschrift an. |
 | **[!UICONTROL Nummer]** | Bestimmt, ob in einer Zelle der numerische Wert der Metrik ein-/ausgeblendet wird. Wenn die Metrik beispielsweise Seitenansichten lautet, ist der numerische Wert die Anzahl der Seitenansichten für das Zeilenelement. |
-| **[!UICONTROL Prozent]** | Bestimmt, ob in einer Zelle der Prozentwert der Metrik ein-/ausgeblendet wird. Ist die Metrik beispielsweise „Seitenansichten“, ist der Prozentwert die Anzahl an Seitenansichten für dieses Zeilenelement geteilt durch die Gesamtanzahl der Seitenansichten für diese Spalte. Hinweis: Prozentsätze über 100 % sind möglich, um Genauigkeit sicherzustellen. Die Begrenzung kann auf 1.000 % verschoben werden, um zu verhindern, dass die Spaltenbreite zu groß wird. |
+| **[!UICONTROL Percent]** | Bestimmt, ob in einer Zelle der Prozentwert der Metrik ein-/ausgeblendet wird. Ist die Metrik beispielsweise „Seitenansichten“, ist der Prozentwert die Anzahl an Seitenansichten für dieses Zeilenelement geteilt durch die Gesamtanzahl der Seitenansichten für diese Spalte. Hinweis: Prozentsätze über 100 % sind möglich, um Genauigkeit sicherzustellen. Die Begrenzung kann auf 1.000 % verschoben werden, um zu verhindern, dass die Spaltenbreite zu groß wird. |
 | **[!UICONTROL Anomalien zeigen]** | Bestimmen Sie, ob die Anomalieerkennung für die Werte dieser Spalte ausgeführt wird. |
 | **[!UICONTROL Prognose anzeigen]** | Bestimmen Sie, ob Prognosewerte in dieser Spalte angezeigt werden. |
 | **[!UICONTROL Kopfzeilentext umbrechen]** | Lassen Sie den Kopfzeilentext in Freiformtabellen umbrechen, damit Kopfzeilen besser lesbar und Tabellen einfacher freizugeben sind. Ein Umbruch ist beim PDF-Rendern und für Metriken mit langen Namen nützlich. Standardmäßig aktiviert. |
@@ -84,7 +84,7 @@ Die bedingte Formatierung gilt für Obergrenzen, Mittelwerte und Untergrenzen, d
 
 
 
-Sie können das standardmäßige Attributionsmodell überschreiben, das in &quot;[&quot; konfiguriert &#x200B;](/help/data-views/component-settings/attribution.md).
+Sie können das standardmäßige Attributionsmodell überschreiben, das in &quot;[&quot; konfiguriert ](/help/data-views/component-settings/attribution.md).
 
 >[!NOTE]
 >

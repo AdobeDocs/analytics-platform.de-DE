@@ -5,10 +5,10 @@ exl-id: 6300d289-d308-476e-aa4e-05cdae361bb2
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: aa635d52007a3032d8c3f90a779d1b70213dee9e
+source-git-commit: 023808a13ba9e438b33b1183b92d3aa8ac339230
 workflow-type: tm+mt
-source-wordcount: '3738'
-ht-degree: 55%
+source-wordcount: '3739'
+ht-degree: 56%
 
 ---
 
@@ -59,7 +59,7 @@ Die folgenden Informationen beschreiben die Einstellungen, die eine Datenansicht
 
 >[!BEGINSHADEBOX]
 
-Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Einstellungen zum Komponententyp](https://video.tv.adobe.com/v/333112/?quality=12&learn=on){target="_blank"} finden Sie ein Demovideo.
+Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Einstellungen zum Komponententyp](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/data-views/component-type-settings-in-data-views){target="_blank"} finden Sie ein Demovideo.
 
 >[!ENDSHADEBOX]
 
@@ -95,7 +95,7 @@ Die Vorteile von Kontextkennzeichnungen sind:
 
 Kontextkennzeichnungen können in den folgenden Situationen erforderlich sein:
 
-* Um einen Komponentensatz zu definieren, können Sie ihn in Analysis Workspace-Projekten im Experimentier[Reporting über das &#x200B;](/help/analysis-workspace/c-panels/experimentation.md)Experimentier-Bedienfeld“ verwenden.
+* Um einen Komponentensatz zu definieren, können Sie ihn in Analysis Workspace-Projekten im Experimentier[Reporting über das ](/help/analysis-workspace/c-panels/experimentation.md)Experimentier-Bedienfeld“ verwenden.
 
   Weitere Informationen finden Sie unter [Integrieren mit Journey Optimizer](/help/integrations/ajo.md#data-view) und [Zielgruppenberichte](/help/integrations/at.md).
 
@@ -396,7 +396,7 @@ Die folgenden Gruppen von Kontextbeschriftungen sind mit jeweils einer Liste spe
 | Kampagnenname (AJO) | Der Name der Kampagne. |
 | Campaign-Versions-ID (AJO) | Die Versions-ID der Kampagne. |
 | Kanal | Der Kanal, mit dem diese Daten verknüpft werden sollen. |
-| Klicks (AJO) | Gesamtanzahl der Klicks auf allen Kanälen. |
+| Klicks (AJO) | Gesamtzahl der Klicks über alle Kanäle hinweg. |
 | Ablehnungen der Einverständnisrichtlinie (AJO) | Anzahl der Journey-Aktionen, die aufgrund einer oder mehrerer Einverständnisrichtlinien abgelehnt werden. |
 | Inhaltsentscheidungsfehler (AJO) | Von Inhaltsentscheidungsknoten der Journey generierte Fehlermeldungen. |
 | Inhaltsentscheidungsfehler (AJO) | Anzahl der Fehler, die von Inhaltsentscheidungsknoten der Journey generiert wurden. |
@@ -435,7 +435,7 @@ Die folgenden Gruppen von Kontextbeschriftungen sind mit jeweils einer Liste spe
 | Element-ID (AJO) | Die ID des Elements. |
 | Elementname (AJO) | Der Name des Elements. |
 | Elementname (persistiert) (AJO) | Der Name des Elements mit aktivierter Persistenzbindung. |
-| Journey-Aktionsfehler (AJO) | Durch Journey-Aktionen generierte Fehlermeldungen |
+| Journey-Aktionsfehler (AJO) | Von Journey-Aktionen generierte Fehlermeldungen. |
 | Knotenname der Journey-Aktion | Der Knotenname der Journey-Aktion. |
 | Journey-Eintritte | True, wenn das Schrittereignis ein Journey-Eintrittsereignis für ein Profil war. |
 | Journey-Ende (AJO) | Das Ende der Journey. |

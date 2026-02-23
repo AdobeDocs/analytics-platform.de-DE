@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie Hyperlinks für Dimensionselemente in einer F
 feature: Visualizations
 role: User
 exl-id: 24fc2d24-b8c2-4664-8b9c-beda284f9033
-source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
+source-git-commit: 023808a13ba9e438b33b1183b92d3aa8ac339230
 workflow-type: tm+mt
-source-wordcount: '1602'
+source-wordcount: '1603'
 ht-degree: 97%
 
 ---
@@ -26,7 +26,7 @@ Diese Funktion ist besonders nützlich beim Erstellen von Hyperlinks für die fo
 
 >[!BEGINSHADEBOX]
 
-Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Erstellen von Hyperlinks in einer Freiformtabelle](https://video.tv.adobe.com/v/3445795/?captions=ger&quality=12&learn=on){target="_blank"} finden Sie ein Demovideo.
+Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Erstellen von Hyperlinks in einer Freiformtabelle](https://experienceleague.adobe.com/de/docs/analytics-learn/tutorials/analysis-workspace/tips-and-tricks/create-hyperlinks-in-freeform-tables){target="_blank"} finden Sie ein Demovideo.
 
 >[!ENDSHADEBOX]
 

@@ -4,10 +4,10 @@ title: Fallout-Übersicht
 feature: Visualizations
 exl-id: c4338821-64ac-4345-828a-15af18a95ea6
 role: User
-source-git-commit: c4c8c0ff5d46ec455ca5333f79d6d8529f4cb87d
+source-git-commit: 023808a13ba9e438b33b1183b92d3aa8ac339230
 workflow-type: tm+mt
-source-wordcount: '358'
-ht-degree: 78%
+source-wordcount: '359'
+ht-degree: 77%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 78%
 
 >[!BEGINSHADEBOX]
 
-_In diesem Artikel wird die Visualisierung Fallout in_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics** beschrieben._<br/>_Unter [Fallout](https://experienceleague.adobe.com/de/docs/analytics/analyze/analysis-workspace/visualizations/fallout/fallout-flow) finden Sie die Version dieses Artikels für_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics**._
+_In diesem Artikel wird die Visualisierung Fallout in_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics** beschrieben._<br/>_Unter [Fallout](https://experienceleague.adobe.com/de/docs/analytics/analyze/analysis-workspace/visualizations/fallout/fallout-flow) finden Sie die Version dieses Artikels für_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**._
 
 >[!ENDSHADEBOX]
 
@@ -34,7 +34,7 @@ Eine ![ConversionFunnel](/help/assets/icons/ConversionFunnel.svg) Visualisierung
 
 >[!BEGINSHADEBOX]
 
-Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Erstellen einer Visualisierung Fallout](https://video.tv.adobe.com/v/345883/?quality=12&learn=on){target="_blank"} finden Sie ein Demovideo.
+Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Erstellen einer Visualisierung Fallout](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/analysis-workspace/analyzing-customer-journeys/fallout-visualization){target="_blank"} finden Sie ein Demovideo.
 
 {{videoaa}}
 

@@ -5,9 +5,9 @@ feature: Analytics Dashboards
 role: User, Admin
 solution: Customer Journey Analytics
 exl-id: 6a0de7db-689d-448d-b8e0-90af4a5ee325
-source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
+source-git-commit: 023808a13ba9e438b33b1183b92d3aa8ac339230
 workflow-type: tm+mt
-source-wordcount: '1806'
+source-wordcount: '1808'
 ht-degree: 85%
 
 ---
@@ -42,7 +42,7 @@ Benutzerdefinierte Detailansichten ermöglichen es Ihnen, Ihre Zielgruppe mit no
 
 >[!BEGINSHADEBOX]
 
-Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Benutzerdefinierte Detailansichten](https://video.tv.adobe.com/v/3422731?captions=ger&quality=12&learn=on){target="_blank"} finden Sie ein Demovideo.
+Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Benutzerdefinierte Detailansichten](https://experienceleague.adobe.com/de/docs/customer-journey-analytics-learn/tutorials/visitor-id/stitching-enablement-and-validation){target="_blank"} finden Sie ein Demovideo.
 
 >[!ENDSHADEBOX]
 
@@ -86,7 +86,7 @@ Sehen Sie sich das Video an, um mehr über das Erstellen von Daten-Storys in Mob
 
 >[!BEGINSHADEBOX]
 
-Siehe ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Daten-Storys für mobile Scorecard-Projekte](https://video.tv.adobe.com/v/3416392/?quality=12&learn=on){target="_blank"} für ein Demovideo.
+Siehe ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Daten-Storys für mobile Scorecard-Projekte](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/dashboards/create-a-mobile-scorecard){target="_blank"} für ein Demovideo.
 
 >[!ENDSHADEBOX]
 

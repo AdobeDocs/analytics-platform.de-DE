@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie Ihre Audience genauer untersuchen und diese D
 feature: Visualizations
 exl-id: 3e3a70cd-70ec-4d4d-81c3-7902716d0b01
 role: User
-source-git-commit: c4c8c0ff5d46ec455ca5333f79d6d8529f4cb87d
+source-git-commit: 023808a13ba9e438b33b1183b92d3aa8ac339230
 workflow-type: tm+mt
-source-wordcount: '719'
+source-wordcount: '720'
 ht-degree: 85%
 
 ---
@@ -34,7 +34,7 @@ ht-degree: 85%
 
 >[!BEGINSHADEBOX]
 
-_In diesem Artikel wird die Kohortentabelle in_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics** beschrieben._<br/>_Unter [Kohortentabelle](https://experienceleague.adobe.com/de/docs/analytics/analyze/analysis-workspace/visualizations/cohort-table/cohort-analysis) finden Sie die Version dieses Artikels für_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics**._
+_In diesem Artikel wird die Kohortentabelle in_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics** beschrieben._<br/>_Unter [Kohortentabelle](https://experienceleague.adobe.com/de/docs/analytics/analyze/analysis-workspace/visualizations/cohort-table/cohort-analysis) finden Sie die Version dieses Artikels für_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**._
 
 >[!ENDSHADEBOX]
 
@@ -55,7 +55,7 @@ Die [!UICONTROL Kohortentabelle] steht allen Customer Journey Analytics-Kundinne
 
 >[!BEGINSHADEBOX]
 
-Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Kohortenanalyse in Analysis Workspace](https://video.tv.adobe.com/v/3430076/?captions=ger&quality=12&learn=on){target="_blank"} finden Sie ein Demovideo.
+Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Kohortenanalyse in Analysis Workspace](https://experienceleague.adobe.com/de/docs/analytics-learn/tutorials/analysis-workspace/cohort-analysis/cohort-analysis-workspace){target="_blank"} finden Sie ein Demovideo.
 
 {{videoaa}}
 
@@ -64,7 +64,7 @@ Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Kohortenanalys
 
 >[!IMPORTANT]
 >
->[!UICONTROL Kohortenanalyse] unterstützt keine nicht segmentierbaren Metriken (einschließlich berechneter Metriken), Nicht-Ganzzahlmetriken (z. B. Umsatz) oder Vorfälle. In der [!UICONTROL Kohortenanalyse“ können nur Metriken verwendet werden, die auch in Segmenten verwendet &#x200B;] können. Darüber hinaus können diese Metriken jeweils nur 1 inkrementiert werden.
+>[!UICONTROL Kohortenanalyse] unterstützt keine nicht segmentierbaren Metriken (einschließlich berechneter Metriken), Nicht-Ganzzahlmetriken (z. B. Umsatz) oder Vorfälle. In der [!UICONTROL Kohortenanalyse“ können nur Metriken verwendet werden, die auch in Segmenten verwendet ] können. Darüber hinaus können diese Metriken jeweils nur 1 inkrementiert werden.
 
 Kohortentabellen in Customer Journey Analytics unterstützen Dubletten-basierte (oder beliebige numerische) Metriken. Beispielsweise kann „Purchase.Value“ (eine Dublette) als Einschluss-/Rückgabemetrik verwendet werden. Darüber hinaus sind alle Metriken, die über den Analytics-Quell-Connector an Adobe Experience Platform übergeben werden, ebenfalls Dubletten.
 

@@ -5,10 +5,10 @@ title: Inhaltsverzeichnis
 feature: Workspace Basics
 role: User
 exl-id: 4eb7de7a-ec40-4a59-afc4-94131e91a35f
-source-git-commit: c4c8c0ff5d46ec455ca5333f79d6d8529f4cb87d
+source-git-commit: 023808a13ba9e438b33b1183b92d3aa8ac339230
 workflow-type: tm+mt
-source-wordcount: '209'
-ht-degree: 88%
+source-wordcount: '210'
+ht-degree: 89%
 
 ---
 
@@ -18,7 +18,7 @@ Sie können ein Inhaltsverzeichnis für ein Projekt in Analysis Workspace anzeig
 
 >[!BEGINSHADEBOX]
 
-Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Erstellen eines Inhaltsverzeichnisses](https://video.tv.adobe.com/v/35186/?captions=ger&quality=12&learn=on){target="_blank"} finden Sie ein Demovideo.
+Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Erstellen eines Inhaltsverzeichnisses](https://experienceleague.adobe.com/de/docs/analytics-learn/tutorials/analysis-workspace/navigating-workspace-projects/create-a-toc-in-analysis-workspace){target="_blank"} finden Sie ein Demovideo.
 
 >[!ENDSHADEBOX]
 

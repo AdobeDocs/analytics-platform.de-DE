@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie das Bedienfeld „Gleichzeitige Medienbetrach
 feature: Panels
 exl-id: a442fb9c-165f-4136-95e2-ce92b9280c25
 role: User
-source-git-commit: 8054aab28c405f6a9dd24306a086c78069032999
+source-git-commit: 2a4e0bbaedbb335e0282baa932d808cd12b1eb8c
 workflow-type: tm+mt
-source-wordcount: '1175'
+source-wordcount: '1176'
 ht-degree: 94%
 
 ---
@@ -34,7 +34,7 @@ ht-degree: 94%
 
 >[!BEGINSHADEBOX]
 
-_In diesem Artikel wird das Panel Gleichzeitige Medienbetrachter in_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**&#x200B;_ beschrieben.<br/>_Unter [Panel Gleichzeitige Medienbetrachter](https://experienceleague.adobe.com/de/docs/analytics/analyze/analysis-workspace/panels/media-concurrent-viewers) finden Sie die Version dieses Artikels für_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics**._
+_In diesem Artikel wird das Panel Gleichzeitige Medienbetrachter in_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**_ beschrieben.<br/>_Unter [Panel Gleichzeitige Medienbetrachter](https://experienceleague.adobe.com/de/docs/analytics/analyze/analysis-workspace/panels/media-concurrent-viewers) finden Sie die Version dieses Artikels für_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**._
 
 >[!ENDSHADEBOX]
 
@@ -55,7 +55,7 @@ In Analysis Workspace umfasst die Metrik „Gleichzeitige Betrachter“ die Anza
 
 >[!BEGINSHADEBOX]
 
-Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Panel Gleichzeitige Medienbetrachter](https://video.tv.adobe.com/v/35186/?captions=ger&quality=12&learn=on){target="_blank"} finden Sie ein Demovideo.
+Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Panel Gleichzeitige Medienbetrachter](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/analysis-workspace/using-panels/media-concurrent-viewers-panel-in-analysis-workspace){target="_blank"} finden Sie ein Demovideo.
 
 {{videoaa}}
 
@@ -130,6 +130,6 @@ Eine Freiformtabelle ist in dieser Ansicht nicht verfügbar.  Um die Datenquelle
 >[!MORELIKETHIS]
 >
 >[Erstellen eines Bedienfelds](/help/analysis-workspace/c-panels/panels.md#create-a-panel)
->&#x200B;>[Panel Verbrachte Zeit bei der Medienwiedergabe](media-playback-time-spent.md)
->&#x200B;>[Panel Medien-Zielgruppendurchschnitt pro Minute](average-minute-audience-panel.md)
+>[Panel Verbrachte Zeit bei der Medienwiedergabe](media-playback-time-spent.md)
+>[Panel Medien-Zielgruppendurchschnitt pro Minute](average-minute-audience-panel.md)
 >

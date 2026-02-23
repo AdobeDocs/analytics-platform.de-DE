@@ -4,9 +4,9 @@ title: Bullet
 feature: Visualizations
 exl-id: b560389a-1149-4e16-b45a-0c6a1f7d0e1f
 role: User
-source-git-commit: 8054aab28c405f6a9dd24306a086c78069032999
+source-git-commit: 023808a13ba9e438b33b1183b92d3aa8ac339230
 workflow-type: tm+mt
-source-wordcount: '270'
+source-wordcount: '271'
 ht-degree: 90%
 
 ---
@@ -33,7 +33,7 @@ ht-degree: 90%
 
 >[!BEGINSHADEBOX]
 
-_In diesem Artikel wird die Visualisierung Bullet in_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics** beschrieben._<br/>_Unter [Bullet](https://experienceleague.adobe.com/de/docs/analytics/analyze/analysis-workspace/visualizations/bullet-graph) finden Sie die Version dieses Artikels für_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics**._
+_In diesem Artikel wird die Visualisierung Bullet in_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics** beschrieben._<br/>_Unter [Bullet](https://experienceleague.adobe.com/de/docs/analytics/analyze/analysis-workspace/visualizations/bullet-graph) finden Sie die Version dieses Artikels für_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**._
 
 >[!ENDSHADEBOX]
 
@@ -45,7 +45,7 @@ Das Lineardiagramm enthält einen einzigen primären Messwert (z. B. aktueller U
 
 >[!BEGINSHADEBOX]
 
-Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Visualisierung Bullet-Diagramm](https://video.tv.adobe.com/v/41509/?captions=ger&quality=12/?quality=12&learn=on){target="_blank"} finden Sie ein Demovideo.
+Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Visualisierung Bullet-Diagramm](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/analysis-workspace/visualizations/bullet-graph-visualization){target="_blank"} finden Sie ein Demovideo.
 
 {{videoaa}}
 
@@ -58,7 +58,7 @@ Sie können bestimmte Einstellungen für eine Visualisierung vom Typ [!UICONTROL
 
 | Einstellung | Beschreibung |
 |---|---|
-| **[!UICONTROL Aufzählungsoptionen]** | Geben Sie Werte für **[!UICONTROL Hohes Ziel]**, **[!UICONTROL Mittleres Ziel]** und **[!UICONTROL Niedriges Ziel]** in der Visualisierung [!UICONTROL Bullet] an. <br/>**[!UICONTROL Hohes Ziel &#x200B;]**&#x200B;entspricht dem angestrebten Hauptziel. Mit&#x200B;**[!UICONTROL &#x200B; Niedriges Ziel &#x200B;]**&#x200B;und&#x200B;**[!UICONTROL &#x200B; Mittleres Ziel &#x200B;]**&#x200B;werden Bereiche unterhalb des Zielwerts Hohes Ziel erstellt. Hinweis: Wenn die Option&#x200B;**[!UICONTROL &#x200B; Prozentsatz &#x200B;]**&#x200B;aktiviert ist, geben Sie Ziele als Ganzzahlen ein, z. B. `20`, wenn Ihr Ziel zwanzig Prozent ist. |
+| **[!UICONTROL Aufzählungsoptionen]** | Geben Sie Werte für **[!UICONTROL Hohes Ziel]**, **[!UICONTROL Mittleres Ziel]** und **[!UICONTROL Niedriges Ziel]** in der Visualisierung [!UICONTROL Bullet] an. <br/>**[!UICONTROL Hohes Ziel ]**entspricht dem angestrebten Hauptziel. Mit**[!UICONTROL  Niedriges Ziel ]**und**[!UICONTROL  Mittleres Ziel ]**werden Bereiche unterhalb des Zielwerts Hohes Ziel erstellt. Hinweis: Wenn die Option**[!UICONTROL  Prozentsatz ]**aktiviert ist, geben Sie Ziele als Ganzzahlen ein, z. B. `20`, wenn Ihr Ziel zwanzig Prozent ist. |
 
 >[!MORELIKETHIS]
 >

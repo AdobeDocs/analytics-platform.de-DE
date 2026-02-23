@@ -5,9 +5,9 @@ exl-id: 53ef7485-9cae-4663-bf61-4eb77c126830
 feature: Adobe Product Analytics, Guided Analysis
 keywords: Produktanalysen
 role: User
-source-git-commit: be617c59cd2fced0031fda1130b86e638bee8f68
+source-git-commit: 023808a13ba9e438b33b1183b92d3aa8ac339230
 workflow-type: tm+mt
-source-wordcount: '677'
+source-wordcount: '678'
 ht-degree: 92%
 
 ---
@@ -31,7 +31,7 @@ Die Analyse ![PeopleGroup](/help/assets/icons/PeopleGroup.svg) **[!UICONTROL Akt
 Alle aktiven Benutzenden (Neu + Wiederkehrend + Rückkehrend) werden über der horizontalen Achse in einem hellen Blaugrün angezeigt, während alle inaktiven Benutzenden unter der horizontalen Achse in Orange angezeigt werden.
 
 
->[!VIDEO](https://video.tv.adobe.com/v/3423394/?captions=ger&quality=12&learn=on)
+>[!VIDEO](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/guided-analysis/active-growth)
 
 ## Anwendungsfälle
 
@@ -51,7 +51,7 @@ Mit der Abfrageleiste können Sie die folgenden Komponenten konfigurieren:
 
 * **[!UICONTROL Ansicht]**: Wechseln Sie zwischen dieser Analyse und [Nettowachstum](net-growth.md).
 * **[!UICONTROL Ereignisse]**: Die Ereignisse, die gemessen werden sollen. Da diese Analyse benutzerbasiert ist, wird eine Person, die innerhalb des Zeitraums mit dem Ereignis interagiert, zur Gruppe der aktiven Benutzenden gezählt. Sie können ein Ereignis in eine Abfrage einbeziehen.
-* **[!UICONTROL Zählt als]**: Die Zählmethode, die auf die ausgewählten Ereignisse angewendet werden soll. <ul><li>**[!UICONTROL Optionen]** umfassen [!UICONTROL Anzahl der &#x200B;] und [!UICONTROL Prozentsatz der Benutzer].</li><li>[!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} Zusätzliche **[!UICONTROL B2B-Optionen]** sind für Customer Journey Analytics B2B edition verfügbar: [!UICONTROL Globale Konten], [!UICONTROL Konten], [!UICONTROL Einkaufsgruppen], [!UICONTROL Opportunities], [!UICONTROL Prozentsatz der globalen Konten], [!UICONTROL Prozentsatz der Konten], [!UICONTROL Prozentsatz der Einkaufsgruppen] und [!UICONTROL Prozentsatz der Vertriebschancen].</li></ul>
+* **[!UICONTROL Zählt als]**: Die Zählmethode, die auf die ausgewählten Ereignisse angewendet werden soll. <ul><li>**[!UICONTROL Optionen]** umfassen [!UICONTROL Anzahl der ] und [!UICONTROL Prozentsatz der Benutzer].</li><li>[!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} Zusätzliche **[!UICONTROL B2B-Optionen]** sind für Customer Journey Analytics B2B edition verfügbar: [!UICONTROL Globale Konten], [!UICONTROL Konten], [!UICONTROL Einkaufsgruppen], [!UICONTROL Opportunities], [!UICONTROL Prozentsatz der globalen Konten], [!UICONTROL Prozentsatz der Konten], [!UICONTROL Prozentsatz der Einkaufsgruppen] und [!UICONTROL Prozentsatz der Vertriebschancen].</li></ul>
 * **[!UICONTROL Segmente]**: Das Segment, nach dem Daten segmentiert werden sollen. Sie können ein Segment in eine Abfrage einbeziehen.
 
 ### Diagrammeinstellungen

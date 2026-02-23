@@ -5,9 +5,9 @@ feature: Analytics Dashboards
 role: User
 exl-id: 12901a76-cb88-45a5-81e9-59fb310328be
 solution: Customer Journey Analytics
-source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
+source-git-commit: 023808a13ba9e438b33b1183b92d3aa8ac339230
 workflow-type: tm+mt
-source-wordcount: '1297'
+source-wordcount: '1298'
 ht-degree: 73%
 
 ---
@@ -19,7 +19,7 @@ Im Folgenden finden Sie Informationen zu Best Practices für die Verwendung und 
 
 >[!BEGINSHADEBOX]
 
-Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Unterstützung von Führungskräften beim Zugriff auf mobile Scorecards](https://video.tv.adobe.com/v/3444845?captions=ger){target="_blank"} finden Sie ein Demovideo.
+Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Unterstützung von Führungskräften beim Zugriff auf mobile Scorecards](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/dashboards/assist-executives-to-access-mobile-scorecards){target="_blank"} finden Sie ein Demovideo.
 
 >[!ENDSHADEBOX]
 

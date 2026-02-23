@@ -5,10 +5,10 @@ feature: Adobe Product Analytics, Guided Analysis
 keywords: Produktanalysen
 exl-id: 27eaa7c7-f1e1-4cf1-9d59-67ac552eb430
 role: User
-source-git-commit: bd8c9951386608572d84006bd5465e57214c56d4
+source-git-commit: 023808a13ba9e438b33b1183b92d3aa8ac339230
 workflow-type: tm+mt
-source-wordcount: '657'
-ht-degree: 100%
+source-wordcount: '658'
+ht-degree: 99%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 100%
 
 Die Analyse ![Frequency](/help/assets/icons/Histogram.svg) **[!UICONTROL Häufigkeit]** gruppiert Ereignisdaten nach der Häufigkeit, mit der Ereignisse in Ihrem Produkt auftreten. Die vertikale Achse dieser Analyse enthält Buckets, die die Häufigkeit des Ereignisses darstellen. Die horizontale Achse misst die Anzahl der Benutzenden oder Sitzungen für jeden Bucket.
 
->[!VIDEO](https://video.tv.adobe.com/v/3435811/?captions=ger&quality=12&learn=on)
+>[!VIDEO](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/guided-analysis/frequency)
 
 ## Anwendungsfälle
 
@@ -57,7 +57,7 @@ Die Analyse [!UICONTROL Häufigkeit] bietet die folgenden Diagrammeinstellungen,
 
 ### Bucket-Einstellungen
 
-Diese Einstellungen bestimmen, wie das Ereignis in Gruppen (Buckets) kategorisiert wird. In der Trend-Tabellansicht werden Benutzende basierend auf der Häufigkeit der Verwendung insgesamt und in jedem Intervall zusammengefasst, d. h., eine Benutzerin oder Benutzer kann in verschiedenen Intervallen zu verschiedenen Buckets zählen.
+Diese Einstellungen bestimmen, wie das Ereignis in Gruppen (Buckets) kategorisiert wird. In der Trend-Tabellenansicht werden Benutzende basierend auf der Häufigkeit der Verwendung insgesamt und in jedem Intervall zusammengefasst, d. h., eine Benutzerin oder Benutzer kann in verschiedenen Intervallen zu verschiedenen Buckets zählen.
 
 * **[!UICONTROL Auto-Buckets]**: Lassen Sie die optimale Bucket-Größe anhand der Datenverteilung automatisch ermitteln.
 * **[!UICONTROL Benutzerdefinierte Buckets]**: Passen Sie an, wie die Daten in Buckets gruppiert werden.

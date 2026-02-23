@@ -5,9 +5,9 @@ role: User
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: e4762cca-b2da-422b-b48f-2a5fec14c97f
-source-git-commit: 720751130d0f66bddffd13c6f160a85fcc7a7206
+source-git-commit: 023808a13ba9e438b33b1183b92d3aa8ac339230
 workflow-type: tm+mt
-source-wordcount: '1454'
+source-wordcount: '1456'
 ht-degree: 98%
 
 ---
@@ -76,7 +76,7 @@ Mit dieser Flexibilität könnten Situationen auftreten, in denen ein einzelnes 
 
 ## Änderungen am Konzept der Segmente
 
-Auch wenn Segmente technisch nicht von Adobe Analytics zu Customer Journey Analytics migriert werden, können Adobe Analytics-Segmente mit dem Komponentenmigrations-Tool in Customer Journey Analytics neu erstellt werden. Segmente werden in Customer Journey Analytics anhand der zugeordneten Dimensionen und Metriken neu erstellt. Weitere Informationen finden Sie unter [Vorbereitung der Migration von Komponenten und Projekten von Adobe Analytics zu Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/component-migration/prepare-component-migration.html?lang=de).
+Auch wenn Segmente technisch nicht von Adobe Analytics zu Customer Journey Analytics migriert werden, können Adobe Analytics-Segmente mit dem Komponentenmigrations-Tool in Customer Journey Analytics neu erstellt werden. Segmente werden in Customer Journey Analytics anhand der zugeordneten Dimensionen und Metriken neu erstellt. Weitere Informationen finden Sie unter [Vorbereitung der Migration von Komponenten und Projekten von Adobe Analytics zu Customer Journey Analytics](https://experienceleague.adobe.com/de/docs/analytics/admin/admin-tools/component-migration/prepare-component-migration).
 
 Sie können [!UICONTROL Segmente] ([!UICONTROL Segmente]) von [!DNL Customer Journey Analytics] zwar noch nicht für Experience Platform Unified Profile freigeben oder dort veröffentlichen, diese Funktion ist aber schon in Entwicklung.
 
@@ -93,7 +93,7 @@ Berechnete Metriken sind in Adobe Analytics und Customer Journey Analytics ähnl
 
 >[!BEGINSHADEBOX]
 
-Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Verschieben der berechneten Metriken von Adobe Analytics nach Customer Journey Analytics](https://video.tv.adobe.com/v/33673?captions=ger&quality=12&learn=on){target="_blank"} finden Sie ein Demovideo zum Verschieben berechneter Metriken.
+Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Verschieben der berechneten Metriken von Adobe Analytics nach Customer Journey Analytics](https://experienceleague.adobe.com/de/docs/customer-journey-analytics-learn/tutorials/components/calc-metrics/moving-your-calculated-metrics-from-adobe-analytics-to-customer-journey-analytics){target="_blank"} finden Sie ein Demovideo zum Verschieben berechneter Metriken.
 
 >[!ENDSHADEBOX]
 
@@ -120,7 +120,7 @@ Customer Journey Analytics erweitert die Konzepte von Identitäten über ECIDs h
 
 >[!BEGINSHADEBOX]
 
-Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Verwenden von Identitäten in Customer Journey Analytics](https://video.tv.adobe.com/v/33387/?captions=ger&quality=12&learn=on){target="_blank"} finden Sie ein Demovideo.
+Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Verwenden von Identitäten in Customer Journey Analytics](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/visitor-id/understanding-how-customer-journey-analytics-uses-identity){target="_blank"} finden Sie ein Demovideo.
 
 >[!ENDSHADEBOX]
 
