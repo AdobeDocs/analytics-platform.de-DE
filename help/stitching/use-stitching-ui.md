@@ -91,7 +91,7 @@ Wenn Sie die Voraussetzungen erfüllen, sollten Sie einige Preflight-Prüfungen 
 >id="connection_changeto_identitygraph"
 >title="Änderung am Identitätsdiagramm"
 >abstract="Stellen Sie sicher, dass Sie die Einrichtung des Identitätsdiagramms abgeschlossen haben, bevor Sie das Identitätsdiagramm für die Zuordnung verwenden."
->additional-url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/stitching/gbs" text="Diagrammbasierte Zuordnung"
+>additional-url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/stitching/gbs" text="Diagrammbasierte Zuordnung"
 
 >[!CONTEXTUALHELP]
 >id="connection_stitching_personid"
