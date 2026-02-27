@@ -5,10 +5,10 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 4e6cacb9-4eca-4dfb-bce4-e69850507596
-source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
+source-git-commit: 153828839bbed493ae12c4969c69195b4beeaab1
 workflow-type: tm+mt
 source-wordcount: '519'
-ht-degree: 100%
+ht-degree: 91%
 
 ---
 
@@ -36,8 +36,8 @@ ht-degree: 100%
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-stitch-customer-care"
->title="Kontaktieren der Adobe-Kundenunterstützung, um einen zusammengefügten Datensatz zu generieren"
->abstract="Wenn Sie über ein Feld verfügen, das eine Kennung enthält, die in mehreren Datensätzen vorhanden ist, aber nicht die primäre Kennung ist, können Sie diese verwenden, um einen neuen Datensatz mit einer konsistenten Kennung zu generieren."
+>title="Zusammenfügung für einen oder mehrere Datensätze aktivieren"
+>abstract="Wenn Sie über ein Feld verfügen, das eine Kennung enthält, die in mehreren Datensätzen vorhanden ist, aber nicht die primäre Kennung ist, können Sie durch Zuordnung die Daten in einen oder mehrere dieser Datensätze hochstufen."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -85,7 +85,7 @@ In der folgenden Liste sind nur die Customer Journey Analytics-Funktionen aufgef
 
 | Customer Journey Analytics-Funktion | Funktion |
 |---------|----------|
-| [Web-Daten mit Daten aus anderen Quellen (z. B. Daten des Kontakt-Centers) verbinden](https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-usecases/cross-channel/cross-channel) | Customer Journey Analytics wird mit der Fähigkeit von Experience Platform kombiniert, alle Arten von Datenschemata und -typen zu speichern. Mithilfe des [Experience-Datenmodells (XDM)](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/home) können Daten einheitlich dargestellt und organisiert werden, sodass sie kombiniert und untersucht werden können. Adobe Analytics konzentriert sich hauptsächlich auf Web-basierte und Mobile-Analysedaten, wobei verschiedene Funktionen für den [Datenimport](https://experienceleague.adobe.com/docs/analytics/import/home.html?lang=de) zur Verfügung stehen. |
+| [Web-Daten mit Daten aus anderen Quellen (z. B. Daten des Kontakt-Centers) verbinden](https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-usecases/cross-channel/cross-channel) | Customer Journey Analytics wird mit der Fähigkeit von Experience Platform kombiniert, alle Arten von Datenschemata und -typen zu speichern. Mithilfe des [Experience-Datenmodells (XDM)](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=de) können Daten einheitlich dargestellt und organisiert werden, sodass sie kombiniert und untersucht werden können. Adobe Analytics konzentriert sich hauptsächlich auf Web-basierte und Mobile-Analysedaten, wobei verschiedene Funktionen für den [Datenimport](https://experienceleague.adobe.com/docs/analytics/import/home.html?lang=de) zur Verfügung stehen. |
 | [Treffer aus anderen Datensätzen mithilfe einer benutzerdefinierten Dimension zuordnen](https://experienceleague.adobe.com/de/docs/analytics-platform/using/stitching/overview) | Mit Customer Journey Analytics können Sie [Daten aus mehreren Report Suites so kombinieren](/help/connections/combined-dataset.md), als bildeten sie eine einzige Report Suite in Adobe Analytics. |
 | [Mit Adobe Real-Time CDP integrieren](/help/components/audiences/audiences-overview.md) | Sie können in Customer Journey Analytics identifizierte [Zielgruppen erstellen](/help/components/audiences/audiences-overview.md) und im Echtzeit-Kundenprofil in Adobe Experience Platform veröffentlichen, um sie zum Targeting und zur Personalisierung zu verwenden. |
 | [Mit Adobe Target (A4T) integrieren](/help/integrations/at.md) | Mit dem Target-Reporting in Customer Journey Analytics können Sie [Adobe Target-Aktivitäten](/help/integrations/at.md) direkt in Customer Journey Analytics messen und Berichte dazu erstellen. Adobe empfiehlt für Personalisierungs-Anwendungsszenarien jedoch die Integration mit Adobe Journey Optimizer.  |
