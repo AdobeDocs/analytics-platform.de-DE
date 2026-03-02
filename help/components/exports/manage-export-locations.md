@@ -5,16 +5,16 @@ title: Verwalten von Cloud-Exportspeicherorten und -Konten
 feature: Components
 exl-id: 8e82fe6f-99df-4360-8693-99692aac002b
 role: User, Admin
-source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
+source-git-commit: 25a5c42153e28493321d87fa5227fcf44c244bb6
 workflow-type: tm+mt
-source-wordcount: '1371'
+source-wordcount: '1392'
 ht-degree: 3%
 
 ---
 
 # Verwalten von Cloud-Exportspeicherorten und -Konten
 
-Sie können Cloud-Export-Speicherorte anzeigen, bearbeiten und löschen.
+Sie können Cloud-Export-Speicherorte und -Konten anzeigen, bearbeiten und löschen.
 
 Informationen zum Erstellen eines neuen Speicherorts finden Sie unter [Konfigurieren von Cloud-Exportspeicherorten](/help/components/exports/cloud-export-locations.md).
 
@@ -30,7 +30,7 @@ Um die benötigten Informationen zu finden, können Sie entweder nach der Liste 
 
 1. Wählen Sie das Symbol **Filter** aus.
 
-   <!-- add screenshot -->
+   ![Filtersymbol auf der Seite „Standorte“](assets/locations-filter-icon.png)
 
    Sie können nach den folgenden Kriterien filtern:
 
@@ -48,6 +48,8 @@ Um die benötigten Informationen zu finden, können Sie entweder nach der Liste 
 
 1. Wählen Sie die [!UICONTROL **Standorte**] aus.
 
+   ![Standortseite](assets/locations-manager.png)
+
 1. (Bedingt) Wenn Sie Systemadministrator sind, können Sie die Option [!UICONTROL **Standorte für alle Benutzer anzeigen**] aktivieren, um Standorte anzuzeigen, die von allen Benutzern in Ihrer Organisation erstellt wurden.
 
 1. Geben Sie im Suchfeld zunächst alle Informationen ein, die mit dem gesuchten Ort verknüpft sind. Sie können nach Daten aus jeder in der Tabelle verfügbaren Spalte suchen.
@@ -62,13 +64,13 @@ So bearbeiten Sie einen Speicherort:
 
 1. Wählen Sie die [!UICONTROL **Standorte**] aus.
 
+   ![Fenster „Exporte“ mit Registerkarte „Standorte“ und Liste der Standorte.](assets/locations-manager.png)
+
 1. (Bedingt) Wenn Sie Systemadministrator sind, können Sie die Option [!UICONTROL **Standorte für alle Benutzer anzeigen**] aktivieren, um Standorte anzuzeigen, die von allen Benutzern in Ihrer Organisation erstellt wurden.
 
 1. Wählen Sie den Speicherort aus, den Sie bearbeiten möchten.
 
-   ![Fenster „Exporte“ mit Registerkarte „Standorte“ und Liste der Standorte.](assets/locations-edit.png)
-
-1. Wählen Sie [!UICONTROL **Bearbeiten**] aus.
+1. Klicken [!UICONTROL **unten**] Bildschirm auf „Bearbeiten“.
 
 1. Nehmen Sie die gewünschten Änderungen vor und klicken Sie dann auf [!UICONTROL **Speichern**].
 
@@ -82,13 +84,13 @@ So löschen Sie einen Speicherort:
 
 1. Wählen Sie die [!UICONTROL **Standorte**] aus.
 
+   ![Fenster „Exporte“ mit Registerkarte „Standorte“ und Liste der Standorte.](assets/locations-manager.png)
+
 1. (Bedingt) Wenn Sie Systemadministrator sind, können Sie die Option [!UICONTROL **Standorte für alle Benutzer anzeigen**] aktivieren, um Standorte anzuzeigen, die von allen Benutzern in Ihrer Organisation erstellt wurden.
 
 1. Wählen Sie einen oder mehrere Standorte aus, die Sie löschen möchten.
 
-   ![Exportfenster mit Registerkarte „Standorte“ und Liste der Standorte](assets/locations-edit.png)
-
-1. Wählen Sie [!UICONTROL **Löschen**] aus.
+1. Klicken [!UICONTROL **unten**] Bildschirm auf „Löschen“.
 
    Das Dialogfeld Speicherort löschen wird angezeigt.
 
@@ -110,15 +112,15 @@ So bearbeiten Sie ein Konto:
 
    ![Fenster „Exporte“ mit der Registerkarte „Standortkonten“](assets/account-add.png)
 
-1. (Bedingt) Wenn Sie Systemadministrator sind, können Sie die Option [!UICONTROL **Konten für alle Benutzer anzeigen**] aktivieren, um Speicherorte anzuzeigen, die von allen Benutzern in Ihrer Organisation erstellt wurden.
+1. (Bedingt) Wenn Sie Systemadministrator sind, können Sie die Option [!UICONTROL **Konten für alle Benutzer anzeigen**] aktivieren, um Konten anzuzeigen, die von allen Benutzern in Ihrer Organisation erstellt wurden.
 
-1. Wählen [!UICONTROL **für**] Konto, das Sie bearbeiten möchten, die Option „Details anzeigen“ aus.
+1. Wählen Sie [!UICONTROL **Details bearbeiten**] für das Konto aus, das Sie bearbeiten möchten.
 
 1. Nehmen Sie die gewünschten Änderungen vor und klicken Sie dann auf [!UICONTROL **Speichern**].
 
 ## Kontoschlüssel anzeigen
 
-Nachdem Sie ein Konto erstellt haben, können Sie alle zugehörigen Kontoschlüssel für dieses Konto anzeigen. Möglicherweise müssen Sie diese Informationen anzeigen, wenn Sie die Konfiguration des Kontos mit Ihrem Cloud-Anbieter ([&#x200B; der ursprünglichen Konfiguration des Kontos) nicht &#x200B;](/help/components/exports/cloud-export-accounts.md) haben.
+Nachdem Sie ein Konto erstellt haben, können Sie alle zugehörigen Kontoschlüssel für dieses Konto anzeigen. Möglicherweise müssen Sie diese Informationen anzeigen, wenn Sie die Konfiguration des Kontos mit Ihrem Cloud-Anbieter ([ der ursprünglichen Konfiguration des Kontos) nicht ](/help/components/exports/cloud-export-accounts.md) haben.
 
 So zeigen Sie die mit einem Exportkonto verknüpften Schlüssel an:
 
@@ -128,9 +130,9 @@ So zeigen Sie die mit einem Exportkonto verknüpften Schlüssel an:
 
    ![Fenster „Exporte“ mit der Registerkarte „Standortkonten“](assets/account-add.png)
 
-1. (Bedingt) Wenn Sie Systemadministrator sind, können Sie die Option [!UICONTROL **Konten für alle Benutzer anzeigen**] aktivieren, um Speicherorte anzuzeigen, die von allen Benutzern in Ihrer Organisation erstellt wurden.
+1. (Bedingt) Wenn Sie Systemadministrator sind, können Sie die Option [!UICONTROL **Konten für alle Benutzer anzeigen**] aktivieren, um Konten anzuzeigen, die von allen Benutzern in Ihrer Organisation erstellt wurden.
 
-1. Klicken Sie auf das Dreipunkt-Symbol des Kontos, das Sie bearbeiten möchten, und klicken Sie dann auf [!UICONTROL **Kontoschlüssel**].
+1. Wählen Sie auf dem Konto, das Sie bearbeiten möchten, das Symbol mit den drei Punkten und dann [!UICONTROL **Schlüssel anzeigen**] aus.
 
 ## Löschen von Konten
 
@@ -140,9 +142,9 @@ So zeigen Sie die mit einem Exportkonto verknüpften Schlüssel an:
 
    ![Fenster „Exporte“ mit der Registerkarte „Standortkonten“](assets/account-add.png)
 
-1. (Bedingt) Wenn Sie Systemadministrator sind, können Sie die Option [!UICONTROL **Konten für alle Benutzer anzeigen**] aktivieren, um Speicherorte anzuzeigen, die von allen Benutzern in Ihrer Organisation erstellt wurden.
+1. (Bedingt) Wenn Sie Systemadministrator sind, können Sie die Option [!UICONTROL **Konten für alle Benutzer anzeigen**] aktivieren, um Konten anzuzeigen, die von allen Benutzern in Ihrer Organisation erstellt wurden.
 
-1. Wählen Sie das 3-Punkt-Symbol für das Konto, das Sie bearbeiten möchten, und dann [!UICONTROL **Konto löschen**].
+1. Wählen Sie auf dem zu löschenden Konto das Symbol mit den drei Punkten und danach die Option [!UICONTROL **Konto löschen**] aus.
 
 1. Wählen [!UICONTROL **im Bestätigungsdialogfeld**] Löschen“ erneut aus.
 
@@ -156,7 +158,7 @@ Systemadministratoren können Benutzer daran hindern, Konten und Standorte zu er
 
 Standardmäßig können alle Benutzerinnen und Benutzer im Unternehmen in Ihrer Customer Journey Analytics-Umgebung Konten erstellen und Konten bearbeiten, wie in [Konfigurieren von Cloud-Exportkonten](/help/components/exports/cloud-export-accounts.md) beschrieben.
 
-Sie können das Erstellen von Konten durch Benutzer einschränken. Wenn Sie dies tun, können Benutzer weiterhin alle Konten verwenden, die sie bereits erstellt haben, sie können sie jedoch nicht mehr bearbeiten. Von Benutzern erstellte Konten können gelöscht werden, wie unter [Löschen eines Kontos](#delete-an-account) beschrieben.
+Sie können das Erstellen von Konten durch Benutzer einschränken. Wenn Sie dies tun, können Benutzer weiterhin alle Konten verwenden, die sie bereits erstellt haben, sie können sie jedoch nicht mehr bearbeiten. Von Benutzern erstellte Konten können gelöscht werden, wie unter [Löschen eines Kontos](#delete-accounts) beschrieben.
 
 So verhindern Sie, dass alle Benutzer Konten erstellen und bearbeiten:
 
@@ -166,13 +168,13 @@ So verhindern Sie, dass alle Benutzer Konten erstellen und bearbeiten:
 
 1. Wählen Sie [!UICONTROL **Speichern**] aus.
 
-1. (Optional) Löschen Sie alle Konten, die von Benutzern erstellt wurden und die diese nicht mehr verwenden sollen, wie in [Konto löschen](#delete-an-account) beschrieben.
+1. (Optional) Löschen Sie alle Konten, die von Benutzern erstellt wurden und die diese nicht mehr verwenden sollen, wie in [Konto löschen](#delete-accounts) beschrieben.
 
 ### Konfigurieren, ob Benutzer Standorte erstellen und bearbeiten können
 
 Standardmäßig können alle Benutzerinnen und Benutzer im Unternehmen Standorte erstellen und Standorte bearbeiten, die sie in Ihrer Customer Journey Analytics-Umgebung erstellen, wie in [Konfigurieren von Cloud-Exportspeicherorten](/help/components/exports/cloud-export-locations.md) beschrieben.
 
-Sie können Benutzer daran hindern, Standorte zu erstellen. Wenn Sie dies tun, können Benutzerinnen und Benutzer weiterhin alle Speicherorte verwenden, die sie bereits erstellt haben, sie können sie jedoch nicht mehr bearbeiten. Sie können von Benutzern erstellte Speicherorte löschen, wie unter [Löschen von Speicherorten](#delete-a-location) beschrieben.
+Sie können Benutzer daran hindern, Standorte zu erstellen. Wenn Sie dies tun, können Benutzerinnen und Benutzer weiterhin alle Speicherorte verwenden, die sie bereits erstellt haben, sie können sie jedoch nicht mehr bearbeiten. Sie können von Benutzern erstellte Speicherorte löschen, wie unter [Löschen von Speicherorten](#delete-locations) beschrieben.
 
 So verhindern Sie, dass alle Benutzer Standorte erstellen und bearbeiten:
 
@@ -182,7 +184,7 @@ So verhindern Sie, dass alle Benutzer Standorte erstellen und bearbeiten:
 
 1. Wählen Sie [!UICONTROL **Speichern**] aus.
 
-1. (Optional) Löschen Sie alle von Benutzern erstellten Standorte, die diese nicht mehr verwenden sollen, wie in [Löschen eines Standorts](#delete-a-location) beschrieben.
+1. (Optional) Löschen Sie alle von Benutzern erstellten Standorte, die diese nicht mehr verwenden sollen, wie in [Löschen eines Standorts](#delete-locations) beschrieben.
 
 ### Einschränken der Kontotypen, die Benutzer erstellen und verwenden können
 
@@ -207,9 +209,9 @@ Löschen von Konten:
 
 1. Suchen Sie die Konten des Kontotyps, den Sie beschränken möchten und der für geplante Exporte verwendet wird.
 
-1. Löschen Sie die Konten, wie unter [Löschen eines Kontos](#delete-an-account) beschrieben.
+1. Löschen Sie die Konten, wie unter [Löschen eines Kontos](#delete-accounts) beschrieben.
 
-1. Fahren Sie mit dem folgenden Abschnitt fort[&#x200B; „Beschränken Sie die Kontotypen, die Benutzern zur Verfügung stehen](#limit-the-account-types-that-are-available-to-users).
+1. Fahren Sie mit dem folgenden Abschnitt fort[ „Beschränken Sie die Kontotypen, die Benutzern zur Verfügung stehen](#limit-the-account-types-that-are-available-to-users).
 
 #### Beschränken Sie die Kontotypen, die Benutzern zur Verfügung stehen
 

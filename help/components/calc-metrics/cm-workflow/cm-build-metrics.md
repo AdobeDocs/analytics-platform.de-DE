@@ -3,10 +3,10 @@ description: 'Erhalten Sie weitere Informationen zum Generator für berechnete M
 title: Erstellen von Metriken
 feature: Calculated Metrics
 exl-id: 4d03a51d-c676-483c-98e2-d7283e8d71b0
-source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
+source-git-commit: fa6654e85fd4055d41f42145fa5a4f917a8875c4
 workflow-type: tm+mt
-source-wordcount: '1613'
-ht-degree: 98%
+source-wordcount: '1677'
+ht-degree: 92%
 
 ---
 
@@ -65,9 +65,11 @@ Das Dialogfeld **[!UICONTROL Generator für berechnete Metriken]** wird zum Erst
 
 1. Um zu überprüfen, ob Ihre Definition der berechneten Metrik korrekt ist, verwenden Sie die ständig aktualisierte **[!UICONTROL Vorschau]** der Ergebnisse der berechneten Metrik. Der **[!UICONTROL Vorschau]** deckt die letzten 90 Tage ab und bewertet die Definition Ihrer berechneten Metrik kontinuierlich.
 
-   Die **[!UICONTROL Produktkompatibilität]** gibt an, ob die berechnete Metrik beim Experimentieren verwendet werden kann. Mögliche Werte sind:
+   Die **[!UICONTROL Produktkompatibilität]** gibt an, ob die berechnete Metrik bei Experimenten und beim vollständigen Tabellenexport verwendet werden kann. Mögliche Werte sind:
    * **[!UICONTROL Überall in Customer Journey Analytics]**: Die berechnete Metrik kann überall in Customer Journey Analytics verwendet werden.
-   * **[!UICONTROL Überall in Customer Journey Analytics (außer beim Experimentieren)]**: Die berechnete Metrik kann überall in Customer Journey Analytics verwendet werden, mit Ausnahme des Panels „Experimentieren“.
+   * **[!UICONTROL Nicht kompatibel in:]**
+      * **[!UICONTROL Experimentieren]**: Die berechnete Metrik kann in ganz Customer Journey Analytics verwendet werden, mit Ausnahme des Bedienfelds „Experimentieren“.
+      * **[!UICONTROL Vollständiger Tabellenexport]**: Die berechnete Metrik kann in ganz Customer Journey Analytics verwendet werden, es sei denn, sie exportiert vollständige Tabellen aus Workspace. Nicht alle Funktionen werden beim Exportieren vollständiger Tabellen unterstützt. Wenn Sie beim Exportieren vollständiger Tabellen die berechnete Metrik einbeziehen möchten, verwenden Sie eine unterstützte Funktion. Weitere Informationen finden Sie unter [Nicht unterstützte Funktionen für berechnete Metriken](/help/analysis-workspace/export/export-cloud.md#unsupported-calculated-metric-functions) in [Exportieren von vollständigen Tabellen in die Cloud](/help/analysis-workspace/export/export-cloud.md).
 
 1. Wählen Sie Folgendes aus:
    * **[!UICONTROL Speichern]**: Speichert die berechnete Metrik.

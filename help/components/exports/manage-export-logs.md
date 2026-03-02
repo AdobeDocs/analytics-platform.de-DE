@@ -5,10 +5,10 @@ title: Verwalten von Exportprotokollen
 feature: Components
 exl-id: 6d676a0a-b117-421e-9a90-8c550f08d474
 role: User
-source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
+source-git-commit: bf76b8688dc0c463c032dd94e88450fed5488949
 workflow-type: tm+mt
-source-wordcount: '837'
-ht-degree: 8%
+source-wordcount: '936'
+ht-degree: 7%
 
 ---
 
@@ -30,11 +30,13 @@ Für geplante Exporte spiegeln die Protokolle die Exporteinstellungen wider, die
 
 1. Führen Sie einen der folgenden Schritte aus:
 
-   * [Anpassen der &#x200B;](#configure-columns) Spalten“.
+   * Systemadministratoren können die Option &quot;**[!UICONTROL für alle Benutzer anzeigen“]**. Wenn diese Option aktiviert ist, werden alle Protokolle angezeigt, unabhängig davon, welcher Benutzer den Export erstellt hat.
 
-   * Wählen Sie das **Informationssymbol**![&#x200B; Informationssymbol](assets/information-icon.png) neben dem Protokollnamen aus, um den mit dem Protokoll verknüpften Export anzuzeigen.
+   * [Anpassen der ](#configure-columns) Spalten“.
 
-   * Wählen Sie das Symbol **Export bearbeiten** ![Informationssymbol](assets/edit-export-icon.png) neben dem Protokollnamen aus, um den mit dem Protokoll verknüpften Export zu bearbeiten.
+   * Wählen Sie das **Informationssymbol**![ Informationssymbol](assets/information-icon.png) neben dem Protokollnamen aus, um den mit dem Protokoll verknüpften Export anzuzeigen.
+
+   * Wählen Sie das **Exportsymbol bearbeiten** ![Exportsymbol bearbeiten](/help/assets/icons/Edit.svg) neben dem Protokollnamen aus, um den mit dem Protokoll verknüpften Export zu bearbeiten.
 
      Weitere Informationen zum Bearbeiten eines Exports finden Sie unter [Exportieren von Customer Journey Analytics-Berichten in die Cloud](/help/analysis-workspace/export/export-cloud.md).
 
@@ -58,7 +60,7 @@ Um die benötigten Informationen zu finden, können Sie entweder die Liste der P
    |---------|----------|
    | [!UICONTROL **Export-ID**] | Geben Sie die Export-ID des Exportprotokolls an, das Sie anzeigen möchten. |
    | [!UICONTROL **Kontotyp**] | Der Kontotyp, mit dem das Protokoll verknüpft ist. Die folgenden Kontotypen sind verfügbar: <ul><li>[!UICONTROL **AEP Data Landing Zone**]</li><li>[!UICONTROL **Amazon S3 Role ARN**]</li><li>[!UICONTROL **Azure SAS**]</li><li>[!UICONTROL **Azure RBAC**]</li><li>[!UICONTROL **Google Cloud Platform**]</li><li>[!UICONTROL **Snowflake**]</li></ul>. |
-   | [!UICONTROL **Status**] | Der Status des Exports Die folgenden Status sind verfügbar: <ul><li>[!UICONTROL **Ausstehend**]: Eine bestimmte Instanz eines Exports wurde gestartet, ist jedoch noch nicht abgeschlossen.<p>Das erneute Ausführen eines Exports mit dem Status Ausstehend verzögert den Exportvorgang.</p></li><li>[!UICONTROL **Abgeschlossen**]: Eine bestimmte Instanz eines Exports wurde fertig verarbeitet und ist im Exportkonto verfügbar.</li><li>[!UICONTROL **Fehlgeschlagen**]<p>Verschiedene Situationen können zu einem fehlgeschlagenen Export führen. Bewegen Sie den Mauszeiger über den Status Fehlgeschlagen , um Details zum Fehler anzuzeigen.<p>Weitere Informationen zu möglichen Fehlerursachen finden Sie unter [Fehlerbehebung bei fehlgeschlagenen &#x200B;](/help/components/exports/troubleshoot-exports.md)).</p> |
+   | [!UICONTROL **Status**] | Der Status des Exports Die folgenden Status sind verfügbar: <ul><li>[!UICONTROL **Ausstehend**]: Eine bestimmte Instanz eines Exports wurde gestartet, ist jedoch noch nicht abgeschlossen.<p>Das erneute Ausführen eines Exports mit dem Status Ausstehend verzögert den Exportvorgang.</p></li><li>[!UICONTROL **Abgeschlossen**]: Eine bestimmte Instanz eines Exports wurde fertig verarbeitet und ist im Exportkonto verfügbar.</li><li>[!UICONTROL **Fehlgeschlagen**]<p>Verschiedene Situationen können zu einem fehlgeschlagenen Export führen. Bewegen Sie den Mauszeiger über den Status Fehlgeschlagen , um Details zum Fehler anzuzeigen.</p><p>Weitere Informationen zu möglichen Fehlerursachen finden Sie unter [Fehlerbehebung bei fehlgeschlagenen ](/help/components/exports/troubleshoot-exports.md)).</p></li></ul> |
 
    {style="table-layout:auto"}
 
@@ -94,15 +96,23 @@ Diese Option ist nicht verfügbar, wenn mehrere Protokolle ausgewählt werden.
 
 1. Suchen Sie das Protokoll, das mit dem Export verknüpft ist, den Sie bearbeiten möchten.
 
-1. Wählen Sie das **Export bearbeiten**-Symbol ![Export-](assets/export-icon.png)-Symbol) neben dem Protokollnamen aus.
+1. Wählen Sie das **Export bearbeiten**-Symbol ![Export-Protokoll bearbeiten](/help/assets/icons/Edit.svg) neben dem Protokollnamen aus.
 
    Oder
 
    Aktivieren Sie das Kontrollkästchen neben dem Protokoll und klicken Sie dann auf [!UICONTROL **Export bearbeiten**].
 
+## Erneutes Ausführen eines abgeschlossenen oder fehlgeschlagenen Exports
+
+Sie können einen oder mehrere Exporte, die mit bestimmten Exportprotokollen verknüpft sind, erneut ausführen. Um einen Export erneut auszuführen, muss das Exportprotokoll den Status „Abgeschlossen“ oder „Fehlgeschlagen“ aufweisen und nicht älter als 7 Tage sein.
+
+1. Aktivieren Sie das Kontrollkästchen neben einem oder mehreren Exportvorgängen, die Sie erneut ausführen möchten.
+
+1. Wählen Sie **[!UICONTROL Erneut ausführen]** aus.
+
 ## Konfigurieren von Spalten
 
-Sie können Spalten auf der Registerkarte [!UICONTROL Protokolle] hinzufügen oder entfernen, um zu konfigurieren, welche Informationen angezeigt werden.
+Sie können Spalten auf der Registerkarte [!UICONTROL Protokolle“ hinzufügen oder ], um zu konfigurieren, welche Informationen angezeigt werden.
 
 Spaltenüberschrift auswählen, um die Protokolle nach dieser Spalte zu sortieren. Standardmäßig werden die Protokolle nach Datum und Uhrzeit des Starts des Exports sortiert.
 
@@ -112,7 +122,7 @@ So konfigurieren Sie Spalten auf der Registerkarte [!UICONTROL Protokolle]:
 
 1. Wählen Sie die Registerkarte [!UICONTROL **Protokolle**] aus.
 
-1. Wählen Sie **Symbol** Tabelle anpassen![&#x200B; &#x200B;](assets/customize-table-icon.png) oben rechts auf der Seite [!UICONTROL Protokolle] aus.
+1. Wählen Sie **Symbol** Tabelle anpassen![ ](assets/customize-table-icon.png) oben rechts auf der Seite [!UICONTROL Protokolle] aus.
 
    Die folgenden Spalten sind verfügbar:
 
@@ -123,12 +133,13 @@ So konfigurieren Sie Spalten auf der Registerkarte [!UICONTROL Protokolle]:
    | Instanz-ID | Die ID der Customer Journey Analytics-Instanz. <!-- True? --> |
    | Name der Datenansicht | Der Name der dem Export zugeordneten Datenansicht. Benutzerinnen und Benutzer können die Datenansicht auswählen, wenn sie den Export erstellen, wie unter [Exportieren von Customer Journey Analytics-Berichten in die Cloud](/help/analysis-workspace/export/export-cloud.md) beschrieben. |
    | Anzahl der Dateien | Die Anzahl der im Export enthaltenen Dateien. |
-   | Größe | Die Größe des Exports.<p>Die Dateigröße wird mit einem Basiswert von 1024 berechnet, der manchmal als KIB und MIB dargestellt wird. Wenn Ihr Cloud-Anbieter die Größe mit einer Basis von 1.000 berechnet, kann dies dazu führen, dass die in Ihrem Cloud-Anbieter angezeigte Größe geringfügig von der hier angezeigten Größe abweicht.</p> |
+   | Größe | Die Größe des Exports.<p>Die Dateigröße wird mit einem Basiswert von 1024 berechnet, der manchmal als KiB und MiB dargestellt wird. Wenn Ihr Cloud-Anbieter die Größe mit einer Basis von 1.000 berechnet, kann dies dazu führen, dass die in Ihrem Cloud-Anbieter angezeigte Größe geringfügig von der hier angezeigten Größe abweicht.</p> |
    | Standort | Der Speicherort des Kontos, in das die Daten exportiert wurden. |
    | Konto | Das Konto, in das die Daten exportiert wurden. |
-   | Status | Der Status des Exports Verfügbare Status [!UICONTROL &#x200B; &quot;]&quot;, [!UICONTROL Zugestellt] und [!UICONTROL Fehlgeschlagen]. |
+   | Status | Der Status des Exports Verfügbare Status sind [!UICONTROL Ausstehend], [!UICONTROL Abgeschlossen] und [!UICONTROL Fehlgeschlagen]. |
    | Gesendet am | Das Datum, an dem der Export stattfand. |
-   | Kontotyp | Der Typ des Cloud-Kontos, in das die Daten exportiert wurden. Verfügbare Kontotypen sind [!UICONTROL Amazon S3 Role ARN], [!UICONTROL Google Cloud Platform], [!UICONTROL Azure SAS], [!UICONTROL Azure RBAC], [!UICONTROL Snowflake] und [!UICONTROL Adobe Experience Platform]. |
+   | Datum des Beginns | Das Datum, an dem der Export begann. |
+   | Kontotyp | Der Typ des Cloud-Kontos, in das die Daten exportiert wurden. Verfügbare Kontotypen sind [!UICONTROL Amazon S3 Role ARN], [!UICONTROL Google Cloud Platform], [!UICONTROL Azure SAS], [!UICONTROL Azure RBAC], [!UICONTROL Snowflake] und [!UICONTROL AEP Data Landing Zone]. |
    | Anzahl Zeilen | Die Anzahl der in der exportierten Tabelle enthaltenen Zeilen. |
 
    {style="table-layout:auto"}

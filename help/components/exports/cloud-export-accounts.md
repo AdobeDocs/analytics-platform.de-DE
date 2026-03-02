@@ -5,10 +5,10 @@ title: Konfigurieren von Cloud-Exportkonten
 feature: Components
 exl-id: 7c9d100f-0dbd-4dd2-b20b-d2ee117f1b7a
 role: User, Admin
-source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
+source-git-commit: 25f46c50b6578026ff3aaae5019306bdcf82f211
 workflow-type: tm+mt
-source-wordcount: '2246'
-ht-degree: 28%
+source-wordcount: '2242'
+ht-degree: 31%
 
 ---
 
@@ -24,9 +24,9 @@ Informationen zum Verwalten vorhandener Konten, einschließlich Anzeigen, Bearbe
 
 1. Stellen Sie sicher, dass Sie die [Mindestanforderungen](/help/analysis-workspace/export/export-cloud.md#minimum-requirements) für den Export von Berichten in die Cloud erfüllen.
 1. Wählen Sie in Customer Journey Analytics [!UICONTROL **Komponenten**] > [!UICONTROL **Exporte**] aus.
-1. Wählen Sie auf [!UICONTROL &#x200B; Seite &#x200B;] die Registerkarte [!UICONTROL **Standortkonten**] aus.
+1. Wählen Sie auf [!UICONTROL  Seite ] die Registerkarte [!UICONTROL **Standortkonten**] aus.
 
-   ![Exportiert Seitenoptionen mit „Weiteres Konto hinzufügen“](assets/account-add.png)
+   ![Exportiert Seitenoptionen mit „Konto hinzufügen“](assets/account-add.png)
 
 1. Wählen Sie [!UICONTROL **Konto hinzufügen**] aus.
 
@@ -38,13 +38,13 @@ Informationen zum Verwalten vorhandener Konten, einschließlich Anzeigen, Bearbe
 
 1. Aktivieren Sie die Option [!UICONTROL **Konto für alle Benutzer in Ihrer Organisation verfügbar machen**], wenn Sie anderen Benutzern in Ihrer Organisation die Verwendung des Kontos erlauben möchten.
 
-   Beachten Sie beim Freigeben von Konten Folgendes:
+   Beachten Sie bei der Freigabe von Kontos Folgendes:
 
-   * Die Freigabe von Konten, die Sie freigeben, kann nicht aufgehoben werden.
+   * Die Freigabe von Konten, die von Ihnen freigegeben wurden, kann nicht aufgehoben werden.
 
    * Freigegebene Konten können nur vom Kontoinhaber bearbeitet werden.
 
-   * Jeder kann einen Speicherort für das freigegebene Konto erstellen.
+   * Alle Personen können einen Speicherort für das freigegebene Konto erstellen.
 
 1. Wählen [!UICONTROL **Feld Kontotyp**] den Typ des Cloud-Kontos aus, in das Sie exportieren. Verfügbare Kontotypen sind Amazon S3 Role ARN, Google Cloud Platform, Azure SAS, Azure RBAC, Snowflake und AEP Data Landing Zone.
 
@@ -69,14 +69,14 @@ Informationen zum Verwalten vorhandener Konten, einschließlich Anzeigen, Bearbe
 >Beachten Sie bei der Verwendung der Data Landing Zone von AEP für Ihr Exportkonto Folgendes:
 >
 > * Stellen Sie beim Exportieren von Customer Journey Analytics-Berichten in die Data Landing Zone von Adobe Experience Platform sicher, dass Sie die Daten innerhalb von 7 Tagen herunterladen und dann aus der Data Landing Zone von AEP löschen. Nach 7 Tagen werden die Daten automatisch aus der Data Landing Zone von AEP gelöscht.
-> * Die Data Landing Zone von AEP verwendet entweder Azure- oder AWS-Speicher. Wenn Ihr Unternehmen ein Anmeldeunternehmen verwendet, das für die Verwendung von Azure konfiguriert ist, verwendet die AEP Data Landing Zone Azure. Wenn das Anmeldeunternehmen für die Verwendung von AWS konfiguriert ist, verwendet die Data Landing Zone von AEP AWS.
+> * Die Data Landing Zone von AEP verwendet entweder Azure- oder AWS-Speicher. Wenn Ihr Unternehmen eine IMS-Organisation verwendet, die für die Verwendung von Azure konfiguriert ist, verwendet die Data Landing Zone von AEP Azure. Wenn das Anmeldeunternehmen für die Verwendung von AWS konfiguriert ist, verwendet die Data Landing Zone von AEP AWS.
 >
 
 1. Beginnen Sie mit der Erstellung eines Cloud-Exportkontos auf eine der folgenden Arten:
 
    * Führen Sie auf der Seite Exporte wie oben beschrieben unter [Erstellen eines Cloud-Exportkontos aus](#begin-creating-a-cloud-export-account)
 
-   * Beim [Exportieren vollständiger Tabellen aus Analysis Workspace](/help/analysis-workspace/export/export-cloud.md#export-full-tables-from-analysis-workspace)
+   * Beim [Exportieren vollständiger Tabellen aus Analysis Workspace](/help/analysis-workspace/export/export-cloud.md#export-full-tables)
 
 1. Nachdem Sie **[!UICONTROL AEP Data Landing Zone]** im Feld **[!UICONTROL Kontotyp]** ausgewählt haben, klicken Sie auf [!UICONTROL **Speichern**].
 
@@ -100,7 +100,7 @@ Informationen zum Verwalten vorhandener Konten, einschließlich Anzeigen, Bearbe
 
 1. (Bedingt) Wenn Sie Azure-Speicher verwenden:
 
-   1. Kopieren Sie den Inhalt des Felds [!UICONTROL **SAS-URI**] in die Zwischenablage. Sie verwenden diesen SAS-URI, um auf die Daten zuzugreifen, die aus Analysis Workspace aus der Data Landing Zone von AEP exportiert werden.
+   1. Kopieren Sie den Inhalt des Felds [!UICONTROL **SAS-URI**] in die Zwischenablage. Sie verwenden diesen SAS-URI, um auf die exportierten Analysis Workspace-Daten aus der Data Landing Zone in AEP zuzugreifen.
 
       Wenn dieses Feld leer ist, müssen Sie über die Berechtigung für den Zugriff auf Adobe Experience Platform verfügen.
 
@@ -108,15 +108,15 @@ Informationen zum Verwalten vorhandener Konten, einschließlich Anzeigen, Bearbe
 
       >[!NOTE]
       >
-      >Wenn Sie ein auf Azure basierendes AEP Data Landing Zone-Konto verwenden, können Sie am einfachsten auf Berichte zugreifen, die Sie in die AEP Data Landing Zone exportieren, indem Sie den Azure Storage-Explorer verwenden. Die folgenden Schritte verwenden diese Methode.
+      >Wenn Sie ein auf Azure basierendes AEP Data Landing Zone-Konto verwenden, können Sie am einfachsten auf Berichte zugreifen, die Sie in die AEP Data Landing Zone exportieren, indem Sie den Azure Storage Explorer verwenden. Die folgenden Schritte verwenden diese Methode.
 
       1. Falls noch nicht geschehen, laden Sie den [Microsoft Azure Storage Explorer](https://azure.microsoft.com/en-us/products/storage/storage-explorer/) herunter.
 
-      1. Befolgen Sie in der Adobe Experience Platform-Dokumentation die unter [Verbinden Ihres Data Landing Zone-Containers mit dem Azure Storage Explorer](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/cloud-storage/data-landing-zone.html?lang=de#connect-your-data-landing-zone-container-to-azure-storage-explorer) beschriebenen Schritte.
+      1. Befolgen Sie in der Dokumentation zu Adobe Experience Platform die unter [Verbinden Ihres Data Landing Zone-Containers mit dem Azure Storage Explorer](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/cloud-storage/data-landing-zone.html#connect-your-data-landing-zone-container-to-azure-storage-explorer) beschriebenen Schritte.
 
-         Sie können die in den Abschnitten [Abrufen der Anmeldeinformationen für Ihre Data Landing Zone](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/cloud-storage/data-landing-zone.html?lang=de#retrieve-dlz-credentials) und [Aktualisieren der Anmeldeinformationen für die Data Landing Zone](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/cloud-storage/data-landing-zone.html?lang=de#update-dlz-credentials) beschriebenen Aufgaben überspringen, da der von Ihnen kopierte URI diese Anmeldeinformationen enthält.
+         Sie können die in den Abschnitten [Abrufen der Anmeldeinformationen für Ihre Data Landing Zone](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/cloud-storage/data-landing-zone.html#retrieve-dlz-credentials) und [Aktualisieren der Anmeldeinformationen für die Data Landing Zone](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/cloud-storage/data-landing-zone.html#update-dlz-credentials) beschriebenen Aufgaben überspringen, da der von Ihnen kopierte URI diese Anmeldeinformationen enthält.
 
-      1. Wenn Sie der Adobe Experience Platform-Dokumentation folgen und zum Feld [!UICONTROL **Blob-Container-SAS-URL**] kommen, fügen Sie den SAS-URI ein, den Sie in Schritt 3 kopiert haben.
+      1. Wenn Sie der Adobe Experience Platform-Dokumentation folgen und zum Feld [!UICONTROL **Blob-Container-SAS-URL**] kommen, fügen Sie den SAS-URI ein, den Sie in einem früheren Schritt kopiert haben.
 
          >[!NOTE]
          >
@@ -156,7 +156,7 @@ Informationen zum Verwalten vorhandener Konten, einschließlich Anzeigen, Bearbe
 
    * Führen Sie auf der Seite Exporte wie oben beschrieben unter [Erstellen eines Cloud-Exportkontos aus](#begin-creating-a-cloud-export-account)
 
-   * Beim [Exportieren vollständiger Tabellen aus Analysis Workspace](/help/analysis-workspace/export/export-cloud.md#export-full-tables-from-analysis-workspace)
+   * Beim [Exportieren vollständiger Tabellen aus Analysis Workspace](/help/analysis-workspace/export/export-cloud.md#export-full-tables)
 
 1. Geben Sie [!UICONTROL **Abschnitt**] des Dialogfelds [!UICONTROL **Konto hinzufügen**] die folgenden Informationen an:
 
@@ -184,7 +184,7 @@ Informationen zum Verwalten vorhandener Konten, einschließlich Anzeigen, Bearbe
 
    * Führen Sie auf der Seite Exporte wie oben beschrieben unter [Erstellen eines Cloud-Exportkontos aus](#begin-creating-a-cloud-export-account)
 
-   * Beim [Exportieren vollständiger Tabellen aus Analysis Workspace](/help/analysis-workspace/export/export-cloud.md#export-full-tables-from-analysis-workspace)
+   * Beim [Exportieren vollständiger Tabellen aus Analysis Workspace](/help/analysis-workspace/export/export-cloud.md#export-full-tables)
 
 1. Geben Sie [!UICONTROL **Abschnitt**] des Dialogfelds [!UICONTROL **Konto hinzufügen**] die folgenden Informationen an:
 
@@ -212,7 +212,7 @@ Informationen zum Verwalten vorhandener Konten, einschließlich Anzeigen, Bearbe
 
    * Führen Sie auf der Seite Exporte wie oben beschrieben unter [Erstellen eines Cloud-Exportkontos aus](#begin-creating-a-cloud-export-account)
 
-   * Beim [Exportieren vollständiger Tabellen aus Analysis Workspace](/help/analysis-workspace/export/export-cloud.md#export-full-tables-from-analysis-workspace)
+   * Beim [Exportieren vollständiger Tabellen aus Analysis Workspace](/help/analysis-workspace/export/export-cloud.md#export-full-tables)
 
 1. Geben Sie [!UICONTROL **Abschnitt**] des Dialogfelds [!UICONTROL **Konto hinzufügen**] die folgenden Informationen an:
 
@@ -220,9 +220,9 @@ Informationen zum Verwalten vorhandener Konten, einschließlich Anzeigen, Bearbe
    |---------|----------|
    | [!UICONTROL **Anwendungs-ID**] | Kopieren Sie diese ID aus der von Ihnen erstellten Azure-Anwendung. In Microsoft Azure befinden sich diese Informationen auf der Registerkarte **Übersicht** in Ihrer Anwendung. Weitere Informationen finden Sie in der [Microsoft Azure-Dokumentation zur Registrierung einer Anwendung bei der Microsoft Identity Platform](https://learn.microsoft.com/de-de/azure/active-directory/develop/quickstart-register-app). |
    | [!UICONTROL **Mandanten-ID**] | Kopieren Sie diese ID aus der von Ihnen erstellten Azure-Anwendung. In Microsoft Azure befinden sich diese Informationen auf der Registerkarte **Übersicht** in Ihrer Anwendung. Weitere Informationen finden Sie in der [Microsoft Azure-Dokumentation zur Registrierung einer Anwendung bei der Microsoft Identity Platform](https://learn.microsoft.com/de-de/azure/active-directory/develop/quickstart-register-app). |
-   | [!UICONTROL **Key Vault-URI**] | <p>Der Pfad zum SAS-Token im Azure Key Vault. Um Azure SAS zu konfigurieren, müssen Sie einen SAS-URI mithilfe des Azure Key Vault als Geheimnis speichern. Weitere Informationen finden Sie in der [Microsoft Azure-Dokumentation zum Einrichten und Abrufen eines Geheimnisses aus Azure Key Vault](https://learn.microsoft.com/de-de/azure/key-vault/secrets/quick-create-portal?source=recommendations).</p><p>Nachdem die Key Vault-URI erstellt wurde:<ul><li>Fügen Sie im Key Vault eine Zugriffsrichtlinie hinzu, um der von Ihnen erstellten Azure-Anwendung Berechtigungen zu erteilen.<p><p>Weitere Informationen finden Sie unter [Microsoft Azure-Dokumentation für die Zuweisung einer Key Vault-Zugriffsrichtlinie](https://learn.microsoft.com/de-de/azure/key-vault/general/assign-access-policy?tabs=azure-portal).</p>Oder</p><p>Wenn Sie eine Zugriffsrolle direkt gewähren möchten, ohne eine Zugriffsrichtlinie zu erstellen, finden Sie weitere Informationen zum Zuweisen von Azure-Rollen mithilfe des Azure-Portals in der [Microsoft Azure-Dokumentation](https://learn.microsoft.com/en-us/azure/role-based-access-control/role-assignments-portal). Dadurch wird die Rollenzuweisung für die Anwendungs-ID hinzugefügt, um auf den Schlüsseltresor-URI zuzugreifen. </p></li><li>Stellen Sie sicher, dass der Anwendungs-ID die `Key Vault Certificate User` integrierte Rolle für den Zugriff auf den URI des Key Vault zugewiesen wurde.</br><p>Weitere Informationen finden Sie unter [Integrierte Azure-Rollen](https://learn.microsoft.com/de-de/azure/role-based-access-control/built-in-roles).</p></li></ul> |
+   | [!UICONTROL **Key Vault-URI**] | <p>Der Pfad zum SAS-Token im Azure Key Vault. Um Azure SAS zu konfigurieren, müssen Sie einen SAS-URI mithilfe des Azure Key Vault als Geheimnis speichern. Weitere Informationen finden Sie in der [Microsoft Azure-Dokumentation zum Einrichten und Abrufen eines Geheimnisses aus Azure Key Vault](https://learn.microsoft.com/de-de/azure/key-vault/secrets/quick-create-portal?source=recommendations).</p><p>Nachdem die Key Vault-URI erstellt wurde:<ul><li>Fügen Sie im Key Vault eine Zugriffsrichtlinie hinzu, um der von Ihnen erstellten Azure-Anwendung Berechtigungen zu erteilen.<p>Weitere Informationen finden Sie in der [Microsoft Azure-Dokumentation zum Zuweisen einer Key Vault-Zugriffsrichtlinie](https://learn.microsoft.com/de-de/azure/key-vault/general/assign-access-policy?tabs=azure-portal).</p><p>Oder</p><p>Wenn Sie eine Zugriffsrolle direkt gewähren möchten, ohne eine Zugriffsrichtlinie zu erstellen, finden Sie weitere Informationen in der [Microsoft Azure-Dokumentation zum Zuweisen von Azure-Rollen mithilfe des Azure-Portals](https://learn.microsoft.com/de-de/azure/role-based-access-control/role-assignments-portal). Dies fügt die Rollenzuweisung für die Anwendungs-ID hinzu, um den Zugriff auf den Key Vault-URI zu ermöglichen. </p></li><li>Stellen Sie sicher, dass der Anwendungs-ID die integrierte Rolle `Key Vault Certificate User` zugewiesen wurde, um auf den Schlüsseltresor-URI zuzugreifen.<p>Weitere Informationen finden Sie unter [Integrierte Azure-Rollen](https://learn.microsoft.com/de-de/azure/role-based-access-control/built-in-roles).</p></li></ul> |
    | [!UICONTROL **Key Vault-Geheimnisname**] | Der Geheimnisname, den Sie beim Hinzufügen des Geheimnisses zum Azure Key Vault erstellt haben. In Microsoft Azure befinden sich diese Informationen im von Ihnen erstellten Key Vault auf den **Key Vault**-Einstellungsseiten. Weitere Informationen finden Sie unter [Microsoft Azure-Dokumentation zum Einrichten und Abrufen eines Geheimnisses aus Azure Key Vault](https://learn.microsoft.com/de-de/azure/key-vault/secrets/quick-create-portal?source=recommendations). |
-   | [!UICONTROL **Geheimnis des Standortkontos**] | Kopieren Sie das Geheimnis aus der von Ihnen erstellten Azure-Anwendung. In Microsoft Azure befinden sich diese Informationen auf der Registerkarte **Zertifikate und Geheimnisse** in Ihrer Anwendung. Weitere Informationen finden Sie in der [Dokumentation zu Microsoft Azure zum Registrieren einer Anwendung bei der Microsoft Identity Platform](https://learn.microsoft.com/de-de/azure/active-directory/develop/quickstart-register-app). <!-- need to grant permission to the bucket. Jun will send info on where that is documented) --> |
+   | [!UICONTROL **Geheimnis des Speicherort-Kontos**] | Kopieren Sie das Geheimnis aus der von Ihnen erstellten Azure-Anwendung. In Microsoft Azure befinden sich diese Informationen auf der Registerkarte **Zertifikate und Geheimnisse** in Ihrer Anwendung. Weitere Informationen finden Sie in der [Dokumentation zu Microsoft Azure zum Registrieren einer Anwendung bei der Microsoft Identity Platform](https://learn.microsoft.com/de-de/azure/active-directory/develop/quickstart-register-app). <!-- need to grant permission to the bucket. Jun will send info on where that is documented) --> |
 
    {style="table-layout:auto"}
 
@@ -232,7 +232,7 @@ Informationen zum Verwalten vorhandener Konten, einschließlich Anzeigen, Bearbe
 
    ![Dialogfeld „Konto erstellen exportieren“](assets/export-account-azure.png)
 
-1. Wenn Sie dies noch nicht getan haben, stellen Sie sicher, dass Sie Berechtigungen für den Bucket in Azure SAS erteilen. <!-- add link to Google Cloud docs on how to do this -->
+1. Wenn Sie dies noch nicht getan haben, stellen Sie sicher, dass Sie Berechtigungen für den Bucket in Azure SAS gewähren. <!-- add link to Google Cloud docs on how to do this -->
 
 1. Klicken Sie [!UICONTROL **OK**].
 
@@ -244,7 +244,7 @@ Informationen zum Verwalten vorhandener Konten, einschließlich Anzeigen, Bearbe
 
    * Führen Sie auf der Seite Exporte wie oben beschrieben unter [Erstellen eines Cloud-Exportkontos aus](#begin-creating-a-cloud-export-account)
 
-   * Beim [Exportieren vollständiger Tabellen aus Analysis Workspace](/help/analysis-workspace/export/export-cloud.md#export-full-tables-from-analysis-workspace)
+   * Beim [Exportieren vollständiger Tabellen aus Analysis Workspace](/help/analysis-workspace/export/export-cloud.md#export-full-tables)
 
 1. Geben Sie [!UICONTROL **Abschnitt**] des Dialogfelds [!UICONTROL **Konto hinzufügen**] die folgenden Informationen an:
 
@@ -252,7 +252,7 @@ Informationen zum Verwalten vorhandener Konten, einschließlich Anzeigen, Bearbe
    |---------|----------|
    | [!UICONTROL **Anwendungs-ID**] | Kopieren Sie diese ID aus der von Ihnen erstellten Azure-Anwendung. In Microsoft Azure befinden sich diese Informationen auf der Registerkarte **Übersicht** in Ihrer Anwendung. Weitere Informationen finden Sie in der [Microsoft Azure-Dokumentation zur Registrierung einer Anwendung bei der Microsoft Identity Platform](https://learn.microsoft.com/de-de/azure/active-directory/develop/quickstart-register-app). |
    | [!UICONTROL **Mandanten-ID**] | Kopieren Sie diese ID aus der von Ihnen erstellten Azure-Anwendung. In Microsoft Azure befinden sich diese Informationen auf der Registerkarte **Übersicht** in Ihrer Anwendung. Weitere Informationen finden Sie in der [Microsoft Azure-Dokumentation zur Registrierung einer Anwendung bei der Microsoft Identity Platform](https://learn.microsoft.com/de-de/azure/active-directory/develop/quickstart-register-app). |
-   | [!UICONTROL **Geheimnis des Standortkontos**] | Kopieren Sie das Geheimnis aus der von Ihnen erstellten Azure-Anwendung. In Microsoft Azure befinden sich diese Informationen auf der Registerkarte **Zertifikate und Geheimnisse** in Ihrer Anwendung. Weitere Informationen finden Sie in der [Microsoft Azure-Dokumentation zur Registrierung einer Anwendung bei der Microsoft Identity Platform](https://learn.microsoft.com/de-de/azure/active-directory/develop/quickstart-register-app). |
+   | [!UICONTROL **Geheimnis des Speicherort-Kontos**] | Kopieren Sie das Geheimnis aus der von Ihnen erstellten Azure-Anwendung. In Microsoft Azure befinden sich diese Informationen auf der Registerkarte **Zertifikate und Geheimnisse** in Ihrer Anwendung. Weitere Informationen finden Sie in der [Microsoft Azure-Dokumentation zur Registrierung einer Anwendung bei der Microsoft Identity Platform](https://learn.microsoft.com/de-de/azure/active-directory/develop/quickstart-register-app). |
 
    {style="table-layout:auto"}
 
@@ -262,7 +262,7 @@ Informationen zum Verwalten vorhandener Konten, einschließlich Anzeigen, Bearbe
 
    ![Dialogfeld „Konto erstellen exportieren“](assets/export-account-azure.png)
 
-1. Falls noch nicht geschehen, stellen Sie sicher, dass Sie dem Bucket in Azure RBAC Berechtigungen erteilen. <!-- add link to Google Cloud docs on how to do this -->
+1. Wenn Sie dies noch nicht getan haben, stellen Sie sicher, dass Sie dem Container in Azure RBAC Berechtigungen erteilen.
 
 1. Klicken Sie [!UICONTROL **OK**].
 
@@ -274,7 +274,7 @@ Informationen zum Verwalten vorhandener Konten, einschließlich Anzeigen, Bearbe
 
    * Führen Sie auf der Seite Exporte wie oben beschrieben unter [Erstellen eines Cloud-Exportkontos aus](#begin-creating-a-cloud-export-account)
 
-   * Beim [Exportieren vollständiger Tabellen aus Analysis Workspace](/help/analysis-workspace/export/export-cloud.md#export-full-tables-from-analysis-workspace)
+   * Beim [Exportieren vollständiger Tabellen aus Analysis Workspace](/help/analysis-workspace/export/export-cloud.md#export-full-tables)
 
 1. Geben Sie [!UICONTROL **Abschnitt**] des Dialogfelds [!UICONTROL **Konto hinzufügen**] die folgenden Informationen an:
 
