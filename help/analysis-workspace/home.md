@@ -19,7 +19,7 @@ Mit Analysis Workspace können Sie schnell Analysen erstellen, um Erkenntnisse z
 
 >[!BEGINSHADEBOX]
 
-Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Analysis Workspace – Übersicht](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/workspace-projects/analysis-workspace-overview){target="_blank"} finden Sie ein Demovideo.
+Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Analysis Workspace – Übersicht](https://experienceleague.adobe.com/de/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/workspace-projects/analysis-workspace-overview){target="_blank"} finden Sie ein Demovideo.
 
 >[!ENDSHADEBOX]
 
