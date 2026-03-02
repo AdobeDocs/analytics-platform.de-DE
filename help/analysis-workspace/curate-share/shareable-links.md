@@ -45,5 +45,5 @@ Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Link innerhalb
 
 ## Verwenden von Links in einem Inhaltsverzeichnis {#TOC}
 
-Ein Tipp für die Nutzung der verschiedenen Link-Optionen besteht darin, [ Workspace-Projekt immer ](/help/analysis-workspace/build-workspace-project/project-table-of-contents.md) Inhaltsverzeichnis anzufügen. Im Inhaltsverzeichnis können Sie Links zu anderen relevanten Projekten, spezifischen Bedienfeldern und spezifischen Visualisierungen erstellen. Dies erleichtert dem Empfänger des Projekts die Navigation.
+Ein Tipp für die Nutzung der verschiedenen Link-Optionen besteht darin, [&#x200B; Workspace-Projekt immer &#x200B;](/help/analysis-workspace/build-workspace-project/project-table-of-contents.md) Inhaltsverzeichnis anzufügen. Im Inhaltsverzeichnis können Sie Links zu anderen relevanten Projekten, spezifischen Bedienfeldern und spezifischen Visualisierungen erstellen. Dies erleichtert dem Empfänger des Projekts die Navigation.
 
