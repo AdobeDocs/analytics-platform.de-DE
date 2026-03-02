@@ -4,7 +4,7 @@ title: Ringdiagramm
 feature: Visualizations
 exl-id: 97b846a6-3a38-48c7-b686-b792bb882fdb
 role: User
-source-git-commit: 023808a13ba9e438b33b1183b92d3aa8ac339230
+source-git-commit: 211dbd80b21f84ab616569c0d847dcc97f13661c
 workflow-type: tm+mt
 source-wordcount: '129'
 ht-degree: 62%
@@ -25,7 +25,7 @@ ht-degree: 62%
 
 >[!BEGINSHADEBOX]
 
-_In diesem Artikel wird die Visualisierung Ringdiagramm in_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics** beschrieben._<br/>_Unter [Ringdiagramm](https://experienceleague.adobe.com/de/docs/analytics/analyze/analysis-workspace/visualizations/donut) finden Sie die Version dieses Artikels für_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics**._
+_In diesem Artikel wird die Visualisierung Ringdiagramm in_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics** beschrieben._<br/>_Unter [Ringdiagramm](https://experienceleague.adobe.com/de/docs/analytics/analyze/analysis-workspace/visualizations/donut) finden Sie die Version dieses Artikels für_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**._
 
 >[!ENDSHADEBOX]
 
@@ -37,7 +37,7 @@ _In diesem Artikel wird die Visualisierung Ringdiagramm in_ ![CustomerJourneyAna
 
 >[!BEGINSHADEBOX]
 
-Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Hinzufügen einer Visualisierung Ringdiagramm](https://experienceleague.adobe.com/de/docs/analytics-learn/tutorials/analysis-workspace/visualizations/using-the-donut-visualization){target="_blank"} finden Sie ein Demovideo.
+Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Hinzufügen einer Visualisierung Ringdiagramm](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/visualizations/add-donut-visualizations){target="_blank"} finden Sie ein Demovideo.
 
 {{videoaa}}
 

@@ -5,10 +5,10 @@ title: Erstellen von freigebbaren Links
 exl-id: 6cfb5161-08e1-4583-ae79-4600b5531929
 feature: Curate and Share
 role: User
-source-git-commit: 084c995658a5cf698d253f1c15229f621a8c55d5
+source-git-commit: 211dbd80b21f84ab616569c0d847dcc97f13661c
 workflow-type: tm+mt
-source-wordcount: '369'
-ht-degree: 53%
+source-wordcount: '338'
+ht-degree: 39%
 
 ---
 
@@ -35,14 +35,15 @@ Sie können auch einen Link zu einem bestimmten Teil eines Projekts freigeben, z
 * Wählen Sie im Kontextmenü einer Bereichskopfzeile die Option **[!UICONTROL Bereichslink abrufen]**
 * Wählen Sie im Kontextmenü einer Visualisierungskopfzeile die Option **[!UICONTROL Visualisierungslink abrufen]**
 
-[Sehen Sie sich das Video an](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/visualizations/intra-linking-in-analysis-workspace.html?lang=de), wie Sie Links erstellen und diese verwenden, um Empfänger zu bestimmten Teilen Ihres Projekts zu führen.
+>[!BEGINSHADEBOX]
+
+Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Link innerhalb oder außerhalb Ihres Projekts](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/visualizations/intra-linking-in-analysis-workspace.html?lang=de){target="_blank"} finden Sie ein Demovideo.
+
+>[!ENDSHADEBOX]
 
 ![Das Dropdown-Menü, nachdem Sie mit der rechten Maustaste auf die Kopfzeile mit dem hervorgehobenen Link Visualisierung abrufen geklickt haben.](assets/get-visualization-link.png)
 
 ## Verwenden von Links in einem Inhaltsverzeichnis {#TOC}
 
-Ein Tipp für die Nutzung der verschiedenen Link-Optionen besteht darin, immer ein Inhaltsverzeichnis am Anfang Ihres Workspace-Projekts einzufügen. Im Inhaltsverzeichnis können Sie Links zu anderen relevanten Projekten, spezifischen Bedienfeldern und spezifischen Visualisierungen erstellen. Dies erleichtert dem Empfänger des Projekts die Navigation.
+Ein Tipp für die Nutzung der verschiedenen Link-Optionen besteht darin, [ Workspace-Projekt immer ](/help/analysis-workspace/build-workspace-project/project-table-of-contents.md) Inhaltsverzeichnis anzufügen. Im Inhaltsverzeichnis können Sie Links zu anderen relevanten Projekten, spezifischen Bedienfeldern und spezifischen Visualisierungen erstellen. Dies erleichtert dem Empfänger des Projekts die Navigation.
 
-[Sehen Sie sich das Video an](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/navigating-workspace-projects/create-a-toc-in-analysis-workspace.html?lang=de), wie Sie mithilfe von Links und dem Rich-Text-Editor von Workspace ein Inhaltsverzeichnis erstellen.
-
-![Ein Projekt - Inhaltsverzeichnis.](assets/toc.png)

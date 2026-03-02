@@ -4,10 +4,10 @@ title: Text
 feature: Visualizations
 exl-id: 51cb6b57-682f-4475-b829-75def725be43
 role: User
-source-git-commit: 8054aab28c405f6a9dd24306a086c78069032999
+source-git-commit: 211dbd80b21f84ab616569c0d847dcc97f13661c
 workflow-type: tm+mt
-source-wordcount: '290'
-ht-degree: 83%
+source-wordcount: '299'
+ht-degree: 80%
 
 ---
 
@@ -25,12 +25,18 @@ ht-degree: 83%
 
 >[!BEGINSHADEBOX]
 
-_In diesem Artikel wird die Visualisierung „Text“ in_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics** beschrieben._<br/>_Unter [Text](https://experienceleague.adobe.com/de/docs/analytics/analyze/analysis-workspace/visualizations/text) finden Sie die Version dieses Artikels für_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics**._
+_In diesem Artikel wird die Visualisierung „Text“ in_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics** beschrieben._<br/>_Unter [Text](https://experienceleague.adobe.com/de/docs/analytics/analyze/analysis-workspace/visualizations/text) finden Sie die Version dieses Artikels für_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**._
 
 >[!ENDSHADEBOX]
 
 
 Um Ihrem Workspace-Projekt benutzerdefinierten Rich-Text hinzuzufügen, können Sie eine ![Text](/help/assets/icons/Text.svg) Visualisierung **[!UICONTROL Text]** oder Beschreibungen für eine Visualisierung und ein Panel verwenden.
+
+>[!BEGINSHADEBOX]
+
+Siehe ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Textvisualisierung](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/visualizations/add-text-visualizations){target="_blank"} für ein Demovideo.
+
+>[!ENDSHADEBOX]
 
 ## Verwenden
 

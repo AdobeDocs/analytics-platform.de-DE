@@ -4,10 +4,10 @@ title: Bereich (gestapelt)
 feature: Visualizations
 exl-id: d9662b29-fc41-4074-8cf6-031202994ece
 role: User
-source-git-commit: 8054aab28c405f6a9dd24306a086c78069032999
+source-git-commit: 211dbd80b21f84ab616569c0d847dcc97f13661c
 workflow-type: tm+mt
-source-wordcount: '195'
-ht-degree: 94%
+source-wordcount: '204'
+ht-degree: 90%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 94%
 
 >[!BEGINSHADEBOX]
 
-_In diesem Artikel werden die Visualisierungen Bereich und Bereiche gestapelt in_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics** beschrieben._<br/>_Unter [Bereich und Bereiche gestapelt](https://experienceleague.adobe.com/de/docs/analytics/analyze/analysis-workspace/visualizations/area) finden Sie die Version dieses Artikels für_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics**._
+_In diesem Artikel werden die Visualisierungen Bereich und Bereiche gestapelt in_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics** beschrieben._<br/>_Unter [Bereich und Bereiche gestapelt](https://experienceleague.adobe.com/de/docs/analytics/analyze/analysis-workspace/visualizations/area) finden Sie die Version dieses Artikels für_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**._
 
 >[!ENDSHADEBOX]
 
@@ -61,9 +61,15 @@ Verwenden Sie die Option **[!UICONTROL 100 % gestapelt]** in den ![Einstellung](
 
 ![Bereich gestapelt (mit einer 100 % gestapelten Visualisierung).](assets/area-stacked100.png)
 
+>[!BEGINSHADEBOX]
+
+Siehe ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Bereichsvisualisierung](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/visualizations/add-area-visualizations){target="_blank"} für ein Demovideo.
+
+>[!ENDSHADEBOX]
+
 >[!MORELIKETHIS]
 >
 >[Hinzufügen einer Visualisierung zu einem Panel](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
->&#x200B;>[Visualisierungseinstellungen](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
->&#x200B;>[Kontextmenü der Visualisierung](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
+>[Visualisierungseinstellungen](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
+>[Kontextmenü der Visualisierung](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
 >

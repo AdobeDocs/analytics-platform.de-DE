@@ -5,9 +5,9 @@ title: Visualisierungen - Übersicht
 feature: Visualizations
 exl-id: ca9e0561-7a54-487a-9fdc-3bcf34f9bdb1
 role: User
-source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
+source-git-commit: 211dbd80b21f84ab616569c0d847dcc97f13661c
 workflow-type: tm+mt
-source-wordcount: '1738'
+source-wordcount: '1751'
 ht-degree: 86%
 
 ---
@@ -23,7 +23,7 @@ Die folgenden Visualisierungstypen sind in Analysis Workspace verfügbar:
 | Symbol | Name | Beschreibung |
 | :---: | --- | ---|
 | ![GraphArea](/help/assets/icons/GraphArea.svg) | [Bereich](/help/analysis-workspace/visualizations/area.md) | Eine Flächendiagramm-Visualisierung. Wie ein Liniendiagramm, aber mit einem farbigen Bereich unterhalb der Linie. Verwenden Sie ein Flächendiagramm, wenn Sie mehrere Metriken darstellen und den Bereich visualisieren möchten, der durch die Schnittmenge von zwei oder mehr Metriken gebildet wird. |
-| ![VertikaleGrafikbalken](/help/assets/icons/GraphBarVertical.svg) | [Balken](/help/analysis-workspace/visualizations/bar.md) | Eine Visualisierung „Balkendiagramm“ mit vertikalen Balken, die verschiedene Werte aus einer oder mehreren Metriken darstellen. |
+| ![GraphBarVertical](/help/assets/icons/GraphBarVertical.svg) | [Balken](/help/analysis-workspace/visualizations/bar.md) | Eine Visualisierung „Balkendiagramm“ mit vertikalen Balken, die verschiedene Werte aus einer oder mehreren Metriken darstellen. |
 | ![GraphBarVertical](/help/assets/icons/GraphBarVerticalStacked.svg) | [Balken gestapelt](/help/analysis-workspace/visualizations/bar.md) | Eine Diagrammvisualisierung vom Typ „Balken gestapelt“ mit vertikalen Balken, die verschiedene Werte aus einer oder mehreren Metriken darstellen. |
 | ![Aufzählungspunkte](/help/assets/icons/GraphBullet.svg)</p> | [Bullet](/help/analysis-workspace/visualizations/bullet-graph.md) | Eine Visualisierung „Bullet-Diagramm“, die zeigt, wie ein Wert, der Sie interessiert, im Vergleich zu anderen Leistungsbereichen (Zielen) liegt oder ausfällt. |
 | ![NummerierterText](/help/assets/icons/TextNumbered.svg) | [Kohortentabelle](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md) | Eine Visualisierung „Kohorte“ ist eine Personengruppe mit gemeinsamen Merkmalen innerhalb eines vorgegebenen Zeitraums. Eine Kohortentabelle ist nützlich für die Analyse von Verweildauer, Abwanderung oder Latenz. |
@@ -50,6 +50,12 @@ Die folgenden Visualisierungstypen sind in Analysis Workspace verfügbar:
 
 ## Hinzufügen von Visualisierungen zu einem Panel
 
+>[!BEGINSHADEBOX]
+
+Siehe ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Hinzufügen von Visualisierungen zum Freiformbereich](https://experienceleague.adobe.com/de/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/panels/add-components-to-the-freeform-panel){target="_blank"} für ein Demovideo.
+
+>[!ENDSHADEBOX]
+
 1. Öffnen Sie das Workspace-Projekt, dem eine Visualisierung hinzugefügt werden soll.
 
 1. Verwenden Sie eine der folgenden Methoden, um die Visualisierung hinzuzufügen:
@@ -68,7 +74,7 @@ Die folgenden Visualisierungstypen sind in Analysis Workspace verfügbar:
 
    * Wählen Sie im Kontextmenü in einer Freiformtabelle die Option **[!UICONTROL Visualisieren]** aus. Wählen Sie dann die Visualisierung aus dem Untermenü aus. Basierend auf der aktuellen Auswahl in der Tabelle bestimmt Workspace, welche Visualisierung angeboten werden soll, und interpretiert die Daten, um die angeforderte Visualisierung zu erstellen.
 
-Wenn Sie eine einfache Visualisierung hinzufügen, z. B[&#x200B; eine &#x200B;](line.md)-[-](bar.md)-Visualisierung, verwendet die Visualisierung die nächste Freiformtabelle als Datenquelle. Sie können jederzeit die [Datenquelle](#data-source) einer Ihrer Visualisierungen ändern.
+Wenn Sie eine einfache Visualisierung hinzufügen, z. B[ eine ](line.md)-[-](bar.md)-Visualisierung, verwendet die Visualisierung die nächste Freiformtabelle als Datenquelle. Sie können jederzeit die [Datenquelle](#data-source) einer Ihrer Visualisierungen ändern.
 
 
 ## Verwalten von Visualisierungen
@@ -156,10 +162,10 @@ Verwenden Sie das Kontextmenü (verfügbar über eine alternative Auswahl, z. B
 | --- | --- |
 | **[!UICONTROL Kopierte Visualisierung einfügen]** | Fügen Sie eine kopierte Visualisierung an einer anderen Stelle innerhalb des Projekts oder in ein ganz anderes Projekt ein. |
 | **[!UICONTROL Daten in die Zwischenablage kopieren]** | [Kopieren Sie Daten](/help/analysis-workspace/export/download-send.md#copy-to-clipboard) aus der Visualisierung in die Zwischenablage. |
-| **[!UICONTROL Auswahl in die Zwischenablage kopieren]** | [Kopieren Sie die &#x200B;](/help/analysis-workspace/export/download-send.md#copy-to-clipboard) aus der Visualisierung in die Zwischenablage. |
-| **[!UICONTROL Objekte als CSV herunterladen (*Dimensionsname*)]** | [Laden Sie die Dimensionselemente &#x200B;](/help/analysis-workspace/export/download-send.md#download-items-as-csv) (bis zu maximal 50.000) der Visualisierung auf Ihr lokales Gerät herunter. Maximal 50.000 Dimensionselemente für die ausgewählte Dimension. |
+| **[!UICONTROL Auswahl in die Zwischenablage kopieren]** | [Kopieren Sie die ](/help/analysis-workspace/export/download-send.md#copy-to-clipboard) aus der Visualisierung in die Zwischenablage. |
+| **[!UICONTROL Objekte als CSV herunterladen (*Dimensionsname*)]** | [Laden Sie die Dimensionselemente ](/help/analysis-workspace/export/download-send.md#download-items-as-csv) (bis zu maximal 50.000) der Visualisierung auf Ihr lokales Gerät herunter. Maximal 50.000 Dimensionselemente für die ausgewählte Dimension. |
 | **[!UICONTROL Visualisierung kopieren]** | Kopieren Sie die Visualisierung, sodass Sie sie an einer anderen Stelle innerhalb des Projekts oder in ein ganz anderes Projekt einfügen können. |
-| **[!UICONTROL Daten als CSV herunterladen]** | [Laden Sie die angezeigten Daten &#x200B;](/help/analysis-workspace/export/download-send.md#download-as-csv) Visualisierung auf Ihr lokales Gerät herunter. |
+| **[!UICONTROL Daten als CSV herunterladen]** | [Laden Sie die angezeigten Daten ](/help/analysis-workspace/export/download-send.md#download-as-csv) Visualisierung auf Ihr lokales Gerät herunter. |
 | **[!UICONTROL Vollständige Tabelle exportieren]** | Exportieren Sie die vollständige Tabelle an bestimmte Cloud-Speicherorte. Weitere Informationen finden Sie unter [Exportieren von Customer Journey Analytics-Berichten in die Cloud](../export/export-cloud.md) |
 | **[!UICONTROL Visualisierung duplizieren]** | Erstellen Sie ein exaktes Duplikat der Visualisierung. |
 | **[!UICONTROL Beschreibung bearbeiten]** | Fügen Sie Text zur Beschreibung der Visualisierung hinzu (oder bearbeiten Sie ihn). Siehe [Text](text.md). |

@@ -4,9 +4,9 @@ title: Zuordnung
 feature: Visualizations
 role: User, Admin
 exl-id: 6656b34a-ae1e-4f9f-9c6d-13c54e49625c
-source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
+source-git-commit: 211dbd80b21f84ab616569c0d847dcc97f13661c
 workflow-type: tm+mt
-source-wordcount: '2761'
+source-wordcount: '2770'
 ht-degree: 9%
 
 ---
@@ -42,11 +42,17 @@ ht-degree: 9%
 
 >[!BEGINSHADEBOX]
 
-_In diesem Artikel wird die Zuordnungsvisualisierung in {_}![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**._<br/>_Siehe [Map](https://experienceleague.adobe.com/de/docs/analytics/analyze/analysis-workspace/visualizations/map-visualization) für die_![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics**-Version dieses Artikels._
+_In diesem Artikel wird die Zuordnungsvisualisierung in {_}![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._<br/>_Siehe [Map](https://experienceleague.adobe.com/de/docs/analytics/analyze/analysis-workspace/visualizations/map-visualization) für die_![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**-Version dieses Artikels._
 
 >[!ENDSHADEBOX]
 
 Mit der ![Globe](/help/assets/icons/Globe.svg)**[!UICONTROL Map]**-Visualisierung in Analysis Workspace können Sie eine visuelle Zuordnung einer beliebigen Metrik (einschließlich berechneter Metriken) erstellen. Sie ist hilfreich bei der Erfassung und dem Vergleich von Metrikdaten über verschiedene geographische Regionen hinweg.
+
+>[!BEGINSHADEBOX]
+
+Siehe ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Kartenvisualisierung](https://experienceleague.adobe.com/de/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/visualizations/configure-and-use-the-map-visualization){target="_blank"} für ein Demovideo.
+
+>[!ENDSHADEBOX]
 
 ## Voraussetzungen
 
@@ -222,7 +228,7 @@ Die Zuordnungsvisualisierung in Customer Journey Analytics unterscheidet sich vo
 
      Um die Karte auf ihre ursprüngliche Nordausrichtung zurückzusetzen, wählen Sie das Kompasssymbol ![Kompasssymbol](assets/map-compass-icon.png).
 
-   * **Auswahl-Tool**: Sie können einen Bereich der Zuordnung auswählen, um [ein Segment &#x200B;](#create-a-segment-from-the-map-visualization), [einen Trend zu &#x200B;](#create-a-trended-line-chart-from-the-map-visualization) oder [eine Aufschlüsselung hinzuzufügen](#add-a-breakdown-from-the-map-visualization).
+   * **Auswahl-Tool**: Sie können einen Bereich der Zuordnung auswählen, um [ein Segment ](#create-a-segment-from-the-map-visualization), [einen Trend zu ](#create-a-trended-line-chart-from-the-map-visualization) oder [eine Aufschlüsselung hinzuzufügen](#add-a-breakdown-from-the-map-visualization).
 
      Klicken Sie auf das Auswahlwerkzeug ![Zuordnungsauswahlsymbol](assets/map-selection-icon.png) und ziehen Sie dann die Maus, um den gewünschten Bereich auszuwählen.
 
@@ -247,9 +253,9 @@ Die Zuordnungsvisualisierung in Customer Journey Analytics unterscheidet sich vo
 
 So konfigurieren Sie Einstellungen für die Zuordnungsvisualisierung:
 
-1. Öffnen Sie in Analysis Workspace eine vorhandene Kartenvisualisierung oder erstellen [&#x200B; eine neue](#begin-building-a-map-visualization).
+1. Öffnen Sie in Analysis Workspace eine vorhandene Kartenvisualisierung oder erstellen [ eine neue](#begin-building-a-map-visualization).
 
-1. Bewegen Sie den Mauszeiger über die Kartenvisualisierung und wählen Sie dann in der Visualisierungskopfzeile das ![&#x200B; „Einstellungen](/help/assets/icons/Setting.svg) aus.
+1. Bewegen Sie den Mauszeiger über die Kartenvisualisierung und wählen Sie dann in der Visualisierungskopfzeile das ![ „Einstellungen](/help/assets/icons/Setting.svg) aus.
 
    Die folgenden Optionen sind verfügbar:
 
