@@ -91,7 +91,7 @@ Wenn Sie die Voraussetzungen erfüllen, sollten Sie einige Preflight-Prüfungen 
 >id="connection_changeto_identitygraph"
 >title="Änderung am Identitätsdiagramm"
 >abstract="Stellen Sie sicher, dass Sie die Einrichtung des Identitätsdiagramms abgeschlossen haben, bevor Sie das Identitätsdiagramm für die Zuordnung verwenden."
->additional-url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/stitching/gbs" text="Diagrammbasierte Zuordnung"
+>additional-url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/stitching/gbs" text="Diagrammbasierte Zuordnung"
 
 >[!CONTEXTUALHELP]
 >id="connection_stitching_personid"
@@ -123,8 +123,8 @@ Wenn Sie die Voraussetzungen erfüllen, sollten Sie einige Preflight-Prüfungen 
 >id="connection_stitchingmetrics_badids"
 >title="Ungültige IDs"
 >abstract="Ungültige IDs sind ID-Werte, die sich stark auf Berichtsdaten auswirken."
->additional-url="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-16444" text="Ungültige IDs"
->additional-url="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-16444" text="Zusammenfügen und ungültige IDs"
+>additional-url="https://experienceleague.adobe.com/de/docs/experience-cloud-kcs/kbarticles/ka-16444" text="Ungültige IDs"
+>additional-url="https://experienceleague.adobe.com/de/docs/experience-cloud-kcs/kbarticles/ka-16444" text="Zusammenfügen und ungültige IDs"
 
 
 Um das Zusammenfügen zu aktivieren, gehen Sie im Abschnitt Ereignisdatensatz des Dialogfelds **[!UICONTROL Datensätze hinzufügen]** oder **[!UICONTROL Datensatz bearbeiten]** folgendermaßen vor:
