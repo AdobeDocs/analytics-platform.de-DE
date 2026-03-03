@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: 9a1689d9-c1b7-42fe-9682-499e49843f76
-source-git-commit: a220eaf24ff877537f86027e3d93ec30772438e5
+source-git-commit: 7d78b955b26d2fcc166d277f9ddf220ff2e03d36
 workflow-type: tm+mt
-source-wordcount: '1142'
+source-wordcount: '1145'
 ht-degree: 4%
 
 ---
@@ -58,7 +58,7 @@ Wenn Sie die Voraussetzungen erfüllen, sollten Sie einige Preflight-Prüfungen 
 
 
    * **Personen-ID**
-      * Stellen Sie bei diagrammbasiertem Stitching sicher, dass das Identitätsdiagramm Fragmente enthält, die ID-Werte aus dem ausgewählten persistenten ID-Namespace und dem Personen-ID-Namespace verknüpfen. Sie können einen Test ausführen, indem Sie zum [Experience Platform-Identitätsdiagramm-Viewer wechseln &#x200B;](https://experienceleague.adobe.com/de/docs/experience-platform/identity/features/identity-graph-viewer){target="_blank"} das Diagramm nach einigen persistenten ID-Testwerten abfragen. Überprüfen Sie, ob diese persistenten ID-Werte mit Personen-ID-Werten im Diagramm verknüpft sind.
+      * Stellen Sie bei diagrammbasiertem Stitching sicher, dass das Identitätsdiagramm Fragmente enthält, die ID-Werte aus dem ausgewählten persistenten ID-Namespace und dem Personen-ID-Namespace verknüpfen. Sie können einen Test ausführen, indem Sie zum [Experience Platform-Identitätsdiagramm-Viewer wechseln ](https://experienceleague.adobe.com/de/docs/experience-platform/identity/features/identity-graph-viewer){target="_blank"} das Diagramm nach einigen persistenten ID-Testwerten abfragen. Überprüfen Sie, ob diese persistenten ID-Werte mit Personen-ID-Werten im Diagramm verknüpft sind.
       * Fragen Sie für das feldbasierte Stitching 7 Tage Daten ab, bei denen das Feld für Ihre Personen-ID nicht null ist, und teilen Sie dies durch eine Abfrage von 7 Tagen Daten für alle Ereignisse in Ihrem Datensatz. Dieser Prozentsatz sollte idealerweise über 5 % liegen.
 
         Beispiel einer Abfrage, die Sie zur Überprüfung verwenden können:
@@ -91,7 +91,7 @@ Wenn Sie die Voraussetzungen erfüllen, sollten Sie einige Preflight-Prüfungen 
 >id="connection_changeto_identitygraph"
 >title="Änderung am Identitätsdiagramm"
 >abstract="Stellen Sie sicher, dass Sie die Einrichtung des Identitätsdiagramms abgeschlossen haben, bevor Sie das Identitätsdiagramm für die Zuordnung verwenden."
->additional-url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/stitching/gbs" text="Diagrammbasierte Zuordnung"
+>additional-url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/stitching/gbs" text="Diagrammbasierte Zuordnung"
 
 >[!CONTEXTUALHELP]
 >id="connection_stitching_personid"
@@ -101,7 +101,7 @@ Wenn Sie die Voraussetzungen erfüllen, sollten Sie einige Preflight-Prüfungen 
 >[!CONTEXTUALHELP]
 >id="connection_stitchingmetrics"
 >title="Zusammenfügen von Metriken"
->abstract="Zuordnungsmetriken werden anhand eines Beispielsatzes von Daten aus den letzten 7 Tagen berechnet (ohne die heutigen Daten)."
+>abstract="Die Zuordnungsmetriken werden anhand eines Beispielsatzes von Daten berechnet, die aus allen Daten stammen, die in den letzten sieben Tagen aufgenommen wurden.<br>Dies unterscheidet sich normalerweise von den Beispieldaten."
 
 >[!CONTEXTUALHELP]
 >id="connection_stitchingmetrics_gbs_personidcoverage"
@@ -123,8 +123,7 @@ Wenn Sie die Voraussetzungen erfüllen, sollten Sie einige Preflight-Prüfungen 
 >id="connection_stitchingmetrics_badids"
 >title="Ungültige IDs"
 >abstract="Ungültige IDs sind ID-Werte, die sich stark auf Berichtsdaten auswirken."
->additional-url="https://experienceleague.adobe.com/de/docs/experience-cloud-kcs/kbarticles/ka-16444" text="Ungültige IDs"
->additional-url="https://experienceleague.adobe.com/de/docs/experience-cloud-kcs/kbarticles/ka-16444" text="Zusammenfügen und ungültige IDs"
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-16444" text="Ungültige IDs"
 
 
 Um das Zusammenfügen zu aktivieren, gehen Sie im Abschnitt Ereignisdatensatz des Dialogfelds **[!UICONTROL Datensätze hinzufügen]** oder **[!UICONTROL Datensatz bearbeiten]** folgendermaßen vor:
@@ -159,7 +158,7 @@ Um das Zusammenfügen zu aktivieren, gehen Sie im Abschnitt Ereignisdatensatz de
    >Stellen Sie sicher, dass Sie berechtigt sind, das Identitätsdiagramm zu verwenden.
    >
 
-   Zuvor wird das Dialogfeld **[!UICONTROL Änderung am Identitätsdiagramm]** angezeigt, um sicherzustellen, dass Sie die Einrichtung des Identitätsdiagramms für den Datensatz als Teil der [Diagrammbasierten Voraussetzungen“ abgeschlossen &#x200B;](/help/stitching/gbs.md#prerequisites), bevor Sie das Identitätsdiagramm für das Zusammenfügen verwenden. Wählen Sie **[!UICONTROL Weiter]** aus, um fortzufahren.
+   Zuvor wird das Dialogfeld **[!UICONTROL Änderung am Identitätsdiagramm]** angezeigt, um sicherzustellen, dass Sie die Einrichtung des Identitätsdiagramms für den Datensatz als Teil der [Diagrammbasierten Voraussetzungen“ abgeschlossen ](/help/stitching/gbs.md#prerequisites), bevor Sie das Identitätsdiagramm für das Zusammenfügen verwenden. Wählen Sie **[!UICONTROL Weiter]** aus, um fortzufahren.
 
    * Wählen Sie einen Namespace aus dem **[!UICONTROL Namespace]** Dropdown-Menü aus.
 
@@ -170,7 +169,7 @@ Nachdem Sie eine Verbindung gespeichert haben, wird der Zuordnungsprozess für D
 
 >[!CAUTION]
 >
->Bei Datensätzen, die für das Zusammenfügen in der Verbindungsschnittstelle aktiviert sind, wird der Aufstockungsstatus sofort und fälschlicherweise als ![Status grün](/help/assets/icons/StatusGreen.svg) **[!UICONTROL _x _Aufstockungen abgeschlossen]**&#x200B;für die Anzahl der abgeschlossenen Aufstockungen gemeldet. Verwenden Sie andere Möglichkeiten, um zu überprüfen, ob Daten aus dem zusammengefügten Datensatz aufgestockt werden.
+>Bei Datensätzen, die für das Zusammenfügen in der Verbindungsschnittstelle aktiviert sind, wird der Aufstockungsstatus sofort und fälschlicherweise als ![Status grün](/help/assets/icons/StatusGreen.svg) **[!UICONTROL _x _Aufstockungen abgeschlossen]**für die Anzahl der abgeschlossenen Aufstockungen gemeldet. Verwenden Sie andere Möglichkeiten, um zu überprüfen, ob Daten aus dem zusammengefügten Datensatz aufgestockt werden.
 >
 
 
