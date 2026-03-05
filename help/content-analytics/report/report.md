@@ -33,7 +33,7 @@ Basierend auf den Content Analytics-spezifischen Dimensionen, die Sie in Ihrem P
 
 ![Content Analytics-Miniaturen](../assets/aca-thumbnails.png)
 
-Standardmäßig werden Miniaturansichten in einer [Freiformtabelle“ ](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md). So konfigurieren Sie die Anzeige von Miniaturen für eine Content Analytics-Dimension:
+Standardmäßig werden Miniaturansichten in einer [Freiformtabelle“ &#x200B;](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md). So konfigurieren Sie die Anzeige von Miniaturen für eine Content Analytics-Dimension:
 
 * Bewegen Sie den Mauszeiger über eine Kopfzeile für eine Content Analytics-Dimension, z. B. **[!UICONTROL Asset-IDs]** oder **[!UICONTROL Erlebnis-IDs]**.
 * Wählen Sie ![Einstellung](/help/assets/icons/Setting.svg) aus.
@@ -110,7 +110,7 @@ Durch dieses Panel erfahren Sie, welche Erlebnisse und welche Assets in diesen E
 
      >[!NOTE]
      >
-     >Diese Visualisierungen werden nur dann in Ihrer Vorlage angezeigt, wenn Sie konfiguriert haben, [ Erlebnisse in ](/help/content-analytics/config/guided.md#experience-capture-and-definition) Content Analytics-Konfiguration einzuschließen.
+     >Diese Visualisierungen werden nur dann in Ihrer Vorlage angezeigt, wenn Sie konfiguriert haben, [&#x200B; Erlebnisse in &#x200B;](/help/content-analytics/config/guided.md#experience-capture-and-definition) Content Analytics-Konfiguration einzuschließen.
      > 
 
       * **Experience CTR**: eine Visualisierung [Zusammenfassungsänderung](/help/analysis-workspace/visualizations/summary-number-change.md) die Experience CTR anzeigt.
