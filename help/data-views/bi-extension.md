@@ -48,7 +48,7 @@ Oder Sie können:
 
 So verwenden Sie unbefristete Anmeldedaten:
 
-1. Erstellen Sie [unbefristete Anmeldedaten in Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/credentials#non-expiring-credentials). Wenn Sie bereits vorhandene, nicht ablaufende Anmeldedaten verwenden möchten, stellen Sie sicher, dass diese Anmeldedaten [nach OAuth migriert](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/credentials#migrate-credentials).
+1. Erstellen Sie [unbefristete Anmeldedaten in Experience Platform](https://experienceleague.adobe.com/de/docs/experience-platform/query/ui/credentials#non-expiring-credentials). Wenn Sie bereits vorhandene, nicht ablaufende Anmeldedaten verwenden möchten, stellen Sie sicher, dass diese Anmeldedaten [nach OAuth migriert](https://experienceleague.adobe.com/de/docs/experience-platform/query/ui/credentials#migrate-credentials).
 
 1. Stellen Sie sicher, dass die nicht ablaufenden Anmeldedaten für die Customer Journey Analytics-Produkt- und -Produktprofile verfügbar sind. Sie müssen Systemadministrator für die Organisation sein, um die folgenden Schritte ausführen zu können.
    1. Wählen Sie **[!UICONTROL Admin Console]** aus ![App](/help/assets/icons/Apps.svg).
