@@ -3,23 +3,24 @@ title: Aktuelle Versionshinweise zu Customer Journey Analytics
 description: Anzeigen der neuesten Versionshinweise zu Customer Journey Analytics
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 26b61e62c853c3ddb0dad9e1d710c839a49314e4
+source-git-commit: 3d58f4dccdc7b9ea6f936cc924a30cc06b2317d1
 workflow-type: tm+mt
-source-wordcount: '1228'
-ht-degree: 31%
+source-wordcount: '1255'
+ht-degree: 30%
 
 ---
 
 # Aktuelle Versionshinweise zu Customer Journey Analytics (Februar 2026)
 
-**Letztes Update**: Freitag, 12. Februar 2026
+**Letzte Aktualisierung**: 5. März 2026
 
 Diese Versionshinweise beziehen sich auf den Veröffentlichungszeitraum vom Februar 2026. Versionen von Adobe Customer Journey Analytics basieren auf einem [Modell der kontinuierlichen Bereitstellung](releases.md), das einen besser skalierbaren, schrittweisen Ansatz für die Implementierung von Funktionen ermöglicht. Dementsprechend werden diese Versionshinweise mehrmals im Monat aktualisiert. Bitte überprüfen Sie sie regelmäßig.
 
 ## Neue oder aktualisierte Funktionen
 
 | Funktion und Beschreibung | [Rollout-Beginn](releases.md) | [Allgemeine Verfügbarkeit](releases.md) |
-| ----------- | ------- | ---- |
+| ----------- | -------: | ----:|
+| **Zusätzliche Miniaturansichten und Vorschauen für Content Analytics**<p>Content Analytics-Miniaturansichten und -Vorschauen werden jetzt in Visualisierungen vom Typ „Balken“ (gestapelt), „Horizontalbalken“ (gestapelt) und „Streuung“ unterstützt. | Freitag, 5. März 2026 | TBD |
 | **Überschreibungen der Kopfzeile** <p>In Content Analytics können Sie einen Kopfzeilennamen und einen geheimen Kopfzeilenwert angeben. Dieser [Header überschreibt die Konfiguration](/help/content-analytics/config/guided.md#header-overrides) stellt sicher, dass Content Analytics benutzerdefinierte HTTP-Header sendet, um alle implementierten Bot-Erkennungs- oder Gate-Traffic-Technologien zu umgehen.</p> |  | Dienstag, 2. Februar 2026 |
 | **Kombinieren von Report Suites aus mehreren IMS-Organisationen**<p>Mit dem Analytics Source Connector können Sie Report Suites aus mehreren IMS-Organisationen kombinieren. Diese [Cross-IMS Data Mapping](/help/getting-started/aa-vs-cja/mapping-data-ims-orgs.md)-Funktion ermöglicht Unternehmen eine kombinierte Ansicht ihrer Kundendaten, auch wenn diese Kundendaten über mehrere IMS-Organisationen verteilt sind. <p>**Hinweis:** Diese Konfiguration ist nur verfügbar, wenn Sie eine Anfrage an die Adobe-Kundenunterstützung senden.</p> |  | Freitag, 12. Februar 2026 |
 | **Mehrere Dimensionsspalten in eine Freiformtabelle einbeziehen**<p>Sie können jetzt bis zu 5 Dimensionsspalten in eine Freiformtabelle einbeziehen, sodass Sie mehrere Dimensionselemente nebeneinander anzeigen können. Jede Reihe von Dimensionselementen verhält sich wie ein einzelnes verkettetes Dimensionselement.</p><p>Sie können Filter, Sortierung, Aufschlüsselungen und mehr auf Freiformtabellen mit mehreren Dimensionsspalten anwenden, um eine tiefere und benutzerspezifischere Analyse zu erstellen.</p><p>Zuvor konnten Sie nur eine Dimensionsspalte in eine Freiformtabelle einbeziehen.</p><p>Weitere Informationen finden Sie unter [Mehrere Dimensionsspalten in eine Freiformtabelle einbeziehen](/help/analysis-workspace/visualizations/freeform-table/freeform-table-multidimensions.md).</p> | Donnerstag, 28. Januar 2026 | Donnerstag, 4. März 2026 <p>(Ursprünglich für den 18. Februar 2026 geplant)</p> |

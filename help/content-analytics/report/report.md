@@ -1,63 +1,92 @@
 ---
-title: Content Analytics-Reporting
-description: Erstellen von Content Analytics-Berichten
+title: Content Analytics-Berichte
+description: Erfahren Sie, wie Sie Berichte zu Content Analytics mithilfe von Visualisierungen wie Freiformtabellen, Balken und Streuungen erstellen.
 solution: Customer Journey Analytics
 feature: Content Analytics
 role: User
 exl-id: 6e756ae8-b969-46f1-95b8-d8fbb0d058ed
-source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
+source-git-commit: 93ef16462842a819c3b980d557abaaf0cd547b6c
 workflow-type: tm+mt
-source-wordcount: '1300'
-ht-degree: 100%
+source-wordcount: '1473'
+ht-degree: 77%
 
 ---
 
 # Überblick über das Content Analytics-Reporting
 
-Zu Content Analytics können Sie in [Analysis Workspace](/help/analysis-workspace/home.md) Berichte erstellen, Analysen durchführen und Erkenntnisse gewinnen. Eine bestimmte Workspace-[Vorlage](#template) ist verfügbar, sodass Sie sofort auf ein vorausgefülltes Workspace-Projekt mit relevanten Inhalten zugreifen können.
+Sie erstellen Berichte, führen Analysen durch und erhalten Einblicke in die [!DNL Content Analytics] in [Analysis Workspace](/help/analysis-workspace/home.md). Eine bestimmte Workspace-[Vorlage](#template) ist verfügbar, sodass Sie sofort auf ein vorausgefülltes Workspace-Projekt mit relevanten Inhalten zugreifen können.
 
-So starten Sie das Content Analytics-Reporting erstmalig:
+Gehen Sie wie folgt vor, um einen neuen Content Analytics-Bericht zu erstellen:
 
 1. [Erstellen Sie ein neues](/help/analysis-workspace/build-workspace-project/create-projects.md) oder [öffnen Sie ein vorhandenes](/help/analysis-workspace/build-workspace-project/open-projects.md) Projekt in Workspace.
 1. Stellen Sie sicher, dass Sie für das Content Analytics-Reporting eine [Datenansicht auswählen](/help/analysis-workspace/c-panels/panels.md#data-view). Das Content Analytics-Reporting ist nur für Datenansichten verfügbar, die für Content Analytics [konfiguriert](/help/content-analytics/config/configuration.md) sind.
 1. Ziehen Sie die Visualisierung ![Tabelle](/help/assets/icons/Table.svg) [Freiformtabelle](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) auf die Arbeitsfläche.
 1. Verwenden Sie [spezifische Content Analytics-Komponenten](components.md) und andere allgemeine [Komponenten](/help/components/overview.md) (wie Segmente, Datumsbereiche, Anmerkungen), um Erkenntnisse zu Content Analytics zu erhalten.
+1. Verwenden Sie andere [Visualisierungen](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md), um Ihr Projekt zu verbessern.
+
 
 ## Miniaturen
 
-Basierend auf den Content Analytics-spezifischen Dimensionen in Ihrem Projekt werden Miniaturen für Assets und Dimensionen angezeigt.
+Basierend auf den Content Analytics-spezifischen Dimensionen, die Sie in Ihrem Projekt verwenden, werden Miniaturansichten in den folgenden Visualisierungen angezeigt:
+
+### Freiformtabelle
 
 ![Content Analytics-Miniaturen](../assets/aca-thumbnails.png)
 
-Standardmäßig werden Miniaturen für die entsprechenden Content Analytics-Dimensionen angezeigt. So konfigurieren Sie die Anzeige von Miniaturen für eine Content Analytics-Dimension:
+Standardmäßig werden Miniaturansichten in einer [Freiformtabelle“ ](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md). So konfigurieren Sie die Anzeige von Miniaturen für eine Content Analytics-Dimension:
 
 * Bewegen Sie den Mauszeiger über eine Kopfzeile für eine Content Analytics-Dimension, z. B. **[!UICONTROL Asset-IDs]** oder **[!UICONTROL Erlebnis-IDs]**.
 * Wählen Sie ![Einstellung](/help/assets/icons/Setting.svg) aus.
 * Aktivieren oder deaktivieren Sie im Popup **[!UICONTROL Zeileneinstellungen]** unter **[!UICONTROL Einstellungen]** die Option **[!UICONTROL Miniaturansichten anzeigen]**.
 
 
+### Balken (gestapelt) und Horizontalbalken (gestapelt)
+
+{{release-limited-testing-section}}
+
+![Content Analytics-Miniaturansichten für Balkendiagramm](/help/content-analytics/assets/aca-bar-thumbnail.png)
+
+
+Miniaturen werden als Teil der Legende auf der vertikalen oder horizontalen Achse angezeigt. Miniaturen werden auch angezeigt, wenn Sie den Mauszeiger über eine Leiste in einem [Balken (gestapelt)](/help/analysis-workspace/visualizations/bar.md) und [horizontalen Balken (gestapelt)](/help/analysis-workspace/visualizations/horizontal-bar.md) bewegen.
+
+
+### Streuung
+
+{{release-limited-testing-section}}
+
+![Content Analytics-Miniaturansichten für Streuung](/help/content-analytics/assets/aca-scatter-thumbnail.png)
+
+Miniaturansichten werden angezeigt, wenn Sie den Mauszeiger über einen Datenpunkt in einer [Streuung](/help/analysis-workspace/visualizations/scatterplot.md) bewegen.
+
 ## Vorschau
 
-Für Zeilen mit einer Content Analytics-Dimension, die Miniaturen anzeigen, können Sie ein Popup-Fenster „Vorschau“ öffnen.
+>[!AVAILABILITY]
+>
+>Die in diesem Abschnitt beschriebenen Funktionen für Balken- und Streuvisualisierungen befinden sich in der eingeschränkten Testphase der Veröffentlichung und sind möglicherweise noch nicht in Ihrer Umgebung verfügbar. Diese Anmerkung wird entfernt, wenn die Funktion allgemein verfügbar ist. Informationen zum Customer Journey Analytics-Veröffentlichungsprozess finden Sie unter [Veröffentlichungen von Funktionen für Customer Journey Analytics](/help/release-notes/releases.md).
+>
 
-So öffnen Sie eine Vorschau mit den folgenden Details:
+Sie können ein Vorschaufenster öffnen. Gehen Sie dazu wie folgt vor:
 
-* Wählen Sie ![Info-Gliederung](/help/assets/icons/InfoOutline.svg) aus. Es werden die folgenden Details angezeigt.
+* Wählen Sie ![InfoOutline](/help/assets/icons/InfoOutline.svg) in einer [Freiformtabelle](#freeform-table) aus.
+* Wählen Sie einen bestimmten Balken in einer [Balken](#bar-and-horizontal-bar) oder [horizontalen Balken](#bar-and-horizontal-bar) Visualisierung oder einen Datenpunkt in [Streuvisualisierung](#scatter).
 
-  | Erlebnisvorschau | Asset-Vorschau |
-  |---|---|
-  | ![Content Analytics-Erlebnisvorschau](../assets/aca-experience-preview.png) | ![Content Analytics-Asset-Vorschau](../assets/aca-asset-preview.png) |
-  | Name der Dimension (z. B. **[!UICONTROL Erlebnis-ID])** | Name der Asset-Dimension (z. B. **[!UICONTROL Asset-ID])** |
-  | **[!UICONTROL Impressions (gesamte Zeit)]**: Anzahl der Impressions für das Erlebnis. | **[!UICONTROL Impressions (gesamte Zeit)]**: Anzahl der Impressions für das Asset. |
-  | **[!UICONTROL Assets]**: Anzahl der Assets, die dieses Erlebnis umfasst. <br/>Wählen Sie ![Aufschlüsselung](/help/assets/icons/Breakdown.svg) **[!UICONTROL Aufschlüsselung]** aus, um die Assets zu überprüfen. | **[!UICONTROL Erlebnisse]**: Anzahl der Erlebnisse, bei denen dieses Asset angezeigt wird. <br/>Wählen Sie ![Aufschlüsselung](/help/assets/icons/Breakdown.svg) **[!UICONTROL Aufschlüsselung]** aus, um die Assets zu überprüfen. |
-  | **[!UICONTROL Erste Impression]**: Datum der ersten Impression des Erlebnisses. | **[!UICONTROL Erste Impression]**: Datum der ersten Impression des Assets. |
-  | **[!UICONTROL Letzte Impression]**: Datum der letzten Impression des Erlebnisses. | **[!UICONTROL Letzte Impression]**: Datum der letzten Impression des Assets. |
-  | **[!UICONTROL Erlebnisattribute]**: Die [Attribute](/help/content-analytics/report/components.md#experience-attributes) des Erlebnisses. | **[!UICONTROL Asset-Attribute]**: Die [Attribute](/help/content-analytics/report/components.md#asset-attributes) des Assets. |
+
+Es werden die folgenden Details angezeigt.
+
+| Erlebnisvorschau | Asset-Vorschau |
+|---|---|
+| ![Content Analytics-Erlebnisvorschau](../assets/aca-experience-preview.png) | ![Content Analytics-Asset-Vorschau](../assets/aca-asset-preview.png) |
+| Name der Dimension (z. B. **[!UICONTROL Erlebnis-ID])** | Name der Asset-Dimension (z. B. **[!UICONTROL Asset-ID])** |
+| **[!UICONTROL Impressions (gesamte Zeit)]**: Anzahl der Impressions für das Erlebnis. | **[!UICONTROL Impressions (gesamte Zeit)]**: Anzahl der Impressions für das Asset. |
+| **[!UICONTROL Assets]**: Anzahl der Assets, die dieses Erlebnis umfasst. <br/>Wählen Sie ![Aufschlüsselung](/help/assets/icons/Breakdown.svg) **[!UICONTROL Aufschlüsselung]** aus, um die Assets zu überprüfen. | **[!UICONTROL Erlebnisse]**: Anzahl der Erlebnisse, bei denen dieses Asset angezeigt wird. <br/>Wählen Sie ![Aufschlüsselung](/help/assets/icons/Breakdown.svg) **[!UICONTROL Aufschlüsselung]** aus, um die Assets zu überprüfen. |
+| **[!UICONTROL Erste Impression]**: Datum der ersten Impression des Erlebnisses. | **[!UICONTROL Erste Impression]**: Datum der ersten Impression des Assets. |
+| **[!UICONTROL Letzte Impression]**: Datum der letzten Impression des Erlebnisses. | **[!UICONTROL Letzte Impression]**: Datum der letzten Impression des Assets. |
+| **[!UICONTROL Erlebnisattribute]**: Die [Attribute](/help/content-analytics/report/components.md#experience-attributes) des Erlebnisses. | **[!UICONTROL Asset-Attribute]**: Die [Attribute](/help/content-analytics/report/components.md#asset-attributes) des Assets. |
 
 
 ## Vorlage
 
-Es ist eine Content Analytics-[Vorlage](/help/analysis-workspace/templates/use-templates.md) verfügbar, mit der Sie ermitteln können, welche Inhalte und Inhaltsattribute am besten funktionieren. Die Vorlage ist Teil des Anwendungsfalls [Web-Kanal und Interaktion](/help/analysis-workspace/templates/use-templates.md#web-engagement) und beschreibt, wie Ihre Inhalte auf granularer Ebene abschneiden. Sie können die Leistung einzelner Assets oder bestimmter Attribute überprüfen. 
+Eine Content Analytics [Vorlage](/help/analysis-workspace/templates/use-templates.md) ist verfügbar, die Ihnen dabei hilft zu erfahren, welche Inhalte und Inhaltsattribute am besten funktionieren. Die Vorlage ist Teil des Anwendungsfalls [Web-Kanal und Interaktion](/help/analysis-workspace/templates/use-templates.md#web-engagement) und beschreibt, wie Ihre Inhalte auf granularer Ebene abschneiden. Sie können die Leistung einzelner Assets oder bestimmter Attribute überprüfen. 
 
 Basierend auf Ihren Erkenntnissen können Sie eine Reihe von Schritten ausführen, z. B. Assets mit hoher Leistung auf Ihrer Startseite fördern, Inhalte für bestimmte Segmente personalisieren, um Attribute mit hoher Leistung einzuschließen, oder Inhalte austauschen, die nicht mehr aktuell sind.
 
@@ -81,12 +110,12 @@ Durch dieses Panel erfahren Sie, welche Erlebnisse und welche Assets in diesen E
 
      >[!NOTE]
      >
-     >Diese Visualisierungen werden nur angezeigt, wenn Sie in Ihre Content Analytics-Konfiguration [Erlebnisse eingeschlossen](/help/content-analytics/config/guided.md#experience-capture-and-definition) haben.
+     >Diese Visualisierungen werden nur dann in Ihrer Vorlage angezeigt, wenn Sie konfiguriert haben, [ Erlebnisse in ](/help/content-analytics/config/guided.md#experience-capture-and-definition) Content Analytics-Konfiguration einzuschließen.
      > 
 
-      * **Erlebnis – CTR**: Eine Visualisierung vom Typ [Zusammenfassungsänderung](/help/analysis-workspace/visualizations/summary-number-change.md), die die Erlebnis-CTR zeigt.
+      * **Experience CTR**: eine Visualisierung [Zusammenfassungsänderung](/help/analysis-workspace/visualizations/summary-number-change.md) die Experience CTR anzeigt.
       * **Erlebnisse mit den meisten Konversionen**: Eine Visualisierung vom Typ [Horizontalbalken](/help/analysis-workspace/visualizations/horizontal-bar.md), die die besten Konversionserlebnisse basierend auf der ausgewählten Konversionsmetrik zeigt.
-      * **Erlebnisse mit der besten Performance**: Eine [Freiformtabelle](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) (einschließlich [Miniaturen](#thumbnails) und [Vorschauen](#previews)) für die Erlebnisse mit der besten Leistung.
+      * **Erlebnisse mit Top**: Eine [Freiformtabelle](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) (einschließlich [Miniaturen](#thumbnails) und [Vorschauen](#previews)) für die Erlebnisse mit der besten Leistung.
 
    * **Assets**
 
@@ -100,7 +129,7 @@ Eine [Freiformtabelle](/help/analysis-workspace/visualizations/freeform-table/fr
 Eine Visualisierung vom Typ [Streudiagramm](/help/analysis-workspace/visualizations/scatterplot.md), die ein Streudiagramm der Asset-Ansichten im Vergleich zu den Asset-Konversionen zeigt.
 
 * **Welche Asset-Attribute tragen zu Konversionen bei?**
-Content Analytics nutzt KI und generative KI, um alle Asset-Metadaten automatisch zuzuweisen, z. B. Themen, Szenen, Vordergrundfarben usw. Ein Attribut ist ein von KI zugewiesenes Metadaten-Tag, das beschreibt, was in einem Asset oder Erlebnis vorhanden ist. Beispielsweise ist <code>foreground color: red</code> ein automatisch zugewiesenes Attribut. Mithilfe von Visualisierungen können Sie erkennen, welche Attribute Ihrer Assets am meisten zur Konversion beitragen.
+Content Analytics verwendet KI und GenAI, um jedes Asset [Metadaten](/help/content-analytics/report/components.md#asset-metadata) und [Attribute](/help/content-analytics/report/components.md#asset-attributes) automatisch zuzuweisen, z. B. Themen, Szenen, Vordergrundfarben und mehr. Ein Attribut ist ein von KI zugewiesenes Metadaten-Tag, das beschreibt, was in einem Asset oder Erlebnis vorhanden ist. Beispielsweise ist <code>foreground color: red</code> ein automatisch zugewiesenes Attribut. Mithilfe von Visualisierungen können Sie erkennen, welche Attribute Ihrer Assets am meisten zur Konversion beitragen.
 
   Das Panel besteht aus den folgenden Visualisierungen:
 
@@ -138,7 +167,7 @@ Eine Visualisierung vom Typ [Linie](/help/analysis-workspace/visualizations/line
 Eine [Freiformtabelle](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) mit den wichtigsten Erlebnis-Keywords basierend auf der ausgewählten Konversionsmetrik.
 
 * **Wo werden Assets auf meiner Site angezeigt?**
-Ein Panel, das aus einer Freiformtabelle besteht, in der angegeben ist, wo die am häufigsten angesehenen Assets auf Ihrer Site erscheinen.
+Ein Bedienfeld, das aus einer Freiformtabelle besteht, in der angegeben ist, wo die am häufigsten angezeigten Assets auf Ihrer Site erscheinen. Diese Analyse hilft Ihnen zu verstehen, welche Seiten oder Abschnitte am meisten von Ihren leistungsstärksten Assets profitieren und wo Sie die Platzierung optimieren können.
 
   Das Panel besteht aus einer Visualisierung:
 
