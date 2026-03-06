@@ -3,9 +3,9 @@ title: Aktuelle Versionshinweise zu Customer Journey Analytics
 description: Anzeigen der neuesten Versionshinweise zu Customer Journey Analytics
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 3d58f4dccdc7b9ea6f936cc924a30cc06b2317d1
+source-git-commit: fd8c539ae3bb0efc30a7fde7ff8d13a866263a91
 workflow-type: tm+mt
-source-wordcount: '1255'
+source-wordcount: '1291'
 ht-degree: 30%
 
 ---
@@ -20,6 +20,7 @@ Diese Versionshinweise beziehen sich auf den Veröffentlichungszeitraum vom Febr
 
 | Funktion und Beschreibung | [Rollout-Beginn](releases.md) | [Allgemeine Verfügbarkeit](releases.md) |
 | ----------- | -------: | ----:|
+| **Neugestaltung der Datensatzvorschau in Verbindungen**<p>Wenn Sie [Datensätze hinzufügen](/help/connections/create-connection.md#add-datasets) oder [bearbeiten](/help/connections/create-connection.md#edit-a-dataset) in einer personenbasierten Verbindung verbessern, können Sie Daten in der Vorschau anzeigen. Für das Zusammenfügen von aktivierten Datensätzen [ zusätzliche „Zusammenfügungsmetriken](/help/stitching/use-stitching-ui.md#stitching-metrics) und [ungültige IDs](/help/stitching/use-stitching-ui.md#bad-ids) verfügbar. | Samstag, 6. März 2026 | Samstag, 6. März 2026 |
 | **Zusätzliche Miniaturansichten und Vorschauen für Content Analytics**<p>Content Analytics-Miniaturansichten und -Vorschauen werden jetzt in Visualisierungen vom Typ „Balken“ (gestapelt), „Horizontalbalken“ (gestapelt) und „Streuung“ unterstützt. | Freitag, 5. März 2026 | TBD |
 | **Überschreibungen der Kopfzeile** <p>In Content Analytics können Sie einen Kopfzeilennamen und einen geheimen Kopfzeilenwert angeben. Dieser [Header überschreibt die Konfiguration](/help/content-analytics/config/guided.md#header-overrides) stellt sicher, dass Content Analytics benutzerdefinierte HTTP-Header sendet, um alle implementierten Bot-Erkennungs- oder Gate-Traffic-Technologien zu umgehen.</p> |  | Dienstag, 2. Februar 2026 |
 | **Kombinieren von Report Suites aus mehreren IMS-Organisationen**<p>Mit dem Analytics Source Connector können Sie Report Suites aus mehreren IMS-Organisationen kombinieren. Diese [Cross-IMS Data Mapping](/help/getting-started/aa-vs-cja/mapping-data-ims-orgs.md)-Funktion ermöglicht Unternehmen eine kombinierte Ansicht ihrer Kundendaten, auch wenn diese Kundendaten über mehrere IMS-Organisationen verteilt sind. <p>**Hinweis:** Diese Konfiguration ist nur verfügbar, wenn Sie eine Anfrage an die Adobe-Kundenunterstützung senden.</p> |  | Freitag, 12. Februar 2026 |

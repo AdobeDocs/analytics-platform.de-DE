@@ -1,14 +1,14 @@
 ---
 title: Zusammenfügung aktivieren
-description: Erfahren Sie, wie Sie in der Verbindungs-Benutzeroberfläche das Zusammenfügen aktivieren.
+description: Aktivieren der Identitätszuordnung für Ereignis-Datensätze in Customer Journey Analytics. Erfahren Sie, wie Sie in der Verbindungs-Benutzeroberfläche persistente IDs, Personen-IDs und Wiederholungsfenster konfigurieren, um Daten zusammenzufügen.
 solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: 9a1689d9-c1b7-42fe-9682-499e49843f76
-source-git-commit: 1744d625f2f18202fb7096b0fd904ee26399db34
+source-git-commit: b7b2a1f3eb1c149caf65ab3e4321e4f4347695cc
 workflow-type: tm+mt
-source-wordcount: '1150'
-ht-degree: 4%
+source-wordcount: '1724'
+ht-degree: 5%
 
 ---
 
@@ -58,7 +58,7 @@ Wenn Sie die Voraussetzungen erfüllen, sollten Sie einige Preflight-Prüfungen 
 
 
    * **Personen-ID**
-      * Stellen Sie bei diagrammbasiertem Stitching sicher, dass das Identitätsdiagramm Fragmente enthält, die ID-Werte aus dem ausgewählten persistenten ID-Namespace und dem Personen-ID-Namespace verknüpfen. Sie können einen Test ausführen, indem Sie zum [Experience Platform-Identitätsdiagramm-Viewer wechseln &#x200B;](https://experienceleague.adobe.com/de/docs/experience-platform/identity/features/identity-graph-viewer){target="_blank"} das Diagramm nach einigen persistenten ID-Testwerten abfragen. Überprüfen Sie, ob diese persistenten ID-Werte mit Personen-ID-Werten im Diagramm verknüpft sind.
+      * Stellen Sie bei diagrammbasiertem Stitching sicher, dass das Identitätsdiagramm Fragmente enthält, die ID-Werte aus dem ausgewählten persistenten ID-Namespace und dem Personen-ID-Namespace verknüpfen. Sie können einen Test ausführen, indem Sie zum [Experience Platform Identity Graph Viewer wechseln ](https://experienceleague.adobe.com/de/docs/experience-platform/identity/features/identity-graph-viewer){target="_blank"} das Diagramm nach einigen Beispielwerten für persistente IDs abfragen. Überprüfen Sie, ob diese persistenten ID-Werte mit Personen-ID-Werten im Diagramm verknüpft sind.
       * Fragen Sie für das feldbasierte Stitching 7 Tage Daten ab, bei denen das Feld für Ihre Personen-ID nicht null ist, und teilen Sie dies durch eine Abfrage von 7 Tagen Daten für alle Ereignisse in Ihrem Datensatz. Dieser Prozentsatz sollte idealerweise über 5 % liegen.
 
         Beispiel einer Abfrage, die Sie zur Überprüfung verwenden können:
@@ -87,6 +87,8 @@ Wenn Sie die Voraussetzungen erfüllen, sollten Sie einige Preflight-Prüfungen 
 
 ## Aktivieren der Identitätszuordnung {#enable-identity-stitching}
 
+Sie können die Identitätszuordnung aktivieren[ wenn Sie ](/help/connections/create-connection.md#add-datasets) Ereignis-Datensatz in [ personenbasierten Verbindung hinzufügen oder ](/help/connections/create-connection.md#edit-a-dataset) bearbeiten. Identitätszuordnung ist für kontobasierte Verbindungen nicht verfügbar.
+
 >[!CONTEXTUALHELP]
 >id="connection_changeto_identitygraph"
 >title="Änderung am Identitätsdiagramm"
@@ -96,12 +98,12 @@ Wenn Sie die Voraussetzungen erfüllen, sollten Sie einige Preflight-Prüfungen 
 >[!CONTEXTUALHELP]
 >id="connection_stitching_personid"
 >title="Personen-ID"
->abstract="Wählen Sie eine Personen-ID (die eindeutige Kennung für eine Person) aus den verfügbaren Identitäten aus. Wenn Sie diagrammbasiertes Stitching verwenden möchten, wählen Sie **[!UICONTROL Identitätsdiagramm]**."
+>abstract="Wählen Sie eine Personen-ID (die eindeutige Kennung für eine Person) aus den verfügbaren Identitäten aus. Wenn Sie diagrammbasierte Zuordnung verwenden möchten, wählen Sie **[!UICONTROL Identitätsdiagramm]** aus."
 
 >[!CONTEXTUALHELP]
 >id="connection_stitchingmetrics"
 >title="Zusammenfügen von Metriken"
->abstract="Die Zuordnungsmetriken werden anhand eines Beispielsatzes von Daten berechnet, die aus allen Daten stammen, die in den letzten sieben Tagen aufgenommen wurden.<br>Dies unterscheidet sich normalerweise von den Beispieldaten, die in der Tabelle **[!UICONTROL Vorschau]** verwendet werden."
+>abstract="Die Zuordnungsmetriken werden anhand eines Beispielsatzes von Daten berechnet, die aus allen Daten stammen, die in den letzten sieben Tagen aufgenommen wurden.<br>Dieser Beispieldatensatz unterscheidet sich in der Regel von den Beispieldaten, die in der Tabelle **[!UICONTROL Vorschau]** verwendet werden."
 
 >[!CONTEXTUALHELP]
 >id="connection_stitchingmetrics_gbs_personidcoverage"
@@ -121,12 +123,14 @@ Wenn Sie die Voraussetzungen erfüllen, sollten Sie einige Preflight-Prüfungen 
 
 >[!CONTEXTUALHELP]
 >id="connection_stitchingmetrics_badids"
->title="Ungültige IDs"
+>title="Fehlerhafte IDs"
 >abstract="Ungültige IDs sind ID-Werte, die sich stark auf Berichtsdaten auswirken."
->additional-url="https://experienceleague.adobe.com/de/docs/experience-cloud-kcs/kbarticles/ka-16444" text="Ungültige IDs"
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-16444" text="Fehlerhafte IDs"
 
 
-Um das Zusammenfügen zu aktivieren, gehen Sie im Abschnitt Ereignisdatensatz des Dialogfelds **[!UICONTROL Datensätze hinzufügen]** oder **[!UICONTROL Datensatz bearbeiten]** folgendermaßen vor:
+### Datensatzeinstellungen
+
+Um das Zusammenfügen zu aktivieren, gehen Sie im Abschnitt **[!UICONTROL Datensatzeinstellungen]** des Dialogfelds **[!UICONTROL Datensätze hinzufügen]** oder **[!UICONTROL Datensatz bearbeiten]** folgendermaßen vor:
 
 ![Optionen für die Identitätszuordnung beim Aktivieren der Identitätszuordnung](assets/identity-stitching-ui.png)
 
@@ -158,18 +162,74 @@ Um das Zusammenfügen zu aktivieren, gehen Sie im Abschnitt Ereignisdatensatz de
    >Stellen Sie sicher, dass Sie berechtigt sind, das Identitätsdiagramm zu verwenden.
    >
 
-   Zuvor wird das Dialogfeld **[!UICONTROL Änderung am Identitätsdiagramm]** angezeigt, um sicherzustellen, dass Sie die Einrichtung des Identitätsdiagramms für den Datensatz als Teil der [Diagrammbasierten Voraussetzungen“ abgeschlossen &#x200B;](/help/stitching/gbs.md#prerequisites), bevor Sie das Identitätsdiagramm für das Zusammenfügen verwenden. Wählen Sie **[!UICONTROL Weiter]** aus, um fortzufahren.
+   Zuvor wird das Dialogfeld **[!UICONTROL Änderung am Identitätsdiagramm]** angezeigt, um sicherzustellen, dass Sie die Einrichtung des Identitätsdiagramms für den Datensatz abgeschlossen haben. Diese Einrichtung ist Teil der [Diagrammbasierten Voraussetzungen](/help/stitching/gbs.md#prerequisites) bevor Sie das Identitätsdiagramm zum Zusammenfügen verwenden können. Wählen Sie **[!UICONTROL Weiter]** aus, um fortzufahren.
 
    * Wählen Sie einen Namespace aus dem **[!UICONTROL Namespace]** Dropdown-Menü aus.
 
-
 1. Wählen Sie im Dropdown-Menü **[!UICONTROL Wiederholungsfenster]** ein Wiederholungsfenster aus. Die verfügbaren Optionen hängen vom Customer Journey Analytics-Paket ab, zu dem Sie berechtigt sind.
 
-Nachdem Sie eine Verbindung gespeichert haben, wird der Zuordnungsprozess für Datensätze, die für das Zuordnen aktiviert sind, gestartet, wenn die Aufnahme von Daten für diese Datensätze beginnt.
+1. Wählen Sie **[!UICONTROL Weiter]** aus, um eine Vorschau des Ereignis-Datensatzes anzuzeigen, der zugeordnet werden soll.
+
+
+### Datensatzvorschau
+
+Zusätzlich zur standardmäßigen Benutzeroberfläche **[!UICONTROL Datensatzvorschau]** stehen beim [Hinzufügen](/help/connections/create-connection.md#add-datasets) oder [Bearbeiten](/help/connections/create-connection.md#edit-a-dataset) von Datensätzen in einer personenbasierten Verbindung zwei zusätzliche Informationsbereiche zur Verfügung.
+
+>[!NOTE]
+>Für Kunden, die Customer Journey Analytics auf AWS bereitgestellt haben, steht diese Funktion zur Veröffentlichung aus.
+>
+
+![Optionen für die Identitätszuordnung beim Aktivieren der Identitätszuordnung](assets/identity-stitching-ui-preview.png)
+
+#### Zusammenfügen von Metriken
+
+
+
+**[!UICONTROL Zuordnungsmetriken]** werden anhand eines Beispielsatzes von Daten berechnet, die aus allen Daten stammen, die in den letzten sieben Tagen aufgenommen wurden. Dieser Beispieldatensatz unterscheidet sich in der Regel von den Beispieldaten, die in der Tabelle **[!UICONTROL Vorschau]** verwendet werden. Zuordnungsmetriken bieten Details für:
+
+* **[!UICONTROL Personen-ID-Abdeckung]**: Die Abdeckung der ausgewählten Personen-ID, die während des Zuordnungsprozesses (Live und Wiederholung) zur Identifizierung verwendet wird.
+   * Für die besten feldbasierten Zuordnungsergebnisse sollte bei mindestens einem Ereignis für jede persistente ID (Geräteinformationen) eine Personen-ID (Benutzerinformationen) gesendet werden.
+   * Für die besten diagrammbasierten Zuordnungsergebnisse sollte im Identitätsdiagramm für jede persistente ID eine Beziehung (persistente ID, Personen-ID) vorhanden sein.
+
+  Die Personen-ID-Abdeckung wird als Prozentsatz angezeigt und mit den Empfehlungen bei einer stabilen Entwicklung oder in einer Produktionseinrichtung verglichen. Je höher dieser Abdeckungswert ist, desto bessere Stitching-Ergebnisse werden mit der ausgewählten Personen-ID erzielt.
+
+* **[!UICONTROL Persistente ID-Abdeckung]**: Dieser Wert wird während des Zuordnungsprozesses (Live und Wiederholung) zur Identifizierung verwendet, falls ein Personen-ID-Wert nicht erkannt werden kann. Ereignisse ohne persistente ID und ohne Personen-ID werden aus den Daten gelöscht. Um optimale Ergebnisse beim Zusammenfügen zu erzielen, sollte bei allen Ereignissen eine persistente ID vorhanden sein.
+
+  Die persistente ID-Abdeckung wird als Prozentsatz angezeigt und mit dem verglichen, was bei einer stabilen Entwicklung oder in einer Produktionseinrichtung als Minimum empfohlen wird.
+
+
+#### Fehlerhafte IDs
+
+>[!INFO]
+>
+>Fehlerhafte IDs werden in der Customer Journey Analytics-Benutzeroberfläche auch als BAVIDs bezeichnet.
+> 
+
+In Customer Journey Analytics ist eine ungültige ID ein Bezeichner:
+
+* mit einem bestimmten ID-Wert, der entweder aus einem persistenten ID- oder einem Personen-ID-Feld in zusammenfügbaren Datensätzen stammt, **und**
+* ist auf mehr als eine Million (1.000.000) Ereignisse in den Verbindungsdaten innerhalb eines Monats zurückzuführen.
+
+Wenn ein ID-Wert als ungültige ID markiert wird, werden alle zukünftigen Ereignisse, die diesen ID-Wert enthalten, aus den Verbindungsdaten verworfen und nicht im Bericht angezeigt.
+
+Beispiele für Anwendungsfälle mit ungültigen IDs:
+
+* Das Feld Personen-ID enthält benutzerdefinierte Werte oder Platzhalterwerte (z. B. `undefined`). Solche Werte können sich auch auf [Zuordnung und Qualität der Berichtsdaten](/help/stitching/faq.md#undefined-person-id-values) auswirken.
+* Wenn sich in einer feldbasierten Stitching-Konfiguration mehrere Personen ein Gerät teilen und die Gesamtzahl der Transitionen zwischen Benutzerinnen und Benutzern 50.000 überschreitet. In diesem Szenario stoppt der Zuordnungsprozess die Verwendung der Personen-ID-Informationen für dieses Gerät und verwendet stattdessen nur persistente ID-Informationen. Folglich werden alle Datensatzereignisse von diesem Gerät an Verbindungsdaten mit der persistenten ID-Identität gesendet, was mit hoher Wahrscheinlichkeit zu einer Situation mit schlechten IDs führt.
+
+
+>[!NOTE]
+>Die **[!UICONTROL Zuordnungsmetriken]** einschließlich **[!UICONTROL ungültiger IDs]** werden auf Grundlage eines begrenzten Satzes von Daten berechnet. Informationen zum Identifizieren fehlerhafter IDs für einen Datensatz, den Sie zum Zusammenfügen verwenden möchten, finden Sie in der Technote [Fehlerhafte IDs](/help/technotes/badids.md).
+>
+
+
+### Speichern
+
+Nachdem Sie eine Verbindung gespeichert haben, wird der Zuordnungsprozess für aktivierte Datensätze gestartet, sobald die Aufnahme von Daten für diese Datensätze beginnt.
 
 >[!CAUTION]
 >
->Bei Datensätzen, die für das Zusammenfügen in der Verbindungsschnittstelle aktiviert sind, wird der Aufstockungsstatus sofort und fälschlicherweise als ![Status grün](/help/assets/icons/StatusGreen.svg) **[!UICONTROL _x _Aufstockungen abgeschlossen]**&#x200B;für die Anzahl der abgeschlossenen Aufstockungen gemeldet. Verwenden Sie andere Möglichkeiten, um zu überprüfen, ob Daten aus dem zusammengefügten Datensatz aufgestockt werden.
+>Bei Datensätzen, die für das Zusammenfügen in der Verbindungsschnittstelle aktiviert sind, wird der Aufstockungsstatus sofort und fälschlicherweise als ![Status grün](/help/assets/icons/StatusGreen.svg) **[!UICONTROL _x _Aufstockungen abgeschlossen]**für die Anzahl der abgeschlossenen Aufstockungen gemeldet. Verwenden Sie andere Möglichkeiten, um zu überprüfen, ob Daten aus dem zusammengefügten Datensatz aufgestockt werden.
 >
 
 
