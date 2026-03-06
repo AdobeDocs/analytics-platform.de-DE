@@ -4,10 +4,10 @@ description: Erfahren Sie mehr über erweiterte Funktionen berechneter Metriken.
 feature: Calculated Metrics
 exl-id: 3689a499-817d-4a59-8a1f-5f7bda297268
 role: User
-source-git-commit: a5e07891b23184dfe5d4c3f1b2c4b36b6884fb72
+source-git-commit: 76b4ac60c8e3ae2dd62f86a35bdf1c582f60b10f
 workflow-type: tm+mt
-source-wordcount: '5294'
-ht-degree: 98%
+source-wordcount: '5286'
+ht-degree: 97%
 
 ---
 
@@ -116,7 +116,7 @@ Ein gängiger Anwendungsfall für diese Funktion ist, wenn Sie eine ungefähre A
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL ARC SINE(metric)]**
 
 
-[!BADGE Zeile &#x200B;]{type="Neutral"} Gibt den Arkussinus (die Umkehrung des Sinus) einer Zahl zurück. Der Arcussinus ist der Winkel, dessen Sinus eine gegebene Zahl ist. Der zurückgegebene Winkel wird in Radiant im Bereich -pi/2 bis pi/2 angegeben. Um den Arkussinus in Grad auszudrücken, multiplizieren Sie das Ergebnis mit 180/PI().
+[!BADGE Zeile ]{type="Neutral"} Gibt den Arkussinus (die Umkehrung des Sinus) einer Zahl zurück. Der Arcussinus ist der Winkel, dessen Sinus eine gegebene Zahl ist. Der zurückgegebene Winkel wird in Radiant im Bereich -pi/2 bis pi/2 angegeben. Um den Arkussinus in Grad auszudrücken, multiplizieren Sie das Ergebnis mit 180/PI().
 
 
 | Argument | Beschreibung |
@@ -433,14 +433,14 @@ Gleich. Die Ausgabe ist entweder 0 (False) oder 1 (True).
 >[!CONTEXTUALHELP]
 >id="functions-ls-corr-exp"
 >title="Exponentielle Regression: Korrelationskoeffizient"
->abstract="Exponentielle Regression: Y = a exp(X) + b. Gibt den Korrelationskoeffizienten zurück."
+>abstract="Exponentielle Regression: Y = b * exp(aX). Gibt den Korrelationskoeffizienten zurück."
 
 <!-- markdownlint-enable MD034 -->
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL EXPONENTIAL REGRESSION: CORRELATION COEFFICIENT(metric_X, metric_Y, include_zeros)]**
 
 
-[!BADGE Tabelle]{type="Neutral"} Exponentielle Regression: Y = a exp(X) + b. Gibt den Korrelationskoeffizienten zurück.
+[!BADGE Tabelle]{type="Neutral"} Exponentielle Regression: Y = b * exp(aX). Gibt den Korrelationskoeffizienten zurück.
 
 
 | Argument | Beschreibung |
@@ -456,14 +456,14 @@ Gleich. Die Ausgabe ist entweder 0 (False) oder 1 (True).
 >[!CONTEXTUALHELP]
 >id="functions-ls-pred-exp"
 >title="Exponentielle Regression: Vorhersage für Y"
->abstract="Exponentielle Regression: Y = a exp(X) + b. Gibt Y zurück."
+>abstract="Exponentielle Regression: Y = b * exp(aX). Gibt Y zurück."
 
 <!-- markdownlint-enable MD034 -->
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL EXPONENTIAL REGRESSION: PREDICTED Y(metric_X, metric_Y, include_zeros)]**
 
 
-[!BADGE Zeile]{type="Neutral"} Exponentielle Regression: Y = a exp(X) + b. Gibt Y zurück.
+[!BADGE Zeile]{type="Neutral"} Exponentielle Regression: Y = b * exp(aX). Gibt Y zurück.
 
 
 | Argument | Beschreibung |
@@ -480,14 +480,14 @@ Gleich. Die Ausgabe ist entweder 0 (False) oder 1 (True).
 >[!CONTEXTUALHELP]
 >id="functions-ls-intercept-exp"
 >title="Exponentielle Regression: Schnittpunkt"
->abstract="Exponentielle Regression: Y = a exp(X) + b. Gibt b zurück."
+>abstract="Exponentielle Regression: Y = b * exp(aX). Gibt b zurück."
 
 <!-- markdownlint-enable MD034 -->
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL EXPONENTIAL REGRESSION: INTERCEPT(metric_X, metric_Y, include_zeros)]**
 
 
-[!BADGE Tabelle]{type="Neutral"} Exponentielle Regression: Y = a exp(X) + b. Gibt b zurück.
+[!BADGE Tabelle]{type="Neutral"} Exponentielle Regression: Y = b * exp(aX). Gibt b zurück.
 
 | Argument | Beschreibung |
 |---|---|
@@ -503,14 +503,14 @@ Gleich. Die Ausgabe ist entweder 0 (False) oder 1 (True).
 >[!CONTEXTUALHELP]
 >id="functions-ls-slope-exp"
 >title="Exponentielle Regression: Steigung"
->abstract="Exponentielle Regression: Y = a exp(X) + b. Gibt a zurück."
+>abstract="Exponentielle Regression: Y = b * exp(aX). Gibt a zurück."
 
 <!-- markdownlint-enable MD034 -->
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL EXPONENTIAL REGRESSION: SLOPE(metric_X, metric_Y, include_zeros)]**
 
 
-[!BADGE Tabelle]{type="Neutral"} Exponentielle Regression: Y = a exp(X) + b. Gibt a zurück.
+[!BADGE Tabelle]{type="Neutral"} Exponentielle Regression: Y = b * exp(aX). Gibt a zurück.
 
 
 | Argument | Beschreibung |
