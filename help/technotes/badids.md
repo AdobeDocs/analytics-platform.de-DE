@@ -19,7 +19,7 @@ Dieser Artikel bietet Kontext zu ungültigen IDs und beschreibt, wie Sie mithilf
 
 >[!INFO]
 >
->Fehlerhafte IDs werden in der Customer Journey Analytics-Benutzeroberfläche auch als BAVIDs bezeichnet (stammen von [Analytics BAVID](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-16444)).
+>Fehlerhafte IDs werden in der Customer Journey Analytics-Benutzeroberfläche auch als BAVIDs bezeichnet (stammen von [Analytics BAVID](https://experienceleague.adobe.com/de/docs/experience-cloud-kcs/kbarticles/ka-16444)).
 >
 
 ## Definition
