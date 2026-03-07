@@ -468,7 +468,7 @@ Gibt die Anzahl der Zeilen in einer bestimmten Spalte zurück (die Anzahl der in
 
 **Anwendungsfall** Zählen Sie die Gesamtzahl der in einer Aufschlüsselung oder einem Datensatz zurückgegebenen Zeilen, z. B. die Anzahl der Tage, Kampagnen oder Produkte, die in einem Bericht enthalten sind. Auf diese Weise lässt sich erkennen, wie viele Elemente zu Ihrer Analyse beitragen.
 
-**Im Generator für berechnete Metriken**: Wenden Sie **Zeilenanzahl** an, um die Gesamtzahl der Zeilen in der aktuellen Aufschlüsselung oder im aktuellen Segment zurückzugeben. Wenn Sie beispielsweise „Umsatz ** nach *Produkt*, **Zeilenanzahl** anzeigen, wird die Anzahl der angezeigten Produkte zurückgegeben.
+**Im Generator für berechnete Metriken**: Wenden Sie **Zeilenanzahl** an, um die Gesamtzahl der Zeilen in der aktuellen Aufschlüsselung oder im aktuellen Segment zurückzugeben. Wenn Sie beispielsweise „Umsatz **&#x200B; nach *Produkt*, &#x200B;** Zeilenanzahl** anzeigen, wird die Anzahl der angezeigten Produkte zurückgegeben.
 
 >[!TIP]
 >
