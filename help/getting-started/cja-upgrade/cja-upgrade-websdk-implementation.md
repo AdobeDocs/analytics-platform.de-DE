@@ -7,8 +7,8 @@ feature: Basics
 exl-id: 94a2bf2f-ad84-4f35-af8f-b8a5d9e5c607
 source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '350'
+ht-degree: 100%
 
 ---
 
@@ -71,4 +71,4 @@ Es werden drei Möglichkeiten unterstützte, um das Adobe Experience Platform-We
 
 * [NPM](https://experienceleague.adobe.com/de/docs/experience-platform/web-sdk/install/npm): Installieren Sie das Web-SDK mithilfe des NPM-Paket-Managers auf Ihrer Website.
 
-Weitere Informationen finden Sie unter [Überblick über die Web-SDK-Installation &#x200B;](https://experienceleague.adobe.com/de/docs/experience-platform/web-sdk/install/overview) im Web SDK-Handbuch in Experience Platform.
+Weitere Informationen finden Sie unter [Überblick über die Web-SDK-Installation ](https://experienceleague.adobe.com/de/docs/experience-platform/web-sdk/install/overview) im Web SDK-Handbuch in Experience Platform.

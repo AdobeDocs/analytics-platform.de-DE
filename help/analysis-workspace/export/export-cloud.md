@@ -8,7 +8,7 @@ role: User
 source-git-commit: c4a7884ae05d9290b2974483474ba8326492d014
 workflow-type: tm+mt
 source-wordcount: '3234'
-ht-degree: 55%
+ht-degree: 56%
 
 ---
 
@@ -76,7 +76,7 @@ Verwenden Sie den folgenden Prozess beim Exportieren vollständiger Tabellen in 
 >[!CONTEXTUALHELP]
 >id="export-manifest"
 >title="Manifestdatei einschließen"
->abstract="Bei Auswahl dieser Option wird eine Manifestdatei in jeden erfolgreichen Exportversand eingeschlossen. Mit der Manifestdatei können Sie bestätigen, dass alle Dateien erfolgreich bereitgestellt wurden. "
+>abstract="Wenn diese Option ausgewählt wird, ist eine Manifestdatei in jedem erfolgreichen Exportversand enthalten. Mit der Manifestdatei können Sie bestätigen, dass alle Dateien erfolgreich bereitgestellt wurden. "
 
 <!-- markdownlint-enable MD034 -->
 
@@ -104,7 +104,7 @@ Verwenden Sie den folgenden Prozess beim Exportieren vollständiger Tabellen in 
 >[!CONTEXTUALHELP]
 >id="cja-export-file-format"
 >title="Dateiformat"
->abstract="Bei der Auswahl des Parquet-Dateiformats werden einige in Komponentennamen enthaltene Sonderzeichen durch einen Unterstrich (_) ersetzt. Siehe den unten stehenden Link für eine vollständige Liste der ersetzten Zeichen."
+>abstract="Bei Auswahl des Parquet-Dateiformats werden einige in Komponentennamen enthaltene Sonderzeichen durch einen Unterstrich (_) ersetzt. Eine vollständige Liste der ersetzten Zeichen finden Sie unter dem unten stehenden Link."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -219,11 +219,11 @@ Die folgenden Funktionen werden nicht unterstützt und automatisch aus vollstän
 
 Die folgenden Komponenten werden nicht unterstützt und Analysis Workspace fordert Sie auf, sie aus Ihrer Tabelle zu entfernen, wenn Sie einen vollständigen Tabellenexport durchführen:
 
-* Berechnete Metriken, die nicht unterstützte Funktionen in der Metrikdefinition verwenden (weitere Informationen finden Sie unter [Nicht unterstützte &#x200B;](#unsupported-calculated-metric-functions) Metrikfunktionen)
-* Komponenten, die von einem Administrator am Export gehindert wurden (weitere Informationen finden Sie im Abschnitt *Segment zu Data Governance* Richtlinien in [Kennzeichnungen und &#x200B;](/help/data-views/data-governance.md))
+* Berechnete Metriken, die nicht unterstützte Funktionen in der Metrikdefinition verwenden (weitere Informationen finden Sie unter [Nicht unterstützte ](#unsupported-calculated-metric-functions) Metrikfunktionen)
+* Komponenten, die von einem Administrator am Export gehindert wurden (weitere Informationen finden Sie im Abschnitt *Segment zu Data Governance* Richtlinien in [Kennzeichnungen und ](/help/data-views/data-governance.md))
 * Jede Dimension, die alle der folgenden Kriterien erfüllt:
    * Er wird aus einem Feld erstellt, das Teil eines [Arrays von Objekten](/help/use-cases/object-arrays.md) ist (ähnlich wie Variablen mit mehreren Werten in Adobe Analytics).
-   * Hat &quot;[&#x200B; aktiviert](/help/data-views/component-settings/persistence.md).
+   * Hat &quot;[ aktiviert](/help/data-views/component-settings/persistence.md).
    * Verwendet keine [Bindungsdimension](/help/use-cases/data-views/binding-dimensions-metrics.md).
 * Mehrere Dimensionen, die aus Feldern stammen, die auf verschiedene [Arrays von Objekten](/help/use-cases/object-arrays.md) verweisen. (Mehrere Dimensionen, die auf dasselbe Array von Objekten verweisen, sind zulässig.)
 * Mehr als 10 Dimensionen und 10 Metriken pro Bericht (bis zu 10 Dimensionen und 10 Metriken werden unterstützt)

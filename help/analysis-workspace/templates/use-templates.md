@@ -7,7 +7,7 @@ exl-id: d61f215d-9089-4014-9c5a-97f5d7134f34
 source-git-commit: 02aa4b4c9b357efca3d620bb72d8a505153bc079
 workflow-type: tm+mt
 source-wordcount: '21006'
-ht-degree: 96%
+ht-degree: 97%
 
 ---
 
@@ -486,7 +486,7 @@ Die folgenden Vorlagen sind verfügbar:
 
 >[!CONTEXTUALHELP]
 >id="template--audienceOverview"
->title="Anzeigen, welche Zielgruppen unter den Personen dargestellt werden, die Ihre Site besuchen."
+>title="Zeigen Sie an, welche Zielgruppen unter den Personen vertreten sind, die Ihre Site besuchen."
 >abstract="**Auf diese Weise** Sie allgemeine Informationen zu den Zielgruppen, wo die Zielgruppen ihren Ursprung haben (RTCDP, Customer Journey Analytics usw.), Zielgruppenüberschneidungen und mehr besser verstehen.<br/>**Je nachdem, was Sie lernen** können Sie beliebig viele Dinge tun, z. B. die Daten verwenden, um sich auf Marketing-Maßnahmen für diese spezifischen Zielgruppen zu konzentrieren, oder maßgeschneiderte Erlebnisse für Kunden erstellen, die mehrere Zielgruppen umfassen.<br/>Diese Vorlage verwendet die Dimensionen Zielgruppenname, Zielgruppenherkunft, Name der ausgestiegenen Zielgruppe und Ursprung der ausgestiegenen Zielgruppe."
 
 <!--AA only-->
@@ -654,7 +654,7 @@ Die folgenden Vorlagen sind verfügbar:
 
 | Vorlagenname | Warum diese Vorlage verwenden?<!-- What do you do with it? What can it help you learn? and What are the potential actions? --> |
 | --- | --- |
-| **[!UICONTROL Zielgruppenübersicht]** | Anzeigen, welche Zielgruppen unter den Personen dargestellt werden, die Ihre Site besuchen.<p>**Auf diese Weise** Sie allgemeine Informationen zu den Zielgruppen, wo die Zielgruppen ihren Ursprung haben (RTCDP, Customer Journey Analytics usw.), Zielgruppenüberschneidungen und mehr besser verstehen.</p><p>**Je nachdem, was Sie lernen** können Sie beliebig viele Dinge tun, z. B. die Daten verwenden, um sich auf Marketing-Maßnahmen für diese spezifischen Zielgruppen zu konzentrieren, oder maßgeschneiderte Erlebnisse für Kunden erstellen, die mehrere Zielgruppen umfassen.</p><p>Diese Vorlage verwendet die Dimensionen Zielgruppenname, Zielgruppenherkunft, Name der ausgestiegenen Zielgruppe und Ursprung der ausgestiegenen Zielgruppe.</p><p>Weitere Informationen finden Sie unter [&#x200B; von Experience Platform-Zielgruppen in Customer Journey Analytics](/help/connections/audience-analysis/analyze-audiences.md).</p> |
+| **[!UICONTROL Zielgruppenübersicht]** | Zeigen Sie an, welche Zielgruppen unter den Personen vertreten sind, die Ihre Site besuchen.<p>**Auf diese Weise** Sie allgemeine Informationen zu den Zielgruppen, wo die Zielgruppen ihren Ursprung haben (RTCDP, Customer Journey Analytics usw.), Zielgruppenüberschneidungen und mehr besser verstehen.</p><p>**Je nachdem, was Sie lernen** können Sie beliebig viele Dinge tun, z. B. die Daten verwenden, um sich auf Marketing-Maßnahmen für diese spezifischen Zielgruppen zu konzentrieren, oder maßgeschneiderte Erlebnisse für Kunden erstellen, die mehrere Zielgruppen umfassen.</p><p>Diese Vorlage verwendet die Dimensionen Zielgruppenname, Zielgruppenherkunft, Name der ausgestiegenen Zielgruppe und Ursprung der ausgestiegenen Zielgruppe.</p><p>Weitere Informationen finden Sie unter [ von Experience Platform-Zielgruppen in Customer Journey Analytics](/help/connections/audience-analysis/analyze-audiences.md).</p> |
 | [!UICONTROL **Erstmalige vs. wiederkehrende Besuchende**] | Zeigen Sie einen Vergleich zwischen erstmaligen und wiederkehrenden Besuchenden an. <p>**Dies kann Ihnen helfen**, die Effektivität Ihrer Site bei der Kundenbindung oder die Rate, mit der Sie neue Kundschaft gewinnen, besser zu verstehen.</p><p>**Basierend auf Ihren Erkenntnissen können Sie** eine Reihe von Schritten ausführen, z. B. erstmaligen Besuchenden Anreize für zukünftige Käufe anbieten, um sie zur Rückkehr zu bewegen.</p><!-- This template uses the --> |
 | **Personen-ID** | Zeigen Sie das individuelle Benutzerverhalten über verschiedene Kanäle hinweg an.<p>**Dies kann Ihnen helfen**, die gesamte Customer Journey und alle Interaktionen Touchpoint-übergreifend besser zu verstehen.</p><p>**Basierend auf Ihren Erkenntnissen können Sie** eine Reihe von Schritten ausführen, z. B. die Marketing-Maßnahmen genauer auf Benutzervorlieben ausrichten.</p><!-- This template uses the --> |
 | **Geo-Länder** | Zeigen Sie das Land an, aus dem die Personen stammen, die Ihre Site besuchen.<p>**Dies kann Ihnen helfen**, besser zu verstehen, aus welchen Ländern die meisten Personen stammen, die Ihre Site besuchen.</p><p>**Basierend auf Ihren Erkenntnissen können Sie** eine Reihe von Schritten ausführen, z. B. Daten nutzen, um sich auf Marketing-Maßnahmen in diesen Ländern zu konzentrieren, oder sicherstellen, dass Ihr Site-Erlebnis in Ländern mit unterschiedlichen Hauptsprachen optimal ist.</p><p>Diese Vorlage verwendet die Dimension „Länder“. </p> |
@@ -1075,7 +1075,7 @@ Die folgenden Vorlagen sind verfügbar:
 
 >[!CONTEXTUALHELP]
 >id="template--brand-concierge--meeting"
->title="Verfolgen Sie den gesamten Lebenszyklus von B2B-Besprechungsanfragen. Überwachen Sie Konversionsraten, Beraterleistung und identifizieren Sie Ihre effektivsten Lead-Generierungskanäle."
+>title="Verfolgen Sie den gesamten Lebenszyklus von B2B-Besprechungsanfragen. Überwachen Sie Konversionsraten sowie die Beraterleistung und identifizieren Sie Ihre effektivsten Kanäle für die Lead-Generierung."
 >abstract="**Auf diese Weise können Sie** Konversionsraten von Meetings verfolgen, leistungsstarke Team-Mitglieder identifizieren, saisonale Trends im Buchungsverhalten verstehen und herausfinden, welche Seiten die wertvollsten Meetinganfragen generieren.<br/>**Auf der Grundlage Ihrer Erkenntnisse können** beliebig viele Dinge tun, z. B. Ihren Besprechungsanfrageprozess optimieren, Ressourcen auf konversionsstarke Seiten umverteilen, zielgerichtete Schulungen für Berater mit niedrigeren Buchungsraten entwickeln oder neue Strategien zur Reduzierung verpasster Meetings implementieren."
 
 | Vorlagenname | Warum diese Vorlage verwenden?<!-- What do you do with it? What can it help you learn? and What are the potential actions? --> |
@@ -1115,17 +1115,17 @@ Die folgenden Vorlagen sind verfügbar:
 | [!UICONTROL **Aktivität der B2B-Käufergruppe**] | Visualisieren Sie die Aktivitäten der Käufergruppen innerhalb jedes Kundenkontos, um die Marketing-Aktivitäten für Kundenkonten und Käufergruppen zu optimieren.<p>**Dies kann Ihnen helfen**, zu visualisieren, welche Käufergruppen und welche Personen innerhalb dieser Käufergruppen am aktivsten sind, und Lücken in der Gruppenbeteiligung aufzuzeigen.</p><p>**Basierend auf Ihren Erkenntnissen können Sie** verschiedene Maßnahmen ergreifen, z. B. versuchen, mehr mit Personen in Käufergruppen zu interagieren, die nicht beteiligt zu sein scheinen.</p> |
 
 
-### Mix Modeler-Vorlagen {#mix-modeler-templates}
+### Vorlagen für Mix Modeler {#mix-modeler-templates}
 
 Die folgenden Vorlagen sind verfügbar:
 
 | Vorlagenname | Warum diese Vorlage verwenden?<!-- What do you do with it? What can it help you learn? and What are the potential actions? --> |
 | --- | --- |
-| [!UICONTROL **Inkrementelle Mix Modeler-Modelleinblicke**] | Einblicke aus ausgewählten, von Mix Modeler generierten Modellen anzeigen.<p>**Dies kann Ihnen helfen** die inkrementellen Einblicke aus Modellen besser zu verstehen, die in Mix Modeler generiert wurden. <p>**Basierend auf diesen Einblicken** können Sie:<ul><li>Visualisieren und Quantifizieren der Wirkung der Marketing-Aktivitäten Ihres Unternehmens.</li><li>Ermitteln Sie, welche Kanäle leistungsstark sind.</li><li>Ermitteln Sie, welche Kanäle möglicherweise optimiert werden müssen.</li></ul></p> |
+| [!UICONTROL **Inkrementelle Mix Modeler-Modelleinblicke**] | Zeigen Sie Erkenntnisse ausgewählter Modelle an, die von Mix Modeler generiert wurden.<p>**Dies kann Ihnen helfen** die inkrementellen Einblicke aus Modellen besser zu verstehen, die in Mix Modeler generiert wurden. <p>**Basierend auf diesen Einblicken** können Sie:<ul><li>Visualisieren und quantifizieren Sie die Auswirkungen der Marketing-Maßnahmen Ihres Unternehmens.</li><li>Identifizieren Sie, welche Kanäle besonders leistungsstark sind.</li><li>Identifizieren Sie, welche Kanäle möglicherweise optimiert werden müssen.</li></ul></p> |
 
 <!-- CJA only -->
 
 >[!CONTEXTUALHELP]
 >id="template--mixmodeler-incremental-models-insights"
->title="Einblicke aus ausgewählten, von Mix Modeler generierten Modellen anzeigen."
->abstract="**Dies kann Ihnen helfen** die inkrementellen Einblicke aus Modellen besser zu verstehen, die in Mix Modeler generiert wurden. <br/>**Basierend auf diesen Einblicken** können Sie:<ul><li>Visualisieren und Quantifizieren der Wirkung der Marketing-Aktivitäten Ihres Unternehmens.</li><li>Ermitteln Sie, welche Kanäle leistungsstark sind.</li><li>Ermitteln Sie, welche Kanäle möglicherweise optimiert werden müssen.</li></ul>"
+>title="Zeigen Sie Erkenntnisse ausgewählter Modelle an, die von Mix Modeler generiert wurden."
+>abstract="**Dies kann Ihnen helfen** die inkrementellen Einblicke aus Modellen besser zu verstehen, die in Mix Modeler generiert wurden. <br/>**Basierend auf diesen Einblicken** können Sie:<ul><li>Visualisieren und quantifizieren Sie die Auswirkungen der Marketing-Maßnahmen Ihres Unternehmens.</li><li>Identifizieren Sie, welche Kanäle besonders leistungsstark sind.</li><li>Identifizieren Sie, welche Kanäle möglicherweise optimiert werden müssen.</li></ul>"
