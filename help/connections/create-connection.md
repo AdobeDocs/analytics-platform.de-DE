@@ -179,7 +179,7 @@ Beim Workflow für die Erstellung und Bearbeitung von Verbindungen können alle 
 
 >[!BEGINSHADEBOX]
 
-Siehe ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Verbinden mit Datenquellen](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/connections/connecting-customer-journey-analytics-to-data-sources-in-platform){target="_blank"} für ein Demovideo.
+Siehe ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Verbinden mit Datenquellen](https://experienceleague.adobe.com/de/docs/customer-journey-analytics-learn/tutorials/connections/connecting-customer-journey-analytics-to-data-sources-in-platform){target="_blank"} für ein Demovideo.
 
 >[!ENDSHADEBOX]
 
@@ -959,5 +959,5 @@ Diese Berechnung wird für jeden Datensatz in der Verbindung durchgeführt.
 >[!MORELIKETHIS]
 >
 >* [Datenaufnahme – Überblick](/help/data-ingestion/data-ingestion.md)
->* Blog: [Verwenden von Ereignis-, Lookup- und Profildatensätzen in Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/adobe-analytics-3/how-to-leverage-event-lookup-and-profile-datasets-in-adobe-customer-journey-analytics-12699)
+>* Blog: [Verwenden von Ereignis-, Lookup- und Profildatensätzen in Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/adobe-analytics-3/how-to-leverage-event-lookup-and-profile-datasets-in-adobe-customer-journey-analytics-12699?profile.language=de)
 
