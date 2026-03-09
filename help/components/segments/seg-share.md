@@ -20,7 +20,7 @@ Im [Segment-Manager](seg-manage.md) können Sie Segmente freigeben. Abhängig vo
 
 Freigeben eines oder mehrerer Segmente:
 
-1. Wählen [ im ](seg-manage.md)-Manager eines oder mehrere der Segmente aus, die Sie freigeben möchten.
+1. Wählen [&#x200B; im &#x200B;](seg-manage.md)-Manager eines oder mehrere der Segmente aus, die Sie freigeben möchten.
 1. Wählen Sie in der Aktionsleiste ![Freigeben](/help/assets/icons/ShareAlt.svg) **[!UICONTROL Freigeben]** aus.
 1. Im Dialogfeld **[!UICONTROL Segmente freigeben]**:
 
@@ -32,13 +32,13 @@ Freigeben eines oder mehrerer Segmente:
 
    1. Wählen Sie **[!UICONTROL Speichern]** aus, um die Segmente freizugeben. Wählen Sie zum Abbrechen **[!UICONTROL Abbrechen]** aus.
 
-Wenn Sie Zugriff auf freigegebene Segmente haben, können Sie diese in Projekten oder als Teil der [Einstellungen einer Datenansicht) ](/help/data-views/session-settings.md).
+Wenn Sie Zugriff auf freigegebene Segmente haben, können Sie diese in Projekten oder als Teil der [Einstellungen einer Datenansicht) &#x200B;](/help/data-views/session-settings.md).
 
 ## Best Practices
 
 Im Folgenden finden Sie Best Practices für die Freigabe von Segmenten und für die Freigabe von Segmenten.
 
-* Geben Sie als Administrator ein Segment nur dann für alle frei, wenn Sie überzeugt sind, dass es jemand in Ihrer Organisation mit der Verwendung der Segmente vertraut ist. Sie können auch erwägen, diese Segmente zu bevorzugen. Weitere Informationen [ Sie unter ](seg-favorite.md) als Favorit markieren.
+* Geben Sie als Administrator ein Segment nur dann für alle frei, wenn Sie überzeugt sind, dass es jemand in Ihrer Organisation mit der Verwendung der Segmente vertraut ist. Sie können auch erwägen, diese Segmente zu bevorzugen. Weitere Informationen [&#x200B; Sie unter &#x200B;](seg-favorite.md) als Favorit markieren.
 
 * Geben Sie als Administrator ein Segment für eine bestimmte Gruppe frei, wenn dieses Segment einen Geschäftswert für die Benutzer dieser Gruppe bietet.
 
