@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin
 exl-id: 4aff664c-3cd9-4591-8122-6ebff10e4a76
-source-git-commit: a2715ff9869796858dec16d3b8b422ef0c9325aa
+source-git-commit: b48858ea8e54bd9f6e7725f1ed0f0086020aab5f
 workflow-type: tm+mt
-source-wordcount: '2776'
-ht-degree: 97%
+source-wordcount: '3251'
+ht-degree: 85%
 
 ---
 
@@ -114,7 +114,52 @@ Jede Konfiguration erfordert einen eindeutigen Namen. Beispiel: `Example Content
 >title="Neue Datenansicht"
 >abstract="Sie haben eine neue Datenansicht für diese Konfiguration ausgewählt. Die neue Datenansicht wird aktualisiert, sodass sie die Dimensionen und Metriken der Inhaltsanalyse einschließt. Ähnliche Metriken und Dimensionen werden aus der vorhandenen Datenansicht entfernt.<br/>Wenn der neuen Datenansicht eine andere Verbindung zugeordnet ist, wird die Verbindung aktualisiert, sodass sie Datensätze der Inhaltsanalyse einschließt. Beachten Sie, dass Datensätze der Inhaltsanalyse nicht aus der vorhandenen Konfiguration entfernt werden."
 
-<!-- markdownlint-enable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="ac_onboarding_dataviews_button"
+>title="Datenansicht"
+>abstract="Für die Konfiguration von Content Analytics müssen Sie eine oder mehrere Datenansichten auswählen. So können Sie Ihre Content Analytics-Daten mit anderen Daten zusammenführen."
+
+>[!CONTEXTUALHELP]
+>id="aca_onboarding_dataviewsheader"
+>title="Datenansichten"
+>abstract="Wählen Sie eine oder mehrere bestehende Datenansichten aus Customer Journey Analytics aus, mit denen Sie Ihre Content Analytics-Daten zusammenführen möchten."
+
+>[!CONTEXTUALHELP]
+>id="aca_onboarding_dataviews_header_alt"
+>title="Datenansicht"
+>abstract="Wählen Sie eine oder mehrere bestehende Datenansichten aus Customer Journey Analytics aus, mit denen Sie Ihre Content Analytics-Daten zusammenführen möchten.<br/>"
+
+>[!CONTEXTUALHELP]
+>id="aca_onboarding_dataviews_new_dialog"
+>title="Ausgewählte Datenansichten"
+>abstract="Sie haben die ausgewählten Datenansichten für diese Konfiguration geändert. Die ausgewählten Datenansichten werden aktualisiert, um Content Analytics-Metriken und -Dimensionen einzuschließen. Diese Metriken und Dimensionen werden aus zuvor ausgewählten Datenansichten entfernt, die nicht mehr ausgewählt sind.<br/><br/>Wenn den ausgewählten Datenansichten eine andere Verbindung zugeordnet ist, wird die Verbindung aktualisiert, um Content Analytics-Datensätze einzuschließen. Die Datensätze der Inhaltsanalyse werden nicht aus der ursprünglich ausgewählten Verbindung entfernt.<br/><br/>Alle ausgewählten Datenansichten übernehmen die Kanäle, die Teil dieser Konfiguration sind."
+
+>[!CONTEXTUALHELP]
+>id="aca_onboarding_dataviews_change_dialog"
+>title="Ausgewählte Datenansichten"
+>abstract="Sie haben die ausgewählten Datenansichten für diese Konfiguration geändert. Die ausgewählten Datenansichten werden aktualisiert, um Content Analytics-Metriken und -Dimensionen einzuschließen. Diese Metriken und Dimensionen werden aus zuvor ausgewählten Datenansichten entfernt, die nicht mehr ausgewählt sind.<br/><br/>Wenn den ausgewählten Datenansichten eine andere Verbindung zugeordnet ist, wird die Verbindung aktualisiert, um Content Analytics-Datensätze einzuschließen. Die Datensätze der Inhaltsanalyse werden nicht aus der ursprünglich ausgewählten Verbindung entfernt.<br/><br/>Alle ausgewählten Datenansichten übernehmen die Kanäle, die Teil dieser Konfiguration sind."
+
+>[!CONTEXTUALHELP]
+>id="aca_onboarding_dataviews_current_cleanup_labels_dialog"
+>title="Ausgewählte Datenansichten"
+>abstract="Sie haben die ausgewählten Datenansichten für diese Konfiguration geändert. Die ausgewählten Datenansichten werden aktualisiert, um Content Analytics-Metriken und -Dimensionen einzuschließen. Diese Metriken und Dimensionen werden aus zuvor ausgewählten Datenansichten entfernt, die nicht mehr ausgewählt sind.<br/><br/>Wenn den ausgewählten Datenansichten eine andere Verbindung zugeordnet ist, wird die Verbindung aktualisiert, um Content Analytics-Datensätze einzuschließen. Die Datensätze der Inhaltsanalyse werden nicht aus der ursprünglich ausgewählten Verbindung entfernt.<br/><br/>Alle ausgewählten Datenansichten übernehmen die Kanäle, die Teil dieser Konfiguration sind."
+
+>[!CONTEXTUALHELP]
+>id="aca_onboarding_dataviews_prev_cleanup_labels_dialog"
+>title="Ausgewählte Datenansichten"
+>abstract="Sie haben die ausgewählten Datenansichten für diese Konfiguration geändert. Die ausgewählten Datenansichten werden aktualisiert, um Content Analytics-Metriken und -Dimensionen einzuschließen. Diese Metriken und Dimensionen werden aus zuvor ausgewählten Datenansichten entfernt, die nicht mehr ausgewählt sind.<br/><br/>Wenn den ausgewählten Datenansichten eine andere Verbindung zugeordnet ist, wird die Verbindung aktualisiert, um Content Analytics-Datensätze einzuschließen. Die Datensätze der Inhaltsanalyse werden nicht aus der ursprünglich ausgewählten Verbindung entfernt.<br/><br/>Alle ausgewählten Datenansichten übernehmen die Kanäle, die Teil dieser Konfiguration sind."
+
+>[!CONTEXTUALHELP]
+>id="aca_onboarding_channels_button"
+>title="Kanäle"
+>abstract="Aktivieren und konfigurieren Sie einen oder mehrere Kanäle für die Konfiguration."
+
+>[!CONTEXTUALHELP]
+>id="aca_onboarding_channels_header"
+>title="Kanäle"
+>abstract="Aktivieren und konfigurieren Sie einen oder mehrere Kanäle für die Konfiguration. Alle Datenansichten, die Teil der Konfiguration sind, erben die aktivierten Kanäle."
+
 
 Ihre Konfiguration erfordert die Auswahl einer [Datenansicht](/help/data-views/data-views.md).
 
