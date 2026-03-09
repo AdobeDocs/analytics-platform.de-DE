@@ -6,9 +6,10 @@ feature: Audiences
 role: Admin
 hide: true
 hidefromtoc: true
-source-git-commit: 974d8a269be15d3ea6fbbcf96f2ab5457d9c9554
+exl-id: 4f465e71-f1b5-4f38-a1db-645550856849
+source-git-commit: d14163794fd4d31b29bfc6f55622d839b67ab3d7
 workflow-type: tm+mt
-source-wordcount: '1484'
+source-wordcount: '1486'
 ht-degree: 1%
 
 ---
@@ -61,7 +62,7 @@ Erfahren Sie, wie sich eine bestimmte Zielgruppe in einem bestimmten Kanal (z. B
 
    * Vergleichen Sie Zielgruppe mit Nicht-Zielgruppe (oder mit einer anderen Zielgruppe) in Metriken wie Sitzungen, Konversionsrate, Umsatz pro Person.
 
-1. Ihre Erkenntnisse in Strategien zur Kanaloptimierung einfließen lassen (z. B. Zielgruppenbestimmungsregeln, Inhalts- oder Angebotsoptimierung).
+1. Verwenden Sie die generierten Einblicke, um Strategien zur Kanaloptimierung (z. B. Zielgruppenbestimmungsregeln, Inhalts- oder Angebotsoptimierung) anzupassen.
 
 #### Überlegungen zur Identitätsauflösung
 
@@ -142,4 +143,3 @@ Erfahren Sie mehr über das Verhalten von Kunden, die kürzlich eine wichtige Zi
 | Anwendungsfall | Kerngeschäftsfrage | Überlegungen zur Identitätsauflösung | Organisationen mit hoher Authentifizierung/einem einzelnen Namespace (Ereignisse, die bereits unter einer Personen-ID liegen, z. B. Anmeldung/CRM) | Fragmentierte Organisationen/Organisationen mit mehreren Namespaces (Ereignisse unter ECID + CRM + andere) |
 |---------|----------|---------|---------|---------|
 | Ausgetretene Zielgruppen - Abwanderungsanalyse | _„Wer hat gerade eine wichtige Zielgruppe verlassen?“_ <p>_„Was haben sie in der Umgebung von Exit gemacht?“_</p> | Das Verlassen der Zielgruppe wird mit derselben Personen-ID verfolgt, die für die Verbindung und Zielgruppenkonfiguration verwendet wird. | Ausstiege, die mit einer stabilen Anmelde-/CRM-ID gemessen werden, spiegeln tendenziell wahre Verhaltensänderungen wider. <p>Wenn jemand eine Zielgruppe mit dieser ID verlässt, bedeutet dies normalerweise eine echte Änderung (Abwanderung, Downgrade, Inaktivität).</p><p>Sie können ihr aktuelles Verhalten analysieren, um Journey und Win-back-Angebote mit Zuversicht zu optimieren.</p> | Ausstiege sind nur dort sichtbar, wo Profile und Ereignisse die konfigurierte ID gemeinsam haben und daher sorgfältig interpretiert werden müssen.<p>Verwenden Sie ausgetretene Kohorten als starken Hinweis oder Signal, aber es wird empfohlen, vor kritischen Entscheidungen einen Abgleich mit anderen Datenpunkten durchzuführen.</p> |
-
