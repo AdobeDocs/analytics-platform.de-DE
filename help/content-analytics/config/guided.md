@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin
 exl-id: 4aff664c-3cd9-4591-8122-6ebff10e4a76
-source-git-commit: b48858ea8e54bd9f6e7725f1ed0f0086020aab5f
+source-git-commit: fc1961f3191b80c0351c8935fc331d7605f37f13
 workflow-type: tm+mt
-source-wordcount: '3251'
-ht-degree: 85%
+source-wordcount: '3393'
+ht-degree: 81%
 
 ---
 
@@ -121,13 +121,13 @@ Jede Konfiguration erfordert einen eindeutigen Namen. Beispiel: `Example Content
 >abstract="Für die Konfiguration von Content Analytics müssen Sie eine oder mehrere Datenansichten auswählen. So können Sie Ihre Content Analytics-Daten mit anderen Daten zusammenführen."
 
 >[!CONTEXTUALHELP]
->id="aca_onboarding_dataviewsheader"
+>id="aca_onboarding_dataviews_header"
 >title="Datenansichten"
 >abstract="Wählen Sie eine oder mehrere bestehende Datenansichten aus Customer Journey Analytics aus, mit denen Sie Ihre Content Analytics-Daten zusammenführen möchten."
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataviews_header_alt"
->title="Datenansicht"
+>title="Datenansichten"
 >abstract="Wählen Sie eine oder mehrere bestehende Datenansichten aus Customer Journey Analytics aus, mit denen Sie Ihre Content Analytics-Daten zusammenführen möchten.<br/>"
 
 >[!CONTEXTUALHELP]
@@ -330,7 +330,59 @@ In diesem Abschnitt können Sie konfigurieren, wie die Content Analytics-Daten e
 >title="Tag-Eigenschaft deaktiviert"
 >abstract="Content Analytics-Erweiterung ist bereits aktiv."
 
-<!-- markdownlint-enable MD034 -->
+
+<!-- For updated ACA -->
+
+>[!CONTEXTUALHELP]
+>id="aca_onboarding_datacollection_web_pages_boldheader"
+>title="Datenerfassung für Web-Seiten"
+>abstract="**Einzuschließende/auszuschließende Seiten**"
+
+>[!CONTEXTUALHELP]
+>id="aca_onboarding_datacollection_web_pages_header"
+>title="Datenerfassung für Web-Seiten"
+>abstract="Content Analytics Geben Sie an, welche Seiten bei **Datenerfassung für erfasst werden sollen** oder **ausgeschlossen**."
+
+>[!CONTEXTUALHELP]
+>id="aca_onboarding_datacollection_web_assets_boldheader"
+>title="Datenerfassung für Web-Assets"
+>abstract="**Einzuschließende/auszuschließende Assets**"
+
+>[!CONTEXTUALHELP]
+>id="aca_onboarding_datacollection_web_assets_header"
+>title="Datenerfassung für Web-Assets"
+>abstract="Content Analytics Geben Sie an, welche Assets bei **Datenerfassung für erfasst** **ausgeschlossen** werden sollen."
+
+>[!CONTEXTUALHELP]
+>id="aca_onboarding_datacollection_mobile_experience_locations_boldheader"
+>title="Datenerfassung für mobile Erlebnisspeicherorte"
+>abstract="**Erlebnisspeicherorte, die eingeschlossen/ausgeschlossen werden sollen**"
+
+>[!CONTEXTUALHELP]
+>id="aca_onboarding_datacollection_mobile_experience_locations_header"
+>title="Datenerfassung für mobile Erlebnisspeicherorte"
+>abstract="Geben Sie an, welche Erlebnisspeicherorte beim **von Daten** Content Analytics **(ausgeschlossen** werden sollen."
+
+>[!CONTEXTUALHELP]
+>id="aca_onboarding_datacollection_mobile_asset_locations_boldheader"
+>title="Datenerfassung für mobile Asset-Speicherorte"
+>abstract="**Ein-/Auszuschließende Asset-Speicherorte**"
+
+>[!CONTEXTUALHELP]
+>id="aca_onboarding_datacollection_mobile_asset_locations_header"
+>title="Datenerfassung für mobile Asset-Speicherorte"
+>abstract="Geben Sie an, welche Asset-Speicherorte **einbezogen** oder **ausgeschlossen** bei der Datenerfassung für Content Analytics verwendet werden sollen."
+
+>[!CONTEXTUALHELP]
+>id="aca_onboarding_datacollection_mobile_asset_urls_boldheader"
+>title="Datenerfassung für mobile Asset-URLs"
+>abstract="**Ein-/auszuschließende Asset-URLs**"
+
+>[!CONTEXTUALHELP]
+>id="aca_onboarding_datacollection_mobile_asset_urls_header"
+>title="Datenerfassung für mobile Asset-URLs"
+>abstract="Content Analytics Geben Sie an, welche Asset **URLs beim Erfassen von Daten für** (eingeschlossen **oder** werden sollen."
+
 
 #### Neue Konfiguration {#new-configuration}
 
