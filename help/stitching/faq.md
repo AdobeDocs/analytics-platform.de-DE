@@ -23,8 +23,8 @@ Im Folgenden finden Sie einige häufig gestellte Fragen zur Zuordnung:
 Sie können eine Flussvisualisierung mit der Dimension „Datensatz-ID“ verwenden.
 
 1. Melden Sie sich bei [Customer Journey Analytics](https://analytics.adobe.com) an und erstellen Sie ein leeres Workspace-Projekt.
-2. Klicken Sie auf der linken Seite auf die Registerkarte **[!UICONTROL ** Visualisierungen **]** und ziehen Sie eine **[!UICONTROL ** Fluss **]**-Visualisierung in die Arbeitsfläche auf der rechten Seite.
-3. Klicken Sie auf die Registerkarte **[!UICONTROL ** Komponenten **]** auf der linken Seite und ziehen Sie die Dimension **[!UICONTROL ** Datensatz-ID **]** an die mittlere Position mit der Bezeichnung **[!UICONTROL ** Dimension oder Element **]**.
+2. Klicken Sie auf der linken Seite auf die Registerkarte **[!UICONTROL ** Visualisierungen **]** und ziehen Sie eine **[!UICONTROL **&#x200B; Fluss &#x200B;**]**-Visualisierung in die Arbeitsfläche auf der rechten Seite.
+3. Klicken Sie auf die Registerkarte **[!UICONTROL ** Komponenten **]** auf der linken Seite und ziehen Sie die Dimension **[!UICONTROL ** Datensatz-ID **]** an die mittlere Position mit der Bezeichnung **[!UICONTROL **&#x200B; Dimension oder Element &#x200B;**]**.
 4. Dieser Flussbericht ist interaktiv. Um die Flüsse auf nachfolgende oder vorherige Seiten zu erweitern, wählen Sie einen der Werte aus. Verwenden Sie das Kontextmenü, um Spalten zu erweitern oder zu reduzieren. Im selben Flussbericht können auch verschiedene Dimensionen verwendet werden.
 
 Wenn Sie die Datensatz-ID-Dimensionselemente umbenennen möchten, können Sie einen Lookup-Datensatz verwenden.
@@ -217,7 +217,7 @@ Andere Metriken können in Customer Journey Analytics und Adobe Analytics ähnli
 
 +++ Kann Customer Journey Analytics Identitätszuordnungsfelder verwenden?
 
-Ja, Customer Journey Analytics kann Identitätszuordnungsfelder sowohl für [ (feldbasierte](/help/stitching/fbs.md#identitymap) als auch für [diagrammbasierte](/help/stitching/gbs.md#identitymap) Zuordnung verwenden.
+Ja, Customer Journey Analytics kann Identitätszuordnungsfelder sowohl für [&#x200B; (feldbasierte](/help/stitching/fbs.md#identitymap) als auch für [diagrammbasierte](/help/stitching/gbs.md#identitymap) Zuordnung verwenden.
 
 +++
 
