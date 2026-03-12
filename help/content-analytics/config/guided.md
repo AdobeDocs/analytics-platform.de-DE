@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin
 exl-id: 4aff664c-3cd9-4591-8122-6ebff10e4a76
-source-git-commit: 6e7776cbaf99d5b2031b0fb3872c331852443b74
+source-git-commit: 359b0364b1de82d6e49c6ba8e7222d459c9825b8
 workflow-type: tm+mt
-source-wordcount: '3419'
+source-wordcount: '3432'
 ht-degree: 81%
 
 ---
@@ -68,7 +68,15 @@ Der Assistent für geführte Konfigurationen besteht aus vier Abschnitten ([Deta
 >title="Details"
 >abstract="In dieser Anleitung werden die Anforderungen für die Konfiguration der Inhaltsanalyse festgelegt. Geben Sie einen Namen für diese Konfiguration an"
 
-<!-- markdownlint-enable MD034 -->
+>[!CONTEXTUALHELP]
+>id="aca_onboarding_connection_boldheader"
+>title="Verbindung"
+>abstract="**Verbindung**"
+
+>[!CONTEXTUALHELP]
+>id="aca_onboarding_connection_header"
+>title="Verbindung"
+>abstract="Wählen Sie eine bestehende Verbindung aus Customer Journey Analytics aus, mit der Sie Ihre Content Analytics-Daten zusammenführen möchten."
 
 Jede Konfiguration erfordert einen eindeutigen Namen. Beispiel: `Example Content Analytics configuration`. Der Name ist zum Speichern oder Implementieren einer Konfiguration erforderlich.
 
@@ -356,32 +364,32 @@ In diesem Abschnitt können Sie konfigurieren, wie die Content Analytics-Daten e
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_mobile_experience_locations_boldheader"
 >title="Datenerfassung für mobile Erlebnisspeicherorte"
->abstract="**Erlebnisspeicherorte, die eingeschlossen/ausgeschlossen werden sollen**"
+>abstract="**Auszuschließende Erlebnisorte**"
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_mobile_experience_locations_header"
 >title="Datenerfassung für mobile Erlebnisspeicherorte"
->abstract="Geben Sie an, welche Erlebnisspeicherorte beim **von Daten** Content Analytics **(ausgeschlossen** werden sollen."
+>abstract="Geben Sie an, welche Erlebnisspeicherorte **ausgeschlossen) werden sollen** wenn Daten für Content Analytics erfasst werden."
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_mobile_asset_locations_boldheader"
 >title="Datenerfassung für mobile Asset-Speicherorte"
->abstract="**Ein-/Auszuschließende Asset-Speicherorte**"
+>abstract="**Auszuschließende Asset-Speicherorte**"
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_mobile_asset_locations_header"
 >title="Datenerfassung für mobile Asset-Speicherorte"
->abstract="Geben Sie an, welche Asset-Speicherorte **einbezogen** oder **ausgeschlossen** bei der Datenerfassung für Content Analytics verwendet werden sollen."
+>abstract="Geben Sie an, welche Asset-Speicherorte **ausgeschlossen** beim Erfassen von Daten für Content Analytics ausgeschlossen werden sollen."
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_mobile_asset_urls_boldheader"
 >title="Datenerfassung für mobile Asset-URLs"
->abstract="**Ein-/auszuschließende Asset-URLs**"
+>abstract="**Auszuschließende Asset-URLs**"
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_mobile_asset_urls_header"
 >title="Datenerfassung für mobile Asset-URLs"
->abstract="Content Analytics Geben Sie an, welche Asset **URLs beim Erfassen von Daten für** (eingeschlossen **oder** werden sollen."
+>abstract="Geben Sie an, welche Asset-URLs **der Datenerfassung für** Content Analytics ausgeschlossen werden sollen."
 
 
 #### Neue Konfiguration {#new-configuration}
