@@ -6,10 +6,10 @@ feature: Report Builder
 type: Documentation
 solution: Customer Journey Analytics
 exl-id: 0a0427d9-223e-410b-a8ef-8601390d88aa
-source-git-commit: 31d3b40ad7a081aefa4297d7f4a3b986711ead03
+source-git-commit: 9d5c895672e422a82ef68b0af6cd85359c9b11ea
 workflow-type: tm+mt
-source-wordcount: '326'
-ht-degree: 4%
+source-wordcount: '378'
+ht-degree: 5%
 
 ---
 
@@ -29,14 +29,19 @@ Sie können alle geplanten Arbeitsmappen auf der Registerkarte „Arbeitsmappen 
 
 1. Wählen Sie **[!UICONTROL Zeitplan]** im Report Builder-Hub aus.
 
-1. Wählen Sie die **[!UICONTROL Arbeitsmappen]** aus. Es wird eine Liste aller geplanten Arbeitsmappen angezeigt.
+1. Wählen Sie die **[!UICONTROL Arbeitsmappen]** aus. Es wird eine Liste aller geplanten Arbeitsmappen angezeigt. (Sie können auch die Registerkarte **[!UICONTROL Legacy]** auswählen, um eine Liste der Legacy-Arbeitsmappen anzuzeigen, die in den neuen Report Builder migriert werden müssen.)
 
    ![Geplante Arbeitsmappe](assets/scheduled-workbooks.png){zoomable="yes"}
 
-   Sie können den Mauszeiger über das Symbol bewegen, um den Status einer geplanten Arbeitsmappe anzuzeigen.
+1. Führen Sie einen der folgenden Schritte aus:
 
-   Verwenden Sie ![Suche](/help/assets/icons/Search.svg), um nach bestimmten geplanten Arbeitsmappen zu suchen.
-Mit ![ColumnSetting](/help/assets/icons/ColumnSetting.svg) können Sie festlegen, welche Spalten angezeigt werden sollen.
+   * Bewegen Sie den Mauszeiger über das Symbol, um den Status einer geplanten Arbeitsmappe anzuzeigen.
+
+   * Suchen Sie im Suchfeld ![Suche](/help/assets/icons/Search.svg) nach bestimmten geplanten Arbeitsmappen.
+
+   * Wählen Sie das Spaltensymbol ![ColumnSetting](/help/assets/icons/ColumnSetting.svg) aus, um zu definieren, welche Spalten angezeigt werden sollen.
+
+   * Wählen Sie das Filtersymbol ![Filtersymbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg) und dann [!UICONTROL **Alle anzeigen**], um alle geplanten Arbeitsmappen für eine bestimmte Organisation anzuzeigen.
 
 1. Eine oder mehrere Arbeitsmappen auswählen.
 
