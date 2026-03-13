@@ -5,10 +5,10 @@ feature: Workspace Basics
 exl-id: 6a934be7-0612-41ff-964e-77abc0b1efda
 solution: Customer Journey Analytics
 role: User
-source-git-commit: bc708b34814550b89f6c9916d8bc48850008c1dc
+source-git-commit: c84e18bcaf7687deada7086bfe1a85a4b83f216b
 workflow-type: tm+mt
 source-wordcount: '4015'
-ht-degree: 99%
+ht-degree: 97%
 
 ---
 
@@ -30,7 +30,7 @@ Sie können die folgenden Voreinstellungen konfigurieren:
 
 ### Allgemeine Voreinstellungen
 
-Die allgemeinen Voreinstellungen gelten für Ihre Customer Journey Analytics-Erfahrung im Browser. Informationen zum Zugriff auf diese Voreinstellungen finden Sie unter [Aktualisieren von Voreinstellungen](#update-preferences).
+Die allgemeinen Voreinstellungen gelten für Ihre Customer Journey Analytics-Erfahrung im Browser. Informationen zum Zugriff auf diese Voreinstellungen finden Sie unter [Bearbeiten von Voreinstellungen](#edit-preferences).
 
 | Voreinstellung | Optionen |
 | --- | --- |
@@ -56,7 +56,7 @@ Die allgemeinen Voreinstellungen gelten für Ihre Customer Journey Analytics-Erf
 >abstract="Wenn diese Option aktiviert ist, wird in der rechten Leiste jedes Projekts in Analysis Workspace ein Kommentarbereich verfügbar."
 
 
-Sie können Unternehmensvoreinstellungen aktualisieren, die für alle Benutzerinnen und Benutzer sowie Projekte in Ihrer Organisation gelten. Informationen zum Zugriff auf diese Voreinstellungen finden Sie unter [Aktualisieren von Voreinstellungen](#update-preferences).
+Sie können Unternehmensvoreinstellungen aktualisieren, die für alle Benutzerinnen und Benutzer sowie Projekte in Ihrer Organisation gelten. Informationen zum Zugriff auf diese Voreinstellungen finden Sie unter [Bearbeiten von Voreinstellungen](#edit-preferences).
 
 | Abschnitt | Voreinstellung | Optionen |
 | --- | --- | --- |
@@ -86,14 +86,14 @@ Sie können Unternehmensvoreinstellungen aktualisieren, die für alle Benutzerin
 >title="Sequenzielle Palette"
 >abstract="Wird bei der geführten Analyse der Frequenz-Trends angewendet (gestapelte Balken). In dieser Palette werden Zahlen durch die Helligkeitsabstufungen von hell bis dunkel dargestellt."
 
-Sie können diese Voreinstellungen für alle neuen Analysis Workspace-Projekte, neuen Analysis Workspace-Bedienfeldern und neuen geführten Analysen anpassen. Informationen zum Zugriff auf diese Voreinstellungen finden Sie unter [Aktualisieren von Voreinstellungen](#update-preferences).
+Sie können diese Voreinstellungen für alle neuen Analysis Workspace-Projekte, neuen Analysis Workspace-Bedienfeldern und neuen geführten Analysen anpassen. Informationen zum Zugriff auf diese Voreinstellungen finden Sie unter [Bearbeiten von Voreinstellungen](#edit-preferences).
 
 Einige dieser Einstellungen können auch für einzelne Projekte in Analysis Workspace angepasst werden, wie in der [Projektübersicht](/help/analysis-workspace/build-workspace-project/freeform-overview.md) beschrieben.
 
 <!--
 >[!IMPORTANT]
 >
->You can no longer define the number format in the **[!UICONTROL Project & Analyses]** > **[!UICONTROL Data]** section of **[!UICONTROL User preferences]**. The number format is automatically determined by the [default language that is configured](https://experienceleague.adobe.com/de/docs/core-services/interface/features/browser-language) for the logged in user.
+>You can no longer define the number format in the **[!UICONTROL Project & Analyses]** > **[!UICONTROL Data]** section of **[!UICONTROL User preferences]**. The number format is automatically determined by the [default language that is configured](https://experienceleague.adobe.com/en/docs/core-services/interface/features/browser-language) for the logged in user.
 >
 -->
 
@@ -132,7 +132,7 @@ Einige dieser Einstellungen können auch für einzelne Projekte in Analysis Work
 >abstract="Wählen Sie die Standardmetrik aus, die für Freiformtabellen verwendet werden soll. Wenn die ausgewählte Datenansicht die ausgewählte Standardmetrik nicht enthält, wechselt die Tabelle automatisch zu einer anderen primären Metrik."
 
 
-Sie können die Voreinstellungen für Freiformtabellen für alle neuen Projekte anpassen, die Sie in Analysis Workspace erstellen. Informationen zum Zugriff auf diese Voreinstellungen finden Sie unter [Aktualisieren von Voreinstellungen](#update-preferences).
+Sie können die Voreinstellungen für Freiformtabellen für alle neuen Projekte anpassen, die Sie in Analysis Workspace erstellen. Informationen zum Zugriff auf diese Voreinstellungen finden Sie unter [Bearbeiten von Voreinstellungen](#edit-preferences).
 
 Einige dieser Voreinstellungen können auch für einzelne Tabellen angepasst werden.
 
@@ -157,7 +157,7 @@ Wählen Sie die verlinkten Abschnittstitel aus, um weitere Informationen und den
 | | Null nicht als Wert interpretieren | Definition, ob in Zellen mit 0-Wert eine 0 oder nichts angezeigt wird. Diese Option ist praktisch, wenn Sie die Daten für einzelne Tage eines Monats anzeigen und einige Tage noch in der Zukunft liegen.  Statt für in der Zukunft liegende Daten eine 0 anzuzeigen, kann die entsprechende Zelle auch leer angezeigt werden. In Diagrammen wird diese Einstellung ebenfalls berücksichtigt (ist diese Einstellung aktiviert, wird in Diagrammen z. B. keine Linie bzw. kein Balken mit 0-Werten angezeigt). |
 | | Hintergrund | Gibt an, ob in einer Zelle alle Zellformatierungen ein-/ausgeblendet werden, einschließlich Balkendiagramm und bedingter Formatierung <ul><li>Balkendiagramm</li> Zeigt ein horizontales Balkendiagramm mit dem Zellenwert in Relation zum Gesamtwert der Spalte an. <li>Bedingte Formatierung</li>Weitere Informationen zur bedingten Formatierung finden Sie unter „Bedingte Formatierung“ in den [Spalteneinstellungen](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/column-settings.md).</ul> |
 | | Zellenvorschau | Vorschau der jeweiligen Zelle mit allen ausgewählten Formatierungsoptionen |
-| **[Zeile &#x200B;](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.md)** | | |
+| **[Zeile ](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.md)** | | |
 | | Aufschlüsselung nach Position | Wählen Sie diese Option aus, wenn die Aufschlüsselung bei der Position des Elements und nicht beim Element selbst bleiben soll. Weitere Informationen zur Aufschlüsselungen finden Sie unter [Dimensionen aufschlüsseln](/help/components/dimensions/t-breakdown-fa.md). |
 | | Prozentuale Berechnung | <ul><li>Spalte</li><li>Zeile</li></ul> |
 | | Spaltensummen (nur statische Zeilen) | <ul><li>Summe der Zeilen anzeigen: Zeigt die Summe der einzelnen Zeileneinträge an </li><li>Gesamtsumme anzeigen: Zeigt die deduplizierte Summe der Zeilen an.</li></ul> |
@@ -185,7 +185,7 @@ Wählen Sie die verlinkten Abschnittstitel aus, um weitere Informationen und den
 >abstract="Wählen Sie den Standard-Container aus, der für [!UICONTROL Journey-Arbeitsflächen]-Visualisierungen verwendet werden soll. Wenn die ausgewählte Datenansicht nicht den ausgewählten Standard-Container enthält, wechselt die Visualisierung vom Typ [!UICONTROL Journey-Arbeitsfläche] automatisch zu einem anderen primären Container."
 
 
-Sie können die Visualisierungsvoreinstellungen für alle in Analysis Workspace neu erstellten Projekte aktualisieren. Informationen zum Zugriff auf diese Voreinstellungen finden Sie unter [Aktualisieren von Voreinstellungen](#update-preferences).
+Sie können die Visualisierungsvoreinstellungen für alle in Analysis Workspace neu erstellten Projekte aktualisieren. Informationen zum Zugriff auf diese Voreinstellungen finden Sie unter [Bearbeiten von Voreinstellungen](#edit-preferences).
 
 Einige dieser Voreinstellungen können auch für individuelle Visualisierungen angepasst werden.
 
