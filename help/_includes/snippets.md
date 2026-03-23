@@ -325,4 +325,4 @@ Diese Analytics-Daten-Feed-Spalte enthält Daten, die aufgrund von Unterschieden
 
 ## CJA-Daten-Feed-Benutzeragent {#cja-df-ua}
 
-Sie können nicht gleichzeitig sowohl Benutzeragenten- als auch Gerätesuchinformationen erfassen. Die Population dieser Dimensionen schließt sich gegenseitig aus. Sie müssen auswählen, ob Sie Benutzeragenten direkt oder Gerätesuchinformationen (basierend auf Benutzeragenten) erfassen möchten, wenn Sie [einen Datenstrom konfigurieren](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/configure#geolocation-device-lookup).
+Sie können nicht gleichzeitig sowohl Benutzeragenten- als auch Gerätesuchinformationen erfassen. Die Population dieser Dimensionen schließt sich gegenseitig aus. Sie müssen auswählen, ob Sie Benutzeragenten direkt oder Gerätesuchinformationen (basierend auf Benutzeragenten) erfassen möchten, wenn Sie [einen Datenstrom konfigurieren](https://experienceleague.adobe.com/de/docs/experience-platform/datastreams/configure#geolocation-device-lookup).
