@@ -20,7 +20,7 @@ Diese Referenz hilft Dateningenieuren, Adobe Analytics-Daten-Feed-Spalten zu bew
 
 >[!NOTE]
 >
->Diese Referenz enthält nur Spalten, die von Adobe auf der Grundlage der [Analytics-Daten-Feed-Spaltenreferenz) als aktuell &#x200B;](https://experienceleague.adobe.com/en/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference) werden. Wenn Sie eine Analytics-Daten-Feed-Spalte haben, die nicht in dieser Tabelle aufgeführt ist und die Sie aktiv verwenden, finden Sie im Lösungs-Design-Dokument Ihres Unternehmens die beste Entsprechung in Customer Journey Analytics.
+>Diese Referenz enthält nur Spalten, die von Adobe auf der Grundlage der [Analytics-Daten-Feed-Spaltenreferenz) als aktuell &#x200B;](https://experienceleague.adobe.com/de/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference) werden. Wenn Sie eine Analytics-Daten-Feed-Spalte haben, die nicht in dieser Tabelle aufgeführt ist und die Sie aktiv verwenden, finden Sie im Lösungs-Design-Dokument Ihres Unternehmens die beste Entsprechung in Customer Journey Analytics.
 
 +++**`accept_language`**
 
@@ -360,7 +360,7 @@ Diese Spalte wird je nach Ihrer Implementierung wahrscheinlich Dutzenden von sep
 
 {{cja-df-post}}
 
-Wenn Ihr Schema die [[!UICONTROL Commerce Details]](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/field-groups/event/commerce-details)-Feldergruppe verwendet, sind einige Metriken möglicherweise direkt den folgenden XDM-Feldern zugeordnet:
+Wenn Ihr Schema die [[!UICONTROL Commerce Details]](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/field-groups/event/commerce-details)-Feldergruppe verwendet, sind einige Metriken möglicherweise direkt den folgenden XDM-Feldern zugeordnet:
 
 * **Checkouts**: `xdm.commerce.checkouts.value`
 * **Hinzufügungen zum Warenkorb**: `xdm.commerce.productListAdds.value`
@@ -373,7 +373,7 @@ Wenn Ihr Schema die [[!UICONTROL Commerce Details]](https://experienceleague.ado
 Einige Metriken verwenden möglicherweise die Ereignis-Serialisierung, wodurch Adobe Analytics die volle Kontrolle über die Deduplizierung ermöglicht. Sie können die Komponenteneinstellung [Metrik-Deduplizierung](/help/data-views/component-settings/metric-deduplication.md) verwenden, um eine Deduplizierungsparität zu erzielen.
 
 * Wenn Ihre Metrik nach Besuch in Adobe Analytics dedupliziert wird, können Sie in den Komponenteneinstellungen dieser Metrik den Deduplizierungsbereich auf Sitzung festlegen.
-* Wenn Ihre Metrik nach Ereignis-ID in Adobe Analytics dedupliziert wird, enthält das XDM-Objekt für diese Metrik wahrscheinlich sowohl ein `value`- als auch ein `id`. Wenn Ihr Schema die Feldergruppe [[!UICONTROL Commerce-Details]](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/field-groups/event/commerce-details) verwendet, befinden sich diese Metriken wahrscheinlich in diesen XDM-Feldern, für die Sie in den Komponenteneinstellungen der **[!UICONTROL das Feld]** Deduplizierungs-ID) festlegen können:
+* Wenn Ihre Metrik nach Ereignis-ID in Adobe Analytics dedupliziert wird, enthält das XDM-Objekt für diese Metrik wahrscheinlich sowohl ein `value`- als auch ein `id`. Wenn Ihr Schema die Feldergruppe [[!UICONTROL Commerce-Details]](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/field-groups/event/commerce-details) verwendet, befinden sich diese Metriken wahrscheinlich in diesen XDM-Feldern, für die Sie in den Komponenteneinstellungen der **[!UICONTROL das Feld]** Deduplizierungs-ID) festlegen können:
 
    * **Checkouts**: `xdm.commerce.checkouts.id`
    * **Hinzufügungen zum Warenkorb**: `xdm.commerce.productListAdds.id`
