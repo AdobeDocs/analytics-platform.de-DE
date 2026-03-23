@@ -9,10 +9,10 @@ index: true
 user-guide-title: Handbuch zu Customer Journey Analytics
 user-guide-description: Hier erhalten Sie Informationen zu Adobe Customer Journey Analytics und Erläuterungen zur Nutzung von Analysis Workspace mit Daten aus Experience Platform.
 breadcrumb-title: Handbuch zu Customer Journey Analytics
-source-git-commit: 82fe9ca3b702f9213e2eb1e4ab0260500be0f731
+source-git-commit: ee7989a36c9d25468dee5b1b2902ed2757e3a4b7
 workflow-type: tm+mt
-source-wordcount: '1374'
-ht-degree: 96%
+source-wordcount: '1390'
+ht-degree: 95%
 
 ---
 
@@ -412,6 +412,11 @@ ht-degree: 96%
       + [Verwalten von Exporten](/help/components/exports/manage-exports.md)
       + [Verwalten von Exportprotokollen](/help/components/exports/manage-export-logs.md)
       + [Fehlerbehebung bei Exporten](/help/components/exports/troubleshoot-exports.md)
+      + Daten-Feeds {#cja-data-feeds}
+         + [Daten-Feed-Übersicht](/help/components/exports/cja-data-feeds/data-feed-overview.md)
+         + [Vergleichen von Adobe Analytics-Daten-Feeds](/help/components/exports/cja-data-feeds/df-comparison.md)
+         + [Vorbereiten der Spaltenzuordnung](/help/components/exports/cja-data-feeds/df-column-mapping-prep.md)
+         + [Spalten zuordnen](/help/components/exports/cja-data-feeds/aa-cja-column-reference.md)
    + Datenwörterbuch {#data-dictionary}
       + [Überblick](../components/data-dictionary/data-dictionary-overview.md)
       + [Komponenteninformationen im Datenwörterbuch anzeigen](../components/data-dictionary/view-data-dictionary.md)

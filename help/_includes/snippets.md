@@ -1,8 +1,8 @@
 ---
-source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
+source-git-commit: 51c9a7aa620f54bec3f0e4ad2d007dd52ecd12f4
 workflow-type: tm+mt
-source-wordcount: '5005'
-ht-degree: 99%
+source-wordcount: '5228'
+ht-degree: 95%
 
 ---
 # Snippets
@@ -294,3 +294,25 @@ Verwenden Sie die folgenden Informationen, um die Visualisierung auszuwählen, d
 >
 >In der Customer Journey Analytics **[!UICONTROL Benutzeroberfläche können]** Datensätze als **[!UICONTROL modellbasiert]** gekennzeichnet werden.
 >
+
+## CJA-Daten-Feed-Lookback-Fenster {#cja-df-lookback}
+
+Da Customer Journey Analytics für jede Komponente die Zuordnung zur Berichtszeit verwendet, gibt es kein Persistenzkonzept, das über das Lookback-Fenster hinausgeht. Diese Analytics-Daten-Feed-Spalte verweist auf das Verhalten auf Besucherebene, das sich auf den gesamten Verlauf des Besuchers erstreckt. Je länger das Lookback-Fenster für diese Komponente in Customer Journey Analytics ist, desto enger kann es mit der Adobe Analytics-Funktionalität übereinstimmen.
+
+## CJA-Daten-Feed-Post-Spalten {#cja-df-post}
+
+Diese Analytics-Daten-Feed-Spalte enthält sowohl eine vorverarbeitete als auch eine nachverarbeitete Version (ein Präfix von `post_`). Spalten mit dem Präfix `post_` enthalten den Wert, der letztendlich im Reporting verwendet wird. In der folgenden Tabelle werden die Eigenschaften dieser Spalten verglichen:
+
+| Vorverarbeiteter Spaltenwert | Nachbearbeiteter Spaltenwert |
+| --- | --- |
+| So wie es gesammelt wurde | Wird in Berichten verwendet |
+| Vor Verarbeitungsregeln | Nach Verarbeitungsregeln |
+| Vor VISTA-Regeln | Nach VISTA-Regeln |
+| Keine Zuordnung angewendet | Zuordnung gilt |
+
+Die meisten Unternehmen verwenden nur `post_` Spalten, wenn sie verfügbar sind.
+
+Da Customer Journey Analytics kein Vorverarbeitungs- und Nachverarbeitungskonzept hat, ist es schwierig, beide Spalten in CJA-Daten-Feeds neu zu erstellen. Wenn Sie Näherungen dieser Spalten wünschen, können Sie dieselbe Spalte mit separaten Attributionseinstellungen verwenden:
+
+* **Vorverarbeitete Spalte**: Keine Attribution
+* **Nachbearbeitete Spalte**: Wenden Sie in den Einstellungen für die Datenansicht dieselben Zuordnungs- und Ablaufeinstellungen wie die Analytics-Variable an. Die meisten Komponenten würden die Zuordnung „Letzter“ und den Ablauf „Besuch“ verwenden.
