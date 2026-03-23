@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Derived Fields
 exl-id: bcd172b2-cd13-421a-92c6-e8c53fa95936
 role: Admin
-source-git-commit: 9645c24ed1a08c224445ebae99dde27db208b9b5
+source-git-commit: 12347a865bdeb16f9b45ec5e5eddc3390894e0dc
 workflow-type: tm+mt
-source-wordcount: '10186'
-ht-degree: 100%
+source-wordcount: '10283'
+ht-degree: 99%
 
 ---
 
@@ -422,6 +422,21 @@ Diese Funktionsvorlage erhält den Längengrad für einen US-Bundesstaat mit ein
 Um die Vorlage zu verwenden, müssen Sie die richtigen Parameter für jede Funktion angeben, die als Teil der Regeln in der Vorlage aufgeführt ist. Weitere Informationen finden Sie unter [Funktionsreferenz](#function-reference).
 
 ![Screenshot des Regel-Builders für den Längengrad des Bundesstaats](assets/function-template-state-longitude.png)
+
++++
+
+
+### UTM-Parameteranalyse
+
+Diese Funktionsvorlage extrahiert den Wert der angegebenen UTM-Abfrageparameter (z. B. `utm_source`, `utm_campaign`) aus dem ausgewählten URL-Feld. Verwenden Sie diese Funktion, um Ereignisse für Marketing-Berichte nach Kampagnenzuordnung zu kennzeichnen und zu gruppieren.
+
++++ Details
+
+{{select-package}}
+
+Um die Vorlage zu verwenden, müssen Sie die Parameter für jede Funktion angeben, die als Teil der Regeln in der Vorlage aufgeführt ist. Entfernen Sie Funktionen (z. B. [URL analysieren](#url-parse)) oder Parameter in Funktionen (z. B. [Verketten](#concatenate) und [Wenn](#case-when)) für die UTM-Abfrageparameter, die Sie nicht verwenden. Weitere Informationen finden Sie unter [Funktionsreferenz](#function-reference).
+
+![Screenshot des Regel-Builders zum Analysieren von UTM-Parametern](assets/function-template-utm-parameters-parse.png)
 
 +++
 
@@ -1580,10 +1595,10 @@ Sie möchten einen Teil einer URL erfassen und als eindeutige Seitenkennung zur 
 
 | Seiten-URL |
 |---|
-| `https://business.adobe.com/de/products/analytics/adobe-analytics-benefits.html` |
-| `https://business.adobe.com/de/products/analytics/adobe-analytics.html` |
-| `https://business.adobe.com/de/products/experience-platform/customer-journey-analytics.html` |
-| `https://business.adobe.com/de/products/experience-platform/adobe-experience-platform.html` |
+| `https://business.adobe.com/products/analytics/adobe-analytics-benefits.html` |
+| `https://business.adobe.com/products/analytics/adobe-analytics.html` |
+| `https://business.adobe.com/products/experience-platform/customer-journey-analytics.html` |
+| `https://business.adobe.com/products/experience-platform/adobe-experience-platform.html` |
 
 {style="table-layout:auto"}
 
