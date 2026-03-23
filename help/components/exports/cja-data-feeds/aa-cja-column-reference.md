@@ -4,22 +4,23 @@ description: Ermitteln Sie, wie Sie eine bestimmte Daten-Feed-Spalte in Adobe An
 feature: Components
 hide: true
 hidefromtoc: true
-source-git-commit: fbd48b74505e18c24260b87b715ad036a6a60020
+exl-id: 81d6e79e-8324-4726-9a48-10177b0a91b1
+source-git-commit: af5b30cd71ebe46e2af584ee502ef631c829f5ea
 workflow-type: tm+mt
-source-wordcount: '3236'
-ht-degree: 64%
+source-wordcount: '3356'
+ht-degree: 57%
 
 ---
 
 # Zuordnen von Adobe Analytics-Daten-Feed-Spalten zu Customer Journey Analytics
 
-Da Adobe Analytics und Customer Journey Analytics völlig unterschiedlich funktionieren, ist eine 1:1-Spaltenzuordnung nicht möglich. Diese Unterschiede werden noch dadurch verstärkt, dass jede Implementierung von Adobe Analytics und Customer Journey Analytics sehr unterschiedlich ist.
+Eine 1::1-Zuordnung zwischen Daten-Feed-Spalten von Adobe Analytics und Customer Journey Analytics ist nicht möglich. Die beiden Produkte unterscheiden sich grundlegend, und die Implementierung der einzelnen Organisationen kann erheblich variieren.
 
-Diese Referenz unterstützt Dateningenieure bei der spaltenweisen Anpassung ihrer Adobe Analytics-fokussierten Daten-Feed-Workflows an einen Workflow, der auf Customer Journey Analytics-Daten-Feeds basiert.
+Diese Referenz hilft Dateningenieuren, Adobe Analytics-Daten-Feed-Spalten zu bewerten und die nächstgelegenen Customer Journey Analytics-Entsprechungen für ihre Workflows zu identifizieren.
 
 >[!NOTE]
 >
->Diese Referenz enthält nur Spalten, die von Adobe auf der Grundlage der [Analytics-Daten-Feed-Spaltenreferenz) als aktuell &#x200B;](https://experienceleague.adobe.com/de/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference) werden. Wenn Sie eine Analytics-Daten-Feed-Spalte haben, die nicht in dieser Tabelle aufgeführt ist und die Sie aktiv verwenden, finden Sie im Lösungs-Design-Dokument Ihres Unternehmens die beste Entsprechung in Customer Journey Analytics.
+>Diese Referenz enthält nur Spalten, die von Adobe auf der Grundlage der [Analytics-Daten-Feed-Spaltenreferenz) als aktuell ](https://experienceleague.adobe.com/en/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference) werden. Wenn Sie eine Analytics-Daten-Feed-Spalte haben, die nicht in dieser Tabelle aufgeführt ist und die Sie aktiv verwenden, finden Sie im Lösungs-Design-Dokument Ihres Unternehmens die beste Entsprechung in Customer Journey Analytics.
 
 +++**`accept_language`**
 
@@ -76,7 +77,9 @@ Die AMO-EF-ID-Dimension, die in Adobe Advertising-Integrationen verwendet wird.
 
 +++**`browser`**
 
-Numerische ID, die den Browser darstellt. Verweist auf die `browser.tsv` Suchtabelle.
+Eine numerische ID, die den Browser darstellt.
+
+{{cja-df-lookup}}
 
 +++
 
@@ -106,7 +109,9 @@ Die Dimension Trackingcode .
 
 +++**`carrier`**
 
-Variable der Adobe Advertising-Integration. Gibt den Mobilnetzbetreiber an. Der Schlüsselwert für `carrier.tsv` dynamische Suche.
+Variable der Adobe Advertising-Integration. Gibt den Mobilnetzbetreiber an.
+
+{{cja-df-lookup}}
 
 +++
 
@@ -136,6 +141,10 @@ Die Dimension Activity Map-Link .
 
 {{cja-df-post}}
 
+{{cja-df-na}}
+
+Diese Spalte gilt nicht, da Customer Journey Analytics Activity Map noch nicht unterstützt.
+
 +++
 
 +++**`clickmaplinkbyregion`**
@@ -143,6 +152,10 @@ Die Dimension Activity Map-Link .
 Die Dimension Activity Map-Link nach Region.
 
 {{cja-df-post}}
+
+{{cja-df-na}}
+
+Diese Spalte gilt nicht, da Customer Journey Analytics Activity Map noch nicht unterstützt.
 
 +++
 
@@ -152,6 +165,10 @@ Die Dimension Activity Map-Seite .
 
 {{cja-df-post}}
 
+{{cja-df-na}}
+
+Diese Spalte gilt nicht, da Customer Journey Analytics Activity Map noch nicht unterstützt.
+
 +++
 
 +++**`clickmapregion`**
@@ -159,6 +176,10 @@ Die Dimension Activity Map-Seite .
 Die Dimension Activity Map-Region .
 
 {{cja-df-post}}
+
+{{cja-df-na}}
+
+Diese Spalte gilt nicht, da Customer Journey Analytics Activity Map noch nicht unterstützt.
 
 +++
 
@@ -170,13 +191,17 @@ API- oder Client SDK-Version, die für das Kompilieren und Senden der Bildanford
 
 +++**`color`**
 
-Farbtiefen-ID, basierend auf dem Wert der Spalte `c_color`. Verweist auf die Suchtabelle `color_depth.tsv`.
+Farbtiefe-ID basierend auf dem Wert der `c_color`.
+
+{{cja-df-lookup}}
 
 +++
 
 +++**`connection_type`**
 
-Numerische ID, die die Dimension Verbindungstyp darstellt. Verweist auf die Suchtabelle `connection_type.tsv`.
+Numerische ID, die die Dimension Verbindungstyp darstellt.
+
+{{cja-df-lookup}}
 
 +++
 
@@ -191,6 +216,8 @@ Die Dimension Cookie-Unterstützung .<br>Y: aktiviert<br>N: deaktiviert<br>U: un
 +++**`country`**
 
 Numerische ID, die das Land der Besucherin bzw. des Besuchers darstellt. Verweist auf die Suchtabelle `country.tsv`.
+
+{{cja-df-lookup}}
 
 +++
 
@@ -262,6 +289,10 @@ Markierung, die bestimmt, ob es sich bei dem Treffer um eine neue tägliche Besu
 
 Die Dimension Einverständnisverwaltungs-Opt-in . Pro Treffer können mehrere Werte vorhanden sein, getrennt durch einen senkrechten Strich (`\|`). Gültige Werte sind `DMP` und `SELL`.
 
+{{cja-df-na}}
+
+Diese Spalte gilt nicht, da Customer Journey Analytics nicht ???.
+
 +++
 
 +++**`dataprivacyconsentoptout`**
@@ -329,6 +360,29 @@ Diese Spalte wird je nach Ihrer Implementierung wahrscheinlich Dutzenden von sep
 
 {{cja-df-post}}
 
+Wenn Ihr Schema die [[!UICONTROL Commerce Details]](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/field-groups/event/commerce-details)-Feldergruppe verwendet, sind einige Metriken möglicherweise direkt den folgenden XDM-Feldern zugeordnet:
+
+* **Checkouts**: `xdm.commerce.checkouts.value`
+* **Hinzufügungen zum Warenkorb**: `xdm.commerce.productListAdds.value`
+* **Öffnung des Warenkorbs**: `xdm.commerce.productListOpens.value`
+* **Entnahmen aus dem Warenkorb**: `xdm.commerce.productListRemovals.value`
+* **Warenkorbansichten**: `xdm.commerce.productListViews.value`
+* **Produktansichten**: `xdm.commerce.productViews.value`
+* **Bestellungen**: `xdm.commerce.purchases.value`
+
+Einige Metriken verwenden möglicherweise die Ereignis-Serialisierung, wodurch Adobe Analytics die volle Kontrolle über die Deduplizierung ermöglicht. Sie können die Komponenteneinstellung [Metrik-Deduplizierung](/help/data-views/component-settings/metric-deduplication.md) verwenden, um eine Deduplizierungsparität zu erzielen.
+
+* Wenn Ihre Metrik nach Besuch in Adobe Analytics dedupliziert wird, können Sie in den Komponenteneinstellungen dieser Metrik den Deduplizierungsbereich auf Sitzung festlegen.
+* Wenn Ihre Metrik nach Ereignis-ID in Adobe Analytics dedupliziert wird, enthält das XDM-Objekt für diese Metrik wahrscheinlich sowohl ein `value`- als auch ein `id`. Wenn Ihr Schema die Feldergruppe [[!UICONTROL Commerce-Details]](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/field-groups/event/commerce-details) verwendet, befinden sich diese Metriken wahrscheinlich in diesen XDM-Feldern, für die Sie in den Komponenteneinstellungen der **[!UICONTROL das Feld]** Deduplizierungs-ID) festlegen können:
+
+   * **Checkouts**: `xdm.commerce.checkouts.id`
+   * **Hinzufügungen zum Warenkorb**: `xdm.commerce.productListAdds.id`
+   * **Öffnung des Warenkorbs**: `xdm.commerce.productListOpens.id`
+   * **Entnahmen aus dem Warenkorb**: `xdm.commerce.productListRemovals.id`
+   * **Warenkorbansichten**: `xdm.commerce.productListViews.id`
+   * **Produktansichten**: `xdm.commerce.productViews.id`
+   * **Bestellungen**: `xdm.commerce.purchases.id`
+
 +++
 
 +++**`exclude_hit`**
@@ -363,7 +417,9 @@ Die Dimension Ursprünglich verweisende Domain . Basierend auf `first_hit_referr
 
 +++**`first_hit_ref_type`**
 
-Numerische ID, die den Referrer-Typ des ursprünglichen Referrers der oder des Besuchenden darstellt. Verweist auf die Suchtabelle `referrer_type.tsv`
+Eine numerische ID, die den Referrer-Typ des allerersten Referrers des Besuchers darstellt.
+
+{{cja-df-lookup}}
 
 +++
 
@@ -447,7 +503,9 @@ Die komprimierte IPv6-Adresse, falls verfügbar. Sich gegenseitig ausschließend
 
 +++**`javascript`**
 
-Lookup-ID der JavaScript-Version basierend auf `j_jscript`. Verweist auf die Suchtabelle `javascript_version`
+Eine Lookup-ID der JavaScript-Version, basierend auf `j_jscript`.
+
+{{cja-df-lookup}}
 
 +++
 
@@ -467,7 +525,9 @@ Vom Browser unterstützte JavaScript-Version.
 
 +++**`language`**
 
-Numerische ID, die die Sprache der oder des Besuchenden darstellt. Verweist auf die Suchtabelle `languages.tsv`.
+Eine numerische ID, die die Sprache des Besuchers darstellt.
+
+{{cja-df-lookup}}
 
 +++
 
@@ -808,7 +868,9 @@ Auflösung des Mobilgeräts. `[Width] x [Height]` in Pixel.
 +++
 
 +++**`mobile_id`**
-Die numerische Geräte-ID, wenn die Person ein Mobilgerät verwendet. Der Schlüsselwert für `mobile_attributes.tsv` dynamische Suche.
+Die numerische Geräte-ID, wenn der Benutzer ein Mobilgerät verwendet.
+
+{{cja-df-lookup}}
 
 +++
 
@@ -842,7 +904,9 @@ Markierung, die bestimmt, ob es sich bei dem aktuellen Treffer um einen neuen Be
 
 +++**`os`**
 
-Numerische ID, die das Betriebssystem der oder des Besuchenden darstellt. Basiert auf der Spalte `user_agent`. Der Schlüsselwert für `operating_system.tsv` Standardsuche und `operating_system_type.tsv` dynamische Suche.
+Numerische ID, die das Betriebssystem der oder des Besuchenden darstellt. Basierend auf der Spalte `user_agent`.
+
+{{cja-df-lookup}}
 
 +++
 
@@ -864,9 +928,11 @@ Die Dimension Seite . Wenn die Variable `pagename` leer ist, verwendet Analytics
 
 +++**`page_event`**
 
-Die Art des Treffers, die in der Bildanforderung gesendet wird (Standardtreffer, Downloadlink, benutzerspezifischer Link, Exitlink). Siehe Suche nach Seitenereignissen .
+Der Typ des Treffers, der in der Bildanforderung gesendet wird (Standardtreffer, Downloadlink, benutzerspezifischer Link, Exitlink).
 
 {{cja-df-post}}
+
+{{cja-df-lookup}}
 
 +++
 
@@ -987,15 +1053,19 @@ Numerische ID, die den Referenztyp für den Treffer darstellt. Wird in der Dimen
 
 +++**`resolution`**
 
-Numerische ID, die die Auflösung des Bildschirms darstellt. Wird in der Dimension Monitor Resolution verwendet. Verwendet die Suchtabelle `resolution.tsv`.
+Numerische ID, die die Auflösung des Bildschirms darstellt. Wird in der Dimension Monitor Resolution verwendet.
+
+{{cja-df-lookup}}
 
 +++
 
 +++**`search_engine`**
 
-Numerische ID, die die Suchmaschine darstellt, über die die Besucherin oder der Besucher auf Ihre Site gelangt ist. Wird in Suchmaschinendimensionen verwendet. Verweist auf die Suchtabelle `search_engines.tsv`.
+Numerische ID, die die Suchmaschine darstellt, über die die Besucherin oder der Besucher auf Ihre Site gelangt ist. Wird in Suchmaschinendimensionen verwendet.
 
 {{cja-df-post}}
+
+{{cja-df-lookup}}
 
 +++
 
@@ -1123,7 +1193,9 @@ Die Dimension Detail des Letztkontakts.
 
 +++**`va_closer_id`**
 
-Eine numerische ID, die die Dimension Letztkontakt-Kanal identifiziert. Informationen zu dieser ID befinden sich im Marketing-Kanal-Manager.
+Eine numerische ID, die die Dimension Letztkontakt-Kanal identifiziert.
+
+{{cja-df-lookup}}
 
 +++
 
@@ -1135,7 +1207,9 @@ Die Dimension Erstkontakt-Detail .
 
 +++**`va_finder_id`**
 
-Eine numerische ID, die die Dimension „Erstkontakt-Kanal“ identifiziert. Informationen zu dieser ID befinden sich im Marketing-Kanal-Manager.
+Eine numerische ID, die die Dimension „Erstkontakt-Kanal“ identifiziert.
+
+{{cja-df-lookup}}
 
 +++
 
@@ -1549,13 +1623,17 @@ Basierend auf der Spalte `visit_referrer`. Die allererste verweisende Domain des
 
 +++**`visit_ref_type`**
 
-Numerische ID, die den Referrer-Typ des ursprünglichen Referrers des Besuchs darstellt. Verweist auf die Suchtabelle `referrer_type.tsv`
+Eine numerische ID, die den Referrer-Typ des ersten Referrers des Besuchs darstellt.
+
+{{cja-df-lookup}}
 
 +++
 
 +++**`visit_search_engine`**
 
-Numerische ID, die die erste Suchmaschine des Besuchs darstellt. Verweist auf die Suchtabelle `search_engines.tsv`.
+Eine numerische ID, die die erste Suchmaschine des Besuchs darstellt.
+
+{{cja-df-lookup}}
 
 +++
 

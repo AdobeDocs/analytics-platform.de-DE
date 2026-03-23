@@ -1,8 +1,8 @@
 ---
-source-git-commit: 51c9a7aa620f54bec3f0e4ad2d007dd52ecd12f4
+source-git-commit: 62b3ad7d3f458eb1edd6906c26a3b8c0c053d64b
 workflow-type: tm+mt
-source-wordcount: '5228'
-ht-degree: 95%
+source-wordcount: '5312'
+ht-degree: 93%
 
 ---
 # Snippets
@@ -301,7 +301,7 @@ Da Customer Journey Analytics für jede Komponente die Zuordnung zur Berichtszei
 
 ## CJA-Daten-Feed-Post-Spalten {#cja-df-post}
 
-Diese Analytics-Daten-Feed-Spalte enthält sowohl eine vorverarbeitete als auch eine nachverarbeitete Version (ein Präfix von `post_`). Spalten mit dem Präfix `post_` enthalten den Wert, der letztendlich im Reporting verwendet wird. In der folgenden Tabelle werden die Eigenschaften dieser Spalten verglichen:
+Diese Analytics-Daten-Feed-Spalte enthält sowohl eine vorverarbeitete als auch eine nachverarbeitete Version (ein Präfix von `post_`). Spalten mit dem Präfix `post_` enthalten den Wert, der letztendlich im Reporting verwendet wird. Die meisten Unternehmen verwenden nur `post_` Spalten, wenn sie verfügbar sind. In der folgenden Tabelle werden die Eigenschaften dieser Spalten verglichen:
 
 | Vorverarbeiteter Spaltenwert | Nachbearbeiteter Spaltenwert |
 | --- | --- |
@@ -310,9 +310,15 @@ Diese Analytics-Daten-Feed-Spalte enthält sowohl eine vorverarbeitete als auch 
 | Vor VISTA-Regeln | Nach VISTA-Regeln |
 | Keine Zuordnung angewendet | Zuordnung gilt |
 
-Die meisten Unternehmen verwenden nur `post_` Spalten, wenn sie verfügbar sind.
-
-Da Customer Journey Analytics kein Vorverarbeitungs- und Nachverarbeitungskonzept hat, ist es schwierig, beide Spalten in CJA-Daten-Feeds neu zu erstellen. Wenn Sie Näherungen dieser Spalten wünschen, können Sie dieselbe Spalte mit separaten Attributionseinstellungen verwenden:
+Da Customer Journey Analytics kein Vorverarbeitungs- und Nachverarbeitungskonzept hat, ist es schwierig, beide Spalten in CJA-Daten-Feeds neu zu erstellen. Wenn Sie Näherungen für diese Spalten wünschen, können Sie dasselbe XDM-Feld mehrmals in die Dimensionsspalte ziehen, um mehrere Komponenten mit unterschiedlichen Attributionseinstellungen zu erstellen:
 
 * **Vorverarbeitete Spalte**: Keine Attribution
 * **Nachbearbeitete Spalte**: Wenden Sie in den Einstellungen für die Datenansicht dieselben Zuordnungs- und Ablaufeinstellungen wie die Analytics-Variable an. Die meisten Komponenten würden die Zuordnung „Letzter“ und den Ablauf „Besuch“ verwenden.
+
+## Suchspalten für CJA-Daten-Feeds {#cja-df-lookup}
+
+Diese Analytics-Daten-Feed -Spalte verwendet eine Lookup-Tabelle, um den gewünschten Wert zu identifizieren. In Customer Journey Analytics wird der Wert direkt ohne Suchtabellen bereitgestellt. Stellen Sie sicher, dass Ihr Workflow den Endwert anstelle eines zwischengeschalteten Lookup-Werts berücksichtigt.
+
+## Nicht anwendbare Spalten für CJA-Daten-Feed {#cja-df-na}
+
+Diese Analytics-Daten-Feed-Spalte enthält Daten, die aufgrund von Unterschieden in der Datenarchitektur nicht in eine Customer Journey Analytics-Entsprechung übersetzt werden können.
