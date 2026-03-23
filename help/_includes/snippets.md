@@ -1,7 +1,7 @@
 ---
-source-git-commit: 62b3ad7d3f458eb1edd6906c26a3b8c0c053d64b
+source-git-commit: b0be8b726c4fab1bf9bb5f9462be84f39bdf184a
 workflow-type: tm+mt
-source-wordcount: '5312'
+source-wordcount: '5360'
 ht-degree: 93%
 
 ---
@@ -322,3 +322,7 @@ Diese Analytics-Daten-Feed -Spalte verwendet eine Lookup-Tabelle, um den gewüns
 ## Nicht anwendbare Spalten für CJA-Daten-Feed {#cja-df-na}
 
 Diese Analytics-Daten-Feed-Spalte enthält Daten, die aufgrund von Unterschieden in der Datenarchitektur nicht in eine Customer Journey Analytics-Entsprechung übersetzt werden können.
+
+## CJA-Daten-Feed-Benutzeragent {#cja-df-ua}
+
+Sie können nicht gleichzeitig sowohl Benutzeragenten- als auch Gerätesuchinformationen erfassen. Die Population dieser Dimensionen schließt sich gegenseitig aus. Sie müssen auswählen, ob Sie Benutzeragenten direkt oder Gerätesuchinformationen (basierend auf Benutzeragenten) erfassen möchten, wenn Sie [einen Datenstrom konfigurieren](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/configure#geolocation-device-lookup).

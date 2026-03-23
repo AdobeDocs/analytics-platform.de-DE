@@ -5,10 +5,10 @@ feature: Components
 hide: true
 hidefromtoc: true
 exl-id: 81d6e79e-8324-4726-9a48-10177b0a91b1
-source-git-commit: af5b30cd71ebe46e2af584ee502ef631c829f5ea
+source-git-commit: b0be8b726c4fab1bf9bb5f9462be84f39bdf184a
 workflow-type: tm+mt
-source-wordcount: '3356'
-ht-degree: 57%
+source-wordcount: '3768'
+ht-degree: 47%
 
 ---
 
@@ -20,7 +20,7 @@ Diese Referenz hilft Dateningenieuren, Adobe Analytics-Daten-Feed-Spalten zu bew
 
 >[!NOTE]
 >
->Diese Referenz enthält nur Spalten, die von Adobe auf der Grundlage der [Analytics-Daten-Feed-Spaltenreferenz) als aktuell &#x200B;](https://experienceleague.adobe.com/de/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference) werden. Wenn Sie eine Analytics-Daten-Feed-Spalte haben, die nicht in dieser Tabelle aufgeführt ist und die Sie aktiv verwenden, finden Sie im Lösungs-Design-Dokument Ihres Unternehmens die beste Entsprechung in Customer Journey Analytics.
+>Diese Referenz enthält nur Spalten, die von Adobe auf der Grundlage der [Analytics-Daten-Feed-Spaltenreferenz) als aktuell ](https://experienceleague.adobe.com/en/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference) werden. Wenn Sie eine Analytics-Daten-Feed-Spalte haben, die nicht in dieser Tabelle aufgeführt ist und die Sie aktiv verwenden, finden Sie im Lösungs-Design-Dokument Ihres Unternehmens die beste Entsprechung in Customer Journey Analytics.
 
 +++**`accept_language`**
 
@@ -109,9 +109,11 @@ Die Dimension Trackingcode .
 
 +++**`carrier`**
 
-Variable der Adobe Advertising-Integration. Gibt den Mobilnetzbetreiber an.
+Gibt den Mobilnetzbetreiber an.
 
 {{cja-df-lookup}}
+
+{{cja-df-ua}}
 
 +++
 
@@ -127,11 +129,31 @@ Die Dimension Site-Abschnitte .
 
 Client-Hinweise, die über die Kopfzeile der HTTP-Anfrage erfasst werden.
 
+In Adobe Analytics wurden Client-Hinweise als verkettete Zeichenfolge in diese Spalte aufgenommen. Es gilt als modernerer Ansatz als die `user_agent`.
+
+{{cja-df-ua}}
+
 +++
 
 +++**`ch_js`**
 
 Client-Hinweise, die über die JavaScript-API für Client-Hinweise von Benutzeragenten erfasst werden.
+
+In Adobe Analytics wurden Client-Hinweise als verkettete Zeichenfolge in diese Spalte aufgenommen. Es gilt als modernerer Ansatz als die `user_agent`.
+
+Sie können diese Daten mithilfe der [`highEntropyUserAgentHints`](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/commands/configure/context) Kontextzeichenfolge bei der Konfiguration der Web-SDK erfassen. Anstelle einer langen verketteten Zeichenfolge werden mehrere XDM-Felder ausgefüllt:
+
+* **Betriebssystemversion**: `xdm.environment.browserDetails.userAgentClientHints.platformVersion`
+* **Architektur**: `xdm.environment.browserDetails.userAgentClientHints.architecture`
+* **Gerätemodell**: `xdm.environment.browserDetails.userAgentClientHints.model`
+* **Bitness**: `xdm.environment.browserDetails.userAgentClientHints.bitness`
+* **Browser-Anbieter**: `xdm.environment.browserDetails.userAgentClientHints.vendor`
+* **Browser-Name**: `xdm.environment.browserDetails.userAgentClientHints.brand`
+* **Browser-Version**: `xdm.environment.browserDetails.userAgentClientHints.version`
+
+Weitere Informationen finden [ unter ](https://experienceleague.adobe.com/en/docs/experience-platform/collection/use-cases/client-hints)-Client-Hinweise für Benutzeragenten .
+
+{{cja-df-ua}}
 
 +++
 
@@ -255,11 +277,17 @@ Bestimmt, ob der Treffer ein mobiler Hintergrundtreffer ist.
 
 {{cja-df-post}}
 
+{{cja-df-na}}
+
+Customer Journey Analytics verfügt über kein natives Konzept des Ereignistyps, bei dem Treffer basierend auf dem Kontext des Treffers automatisch eingeschlossen oder ausgeschlossen werden. Mithilfe von `xdm.eventType` können Sie bestimmen, welche Ereignisse in den meisten Berichten ein- und ausgeschlossen werden sollen.
+
 +++
 
 +++**`cust_hit_time_gmt`**
 
 Nur für Report Suites mit aktiviertem Zeitstempel. Der mit dem Treffer gesendete Zeitstempel in UNIX®-Zeit.
+
+Customer Journey Analytics hat kein Konzept von Zeitstempeln im Vergleich zu Report Suites ohne Zeitstempel. Verwenden Sie stattdessen `xdm.timestamp` und passen Sie die Komponenteneinstellungen nach Bedarf an.
 
 {{cja-df-post}}
 
@@ -268,6 +296,8 @@ Nur für Report Suites mit aktiviertem Zeitstempel. Der mit dem Treffer gesendet
 +++**`cust_visid`**
 
 Die benutzerdefinierte Besucher-ID, sofern sie über `visitorID` festgelegt wurde.
+
+Customer Journey Analytics unterstützt eine beliebige Anzahl von Identitäten mithilfe von [`identityMap`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/field-groups/profile/identitymap). Wenn Ihr Unternehmen benutzerdefinierte Identitäten verwendet, ist dies wahrscheinlich innerhalb der Identitätszuordnung.
 
 {{cja-df-post}}
 
@@ -289,9 +319,7 @@ Markierung, die bestimmt, ob es sich bei dem Treffer um eine neue tägliche Besu
 
 Die Dimension Einverständnisverwaltungs-Opt-in . Pro Treffer können mehrere Werte vorhanden sein, getrennt durch einen senkrechten Strich (`\|`). Gültige Werte sind `DMP` und `SELL`.
 
-{{cja-df-na}}
-
-Diese Spalte gilt nicht, da Customer Journey Analytics nicht ???.
+Wenn Ihr Unternehmen über eine Datenverwaltungsplattform verfügt, füllt es wahrscheinlich die gewünschten XDM-Felder für diese Dimension.
 
 +++
 
@@ -299,11 +327,15 @@ Diese Spalte gilt nicht, da Customer Journey Analytics nicht ???.
 
 Die Dimension Einverständnisverwaltungs-Opt-out . Pro Treffer können mehrere Werte vorhanden sein, getrennt durch einen senkrechten Strich (`\|`). Gültige Werte sind `SSF`, `DMP` und `SELL`.
 
+Wenn Ihr Unternehmen über eine Datenverwaltungsplattform verfügt, füllt es wahrscheinlich die gewünschten XDM-Felder für diese Dimension.
+
 +++
 
 +++**`date_time`**
 
 Die Uhrzeit des Treffers in lesbarem Format, basierend auf der Zeitzone der Report Suite.
+
+Sie können `xdm.timestamp` verwenden und die Komponenteneinstellung **[!UICONTROL Datum]** oder **[!UICONTROL Datum-Uhrzeit]** [Format](/help/data-views/component-settings/format.md) anwenden.
 
 +++
 
@@ -311,11 +343,17 @@ Die Uhrzeit des Treffers in lesbarem Format, basierend auf der Zeitzone der Repo
 
 Die Dimension Domain . Basierend auf dem Internetzugangspunkt der Besuchenden.
 
+Aktivieren **[!UICONTROL Netzwerksuche]** beim [Konfigurieren eines Datenstroms](https://experienceleague.adobe.com/de/docs/experience-platform/datastreams/configure). Das XDM-Feld wird `xdm.environment.domain`, wenn es in Ihrem Schema enthalten ist.
+
 +++
 
 +++**`duplicated_from`**
 
 Wird nur in Report Suites mit VISTA-Regeln zur Trefferkopie verwendet. Gibt an, von welcher Report Suite der Treffer kopiert wurde.
+
+{{cja-df-na}}
+
+Diese Spalte gilt nicht, da Customer Journey Analytics kein Konzept von VISTA-Regeln hat.
 
 +++
 
@@ -323,11 +361,19 @@ Wird nur in Report Suites mit VISTA-Regeln zur Trefferkopie verwendet. Gibt an, 
 
 Listet jedes Ereignis auf, das als Duplikat gezählt wurde.
 
+{{cja-df-na}}
+
+Customer Journey Analytics hat kein einzelnes Feld, das als Deduplizierungs-Markierung für alle Metriken dient. Stattdessen enthält jede Metrik ihre eigenen [Metrik-Deduplizierungs-Komponenteneinstellungen](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-settings/metric-deduplication). Daher gibt es in Customer Journey Analytics kein entsprechendes Feld für diese Daten-Feed-Spalte in Adobe Analytics.
+
 +++
 
 +++**`duplicate_purchase`**
 
 Markierung, die bestimmt, ob das Kaufereignis für diesen Treffer ignoriert wird, weil es ein Duplikat ist.
+
+Es gibt zwar keine direkte Übersetzung für diese Analytics-Daten-Feed-Spalte, aber die Funktion, Käufe zu deduplizieren, ist noch vorhanden. Bei Verwendung der Feldergruppe [[!UICONTROL Commerce-]](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/field-groups/event/commerce-details)Details&#39; können Sie [Metrik-Deduplizierung - Komponenteneinstellungen](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-settings/metric-deduplication) festlegen, bei die **[!UICONTROL Deduplizierungs-ID]** `xdm.commerce.purchases.id` ist.
+
+Wenn eine direkte Übersetzung erforderlich ist, wenn Sie eine Markierung für doppelte Käufe benötigen, können Sie ein [Abgeleitetes Feld](/help/data-views/derived-fields/derived-fields.md) mithilfe der Funktion **Deduplizieren** im Regelsatz verwenden.
 
 +++
 
@@ -360,7 +406,7 @@ Diese Spalte wird je nach Ihrer Implementierung wahrscheinlich Dutzenden von sep
 
 {{cja-df-post}}
 
-Wenn Ihr Schema die [[!UICONTROL Commerce Details]](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/field-groups/event/commerce-details)-Feldergruppe verwendet, sind einige Metriken möglicherweise direkt den folgenden XDM-Feldern zugeordnet:
+Wenn Ihr Schema die [[!UICONTROL Commerce Details]](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/field-groups/event/commerce-details)-Feldergruppe verwendet, sind einige Metriken möglicherweise direkt den folgenden XDM-Feldern zugeordnet:
 
 * **Checkouts**: `xdm.commerce.checkouts.value`
 * **Hinzufügungen zum Warenkorb**: `xdm.commerce.productListAdds.value`
@@ -373,7 +419,7 @@ Wenn Ihr Schema die [[!UICONTROL Commerce Details]](https://experienceleague.ado
 Einige Metriken verwenden möglicherweise die Ereignis-Serialisierung, wodurch Adobe Analytics die volle Kontrolle über die Deduplizierung ermöglicht. Sie können die Komponenteneinstellung [Metrik-Deduplizierung](/help/data-views/component-settings/metric-deduplication.md) verwenden, um eine Deduplizierungsparität zu erzielen.
 
 * Wenn Ihre Metrik nach Besuch in Adobe Analytics dedupliziert wird, können Sie in den Komponenteneinstellungen dieser Metrik den Deduplizierungsbereich auf Sitzung festlegen.
-* Wenn Ihre Metrik nach Ereignis-ID in Adobe Analytics dedupliziert wird, enthält das XDM-Objekt für diese Metrik wahrscheinlich sowohl ein `value`- als auch ein `id`. Wenn Ihr Schema die Feldergruppe [[!UICONTROL Commerce-Details]](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/field-groups/event/commerce-details) verwendet, befinden sich diese Metriken wahrscheinlich in diesen XDM-Feldern, für die Sie in den Komponenteneinstellungen der **[!UICONTROL das Feld]** Deduplizierungs-ID) festlegen können:
+* Wenn Ihre Metrik nach Ereignis-ID in Adobe Analytics dedupliziert wird, enthält das XDM-Objekt für diese Metrik wahrscheinlich sowohl ein `value`- als auch ein `id`. Wenn Ihr Schema die Feldergruppe [[!UICONTROL Commerce-Details]](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/field-groups/event/commerce-details) verwendet, befinden sich diese Metriken wahrscheinlich in diesen XDM-Feldern, für die Sie in den Komponenteneinstellungen der **[!UICONTROL das Feld]** Deduplizierungs-ID) festlegen können:
 
    * **Checkouts**: `xdm.commerce.checkouts.id`
    * **Hinzufügungen zum Warenkorb**: `xdm.commerce.productListAdds.id`
@@ -381,13 +427,23 @@ Einige Metriken verwenden möglicherweise die Ereignis-Serialisierung, wodurch A
    * **Entnahmen aus dem Warenkorb**: `xdm.commerce.productListRemovals.id`
    * **Warenkorbansichten**: `xdm.commerce.productListViews.id`
    * **Produktansichten**: `xdm.commerce.productViews.id`
-   * **Bestellungen**: `xdm.commerce.purchases.id`
+
+Wenn Sie die Metrik Bestellungen deduplizieren möchten, lesen Sie den Abschnitt `duplicate_purchase`.
 
 +++
 
 +++**`exclude_hit`**
 
-Markierung, die bestimmt, ob der Treffer aus dem Reporting ausgeschlossen wird. Die Spalte `visit_num` wird bei ausgenommenen Hits nicht erhöht.<br>1: Nicht verwendet. Teil einer veralteten Funktion.<br>2: Nicht verwendet. Teil einer veralteten Funktion.<br>3: Wird nicht mehr verwendet. Ausschluss des Benutzeragenten<br>4: Ausschluss basierend auf IP-Adresse<br>5: Wichtige Hit-Informationen fehlen, z. B. `page_url`, `pagename`, `page_event` oder `event_list`<br>6: JavaScript hat Hit nicht korrekt verarbeitet<br>7: Kontospezifischer Ausschluss, z. B. in VISTA-Regeln<br>8: Nicht verwendet. Alternativer kontospezifischer Ausschluss.<br>9: Nicht verwendet. Teil einer veralteten Funktion.<br>10: Ungültiger Währungscode<br>11: Treffer, bei dem ein Zeitstempel für eine Report Suite mit Zeitstempel fehlt, oder ein Treffer, der einen Zeitstempel in einer Report Suite ohne Zeitstempel aufweist<br>12: Nicht verwendet. Teil einer veralteten Funktion.<br>13: Nicht verwendet. Teil einer veralteten Funktion.<br>14: Target-Treffer, der nicht mit einem Analytics-Treffer übereinstimmte<br>15: Derzeit nicht verwendet.<br>16: Advertising Cloud-Treffer, der nicht mit einem Analytics-Treffer übereinstimmte
+Markierung, die bestimmt, ob der Treffer aus dem Reporting ausgeschlossen wird. Die Spalte `visit_num` wird bei ausgenommenen Hits nicht erhöht.
+
+Customer Journey Analytics berücksichtigt „ausgeschlossene Treffer“ nicht standardmäßig. Sie können diese Funktion jedoch neu erstellen, wenn Sie über ein XDM-Feld verfügen, das bestimmte Treffer kennzeichnet, die ausgeschlossen werden sollen:
+
+1. Stellen Sie sicher, dass das XDM-Feld, das ausgeschlossene Treffer kennzeichnet, als Komponente enthalten ist (Dimension oder Metrik, je nachdem, wie Sie dieses Flag eingerichtet haben). Die Auswahl [Komponente in Berichten ausblenden](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-settings/overview) ist wahrscheinlich für dieses Feld von Vorteil.
+1. Wählen [ in den Einstellungen ](/help/data-views/session-settings.md) Datenansicht das Dropdown-Menü **[!UICONTROL Segment hinzufügen]** und wählen Sie **[!UICONTROL Segment erstellen]**.
+1. Erstellen Sie ein Segment, das alle Ereignisse ausschließt, bei denen die Ausschlusstrefferkomponente vorhanden ist oder Werte enthält, die ausgeschlossen werden sollen.
+1. Wählen **[!UICONTROL sowohl]** Segment als auch in der Datenansicht „Speichern“ aus.
+
+Ausgeschlossene Treffer sind jetzt nicht in Customer Journey Analytics-Berichten vorhanden, aber weiterhin in Daten-Feed-Exporten verfügbar.
 
 +++
 
@@ -907,6 +963,14 @@ Markierung, die bestimmt, ob es sich bei dem aktuellen Treffer um einen neuen Be
 Numerische ID, die das Betriebssystem der oder des Besuchenden darstellt. Basierend auf der Spalte `user_agent`.
 
 {{cja-df-lookup}}
+
+Beim [Konfigurieren eines Datenstroms](https://experienceleague.adobe.com/de/docs/experience-platform/datastreams/configure) können Sie die **[!UICONTROL Gerätesuche“]**. Aktivieren Sie das Kontrollkästchen **[!UICONTROL Betriebssystem]**, falls aktiviert. Dadurch werden automatisch die folgenden XDM-Felder ausgefüllt, wenn Sie diese Felder in Ihr Schema aufgenommen haben:
+
+* **Betriebssystemanbieter**: `xdm.environment.operatingSystemVendor`
+* **Betriebssystemname**: `xdm.environment.operatingSystem`
+* **Betriebssystemversion**: `xdm.environment.operatingSystemVersion`
+
+{{cja-df-ua}}
 
 +++
 
