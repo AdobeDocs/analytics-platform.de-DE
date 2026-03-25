@@ -4,22 +4,22 @@ title: Komponenteninformationen anzeigen
 feature: Components
 role: User, Admin
 exl-id: 1e538679-12e0-487c-917f-2ff2f1cc8436
-source-git-commit: f0786cfa74453693078c7d30d647a96bf1d98d07
+source-git-commit: 5319c0aafa5c92215176044a35953ac1e183eb53
 workflow-type: tm+mt
-source-wordcount: '1217'
-ht-degree: 62%
+source-wordcount: '1324'
+ht-degree: 59%
 
 ---
 
 # Komponenteninformationen anzeigen
 
-Mit dem Datenwörterbuch können Sie Informationen über eine Komponente anzeigen, einschließlich der Komponentenbeschreibung, ähnlicher Komponenten, anderer Komponenten, mit denen eine Komponente häufig verwendet wird, und mehr.
+Mit dem Datenwörterbuch können Sie Informationen über eine Komponente anzeigen, einschließlich ihrer Beschreibung, ähnlicher Komponenten, anderer Komponenten, mit denen eine Komponente häufig verwendet wird, und mehr.
 
 So zeigen Sie Informationen zu einer Komponente im Datenwörterbuch an:
 
 1. Wechseln Sie zum Analysis Workspace-Projekt, das die Komponente enthält, die Sie anzeigen möchten.
 
-1. Wählen Sie [!UICONTROL **Symbol &quot;**]&quot; im linken Bereich von Analysis Workspace aus. (Alternative Möglichkeiten für den Zugriff auf das Datenwörterbuch sind unter „Zugriff auf das Datenwörterbuch“ in [Datenwörterbuch – Überblick](/help/components/data-dictionary/data-dictionary-overview.md) beschrieben.)
+1. Wählen Sie [!UICONTROL **Symbol &quot;**]&quot; im linken Bereich von Analysis Workspace aus. (Alternative Möglichkeiten für den Zugriff auf das Datenwörterbuch sind unter [Zugriff auf das Datenwörterbuch](/help/components/data-dictionary/data-dictionary-overview.md#access-the-data-dictionary) in [Datenwörterbuch - Übersicht](/help/components/data-dictionary/data-dictionary-overview.md) beschrieben.)
 
    Das Fenster „Datenwörterbuch“ wird angezeigt.
 
@@ -31,9 +31,21 @@ So zeigen Sie Informationen zu einer Komponente im Datenwörterbuch an:
 
 1. (Optional) Geben Sie im Suchfeld den Namen der Komponente ein, die Sie anzeigen möchten.
 
-   Der Komponententyp kann sowohl durch Farbe als auch durch ein Symbol identifiziert werden. **Dimensionen** ![Dimensionsymbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) sind orange, **Segmente** ![Segmentsymbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Segmentation_18_N.svg) sind blau, **Datumsbereiche** ![Datumsbereichsymbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg) sind violett und **Metriken** ![Metriksymbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Event_18_N.svg) sind grün. Das Adobe-Symbol ![Adobe-Symbol](assets/default-calc-metric-icon.png) zeigt entweder eine Vorlage für berechnete Metriken oder eine Segmentvorlage an, und das Taschenrechnersymbol ![Taschenrechnersymbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calculator_18_N.svg) zeigt eine berechnete Metrik an, die von einer Analytics-Administratorin bzw. einem -Administrator in Ihrer Organisation erstellt wurde.
+   Der Komponententyp kann sowohl durch Farbe als auch durch ein Symbol identifiziert werden.
 
-1. (Optional) Wählen Sie **Filter**-Symbol ![Datenwörterbuchfiltersymbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg) und wählen Sie dann eine der folgenden Segmentoptionen, um die Liste der Komponenten zu filtern:
+   * **Dimensionen** ![Dimension-Symbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) sind orange
+
+   * **Segmente** ![Segmentsymbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Segmentation_18_N.svg) sind blau
+
+   * **Datumsbereiche** ![Datumsbereichssymbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg) sind violett
+
+   * **Metriken** ![Metriksymbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Event_18_N.svg) sind grün
+
+   * **Adobe-Symbol** ![Adobe-Symbol](assets/default-calc-metric-icon.png) Zeigt entweder eine Vorlage für berechnete Metriken oder eine Segmentvorlage an
+
+   * **Taschenrechnersymbol** ![Taschenrechnersymbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calculator_18_N.svg) zeigt eine berechnete Metrik an, die von einer Analytics-Administratorin bzw. einem -Administrator in Ihrer Organisation erstellt wurde
+
+1. (Optional) Wählen Sie das Symbol **Filter** ![Datenwörterbuchfilter-Symbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg) und wählen Sie dann eine der folgenden Filteroptionen, um die Liste der Komponenten zu filtern:
 
    | Option | Funktion |
    |---------|----------|
@@ -52,9 +64,16 @@ So zeigen Sie Informationen zu einer Komponente im Datenwörterbuch an:
 
    {style="table-layout:auto"}
 
-1. (Optional) Wählen Sie das Symbol **Sortieren** Symbol ![Komponenten sortieren](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SortOrderDown_18_N.svg) und wählen Sie dann eine der folgenden Segmentoptionen, um die Liste der Komponenten zu sortieren:
+1. (Optional) Wählen Sie das Symbol **Sortieren** Symbol ![Komponenten sortieren](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SortOrderDown_18_N.svg) aus und wählen Sie dann eine der folgenden Filteroptionen, um die Liste der Komponenten zu sortieren:
 
-   {{components-sort-options}}
+   | Option | Funktion |
+   |---------|----------|
+   | **[!UICONTROL Empfohlen]** | Sortiert Komponenten für jeden Typ (Dimension, Metrik, Segment und Datumsbereich) basierend auf ihrer Empfehlung. Komponenten, die am häufigsten und zuletzt von Ihnen oder anderen in Ihrem Unternehmen verwendet werden, werden weiter oben in jeder Liste angezeigt. |
+   | **[!UICONTROL Zuletzt geändert]** | Sortiert Komponenten für jeden Typ (Dimension, Metrik, Segment und Datumsbereich) basierend auf dem Datum ihrer letzten Änderung. Komponenten, die zuletzt geändert wurden, werden höher in jeder Liste angezeigt. |
+   | **[!UICONTROL Alphabetisch]** | Sortiert Komponenten für jeden Typ (Dimension, Metrik, Segment und Datumsbereich) in aufsteigender alphabetischer Reihenfolge. |
+   | **[!UICONTROL Kategorisch]** | Sortiert Komponenten für jeden Typ (Dimension, Metrik, Segment und Datumsbereich) basierend auf ihrer Kategorie. Beispiel: Kuratierte versus nicht kuratierte Datenansichtskomponenten. |
+
+   {style="table-layout:auto"}
 
 1. Wählen Sie aus der Komponentenliste die Komponente aus, die Sie anzeigen möchten.
 
@@ -68,7 +87,7 @@ So zeigen Sie Informationen zu einer Komponente im Datenwörterbuch an:
    | [!UICONTROL **Beschreibung**] | Beschreibt die beabsichtigte Funktion der Komponente. (Diese Informationen werden vom Analytics-Admins hinzugefügt, wie unter [Komponentenbeschreibungen hinzufügen](/help/components/add-component-descriptions.md) beschrieben.) |
    | [!UICONTROL **Häufig verwendet mit**] | <p>Zeigt Komponenten an, die am häufigsten mit der Komponente verwendet werden, die Sie anzeigen.</p><p>Es werden bis zu 5 Komponenten für die 5 primären Komponententypen angezeigt: Metrik, Berechnete Metrik, Dimension, Segment und Datumsbereich.</p><p>Diese Liste basiert auf Daten aus den letzten 90 Tagen. Es werden nur Komponenten angezeigt, auf die Sie Zugriff haben.</p><p>Admins können die Komponenten, die Benutzende in diesem Abschnitt sehen, kuratieren, indem sie die gewünschten Komponenten in den Dropdown-Feldern [!UICONTROL **Immer einschließen**] und [!UICONTROL **Immer ausschließen**] auswählen. Bevor Sie die Komponenten kuratieren, die Benutzenden angezeigt werden, wenden Sie zunächst das Segment **Alle anzeigen** an, um sicherzustellen, dass Sie alle Komponenten sehen, die nicht für Sie freigegeben sind und möglicherweise von einem anderen Administrator hinzugefügt wurden.<!-- Soon we will make it so any fields that an admin doesn't have access to will be greyed out, and then they can enable the Show all segment to make it editable. --></p> |
    | [!UICONTROL **Ähnlich wie**] | <p>Zeigt Komponenten mit ähnlichen Namen wie die angezeigte Komponente an.</p><p>Es werden bis zu 5 Komponenten für die 5 primären Komponententypen angezeigt: Metrik, Berechnete Metrik, Dimension, Segment und Datumsbereich.</p><p>Es werden nur Komponenten angezeigt, auf die Sie Zugriff haben.</p><p>Hier werden alle doppelten Komponenten in Ihrer Datenansicht angezeigt. Analytics-Admins sollten alle doppelten Komponenten identifizieren und entfernen, wie unter [Überwachen des Zustands des Datenwörterbuchs](/help/components/data-dictionary/monitor-data-dictionary-health.md) beschrieben.</p><p>Adminis können die Komponenten, die Benutzende in diesem Abschnitt sehen, kuratieren, indem sie die gewünschten Komponenten in den Dropdown-Feldern [!UICONTROL **Immer einschließen**] und [!UICONTROL **Immer ausschließen**] auswählen. Bevor Sie die Komponenten kuratieren, die Benutzenden angezeigt werden, wenden Sie zunächst das Segment **Alle anzeigen** an, um sicherzustellen, dass Sie alle Komponenten sehen, die nicht für Sie freigegeben sind und möglicherweise von einem anderen Administrator hinzugefügt wurden.<!-- Soon we will make it so any fields that an admin doesn't have access to will be greyed out, and then they can enable the Show all segment to make it editable. --></p><p>**HINWEIS:** Derzeit enthält der Abschnitt **Ähnlich wie** nur von Ihnen erstellte Komponenten und nicht die von Adobe bereitgestellten Komponenten. Von Adobe bereitgestellte Komponenten werden in einer zukünftigen Version hinzugefügt.</p> |
-   | [!UICONTROL **Produktkompatibilität**] | Gibt an, wo in Customer Journey Analytics diese berechnete Metrik verwendet werden kann. <p>Die möglichen Werte sind:</p><ul><li>[!UICONTROL **Überall in Customer Journey Analytics**]: Die berechnete Metrik kann in ganz Customer Journey Analytics verwendet werden, einschließlich Analysis Workspace, Report Builder usw.</li><li>[!UICONTROL **Überall in Customer Journey Analytics (außer beim Experimentieren)**]: Die berechnete Metrik kann überall in Customer Journey Analytics verwendet werden, mit Ausnahme des Panels „Experimentieren“.</li> <p>Informationen zu den Kriterien, die bestimmen, ob eine berechnete Metrik beim Experimentieren verwendet werden kann, finden Sie unter [Verwenden berechneter Metriken im Bedienfeld &#x200B;](/help/analysis-workspace/c-panels/experimentation.md#use-calculated-metrics-in-the-experimentation-panel)Experimentieren[&#x200B; im Bedienfeld Experimentieren](/help/analysis-workspace/c-panels/experimentation.md).</p></ul> |
+   | [!UICONTROL **Produktkompatibilität**] | Gibt an, wo in Customer Journey Analytics diese berechnete Metrik verwendet werden kann. <p>Die möglichen Werte sind:</p><ul><li>[!UICONTROL **Überall in Customer Journey Analytics**]: Die berechnete Metrik kann in ganz Customer Journey Analytics verwendet werden, einschließlich Analysis Workspace, Report Builder usw.</li><li>[!UICONTROL **Überall in Customer Journey Analytics (außer beim Experimentieren)**]: Die berechnete Metrik kann überall in Customer Journey Analytics verwendet werden, mit Ausnahme des Panels „Experimentieren“.</li> <p>Informationen zu den Kriterien, die bestimmen, ob eine berechnete Metrik beim Experimentieren verwendet werden kann, finden Sie unter [Verwenden berechneter Metriken im Bedienfeld ](/help/analysis-workspace/c-panels/experimentation.md#use-calculated-metrics-in-the-experimentation-panel)Experimentieren[ im Bedienfeld Experimentieren](/help/analysis-workspace/c-panels/experimentation.md).</p></ul> |
    | [!UICONTROL **Tags**] | Zeigt alle Tags an, die auf die Komponente angewendet werden. Benutzende mit Adminrechten können bei der Bearbeitung der Komponente Tags hinzufügen. |
    | [!UICONTROL **Typ der Komponente**] | Listet den Komponententyp auf, ob es sich um eine Dimension, eine Metrik, ein Segment oder einen Datumsbereich handelt. |
    | [!UICONTROL **Erstellt von**] | Zeigt den Namen der Person an, die die Komponente erstellt hat. |
