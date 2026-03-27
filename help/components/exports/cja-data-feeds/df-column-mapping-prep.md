@@ -5,26 +5,25 @@ title: Vorbereiten der Zuordnung von Daten-Feed-Spalten von Adobe Analytics zu C
 feature: Components
 hide: true
 hidefromtoc: true
-source-git-commit: 5dada1744a479cd4736c9fb7f3c807471e8da226
+exl-id: d0a9e697-1e48-4cfb-8613-2f932bf5015b
+source-git-commit: 9403a4c6d0e0389de19aa4627d9d952f0c31f1a2
 workflow-type: tm+mt
-source-wordcount: '948'
+source-wordcount: '1060'
 ht-degree: 2%
 
 ---
 
 # Vorbereiten der Zuordnung von Daten-Feed-Spalten von Adobe Analytics zu Customer Journey Analytics
 
-Bei der Umstellung von Adobe Analytics-Daten-Feeds auf Customer Journey Analytics-Daten-Feeds ist es normal, jede Adobe Analytics-Daten-Feed-Spalte einer Daten-Feed-Spalte in Customer Journey Analytics zuzuordnen.
+Customer Journey Analytics bietet eine flexiblere Architektur als Adobe Analytics, um die Spalten zu bestimmen, die für die Aufnahme in einen Daten-Feed verfügbar sind. Die meisten Unternehmen sollten damit rechnen, andere Daten-Feed-Spalten aus Customer Journey Analytics zu exportieren als aus Adobe Analytics. Diese Unterschiede sind auf die folgenden Faktoren zurückzuführen:
 
-Bei der Zuordnung von Daten-Feed-Spalten von Adobe Analytics zu Customer Journey Analytics handelt es sich jedoch selten um eine Eins-zu-eins-Zuordnung. Dies ist auf die folgenden Faktoren zurückzuführen:
+* **[Schemaarchitektur](#schema-architecture)**: Adobe Analytics-Daten-Feed-Spalten werden von Analytics-Variablen abgeleitet, während Customer Journey Analytics-Daten-Feed-Spalten vom Datenansichtsschema abgeleitet werden.
 
-* **[Schemaarchitektur](#schema-architecture)**: Adobe Analytics-Daten-Feed-Spalten werden von Analytics-Variablen abgeleitet, während Customer Journey Analytics-Daten-Feed-Spalten von XDM-Schemafeldern in Experience Platform und Datenansichtskomponenten in Customer Journey Analytics abgeleitet werden.
+* **[Datenverarbeitung](#data-processing)**: Zwischen Adobe Analytics und Customer Journey Analytics bestehen grundlegende Unterschiede bei der Datenverarbeitung, insbesondere das Vorhandensein sowohl vorab verarbeiteter als auch nachbearbeiteter Spalten für viele Adobe Analytics-Spalten.
 
-* **[Implementierungstyp](#implementation-type)**: Adobe Analytics und Customer Journey Analytics unterstützen jeweils mehrere Implementierungskonfigurationen. Die Schritte, die zum Zuordnen einzelner Felder erforderlich sind, hängen von diesen Implementierungen ab.
+* **[Nicht verwendete Spalten](#unused-columns)**: Adobe Analytics enthält mehr als 1.100 Daten-Feed-Spalten. Die meisten Unternehmen verwenden nicht die Daten aus allen Spalten, die exportiert werden.
 
-* **[Datenverarbeitung](#data-processing)**: Zwischen Adobe Analytics und Customer Journey Analytics bestehen grundlegende Unterschiede bei der Datenverarbeitung.
-
-* **[Nicht verwendete Spalten](#unused-columns)**: Adobe Analytics enthält mehr als 1.100 Daten-Feed-Spalten. Ermitteln Sie, welche dieser Spalten Ihr Unternehmen verwendet, damit Sie nur die erforderlichen Spalten zuordnen können.
+* **[Kanalübergreifende Spalten](#cross-channel-columns)**: Customer Journey Analytics unterstützt kanalübergreifende Daten (z. B. Callcenter-Daten), die in Adobe Analytics nicht verfügbar sind.
 
 Bevor Sie mit der Zuordnung von Daten-Feed-Spalten in Adobe Analytics zu Daten-Feed-Spalten in Customer Journey Analytics beginnen, lesen Sie die folgenden Abschnitte, um diese Schlüsselfaktoren, die die Zuordnung beeinflussen, besser zu verstehen.
 
@@ -32,57 +31,50 @@ Nachdem Sie diese Informationen geprüft haben, befolgen Sie die Zuordnungsanwei
 
 ## Schemaarchitektur
 
-Das Experience-Datenmodell (XDM)-Schema ist zusammen mit den in Customer Journey Analytics verwendeten Datenansichten flexibler als das Adobe Analytics-Variablenmodell. Daher enthält das XDM-Schema Ihrer Organisation wahrscheinlich keine Felder, die in Eins-zu-eins-Daten-Feed-Spaltenzuordnungen übersetzt werden können.
+Customer Journey Analytics bietet eine flexiblere Architektur als Adobe Analytics, um zu bestimmen, welche Spalten in einen Daten-Feed aufgenommen werden können:
 
-Beachten Sie die folgenden Punkte zur Schemaarchitektur:
+### Adobe Analytics-Architektur
 
-* Das Fehlen von Eins-zu-eins-Spaltenzuordnungen bedeutet nicht, dass Ihr Customer Journey Analytics-XDM-Schema unzureichend ist. Stattdessen müssen Sie zunächst ermitteln, welche Adobe Analytics-Daten-Feed-Spalten Sie derzeit verwenden, und dann nur diese Spalten Customer Journey Analytics-Daten-Feeds zuordnen.
+Es steht eine vordefinierte statische Liste von Variablen zur Verfügung, die als Daten-Feed-Spalten einbezogen werden können.
 
-* Das Customer Journey Analytics-XDM-Schema unterstützt kanalübergreifende Daten (z. B. Callcenter-Daten), die in Adobe Analytics nicht verfügbar sind. Diese kanalübergreifenden Felder sind Beispiele für neue Spalten, die in Customer Journey Analytics-Daten-Feeds enthalten sein können, die in Adobe Analytics nicht unterstützt werden.
+Es ist einfach, alle Spalten einzubeziehen, und viele Kunden tun dies, auch wenn die in diesen Spalten enthaltenen Daten nicht im gesamten Unternehmen verwendet werden.
 
-* Felder können erst in einen Customer Journey Analytics-Daten-Feed aufgenommen werden, nachdem sie in Experience Platform in das XDM-Schema aufgenommen und dann für die Verwendung in der Datenansicht in Customer Journey Analytics kuratiert wurden.
+### Customer Journey Analytics-Architektur
 
-  Detaillierte Informationen zu diesem Prozess für jede potenzielle Adobe Analytics-Daten-Feed-Spalte finden Sie [Datenspaltenreferenz](/help/components/exports/cja-data-feeds/aa-cja-column-reference.md).
+Alle Komponenten, die im Datenansichtsschema enthalten sind, können als Daten-Feed -Spalten einbezogen werden. Detaillierte Informationen zu diesem Prozess für jede potenzielle Adobe Analytics-Daten-Feed-Spalte finden Sie [Datenspaltenreferenz](/help/components/exports/cja-data-feeds/aa-cja-column-reference.md).
 
->[!TIP]
->
->Wenden Sie sich nach Möglichkeit an das Team oder die Einzelperson, die das XDM-Schema für die Customer Journey Analytics-Implementierung Ihres Unternehmens entwickelt hat. Viele der Entscheidungen darüber, welche Adobe Analytics-Felder in Customer Journey Analytics benötigt werden, wurden bei der Erstellung des XDM-Schemas getroffen. Weitere Informationen finden Sie unter [Planen Ihres Schemas zur Verwendung mit Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-schema-architect.md).
+Komponenten sind im Datenansichtsschema auf eine der in der folgenden Tabelle beschriebenen Arten enthalten:
 
-## Implementierungstyp
-
-<!--  tons of different AA implementations + tons of different CJA schemas -->
-
-Die Anzahl der Felder, die Ihrem Customer Journey Analytics-XDM-Schema zugeordnet werden können, kann je nachdem, wie Daten für Ihre Customer Journey Analytics-Implementierung erfasst werden, unterschiedlich sein:
-
-* **Neue Web SDK-Implementierungen**: Wenn Ihre Customer Journey Analytics-Implementierung ein benutzerdefiniertes Schema verwendet, sind viele Spalten, die in Adobe Analytics-Daten-Feeds vorhanden sind, wahrscheinlich nicht in Customer Journey Analytics vorhanden. Ebenso kann Customer Journey Analytics Felder enthalten, die nicht in Adobe Analytics-Daten-Feeds vorhanden sind.
-
-* **Analytics Source Connector-Implementierungen**: Standardmäßig sind für viele Daten-Feed-Spalten Eins-zu-eins-Feldzuordnungen vorhanden, da der Analytics Source Connector die Analytics Experience Event -Feldergruppe im XDM-Schema verwendet. Informationen dazu, welche Adobe Analytics-Felder den Feldern in dieser Feldergruppe zugeordnet sind, finden Sie unter [Analytics-](https://experienceleague.adobe.com/de/docs/experience-platform/sources/connectors/adobe-applications/mapping/analytics)) in der Experience Platform-Dokumentation.
-
-<!-- **Data layer**: ??? -->
+| Methode zur Aufnahme in das Datenansichtsschema | Zusätzliche Informationen |
+|---------|----------|
+| XDM-Schemafelder werden in der Datenansicht als Komponenten kuratiert | Felder, die in Ihrem XDM-Schema vorhanden sind, werden Teil des Datenansichtsschemas in Customer Journey Analytics, nachdem sie als Komponenten in der Datenansicht kuratiert wurden. <p>Die Anzahl der Felder, die standardmäßig in Ihrem Customer Journey Analytics-XDM-Schema verfügbar sind, kann je nachdem, wie Daten für Ihre Customer Journey Analytics-Implementierung erfasst werden, unterschiedlich sein:</p><ul><li>**Neue Web SDK-Implementierungen**: Wenn Ihre Customer Journey Analytics-Implementierung ein benutzerdefiniertes Schema verwendet, sind viele Spalten, die in Adobe Analytics-Daten-Feeds vorhanden sind, wahrscheinlich nicht in Customer Journey Analytics vorhanden. Ebenso kann Customer Journey Analytics Felder enthalten, die nicht in Adobe Analytics-Daten-Feeds vorhanden sind.<p>Wenden Sie sich nach Möglichkeit an das Team oder die Einzelperson, die das XDM-Schema für die Customer Journey Analytics-Implementierung Ihres Unternehmens entwickelt hat. Viele der Entscheidungen darüber, welche Adobe Analytics-Felder in Customer Journey Analytics benötigt werden, wurden bei der Erstellung des XDM-Schemas getroffen. Weitere Informationen finden Sie unter [Planen Ihres Schemas zur Verwendung mit Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-schema-architect.md).</p></li><li>**Analytics Source Connector-Implementierungen**: Standardmäßig sind für viele Daten-Feed-Spalten Eins-zu-eins-Feldzuordnungen vorhanden, da der Analytics Source Connector die Analytics Experience Event -Feldergruppe im XDM-Schema verwendet. Informationen dazu, welche Adobe Analytics-Felder den Feldern in dieser Feldergruppe zugeordnet sind, finden Sie unter [Analytics-](https://experienceleague.adobe.com/de/docs/experience-platform/sources/connectors/adobe-applications/mapping/analytics)) in der Experience Platform-Dokumentation.</li></ul> |
+| Komponenten werden innerhalb der Datenansicht mithilfe abgeleiteter Felder erstellt | Sie können Komponenten direkt in einer Datenansicht erstellen und so Daten-Feed-Spalten erstellen, die im XDM-Schema nicht verfügbar sind. |
 
 ## Datenverarbeitung
 
-Die Datenverarbeitung unterscheidet sich zwischen Adobe Analytics und Customer Journey Analytics wie folgt:
+Unterschiede bei der Datenverarbeitung zwischen Adobe Analytics und Customer Journey Analytics beeinflussen, welche Daten-Feed-Spalten exportiert werden können:
 
-**Adobe Analytics**: Viele Daten-Feed-Felder werden als zwei separate Spalten exportiert: eine mit vorverarbeiteten Daten und eine andere mit nachverarbeiteten Daten. (Nachverarbeitete Daten umfassen Server-seitige Logik, Verarbeitungsregeln, VISTA-Regeln, Regeln für die Dimensionspersistenz usw.)
+* **Adobe Analytics**: Viele Daten-Feed-Felder werden als zwei separate Spalten exportiert: eine mit vorverarbeiteten Daten und eine andere mit nachverarbeiteten Daten. (Nachverarbeitete Daten umfassen Server-seitige Logik, Verarbeitungsregeln, VISTA-Regeln, Regeln für die Dimensionspersistenz usw.)
 
-Da Adobe Analytics Daten für einige Felder in zwei separaten Spalten exportiert (eine für vorverarbeitete Daten und eine für nachverarbeitete Daten), enthält Adobe Analytics mehr Daten-Feed-Spalten als Customer Journey Analytics. Beachten Sie dies beim Zuordnen von Feldern.
+  Da Adobe Analytics Daten für einige Felder in zwei separaten Spalten exportiert (eine für vorverarbeitete Daten und eine für nachverarbeitete Daten), enthält Adobe Analytics mehr Daten-Feed-Spalten als Customer Journey Analytics. Beachten Sie dies beim Zuordnen von Feldern.
 
-**Customer Journey Analytics**: Felder sind für Daten-Feeds verfügbar, nachdem sie in der Datenansicht erstellt wurden. Normalerweise enthalten Felder in Customer Journey Analytics-Datenansichten nur nachverarbeitete Daten. Sie können jedoch für gewöhnlich einen Näherungswert für die vorverarbeitete Adobe Analytics-Version eines Felds erhalten, indem Sie in der Customer Journey Analytics-Datenansicht eine zweite Version des Felds erstellen und so konfigurieren, dass es bei einem Treffer abläuft.
+* **Customer Journey Analytics**: Felder sind für Daten-Feeds verfügbar, nachdem sie in der Datenansicht erstellt wurden. Normalerweise enthalten Felder in Customer Journey Analytics-Datenansichten nur nachverarbeitete Daten. Sie können jedoch für gewöhnlich einen Näherungswert für die vorverarbeitete Adobe Analytics-Version eines Felds erhalten, indem Sie in der Customer Journey Analytics-Datenansicht eine zweite Version des Felds erstellen und so konfigurieren, dass es bei einem Treffer abläuft.
 
 ## Nicht verwendete Spalten
 
-In Adobe Analytics stehen über 1.100 Daten-Feed-Spalten für den Export zur Verfügung. Von diesen Spalten werden nicht alle in Ihren Customer Journey Analytics-Daten-Feeds verwendet.
+In Adobe Analytics stehen über 1.100 Daten-Feed-Spalten für den Export zur Verfügung. Von diesen Spalten werden nicht alle in Ihren Customer Journey Analytics-Daten-Feeds verwendet. Diese Diskrepanz ist kein Hinweis darauf, dass Ihre Customer Journey Analytics-Daten-Feed-Spalten unzureichend sind.
 
-So bestimmen Sie, welche Spalten verwendet werden sollen:
+Ermitteln Sie, welche der Daten-Feed-Spalten von Adobe Analytics Ihr Unternehmen verwendet. Dadurch wird darüber informiert, welche Spalten in Ihren Customer Journey Analytics-Daten-Feeds benötigt werden. So bestimmen Sie, welche Spalten verwendet werden sollen:
 
 * **Felder identifizieren, die nur für Adobe Analytics gelten**: Bestimmte Spalten in Adobe Analytics-Daten-Feeds sind spezifisch für die Datenverarbeitungs-Engine für Adobe Analytics und gelten daher nicht für Customer Journey Analytics. Beispiele für solche Spalten sind `exclude_hit` und `hit_source`.
 
 * **Identifizieren Sie Felder, die für Ihr Unternehmen gelten**: Obwohl nicht alle Adobe Analytics-Kunden alle verfügbaren Spalten exportieren, exportieren viele Kunden mehr als sie tatsächlich verwenden.
 
-  Bevor Sie mit der Zuordnung von Daten-Feed-Spalten beginnen, identifizieren Sie, welche Felder in Ihrer gesamten Organisation tatsächlich verwendet werden. Um diese Informationen zu erfassen, wenden Sie sich an die Teams oder Einzelpersonen, die Daten-Feed-Inhalte für Adobe Analytics verwenden.
+  Bevor Sie mit dem Export von Daten-Feeds aus Customer Journey Analytics beginnen, sollten Sie zunächst ermitteln, welche Adobe Analytics-Daten-Feed-Spalten Ihr Unternehmen derzeit verwendet, und dann sicherstellen, dass diese Komponenten in Ihrem Customer Journey Analytics-Datenansichtsschema vorhanden sind. Um diese Informationen zu erfassen, wenden Sie sich an die Teams oder Einzelpersonen in Ihrem Unternehmen, die Daten-Feed-Inhalte für Adobe Analytics verwenden.
 
+## Kanalübergreifende Spalten
 
+Customer Journey Analytics unterstützt kanalübergreifende Daten (z. B. Callcenter-Daten), die in Adobe Analytics nicht verfügbar sind. Diese kanalübergreifenden Felder sind Beispiele für neue Spalten, die in Customer Journey Analytics-Daten-Feeds enthalten sein können, welche in Adobe Analytics nicht unterstützt werden.
 
 <!--
 
