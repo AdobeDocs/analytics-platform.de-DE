@@ -5,7 +5,7 @@ title: Speichern eines neuen Projekts in einem Ordner
 feature: Workspace Basics
 exl-id: d08a558b-a2bb-4002-b179-437e1885c6c4
 role: User
-source-git-commit: c4c8c0ff5d46ec455ca5333f79d6d8529f4cb87d
+source-git-commit: 873247c643b3be4bb561955af84dd4bbb4e1d81f
 workflow-type: tm+mt
 source-wordcount: '35'
 ht-degree: 5%
@@ -14,9 +14,10 @@ ht-degree: 5%
 
 # Speichern eines neuen Projekts in einem Ordner
 
-Weitere Informationen finden [&#x200B; unter &#x200B;](../save-projects.md#save)Projekte speichern“.
+Weitere Informationen finden [ unter ](../save-projects.md#save)Projekte speichern“.
 
-<!-- Is this article still needed; removed from TOC
+<!-- 
+Is this article still needed; removed from TOC
 
 
 To save a new project to a specific folder, select the folder name in the Save project dialogue window.

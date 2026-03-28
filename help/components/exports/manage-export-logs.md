@@ -5,7 +5,7 @@ title: Verwalten von Exportprotokollen
 feature: Components
 exl-id: 6d676a0a-b117-421e-9a90-8c550f08d474
 role: User
-source-git-commit: bf76b8688dc0c463c032dd94e88450fed5488949
+source-git-commit: 50b82943d4c59f612240ffc8d83a8a08f09b8331
 workflow-type: tm+mt
 source-wordcount: '936'
 ht-degree: 7%
@@ -32,9 +32,9 @@ Für geplante Exporte spiegeln die Protokolle die Exporteinstellungen wider, die
 
    * Systemadministratoren können die Option &quot;**[!UICONTROL für alle Benutzer anzeigen“]**. Wenn diese Option aktiviert ist, werden alle Protokolle angezeigt, unabhängig davon, welcher Benutzer den Export erstellt hat.
 
-   * [Anpassen der &#x200B;](#configure-columns) Spalten“.
+   * [Anpassen der ](#configure-columns) Spalten“.
 
-   * Wählen Sie das **Informationssymbol**![&#x200B; Informationssymbol](assets/information-icon.png) neben dem Protokollnamen aus, um den mit dem Protokoll verknüpften Export anzuzeigen.
+   * Wählen Sie das **Informationssymbol**![ Informationssymbol](assets/information-icon.png) neben dem Protokollnamen aus, um den mit dem Protokoll verknüpften Export anzuzeigen.
 
    * Wählen Sie das **Exportsymbol bearbeiten** ![Exportsymbol bearbeiten](/help/assets/icons/Edit.svg) neben dem Protokollnamen aus, um den mit dem Protokoll verknüpften Export zu bearbeiten.
 
@@ -60,7 +60,7 @@ Um die benötigten Informationen zu finden, können Sie entweder die Liste der P
    |---------|----------|
    | [!UICONTROL **Export-ID**] | Geben Sie die Export-ID des Exportprotokolls an, das Sie anzeigen möchten. |
    | [!UICONTROL **Kontotyp**] | Der Kontotyp, mit dem das Protokoll verknüpft ist. Die folgenden Kontotypen sind verfügbar: <ul><li>[!UICONTROL **AEP Data Landing Zone**]</li><li>[!UICONTROL **Amazon S3 Role ARN**]</li><li>[!UICONTROL **Azure SAS**]</li><li>[!UICONTROL **Azure RBAC**]</li><li>[!UICONTROL **Google Cloud Platform**]</li><li>[!UICONTROL **Snowflake**]</li></ul>. |
-   | [!UICONTROL **Status**] | Der Status des Exports Die folgenden Status sind verfügbar: <ul><li>[!UICONTROL **Ausstehend**]: Eine bestimmte Instanz eines Exports wurde gestartet, ist jedoch noch nicht abgeschlossen.<p>Das erneute Ausführen eines Exports mit dem Status Ausstehend verzögert den Exportvorgang.</p></li><li>[!UICONTROL **Abgeschlossen**]: Eine bestimmte Instanz eines Exports wurde fertig verarbeitet und ist im Exportkonto verfügbar.</li><li>[!UICONTROL **Fehlgeschlagen**]<p>Verschiedene Situationen können zu einem fehlgeschlagenen Export führen. Bewegen Sie den Mauszeiger über den Status Fehlgeschlagen , um Details zum Fehler anzuzeigen.</p><p>Weitere Informationen zu möglichen Fehlerursachen finden Sie unter [Fehlerbehebung bei fehlgeschlagenen &#x200B;](/help/components/exports/troubleshoot-exports.md)).</p></li></ul> |
+   | [!UICONTROL **Status**] | Der Status des Exports Die folgenden Status sind verfügbar: <ul><li>[!UICONTROL **Ausstehend**]: Eine bestimmte Instanz eines Exports wurde gestartet, ist jedoch noch nicht abgeschlossen.<p>Das erneute Ausführen eines Exports mit dem Status Ausstehend verzögert den Exportvorgang.</p></li><li>[!UICONTROL **Abgeschlossen**]: Eine bestimmte Instanz eines Exports wurde fertig verarbeitet und ist im Exportkonto verfügbar.</li><li>[!UICONTROL **Fehlgeschlagen**]<p>Verschiedene Situationen können zu einem fehlgeschlagenen Export führen. Bewegen Sie den Mauszeiger über den Status Fehlgeschlagen , um Details zum Fehler anzuzeigen.</p><p>Weitere Informationen zu möglichen Fehlerursachen finden Sie unter [Fehlerbehebung bei fehlgeschlagenen ](/help/components/exports/troubleshoot-exports.md)).</p></li></ul> |
 
    {style="table-layout:auto"}
 
@@ -72,17 +72,21 @@ Um die benötigten Informationen zu finden, können Sie entweder die Liste der P
 
 1. Beginnen Sie im Suchfeld mit der Eingabe von Informationen, die mit dem gesuchten Protokoll verknüpft sind. Sie können nach Daten aus jeder in der Tabelle verfügbaren Spalte suchen.
 
-<!-- removed for MVP: Retry an export You can re-run the export associated with the selected log, using the data as it was on the day the log was originally exported. This is useful when selecting a log that show a failed export or when selecting a log that was accidentally deleted. 
+<!-- 
+removed for MVP: Retry an export You can re-run the export associated with the selected log, using the data as it was on the day the log was originally exported. This is useful when selecting a log that show a failed export or when selecting a log that was accidentally deleted. 
 
 Retrying an export that has a status of Pending will delay the export process.
 
-This option is not available when selecting multiple logs. -->
+This option is not available when selecting multiple logs. 
+-->
 
-<!-- 1. In Customer Journey Analytics, select [!UICONTROL **Components**] > [!UICONTROL **Exports**].
+<!-- 
+1. In Customer Journey Analytics, select [!UICONTROL **Components**] > [!UICONTROL **Exports**].
 
 1. Select the [!UICONTROL **Logs**] tab, then select a log.
 
-1. Select [!UICONTROL **Retry**]. -->
+1. Select [!UICONTROL **Retry**]. 
+-->
 
 ## Bearbeiten eines Exports
 
@@ -112,7 +116,7 @@ Sie können einen oder mehrere Exporte, die mit bestimmten Exportprotokollen ver
 
 ## Konfigurieren von Spalten
 
-Sie können Spalten auf der Registerkarte [!UICONTROL Protokolle“ hinzufügen oder &#x200B;], um zu konfigurieren, welche Informationen angezeigt werden.
+Sie können Spalten auf der Registerkarte [!UICONTROL Protokolle“ hinzufügen oder ], um zu konfigurieren, welche Informationen angezeigt werden.
 
 Spaltenüberschrift auswählen, um die Protokolle nach dieser Spalte zu sortieren. Standardmäßig werden die Protokolle nach Datum und Uhrzeit des Starts des Exports sortiert.
 
@@ -122,7 +126,7 @@ So konfigurieren Sie Spalten auf der Registerkarte [!UICONTROL Protokolle]:
 
 1. Wählen Sie die Registerkarte [!UICONTROL **Protokolle**] aus.
 
-1. Wählen Sie **Symbol** Tabelle anpassen![&#x200B; &#x200B;](assets/customize-table-icon.png) oben rechts auf der Seite [!UICONTROL Protokolle] aus.
+1. Wählen Sie **Symbol** Tabelle anpassen![ ](assets/customize-table-icon.png) oben rechts auf der Seite [!UICONTROL Protokolle] aus.
 
    Die folgenden Spalten sind verfügbar:
 

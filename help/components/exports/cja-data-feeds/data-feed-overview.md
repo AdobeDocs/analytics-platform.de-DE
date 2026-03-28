@@ -5,7 +5,8 @@ title: Überblick über Analytics-Daten-Feed
 feature: Components
 hide: true
 hidefromtoc: true
-source-git-commit: b0b86424399ea79deca8f1d522d52354dfaaa8c7
+exl-id: 991a7861-cbde-4d55-935c-d56c8031853e
+source-git-commit: 50b82943d4c59f612240ffc8d83a8a08f09b8331
 workflow-type: tm+mt
 source-wordcount: '333'
 ht-degree: 40%
@@ -37,12 +38,14 @@ Die folgenden Ressourcen helfen Ihnen dabei, den grundlegenden Workflow beim Abr
 * Best Practices für Daten-Feeds <!--add link--> Best Practices für die Erstellung und Verwaltung von Daten-Feeds.
 * Erstellen eines Daten-Feeds<!--add link-->: Technische Details zum Erstellen eines Daten-Feeds und ausführlichere Erläuterung der einzelnen Felder
 * Daten-Feeds verwalten<!--add link--> Weitere Informationen zum Navigieren in der Daten-Feed-Benutzeroberfläche
-* Daten-Feed-Inhalte <!--add link-->: Verstehen Sie, was sich in der komprimierten Datei befindet<!-- Is this still the output users can download from the destination? I aske Jun. -->
+* Daten-Feed-Inhalte <!--add link-->: Verstehen Sie, was sich in der komprimierten Datei befindet
 * Datenspaltendefinitionen <!--add link-->: Eine umfassende Liste aller verfügbaren Spalten.
+
+<!-- Is this still the output users can download from the destination? I aske Jun. -->
 
 >[!BEGINSHADEBOX]
 
-Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Navigieren in der Daten-Feed-Oberfläche](https://video.tv.adobe.com/v/3428560?captions=ger&quality=12&learn=on){target="_blank"} finden Sie ein Demovideo.
+Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Navigieren in der Daten-Feed-Oberfläche](https://video.tv.adobe.com/v/25452?quality=12&learn=on){target="_blank"} finden Sie ein Demovideo.
 
 >[!ENDSHADEBOX]
 
@@ -50,6 +53,6 @@ Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Navigieren in 
 
 >[!BEGINSHADEBOX]
 
-Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Ermitteln Ihrer Daten-Feed-ID](https://video.tv.adobe.com/v/3480889?captions=ger&quality=12&learn=on){target="_blank"} finden Sie ein Demovideo.
+Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Ermitteln Ihrer Daten-Feed-ID](https://video.tv.adobe.com/v/335747?quality=12&learn=on){target="_blank"} finden Sie ein Demovideo.
 
 >[!ENDSHADEBOX]

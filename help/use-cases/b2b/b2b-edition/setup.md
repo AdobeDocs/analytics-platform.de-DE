@@ -6,7 +6,7 @@ feature: Use Cases
 role: User
 badgePremium: label="B2B Edition"
 exl-id: f959a77b-ccfb-43f2-93bb-b330e73d59ac
-source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
+source-git-commit: 50b82943d4c59f612240ffc8d83a8a08f09b8331
 workflow-type: tm+mt
 source-wordcount: '1727'
 ht-degree: 10%
@@ -240,9 +240,11 @@ Die Daten, die die Lösungs-Design-Referenz unterstützen, sind anhand der folge
 
 Die Ereignisdimensionen und Metriken werden durch ein auf Zeitreihen (Ereignissen) basierendes Schema und einen oder mehrere Datensätze, die Ereignisdaten enthalten, unterstützt.
 
-<!--For example: the Account ID field is mapped to **[!UICONTROL Account ID]**. See below for a preview of the data typically available in such a dataset.
+<!--
+For example: the Account ID field is mapped to **[!UICONTROL Account ID]**. See below for a preview of the data typically available in such a dataset.
 
-![B2B event schema and datasets](assets/b2b-event-schema-datasets.png)-->
+![B2B event schema and datasets](assets/b2b-event-schema-datasets.png)
+-->
 
 
 ### Personendaten
@@ -384,4 +386,4 @@ Zum Beispiel:
 
 ## Sonstige
 
-Sie können optional andere Komponenten für Ihre Anwendungsfälle definieren, z. B[&#x200B; „Berechnete &#x200B;](/help/components/calc-metrics/calc-metr-overview.md)&quot;, [Datumsbereiche](/help/components/date-ranges/overview.md) oder [Warnhinweise](/help/components/c-intelligent-alerts/intelligent-alerts.md).
+Sie können optional andere Komponenten für Ihre Anwendungsfälle definieren, z. B[ „Berechnete ](/help/components/calc-metrics/calc-metr-overview.md)&quot;, [Datumsbereiche](/help/components/date-ranges/overview.md) oder [Warnhinweise](/help/components/c-intelligent-alerts/intelligent-alerts.md).

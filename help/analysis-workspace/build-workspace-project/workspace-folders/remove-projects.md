@@ -5,7 +5,7 @@ title: Projekte entfernen
 feature: Workspace Basics
 exl-id: 9c3523b1-afa2-4a68-a432-972032680fc7
 role: User
-source-git-commit: 9506cc42e80f25f68a891f21f38d60fb4d364588
+source-git-commit: 873247c643b3be4bb561955af84dd4bbb4e1d81f
 workflow-type: tm+mt
 source-wordcount: '27'
 ht-degree: 7%
@@ -15,10 +15,11 @@ ht-degree: 7%
 # Projekte entfernen
 
 
-Informationen [&#x200B; Entfernen von Projekten aus Analysis Workspace finden &#x200B;](../freeform-overview.md#actions) unter „Aktionen in Projekten verwalten“.
+Informationen [ Entfernen von Projekten aus Analysis Workspace finden ](../freeform-overview.md#actions) unter „Aktionen in Projekten verwalten“.
 
 
-<!-- Is this article still needed; not in the TOC anymore
+<!--
+Is this article still needed; not in the TOC anymore
 
 
 ## Move a project {#move-project-in-folder}
