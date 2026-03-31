@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Audiences
 role: Admin
 exl-id: 1e962f52-6b56-4671-afea-d58dae67e8a8
-source-git-commit: 4f1299595077a1756a6ad0c4f5ef5e0247ab4973
+source-git-commit: ac86664e0136563d904021c72347fb544cda4a6d
 workflow-type: tm+mt
-source-wordcount: '728'
-ht-degree: 3%
+source-wordcount: '749'
+ht-degree: 4%
 
 ---
 
@@ -39,7 +39,7 @@ Die folgende Abbildung und die zugehörige Tabelle zeigen eine allgemeine Darste
 | 8 | Neue Zielgruppendimensionen | Neue Zielgruppendimensionen<!--and metrics?--> die die Experience Platform-Zielgruppen darstellen, die in dem von Ihnen ausgewählten Profildatensatz enthalten sind und in Analysis Workspace für das Reporting verfügbar sind. Diese Dimensionen werden automatisch erstellt. |
 | 9 | Datenansichten | Die ausgewählten Datenansichten, die mit Ihrer Verbindung verknüpft sind. Dies sind die Datenansichten, die Sie bei der Analyse von Experience Platform-Zielgruppendaten in Analysis Workspace verwenden möchten. Diese Datenansichten werden für das Reporting automatisch mit Experience Platform-Zielgruppendaten konfiguriert. |
 
-## Zielgruppenanalyse konfigurieren
+## Konfigurieren der Zielgruppenanalyse
 
 Bei der Konfiguration der Zielgruppenanalyse wählen Sie die Sandbox und die Zusammenführungsrichtlinie aus, die mit den Experience Platform-Zielgruppen verknüpft sind, die Sie analysieren möchten. Customer Journey Analytics erstellt einen neuen Lookup-Datensatz und fügt dann den Lookup-Datensatz und den Profildatensatz automatisch zur ausgewählten Verbindung hinzu.
 
@@ -67,7 +67,7 @@ Sie können beispielsweise das Verhalten einzelner Kundinnen und Kunden verfolge
 
 * Zielgruppenmitglieder, die schließlich einen Kauf im Geschäft getätigt haben
 
-Weitere Informationen finden Sie unter [&#x200B; von Experience Platform-Zielgruppen in Customer Journey Analytics](/help/connections/audience-analysis/analyze-audiences.md).
+Weitere Informationen finden Sie unter [ von Experience Platform-Zielgruppen in Customer Journey Analytics](/help/connections/audience-analysis/analyze-audiences.md).
 
 ## Rollen- und Berechtigungsanforderungen für die Zielgruppenanalyse
 
@@ -79,9 +79,13 @@ Die folgenden Customer Journey Analytics-Rollen und Experience Platform-Berechti
 | [Anzeigen von Zielgruppenanalysedimensionen in der Datenansicht](/help/connections/audience-analysis/audience-analysis-configure.md#view-audience-dimensions-in-the-data-view) | Produktprofil-Administrator für das Produktprofil, dem die Datenansicht zugewiesen ist <p>Weitere Informationen finden Sie unter [Zugriffssteuerung](/help/technotes/access-control.md).</p> | k. A. |
 | Verwenden von Zielgruppenanalysedimensionen in Analysis Workspace | Zugriff auf eine Datenansicht, in der die Zielgruppenanalysedimensionen hinzugefügt wurden | k. A. |
 
+## Anwendungsfälle für die Zielgruppenanalyse
+
+Anwendungsfälle, die den Wert der Zielgruppenanalyse verdeutlichen, finden Sie unter [Anwendungsfälle für die Zielgruppenanalyse](/help/connections/audience-analysis/audience-analysis-use-cases.md).
+
 ## Grenzwerte für Zielgruppenanalysen
 
-Beachten Sie bei der Konfiguration [&#x200B; Zielgruppenanalyse die folgenden &#x200B;](/help/connections/audience-analysis/audience-analysis-configure.md):
+Beachten Sie bei der Konfiguration [ Zielgruppenanalyse die folgenden ](/help/connections/audience-analysis/audience-analysis-configure.md):
 
 * Eine einzelne Sandbox kann bis zu 100 Zielgruppenanalysekonfigurationen unterstützen.
 
