@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: 9a1689d9-c1b7-42fe-9682-499e49843f76
-source-git-commit: 1ad1698f10dd026b0bd5e67599ef35ab3c552286
+source-git-commit: 3524a7f62fa509c477e60d4d586ed2de52191b73
 workflow-type: tm+mt
-source-wordcount: '1800'
-ht-degree: 6%
+source-wordcount: '1727'
+ht-degree: 4%
 
 ---
 
@@ -58,7 +58,7 @@ Wenn Sie die Voraussetzungen erfüllen, sollten Sie einige Preflight-Prüfungen 
 
 
    * **Personen-ID**
-      * Stellen Sie bei diagrammbasiertem Stitching sicher, dass das Identitätsdiagramm Fragmente enthält, die ID-Werte aus dem ausgewählten persistenten ID-Namespace und dem Personen-ID-Namespace verknüpfen. Sie können einen Test ausführen, indem Sie zum [Experience Platform Identity Graph Viewer wechseln &#x200B;](https://experienceleague.adobe.com/de/docs/experience-platform/identity/features/identity-graph-viewer){target="_blank"} das Diagramm nach einigen Beispielwerten für persistente IDs abfragen. Überprüfen Sie, ob diese persistenten ID-Werte mit Personen-ID-Werten im Diagramm verknüpft sind.
+      * Stellen Sie bei diagrammbasiertem Stitching sicher, dass das Identitätsdiagramm Fragmente enthält, die ID-Werte aus dem ausgewählten persistenten ID-Namespace und dem Personen-ID-Namespace verknüpfen. Sie können einen Test ausführen, indem Sie zum [Experience Platform Identity Graph Viewer wechseln ](https://experienceleague.adobe.com/de/docs/experience-platform/identity/features/identity-graph-viewer){target="_blank"} das Diagramm nach einigen Beispielwerten für persistente IDs abfragen. Überprüfen Sie, ob diese persistenten ID-Werte mit Personen-ID-Werten im Diagramm verknüpft sind.
       * Fragen Sie für das feldbasierte Stitching 7 Tage Daten ab, bei denen das Feld für Ihre Personen-ID nicht null ist, und teilen Sie dies durch eine Abfrage von 7 Tagen Daten für alle Ereignisse in Ihrem Datensatz. Dieser Prozentsatz sollte idealerweise über 5 % liegen.
 
         Beispiel einer Abfrage, die Sie zur Überprüfung verwenden können:
@@ -87,7 +87,7 @@ Wenn Sie die Voraussetzungen erfüllen, sollten Sie einige Preflight-Prüfungen 
 
 ## Aktivieren der Identitätszuordnung {#enable-identity-stitching}
 
-Sie können die Identitätszuordnung aktivieren[&#x200B; wenn Sie &#x200B;](/help/connections/create-connection.md#add-datasets) Ereignis-Datensatz in [&#x200B; personenbasierten Verbindung hinzufügen oder &#x200B;](/help/connections/create-connection.md#edit-a-dataset) bearbeiten. Identitätszuordnung ist für kontobasierte Verbindungen nicht verfügbar.
+Sie können die Identitätszuordnung aktivieren[ wenn Sie ](/help/connections/create-connection.md#add-datasets) Ereignis-Datensatz in [ personenbasierten Verbindung hinzufügen oder ](/help/connections/create-connection.md#edit-a-dataset) bearbeiten. Identitätszuordnung ist für kontobasierte Verbindungen nicht verfügbar.
 
 >[!CONTEXTUALHELP]
 >id="connection_changeto_identitygraph"
@@ -125,7 +125,7 @@ Sie können die Identitätszuordnung aktivieren[&#x200B; wenn Sie &#x200B;](/hel
 >id="connection_stitchingmetrics_badids"
 >title="Fehlerhafte IDs"
 >abstract="Ungültige IDs sind ID-Werte, die sich stark auf Berichtsdaten auswirken."
->additional-url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/technotes/badids" text="Fehlerhafte IDs"
+>additional-url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/technotes/badids" text="Fehlerhafte IDs"
 
 
 ### Datensatzeinstellungen
@@ -172,11 +172,6 @@ Um das Zusammenfügen zu aktivieren, gehen Sie im Abschnitt **[!UICONTROL Datens
 
 
 ### Datensatzvorschau
-
->[!AVAILABILITY]
->
->Die in **[!UICONTROL Abschnitt beschriebene erweiterte]** (einschließlich **[!UICONTROL Zuordnungsmetriken]** und **[!UICONTROL ungültigen IDs]**) befindet sich in der eingeschränkten Testphase der Veröffentlichung und ist möglicherweise noch nicht in Ihrer Umgebung verfügbar. Wenn nicht verfügbar, wird die Datensatzvorschau als Teil der Oberfläche **[!UICONTROL Datensatzeinstellungen]** angezeigt. Diese Anmerkung wird entfernt, wenn die Funktion allgemein verfügbar ist. Informationen zum Customer Journey Analytics-Veröffentlichungsprozess finden Sie unter [Veröffentlichungen von Funktionen für Customer Journey Analytics](/help/release-notes/releases.md).
->
 
 Zusätzlich zur standardmäßigen Benutzeroberfläche **[!UICONTROL Datensatzvorschau]** stehen beim [Hinzufügen](/help/connections/create-connection.md#add-datasets) oder [Bearbeiten](/help/connections/create-connection.md#edit-a-dataset) von Datensätzen in einer personenbasierten Verbindung zwei zusätzliche Informationsbereiche zur Verfügung.
 
@@ -232,7 +227,7 @@ Nachdem Sie eine Verbindung gespeichert haben, wird der Zuordnungsprozess für a
 
 >[!CAUTION]
 >
->Bei Datensätzen, die für das Zusammenfügen in der Verbindungsschnittstelle aktiviert sind, wird der Aufstockungsstatus sofort und fälschlicherweise als ![Status grün](/help/assets/icons/StatusGreen.svg) **[!UICONTROL _x _Aufstockungen abgeschlossen]**&#x200B;für die Anzahl der abgeschlossenen Aufstockungen gemeldet. Verwenden Sie andere Möglichkeiten, um zu überprüfen, ob Daten aus dem zusammengefügten Datensatz aufgestockt werden.
+>Bei Datensätzen, die für das Zusammenfügen in der Verbindungsschnittstelle aktiviert sind, wird der Aufstockungsstatus sofort und fälschlicherweise als ![Status grün](/help/assets/icons/StatusGreen.svg) **[!UICONTROL _x _Aufstockungen abgeschlossen]**für die Anzahl der abgeschlossenen Aufstockungen gemeldet. Verwenden Sie andere Möglichkeiten, um zu überprüfen, ob Daten aus dem zusammengefügten Datensatz aufgestockt werden.
 >
 
 
