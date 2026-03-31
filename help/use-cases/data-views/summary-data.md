@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Use Cases
 role: Admin
 exl-id: 80139806-618a-46ff-b2c4-32d7bb85a526
-source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
+source-git-commit: b54083d85c0e07605c567a8d44824884cdc18c4d
 workflow-type: tm+mt
-source-wordcount: '5021'
+source-wordcount: '5014'
 ht-degree: 15%
 
 ---
@@ -447,7 +447,7 @@ Um sicherzustellen, dass Sie Berichte zu den richtigen Daten in Workspace erstel
 1. Wählen Sie **[!UICONTROL Neue Datenansicht erstellen]**.
 1. Gehen Sie **[!UICONTROL Datenansichten]** durch die Assistenten-Bildschirme, um Ihre Datenansicht zu konfigurieren.
    1. Im Schritt **[!UICONTROL Konfigurieren]** von **[!UICONTROL Datenansichten]**:
-      1. Wählen Sie Ihre Verbindung unter **[!UICONTROL Einstellungen]** | **[!UICONTROL Verbindung]**. Beispiel: **[!UICONTROL Verbindung mit Zusammenfassungsdaten]**.
+      1. Wählen Sie Ihre Verbindung unter **[!UICONTROL Einstellungen]** | **[!UICONTROL Verbindung]** aus. Beispiel: **[!UICONTROL Verbindung mit Zusammenfassungsdaten]**.
       1. Geben Sie **[!UICONTROL Name]** für Ihre Datenansicht ein, z. B. `Example Data View Using Summary Data`.
       1. Alle anderen Einstellungen beibehalten.
       1. Wählen Sie **[!UICONTROL Speichern und fortfahren]** aus.
@@ -468,10 +468,10 @@ Um sicherzustellen, dass Sie Berichte zu den richtigen Daten in Workspace erstel
          | Name der Komponente | Datensatz | Datentyp des Schemas | Pfad des Schemas |
          |---|---|---|---|
          | Anzeigengruppe (Lookup) | Beispiel für Lookup-Datensatz | Zeichenfolge | *_tenant*.ad_group |
-         | Anzeigengruppe (Zusammenfassung) | Beispiel für einen zusammenfassenden Datensatz | Zeichenfolge | *_tenant*.ad_group |
+         | Anzeigengruppe | Beispiel für einen zusammenfassenden Datensatz | Zeichenfolge | *_tenant*.ad_group |
          | Kampagnen-ID | Beispiel für einen zusammenfassenden Datensatz | Zeichenfolge | *_tenant*.campaign_id |
          | Kampagnenname (Lookup) | Beispiel für Lookup-Datensatz | Zeichenfolge | *_tenant*.campaign_name |
-         | Kampagnenname (Zusammenfassung) | Beispiel für einen zusammenfassenden Datensatz | Zeichenfolge | *_tenant*.campaign_name |
+         | Kampagnenname | Beispiel für einen zusammenfassenden Datensatz | Zeichenfolge | *_tenant*.campaign_name |
          | Netzwerk | Beispiel für einen zusammenfassenden Datensatz | Zeichenfolge | *_tenant*.network |
          | Seitenname | Beispiel für einen Ereignisdatensatz | Zeichenfolge | *_tenant*.page_name |
          | Personen-ID | Beispiel für einen Ereignisdatensatz | Zeichenfolge | *_tenant*.person_id |
@@ -554,8 +554,8 @@ Es wird eine leere Arbeitsfläche mit einem [!UICONTROL Freiform]-Bedienfeld ang
 1. Ziehen Sie **[!UICONTROL Trackingcode (Ereignis]** aus **[!UICONTROL Dimensionen]** und legen Sie die Dimension auf der leeren Freiformtabelle ab.
 1. Ziehen Sie **[!UICONTROL Bestellungen]** aus **[!UICONTROL Metriken]** und legen Sie die Metrik in der Spalte **[!UICONTROL Ereignisse]** ab, um diese Spalte in der Freiformtabelle zu ersetzen.
 1. Ziehen Sie **[!UICONTROL Umsatz]** aus **[!UICONTROL Metriken]** und legen Sie die Metrik ab, die als zusätzliche Spalte zur Freiformtabelle hinzugefügt werden soll.
-1. Ziehen Sie **[!UICONTROL Impressions (Zusammenfassung)]** aus **[!UICONTROL Metriken]** und legen Sie die Metrik ab, um sie als zusätzliche Spalte zur Freiformtabelle hinzuzufügen.
-1. Ziehen Sie **[!UICONTROL Kosten (Zusammenfassung)]** aus **[!UICONTROL Metriken]** und legen Sie die Metrik ab, um sie als zusätzliche Spalte zur Freiformtabelle hinzuzufügen.
+1. Ziehen Sie **[!UICONTROL Impressions]** aus **[!UICONTROL Metriken]** und legen Sie die Metrik ab, um sie als zusätzliche Spalte zur Freiformtabelle hinzuzufügen.
+1. Ziehen Sie **[!UICONTROL Kosten]** aus **[!UICONTROL Metriken]** und legen Sie die Metrik ab, die als zusätzliche Spalte zur Freiformtabelle hinzugefügt werden soll.
 1. Wählen Sie zum Speichern des Projekts **[!UICONTROL Projekt]** > **[!UICONTROL Speichern]** und geben Sie einen Namen für das Projekt ein. Zum Beispiel `Example Project Using Summary Data`.
 
 Sie möchten die Berichtsfunktion für Zusammenfassungsdaten nutzen und Berichte zu Kosten pro Impression und Rendite auf Werbeausgaben (ROAS) erstellen. Um Berichte zu diesen Metriken zu erstellen, müssen Sie zwei berechnete Metriken erstellen.
@@ -565,18 +565,18 @@ Sie möchten die Berichtsfunktion für Zusammenfassungsdaten nutzen und Berichte
    1. Geben Sie `Cost per Impression` für den **[!UICONTROL Name]** an.
    1. Wählen Sie **[!UICONTROL Währung]** für **[!UICONTROL Format]** aus.
    1. Geben Sie `4` für **[!UICONTROL Dezimalstellen“]**.
-   1. Verwenden Sie ![Ereignis](/help/assets/icons/Event.svg) **[!UICONTROL Kosten (Zusammenfassung)]** **[!UICONTROL ÷]** **[!UICONTROL Impressions (Zusammenfassung)]** als **[!UICONTROL Definition]**.
+   1. Verwenden Sie ![Ereignis](/help/assets/icons/Event.svg) **[!UICONTROL Kosten]** **[!UICONTROL ÷]** **[!UICONTROL Impressions]** als **[!UICONTROL Definition]**.
    1. Wählen Sie **[!UICONTROL Speichern]** aus.
 1. Wählen Sie ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Add]** aus, um eine weitere neue berechnete Metrik hinzuzufügen.
    1. Geben Sie `Return on Ad Spend` für den **[!UICONTROL Name]** an.
    1. Wählen Sie **[!UICONTROL Währung]** für **[!UICONTROL Format]** aus.
    1. Wählen Sie `2` für **[!UICONTROL Dezimalstellen]**.
-   1. Verwenden ![Ereignis](/help/assets/icons/Event.svg) **[!UICONTROL Umsatz (Letztkontakt) | 30 Tage)]** **[!UICONTROL −]** ![Ereignis](/help/assets/icons/Event.svg) **[!UICONTROL Kosten (Zusammenfassung)]** als **[!UICONTROL Definition]**.
+   1. Verwenden Sie ![Ereignis](/help/assets/icons/Event.svg) **[!UICONTROL Umsatz (Letztkontakt | 30 Tage)]** **[!UICONTROL −]** ![](/help/assets/icons/Event.svg) Ereignis **[!UICONTROL Kosten]** als **[!UICONTROL Definition]**.
    1. Wählen Sie **[!UICONTROL Speichern]** aus.
 
 Fügen Sie Ihre berechneten Metriken zu Ihrem Bericht hinzu.
 
-1. Ziehen Sie **[!UICONTROL Kosten pro]**![&#x200B; Rechner](/help/assets/icons/Calculator.svg) aus **[!UICONTROL Metriken]** und legen Sie die Metrik ab, um sie als zusätzliche Spalte zur Freiformtabelle hinzuzufügen.
+1. Ziehen Sie **[!UICONTROL Kosten pro]**![ Rechner](/help/assets/icons/Calculator.svg) aus **[!UICONTROL Metriken]** und legen Sie die Metrik ab, um sie als zusätzliche Spalte zur Freiformtabelle hinzuzufügen.
    1. Wählen Sie ![Einstellung](/help/assets/icons/Setting.svg) Spalteneinstellungen aus.
       1. Deaktivieren Sie **[!UICONTROL Prozent]**.
 1. Ziehen Sie **[!UICONTROL Rückgabe für Werbeausgaben]** ![Rechner](/help/assets/icons/Calculator.svg) aus **[!UICONTROL Metriken]** und legen Sie die Metrik ab, um sie als zusätzliche Spalte zur Freiformtabelle hinzuzufügen.
