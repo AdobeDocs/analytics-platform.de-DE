@@ -58,7 +58,7 @@ Wenn Sie die Voraussetzungen erfüllen, sollten Sie einige Preflight-Prüfungen 
 
 
    * **Personen-ID**
-      * Stellen Sie bei diagrammbasiertem Stitching sicher, dass das Identitätsdiagramm Fragmente enthält, die ID-Werte aus dem ausgewählten persistenten ID-Namespace und dem Personen-ID-Namespace verknüpfen. Sie können einen Test ausführen, indem Sie zum [Experience Platform Identity Graph Viewer wechseln ](https://experienceleague.adobe.com/de/docs/experience-platform/identity/features/identity-graph-viewer){target="_blank"} das Diagramm nach einigen Beispielwerten für persistente IDs abfragen. Überprüfen Sie, ob diese persistenten ID-Werte mit Personen-ID-Werten im Diagramm verknüpft sind.
+      * Stellen Sie bei diagrammbasiertem Stitching sicher, dass das Identitätsdiagramm Fragmente enthält, die ID-Werte aus dem ausgewählten persistenten ID-Namespace und dem Personen-ID-Namespace verknüpfen. Sie können einen Test ausführen, indem Sie zum [Experience Platform Identity Graph Viewer wechseln &#x200B;](https://experienceleague.adobe.com/de/docs/experience-platform/identity/features/identity-graph-viewer){target="_blank"} das Diagramm nach einigen Beispielwerten für persistente IDs abfragen. Überprüfen Sie, ob diese persistenten ID-Werte mit Personen-ID-Werten im Diagramm verknüpft sind.
       * Fragen Sie für das feldbasierte Stitching 7 Tage Daten ab, bei denen das Feld für Ihre Personen-ID nicht null ist, und teilen Sie dies durch eine Abfrage von 7 Tagen Daten für alle Ereignisse in Ihrem Datensatz. Dieser Prozentsatz sollte idealerweise über 5 % liegen.
 
         Beispiel einer Abfrage, die Sie zur Überprüfung verwenden können:
@@ -87,7 +87,7 @@ Wenn Sie die Voraussetzungen erfüllen, sollten Sie einige Preflight-Prüfungen 
 
 ## Aktivieren der Identitätszuordnung {#enable-identity-stitching}
 
-Sie können die Identitätszuordnung aktivieren[ wenn Sie ](/help/connections/create-connection.md#add-datasets) Ereignis-Datensatz in [ personenbasierten Verbindung hinzufügen oder ](/help/connections/create-connection.md#edit-a-dataset) bearbeiten. Identitätszuordnung ist für kontobasierte Verbindungen nicht verfügbar.
+Sie können die Identitätszuordnung aktivieren[&#x200B; wenn Sie &#x200B;](/help/connections/create-connection.md#add-datasets) Ereignis-Datensatz in [&#x200B; personenbasierten Verbindung hinzufügen oder &#x200B;](/help/connections/create-connection.md#edit-a-dataset) bearbeiten. Identitätszuordnung ist für kontobasierte Verbindungen nicht verfügbar.
 
 >[!CONTEXTUALHELP]
 >id="connection_changeto_identitygraph"
@@ -227,7 +227,7 @@ Nachdem Sie eine Verbindung gespeichert haben, wird der Zuordnungsprozess für a
 
 >[!CAUTION]
 >
->Bei Datensätzen, die für das Zusammenfügen in der Verbindungsschnittstelle aktiviert sind, wird der Aufstockungsstatus sofort und fälschlicherweise als ![Status grün](/help/assets/icons/StatusGreen.svg) **[!UICONTROL _x _Aufstockungen abgeschlossen]**für die Anzahl der abgeschlossenen Aufstockungen gemeldet. Verwenden Sie andere Möglichkeiten, um zu überprüfen, ob Daten aus dem zusammengefügten Datensatz aufgestockt werden.
+>Bei Datensätzen, die für das Zusammenfügen in der Verbindungsschnittstelle aktiviert sind, wird der Aufstockungsstatus sofort und fälschlicherweise als ![Status grün](/help/assets/icons/StatusGreen.svg) **[!UICONTROL _x _Aufstockungen abgeschlossen]**&#x200B;für die Anzahl der abgeschlossenen Aufstockungen gemeldet. Verwenden Sie andere Möglichkeiten, um zu überprüfen, ob Daten aus dem zusammengefügten Datensatz aufgestockt werden.
 >
 
 
