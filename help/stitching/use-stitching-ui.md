@@ -125,7 +125,7 @@ Sie können die Identitätszuordnung aktivieren[&#x200B; wenn Sie &#x200B;](/hel
 >id="connection_stitchingmetrics_badids"
 >title="Fehlerhafte IDs"
 >abstract="Ungültige IDs sind ID-Werte, die sich stark auf Berichtsdaten auswirken."
->additional-url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/technotes/badids" text="Fehlerhafte IDs"
+>additional-url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/technotes/badids" text="Fehlerhafte IDs"
 
 
 ### Datensatzeinstellungen
