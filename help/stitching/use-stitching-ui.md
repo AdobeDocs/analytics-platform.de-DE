@@ -1,20 +1,20 @@
 ---
 title: Zusammenfügung aktivieren
-description: Aktivieren der Identitätszuordnung für Ereignis-Datensätze in Customer Journey Analytics. Erfahren Sie, wie Sie in der Verbindungs-Benutzeroberfläche persistente IDs, Personen-IDs und Wiederholungsfenster konfigurieren, um Daten zusammenzufügen.
+description: Aktivieren des Zusammenfügens für Ereignis-Datensätze in Customer Journey Analytics. Konfigurieren Sie persistente IDs, Personen-IDs und Wiederholungsfenster in der Verbindungsbenutzeroberfläche.
 solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: 9a1689d9-c1b7-42fe-9682-499e49843f76
-source-git-commit: f9c2f9cef97e00eb491b815ab8e83820b2dfc032
+source-git-commit: 2cb7824aca6086a280ae5f523b547412d57a1e2b
 workflow-type: tm+mt
-source-wordcount: '1712'
+source-wordcount: '1717'
 ht-degree: 4%
 
 ---
 
 # Aktivieren der Zuordnung
 
-Sie können das Zusammenfügen mit einem oder mehreren Ereignisdatensätzen aktivieren, die Sie im Rahmen Ihrer Verbindung konfiguriert haben. Das von Ihnen lizenzierte Customer Journey Analytics-Paket bestimmt die Anzahl der Ereignisdatensätze, die Sie für das Zusammenfügen aktivieren können.
+Sie können das Zusammenfügen mit einem oder mehreren Ereignisdatensätzen aktivieren, die Sie im Rahmen Ihrer Verbindung konfiguriert haben. Das lizenzierte Customer Journey Analytics-Paket bestimmt die Anzahl der Ereignisdatensätze, die Sie für das Zusammenfügen aktivieren können.
 
 Sie aktivieren das Zusammenfügen als Teil der [Datensatzeinstellungen](/help/connections/create-connection.md#dataset-settings) für einen Ereignis-Datensatz, wenn Sie [Verbindung erstellen](/help/connections/create-connection.md) oder [Verbindung bearbeiten](/help/connections/manage-connections.md#edit-a-connection).
 
@@ -22,15 +22,14 @@ Sie aktivieren das Zusammenfügen als Teil der [Datensatzeinstellungen](/help/co
 
 Sie müssen die Voraussetzungen für die von Ihnen angegebene Stitching-Methode überprüfen und erfüllen: [feldbasiertes Stitching](fbs.md#prerequisites) oder [grafisches Stitching](gbs.md#prerequisites).
 
-
 ## Vorflugkontrollen
 
 Wenn Sie die Voraussetzungen erfüllen, sollten Sie einige Preflight-Prüfungen für die Daten im Ereignis-Datensatz durchführen, bevor Sie die Identitätszuordnung aktivieren:
 
-* Wenn Sie XDM-Schemafelder für eine persistente ID oder Personen-ID verwenden, stellen Sie sicher, dass Identitäten im Schema für den Ereignis-Datensatz ordnungsgemäß markiert sind. [Siehe Übersicht über Identity-Namespaces](https://experienceleague.adobe.com/de/docs/experience-platform/identity/features/namespaces).
+* Wenn Sie Felder vom Typ [Experience-Datenmodell (XDM) für ](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/home) persistente ID oder Personen-ID verwenden, stellen Sie sicher, dass Identitäten im Schema für den Ereignis-Datensatz ordnungsgemäß markiert sind. [Siehe Übersicht über Identity-Namespaces](https://experienceleague.adobe.com/de/docs/experience-platform/identity/features/namespaces).
 * Identitätsabdeckung sowohl für persistente ID als auch für Personen-ID überprüfen:
 
-   * **Persistent ID**
+   * **[!UICONTROL Persistent ID]**
 
      Abfragen von Daten von sieben Tagen, wenn Ihr persistentes ID-Feld nicht null ist, geteilt durch eine Abfrage von sieben Tagen mit Daten für alle Ereignisse in Ihrem Datensatz. Dieser Prozentsatz sollte über 95 % liegen.
 
@@ -53,12 +52,12 @@ Wenn Sie die Voraussetzungen erfüllen, sollten Sie einige Preflight-Prüfungen 
       * `{PERSISTENT_ID_FIELD}` ist das Feld für die persistente ID. Beispiel: `identityMap.ecid[0]`.
       * `{DATASET_TABLE_NAME}` ist der Tabellenname für den Ereignis-Datensatz.
       * `{FORMAT_STRING}` ist die Formatzeichenfolge für das Zeitstempelfeld. Beispiel: `MM/DD/YY HH12:MI AM`.
-      * `{START_DATE} `ist das Startdatum. Beispiel: `2024-01-01 00:00:00`.
+      * `{START_DATE}`ist das Startdatum. Beispiel: `2024-01-01 00:00:00`.
       * `{END_DATE}` ist das Enddatum im Standardformat. Beispiel: `2024-01-08 00:00:00`.
 
 
-   * **Personen-ID**
-      * Stellen Sie bei diagrammbasiertem Stitching sicher, dass das Identitätsdiagramm Fragmente enthält, die ID-Werte aus dem ausgewählten persistenten ID-Namespace und dem Personen-ID-Namespace verknüpfen. Sie können einen Test ausführen, indem Sie zum [Experience Platform Identity Graph Viewer wechseln &#x200B;](https://experienceleague.adobe.com/de/docs/experience-platform/identity/features/identity-graph-viewer){target="_blank"} das Diagramm nach einigen Beispielwerten für persistente IDs abfragen. Überprüfen Sie, ob diese persistenten ID-Werte mit Personen-ID-Werten im Diagramm verknüpft sind.
+   * **[!UICONTROL Personen-ID]**
+      * Stellen Sie bei diagrammbasiertem Stitching sicher, dass das Identitätsdiagramm Fragmente enthält, die ID-Werte aus dem ausgewählten persistenten ID-Namespace und dem Personen-ID-Namespace verknüpfen. Sie können einen Test ausführen, indem Sie zum [Experience Platform Identity Graph Viewer wechseln ](https://experienceleague.adobe.com/de/docs/experience-platform/identity/features/identity-graph-viewer){target="_blank"} das Diagramm nach einigen Beispielwerten für persistente IDs abfragen. Überprüfen Sie, ob diese persistenten ID-Werte mit Personen-ID-Werten im Diagramm verknüpft sind.
       * Fragen Sie für das feldbasierte Stitching 7 Tage Daten ab, bei denen das Feld für Ihre Personen-ID nicht null ist, und teilen Sie dies durch eine Abfrage von 7 Tagen Daten für alle Ereignisse in Ihrem Datensatz. Dieser Prozentsatz sollte idealerweise über 5 % liegen.
 
         Beispiel einer Abfrage, die Sie zur Überprüfung verwenden können:
@@ -87,7 +86,7 @@ Wenn Sie die Voraussetzungen erfüllen, sollten Sie einige Preflight-Prüfungen 
 
 ## Aktivieren der Identitätszuordnung {#enable-identity-stitching}
 
-Sie können die Identitätszuordnung aktivieren[&#x200B; wenn Sie &#x200B;](/help/connections/create-connection.md#add-datasets) Ereignis-Datensatz in [&#x200B; personenbasierten Verbindung hinzufügen oder &#x200B;](/help/connections/create-connection.md#edit-a-dataset) bearbeiten. Identitätszuordnung ist für kontobasierte Verbindungen nicht verfügbar.
+Sie können die Identitätszuordnung aktivieren[ wenn Sie ](/help/connections/create-connection.md#add-datasets) Ereignis-Datensatz in [ personenbasierten Verbindung hinzufügen oder ](/help/connections/create-connection.md#edit-a-dataset) bearbeiten. Identitätszuordnung ist für kontobasierte Verbindungen nicht verfügbar.
 
 >[!CONTEXTUALHELP]
 >id="connection_changeto_identitygraph"
@@ -125,14 +124,14 @@ Sie können die Identitätszuordnung aktivieren[&#x200B; wenn Sie &#x200B;](/hel
 >id="connection_stitchingmetrics_badids"
 >title="Fehlerhafte IDs"
 >abstract="Ungültige IDs sind ID-Werte, die sich stark auf Berichtsdaten auswirken."
->additional-url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/technotes/badids" text="Fehlerhafte IDs"
+>additional-url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/technotes/badids" text="Fehlerhafte IDs"
 
 
 ### Datensatzeinstellungen
 
-Um das Zusammenfügen zu aktivieren, gehen Sie im Abschnitt **[!UICONTROL Datensatzeinstellungen]** des Dialogfelds **[!UICONTROL Datensätze hinzufügen]** oder **[!UICONTROL Datensatz bearbeiten]** folgendermaßen vor:
+Um das Zusammenfügen zu aktivieren, klicken Sie im Abschnitt **[!UICONTROL Datensatzeinstellungen]** des Dialogfelds **[!UICONTROL Datensätze hinzufügen]** oder **[!UICONTROL Datensatz bearbeiten]** auf.
 
-![Optionen für die Identitätszuordnung beim Aktivieren der Identitätszuordnung](assets/identity-stitching-ui.png)
+![Optionen für die Identitätszuordnung beim Aktivieren der Funktion](assets/identity-stitching-ui.png)
 
 1. Wählen Sie **[!UICONTROL Identitätszusammenfügung aktivieren]** aus.
 
@@ -142,14 +141,14 @@ Um das Zusammenfügen zu aktivieren, gehen Sie im Abschnitt **[!UICONTROL Datens
 
 1. Wählen Sie eine persistente ID aus **[!UICONTROL Dropdown-Menü]** Persistente ID“ aus.
 
-   Wenn Sie **[!UICONTROL Identitätszuordnung]** für die persistente ID auswählen, müssen Sie einen Namespace auswählen. Sie haben zwei Möglichkeiten:
+   Wenn Sie **[!UICONTROL Identitätszuordnung) für]** persistente ID auswählen, wählen Sie einen Namespace aus. Sie haben zwei Möglichkeiten:
 
    * Wählen Sie **[!UICONTROL Primären Identity-Namespace verwenden]** aus, um den primären Identity-Namespace zu verwenden.
    * Wählen Sie einen Namespace aus dem **[!UICONTROL Namespace]** Dropdown-Menü aus.
 
 1. Wählen Sie eine Personen-ID aus **[!UICONTROL Dropdown]** Menü „Personen-ID“ aus.
 
-   Wenn Sie **[!UICONTROL Identitätszuordnung]** für die Personen-ID auswählen, müssen Sie einen Namespace auswählen. Sie haben zwei Möglichkeiten:
+   Wenn Sie **[!UICONTROL Identitätszuordnung) für]** Personen-ID auswählen, wählen Sie einen Namespace aus. Sie haben zwei Möglichkeiten:
 
    * Wählen Sie **[!UICONTROL Primären Identity-Namespace verwenden]** aus, um den primären Identity-Namespace zu verwenden.
    * Wählen Sie einen Namespace aus dem **[!UICONTROL Namespace]** Dropdown-Menü aus.
@@ -175,9 +174,14 @@ Um das Zusammenfügen zu aktivieren, gehen Sie im Abschnitt **[!UICONTROL Datens
 
 Zusätzlich zur standardmäßigen Benutzeroberfläche **[!UICONTROL Datensatzvorschau]** stehen beim [Hinzufügen](/help/connections/create-connection.md#add-datasets) oder [Bearbeiten](/help/connections/create-connection.md#edit-a-dataset) von Datensätzen in einer personenbasierten Verbindung zwei zusätzliche Informationsbereiche zur Verfügung.
 
-![Optionen für die Identitätszuordnung beim Aktivieren der Identitätszuordnung](assets/identity-stitching-ui-preview.png)
+![Optionen für die Identitätszuordnung beim Aktivieren der Funktion](assets/identity-stitching-ui-preview.png)
 
 #### Zusammenfügen von Metriken
+
+>[!AVAILABILITY]
+>
+>Für diagrammbasiertes Stitching sind keine Stitching-Metriken verfügbar.
+>
 
 **[!UICONTROL Zuordnungsmetriken]** werden anhand eines Beispielsatzes von Daten mit Ereignis-Zeitstempeln der letzten 7 Tage berechnet. Dieser Beispieldatensatz unterscheidet sich in der Regel von den Beispieldaten, die in der Tabelle **[!UICONTROL Vorschau]** verwendet werden. Zuordnungsmetriken bieten Details für:
 
@@ -191,8 +195,12 @@ Zusätzlich zur standardmäßigen Benutzeroberfläche **[!UICONTROL Datensatzvor
 
   Die persistente ID-Abdeckung wird als Prozentsatz angezeigt und mit dem verglichen, was bei einer stabilen Entwicklung oder in einer Produktionseinrichtung als Minimum empfohlen wird.
 
-
 #### Fehlerhafte IDs
+
+>[!AVAILABILITY]
+>
+>Für diagrammbasiertes Stitching sind keine ungültigen IDs verfügbar.
+>
 
 >[!INFO]
 >
@@ -223,7 +231,7 @@ Nachdem Sie eine Verbindung gespeichert haben, wird der Zuordnungsprozess für a
 
 >[!CAUTION]
 >
->Bei Datensätzen, die für das Zusammenfügen in der Verbindungsschnittstelle aktiviert sind, wird der Aufstockungsstatus sofort und fälschlicherweise als ![Status grün](/help/assets/icons/StatusGreen.svg) **[!UICONTROL _x _Aufstockungen abgeschlossen]**&#x200B;für die Anzahl der abgeschlossenen Aufstockungen gemeldet. Verwenden Sie andere Möglichkeiten, um zu überprüfen, ob Daten aus dem zusammengefügten Datensatz aufgestockt werden.
+>Bei Datensätzen, die für das Zusammenfügen in der Verbindungsschnittstelle aktiviert sind, wird der Aufstockungsstatus sofort und fälschlicherweise als ![Status grün](/help/assets/icons/StatusGreen.svg) **[!UICONTROL _x _Aufstockungen abgeschlossen]**für die Anzahl der abgeschlossenen Aufstockungen gemeldet. Verwenden Sie andere Möglichkeiten, um zu überprüfen, ob Daten aus dem zusammengefügten Datensatz aufgestockt werden.
 >
 
 
