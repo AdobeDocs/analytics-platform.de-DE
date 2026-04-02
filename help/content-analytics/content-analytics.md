@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin, User
 exl-id: 0d3be50d-c635-459b-8b01-61d6d4ef0cdf
-source-git-commit: 58254cab90d907ad9675c30dfc1b835910214b3a
+source-git-commit: b85f6cd32fc5e097dc2ec5604fca18f50bfcf288
 workflow-type: tm+mt
-source-wordcount: '854'
-ht-degree: 96%
+source-wordcount: '861'
+ht-degree: 99%
 
 ---
 
@@ -41,7 +41,7 @@ Content Analytics verwendet die folgenden Schlüsselbegriffe:
 
 ## Funktionsweise
 
-Content Analytics verwendet Web-Bildansichtsdaten in Ereignisdatensätzen in Experience Platform, um [Inhaltsereignisdaten zu erfassen](config/datacollection.md). Für diese Inhaltserlebnisereignisse müssen die Daten mit der Experience Platform Edge Network (Web-SDK, Server-API) erfasst werden. Verhaltensdaten können mit Web SDK oder dem Analytics Source Connector erfasst werden.
+Content Analytics verwendet Web-Bildansichtsdaten in Ereignisdatensätzen in Experience Platform, um [Inhaltsereignisdaten zu erfassen](config/datacollection.md). Diese Erlebnisereignisse für Inhalte erfordern, dass die Daten mit Experience Platform Edge Network (Web SDK, Server-API) erfasst werden. Verhaltensdaten können mit Web SDK oder dem Analytics-Quell-Connector erfasst werden.
 
 ![Content Analytics – Funktionsweise](assets/aca-overview.gif)
 
@@ -63,11 +63,16 @@ Content Analytics verwendet Web-Bildansichtsdaten in Ereignisdatensätzen in Exp
 >Wenn Sie das Privacy und Security Shield-Add-on lizenziert haben, beachten Sie, dass aus Erlebnissen und Assets generierte Daten, die Content Analytics unterliegen, nicht von DULE-Labels oder von kundenseitig verwalteten Schlüsseln abgedeckt werden. Außerdem ist Content Analytics kein HIPAA-fähiger Dienst.
 >
 
+>[!IMPORTANT]
+>
+>Content Analytics unterstützt nur Funktionen auf Englisch.
+>
+
 
 >[!MORELIKETHIS]
 >
 >[Reporting für Content Analytics](report/report.md)
->&#x200B;>[Konfigurieren von Content Analytics](config/configuration.md)
->&#x200B;>[Berechnen von Bounces und Bounce-Raten in Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/calculating-bounces-amp-bounce-rate-in-adobe-customer-journey/ba-p/706446?profile.language=de&lang=de#M454)
+>[Konfigurieren von Content Analytics](config/configuration.md)
+>[Berechnen von Bounces und Bounce-Raten in Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/calculating-bounces-amp-bounce-rate-in-adobe-customer-journey/ba-p/706446?lang=de#M454)
 >
 
