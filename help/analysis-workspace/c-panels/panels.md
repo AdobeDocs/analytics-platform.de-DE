@@ -4,10 +4,10 @@ title: Übersicht über Bedienfelder in Analysis Workspace
 feature: Panels
 exl-id: be3e34a0-06c1-4200-b965-96084c2912fd
 role: User
-source-git-commit: d89c9dd2ab42ada9d0af259c21a77f183384b680
+source-git-commit: 11df56f5d757602403098d1c6b4330e935a438a2
 workflow-type: tm+mt
-source-wordcount: '2682'
-ht-degree: 43%
+source-wordcount: '2721'
+ht-degree: 42%
 
 ---
 
@@ -89,7 +89,7 @@ Sie können ein Panel wie folgt verwalten:
 
 ## Datenansicht
 
-Jedes Bedienfeld ist mit einer [Datenansicht“ &#x200B;](/help/data-views/data-views.md). Sie können den ![Daten](/help/assets/icons/Data.svg)-**[!UICONTROL *der Datenansicht *]**&#x200B;Dropdown-Menü oben rechts im Bedienfeld identifizieren.
+Jedes Bedienfeld ist mit einer [Datenansicht“ ](/help/data-views/data-views.md). Sie können den ![Daten](/help/assets/icons/Data.svg)-**[!UICONTROL *der Datenansicht *]**Dropdown-Menü oben rechts im Bedienfeld identifizieren.
 
 Wenn Sie ein leeres Workspace-Projekt erstellen, ist die Standarddatenansicht für das erste Panel die Datenansicht, an der Sie zuletzt in Customer Journey Analytics gearbeitet haben.
 
@@ -183,11 +183,11 @@ Jede Segmentkomponente, die Sie ablegen, wird zum Segmentieren des Bedienfelds v
 
 ### Schnellsegment
 
-Jede Nicht-Segment-Komponente (Dimension, Dimensionselement, Metrik, Datumsbereich), die abgelegt wird, definiert ein [Schnellsegment](#quick-segment) zum Segmentieren des Bedienfelds. Verwenden Sie eine beliebige Nicht-Segment-Komponente, um ein Schnellsegment ohne Verwendung von [Segment Builder) &#x200B;](/help/components/segments/seg-builder.md) erstellen. Ein auf diese Weise erstelltes Segment wird automatisch als Segment auf Ereignisebene definiert und standardmäßig mit **[!UICONTROL Schnellsegment]** gekennzeichnet.
+Jede Nicht-Segment-Komponente (Dimension, Dimensionselement, Metrik, Datumsbereich), die abgelegt wird, definiert ein [Schnellsegment](#quick-segment) zum Segmentieren des Bedienfelds. Verwenden Sie eine beliebige Nicht-Segment-Komponente, um ein Schnellsegment ohne Verwendung von [Segment Builder) ](/help/components/segments/seg-builder.md) erstellen. Ein auf diese Weise erstelltes Segment wird automatisch als Segment auf Ereignisebene definiert und standardmäßig mit **[!UICONTROL Schnellsegment]** gekennzeichnet.
 
 Alternativ können Sie ![FilterAdd](/help/assets/icons/FilterAdd.svg) verwenden, um ein Schnellsegment zu erstellen.
 
-Informationen [&#x200B; Erstellen und Verwalten &#x200B;](/help/components/segments/seg-quick.md) Schnellsegmenten finden Sie unter „Schnellsegmente“.
+Informationen [ Erstellen und Verwalten ](/help/components/segments/seg-quick.md) Schnellsegmenten finden Sie unter „Schnellsegmente“.
 
 
 ### Dropdown-Menü
@@ -219,20 +219,20 @@ Sie können beispielsweise zwei dynamische Dropdown-Menüs mit der Dimension Lan
 
 Für jede Metrik, jedes Segment oder jede Datumsbereichskomponente, die Sie ablegen **während Sie** halten⇧ wird ein Dropdown-Menü für Segmente erstellt. Dieses Dropdown-Menü ermöglicht es Ihnen, das Bedienfeld nach Elementen zu filtern, die für die abgelegte Komponente verfügbar sind.
 
-Für jede *Dimension*-Komponente, die Sie ablegen **während Sie** halten⇧ wird ein Dropdown-Menü für Segmente erstellt. Dieses Dropdown-Menü ermöglicht es Ihnen, das Bedienfeld basierend auf den Elementen zu filtern, die für die abgelegten Dimensionselemente ([statisches](#static) Dropdown-Menü für Segmente) oder die Dimensionskomponente ([dynamisches](#dynamic) Dropdown-Menü für Segmente) verfügbar sind. So konfigurieren Sie das Dropdown-Menü explizit für das Filtern mithilfe von Segmenten:
+Für jede *Dimension*-Komponente, die Sie ablegen **während Sie** halten⇧ wird ein Dropdown-Menü für Segmente erstellt. Dieses Dropdown-Menü ermöglicht es Ihnen, das Bedienfeld basierend auf den Elementen zu filtern, die für die abgelegten Dimensionselemente ([statisches](#static) Dropdown-Menü für Segmente) oder die Dimensionskomponente ([dynamisches](#dynamic) Dropdown-Menü für Segmente) verfügbar sind. So konfigurieren Sie das Dropdown-Menü explizit, um einen Bereich mithilfe von Segmenten zu filtern:
 
-* Wählen Sie ![Aufschlüsselung](/help/assets/icons/Breakdown.svg) und wählen Sie ![Filter](/help/assets/icons/Filter.svg) aus dem Kontextmenü für die ❾ aus.
+* Wählen Sie ![Aufschlüsselung](/help/assets/icons/Breakdown.svg) und wählen Sie ![Filter](/help/assets/icons/Filter.svg) **[!UICONTROL Segment]** | **[!UICONTROL Filtert die Daten im]** aus dem Kontextmenü für die ❾.
 
 
 #### Aufschlüsseln eines Bedienfelds
 
-Für jede *Dimension*-Komponente, die Sie ablegen **während Sie** halten⇧ wird ein Dropdown-Menü für Segmente erstellt. Sie können das Dropdown-Menü so konfigurieren, dass stattdessen eine Aufschlüsselung erfolgt. So konfigurieren Sie das Dropdown-Menü explizit für Aufschlüsselungen:
+Für jede *Dimension*-Komponente, die Sie ablegen **während Sie** halten⇧ wird ein Dropdown-Menü für Segmente erstellt. Sie können dieses Dropdown-Menü so konfigurieren, dass das Bedienfeld auf der Grundlage der Elemente aufgeschlüsselt wird, die für die abgelegten Dimensionselemente ([statisches](#static) Aufschlüsselungs-Dropdown-Menü) oder die Dimensionskomponente ([dynamisches](#dynamic) Aufschlüsselungs-Dropdown-Menü) verfügbar sind. So konfigurieren Sie das Dropdown-Menü explizit so, dass ein Bedienfeld mithilfe von Aufschlüsselungen aufgeschlüsselt wird:
 
-* Wählen Sie ![Filter](/help/assets/icons/Filter.svg) und wählen Sie ![Aufschlüsselung](/help/assets/icons/Breakdown.svg) aus dem Kontextmenü für die ❾ aus.
+* Wählen Sie ![Filter](/help/assets/icons/Filter.svg) und wählen Sie ![Aufschlüsselung](/help/assets/icons/Breakdown.svg) **[!UICONTROL Aufschlüsselung]** | **[!UICONTROL Aufschlüsselung der Daten im]** aus dem Kontextmenü für die ❾.
 
 >[!IMPORTANT]
 >
->Aufschlüsselungen sind nur für Dimensionen und Dimensionselemente verfügbar, nicht für Segmente, Datumsbereiche oder Metriken.
+>Die Aufschlüsselung ist nur für Dimensionen und Dimensionselemente verfügbar, die Sie im Ablagebereich verwenden.
 >
 
 
@@ -243,7 +243,7 @@ Erwägen Sie in den folgenden Szenarien, einen Bereich aufzuschlüsseln, anstatt
 
 * Wenn Sie Attribution-aktivierte Metriken in Ihrem Bedienfeld verwenden, löschen Segmente häufig Ihre Attribution-aktivierten Metriken. Aufschlüsselungen werden an einer anderen Stelle innerhalb der Abfrage angewendet, die ausgeführt wird, um die Daten für Ihr Bedienfeld abzurufen. Daher werden diese Attribut-aktivierten Metriken bei Aufschlüsselungen nicht gelöscht.
 
-  Sehen Sie als Beispiel den Unterschied zwischen der auf dem Attribut **[!UICONTROL Online-Umsatz]** basierenden Metrik bei Verwendung eines Segments **[!UICONTROL Luma:]**![&#x200B; Filter](/help/assets/icons/Filter.svg) **[!UICONTROL Women]** und eines **[!UICONTROL Luma: Produktkategorie]** ![](/help/assets/icons/Breakdown.svg) Aufschlüsselung **[!UICONTROL Women]**.
+  Sehen Sie als Beispiel den Unterschied zwischen der auf dem Attribut **[!UICONTROL Online-Umsatz]** basierenden Metrik bei Verwendung eines Segments **[!UICONTROL Luma:]**![ Filter](/help/assets/icons/Filter.svg) **[!UICONTROL Women]** und eines **[!UICONTROL Luma: Produktkategorie]** ![](/help/assets/icons/Breakdown.svg) Aufschlüsselung **[!UICONTROL Women]**.
 
   ![Attributbasierte Metriken: Filter versus Aufschlüsselung](assets/attribute-filter-breakdown.png)
 
@@ -267,7 +267,7 @@ Sie können die Komponenten im Ablagebereich wie folgt verwalten:
 | So löschen Sie die Komponente aus dem Ablagebereich. | Wählen **[!UICONTROL Dropdown löschen]** aus dem Kontextmenü für die Komponente aus. |
 | Um Informationen zu einem Segment oder Schnellsegment zu erhalten. | Bewegen Sie den Mauszeiger über die Komponente und wählen ![Info](/help/assets/icons/Info.svg) aus, um das Datenwörterbuch mit Informationen zur Komponente zu öffnen. |
 | Um Informationen über die Komponente zu erhalten, die ein Dropdown-Menü definiert. | Bewegen Sie den Mauszeiger über das Dropdown-Menü und wählen Sie ![InfoOutline](/help/assets/icons/InfoOutline.svg) aus, um das Datenwörterbuch mit Informationen zur Komponente zu öffnen. |
-| So bearbeiten Sie ein Schnellsegment: | Bewegen Sie den Mauszeiger über das Schnellsegment und wählen Sie ![Bearbeiten](/help/assets/icons/Edit.svg) aus. Weitere Informationen finden [&#x200B; unter &#x200B;](/help/components/segments/seg-quick.md)Schnellsegmente“. |
+| So bearbeiten Sie ein Schnellsegment: | Bewegen Sie den Mauszeiger über das Schnellsegment und wählen Sie ![Bearbeiten](/help/assets/icons/Edit.svg) aus. Weitere Informationen finden [ unter ](/help/components/segments/seg-quick.md)Schnellsegmente“. |
 | So fordern Sie eine Auswahl für ein Dropdown-Menü an. | Wählen **[!UICONTROL Auswahl erforderlich]** aus dem Kontextmenü für die Komponente aus. |
 | , um für ein Dropdown-Menü keinen Filter zuzulassen. | Wählen **[!UICONTROL Keine Filter zulassen]** aus dem Kontextmenü für die Komponente aus. |
 | So setzen Sie alle Komponenten zurück und löschen alle Auswahlen für Dropdown-Menüs. | Wählen Sie **[!UICONTROL Alle zurücksetzen]** aus. |
@@ -276,7 +276,7 @@ Sie können die Komponenten im Ablagebereich wie folgt verwalten:
 
 >[!BEGINSHADEBOX]
 
-Siehe ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Verwenden von Filtern in Analysis Workspace](https://experienceleague.adobe.com/de/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters){target="_blank"} für ein Demovideo.
+Siehe ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Verwenden von Filtern in Analysis Workspace](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters){target="_blank"} für ein Demovideo.
 
 {{videoaa}}
 
@@ -284,7 +284,7 @@ Siehe ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Verwenden von 
 
 >[!BEGINSHADEBOX]
 
-Siehe ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Dynamische Dropdown-Filter](https://experienceleague.adobe.com/de/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/tips-and-tricks/dynamic-drop-downs){target="_blank"} für ein Demovideo.
+Siehe ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Dynamische Dropdown-Filter](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/tips-and-tricks/dynamic-drop-downs){target="_blank"} für ein Demovideo.
 
 >[!ENDSHADEBOX]
 
