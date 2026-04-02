@@ -4,56 +4,62 @@ title: Fallout-Visualisierung konfigurieren
 feature: Visualizations
 exl-id: 3d888673-d7b1-45ef-bd3a-97b98466fb0e
 role: User
-source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
+source-git-commit: 295e4c9b3b9dff5ba650456c3f62817b30fe1e3d
 workflow-type: tm+mt
-source-wordcount: '856'
-ht-degree: 71%
+source-wordcount: '914'
+ht-degree: 41%
 
 ---
 
 # Fallout-Visualisierung konfigurieren {#configure-fallout-visualization}
 
 
-Sie können die Touchpoints angeben, um eine mehrdimensionale Fallout-Sequenz zu erstellen. Normalerweise ist ein Touchpoint eine Seite auf Ihrer Site. Touchpoints sind jedoch nicht auf Seiten beschränkt. So können Sie zum Beispiel Ereignisse (wie Einheiten) sowie eindeutige Personen und erneute Besuche hinzufügen. Sie können auch Dimensionen hinzufügen, z. B. eine Kategorie, einen Browser-Typ oder einen internen Suchbegriff.
+Sie können **Touchpoints** angeben, um eine mehrdimensionale Fallout-Sequenz zu erstellen. In vielen Fällen ist ein Touchpoint eine Seite Ihrer Website. Touchpoints sind jedoch nicht auf Seiten beschränkt. So können Sie zum Beispiel Ereignisse (wie Einheiten) sowie eindeutige Personen und erneute Besuche hinzufügen. Sie können auch Dimensionen hinzufügen, z. B. eine Kategorie, einen Browser-Typ oder einen internen Suchbegriff.
 
-Sie können sogar Segmente innerhalb eines Touchpoints hinzufügen. Vielleicht möchten Sie zum Beispiel Segmente vergleichen (wie etwa iOS- und Android™-Benutzende). Wenn Sie die gewünschten Segmente an die Oberseite des Trichters ziehen, werden Informationen über diese Segmente zum Fallout-Bericht hinzugefügt. Wenn Sie möchten, dass nur diese Segmente angezeigt werden, können Sie die Grundlinie „Alle Besuche“ entfernen.
+Sie können sogar Segmente innerhalb eines Touchpoints hinzufügen. Vielleicht möchten Sie zum Beispiel Segmente vergleichen, z. B. Benutzer von iOS und Android. Wenn Sie die gewünschten Segmente an die Oberseite des Trichters ziehen, werden Informationen über diese Segmente zum Fallout-Bericht hinzugefügt. Wenn Sie nur diese Segmente anzeigen möchten, können Sie die Baseline „Alle Personen“ entfernen.
 
-Es gibt keine Einschränkungen bezüglich der Anzahl der Schritte, die hinzugefügt werden können, oder der Dimensionen, die verwendet werden können.
+Fallout-Visualisierungen haben keine Beschränkung hinsichtlich der Anzahl der Touchpoints, die Sie hinzufügen können, oder der Anzahl der Komponenten, die Sie verwenden können.
 
-Sie können Pfade für Dimensionen, Metriken und Segmente erstellen. Beispiel: Angenommen, jemand sucht auf der einen Seite nach „Schuhe, Shirt“ und auf der nächsten Seite nach „Schuhe, Socken“. Der nächste Produktflussbericht von Schuhe wird „Shirt und Socken“ lauten, NICHT „Shirt“.
+Sie können Pfade für Dimensionen, Metriken und Segmente erstellen. Nehmen wir zum Beispiel an, dass jemand `shoes, shirt` auf einer Seite betrachtet, und auf der nächsten Seite `shirt, socks`. Der nächste Produktflussbericht von Schuhe wird „Shirt und Socken“ lauten, NICHT „Shirt“.
 
 ## Verwenden
 
 1. Fügen Sie eine Visualisierung des Typs ![ConversionFunnel](/help/assets/icons/ConversionFunnel.svg) **[!UICONTROL Fallout]** hinzu. Weitere Informationen finden Sie unter [Hinzufügen einer Visualisierung in einem Bedienfeld](../freeform-analysis-visualizations.md#add-visualizations-to-a-panel).
-1. Ziehen Sie eine Seite, z. B. die Startseite, aus der Dimension Seite in das Dropdown *Menü* Touchpoint hinzufügen“.
+
+1. Ziehen Sie eine Komponente in das **[!UICONTROL Touchpoint hinzufügen]** Dropdown-Menü.
+
+   >[!TIP]
+   >
+   >Sie können dem Fallout-Bericht eine einzelne Seite statt der gesamten Dimension hinzufügen. Klicken Sie auf den Pfeil nach rechts ![ChevronRight](/help/assets/icons/ChevronRight.svg) auf der Seitendimension, um eine bestimmte Seite auszuwählen, z. B **[!UICONTROL &quot;]**&quot;, die dem Fallout-Bericht hinzugefügt werden soll.
 
    ![Die Startseite aus der Dimension „Seite“, die in das Feld „Touchpoint hinzufügen“ gezogen wurde.](assets/fallout-drag.png)
 
-   Bewegen Sie den Mauszeiger über einen Touchpoint, um den Fallout und andere Informationen zu dieser Ebene anzuzeigen, wie z. B. den Namen des Touchpoints und die Anzahl der Personen zu diesem Zeitpunkt. Zeigen Sie die Erfolgsrate für diesen Touchpoint an (und vergleichen Sie die Erfolgsrate mit anderen Touchpoints).
-
-   Die umkreisten Zahlen im grauen Abschnitt der Leiste zeigen den Fallout zwischen Touchpoints an (nicht den gesamten Fallout bis zu diesem Punkt). **[!UICONTROL Touchpoint %]** zeigt den erfolgreichen Fallthrough vom vorherigen Schritt zum aktuellen Schritt im Fallout-Bericht an.
-
-   Sie können auch eine einzelne Seite anstatt der gesamten Dimension zum Fallout-Bericht hinzufügen. Klicken Sie auf den rechten Pfeil ![ChevronRight](/help/assets/icons/ChevronRight.svg) auf der Dimension „Seite“, um die Seite auszuwählen, die Sie zum Fallout-Bericht hinzufügen möchten.
-
 1. Fügen Sie weitere Touchpoints hinzu, bis Ihre Sequenz vollständig ist.
 
-   Sie können **mehrere Touchpoints kombinieren**, indem Sie mindestens eine weitere Komponente auf einen Touchpoint ziehen. 
+   Die umkreisten Zahlen im grauen Abschnitt der Leiste zeigen den Fallout zwischen Touchpoints an (nicht den gesamten Fallout bis zu diesem Punkt). Die eingekreisten Zahlen im grünen Bereich des Balkens zeigen den erfolgreichen Durchfall vom vorherigen Touchpoint zum aktuellen Touchpoint.
 
-   >[!NOTE]
-   >
-   >Hinweis: Mehrere Segmente werden mit AND verbunden, mehrere Elemente wie Dimensionselemente und Metriken hingegen mit OR.
+   ![Fallout-Visualisierung](assets/fallout-visualization.png)
 
-   ![Die Seite:CamerRoll oder Seite: Kamera-Touchpoints hervorgehoben.](assets/fallout-or.png)
+   Beim Hinzufügen von Touchpoints haben Sie folgende Möglichkeiten:
 
-1. **Einzelne Touchpoints können nun auch auf das nächste Ereignis** (statt *am Ende*) im Pfad eingegrenzt werden. Unter jedem Touchpoint befinden sich die Auswahlmöglichkeiten **[!UICONTROL Endgültiger Pfad]** und **[!UICONTROL Nächstes Ereignis]**:
+   * Kombinieren Sie mehrere Komponenten, indem Sie eine oder mehrere zusätzliche Komponenten auf einen einzelnen Touchpoint ziehen.
 
-   ![Die Ansicht „Alle Besuche“ mit hervorgehobener Option „Endgültiger Pfad“. &#x200B;](assets/fallout-nexthit.png)
+     >[!NOTE]
+     >
+     >Hinweis: Mehrere Segmente werden mit AND verbunden, mehrere Elemente wie Dimensionselemente und Metriken hingegen mit OR.
 
-   | Option | Beschreibung |
-   |---|---|
-   | **[!UICONTROL Endgültiger Pfad]** (Standard) | Es werden die Besuchenden gezählt, die *am Ende* auf der nächsten Seite im Pfad, aber nicht notwendigerweise beim nächsten Ereignis landen. |
-   | **[!UICONTROL Nächstes Ereignis]** | Personen werden gezählt, die beim nächsten Ereignis auf der nächsten Seite im Pfad landen. |
+   * Ordnen Sie Touchpoints neu an, indem Sie sie in der Fallout-Hierarchie auf eine andere Ebene ziehen.
 
+   * Kombinieren Sie zwei Touchpoints, indem Sie einen Touchpoint auf einen anderen ziehen. Touchpoint ablegen, wenn das Wort &quot;**[!UICONTROL &quot;]**.
+
+   * Einschränken einzelner Touchpoints auf das nächste Ereignis (im Gegensatz zu *letztendlich*) im Pfad. Unter jedem Touchpoint gibt es einen Selektor mit den Optionen **[!UICONTROL Eventueller Pfad]** und **[!UICONTROL Nächstes Ereignis]**, wie hier gezeigt:
+
+     | Option | Beschreibung |
+     |---|---|
+     | **[!UICONTROL Endgültiger Pfad]** (Standard) | Es werden die Besuchenden gezählt, die *am Ende* auf der nächsten Seite im Pfad, aber nicht notwendigerweise beim nächsten Ereignis landen. |
+     | **[!UICONTROL Nächstes Ereignis]** | Personen werden gezählt, die beim nächsten Ereignis auf der nächsten Seite im Pfad landen. |
+
+   * Bewegen Sie den Mauszeiger über einen Touchpoint, um den Fallout und andere Informationen zu dieser Ebene anzuzeigen. Zu den Informationen gehören der Name des Touchpoints, die Anzahl der Personen und die Erfolgsrate. Sie können die Erfolgsrate auch mit anderen Touchpoints vergleichen.
 
 ## Einstellungen {#settings}
 
@@ -73,7 +79,21 @@ Im Rahmen der Visualisierung sind bestimmte Einstellungen verfügbar.
 
 Im Rahmen der Visualisierung sind bestimmte Kontextmenüoptionen verfügbar.
 
-![Fallout-Optionen](assets/fallout-options.png)
+### Zugriff auf das Kontextmenü
+
+Sie können auf eine der folgenden Arten auf das Kontextmenü zugreifen:
+
+* Bewegen Sie den Mauszeiger über einen Touchpoint in der Visualisierung und wählen Sie dann **[!UICONTROL Zum Analysieren klicken]** aus.
+
+  ![Zugriff auf das Kontextmenü über den Mauszeiger](assets/fallout-tooltip-analyze.png)
+
+* Klicken Sie mit der rechten Maustaste auf einen Touchpoint in der Visualisierung.
+
+  ![Fallout-Optionen](assets/fallout-options.png)
+
+### Optionen des Kontextmenüs
+
+Die folgenden Optionen des Kontextmenüs sind verfügbar:
 
 | Option | Beschreibung |
 |--- |--- |
