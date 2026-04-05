@@ -1,10 +1,15 @@
 ---
 cloud: Experience Cloud
+solution: Customer Journey Analytics
+type: Documentation
 git-repo: https://github.com/AdobeDocs/analytics-platform.de-DE
 description: Diese Datei enthält Metadaten auf Repo-Ebene, die an die im Repository enthaltenen TOC.md-Dateien des Benutzerhandbuchs weitergegeben werden.
 feature-set: Customer Journey Analytics
+landing-page-name: customer-journey-analytics
+landing-page-breadcrumb-title: Customer Journey Analytics
 role: User, Admin
-source-git-commit: edbad9c9d3dc0b48db5334828a18ef652d4a38aa
+index: true
+source-git-commit: b718ec4452a8ea394cb3d0969f49b18a667dcf3a
 workflow-type: tm+mt
 source-wordcount: '125'
 ht-degree: 86%
@@ -14,7 +19,7 @@ ht-degree: 86%
 
 # Metadaten für die interne Verwendung
 
-Die Datei metadata.md enthält Metadaten auf Repo-Ebene, die an die TOC.md-Dateien des Benutzerhandbuchs im Repo weitergegeben werden. Wenn Sie den Inhalt von metadata.md für ein Benutzerhandbuch ändern möchten, tun Sie dies in einer beliebigen TOC.md-Datei.
+Die Datei „metadata.md“ enthält Metadaten auf Repository-Ebene, die an die im Repository enthaltenen Dateien „TOC.md“ des Benutzerhandbuchs weitergegeben werden. Wenn Sie den Inhalt von „metadata.md“ für ein Benutzerhandbuch ändern möchten, verwenden Sie dazu eine beliebige Datei „TOC.md“.
 
 | metadata | was es macht |
 |--- |--- |
