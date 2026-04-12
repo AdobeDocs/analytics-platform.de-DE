@@ -4,9 +4,8 @@ keywords: Clickstream;Daten-Feed;Daten-Feed;Data Feed
 title: Vorbereiten der Zuordnung von Daten-Feed-Spalten von Adobe Analytics zu Customer Journey Analytics
 feature: Components
 hide: true
-hidefromtoc: true
 exl-id: d0a9e697-1e48-4cfb-8613-2f932bf5015b
-source-git-commit: b9efb621523f8bbfbb3afe7db4db2e60fcddd34c
+source-git-commit: efa2cada4b26d71cce22c0d0e8662b6dd04f38f4
 workflow-type: tm+mt
 source-wordcount: '1060'
 ht-degree: 2%
