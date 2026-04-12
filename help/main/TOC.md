@@ -2,10 +2,10 @@
 user-guide-title: Handbuch zu Customer Journey Analytics
 user-guide-description: Hier erhalten Sie Informationen zu Adobe Customer Journey Analytics und Erläuterungen zur Nutzung von Analysis Workspace mit Daten aus Experience Platform.
 breadcrumb-title: Handbuch zu Customer Journey Analytics
-source-git-commit: bac8472ed61d2c7421fb43957c22d18edaac67ec
+source-git-commit: efa2cada4b26d71cce22c0d0e8662b6dd04f38f4
 workflow-type: tm+mt
 source-wordcount: '1389'
-ht-degree: 95%
+ht-degree: 94%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 95%
 
 + Versionshinweise {#releases}
    + [Neueste Version](../release-notes/latest.md)
-   + [Vorab veröffentlichte Versionshinweise](../release-notes/pre-release-notes.md)
+   + {hide-from-toc}[Hinweise zu Vorabversionen](../release-notes/pre-release-notes.md)
    + [Versionen von 2026](../release-notes/2026.md)
    + [Versionen 2025](../release-notes/2025.md)
    + [Versionen 2024](../release-notes/2024.md)
@@ -43,10 +43,10 @@ ht-degree: 95%
 
 + Aktualisieren und Vergleichen {#compare-aa-cja}
    + Upgrade auf Customer Journey Analytics {#upgrade-to-cja}
-      + [Erste Schritte](/help/getting-started/cja-upgrade/cja-upgrade-getstarted.md)
-      + [Auswählen des Aktualisierungspfads](/help/getting-started/cja-upgrade/cja-upgrade-path.md)
-      + [Senden von Daten an Platform](/help/getting-started/cja-upgrade/cja-upgrade-send-to-platform.md)
-      + [Beibehalten historischer Daten](/help/getting-started/cja-upgrade/cja-upgrade-historical-data.md)
+      + {hide-from-toc}[Erste Schritte](/help/getting-started/cja-upgrade/cja-upgrade-getstarted.md)
+      + {hide-from-toc}[Wählen Sie Ihren Aktualisierungspfad](/help/getting-started/cja-upgrade/cja-upgrade-path.md)
+      + {hide-from-toc}[Senden von Daten an Platform](/help/getting-started/cja-upgrade/cja-upgrade-send-to-platform.md)
+      + {hide-from-toc}[Verlaufsdaten aufbewahren](/help/getting-started/cja-upgrade/cja-upgrade-historical-data.md)
       + [Empfohlener Upgrade-Prozess](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md)
       + [Vorbereiten Ihrer Organisation](/help/getting-started/cja-upgrade/cja-upgrade-org-readiness.md)
       + Planen und Erstellen eines Schemas {#schema}
@@ -406,10 +406,10 @@ ht-degree: 95%
       + [Verwalten von Exportprotokollen](/help/components/exports/manage-export-logs.md)
       + [Fehlerbehebung bei Exporten](/help/components/exports/troubleshoot-exports.md)
       + Daten-Feeds {#cja-data-feeds}
-         + [Daten-Feed-Übersicht](/help/components/exports/cja-data-feeds/data-feed-overview.md)
-         + [Vergleichen von Adobe Analytics-Daten-Feeds](/help/components/exports/cja-data-feeds/df-comparison.md)
-         + [Vorbereiten der Spaltenzuordnung](/help/components/exports/cja-data-feeds/df-column-mapping-prep.md)
-         + [Spalten zuordnen](/help/components/exports/cja-data-feeds/aa-cja-column-reference.md)
+         + {hide-from-toc}[Daten-Feed-Übersicht](/help/components/exports/cja-data-feeds/data-feed-overview.md)
+         + {hide-from-toc}[Vergleichen von Adobe Analytics-Daten-Feeds](/help/components/exports/cja-data-feeds/df-comparison.md)
+         + {hide-from-toc}[Vorbereiten der Spaltenzuordnung](/help/components/exports/cja-data-feeds/df-column-mapping-prep.md)
+         + {hide-from-toc}[Spalten zuordnen](/help/components/exports/cja-data-feeds/aa-cja-column-reference.md)
    + Datenwörterbuch {#data-dictionary}
       + [Überblick](../components/data-dictionary/data-dictionary-overview.md)
       + [Komponenteninformationen im Datenwörterbuch anzeigen](../components/data-dictionary/view-data-dictionary.md)
@@ -532,7 +532,7 @@ ht-degree: 95%
          + [Verbinden von Sitzungswiederholungen](/help/use-cases/third-party/quantum-metric/tie-session-replays.md)
          + [Verwenden von Heatmaps](/help/use-cases/third-party/quantum-metric/heatmap.md)
          + [Hinzufügen von Reibungsereignissen](/help/use-cases/third-party/quantum-metric/friction-events.md)
-         + [Quell-Connector](/help/use-cases/third-party/quantum-metric/source-connector.md)
+         + {hide-from-toc}[Source-Connector](/help/use-cases/third-party/quantum-metric/source-connector.md)
 
 + Labs {#labs}
    + [Labs-Benutzerhandbuch](../labs/labs.md)
