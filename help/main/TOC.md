@@ -2,9 +2,9 @@
 user-guide-title: Handbuch zu Customer Journey Analytics
 user-guide-description: Hier erhalten Sie Informationen zu Adobe Customer Journey Analytics und Erläuterungen zur Nutzung von Analysis Workspace mit Daten aus Experience Platform.
 breadcrumb-title: Handbuch zu Customer Journey Analytics
-source-git-commit: efa2cada4b26d71cce22c0d0e8662b6dd04f38f4
+source-git-commit: afb577bb72f2528c15acbc30794c900ea62b51b6
 workflow-type: tm+mt
-source-wordcount: '1389'
+source-wordcount: '1391'
 ht-degree: 94%
 
 ---
@@ -159,6 +159,7 @@ ht-degree: 94%
    + [Standardkomponentenreferenz](../data-views/component-reference.md)
    + [BI-Erweiterung](../data-views/bi-extension.md)
    + [Abgeleitete Felder](../data-views/derived-fields/derived-fields.md)
+   + {hide-from-toc}[Best Practices](/help/data-views/derived-fields/best-practices.md)
    + [Zusammenfassungsdaten](../data-views/summary-data.md)
    + [Labels und Richtlinien](../data-views/data-governance.md)
    + Freigegebene Metriken und Dimensionen{#shared-metrics-dimensions}
@@ -473,7 +474,7 @@ ht-degree: 94%
       + [Beispiel für ein personenbasiertes B2B-Projekt](../use-cases/b2b/example.md)
       + B2B Edition {#b2b-edition}
          + [Überblick über Anwendungsfälle](/help/use-cases/b2b/b2b-edition/use-cases-overview.md)
-         + [Einrichten](/help/use-cases/b2b/b2b-edition/setup.md)
+         + [Einrichtung](/help/use-cases/b2b/b2b-edition/setup.md)
          + [Optimieren des Konto-Marketings](/help/use-cases/b2b/b2b-edition/optimize-account-marketing.md)
          + [Wachstum wichtiger Konten](/help/use-cases/b2b/b2b-edition/grow-key-accounts.md)
          + [Fördern von Produktwert](/help/use-cases/b2b/b2b-edition/build-product-value.md)
