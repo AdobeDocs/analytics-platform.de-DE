@@ -18,7 +18,7 @@ In diesem Anwendungsfall möchten Sie einen Datumsbereich verwenden, den Sie in 
 
 +++ Customer Journey Analytics
 
-Um Berichte in einem Datumsbereich zu erstellen, richten Sie in Customer Journey Analytics einen Datumsbereich mit dem **** Titel`Last Year 2023` ein.
+Um Berichte in einem Datumsbereich zu erstellen, richten Sie in Customer Journey Analytics einen Datumsbereich mit dem **&#x200B;**&#x200B;Titel`Last Year 2023` ein.
 
 ![Customer Journey Analytics Verwenden Sie Datumsbereichsnamen, um zu filtern](../assets/cja-daterange.png)
 
@@ -34,7 +34,7 @@ Beachten Sie, dass der in der Freiformtabellen-Visualisierung definierte Datumsb
 
 >[!PREREQUISITES]
 >
->Stellen Sie sicher, [ Sie für das BI-Tool, für das Sie diesen Anwendungsfall ausprobieren möchten, (eine erfolgreiche Verbindung, Datenansichten auflisten ](connect-and-validate.md) eine Datenansicht verwenden) validiert haben.
+>Stellen Sie sicher, [&#x200B; Sie für das BI-Tool, für das Sie diesen Anwendungsfall ausprobieren möchten, (eine erfolgreiche Verbindung, Datenansichten auflisten &#x200B;](connect-and-validate.md) eine Datenansicht verwenden) validiert haben.
 >
 
 >[!BEGINTABS]
@@ -81,7 +81,7 @@ Beachten Sie, dass der in der Freiformtabellen-Visualisierung definierte Datumsb
 1. Im Dialogfeld **[!UICONTROL Filter hinzufügen]**:
    1. Wählen Sie **[!UICONTROL ‣ CC-Datenansicht]**
    1. Wählen Sie aus der Liste der Felder **[!UICONTROL ‣ Datumsbereichsname]** aus.
-1. Geben Sie den Filter **[!UICONTROL Cc-Datenansicht - Datumsbereichsname]** wie **** an und wählen Sie **[!UICONTROL Letztes Jahr 2023]** aus der Werteliste aus.
+1. Geben Sie den Filter **[!UICONTROL Cc-Datenansicht - Datumsbereichsname]** wie **&#x200B;**&#x200B;an und wählen Sie **[!UICONTROL Letztes Jahr 2023]** aus der Werteliste aus.
 1. Im Abschnitt **[!UICONTROL ‣ CC-Datenansicht]** in der linken Leiste:
    1. Wählen **[!UICONTROL daterange month]**, dann **[!UICONTROL month]**.
    1. Wählen Sie **[!UICONTROL Count]** unter **[!UICONTROL MEASURES]** in der linken Leiste (unten) aus.

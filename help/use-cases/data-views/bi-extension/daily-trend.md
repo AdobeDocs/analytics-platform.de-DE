@@ -29,7 +29,7 @@ Bedienfeld „Täglicher Trend“ für ![Customer Journey Analytics](../assets/c
 
 >[!PREREQUISITES]
 >
->Stellen Sie sicher, dass Sie eine [erfolgreiche Verbindung“ validiert haben und Datenansichten für ](connect-and-validate.md) BI-Tool auflisten und verwenden können, für das Sie diesen Anwendungsfall ausprobieren möchten.
+>Stellen Sie sicher, dass Sie eine [erfolgreiche Verbindung“ validiert haben und Datenansichten für &#x200B;](connect-and-validate.md) BI-Tool auflisten und verwenden können, für das Sie diesen Anwendungsfall ausprobieren möchten.
 >
 
 >[!BEGINTABS]
@@ -46,7 +46,7 @@ Bedienfeld „Täglicher Trend“ für ![Customer Journey Analytics](../assets/c
 
    1. Wählen Sie **[!UICONTROL daterangeday is (All)]** unter **[!UICONTROL Filter auf dieser visuellen]**) aus.
    1. Wählen Sie **[!UICONTROL Erweiterte]**) als **[!UICONTROL Filtertyp]**.
-   1. Filter definieren, um **[!UICONTROL Elemente anzuzeigen, wenn der Wert]** **[!UICONTROL auf oder nach]** `1/1/2023` **[!UICONTROL Und]****** liegt, `2/1/2023.` Sie können das Kalendersymbol verwenden, um ein Datum auszuwählen.
+   1. Filter definieren, um **[!UICONTROL Elemente anzuzeigen, wenn der Wert]** **[!UICONTROL auf oder nach]** `1/1/2023` **[!UICONTROL Und]**&#x200B;**&#x200B;** liegt, `2/1/2023.` Sie können das Kalendersymbol verwenden, um ein Datum auszuwählen.
    1. Wählen Sie **[!UICONTROL Filter anwenden]** aus.
 
    Die Tabelle wird mit dem angewendeten Filter **[!UICONTROL daterangeday]** aktualisiert.
@@ -114,7 +114,7 @@ Bedienfeld „Täglicher Trend“ für ![Customer Journey Analytics](../assets/c
    1. Wählen Sie **[!UICONTROL ‣ CC-Datenansicht]**
    1. Wählen Sie aus der Liste der Felder **[!UICONTROL ‣ DateRange]** und **[!UICONTROL DateRange]** aus.
       ![Looker-Filter](../assets/uc2-looker-filter.png)
-1. Geben Sie den Filter **[!UICONTROL CC Datenansicht Datumsbereich]** als **[!UICONTROL liegt im Bereich]** **[!UICONTROL 2023/01/]****[!UICONTROL bis (davor)]** **[!UICONTROL 2023/02/01]** an.
+1. Geben Sie den Filter **[!UICONTROL CC Datenansicht Datumsbereich]** als **[!UICONTROL liegt im Bereich]** **[!UICONTROL 2023/01/]**&#x200B;**[!UICONTROL bis (davor)]** **[!UICONTROL 2023/02/01]** an.
 1. Im Abschnitt **[!UICONTROL CC-Datenansicht]** in der linken Leiste
    1. Wählen Sie **[!UICONTROL ‣ Datumsbereich]** und dann **[!UICONTROL Datum]** aus der Liste **[!UICONTROL DIMENSIONEN]** aus.
    1. Wählen Sie **[!UICONTROL Count]** unter **[!UICONTROL MEASURES]** in der linken Leiste (unten) aus.
