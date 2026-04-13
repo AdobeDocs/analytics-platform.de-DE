@@ -4,9 +4,10 @@ description: Anwendungsfall zum Zählen unterschiedlicher Werte für Dimensionen
 solution: Customer Journey Analytics
 feature: Data Views
 role: User
-source-git-commit: 0962f64e9bc0fed89f52191bebe6dd0e14bde61d
+exl-id: 6a05bce1-542c-40d3-bbb0-4a8e561438c9
+source-git-commit: a0251638e66d5a2524418fc17f56dddc4e48accd
 workflow-type: tm+mt
-source-wordcount: '950'
+source-wordcount: '949'
 ht-degree: 0%
 
 ---
@@ -159,7 +160,7 @@ Es sollte eine Visualisierung und eine Tabelle ähnlich wie unten dargestellt an
 
 >[!TAB RStudio]
 
-1. Geben Sie die folgenden Anweisungen zwischen ` ` ``{r} ` und ` `` ` ` in einen neuen Block ein.
+1. Geben Sie den folgenden Code-Block in einen neuen Block ein.
 
    ```R
    ## Count Distinct
@@ -177,4 +178,3 @@ Es sollte eine Visualisierung und eine Tabelle ähnlich wie unten dargestellt an
 >[!ENDTABS]
 
 +++
-

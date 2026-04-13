@@ -4,9 +4,10 @@ description: Beschränkt den Anwendungsfall für die BI-Erweiterung in verschied
 solution: Customer Journey Analytics
 feature: Data Views
 role: User
-source-git-commit: 0962f64e9bc0fed89f52191bebe6dd0e14bde61d
+exl-id: 55666295-6161-4fbc-b326-231cb5780d4f
+source-git-commit: a0251638e66d5a2524418fc17f56dddc4e48accd
 workflow-type: tm+mt
-source-wordcount: '785'
+source-wordcount: '784'
 ht-degree: 1%
 
 ---
@@ -260,7 +261,7 @@ Die Abfrage wird von der BI-Erweiterung ausgeführt, wie in Jupyter Notebook def
 
 >[!TAB RStudio]
 
-1. Geben Sie die folgenden Anweisungen zwischen ` ` ``{r} ` und ` `` ` ` in einen neuen Block ein.
+1. Geben Sie den folgenden Code-Block in einen neuen Block ein.
 
    ```R
    ## Dimension 1 Limited

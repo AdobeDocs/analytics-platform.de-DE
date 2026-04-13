@@ -4,9 +4,10 @@ description: Rang eines Anwendungsfalls für die BI-Erweiterung in verschiedenen
 solution: Customer Journey Analytics
 feature: Data Views
 role: User
-source-git-commit: 0962f64e9bc0fed89f52191bebe6dd0e14bde61d
+exl-id: e66ad7c4-0d49-41fe-a9fc-661fd31e8c68
+source-git-commit: a0251638e66d5a2524418fc17f56dddc4e48accd
 workflow-type: tm+mt
-source-wordcount: '1324'
+source-wordcount: '1323'
 ht-degree: 1%
 
 ---
@@ -214,7 +215,7 @@ Es sollte eine Visualisierung und eine Tabelle ähnlich wie unten dargestellt an
 
 >[!TAB RStudio]
 
-1. Geben Sie die folgenden Anweisungen zwischen ` ` ``{r} ` und ` `` ` ` in einen neuen Block ein.
+1. Geben Sie den folgenden Code-Block in einen neuen Block ein.
 
    ```R
    library(tidyr)
@@ -240,4 +241,3 @@ Es sollte eine Visualisierung und eine Tabelle ähnlich wie unten dargestellt an
 >[!ENDTABS]
 
 +++
-
