@@ -1,8 +1,8 @@
 ---
 source-git-commit: b0be8b726c4fab1bf9bb5f9462be84f39bdf184a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '5360'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 # Snippets
@@ -288,36 +288,36 @@ Verwenden Sie die folgenden Informationen, um die Visualisierung auszuwählen, d
 | [!UICONTROL Aufgewendete Zeit (Sekunden)] | Addiert die Zeit zwischen zwei verschiedenen Werten für eine Dimension.<p>Diese Komponente muss in Ihrer Datenansicht für die folgende [berechnete Metrik](/help/components/calc-metrics/default-calcmetrics.md) enthalten sein, um in Workspace verfügbar zu sein: <ul><li>Aufgewendete Zeit pro Person  </li><li>Aufgewendete Zeit pro Sitzung</li></p> |
 
 
-## Basierend auf relationalen Modellen {#relational-model-based}
+## Relational und modellbasiert {#relational-model-based}
 
 >[!INFO]
 >
->In der Customer Journey Analytics **[!UICONTROL Benutzeroberfläche können]** Datensätze als **[!UICONTROL modellbasiert]** gekennzeichnet werden.
+>In der Benutzeroberfläche von Customer Journey Analytics können **[!UICONTROL relationale]** Datensätze als **[!UICONTROL Modellbasiert]** gekennzeichnet sein.
 >
 
-## CJA-Daten-Feed-Lookback-Fenster {#cja-df-lookback}
+## Lookback-Fenster für CJA-Daten-Feed {#cja-df-lookback}
 
-Da Customer Journey Analytics für jede Komponente die Zuordnung zur Berichtszeit verwendet, gibt es kein Persistenzkonzept, das über das Lookback-Fenster hinausgeht. Diese Analytics-Daten-Feed-Spalte verweist auf das Verhalten auf Besucherebene, das sich auf den gesamten Verlauf des Besuchers erstreckt. Je länger das Lookback-Fenster für diese Komponente in Customer Journey Analytics ist, desto enger kann es mit der Adobe Analytics-Funktionalität übereinstimmen.
+Da Customer Journey Analytics für jede Komponente die Berichtszeitattribution verwendet, gibt es kein Persistenzkonzept, das über das Lookback-Fenster hinausgeht. Diese Analytics-Daten-Feed-Spalte verweist auf das Verhalten auf Besucherebene, das sich auf den gesamten Verlauf der Besucherin bzw. des Besuchers erstreckt. Je länger das Lookback-Fenster für diese Komponente in Customer Journey Analytics ist, desto genauer kann es der Adobe Analytics-Funktionalität entsprechen.
 
 ## CJA-Daten-Feed-Post-Spalten {#cja-df-post}
 
-Diese Analytics-Daten-Feed-Spalte enthält sowohl eine vorverarbeitete als auch eine nachverarbeitete Version (ein Präfix von `post_`). Spalten mit dem Präfix `post_` enthalten den Wert, der letztendlich im Reporting verwendet wird. Die meisten Unternehmen verwenden nur `post_` Spalten, wenn sie verfügbar sind. In der folgenden Tabelle werden die Eigenschaften dieser Spalten verglichen:
+Diese Analytics-Daten-Feed-Spalte enthält sowohl eine vorverarbeitete als auch eine nachbearbeitete Version (ein Präfix `post_`). Spalten mit dem Präfix `post_` enthalten den Wert, der letztendlich im Reporting verwendet wird. Die meisten Unternehmen verwenden ausschließlich `post_`-Spalten, wenn diese verfügbar sind. In der folgenden Tabelle werden die Eigenschaften dieser Spalten verglichen:
 
-| Vorverarbeiteter Spaltenwert | Nachbearbeiteter Spaltenwert |
+| Wert der vorverarbeiteten Spalte | Wert der nachbearbeiteten Spalte |
 | --- | --- |
-| So wie es gesammelt wurde | Wird in Berichten verwendet |
+| Zum Zeitpunkt der Erfassung | Verwendung beim Reporting |
 | Vor Verarbeitungsregeln | Nach Verarbeitungsregeln |
 | Vor VISTA-Regeln | Nach VISTA-Regeln |
-| Keine Zuordnung angewendet | Zuordnung gilt |
+| Kein Zuordnung angewendet | Zuordnung gilt |
 
-Da Customer Journey Analytics kein Vorverarbeitungs- und Nachverarbeitungskonzept hat, ist es schwierig, beide Spalten in CJA-Daten-Feeds neu zu erstellen. Wenn Sie Näherungen für diese Spalten wünschen, können Sie dasselbe XDM-Feld mehrmals in die Dimensionsspalte ziehen, um mehrere Komponenten mit unterschiedlichen Attributionseinstellungen zu erstellen:
+Da es in Customer Journey Analytics das Konzept der Vorverarbeitung und der Nachbearbeitung nicht gibt, ist es schwierig, beide Spalten in CJA-Daten-Feeds nachzubilden. Wenn Sie eine annähernde Darstellung dieser Spalten erhalten möchten, können Sie dasselbe XDM-Feld mehrmals in die Dimensionsspalte ziehen, um mehrere Komponenten mit unterschiedlichen Attributionseinstellungen zu erstellen:
 
 * **Vorverarbeitete Spalte**: Keine Attribution
-* **Nachbearbeitete Spalte**: Wenden Sie in den Einstellungen für die Datenansicht dieselben Zuordnungs- und Ablaufeinstellungen wie die Analytics-Variable an. Die meisten Komponenten würden die Zuordnung „Letzter“ und den Ablauf „Besuch“ verwenden.
+* **Nachbearbeitete Spalte**: Wenden Sie in den Einstellungen für die Datenansicht dieselben Zuordnungs- und Ablaufeinstellungen an, die auch für ihre Analytics-Variable gelten. Die meisten Komponenten würden die Zuordnung „Letzter“ und den Ablauf „Besuch“ verwenden.
 
-## Suchspalten für CJA-Daten-Feeds {#cja-df-lookup}
+## CJA-Daten-Feed-Lookup-Spalten {#cja-df-lookup}
 
-Diese Analytics-Daten-Feed -Spalte verwendet eine Lookup-Tabelle, um den gewünschten Wert zu identifizieren. In Customer Journey Analytics wird der Wert direkt ohne Suchtabellen bereitgestellt. Stellen Sie sicher, dass Ihr Workflow den Endwert anstelle eines zwischengeschalteten Lookup-Werts berücksichtigt.
+Diese Analytics-Daten-Feed-Spalte verwendet eine Lookup-Tabelle, um den gewünschten Wert zu identifizieren. In Customer Journey Analytics wird der Wert direkt ohne Lookup-Tabellen bereitgestellt. Stellen Sie sicher, dass Ihr Workflow den Endwert anstelle eines zwischengeschalteten Lookup-Werts berücksichtigt.
 
 ## Nicht anwendbare Spalten für CJA-Daten-Feed {#cja-df-na}
 
@@ -325,4 +325,4 @@ Diese Analytics-Daten-Feed-Spalte enthält Daten, die aufgrund von Unterschieden
 
 ## CJA-Daten-Feed-Benutzeragent {#cja-df-ua}
 
-Sie können nicht gleichzeitig sowohl Benutzeragenten- als auch Gerätesuchinformationen erfassen. Die Population dieser Dimensionen schließt sich gegenseitig aus. Sie müssen auswählen, ob Sie Benutzeragenten direkt oder Gerätesuchinformationen (basierend auf Benutzeragenten) erfassen möchten, wenn Sie [einen Datenstrom konfigurieren](https://experienceleague.adobe.com/de/docs/experience-platform/datastreams/configure#geolocation-device-lookup).
+Sie können nicht gleichzeitig sowohl Informationen für Benutzeragent als auch für Gerätesuche erfassen. Das Ausfüllen dieser Dimensionen schließt sich gegenseitig aus. Sie müssen auswählen, ob Sie beim [Konfigurieren eines Datenstroms](https://experienceleague.adobe.com/de/docs/experience-platform/datastreams/configure#geolocation-device-lookup) Benutzeragenten direkt oder Gerätesuchinformationen (basierend auf Benutzeragenten) erfassen möchten.
