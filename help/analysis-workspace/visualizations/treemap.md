@@ -25,7 +25,7 @@ ht-degree: 91%
 
 >[!BEGINSHADEBOX]
 
-_In diesem Artikel wird die Visualisierung „Baumkarte“ in_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics** beschrieben._<br/>_Unter [Baumkarte](https://experienceleague.adobe.com/de/docs/analytics/analyze/analysis-workspace/visualizations/treemap) finden Sie die Version dieses Artikels für_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics**._
+_In diesem Artikel wird die Visualisierung „Baumkarte“ in_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics** beschrieben._<br/>_Unter [Baumkarte](https://experienceleague.adobe.com/de/docs/analytics/analyze/analysis-workspace/visualizations/treemap) finden Sie die Version dieses Artikels für_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**._
 
 >[!ENDSHADEBOX]
 
@@ -41,7 +41,7 @@ Mit einer Baumkarte können Sie Muster sehen, die auf andere Weise schwer zu erk
 
 >[!BEGINSHADEBOX]
 
-Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Visualisierung „Baumkarte“](https://experienceleague.adobe.com/de/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/visualizations/add-treemap-visualizations){target="_blank"} finden Sie ein Demovideo.
+Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Visualisierung „Baumkarte“](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/visualizations/add-treemap-visualizations){target="_blank"} finden Sie ein Demovideo.
 
 >[!ENDSHADEBOX]
 

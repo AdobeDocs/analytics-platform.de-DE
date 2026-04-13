@@ -349,7 +349,7 @@ In diesem Abschnitt können Sie konfigurieren, wie die Content Analytics-Daten e
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_web_pages_header"
 >title="Datenerfassung für Web-Seiten"
->abstract="Content Analytics Geben Sie an, welche Seiten bei **Datenerfassung für erfasst werden sollen** oder **ausgeschlossen**."
+>abstract="Geben Sie an, welche Seiten bei **Datenerfassung für erfasst werden sollen** oder **ausgeschlossen**."
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_web_assets_boldheader"
@@ -359,7 +359,7 @@ In diesem Abschnitt können Sie konfigurieren, wie die Content Analytics-Daten e
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_web_assets_header"
 >title="Datenerfassung für Web-Assets"
->abstract="Content Analytics Geben Sie an, welche Assets bei **Datenerfassung für erfasst** **ausgeschlossen** werden sollen."
+>abstract="Geben Sie an, welche Assets bei **Datenerfassung für erfasst** **ausgeschlossen** werden sollen."
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_mobile_experience_locations_boldheader"

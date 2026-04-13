@@ -25,7 +25,7 @@ ht-degree: 80%
 
 >[!BEGINSHADEBOX]
 
-_In diesem Artikel wird die Visualisierung „Text“ in_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics** beschrieben._<br/>_Unter [Text](https://experienceleague.adobe.com/de/docs/analytics/analyze/analysis-workspace/visualizations/text) finden Sie die Version dieses Artikels für_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics**._
+_In diesem Artikel wird die Visualisierung „Text“ in_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics** beschrieben._<br/>_Unter [Text](https://experienceleague.adobe.com/de/docs/analytics/analyze/analysis-workspace/visualizations/text) finden Sie die Version dieses Artikels für_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**._
 
 >[!ENDSHADEBOX]
 
@@ -34,7 +34,7 @@ Um Ihrem Workspace-Projekt benutzerdefinierten Rich-Text hinzuzufügen, können 
 
 >[!BEGINSHADEBOX]
 
-Siehe ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Textvisualisierung](https://experienceleague.adobe.com/de/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/visualizations/add-text-visualizations){target="_blank"} für ein Demovideo.
+Siehe ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Textvisualisierung](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/visualizations/add-text-visualizations){target="_blank"} für ein Demovideo.
 
 >[!ENDSHADEBOX]
 

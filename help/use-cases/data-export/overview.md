@@ -29,7 +29,7 @@ In diesem Abschnitt finden Sie Anwendungsfälle für Datenexporte und erfahren, 
 
 ## Einführung
 
-Einer der einzigartigen Unterschiede zwischen Adobe Analytics und Customer Journey Analytics hängt mit der Verarbeitung von Daten für die Attribution und Sitzungserstellung zusammen. Weitere [&#x200B; finden Sie unter „Vergleich der Datenverarbeitung in Adobe Analytics &#x200B;](/help/getting-started/aa-vs-cja/data-processing-comparisons.md) Customer Journey Analytics&quot;.
+Einer der einzigartigen Unterschiede zwischen Adobe Analytics und Customer Journey Analytics hängt mit der Verarbeitung von Daten für die Attribution und Sitzungserstellung zusammen. Weitere [ finden Sie unter „Vergleich der Datenverarbeitung in Adobe Analytics ](/help/getting-started/aa-vs-cja/data-processing-comparisons.md) Customer Journey Analytics&quot;.
 
 ### Adobe Analytics: Attribution und Sitzungserstellung der Erfassungszeit.
 
@@ -49,7 +49,7 @@ Dies wirkt sich auf den Export von Daten aus Adobe Analytics aus:
 
 In Customer Journey Analytics werden Ereignisse nicht in der richtigen Reihenfolge erfasst, sondern eine Personen-ID anstelle einer Geräte-ID verwendet, sodass Customer Journey Analytics die Attribution und die Sitzungserstellung zum Zeitpunkt der Berichterstellung aktualisieren kann. Diese Art der Datenerfassung bietet Flexibilität, z. B.:
 
-* Beim Stitching können _Daten_ oder wöchentlich wiedergegeben werden, wobei anonyme Ereignisse bekannten Ereignissen zugeordnet werden. Weitere Informationen finden [&#x200B; unter &#x200B;](../../stitching/overview.md).
+* Beim Stitching können _Daten_ oder wöchentlich wiedergegeben werden, wobei anonyme Ereignisse bekannten Ereignissen zugeordnet werden. Weitere Informationen finden [ unter ](../../stitching/overview.md).
 * Sitzungserstellung und beibehaltene Werte ändern sich jedes Mal
    * neue Daten erfasst werden oder
    * Das Zusammenfügen fügt Ereignisse zum Verlauf einer Person hinzu.

@@ -34,7 +34,7 @@ Die ![Timeline](/help/assets/icons/Timeline.svg)**[!UICONTROL Zeitleistenanalyse
 >* **Admins**: *Die Eigenschaft PersonID ist für diese Analyse erforderlich. Bitte fügen Sie die Personen-ID zur Datenansicht hinzu.*
 >* **Benutzende ohne Administratorrechte**: *Die Eigenschaft PersonID ist für diese Analyse erforderlich. Bitte arbeiten Sie mit Ihren Customer Journey Analytics-Admins zusammen, um die Personen-ID zur Datenansicht hinzuzufügen.*
 
->[!VIDEO](https://experienceleague.adobe.com/de/docs/customer-journey-analytics-learn/tutorials/guided-analysis/timeline)
+>[!VIDEO](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/guided-analysis/timeline)
 
 
 

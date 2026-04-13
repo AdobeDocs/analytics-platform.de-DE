@@ -26,7 +26,7 @@ ht-degree: 97%
 
 >[!BEGINSHADEBOX]
 
-_In diesem Artikel wird das Panel Experimentieren in_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics** beschrieben._<br/>_Unter [Panel Analytics for Target](https://experienceleague.adobe.com/de/docs/analytics/analyze/analysis-workspace/panels/a4t-panel) finden Sie Informationen zum Analysieren von Adobe Target-Aktivitäten und -Erlebnissen in_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics**._
+_In diesem Artikel wird das Panel Experimentieren in_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics** beschrieben._<br/>_Unter [Panel Analytics for Target](https://experienceleague.adobe.com/de/docs/analytics/analyze/analysis-workspace/panels/a4t-panel) finden Sie Informationen zum Analysieren von Adobe Target-Aktivitäten und -Erlebnissen in_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**._
 
 >[!ENDSHADEBOX]
 
@@ -180,8 +180,8 @@ Beim Erstellen der berechneten Metrik haben berechnete Metriken, die nicht mit d
 
 ## Verwenden von berechneten Metriken im Panel Experimentieren
 
-In diesem Blogpost finden Sie Informationen zur [Verwendung berechneter Metriken im Panel Experimentieren](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/using-derived-metrics-in-cja-s-experimentation-panel/ba-p/593119?profile.language=de).
+In diesem Blogpost finden Sie Informationen zur [Verwendung berechneter Metriken im Panel Experimentieren](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/using-derived-metrics-in-cja-s-experimentation-panel/ba-p/593119).
 
 >[!MORELIKETHIS]
->[Meistern von Experimentenen in Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/mastering-adobe-customer-journey-analytics-experimentation-your/ba-p/732338?profile.language=de)
+>[Meistern von Experimentenen in Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/mastering-adobe-customer-journey-analytics-experimentation-your/ba-p/732338)
 >

@@ -59,7 +59,7 @@ Die folgenden Informationen beschreiben die Einstellungen, die eine Datenansicht
 
 >[!BEGINSHADEBOX]
 
-Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Einstellungen zum Komponententyp](https://experienceleague.adobe.com/de/docs/customer-journey-analytics-learn/tutorials/data-views/component-type-settings-in-data-views){target="_blank"} finden Sie ein Demovideo.
+Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Einstellungen zum Komponententyp](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/data-views/component-type-settings-in-data-views){target="_blank"} finden Sie ein Demovideo.
 
 >[!ENDSHADEBOX]
 
@@ -95,7 +95,7 @@ Die Vorteile von Kontextkennzeichnungen sind:
 
 Kontextkennzeichnungen können in den folgenden Situationen erforderlich sein:
 
-* Um einen Komponentensatz zu definieren, können Sie ihn in Analysis Workspace-Projekten im Experimentier[Reporting über das &#x200B;](/help/analysis-workspace/c-panels/experimentation.md)Experimentier-Bedienfeld“ verwenden.
+* Um einen Komponentensatz zu definieren, können Sie ihn in Analysis Workspace-Projekten im Experimentier[Reporting über das ](/help/analysis-workspace/c-panels/experimentation.md)Experimentier-Bedienfeld“ verwenden.
 
   Weitere Informationen finden Sie unter [Integrieren mit Journey Optimizer](/help/integrations/ajo.md#data-view) und [Zielgruppenberichte](/help/integrations/at.md).
 
@@ -157,7 +157,7 @@ Die folgenden Gruppen von Kontextbeschriftungen sind mit jeweils einer Liste spe
 |------|-------------|
 | Inhalts-ID | Inhalts-ID |
 | Inhaltsbesuchszeit | Besuchszeit für Inhalt. |
-| Folge | Folge. |
+| Episode | Folge. |
 | Ereignistyp | Ereignistyp. |
 | Besuchszeit für Medien | Mit Medien verbrachte Zeit. |
 | Staffel | Staffel. |

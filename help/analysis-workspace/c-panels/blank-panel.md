@@ -26,7 +26,7 @@ ht-degree: 93%
 
 >[!BEGINSHADEBOX]
 
-_In diesem Artikel wird das leere Bedienfeld in_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**&#x200B;_ beschrieben.<br/>_Unter [Leeres Bedienfeld](https://experienceleague.adobe.com/de/docs/analytics/analyze/analysis-workspace/panels/blank-panel) finden Sie die_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics**-Version dieses Artikels._
+_In diesem Artikel wird das leere Bedienfeld in_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**_ beschrieben.<br/>_Unter [Leeres Bedienfeld](https://experienceleague.adobe.com/de/docs/analytics/analyze/analysis-workspace/panels/blank-panel) finden Sie die_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**-Version dieses Artikels._
 
 >[!ENDSHADEBOX]
 
@@ -61,7 +61,7 @@ Sie haben folgende Möglichkeiten:
   |---|---|
   | ![Tabelle](/help/assets/icons/Table.svg) | [Freiformtabelle](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) |
   | ![Linie](/help/assets/icons/GraphTrend.svg) | [Linie](/help/analysis-workspace/visualizations/line.md) |
-  | ![VertikaleGrafikbalken](/help/assets/icons/GraphBarVertical.svg) | [Balken](/help/analysis-workspace/visualizations/bar.md) |
+  | ![GraphBarVertical](/help/assets/icons/GraphBarVertical.svg) | [Balken](/help/analysis-workspace/visualizations/bar.md) |
   | ![123](/help/assets/icons/123.svg) | [Zusammenfassungszahl](/help/analysis-workspace/visualizations/summary-number-change.md) |
   | ![Text](/help/assets/icons/Text.svg) | [Text](/help/analysis-workspace/visualizations/text.md) |
   | ![Konversionstrichter](/help/assets/icons/ConversionFunnel.svg) | [Fallout](/help/analysis-workspace/visualizations/fallout/fallout-flow.md) |

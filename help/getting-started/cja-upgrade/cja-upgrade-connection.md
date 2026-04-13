@@ -8,7 +8,7 @@ exl-id: 22d3e7b8-4a4d-48a8-a98d-5172a9876286
 source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
 workflow-type: tm+mt
 source-wordcount: '1635'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -31,7 +31,7 @@ Im Folgenden wird erläutert, wie Sie eine Verbindung erstellen und konfiguriere
 
 ## Erstellen und Konfigurieren der Verbindung {#create-connection}
 
-1. Wählen Sie in Customer Journey Analytics **[!UICONTROL Verbindungen]**, optional unter **[!UICONTROL Datenverwaltung]** im oberen Menü aus.
+1. Wählen Sie in Customer Journey Analytics im oberen Menü **[!UICONTROL Verbindungen]** aus, optional unter **[!UICONTROL Datenverwaltung]**.
 1. Wählen Sie **[!UICONTROL Neue Verbindung erstellen]** aus.
 
    ![Unbenannte Verbindungseinstellungen](assets/create-conn1.png)
@@ -43,7 +43,7 @@ Im Folgenden wird erläutert, wie Sie eine Verbindung erstellen und konfiguriere
    | **[!UICONTROL Name der Verbindung]** | Geben Sie einen eindeutigen Namen für die Verbindung ein. |
    | **[!UICONTROL Beschreibung der Verbindung]** | Beschreiben Sie den Zweck dieser Verbindung. |
    | **[!UICONTROL Sandbox]** | Wählen Sie eine Sandbox in Experience Platform aus, die die Datensätze enthält, zu denen Sie eine Verbindung herstellen möchten.<p>Adobe Experience Platform bietet [Sandboxes](https://experienceleague.adobe.com/de/docs/experience-platform/sandbox/home) bereit, die eine einzelne Platform-Instanz in separate virtuelle Umgebungen aufteilen, um die Entwicklung und Weiterentwicklung von Programmen für digitale Erlebnisse zu erleichtern. Sie können sich Sandboxes als „Datensilos“ vorstellen. Sandboxes dienen der Steuerung des Zugriffs auf Datensätze.<p>Nachdem Sie die Sandbox ausgewählt haben, werden in der linken Leiste alle Datensätze in der Sandbox angezeigt, aus denen Sie Daten abrufen können. |
-   | **[!UICONTROL Rollierendes Datenfenster aktivieren]** | Wenn diese Option aktiviert ist, können Sie auf Verbindungsebene die Customer Journey Analytics-Datenspeicherung als rollierendes Fenster in Monaten (z. B. 1 Monat, 3 Monate und 6 Monate) definieren.<p>Die Datenaufbewahrung basiert auf Zeitstempeln für Ereignis-Datensätze und gilt nur für Ereignis-Datensätze. Für Profil- oder Lookup-Datensätze gibt es keine rollierenden Datenfenstereinstellungen, da keine entsprechenden Zeitstempel vorhanden sind. Wenn Ihre Verbindung jedoch Profil- oder Suchdatensätze enthält (neben einem oder mehreren Ereignisdatensätzen), werden diese Daten über denselben Zeitraum gespeichert.<p> Der Hauptvorteil besteht darin, dass Sie nur Daten speichern oder Berichte dazu erstellen, die anwendbar und nützlich sind, und ältere Daten löschen, die nicht mehr nützlich sind. Dies hilft Ihnen, Ihre vertraglichen Beschränkungen einzuhalten und das Risiko bezüglich Kostendeckung zu reduzieren.<p>Wenn Sie die Standardeinstellung unverändert (d. h. deaktiviert) lassen, hat die Adobe Experience Platform-Einstellung zur Datenspeicherung Vorrang vor der Aufbewahrungsfrist. Wenn also in Experience Platform Daten von einem Zeitraum von 25 Monaten enthalten sind, erhält Customer Journey Analytics durch Aufstockung Daten von einem Zeitraum von 25 Monaten. Wenn Sie in Platform 10 dieser Monate löschen, werden in Customer Journey Analytics die verbleibenden 15 Monate beibehalten. |
+   | **[!UICONTROL Rollierendes Datenfenster aktivieren]** | Wenn diese Option aktiviert ist, können Sie auf Verbindungsebene die Customer Journey Analytics-Datenspeicherung als rollierendes Fenster in Monaten (z. B. 1 Monat, 3 Monate und 6 Monate) definieren.<p>Die Datenaufbewahrung basiert auf Zeitstempeln für Ereignis-Datensätze und gilt nur für Ereignis-Datensätze. Für Profil- oder Lookup-Datensätze gibt es keine rollierenden Datenfenstereinstellungen, da keine entsprechenden Zeitstempel vorhanden sind. Wenn Ihre Verbindung jedoch Profil- oder Suchdatensätze enthält (neben einem oder mehreren Ereignisdatensätzen), werden diese Daten über denselben Zeitraum gespeichert.<p> Der Hauptvorteil besteht darin, dass Sie nur Daten speichern oder Berichte dazu erstellen, die anwendbar und nützlich sind, und ältere Daten löschen, die nicht mehr nützlich sind. Dies hilft Ihnen, Ihre vertraglichen Beschränkungen einzuhalten und das Risiko bezüglich Kostendeckung zu reduzieren.<p>Wenn Sie die Standardeinstellung unverändert (d. h. deaktiviert) lassen, hat die Adobe Experience Platform-Einstellung zur Datenspeicherung Vorrang vor der Aufbewahrungsfrist. Wenn also in Experience Platform Daten von einem Zeitraum von 25 Monaten enthalten sind, erhält Customer Journey Analytics durch Aufstockung Daten aus einem Zeitraum von 25 Monaten. Wenn Sie in Platform 10 dieser Monate löschen, werden in Customer Journey Analytics die verbleibenden 15 Monate beibehalten. |
    | **[!UICONTROL Hinzufügen von Datensätzen]** (siehe unten) | Fügen Sie Datensätze hinzu, wenn in Ihrer Datensatzliste keine Datensätze erscheinen. |
    | **[!UICONTROL Datensatzname]** | Wählen Sie einen oder mehrere Datensätze für die Customer Journey Analytics-Übertragung und dann die Option **[!UICONTROL Hinzufügen]** aus.<p>(Wenn Sie viele Datensätze zur Auswahl haben, können Sie mithilfe der Suchleiste „Datensätze suchen“ über der Liste der Datensätze nach den richtigen suchen.) |
    | **[!UICONTROL Zuletzt aktualisiert]** | Nur für Ereignis-Datensätze wird diese Einstellung automatisch auf das Standard-Zeitstempelfeld von Ereignis-basierten Schemas in Experience Platform gesetzt. „K. A.“ bedeutet, dass dieser Datensatz keine Daten enthält. |
@@ -76,7 +76,7 @@ Sie können beim Erstellen einer Verbindung einen Experience Platform-Datensatz 
    | Spalte | Beschreibung |
    |---|---|
    | Datensatz | Der Name des Datensatzes. Wählen Sie den Namen aus, um zum Datensatz in Experience Platform weitergeleitet zu werden. Wählen Sie ![Informationen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg) aus, um ein Popup-Fenster mit weiteren Details zum Datensatz anzuzeigen. Sie können **[!UICONTROL In Platform bearbeiten]** auswählen, um den Datensatz direkt in Experience Platform zu bearbeiten. |
-   | Typ des Datensatzes | Der Typ des Datensatzes: „Ereignis“, „Profil“, „Suche“ oder „Lookup“. |
+   | Datensatztyp | Der Typ des Datensatzes: „Ereignis“, „Profil“, „Suche“ oder „Lookup“. |
    | Anzahl der Einträge | Die Gesamtzahl der Einträge im Vormonat für den Datensatz in Experience Platform. |
    | Schema | Das Schema für den Datensatz. Wählen Sie den Namen aus, um zum Schema in Experience Platform weitergeleitet zu werden. |
    | Letzter Batch | Der Status des letzten Batches, der in Experience Platform aufgenommen wurde. Weitere Informationen finden Sie unter [Batch-Status](https://experienceleague.adobe.com/de/docs/experience-platform/ingestion/batch/troubleshooting#batch-states). |

@@ -23,11 +23,11 @@ ht-degree: 98%
 
 <!-- markdownlint-enable MD034 -->
 
-Die ![ConversionFunnel](/help/assets/icons/ConversionFunnel.svg)**[!UICONTROL Trichteranalyse &#x200B;]**&#x200B;bietet eine visuelle Darstellung einer wichtigen Benutzer-Journey in Ihrem Produkt. Die horizontale Achse stellt jeden Schritt dar, den eine Person ausführen muss. Die vertikale Achse stellt den Prozentsatz der Benutzenden oder Sitzungen bei jedem Schritt dar. Alle Schritte müssen in einer bestimmten Reihenfolge ausgeführt werden, können jedoch jederzeit innerhalb des Reporting-Fensters erfolgen.
+Die ![ConversionFunnel](/help/assets/icons/ConversionFunnel.svg)**[!UICONTROL Trichteranalyse ]**bietet eine visuelle Darstellung einer wichtigen Benutzer-Journey in Ihrem Produkt. Die horizontale Achse stellt jeden Schritt dar, den eine Person ausführen muss. Die vertikale Achse stellt den Prozentsatz der Benutzenden oder Sitzungen bei jedem Schritt dar. Alle Schritte müssen in einer bestimmten Reihenfolge ausgeführt werden, können jedoch jederzeit innerhalb des Reporting-Fensters erfolgen.
 
 >[!BEGINSHADEBOX]
 
-Siehe ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Funnel-Reibungsanalyse](https://video.tv.adobe.com/v/3431279/?captions=ger&quality=12&learn=onn){target="_blank"} für ein Demovideo.
+Siehe ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Funnel-Reibungsanalyse](https://video.tv.adobe.com/v/3421663/?quality=12&learn=onn){target="_blank"} für ein Demovideo.
 
 >[!ENDSHADEBOX]
 

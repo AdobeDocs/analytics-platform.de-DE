@@ -38,7 +38,7 @@ So senden Sie eine Datei per E-Mail an Empfänger:
 1. (Optional) Verwenden Sie **[!UICONTROL Beschreibung]** um eine Beschreibung hinzuzufügen, die in die E-Mail aufgenommen werden soll.
 1. Fügen Sie Empfänger oder Gruppen hinzu. Sie können auch E-Mail-Adressen eingeben.
 1. (Nur für Kundinnen und Kunden von Healthcare Shield) Geben Sie ein Kennwort ein, um [einen terminierten Bericht mit einem Kennwort zu schützen](#password-protect-a-new-scheduled-project).
-1. (Optional) Wählen Sie **[!UICONTROL Planungsoptionen anzeigen]** aus, um [einen Dateiexport zu &#x200B;](#schedule-file-export).
+1. (Optional) Wählen Sie **[!UICONTROL Planungsoptionen anzeigen]** aus, um [einen Dateiexport zu ](#schedule-file-export).
 1. Klicken Sie **[!UICONTROL Jetzt senden]**. Wählen Sie zum Abbrechen **[!UICONTROL Abbrechen]** aus.
 
 
@@ -86,7 +86,7 @@ So senden Sie eine Datei nach einem Zeitplan per E-Mail an Empfänger:
 
 >[!NOTE]
 >
->Die Option, ein geplantes Projekt mit einem Passwort zu schützen, wird nur für Customer Journey Analytics-Kunden angezeigt, die das [Healthcare Shield](https://business.adobe.com/de/solutions/industries/healthcare.html)-Add-on-Produkt gekauft haben.
+>Die Option, ein geplantes Projekt mit einem Passwort zu schützen, wird nur für Customer Journey Analytics-Kunden angezeigt, die das [Healthcare Shield](https://business.adobe.com/solutions/industries/healthcare.html)-Add-on-Produkt gekauft haben.
 
 Adobe verwendet das Passwort zum Verschlüsseln geplanter Projekte, unabhängig davon, ob sie im .pdf- oder .csv-Format gesendet werden.
 
@@ -103,7 +103,7 @@ Die Passwortanforderungen entsprechen dem Adobe-Standard und schreiben mindesten
 ### Passwortschutz für ein neues geplantes Projekt
 
 1. Nachdem Sie Ihr Projekt gespeichert haben, navigieren Sie zu **[!UICONTROL Freigeben]** > **[!UICONTROL Jetzt Datei senden]** oder **[!UICONTROL Freigeben]** > **[!UICONTROL Datei nach Zeitplan senden]**.
-1. Befolgen Sie die oben stehenden Anweisungen unter [Datei jetzt senden](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/export/t-schedule-report.html?lang=de#now) oder [Datei planmäßig senden](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/export/t-schedule-report.html?lang=de#schedule).
+1. Befolgen Sie die oben stehenden Anweisungen unter [Datei jetzt senden](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/export/t-schedule-report.html#now) oder [Datei planmäßig senden](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/export/t-schedule-report.html#schedule).
 
 ### Passwortschutz für ein vorhandenes geplantes Projekt
 

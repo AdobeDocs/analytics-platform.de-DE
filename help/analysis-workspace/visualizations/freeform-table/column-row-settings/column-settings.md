@@ -18,7 +18,7 @@ Mithilfe der [!UICONTROL Spalteneinstellungen] können Sie die Spaltenformatieru
 
 >[!BEGINSHADEBOX]
 
-Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Zeilen- und Spalteneinstellungen in einer Freiformtabelle](https://experienceleague.adobe.com/de/docs/analytics-learn/tutorials/analysis-workspace/building-freeform-tables/row-and-column-settings-in-freeform-tables){target="_blank"} finden Sie ein Demovideo.
+Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Zeilen- und Spalteneinstellungen in einer Freiformtabelle](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/analysis-workspace/building-freeform-tables/row-and-column-settings-in-freeform-tables){target="_blank"} finden Sie ein Demovideo.
 
 {{videoaa}}
 
@@ -84,7 +84,7 @@ Die bedingte Formatierung gilt für Obergrenzen, Mittelwerte und Untergrenzen, d
 
 
 
-Sie können das standardmäßige Attributionsmodell überschreiben, das in &quot;[&quot; konfiguriert &#x200B;](/help/data-views/component-settings/attribution.md).
+Sie können das standardmäßige Attributionsmodell überschreiben, das in &quot;[&quot; konfiguriert ](/help/data-views/component-settings/attribution.md).
 
 >[!NOTE]
 >

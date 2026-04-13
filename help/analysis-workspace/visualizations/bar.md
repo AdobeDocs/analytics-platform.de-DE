@@ -15,7 +15,7 @@ ht-degree: 87%
 
 >[!BEGINSHADEBOX]
 
-_In diesem Artikel werden die Visualisierungen Balken und Balken gestapelt in_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics** beschrieben._<br/>_Unter [Balken und Balken gestapelt](https://experienceleague.adobe.com/de/docs/analytics/analyze/analysis-workspace/visualizations/bar) finden Sie die Version dieses Artikels für_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics**._
+_In diesem Artikel werden die Visualisierungen Balken und Balken gestapelt in_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics** beschrieben._<br/>_Unter [Balken und Balken gestapelt](https://experienceleague.adobe.com/de/docs/analytics/analyze/analysis-workspace/visualizations/bar) finden Sie die Version dieses Artikels für_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**._
 
 
 >[!ENDSHADEBOX]
@@ -63,7 +63,7 @@ Verwenden Sie die Option **[!UICONTROL 100 % gestapelt]** in den ![Einstellung](
 
 >[!BEGINSHADEBOX]
 
-Siehe ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Bereichsvisualisierung](https://experienceleague.adobe.com/de/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/visualizations/add-bar-visualizations){target="_blank"} für ein Demovideo.
+Siehe ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Bereichsvisualisierung](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/visualizations/add-bar-visualizations){target="_blank"} für ein Demovideo.
 
 >[!ENDSHADEBOX]
 

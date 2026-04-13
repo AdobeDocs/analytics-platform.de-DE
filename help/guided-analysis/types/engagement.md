@@ -35,7 +35,7 @@ Funktionen, die oben in dieser Visualisierung dargestellt werden, zeigen, dass s
 
 >[!BEGINSHADEBOX]
 
-Siehe ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Interaktionsanalyse](https://video.tv.adobe.com/v/3447476?captions=ger){target="_blank"} für ein Demovideo.
+Siehe ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Interaktionsanalyse](https://video.tv.adobe.com/v/3429489/&learn=on){target="_blank"} für ein Demovideo.
 
 >[!ENDSHADEBOX]
 
