@@ -29,7 +29,7 @@ Die folgenden Informationen liefern Kuratierenden von Customer Journey Analytics
 
 >[!BEGINSHADEBOX]
 
-Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Erstellen von mobilen Scorecards](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/dashboards/create-a-mobile-scorecard){target="_blank"} finden Sie ein Demovideo.
+Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Erstellen von mobilen Scorecards](https://experienceleague.adobe.com/de/docs/customer-journey-analytics-learn/tutorials/dashboards/create-a-mobile-scorecard){target="_blank"} finden Sie ein Demovideo.
 
 >[!ENDSHADEBOX]
 
@@ -257,7 +257,7 @@ Sehen Sie sich das Video an, um mehr über das Erstellen von Daten-Storys in Mob
 
 >[!BEGINSHADEBOX]
 
-Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Daten-Storys für ein Projekt mit mobilen Scorecards](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/dashboards/create-a-mobile-scorecard){target="_blank"} finden Sie ein Demovideo.
+Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Daten-Storys für ein Projekt mit mobilen Scorecards](https://experienceleague.adobe.com/de/docs/customer-journey-analytics-learn/tutorials/dashboards/create-a-mobile-scorecard){target="_blank"} finden Sie ein Demovideo.
 
 {{videoaa}}
 
