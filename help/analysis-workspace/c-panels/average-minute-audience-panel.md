@@ -187,6 +187,6 @@ Das Panel „Medien-Zielgruppendurchschnitt pro Minute“ verwendet nur die Metr
 >[!MORELIKETHIS]
 >
 > [Erstellen eines Bedienfelds](/help/analysis-workspace/c-panels/panels.md#create-a-panel)
-> &#x200B;> [Panel Gleichzeitige Medienbetrachter](media-concurrent-viewers.md)
-> &#x200B;> [Panel Verbrachte Zeit bei der Medienwiedergabe](media-playback-time-spent.md)
+> [Panel Gleichzeitige Medienbetrachter](media-concurrent-viewers.md)
+> [Panel Verbrachte Zeit bei der Medienwiedergabe](media-playback-time-spent.md)
 >

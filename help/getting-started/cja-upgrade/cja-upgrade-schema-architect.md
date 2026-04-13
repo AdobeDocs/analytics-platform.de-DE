@@ -133,4 +133,4 @@ Das Schema-Design sollte die Datenschutz- und Governance-Erwartungen gemäß den
 
 ## Nächste Schritte
 
-Sobald Sie eine Schemaarchitektur eingerichtet und vereinbart haben, können Sie sie in Adobe Experience Platform erstellen. Customer Journey Analytics Weitere [&#x200B; finden Sie unter „Erstellen eines benutzerdefinierten Schemas zur Verwendung mit &#x200B;](cja-upgrade-schema-create.md)&quot;.
+Sobald Sie eine Schemaarchitektur eingerichtet und vereinbart haben, können Sie sie in Adobe Experience Platform erstellen. Weitere [&#x200B; finden Sie unter „Erstellen eines benutzerdefinierten Schemas zur Verwendung mit &#x200B;](cja-upgrade-schema-create.md)&quot;.

@@ -157,7 +157,7 @@ Die folgenden Gruppen von Kontextbeschriftungen sind mit jeweils einer Liste spe
 |------|-------------|
 | Inhalts-ID | Inhalts-ID |
 | Inhaltsbesuchszeit | Besuchszeit für Inhalt. |
-| Folge | Folge. |
+| Episode | Folge. |
 | Ereignistyp | Ereignistyp. |
 | Besuchszeit für Medien | Mit Medien verbrachte Zeit. |
 | Staffel | Staffel. |
