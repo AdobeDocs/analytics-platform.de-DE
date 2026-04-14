@@ -6,9 +6,9 @@ feature: Derived Fields
 exl-id: bcd172b2-cd13-421a-92c6-e8c53fa95936
 role: Admin
 hide: true
-source-git-commit: afb577bb72f2528c15acbc30794c900ea62b51b6
+source-git-commit: e5dea7e234585bd28a00df95342879dcba5b932f
 workflow-type: tm+mt
-source-wordcount: '2655'
+source-wordcount: '2741'
 ht-degree: 1%
 
 ---
@@ -132,7 +132,7 @@ In diesem Abschnitt wird die falsche Verwendung abgeleiteter Felder erläutert. 
 
 * Kürzung/Kleinschreibung: Verwenden Sie die Komponenteneinstellungen [Teilzeichenfolge](/help/data-views/component-settings/substring.md) und [Verhalten](/help/data-views/component-settings/behavior.md), es sei denn, Sie benötigen kombinierte mehrstufige Transformationen.
 * Werteausschluss: Verwenden Sie [Werte einschließen/ausschließen](/help/data-views/component-settings/include-exclude-values.md) für Metriken oder Dimensionswerte auf der Komponentenebene der Datenansicht, nicht in einem abgeleiteten Feld.
-* Attribution und Persistenz: Vermeiden Sie die Simulation von Dimensionen in einem abgeleiteten Feld mit [Weiter oder Zurück](./derived-fields.md#next-or-previous) oder einer anderen sequenziellen Logik. Verwenden Sie die Einstellungen für [&#x200B; Datenansicht &#x200B;](/help/data-views/component-settings/attribution.md)Attribution[&#x200B; und Persistenz](/help/data-views/component-settings/persistence.md) für Dimensionen.
+* Attribution und Persistenz: Verwenden Sie die Einstellungen [&#x200B; Datenansicht &#x200B;](/help/data-views/component-settings/persistence.md)Persistenz **[!UICONTROL (Zuordnungsmodell]** und **[!UICONTROL Gültigkeit]**) für Dimensionen, anstatt sie in einem abgeleiteten Feld mit [Weiter oder Zurück](./derived-fields.md#next-or-previous) oder einer anderen sequenziellen Logik zu simulieren.
 * Numerische Bucketing: Das abgeleitete Feld bleibt numerisch und die Datenansicht kann oben eine Dimension mit Buckets erstellen statt Bereichsbeschriftungen in einer Wenn-Kette mit &quot;[&quot; &#x200B;](./derived-fields.md#case-when).
 * Bedingte Logik: Konvertiert eine einfache 0- oder 1-Flag-Logik in:
    * Die ursprüngliche Metrik mit der Filterlogik Werte einschließen oder ausschließen , wie sie in Analysis Workspace angewendet wird.
@@ -161,7 +161,7 @@ Customer Journey Analytics ermöglicht es, numerische Felder auf Datenansichtseb
    * Legen Sie in der Datenansicht **[!UICONTROL Komponententyp]** Metrik) fest.
    * Wenn die Komponente eine Teilmengenmetrik darstellt (z. B. **[!UICONTROL Checkout-Seitenansichten]**), verwenden Sie in der Datenansicht eine gefilterte Metrik anstelle einer abgeleiteten Zeichenfolge plus einer berechneten Metrik.
 * Wenn die Ausgabe eine Beschriftung ist:
-   * Legen Sie den Komponententyp auf **[!UICONTROL Dimension fest]** konfigurieren Sie [Attribution](/help/data-views/component-settings/attribution.md) und [Persistenz](/help/data-views/component-settings/persistence.md) entsprechend.
+   * Legen Sie den Komponententyp auf **[!UICONTROL Dimension]** fest und konfigurieren Sie [Persistenz](/help/data-views/component-settings/persistence.md)-Einstellungen (**[!UICONTROL Zuordnungsmodell]** und **[!UICONTROL Gültigkeit]**) entsprechend.
 
 ## Fallstricke bei der Marketing-Kanal- und Kampagnenlogik
 
@@ -284,12 +284,12 @@ In diesem Abschnitt wird die übermäßige Verwendung von [Weiter oder Zurück](
 ### Risikodiagnose: Datenqualität, hohe Wartung
 
 * Komplexität und Fragilität: Umfangreiche sequenzielle Logik ist schwieriger zu argumentieren und kann abbrechen, wenn Sitzungsregeln oder Änderungen angeordnet werden.
-* Redundanz mit Attribution oder Persistenz: Einige Anwendungsfälle (z. B. die Attribution des Letztkontaktkanals in einer Sitzung) werden besser durch die Attributionseinstellungen der Datenansicht abgedeckt.
+* Redundanz mit Persistenz der Dimensionen: Einige Anwendungsfälle (z. B. Letztkontakt-Kanal in einer Sitzung) werden besser durch die Einstellungen der Datenansicht [Persistenz](/help/data-views/component-settings/persistence.md) (**[!UICONTROL Zuordnungsmodell]**) in der Dimension abgedeckt.
 
 ### Empfehlungen
 
-* Verwenden Sie bei Mustern, die der Standardattribution ähneln[&#x200B; die Einstellungen für Dimension Attribution](/help/data-views/component-settings/attribution.md) und [Persistenz](/help/data-views/component-settings/persistence.md) in der Datenansicht, anstatt sie mit &quot;[&quot; oder „Zurück](./derived-fields.md#next-or-previous) zu simulieren.
-* Reservieren Sie [Nächste oder Vorherige](./derived-fields.md#next-or-previous) für erweiterte mehrstufige Pfade oder funnel-Kennzeichnungen, die eine Attribution allein nicht erreichen kann (z. B.: Kanalsequenzverkettung).
+* Bei Mustern, die der standardmäßigen Persistenz ähneln (z. B. beim Weiterleiten eines Werts über eine Sitzung oder Person hinweg), verwenden Sie die [Persistenz](/help/data-views/component-settings/persistence.md)-Einstellungen der Dimension (**[!UICONTROL Zuordnungsmodell]** und **[!UICONTROL Gültigkeit]**) in der Datenansicht, anstatt diese Muster mit [Weiter oder Zurück](./derived-fields.md#next-or-previous) zu simulieren.
+* Reservieren Sie [Weiter oder &#x200B;](./derived-fields.md#next-or-previous)) für erweiterte mehrstufige Pfade oder funnel-Kennzeichnungen, die durch Persistenz der Dimension allein nicht erreicht werden können (z. B.: Kanalsequenzverkettung).
 
 ## Sitzungs- und Personenkontext werden ignoriert
 
@@ -350,13 +350,15 @@ In diesem Abschnitt werden datenansichtsspezifische Optimierungsregeln für abge
 ### Muster
 
 * Eine abgeleitete Dimension verfügt über eine Standardattribution (z. B. „Letztkontakt mit Sitzungsablauf„), aber der abgeleitete Feldname bedeutet eine andere Semantik (z. B.: `First Campaign of Visit`, `Original Source`).
+* Eine abgeleitete Dimension verfügt über Standardeinstellungen [Persistenz](/help/data-views/component-settings/persistence.md) (z. B.: **[!UICONTROL Zuletzt verwendet]** Zuordnung mit **[!UICONTROL Sitzung]** Gültigkeit), aber der Name der abgeleiteten Dimension impliziert eine andere Semantik (z. B. `First Campaign of Visit` oder `Original Source`).
 
 
 ### Risikodiagnose: Datenqualität
 
-* Semantische Diskrepanz: Die Beschriftung der Dimension deutet auf ein anderes [Attribution](/help/data-views/component-settings/attribution.md) oder [Expiration](/help/data-views/component-settings/persistence.md)-Verhalten hin (z. B. Erstkontakt oder Originalquelle) als das, was tatsächlich konfiguriert ist.
-* Diese Diskrepanz erhöht das Risiko, dass Analysten Berichte falsch interpretieren oder Komponenten vergleichen, die nach Namen ähnlich aussehen, aber verschiedene Attributionsmodelle verwenden.
+* Semantische Diskrepanz: Die Kennzeichnung der Dimension deutet auf ein anderes Zuordnungs- oder Ablaufverhalten hin (z. B. ursprüngliche Zuordnung oder Gültigkeit auf Personenebene) als das, was tatsächlich konfiguriert ist.
+* Diese Diskrepanz erhöht das Risiko, dass Analysten Berichte falsch interpretieren oder Komponenten vergleichen, die nach Namen ähnlich aussehen, aber verschiedene Zuordnungsmodelle verwenden.
 
 ### Empfehlungen
 
 * Passen Sie das [Zuordnungsmodell und die Gültigkeit](/help/data-views/component-settings/persistence.md) auf dieser Dimension an, um Name und Verhalten auszurichten. Beispielsweise sollte eine abgeleitete Felddimension mit dem Namen `Original Source` die Attribution Erstkontakt verwenden, wobei der Ablauf auf Person festgelegt ist.
+* Passen Sie das **[!UICONTROL Zuordnungsmodell]** und **[!UICONTROL Gültigkeit]** in den [Persistenz](/help/data-views/component-settings/persistence.md) der Dimension an, um Name und Verhalten auszurichten. `Original Source` sollten beispielsweise das **[!UICONTROL Zuordnungsmodell) auf &quot;]** **[!UICONTROL &quot;]** und **[!UICONTROL Expiration]** auf **[!UICONTROL Person]** setzen.
