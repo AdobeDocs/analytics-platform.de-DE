@@ -4,9 +4,9 @@ description: Listet Inhaltsaktualisierungen für Dokumentation zu Customer Journ
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: e1aab5822d650b6ae5ed335d85a09fe9ed46a2f0
+source-git-commit: a4287ab5b341f156d039b4bc35dc03482ba3f60c
 workflow-type: tm+mt
-source-wordcount: '5799'
+source-wordcount: '5819'
 ht-degree: 96%
 
 ---
@@ -19,6 +19,8 @@ Die folgenden Aktualisierungen wurden seit der ersten Erstellung der Customer Jo
 
 | Funktion | Beschreibung |
 |---|---|
+| **April 2026** | |
+| Anwendungsfälle für die Kohortenanalyse aktualisiert | Basierend auf dem Feedback, das zu den Anwendungsfällen der Kohortenanalyse durch Analysis Workspace-Beispiele hinzugefügt wurde. |
 | **März 2026** | |
 | Aufschlüsseln eines Bedienfelds | Die Dokumentation um den [Ablagebereich für ein Bedienfeld“ wurde neu strukturiert](/help/analysis-workspace/c-panels/panels.md#drop-zone) um die neue Funktion [Aufschlüsselung](/help/analysis-workspace/c-panels/panels.md#break-down-a-panel) zu unterstützen. |
 | Technote zu fehlerhaften IDs (BAVIDs) | Neue [Technote zu fehlerhaften IDs](/help/technotes/badids.md). In der Technote wird erläutert, wie eine fehlerhafte ID definiert wird, wo in der Customer Journey Analytics-Benutzeroberfläche fehlerhafte IDs verwendet werden und wie Daten in Ihrer Verbindung auf fehlerhafte IDs untersucht werden. |
