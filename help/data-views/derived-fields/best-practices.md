@@ -6,7 +6,7 @@ feature: Derived Fields
 exl-id: bcd172b2-cd13-421a-92c6-e8c53fa95936
 role: Admin
 hide: true
-source-git-commit: e5dea7e234585bd28a00df95342879dcba5b932f
+source-git-commit: 4dd1e90a377c0939048397a0ec4af08123d324c1
 workflow-type: tm+mt
 source-wordcount: '2741'
 ht-degree: 1%
@@ -362,3 +362,4 @@ In diesem Abschnitt werden datenansichtsspezifische Optimierungsregeln für abge
 
 * Passen Sie das [Zuordnungsmodell und die Gültigkeit](/help/data-views/component-settings/persistence.md) auf dieser Dimension an, um Name und Verhalten auszurichten. Beispielsweise sollte eine abgeleitete Felddimension mit dem Namen `Original Source` die Attribution Erstkontakt verwenden, wobei der Ablauf auf Person festgelegt ist.
 * Passen Sie das **[!UICONTROL Zuordnungsmodell]** und **[!UICONTROL Gültigkeit]** in den [Persistenz](/help/data-views/component-settings/persistence.md) der Dimension an, um Name und Verhalten auszurichten. `Original Source` sollten beispielsweise das **[!UICONTROL Zuordnungsmodell) auf &quot;]** **[!UICONTROL &quot;]** und **[!UICONTROL Expiration]** auf **[!UICONTROL Person]** setzen.
+
