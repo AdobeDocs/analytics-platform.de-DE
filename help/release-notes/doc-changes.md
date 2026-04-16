@@ -4,10 +4,10 @@ description: Listet Inhaltsaktualisierungen für Dokumentation zu Customer Journ
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: a4287ab5b341f156d039b4bc35dc03482ba3f60c
+source-git-commit: 6ae1f8ccca5321b2ebab775cc12775c64377613e
 workflow-type: tm+mt
-source-wordcount: '5819'
-ht-degree: 96%
+source-wordcount: '5856'
+ht-degree: 95%
 
 ---
 
@@ -20,6 +20,7 @@ Die folgenden Aktualisierungen wurden seit der ersten Erstellung der Customer Jo
 | Funktion | Beschreibung |
 |---|---|
 | **April 2026** | |
+| Fehlende Dokumentation für zwei Datensätze hinzugefügt, die bei der Integration von Journey Optimizer einbezogen werden können | [Zwei zusätzliche, nicht profilgenerierte Datensätze](/help/integrations/ajo.md#high-throughput-add-on-datasets) werden in die Verbindung aufgenommen, wenn das Add-on Transaktionsnachrichten mit hohem Durchsatz für Ihre IMS-Organisation aktiviert ist. |
 | Anwendungsfälle für die Kohortenanalyse aktualisiert | Basierend auf dem Feedback, das zu den Anwendungsfällen der Kohortenanalyse durch Analysis Workspace-Beispiele hinzugefügt wurde. |
 | **März 2026** | |
 | Aufschlüsseln eines Bedienfelds | Die Dokumentation um den [Ablagebereich für ein Bedienfeld“ wurde neu strukturiert](/help/analysis-workspace/c-panels/panels.md#drop-zone) um die neue Funktion [Aufschlüsselung](/help/analysis-workspace/c-panels/panels.md#break-down-a-panel) zu unterstützen. |

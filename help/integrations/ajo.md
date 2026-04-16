@@ -4,10 +4,10 @@ description: Binden Sie die von Adobe Journey Optimizer generierten Daten ein un
 exl-id: 9333ada2-b4d6-419e-9ee1-5c96f06a3bfd
 feature: Experience Platform Integration
 role: Admin
-source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
+source-git-commit: 830e16ecd4c43da114c63af51e4bb6e88bbb4ff8
 workflow-type: tm+mt
-source-wordcount: '3514'
-ht-degree: 100%
+source-wordcount: '3770'
+ht-degree: 93%
 
 ---
 
@@ -25,7 +25,7 @@ Wenn Sie die Customer Journey Analytics-Berichterstellung für Journey Optimizer
 
 ### Verbindung
 
-Die Verbindung hat den Namen **[!UICONTROL AJO-fähige Verbindung (*Sandbox-Name*)]** und verfügt über die folgenden vorkonfigurierten Werte für Konfiguration und Datensätze:
+Die Verbindung hat den Namen **[!UICONTROL AJO-fähige Verbindung *Sandbox-*)]** und verfügt über die folgenden vordefinierten Werte für Konfiguration und Datensätze:
 
 | **Verbindungseinstellungen** | Wert |
 |---|---|
@@ -44,17 +44,33 @@ Die Verbindung hat den Namen **[!UICONTROL AJO-fähige Verbindung (*Sandbox-Name
 | Datensatzname | Schema | Datensatztyp | Datenquellentyp | Personen-ID | Schlüssel | Übereinstimmender Schlüssel | Neue Daten importieren | Daten aufstocken |
 |---|---|---|---|---|---|---|---|---|
 | [!UICONTROL AJO-Entitäts-Datensatz] | [!UICONTROL Schema des AJO-Entitätseintrags] | [!UICONTROL Suche] | [!UICONTROL Sonstige] | – | ` _id` | `_experience. decisioning. propositions. scopeDetails. correlationID` | ![Status „Grün“](assets/../../connections/assets/status-green.svg) Ein | ![Status „Grau“](assets/../../connections/assets/status-gray.svg) Aus |
-| [!UICONTROL Journey-Schrittereignisse] | [!UICONTROL Journey-Schrittereignisschema für Journey-Orchestrierung] | [!UICONTROL Ereignis] | [!UICONTROL Sonstige] | [!UICONTROL  IdentityMap(\&lt;primary\>)] | – | – | ![Status „Grün“](assets/../../connections/assets/status-green.svg) Ein | ![Status Grau](assets/../../connections/assets/status-gray.svg) Aus |
+| [!UICONTROL Journey-Schrittereignisse] | [!UICONTROL Journey-Schrittereignisschema für Journey-Orchestrierung] | [!UICONTROL Ereignis] | [!UICONTROL Sonstige] | [!UICONTROL &#x200B; IdentityMap(\&lt;primary\>)] | – | – | ![Status „Grün“](assets/../../connections/assets/status-green.svg) Ein | ![Status Grau](assets/../../connections/assets/status-gray.svg) Aus |
 | [!UICONTROL Ereignisdatensatz zu Erfahrungen beim AJO-E-Mail-Tracking] | [!UICONTROL Erlebnisereignisschema beim AJO-E-Mail-Tracking] | [!UICONTROL Ereignis] | [!UICONTROL Sonstige] | [!UICONTROL IdentityMap(\&lt;primary\>)] | – | – | ![Status „Grün“](assets/../../connections/assets/status-green.svg) Ein | ![Status „Grau“](assets/../../connections/assets/status-gray.svg) Aus |
 | [!UICONTROL Ereignisdatensatz mit Feedback zu AJO-Nachrichten] | [!UICONTROL Ereignisschema mit Feedback zu AJO-Nachrichten] | [!UICONTROL Ereignis] | [!UICONTROL Sonstige] | [!UICONTROL IdentityMap(\&lt;primary\>)] | – | – | ![Status „Grün“](assets/../../connections/assets/status-green.svg) Ein | ![Status „Grau“](assets/../../connections/assets/status-gray.svg) Aus |
 | [!UICONTROL Erlebnisereignisdatensatz beim AJO-Push-Tracking] | [!UICONTROL Erlebnisereignisschema beim AJO-Push-Tracking] | [!UICONTROL Ereignis] | [!UICONTROL Sonstige] | [!UICONTROL IdentityMap(\&lt;primary\>)] | – | – | ![Status „Grün“](assets/../../connections/assets/status-green.svg) Ein | ![Status „Grau“](assets/../../connections/assets/status-gray.svg) Aus |
+| [!UICONTROL AJO-Nachrichten-Feedback-Ereignisdatensatz - Nicht &#x200B;]<br/>(siehe [Add-On-Datensätze mit hohem Durchsatz](#high-throughput-add-on-datasets) Abschnitt unten) | [!UICONTROL Ereignisschema mit Feedback zu AJO-Nachrichten] | [!UICONTROL Ereignis] | [!UICONTROL Sonstige] | [!UICONTROL IdentityMap(\&lt;primary\>)] | – | – | ![Status „Grün“](assets/../../connections/assets/status-green.svg) Ein | ![Status „Grau“](assets/../../connections/assets/status-gray.svg) Aus |
+| [!UICONTROL AJO-E-Mail-Tracking-Erlebnisereignis-Datensatz - Nicht &#x200B;]<br/>(siehe [&#x200B; Abschnitt „Add-On-Datensätze mit hohem &#x200B;](#high-throughput-add-on-datasets)&quot; unten) | [!UICONTROL Erlebnisereignisschema beim AJO-E-Mail-Tracking] | [!UICONTROL Ereignis] | [!UICONTROL Sonstige] | [!UICONTROL IdentityMap(\&lt;primary\>)] | – | – | ![Status „Grün“](assets/../../connections/assets/status-green.svg) Ein | ![Status „Grau“](assets/../../connections/assets/status-gray.svg) Aus |
 
+#### Add-on-Datensätze mit hohem Durchsatz
+
+Wenn das Add-on Transaktionsnachrichten mit hohem Durchsatz für Ihre IMS-Organisation aktiviert ist, werden zwei zusätzliche nicht profilgenerierte Datensätze in die Verbindung aufgenommen:
+
+* AJO-Nachrichten-Feedback-Ereignisdatensatz - Ohne Profil
+
+* AJO-E-Mail-Tracking-Erlebnisereignis-Datensatz - Ohne Profil
+
+Wenn das Add-on Transaktionsnachrichten mit hohem Durchsatz aktiviert ist, werden zwei neue Widgets für Journey Optimizer-Berichte auf globaler Ebene (Sandbox) verfügbar (sie sind nicht auf Kampagnenebene verfügbar):
+
+* **[!UICONTROL Rollierendes 7-Tage-P95-Latenz-]**: Zeigt die P95-Latenz als einen einzelnen Wert an, einschließlich der prozentualen Änderung gegenüber der Vorwoche.
+* **[!UICONTROL Rollierendes 7-Tage-P95-Durchsatz-Widget]**: Zeigt den P95-Durchsatz als einen einzelnen Wert an, einschließlich der prozentualen Änderung gegenüber der Vorwoche.
+
+Weitere Informationen zu diesen Datensätzen und zum Transaktionsnachrichten-Add-on mit hohem Durchsatz finden Sie unter [Aktivieren des Hochdurchsatzmodus für API-ausgelöste Kampagnen](https://experienceleague.adobe.com/de/docs/journey-optimizer/using/campaigns/api-triggered-campaigns/api-triggered-high-throughput) in der Dokumentation zu Adobe Journey Optimizer.
 
 ### Datenansicht
 
 Die Datenansicht hat den Namen **AJO-Datenansicht aktivieren (*Sandbox-Name*)**.
 
-- Auf der Registerkarte **[!UICONTROL Konfigurieren]** sind die folgenden Werte vorkonfiguriert.
+* Auf der Registerkarte **[!UICONTROL Konfigurieren]** sind die folgenden Werte vorkonfiguriert.
 
   | Einstellungen | Wert |
   |---|---|
@@ -83,13 +99,13 @@ Die Datenansicht hat den Namen **AJO-Datenansicht aktivieren (*Sandbox-Name*)**.
   | [!UICONTROL Erster Tag der letzten Woche] | Sonntag |
 
 
-- Auf der Registerkarte **Komponenten**:
-   - Alle Metriken und Dimensionen, an deren Namen [!UICONTROL (AJO)] angehängt wird, werden im Rahmen dieser automatischen Konfiguration automatisch hinzugefügt.
-   - Einige der automatisch hinzugefügten Metriken oder Dimensionen basieren auf abgeleiteten Feldern. Diese abgeleiteten Felder werden speziell für diese Integration erstellt. Beispielsweise basiert die Metrik [!UICONTROL Landingpage-Klicks (AJO)] auf dem abgeleiteten Feld [!UICONTROL Landingpage-Klicks].
-   - Einige der Metriken oder Dimensionen verfügen über eine zusätzliche Konfiguration. Beispiel: Auf [!UICONTROL Beschwerden wegen Spam (AJO)] wurden die Einstellungen [!UICONTROL Format] und [!UICONTROL Werte einschließen/ausschließen] angewendet.
-   - Alle automatisch hinzugefügten Metriken und Dimensionen haben ein Kontext-Label mit dem Namen `:`*`name_of_metric_or_dimension`*. Beispiel: Die Metrik [!UICONTROL Landingpage-Klicks (AJO)] hat das Kontext-Label `:Landing page clicks (AJO)`.
+* Auf der Registerkarte **Komponenten**:
+   * Alle Metriken und Dimensionen, an deren Namen [!UICONTROL (AJO)] angehängt wird, werden im Rahmen dieser automatischen Konfiguration automatisch hinzugefügt.
+   * Einige der automatisch hinzugefügten Metriken oder Dimensionen basieren auf abgeleiteten Feldern. Diese abgeleiteten Felder werden speziell für diese Integration erstellt. Beispielsweise basiert die Metrik [!UICONTROL Landingpage-Klicks (AJO)] auf dem abgeleiteten Feld [!UICONTROL Landingpage-Klicks].
+   * Einige der Metriken oder Dimensionen verfügen über eine zusätzliche Konfiguration. Beispiel: Auf [!UICONTROL Beschwerden wegen Spam (AJO)] wurden die Einstellungen [!UICONTROL Format] und [!UICONTROL Werte einschließen/ausschließen] angewendet.
+   * Alle automatisch hinzugefügten Metriken und Dimensionen haben ein Kontext-Label mit dem Namen `:`*`name_of_metric_or_dimension`*. Beispiel: Die Metrik [!UICONTROL Landingpage-Klicks (AJO)] hat das Kontext-Label `:Landing page clicks (AJO)`.
 
-- Auf die Registerkarte **[!UICONTROL Einstellungen]** werden keine spezifischen Konfigurationswerte angewendet.
+* Auf die Registerkarte **[!UICONTROL Einstellungen]** werden keine spezifischen Konfigurationswerte angewendet.
 
 >[!IMPORTANT]
 >
@@ -117,6 +133,8 @@ Wählen Sie die folgenden Datensätze aus und konfigurieren Sie sie:
 | Datensatz für Erlebnisereignisse beim AJO-Push-Tracking | Ereignis | Personen-ID: `IdentityMap` | Enthält Push-Tracking-Ereignisse wie „[!UICONTROL App-Starts]“. |
 | Journey-Schritt-Ereignisse | Ereignis | Personen-ID: `_experience.journeyOrchestration.`<br>`stepEvents.profileID` | Enthält Ereignisse, die zeigen, welche Profile an den einzelnen Knoten der Journey beteiligt waren. |
 | AJO-Entitäts-Datensatz | Suche | Schlüssel: `_id`<br>Passender Schlüssel: `_experience.decisioning.propositions.`<br>`scopeDetails.correlationID` | Enthält Klassifizierungen, die Journey- und Campaign-Metadaten mit allen Journey Optimizer-Ereignisdaten verknüpfen. |
+| AJO-Nachrichten-Feedback-Ereignisdatensatz - Ohne Profil | Ereignis | Personen-ID: `IdentityMap` | Enthält nicht profilbezogene Nachrichten-Feedback-Ereignisse. Nur verfügbar, wenn [&#x200B; Add-on „Transaktionsnachrichten mit hohem Durchsatz](#high-throughput-add-on-datasets) aktiviert ist. |
+| AJO-E-Mail-Tracking-Erlebnisereignis-Datensatz - Ohne Profil | Ereignis | Personen-ID: `IdentityMap` | Enthält E-Mail-Tracking-Erlebnisereignisse, die nicht vom Profil stammen. Nur verfügbar, wenn [&#x200B; Add-on „Transaktionsnachrichten mit hohem Durchsatz](#high-throughput-add-on-datasets) aktiviert ist. |
 
 {style="table-layout:auto"}
 
