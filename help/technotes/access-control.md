@@ -6,10 +6,10 @@ feature: Basics
 exl-id: c258fa39-c0b6-45a1-8547-79516c15a215
 mini-toc-levels: 3
 role: Admin
-source-git-commit: 81e08ecb593b6ba789c479d0e648cbe7ba0a82d6
+source-git-commit: 3cf3e24fc6c2ea2392e0c5bb97df17f25a023f4d
 workflow-type: tm+mt
-source-wordcount: '1554'
-ht-degree: 96%
+source-wordcount: '1568'
+ht-degree: 95%
 
 ---
 
@@ -134,6 +134,7 @@ Die Registerkarte **[!UICONTROL Berechtigungen]** ist Teil jedes Produktprofils 
 | [!UICONTROL Reporting-Tools] | [!UICONTROL KI-Assistent: Produktkenntnisse] | Ermöglicht Benutzenden den Zugriff auf den [KI-Assistenten](../ai-assistant.md) für Produktkenntnisse. |
 | [!UICONTROL Reporting-Tools] | [!UICONTROL Data Insights Agent] | Ermöglicht Benutzenden den Zugriff auf die [Data Insights Agent](../data-analysis-ai.md) für KI-gesteuerte Dateneinblicke. |
 | [!UICONTROL Reporting-Tools] | [!UICONTROL Intelligente Untertitel] | Ermöglicht Benutzenden den Zugriff auf [intelligente Beschriftungen](/help/analysis-workspace/visualizations/intelligent-captions.md). |
+| [!UICONTROL Reporting-Tools] | [!UICONTROL MCP-Zugriff] | Ermöglicht Benutzenden den Zugriff auf den [Customer Journey Analytics MCP-Server](https://developer.adobe.com/analytics-mcp/docs/cja/). |
 | [!UICONTROL Tools für die Datenansicht] | [!UICONTROL Vollständiger Tabellenexport] | Ermöglicht Benutzenden das [Exportieren von vollständigen Tabellen in die Cloud](/help/analysis-workspace/export/export-cloud.md). |
 | [!UICONTROL Tools für die Datenansicht] | [!UICONTROL CJA BI-Erweiterung] | Ermöglicht Benutzenden die Verwendung der [BI-Erweiterung](../data-views/bi-extension.md). |
 
