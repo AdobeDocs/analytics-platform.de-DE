@@ -3,7 +3,7 @@ title: Best Practices für die Attribution
 description: Machen Sie sich mit den Best Practices vertraut, um zu entscheiden, welches Attributionsmodell verwendet werden soll.
 feature: Attribution
 exl-id: 92c6039c-f950-4746-8b34-ba18be258c08
-source-git-commit: 1b6e1d432bfe4b0574b8ee68bcfa940941f3c36f
+source-git-commit: ee6eb18fc2a720e61670c571847bacf836b0b039
 workflow-type: tm+mt
 source-wordcount: '422'
 ht-degree: 66%
@@ -53,7 +53,7 @@ In diesem Fall würden Sie das [Umgekehrte J-förmige Attributionsmodell) verwen
 
 Angenommen, Ihre Hypothese lautet: *„In einer bestimmten Branche (z. B. der Reisebranche) beträgt das Attributionsfenster 60 oder 90 Tage, nicht 30 Tage, da Kunden viel recherchieren, bevor sie ein Produkt kaufen.*&quot;
 
-In diesem Fall würden Sie Ihr [Lookback-Fenster](https://experienceleague.adobe.com/de/docs/analytics/analyze/analysis-workspace/attribution/models) auf 90 Tage ändern.
+In diesem Fall würden Sie Ihr [Lookback-Fenster](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/attribution/models) auf 90 Tage ändern.
 
 ## Algorithmische Attribution verwenden
 
@@ -63,4 +63,5 @@ Wenn Sie noch kein Attributionsmodell haben, das alle Ihre Fragen zufriedenstell
 
 * Möglicherweise sollten Sie ergänzend zu Analysis Workspace einen Datenwissenschaftler hinzuziehen.
 * Sie können sich auf Rohdaten verlassen, wie in Daten-Feeds von Adobe.
-* Erwägen Sie beispielsweise die Verwendung von [&#128279;](https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-overview/cja-b2c-overview/cja-overview)Customer Journey Analytics), wenn Sie Ihre Impressionsdaten berücksichtigen möchten.
+* Erwägen Sie beispielsweise die Verwendung von [](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2c-overview/cja-overview)Customer Journey Analytics), wenn Sie Ihre Impressionsdaten berücksichtigen möchten.
+
