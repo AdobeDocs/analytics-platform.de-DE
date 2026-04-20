@@ -6,9 +6,9 @@ feature: Derived Fields
 exl-id: bcd172b2-cd13-421a-92c6-e8c53fa95936
 role: Admin
 hide: true
-source-git-commit: ee6eb18fc2a720e61670c571847bacf836b0b039
+source-git-commit: 0de768fa78e4c5be08e1534757570938c0182dd4
 workflow-type: tm+mt
-source-wordcount: '2741'
+source-wordcount: '2764'
 ht-degree: 1%
 
 ---
@@ -31,7 +31,22 @@ Dieser Artikel enthält Richtlinien (Best Practices, Leitplanken und allgemeine 
 * **Verbesserung der**: Erstellen Sie eine abgeleitete Feldlogik, die klar, modular und einfach zu aktualisieren ist.
 * **Korrektheit sicherstellen**: Vermeiden Sie gängige logische Fehler bei der Klassifizierung, Attribution und Datenumwandlung.
 
-Die Abschnitte in diesem Artikel sind nach Themen geordnet. Von übermäßig komplexen Regelketten bis hin zum Missbrauch von Funktionen wie [Lookup](./derived-fields.md#lookup), [Regex Replace](./derived-fields.md#regex-replace) und [Next oder Previous](./derived-fields.md#next-or-previous). Jeder Abschnitt enthält:
+In diesem Artikel werden die Abschnitte zu den folgenden Themen organisiert:
+
+* [Von hoher Kardinalität abgeleitete Felder](#high-cardinality-derived-fields)
+* [Zu komplexe Wenn-Regelketten](#over-complex-case-when-rule-chains)
+* [Falsche Verwendung](#wrong-usage)
+* [Fehlklassifizierungen von Metriken und Dimensionen](#misclassifications-of-metrics-and-dimensions)
+* [Fallstricke bei der Marketing-Kanal- und Kampagnenlogik](#marketing-channel-and-campaign-logic-pitfalls)
+* [Nicht normalisierte Zeichenfolgenschlüssel, die in Suchen verwendet werden](#non-normalized-string-keys-used-in-lookups)
+* [Regex-Missbrauch oder -Überschreitung](#regex-misuse-or-overreach)
+* [Logik des Stils für berechnete Metriken in abgeleiteten Feldern](#calculated-metric-style-logic-in-derived-fields)
+* [Übermäßige Nutzung der nächsten oder vorherigen oder sequenziellen Funktionen](#over-usage-of-next-or-previous-or-sequential-functions)
+* [Sitzungs- und Personenkontext werden ignoriert](#ignoring-session-and-person-level-context)
+* [Erreichbarkeit oder Annäherung an dokumentierte Funktionsgrenzen](#hitting-or-nearing-documented-function-limits)
+* [Datenansichtsspezifische Optimierungsregeln](#data-view-specific-optimization-rules)
+
+Jeder Abschnitt enthält:
 
 * **Muster** zu erkennen: Beobachtbare Signale in den abgeleiteten Felddefinitionen.
 * **Risikodiagnose**: Warum dieses Muster problematisch ist. Mögliche Ursachen sind negative Auswirkungen auf **Leistung**, **Datenqualität** oder **Wartung**.
@@ -44,16 +59,16 @@ Diese Richtlinien helfen Ihnen beim Erstellen effizienter, skalierbarer und sema
 
 In diesem Abschnitt werden Standardsegmente für Datenansichten erläutert, die auf abgeleitete Felder mit hoher Kardinalität verweisen.
 
-### Muster
+**Muster**
 
 * Standardsegmente für Datenansichten, die auf ein abgeleitetes Feld verweisen, das auf einer Dimension mit hoher Kardinalität basiert (etwa eine Million oder mehr verschiedene Werte). Beispiel: vollständige Seiten-URL.
-* Einfache Vorgänge wie [Kleinbuchstaben](./derived-fields.md#lowercase), [Trim](./derived-fields.md#trim) oder [Case Wenn](./derived-fields.md#case-when)-Prüfungen auf der Seiten-URL sind häufig teurer als dieselbe Logik in Feldern mit geringer Kardinalität, wie Seitenname, Site-Bereich oder URL-Gruppe.
+* Einfache Vorgänge wie [Kleinbuchstaben](./derived-fields.md#lowercase), [Trim](./derived-fields.md#trim) oder [Case Wenn](./derived-fields.md#case-when)-Prüfungen auf Seiten-URLs sind häufig teurer als dieselbe Logik in Feldern mit niedriger Kardinalität.
 
-### Risikodiagnose: Leistung
+**Risikodiagnose: Leistung**
 
 * Standardsegmente, die nach abgeleiteten Feldern filtern, die Seiten-URL oder andere Dimensionen mit hoher Kardinalität berühren, fügen jeder Abfrage für die Datenansicht Latenz hinzu.
 
-### Empfehlungen
+**Recommendations**
 
 * Vermeiden Sie den direkten Verweis auf vollständige Seiten-URLs oder Komponenten mit ähnlich hoher Kardinalität in den Standardsegmenten der Datenansicht. Übertragen Sie umfangreiche URL-Logik (komplexe [Wenn](./derived-fields.md#case-when), [Regex ersetzen](./derived-fields.md#regex-replace), mehrere Zeichenfolgenfunktionen) nach vorn in [Datenvorbereitung](https://experienceleague.adobe.com/de/docs/experience-platform/data-prep/home) oder [Lookup-Datensätze](/help/getting-started/cja-upgrade/cja-upgrade-dataset-lookup.md) sodass die resultierenden Klassifizierungen auf einfacheren Dimensionen mit niedrigerer Kardinalität landen.
 * Bevorzugen Sie Schlüssel mit niedrigerer Kardinalität, z. B. normalisierte Seitennamen, Site-Bereiche oder vorklassifizierte URL-Gruppen.
@@ -65,7 +80,7 @@ In diesem Abschnitt werden überkomplexe Ketten von Wenn[Regeln &#x200B;](./deri
 
 Customer Journey Analytics erzwingt explizite [Funktions- und Operatorbeschränkungen](derived-fields.md#limitations) pro abgeleitetem Feld (z. B. maximale Anzahl von Operatoren, maximale Anzahl von Funktionen pro Typ). Überkomplexe Funktionen und Ketten innerhalb von Funktionen sind schwieriger zu pflegen und fehleranfälliger.
 
-### Muster
+**Muster**
 
 * Sehr große [Wenn](./derived-fields.md#case-when)-Funktionen mit komplexen **[!UICONTROL If]**- und **[!UICONTROL Else If]**-Ketten:
    * Viele Bedingungen (z. B.: mehr als 20 Operatoren) oder tiefe Verschachtelung (mehr als 3 oder 4 Ebenen verschachtelter Logik [Case](./derived-fields.md#case-when) **[!UICONTROL If]** und **[!UICONTROL Else If]**).
@@ -79,12 +94,12 @@ Customer Journey Analytics erzwingt explizite [Funktions- und Operatorbeschränk
   +++
 
 
-### Risikodiagnose: Leistung, Datenqualität, hohe Wartung
+**Risikodiagnose: Leistung, Datenqualität, hohe Wartung**
 
 * Wartbarkeit und Fehlerrisiko: Logik, die als monolithischer Regelblock kodiert ist, ist schwer zu debuggen und zu aktualisieren.
 * Potenzielle Leistung und Risiko begrenzen: Sie können (Benutzer- oder [) erreichen oder sich ihnen &#x200B;](./derived-fields.md#limitations), insbesondere bei klassifizierungsähnlichen Mustern.
 
-### Empfehlungen
+**Recommendations**
 
 * Aufspaltung in mehrere abgeleitete Felder. Trennen Sie beispielsweise *Kampagnennormalisierung* (Zuordnung inkonsistenter Kampagnenkennungen zu einem kanonischen Wert) von Kanal-Bucketing, anstatt alles in einer riesigen Regel zu kombinieren.
 * Verwenden von Lookup-Datensätzen. Viele **[!UICONTROL Bedingungen _Wenn Wert_ Kriterium _Kriterium_ dann _Wert_ auf Wert]** werden besser als [Lookup-Datensatz](/help/getting-started/cja-upgrade/cja-upgrade-dataset-lookup.md) kombiniert mit der [Lookup](./derived-fields.md#lookup)-Funktion implementiert, anstatt lange [&#128279;](./derived-fields.md#case-when) WennKetten zu verwenden.
@@ -98,7 +113,7 @@ In diesem Abschnitt wird die falsche Verwendung abgeleiteter Felder erläutert. 
 >
 >Das Verschieben einer Logik aus einem abgeleiteten Feld in eine Komponenteneinstellung für die Datenansicht verbessert allein die Abfrageleistung nicht. Beide Ansätze kompilieren mit derselben zugrunde liegenden abgeleiteten Logik. Bei den Empfehlungen in diesem Abschnitt geht es um Klarheit, Governance und Wiederverwendung und nicht um Geschwindigkeit.
 
-### Muster
+**Muster**
 
 * Ein abgeleitetes Feld repliziert ein Verhalten, das bereits in den Komponenteneinstellungen verfügbar ist:
    * Groß-/Kleinschreibung, Zuschneiden oder einfaches Filtern (z. B. ohne `unknown`, `undefined` oder `null`) ohne zusätzliche Komplexität.
@@ -120,15 +135,15 @@ In diesem Abschnitt wird die falsche Verwendung abgeleiteter Felder erläutert. 
 
      +++
 
-     Dies repliziert, was eine gefilterte Metrik oder [Werte einschließen/ausschließen](/help/data-views/component-settings/include-exclude-values.md) erreichen könnte.
+     Dieser Ansatz repliziert, was eine gefilterte Metrik oder [Werte einschließen/ausschließen](/help/data-views/component-settings/include-exclude-values.md) erreichen könnte.
 
-### Risikodiagnose: Datenqualität, hohe Wartung
+**Risikodiagnose: Datenqualität, hohe Wartung**
 
 * Redundante Komplexität: Abgeleitete Felder werden verwendet, wenn einfachere integrierte Datenansichtsfunktionen vorhanden sind.
 * Governance-Risiko: Andere Benutzende verstehen möglicherweise nicht, warum ein abgeleitetes Feld anstelle einer nativen Einstellung vorhanden ist. Das Muster sorgt für mehr Durcheinander bei der Verwaltung abgeleiteter Felder.
 * Reduzierte Wiederverwendbarkeit: Die Codierung von bedingten Flags als abgeleitete Felder erschwert die Wiederverwendung von Basismetriken mit verschiedenen Filtern in Projekten.
 
-### Empfehlungen
+**Recommendations**
 
 * Kürzung/Kleinschreibung: Verwenden Sie die Komponenteneinstellungen [Teilzeichenfolge](/help/data-views/component-settings/substring.md) und [Verhalten](/help/data-views/component-settings/behavior.md), es sei denn, Sie benötigen kombinierte mehrstufige Transformationen.
 * Werteausschluss: Verwenden Sie [Werte einschließen/ausschließen](/help/data-views/component-settings/include-exclude-values.md) für Metriken oder Dimensionswerte auf der Komponentenebene der Datenansicht, nicht in einem abgeleiteten Feld.
@@ -142,7 +157,7 @@ In diesem Abschnitt wird die falsche Verwendung abgeleiteter Felder erläutert. 
 
 In diesem Abschnitt wird die falsche Klassifizierung von Metriken und Dimensionen erläutert.
 
-### Muster
+**Muster**
 
 * Ein abgeleitetes Feld erzeugt eindeutig:
    * Numerische Ausgaben (Anzahl, Verhältnis oder Arithmetik), aber die Komponente ist als Dimension konfiguriert.
@@ -151,11 +166,11 @@ In diesem Abschnitt wird die falsche Klassifizierung von Metriken und Dimensione
 
 Customer Journey Analytics ermöglicht es, numerische Felder auf Datenansichtsebene zu Dimensionen und Zeichenfolgenfeldern zu Metriken zu zwingen. Eine falsche Ausrichtung kann jedoch zu verwirrenden Berichten führen.
 
-### Risikodiagnose: Datenqualität
+**Risikodiagnose: Datenqualität**
 
 * Semantische Diskrepanz: Der Komponententyp stimmt nicht mit der Art des abgeleiteten Ergebnisses überein, was die korrekte Analyse oder Aggregation des Komponententyps erschwert.
 
-### Empfehlungen
+**Recommendations**
 
 * Wenn die Ausgabe numerisch ist:
    * Legen Sie in der Datenansicht **[!UICONTROL Komponententyp]** Metrik) fest.
@@ -171,7 +186,7 @@ In diesem Abschnitt werden Fallstricke bei der Marketing-Kanal- und Kampagnenlog
 >
 >Eine Vereinfachung im Vorfeld sollte in Betracht gezogen werden[&#x200B; indem &#x200B;](https://experienceleague.adobe.com/de/docs/experience-platform/data-prep/home)Datenvorbereitung“, [Lookup-Datensätze](/help/getting-started/cja-upgrade/cja-upgrade-dataset-lookup.md) oder abgeleitete Feldfunktionen wie [Klassifizieren](./derived-fields.md#classify) verwendet werden, um ähnliche Regeln für Marketing-Kanäle zu konsolidieren und die Anzahl der Operatoren in Ihrer Wenn[-Logik von &#x200B;](./derived-fields.md#case-when) zu reduzieren. Beschränken Sie außerdem die Anzahl der Felder mit hoher Kardinalität, auf die in der Kanalklassifizierungslogik verwiesen wird (z. B.: viele verschiedene Abfrageparameterschlüssel), da diese Felder sowohl die Kardinalität als auch die Abfragekosten erhöhen.
 
-### Muster
+**Muster**
 
 * Customer Journey Analytics-Marketing-Kanäle werden oft mithilfe abgeleiteter Felder implementiert.
 
@@ -179,12 +194,12 @@ In diesem Abschnitt werden Fallstricke bei der Marketing-Kanal- und Kampagnenlog
    * Verdächtige Reihenfolge: Es wird eine allgemeine Sammelregel angezeigt, bevor spezifischere Regeln angewendet werden.
    * Unvollständige Handhabung aller möglichen Optionen: Keine explizite Verzweigung für **[!UICONTROL Verweisende Domain ist nicht]** oder **[!UICONTROL Abfrageparameter ist nicht festgelegt]**.
 
-### Risikodiagnose: Datenqualität
+**Risikodiagnose: Datenqualität**
 
 * Logischer Reihenfolgefehler: Spätere Regeln in der Kette, die möglicherweise bestimmte Kanäle überschreiben und zu falsch klassifiziertem Traffic führen.
 * Falsche Kennzeichnung von direktem Traffic: Nicht übereinstimmender Traffic fällt in einen unbeabsichtigten Kanal oder wird als `Other` gekennzeichnet.
 
-### Empfehlungen
+**Recommendations**
 
 * Reihenfolge der Priorität von oben nach unten erzwingen. Setzen Sie die stärksten Signale an erste Stelle (z. B. interne Domains, um Kampagnenparameter auszuschließen).
 * Schließen Sie einen letzten expliziten Wert ein **[!UICONTROL andernfalls setzen Sie den Wert auf]**. Setzen Sie den Fallback auf **[!UICONTROL Kein Wert]**, um zu vermeiden, dass frühere Kanäle überschrieben werden. Legen Sie in diesem **[!UICONTROL -Schritt den Wert nicht auf]** Benutzerdefinierter Zeichenfolgenwert **[!UICONTROL und dann]** Benutzerdefinierter Zeichenfolgenwert) auf `Direct`, `None` oder `Unclassified` fest.
@@ -194,17 +209,17 @@ In diesem Abschnitt werden Fallstricke bei der Marketing-Kanal- und Kampagnenlog
 
 In diesem Abschnitt wird die Verwendung nicht normalisierter Zeichenfolgenschlüssel bei der Suche erläutert.
 
-### Muster
+**Muster**
 
 * Eine [Lookup](./derived-fields.md#lookup)-Funktion über ein Ereignis- oder Profilfeld, das einen Lookup-Datensatz befüllt.
 * Kein vorheriger [&#x200B; (](./derived-fields.md#lowercase)), [Trim](./derived-fields.md#trim) oder [Regex Replace](./derived-fields.md#regex-replace) standardisiert den Schlüssel.
 * Häufige Kandidaten: URL, Kampagnen-ID, E-Mail, Konto-ID.
 
-### Risikodiagnose: Datenqualität, hohe Wartung
+**Risikodiagnose: Datenqualität, hohe Wartung**
 
 * Datenqualitätsrisiko: Suchvorgänge schlagen fehl, wenn sich die Schlüsselschreibung oder der Leerraum von der Suchtabelle unterscheidet, was zu Werten *keine Übereinstimmung* und Berichtslücken führt.
 
-### Empfehlungen
+**Recommendations**
 
 * Fügen Sie die Funktionen [Kleinbuchstaben](./derived-fields.md#lowercase) und [Trim](./derived-fields.md#trim) vor der [Lookup](./derived-fields.md#lookup)-Funktion hinzu, es sei denn, es gibt einen dokumentierten Grund, Ober- oder Kleinbuchstaben beizubehalten.
 * Wenn bereits mehrere Transformationen verkettet sind, überprüfen Sie deren Reihenfolge: zuerst normalisieren und dann nachschlagen.
@@ -213,9 +228,9 @@ In diesem Abschnitt wird die Verwendung nicht normalisierter Zeichenfolgenschlü
 
 In diesem Abschnitt wird der Missbrauch oder die Überdehnung der Regex-Funktionalität für abgeleitete Felder erläutert.
 
-### Muster
+**Muster**
 
-* [Regex ersetzen](./derived-fields.md#regex-replace) oder regex-basierte Bedingungen verwenden sehr breite Muster, bei denen einfachere [Wenn](./derived-fields.md#case-when)-Funktionen mit **[!UICONTROL Enthält]** oder **[!UICONTROL Beginnt mit]** eine einfachere und bessere Alternative sind.
+* [Regex ersetzen](./derived-fields.md#regex-replace) oder regex-basierte Bedingungen verwenden breite Muster; einfachere [Wenn](./derived-fields.md#case-when)-Funktionen mit **[!UICONTROL Enthält]** oder **[!UICONTROL Beginnt mit]** sind bessere Alternativen.
 
   +++ Beispiel
 
@@ -228,12 +243,12 @@ In diesem Abschnitt wird der Missbrauch oder die Überdehnung der Regex-Funktion
 * Mehrere Regex-Bedingungen überschneiden sich oder stehen im Konflikt.
 * Starke Regex-Nutzung zum Parsen von URLs, anstatt die Funktion [URL Parse](./derived-fields.md#url-parse) zu verwenden.
 
-### Risikodiagnose: Leistung, Datenqualität, hohe Wartung
+**Risikodiagnose: Leistung, Datenqualität, hohe Wartung**
 
 * Leistungs- und Wartungsrisiken: Komplexe Regex-Muster sind schwieriger zu debuggen und können langsamer sein.
 * Richtigkeitsrisiko: Zu breite Regex kann unbeabsichtigte Werte erfassen.
 
-### Empfehlungen
+**Recommendations**
 
 * URL[Parse](./derived-fields.md#url-parse) für Standard-URL-Elemente (Domain, Pfad, Abfrageparameter) anstelle von [Regex-Ersetzung](./derived-fields.md#regex-replace).
 * Verwenden Sie für einfache Musterprüfungen [case When](./derived-fields.md#case-when) mit **[!UICONTROL Contains]**, **[!UICONTROL Beginnt mit]** oder **[!UICONTROL Endet mit]** Logik anstelle von regulären Ausdrücken mit [Regex Replace](./derived-fields.md#regex-replace).
@@ -247,7 +262,7 @@ In diesem Abschnitt wird die Verwendung der Logik eines berechneten Stils in ein
 >
 >Abgeleitete Felder werden vor der Aggregation auf Ereignisebene (Zeile) ausgewertet, während berechnete Analysis Workspace-Metriken bereits aggregierte Werte verwenden. Verhältnisse, Durchschnittswerte und Berechnungen im eigenen Stil können daher zu unterschiedlichen Ergebnissen führen, je nachdem, ob diese Berechnungen als abgeleitetes Feld oder als berechnete Metrik implementiert werden. Wir müssen abwägen, wo die Arithmetik wohnt, denn die Bewertung verändert die Antwort.
 
-### Muster
+**Muster**
 
 * Reine Arithmetik für numerische Felder innerhalb eines abgeleiteten Felds (Summe, Subtraktion, Division), das wie eine berechnete Metrik aussieht.
 
@@ -261,13 +276,13 @@ In diesem Abschnitt wird die Verwendung der Logik eines berechneten Stils in ein
 
 * Keine Verwendung von Zeichenfolgenmanipulation oder Klassifizierung; die Logik ist rein numerisch.
 
-### Risikodiagnose: Datenqualität
+**Risikodiagnose: Datenqualität**
 
 * Governance- und Design-Frage: Die Arithmetik kann besser platziert werden als:
    * Eine abgeleitete Feldmetrik (wenn Sie möchten, dass das abgeleitete Feld für alle Benutzer als gesteuerte Standardmetrik dient).
    * Eine berechnete Metrik in Analysis Workspace (wenn die berechnete Metrik analysespezifisch ist).
 
-### Empfehlungen
+**Recommendations**
 
 * Wenn das arithmetische Ergebnis allgemein für Benutzer und Projekte nützlich ist, behalten Sie das Ergebnis als abgeleitete Feldmetrik bei. Stellen Sie sicher, dass der Komponententyp Metrik ist und die Formatierung (Währung, Prozentsatz) auf Datenansichtsebene konfiguriert ist.
 * Wenn das Ergebnis nischenspezifisch oder analystenspezifisch ist, verschieben Sie das Ergebnis in eine berechnete Metrik und vereinfachen Sie die Datenansicht.
@@ -276,17 +291,17 @@ In diesem Abschnitt wird die Verwendung der Logik eines berechneten Stils in ein
 
 In diesem Abschnitt wird die übermäßige Verwendung von [Weiter oder Zurück](./derived-fields.md#next-or-previous) oder sequenziellen Funktionen erläutert.
 
-### Muster
+**Muster**
 
 * Ein abgeleitetes Feld verwendet [Weiter oder Zurück](./derived-fields.md#next-or-previous) Funktionen mehrmals (nahe an der dokumentierten Anzahl der einzelnen Felder).
 * [Weiter oder Zurück](./derived-fields.md#next-or-previous) wird verwendet, um eine Persistenz-ähnliche Logik zu implementieren (z. B.: eine Kampagne fortführen), anstatt die Datenansichts-Persistenz zu verwenden.
 
-### Risikodiagnose: Datenqualität, hohe Wartung
+**Risikodiagnose: Datenqualität, hohe Wartung**
 
 * Komplexität und Fragilität: Umfangreiche sequenzielle Logik ist schwieriger zu argumentieren und kann abbrechen, wenn Sitzungsregeln oder Änderungen angeordnet werden.
-* Redundanz mit Persistenz der Dimensionen: Einige Anwendungsfälle (z. B. Letztkontakt-Kanal in einer Sitzung) werden besser durch die Einstellungen der Datenansicht [Persistenz](/help/data-views/component-settings/persistence.md) (**[!UICONTROL Zuordnungsmodell]**) in der Dimension abgedeckt.
+* Redundanz mit Persistenz der Dimensionen: Die Einstellungen [&#x200B; Datenansicht „Persistenz](/help/data-views/component-settings/persistence.md) (Zuordnungsmodell) für die Dimension decken einige Anwendungsfälle besser ab (z. B. Letztkontakt-Kanal in einer Sitzung).
 
-### Empfehlungen
+**Recommendations**
 
 * Bei Mustern, die der standardmäßigen Persistenz ähneln (z. B. beim Weiterleiten eines Werts über eine Sitzung oder Person hinweg), verwenden Sie die [Persistenz](/help/data-views/component-settings/persistence.md)-Einstellungen der Dimension (**[!UICONTROL Zuordnungsmodell]** und **[!UICONTROL Gültigkeit]**) in der Datenansicht, anstatt diese Muster mit [Weiter oder Zurück](./derived-fields.md#next-or-previous) zu simulieren.
 * Reservieren Sie [Weiter oder &#x200B;](./derived-fields.md#next-or-previous)) für erweiterte mehrstufige Pfade oder funnel-Kennzeichnungen, die durch Persistenz der Dimension allein nicht erreicht werden können (z. B.: Kanalsequenzverkettung).
@@ -297,20 +312,20 @@ In diesem Abschnitt wird beschrieben, wie Kontext auf Sitzungs- und Personeneben
 
 >[!NOTE]
 >
->In einigen Fällen kann ein Segment, das auf Sitzungs- oder Personenebene in Analysis Workspace erfasst wird, das Verhalten einfacher modellieren als ein abgeleitetes Feld. Erwägen Sie bei Bedarf die Verwendung von Segmenten anstelle von komplexen, über den Umfang hinweg abgeleiteten Feldern.
+>In einigen Fällen kann ein Segment, das auf Sitzungs- oder Personenebene in Analysis Workspace erfasst wird, das Verhalten einfacher modellieren als ein abgeleitetes Feld. Erwägen Sie bei Bedarf die Verwendung von Segmenten anstelle von komplexen bereichsübergreifenden Feldern.
 
-### Muster
+**Muster**
 
 * Ein abgeleitetes Feld setzt implizit eine bestimmte [Container-Ebene](/help/getting-started/cja-b2b-concepts-features.md#containers) voraus (Ereignis, Sitzung oder Person), aber:
 
    * Das abgeleitete Feld verweist nicht auf Attribute auf Sitzungs- oder Personenebene.
    * Die Sitzungseinstellungen der Datenansicht stehen im Konflikt mit der beabsichtigten Logik.
 
-### Risikodiagnose: Datenqualität
+**Risikodiagnose: Datenqualität**
 
 * Konzeptuelle Diskrepanz: Die Semantik abgeleiteter Felder stimmt möglicherweise nicht mit der von Analysten erwarteten Aggregationsebene überein (z. B.: ein personabasiertes Feld, das sich mit jedem Ereignis ändern kann).
 
-### Empfehlungen
+**Recommendations**
 
 * Wenn die Logik auf Sitzungsebene ausgeführt werden soll, überprüfen Sie, ob [Sitzungseinstellungen](/help/data-views/session-settings.md) ordnungsgemäß konfiguriert sind, und erwägen Sie die Verwendung von Komponenten im Sitzungsbereich oder einer Zusammenfassung in Analysis Workspace oder in einem [integrierten BI-Tool](/help/data-views/bi-extension.md).
 * Wenn die Logik auf Personenebene erstellt werden soll, verwenden Sie Profildatensätze oder Lookup-Datensätze und verweisen Sie in abgeleiteten Feldern auf diese Datensätze.
@@ -322,23 +337,21 @@ In diesem Abschnitt werden die Auswirkungen beschrieben, die sich ergeben, wenn 
 
 >[!NOTE]
 >
->Verringern Sie die Abhängigkeit von Feldern mit hoher Kardinalität in komplexen abgeleiteten Feldern, wo möglich (z. B.: Verwenden normalisierter Schlüssel oder gruppierter Klassifizierungen), um sowohl die Abfragekosten als auch die Wahrscheinlichkeit zu begrenzen, dass [&#x200B; (Benutzer- oder Funktionsbeschränkungen](./derived-fields.md#limitations) erreicht werden.
+>Verringern Sie die Abhängigkeit von Feldern mit hoher Kardinalität in komplexen abgeleiteten Feldern, wo möglich (z. B.: Verwenden normalisierter Schlüssel oder gruppierter Klassifizierungen), um die Abfragekosten und die Wahrscheinlichkeit zu begrenzen, dass [&#x200B; (Benutzer- oder Funktionsbeschränkungen](./derived-fields.md#limitations) erreicht werden.
 
-Customer Journey Analytics [Dokumente](./derived-fields.md#limitations) maximale Funktionen und Operatoren pro abgeleitetem Feld, einschließlich Einschränkungen pro Funktionstyp ([Lookup](./derived-fields.md#lookup), [Date Math](./derived-fields.md#date-math), [Deduplicate](./derived-fields.md#deduplicate), [Math](./derived-fields.md#math), [Split](./derived-fields.md#split), [URL Parse](./derived-fields.md#url-parse) und mehr).
-
-### Muster
+Customer Journey Analytics [Dokumente](./derived-fields.md#limitations) Maximale Funktionen und Operatoren pro abgeleitetem Feld, einschließlich Einschränkungen pro Funktionstyp.Muster**
 
 * Ein abgeleitetes Feld verwendet viele [Lookup](./derived-fields.md#lookup), [Math](./derived-fields.md#math)-Vorgänge, [Split](./derived-fields.md#split) oder andere Funktionen.
 * Die Anzahl der Operatoren liegt nahe an den [dokumentierten &#x200B;](./derived-fields.md#limitations)) (z. B.: mehr als 70 % - 80 % der zulässigen Zählungen).
 
-### Risikodiagnose: Leistung, hohe Wartung
+**Risikodiagnose: Leistung, hohe Wartung**
 
 * Skalierbarkeitsrisiko: Zukünftige Ergänzungen können fehlschlagen oder sich unerwartet verhalten, wenn das Feld seine Funktionsgrenze erreicht.
 
-### Empfehlungen
+**Recommendations**
 
 * Proaktiv kennzeichnen, wenn die Nutzung einen Schwellenwert überschreitet (z. B. > 70 % einer Funktion oder eines Benutzerlimits).
-* Teilen Sie die Logik in mehrere abgeleitete Felder auf, die miteinander verkettet sind (z. B. ein abgeleitetes Feld A, das einen Lookup-Schlüssel normalisiert, und ein abgeleitetes Feld Band normalize_key und dann Lookup_label).
+* Teilen Sie die Logik in mehrere abgeleitete Felder auf, die miteinander verkettet sind (z. B. ein abgeleitetes Feld A, das einen Lookup-Schlüssel normalisiert, und ein abgeleitetes Feld B, das den normalisierten Lookup-Schlüssel zum Lookup-Label verwendet).
 * Verwenden Sie die externe Datenvorbereitung für einen Lookup-Datensatz, in dem besonders große Klassifizierungen erforderlich sind.
 
 ## Datenansichtsspezifische Optimierungsregeln
@@ -347,18 +360,18 @@ In diesem Abschnitt werden datenansichtsspezifische Optimierungsregeln für abge
 
 Überprüfen Sie auch die Konfiguration der Datenansicht für jede abgeleitete Komponente.
 
-### Muster
+**Muster**
 
 * Eine abgeleitete Dimension verfügt über eine Standardattribution (z. B. „Letztkontakt mit Sitzungsablauf„), aber der abgeleitete Feldname bedeutet eine andere Semantik (z. B.: `First Campaign of Visit`, `Original Source`).
 * Eine abgeleitete Dimension verfügt über Standardeinstellungen [Persistenz](/help/data-views/component-settings/persistence.md) (z. B.: **[!UICONTROL Zuletzt verwendet]** Zuordnung mit **[!UICONTROL Sitzung]** Gültigkeit), aber der Name der abgeleiteten Dimension impliziert eine andere Semantik (z. B. `First Campaign of Visit` oder `Original Source`).
 
 
-### Risikodiagnose: Datenqualität
+**Risikodiagnose: Datenqualität**
 
 * Semantische Diskrepanz: Die Kennzeichnung der Dimension deutet auf ein anderes Zuordnungs- oder Ablaufverhalten hin (z. B. ursprüngliche Zuordnung oder Gültigkeit auf Personenebene) als das, was tatsächlich konfiguriert ist.
 * Diese Diskrepanz erhöht das Risiko, dass Analysten Berichte falsch interpretieren oder Komponenten vergleichen, die nach Namen ähnlich aussehen, aber verschiedene Zuordnungsmodelle verwenden.
 
-### Empfehlungen
+**Recommendations**
 
 * Passen Sie das [Zuordnungsmodell und die Gültigkeit](/help/data-views/component-settings/persistence.md) auf dieser Dimension an, um Name und Verhalten auszurichten. Beispielsweise sollte eine abgeleitete Felddimension mit dem Namen `Original Source` die Attribution Erstkontakt verwenden, wobei der Ablauf auf Person festgelegt ist.
 * Passen Sie das **[!UICONTROL Zuordnungsmodell]** und **[!UICONTROL Gültigkeit]** in den [Persistenz](/help/data-views/component-settings/persistence.md) der Dimension an, um Name und Verhalten auszurichten. `Original Source` sollten beispielsweise das **[!UICONTROL Zuordnungsmodell) auf &quot;]** **[!UICONTROL &quot;]** und **[!UICONTROL Expiration]** auf **[!UICONTROL Person]** setzen.
