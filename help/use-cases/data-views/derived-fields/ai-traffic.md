@@ -4,13 +4,13 @@ description: Erfahren Sie, wie Sie abgeleitete Felder als Grundlage für Bericht
 solution: Customer Journey Analytics
 feature: Use Cases
 role: User
-source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
+exl-id: 29857457-3fbb-441c-8761-91712b9df20f
+source-git-commit: aa29067a244c588e6d830f0a039db90e99eaf5d3
 workflow-type: tm+mt
 source-wordcount: '1277'
 ht-degree: 1%
 
 ---
-
 
 # Bericht zu LLM- und KI-generiertem Traffic
 
@@ -25,7 +25,7 @@ In diesem Anwendungsbeispiel wird untersucht, wie die Funktion „Von Customer J
 
 Um LLM- und KI-generierten Traffic zu erkennen, unterscheiden Sie zwischen:
 
-* **LLM-Crawler**: Erfassen von Daten für das Training und den Abruf der erweiterten Generierung (RAG).
+* **LLM Crawler**: Sammeln Sie Daten für das Training und den Abruf der erweiterten Generierung (RAG).
 * **AI agents**: Funktion als Schnittstellen, die Aufgaben im Namen von Menschen ausführen. KI-Agenten interagieren vorzugsweise über APIs, die Web-Analyse-Tracking-Methoden umgehen. Sie können jedoch weiterhin einen erheblichen Teil des durch KI generierten Traffics über Websites analysieren.
 
 Drei gängige Kernerkennungsmethoden zur Identifizierung und Überwachung von LLM und KI-generiertem Traffic sind:
@@ -39,7 +39,7 @@ Die folgende Tabelle zeigt, wie die Erkennungsmethoden für verschiedene LLM- un
 
 | Szenario | Benutzeragenten-Identifizierung | Referrer-Klassifizierung | Abfrageparameter-Erkennung |
 |---|---|---|---|
-| **Schulung eines Modells** | Agent (`GPTBot`, `ClaudeBot` und mehr) können identifiziert werden, wenn die Server-seitige Protokollierung implementiert ist. | Eine Klassifizierung ist nicht möglich. KI-Crawler generieren während des Trainings keine Referrer. | Eine Erkennung ist unmöglich. KI-Crawler fügen beim Training keine Parameter hinzu. |
+| **Schulung eines Modells** | Agent (`GPTBot`, `ClaudeBot` und mehr) können identifiziert werden, wenn die Server-seitige Protokollierung implementiert ist. | Eine Klassifizierung ist nicht möglich. KI-Crawler generieren während des Trainings keine Referrer. | Eine Erkennung ist unmöglich. KI-Crawler fügen während des Trainings keine Parameter hinzu. |
 | **Agent-Browsing** | Agent (`ChatGPT-User`, `claude-web`) kann identifiziert werden, wenn die Server-seitige Protokollierung Kopfzeilen erfasst. | Eine Klassifizierung ist möglich, wenn der Agent von einer KI-Schnittstelle mit Referrer-Beibehaltung navigiert. | Manchmal ist eine Erkennung möglich, wenn der KI-Service Tracking-Parameter hinzufügt. |
 | **Abrufen der erweiterten Generierung (RAG) zur Beantwortung der Abfrage** | Agent (`OAI-SearchBot`, `PerplexityBot`) kann mit Server-seitiger Protokollierung identifiziert werden. | Eine Klassifizierung ist in der Regel nicht möglich, da RAG-Vorgänge häufig Referrer-Mechanismen umgehen. | Eine Erkennung ist nur selten möglich, es sei denn, sie wird vom KI-Anbieter speziell implementiert. |
 | **Benutzer klickt durch** | Der Agent kann nicht identifiziert werden. Der KI-Agent wird als normaler Benutzeragent angezeigt. | Eine Klassifizierung ist möglich, wenn Benutzer über AI-Schnittstellen auf Links klicken ([chatgpt.com](https://chatgpt.com), [claude.ai](https://claude.ai) und mehr). | Die Erkennung ist möglich, wenn KI-Services UTM-Parameter zu ausgehenden Links hinzufügen. |
@@ -72,7 +72,7 @@ Ab August 2025 können für jede der Nachweismethoden die folgenden spezifischen
 <tr>
 <td><strong>GPTBot</strong></td>
 <td><code>Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; GPTBot/1.1; +<a href="https://openai.com/gptbot" target="_blank" rel="noopener nofollow noreferrer">https://openai.com/gptbot</a></code></td>
-<td><a href="https://platform.openai.com/docs/bots/" target="_blank" rel="noopener nofollow noreferrer">OpenAIs primärer Web-Crawler für das Trainieren von ChatGPT- und Sprachmodellen</a></td>
+<td><a href="https://platform.openai.com/docs/bots/" target="_blank" rel="noopener nofollow noreferrer">OpenAIs primäre Web-Crawler für das Trainieren von ChatGPT- und Sprachmodellen</a></td>
 </tr>
 <tr>
 <td><strong>ChatGPT-User</strong></td>
@@ -87,12 +87,12 @@ Ab August 2025 können für jede der Nachweismethoden die folgenden spezifischen
 <tr>
 <td><strong>OAI-SearchBot</strong></td>
 <td><code>Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; OAI-SearchBot/1.0; +<a href="https://openai.com/searchbot" target="_blank" rel="noopener nofollow noreferrer">https://openai.com/searchbot</a></code></td>
-<td><a href="https://platform.openai.com/docs/bots/" target="_blank" rel="noopener nofollow noreferrer">Suchorientierter Crawler von ChatGPT für die Erkennung von Inhalten</a></td>
+<td><a href="https://platform.openai.com/docs/bots/" target="_blank" rel="noopener nofollow noreferrer">ChatGPTs suchorientierte Crawler zur Erkennung von Inhalten</a></td>
 </tr>
 <tr>
 <td><strong>ClaudeBot</strong></td>
 <td><code>Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; ClaudeBot/1.0; +claudebot@anthropic.com</code></td>
-<td><a href="https://support.claude.com/en/articles/8896518-does-anthropic-crawl-data-from-the-web-and-how-can-site-owners-block-the-crawler" target="_blank" rel="noopener nofollow noreferrer">Anthropic Crawler zum Trainieren und Aktualisieren des Claude-KI-Assistenten</a></td>
+<td><a href="https://support.claude.com/en/articles/8896518-does-anthropic-crawl-data-from-the-web-and-how-can-site-owners-block-the-crawler" target="_blank" rel="noopener nofollow noreferrer">Anthropics Crawler zur Schulung und Aktualisierung des Claude AI-Assistenten</a></td>
 </tr>
 <tr>
 <td><strong>Claude-User</strong></td>
@@ -107,7 +107,7 @@ Ab August 2025 können für jede der Nachweismethoden die folgenden spezifischen
 <tr>
 <td><strong>RatlosigkeitBot</strong></td>
 <td><code>Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; PerplexityBot/1.0; +<a href="https://www.perplexity.ai/perplexitybot" target="_blank" rel="noopener nofollow noreferrer">https://perplexity.ai/perplexitybot</a>)</code></td>
-<td><a href="https://docs.perplexity.ai/guides/bots" target="_blank" rel="noopener nofollow noreferrer">Crawler von Perplexity.ai für die Indizierung von Web-Daten in Echtzeit</a></td>
+<td><a href="https://docs.perplexity.ai/guides/bots" target="_blank" rel="noopener nofollow noreferrer">Crawler von Perplexity.ai für die Echtzeit-Web-Datenindizierung</a></td>
 </tr>
 <tr>
 <td><strong>Perplexity-User</strong></td>
@@ -117,7 +117,7 @@ Ab August 2025 können für jede der Nachweismethoden die folgenden spezifischen
 <tr>
 <td><strong>Google-Extended</strong></td>
 <td><code>Mozilla/5.0 (compatible; Google-Extended/1.0; +<a href="https://support.google.com/webmasters/answer/182072" target="_blank" rel="noopener nofollow noreferrer">http://www.google.com/bot.html</a>)</code></td>
-<td><a href="https://blog.google/technology/ai/an-update-on-web-publisher-controls/" target="_blank" rel="noopener nofollow noreferrer">Googles KI-fokussierter Crawler für Gemini getrennt vom standardmäßigen Googlebot</a></td>
+<td><a href="https://blog.google/technology/ai/an-update-on-web-publisher-controls/" target="_blank" rel="noopener nofollow noreferrer">Googles KI-fokussierte Crawler für Gemini getrennt vom standardmäßigen GoogleBot</a></td>
 </tr>
 <tr>
 <td><strong>BingBot</strong></td>
@@ -132,7 +132,7 @@ Ab August 2025 können für jede der Nachweismethoden die folgenden spezifischen
 <tr>
 <td><strong>YouBot</strong></td>
 <td><code>Mozilla/5.0 (compatible; YouBot (+<a href="http://www.you.com" target="_blank" rel="noopener nofollow noreferrer">http://www.you.com</a>))</code></td>
-<td>Crawler hinter dem KI-Such- und Browser-Assistenten von You.com</td>
+<td>Crawler hinter You.com's KI-Suche- und Browserassistent</td>
 </tr>
 <tr>
 <td><strong>meta-externalAgent</strong></td>
@@ -142,7 +142,7 @@ Ab August 2025 können für jede der Nachweismethoden die folgenden spezifischen
 <tr>
 <td><strong>Amazonbot</strong></td>
 <td><code>Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/600.2.5 (KHTML, like Gecko) Version/8.0.2 Safari/600.2.5 (Amazonbot/0.1; +<a href="https://developer.amazon.com/amazonbot" target="_blank" rel="noopener nofollow noreferrer">https://developer.amazon.com/support/amazonbot</a>)</code></td>
-<td><a href="https://developer.amazon.com/amazonbot" target="_blank" rel="noopener nofollow noreferrer">Amazons Crawler für Such- und KI-Anwendungen</a></td>
+<td><a href="https://developer.amazon.com/amazonbot" target="_blank" rel="noopener nofollow noreferrer">Amazon Crawler für Such- und KI-Anwendungen</a></td>
 </tr>
 <tr>
 <td><strong>Applebot</strong></td>
@@ -152,7 +152,7 @@ Ab August 2025 können für jede der Nachweismethoden die folgenden spezifischen
 <tr>
 <td><strong>applebot-extended</strong></td>
 <td><code>Mozilla/5.0 (compatible; Applebot-Extended/1.0; +<a href="https://www.apple.com/bot.html" target="_blank" rel="noopener nofollow noreferrer">http://www.apple.com/bot.html</a>)</code></td>
-<td><a href="https://support.apple.com/en-us/119829" target="_blank" rel="noopener nofollow noreferrer">Apples KI-fokussierter Crawler für zukünftige KI-Modelle (Opt-in)</a></td>
+<td><a href="https://support.apple.com/en-us/119829" target="_blank" rel="noopener nofollow noreferrer">KI-fokussiertes Crawler von Apple für zukünftige KI-Modelle (Opt-in)</a></td>
 </tr>
 <tr>
 <td><strong>Bytespider</strong></td>

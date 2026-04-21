@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Derived Fields
 exl-id: bcd172b2-cd13-421a-92c6-e8c53fa95936
 role: Admin
-source-git-commit: 12347a865bdeb16f9b45ec5e5eddc3390894e0dc
+source-git-commit: aa29067a244c588e6d830f0a039db90e99eaf5d3
 workflow-type: tm+mt
-source-wordcount: '10283'
+source-wordcount: '10297'
 ht-degree: 99%
 
 ---
@@ -39,6 +39,11 @@ Beispielhafte Anwendungsfälle sind:
 - Definieren Sie ein abgeleitetes Marketing-Kanal-Feld, das den richtigen Marketing-Kanal auf der Grundlage einer oder mehrerer Bedingungen bestimmt (z. B. URL-Parameter, Seiten-URL, Seitenname).
 
 Standardkomponenten werden nur für Ereignisdatensätze in abgeleiteten Feldern unterstützt.
+
+>[!TIP]
+>
+>Unter [Richtlinien](/help/use-cases/data-views/derived-fields/guidelines.md) finden Sie Best Practices, Leitplanken und allgemeine Fallstricke beim Arbeiten mit abgeleiteten Feldern.
+>
 
 ## Oberfläche für abgeleitete Felder {#interface}
 

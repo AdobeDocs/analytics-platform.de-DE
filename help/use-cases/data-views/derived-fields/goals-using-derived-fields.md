@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Use Cases
 exl-id: 5cd838f7-e394-4a67-9d2e-e1d08a864ca0
 role: User
-source-git-commit: 39d3a233166e2ce2035df2ce821dd16181e5e13e
+source-git-commit: 35d365dec8bc9afdfd55405dbcfa082280515b18
 workflow-type: tm+mt
 source-wordcount: '429'
 ht-degree: 6%
@@ -16,7 +16,7 @@ ht-degree: 6%
 
 In diesem Anwendungsfall wird beschrieben, wie Sie die Leistungsfähigkeit abgeleiteter Felder nutzen können, um Ziele für eine bestimmte Dimension festzulegen und diese Ziele dann in Ihrem Workspace-Projekt zu verwenden.
 
-Wenn Sie mit abgeleiteten Feldern nicht vertraut sind, finden Sie in der [Tutorial](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/data-views/derived-fields-in-cja.html?lang=de) und [Dokumentation](../data-views/derived-fields/derived-fields.md) eine Einführung.
+Wenn Sie mit abgeleiteten Feldern nicht vertraut sind, finden Sie in der [Tutorial](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/data-views/derived-fields-in-cja.html?lang=de) und [Dokumentation](/help/data-views/derived-fields/derived-fields.md) eine Einführung.
 
 
 ## Ziele definieren

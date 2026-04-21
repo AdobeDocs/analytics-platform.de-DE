@@ -4,9 +4,9 @@ description: Listet Inhaltsaktualisierungen für Dokumentation zu Customer Journ
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 6ae1f8ccca5321b2ebab775cc12775c64377613e
+source-git-commit: 68c9d38f4fe60a9b8e661309698ba0ec38e2ea9b
 workflow-type: tm+mt
-source-wordcount: '5856'
+source-wordcount: '5874'
 ht-degree: 95%
 
 ---
@@ -20,6 +20,7 @@ Die folgenden Aktualisierungen wurden seit der ersten Erstellung der Customer Jo
 | Funktion | Beschreibung |
 |---|---|
 | **April 2026** | |
+| Richtlinien für abgeleitete Felder | Es wurde ein Artikel mit [Richtlinien](/help/use-cases/data-views/derived-fields/guidelines.md) (Best Practices, Leitplanken und allgemeine Fallstricke) für die Arbeit mit abgeleiteten Feldern hinzugefügt. |
 | Fehlende Dokumentation für zwei Datensätze hinzugefügt, die bei der Integration von Journey Optimizer einbezogen werden können | [Zwei zusätzliche, nicht profilgenerierte Datensätze](/help/integrations/ajo.md#high-throughput-add-on-datasets) werden in die Verbindung aufgenommen, wenn das Add-on Transaktionsnachrichten mit hohem Durchsatz für Ihre IMS-Organisation aktiviert ist. |
 | Anwendungsfälle für die Kohortenanalyse aktualisiert | Basierend auf dem Feedback, das zu den Anwendungsfällen der Kohortenanalyse durch Analysis Workspace-Beispiele hinzugefügt wurde. |
 | **März 2026** | |
@@ -48,7 +49,7 @@ Die folgenden Aktualisierungen wurden seit der ersten Erstellung der Customer Jo
 | Attributionskonfiguration | Zusätzliche Aktualisierungen, um die neuen Attributionskonfigurationsoptionen für Modell, Container und Lookback-Fenster widerzuspiegeln. |
 | Aufnehmen und Verwenden von Experience Platform-Zielgruppen | Der Artikel zu Anwendungsfällen im Zusammenhang mit der [Aufnahme und Verwendung von Experience Platform-Zielgruppen](/help/use-cases/data-ingestion/ingest-aep-segments.md) wurde aktualisiert. |
 | Vorbereiten der Organisation für das Upgrade auf Customer Journey Analytics | Es wurden Informationen zum [Vorbereiten einer Organisation für das Upgrade auf Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-org-readiness.md) hinzugefügt. |
-| Bericht zu LLM- und KI-generiertem Traffic | Es wurde ein [Artikel zu Anwendungsfällen](/help/use-cases/ai-traffic.md) hinzugefügt, in dem beschrieben wird, wie Sie auf Grundlage von abgeleiteten Feldern über LLM- und KI-generierten Traffic berichten. Der Artikel basiert auf dem Blog-Artikel zu [Tracking und Analyse von LLM- und KI-generiertem Traffic in Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/tracking-and-analyzing-llm-and-ai-generated-traffic-in-adobe/ba-p/771967?profile.language=de). |
+| Bericht zu LLM- und KI-generiertem Traffic | Es wurde ein [Artikel zu Anwendungsfällen](/help/use-cases/data-views/derived-fields/ai-traffic.md) hinzugefügt, in dem beschrieben wird, wie Sie auf Grundlage von abgeleiteten Feldern über LLM- und KI-generierten Traffic berichten. Der Artikel basiert auf dem Blog-Artikel zu [Tracking und Analyse von LLM- und KI-generiertem Traffic in Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/tracking-and-analyzing-llm-and-ai-generated-traffic-in-adobe/ba-p/771967?profile.language=de). |
 | **September 2025** | |
 | Daten vor 1900 | Ein [Hinweis](/help/connections/create-connection.md#datasets), wie Daten vor 1900 von Customer Journey Analytics verarbeitet werden, wurde hinzugefügt. |
 | Echtzeit-Reporting | Es wurde Dokumentation zum [Echtzeit-Reporting](/help/components/real-time/real-time.md) in Customer Journey Analytics hinzugefügt. |
@@ -178,7 +179,7 @@ Die folgenden Aktualisierungen wurden seit der ersten Erstellung der Customer Jo
 | Aktualisierungen für die Währungsumrechnung | Die Dokumentation zum [Konfigurieren der Währungsumrechnung](/help/data-views/component-settings/format.md) wurde klarer formuliert. |
 | Aktualisierungen der Dokumentation zur Anomalieerkennung | Die Dokumentation zur Anomalieerkennung war zuvor in einem Abschnitt zu Virtual Analyst enthalten. Die folgenden Änderungen wurden vorgenommen: <ul><li>Der Begriff „Virtual Analyst“ wurde aus der Dokumentation entfernt.</li><li>Der Abschnitt zur [Anomalieerkennung](/help/analysis-workspace/c-anomaly-detection/anomaly-detection.md) wurde direkt unter den Abschnitt zu Analysis Workspace verschoben.</li></ul> |
 | **Oktober 2023** | |
-| Verwenden abgeleiteter Felder zum Festlegen von Zielen | Es wurde ein Artikel [Anwendungsfälle](../use-cases/goals-using-derived-fields.md) hinzugefügt, in dem erläutert wird, wie abgeleitete Felder zum Festlegen von Zielen und zum Reporting für diese verwendet werden. |
+| Verwenden abgeleiteter Felder zum Festlegen von Zielen | Es wurde ein Artikel [Anwendungsfälle](/help/use-cases/data-views/derived-fields/goals-using-derived-fields.md) hinzugefügt, in dem erläutert wird, wie abgeleitete Felder zum Festlegen von Zielen und zum Reporting für diese verwendet werden. |
 | Exportieren von vollständigen Tabellen in die Cloud | Es wurde eine Dokumentation zum Exportieren vollständiger Tabellen mit Millionen von Workspace-Zeilen in Cloud-Ziele hinzugefügt. <p>Der Export vollständiger Tabellen bietet einen einmaligen oder geplanten Versand von Datentabellen, die in Workspace entwickelt wurden. Dabei werden bis zu fünf Aufschlüsselungen, fünf Metriken, Segmente und berechnete Metriken in einer verketteten Tabelle unterstützt. Es ist die Weiterentwicklung von Data Warehouse-Berichten in Adobe Analytics, mit vielen neuen, häufig angeforderten Funktionen, die heute nicht in Data Warehouse verfügbar sind.</p><p>Weitere Informationen finden Sie unter [Exportieren von Customer Journey Analytics-Berichten in die Cloud](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/export/export-cloud.html?lang=de). |
 | Reporting Activity Manager | Es wurde eine Dokumentation zum Reporting Activity Manager hinzugefügt. <p>Der Reporting Activity Manager zeigt die Berichtskapazität für jede Verbindung in Ihrer Organisation an. Er bietet Admins detaillierte Einblicke in die Berichtsnutzung und hilft ihnen, Kapazitätsprobleme bei Spitzen während der Berichterstellung mühelos zu diagnostizieren und zu beheben.</p> <p>Die folgenden neuen Artikel wurden hinzugefügt:<ul><li>[Überblick über den Reporting Activity Manager](/help/reporting-activity-manager/reporting-activity-overview.md)</li><li>[Anzeigen der Berichtsaktivität im Reporting Activity Manager](/help/reporting-activity-manager/reporting-activity.md)</li><li>[Abbrechen von Anfragen im Reporting Activity Manager](/help/reporting-activity-manager/reporting-activity-cancel-requests.md)</ul> |
 | Neue Spalten auf Verwaltungsseiten | Es wurden neue Spalten dokumentiert, die jetzt im [Manager für berechnete Metriken](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/cja-calcmetrics/cm-workflow/cm-manager.html?lang=de) und im [Segment-Manager](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/cja-filters/manage-filters.html?lang=de) verfügbar sind. |
