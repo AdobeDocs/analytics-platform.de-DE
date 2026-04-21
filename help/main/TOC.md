@@ -2,7 +2,7 @@
 user-guide-title: Handbuch zu Customer Journey Analytics
 user-guide-description: Hier erhalten Sie Informationen zu Adobe Customer Journey Analytics und Erläuterungen zur Nutzung von Analysis Workspace mit Daten aus Experience Platform.
 breadcrumb-title: Handbuch zu Customer Journey Analytics
-source-git-commit: 01e2c7668bf31d9a3ed1ee55d8692a3616f5de4d
+source-git-commit: 35d365dec8bc9afdfd55405dbcfa082280515b18
 workflow-type: tm+mt
 source-wordcount: '1392'
 ht-degree: 94%
@@ -159,7 +159,6 @@ ht-degree: 94%
    + [Standardkomponentenreferenz](../data-views/component-reference.md)
    + [BI-Erweiterung](../data-views/bi-extension.md)
    + [Abgeleitete Felder](../data-views/derived-fields/derived-fields.md)
-   + {hide-from-toc}[Best Practices - ausgeblendet](/help/data-views/derived-fields/best-practices.md)
    + [Zusammenfassungsdaten](../data-views/summary-data.md)
    + [Labels und Richtlinien](../data-views/data-governance.md)
    + Freigegebene Metriken und Dimensionen{#shared-metrics-dimensions}
@@ -514,9 +513,10 @@ ht-degree: 94%
          + [Visualisierungen](/help/use-cases/data-views/bi-extension/visualizations.md)
          + [Einschränkungen](/help/use-cases/data-views/bi-extension/caveats.md)
 
-   + Abgeleitete Felder {#derived-fields}
-      + [Bericht zu LLM- und KI-generiertem Traffic](/help/use-cases/ai-traffic.md)
-      + [Bericht zu Zielen](../use-cases/goals-using-derived-fields.md)
+      + Abgeleitete Felder {#derived-fields}
+         + [Richtlinien für abgeleitete Felder](/help/use-cases/data-views/derived-fields/guidelines.md)
+         + [Bericht zu LLM- und KI-generiertem Traffic](/help/use-cases/data-views/derived-fields/ai-traffic.md)
+         + [Bericht zu Zielen](/help/use-cases/data-views/derived-fields/goals-using-derived-fields.md)
    + Produktanalyse {#product-analysis}
       + [Produktanalyse](/help/use-cases/product-analysis.md)
    + Zuordnung {#stitching}
