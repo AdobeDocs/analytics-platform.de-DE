@@ -39,7 +39,7 @@ Sie möchten explizit Ziele für Ihre Geschenkgutscheinbestellungen für vier Mo
 
 Sie möchten für jeden Ihrer Marketing-Kanäle ein monatliches Umsatzziel festlegen. Gehen Sie folgendermaßen vor:
 
-1. Erstellen Sie mithilfe der Vorlage [Funktionskanäle“ ein neues abgeleitetes Feld ](/help/data-views/derived-fields/derived-fields.md#marketing-channels) dem Namen `Monthly Marketing Channel Revenue Goal (Incremental)`.
+1. Erstellen Sie mithilfe der Vorlage [Funktionskanäle“ ein neues abgeleitetes Feld &#x200B;](/help/data-views/derived-fields/derived-fields.md#marketing-channels) dem Namen `Monthly Marketing Channel Revenue Goal (Incremental)`.
 
 1. Definieren Sie alle Regeln, um jeden Marketing-Kanal anhand einer Kombination aus URL-PARSE- und CASE-WHEN-Regeln korrekt zu identifizieren. Zum Beispiel:
 
