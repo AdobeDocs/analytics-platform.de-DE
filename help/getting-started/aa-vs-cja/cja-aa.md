@@ -5,9 +5,9 @@ exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: Basics
 role: User
-source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
+source-git-commit: 3294e1516f9478348743d0f1e9761b8b3497b1d2
 workflow-type: tm+mt
-source-wordcount: '2709'
+source-wordcount: '2708'
 ht-degree: 100%
 
 ---
@@ -88,7 +88,7 @@ In der folgenden Tabelle sind Funktionen aufgeführt, die in Customer Journey An
 
 | Funktion | Hinweise |
 | --- | --- |
-| **Advertising Cloud** | Sie können [historische Daten für AMO-IDs und EF-IDs zur Verwendung in Customer Journey Analytics](https://experienceleague.adobe.com/de/docs/advertising/integrations/analytics/planning/rvars-to-evars) erfassen. |
+| **Werbung** | Sie können [historische Daten für AMO-IDs und EF-IDs zur Verwendung in Customer Journey Analytics](https://experienceleague.adobe.com/de/docs/advertising/integrations/analytics/planning/rvars-to-evars) erfassen. |
 | **Warnhinweise** | Die [Verwendung von Warnhinweisen in Customer Journey Analytics](/help/components/c-intelligent-alerts/alerts-feature-comparison.md) ist nahezu identisch mit der Verwendung von Warnhinweisen in Adobe Analytics. <p>Aufgrund des Zeitpunkts der Datenerfassung in Customer Journey Analytics sind stündliche Warnhinweise jedoch nicht verfügbar. In Customer Journey Analytics können tägliche, wöchentliche oder monatliche Warnhinweise konfiguriert werden.</p> |
 | **Analytics for Target (A4T)** | Die [Integration zwischen Adobe Customer Journey Analytics und Target](https://experienceleague.adobe.com/de/docs/target/using/integrate/cja/target-reporting-in-cja) bietet Ihrem Optimierungsprogramm leistungsstarke Tools für Analysen und Zeitersparnisse. |
 | **Zielgruppenveröffentlichung** | Wird unterstützt, sofern diese Funktion mit den Adobe-Produkten Customer Data Platform oder Journey Optimizer lizenziert wurde. [Zielgruppenveröffentlichung](/help/components/audiences/audiences-overview.md) sendet Zielgruppen an das Echtzeit-Kundenprofil in Experience Platform. |
