@@ -4,10 +4,10 @@ description: Ermitteln Sie, wie Sie eine bestimmte Daten-Feed-Spalte in Adobe An
 feature: Components
 hide: true
 exl-id: 81d6e79e-8324-4726-9a48-10177b0a91b1
-source-git-commit: efa2cada4b26d71cce22c0d0e8662b6dd04f38f4
+source-git-commit: d79c6d883f436d97925e007f453879e20b4fcc04
 workflow-type: tm+mt
-source-wordcount: '3768'
-ht-degree: 47%
+source-wordcount: '3912'
+ht-degree: 48%
 
 ---
 
@@ -19,7 +19,7 @@ Diese Referenz hilft Dateningenieuren, Adobe Analytics-Daten-Feed-Spalten zu bew
 
 >[!NOTE]
 >
->Diese Referenz enthält nur Spalten, die von Adobe auf der Grundlage der [Analytics-Daten-Feed-Spaltenreferenz) als aktuell &#x200B;](https://experienceleague.adobe.com/de/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference) werden. Wenn Sie eine Analytics-Daten-Feed-Spalte haben, die nicht in dieser Tabelle aufgeführt ist und die Sie aktiv verwenden, finden Sie im Lösungs-Design-Dokument Ihres Unternehmens die beste Entsprechung in Customer Journey Analytics.
+>Diese Referenz enthält nur Spalten, die von Adobe auf der Grundlage der [Analytics-Daten-Feed-Spaltenreferenz) als aktuell ](https://experienceleague.adobe.com/en/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference) werden. Wenn Sie eine Analytics-Daten-Feed-Spalte haben, die nicht in dieser Tabelle aufgeführt ist und die Sie aktiv verwenden, finden Sie im Lösungs-Design-Dokument Ihres Unternehmens die beste Entsprechung in Customer Journey Analytics.
 
 +++**`accept_language`**
 
@@ -76,7 +76,7 @@ Die AMO-EF-ID-Dimension, die in Adobe Advertising-Integrationen verwendet wird.
 
 +++**`browser`**
 
-Eine numerische ID, die den Browser darstellt.
+Numerische ID, die den Browser darstellt.
 
 {{cja-df-lookup}}
 
@@ -140,7 +140,7 @@ Client-Hinweise, die über die JavaScript-API für Client-Hinweise von Benutzera
 
 In Adobe Analytics wurden Client-Hinweise als verkettete Zeichenfolge in diese Spalte aufgenommen. Es gilt als modernerer Ansatz als die `user_agent`.
 
-Sie können diese Daten mithilfe der [`highEntropyUserAgentHints`](https://experienceleague.adobe.com/de/docs/experience-platform/collection/js/commands/configure/context) Kontextzeichenfolge bei der Konfiguration der Web-SDK erfassen. Anstelle einer langen verketteten Zeichenfolge werden mehrere XDM-Felder ausgefüllt:
+Sie können diese Daten mithilfe der [`highEntropyUserAgentHints`](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/commands/configure/context) Kontextzeichenfolge bei der Konfiguration der Web-SDK erfassen. Anstelle einer langen verketteten Zeichenfolge werden mehrere XDM-Felder ausgefüllt:
 
 * **Betriebssystemversion**: `xdm.environment.browserDetails.userAgentClientHints.platformVersion`
 * **Architektur**: `xdm.environment.browserDetails.userAgentClientHints.architecture`
@@ -150,7 +150,7 @@ Sie können diese Daten mithilfe der [`highEntropyUserAgentHints`](https://exper
 * **Browser-Name**: `xdm.environment.browserDetails.userAgentClientHints.brand`
 * **Browser-Version**: `xdm.environment.browserDetails.userAgentClientHints.version`
 
-Weitere Informationen finden [&#x200B; unter &#x200B;](https://experienceleague.adobe.com/de/docs/experience-platform/collection/use-cases/client-hints)-Client-Hinweise für Benutzeragenten .
+Weitere Informationen finden [ unter ](https://experienceleague.adobe.com/en/docs/experience-platform/collection/use-cases/client-hints)-Client-Hinweise für Benutzeragenten .
 
 {{cja-df-ua}}
 
@@ -212,7 +212,7 @@ API- oder Client SDK-Version, die für das Kompilieren und Senden der Bildanford
 
 +++**`color`**
 
-Farbtiefe-ID basierend auf dem Wert der `c_color`.
+Farbtiefen-ID, basierend auf dem Wert der Spalte `c_color`.
 
 {{cja-df-lookup}}
 
@@ -228,7 +228,7 @@ Numerische ID, die die Dimension Verbindungstyp darstellt.
 
 +++**`cookies`**
 
-Die Dimension Cookie-Unterstützung .<br>Y: aktiviert<br>N: deaktiviert<br>U: unbekannt
+Die Cookie-Unterstützungsdimension <br>.Y: Aktiviert<br>N: Deaktiviert<br>U: Unbekannt
 
 {{cja-df-post}}
 
@@ -272,7 +272,7 @@ Der Wechselkurs zum Zeitpunkt der Transaktion. Adobe arbeitet mit XE zusammen, u
 
 +++**`customer_perspective`**
 
-Bestimmt, ob der Treffer ein mobiler Hintergrundtreffer ist.
+Bestimmt, ob es sich bei dem Treffer um einen mobilen Hintergrundtreffer handelt.
 
 {{cja-df-post}}
 
@@ -296,7 +296,7 @@ Customer Journey Analytics hat kein Konzept von Zeitstempeln im Vergleich zu Rep
 
 Die benutzerdefinierte Besucher-ID, sofern sie über `visitorID` festgelegt wurde.
 
-Customer Journey Analytics unterstützt eine beliebige Anzahl von Identitäten mithilfe von [`identityMap`](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/field-groups/profile/identitymap). Wenn Ihr Unternehmen benutzerdefinierte Identitäten verwendet, ist dies wahrscheinlich innerhalb der Identitätszuordnung.
+Customer Journey Analytics unterstützt eine beliebige Anzahl von Identitäten mithilfe von [`identityMap`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/field-groups/profile/identitymap). Wenn Ihr Unternehmen benutzerdefinierte Identitäten verwendet, ist dies wahrscheinlich innerhalb der Identitätszuordnung.
 
 {{cja-df-post}}
 
@@ -362,7 +362,7 @@ Listet jedes Ereignis auf, das als Duplikat gezählt wurde.
 
 {{cja-df-na}}
 
-Customer Journey Analytics hat kein einzelnes Feld, das als Deduplizierungs-Markierung für alle Metriken dient. Stattdessen enthält jede Metrik ihre eigenen [Metrik-Deduplizierungs-Komponenteneinstellungen](https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-dataviews/component-settings/metric-deduplication). Daher gibt es in Customer Journey Analytics kein entsprechendes Feld für diese Daten-Feed-Spalte in Adobe Analytics.
+Customer Journey Analytics hat kein einzelnes Feld, das als Deduplizierungs-Markierung für alle Metriken dient. Stattdessen enthält jede Metrik ihre eigenen [Metrik-Deduplizierungs-Komponenteneinstellungen](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-settings/metric-deduplication). Daher gibt es in Customer Journey Analytics kein entsprechendes Feld für diese Daten-Feed-Spalte in Adobe Analytics.
 
 +++
 
@@ -370,7 +370,7 @@ Customer Journey Analytics hat kein einzelnes Feld, das als Deduplizierungs-Mark
 
 Markierung, die bestimmt, ob das Kaufereignis für diesen Treffer ignoriert wird, weil es ein Duplikat ist.
 
-Es gibt zwar keine direkte Übersetzung für diese Analytics-Daten-Feed-Spalte, aber die Funktion, Käufe zu deduplizieren, ist noch vorhanden. Bei Verwendung der Feldergruppe [[!UICONTROL Commerce-]](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/field-groups/event/commerce-details)Details&#39; können Sie [Metrik-Deduplizierung - Komponenteneinstellungen](https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-dataviews/component-settings/metric-deduplication) festlegen, bei die **[!UICONTROL Deduplizierungs-ID]** `xdm.commerce.purchases.id` ist.
+Es gibt zwar keine direkte Übersetzung für diese Analytics-Daten-Feed-Spalte, aber die Funktion, Käufe zu deduplizieren, ist noch vorhanden. Bei Verwendung der Feldergruppe [[!UICONTROL Commerce-]](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/field-groups/event/commerce-details)Details&#39; können Sie [Metrik-Deduplizierung - Komponenteneinstellungen](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-settings/metric-deduplication) festlegen, bei die **[!UICONTROL Deduplizierungs-ID]** `xdm.commerce.purchases.id` ist.
 
 Wenn eine direkte Übersetzung erforderlich ist, wenn Sie eine Markierung für doppelte Käufe benötigen, können Sie ein [Abgeleitetes Feld](/help/data-views/derived-fields/derived-fields.md) mithilfe der Funktion **Deduplizieren** im Regelsatz verwenden.
 
@@ -405,7 +405,7 @@ Diese Spalte wird je nach Ihrer Implementierung wahrscheinlich Dutzenden von sep
 
 {{cja-df-post}}
 
-Wenn Ihr Schema die [[!UICONTROL Commerce Details]](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/field-groups/event/commerce-details)-Feldergruppe verwendet, sind einige Metriken möglicherweise direkt den folgenden XDM-Feldern zugeordnet:
+Wenn Ihr Schema die [[!UICONTROL Commerce Details]](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/field-groups/event/commerce-details)-Feldergruppe verwendet, sind einige Metriken möglicherweise direkt den folgenden XDM-Feldern zugeordnet:
 
 * **Checkouts**: `xdm.commerce.checkouts.value`
 * **Hinzufügungen zum Warenkorb**: `xdm.commerce.productListAdds.value`
@@ -418,7 +418,7 @@ Wenn Ihr Schema die [[!UICONTROL Commerce Details]](https://experienceleague.ado
 Einige Metriken verwenden möglicherweise die Ereignis-Serialisierung, wodurch Adobe Analytics die volle Kontrolle über die Deduplizierung ermöglicht. Sie können die Komponenteneinstellung [Metrik-Deduplizierung](/help/data-views/component-settings/metric-deduplication.md) verwenden, um eine Deduplizierungsparität zu erzielen.
 
 * Wenn Ihre Metrik nach Besuch in Adobe Analytics dedupliziert wird, können Sie in den Komponenteneinstellungen dieser Metrik den Deduplizierungsbereich auf Sitzung festlegen.
-* Wenn Ihre Metrik nach Ereignis-ID in Adobe Analytics dedupliziert wird, enthält das XDM-Objekt für diese Metrik wahrscheinlich sowohl ein `value`- als auch ein `id`. Wenn Ihr Schema die Feldergruppe [[!UICONTROL Commerce-Details]](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/field-groups/event/commerce-details) verwendet, befinden sich diese Metriken wahrscheinlich in diesen XDM-Feldern, für die Sie in den Komponenteneinstellungen der **[!UICONTROL das Feld]** Deduplizierungs-ID) festlegen können:
+* Wenn Ihre Metrik nach Ereignis-ID in Adobe Analytics dedupliziert wird, enthält das XDM-Objekt für diese Metrik wahrscheinlich sowohl ein `value`- als auch ein `id`. Wenn Ihr Schema die Feldergruppe [[!UICONTROL Commerce-Details]](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/field-groups/event/commerce-details) verwendet, befinden sich diese Metriken wahrscheinlich in diesen XDM-Feldern, für die Sie in den Komponenteneinstellungen der ]**das Feld**[!UICONTROL  Deduplizierungs-ID) festlegen können:
 
    * **Checkouts**: `xdm.commerce.checkouts.id`
    * **Hinzufügungen zum Warenkorb**: `xdm.commerce.productListAdds.id`
@@ -437,8 +437,8 @@ Markierung, die bestimmt, ob der Treffer aus dem Reporting ausgeschlossen wird. 
 
 Customer Journey Analytics berücksichtigt „ausgeschlossene Treffer“ nicht standardmäßig. Sie können diese Funktion jedoch neu erstellen, wenn Sie über ein XDM-Feld verfügen, das bestimmte Treffer kennzeichnet, die ausgeschlossen werden sollen:
 
-1. Stellen Sie sicher, dass das XDM-Feld, das ausgeschlossene Treffer kennzeichnet, als Komponente enthalten ist (Dimension oder Metrik, je nachdem, wie Sie dieses Flag eingerichtet haben). Die Auswahl [Komponente in Berichten ausblenden](https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-dataviews/component-settings/overview) ist wahrscheinlich für dieses Feld von Vorteil.
-1. Wählen [&#x200B; in den Einstellungen &#x200B;](/help/data-views/session-settings.md) Datenansicht das Dropdown-Menü **[!UICONTROL Segment hinzufügen]** und wählen Sie **[!UICONTROL Segment erstellen]**.
+1. Stellen Sie sicher, dass das XDM-Feld, das ausgeschlossene Treffer kennzeichnet, als Komponente enthalten ist (Dimension oder Metrik, je nachdem, wie Sie dieses Flag eingerichtet haben). Die Auswahl [Komponente in Berichten ausblenden](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-settings/overview) ist wahrscheinlich für dieses Feld von Vorteil.
+1. Wählen [ in den Einstellungen ](/help/data-views/session-settings.md) Datenansicht das Dropdown-Menü **[!UICONTROL Segment hinzufügen]** und wählen Sie **[!UICONTROL Segment erstellen]**.
 1. Erstellen Sie ein Segment, das alle Ereignisse ausschließt, bei denen die Ausschlusstrefferkomponente vorhanden ist oder Werte enthält, die ausgeschlossen werden sollen.
 1. Wählen **[!UICONTROL sowohl]** Segment als auch in der Datenansicht „Speichern“ aus.
 
@@ -472,7 +472,7 @@ Die Dimension Ursprünglich verweisende Domain . Basierend auf `first_hit_referr
 
 +++**`first_hit_ref_type`**
 
-Eine numerische ID, die den Referrer-Typ des allerersten Referrers des Besuchers darstellt.
+Numerische ID, die den Referrer-Typ des ursprünglichen Referrers der oder des Besuchenden darstellt.
 
 {{cja-df-lookup}}
 
@@ -558,7 +558,7 @@ Die komprimierte IPv6-Adresse, falls verfügbar. Sich gegenseitig ausschließend
 
 +++**`javascript`**
 
-Eine Lookup-ID der JavaScript-Version, basierend auf `j_jscript`.
+Lookup-ID der JavaScript-Version basierend auf `j_jscript`.
 
 {{cja-df-lookup}}
 
@@ -580,7 +580,7 @@ Vom Browser unterstützte JavaScript-Version.
 
 +++**`language`**
 
-Eine numerische ID, die die Sprache des Besuchers darstellt.
+Numerische ID, die die Sprache der oder des Besuchenden darstellt.
 
 {{cja-df-lookup}}
 
@@ -646,7 +646,7 @@ Mobile Aktion. Wird automatisch erfasst, wenn in mobilen Implementierungen `trac
 
 +++**`mobileappid`**
 
-ID der Mobile App. Speichert den Namen und die Version der App im folgenden Format: `[AppName] [BundleVersion]`. 
+ID der Mobile App. Speichert den Namen und die Version der App im folgenden Format: `[AppName] [BundleVersion]`.
 
 `xdm.application.name` + `xdm.application.version`
 
@@ -923,7 +923,7 @@ Auflösung des Mobilgeräts. `[Width] x [Height]` in Pixel.
 +++
 
 +++**`mobile_id`**
-Die numerische Geräte-ID, wenn der Benutzer ein Mobilgerät verwendet.
+Die numerische Geräte-ID, wenn die Person ein Mobilgerät verwendet.
 
 {{cja-df-lookup}}
 
@@ -935,7 +935,7 @@ Markierung, die bestimmt, ob die Besucherin oder der Besucher im aktuellen Monat
 
 +++
 
-+++**`mvvar1`** – **`mvvar3`**
++++**`mvvar1`** - **`mvvar3`**
 
 Listenvariablenwerte. Enthält eine durch Trennzeichen getrennte Liste benutzerdefinierter Werte in Abhängigkeit von der Implementierung. Die Spalten `post_mvvar1` - `post_mvvar3` ersetzen das ursprüngliche Trennzeichen durch `--**--`.
 
@@ -959,7 +959,7 @@ Markierung, die bestimmt, ob es sich bei dem aktuellen Treffer um einen neuen Be
 
 +++**`os`**
 
-Numerische ID, die das Betriebssystem der oder des Besuchenden darstellt. Basierend auf der Spalte `user_agent`.
+Numerische ID, die das Betriebssystem der oder des Besuchenden darstellt. Basiert auf der Spalte `user_agent`.
 
 {{cja-df-lookup}}
 
@@ -991,7 +991,7 @@ Die Dimension Seite . Wenn die Variable `pagename` leer ist, verwendet Analytics
 
 +++**`page_event`**
 
-Der Typ des Treffers, der in der Bildanforderung gesendet wird (Standardtreffer, Downloadlink, benutzerspezifischer Link, Exitlink).
+Die Art des Treffers, die in der Bildanforderung gesendet wird (Standardtreffer, Downloadlink, benutzerspezifischer Link, Exitlink).
 
 {{cja-df-post}}
 
@@ -1025,7 +1025,7 @@ Die Dimension Seiten nicht gefunden , die normalerweise für 404 Seiten verwende
 
 +++**`page_url`**
 
-**`page_url`**: Die URL des Treffers. Verwendet einen Datentyp von Text.<br>**`post_page_url`**: Für Bildanforderungen zum Linktracking entfernt (`tl()`).
+**`page_url`**: Die URL des Treffers. Verwendet einen Datentyp von text.<br>**`post_page_url`**: für Bildanforderungen zum Linktracking (`tl()`) entfernt.
 
 {{cja-df-post}}
 
@@ -1110,7 +1110,7 @@ Die Dimension Referrer Domain . Basierend auf der Spalte `referrer`.
 +++**`ref_type`**
 
 
-Numerische ID, die den Referenztyp für den Treffer darstellt. Wird in der Dimension Referrer-Typ verwendet.<br>1: Innerhalb der Website<br>2: Andere Websites<br>3: Suchmaschinen<br>4: Festplatte<br>5: USENET<br>6: Eingegeben/Mit Lesezeichen versehen (kein Referrer)<br>7: E-Mail<br>8: Kein JavaScript<br>9: Soziale Netzwerke<br>10: Konversationelle KI-Tools
+Numerische ID, die den Referenztyp für den Treffer darstellt. Wird in der Dimension „Referrer-Typ“ verwendet.<br>1: Innerhalb der Website<br>2: Andere Websites<br>3: Suchmaschinen<br>4: Festplatte<br>5: USENET<br>6: Eingegeben/Mit Lesezeichen versehen (kein Referrer)<br>7: E-Mail<br>8: Keine JavaScript<br>9: Soziale Netzwerke<br>10: Konversative KI-Tools
 
 +++
 
@@ -1646,7 +1646,7 @@ Wurde eine Besucher-ID neu generiert, wird der Zeitstempel (in UNIX®-Zeit) der 
 
 +++**`visid_type`**
 
-Nicht zur externen Verwendung; intern von Adobe für Verarbeitungsoptimierungen verwendet. Numerische ID, die die Methode zur Identifizierung der oder des Besuchenden darstellt.<br>`0`: Benutzerspezifische Besucher-ID oder unbekannt/nicht anwendbar<br>`1`: IP- und Benutzeragenten-Fallback<br>`2`: HTTP-Kopfzeile mobiler Teilnehmer <br>`3`: Alter Cookie-Wert (`s_vi`) <br>`4`: Fallback-Cookie-Wert (`s_fid`) <br>`5`: Identity Service
+Nicht zur externen Verwendung; intern von Adobe für Verarbeitungsoptimierungen verwendet. Eine numerische ID, die die Methode zur Identifizierung des Besuchers darstellt.<br>`0`: Benutzerspezifische Besucher-ID oder unbekannt/nicht anwendbar<br>`1`: IP- und Benutzeragenten-Fallback-<br>`2`: HTTP-Kopfzeile mobiler Teilnehmer <br>`3`: Legacy-Cookie-Wert (`s_vi`) <br>`4`: Fallback-Cookie-Wert (`s_fid`) <br>`5`: Identity Service
 
 {{cja-df-post}}
 
@@ -1654,7 +1654,7 @@ Nicht zur externen Verwendung; intern von Adobe für Verarbeitungsoptimierungen 
 
 +++**`visit_keywords`**
 
-Die Suchbegriffdimension. Diese Spalte verwendet eine nicht standardmäßige Zeichenbeschränkung von varchar(244), um die von Adobe verwendete Backend-Logik zu berücksichtigen. Die nachbearbeitete Spalte ist `**post_keywords**`, nicht `**post_visit_keywords**`.
+Die Suchbegriffdimension. Diese Spalte verwendet eine nicht standardmäßige Zeichenbeschränkung von varchar(244), um der von Adobe verwendeten Backend-Logik Rechnung zu tragen. Die nachbearbeitete Spalte ist `**post_keywords**`, nicht `**post_visit_keywords**`.
 
 {{cja-df-post}}
 
@@ -1686,7 +1686,7 @@ Basierend auf der Spalte `visit_referrer`. Die allererste verweisende Domain des
 
 +++**`visit_ref_type`**
 
-Eine numerische ID, die den Referrer-Typ des ersten Referrers des Besuchs darstellt.
+Numerische ID, die den Referrer-Typ des ursprünglichen Referrers des Besuchs darstellt.
 
 {{cja-df-lookup}}
 
@@ -1694,7 +1694,7 @@ Eine numerische ID, die den Referrer-Typ des ersten Referrers des Besuchs darste
 
 +++**`visit_search_engine`**
 
-Eine numerische ID, die die erste Suchmaschine des Besuchs darstellt.
+Numerische ID, die die erste Suchmaschine des Besuchs darstellt.
 
 {{cja-df-lookup}}
 
