@@ -4,10 +4,10 @@ title: Journey-Arbeitsfläche – Überblick
 feature: Visualizations
 role: User
 exl-id: be03c3b2-8faf-47b8-b3ab-e953202bf488
-source-git-commit: 8054aab28c405f6a9dd24306a086c78069032999
+source-git-commit: 73238f03021b14567c20c686ab72d84afbaa9f81
 workflow-type: tm+mt
-source-wordcount: '1996'
-ht-degree: 100%
+source-wordcount: '2022'
+ht-degree: 96%
 
 ---
 
@@ -51,7 +51,7 @@ ht-degree: 100%
 
 >[!BEGINSHADEBOX]
 
-_In diesem Artikel wird die Visualisierung „Journey-Arbeitsflächen“ in_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics** beschrieben.<br/>Es gibt keine entsprechende Visualisierung in **Adobe Analytics**._
+_In diesem Artikel wird die Journey-Arbeitsflächen-Visualisierung in_![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**.<br/>Es gibt keine entsprechende Visualisierung in **Adobe Analytics**._
 
 >[!ENDSHADEBOX]
 
@@ -59,7 +59,7 @@ Die Visualisierung „Journey-Arbeitsflächen“ hilft Ihnen, die Journey zu ana
 
 Sie können [Analysen von Benutzer-Journeys erstellen](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md), indem Sie eine beliebige Kombination aus Ereignissen, Dimensionselementen, Filtern und Datumsbereichen verwenden, um Journey-Knoten zu erstellen. Verbinden Sie die Knoten, um den Journey-Fluss zu erstellen, und schließen Sie mehrere Pfade und Entscheidungspunkte ein. Ziehen Sie Knoten auf die Arbeitsfläche, um die Ereignisse und Bedingungen der Journey neu anzuordnen. Daten werden bei Änderungen in Echtzeit aktualisiert.
 
-[Knoten sind verbunden wie ein](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md#logic-when-connecting-nodes) „Endgültiger Pfad“, d. h. Besuchende werden gezählt, solange sie letztendlich von einem Knoten zum anderen wechseln, unabhängig von Ereignissen, die zwischen den beiden Knoten auftreten. Die Zeit, die Benutzenden für das Fortbewegen auf dem Pfad zugeteilt wird, wird durch die Container-Einstellung bestimmt.
+[Knoten sind &#x200B;](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md#logic-when-connecting-nodes) „Eventueller Pfad“ verbunden, d. h. Besucher werden gezählt, solange sie letztendlich von einem Knoten zum anderen wechseln, unabhängig von Ereignissen, die zwischen den beiden Knoten auftreten. Die Zeit, die Benutzenden für das Fortbewegen auf dem Pfad zugeteilt wird, wird durch die Container-Einstellung bestimmt.
 
 ![Journey-Arbeitsfläche](assets/journey-canvas.png)
 
@@ -148,7 +148,7 @@ Die Journey-Arbeitsfläche ist wichtig für Folgendes:
 
 * Explorative Ad-hoc-Analyse, die auf einer vordefinierten Journey basiert.
 
-* Analyse, für die eine andere primäre Metrik als „Sitzung“, „Person“ oder „Vorfälle“ erforderlich ist. 
+* Analyse, für die eine andere primäre Metrik als „Sitzung“, „Person“ oder „Vorfälle“ erforderlich ist.
 
 * Detaillierte Analyse von Journeys, die ursprünglich aus Adobe Journey Optimizer stammen.
 
@@ -206,7 +206,7 @@ Beachten Sie die folgenden Verhaltensweisen, um die Synchronisierung zwischen Jo
 
   Bei Verwendung eines Links des Typs „Für alle freigeben“ werden Änderungen, die in Journey Optimizer vorgenommen wurden, erst dann auf der Journey-Arbeitsfläche angezeigt, wenn das Projekt in Customer Journey Analytics gespeichert wurde.
 
-  Weitere Informationen zu Links des Typs „Für alle freigeben“ finden Sie unter [Projekt für alle freigeben (keine Anmeldung erforderlich)](/help/analysis-workspace/curate-share/share-projects.md#share-a-project-with-anyone-no-login-required) in [Freigeben von Projekten](/help/analysis-workspace/curate-share/share-projects.md).
+  Weitere Informationen zu Links des Typs „Für alle freigeben“ finden Sie unter [Freigeben eines Projekts für alle (keine Anmeldung erforderlich)](/help/analysis-workspace/curate-share/share-projects.md#share-a-project-with-anyone-no-login-required) in [Projekte freigeben](/help/analysis-workspace/curate-share/share-projects.md).
 
 ### Unterschiede nach dem Ändern einer Journey auf der Journey-Arbeitsfläche {#differences-after-modifying}
 

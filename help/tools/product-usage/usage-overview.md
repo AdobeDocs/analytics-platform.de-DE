@@ -2,9 +2,9 @@
 title: Produktnutzungsübersicht
 description: Zeigen Sie Erkenntnisse und Berichte dazu an, wie Ihre Organisation Customer Journey Analytics nutzt.
 exl-id: 3806ca7c-ee90-4222-9ffd-2e791c4550e5
-source-git-commit: 22f3059ffef5df76028f36ffa00da8f98956dee1
+source-git-commit: 73238f03021b14567c20c686ab72d84afbaa9f81
 workflow-type: tm+mt
-source-wordcount: '657'
+source-wordcount: '660'
 ht-degree: 91%
 
 ---
@@ -110,7 +110,7 @@ Wenn Sie die Produktnutzung aktivieren, sind die folgenden Dimensionen verfügba
    * [!UICONTROL Kohortentabelle]
    * [!UICONTROL Fallout]
    * [!UICONTROL Fluss]
-   * [!UICONTROL Journey-Arbeitsflächen-Reportlet]
+   * [!UICONTROL Journey Canvas-Reportlet]
    * [!UICONTROL Bereich]
    * [!UICONTROL Bereiche gestapelt]
    * [!UICONTROL Balken]

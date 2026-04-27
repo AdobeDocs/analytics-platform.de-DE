@@ -6,9 +6,9 @@ solution: Customer Journey Analytics
 feature: Basics
 hide: true
 exl-id: fd3b36ab-72c1-469a-b2c7-419813c82425
-source-git-commit: efa2cada4b26d71cce22c0d0e8662b6dd04f38f4
+source-git-commit: d79c6d883f436d97925e007f453879e20b4fcc04
 workflow-type: tm+mt
-source-wordcount: '721'
+source-wordcount: '734'
 ht-degree: 100%
 
 ---
@@ -33,7 +33,7 @@ Im Folgenden werden einige der wichtigsten Vorteile vorgestellt. (Eine umfassend
 
 * [Berichtszeittransformationen in Datenansichten](/help/getting-started/aa-vs-cja/vrs-dataview-sandbox-adc.md#customer-journey-analytics-data-views)
 
-  Datenansichten in Customer Journey Analytics ermöglichen eine weiter gehende Interpretation von Daten aus einer Verbindung. Sie können Daten ändern oder entfernen, ohne Ihre Implementierung zu ändern, Teilzeichenfolgen verwenden, um Dimensionen zu bearbeiten, Metriken aus beliebigen Werten erstellen, Teilereignisse segmentieren oder abgeleitete Felder nutzen. Alle diese Transformationen erfolgen zerstörungsfrei. 
+  Datenansichten in Customer Journey Analytics ermöglichen eine weiter gehende Interpretation von Daten aus einer Verbindung. Sie können Daten ändern oder entfernen, ohne Ihre Implementierung zu ändern, Teilzeichenfolgen verwenden, um Dimensionen zu bearbeiten, Metriken aus beliebigen Werten erstellen, Teilereignisse segmentieren oder abgeleitete Felder nutzen. Alle diese Transformationen erfolgen zerstörungsfrei.
 
 * [Transformationen für historische und neue Daten](/help/getting-started/aa-vs-cja/vrs-dataview-sandbox-adc.md)
 
@@ -45,7 +45,7 @@ Im Folgenden werden einige der wichtigsten Vorteile vorgestellt. (Eine umfassend
 
 * [Datenansichten statt Virtual Report Suites](/help/getting-started/aa-to-cja-user.md#changes-to-the-concept-of-virtual-report-suites)
 
-  Datenansichten übernehmen das Konzept der heutigen Virtual Report Suites und erweitern es, sodass die über die Verbindungen verfügbar gemachten Daten besser kontrolliert werden können. Durch diese Änderungen können allgemeine Einstellungen wie Zeitzonen und Sitzungs-Timeout-Intervalle konfiguriert werden und diese Konfigurationen gelten auch rückwirkend. 
+  Datenansichten übernehmen das Konzept der heutigen Virtual Report Suites und erweitern es, sodass die über die Verbindungen verfügbar gemachten Daten besser kontrolliert werden können. Durch diese Änderungen können allgemeine Einstellungen wie Zeitzonen und Sitzungs-Timeout-Intervalle konfiguriert werden und diese Konfigurationen gelten auch rückwirkend.
 
 * [Unbegrenzte Kundendimensionen und -metriken](/help/getting-started/aa-to-cja-user.md#changes-to-the-concept-of-evars-and-props)
 
