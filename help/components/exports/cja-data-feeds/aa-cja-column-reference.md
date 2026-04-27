@@ -19,7 +19,7 @@ Diese Referenz hilft Dateningenieuren, Adobe Analytics-Daten-Feed-Spalten zu bew
 
 >[!NOTE]
 >
->Diese Referenz enthält nur Spalten, die von Adobe auf der Grundlage der [Analytics-Daten-Feed-Spaltenreferenz) als aktuell ](https://experienceleague.adobe.com/en/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference) werden. Wenn Sie eine Analytics-Daten-Feed-Spalte haben, die nicht in dieser Tabelle aufgeführt ist und die Sie aktiv verwenden, finden Sie im Lösungs-Design-Dokument Ihres Unternehmens die beste Entsprechung in Customer Journey Analytics.
+>Diese Referenz enthält nur Spalten, die von Adobe auf der Grundlage der [Analytics-Daten-Feed-Spaltenreferenz) als aktuell &#x200B;](https://experienceleague.adobe.com/en/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference) werden. Wenn Sie eine Analytics-Daten-Feed-Spalte haben, die nicht in dieser Tabelle aufgeführt ist und die Sie aktiv verwenden, finden Sie im Lösungs-Design-Dokument Ihres Unternehmens die beste Entsprechung in Customer Journey Analytics.
 
 +++**`accept_language`**
 
@@ -150,7 +150,7 @@ Sie können diese Daten mithilfe der [`highEntropyUserAgentHints`](https://exper
 * **Browser-Name**: `xdm.environment.browserDetails.userAgentClientHints.brand`
 * **Browser-Version**: `xdm.environment.browserDetails.userAgentClientHints.version`
 
-Weitere Informationen finden [ unter ](https://experienceleague.adobe.com/en/docs/experience-platform/collection/use-cases/client-hints)-Client-Hinweise für Benutzeragenten .
+Weitere Informationen finden [&#x200B; unter &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/collection/use-cases/client-hints)-Client-Hinweise für Benutzeragenten .
 
 {{cja-df-ua}}
 
@@ -418,7 +418,7 @@ Wenn Ihr Schema die [[!UICONTROL Commerce Details]](https://experienceleague.ado
 Einige Metriken verwenden möglicherweise die Ereignis-Serialisierung, wodurch Adobe Analytics die volle Kontrolle über die Deduplizierung ermöglicht. Sie können die Komponenteneinstellung [Metrik-Deduplizierung](/help/data-views/component-settings/metric-deduplication.md) verwenden, um eine Deduplizierungsparität zu erzielen.
 
 * Wenn Ihre Metrik nach Besuch in Adobe Analytics dedupliziert wird, können Sie in den Komponenteneinstellungen dieser Metrik den Deduplizierungsbereich auf Sitzung festlegen.
-* Wenn Ihre Metrik nach Ereignis-ID in Adobe Analytics dedupliziert wird, enthält das XDM-Objekt für diese Metrik wahrscheinlich sowohl ein `value`- als auch ein `id`. Wenn Ihr Schema die Feldergruppe [[!UICONTROL Commerce-Details]](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/field-groups/event/commerce-details) verwendet, befinden sich diese Metriken wahrscheinlich in diesen XDM-Feldern, für die Sie in den Komponenteneinstellungen der ]**das Feld**[!UICONTROL  Deduplizierungs-ID) festlegen können:
+* Wenn Ihre Metrik nach Ereignis-ID in Adobe Analytics dedupliziert wird, enthält das XDM-Objekt für diese Metrik wahrscheinlich sowohl ein `value`- als auch ein `id`. Wenn Ihr Schema die Feldergruppe [[!UICONTROL Commerce-Details]](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/field-groups/event/commerce-details) verwendet, befinden sich diese Metriken wahrscheinlich in diesen XDM-Feldern, für die Sie in den Komponenteneinstellungen der **das Feld** Deduplizierungs-ID) festlegen können:
 
    * **Checkouts**: `xdm.commerce.checkouts.id`
    * **Hinzufügungen zum Warenkorb**: `xdm.commerce.productListAdds.id`
@@ -438,7 +438,7 @@ Markierung, die bestimmt, ob der Treffer aus dem Reporting ausgeschlossen wird. 
 Customer Journey Analytics berücksichtigt „ausgeschlossene Treffer“ nicht standardmäßig. Sie können diese Funktion jedoch neu erstellen, wenn Sie über ein XDM-Feld verfügen, das bestimmte Treffer kennzeichnet, die ausgeschlossen werden sollen:
 
 1. Stellen Sie sicher, dass das XDM-Feld, das ausgeschlossene Treffer kennzeichnet, als Komponente enthalten ist (Dimension oder Metrik, je nachdem, wie Sie dieses Flag eingerichtet haben). Die Auswahl [Komponente in Berichten ausblenden](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-settings/overview) ist wahrscheinlich für dieses Feld von Vorteil.
-1. Wählen [ in den Einstellungen ](/help/data-views/session-settings.md) Datenansicht das Dropdown-Menü **[!UICONTROL Segment hinzufügen]** und wählen Sie **[!UICONTROL Segment erstellen]**.
+1. Wählen [&#x200B; in den Einstellungen &#x200B;](/help/data-views/session-settings.md) Datenansicht das Dropdown-Menü **[!UICONTROL Segment hinzufügen]** und wählen Sie **[!UICONTROL Segment erstellen]**.
 1. Erstellen Sie ein Segment, das alle Ereignisse ausschließt, bei denen die Ausschlusstrefferkomponente vorhanden ist oder Werte enthält, die ausgeschlossen werden sollen.
 1. Wählen **[!UICONTROL sowohl]** Segment als auch in der Datenansicht „Speichern“ aus.
 
