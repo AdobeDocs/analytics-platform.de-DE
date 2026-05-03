@@ -7,8 +7,8 @@ role: Admin
 exl-id: 9a1689d9-c1b7-42fe-9682-499e49843f76
 source-git-commit: d42f0eb658f26d16bd21bb6ca47d5dd7c228e614
 workflow-type: tm+mt
-source-wordcount: '1717'
-ht-degree: 4%
+source-wordcount: '1788'
+ht-degree: 14%
 
 ---
 
@@ -26,7 +26,7 @@ Sie müssen die Voraussetzungen für die von Ihnen angegebene Stitching-Methode 
 
 Wenn Sie die Voraussetzungen erfüllen, sollten Sie einige Preflight-Prüfungen für die Daten im Ereignis-Datensatz durchführen, bevor Sie die Identitätszuordnung aktivieren:
 
-* Wenn Sie Felder vom Typ [Experience-Datenmodell (XDM) für &#x200B;](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/home) persistente ID oder Personen-ID verwenden, stellen Sie sicher, dass Identitäten im Schema für den Ereignis-Datensatz ordnungsgemäß markiert sind. [Siehe Übersicht über Identity-Namespaces](https://experienceleague.adobe.com/de/docs/experience-platform/identity/features/namespaces).
+* Wenn Sie Felder vom Typ [Experience-Datenmodell (XDM) für ](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/home) persistente ID oder Personen-ID verwenden, stellen Sie sicher, dass Identitäten im Schema für den Ereignis-Datensatz ordnungsgemäß markiert sind. [Siehe Übersicht über Identity-Namespaces](https://experienceleague.adobe.com/de/docs/experience-platform/identity/features/namespaces).
 * Identitätsabdeckung sowohl für persistente ID als auch für Personen-ID überprüfen:
 
    * **[!UICONTROL Persistent ID]**
@@ -57,7 +57,7 @@ Wenn Sie die Voraussetzungen erfüllen, sollten Sie einige Preflight-Prüfungen 
 
 
    * **[!UICONTROL Personen-ID]**
-      * Stellen Sie bei diagrammbasiertem Stitching sicher, dass das Identitätsdiagramm Fragmente enthält, die ID-Werte aus dem ausgewählten persistenten ID-Namespace und dem Personen-ID-Namespace verknüpfen. Sie können einen Test ausführen, indem Sie zum [Experience Platform Identity Graph Viewer wechseln &#x200B;](https://experienceleague.adobe.com/de/docs/experience-platform/identity/features/identity-graph-viewer){target="_blank"} das Diagramm nach einigen Beispielwerten für persistente IDs abfragen. Überprüfen Sie, ob diese persistenten ID-Werte mit Personen-ID-Werten im Diagramm verknüpft sind.
+      * Stellen Sie bei diagrammbasiertem Stitching sicher, dass das Identitätsdiagramm Fragmente enthält, die ID-Werte aus dem ausgewählten persistenten ID-Namespace und dem Personen-ID-Namespace verknüpfen. Sie können einen Test ausführen, indem Sie zum [Experience Platform Identity Graph Viewer wechseln ](https://experienceleague.adobe.com/de/docs/experience-platform/identity/features/identity-graph-viewer){target="_blank"} das Diagramm nach einigen Beispielwerten für persistente IDs abfragen. Überprüfen Sie, ob diese persistenten ID-Werte mit Personen-ID-Werten im Diagramm verknüpft sind.
       * Fragen Sie für das feldbasierte Stitching 7 Tage Daten ab, bei denen das Feld für Ihre Personen-ID nicht null ist, und teilen Sie dies durch eine Abfrage von 7 Tagen Daten für alle Ereignisse in Ihrem Datensatz. Dieser Prozentsatz sollte idealerweise über 5 % liegen.
 
         Beispiel einer Abfrage, die Sie zur Überprüfung verwenden können:
@@ -86,7 +86,7 @@ Wenn Sie die Voraussetzungen erfüllen, sollten Sie einige Preflight-Prüfungen 
 
 ## Aktivieren der Identitätszuordnung {#enable-identity-stitching}
 
-Sie können die Identitätszuordnung aktivieren[&#x200B; wenn Sie &#x200B;](/help/connections/create-connection.md#add-datasets) Ereignis-Datensatz in [&#x200B; personenbasierten Verbindung hinzufügen oder &#x200B;](/help/connections/create-connection.md#edit-a-dataset) bearbeiten. Identitätszuordnung ist für kontobasierte Verbindungen nicht verfügbar.
+Sie können die Identitätszuordnung aktivieren[ wenn Sie ](/help/connections/create-connection.md#add-datasets) Ereignis-Datensatz in ](/help/connections/create-connection.md#edit-a-dataset) personenbasierten Verbindung hinzufügen oder [ bearbeiten. Identitätszuordnung ist für kontobasierte Verbindungen nicht verfügbar.
 
 >[!CONTEXTUALHELP]
 >id="connection_changeto_identitygraph"
@@ -101,30 +101,30 @@ Sie können die Identitätszuordnung aktivieren[&#x200B; wenn Sie &#x200B;](/hel
 
 >[!CONTEXTUALHELP]
 >id="connection_stitchingmetrics"
->title="Zusammenfügen von Metriken"
+>title="Zuordnungsmetriken"
 >abstract="Zuordnungsmetriken werden anhand eines Beispielsatzes von Daten mit Ereignis-Zeitstempeln der letzten 7 Tage berechnet.<br>Dieser Beispieldatensatz unterscheidet sich in der Regel von den Beispieldaten, die in der Tabelle **[!UICONTROL Vorschau]** verwendet werden."
 
 >[!CONTEXTUALHELP]
 >id="connection_stitchingmetrics_gbs_personidcoverage"
 >title="Personen-ID-Abdeckung"
->abstract="Die Abdeckung der ausgewählten Personen-ID, die während des Zuordnungsprozesses (Live und Wiederholung) zur Identifizierung verwendet wird.<br/>Für optimale Stitching-Ergebnisse sollte im Identitätsdiagramm für jede persistente ID eine Beziehung (persistente ID, Personen-ID) vorhanden sein."
+>abstract="Die Abdeckung der ausgewählten Personen-ID, die während des Zuordnungsprozesses (live und Wiederholung) zur Identifizierung verwendet wird.<br/>Für optimale Zuordnungsergebnisse sollte für jede dauerhafte ID eine Beziehung (dauerhafte ID, Personen-ID) im Identitätsdiagramm vorhanden sein."
 
 >[!CONTEXTUALHELP]
 >id="connection_stitchingmetrics_fbs_personidcoverage"
 >title="Personen-ID-Abdeckung"
->abstract="Die Abdeckung der ausgewählten Personen-ID, die während des Zuordnungsprozesses (Live und Wiederholung) zur Identifizierung verwendet wird.<br/>Für optimale Ergebnisse bei der Zuordnung sollte die Personen-ID (Benutzerinformationen) bei mindestens einem Ereignis für jede persistente ID (Geräteinformationen) gesendet werden."
+>abstract="Die Abdeckung der ausgewählten Personen-ID, die während des Zuordnungsprozesses (live und Wiederholung) zur Identifizierung verwendet wird.<br/>Für optimale Zuordnungsergebnisse sollte die Personen-ID (Benutzerinformationen) bei mindestens einem Ereignis für jede dauerhafte ID (Geräteinformationen) gesendet werden."
 
 >[!CONTEXTUALHELP]
 >id="connection_stitchingmetrics_persistentidcoverage"
->title="Abdeckung persistenter IDs"
->abstract="Dieser Wert wird während des Zuordnungsprozesses (Live und Wiederholung) zur Identifizierung verwendet, falls ein Personen-ID-Wert nicht erkannt werden kann. <br/>Ereignisse ohne persistente ID und ohne Personen-ID werden aus den Daten gelöscht. Um optimale Ergebnisse beim Zusammenfügen zu erzielen, sollte bei allen Ereignissen eine persistente ID vorhanden sein."
+>title="Abdeckung der dauerhaften ID"
+>abstract="Dieser Wert wird während des Zuordnungsprozesses (Live und Wiederholung) zur Identifizierung verwendet, falls ein Personen-ID-Wert nicht erkannt werden kann. <br/>Ereignisse ohne persistente ID und ohne Personen-ID werden aus den Daten gelöscht. Um optimale Ergebnisse bei der Zuordnung zu erzielen, sollte für alle Ereignisse eine dauerhafte ID vorhanden sein."
 
 
 >[!CONTEXTUALHELP]
 >id="connection_stitchingmetrics_badids"
->title="Fehlerhafte IDs"
+>title="Ungültige IDs"
 >abstract="Ungültige IDs sind ID-Werte, die sich stark auf Berichtsdaten auswirken."
->additional-url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/technotes/badids" text="Fehlerhafte IDs"
+>additional-url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/technotes/badids" text="Ungültige IDs"
 
 
 ### Datensatzeinstellungen
@@ -175,7 +175,7 @@ Zusätzlich zur standardmäßigen Benutzeroberfläche **[!UICONTROL Datensatzvor
 
 ![Optionen für die Identitätszuordnung beim Aktivieren der Funktion](assets/identity-stitching-ui-preview.png)
 
-#### Zusammenfügen von Metriken
+#### Zuordnungsmetriken
 
 >[!AVAILABILITY]
 >
@@ -190,11 +190,11 @@ Zusätzlich zur standardmäßigen Benutzeroberfläche **[!UICONTROL Datensatzvor
 
   Die Personen-ID-Abdeckung wird als Prozentsatz angezeigt und mit den Empfehlungen bei einer stabilen Entwicklung oder in einer Produktionseinrichtung verglichen. Je höher dieser Abdeckungswert ist, desto bessere Stitching-Ergebnisse werden mit der ausgewählten Personen-ID erzielt.
 
-* **[!UICONTROL Persistente ID-Abdeckung]**: Dieser Wert wird während des Zuordnungsprozesses (Live und Wiederholung) zur Identifizierung verwendet, falls ein Personen-ID-Wert nicht erkannt werden kann. Ereignisse ohne persistente ID und ohne Personen-ID werden aus den Daten gelöscht. Um optimale Ergebnisse beim Zusammenfügen zu erzielen, sollte bei allen Ereignissen eine persistente ID vorhanden sein.
+* **[!UICONTROL Persistente ID-Abdeckung]**: Dieser Wert wird während des Zuordnungsprozesses (Live und Wiederholung) zur Identifizierung verwendet, falls ein Personen-ID-Wert nicht erkannt werden kann. Ereignisse ohne dauerhafte ID und ohne Personen-ID werden aus den Daten gelöscht. Um optimale Ergebnisse bei der Zuordnung zu erzielen, sollte für alle Ereignisse eine dauerhafte ID vorhanden sein.
 
   Die persistente ID-Abdeckung wird als Prozentsatz angezeigt und mit dem verglichen, was bei einer stabilen Entwicklung oder in einer Produktionseinrichtung als Minimum empfohlen wird.
 
-#### Fehlerhafte IDs
+#### Ungültige IDs
 
 >[!AVAILABILITY]
 >
@@ -230,7 +230,7 @@ Nachdem Sie eine Verbindung gespeichert haben, wird der Zuordnungsprozess für a
 
 >[!CAUTION]
 >
->Bei Datensätzen, die für das Zusammenfügen in der Verbindungsschnittstelle aktiviert sind, wird der Aufstockungsstatus sofort und fälschlicherweise als ![Status grün](/help/assets/icons/StatusGreen.svg) **[!UICONTROL _x _Aufstockungen abgeschlossen]**&#x200B;für die Anzahl der abgeschlossenen Aufstockungen gemeldet. Verwenden Sie andere Möglichkeiten, um zu überprüfen, ob Daten aus dem zusammengefügten Datensatz aufgestockt werden.
+>Bei Datensätzen, die für das Zusammenfügen in der Verbindungsschnittstelle aktiviert sind, wird der Aufstockungsstatus sofort und fälschlicherweise als ![Status grün](/help/assets/icons/StatusGreen.svg) **[!UICONTROL _x _Aufstockungen abgeschlossen]**für die Anzahl der abgeschlossenen Aufstockungen gemeldet. Verwenden Sie andere Möglichkeiten, um zu überprüfen, ob Daten aus dem zusammengefügten Datensatz aufgestockt werden.
 >
 
 
