@@ -2,10 +2,10 @@
 user-guide-title: Handbuch zu Customer Journey Analytics
 user-guide-description: Hier erhalten Sie Informationen zu Adobe Customer Journey Analytics und Erläuterungen zur Nutzung von Analysis Workspace mit Daten aus Experience Platform.
 breadcrumb-title: Handbuch zu Customer Journey Analytics
-source-git-commit: 8fe31fe0603c2b17fee930011cce915df3c76200
+source-git-commit: f59958b9d290138480fe4b5588d1b5660250be12
 workflow-type: tm+mt
-source-wordcount: '1398'
-ht-degree: 94%
+source-wordcount: '1427'
+ht-degree: 93%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 94%
 + Versionshinweise {#releases}
    + [Neueste Version](../release-notes/latest.md)
    + {hide-from-toc}[Hinweise zu Vorabversionen](../release-notes/pre-release-notes.md)
-   + [Versionen von 2026](../release-notes/2026.md)
+   + [Versionen 2026](../release-notes/2026.md)
    + [Versionen 2025](../release-notes/2025.md)
    + [Versionen 2024](../release-notes/2024.md)
    + [Versionen 2023](../release-notes/2023.md)
@@ -138,7 +138,7 @@ ht-degree: 94%
       + [Konfigurieren](/help/connections/audience-analysis/audience-analysis-configure.md)
       + [Verwalten](/help/connections/audience-analysis/audience-analysis-manage.md)
       + [Analysieren](/help/connections/audience-analysis/analyze-audiences.md)
-      + [Anwendungsszenarien](/help/connections/audience-analysis/audience-analysis-use-cases.md)
+      + [Anwendungsfälle](/help/connections/audience-analysis/audience-analysis-use-cases.md)
 + Datenansichten {#cja-dataviews}
    + [Überblick über Datenansichten](../data-views/data-views.md)
    + [Erstellen oder Bearbeiten einer Datenansicht](../data-views/create-dataview.md)
@@ -406,10 +406,11 @@ ht-degree: 94%
       + [Verwalten von Exportprotokollen](/help/components/exports/manage-export-logs.md)
       + [Fehlerbehebung bei Exporten](/help/components/exports/troubleshoot-exports.md)
       + Daten-Feeds {#cja-data-feeds}
-         + {hide-from-toc}[Daten-Feed-Übersicht](/help/components/exports/cja-data-feeds/data-feed-overview.md)
+         + {hide-from-toc}[Daten-Feed - Übersicht](/help/components/exports/cja-data-feeds/data-feed-overview.md)
          + {hide-from-toc}[Vergleichen von Adobe Analytics-Daten-Feeds](/help/components/exports/cja-data-feeds/df-comparison.md)
          + {hide-from-toc}[Vorbereiten der Spaltenzuordnung](/help/components/exports/cja-data-feeds/df-column-mapping-prep.md)
          + {hide-from-toc}[Spalten zuordnen](/help/components/exports/cja-data-feeds/aa-cja-column-reference.md)
+         + {hide-from-toc}[Erstellen eines Daten-Feeds](/help/components/exports/cja-data-feeds/create-feed.md)
    + Datenwörterbuch {#data-dictionary}
       + [Überblick](../components/data-dictionary/data-dictionary-overview.md)
       + [Komponenteninformationen im Datenwörterbuch anzeigen](../components/data-dictionary/view-data-dictionary.md)
@@ -473,7 +474,7 @@ ht-degree: 94%
       + [Beispiel für ein personenbasiertes B2B-Projekt](../use-cases/b2b/example.md)
       + B2B Edition {#b2b-edition}
          + [Überblick über Anwendungsfälle](/help/use-cases/b2b/b2b-edition/use-cases-overview.md)
-         + [Einrichtung](/help/use-cases/b2b/b2b-edition/setup.md)
+         + [Einrichten](/help/use-cases/b2b/b2b-edition/setup.md)
          + [Optimieren des Konto-Marketings](/help/use-cases/b2b/b2b-edition/optimize-account-marketing.md)
          + [Wachstum wichtiger Konten](/help/use-cases/b2b/b2b-edition/grow-key-accounts.md)
          + [Fördern von Produktwert](/help/use-cases/b2b/b2b-edition/build-product-value.md)
@@ -496,7 +497,7 @@ ht-degree: 94%
       + [Verwenden von Bindungsdimensionen und Metriken](/help/use-cases/data-views/binding-dimensions-metrics.md)
       + [Verwenden von Zusammenfassungsdaten](/help/use-cases/data-views/summary-data.md)
       + BI-Erweiterung {#bi-extension}
-         + [Anwendungsszenarien](/help/use-cases/data-views/bi-extension-usecases.md)
+         + [Anwendungsfälle](/help/use-cases/data-views/bi-extension-usecases.md)
          + [Verbinden und Auflisten von Datenansichten](/help/use-cases/data-views/bi-extension/connect-and-validate.md)
          + [Täglicher Trend](/help/use-cases/data-views/bi-extension/daily-trend.md)
          + [Stündlicher Trend](/help/use-cases/data-views/bi-extension/hourly-trend.md)
@@ -545,7 +546,7 @@ ht-degree: 94%
 
 + Technische Hinweise {#technotes}
    + [Zugriffssteuerung](../technotes/access-control.md)
-   + [Fehlerhafte IDs](/help/technotes/badids.md)
+   + [Ungültige IDs](/help/technotes/badids.md)
    + [Browser und Sprache](/help/technotes/browser-language.md)
    + [Rechenzentren](../technotes/data-centers.md)
    + [Auswirkungen des Löschens](../technotes/deletion.md)
