@@ -3,10 +3,10 @@ title: Erstellen eines Daten-Feeds
 description: Erfahren Sie, wie ein Daten-Feed erstellt wird und welche Dateiinformationen Adobe zur Verfügung gestellt werden müssen.
 hide: true
 feature: Components
-source-git-commit: 728aa97d87e9b9e125fbfbbaf0ce890bc3ab34fc
+source-git-commit: a565bc01f47255b98436a52c00a933a6f845e9ec
 workflow-type: tm+mt
-source-wordcount: '2422'
-ht-degree: 21%
+source-wordcount: '2477'
+ht-degree: 20%
 
 ---
 
@@ -48,6 +48,15 @@ Bevor Sie einen Daten-Feed erstellen, müssen Sie über grundlegende Kenntnisse 
 >id="aa_datafeed_notify"
 >title="Benachrichtigen bei Abschluss"
 >abstract="Geben Sie eine oder mehrere E-Mail-Adressen an, an die nach dem Versenden des Daten-Feeds eine Benachrichtigung gesendet werden soll. Mehrere E-Mail-Adressen müssen durch ein Komma getrennt werden."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="aa_datafeed_lookback_date_range"
+>title="Lookback-Datumsbereich"
+>abstract="Steuert, wie weit Customer Journey Analytics bei der Verarbeitung der Daten-Feed-Bereitstellung zurückblickt.<br/>Mit dieser Einstellung wird das Häufigkeitsfenster (Stunde oder Tag) nicht geändert. Der Lookback-Datumsbereich kann jedoch Auswirkungen auf die bereitgestellten Daten haben. Die Segmentqualifikation, die Sitzungsberechnung und die Dimensionspersistenz sind alle vom Lookback-Datumsbereich betroffen."
 
 <!-- markdownlint-enable MD034 -->
 
