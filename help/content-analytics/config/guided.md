@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin
 exl-id: 4aff664c-3cd9-4591-8122-6ebff10e4a76
-source-git-commit: b3988dcc0568245bc6aed7aa80cf1c636c61fc7d
+source-git-commit: da88f281e0b7657306c6c90851d615860721fe16
 workflow-type: tm+mt
-source-wordcount: '3432'
-ht-degree: 81%
+source-wordcount: '3511'
+ht-degree: 79%
 
 ---
 
@@ -36,7 +36,7 @@ Für jede Konfiguration stehen die folgenden Details zur Verfügung:
 | **[!UICONTROL Erstellt am]** | Der Zeitstempel, wann die Konfiguration erstellt wurde. |
 | **[!UICONTROL Geändert am]** | Der Zeitstempel, wann die Konfiguration zuletzt geändert wurde. |
 | **[!UICONTROL Sandbox]** | Die Sandbox in der Organisation, in der Content Analytics (voraussichtlich) konfiguriert und implementiert wird. |
-| **[!UICONTROL Status]** | Der Status der Konfiguration. Folgende Status sind möglich: <br/>![StatusGray](/help/assets/icons/StatusGray.svg) **[!UICONTROL Entwurf]**: Die Konfiguration wird für später gespeichert und nicht bereitgestellt.<br/>![StatusRed](/help/assets/icons/StatusRed.svg) **[!UICONTROL Fehlgeschlagen]**: Die Konfiguration ist fehlgeschlagen. Sie können **[!UICONTROL Bearbeiten]** auswählen, um Informationen zum Fehler zu erhalten. Adobe kümmert sich proaktiv um jede fehlgeschlagene Implementierung. Weitere Informationen erhalten Sie vom Team der Kundenunterstützung.<br/>![StatusGreen](/help/assets/icons/StatusGreen.svg) **[!UICONTROL Beendet]**: Die Konfiguration wurde abgeschlossen und erfolgreich implementiert. |
+| **[!UICONTROL Status]** | Der Status der Konfiguration. Der Status kann lauten: <br/>![StatusGray](/help/assets/icons/StatusGray.svg) **[!UICONTROL Draft]**: Die Konfiguration wird für später gespeichert und nicht bereitgestellt.<br/>![StatusRed](/help/assets/icons/StatusRed.svg) **[!UICONTROL Failed]**: Die Konfiguration ist fehlgeschlagen. Sie können **[!UICONTROL Bearbeiten]** auswählen, um Informationen zum Fehler zu erhalten. Adobe kümmert sich proaktiv um jede fehlgeschlagene Implementierung. Weitere Informationen erhalten Sie bei der Kundenunterstützung.<br/>![StatusGreen](/help/assets/icons/StatusGreen.svg) **[!UICONTROL Complete]**: Die Konfiguration wurde abgeschlossen und erfolgreich implementiert. |
 
 Sie können ![ColumnSetting](/help/assets/icons/ColumnSetting.svg) verwenden, um die Tabelle anzupassen. Legen Sie fest, welche Spalten im Dialogfeld **[!UICONTROL Tabelle anpassen]** angezeigt werden sollen, und wählen Sie **[!UICONTROL Anwenden]** aus, um die Änderungen anzuwenden.
 
@@ -193,7 +193,7 @@ Ihre Konfiguration erfordert die Auswahl einer [Datenansicht](/help/data-views/d
    Folgende Aktionen können durchgeführt werden:
 
    * Um nach einem bestimmten Datensatz zu suchen, verwenden Sie das Suchfeld ![Suche](/help/assets/icons/Search.svg).
-   * Wählen Sie zum Filtern der Liste der verfügbaren Datenansichten ![Filter anzeigen](/help/assets/icons/Filter.svg) aus. Sie können die Liste nach [!UICONTROL Verbindung], [!UICONTROL Inhaberin oder Inhaber] und [!UICONTROL Sandbox] filtern.<br/>Verwenden Sie ![Ausblenden](/help/assets/icons/Filter.svg) **[!UICONTROL Segmente ausblenden]**, um den Segmentbereich auszublenden.
+   * Wählen Sie zum Filtern der Liste der verfügbaren Datenansichten ![Filter anzeigen](/help/assets/icons/Filter.svg) aus. Sie können die Liste nach [!UICONTROL Verbindung], [!UICONTROL Besitzer] und [!UICONTROL Sandbox].<br/> filtern![](/help/assets/icons/Filter.svg) Ausblenden **[!UICONTROL Ausblenden von Segmenten]** um den Segmentbereich auszublenden.
    * Um zu definieren, welche Spalten in der Tabelle angezeigt werden sollen, wählen Sie ![Spalteneinstellungen](/help/assets/icons/ColumnSetting.svg) aus. Wählen Sie aus, welche Spalten im Dialogfeld **[!UICONTROL Tabelle anpassen]** angezeigt werden sollen, und wählen Sie **[!UICONTROL Anwenden]** aus, um die Änderungen anzuwenden.
 
 1. Wählen Sie mit ![Auswählkästchen](/help/assets/icons/SelectBox.svg) die Datenansicht aus, die verwendet werden soll.
@@ -519,3 +519,4 @@ Um Daten für Ihre Content Analytics-Konfiguration zu erfassen, müssen Sie die 
 >
 >[Manuelle Konfiguration](manual.md)
 >
+
