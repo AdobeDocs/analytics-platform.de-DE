@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: 9a1689d9-c1b7-42fe-9682-499e49843f76
-source-git-commit: d42f0eb658f26d16bd21bb6ca47d5dd7c228e614
+source-git-commit: 2816ea67c009d461fb05393741b74979dd65a212
 workflow-type: tm+mt
 source-wordcount: '1788'
 ht-degree: 14%
@@ -248,3 +248,4 @@ Das in der Verbindungsschnittstelle aktivierte Stitching kann ohne Probleme mit 
 Sie haben beispielsweise Web-basierte zugeordnete Datensätze im Data Lake aufgrund früherer oder aktueller Zuordnungsanfragen. Sie können zugeordnete Daten aus einem Callcenter-Datensatz über die Schnittstelle Verbindungen hinzufügen, um diese Daten mit den Web-basierten Daten zu kombinieren.
 
 Schließlich migriert Adobe Ihre anforderungsbasierten zugeordneten Datensätze zum neuen Zuordnungssatz im -Erlebnis.
+
