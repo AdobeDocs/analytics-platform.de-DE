@@ -1,13 +1,13 @@
 ---
 description: Erfahren Sie, wie Sie eine Freiformtabelle oder eine Datenquelle mit der entsprechenden Visualisierung synchronisieren.
 keywords: Analysis Workspace;Synchronisieren der Visualisierung mit der Datenquelle
-title: Verwalten von Datenquellen
+title: Data Sources verwalten
 feature: Visualizations
 exl-id: f9e89bef-0e78-49c7-8b7b-1fefd709c0cd
 role: User
-source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
+source-git-commit: 28ad4be7b5ff3c58f51fdb882d9b273f53bcea2a
 workflow-type: tm+mt
-source-wordcount: '436'
+source-wordcount: '437'
 ht-degree: 89%
 
 ---
@@ -28,7 +28,6 @@ ht-degree: 89%
 >id="workspace_freeformtable_showtable"
 >title="Tabelle anzeigen"
 >abstract="Wählen Sie **[!UICONTROL Tabelle anzeigen]** aus, um eine neue Datenquelle für Ihre aktuelle Visualisierung zu generieren, die von der ursprünglichen Datenquelle getrennt ist."
-
 
 Durch das Synchronisieren von Visualisierungen können Sie steuern, welche Freiformtabelle oder Datenquelle einer Visualisierung entspricht.
 
