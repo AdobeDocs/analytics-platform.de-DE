@@ -2,10 +2,10 @@
 user-guide-title: Handbuch zu Customer Journey Analytics
 user-guide-description: Hier erhalten Sie Informationen zu Adobe Customer Journey Analytics und Erläuterungen zur Nutzung von Analysis Workspace mit Daten aus Experience Platform.
 breadcrumb-title: Handbuch zu Customer Journey Analytics
-source-git-commit: f59958b9d290138480fe4b5588d1b5660250be12
+source-git-commit: 19351a7155eda77d1768b486c7e39dcf7cdba935
 workflow-type: tm+mt
-source-wordcount: '1427'
-ht-degree: 93%
+source-wordcount: '1426'
+ht-degree: 92%
 
 ---
 
@@ -124,7 +124,8 @@ ht-degree: 93%
       + [Native Data-Warehouse-Lösungen](/help/data-mirror/datawarehouse.md)
       + [Experience Platform](/help/data-mirror/aep.md)
       + [Customer Journey Analytics](/help/data-mirror/cja.md)
-   + [Datenspiegelung – Schnellstartanleitung](/help/data-mirror/relational.md)
+   + [Schnellstartanleitung](/help/data-mirror/relational.md)
+   + {hide-from-toc}[Überlegungen](/help/data-mirror/considerations.md)
 
 + Verbindungen {#cja-connections}
    + [Verbindungen – Übersicht](../connections/overview.md)
