@@ -6,7 +6,7 @@ feature: Basics
 role: Admin
 badgePremium: label="Beta"
 hide: true
-source-git-commit: 19351a7155eda77d1768b486c7e39dcf7cdba935
+source-git-commit: 93f38f57021bf66cacd700ce6fbc46338fd6a034
 workflow-type: tm+mt
 source-wordcount: '672'
 ht-degree: 1%
@@ -56,7 +56,7 @@ Daher sollten Datenschutzanfragen nicht auf den gespiegelten Datensatz beschrän
 
 Der Hygiene-Service arbeitet mit *primären Identitäten*, aber gespiegelte Tabellen in der externen Datenbank haben *Primärschlüssel* keine primären Identitäten.
 
-Der Unterschied zwischen Primäridentitäten und Primärschlüsseln hat zur Folge, dass Löschvorgänge im Rahmen der Hygiene nicht direkt für die relationalen Tabellen ausgeführt werden können. Daher müssen Sie:
+Der Unterschied zwischen Primäridentitäten und Primärschlüsseln hat zur Folge, dass Löschvorgänge im Rahmen der Hygiene nicht direkt für diese relationalen Tabellen ausgeführt werden können. Daher müssen Sie:
 
 * Löschen Sie Daten in ihren eigenen Quelltabellen innerhalb der Data Warehouse-Lösung und stellen Sie sicher, dass die Löschvorgänge über CDC (oder die Spalte für manuelle Änderungen) laufen.
 * Senden Sie Hygiene- und Datenschutzanfragen an Adobe für alle nachgelagerten XDM-basierten Datensätze mit Identitätsinformationen (z. B. Customer Journey Analytics-Ansichten, Real-Time Customer Data Platform-Datensätze, Adobe Journey Optimizer-spezifische Datensätze usw.).
