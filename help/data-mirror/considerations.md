@@ -6,9 +6,9 @@ feature: Basics
 role: Admin
 badgePremium: label="Beta"
 hide: true
-source-git-commit: 93f38f57021bf66cacd700ce6fbc46338fd6a034
+source-git-commit: 664d14beaa6bc8b01169cef9d50b2ca3a2de44d8
 workflow-type: tm+mt
-source-wordcount: '672'
+source-wordcount: '832'
 ht-degree: 1%
 
 ---
@@ -21,19 +21,20 @@ In diesem Artikel werden Faktoren beschrieben, die Sie beim Einrichten von Data 
 
 Wenn eine neue Spalte zu einer Quelltabelle in einem CDC-fähigen gespiegelten Datensatz hinzugefügt wird, kann diese Änderung Trigger-Aktualisierungen für alle vorhandenen Zeilen bewirken. Diese Aktualisierungen werden als Änderungen über die CDC verarbeitet, die:
 
-* Kann sich aus Kostensicht wie eine vollständige Tabellenumschreibung verhalten.
-* Kann das Aufnahmevolumen erheblich erhöhen, insbesondere bei zukünftigen *(*) (Zusammenführungsvorgänge könnten beispielsweise mit höheren Sätzen belastet werden).
+* Kann sich aus fortschreitender Perspektive wie eine vollständige Tabellenumschreibung verhalten.
+* Kann das Aufnahmevolumen erheblich erhöhen, was dazu führen kann, dass die Aktualisierung Ihre Aufnahmeberechtigung überschreitet.
 
 Die empfohlene Strategie für Spalten in der Quelltabelle:
 
-* Stellen Sie sicher, dass die meisten, wenn nicht alle relevanten Spalten anfänglich definiert werden.
+* Stellen Sie sicher, dass alle relevanten Spalten anfänglich definiert sind.
 * Ordnen Sie zunächst alle Spalten zu, die Sie benötigen.
+* Wenn eine neue Spalte als erforderlich identifiziert wird, entfernen Sie den aktuellen Datensatz und konfigurieren Sie den Connector erneut mit der aktualisierten Spalte. Dadurch wird sichergestellt, dass die Daten effizienter und schneller aufgestockt werden.
 
 Diese Strategie:
 
 * Vermeidet kostspielige Schemaentwicklung später (Massenaktualisierungen beim Hinzufügen von Spalten).
 * Das Änderungsvolumen ist vorhersehbarer als beim späteren Hinzufügen oder Ändern von Spalten.
-* Auf der Seite der externen Datenbank könnten zusätzliche Rechenkosten anfallen, da das Data Warehouse möglicherweise alle Spalten als Aktualisierungen interpretiert.
+* Hilft bei der Begrenzung potenzieller Berechnungskosten auf der Seite der externen Datenbank, da das Data Warehouse die neue Spalte möglicherweise als Aktualisierung für alle Zeilen interpretiert.
 
 Gehen Sie wie folgt vor, um neue Spalten in externen Data Warehouse-Tabellen zu verarbeiten:
 
@@ -48,7 +49,7 @@ Dieser Ansatz minimiert die Auswirkungen auf beiden Seiten.
 
 Datenschutzanfragen müssen auf die gleiche Weise verarbeitet werden wie heute bei nicht relationalen Schemata, da Datenschutzanfragen keine Rolle bei der Datenstruktur spielen.
 
-Daten, die in einem Datensatz aus externen Daten gespiegelt werden, die auf einem relationalen Schema basieren, werden Teil des Adobe-Ökosystems und können auf viele Arten freigegeben werden. Zum Beispiel durch Zielgruppenveröffentlichung.
+Daten, die von einem externen relationalen Schema gespiegelt werden, werden Teil des Adobe-Ökosystems und können in diesem Ökosystem gemeinsam genutzt werden, z. B. über die Veröffentlichung von Customer Journey Analytics-Zielgruppen. Durch die Übermittlung einer Datenschutzanfrage wird sichergestellt, dass Identitäten und zugehörige Daten im gesamten Adobe-Ökosystem ordnungsgemäß verarbeitet werden.
 
 Daher sollten Datenschutzanfragen nicht auf den gespiegelten Datensatz beschränkt sein, sondern auch Aktualisierungen der Quelldaten in der externen Datenbank umfassen.
 
@@ -64,7 +65,7 @@ Der Unterschied zwischen Primäridentitäten und Primärschlüsseln hat zur Folg
 Der Unterschied zwischen primärer Identität und primärem Schlüssel führt zu einem Modell der gemeinsamen Verantwortung:
 
 * Adobe verarbeitet die Hygiene, wenn Identitäten vorhanden sind.
-* Als Kunde sind Sie dafür verantwortlich, Ihre eigenen Hygieneprozesse in der Quelldatenbank an die Hygieneanfragen anzupassen, die an Adobe gesendet werden.
+* Als Kunde sind Sie dafür verantwortlich, Ihre eigenen Hygieneprozesse in der Quelldatenbank mit den an Adobe gesendeten Hygieneanfragen abzustimmen.
 
 ## Governance-Unterschiede
 
@@ -76,3 +77,18 @@ Der Unterschied bei der Governance hat folgende Auswirkungen:
 
 * Mehr manuelle Governance und Konfiguration arbeiten für Sie als Kunde.
 * Möglicherweise benötigen Sie eine explizite Anleitung, sodass Sie nicht davon ausgehen, dass eine einmalige Kennzeichnung über Feldergruppen für eine ordnungsgemäße Governance ausreicht.
+
+## Zuordnung
+
+Relationale Schemata haben hinsichtlich des Zusammenfügens die folgenden Einschränkungen:
+
+* Diagrammbasiertes Stitching wird teilweise unterstützt. Relationale Schemata können nicht für das Profil bzw. den Beitrag zum Diagramm aktiviert werden.
+* Feldbasiertes Stitching wird vollständig unterstützt.
+
+
+## Systemschlüssel und -felder
+
+Die folgenden Überlegungen gelten für Systemschlüssel und -felder:
+
+* Primärschlüssel, Versionsdeskriptor und Zeitstempeldeskriptor müssen Felder auf Stammebene im relationalen XDM-Schema sein. Verwenden Sie [Feldzuordnung](https://experienceleague.adobe.com/de/docs/experience-platform/sources/ui-tutorials/dataflow/databases#map-data-fields-to-an-xdm-schema) während der Aufnahme, um diese Anforderung zu unterstützen.
+* Sie können die entsprechenden Quellfelder während der [Zuordnungsphase](https://experienceleague.adobe.com/de/docs/experience-platform/sources/ui-tutorials/dataflow/databases#map-data-fields-to-an-xdm-schema) auslassen.
