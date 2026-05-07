@@ -6,7 +6,7 @@ feature: Basics
 role: Admin
 badgePremium: label="Beta"
 hide: true
-source-git-commit: 664d14beaa6bc8b01169cef9d50b2ca3a2de44d8
+source-git-commit: 80083aad28e6efd0d9498264cb540d9f2898f2bc
 workflow-type: tm+mt
 source-wordcount: '832'
 ht-degree: 1%
@@ -28,7 +28,21 @@ Die empfohlene Strategie für Spalten in der Quelltabelle:
 
 * Stellen Sie sicher, dass alle relevanten Spalten anfänglich definiert sind.
 * Ordnen Sie zunächst alle Spalten zu, die Sie benötigen.
-* Wenn eine neue Spalte als erforderlich identifiziert wird, entfernen Sie den aktuellen Datensatz und konfigurieren Sie den Connector erneut mit der aktualisierten Spalte. Dadurch wird sichergestellt, dass die Daten effizienter und schneller aufgestockt werden.
+
+Wenn Sie eine neue Spalte hinzufügen möchten, gibt es zwei Optionen, je nachdem, ob eine rückwirkende Aufstockung erforderlich ist:
+
+* Rückwirkende Aufstockung:
+
+   * Entfernt den aktuellen Datensatz.
+   * Konfigurieren Sie den Connector erneut mit der aktualisierten Spalte.
+
+  Dadurch wird sichergestellt, dass die Daten effizienter und schneller aufgestockt werden.
+
+* Keine rückwirkende Aufstockung:
+
+   * Fügen Sie die Spalte in der Quelltabelle hinzu.
+   * Fügen Sie die Spalte im Zieldatensatzschema hinzu.
+   * Aktualisieren Sie die Zuordnung, um das neue Feld (Spalte) aus der Quelltabelle in den Zieldatensatz einzuschließen.
 
 Diese Strategie:
 
@@ -36,14 +50,6 @@ Diese Strategie:
 * Das Änderungsvolumen ist vorhersehbarer als beim späteren Hinzufügen oder Ändern von Spalten.
 * Hilft bei der Begrenzung potenzieller Berechnungskosten auf der Seite der externen Datenbank, da das Data Warehouse die neue Spalte möglicherweise als Aktualisierung für alle Zeilen interpretiert.
 
-Gehen Sie wie folgt vor, um neue Spalten in externen Data Warehouse-Tabellen zu verarbeiten:
-
-1. Erstellen Sie ein neues Schema mit der hinzugefügten Spalte.
-1. Konfigurieren Sie einen neuen Quell-Connector , der die Daten einbringt.
-1. Laden Sie die Aufstockung ordnungsgemäß.
-1. CDC-Änderungen künftig verwenden.
-
-Dieser Ansatz minimiert die Auswirkungen auf beiden Seiten.
 
 ## Privacy Service
 
