@@ -4,17 +4,18 @@ description: Lernen Sie Anwendungsfälle für die Zielgruppenanalyse kennen.
 solution: Customer Journey Analytics
 feature: Audiences
 role: Admin
-exl-id: 4f465e71-f1b5-4f38-a1db-645550856849
-source-git-commit: ac86664e0136563d904021c72347fb544cda4a6d
+hide: true
+exl-id: f465e71-f1b5-4f38-a1db-645550856849
+source-git-commit: d8d82830188a24bc01bac35c22a27c7f12f9e615
 workflow-type: tm+mt
-source-wordcount: '1486'
+source-wordcount: '1517'
 ht-degree: 1%
 
 ---
 
 # Anwendungsfälle für die Zielgruppenanalyse {#analyze-audiences-use-cases}
 
-Die Zielgruppenanalyse ermöglicht das Reporting von Daten zur Zielgruppenzugehörigkeit zu Experience Platform in Customer Journey Analytics. Dies wird durch Konfigurationen erreicht, die über den Konfigurationsassistenten für Zielgruppenanalysen verwaltet werden. Dieser hilft Ihnen dabei, zu bestimmen, welchen Profildatensatz Sie aufnehmen, sowie andere Parameter und Konfigurationsdetails. (Weitere Übersichtsinformationen finden Sie unter [Übersicht über die Zielgruppenanalyse](/help/connections/audience-analysis/audience-analysis-overview.md).)
+Die Zielgruppenanalyse ermöglicht das Reporting von Daten zur Zielgruppenzugehörigkeit zu Experience Platform in Customer Journey Analytics. Dies wird durch Konfigurationen erreicht, die über den Konfigurationsassistenten für Zielgruppenanalysen verwaltet werden. Dieser hilft Ihnen dabei, zu bestimmen, welchen Profildatensatz Sie aufnehmen, sowie andere Parameter und Konfigurationsdetails. (Weitere Übersichtsinformationen finden Sie unter [Übersicht über die Zielgruppenanalyse](/help/connections/audience-analysis/audience-analysis-overview.md). )
 
 Dieses Dokument enthält Beispielanwendungsfälle, die den Wert von Audience Analysis verdeutlichen. Bevor Sie sich die Anwendungsfälle ansehen, machen Sie sich zunächst mit den folgenden Überlegungen zum Reporting vertraut. Es ist wichtig, diese Überlegungen beim Durchgehen Ihrer Anwendungsfälle zu beachten, da sie sich auf die endgültige Ausgabe Ihrer Berichte auswirken können.
 

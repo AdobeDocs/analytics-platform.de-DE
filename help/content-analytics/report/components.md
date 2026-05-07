@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: User
 exl-id: 79bf235a-6f6e-4b04-bcd8-1ff884536648
-source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
+source-git-commit: 21bf687f3cff101ee1b3e4be3d870de270f82e89
 workflow-type: tm+mt
-source-wordcount: '910'
-ht-degree: 100%
+source-wordcount: '1020'
+ht-degree: 88%
 
 ---
 
@@ -21,7 +21,7 @@ Content Analytics fügt die folgenden Komponentenkategorien (Dimensionen, [berec
 * [Erlebnisereignisse](#experience-events)
 * [Asset-Metadaten](#asset-metadata)
 * [Asset-Attribute](#asset-attributes)
-* [Assets-Ereignisse](#asset-events)
+* [Asset-Ereignisse](#asset-events)
 * [Berechnete Metriken](#calculated-metrics)
 
 In den folgenden Tabellen gibt ![KI generiert](/help/assets/icons/AI.svg) ein von KI/ML generiertes Attribut-/Wert-Paar an.
@@ -30,8 +30,12 @@ In den folgenden Tabellen gibt ![KI generiert](/help/assets/icons/AI.svg) ein vo
 
 | Titel | Beschreibung | Typ |
 |---|---|---|
-| Erlebnis – Kanal | Kanal für das Erlebnis. | Dimension |
-| Erlebnis-ID | Eindeutige ID für das Erlebnis. | Dimension |
+| ID SOURCE | Für Content Analytics lautet der Wert `ContentAnalytics`. | Dimension |
+| Kanal | Kanal für das Erlebnis. Wert ist entweder `Web` oder `Mobile`. | Dimension |
+| Content Experience ID | Eindeutige ID für das Erlebnis. <br>Für **Web**: URL der Webseite. <br/>Für **granulares Web**: Ein Client-seitiger Hash-Wert, der auf der Inhalts-Payload (Texte, Bilder, CTAS) mit dem Präfix `web-` basiert. <br/>Für **mobile**: Ein Client-seitiger Hash-Wert, der auf der Inhalts-Payload (Texte, Bilder, CTAs) mit dem Präfix `mobile-` basiert. | Dimension |
+| Content Experience Source | Für **web**: die URL der Web-Seite.<br/>Für **mobil**: Der Name des Bildschirms, der über die Experience Platform Mobile SDK übergeben wird. | Dimension |
+| Erlebniskanal (veraltet) | Kanal für das Erlebnis. Wert ist entweder `Web` oder `Mobile`. | Dimension |
+| Erlebnis-Extras | Alle anderen zusätzlichen Daten, die Sie verfolgen möchten. Wie externe ID oder Platzierung. | Dimension |
 | Erlebnis – URL der Miniaturansicht | URL für die Miniatur des Erlebnisses. | Dimension |
 | Erlebnis – Horizontale Prozentsatz-Tiefe | Quantifizierbarer Wert der horizontalen Prozentsatz-Tiefe des Erlebnisses. | Dimension<br/>Abgeleitetes Feld |
 | Erlebnis – Vertikale Prozentsatz-Tiefe | Quantifizierbarer Wert der vertikalen Prozentsatz-Tiefe des Erlebnisses. | Dimension<br/>Abgeleitetes Feld |
@@ -77,12 +81,14 @@ In den folgenden Tabellen gibt ![KI generiert](/help/assets/icons/AI.svg) ein vo
 | Titel | Beschreibung | Typ |
 |---|---|---|
 | Element-ID | Eindeutige Kennung des Assets. Die Asset-Binärdatei bestimmt die Eindeutigkeit. Wenn sich die Asset-Binärdatei ändert, ändert sich die ID. Die eindeutige ID kann die URL sein, es kann aber auch ein Hash erstellt werden. | Dimension |
+| Asset-Quelle | | Dimension |
 | Asset – HTML-Pfad | Verketteter HTML-Pfad für das Asset. | Dimension |
 | Asset – Link-URL | Nächster Seitenanker für das Asset. | Dimension |
 | Asset – Anzeigebreite | Anzeigebreite des Inhalts-Assets. | Dimension |
 | Asset – Anzeigehöhe | Anzeigehöhe des Inhalts-Assets. | Dimension |
 | Asset – Absolut – Links | Absolute linke Seite des Inhalts-Assets. | Dimension |
 | Asset – Absolut – Oben | Absolute Oberseite des Inhalts-Assets. | Dimension |
+| Asset-Extras | Alle anderen zusätzlichen Daten, die Sie verfolgen möchten. Wie externe ID oder Platzierung. | Dimension |
 
 {style="table-layout:fixed"}
 
@@ -140,7 +146,7 @@ In den folgenden Tabellen gibt ![KI generiert](/help/assets/icons/AI.svg) ein vo
 | Titel | Beschreibung | Typ |
 |---|---|---|
 | Asset – Clickthrough-Rate | Asset-Klicks/Asset-Ansichten | Berechnete Metrik |
-| Erlebnis – Clickthrough-Rate | Erlebnis-Klicks/Erlebnis-Ansichten | Berechnete Metrik |
+| Klickrate der Erlebnisse | Erlebnis-Klicks/Erlebnis-Ansichten | Berechnete Metrik |
 
 {style="table-layout:fixed"}
 

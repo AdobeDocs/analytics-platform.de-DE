@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin
 exl-id: 4aff664c-3cd9-4591-8122-6ebff10e4a76
-source-git-commit: da88f281e0b7657306c6c90851d615860721fe16
+source-git-commit: 21bf687f3cff101ee1b3e4be3d870de270f82e89
 workflow-type: tm+mt
-source-wordcount: '3511'
-ht-degree: 79%
+source-wordcount: '3991'
+ht-degree: 48%
 
 ---
 
@@ -19,6 +19,10 @@ Mit der geführten Konfiguration können Sie Content Analytics schnell und einfa
 >[!IMPORTANT]
 >
 >Pro Sandbox ist in Ihrer Organisation nur eine Content Analytics-Konfiguration möglich.
+
+>[!NOTE]
+>
+>Der Konfigurationsassistent unterstützt mehrere Datenansichten und Kanäle und unterscheidet sich von der früheren Version, die nur eine Datenansicht und nur den Webkanal unterstützte. Sie müssen eine Sandbox und eine Verbindung auswählen, bevor Sie eine oder mehrere Datenansichten im Abschnitt [Datenansichten](#data-views) auswählen können. Die Konfigurationen für **[!UICONTROL Erlebniserfassung]**, **[!UICONTROL Datenerfassung]** und **[!UICONTROL Kopfzeilenüberschreibungen]** sind kanalabhängig und Teil jedes Kanals, den Sie im Abschnitt [Kanäle](#channels) konfigurieren.
 
 So greifen Sie auf die Content Analytics-Konfiguration zu:
 
@@ -36,7 +40,7 @@ Für jede Konfiguration stehen die folgenden Details zur Verfügung:
 | **[!UICONTROL Erstellt am]** | Der Zeitstempel, wann die Konfiguration erstellt wurde. |
 | **[!UICONTROL Geändert am]** | Der Zeitstempel, wann die Konfiguration zuletzt geändert wurde. |
 | **[!UICONTROL Sandbox]** | Die Sandbox in der Organisation, in der Content Analytics (voraussichtlich) konfiguriert und implementiert wird. |
-| **[!UICONTROL Status]** | Der Status der Konfiguration. Der Status kann lauten: <br/>![StatusGray](/help/assets/icons/StatusGray.svg) **[!UICONTROL Draft]**: Die Konfiguration wird für später gespeichert und nicht bereitgestellt.<br/>![StatusRed](/help/assets/icons/StatusRed.svg) **[!UICONTROL Failed]**: Die Konfiguration ist fehlgeschlagen. Sie können **[!UICONTROL Bearbeiten]** auswählen, um Informationen zum Fehler zu erhalten. Adobe kümmert sich proaktiv um jede fehlgeschlagene Implementierung. Weitere Informationen erhalten Sie bei der Kundenunterstützung.<br/>![StatusGreen](/help/assets/icons/StatusGreen.svg) **[!UICONTROL Complete]**: Die Konfiguration wurde abgeschlossen und erfolgreich implementiert. |
+| **[!UICONTROL Status]** | Der Status der Konfiguration. Der Status gibt an, für wie viele der aktivierten Kanäle die Konfiguration abgeschlossen ist. Verwenden ![InfoOutline](/help/assets/icons/InfoOutline.svg), um ein Popup mit weiteren Details zu öffnen. |
 
 Sie können ![ColumnSetting](/help/assets/icons/ColumnSetting.svg) verwenden, um die Tabelle anzupassen. Legen Sie fest, welche Spalten im Dialogfeld **[!UICONTROL Tabelle anpassen]** angezeigt werden sollen, und wählen Sie **[!UICONTROL Anwenden]** aus, um die Änderungen anzuwenden.
 
@@ -52,11 +56,9 @@ So bearbeiten Sie eine vorhandene Konfiguration:
 
 ## Assistent für geführte Konfigurationen
 
-Der Assistent für geführte Konfigurationen besteht aus vier Abschnitten ([Details](#details), [Datenansicht](#data-view), [Erlebniserfassung und -definition](#experience-capture-and-definition) und [Datenerfassung](#data-collection)), in denen Sie jeweils aufgefordert werden, die zum Einrichten und Konfigurieren von Content Analytics erforderlichen Details anzugeben. Schließen Sie jeden Abschnitt ab, bevor Sie zum nächsten Abschnitt wechseln, da einige Einstellungen in einem Abschnitt möglicherweise von den Konfigurationswerten in früheren Abschnitten abhängen.
+Der Assistent für geführte Konfigurationen besteht aus vier Abschnitten ([Details](#details), [Verbindung](#connection), [Datenansicht](#data-view) und [Kanäle](#channels)), in denen Sie aufgefordert werden, die zum ordnungsgemäßen Einrichten und Konfigurieren von Content Analytics erforderlichen Details anzugeben. Schließen Sie jeden Abschnitt ab, bevor Sie zum nächsten Abschnitt wechseln, da einige Einstellungen in einem Abschnitt möglicherweise von den Konfigurationswerten in früheren Abschnitten abhängen.
 
 ### Details {#onboarding-details}
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_details_button"
@@ -80,12 +82,34 @@ Der Assistent für geführte Konfigurationen besteht aus vier Abschnitten ([Deta
 
 Jede Konfiguration erfordert einen eindeutigen Namen. Beispiel: `Example Content Analytics configuration`. Der Name ist zum Speichern oder Implementieren einer Konfiguration erforderlich.
 
+Für jede Konfiguration müssen Sie auch die Sandbox auswählen, für die Sie Content Analytics konfigurieren möchten.
+
 ![Details zur Content Analytics-Konfiguration](../assets/aca-configuration-details.png)
 
+* **[!UICONTROL Name]**: Jede Konfiguration erfordert einen eindeutigen Namen. Beispiel: `Example Content Analytics configuration`. Der Name ist zum Speichern oder Implementieren einer Konfiguration erforderlich.
 
-### Datenansicht {#onboarding-data-view}
+* **[!UICONTROL Sandbox]**: Die Konfiguration erfordert eine Sandbox. Wählen Sie eine Sandbox aus der Liste der Sandboxes aus, auf die Sie Zugriff haben und in der die Daten erfasst werden, die Sie für Content Analytics verwenden möchten.
 
-<!-- markdownlint-disable MD034 -->
+  Wenn Sie eine konfigurierte Sandbox ändern, für die Sie eine Verbindung und optional Datenansichten definiert haben, werden Sie benachrichtigt, dass die Verbindung und Datenansichten neu konfiguriert werden müssen.
+
+### Verbindung
+
+Sie müssen eine Verbindung auswählen, zu der Sie die Datenerfassung in Content Analytics hinzufügen möchten.
+
+Wenn Sie keine Verbindung für Ihre Konfiguration ausgewählt haben:
+
+1. Verwenden Sie ![Daten](/help/assets/icons/Data.svg) **[!UICONTROL Verbindung auswählen]** um das Dialogfeld **[!UICONTROL Verbindung auswählen]** zu öffnen, in dem alle in der Sandbox verfügbaren Verbindungen aufgelistet werden.
+1. Wählen **[!UICONTROL im Dialogfeld „Verbindung auswählen]** die ![SelectBox](/help/assets/icons/SelectBox.svg) eine Verbindung aus, die Sie verwenden möchten. Sie können nur eine Verbindung auswählen.
+1. Wählen **[!UICONTROL Verbindung verwenden]**.
+
+Wenn Sie bereits eine Verbindung ausgewählt haben, diese jedoch ändern möchten:
+
+1. Wählen Sie ![Bearbeiten](/help/assets/icons/Edit.svg) **[!UICONTROL Bearbeiten]** aus.
+1. Ändern **[!UICONTROL im Dialogfeld „Verbindung auswählen]** die gewünschte Verbindung.
+1. Wählen **[!UICONTROL Verbindung verwenden]**.
+
+
+### Datenansichten {#onboarding-data-view}
 
 >[!CONTEXTUALHELP]
 >id="ac_onboarding_dataview_button"
@@ -169,43 +193,134 @@ Jede Konfiguration erfordert einen eindeutigen Namen. Beispiel: `Example Content
 >abstract="Aktivieren und konfigurieren Sie einen oder mehrere Kanäle für die Konfiguration. Alle Datenansichten, die Teil der Konfiguration sind, erben die aktivierten Kanäle."
 
 
-Ihre Konfiguration erfordert die Auswahl einer [Datenansicht](/help/data-views/data-views.md).
+Ihre Konfiguration erfordert die Auswahl einer oder mehrerer [Datenansichten](/help/data-views/data-views.md).
 
-1. Auswählen einer Datenansicht
+Wenn Sie keine Datenansichten für Ihre Konfiguration ausgewählt haben:
 
-   * Um eine neue Datenansicht für eine Konfiguration auszuwählen, verwenden Sie ![Daten](/help/assets/icons/Data.svg) **[!UICONTROL Datenansicht auswählen]**.
+1. Verwenden Sie ![Daten](/help/assets/icons/Data.svg) **[!UICONTROL Datenansicht auswählen]** um das Dialogfeld **[!UICONTROL Datenansicht]** zu öffnen, das alle Datenansichten auflistet, die für die Verbindung verfügbar sind, die Sie für Content Analytics konfiguriert haben.
+1. Wählen Sie **[!UICONTROL Dialogfeld]** Datenansicht“ die Option ![SelectBox](/help/assets/icons/SelectBox.svg) eine oder mehrere Datenansichten aus, die Sie verwenden möchten.
+1. Wählen Sie **[!UICONTROL Speichern]** aus.
 
-     ![Content Analytics-Konfiguration einer Datenansicht](../assets/aca-configuration-dataview.png)
+Wenn Sie bereits eine oder mehrere Datenansichten ausgewählt haben, diese Auswahl jedoch ändern möchten:
 
-   * Um eine neue Datenansicht für eine Konfiguration zu ändern, wählen Sie ![Bearbeiten](/help/assets/icons/Edit.svg) **[!UICONTROL Bearbeiten]** aus.
+1. Wählen Sie ![Bearbeiten](/help/assets/icons/Edit.svg) **[!UICONTROL Datenansichtsauswahl bearbeiten]**.
+1. Ändern **[!UICONTROL im Dialogfeld]** Datenansicht“ die Auswahl ![SelectBox](/help/assets/icons/SelectBox.svg) der Datenansichten, die Sie verwenden möchten.
+1. Wählen Sie **[!UICONTROL Speichern]** aus.
 
-     ![Content Analytics-Konfiguration einer Datenansicht](../assets/aca-configuration-dataview-edit.png)
+Wenn Sie auf **[!UICONTROL Speichern]** klicken, sehen Sie das Dialogfeld **[!UICONTROL Ausgewählte Datenansichten]** in dem Sie über die Auswirkungen informiert werden, die die Einbeziehung von Content Analytics für die ausgewählten Datenansichten mit sich bringt. Wählen Sie **[!UICONTROL Fortfahren]**, um fortzufahren, oder **[!UICONTROL Abbrechen]**, um abzubrechen.
+
+Die folgenden Aktionen sind im Dialogfeld **[!UICONTROL Datenansicht]** verfügbar:
+
+* Um nach einem bestimmten Datensatz zu suchen, verwenden Sie das Suchfeld ![Suche](/help/assets/icons/Search.svg).
+* Wählen Sie zum Filtern der Liste der verfügbaren Datenansichten ![Filter anzeigen](/help/assets/icons/Filter.svg) aus. Sie können die Liste nach [!UICONTROL Inhaber].<br/>Verwenden Sie ![Ausblenden](/help/assets/icons/Filter.svg)**[!UICONTROL Filter ausblenden]**, um den Segmentbereich auszublenden.
+* Um zu definieren, welche Spalten in der Tabelle angezeigt werden sollen, wählen Sie ![Spalteneinstellungen](/help/assets/icons/ColumnSetting.svg) aus. Wählen Sie aus, welche Spalten im Dialogfeld **[!UICONTROL Tabelle anpassen]** angezeigt werden sollen, und wählen Sie **[!UICONTROL Anwenden]** aus, um die Änderungen anzuwenden.
+
+### Kanäle
+
+Im Abschnitt **[!UICONTROL Kanäle]** wählen Sie die Kanäle aus, die Sie für Content Analytics aktivieren möchten. Sie können zwischen **[!UICONTROL Mobil]** und **[!UICONTROL Web]** wählen.
+
+* Um einen Kanal auszuwählen, den Sie noch nicht konfiguriert haben, klicken Sie auf **[!UICONTROL Aktivieren]**.
+* Um einen Kanal auszuwählen, der bereits konfiguriert ist, für den Sie jedoch die Konfiguration ändern möchten, wählen Sie **[!UICONTROL Konfiguration bearbeiten]**.
+
+Anschließend können Sie den Kanal detaillierter konfigurieren. Diese Konfiguration unterscheidet sich, je nachdem, ob Sie eine Konfiguration für den Kanal [Mobil](#mobile) oder [Web](#web) aktivieren und konfigurieren oder bearbeiten.
+
+#### Mobile {#mobile}
+
+<!-- For updated ACA -->
+
+>[!CONTEXTUALHELP]
+>id="aca_onboarding_datacollection_mobile_experience_locations_boldheader"
+>title="Datenerfassung für mobile Erlebnisspeicherorte"
+>abstract="**Auszuschließende Erlebnisorte**"
+
+>[!CONTEXTUALHELP]
+>id="aca_onboarding_datacollection_mobile_experience_locations_header"
+>title="Datenerfassung für mobile Erlebnisspeicherorte"
+>abstract="Geben Sie an, welche Erlebnisspeicherorte **ausgeschlossen) werden sollen** wenn Daten für Content Analytics erfasst werden. Stellen Sie sicher, dass Sie persönlich identifizierbare Erlebnisorte ausschließen."
+
+>[!CONTEXTUALHELP]
+>id="aca_onboarding_datacollection_mobile_asset_locations_boldheader"
+>title="Datenerfassung für mobile Asset-Speicherorte"
+>abstract="**Auszuschließende Asset-Speicherorte**"
+
+>[!CONTEXTUALHELP]
+>id="aca_onboarding_datacollection_mobile_asset_locations_header"
+>title="Datenerfassung für mobile Asset-Speicherorte"
+>abstract="Geben Sie an, welche Asset-Speicherorte **ausgeschlossen** beim Erfassen von Daten für Content Analytics ausgeschlossen werden sollen. Stellen Sie sicher, dass Sie persönlich identifizierbare Asset-Speicherorte ausschließen."
+
+>[!CONTEXTUALHELP]
+>id="aca_onboarding_datacollection_mobile_asset_urls_boldheader"
+>title="Datenerfassung für mobile Asset-URLs"
+>abstract="**Auszuschließende Asset-URLs**"
+
+>[!CONTEXTUALHELP]
+>id="aca_onboarding_datacollection_mobile_asset_urls_header"
+>title="Datenerfassung für mobile Asset-URLs"
+>abstract="Geben Sie an, welche Asset-URLs **der Datenerfassung für** Content Analytics ausgeschlossen werden sollen. Stellen Sie sicher, dass Sie persönlich identifizierbare Asset-URLs ausschließen."
+
+Für den mobilen Kanal können Sie [Erlebniserfassung und -definition](#experience-capture-and-definition), [Datenerfassung](#data-collection) und [Überschreibungen](#header-overrides) konfigurieren.
+
+##### Erlebniserfassung und -definition {#mobile-experience-capture-and-definition}
+
+In diesem Abschnitt können Sie auswählen, ob Erlebnisse in die Mobile-Daten einbezogen werden sollen, die Sie mit Content Analytics erfassen.  Für den Mobile-Kanal haben Sie sich mit der Adobe Experience Platform SDK für Content Analytics als Erlebnis registriert.
+
+Standardmäßig ist **[!UICONTROL Erlebnisse einschließen]** deaktiviert.
+
+Erwägen Sie nur, Erlebnisse einzubeziehen, wenn Sie Ihre Mobile App so instrumentiert haben, dass Erlebnisse registriert und Erlebnisansichten und -klicks verfolgt werden.
+
+##### Datenerfassung {#mobile-data-collection}
+
+Mit den Datenerfassungseinstellungen können Sie festlegen, welche Daten (Erlebnisspeicherorte, Asset-Speicherorte, Asset-URLs) Sie für Content Analytics erfassen möchten. Stellen Sie sicher, dass Sie im Rahmen dieser Datenerfassung keine personenbezogenen Daten erfassen.
+
+Konfigurieren der Datenerfassung:
+
+* Verwenden Sie eine vorhandene Eigenschaft für mobile Tags oder erstellen Sie eine neue Eigenschaft für mobile Tags.
+
+   * So verwenden Sie eine vorhandene Mobile-Tags-Eigenschaft:
+
+      1. Wählen Sie **[!UICONTROL Vorhandene auswählen]**.
+      2. Wählen Sie aus dem Dropdown-Menü **[!UICONTROL Tags-Eigenschaft]** eine vorhandene Eigenschaft aus. Sie können mit der Eingabe beginnen, um nach den verfügbaren Optionen zu suchen und diese zu beschränken. Sie können keine Tags-Eigenschaft auswählen, die bereits von einer anderen implementierten Content Analytics-Konfiguration verwendet wird.
 
 
-   In beiden Fällen wird das Dialogfeld **[!UICONTROL Datenansicht]** angezeigt, in dem Sie eine Datenansicht für Ihre Konfiguration auswählen können.
+   * So erstellen Sie eine neue mobile Tags-Eigenschaft:
 
-   ![Content Analytics-Konfiguration einer Datenansicht – Datenansichtstabelle](../assets/aca-configuration-dataview-dialog.png)
+      1. Wählen Sie **[!UICONTROL Neu erstellen]** aus.
+      1. Geben Sie einen **[!UICONTROL Tags-Namen]** an, z. B. `ACA Test for Documentation`.
+      1. Geben Sie **[!UICONTROL Domains]** an, z. B. `example.com`.
 
-   Bei einer neuen Konfiguration werden in der Liste nur die Datenansichten angezeigt, die mit Sandboxes ohne aktive Konfiguration verknüpft sind. Außerdem sehen Sie nur Datenansichten, die mit Sandboxes verknüpft sind, auf die Sie Zugriff haben, und Verbindungen, die Sie ändern dürfen.
+* Geben Sie an, welche Erlebnisspeicherorte bei der Datenerfassung für Content Analytics ausgeschlossen werden sollen. Stellen Sie sicher, dass Sie persönlich identifizierbare Erlebnisorte ausschließen.
 
-   Wenn Sie eine vorhandene Konfiguration bearbeiten, werden in der Liste nur Datenansichten angezeigt, die in der Sandbox verfügbar sind, die bereits mit der vorhandenen Konfiguration verknüpft ist.
+  Geben Sie eine **[!UICONTROL Zeichenfolge für reguläre Ausdrücke]** für **[!UICONTROL Auszuschließende Erlebnisspeicherorte]** an. <br/>Beispiel: `^(?!.*documentation).*`, um alle Dokumentations-Erlebnisspeicherorte von Content Analytics auszuschließen.
 
-   Folgende Aktionen können durchgeführt werden:
+* Geben Sie an, welche Asset-Speicherorte bei der Datenerfassung für Content Analytics ausgeschlossen werden sollen. Stellen Sie sicher, dass Sie persönlich identifizierbare Asset-Speicherorte ausschließen.
 
-   * Um nach einem bestimmten Datensatz zu suchen, verwenden Sie das Suchfeld ![Suche](/help/assets/icons/Search.svg).
-   * Wählen Sie zum Filtern der Liste der verfügbaren Datenansichten ![Filter anzeigen](/help/assets/icons/Filter.svg) aus. Sie können die Liste nach [!UICONTROL Verbindung], [!UICONTROL Besitzer] und [!UICONTROL Sandbox].<br/> filtern![](/help/assets/icons/Filter.svg) Ausblenden **[!UICONTROL Ausblenden von Segmenten]** um den Segmentbereich auszublenden.
-   * Um zu definieren, welche Spalten in der Tabelle angezeigt werden sollen, wählen Sie ![Spalteneinstellungen](/help/assets/icons/ColumnSetting.svg) aus. Wählen Sie aus, welche Spalten im Dialogfeld **[!UICONTROL Tabelle anpassen]** angezeigt werden sollen, und wählen Sie **[!UICONTROL Anwenden]** aus, um die Änderungen anzuwenden.
+  Geben Sie eine **[!UICONTROL Zeichenfolge für reguläre Ausdrücke]** für **[!UICONTROL Auszuschließende Asset-Speicherorte]** an. <br/>Beispiel: `^(?!.*(logo\.jpg)).*$`, um alle Asset-Speicherorte mit JPEG-Logo-Bildern aus Content Analytics auszuschließen.
 
-1. Wählen Sie mit ![Auswählkästchen](/help/assets/icons/SelectBox.svg) die Datenansicht aus, die verwendet werden soll.
-1. Wählen Sie **[!UICONTROL Speichern]** aus, um die ausgewählte Datenansicht zu bestätigen. Wählen Sie zum Abbrechen **[!UICONTROL Abbrechen]** aus.
+* Geben Sie an, welche Asset-URLs bei der Datenerfassung für Content Analytics ausgeschlossen werden sollen. Stellen Sie sicher, dass Sie persönlich identifizierbare Asset-URLs ausschließen.
 
-
-In Customer Journey Analytics ist eine [Datenansicht](/help/data-views/data-views.md) an eine Customer Journey Analytics-[Verbindung](/help/connections/overview.md) gebunden. Und eine Verbindung basiert auf einer Sandbox in Ihrer Organisation. Nachdem Sie die Konfiguration gespeichert haben, wird das Feld **[!UICONTROL Sandbox]** automatisch basierend auf der ausgewählten Datenansicht mit dem Namen der Sandbox ausgefüllt.
+  Geben Sie eine **[!UICONTROL Zeichenfolge für reguläre Ausdrücke]** für **[!UICONTROL auszuschließende Asset-URLs]** an. <br/>Zum Beispiel: `^(?!.*(logo\.jpg)).*$`, um alle Asset-URLs auszuschließen, die auf JPEG-Logo-Bilder in Content Analytics verweisen.
 
 
-### Erlebniserfassung und -definition {#onboarding-experiences}
+##### Überschreibungen des Headers {#mobile-header-overrides}
 
-<!-- markdownlint-disable MD034 -->
+<!-- needs modification for mobile channel -->
+
+Optional können Sie im Abschnitt **[!UICONTROL Überschreibungen der Kopfzeile]** einen Kopfzeilennamen und einen geheimen Kopfzeilenwert angeben.  Diese Kopfzeile überschreibt die Konfiguration und stellt sicher, dass Content Analytics eine benutzerdefinierte HTTP-Kopfzeile sendet, um Mobile-App-Assets abzurufen, wobei die Bot-Erkennung oder Traffic-Gating-Technologien umgangen werden.
+
+![Abschnitt „Überschreibungen der Kopfzeile“](/help/content-analytics/assets/aca-configuration-header-overrides.png)
+
+1. Aktivieren **[!UICONTROL Konfigurieren von Kopfzeilenüberschreibungen]**.
+1. Geben Sie den **[!UICONTROL Header-Namen]** ein. Zum Beispiel `x-asset-service`.
+1. Geben Sie den **[!UICONTROL Header-Wert]** ein. Was auch immer Sie angeben, ist geheim und in der Benutzeroberfläche nicht sichtbar (es sei denn, Sie geben explizit den Wert ![Sichtbarkeit](/help/assets/icons/Visibility.svg) während der Eingabe an).
+
+##### Speichern {#mobile-save}
+
+Nachdem Sie den Mobile-Kanal konfiguriert haben, klicken Sie auf **[!UICONTROL Speichern]**, um die Konfiguration zu speichern. Wählen Sie **[!UICONTROL Abbrechen]**, um die Konfiguration abzubrechen.
+
+
+#### Web {#web}
+
+Für den Web-Kanal können Sie [Erlebniserfassung und -definition](#experience-capture-and-definition-1), [Datenerfassung](#data-collection-1) und [Überschreibungen](#header-overrides-1).
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_experiences_button"
@@ -237,62 +352,6 @@ In Customer Journey Analytics ist eine [Datenansicht](/help/data-views/data-view
 >title="Erlebniserfassung und -definition"
 >abstract="Sie müssen die Einstellungen für die Erlebnisdatenerfassung in der Adobe Content Analytics-Erweiterung bearbeiten."
 
-<!-- markdownlint-enable MD034 -->
-
-In diesem Abschnitt können Sie auswählen, dass Erlebnisse in die mit Content Analytics erfassten Daten eingeschlossen werden.  Ein Erlebnis ist der gesamte Text auf einer Web-Seite, der anhand der URL reproduzierbar ist, die die Benutzerin bzw. der Benutzer verwendet hat, die bzw. der diese Web-Seite ursprünglich besucht hat.
-
-Standardmäßig ist **[!UICONTROL Erlebnisse einschließen]** deaktiviert. Wenn diese Option aktiviert ist, müssen Sie festlegen, für welche URLs Erlebnisse eingeschlossen werden sollen.
-
-Ziehen Sie das Einschließen von Erlebnissen nur in Betracht, wenn Folgendes zutrifft:
-
-* Die Seiten auf der Site müssen unter Verwendung der Seiten-URL reproduzierbar sein.
-* Der Textinhalt, der einer Person angezeigt wird, kann über die Seiten-URL reproduziert werden und hängt nicht von Cookies oder anderen Personalisierungsmechanismen ab.
-
->[!IMPORTANT]
->
->Implementieren Sie die [Content Analytics-Versionierung](manual.md#versioning), um Änderungen zu erfassen, die Sie an den Erlebnissen (Seiten) vornehmen, die Content Analytics unterliegen.
-
-
-
-#### Neue Konfiguration {#new-experiences-configuration}
-
-So schließen Sie Erlebnisse in eine neue oder nicht implementierte Konfiguration ein:
-
-![Erfassung und Definition von Erlebnissen bei der Konfiguration von Content Analytics](../assets/aca-configuration-experience.png)
-
-1. Aktivieren Sie **[!UICONTROL Erlebnisse einschließen]**. Das Umschalten zum Aktivieren von Erlebnissen wirkt sich auf Folgendes aus:
-
-   * die Datenerfassung in der Content Analytics-Erweiterung
-   * den Prozess, der Erlebnisattribute aus Content Analytics-Ereignisdaten generiert
-   * die Berichtsvorlage in Customer Journey Analytics
-
-1. Geben Sie die Parameter an, die bestimmen, wie Inhalte auf Ihrer Website gerendert werden. Bei den Parametern handelt es sich, falls welche vorhanden sind, um Kombinationen aus einem **[!UICONTROL regulären Domain-Ausdruck]** und **[!UICONTROL Abfrageparametern]**. Die Abfrageparameter geben an, welche Parameter sich auf den Inhalt auf Ihrer Seite auswirken. Mit dieser Eingabe kann Content Analytics alle Parameter ignorieren, die sich nicht auf den Inhalt der Seite auswirken, wenn ein eindeutiges Erlebnis definiert wird.
-   1. Geben Sie einen **[!UICONTROL regulären Domain-Ausdruck]** ein, z. B. `/^(?!.*\b(store|help|admin)\b)/`. Stellen Sie sicher, dass Sie reguläre Ausdrücke mit dem Escape-Zeichen `/` versehen. Der reguläre Ausdruck der Domain gibt an, für welche URLs diese Parameter gelten. Beispielsweise können Sie über mehrere Sites verfügen, bei denen für jede Site der Inhalt durch andere Parameter gesteuert wird. Wenn die Abfrageparameter für alle Ihre Seiten gelten, können Sie `.*` verwenden, um alle Seiten anzugeben.
-   1. Geben Sie eine durch Kommas getrennte Liste von **[!UICONTROL Abfrageparametern]** an, z. B. `outdoors, patio, kitchen`.
-1. Wählen Sie **[!UICONTROL Entfernen]** aus, wenn Sie eine Kombination aus regulärem Domain-Ausdruck und Abfrageparametern entfernen möchten.
-1. Wählen Sie **[!UICONTROL Regulären Ausdruck hinzufügen]** aus, wenn Sie eine weitere Kombination aus einem regulären Ausdruck und Abfrageparametern hinzufügen möchten.
-
-
-#### Implementierte Konfiguration {#implemented-experiences-configuration}
-
-So bearbeiten Sie vorhandene Erlebnisse oder schließen neue Erlebnisse in eine implementierte Konfiguration ein:
-
-![Erlebniserfassung und -definition bei der Content Analytics-Konfiguration](../assets/aca-configuration-experience-edit.png)
-
-* Schalten Sie **[!UICONTROL Erlebnisse einschließen]** um, um Folgendes zu aktivieren bzw. zu deaktivieren:
-
-   * den Prozess, der Erlebnisattribute aus Content Analytics-Ereignisdaten generiert
-   * die Berichtsvorlage in Customer Journey Analytics
-
-* Wählen Sie ![Bearbeiten](/help/assets/icons/Edit.svg) **[!UICONTROL Bearbeiten]** aus, um die Konfiguration der Datenerfassung für Erlebnisse in Content Analytics weiter zu bearbeiten. Sie werden zur [Adobe Content Analytics-Erweiterung](https://experienceleague.adobe.com/de/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-segmenting) in der Tags-Eigenschaft weitergeleitet, die mit der aktuellen Konfiguration verknüpft ist.
-
-
-### Datenerfassung {#onboarding-data-collection}
-
-In diesem Abschnitt können Sie konfigurieren, wie die Content Analytics-Daten erfasst werden sollen.
-
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_button"
 >title="Datenerfassung"
@@ -311,7 +370,7 @@ In diesem Abschnitt können Sie konfigurieren, wie die Content Analytics-Daten e
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_pages_excluded_header"
 >title="Datenerfassung"
->abstract="Geben Sie an, welche Seiten bei der Datenerfassung für Content Analytics **eingeschlossen** oder **ausgeschlossen** werden sollen"
+>abstract="Geben Sie an, welche Seiten bei **Datenerfassung für erfasst werden sollen** oder **ausgeschlossen**. Stellen Sie sicher, dass Sie persönlich identifizierbare Seiten ausschließen."
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_assets_excluded_boldheader"
@@ -321,7 +380,7 @@ In diesem Abschnitt können Sie konfigurieren, wie die Content Analytics-Daten e
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_assets_excluded_header"
 >title="Datenerfassung"
->abstract="Geben Sie an, welche Assets bei der Datenerfassung für Content Analytics **eingeschlossen** oder **ausgeschlossen** werden sollen"
+>abstract="Geben Sie an, welche Assets bei **Datenerfassung für erfasst** **ausgeschlossen** werden sollen. Stellen Sie sicher, dass Sie persönlich identifizierbare Assets ausschließen."
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_experiences_edit_button"
@@ -359,104 +418,103 @@ In diesem Abschnitt können Sie konfigurieren, wie die Content Analytics-Daten e
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_web_assets_header"
 >title="Datenerfassung für Web-Assets"
->abstract="Geben Sie an, welche Assets bei **Datenerfassung für erfasst** **ausgeschlossen** werden sollen."
-
->[!CONTEXTUALHELP]
->id="aca_onboarding_datacollection_mobile_experience_locations_boldheader"
->title="Datenerfassung für mobile Erlebnisspeicherorte"
->abstract="**Auszuschließende Erlebnisorte**"
-
->[!CONTEXTUALHELP]
->id="aca_onboarding_datacollection_mobile_experience_locations_header"
->title="Datenerfassung für mobile Erlebnisspeicherorte"
->abstract="Geben Sie an, welche Erlebnisspeicherorte **ausgeschlossen) werden sollen** wenn Daten für Content Analytics erfasst werden."
-
->[!CONTEXTUALHELP]
->id="aca_onboarding_datacollection_mobile_asset_locations_boldheader"
->title="Datenerfassung für mobile Asset-Speicherorte"
->abstract="**Auszuschließende Asset-Speicherorte**"
-
->[!CONTEXTUALHELP]
->id="aca_onboarding_datacollection_mobile_asset_locations_header"
->title="Datenerfassung für mobile Asset-Speicherorte"
->abstract="Geben Sie an, welche Asset-Speicherorte **ausgeschlossen** beim Erfassen von Daten für Content Analytics ausgeschlossen werden sollen."
-
->[!CONTEXTUALHELP]
->id="aca_onboarding_datacollection_mobile_asset_urls_boldheader"
->title="Datenerfassung für mobile Asset-URLs"
->abstract="**Auszuschließende Asset-URLs**"
-
->[!CONTEXTUALHELP]
->id="aca_onboarding_datacollection_mobile_asset_urls_header"
->title="Datenerfassung für mobile Asset-URLs"
->abstract="Geben Sie an, welche Asset-URLs **der Datenerfassung für** Content Analytics ausgeschlossen werden sollen."
+>abstract="Geben Sie an, welche Assets bei **Datenerfassung für erfasst** **ausgeschlossen** werden sollen. Stellen Sie sicher, dass Sie persönlich identifizierbare Assets ausschließen."
 
 
-#### Neue Konfiguration {#new-configuration}
+##### Erlebniserfassung und -definition {#web-experience-capture-and-definition}
 
-In einer neuen Konfiguration müssen Sie festlegen, ob Sie eine vorhandene Tag-Eigenschaft verwenden oder eine neue Tag-Eigenschaft erstellen möchten. Außerdem müssen Sie mithilfe regulärer Ausdrücke festlegen, welche Seiten und Assets ein- oder ausgeschlossen werden sollen.
+In diesem Abschnitt können Sie auswählen, ob Erlebnisse in die Web-Daten einbezogen werden sollen, die Sie mit Content Analytics erfassen.  Ein Erlebnis besteht aus dem gesamten Text auf einer Web-Seite, der anhand der URL des ersten Benutzerbesuchs reproduzierbar ist.
 
-* Verwenden einer vorhandenen Tag-Eigenschaft:
+Standardmäßig ist **[!UICONTROL Erlebnisse einschließen]** deaktiviert. Wenn diese Option aktiviert ist, definieren Sie die URLs, für die Sie Erlebnisse einbeziehen möchten.
 
-  ![Vorhandenes Tag bei der Datenerfassung für Content Analytics](../assets/aca-configuration-datacollection-existingtag.png)
+Ziehen Sie das Einschließen von Erlebnissen nur in Betracht, wenn Folgendes zutrifft:
 
-   1. Wählen Sie **[!UICONTROL Vorhandene auswählen]**.
-   2. Wählen Sie aus dem Dropdown-Menü **[!UICONTROL Tags-Eigenschaft]** eine vorhandene Eigenschaft aus. Sie können mit der Eingabe beginnen, um nach den verfügbaren Optionen zu suchen und diese zu beschränken. Sie können keine Tags-Eigenschaft auswählen, die bereits von einer anderen implementierten Content Analytics-Konfiguration verwendet wird.
-
-
-* Erstellen einer neuen Tags-Eigenschaft:
-
-  ![Neues Tag bei der Datenerfassung für Content Analytics](../assets/aca-configuration-datacollection-newtag.png)
-
-   1. Wählen Sie **[!UICONTROL Neu erstellen]** aus.
-   1. Geben Sie einen **[!UICONTROL Tags-Namen]** an, z. B. `ACA Test for Documentation`.
-   1. Geben Sie **[!UICONTROL Domains]** an, z. B. `example.com`.
-
-* Geben Sie an, welche Seiten bei der Datenerfassung für Content Analytics ein- oder ausgeschlossen werden sollen.
-
-  Geben Sie eine Zeichenfolge für reguläre Ausdrücke für **[!UICONTROL Einzuschließende/auszuschließende Seiten]** an. <br/>Beispiel: `^(?!.*documentation).*`, um alle Dokumentationsseiten aus Content Analytics auszuschließen.
-
-* Geben Sie an, welche Assets bei der Datenerfassung für Content Analytics eingeschlossen oder ausgeschlossen werden sollen.
-
-  Geben Sie eine Zeichenfolge für reguläre Ausdrücke für **[!UICONTROL Einzuschließende/auszuschließende Assets]** an. <br/>Beispiel: `^(?!.*(logo\.jpg)).*$`, um alle Logo-Bilder im JPEG-Format aus Content Analytics auszuschließen.
+* Die Seiten auf der Site müssen unter Verwendung der Seiten-URL reproduzierbar sein.
+* Der Textinhalt, der einer Person angezeigt wird, kann über die Seiten-URL reproduziert werden und hängt nicht von Cookies oder anderen Personalisierungsmechanismen ab.
 
 >[!IMPORTANT]
 >
->Entfernen Sie manuell die automatisch eingeschlossene Web SDK-Erweiterung aus der neu erstellten Tags-Eigenschaft, falls Sie über eine bestehende Web SDK-Implementierung verfügen, die die [JavaScript-Bibliothek](https://experienceleague.adobe.com/de/docs/experience-platform/web-sdk/install/library) anstelle der [Tags-Erweiterung](https://experienceleague.adobe.com/de/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration) verwendet.
->
+>Implementieren Sie die [Content Analytics-Versionierung](manual.md#versioning), um Änderungen zu erfassen, die Sie an den Erlebnissen (Seiten) vornehmen, die Content Analytics unterliegen.
 
 
 
-#### Vorhandene Konfiguration {#existing-configuration}
+###### Neue Konfiguration {#new-experiences-configuration}
 
-Sie können die Tags-Eigenschaft für eine vorhandene Konfiguration nicht bearbeiten. Verwenden Sie für Aktualisierungen einer Tags-Eigenschaft, die mit einer vorhandenen Konfiguration verknüpft ist, die [Content Analytics-Tag-Erweiterungskonfiguration](https://experienceleague.adobe.com/de/docs/experience-platform/tags/extensions/client/content-analytics/overview).
+So schließen Sie Erlebnisse in eine neue oder nicht implementierte Konfiguration ein:
 
-Sie können jedoch die Seiten und Assets bearbeiten, die ein- oder ausgeschlossen werden sollen.
+![Erfassung und Definition von Erlebnissen bei der Konfiguration von Content Analytics](../assets/aca-configuration-experience.png)
 
-* Um zu bearbeiten, welche Seiten bei der Datenerfassung für Content Analytics ein- oder ausgeschlossen werden sollen, wählen Sie ![Bearbeiten](/help/assets/icons/Edit.svg) **[!UICONTROL Bearbeiten]** unter **[!UICONTROL Erlebnis]** aus. Sie werden zur [Adobe Content Analytics-Erweiterung](https://experienceleague.adobe.com/de/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-segmenting) weitergeleitet, die mit der Tags-Eigenschaft für die aktuelle Content Analytics-Konfiguration verknüpft ist. Sie können den regulären Ausdruck bearbeiten, um Seiten ein- oder auszuschließen. Achten Sie darauf, Ihre Änderungen zu [veröffentlichen](#publish).
+1. Aktivieren Sie **[!UICONTROL Erlebnisse einschließen]**. Das Umschalten zum Aktivieren von Erlebnissen wirkt sich auf Folgendes aus:
 
-* Um zu bearbeiten, welche Assets bei der Datenerfassung für Content Analytics ein- oder ausgeschlossen werden sollen, wählen Sie ![Bearbeiten](/help/assets/icons/Edit.svg) **[!UICONTROL Bearbeiten]** unter **[!UICONTROL Asset]** aus. Sie werden zur [Adobe Content Analytics-Erweiterung](https://experienceleague.adobe.com/de/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-segmenting) weitergeleitet, die mit der Tags-Eigenschaft für die aktuelle Content Analytics-Konfiguration verknüpft ist. Sie können den regulären Ausdruck bearbeiten, um Assets ein- oder auszuschließen. Achten Sie darauf, Ihre Änderungen zu [veröffentlichen](#publish).
+   * die Datenerfassung in der Content Analytics-Erweiterung
+   * den Prozess, der Erlebnisattribute aus Content Analytics-Ereignisdaten generiert
+   * die Berichtsvorlage in Customer Journey Analytics
+
+1. Wählen Sie **[!UICONTROL Regex hinzufügen]**, um eine Kombination aus einem regulären Domain-Ausdruck und Abfrageparametern hinzuzufügen.
+1. Geben Sie an, wie Inhalte auf Ihrer Website gerendert werden, indem Sie Kombinationen aus einem **[!UICONTROL regulären Domain-]**) und **[!UICONTROL Abfrageparametern]** definieren, die sich auf den Seiteninhalt auswirken.
+   1. Geben Sie einen **[!UICONTROL regulären Domain-Ausdruck]** ein, z. B. `/^(?!.*\b(store|help|admin)\b)/`. Stellen Sie sicher, dass Sie reguläre Ausdrücke mit dem Escape-Zeichen `/` versehen. Der reguläre Ausdruck der Domain gibt an, für welche URLs diese Parameter gelten. Beispielsweise können Sie über mehrere Sites verfügen, bei denen für jede Site der Inhalt durch andere Parameter gesteuert wird. Wenn die Abfrageparameter für alle Ihre Seiten gelten, können Sie `.*` verwenden, um alle Seiten anzugeben.
+   1. Geben Sie eine kommagetrennte Liste von **[!UICONTROL Abfrageparametern]** an, z. B. `outdoors, patio, kitchen`.
+1. Wählen Sie **[!UICONTROL Entfernen]** aus, wenn Sie eine Kombination aus regulärem Domain-Ausdruck und Abfrageparametern entfernen möchten.
+1. Wählen Sie **[!UICONTROL Regulären Ausdruck hinzufügen]** aus, wenn Sie eine weitere Kombination aus einem regulären Ausdruck und Abfrageparametern hinzufügen möchten.
 
 
-### Überschreibungen des Headers
+###### Implementierte Konfiguration {#implemented-experiences-configuration}
 
->[!CONTEXTUALHELP]
->id="aca_onboarding_datacollection_header_overrides_boldheader"
->title="Überschreibungen des Headers"
->abstract="**Überschreibungen der Kopfzeile**"
+So bearbeiten Sie vorhandene Erlebnisse oder schließen neue Erlebnisse in eine implementierte Konfiguration ein:
 
->[!CONTEXTUALHELP]
->id="aca_onboarding_datacollection_header_overrides_header"
->title="Überschreibungen des Headers"
->abstract="Erweiterte Funktion zur Umgehung der Bot-Erkennung oder des Gate-Traffics. Content Analytics schließt beim Aufrufen Ihrer Endpunkte Ihre benutzerdefinierten HTTP-Kopfzeilen ein."
+![Erlebniserfassung und -definition bei der Content Analytics-Konfiguration](../assets/aca-configuration-experience-edit.png)
 
-Optional können Sie im Abschnitt **[!UICONTROL Überschreibungen der Kopfzeile]** einen Kopfzeilennamen und einen geheimen Kopfzeilenwert angeben.  Diese Kopfzeile überschreibt die Konfiguration und stellt sicher, dass Content Analytics benutzerdefinierte HTTP-Kopfzeilen sendet, um alle implementierten Bot-Erkennungs- oder Gate-Traffic-Technologien zu umgehen.
+* Schalten Sie **[!UICONTROL Erlebnisse einschließen]** um, um Folgendes zu aktivieren bzw. zu deaktivieren:
+
+   * den Prozess, der Erlebnisattribute aus Content Analytics-Ereignisdaten generiert
+   * die Berichtsvorlage in Customer Journey Analytics
+
+* Wählen Sie ![Bearbeiten](/help/assets/icons/Edit.svg) **[!UICONTROL Bearbeiten]** aus, um die Konfiguration der Datenerfassung für Erlebnisse in Content Analytics weiter zu bearbeiten. Sie werden zur [Adobe Content Analytics-Erweiterung](https://experienceleague.adobe.com/de/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-segmenting) in der Tags-Eigenschaft weitergeleitet, die mit der aktuellen Konfiguration verknüpft ist.
+
+##### Datenerfassung {#web-data-collection}
+
+Mit den Datenerfassungseinstellungen können Sie festlegen, welche Daten (Seiten, Assets) Sie für Content Analytics erfassen möchten. Sammeln Sie im Rahmen dieser Datenerfassung keine personenbezogenen Daten.
+
+Konfigurieren der Datenerfassung:
+
+* Verwenden Sie eine vorhandene Web-Tags-Eigenschaft oder erstellen Sie eine neue Web-Tags-Eigenschaft.
+
+   * So verwenden Sie eine vorhandene Web-Tags-Eigenschaft:
+
+      1. Wählen Sie **[!UICONTROL Vorhandene auswählen]**.
+      2. Wählen Sie aus dem Dropdown-Menü **[!UICONTROL Tags-Eigenschaft]** eine vorhandene Eigenschaft aus. Sie können mit der Eingabe beginnen, um nach den verfügbaren Optionen zu suchen und diese zu beschränken. Sie können keine Tags-Eigenschaft auswählen, die bereits von einer anderen implementierten Content Analytics-Konfiguration verwendet wird.
+
+
+   * So erstellen Sie eine neue Web-Tags-Eigenschaft:
+
+      1. Wählen Sie **[!UICONTROL Neu erstellen]** aus.
+      1. Geben Sie einen **[!UICONTROL Tags-Namen]** an, z. B. `ACA Test for Documentation`.
+      1. Geben Sie **[!UICONTROL Domains]** an, z. B. `example.com`.
+
+* Geben Sie an, welche Seiten bei der Datenerfassung für Content Analytics ein- oder ausgeschlossen werden sollen. Stellen Sie sicher, dass Sie persönlich identifizierbare Seiten ausschließen.
+
+  Geben Sie eine **[!UICONTROL Zeichenfolge für reguläre Ausdrücke]** für **[!UICONTROL Seiten zum Ein-/Ausschließen]** an. <br/>Beispiel: `^(?!.*documentation).*`, um alle Dokumentationsseiten aus Content Analytics auszuschließen.
+
+* Geben Sie an, welche Assets bei der Datenerfassung für Content Analytics eingeschlossen oder ausgeschlossen werden sollen. Stellen Sie sicher, dass Sie persönlich identifizierbare Assets ausschließen.
+
+  Geben Sie eine **[!UICONTROL Zeichenfolge für reguläre Ausdrücke]** für **[!UICONTROL Ein-/Auszuschließendes Asset]** an. <br/>Beispiel: `^(?!.*(logo\.jpg)).*$`, um alle Logo-Bilder im JPEG-Format aus Content Analytics auszuschließen.
+
+
+##### Überschreibungen des Headers {#web-header-overrides}
+
+<!-- needs modification for mobile channel -->
+
+Optional können Sie im Abschnitt **[!UICONTROL Überschreibungen der Kopfzeile]** einen Kopfzeilennamen und einen geheimen Kopfzeilenwert angeben.  Diese Header-Überschreibungskonfiguration stellt sicher, dass Content Analytics benutzerdefinierte HTTP-Header sendet, um die von Ihnen implementierte Bot-Erkennung oder Traffic-Gating-Technologien zu umgehen.
 
 ![Abschnitt „Überschreibungen der Kopfzeile“](/help/content-analytics/assets/aca-configuration-header-overrides.png)
 
 1. Aktivieren **[!UICONTROL Konfigurieren von Kopfzeilenüberschreibungen]**.
 1. Geben Sie den **[!UICONTROL Header-Namen]** ein. Zum Beispiel `x-asset-service`.
-1. Geben Sie den **[!UICONTROL Header-Wert]** ein. Was auch immer Sie angeben, ist geheim und in der Benutzeroberfläche nicht sichtbar (es sei denn, Sie legen explizit fest, ![Sichtbarkeit](/help/assets/icons/Visibility.svg) den Wert während der Eingabe anzugeben).
+1. Geben Sie den **[!UICONTROL Header-Wert]** ein. Was auch immer Sie angeben, ist geheim und in der Benutzeroberfläche nicht sichtbar (es sei denn, Sie geben explizit den Wert ![Sichtbarkeit](/help/assets/icons/Visibility.svg) während der Eingabe an).
+
+#### Speichern {#web-save}
+
+Nachdem Sie die Details für den Webkanal angegeben haben, klicken Sie auf **[!UICONTROL Speichern]**, um die Konfiguration zu speichern. Wählen Sie **[!UICONTROL Abbrechen]**, um die Konfiguration abzubrechen.
 
 
 ### Zusammenfassung {#summary}
@@ -471,23 +529,19 @@ Nachdem Sie alle erforderlichen Details angegeben haben, werden die Informatione
 
 ### Aktionen {#actions}
 
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_implementation_warning_dialog"
 >title="Bestätigung der Implementierung"
 >abstract="Wenn Sie **[!UICONTROL Implementieren]** auswählen, konfigurieren Sie die Inhaltsanalyse basierend auf den in diesem Workflow getätigten Eingaben. Standardmäßig werden mehrere Einstellungen auf Grundlage dessen ausgewählt, was im Allgemeinen für die Inhaltsanalyse nützlich ist. Als für die Daten verantwortliche Person müssen Sie jedoch die Einstellungen der einzelnen Artefakte überprüfen, um zu bestätigen, dass die Einstellungen in Übereinstimmung mit Ihrer Datenschutzrichtlinie, Ihren vertraglichen Rechten und Pflichten sowie den Einverständnisanforderungen nach geltendem Recht implementiert werden.<br/><br/>Beachten Sie, dass Daten erst dann erfasst werden, wenn die mit dieser Konfiguration verknüpfte Tag-Bibliothek manuell veröffentlicht wird.<br/><br/>Um Bild- und Textattribute abzuleiten, ruft Adobe die Attribute ab, und zwar mithilfe:<ol><li>der URL der Seite, die zum Zeitpunkt des Site-Besuchs von Benutzenden gemäß den von Ihnen konfigurierten Datenerfassungseinstellungen erfasst wurde, und</li><li>der URL, unter der das Bild gehostet wird.</li></ol>Bilder, die auf Websites von Drittanbietern gehostet werden, dürfen nicht mit Tags versehen werden."
 
-<!-- markdownlint-enable MD034 -->
-
 Wenn Sie eine Konfiguration erstellen oder bearbeiten, haben Sie die folgenden Optionen:
 
 * **[!UICONTROL Verwerfen]**: Alle im Rahmen der Konfiguration vorgenommenen Änderungen werden verworfen.
 * **[!UICONTROL Für später speichern]**: Änderungen an einer Konfiguration werden gespeichert. Sie können die Konfiguration zu einem späteren Zeitpunkt erneut aufrufen, um weitere Änderungen vorzunehmen, oder die Konfiguration implementieren. Zum Speichern einer Konfiguration ist lediglich ein Wert für [!UICONTROL Name] erforderlich.
-* **[!UICONTROL Implementieren]**: Einstellungen für oder Änderungen an einer Konfiguration werden gespeichert und implementiert. Alle als ![erforderlich](/help/assets/icons/Required.svg) markierten Felder müssen über geeignete Werte verfügen. Die Implementierung besteht aus Folgendem:
+* **[!UICONTROL Implementieren]**: Einstellungen für oder Änderungen an einer Konfiguration werden gespeichert und implementiert. Alle als &quot;![&quot; markierten ](/help/assets/icons/Required.svg) müssen über korrekte Werte verfügen. Die Implementierung besteht aus Folgendem:
 
    * **[!UICONTROL Customer Journey Analytics-Konfiguration]**:
-      * Die ausgewählte Datenansicht wird aktualisiert, um die Content Analytics-Dimension und -Metriken einzuschließen.
+      * Die ausgewählte Datenansicht wird aktualisiert, um Content Analytics-Dimensionen und -Metriken einzuschließen.
       * Die mit der ausgewählten Datenansicht verknüpfte Verbindung wird geändert, um Ereignis- und Attributdatensätze von Content Analytics einzuschließen.
       * Eine Content Analytics-Berichtsvorlage wird zu Workspace hinzugefügt.
 
@@ -502,8 +556,8 @@ Wenn Sie eine Konfiguration erstellen oder bearbeiten, haben Sie die folgenden O
       * Die neue oder vorhandene Tags-Eigenschaft ist so konfiguriert, dass sie die Content Analytics-Datenerfassung unterstützt. Diese Konfiguration impliziert die Einbeziehung der Content Analytics-Erweiterung von Adobe für Tags.
       * Ein Datenstrom wird für Content Analytics-Ereignisse erstellt.
       * Die Content Analytics-Erweiterung von Adobe ist so konfiguriert, dass Content Analytics-Ereignisse an den Datenstrom für Content Analytics gesendet werden.
-      * Wenn das Web SDK nicht für die Tags-Eigenschaft konfiguriert ist, wird eine neue Web SDK-Konfiguration erstellt, um ausschließlich Content Analytics-Ereignisse zu senden.
-      * Wenn das Web SDK für diese Tags-Eigenschaft konfiguriert ist, werden an der vorhandenen Konfiguration des Web SDK keine Änderungen vorgenommen.
+      * Wenn die Web-SDK oder Mobile-SDK nicht für die Tags-Eigenschaft konfiguriert ist, wird eine neue Web-SDK- oder Mobile-SDK-Konfiguration erstellt, um nur Content Analytics-Ereignisse zu senden.
+      * Wenn Web SDK oder Mobile SDK für die Tags-Eigenschaft konfiguriert ist, werden an der vorhandenen Web SDK- oder Mobile SDK-Konfiguration keine Änderungen vorgenommen.
 
 
 * **[!UICONTROL Speichern]**: Änderungen an einer implementierten Konfiguration werden gespeichert und die Implementierung wird aktualisiert.
@@ -512,7 +566,7 @@ Wenn Sie eine Konfiguration erstellen oder bearbeiten, haben Sie die folgenden O
 
 ## Veröffentlichen {#publish}
 
-Um Daten für Ihre Content Analytics-Konfiguration zu erfassen, müssen Sie die nach der Auswahl von **[!UICONTROL Implementieren]** erstellte Tags-Eigenschaft [manuell](manual.md) veröffentlichen.
+Um Daten für Ihre Content Analytics-Konfiguration zu erfassen, müssen Sie [manuell](manual.md) die erstellten Tag-Eigenschaften für die von Ihnen aktivierten Kanäle veröffentlichen.
 
 
 >[!MORELIKETHIS]
