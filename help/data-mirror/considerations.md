@@ -6,7 +6,7 @@ feature: Basics
 role: Admin
 badgePremium: label="Beta"
 hide: true
-source-git-commit: 664d14beaa6bc8b01169cef9d50b2ca3a2de44d8
+source-git-commit: 80083aad28e6efd0d9498264cb540d9f2898f2bc
 workflow-type: tm+mt
 source-wordcount: '832'
 ht-degree: 1%
@@ -28,7 +28,21 @@ Die empfohlene Strategie für Spalten in der Quelltabelle:
 
 * Stellen Sie sicher, dass alle relevanten Spalten anfänglich definiert sind.
 * Ordnen Sie zunächst alle Spalten zu, die Sie benötigen.
-* Wenn eine neue Spalte als erforderlich identifiziert wird, entfernen Sie den aktuellen Datensatz und konfigurieren Sie den Connector erneut mit der aktualisierten Spalte. Dadurch wird sichergestellt, dass die Daten effizienter und schneller aufgestockt werden.
+
+Wenn Sie eine neue Spalte hinzufügen möchten, gibt es zwei Optionen, je nachdem, ob eine rückwirkende Aufstockung erforderlich ist:
+
+* Rückwirkende Aufstockung:
+
+   * Entfernt den aktuellen Datensatz.
+   * Konfigurieren Sie den Connector erneut mit der aktualisierten Spalte.
+
+  Dadurch wird sichergestellt, dass die Daten effizienter und schneller aufgestockt werden.
+
+* Keine rückwirkende Aufstockung:
+
+   * Fügen Sie die Spalte in der Quelltabelle hinzu.
+   * Fügen Sie die Spalte im Zieldatensatzschema hinzu.
+   * Aktualisieren Sie die Zuordnung, um das neue Feld (Spalte) aus der Quelltabelle in den Zieldatensatz einzuschließen.
 
 Diese Strategie:
 
@@ -36,14 +50,6 @@ Diese Strategie:
 * Das Änderungsvolumen ist vorhersehbarer als beim späteren Hinzufügen oder Ändern von Spalten.
 * Hilft bei der Begrenzung potenzieller Berechnungskosten auf der Seite der externen Datenbank, da das Data Warehouse die neue Spalte möglicherweise als Aktualisierung für alle Zeilen interpretiert.
 
-Gehen Sie wie folgt vor, um neue Spalten in externen Data Warehouse-Tabellen zu verarbeiten:
-
-1. Erstellen Sie ein neues Schema mit der hinzugefügten Spalte.
-1. Konfigurieren Sie einen neuen Quell-Connector , der die Daten einbringt.
-1. Laden Sie die Aufstockung ordnungsgemäß.
-1. CDC-Änderungen künftig verwenden.
-
-Dieser Ansatz minimiert die Auswirkungen auf beiden Seiten.
 
 ## Privacy Service
 
@@ -69,7 +75,7 @@ Der Unterschied zwischen primärer Identität und primärem Schlüssel führt zu
 
 ## Governance-Unterschiede
 
-In XDM [Schemata](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/schema/composition) und zugrunde liegenden Konzepten wie [Feldergruppen](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/schema/composition#field-group) propagiert ein definiertes [Feld](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/schema/composition#field) innerhalb einer Feldergruppe seine Kennzeichnungen über alle Datensätze hinweg, in denen die Feldergruppe verwendet wird. Beispiel: Ein E-Mail-Feld, das in einer `identities` Feldergruppe `emailID` wird, ist für alle Datensätze, in denen die `identities` verwendet wird, gleich beschriftet.
+In XDM [Schemata](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/schema/composition) und zugrunde liegenden Konzepten wie [Feldergruppen](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition#field-group) propagiert ein definiertes [Feld](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition#field) innerhalb einer Feldergruppe seine Kennzeichnungen über alle Datensätze hinweg, in denen die Feldergruppe verwendet wird. Beispiel: Ein E-Mail-Feld, das in einer `identities` Feldergruppe `emailID` wird, ist für alle Datensätze, in denen die `identities` verwendet wird, gleich beschriftet.
 
 In einem relationalen Schema ist ein Spaltenname unabhängig. Eine Spalte mit dem Namen `email` in Tabelle `customers` ist unabhängig von einer Spalte mit dem Namen `email` in einer `prospects` und unterscheidet sich von dieser Spalte. Dieses Verhalten bedeutet, dass Kennzeichnungen (wie DULE-Nutzungskennzeichnungen, Richtlinien) einzeln auf die Felder in den gespiegelten Datensätzen angewendet werden müssen. Auf der Grundlage des obigen Beispiels müssen Sie Kennzeichnungen sowohl auf das `email` Feld im `customers` Datensatz als auch auf das `email` Feld im `prospects` Datensatz anwenden.
 
@@ -90,5 +96,5 @@ Relationale Schemata haben hinsichtlich des Zusammenfügens die folgenden Einsch
 
 Die folgenden Überlegungen gelten für Systemschlüssel und -felder:
 
-* Primärschlüssel, Versionsdeskriptor und Zeitstempeldeskriptor müssen Felder auf Stammebene im relationalen XDM-Schema sein. Verwenden Sie [Feldzuordnung](https://experienceleague.adobe.com/de/docs/experience-platform/sources/ui-tutorials/dataflow/databases#map-data-fields-to-an-xdm-schema) während der Aufnahme, um diese Anforderung zu unterstützen.
-* Sie können die entsprechenden Quellfelder während der [Zuordnungsphase](https://experienceleague.adobe.com/de/docs/experience-platform/sources/ui-tutorials/dataflow/databases#map-data-fields-to-an-xdm-schema) auslassen.
+* Primärschlüssel, Versionsdeskriptor und Zeitstempeldeskriptor müssen Felder auf Stammebene im relationalen XDM-Schema sein. Verwenden Sie [Feldzuordnung](https://experienceleague.adobe.com/en/docs/experience-platform/sources/ui-tutorials/dataflow/databases#map-data-fields-to-an-xdm-schema) während der Aufnahme, um diese Anforderung zu unterstützen.
+* Sie können die entsprechenden Quellfelder während der [Zuordnungsphase](https://experienceleague.adobe.com/en/docs/experience-platform/sources/ui-tutorials/dataflow/databases#map-data-fields-to-an-xdm-schema) auslassen.
