@@ -46,10 +46,10 @@ Content Analytics verwendet Web- und mobile Bildansichtsdaten aus Experience Pla
 
 ![Content Analytics – Funktionsweise](assets/aca-overview-new.gif)
 
-1. Wenn ein(e) Benutzende(r) eine Website oder [ App besucht (für Content Analytics konfiguriert](config/configuration.md) zeichnet das Experience Platform Web oder Mobile SDK Impressionen und Interaktionen mit Inhalten auf.
+1. Wenn ein(e) Benutzende(r) eine Website oder [&#x200B; App besucht (für Content Analytics konfiguriert](config/configuration.md) zeichnet das Experience Platform Web oder Mobile SDK Impressionen und Interaktionen mit Inhalten auf.
 1. Der Identity and Feature Service verarbeitet diese Interaktionen. Dieser Prozess umfasst einen Abrufdienst, der die öffentlich zugänglichen Versionen der konfigurierten URLs, die die Interaktionen definieren, erneut aufruft. Bei allen abgerufenen URLs bewirkt der Identity Service eine eindeutige Identifizierung der Erlebnisse und Assets. Der Feature Service wendet KI-/ML-Services an, um Erlebnis- und Asset-Metadaten und -Attribute zu ermitteln.
 1. Die Ergebnisse dieser Services ([Komponenten, Attribute und Identitäten](/help/content-analytics/report/components.md)) werden verwendet, um die relevanten spezifischen Content Analytics-Datensätze in Experience Platform zu aktualisieren.
-1. Sie können die Content Analytics-Daten zusammen mit Verhaltensdaten und anderen Lookup-Daten in einer Customer Journey Analytics-Einrichtung ([Connection](/help/connections/overview.md), [Data view](/help/data-views/data-views.md) und [Workspace](/help/analysis-workspace/home.md)) verwenden. Dieses Setup bildet die Grundlage für die einzigartigen Einblicke auf Makroebene in Ihren Inhalt. <br/>Mit der [Content Analytics-Vorlage können Sie Ihre Content Analytics-Berichte und -Analysen schnell ](/help/content-analytics/report/report.md#template).
+1. Sie können die Content Analytics-Daten zusammen mit Verhaltensdaten und anderen Lookup-Daten in einer Customer Journey Analytics-Einrichtung ([Connection](/help/connections/overview.md), [Data view](/help/data-views/data-views.md) und [Workspace](/help/analysis-workspace/home.md)) verwenden. Dieses Setup bildet die Grundlage für die einzigartigen Einblicke auf Makroebene in Ihren Inhalt. <br/>Mit der [Content Analytics-Vorlage können Sie Ihre Content Analytics-Berichte und -Analysen schnell &#x200B;](/help/content-analytics/report/report.md#template).
 
 
 >[!NOTE]

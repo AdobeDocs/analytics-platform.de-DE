@@ -67,7 +67,7 @@ Laden Sie die Bibliothek direkt vom CDN.
    ```
 
    wobei
-   * `alloy/2.x.x` bezieht sich auf die Version, die Sie mit der [Web SDK JavaScript Library) verwenden ](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/install/library).
+   * `alloy/2.x.x` bezieht sich auf die Version, die Sie mit der [Web SDK JavaScript Library) verwenden &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/install/library).
    * `content-analytics/1.x.x` bezieht sich auf die Version, die Sie mit der Content Analytics SDK-Bibliothek verwenden möchten.
 
 2. Der eigenständige Build stellt `window.contentAnalytics` als Initialisierungsfunktion bereit.
