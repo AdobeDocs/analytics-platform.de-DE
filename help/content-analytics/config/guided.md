@@ -1,16 +1,17 @@
 ---
-title: Geführte Content Analytics-Konfiguration
-description: Einrichten von Content Analytics mithilfe einer geführten Onboarding-Konfiguration
+title: Geführte Konfiguration für Content Analytics
+description: Erfahren Sie, wie Sie Content Analytics mithilfe einer geführten Onboarding-Konfiguration konfigurieren.
 solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin
 exl-id: 4aff664c-3cd9-4591-8122-6ebff10e4a76
-source-git-commit: 21bf687f3cff101ee1b3e4be3d870de270f82e89
+source-git-commit: b8b0237a092b37d28bec56bba05c30a853097d4f
 workflow-type: tm+mt
-source-wordcount: '3991'
+source-wordcount: '3992'
 ht-degree: 48%
 
 ---
+
 
 # Geführte Content Analytics-Konfiguration
 
@@ -538,7 +539,7 @@ Wenn Sie eine Konfiguration erstellen oder bearbeiten, haben Sie die folgenden O
 
 * **[!UICONTROL Verwerfen]**: Alle im Rahmen der Konfiguration vorgenommenen Änderungen werden verworfen.
 * **[!UICONTROL Für später speichern]**: Änderungen an einer Konfiguration werden gespeichert. Sie können die Konfiguration zu einem späteren Zeitpunkt erneut aufrufen, um weitere Änderungen vorzunehmen, oder die Konfiguration implementieren. Zum Speichern einer Konfiguration ist lediglich ein Wert für [!UICONTROL Name] erforderlich.
-* **[!UICONTROL Implementieren]**: Einstellungen für oder Änderungen an einer Konfiguration werden gespeichert und implementiert. Alle als &quot;![&quot; markierten &#x200B;](/help/assets/icons/Required.svg) müssen über korrekte Werte verfügen. Die Implementierung besteht aus Folgendem:
+* **[!UICONTROL Implementieren]**: Einstellungen für oder Änderungen an einer Konfiguration werden gespeichert und implementiert. Alle als &quot;![&quot; markierten ](/help/assets/icons/Required.svg) müssen über korrekte Werte verfügen. Die Implementierung besteht aus Folgendem:
 
    * **[!UICONTROL Customer Journey Analytics-Konfiguration]**:
       * Die ausgewählte Datenansicht wird aktualisiert, um Content Analytics-Dimensionen und -Metriken einzuschließen.

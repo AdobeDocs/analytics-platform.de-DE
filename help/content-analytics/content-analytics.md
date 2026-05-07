@@ -1,16 +1,17 @@
 ---
-title: Überblick über Content Analytics
-description: Ein Überblick über Content Analytics
+title: Übersicht über Content Analytics
+description: Erfahren Sie mehr über den Wert und die Terminologie von Content Analytics und lernen Sie, wie Content Analytics funktioniert.
 solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin, User
 exl-id: 0d3be50d-c635-459b-8b01-61d6d4ef0cdf
-source-git-commit: 21bf687f3cff101ee1b3e4be3d870de270f82e89
+source-git-commit: b8b0237a092b37d28bec56bba05c30a853097d4f
 workflow-type: tm+mt
-source-wordcount: '896'
-ht-degree: 56%
+source-wordcount: '905'
+ht-degree: 55%
 
 ---
+
 
 # Überblick über Content Analytics
 
@@ -45,10 +46,10 @@ Content Analytics verwendet Web- und mobile Bildansichtsdaten aus Experience Pla
 
 ![Content Analytics – Funktionsweise](assets/aca-overview-new.gif)
 
-1. Wenn ein(e) Benutzende(r) eine Website oder [&#x200B; App besucht (für Content Analytics konfiguriert](config/configuration.md) zeichnet das Experience Platform Web oder Mobile SDK Impressionen und Interaktionen mit Inhalten auf.
+1. Wenn ein(e) Benutzende(r) eine Website oder [ App besucht (für Content Analytics konfiguriert](config/configuration.md) zeichnet das Experience Platform Web oder Mobile SDK Impressionen und Interaktionen mit Inhalten auf.
 1. Der Identity and Feature Service verarbeitet diese Interaktionen. Dieser Prozess umfasst einen Abrufdienst, der die öffentlich zugänglichen Versionen der konfigurierten URLs, die die Interaktionen definieren, erneut aufruft. Bei allen abgerufenen URLs bewirkt der Identity Service eine eindeutige Identifizierung der Erlebnisse und Assets. Der Feature Service wendet KI-/ML-Services an, um Erlebnis- und Asset-Metadaten und -Attribute zu ermitteln.
 1. Die Ergebnisse dieser Services ([Komponenten, Attribute und Identitäten](/help/content-analytics/report/components.md)) werden verwendet, um die relevanten spezifischen Content Analytics-Datensätze in Experience Platform zu aktualisieren.
-1. Sie können die Content Analytics-Daten zusammen mit Verhaltensdaten und anderen Lookup-Daten in einer Customer Journey Analytics-Einrichtung ([Connection](/help/connections/overview.md), [Data view](/help/data-views/data-views.md) und [Workspace](/help/analysis-workspace/home.md)) verwenden. Dieses Setup bildet die Grundlage für die einzigartigen Einblicke auf Makroebene in Ihren Inhalt. <br/>Mit der [Content Analytics-Vorlage können Sie Ihre Content Analytics-Berichte und -Analysen schnell &#x200B;](/help/content-analytics/report/report.md#template).
+1. Sie können die Content Analytics-Daten zusammen mit Verhaltensdaten und anderen Lookup-Daten in einer Customer Journey Analytics-Einrichtung ([Connection](/help/connections/overview.md), [Data view](/help/data-views/data-views.md) und [Workspace](/help/analysis-workspace/home.md)) verwenden. Dieses Setup bildet die Grundlage für die einzigartigen Einblicke auf Makroebene in Ihren Inhalt. <br/>Mit der [Content Analytics-Vorlage können Sie Ihre Content Analytics-Berichte und -Analysen schnell ](/help/content-analytics/report/report.md#template).
 
 
 >[!NOTE]
@@ -73,6 +74,6 @@ Content Analytics verwendet Web- und mobile Bildansichtsdaten aus Experience Pla
 >
 >[Content Analytics-Berichte](report/report.md)
 >[Konfigurieren von Content Analytics](config/configuration.md)
->[Berechnen von Bounces und Bounce-Raten in Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/adobe-analytics-3/calculating-bounces-bounce-rate-in-adobe-customer-journey-analytics-options-and-implications-12722?profile.language=de)
+>[Berechnen von Bounces und Bounce-Raten in Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/adobe-analytics-3/calculating-bounces-bounce-rate-in-adobe-customer-journey-analytics-options-and-implications-12722)
 >
 

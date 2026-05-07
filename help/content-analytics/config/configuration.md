@@ -1,16 +1,17 @@
 ---
 title: Konfigurieren von Content Analytics
-description: Ein Überblick über die Konfiguration von Content Analytics
+description: Erfahren Sie, wie Sie Content Analytics für das Web und den Mobile-Kanal konfigurieren.
 solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin
 exl-id: 3ea46223-c7d0-4b1f-bc84-4f35494f13a0
-source-git-commit: beb2e35354d3da1fe6d22f4221e30ff0ccde3138
+source-git-commit: b8b0237a092b37d28bec56bba05c30a853097d4f
 workflow-type: tm+mt
-source-wordcount: '771'
-ht-degree: 77%
+source-wordcount: '776'
+ht-degree: 76%
 
 ---
+
 
 # Konfigurieren von Content Analytics
 
@@ -39,7 +40,7 @@ Stellen Sie vor dem Konfigurieren von Content Analytics sicher, dass die folgend
 ### Web
 
 * Sie haben den Benutzeragenten und die IP-Adresse für den in Content Analytics verwendeten Featurisierungs-Service auf die Zulassungsliste gesetzt. Die zu konfigurierende Benutzeragenten-Zeichenfolge lautet: <code>AdobeFeaturization/1.0</code>.
-* Wenn Sie das [Web SDK mit JavaScript](https://experienceleague.adobe.com/de/docs/experience-platform/collection/js/install/library){target="_blank"} zur regulären Verhaltensdatenerfassung implementiert haben, stellen Sie sicher, dass Sie den Standardnamen <code>alloy</code> für die JavaScript-Bibliothek verwenden.
+* Wenn Sie das [Web SDK mit JavaScript](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/install/library){target="_blank"} zur regulären Verhaltensdatenerfassung implementiert haben, stellen Sie sicher, dass Sie den Standardnamen <code>alloy</code> für die JavaScript-Bibliothek verwenden.
 * Sie verfügen über die Customer Journey Analytics-Rolle „Produktadministrator“ mit zusätzlichen Berechtigungen zum Verwalten von Verbindungen und Datenansichten.
 * Wenn Sie sich entscheiden, Content Analytics-Erlebnisse zu erfassen, stellen Sie sicher, dass Sie die Content Analytics-Versionierung basierend auf Änderungen an Ihren Web-Seiten einrichten und aktualisieren.
 * Sie müssen über [Berechtigungen zur Datenerfassung](https://experienceleague.adobe.com/de/docs/experience-platform/collection/permissions){target="_blank"} verfügen.
@@ -55,7 +56,7 @@ Stellen Sie vor dem Konfigurieren von Content Analytics sicher, dass die folgend
 
 ### Mobile
 
-* Stellen Sie sicher, dass die Erweiterungen &lbrace;0[&#128279;](https://developer.adobe.com/client-sdks/edge/edge-network/) Experience Platform Edge Network und [Experience Platform Identity for Edge Network](https://developer.adobe.com/client-sdks/edge/identity-for-edge-network/) für die Mobile App aktiviert sind.
+* Stellen Sie sicher, dass die Erweiterungen {0](https://developer.adobe.com/client-sdks/edge/edge-network/) Experience Platform Edge Network und [Experience Platform Identity for Edge Network](https://developer.adobe.com/client-sdks/edge/identity-for-edge-network/) für die Mobile App aktiviert sind.[
 * Sie verfügen über die Customer Journey Analytics-Rolle „Produktadministrator“ mit zusätzlichen Berechtigungen zum Verwalten von Verbindungen und Datenansichten.
 * Sie müssen über [Berechtigungen zur Datenerfassung](https://experienceleague.adobe.com/de/docs/experience-platform/collection/permissions){target="_blank"} verfügen.
    * [Experience Platform](https://experienceleague.adobe.com/de/docs/experience-platform/collection/permissions#adobe-experience-platform-permissions){target="_blank"}-Berechtigungen.
