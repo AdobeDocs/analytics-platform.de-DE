@@ -1,16 +1,17 @@
 ---
 title: Konfigurieren von Content Analytics
-description: Ein Überblick über die Konfiguration von Content Analytics
+description: Erfahren Sie, wie Sie Content Analytics für das Web und den Mobile-Kanal konfigurieren.
 solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin
 exl-id: 3ea46223-c7d0-4b1f-bc84-4f35494f13a0
-source-git-commit: beb2e35354d3da1fe6d22f4221e30ff0ccde3138
+source-git-commit: b8b0237a092b37d28bec56bba05c30a853097d4f
 workflow-type: tm+mt
-source-wordcount: '771'
-ht-degree: 77%
+source-wordcount: '776'
+ht-degree: 76%
 
 ---
+
 
 # Konfigurieren von Content Analytics
 
