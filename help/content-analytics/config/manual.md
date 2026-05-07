@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin
 exl-id: 2b2d1cc2-36da-4960-ab31-0a398d131ab8
-source-git-commit: a3d974733eef42050b0ba8dcce4ebcccf649faa7
+source-git-commit: a593221a9eb81d747777aedb323fd44a32c470be
 workflow-type: tm+mt
-source-wordcount: '640'
-ht-degree: 100%
+source-wordcount: '719'
+ht-degree: 64%
 
 ---
 
@@ -22,25 +22,38 @@ Die folgenden manuellen Konfigurationsaktionen sind verfügbar:
 
 So starten Sie die Datenerfassung für eine implementierte Content Analytics-Konfiguration:
 
-1. Folgen Sie dem [Publishing-Ablauf](https://experienceleague.adobe.com/de/docs/experience-platform/tags/publish/overview){target="_blank"}. Veröffentlichen Sie die Bibliothek für die Tags-Eigenschaft, die Ihre Content Analytics-Konfiguration enthält.
+1. Folgen Sie dem [Publishing-Ablauf](https://experienceleague.adobe.com/de/docs/experience-platform/tags/publish/overview){target="_blank"}. Die Bibliothek für die Tags-Eigenschaften, die Ihre Content Analytics-Konfiguration enthalten, wurde erfolgreich veröffentlicht.
 
-1. [Installieren](https://experienceleague.adobe.com/de/docs/experience-platform/tags/publish/environments/environments#installation) Sie den eingebetteten Code im `<head>`-Element der Seiten in Ihrer Entwicklungs-, Staging- oder Veröffentlichungsumgebung, die Content Analytics unterliegt.
+1. Basierend auf den von Ihnen konfigurierten Kanälen:
 
+   * Für **web**: [Installieren](https://experienceleague.adobe.com/de/docs/experience-platform/tags/publish/environments/environments#installation) den eingebetteten Code im `<head>` der Seiten in Ihrer Entwicklungs-, Staging- oder Veröffentlichungsumgebung, abhängig von Content Analytics.
+   * Für **mobile**: Im lösungsspezifischen [Adobe Content Analytics-Erweiterungshandbuch](https://developer.adobe.com/client-sdks/solution/adobe-content-analytics/) in der [Dokumentation zu Experience Platform Mobile SDK &#x200B;](https://developer.adobe.com/client-sdks/home/) Sie, wie Sie Ihre Mobile App für Content Analytics konfigurieren und instrumentieren.
 
 ## Stoppen der Datenerfassung
 
-So stoppen Sie die Datenerfassung für eine implementierte Content Analytics-Konfiguration:
+So stoppen Sie die Datenerfassung für eine implementierte Content Analytics-Konfiguration basierend auf den von Ihnen konfigurierten Kanälen:
 
-1. Entfernen Sie den [eingebetteten Code](https://experienceleague.adobe.com/de/docs/experience-platform/tags/publish/environments/environments) im `<head>`-Element der Seiten in Ihrer Entwicklungs-, Staging- oder Produktionsumgebung, die Content Analytics unterliegt.
-1. [Löschen](https://experienceleague.adobe.com/de/docs/experience-platform/tags/publish/overview) Sie die zugehörige Tags-Eigenschaft für Ihre Content Analytics-Konfiguration.
+* Für **web**:
 
+   1. Entfernen Sie den [eingebetteten Code](https://experienceleague.adobe.com/de/docs/experience-platform/tags/publish/environments/environments) im `<head>`-Element der Seiten in Ihrer Entwicklungs-, Staging- oder Produktionsumgebung, die Content Analytics unterliegt.
+   1. Löschen Sie die zugehörige Web-Tags-Eigenschaft für Ihre Content Analytics-Konfiguration.
+
+* Für **mobile**:
+
+   1. Entfernen Sie die [Content Analytics](https://developer.adobe.com/client-sdks/solution/adobe-content-analytics/)Erweiterung aus Ihrer App.
+   1. Löschen Sie die zugehörige Eigenschaft für mobile Tags für Ihre Content Analytics-Konfiguration.
+
+Folgen Sie [Publishing-Ablauf](https://experienceleague.adobe.com/de/docs/experience-platform/tags/publish/overview){target="_blank"} um die Änderungen anzuwenden.
 
 
 ## Ändern der Datenerfassung
 
 Sie können einige kleinere Änderungen an einer implementierten Konfiguration mithilfe des [Assistenten für geführte Konfigurationen](guided.md) vornehmen. Ändern Sie beispielsweise die Datenansicht oder aktivieren bhw. deaktivieren Sie Erlebnisse.
 
-Verwenden Sie die [Adobe Content Analytics-Erweiterung](https://experienceleague.adobe.com/de/docs/experience-platform/tags/extensions/client/content-analytics/overview) in der Tags-Eigenschaft, die Ihrer Content Analytics-Konfiguration zugeordnet ist, um Änderungen an den folgenden Artefakten vorzunehmen:
+
+### Web
+
+Sie verwenden die [Adobe Content Analytics-Web-](https://experienceleague.adobe.com/de/docs/experience-platform/tags/extensions/client/content-analytics/overview) in der Tags-Eigenschaft, die Ihrer Content Analytics-Konfiguration zugeordnet ist, um Änderungen an den folgenden Artefakten vorzunehmen:
 
 * [Sandbox und Datenstrom](https://experienceleague.adobe.com/de/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-datastreams){target="_blank"}
 
@@ -58,18 +71,22 @@ Verwenden Sie die [Adobe Content Analytics-Erweiterung](https://experienceleague
   Sie können reguläre Ausdrücke bearbeiten, um die Art und Weise zu ändern, wie Sie Seiten und Assets segmentieren.
 
 
-Achten Sie nach Änderungen an der Adobe Content Analytics-Erweiterung darauf, den [Publishing-Ablauf](https://experienceleague.adobe.com/de/docs/experience-platform/tags/publish/overview){target="_blank"} zu verwenden, um die Datenerfassung auf Grundlage der durchgeführten Änderungen zu starten.
+Nachdem Sie Änderungen an der Adobe Content Analytics-Web-Erweiterung vorgenommen haben, verwenden Sie den [Publishing-Ablauf](https://experienceleague.adobe.com/de/docs/experience-platform/tags/publish/overview){target="_blank"} um mit der Datenerfassung zu beginnen.
 
 
+### Mobile
 
->[!MORELIKETHIS]
->
->[Geführte Konfiguration](guided.md)
->>[Datenerfassung – Überblick über Tags und Veröffentlichungen](https://experienceleague.adobe.com/de/docs/experience-platform/tags/publish/overview)
->
+Sie verwenden die [Adobe Content Analytics Mobile-Erweiterung](https://developer.adobe.com/client-sdks/solution/adobe-content-analytics/) in der mit Ihrer Content Analytics-Konfiguration verknüpften Tags-Eigenschaft, um zusätzliche Änderungen vorzunehmen.
+
+Nachdem Sie Änderungen an der Adobe Content Analytics-Web-Erweiterung vorgenommen haben, verwenden Sie den [Publishing-Ablauf](https://experienceleague.adobe.com/de/docs/experience-platform/tags/publish/overview){target="_blank"} um mit der Datenerfassung zu beginnen.
 
 
 ## Versionierung
+
+>[!NOTE]
+>
+>Dieser Abschnitt gilt nur für Content Analytics für den Webkanal.
+
 
 Wenn Sie Content Analytics-Erlebnisse erfassen möchten, sollten Sie die Versionierung implementieren, um sicherzustellen, dass neue Erlebnisse (Änderungen an Ihrer Web-Seite) ordnungsgemäß erfasst werden.
 
@@ -88,44 +105,8 @@ window.adobe.getContentExperienceVersion = () => {
 };
 ```
 
-## Identitäten
-
-Content Analytics kann Identitäten wie folgt verarbeiten:
-
-* ECID wird im Abschnitt „`identityMap`“ des Content Analytics-Schemas automatisch gefüllt.
-* Wenn Sie andere Identitätswerte in der `identityMap` benötigen, müssen Sie diese Werte im `onBeforeEventSend`-Rückruf innerhalb der Web SDK-Erweiterung festlegen.
-* Feldbasiertes Stitching wird nicht unterstützt, da das Schema systemeigen ist. Sie können dem Schema also kein weiteres Feld zur Unterstützung von feldbasiertem Stitching hinzufügen.
-
-
-Um sicherzustellen, dass Content Analytics-Identitätsdaten und Adobe Experience Platform Web SDK-Identitätsdaten auf Feldebene korrekt zugeordnet werden, müssen Sie Änderungen am Web SDK-Rückruf [on before event send](https://experienceleague.adobe.com/de/docs/experience-platform/web-sdk/commands/configure/onbeforeeventsend){target="_blank"} vornehmen.
-
-1. Navigieren Sie zu Ihrer **[!UICONTROL Tags]**-Eigenschaft, die die Adobe Experience Platform Web SDK-Erweiterung und die Adobe Content Analytics-Erweiterung enthält.
-1. Wählen Sie ![Stecker](/help/assets/icons/Plug.svg) **[!UICONTROL Erweiterungen]** aus.
-1. Wählen Sie die Erweiterung **[!UICONTROL Adobe Experience Platform Web SDK]** aus.
-1. Wählen Sie **[!UICONTROL Konfigurieren]** aus.
-1. Scrollen Sie im Abschnitt **[!UICONTROL SDK-Instanzen]** nach unten zu **[!UICONTROL Datenerfassung]** - **[!UICONTROL On before event send callback]**.
-
-   ![On before event send callback](/help/content-analytics/assets/onbeforeeventsendcallback.png)
-
-1. Wählen Sie **[!UICONTROL &lt;/> Provide on before event send callback code]** aus.
-1. Fügen Sie folgenden Code hinzu:
-
-   ```javascript
-   window.adobeContentAnalytics?.forwardEvent(content);
-   
-   content.xdm.identityMap = _satellite.getVar('identityMap');
-   if ((content.xdm.eventType === "content.contentEngagement") && (_satellite.getVar('identityMap') != null)) {
-      return true;
-   }
-   ```
-
-   ![On before event send callback](/help/content-analytics/assets/onbeforeeventsendcallbackcode.png)
-
-1. Klicken Sie auf **[!UICONTROL Speichern]**, um den Code zu speichern.
-1. Klicken Sie auf **[!UICONTROL Speichern]**, um die Erweiterung zu speichern.
-1. [Veröffentlichen](https://experienceleague.adobe.com/de/docs/experience-platform/tags/publish/overview) Sie die Änderungen an Ihrer Tags-Eigenschaft.
-
-
-
-
-
+>[!MORELIKETHIS]
+>
+>[Geführte Konfiguration](guided.md)
+>[Datenerfassung – Überblick über Tags und Veröffentlichungen](https://experienceleague.adobe.com/de/docs/experience-platform/tags/publish/overview)
+>
