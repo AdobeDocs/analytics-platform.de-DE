@@ -27,7 +27,7 @@ So starten Sie die Datenerfassung für eine implementierte Content Analytics-Kon
 1. Basierend auf den von Ihnen konfigurierten Kanälen:
 
    * Für **web**: [Installieren](https://experienceleague.adobe.com/de/docs/experience-platform/tags/publish/environments/environments#installation) den eingebetteten Code im `<head>` der Seiten in Ihrer Entwicklungs-, Staging- oder Veröffentlichungsumgebung, abhängig von Content Analytics.
-   * Für **mobile**: Im lösungsspezifischen [Adobe Content Analytics-Erweiterungshandbuch](https://developer.adobe.com/client-sdks/solution/adobe-content-analytics/) in der [Dokumentation zu Experience Platform Mobile SDK ](https://developer.adobe.com/client-sdks/home/) Sie, wie Sie Ihre Mobile App für Content Analytics konfigurieren und instrumentieren.
+   * Für **mobile**: Im lösungsspezifischen [Adobe Content Analytics-Erweiterungshandbuch](https://developer.adobe.com/client-sdks/solution/adobe-content-analytics/) in der [Dokumentation zu Experience Platform Mobile SDK &#x200B;](https://developer.adobe.com/client-sdks/home/) Sie, wie Sie Ihre Mobile App für Content Analytics konfigurieren und instrumentieren.
 
 ## Stoppen der Datenerfassung
 
