@@ -119,7 +119,7 @@ Content Analytics verarbeitet Identitäten für den Webkanal wie folgt:
 * Feldbasiertes Stitching wird nicht unterstützt, da das Schema systemeigen ist. Sie können dem Schema also kein weiteres Feld zur Unterstützung von feldbasiertem Stitching hinzufügen.
 
 
-Um sicherzustellen, dass Content Analytics-Identitätsdaten und Web-SDK-Daten-Identitätsdaten auf Feldebene korrekt zugeordnet werden, ändern Sie den Rückruf Web SDK [on vor &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/commands/configure/onbeforeeventsend){target="_blank"}.
+Um sicherzustellen, dass Content Analytics-Identitätsdaten und Web-SDK-Daten-Identitätsdaten auf Feldebene korrekt zugeordnet werden, ändern Sie den Rückruf Web SDK [on vor &#x200B;](https://experienceleague.adobe.com/de/docs/experience-platform/collection/js/commands/configure/onbeforeeventsend){target="_blank"}.
 
 1. Navigieren Sie zu Ihrer **[!UICONTROL Tags]**-Eigenschaft, die die Adobe Experience Platform Web SDK-Erweiterung und die Adobe Content Analytics-Erweiterung enthält.
 1. Wählen Sie ![Stecker](/help/assets/icons/Plug.svg) **[!UICONTROL Erweiterungen]** aus.
