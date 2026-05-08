@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Audiences
 role: Admin
 exl-id: 0db3f6f7-9d7e-41bf-8eb5-02e439bab10a
-source-git-commit: 4f1299595077a1756a6ad0c4f5ef5e0247ab4973
+source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
 workflow-type: tm+mt
-source-wordcount: '1355'
-ht-degree: 29%
+source-wordcount: '1391'
+ht-degree: 32%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 29%
 >[!CONTEXTUALHELP]
 >id="cja-audience-analysis-sandbox"
 >title="Sandbox"
->abstract="Wählen Sie die Sandbox aus, die die korrekten Experience Platform-Profildatensätze enthält. Diese Datensätze müssen die Zielgruppendaten enthalten, über die Sie in Analysis Workspace einen Bericht erstellen möchten. "
+>abstract="Wählen Sie die Sandbox aus, die die korrekten Experience Platform-Profildatensätze enthält. Diese Datensätze müssen die Zielgruppendaten enthalten, über die Sie in Analysis Workspace Berichte erstellen möchten. "
 
 <!-- markdownlint-enable MD034 -->
 

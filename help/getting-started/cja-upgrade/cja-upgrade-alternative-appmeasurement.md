@@ -5,10 +5,10 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 0bf35c67-c8ae-4349-93fb-b9806c1064a8
-source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
+source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
 workflow-type: tm+mt
-source-wordcount: '1302'
-ht-degree: 58%
+source-wordcount: '1381'
+ht-degree: 59%
 
 ---
 
@@ -40,7 +40,7 @@ Sie können die Datenerfassungslogik Ihrer AppMeasurement- oder Analytics-Erweit
 
 ## Vor- und Nachteile
 
-Diese Methode schließt sich gegenseitig aus bei [Senden der gesamten Datenschicht an Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-alternative-appmeasurement.md), da beide Methoden dieselbe Aufgabe erfüllen. (Diese Methode ist besser als das Senden der gesamten Datenschicht an Adobe. Er ist verfeinert, da Props und eVars alle Daten durchlaufen.__adobe.analytics._variable-name_.)
+Diese Methode schließt sich gegenseitig aus bei [Senden der gesamten Datenschicht an Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-alternative-appmeasurement.md), da beide Methoden dieselbe Aufgabe erfüllen. (Diese Methode ist besser als das Senden der gesamten Datenschicht an Adobe. Sie wird verfeinert, da Props und eVars alle über data.__ adobe.analytics._variable-name_.)
 
 Beachten Sie die folgenden Vor- und Nachteile der Verwendung dieser Upgrade-Alternative:
 
@@ -62,9 +62,9 @@ Die grundlegenden Schritte für die Migration einer Adobe Analytics-Implementier
 
    Informationen dazu finden Sie in den folgenden Artikeln in der Adobe Analytics-Dokumentation:
 
-   * [Migrieren zur Web-SDK mithilfe von Tags](https://experienceleague.adobe.com/de/docs/analytics/implementation/aep-edge/web-sdk/analytics-extension-to-web-sdk)
+   * [Migrieren zum Web SDK mithilfe von Tags](https://experienceleague.adobe.com/de/docs/analytics/implementation/aep-edge/web-sdk/analytics-extension-to-web-sdk)
 
-   * [Migrieren zur Web-SDK mithilfe von JavaScript](https://experienceleague.adobe.com/de/docs/analytics/implementation/aep-edge/web-sdk/appmeasurement-to-web-sdk)
+   * [Migrieren zum Web SDK mithilfe von JavaScript](https://experienceleague.adobe.com/de/docs/analytics/implementation/aep-edge/web-sdk/appmeasurement-to-web-sdk)
 
 1. Senden von Daten von Edge Network an Platform.
 

@@ -5,9 +5,9 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 156df830-541d-4c92-9c49-98f346e040a7
-source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
+source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
 workflow-type: tm+mt
-source-wordcount: '292'
+source-wordcount: '316'
 ht-degree: 100%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 100%
 
 Sie können die Tags-Funktion in Adobe Experience Platform verwenden, um Code zur Datenerfassung auf Ihrer Website zu implementieren. Mit dieser Tag-Management-Lösung können Sie Code zusammen mit anderen Tagging-Anforderungen bereitstellen. Tags ermöglichen die nahtlose Integration mit Adobe Experience Platform über die Adobe Experience Platform Web SDK-Erweiterung.
 
-Im Folgenden wird beschrieben, wie Sie ein Tag für Ihre Eigenschaft erstellen. Ergänzende Informationen finden Sie unter [Konfigurieren der Tag-Erweiterung des Web-SDK](https://experienceleague.adobe.com/de/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration) in der Dokumentation zu Experience Platform. Das Web-SDK enthält nativ den [!UICONTROL Adobe Experience Cloud ID Service], sodass Sie die ID-Service-Erweiterung nicht zu Ihrem Tag hinzufügen müssen.
+Im Folgenden wird beschrieben, wie Sie ein Tag für Ihre Eigenschaft erstellen. Ergänzende Informationen finden Sie unter [Konfigurieren der Tag-Erweiterung des Web SDK](https://experienceleague.adobe.com/de/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration) in der Dokumentation zu Experience Platform. Das Web SDK enthält nativ den [!UICONTROL Adobe Experience Cloud ID Service], sodass Sie die ID-Service-Erweiterung nicht zu Ihrem Tag hinzufügen müssen.
 
 Eine Eigenschaft ist im Wesentlichen ein Container, den Sie bei der Bereitstellung von Tags auf Ihrer Site mit Erweiterungen, Regeln, Datenelementen und Bibliotheken füllen. Viele Personen erstellen für jede Website (oder Gruppe eng miteinander verbundener Sites) eine Eigenschaft, in der sie denselben Tag-Satz bereitstellen möchten. Weitere Informationen zu Eigenschaften finden Sie unter [Eigenschaften](https://experienceleague.adobe.com/de/docs/experience-platform/tags/admin/companies-and-properties) in der Dokumentation zur Datenerfassung in Experience Platform.
 

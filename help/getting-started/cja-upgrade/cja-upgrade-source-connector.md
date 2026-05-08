@@ -5,9 +5,9 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: f96565a2-f556-4b45-b88e-984613614d2e
-source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
+source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
 workflow-type: tm+mt
-source-wordcount: '745'
+source-wordcount: '758'
 ht-degree: 100%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 100%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-source-connector-create"
 >title="Erstellen des Analytics-Quell-Connectors"
->abstract="Verwenden Sie den Analytics-Quell-Connector, um Report Suite-Daten zur Nutzung in Customer Journey Analytics aufzunehmen.<br><br>Die Erstellung des Analytics-Quell-Connectors dauert mit den Standardeinstellungen nur wenige Minuten."
+>abstract="Verwenden Sie den Analytics-Quell-Connector, um Report-Suite-Daten für die Verwendung in Customer Journey Analytics aufzunehmen.<br><br>Die Erstellung des Analytics-Quell-Connectors dauert mit den Standardeinstellungen nur wenige Minuten."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -28,7 +28,7 @@ ht-degree: 100%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-source-connector-map-fields"
 >title="Erstellen des Analytics-Quell-Connectors und Zuordnen von Schemafeldern"
->abstract="Der Quell-Connector muss wissen, wie Adobe Analytics-Felder dem Schema Ihrer Organisation zugeordnet werden. Verwenden Sie diese Oberfläche, um den Quell-Connector mit dieser Zuordnung bereitzustellen. Dieser Schritt gehört zum Hinzufügen historischer Daten zu Customer Journey Analytics.<br><br>Wie lange der Schritt dauert, hängt stark von der Anzahl der Dimensionen und Metriken ab, die zugeordnet werden müssen. Dieser Schritt ist weniger schwer als mühsam und eintönig. Die Datenstromzuordnung dauert voraussichtlich etwa eine Woche."
+>abstract="Der Quell-Connector muss wissen, wie Adobe Analytics-Felder dem Schema Ihrer Organisation zugeordnet werden. Verwenden Sie diese Oberfläche, um den Quell-Connector mit dieser Zuordnung bereitzustellen. Dieser Schritt gehört zum Hinzufügen historischer Daten zu Customer Journey Analytics.<br><br>Wie lange dieser Schritt dauert, hängt stark von der Anzahl der Dimensionen und Metriken ab, die Sie zuordnen müssen. Dieser Schritt ist weniger schwer als mühsam und eintönig. Die Datenstromzuordnung dauert voraussichtlich etwa eine Woche."
 
 <!-- markdownlint-enable MD034 -->
 
