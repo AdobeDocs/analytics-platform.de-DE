@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: User
 exl-id: 6e756ae8-b969-46f1-95b8-d8fbb0d058ed
-source-git-commit: f29a55379d83fc9bdd89c82f0b27c4321a139908
+source-git-commit: 8c4bd397aa2863c7365778cb545ec42d9b0f4528
 workflow-type: tm+mt
-source-wordcount: '1410'
+source-wordcount: '1419'
 ht-degree: 47%
 
 ---
@@ -100,7 +100,11 @@ So verwenden Sie die Vorlage:
 1. Wählen Sie im Dialogfeld **[!UICONTROL Vorlage einrichten]** eine Metrik aus dem Dialogfeld **[!UICONTROL Konversionsmetrik auswählen]** aus, z. B. **[!UICONTROL Asset – CTR]**.
 1. Wählen Sie **[!UICONTROL Weiter]** aus.
 
-Ein Projekt vom Typ **[!UICONTROL Übersicht über Content Analytics]** wird in [Analysis Workspace](/help/analysis-workspace/home.md) geöffnet. Das Projekt besteht aus vier [Bedienfeldern](/help/analysis-workspace/c-panels/panels.md) in denen jedes Bedienfeld [Freiformtabellen](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) und [Visualisierungen](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md) zur Beantwortung einer bestimmten Frage bereitstellt. Sie können die Aufschlüsselung **[!UICONTROL Inhaltskanal]** verwenden, um das (/help/analysis-workspace/c-panels/panels.md#break-down-a-panel) **für den Inhaltskanal, an dem Sie interessiert sind, [aufzuschlüsseln]** oder **[!UICONTROL mobil]**.
+Ein Projekt vom Typ **[!UICONTROL Übersicht über Content Analytics]** wird in [Analysis Workspace](/help/analysis-workspace/home.md) geöffnet. Das Projekt besteht aus vier [Bedienfeldern](/help/analysis-workspace/c-panels/panels.md) in denen jedes Bedienfeld [Freiformtabellen](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) und [Visualisierungen](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md) zur Beantwortung einer bestimmten Frage bereitstellt.
+
+Sie können die Aufschlüsselung **[!UICONTROL Inhaltskanal]** verwenden, um das (/help/analysis-workspace/c-panels/panels.md#break-down-a-panel) **für den Inhaltskanal, an dem Sie interessiert sind, [aufzuschlüsseln]** oder **[!UICONTROL mobil]**.
+
+![Aufschlüsselung zum Inhaltskanal im Bedienfeld in Analysis Workspace](/help/content-analytics/assets/aca-content-channel-selector.png)
 
 Die vier Bedienfelder sind:
 
