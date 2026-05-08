@@ -4,9 +4,9 @@ description: Listet Inhaltsaktualisierungen für Dokumentation zu Customer Journ
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 64b96d8b0917975f19c353e26d9e6437d1b4e5ac
+source-git-commit: 43beba33f185e81fcebb4c18acfaa1c236ccd0c7
 workflow-type: tm+mt
-source-wordcount: '6869'
+source-wordcount: '6886'
 ht-degree: 95%
 
 ---
@@ -21,6 +21,7 @@ Die folgenden Aktualisierungen wurden seit der ersten Erstellung der Customer Jo
 | Funktion | Beschreibung |
 |---|---|
 | **Mai 2026** | |
+| Überlegungen zu Data Mirror | [Dokumentation](/help/data-mirror/considerations.md) in der Faktoren beschrieben werden, die Sie beim Einrichten von [Data Mirror-Datensätzen berücksichtigen &#x200B;](/help/data-mirror/data-mirror.md). |
 | Content Analytics Mobile-Kanal | Aktualisierungen der [Content Analytics-Dokumentation](/help/content-analytics/content-analytics.md) um die Funktionen und die Konfiguration des Content Analytics Mobile-Kanals zu beschreiben. |
 | **April 2026** | |
 | Richtlinien für abgeleitete Felder | Es wurde ein Artikel mit [Richtlinien](/help/use-cases/data-views/derived-fields/guidelines.md) (Best Practices, Leitplanken und allgemeine Fallstricke) für die Arbeit mit abgeleiteten Feldern hinzugefügt. |
