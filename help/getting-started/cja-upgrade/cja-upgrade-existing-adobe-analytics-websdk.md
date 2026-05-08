@@ -5,10 +5,10 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 1459a512-bfa8-4805-97e8-5b6acc6e4ac9
-source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
+source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
 workflow-type: tm+mt
-source-wordcount: '998'
-ht-degree: 66%
+source-wordcount: '1050'
+ht-degree: 65%
 
 ---
 
@@ -42,7 +42,7 @@ Beachten Sie die folgenden Vor- und Nachteile bei der Konfiguration Ihrer besteh
 
 1. Senden von Daten von Edge Network an Platform. Senden Sie alle Variablen im AppMeasurement-Format über das Datenobjekt.
 
-   Weitere Informationen finden Sie unter [Zuordnung von Datenobjektvariablen zu Adobe Analytics](https://experienceleague.adobe.com/de/docs/analytics/implementation/aep-edge/data-var-mapping).
+   Weitere Informationen finden Sie unter [Zuordnung von Datenobjektvariablen zu Adobe Analytics](https://experienceleague.adobe.com/en/docs/analytics/implementation/aep-edge/data-var-mapping).
 
 1. Wählen Sie Ihr Schema.
 
@@ -68,6 +68,6 @@ Beachten Sie die folgenden Vor- und Nachteile bei der Konfiguration Ihrer besteh
 
 1. Verwenden Sie die Datenstrom-Zuordnung , um alle Felder im Datenobjekt Ihrem XDM-Schema zuzuordnen.
 
-   Weitere Informationen finden Sie unter [Zuordnung](https://experienceleague.adobe.com/de/docs/experience-platform/datastreams/data-prep?lang=en#mapping) in [Datenvorbereitung für die Datenerfassung](https://experienceleague.adobe.com/de/docs/experience-platform/datastreams/data-prep) in der Experience Platform-Dokumentation.
+   Weitere Informationen finden Sie unter [Zuordnung](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/data-prep?lang=en#mapping) in [Datenvorbereitung für die Datenerfassung](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/data-prep) in der Experience Platform-Dokumentation.
 
 {{upgrade-final-step}}

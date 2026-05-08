@@ -5,9 +5,9 @@ title: Erstellen von Präsentationen aus Workspace-Berichten
 feature: Curate and Share
 role: User
 exl-id: a3f6db1e-0444-4804-98bf-c5c10ba2e7ea
-source-git-commit: b9efb621523f8bbfbb3afe7db4db2e60fcddd34c
+source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
 workflow-type: tm+mt
-source-wordcount: '1696'
+source-wordcount: '1720'
 ht-degree: 9%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 9%
 
 >[!NOTE]
 >
->Data Storytelling ist eine Qualifikation unter Data Insights Agent und steht berechtigten Kunden für eine begrenzte Zeit zur Verfügung. Der Zugriff auf Data Insights Agent endet am Mittwoch, 31. März 2026. Um Data Insights Agent oder andere Adobe Experience Platform-Agenten ohne Unterbrechung weiter zu verwenden, wenden Sie sich an Ihren Adobe-Kundenbetreuer, um mehr über die Lizenzierung von Adobe Experience Platform Agent Orchestrator zu erfahren.
+>Data Storytelling ist eine Qualifikation unter Data Insights Agent und steht berechtigten Kunden für eine begrenzte Zeit zur Verfügung. Der Zugriff auf Data Insights Agent endet am 31. März 2026. Um Data Insights Agent oder andere Adobe Experience Platform-Agenten ohne Unterbrechung weiter zu verwenden, wenden Sie sich an Ihren Adobe-Kundenbetreuer, um mehr über die Lizenzierung von Adobe Experience Platform Agent Orchestrator zu erfahren.
 
 
 Benutzende mit [den erforderlichen Berechtigungen](#permission-requirements-to-generate-slides) können automatisch PPTX-Präsentationen basierend auf Analysis Workspace-Projekten generieren. Beim Generieren dieser Folienpräsentationen erstellt Customer Journey Analytics automatisch eine Story aus Ihren Daten, indem wichtige Erkenntnisse identifiziert und in Stakeholder-fähige Folien umgewandelt werden.
@@ -193,9 +193,9 @@ Die Möglichkeit, Folien zu generieren, ist standardmäßig für alle Benutzer i
 
 Produktprofil-Admins, deren Organisationen über die Lizenzierung zum Generieren von Folien verfügen, können den Zugriff bei Bedarf deaktivieren.
 
-In der [!UICONTROL Adobe Admin Console] bestimmt die Berechtigung [!UICONTROL Reporting-]&#x200B;**[!UICONTROL Data]** storytelling) den Zugriff auf diese Funktion. Ein [Produktprofil-Administrator](https://helpx.adobe.com/de/enterprise/using/manage-product-profiles.html) muss diese Schritte in der [!UICONTROL Admin Console ausführen] wenn er den Zugriff deaktivieren möchte:
+In der [!UICONTROL Adobe Admin Console] bestimmt die Berechtigung [!UICONTROL Reporting-]**[!UICONTROL Data]** storytelling) den Zugriff auf diese Funktion. Ein [Produktprofil-Administrator](https://helpx.adobe.com/de/enterprise/using/manage-product-profiles.html) muss diese Schritte in der [!UICONTROL Admin Console ausführen] wenn er den Zugriff deaktivieren möchte:
 1. Navigieren Sie zu **[!UICONTROL Admin Console]** > **[!UICONTROL Produkte und Dienste]** > **[!UICONTROL Customer Journey Analytics]** > **[!UICONTROL Produktprofile]**.
-1. Wählen Sie den Titel des Produktprofils aus, für das Sie Zugriff auf &quot;[!UICONTROL &#x200B; storytelling&quot; &#x200B;] möchten.
+1. Wählen Sie den Titel des Produktprofils aus, für das Sie Zugriff auf &quot;[!UICONTROL  storytelling&quot; ] möchten.
 1. Wählen Sie im entsprechenden Produktprofil die Option **[!UICONTROL Berechtigungen]** aus.
 1. Wählen Sie ![Bearbeiten](/help/assets/icons/Edit.svg) aus, um **[!UICONTROL Reporting-Tools]** zu bearbeiten.
 1. Wählen Sie ![AddCircle](/help/assets/icons/RemoveCircle.svg) aus, um **Data storytelling** aus den **[!UICONTROL Included permission items]**.
@@ -240,7 +240,7 @@ Die folgenden Analysis Workspace-Elemente und -Funktionen, die in einem Projekt 
 
 * Komponenten, die durch eine Data-Governance-Richtlinie nicht exportiert werden dürfen
 
-  Weitere Informationen finden Sie unter [Fehlerbehebung bei fehlgeschlagenen &#x200B;](/help/components/exports/troubleshoot-exports.md)).
+  Weitere Informationen finden Sie unter [Fehlerbehebung bei fehlgeschlagenen ](/help/components/exports/troubleshoot-exports.md)).
 
 ## Projektelemente und -funktionen mit begrenzter Unterstützung
 

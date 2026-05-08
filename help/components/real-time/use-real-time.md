@@ -4,9 +4,9 @@ title: Verwenden von Echtzeitberichten
 feature: Real-time Reporting
 role: User
 exl-id: 6e7dba80-5fb9-4554-b989-85eb54a4bd6a
-source-git-commit: 0e5a64e78e5a471f8b7c9fc32fdbae2b2e70230a
+source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
 workflow-type: tm+mt
-source-wordcount: '224'
+source-wordcount: '239'
 ht-degree: 12%
 
 ---
@@ -25,7 +25,7 @@ Um Echtzeitberichte zu verwenden, aktivieren Sie den Umschalter **[!UICONTROL Ec
 * [Attribution](/help/analysis-workspace/c-panels/attribution.md)
 * [Nächstes oder vorheriges Objekt](/help/analysis-workspace/c-panels/next-previous.md)
 
-Es wird eine Meldung mit dem Zeitstempel der letzten Aktualisierung der Daten angezeigt. Beispiel: [!UICONTROL &#x200B; *Letzte Aktualisierung um 19:550 Uhr*].
+Es wird eine Meldung mit dem Zeitstempel der letzten Aktualisierung der Daten angezeigt. Beispiel: [!UICONTROL  *Letzte Aktualisierung um 19:550 Uhr*].
 
 Wählen Sie aus dem Dropdown-Menü den Echtzeitzeitraum aus, über den Sie einen Bericht erstellen möchten. Verfügbare Optionen sind:
 

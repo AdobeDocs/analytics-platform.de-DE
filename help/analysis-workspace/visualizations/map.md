@@ -4,10 +4,10 @@ title: Zuordnung
 feature: Visualizations
 role: User, Admin
 exl-id: 6656b34a-ae1e-4f9f-9c6d-13c54e49625c
-source-git-commit: 211dbd80b21f84ab616569c0d847dcc97f13661c
+source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
 workflow-type: tm+mt
-source-wordcount: '2770'
-ht-degree: 9%
+source-wordcount: '2815'
+ht-degree: 10%
 
 ---
 
@@ -42,7 +42,7 @@ ht-degree: 9%
 
 >[!BEGINSHADEBOX]
 
-_In diesem Artikel wird die Zuordnungsvisualisierung in {_}![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**._<br/>_Siehe [Map](https://experienceleague.adobe.com/de/docs/analytics/analyze/analysis-workspace/visualizations/map-visualization) für die_![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics**-Version dieses Artikels._
+_In diesem Artikel wird die Zuordnungsvisualisierung in_![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._<br/>_Siehe [Map](https://experienceleague.adobe.com/de/docs/analytics/analyze/analysis-workspace/visualizations/map-visualization)_ für die ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**-Version dieses Artikels._
 
 >[!ENDSHADEBOX]
 
@@ -109,7 +109,7 @@ Im Folgenden finden Sie die Vorlagen und die erforderliche Kontextbeschriftung. 
 | Geo-Regionen | [!UICONTROL Geo: Geo-Region] |
 | Geo-Städte | [!UICONTROL Geo: Geo City] |
 | Geo-Bundesstaaten der USA | [!UICONTROL Geo: Geo-Status] |
-| Geo US DMA | [!UICONTROL Geo: Geo DMA] |
+| DMA zu Geo-USA | [!UICONTROL Geo: Geo DMA] |
 
 So fügen Sie diese Kontextbeschriftungen hinzu:
 
@@ -228,7 +228,7 @@ Die Zuordnungsvisualisierung in Customer Journey Analytics unterscheidet sich vo
 
      Um die Karte auf ihre ursprüngliche Nordausrichtung zurückzusetzen, wählen Sie das Kompasssymbol ![Kompasssymbol](assets/map-compass-icon.png).
 
-   * **Auswahl-Tool**: Sie können einen Bereich der Zuordnung auswählen, um [ein Segment &#x200B;](#create-a-segment-from-the-map-visualization), [einen Trend zu &#x200B;](#create-a-trended-line-chart-from-the-map-visualization) oder [eine Aufschlüsselung hinzuzufügen](#add-a-breakdown-from-the-map-visualization).
+   * **Auswahl-Tool**: Sie können einen Bereich der Zuordnung auswählen, um [ein Segment ](#create-a-segment-from-the-map-visualization), [einen Trend zu ](#create-a-trended-line-chart-from-the-map-visualization) oder [eine Aufschlüsselung hinzuzufügen](#add-a-breakdown-from-the-map-visualization).
 
      Klicken Sie auf das Auswahlwerkzeug ![Zuordnungsauswahlsymbol](assets/map-selection-icon.png) und ziehen Sie dann die Maus, um den gewünschten Bereich auszuwählen.
 
@@ -253,9 +253,9 @@ Die Zuordnungsvisualisierung in Customer Journey Analytics unterscheidet sich vo
 
 So konfigurieren Sie Einstellungen für die Zuordnungsvisualisierung:
 
-1. Öffnen Sie in Analysis Workspace eine vorhandene Kartenvisualisierung oder erstellen [&#x200B; eine neue](#begin-building-a-map-visualization).
+1. Öffnen Sie in Analysis Workspace eine vorhandene Kartenvisualisierung oder erstellen [ eine neue](#begin-building-a-map-visualization).
 
-1. Bewegen Sie den Mauszeiger über die Kartenvisualisierung und wählen Sie dann in der Visualisierungskopfzeile das ![&#x200B; „Einstellungen](/help/assets/icons/Setting.svg) aus.
+1. Bewegen Sie den Mauszeiger über die Kartenvisualisierung und wählen Sie dann in der Visualisierungskopfzeile das ![ „Einstellungen](/help/assets/icons/Setting.svg) aus.
 
    Die folgenden Optionen sind verfügbar:
 
@@ -265,7 +265,7 @@ So konfigurieren Sie Einstellungen für die Zuordnungsvisualisierung:
    | | **[!UICONTROL Blasen]** | Zeichnet Ereignisse mithilfe von Blasen. Ein Blasendiagramm ist ein multivariables Diagramm, das eine Kreuzung zwischen einem Streudiagramm und einem proportionalen Flächendiagramm darstellt. Diese Ansicht ist die Standardansicht. |
    | | **[!UICONTROL Heatmap]** | Zeichnet Ereignisse mithilfe einer Heatmap. Eine Heatmap ist eine grafische Darstellung von Daten, bei der die einzelnen in einer Matrix enthaltenen Werte als Farben dargestellt werden. |
    | **[!UICONTROL Stile]** | | |
-   | | **[!UICONTROL Farbschema]** | Zeigt das Farbschema für die Heatmap und die Blasen an. Sie können zwischen Korallen, Rot, Grün oder Blau wählen. Der Standardwert ist „Koralle“.  |
+   | | **[!UICONTROL Farbschema]** | Zeigt das Farbschema für die Heatmap und die Blasen an. Sie können zwischen Korallen, Rot, Grün oder Blau wählen. Der Standardwert ist „Koralle“. |
    | | **[!UICONTROL Zuordnungsstil]** | Sie können zwischen „Allgemein“, „Straßen“, „Leuchtend“ „Hell“, „Dunkel“ und „Satellit“ auswählen. |
    | | **[!UICONTROL Cluster-Radius]** | Gruppiert Datenpunkte zusammen, die sich innerhalb der festgelegten Pixel-Anzahl befinden. Die Standardeinstellung ist „50“.<p>Diese Option ist nur verfügbar **[!UICONTROL wenn &quot;]**&quot; als **[!UICONTROL Zuordnungstyp“]**.</p> |
    | | **[!UICONTROL Benutzerdefinierter Maximalwert]** | Ermöglicht die Änderung des Schwellenwerts für den Maximalwert der Zuordnung. Durch die Anpassung dieses Werts wird der Maßstab für die Blasen- oder Heatmap-Werte (Farbe und Größe) relativ zum von Ihnen festgelegten benutzerdefinierten Maximalwert angepasst. |
