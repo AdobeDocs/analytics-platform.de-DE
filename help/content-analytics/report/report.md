@@ -5,10 +5,16 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: User
 exl-id: 6e756ae8-b969-46f1-95b8-d8fbb0d058ed
-source-git-commit: 8c4bd397aa2863c7365778cb545ec42d9b0f4528
+TQID: https://experienceleague.adobe.com/IM7-a-jp-lLfuGKj-CM2McnFXcus2-x-ffLC8UUKAmY
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: ad5685a0-8296-4a0c-814c-658c10b4af12id: bc7a5a86-1a70-451f-985c-037b65f091d1id: d3c978ee-1ff0-4475-968a-721e2dd99ef1id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: e1e0219c-f879-479f-8427-888ed2a6e9c2
+source-git-commit: 236959f0e060e35a285777f40b8d1ef90855ed5c
 workflow-type: tm+mt
-source-wordcount: '1419'
-ht-degree: 47%
+source-wordcount: 1438
+ht-degree: 46%
 
 ---
 
@@ -21,7 +27,7 @@ Gehen Sie wie folgt vor, um einen neuen Content Analytics-Bericht zu erstellen:
 
 1. Erstellen Sie ein [neues Projekt](/help/analysis-workspace/build-workspace-project/create-projects.md) oder öffnen Sie ein [vorhandenes Projekt](/help/analysis-workspace/build-workspace-project/open-projects.md) in Workspace.
 1. Stellen Sie sicher, dass Sie für das Content Analytics-Reporting eine [Datenansicht auswählen](/help/analysis-workspace/c-panels/panels.md#data-view). Das Content Analytics-Reporting ist nur für Datenansichten verfügbar, die für Content Analytics [konfiguriert](/help/content-analytics/config/configuration.md) sind.
-1. Ziehen Sie ![&#x200B; Visualisierung &#x200B;](/help/assets/icons/Table.svg)Tabelle[/Freiformtabelle](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) auf die Arbeitsfläche.
+1. Ziehen Sie ![ Visualisierung ](/help/assets/icons/Table.svg)Tabelle[/Freiformtabelle](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) auf die Arbeitsfläche.
 1. Verwenden Sie [spezifische Content Analytics-Komponenten](components.md) und andere allgemeine [Komponenten](/help/components/overview.md) (wie Segmente, Datumsbereiche, Anmerkungen), um Erkenntnisse zu Content Analytics zu erhalten.
 1. Verwenden Sie andere [Visualisierungen](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md), um Ihr Projekt zu verbessern.
 
@@ -34,7 +40,7 @@ Basierend auf den Content Analytics-spezifischen Dimensionen, die Sie in Ihrem P
 
 ![Content Analytics-Miniaturen](../assets/aca-thumbnails.png)
 
-Standardmäßig werden Miniaturansichten in einer [Freiformtabelle“ &#x200B;](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md). So konfigurieren Sie die Anzeige von Miniaturen für eine Content Analytics-Dimension:
+Standardmäßig werden Miniaturansichten in einer [Freiformtabelle“ ](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md). So konfigurieren Sie die Anzeige von Miniaturen für eine Content Analytics-Dimension:
 
 * Bewegen Sie den Mauszeiger über eine Kopfzeile für eine Content Analytics-Dimension, z. B. **[!UICONTROL Asset-IDs]** oder **[!UICONTROL Erlebnis-IDs]**.
 * Wählen Sie ![Einstellung](/help/assets/icons/Setting.svg) aus.
@@ -43,21 +49,25 @@ Standardmäßig werden Miniaturansichten in einer [Freiformtabelle“ &#x200B;](
 
 ### Balken (gestapelt) und Horizontalbalken (gestapelt)
 
-{{release-limited-testing-section}}
-
 ![Content Analytics-Miniaturansichten für Balkendiagramm](/help/content-analytics/assets/aca-bar-thumbnail.png)
-
 
 Miniaturen werden als Teil der Legende auf der vertikalen oder horizontalen Achse angezeigt. Miniaturen werden auch angezeigt, wenn Sie den Mauszeiger über eine Leiste in einem [Balken (gestapelt)](/help/analysis-workspace/visualizations/bar.md) und [horizontalen Balken (gestapelt)](/help/analysis-workspace/visualizations/horizontal-bar.md) bewegen.
 
 
 ### Streuung
 
-{{release-limited-testing-section}}
-
 ![Content Analytics-Miniaturansichten für Streuung](/help/content-analytics/assets/aca-scatter-thumbnail.png)
 
 Miniaturansichten werden angezeigt, wenn Sie den Mauszeiger über einen Datenpunkt in einer [Streuung](/help/analysis-workspace/visualizations/scatterplot.md) bewegen.
+
+
+### Linie
+
+{{release-limited-testing-section}}
+
+![Content Analytics-Miniaturen für Zeile](/help/content-analytics/assets/aca-line-thumbnail.png)
+
+Miniaturen werden angezeigt, wenn Sie den Mauszeiger über einen Datenpunkt in einer [ bewegen](/help/analysis-workspace/visualizations/line.md).
 
 ## Vorschau
 
@@ -102,7 +112,7 @@ So verwenden Sie die Vorlage:
 
 Ein Projekt vom Typ **[!UICONTROL Übersicht über Content Analytics]** wird in [Analysis Workspace](/help/analysis-workspace/home.md) geöffnet. Das Projekt besteht aus vier [Bedienfeldern](/help/analysis-workspace/c-panels/panels.md) in denen jedes Bedienfeld [Freiformtabellen](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) und [Visualisierungen](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md) zur Beantwortung einer bestimmten Frage bereitstellt.
 
-Sie können die Aufschlüsselung **[!UICONTROL Inhaltskanal]** verwenden, um das (/help/analysis-workspace/c-panels/panels.md#break-down-a-panel) **für den Inhaltskanal, an dem Sie interessiert sind, [aufzuschlüsseln]** oder **[!UICONTROL mobil]**.
+Sie können die Aufschlüsselung **[!UICONTROL Inhaltskanal]** verwenden, um das ](/help/analysis-workspace/c-panels/panels.md#break-down-a-panel) **[!UICONTROL für den Inhaltskanal, an dem Sie interessiert sind, [aufzuschlüsseln]** oder **[!UICONTROL mobil]**.
 
 ![Aufschlüsselung zum Inhaltskanal im Bedienfeld in Analysis Workspace](/help/content-analytics/assets/aca-content-channel-selector.png)
 
@@ -115,7 +125,7 @@ In diesem Bedienfeld wird ermittelt, welche Erlebnisse und Assets die Interaktio
 
      >[!NOTE]
      >
-     >Diese Visualisierungen werden nur dann in Ihrer Vorlage angezeigt, wenn Sie das System so konfiguriert haben[&#x200B; dass Erlebnisse in &#x200B;](/help/content-analytics/config/guided.md#experience-capture-and-definition) Content Analytics-Konfiguration aufgenommen werden.
+     >Diese Visualisierungen werden nur dann in Ihrer Vorlage angezeigt, wenn Sie das System so konfiguriert haben[ dass Erlebnisse in ](/help/content-analytics/config/guided.md#experience-capture-and-definition) Content Analytics-Konfiguration aufgenommen werden.
      > 
 
       * **Experience CTR**: eine Visualisierung [Zusammenfassungsänderung](/help/analysis-workspace/visualizations/summary-number-change.md) die Experience CTR anzeigt.
@@ -145,7 +155,7 @@ Eine [Freiformtabelle](/help/analysis-workspace/visualizations/freeform-table/fr
    * **Attributtrend**
 Eine [-](/help/analysis-workspace/visualizations/line.md)-Visualisierung, die den Attributtrend für das ausgewählte am häufigsten konvertierende Asset-Attribut anzeigt.
    * **Asset-Vordergrundfarbe**
-Ein Beispiel [Freiformtabelle), &#x200B;](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) die Leistung von Elementen aus einer einzelnen Asset-Attributkategorie vergleicht: Vordergrundfarben. Sie können dieses Asset-Attribut durch andere Dimensionen der Asset-Attributkategorie ersetzen.
+Ein Beispiel [Freiformtabelle), ](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) die Leistung von Elementen aus einer einzelnen Asset-Attributkategorie vergleicht: Vordergrundfarben. Sie können dieses Asset-Attribut durch andere Dimensionen der Asset-Attributkategorie ersetzen.
 
 * **Welche Erlebnisattribute tragen zu Konversionen bei?**
 
@@ -163,11 +173,11 @@ Eine [Horizontalbalken](/help/analysis-workspace/visualizations/horizontal-bar.m
 Die besten Konvertierungserlebnisattribute im Vergleich zu den vorherigen 30 Tagen
 Eine [horizontale Balken](/help/analysis-workspace/visualizations/horizontal-bar.md) Visualisierung, die die wichtigsten Konvertierungserlebnisattribute im Vergleich zu den letzten 30 Tagen zeigt, basierend auf der ausgewählten Konversionsmetrik.
    * **Top-Konvertierung von Erlebnisattributdaten**
-Eine [Freiformtabelle), &#x200B;](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) die wichtigsten Konvertierungserlebnisse basierend auf der ausgewählten Konversionsmetrik anzeigt. Wählen Sie eine Zeile in der Tabelle aus, um die Visualisierung „Linie“ zu aktualisieren.
+Eine [Freiformtabelle), ](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) die wichtigsten Konvertierungserlebnisse basierend auf der ausgewählten Konversionsmetrik anzeigt. Wählen Sie eine Zeile in der Tabelle aus, um die Visualisierung „Linie“ zu aktualisieren.
    * **line**
 Eine [-](/help/analysis-workspace/visualizations/line.md)-Visualisierung, die den Trend für das ausgewählte am häufigsten konvertierte Erlebnisattribut anzeigt.
    * **Erlebnis-Keywords**
-Eine [Freiformtabelle“, &#x200B;](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) die wichtigsten Erlebnisschlüsselwörter basierend auf der ausgewählten Konversionsmetrik anzeigt.
+Eine [Freiformtabelle“, ](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) die wichtigsten Erlebnisschlüsselwörter basierend auf der ausgewählten Konversionsmetrik anzeigt.
 
 * **Wo werden Assets auf meiner Site angezeigt?**
 In dieser Freiformtabelle wird angegeben, wo die am häufigsten angezeigten Assets angezeigt werden. Verwenden Sie diese Analyse, um leistungsstarke Seiten zu identifizieren und die Asset-Platzierung zu optimieren.
