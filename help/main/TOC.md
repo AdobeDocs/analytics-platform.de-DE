@@ -2,10 +2,10 @@
 user-guide-title: Handbuch zu Customer Journey Analytics
 user-guide-description: Hier erhalten Sie Informationen zu Adobe Customer Journey Analytics und Erläuterungen zur Nutzung von Analysis Workspace mit Daten aus Experience Platform.
 breadcrumb-title: Handbuch zu Customer Journey Analytics
-source-git-commit: 725ec404666d706801f06eb4ea46628b02506d59
+source-git-commit: d15d85f5904bbada26bfd74fdc45217efeddd723
 workflow-type: tm+mt
 source-wordcount: '1429'
-ht-degree: 92%
+ht-degree: 93%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 92%
 
 + Versionshinweise {#releases}
    + [Neueste Version](../release-notes/latest.md)
-   + {hide-from-toc}[Hinweise zu Vorabversionen](../release-notes/pre-release-notes.md)
+   + {hide-from-toc}[Vorab veröffentlichte Versionshinweise](../release-notes/pre-release-notes.md)
    + [Versionen 2026](../release-notes/2026.md)
    + [Versionen 2025](../release-notes/2025.md)
    + [Versionen 2024](../release-notes/2024.md)
@@ -301,7 +301,7 @@ ht-degree: 92%
       + [Geführte Konfiguration](/help/content-analytics/config/guided.md)
       + [Manuelle Konfiguration](/help/content-analytics/config/manual.md)
       + [Eigenständige Konfiguration](/help/content-analytics/config/standalone.md)
-      + {hide-from-toc}[Tags-agnostische Konfiguration](/help/content-analytics/config/tag-agnostic.md)
+      + [Tag-agnostische Konfiguration](/help/content-analytics/config/tags-agnostic.md)
       + [Datenerfassung](/help/content-analytics/config/datacollection.md)
 
 + Analytics-Dashboards {#cja-dashboards}
