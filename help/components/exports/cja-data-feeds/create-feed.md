@@ -3,10 +3,10 @@ title: Erstellen eines Daten-Feeds
 description: Erfahren Sie, wie ein Daten-Feed erstellt wird und welche Dateiinformationen Adobe zur Verfügung gestellt werden müssen.
 hide: true
 feature: Components
-source-git-commit: 46d54e388fecac0b62eccfe54fe91620a46474a7
+source-git-commit: da47de2de52a3cc0d9aa768141bd7368042e1c66
 workflow-type: tm+mt
-source-wordcount: '2724'
-ht-degree: 22%
+source-wordcount: '2466'
+ht-degree: 29%
 
 ---
 
@@ -18,7 +18,7 @@ Stellen Sie Adobe beim Erstellen eines Daten-Feeds Folgendes zur Verfügung:
 
 * Die Daten, die in jede Datei aufgenommen werden sollen
 
-* Die Häufigkeit, mit der der Daten-Feed gesendet werden soll (einschließlich des Lookback-Fensters, wenn Sie verspätete Treffer einbeziehen möchten)
+* Die Häufigkeit, mit der der Daten-Feed gesendet werden soll (einschließlich der Verarbeitungsverzögerung zur Erfassung verspäteter Treffer)
 
 Bevor Sie einen Daten-Feed erstellen, müssen Sie über grundlegende Kenntnisse zu Daten-Feeds verfügen und sicherstellen, dass Sie alle Voraussetzungen erfüllen. Weitere Informationen finden Sie unter [Datenfeeds – Überblick](data-feed-overview.md).
 
@@ -51,11 +51,9 @@ Bevor Sie einen Daten-Feed erstellen, müssen Sie über grundlegende Kenntnisse 
 
 <!-- markdownlint-enable MD034 -->
 
-<!-- added help for Dynamic lookups to this page: help/export/analytics-data-feed/c-df-contents/dynamic-lookups.md -->
-
 1. Melden Sie sich mit Ihren Adobe ID-Anmeldeinformationen bei [experiencecloud.adobe.com](https://experiencecloud.adobe.com) an.
 
-1. Wählen Sie oben rechts das 9-Quadrat-Symbol und dann [!UICONTROL **Customer Journey Analytics**] aus.
+1. Wählen Sie [!UICONTROL **Customer Journey Analytics**] im App-Umschalter ![App](/help/assets/icons/Apps.svg) oben rechts in der Benutzeroberfläche aus.
 
 1. Navigieren Sie in der oberen Navigationsleiste zu [!UICONTROL **Admin**] > [!UICONTROL **Daten-Feeds**].
 
@@ -69,30 +67,28 @@ Bevor Sie einen Daten-Feed erstellen, müssen Sie über grundlegende Kenntnisse 
 
    | Feld | Funktion |
    |---------|----------|
-   | [!UICONTROL **Name**] | Der Name des Daten-Feeds. Namen müssen innerhalb der ausgewählten Report Suite eindeutig sein und können bis zu 255 Zeichen lang sein. <!--[Learn more](/help/export/analytics-data-feed/df-faq.md#must-feed-names-be-unique)--> |
+   | [!UICONTROL **Name**] | Der Name des Daten-Feeds. Namen müssen in der ausgewählten Datenansicht eindeutig sein und können bis zu 255 Zeichen lang sein. <!--[Learn more](/help/export/analytics-data-feed/df-faq.md#must-feed-names-be-unique)--> |
    | [!UICONTROL **Tags**] | Wenden Sie beliebige Tags auf den Daten-Feed an, um die Kategorisierung zu erleichtern. <!--You can filter on tags as described in [Filter and search the list of data feeds](/help/export/analytics-data-feed/df-manage-feeds.md#filter-and-search-the-list-of-data-feeds) in [Manage data feeds](/help/export/analytics-data-feed/df-manage-feeds.md).--> |
    | [!UICONTROL **Beschreibung**] | Geben Sie eine Beschreibung für den Daten-Feed an. Die von Ihnen hinzugefügte Beschreibung ist beim Bearbeiten des Daten-Feeds sichtbar. |
    | [!UICONTROL **Datenansicht**] | Wählen Sie die Datenansicht aus, die die zu exportierenden Daten enthält. |
 
 1. Stellen Sie [!UICONTROL **Abschnitt**] Datenstruktur) sicher, dass im Feld **[!UICONTROL Datenansicht“ die richtige]** ausgewählt ist. <p>Beachten Sie bei der Auswahl einer Datenansicht Folgendes:</p> <ul><li>Wenn mehrere Daten-Feeds für dieselbe Datenansicht erstellt werden, muss jeder Daten-Feed unterschiedliche Spaltendefinitionen haben.</li><li>Die Liste der verfügbaren Spalten hängt vom Anmeldeunternehmen ab, zu dem die ausgewählte Datenansicht gehört. Wenn Sie die Datenansicht ändern, kann sich die Liste der verfügbaren Spalten ändern. </li></ul>
 
-1. Hinzufügen von Spalten zur Daten-Feed-Konfiguration. Wählen **[!UICONTROL im Abschnitt &quot;]**&quot; auf der linken Seite alle Spalten aus, die Sie einbeziehen möchten, und klicken Sie dann auf **[!UICONTROL Einschließen]**. Alle Datenspalten in Adobe Analytics sind verfügbar. Sie können mehrere Spalten auswählen, indem Sie **[!UICONTROL Umschalt]** gedrückt halten oder **[!UICONTROL Befehl]** (in macOS) oder **[!UICONTROL Strg]** (in Windows) gedrückt halten. Klicken Sie auf **[!UICONTROL Alle hinzufügen]**, um alle Spalten in einen Daten-Feed einzubeziehen.
-
-   Hinzugefügte Spalten werden im Abschnitt **[!UICONTROL Enthalten]** auf der rechten Seite angezeigt.
+1. Hinzufügen von Spalten zur Daten-Feed-Konfiguration. Suchen Sie im Abschnitt Komponentenleiste auf der linken Seite alle Spalten, die Sie einbeziehen möchten, und ziehen Sie sie dann auf die Arbeitsfläche, um Ihre Datenstruktur zu erstellen. Sie können mehrere Spalten auswählen, indem Sie **[!UICONTROL Umschalt]** gedrückt halten oder **[!UICONTROL Befehl]** (in macOS) oder **[!UICONTROL Strg]** (in Windows) gedrückt halten.
 
    Verwenden Sie die folgenden Informationen, um Dimensionen zu verstehen, die immer enthalten sind, Dimensionen, die nicht enthalten sein können, und Metriken, die ersetzt werden müssen:
 
    +++ Dimensionen, die immer in Daten-Feeds enthalten sind
 
-   Die folgenden Komponenten müssen in jedem Daten-Feed enthalten sein:
+   Die folgenden Dimensionen sind standardmäßig in jedem Daten-Feed enthalten und können nicht entfernt werden:
 
-   | Name der Komponente | Anmerkungen | Daten-Feeds | Sonstige Berichte |
+   | Name der Dimension | Anmerkungen | Daten-Feeds | Sonstige Berichte |
    |---|---|---|---|
-   | Zeitstempel | Zeitstempel des Ereigniszeitraums. Millisekundengranularität. In UTC vertreten. | Obligatorisch | Nicht verfügbar |
+   | Zeitstempel | Zeitstempel des Ereigniszeitraums. Mikrosekundengranularität. In UTC vertreten. | Obligatorisch | Nicht verfügbar |
    | Zeilen-ID | Eindeutige Zeilenkennung | Obligatorisch | Nicht verfügbar |
    | Sitzungs-ID | Eindeutige Kennung für jede Sitzung | Obligatorisch | Nicht verfügbar |
    | Personen-ID | Die Personenkennung für die Datenansicht und die Verbindung | Obligatorisch | Optionaler Standard |
-   | Konto-ID (B2B) | Konto-ID bei Verwendung des Konto-Containers | Obligatorisch (nur B2B) | Optionaler Standard (nur B2B) |
+   | Konto-ID [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} | Konto-ID bei Verwendung des Konto-Containers | Obligatorisch | Optionaler Standard |
 
    +++
 
@@ -100,7 +96,7 @@ Bevor Sie einen Daten-Feed erstellen, müssen Sie über grundlegende Kenntnisse 
 
    Customer Journey Analytics-Standarddimensionen können nicht in Daten-Feeds enthalten sein. In der folgenden Tabelle sind diese Dimensionen aufgeführt:
 
-   | Name der Komponente | Anmerkungen | Daten-Feeds |
+   | Name der Dimension | Anmerkungen | Daten-Feeds |
    |---|---|---|
    | 5 Minuten | Intervall von fünf Minuten, in dem Ereignisse aufgetreten sind (abgerundet) | Nicht verfügbar |
    | 15 Minuten | Intervall von 15 Minuten, in dem Ereignisse aufgetreten sind (abgerundet) | Nicht verfügbar |
@@ -128,13 +124,13 @@ Bevor Sie einen Daten-Feed erstellen, müssen Sie über grundlegende Kenntnisse 
 
    Die folgenden Customer Journey Analytics-Metriken müssen ersetzt werden:
 
-   | Name der Komponente | Anmerkungen | Daten-Feeds |
+   | Metrikname | Anmerkungen | Daten-Feeds |
    |---|---|---|
-   | Konten | [B2B edition] basierend auf der in der Verbindung angegebenen Konto-ID | Nicht verfügbar. Anzahl der eindeutigen Konten-ID verwenden. |
-   | Käufergruppe | [B2B edition] Einkaufsgruppen basierend auf der Einkaufsgruppen-ID in der Verbindung | Nicht verfügbar. Anzahl der unterschiedlichen Einkaufsgruppen-IDs verwenden. |
+   | Konten [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} | Basiert auf der in der Verbindung angegebenen Konto-ID | Nicht verfügbar. Anzahl der eindeutigen Konten-ID verwenden. |
+   | Einkaufsgruppe [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} | Kaufen von Gruppen basierend auf der Käufergruppen-ID in der Verbindung | Nicht verfügbar. Anzahl der unterschiedlichen Einkaufsgruppen-IDs verwenden. |
    | Ereignisse | Anzahl der Zeilen aus allen Ereignisdatensätzen in einer Verbindung | Nicht verfügbar. Anzahl der eindeutigen Zeilen-ID verwenden. |
-   | Globale Konten | [B2B edition] Basierend auf der globalen Konto-ID in der Verbindung | Nicht verfügbar. Anzahl der eindeutigen globalen Konten-ID verwenden. |
-   | Opportunities | [B2B edition] Opportunities basierend auf der Opportunity-ID in der Verbindung | Nicht verfügbar. Anzahl der eindeutigen Opportunity-ID verwenden. |
+   | Globale Konten [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} | Basierend auf globaler Konto-ID in der Verbindung | Nicht verfügbar. Anzahl der eindeutigen globalen Konten-ID verwenden. |
+   | Opportunities [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} | Opportunities basierend auf der Opportunity-ID in der Verbindung | Nicht verfügbar. Anzahl der eindeutigen Opportunity-ID verwenden. |
    | Personen | Basiert auf der in einer Verbindung angegebenen Personen-ID | Nicht verfügbar. Anzahl der eindeutigen Personen-ID verwenden. |
    | Konversationen | Anzahl der Unterhaltungen | Nicht verfügbar. Anzahl der verschiedenen Konversations-IDs verwenden. |
    | Sitzungsenden | Anzahl der Ereignisse, die das letzte Ereignis einer Sitzung waren | Nicht verfügbar |
@@ -158,12 +154,10 @@ Bevor Sie einen Daten-Feed erstellen, müssen Sie über grundlegende Kenntnisse 
    | Monat des Jahres | Zeitunterteilungsdimension | Januar-Dezember | Nicht verfügbar |
    | Erstmalige Sitzungen | Metrik | Die erste definierte Sitzung einer Person im Reporting-Fenster | Nicht verfügbar |
    | Rückkehrende Sitzungen | Metrik | Sitzungen, die nicht die Erstsitzung einer Person waren | Nicht verfügbar |
-   | Personen-ID | Dimension | Die Personenkennung für die Datenansicht und die Verbindung | **Obligatorisch** |
    | Personen-ID-Namespace | Dimension | Typ der ID, aus der die Personen-ID besteht (z. B. E-Mail- oder Cookie-ID) | Verfügbar |
-   | ID des globalen Kontos | [B2B edition] Dimension | Globale Konto-ID bei Verwendung des Containers für globale Konten | Verfügbar |
-   | Konto-ID | [B2B edition] Dimension | Konto-ID bei Verwendung des Konto-Containers | **Obligatorisch** (nur B2B) |
-   | Opportunity-ID | [B2B edition] Dimension | Opportunity-ID bei Verwendung des Opportunity-Containers | Verfügbar |
-   | Käufergruppen-ID | [B2B edition] Dimension | Einkaufsgruppen-ID bei Verwendung des Einkaufsgruppen-Containers | Verfügbar |
+   | Globale Konto-ID [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} | Dimension | Globale Konto-ID bei Verwendung des Containers für globale Konten | Verfügbar |
+   | Opportunity-ID [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} | Dimension | Opportunity-ID bei Verwendung des Opportunity-Containers | Verfügbar |
+   | Einkaufsgruppen-ID [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} | Dimension | Einkaufsgruppen-ID bei Verwendung des Einkaufsgruppen-Containers | Verfügbar |
    | Quartal des Jahres | Zeitunterteilungsdimension | Q1, Q2, Q3, Q4 | Nicht verfügbar |
    | Sitzung wiederholen | Metrik | Sitzungen, die nicht die allererste Sitzung einer Person waren | Nicht verfügbar |
    | Sitzungstyp | Dimension | Zwei Werte: Erstmalig oder Wiederkehrend | Nicht verfügbar |
@@ -182,9 +176,9 @@ Bevor Sie einen Daten-Feed erstellen, müssen Sie über grundlegende Kenntnisse 
    | [!UICONTROL **Feed-Typ**] | Wählen Sie den Feed-Typ aus, den Sie erstellen möchten:<ul><li>[!UICONTROL **Live-Feed**]: Exportiert aktuelle und zukünftige Daten.</li><li>[!UICONTROL **Aufstockungs-Feed**]: Exportiert historische Daten zwischen zwei früheren Datumsangaben.</li></ul> |
    | [!UICONTROL **Startdatum**] | Geben Sie das Datum an, an dem der Daten-Feed beginnen soll. Um sofort mit der Verarbeitung von Daten-Feeds für historische Daten zu beginnen, stellen Sie sicher, dass [!UICONTROL **Aufstockungs-Feed**] ausgewählt ist, und setzen Sie dieses Datum auf ein beliebiges Datum in der Vergangenheit, wenn Daten erfasst werden. Das Startdatum basiert auf der Zeitzone der Datenansicht. |
    | [!UICONTROL **Enddatum**] | Geben Sie das Datum an, an dem der Daten-Feed beendet werden soll. Das Enddatum basiert auf der Zeitzone der Datenansicht. |
-   | [!UICONTROL **Häufigkeit**] | Legen Sie fest, wie oft der Daten-Feed gesendet werden soll. Ereignisse mit Zeitstempeln, die in das Häufigkeitsfenster fallen, werden in den Daten-Feed-Versand aufgenommen. Die Felder [!UICONTROL **Lookback**] Datumsbereich und [!UICONTROL **Verarbeitungsverzögerung**] können sich auch darauf auswirken, welche Ereignisse für die von Ihnen gewählte Versandfrequenz in die Daten aufgenommen werden.<p>Wählen Sie diese Option aus, um Daten für eine Stunde oder für einen Tag einzubeziehen:</p><ul><li>**Täglich**: Feeds enthalten Daten eines ganzen Tages von Mitternacht bis Mitternacht in der Zeitzone der Datenansicht. Verwenden Sie diese Option für Aufstockungs-Feeds oder für Live-Feeds.</li><li>**Stündlich**: Feeds enthalten Daten für eine einzige Stunde. Verwenden Sie diese Option für Live-Feeds.</li></ul> |
+   | [!UICONTROL **Häufigkeit**] | Legen Sie fest, wie oft der Daten-Feed gesendet werden soll. Ereignisse mit Zeitstempeln, die in das Häufigkeitsfenster fallen, werden in den Daten-Feed-Versand aufgenommen. Die Felder [!UICONTROL **Lookback**] Datumsbereich und [!UICONTROL **Verarbeitungsverzögerung**] können sich auch darauf auswirken, welche Ereignisse für die von Ihnen gewählte Versandfrequenz in die Daten aufgenommen werden.<p>Wählen Sie für Live-Feeds aus, ob die Daten einer Stunde oder die Daten eines Tages enthalten sein sollen. Aufstockungs-Feeds müssen täglich sein.</p><ul><li>**Täglich**: Feeds enthalten Daten eines ganzen Tages von Mitternacht bis Mitternacht in der Zeitzone der Datenansicht. Verwenden Sie diese Option für Aufstockungs-Feeds oder für Live-Feeds.</li><li>**Stündlich**: Feeds enthalten Daten für eine einzige Stunde. Verwenden Sie diese Option für Live-Feeds.</li></ul> |
    | [!UICONTROL **Lookback-Datumsbereich**] | Steuert, wie weit Customer Journey Analytics bei der Verarbeitung der Daten-Feed-Bereitstellung zurückblickt. <p>Diese Einstellung ändert nicht das Häufigkeitsfenster (Stunde oder Tag), das den Zeitrahmen der Ereignisse definiert, die in die Daten-Feed-Ausgabe aufgenommen werden sollen. Der Lookback-Datumsbereich kann jedoch die bereitgestellten Daten wie folgt beeinflussen: </p><ul><li>**Segmentqualifikation**: Wenn ein Segment auf Ihre Daten-Feed-Definition angewendet wird, bestimmen alle Ereignisse innerhalb des Lookback-Datumsbereichs, ob eine Person qualifiziert ist. Die Container-Einstellung des Segments bestimmt den Umfang. (Mögliche Container sind: Person, Sitzung oder Ereignis. B2B hat die folgenden zusätzlichen Container: Globales Konto, Konto, Opportunity, Einkaufsgruppe.)  <p>Wenn beispielsweise ein Personen-Container verwendet wird und die Person für den Datumsbereich „Lookback“ qualifiziert ist, sind auch alle Ereignisse dieser Person im Häufigkeitsfenster qualifiziert.</p></li><li>**Sitzungsberechnung**: Sitzungsgrenzen werden anhand von Daten innerhalb des Lookback-Datumsbereichs berechnet.</li><li>**Abgeleitete Feldtransformationen**: Alle abgeleiteten Feldfunktionen, die auf Container verweisen (z. B. die Funktionen Zusammenfassen, Deduplizieren und Tiefe), verwenden den Lookback-Datumsbereich in Daten-Feed-Exporten.</li><li>**Dimension-Persistenz**: Wenn Sie sich dafür entscheiden, die Persistenz für eine einzelne Dimension festzulegen, wählen Sie auch eine Gültigkeit aus, um zu bestimmen, wie lange ein Dimensionselement über das Ereignis hinaus bestehen bleibt, für das es festgelegt ist. <p>Der Lookback-Datumsbereich wirkt sich auf die Persistenz der Dimensionen aus, wenn die Gültigkeit auf eine der folgenden Optionen in der Datenansicht eingestellt ist:</p><ul><li>Für jede Dimension in der Daten-Feed-Definition, die [!UICONTROL **Reporting-Fenster**] als Ablaufdatum verwendet, wird der Lookback-Datumsbereich zum neuen Reporting-Fenster.</li><li>Für jede Dimension in der Daten-Feed-Definition, die [!UICONTROL **Benutzerdefinierte Zeit**] als Ablaufdatum verwendet, wird die benutzerdefinierte Zeit ignoriert und der Lookback-Datumsbereich wird für die Gültigkeitsdauer der Dimension verwendet, wenn die ausgewählte benutzerdefinierte Zeit über den Datumsbereich des Lookback hinausgeht.<p>Weitere Informationen zum Festlegen der Persistenz für Dimensionen in der Datenansicht finden Sie unter [Persistenzkomponenteneinstellungen](/help/data-views/component-settings/persistence.md).</p></li></ul> |
-   | [!UICONTROL **Verarbeitungsverzögerung**] | Wählen Sie aus, ob eine bestimmte Zeitdauer gewartet werden soll, bevor eine Daten-Feed-Datei verarbeitet wird. Alle verspätet eintreffenden Treffer, die während der Verarbeitungsverzögerung eintreten, werden im Daten-Feed berücksichtigt.<p>Eine Verzögerung kann nützlich sein, um mobilen Implementierungen die Möglichkeit zu geben, dass Offlinegeräte online gehen und Daten senden können. Sie kann auch verwendet werden, um die serverseitigen Prozesse Ihrer Organisation bei der Verwaltung zuvor verarbeiteter Dateien zu berücksichtigen. In den meisten Fällen ist keine Verzögerung erforderlich. Sie können einen Feed um bis zu 8 Stunden (480 Minuten) oder sogar länger verzögern, wenn Sie einen benutzerdefinierten Zeitraum auswählen (9.999 Minuten Verzögerung oder etwa 1 Woche).<p>Wenn keine Verzögerung festgelegt ist, werden nur die Ereignisse, die in das Häufigkeitsfenster (letzter Tag oder letzte Stunde) fallen, in den Feed eingeschlossen.</p> <p>Besuche müssen nach diesem Stichtag beginnen, um einbezogen zu werden; Besuche, die vor dem Stichtag beginnen und innerhalb der Verarbeitungsverzögerung enden, sind nicht eingeschlossen.</p> <p>Erforderlich für Sitzungen, Persistenz und Segmente.</p><p>Wird nicht für Dimensionen verwendet. Dimensionen werden pro Dimension auf der Grundlage der Zuordnung und des Ablaufs der Dimension gesteuert. Dimension-Lookbacks können die Verarbeitungsverzögerung nicht überschreiten.</p> |
+   | [!UICONTROL **Verarbeitungsverzögerung**] | Wählen Sie die Wartezeit, bevor eine Daten-Feed-Datei verarbeitet wird. Alle verspätet eintreffenden Treffer, die während der Verarbeitungsverzögerung eintreten, werden im Daten-Feed berücksichtigt. <p>Eine Verzögerung kann nützlich sein, um mobilen Implementierungen die Möglichkeit zu geben, dass Offlinegeräte online gehen und Daten senden können. Sie kann auch verwendet werden, um die serverseitigen Prozesse Ihrer Organisation bei der Verwaltung zuvor verarbeiteter Dateien zu berücksichtigen. </p><p>Sie können einen Feed um 2, 3, 4 oder 8 Stunden verzögern.<p>Sitzungen müssen nach dem Abbruch der Verarbeitungsverzögerung beginnen, um einbezogen zu werden; Sitzungen, die vor dem Abbruch beginnen und innerhalb der Verarbeitungsverzögerung enden, sind nicht enthalten.</p> |
 
 1. Konfigurieren Sie [!UICONTROL **Abschnitt**] Ziel“ das Ziel, an das die Daten gesendet werden sollen.
 
@@ -210,59 +204,7 @@ Bevor Sie einen Daten-Feed erstellen, müssen Sie über grundlegende Kenntnisse 
 
 1. Wählen Sie **[!UICONTROL Speichern]** aus.
 
-## Spaltenvorlagen verwalten
 
-Mit Vorlagen können Sie dieselben Spalten für zukünftige Daten-Feeds wiederverwenden, die Sie erstellen.
-
-Bei der Verwaltung von Vorlagen können Sie neue Vorlagen erstellen, bereits erstellte Vorlagen verwenden, Vorlagen kopieren, Vorlagen bearbeiten und Vorlagen löschen.
-
-**[!UICONTROL Admin]** > **[!UICONTROL Daten-Feeds]** > **[!UICONTROL Vorlagen verwalten]**
-
-![Spaltenvorlagen verwalten](assets/data-feed-template-manage.png)
-
-### Erstellen einer Spaltenvorlage
-
-Beim Erstellen mehrerer Daten-Feeds, die dieselben Spalten verwenden, empfiehlt Adobe die Erstellung von Spaltenvorlagen. Alle von Ihnen erstellten Spaltenvorlagen stehen allen Personen in Ihrem Unternehmen zur Verfügung.
-
-So erstellen Sie eine Spaltenvorlage:
-
-1. Navigieren Sie in Adobe Analytics [!UICONTROL **Admin**] > [!UICONTROL **Daten-Feeds**] > **[!UICONTROL Vorlagen verwalten]**.
-
-1. Wählen Sie **[!UICONTROL Neue Vorlage erstellen]** aus, um eine neue Spaltenvorlage zu erstellen.
-
-   ![Spaltenvorlage erstellen](assets/data-feed-template-create.png)
-
-1. Geben Sie im Feld **[!UICONTROL Vorlagenname]** einen Namen für die Vorlage an.
-
-1. Wählen **[!UICONTROL im Abschnitt &quot;]**&quot; auf der linken Seite alle Spalten aus, die Sie einbeziehen möchten, und klicken Sie dann auf **[!UICONTROL Einschließen]**. Alle verfügbaren Datenspalten in Adobe Analytics sind verfügbar. Sie können mehrere Spalten auswählen, indem Sie **[!UICONTROL Umschalt]** gedrückt halten oder **[!UICONTROL Befehl]** (in macOS) oder **[!UICONTROL Strg]** (in Windows) gedrückt halten. Klicken Sie auf **[!UICONTROL Alle hinzufügen]**, um alle Spalten in einen Daten-Feed einzubeziehen.
-
-   Hinzugefügte Spalten werden im Abschnitt **[!UICONTROL Enthalten]** auf der rechten Seite angezeigt.
-
-1. Wählen Sie **[!UICONTROL Speichern]** aus.
-
-### Bearbeiten einer Spaltenvorlage
-
-1. Navigieren Sie in Adobe Analytics [!UICONTROL **Admin**] > [!UICONTROL **Daten-Feeds**] > **[!UICONTROL Vorlagen verwalten]**.
-
-1. Wählen Sie die Vorlage aus, die Sie bearbeiten möchten, und klicken Sie dann auf **[!UICONTROL Bearbeiten]**.
-
-1. Nehmen Sie beliebige Änderungen vor und klicken Sie dann auf **[!UICONTROL Speichern]**.
-
-### Kopieren einer Spaltenvorlage
-
-1. Navigieren Sie in Adobe Analytics [!UICONTROL **Admin**] > [!UICONTROL **Daten-Feeds**] > **[!UICONTROL Vorlagen verwalten]**.
-
-1. Wählen Sie die Vorlage aus, die Sie kopieren möchten, und klicken Sie dann auf **[!UICONTROL Kopieren]**.
-
-1. Geben Sie im Feld **[!UICONTROL Vorlagenname]** einen Namen für die Vorlage an.
-
-1. Nehmen Sie alle weiteren Änderungen vor und klicken Sie dann auf **[!UICONTROL Speichern]**.
-
-### Spaltenvorlagen löschen
-
-1. Navigieren Sie in Adobe Analytics [!UICONTROL **Admin**] > [!UICONTROL **Daten-Feeds**] > **[!UICONTROL Vorlagen verwalten]**.
-
-1. Wählen Sie mindestens eine Vorlage aus, die Sie löschen möchten, und klicken Sie auf **[!UICONTROL Löschen]**.
 
 
 <!-- why would you want to do this? -->
