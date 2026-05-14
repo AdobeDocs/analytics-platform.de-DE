@@ -4,10 +4,16 @@ title: Konfigurieren einer Journey-Arbeitsflächenvisualisierung
 feature: Visualizations
 role: User
 exl-id: 53984934-6fba-4f15-aeeb-d91039260553
-source-git-commit: 73238f03021b14567c20c686ab72d84afbaa9f81
+TQID: https://experienceleague.adobe.com/pC3wjv6Q7RHRfDfHq75CP2Lqd-HzN-s7iLZ9t4N4ZR0
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: aff2ef09-fc60-4018-9197-e2befd623064id: b1f5d324-a668-4e51-a59b-6fc0862d7310id: bc7a5a86-1a70-451f-985c-037b65f091d1id: cc092ab1-90ba-4bbc-b4c6-6249d87daf5cid: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7id: df7fb1db-aa1b-4314-98ac-59dbfcc3044fid: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+source-git-commit: 11f60dbdd2858f173896a131c08229e0c7f29a69
 workflow-type: tm+mt
-source-wordcount: '6252'
-ht-degree: 98%
+source-wordcount: 6456
+ht-degree: 91%
 
 ---
 
@@ -436,6 +442,8 @@ Die Option zum Anwenden einer Aufschlüsselung auf Ihre Daten ist für die folge
 
 * Mehrere Pfeile zwischen Knoten
 
+* Fallout-Daten (wenn Fallout auf einem Knoten angezeigt wird)
+
 Beachten Sie beim Anwenden einer Aufschlüsselung Folgendes:
 
 * Aufschlüsselungen werden auf die primäre Metrik angewendet. Die sekundäre Metrik ist nicht betroffen.
@@ -448,13 +456,15 @@ Beachten Sie beim Anwenden einer Aufschlüsselung Folgendes:
 
 #### Anwenden einer Aufschlüsselung auf einen oder mehrere Knoten oder Pfeile
 
-1. Wählen Sie in einer Journey-Arbeitsflächenvisualisierung mindestens einen Knoten aus, auf den Sie eine Aufschlüsselung anwenden möchten, und klicken Sie dann mit der rechten Maustaste auf einen der ausgewählten Knoten.
+1. Führen Sie in einer Journey-Arbeitsflächen-Visualisierung einen der folgenden Schritte aus:
 
-   Oder
+   * Klicken Sie mit der rechten Maustaste auf den Fallout, der von einem Knoten stammt (wenn Fallout angezeigt wird), für den Sie eine Aufschlüsselung anwenden möchten.
 
-   Wählen Sie in einer Journey-Arbeitsflächenvisualisierung einen oder mehrere Pfeile zwischen zwei Knoten aus, auf die Sie die Aufschlüsselung anwenden möchten, und klicken Sie dann mit der rechten Maustaste auf einen der ausgewählten Pfeile.
+   * Wählen Sie einen oder mehrere Knoten aus, auf die Sie eine Aufschlüsselung anwenden möchten, und klicken Sie dann mit der rechten Maustaste auf einen der ausgewählten Knoten.
 
-   Um mehrere Knoten oder Pfeile auszuwählen, halten Sie die Befehlstaste (Mac) oder die Strg-Taste (Windows) gedrückt.
+   * Wählen Sie einen oder mehrere Pfeile zwischen zwei Knoten aus, auf die Sie eine Aufschlüsselung anwenden möchten, und klicken Sie dann mit der rechten Maustaste auf einen der ausgewählten Pfeile.
+
+     Um mehrere Knoten oder Pfeile auszuwählen, halten Sie die Befehlstaste (Mac) oder die Strg-Taste (Windows) gedrückt.
 
 1. Wählen Sie [!UICONTROL **Aufschlüsselung**] aus.
 
@@ -496,17 +506,21 @@ Die Option zum Erstellen einer Zielgruppe ist für die folgenden Objekte in der 
 
 * Mehrere Pfeile zwischen Knoten
 
+* Fallout-Daten (wenn Fallout auf einem Knoten angezeigt wird)
+
 Wenn Sie eine Zielgruppe aus mehreren Knoten oder Pfeilen erstellen, werden diese mit dem OR-Operator verbunden.
 
 So erstellen Sie eine Zielgruppe:
 
-1. Wählen Sie in einer Journey-Arbeitsflächenvisualisierung einen oder mehrere Knoten aus, an denen Sie eine Zielgruppe erstellen möchten, und klicken Sie dann mit der rechten Maustaste auf einen der ausgewählten Knoten.
+1. Führen Sie in einer Journey-Arbeitsflächen-Visualisierung einen der folgenden Schritte aus:
 
-   Oder
+   * Klicken Sie mit der rechten Maustaste auf den Fallout, der von einem Knoten stammt (wenn Fallout angezeigt wird), für den Sie eine Zielgruppe erstellen möchten.
 
-   Wählen Sie in einer Journey-Arbeitsflächenvisualisierung einen oder mehrere Pfeile zwischen zwei Knoten aus, zwischen denen Sie eine Zielgruppe erstellen möchten, und klicken Sie dann mit der rechten Maustaste auf einen der ausgewählten Pfeile.
+   * Wählen Sie einen oder mehrere Knoten aus, für die Sie eine Zielgruppe erstellen möchten, und klicken Sie dann mit der rechten Maustaste auf einen der ausgewählten Knoten.
 
-   Um mehrere Knoten oder Pfeile auszuwählen, halten Sie die Befehlstaste (Mac) oder die Strg-Taste (Windows) gedrückt.
+   * Wählen Sie einen oder mehrere Pfeile zwischen zwei Knoten aus, für die Sie eine Zielgruppe erstellen möchten, und klicken Sie dann mit der rechten Maustaste auf einen der ausgewählten Pfeile.
+
+     Um mehrere Knoten oder Pfeile auszuwählen, halten Sie die Befehlstaste (Mac) oder die Strg-Taste (Windows) gedrückt.
 
    >[!NOTE]
    >
@@ -530,21 +544,33 @@ Die Option für Trends ist für die folgenden Objekte in der Arbeitsfläche verf
 
 * Mehrere Pfeile zwischen Knoten
 
+* Fallout-Daten (wenn Fallout auf einem Knoten angezeigt wird)
+
 So zeigen Sie Trend-Daten an:
 
-1. Wählen Sie in einer Journey-Arbeitsflächenvisualisierung einen oder mehrere Knoten aus, für die Sie Trend-Daten anzeigen möchten, und klicken Sie dann mit der rechten Maustaste auf einen der ausgewählten Knoten.
+1. Führen Sie in einer Journey-Arbeitsflächen-Visualisierung einen der folgenden Schritte aus:
 
-   Oder
+   * Klicken Sie mit der rechten Maustaste auf den Fallout, der von einem Knoten stammt (wenn der Fallout angezeigt wird), für den Sie Trenddaten anzeigen möchten.
 
-   Wählen Sie in einer Journey-Arbeitsflächenvisualisierung einen oder mehrere Pfeile zwischen zwei Knoten aus, für die Sie Trend-Daten anzeigen möchten, und klicken Sie dann mit der rechten Maustaste auf einen der ausgewählten Pfeile.
+   * Wählen Sie einen oder mehrere Knoten aus, für die Sie Trenddaten anzeigen möchten, und klicken Sie dann mit der rechten Maustaste auf einen der ausgewählten Knoten.
 
-   Um mehrere Knoten oder Pfeile auszuwählen, halten Sie die Befehlstaste (Mac) oder die Strg-Taste (Windows) gedrückt.
+   * Wählen Sie einen oder mehrere Pfeile zwischen zwei Knoten aus, für die Sie Trenddaten anzeigen möchten, und klicken Sie dann mit der rechten Maustaste auf einen der ausgewählten Pfeile.
+
+     Um mehrere Knoten oder Pfeile auszuwählen, halten Sie die Befehlstaste (Mac) oder die Strg-Taste (Windows) gedrückt.
 
 1. Wählen Sie [!UICONTROL **Trend**] aus.
 
 ### Erstellen eines Segments basierend auf einem Knoten oder Pfeil
 
-Sie können ein neues Segment auf der Grundlage eines Knotens oder Pfeils innerhalb einer Journey erstellen. Nachdem das Segment erstellt wurde, können Sie es an einer beliebigen Stelle in Analysis Workspace verwenden.
+Die Option zum Erstellen eines Segments ist für die folgenden Objekte auf der Arbeitsfläche verfügbar:
+
+* Einzelne Knoten
+
+* Die Pfeile zwischen den Knoten
+
+* Fallout-Daten (wenn Fallout auf einem Knoten angezeigt wird)
+
+Nachdem das Segment erstellt wurde, können Sie es an einer beliebigen Stelle in Analysis Workspace verwenden.
 
 Segmente, die auf der Journey-Arbeitsfläche erstellt wurden, verwenden [sequenzielle Segmentierung](/help/components/segments/seg-sequential-build.md). Das bedeutet, dass das Segment den THEN-Operator verwendet, um die Ereignisabfolge (die Journey) zu verknüpfen, die Personen durchlaufen haben, um zum ausgewählten Knoten oder Pfeil zu gelangen. Alle Ereignisse, die mit dem ausgewählten Knoten oder Pfeil übereinstimmen, sind im Segment enthalten.
 
@@ -552,11 +578,11 @@ Wenn Sie ein Segment basierend auf einem Knoten erstellen, in den mehrere Pfade 
 
 So erstellen Sie ein Segment:
 
-1. Klicken Sie in einer Journey-Arbeitsflächenvisualisierung mit der rechten Maustaste auf den Knoten oder Pfeil, den Sie zum Erstellen des Segments verwenden möchten.
+1. Klicken Sie in einer Journey-Arbeitsflächen-Visualisierung mit der rechten Maustaste auf den Knoten, den Pfeil oder die Fallout-Daten, die Sie zum Erstellen des Segments verwenden möchten.
 
-1. Wählen Sie [!UICONTROL **Segment aus Knoten erstellen**] oder [!UICONTROL **Segment aus Pfeil erstellen**] aus.
+1. Wählen Sie [!UICONTROL **Segment aus Knoten erstellen**], [!UICONTROL **Segment aus Pfeil erstellen**] oder [!UICONTROL **Segment aus Fallout erstellen**].
 
-   Der Segment Builder wird angezeigt. Im Abschnitt [!UICONTROL **Definition**] wird die Segmentdefinition basierend auf dem ausgewählten Knoten oder Pfeil und seinem Kontext innerhalb der Journey erstellt.
+   Der Segment Builder wird angezeigt. Im Abschnitt [!UICONTROL **Definition**] wird die Segmentdefinition basierend auf dem ausgewählten Knoten, Pfeil oder Fallout und dem Kontext innerhalb der Journey erstellt.
 
 1. Geben Sie einen Titel für das Segment an und nehmen Sie bei Bedarf weitere Änderungen vor. Weitere Informationen zum Erstellen eines Segments finden Sie unter [Segment Builder](/help/components/segments/seg-builder.md).
 
@@ -571,6 +597,22 @@ So löschen Sie Knoten in der Journey-Arbeitsfläche:
 1. Wählen Sie in einer Journey-Arbeitsflächenvisualisierung mindestens einen Knoten aus, den Sie löschen möchten, und klicken Sie dann mit der rechten Maustaste auf einen der ausgewählten Knoten.
 
 1. Wählen Sie [!UICONTROL **Löschen**] aus.
+
+### Ausschließen von Knoten
+
+Wenn Sie einen Knoten von einem Journey ausschließen, werden die Journey-Daten aktualisiert, um Benutzende auszuschließen, die diesen Knoten durchlaufen haben. Die Segmentdefinition für den Journey wird ebenfalls aktualisiert, um Benutzende auszuschließen, die diesen Knoten durchlaufen haben.
+
+So schließen Sie einen Knoten von einer Journey aus:
+
+1. Klicken Sie in einer Journey-Arbeitsflächen-Visualisierung mit der rechten Maustaste auf den Knoten, den Sie ausschließen möchten.
+
+1. Wählen Sie [!UICONTROL **Aus Journey ausschließen**].
+
+So schließen Sie einen ausgeschlossenen Knoten erneut in die Journey ein:
+
+1. Klicken Sie in einer Journey-Arbeitsflächen-Visualisierung mit der rechten Maustaste auf den ausgeschlossenen Knoten.
+
+1. Wählen Sie [!UICONTROL **Journey-Ausschluss entfernen**].
 
 ### Löschen von Pfeilen zwischen Knoten
 
