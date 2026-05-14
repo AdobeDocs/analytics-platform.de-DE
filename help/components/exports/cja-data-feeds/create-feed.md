@@ -3,10 +3,10 @@ title: Erstellen eines Daten-Feeds
 description: Erfahren Sie, wie ein Daten-Feed erstellt wird und welche Dateiinformationen Adobe zur Verfügung gestellt werden müssen.
 hide: true
 feature: Components
-source-git-commit: 54a7f59847b752a4e898b488a90520e8b31d3622
+source-git-commit: 46d54e388fecac0b62eccfe54fe91620a46474a7
 workflow-type: tm+mt
-source-wordcount: '2439'
-ht-degree: 19%
+source-wordcount: '2724'
+ht-degree: 22%
 
 ---
 
@@ -47,7 +47,7 @@ Bevor Sie einen Daten-Feed erstellen, müssen Sie über grundlegende Kenntnisse 
 >[!CONTEXTUALHELP]
 >id="cja_datafeed_lookback_date_range"
 >title="Lookback-Datumsbereich"
->abstract="Steuert, wie weit Customer Journey Analytics bei der Verarbeitung der Daten-Feed-Bereitstellung zurückblickt.<br/>Mit dieser Einstellung wird das Häufigkeitsfenster (Stunde oder Tag) nicht geändert. Der Lookback-Datumsbereich kann jedoch Auswirkungen auf die bereitgestellten Daten haben. Die Segmentqualifikation, die Sitzungsberechnung und die Dimensionspersistenz sind alle vom Lookback-Datumsbereich betroffen."
+>abstract="Steuert, wie weit Customer Journey Analytics bei der Verarbeitung der Daten-Feed-Bereitstellung zurückblickt.<br/>Mit dieser Einstellung wird das Häufigkeitsfenster (Stunde oder Tag) nicht geändert. Der Lookback-Datumsbereich kann jedoch Auswirkungen auf die bereitgestellten Daten haben. Die Segmentqualifikation, die Sitzungsberechnung, einige abgeleitete Feldtransformationen und die Dimensionspersistenz sind alle vom Lookback-Datumsbereich betroffen."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -74,36 +74,106 @@ Bevor Sie einen Daten-Feed erstellen, müssen Sie über grundlegende Kenntnisse 
    | [!UICONTROL **Beschreibung**] | Geben Sie eine Beschreibung für den Daten-Feed an. Die von Ihnen hinzugefügte Beschreibung ist beim Bearbeiten des Daten-Feeds sichtbar. |
    | [!UICONTROL **Datenansicht**] | Wählen Sie die Datenansicht aus, die die zu exportierenden Daten enthält. |
 
-1. Geben [!UICONTROL **im Abschnitt**] Datenformatierung“ die folgenden Informationen an:
-
-   | Feld | Funktion |
-   |---------|----------|
-   | [!UICONTROL **Komprimierungsformat**] | Der verwendete Komprimierungstyp. **Gzip** gibt Dateien im Format `.tar.gz` aus. **Zip** gibt Dateien im Format `.zip` aus. |
-   | [!UICONTROL **Verpackungstyp**] | Wählen Sie für die meisten Daten-Feeds [!UICONTROL **Mehrere Dateien**] aus. Mit dieser Option werden Ihre Daten in unkomprimierte 2-GB-Chunks unterteilt. (Wenn die Option [!UICONTROL **Mehrere Dateien**] ausgewählt ist und die unkomprimierten Daten für das Berichtsfenster weniger als 2 GB betragen, wird eine Datei gesendet.) Wenn Sie **Einzeldatei** auswählen, wird die `hit_data.tsv` in einer einzelnen, potenziell umfangreichen Datei ausgegeben. |
-   | [!UICONTROL **Manifestdatei**] | Wählen Sie aus, ob bei jeder Daten-Feed-Bereitstellung eine Manifestdatei enthalten sein soll. <p>Sie können aus den folgenden Optionen wählen:</p><ul><li>**[!UICONTROL Manifestdatei]**: Enthält Informationen für jede Datei, die im Daten-Feed enthalten ist.</li><li>**[!UICONTROL Datei beenden (alt)]**: Gibt an, dass der Daten-Feed erfolgreich abgeschlossen wurde. Es sind keine weiteren Informationen enthalten. Diese Option eignet sich für bestehende Feeds, die diese Option ursprünglich verwendet haben und erneut verarbeitet werden müssen. Sie ist nur verfügbar, wenn Daten-Feed-Daten in einem einzigen Paket gesendet werden. </li><li>**[!UICONTROL None]**: Keine Datei enthalten</li></ul> |
-   | [!UICONTROL **Manifest senden, auch wenn keine Daten vorhanden sind**] | Bestimmt, ob Adobe eine Manifestdatei <!--[manifest file](/help/export/analytics-data-feed/c-df-contents/datafeeds-contents.md#feed-manifest)--> an das Ziel senden soll, wenn für ein Feed-Intervall keine Daten erfasst werden. Wenn Sie **Manifestdatei** auswählen, erhalten Sie eine Manifestdatei ähnlich der folgenden, wenn keine Daten erfasst werden:<p>`text`</p><p>`Datafeed-Manifest-Version: 1.0`</p><p>`Lookup-Files: 0`</p><p>`Data-Files: 0`</p><p> `Total-Records: 0`</p> |
-   | [!UICONTROL **Ersetzen Sie Betriebssystemzeichenfolgen**] | Beim Erfassen von Daten können einige Zeichen (z. B. neue Zeilen) Probleme verursachen. Wählen Sie diese Option, um diese Zeichen aus den Feed-Dateien zu entfernen.<p>Diese Option erkennt die folgenden in Kundendaten eingebetteten Zeichenfolgensequenzen und ersetzt sie durch ein Leerzeichen:</p> <ul><li>**Windows:** CRLF, CR oder TAB</li><li>**Mac und Linux:** \n, \r oder \t</li></ul> |
-   | [!UICONTROL **Dynamische Suchen aktivieren**] | Dynamische Suchen ermöglichen es Ihnen, zusätzliche Suchdateien in Ihrem Daten-Feed zu erhalten, die sonst nicht verfügbar sind. Mit dieser Einstellung können die folgenden Lookup-Tabellen mit jeder Daten-Feed-Datei gesendet werden:<ul><li> **Betreibername**</li><li>**Attribute für Mobilgeräte**</li><li>**Betriebssystemtyp**</li></ul><!--<p>For more information, see [Dynamic lookups](/help/export/analytics-data-feed/c-df-contents/dynamic-lookups.md).</p>--> |
-   | **Zulassen von verspäteten Treffern** | Historische Daten können eingehen, nachdem die Verarbeitung eines Daten-Feed-Auftrags für eine bestimmte Stunde oder einen bestimmten Tag beendet wurde, z. B. über Treffer mit Zeitstempeln oder Datenquellen.<p>Wählen Sie diese Option aus, um Daten einzuschließen, die nach Abschluss des Daten-Feed-Auftrags innerhalb der festgelegten Reporting-Frequenz (in der Regel täglich oder stündlich) eingegangen sind. Wenn diese Option aktiviert ist, prüft das System bei jeder Verarbeitung eines Daten-Feeds alle eingegangenen verspäteten Treffer und bündelt diese mit der nächsten gesendeten Daten-Feed-Datei.</p><!--<p>For more information, see [Late-arriving hits](/help/export/analytics-data-feed/c-df-contents/late-arriving-hits.md).</p>--> |
-   | **Lookback-Fenster** (für verspätete Treffer) | Diese Option wird angezeigt, wenn die Option **[!UICONTROL Verspätete Treffer zulassen]** aktiviert ist. Wählen Sie das Lookback-Fenster aus, um den Zeitrahmen der enthaltenen späten Treffer zu begrenzen. Wählen Sie **[!UICONTROL Unbegrenzt]** aus, wenn Sie alle verspäteten Treffer unabhängig von der Verspätung zulassen möchten. Sie können ein voreingestelltes Intervall auswählen, z. B. **[!UICONTROL 1 Stunde]**, **[!UICONTROL 2 Stunden]**, **[!UICONTROL 1 Woche]**, **[!UICONTROL 2 Wochen]** usw. Oder wählen Sie **[!UICONTROL Benutzerdefiniertes Lookback-Fenster]** und geben Sie dann im Feld **[!UICONTROL Benutzerdefiniertes Lookback]** ein Lookback-Fenster mit bis zu 26.280 Stunden an. |
-
 1. Stellen Sie [!UICONTROL **Abschnitt**] Datenstruktur) sicher, dass im Feld **[!UICONTROL Datenansicht“ die richtige]** ausgewählt ist. <p>Beachten Sie bei der Auswahl einer Datenansicht Folgendes:</p> <ul><li>Wenn mehrere Daten-Feeds für dieselbe Datenansicht erstellt werden, muss jeder Daten-Feed unterschiedliche Spaltendefinitionen haben.</li><li>Die Liste der verfügbaren Spalten hängt vom Anmeldeunternehmen ab, zu dem die ausgewählte Datenansicht gehört. Wenn Sie die Datenansicht ändern, kann sich die Liste der verfügbaren Spalten ändern. </li></ul>
 
-1. Verwenden Sie eine oder beide der folgenden Methoden, um zu bestimmen, welche Datenspalten in den Feed aufgenommen werden sollen:
+1. Hinzufügen von Spalten zur Daten-Feed-Konfiguration. Wählen **[!UICONTROL im Abschnitt &quot;]**&quot; auf der linken Seite alle Spalten aus, die Sie einbeziehen möchten, und klicken Sie dann auf **[!UICONTROL Einschließen]**. Alle Datenspalten in Adobe Analytics sind verfügbar. Sie können mehrere Spalten auswählen, indem Sie **[!UICONTROL Umschalt]** gedrückt halten oder **[!UICONTROL Befehl]** (in macOS) oder **[!UICONTROL Strg]** (in Windows) gedrückt halten. Klicken Sie auf **[!UICONTROL Alle hinzufügen]**, um alle Spalten in einen Daten-Feed einzubeziehen.
 
-   * **Spalten einzeln hinzufügen:** Wählen Sie im Abschnitt **[!UICONTROL Verfügbar]** auf der linken Seite alle Spalten aus, die Sie einbeziehen möchten, und klicken Sie dann auf **[!UICONTROL Einschließen]**. Alle Datenspalten in Adobe Analytics sind verfügbar. Sie können mehrere Spalten auswählen, indem Sie **[!UICONTROL Umschalt]** gedrückt halten oder **[!UICONTROL Befehl]** (in macOS) oder **[!UICONTROL Strg]** (in Windows) gedrückt halten. Klicken Sie auf **[!UICONTROL Alle hinzufügen]**, um alle Spalten in einen Daten-Feed einzubeziehen.
+   Hinzugefügte Spalten werden im Abschnitt **[!UICONTROL Enthalten]** auf der rechten Seite angezeigt.
 
-     Hinzugefügte Spalten werden im Abschnitt **[!UICONTROL Enthalten]** auf der rechten Seite angezeigt.
+   Verwenden Sie die folgenden Informationen, um Dimensionen zu verstehen, die immer enthalten sind, Dimensionen, die nicht enthalten sein können, und Metriken, die ersetzt werden müssen:
 
-   * **Spaltenvorlage hinzufügen:** Wählen Sie im Feld **[!UICONTROL Spaltenvorlagen]** eine hinzuzufügende Spaltenvorlage aus. Eine Spaltenvorlage ist eine vordefinierte Gruppe von Spalten, und Adobe bietet standardmäßig mehrere Spalten.
+   +++ Dimensionen, die immer in Daten-Feeds enthalten sind
 
-     Alle in der Vorlage enthaltenen Spalten werden im Bereich **[!UICONTROL Enthalten]** auf der rechten Seite angezeigt.
+   Die folgenden Komponenten müssen in jedem Daten-Feed enthalten sein:
 
-1. (Optional) Um eine Spaltenvorlage zu erstellen, die auf dem aktuell erstellten Daten-Feed basiert, wählen Sie **[!UICONTROL Als Vorlage speichern]**, geben Sie einen Namen für die Vorlage an und klicken Sie auf **[!UICONTROL Speichern]**. Diese Option ist nützlich, wenn Sie zusätzliche Daten-Feeds mit denselben Spalten erstellen möchten.
+   | Name der Komponente | Anmerkungen | Daten-Feeds | Sonstige Berichte |
+   |---|---|---|---|
+   | Zeitstempel | Zeitstempel des Ereigniszeitraums. Millisekundengranularität. In UTC vertreten. | Obligatorisch | Nicht verfügbar |
+   | Zeilen-ID | Eindeutige Zeilenkennung | Obligatorisch | Nicht verfügbar |
+   | Sitzungs-ID | Eindeutige Kennung für jede Sitzung | Obligatorisch | Nicht verfügbar |
+   | Personen-ID | Die Personenkennung für die Datenansicht und die Verbindung | Obligatorisch | Optionaler Standard |
+   | Konto-ID (B2B) | Konto-ID bei Verwendung des Konto-Containers | Obligatorisch (nur B2B) | Optionaler Standard (nur B2B) |
 
-   ![Erstellen einer Spaltenvorlage beim Erstellen eines Daten-Feeds](assets/data-feed-template-create2.png)
+   +++
 
-1. (Optional) Um eine Liste der enthaltenen Spalten im CSV-Format herunterzuladen, wählen Sie **[!UICONTROL Spalten herunterladen]** aus. Diese Option kann für Daten-Feeds mit einer großen Anzahl von Spalten nützlich sein.
+   +++ Dimensionen, die nicht in Daten-Feeds enthalten sein können
+
+   Customer Journey Analytics-Standarddimensionen können nicht in Daten-Feeds enthalten sein. In der folgenden Tabelle sind diese Dimensionen aufgeführt:
+
+   | Name der Komponente | Anmerkungen | Daten-Feeds |
+   |---|---|---|
+   | 5 Minuten | Intervall von fünf Minuten, in dem Ereignisse aufgetreten sind (abgerundet) | Nicht verfügbar |
+   | 15 Minuten | Intervall von 15 Minuten, in dem Ereignisse aufgetreten sind (abgerundet) | Nicht verfügbar |
+   | 30 Minuten | Intervall von 30 Minuten, in dem Ereignisse aufgetreten sind (abgerundet) | Nicht verfügbar |
+   | Tag | Tag, an dem ein Ereignis aufgetreten ist | Nicht verfügbar |
+   | Wochentag | Wochentag, an dem ein Ereignis aufgetreten ist | Nicht verfügbar |
+   | Tag des Monats | Tag des Monats, an dem ein Ereignis aufgetreten ist | Nicht verfügbar |
+   | Ereignistiefe | Numerischer Folgewert (1, 2, 3 usw.) Jeder Ereignisinteraktion innerhalb einer Sitzung zugewiesen | Nicht verfügbar |
+   | Stunde | Stunde, in der ein Ereignis aufgetreten ist (abgerundet) | Nicht verfügbar |
+   | Stunde des Tages | Uhrzeit, zu der ein Ereignis aufgetreten ist (abgerundet) | Nicht verfügbar |
+   | Minute | Minute, in der ein Ereignis aufgetreten ist (abgerundet) | Nicht verfügbar |
+   | Minute der Stunde | Minute der Stunde, in der ein Ereignis aufgetreten ist (abgerundet) | Nicht verfügbar |
+   | Monat | Monat, in dem ein Ereignis aufgetreten ist | Nicht verfügbar |
+   | Monat des Jahres | Monat des Jahres, in dem ein Ereignis aufgetreten ist | Nicht verfügbar |
+   | Quartal | Quartal, in dem ein Ereignis aufgetreten ist | Nicht verfügbar |
+   | Quartal des Jahres | Quartal des Jahres, in dem ein Ereignis aufgetreten ist | Nicht verfügbar |
+   | Second | Zweites Ereignis eingetreten (abgerundet) | Nicht verfügbar |
+   | Woche | Woche, in der ein Ereignis aufgetreten ist | Nicht verfügbar |
+   | Woche des Jahres | Woche des Jahres, in dem ein Ereignis aufgetreten ist | Nicht verfügbar |
+   | Jahr | Jahr, in dem ein Ereignis aufgetreten ist | Nicht verfügbar |
+
+   +++
+
+   +++ Metriken, die in Daten-Feeds ersetzt werden müssen
+
+   Die folgenden Customer Journey Analytics-Metriken müssen ersetzt werden:
+
+   | Name der Komponente | Anmerkungen | Daten-Feeds |
+   |---|---|---|
+   | Konten | [B2B edition] basierend auf der in der Verbindung angegebenen Konto-ID | Nicht verfügbar. Anzahl der eindeutigen Konten-ID verwenden. |
+   | Käufergruppe | [B2B edition] Einkaufsgruppen basierend auf der Einkaufsgruppen-ID in der Verbindung | Nicht verfügbar. Anzahl der unterschiedlichen Einkaufsgruppen-IDs verwenden. |
+   | Ereignisse | Anzahl der Zeilen aus allen Ereignisdatensätzen in einer Verbindung | Nicht verfügbar. Anzahl der eindeutigen Zeilen-ID verwenden. |
+   | Globale Konten | [B2B edition] Basierend auf der globalen Konto-ID in der Verbindung | Nicht verfügbar. Anzahl der eindeutigen globalen Konten-ID verwenden. |
+   | Opportunities | [B2B edition] Opportunities basierend auf der Opportunity-ID in der Verbindung | Nicht verfügbar. Anzahl der eindeutigen Opportunity-ID verwenden. |
+   | Personen | Basiert auf der in einer Verbindung angegebenen Personen-ID | Nicht verfügbar. Anzahl der eindeutigen Personen-ID verwenden. |
+   | Konversationen | Anzahl der Unterhaltungen | Nicht verfügbar. Anzahl der verschiedenen Konversations-IDs verwenden. |
+   | Sitzungsenden | Anzahl der Ereignisse, die das letzte Ereignis einer Sitzung waren | Nicht verfügbar |
+   | Sitzungsstarts | Anzahl der Ereignisse, die das erste Ereignis einer Sitzung waren | Nicht verfügbar |
+   | Sitzungen | Basiert auf den Sitzungseinstellungen der Datenansicht | Nicht verfügbar. Anzahl der eindeutigen Sitzungs-ID verwenden. |
+   | Verbrachte Zeit (Sekunden) | Addiert die Zeit zwischen zwei verschiedenen Dimensionswerten | Nicht verfügbar |
+
+   +++
+
+   +++ Optionale Standardkomponenten
+
+   | Name der Komponente | Typ | Anmerkungen | Daten-Feeds |
+   |---|---|---|---|
+   | Vormittag/Nachmittag | Zeitunterteilungsdimension | Vormittag oder Nachmittag | Nicht verfügbar |
+   | Batch-ID | Dimension | Kennung für einen Experience Platform-Batch | Verfügbar |
+   | Datensatz-ID | Dimension | Kennung für einen Experience Platform-Datensatz | Verfügbar |
+   | Tag des Monats | Zeitunterteilungsdimension | 1-31 | Nicht verfügbar |
+   | Wochentag | Zeitunterteilungsdimension | Montag bis Sonntag | Nicht verfügbar |
+   | Tag des Jahres | Zeitunterteilungsdimension | 1-366 | Nicht verfügbar |
+   | Stunde des Tages | Zeitunterteilungsdimension | 0-23 | Nicht verfügbar |
+   | Monat des Jahres | Zeitunterteilungsdimension | Januar-Dezember | Nicht verfügbar |
+   | Erstmalige Sitzungen | Metrik | Die erste definierte Sitzung einer Person im Reporting-Fenster | Nicht verfügbar |
+   | Rückkehrende Sitzungen | Metrik | Sitzungen, die nicht die Erstsitzung einer Person waren | Nicht verfügbar |
+   | Personen-ID | Dimension | Die Personenkennung für die Datenansicht und die Verbindung | **Obligatorisch** |
+   | Personen-ID-Namespace | Dimension | Typ der ID, aus der die Personen-ID besteht (z. B. E-Mail- oder Cookie-ID) | Verfügbar |
+   | ID des globalen Kontos | [B2B edition] Dimension | Globale Konto-ID bei Verwendung des Containers für globale Konten | Verfügbar |
+   | Konto-ID | [B2B edition] Dimension | Konto-ID bei Verwendung des Konto-Containers | **Obligatorisch** (nur B2B) |
+   | Opportunity-ID | [B2B edition] Dimension | Opportunity-ID bei Verwendung des Opportunity-Containers | Verfügbar |
+   | Käufergruppen-ID | [B2B edition] Dimension | Einkaufsgruppen-ID bei Verwendung des Einkaufsgruppen-Containers | Verfügbar |
+   | Quartal des Jahres | Zeitunterteilungsdimension | Q1, Q2, Q3, Q4 | Nicht verfügbar |
+   | Sitzung wiederholen | Metrik | Sitzungen, die nicht die allererste Sitzung einer Person waren | Nicht verfügbar |
+   | Sitzungstyp | Dimension | Zwei Werte: Erstmalig oder Wiederkehrend | Nicht verfügbar |
+   | Aufgewendete Zeit pro Ereignis | Dimension | Sammelt die Metrik Aufgewendete Zeit in Ereignis-Buckets | Nicht verfügbar |
+   | Aufgewendete Zeit pro Sitzung | Dimension | Fasst die Metrik Aufgewendete Zeit in Sitzungs-Buckets zusammen | Nicht verfügbar |
+   | Aufgewendete Zeit pro Person | Dimension | Fasst die Metrik Aufgewendete Zeit in Behältern des Typs Person zusammen | Nicht verfügbar |
+   | Wochenende/Wochentag | Zeitunterteilungsdimension | Wochenende oder Wochentag | Nicht verfügbar |
+
+   +++
+
 
 1. Geben [!UICONTROL **im Abschnitt**] Versand“ die folgenden Informationen an:
 
@@ -113,8 +183,8 @@ Bevor Sie einen Daten-Feed erstellen, müssen Sie über grundlegende Kenntnisse 
    | [!UICONTROL **Startdatum**] | Geben Sie das Datum an, an dem der Daten-Feed beginnen soll. Um sofort mit der Verarbeitung von Daten-Feeds für historische Daten zu beginnen, stellen Sie sicher, dass [!UICONTROL **Aufstockungs-Feed**] ausgewählt ist, und setzen Sie dieses Datum auf ein beliebiges Datum in der Vergangenheit, wenn Daten erfasst werden. Das Startdatum basiert auf der Zeitzone der Datenansicht. |
    | [!UICONTROL **Enddatum**] | Geben Sie das Datum an, an dem der Daten-Feed beendet werden soll. Das Enddatum basiert auf der Zeitzone der Datenansicht. |
    | [!UICONTROL **Häufigkeit**] | Legen Sie fest, wie oft der Daten-Feed gesendet werden soll. Ereignisse mit Zeitstempeln, die in das Häufigkeitsfenster fallen, werden in den Daten-Feed-Versand aufgenommen. Die Felder [!UICONTROL **Lookback**] Datumsbereich und [!UICONTROL **Verarbeitungsverzögerung**] können sich auch darauf auswirken, welche Ereignisse für die von Ihnen gewählte Versandfrequenz in die Daten aufgenommen werden.<p>Wählen Sie diese Option aus, um Daten für eine Stunde oder für einen Tag einzubeziehen:</p><ul><li>**Täglich**: Feeds enthalten Daten eines ganzen Tages von Mitternacht bis Mitternacht in der Zeitzone der Datenansicht. Verwenden Sie diese Option für Aufstockungs-Feeds oder für Live-Feeds.</li><li>**Stündlich**: Feeds enthalten Daten für eine einzige Stunde. Verwenden Sie diese Option für Live-Feeds.</li></ul> |
-   | [!UICONTROL **Lookback-Datumsbereich**] | Steuert, wie weit Customer Journey Analytics bei der Verarbeitung der Daten-Feed-Bereitstellung zurückblickt. <p>Diese Einstellung ändert nicht das Häufigkeitsfenster (Stunde oder Tag), das den Zeitrahmen der Ereignisse definiert, die in die Daten-Feed-Ausgabe aufgenommen werden sollen. Der Lookback-Datumsbereich kann jedoch die bereitgestellten Daten wie folgt beeinflussen: </p><ul><li>**Segmentqualifikation**: Wenn ein Segment auf Ihre Daten-Feed-Definition angewendet wird, bestimmen alle Ereignisse innerhalb des Lookback-Datumsbereichs, ob eine Person qualifiziert ist. Die Container-Einstellung des Segments bestimmt den Umfang. (Mögliche Container sind: Person, Sitzung oder Ereignis. B2B hat die folgenden zusätzlichen Container: Globales Konto, Konto, Opportunity, Einkaufsgruppe.)  <p>Wenn beispielsweise ein Personen-Container verwendet wird und die Person für den Datumsbereich „Lookback“ qualifiziert ist, sind auch alle Ereignisse dieser Person im Häufigkeitsfenster qualifiziert.</p></li><li>**Sitzungsberechnung**: Sitzungsgrenzen werden anhand von Daten innerhalb des Lookback-Datumsbereichs berechnet.</li><li>**Dimension-Persistenz**: Wenn Sie sich dafür entscheiden, die Persistenz für eine einzelne Dimension festzulegen, wählen Sie auch eine Gültigkeit aus, um zu bestimmen, wie lange ein Dimensionselement über das Ereignis hinaus bestehen bleibt, für das es festgelegt ist. <p>Der Lookback-Datumsbereich wirkt sich auf die Persistenz der Dimensionen aus, wenn die Gültigkeit auf eine der folgenden Optionen in der Datenansicht eingestellt ist:</p><ul><li>Für jede Dimension in der Daten-Feed-Definition, die [!UICONTROL **Reporting-Fenster**] als Ablaufdatum verwendet, wird der Lookback-Datumsbereich zum neuen Reporting-Fenster.</li><li>Für jede Dimension in der Daten-Feed-Definition, die [!UICONTROL **Benutzerdefinierte Zeit**] als Ablaufdatum verwendet, wird die benutzerdefinierte Zeit ignoriert und der Lookback-Datumsbereich wird für die Gültigkeitsdauer der Dimension verwendet, wenn die ausgewählte benutzerdefinierte Zeit über den Datumsbereich des Lookback hinausgeht.<p>Weitere Informationen zum Festlegen der Persistenz für Dimensionen in der Datenansicht finden Sie unter [Persistenzkomponenteneinstellungen](/help/data-views/component-settings/persistence.md).</p></li></ul> |
-   | [!UICONTROL **Verarbeitungsverzögerung**] | Wählen Sie aus, ob eine bestimmte Zeitdauer gewartet werden soll, bevor eine Daten-Feed-Datei verarbeitet wird. Eine Verzögerung kann nützlich sein, um mobilen Implementierungen die Möglichkeit zu geben, dass Offlinegeräte online gehen und Daten senden können. Sie kann auch verwendet werden, um die serverseitigen Prozesse Ihrer Organisation bei der Verwaltung zuvor verarbeiteter Dateien zu berücksichtigen. In den meisten Fällen ist keine Verzögerung erforderlich. Sie können einen Feed um bis zu 8 Stunden (480 Minuten) oder sogar länger verzögern, wenn Sie einen benutzerdefinierten Zeitraum auswählen (9.999 Minuten Verzögerung oder etwa 1 Woche).<p>Wenn keine Verzögerung festgelegt ist, werden nur die Ereignisse, die in das Häufigkeitsfenster (letzter Tag oder letzte Stunde) fallen, in den Feed eingeschlossen. |
+   | [!UICONTROL **Lookback-Datumsbereich**] | Steuert, wie weit Customer Journey Analytics bei der Verarbeitung der Daten-Feed-Bereitstellung zurückblickt. <p>Diese Einstellung ändert nicht das Häufigkeitsfenster (Stunde oder Tag), das den Zeitrahmen der Ereignisse definiert, die in die Daten-Feed-Ausgabe aufgenommen werden sollen. Der Lookback-Datumsbereich kann jedoch die bereitgestellten Daten wie folgt beeinflussen: </p><ul><li>**Segmentqualifikation**: Wenn ein Segment auf Ihre Daten-Feed-Definition angewendet wird, bestimmen alle Ereignisse innerhalb des Lookback-Datumsbereichs, ob eine Person qualifiziert ist. Die Container-Einstellung des Segments bestimmt den Umfang. (Mögliche Container sind: Person, Sitzung oder Ereignis. B2B hat die folgenden zusätzlichen Container: Globales Konto, Konto, Opportunity, Einkaufsgruppe.)  <p>Wenn beispielsweise ein Personen-Container verwendet wird und die Person für den Datumsbereich „Lookback“ qualifiziert ist, sind auch alle Ereignisse dieser Person im Häufigkeitsfenster qualifiziert.</p></li><li>**Sitzungsberechnung**: Sitzungsgrenzen werden anhand von Daten innerhalb des Lookback-Datumsbereichs berechnet.</li><li>**Abgeleitete Feldtransformationen**: Alle abgeleiteten Feldfunktionen, die auf Container verweisen (z. B. die Funktionen Zusammenfassen, Deduplizieren und Tiefe), verwenden den Lookback-Datumsbereich in Daten-Feed-Exporten.</li><li>**Dimension-Persistenz**: Wenn Sie sich dafür entscheiden, die Persistenz für eine einzelne Dimension festzulegen, wählen Sie auch eine Gültigkeit aus, um zu bestimmen, wie lange ein Dimensionselement über das Ereignis hinaus bestehen bleibt, für das es festgelegt ist. <p>Der Lookback-Datumsbereich wirkt sich auf die Persistenz der Dimensionen aus, wenn die Gültigkeit auf eine der folgenden Optionen in der Datenansicht eingestellt ist:</p><ul><li>Für jede Dimension in der Daten-Feed-Definition, die [!UICONTROL **Reporting-Fenster**] als Ablaufdatum verwendet, wird der Lookback-Datumsbereich zum neuen Reporting-Fenster.</li><li>Für jede Dimension in der Daten-Feed-Definition, die [!UICONTROL **Benutzerdefinierte Zeit**] als Ablaufdatum verwendet, wird die benutzerdefinierte Zeit ignoriert und der Lookback-Datumsbereich wird für die Gültigkeitsdauer der Dimension verwendet, wenn die ausgewählte benutzerdefinierte Zeit über den Datumsbereich des Lookback hinausgeht.<p>Weitere Informationen zum Festlegen der Persistenz für Dimensionen in der Datenansicht finden Sie unter [Persistenzkomponenteneinstellungen](/help/data-views/component-settings/persistence.md).</p></li></ul> |
+   | [!UICONTROL **Verarbeitungsverzögerung**] | Wählen Sie aus, ob eine bestimmte Zeitdauer gewartet werden soll, bevor eine Daten-Feed-Datei verarbeitet wird. Alle verspätet eintreffenden Treffer, die während der Verarbeitungsverzögerung eintreten, werden im Daten-Feed berücksichtigt.<p>Eine Verzögerung kann nützlich sein, um mobilen Implementierungen die Möglichkeit zu geben, dass Offlinegeräte online gehen und Daten senden können. Sie kann auch verwendet werden, um die serverseitigen Prozesse Ihrer Organisation bei der Verwaltung zuvor verarbeiteter Dateien zu berücksichtigen. In den meisten Fällen ist keine Verzögerung erforderlich. Sie können einen Feed um bis zu 8 Stunden (480 Minuten) oder sogar länger verzögern, wenn Sie einen benutzerdefinierten Zeitraum auswählen (9.999 Minuten Verzögerung oder etwa 1 Woche).<p>Wenn keine Verzögerung festgelegt ist, werden nur die Ereignisse, die in das Häufigkeitsfenster (letzter Tag oder letzte Stunde) fallen, in den Feed eingeschlossen.</p> <p>Besuche müssen nach diesem Stichtag beginnen, um einbezogen zu werden; Besuche, die vor dem Stichtag beginnen und innerhalb der Verarbeitungsverzögerung enden, sind nicht eingeschlossen.</p> <p>Erforderlich für Sitzungen, Persistenz und Segmente.</p><p>Wird nicht für Dimensionen verwendet. Dimensionen werden pro Dimension auf der Grundlage der Zuordnung und des Ablaufs der Dimension gesteuert. Dimension-Lookbacks können die Verarbeitungsverzögerung nicht überschreiten.</p> |
 
 1. Konfigurieren Sie [!UICONTROL **Abschnitt**] Ziel“ das Ziel, an das die Daten gesendet werden sollen.
 
@@ -136,7 +206,7 @@ Bevor Sie einen Daten-Feed erstellen, müssen Sie über grundlegende Kenntnisse 
    | [!UICONTROL **Konto**] | Führen Sie einen der folgenden Schritte aus:<ul><li>**Vorhandenes Konto verwenden:** Wählen Sie das Dropdown-Menü neben dem Feld **[!UICONTROL Konto]** aus. Oder geben Sie den Kontonamen ein und wählen Sie ihn dann aus dem Dropdown-Menü aus. <p>Konten stehen Ihnen nur zur Verfügung, wenn Sie sie konfiguriert haben oder wenn sie für eine Organisation freigegeben wurden, der Sie angehören.</p></li><li>**Neues Konto erstellen:** Wählen Sie **[!UICONTROL Neu hinzufügen]** unter dem Feld **[!UICONTROL Konto]** aus. Informationen zum Konfigurieren des Kontos finden Sie unter [Konfigurieren von Cloud-Exportkonten](/help/components/exports/cloud-export-accounts.md).</li></ul> |
    | [!UICONTROL **Ort**] | Führen Sie einen der folgenden Schritte aus:<ul><li>**Vorhandenen Speicherort verwenden:** Wählen Sie das Dropdown-Menü neben dem Feld **[!UICONTROL Speicherort]** aus. Oder geben Sie den Ortsnamen ein und wählen Sie ihn dann aus dem Dropdown-Menü aus.</li><li>**Neuen Speicherort erstellen:** Wählen Sie **[!UICONTROL Neu hinzufügen]** unter dem Feld **[!UICONTROL Speicherort]** aus. Informationen zum Konfigurieren des Speicherorts finden Sie unter [Konfigurieren von Cloud-Exportspeicherorten](/help/components/exports/cloud-export-locations.md).</li></ul> |
    | [!UICONTROL **Nach Abschluss benachrichtigen**] | Geben Sie eine oder mehrere E-Mail-Adressen an, an die eine Benachrichtigung gesendet werden soll, nachdem der Daten-Feed erfolgreich gesendet wurde oder nicht gesendet werden kann. Mehrere E-Mail-Adressen müssen durch ein Komma getrennt werden. |
-   | [!UICONTROL **Manifest aktivieren**] | Wählen Sie aus, ob bei jeder Daten-Feed-Bereitstellung eine Manifestdatei enthalten sein soll. <p>Sie können aus den folgenden Optionen wählen:</p><ul><li>**[!UICONTROL Manifestdatei]**: Enthält Informationen für jede Datei, die im Daten-Feed enthalten ist.</li><li>**[!UICONTROL Datei beenden (alt)]**: Gibt an, dass der Daten-Feed erfolgreich abgeschlossen wurde. Es sind keine weiteren Informationen enthalten. Diese Option eignet sich für bestehende Feeds, die diese Option ursprünglich verwendet haben und erneut verarbeitet werden müssen. Sie ist nur verfügbar, wenn Daten-Feed-Daten in einem einzigen Paket gesendet werden. </li><li>**[!UICONTROL None]**: Keine Datei enthalten</li></ul> |
+   | [!UICONTROL **Manifest aktivieren**] | Wählen Sie aus, ob bei jeder Daten-Feed-Bereitstellung eine Manifestdatei enthalten sein soll. Die Manifestdatei enthält Informationen für jede Datei, die im Daten-Feed enthalten ist. |
 
 1. Wählen Sie **[!UICONTROL Speichern]** aus.
 
