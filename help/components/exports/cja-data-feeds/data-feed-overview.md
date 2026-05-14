@@ -5,53 +5,31 @@ title: Überblick über Analytics-Daten-Feed
 feature: Components
 hide: true
 exl-id: 991a7861-cbde-4d55-935c-d56c8031853e
-source-git-commit: d79c6d883f436d97925e007f453879e20b4fcc04
+source-git-commit: 5e77857ca846767e3b9e7479baa4a4b18c6e3c8f
 workflow-type: tm+mt
-source-wordcount: '333'
-ht-degree: 40%
+source-wordcount: '221'
+ht-degree: 21%
 
 ---
 
 # Übersicht über Daten-Feeds
 
-Daten-Feeds sind eine leistungsstarke Methode, um Rohdaten aus Customer Journey Analytics zu erhalten. Diese Rohdaten können nach Ermessen Ihrer Organisation auf anderen Plattformen außerhalb von Adobe verwendet werden. Die Daten werden in stündlichen Stapeln am Ende jeder Stunde oder in täglichen Stapeln am Ende jedes Tages bereitgestellt.
+Daten-Feeds sind eine leistungsstarke Methode, um Rohdaten aus Customer Journey Analytics zu erhalten. Sie können diese Rohdaten nach Ermessen Ihres Unternehmens auf anderen Plattformen außerhalb von Adobe verwenden. Die Daten werden in stündlichen Stapeln am Ende jeder Stunde oder in täglichen Stapeln am Ende jedes Tages bereitgestellt.
 
 ## Voraussetzungen
 
-Bevor Sie Daten-Feeds verwenden, müssen Sie alle folgenden Anforderungen erfüllen.
+Stellen Sie sicher, dass Sie alle folgenden Anforderungen erfüllen, bevor Sie Daten-Feeds verwenden:
 
-* Eine funktionierende Implementierung mit Daten, die in Adobe Customer Journey Analytics aufgenommen werden. <!-- For more information, see Data ingestion overview - add link -->
-* Ihr Konto ist ein Analytics-Produktadministrator oder Ihr Konto gehört zu einem Produktprofil mit Zugriff auf Daten-Feeds. <!--???-->
-* Ein Bucket, der auf Amazon S3, Google Cloud Platform, Azure RBAC oder Azure SAS konfiguriert ist.<!--Which cloud providers do we support??-->
-* (Legacy: Nur für ältere FTP- und SFTP-Zieltypen erforderlich) Eine FTP-Site und Anmeldedaten stehen zur Verfügung (FTP-Anmeldedaten werden von Ihrem Unternehmen bereitgestellt)<!--Delete???-->
+* Eine funktionierende Implementierung mit Daten, die in Adobe Customer Journey Analytics <!-- For more information, see Data ingestion overview - add link --> aufgenommen werden
+* Ihr Konto ist ein Analytics-Produktadministrator oder Ihr Konto gehört zu einem Produktprofil mit Zugriff auf Daten-Feeds <!--???-->
+* Ein Bucket, der für {DNL Amazon S3}, {DNL Google Cloud Platform}, {DNL Azure RBAC} oder {DNL Azure SAS}
 
-## Vergleichen von Daten-Feeds in Customer Journey Analytics und Adobe Analytics
+## Erste Schritte
 
-Die Daten-Feed-Funktion in Customer Journey Analytics unterscheidet sich von Adobe Analytics. Weitere Informationen finden Sie unter [Vergleichen von Daten-Feeds in Customer Journey Analytics und Adobe Analytics](/help/components/exports/cja-data-feeds/df-comparison.md).
+Um mit der Verwendung von Daten-Feeds in Customer Journey Analytics zu beginnen, sollten Sie zunächst verstehen, wie sich Daten-Feeds in Customer Journey Analytics von Daten-Feeds in Adobe Analytics unterscheiden. Nachdem Sie die Unterschiede verstanden haben, können Sie Adobe Analytics-Daten-Feeds Customer Journey Analytics zuordnen und dann mit der Erstellung eines Daten-Feeds beginnen.
 
+1. [Verstehen Sie die Unterschiede zwischen Daten-Feeds in Customer Journey Analytics und Adobe Analytics](/help/components/exports/cja-data-feeds/df-comparison.md).
 
-## Nächste Schritte
+1. [Ordnen Sie Adobe Analytics-Daten-Feed-Spalten Customer Journey Analytics zu](/help/components/exports/cja-data-feeds/aa-cja-column-reference.md).
 
-Die folgenden Ressourcen helfen Ihnen dabei, den grundlegenden Workflow beim Abrufen von Daten-Feeds zu verstehen. Sobald Sie den grundlegenden Workflow kennen, können Sie mit Teams in Ihrer Organisation zusammenarbeiten, um Rohdaten in einer Datenbank zu speichern oder in sie aufzunehmen.
-
-* Best Practices für Daten-Feeds <!--add link--> Best Practices für die Erstellung und Verwaltung von Daten-Feeds.
-* Erstellen eines Daten-Feeds<!--add link-->: Technische Details zum Erstellen eines Daten-Feeds und ausführlichere Erläuterung der einzelnen Felder
-* Daten-Feeds verwalten<!--add link--> Weitere Informationen zum Navigieren in der Daten-Feed-Benutzeroberfläche
-* Daten-Feed-Inhalte <!--add link-->: Verstehen Sie, was sich in der komprimierten Datei befindet
-* Datenspaltendefinitionen <!--add link-->: Eine umfassende Liste aller verfügbaren Spalten.
-
-<!-- Is this still the output users can download from the destination? I aske Jun. -->
-
->[!BEGINSHADEBOX]
-
-Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Navigieren in der Daten-Feed-Oberfläche](https://video.tv.adobe.com/v/3428560?captions=ger&quality=12&learn=on){target="_blank"} finden Sie ein Demovideo.
-
->[!ENDSHADEBOX]
-
-
-
->[!BEGINSHADEBOX]
-
-Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Ermitteln Ihrer Daten-Feed-ID](https://video.tv.adobe.com/v/3480889?captions=ger&quality=12&learn=on){target="_blank"} finden Sie ein Demovideo.
-
->[!ENDSHADEBOX]
+1. [Erstellen eines Daten-Feeds](/help/components/exports/cja-data-feeds/create-feed.md).
