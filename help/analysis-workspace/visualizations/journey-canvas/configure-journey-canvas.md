@@ -22,9 +22,9 @@ role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
 topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 11f60dbdd2858f173896a131c08229e0c7f29a69
+source-git-commit: 5513a755345188e6f7ff5d4c566d807d09e25f68
 workflow-type: tm+mt
-source-wordcount: 6456
+source-wordcount: 6457
 ht-degree: 91%
 
 ---
@@ -466,7 +466,7 @@ Beachten Sie beim Anwenden einer Aufschlüsselung Folgendes:
 
 * Aufschlüsselungsdaten werden aktualisiert, wenn Änderungen an einem früheren Punkt der Journey vorgenommen werden.
 
-#### Anwenden einer Aufschlüsselung auf einen oder mehrere Knoten oder Pfeile
+#### Anwenden einer Aufschlüsselung auf Knoten, Pfeile oder Fallout-Daten
 
 1. Führen Sie in einer Journey-Arbeitsflächen-Visualisierung einen der folgenden Schritte aus:
 
@@ -572,7 +572,7 @@ So zeigen Sie Trend-Daten an:
 
 1. Wählen Sie [!UICONTROL **Trend**] aus.
 
-### Erstellen eines Segments basierend auf einem Knoten oder Pfeil
+### Erstellen eines Segments basierend auf einem Knoten, einem Pfeil oder Fallout-Daten
 
 Die Option zum Erstellen eines Segments ist für die folgenden Objekte auf der Arbeitsfläche verfügbar:
 
@@ -612,7 +612,7 @@ So löschen Sie Knoten in der Journey-Arbeitsfläche:
 
 ### Ausschließen von Knoten
 
-Wenn Sie einen Knoten von einem Journey ausschließen, werden die Journey-Daten aktualisiert, um Benutzende auszuschließen, die diesen Knoten durchlaufen haben. Die Segmentdefinition für den Journey wird ebenfalls aktualisiert, um Benutzende auszuschließen, die diesen Knoten durchlaufen haben.
+Wenn Sie einen Knoten von einem Journey ausschließen, werden die Journey-Daten aktualisiert, um Journey auszuschließen, die diesen Knoten durchlaufen haben. Die Segmentdefinition für den Journey wird ebenfalls aktualisiert, um Journey auszuschließen, die diesen Knoten durchlaufen haben.
 
 So schließen Sie einen Knoten von einer Journey aus:
 
