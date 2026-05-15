@@ -4,9 +4,9 @@ description: Listet Inhaltsaktualisierungen für Dokumentation zu Customer Journ
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: d15d85f5904bbada26bfd74fdc45217efeddd723
+source-git-commit: 8fc9bde3d0b9eebfcc8185aff78ce0f7f2e7704f
 workflow-type: tm+mt
-source-wordcount: '6910'
+source-wordcount: '6915'
 ht-degree: 94%
 
 ---
@@ -21,7 +21,7 @@ Die folgenden Aktualisierungen wurden seit der ersten Erstellung der Customer Jo
 | Funktion | Beschreibung |
 |---|---|
 | **Mai 2026** | |
-| Tags-agnostische Konfiguration für Content Analytics | [Dokumentation](/help/content-analytics/config/tags-agnostic.md) zur Implementierung von Content Analytics für den Web-Kanal ohne Experience Platform-Datenerfassungs-Tags. |
+| JavaScript-Bibliothek für Content Analytics | Dokumentation zur Implementierung von Content Analytics für den Webkanal mithilfe der [Content Analytics-JavaScript-Bibliothek](/help/content-analytics/config/tags-agnostic.md) ohne Experience Platform-Datenerfassungs-Tags. |
 | Überlegungen zu Data Mirror | [Dokumentation](/help/data-mirror/considerations.md) in der Faktoren beschrieben werden, die Sie beim Einrichten von [Data Mirror-Datensätzen berücksichtigen &#x200B;](/help/data-mirror/data-mirror.md). |
 | Content Analytics Mobile-Kanal | Aktualisierungen der [Content Analytics-Dokumentation](/help/content-analytics/content-analytics.md) um die Funktionen und die Konfiguration des Content Analytics Mobile-Kanals zu beschreiben. |
 | **April 2026** | |

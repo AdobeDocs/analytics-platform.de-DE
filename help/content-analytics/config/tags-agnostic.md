@@ -1,20 +1,20 @@
 ---
-title: Content Analytics Tags-agnostische Konfiguration
-description: Erfahren Sie, wie Sie Content Analytics ohne Verwendung von Datenerfassungs-Tags in Experience Platform konfigurieren.
+title: Content Analytics JavaScript-Bibliothek
+description: Erfahren Sie, wie Sie Content Analytics konfigurieren, ohne Experience Platform-Datenerfassungs-Tags zu verwenden, und stattdessen die Content Analytics JavaScript-Bibliothek verwenden.
 solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin
-source-git-commit: d15d85f5904bbada26bfd74fdc45217efeddd723
+source-git-commit: 8fc9bde3d0b9eebfcc8185aff78ce0f7f2e7704f
 workflow-type: tm+mt
 source-wordcount: '484'
-ht-degree: 5%
+ht-degree: 4%
 
 ---
 
 
-# Agnostische Konfiguration für Content Analytics Tags
+# Content Analytics JavaScript-Bibliothek
 
-Die Adobe Content Analytics JavaScript-Bibliothek ermöglicht das Tracking von inhaltsbezogenen Ereignissen auf Websites, indem Inhaltsdaten über die Experience Platform Edge Network an Adobe Experience Platform gesendet werden. Verwenden Sie diese Bibliothek, wenn Sie Content Analytics ohne Adobe Experience Platform-Tags (Launch) implementieren möchten.
+Die Adobe Content Analytics JavaScript-Bibliothek ermöglicht das Tracking von inhaltsbezogenen Ereignissen auf Websites, indem Inhaltsdaten über die Experience Platform Edge Network an Adobe Experience Platform gesendet werden. Verwenden Sie diese Bibliothek, wenn Sie Content Analytics ohne Adobe Experience Platform Tags implementieren möchten.
 
 >[!NOTE]
 >
@@ -25,7 +25,7 @@ Die Adobe Content Analytics JavaScript-Bibliothek ermöglicht das Tracking von i
 >
 >* Adobe Experience Platform Web SDK (Alloy) muss auf der Seite initialisiert werden, bevor `initializeContentLibrary` aufgerufen wird.
 >* Führen Sie den durch Content Analytics geführten Konfigurationsassistenten aus, um Sie durch alle Schritte zu führen, die zum Einrichten der Voraussetzungen für eine Konfiguration von Content Analytics erforderlich sind.
->* Nachdem die geführte Konfiguration abgeschlossen ist, sind die konfigurationsspezifischen JavaScript-Einstellungen in dieser Konfigurationsansicht verfügbar.
+>* Nachdem die geführte Konfiguration abgeschlossen ist, können die JavaScript-Einstellungen verwendet werden.
 
 
 ## Installation

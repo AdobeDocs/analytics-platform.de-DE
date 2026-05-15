@@ -18,9 +18,9 @@ topic_v2:
   - id: d3cdead0-685a-4489-9250-4bb709942f66
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: d15d85f5904bbada26bfd74fdc45217efeddd723
+source-git-commit: 8fc9bde3d0b9eebfcc8185aff78ce0f7f2e7704f
 workflow-type: tm+mt
-source-wordcount: 4071
+source-wordcount: 4074
 ht-degree: 47%
 
 ---
@@ -505,7 +505,7 @@ Konfigurieren der Datenerfassung:
       1. Geben Sie einen **[!UICONTROL Tags-Namen]** an, z. B. `ACA Test for Documentation`.
       1. Geben Sie **[!UICONTROL Domains]** an, z. B. `example.com`.
 
-     Verwenden Sie eine neue Tags-Eigenschaft, wenn Sie eine Tags-[agnostische Implementierung](/help/content-analytics/config/tags-agnostic.md) von Content Analytics für den Webkanal erstellen möchten. Die Tags-Eigenschaft wird erstellt, Sie werden die Eigenschaft jedoch nicht in der agnostischen Implementierung verwenden. Für die agnostische Implementierung müssen Sie jedoch den Assistenten für geführte Konfigurationen mindestens einmal ausgeführt haben.
+     Verwenden Sie eine neue Tags-Eigenschaft, wenn Sie mithilfe der [Content Analytics-JavaScript-Bibliothek eine Tags-unabhängige Implementierung für den Webkanal erstellen &#x200B;](/help/content-analytics/config/tags-agnostic.md). Die Tags-Eigenschaft wird erstellt, Sie werden die Eigenschaft jedoch nicht in der agnostischen Implementierung verwenden. Für die agnostische Implementierung müssen Sie jedoch den Assistenten für geführte Konfigurationen mindestens einmal ausgeführt haben.
 
 * Geben Sie an, welche Seiten bei der Datenerfassung für Content Analytics ein- oder ausgeschlossen werden sollen. Stellen Sie sicher, dass Sie persönlich identifizierbare Seiten ausschließen.
 
