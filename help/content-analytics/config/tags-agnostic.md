@@ -1,10 +1,10 @@
 ---
-title: Content Analytics JavaScript-Bibliothek
+title: Content Analytics JavaScript Library
 description: Erfahren Sie, wie Sie Content Analytics konfigurieren, ohne Experience Platform-Datenerfassungs-Tags zu verwenden, und stattdessen die Content Analytics JavaScript-Bibliothek verwenden.
 solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin
-source-git-commit: 8fc9bde3d0b9eebfcc8185aff78ce0f7f2e7704f
+source-git-commit: 35abfb5b77384b16beaddab2554a7d48d10be012
 workflow-type: tm+mt
 source-wordcount: '484'
 ht-degree: 4%
@@ -52,7 +52,7 @@ Installieren Sie die Bibliothek mithilfe von `npm`.
 
 Laden Sie die Bibliothek direkt vom CDN.
 
-1. Initialisieren Sie die [Web SDK JavaScript-Bibliothek](https://experienceleague.adobe.com/de/docs/experience-platform/collection/js/install/library) und laden Sie das Content Analytics-Bundle:
+1. Initialisieren Sie die [Web SDK JavaScript-Bibliothek](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/install/library) und laden Sie das Content Analytics-Bundle:
 
    ```html
    <!-- 1. Load and configure Alloy first -->
@@ -74,7 +74,7 @@ Laden Sie die Bibliothek direkt vom CDN.
    ```
 
    wobei
-   * `alloy/2.x.x` bezieht sich auf die Version, die Sie mit der [Web SDK JavaScript Library) verwenden &#x200B;](https://experienceleague.adobe.com/de/docs/experience-platform/collection/js/install/library).
+   * `alloy/2.x.x` bezieht sich auf die Version, die Sie mit der [Web SDK JavaScript Library) verwenden ](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/install/library).
    * `content-analytics/1.x.x` bezieht sich auf die Version, die Sie mit der Content Analytics SDK-Bibliothek verwenden möchten.
 
 2. Der eigenständige Build stellt `window.contentAnalytics` als Initialisierungsfunktion bereit.
