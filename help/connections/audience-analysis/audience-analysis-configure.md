@@ -8,7 +8,7 @@ exl-id: 0db3f6f7-9d7e-41bf-8eb5-02e439bab10a
 source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
 workflow-type: tm+mt
 source-wordcount: '1391'
-ht-degree: 32%
+ht-degree: 33%
 
 ---
 
@@ -46,7 +46,7 @@ ht-degree: 32%
 >[!CONTEXTUALHELP]
 >id="cja-audience-namespace"
 >title="Primären Identity-Namespace verwenden"
->abstract="Aktivieren Sie diese Option, wenn Customer Journey Analytics die in der Identitätszuordnung mit dem Attribut „primary=true“ markierte Identität finden und diese als Personen-ID für die jeweilige Zeile verwenden soll. Diese Identität ist der Primärschlüssel, der in Experience Platform für die Partitionierung verwendet wird. <br/>Wenn Sie diese Option deaktiviert lassen, wählen Sie unten aus dem Feld Identity-Namespace einen Namespace aus. Customer Journey Analytics durchsucht die Identitätszuordnung jeder Zeile nach diesem Namespace-Schlüssel und verwendet die unter diesem Namespace aufgeführte Identität als Personen-ID für die jeweilige Zeile."
+>abstract="Aktivieren Sie diese Option, wenn Customer Journey Analytics die in der Identitätszuordnung mit dem Attribut „primary=true“ markierte Identität finden und diese als Personen-ID für die jeweilige Zeile verwenden soll. Diese Identität ist der Primärschlüssel, der in Experience Platform für die Partitionierung verwendet wird. <br/>Wenn Sie diese Option deaktiviert lassen, wählen Sie im Feld „Identity-Namespace“ weiter unten einen Namespace aus. Customer Journey Analytics durchsucht die Identitätszuordnung jeder Zeile nach diesem Namespace-Schlüssel und verwendet die unter diesem Namespace aufgeführte Identität als Personen-ID für die jeweilige Zeile."
 
 <!-- markdownlint-enable MD034 -->
 

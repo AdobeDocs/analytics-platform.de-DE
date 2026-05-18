@@ -21,7 +21,7 @@ topic_v2:
 source-git-commit: add42fb00c3ce65d9c40bb023bd6bf8bdd397ee1
 workflow-type: tm+mt
 source-wordcount: 4111
-ht-degree: 46%
+ht-degree: 61%
 
 ---
 
@@ -92,7 +92,7 @@ Der Assistent für geführte Konfigurationen besteht aus vier Abschnitten ([Deta
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_connection_header"
 >title="Verbindung"
->abstract="Wählen Sie eine bestehende Verbindung aus Customer Journey Analytics aus, mit der Sie Ihre Content Analytics-Daten zusammenführen möchten."
+>abstract="Wählen Sie eine vorhandene Verbindung aus Customer Journey Analytics aus, mit der Ihre Content Analytics-Daten zusammengeführt werden sollen."
 
 Jede Konfiguration erfordert einen eindeutigen Namen. Beispiel: `Example Content Analytics configuration`. Der Name ist zum Speichern oder Implementieren einer Konfiguration erforderlich.
 
@@ -169,32 +169,32 @@ Wenn Sie bereits eine Verbindung ausgewählt haben, diese jedoch ändern möchte
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataviews_header"
 >title="Datenansichten"
->abstract="Wählen Sie eine oder mehrere bestehende Datenansichten aus Customer Journey Analytics aus, mit denen Sie Ihre Content Analytics-Daten zusammenführen möchten."
+>abstract="Wählen Sie eine oder mehrere vorhandene Datenansichten aus Customer Journey Analytics aus, mit der bzw. denen Ihre Content Analytics-Daten zusammengeführt werden sollen."
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataviews_header_alt"
 >title="Datenansichten"
->abstract="Wählen Sie eine oder mehrere bestehende Datenansichten aus Customer Journey Analytics aus, mit denen Sie Ihre Content Analytics-Daten zusammenführen möchten.<br/>"
+>abstract="Wählen Sie eine oder mehrere vorhandene Datenansichten aus Customer Journey Analytics aus, mit der bzw. denen Ihre Content Analytics-Daten zusammengeführt werden sollen<br/>."
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataviews_new_dialog"
 >title="Ausgewählte Datenansichten"
->abstract="Sie haben die ausgewählten Datenansichten für diese Konfiguration geändert. Die ausgewählten Datenansichten werden aktualisiert, um Content Analytics-Metriken und -Dimensionen einzuschließen. Diese Metriken und Dimensionen werden aus zuvor ausgewählten Datenansichten entfernt, die nicht mehr ausgewählt sind.<br/><br/>Wenn den ausgewählten Datenansichten eine andere Verbindung zugeordnet ist, wird die Verbindung aktualisiert, um Content Analytics-Datensätze einzuschließen. Die Datensätze der Inhaltsanalyse werden nicht aus der ursprünglich ausgewählten Verbindung entfernt.<br/><br/>Alle ausgewählten Datenansichten übernehmen die Kanäle, die Teil dieser Konfiguration sind."
+>abstract="Sie haben die ausgewählten Datenansichten für diese Konfiguration geändert. Die ausgewählten Datenansichten werden aktualisiert, sodass sie Content Analytics-Metriken und -Dimensionen umfassen. Diese Metriken und Dimensionen werden aus zuvor ausgewählten Datenansichten entfernt, die nicht mehr ausgewählt sind.<br/><br/>Wenn den ausgewählten Datenansichten eine andere Verbindung zugeordnet ist, wird die Verbindung aktualisiert, um Content Analytics-Datensätze einzuschließen. Die Datensätze der Inhaltsanalyse werden nicht aus der ursprünglich ausgewählten Verbindung entfernt.<br/><br/>Alle ausgewählten Datenansichten übernehmen die Kanäle, die Teil dieser Konfiguration sind."
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataviews_change_dialog"
 >title="Ausgewählte Datenansichten"
->abstract="Sie haben die ausgewählten Datenansichten für diese Konfiguration geändert. Die ausgewählten Datenansichten werden aktualisiert, um Content Analytics-Metriken und -Dimensionen einzuschließen. Diese Metriken und Dimensionen werden aus zuvor ausgewählten Datenansichten entfernt, die nicht mehr ausgewählt sind.<br/><br/>Wenn den ausgewählten Datenansichten eine andere Verbindung zugeordnet ist, wird die Verbindung aktualisiert, um Content Analytics-Datensätze einzuschließen. Die Datensätze der Inhaltsanalyse werden nicht aus der ursprünglich ausgewählten Verbindung entfernt.<br/><br/>Alle ausgewählten Datenansichten übernehmen die Kanäle, die Teil dieser Konfiguration sind."
+>abstract="Sie haben die ausgewählten Datenansichten für diese Konfiguration geändert. Die ausgewählten Datenansichten werden aktualisiert, sodass sie Content Analytics-Metriken und -Dimensionen umfassen. Diese Metriken und Dimensionen werden aus zuvor ausgewählten Datenansichten entfernt, die nicht mehr ausgewählt sind.<br/><br/>Wenn den ausgewählten Datenansichten eine andere Verbindung zugeordnet ist, wird die Verbindung aktualisiert, sodass sie Content Analytics-Datensätze umfasst. Die Datensätze der Inhaltsanalyse werden nicht aus der ursprünglich ausgewählten Verbindung entfernt.<br/><br/>Alle ausgewählten Datenansichten übernehmen die Kanäle, die Teil dieser Konfiguration sind."
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataviews_current_cleanup_labels_dialog"
 >title="Ausgewählte Datenansichten"
->abstract="Sie haben die ausgewählten Datenansichten für diese Konfiguration geändert. Die ausgewählten Datenansichten werden aktualisiert, um Content Analytics-Metriken und -Dimensionen einzuschließen. Diese Metriken und Dimensionen werden aus zuvor ausgewählten Datenansichten entfernt, die nicht mehr ausgewählt sind.<br/><br/>Wenn den ausgewählten Datenansichten eine andere Verbindung zugeordnet ist, wird die Verbindung aktualisiert, um Content Analytics-Datensätze einzuschließen. Die Datensätze der Inhaltsanalyse werden nicht aus der ursprünglich ausgewählten Verbindung entfernt.<br/><br/>Alle ausgewählten Datenansichten übernehmen die Kanäle, die Teil dieser Konfiguration sind."
+>abstract="Sie haben die ausgewählten Datenansichten für diese Konfiguration geändert. Die ausgewählten Datenansichten werden aktualisiert, sodass sie Content Analytics-Metriken und -Dimensionen umfassen. Diese Metriken und Dimensionen werden aus zuvor ausgewählten Datenansichten entfernt, die nicht mehr ausgewählt sind.<br/><br/>Wenn den ausgewählten Datenansichten eine andere Verbindung zugeordnet ist, wird die Verbindung aktualisiert, sodass sie Content Analytics-Datensätze umfasst. Die Datensätze der Inhaltsanalyse werden nicht aus der ursprünglich ausgewählten Verbindung entfernt.<br/><br/>Alle ausgewählten Datenansichten übernehmen die Kanäle, die Teil dieser Konfiguration sind."
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataviews_prev_cleanup_labels_dialog"
 >title="Ausgewählte Datenansichten"
->abstract="Sie haben die ausgewählten Datenansichten für diese Konfiguration geändert. Die ausgewählten Datenansichten werden aktualisiert, um Content Analytics-Metriken und -Dimensionen einzuschließen. Diese Metriken und Dimensionen werden aus zuvor ausgewählten Datenansichten entfernt, die nicht mehr ausgewählt sind.<br/><br/>Wenn den ausgewählten Datenansichten eine andere Verbindung zugeordnet ist, wird die Verbindung aktualisiert, um Content Analytics-Datensätze einzuschließen. Die Datensätze der Inhaltsanalyse werden nicht aus der ursprünglich ausgewählten Verbindung entfernt.<br/><br/>Alle ausgewählten Datenansichten übernehmen die Kanäle, die Teil dieser Konfiguration sind."
+>abstract="Sie haben die ausgewählten Datenansichten für diese Konfiguration geändert. Die ausgewählten Datenansichten werden aktualisiert, sodass sie Content Analytics-Metriken und -Dimensionen umfassen. Diese Metriken und Dimensionen werden aus zuvor ausgewählten Datenansichten entfernt, die nicht mehr ausgewählt sind.<br/><br/>Wenn den ausgewählten Datenansichten eine andere Verbindung zugeordnet ist, wird die Verbindung aktualisiert, sodass sie Content Analytics-Datensätze umfasst. Die Datensätze der Inhaltsanalyse werden nicht aus der ursprünglich ausgewählten Verbindung entfernt.<br/><br/>Alle ausgewählten Datenansichten übernehmen die Kanäle, die Teil dieser Konfiguration sind."
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_channels_button"
@@ -204,7 +204,7 @@ Wenn Sie bereits eine Verbindung ausgewählt haben, diese jedoch ändern möchte
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_channels_header"
 >title="Kanäle"
->abstract="Aktivieren und konfigurieren Sie einen oder mehrere Kanäle für die Konfiguration. Alle Datenansichten, die Teil der Konfiguration sind, erben die aktivierten Kanäle."
+>abstract="Aktivieren und konfigurieren Sie einen oder mehrere Kanäle für die Konfiguration. Alle Datenansichten, die Teil der Konfiguration sind, übernehmen die aktivierten Kanäle."
 
 
 Ihre Konfiguration erfordert die Auswahl einer oder mehrerer [Datenansichten](/help/data-views/data-views.md).
@@ -244,33 +244,33 @@ Anschließend können Sie den Kanal detaillierter konfigurieren. Diese Konfigura
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_mobile_experience_locations_boldheader"
->title="Datenerfassung für mobile Erlebnisspeicherorte"
->abstract="**Auszuschließende Erlebnisorte**"
+>title="Datenerfassung für Speicherorte für mobile Erlebnisse"
+>abstract="**Auszuschließende Erlebnisspeicherorte**"
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_mobile_experience_locations_header"
->title="Datenerfassung für mobile Erlebnisspeicherorte"
->abstract="Geben Sie an, welche Erlebnisspeicherorte **ausgeschlossen) werden sollen** wenn Daten für Content Analytics erfasst werden. Stellen Sie sicher, dass Sie persönlich identifizierbare Erlebnisorte ausschließen."
+>title="Datenerfassung für Speicherorte für mobile Erlebnisse"
+>abstract="Geben Sie an, welche Erlebnisspeicherorte bei der Datenerfassung für Content Analytics **ausgeschlossen** werden sollen. Stellen Sie sicher, dass Sie persönlich identifizierbare Erlebnisorte ausschließen."
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_mobile_asset_locations_boldheader"
->title="Datenerfassung für mobile Asset-Speicherorte"
+>title="Datenerfassung für Speicherorte für mobile Assets"
 >abstract="**Auszuschließende Asset-Speicherorte**"
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_mobile_asset_locations_header"
->title="Datenerfassung für mobile Asset-Speicherorte"
->abstract="Geben Sie an, welche Asset-Speicherorte **ausgeschlossen** beim Erfassen von Daten für Content Analytics ausgeschlossen werden sollen. Stellen Sie sicher, dass Sie persönlich identifizierbare Asset-Speicherorte ausschließen."
+>title="Datenerfassung für Speicherorte für mobile Assets"
+>abstract="Geben Sie an, welche Asset-Speicherorte bei der Datenerfassung für Content Analytics **ausgeschlossen** werden sollen. Stellen Sie sicher, dass Sie persönlich identifizierbare Asset-Speicherorte ausschließen."
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_mobile_asset_urls_boldheader"
->title="Datenerfassung für mobile Asset-URLs"
+>title="Datenerfassung für URLs mobiler Assets"
 >abstract="**Auszuschließende Asset-URLs**"
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_mobile_asset_urls_header"
->title="Datenerfassung für mobile Asset-URLs"
->abstract="Geben Sie an, welche Asset-URLs **der Datenerfassung für** Content Analytics ausgeschlossen werden sollen. Stellen Sie sicher, dass Sie persönlich identifizierbare Asset-URLs ausschließen."
+>title="Datenerfassung für URLs mobiler Assets"
+>abstract="Geben Sie an, welche Asset-URLs bei der Datenerfassung für Content Analytics **ausgeschlossen** werden sollen. Stellen Sie sicher, dass Sie persönlich identifizierbare Asset-URLs ausschließen."
 
 Für den mobilen Kanal können Sie [Erlebniserfassung und -definition](#experience-capture-and-definition), [Datenerfassung](#data-collection) und [Überschreibungen](#header-overrides) konfigurieren.
 
@@ -386,7 +386,7 @@ Für den Web-Kanal können Sie [Erlebniserfassung und -definition](#experience-c
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_pages_excluded_header"
 >title="Datenerfassung"
->abstract="Geben Sie an, welche Seiten bei **Datenerfassung für erfasst werden sollen** oder **ausgeschlossen**. Stellen Sie sicher, dass Sie persönlich identifizierbare Seiten ausschließen."
+>abstract="Geben Sie an, welche Seiten bei der Datenerfassung für Content Analytics **eingeschlossen** oder **ausgeschlossen** werden sollen. Stellen Sie sicher, dass Sie persönlich identifizierbare Seiten ausschließen."
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_assets_excluded_boldheader"
@@ -396,7 +396,7 @@ Für den Web-Kanal können Sie [Erlebniserfassung und -definition](#experience-c
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_assets_excluded_header"
 >title="Datenerfassung"
->abstract="Geben Sie an, welche Assets bei **Datenerfassung für erfasst** **ausgeschlossen** werden sollen. Stellen Sie sicher, dass Sie persönlich identifizierbare Assets ausschließen."
+>abstract="Geben Sie an, welche Assets bei der Datenerfassung für Content Analytics **eingeschlossen** oder **ausgeschlossen** werden sollen. Stellen Sie sicher, dass Sie persönlich identifizierbare Assets ausschließen."
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_experiences_edit_button"
@@ -424,7 +424,7 @@ Für den Web-Kanal können Sie [Erlebniserfassung und -definition](#experience-c
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_web_pages_header"
 >title="Datenerfassung für Web-Seiten"
->abstract="Geben Sie an, welche Seiten bei **Datenerfassung für erfasst werden sollen** oder **ausgeschlossen**."
+>abstract="Geben Sie an, welche Seiten bei der Datenerfassung für Content Analytics **eingeschlossen** oder **ausgeschlossen** werden sollen."
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_web_assets_boldheader"
@@ -434,7 +434,7 @@ Für den Web-Kanal können Sie [Erlebniserfassung und -definition](#experience-c
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_web_assets_header"
 >title="Datenerfassung für Web-Assets"
->abstract="Geben Sie an, welche Assets bei **Datenerfassung für erfasst** **ausgeschlossen** werden sollen. Stellen Sie sicher, dass Sie persönlich identifizierbare Assets ausschließen."
+>abstract="Geben Sie an, welche Assets bei der Datenerfassung für Content Analytics **eingeschlossen** oder **ausgeschlossen** werden sollen. Stellen Sie sicher, dass Sie persönlich identifizierbare Assets ausschließen."
 
 
 ##### Erlebniserfassung und -definition {#web-experience-capture-and-definition}
@@ -523,12 +523,12 @@ Konfigurieren der Datenerfassung:
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_header_overrides_boldheader"
 >title="Überschreibungen des Headers"
->abstract="**Überschreibungen der Kopfzeile**"
+>abstract="**Header-Überschreibungen**"
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_header_overrides_header"
 >title="Überschreibungen des Headers"
->abstract="Erweiterte Funktion zur Umgehung der Bot-Erkennung oder des Gate-Traffics. Content Analytics schließt beim Aufrufen Ihrer Endpunkte Ihre benutzerdefinierten HTTP-Kopfzeilen ein."
+>abstract="Erweiterte Funktion zur Umgehung der Bot-Erkennung oder des Gate-Traffics. Content Analytics schließt beim Aufrufen Ihrer Endpunkte Ihre benutzerdefinierten HTTP-Header ein."
 
 <!-- needs modification for mobile channel -->
 

@@ -5,10 +5,26 @@ exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: 3524a7f62fa509c477e60d4d586ed2de52191b73
+TQID: https://experienceleague.adobe.com/90JULA8fFxPQSbVLHr3hJ8o5algJAfNz9SjjLFecyJc
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2:
+  - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+  - id: cb6c7d24-631f-46e5-9e39-3a2705f73962
+  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: '10330'
-ht-degree: 89%
+source-wordcount: 10330
+ht-degree: 92%
 
 ---
 
@@ -77,7 +93,7 @@ ht-degree: 89%
 >[!CONTEXTUALHELP]
 >id="connection_change_personid"
 >title="Ändern der Identitätseinstellungen "
->abstract="Durch eine Änderung der Identitätseinstellung werden die Verbindungsdaten für diesen Datensatz gelöscht, sobald Sie die Änderungen in der Verbindungsschnittstelle speichern. Sie müssen basierend auf den neuen Einstellungen manuell eine Datenaufstockung für den Datensatz starten.<br/><br/>Eine Verzögerung beim Reporting ist möglich, bis der Löschvorgang abgeschlossen ist."
+>abstract="Durch eine Änderung der Identitätseinstellung werden die Verbindungsdaten für diesen Datensatz gelöscht, sobald Sie die Änderungen in der Verbindungsschnittstelle speichern. Sie müssen eine Aufstockung der Daten für den Datensatz basierend auf den neuen Einstellungen manuell starten.<br/><br/>Es kann zu einer Verzögerung beim Reporting kommen, bis der Löschvorgang abgeschlossen ist."
 
 >[!CONTEXTUALHELP]
 >id="connection_change_accountid"
@@ -117,32 +133,32 @@ ht-degree: 89%
 >[!CONTEXTUALHELP]
 >id="connections_useincja_exl_ajo"
 >title="Verwenden dieser Verbindung in Customer Journey Analytics"
->abstract="Mit dieser Option können Sie die erweiterten Reporting-Funktionen von Customer Journey Analytics für Ihre Produktnutzungs-Verbindung nutzen. Diese Funktionen ermöglichen Ihnen Folgendes:<ul><li>Detaillierte Analysen der Journey Optimizer-Daten in Customer Journey Analytics durchführen.</li><li>Die Journey Optimizer-Verbindung und zugehörige Datenansichten bearbeiten.</li><li>Journey-Ereignisse, Konversationspfade und Kampagnen-Leistung analysieren.</li></ul>**Wenn diese Option aktiviert ist, wird jede Datenzeile innerhalb der Verbindung monatlich für Ihre Lizenzdatenzeilen für Customer Journey Analytics gezählt. und wird in der Benutzeroberfläche zur Verbindungsnutzung angezeigt.**<br><br/> Erkunden Sie diese Option nur, wenn Sie mit der zusätzlichen Verwendung von Datenzeilen in Customer Journey Analytics vertraut sind. [Weitere Informationen](https://experienceleague.adobe.com/de/docs/analytics-platform/using/integrations/ajo){target="_blank"}."
+>abstract="Mit dieser Option können Sie die erweiterten Reporting-Funktionen von Customer Journey Analytics für Ihre Produktnutzungs-Verbindung nutzen. Diese Funktionen ermöglichen Ihnen Folgendes:<ul><li>Detaillierte Analysen der Journey Optimizer-Daten in Customer Journey Analytics durchführen.</li><li>Die Journey Optimizer-Verbindung und zugehörige Datenansichten bearbeiten.</li><li>Journey-Ereignisse, Konversationspfade und Kampagnen-Leistung analysieren.</li></ul>**Wenn diese Option aktiviert ist, wird jede Datenzeile innerhalb der Verbindung monatlich auf Ihre Lizenz für Datenzeilen für Customer Journey Analytics angerechnet. Außerdem wird sie auf der Benutzeroberfläche für die Verbindungsnutzung angezeigt.**<br><br/> Nutzen Sie diese Option nur dann, wenn Sie mit der zusätzlichen Verwendung von Datenzeilen in Customer Journey Analytics einverstanden sind. [Weitere Informationen](https://experienceleague.adobe.com/de/docs/analytics-platform/using/integrations/ajo){target="_blank"}."
 
 >[!CONTEXTUALHELP]
 >id="connections_disableuseincja_exl_ajo"
 >title="Diese Verbindung aus Customer Journey Analytics entfernen"
->abstract="Diese Journey Optimizer-Verbindung wird derzeit in Customer Journey Analytics verwendet. Die -Verbindung ermöglicht Ihnen Folgendes:<ul><li>Detaillierte Analysen der Journey Optimizer-Daten in Customer Journey Analytics durchführen.</li><li>Die Journey Optimizer-Verbindung und zugehörige Datenansichten bearbeiten.</li><li>Journey-Ereignisse, Konversationspfade und Kampagnen-Leistung analysieren.</li></ul>**Wenn Sie die Verbindung entfernen, ist eine detaillierte Analyse in Customer Journey Analytics nicht mehr möglich. Die Verbindung und alle zugehörigen Datenansichten werden auf ihren Standardstatus zurückgesetzt und können nicht mehr bearbeitet werden.**<br/><br/>**Die Abrechnung für diese Verbindung in Customer Journey Analytics umfasst den gesamten Monat, in dem die Verbindung entfernt wird.**<br/><br/> Die Verbindung bleibt in Journey Optimizer aktiviert. [Weitere Informationen](https://experienceleague.adobe.com/de/docs/analytics-platform/using/integrations/ajo){target="_blank"}."
+>abstract="Diese Journey Optimizer-Verbindung wird derzeit in Customer Journey Analytics verwendet. Die Verbindung ermöglicht Ihnen Folgendes:<ul><li>Detaillierte Analysen der Journey Optimizer-Daten in Customer Journey Analytics durchführen.</li><li>Die Journey Optimizer-Verbindung und zugehörige Datenansichten bearbeiten.</li><li>Journey-Ereignisse, Konversationspfade und Kampagnen-Leistung analysieren.</li></ul>**Wenn Sie die Verbindung entfernen, ist eine detaillierte Analyse in Customer Journey Analytics nicht mehr möglich. Die Verbindung und alle zugehörigen Datenansichten werden auf ihren Standardstatus zurückgesetzt und können nicht mehr bearbeitet werden.**<br/><br/>**Die Abrechnung für diese Verbindung in Customer Journey Analytics umfasst den gesamten Monat, in dem die Verbindung entfernt wird.**<br/><br/> Die Verbindung bleibt in Journey Optimizer aktiviert. [Weitere Informationen](https://experienceleague.adobe.com/de/docs/analytics-platform/using/integrations/ajo){target="_blank"}."
 
 >[!CONTEXTUALHELP]
 >id="connections_useincja_exl_brand_concierge"
 >title="Diese Verbindung in Customer Journey Analytics verwenden"
->abstract="Mit dieser Option können Sie die erweiterten Reporting-Funktionen von Customer Journey Analytics für Ihre Brand Concierge-Verbindung nutzen. Diese Funktionen ermöglichen Ihnen Folgendes:<ul><li>Führen Sie eine detaillierte Analyse der Brand Concierge-Daten in Customer Journey Analytics durch.</li><li>Die Brand Concierge-Verbindung und zugehörige Datenansichten bearbeiten.</li><li>Metriken zu Konversationsinteraktionen, Sentiment und Konversionen analysieren.</li></ul>**Wenn diese Option aktiviert ist, wird jede Datenzeile innerhalb der Verbindung monatlich für Ihre Lizenzdatenzeilen für Customer Journey Analytics gezählt. und wird in der Benutzeroberfläche zur Verbindungsnutzung angezeigt.**<br><br/> Erkunden Sie diese Option nur, wenn Sie mit der zusätzlichen Verwendung von Datenzeilen in Customer Journey Analytics vertraut sind. [Weitere Informationen](https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-workspace/templates/use-templates#brand-concierge-templates){target="_blank"}."
+>abstract="Mit dieser Option können Sie die erweiterten Reporting-Funktionen von Customer Journey Analytics für Ihre Brand Concierge-Verbindung nutzen. Diese Funktionen ermöglichen Ihnen Folgendes:<ul><li>Detaillierte Analyse der Brand Concierge-Daten in Customer Journey Analytics durchführen.</li><li>Die Brand Concierge-Verbindung und zugehörige Datenansichten bearbeiten.</li><li>Metriken zu Konversationsinteraktionen, Sentiment und Konversionen analysieren.</li></ul>**Wenn diese Option aktiviert ist, wird jede Datenzeile innerhalb der Verbindung monatlich auf Ihre Lizenz für Datenzeilen für Customer Journey Analytics angerechnet. Außerdem wird sie auf der Benutzeroberfläche für die Verbindungsnutzung angezeigt.**<br><br/> Nutzen Sie diese Option nur dann, wenn Sie mit der zusätzlichen Verwendung von Datenzeilen in Customer Journey Analytics einverstanden sind. [Weitere Informationen](https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-workspace/templates/use-templates#brand-concierge-templates){target="_blank"}."
 
 >[!CONTEXTUALHELP]
 >id="connections_disableuseincja_exl_brand_concierge"
 >title="Diese Verbindung aus Customer Journey Analytics entfernen"
->abstract="Diese Brand Concierge-Verbindung wird derzeit in Customer Journey Analytics verwendet. Die -Verbindung ermöglicht Ihnen Folgendes:<ul><li>Führen Sie eine detaillierte Analyse der Brand Concierge-Daten in Customer Journey Analytics durch.</li><li>Die Brand Concierge-Verbindung und zugehörige Datenansichten bearbeiten.</li><li>Metriken zu Konversationsinteraktionen, Sentiment und Konversionen analysieren.</li></ul>**Wenn Sie die Verbindung entfernen, ist eine detaillierte Analyse in Customer Journey Analytics nicht mehr möglich. Die Verbindung und alle zugehörigen Datenansichten werden auf ihren Standardstatus zurückgesetzt und können nicht mehr bearbeitet werden.**<br/><br/>**Die Abrechnung für diese Verbindung in Customer Journey Analytics umfasst den gesamten Monat, in dem die Verbindung entfernt wird.**<br/><br/> Die Verbindung bleibt in Brand Concierge aktiviert. [Weitere Informationen](https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-workspace/templates/use-templates#brand-concierge-templates){target="_blank"}."
+>abstract="Diese Brand Concierge-Verbindung wird derzeit in Customer Journey Analytics verwendet. Die Verbindung ermöglicht Ihnen Folgendes:<ul><li>Detaillierte Analyse der Brand Concierge-Daten in Customer Journey Analytics durchführen.</li><li>Die Brand Concierge-Verbindung und zugehörige Datenansichten bearbeiten.</li><li>Metriken zu Konversationsinteraktionen, Sentiment und Konversionen analysieren.</li></ul>**Wenn Sie die Verbindung entfernen, ist eine detaillierte Analyse in Customer Journey Analytics nicht mehr möglich. Die Verbindung und alle zugehörigen Datenansichten werden auf ihren Standardstatus zurückgesetzt und können nicht mehr bearbeitet werden.**<br/><br/>**Die Abrechnung für diese Verbindung in Customer Journey Analytics umfasst den gesamten Monat, in dem die Verbindung entfernt wird.**<br/><br/> Die Verbindung bleibt in Brand Concierge aktiviert. [Weitere Informationen](https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-workspace/templates/use-templates#brand-concierge-templates){target="_blank"}."
 
 >[!CONTEXTUALHELP]
 >id="connections_useincja_exl_product_usage"
 >title="Diese Verbindung in Customer Journey Analytics verwenden"
->abstract="Mit dieser Option können Sie die erweiterten Reporting-Funktionen von Customer Journey Analytics für Ihre Journey Optimizer-Verbindung nutzen. Diese Funktionen ermöglichen Ihnen Folgendes:<ul><li>Detaillierte Analyse der Produktnutzungsdaten in Customer Journey Analytics durchführen.</li><li>Die Produktnutzungsverbindung und zugehörige Datenansichten bearbeiten.</li></ul>**Wenn diese Option aktiviert ist, wird jede Datenzeile innerhalb der Verbindung monatlich für Ihre Lizenzdatenzeilen für Customer Journey Analytics gezählt. und wird in der Benutzeroberfläche zur Verbindungsnutzung angezeigt.**<br><br/> Erkunden Sie diese Option nur, wenn Sie mit der zusätzlichen Verwendung von Datenzeilen in Customer Journey Analytics vertraut sind. [Weitere Informationen](https://experienceleague.adobe.com/de/docs/analytics-platform/using/tools/product-usage/usage-overview){target="_blank"}."
+>abstract="Mit dieser Option können Sie die erweiterten Reporting-Funktionen von Customer Journey Analytics für Ihre Journey Optimizer-Verbindung nutzen. Diese Funktionen ermöglichen Ihnen Folgendes:<ul><li>Detaillierte Analyse der Produktnutzungsdaten in Customer Journey Analytics durchführen.</li><li>Produktnutzungsverbindung und zugehörige Datenansichten bearbeiten</li></ul>**Wenn diese Option aktiviert ist, wird jede Datenzeile innerhalb der Verbindung monatlich auf Ihre Lizenz für Datenzeilen für Customer Journey Analytics angerechnet. Außerdem wird sie auf der Benutzeroberfläche für die Verbindungsnutzung angezeigt.**<br><br/> Nutzen Sie diese Option nur dann, wenn Sie mit der zusätzlichen Verwendung von Datenzeilen in Customer Journey Analytics einverstanden sind. [Weitere Informationen](https://experienceleague.adobe.com/de/docs/analytics-platform/using/tools/product-usage/usage-overview){target="_blank"}."
 
 >[!CONTEXTUALHELP]
 >id="connections_disableuseincja_exl_product_usage"
 >title="Diese Verbindung aus Customer Journey Analytics entfernen"
->abstract="Diese Produktnutzungsverbindung wird derzeit in Customer Journey Analytics verwendet. Die -Verbindung ermöglicht Ihnen Folgendes:<ul><li>Detaillierte Analyse der Produktnutzungsdaten in Customer Journey Analytics durchführen.</li><li>Produktnutzungsverbindung und zugehörige Datenansichten bearbeiten</li></ul>**Wenn Sie die Verbindung entfernen, ist eine detaillierte Analyse in Customer Journey Analytics nicht mehr möglich. Die Verbindung und alle zugehörigen Datenansichten werden auf ihren Standardstatus zurückgesetzt und können nicht mehr bearbeitet werden.**<br/><br/>**Die Abrechnung für diese Verbindung in Customer Journey Analytics umfasst den gesamten Monat, in dem die Verbindung entfernt wird.**<br/><br/> Die Verbindung bleibt für die Produktnutzung aktiviert. [Weitere Informationen](https://experienceleague.adobe.com/de/docs/analytics-platform/using/tools/product-usage/usage-overview){target="_blank"}."
+>abstract="Diese Produktnutzungsverbindung wird derzeit in Customer Journey Analytics verwendet. Die Verbindung ermöglicht Ihnen Folgendes:<ul><li>Detaillierte Analyse der Produktnutzungsdaten in Customer Journey Analytics durchführen.</li><li>Produktnutzungsverbindung und zugehörige Datenansichten bearbeiten</li></ul>**Wenn Sie die Verbindung entfernen, ist eine detaillierte Analyse in Customer Journey Analytics nicht mehr möglich. Die Verbindung und alle zugehörigen Datenansichten werden auf ihren Standardstatus zurückgesetzt und können nicht mehr bearbeitet werden.**<br/><br/>**Die Abrechnung für diese Verbindung in Customer Journey Analytics umfasst den gesamten Monat, in dem die Verbindung entfernt wird.**<br/><br/> Die Verbindung bleibt für die Produktnutzung aktiviert. [Weitere Informationen](https://experienceleague.adobe.com/de/docs/analytics-platform/using/tools/product-usage/usage-overview){target="_blank"}."
 
 >[!CONTEXTUALHELP]
 >id="connections_useincja_legal_section_section"
@@ -318,7 +334,7 @@ Im Rahmen des Verbindungs-Workflows [fügen Sie einen oder mehrere Datensätze h
 >[!CONTEXTUALHELP]
 >id="cja_connection_optionalcontainers"
 >title="Optionale Container"
->abstract="Wählen Sie weitere Container aus.<br/><br/>**[!UICONTROL Globales Konto &#x200B;]**: Aktiviert die Konfiguration globaler Konten in einer Verbindung.<br/>**[!UICONTROL Opportunity]**: Aktiviert die Konfiguration von Opportunitys in einer Verbindung.<br/>**[!UICONTROL Käufergruppe &#x200B;]**: ermöglicht die Konfiguration von Käufergruppen in einer Verbindung."
+>abstract="Wählen Sie weitere Container aus.<br/><br/>**[!UICONTROL Globales Konto &#x200B;]**: Ermöglicht die Konfiguration globaler Konten in einer Verbindung.<br/>**[!UICONTROL Opportunity]**: Ermöglicht die Konfiguration von Opportunities in einer Verbindung.<br/>**[!UICONTROL Käufergruppe &#x200B;]**: ermöglicht die Konfiguration von Käufergruppen in einer Verbindung."
 
 >[!CONTEXTUALHELP]
 >id="cja_connection_accountid"
@@ -383,7 +399,7 @@ Im Rahmen des Verbindungs-Workflows [fügen Sie einen oder mehrere Datensätze h
 >[!CONTEXTUALHELP]
 >id="connection_optionalcontainers"
 >title="Optionale Container"
->abstract="Wählen Sie weitere Container aus.<br/><br/>**[!UICONTROL Globales Konto &#x200B;]**: Aktiviert die Konfiguration globaler Konten in einer Verbindung.<br/>**[!UICONTROL Opportunity]**: Aktiviert die Konfiguration von Opportunitys in einer Verbindung.<br/>**[!UICONTROL Käufergruppe &#x200B;]**: ermöglicht die Konfiguration von Käufergruppen in einer Verbindung."
+>abstract="Wählen Sie weitere Container aus.<br/><br/>**[!UICONTROL Globales Konto &#x200B;]**: Ermöglicht die Konfiguration globaler Konten in einer Verbindung.<br/>**[!UICONTROL Opportunity]**: Ermöglicht die Konfiguration von Opportunities in einer Verbindung.<br/>**[!UICONTROL Käufergruppe &#x200B;]**: ermöglicht die Konfiguration von Käufergruppen in einer Verbindung."
 
 >[!CONTEXTUALHELP]
 >id="connection_personid"
