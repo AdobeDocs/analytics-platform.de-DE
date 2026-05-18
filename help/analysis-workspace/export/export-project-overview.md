@@ -5,10 +5,14 @@ title: Exportieren von Projektdaten
 feature: Curate and Share
 exl-id: 3d467050-4bf0-4bdb-b7d2-eba67fbd526d
 role: User
-source-git-commit: 50b82943d4c59f612240ffc8d83a8a08f09b8331
+TQID: https://experienceleague.adobe.com/THoHVmp3vbNeG4C9teqfWmp8mpaHGBsda-zKSFaF8Is
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+source-git-commit: 247b308f55a1ac29c5fc8a7d689580451af43378
 workflow-type: tm+mt
-source-wordcount: '297'
-ht-degree: 100%
+source-wordcount: 299
+ht-degree: 96%
 
 ---
 
@@ -35,7 +39,7 @@ Für den Export aus Analysis Workspace stehen Ihnen verschiedene Methoden zur Ve
 | Exportmethode | Verwenden Sie diese Methode, wenn Sie … |
 |---------|----------|
 | [Auf Ihre Workstation herunterladen](/help/analysis-workspace/export/download-send.md) | <li>Projekte auf Ihre persönliche Workstation herunterladen.</li><li>Nur ungeplant Daten herunterladen.</li> <li>Maximal 50.000 Zeilen herunterladen.</li> <!--true? Are there 2 different options to download to your workstation? is this emailing it? --> |
-| [An andere Benutzende senden](/help/analysis-workspace/export/t-schedule-report.md) | <li>Exportierte Customer Journey Analytics-Daten per E-Mail an andere Benutzende in Ihrer Organisation senden.</li><li>Die E-Mail ungeplant oder geplant senden.</li> <li>Die E-Mail maximal 50.000 Zeilen enthält.</li> <!--true?--> |
+| [An andere Benutzende senden](/help/analysis-workspace/export/t-schedule-report.md) | <li>Exportierte Customer Journey Analytics-Daten per E-Mail an andere Benutzende in Ihrer Organisation senden.</li><li>Die E-Mail ungeplant oder geplant senden.</li> <li>Binden Sie maximal 400 Zeilen in die E-Mail ein.</li> <!--true?--> |
 | [Exportieren in einen Cloud-Speicherort](/help/analysis-workspace/export/export-cloud.md) | <li>In einen Cloud-Speicherort exportieren, z. B. <ul><li>Adobe Experience Platform Data Landing Zone</li><li>Google Cloud Platform</li><li>Microsoft Azure</li><li>Amazon S3</li><li>Snowflake</li></ul></li><li>Daten ungeplant oder geplant exportieren.</li><li>Größere Mengen an Customer Journey Analytics-Daten speichern.</li><li>Vollständige Tabellen exportieren, die Tausende oder Millionen von Zeilen enthalten.<!-- What other things? Wiki talks about things that aren't even possible in Data Warehouse. What are they? --> </li> |
 
 {style="table-layout:auto"}
