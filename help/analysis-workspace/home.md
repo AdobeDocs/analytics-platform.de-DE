@@ -6,10 +6,16 @@ feature: Workspace Basics
 exl-id: 9075518e-54fe-49a6-9601-aa9468187b8f
 solution: Customer Journey Analytics
 role: User
-source-git-commit: 211dbd80b21f84ab616569c0d847dcc97f13661c
+TQID: https://experienceleague.adobe.com/mzyzOOuWJ1gOiLnUGvjQGrxysdoAMFm2RrXYQutiMT8
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: a8b1c240-f315-46e3-b813-f545c4279dd1id: b1f5d324-a668-4e51-a59b-6fc0862d7310id: bc7a5a86-1a70-451f-985c-037b65f091d1id: cb6c7d24-631f-46e5-9e39-3a2705f73962id: cc092ab1-90ba-4bbc-b4c6-6249d87daf5cid: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: bcc5edb5-84c3-4940-9f84-ed88b6c16274id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+source-git-commit: 5771edbe491ceeeaf487dd5eeb2ffb67ef880f96
 workflow-type: tm+mt
-source-wordcount: '1491'
-ht-degree: 99%
+source-wordcount: 1530
+ht-degree: 97%
 
 ---
 
@@ -31,7 +37,7 @@ Das folgende Bild und die zugehörige Tabelle erläutern die Hauptelemente der B
 
 | Standort | Name und Funktion |
 |:---------:|----------|
-| A  | Enthält den Projektnamen, eine Menüstruktur für den Zugriff auf die Funktionen, eine Schaltfläche ![Zurück-Schaltfläche](/help/assets/icons/ChevronLeft.svg) zum Zurückkehren zur Projektliste und eine Schaltfläche **[!UICONTROL Freigabe]** zum [Freigeben Ihres Workspace-Projekts](/help/analysis-workspace/curate-share/share-projects.md). <br/>Sie können jederzeit den Namen Ihres Projekts (z. B. „Neues Projekt“) auswählen, um den Namen zu ändern. <br/>Wählen Sie ![Favorisierung aufheben](/help/assets/icons/StarOutline.svg) aus, um Ihr Projekt als bevorzugtes Projekt ![Favorisieren](/help/assets/icons/Star.svg) zu markieren. |
+| A | Enthält den Projektnamen, eine Menüstruktur für den Zugriff auf die Funktionen, eine Schaltfläche ![Zurück-Schaltfläche](/help/assets/icons/ChevronLeft.svg) zum Zurückkehren zur Projektliste und eine Schaltfläche **[!UICONTROL Freigabe]** zum [Freigeben Ihres Workspace-Projekts](/help/analysis-workspace/curate-share/share-projects.md). <br/>Sie können jederzeit den Namen Ihres Projekts (z. B. „Neues Projekt“) auswählen, um den Namen zu ändern. <br/>Wählen Sie ![Favorisierung aufheben](/help/assets/icons/StarOutline.svg) aus, um Ihr Projekt als bevorzugtes Projekt ![Favorisieren](/help/assets/icons/Star.svg) zu markieren. |
 | B | **Schaltflächen-Panel**: Enthält Schaltflächen für den Zugriff auf die wichtigsten [Funktionen](#features) von Analysis Workspace:<ul><li>![Web-Seite](/help/assets/icons/WebPage.svg) [[!UICONTROL Panels]](/help/analysis-workspace/c-panels/panels.md)</li><li>![Geführte Analyse](/help/assets/icons/GuidedAnalysis.svg) [[!UICONTROL Geführte Analyse]](/help/guided-analysis/overview.md)</li><li>![VertikaleGrafikbalken](/help/assets/icons/GraphBarVertical.svg) [[!UICONTROL Visualisierungen]](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md)</li><li>![Kuratieren](/help/assets/icons/Curate.svg) [[!UICONTROL Komponenten]](/help/components/overview.md)</li><li>![Ansichtsliste](/help/assets/icons/ViewList.svg) [[!UICONTROL Inhaltsverzeichnis]](/help/analysis-workspace/build-workspace-project/project-table-of-contents.md)</li><li>![Lesezeichen](/help/assets/icons/Bookmark.svg) [[!UICONTROL Datenwörterbuch]](/help/components/data-dictionary/data-dictionary-overview.md)</li></ul> |
 | C | **Linkes Bedienfeld:** Dieser Bereich enthält einzelne Bedienfelder, Visualisierungen, Komponenten oder Listen. Der Inhalt hängt von der im Schaltflächenbedienfeld ausgewählten Schaltfläche ab. |
 | D | **Arbeitsfläche:** Der Hauptbereich, in den Sie Inhalte aus dem linken Bedienfeld ziehen, um Ihr Projekt zu erstellen. Das Projekt wird dynamisch aktualisiert, wenn Sie Bedienfelder hinzufügen, Visualisierungen zu Bedienfeldern hinzufügen und Komponenten zu Visualisierungen hinzufügen. Sie können mehrere Bedienfelder erstellen und in jedem Bedienfeld können Sie mehrere Visualisierungen erstellen.<br/>Jedes Bedienfeld basiert auf einer ausgewählten Datenansicht. Die ausgewählte Datenansicht bestimmt verfügbare Komponenten wie Metriken und Dimensionen. Weitere Informationen finden Sie unter [Bedienfelder – Datenansicht](/help/analysis-workspace/c-panels/panels.md#data-view). |
@@ -124,7 +130,7 @@ Eine Übersicht über die verfügbaren Menüs finden Sie in den nachfolgenden Ta
 | Hilfe | Beschreibung |
 |---|---|
 | **[!UICONTROL Videos]** | Öffnen Sie den YouTube-Kanal von Customer Journey Analytics in einer neuen Browser-Registerkarte. |
-| **[!UICONTROL Hilfedokumentation]** | Öffnen Sie die Dokumentation (die Sie gerade lesen …) in einer neuen Browser-Registerkarte. |
+| **[!UICONTROL Hilfedokumentation]** | Öffnen Sie die -Dokumentation (Sie lesen tatsächlich gerade…) in einer neuen Browser-Registerkarte. |
 | **[!UICONTROL Hilfeforum]** | Öffnen Sie das Communitys-Forum von Adobe Analytics Experience League in einer neuen Browser-Registerkarte. |
 | **[!UICONTROL Tastaturbefehle]** | Anzeigen einer Übersicht der Hotkeys (Tastaturbefehle), die Sie in Workspace verwenden können. |
 | **[!UICONTROL Debugger aktivieren]** | Aktivieren des Debuggers. Ihr Projekt wird neu geladen. |
@@ -141,7 +147,7 @@ Durch Synchronisieren von Visualisierungen können Sie kontrollieren, welche Dat
 
 So verwenden Sie Analysis Workspace:
 
-1. Melden Sie sich bei [Adobe Experience Cloud](https://experience.adobe.com) an.
+1. Melden Sie sich mit Ihren Adobe ID-Anmeldeinformationen bei ](https://experience.adobe.com)[Adobe CX Enterprise an.
 1. Wählen Sie **[!UICONTROL Customer Journey Analytics]** im App-Umschalter ![App](/help/assets/icons/Apps.svg) oben rechts in der Benutzeroberfläche aus.
 1. Standardmäßig wird die Seite **[!UICONTROL Projekte]** von Analysis Workspace angezeigt. Wenn ein bestimmtes Projekt für Sie ausgewählt wurde oder Sie kürzlich daran gearbeitet haben, wird dieses Projekt standardmäßig angezeigt.
 
@@ -161,7 +167,7 @@ Wenn Sie das Projekt fertiggestellt haben und es konkrete Erkenntnisse liefert, 
 
 ## Zusätzliche Ressourcen {#resources}
 
-- Die Landingpage [Lernen](/help/getting-started/landing.md#learning) in Customer Journey Analytics. Diese Seite ist hervorragend geeignet, um sich mit Analysis Workspace vertraut zu machen. Hervorzuheben ist hier insbesondere die Vorlage „Verstehen der Grundlagen von Workspace“. Sie führt Sie durch die gängige Terminologie und die Schritte zur Erstellung Ihrer ersten Analyse in Workspace. 
+- Die Landingpage [Lernen](/help/getting-started/landing.md#learning) in Customer Journey Analytics. Diese Seite ist hervorragend geeignet, um sich mit Analysis Workspace vertraut zu machen. Hervorzuheben ist hier insbesondere die Vorlage „Verstehen der Grundlagen von Workspace“. Sie führt Sie durch die gängige Terminologie und die Schritte zur Erstellung Ihrer ersten Analyse in Workspace.
 - Adobe bietet Hunderte von [Analytics-Video-Tutorials](https://experienceleague.adobe.com/de/docs/analytics-learn/tutorials/overview).
-- Für neue Funktionen siehe [Versionshinweise zu Adobe Experience Cloud](https://experienceleague.adobe.com/de/docs/release-notes/experience-cloud/current).
+- Siehe [CX Enterprise - ](https://experienceleague.adobe.com/de/docs/release-notes/experience-cloud/current) zu neuen Funktionen.
 

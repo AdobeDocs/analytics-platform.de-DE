@@ -5,10 +5,16 @@ exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
 solution: Customer Journey Analytics
 feature: FAQ
 role: User
-source-git-commit: 50b82943d4c59f612240ffc8d83a8a08f09b8331
+TQID: https://experienceleague.adobe.com/HdeLAq13nYEHMV5ns75gTgux9KKRE0on5TiMRw6ZHoo
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: b1f5d324-a668-4e51-a59b-6fc0862d7310id: bc7a5a86-1a70-451f-985c-037b65f091d1id: cc092ab1-90ba-4bbc-b4c6-6249d87daf5cid: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7id: df7fb1db-aa1b-4314-98ac-59dbfcc3044fid: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: d3cdead0-685a-4489-9250-4bb709942f66id: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 5771edbe491ceeeaf487dd5eeb2ffb67ef880f96
 workflow-type: tm+mt
-source-wordcount: '2210'
-ht-degree: 100%
+source-wordcount: 2320
+ht-degree: 95%
 
 ---
 
@@ -39,7 +45,7 @@ Customer Journey Analytics enthält Funktionen zur [Datenvorbereitung](https://e
 +++
 
 
-## &#x200B;2. Zuordnen von Daten {#stitching}
+## &#x200B;2. Daten zusammenfügen {#stitching}
 
 +++**Kann [!UICONTROL Customer Journey Analytics] Daten über Geräte oder über Datensätze hinweg zusammenfügen?**
 
@@ -76,7 +82,7 @@ Nach der ersten Aktivierung bietet Adobe eine Aufstockung von zugeordneten Daten
 
 +++
 
-## &#x200B;3. Daten in [!UICONTROL Customer Journey Analytics] einbringen {#ingest}
+## &#x200B;3. Daten in [!UICONTROL Customer Journey Analytics ] {#ingest}
 
 +++**Kann ich Daten aus verschiedenen [!UICONTROL Adobe Experience Platform]-Sandboxen in einer [!UICONTROL Customer Journey Analytics]-Verbindung kombinieren?**
 
@@ -134,7 +140,7 @@ Nein, Sie können eine beliebige ID verwenden, einschließlich eines Hash einer 
 >
 >In Customer Journey Analytics gibt es keine feste Datengröße. Daher kann Adobe sich nicht auf eine standardmäßige Aufnahmezeit festlegen. Adobe arbeitet aktiv daran, diese Latenzen durch neue Updates und Aufnahmeoptimierung zu reduzieren.
 
-* Live-Daten oder -Ereignisse: Werden innerhalb von 90 Minuten verarbeitet und aufgenommen, sobald Daten in Adobe Experience Platform verfügbar sind. (Batch-Größe > 50 Millionen Zeilen: länger als 90 Minuten.) Wenn die Zuordnung aktiviert ist, kann die Aufnahme bis zu 4 Stunden dauern. Weitere Informationen finden Sie unter [Leitlinien](https://experienceleague.adobe.com/de/docs/analytics-platform/using/technotes/guardrails).
+* Live-Daten oder -Ereignisse: Werden innerhalb von 90 Minuten verarbeitet und aufgenommen, sobald Daten in Adobe Experience Platform verfügbar sind. (Batch-Größe > 50 Millionen Zeilen: länger als 90 Minuten.) Wenn das Zusammenfügen aktiviert ist, kann die Aufnahme bis zu 4 Stunden dauern. Weitere Informationen finden Sie unter [Leitlinien](https://experienceleague.adobe.com/de/docs/analytics-platform/using/technotes/guardrails).
 * Kleine Aufstockungen: Innerhalb von sieben Tagen
 * Große Aufstockungen: Innerhalb von 30 Tagen
 
@@ -143,7 +149,7 @@ Adobe hat kürzlich die Verarbeitung von Daten in Customer Journey Analytics ge�
 * Ereignisdaten für den „aktuellen“ Tag werden als Live-Daten gestreamt. Alle Daten mit einer Ereigniszeit vor 11:59:59 pm (23:59:59 Uhr) am Vortag werden als Aufstockung behandelt.
 * Alle Ereignisdaten mit einem Zeitstempel, der älter als 24 Stunden ist (auch wenn sie sich im gleichen Batch wie neuere Daten befinden) werden als Aufstockung betrachtet und mit einer niedrigeren Priorität aufgenommen.
 
-## &#x200B;5. Festlegen eines rollierenden Fensters für die Speicherung von [!UICONTROL Verbindungsdaten] {#data-retention}
+## &#x200B;5. Festlegen eines rollierenden Fensters für [!UICONTROL Verbindung] Datenaufbewahrung {#data-retention}
 
 Mit der Einstellung [**[!UICONTROL Rollierendes Datenfenster aktivieren ]**](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=de#create-connection) können Sie die Customer Journey Analytics-Datenspeicherung als rollierendes Fenster in Monaten (drei Monate, sechs Monate usw.) definieren. Sie wird auf einer [!UICONTROL Verbindungs]-Ebene, nicht auf einer [!UICONTROL Datensatz]-Ebene festgelegt. Die Datenaufbewahrung basiert auf Zeitstempeln für Ereignis-Datensätze und gilt nur für Ereignis-Datensätze. Für Profil- oder Lookup-Datensätze gibt es keine Datenspeicherungseinstellung, da keine entsprechenden Zeitstempel vorhanden sind.
 
@@ -171,7 +177,7 @@ For data deletion, you should be concerned about six types of components: sandbo
 
 -->
 
-## &#x200B;7. Überlegungen zum Zusammenführen von Report Suites in Customer Journey Analytics {#merge-reportsuite}
+## &#x200B;7. Überlegungen beim Zusammenführen von Report Suites in Customer Journey Analytics {#merge-reportsuite}
 
 Wenn Sie planen, Adobe Analytics-Daten über den [Adobe Analytics-Quell-Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=de) zu erfassen, sollten Sie diese Auswirkungen beim Zusammenführen von zwei oder mehr Adobe Analytics-Report Suites berücksichtigen.
 
@@ -186,7 +192,7 @@ Wenn Sie planen, Adobe Analytics-Daten über den [Adobe Analytics-Quell-Connecto
 
 ## &#x200B;8. [!UICONTROL Adobe Analytics]-Komponenten
 
-+++**Kann ich [!UICONTROL Zielgruppen] von [!DNL Customer Journey Analytics] für Experience Platform Real-Time CDP oder andere Experience Cloud-Anwendungen freigeben/veröffentlichen?**
++++**Kann ich [!UICONTROL Audiences] von [!DNL Customer Journey Analytics] für Experience Platform Real-Time CDP oder andere CX Enterprise-Anwendungen freigeben/veröffentlichen?**
 
 Sie können in Customer Journey Analytics identifizierte [Zielgruppen erstellen](https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-components/audiences/publish) und im Echtzeit-Kundenprofil in Adobe Experience Platform veröffentlichen, um sie zum Targeting und zur Personalisierung zu verwenden.
 
@@ -222,17 +228,17 @@ Das hängt von Ihrem Anwendungsfall ab. Bitte wenden Sie sich an Ihr Adobe-Accou
 
 +++
 
-## &#x200B;9. Schätzen der Verbindungsgröße {#estimate-size}
+## &#x200B;9. Verbindungsgröße schätzen {#estimate-size}
 
 Siehe [Nutzung von Verbindungen](/help/connections/manage-connections.md#usage).
 
-## &#x200B;10. Über die Limits bei der Verwendung {#overage}
+## &#x200B;10. Über Nutzungsüberhänge {#overage}
 
 Nutzungsbeschränkungen werden von Adobe regelmäßig überwacht und durchgesetzt. „Datenzeilen“ sind die täglichen durchschnittlichen Datenzeilen, die innerhalb von Customer Journey Analytics für die Analyse verfügbar sind.
 
 Gehen wir beispielsweise davon aus, Ihr Vertrag berechtigt Sie zu einer Million Datenzeilen. Angenommen, Sie laden am 1. Tag der Verwendung von Customer Journey Analytics zwei Millionen Datenzeilen hoch. Am 2. Tag löschen Sie 1 Million Zeilen und halten Ihre Nutzung für den Rest Ihrer Lizenzlaufzeit auf diesem festgelegten Maximum (d. h. eine Million Datenzeilen). Abhängig von Ihren Vertragsbedingungen können Ihnen für Tag 1 anteilige zusätzliche Nutzungsgebühren entstehen, da Sie die Lizenzberechtigung für „Datenzeilen“ überschritten haben.
 
-## &#x200B;11. Diskrepanzen bei Daten erkennen {#discrepancies}
+## &#x200B;11. Diagnose von Datendiskrepanzen {#discrepancies}
 
 In einigen Fällen kann es vorkommen, dass die Gesamtanzahl der von Ihrer Verbindung erfassten Ereignisse sich von der Anzahl der Zeilen im Datensatz in [!UICONTROL Adobe Experience Platform] unterscheidet. In diesem Beispiel enthält der Datensatz „B2B Impression“ 7650 Zeilen, der Datensatz enthält jedoch 3830 Zeilen in [!UICONTROL Adobe Experience Platform]. Es kann mehrere Gründe für Diskrepanzen geben. Die folgenden Schritte können für die Diagnose hilfreich sein:
 
@@ -247,7 +253,7 @@ Weitere Informationen über die [Implikationen beim Löschen von Datensätzen un
 
 ## &#x200B;12. Regionale Datenerfassung
 
-Adobe Experience Cloud verwendet die regionale Datenerfassung (Regional Data Collection, RDC), damit Interaktionen zwischen Ihren Besuchenden und Adobe- und Nicht-Adobe-Lösungen so nahe wie möglich an Ihren Besuchenden stattfinden. Sobald Daten regional in einem Datenerfassungszentrum (DCC, auch als Edge-Site bezeichnet, Teil des Platform Edge-Netzwerks) erfasst wurden, werden sie über eine sichere Verbindung zu den relevanten Lösungen weitergeleitet, die auf der Konfiguration Ihres Datenstroms und/oder der Ereignisweiterleitung basieren.
+Adobe CX Enterprise verwendet regionale Datenerfassung (Regional Data Collection, RDC), damit die Interaktionen zwischen Ihren Besucherinnen und Besuchern sowie Adobe- und Nicht-Adobe-Lösungen so nah wie möglich bei Ihren Besucherinnen und Besuchern stattfinden. Sobald Daten regional in einem Datenerfassungszentrum (DCC, auch als Edge-Site bezeichnet, Teil des Platform Edge-Netzwerks) erfasst wurden, werden sie über eine sichere Verbindung zu den relevanten Lösungen weitergeleitet, die auf der Konfiguration Ihres Datenstroms und/oder der Ereignisweiterleitung basieren.
 
 ![Datenfluss mithilfe von Edge-Netzwerken](https://experienceleague.adobe.com/docs/experience-platform/assets/collection.png?lang=de)
 
