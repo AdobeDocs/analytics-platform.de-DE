@@ -5,10 +5,15 @@ exl-id: 7f8aac93-0103-4ead-b25b-3d9994a271af
 solution: Customer Journey Analytics
 feature: Basics
 role: User
-source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
+TQID: https://experienceleague.adobe.com/Ej6X4fbPqny4SxqYV1v2ylCAV2I9gPBoxLtCMH4j244
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 14557a59902110b1768d61e621adfb3f76ee9930
 workflow-type: tm+mt
-source-wordcount: '309'
-ht-degree: 96%
+source-wordcount: 327
+ht-degree: 95%
 
 ---
 
@@ -20,7 +25,7 @@ Einige Begriffe in Customer Journey Analytics weichen von der bisherigen Verwend
 | --- | --- | --- |
 | Lookup-Datensatz | Klassifizierung | Mit „Lookup“ können Sie den Wert eines bestimmten Datensatzes anhand eines Schlüssels/übereinstimmenden Schlüssels (in einem Ereignisdatensatz) abrufen, wenn eine Eins-zu-Eins-Beziehung vorliegt. So können Sie z. B. „tracking_code“ als den mit „tracking_code“ im Ereignis-Datensatz übereinstimmenden Schlüssel angeben. |
 | Profildatensatz | Kundenattribut | Wenn Sie Daten von Unternehmenskunden in einer CRM-Datenbank (CRM = Customer Relationship Management) erfassen, können Sie diese Daten in einen Profildatensatz in Adobe Experience Platform hochladen. Nachdem Sie eine Verbindung zu diesem Datensatz in Customer Journey Analytics hergestellt und eine Datenansicht erstellt haben, können Sie die Daten in Arbeitsbereich nutzen. |
-| Experience Cloud-Organisation | Anmeldeunternehmen | Siehe [Organisationen und Kontoverknüpfung](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/organizations.html?lang=de#topic_C31CB834F109465A82ED57FF0563B3F1). |
+| CX Enterprise-Organisation | Anmeldeunternehmen | Siehe [Organisationen und Kontoverknüpfung](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/organizations.html?lang=de#topic_C31CB834F109465A82ED57FF0563B3F1). |
 | nicht angegeben | Report Suite | Report Suites im traditionellen Sinne von Adobe Analytics existieren nicht mehr. Stattdessen erstellen Sie (virtuelle) [Datenansichten](/help/data-views/create-dataview.md) aus den Platform-Datensätzen, mit denen Sie Verbindungen hergestellt haben. |
 | Segment | Segment | Segmente waren früher „Filter“. Sie wurden in „Segmente“ umbenannt. |
 | Datenansicht | Virtual Report Suite | In Adobe Analytics ist eine Virtual Report Suite eine gefilterte Ansicht einer übergeordneten Report Suite. Der Hauptunterschied zwischen einer Virtual Report Suite und einer Datenansicht in Customer Journey Analytics besteht darin, dass die Virtual Report Suite eine Untergruppe einer „Basis“- oder „übergeordneten“ Report Suite ist und daher einige ihrer Einstellungen übernimmt. Da es keine übergeordneten/Basis-Report Suites mehr gibt, definieren Sie Datenansichten mit ihren eigenen Einstellungen. |
