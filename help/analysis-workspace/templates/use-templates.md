@@ -6,28 +6,12 @@ role: User, Admin
 exl-id: d61f215d-9089-4014-9c5a-97f5d7134f34
 autotag-review: '2026-05-19T09:53:18.849Z'
 TQID: 'https://experienceleague.adobe.com/wZ8vtE4BFc1ahBKdblSEAXBofZBPObbSJi4bA9MtxPY'
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2:
-  - id: ad333ea6-e90d-4c8f-8d61-9f8690784d6f
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
-  - id: c18d9e03-ac7d-4811-9c92-3e92ddc70ade
-  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-  - id: d3cdead0-685a-4489-9250-4bb709942f66
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: ad333ea6-e90d-4c8f-8d61-9f8690784d6f
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: bcc5edb5-84c3-4940-9f84-ed88b6c16274id: c18d9e03-ac7d-4811-9c92-3e92ddc70adeid: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: d00e9f03-e50b-4162-b143-0c0817c937c2id: d3cdead0-685a-4489-9250-4bb709942f66id: e1e0219c-f879-479f-8427-888ed2a6e9c2id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: dfa7d88f871edf97b688d3263eb68017ba047690
 workflow-type: tm+mt
 source-wordcount: 21144
 ht-degree: 98%
@@ -396,7 +380,7 @@ Die folgenden Vorlagen sind verfügbar:
 >[!CONTEXTUALHELP]
 >id="template--exitPageRankedReport"
 >title="Zeigen Sie die wichtigsten Seiten an, auf die Personen unmittelbar vor dem Verlassen Ihrer Site zugreifen."
->abstract="**Dies kann Ihnen helfen**, besser zu verstehen, durch welche Seiten Personen sich von der Site wegführen lassen. <br/>**Basierend auf Ihren Erkenntnissen können Sie** eine Reihe von Schritten ausführen, z. B. gängige Exitpages aktualisieren, um das Erlebnis zu optimieren, das Personen vor dem Verlassen haben, oder Inhalte oder Links aufnehmen, um Personen dazu aufzufordern, auf Ihrer Site zu bleiben.<br/>Diese Vorlage verwendet die Metrik „Sitzungen“. Außerdem werden die Visualisierungen „Balken“ und „Freiformtabelle“ verwendet."
+>abstract="**Dies kann Ihnen helfen**, besser zu verstehen, welche Seiten Personen von der Site wegführen. <br/>**Basierend auf Ihren Erkenntnissen können Sie** eine Reihe von Schritten ausführen, z. B. gängige Exitpages aktualisieren, um das Erlebnis zu optimieren, das Personen vor dem Verlassen haben, oder Inhalte oder Links aufnehmen, um Personen dazu aufzufordern, auf Ihrer Site zu bleiben.<br/>Diese Vorlage verwendet die Metrik „Sitzungen“. Außerdem werden die Visualisierungen „Balken“ und „Freiformtabelle“ verwendet."
 
 >[!CONTEXTUALHELP]
 >id="template--productUsageOverviewReport"
@@ -406,7 +390,7 @@ Die folgenden Vorlagen sind verfügbar:
 >[!CONTEXTUALHELP]
 >id="template--content-analytics"
 >title="Erfahren Sie, welche Inhalte und Inhaltsattribute die beste Leistung erbringen."
->abstract="**Dies kann Ihnen helfen**, zu verstehen, wie Ihre Inhalte auf granularer Ebene funktionieren. Sie können die Leistung einzelner Assets oder bestimmter Attribute überprüfen. Content Analytics verwendet KI, um automatisch Attribute zu generieren und Ihre Inhalte mit ihnen zu taggen. <a href="https://experienceleague.adobe.com/de/docs/analytics-platform/using/content-analytics/content-analytics" target="&quot;_blank&quot;">Weitere Informationen</a>.<br/>**Basierend auf Ihren Erkenntissen können Sie** eine Reihe von Schritten ausführen, z. B. leistungsstarke Assets auf Ihrer Startseite bewerben, Inhalte für bestimmte Segmente personalisieren, sodass sie leistungsstarke Attribute beinhalten, oder mittlerweile veraltete Inhalte austauschen."
+>abstract="**Dies kann Ihnen helfen**, zu verstehen, wie Ihre Inhalte auf granularer Ebene funktionieren. Sie können die Leistung einzelner Assets oder bestimmter Attribute überprüfen. Content Analytics verwendet KI, um automatisch Attribute zu generieren und Ihre Inhalte mit ihnen zu taggen. <a href="https://experienceleague.adobe.com/de/docs/analytics-platform/using/content-analytics/content-analytics" target="_blank">Weitere Informationen</a>.<br/>**Basierend auf Ihren Erkenntissen können Sie** eine Reihe von Schritten ausführen, z. B. leistungsstarke Assets auf Ihrer Startseite bewerben, Inhalte für bestimmte Segmente personalisieren, sodass sie leistungsstarke Attribute beinhalten, oder mittlerweile veraltete Inhalte austauschen."
 
 
 Die folgenden Vorlagen sind verfügbar:
@@ -677,7 +661,7 @@ Die folgenden Vorlagen sind verfügbar:
 
 | Vorlagenname | Warum diese Vorlage verwenden?<!-- What do you do with it? What can it help you learn? and What are the potential actions? --> |
 | --- | --- |
-| **[!UICONTROL Zielgruppenübersicht]** | Zeigen Sie an, welche Zielgruppen unter den Personen vertreten sind, die Ihre Site besuchen.<p>**Dies kann Ihnen helfen**, allgemeine Informationen zu den Zielgruppen, dem Ursprung der Zielgruppen (RTCDP, Customer Journey Analytics), Zielgruppenüberschneidungen und vieles mehr besser zu verstehen.</p><p>**Basierend auf Ihren Erkenntnissen können Sie** eine Reihe von Schritten ausführen, z. B. die Daten verwenden, um sich auf Marketing-Maßnahmen für diese bestimmten Zielgruppen zu konzentrieren oder maßgeschneiderte Erlebnisse für Kundinnen und Kunden zu schaffen, die mehrere Zielgruppen umfassen.</p><p>Diese Vorlage verwendet die Dimensionen Zielgruppenname, Zielgruppenherkunft, Name der ausgestiegenen Zielgruppe und Ursprung der ausgestiegenen Zielgruppe.</p><p>Weitere Informationen finden Sie unter [&#x200B; von Experience Platform-Zielgruppen in Customer Journey Analytics](/help/connections/audience-analysis/analyze-audiences.md).</p> |
+| **[!UICONTROL Zielgruppenübersicht]** | Zeigen Sie an, welche Zielgruppen unter den Personen vertreten sind, die Ihre Site besuchen.<p>**Dies kann Ihnen helfen**, allgemeine Informationen zu den Zielgruppen, dem Ursprung der Zielgruppen (RTCDP, Customer Journey Analytics), Zielgruppenüberschneidungen und vieles mehr besser zu verstehen.</p><p>**Basierend auf Ihren Erkenntnissen können Sie** eine Reihe von Schritten ausführen, z. B. die Daten verwenden, um sich auf Marketing-Maßnahmen für diese bestimmten Zielgruppen zu konzentrieren oder maßgeschneiderte Erlebnisse für Kundinnen und Kunden zu schaffen, die mehrere Zielgruppen umfassen.</p><p>Diese Vorlage verwendet die Dimensionen Zielgruppenname, Zielgruppenherkunft, Name der ausgestiegenen Zielgruppe und Ursprung der ausgestiegenen Zielgruppe.</p><p>Weitere Informationen finden Sie unter [ von Experience Platform-Zielgruppen in Customer Journey Analytics](/help/connections/audience-analysis/analyze-audiences.md).</p> |
 | [!UICONTROL **Erstmalige vs. wiederkehrende Besuchende**] | Zeigen Sie einen Vergleich zwischen erstmaligen und wiederkehrenden Besuchenden an. <p>**Dies kann Ihnen helfen**, die Effektivität Ihrer Site bei der Kundenbindung oder die Rate, mit der Sie neue Kundschaft gewinnen, besser zu verstehen.</p><p>**Basierend auf Ihren Erkenntnissen können Sie** eine Reihe von Schritten ausführen, z. B. erstmaligen Besuchenden Anreize für zukünftige Käufe anbieten, um sie zur Rückkehr zu bewegen.</p><!-- This template uses the --> |
 | **Personen-ID** | Zeigen Sie das individuelle Benutzerverhalten über verschiedene Kanäle hinweg an.<p>**Dies kann Ihnen helfen**, die gesamte Customer Journey und alle Interaktionen Touchpoint-übergreifend besser zu verstehen.</p><p>**Basierend auf Ihren Erkenntnissen können Sie** eine Reihe von Schritten ausführen, z. B. die Marketing-Maßnahmen genauer auf Benutzervorlieben ausrichten.</p><!-- This template uses the --> |
 | **Geo-Länder** | Zeigen Sie das Land an, aus dem die Personen stammen, die Ihre Site besuchen.<p>**Dies kann Ihnen helfen**, besser zu verstehen, aus welchen Ländern die meisten Personen stammen, die Ihre Site besuchen.</p><p>**Basierend auf Ihren Erkenntnissen können Sie** eine Reihe von Schritten ausführen, z. B. Daten nutzen, um sich auf Marketing-Maßnahmen in diesen Ländern zu konzentrieren, oder sicherstellen, dass Ihr Site-Erlebnis in Ländern mit unterschiedlichen Hauptsprachen optimal ist.</p><p>Diese Vorlage verwendet die Dimension „Länder“. </p> |
@@ -1072,7 +1056,7 @@ Die folgenden Vorlagen sind verfügbar:
 >[!CONTEXTUALHELP]
 >id="cja-template--ajo-channel"
 >title="Zeigen Sie eine ausführliche Zusammenfassung der Traffic- und Interaktionsmetriken für alle Kampagnen und Journeys in Ihrer Umgebung an."
->abstract="**Dies kann Ihnen helfen**, die Effektivität Ihrer Kampagnen und Journeys besser zu verstehen. <br/>**Basierend auf Ihren Erkenntnissen können Sie** verschiedene Maßnahmen ergreifen, z. B. Ihre Kampagnen und Journeys je nach Niveau der Interaktion Ihrer Zielgruppe anpassen."
+>abstract="**Dies kann Ihnen helfen**, die allgemeine Effektivität Ihrer Kampagnen und Journeys besser zu verstehen. <br/>**Basierend auf Ihren Erkenntnissen können Sie** verschiedene Maßnahmen ergreifen, z. B. Ihre Kampagnen und Journeys je nach Niveau der Interaktion Ihrer Zielgruppe anpassen."
 
 >[!CONTEXTUALHELP]
 >id="cja-template--ajo-subscription"
