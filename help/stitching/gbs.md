@@ -6,10 +6,15 @@ feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: ea5c9114-1fc3-4686-b184-2850acb42b5c
 TQID: https://experienceleague.adobe.com/eeNrn3hVytufmz195UHNakznBoVRQ0A-qfOYucFF-X0
-product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2: id: c2be0313-b3ae-45e0-b454-d20bf54b23f2id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
+  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
 source-git-commit: d682e1e729402bff7a3f6e3625402f57deee21ad
 workflow-type: tm+mt
 source-wordcount: 1899
@@ -21,7 +26,7 @@ ht-degree: 70%
 
 Bei der diagrammbasierten Zuordnung geben Sie einen Ereignis-Datensatz, die persistente ID (Cookie) für diesen Datensatz und den Namespace der gewünschten Personen-ID aus dem Identitätsdiagramm an. Diagrammbasierte Zuordnung versucht, die Personen-ID-Informationen für die Customer Journey Analytics-Datenanalyse bei jedem Ereignis verfügbar zu machen. Die persistente ID wird verwendet, um das Identitätsdiagramm vom Experience Platform Identity Service abzufragen und die Personen-ID aus dem angegebenen Namespace abzurufen.
 
-Wenn die Personen-ID-Informationen für ein Ereignis nicht abgerufen werden können, wird stattdessen die persistente ID für dieses (nicht *)* verwendet. Daher enthält in einer [Datenansicht](/help/data-views/data-views.md) die mit einer [Verbindung“ verknüpft ist, ](/help/connections/overview.md) den Datensatz enthält, der für das Zusammenfügen aktiviert ist, die Datenansichtskomponente für die Personen-ID entweder den Personen-ID-Wert oder den beständigen ID-Wert auf der Ereignisebene.
+Wenn die Personen-ID-Informationen für ein Ereignis nicht abgerufen werden können, wird stattdessen die persistente ID für dieses (nicht *)* verwendet. Daher enthält in einer [Datenansicht](/help/data-views/data-views.md) die mit einer [Verbindung“ verknüpft ist, &#x200B;](/help/connections/overview.md) den Datensatz enthält, der für das Zusammenfügen aktiviert ist, die Datenansichtskomponente für die Personen-ID entweder den Personen-ID-Wert oder den beständigen ID-Wert auf der Ereignisebene.
 
 
 ![Diagrammbasierte Zuordnung](/help/stitching/assets/gbs.png)
@@ -214,7 +219,7 @@ Die folgenden Voraussetzungen gelten speziell für die diagrammbasierte Zuordnun
    - Alle Datensätze, die solche relevanten Identitäten enthalten, müssen [für die Aufnahme von Identitätsdiagrammdaten aktiviert](faq.md#enable-a-dataset-for-the-identity-service). Durch diese Aktivierung wird sichergestellt, dass eingehende Identitäten im Laufe der Zeit aus allen erforderlichen Quellen zum Diagramm hinzugefügt werden.
    - Wenn Sie bereits seit einiger Zeit das Echtzeit-Kundendatenprofil oder Adobe Journey Optimizer verwenden, sollte das Diagramm bis zu einem gewissen Grad bereits eingerichtet sein.<br/>Wenn auch für den Datensatz, der für diagrammbasiertes Stitching aktiviert ist, eine historische Stitching-Aufstockung erforderlich ist, sollte das Diagramm bereits historische Identitäten für den gesamten Zeitraum enthalten, um die gewünschten Stitching-Ergebnisse zu erhalten.
 - Wenn Sie die diagrammbasierte Zuordnung verwenden möchten und davon ausgehen, dass der Ereignis-Datensatz zum Identitätsdiagramm beitragen wird, sollten Sie [den Datensatz für den Identity Service aktivieren](/help/stitching/faq.md#enable-a-dataset-for-the-identity-service).
-- Die persistente ID und Personen-ID können mit &quot;[&quot; verwendet ](#identitymap). Oder die persistente ID und Personen-ID können Felder aus dem XDM-Schema sein. In diesem Fall müssen die Felder [als Identität definiert) ](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/fields/identity?lang=en) Schema sein.
+- Die persistente ID und Personen-ID können mit &quot;[&quot; verwendet &#x200B;](#identitymap). Oder die persistente ID und Personen-ID können Felder aus dem XDM-Schema sein. In diesem Fall müssen die Felder [als Identität definiert) &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/fields/identity?lang=en) Schema sein.
 
 >[!NOTE]
 >
