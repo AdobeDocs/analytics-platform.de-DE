@@ -370,7 +370,7 @@ Für den Web-Kanal können Sie [Erlebniserfassung und -definition](#experience-c
 >id="aca_onboarding_datacollection_button"
 >title="Datenerfassung"
 >abstract="Definieren Sie, welche Tag-Eigenschaft verwendet werden soll, oder erstellen Sie eine neue. Definieren Sie zudem mithilfe regulärer Ausdrücke die ein- oder auszuschließenden Seiten und Assets.<br/>Wählen Sie für eine Tag-unabhängige Implementierung **[!UICONTROL Neu erstellen]**.  Eine Tags-Eigenschaft wird erstellt, aber Sie müssen sie nicht verwenden."
->additional-url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/content-analytics/configuration/tags-agnostic" text="Content Analytics JavaScript-Bibliothek"
+>additional-url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/content-analytics/configuration/tags-agnostic" text="Content Analytics JavaScript-Bibliothek"
 
 
 >[!CONTEXTUALHELP]
