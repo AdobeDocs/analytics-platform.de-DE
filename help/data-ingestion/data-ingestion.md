@@ -5,9 +5,14 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: ead96b72-40f1-4ce9-8d91-c8ceea6c4458
 role: Admin
-source-git-commit: ec56bc657961b2e4e8318ab14cd676288398462f
+TQID: https://experienceleague.adobe.com/Jj2ZXUQocZs5QtKkDhEuySQjf1oR01uae9vcy6U4jxg
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: d682e1e729402bff7a3f6e3625402f57deee21ad
 workflow-type: tm+mt
-source-wordcount: '1089'
+source-wordcount: 1129
 ht-degree: 100%
 
 ---
@@ -23,7 +28,7 @@ Es gibt mehrere Möglichkeiten, um Daten in Customer Journey Analytics aufzunehm
 
 Die allgemeine Architektur von Customer Journey Analytics ist im Folgenden dargestellt:
 
-![Customer Journey Analytics-Architektur](/help/getting-started/assets/cja-overview.svg)
+![Customer Journey Analytics-Architektur](/help/getting-started/assets/cja-overview.png)
 
 Diese Architektur veranschaulicht, wie Customer Journey Analytics Folgendes ermöglicht:
 
@@ -51,7 +56,7 @@ Im Folgenden finden Sie Kurzanleitungen für verschiedene Szenarien.
 
 ## Aufnahmepriorität und Latenz
 
-Sie können Ihre Ereignisdaten innerhalb von 90 Minuten (SLT) in Customer Journey Analytics aufnehmen, unabhängig davon, ob die Daten 24 Stunden, 48 Stunden oder 7 Tage alt sind. 
+Sie können Ihre Ereignisdaten innerhalb von 90 Minuten (SLT) in Customer Journey Analytics aufnehmen, unabhängig davon, ob die Daten 24 Stunden, 48 Stunden oder 7 Tage alt sind.
 
 Beachten Sie, dass sich diese Funktion je nach dem von Ihrem Unternehmen erworbenen SKU-Paket unterscheidet:
 

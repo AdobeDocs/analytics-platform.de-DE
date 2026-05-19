@@ -5,10 +5,14 @@ solution: Customer Journey Analytics
 feature: Connections
 role: Admin
 exl-id: 7729c1b9-b3ed-4662-a446-2088389bbd97
-source-git-commit: 4f1299595077a1756a6ad0c4f5ef5e0247ab4973
+TQID: https://experienceleague.adobe.com/I7-bKS2jErVibrBHHfItc9oivAy1TJaVtKs7U3pSS78
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+source-git-commit: d682e1e729402bff7a3f6e3625402f57deee21ad
 workflow-type: tm+mt
-source-wordcount: '470'
-ht-degree: 3%
+source-wordcount: 521
+ht-degree: 10%
 
 ---
 
@@ -18,10 +22,10 @@ Um personenbasierte Suchen nach B2B-Daten (einschließlich Konten, Opportunitys,
 
 Diese Umwandlung ist nur für Datensätze mit Daten für B2B-Lookup-Schemas verfügbar, die auf den folgenden Klassen basieren:
 
-* [Personenbeziehung für XDM Business-Konto](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/classes/b2b/business-account-person-relation)
-* [XDM Business Opportunity Person Relation](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/classes/b2b/business-opportunity-person-relation)
-* [XDM Business Marketing List Members](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/classes/b2b/business-marketing-list-members)
-* [XDM Business Campaign Members](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/classes/b2b/business-campaign-members)
+* [XDM Business Account Person Relation](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/classes/b2b/business-account-person-relation)
+* [XDM Business Opportunity Person Relation](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/classes/b2b/business-opportunity-person-relation)
+* [XDM Business Marketing List Members](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/classes/b2b/business-marketing-list-members)
+* [XDM Business Campaign Members](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/classes/b2b/business-campaign-members)
 
 >[!NOTE]
 >
@@ -52,7 +56,7 @@ So aktivieren Sie die Umwandlung für einen B2B-Lookup-Datensatz:
 
 * Wählen Sie **[!UICONTROL Datensatz für B2B-Suchen umwandeln]** aus.
 
-  Diese Option transformiert den Datensatz, sodass er für personenbasierte Suchen in B2B-Szenarien verwendet werden kann.
+  Mit dieser Option wird der Datensatz transformiert, sodass er für personenbasierte Suchen in B2B-Szenarien verwendet werden kann.
 
 
   >[!IMPORTANT]
@@ -71,4 +75,4 @@ Nicht transformierte Datensätze für Schemata, die auf den vier oben genannten 
 
 Die Transformation ändert den Datensatz jeder der vier Schemaklassen (orange in der unten stehenden Abbildung), sodass für jede Personenkennung ein (Objekt-)Array für die relevanten Daten (Konten, Opportunitys, Marketing-Listen oder Kampagnen) in den Lookup-Datensätzen erstellt wird (rosa in der unten stehenden Abbildung). Diese Umwandlung ermöglicht ein korrektes Arbeiten der Personen-ID-basierten Suchen.
 
-![B2B-Schemata](./assets/b2b-schemas.svg)
+![B2B-Schemata](./assets/b2b-schemas.png)
