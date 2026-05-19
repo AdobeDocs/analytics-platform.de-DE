@@ -37,10 +37,10 @@ Einige Firewall-Konfigurationen blockieren Domains, auf die Customer Journey Ana
 
 ## CX Unternehmens-Domains
 
-Zusätzlich zu den oben genannten Domains nutzt CX Enterprise mehrere Domains für die Datenerfassung und den Export von Berichten. Siehe [Von CX Enterprise verwendete Domains](https://experienceleague.adobe.com/en/docs/core-services/interface/data-collection/domains) für diese Liste.
+Zusätzlich zu den oben genannten Domains nutzt CX Enterprise mehrere Domains für die Datenerfassung und den Export von Berichten. Siehe [Von CX Enterprise verwendete Domains](https://experienceleague.adobe.com/de/docs/core-services/interface/data-collection/domains) für diese Liste.
 
 >[!MORELIKETHIS]
 >
 >[Von Customer Journey Analytics verwendete IP-Adressen](ip-addresses.md)
 >
->[Von CX Enterprise verwendete Domains](https://experienceleague.adobe.com/en/docs/core-services/interface/data-collection/domains)
+>[Von CX Enterprise verwendete Domains](https://experienceleague.adobe.com/de/docs/core-services/interface/data-collection/domains)
