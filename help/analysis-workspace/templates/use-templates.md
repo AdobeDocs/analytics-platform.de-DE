@@ -27,9 +27,9 @@ topic_v2:
   - id: d3cdead0-685a-4489-9250-4bb709942f66
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: dfa7d88f871edf97b688d3263eb68017ba047690
+source-git-commit: 24eb9e6c8f4fc02154d2cf93f111ab0956795f76
 workflow-type: tm+mt
-source-wordcount: 21144
+source-wordcount: 21131
 ht-degree: 98%
 
 ---
@@ -406,7 +406,7 @@ Die folgenden Vorlagen sind verfügbar:
 >[!CONTEXTUALHELP]
 >id="template--content-analytics"
 >title="Erfahren Sie, welche Inhalte und Inhaltsattribute die beste Leistung erbringen."
->abstract="**Dies kann Ihnen helfen**, zu verstehen, wie Ihre Inhalte auf granularer Ebene funktionieren. Sie können die Leistung einzelner Assets oder bestimmter Attribute überprüfen. Content Analytics verwendet KI, um automatisch Attribute zu generieren und Ihre Inhalte mit ihnen zu taggen. <a href="https://experienceleague.adobe.com/de/docs/analytics-platform/using/content-analytics/content-analytics" target="_blank">Weitere Informationen</a>.<br/>**Basierend auf Ihren Erkenntissen können Sie** eine Reihe von Schritten ausführen, z. B. leistungsstarke Assets auf Ihrer Startseite bewerben, Inhalte für bestimmte Segmente personalisieren, sodass sie leistungsstarke Attribute beinhalten, oder mittlerweile veraltete Inhalte austauschen."
+>abstract="**Dies kann Ihnen helfen**, zu verstehen, wie Ihre Inhalte auf granularer Ebene funktionieren. Sie können die Leistung einzelner Assets oder bestimmter Attribute überprüfen. Content Analytics verwendet KI, um automatisch Attribute zu generieren und Ihre Inhalte mit ihnen zu taggen.<br/>**Basierend auf Ihren Erkenntissen können Sie** eine Reihe von Schritten ausführen, z. B. leistungsstarke Assets auf Ihrer Startseite bewerben, Inhalte für bestimmte Segmente personalisieren, sodass sie leistungsstarke Attribute beinhalten, oder mittlerweile veraltete Inhalte austauschen."
 
 
 Die folgenden Vorlagen sind verfügbar:
