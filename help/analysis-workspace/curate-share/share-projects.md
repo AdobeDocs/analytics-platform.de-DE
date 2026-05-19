@@ -5,10 +5,31 @@ title: Freigeben von Projekten
 feature: Curate and Share
 exl-id: ac4ed73a-e890-46cc-be08-4ccedf66b47d
 role: User
-source-git-commit: 211dbd80b21f84ab616569c0d847dcc97f13661c
+TQID: https://experienceleague.adobe.com/qAYUiD5wa5PhvEjTi397PC4n0xX0rWKJSYaAjCR6jtg
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+subfeature_v2:
+  - id: a3b826fd-7a63-4a83-8736-83eee6668f44
+  - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+  - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+  - id: c38ed341-fab2-46df-9d72-88d8166edebb
+  - id: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
+  - id: f21d8c43-b886-433b-93ea-5982cbfc16b7
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2:
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: 0145475e18cfbc3ae3a83e5e3838cdec02b57bda
 workflow-type: tm+mt
-source-wordcount: '2092'
-ht-degree: 99%
+source-wordcount: 2181
+ht-degree: 89%
 
 ---
 
@@ -59,9 +80,9 @@ Sie können eine bestimmte Rolle für Benutzende oder Gruppen freigeben oder ein
 
 Beachten Sie beim Freigeben einer bestimmten Projektrolle für Benutzende und Gruppen in Ihrer Organisation Folgendes:
 
-* Projektrollen (**[!UICONTROL Original bearbeiten]**, **[!UICONTROL Kopie bearbeiten]** und **[!UICONTROL Schreibgeschützt]**) sind an die Benutzenden und die spezifische Projekt-ID gebunden. Projektrollen sind unabhängig von Benutzerberechtigungen, die in der [Adobe Experience Cloud Admin Console](https://experienceleague.adobe.com/de/docs/core-services/interface/administration/admin-getting-started) verwaltet werden.
+* Projektrollen (**[!UICONTROL Original bearbeiten]**, **[!UICONTROL Kopie bearbeiten]** und **[!UICONTROL Schreibgeschützt]**) sind an die Benutzenden und die spezifische Projekt-ID gebunden. Projektrollen sind unabhängig von Benutzerberechtigungen, die in der [CX Enterprise Admin Console](https://experienceleague.adobe.com/de/docs/core-services/interface/administration/admin-getting-started) verwaltet werden.
 
-* In Customer Journey Analytics werden Gruppen durch Produktprofile in der [Adobe Experience Cloud Admin Console](https://experienceleague.adobe.com/de/docs/core-services/interface/administration/admin-getting-started) definiert. Die von Admins durchgeführte Freigabe ist für jede Gruppe möglich, einschließlich *Alle*. Nicht-Admins können Freigaben für Gruppen durchführen, denen sie angehören (mit Ausnahme von *Alle*).
+* In Customer Journey Analytics werden Gruppen durch Produktprofile in der [CX Enterprise Admin Console) &#x200B;](https://experienceleague.adobe.com/de/docs/core-services/interface/administration/admin-getting-started). Die von Admins durchgeführte Freigabe ist für jede Gruppe möglich, einschließlich *Alle*. Nicht-Admins können Freigaben für Gruppen durchführen, denen sie angehören (mit Ausnahme von *Alle*).
 
 * Benutzende, denen mehrere Rollen zugewiesen sind, erhalten immer das maximale Erlebnis. Dies kann vorkommen, wenn Benutzende sowohl als Einzelpersonen als auch als Gruppenmitglieder hinzugefügt werden. Wenn Benutzenden beispielsweise die Rolle **[!UICONTROL Original bearbeiten]** als Einzelpersonen und die Rolle **[!UICONTROL Schreibgeschützt]** als Gruppenmitgliedern zugewiesen wird, erhalten sie die Projektberechtigung **[!UICONTROL Original bearbeiten]**.
 
@@ -106,7 +127,7 @@ Wenn es nicht gespeicherte Änderungen gibt, werden Sie aufgefordert, das Projek
 
    Oder
 
-   Wählen Sie **[!UICONTROL Kuratieren und freigeben]**, um die Projektkuratierung automatisch anzuwenden. (Wenn das Projekt bereits freigegeben wurde, wählen Sie **[!UICONTROL Kuratieren und aktualisieren]** aus.) Erfahren Sie mehr über die [Projektkuration](curate.md).
+   Wählen Sie **[!UICONTROL Kuratieren und freigeben]**, um die Projektkuratierung automatisch anzuwenden. (Wenn das Projekt bereits freigegeben wurde, wählen Sie **[!UICONTROL Kuratieren und aktualisieren]**.) Weitere Informationen über [Projektkuratierung](curate.md).
 
 
 ## Freigeben eines Links zu einem Projekt
@@ -131,8 +152,8 @@ So geben Sie den Projekt-Link für Personen in Ihrer Organisation frei:
 
 >[!CONTEXTUALHELP]
 >id="workspace_share_with_anyone_require_aec_authentication"
->title="Experience Cloud-Authentifizierung verlangen"
->abstract="Ihr Unternehmen verlangt, dass sich Benutzende bei Experience Cloud anmelden, um diesen Link verwenden zu können."
+>title="CX Enterprise-Authentifizierung verlangen"
+>abstract="Ihr Unternehmen verlangt, dass sich Benutzer bei CX Enterprise anmelden, um diesen Link verwenden zu können."
 
 
 Sie können jetzt den [schreibgeschützten Zugriff](/help/analysis-workspace/curate-share/view-only-projects.md) auf Analysis Workspace-Projekte für Personen freischalten, die keinen Zugriff auf Customer Journey Analytics haben. Diese Zugriffsberechtigung kann Folgendes umfassen:
@@ -155,7 +176,7 @@ Sie können jetzt den [schreibgeschützten Zugriff](/help/analysis-workspace/cur
 >
 >* Wenn viele Personen gleichzeitig versuchen, auf einen bestimmten Link zuzugreifen, ist das Projekt möglicherweise nicht mehr zugänglich. Standardmäßig können alle 5 Minuten mehr als 190 Personen auf einen einzelnen Link zugreifen. Sollte Ihr Unternehmen diese Grenze erreichen, warten Sie 5 Minuten und versuchen Sie dann erneut, den Link zu öffnen.
 >
->* Sowohl für [!DNL Healthcare Shield]- als auch für [!DNL Privacy & Security Shield]-Lizenzen ist für die Funktion [!UICONTROL Für alle freigeben] eine Experience Cloud-Authentifizierung erforderlich. Für [!DNL Healthcare Shield]-Kundinnen und -Kunden wird eine HIPAA-Compliance-Warnung angezeigt. Sie können diese Funktion jedoch nach der Authentifizierung für Experience Cloud weiterhin verwenden.
+>* Sowohl für [!DNL Healthcare Shield]- als auch für [!DNL Privacy & Security Shield]-Lizenzen ist für die [!UICONTROL Für alle freigeben] die CX Enterprise-Authentifizierung erforderlich. Für [!DNL Healthcare Shield]-Kunden wird eine Warnung zur HIPAA-Konformität angezeigt, Sie können diese Funktion jedoch nach der Authentifizierung bei CX Enterprise weiterhin verwenden.
 
 >[!BEGINSHADEBOX]
 
@@ -182,15 +203,15 @@ So geben Sie ein Analysis Workspace-Projekt für andere frei:
 
 1. Wählen Sie aus, ob die folgende Sicherheitsoption aktiviert werden soll (diese Option kann von Ihren Customer Journey-Admins gesteuert werden):
 
-   * **[!UICONTROL Experience Cloud-Authentifizierung verlangen]:**
+   * **[!UICONTROL CX Enterprise-Authentifizierung erforderlich]:**
 
-     Wenn diese Option aktiviert ist, können nur Benutzende auf das Projekt zugreifen, die sich bei der Adobe Experience Cloud-Organisation anmelden können, in der das freigegebene Projekt erstellt wurde. Für Benutzende, für die Sie es freigeben, ist jedoch kein Zugriff auf Customer Journey Analytics erforderlich.
+     Wenn diese Option aktiviert ist, können nur diejenigen Benutzer auf das Projekt zugreifen, die sich bei der CX Enterprise-Organisation anmelden können, in der das Projekt erstellt wurde, das Sie freigeben. Für Benutzende, für die Sie es freigeben, ist jedoch kein Zugriff auf Customer Journey Analytics erforderlich.
 
      Customer Journey Analytics-Admins können diese Voreinstellung für das Unternehmen konfigurieren, wie unter [Voreinstellungen](/help/analysis-workspace/user-preferences.md) beschrieben. Je nachdem, wie die Admins diese Option konfiguriert haben, können die folgenden Szenarien auftreten:
 
       * Wenn diese Option nicht angezeigt wird, haben Ihre Customer Journey Analytics-Admins diese Funktion nicht aktiviert.
 
-      * Wenn diese Option aktiviert ist und Sie sie nicht deaktivieren können, bedeutet die gesperrte Option, dass Ihre oder Ihr Customer Journey Analytics-Admin eine Experience Cloud-Authentifizierung für alle Personen benötigt, die auf Analysis Workspace-Projekte zugreifen. Dies ist immer der Fall für Organisationen, die Healthcare Shield lizenzieren.
+      * Wenn diese Option aktiviert ist und Sie sie nicht deaktivieren können, bedeutet die Option Gesperrt , dass Ihr Customer Journey Analytics-Administrator für alle, die auf Analysis Workspace-Projekte zugreifen, eine CX Enterprise-Authentifizierung erfordert. Dies ist immer der Fall für Organisationen, die Healthcare Shield lizenzieren.
 
 1. Wählen Sie neben dem Feld **[!UICONTROL Für jeden freigeben (keine Anmeldung erforderlich)]** das Symbol ![Link](/help/assets/icons/Link.svg) aus, um den Link in die Zwischenablage Ihres Systems zu kopieren.
 

@@ -4,10 +4,21 @@ title: Landingpage von Customer Journey Analytics
 role: User, Admin
 feature: Basics
 exl-id: 65c7bc26-7160-4bba-b764-5b0fa8686fca
-source-git-commit: 1741b2f3fc0588aaf0f403c6f3863ce837e376e9
+TQID: https://experienceleague.adobe.com/yj0864tQCuKNQocyhuqyi-N647uoy2IeqhT9RHmrRK0
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2:
+  - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+source-git-commit: 0145475e18cfbc3ae3a83e5e3838cdec02b57bda
 workflow-type: tm+mt
-source-wordcount: '663'
-ht-degree: 49%
+source-wordcount: 680
+ht-degree: 45%
 
 ---
 
@@ -39,7 +50,7 @@ Der **[!UICONTROL Projekte]** in der linken Leiste dient als Startseite für die
 
 Zugreifen auf Projekte in Customer Journey Analytics:
 
-1. Wählen Sie die Registerkarte [!UICONTROL **Arbeitsbereich**] aus.
+1. Wählen Sie die Registerkarte [!UICONTROL **Workspace**] aus.
 
 1. Wählen [!UICONTROL **Projekte**] in der linken Leiste aus.
 
@@ -57,7 +68,7 @@ Weitere Informationen finden Sie unter [Projekte](/help/analysis-workspace/build
 
 So greifen Sie auf Vorlagen in Customer Journey Analytics zu:
 
-1. Wählen Sie die Registerkarte [!UICONTROL **Arbeitsbereich**] aus.
+1. Wählen Sie die Registerkarte [!UICONTROL **Workspace**] aus.
 
 1. Im Abschnitt [!UICONTROL **Vorlagen**] in der linken Leiste können Sie entweder Adobe-Vorlagen oder Unternehmensvorlagen auswählen.
 
@@ -105,7 +116,7 @@ The available columns are:
 | [!UICONTROL Workspace project] | Creates a blank [Workspace project](/help/analysis-workspace/home.md) for you to  design and build. |
 | [!UICONTROL Mobile scorecard] | Creates a blank [mobile scorecard](https://experienceleague.adobe.com/docs/analytics/analyze/mobapp/curator.html?lang=de) for you to design and build. |
 | [!UICONTROL Open Training Tutorial] | Opens the Workspace training tutorial that guides you through the process of building a new starter project in a step-by-step tutorial.|
-| [!UICONTROL Open release notes] | Opens the Adobe Analytics section of the latest Adobe Experience Cloud release notes. |
+| [!UICONTROL Open release notes] | Opens the Adobe Analytics section of the latest CX Enterprise release notes. |
 | Filter icon | Filters by tags, report suites, owners, types, and other filters (Mine, Shared with me, Favorites, and Approved)  |
 | Search bar | Searches all columns in the table. |
 | Selection box | Selects one or more projects to display the project management actions you can perform: **Delete**, **Share**, **Rename**, **Copy**, **Unpin**, **Move Up**, **Move Down**, **Tag**, **Approve**, **Export CSV**, and **Move to**. You may not have permissions to perform all listed actions. |
@@ -127,7 +138,7 @@ Der Abschnitt **[!UICONTROL Lernen]** auf der Registerkarte [!UICONTROL **Worksp
 
 So greifen Sie auf Informationen zu Lernpfaden in Customer Journey Analytics zu:
 
-1. Wählen Sie die Registerkarte [!UICONTROL **Arbeitsbereich**] aus.
+1. Wählen Sie die Registerkarte [!UICONTROL **Workspace**] aus.
 
 1. Wählen Sie [!UICONTROL **Abschnitt**] Lernen“ in der linken Leiste [!UICONTROL **Lernpfade**] aus.
 
@@ -147,7 +158,7 @@ Die [!UICONTROL **Lernpfade**] bietet die folgenden Funktionen:
 
 Informationen zum Upgrade auf Customer Journey Analytics finden Sie unter:
 
-1. Wählen Sie die Registerkarte [!UICONTROL **Arbeitsbereich**] aus.
+1. Wählen Sie die Registerkarte [!UICONTROL **Workspace**] aus.
 
 1. Wählen Sie [!UICONTROL **Abschnitt**] Lernen“ in der linken Leiste die Option [!UICONTROL **Upgrade auf Customer Journey Analytics**] aus.
 

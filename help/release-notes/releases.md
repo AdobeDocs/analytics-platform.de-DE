@@ -3,10 +3,18 @@ description: Erläutert die Strategie zur kontinuierlichen Veröffentlichung von
 title: Strategie zur Veröffentlichung von Customer Journey Analytics-Funktionen
 exl-id: aebe709a-4cc7-4197-86e9-b26ab2874375
 feature: Release Notes
-source-git-commit: 39e4c17336d3648cbf20cace535668d14510186f
-workflow-type: ht
-source-wordcount: '397'
-ht-degree: 100%
+TQID: https://experienceleague.adobe.com/KTMrEfZBHkdpRHlEGj8s4hfAtlPPjAqQrh6mtS-yAWM
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+source-git-commit: 0145475e18cfbc3ae3a83e5e3838cdec02b57bda
+workflow-type: tm+mt
+source-wordcount: 402
+ht-degree: 90%
 
 ---
 
@@ -20,9 +28,9 @@ Customer Journey Analytics-Versionen basieren auf einem Modell der kontinuierlic
 
 * **Eingeschränktes Testen**: Eine schrittweise Veröffentlichung beginnt mit Tests durch Adobe-interne Benutzende. Sie wird dann einer kleinen Gruppe von Kundenkonten zur Verfügung gestellt, um sicherzustellen, dass die Funktion den Kundenanforderungen und Erwartungen entspricht.
 
-* **Start des Rollouts**: Der Rollout einer stufenweisen Veröffentlichung beginnt mit der eingeschränkten Testphase. Die Verfügbarkeit der Version für Kunden wird dann im Laufe einiger Monate von 0 % auf 100 % skaliert. Die schrittweise Einführung erfolgt auf der Organisationsebene in Experience Cloud, sodass alle Benutzer mit Berechtigung in einem Unternehmen dasselbe Erlebnis erhalten.
+* **Start des Rollouts**: Der Rollout einer stufenweisen Veröffentlichung beginnt mit der eingeschränkten Testphase. Die Verfügbarkeit der Version für Kunden wird dann im Laufe einiger Monate von 0 % auf 100 % skaliert. Der schrittweise Rollout erfolgt auf der Ebene der CX Enterprise-Organisation, sodass alle berechtigten Benutzenden in einer Organisation dasselbe Erlebnis erhalten.
 
-* **Allgemeine Verfügbarkeit (GA)**: Die Funktion steht 100 % der berechtigten Experience Cloud-Organisationen zur Verfügung und die Veröffentlichung der Funktion ist abgeschlossen.
+* **Allgemeine Verfügbarkeit (GA)**: Die Funktion steht 100 % berechtigten CX Enterprise-Organisationen zur Verfügung und die Funktionsveröffentlichung ist abgeschlossen.
 
 Bei jeder Funktionsveröffentlichung kann die Timeline von RTP bis GA variieren. Ziel ist es, die Veröffentlichungen kurz zu halten, sodass innerhalb von 2 Monaten nach Beginn der Veröffentlichung (RTP) eine Funktion allgemein verfügbar (GA) ist.
 

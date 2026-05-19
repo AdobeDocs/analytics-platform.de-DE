@@ -4,16 +4,27 @@ title: Hinzufügen und Verwalten von Kommentaren in Projekten
 feature: Workspace Basics
 role: User
 exl-id: 05f69a1c-31c2-40d8-ae8b-a084169897b1
-source-git-commit: 518bebc18611136873fce5c23dd7041afafe1220
+TQID: https://experienceleague.adobe.com/DWntPKJ6AU2MKBWWVc3MxWYFYXUPlmoMbk8pAdrKYg4
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+subfeature_v2:
+  - id: a8b1c240-f315-46e3-b813-f545c4279dd1
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2:
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+source-git-commit: 0145475e18cfbc3ae3a83e5e3838cdec02b57bda
 workflow-type: tm+mt
-source-wordcount: '1857'
+source-wordcount: 1898
 ht-degree: 1%
 
 ---
 
 # Hinzufügen und Verwalten von Kommentaren in Projekten {#comment-on-projects}
 
-Mithilfe von Kommentaren in Analysis Workspace können Sie im Rahmen eines Analysis Workspace-Projekts Erkenntnisse austauschen und Fragen stellen. Dadurch können Diskussionen über die Daten optimiert werden, sodass Dialoge im Kontext der diskutierten Daten geführt werden. 
+Mithilfe von Kommentaren in Analysis Workspace können Sie im Rahmen eines Analysis Workspace-Projekts Erkenntnisse austauschen und Fragen stellen. Dadurch können Diskussionen über die Daten optimiert werden, sodass Dialoge im Kontext der diskutierten Daten geführt werden.
 
 >[!NOTE]
 >
@@ -113,7 +124,7 @@ Die Kommentarfunktion in Analysis Workspace erleichtert die Zusammenarbeit mit a
 
 Beachten Sie Folgendes, wenn Sie das @-Symbol verwenden, um Personen in einen Kommentar einzuschließen:
 
-* Personen, die Sie einbeziehen, erhalten Benachrichtigungen entsprechend ihren Adobe Experience Cloud-Benachrichtigungseinstellungen.
+* Personen, die Sie einbeziehen, erhalten Benachrichtigungen basierend auf ihren CX Enterprise-Benachrichtigungseinstellungen.
 
   Weitere Informationen finden Sie unter [Empfangen von Benachrichtigungen über Kommentare](#receive-notifications-about-comments).
 
@@ -149,9 +160,9 @@ So fügen Sie eine andere Person in Ihren Kommentar ein:
 
 ## Benachrichtigungen über Kommentare erhalten
 
-Projektbesitzer und [bestimmte Personen, die Sie &#x200B;](#include-others-in-a-comment), erhalten Benachrichtigungen basierend auf ihren Adobe Experience Cloud-Benachrichtigungseinstellungen. Standardmäßig erhalten sie eine In-App-Benachrichtigung, die über das Symbol [Experience Cloud-Benachrichtigung](https://experienceleague.adobe.com/de/docs/core-services/interface/features/account-preferences#view-notifications) ![Experience Cloud-Benachrichtigung](assets/experience-cloud-notification.svg) in Customer Journey Analytics sichtbar ist.
+Projektbesitzer und [bestimmte Personen, die Sie &#x200B;](#include-others-in-a-comment), erhalten Benachrichtigungen basierend auf ihren CX Enterprise-Benachrichtigungseinstellungen. Standardmäßig erhalten sie eine In-App-Benachrichtigung, die über das Symbol [CX Enterprise Notification](https://experienceleague.adobe.com/de/docs/core-services/interface/features/account-preferences#view-notifications) (![CX Enterprise Notification icon) &#x200B;](assets/experience-cloud-notification.svg) Customer Journey Analytics sichtbar ist.
 
-Darüber hinaus können Benutzer ihre Experience Cloud-Benachrichtigungseinstellungen so konfigurieren, dass sie E-Mail-Benachrichtigungen und Slack-Benachrichtigungen erhalten, [&#x200B; sie E-Mail-Benachrichtigungen &#x200B;](https://experienceleague.adobe.com/de/docs/core-services/interface/features/account-preferences#subscribe-to-in-app-and-email-notifications) und [Slack-Benachrichtigungen abonnieren](https://experienceleague.adobe.com/de/docs/core-services/interface/features/account-preferences#slack).
+Darüber hinaus können Benutzer ihre CX Enterprise-Benachrichtigungseinstellungen so konfigurieren, dass sie E-Mail-Benachrichtigungen und Slack-Benachrichtigungen erhalten, indem sie [E-Mail-Benachrichtigungen abonnieren](https://experienceleague.adobe.com/de/docs/core-services/interface/features/account-preferences#subscribe-to-in-app-and-email-notifications) und [Slack-Benachrichtigungen abonnieren](https://experienceleague.adobe.com/de/docs/core-services/interface/features/account-preferences#slack).
 
 ## Platzieren eines Abzeichens für einen vorhandenen Kommentar
 
