@@ -5,11 +5,16 @@ feature: Workspace Basics
 role: User
 exl-id: 05f69a1c-31c2-40d8-ae8b-a084169897b1
 TQID: https://experienceleague.adobe.com/DWntPKJ6AU2MKBWWVc3MxWYFYXUPlmoMbk8pAdrKYg4
-product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656
-subfeature_v2: id: a8b1c240-f315-46e3-b813-f545c4279dd1
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2: id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+subfeature_v2:
+  - id: a8b1c240-f315-46e3-b813-f545c4279dd1
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2:
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
 source-git-commit: 0145475e18cfbc3ae3a83e5e3838cdec02b57bda
 workflow-type: tm+mt
 source-wordcount: 1898
@@ -26,7 +31,7 @@ Mithilfe von Kommentaren in Analysis Workspace können Sie im Rahmen eines Analy
 >Die Möglichkeit, Kommentare zu einem Projekt hinzuzufügen und zu verwalten, kann entweder auf Projektebene oder auf Organisationsebene deaktiviert werden. Wenn Sie keine Kommentare wie in diesem Abschnitt beschrieben hinzufügen und verwalten können, hat der Customer Journey Analytics-Administrator oder Projektbesitzer diese Funktion deaktiviert.
 >
 >* **Projekt** Der Projektbesitzer kann diese Funktion für das Projekt deaktivieren, wie in [Erstellen von Projekten](/help/analysis-workspace/build-workspace-project/create-projects.md) beschrieben.
->* **Organisation:** Der Customer Journey Analytics-Administrator kann diese Funktion für das Unternehmen deaktivieren, wie unter [ beschrieben](/help/analysis-workspace/user-preferences.md).
+>* **Organisation:** Der Customer Journey Analytics-Administrator kann diese Funktion für das Unternehmen deaktivieren, wie unter [&#x200B; beschrieben](/help/analysis-workspace/user-preferences.md).
 
 ## Kommentare anzeigen
 
@@ -55,7 +60,7 @@ Alle in einem Analysis Workspace-Projekt abgegebenen Kommentare werden im Kommen
 
 ### Anzeigen von Kommentar-Badges in einem Projekt
 
-Kommentare, die ([ einem bestimmten Bereich des Projekts) ](#comment-on-a-specific-area-of-the-project), haben ein **Kommentar-Badge** ![Kommentar-Badge](assets/comment-indicator.svg) das über dem Bereich des Projekts angezeigt wird, auf den sich der Kommentar bezieht. Wählen Sie ein Abzeichen aus, um den Kommentar anzuzeigen. Nach Auswahl des Badge können Sie den Kommentar selbst auswählen, um den Kommentar im Kommentarbereich in der rechten Leiste hervorzuheben.
+Kommentare, die ([&#x200B; einem bestimmten Bereich des Projekts) &#x200B;](#comment-on-a-specific-area-of-the-project), haben ein **Kommentar-Badge** ![Kommentar-Badge](assets/comment-indicator.svg) das über dem Bereich des Projekts angezeigt wird, auf den sich der Kommentar bezieht. Wählen Sie ein Abzeichen aus, um den Kommentar anzuzeigen. Nach Auswahl des Badge können Sie den Kommentar selbst auswählen, um den Kommentar im Kommentarbereich in der rechten Leiste hervorzuheben.
 
 Die Zahlen werden auf jedem Abzeichen in einem Projekt angezeigt und in der Reihenfolge sortiert, in der sie erstellt wurden. Wenn mehrere Kommentare in demselben Bereich eines Projekts platziert werden, zeigt das Badge drei Punkte an ![Kommentar-Badge multiple](assets/comment-indicator-multiple.svg). Wählen Sie das 3-Punkt-Badge aus, um alle Kommentare in diesem Bereich anzuzeigen.
 
@@ -155,7 +160,7 @@ So fügen Sie eine andere Person in Ihren Kommentar ein:
 
 ## Benachrichtigungen über Kommentare erhalten
 
-Projektbesitzer und [bestimmte Personen, die Sie ](#include-others-in-a-comment), erhalten Benachrichtigungen basierend auf ihren CX Enterprise-Benachrichtigungseinstellungen. Standardmäßig erhalten sie eine In-App-Benachrichtigung, die über das Symbol [CX Enterprise Notification](https://experienceleague.adobe.com/en/docs/core-services/interface/features/account-preferences#view-notifications) (![CX Enterprise Notification icon) ](assets/experience-cloud-notification.svg) Customer Journey Analytics sichtbar ist.
+Projektbesitzer und [bestimmte Personen, die Sie &#x200B;](#include-others-in-a-comment), erhalten Benachrichtigungen basierend auf ihren CX Enterprise-Benachrichtigungseinstellungen. Standardmäßig erhalten sie eine In-App-Benachrichtigung, die über das Symbol [CX Enterprise Notification](https://experienceleague.adobe.com/en/docs/core-services/interface/features/account-preferences#view-notifications) (![CX Enterprise Notification icon) &#x200B;](assets/experience-cloud-notification.svg) Customer Journey Analytics sichtbar ist.
 
 Darüber hinaus können Benutzer ihre CX Enterprise-Benachrichtigungseinstellungen so konfigurieren, dass sie E-Mail-Benachrichtigungen und Slack-Benachrichtigungen erhalten, indem sie [E-Mail-Benachrichtigungen abonnieren](https://experienceleague.adobe.com/en/docs/core-services/interface/features/account-preferences#subscribe-to-in-app-and-email-notifications) und [Slack-Benachrichtigungen abonnieren](https://experienceleague.adobe.com/en/docs/core-services/interface/features/account-preferences#slack).
 
@@ -171,7 +176,7 @@ Wenn ein Kommentar im Kommentarbereich in der rechten Leiste verfügbar ist, abe
 
    Ein **Kommentar** Badge![Kommentar-Badge](assets/comment-indicator.png) wird im Bereich des von Ihnen ausgewählten Workspace-Projekts platziert. Der Kommentar wird auch oben im Kommentarbereich in der rechten Leiste angezeigt.
 
-   Weitere [ finden Sie unter ](#view-comment-badges-in-a-project) in einem Projekt anzeigen .
+   Weitere [&#x200B; finden Sie unter &#x200B;](#view-comment-badges-in-a-project) in einem Projekt anzeigen .
 
 So entfernen Sie ein Abzeichen:
 
