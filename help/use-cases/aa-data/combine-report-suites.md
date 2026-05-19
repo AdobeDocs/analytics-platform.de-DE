@@ -4,16 +4,28 @@ description: Erfahren Sie, wie Sie mithilfe der Datenvorbereitung Report Suites 
 exl-id: 2656cc21-3980-4654-bffb-b10908cb21f5
 feature: Use Cases
 role: User
-source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
+autotag-review: '2026-05-19T09:35:22.411Z'
+TQID: 'https://experienceleague.adobe.com/La2B-Yvc3-OHQsgmr5EPILZQBcm6zKCAAcKPLZ3PbIQ'
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+subfeature_v2:
+  - id: bf2b169f-d8b2-488a-97b9-f3bc9532e35c
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2:
+  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
 workflow-type: tm+mt
-source-wordcount: '1321'
+source-wordcount: 1390
 ht-degree: 55%
 
 ---
 
 # Kombinieren von Report Suites mit verschiedenen Schemata
 
-Der [Analytics-Quell-Connector](https://experienceleague.adobe.com/de/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics) bringt Report Suite-Daten aus Adobe Analytics in die Adobe Experience Platform zur Verwendung durch Adobe Experience Platform-Programme wie Real-time Customer Data Platform und Customer Journey Analytics (Customer Journey Analytics). Jede Report Suite, die in Adobe Experience Platform importiert wird, wird als Datenfluss der individuellen Quellverbindung konfiguriert, und jeder Datenfluss gelangt als Datensatz in den Data Lake von Adobe Experience Platform. Der Analytics-Quell-Connector erstellt einen Datensatz pro Report Suite.
+Der [Analytics-Quell-Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=de) bringt Report Suite-Daten aus Adobe Analytics in die Adobe Experience Platform zur Verwendung durch Adobe Experience Platform-Programme wie Real-time Customer Data Platform und Customer Journey Analytics (Customer Journey Analytics). Jede Report Suite, die in Adobe Experience Platform importiert wird, wird als Datenfluss der individuellen Quellverbindung konfiguriert, und jeder Datenfluss gelangt als Datensatz in den Data Lake von Adobe Experience Platform. Der Analytics-Quell-Connector erstellt einen Datensatz pro Report Suite.
 
 Customer Journey Analytics-Kunden verwenden [Verbindungen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=de), um Datensätze aus dem Data Lake von Adobe Experience Platform in Customer Journey Analytics Analysis Workspace zu integrieren. Wenn Sie jedoch Report Suites innerhalb einer Verbindung kombinieren, müssen Schemaunterschiede zwischen Report Suites mithilfe der Adobe Experience Platform-Funktion [Datenvorbereitung](https://experienceleague.adobe.com/de/docs/experience-platform/data-prep/home) aufgelöst werden. Dadurch soll sichergestellt werden, dass Adobe Analytics-Variablen wie Props und eVars in Customer Journey Analytics eine konsistente Bedeutung haben.
 
@@ -52,7 +64,7 @@ Dies führt zu sinnlosen Berichten für eVar1 und eVar2:
 
 Die Funktion der Experience Platform-Datenvorbereitung ist in den Analytics-Quell-Connector integriert und kann verwendet werden, um die im obigen Szenario beschriebenen Schemaunterschiede zu beheben. Dies führt zu eVars mit konsistenter Bedeutung in der Customer Journey Analytics-Datenansicht. (Die unten verwendeten Benennungskonventionen können Ihren Bedürfnissen entsprechend angepasst werden.)
 
-1. Bevor Sie die Datenflüsse für die Quellverbindung für Report Suite A und Report Suite B erstellen[&#x200B; erstellen Sie ein neues &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/overview.html?lang=de) in Adobe Experience Platform (nennen wir es **Einheitliches Schema** in unserem Beispiel). Fügen Sie dem Schema Folgendes hinzu:
+1. Bevor Sie die Datenflüsse für die Quellverbindung für Report Suite A und Report Suite B erstellen[&#x200B; erstellen Sie ein neues &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/overview.html?lang=de) in Adobe Experience Platform (nennen wir es **Einheitliches Schema** in unserem Beispiel). Fügen Sie Folgendes zu diesem Schema hinzu:
 
    | „Einheitliches Schema“ |
    | --- |
@@ -61,7 +73,7 @@ Die Funktion der Experience Platform-Datenvorbereitung ist in den Analytics-Quel
 
 1. Fügen Sie eine weitere Feldgruppe zum Schema hinzu oder [erstellen Sie eine benutzerdefinierte Feldergruppe](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/field-groups.html?lang=de#:~:text=To%20create%20a%20new%20field,section%20in%20the%20left%20rail) und fügen Sie sie zum Schema hinzu. Wir erstellen eine neue Feldergruppe und nennen sie **Einheitliche Felder**. Anschließend fügen wir die folgenden Felder zur neuen Feldergruppe hinzu:
 
-   | Benutzerdefinierte Feldergruppe „Einheitliche Felder“  |
+   | Benutzerdefinierte Feldergruppe „Einheitliche Felder“  |
    | --- |
    | Suchbegriff |
    | Geschäftseinheit |
@@ -128,7 +140,7 @@ Mithilfe der Datenvorbereitung können Sie die Kundenkategorie in eVar 1 der Ana
 
 1. Erstellen Sie eine neue Feldergruppe und fügen Sie sie zum Schema hinzu. Fügen Sie Felder zur Feldergruppe hinzu:
 
-   | Benutzerdefinierte Feldergruppe „Kundeninformationen“  |
+   | Benutzerdefinierte Feldergruppe „Kundeninformationen“  |
    | --- |
    | Customer_category |
 

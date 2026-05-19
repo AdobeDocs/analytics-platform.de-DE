@@ -5,9 +5,22 @@ solution: Customer Journey Analytics
 feature: Data Views
 role: User
 exl-id: 9be5180e-6926-431e-aa70-61cb98130ef6
-source-git-commit: a0251638e66d5a2524418fc17f56dddc4e48accd
+autotag-review: '2026-05-19T09:42:27.611Z'
+TQID: 'https://experienceleague.adobe.com/-dIZ7-pLL2i8dFOLWIWqjyqMVGwsMMfHnKu72ZS-jOU'
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: b3197353-f189-4932-8378-3f3bc40e6071
+subfeature_v2:
+  - id: f24857a4-4b64-4b25-b237-d43026362144
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2:
+  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
 workflow-type: tm+mt
-source-wordcount: '799'
+source-wordcount: 802
 ht-degree: 0%
 
 ---
@@ -46,7 +59,7 @@ Visualisierung des monatlichen Customer Journey Analytics-Trends ![](../assets/c
 
    1. Wählen Sie **[!UICONTROL daterangemonth is (All)]** unter **[!UICONTROL Filter auf diesem Bild]** aus.
    1. Wählen Sie **[!UICONTROL Erweiterte]**) als **[!UICONTROL Filtertyp]**.
-   1. Filter definieren, um **[!UICONTROL Elemente anzuzeigen, wenn der Wert]** **[!UICONTROL auf oder nach]** `1/1/2023` **[!UICONTROL Und]**&#x200B;**&#x200B;** liegt, `1/1/2024.` Sie können das Kalendersymbol verwenden, um ein Datum auszuwählen.
+   1. Filter definieren, um **[!UICONTROL Elemente anzuzeigen, wenn der Wert]** **[!UICONTROL auf oder nach]** `1/1/2023` **[!UICONTROL Und**&#x200B;**]** liegt, `1/1/2024.` Sie können das Kalendersymbol verwenden, um ein Datum auszuwählen.
    1. Wählen Sie **[!UICONTROL Filter anwenden]** aus.
 
    Die Tabelle wird mit dem angewendeten Filter **[!UICONTROL daterangemonth“]**.
@@ -80,7 +93,7 @@ Visualisierung des monatlichen Customer Journey Analytics-Trends ![](../assets/c
    1. Ziehen Sie **[!UICONTROL daterangeday]** per Drag-and-Drop aus der Liste **[!UICONTROL Tabellen]** in den Bereich **[!UICONTROL Daten]** und legen Sie den Eintrag im Feld neben **[!UICONTROL Spalten]** ab.
       * Wählen Sie **[!UICONTROL MONTH]** aus dem Dropdown **[!UICONTROL Menü daterangeday]**, sodass der Wert auf &quot;**[!UICONTROL (daterangeday)]** aktualisiert wird.
    1. Ziehen Sie **[!UICONTROL Vorfälle]** per Drag-and-Drop aus der Liste **[!UICONTROL Tabellen (*Kennzahlennamen*)]** in den Bereich **[!UICONTROL Daten]** und legen Sie den Eintrag im Feld neben **[!UICONTROL Zeilen]** ab. Der Wert wird automatisch in **[!UICONTROL SUM(Occurrences)]** umgewandelt.
-   1. Ändern Sie **[!UICONTROL Standard]** über das Dropdown **[!UICONTROL Menü]** Anpassen **[!UICONTROL in der Symbolleiste auf Gesamte Ansicht]**.
+   1. Ändern Sie **[!UICONTROL Standard]** über das Dropdown **[!UICONTROL Menü**&#x200B;[!UICONTROL &#x200B; Anpassen &#x200B;]&#x200B;**in der Symbolleiste auf Gesamte Ansicht]**.
 
       Ihr Tableau-Desktop sollte wie folgt aussehen.
 
@@ -92,7 +105,7 @@ Visualisierung des monatlichen Customer Journey Analytics-Trends ![](../assets/c
 1. Stellen Sie sicher, dass **[!UICONTROL Daten]**-Blatt ausgewählt ist. In der Datenansicht
    1. Wählen Sie **[!UICONTROL oben]** die Option „Anzeigen“ aus und wählen Sie **[!UICONTROL Texttabelle]** (Visualisierung oben links) aus, um den Inhalt der Datenansicht in eine Tabelle zu ändern.
    1. Ziehen Sie **[!UICONTROL MONTH(daterangeday)]** von **[!UICONTROL Columns]** nach **[!UICONTROL Rows]**.
-   1. Ändern Sie **[!UICONTROL Standard]** über das Dropdown **[!UICONTROL Menü]** Anpassen **[!UICONTROL in der Symbolleiste auf Gesamte Ansicht]**.
+   1. Ändern Sie **[!UICONTROL Standard]** über das Dropdown **[!UICONTROL Menü**&#x200B;[!UICONTROL &#x200B; Anpassen &#x200B;]&#x200B;**in der Symbolleiste auf Gesamte Ansicht]**.
 
       Ihr Tableau-Desktop sollte wie folgt aussehen.
 

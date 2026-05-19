@@ -5,9 +5,32 @@ solution: Customer Journey Analytics
 feature: Derived Fields
 exl-id: bcd172b2-cd13-421a-92c6-e8c53fa95936
 role: Admin
-source-git-commit: 66a233937733616ee5b0befa54e9a0cb846a31c5
+autotag-review: '2026-05-19T11:02:42.011Z'
+TQID: 'https://experienceleague.adobe.com/k0nhhAy1CuLa7bEhu1XGqjsQdn9nEAnGb1LbMMeiCLM'
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: b3197353-f189-4932-8378-3f3bc40e6071
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+subfeature_v2:
+  - id: f3ca85c1-72de-4df2-97ed-05753cd77c47
+  - id: e1471301-a189-438e-8d48-264a8db508a6
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: b4dd41a7-ccf8-4e9d-918e-acaab534a307
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
+  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
 workflow-type: tm+mt
-source-wordcount: '2764'
+source-wordcount: 2842
 ht-degree: 1%
 
 ---
@@ -22,7 +45,7 @@ Dieser Artikel enthält Richtlinien (Best Practices, Leitplanken und allgemeine 
 * **Leistung optimieren** Identifizieren Sie Muster, die die Ausführung von Abfragen verlangsamen oder Systembeschränkungen erreichen, um das richtige Tool für den Auftrag auszuwählen:
 
    * [Abgeleitete Felder](/help/data-views/derived-fields/derived-fields.md)
-   * [Datenansichtseinstellungen](/help/data-views/component-settings/overview.md)
+   * [Einstellungen für die Datenansicht](/help/data-views/component-settings/overview.md)
    * [Datenvorbereitung](https://experienceleague.adobe.com/de/docs/experience-platform/data-prep/home)
    * [Berechnete Metriken](/help/components/calc-metrics/calc-metr-overview.md)
    * [Datensätze nachschlagen](/help/getting-started/cja-upgrade/cja-upgrade-dataset-lookup.md)
@@ -183,7 +206,7 @@ In diesem Abschnitt werden Fallstricke bei der Marketing-Kanal- und Kampagnenlog
 
 >[!NOTE]
 >
->Eine Vereinfachung im Vorfeld sollte in Betracht gezogen werden[&#x200B; indem &#x200B;](https://experienceleague.adobe.com/de/docs/experience-platform/data-prep/home)Datenvorbereitung“, [Lookup-Datensätze](/help/getting-started/cja-upgrade/cja-upgrade-dataset-lookup.md) oder abgeleitete Feldfunktionen wie [Klassifizieren](/help/data-views/derived-fields/derived-fields.md#classify) verwendet werden, um ähnliche Regeln für Marketing-Kanäle zu konsolidieren und die Anzahl der Operatoren in Ihrer Wenn[-Logik von &#x200B;](/help/data-views/derived-fields/derived-fields.md#case-when) zu reduzieren. Beschränken Sie außerdem die Anzahl der Felder mit hoher Kardinalität, auf die in der Kanalklassifizierungslogik verwiesen wird (z. B.: viele verschiedene Abfrageparameterschlüssel), da diese Felder sowohl die Kardinalität als auch die Abfragekosten erhöhen.
+>Eine Vereinfachung im Vorfeld sollte in Betracht gezogen werden[&#x200B; indem &#x200B;](https://experienceleague.adobe.com/de/docs/experience-platform/data-prep/home)Datenvorbereitung“, [Lookup-Datensätze](/help/getting-started/cja-upgrade/cja-upgrade-dataset-lookup.md) oder abgeleitete Feldfunktionen wie [Klassifizieren](/help/data-views/derived-fields/derived-fields.md#classify) verwendet werden, um ähnliche Regeln für Marketing-Kanäle zu konsolidieren und die Anzahl der Operatoren in Ihrer Wenn[&#128279;](/help/data-views/derived-fields/derived-fields.md#case-when)-Logik von  zu reduzieren. Beschränken Sie außerdem die Anzahl der Felder mit hoher Kardinalität, auf die in der Kanalklassifizierungslogik verwiesen wird (z. B.: viele verschiedene Abfrageparameterschlüssel), da diese Felder sowohl die Kardinalität als auch die Abfragekosten erhöhen.
 
 **Muster**
 

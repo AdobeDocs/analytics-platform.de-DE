@@ -6,10 +6,25 @@ feature: Basics
 role: Admin
 badgePremium: label="Beta"
 exl-id: 87593d7d-9456-48f8-8d39-5c3d95fe51ec
-source-git-commit: cd3baec708f1811a7cbc37dfe0a9c3af75eb97c3
+autotag-review: '2026-05-19T07:18:47.007Z'
+TQID: 'https://experienceleague.adobe.com/nAfDMtaQvsVRAEm31fRwleirW8LaS-yS0tGTdReux0Y'
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+  - id: b3197353-f189-4932-8378-3f3bc40e6071
+subfeature_v2:
+  - id: bfef374d-acfd-4c57-bf74-a2b36053c545
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
 workflow-type: tm+mt
-source-wordcount: '550'
-ht-degree: 3%
+source-wordcount: 604
+ht-degree: 6%
 
 ---
 
@@ -20,7 +35,7 @@ ht-degree: 3%
 Experience Platform Data Mirror für Customer Journey Analytics erfordert die ordnungsgemäße Konfiguration mehrerer Experience Platform-Komponenten:
 
 * Schema
-* Datensatz
+* datensatz
 * Quell-Connector
 
 Im Folgenden finden Sie Details, die Sie bei der Konfiguration jeder dieser Komponenten berücksichtigen sollten.
@@ -55,7 +70,7 @@ Um den Quell-Connector für die unterstützten nativen Data Warehouse-Lösungen 
 
 Informationen zur Authentifizierung für die unterstützte Data Warehouse-native Lösung finden Sie in der entsprechenden Experience Platform-Dokumentation:
 
-* [Azure-Datenblöcke](https://experienceleague.adobe.com/de/docs/experience-platform/sources/connectors/databases/databricks)
+* [Azure Databricks](https://experienceleague.adobe.com/de/docs/experience-platform/sources/connectors/databases/databricks)
 * [Google BigQuery](https://experienceleague.adobe.com/de/docs/experience-platform/sources/connectors/databases/bigquery)
 * [Snowflake](https://experienceleague.adobe.com/de/docs/experience-platform/sources/connectors/databases/snowflake)
 
@@ -92,6 +107,6 @@ Nachdem Sie die Einrichtung des Quell-Connectors abgeschlossen haben, wird ein D
 
 >[!MORELIKETHIS]
 >
->[Data Mirror-Schnellstartanleitung: Spiegeln und Verwenden von relationalen Daten](relational.md)
+>[Schnellstartanleitung zu Data Mirror: Relationale Daten spiegeln und verwenden](relational.md)
 >[Data Mirror (Dokumentation zu Experience Platform)](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-mirror/overview)
 >[Relationale Schemata (Dokumentation zu Experience Platform)](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/schema/relational)

@@ -5,14 +5,26 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 exl-id: 1c42efac-b3d2-437b-8b0b-9c6fdfed8520
 role: Admin
-source-git-commit: d1ba2d203738ca9bf74d17bb93712eff26f88f25
+autotag-review: '2026-05-19T09:24:34.962Z'
+TQID: 'https://experienceleague.adobe.com/Y7Q0pAx9s4p2YxrcfVKsvJcppHFmtNCKAgA0oCc0CeA'
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: b3197353-f189-4932-8378-3f3bc40e6071
+subfeature_v2:
+  - id: faea9abd-7024-4c5e-a5b4-87919e09b24b
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
 workflow-type: tm+mt
-source-wordcount: '982'
-ht-degree: 54%
+source-wordcount: 1022
+ht-degree: 58%
 
 ---
 
-# Überblick über die Zuordnung
+# Zuordnung – Überblick
 
 >[!NOTE]
 >
@@ -36,11 +48,11 @@ Customer Journey Analytics unterstützt zwei Arten der Zuordnung: [Feldbasierte 
 
 Bevor Sie die Zuordnung verwenden, sollten Sie sicherstellen, dass Ihr Unternehmen folgende Voraussetzungen erfüllt:
 
-- Die Zuordnung umfasst das Zusammenführen von authentifizierten und nicht authentifizierten Benutzerdaten. Stellen Sie sicher, dass Sie die geltenden Gesetze und Vorschriften einhalten, einschließlich der Einholung der erforderlichen Endbenutzerberechtigungen, bevor Sie das Zusammenfügen mit einem Ereignis-Datensatz aktivieren.
+- Die Zuordnung umfasst das Zusammenführen von authentifizierten und nicht authentifizierten Benutzerdaten. Vergewissern Sie sich vor dem Aktivieren der Zuordnung eines Ereignisdatensatzes, dass Sie die geltenden Gesetze und Vorschriften einhalten, wie etwa das Einholen der erforderlichen Berechtigungen der Endanwenderinnen und Endanwender.
 
 - Importieren Sie die gewünschten Daten in Adobe Experience Platform:
 
-   - Informationen zu Adobe Analytics-Daten finden Sie unter [Verwenden von Daten aus Report Suites von Adobe Analytics in Customer Journey Analytics](/help/getting-started/aa-vs-cja/aa-data-in-cja.md). 
+   - Informationen zu Adobe Analytics-Daten finden Sie unter [Verwenden von Daten aus Report Suites von Adobe Analytics in Customer Journey Analytics](/help/getting-started/aa-vs-cja/aa-data-in-cja.md).
    - Informationen zu anderen Datentypen finden Sie unter [Erstellen eines Schemas](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/tutorials/create-schema-ui) und [Aufnehmen von Daten](https://experienceleague.adobe.com/de/docs/experience-platform/ingestion/home) in der Adobe Experience Platform-Dokumentation.
 
 Sie profitieren von der Cross-Channel-Analyse, wenn Sie einen oder mehrere Ihrer zugeordneten Datensätze als Teil der Definition Ihrer Customer Journey Analytics-Verbindung mit anderen Datensätzen kombinieren, z. B. Callcenter-Daten. Bei dieser Verbindungskonfiguration wird davon ausgegangen, dass diese anderen Datensätze bereits eine Personen-ID aus demselben Namespace in möglichst vielen Zeilen enthalten.
@@ -52,7 +64,7 @@ Sobald Ihr Unternehmen die generischen [Voraussetzungen](overview.md#prerequisit
 Die Zuordnung ist eine innovative und zuverlässige Funktion, deren Verwendung jedoch gewissen Einschränkungen unterliegt.
 
 - Es werden nur Ereignis-Datensätze unterstützt. Andere Datensätze, wie beispielsweise Lookup-Datensätze, werden nicht unterstützt.
-- Die Zuordnung transformiert nicht das zum Verbinden verwendete Feld. Die Zuordnung verwendet den Wert im angegebenen Feld so, wie er im nicht zugewiesenen Datensatz innerhalb des Data Lake vorhanden ist. 
+- Die Zuordnung transformiert nicht das zum Verbinden verwendete Feld. Die Zuordnung verwendet den Wert im angegebenen Feld so, wie er im nicht zugewiesenen Datensatz innerhalb des Data Lake vorhanden ist.
 - Beim Zuordnen wird zwischen Groß- und Kleinschreibung unterschieden. Beispielsweise werden die Identitätswerte `Bob` und `BOB` als zwei separate Personen behandelt.
 
 Verwechseln Sie die Zuordnung nicht mit:
@@ -64,7 +76,7 @@ Verwechseln Sie die Zuordnung nicht mit:
 
 ## Optionen
 
-Das Customer Journey Analytics-Paket, zu dem Sie berechtigt sind, bestimmt die verfügbaren Zuordnungsmethoden, Optionen für die anfängliche Aufstockungsdauer, das Lookback-Fenster, die Wiederholungshäufigkeit und die maximale Anzahl von Datensätzen, die für das Zusammenfügen zulässig sind. Weitere Informationen finden Sie in der &lbrace;0[&#x200B; Customer Journey Analytics-Produktbeschreibung. &#x200B;](https://helpx.adobe.com/de/legal/product-descriptions/customer-journey-analytics.html) Legen Sie die verfügbaren Optionen fest, bevor Sie das Zusammenfügen aktivieren.
+Das Customer Journey Analytics-Paket, zu dem Sie berechtigt sind, bestimmt die verfügbaren Zuordnungsmethoden, Optionen für die anfängliche Aufstockungsdauer, das Lookback-Fenster, die Wiederholungshäufigkeit und die maximale Anzahl von Datensätzen, die für das Zusammenfügen zulässig sind. Weitere Informationen finden Sie in der &lbrace;0[&#128279;](https://helpx.adobe.com/de/legal/product-descriptions/customer-journey-analytics.html) Customer Journey Analytics-Produktbeschreibung. Legen Sie die verfügbaren Optionen fest, bevor Sie das Zusammenfügen aktivieren.
 
 | | Customer Journey Analytics-<br/> | Customer Journey Analytics<br/>Prime | Customer Journey Analytics<br/>Ultimate |
 |---|---|---|---|
@@ -97,8 +109,8 @@ Die Zuordnung unterstützt die folgenden automatisch generierten Journey Optimiz
 >[!MORELIKETHIS]
 >
 >[Feldbasierte Zuordnung](fbs.md)
->[Diagrammbasierte Zuordnung](gbs.md)
->[Verwenden der Zuordnung](use-stitching.md)
+>[Grafikbasierte Zuordnung](gbs.md)
+>[Zuordnung verwenden](use-stitching.md)
 >[Validieren der Zuordnung](validate.md)
 >[Häufig gestellte Fragen zur Zuordnung](faq.md)
 
