@@ -4,9 +4,16 @@ description: Listet Inhaltsaktualisierungen für Dokumentation zu Customer Journ
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 8fc9bde3d0b9eebfcc8185aff78ce0f7f2e7704f
+autotag-review: '2026-05-19T11:00:09.733Z'
+TQID: 'https://experienceleague.adobe.com/hHcvSYqGtYuKbPLvtu2qALBNLA0cogWxEUYxu-ktUvM'
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: b743a5d9-dc51-41ed-8b2f-86a1f8de430fid: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4id: d76b9e53-27fb-4597-933f-419cc0dd46dbid: e634a07b-b7ca-4af3-a124-3024ce559e17id: e75a4a9c-d354-4ca4-9b02-1afeca73fa5eid: eb00932f-4d46-46bc-b1d8-10de7588db8d
+subfeature_v2: id: a8e39571-4463-4aa3-8b3f-4e2341ecf3b3
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: bcc5edb5-84c3-4940-9f84-ed88b6c16274id: c1579802-ddd4-4214-8a91-97b2066abe11id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adebid: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: d00e9f03-e50b-4162-b143-0c0817c937c2id: d3cdead0-685a-4489-9250-4bb709942f66id: e1e0219c-f879-479f-8427-888ed2a6e9c2id: eddd9b14-83bd-4ff4-9072-54a4a484abb7id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
 workflow-type: tm+mt
-source-wordcount: '6915'
+source-wordcount: 6915
 ht-degree: 94%
 
 ---
@@ -22,7 +29,7 @@ Die folgenden Aktualisierungen wurden seit der ersten Erstellung der Customer Jo
 |---|---|
 | **Mai 2026** | |
 | JavaScript-Bibliothek für Content Analytics | Dokumentation zur Implementierung von Content Analytics für den Webkanal mithilfe der [Content Analytics-JavaScript-Bibliothek](/help/content-analytics/config/tags-agnostic.md) ohne Experience Platform-Datenerfassungs-Tags. |
-| Überlegungen zu Data Mirror | [Dokumentation](/help/data-mirror/considerations.md) in der Faktoren beschrieben werden, die Sie beim Einrichten von [Data Mirror-Datensätzen berücksichtigen &#x200B;](/help/data-mirror/data-mirror.md). |
+| Überlegungen zu Data Mirror | [Dokumentation](/help/data-mirror/considerations.md) in der Faktoren beschrieben werden, die Sie beim Einrichten von [Data Mirror-Datensätzen berücksichtigen ](/help/data-mirror/data-mirror.md). |
 | Content Analytics Mobile-Kanal | Aktualisierungen der [Content Analytics-Dokumentation](/help/content-analytics/content-analytics.md) um die Funktionen und die Konfiguration des Content Analytics Mobile-Kanals zu beschreiben. |
 | **April 2026** | |
 | Richtlinien für abgeleitete Felder | Es wurde ein Artikel mit [Richtlinien](/help/use-cases/data-views/derived-fields/guidelines.md) (Best Practices, Leitplanken und allgemeine Fallstricke) für die Arbeit mit abgeleiteten Feldern hinzugefügt. |
@@ -31,12 +38,12 @@ Die folgenden Aktualisierungen wurden seit der ersten Erstellung der Customer Jo
 | **März 2026** | |
 | Aufschlüsseln eines Bedienfelds | Die Dokumentation um den [Ablagebereich für ein Bedienfeld“ wurde neu strukturiert](/help/analysis-workspace/c-panels/panels.md#drop-zone) um die neue Funktion [Aufschlüsselung](/help/analysis-workspace/c-panels/panels.md#break-down-a-panel) zu unterstützen. |
 | Technote zu fehlerhaften IDs (BAVIDs) | Neue [Technote zu fehlerhaften IDs](/help/technotes/badids.md). In der Technote wird erläutert, wie eine fehlerhafte ID definiert wird, wo in der Customer Journey Analytics-Benutzeroberfläche fehlerhafte IDs verwendet werden und wie Daten in Ihrer Verbindung auf fehlerhafte IDs untersucht werden. |
-| Neugestaltung der Datensatzvorschau in Verbindungen | Die Dokumentation für ein verbessertes Datenvorschau-Erlebnis beim [&#x200B; (Hinzufügen](/help/connections/create-connection.md#add-datasets) oder [Bearbeiten](/help/connections/create-connection.md#edit-a-dataset) von Datensätzen in einer personenbasierten Verbindung wurde aktualisiert, einschließlich der Dokumentation zu zusätzlichen [Zusammenfügen von Vorschauinformationen](/help/stitching/use-stitching-ui.md#datasets-preview) für Datensätze mit aktiviertem Zusammenfügen. |
+| Neugestaltung der Datensatzvorschau in Verbindungen | Die Dokumentation für ein verbessertes Datenvorschau-Erlebnis beim [ (Hinzufügen](/help/connections/create-connection.md#add-datasets) oder [Bearbeiten](/help/connections/create-connection.md#edit-a-dataset) von Datensätzen in einer personenbasierten Verbindung wurde aktualisiert, einschließlich der Dokumentation zu zusätzlichen [Zusammenfügen von Vorschauinformationen](/help/stitching/use-stitching-ui.md#datasets-preview) für Datensätze mit aktiviertem Zusammenfügen. |
 | Miniaturansichten und Vorschauen in Content Analytics | Dokumentation zu [Miniaturen](/help/content-analytics/report/report.md#thumbnails) und [Vorschauen](/help/content-analytics/report/report.md#previews) für zusätzliche Visualisierungen in Content Analytics. |
 | **Februar 2026** | |
 | Überschreibungen des Headers | Dokumentation zur zusätzlichen Konfiguration [Header überschreibt](/help/content-analytics/config/guided.md#header-overrides) für Content Analytics. |
-| Schutzmaßnahme bei berechneten Metriken | Die [Schutzmaßnahme für die maximale Anzahl berechneter Metriken für eine Organisation“ wurde &#x200B;](/help/technotes/guardrails.md#segments-and-calculated-metrics). Der Maximalwert beträgt jetzt 50.000. |
-| Eigenständige Content Analytics | Es wurde Dokumentation für eine [eigenständige Konfiguration von Content Analytics&quot; &#x200B;](/help/content-analytics/config/standalone.md). |
+| Schutzmaßnahme bei berechneten Metriken | Die [Schutzmaßnahme für die maximale Anzahl berechneter Metriken für eine Organisation“ wurde ](/help/technotes/guardrails.md#segments-and-calculated-metrics). Der Maximalwert beträgt jetzt 50.000. |
+| Eigenständige Content Analytics | Es wurde Dokumentation für eine [eigenständige Konfiguration von Content Analytics&quot; ](/help/content-analytics/config/standalone.md). |
 | **Januar 2026** | |
 | Schema planen | Wesentliche Informationen und Kontext wurden hinzugefügt zu [Entwickeln eines Schemas zur Verwendung mit Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-schema-architect.md). |
 
@@ -330,8 +337,8 @@ Die folgenden Aktualisierungen wurden seit der ersten Erstellung der Customer Jo
 | September 2021 | [Unterstützung der Sommerzeit beim Reporting](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=de#calendar) |
 | September 2021 | [Kundenkalender](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=de#calendar) – Dokumentation |
 | September 2021 | [Boolesche Felder](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/behavior.html?lang=de) – Dokumentation |
-| September 2021 | Aufschlüsselnung der Komponenteneinstellungen in Datenansichten in einzelne Dateien:<ul><li>[[!UICONTROL Komponenteneinstellungen] - Übersicht](/help/data-views/component-settings/overview.md)</li><li>[[!UICONTROL &#x200B; Attribution] – Komponenteneinstellungen](/help/data-views/component-settings/attribution.md)</li><li>[[!UICONTROL Verhalten] – Komponenteneinstellungen](/help/data-views/component-settings/behavior.md)</li><li>[[!UICONTROL Format] – Komponenteneinstellungen](/help/data-views/component-settings/format.md)</li><li>[[!UICONTROL Einschließen/ausschließen] – Komponenteneinstellungen](/help/data-views/component-settings/include-exclude-values.md)</li><li>[[!UICONTROL Metrik-Deduplizierung] – Komponenteneinstellungen](/help/data-views/component-settings/metric-deduplication.md)</li><li>[[!UICONTROL Kein Wert] – Komponenteneinstellungen](/help/data-views/component-settings/no-value-options.md)</li><li>[[!UICONTROL Persistenz] – Komponenteneinstellungen](/help/data-views/component-settings/persistence.md)</li><li>[[!UICONTROL Wert-Bucketing] – Komponenteneinstellungen](/help/data-views/component-settings/value-bucketing.md)</li></ul> |
-| September 2021 | Neuer Abschnitt über die [Auswirkungen der Zusammenführung von Report Suites](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=de#6.-considerations-when-merging-report-suites-in-cja) in Customer Journey Analytics. |
+| September 2021 | Aufschlüsselnung der Komponenteneinstellungen in Datenansichten in einzelne Dateien:<ul><li>[[!UICONTROL Komponenteneinstellungen] - Übersicht](/help/data-views/component-settings/overview.md)</li><li>[[!UICONTROL  Attribution] – Komponenteneinstellungen](/help/data-views/component-settings/attribution.md)</li><li>[[!UICONTROL Verhalten] – Komponenteneinstellungen](/help/data-views/component-settings/behavior.md)</li><li>[[!UICONTROL Format] – Komponenteneinstellungen](/help/data-views/component-settings/format.md)</li><li>[[!UICONTROL Einschließen/ausschließen] – Komponenteneinstellungen](/help/data-views/component-settings/include-exclude-values.md)</li><li>[[!UICONTROL Metrik-Deduplizierung] – Komponenteneinstellungen](/help/data-views/component-settings/metric-deduplication.md)</li><li>[[!UICONTROL Kein Wert] – Komponenteneinstellungen](/help/data-views/component-settings/no-value-options.md)</li><li>[[!UICONTROL Persistenz] – Komponenteneinstellungen](/help/data-views/component-settings/persistence.md)</li><li>[[!UICONTROL Wert-Bucketing] – Komponenteneinstellungen](/help/data-views/component-settings/value-bucketing.md)</li></ul> |
+| September 2021 | Neuer Abschnitt über die [Auswirkungen der Zusammenführung von Report Suites](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html#6.-considerations-when-merging-report-suites-in-cja) in Customer Journey Analytics. |
 | **August 2021** | |
 | August 2021 | Neuer Abschnitt zum Erlebnis mit erweiterten [Verbindungen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/manage-connections.html?lang=de) in Customer Journey Analytics. |
 | August 2021 | Neuer Abschnitt zu [Groß-/Kleinschreibung in Datenansichtsdimensionen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=de#configure-behavior-settings). |

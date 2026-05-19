@@ -5,9 +5,16 @@ solution: Customer Journey Analytics
 feature: Basics
 role: Admin
 badgePremium: label="Beta"
-source-git-commit: 725ec404666d706801f06eb4ea46628b02506d59
+autotag-review: '2026-05-19T06:55:09.938Z'
+TQID: 'https://experienceleague.adobe.com/uZjXZUKUMeXLxxpTRrkCZrPsGhxseSxOtJ9X0ZjG5wU'
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: b3197353-f189-4932-8378-3f3bc40e6071
+subfeature_v2: id: bfef374d-acfd-4c57-bf74-a2b36053c545id: e1471301-a189-438e-8d48-264a8db508a6
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adebid: d00e9f03-e50b-4162-b143-0c0817c937c2id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
 workflow-type: tm+mt
-source-wordcount: '832'
+source-wordcount: 832
 ht-degree: 1%
 
 ---
@@ -74,7 +81,7 @@ Der Unterschied zwischen primärer Identität und primärem Schlüssel führt zu
 
 ## Governance-Unterschiede
 
-In XDM [Schemata](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/schema/composition) und zugrunde liegenden Konzepten wie [Feldergruppen](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/schema/composition#field-group) propagiert ein definiertes [Feld](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/schema/composition#field) innerhalb einer Feldergruppe seine Kennzeichnungen über alle Datensätze hinweg, in denen die Feldergruppe verwendet wird. Beispiel: Ein E-Mail-Feld, das in einer `identities` Feldergruppe `emailID` wird, ist für alle Datensätze, in denen die `identities` verwendet wird, gleich beschriftet.
+In XDM [Schemata](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/schema/composition) und zugrunde liegenden Konzepten wie [Feldergruppen](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition#field-group) propagiert ein definiertes [Feld](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition#field) innerhalb einer Feldergruppe seine Kennzeichnungen über alle Datensätze hinweg, in denen die Feldergruppe verwendet wird. Beispiel: Ein E-Mail-Feld, das in einer `identities` Feldergruppe `emailID` wird, ist für alle Datensätze, in denen die `identities` verwendet wird, gleich beschriftet.
 
 In einem relationalen Schema ist ein Spaltenname unabhängig. Eine Spalte mit dem Namen `email` in Tabelle `customers` ist unabhängig von einer Spalte mit dem Namen `email` in einer `prospects` und unterscheidet sich von dieser Spalte. Dieses Verhalten bedeutet, dass Kennzeichnungen (wie DULE-Nutzungskennzeichnungen, Richtlinien) einzeln auf die Felder in den gespiegelten Datensätzen angewendet werden müssen. Auf der Grundlage des obigen Beispiels müssen Sie Kennzeichnungen sowohl auf das `email` Feld im `customers` Datensatz als auch auf das `email` Feld im `prospects` Datensatz anwenden.
 
@@ -95,5 +102,5 @@ Relationale Schemata haben hinsichtlich des Zusammenfügens die folgenden Einsch
 
 Die folgenden Überlegungen gelten für Systemschlüssel und -felder:
 
-* Primärschlüssel, Versionsdeskriptor und Zeitstempeldeskriptor müssen Felder auf Stammebene im relationalen XDM-Schema sein. Verwenden Sie [Feldzuordnung](https://experienceleague.adobe.com/de/docs/experience-platform/sources/ui-tutorials/dataflow/databases#map-data-fields-to-an-xdm-schema) während der Aufnahme, um diese Anforderung zu unterstützen.
-* Sie können die entsprechenden Quellfelder während der [Zuordnungsphase](https://experienceleague.adobe.com/de/docs/experience-platform/sources/ui-tutorials/dataflow/databases#map-data-fields-to-an-xdm-schema) auslassen.
+* Primärschlüssel, Versionsdeskriptor und Zeitstempeldeskriptor müssen Felder auf Stammebene im relationalen XDM-Schema sein. Verwenden Sie [Feldzuordnung](https://experienceleague.adobe.com/en/docs/experience-platform/sources/ui-tutorials/dataflow/databases#map-data-fields-to-an-xdm-schema) während der Aufnahme, um diese Anforderung zu unterstützen.
+* Sie können die entsprechenden Quellfelder während der [Zuordnungsphase](https://experienceleague.adobe.com/en/docs/experience-platform/sources/ui-tutorials/dataflow/databases#map-data-fields-to-an-xdm-schema) auslassen.

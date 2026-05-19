@@ -5,13 +5,19 @@ exl-id: b8b234c6-a7d9-40e9-8380-1db09610b941
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: 023808a13ba9e438b33b1183b92d3aa8ac339230
+autotag-review: '2026-05-19T09:11:25.584Z'
+TQID: 'https://experienceleague.adobe.com/n0OW9ezQRIXl-e4qneDwlqUR7d2d-osnG31QYhsBBOI'
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: b3197353-f189-4932-8378-3f3bc40e6071
+subfeature_v2: id: e1471301-a189-438e-8d48-264a8db508a6
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: d00e9f03-e50b-4162-b143-0c0817c937c2
+source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
 workflow-type: tm+mt
-source-wordcount: '1038'
-ht-degree: 65%
+source-wordcount: 1117
+ht-degree: 66%
 
 ---
-
 
 # [!UICONTROL Persistenz]-Komponenteneinstellungen {#persistence-component-settings}
 
@@ -20,7 +26,7 @@ ht-degree: 65%
 >[!CONTEXTUALHELP]
 >id="dataview_component_dimension_persistence"
 >title="Persistenz"
->abstract="Konfigurieren Sie das standardmäßige Zuordnungsmodell, das auf eine Dimension angewendet wird. Die Zuordnung erfolgt vor den Segmenten in Berichten. "
+>abstract="Konfigurieren Sie das standardmäßige Zuordnungsmodell, das auf eine Dimension angewendet wird. Die Zuordnung erfolgt vor den Segmenten in Berichten."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -46,7 +52,7 @@ ht-degree: 65%
 | --- | --- |
 | [!UICONTROL Persistenz festlegen] | Aktivieren Sie die Persistenz für die Dimension. Wenn die Persistenz nicht aktiviert ist, bezieht sich die Dimension nur auf Metriken, die im selben Ereignis vorhanden sind. Diese Einstellung ist standardmäßig aktiviert. |
 | [!UICONTROL Zuordnung] | Geben Sie das Zuordnungsmodell an, das für eine Dimension zur Persistenz verwendet wird. Die Optionen sind:<ul><li>**[!UICONTROL Zuletzt verwendet]**: Werte in der Dimension bleiben so lange bestehen, bis sie durch nachfolgende Werte überschrieben werden</li><li> **[!UICONTROL Original]**: Der erste Wert für diese Dimension bleibt bestehen und wird nicht durch nachfolgende Werte überschrieben</li><li>**[!UICONTROL Alle]**: Alle Werte für diese Dimension bleiben gleichzeitig bestehen</li><li>**[!UICONTROL Erster bekannter]**: Der erste Wert für diese Dimension wird verwendet und wird auf alle Ereignisse davor und danach angewendet.</li><li>**[!UICONTROL Letzter bekannter]**: Der letzte Wert für diese Dimension wird verwendet und wird auf alle Ereignisse davor und danach angewendet.</li></ul> |
-| [!UICONTROL Ablauf] | Persistenzfenster für eine Dimension angeben. Die Optionen sind: <ul><li>**[!UICONTROL Sitzung]** (Standard)</li><li>**[!UICONTROL Person]**</li><li>**[!UICONTROL Benutzerdefinierte Zeit]**</li><li>**[!UICONTROL Metrik]**</li></ul>  Möglicherweise brauchen Sie die Option, dass die Dimension bei einem Kauf ablaufen soll (z. B. interne Suchbegriffe oder andere Merchandising-Verwendungsfälle). Die maximale Gültigkeitsdauer, die Sie festlegen können, beträgt 90 Tage. Wenn Sie die Zuordnung [!UICONTROL Alle] auswählen, ist nur die Gültigkeit [!UICONTROL Sitzung] oder [!UICONTROL Person] verfügbar. |
+| [!UICONTROL Ablauf] | Persistenzfenster für eine Dimension angeben. Die Optionen sind: <ul><li>**[!UICONTROL Sitzung]** (Standard)</li><li>**[!UICONTROL Person]**</li><li>**[!UICONTROL Benutzerdefinierte Zeit]**</li><li>**[!UICONTROL Metrik]**</li></ul>. Möglicherweise brauchen Sie die Option, dass die Dimension bei einem Kauf ablaufen soll (z. B. interne Suchbegriffe oder andere Merchandising-Verwendungsfälle). Die maximale Gültigkeitsdauer, die Sie festlegen können, beträgt 90 Tage. Wenn Sie die Zuordnung [!UICONTROL Alle] auswählen, ist nur die Gültigkeit [!UICONTROL Sitzung] oder [!UICONTROL Person] verfügbar. |
 
 {style="table-layout:auto"}
 
@@ -58,31 +64,31 @@ Die verfügbaren Zuordnungseinstellungen sind:
 
   | Dimension | Treffer 1 | Treffer 2 | Treffer 3 | Treffer 4 | Treffer 5 |
   | --- | --- | --- | --- | --- | --- |
-  | Datensatzwerte |  | C | B |  | A  |
-  | Zuletzt verwendete Zuordnung |  | C | B | B | A  |
+  | Datensatzwerte |  | C | B |  | A |
+  | Zuletzt verwendete Zuordnung |  | C | B | B | A |
 
 * **[!UICONTROL Original]**: Behält den ursprünglichen Wert nach Zeitstempel bei, der innerhalb der Dimension für die Dauer des Gültigkeitszeitraums vorhanden ist. Wenn diese Dimension einen Wert hat, wird er nicht überschrieben, wenn bei einem nachfolgenden Ereignis ein anderer Wert angezeigt wird. Betrachten Sie beispielsweise die folgende Tabelle mit der Zuordnung [!UICONTROL Original] und der Gültigkeit [!UICONTROL Sitzung]:
 
   | Dimension | Treffer 1 | Treffer 2 | Treffer 3 | Treffer 4 | Treffer 5 |
   | --- | --- | --- | --- | --- | --- |
-  | Datensatzwerte |  | C | B |  | A  |
+  | Datensatzwerte |  | C | B |  | A |
   | Originale Zuordnung |  | C | C | C | C |
 
 * **[!UICONTROL Alle]**: Funktioniert ähnlich wie das Attributionsmodell [!UICONTROL Partizipation] für Metriken. Behält alle Werte bei, damit jeder Wert im Reporting vollständig für die Metrik angerechnet wird. Betrachten Sie beispielsweise die folgende Tabelle mit der Zuordnung [!UICONTROL Alle] und der Gültigkeit [!UICONTROL Sitzung]:
 
   | Dimension | Treffer 1 | Treffer 2 | Treffer 3 | Treffer 4 | Treffer 5 |
   | --- | --- | --- | --- | --- | --- |
-  | Datensatzwerte | A  | B | C |  | A  |
-  | Zuordnung Alle | A  | A,B | A,B,C | A,B,C | A,B,C |
+  | Datensatzwerte | A | B | C |  | A |
+  | Zuordnung Alle | A | A,B | A,B,C | A,B,C | A,B,C |
 
 * **[!UICONTROL Erster bekannter]** und **[!UICONTROL Letzter bekannter]**: (19. Januar 2022) Diese beiden Zuordnungsmodelle erfüllen die Anwendungsfälle der Dimensionen Einstieg und Ausstieg. Sie wenden den ersten oder letzten beobachteten Wert für eine Dimension innerhalb eines bestimmten Persistenzbereichs (Sitzung, Person oder benutzerspezifischer Zeitraum mit Lookback) auf alle Ereignisse innerhalb des angegebenen Bereichs an. Beispiel:
 
   | Dimension | Treffer 1 | Treffer 2 | Treffer 3 | Treffer 4 | Treffer 5 |
   | --- | --- | --- | --- | --- | --- |
   | Zeitstempel (Min.) | 1 | 2 | 3 | 6 | 7 |
-  | Ausgangswerte |  | C | B |  | A  |
+  | Ausgangswerte |  | C | B |  | A |
   | Erster bekannter | C | C | C | C | C |
-  | Letzter bekannter | A  | A  | A  | A  | A  |
+  | Letzter bekannter | A | A | A | A | A |
 
 
 ## [!UICONTROL Gültigkeits]-Einstellungen
@@ -108,7 +114,7 @@ Siehe [Verwenden von Bindungsdimensionen und Metriken in Customer Journey Analyt
 
 >[!BEGINSHADEBOX]
 
-Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Bindungsdimensionen](https://experienceleague.adobe.com/de/docs/customer-journey-analytics-learn/tutorials/data-views/binding-dimensions-in-data-views){target="_blank"} finden Sie ein Demovideo.
+Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Bindungsdimensionen](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/data-views/binding-dimensions-in-data-views){target="_blank"} finden Sie ein Demovideo.
 
 >[!ENDSHADEBOX]
 

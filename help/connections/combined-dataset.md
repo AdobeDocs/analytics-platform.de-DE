@@ -5,13 +5,19 @@ exl-id: 9f678225-a9f3-4134-be38-924b8de8d57f
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: 4f1299595077a1756a6ad0c4f5ef5e0247ab4973
+autotag-review: '2026-05-19T08:52:44.354Z'
+TQID: 'https://experienceleague.adobe.com/2aw2GDyFlHdR577R8ntg2Q2MYB8zHtr5dc7CWZd4LX0'
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: b3197353-f189-4932-8378-3f3bc40e6071id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: d00e9f03-e50b-4162-b143-0c0817c937c2
+source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
 workflow-type: tm+mt
-source-wordcount: '946'
+source-wordcount: 951
 ht-degree: 33%
 
 ---
-
 
 # Kombinierte Ereignis-Datensätze
 
@@ -66,7 +72,7 @@ Der folgende kombinierte Datensatz wird für das Reporting verwendet.
 
 Betrachten Sie dieses Szenario, um die Bedeutung von Schemapfaden zu veranschaulichen. Im ersten Datensatz basiert `string_color` auf dem Schemapfad `_experience.whatever.string_color` und im zweiten Datensatz auf dem Schemapfad `_experience.somethingelse.string_color`. In diesem Szenario werden die Daten **nicht** im resultierenden kombinierten Datensatz in einer Spalte zusammengeführt. Stattdessen sind das Ergebnis zwei `string_color` Spalten im kombinierten Datensatz:
 
-| id | timestamp | _experience.<br/>Was auch immer.<br/>string_color | _experience.<br/>etwas Anderes.<br/>string_color | string_Animal | string_Shape | metric_a | metric_b |
+| id | timestamp | _experience.<br/>what.<br/>string_color | _experience.<br/>somethingElse.<br/>string_color | string_Animal | string_Shape | metric_a | metric_b |
 |---|---|---|---|---|---|---:|---:|
 | user_310 | &#x200B;1. Januar :02 | Rot | | Fuchs | | | |
 | user_310 | &#x200B;1. Januar :04 | | | | | 2 | |
@@ -112,7 +118,7 @@ Die kanalübergreifende Analyse ermöglicht Ihnen die Beantwortung von Fragen wi
 * Wie viele Menschen interagieren mit meiner Marke? Wie viele und welche Gerätetypen verwenden sie? Wie überschneiden sich diese?
 * Wie oft beginnen Personen mit einer Aufgabe auf einem Mobilgerät und wechseln dann zu einem Desktop-PC, um die Aufgabe abzuschließen? Führen Kampagnen-Clickthroughs, die auf einem Gerät landen, zu einer Konversion an einem anderen Ort?
 * Wie ändert sich mein Verständnis der Kampagneneffektivität, wenn ich geräteübergreifende Journey berücksichtige? Wie ändert sich meine Trichteranalyse?
-* Welche sind die häufigsten Pfade, die Benutzer beim Wechsel von einem Gerät zum anderen verwenden? Wo steigen sie aus? Wo schließen sie ihre Aktion erfolgreich ab?
+* Welche sind die häufigsten Pfade, die Benutzer beim Wechsel von einem Gerät zum anderen verwenden? Wo steigen sie aus? Wo sind sie erfolgreich?
 * Wie unterscheidet sich das Verhalten von Benutzern mit mehreren Geräten von Benutzern mit nur einem Gerät?
 
 

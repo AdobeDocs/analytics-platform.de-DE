@@ -4,10 +4,17 @@ title: Linie
 feature: Visualizations
 exl-id: b68aa8dc-2c96-4c49-8d3c-d94804aab479
 role: User
-source-git-commit: 211dbd80b21f84ab616569c0d847dcc97f13661c
+autotag-review: '2026-05-19T08:29:43.526Z'
+TQID: 'https://experienceleague.adobe.com/ekT5diDY2vDPhjZ5I2oe-lgqjQ--Ri-bO-UljZUUmJw'
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656
+subfeature_v2: id: ddf59f64-0e46-4986-a525-056acc143c70
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: c2be0313-b3ae-45e0-b454-d20bf54b23f2id: d00e9f03-e50b-4162-b143-0c0817c937c2
+source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
 workflow-type: tm+mt
-source-wordcount: '540'
-ht-degree: 93%
+source-wordcount: 566
+ht-degree: 83%
 
 ---
 
@@ -25,7 +32,7 @@ ht-degree: 93%
 
 >[!BEGINSHADEBOX]
 
-_In diesem Artikel wird die Visualisierung „Linie“ in_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics** beschrieben._<br/>_Unter [Linie](https://experienceleague.adobe.com/de/docs/analytics/analyze/analysis-workspace/visualizations/line) finden Sie die Version dieses Artikels für_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics**._
+_In diesem Artikel wird die Linienvisualisierung in_![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._<br/>_Siehe [Line](https://experienceleague.adobe.com/de/docs/analytics/analyze/analysis-workspace/visualizations/line)_ für die ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**-Version dieses Artikels._
 
 >[!ENDSHADEBOX]
 
@@ -41,8 +48,8 @@ Im Rahmen der [Visualisierungseinstellungen](freeform-analysis-visualizations.md
 
 | Einstellung | Beschreibung |
 |---|---|
-| **[!UICONTROL Granularität]** | Wählen Sie aus der Dropdown-Liste „Granularität“ eine Trend-Visualisierung von täglich über wöchentlich bis monatlich usw. aus. Die Granularität wird auch in der Datenquellentabelle aktualisiert. |
-| **[!UICONTROL Min. zeigen]** <br/>**[!UICONTROL Max. zeigen &#x200B;]** | Sie können eine Beschriftung für Minimal- und Maximalwerte überlagern, um die Mindest- und Maximalwerte in einer Metrik hervorzuheben. Die Minimal bzw. Maximalwerte werden aus den sichtbaren Datenpunkten in der Visualisierung abgeleitet, nicht aus dem vollständigen Satz von Werten innerhalb einer Dimension.<br/>![Eine Überlagerung mit der Beschriftung für den Minimal- und Maximalwert](assets/min-max-labels.png) |
+| **[!UICONTROL Granularität]** | Wählen Sie aus der Dropdown-Liste Granularität eine Trend-Visualisierung von täglich über wöchentlich bis monatlich usw. aus. Die Granularität wird auch in der Datenquellentabelle aktualisiert. |
+| **[!UICONTROL Min. zeigen]** <br/>**[!UICONTROL Max. zeigen ]** | Sie können eine Beschriftung für Minimal- und Maximalwerte überlagern, um die Mindest- und Maximalwerte in einer Metrik hervorzuheben. Die Minimal bzw. Maximalwerte werden aus den sichtbaren Datenpunkten in der Visualisierung abgeleitet, nicht aus dem vollständigen Satz von Werten innerhalb einer Dimension.<br/>![Eine Überlagerung mit der Beschriftung für den Minimal- und Maximalwert](assets/min-max-labels.png) |
 | **[!UICONTROL Trendlinie anzeigen]** | Sie können eine Trend-Linie für eine Regression oder einen gleitenden Mittelwert zu Ihrer Linienserie hinzufügen. Trend-Linien helfen, ein Muster in den Daten besser darzustellen. Wählen Sie anschließend ein Modell aus der Liste aus. Unter [Modelle](#models) finden Sie einen Überblick und eine Beschreibung der verfügbaren Modelle.<br/>![Lineare Trend-Linie](assets/show-linear-trendline.png).<p>**TIPP:** Es wird empfohlen, Trendlinien auf Daten anzuwenden, die weder das aktuelle Datum (partielle Daten) noch zukünftige Daten enthalten. Das aktuelle Datum oder zukünftige Daten verzerren die Trend-Linie. Wenn Sie jedoch zukünftige Datumsangaben einbeziehen müssen, entfernen Sie Nullen aus den Daten, um eine Verfälschung für diese Tage zu vermeiden. Gehen Sie zur Datenquellentabelle der Visualisierung, wählen Sie Ihre Metrikspalte aus und aktivieren Sie dann **[!UICONTROL Spalteneinstellungen]** > **[!UICONTROL Null als kein Wert auswerten]**.</p> |
 
 ### Modelle
@@ -67,8 +74,8 @@ Siehe ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Line](https://
 
 >[!MORELIKETHIS]
 >
->[Hinzufügen einer Visualisierung zu einem Panel](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
->[Visualisierungseinstellungen](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
+>[Hinzufügen einer Visualisierung zu einem Bedienfeld](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
+>[Einstellungen der Visualisierung](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
 >[Kontextmenü der Visualisierung](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
 >
 

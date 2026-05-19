@@ -5,9 +5,16 @@ solution: Customer Journey Analytics
 feature: Data Views
 role: User
 exl-id: 55666295-6161-4fbc-b326-231cb5780d4f
-source-git-commit: a0251638e66d5a2524418fc17f56dddc4e48accd
+autotag-review: '2026-05-19T09:45:14.371Z'
+TQID: 'https://experienceleague.adobe.com/afndJsKLHQSCIa9cdTcVUoBRGrU2wBRUYZ4QijVOiE0'
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: b3197353-f189-4932-8378-3f3bc40e6071
+subfeature_v2: id: f24857a4-4b64-4b25-b237-d43026362144
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: d00e9f03-e50b-4162-b143-0c0817c937c2
+source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
 workflow-type: tm+mt
-source-wordcount: '784'
+source-wordcount: 788
 ht-degree: 1%
 
 ---
@@ -29,7 +36,7 @@ Ein Beispiel **[!UICONTROL Limit]**-Bedienfeld für den Anwendungsfall:
 
 >[!PREREQUISITES]
 >
->Stellen Sie sicher, [&#x200B; Sie für das BI-Tool, für das Sie diesen Anwendungsfall ausprobieren möchten, (eine erfolgreiche Verbindung, Datenansichten auflisten &#x200B;](connect-and-validate.md) eine Datenansicht verwenden) validiert haben.
+>Stellen Sie sicher, [ Sie für das BI-Tool, für das Sie diesen Anwendungsfall ausprobieren möchten, (eine erfolgreiche Verbindung, Datenansichten auflisten ](connect-and-validate.md) eine Datenansicht verwenden) validiert haben.
 >
 
 >[!BEGINTABS]
@@ -44,7 +51,7 @@ Ein Beispiel **[!UICONTROL Limit]**-Bedienfeld für den Anwendungsfall:
 1. Im Bereich **[!UICONTROL Filter]**:
    1. Wählen Sie **[!UICONTROL daterange is (All)]** aus **[!UICONTROL Filter auf dieser visuellen]**.
    1. Wählen Sie **[!UICONTROL Relatives Datum]** als **[!UICONTROL Filtertyp]** aus.
-   1. Definieren Sie den Filter für **[!UICONTROL Elemente anzeigen, wenn der Wert]**&#x200B;**[!UICONTROL in den letzten]**`1` **[!UICONTROL Kalenderjahren)]**.
+   1. Definieren Sie den Filter für **[!UICONTROL Elemente anzeigen, wenn der Wert]****[!UICONTROL in den letzten]**`1` **[!UICONTROL Kalenderjahren)]**.
    1. Wählen Sie **[!UICONTROL Filter anwenden]** aus.
    1. Wählen Sie **[!UICONTROL product_name is (All)]** aus **[!UICONTROL Filter auf dieser visuellen]**.
    1. Wählen Sie **[!UICONTROL Top N]** als **[!UICONTROL Filtertyp]**.
@@ -157,7 +164,7 @@ limit 1000001
    1. Wählen **[!UICONTROL Breite anpassen]** aus dem Dropdown **[!UICONTROL Menü]** Anpassen“.
    1. Wählen Sie **[!UICONTROL Produktname]** in **[!UICONTROL Zeilen]** aus. Wählen **[!UICONTROL Filter]** aus dem Dropdown-Menü aus.
       1. Wählen **[!UICONTROL Dialogfeld \[Produktname\]]** die Registerkarte **[!UICONTROL Oben]** aus.
-      1. Wählen Sie **[!UICONTROL Nach Feld:]** **[!UICONTROL Oben]** `5`**[!UICONTROL nach Vorfällen]**&#x200B;**[!UICONTROL Summe]**.
+      1. Wählen Sie **[!UICONTROL Nach Feld:]** **[!UICONTROL Oben]** `5`**[!UICONTROL nach Vorfällen]****[!UICONTROL Summe]**.
       1. Wählen Sie **[!UICONTROL Übernehmen]** und **[!UICONTROL OK]** aus.
 
          ![AlertRed](/help/assets/icons/AlertRed.svg) Sie bemerken, dass die Tabelle verschwindet. Die Auswahl der fünf häufigsten Produktnamen nach Vorkommen funktioniert **nicht** mit diesem Filter ordnungsgemäß.
@@ -208,7 +215,7 @@ GROUP BY 1
    1. Wählen Sie **[!UICONTROL ‣ CC-Datenansicht]**
    1. Wählen Sie aus der Liste der Felder **[!UICONTROL ‣ DateRange]** und **[!UICONTROL DateRange]** aus.
       ![Looker-Filter](../assets/uc2-looker-filter.png)
-1. Geben Sie den Filter **[!UICONTROL CC Datenansicht Datumsbereich]** als **[!UICONTROL liegt im Bereich]** **[!UICONTROL 2023/01/01]**&#x200B;**[!UICONTROL bis (davor)]** **[!UICONTROL 2024/01/01]** an.
+1. Geben Sie den Filter **[!UICONTROL CC Datenansicht Datumsbereich]** als **[!UICONTROL liegt im Bereich]** **[!UICONTROL 2023/01/01]****[!UICONTROL bis (davor)]** **[!UICONTROL 2024/01/01]** an.
 1. Im Abschnitt **[!UICONTROL ‣ CC-Datenansicht]** in der linken Leiste:
    1. Wählen Sie **[!UICONTROL Produktname]** aus.
    1. Wählen Sie **[!UICONTROL Count]** unter **[!UICONTROL MEASURES]** in der linken Leiste (unten) aus.

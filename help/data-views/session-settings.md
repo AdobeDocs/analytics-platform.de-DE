@@ -5,9 +5,16 @@ solution: Customer Journey Analytics
 feature: Data Views
 exl-id: 25710bf1-ec85-4a7d-a404-54549013cc2c
 role: Admin
-source-git-commit: 81e08ecb593b6ba789c479d0e648cbe7ba0a82d6
+autotag-review: '2026-05-19T08:57:43.886Z'
+TQID: 'https://experienceleague.adobe.com/79GGBxPwVb2uQytFBwgAP2QTd57VbjXuwQqq4oKGGUY'
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: b3197353-f189-4932-8378-3f3bc40e6071
+subfeature_v2: id: e1471301-a189-438e-8d48-264a8db508a6
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: d00e9f03-e50b-4162-b143-0c0817c937c2id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
 workflow-type: tm+mt
-source-wordcount: '532'
+source-wordcount: 535
 ht-degree: 62%
 
 ---
@@ -38,7 +45,7 @@ So definieren Sie den Kontext einer Sitzung innerhalb einer Datenansicht:
 
 1. Wählen Sie die Registerkarte **[!UICONTROL Einstellungen]** aus. Unter [!UICONTROL Sitzungseinstellungen]:
 
-   1. Geben Sie einen Wert für ein **[!UICONTROL Sitzungs-Timeout]** in [!UICONTROL Minute(n)], [!UICONTROL Stunde(n)], [!UICONTROL Tag(en) &#x200B;] oder [!UICONTROL Woche(n)] ein. Durch das Sitzungs-Timeout ist festgelegt, wie lange eine Sitzung inaktiv sein kann (es treten keine Ereignisse auf), bevor eine neue Sitzung gestartet wird.
+   1. Geben Sie einen Wert für ein **[!UICONTROL Sitzungs-Timeout]** in [!UICONTROL Minute(n)], [!UICONTROL Stunde(n)], [!UICONTROL Tag(en) ] oder [!UICONTROL Woche(n)] ein. Durch das Sitzungs-Timeout ist festgelegt, wie lange eine Sitzung inaktiv sein kann (es treten keine Ereignisse auf), bevor eine neue Sitzung gestartet wird.
 
       Verwenden Sie ein kurzes Sitzungs-Timeout (z. B. 30 Minuten), wenn Sie hauptsächlich Online-Interaktionen analysieren möchten. Wenn Sie beispielsweise analysieren, ob Profile, die Ihre Online-Store-Produktseiten besucht haben, Produkte zum Warenkorb hinzugefügt oder sogar online gekauft haben.
 
@@ -50,7 +57,7 @@ So definieren Sie den Kontext einer Sitzung innerhalb einer Datenansicht:
 
    1. Wählen Sie eine Metrik aus dem **[!UICONTROL Neue Sitzung mit einer Metrik beginnen]** Dropdown-Menü . Alternativ können Sie eine Metrik aus ![Ereignis](/help/assets/icons/Event.svg) **[!UICONTROL Metriken]** im linken Bereich des **[!UICONTROL _Hier ablegen_]** ziehen. Die ausgewählte Metrik definiert den Beginn einer neuen Sitzung. Sie können mehr als eine Metrik definieren.
 
-      Sie können eine beliebige Metrik verwenden, um eine neue Sitzung zu definieren. Angenommen, Sie möchten jedes Mal, wenn ein Profil Ihre Mobile App startet, eine neue Sitzung definieren. In **[!UICONTROL Datenansicht]** > **[!UICONTROL Komponenten]** definieren Sie eine Komponente des Typs Metrik namens **[!UICONTROL Launch]**, die auf einem **[!UICONTROL appInteraction]**&#x200B;**[!UICONTROL Name]** Schemafeld basiert. Darüber hinaus geben Sie die Metrikkomponente **[!UICONTROL Launch]** an, damit der Wert nur gezählt wird, wenn der Wert `launch` entspricht.
+      Sie können eine beliebige Metrik verwenden, um eine neue Sitzung zu definieren. Angenommen, Sie möchten jedes Mal, wenn ein Profil Ihre Mobile App startet, eine neue Sitzung definieren. In **[!UICONTROL Datenansicht]** > **[!UICONTROL Komponenten]** definieren Sie eine Komponente des Typs Metrik namens **[!UICONTROL Launch]**, die auf einem **[!UICONTROL appInteraction]****[!UICONTROL Name]** Schemafeld basiert. Darüber hinaus geben Sie die Metrikkomponente **[!UICONTROL Launch]** an, damit der Wert nur gezählt wird, wenn der Wert `launch` entspricht.
 
       ![App-Interaktionsmetrik – Komponente „Starts“](assets/component-launches.png)
 

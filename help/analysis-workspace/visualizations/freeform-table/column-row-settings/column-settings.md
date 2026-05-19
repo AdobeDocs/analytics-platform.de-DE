@@ -4,10 +4,17 @@ title: Spalteneinstellungen
 feature: Visualizations
 exl-id: b41d8a12-e8d9-405c-ac71-6567397aec6b
 role: User
-source-git-commit: 023808a13ba9e438b33b1183b92d3aa8ac339230
+autotag-review: '2026-05-19T08:43:31.310Z'
+TQID: 'https://experienceleague.adobe.com/WrOP1B4Dclj004zTWZMACNAVusD47Ugi0IrlXVUrZ88'
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656
+subfeature_v2: id: ddf59f64-0e46-4986-a525-056acc143c70
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5520579-b31f-4df7-9281-f0d9f91e2edcid: d00e9f03-e50b-4162-b143-0c0817c937c2
+source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
 workflow-type: tm+mt
-source-wordcount: '911'
-ht-degree: 79%
+source-wordcount: 951
+ht-degree: 74%
 
 ---
 
@@ -18,7 +25,7 @@ Mithilfe der [!UICONTROL Spalteneinstellungen] können Sie die Spaltenformatieru
 
 >[!BEGINSHADEBOX]
 
-Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Zeilen- und Spalteneinstellungen in einer Freiformtabelle](https://experienceleague.adobe.com/de/docs/analytics-learn/tutorials/analysis-workspace/building-freeform-tables/row-and-column-settings-in-freeform-tables){target="_blank"} finden Sie ein Demovideo.
+Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Zeilen- und Spalteneinstellungen in einer Freiformtabelle](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/analysis-workspace/building-freeform-tables/row-and-column-settings-in-freeform-tables){target="_blank"} finden Sie ein Demovideo.
 
 {{videoaa}}
 
@@ -30,7 +37,7 @@ Um auf [!UICONTROL Spalteneinstellungen] zuzugreifen, wählen Sie ![Spalteneinst
 ![Spalteneinstellungen](assets/column-settings.png)
 
 
-Sie können Einstellungen für mehrere Spalten gleichzeitig bearbeiten. Wählen Sie mehrere Spalten und dann ![Setting](/help/assets/icons/Setting.svg) in einer der ausgewählten Spalten aus. Sämtliche Änderungen, die Sie vornehmen, werden auf die markierten Zellen aller Spalten angewendet. 
+Sie können Einstellungen für mehrere Spalten gleichzeitig bearbeiten. Wählen Sie mehrere Spalten und dann ![Setting](/help/assets/icons/Setting.svg) in einer der ausgewählten Spalten aus. Sämtliche Änderungen, die Sie vornehmen, werden auf die markierten Zellen aller Spalten angewendet.
 
 | Option | Beschreibung |
 | --- | --- |
@@ -38,7 +45,7 @@ Sie können Einstellungen für mehrere Spalten gleichzeitig bearbeiten. Wählen 
 | **[!UICONTROL Gesamtsumme anzeigen]** | Zeigt eine Server-seitige Summe der Spalte an. Bei dieser Gesamtsumme werden Metriken wie Sitzungen oder Personen dedupliziert. |
 | **[!UICONTROL Sparkline zeigen]** | Zeigt ein Liniendiagramm in der Spaltenüberschrift an. |
 | **[!UICONTROL Nummer]** | Bestimmt, ob in einer Zelle der numerische Wert der Metrik ein-/ausgeblendet wird. Wenn die Metrik beispielsweise Seitenansichten lautet, ist der numerische Wert die Anzahl der Seitenansichten für das Zeilenelement. |
-| **[!UICONTROL Percent]** | Bestimmt, ob in einer Zelle der Prozentwert der Metrik ein-/ausgeblendet wird. Ist die Metrik beispielsweise „Seitenansichten“, ist der Prozentwert die Anzahl an Seitenansichten für dieses Zeilenelement geteilt durch die Gesamtanzahl der Seitenansichten für diese Spalte. Hinweis: Prozentsätze über 100 % sind möglich, um Genauigkeit sicherzustellen. Die Begrenzung kann auf 1.000 % verschoben werden, um zu verhindern, dass die Spaltenbreite zu groß wird. |
+| **[!UICONTROL Percent]** | Bestimmt, ob in einer Zelle der Prozentwert der Metrik ein-/ausgeblendet wird. Ist die Metrik beispielsweise „Seitenansichten“, ist der Prozentwert die Anzahl an Seitenansichten für dieses Zeilenelement geteilt durch die Gesamtanzahl der Seitenansichten für diese Spalte.  Hinweis: Prozentsätze über 100 % sind möglich, um Genauigkeit sicherzustellen. Die Begrenzung kann auf 1.000 % verschoben werden, um zu verhindern, dass die Spaltenbreite zu groß wird. |
 | **[!UICONTROL Anomalien zeigen]** | Bestimmen Sie, ob die Anomalieerkennung für die Werte dieser Spalte ausgeführt wird. |
 | **[!UICONTROL Prognose anzeigen]** | Bestimmen Sie, ob Prognosewerte in dieser Spalte angezeigt werden. |
 | **[!UICONTROL Kopfzeilentext umbrechen]** | Lassen Sie den Kopfzeilentext in Freiformtabellen umbrechen, damit Kopfzeilen besser lesbar und Tabellen einfacher freizugeben sind. Ein Umbruch ist beim PDF-Rendern und für Metriken mit langen Namen nützlich. Standardmäßig aktiviert. |
@@ -60,7 +67,7 @@ Die bedingte Formatierung gilt für Obergrenzen, Mittelwerte und Untergrenzen, d
 | **[!UICONTROL Prozentuale Limits verwenden]** | Ändert das Limit so, dass es auf Prozentsätzen basiert anstatt auf absoluten Werten. Ein Bereich prozentualer Limits funktioniert bei Metriken, die rein prozentbasiert sind (beispielweise Absprungrate) und eine Anzahl sowie einen Prozentsatz aufweisen (beispielsweise Seitenansichten). |
 | **[!UICONTROL Automatisch erstellt]** | Obere/mittlere/untere Limits automatisch auf Basis der Daten berechnen. Die Obergrenze ist der größte Wert in dieser Spalte. Die untere Grenze ist die niedrigste, und der Mittelpunkt ist der Durchschnitt der oberen und unteren Grenzen. |
 | **[!UICONTROL Benutzerspezifisch]** | Weisen Sie **[!UICONTROL Oberes Limit]**, **[!UICONTROL Mittel]** und **[!UICONTROL Unteres Limit]** manuell zu. Mit Limits können Sie flexibel bestimmen, ob der Wert einer Spalte als gut, durchschnittlich oder schlecht angesehen wird. |
-| **[!UICONTROL Bedingte Formatierungspalette]** | Wendet einen vorkonfigurierten Farbsatz auf Zellen an. Je nachdem, welches der vier ausgewählten Farbschemata verwendet wird, werden hohen, mittleren und niedrigen Werten unterschiedliche Farben zugewiesen. <br> Wenn Sie eine Dimension in der Tabelle ersetzen, werden die Grenzwerte für die bedingte Formatierung zurückgesetzt. Wenn Sie eine Metrik ersetzen, werden die Grenzwerte für diese Spalte zurückgesetzt (dabei wird eine Metrik auf der x-Achse und eine Dimension auf der y-Achse dargestellt). |
+| **[!UICONTROL Bedingte Formatierungspalette]** | Wendet einen vorkonfigurierten Farbsatz auf Zellen an. Je nachdem, welches der vier ausgewählten Farbschemata verwendet wird, werden hohen, mittleren und niedrigen Werten unterschiedliche Farben zugewiesen. <br> Durch Ersetzen einer Dimension in der Tabelle werden die bedingten Formatierungsbeschränkungen zurückgesetzt. Wenn Sie eine Metrik ersetzen, werden die Grenzwerte für diese Spalte zurückgesetzt (dabei wird eine Metrik auf der x-Achse und eine Dimension auf der y-Achse dargestellt). |
 
 ## Verwenden eines nicht standardmäßigen Attributionsmodells {#use-non-default-attribution-model}
 
@@ -84,7 +91,7 @@ Die bedingte Formatierung gilt für Obergrenzen, Mittelwerte und Untergrenzen, d
 
 
 
-Sie können das standardmäßige Attributionsmodell überschreiben, das in &quot;[&quot; konfiguriert &#x200B;](/help/data-views/component-settings/attribution.md).
+Sie können das standardmäßige Attributionsmodell überschreiben, das in &quot;[&quot; konfiguriert ](/help/data-views/component-settings/attribution.md).
 
 >[!NOTE]
 >

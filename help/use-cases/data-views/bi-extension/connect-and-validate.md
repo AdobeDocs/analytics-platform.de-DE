@@ -4,10 +4,18 @@ description: Verbinden und Validieren eines Anwendungsfalls für die BI-Erweiter
 solution: Customer Journey Analytics
 feature: Data Views
 role: User
-source-git-commit: cb0102923f10f39becd40cc4187d2e11fb8c4e2f
+exl-id: d122a415-fb22-48f7-9377-8349dba274e5
+autotag-review: '2026-05-19T09:45:42.786Z'
+TQID: 'https://experienceleague.adobe.com/snwj7xbkzdBzHE073kpVyfNQ0iWxHBrxhm58NJOiwy8'
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: b3197353-f189-4932-8378-3f3bc40e6071
+subfeature_v2: id: f24857a4-4b64-4b25-b237-d43026362144
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: d00e9f03-e50b-4162-b143-0c0817c937c2
+source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
 workflow-type: tm+mt
-source-wordcount: '1864'
-ht-degree: 5%
+source-wordcount: 2021
+ht-degree: 11%
 
 ---
 
@@ -54,13 +62,13 @@ Ersetzen Sie diese Beispielobjekte durch Objekte, die für Ihre spezifische Umge
       1. Wählen Sie **[!UICONTROL Verbinden]** aus.
    1. Im Dialogfeld **[!UICONTROL PostgreSQL-Datenbank]**:
       ![PowerBI Desktop-Server- und Datenbankeinstellungen](../assets/powerbi-serverdatabase.png)
-      1. Verwenden Sie ![Kopieren](/help/assets/icons/Copy.svg), um die Werte **[!UICONTROL Host]** und **[!UICONTROL Port]** aus dem Bedienfeld Experience Platform **&#x200B;**&#x200B;Abfrage **[!UICONTROL Ablaufende Anmeldeinformationen]** zu kopieren und einzufügen, getrennt durch `:` als Wert für **[!UICONTROL Server]**. Beispiel: `examplecompany.platform-query.adobe.io:80`.
+      1. Verwenden Sie ![Kopieren](/help/assets/icons/Copy.svg), um die Werte **[!UICONTROL Host]** und **[!UICONTROL Port]** aus dem Bedienfeld Experience Platform **** Abfrage **[!UICONTROL Ablaufende Anmeldeinformationen]** zu kopieren und einzufügen, getrennt durch `:` als Wert für **[!UICONTROL Server]**. Beispiel: `examplecompany.platform-query.adobe.io:80`.
       1. Verwenden Sie ![Kopieren](/help/assets/icons/Copy.svg), um den **[!UICONTROL Datenbank]**-Wert aus dem Bedienfeld **[!UICONTROL Abfrage]** **[!UICONTROL Ablaufende Anmeldedaten]** von Experience Platform zu kopieren. Fügen Sie `?FLATTEN` zum eingefügten Wert hinzu. Zum Beispiel `prod:cja?FLATTEN`.
       1. Wählen Sie **[!UICONTROL DirectQuery]** als **[!UICONTROL Datenkonnektivitätsmodus]** aus.
       1. Klicken Sie **[!UICONTROL OK]**.
    1. Im Dialogfeld **[!UICONTROL PostgreSQL-Datenbank]** - **[!UICONTROL Datenbank]**:
       ![PowerBI Desktop-Benutzer und -Kennwort](../assets/powerbi-userpassword.png)
-      1. Verwenden Sie ![Kopieren](/help/assets/icons/Copy.svg), um die Werte **[!UICONTROL Benutzername]** und **[!UICONTROL Kennwort]** aus dem Bedienfeld &quot;**&#x200B;** Abfrage **[!UICONTROL Ablaufende Anmeldeinformationen]** von Experience Platform in die Felder **[!UICONTROL Benutzername]** und **[!UICONTROL Kennwort]** zu kopieren. Wenn Sie eine [nicht ablaufende Berechtigung](https://experienceleague.adobe.com/de/docs/experience-platform/query/ui/credentials?lang=en#use-credential-to-connect) verwenden, verwenden Sie das Kennwort Ihrer nicht ablaufenden Berechtigung.
+      1. Verwenden Sie ![Kopieren](/help/assets/icons/Copy.svg), um die Werte **[!UICONTROL Benutzername]** und **[!UICONTROL Kennwort]** aus dem Bedienfeld &quot;**** Abfrage **[!UICONTROL Ablaufende Anmeldeinformationen]** von Experience Platform in die Felder **[!UICONTROL Benutzername]** und **[!UICONTROL Kennwort]** zu kopieren. Wenn Sie eine [nicht ablaufende Berechtigung](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/credentials?lang=en#use-credential-to-connect) verwenden, verwenden Sie das Kennwort Ihrer nicht ablaufenden Berechtigung.
       1. Stellen Sie sicher, dass das Dropdown-Menü für **[!UICONTROL Wählen Sie, auf welche Ebene diese Einstellungen angewendet werden sollen]** auf den **[!UICONTROL Server]** festgelegt ist, den Sie zuvor definiert haben.
       1. Wählen Sie **[!UICONTROL Verbinden]** aus.
    1. Im **[!UICONTROL Navigator]** werden die Datenansichten abgerufen. Dieser Abruf kann einige Zeit dauern. Nach dem Abrufen sehen Sie Folgendes in Power BI Desktop.
@@ -77,7 +85,7 @@ Ersetzen Sie diese Beispielobjekte durch Objekte, die für Ihre spezifische Umge
 
 ## REDUZIEREN
 
-Power BI Desktop unterstützt die folgenden Szenarien für den `FLATTEN`. Weitere Informationen [&#x200B; Sie unter „Reduzieren &#x200B;](https://experienceleague.adobe.com/de/docs/experience-platform/query/key-concepts/flatten-nested-data) verschachtelten Daten“.
+Power BI Desktop unterstützt die folgenden Szenarien für den `FLATTEN`. Weitere Informationen [ Sie unter „Reduzieren ](https://experienceleague.adobe.com/de/docs/experience-platform/query/key-concepts/flatten-nested-data) verschachtelten Daten“.
 
 | FLATTEN-Parameter | Beispiel | Unterstützt | Bemerkungen |
 |---|---|:---:|---|
@@ -88,7 +96,7 @@ Power BI Desktop unterstützt die folgenden Szenarien für den `FLATTEN`. Weiter
 ### Weitere Informationen
 
 * [Voraussetzungen](/help/data-views/bi-extension.md#prerequisites)
-* [Handbuch zu Anmeldeinformationen](https://experienceleague.adobe.com/de/docs/experience-platform/query/ui/credentials)
+* [Handbuch zu Anmeldedaten](https://experienceleague.adobe.com/de/docs/experience-platform/query/ui/credentials)
 * [Verbinden von Power BI mit dem Abfrage-Service](https://experienceleague.adobe.com/de/docs/experience-platform/query/clients/power-bi).
 
 
@@ -115,7 +123,7 @@ Power BI Desktop unterstützt die folgenden Szenarien für den `FLATTEN`. Weiter
       1. Verwenden Sie ![Kopieren](/help/assets/icons/Copy.svg), um den **[!UICONTROL Datenbank]** aus dem Bedienfeld **[!UICONTROL Abfrage]** **[!UICONTROL Ablaufende Anmeldedaten]** von Experience Platform in **[!UICONTROL Datenbank]** zu kopieren. Fügen Sie `%3FFLATTEN` zum eingefügten Wert hinzu. Beispiel: `prod:cja%3FFLATTEN`.
       1. Wählen Sie **[!UICONTROL Benutzername und Kennwort]** aus dem Dropdown **[!UICONTROL Menü]** Authentifizierung“ aus.
       1. Verwenden Sie ![Kopieren](/help/assets/icons/Copy.svg), um den **[!UICONTROL Benutzernamen]** aus dem Bedienfeld **[!UICONTROL Abfrage]** **[!UICONTROL Ablaufende Anmeldedaten]** von Experience Platform in den **[!UICONTROL Benutzernamen]** zu kopieren.
-      1. Verwenden Sie ![Kopieren](/help/assets/icons/Copy.svg), um das **[!UICONTROL Kennwort]** aus dem Bedienfeld **[!UICONTROL Abfrage]** **[!UICONTROL Ablaufende Anmeldeinformationen]** von Experience Platform in **[!UICONTROL Kennwort]** zu kopieren. Wenn Sie eine [nicht ablaufende Berechtigung](https://experienceleague.adobe.com/de/docs/experience-platform/query/ui/credentials?lang=en#use-credential-to-connect) verwenden, verwenden Sie das Kennwort Ihrer nicht ablaufenden Berechtigung.
+      1. Verwenden Sie ![Kopieren](/help/assets/icons/Copy.svg), um das **[!UICONTROL Kennwort]** aus dem Bedienfeld **[!UICONTROL Abfrage]** **[!UICONTROL Ablaufende Anmeldeinformationen]** von Experience Platform in **[!UICONTROL Kennwort]** zu kopieren. Wenn Sie eine [nicht ablaufende Berechtigung](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/credentials?lang=en#use-credential-to-connect) verwenden, verwenden Sie das Kennwort Ihrer nicht ablaufenden Berechtigung.
       1. Stellen Sie sicher **[!UICONTROL dass „SSL]**&quot; aktiviert ist.
       1. Wählen Sie **[!UICONTROL Anmelden]** aus.
 
@@ -131,7 +139,7 @@ Power BI Desktop unterstützt die folgenden Szenarien für den `FLATTEN`. Weiter
 
 ## REDUZIEREN
 
-Tableau Desktop unterstützt die folgenden Szenarien für den `FLATTEN`. Weitere Informationen [&#x200B; Sie unter „Reduzieren &#x200B;](https://experienceleague.adobe.com/de/docs/experience-platform/query/key-concepts/flatten-nested-data) verschachtelten Daten“.
+Tableau Desktop unterstützt die folgenden Szenarien für den `FLATTEN`. Weitere Informationen [ Sie unter „Reduzieren ](https://experienceleague.adobe.com/de/docs/experience-platform/query/key-concepts/flatten-nested-data) verschachtelten Daten“.
 
 | FLATTEN-Parameter | Beispiel | Unterstützt | Bemerkungen |
 |---|---|:---:|---|
@@ -142,7 +150,7 @@ Tableau Desktop unterstützt die folgenden Szenarien für den `FLATTEN`. Weitere
 ## Weitere Informationen
 
 * [Voraussetzungen](/help/data-views/bi-extension.md#prerequisites)
-* [Handbuch zu Anmeldeinformationen](https://experienceleague.adobe.com/de/docs/experience-platform/query/ui/credentials)
+* [Handbuch zu Anmeldedaten](https://experienceleague.adobe.com/de/docs/experience-platform/query/ui/credentials)
 * [Verbinden von Tableau Desktop mit dem Abfrage-Service](https://experienceleague.adobe.com/de/docs/experience-platform/query/clients/tableau).
 
 
@@ -208,7 +216,7 @@ Tableau Desktop unterstützt die folgenden Szenarien für den `FLATTEN`. Weitere
 
 ## REDUZIEREN
 
-Looker unterstützt die folgenden Szenarien für den `FLATTEN`. Weitere Informationen [&#x200B; Sie unter „Reduzieren &#x200B;](https://experienceleague.adobe.com/de/docs/experience-platform/query/key-concepts/flatten-nested-data) verschachtelten Daten“.
+Looker unterstützt die folgenden Szenarien für den `FLATTEN`. Weitere Informationen [ Sie unter „Reduzieren ](https://experienceleague.adobe.com/de/docs/experience-platform/query/key-concepts/flatten-nested-data) verschachtelten Daten“.
 
 | FLATTEN-Parameter | Beispiel | Unterstützt | Bemerkungen |
 |---|---|:---:|---|
@@ -219,7 +227,7 @@ Looker unterstützt die folgenden Szenarien für den `FLATTEN`. Weitere Informat
 ## Weitere Informationen
 
 * [Voraussetzungen](/help/data-views/bi-extension.md#prerequisites)
-* [Handbuch zu Anmeldeinformationen](https://experienceleague.adobe.com/de/docs/experience-platform/query/ui/credentials)
+* [Handbuch zu Anmeldedaten](https://experienceleague.adobe.com/de/docs/experience-platform/query/ui/credentials)
 
 
 >[!TAB Jupyter-Notebook]
@@ -240,7 +248,7 @@ Looker unterstützt die folgenden Szenarien für den `FLATTEN`. Weitere Informat
    * In: SQLAlchemy: PIP `install sqlalchemy`.
 
 1. Starten Sie Jupyter Notebook aus Ihrer virtuellen Umgebung: `jupyter notebook`.
-1. Erstellen Sie ein neues Notebook oder laden Sie [dieses Beispielnotebook) &#x200B;](../assets/BI-Extension.ipynb.zip).
+1. Erstellen Sie ein neues Notebook oder laden Sie [dieses Beispielnotebook) ](../assets/BI-Extension.ipynb.zip).
 1. Geben Sie in Ihrer ersten Zelle ein und führen Sie Folgendes aus:
 
    ```
@@ -315,7 +323,7 @@ Looker unterstützt die folgenden Szenarien für den `FLATTEN`. Weitere Informat
 
 ## REDUZIEREN
 
-Jupyter Notebook unterstützt die folgenden Szenarien für den `FLATTEN`. Weitere Informationen [&#x200B; Sie unter „Reduzieren &#x200B;](https://experienceleague.adobe.com/de/docs/experience-platform/query/key-concepts/flatten-nested-data) verschachtelten Daten“.
+Jupyter Notebook unterstützt die folgenden Szenarien für den `FLATTEN`. Weitere Informationen [ Sie unter „Reduzieren ](https://experienceleague.adobe.com/de/docs/experience-platform/query/key-concepts/flatten-nested-data) verschachtelten Daten“.
 
 | FLATTEN-Parameter | Beispiel | Unterstützt | Bemerkungen |
 |---|---|:---:|---|
@@ -326,7 +334,7 @@ Jupyter Notebook unterstützt die folgenden Szenarien für den `FLATTEN`. Weiter
 ## Weitere Informationen
 
 * [Voraussetzungen](/help/data-views/bi-extension.md#prerequisites)
-* [Handbuch zu Anmeldeinformationen](https://experienceleague.adobe.com/de/docs/experience-platform/query/ui/credentials)
+* [Handbuch zu Anmeldedaten](https://experienceleague.adobe.com/de/docs/experience-platform/query/ui/credentials)
 
 >[!TAB RStudio]
 
@@ -340,8 +348,8 @@ Jupyter Notebook unterstützt die folgenden Szenarien für den `FLATTEN`. Weiter
       ![Anmeldeinformationen für den Abfrage-Service](../assets/queryservice-credentials.png)
 
 1. Starten Sie RStudio.
-1. Erstellen Sie eine neue Markdown-Datei für R oder laden Sie [diese Beispiel-Markdown-Datei für R &#x200B;](../assets/BI-Extension.Rmd.zip).
-1. Geben Sie in Ihrem ersten Chunk die folgenden Anweisungen zwischen ` ` ``{r} ` und ` `` ` ` ein. Verwenden Sie ![Kopieren](/help/assets/icons/Copy.svg), um Werte aus dem Bedienfeld **[!UICONTROL Abfrage]** **[!UICONTROL Ablaufende Anmeldeinformationen]** von Experience Platform in die Werte zu kopieren, die für die verschiedenen Parameter erforderlich sind, z. B. `host`, `dbname` und `user`. Zum Beispiel:
+1. Erstellen Sie eine neue Markdown-Datei für R oder laden Sie [diese Beispiel-Markdown-Datei für R ](../assets/BI-Extension.Rmd.zip).
+1. Geben Sie in Ihrem ersten Chunk die folgenden Anweisungen zwischen ` ```{r} ` und ` ``` ` ein. Verwenden Sie ![Kopieren](/help/assets/icons/Copy.svg), um Werte aus dem Bedienfeld **[!UICONTROL Abfrage]** **[!UICONTROL Ablaufende Anmeldeinformationen]** von Experience Platform in die Werte zu kopieren, die für die verschiedenen Parameter erforderlich sind, z. B. `host`, `dbname` und `user`. Zum Beispiel:
 
    ```R
    library(rstudioapi)
@@ -362,7 +370,7 @@ Jupyter Notebook unterstützt die folgenden Szenarien für den `FLATTEN`. Weiter
 
    ![RStudio-Konfiguration - Schritt 1](../assets/rstudio-config-step1.png)
 
-1. Erstellen Sie einen neuen Chunk und geben Sie die folgenden Anweisungen zwischen ` ` `` {r} ` und ` `` ` ` ein.
+1. Erstellen Sie einen neuen Chunk und geben Sie die folgenden Anweisungen zwischen ` ``` {r} ` und ` ``` ` ein.
 
    ```R
    con <- dbConnect(
@@ -379,7 +387,7 @@ Jupyter Notebook unterstützt die folgenden Szenarien für den `FLATTEN`. Weiter
 1. Führt den Block aus. Wenn die Verbindung erfolgreich hergestellt wurde, sollte keine Ausgabe angezeigt werden.
 
 
-1. Erstellen Sie einen neuen Chunk und geben Sie die folgenden Anweisungen zwischen ` ` `` {r} ` und ` `` ` ` ein.
+1. Erstellen Sie einen neuen Chunk und geben Sie die folgenden Anweisungen zwischen ` ``` {r} ` und ` ``` ` ein.
 
    ```R
    views <- dbListTables(con)
@@ -389,7 +397,7 @@ Jupyter Notebook unterstützt die folgenden Szenarien für den `FLATTEN`. Weiter
 1. Führt den Block aus. Sie sollten `character(0)` als einzige Ausgabe sehen.
 
 
-1. Erstellen Sie einen neuen Chunk und geben Sie die folgenden Anweisungen zwischen ` ` `` {r} ` und ` `` ` ` ein.
+1. Erstellen Sie einen neuen Chunk und geben Sie die folgenden Anweisungen zwischen ` ``` {r} ` und ` ``` ` ein.
 
    ```R
    glimpse(dv)
@@ -401,7 +409,7 @@ Jupyter Notebook unterstützt die folgenden Szenarien für den `FLATTEN`. Weiter
 
 ## REDUZIEREN
 
-RStudio unterstützt die folgenden Szenarien für den `FLATTEN`. Weitere Informationen [&#x200B; Sie unter „Reduzieren &#x200B;](https://experienceleague.adobe.com/de/docs/experience-platform/query/key-concepts/flatten-nested-data) verschachtelten Daten“.
+RStudio unterstützt die folgenden Szenarien für den `FLATTEN`. Weitere Informationen [ Sie unter „Reduzieren ](https://experienceleague.adobe.com/de/docs/experience-platform/query/key-concepts/flatten-nested-data) verschachtelten Daten“.
 
 | FLATTEN-Parameter | Beispiel | Unterstützt | Bemerkungen |
 |---|---|:---:|---|
@@ -412,7 +420,7 @@ RStudio unterstützt die folgenden Szenarien für den `FLATTEN`. Weitere Informa
 ## Weitere Informationen
 
 * [Voraussetzungen](/help/data-views/bi-extension.md#prerequisites)
-* [Handbuch zu Anmeldeinformationen](https://experienceleague.adobe.com/de/docs/experience-platform/query/ui/credentials)
+* [Handbuch zu Anmeldedaten](https://experienceleague.adobe.com/de/docs/experience-platform/query/ui/credentials)
 
 >[!ENDTABS]
 

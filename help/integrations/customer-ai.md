@@ -5,10 +5,17 @@ role: Admin
 solution: Customer Journey Analytics
 exl-id: 5411f843-be3b-4059-a3b9-a4e1928ee8a9
 feature: Experience Platform Integration
-source-git-commit: ed7e9a6c34c5f8ba9ba4f75be05768409cbc158d
+autotag-review: '2026-05-19T09:14:55.236Z'
+TQID: 'https://experienceleague.adobe.com/4SG79HyhFS5kr-kXXVGb-cTI8j3St6CwztOW-x1xXi8'
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: e75a4a9c-d354-4ca4-9b02-1afeca73fa5e
+subfeature_v2: id: cbde176d-5423-4c67-8a87-bc8faefd3a44
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: c4147b6e-073b-4d3c-9ab1-d60f2f4434efid: d00e9f03-e50b-4162-b143-0c0817c937c2id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
 workflow-type: tm+mt
-source-wordcount: '960'
-ht-degree: 97%
+source-wordcount: 983
+ht-degree: 93%
 
 ---
 
@@ -24,19 +31,19 @@ Customer AI nutzt bei der Tendenzauswertung individuelle Verhaltensdaten und Pro
 
 Kunden-KI kann so weit in Customer Journey Analytics integriert werden, dass für Kunden-AI-aktivierte Datensätze in Datenansichten und Berichten in Customer Journey Analytics genutzt werden können. Sie haben folgende Möglichkeiten:
 
-* **Tendenz-Scores für ein Segment von Benutzenden im Zeitverlauf nachverfolgen**. 
+* **Tendenz-Scores für ein Segment von Benutzenden im Zeitverlauf nachverfolgen**.
    * Anwendungsfall: Ermitteln der Wahrscheinlichkeit, dass Kundinnen und Kunden in einem bestimmten Segment konvertieren.
    * Beispiel: Eine Marketing-Fachkraft einer Hotelkette möchte die Wahrscheinlichkeit ermitteln, mit der ein Hotelkunde oder eine Hotelkundin ein Ticket für den Konzertsaal des Hotels kauft.
 * **Analysieren, Sie welche Erfolgsereignisse oder Attribute mit Tendenz-Scores verknüpft sind**. &#x200B;
    * Anwendungsfall: Ermitteln der Attribute oder Erfolgsereignisse, die mit Tendenz-Scores verknüpft sind.
    * Beispiel: Eine Marketing-Fachkraft einer Hotelkette möchte ermitteln, wie der Kauf von Tickets für den Konzertsaal eines Hotels mit Tendenz-Scores verbunden ist.
 * **Verfolgen des Eintrittsflusses für die Kundentendenz über verschiedene Scoring-Durchgänge hinweg**.
-   * Anwendungsfall: Identifizieren von Personen, deren Konsumneigung anfangs niedrig war und im Laufe der Zeit stieg. 
+   * Anwendungsfall: Identifizieren von Personen, deren Konsumneigung anfangs niedrig war und im Laufe der Zeit stieg.
    * Beispiel: Eine Marketing-Fachkraft einer Hotelkette möchte ermitteln, welche Hotelkundinnen oder -kunden ursprünglich als Personen mit geringer Tendenz zum Kauf eines Show-Tickets identifiziert wurden, aber im Laufe der Zeit zu Personen mit hoher Tendenz zum Kauf eines Show-Tickets wurden.
 * **Betrachten der Verteilung der Tendenz**.
    * Anwendungsfall: Erkennen der Verteilung der Tendenz-Scores, um Segmente präziser zu definieren.
-   * Beispiel: Ein Einzelhändler oder eine Einzelhändlerin möchte eine bestimmte Promotion mit einem Rabatt von 50 € für ein Produkt durchführen. Da das Budget begrenzt ist, soll nur eine sehr eingeschränkte Promotion durchgeführt werden. Die Person analysiert die Daten und entscheidet, nur die lukrativsten 80 % der Kundinnen und Kunden in die Promotion einzubeziehen.
-* **Betrachten der Konsumtendenz, um im Laufe der Zeit eine Maßnahme für eine bestimmte Kohorte zu ergreifen**. 
+   * Beispiel: Ein Einzelhändler oder eine Einzelhändlerin möchte eine bestimmte Promotion mit einem Rabatt von 50 € für ein Produkt durchführen. Sie möchten vielleicht nur eine sehr begrenzte Promotion durchführen, aufgrund des Budgets usw. Sie analysieren die Daten und entscheiden, nur die oberen 80 % ihrer Kunden anzusprechen.
+* **Betrachten der Konsumtendenz, um im Laufe der Zeit eine Maßnahme für eine bestimmte Kohorte zu ergreifen**.
    * Anwendungsfall: Nachverfolgen einer bestimmten Kohorte im Zeitverlauf.
    * Beispiel: Eine Marketing-Fachkraft einer Hotelkette möchte die Bronze-Ebene gegenüber der Silber-Ebene, oder die Silber-Ebene gegenüber der Gold-Ebene im Laufe der Zeit nachverfolgen. Danach kann sie die Tendenz jeder Kohorte für das Buchen im Hotel im Zeitverlauf betrachten.
 
@@ -57,7 +64,7 @@ In Customer Journey Analytics können Sie jetzt [eine oder mehrere Verbindungen]
 
 >[!IMPORTANT]
 >
->Jede Kunden-KI-Instanz verfügt über zwei Ausgabedatensätze, vorausgesetzt der Umschalter zur Aktivierung von Scores für Customer Journey Analytics wurde bei der Konfiguration in Schritt 1 aktiviert. Ein Ausgabedatensatz wird im Profil-XDM-Format und einer im Experience Event XDM-Format angezeigt.
+>Jede Kunden-KI-Instanz verfügt über zwei Ausgabedatensätze, vorausgesetzt der Umschalter zur Aktivierung von Scores für Customer Journey Analytics wurde bei der Konfiguration in Schritt 1 aktiviert. Ein Ausgabedatensatz wird im Profil-XDM-Format und einer im Erlebnisereignis-XDM-Format angezeigt.
 
 ![CAI Scores](assets/cai-scores.png)
 
@@ -67,7 +74,7 @@ Hier ist ein Beispiel für ein XDM-Schema, das als Teil eines vorhandenen oder n
 
 ![CAI-Schema](assets/cai-schema.png)
 
-(Beachten Sie, dass das Beispiel ein Profildatensatz ist. Derselbe Satz von Schemaobjekten wäre Teil eines Erlebnisereignis-Datensatzes, der von Customer Journey Analytics erfasst werden würde. Der Erlebnisereignis-Datensatz würde Zeitstempel als Bewertungsdatum enthalten.) Jeder in diesem Modell bewertete Kunde hätte einen Score, ein ScoreDate usw. ein mit ihm verknüpftes Score-Datum usw.
+(Beachten Sie, dass das Beispiel ein Profildatensatz ist. Derselbe Satz von Schemaobjekten wäre Teil eines Erlebnisereignis-Datensatzes, der von Customer Journey Analytics erfasst werden würde. Der Erlebnisereignis-Datensatz würde Zeitstempel als Bewertungsdatum enthalten.) Jedem in diesem Modell bewerteten Kunden ist ein Score, ein ScoreDate usw. zugeordnet.
 
 ## Schritt 3: Erstellen von Datenansichten basierend auf diesen Verbindungen
 

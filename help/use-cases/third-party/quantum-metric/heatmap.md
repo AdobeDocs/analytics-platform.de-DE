@@ -5,9 +5,16 @@ role: User, Admin
 solution: Customer Journey Analytics
 feature: Use Cases
 exl-id: d861135f-42a4-45ac-8b11-41f151bfce92
-source-git-commit: 95a107c6bbc6dce6cc43c4a1b51beeaa1fa7aff1
+autotag-review: '2026-05-19T09:50:41.180Z'
+TQID: 'https://experienceleague.adobe.com/EvPGghY3E7eoiJb6TcWnaOhneS6oQJj4bcwU3K2v3Ng'
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: e75a4a9c-d354-4ca4-9b02-1afeca73fa5e
+subfeature_v2: id: e1bd5a34-b16e-477b-84cc-247fa0793f4b
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: d00e9f03-e50b-4162-b143-0c0817c937c2
+source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
 workflow-type: tm+mt
-source-wordcount: '348'
+source-wordcount: 366
 ht-degree: 1%
 
 ---
@@ -24,7 +31,7 @@ Sie müssen Anspruch auf das **UX Ops**-Paket von Quantum Metric haben, um auf d
 
 ## Schritt 1: Konfigurieren von Links in Analysis Workspace
 
-1. Melden Sie sich bei &quot;[.adobe.com“ &#x200B;](https://experience.adobe.com).
+1. Melden Sie sich bei &quot;[.adobe.com“ ](https://experience.adobe.com).
 1. Navigieren Sie zu Customer Journey Analytics und wählen Sie **[!UICONTROL Workspace]** im oberen Menü.
 1. Wählen Sie ein vorhandenes Projekt aus oder erstellen Sie ein Projekt.
 1. Erstellen Sie eine [Freiformtabelle](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md).
@@ -44,4 +51,4 @@ Sie müssen Anspruch auf das **UX Ops**-Paket von Quantum Metric haben, um auf d
 
 ## Schritt 2: Heatmaps durch Anklicken von Links in Customer Journey Analytics anzeigen
 
-Nachdem Sie eine Seite gefunden haben, auf der Sie Heatmapping erforschen möchten, können Sie sie auf das gewünschte Bedienfeld anwenden. Die Tabelle gibt eine URL zurück, mit der Sie Heatmaps, Bildlauftiefen und Schlüsselzonen für die Interaktion mit Quantum Metric untersuchen können. Weitere Informationen finden [&#x200B; unter „Quantum Metric &#x200B;](https://www.quantummetric.com/platform/interaction-heatmaps) - Produktübersicht“. Sie können sich auch an Ihren Kundenbetreuer von Quantum Metric wenden oder eine Anfrage über das [Quantum Metric Customer Request Portal) &#x200B;](https://community.quantummetric.com/s/public-support-page).
+Nachdem Sie eine Seite gefunden haben, auf der Sie Heatmapping erforschen möchten, können Sie sie auf das gewünschte Bedienfeld anwenden. Die Tabelle gibt eine URL zurück, mit der Sie Heatmaps, Bildlauftiefen und Schlüsselzonen für die Interaktion mit Quantum Metric untersuchen können. Weitere Informationen finden [ unter „Quantum Metric ](https://www.quantummetric.com/platform/interaction-heatmaps) - Produktübersicht“. Sie können sich auch an Ihren Kundenbetreuer von Quantum Metric wenden oder eine Anfrage über das [Quantum Metric Customer Request Portal) ](https://community.quantummetric.com/s/public-support-page).

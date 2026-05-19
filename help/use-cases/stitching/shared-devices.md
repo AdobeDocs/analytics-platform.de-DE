@@ -5,10 +5,17 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: a7d14968-33a2-46a8-8e32-fb6716650d0a
-source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
+autotag-review: '2026-05-19T09:47:24.777Z'
+TQID: 'https://experienceleague.adobe.com/8Xq8mUchtogMLiEuPVv-DWpkWtD5ubJGSQm2SRaZmps'
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: b3197353-f189-4932-8378-3f3bc40e6071id: d76b9e53-27fb-4597-933f-419cc0dd46db
+subfeature_v2: id: faea9abd-7024-4c5e-a5b4-87919e09b24bid: bf2b169f-d8b2-488a-97b9-f3bc9532e35c
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: b4dd41a7-ccf8-4e9d-918e-acaab534a307id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: d00e9f03-e50b-4162-b143-0c0817c937c2id: d3cdead0-685a-4489-9250-4bb709942f66id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
 workflow-type: tm+mt
-source-wordcount: '657'
-ht-degree: 7%
+source-wordcount: 726
+ht-degree: 16%
 
 ---
 
@@ -24,11 +31,11 @@ Wenn zwei Personen dasselbe Gerät verwenden und beide einen authentifizierten K
 
 | Ereignis | Zeitstempel | Seitenname | Geräte-ID | E-Mail |
 |--:|---|---|---|---|
-| 1 | 12.05.2023:01 | Startseite | `1234` | |
-| 2 | 12.05.2023:02 | Produktseite | `1234` | |
-| 3 | 12.05.2023:03 | Auftragserfolg | `1234` | `ryan@a.com` |
-| 4 | 12.05.2023:07 | Produktseite | `1234` | |
-| 5 | 12.05.2023:08 | Auftragserfolg | `1234` | `cassidy@a.com` |
+| 1 | 12.05.2023 12:01 | Startseite | `1234` | |
+| 2 | 12.05.2023 12:02 | Produktseite | `1234` | |
+| 3 | 12.05.2023 12:03 | Auftragserfolg | `1234` | `ryan@a.com` |
+| 4 | 12.05.2023 12:07 | Produktseite | `1234` | |
+| 5 | 12.05.2023 12:08 | Auftragserfolg | `1234` | `cassidy@a.com` |
 
 Wie Sie aus dieser Tabelle sehen können, beginnt sich nach der Authentifizierung bei den Ereignissen 3 und 5 eine Verknüpfung zwischen einer Geräte-ID und einer Personen-ID zu bilden. Um die Auswirkungen von Marketing-Maßnahmen auf der Personenebene zu verstehen, müssen diese nicht authentifizierten Ereignisse der richtigen Person zugeordnet werden.
 
@@ -42,25 +49,25 @@ The order success (purchase) events assign the data accurately to the correct em
 
 ## Personenzentrierte Analyse verbessern
 
-Der Zuordnungsprozess behebt dieses Attributionsproblem, indem die ausgewählte Personenkennung (in den Beispieldaten die E-Mail) zu Ereignissen hinzugefügt wird, bei denen diese Kennung nicht vorhanden ist. Bei der Zuordnung wird eine Zuordnung zwischen Geräte-IDs und Personen-IDs genutzt, um sicherzustellen, dass sowohl authentifizierter als auch nicht authentifizierter Traffic bei der Analyse verwendet werden kann, sodass der Personen-Schwerpunkt erhalten bleibt. Weitere Informationen finden [&#x200B; unter &#x200B;](/help/stitching/overview.md).
+Der Zuordnungsprozess behebt dieses Attributionsproblem, indem die ausgewählte Personenkennung (in den Beispieldaten die E-Mail) zu Ereignissen hinzugefügt wird, bei denen diese Kennung nicht vorhanden ist. Bei der Zuordnung wird eine Zuordnung zwischen Geräte-IDs und Personen-IDs genutzt, um sicherzustellen, dass sowohl authentifizierter als auch nicht authentifizierter Traffic bei der Analyse verwendet werden kann, sodass der Personen-Schwerpunkt erhalten bleibt. Weitere Informationen finden [ unter ](/help/stitching/overview.md).
 
 Bei der Zuordnung können freigegebene Gerätedaten entweder anhand der Attribution der letzten Authentifizierung oder anhand der Attribution auf Geräteaufteilung zugeordnet werden. Alle Versuche, nicht authentifizierte Ereignisse einem bekannten Benutzer zuzuordnen, sind nicht deterministisch.
 
 
 ### Attribution der letzten Authentifizierung
 
-Last-auth schreibt alle unbekannten Aktivitäten eines gemeinsam genutzten Geräts dem Benutzer zu, der sich zuletzt authentifiziert hat. Der Experience Platform Identity Service erstellt das Diagramm basierend auf der Attribution der letzten Authentifizierung und wird als solche beim diagrammbasierten Stitching verwendet. Weitere [&#x200B; finden Sie unter &#x200B;](https://experienceleague.adobe.com/de/docs/experience-platform/identity/features/identity-graph-linking-rules/identity-optimization-algorithm#identity-optimization-algorithm-details) für Identitätsdiagramme .
+Last-auth schreibt alle unbekannten Aktivitäten eines gemeinsam genutzten Geräts dem Benutzer zu, der sich zuletzt authentifiziert hat. Der Experience Platform Identity Service erstellt das Diagramm basierend auf der Attribution der letzten Authentifizierung und wird als solche beim diagrammbasierten Stitching verwendet. Weitere [ finden Sie unter ](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-graph-linking-rules/identity-optimization-algorithm#identity-optimization-algorithm-details) für Identitätsdiagramme .
 
 Wenn die Attribution der letzten Authentifizierung beim Zusammenfügen verwendet wird, werden zusammengefügte IDs aufgelöst, wie in der folgenden Tabelle dargestellt.
 
 | Zeitstempel | Seitenname | Geräte-ID | E-Mail | Angeheftete ID |
 |---|---|---|---|---|
-| 12.05.2023:01 | Startseite | `1234` | | `cassidy@a.com` |
-| 12.05.2023:02 | Produktseite | `1234` | | `cassidy@a.com` |
-| 12.05.2023:03 | Auftragserfolg | `1234` | `ryan@a.com` | `cassidy@a.com` |
-| 12.05.2023:07 | Produktseite | `1234` | | `cassidy@a.com` |
-| 12.05.2023:08 | Auftragserfolg | `1234` | `cassidy@a.com` | `cassidy@a.com` |
-| 13.05.2023 11:08 | Startseite | `1234` | | `cassidy@a.com` |
+| 2023-05-12 12:01 | Startseite | `1234` | | `cassidy@a.com` |
+| 2023-05-12 12:02 | Produktseite | `1234` | | `cassidy@a.com` |
+| 2023-05-12 12:03 | Auftragserfolg | `1234` | `ryan@a.com` | `cassidy@a.com` |
+| 2023-05-12 12:07 | Produktseite | `1234` | | `cassidy@a.com` |
+| 2023-05-12 12:08 | Auftragserfolg | `1234` | `cassidy@a.com` | `cassidy@a.com` |
+| 2023-05-13 11:08 | Startseite | `1234` | | `cassidy@a.com` |
 
 
 ### Device-split
@@ -71,12 +78,12 @@ Wenn die Attribution „Device-Split“ beim Zusammenfügen verwendet wird, werd
 
 | Zeitstempel | Seitenname | Geräte-ID | E-Mail | Angeheftete ID |
 |---|---|---|---|---|
-| 12.05.2023:01 | Startseite | `1234` | | `ryan@a.com` |
-| 12.05.2023:02 | Produktseite | `1234` | | `ryan@a.com` |
-| 12.05.2023:03 | Auftragserfolg | `1234` | `ryan@a.com` | `ryan@a.com` |
-| 12.05.2023:07 | Produktseite | `1234` | | `ryan@a.com` |
-| 12.05.2023:08 | Auftragserfolg | `1234` | `cassidy@a.com` | `cassidy@a.com` |
-| 13.05.2023 11:08 | Startseite | `1234` | | `cassidy@a.com` |
+| 2023-05-12 12:01 | Startseite | `1234` | | `ryan@a.com` |
+| 2023-05-12 12:02 | Produktseite | `1234` | | `ryan@a.com` |
+| 2023-05-12 12:03 | Auftragserfolg | `1234` | `ryan@a.com` | `ryan@a.com` |
+| 2023-05-12 12:07 | Produktseite | `1234` | | `ryan@a.com` |
+| 2023-05-12 12:08 | Auftragserfolg | `1234` | `cassidy@a.com` | `cassidy@a.com` |
+| 2023-05-13 11:08 | Startseite | `1234` | | `cassidy@a.com` |
 
 
 <!--
