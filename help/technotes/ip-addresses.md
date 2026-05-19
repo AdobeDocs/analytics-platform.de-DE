@@ -5,10 +5,19 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: 5c52986c-7ff3-45b5-9039-2bfb6529238c
 role: Admin
-source-git-commit: 0e4ea634a604a65484a57f5af8021badb86a865a
+TQID: https://experienceleague.adobe.com/y9JHTZnh51-jd-WNj8p6OBmkB5iOIT6vZ2ouHUKtHAI
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+source-git-commit: 5771edbe491ceeeaf487dd5eeb2ffb67ef880f96
 workflow-type: tm+mt
-source-wordcount: '188'
-ht-degree: 34%
+source-wordcount: 196
+ht-degree: 32%
 
 ---
 
@@ -144,4 +153,4 @@ Diese Seite enthält IP-Adressen, die Sie Ihrer Zulassungsliste hinzufügen müs
 >
 >[Von Customer Journey Analytics verwendete Domains](domains.md)
 >
->[Von der Adobe Experience Cloud verwendete IP-Adressen](https://experienceleague.adobe.com/de/docs/core-services/interface/data-collection/ip-addresses)
+>[Von CX Enterprise verwendete IP-Adressen](https://experienceleague.adobe.com/de/docs/core-services/interface/data-collection/ip-addresses)

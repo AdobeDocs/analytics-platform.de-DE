@@ -4,7 +4,7 @@ description: Ermitteln Sie, wie Sie eine bestimmte Daten-Feed-Spalte in Adobe An
 feature: Components
 hide: true
 exl-id: 81d6e79e-8324-4726-9a48-10177b0a91b1
-source-git-commit: d79c6d883f436d97925e007f453879e20b4fcc04
+source-git-commit: 5771edbe491ceeeaf487dd5eeb2ffb67ef880f96
 workflow-type: tm+mt
 source-wordcount: '3912'
 ht-degree: 48%
@@ -959,7 +959,7 @@ Markierung, die bestimmt, ob es sich bei dem aktuellen Treffer um einen neuen Be
 
 +++**`os`**
 
-Numerische ID, die das Betriebssystem der oder des Besuchenden darstellt. Basiert auf der Spalte `user_agent`.
+Numerische ID, die das Betriebssystem der oder des Besuchenden darstellt. Basierend auf der Spalte `user_agent`.
 
 {{cja-df-lookup}}
 
