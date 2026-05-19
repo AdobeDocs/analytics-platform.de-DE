@@ -5,9 +5,24 @@ solution: Customer Journey Analytics
 feature: Use Cases
 role: Admin
 exl-id: 14a90758-91eb-4610-8802-1edfdb8b9689
-source-git-commit: 20ead546897ad517840f95a5ec4dcd7f830afe8c
+TQID: https://experienceleague.adobe.com/J-5oxLDw4sLVFcXYQhN5cpTkH76C5wAfWFECrIydb-s
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2:
+  - id: ef46ac31-f951-48d6-bae5-51c52ab47fb8
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
+source-git-commit: d682e1e729402bff7a3f6e3625402f57deee21ad
 workflow-type: tm+mt
-source-wordcount: '2642'
+source-wordcount: 3355
 ht-degree: 10%
 
 ---
@@ -30,7 +45,7 @@ Der Datenexport mithilfe von Query Service (Data Distiller) und der Datensatzexp
 - Definieren einer **geplanten Abfrage** die die Daten für Ihren Daten-Feed als Ausgabedatensatz (![) &#x200B;](../assets/output-dataset.svg) mithilfe von **Query Service** generiert.
 - Definieren eines **geplanten Datensatzexports** der den Ausgabedatensatz mithilfe eines Datensatzexports in ein Cloud-**exportiert**.
 
-![Daten-Feed](../assets/queryservice-export-datasets.svg)
+![Daten-Feed](../assets/queryservice-export-datasets.png)
 
 
 ## Voraussetzungen
@@ -105,7 +120,7 @@ Basierend auf der Implementierung werden Trefferdaten, die traditionell in Adobe
 | `cust_visid` | `endUserIDs._experience.aacustomid.primary` | boolean | Der Namespace-Code der Besucher-ID des Kunden. |
 | `cust_visid` | `endUserIDs._experience.aacustomid.namespace.code` | string | Wird mit `visid_low` verwendet, um die Besucher-ID des Kunden eindeutig zu identifizieren. |
 | `geo\_*` | `placeContext.geo.* ` | Zeichenfolge, Zahl | Geolokalisierungsdaten wie Land, Region, Stadt und andere |
-| `event_list` | `commerce.purchases`, `commerce.productViews`, `commerce.productListOpens`, `commerce.checkouts`, `commerce.productListAdds`, `commerce.productListRemovals`, `commerce.productListViews`, `_experience.analytics.event101to200.*`, …, `_experience.analytics.event901_1000.*` | string | Beim Treffer ausgelöste Standard-Commerce- und benutzerdefinierte Ereignisse. |
+| `event_list` | `commerce.purchases`, `commerce.productViews`, `commerce.productListOpens`, `commerce.checkouts`, `commerce.productListAdds`, `commerce.productListRemovals`, `commerce.productListViews`, `_experience.analytics.event101to200.*`, ..., `_experience.analytics.event901_1000.*` | string | Beim Treffer ausgelöste Standard-Commerce- und benutzerdefinierte Ereignisse. |
 | `page_event` | `web.webInteraction.type` | string | Die Art des in der Bildanforderung gesendeten Treffers (Standardtreffer, angeklickter Downloadlink, Exitlink oder benutzerspezifischer Link). |
 | `page_event` | `web.webInteraction.linkClicks.value` | number | Die Art des in der Bildanforderung gesendeten Treffers (Standardtreffer, angeklickter Downloadlink, Exitlink oder benutzerspezifischer Link). |
 | `page_event_var_1` | `web.webInteraction.URL` | string | Variable, die nur in Bildanforderungen zum Linktracking verwendet wird. Die Variable enthält die URL des angeklickten Downloadlinks, Exitlinks oder benutzerspezifischen Links. |

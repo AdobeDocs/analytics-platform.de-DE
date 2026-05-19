@@ -5,10 +5,20 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Adobe Analytics Integration,Administration
 exl-id: c109742b-c1c5-45b3-971f-f8dcf814ec37
-source-git-commit: ff0a5eb5b04f604eff41a18b05199b517d1a2d14
+TQID: https://experienceleague.adobe.com/6qERpivKabPPCynMGNKrLhhOMcROnlp7HKpbvXpzNSg
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+source-git-commit: d682e1e729402bff7a3f6e3625402f57deee21ad
 workflow-type: tm+mt
-source-wordcount: '1073'
-ht-degree: 1%
+source-wordcount: 1127
+ht-degree: 2%
 
 ---
 
@@ -33,7 +43,7 @@ Mit der Funktion *Cross-IMS-Datenzuordnung* können Sie Adobe anfordern, Daten z
 
 | Abbildung | Erklärung |
 |---|---|
-| ![Daten über mehrere IMS-Organisationen hinweg zuordnen](/help/getting-started/assets/map-data-across-ims-orgs.svg) | Mit dieser Zuordnung können Sie Berichte zu Report Suites erstellen, die in IMS Organisation 1, IMS Organisation 2 und IMS Organisation 3 vorhanden sind, und zwar über eine Verbindung in Customer Journey Analytics, die innerhalb von IMS Organisation 3 bereitgestellt wird. |
+| ![Daten über mehrere IMS-Organisationen hinweg zuordnen](/help/getting-started/assets/map-data-across-ims-orgs.png) | Mit dieser Zuordnung können Sie Berichte zu Report Suites erstellen, die in IMS Organisation 1, IMS Organisation 2 und IMS Organisation 3 vorhanden sind, und zwar über eine Verbindung in Customer Journey Analytics, die innerhalb von IMS Organisation 3 bereitgestellt wird. |
 
 {style="table-layout:fixed"}
 
@@ -81,7 +91,7 @@ Sie können sowohl [&#x200B; (feldbasierte](/help/stitching/fbs.md) als auch [Di
 Wenn Sie nicht für das Echtzeit-Kundenprofil lizenziert sind, aber dennoch diagrammbasiertes Stitching für einen oder mehrere Zieldatensätze verwenden möchten, stellen Sie sicher, dass Sie nur den [Identity Service](/help/stitching/faq.md#enable-a-dataset-for-the-identity-service) für diese Zieldatensätze aktivieren.
 
 
-### Zugriffsberechtigung
+### Berechtigungen
 
 Ein Benutzer mit ausreichenden Berechtigungen zum Konfigurieren des Analytics-Quell-Connectors in der Ziel-IMS-Organisation kann Analytics-Daten aus einer beliebigen zugeordneten Quell-IMS-Organisation aufnehmen. Für diese Person werden für keine der Quell-IMS-Organisationen Berechtigungen überprüft.
 

@@ -5,10 +5,17 @@ solution: Customer Journey Analytics
 feature: Use Cases
 role: Admin
 exl-id: b861f765-b18d-4be2-b4c7-c66186d37d99
-source-git-commit: 9fef1fddbb4b51efb9282e3ef13501bd498a4546
+TQID: https://experienceleague.adobe.com/0R5S0Bmx8nJxyCRFycmkEm0KN-43zlRYEDHdKSO-IR4
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+source-git-commit: d682e1e729402bff7a3f6e3625402f57deee21ad
 workflow-type: tm+mt
-source-wordcount: '848'
-ht-degree: 7%
+source-wordcount: 1187
+ht-degree: 6%
 
 ---
 
@@ -22,7 +29,7 @@ In diesem Artikel wird beschrieben, wie die [!DNL Customer Journey Analytics Exp
 
 Durch den Export von Daten mit [!DNL Experience Platform Export datasets] können Sie Daten aus Ihren Customer Journey Analytics-Datenansichten in ein beliebiges Cloud-Speicher-Ziel exportieren.
 
-![BI-Erweiterung](../assets/export-datasets.svg)
+![BI-Erweiterung](../assets/export-datasets.png)
 
 ## Weitere Informationen
 
