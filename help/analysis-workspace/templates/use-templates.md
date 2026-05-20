@@ -27,9 +27,9 @@ topic_v2:
   - id: d3cdead0-685a-4489-9250-4bb709942f66
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 24eb9e6c8f4fc02154d2cf93f111ab0956795f76
+source-git-commit: c36ff804490eb79387a50feedaedc36a611fcd20
 workflow-type: tm+mt
-source-wordcount: 21131
+source-wordcount: 21144
 ht-degree: 98%
 
 ---
@@ -396,7 +396,7 @@ Die folgenden Vorlagen sind verfügbar:
 >[!CONTEXTUALHELP]
 >id="template--exitPageRankedReport"
 >title="Zeigen Sie die wichtigsten Seiten an, auf die Personen unmittelbar vor dem Verlassen Ihrer Site zugreifen."
->abstract="**Dies kann Ihnen helfen**, besser zu verstehen, welche Seiten Personen von der Site wegführen. <br/>**Basierend auf Ihren Erkenntnissen können Sie** eine Reihe von Schritten ausführen, z. B. gängige Exitpages aktualisieren, um das Erlebnis zu optimieren, das Personen vor dem Verlassen haben, oder Inhalte oder Links aufnehmen, um Personen dazu aufzufordern, auf Ihrer Site zu bleiben.<br/>Diese Vorlage verwendet die Metrik „Sitzungen“. Außerdem werden die Visualisierungen „Balken“ und „Freiformtabelle“ verwendet."
+>abstract="**Dies kann Ihnen helfen**, besser zu verstehen, durch welche Seiten Personen sich von der Site wegführen lassen. <br/>**Basierend auf Ihren Erkenntnissen können Sie** eine Reihe von Schritten ausführen, z. B. gängige Exitpages aktualisieren, um das Erlebnis zu optimieren, das Personen vor dem Verlassen haben, oder Inhalte oder Links aufnehmen, um Personen dazu aufzufordern, auf Ihrer Site zu bleiben.<br/>Diese Vorlage verwendet die Metrik „Sitzungen“. Außerdem werden die Visualisierungen „Balken“ und „Freiformtabelle“ verwendet."
 
 >[!CONTEXTUALHELP]
 >id="template--productUsageOverviewReport"
@@ -406,7 +406,7 @@ Die folgenden Vorlagen sind verfügbar:
 >[!CONTEXTUALHELP]
 >id="template--content-analytics"
 >title="Erfahren Sie, welche Inhalte und Inhaltsattribute die beste Leistung erbringen."
->abstract="**Dies kann Ihnen helfen**, zu verstehen, wie Ihre Inhalte auf granularer Ebene funktionieren. Sie können die Leistung einzelner Assets oder bestimmter Attribute überprüfen. Content Analytics verwendet KI, um automatisch Attribute zu generieren und Ihre Inhalte mit ihnen zu taggen.<br/>**Basierend auf Ihren Erkenntissen können Sie** eine Reihe von Schritten ausführen, z. B. leistungsstarke Assets auf Ihrer Startseite bewerben, Inhalte für bestimmte Segmente personalisieren, sodass sie leistungsstarke Attribute beinhalten, oder mittlerweile veraltete Inhalte austauschen."
+>abstract="**Dies kann Ihnen helfen**, zu verstehen, wie Ihre Inhalte auf granularer Ebene funktionieren. Sie können die Leistung einzelner Assets oder bestimmter Attribute überprüfen. Content Analytics verwendet KI, um automatisch Attribute zu generieren und Ihre Inhalte mit ihnen zu taggen. <a href="https://experienceleague.adobe.com/de/docs/analytics-platform/using/content-analytics/content-analytics" target="_blank">Weitere Informationen.</a><br/>**Basierend auf Ihren Erkenntissen können Sie** eine Reihe von Schritten ausführen, z. B. leistungsstarke Assets auf Ihrer Startseite bewerben, Inhalte für bestimmte Segmente personalisieren, sodass sie leistungsstarke Attribute beinhalten, oder mittlerweile veraltete Inhalte austauschen."
 
 
 Die folgenden Vorlagen sind verfügbar:
@@ -1072,7 +1072,7 @@ Die folgenden Vorlagen sind verfügbar:
 >[!CONTEXTUALHELP]
 >id="cja-template--ajo-channel"
 >title="Zeigen Sie eine ausführliche Zusammenfassung der Traffic- und Interaktionsmetriken für alle Kampagnen und Journeys in Ihrer Umgebung an."
->abstract="**Dies kann Ihnen helfen**, die Effektivität Ihrer Kampagnen und Journeys besser zu verstehen. <br/>**Basierend auf Ihren Erkenntnissen können Sie** verschiedene Maßnahmen ergreifen, z. B. Ihre Kampagnen und Journeys je nach Niveau der Interaktion Ihrer Zielgruppe anpassen."
+>abstract="**Dies kann Ihnen helfen**, die allgemeine Effektivität Ihrer Kampagnen und Journeys besser zu verstehen. <br/>**Basierend auf Ihren Erkenntnissen können Sie** verschiedene Maßnahmen ergreifen, z. B. Ihre Kampagnen und Journeys je nach Niveau der Interaktion Ihrer Zielgruppe anpassen."
 
 >[!CONTEXTUALHELP]
 >id="cja-template--ajo-subscription"
