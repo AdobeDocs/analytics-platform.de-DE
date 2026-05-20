@@ -1072,7 +1072,7 @@ Die folgenden Vorlagen sind verfügbar:
 >[!CONTEXTUALHELP]
 >id="cja-template--ajo-channel"
 >title="Zeigen Sie eine ausführliche Zusammenfassung der Traffic- und Interaktionsmetriken für alle Kampagnen und Journeys in Ihrer Umgebung an."
->abstract="**Dies kann Ihnen helfen**, die allgemeine Effektivität Ihrer Kampagnen und Journeys besser zu verstehen. <br/>**Basierend auf Ihren Erkenntnissen können Sie** verschiedene Maßnahmen ergreifen, z. B. Ihre Kampagnen und Journeys je nach Niveau der Interaktion Ihrer Zielgruppe anpassen."
+>abstract="**Dies kann Ihnen helfen**, die Effektivität Ihrer Kampagnen und Journeys besser zu verstehen. <br/>**Basierend auf Ihren Erkenntnissen können Sie** verschiedene Maßnahmen ergreifen, z. B. Ihre Kampagnen und Journeys je nach Niveau der Interaktion Ihrer Zielgruppe anpassen."
 
 >[!CONTEXTUALHELP]
 >id="cja-template--ajo-subscription"
