@@ -42,7 +42,7 @@ Die ![ConversionFunnel](/help/assets/icons/ConversionFunnel.svg)**[!UICONTROL Tr
 
 >[!BEGINSHADEBOX]
 
-Siehe ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Funnel-Reibungsanalyse](https://video.tv.adobe.com/v/3421663/?quality=12&learn=onn){target="_blank"} für ein Demovideo.
+Siehe ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Funnel-Reibungsanalyse](https://video.tv.adobe.com/v/3431279/?captions=ger&quality=12&learn=onn){target="_blank"} für ein Demovideo.
 
 >[!ENDSHADEBOX]
 
