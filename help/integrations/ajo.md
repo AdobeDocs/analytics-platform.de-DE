@@ -4,10 +4,16 @@ description: Binden Sie die von Adobe Journey Optimizer generierten Daten ein un
 exl-id: 9333ada2-b4d6-419e-9ee1-5c96f06a3bfd
 feature: Experience Platform Integration
 role: Admin
-source-git-commit: 830e16ecd4c43da114c63af51e4bb6e88bbb4ff8
+TQID: https://experienceleague.adobe.com/kmZ-AYMcKxwZftFSqJQpTH3zDTDT1CxlNw-MVO6Ikn4
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: cb6c7d24-631f-46e5-9e39-3a2705f73962id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: bcc5edb5-84c3-4940-9f84-ed88b6c16274
+source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: '3770'
-ht-degree: 93%
+source-wordcount: 3841
+ht-degree: 90%
 
 ---
 
@@ -15,7 +21,7 @@ ht-degree: 93%
 
 [Adobe Journey Optimizer](https://experienceleague.adobe.com/de/docs/journey-optimizer/using/get-started/get-started) hilft Ihnen bei der Bereitstellung von vernetzten, kontextbezogenen und personalisierten Erlebnissen. Dadurch können Ihre Kundinnen und Kunden leichter zum nächsten Schritt ihrer Customer Journey gelangen.
 
-Sie können von Journey Optimizer generierte Daten konfigurieren, um eine erweiterte Analyse in Customer Journey Analytics durchzuführen.  Sie können diese Integration automatisch konfigurieren. Bei Bedarf können Sie zusätzliche manuelle Anpassungen an den Datensätzen, Dimensionen oder Metriken vornehmen, die in Ihrer Verbindung oder in Datenansichten verfügbar sind.
+Sie können von Journey Optimizer generierte Daten konfigurieren, um eine erweiterte Analyse in Customer Journey Analytics durchzuführen. Sie können diese Integration automatisch konfigurieren. Bei Bedarf können Sie zusätzliche manuelle Anpassungen an den Datensätzen, Dimensionen oder Metriken vornehmen, die in Ihrer Verbindung oder in Datenansichten verfügbar sind.
 
 ## Automatisches Konfigurieren der Integration von Journey Optimizer
 
@@ -36,20 +42,20 @@ Die Verbindung hat den Namen **[!UICONTROL AJO-fähige Verbindung *Sandbox-*)]**
 
 | **Dateneinstellungen** | Wert |
 |---|---|
-| [!UICONTROL Rollierendes Datenfenster aktivieren] | Aktiviert.  [!UICONTROL Ausgewählte Anzahl der Monate] `13`. |
+| [!UICONTROL Rollierendes Datenfenster aktivieren] | Aktiviert. [!UICONTROL Ausgewählte Anzahl der Monate] `13`. |
 | [!UICONTROL Sandbox] | [!UICONTROL *Name der Sandbox*] (deaktiviert; Sie können diese Einstellung nicht ändern). |
 | [!UICONTROL Durchschnittliche Anzahl der täglichen Ereignisse] | weniger als 1 Million (deaktiviert; Sie können diese Einstellung nicht ändern). |
 
 
 | Datensatzname | Schema | Datensatztyp | Datenquellentyp | Personen-ID | Schlüssel | Übereinstimmender Schlüssel | Neue Daten importieren | Daten aufstocken |
 |---|---|---|---|---|---|---|---|---|
-| [!UICONTROL AJO-Entitäts-Datensatz] | [!UICONTROL Schema des AJO-Entitätseintrags] | [!UICONTROL Suche] | [!UICONTROL Sonstige] | – | ` _id` | `_experience. decisioning. propositions. scopeDetails. correlationID` | ![Status „Grün“](assets/../../connections/assets/status-green.svg) Ein | ![Status „Grau“](assets/../../connections/assets/status-gray.svg) Aus |
-| [!UICONTROL Journey-Schrittereignisse] | [!UICONTROL Journey-Schrittereignisschema für Journey-Orchestrierung] | [!UICONTROL Ereignis] | [!UICONTROL Sonstige] | [!UICONTROL &#x200B; IdentityMap(\&lt;primary\>)] | – | – | ![Status „Grün“](assets/../../connections/assets/status-green.svg) Ein | ![Status Grau](assets/../../connections/assets/status-gray.svg) Aus |
+| [!UICONTROL AJO-Entitäts-Datensatz] | [!UICONTROL Schema des AJO-Entitätseintrags] | [!UICONTROL Suche] | [!UICONTROL Sonstige] | - | ` _id` | `_experience. decisioning. propositions. scopeDetails. correlationID` | ![Status „Grün“](assets/../../connections/assets/status-green.svg) Ein | ![Status „Grau“](assets/../../connections/assets/status-gray.svg) Aus |
+| [!UICONTROL Journey-Schrittereignisse] | [!UICONTROL Journey-Schrittereignisschema für Journey-Orchestrierung] | [!UICONTROL Ereignis] | [!UICONTROL Sonstige] | [!UICONTROL  IdentityMap(\&lt;primary\>)] | – | – | ![Status „Grün“](assets/../../connections/assets/status-green.svg) Ein | ![Status „Grau“](assets/../../connections/assets/status-gray.svg) Aus |
 | [!UICONTROL Ereignisdatensatz zu Erfahrungen beim AJO-E-Mail-Tracking] | [!UICONTROL Erlebnisereignisschema beim AJO-E-Mail-Tracking] | [!UICONTROL Ereignis] | [!UICONTROL Sonstige] | [!UICONTROL IdentityMap(\&lt;primary\>)] | – | – | ![Status „Grün“](assets/../../connections/assets/status-green.svg) Ein | ![Status „Grau“](assets/../../connections/assets/status-gray.svg) Aus |
 | [!UICONTROL Ereignisdatensatz mit Feedback zu AJO-Nachrichten] | [!UICONTROL Ereignisschema mit Feedback zu AJO-Nachrichten] | [!UICONTROL Ereignis] | [!UICONTROL Sonstige] | [!UICONTROL IdentityMap(\&lt;primary\>)] | – | – | ![Status „Grün“](assets/../../connections/assets/status-green.svg) Ein | ![Status „Grau“](assets/../../connections/assets/status-gray.svg) Aus |
 | [!UICONTROL Erlebnisereignisdatensatz beim AJO-Push-Tracking] | [!UICONTROL Erlebnisereignisschema beim AJO-Push-Tracking] | [!UICONTROL Ereignis] | [!UICONTROL Sonstige] | [!UICONTROL IdentityMap(\&lt;primary\>)] | – | – | ![Status „Grün“](assets/../../connections/assets/status-green.svg) Ein | ![Status „Grau“](assets/../../connections/assets/status-gray.svg) Aus |
-| [!UICONTROL AJO-Nachrichten-Feedback-Ereignisdatensatz - Nicht &#x200B;]<br/>(siehe [Add-On-Datensätze mit hohem Durchsatz](#high-throughput-add-on-datasets) Abschnitt unten) | [!UICONTROL Ereignisschema mit Feedback zu AJO-Nachrichten] | [!UICONTROL Ereignis] | [!UICONTROL Sonstige] | [!UICONTROL IdentityMap(\&lt;primary\>)] | – | – | ![Status „Grün“](assets/../../connections/assets/status-green.svg) Ein | ![Status „Grau“](assets/../../connections/assets/status-gray.svg) Aus |
-| [!UICONTROL AJO-E-Mail-Tracking-Erlebnisereignis-Datensatz - Nicht &#x200B;]<br/>(siehe [&#x200B; Abschnitt „Add-On-Datensätze mit hohem &#x200B;](#high-throughput-add-on-datasets)&quot; unten) | [!UICONTROL Erlebnisereignisschema beim AJO-E-Mail-Tracking] | [!UICONTROL Ereignis] | [!UICONTROL Sonstige] | [!UICONTROL IdentityMap(\&lt;primary\>)] | – | – | ![Status „Grün“](assets/../../connections/assets/status-green.svg) Ein | ![Status „Grau“](assets/../../connections/assets/status-gray.svg) Aus |
+| [!UICONTROL AJO-Nachrichten-Feedback-Ereignisdatensatz - Nicht ]<br/>(siehe [Add-On-Datensätze mit hohem Durchsatz](#high-throughput-add-on-datasets) Abschnitt unten) | [!UICONTROL Ereignisschema mit Feedback zu AJO-Nachrichten] | [!UICONTROL Ereignis] | [!UICONTROL Sonstige] | [!UICONTROL IdentityMap(\&lt;primary\>)] | – | – | ![Status „Grün“](assets/../../connections/assets/status-green.svg) Ein | ![Status „Grau“](assets/../../connections/assets/status-gray.svg) Aus |
+| [!UICONTROL AJO-E-Mail-Tracking-Erlebnisereignis-Datensatz - Nicht ]<br/>(siehe [ Abschnitt „Add-On-Datensätze mit hohem ](#high-throughput-add-on-datasets)&quot; unten) | [!UICONTROL Erlebnisereignisschema beim AJO-E-Mail-Tracking] | [!UICONTROL Ereignis] | [!UICONTROL Sonstige] | [!UICONTROL IdentityMap(\&lt;primary\>)] | – | – | ![Status „Grün“](assets/../../connections/assets/status-green.svg) Ein | ![Status „Grau“](assets/../../connections/assets/status-gray.svg) Aus |
 
 #### Add-on-Datensätze mit hohem Durchsatz
 
@@ -64,7 +70,7 @@ Wenn das Add-on Transaktionsnachrichten mit hohem Durchsatz aktiviert ist, werde
 * **[!UICONTROL Rollierendes 7-Tage-P95-Latenz-]**: Zeigt die P95-Latenz als einen einzelnen Wert an, einschließlich der prozentualen Änderung gegenüber der Vorwoche.
 * **[!UICONTROL Rollierendes 7-Tage-P95-Durchsatz-Widget]**: Zeigt den P95-Durchsatz als einen einzelnen Wert an, einschließlich der prozentualen Änderung gegenüber der Vorwoche.
 
-Weitere Informationen zu diesen Datensätzen und zum Transaktionsnachrichten-Add-on mit hohem Durchsatz finden Sie unter [Aktivieren des Hochdurchsatzmodus für API-ausgelöste Kampagnen](https://experienceleague.adobe.com/de/docs/journey-optimizer/using/campaigns/api-triggered-campaigns/api-triggered-high-throughput) in der Dokumentation zu Adobe Journey Optimizer.
+Weitere Informationen zu diesen Datensätzen und zum Transaktionsnachrichten-Add-on mit hohem Durchsatz finden Sie unter [Aktivieren des Hochdurchsatzmodus für API-ausgelöste Kampagnen](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/campaigns/api-triggered-campaigns/api-triggered-high-throughput) in der Dokumentation zu Adobe Journey Optimizer.
 
 ### Datenansicht
 
@@ -83,7 +89,7 @@ Die Datenansicht hat den Namen **AJO-Datenansicht aktivieren (*Sandbox-Name*)**.
 
   | Kompatibilität | Wert |
   |---|---|
-  | [!UICONTROL Als Standard-Datenansicht in Adobe Journey Optimizer festlegen] | Aktiviert (Standard).<br/><br/>Mit dieser Konfigurationsoption können Sie eine Datenansicht festlegen, die mit Journey Optimizer verwendet werden soll, ohne dass eine manuelle Konfiguration erforderlich ist. Informationen zum Aktivieren dieser Konfigurationsoption (sofern diese nicht bereits standardmäßig aktiviert ist) finden Sie unter [Erstellen oder Bearbeiten einer Datenansicht](/help/data-views/create-dataview.md) im Abschnitt [Kompatibilität](/help/data-views/create-dataview.md#compatibility).  <br/><br/>Wenn Sie die Option deaktivieren, werden Sie in einem Dialogfeld dazu aufgefordert, mit der Änderung der Standarddatenansicht fortzufahren. Wenn Sie **[!UICONTROL Weiter]** auswählen, müssen Sie eine andere Datenansicht als Standarddatenansicht auswählen. Wählen Sie **[!UICONTROL Bestätigen]** aus, um Ihre Auswahl zu bestätigen. Wählen Sie **[!UICONTROL Abbrechen]** aus, um die Änderung der Standarddatenansicht abzubrechen.  |
+  | [!UICONTROL Als Standard-Datenansicht in Adobe Journey Optimizer festlegen] | Aktiviert (Standard).<br/><br/>Mit dieser Konfigurationsoption können Sie eine Datenansicht festlegen, die mit Journey Optimizer verwendet werden soll, ohne dass eine manuelle Konfiguration erforderlich ist. Informationen zum Aktivieren dieser Konfigurationsoption (sofern diese nicht bereits standardmäßig aktiviert ist) finden Sie unter [Erstellen oder Bearbeiten einer Datenansicht](/help/data-views/create-dataview.md) im Abschnitt [Kompatibilität](/help/data-views/create-dataview.md#compatibility). <br/><br/>Wenn Sie die Option deaktivieren, werden Sie in einem Dialogfeld dazu aufgefordert, mit der Änderung der Standarddatenansicht fortzufahren. Wenn Sie **[!UICONTROL Weiter]** auswählen, müssen Sie eine andere Datenansicht als Standarddatenansicht auswählen. Wählen Sie **[!UICONTROL Bestätigen]** aus, um Ihre Auswahl zu bestätigen. Wählen Sie **[!UICONTROL Abbrechen]** aus, um die Änderung der Standarddatenansicht abzubrechen. |
 
   | Container | Wert |
   |---|---|
@@ -95,7 +101,7 @@ Die Datenansicht hat den Namen **AJO-Datenansicht aktivieren (*Sandbox-Name*)**.
   |---|---|
   | [!UICONTROL Zeitzone] | Zeitzone entsprechend Ihrer Position |
   | [!UICONTROL Kalendertyp] | Gregorianisch |
-  | [!UICONTROL Erster Monat des Jahres] | Januar  |
+  | [!UICONTROL Erster Monat des Jahres] | Januar |
   | [!UICONTROL Erster Tag der letzten Woche] | Sonntag |
 
 
@@ -133,8 +139,8 @@ Wählen Sie die folgenden Datensätze aus und konfigurieren Sie sie:
 | Datensatz für Erlebnisereignisse beim AJO-Push-Tracking | Ereignis | Personen-ID: `IdentityMap` | Enthält Push-Tracking-Ereignisse wie „[!UICONTROL App-Starts]“. |
 | Journey-Schritt-Ereignisse | Ereignis | Personen-ID: `_experience.journeyOrchestration.`<br>`stepEvents.profileID` | Enthält Ereignisse, die zeigen, welche Profile an den einzelnen Knoten der Journey beteiligt waren. |
 | AJO-Entitäts-Datensatz | Suche | Schlüssel: `_id`<br>Passender Schlüssel: `_experience.decisioning.propositions.`<br>`scopeDetails.correlationID` | Enthält Klassifizierungen, die Journey- und Campaign-Metadaten mit allen Journey Optimizer-Ereignisdaten verknüpfen. |
-| AJO-Nachrichten-Feedback-Ereignisdatensatz - Ohne Profil | Ereignis | Personen-ID: `IdentityMap` | Enthält nicht profilbezogene Nachrichten-Feedback-Ereignisse. Nur verfügbar, wenn [&#x200B; Add-on „Transaktionsnachrichten mit hohem Durchsatz](#high-throughput-add-on-datasets) aktiviert ist. |
-| AJO-E-Mail-Tracking-Erlebnisereignis-Datensatz - Ohne Profil | Ereignis | Personen-ID: `IdentityMap` | Enthält E-Mail-Tracking-Erlebnisereignisse, die nicht vom Profil stammen. Nur verfügbar, wenn [&#x200B; Add-on „Transaktionsnachrichten mit hohem Durchsatz](#high-throughput-add-on-datasets) aktiviert ist. |
+| AJO-Nachrichten-Feedback-Ereignisdatensatz - Ohne Profil | Ereignis | Personen-ID: `IdentityMap` | Enthält nicht profilbezogene Nachrichten-Feedback-Ereignisse. Nur verfügbar, wenn [ Add-on „Transaktionsnachrichten mit hohem Durchsatz](#high-throughput-add-on-datasets) aktiviert ist. |
+| AJO-E-Mail-Tracking-Erlebnisereignis-Datensatz - Ohne Profil | Ereignis | Personen-ID: `IdentityMap` | Enthält E-Mail-Tracking-Erlebnisereignisse, die nicht vom Profil stammen. Nur verfügbar, wenn [ Add-on „Transaktionsnachrichten mit hohem Durchsatz](#high-throughput-add-on-datasets) aktiviert ist. |
 
 {style="table-layout:auto"}
 
@@ -230,7 +236,7 @@ Sie können die folgenden Metriken in einer Datenansicht erstellen, um eine unge
 | Deduplizierungsmetrik (AJO) | Deduplizierungsmetrik | Ereignisdatensatz zu Erfahrungen beim AJO-Push-Tracking, Journey-Schrittereignis, Ereignisdatensatz zu Feedback in AJO-Nachrichten, Ereignisdatensatz zu Erfahrungen beim AJO-E-Mail-Tracking | `_id` | Komponententyp: Metrik |
 | Zugestellt (AJO) | Gesamtzahl der zugestellten Nachrichten. | Ereignisdatensatz zu Erfahrungen beim AJO-Push-Tracking, Journey-Schrittereignis, Ereignisdatensatz zu Feedback in AJO-Nachrichten, Ereignisdatensatz zu Erfahrungen beim AJO-E-Mail-Tracking | Abgeleitete Felder | Komponententyp: Metrik (abgeleitetes Feld) |
 | Verworfen (AJO) | Zählt jedes Mal, wenn die In-App-Nachricht vom Adobe SDK geschlossen wird, unabhängig davon, welche Aktion die Endbenutzerin bzw. der Endbenutzer zum Schließen auswählt. | Ereignisdatensatz zu Erfahrungen beim AJO-Push-Tracking, Journey-Schrittereignis, Ereignisdatensatz zu Feedback in AJO-Nachrichten, Ereignisdatensatz zu Erfahrungen beim AJO-E-Mail-Tracking | `_experience.decisioning.`<br/>`propositionEventType.dismiss` | Komponententyp: Metrik |
-| Anzeigen (AJO) | Hier werden die Anzeigen von AJO-Nachrichten gezählt. Dazu gehören das Öffnen von E-Mails, Web-Anzeigen und In-App-Anzeigen. Mobile Plattformen melden keine Anzeigen von SMS- und Push-Nachrichten, weshalb sie nicht mitgezählt werden. | Ereignisdatensatz zu Erfahrungen beim AJO-Push-Tracking, Journey-Schrittereignis, Ereignisdatensatz zu Erfahrungen beim AJO-E-Mail-Tracking, Ereignisdatensatz zu Feedback in AJO-Nachrichten | Abgeleitete Felder | Komponententyp: Metrik (abgeleitetes Feld) |
+| Anzeigen (AJO) | Diese Anzahl zeigt AJO-Nachrichten an. Dazu gehören E-Mail-Öffnungen, Web-Anzeigen und In-App-Anzeigen. Mobile Plattformen melden keine Anzeigen von SMS- und Push-Nachrichten, daher werden sie nicht gezählt. | Ereignisdatensatz zu Erfahrungen beim AJO-Push-Tracking, Journey-Schrittereignis, Ereignisdatensatz zu Erfahrungen beim AJO-E-Mail-Tracking, Ereignisdatensatz zu Feedback in AJO-Nachrichten | Abgeleitete Felder | Komponententyp: Metrik (abgeleitetes Feld) |
 | E-Mail-Öffnungen (AJO) | Gesamtzahl der E-Mail-Öffnungen | Datensatz für Erlebnisereignisse beim AJO-E-Mail-Tracking | `_experience.customerJourneyManagement.`<br/>`messageInteraction.interactionType` | Komponententyp: Metrik |
 | Eingehende Klicks (AJO) | Gesamtzahl an Klicks über eingehende Kanäle | Ereignisdatensatz zu Erfahrungen beim AJO-Push-Tracking, Journey-Schrittereignis, Ereignisdatensatz zu Feedback in AJO-Nachrichten, Ereignisdatensatz zu Erfahrungen beim AJO-E-Mail-Tracking | `_experience.decisioning.`<br/>`propositionEventType.interact` | Komponententyp: Metrik |
 | Eingehende Abweisungen (AJO) | Gesamtzahl der Abweisungen über eingehende Kanäle | Ereignisdatensatz zu Erfahrungen beim AJO-Push-Tracking, Journey-Schrittereignis, Ereignisdatensatz zu Feedback in AJO-Nachrichten, Ereignisdatensatz zu Erfahrungen beim AJO-E-Mail-Tracking | `_experience.decisioning.`<br/>`propositionEventType.dismiss` | Komponententyp: Metrik |
@@ -254,8 +260,8 @@ Sie können die folgenden Metriken in einer Datenansicht erstellen, um eine unge
 | Spam-Beschwerde (AJO) | Gesamtzahl der Beschwerden wegen Spam | Datensatz für Erlebnisereignisse beim AJO-E-Mail-Tracking | `_experience.customerJourneyManagement.`<br/>`messageInteraction.interactionType` | Komponententyp: Metrik |
 | Hinzufügungen zur Abonnement-Liste (AJO) | Gesamtzahl aller Hinzufügungen zur Abonnement-Liste. | Datensatz für Erlebnisereignisse beim AJO-E-Mail-Tracking | Abgeleitete Felder | Komponententyp: Metrik (abgeleitetes Feld) |
 | Entfernungen von Abonnement-Listen (AJO) | Gesamtzahl der Entfernungen aus der Abonnement-Liste. | Datensatz für Erlebnisereignisse beim AJO-E-Mail-Tracking | Abgeleitete Felder | Komponententyp: Metrik (abgeleitetes Feld) |
-| An Zielgruppe gerichtet (AJO) | Hier wird gezählt, wie oft ein Vorschlag an eine Person gerichtet wurde. Dies ist die Anzahl der Male, in denen ein Vorschlag für die Anzeige bei einer Person in Betracht gezogen wurde. | Ereignisdatensatz zu Erfahrungen beim AJO-Push-Tracking, Journey-Schrittereignis, Ereignisdatensatz zu Feedback in AJO-Nachrichten, Ereignisdatensatz zu Erfahrungen beim AJO-E-Mail-Tracking | Abgeleitete Felder | Komponententyp: Metrik (abgeleitetes Feld) |
-| Ausgelöst (AJO) | Der Vorschlag wurde zur Anzeige durch das Adobe SDK ausgewählt. Andere Faktoren können verhindern, dass er tatsächlich angezeigt wird. | Ereignisdatensatz zu Erfahrungen beim AJO-Push-Tracking, Journey-Schrittereignis, Ereignisdatensatz zu Feedback in AJO-Nachrichten, Ereignisdatensatz zu Erfahrungen beim AJO-E-Mail-Tracking | `_experience.decisioning.`<br/>`propositionEventType.trigger` | Komponententyp: Metrik |
+| An Zielgruppe gerichtet (AJO) | Anzahl, wie oft ein Vorschlag an eine Person gesendet wurde. Dies ist die Häufigkeit, mit der ein Vorschlag zur Anzeige für eine Person in Betracht gezogen wurde. | Ereignisdatensatz zu Erfahrungen beim AJO-Push-Tracking, Journey-Schrittereignis, Ereignisdatensatz zu Feedback in AJO-Nachrichten, Ereignisdatensatz zu Erfahrungen beim AJO-E-Mail-Tracking | Abgeleitete Felder | Komponententyp: Metrik (abgeleitetes Feld) |
+| Ausgelöst (AJO) | Der Vorschlag wurde für die Anzeige in Adobe SDK ausgewählt. Andere Faktoren können die tatsächliche Anzeige verhindern. | Ereignisdatensatz zu Erfahrungen beim AJO-Push-Tracking, Journey-Schrittereignis, Ereignisdatensatz zu Feedback in AJO-Nachrichten, Ereignisdatensatz zu Erfahrungen beim AJO-E-Mail-Tracking | `_experience.decisioning.`<br/>`propositionEventType.trigger` | Komponententyp: Metrik |
 | Unique Visitors im Experiment (AJO) | Die Unique Visitors im Experiment | AJO-Entitäts-Datensatz | `_experience.customerJourneyManagement.`<br/>`entities.experiment.experimentId` | Komponententyp: Metrik |
 | Abmeldungen (AJO) | Gesamtanzahl der Abmeldungen | Datensatz für Erlebnisereignisse beim AJO-E-Mail-Tracking | `_experience.customerJourneyManagement.`<br/>`messageInteraction.interactionType` | Komponententyp: Metrik |
 

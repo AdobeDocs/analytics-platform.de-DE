@@ -5,10 +5,16 @@ feature: Adobe Product Analytics, Guided Analysis
 keywords: Produktanalysen
 exl-id: c35a0ee0-e6b7-47b5-a5bc-308cde1585de
 role: User
-source-git-commit: 023808a13ba9e438b33b1183b92d3aa8ac339230
+TQID: https://experienceleague.adobe.com/6cjieHRKJPeLix2qWLjI8GT5uZtdCRSbJmX7JCF2dtI
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: bc7a5a86-1a70-451f-985c-037b65f091d1id: bcaa1b08-8269-4ff3-a0c2-f599783b6107id: cb6c7d24-631f-46e5-9e39-3a2705f73962
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: '1262'
-ht-degree: 97%
+source-wordcount: 1278
+ht-degree: 96%
 
 ---
 
@@ -30,7 +36,7 @@ Die ![Retention](/help/assets/icons/Retention.svg) **[!UICONTROL Analyse der Kun
 
 Bei dieser Analyse stellt die X-Achse des Diagramms die Zeit seit dem ersten Startereignis einer Benutzerin oder eines Benutzers dar und die Y-Achse stellt den Prozentsatz der Benutzenden dar, die mit einem oder mehreren Rückkehrereignisse interagieren. Sie können sowohl die Bindung als auch die Abwanderung über verschiedene Zeiträume hinweg anzeigen. Die angezeigten Zeiträume können zudem über die Abfrageeinstellungen angepasst werden. Eine Tabelle unterhalb des Diagramms enthält aggregierte Daten mit der Option, einzelne Kohorten anzuzeigen, bei denen es sich um eine Gruppe von Personen handelt, deren Startereignis dasselbe Datum hat.
 
->[!VIDEO](https://experienceleague.adobe.com/de/docs/customer-journey-analytics-learn/tutorials/guided-analysis/retention)
+>[!VIDEO](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/guided-analysis/retention)
 
 
 ## Anwendungsfälle
@@ -52,7 +58,7 @@ Mit der Abfrageleiste können Sie die folgenden Komponenten konfigurieren:
 
 * **[!UICONTROL Startereignis]**: Die Ereigniskriterien, mit denen eine Benutzerin oder ein Benutzer interagieren muss, um sich für die Aufnahme in Ihre Analyse zu qualifizieren. Benutzende, die mit dem Startereignis interagieren, werden in der Spalte „Benutzende“ der Tabelle gezählt. Dieses Ereignis dient als Nenner für die angezeigten Bindungsraten. Es wird ein Ereignis unterstützt und bei Bedarf können Eigenschaftsfilter angewendet werden. Das Start- und das Rückkehrereignis sind standardmäßig verknüpft. Das bedeutet, dass eine Benutzerin bzw. ein Benutzer das ausgewählte Ereignis nur einmal ausführen muss, um in die Kohorte aufgenommen zu werden. Sie bzw. er muss es anschließend erneut ausführen, um als wiederkehrende Benutzerin bzw. wiederkehrender Benutzer gezählt zu werden. Unter dem Menü „Mehr“ können Sie die Verknüpfung zwischen Start- und Rückkehrereignis aufheben, wenn sich die Rückkehraktion von der Einschlussaktion unterscheiden soll.
 * **[!UICONTROL Rückkehrereignisse]**: Die Ereigniskriterien, mit denen eine Benutzerin bzw. ein Benutzer interagieren muss, um als wiederkehrende Benutzerin bzw. wiederkehrender Benutzer in den Dauer-Buckets gezählt zu werden. Sie können bis zu drei Rückkehrereignisse auswählen, um die Bindung übergreifend zu vergleichen.
-* **[!UICONTROL Zählt als]**: Die Zählmethode, die auf die gehaltenen Benutzenden angewendet werden soll.  Zu den Optionen zählen:
+* **[!UICONTROL Zählt als]**: Die Zählmethode, die auf die gehaltenen Benutzenden angewendet werden soll. Zu den Optionen zählen:
    * **[!UICONTROL Metrik]**: Zeigt die Anzahl der [!UICONTROL Benutzenden] oder den [!UICONTROL Prozentualer Anteil der Benutzenden], die gehalten wurden. Der Nenner für den prozentualen Anteil der Benutzenden, die gehalten wurden, sind die eingeschlossenen Benutzenden für die Kohorte. Sie sind für alle Dauer-Buckets gleich.
    * **[!UICONTROL Wiederkehrend]**: Hiermit können Sie steuern, wie wiederkehrende Benutzende gezählt werden. Zu den Optionen zählen:
       * **[!UICONTROL Am oder nach]**: Wird oft als „ungebundene“ Bindung bezeichnet. Diese Option zählt eine Benutzerin oder einen Benutzer, wenn sie bzw. er am oder nach der angegebenen Dauer zurückkehrt. Zum Beispiel an Tag 7 oder jederzeit nach Tag 7. Mit dieser Option lässt sich zeigen, wie Benutzende weiterhin interagieren. Sie erzeugt dadurch eine glattere Bindungskurve.

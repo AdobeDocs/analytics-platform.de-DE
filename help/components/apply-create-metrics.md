@@ -4,10 +4,15 @@ title: Metriken
 feature: Metrics
 exl-id: 4edfb5d7-da20-4bd8-8041-387b291daf96
 role: User
-source-git-commit: a646d1f35308dc1f1d9f06cf94835534bd8b8da6
+TQID: https://experienceleague.adobe.com/e0vvc9JN5k-KPI2zVAezIjdgViKdAcLJEAx0QUV-tAA
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: b1f5d324-a668-4e51-a59b-6fc0862d7310id: bc7a5a86-1a70-451f-985c-037b65f091d1id: df7fb1db-aa1b-4314-98ac-59dbfcc3044fid: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: '867'
-ht-degree: 6%
+source-wordcount: 885
+ht-degree: 9%
 
 ---
 
@@ -52,13 +57,13 @@ Vollständige Liste der Standardmetriken in Customer Journey Analytics:
 
 ## Erstellen von berechneten Metriken
 
-Mit berechneten Metriken können Sie einfach konfigurieren, wie sich Metriken zueinander verhalten, indem Sie einfache Operatoren oder statistische Funktionen verwenden. Weitere Informationen finden [&#x200B; unter &#x200B;](/help/components/calc-metrics/calc-metr-overview.md) Metriken - Übersicht .
+Mit berechneten Metriken können Sie einfach konfigurieren, wie sich Metriken zueinander verhalten, indem Sie einfache Operatoren oder statistische Funktionen verwenden. Weitere Informationen finden [ unter ](/help/components/calc-metrics/calc-metr-overview.md) Metriken - Übersicht .
 
 Es gibt mehrere Möglichkeiten, berechnete Metriken zu erstellen. Die gewählte Methode bestimmt, ob die berechnete Metrik in der Komponentenliste für alle Projekte verfügbar ist oder nur in dem Projekt, in dem sie erstellt wurde.
 
 ### Berechnete Metriken für alle Projekte erstellen
 
-Sie können den [Generator für berechnete Metriken](/help/components/calc-metrics/cm-workflow/cm-build-metrics.md) verwenden, um [berechnete Metriken zu erstellen](/help/components/calc-metrics/cm-workflow/cm-workflow.md). Wenn sie auf diese Weise erstellt werden, sind berechnete Metriken in der Komponentenliste verfügbar und können dann in Projekten in Ihrer gesamten Organisation verwendet werden.
+Sie können den [Generator für berechnete Metriken](/help/components/calc-metrics/cm-workflow/cm-build-metrics.md) verwenden, um [berechnete Metriken zu erstellen](/help/components/calc-metrics/cm-workflow/cm-workflow.md). Wenn berechnete Metriken auf diese Weise erstellt werden, sind sie in der Komponentenliste verfügbar und können dann in Projekten in Ihrer gesamten Organisation verwendet werden.
 
 ### Erstellen von berechneten Metriken für ein einzelnes Projekt
 

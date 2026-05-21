@@ -3,10 +3,16 @@ description: Erfahren Sie mehr über Metriktyp und Attribution.
 title: Metriktyp und Attribution
 feature: Calculated Metrics
 exl-id: da73a9ba-542e-436c-bdb2-b629b5b6f760
-source-git-commit: c209341400bf4e0c00719075f0fc82f81ca9dbb4
+TQID: https://experienceleague.adobe.com/aRrDxJeaU4xEzn2egBC5X-kUysJ00lrmfMUb7VE1CSc
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: b1f5d324-a668-4e51-a59b-6fc0862d7310id: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5520579-b31f-4df7-9281-f0d9f91e2edc
+source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: '612'
-ht-degree: 100%
+source-wordcount: 620
+ht-degree: 99%
 
 ---
 
@@ -35,7 +41,7 @@ Sie können den Metriktyp und das [Attributionsmodell](#attribution-models) für
 
             * Wählen Sie ein **[!UICONTROL Modell]** aus den [Attributionsmodellen](#attribution-models) aus.
             * Wählen Sie einen **[!UICONTROL Container]** aus den Optionen für [Container](#container) aus.
-            * Wählen Sie ein **[!UICONTROL Lookback-Fenster]** aus den Optionen für [Lookback-Fenster](#lookback-window) aus. Wenn Sie **[!UICONTROL Benutzerdefinierte Zeit]** auswählen, können Sie den Zeitraum in **[!UICONTROL Minuten]** bis zu **[!UICONTROL Quartalen]** festlegen. 
+            * Wählen Sie ein **[!UICONTROL Lookback-Fenster]** aus den Optionen für [Lookback-Fenster](#lookback-window) aus. Wenn Sie **[!UICONTROL Benutzerdefinierte Zeit]** auswählen, können Sie den Zeitraum in **[!UICONTROL Minuten]** bis zu **[!UICONTROL Quartalen]** festlegen.
 
       1. Wählen Sie **[!UICONTROL Anwenden]**, um das nicht standardmäßige Attributionsmodell anzuwenden. Wählen Sie zum Abbrechen die Option „Abbrechen“ aus.
 
@@ -162,7 +168,7 @@ Unter [Beispiel](#example) finden Sie ein Beispiel für die Verwendung von Attri
 
 >[!MORELIKETHIS]
 >
->[Attribution – Komponenteneinstellungen](/help/data-views/component-settings/attribution.md)
+>[Attribution - Komponenteneinstellungen](/help/data-views/component-settings/attribution.md)
 >[Beitragsmetrik](participation-metric.md)
 >
 

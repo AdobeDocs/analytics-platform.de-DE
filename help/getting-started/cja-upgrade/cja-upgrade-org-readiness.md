@@ -4,14 +4,21 @@ description: Erfahren Sie mehr über die empfohlenen Schritte für das Upgrade v
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
-source-git-commit: 7c0342a68f75774fd7b29979d3ce610f22d047ae
+exl-id: bd19250e-91c0-49f6-b6dc-3abd641344aa
+TQID: https://experienceleague.adobe.com/DtETa7Qh3l2X9YSjkX56zX8CmDTWVpGvvyrd9HFayt4
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: ad5685a0-8296-4a0c-814c-658c10b4af12id: bc7a5a86-1a70-451f-985c-037b65f091d1id: df7fb1db-aa1b-4314-98ac-59dbfcc3044fid: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c4147b6e-073b-4d3c-9ab1-d60f2f4434efid: e1e0219c-f879-479f-8427-888ed2a6e9c2
+source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: '1100'
-ht-degree: 8%
+source-wordcount: 1186
+ht-degree: 15%
 
 ---
 
-# Vorbereiten des Unternehmens auf die Aktualisierung auf Customer Journey Analytics
+# Vorbereiten der Organisation für das Upgrade auf Customer Journey Analytics
 
 Ein erfolgreiches Upgrade (wie unter [Upgrade von Adobe Analytics auf Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md) beschrieben) dient dazu, Ihr Unternehmen vorzubereiten, indem Sie sich auf bestimmte betriebliche Überlegungen konzentrieren. Zur Vorbereitung Ihrer Organisation wird Folgendes empfohlen:
 
@@ -37,10 +44,10 @@ Die folgende Tabelle enthält einige wichtige Funktionen, die Sie hervorheben m�
 
 | Funktion | Vorteil | Beispiel |
 |---------|----------|---------|
-| **[Unterkunft für alle Arten von Daten](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/home)** | Customer Journey Analytics ist mit der Fähigkeit von Experience Platform kombiniert, alle Arten von Datenschemata und -typen zu speichern. | Ein Einzelhandelsunternehmen könnte durch die Integration der folgenden Arten von Daten in eine einzige Ansicht Einblick in die vollständige Kunden-Journey gewähren: <ul><li>Web-Clickstream-Transaktionen</li><li>Mobile-App-Transaktionen</li><li>In-Store-Transaktionen</li><li>CRM- und Treuedaten</li></ul> |
+| **[Unterkunft für alle Arten von Daten](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/home)** | Customer Journey Analytics wird mit der Fähigkeit von Experience Platform kombiniert, alle Arten von Datenschemata und -typen zu speichern. | Ein Einzelhandelsunternehmen könnte durch die Integration der folgenden Arten von Daten in eine einzige Ansicht Einblick in die vollständige Kunden-Journey gewähren: <ul><li>Web-Clickstream-Transaktionen</li><li>Mobile-App-Transaktionen</li><li>In-Store-Transaktionen</li><li>CRM- und Treuedaten</li></ul> |
 | **[Cross-Channel-Analyse](/help/use-cases/cross-channel/cross-channel.md)** | Ermöglicht eine einzige konsolidierte Ansicht des Kundenverhaltens über verschiedene Kanäle hinweg, indem Daten aus verschiedenen Web-, Mobile- und Offline-Eigenschaften vereinheitlicht werden. | Ein Einzelhandelsunternehmen, das Daten aus mehreren Kanälen erfasst, könnte die folgende Art von Analyse durchführen:<p>Ein Käufer klickt auf eine Paid-Search-Anzeige, surft online in Jeans, erhält eine Push-Benachrichtigung und kauft zwei Tage später im Geschäft. Diese einheitliche Perspektive ermöglicht eine genaue kanalübergreifende Attribution und zeigt auf, wie digitale Touchpoints zum Umsatz in Geschäften beitragen. Sie unterstützt auch eine präzisere Segmentierung, z. B. die Abfrage von Kunden, die online surfen oder im Geschäft gekauft haben, mit maßgeschneiderten Angeboten. Darüber hinaus bietet sie ein klares, kanalübergreifendes Reporting über Umsätze in einem Dashboard, das fragmentierte, isolierte Einblicke durch ein ganzheitliches Verständnis des Kundenverhaltens ersetzt. |
 | **[Verarbeitung zur Berichtszeit](/help/getting-started/aa-to-cja.md#get-comfortable-with-report-time-processing)** | Wenden Sie rückwirkende Einstellungen an und erstellen Sie mehrere Versionen der Variablenpersistenz, ohne die Art der Erfassung der zugrunde liegenden Daten ändern zu müssen. | Da Sie mit Customer Journey Analytics Metriken, Dimensionen und Attributionsmodelle dynamisch erstellen und anpassen können, ohne Daten erneut aufzunehmen oder erneut zu verarbeiten, könnte ein Einzelhandelsunternehmen sehen, wie eine kürzlich durchgeführte Social-Media-Kampagne sowohl den Online- als auch den Ladenverkauf beeinflusst hat, ohne das Engineering bitten zu müssen, Datensätze neu zu erstellen. Sie können das Attributionsmodell sofort von der Letztkontakt- zur Erstkontakt- oder benutzerdefinierten regelbasierten Attribution ändern. |
-| **[Content Analytics](/help/content-analytics/content-analytics.md)** | Hilft Marketing-Fachleuten zu verstehen, wie sich Inhalte auf die von einem Unternehmen definierten wichtigsten Leistungsindikatoren auswirken. Zusätzlich zu den Verhaltensdaten erfasst Content Analytics Daten darüber, wie Inhalte konsumiert werden und wie Inhalte die Auswirkungen steuern.  | Durch die Integration von Web-, App-, E-Mail- und sogar In-Store-Daten kann ein Einzelhandelsunternehmen genau erkennen, wie jede digitale Inhaltskomponente, die es erstellt, zum Kunden-Journey und zur Konversion beiträgt. <p>Das Einzelhandelsunternehmen konnte erkennen, dass ein „Summer Denim Style Guide“ auf einer beliebten Social-Media-Plattform ein hohes Engagement unter den Treueprogramm-Mitgliedern fördert, und dass diese Mitglieder innerhalb einer Woche 40 % häufiger Denim im-Store kaufen.</p> |
+| **[Content Analytics](/help/content-analytics/content-analytics.md)** | Hilft Marketing-Fachleuten zu verstehen, wie sich Inhalte auf die von einem Unternehmen definierten wichtigsten Leistungsindikatoren auswirken. Zusätzlich zu den Verhaltensdaten erfasst Content Analytics Daten darüber, wie Inhalte konsumiert werden und wie Inhalte die Auswirkungen steuern. | Durch die Integration von Web-, App-, E-Mail- und sogar In-Store-Daten kann ein Einzelhandelsunternehmen genau erkennen, wie jede digitale Inhaltskomponente, die es erstellt, zum Kunden-Journey und zur Konversion beiträgt. <p>Das Einzelhandelsunternehmen konnte erkennen, dass ein „Summer Denim Style Guide“ auf einer beliebten Social-Media-Plattform ein hohes Engagement unter den Treueprogramm-Mitgliedern fördert, und dass diese Mitglieder innerhalb einer Woche 40 % häufiger Denim im-Store kaufen.</p> |
 
 ### Benennen eines Executive Sponsors
 
@@ -58,7 +65,7 @@ Der Executive Sponsor ist entscheidend, da er:
 
 Sichern Sie sich mithilfe Ihres Executive Sponsors die Unterstützung anderer wichtiger Führungskräfte in Ihrem gesamten Unternehmen. Es ist wichtig, dass Führungskräfte aus den folgenden Bereichen Ihres Unternehmens die Vorteile von Customer Journey Analytics verstehen und dass sie bereit sind, zu einer erfolgreichen Implementierung beizutragen:
 
-* Analytics  
+* Analytics
 
 * Marketing
 
@@ -138,9 +145,9 @@ Identifizieren Sie Champions in Ihrem gesamten Unternehmen. Diese Champions soll
 
   Die folgenden Ressourcen können Ihnen bei den ersten Schritten helfen:
 
-   * [Customer Journey Analytics-Tutorials](https://experienceleague.adobe.com/de/docs/customer-journey-analytics-learn/tutorials/overview)
+   * [Tutorials zu Customer Journey Analytics](https://experienceleague.adobe.com/de/docs/customer-journey-analytics-learn/tutorials/overview)
 
-   * [Was ist Customer Journey Analytics?](https://experienceleague.adobe.com/de/docs/customer-journey-analytics-learn/tutorials/cja-basics/what-is-customer-journey-analytics)
+   * [Was ist Customer Journey Analytics?](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/cja-basics/what-is-customer-journey-analytics)
 
    * [Einführung in Customer Journey Analytics](https://experienceleague.adobe.com/de/docs/customer-journey-analytics-learn/tutorials/cja-basics/understanding-customer-journey-analytics)
 
@@ -149,4 +156,3 @@ Identifizieren Sie Champions in Ihrem gesamten Unternehmen. Diese Champions soll
 ## Befolgen Sie die empfohlenen Upgrade-Schritte
 
 Wenn Sie bereit sind, den Upgrade-Prozess zu starten, befolgen Sie die [empfohlenen Upgrade-Schritte](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) oder die dynamisch generierten Upgrade-Schritte im Customer Journey Analytics-Upgrade-Handbuch. Um über Customer Journey Analytics auf den Leitfaden zuzugreifen, wählen Sie die Registerkarte **[!UICONTROL Arbeitsbereich]** und dann im linken Panel die Option **[!UICONTROL Upgrade auf Customer Journey Analytics]** aus. Befolgen Sie die Anweisungen auf dem Bildschirm.
-

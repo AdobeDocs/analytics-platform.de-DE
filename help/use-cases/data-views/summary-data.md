@@ -5,10 +5,16 @@ solution: Customer Journey Analytics
 feature: Use Cases
 role: Admin
 exl-id: 80139806-618a-46ff-b2c4-32d7bb85a526
-source-git-commit: b54083d85c0e07605c567a8d44824884cdc18c4d
+TQID: https://experienceleague.adobe.com/ST-1vL8gbeSqaYYHakxjYWcDOryNucEVHiONAQk7gU4
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: b1f5d324-a668-4e51-a59b-6fc0862d7310id: cb6c7d24-631f-46e5-9e39-3a2705f73962id: df7fb1db-aa1b-4314-98ac-59dbfcc3044fid: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: '5014'
-ht-degree: 15%
+source-wordcount: 4858
+ht-degree: 16%
 
 ---
 
@@ -50,7 +56,7 @@ Für diesen Anwendungsfall verwenden Sie die folgenden Beispielzusammenfassungsd
 | 17 | 321-Kampagne | 20 | 2500 | DEF321 | Facebook | def-adgroup | 18.07.2024:20:18.39.000Z |
 | 18 | 321-Kampagne | 15 | 2250 | ghi321 | Facebook | ghi-adgroup | 18.07.2024:20:18.39.000Z |
 
-[![DataDownload](/help/assets/icons/DataDownload.svg)](./assets/summary-data.csv)
+[![DataDownload](/help/assets/icons/DataDownload.svg) Beispielzusammenfassungsdaten herunterladen](./assets/summary-data.csv)
 
 +++
 
@@ -249,7 +255,7 @@ Ereignisdaten sind im Beispielereignisdatensatz verfügbar. Die Beispieldaten se
 | 18.07.2024:15:19.39+00:00 | 178 | Bestätigungsseite | person-142def654 |  | 1 | 174,25 |
 | 18.07.2024:15:19.39+00:00 | 179 | Startseite | person-143ghi654 | ghi654 |  |  |
 
-[![DataDownload](/help/assets/icons/DataDownload.svg)](./assets/event-data.csv)
+[![DataDownload](/help/assets/icons/DataDownload.svg) Beispielereignisdaten herunterladen](./assets/event-data.csv)
 
 +++
 
@@ -278,7 +284,7 @@ Lookup-Daten sind im Beispiel-Lookup-Datensatz verfügbar. Die Beispieldaten seh
 | 17 | DEF321 | def-adgroup | 321-Kampagne |
 | 18 | ghi321 | ghi-adgroup | 321-Kampagne |
 
-[![DataDownload](/help/assets/icons/DataDownload.svg)](./assets/lookup-data.csv)
+[![DataDownload](/help/assets/icons/DataDownload.svg) Herunterladen von Beispiel-Suchdaten](./assets/lookup-data.csv)
 +++
 
 >[!INFO]
@@ -293,7 +299,7 @@ Zusammenfassungsdaten benötigen ein Zusammenfassungsschema in Experience Platfo
 
 So erstellen Sie ein Zusammenfassungsschema in Experience Platform:
 
-1. Wählen Sie **[!UICONTROL Experience Platform]** aus der   ![App](/help/assets/icons/Apps.svg)   Programmumschalter.
+1. Wählen Sie **[!UICONTROL Experience Platform]** aus dem ![App](/help/assets/icons/Apps.svg)-Programmumschalter aus.
 1. Wählen Sie **[!UICONTROL Schemata]** in der linken Leiste aus.
 1. Wählen Sie ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Schema erstellen]**.
 1. Wählen **[!UICONTROL Manuell]** im Dialogfeld **[!UICONTROL Schema erstellen]** aus. Verwenden Sie dann **[!UICONTROL Auswählen]**, um fortzufahren.
@@ -342,7 +348,7 @@ Um Ihre Zusammenfassungsdaten in Experience Platform zu speichern, müssen Sie z
 
 So erstellen Sie einen Datensatz:
 
-1. Wählen Sie **[!UICONTROL Experience Platform]** aus der   ![App](/help/assets/icons/Apps.svg)   Programmumschalter.
+1. Wählen Sie **[!UICONTROL Experience Platform]** aus dem ![App](/help/assets/icons/Apps.svg)-Programmumschalter aus.
 1. Wählen **[!UICONTROL Datensätze]** in der linken Leiste aus.
 1. Wählen Sie ![Kreis hinzufügen](/help/assets/icons/AddCircle.svg) **[!UICONTROL Datensatz erstellen]**.
 1. Wählen Sie **[!UICONTROL Bildschirm]** > **[!UICONTROL Datensätze erstellen]** die Option **[!UICONTROL Datensatz aus Schema erstellen]**.
@@ -356,7 +362,7 @@ Es wird ein Bildschirm mit den Details Ihres neuen Datensatzes angezeigt.
 
 So laden Sie Ihre Beispieldaten in diesen Datensatz hoch:
 
-1. Wählen Sie **[!UICONTROL Experience Platform]** aus der   ![App](/help/assets/icons/Apps.svg)   Programmumschalter.
+1. Wählen Sie **[!UICONTROL Experience Platform]** aus dem ![App](/help/assets/icons/Apps.svg)-Programmumschalter aus.
 1. Wählen **[!UICONTROL Workflows]** in der linken Leiste aus.
    1. Wählen **[!UICONTROL CSV zu XDM-Schema zuordnen]** aus den Optionen **[!UICONTROL Datenaufnahme]** im Bildschirm **[!UICONTROL Workflows]** aus.
    1. Wählen **[!UICONTROL Launch]** im Bedienfeld **[!UICONTROL CSV zu XDM-Schema]**.
@@ -386,7 +392,7 @@ In **[!UICONTROL Quellen]** > **[!UICONTROL Datenfluss - XX/XX/XXXX, XX:XX XX]**
 Um Ihre Beispieldaten in Customer Journey Analytics zu verwenden, erstellen Sie eine Verbindung, die den Beispielzusammenfassungsdatensatz aus Experience Platform enthält.
 
 
-1. Wählen Sie **[!UICONTROL Customer Journey Analytics]** aus der   ![App](/help/assets/icons/Apps.svg)   Programmumschalter.
+1. Wählen Sie **[!UICONTROL Customer Journey Analytics]** aus dem ![App](/help/assets/icons/Apps.svg)-Programmumschalter aus.
 1. Wählen **[!UICONTROL Verbindungen]**, optional unter **[!UICONTROL Datenverwaltung]** im oberen Menü aus.
 1. Wählen Sie **[!UICONTROL Neue Verbindung erstellen]** aus.
 1. In **[!UICONTROL Verbindungen]** > **[!UICONTROL Nicht benannte Verbindung]**:
@@ -427,7 +433,7 @@ Die Daten aus den Datensätzen werden zu Customer Journey Analytics hinzugefügt
 
 Überprüfen Sie nach einiger Zeit, ob die Daten aus Ihren Datensätzen ordnungsgemäß in Customer Journey Analytics geladen wurden.
 
-1. Wählen Sie **[!UICONTROL Customer Journey Analytics]** aus der   ![App](/help/assets/icons/Apps.svg)   Programmumschalter.
+1. Wählen Sie **[!UICONTROL Customer Journey Analytics]** aus dem ![App](/help/assets/icons/Apps.svg)-Programmumschalter aus.
 1. Wählen **[!UICONTROL Verbindungen]**, optional unter **[!UICONTROL Datenverwaltung]** im oberen Menü aus.
 1. Wählen Sie Ihre Verbindung aus, z **[!UICONTROL B. Verbindung mit Zusammenfassungsdaten]**.
 1. Wählen Sie einen entsprechenden Datumsbereich unter **[!UICONTROL Verbindung]** > **[!UICONTROL Beispielverbindung mit Zusammenfassungsdaten]** aus.
@@ -442,7 +448,7 @@ In der Liste der **[!UICONTROL Datensätze]** sollten die Werte in der Spalte **
 
 Um sicherzustellen, dass Sie Berichte zu den richtigen Daten in Workspace erstellen können, sollten Sie eine Datenansicht mit den entsprechenden Metriken und Dimensionen erstellen.
 
-1. Wählen Sie **[!UICONTROL Customer Journey Analytics]** aus der   ![App](/help/assets/icons/Apps.svg)   Programmumschalter.
+1. Wählen Sie **[!UICONTROL Customer Journey Analytics]** aus dem ![App](/help/assets/icons/Apps.svg)-Programmumschalter aus.
 1. Wählen **[!UICONTROL Datenansichten]** optional unter **[!UICONTROL Daten-Management]** im oberen Menü aus.
 1. Wählen Sie **[!UICONTROL Neue Datenansicht erstellen]**.
 1. Gehen Sie **[!UICONTROL Datenansichten]** durch die Assistenten-Bildschirme, um Ihre Datenansicht zu konfigurieren.
@@ -483,7 +489,7 @@ Um sicherzustellen, dass Sie Berichte zu den richtigen Daten in Workspace erstel
          ![Trackingcode-Zusammenfassungsdaten](../assets/tracking-code-summary-data.png)
          1. Erweitern Sie ![ChevronDown](/help/assets/icons/ChevronDown.svg) **[!UICONTROL Summary Data Group]**.
          1. Aktivieren Sie **[!UICONTROL Gruppierung erstellen]**.
-         1. Wählen Sie **[!UICONTROL Kampagnenkennung]** aus dem Dropdown-Menü {2 **[!UICONTROL Dimension} aus.]** Dieser Schritt stellt sicher, dass Ereignisdaten und Zusammenfassungsdaten für das Reporting ordnungsgemäß kombiniert werden.
+         1. Wählen Sie **[!UICONTROL Kampagnenkennung]** aus dem Dropdown-Menü {2 ]**Dimension} aus.**[!UICONTROL  Dieser Schritt stellt sicher, dass Ereignisdaten und Zusammenfassungsdaten für das Reporting ordnungsgemäß kombiniert werden.
          1. Sie können optional &quot;**[!UICONTROL in Berichten ausblenden“]**. [!UICONTROL In Berichten ausblenden] stellt sicher, dass die ausgewählte Dimension ([!UICONTROL Kampagnen-ID]) in Analysis Workspace und anderen Reporting-Tools von Customer Journey Analytics ausgeblendet ist. Wenn Sie diese Option aktiviert haben, können Sie die Option überprüfen:
             1. Wählen Sie die Dimension **[!UICONTROL Kampagnen]** ID) in der Liste **[!UICONTROL Dimensionen]** aus.
             1. Sie werden feststellen **[!UICONTROL dass „Komponente in Berichten ausblenden]** in **[!UICONTROL Komponenteneinstellungen]** jetzt automatisch aktiviert ist.
@@ -506,7 +512,7 @@ Um sicherzustellen, dass Sie Berichte zu den richtigen Daten in Workspace erstel
 
          1. Erweitern Sie ![ChevronDown](/help/assets/icons/ChevronDown.svg) **[!UICONTROL Summary Data Group]**.
          1. Aktivieren Sie **[!UICONTROL Gruppierung erstellen]**.
-         1. Wählen Sie **[!UICONTROL Kampagnenname (abgeleitetes Suchfeld)]** Dropdown-Menü {2 **[!UICONTROL Dimension} aus.]** Dadurch wird sichergestellt, dass der Kampagnenname (Lookup) aus dem Beispiel-Lookup-Datensatz sicher in Berichten verwendet werden kann (siehe [Workspace](#workspace)).
+         1. Wählen Sie **[!UICONTROL Kampagnenname (abgeleitetes Suchfeld)]** Dropdown-Menü {2 ]**Dimension} aus.**[!UICONTROL  Dadurch wird sichergestellt, dass der Kampagnenname (Lookup) aus dem Beispiel-Lookup-Datensatz sicher in Berichten verwendet werden kann (siehe [Workspace](#workspace)).
 
       1. Wählen Sie die **[!UICONTROL Umsatz]** aus der Liste **[!UICONTROL Metriken]** aus. Im Bedienfeld Komponente :
 
@@ -541,7 +547,7 @@ Sie haben jetzt Ihre Datenansicht eingerichtet, um ein ordnungsgemäßes Reporti
 
 Um Berichte zu Ihren Zusammenfassungsdaten zu erstellen, erstellen Sie ein neues Projekt in Analysis Workspace.
 
-1. Wählen Sie **[!UICONTROL Customer Journey Analytics]** aus der   ![App](/help/assets/icons/Apps.svg)   Programmumschalter.
+1. Wählen Sie **[!UICONTROL Customer Journey Analytics]** aus dem ![App](/help/assets/icons/Apps.svg)-Programmumschalter aus.
 1. Wählen Sie **[!UICONTROL Workspace]** aus dem oberen Menü aus.
 1. Wählen Sie **[!UICONTROL Projekt erstellen]** aus
 1. Wählen Sie **[!UICONTROL Leeres Workspace-Projekt]** aus dem Dialogfeld mit Optionen zum Erstellen eines leeren Workspace-Projekts aus.
@@ -576,7 +582,7 @@ Sie möchten die Berichtsfunktion für Zusammenfassungsdaten nutzen und Berichte
 
 Fügen Sie Ihre berechneten Metriken zu Ihrem Bericht hinzu.
 
-1. Ziehen Sie **[!UICONTROL Kosten pro]**![&#x200B; Rechner](/help/assets/icons/Calculator.svg) aus **[!UICONTROL Metriken]** und legen Sie die Metrik ab, um sie als zusätzliche Spalte zur Freiformtabelle hinzuzufügen.
+1. Ziehen Sie **[!UICONTROL Kosten pro]**![ Rechner](/help/assets/icons/Calculator.svg) aus **[!UICONTROL Metriken]** und legen Sie die Metrik ab, um sie als zusätzliche Spalte zur Freiformtabelle hinzuzufügen.
    1. Wählen Sie ![Einstellung](/help/assets/icons/Setting.svg) Spalteneinstellungen aus.
       1. Deaktivieren Sie **[!UICONTROL Prozent]**.
 1. Ziehen Sie **[!UICONTROL Rückgabe für Werbeausgaben]** ![Rechner](/help/assets/icons/Calculator.svg) aus **[!UICONTROL Metriken]** und legen Sie die Metrik ab, um sie als zusätzliche Spalte zur Freiformtabelle hinzuzufügen.

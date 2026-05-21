@@ -4,10 +4,16 @@ description: Erfahren Sie mehr über die Umwandlung von Daten mithilfe von Verar
 exl-id: 049ad97e-0b4f-4163-a022-32661e48bf13
 feature: Basics
 role: User
-source-git-commit: 359fe2a718ccef816377083aceb2652b4a905072
+TQID: https://experienceleague.adobe.com/MuJbtTwSbGbKBifnyWz6SNybYX9JsMpIL9QwVJv031Y
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: d3cdead0-685a-4489-9250-4bb709942f66
+source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: '545'
-ht-degree: 97%
+source-wordcount: 632
+ht-degree: 92%
 
 ---
 
@@ -22,7 +28,7 @@ Die [Datenvorbereitung](https://experienceleague.adobe.com/docs/experience-platf
 Daten, die erfasst und in Adobe Analytics gespeichert werden, können durch Verarbeitungsregeln oder VISTA-Regeln oder beide umgewandelt werden. Report Suites, die dann über den Analytics-Quell-Connector an Platform weitergeleitet werden, können jedoch mithilfe der Datenvorbereitung erneut umgewandelt werden. Dies kann aus verschiedenen Gründen wünschenswert sein:
 
 * **Beheben von Schemaunterschieden zwischen Report Suites zur Verwendung in Customer Journey Analytics und/oder RTCDP**. Beispiel: Report Suite A definiert `eVar1` als „Suchbegriff“ und Report Suite B definiert `eVar2` als „Suchbegriff“. Sie können die Datenvorbereitung verwenden, um die beiden unterschiedlichen eVars einem gemeinsamen Feld zuzuordnen, das Daten aus beiden eVars enthält. Dies ermöglicht es, [Report Suites mit verschiedenen Schemata](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/combine-report-suites.html?lang=de) in einer [Customer Journey Analytics-Verbindung](/help/connections/overview.md) oder zur Verwendung in [Real-time Customer Data Platform](https://experienceleague.adobe.com/docs/platform-learn/tutorials/application-services/rtcdp/understanding-the-real-time-customer-data-platform.html?lang=de) zu kombinieren.
-* **Zuordnen von `eVars`-Feldern zu semantisch aussagekräftigen Namen**. `eVars` und `props` aus dem Analytics-Quell-Connector werden Feldern wie _\_experience.analytics.customDimensions.eVars.eVar1_ zugeordnet. Die Datenvorbereitung kann für die Zuordnung von `eVar`- und `prop`-Feldern zu neuen Feldern verwendet werden, die aussagekräftigere Namen für Ihre Benutzenden haben oder Namen entsprechen, die aus anderen Datenquellen stammen. (Dies lässt sich auch auf andere Weise erreichen, z. B. durch Umbenennen der Felder in einer [Customer Journey Analytics-Datenansicht](/help/data-views/create-dataview.md).)
+* **Zuordnen von `eVars`-Feldern zu semantisch aussagekräftigen Namen**. `eVars` und `props` aus dem Analytics-Quell-Connector werden Feldern wie _\_ experience.analytics.customDimensions.eVars.eVar1_ zugeordnet. Die Datenvorbereitung kann für die Zuordnung von `eVar`- und `prop`-Feldern zu neuen Feldern verwendet werden, die aussagekräftigere Namen für Ihre Benutzenden haben oder Namen entsprechen, die aus anderen Datenquellen stammen. (Dies lässt sich auch auf andere Weise erreichen, z. B. durch Umbenennen der Felder in einer [Customer Journey Analytics-Datenansicht](/help/data-views/create-dataview.md).)
 * **Allgemeines Transformieren von Daten**. Die Datenvorbereitung verfügt über Hunderte von Zuordnungsfunktionen, mit denen neue Felder basierend auf den Daten, die über den Analytics-Quell-Connector eingehen, berechnet werden können. Sie können durch Trennzeichen getrennte Felder in separate Felder aufteilen. Sie können Felder kombinieren. Sie können Zeichenfolgen bearbeiten. Sie können Informationen basierend auf regulären Ausdrücken aus einem Feld extrahieren und vieles mehr.
 
 ## Datenvorbereitung und Klassifizierung {#classifications}
@@ -31,4 +37,4 @@ Die Datenvorbereitung hat in bestimmten Situationen Überscheidungen mit [Klassi
 
 Beispielsweise können Sie in einem durch Trennzeichen getrennten Feld mithilfe der Datenvorbereitung dieses Feld in mehrere einzelne Felder aufteilen, ohne Klassifizierungen zu verwenden. Im Allgemeinen bieten Klassifizierungen die Möglichkeit, einem Feld Metadaten hinzuzufügen, indem eine Suchdatei hochgeladen wird, die außerhalb des Streams eingehender Analytics-Ereignisse bereitgestellt wird.
 
-Sie können beispielsweise eine Klassifizierungsdatei hochladen, in der SKUs nach „Größe“, „Marke“, „Farbe“ usw. gruppiert sind. Ein weiterer Unterschied zwischen Klassifizierungen und der Datenvorbereitung besteht darin, dass Klassifizierungen für _historische und zukünftige_ Daten gelten. Zuordnungen der Datenvorbereitung werden hingegen auf Daten angewendet, die _nach_ dem Zeitpunkt liegen, zu dem die Zuordnung erstellt wurde.
+Sie können beispielsweise eine Klassifizierungsdatei hochladen, in der SKUs nach „Größe“, „Marke“, „Farbe“ usw. gruppiert sind. Ein weiterer Unterschied zwischen Klassifizierungen und der Datenvorbereitung besteht darin, dass Klassifizierungen für Daten gelten _sowohl historisch als auch in Zukunft_. Zuordnungen der Datenvorbereitung werden hingegen auf Daten angewendet, die _nach_ dem Zeitpunkt liegen, zu dem die Zuordnung erstellt wurde.

@@ -6,10 +6,16 @@ feature: Basics
 role: Admin
 badgePremium: label="Beta"
 exl-id: 17f72954-085c-46a8-bc28-6af0a4eb159a
-source-git-commit: cd3baec708f1811a7cbc37dfe0a9c3af75eb97c3
+TQID: https://experienceleague.adobe.com/DhV4VNrG4WR1iQP9VqjvV16iEpfShbBir7N1JfeRbCM
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: b1f5d324-a668-4e51-a59b-6fc0862d7310id: c38ed341-fab2-46df-9d72-88d8166edebbid: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: e1e0219c-f879-479f-8427-888ed2a6e9c2id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: '2351'
-ht-degree: 14%
+source-wordcount: 2356
+ht-degree: 15%
 
 ---
 
@@ -51,7 +57,7 @@ In [!DNL Google BigQuery] werden die folgenden Beispieldaten regelmäßig in ein
 
 +++ Details zu Beispielereignisdaten
 
-| timestamp | ID | pageName | PersonID | trackingCode | Bestellungen | Einnahmenbetrag |
+| timestamp | id | pageName | PersonID | trackingCode | Bestellungen | Einnahmenbetrag |
 | :---                      |  ---: | :---              | :---            | :---          |   ---: | :---           |
 | 2025-03-06T19:15:39+00:00 | 10001 | Startseite | person-1abc123 | abc123 |        |                |
 | 2025-03-06T19:15:39+00:00 | 10002 | Bestätigungsseite | person-1abc123 |               | 1 | 174,25 |
@@ -173,9 +179,9 @@ Definieren Sie ein Schema, das diese Daten modelliert. Gehen Sie folgendermaßen
 
      ![Versionsdeskriptor](assets/platform-schema-id.png)
 
-     In einem realen Szenario empfiehlt es sich, ein geeigneteres Feld als [Versionsdeskriptor“ &#x200B;](aep.md#schema). Beispiel: ein Feld, in dem die letzte Änderungszeit erfasst wird.
+     In einem realen Szenario empfiehlt es sich, ein geeigneteres Feld als [Versionsdeskriptor“ ](aep.md#schema). Beispiel: ein Feld, in dem die letzte Änderungszeit erfasst wird.
 
-   * Das Feld **[!UICONTROL personid]** wird zusammen mit **[!UICONTROL timestamp]** als Primärer Schlüssel **&#x200B;**&#x200B;konfiguriert. Wählen Sie ![Hinzufügen](/help/assets/icons/Add.svg) **[!UICONTROL Zusammengesetzten Primärschlüssel erstellen]** aus, um einen zusammengesetzten Schlüssel zu erstellen.
+   * Das Feld **[!UICONTROL personid]** wird zusammen mit **[!UICONTROL timestamp]** als Primärer Schlüssel **** konfiguriert. Wählen Sie ![Hinzufügen](/help/assets/icons/Add.svg) **[!UICONTROL Zusammengesetzten Primärschlüssel erstellen]** aus, um einen zusammengesetzten Schlüssel zu erstellen.
 
      ![Zusammengesetzter Schlüssel](assets/platform-schema-compositekey.png)
 
@@ -185,7 +191,7 @@ Definieren Sie ein Schema, das diese Daten modelliert. Gehen Sie folgendermaßen
 
      Das **[!UICONTROL personid]**-Feld muss nicht der **[!UICONTROL Primäre Schlüssel sein]**. In einem realen Szenario haben Sie wahrscheinlich ein anderes Feld, um den Primärschlüssel getrennt von der &quot;**[!UICONTROL &quot;]** verfolgen.
 
-   * Das Feld **[!UICONTROL Zeitstempel]** wird zusammen mit dem Feld **[!UICONTROL personid]** als Primärer Schlüssel **&#x200B;**&#x200B;konfiguriert. Das **[!UICONTROL Zeitstempel]**-Feld wird auch als **[!UICONTROL Zeitstempeldeskriptor]** konfiguriert. Sie müssen nur ein Feld als **[!UICONTROL Zeitstempeldeskriptor]** für relationale Zeitreihendaten definieren.
+   * Das Feld **[!UICONTROL Zeitstempel]** wird zusammen mit dem Feld **[!UICONTROL personid]** als Primärer Schlüssel **** konfiguriert. Das **[!UICONTROL Zeitstempel]**-Feld wird auch als **[!UICONTROL Zeitstempeldeskriptor]** konfiguriert. Sie müssen nur ein Feld als **[!UICONTROL Zeitstempeldeskriptor]** für relationale Zeitreihendaten definieren.
 
      ![Zeitstempel-Deskriptor](assets/platform-schema-timestamp.png)
 
@@ -194,7 +200,7 @@ Definieren Sie ein Schema, das diese Daten modelliert. Gehen Sie folgendermaßen
 
 1. Wählen Sie **[!UICONTROL Speichern]** aus, um Ihr Schema zu speichern.
 
-Auf ähnliche Weise können Sie ein auf Datensätzen basierendes relationales [Schema) &#x200B;](aep.md#schema). Beispielsweise , um Profil- und Suchdaten zu enthalten.
+Auf ähnliche Weise können Sie ein auf Datensätzen basierendes relationales [Schema) ](aep.md#schema). Beispielsweise , um Profil- und Suchdaten zu enthalten.
 
 
 ## Verwenden eines Quell-Connectors
@@ -225,7 +231,7 @@ Wählen **[!UICONTROL im Schritt]** Authentifizierung“ Folgendes aus:
 
    1. Klicken Sie auf **[!UICONTROL Weiter]**.
 
-  In der Experience Platform-Dokumentation finden Sie Einzelheiten zur Verbindung und Authentifizierung bei der Verwendung des [Azure Databricks](https://experienceleague.adobe.com/de/docs/experience-platform/sources/connectors/databases/databricks) oder [Snowflake](https://experienceleague.adobe.com/de/docs/experience-platform/sources/connectors/databases/snowflake)-Connectors.
+  In der Experience Platform-Dokumentation finden Sie Einzelheiten zur Verbindung und Authentifizierung bei der Verwendung des [Azure Databricks](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/databases/databricks) oder [Snowflake](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/databases/snowflake)-Connectors.
 
 
 ### Daten auswählen
@@ -330,7 +336,7 @@ In der Benutzeroberfläche von Customer Journey Analytics:
    1. Wählen Sie **[!UICONTROL Datensätze hinzufügen]** aus.
 1. Wählen Sie **[!UICONTROL Speichern]** aus.
 
-Nachdem Sie eine [Verbindung](/help/connections/overview.md) erstellt haben, können Sie verschiedene Verwaltungsaufgaben ausführen. Beispielsweise [Auswählen und Kombinieren &#x200B;](/help/connections/combined-dataset.md) Datensätzen[&#x200B; Überprüfen des Status der Datensätze einer Verbindung und des Status &#x200B;](/help/connections/manage-connections.md) Datenaufnahme).
+Nachdem Sie eine [Verbindung](/help/connections/overview.md) erstellt haben, können Sie verschiedene Verwaltungsaufgaben ausführen. Beispielsweise [Auswählen und Kombinieren ](/help/connections/combined-dataset.md) Datensätzen[ Überprüfen des Status der Datensätze einer Verbindung und des Status ](/help/connections/manage-connections.md) Datenaufnahme).
 
 
 ## Einrichten einer Datenansicht
@@ -351,7 +357,7 @@ Gehen Sie folgendermaßen vor, um eine Datenansicht zu erstellen:
 
 4. Im Schritt **[!UICONTROL Komponenten]**:
 
-   1. Fügen Sie alle Schemafelder und/oder Standardkomponenten hinzu, die Sie in die Komponentenfelder **[!UICONTROL METRIKEN]** oder **[!UICONTROL DIMENSIONEN]** aufnehmen möchten. Stellen Sie sicher, dass Sie relevante Felder aus dem Datensatz hinzufügen, der die gespiegelten Daten enthält. Zugriff auf diese Felder:
+   1. Fügen Sie alle Schemafelder und/oder Standardkomponenten hinzu, die Sie in die Komponentenfelder **[!UICONTROL METRIKEN]** oder **[!UICONTROL DIMENSIONEN]** einbeziehen möchten. Stellen Sie sicher, dass Sie relevante Felder aus dem Datensatz hinzufügen, der die gespiegelten Daten enthält. Zugriff auf diese Felder:
 
       1. Wählen Sie **[!UICONTROL Ereignis-Datensätze]** aus.
       1. Wählen Sie **[!UICONTROL Ad-hoc- und relationale Felder]**.
@@ -378,7 +384,7 @@ Gehen Sie folgendermaßen vor, um eine Datenansicht zu erstellen:
 
    Behalten Sie die Einstellungen bei und wählen Sie **[!UICONTROL Speichern und beenden]**.
 
-Weitere Informationen [&#x200B; Erstellen und Bearbeiten einer Datenansicht finden &#x200B;](../data-views/data-views.md) unter Datenansichten - Übersicht . Und welche Komponenten in Ihrer Datenansicht verfügbar sind und wie Sie Segment- und Sitzungseinstellungen verwenden.
+Weitere Informationen [ Erstellen und Bearbeiten einer Datenansicht finden ](../data-views/data-views.md) unter Datenansichten - Übersicht . Und welche Komponenten in Ihrer Datenansicht verfügbar sind und wie Sie Segment- und Sitzungseinstellungen verwenden.
 
 
 ## Einrichten eines Projekts
@@ -387,11 +393,11 @@ Analysis Workspace ist ein flexibles Browser-Tool, mit dem Sie schnell Analysen 
 
 Gehen Sie folgendermaßen vor, um ein Projekt zu erstellen:
 
-1. Wählen Sie in der Customer Journey Analytics-Benutzeroberfläche im oberen **[!UICONTROL die Option]** Workspace.
+1. Wählen Sie in der Customer Journey Analytics-Benutzeroberfläche im oberen ]**die Option**[!UICONTROL  Workspace.
 
 2. Wählen Sie **[!UICONTROL Projekte]** in der linken Navigation aus.
 
-3. Wählen Sie **[!UICONTROL Projekt erstellen]** aus. Im Popup:
+3. Wählen Sie **[!UICONTROL Projekt erstellen]** aus Im Popup:
 
 
    1. Wählen Sie **[!UICONTROL Leeres Workspace-Projekt]** aus.

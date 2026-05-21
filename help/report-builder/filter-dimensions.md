@@ -6,13 +6,16 @@ feature: Report Builder
 type: Documentation
 exl-id: 5730d5f3-de76-429f-81f5-ebe6b62a9480
 solution: Customer Journey Analytics
-source-git-commit: a18b628f02889911c7663c32f31ef3c3bec3cf2e
+TQID: https://experienceleague.adobe.com/SAoyiEbKE1Niv3uwBMNB-M3F7WcdBQ-Guzs2mkRKHLE
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: '990'
+source-wordcount: 993
 ht-degree: 34%
 
 ---
-
 
 # Filterdimensionen
 
@@ -42,11 +45,11 @@ So ändern Sie die für jede Dimension zurückgegebenen Dimensionselemente:
 
 1. Report Builder zeigt eine Benachrichtigung zur Bestätigung des hinzugefügten Filters an.
 
-Um angewendete Filter anzuzeigen, bewegen Sie den Mauszeiger über eine Dimension. Dimensionen mit angewendeten Filtern zeigen ![&#x200B; Filtersymbol &#x200B;](/help/assets/icons/Filter.svg)Filter) neben dem Dimensionsnamen an.
+Um angewendete Filter anzuzeigen, bewegen Sie den Mauszeiger über eine Dimension. Dimensionen mit angewendeten Filtern zeigen ![ Filtersymbol ](/help/assets/icons/Filter.svg)Filter) neben dem Dimensionsnamen an.
 
 ## Filter und Sortierreihenfolge ändern
 
-Neben ![&#x200B; Metrik, die zum Filtern &#x200B;](/help/assets/icons/ArrowUp.svg) Sortieren des Datenblocks verwendet ![, wird ein „ArrowUp“ oder &#x200B;](/help/assets/icons/ArrowDown.svg)ArrowDown“ angezeigt. Die Pfeilrichtung gibt an, ob die Metrik in auf- oder absteigender Reihenfolge sortiert wird.
+Neben ![ Metrik, die zum Filtern ](/help/assets/icons/ArrowUp.svg) Sortieren des Datenblocks verwendet ](/help/assets/icons/ArrowDown.svg), wird ein „ArrowUp“ oder ![ArrowDown“ angezeigt. Die Pfeilrichtung gibt an, ob die Metrik in auf- oder absteigender Reihenfolge sortiert wird.
 
 Sortierreihenfolge ändern:
 
@@ -56,7 +59,7 @@ So ändern Sie die zum Filtern und Sortieren des Datenblocks verwendete Metrik:
 
 1. Bewegen Sie den Mauszeiger über die gewünschte Metrikkomponente im Tabellen-Builder, um zusätzliche Optionen anzuzeigen.
 
-2. Wählen Sie ![&#x200B; bevorzugte Metrik &#x200B;](/help/assets/icons/ArrowDown.svg)ArrowDown) aus.
+2. Wählen Sie ![ bevorzugte Metrik ](/help/assets/icons/ArrowDown.svg)ArrowDown) aus.
 
    ![Der Tabellen-Builder und die Metriken.](./assets/image30.png){zoomable="yes"}
 
@@ -81,7 +84,7 @@ Der Standardwert für Seite ist `1` und für Zeilen ist `10`. Diese Standardwert
 
 In der folgenden Tabelle finden Sie Beispiele für Seiten- und Zeilenwerte sowie die resultierende Ausgabe.
 
-| Seite | Zeile  | Ausgabe |
+| Seite | Zeile | Ausgabe |
 |------|--------|----------------------|
 | 1 | 10 | Die 10 beliebtesten Elemente |
 | 2 | 10 | Elemente 11-20 |
@@ -94,7 +97,7 @@ In der folgenden Tabelle sind die Mindest- und Höchstwerte für Seiten und Zeil
 |       | Mindestwerte | Maximale Werte |
 |-------|---------------:|---------------:|
 | Start Seite | 1 | 50 Million |
-| Anzahl Zeilen | 1 | 50.000 |
+| Anzahl der Zeilen | 1 | 50.000 |
 
 
 #### „Kein Wert“ einschließen

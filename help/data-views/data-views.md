@@ -5,22 +5,28 @@ exl-id: f69e6e38-ac98-49a6-b0ce-f642af2932ae
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: 4f1299595077a1756a6ad0c4f5ef5e0247ab4973
+TQID: https://experienceleague.adobe.com/WNPt241AppdCZVtsYmyLM2mRa2nqvrfYFbIP6K5NR1U
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: b1f5d324-a668-4e51-a59b-6fc0862d7310id: bc7a5a86-1a70-451f-985c-037b65f091d1id: c38ed341-fab2-46df-9d72-88d8166edebbid: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7id: df7fb1db-aa1b-4314-98ac-59dbfcc3044fid: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: '1096'
-ht-degree: 93%
+source-wordcount: 1124
+ht-degree: 88%
 
 ---
 
 # Überblick über Datenansichten
 
-Eine Datenansicht ist ein für Customer Journey Analytics spezifischer Container, mit dem Sie bestimmen können, wie Daten aus einer [Verbindung](/help/connections/create-connection.md) interpretiert werden. Es werden alle in Analysis Workspace verfügbaren Dimensionen und Metriken sowie die Spalten angegeben, aus denen diese Dimensionen und Metriken ihre Daten abrufen. Datenansichten werden in Vorbereitung auf das Reporting in Analysis Workspace definiert.
+Eine Datenansicht ist ein für Customer Journey Analytics spezifischer Container, mit dem Sie bestimmen können, wie Daten aus einer [Verbindung](/help/connections/create-connection.md) interpretiert werden. Darin werden alle in Analysis Workspace verfügbaren Dimensionen und Metriken sowie die Spalten angegeben, aus denen diese Dimensionen und Metriken ihre Daten abrufen. Datenansichten werden in Vorbereitung auf das Reporting in Analysis Workspace definiert.
 
 >[!NOTE]
 >
 >Alle Einstellungen, die Sie in einer Datenansicht auswählen oder ändern, sind rückwirkend und nicht zerstörerisch. Das heißt, dass sie Ihre zugrunde liegenden Daten nicht dauerhaft ändern.
 
-Sie können verschiedene Datenansichten für die gleiche Verbindung mit sehr unterschiedlichen Komponentensätzen (Dimensionen/Metriken) erstellen. Außerdem können Sie Datenansichten mit unterschiedlichen Einstellungen für Besuchs-Timeout, Attribution usw. erstellen. Beispielsweise könnten Sie eine Datenansicht haben, in der alle Dimensionen auf [!UICONTROL Letztkontakt] eingestellt sind, und gleichzeitig eine andere Datenansicht (basierend auf demselben Datensatz), in der alle Dimensionen auf [!UICONTROL Erstkontakt] eingestellt sind.
+Sie können verschiedene Datenansichten für die gleiche Verbindung mit sehr unterschiedlichen Komponentensätzen (Dimensionen/Metriken) erstellen. Oder erstellen Sie Datenansichten mit unterschiedlichen Einstellungen für Besuchs-Timeout, Attribution usw. Beispielsweise könnten Sie eine Datenansicht haben, in der alle Dimensionen auf [!UICONTROL Letztkontakt] eingestellt sind, und gleichzeitig eine andere Datenansicht (basierend auf demselben Datensatz), in der alle Dimensionen auf [!UICONTROL Erstkontakt] eingestellt sind.
 
 Arbeitsbereich-Projekte in Customer Journey Analytics basieren auf Datenansichten.
 
@@ -35,7 +41,7 @@ Mit Datenansichten können Sie die Schemaelement-Einstellungen spontan ändern, 
 * Sie können eine Komponente von einer Metrik in eine Dimension ändern und umgekehrt. Sie können Metriken aus Zeichenfolgenfeldern oder Dimensionen aus numerischen Feldern erstellen. Diese Funktionalität erleichtert Ihnen das Leben, da Sie nicht für jede gewünschte Metrik ein numerisches Feld in Ihrem XDM-Schema erstellen müssen. Stattdessen können Sie sie spontan im Dialog „Dateiansichten“ erstellen. Im Folgenden finden Sie einige Beispiele:
    * **Erstellen Sie eine oder mehrere Metriken und/oder Dimensionen aus einem einzigen Schemafeld**. Es ist eine Eins-zu-viele-Beziehung. Sie können beispielsweise eine oder mehrere Umsatzmetriken und/oder eine oder mehrere Umsatzdimensionen aus einem einzigen Schemafeld erstellen.
    * **Verwenden Sie ein Zeichenfolgenfeld als Metrik**: Wenn Sie ein Schema in Experience Platform mit einem Datensatz füllen, wissen Sie möglicherweise nicht schon gleich zu Beginn, welche Schema-Elemente Sie benötigen. Beispielsweise war Ihnen vielleicht noch nicht bewusst, dass Sie eine Metrik für *Fehler auf einer Seite* benötigen. Daher haben Sie kein numerisches Schema-Element für diesen Zweck erstellt. Durch Verwendung eines Zeichenfolgen-Elements als Metrik können Sie jetzt mithilfe der Einstellungen für Datenansichten festlegen, dass jede Zeichenfolge, die das Wort `error` enthält, als Metrik verwendet werden kann.
-   * **Verwenden Sie ein numerisches Feld als Dimension**. Wenn Sie beispielsweise die Umsatzmetrik aus der Umsatzdimension abrufen möchten, zeigt die Umsatzdimension jeden Wert als Dimensionselement und die Anzahl der Instanzen für jedes Dimensionselement als Metrik an. 
+   * **Verwenden Sie ein numerisches Feld als Dimension**. Wenn Sie beispielsweise die Umsatzmetrik aus der Umsatzdimension abrufen möchten, zeigt die Umsatzdimension jeden Wert als Dimensionselement und die Anzahl der Instanzen für jedes Dimensionselement als Metrik an.
 
 * Sie können mehrere Metriken mit verschiedenen Attributionsmodellen oder unterschiedlichen Lookback-Fenstern aus demselben Schemafeld erstellen.
 
@@ -46,7 +52,7 @@ Mit Datenansichten können Sie die Schemaelement-Einstellungen spontan ändern, 
 * Sie können weitere schemabezogene Informationen zu Komponenten anzeigen, z. B.:
 
    * von welchem Datensatztyp („Ereignis“, „Profil“, „Lookup“, „Zusammenfassung“) die Komponente stammt
-   * von welchem Schematyp (Zeichenfolge, Ganzzahl usw.) sie stammt und
+   * welcher Schematyp (Zeichenfolge, Ganzzahl usw.) es stammt aus und
    * wie der Schemapfad (das XDM-Feld, auf dem sie basiert) lautet
 
 * Sie können eine Komponente taggen, um die Suche nach ihr in Workspace zu erleichtern.

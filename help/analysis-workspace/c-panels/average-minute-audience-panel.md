@@ -4,10 +4,16 @@ description: Erfahren Sie, wie Sie das Bedienfeld „Medien-Zielgruppendurchschn
 feature: Panels
 role: User, Admin
 exl-id: c55b5534-a9a6-47f1-8b43-c8c0b8686c53
-source-git-commit: 8054aab28c405f6a9dd24306a086c78069032999
+TQID: https://experienceleague.adobe.com/d5xE5n-OpioBQy-j3wGrxO7GBcOJrqbNZ1C0lS1iAYM
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: bc7a5a86-1a70-451f-985c-037b65f091d1id: bcaa1b08-8269-4ff3-a0c2-f599783b6107
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: '1681'
-ht-degree: 91%
+source-wordcount: 1708
+ht-degree: 88%
 
 ---
 
@@ -33,7 +39,7 @@ ht-degree: 91%
 
 >[!BEGINSHADEBOX]
 
-_In diesem Artikel wird das Panel Medien-Zielgruppendurchschnitt pro Minute in_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**&#x200B;_ beschrieben.<br/>_Unter [Panel Medien-Zielgruppendurchschnitt pro Minute](https://experienceleague.adobe.com/de/docs/analytics/analyze/analysis-workspace/panels/average-minute-audience-panel) finden Sie die Version dieses Artikels für_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics**._
+_In diesem Artikel wird das Bedienfeld „Medien-Zielgruppendurchschnitt pro Minute“ in_![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**_.<br/>_Siehe [Bedienfeld „Medien-Zielgruppendurchschnitt pro Minute“](https://experienceleague.adobe.com/de/docs/analytics/analyze/analysis-workspace/panels/average-minute-audience-panel)_ für die ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**-Version dieses Artikels._
 
 >[!ENDSHADEBOX]
 
@@ -81,7 +87,7 @@ Verwenden Sie die in diesem Abschnitt beschriebenen Eingabeeinstellungen, um das
 
    | Einstellung | Beschreibung |
    |---------|------------|
-   | **Datumsbereich des Panels** | Der Datumsbereich des Panels ist standardmäßig [!UICONTROL **Dieser Monat**]. Sie können ihn so verändern, dass Sie einen einzelnen Tag oder viele Monate auf einmal betrachten können. <br></br> Diese Visualisierung ist auf 1.440 Datenzeilen beschränkt (z. B. 24 Stunden bei einer Granularität auf Minutenebene). Wenn eine Kombination aus Datumsbereich und Granularität mehr als 1.440 Zeilen zur Folge hat, wird die Granularität automatisch aktualisiert, um den vollständigen Datumsbereich anzuzeigen. |
+   | **Datumsbereich der Panels** | Der Datumsbereich des Panels ist standardmäßig [!UICONTROL **Dieser Monat**]. Sie können ihn so verändern, dass Sie einen einzelnen Tag oder viele Monate auf einmal betrachten können. <br></br> Diese Visualisierung ist auf 1440 Datenzeilen beschränkt (z. B. 24 Stunden bei einer Granularität auf Minutenebene). Wenn eine Kombination aus Datumsbereich und Granularität mehr als 1.440 Zeilen zur Folge hat, wird die Granularität automatisch aktualisiert, um den vollständigen Datumsbereich anzuzeigen. |
    | [!UICONTROL **Segment (oder eine beliebige andere Komponente) hier ablegen**] | Wie andere Bedienfelder segmentiert diese Einstellung Ihre Auswahl basierend auf Segmenten, die Sie erstellt haben. Diese Einstellung ist eine hervorragende Möglichkeit, sich bestimmte Plattformen, Livestreams oder andere gängige Mediensegmente anzusehen. |
    | [!UICONTROL **Metrik berechnen für**] | Wählen Sie aus, ob der Zielgruppendurchschnitt pro Minute für [**[!UICONTROL Bestimmter Inhalt]**](#specific-content) angezeigt werden soll. Alternativ können Sie den Zielgruppendurchschnitt pro Minute für einen [**[!UICONTROL benutzerdefinierten Zeitraum]**](#custom-time-period) anzeigen.<br/><br/>Wählen Sie [!UICONTROL **Benutzerdefinierter Zeitraum**] aus: <ul><li>wenn die Dauer nicht verfügbar ist oder </li><li>wenn Sie den Zielgruppendurchschnitt pro Minute für eine Zeitreihe mit mehreren Inhalten anzeigen möchten oder</li><li>für Inhalte, denen keine bestimmte Dauer zugewiesen ist, (z. B. während eines Livestreams oder Ereignisses)</li></ul></li></li></ul> <p>Diese Einstellung ändert den Workflow und die Berichtsausgabe.</p> |
 
@@ -187,6 +193,6 @@ Das Panel „Medien-Zielgruppendurchschnitt pro Minute“ verwendet nur die Metr
 >[!MORELIKETHIS]
 >
 > [Erstellen eines Bedienfelds](/help/analysis-workspace/c-panels/panels.md#create-a-panel)
-> [Panel Gleichzeitige Medienbetrachter](media-concurrent-viewers.md)
+> [Bedienfeld „Gleichzeitige Medienbetrachter“](media-concurrent-viewers.md)
 > [Panel Verbrachte Zeit bei der Medienwiedergabe](media-playback-time-spent.md)
 >

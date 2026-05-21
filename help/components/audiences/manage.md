@@ -4,9 +4,14 @@ description: Erfahren Sie, wie Sie Zielgruppen in Customer Journey Analytics ver
 exl-id: 0cc50f64-40b5-4245-a9bb-a60fc90f507a
 feature: Audiences
 role: User
-source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
+TQID: https://experienceleague.adobe.com/SVEj1knpMzmtkIlwAYSb6o0PYBR9wf7JbrLMcMM2V8g
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: cc092ab1-90ba-4bbc-b4c6-6249d87daf5c
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: '769'
+source-wordcount: 774
 ht-degree: 97%
 
 ---
@@ -25,7 +30,7 @@ Die Verwaltung zuvor erstellter Zielgruppen ermöglicht Ihnen Folgendes:
 * Gewinnen Sie Einblicke in die **benötigte Dauer für die Erstellung einer Zielgruppe** aus Customer Journey Analytics. Und die benötigte Zeit, damit die Zielgruppe zur Aktivierung in der Echtzeit-Kundenplattform angezeigt wird.
 * Überprüfen, ob die Zielgruppen in Customer Journey Analytics **aktiv von der Echtzeit-Kundenplattform verwendet werden**. Oder (im Idealfall) alle Experience Platform-Programme, die die von Customer Journey Analytics erstellten Zielgruppen nutzen.
 
-Wenn Sie Zugriff auf die [Zielgruppenansicht](/help/technotes/access-control.md#user-level-access) haben, können Sie Zielgruppen anzeigen. Wenn Sie Zugriff auf [Zielgruppe erstellen](/help/technotes/access-control.md#user-level-access) haben, können Sie Zielgruppen bearbeiten und löschen. 
+Wenn Sie Zugriff auf die [Zielgruppenansicht](/help/technotes/access-control.md#user-level-access) haben, können Sie Zielgruppen anzeigen. Wenn Sie Zugriff auf [Zielgruppe erstellen](/help/technotes/access-control.md#user-level-access) haben, können Sie Zielgruppen bearbeiten und löschen.
 
 ## Anzeigen von Zielgruppen in der Liste „Zielgruppen“
 
@@ -37,7 +42,7 @@ So zeigen Sie die Liste „Zielgruppen“ an:
 
 1. Wählen Sie in Customer Journey Analytics **[!UICONTROL Komponenten]** > **[!UICONTROL Veröffentlichte Zielgruppen]** aus.
 
-1. (Optional) Sie können mit ![Spalteneinstellung](/help/assets/icons/ColumnSetting.svg) konfigurieren, welche Spalten angezeigt werden sollen. 
+1. (Optional) Sie können mit ![Spalteneinstellung](/help/assets/icons/ColumnSetting.svg) konfigurieren, welche Spalten angezeigt werden sollen.
 
 1. (Optional) Sie können mit ![Suchen](/help/assets/icons/Search.svg) nach einer Zielgruppe suchen.
 
@@ -80,9 +85,9 @@ Die folgenden Aktionen werden im Manager für geplante Projekte häufig ausgefü
 
 | Symbol | Aktion | Beschreibung |
 |:---:|---|---|
-| ![Bezeichnungen](/help/assets/icons/Labels.svg) | **[!UICONTROL Tag]** | Versehen Sie die ausgewählten Zielgruppen mit Tags. Wählen Sie im Dialogfeld **[!UICONTROL Tags aktualisieren: *Zielgruppenname *]**&#x200B;im Dropdown-Menü die Option „Tags“ aus oder geben Sie einen oder mehrere neue Tags ein. Wählen Sie zum Speichern&#x200B;**[!UICONTROL Speichern &#x200B;]**&#x200B;aus. |
+| ![Bezeichnungen](/help/assets/icons/Labels.svg) | **[!UICONTROL Tag]** | Versehen Sie die ausgewählten Zielgruppen mit Tags. Wählen Sie im Dialogfeld **[!UICONTROL Tags aktualisieren: *Zielgruppenname *]**im Dropdown-Menü die Option „Tags“ aus oder geben Sie einen oder mehrere neue Tags ein. Wählen Sie zum Speichern**[!UICONTROL Speichern ]**aus. |
 | ![Löschen](/help/assets/icons/Delete.svg) | **[!UICONTROL Löschen]** | Löschen Sie die ausgewählten Zielgruppen. |
-| ![Bearbeiten](/help/assets/icons/Edit.svg) | **[!UICONTROL Umbenennen]** | Benennen Sie die ausgewählte Zielgruppe um. Verwenden Sie das Dialogfeld **[!UICONTROL Umbenennen: *Zielgruppenname *]**, um die Zielgruppe umzubenennen, und wählen Sie zum Speichern&#x200B;**[!UICONTROL Speichern &#x200B;]**&#x200B;aus. |
+| ![Bearbeiten](/help/assets/icons/Edit.svg) | **[!UICONTROL Umbenennen]** | Benennen Sie die ausgewählte Zielgruppe um. Verwenden Sie das Dialogfeld **[!UICONTROL Umbenennen: *Zielgruppenname *]**, um die Zielgruppe umzubenennen, und wählen Sie zum Speichern**[!UICONTROL Speichern ]**aus. |
 
 Die folgenden Aktionen sind in der blauen Aktionsleiste verfügbar, wenn Sie ein oder mehrere geplante Projekte auswählen.
 
@@ -104,7 +109,7 @@ Das Panel „Filter“ besteht aus den folgenden Abschnitten.
 
 | Datenansicht | Beschreibung |
 |---|---|
-| ![Inhaberin oder Inhaber](/help/components/audiences/assets/audiences-filter-dataviews.png){width="300"} | Im Abschnitt **[!UICONTROL Datenansicht]** können Sie nach Datenansichten filtern. <ul><li>Mit ![Durchsuchen](/help/assets/icons/Search.svg) suchen Sie nach Datenansichten, die Sie zum Filtern verwenden möchten.</li><li>Sie können mehr als nur eine Datenansicht auswählen.</li></ul> |
+| ![Inhaberinnen oder Inhaber](/help/components/audiences/assets/audiences-filter-dataviews.png){width="300"} | Im Abschnitt **[!UICONTROL Datenansicht]** können Sie nach Datenansichten filtern. <ul><li>Mit ![Durchsuchen](/help/assets/icons/Search.svg) suchen Sie nach Datenansichten, die Sie zum Filtern verwenden möchten.</li><li>Sie können mehr als nur eine Datenansicht auswählen.</li></ul> |
 
 ### Inhaberinnen oder Inhaber
 
