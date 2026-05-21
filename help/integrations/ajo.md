@@ -5,11 +5,20 @@ exl-id: 9333ada2-b4d6-419e-9ee1-5c96f06a3bfd
 feature: Experience Platform Integration
 role: Admin
 TQID: https://experienceleague.adobe.com/kmZ-AYMcKxwZftFSqJQpTH3zDTDT1CxlNw-MVO6Ikn4
-product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2: id: cb6c7d24-631f-46e5-9e39-3a2705f73962id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: bcc5edb5-84c3-4940-9f84-ed88b6c16274
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2:
+  - id: cb6c7d24-631f-46e5-9e39-3a2705f73962
+  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
 source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
 source-wordcount: 3841
@@ -50,12 +59,12 @@ Die Verbindung hat den Namen **[!UICONTROL AJO-fähige Verbindung *Sandbox-*)]**
 | Datensatzname | Schema | Datensatztyp | Datenquellentyp | Personen-ID | Schlüssel | Übereinstimmender Schlüssel | Neue Daten importieren | Daten aufstocken |
 |---|---|---|---|---|---|---|---|---|
 | [!UICONTROL AJO-Entitäts-Datensatz] | [!UICONTROL Schema des AJO-Entitätseintrags] | [!UICONTROL Suche] | [!UICONTROL Sonstige] | - | ` _id` | `_experience. decisioning. propositions. scopeDetails. correlationID` | ![Status „Grün“](assets/../../connections/assets/status-green.svg) Ein | ![Status „Grau“](assets/../../connections/assets/status-gray.svg) Aus |
-| [!UICONTROL Journey-Schrittereignisse] | [!UICONTROL Journey-Schrittereignisschema für Journey-Orchestrierung] | [!UICONTROL Ereignis] | [!UICONTROL Sonstige] | [!UICONTROL  IdentityMap(\&lt;primary\>)] | – | – | ![Status „Grün“](assets/../../connections/assets/status-green.svg) Ein | ![Status „Grau“](assets/../../connections/assets/status-gray.svg) Aus |
+| [!UICONTROL Journey-Schrittereignisse] | [!UICONTROL Journey-Schrittereignisschema für Journey-Orchestrierung] | [!UICONTROL Ereignis] | [!UICONTROL Sonstige] | [!UICONTROL &#x200B; IdentityMap(\&lt;primary\>)] | – | – | ![Status „Grün“](assets/../../connections/assets/status-green.svg) Ein | ![Status „Grau“](assets/../../connections/assets/status-gray.svg) Aus |
 | [!UICONTROL Ereignisdatensatz zu Erfahrungen beim AJO-E-Mail-Tracking] | [!UICONTROL Erlebnisereignisschema beim AJO-E-Mail-Tracking] | [!UICONTROL Ereignis] | [!UICONTROL Sonstige] | [!UICONTROL IdentityMap(\&lt;primary\>)] | – | – | ![Status „Grün“](assets/../../connections/assets/status-green.svg) Ein | ![Status „Grau“](assets/../../connections/assets/status-gray.svg) Aus |
 | [!UICONTROL Ereignisdatensatz mit Feedback zu AJO-Nachrichten] | [!UICONTROL Ereignisschema mit Feedback zu AJO-Nachrichten] | [!UICONTROL Ereignis] | [!UICONTROL Sonstige] | [!UICONTROL IdentityMap(\&lt;primary\>)] | – | – | ![Status „Grün“](assets/../../connections/assets/status-green.svg) Ein | ![Status „Grau“](assets/../../connections/assets/status-gray.svg) Aus |
 | [!UICONTROL Erlebnisereignisdatensatz beim AJO-Push-Tracking] | [!UICONTROL Erlebnisereignisschema beim AJO-Push-Tracking] | [!UICONTROL Ereignis] | [!UICONTROL Sonstige] | [!UICONTROL IdentityMap(\&lt;primary\>)] | – | – | ![Status „Grün“](assets/../../connections/assets/status-green.svg) Ein | ![Status „Grau“](assets/../../connections/assets/status-gray.svg) Aus |
-| [!UICONTROL AJO-Nachrichten-Feedback-Ereignisdatensatz - Nicht ]<br/>(siehe [Add-On-Datensätze mit hohem Durchsatz](#high-throughput-add-on-datasets) Abschnitt unten) | [!UICONTROL Ereignisschema mit Feedback zu AJO-Nachrichten] | [!UICONTROL Ereignis] | [!UICONTROL Sonstige] | [!UICONTROL IdentityMap(\&lt;primary\>)] | – | – | ![Status „Grün“](assets/../../connections/assets/status-green.svg) Ein | ![Status „Grau“](assets/../../connections/assets/status-gray.svg) Aus |
-| [!UICONTROL AJO-E-Mail-Tracking-Erlebnisereignis-Datensatz - Nicht ]<br/>(siehe [ Abschnitt „Add-On-Datensätze mit hohem ](#high-throughput-add-on-datasets)&quot; unten) | [!UICONTROL Erlebnisereignisschema beim AJO-E-Mail-Tracking] | [!UICONTROL Ereignis] | [!UICONTROL Sonstige] | [!UICONTROL IdentityMap(\&lt;primary\>)] | – | – | ![Status „Grün“](assets/../../connections/assets/status-green.svg) Ein | ![Status „Grau“](assets/../../connections/assets/status-gray.svg) Aus |
+| [!UICONTROL AJO-Nachrichten-Feedback-Ereignisdatensatz - Nicht &#x200B;]<br/>(siehe [Add-On-Datensätze mit hohem Durchsatz](#high-throughput-add-on-datasets) Abschnitt unten) | [!UICONTROL Ereignisschema mit Feedback zu AJO-Nachrichten] | [!UICONTROL Ereignis] | [!UICONTROL Sonstige] | [!UICONTROL IdentityMap(\&lt;primary\>)] | – | – | ![Status „Grün“](assets/../../connections/assets/status-green.svg) Ein | ![Status „Grau“](assets/../../connections/assets/status-gray.svg) Aus |
+| [!UICONTROL AJO-E-Mail-Tracking-Erlebnisereignis-Datensatz - Nicht &#x200B;]<br/>(siehe [&#x200B; Abschnitt „Add-On-Datensätze mit hohem &#x200B;](#high-throughput-add-on-datasets)&quot; unten) | [!UICONTROL Erlebnisereignisschema beim AJO-E-Mail-Tracking] | [!UICONTROL Ereignis] | [!UICONTROL Sonstige] | [!UICONTROL IdentityMap(\&lt;primary\>)] | – | – | ![Status „Grün“](assets/../../connections/assets/status-green.svg) Ein | ![Status „Grau“](assets/../../connections/assets/status-gray.svg) Aus |
 
 #### Add-on-Datensätze mit hohem Durchsatz
 
@@ -139,8 +148,8 @@ Wählen Sie die folgenden Datensätze aus und konfigurieren Sie sie:
 | Datensatz für Erlebnisereignisse beim AJO-Push-Tracking | Ereignis | Personen-ID: `IdentityMap` | Enthält Push-Tracking-Ereignisse wie „[!UICONTROL App-Starts]“. |
 | Journey-Schritt-Ereignisse | Ereignis | Personen-ID: `_experience.journeyOrchestration.`<br>`stepEvents.profileID` | Enthält Ereignisse, die zeigen, welche Profile an den einzelnen Knoten der Journey beteiligt waren. |
 | AJO-Entitäts-Datensatz | Suche | Schlüssel: `_id`<br>Passender Schlüssel: `_experience.decisioning.propositions.`<br>`scopeDetails.correlationID` | Enthält Klassifizierungen, die Journey- und Campaign-Metadaten mit allen Journey Optimizer-Ereignisdaten verknüpfen. |
-| AJO-Nachrichten-Feedback-Ereignisdatensatz - Ohne Profil | Ereignis | Personen-ID: `IdentityMap` | Enthält nicht profilbezogene Nachrichten-Feedback-Ereignisse. Nur verfügbar, wenn [ Add-on „Transaktionsnachrichten mit hohem Durchsatz](#high-throughput-add-on-datasets) aktiviert ist. |
-| AJO-E-Mail-Tracking-Erlebnisereignis-Datensatz - Ohne Profil | Ereignis | Personen-ID: `IdentityMap` | Enthält E-Mail-Tracking-Erlebnisereignisse, die nicht vom Profil stammen. Nur verfügbar, wenn [ Add-on „Transaktionsnachrichten mit hohem Durchsatz](#high-throughput-add-on-datasets) aktiviert ist. |
+| AJO-Nachrichten-Feedback-Ereignisdatensatz - Ohne Profil | Ereignis | Personen-ID: `IdentityMap` | Enthält nicht profilbezogene Nachrichten-Feedback-Ereignisse. Nur verfügbar, wenn [&#x200B; Add-on „Transaktionsnachrichten mit hohem Durchsatz](#high-throughput-add-on-datasets) aktiviert ist. |
+| AJO-E-Mail-Tracking-Erlebnisereignis-Datensatz - Ohne Profil | Ereignis | Personen-ID: `IdentityMap` | Enthält E-Mail-Tracking-Erlebnisereignisse, die nicht vom Profil stammen. Nur verfügbar, wenn [&#x200B; Add-on „Transaktionsnachrichten mit hohem Durchsatz](#high-throughput-add-on-datasets) aktiviert ist. |
 
 {style="table-layout:auto"}
 

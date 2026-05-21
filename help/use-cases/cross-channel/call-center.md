@@ -6,11 +6,18 @@ solution: Customer Journey Analytics
 feature: Use Cases
 role: User
 TQID: https://experienceleague.adobe.com/FTWdLEx5SD4GMgi4XJKQ20-RVsg1oRFZtEMjPXkVuYQ
-product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2: id: bc7a5a86-1a70-451f-985c-037b65f091d1id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2: id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2:
+  - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2:
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
 source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
 source-wordcount: 1160
@@ -48,7 +55,7 @@ Beim Importieren von Daten in die Platform können folgende Tipps hilfreich sein
 
 ## Ordnen Sie die Personen-IDs zu
 
-Customer Journey Analytics erfordert eine gemeinsame Kennung, um einen [kombinierten Datensatz“ ](/help/connections/combined-dataset.md).
+Customer Journey Analytics erfordert eine gemeinsame Kennung, um einen [kombinierten Datensatz“ &#x200B;](/help/connections/combined-dataset.md).
 
 * Wenn Ihre Datensätze bereits für jedes Ereignis in beiden Datensätzen eine gemeinsame Kennung aufweisen, können Sie diesen Schritt überspringen und eine Verbindung erstellen.
 * Wenn einer Ihrer Datensätze nur für einige Ereignisse eine gemeinsame Kennung hat, können Sie Daten mithilfe von [Zusammenfügung](/help/stitching/overview.md) für Schritte zusammenfügen, um die kanalübergreifende Analyse für diese beiden Datensätze zu aktivieren.
@@ -75,7 +82,7 @@ Die folgenden Visualisierungen können verwendet werden, um Einblicke aus Ihrem 
 
 In dieser Visualisierung können Sie die Qualität der Datenzuordnung in der kanalübergreifenden Analyse erkennen.
 
-1. Erstellen Sie zwei Segmente. Die in diesen beiden Segmenten verwendete Variable ist dieselbe oben erwähnte Variable, die die Datenquelle jedes Ereignisses widerspiegelt. Weitere [ finden Sie unter ](/help/components/segments/seg-create.md) erstellen .
+1. Erstellen Sie zwei Segmente. Die in diesen beiden Segmenten verwendete Variable ist dieselbe oben erwähnte Variable, die die Datenquelle jedes Ereignisses widerspiegelt. Weitere [&#x200B; finden Sie unter &#x200B;](/help/components/segments/seg-create.md) erstellen .
    * Personen-Container, bei dem die Datensatz-ID mit Ihren Web-Daten übereinstimmt
    * Personen-Container, bei dem die Datensatz-ID mit Ihren Callcenter-Daten übereinstimmt
 2. Ziehen Sie in Analysis Workspace eine [Venn](/help/analysis-workspace/visualizations/venn.md)-Visualisierung auf die Arbeitsbereich-Arbeitsfläche.

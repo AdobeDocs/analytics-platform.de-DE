@@ -7,9 +7,12 @@ type: Documentation
 solution: Customer Journey Analytics
 exl-id: 70103020-a4a9-43be-933c-bde5a6d088c8
 TQID: https://experienceleague.adobe.com/75yD-0nmVz22sHzBOga0oH9AaSiKsaG282k5kf3R4og
-product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
 source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
 source-wordcount: 520
@@ -19,7 +22,7 @@ ht-degree: 18%
 
 # Verwalten von Datenblöcken
 
-Sie können alle Datenblöcke in einer Arbeitsmappe mit dem [!UICONTROL Datenblock-Manager“ anzeigen und ]. Der [!UICONTROL Datenblock-Manager] bietet Such-, Filter- und Sortierfunktionen, mit denen Sie bestimmte Datenblöcke finden können. Nach Auswahl eines oder mehrerer Datenblöcke können Sie diese bearbeiten, löschen oder aktualisieren.
+Sie können alle Datenblöcke in einer Arbeitsmappe mit dem [!UICONTROL Datenblock-Manager“ anzeigen und &#x200B;]. Der [!UICONTROL Datenblock-Manager] bietet Such-, Filter- und Sortierfunktionen, mit denen Sie bestimmte Datenblöcke finden können. Nach Auswahl eines oder mehrerer Datenblöcke können Sie diese bearbeiten, löschen oder aktualisieren.
 
 ## Datenblöcke anzeigen
 
@@ -42,7 +45,7 @@ Um die Datenblocktabelle zu sortieren, wählen Sie eine Spaltenüberschrift aus.
 
 ## Datenblöcke suchen
 
-Suchen Sie mithilfe ![ Felds ](/help/assets/icons/Search.svg)Suche **[!UICONTROL _Suche_]** nach beliebigen Elementen in der Datenblocktabelle. Sie können beispielsweise nach Metriken suchen, die in den Datenblöcken oder in der Datenansicht enthalten sind. Sie können auch nach Datumsangaben suchen, die in den Spalten „Datumsbereich“, „Änderungsdatum“ oder „Datum des letzten Durchgang“ angezeigt werden.
+Suchen Sie mithilfe ![&#x200B; Felds &#x200B;](/help/assets/icons/Search.svg)Suche **[!UICONTROL _Suche_]** nach beliebigen Elementen in der Datenblocktabelle. Sie können beispielsweise nach Metriken suchen, die in den Datenblöcken oder in der Datenansicht enthalten sind. Sie können auch nach Datumsangaben suchen, die in den Spalten „Datumsbereich“, „Änderungsdatum“ oder „Datum des letzten Durchgang“ angezeigt werden.
 
 
 ## Datenblöcke bearbeiten
@@ -80,7 +83,7 @@ Löschen eines oder mehrerer Datenblöcke:
 
 1. Einen oder mehrere Datenblöcke auswählen.
 1. Wählen Sie ![Löschen](/help/assets/icons/Delete.svg) aus.
-1. Wählen Sie **[!UICONTROL Dialogfeld]** Datenblock löschen **** oder **[!UICONTROL Abbrechen]**, um den Löschvorgang abzubrechen.
+1. Wählen Sie **[!UICONTROL Dialogfeld]** Datenblock löschen **&#x200B;**&#x200B;oder **[!UICONTROL Abbrechen]**, um den Löschvorgang abzubrechen.
 
 ## Datenblöcke gruppieren
 

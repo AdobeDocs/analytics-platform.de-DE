@@ -6,11 +6,22 @@ feature: BI Extension
 role: Admin
 exl-id: ab7e1f15-ead9-46b7-94b7-f81802f88ff5
 TQID: https://experienceleague.adobe.com/RrX-gp2IY-Ny1D1yzR2whV2GuU98mysma8tQmUEubF8
-product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: eb00932f-4d46-46bc-b1d8-10de7588db8d
-subfeature_v2: id: b1f5d324-a668-4e51-a59b-6fc0862d7310id: ffe2fd81-0630-49b3-a33b-4b8899e89c51
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c7d04a2c-412a-4c9d-9d7a-4456eaa5adebid: ebde5b41-29c9-4f5e-9ef6-1197e85409e3id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: eb00932f-4d46-46bc-b1d8-10de7588db8d
+subfeature_v2:
+  - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+  - id: ffe2fd81-0630-49b3-a33b-4b8899e89c51
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
+  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
 source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
 source-wordcount: 3756
@@ -95,9 +106,9 @@ Sie können die Funktion direkt in SQL-Anweisungen verwenden, indem Sie entweder
 
 In Adobe Experience Platform:
 
-1. Wählen Sie **[!UICONTROL ** Abfragen **]** unter **[!UICONTROL ** DATEN-MANAGEMENT **]** in der linken Leiste aus.
+1. Wählen Sie **[!UICONTROL ** Abfragen **]** unter **[!UICONTROL **&#x200B; DATEN-MANAGEMENT &#x200B;**]** in der linken Leiste aus.
 
-1. Wählen Sie ![Abfrage erstellen](assets/Smock_AddCircle_18_N.svg) **[!UICONTROL ** Abfrage erstellen **]** aus.
+1. Wählen Sie ![Abfrage erstellen](assets/Smock_AddCircle_18_N.svg) **[!UICONTROL **&#x200B; Abfrage erstellen &#x200B;**]** aus.
 
 1. Wählen Sie die `cja` für Ihre Sandbox aus der Liste der Datenbanken im Dropdown **[!UICONTROL Menü]** Datenbank“ aus. Zum Beispiel `prod:cja`.
 
@@ -110,13 +121,13 @@ In Adobe Experience Platform:
 
 1. Suchen und Kopieren Ihrer PostgresSQL-Anmeldedaten in Adobe Experience Platform:
 
-   1. Wählen Sie **[!UICONTROL ** Abfragen **]** aus der linken Leiste (unter **[!UICONTROL ** DATEN-MANAGEMENT **]**) aus.
+   1. Wählen Sie **[!UICONTROL ** Abfragen **]** aus der linken Leiste (unter **[!UICONTROL **&#x200B; DATEN-MANAGEMENT &#x200B;**]**) aus.
 
-   1. Wählen Sie **[!UICONTROL ** Anmeldeinformationen **]** aus der oberen Leiste aus.
+   1. Wählen Sie **[!UICONTROL **&#x200B; Anmeldeinformationen &#x200B;**]** aus der oberen Leiste aus.
 
    1. Wählen Sie die `cja` für Ihre Sandbox aus der Liste der Datenbanken im Dropdown **[!UICONTROL Menü]** Datenbank“ aus. Zum Beispiel `prod:cja`.
 
-   1. Um die Befehlszeichenfolge zu kopieren, verwenden Sie ![Kopieren](assets/Smock_Copy_18_N.svg) im Abschnitt **[!UICONTROL ** PSQL-Befehl **]**.
+   1. Um die Befehlszeichenfolge zu kopieren, verwenden Sie ![Kopieren](assets/Smock_Copy_18_N.svg) im Abschnitt **[!UICONTROL **&#x200B; PSQL-Befehl &#x200B;**]**.
 
 1. Öffnen Sie ein Befehls- oder Terminal-Fenster.
 
@@ -135,9 +146,9 @@ Derzeit wird die [!DNL Customer Journey Analytics BI extension] für die unten a
 
 1. Suchen der Details Ihrer PostgresSQL-Anmeldedaten in Adobe Experience Platform:
 
-   1. Wählen Sie **[!UICONTROL ** Abfragen **]** aus der linken Leiste (unter **[!UICONTROL ** DATEN-MANAGEMENT **]**) aus.
+   1. Wählen Sie **[!UICONTROL ** Abfragen **]** aus der linken Leiste (unter **[!UICONTROL **&#x200B; DATEN-MANAGEMENT &#x200B;**]**) aus.
 
-   1. Wählen Sie **[!UICONTROL ** Anmeldeinformationen **]** aus der oberen Leiste aus.
+   1. Wählen Sie **[!UICONTROL **&#x200B; Anmeldeinformationen &#x200B;**]** aus der oberen Leiste aus.
 
    1. Wählen Sie die `cja` für Ihre Sandbox aus der Liste der Datenbanken im Dropdown **[!UICONTROL Menü]** Datenbank“ aus. Zum Beispiel `prod:cja`.
 
@@ -145,28 +156,28 @@ Derzeit wird die [!DNL Customer Journey Analytics BI extension] für die unten a
 
 1. In Power BI:
 
-   1. Wählen Sie im Hauptfenster **[!UICONTROL ** Daten abrufen **]** aus der oberen Symbolleiste aus.
+   1. Wählen Sie im Hauptfenster **[!UICONTROL **&#x200B; Daten abrufen &#x200B;**]** aus der oberen Symbolleiste aus.
 
    1. Wählen Sie **[!UICONTROL Mehr...]** in der linken Leiste aus.
 
-   1. Suchen Sie im Bildschirm **Daten abrufen** nach `PostgresSQL` und wählen Sie die **[!UICONTROL ** PostgresSQL-Datenbank **]** aus der Liste aus.
+   1. Suchen Sie im Bildschirm **Daten abrufen** nach `PostgresSQL` und wählen Sie die **[!UICONTROL **&#x200B; PostgresSQL-Datenbank &#x200B;**]** aus der Liste aus.
 
-   1. Im Dialogfeld **[!UICONTROL ** PostgresSQL-Datenbank **]**:
+   1. Im Dialogfeld **[!UICONTROL **&#x200B; PostgresSQL-Datenbank &#x200B;**]**:
 
-      1. Fügen Sie den Parameter **[!UICONTROL ** Host **]** aus den [!UICONTROL Anmeldeinformationen] von Experience Platform-Abfragen in das Textfeld **[!UICONTROL ** Server **]** ein.
+      1. Fügen Sie den Parameter **[!UICONTROL ** Host **]** aus den [!UICONTROL Anmeldeinformationen] von Experience Platform-Abfragen in das Textfeld **[!UICONTROL **&#x200B; Server &#x200B;**]** ein.
 
-      1. Fügen Sie den Parameter **[!UICONTROL ** Datenbank **]** aus den [!UICONTROL Anmeldedaten] von Experience Platform-Abfragen in das Textfeld **[!UICONTROL ** Datenbank **]** ein.
+      1. Fügen Sie den Parameter **[!UICONTROL ** Datenbank **]** aus den [!UICONTROL Anmeldedaten] von Experience Platform-Abfragen in das Textfeld **[!UICONTROL **&#x200B; Datenbank &#x200B;**]** ein.
 
-         Fügen Sie `?FLATTEN` zum Parameter **[!UICONTROL ** Datenbank **]** hinzu, damit er sich beispielsweise liest wie `prod:cja?FLATTEN`. Weitere Informationen finden Sie unter [Reduzieren verschachtelter Datenstrukturen für die Verwendung mit BI-Tools von Drittanbietern](https://experienceleague.adobe.com/de/docs/experience-platform/query/key-concepts/flatten-nested-data).
+         Fügen Sie `?FLATTEN` zum Parameter **[!UICONTROL **&#x200B; Datenbank &#x200B;**]** hinzu, damit er sich beispielsweise liest wie `prod:cja?FLATTEN`. Weitere Informationen finden Sie unter [Reduzieren verschachtelter Datenstrukturen für die Verwendung mit BI-Tools von Drittanbietern](https://experienceleague.adobe.com/de/docs/experience-platform/query/key-concepts/flatten-nested-data).
 
       1. Wenn Sie zur Wahl des Modus **[!UICONTROL Datenkonnektivität]** aufgefordert werden, wählen Sie **[!UICONTROL DirectQuery]** aus.
 
       1. Sie werden aufgefordert, **[!UICONTROL Benutzername]** und **[!UICONTROL Passwort]** einzugeben. Verwenden Sie die entsprechenden Parameter aus den [!UICONTROL Anmeldeinformationen] von Experience Platform-Abfragen.
 
 
-   1. Nach erfolgreicher Anmeldung sehen Sie die Datenansichtstabellen von Customer Journey Analytics im **[!UICONTROL ** Navigator **]** von Power BI.
+   1. Nach erfolgreicher Anmeldung sehen Sie die Datenansichtstabellen von Customer Journey Analytics im **[!UICONTROL **&#x200B; Navigator &#x200B;**]** von Power BI.
 
-   1. Wählen Sie die Datenansichtstabellen aus, die Sie verwenden möchten, und wählen Sie dann **[!UICONTROL ** Laden **]** aus.
+   1. Wählen Sie die Datenansichtstabellen aus, die Sie verwenden möchten, und wählen Sie dann **[!UICONTROL **&#x200B; Laden &#x200B;**]** aus.
 
    Alle Dimensionen und Metriken, die mit einer oder mehreren ausgewählten Tabellen verknüpft sind, werden im rechten Bereich angezeigt und können in Ihren Visualisierungen verwendet werden.
 
@@ -178,9 +189,9 @@ Derzeit wird die [!DNL Customer Journey Analytics BI extension] für die unten a
 
 1. Suchen der Details Ihrer PostgresSQL-Anmeldedaten in Adobe Experience Platform:
 
-   1. Wählen Sie **[!UICONTROL ** Abfragen **]** aus der linken Leiste (unter **[!UICONTROL ** DATEN-MANAGEMENT **]**) aus.
+   1. Wählen Sie **[!UICONTROL ** Abfragen **]** aus der linken Leiste (unter **[!UICONTROL **&#x200B; DATEN-MANAGEMENT &#x200B;**]**) aus.
 
-   1. Wählen Sie **[!UICONTROL ** Anmeldeinformationen **]** aus der oberen Leiste aus.
+   1. Wählen Sie **[!UICONTROL **&#x200B; Anmeldeinformationen &#x200B;**]** aus der oberen Leiste aus.
 
    1. Wählen Sie die `cja` für Ihre Sandbox aus der Liste der Datenbanken im Dropdown **[!UICONTROL Menü]** Datenbank“ aus. Zum Beispiel `prod:cja`.
 
@@ -188,29 +199,29 @@ Derzeit wird die [!DNL Customer Journey Analytics BI extension] für die unten a
 
 1. In Tableau Desktop:
 
-   1. Wählen Sie **[!UICONTROL ** Mehr **]** aus **[!UICONTROL ** Zu einem Server **]** in der linken Leiste aus.
+   1. Wählen Sie **[!UICONTROL ** Mehr **]** aus **[!UICONTROL **&#x200B; Zu einem Server &#x200B;**]** in der linken Leiste aus.
 
-   1. Wählen Sie **[!UICONTROL ** PostgresSQL **]** aus der Liste aus.
+   1. Wählen Sie **[!UICONTROL **&#x200B; PostgresSQL &#x200B;**]** aus der Liste aus.
 
    1. Im Dialogfeld [!UICONTROL PostgresSQL]:
 
-      1. Fügen Sie den Parameter **[!UICONTROL ** Host **]** aus den [!UICONTROL Anmeldedaten] von Experience Platform-Abfragen in das Textfeld **[!UICONTROL ** Server **]** ein.
+      1. Fügen Sie den Parameter **[!UICONTROL ** Host **]** aus den [!UICONTROL Anmeldedaten] von Experience Platform-Abfragen in das Textfeld **[!UICONTROL **&#x200B; Server &#x200B;**]** ein.
 
-      1. Fügen Sie den Parameter **[!UICONTROL ** Port **]** aus den [!UICONTROL Anmeldedaten] von Experience Platform-Abfragen in das Textfeld **[!UICONTROL ** Port **]** ein.
+      1. Fügen Sie den Parameter **[!UICONTROL ** Port **]** aus den [!UICONTROL Anmeldedaten] von Experience Platform-Abfragen in das Textfeld **[!UICONTROL **&#x200B; Port &#x200B;**]** ein.
 
-      1. Fügen Sie den Parameter **[!UICONTROL ** Datenbank **]** aus den [!UICONTROL Anmeldedaten] von Experience Platform-Abfragen in das Textfeld **[!UICONTROL ** Datenbank **]** ein.
+      1. Fügen Sie den Parameter **[!UICONTROL ** Datenbank **]** aus den [!UICONTROL Anmeldedaten] von Experience Platform-Abfragen in das Textfeld **[!UICONTROL **&#x200B; Datenbank &#x200B;**]** ein.
 
-         Fügen Sie `%3FFLATTEN` zum Parameter **[!UICONTROL ** Datenbank **]** hinzu, damit er sich beispielsweise liest wie `prod:cja%3FFLATTEN`. Weitere Informationen finden Sie unter [Reduzieren verschachtelter Datenstrukturen für die Verwendung mit BI-Tools von Drittanbietern](https://experienceleague.adobe.com/de/docs/experience-platform/query/key-concepts/flatten-nested-data).
+         Fügen Sie `%3FFLATTEN` zum Parameter **[!UICONTROL **&#x200B; Datenbank &#x200B;**]** hinzu, damit er sich beispielsweise liest wie `prod:cja%3FFLATTEN`. Weitere Informationen finden Sie unter [Reduzieren verschachtelter Datenstrukturen für die Verwendung mit BI-Tools von Drittanbietern](https://experienceleague.adobe.com/de/docs/experience-platform/query/key-concepts/flatten-nested-data).
 
-      1. Wählen Sie **[!UICONTROL ** Benutzername und Passwort **]** aus der Liste **[!UICONTROL ** Authentifizierung **]** aus.
+      1. Wählen Sie **[!UICONTROL ** Benutzername und Passwort **]** aus der Liste **[!UICONTROL **&#x200B; Authentifizierung &#x200B;**]** aus.
 
-      1. Fügen Sie den Parameter **[!UICONTROL ** Benutzername **]** aus den [!UICONTROL Anmeldeinformationen] von Experience Platform-Abfragen in das Textfeld **[!UICONTROL ** Benutzername **]** ein.
+      1. Fügen Sie den Parameter **[!UICONTROL ** Benutzername **]** aus den [!UICONTROL Anmeldeinformationen] von Experience Platform-Abfragen in das Textfeld **[!UICONTROL **&#x200B; Benutzername &#x200B;**]** ein.
 
-      1. Fügen Sie den Parameter **[!UICONTROL ** Passwort **]** aus den [!UICONTROL Anmeldeinformationen] von Experience Platform-Abfragen in das Textfeld **[!UICONTROL ** Passwort **]** ein.
+      1. Fügen Sie den Parameter **[!UICONTROL ** Passwort **]** aus den [!UICONTROL Anmeldeinformationen] von Experience Platform-Abfragen in das Textfeld **[!UICONTROL **&#x200B; Passwort &#x200B;**]** ein.
 
-      1. Wählen Sie **[!UICONTROL ** Anmelden **]** aus.
+      1. Wählen Sie **[!UICONTROL **&#x200B; Anmelden &#x200B;**]** aus.
 
-   1. Datenansichten von Customer Journey Analytics werden als Tabellen in der Liste **[!UICONTROL ** Tabellen **]** angezeigt.
+   1. Datenansichten von Customer Journey Analytics werden als Tabellen in der Liste **[!UICONTROL **&#x200B; Tabellen &#x200B;**]** angezeigt.
 
    1. Ziehen Sie die Tabellen, die Sie verwenden möchten, auf die Arbeitsfläche.
 
@@ -224,9 +235,9 @@ Derzeit wird die [!DNL Customer Journey Analytics BI extension] für die unten a
 
 1. Suchen der Details Ihrer PostgresSQL-Anmeldedaten in Adobe Experience Platform:
 
-   1. Wählen Sie **[!UICONTROL ** Abfragen **]** aus der linken Leiste (unter **[!UICONTROL ** DATEN-MANAGEMENT **]**) aus.
+   1. Wählen Sie **[!UICONTROL ** Abfragen **]** aus der linken Leiste (unter **[!UICONTROL **&#x200B; DATEN-MANAGEMENT &#x200B;**]**) aus.
 
-   1. Wählen Sie **[!UICONTROL ** Anmeldeinformationen **]** aus der oberen Leiste aus.
+   1. Wählen Sie **[!UICONTROL **&#x200B; Anmeldeinformationen &#x200B;**]** aus der oberen Leiste aus.
 
    1. Wählen Sie die `cja` für Ihre Sandbox aus der Liste der Datenbanken im Dropdown **[!UICONTROL Menü]** Datenbank“ aus. Zum Beispiel `prod:cja`.
 
@@ -251,9 +262,9 @@ Derzeit wird die [!DNL Customer Journey Analytics BI extension] für die unten a
 
 1. Suchen der Details Ihrer PostgresSQL-Anmeldedaten in Adobe Experience Platform:
 
-   1. Wählen Sie **[!UICONTROL ** Abfragen **]** aus der linken Leiste (unter **[!UICONTROL ** DATEN-MANAGEMENT **]**) aus.
+   1. Wählen Sie **[!UICONTROL ** Abfragen **]** aus der linken Leiste (unter **[!UICONTROL **&#x200B; DATEN-MANAGEMENT &#x200B;**]**) aus.
 
-   1. Wählen Sie **[!UICONTROL ** Anmeldeinformationen **]** aus der oberen Leiste aus.
+   1. Wählen Sie **[!UICONTROL **&#x200B; Anmeldeinformationen &#x200B;**]** aus der oberen Leiste aus.
 
    1. Wählen Sie die `cja` für Ihre Sandbox aus der Liste der Datenbanken im Dropdown **[!UICONTROL Menü]** Datenbank“ aus. Zum Beispiel `prod:cja`.
 
@@ -275,9 +286,9 @@ Derzeit wird die [!DNL Customer Journey Analytics BI extension] für die unten a
 
 1. Suchen der Details Ihrer PostgresSQL-Anmeldedaten in Adobe Experience Platform:
 
-   1. Wählen Sie **[!UICONTROL ** Abfragen **]** aus der linken Leiste (unter **[!UICONTROL ** DATEN-MANAGEMENT **]**) aus.
+   1. Wählen Sie **[!UICONTROL ** Abfragen **]** aus der linken Leiste (unter **[!UICONTROL **&#x200B; DATEN-MANAGEMENT &#x200B;**]**) aus.
 
-   1. Wählen Sie **[!UICONTROL ** Anmeldeinformationen **]** aus der oberen Leiste aus.
+   1. Wählen Sie **[!UICONTROL **&#x200B; Anmeldeinformationen &#x200B;**]** aus der oberen Leiste aus.
 
    1. Wählen Sie die `cja` für Ihre Sandbox aus der Liste der Datenbanken im Dropdown **[!UICONTROL Menü]** Datenbank“ aus. Zum Beispiel `prod:cja`.
 
