@@ -36,7 +36,7 @@ ht-degree: 97%
 
 Die Analyse der ![Release](/help/assets/icons/Release.svg) **[!UICONTROL Auswirkungen der Version]** zeigt einen Vergleich der Leistung von Schlüsselindikatoren vor und nach einem bestimmten Datum. Die horizontale Achse dieses Berichts ist ein Zeitintervall, die vertikale Achse ein Maß für die gewünschten Schlüsselindikatoren. Ein vertikaler Balken in der Mitte des Diagramms stellt das Datum dar, mit dem Sie die Leistung davor und danach vergleichen möchten. Dieses Datum stellt in der Regel eine wesentliche Änderung am Produkt dar, für die Sie die Messung durchführen möchten, z. B. eine Aktualisierung des Produkts oder ein Kampagnen-Launch.
 
->[!VIDEO](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/guided-analysis/release-impact)
+>[!VIDEO](https://experienceleague.adobe.com/de/docs/customer-journey-analytics-learn/tutorials/guided-analysis/release-impact)
 
 ## Anwendungsfälle
 

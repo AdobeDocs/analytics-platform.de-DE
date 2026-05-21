@@ -138,7 +138,7 @@ Sie können Segmente erstellen, die rollierende Datumsbereiche enthalten. So kö
 
 >[!BEGINSHADEBOX]
 
-Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Rollierende Datumsbereiche in Segmenten](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/components/segmentation/rolling-date-ranges-in-segments){target="_blank"} finden Sie ein Demovideo.
+Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Rollierende Datumsbereiche in Segmenten](https://experienceleague.adobe.com/de/docs/analytics-learn/tutorials/components/segmentation/rolling-date-ranges-in-segments){target="_blank"} finden Sie ein Demovideo.
 
 >[!ENDSHADEBOX]
 

@@ -37,7 +37,7 @@ ht-degree: 97%
 Die Analyse ![FirstUse](/help/assets/icons/FirstUse.svg) **[!UICONTROL Wirkung der ersten Verwendung]** zeigt einen Vergleich der Leistung von Schlüsselindikatoren vor und nach der ersten Verwendung einer Produktfunktion durch eine Benutzerin bzw. einen Benutzer. Die horizontale Achse dieses Berichts ist ein relatives Zeitintervall vor und nach dem Ereignis und die vertikale Achse ein Maß für die gewünschten Schlüsselindikatoren. Ein vertikaler Balken in der Mitte des Diagramms stellt Tag 0 für den Fall dar, wenn eine Funktion zum ersten Mal von einer bestimmten Person verwendet wird. Da Benutzende Funktionen nicht immer am selben Tag übernehmen und Ihre Rollouts möglicherweise über mehrere Tage erfolgen, kann Tag 0 für jede Benutzerin und jeden Benutzer etwas Anderes bedeuten.
 
 
->[!VIDEO](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/guided-analysis/first-use-impact)
+>[!VIDEO](https://experienceleague.adobe.com/de/docs/customer-journey-analytics-learn/tutorials/guided-analysis/first-use-impact)
 
 
 ## Anwendungsfälle
