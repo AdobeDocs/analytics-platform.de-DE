@@ -20,10 +20,10 @@ topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
   - id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+source-git-commit: 19cf20236196ab9c2518bf299a36d32f65210227
 workflow-type: tm+mt
-source-wordcount: 2341
-ht-degree: 79%
+source-wordcount: 2373
+ht-degree: 71%
 
 ---
 
@@ -33,7 +33,9 @@ Im Folgenden finden Sie einige häufig gestellte Fragen zur Zuordnung:
 
 ## Kanalübergreifendes Verschieben
 
-+++ Wie kann ich die Zuordnung verwenden, um zu sehen, wie Personen von einem Kanal zum anderen wechseln?
+**Frage** Wie kann ich Stitching verwenden, um zu sehen, wie Personen von einem Kanal zum anderen wechseln?
+
++++Antwort
 
 Sie können eine Flussvisualisierung mit der Dimension „Datensatz-ID“ verwenden.
 
@@ -48,13 +50,17 @@ Wenn Sie die Datensatz-ID-Dimensionselemente umbenennen möchten, können Sie ei
 
 ## Wiederholung
 
-+++ Wie weit in der Vergangenheit werden Profile bei der Zuordnung wiederholt?
+**Frage**: Wie weit zurück wiederholt das Zusammenfügen von Profilen?
+
++++Antwort
 
 Das Lookback-Fenster für die Neuzuweisung hängt von der gewünschten Häufigkeit der Datenwiederholung ab. Wenn Sie beispielsweise die Zuordnung so einrichten, dass Daten einmal wöchentlich wiederholt werden, umfasst das Lookback-Fenster für die Neuzuweisung sieben Tage. Wenn Sie die Zuordnung so einrichten, dass Daten jeden Tag wiederholt werden, umfasst das Lookback-Fenster für die Neuzuweisung einen Tag.
 
 +++
 
-+++ Wann wird der Wiederholungsprozess genau ausgeführt?
+**Frage**: Wann wird der Wiederholungsprozess genau ausgeführt?
+
++++Antwort
 
 * Die **wöchentliche** Wiederholung beginnt jeweils **Samstag** abends (Zeitzone des Kunden) und die Daten werden in Customer Journey Analytics-Berichten bis Montagmorgen aktualisiert.
 * Die **tägliche** Wiederholung wird um **3** (Zeitzone des Kunden) ausgeführt und die Daten werden in Customer Journey Analytics-Berichten bis zum Morgen aktualisiert.
@@ -68,7 +74,9 @@ Das Lookback-Fenster für die Neuzuweisung hängt von der gewünschten Häufigke
 
 ## Gemeinsam verwendete Geräte
 
-+++ Wie werden freigegebene Geräte gehandhabt?
+**Frage**: Wie werden freigegebene Geräte gehandhabt?
+
++++Antwort
 
 In einigen Situationen ist es möglich, dass sich mehrere Personen von demselben Gerät aus anmelden. Beispiele dafür sind freigegebene Geräte zu Hause, freigegebene PCs in einer Bibliothek oder ein Terminal in einem Einzelhandelsgeschäft.
 
@@ -80,7 +88,9 @@ Weitere Informationen finden Sie im  Anwendungsbeispiel für [Gemeinsam verwende
 
 ## Viele persistente IDs
 
-+++ Wie behandelt die Zuordnung Situationen, in denen eine einzelne Person mehrere persistente IDs hat?
+**Frage**: Wie behandelt die Zuordnung Situationen, in denen eine einzelne Person viele persistente IDs hat?
+
++++Antwort
 
 In einigen Fällen kann eine einzelne benutzende Person mit mehreren beständigen IDs verknüpft sein. Ein Beispiel hierfür ist eine Person, die häufig die Cookies des Browsers löscht oder den Privat-/Inkognito-Modus des Browsers verwendet.
 
@@ -92,7 +102,9 @@ Bei der diagrammbasierten Zuordnung kann eine einzelne Person über viele bestä
 
 ## Zuordnungsvorgang
 
-+++ Wie lange dauert es, bis der neu zugewiesene Datensatz verfügbar ist, nachdem ich meinem Adobe-Accountteam die gewünschten Informationen mitgeteilt habe?
+**Frage**: Sobald ich mich mit den gewünschten Informationen an mein Adobe-Account-Team gewandt habe, wie lange dauert es, bis der neu verschlüsselte Datensatz verfügbar ist?
+
++++Antwort
 
 Die Live-Zuordnung ist etwa eine Woche nach Aktivierung der Zuordnung durch Adobe verfügbar. Die Verfügbarkeit der Aufstockung hängt von der Menge der vorhandenen Daten ab. Bei kleinen Datensätzen (weniger als 1 Million Ereignisse pro Tag) dauert es in der Regel einige Tage, während große Datensätze (1 Milliarde Ereignisse pro Tag) eine Woche oder länger benötigen können.
 
@@ -100,7 +112,9 @@ Die Live-Zuordnung ist etwa eine Woche nach Aktivierung der Zuordnung durch Adob
 
 ## Geräteübergreifende Analyse vs. kanalübergreifende Analyse
 
-+++ Was ist der Unterschied zwischen geräteübergreifender Analyse (eine Funktion im herkömmlichen Analytics) und kanalübergreifender Analyse?
+**Frage**: Was ist der Unterschied zwischen geräteübergreifender Analyse (eine Funktion im herkömmlichen Analytics) und kanalübergreifender Analyse?
+
++++Antwort
 
 [Geräteübergreifende Analyse](https://experienceleague.adobe.com/de/docs/analytics/components/cda/overview) ist eine Funktion, die speziell für das herkömmliche Adobe Analytics entwickelt wurde und Ihnen hilft, zu verstehen, wie Benutzende geräteübergreifend arbeiten. Sie bietet zwei Workflows zum Verknüpfen von Gerätedaten: die feldbasierte Zuordnung und das Gerätediagramm.
 
@@ -110,7 +124,9 @@ Kanalübergreifende Analyse ist eine Customer Journey Analytics-spezifische Funk
 
 ## Datenschutz
 
-+++ Wie handhabt die Zuordnung Datenschutzanfragen?
+**Frage**: Wie handhabt Stitching Datenschutzanfragen?
+
++++Antwort
 
 Adobe bearbeitet Datenschutzanfragen gemäß den lokalen und internationalen Gesetzen. Adobe bietet den [Adobe Experience Platform Privacy Service](https://experienceleague.adobe.com/de/docs/experience-platform/privacy/home) für Datenzugriffs- und Löschanfragen. Die Anfragen gelten sowohl für die ursprünglichen als auch die neu zugewiesenen Datensätze.
 
@@ -192,7 +208,9 @@ Wenn eine Datenschutzanfrage für eine Person mit CustID „Bob“ empfangen wir
 
 ## Leere Werte für persistente ID
 
-+++ Was passiert, wenn das Feld „Persistente ID“ in einem oder mehreren Ereignissen leer ist?
+**Frage**: Was passiert, wenn das Feld „Persistente ID“ in einem oder mehreren Ereignissen leer ist?
+
++++Antwort
 
 Wenn das Feld „Persistente ID“ bei einem Ereignis in einem zugeordneten Datensatz leer ist, wird die resultierende ID für dieses Ereignis auf eine dieser zwei Arten bestimmt:
 
@@ -204,7 +222,9 @@ Wenn das Feld „Persistente ID“ bei einem Ereignis in einem zugeordneten Date
 
 ## Nicht definierte Werte für Personen-ID
 
-+++ Was passiert, wenn das Feld „Personen-ID“ in einem oder mehreren Ereignissen Platzhalter wie `Undefined` enthält?
+**Frage**: Was passiert, wenn das Feld für die Personen-ID in einem oder mehreren Ereignissen Platzhalterwerte enthält, z. B. `Undefined`?
+
++++Antwort
 
 Seien Sie vorsichtig bezüglich „Personen-Kollaps“, der auftritt, wenn die Zuordnung auf Daten angewendet wird, die Platzhalterwerte für transiente IDs verwenden. In der folgenden Beispieltabelle werden undefinierte Personen-IDs, die aus einem Datensatz aus einem CRM-System stammen, mit dem Wert „Nicht definiert“ ausgefüllt, was zu einer falschen Darstellung von Personen führt.
 
@@ -226,7 +246,9 @@ Seien Sie vorsichtig bezüglich „Personen-Kollaps“, der auftritt, wenn die Z
 
 ## Vergleich von Metriken
 
-+++ Wie stellt sich ein Vergleich zwischen Metriken in zugeordneten Customer Journey Analytics-Datensätzen und ähnlichen Metriken in nicht zugeordneten Customer Journey Analytics-Datensätzen und mit Adobe Analytics dar?
+**Frage**: Wie lassen sich Metriken in zugeordneten Customer Journey Analytics-Datensätzen mit ähnlichen Metriken in nicht zugeordneten Customer Journey Analytics-Datensätzen und mit Adobe Analytics vergleichen?
+
++++Antwort
 
 Bestimmte Metriken in Customer Journey Analytics ähneln den Metriken im herkömmlichen Analytics. Andere unterscheiden sich jedoch davon, je nachdem, was Sie vergleichen. In der folgenden Tabelle werden verschiedene häufig verwendete Metriken verglichen:
 
@@ -242,7 +264,9 @@ Andere Metriken können in Customer Journey Analytics und Adobe Analytics ähnli
 
 ## Identitätszuordnung
 
-+++ Kann Customer Journey Analytics Identitätszuordnungsfelder verwenden?
+**Frage**: Kann Customer Journey Analytics Identity Map-Felder verwenden?
+
++++Antwort
 
 Ja, Customer Journey Analytics kann Identitätszuordnungsfelder sowohl für [&#x200B; (feldbasierte](/help/stitching/fbs.md#identitymap) als auch für [diagrammbasierte](/help/stitching/gbs.md#identitymap) Zuordnung verwenden.
 
@@ -250,7 +274,9 @@ Ja, Customer Journey Analytics kann Identitätszuordnungsfelder sowohl für [&#x
 
 ## Wechseln zur diagrammbasierten Zuordnung
 
-+++ Müssen Daten erneut aufgenommen werden, wenn ich von feldbasierter Zuordnung zu diagrammbasierter Zuordnung wechsle?
+**Frage**: Müssen Daten erneut aufgenommen werden, um von feldbasiertem Stitching zu diagrammbasiertem Stitching zu wechseln?
+
++++Antwort
 
 Daten müssen nicht erneut in Experience Platform aufgenommen werden. Daten müssen jedoch in Customer Journey Analytics neu konfiguriert werden. Gehen Sie wie folgt vor:
 
@@ -265,7 +291,9 @@ Daten müssen nicht erneut in Experience Platform aufgenommen werden. Daten müs
 
 ## Störungen in Berichten
 
-+++ Werden vorhandene Berichte in irgendeiner Weise beeinträchtigt?
+**Frage**: Würde es zu Störungen bei bestehenden Berichten kommen?
+
++++Antwort
 
 Nicht, wenn Sie die oben beschriebenen Schritte befolgen. Andernfalls wenden Sie sich bitte an Adobe Consulting, um weitere Unterstützung zu erhalten.
 
@@ -273,7 +301,9 @@ Nicht, wenn Sie die oben beschriebenen Schritte befolgen. Andernfalls wenden Sie
 
 ## Aktivieren eines Datensatzes für den Identity Service
 
-+++ Wie wird ein Datensatz nur für den Identity Service aktiviert? 
+**Frage**: Wie wird ein Datensatz nur für den Identity Service aktiviert?
+
++++Antwort
 
 Stellen Sie sicher, dass ein Datensatz für Identity Service aktiviert ist, um den Datensatz beim diagrammbasierten Stitching zu verwenden.
 
@@ -298,12 +328,14 @@ Solange Sie keine Lizenz für das Real-Time Customer Data-Profil  besitzen, gibt
 
 Weitere Informationen finden Sie unter [Erstellen eines Datensatzes, der für Profil und Identität aktiviert ist](https://experienceleague.adobe.com/de/docs/experience-platform/catalog/datasets/enable-for-profile#enable-the-dataset).
 
-+++ 
++++
 
 
 ## Zugeordnete Namespace-Werte
 
-+++ Warum stimmen zugeordnete Namespace-Werte nicht immer mit dem Identity-Namespace-Wert überein, den Sie möglicherweise in einem anderen Datensatz innerhalb der CJA-Verbindung verwenden?
+**Frage**: Warum stimmen die Werte für zugeordnete Namespaces nicht immer mit dem Identity-Namespace-Wert überein, den Sie möglicherweise in einem anderen Datensatz innerhalb der CJA-Verbindung verwenden?
+
++++Antwort
 
 Standardmäßig werden die Werte des zusammengefügten Namespace in Kleinbuchstaben geschrieben. `custEmail` wird also `custemail`. Wenn Sie keinen anderen Datensatz mit einem Identity-Namespace-Wert von `custEmail` haben, stimmen die beiden Werte nicht überein. Um dieses Verhalten im Reporting zu umgehen, können Sie die abgeleitete [lowercase() verwenden](/help/data-views/derived-fields/derived-fields.md#lowercase) um die Identitäts-Namespace-Werte abzugleichen.
 
