@@ -5,10 +5,24 @@ exl-id: b632475f-371e-4156-9ffc-b138325aa120
 feature: Adobe Product Analytics, Guided Analysis
 keywords: Produktanalysen
 role: User
-source-git-commit: 023808a13ba9e438b33b1183b92d3aa8ac339230
+TQID: https://experienceleague.adobe.com/Mq-IJRaA3-aplBEJe2XmorAD696XzmOj69YcpotF1dU
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2:
+  - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+  - id: cb6c7d24-631f-46e5-9e39-3a2705f73962
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2:
+  - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: '836'
-ht-degree: 92%
+source-wordcount: 861
+ht-degree: 91%
 
 ---
 
@@ -47,7 +61,7 @@ Mit der Abfrageleiste können Sie die folgenden Komponenten konfigurieren:
 
 * **[!UICONTROL Ansicht]**: Wechseln Sie zwischen dieser Analyse und der Analyse [Häufigkeit](frequency.md).
 * **[!UICONTROL Ereignisse und Metriken]**: Die Ereignisse oder Metriken, die gemessen werden sollen. Jede Auswahl wird als Diagrammreihe und Tabellenzeile dargestellt. Ereignisse und Metriken können nicht in der Abfrage kombiniert werden. Wenn Sie Ihre erste Auswahl getroffen haben, muss jede andere verbleibende Abfrageauswahl vom gleichen Typ sein. Sie können bis zu fünf Auswahlen einschließen.
-* **[!UICONTROL Zählt als]**: Die Zählmethode, die auf die ausgewählten Ereignisse angewendet werden soll. <ul><li>**[!UICONTROL Optionen]** umfassen [!UICONTROL Benutzer], [!UICONTROL Ereignisse], [!UICONTROL Sitzungen], [!UICONTROL Prozentsatz der Benutzer], [!UICONTROL Ereignisse pro Sitzung] und [!UICONTROL Ereignisse pro Benutzer].</li><li>[!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} Zusätzliche **[!UICONTROL B2B-Optionen]** sind für Customer Journey Analytics B2B edition verfügbar: [!UICONTROL Globale Konten], [!UICONTROL Konten], [!UICONTROL Einkaufsgruppen], [!UICONTROL Opportunities], [!UICONTROL Prozentsatz der globalen Konten], Prozentsatz der Käufe[!UICONTROL , &#x200B;]Prozentsatz der Käufe, [!UICONTROL Ereignisse pro globalem Konto]Events,Events proEvents proAccount[!UICONTROL Events pro Einkaufsgruppe]Events und [!UICONTROL Events proGelegenheit] SegmentEvents proGelegenheit.</li></ul>Die Optionen „Zählt als“ gelten nur für Ereignisabfragen und sind für Metrikabfragen nicht verfügbar.
+* **[!UICONTROL Zählt als]**: Die Zählmethode, die auf die ausgewählten Ereignisse angewendet werden soll. <ul><li>**[!UICONTROL Optionen]** umfassen [!UICONTROL Benutzer], [!UICONTROL Ereignisse], [!UICONTROL Sitzungen], [!UICONTROL Prozentsatz der Benutzer], [!UICONTROL Ereignisse pro Sitzung] und [!UICONTROL Ereignisse pro Benutzer].</li><li>[!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} Zusätzliche **[!UICONTROL B2B-Optionen]** sind für Customer Journey Analytics B2B edition verfügbar: [!UICONTROL Globale Konten], [!UICONTROL Konten], [!UICONTROL Einkaufsgruppen], [!UICONTROL Opportunities], [!UICONTROL Prozentsatz der globalen Konten], [!UICONTROL Prozentsatz der Käufe], [!UICONTROL Prozentsatz der Käufe], [!UICONTROL Ereignisse pro globalem Konto]Events,Events proEvents proAccount[!UICONTROL Events pro Einkaufsgruppe]Events und [!UICONTROL Events proGelegenheit] SegmentEvents proGelegenheit.</li></ul>Die Optionen „Zählt als“ gelten nur für Ereignisabfragen und sind für Metrikabfragen nicht verfügbar.
 * **[!UICONTROL Segmente]**: Die Segmente, die Sie messen möchten. Jedes ausgewählte Segment verdoppelt die Anzahl der Diagrammreihen und Tabellenzeilen. Sie können bis zu fünf Segmente einschließen.
 * **[!UICONTROL Aufschlüsselungseigenschaft]**: Hierdurch werden die Diagrammreihen und Tabellenzeilen nach den Werten der ausgewählten Eigenschaft aufgeschlüsselt. Es wird nur eine Aufschlüsselungseigenschaft unterstützt. Die 20 wichtigsten Werte werden in der Tabelle angezeigt und bis zu zehn Werte im Diagramm. Sie können eine Zeile im Diagramm ein- oder ausblenden, indem Sie das Symbol ![Symbol „Ein-/Ausblenden“](../assets/hide-in-chart.png) umschalten.
 

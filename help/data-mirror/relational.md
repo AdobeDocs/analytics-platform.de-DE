@@ -6,10 +6,25 @@ feature: Basics
 role: Admin
 badgePremium: label="Beta"
 exl-id: 17f72954-085c-46a8-bc28-6af0a4eb159a
-source-git-commit: cd3baec708f1811a7cbc37dfe0a9c3af75eb97c3
+TQID: https://experienceleague.adobe.com/DhV4VNrG4WR1iQP9VqjvV16iEpfShbBir7N1JfeRbCM
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2:
+  - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+  - id: c38ed341-fab2-46df-9d72-88d8166edebb
+  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: '2351'
-ht-degree: 14%
+source-wordcount: 2356
+ht-degree: 15%
 
 ---
 
@@ -51,7 +66,7 @@ In [!DNL Google BigQuery] werden die folgenden Beispieldaten regelmäßig in ein
 
 +++ Details zu Beispielereignisdaten
 
-| timestamp | ID | pageName | PersonID | trackingCode | Bestellungen | Einnahmenbetrag |
+| timestamp | id | pageName | PersonID | trackingCode | Bestellungen | Einnahmenbetrag |
 | :---                      |  ---: | :---              | :---            | :---          |   ---: | :---           |
 | 2025-03-06T19:15:39+00:00 | 10001 | Startseite | person-1abc123 | abc123 |        |                |
 | 2025-03-06T19:15:39+00:00 | 10002 | Bestätigungsseite | person-1abc123 |               | 1 | 174,25 |
@@ -351,7 +366,7 @@ Gehen Sie folgendermaßen vor, um eine Datenansicht zu erstellen:
 
 4. Im Schritt **[!UICONTROL Komponenten]**:
 
-   1. Fügen Sie alle Schemafelder und/oder Standardkomponenten hinzu, die Sie in die Komponentenfelder **[!UICONTROL METRIKEN]** oder **[!UICONTROL DIMENSIONEN]** aufnehmen möchten. Stellen Sie sicher, dass Sie relevante Felder aus dem Datensatz hinzufügen, der die gespiegelten Daten enthält. Zugriff auf diese Felder:
+   1. Fügen Sie alle Schemafelder und/oder Standardkomponenten hinzu, die Sie in die Komponentenfelder **[!UICONTROL METRIKEN]** oder **[!UICONTROL DIMENSIONEN]** einbeziehen möchten. Stellen Sie sicher, dass Sie relevante Felder aus dem Datensatz hinzufügen, der die gespiegelten Daten enthält. Zugriff auf diese Felder:
 
       1. Wählen Sie **[!UICONTROL Ereignis-Datensätze]** aus.
       1. Wählen Sie **[!UICONTROL Ad-hoc- und relationale Felder]**.
@@ -387,11 +402,11 @@ Analysis Workspace ist ein flexibles Browser-Tool, mit dem Sie schnell Analysen 
 
 Gehen Sie folgendermaßen vor, um ein Projekt zu erstellen:
 
-1. Wählen Sie in der Customer Journey Analytics-Benutzeroberfläche im oberen **[!UICONTROL die Option]** Workspace.
+1. Wählen Sie in der Customer Journey Analytics-Benutzeroberfläche im oberen **die Option** Workspace.
 
 2. Wählen Sie **[!UICONTROL Projekte]** in der linken Navigation aus.
 
-3. Wählen Sie **[!UICONTROL Projekt erstellen]** aus. Im Popup:
+3. Wählen Sie **[!UICONTROL Projekt erstellen]** aus Im Popup:
 
 
    1. Wählen Sie **[!UICONTROL Leeres Workspace-Projekt]** aus.

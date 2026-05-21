@@ -4,10 +4,24 @@ title: Experimentier-Bedienfeld
 feature: Panels
 exl-id: e11169b4-2c73-4dd4-bca7-c26189d60631
 role: User
-source-git-commit: b013518d8f1782219dd2cf9e5b5a89b877e3b92d
+TQID: https://experienceleague.adobe.com/oXojotjMV8EEF3S31JyO4eFIn62iYH0zPHGO6ylhFR0
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2:
+  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+  - id: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
+source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: '2175'
-ht-degree: 97%
+source-wordcount: 2318
+ht-degree: 93%
 
 ---
 
@@ -26,7 +40,7 @@ ht-degree: 97%
 
 >[!BEGINSHADEBOX]
 
-_In diesem Artikel wird das Panel Experimentieren in_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics** beschrieben._<br/>_Unter [Panel Analytics for Target](https://experienceleague.adobe.com/de/docs/analytics/analyze/analysis-workspace/panels/a4t-panel) finden Sie Informationen zum Analysieren von Adobe Target-Aktivitäten und -Erlebnissen in_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics**._
+_In diesem Artikel wird das Experimentier-Bedienfeld in_![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**._<br/>_Siehe [Bedienfeld „Analytics for Target“](https://experienceleague.adobe.com/de/docs/analytics/analyze/analysis-workspace/panels/a4t-panel) für Informationen zur Analyse von Adobe Target-Aktivitäten und -Erlebnissen in_![&#x200B; AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics**._
 
 >[!ENDSHADEBOX]
 
@@ -146,7 +160,7 @@ Eine Konfidenzsequenz von 95 % enthält in 95 der 100 Experimente, die Sie ausge
 
 Mit Customer Journey Analytics können Analystinnen und Analysten eine beliebige Dimension als Experiment auswählen. Aber wie wird eine Analyse interpretiert, bei der die als Experiment gewählte Dimension nicht diejenige ist, für die die Personen randomisiert werden?
 
-Betrachten Sie beispielsweise eine Anzeige, die eine Person sieht. Es könnte für Sie interessant sein, die Änderung an einer Metrik zu messen (z. B. durchschnittlicher Umsatz), wenn Sie Personen *Anzeige B* anstelle von *Anzeige A* anzeigen. Die Kausalwirkung durch Anzeige B anstelle von Anzeige A ist für die Marketing-Entscheidung von zentraler Bedeutung. Dieser kausale Effekt kann als durchschnittlicher Umsatz über die gesamte Population gemessen werden, wenn Sie den Status quo von Anzeige A durch die alternative Strategie von Anzeige B ersetzt haben.
+Betrachten Sie beispielsweise eine Anzeige, die eine Person sieht. Es könnte für Sie interessant sein, die Änderung an einer Metrik zu messen (z. B. durchschnittlicher Umsatz), wenn Sie Personen *Anzeige B* anstelle von *Anzeige A* anzeigen. Die Kausalwirkung der Anzeige von AD B anstelle von AD A ist für die Entscheidung über das Inverkehrbringen von zentraler Bedeutung. Dieser kausale Effekt kann als durchschnittlicher Umsatz über die gesamte Population gemessen werden, wenn Sie den Status quo von Anzeige A durch die alternative Strategie von Anzeige B ersetzt haben.
 
 A/B-Tests sind in der Branche der Goldstandard für die objektive Messung der Auswirkungen solcher Interventionen. Der entscheidende Grund, aus dem ein A/B-Test zu einer kausalen Schätzung führt, liegt in der Randomisierung der Personen, die eine der möglichen Varianten erhalten sollen.
 

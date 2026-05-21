@@ -4,10 +4,21 @@ title: In der Anomalieerkennung verwendete statistische Verfahren
 feature: Anomaly Detection
 exl-id: 7165e7a1-a04f-450e-bffd-e329adac6903
 role: User
-source-git-commit: ce4a21b1a1e89f14316a92fbdce38281db61e666
+TQID: https://experienceleague.adobe.com/hYbiTS7DEatmCon2w0Y6QvGOAYZChPeW5nb6TCQE5AE
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+subfeature_v2:
+  - id: aff2ef09-fc60-4018-9197-e2befd623064
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: '799'
-ht-degree: 33%
+source-wordcount: 830
+ht-degree: 32%
 
 ---
 
@@ -17,7 +28,7 @@ Die Anomalieerkennung in Analysis Workspace setzt eine Reihe statistischer Verfa
 
 Je nach der im Bericht verwendeten Datumsgranularität werden 3 verschiedene statistische Verfahren eingesetzt – für stündliche, tägliche, wöchentliche/monatliche Anomalieerkennung. Die statistischen Verfahren werden nachfolgend beschrieben.
 
-## Anomalieerkennung für Granularität „Täglich“ 
+## Anomalieerkennung für Granularität „Täglich“
 
 Für Berichte mit täglicher Granularität berücksichtigt der Algorithmus verschiedene wichtige Faktoren, um Ergebnisse mit höchstmöglicher Genauigkeit bereitzustellen. Zunächst bestimmt der Algorithmus anhand der verfügbaren Daten, welche Modellart angewendet werden soll, und wählt dabei eine von zwei Klassen aus: ein zeitreihenbasiertes Modell oder ein Modell zur Erkennung von Ausreißern (funktionale Segmentierung genannt).
 
@@ -58,13 +69,13 @@ Beachten Sie im folgenden Beispiel die deutliche Verbesserung der Performance an
 
 ![Zwei Liniendiagramme, die Leistungsänderungen mit und ohne Feiertagsleistung zeigen.](assets/anomaly_statistics.png)
 
-## Anomalieerkennung für Granularität „Stündlich“ 
+## Anomalieerkennung für Granularität „Stündlich“
 
 Stündliche Daten basieren auf demselben Zeitreihen-Algorithmus wie der tägliche Granularitätsalgorithmus. Sie beruht jedoch stark auf zwei Trendmustern: dem 24-Stunden-Zyklus sowie dem Wochenende-/Wochentagszyklus. Um diese beiden saisonalen Effekte zu erfassen, erstellt der stündliche Algorithmus mithilfe des oben beschriebenen Ansatzes zwei separate Modelle für ein Wochenende und einen Wochentag.
 
 Die Schulungsfenster für stündliche Trends basieren auf einem 336-Stunden-Lookback-Fenster.
 
-## Anomalieerkennung für die Granularitäten „Wöchentlich“ und „Monatlich“ 
+## Anomalieerkennung für die Granularitäten „Wöchentlich“ und „Monatlich“
 
 Wöchentliche und monatliche Trends weisen nicht dieselben wöchentlichen oder täglichen Trends auf, die bei täglichen oder stündlichen Granularitäten gefunden werden, sodass ein solcher separater Algorithmus verwendet wird. Bei wöchentlichen und monatlichen Tests wird ein zweistufiger Ansatz zur Erkennung von Ausreißern als Generalized Extreme Studentized Deviate (GESD) Test bezeichnet. Dieser Test berücksichtigt die maximale Anzahl erwarteter Anomalien in Kombination mit dem angepassten Boxplot-Plot-Ansatz (eine nicht parametrische Methode zur Ausreißererkennung), um die maximale Anzahl von Ausreißern zu bestimmen. Die beiden Schritte sind:
 

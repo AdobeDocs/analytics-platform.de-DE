@@ -5,10 +5,24 @@ solution: Customer Journey Analytics
 feature: Use Cases
 exl-id: cb5a4f98-9869-4410-8df2-b2f2c1ee8c57
 role: Admin
-source-git-commit: a30b4286207eb72f7674bb4f6ba4cf0a1aecd280
+TQID: https://experienceleague.adobe.com/cyNvsdN-bSBY2VqCdxAZvWhyTx8--sOUMifbuYrZKTM
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2:
+  - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+  - id: cc092ab1-90ba-4bbc-b4c6-6249d87daf5c
+  - id: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: '1588'
-ht-degree: 11%
+source-wordcount: 1680
+ht-degree: 14%
 
 ---
 
@@ -39,7 +53,7 @@ Die Zwischenlösung umfasst die folgenden Schritte:
 1. [Reporting und Analyse (Customer Journey Analytics-Benutzeroberfläche)](#report-and-analyze).
 
 
-### Audiences auswählen
+### Zielgruppen auswählen
 
 Die Lösung beginnt mit der Identifizierung der Zielgruppen, die Sie in Customer Journey Analytics aufnehmen möchten.
 
@@ -330,7 +344,7 @@ In der Experience Platform-Benutzeroberfläche:
 
 1. Wählen Sie **[!UICONTROL Daten-Management]** > ![Schema](/help/assets/icons2/Schema.svg) **[!UICONTROL Schemas]** aus.
 1. Wählen Sie ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Schema erstellen]**. Wählen **[!UICONTROL Standard]** aus dem Dropdown-Menü aus.
-1. Wählen Sie **[!UICONTROL Dialogfeld]** Schema erstellen **[!UICONTROL die Option „Manuell]** aus und verwenden Sie **[!UICONTROL Auswählen]**, um fortzufahren.
+1. Wählen Sie **[!UICONTROL Dialogfeld**&#x200B;[!UICONTROL &#x200B; Schema erstellen &#x200B;]&#x200B;**die Option „Manuell]** aus und verwenden Sie **[!UICONTROL Auswählen]**, um fortzufahren.
 1. Gehen Sie im **[!UICONTROL Schema erstellen]** im Schritt **[!UICONTROL Klasse auswählen]** folgendermaßen vor:
    1. Wählen Sie **[!UICONTROL Individuelles Profil]** aus.
    1. Klicken Sie auf **[!UICONTROL Weiter]**.
@@ -385,7 +399,7 @@ In der Customer Journey Analytics-Benutzeroberfläche:
 
    ![Verbindung - Datensatz mit exportierten Zielgruppendaten](assets/connection-add-dataset.png)
 
-1. **[!UICONTROL Speichern]** der Verbindung.
+1. **[!UICONTROL Speichern]** Sie die Verbindung.
 
 +++
 
@@ -484,6 +498,6 @@ You can now report on `audienceMembershipId`, `audienceMembershipIdName` and `pe
 * Sie sollten diesen Prozess regelmäßig durchführen, damit die Zielgruppendaten in Customer Journey Analytics ständig aktualisiert werden.
 * Sie können mehrere Zielgruppen in eine Customer Journey Analytics-Verbindung importieren. Dies erhöht zwar die Komplexität des Prozesses, es ist jedoch möglich. Damit dies funktioniert, müssen Sie einige Änderungen am obigen Prozess vornehmen:
    1. Führen Sie diesen Prozess für jede gewünschte Zielgruppe in Ihrer Zielgruppensammlung innerhalb des Echtzeit-Kundenprofis aus.
-   1. Customer Journey Analytics unterstützt Arrays/Objekt-Arrays in Profildatensätzen. Es [&#x200B; sich, für die &#x200B;](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/complex-data/object-arrays.html?lang=de) oder `audienceMembershipId` ein `audienceMembershipIdName`Array von Objekten“ zu verwenden.
+   1. Customer Journey Analytics unterstützt Arrays/Objekt-Arrays in Profildatensätzen. Es [&#x200B; sich, für die `audienceMembershipId` oder `audienceMembershipIdName` ein &#x200B;](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/complex-data/object-arrays.html?lang=de)Array von Objekten“ zu verwenden.
    1. Erstellen Sie in Ihrer Datenansicht eine neue Dimension mithilfe der Teilzeichenfolgenumwandlung des `audienceMembershipId`-Felds, um die Zeichenfolge mit kommagetrennten Werten in ein Array zu konvertieren. HINWEIS: Derzeit besteht für das Array eine Beschränkung von 10 Werten.
    1. Jetzt können Sie in Customer Journey Analytics Workspace Berichte zu diesem neuen `audienceMembershipIds` erstellen.

@@ -4,10 +4,21 @@ title: Datumsvergleich
 feature: Calendar
 exl-id: 08113536-658f-486b-ac56-6c531240c3c2
 role: User
-source-git-commit: 5a9cb206076755d5b34a8ec9108ca88a9468bfe3
+TQID: https://experienceleague.adobe.com/LhPSvchJbDMPV-HmGSA2JaBZxoPQ7UyEKd7GMS-33UU
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2:
+  - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+  - id: cb6c7d24-631f-46e5-9e39-3a2705f73962
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: '757'
-ht-degree: 82%
+source-wordcount: 770
+ht-degree: 90%
 
 ---
 
@@ -17,14 +28,14 @@ Mit dem Datumsvergleich in Analysis Workspace können Sie eine beliebige Spalte 
 
 ## Zeiträume vergleichen
 
-Für Analysen wird Kontext benötigt, der oft durch einen vorherigen Zeitraum geliefert wird. Beispielsweise ist *Wie viel besser/schlechter geht es uns im Vergleich zu diesem Zeitpunkt letztes Jahr?* eine zentrale Frage, um Ihr Geschäft zu verstehen. Der Datumsvergleich enthält automatisch eine Spalte *Differenz*, die die prozentuale Veränderung im Vergleich zu einem bestimmten Zeitraum angibt.
+Für Analysen wird Kontext benötigt, der oft durch einen vorherigen Zeitraum geliefert wird. Zum Beispiel die Frage *Wie viel besser oder schlechter geht es Ihnen jetzt im Vergleich zu dieser Zeit im letzten Jahr?* ist grundlegend für das Verständnis Ihres Unternehmens. Der Datumsvergleich enthält automatisch eine Spalte *Differenz*, die die prozentuale Veränderung im Vergleich zu einem bestimmten Zeitraum angibt.
 
 1. Erstellen Sie eine [Freiformtabelle](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) mit beliebigen Dimensionen und Metriken, die Sie mit einem bestimmten Zeitraum vergleichen möchten.
-1. Legen Sie den Zeitraum auf dem Bedienfeld oder der Spalte fest, um den Vergleichszeitrahmen zu bestimmen und um festzulegen, ob es sich um einen rollierenden oder einen festen Zeitvergleich handelt.
+1. Legen Sie den Zeitraum im Panel oder in der Spalte fest, um den Vergleichszeitrahmen zu bestimmen und um anzugeben, ob es sich um einen rollierenden oder einen festen Zeitvergleich handelt.
 
-   Um einen rollierenden Zeitvergleich zu erstellen, legen Sie den Datumsbereich des Bedienfelds oder der Spalte auf einen rollierenden Datumsbereich fest (z. B. **[!UICONTROL Letzte 7 Tage]**, **[!UICONTROL Letzte 30]** usw.).
+   Zum Erstellen eines rollierenden Zeitvergleichs legen Sie für den Datumsbereich des Bedienfelds oder der Spalte einen rollierenden Datumsbereich fest (z. B. **[!UICONTROL Letzte 7 Tage]**, **[!UICONTROL Letzte 30 Tage]** usw.).
 
-   Um einen festen Zeitvergleich zu erstellen, legen Sie für den Datumsbereich des Bedienfelds oder der Spalte einen benutzerdefinierten Datumsbereich fest.
+   Zum Erstellen eines festen Zeitvergleichs legen Sie für den Datumsbereich des Panels oder der Spalte einen benutzerdefinierten Datumsbereich fest.
 
 1. Öffnen Sie das Kontextmenü für eine Tabellenzeile und wählen Sie **[!UICONTROL Zeiträume vergleichen]** aus.
 
@@ -34,7 +45,7 @@ Für Analysen wird Kontext benötigt, der oft durch einen vorherigen Zeitraum ge
    >
    >Diese Kontextmenüoption ist für Metrikzeilen, Datumsbereichzeilen und Zeitdimensionszeilen deaktiviert.
 
-1. Je nachdem, wie Sie den Datumsbereich der Tabelle festgelegt haben, stehen Ihnen die folgenden Vergleichsoptionen zur Verfügung:
+1. Abhängig davon, wie Sie den Datumsbereich der Tabelle festgelegt haben, stehen Ihnen die folgenden Vergleichsoptionen zur Verfügung:
 
    | Option | Beschreibung |
    |---|---|
@@ -54,17 +65,17 @@ Für Analysen wird Kontext benötigt, der oft durch einen vorherigen Zeitraum ge
 
 ## Hinzufügen einer Zeitraumspalte zum Vergleich
 
-Sie können jetzt allen Spalten in einer Tabelle Zeiträume hinzufügen. So können Sie einen Zeitraum hinzufügen, der von dem abweicht, auf den Ihr Kalender eingestellt ist. 
+Sie können jetzt allen Spalten in einer Tabelle Zeiträume hinzufügen. So können Sie einen Zeitraum hinzufügen, der von dem abweicht, auf den Ihr Kalender eingestellt ist.
 
 1. Klicken Sie mit der rechten Maustaste auf eine Spalte in der Tabelle und wählen Sie **[!UICONTROL Spalte für Zeitraum hinzufügen]** aus
 
    ![](assets/add-time-period-column.png)
 
-1. Je nachdem, wie Sie den Datumsbereich der Tabelle festgelegt haben, stehen Ihnen die folgenden Vergleichsoptionen zur Verfügung:
+1. Abhängig davon, wie Sie den Datumsbereich der Tabelle festgelegt haben, stehen Ihnen die folgenden Vergleichsoptionen zur Verfügung:
 
    | Option | Beschreibung |
    |---|---|
-   | **[!UICONTROL Vorherige *x* Wochen/Monate/Quartale/Jahre bis zu diesem Datumsbereich]** | Ermöglicht das Hinzufügen einer Spalte mit der Woche/dem Monat usw. unmittelbar vor diesem Datumsbereich. |
+   | **[!UICONTROL Vorherige *x* Wochen/Monate/Quartale/Jahre bis zu diesem Datumsbereich]** | Fügen Sie unmittelbar vor diesem Datumsbereich eine Spalte mit dem Wochentag/Monat usw. hinzu. |
    | **[!UICONTROL Diese *x* Wochen/Monate/Quartale/Jahre im letzten Jahr vor diesem Datumsbereich]** | Fügt denselben Datumsbereich des Vorjahres hinzu. |
    | **[!UICONTROL Benutzerdefinierter Datumsbereich vor diesem Datumsbereich]** | Ermöglicht die Erstellung eines benutzerdefinierten Datumsbereichs. |
 

@@ -6,9 +6,24 @@ solution: Customer Journey Analytics
 exl-id: dd273c71-fb5b-459f-b593-1aa5f3e897d2
 feature: Troubleshooting
 keywords: abfrage-Service;Abfrage-Service;SQL-Syntax
-source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
+TQID: https://experienceleague.adobe.com/WT2Phz0aaiJ0Jp403fr6byx9QkncKjvRJpxl9yxPKLE
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2:
+  - id: cb6c7d24-631f-46e5-9e39-3a2705f73962
+  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: '720'
+source-wordcount: 770
 ht-degree: 100%
 
 ---
@@ -17,7 +32,7 @@ ht-degree: 100%
 
 Wenn Ihr Unternehmen Customer Journey Analytics einsetzt, kann es bei den Daten zwischen Adobe Analytics und Customer Journey Analytics zu Unterschieden kommen. Diese Unterschiede sind normal und können aus verschiedenen Gründen auftreten. Customer Journey Analytics soll es Ihnen ermöglichen, Verbesserungen bezüglich einiger Einschränkungen bei Daten in Adobe Analytics vorzunehmen. Diese Flexibilität kann zu Unterschieden bei der Interpretation von Daten durch Customer Journey Analytics führen. In diesem Artikel erfahren Sie mehr über die möglichen Unterschiede beim Umgang mit Daten durch Customer Journey Analytics und Adobe Analytics.
 
-Auf dieser Seite wird davon ausgegangen, dass Sie Adobe Analytics-Daten mithilfe des [Analytics-Quell-Connectors](https://experienceleague.adobe.com/de/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics) in Adobe Experience Platform aufgenommen und dann eine [Verbindung](/help/connections/overview.md) und [Datenansicht](/help/data-views/data-views.md) in Customer Journey Analytics erstellt haben.
+Auf dieser Seite wird davon ausgegangen, dass Sie Adobe Analytics-Daten mithilfe des [Analytics-Quell-Connectors](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=de) in Adobe Experience Platform aufgenommen und dann eine [Verbindung](/help/connections/overview.md) und [Datenansicht](/help/data-views/data-views.md) in Customer Journey Analytics erstellt haben.
 
 ![Der Datenfluss von Adobe Analytics über den Daten-Connector zu Adobe Experience Platform und zu Customer Journey Analytics mithilfe von CJA-Verbindungen.](assets/compare.png)
 

@@ -5,10 +5,23 @@ exl-id: 6ecbae45-9add-4554-8d83-b06ad016fea9
 solution: Customer Journey Analytics
 feature: Data Views
 role: User
-source-git-commit: 0e9dc47b80db142801a94dcbf31470d99a610949
+TQID: https://experienceleague.adobe.com/qEgO-lqYk8ipVP99IBazrKAb7Jer-AN96-PY-f1KdPQ
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2:
+  - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: '1357'
-ht-degree: 29%
+source-wordcount: 1443
+ht-degree: 26%
 
 ---
 
@@ -35,7 +48,7 @@ Wenn Sie beispielsweise eine Datenansicht erstellen, können Sie eine Metrik [!U
 
 
 1. Ziehen Sie auf **[!UICONTROL Registerkarte]** den **[!UICONTROL Seitentitel]** in den Abschnitt **[!UICONTROL Metriken]** unter [!UICONTROL Enthaltene Komponenten].
-1. Markieren Sie die Metrik, die Sie gerade eingezogen haben, und benennen Sie sie in der `Orders`Komponenteneinstellungen **[!UICONTROL in]** um
+1. Markieren Sie die Metrik, die Sie gerade eingezogen haben, und benennen Sie sie in der **[!UICONTROL Komponenteneinstellungen]** in `Orders` um
 1. Öffnen Sie den **[!UICONTROL Werte einschließen/ausschließen]** und geben Sie Folgendes an:
    1. Aktivieren Sie **[!UICONTROL Einschließen/ausschließen-Werte festlegen]**.
    1. Wählen Sie **[!UICONTROL Wenn alle Kriterien erfüllt sind]** unter **[!UICONTROL Übereinstimmung]** aus.
@@ -75,12 +88,12 @@ Verwenden Sie beispielsweise die Ein-/Ausschlussfunktion in Datenansichten, um s
 
 1. Ziehen Sie auf der Registerkarte [Komponenten](https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-dataviews/create-dataview) der Datenansichten das Schema **[!UICONTROL Umsatz]** in den Bereich **[!UICONTROL Metriken]** unter [!UICONTROL Eingeschlossene Komponenten].
 1. Wählen Sie die Metrik aus und konfigurieren Sie rechts Folgendes:
-a. Wählen Sie unter **[!UICONTROL Format]** die Option **[!UICONTROL Währung]** aus.
-b. Wählen Sie unter **[!UICONTROL Währung]** die Option **[!UICONTROL USD]** aus.
+a. Wählen **[!UICONTROL unter &quot;]**&quot; die Option **[!UICONTROL Währung]** aus.
+b. Wählen **[!UICONTROL unter]** die Option **[!UICONTROL USD]** aus.
 c. Aktivieren Sie unter **[!UICONTROL Werte einschließen/ausschließen]** das Kontrollkästchen neben **[!UICONTROL Ein-/Ausschlusswerte festlegen]**.
-d. Wählen Sie unter **[!UICONTROL Match]** die Option **[!UICONTROL Wenn alle Kriterien erfüllt sind]**.
-e. Wählen Sie unter **[!UICONTROL Kriterien]** die Option **[!UICONTROL ist größer oder gleich]** aus.
-f. Geben Sie `50` als Wert an.
+d. Wählen **[!UICONTROL unter]** die Option **[!UICONTROL Wenn alle Kriterien erfüllt sind]** aus.
+E. Wählen **[!UICONTROL unter]** die Option **[!UICONTROL ist größer oder gleich]** aus.
+F. Geben Sie `50` als Wert an.
 
 Mit diesen neuen Einstellungen können Sie nur Umsätze mit höheren Werten anzeigen und alles unter 50 Dollar herausfiltern.
 

@@ -4,10 +4,26 @@ description: Aktuelle Versionshinweise zu Customer Journey Analytics vor der Ver
 feature: Release Notes
 hide: true
 exl-id: 61982e38-b43a-41b5-85e0-59ed374463a9
-source-git-commit: efa2cada4b26d71cce22c0d0e8662b6dd04f38f4
+TQID: https://experienceleague.adobe.com/V4jdf363mA1GmsYjZ7yv3MiAMc7sJ7U3s7kXeY47Uyo
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2:
+  - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+  - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+  - id: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
+  - id: f2ef16dc-055a-4bb7-baa5-7039653f3966
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: '519'
-ht-degree: 80%
+source-wordcount: 662
+ht-degree: 81%
 
 ---
 
@@ -17,7 +33,7 @@ ht-degree: 80%
 >
 >Dieses Dokument ist als **Vorschau** der Versionshinweise für den aktuellen Monat gedacht. Release-Elemente können sich ändern und in der endgültigen Version hinzugefügt oder entfernt werden.
 
-Diese Versionshinweise beziehen sich auf den Veröffentlichungszeitraum vom 2. Juni 2025 bis zum 15. Juli 2025. Adobe Customer Journey Analytics-Versionen basieren auf einem [Modell der kontinuierlichen Bereitstellung](releases.md) das einen besser skalierbaren, schrittweisen Ansatz für die Implementierung von Funktionen ermöglicht.
+Diese Versionshinweise beziehen sich auf den Veröffentlichungszeitraum vom 2. Juni 2025 bis zum 15. Juli 2025. Versionen von Adobe Customer Journey Analytics basieren auf einem [Modell der kontinuierlichen Bereitstellung](releases.md), das einen besser skalierbaren, schrittweisen Ansatz für die Implementierung von Funktionen ermöglicht.
 
 Versionshinweise zu Adobe Experience Platform und anderen Programmen finden Sie in der folgenden Dokumentation:
 

@@ -4,13 +4,27 @@ description: Erfahren Sie, wofür Segmente verwendet werden und wie Sie ein einf
 exl-id: 21183e98-6593-4b22-99c7-4a03231acfe9
 feature: Filters, Segments
 role: User
-source-git-commit: c209341400bf4e0c00719075f0fc82f81ca9dbb4
+TQID: https://experienceleague.adobe.com/omsyiimc8b3EsGvJYb0V-jHqOxUp-8S7fFQ8dXUGUxs
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2:
+  - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+  - id: bcaa1b08-8269-4ff3-a0c2-f599783b6107
+  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: '1474'
+source-wordcount: 1494
 ht-degree: 99%
 
 ---
-
 
 # Überblick über die Segmentierung
 
@@ -146,7 +160,7 @@ Sitzungs-Container enthalten Werte, die auf den Ereignissen pro Sitzung basieren
 - Beitragsmetriken
 - Linear zugeordnete Metriken
 
-Mit Datenansichten in Customer Journey Analytics können Sie festlegen, wie lange eine Sitzung dauert, aber auch, wann eine neue Sitzung erstellt werden soll. Sie können beispielsweise eine neue App-Sitzung basierend auf jedem App-Start einer Benutzerin oder eines Benutzers definieren. Weitere Informationen finden Sie unter [Sitzungseinstellungen](/help/data-views/session-settings.md). 
+Mit Datenansichten in Customer Journey Analytics können Sie festlegen, wie lange eine Sitzung dauert, aber auch, wann eine neue Sitzung erstellt werden soll. Sie können beispielsweise eine neue App-Sitzung basierend auf jedem App-Start einer Benutzerin oder eines Benutzers definieren. Weitere Informationen finden Sie unter [Sitzungseinstellungen](/help/data-views/session-settings.md).
 
 ### Ereignis-Container
 
@@ -206,8 +220,8 @@ Traditional Analytics comes with numerous out-of-the-box templates and calculate
 
 >[!MORELIKETHIS]
 >
->[Erstellen von Segmenten](seg-create.md)
->&#x200B;>[Segment Builder](seg-builder.md)
->&#x200B;>[Schnellsegmente](seg-quick.md)
->&#x200B;>[Sequenzielle Segmente](seg-sequential-build.md)
->&#x200B;>[Verwalten von Segmenten](seg-manage.md)
+>[Segmente erstellen](seg-create.md)
+>[Segment Builder](seg-builder.md)
+>[Schnellsegmente](seg-quick.md)
+>[Sequenzielle Segmente](seg-sequential-build.md)
+>[Verwalten von Segmenten](seg-manage.md)

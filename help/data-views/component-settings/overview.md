@@ -5,10 +5,28 @@ exl-id: 6300d289-d308-476e-aa4e-05cdae361bb2
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: 023808a13ba9e438b33b1183b92d3aa8ac339230
+TQID: https://experienceleague.adobe.com/Ozf-XAsirDMkZLIQCX4SLGD7SvKinu3O4fwJ4ifgSvQ
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+  - id: e75a4a9c-d354-4ca4-9b02-1afeca73fa5e
+subfeature_v2:
+  - id: ad333ea6-e90d-4c8f-8d61-9f8690784d6f
+  - id: ad5685a0-8296-4a0c-814c-658c10b4af12
+  - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+  - id: c38ed341-fab2-46df-9d72-88d8166edebb
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
+  - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
+source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: '3739'
-ht-degree: 56%
+source-wordcount: 3784
+ht-degree: 53%
 
 ---
 
@@ -157,7 +175,7 @@ Die folgenden Gruppen von Kontextbeschriftungen sind mit jeweils einer Liste spe
 |------|-------------|
 | Inhalts-ID | Inhalts-ID |
 | Inhaltsbesuchszeit | Besuchszeit für Inhalt. |
-| Episode | Folge. |
+| Folge | Folge. |
 | Ereignistyp | Ereignistyp. |
 | Besuchszeit für Medien | Mit Medien verbrachte Zeit. |
 | Staffel | Staffel. |
@@ -250,7 +268,7 @@ Die folgenden Gruppen von Kontextbeschriftungen sind mit jeweils einer Liste spe
 | Anwendungs-ID | Anwendungs-ID. |
 | Mobilnetzbetreiber | Mobilnetzbetreiber. |
 | Abstürze auf Mobilgeräten | Mobile stürzt ab. |
-| Mobilgerätename | Name des Mobilgeräts. |
+| Mobilgerätename | Mobilgerätname. |
 | Mobilgerätetyp | Mobilgerätetyp. |
 | Name der mobilen In-App-Nachricht | Name der Mobile-App-Nachricht. |
 | Installationen auf Mobilgeräten | Mobile Installationen. |
@@ -404,7 +422,7 @@ Die folgenden Gruppen von Kontextbeschriftungen sind mit jeweils einer Liste spe
 | Korrelations-ID | Korrelations-ID. |
 | Anzahl der Angebote (AJO) | Die Anzahl der im Vorschlag enthaltenen Angebotselemente. |
 | Bindungsschlüssel für Entscheidungselement | Eine zusammengesetzte Kennung, die die Element-ID mit der Experience Decisioning-Anfrage-ID kombiniert und so die Datenpersistenz über Interaktionen hinweg ermöglicht. |
-| Entscheidungsanbieter (AJO) | Der Anbieter, der die Entscheidung treffen soll. Diese Dimension wird verwendet, wenn mehrere Services Entscheidungen für dieselbe Platzierung oder Aktivität treffen können. |
+| Entscheidungsanbieter (AJO) | Der Anbieter, der gebeten wurde, die Entscheidung zu treffen. Diese Dimension wird verwendet, wenn mehrere Services Entscheidungen für dieselbe Platzierung oder Aktivität treffen können. |
 | Entscheidungsanbieter (persistiert) (AJO) | Der Entscheidungsanbieter mit aktivierter Persistenzbindung. |
 | Entscheidungsrichtlinien-ID (AJO) | Die ID der Entscheidungsrichtlinie, die bei der Entscheidung verwendet wird, wenn es darum geht, welche Elemente in diesen Vorschlag aufgenommen werden sollen. |
 | Deduplizierungsmetrik (AJO) | Dedup-Metrik. |
@@ -427,7 +445,7 @@ Die folgenden Gruppen von Kontextbeschriftungen sind mit jeweils einer Liste spe
 | Eingehende Abweisungen (AJO) | Gesamtzahl der verworfenen Nachrichten in allen eingehenden Kanälen |
 | Eingehende Impressionen (AJO) | Gesamtzahl der Impressionen in allen eingehenden Kanälen. |
 | Eingehende Sendungen (AJO) | Gesamtzahl der gesendeten Nachrichten über eingehende Kanäle |
-| Eingehend ausgelöst (AJO) | Der Vorschlag wurde zur Anzeige durch das Adobe SDK ausgewählt. Andere Faktoren können verhindern, dass er tatsächlich angezeigt wird. |
+| Eingehend ausgelöst (AJO) | Der Vorschlag wurde für die Anzeige in Adobe SDK ausgewählt. Andere Faktoren können die tatsächliche Anzeige verhindern. |
 | Ist für Sendezeit optimiert (AJO) | Ist die Nachrichtenausführung für SendTime optimiert? |
 | Ist Test-Journey | Ist das Ereignis Teil einer Test-Journey-Ausführung? |
 | Ist Testnachricht (AJO) | Wird die Nachricht als Testausführung gesendet? |
@@ -500,13 +518,13 @@ Die folgenden Gruppen von Kontextbeschriftungen sind mit jeweils einer Liste spe
 | SMS-Nachrichtentyp (AJO) | SMS-Provider, z. B. inbound, inboundReply oder send. |
 | SMS-Anbieter (AJO) | SMS-Anbieter wie Sinch oder Twilio. |
 | Spam-Beschwerde (AJO) | Gesamtzahl der Spam-Beschwerden. |
-| Strategiename (AJO) | Strategiename. Der Strategiename, aus dem das Element abgeleitet wurde. |
+| Strategiename (AJO) | Name der Strategie. Der Name der Strategie, von der das Element abgeleitet wurde. |
 | Strategiename (persistiert) (AJO) | Der Strategiename mit aktivierter Persistenzbindung. |
 | Hinzufügungen zur Abonnement-Liste (AJO) | Gesamtanzahl der zu einer Abonnement-Liste hinzugefügten Nachrichten. |
 | Abonnement-Listen-ID (AJO) | Eindeutige Kennung für Abonnement-Liste. |
 | Entfernungen von Abonnement-Listen (AJO) | Gesamtanzahl der Entfernungen aus einer Abonnement-Liste. |
 | Oberfläche (AJO) | Die Kanaloberfläche, auf der die Nachricht angezeigt wurde. |
-| An Zielgruppe gerichtet (veraltet) | Hier wird gezählt, wie oft ein Vorschlag an eine Person gerichtet wurde. Dies ist die Anzahl der Male, in denen ein Vorschlag für die Anzeige bei einer Person in Betracht gezogen wurde. |
+| An Zielgruppe gerichtet (veraltet) | Anzahl, wie oft ein Vorschlag an eine Person gesendet wurde. Dies ist die Häufigkeit, mit der ein Vorschlag zur Anzeige für eine Person in Betracht gezogen wurde. |
 | Name der Targeting-Regel (AJO) | Der Name der Targeting-Regel. |
 | Testereignis (AJO) | Testereignis. |
 | Zeit bis Start | Zeit bis zum Start. |

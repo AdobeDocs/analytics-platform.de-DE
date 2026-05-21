@@ -5,10 +5,31 @@ solution: Customer Journey Analytics
 feature: Administration
 role: Admin
 exl-id: f093ac54-7d31-449b-a441-a65856a1d535
-source-git-commit: 976170212fb9904a32db93368fbda5f143f4a462
+TQID: https://experienceleague.adobe.com/vNCqAk1-4e34AJrXqzHJgrTDtly-FZTqOGRISjkX5Q8
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+subfeature_v2:
+  - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+  - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+  - id: cc092ab1-90ba-4bbc-b4c6-6249d87daf5c
+  - id: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7
+  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+  - id: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
+  - id: ef46ac31-f951-48d6-bae5-51c52ab47fb8
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: '2281'
-ht-degree: 10%
+source-wordcount: 2441
+ht-degree: 12%
 
 ---
 
@@ -88,7 +109,7 @@ Einige der Funktionen und ihr zugehöriger Wert für das Limit hängen vom Custo
 | Häufigkeit der Zielgruppenaktualisierung | 4 | Vom System erzwungene Leitplanke | Die maximale Häufigkeit in Stunden, in [&#x200B; eine &#x200B;](../components/audiences/audiences-overview.md) aktualisiert werden kann. |
 | Lookback-Fenster zur Zielgruppenaktualisierung | 90 | Vom System erzwungene Leitplanke | Maximale Anzahl von Tagen für das Aktualisierungs-Lookback-Fenster |
 | Ablaufdatum der Zielgruppe aktualisieren | 13 | Vom System erzwungene Leitplanke | Die maximale Anzahl von Monaten, die die Zielgruppe ab dem Erstellungsdatum nicht mehr aktualisiert wird. Kunden können dies um weitere 13 Monate verlängern. |
-| Anzahl der aktualisierten Zielgruppen | 75 150 | Vom System erzwungene Leitplanke | Maximale Anzahl an Zielgruppen, die aktualisiert werden. Der Wert variiert je nach Customer Journey Analytics-Paket (siehe Produktbeschreibung). |
+| Anzahl der aktualisierten Zielgruppen | 75, 150 | Vom System erzwungene Leitplanke | Maximale Anzahl an Zielgruppen, die aktualisiert werden. Der Wert variiert je nach Customer Journey Analytics-Paket (siehe Produktbeschreibung). |
 
 {style="table-layout:auto"}
 
@@ -168,8 +189,8 @@ Siehe auch Experience Platform [Leitplanken für den Datensatzexport](https://ex
 
 | Name | Wert | Art von Limit | Beschreibung |
 |---|--:|---|---|
-| Zusammengefügte Datensätze | 5-50 | Vom System erzwungene Leitplanke | Maximale Anzahl an zugeordneten Datensätzen pro Kunde. Der Wert variiert je nach Customer Journey Analytics-Paket (siehe Produktbeschreibung). |
-| Aufstockungslänge | 6-25 | Vom System erzwungene Leitplanke | Maximale Anzahl von Monaten für die Aufstockung von Daten. Der Wert variiert je nach Customer Journey Analytics-Paket (siehe Produktbeschreibung). |
+| Zusammengefügte Datensätze | 5 - 50 | Vom System erzwungene Leitplanke | Maximale Anzahl an zugeordneten Datensätzen pro Kunde. Der Wert variiert je nach Customer Journey Analytics-Paket (siehe Produktbeschreibung). |
+| Aufstockungslänge | 6 - 25 | Vom System erzwungene Leitplanke | Maximale Anzahl von Monaten für die Aufstockung von Daten. Der Wert variiert je nach Customer Journey Analytics-Paket (siehe Produktbeschreibung). |
 | Lookback-Fenster/Wiederholungshäufigkeit | 1/1 - 30/7 | Vom System erzwungene Leitplanke | Maximales Lookback-Fenster in Tagen/Wiederholungshäufigkeit. Der Wert variiert je nach Customer Journey Analytics-Paket (siehe Produktbeschreibung). |
 
 {style="table-layout:auto"}
@@ -180,7 +201,7 @@ Siehe auch Experience Platform [Leitplanken für den Datensatzexport](https://ex
 | Name | Wert | Art von Limit | Beschreibung |
 |---|--:|---|---|
 | Zusammengefügte Datensätze | 15 - 50 | Vom System erzwungene Leitplanke | Maximale Anzahl an zugeordneten Datensätzen pro Kunde. Der Wert variiert je nach Customer Journey Analytics-Paket (siehe Produktbeschreibung). |
-| Aufstockungslänge | 6-25 | Vom System erzwungene Leitplanke | Maximale Anzahl von Monaten für die Aufstockung von Daten. Der Wert variiert je nach Customer Journey Analytics-Paket (siehe Produktbeschreibung). |
+| Aufstockungslänge | 6 - 25 | Vom System erzwungene Leitplanke | Maximale Anzahl von Monaten für die Aufstockung von Daten. Der Wert variiert je nach Customer Journey Analytics-Paket (siehe Produktbeschreibung). |
 | Lookback-Fenster/Wiederholungshäufigkeit | 1/1 - 30/7 | Vom System erzwungene Leitplanke | Maximales Lookback-Fenster in Tagen/Wiederholungshäufigkeit. Der Wert variiert je nach Customer Journey Analytics-Paket (siehe Produktbeschreibung). |
 
 

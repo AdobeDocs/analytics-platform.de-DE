@@ -2,16 +2,31 @@
 title: Übersicht über freigegebene Metriken und Dimensionen
 description: Verwenden Sie dieselbe Dimension oder Metrikreferenz für mehrere Datenansichten.
 exl-id: 998a9f9b-cfa7-4b97-b32b-d50e35d01b39
-source-git-commit: 1de8b8f40a7e1be0de0e6cbed5cc57ff834f2377
+TQID: https://experienceleague.adobe.com/5sjpTMocv3547Xqg4VD6C5Gp-cRzNmyHTI5iE6P-JGA
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2:
+  - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+  - id: bcaa1b08-8269-4ff3-a0c2-f599783b6107
+  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
+source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: '1282'
-ht-degree: 0%
+source-wordcount: 1292
+ht-degree: 3%
 
 ---
 
 # Übersicht über freigegebene Metriken und Dimensionen
 
-Freigegebene Metriken und Dimensionen bieten einen zentralen Speicherort zum Verwalten von Dimensionen und Metriken, die in einer beliebigen Anzahl von Datenansichten verwendet werden können. Diese Komponenten sind besonders für Organisationen nützlich, die mehrere Datenansichten verwenden, insbesondere wenn diese Datenansichten gemeinsame Komponenteneinstellungen haben. Änderungen an freigegebenen Metriken und Dimensionen werden sofort auf alle Datenansichten angewendet, für die sie freigegeben sind. Beim Bearbeiten einer einzelnen Datenansicht können freigegebene Dimensionen und Metriken durch ein Symbol ![Freigegebene Komponente](/help/assets/icons/CCLibrary.svg) neben dem Komponentennamen identifiziert werden.
+Freigegebene Metriken und Dimensionen bieten einen zentralen Speicherort zum Verwalten von Dimensionen und Metriken, die in einer beliebigen Anzahl von Datenansichten verwendet werden können. Diese Komponenten sind besonders für Organisationen nützlich, die mehrere Datenansichten nutzen, insbesondere wenn diese Datenansichten gemeinsame Komponenteneinstellungen aufweisen. Änderungen an freigegebenen Metriken und Dimensionen werden sofort auf alle Datenansichten angewendet, für die sie freigegeben sind. Beim Bearbeiten einer einzelnen Datenansicht können freigegebene Dimensionen und Metriken durch ein Symbol ![Freigegebene Komponente](/help/assets/icons/CCLibrary.svg) neben dem Komponentennamen identifiziert werden.
 
 Freigegebene Dimensionen und Metriken ermöglichen zwar die Verwendung gemeinsamer Komponenten in vielen Datenansichten, sie können jedoch nicht verbindungsübergreifend freigegeben werden.
 
@@ -53,7 +68,7 @@ Alle freigegebenen Dimensionen und Metriken werden unter den vier Übersichtskar
    * **[!UICONTROL Duplikate]**: Nur Komponenten anzeigen, die dieselbe Komponenten-ID wie eine andere Komponente haben. Diese Filter sind identisch mit dem Überprüfen von Komponenten über die Übersichtskarten.
 * **Suche**: Verwenden Sie das Symbol ![Suchen](../../assets/icons/Search.svg), um nach einer Komponente anhand des Namens zu suchen.
 * **[!UICONTROL Verbindung]**: Ein Dropdown-Menü, das die [Verbindung“ &#x200B;](/help/connections/overview.md). Freigegebene Dimensionen und Metriken sind immer spezifisch für eine einzelne Verbindung.
-* **[!UICONTROL Tabelle anpassen]**: Wählen Sie das Symbol ![Tabelle anpassen](/help/assets/icons/ColumnSetting.svg) aus, um Spalten in der Tabelle ein- oder auszublenden. Zu den verfügbaren Optionen gehören:
+* **[!UICONTROL Tabelle anpassen]**: Wählen Sie das Symbol ![Tabelle anpassen](/help/assets/icons/ColumnSetting.svg) aus, um Spalten in der Tabelle ein- oder auszublenden. Verfügbare Optionen sind:
    * **[!UICONTROL Feldname]**: Der Name der freigegebenen Dimension oder Metrik. Dieses Feld ist immer sichtbar.
    * **[!UICONTROL Typ]**: Gibt an, ob die Komponente eine Dimension oder eine Metrik ist. Dieses Feld ist immer sichtbar.
    * **[!UICONTROL Datensatztyp]**: Der Typ des Datensatzes. Die meisten Datensätze sind Ereignis-Datensätze.
