@@ -20,10 +20,10 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+source-git-commit: 7f8ab656c7dbf508b2a78fd2022592faf883c56e
 workflow-type: tm+mt
-source-wordcount: 694
-ht-degree: 98%
+source-wordcount: 685
+ht-degree: 100%
 
 ---
 
@@ -38,14 +38,9 @@ ht-degree: 98%
 
 <!-- markdownlint-enable MD034 -->
 
-Die ![ConversionFunnel](/help/assets/icons/ConversionFunnel.svg)**[!UICONTROL Trichteranalyse &#x200B;]**&#x200B;bietet eine visuelle Darstellung einer wichtigen Benutzer-Journey in Ihrem Produkt. Die horizontale Achse stellt jeden Schritt dar, den eine Person ausführen muss. Die vertikale Achse stellt den Prozentsatz der Benutzenden oder Sitzungen bei jedem Schritt dar. Alle Schritte müssen in einer bestimmten Reihenfolge ausgeführt werden, können jedoch jederzeit innerhalb des Reporting-Fensters erfolgen.
+Die ![ConversionFunnel](/help/assets/icons/ConversionFunnel.svg)**[!UICONTROL Trichteranalyse ]**bietet eine visuelle Darstellung einer wichtigen Benutzer-Journey in Ihrem Produkt. Die horizontale Achse stellt jeden Schritt dar, den eine Person ausführen muss. Die vertikale Achse stellt den Prozentsatz der Benutzenden oder Sitzungen bei jedem Schritt dar. Alle Schritte müssen in einer bestimmten Reihenfolge ausgeführt werden, können jedoch jederzeit innerhalb des Reporting-Fensters erfolgen.
 
->[!BEGINSHADEBOX]
-
-Siehe ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Funnel-Reibungsanalyse](https://video.tv.adobe.com/v/3431279/?captions=ger&quality=12&learn=onn){target="_blank"} für ein Demovideo.
-
->[!ENDSHADEBOX]
-
+>[!VIDEO](https://video.tv.adobe.com/v/3431279/?captions=ger&quality=12&learn=on)
 
 ## Anwendungsfälle
 

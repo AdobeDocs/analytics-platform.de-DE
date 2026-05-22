@@ -19,10 +19,10 @@ role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
 topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+source-git-commit: 7f8ab656c7dbf508b2a78fd2022592faf883c56e
 workflow-type: tm+mt
-source-wordcount: 1278
-ht-degree: 96%
+source-wordcount: 1266
+ht-degree: 97%
 
 ---
 
@@ -44,8 +44,7 @@ Die ![Retention](/help/assets/icons/Retention.svg) **[!UICONTROL Analyse der Kun
 
 Bei dieser Analyse stellt die X-Achse des Diagramms die Zeit seit dem ersten Startereignis einer Benutzerin oder eines Benutzers dar und die Y-Achse stellt den Prozentsatz der Benutzenden dar, die mit einem oder mehreren Rückkehrereignisse interagieren. Sie können sowohl die Bindung als auch die Abwanderung über verschiedene Zeiträume hinweg anzeigen. Die angezeigten Zeiträume können zudem über die Abfrageeinstellungen angepasst werden. Eine Tabelle unterhalb des Diagramms enthält aggregierte Daten mit der Option, einzelne Kohorten anzuzeigen, bei denen es sich um eine Gruppe von Personen handelt, deren Startereignis dasselbe Datum hat.
 
->[!VIDEO](https://experienceleague.adobe.com/de/docs/customer-journey-analytics-learn/tutorials/guided-analysis/retention)
-
+>[!VIDEO](https://video.tv.adobe.com/v/3435787/?captions=ger&quality=12&learn=on)
 
 ## Anwendungsfälle
 

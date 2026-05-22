@@ -16,10 +16,10 @@ subfeature_v2:
   - id: cb6c7d24-631f-46e5-9e39-3a2705f73962
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+source-git-commit: 7f8ab656c7dbf508b2a78fd2022592faf883c56e
 workflow-type: tm+mt
-source-wordcount: 766
-ht-degree: 98%
+source-wordcount: 758
+ht-degree: 100%
 
 ---
 
@@ -44,11 +44,7 @@ Funktionen, die oben in dieser Visualisierung dargestellt werden, zeigen, dass s
 * Funktionen unten links in der Matrix sind Ihre Funktion mit **geringer Wirkung**. Sie werden nicht weithin oder häufig verwendet.
 * Funktionen rechts unten in der Matrix sind Ihre **einmaligen** Funktionen. Sie werden weithin, aber nicht häufig verwendet.
 
->[!BEGINSHADEBOX]
-
-Siehe ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Interaktionsanalyse](https://video.tv.adobe.com/v/3447476?captions=ger){target="_blank"} für ein Demovideo.
-
->[!ENDSHADEBOX]
+>[!VIDEO](https://video.tv.adobe.com/v/3447476/?captions=ger&quality=12&learn=on)
 
 ## Anwendungsfälle
 
