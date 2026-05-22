@@ -20,9 +20,9 @@ role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+source-git-commit: de8f8e06f074fdcb0219ce7286785d870c2093b4
 workflow-type: tm+mt
-source-wordcount: 599
+source-wordcount: 589
 ht-degree: 22%
 
 ---
@@ -45,7 +45,9 @@ Der Warnhinweis-Manager verfügt über die folgenden Elemente der Benutzeroberfl
 
 ### Liste der Warnhinweise
 
-Die ➊ Warnhinweisliste zeigt alle Warnhinweise an, die Ihnen gehören, die Warnhinweise, die für alle Ihre Projekte gelten, und die Warnhinweise, die für Sie freigegeben wurden. Die Liste umfasst die folgenden Spalten:
+Die Warnhinweisliste zeigt ➊ die von Ihnen erstellten Warnhinweise an. Als Administrator sehen Sie alle Warnhinweise.
+
+Die Liste umfasst die folgenden Spalten:
 
 | Spalte | Beschreibung |
 |---|---|
@@ -54,7 +56,7 @@ Die ➊ Warnhinweisliste zeigt alle Warnhinweise an, die Ihnen gehören, die War
 | **[!UICONTROL Typ]** | Zeigt an, ob es sich bei dem Warnhinweis um einen Customer Journey Analytics-Datenwarnhinweis oder einen Warnhinweis zur Nutzung von Server-Aufrufen handelt. |
 | **[!UICONTROL Aktiviert]** | Gibt an, ob der Warnhinweis aktiviert oder deaktiviert ist. |
 | **[!UICONTROL Datenansicht]** | Die Datenansichten, für die dieser Warnhinweis gilt. |
-| **[!UICONTROL Inhabende]** | Der Besitzer des Warnhinweises. Wenn Sie kein Administrator sind, sehen Sie nur Warnhinweise, deren Inhaber Sie sind oder die für Sie freigegeben wurden. |
+| **[!UICONTROL Inhabende]** | Der Besitzer des Warnhinweises. Wenn Sie kein Administrator sind, sehen Sie nur Warnhinweise, deren Inhaber Sie sind. Ein Administrator kann alle Warnhinweise sehen. |
 | **[!UICONTROL Tags]** | Die Tags für diesen Warnhinweis. |
 | **[!UICONTROL Ablaufdatum]** | Datum und Uhrzeit, zu der der Warnhinweis ablaufen soll. |
 | **[!UICONTROL Änderungsdatum]** | Datum und Uhrzeit der letzten Änderung des Warnhinweises. |

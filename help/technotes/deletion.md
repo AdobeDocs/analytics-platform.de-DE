@@ -22,9 +22,9 @@ subfeature_v2:
   - id: ef46ac31-f951-48d6-bae5-51c52ab47fb8
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+source-git-commit: de8f8e06f074fdcb0219ce7286785d870c2093b4
 workflow-type: tm+mt
-source-wordcount: 965
+source-wordcount: 997
 ht-degree: 9%
 
 ---
@@ -51,6 +51,7 @@ Beachten Sie die folgenden Auswirkungen, bevor Sie Datensätze oder Batches lös
 
 | Aktion | Implikationen |
 | --- | --- |
+| Löschen von einem oder mehreren Datensätzen aus einem Datensatz in [!UICONTROL Experience Platform] | Die Datensätze werden aus den Customer Journey Analytics-Verbindungen gelöscht, für die der Datensatz als Teil der Verbindungskonfiguration definiert ist. |
 | Datensatz in [!UICONTROL Experience Platform löschen] | Der Datenfluss aus diesem Datensatz in Experience Platform stoppt zu allen Verbindungen, die diesen Datensatz enthalten. Daten aus diesem Datensatz werden automatisch aus den zugehörigen Customer Journey Analytics-Verbindungen gelöscht. |
 | Löschen eines Batches aus einem Datensatz in [!UICONTROL Experience Platform] | Wenn ein Batch aus einem [!UICONTROL Adobe Experience Platform]-Datensatz gelöscht wird, wird derselbe Batch aus allen [!UICONTROL Customer Journey Analytics]-Verbindungen entfernt, die diesen spezifischen Batch enthalten. [!UICONTROL Customer Journey Analytics] wird über Batches benachrichtigt, die in [!UICONTROL Adobe Experience Platform] gelöscht wurden. |
 | Löschen eines Batches aus [!UICONTROL Experience Platform] **während er aufgenommen wird** in [!UICONTROL Customer Journey Analytics] | Wenn nur ein Batch im Datensatz vorhanden ist, erscheinen keine Daten oder Teildaten aus diesem Batch in [!UICONTROL Customer Journey Analytics]. Die Aufnahme wird zurückgesetzt. Wenn sich beispielsweise im Datensatz fünf Batches befinden und drei von ihnen bereits aufgenommen wurden, als der vierte Batch gelöscht wurde, erscheinen Daten aus diesen drei Batches in [!UICONTROL Customer Journey Analytics]. |
