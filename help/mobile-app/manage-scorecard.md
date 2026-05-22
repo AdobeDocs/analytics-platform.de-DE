@@ -104,7 +104,7 @@ Sehen Sie sich das Video an, um mehr über das Erstellen von Daten-Storys in Mob
 
 >[!BEGINSHADEBOX]
 
-Siehe ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Daten-Storys für mobile Scorecard-Projekte](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/dashboards/create-a-mobile-scorecard){target="_blank"} für ein Demovideo.
+Siehe ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Daten-Storys für mobile Scorecard-Projekte](https://experienceleague.adobe.com/de/docs/customer-journey-analytics-learn/tutorials/dashboards/create-a-mobile-scorecard){target="_blank"} für ein Demovideo.
 
 >[!ENDSHADEBOX]
 
