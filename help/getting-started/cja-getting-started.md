@@ -6,11 +6,20 @@ solution: Customer Journey Analytics
 feature: Basics
 role: User
 TQID: https://experienceleague.adobe.com/qYz2G6gugkSMH-BITMExxjkheGHrYFvDTZbR66c-Rr0
-product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2: id: b1f5d324-a668-4e51-a59b-6fc0862d7310id: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2:
+  - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+  - id: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7
+  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
 source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
 source-wordcount: 837
@@ -41,7 +50,7 @@ Customer Journey Analytics ist für Kunden verfügbar, die
 | **Schritt 6: Konto für Daten-Feeds- und Data Warehouse-Anwendungsfälle**</br> Gilt nur bei der Migration von Adobe Analytics | Entscheiden Sie, wie Sie die in Customer Journey Analytics verfügbaren Exportoptionen nutzen, um die in Adobe Analytics verwendeten Daten-Feeds- und Data-Warehouse-Funktionen bestmöglich zu replizieren. <!-- link to docs Rob is creating --> |
 | **Schritt 7: Migrieren von Projekten und Komponenten**</br> Gilt nur bei der Migration von Adobe Analytics | Der Bereich Komponentenmigration in Adobe Analytics ermöglicht die Migration von Projekten und den zugehörigen Komponenten von Adobe Analytics zu Customer Journey Analytics.<p>Der Migrationsvorgang umfasst:</p><ul><li>Neuerstellung von Adobe Analytics-Projekten in Customer Journey Analytics.</li><li>Zuordnung von Dimensionen und Metriken aus Adobe Analytics-Report Suites zu Dimensionen und Metriken in Customer Journey Analytics-Datenansichten.</li></ul><p>Bevor Sie mit der Migration beginnen, sollten Sie zunächst die [Migration von Komponenten und Projekten von Adobe Analytics zu Customer Journey Analytics](https://experienceleague.adobe.com/de/docs/analytics/admin/admin-tools/component-migration/prepare-component-migration) vorbereiten.</p><p>Nachdem Sie alle notwendigen Vorbereitungen getroffen haben, können Sie [Komponenten und Projekte von Adobe Analytics zu Customer Journey Analytics migrieren](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/component-migration/component-migration.html?lang=de).</p> |
 | **Schritt 8: Planen des Onboardings für Benutzende** | Wie in Adobe Analytics ist auch in Customer Journey Analytics der Analysis Workspace das wichtigste Werkzeug für die Benutzenden. Es gibt jedoch einige wesentliche Unterschiede bei der Verwendung von Analysis Workspace in Customer Journey Analytics, die die Benutzenden kennen sollten.<p>Sie sollten Ihren Benutzenden ausreichend Zeit (3–6 Monate) geben, um sich mit den wichtigsten Unterschieden von Analysis Workspace in Customer Journey Analytics vertraut zu machen.</p><p>Informationen zu einigen der wichtigsten Unterschiede zwischen Adobe Analytics und Customer Journey Analytics finden Sie im [Benutzerhandbuch für Adobe Analytics-Benutzende](/help/getting-started/aa-to-cja-user.md).</p> |
-| **Schritt 9: Erstellen von Berichten über kanalübergreifende Daten im Arbeitsbereich** | Nachdem Sie Verbindungen und Datenansichten erstellt haben, nutzen Sie die leistungsstarken und flexiblen Funktionen von Analysis Workspace, um Ihre erfassten Daten zu analysieren.<br>Siehe [Durchführen grundlegender ](/help/analysis-workspace/perform-basic-analysis.md) und [Durchführen erweiterter ](/help/analysis-workspace/perform-adv-analysis.md). |
+| **Schritt 9: Erstellen von Berichten über kanalübergreifende Daten im Arbeitsbereich** | Nachdem Sie Verbindungen und Datenansichten erstellt haben, nutzen Sie die leistungsstarken und flexiblen Funktionen von Analysis Workspace, um Ihre erfassten Daten zu analysieren.<br>Siehe [Durchführen grundlegender &#x200B;](/help/analysis-workspace/perform-basic-analysis.md) und [Durchführen erweiterter &#x200B;](/help/analysis-workspace/perform-adv-analysis.md). |
 
 ## Schnellstartanleitungen
 
