@@ -6,10 +6,22 @@ solution: Customer Journey Analytics
 feature: Basics
 role: Admin
 TQID: https://experienceleague.adobe.com/95ZvIc4JM3aNY2zO6ypn-KmLrIdZ8DZga4vrOcl9Yzs
-product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4id: e75a4a9c-d354-4ca4-9b02-1afeca73fa5e
-subfeature_v2: id: ad5685a0-8296-4a0c-814c-658c10b4af12id: bc7a5a86-1a70-451f-985c-037b65f091d1id: cc092ab1-90ba-4bbc-b4c6-6249d87daf5cid: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7id: e44e560d-5e5c-4a5f-9a87-eb8adbb817afid: e4a0bad2-b448-47f1-9fa6-222ebdb3b5b0id: ef46ac31-f951-48d6-bae5-51c52ab47fb8
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+  - id: e75a4a9c-d354-4ca4-9b02-1afeca73fa5e
+subfeature_v2:
+  - id: ad5685a0-8296-4a0c-814c-658c10b4af12
+  - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+  - id: cc092ab1-90ba-4bbc-b4c6-6249d87daf5c
+  - id: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7
+  - id: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
+  - id: e4a0bad2-b448-47f1-9fa6-222ebdb3b5b0
+  - id: ef46ac31-f951-48d6-bae5-51c52ab47fb8
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 source-git-commit: de8f8e06f074fdcb0219ce7286785d870c2093b4
 workflow-type: tm+mt
 source-wordcount: 997
@@ -43,5 +55,5 @@ Beachten Sie die folgenden Auswirkungen, bevor Sie Datensätze oder Batches lös
 | Datensatz in [!UICONTROL Experience Platform löschen] | Der Datenfluss aus diesem Datensatz in Experience Platform stoppt zu allen Verbindungen, die diesen Datensatz enthalten. Daten aus diesem Datensatz werden automatisch aus den zugehörigen Customer Journey Analytics-Verbindungen gelöscht. |
 | Löschen eines Batches aus einem Datensatz in [!UICONTROL Experience Platform] | Wenn ein Batch aus einem [!UICONTROL Adobe Experience Platform]-Datensatz gelöscht wird, wird derselbe Batch aus allen [!UICONTROL Customer Journey Analytics]-Verbindungen entfernt, die diesen spezifischen Batch enthalten. [!UICONTROL Customer Journey Analytics] wird über Batches benachrichtigt, die in [!UICONTROL Adobe Experience Platform] gelöscht wurden. |
 | Löschen eines Batches aus [!UICONTROL Experience Platform] **während er aufgenommen wird** in [!UICONTROL Customer Journey Analytics] | Wenn nur ein Batch im Datensatz vorhanden ist, erscheinen keine Daten oder Teildaten aus diesem Batch in [!UICONTROL Customer Journey Analytics]. Die Aufnahme wird zurückgesetzt. Wenn sich beispielsweise im Datensatz fünf Batches befinden und drei von ihnen bereits aufgenommen wurden, als der vierte Batch gelöscht wurde, erscheinen Daten aus diesen drei Batches in [!UICONTROL Customer Journey Analytics]. |
-| Lookup-Datensätze in [!UICONTROL Experience Platform ] | Das Löschen von Datensätzen ist zwar für andere Quell-Connectoren möglich, das Löschen von [Analytics Classifications Source Connector](https://experienceleague.adobe.com/en/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/classifications)-Datensätzen wird jedoch nicht unterstützt. Wenn Sie einen solchen Datensatz versehentlich löschen, wenden Sie sich an die Kundenunterstützung. |
+| Lookup-Datensätze in [!UICONTROL Experience Platform &#x200B;] | Das Löschen von Datensätzen ist zwar für andere Quell-Connectoren möglich, das Löschen von [Analytics Classifications Source Connector](https://experienceleague.adobe.com/en/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/classifications)-Datensätzen wird jedoch nicht unterstützt. Wenn Sie einen solchen Datensatz versehentlich löschen, wenden Sie sich an die Kundenunterstützung. |
 | Löschen oder Zurücksetzen einer Sandbox in Experience Platform | Wenn Sie [eine Experience Platform-Sandbox löschen](https://experienceleague.adobe.com/en/docs/experience-platform/sandbox/ui/user-guide#delete-a-sandbox) werden alle Schemata, Datensätze, Batches, Richtlinien und mehr in dieser Sandbox ebenfalls gelöscht. Die Sandbox existiert nicht mehr sowie die Sandbox-Kennung und der Sandbox-Name.<br/>Wenn Sie [eine Experience Platform-Sandbox zurücksetzen](https://experienceleague.adobe.com/en/docs/experience-platform/sandbox/ui/user-guide#reset-a-sandbox) werden alle Schemata, Datensätze, Batches, Richtlinien und mehr in dieser Sandbox gelöscht. Während der Name und die Berechtigungen der Sandbox unberührt bleiben, wird die Sandbox-Kennung nach Abschluss des Zurücksetzens geändert.<br/><br/>Customer Journey Analytics verwendet die Sandbox-Kennung und den Sandbox-Namen, um einer Sandbox eine Verbindung zuzuordnen. Das Ergebnis: <ul><li>Verbindungen, die mit der gelöschten oder zurückgesetzten Sandbox verknüpft sind, werden gelöscht.</li><li>Datenansichten (und alle Komponentendefinitionen, z. B. abgeleitete Felder, in der Datenansicht), die auf den gelöschten Verbindungen basieren, werden gelöscht.</li><li>Komponenten, die sich auf die gelöschten Datenansichten stützen, werden gelöscht. Beispielsweise Segmente, berechnete Metriken, Anmerkungen, Warnhinweise, veröffentlichte Zielgruppen und Exporte.</li><li>Bedienfelder in Workspace-Projekten, die auf die gelöschten Datenansichten verweisen, werden unbrauchbar. In diesen Bereichen werden **[!UICONTROL Fehler mit unbekannter Datenansicht]** angezeigt. Entfernen Sie diese Bereiche oder verknüpfen Sie diese Bereiche nach Möglichkeit mit einer vorhandenen Datenansicht.</li><li>Sie sollten keine (historischen) Daten mehr aus der gelöschten Verbindung abfragen, die bereits in Customer Journey Analytics mit dem Abfrage-Service oder Tools, die auf der BI-Erweiterung basieren, verfügbar ist. Schließlich löscht der Adobe-Support oder das Engineering diese Daten aus Customer Journey Analytics.</li></ul>Da das Zurücksetzen oder Löschen einer Sandbox in Experience Platform erhebliche Auswirkungen hat, sollten Sie Folgendes berücksichtigen, bevor Sie eine Sandbox zurücksetzen oder löschen:<ul><li>Listen Sie Ihre Verbindungen auf, um zu verstehen, welche Verbindungen zu welchen Sandboxes gehören.</li><li>Listen Sie Datenansichten auf, um zu verstehen, welche Datenansichten mit welchen Verbindungen verknüpft sind.</li><li>Identifizieren Sie wichtige Workspace-Projekte und verstehen Sie, auf welche Datenansichten diese Projekte in ihren Bedienfeldern verweisen.</li><li>Ermitteln Sie Integrationen mit Tools, die die BI-Erweiterung verwenden, und verstehen Sie, auf welche Datenansichten diese Integrationen angewiesen sind.</li></ul> |
