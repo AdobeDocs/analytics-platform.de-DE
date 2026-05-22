@@ -41,7 +41,7 @@ Mit Verbindungen können Customer Journey Analytics-Produktadmins definieren, we
 
 >[!BEGINSHADEBOX]
 
-Siehe ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Verbinden mit Datenquellen](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/connections/connecting-customer-journey-analytics-to-data-sources-in-platform){target="_blank"} für ein Demovideo.
+Siehe ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Verbinden mit Datenquellen](https://experienceleague.adobe.com/de/docs/customer-journey-analytics-learn/tutorials/connections/connecting-customer-journey-analytics-to-data-sources-in-platform){target="_blank"} für ein Demovideo.
 
 >[!ENDSHADEBOX]
 
