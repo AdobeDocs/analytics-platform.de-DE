@@ -65,7 +65,7 @@ So erstellen Sie eine neue Vorlage, die von Personen in Ihrem Anmeldeunternehmen
    | **[!UICONTROL Journey Optimizer-Aktivität]** | Wählen Sie die Journey Optimizer-Aktivität aus, die mit dieser Vorlage verknüpft werden soll. <p>Lassen Sie dieses Feld leer, wenn diese Vorlage mit allen Aktivitäten des ausgewählten Aktivitätstyps verknüpft werden soll.</p><p>Dieses Feld wird nur angezeigt, wenn im Feld **[!UICONTROL Anwendungsfälle]** die Option **[!UICONTROL Journey Optimizer]** ausgewählt ist.</p> |
    | **[!UICONTROL Tags]** | Geben Sie alle Tags an, die Sie auf die Vorlage anwenden möchten. Die Benutzenden können die Liste der Vorlagen nach den von Ihnen hinzugefügten Tags filtern. |
 
-1. Wählen Sie [!UICONTROL **Als Vorlage speichern**] aus.
+1. Wählen Sie [!UICONTROL **Als Vorlage speichern**].
 
 Weitere Informationen dazu, wie Benutzerinnen und Benutzer ein Projekt basierend auf einer Vorlage erstellen können, finden Sie unter [Erstellen eines Projekts basierend auf einer Vorlage](/help/analysis-workspace/templates/use-templates.md#create-a-project-based-on-a-template) in [Verwenden von Vorlagen](/help/analysis-workspace/templates/use-templates.md).
 
