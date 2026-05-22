@@ -6,11 +6,16 @@ exl-id: 6cfb5161-08e1-4583-ae79-4600b5531929
 feature: Curate and Share
 role: User
 TQID: https://experienceleague.adobe.com/JAaRhcC3q49W00TRNo5yQ3HQU9dHrSJ7j5Uhll0fT3U
-product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656
-subfeature_v2: id: c38ed341-fab2-46df-9d72-88d8166edebb
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2: id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+subfeature_v2:
+  - id: c38ed341-fab2-46df-9d72-88d8166edebb
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2:
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
 source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
 source-wordcount: 357
@@ -51,5 +56,5 @@ Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Link innerhalb
 
 ## Verwenden von Links in einem Inhaltsverzeichnis {#TOC}
 
-Ein Tipp für die Nutzung der verschiedenen Link-Optionen besteht darin, [ Workspace-Projekt immer ](/help/analysis-workspace/build-workspace-project/project-table-of-contents.md) Inhaltsverzeichnis anzufügen. Im Inhaltsverzeichnis können Sie Links zu anderen relevanten Projekten, spezifischen Bedienfeldern und spezifischen Visualisierungen erstellen. Dies erleichtert dem Empfänger des Projekts die Navigation.
+Ein Tipp für die Nutzung der verschiedenen Link-Optionen besteht darin, [&#x200B; Workspace-Projekt immer &#x200B;](/help/analysis-workspace/build-workspace-project/project-table-of-contents.md) Inhaltsverzeichnis anzufügen. Im Inhaltsverzeichnis können Sie Links zu anderen relevanten Projekten, spezifischen Bedienfeldern und spezifischen Visualisierungen erstellen. Dies erleichtert dem Empfänger des Projekts die Navigation.
 
