@@ -19,7 +19,7 @@ role_v2:
 source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
 source-wordcount: 1395
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 
@@ -119,7 +119,7 @@ So bearbeiten Sie ein Konto:
 
 1. Wählen Sie in Customer Journey Analytics [!UICONTROL **Komponenten**] > [!UICONTROL **Exporte**] aus.
 
-1. Wählen Sie die [!UICONTROL **Speicherort-Konten**] aus.
+1. Wählen Sie die Registerkarte [!UICONTROL **Speicherort-Konten**] aus.
 
    ![Fenster „Exporte“ mit der Registerkarte „Standortkonten“](assets/account-add.png)
 
@@ -137,7 +137,7 @@ So zeigen Sie die mit einem Exportkonto verknüpften Schlüssel an:
 
 1. Wählen Sie in Customer Journey Analytics [!UICONTROL **Komponenten**] > [!UICONTROL **Exporte**] aus.
 
-1. Wählen Sie die [!UICONTROL **Speicherort-Konten**] aus.
+1. Wählen Sie die Registerkarte [!UICONTROL **Speicherort-Konten**] aus.
 
    ![Fenster „Exporte“ mit der Registerkarte „Standortkonten“](assets/account-add.png)
 
@@ -149,7 +149,7 @@ So zeigen Sie die mit einem Exportkonto verknüpften Schlüssel an:
 
 1. Wählen Sie in Customer Journey Analytics [!UICONTROL **Komponenten**] > [!UICONTROL **Exporte**] aus.
 
-1. Wählen Sie die [!UICONTROL **Speicherort-Konten**] aus.
+1. Wählen Sie die Registerkarte [!UICONTROL **Speicherort-Konten**] aus.
 
    ![Fenster „Exporte“ mit der Registerkarte „Standortkonten“](assets/account-add.png)
 
