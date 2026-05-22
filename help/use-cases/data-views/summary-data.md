@@ -6,11 +6,21 @@ feature: Use Cases
 role: Admin
 exl-id: 80139806-618a-46ff-b2c4-32d7bb85a526
 TQID: https://experienceleague.adobe.com/ST-1vL8gbeSqaYYHakxjYWcDOryNucEVHiONAQk7gU4
-product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2: id: b1f5d324-a668-4e51-a59b-6fc0862d7310id: cb6c7d24-631f-46e5-9e39-3a2705f73962id: df7fb1db-aa1b-4314-98ac-59dbfcc3044fid: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2:
+  - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+  - id: cb6c7d24-631f-46e5-9e39-3a2705f73962
+  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+  - id: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
 source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
 source-wordcount: 4858
@@ -489,7 +499,7 @@ Um sicherzustellen, dass Sie Berichte zu den richtigen Daten in Workspace erstel
          ![Trackingcode-Zusammenfassungsdaten](../assets/tracking-code-summary-data.png)
          1. Erweitern Sie ![ChevronDown](/help/assets/icons/ChevronDown.svg) **[!UICONTROL Summary Data Group]**.
          1. Aktivieren Sie **[!UICONTROL Gruppierung erstellen]**.
-         1. Wählen Sie **[!UICONTROL Kampagnenkennung]** aus dem Dropdown-Menü {2 ]**Dimension} aus.**[!UICONTROL  Dieser Schritt stellt sicher, dass Ereignisdaten und Zusammenfassungsdaten für das Reporting ordnungsgemäß kombiniert werden.
+         1. Wählen Sie **[!UICONTROL Kampagnenkennung]** aus dem Dropdown-Menü {2 **Dimension} aus.** Dieser Schritt stellt sicher, dass Ereignisdaten und Zusammenfassungsdaten für das Reporting ordnungsgemäß kombiniert werden.
          1. Sie können optional &quot;**[!UICONTROL in Berichten ausblenden“]**. [!UICONTROL In Berichten ausblenden] stellt sicher, dass die ausgewählte Dimension ([!UICONTROL Kampagnen-ID]) in Analysis Workspace und anderen Reporting-Tools von Customer Journey Analytics ausgeblendet ist. Wenn Sie diese Option aktiviert haben, können Sie die Option überprüfen:
             1. Wählen Sie die Dimension **[!UICONTROL Kampagnen]** ID) in der Liste **[!UICONTROL Dimensionen]** aus.
             1. Sie werden feststellen **[!UICONTROL dass „Komponente in Berichten ausblenden]** in **[!UICONTROL Komponenteneinstellungen]** jetzt automatisch aktiviert ist.
@@ -512,7 +522,7 @@ Um sicherzustellen, dass Sie Berichte zu den richtigen Daten in Workspace erstel
 
          1. Erweitern Sie ![ChevronDown](/help/assets/icons/ChevronDown.svg) **[!UICONTROL Summary Data Group]**.
          1. Aktivieren Sie **[!UICONTROL Gruppierung erstellen]**.
-         1. Wählen Sie **[!UICONTROL Kampagnenname (abgeleitetes Suchfeld)]** Dropdown-Menü {2 ]**Dimension} aus.**[!UICONTROL  Dadurch wird sichergestellt, dass der Kampagnenname (Lookup) aus dem Beispiel-Lookup-Datensatz sicher in Berichten verwendet werden kann (siehe [Workspace](#workspace)).
+         1. Wählen Sie **[!UICONTROL Kampagnenname (abgeleitetes Suchfeld)]** Dropdown-Menü {2 **Dimension} aus.** Dadurch wird sichergestellt, dass der Kampagnenname (Lookup) aus dem Beispiel-Lookup-Datensatz sicher in Berichten verwendet werden kann (siehe [Workspace](#workspace)).
 
       1. Wählen Sie die **[!UICONTROL Umsatz]** aus der Liste **[!UICONTROL Metriken]** aus. Im Bedienfeld Komponente :
 
@@ -582,7 +592,7 @@ Sie möchten die Berichtsfunktion für Zusammenfassungsdaten nutzen und Berichte
 
 Fügen Sie Ihre berechneten Metriken zu Ihrem Bericht hinzu.
 
-1. Ziehen Sie **[!UICONTROL Kosten pro]**![ Rechner](/help/assets/icons/Calculator.svg) aus **[!UICONTROL Metriken]** und legen Sie die Metrik ab, um sie als zusätzliche Spalte zur Freiformtabelle hinzuzufügen.
+1. Ziehen Sie **[!UICONTROL Kosten pro]**![&#x200B; Rechner](/help/assets/icons/Calculator.svg) aus **[!UICONTROL Metriken]** und legen Sie die Metrik ab, um sie als zusätzliche Spalte zur Freiformtabelle hinzuzufügen.
    1. Wählen Sie ![Einstellung](/help/assets/icons/Setting.svg) Spalteneinstellungen aus.
       1. Deaktivieren Sie **[!UICONTROL Prozent]**.
 1. Ziehen Sie **[!UICONTROL Rückgabe für Werbeausgaben]** ![Rechner](/help/assets/icons/Calculator.svg) aus **[!UICONTROL Metriken]** und legen Sie die Metrik ab, um sie als zusätzliche Spalte zur Freiformtabelle hinzuzufügen.
