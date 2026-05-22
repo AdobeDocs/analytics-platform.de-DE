@@ -47,7 +47,7 @@ Eine ![ConversionFunnel](/help/assets/icons/ConversionFunnel.svg) Visualisierung
 
 >[!BEGINSHADEBOX]
 
-Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Erstellen einer Visualisierung Fallout](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/analysis-workspace/analyzing-customer-journeys/fallout-visualization){target="_blank"} finden Sie ein Demovideo.
+Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Erstellen einer Visualisierung Fallout](https://experienceleague.adobe.com/de/docs/analytics-learn/tutorials/analysis-workspace/analyzing-customer-journeys/fallout-visualization){target="_blank"} finden Sie ein Demovideo.
 
 {{videoaa}}
 
