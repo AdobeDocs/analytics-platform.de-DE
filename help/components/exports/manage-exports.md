@@ -6,11 +6,17 @@ feature: Components
 exl-id: 0c21802a-c46f-41be-9356-d836c038b174
 role: User
 TQID: https://experienceleague.adobe.com/a63XlsGElfxDW1-EqB2l1iMdTtMlk7OaVBuLvS8QH7E
-product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2: id: ef46ac31-f951-48d6-bae5-51c52ab47fb8
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2:
+  - id: ef46ac31-f951-48d6-bae5-51c52ab47fb8
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2:
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
 source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
 source-wordcount: 1281
@@ -119,7 +125,7 @@ Sie können den Export manuell initiieren, entweder für einen geplanten Export 
 
 ## Markieren eines Exports
 
-Wenn Sie Tags auf einen Export anwenden, können Sie diese Tags in der Spalte [!UICONTROL Tags] auf der Seite [!UICONTROL Exporte] anzeigen. Weitere Informationen finden [ unter ](#configure-columns-on-the-exports-page)Konfigurieren von Spalten“.
+Wenn Sie Tags auf einen Export anwenden, können Sie diese Tags in der Spalte [!UICONTROL Tags] auf der Seite [!UICONTROL Exporte] anzeigen. Weitere Informationen finden [&#x200B; unter &#x200B;](#configure-columns-on-the-exports-page)Konfigurieren von Spalten“.
 
 1. Wählen Sie in Customer Journey Analytics [!UICONTROL **Komponenten**] > [!UICONTROL **Exporte**] aus.
 
@@ -152,7 +158,7 @@ Spaltenüberschrift auswählen, um die Exporte nach dieser Spalte zu sortieren. 
 
 1. Wählen Sie in Customer Journey Analytics [!UICONTROL **Komponenten**] > [!UICONTROL **Exporte**] aus.
 
-1. Wählen Sie auf [!UICONTROL **Registerkarte**] das Symbol **Tabelle anpassen** (Tabelle ![) ](assets/customize-table-icon.png) oben rechts auf der Seite [!UICONTROL Exporte] aus.
+1. Wählen Sie auf [!UICONTROL **Registerkarte**] das Symbol **Tabelle anpassen** (Tabelle ![) &#x200B;](assets/customize-table-icon.png) oben rechts auf der Seite [!UICONTROL Exporte] aus.
 
    Die folgenden Spalten sind verfügbar:
 
@@ -162,7 +168,7 @@ Spaltenüberschrift auswählen, um die Exporte nach dieser Spalte zu sortieren. 
    | ID | Die ID, die dem Export bei seiner Erstellung automatisch zugewiesen wird. <!-- True? --> |
    | Name der Datenansicht | Der Name der dem Export zugeordneten Datenansicht. Benutzerinnen und Benutzer können die Datenansicht auswählen, wenn sie den Export erstellen, wie unter [Exportieren von Customer Journey Analytics-Berichten in die Cloud](/help/analysis-workspace/export/export-cloud.md) beschrieben. |
    | Status | Der Status des Exports Verfügbare Status sind [!UICONTROL Aktiv], [!UICONTROL Abgeschlossen] und [!UICONTROL Fehlgeschlagen].<p> **Hinweis:** Informationen zur Fehlerbehebung bei fehlgeschlagenen Exporten finden Sie unter [Fehlerbehebung bei fehlgeschlagenen Exporten](/help/components/exports/troubleshoot-exports.md).</p> |
-   | Tags | Zeigt alle Tags an, die auf den Export angewendet wurden. Informationen zum Anwenden von Tags auf einen Export finden Sie unter [Taggen eines ](#tag-an-export)). |
+   | Tags | Zeigt alle Tags an, die auf den Export angewendet wurden. Informationen zum Anwenden von Tags auf einen Export finden Sie unter [Taggen eines &#x200B;](#tag-an-export)). |
    | Tabellengröße (zuletzt gesendet) | Die Größe des Exports beim letzten Versand. |
    | Erstellt von | Der Benutzer, der den Export erstellt hat. |
    | Erstellt | Datum und Uhrzeit der Erstellung des Exports <!-- true? --> |
