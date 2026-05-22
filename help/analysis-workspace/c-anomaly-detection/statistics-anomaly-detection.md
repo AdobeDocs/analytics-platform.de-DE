@@ -5,16 +5,11 @@ feature: Anomaly Detection
 exl-id: 7165e7a1-a04f-450e-bffd-e329adac6903
 role: User
 TQID: https://experienceleague.adobe.com/hYbiTS7DEatmCon2w0Y6QvGOAYZChPeW5nb6TCQE5AE
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-subfeature_v2:
-  - id: aff2ef09-fc60-4018-9197-e2befd623064
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656
+subfeature_v2: id: aff2ef09-fc60-4018-9197-e2befd623064
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
 source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
 source-wordcount: 830
@@ -45,13 +40,13 @@ Der Algorithmus testet die Eignung jeder dieser Kombinationen, indem er die Komb
 Nach der Modellauswahl passt der Algorithmus die Ergebnisse dann an Feiertagen und der Saisonabhängigkeit von einem Jahr zum anderen an. Für Feiertage prüft der Algorithmus, ob einer der folgenden Feiertage im Datumsbereich des Berichts vorhanden ist:
 
 * Gedenktag
-* &#x200B;4. Juli
+* 4. Juli
 * Erntedankfest
 * Black Friday
 * Cyber Monday
 * &#x200B;24. bis 26. Dezember
-* &#x200B;1. Januar
-* &#x200B;31. Dezember
+* 1. Januar
+* 31. Dezember
 
 Diese Feiertage wurden anhand umfangreicher statistischer Analysen einer großen Anzahl von Datenpunkten ausgewählt, um die Feiertage zu ermitteln, die den größten Einfluss in den meisten Kunden-Trends gezeigt haben. Während die Liste sicherlich nicht für alle Kunden oder Geschäftszyklen vollständig ist, verbessert die Anwendung von Feiertagen die Leistung des Algorithmus insgesamt für fast alle Datensätze von Kunden erheblich.
 

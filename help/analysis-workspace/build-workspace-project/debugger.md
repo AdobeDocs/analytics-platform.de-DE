@@ -6,16 +6,10 @@ title: Projekt-Debugger
 role: User
 exl-id: 1335ec1f-5597-4e23-8228-3d477534de43
 TQID: https://experienceleague.adobe.com/IJCJ64hNUdZu4PHlSu6-tBcjSFVF2QajpfnLp0wbrYQ
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2:
-  - id: a8b1c240-f315-46e3-b813-f545c4279dd1
-  - id: bc7a5a86-1a70-451f-985c-037b65f091d1
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: a8b1c240-f315-46e3-b813-f545c4279dd1id: bc7a5a86-1a70-451f-985c-037b65f091d1
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
 source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
 source-wordcount: 476
@@ -29,7 +23,7 @@ Der Projekt-Debugger unterstützt Sie und den Adobe-Support bei der Fehlerbehebu
 
 >[!NOTE]
 >
->Um den Debugger verwenden zu können, benötigen Sie **Bearbeiten** oder **Kopieren** [Zugriff auf das Projekt](https://experienceleague.adobe.com/de/docs/experience-cloud-kcs/kbarticles/ka-25744).
+>Um den Debugger verwenden zu können, benötigen Sie **Bearbeiten** oder **Kopieren** [Zugriff auf das Projekt](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-25744).
 >
 
 
@@ -43,7 +37,7 @@ Der Projekt-Debugger unterstützt Sie und den Adobe-Support bei der Fehlerbehebu
 So aktivieren Sie den Debugger:
 
 1. Wählen **[!UICONTROL Hilfe]** > **[!UICONTROL Debugger aktivieren]** aus dem Analysis Workspace-Projektmenü.
-1. Wählen **&#x200B;**&#x200B;im Dialogfeld **[!UICONTROL Debugger aktivieren]** die Option OK aus.
+1. Wählen **** im Dialogfeld **[!UICONTROL Debugger aktivieren]** die Option OK aus.
 1. Bestätigen Sie, wenn der Browser Sie auffordert, die Seite oder Site neu zu laden.
 
 
@@ -53,7 +47,7 @@ Wenn Sie den Debugger aktiviert haben, verfügen alle Visualisierungen in Ihrem 
 
 So verwenden Sie den Debugger für eine bestimmte Visualisierung:
 
-1. Wählen ![&#x200B; oben &#x200B;](/help/assets/icons/Bug.svg) der Visualisierung „Bug“ aus.
+1. Wählen ![ oben ](/help/assets/icons/Bug.svg) der Visualisierung „Bug“ aus.
 
    ![Debugger-Kontextmenü](assets/debugger-context-menu.png)
 
@@ -106,5 +100,5 @@ Wiederholen Sie die obigen Schritte für jede andere Visualisierung, die Sie beh
 Deaktivieren des Debuggers:
 
 1. Wählen **[!UICONTROL Hilfe]** > **[!UICONTROL Debugger deaktivieren]** aus dem Analysis Workspace-Projektmenü aus.
-1. Wählen **&#x200B;**&#x200B;im Dialogfeld **[!UICONTROL Debugger deaktivieren]** die Option OK aus.
+1. Wählen **** im Dialogfeld **[!UICONTROL Debugger deaktivieren]** die Option OK aus.
 1. Bestätigen Sie, wenn der Browser Sie auffordert, die Seite oder Site neu zu laden.
