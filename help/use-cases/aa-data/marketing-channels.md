@@ -6,11 +6,18 @@ solution: Customer Journey Analytics
 feature: Use Cases
 role: User
 TQID: https://experienceleague.adobe.com/ur8f2cMDdoncdUzZ8FDAUYbJZ-8JOyAKKZ5p5Go-OkM
-product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2: id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: d3cdead0-685a-4489-9250-4bb709942f66
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2:
+  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
 source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
 source-wordcount: 1089
@@ -30,7 +37,7 @@ Wenn Ihr Unternehmen den [Analytics-Quell-Connector](https://experienceleague.ad
 
 ## Voraussetzungen
 
-* Report Suite-Daten müssen bereits mit dem [Analytics-Quell-Connector“ in ](https://experienceleague.adobe.com/de/docs/experience-platform/sources/connectors/adobe-applications/analytics) Adobe Experience Platform importiert worden sein. Andere Datenquellen werden nicht unterstützt, da Marketing-Kanäle auf Verarbeitungsregeln in einer Analytics Report Suite angewiesen sind.
+* Report Suite-Daten müssen bereits mit dem [Analytics-Quell-Connector“ in &#x200B;](https://experienceleague.adobe.com/de/docs/experience-platform/sources/connectors/adobe-applications/analytics) Adobe Experience Platform importiert worden sein. Andere Datenquellen werden nicht unterstützt, da Marketing-Kanäle auf Verarbeitungsregeln in einer Analytics Report Suite angewiesen sind.
 * Verarbeitungsregeln für den Marketing-Kanal müssen bereits eingerichtet sein. Siehe [Verarbeitungsregeln für Marketing-Kanäle](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/marketing-channels/c-rules) im Adobe Analytics-Komponentenhandbuch.
 
 ## Marketing-Kanal: Schema-Elemente
@@ -58,7 +65,7 @@ Die Dimensionen Ihres Marketing-Kanals stehen jetzt in Analysis Workspace zur Ve
 
 >[!NOTE]
 >
->Um die Effektivität von Marketing-Kanälen für Attribution und Customer Journey Analytics zu maximieren, [ einige ](https://experienceleague.adobe.com/de/docs/analytics/components/marketing-channels/mchannel-best-practices) überarbeitete Best Practices zur Verfügung.
+>Um die Effektivität von Marketing-Kanälen für Attribution und Customer Journey Analytics zu maximieren, [&#x200B; einige &#x200B;](https://experienceleague.adobe.com/de/docs/analytics/components/marketing-channels/mchannel-best-practices) überarbeitete Best Practices zur Verfügung.
 
 Die Marketing-Kanal-Einstellungen funktionieren bei Platform-Daten und Report Suite-Daten unterschiedlich. Beachten Sie die folgenden Unterschiede beim Einrichten von Marketing-Kanälen für Customer Journey Analytics:
 
