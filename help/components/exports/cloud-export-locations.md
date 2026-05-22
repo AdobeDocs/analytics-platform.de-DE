@@ -6,16 +6,10 @@ feature: Components
 exl-id: 93f1cca0-95da-41a0-a4f9-5ab620a5b9da
 role: User, Admin
 TQID: https://experienceleague.adobe.com/7Ajjn92O63TWPEgA5ddJZ7aOgm22T8C00lLZ-UcRFt4
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2:
-  - id: ef46ac31-f951-48d6-bae5-51c52ab47fb8
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: ef46ac31-f951-48d6-bae5-51c52ab47fb8
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
 source-wordcount: 3307
@@ -45,7 +39,7 @@ ht-degree: 25%
 
 Bevor Sie Customer Journey Analytics-Berichte in ein Cloud-Ziel exportieren können (entweder aus [Analysis Workspace](/help/analysis-workspace/export/export-cloud.md) oder aus [Report Builder](/help/report-builder/report-builder-export.md)), müssen Sie den Speicherort hinzufügen und konfigurieren, an den die Daten gesendet werden sollen. Dieser Prozess besteht aus:
 
-1. Hinzufügen und Konfigurieren des Kontos (z. B. Amazon S3, Google Cloud Platform usw.), wie unter [&#x200B; von Cloud-Exportkonten beschrieben](/help/components/exports/cloud-export-accounts.md)
+1. Hinzufügen und Konfigurieren des Kontos (z. B. Amazon S3, Google Cloud Platform usw.), wie unter [ von Cloud-Exportkonten beschrieben](/help/components/exports/cloud-export-accounts.md)
 
 1. Hinzufügen und Konfigurieren des Speicherorts in diesem Konto (z. B. eines Ordners innerhalb des Kontos), wie in diesem Artikel beschrieben.
 
@@ -65,7 +59,7 @@ Informationen zum Verwalten vorhandener Speicherorte, einschließlich Anzeigen, 
 
    Wählen Sie die Registerkarte [!UICONTROL **Standortkonten**], klicken Sie auf das Dreipunkt-Symbol in einem vorhandenen Konto, dem Sie einen Standort hinzufügen möchten, und klicken Sie dann auf [!UICONTROL **Standort hinzufügen**].
 
-   ![Dropdown-Menü GCP-Konto und Auslassungspunkte mit der Option Standort hinzufügen &#x200B;](assets/add-location-existing-account.png)
+   ![Dropdown-Menü GCP-Konto und Auslassungspunkte mit der Option Standort hinzufügen ](assets/add-location-existing-account.png)
 
    Das Dialogfeld Standort wird angezeigt.
 
@@ -114,15 +108,15 @@ Informationen zum Verwalten vorhandener Speicherorte, einschließlich Anzeigen, 
 
 1. Sie können jetzt Daten aus Analysis Workspace an das -Konto und den Speicherort exportieren, die Sie konfiguriert haben. Informationen zum Exportieren von Daten in die Cloud finden Sie unter [Exportieren von Projektdaten in die Cloud](/help/analysis-workspace/export/export-cloud.md).
 
-1. Die einfachste Möglichkeit, auf Ihre Daten in der AEP Data Landing Zone zuzugreifen, besteht in der Verwendung des Microsoft Azure Storage Explorers. Der Speicher-Explorer ist dasselbe Tool, das in den Anweisungen zum Konfigurieren des [AEP Data Landing Zone-Kontos verwendet &#x200B;](/help/components/exports/cloud-export-accounts.md#aep-data-landing-zone).
+1. Die einfachste Möglichkeit, auf Ihre Daten in der AEP Data Landing Zone zuzugreifen, besteht in der Verwendung des Microsoft Azure Storage Explorers. Der Speicher-Explorer ist dasselbe Tool, das in den Anweisungen zum Konfigurieren des [AEP Data Landing Zone-Kontos verwendet ](/help/components/exports/cloud-export-accounts.md#aep-data-landing-zone).
 
    1. Öffnen Sie den [Microsoft Azure Storage Explorer](https://azure.microsoft.com/en-us/products/storage/storage-explorer/).
 
-   1. Navigieren Sie [!UICONTROL **Speicherkonten**] > [!UICONTROL **(angehängte Container)**] > [!UICONTROL **Blob-Container**] > **[!UICONTROL cjaexport-_number_]**>*** your_container_name &#x200B;***.
+   1. Navigieren Sie [!UICONTROL **Speicherkonten**] > [!UICONTROL **(angehängte Container)**] > [!UICONTROL **Blob-Container**] > **[!UICONTROL cjaexport-_number_]**>*** your_container_name ***.
 
       >[!NOTE]
       >
-      >Der Ordnername **[!UICONTROL cjaexport-_number_]**&#x200B;ist der Standardname, der vom Azure Storage Explorer bereitgestellt wird. Wenn Ihrem SAS-URI nur eine einzige Verbindung zugeordnet ist (was normal ist), lautet der Name dieses Ordners **[!UICONTROL cjaexport-1]**.
+      >Der Ordnername **[!UICONTROL cjaexport-_number_]**ist der Standardname, der vom Azure Storage Explorer bereitgestellt wird. Wenn Ihrem SAS-URI nur eine einzige Verbindung zugeordnet ist (was normal ist), lautet der Name dieses Ordners **[!UICONTROL cjaexport-1]**.
 
 
       ![Zugriff auf Dateien im Azure-Speicher-Explorer](assets/azure-storage-explorer-access.png)
@@ -163,7 +157,7 @@ Informationen zum Verwalten vorhandener Speicherorte, einschließlich Anzeigen, 
 
    | Feld | Funktion |
    |---------|----------|
-   | [!UICONTROL **Bucket**] | Der Bucket in Ihrem GCP-Konto, an den Customer Journey Analytics-Daten gesendet werden sollen. <p>Stellen Sie sicher, dass Sie dem von Adobe bereitgestellten Prinzipal die `roles/storage.objectCreator`-Berechtigung erteilt haben. (Der Prinzipal wird beim Konfigurieren [&#x200B; Google Cloud Platform-Kontos &#x200B;](/help/components/exports/cloud-export-accounts.md).) <p>Informationen zum Gewähren von Berechtigungen finden Sie in der Google Cloud-Dokumentation unter [Hauptkonto zu einer Richtlinie auf Bucket-Ebene hinzufügen](https://cloud.google.com/storage/docs/access-control/using-iam-permissions#bucket-add).</p><p>Wenn Ihre Organisation [Organisationsrichtlinieneinschränkungen](https://cloud.google.com/storage/docs/org-policy-constraints) verwendet, um nur das Google Cloud Platform-Konto in Ihrer Zulassungsliste zuzulassen, benötigen Sie die folgende Adobe-eigene Organisations-ID für Google Cloud Platform: <ul><li>`DISPLAY_NAME`: `adobe.com`</li><li>`ID`: `178012854243`</li><li>`DIRECTORY_CUSTOMER_ID`: `C02jo8puj`</li></ul> </p> |
+   | [!UICONTROL **Bucket**] | Der Bucket in Ihrem GCP-Konto, an den Customer Journey Analytics-Daten gesendet werden sollen. <p>Stellen Sie sicher, dass Sie dem von Adobe bereitgestellten Prinzipal die `roles/storage.objectCreator`-Berechtigung erteilt haben. (Der Prinzipal wird beim Konfigurieren [ Google Cloud Platform-Kontos ](/help/components/exports/cloud-export-accounts.md).) <p>Informationen zum Gewähren von Berechtigungen finden Sie in der Google Cloud-Dokumentation unter [Hauptkonto zu einer Richtlinie auf Bucket-Ebene hinzufügen](https://cloud.google.com/storage/docs/access-control/using-iam-permissions#bucket-add).</p><p>Wenn Ihre Organisation [Organisationsrichtlinieneinschränkungen](https://cloud.google.com/storage/docs/org-policy-constraints) verwendet, um nur das Google Cloud Platform-Konto in Ihrer Zulassungsliste zuzulassen, benötigen Sie die folgende Adobe-eigene Organisations-ID für Google Cloud Platform: <ul><li>`DISPLAY_NAME`: `adobe.com`</li><li>`ID`: `178012854243`</li><li>`DIRECTORY_CUSTOMER_ID`: `C02jo8puj`</li></ul> </p> |
    | [!UICONTROL **Präfix**] | Der Ordner im Bucket, in den Sie die Daten ablegen möchten. Geben Sie einen statischen Ordnernamen an und fügen Sie hinter dem Namen einen Schrägstrich hinzu, um den Ordner zu erstellen. (Beispiel: Ordnername/) |
    | [!UICONTROL **Dateiname und -pfad**] | Geben Sie einen dynamischen, benutzerdefinierten Dateinamen für automatisierte Exporte an, die an diesen Speicherort gesendet werden. Dem Dateinamen kann zudem ein dynamischer, benutzerdefinierter Dateipfad vorangestellt werden. <p>Mit dieser Option können Sie die Erstellung und Platzierung von Dateinamen automatisieren, sodass Dateinamen vorhersehbar sind und logisch in Ordnern organisiert werden. Beispielsweise können Dateinamen nach dem Tag benannt werden, an dem sie bereitgestellt wurden, und dann in Ordnern abgelegt werden, die jedem Monat entsprechen.</p><p>Verwenden Sie eine der folgenden Variablen im Dateinamen und im Pfad, um sie dynamisch zu machen:</p><ul><li>**{yyyy}**: 4-stelliges Kalenderjahr (von Schreibweise abhängig)</li><li>**{yy}**: 2-stelliges Kalenderjahr (von Schreibweise abhängig)</li><li>**{MM}**: 2-stelliger Monat (von Schreibweise abhängig)</li><li>**{dd}**: 2-stelliger Tag (von Schreibweise abhängig)</li><li>**{HH}**: 2-stellige Stunde (Groß-/Kleinschreibung beachten)</li><li>**{mm}**: 2-stellige Minuten (von Schreibweise abhängig)</li><li>**{ss}**: 2-stellige Sekunden (von Schreibweise abhängig)</li><li>**{fff}**: 3-stellige Nanosekunden (Groß-/Kleinschreibung beachten)</li><li>**{instance_id}**: Anfrage (Instanz)-UUID</li><li>**{export_id}**: Export (Zeitplan) UUID</li><li>**{idx}**: Index beginnt bei 0 (für jede Datei inkrementiert)</li><li>**{total}**: Gesamtzahl der Dateien für den gesamten Übertragungsauftrag</li><li>**{completion_millis}**: Übertragungszeit in Millisekunden</li></ul></p><p>Wenn Sie beispielsweise `${yyyy}/${MM}/${dd}/my-report-${instance_id} -${idx}` angeben, hätte ein Export, der am 15. Januar 2026 automatisch an dieses Ziel gesendet wird, den folgenden Dateipfad und -namen: [prefix_folder_name]/2026/01/15/my-report-[UUID]-1.csv</p> |
 
